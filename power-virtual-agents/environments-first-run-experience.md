@@ -2,9 +2,8 @@
 title: "Create and use Power Apps environments"
 description: "Environments store all the data and resources associated with the bots you create in Power Virtual Agents."
 keywords: "onboarding, environments, PVA"
-ms.date: 8/3/2020
-ms.service:
-  - dynamics-365-ai
+ms.date: 9/22/2020
+ms.service: dynamics-365-ai
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -61,7 +60,7 @@ You can, however, create additional environments by using the [Power Platform Ad
 - Set **Create a database for this environment?** to **Yes**
 - Select **Next**.
    
-   ![Create environment](media/environments-create-2.png)
+   ![Enter the environment details](media/environments-create-2.png)
    
    > [!NOTE]
    > The environment needs to be created in a supported region, otherwise you won't be able to use it when creating a bot.

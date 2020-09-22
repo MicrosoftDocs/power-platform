@@ -2,9 +2,8 @@
 title: "View billed sessions"
 description: "See Power Virtual Agents billed sessions for the last 30 or 7 days."
 keywords: "PVA"
-ms.date: 8/3/2020
-ms.service:
-  - "dynamics-365-ai"
+ms.date: 9/22/2020
+ms.service: "dynamics-365-ai"
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -13,7 +12,13 @@ ms.cusom: "analysis, licensing, ceX"
 ms.collection: virtual-agent
 ---
 
-# View billed sessions for Power Virtual Agents
+# View billed sessions for Power Virtual Agents in Teams
+
+Select the version of Power Virtual Agents you're using here:
+
+> [!div class="op_single_selector"]
+> - [Power Virtual Agents web app](analytics-billed-sessions.md)
+> - [Power Virtual Agents app in Microsoft Teams](teams/analytics-billed-sessions-teams.md)
 
 When you purchase a Power Virtual Agents license, you gain capacity for the specified number of billed sessions. Power Virtual Agents pools this capacity across the entire tenant. 
 
@@ -49,10 +54,11 @@ A session ends for one of the following reasons:
     The first message that occurs after 60 minutes starts a new session.
 
 - The session has more than 100 turns. A *turn* is defined as one exchange between a user and the bot.  
-    The one-hundred-and-first<!--from editor: Style Guide, I swear.--> turn starts a new session. 
+    The one-hundred-and-first turn starts a new session. 
 
 > [!NOTE]
-> Sessions that use the [embedded test chat](authoring-test-bot.md) don't count toward the billed sessions.
+> Sessions that use the [embedded test chat](authoring-test-bot.md) or that only leverage capabilities included with the Power Virtual Agents for Microsoft Teams plan don't count toward the billed sessions.
+> The Billed Session report doesn't distinguish between the sessions included in the Power Virtual Agents for Microsoft Teams plan and those that are not. You might see an inflated number of billed sessions in the report.
 
 ## Frequently asked questions
 

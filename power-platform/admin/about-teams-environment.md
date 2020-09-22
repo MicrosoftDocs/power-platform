@@ -16,6 +16,7 @@ search.app:
   - Flow
 ---
 # About the Project Oakdale environment (Preview)
+<!-- fwlink 2143567 -->
 
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -46,6 +47,8 @@ Note the following regarding access to Microsoft Power Platform apps in Teams.
 - For any standalone Power Apps or Power Automate usage, which includes API access as well, the Project Oakdale schema will need to be promoted to Common Data Service.  
 
 - No direct API access or pro developer experience will be provided, and only Power Apps embedded within the Teams client will be able to access the runtime.
+
+See also: [Project Oakdale licensing FAQs](powerapps-flow-licensing-faq.md#project-oakdale)
 
 ## Admin experience
 
@@ -103,14 +106,43 @@ Access to a Project Oakdale environment and its resources (apps, data) will be r
 
 ### Role assignments 
 
-|Persona  |Description  |  Security role auto-assigned   |
-|---------|---------|---------|
-|Teams owner      | Owners can manage team membership and settings in the team. They have full access to the Project Oakdale environment's apps, resources, and data. They can perform environment maintenance tasks such as backup and restore through the Power Platform admin center.  | System Administrator     |
-|Teams member      | Members can view the Project Oakdale environment's resources, run all apps and resources, and create or update their own resources. They have full access to all data.     |Teams member      |
-| Teams guest  | Guests are people from outside the tenant that a team owner invites, such as a partner or a customer. They can view and run all resources in the team. By default, guests have full access to records they create and don't have access to other users' records.   | Teams guest | 
-|Global admin / Power Platform admin who isn't in the team | These are tenant-level admins who manage the health and maintenance of the tenant's environments. They need not be members of the team, but through their tenant-level admin privileges they can perform environment maintenance tasks such as backup and restore for all Project Oakdale environments. They are set to the Administrative access mode as opposed to the Read-Write access mode if they aren't in the team, so they'll only have Administrative access to the Project Oakdale environments. They can be explicitly given Read-Write access by another admin who already has Read-Write access to the environment.    | System Administrator         |
-|Colleagues with access | Colleagues with access are people in the tenant who aren't in the team but have been invited to run apps in the team. By default, colleagues with access have no access to data. Their data access rights can be granted based on the app or resources that they need to run. Note: when a colleague with access is invited to run apps in a team, the Microsoft 365 group association with the team's Project Oakdale environment will be automatically removed to allow app run access to the colleague with access. | Common Data Service User |
-|Dynamics 365 admin who isn't in the team (that is, isn't in the Microsoft 365 group) | These admins won't have access to manage the health and maintenance of the team environment.    | No access, because a Project Oakdale environment will always have the team's Microsoft 365 group associated with it, and Dynamics 365 Service admins are excluded from environments for which they aren't in the associated group.         |
+<table style="width:100%">
+<tr>
+<th>Persona</th>
+<th>Description</th>
+<th>Security role auto-assigned</th>
+</tr>
+<tr>
+<td width="20%"> Teams owner </td>
+<td width="50%"> Owners can manage team membership and settings in the team. They have full access to the Project Oakdale environment's apps, resources, and data. They can perform environment maintenance tasks such as backup and restore through the Power Platform admin center.</td>
+<td width="30%"> System Administrator   </td>
+</tr>
+<tr>
+<td width="20%"> Teams member </td>
+<td width="50%"> Members can view the Project Oakdale environment's resources, run all apps and resources, and create or update their own resources. They have full access to all data. </td>
+<td width="30%"> Teams member </td>
+</tr>
+<tr>
+<td width="20%"> Teams guest</td>
+<td width="50%">  Guests are people from outside the tenant that a team owner invites, such as a partner or a customer. They can view and run all resources in the team. By default, guests have full access to records they create and don't have access to other users' records. </td>
+<td width="30%"> Teams guest</td>
+</tr>
+<tr>
+<td width="20%"> Global admin / Power Platform admin who isn't in the team</td>
+<td width="50%"> These are tenant-level admins who manage the health and maintenance of the tenant's environments. They need not be members of the team, but through their tenant-level admin privileges they can perform environment maintenance tasks such as backup and restore for all Project Oakdale environments. They are set to the Administrative access mode as opposed to the Read-Write access mode if they aren't in the team, so they'll only have Administrative access to the Project Oakdale environments. They can be explicitly given Read-Write access by another admin who already has Read-Write access to the environment.  </td>
+<td width="30%"> System Administrator  </td>
+</tr>
+<tr>
+<td width="20%"> Colleagues with access </td>
+<td width="50%"> Colleagues with access are people in the tenant who aren't in the team but have been invited to run apps in the team. By default, colleagues with access have no access to data. Their data access rights can be granted based on the app or resources that they need to run. Note: when a colleague with access is invited to run apps in a team, the Microsoft 365 group association with the team's Project Oakdale environment will be automatically removed to allow app run access to the colleague with access. </td>
+<td width="30%"> Common Data Service User</td>
+</tr>
+<tr>
+<td width="20%"> Dynamics 365 admin who isn't in the team (that is, isn't in the Microsoft 365 group) </td>
+<td width="50%"> These admins won't have access to manage the health and maintenance of the team environment.   </td>
+<td width="30%"> No access, because a Project Oakdale environment will always have the team's Microsoft 365 group associated with it, and Dynamics 365 Service admins are excluded from environments for which they aren't in the associated group.  </td>
+</tr>
+</table>
 
 > [!NOTE]
 > [Record sharing](wp-security-cds.md#record-sharing) isn't supported in Project Oakdale.  You can't share a record with another user or team.
@@ -122,7 +154,6 @@ To change settings for a Project Oakdale environment, go to **Environments** > [
 
 > [!div class="mx-imgBorder"] 
 > ![Project Oakdale environment settings](media/teams-environment-settings.png "Project Oakdale environment settings")
-
 
 ### Users + permissions
 <!-- fwlink 2123134 2127762 -->
@@ -167,7 +198,6 @@ To delete a Project Oakdale environment, select it from the list of environments
 
 Select **Promote to production**. See [Promotion process](#promotion-process).
 
-
 ## Capacity limits
 
 The consumption of capacity by Project Oakdale environments won't count towards the tenant's capacity limits. Instead, we'll provide a pool of capacity for Project Oakdale environments, which will be separate from the tenant's Microsoft Power Platform Common Data Service capacity pool. Capacity won't be transferable between these two pools.  
@@ -209,7 +239,6 @@ When a tenant approaches or reaches their tenant-wide Teams limits described ear
 
 As mentioned for the environment-level enforcement, any existing apps will still be able to function as expected.  
 
-
 ## Promotion process 
 <!-- fwlink 2122620 for failure need 1GB -->
 <!-- fwlink 2134779 for for a few thing to know -->
@@ -245,6 +274,12 @@ After promotion, the following applies to the newly promoted environment:
 - The Microsoft 365 Groups association will become editable. 
 - Team owners are assigned the System Admin roles on their environment and can access the environment by using the Power Platform admin center. 
 - Adding a new Teams Template app to the former team won't create a new Project Oakdale environment for the team. 
+
+## Disable the ability to create app or bots using Project Oakdale in Teams
+
+With the public preview release of Project Oakdale, the ability to create apps or bots using the new Power Apps and Power Virtual Agents apps is enabled by default in Teams. Admins can disable it by using the app permission policies in Teams. 
+
+In your Microsoft Teams admin center, disable **Power Apps** and **Power Virtual Agents** applications available under **Microsoft Apps**. More information: [Manage app permission policies in Microsoft Teams](https://docs.microsoft.com/microsoftteams/teams-app-permission-policies)
 
 ## Known issues
 
