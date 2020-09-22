@@ -16,7 +16,7 @@ search.app:
   - Flow
 ---
 # About the Project Oakdale environment (Preview)
-
+<!-- fwlink 2143567 -->
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Introduced in September, 2020, *Project Oakdale* is a built-in, low-code data platform for Microsoft Teams that empowers users to build custom apps and workflows in Teams by using Power Apps and Power Automate. Project Oakdale—built on Common Data Service—provides relational data storage, rich data types, enterprise-grade governance, and one-click solution deployment to the Teams app store.
