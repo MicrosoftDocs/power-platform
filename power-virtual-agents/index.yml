@@ -50,10 +50,10 @@ conceptualContent:
         - text: Sign up for free
           url: /power-virtual-agents/sign-up-individual
           itemType: get-started        
-        - text: Power Virtual Agents web app
+        - text: Web app
           url: /power-virtual-agents/fundamentals-what-is-power-virtual-agents-portal
           itemType: overview
-        - text: Power Virtual Agents app in Microsoft Teams
+        - text: App in Microsoft Teams
           url: /power-virtual-agents/teams/fundamentals-what-is-power-virtual-agents-teams
           itemType: overview      
     
