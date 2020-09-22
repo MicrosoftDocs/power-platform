@@ -254,17 +254,19 @@ The existing Power Platform functionality available for use in Microsoft 365 mor
 
 ### Is there any new capability coming with Project Oakdale to Power Automate rights included with Microsoft 365?
 
-Yes. With Project Oakdale, users now can build flows using Power Automate maker portal and that operates in a Project Oakdale environment. Please note that a Project Oakdale environment needs to be created first by either authoring an app or chatbot.
+Yes. With Project Oakdale, users now can build flows using Power Automate maker portal and that operate in a Project Oakdale environment. Please note that a Project Oakdale environment needs to be created first by either authoring an app or chatbot.
 
 ### Which Microsoft 365 subscriptions include Project Oakdale and Power Virtual Agents capabilities with Teams?
 
 Project Oakdale and Power Virtual Agents for Teams capabilities will be available as part of select Microsoft 365 subscriptions with Power Platform and Teams capabilities, excluding plans for US government environments (GCC, GCC High and DoD) and EDU A1 and SUB SKUs.
 
 ### How is Project Oakdale environment created? 
-Creation of new Microsoft Project Oakdale environments will only be possible from within Teams. In public preview, creation of Project Oakdale environments is not available from the Power Platform admin center. 
+
+In public preview, creation of Project Oakdale environments is not available from the Power Platform admin center. Creation of new Microsoft Project Oakdale environments will only be possible from within Teams. 
 
 ### Can Project Oakdale be used outside of Teams?
-Project Oakdale is designed to work in the Teams client across web, desktop and mobile. If you’d want to use Project Oakdale outside of teams, you must promote your environment to Common Data Service. 
+
+Project Oakdale is designed to work in the Teams client across web, desktop and mobile. If you’d want to use Project Oakdale outside of Teams, you must promote your environment to Common Data Service. 
 
 ### Is there a limit to Project Oakdale capacity? How many Project Oakdale environments can be created in a tenant?  
 
@@ -308,9 +310,9 @@ No. UI Flows are not supported in Project Oakdale.
 ### Can I use custom connectors in Project Oakdale?
 Custom connectors are not supported in Project Oakdale but support for Azure API Management (API-M) will be available in Project Oakdale.
 
-### Can customers purchase more capacity without needing to promote a Project Oakdale environment to Common Data Service?
+### Can customers purchase more capacity for an environment associated with a Team?
 
-No. Project Oakdale provides support for approximately 1 million rows per team. Although existing apps and chatbots will continue to work when a Microsoft Project Oakdale environment reaches the per environment limit (2GB), users who want to create a new app, flow, or chatbot in the environment will need to:
+No. Project Oakdale provides support for approximately 1 million rows per team. Although existing apps and chatbots will continue to work when a Microsoft Project Oakdale environment reaches the per environment limit (2GB), users who want to create a new app, flow, or chatbot in the environment will need to :
 1.	Purchase Power Apps, Power Automate, and Power Virtual Agents subscriptions based on their needs and start building their new app, flow, or chatbot in a Common Data Service environment.
 2.	Promote the existing Project Oakdale environment to Common Data Service in the Power Platform admin center and, if needed, purchase Power Apps, Power Automate, or Power Virtual Agents subscriptions based on their needs.
 
@@ -319,11 +321,11 @@ No. Project Oakdale provides support for approximately 1 million rows per team. 
  
 ### Can customers package and export their solution (app/flow/chatbots) built in Project Oakdale, and then import that into a Common Data Service environment (assuming they have the corresponding license including access rights to Microsoft Common Data Service)?
 
-This capability is on our roadmap. However, we currently do not have a date to share.
+This capability is not available in public preview but is included in our roadmap.
 
 ### Other than adding capacity, what are the other reasons to promote a Project Oakdale environment?
 
-Promoting an environment from Project Oakdale to Common Data Service will enable customers to take advantage of additional capacity, capability, and control, such as: 
+Promoting an environment from Project Oakdale to Common Data Service will enable customers to take advantage of additional capacity, capabilities, such as: 
 -	Enterprise ALM, data types
 -	Support for log and managed data lake
 -	Rich access control, auditing
