@@ -1,6 +1,6 @@
 ---
 title: "GitHub Actions for the Microsoft Power Platform | Microsoft Docs"
-description: "Learn about the ALM-related tools and services that are available to developers when using Github and the Microsoft Power Platform."
+description: "Learn about the ALM-related tools and services that are available to developers when using GitHub and the Microsoft Power Platform."
 keywords: 
 author: mikkelsen2000
 ms.author: pemikkel
@@ -47,7 +47,7 @@ GitHub Actions enable you to create custom software development life cycle (SDLC
 
 The GitHub Actions for the Microsoft Power Platform are a collection of Microsoft Power Platform&ndash;specific GitHub Actions that eliminate the need to manually download custom tooling and
 scripts to manage the application lifecycle of apps built on the Microsoft Power Platform. The tasks can be used
-individually to perform a simple task, such as importing a solution into a
+individually, such as importing a solution into a
 downstream environment, or used together in a workflow to orchestrate a
 scenario such as "generate a build artifact", "deploy to test", or "harvest maker changes." The build tasks can largely be categorized into four types:
 
@@ -63,18 +63,18 @@ For more information, see [GitHub Actions for Microsoft Power Platform](devops-g
 
 ## Get GitHub Actions for the Microsoft Power Platform
 
-GitHub Actions for the Microsoft Power Platform can added to your repo
+GitHub Actions for the Microsoft Power Platform can be added to your repo
 from [GitHub Marketplace](https://github.com/marketplace?type=actions).
 
 ## Connection to environments
 
 To interact with a Common Data Service environment, a secret must be created that enables the various GitHub Actions to perform the required task. Two types of connections are available:
 
-- Username/password: Configured as a generic service connection with username and password. Note that username/password does not support multi-factor authentication (MFA).
+- Username/password: Configured as a generic service connection with username and password. Username/password authentication sdoes not support multi-factor authentication (MFA).
 - Service principal and client secret: This connection type uses service principal based authentication and supports multi-factor authentication. Service principal authentication availability is  October 2020.
 
 ## Available runners
-GitHub Actions for Microsoft Power Platform can only run on a Microsoft Windows agent. Cross-platform compatibility availability is late 3rd quarter 2020.
+GitHub Actions for Microsoft Power Platform can only run on a Microsoft Windows agent. Cross-platform compatibility availability is late third quarter 2020.
 
 ## Frequently asked questions (FAQs)
 
@@ -84,7 +84,7 @@ GitHub Actions for Microsoft Power Platform can only run on a Microsoft Windows 
 
 **Can I include flow and canvas apps?**
 
-*Yes, flows and canvas apps are solution aware, so if these are added to your solution they can participate in the lifecycle of your app.  However, some steps still require manual configurations which will be addressed later this year when we introduce environment variables and connectors. A list of current limitations are available here: [Known limitations](/powerapps/maker/common-data-service/use-solution-explorer#known-limitations).*
+*Yes, flows and canvas apps are solution aware, so if these components are added to your solution they can participate in the lifecycle of your app.  However, some steps still require manual configurations, which will be addressed later this year when we introduce environment variables and connectors. A list of current limitations is available here: [Known limitations](/powerapps/maker/common-data-service/use-solution-explorer#known-limitations).*
 
 **How much does the GitHub Actions for the Microsoft Power Platform cost?**
 
