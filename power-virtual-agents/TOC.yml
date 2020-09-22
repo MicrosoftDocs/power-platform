@@ -2,6 +2,8 @@
   href: fundamentals-what-is-power-virtual-agents.md
 - name: Licensing for Power Virtual Agents
   href: requirements-licensing-subscriptions.md
+- name: Standards compliance and certification
+  href: admin-certification.md
 - name: Quotas and rate limit considerations
   href: requirements-quotas.md
 - name: Community help and support
@@ -140,7 +142,7 @@
          href: teams/fundamentals-get-started-teams.md
     - name: Administer and manage
       items:
-       - name: Assign licenses
+       - name: Licensing for Virtual Power Agents in Teams
          href: teams/requirements-licensing-teams.md
        - name: Share bots with users in your organization
          href: teams/admin-share-bots-teams.md
