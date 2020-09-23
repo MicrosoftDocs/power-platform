@@ -1,11 +1,11 @@
 ---
 title: "Lockbox for Power Platform | MicrosoftDocs"
-description: Lockbox for Power Platform
+description: About lockbox for Power Platform
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/17/2020
+ms.date: 09/23/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -16,7 +16,7 @@ search.app:
   - Flow
 ---
 # Lockbox for Microsoft Power Platform 
-<!--note from editor: Please make sure the title, description, and H1 are all unique. (It's an SEO thing that we'll be getting warnings for at some point.) I suggest using "Microsoft" in front of Power Platform because even though we do drop it from component names ("Power Platform dataflows"), I haven't seen any blessing of "Power Platform lockbox" yet. Also, please note that my edits throughout are based on the assumption that "the customer" is the reader. I got a bit confused about who the audience was.-->
+
 Lockbox for Microsoft Power Platform provides an interface to review&mdash;and approve or reject&mdash;data access requests. It's usually used in cases where a Microsoft engineer needs to access your data to resolve a support request.
 
 ## Summary
@@ -42,7 +42,7 @@ After access is granted to Microsoft, any action taking place in the database du
    - Whether the requester is an isolated identity or is using multifactor authentication.
    - Permissions levels.
 
-   Based on the JIT rule, this request might include an approval from internal Microsoft approvers. For example, the approver might be the customer support lead or the DevOps manager.<!--note from editor: If we're talking about who approved the request internally at Microsoft, does this matter to the reader?--> 
+   Based on the JIT rule, this request might include an approval from internal Microsoft approvers. For example, the approver might be the customer support lead or the DevOps manager.
 
 4. When the request asks for direct access to customer data, a lockbox request is generated if the database is protected according to the organization's lockbox policy. An email notification is sent to the designated approvers about the pending data access request from Microsoft. 
 
@@ -81,17 +81,17 @@ Global administrators can create or update the lockbox policy in the Power Platf
 
 2. Select **Governance** > **Lockbox requests**.
 
-3. Review the request details.<!--note from editor: Edits to the table assume these fields should be described from the customer viewpoint. I'm a bit confused about including all the Status fields, because the request that's being reviewed in this procedure won't be Expired or Denied (or even Approved) at this point. Can the customer change a request from Denied to Approved here? That might be useful to describe, but otherwise the status fields don't seem relevant.-->
+3. Review the request details.
 
    |Field  |Description  |
    |---------|---------|
    |Support request ID     | The ID of the support ticket associated with the lockbox request.         |
    |Environment     | The display name of the environment in which data access is being requested.         |
-   |Status     | The status of the lockbox request. <br /> <ul><li>**Action needed**: Pending approval </li><li>**Expired**: No approval was given before the request expired </li><li>**Approved** </li><li>**Denied**</li></ul>        |
-   |Requested     | The time at which the Microsoft engineer requested access to your organization's data.         |
-   |Request expiration     | The time by which you need to approve the lockbox request. The status of the request will change to **Expired** if no approval is given by this time.         |
-   |Access period     | The approximate length of time the requestor wants to access your data. This is an estimate, and might change slightly.         |
-   |Access expiration     | If access is granted, this is the time until which the Microsoft engineer has access to your data. It's an estimate, and might change slightly.         |
+   |Status     | The status of the lockbox request. <br /> <ul><li>**Action needed**: Pending approval from the customer</li><li>**Expired**: No approval received from the customer </li><li>**Approved**: Approved by the customer </li><li>**Denied**: Denied by the customer</li></ul>        |
+   |Requested     | The time at which the Microsoft engineer requested access to customer's organization's data.         |
+   |Request expiration     | The time by which the customer needs to approve the lockbox request. The status of the request will change to **Expired** if no approval is given by this time.         |
+   |Access period     | The approximate length of time the requestor wants to access customer data. This is an estimate, and might change slightly.         |
+   |Access expiration     | If access is granted, this is the time until which the Microsoft engineer has access to customer data. It's an estimate, and might change slightly.         |
 
 4. Select a lockbox request, and then select **Approve** or **Deny**.
 
@@ -113,7 +113,7 @@ The following image is an example of the SQL logs that are generated. On row 248
 > [!div class="mx-imgBorder"] 
 > ![Example SQL log](media/lockbox-example-sql-log.png "Example SQL log")
 
-To export SQL audit logs to your organization's [data lake](https://docs.microsoft.com/azure/architecture/data-guide/scenarios/data-lake):<!--note from editor: "Azure data lake" makes me nervous, since we usually reserve "Azure" as a descriptor for a specific service. I see that even the UI uses "data lake in Azure" - maybe that's what we should say here, if you don't like the edit?-->
+To export SQL audit logs to your organization's [data lake](https://docs.microsoft.com/azure/architecture/data-guide/scenarios/data-lake):
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
 
@@ -138,14 +138,14 @@ To export SQL audit logs to your organization's [data lake](https://docs.microso
    > [!div class="mx-imgBorder"] 
    > ![Enter data lake details](media/lockbox-enter-data-lake-details.png "Enter data lake details")
 
-Your export will appear in the list on the **Data Lake** tab of the **Export Analytics Data**<!--Is the screenshot what you want it to be? The page name is **Data export (preview)** and the fields don't match the table - the third column is **Storage account name** rather than **Status**.--> page.
+Your export will appear in the list on the **Data Lake** tab of the **Data export (preview)** page.
 
 > [!div class="mx-imgBorder"] 
 > ![Data export list](media/lockbox-data-export-success.png "Data export list")
 
 |Field  |Description  |
 |---------|---------|
-|Data package     | The type of data export, in this case **SQL audit logs**.<!--Edit okay? Didn't know what "will contain" meant.-->         |
+|Data package     | The type of data export, will contain **SQL audit logs**.      |
 |Environment     | The environments for which SQL audit logs are being exported to the data lake. If the lockbox policy protects all environments, the value will be **All**. If it protects some environments, the names of each of those environments will be displayed.        |
 |Status   | The status is **Connected** when a connection has been set up. If lockbox isn't enabled for any environment, the status is **Disabled**.        |
 
