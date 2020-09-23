@@ -35,9 +35,9 @@ Every environment can have zero or one Common Data Service database, which provi
 When you create an app in an environment, that app is only permitted to connect to the data sources that are also deployed in that same environment, including connections, gateways, flows, and Common Data Service databases. For example, consider a scenario where you've created two environments named Test and Dev, and created a Common Data Service database in each of the environments. If you create an app in the Test environment, it will only be permitted to connect to the Test database; it won't be able to connect to the 'Dev' database.
 
 You can also move resources between environments. More information: [Migrate resources](../alm/environment-and-tenant-migration.md)
-<!-- 
+
 ![The Contoso Corporation tenant encompasses three environments, each of which has its own apps, flows, and Common Data Service database](./media/environments-overview/Environments.png "The Contoso Corporation tenant encompasses three environments, each of which has its own apps, flows, and Common Data Service database")
--->
+
 ## Environment permissions
 Environments have two built-in roles that provide access to permissions within an environment:
 

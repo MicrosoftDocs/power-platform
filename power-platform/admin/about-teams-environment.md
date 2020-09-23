@@ -38,7 +38,7 @@ You can identify a Project Oakdale environment in the [Power Platform admin cent
 
 Note the following regarding access to Microsoft Power Platform apps in Teams.
 
-- Project Oakdale capabilities will be available as part of select Microsoft 365 subscriptions. See the licensing guide.
+- Project Oakdale capabilities will be available as part of select Microsoft 365 subscriptions. See the [Microsoft 365 licensing](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise?activetab=m365-enterprise:primaryr5).
 
 - Teams can invite guests who can access the apps, flows, and data in the Teams Project Oakdale database within their team. However, they won't be allowed to install, make, or edit apps. They can only discover and run apps in their team. 
 
@@ -52,7 +52,7 @@ See also: [Project Oakdale licensing FAQs](powerapps-flow-licensing-faq.md#proje
 
 ## Admin experience
 
-Tenant owners and members will be allowed to create their first app template or create a blank table app for the team. More information: [Project Oakdale tables: Overview](/powerapps/teams/overview-tables)
+Tenant owners and members will be allowed to create their first app template or create a blank table app for the team. More information: [Project Oakdale tables: Overview](https://docs.microsoft.com/powerapps/teams/create-table)
 
 Team owners will be allowed to delete a team associated with a Project Oakdale environment, which will trigger the deletion of that environment.
 
@@ -148,7 +148,7 @@ Access to a Project Oakdale environment and its resources (apps, data) will be r
 > [Record sharing](wp-security-cds.md#record-sharing) isn't supported in Project Oakdale.  You can't share a record with another user or team.
 
 ## Project Oakdale environments settings and actions
-<!-- fwlink 2133713  -->
+<!-- fwlink 2133713 2134780(settings) 213924(backup/restore) -->
 
 To change settings for a Project Oakdale environment, go to **Environments** > [select a Project Oakdale environment] > **Settings**.
 
@@ -181,6 +181,7 @@ You can specify users in an environment to provide access to Project Oakdale env
 7. Select **Refresh** to see the added user in the list.
 
 ### Microsoft Teams Integration
+<!-- fwlink 2134886 2132800 -->
 
 Tenant admins can select **Microsoft Teams Integration** to enable embedding model-driven apps into Teams. After making this selection, users can use model-driven apps in Teams without using customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation).
 
@@ -288,7 +289,7 @@ In your Microsoft Teams admin center, disable **Power Apps** and **Power Virtual
 
 ## Related topics
 
-[Power Apps and Teams](/powerapps/teams/overview) <br/>
-[Power Automate and Teams](/power-automate/teams/overview)<br/>
+[Power Apps and Teams](https://docs.microsoft.com/powerapps/teams/overview) <br/>
+[Power Automate and Teams](https://docs.microsoft.com/power-automate/teams/overview)<br/>
 [Power Virtual Agents and Teams](https://aka.ms/pva-teams-docs)
 

@@ -1,6 +1,6 @@
 ---
-title: "Power Platform Lockbox | MicrosoftDocs"
-description: Power Platform Lockbox 
+title: "Lockbox for Power Platform | MicrosoftDocs"
+description: Lockbox for Power Platform
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
