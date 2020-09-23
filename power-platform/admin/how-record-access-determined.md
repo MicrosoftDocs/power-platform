@@ -125,13 +125,13 @@ If a record is shared with an organization to perform a set of actions, then all
  
 The hierarchy access only takes place if [Hierarchy Security](hierarchy-security.md) management is enabled in that organization and for that entity, and if the user is a manager.
  
-In this case, the user would have access to the record if:
-- The manager has a security role assigned directly or through a team that has the access level Business Unit or Parent:Child Business Units.
-AND
-- The record is owned by a direct report. OR
-- A direct report is a member of the owner team. OR
-- The record was shared to perform the required action with a direct report. OR
-- The record was shared to perform the required action with a team a direct report belongs to.
+In this case, the user would have access to the record if both of the following are met:
+- The manager has a security role assigned directly or through a team that has the access level Business Unit or Parent:Child Business Units. 
+- Any one of the following applies:
+  - The record is owned by a direct report. 
+  - A direct report is a member of the owner team. 
+  - The record was shared to perform the required action with a direct report. 
+  - The record was shared to perform the required action with a team a direct report belongs to.
 
 ### See also
 [Security roles and privileges](security-roles-privileges.md) <br />
