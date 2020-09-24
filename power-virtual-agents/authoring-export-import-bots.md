@@ -106,33 +106,31 @@ If you don't see the **Export/import bot** section under **Settings**, you will 
 
 3. On the filter on the top menu, select **Chatbot** to see the bot (or bots) you've added to the solution. Selecting the name of the bot will open it in the Power Virtual Agents portal.
 
+3. If your bot doesn’t have [skills](configuration-add-skills.md), you don't need to complete this step. 
 
-
-
-
-3. If your bot doesn’t have [Skills](configuration-add-skills.md), you don't need to complete this step. 
-
-    If your bot does have Skills, you need to add the respective environment variables in the solution. Each Skill has two environment variables: `AppID` and `manifestURL`.
+    If your bot does have skills, you need to add the respective environment variables in the solution. Each skill has two environment variables: `AppID` and `manifestURL`.
 
     1. Select the solution you want to add your bot to.
 
     1. Select **Add existing** and choose **Environment variables**.
-    1. On the **Add existing environment variables** panel and select the environment variables for your bot’s Skills. Each Skill has two environments variables. The environment variables **Display name** column will show the bot name in square brackets. For example, *[Bot name] Skill name*.
+    1. On the **Add existing environment variables** panel, select the environment variables for your bot’s skills. Each skill has two environment variables. The environment variables **Display name** column will show the bot name in square brackets. For example, *[Bot name] Skill name*.
 
         ![List of skills selected for export](media/export-skills.png "List of skills selected for export")
  
-    1. Select the environment variables of the bot’s Skills. 
+    1. Select the environment variables of the bot’s skills. 
     1. Select **Next** to add them to the solution.
 
 
->[!NOTE]
->Removing a bot from a solution doesn't remove its components from a solution. Removal of the components should be done separately.  
+> [!NOTE]
+> Removing a bot from a solution doesn't remove its components from a solution. Removal of the components should be done separately.  
 
 
->[!WARNING]
->Do not remove any unmanaged chatbot subcomponents (such as bot topics) directly from the Power Apps portal, unless you have removed the bot itself from the solution.  
->You should only make changes to topics from within the Power Virtual Agents portal.  
->Removing or changing the chatbot subcomponents from within Power Apps will cause the export and import to fail.
+> [!WARNING]
+> Do not remove any unmanaged chatbot subcomponents (such as bot topics) directly from the Power Apps portal, unless you have removed the bot itself from the solution.  
+> 
+> You should only make changes to topics from within the Power Virtual Agents portal.  
+>
+> Removing or changing the chatbot subcomponents from within Power Apps will cause the export and import to fail.
 
 
 
@@ -146,12 +144,12 @@ You export and import bots by exporting and importing their containing solutions
 
     ![Export button](media/export-solution.png "Export button")
 
-    >[!NOTE]
-    >You can't export managed solutions. When you create a solution, by default it will not be managed. If you change it to a managed solution you won't be able to export it, and will need to create a new solution.
+    > [!NOTE]
+    > You can't export managed solutions. When you create a solution, by default it will not be managed. If you change it to a managed solution you won't be able to export it, and will need to create a new solution.
     >
-    >If your bot has a large number of components (for example, more than 250 topics or more than 100 entities), export the bot using classic Power Apps portal instead.
+    > If your bot has a large number of components (for example, more than 250 topics or more than 100 entities), export the bot using classic Power Apps portal instead.
     >
-    >![Switch to classic view](media/export-switch-classic.png)
+    > ![Switch to classic view](media/export-switch-classic.png "Switch to classic view")
 
 
 2. Select **Next** in the **Before you export** panel.
@@ -167,8 +165,8 @@ The export can take several minutes to complete. Once finished, a .zip file will
 
 **Import the solution with your bot**
 
->[!NOTE]
->You must have at least one bot already in the new or existing environments where you are importing to. This ensures you have the correct configuration in your environment when you import a bot.
+> [!NOTE]
+> You must have at least one bot already in the new or existing environments where you are importing to. This ensures you have the correct configuration in your environment when you import a bot.
 
 
 1. On the top menu, select the environment name and select the environment where you want to import your bot.
@@ -186,34 +184,38 @@ The export can take several minutes to complete. Once finished, a .zip file will
 
 1. Information about the solution is displayed. Select **Import**.
 
-1. You may need to wait a few moments while the import completes. View the results and then select **Close**.
+1. You might need to wait a few moments while the import completes. View the results and then select **Close**.
 
-    If the import isn’t successful, you'll see a report showing any errors or warnings that were captured. Select **Download Log File** to capture details about what caused the import to fail in an XML file  
+    If the import isn’t successful, you'll see a report showing any errors or warnings that were captured. Select **Download Log File** to capture details about what caused the import to fail in an XML file.  
       
-    The most common cause for an import to fail is that the solution didn't contain some required components. For example, you may not have any upgraded bots in the environment.
+    The most common cause for an import to fail is that the solution didn't contain some required components. For example, you might not have any upgraded bots in the environment.
 
-1. After import, open the imported solution. Use the filter menu on the top menu to select **Environment variable**. Enter the values as described in the section **Add your bot to the solution**.
+1. After import, open the imported solution. Use the filter menu on the top menu to select **Environment variable**. Enter the values as described in the section **Add a bot to the solution**.
 
 
+<!-- editor query: In the previous sentence, do you want to link to the "add a bot" section? -->
 
-1. If your bot has any of the following, you need to configure them after importing first time:
+
+1. If your bot has any of the following, you need to configure them after importing for the first time:
 
     - [Power Automate flows](/power-automate/import-flow-solution): Configure any flow connections for the first time. You don't need to reconfigure the flow connections for subsequent imports of the bot when updating the flow.  
-      If you import a solution containing a bot that leverages Power Automate, and any new Flows are included in that import operation, you'll need to visit the Power Virtual Agents portal and select the bot. 
-    - [Skills](advanced-use-skills.md): Add the values for the Skills’ environment variables.
+    
+      If you import a solution containing a bot that leverages Power Automate, and any new flows are included in that import operation, you'll need to visit the Power Virtual Agents portal and select the bot. 
+      
+    - [Skills](advanced-use-skills.md): Add the values for the skills’ environment variables.
     - [End-user authentication](configuration-end-user-authentication.md): Configure end-user authentication in the bot so it can take actions on the user’s behalf. The bot can be set up with any [OAuth2 identity provider](/azure/active-directory/develop/v2-oauth2-auth-code-flow), such as Azure Active Directory (Azure AD), a Microsoft account, or Facebook.
-    - [Customer service hand-off](advanced-hand-off.md): Configure external services that hand-off bot escalations to a human agent.
-    - Multi-channel: – Configure external channels, such as Facebook, and internal non-Power Virtual Agents services, such as Microsoft Teams:
+    - [Customer service hand-off](advanced-hand-off.md): Configure external services that hand off bot escalations to a human agent.
+    - Multichannel: Configure external channels, such as Facebook, and internal non-Power Virtual Agents services, such as Microsoft Teams:
 
         - [Facebook documentation](publication-add-bot-to-facebook.md)
         - [Microsoft Teams documentation](publication-add-bot-to-microsoft-teams.md)
 
-1. Use the filter menu to select **Chatbot**. You can then click on the bot's name to open the bot in the Power Virtual Agents portal. You can also navigate to the portal directly and open the imported bot under the environment you imported to.
+1. Use the filter menu to select **Chatbot**. You can then select the bot's name to open the bot in the Power Virtual Agents portal. You can also navigate to the portal directly and open the imported bot under the environment you imported to.
 
     ![List of bots and environments in Power Virtual Agents](media/export-bot-picker.png "List of bots and environments in Power Virtual Agents")
 
->[!IMPORTANT]
->You must [publish your newly imported bot](publication-fundamentals-publish-channels.md) before it can be shared.
+> [!IMPORTANT]
+> You must [publish your newly imported bot](publication-fundamentals-publish-channels.md) before it can be shared.
 
 ## Upgrade or update a solution with a chatbot
 
