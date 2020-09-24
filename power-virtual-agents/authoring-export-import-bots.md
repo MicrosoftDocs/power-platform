@@ -190,10 +190,7 @@ The export can take several minutes to complete. Once finished, a .zip file will
       
     The most common cause for an import to fail is that the solution didn't contain some required components. For example, you might not have any upgraded bots in the environment.
 
-1. After import, open the imported solution. Use the filter menu on the top menu to select **Environment variable**. Enter the values as described in the section **Add a bot to the solution**.
-
-
-    <!-- editor query: In the previous sentence, do you want to link to the "add a bot" section? -->
+1. After import, open the imported solution. Use the filter menu on the top menu to select **Environment variable**. Enter the values as described in the section **[Add a bot to a solution](#add-a-bot-to-a-solution)**.
 
 
 1. If your bot has any of the following, you need to configure them after importing for the first time:
@@ -238,10 +235,6 @@ Use the **See solution layers** option to see all solutions that a component is 
 1. Select **See solution layers** from the contextual **...** menu next to the component name.
 
    ![See solution layers option](media/export-solution-layers.png "See solution layers option")
-
-
-<!-- editor query: Wondering if it should be "Solution layers" page. Can you check? -->
-
 
 2. In the **Solution layer** page, select the unmanaged layer and then select **Remove unmanaged layer** to remove the layer. 
 
