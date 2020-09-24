@@ -32,13 +32,13 @@ This can be useful if you use different environments for different purposes, or 
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 
-- A maker will require minimum System Customizer security roles to use this feature. Learn more about [configuring user security to resources in an environment](https://docs.microsoft.com/power-platform/admin/database-security).
+- A maker will require the minimum System Customizer security roles to use this feature. Learn more about [configuring user security to resources in an environment](https://docs.microsoft.com/power-platform/admin/database-security).
 
 - You must have at least one bot already in the new or existing environments where you are importing to. This ensures you have the correct configuration in your environment when you import a bot.
 
 
 > [!IMPORTANT]
-> These features are in preview, which means that they are made available to you before general availability so you can test and evaluate them and provide feedback to Microsoft.  
+> These features are in preview, which means they are made available to you before general availability so you can test and evaluate them and provide feedback to Microsoft.  
 >  
 > Previews may employ reduced or different privacy, security, or compliance commitments than commercial versions. As such, previews are not meant to be used with any "live" or production Customer Data, Personal Data, or other data that is subject to heightened compliance requirements. Any use of "live" data is at your sole risk and it is your sole responsibility to notify your end users that they should not include sensitive information with their use of the Preview.  
 >  
@@ -52,11 +52,11 @@ You use solutions to export bots from one environment and import them into anoth
 
 1. Sign in to the Power Virtual Agents bot you want to export. 
 
-1. Select **Settings**, and then **General settings**.
+1. Select **Settings**, and then select **General settings**.
 
     ![Screenshot showing the settings cog highlighted](media/export-settings.png "Screenshot showing the settings cog highlighted")
 
-2. Under **Export/Import bot**, select **Go to Power Apps Solutions**.
+2. Under **Export/import bot**, select **Go to Power Apps Solutions**.
  
     ![Link to the Power Apps admin center from Power Virtual Agents](media/export-settings-powerapps.png "Link to the Power Apps admin center from Power Virtual Agents")
 
@@ -68,24 +68,25 @@ You use solutions to export bots from one environment and import them into anoth
     -- | --
     Display name | The name that is shown in the list of solutions. You can change this later.
     Name | The unique name of the solution. This is generated using the value you enter in the **Display name** field. You can edit this before you save the solution, but after you save the solution, you can’t change it.
-    Publisher | You can select the default publisher or create a new publisher. We recommend that you create a publisher that you can use consistently across the environments where you'll use the solution. For more information, see [Solution publisher overview](/powerapps/maker/common-data-service/change-solution-publisher-prefix)
+    Publisher | You can select the default publisher or create a new publisher. We recommend that you create a publisher that you can use consistently across the environments where you'll use the solution. For more information, go to [Solution publisher overview](/powerapps/maker/common-data-service/change-solution-publisher-prefix).
     Version | Enter a number for the version of your solution. This is only important if you export your solution. The version number will be included in the file name when you export the solution.
 
 
-If you don't see the **Export/import bot** section under **Settings**, you will need to upgrade your bot. Select **Upgrade bot**. This should take a few minutes
+If you don't see the **Export/import bot** section under **Settings**, you will need to upgrade your bot. Select **Upgrade bot**. This should take a few minutes.
 
->[!IMPORTANT]
->Only follow these steps if you don't see an option to **Export/import bot** on the Power Virtual Agents settings page.  
->Newly created bots don’t require an upgrade, and won't show an option to upgrade them.
+> [!IMPORTANT]
+> Only follow these steps if you don't see an option to **Export/import bot** on the Power Virtual Agents settings page.  
+>
+> Newly created bots don’t require an upgrade, and won't show an option to upgrade them.
 
 ![Screenshot highlighting the Upgrade bot button](media/export-upgrade-bot.png "Screenshot highlighting the Upgrade bot button")
 
->[!NOTE]
->A notice might appear that says "The upgrade is taking longer than expected. No action is required." If the notice does not disappear after 10 minutes, try refreshing your browser. You can continue working on your bot without losing any updates. 
+> [!NOTE]
+> A notice might appear that says, "The upgrade is taking longer than expected. No action is required." If the notice does not disappear after 10 minutes, try refreshing your browser. You can continue working on your bot without losing updates. 
 >  
->If you still see the warning after a few days, create a support request with you Bot ID. Admins can use [Help + support](/power-platform/admin/get-help-support) in the Power Platform admin center to create a support request.  
+> If you still see the warning after a few days, create a support request with your Bot ID. Admins can use [Help + support](/power-platform/admin/get-help-support) in the Power Platform admin center to create a support request.  
 >  
->![Warning about time needed to finish the upgrade](media/export-warning.png "Warning about time needed to finish the upgrade")
+> ![Warning about time needed to finish the upgrade](media/export-warning.png "Warning about time needed to finish the upgrade")
 
 
 
@@ -99,13 +100,18 @@ If you don't see the **Export/import bot** section under **Settings**, you will 
 
     ![Add existing menu highlighted](media/export-add-chatbot.png "Add existing menu highlighted")
 
-2. On the **Add existing Chatbots** panel, select the bot (or bots) you want to export. Select **Add**.
+2. On the **Add existing chatbots** panel, select the bot (or bots) you want to export. Select **Add**.
 
     ![Chatbot selected in the list of bots](media/export-add-chatbot-solution.png "Chatbot selected in the list of bots")
 
 3. On the filter on the top menu, select **Chatbot** to see the bot (or bots) you've added to the solution. Selecting the name of the bot will open it in the Power Virtual Agents portal.
 
+
+
+
+
 3. If your bot doesn’t have [Skills](configuration-add-skills.md), you don't need to complete this step. 
+
     If your bot does have Skills, you need to add the respective environment variables in the solution. Each Skill has two environment variables: `AppID` and `manifestURL`.
 
     1. Select the solution you want to add your bot to.
