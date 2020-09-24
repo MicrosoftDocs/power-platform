@@ -1,6 +1,6 @@
 ---
-title: "Important changes (deprecations) coming in Power Apps, Power Automate and model-driven apps in Dynamics 365"
-ms.date: 08/27/2020
+title: "Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps"
+ms.date: 09/04/2020
 ms.topic: "article"
 ms.assetid: 994cc854-17f6-45d6-bc20-fcf1a3f2d6d6
 searchScope:
@@ -13,10 +13,10 @@ ms.author: kvivek
 manager: annbe
 ---
 
-Important changes (deprecations) coming in Power Apps, Power Automate, and model-driven apps in Dynamics 365
+Important changes (deprecations) coming in Power Apps, Power Automate, and customer engagement apps
 ============================================================
 
-The announcements and deprecations described in this topic apply to Power Apps, Power Automate, and model-driven apps in Dynamics 365 (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Marketing, Dynamics 365 Field Service, and Dynamics 365 Project Service Automation).
+The announcements and deprecations described in this topic apply to Power Apps, Power Automate, and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Marketing, Dynamics 365 Field Service, and Dynamics 365 Project Service Automation).
 
 Administrators and IT professionals should use this information to prepare for future releases. This article was first published on June 27, 2017.
 
@@ -52,9 +52,6 @@ Rather than use the Dynamics 365 connector, the [Common Data Service (Current En
 - It is not available in Logic Apps.
 - It does not enable cross-tenant or cross environment connections. 
 - It cannot be used for canvas apps that use the [Power Apps for Windows client](https://www.microsoft.com/p/power-apps/9nblggh5z8f3).
-- Coming soon:
-    - It will soon be available within Flows that are created outside the context of a solution.
-    - It will soon be available on US Government cloud.
 
 If you cannot use the Common Data Service (Current Environment) connector, you should use the [Common Data Service connector](/connectors/commondataservice/). This connector has all the capabilities of the Dynamics 365 connector, and includes several improvements that increase reliability.
 
@@ -94,9 +91,9 @@ For further information and steps to make a smooth transition, download [Dynamic
 ## Dynamics 365 Home is deprecated 
 ------------------------------------------------------
 
-Effective March 2020, the home page for Dynamics 365 applications (https://home.dynamics.com) is deprecated and won't be available after October 1, 2020. The Microsoft 365 apps page (https://www.office.com/apps) will replace it and provide users with a single page for productivity and business applications.  
+Effective March 2020, the home page for Dynamics 365 applications (https://home.dynamics.com) is deprecated and won't be available after October 31, 2020. The Microsoft 365 apps page (https://www.office.com/apps) will replace it and provide users with a single page for productivity and business applications.  
 
-Dynamics 365 Home users will see notification about the new location and recommendation to change browser bookmarks until October 1, 2020. After October 1, 2020, users navigating to <https://home.dynamics.com> will automatically be redirected to <https://www.office.com/apps> with a business application filter applied.
+Dynamics 365 Home users will see notification about the new location and recommendation to change browser bookmarks starting October 1, 2020. After October 31, 2020, users navigating to <https://home.dynamics.com> will automatically be redirected to <https://www.office.com/apps> with a business application filter applied.
 
 More information: <https://aka.ms/business-apps-discovery-docs>
 
@@ -214,7 +211,7 @@ form that requires user input to start and run to completion. When you start the
 dialog process, a wizard-like interface is presented; users make selections or
 enter data as they progress through each page of the wizard.
 
-Process dialogs are deprecated and will be removed by April 1, 2021. Suggested replacement options include Business Process Flows or Canvas Apps. More information: [Replace dialogs with business process flows or canvas apps](https://docs.microsoft.com/flow/replace-dialogs)
+Process dialogs are deprecated and will be removed by December 1, 2020. Suggested replacement options include Business Process Flows or Canvas Apps. More information: [Replace dialogs with business process flows or canvas apps](https://docs.microsoft.com/flow/replace-dialogs)
 
 Legacy process-related attributes in entities are deprecated
 ------------------------------------------------------------
@@ -239,7 +236,7 @@ and supported until they are officially removed from a future major release. *A 
 | [Xrm.Page.context.getQueryStringParameters](https://docs.microsoft.com/previous-versions/dynamicscrm-2015/developers-guide/gg334511(v%3dcrm.7)#getquerystringparameters) |                                                                                                                                                                    formContext.data.attributes                                                                                                                                                                    | The formContext.data.attributes API will make retrieval of non-entity bound data consistent across entity forms, metadata-driven dialogs, and task-based flows. The data will be a combination of custom values sent using the query string and what was specified in the parameters in the [openForm](/dynamics365/customer-engagement/developer/clientapi/reference/xrm-navigation/openform) method. |
 | [Xrm.Page.context.getTimeZoneOffsetMinutes](https://docs.microsoft.com/previous-versions/dynamicscrm-2015/developers-guide/gg334511(v=crm.7)#gettimezoneoffsetminutes) |                                                                                                                                                        globalContext.userSettings.getTimeZoneOffsetMinutes                                                                                                                                                        |                                                                                                                                                                                  Moved to globalContext.userSettings                                                                                                                                                                                   |
 |                [Xrm.Page.context.getUserId](https://docs.microsoft.com/previous-versions/dynamicscrm-2015/developers-guide/gg334511(v=crm.7)#getuserid)                |                                                                                                                                                                 globalContext.userSettings.userId                                                                                                                                                                 |                                                                                                                                                                                  Moved to globalContext.userSettings                                                                                                                                                                                   |
-|              [Xrm.Page.context.getUserLcid](https://docs.microsoft.com/previous-versions/dynamicscrm-2015/developers-guide/gg334511(v=crm.7)#getuserlcid)              |                                                                                                                                                               globalContext.userSetings.languageId                                                                                                                                                                |                                                                                                                                                                                  Moved to globalContext.userSettings                                                                                                                                                                                   |
+|              [Xrm.Page.context.getUserLcid](https://docs.microsoft.com/previous-versions/dynamicscrm-2015/developers-guide/gg334511(v=crm.7)#getuserlcid)              |                                                                                                                                                               globalContext.userSettings.languageId                                                                                                                                                                |                                                                                                                                                                                  Moved to globalContext.userSettings                                                                                                                                                                                   |
 |              [Xrm.Page.context.getUserName](https://docs.microsoft.com/previous-versions/dynamicscrm-2015/developers-guide/gg334511(v=crm.7)#getusername)              |                                                                                                                                                                globalContext.userSettings.userName                                                                                                                                                                |                                                                                                                                                                                  Moved to globalContext.userSettings                                                                                                                                                                                   |
 |             [Xrm.Page.context.getUserRoles](https://docs.microsoft.com/previous-versions/dynamicscrm-2015/developers-guide/gg334511(v=crm.7)#getuserroles)             |                                                                                                                                                             globalContext.userSettings.securityRoles                                                                                                                                                              |                                                                                                                                                                                  Moved to globalContext.userSettings                                                                                                                                                                                   |
 |     [Xrm.Page.context.getIsAutoSaveEnabled](https://docs.microsoft.com/previous-versions/dynamicscrm-2015/developers-guide/gg334511(v=crm.7)#getisautosaveenabled)     |                                                                                                                                                       globalContext.organizationSettings.isAutoSaveEnabled                                                                                                                                                        |                                                                                                                                                                              Moved to globalContext.organizationSettings                                                                                                                                                                               |
@@ -288,9 +285,9 @@ Voice of the Customer is deprecated
 -----------------------------------
 The Voice of the Customer solution is used to create and send surveys for collecting feedback.  
 
-As of July 1, 2019, the Voice of the Customer solution is deprecated. Users can create and distribute new surveys and collect responses from live surveys till July 1, 2020. Please read this [blog post](https://go.microsoft.com/fwlink/p/?linkid=2097704) for more details. 
+As of July 1, 2019, the Voice of the Customer solution is deprecated. Users can create and distribute new surveys and collect responses from live surveys till July 1, 2020.  
 
-A new solution, Microsoft Forms Pro, is generally available to capture customer feedback using surveys. Customers can learn more about Forms Pro [here](https://formspro.microsoft.com). 
+A new solution, Dynamics 365 Customer Voice, is generally available to capture customer feedback using surveys. Customers can learn more about Customer Voice [here](https://docs.microsoft.com/dynamics365/customer-voice/help-hub).
 
 Dynamics 365 for Blackberry is deprecated
 ------------------------------------------

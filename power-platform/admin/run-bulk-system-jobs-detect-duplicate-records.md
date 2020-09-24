@@ -2,11 +2,10 @@
 title: "Run bulk system jobs to detect duplicate records  | MicrosoftDocs"
 description: Run bulk system jobs to detect duplicate records
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/30/2020
+ms.date: 09/09/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -40,7 +39,7 @@ To maintain the integrity of system data, you should check for duplicates regula
    > [!NOTE]
    >  What you see in this list depends on which duplicate detection rules are published. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Set up duplicate detection rules to keep your data clean](../admin/set-up-duplicate-detection-rules-keep-data-clean.md)  
   
-6. In the **Use Saved View** drop-down list, select a view if you want to limit the records searched to records in that view. For example, select Active Accounts. When you select a view, model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, add the criteria to search on.  
+6. In the **Use Saved View** drop-down list, select a view if you want to limit the records searched to records in that view. For example, select Active Accounts. When you select a view, customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), add the criteria to search on.  
   
 7. To further limit the records searched, select **Select** and then enter the criteria you want.  
   

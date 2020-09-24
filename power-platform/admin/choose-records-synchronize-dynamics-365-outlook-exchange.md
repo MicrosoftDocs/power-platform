@@ -1,12 +1,11 @@
 ---
-title: "Choose the records to synchronize between model-driven apps in Dynamics 365 and Exchange   | MicrosoftDocs"
-description: Choose the records to synchronize between model-driven apps in Dynamics 365 and Exchange 
+title: "Choose the records to synchronize between customer engagement apps and Exchange   | MicrosoftDocs"
+description: Choose the records to synchronize between customer engagement apps and Exchange 
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/30/2017
+ms.date: 09/04/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -16,13 +15,13 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Choose the records to synchronize between model-driven apps in Dynamics 365 and Exchange 
+# Choose the records to synchronize between customer engagement apps and Exchange 
 
 <!-- legacy procedure --> 
 
-Model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, use online synchronization filters to determine which records to synchronize between model-driven apps in Dynamics 365 and [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] (using [!INCLUDE[cc_server_side_synch](../includes/cc-server-side-synch.md)]). You can modify the existing online synchronization filters or create new filters to synchronize certain types of records. You can also delete, deactivate, or activate filters.  
+The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), use online synchronization filters to determine which records to synchronize between customer engagement apps and [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] (using [!INCLUDE[cc_server_side_synch](../includes/cc-server-side-synch.md)]). You can modify the existing online synchronization filters or create new filters to synchronize certain types of records. You can also delete, deactivate, or activate filters.  
   
- Email is not included in the synchronization filters because email is controlled by when the email is created in model-driven apps in Dynamics 365, whether the user is on the recipient list or not.   
+ Email is not included in the synchronization filters because email is controlled by when the email is created in customer engagement apps, whether the user is on the recipient list or not.   
   
 ## Create or modify online synchronization filters  
   
@@ -30,9 +29,9 @@ Model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Servi
   
 2. In the **Set Personal Options** dialog box, click the **Synchronization** tab.  
   
-3. Under **Synchronize model-driven apps in Dynamics 365 items with Outlook or Exchange**, click the **filters** link.  
+3. Under **Synchronize customer engagement apps items with Outlook or Exchange**, click the **filters** link.  
   
-  Model-driven apps in Dynamics 365 displays the **Synchronization Settings for [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] or [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)]** dialog box with the **User Filters** tab selected. You can use this tab to create or edit a filter, or to delete, activate, or deactivate a filter.  
+  Customer engagement apps displays the **Synchronization Settings for [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] or [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)]** dialog box with the **User Filters** tab selected. You can use this tab to create or edit a filter, or to delete, activate, or deactivate a filter.  
   
    ![Online synchronization filters](media/online-sync-filters-dialog-box2.png "Online synchronization filters")  
   
@@ -73,5 +72,5 @@ Model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Servi
    ![Sync filters dialog box showing grouped criteria](media/sync-filters-group-criteria.png "Sync filters dialog box showing grouped criteria")  
   
 ### See also  
- [Frequently asked questions about synchronizing records between model-driven apps in Dynamics 365 and Microsoft Outlook](frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook.md) 
+ [Frequently asked questions about synchronizing records between customer engagement apps and Microsoft Outlook](frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook.md) 
 

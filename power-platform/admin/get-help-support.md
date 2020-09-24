@@ -2,11 +2,10 @@
 title: "Get Help + Support   | MicrosoftDocs"
 description: Use the Help + support experience to contact a Microsoft support representative to get resolution for your issue.
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/14/2020
+ms.date: 09/21/2020
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -27,15 +26,33 @@ An example of solutions provided for Dynamics 365 App for Outlook issues:
 
 ### Prerequisites
 
--  You have a security role that is enabled for creating support requests such as an Global admin or Service support admin.
+- You have a security role that is enabled for creating support requests. Users having one of these security roles can create support requests:
 
--  For the following [support plans](https://www.microsoft.com/dynamics365/support):
+  - AAD Role Admin
+  - Power Apps Full Admin
+  - Power Apps Environment Admin (Environment Admin, System Admin)
+  - Company Admin
+  - Billing Admin
+  - Service Admin
+  - CRM Service Admin
+  - Power Platform Admin    `
+  - Security Admin
+  - CRM Organization Admin
+  - Partner Delegated Admin
+  - SharePoint Admin
+  - Teams Admin
+  - Exchange Admin
+  - Power BI Admin
+  - Compliance Admin
+  - Helpdesk Admin
+
+- For the following [support plans](https://www.microsoft.com/dynamics365/support):
    
-   - Subscription Support
-   - Enhanced Support
-   - Professional Direct Support
-   - Premier Support
-   - Unified Support
+  - Subscription Support
+  - Enhanced Support
+  - Professional Direct Support
+  - Premier Support
+  - Unified Support
 
 > [!NOTE]
 > In the following cases, you might not be able to create a support request or we can't provide relevant solutions:

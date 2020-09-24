@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/11/2020
+ms.date: 09/01/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -35,9 +35,9 @@ Every environment can have zero or one Common Data Service database, which provi
 When you create an app in an environment, that app is only permitted to connect to the data sources that are also deployed in that same environment, including connections, gateways, flows, and Common Data Service databases. For example, consider a scenario where you've created two environments named Test and Dev, and created a Common Data Service database in each of the environments. If you create an app in the Test environment, it will only be permitted to connect to the Test database; it won't be able to connect to the 'Dev' database.
 
 You can also move resources between environments. More information: [Migrate resources](../alm/environment-and-tenant-migration.md)
-<!-- 
+
 ![The Contoso Corporation tenant encompasses three environments, each of which has its own apps, flows, and Common Data Service database](./media/environments-overview/Environments.png "The Contoso Corporation tenant encompasses three environments, each of which has its own apps, flows, and Common Data Service database")
--->
+
 ## Environment permissions
 Environments have two built-in roles that provide access to permissions within an environment:
 
@@ -95,6 +95,11 @@ There are multiple types of environments. The type indicates the purpose of the 
 <td width="50%">  Developer environments are created by users who have the Community Plan license. They're special environments intended only for use by the owner, and they can't be shared with other users. Provisioning developer environments can't be restricted unless through a support ticket. </td>
 <td width="30%">  Only a single user account with the Community Plan has access.</td>
 </tr>
+<tr>
+<td width="20%"> Project Oakdale</td>
+<td width="50%">  Project Oakdale environments are automatically created for the selected team when you create an app in Teams using the Power Apps app for the first time or install a Power Apps app from the app catalog. See <a href="about-teams-environment.md">About the Project Oakdale environment</a>. </td>
+<td width="30%">  Tenant admins and/or Power Platform admins will not be able to access any of the core customer data in the Teams environment. However, they will be able to perform all system management operations, including customizations and updating user records, among other options. </td>
+</tr>
 <tr><td colspan="3">*&#8202;Users licensed for Power Apps, Power Automate, Microsoft 365, and Dynamics 365, standalone licenses, and free and trial licenses.</td></tr>
 </table>
 
@@ -107,6 +112,7 @@ A single default environment is automatically created by Power Apps for each ten
 > [!NOTE]
 > - No users will be added to the Environment Admin role of the default environment automatically. More information: [Administer environments in Power Apps](environments-administration.md)
 > - You can't delete the default environment.
+> - You can't backup and restore the default environment.
 > - The default environment is limited to 32 GB of storage capacity. In case you need to store more data, you can create a production environment. More information: [Provisioning a new environment](create-environment.md#provisioning-a-new-environment)
 
 The default environment is named as follows: "{Azure AD tenant name} (default)"

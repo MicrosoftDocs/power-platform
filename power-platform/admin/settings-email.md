@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/10/2018
+ms.date: 09/02/2020
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -44,7 +44,7 @@ Make sure you have the System Administrator or System Customizer security role o
 > |Information|Default: Enabled. |
 > |Notify mailbox owner|Default: Off. By default, the system administrator is notified of any error that occurs for an email server profile. Select **On** if you also want to notify the mailbox owner.|  
 > |**Attachments**| |
-> |Maximum file size attachments|Default: 5 MB (5120 KB). Maximum file size (in Kilobytes). Increase or decrease the maximum file size for attached files. The maximum size is 128 MB (131,072 KB).|
+> |Maximum file size for attachments|Default: 5 MB (5120 KB). Maximum file size (in Kilobytes). Increase or decrease the maximum file size for attached files. The maximum size is 128 MB (131,072 KB).|
 > |**Synchronization methods**|For any mailbox that is automatically created in [!INCLUDE[pn_crm_shortest](../includes/pn-crm-shortest.md)] when a user or queue is created, the default email settings as defined in this section will be applied.|  
 > |The selected settings will be applied to mailboxes of all newly created users and queues | |
 > |Server profile|For server-side synchronization, select the email server profile that you want to use. The email server profile holds the configuration data that enables [!INCLUDE[pn_crm_shortest](../includes/pn-crm-shortest.md)] to connect to [!INCLUDE[pn_Microsoft_Exchange](../includes/pn-microsoft-exchange.md)]. If you’re connecting model-driven apps in Dynamics 365 with [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)], the email server profile is automatically created for you.|  
@@ -56,6 +56,8 @@ Make sure you have the System Administrator or System Customizer security role o
 > |People can send emails with unresolved recipients|Default: Off. Set this to **On** if you want to send email messages that have unresolved recipients.|  
 > |If there are multiple possible recipient matches in the to, CC, or BCC fields, set them as unresolved|Default: Off. Use this setting to choose which record an email address resolves to when there are multiple possible matches in **to**, **cc**, or **bcc** fields of an email. When you select **On**, if the **to**, **cc**, or **bcc** fields of an email have an email address that can be resolved to multiple contacts (or other records), the email address will be resolved in the unresolved mode instead of resolving to all possible records. Unresolved email addresses can then be resolved individually as you encounter them.|  
 > |When someone manually resolves an unresolved email address, apply it to all similar unresolved addresses|When set to **Yes**, the same email address is applied to all similar unresolved email addresses when resolved in one email activity.  When set to **Off**, the email address is applied only to the specific email activity and does not resolve similar addresses present in other email activities. The default value is **On**. <br /><br />This setting is configurable when **Set To, cc, bcc, fields as unresolved values is multiple matches are found in Incoming Emails** is set to **On**.|
+> | **Additional app-specific settings**   |   |
+> | Enhanced email for Timeline  | The enhanced email experience allows users to compose an email without leaving the record they're working on. This setting is available with environments that have customer engagement apps in Dynamics 365, such as Dynamics 365 Sales or Dynamics 365 Customer Service.   |
 
   
 ### See also  

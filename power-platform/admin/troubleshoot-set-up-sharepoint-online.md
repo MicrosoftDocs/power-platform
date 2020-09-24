@@ -2,11 +2,10 @@
 title: "Troubleshoot SharePoint integration   | MicrosoftDocs"
 description: Troubleshoot SharePoint integration
 author: Mattp123
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/15/2020
+ms.date: 09/11/2020
 ms.author: matp
 search.audienceType: 
   - admin
@@ -293,9 +292,9 @@ If FetchXML or LayoutXML are malformed, use the following to restore.
 
 ## Validate and fix SharePoint site URLs
 
-In model-driven apps in Dynamics 365, [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site and document location records contain links to site collections, site, document libraries, and folders in [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)]. These site and document location records are associated with records so that the documents for records can be stored in [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)].  
+In customer engagement apps (such as Dynamics 365 Sales and Customer Service), [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site and document location records contain links to site collections, site, document libraries, and folders in [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)]. These site and document location records are associated with records so that the documents for records can be stored in [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)].  
   
- When the links between model-driven apps in Dynamics 365 and [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] break, you must validate and fix the links so that the records continue to point to the correct document libraries and folders for managing the documents.  
+ When the links between customer engagement apps and [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] break, you must validate and fix the links so that the records continue to point to the correct document libraries and folders for managing the documents.  
   
 1. [!INCLUDE[proc_permissions_system_admin](../includes/proc-permissions-system-admin.md)]  
   
@@ -313,7 +312,7 @@ In model-driven apps in Dynamics 365, [!INCLUDE[pn_SharePoint_short](../includes
   
    3. Select the site URLs that you want to validate, and then click or tap **Validate**.  
   
-3. Model-driven apps in Dynamics 365 validate all the selected site URLs and their immediate subordinate site and document library URLs. It then displays the results in **Validating Sites**.  
+3. Customer engagement apps validate all the selected site URLs and their immediate subordinate site and document library URLs. It then displays the results in **Validating Sites**.  
   
 4. To fix a URL, open the site record, and enter the correct URL. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Create or edit site records](edit-existing-sharepoint-site-records.md).  
   

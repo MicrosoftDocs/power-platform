@@ -2,11 +2,10 @@
 title: "Connect to Yammer  | MicrosoftDocs"
 description: Connect to Yammer
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/09/2020
+ms.date: 09/04/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -22,21 +21,21 @@ search.app:
 
 [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] gives colleagues at your organization a central place to have conversations, create and edit documents, and share information without sending a single email or attending any meetings.  
   
- After you set up your organization to work with [!INCLUDE[pn_yammer](../includes/pn-yammer.md)], employees will see posts in a newsfeed on their model-driven apps in Dynamics 365 dashboard whenever people update customer info, and they'll be able to join in the conversation with their own posts.  
+ After you set up your organization to work with [!INCLUDE[pn_yammer](../includes/pn-yammer.md)], employees will see posts in a newsfeed on their customer engagement apps dashboard whenever people update customer info, and they'll be able to join in the conversation with their own posts.  
   
 ## Connect your organization to Yammer  
   
 ### Prerequisites  
   
-- Before your organization can use [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] in model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, your organization needs to buy [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] enterprise licenses.  
+- Before your organization can use [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), your organization needs to buy [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] enterprise licenses.  
 
-- [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] integration is only available for model-driven apps in Dynamics 365.
+- [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] integration is only available for customer engagement apps.
   
 - [!INCLUDE[proc_permissions_system_admin](../includes/proc-permissions-system-admin.md)]  
   
 - You'll also need to have verified system administrator privileges for your organization's [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] account.  
   
-- Install the most recent product updates for model-driven apps in Dynamics 365.  
+- Install the most recent product updates for customer engagement apps.  
   
 - Meet [browser and system requirements](https://support.office.com/article/Yammer-admin-guide-a9c206d4-fb18-4250-bec6-e783b926e4f6).  
   
@@ -52,14 +51,14 @@ search.app:
   
 5. Read the disclaimer, and then choose **Continue**.  
   
-6. Choose **Authorize model-driven apps in Dynamics 365 (or [!INCLUDE[pn_crm_2016_shortest](../includes/pn-crm-2016-shortest.md)]) to connect to [!INCLUDE[pn_yammer](../includes/pn-yammer.md)]**.  
+6. Choose **Authorize Microsoft Dynamics 365 Online to connect to [!INCLUDE[pn_yammer](../includes/pn-yammer.md)]**.  
   
 7. Sign in to your enterprise [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] account using your administrator credentials.  
   
 8. Follow the on-screen instructions to accept the [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] terms of service, note which [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] network has been set up for you, and connect your organization to it. After your organization is connected, you'll see a confirmation message at the bottom of the screen.  
   
    > [!NOTE]
-   > Model-driven apps in Dynamics 365 only support connecting to the primary [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] network. Connecting to External Networks in [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] is not supported.  
+   > Customer engagement apps only support connecting to the primary [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] network. Connecting to External Networks in [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] is not supported.  
   
 9. If desired, stay signed in to your [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] account and set your organization's preferences for [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] posts.  
   
@@ -67,14 +66,14 @@ search.app:
   
 1. Make sure you're signed in to your enterprise [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] account using your administrator credentials.  
   
-2. If desired, select whether [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] posts are **public** (everyone sees model-driven apps in Dynamics 365 posts in the newsfeed, or **private** (people must "follow" a record to see posts about that record in the newsfeed).  
+2. If desired, select whether [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] posts are **public** (everyone sees customer engagement apps posts in the newsfeed, or **private** (people must "follow" a record to see posts about that record in the newsfeed).  
   
 3. If desired, select the default group where you would like posts to appear.  
   
 4. If desired, select which record types trigger automatic posts to the [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] newsfeed.  
   
 ## Enable entities for Yammer  
- Once you've connected model-driven apps in Dynamics 365 to [!INCLUDE[pn_yammer](../includes/pn-yammer.md)], you need to specify which entities are enabled for use with [!INCLUDE[pn_yammer](../includes/pn-yammer.md)]. Enabled entities can be followed by users  
+ Once you've connected customer engagement apps to [!INCLUDE[pn_yammer](../includes/pn-yammer.md)], you need to specify which entities are enabled for use with [!INCLUDE[pn_yammer](../includes/pn-yammer.md)]. Enabled entities can be followed by users  
   
 1. [!INCLUDE[proc_settings_system](../includes/proc-settings-system.md)]  
   
@@ -104,10 +103,10 @@ search.app:
   
 5. Complete the process to obtain a temporary user name and password.  
   
-6. Use the temporary user name and password to complete the model-driven apps in Dynamics 365 to [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] connection configuration.  
+6. Use the temporary user name and password to complete the customer engagement apps to [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] connection configuration.  
   
 ### Add Yammer sites to the browser as trusted  
- Add your Yammer sites to your browser as trusted. For example, for model-driven apps in Dynamics 365, add the following:  
+ Add your Yammer sites to your browser as trusted. For example, for customer engagement apps, add the following:  
   
 - https://*.crm.dynamics.com  
   

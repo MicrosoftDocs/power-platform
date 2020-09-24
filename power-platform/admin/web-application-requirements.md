@@ -2,11 +2,10 @@
 title: "Web application requirements  | MicrosoftDocs"
 description: Web application requirements
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/09/2020
+ms.date: 09/11/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -59,7 +58,7 @@ Notice that these values are recommendations and don’t guarantee satisfactory 
 <sup>2</sup> Check requirements for individual apps, such as [Customer Service Hub application requirements](https://docs.microsoft.com/dynamics365/customer-service/customer-service-hub-user-guide-basics). <br/>
 
 > [!IMPORTANT]
->  Although you may be able to use [!INCLUDE[pn_IE_8](../includes/pn-ie-8.md)], [!INCLUDE[pn_IE_9](../includes/pn-ie-9.md)], or an [!INCLUDE[pn_Internet_Explorer](../includes/pn-internet-explorer.md)] and [!INCLUDE[pn_ms_Windows_short](../includes/pn-ms-windows-short.md)] combination that is not supported in the previous table, those web browsers are not recommended and are not supported with this version of model-driven apps in Dynamics 365.  
+>  Although you may be able to use [!INCLUDE[pn_IE_8](../includes/pn-ie-8.md)], [!INCLUDE[pn_IE_9](../includes/pn-ie-9.md)], or an [!INCLUDE[pn_Internet_Explorer](../includes/pn-internet-explorer.md)] and [!INCLUDE[pn_ms_Windows_short](../includes/pn-ms-windows-short.md)] combination that is not supported in the previous table, those web browsers are not recommended and are not supported with this version of customer engagement apps.  
 > 
 >  Using plug-ins or other third-party extensions in your browser can increase load times on pages with lists of data.  
 
@@ -81,7 +80,7 @@ To find the latest release for these web browsers, visit the software manufactur
 > - Mozilla Firefox ESR (Extended Support Release) versions aren’t supported.  
 
 ## Supported versions of Office  
- To use model-driven apps in Dynamics 365 with [!INCLUDE[pn_MS_Office](../includes/pn-ms-office.md)] integration features, such as Export to Excel and Mail Merge, you must have one of the following [!INCLUDE[pn_MS_Office](../includes/pn-ms-office.md)] versions on the computer that is running the web application:  
+ To use customer engagement apps (such as Dynamics 365 Sales and Customer Service) with [!INCLUDE[pn_MS_Office](../includes/pn-ms-office.md)] integration features, such as Export to Excel and Mail Merge, you must have one of the following [!INCLUDE[pn_MS_Office](../includes/pn-ms-office.md)] versions on the computer that is running the web application:  
 
 - [!INCLUDE[pn_MS_Office_365](../includes/pn-ms-office-365.md)]  
 

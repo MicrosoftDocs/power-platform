@@ -46,7 +46,7 @@
         href: wp-management-monitoring.md
       - name: Power Apps enterprise deployment whitepaper
         href: admin-powerapps-enterprise-deployment.md
-      - name: Try Power Apps and model-driven apps in Dynamics 365
+      - name: Try Power Apps and customer engagement apps
         href: try-powerapps-dynamics-365.md
       - name: Move between your apps
         href: quickly-navigate-office-365-app-launcher.md
@@ -102,6 +102,8 @@
           href: trial-environments.md     
         - name: Sandbox environment
           href: sandbox-environments.md
+        - name: Project Oakdale environment (Preview)
+          href: about-teams-environment.md
         - name: View apps in your environments 
           href: admin-view-apps.md
         - name: Language collations 
@@ -474,7 +476,9 @@
         href: system-application-users.md
       - name: Configure user security
         href: database-security.md
-      - name: Email exfiltration controls for Office 365 connectors
+      - name: How access to records is determined
+        href: how-record-access-determined.md
+      - name: Email exfiltration controls for connectors
         href: block-forwarded-email-from-power-automate.md
       - name: Configure environment security 
         items: 
@@ -526,7 +530,7 @@
       - name: Setup
         href: set-up-sharepoint-integration.md 
         items: 
-        - name: Set up model-driven apps in Dynamics 365 to use SharePoint online
+        - name: Set up customer engagement apps to use SharePoint online
           href: set-up-dynamics-365-online-to-use-sharepoint-online.md
         - name: Configure server-based authentication with SharePoint on-premises
           href: configure-server-based-authentication-sharepoint-on-premises.md  
@@ -706,8 +710,6 @@
         href: https://docs.microsoft.com/dynamics365/customer-engagement/live-assist/live-assist-microsoft-dynamics-365-powered-by-cafe-x
       - name: Use Power BI
         href: use-power-bi.md 
-      - name: Embed an app in Teams
-        href: embed-app-teams.md        
       - name: Install, update, or remove a preferred solution
         href: install-remove-preferred-solution.md 
       - name: Add Microsoft 365 Online services
@@ -823,7 +825,7 @@
     href: about-flow-guide.md
   - name: Administer Power BI
     href: about-powerbi-guide.md
-  - name: Administer model-driven apps in Dynamics 365    
+  - name: Administer customer engagement apps in Dynamics 365    
     items:
     - name: Overview
       href: about-ce-guide.md
@@ -844,6 +846,8 @@
     href: ../important-changes-coming.md
   - name: International availability
     href: ../availability.md
+  - name: Adoption best practices
+    href: /power-platform/guidance/adoption/methodology
   - name: Center of Excellence (CoE) Kit
     href: /power-platform/guidance/coe/starter-kit
     

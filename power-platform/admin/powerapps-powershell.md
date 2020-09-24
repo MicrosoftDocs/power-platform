@@ -6,7 +6,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 08/26/2020
+ms.date: 08/27/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -88,7 +88,7 @@ To run the PowerShell cmdlets for app creators, do the following:
     ```powershell
     # Here is how you can pass in credentials (avoiding opening a prompt)
     $pass = ConvertTo-SecureString "password" -AsPlainText -Force
-    Add-PowerAppsAccount -Username foo@bar.com -Password $pass
+    Add-PowerAppsAccount -Username user@contoso.com -Password $pass
     ```
 
 ## Power Apps cmdlets for app creators
@@ -113,7 +113,8 @@ Users with a valid Power Apps license can perform the operations in these cmdlet
 | Read, update, and delete connection permissions | Get-PowerAppConnectionRoleAssignment *(previously Get-ConnectionRoleAssignment)* <br> Set-PowerAppConnectionRoleAssignment *(previously Set-ConnectionRoleAssignment)* <br> Remove-PowerAppConnectionRoleAssignment *(previously Remove-ConnectionRoleAssignment)* |
 | Read and delete connectors | Get-PowerAppConnector *(previously Get-Connector)* <br> Remove-PowerAppConnector *(previously Remove-Connector)* |
 | Read, update, and delete custom connector permissions | Get-PowerAppConnectorRoleAssignment *(previously Get-ConnectorRoleAssignment)* <br> Set-PowerAppConnectorRoleAssignment *(previously Set-ConnectorRoleAssignment)* <br> Remove-PowerAppConnectorRoleAssignment *(previously Remove-ConnectorRoleAssignment)* |
-| Read, add, or remove policy URL patterns | Get-PowerAppPolicyUrlPatterns<br />New-PowerAppPolicyUrlPatterns<br />Remove-PowerAppPolicyUrlPatterns |
+| Read, add, and remove policy URL patterns | Get-PowerAppPolicyUrlPatterns<br />New-PowerAppPolicyUrlPatterns<br />Remove-PowerAppPolicyUrlPatterns |
+| Read, register, and remove management apps | Get-PowerAppManagementApp<br /> Get-PowerAppManagementApps <br /> New-PowerAppManagementApp <br /> Remove-PowerAppManagementApp|
 
 ## Power Apps cmdlets for administrators
 
@@ -130,7 +131,7 @@ To perform the administration operations in the admin cmdlets, you'll need the f
 | --- | ---
 | Read, update, delete, and recover environments and Common Data Service databases | New-AdminPowerAppEnvironment <br> Set-AdminPowerAppEnvironmentDisplayName <br> Get-AdminPowerAppEnvironment *(previously Get-AdminEnvironment)* <br> Remove-AdminPowerAppEnvironment *(previously Remove-AdminEnvironment)* <br>Get-AdminPowerAppSoftDeletedEnvironment</br>Recover-AdminPowerAppEnvironment<br> Copy-PowerAppEnvironment<br />Backup-PowerAppEnvironment<br /> Get-PowerAppEnvironmentBackups<br /> Restore-PowerAppEnvironment<br /> Remove-PowerAppEnvironmentBackup<br />Reset-PowerAppEnvironment<br />New-AdminPowerAppCdsDatabase <br> Get-AdminPowerAppCdsDatabaseLanguages <br> Get-AdminPowerAppCdsDatabaseCurrencies <br> Get-AdminPowerAppEnvironmentLocations |
 | Delete Common Data Service database | Remove-LegacyCDSDatabase | 
-| Read, update, and delete environment permissions <br><br> *These cmdlets only work today for environments that do not have a Common Data Service database.* | Get-AdminPowerAppEnvironmentRoleAssignment *(previously Get-AdminEnvironmentRoleAssignment)* <br> Set-AdminPowerAppEnvironmentRoleAssignment *(previously Set-AdminEnvironmentRoleAssignment)* <br> Remove-AdminPowerAppEnvironmentRoleAssignment *(previously Remove-AdminEnvironmentRoleAssignment)* <br />Set-AdminPowerAppEnvironmentRuntimeStat |
+| Read, update, and delete environment permissions <br><br> *These cmdlets only work today for environments that do not have a Common Data Service database.* | Get-AdminPowerAppEnvironmentRoleAssignment *(previously Get-AdminEnvironmentRoleAssignment)* <br> Set-AdminPowerAppEnvironmentRoleAssignment *(previously Set-AdminEnvironmentRoleAssignment)* <br> Remove-AdminPowerAppEnvironmentRoleAssignment *(previously Remove-AdminEnvironmentRoleAssignment)* <br /> Set-AdminPowerAppEnvironmentRuntimeStat |
 | Read, update, remove, and recover canvas apps | Get-AdminPowerApp *(previously Get-AdminApp)* <br> Remove-AdminPowerApp *(previously Remove-AdminApp)* <br> Get-AdminPowerAppConnectionReferences <br> Set-AdminPowerAppAsFeatured <br> Clear-AdminPowerAppAsFeatured <br> Set-AdminPowerAppAsHero <br> Clear-AdminPowerAppAsHero <br> Set-AdminPowerAppApisToBypassConsent <br> Clear-AdminPowerAppApisToBypassConsent <br> Get-AdminDeletedPowerAppsList <br> Get-AdminRecoverDeletedPowerApp |
 | Read, update, and delete canvas app permissions | Get-AdminPowerAppRoleAssignment *(previously Get-AdminAppRoleAssignment)* <br> Remove-AdminPowerAppRoleAssignment *(previously Remove-AdminAppRoleAssignment)* <br> Set-AdminPowerAppRoleAssignment *(previously Set-AdminAppRoleAssignment)* <br> Set-AdminPowerAppOwner *(previously Set-AdminAppOwner)* |
 | Read, update, and delete flows | Get-AdminFlow <br> Enable-AdminFlow <br> Disable-AdminFlow <br> Remove-AdminFlow <br> Remove-AdminFlowApprovals |
@@ -142,9 +143,10 @@ To perform the administration operations in the admin cmdlets, you'll need the f
 | Read a user's Power Apps user settings, user-app settings, and notifications | Get-AdminPowerAppsUserDetails |
 | Read and delete a user's Power Automate settings, which are not visible to user, but that support flow execution | Get-AdminFlowUserDetails <br> Remove-AdminFlowUserDetails |
 | Create, read, update and delete data loss prevention policies for your organization using a three-way classification - **Business**, **Non-Business**, and **Blocked**  |  Get-DlpPolicy *(previously Get-AdminDlpPolicy)* <br> New-DlpPolicy *(previously Add-AdminDlpPolicy)* <br>  Remove-DlpPolicy *(previously Remove-AdminDlpPolicy)* <br> Set-DlpPolicy *(previously Set-AdminDlpPolicy)*  |
-| Read, add, remove, or update tenant settings | Get-TenantSettings<br />Set-TenantSettings<br /> Get-PowerAppTenantUrlPatterns <br />New-PowerAppTenantUrlPatterns <br />Remove-PowerAppTenantUrlPatterns|
-| Read, add, or remove allowed consent/trial plans within the tenant | Remove-AllowedConsentPlans <br>Add-AllowedConsentPlans<br /> Get-AllowedConsentPlans |
+| Read, add, remove, and update tenant settings | Get-TenantSettings<br />Set-TenantSettings<br /> Get-PowerAppTenantUrlPatterns <br />New-PowerAppTenantUrlPatterns <br /> Remove-PowerAppTenantUrlPatterns <br />Get-AdminPowerAppTenantConsumedQuota|
+| Read, add, and remove allowed consent/trial plans within the tenant | Remove-AllowedConsentPlans <br>Add-AllowedConsentPlans<br /> Get-AllowedConsentPlans |
 | Read tenant assigned user licenses | Get-AdminPowerAppLicenses |
+| Read, update, and reset the environment that Power Apps uses to save SharePoint form apps| Get-AdminPowerAppSharepointFormEnvironment <br />       Set-AdminPowerAppSharepointFormEnvironment <br /> Reset-AdminPowerAppSharepointFormEnvironment|
 
 ## Tips
 

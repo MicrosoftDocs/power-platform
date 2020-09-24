@@ -41,7 +41,7 @@ connectors, and data platform that provides a rapid application development
 environment to build custom apps for your business needs. Using Power Apps, you
 can quickly build custom business apps that connect to your business data stored
 either in the underlying data platform (Common Data Service) or in various
-online and on-premises data sources, such as SharePoint, Excel, Office 365,
+online and on-premises data sources, such as Microsoft 365,
 Dynamics 365, SQL Server, and so on. More information: [What is Power Apps?](/powerapps/powerapps-overview)
 
 ## DevOps

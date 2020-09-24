@@ -26,6 +26,9 @@ This can be useful if you use different environments for different purposes, or 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4CsHl]
 > 
 
+>[!NOTE]
+>You can only import and export bots with the Power Virtual Agents web app. The feature is not available in the Power Virtual Agents app in Microsoft Teams.
+
 ## Prerequisites
 
 
@@ -57,7 +60,7 @@ You use solutions to export bots from one environment and import them into anoth
 
 2. Under **Export/import bot**, select **Go to Power Apps Solutions**.
  
-    ![Link to the Power Apps admin center from Power Virtual Agents](media/export-settings-powerapps.png "Link to the Power Apps admin center from Power Virtual Agents")
+    ![Link to the Power Platform admin center from Power Virtual Agents](media/export-settings-powerapps.png "Link to the Power Platform admin center from Power Virtual Agents")
 
 3. Sign in to Power Apps and select **New solution**. Enter the information for each of the fields as described in this table, then select **Create**.
 
@@ -112,11 +115,13 @@ If you don't see the **Export/import bot** section under **Settings**, you will 
     1. Select the solution you want to add your bot to.
 
     1. Select **Add existing** and choose **Environment variables**.
+
     1. On the **Add existing environment variables** panel, select the environment variables for your bot’s skills. Each skill has two environment variables. The environment variables **Display name** column will show the bot name in square brackets. For example, *[Bot name] Skill name*.
 
         ![List of skills selected for export](media/export-skills.png "List of skills selected for export")
  
     1. Select the environment variables of the bot’s skills. 
+
     1. Select **Next** to add them to the solution.
 
 
@@ -186,6 +191,7 @@ The export can take several minutes to complete. Once finished, a .zip file will
 1. You might need to wait a few moments while the import completes. View the results and then select **Close**.
 
     If the import isn’t successful, you'll see a report showing any errors or warnings that were captured. Select **Download Log File** to capture details about what caused the import to fail in an XML file.  
+
       
     The most common cause for an import to fail is that the solution didn't contain some required components. For example, you might not have any upgraded bots in the environment.
 
@@ -223,7 +229,6 @@ There are times when you need to update an existing managed solution. To learn m
 
 ## Remove an unmanaged layer from a managed chatbot 
 Managed and unmanaged solutions exist at different levels within a Common Data Service environment. To learn more, go to [Solution layers](/powerapps/maker/common-data-service/solution-layers).
-
 
 A managed component (for example, a topic or flow) gets an unmanaged "Active" layer when you edit it, which means you won't see the latest changes after you deploy the solution. 
  

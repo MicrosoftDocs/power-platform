@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/11/2020
+ms.date: 09/13/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -40,7 +40,7 @@ Access to Power Apps and Power Automate starts with having a license, the type o
 |Plan  |Description  |
 |---------|---------|
 |Microsoft 365 Included     | This allows users to extend SharePoint and other Office assets they already have. |
-|Dynamics 365 Included     | This allows users to customize and extend model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, they already have.  |
+|Dynamics 365 Included     | This allows users to customize and extend customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), they already have.  |
 |Power Apps plan  | This allows: <ul><li>making enterprise connectors and Common Data Service accessible for use.</li><li>users to use robust business logic across application types and administration capabilities.</li></ul>  |
 |Power Apps Community | This allows a user to use Power Apps, Power Automate, Common Data Service and customer connectors in a single for individual use. There is no ability to share apps. |
 |Power Automate Free | This allows users to create unlimited flows and perform 750 runs. |
@@ -103,7 +103,7 @@ For customers with Azure AD Premium, conditional access policies can be defined 
 3. Select Conditional Access.
 4. Select + New Policy
 5. Select user and groups
-6. Select the cloud apps - select **Common Data Service** to control access to model-driven apps in Dynamics 365 (such as Dynamics 365 Sales and Dynamics 365 Customer Service)
+6. Select the cloud apps - select **Common Data Service** to control access to customer engagement apps
 7. Apply conditions (user/group, device, location) 
 
 ### Prevent data leakage with data loss prevent policies
@@ -123,14 +123,6 @@ A: Connectors are available to all users. With the exception of premium or custo
 ## Alert and action
 
 In addition to monitoring, many customers want to subscribe to software creation, usage or health events so they know when to perform an action. This section outlines a few means to observe events (manually and programmatically) and perform actions triggered by an event occurrence. 
-
-### Leverage the [Microsoft Power Automate admin center](https://admin.powerplatform.microsoft.com/)
-
-Environment and app management requires a Power Apps plan or a Power Automate plan. You can do the following:
-
-1. View and manage environments.
-2. View and manage all apps and flows within an environment.
-     
 
 ### Build Power Automate flows to alert on key audit events
 
@@ -165,7 +157,7 @@ It's well understood that monitoring as a critical aspect of managing software a
 
 [Activity logging for Power Apps](logging-powerapps.md) is integrated with Office Security and Compliance center for comprehensive logging across Microsoft services like Common Data Service and Microsoft 365. Office provides an API to query this data, which is currently used by many SIEM vendors to use the Activity Logging data for reporting.
 
-### Download the Power Apps and Power Automate license report
+### View the Power Apps and Power Automate license report
 
 1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 

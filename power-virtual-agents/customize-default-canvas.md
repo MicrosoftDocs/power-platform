@@ -2,9 +2,8 @@
 title: "Customize the web chat canvas"
 description: "Change the name, icon, and color of your bot with CSS and JavaScript styling."
 keywords: "PVA"
-ms.date: 8/3/2020
-ms.service:
-  - dynamics-365-ai
+ms.date: 9/22/2020
+ms.service: dynamics-365-ai
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -15,7 +14,9 @@ ms.collection: virtual-agent
 
 # Customize the look and feel of the bot's default canvas
 
-
+> [!div class="op_single_selector"]
+> - [Power Virtual Agents web app](customize-default-canvas.md)
+> - [Power Virtual Agents app in Microsoft Teams](teams/customize-default-canvas-teams.md)
 
 After you create and [publish a bot](publication-fundamentals-publish-channels.md), your customers can [use the bot's Web Chat canvas to interact with it](publication-connect-bot-to-web-channels.md).
 
@@ -31,14 +32,34 @@ The default look and feel of the bot is defined by the bot's canvas. You can cus
 
 You can also combine the customized canvas with [configuring your bot to automatically start the conversation](configure-bot-greeting.md).
 
+Lastly, you can [change the name and bot icon](#change-the-bot-name-and-icon) (when the bot is [shared in Microsoft Teams](publication-add-bot-to-microsoft-teams.md)) directly from the portal.
+
 
 ## Prerequisites
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 
 >[!IMPORTANT]
->You may install and use the sample code included in this documentation only for use with the Microsoft Power Virtual Agents service. The sample code is licensed "as is" and is excluded from any service level agreements or support services. You bear the risk of using it. 
+>You may install and use the sample code included in this documentation only for use with the Microsoft Power Virtual Agents product. The sample code is licensed "as is" and is excluded from any service level agreements or support services. You bear the risk of using it.  
 >Microsoft gives no express warranties, guarantees, or conditions and excludes all implied warranties, including merchantability, fitness for a particular purpose, and non-infringement.
+
+
+## Change the bot name and icon
+
+You can change the bot's name and icon. 
+
+>[!NOTE]
+>Changing the bot's avatar icon only applies to the bot's avatar when it's [added to Microsoft Teams](publication-add-bot-to-microsoft-teams.md).
+
+**To change the bot's name and icon:**
+
+1. Select **Manage** on the side navigation pane, and then go to the **Details** tab.
+
+2. Change the bot's name and icon. [Review the recommendations on Microsoft Teams icon formats](https://review.docs.microsoft.com/microsoftteams/platform/resources/schema/manifest-schema#icons)
+
+3. Select **Save** to commit your changes.
+
+    :::image type="content" source="media/custom-canvas-name-icon.png" alt-text="The bot details pane lets you change the name and icon":::
 
 ## Retrieve bot ID and tenant ID details
 
@@ -163,7 +184,7 @@ Once you get the customized canvas working with your bot, you can make changes t
 
 You can use the JavaScript `styleOptions` options to configure a number of pre-defined styles. 
 
-The [defaultStyleOptions.js file](https://github.com/Microsoft/BotFramework-WebChat/blob/master/packages/component/src/Styles/defaultStyleOptions.js) is available on our GitHub repo and contains the full list of all settings that you can modify. For more information on what you can customize and how it will look, see [Web Chat customization](/azure/bot-service/bot-builder-webchat-customization?view=azure-bot-service-4.0).
+The [defaultStyleOptions.js file](https://github.com/Microsoft/BotFramework-WebChat/blob/master/packages/component/src/Styles/defaultStyleOptions.js) is available on our GitHub repo and contains the full list of all settings that you can modify. For more information on what you can customize and how it will look, see [Web Chat customization](/azure/bot-service/bot-builder-webchat-customization?view=azure-bot-service-4.0&preserve-view=true).
 
 
 **To change the bot icon**
@@ -173,7 +194,9 @@ The [defaultStyleOptions.js file](https://github.com/Microsoft/BotFramework-WebC
     ```js
 
     const styleOptions = {
-           
+                botAvatarInitials: 'BT',
+                accent: '#00809d',
+                botAvatarBackgroundColor: "#FFFFFF",
                 botAvatarImage: 'https://docs.microsoft.com/en-us/azure/bot-service/v4sdk/media/logo_bot.svg',
                 userAvatarImage: 'https://avatars.githubusercontent.com/u/661465'
             };  
@@ -208,7 +231,7 @@ The [defaultStyleOptions.js file](https://github.com/Microsoft/BotFramework-WebC
     <body>
         <div id="heading">
              <!-- Change the h1 text to change the bot name -->
-             <h1><img src="contosobot.png"> Contoso Bot Name</h1>
+             <h1><img src="contosobot-teams.png"> Contoso Bot Name</h1>
         </div>
 
     ```
@@ -239,13 +262,15 @@ Or you can pick from [other sample web chat canvases](https://github.com/microso
 
 ### Customize canvas using `stylesetOptions`
 
-As with customizing the default canvas, you can use `styleSetOptions` to customize the custom canvas. All customizable properties are listed in [defaultStyleOptions.js](https://github.com/microsoft/BotFramework-WebChat/blob/master/packages/component/src/Styles/defaultStyleOptions.js). For more information on what you can customize and how it will look, see [Web Chat customization](/azure/bot-service/bot-builder-webchat-customization?view=azure-bot-service-4.0).
+As with customizing the default canvas, you can use `styleSetOptions` to customize the custom canvas. All customizable properties are listed in [defaultStyleOptions.js](https://github.com/microsoft/BotFramework-WebChat/blob/master/packages/component/src/Styles/defaultStyleOptions.js). For more information on what you can customize and how it will look, see [Web Chat customization](/azure/bot-service/bot-builder-webchat-customization?view=azure-bot-service-4.0&preserve-view=true).
 
 ### Deploy your customized canvas
 
 In order to host your custom canvas, deploy all files to a web app.
 
+
+
 ## See also
 
 -  [Bot Framework web chat](https://github.com/microsoft/BotFramework-WebChat)
--  [Generating a direct line token](https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0#generate-token)
+-  [Generating a direct line token](https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0#generate-token&preserve-view=true)

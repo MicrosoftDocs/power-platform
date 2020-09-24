@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/28/2020
+ms.date: 09/09/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -20,7 +20,7 @@ search.app:
 The [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] is an add-on service made available on [!INCLUDE[pn_microsoft_appsource](../includes/pn-microsoft-appsource.md)] that adds the ability to replicate data from Common Data Service database to a [!INCLUDE[pn_ms_azure_sql_database](../includes/pn-ms-azure-sql-database.md)] store in a customer-owned [!INCLUDE[pn_Windows_Azure](../includes/pn-windows-azure.md)] subscription. The supported target destinations are [!INCLUDE[pn_ms_azure_sql_database](../includes/pn-ms-azure-sql-database.md)] and [!INCLUDE[pn_SQL_Server_short](../includes/pn-sql-server-short.md)] on [!INCLUDE[pn_Windows_Azure](../includes/pn-windows-azure.md)] virtual machines.  The [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] intelligently synchronizes the entire data initially and thereafter synchronizes on a continuous basis as changes occur (delta changes) in the system. This helps enable several analytics and reporting scenarios on top of data with [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] data and analytics services, and opens up new possibilities for customers and partners to build custom solutions.  
   
 > [!NOTE]
-> - You can use the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] with model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Dynamics 365 Customer Service. <br />
+> - You can use the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] with customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation). <br />
 > - We're now previewing a similar capability to export your Common Data Service data to Azure Data Lake Gen2. You'll be able to link your Common Data Service environment to a data lake in your Azure subscription, select standard or custom entities, and then export data to the data lake. All data or metadata changes (initial and incremental) in Common Data Service are automatically pushed to Azure Data Lake Gen2 without any additional action. More information: [Exporting Common Data Service data to Azure Data Lake](https://powerapps.microsoft.com/blog/exporting-cds-data-to-azure-data-lake-preview/) 
   
 For information about the programmatic interface for managing configuration and administration of the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)], see [Data Export Service](https://docs.microsoft.com/powerapps/developer/common-data-service/data-export-service) in the developer guide.
@@ -76,7 +76,7 @@ For information about the programmatic interface for managing configuration and 
   
 - Configure your firewall rules to allow communication between Data Export Service and Azure Key Vault.
 
-### Model-driven apps in Dynamics 365  
+### Customer engagement apps
   
 - A version 9.0 or later version environment.  
   
@@ -104,7 +104,7 @@ For information about the programmatic interface for managing configuration and 
   - [!INCLUDE[pn_azure_key_vault](../includes/pn-azure-key-vault.md)].  
   
 > [!IMPORTANT]
->  To use the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] the model-driven apps in Dynamics 365 and [!INCLUDE[pn_azure_key_vault](../includes/pn-azure-key-vault.md)] services must operate under the same tenant and within the same [!INCLUDE[pn_microsoft_azure_active_directory](../includes/pn-microsoft-azure-active-directory.md)]. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Azure integration with Office 365](https://support.office.com/article/Azure-integration-with-Office-365-a5efce5d-9c9c-4190-b61b-fd273c1d425f)  
+>  To use the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] the customer engagement apps and [!INCLUDE[pn_azure_key_vault](../includes/pn-azure-key-vault.md)] services must operate under the same tenant and within the same [!INCLUDE[pn_microsoft_azure_active_directory](../includes/pn-microsoft-azure-active-directory.md)]. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Azure integration with Microsoft 365](https://support.office.com/article/Azure-integration-with-Office-365-a5efce5d-9c9c-4190-b61b-fd273c1d425f)  
 > 
 >  The [!INCLUDE[pn_Azure_SQL_Database_long](../includes/pn-azure-sql-database-long.md)] service can be in the same or a different tenant from the service.  
   
@@ -131,9 +131,9 @@ For information about the programmatic interface for managing configuration and 
   
 <a name="dataexportprofile"></a>   
 ## Export Profile  
- To export data from model-driven apps in Dynamics 365, the administrator creates an Export Profile.  Multiple profiles can be created and activated to synchronize data to different destination databases simultaneously.  
+ To export data from customer engagement apps, the administrator creates an Export Profile.  Multiple profiles can be created and activated to synchronize data to different destination databases simultaneously.  
   
- The Export Profile is the core concept of  the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)]. The Export Profile gathers set up and configuration information to synchronize data with the destination database. As part of the Export Profile, the administrator provides a list of entities to be exported to the destination database. Once activated, the Export Profile starts the automatic synchronization of data. Initially, all data that corresponds to each selected entity is exported. Thereafter, only the changes to data as they occur to the entity records or metadata in model-driven apps in Dynamics 365 are synchronized continuously using a push mechanism in near real time. Therefore, you don't need to set up a schedule to retrieve data from model-driven apps in Dynamics 365.  
+ The Export Profile is the core concept of  the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)]. The Export Profile gathers set up and configuration information to synchronize data with the destination database. As part of the Export Profile, the administrator provides a list of entities to be exported to the destination database. Once activated, the Export Profile starts the automatic synchronization of data. Initially, all data that corresponds to each selected entity is exported. Thereafter, only the changes to data as they occur to the entity records or metadata in customer engagement apps are synchronized continuously using a push mechanism in near real time. Therefore, you don't need to set up a schedule to retrieve data from customer engagement apps.  
   
  Only entities that have change tracking enabled can be added to the Export Profile. Notice that, most of the standard entities which capture data are change tracking enabled. Custom entities must be explicitly enabled for change tracking before you can add them to an Export Profile. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Enable change tracking to control data synchronization](../admin/enable-change-tracking-control-data-synchronization.md)  
   
@@ -398,12 +398,12 @@ The statement has been terminated.
   
 ## About data synchronization latency
 
-The [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] is architected to synchronize data changes to the destination database using a push mechanism by listening to changes as they happen in model-driven apps in Dynamics 365. The service strives to push data within a few minutes, but there are number of factors that can influence end-to-end synchronization latency. 
+The [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] is architected to synchronize data changes to the destination database using a push mechanism by listening to changes as they happen in customer engagement apps. The service strives to push data within a few minutes, but there are number of factors that can influence end-to-end synchronization latency. 
 
 Factors that influence the duration of synchronization include the following: 
 
-- The current work load on model-driven apps in Dynamics 365. 
-- The data change rate in model-driven apps in Dynamics 365. 
+- The current work load on customer engagement apps. 
+- The data change rate in customer engagement apps. 
 - The number of entities added to each export profile and their attributes. 
 - SQL Server performance. For example:
   - SQL connection setup time. 
@@ -412,7 +412,7 @@ Factors that influence the duration of synchronization include the following:
 Based on our monitoring of the service it's been observed that most on-going delta synchronization finishes in 15 minutes when the service operates under the following conditions:
 
 - The synchronization that occurs is a delta synchronization and not the initial synchronization. Delta synchronization is only for data change operations, which include record create, update, and delete transactions. Note that delta synchronization begins once the initial synchronization has finished.
-- The maximum data change rate in model-driven apps in Dynamics 365 for all the entities in the export profile is less than 3000 records per hour. Any sudden increase in the data change rate due to bulk change of records exceeding the maximum change rate will cause additional latency.
+- The maximum data change rate in customer engagement apps for all the entities in the export profile is less than 3000 records per hour. Any sudden increase in the data change rate due to bulk change of records exceeding the maximum change rate will cause additional latency.
 - Each entity added to an export profile has less than 150 attributes.
 - Database connection or SQL statement execution finishes in less than 10 seconds. If this limit is exceeded it will result in additional latency. 
 - No destination database connection or SQL execution errors occur during synchronization.

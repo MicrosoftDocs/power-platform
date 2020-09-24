@@ -9,7 +9,6 @@ ms.topic: "get-started-article"
 ms.assetid: 83200632-a36b-4401-ba41-952e5b43f939
 author: "jimholtz"
 ms.author: "jimholtz"
-manager: "kvivek"
 search.audienceType: 
   - admin
 search.app:
@@ -38,6 +37,7 @@ The following is a high-level overview of how security model is implemented in C
 ### See also
 [What is Common Data Service?](/powerapps/maker/common-data-service/data-platform-intro)<br/>
 [Security concepts in Common Data Service](wp-security-cds.md)<br />
+[How access to a record is determined](how-record-access-determined.md)<br />
 [Data loss prevention policies](wp-data-loss-prevention.md)<br />
 [Block access by location with Azure AD Conditional Access](restrict-access-online-trusted-ip-rules.md)<br />
 [Cross-tenant inbound and outbound restrictions](cross-tenant-restrictions.md)<br />

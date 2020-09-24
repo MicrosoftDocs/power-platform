@@ -6,7 +6,7 @@ manager: timrob
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/20/2020
+ms.date: 09/14/2020
 ms.author: astockli
 search.audienceType: 
   - admin
@@ -18,7 +18,7 @@ search.app:
 ---
 # Policies and Communications for service incidents
 
-## Introduction 
+## Introduction
 Microsoft regularly communicates work done to maintain and update Dynamics 365, Power Platform (Power Apps, Power Automate, Power Virtual Agents, and other services) and all integrated Apps to ensure security, performance, availability, and to provide new features and functionality. Microsoft also communicates details of service incidents including the potential user experience, the start and end times of the incident, and any workaround that may be available. For each of these activities, communication is provided through the Microsoft 365 Admin center in the Message Center, and the Service health dashboard. From time-to-time, Microsoft may also send direct email to users with the System Administrator role in a specifically impacted environment. For example, during a service incident we attempt to deliver an organization-specific email to impacted System Administrators.
   
 If you’re not sure who your admin is, see [Find your administrator or support person](https://docs.microsoft.com/powerapps/user/find-admin).  
@@ -87,6 +87,8 @@ Planned maintenance includes updates and changes to the service to provide incre
 ### Maintenance timeline
 To limit the impact on users, the maintenance window is planned according to the region where environments are deployed. The following list shows the maintenance window for each region. The times are shown in Coordinated Universal Time (UTC, which is also known as Greenwich Mean Time).
 
+The following are service update times. Database updates run 24 hours after service updates.
+
 |Region | URL | Window (UTC) |
 | ------------- | -------------     | ------------- |
 | NAM           | crm.dynamics.com  | 2 AM to 11 AM |
@@ -108,6 +110,7 @@ To limit the impact on users, the maintenance window is planned according to the
 
 ### Service Update Release Schedule
 To see the Service Update release schedule for your regions see our new [Released Versions](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#latest-version-availability) page.  
+
 
 **Prior notification**  
   
@@ -140,17 +143,17 @@ To receive communications regarding incidents, updates, or features, reach out t
 <a name="bkmk_UnplannedMaintenance"></a>  
 
 ### Unplanned maintenance  
-Model-driven apps in Dynamics 365 inevitably encounters unplanned issues that require changes to ensure availability. Microsoft strives to provide as much notification as possible during these events. Because these events can’t be predicted, they are not considered planned maintenance.
+The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation) inevitably encounter unplanned issues that require changes to ensure availability. Microsoft strives to provide as much notification as possible during these events. Because these events can’t be predicted, they are not considered planned maintenance.
 
 When this happens, your organization receives an “Unplanned Maintenance” email. These emails go out to all System Administrators in every environment that is affected by the unplanned maintenance. You can see the status of current unplanned maintenance activities on the Microsoft 365 service health page. To learn how to get to the Microsoft 365 service health page, see  [View the status of your services](https://support.office.com/article/View-the-status-of-your-services-932ad3ad-533c-418a-b938-6e44e8bc33b0).  
 
 ## Minor Service incidents  
 A service incident occurs when your organization is inaccessible or you’re unable to use the service or one of its components. Examples include:  
   
-- Page not found or 404 error when trying to access model-driven apps in Dynamics 365
+- Page not found or 404 error when trying to access customer engagement apps
 - Unable to sign into your organization
-- Slow performance for model-driven apps in Dynamics 365
-- Any model-driven apps in Dynamics 365 are unavailable or produce errors when accessing
+- Slow performance for customer engagement apps
+- Any customer engagement apps are unavailable or produce errors when accessing
   
 ### Major service incidents  
 A major service incident occurs when multiple organizations can’t access the service, there is significant degradation, or Microsoft Azure is experiencing degraded functionality. 
@@ -159,7 +162,7 @@ A major service incident occurs when multiple organizations can’t access the s
 
 Check the [Service health dashboard](https://docs.microsoft.com/office365/enterprise/view-service-health) to view the status of the service.  If you are experiencing an issue that is not displayed in the Service health dashboard you can open a ticket [here](https://admin.powerplatform.microsoft.com/).
 
-If the Service health dashboard is not available, the status of model-driven apps in Dynamics 365 can be reviewed at the [backup status site](https://status.office.com/).
+If the Service health dashboard is not available, the status of customer engagement apps can be reviewed at the [backup status site](https://status.office.com/).
 
 If the service incident breaches your *Service Level Agreement*, you can claim a billing credit according to the conditions of your [Online Service Terms outlined in our Product licensing](https://www.microsoft.com/licensing/product-licensing/products). 
 
@@ -187,7 +190,7 @@ The [Microsoft 365 Message Center](https://docs.microsoft.com/office365/admin/ma
  <a name="BKMK_PostPurchase"></a>   
 
 ### Post-purchase customer lifecycle communications  
-Once a customer has purchased model-driven apps in Dynamics 365, we send a series of email communications to administrators during the first year. These communications direct customers to several resources that will assist both administrators and users to successfully adopt and expand their use of model-driven apps in Dynamics 365.  This information can be found in the [Microsoft 365 Message Center](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide) as well.
+Once a customer has purchased customer engagement apps, we send a series of email communications to administrators during the first year. These communications direct customers to several resources that will assist both administrators and users to successfully adopt and expand their use of customer engagement apps.  This information can be found in the [Microsoft 365 Message Center](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide) as well.
   
 ### Notice about Online Policies
 Please review [Notice About Online Policies and Similar Documents](https://www.microsoft.com/en-us/legal/intellectualproperty/mtl/onlinedisclaimer.aspx).

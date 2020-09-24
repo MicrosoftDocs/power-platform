@@ -2,7 +2,7 @@
 title: "General availability deployment  | MicrosoftDocs"
 description: About general availability deployment
 author: angelmarshall
-ms.author: angelmarshall
+ms.author: tsmarsha
 ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin

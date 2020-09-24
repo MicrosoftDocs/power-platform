@@ -6,7 +6,7 @@ author: Mattp123
 ms.author: matp
 manager: kvivek
 ms.custom: ""
-ms.date: 05/05/2020
+ms.date: 09/11/2020
 ms.reviewer: ""
 ms.service: powerapps
 search.audienceType: 
@@ -53,7 +53,7 @@ should include using a test environment prior to deploying anything to the produ
 environment. This ensures that you have a place to test your app, but also
 ensures that the deployment itself can be tested. 
 
-More information: [Establishing an Environment Strategy for Microsoft Power Platform](https://powerapps.microsoft.com/blog/establishing-an-environment-strategy-for-microsoft-power-platform/)
+More information: [Establishing an environment strategy for Microsoft Power Platform](/power-platform/guidance/adoption/environment-strategy)
 
 ### See also
 [Solution concepts](solution-concepts-alm.md)
