@@ -6,7 +6,7 @@ author: mikkelsen2000
 ms.author: pemikkel
 manager: kvivek
 ms.custom: ""
-ms.date: 06/04/2020
+ms.date: 09/22/2020
 ms.reviewer: "pehecke"
 ms.service: powerapps
 ms.topic: "article"
