@@ -170,7 +170,7 @@ The **UI flow usage** page provides an overview of UI based RPA automation flow 
 
 Filters on this page can help you narrow down this view by UI flow type, Run Status, maker, and environment.
 
-![UI flow overview](media/coe-ui2.png "UI flow overview")
+![UI flow usage](media/coe-ui2.png "UI flow usage")
 
 ### UI flows errors
 
@@ -182,4 +182,4 @@ The **UI flow errors** page provides an overview of UI based RPA automation flow
 
 Filters on this page can help you narrow down this view by UI flow type, Run Status, maker, and environment.
 
-![UI flow overview](media/coe-ui3.png "UI flow overview")
+![UI flow errors](media/coe-ui3.png "UI flow errors")

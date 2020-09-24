@@ -30,7 +30,7 @@ The Core Components solution is required for the Nurture Components solution, or
 1. Import the *CenterOfExcellenceNurtureComponents_x_x_x_xx_managed.zip* file.
 1. Create a new connection to the **RSS** connector, and set your Common Data Service connection
     ![Import the Center of Excellence - Nurture components solution](media/msi-nurture.png "Import the Center of Excellence - Nurture components solution")
-1. Update the Environment Variable values. Please note, you can leave the values empty on import and [update the environment variable](#update-environment-variable) after import too.
+1. Update the Environment Variable values. Please note, you can leave the values empty on import and [update the environment variable](#update-environment-variables) after import too.
 
     | Name | Default value |
     |------|---------------|

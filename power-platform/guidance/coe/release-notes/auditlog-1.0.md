@@ -1,5 +1,5 @@
 ---
-title: "Release notes and latest version of the CoE starter kit Audit Log components | MicrosoftDocs"
+title: "Release notes and latest version of the CoE starter kit Audit Log components 1.0 | MicrosoftDocs"
 description: "Release notes and latest version of the CoE Starter Kit."
 author: manuelap-msft
 manager: devkeydet

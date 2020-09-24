@@ -310,7 +310,7 @@ More information: [Create Team Flows](https://docs.microsoft.com/power-automate/
 
 **Permission**: This app is intended to be used only by admins: Power Platform Service Admin or Global Admin permission required. Share with your CoE admins.
 
-![Set App Permissions](media/SetFlowPerms.png "Set Flow Permissions")
+![Set Flow Permissions](media/SetFlowPerms.png "Set Flow Permissions")
 
 ### Power Platform Admin View
 

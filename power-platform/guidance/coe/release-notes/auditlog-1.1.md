@@ -1,5 +1,5 @@
 ---
-title: "Release notes and latest version of the CoE starter kit Audit Log components | MicrosoftDocs"
+title: "Release notes and latest version of the CoE starter kit Audit Log components 1.1 | MicrosoftDocs"
 description: "Release notes and latest version of the CoE Starter Kit."
 author: manuelap-msft
 manager: devkeydet
@@ -26,3 +26,8 @@ Version 1.0.0.17 for the CoE Starter Kit Audit Log Components is now available. 
 ## Entity changes
 
 Connection References have been added to the solution to support the new modern import solution experience. All flows have been updated to use connection references, rather than connections.
+
+## Custom Connector
+
+To help with the setup, the custom connector used in the [Audit Log components](../collect-audit-data.md) has been removed from this solution and added to the Core solution.
+s

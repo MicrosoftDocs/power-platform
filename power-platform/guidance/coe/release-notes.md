@@ -30,7 +30,6 @@ Select each version below to see release notes and updates for each component. Y
 | Nurture Components |   [1.17](release-notes/nurture-1.17.md)  |
 | Audit Log |   [1.1](release-notes/auditlog-1.1.md) |
 | Theming Components |   [1.1](release-notes/theming-1.1.md) |
-| Innovation Backlog Components |   [1.0](release-notes/innovation-1.0.md) |
 
 ### All Core (Admin) Components versions
 
