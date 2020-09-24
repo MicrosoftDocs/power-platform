@@ -219,9 +219,9 @@ The export can take several minutes to complete. Once finished, a .zip file will
 
 ## Upgrade or update a solution with a chatbot
 
-If you add new bot components (such as new topics or flows) to your bot in the PVA portal, you will also need to update those changes to the bot in your target environment. You do this by adding the components to the unmanaged solution by selecting **Add required components** under the *...* menu next to the name of the bot.
+If you add new bot components (such as new topics or flows) to your bot in the PVA portal, you will also need to update those changes to the bot in your target environment. You do this by adding the components to the unmanaged solution by selecting **Add required components** under the **...** menu next to the name of the bot.
 
-![Screenshot highlighting the add required components option under the more menu](media/export-add-required-components.png "Screenshot highlighting the add required components option under the more menu")
+![Screenshot highlighting the Add required components option under the More menu](media/export-add-required-components.png "Screenshot highlighting the Add required components option under the More menu")
 
 There are times when you need to update an existing managed solution. To learn more, go to [Upgrade or update a solution](/powerapps/maker/common-data-service/update-solutions).
 
@@ -231,13 +231,17 @@ Managed and unmanaged solutions exist at different levels within a Common Data S
 
 A managed component (for example, a topic or flow) gets an unmanaged "Active" layer when you edit it, which means you won't see the latest changes after you deploy the solution. 
  
- To show the latest updates, you'll need to remove the unmanaged "Active" layer. 
+To show the latest updates, you'll need to remove the unmanaged "Active" layer. 
  
- Use the **See solution layers** option to see all solutions that a component is a part of. You can also see one "Active" solution on top of all other solutions if you have changed something directly.
+Use the **See solution layers** option to see all solutions that a component is a part of. You can also see one "Active" solution on top of all other solutions if you have changed something directly.
 
-1. Select **See solution layers** from the contextual ... menu next to the component name.
+1. Select **See solution layers** from the contextual **...** menu next to the component name.
 
-![See solution layers option](media/export-solution-layers.png)
+  ![See solution layers option](media/export-solution-layers.png "See solution layers option")
+
+
+<!-- editor query: Wondering if it should be "Solution layers" page. Can you check? -->
+
 
 2. In the **Solution layer** page, select the unmanaged layer and then select **Remove unmanaged layer** to remove the layer. 
 
