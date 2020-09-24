@@ -18,10 +18,6 @@ search.app:
 
 # How access to a record is determined
 
-
-<!-- editor note: I reordered the entities in the following paragraph so they are in the same order as the table. Just being persnickety. -->
-
-
 There are different ways to obtain access to a particular record in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation). To be able to do a certain action with an entity (Create, Read, Write, Delete, Append, Append to, Assign, Share), two major checks are done: privilege and access checks. The access check only takes place once the privilege check passes.
  
 ## Privilege check
@@ -70,21 +66,13 @@ A user can have access to a particular record because either they own the record
 
 ### Role access
  
-Users can have access to perform an action on a record because of the security roles they hold. In this case, the access level of the privilege a role has is taken into account. There are three major scenarios that correspond to the different access levels that are not User, which is covered in the ownership case.
+Users can have access to perform an action on a record because of the security roles they hold. In this case, the access level of the privilege a role has is taken into account. There are four major scenarios that correspond to the different access levels that are not User, which is covered in the ownership case.
 
-
-<!-- editor question: The previous sentence says there are three major scenarios, but it looks like four are described below. Should it say four scenarios? -->
-
- 
 #### The record belongs to the user or a team the user belongs to
 In this case, the user must either have or belong to a team that has a role assigned that has the required privilege with at least User-level access.
 
-
-<!-- from editor: Just checking ... Below, should it say "comes into play" instead of "place"? -->
-
-
 > [!NOTE]
-> For roles assigned to teams with Basic-level access user privilege, the role's inheritance configuration also comes into place. If the team has the **Member's privilege inheritance** set to **Team privileges only**, then the user will only be able make use of that privilege for records owned by the team. For more information, go to [Team member's privilege inheritance](security-roles-privileges.md#team-members-privilege-inheritance).
+> For roles assigned to teams with Basic-level access user privilege, the role's inheritance configuration also comes into play. If the team has the **Member's privilege inheritance** set to **Team privileges only**, then the user will only be able make use of that privilege for records owned by the team. For more information, go to [Team member's privilege inheritance](security-roles-privileges.md#team-members-privilege-inheritance).
 > 
 > :::image type="content" source="media/member-privilege-inheritance.png" alt-text="Member's privilege inheritance":::
  
@@ -99,12 +87,7 @@ In this case, the user must either have or belong to a team that has a role assi
  
 ### Shared access
  
-Another way to get access to a record without having an explicit role assigned that allows this is through shared access. Shared access is obtained when a record is shared with a user, team, or organization by a user that has appropriate share rights. There are four ways in which a user can have shared access to a record.
-
-
-<!-- from editor: In the last sentence above, I changed the colon to a period because it's not a good way to introduce subsections with headings. The colon would work if this was a bulleted list. Also, the sentence mentions "four ways" of access, but there are five listed below. -->
-
-
+Another way to get access to a record without having an explicit role assigned that allows this is through shared access. Shared access is obtained when a record is shared with a user, team, or organization by a user that has appropriate share rights. There are five ways in which a user can have shared access to a record.
 
 #### The record was shared with the user directly
 If a record is shared with the user to perform a certain action, then the user would have access to do that action provided the user passed the privilege check.
@@ -124,10 +107,6 @@ If a record is shared with an organization to perform a set of actions, then all
 ### Hierarchy access
  
 The hierarchy access only takes place if [Hierarchy Security](hierarchy-security.md) management is enabled in that organization and for that entity, and if the user is a manager.
-
-
-<!-- from editor: I couldn't find guidance on choices within a list, but I propose to reorganize it like this. -->
-
 
 In this case, the user would have access to the record if both of the following are met:
 - The manager has a security role assigned directly or through a team that has the access level Business Unit or Parent:Child Business Units. 
