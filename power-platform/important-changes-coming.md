@@ -1,5 +1,6 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps"
+description: Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps 
 ms.date: 09/24/2020
 ms.topic: "article"
 ms.assetid: 994cc854-17f6-45d6-bc20-fcf1a3f2d6d6
@@ -7,7 +8,7 @@ searchScope:
   - "Power Platform"  
 ms.custom:
  - dyn365-hub
-ms.service: dynamics-365-crossapp
+ms.service: powerplatform
 author: KumarVivek
 ms.author: kvivek
 manager: annbe
@@ -26,7 +27,7 @@ notification can span a few years. After removal, the feature or capability will
 
 ## TimeZoneRule entity and some attributes of TimeZoneDefinition entity are deprecated
 
-Effective September 24, 2020, the **TimeZoneRule** entity and the **Bias** and **RetiredOrder** attributes of the **TimeZoneDefinition** entity are deprecated and will be removed in a future release. For all client-side time zone calculations, use the [LocalTimeFromUtcTime](https://docs.microsoft.com/dynamics365/customer-engagement/web-api/localtimefromutctime) and [UtcTimeFromLocalTime](https://docs.microsoft.com/dynamics365/customer-engagement/web-api/utctimefromlocaltime) functions in Web API or the [TimeZoneInfo](https://docs.microsoft.com/en-us/dotnet/api/system.timezoneinfo) class in the .NET framework. More information: [TO DO: add a link to the blog post] 
+Effective September 24, 2020, the **TimeZoneRule** entity and the **Bias** and **RetiredOrder** attributes of the **TimeZoneDefinition** entity are deprecated and will be removed in a future release. For all client-side time zone calculations, use the [LocalTimeFromUtcTime](https://docs.microsoft.com/dynamics365/customer-engagement/web-api/localtimefromutctime) and [UtcTimeFromLocalTime](https://docs.microsoft.com/dynamics365/customer-engagement/web-api/utctimefromlocaltime) functions in Web API or the [TimeZoneInfo](https://docs.microsoft.com/dotnet/api/system.timezoneinfo) class in the .NET framework. More information: [TO DO: add a link to the blog post] 
 
 
 ## Online management API PowerShell module is deprecated
