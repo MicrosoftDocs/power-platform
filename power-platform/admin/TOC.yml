@@ -430,6 +430,8 @@
         href: powerapps-powershell.md           
       - name: Automation of tasks with PowerShell 
         href: wp-task-automation-powershell.md
+      - name: Data loss prevention SDK 
+        href: data-loss-prevention-sdk.md
     - name: Requirements
       items:
       - name: Requirements/supported configurations
