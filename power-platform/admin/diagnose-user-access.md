@@ -38,7 +38,7 @@ Use the following steps to run user access diagnostics on a user in an Common Da
 
 3. Select a user. 
 
-4. Select **Run diagnostics** and review the details for the user.
+4. Select **Run diagnostics**.
 
    > [!div class="mx-imgBorder"] 
    > ![Select Run diagnostics](media/teams-environment-user-list.png "Select Run diagnostics") 
