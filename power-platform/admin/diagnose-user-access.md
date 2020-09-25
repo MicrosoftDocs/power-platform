@@ -49,7 +49,7 @@ Use the following steps to run user access diagnostics on a user in an Common Da
    > ![Run diagnostics results](media/run-diagnostics-results.png "Run diagnostics results")
 
 > [!NOTE]
-> The action of running/re-running diagnostics will force the user information in Azure Active Directory to sync (synchronize) to the environment’s Common Data Service database to provide up-to-date status on the user’s properties. If the diagnostic run does not eliminate the root cause of a user access issue, please provide the results of the diagnostic run in the support ticket you create as this will greatly help Microsoft support engineers to resolve your issue faster. 
+> The action of running/re-running diagnostics will force the user information in Azure Active Directory to synchronize to the environment’s Common Data Service database to provide up-to-date status on the user’s properties. If the diagnostic run does not eliminate the root cause of a user access issue, please provide the results of the diagnostic run in the support ticket you create as this will greatly help Microsoft support engineers to resolve your issue faster. 
 
 ## Known issue
 
