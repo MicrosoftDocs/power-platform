@@ -43,7 +43,7 @@ Use the following steps to run user access diagnostics on a user in an Common Da
    > [!div class="mx-imgBorder"] 
    > ![Select Run diagnostics](media/teams-environment-user-list.png "Select Run diagnostics") 
 
-5. Review the details for the user.
+5. Review the details for the user and take any needed corrective actions.
 
    > [!div class="mx-imgBorder"] 
    > ![Run diagnostics results](media/run-diagnostics-results.png "Run diagnostics results")
