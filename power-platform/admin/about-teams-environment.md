@@ -173,10 +173,13 @@ You can specify users in an environment to provide access to Project Oakdale env
 
 5. Select **+ Add user** to add a tenant user to the selected Project Oakdale environment. 
 
+   > [!div class="mx-imgBorder"] 
+   > ![Add user to Project Oakdale environment](media/teams-environment-user-list.png "Add user to Project Oakdale environment") 
+
 6. Enter a name or email address of a user who meets the [user access requirements](#user-access-requirements) to add the user to the Project Oakdale environment, and then select **Add**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Add a user](media/teams-environment-add-user.png "Add a user") 
+   > ![Add a user settings](media/teams-environment-add-user.png "Add a user settings") 
 
 7. Select **Refresh** to see the added user in the list.
 
