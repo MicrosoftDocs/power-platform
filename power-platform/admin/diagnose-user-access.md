@@ -28,7 +28,7 @@ The user:
 3.	must be a member of the environment’s Azure Active Directory Group (if one has been associated with the environment).
 4.	must have at least one Common Data Service security role assigned directly to them or to a [group team](manage-teams.md#about-group-teams) they are a member of.
 
-User level of access within the environment and to the resources (apps and data) in the environment is determined by the privileges defined in the security roles assigned to them. Their access mode being [Administration](admin-mode.md) or [Read-Write](create-users-assign-online-security-roles.md#create-a-read-write-user-account) also determines their level of access within an environment.
+Users' level of access within the environment and to the resources (apps and data) in the environment is determined by the privileges defined in the security roles assigned to them. Their access mode being [Administrative](create-users-assign-online-security-roles.md#create-an-administrative-user-account) or [Read-Write](create-users-assign-online-security-roles.md#create-a-read-write-user-account) also determines their level of access within an environment.
 
 Use the following steps to run user access diagnostics on a user in an Common Data Service environment.
 
