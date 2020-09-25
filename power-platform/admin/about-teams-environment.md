@@ -284,6 +284,7 @@ In your Microsoft Teams admin center, disable **Power Apps** and **Power Virtual
 
 ## Known issues
 
+- The Run diagnostics experience in the Power Platform admin center for Team owners, members, and guests who do not have Azure Active Directory admin roles like Global Admin, or Power Platform Admin assigned, will show an alert that no security roles have been assigned directly to them. Security roles are auto-assigned by the SYSTEM for Team personas, so this alert can be ignored.
 - Teams environments currently show as created by "SYSTEM" within the Power Platform admin center. Once this issue is fixed, existing environments will be retroactively updated to display the correct creator.
 - Team owners and members who trigger Teams environment creation can temporarily see the newly created environment in the Power Platform admin center. Once this issue is resolved, team owners will be able to successfully administer their environment and team members will not be able to see the environment in the admin center.
 
