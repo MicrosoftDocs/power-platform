@@ -20,9 +20,9 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Introduced in September, 2020, *Project Oakdale* is a built-in, low-code data platform for Microsoft Teams that empowers users to build custom apps and workflows in Teams by using Power Apps and Power Automate. Project Oakdale—built on Common Data Service—provides relational data storage, rich data types, enterprise-grade governance, and one-click solution deployment to the Teams app store.
+Introduced in September, 2020, *Project Oakdale* is a built-in, low-code data platform for Microsoft Teams that empowers users to build custom apps and workflows in Teams by using Power Apps and Power Automate. Project Oakdale—built on Common Data Service—provides relational data storage, rich data types, enterprise-grade governance, and one-click solution deployment to the Teams app store. More information: [Project Oakdale overview](/powerapps/teams/overview-data-platform)
 
-The Project Oakdale environment is automatically created for the selected team when you [create an app](/powerapps/teams/create-first-app) with the new Power Apps app in Teams for the first time or install a Power Apps app from the app catalog for the first time. The Project Oakdale environment is used to store, manage, and share team-specific data, apps, and flows. Each team can have one environment, and all data, apps and flows created with the Power Apps app inside a team are available from that team's [Project Oakdale](/powerapps/teams/overview-data-platform) database.  
+The Project Oakdale environment is automatically created for the selected team when you [create an app](/powerapps/teams/create-first-app) with the new Power Apps app in Teams for the first time or install a Power Apps app from the app catalog for the first time. The Project Oakdale environment is used to store, manage, and share team-specific data, apps, and flows. Each team can have one environment, and all data, apps and flows created with the Power Apps app inside a team are available from that team's Project Oakdale database.  
 
 > [!NOTE]
 > - This is a preview feature
