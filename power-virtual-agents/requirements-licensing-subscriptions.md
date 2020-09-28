@@ -14,7 +14,7 @@ ms.collection: virtual-agent
 
 # Licensing for Power Virtual Agents
 
-This topic includes details about Power Virtual Agents Licensing. You can also review the [Power Platform Licensing Guide] to learn more.
+This topic includes details about Power Virtual Agents Licensing. You can also review the [Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130) to learn more.
 
 If you already have licenses, see the [Assign licenses and manage access to Power Virtual Agents](requirements-licensing.md) topic.
 
