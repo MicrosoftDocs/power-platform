@@ -258,10 +258,8 @@
             href: set-up-duplicate-detection-rules-keep-data-clean.md
           - name: Duplicate detection settings
             href: turn-duplicate-detection-rules-off-whole-organization.md
-          - name: Export field translations
-            href: https://docs.microsoft.com/dynamics365/customerengagement/on-premises/customize/export-customized-entity-field-text-translation
-          - name: Import field translations
-            href: https://docs.microsoft.com/dynamics365/customerengagement/on-premises/customize/import-translated-entity-field-text
+          - name: Asynchronous processing of cascading transactions
+            href: async-cascading.md
           - name: Imports
             href: https://docs.microsoft.com/dynamics365/customerengagement/on-premises/basics/import-accounts-leads-other-data 
           - name: Sample data
