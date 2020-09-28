@@ -31,7 +31,8 @@ You can store and manage documents in the context of a record on a [!INCLUDE[pn_
   
 - Users can perform [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] actions from the command bar.  
   
-### See also 
+### See also
+
  [Manage your documents](../admin/manage-documents-using-sharepoint.md)  <br /> 
  [Permissions required for document management tasks](../admin/permissions-required-document-management-tasks.md)   <br />
  [Validate and fix SharePoint site URLs](troubleshoot-set-up-sharepoint-online.md#validate-and-fix-sharepoint-site-urls) <br />
