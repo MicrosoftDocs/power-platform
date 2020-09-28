@@ -27,7 +27,7 @@ There are certain experiences that are currently not available with Dynamics 365
 - [AppSource](https://appsource.microsoft.com/?product=dynamics-365-business-central%3Bdynamics-365-for-customer-services%3Bdynamics-365-for-field-services%3Bdynamics-365-for-finance-and-operations%3Bdynamics-365-for-project-service-automation%3Bdynamics-365-for-sales) (that is, the ability to install Applications directly from AppSource)
 - [CAFEx Integration](https://appsource.microsoft.com/product/dynamics-365/cafexliveassistfor365.27ac7522-68b2-44a2-9f36-da66a47e2b19)
 - [Connected Field Service](https://msdn.microsoft.com/library/mt744253.aspx)
-- [Data Export Service (replaced by CDS to Azure Data Lake – Available CY2020 – Q4)](https://appsource.microsoft.com/product/dynamics-365/mscrm.44f192ec-e387-436c-886c-879923d8a448)
+- [Data Export Service](https://appsource.microsoft.com/product/dynamics-365/mscrm.44f192ec-e387-436c-886c-879923d8a448) - replaced by CDS to [Azure Data Lake](https://docs.microsoft.com/powerapps/maker/common-data-service/export-to-data-lake) – Available CY2020 – Q4.
 - [Gamification](https://docs.microsoft.com/dynamics365/customer-engagement/gamification/manage-gamification-in-dynamics-365-online)
 - [Home.Dynamics.com](https://home.dynamics.com/) and the app switcher
 - [Insights, powered by InsideView](https://appsource.microsoft.com/product/dynamics-365/insideviewinc.b5386882-4312-4d69-879a-23081897c012)
