@@ -59,17 +59,17 @@ All third-party connectors can be blocked. All Microsoft-owned premium connector
 
 ### List of connectors that can't be blocked
 
-All connectors driving core Microsoft Power Platform functionality (like Common Data Service, Approvals, and Notifications) as well as connectors enabling core Office customization scenarios like Office Enterprise Plan standard connectors will remain non-blockable to ensure core user scenarios remain fully functional.
+All connectors driving core Microsoft Power Platform functionality (like Common Data Service, Approvals, and Notifications) as well as connectors enabling core Office customization scenarios like Microsoft Enterprise Plan standard connectors will remain non-blockable to ensure core user scenarios remain fully functional.
 
 However, these non-blockable connectors can be classified into Business or Non-Business data groups. These connectors broadly fall into the following categories:
 
--	Office Enterprise Plan standard connectors (with no additional licensing implications).
+-	Microsoft Enterprise Plan standard connectors (with no additional licensing implications).
 -	Microsoft Power Platform–specific connectors that are part of the base platform capabilities. Within this, Common Data Service connectors are the only premium connectors that can't be blocked, because Common Data Service is an integral part of Microsoft Power Platform. 
 
 The following connectors can't be blocked by using DLP policies.
 
 
-|Office Enterprise Plan standard connectors | Core Power Platform connectors  |
+|Microsoft Enterprise Plan standard connectors | Core Power Platform connectors  |
 |---------|---------|
 |Excel Online (Business)      | Approvals        |
 |Microsoft Forms Pro      | Notifications        |
@@ -109,7 +109,7 @@ One data group must be designated as the default group to automatically classify
 Any new services that are added to Power Apps will be placed in the designated default group. For this reason, we recommend you keep **Non-Business** as the default group and manually add services into the **Business** or **Blocked** group after your organization has evaluated the impact of allowing business data to be shared with the new service.
 
 > [!NOTE]
-> Office 365 enterprise license connectors and a few core Microsoft Power Platform connectors are exempt from being marked as **Blocked** and can only be classified as **Business** or **Non-Business**. If Microsoft adds any new connectors that can't be blocked and if you've set the default group for the DLP policy as **Blocked**, these connectors will be automatically marked as **Non-Business** instead of **Blocked**.
+> Microsoft 365 enterprise license connectors and a few core Microsoft Power Platform connectors are exempt from being marked as **Blocked** and can only be classified as **Business** or **Non-Business**. If Microsoft adds any new connectors that can't be blocked and if you've set the default group for the DLP policy as **Blocked**, these connectors will be automatically marked as **Non-Business** instead of **Blocked**.
 
 ## Policy scope
 
