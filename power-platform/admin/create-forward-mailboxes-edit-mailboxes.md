@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/04/2020
+ms.date: 09/29/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -19,7 +19,12 @@ search.app:
 
 By default, when users and queues are created in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), their respective mailbox records are also created. These mailbox records contain information that is specific to an individual mailbox on the email server, like email address, mailbox credentials, and email synchronization method. To process email messages using server-side synchronization for users and queues, their respective mailbox records should be associated to an email server profile record in customer engagement apps.  
 
- If your organization wants to configure server-side synchronization using a forward mailbox, you can create a new forward mailbox record. A forward mailbox is used as a collection box for email messages that are transferred from each user’s mailbox on the email system by a server-side rule. The forward mailbox must be dedicated to server-side synchronization, and must not be used as a working mailbox by an individual user. This can be used to process email messages for users and queues whose mailboxes have **Incoming Email Synchronization Method** set to **Forward Mailbox**. You must associate the forward mailbox record to an email server profile record to process email using server-side synchronization. [Forward mailbox vs. individual mailboxes](forward-mailbox-vs-individual-mailboxes.md).  
+If your organization wants to configure server-side synchronization using a forward mailbox, you can create a new forward mailbox record. 
+
+> [!IMPORTANT]
+> Forward mailboxes are not recommended and you should use individual mailboxes instead. Please review: [Forward mailbox vs. individual mailboxes](forward-mailbox-vs-individual-mailboxes.md).  
+
+A forward mailbox is used as a collection box for email messages that are transferred from each user’s mailbox on the email system by a server-side rule. The forward mailbox must be dedicated to server-side synchronization, and must not be used as a working mailbox by an individual user. This can be used to process email messages for users and queues whose mailboxes have **Incoming Email Synchronization Method** set to **Forward Mailbox**. You must associate the forward mailbox record to an email server profile record to process email using server-side synchronization. 
 
 > [!TIP]
 >  You can use an [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] shared mailbox when you create a queue in customer engagement apps and not consume an [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] license for a forwarding email account.  
