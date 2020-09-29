@@ -136,7 +136,7 @@ Some typical assessments an admin might perform are described in the following s
 
 Select **Blank** in the **Owner** drop-down in the right-hand filter section of this page to find orphaned flows.
 
-![Flows Risk Assessment ](media/coe-ui4.png "Flows Risk Assessment")
+![UI flows Risk Assessment ](media/coe-ui4.png "UI flows Risk Assessment")
 
 ## App and Flow Archive
 
@@ -211,7 +211,7 @@ The **Archive Score** is the sum of multiple criteria:
 
 A tooltip shows additional details like number of launches and last launched date, in addition to the scores for the above criteria.
 
-![Flow Archive](media/coe-ui5.png "Flow Archive")
+![UI flow Archive](media/coe-ui5.png "UI flow Archive")
 
 By right-clicking to select a specific flow and going to **Drill through** > **Flow Detail**, you can open the detail page for the selected flow.
 
@@ -255,4 +255,4 @@ With the embedded app, you don't have to leave the Power BI dashboard to take ac
 
 The **UI flow Detail** page provides you with richer information about the runs of this UI flow. You will be able to review the run history, identify anomalies in time it takes to complete a single run and view error codes and messages if the UI flow has failed.
 
-![Flow Details](media/coe-ui6.png "Flow Details")
+![UI flow Details](media/coe-ui6.png "UI flow Details")
