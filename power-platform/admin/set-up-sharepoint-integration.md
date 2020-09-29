@@ -1,6 +1,6 @@
 ---
 title: "Set up SharePoint integration  | MicrosoftDocs"
-description: Set up SharePoint integration 
+description: Set up SharePoint integration
 author: Mattp123
 ms.service: power-platform
 ms.component: pa-admin
