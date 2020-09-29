@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/25/2020
+ms.date: 09/29/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -281,9 +281,13 @@ After promotion, the following applies to the newly promoted environment:
 
 ## Disable the ability to create app or bots using Project Oakdale in Teams
 
-With the public preview release of Project Oakdale, the ability to create apps or bots using the new Power Apps and Power Virtual Agents apps is enabled by default in Teams. Admins can disable it by using the app permission policies in Teams. 
+With the public preview release of Project Oakdale, the ability to create apps or bots using the new Power Apps and Power Virtual Agents apps is enabled by default in Teams. Admins can enable or disable it for specific users by using the Teams apps permission policies in Teams.
 
 In your Microsoft Teams admin center, disable **Power Apps** and **Power Virtual Agents** applications available under **Microsoft Apps**. More information: [Manage app permission policies in Microsoft Teams](https://docs.microsoft.com/microsoftteams/teams-app-permission-policies)
+
+Note that this control also impacts the users’ ability to see standalone (web maker) Power Apps that were pinned earlier in the Teams channels using Power Apps. In order for such users to continue leveraging the standalone apps in the Teams experience, they can load them using the alternate experience of pinning them to Teams channels or personal scope using the new ‘Built by your colleagues’ catalog entry point.  
+
+In addition to new apps or bots creation experience through Power Apps and Power Virtual Agents, Teams apps can be instantiated using the new sample apps made available by Microsoft as part of Public Preview. The sample apps made available are listed [here](https://docs.microsoft.com/powerapps/teams/use-sample-apps-from-teams-store). These apps can also be enabled/disabled for specific users by using the Teams apps permissions policies. For example, under Microsoft Apps you will find Employee Ideas, Inspection, and Issue Reporting sample apps.
 
 ## Known issues
 
