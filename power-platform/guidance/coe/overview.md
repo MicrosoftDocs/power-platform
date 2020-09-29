@@ -52,10 +52,6 @@ After you've [installed the CoE Starter Kit solution](setup.md), get familiar wi
 
     ![CoE Power BI dashboard](media/coe1.PNG "CoE Power BI dashboard")
 
-1. Plan your data loss prevention (DLP) policy strategy and use the DLP Editor (canvas app) to mitigate the risk of negatively affecting apps when making changes to your policies.
-
-    ![DLP Editor canvas app](media/coe2.PNG "DLP Editor canvas app")
-
 1. Identify orphaned apps and assign them to new owners by using the embedded app in the Power BI dashboard.
 
     ![Set App Permissions canvas app](media/SetAppPerms.PNG "Set App Permission canvas app")

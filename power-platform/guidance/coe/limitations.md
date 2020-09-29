@@ -89,6 +89,11 @@ To add custom connectors shipped as part of this solution to the business data&n
     Add-CustomConnectorToPolicy -PolicyName {your policy name GUID} -ConnectorName {the nName you copied from above} -GroupName hbi -ConnectorId /providers/Microsoft.PowerApps/scopes/admin/environments/{your environment GUID{/apis/{your connector name} -ConnectorType "Custom"
     ```
 
+## Security Groups and Approvals
+
+We do not recommend that you use Security Groups to control access to the CoE Environment due to the expectation that users without access to this environment will be participating in Approvals.
+If you chose to use a Security Group then users will have to be a part of that group work with the archival solutions. 
+
 ## Shared Component Library in the Theming components
 
 The Shared Component Library part of the [Theming components](theming-components.md) is not editable. Make your own copy to expand it.
