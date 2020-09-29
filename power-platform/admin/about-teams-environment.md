@@ -287,7 +287,7 @@ In your Microsoft Teams admin center, disable **Power Apps** and **Power Virtual
 
 Note that this control also impacts the users’ ability to see standalone Power Apps that were pinned earlier in the Teams channels using Power Apps. In order for such users to continue leveraging the standalone apps in the Teams experience, they can load them using the alternate experience of pinning them to Teams channels or via a personal scope using the new ‘Built by your colleagues’ catalog entry point.  
 
-In addition to the new apps or bots creation experience through Power Apps and Power Virtual Agents, Teams apps can be instantiated using the new sample apps made available by Microsoft as part of Public Preview. The sample apps made available are listed [here](https://docs.microsoft.com/powerapps/teams/use-sample-apps-from-teams-store). These apps can also be enabled/disabled for specific users by using the Teams apps permissions policies. For example, under Microsoft Apps you will find Employee Ideas, Inspection, and Issue Reporting sample apps.
+In addition to the new apps or bots creation experience through Power Apps and Power Virtual Agents, Teams apps can be instantiated using the new sample apps made available by Microsoft as part of Public Preview. The sample apps made available are listed [here](https://docs.microsoft.com/powerapps/teams/use-sample-apps-from-teams-store). These apps can also be enabled/disabled for specific users by using the Teams apps permissions policies. For example, under **Microsoft Apps** you will find **Employee Ideas**, **Inspection**, and **Issue Reporting** sample apps.
 
 ## Known issues
 
