@@ -16,7 +16,7 @@ search.app:
   - Flow
 ---
 
-# Manage Power Apps licenses in your organization
+# Manage Power Apps licenses in your organization 
 
 This topic describes how users in your organization can get access to use Power Apps, and how you can control access to the Power Apps service.
 
@@ -104,7 +104,7 @@ Removing of the Power Apps license or service for a user in your organization wi
 ### How can I restrict my users' ability to access my organization's business data using Power Apps?
 Power Apps allows you to create data zones for business and non-business data, as shown below.  Once these data loss prevention policies are implemented, users are prevented from designing or running Power Apps that combine business and non-business data. For more details, See [Data loss prevention (DLP) policies](prevent-data-loss.md).
 
-![Data loss prevention policies](./media/signup-question-and-answer/data-loss-prevention-policy.png)
+![Data loss prevention policies](./media/dlp-assign-connectors.png) 
 
 ### Why did 10,000 licenses for Microsoft Power Apps show up in my Microsoft 365 tenant?
 As a qualifying organization, users in your organization are eligible to try out Microsoft Power Apps  for 30 days, and these trial licenses represent the available capacity for new Power Apps users in your tenant. There is no charge for these licenses. Specifically, there are two possible reasons why you may see a capacity 10,000 (trial) licenses for Power Apps showing up in the Microsoft 365 admin portal:
