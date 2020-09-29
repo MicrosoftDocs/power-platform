@@ -30,78 +30,7 @@ There are two options for connecting to the audit log: one uses basic authentica
 1. You must have access to the Audit Log. The Power Platform Service Admin role does not give you access to the Audit Log. More information: [Search the audit log in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide#before-you-begin)
 1. Your tenant must have a subscription that supports unified audit logging. More information: [Security & Compliance Center availability for Business and Enterprise plans](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)
 
-## Option 1: Connect to the audit log by using basic authentication
-
-Make sure the account that is used to configure this section has permission to access the audit logs and doesn't have multifactor authentication enabled. Global tenant admins have access to the audit logs by default and can grant access to the audit logs for other user accounts or groups through the Exchange admin center.
-
-Keep in mind that after a user account has access to the audit logs, that user has access to all audit logs across every Microsoft service that reports telemetry to audit logs.
-
-### Install the custom connector
-
-1. Go to [flow.microsoft.com](https://flow.microsoft.com), and set the current environment to the same environment where the CoE solution is installed.
-
-1. In the left pane, expand **Data**, and then select **Custom Connectors**.
-
-1. Select **+ New custom connector – Import an Open API file**.
-
-   ![Create a custom connector page](media/coe27.png "Create a custom connector page")
-
-1. Provide a connector name (**Microsoft 365 Audit Logs**), and then select the .swagger file that can be found in the CoE Starter Kit pack you downloaded.
-
-1. Select **Create Connector**. You don't need to change the Security and Definition information.
-
-1. Select **4. Test**.
-
-   ![Test your custom connector page](media/coe28.png "Test your custom connector page")
-
-1. Select **+ New Connection** to create a connection to your connector.
-
-1. Enter the email address and password of the user who has access to audit logs, and then select **Create connection**.
-
-   ![Create new connection option](media/coe29.png "Create new connection option")
-
-1. Select the refresh icon in the upper-right corner of the **Connections** area to ensure that the new connection is selected.
-
-1. Provide a **Start Date** and **End Date** for the **GetActivitiesByOperation**.
-
-1. Select **Test Operation**.
-
-   You should receive a (200) response, which indicates the query has been successfully executed.
-   ![The Get Activities By Operation action of the custom connector](media/coe30.png "The Get Activities By Operation action of the custom connector]")
-
-> [!IMPORTANT]
-> If you are using DLP, you will need to put this connector into the business group, see [Custom Connectors and DLP](https://docs.microsoft.com/power-platform/guidance/coe/limitations#Custom-Connectors-and-DLP)
->
-> More information: [custom connector documentation](https://docs.microsoft.com/connectors/custom-connectors/define-openapi-definition#import-the-openapi-definition).
-
-### Import the flow template compressed (.zip) package named SyncAuditLogs.zip
-
-1. Go to [flow.microsoft.com](https://flow.microsoft.com), and set the current environment to the same environment where the CoE solution is installed.
-
-1. In the left pane, navigate to the **My Flows** tab.
-
-1. Select **Import**.
-
-1. Select the **Flow-SyncAuditLogs.zip** package, and then select **Import**.
-
-1. Update the connections:
-    1. For Admin \| Sync Audit Logs, select **Create as new**, and then select **Save**.
-
-    1. For the Audit Logs connector, Common Data Service Connection, and Audit Log Connection, select **Select during import**, and then choose your connection.
-       ![Import options when importing a new flow](media/coe31.png "Import options when importing a new flow]")
-
-    1. After the connections are configured, select **Import**.
-
-    1. Open the flow, and make sure there are no errors for any of the actions.
-
-    1. Select the back arrow in the upper-left corner to go back to the flow details
-        screen.
-
-    1. If the flow isn't on yet, turn on the flow.
-
-    1. Run the flow to start syncing audit log data to the Common Data Service entity.
-
-## Option 2: Connect to the audit log by using an Azure app registration
+## Option 1: Connect to the audit log by using an Azure app registration
 
 The Office 365 Management APIs use Azure AD to provide authentication services that you can use to grant rights for your application to access them.
 
@@ -159,19 +88,10 @@ Using these steps, you'll set up an Azure AD app registration that will be used 
 
 Now you'll configure and set up a custom connector that uses the [Office 365 Management APIs](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis).
 
-1. Download the **Center of Excellence** solution from [GitHub](https://aka.ms/coestarterkitdownload)
+1. Go to [make.powerapps.com](https://make.powerapps.com) > Data > Custom Connectors. The Office 365 Management API custom connector will be listed here,it has been imported with the Core components solution.
+1. Select **Edit**.
 
-1. Extract the zip file.
-
-1. Go to [make.powerapps.com](https://make.powerapps.com).
-
-1. Import the **Center of Excellence – Audit Logs** (CenterofExcellenceAuditLogs_x_x_x_xxx_managed.zip) solution, which contains the custom connector and Power Automate flow to sync audit logs to CoE Common Data Service entities.
-
-   ![CoE – Audit Logs solution](media/coe40.png "CoE - Audit Logs solution")
-
-1. Open the solution, select the **Office 365 Management API custom connector**, and then select **Edit**.
-
-   ![Custom connector setup](media/coe41.png "Custom connector setup")
+  ![Custom connector setup](media/coe-custom1.png "Custom connector setup")
 
 1. Leave the **1. General** page as-is, and then select **2. Security**.
 
@@ -244,29 +164,16 @@ You should see a (200) status returned, which means the query was successful.
 
 A Power Automate flow uses the custom connector, queries the audit log daily, and writes the Power Apps launch events to a Common Data Service entity, which is then used in the Power BI dashboard to report on sessions and unique users of an app.
 
+1. Follow the instructions detailed under [Set up core components](setup-core-components.md) to download the solution.
 1. Go to [make.powerapps.com](https://make.powerapps.com).
+1. Import the **Center of Excellence – Audit Logs** (CenterofExcellenceAuditLogs_x_x_x_xxx_managed.zip) solution.
+1. Establish connections to activate your solution. If you create a new connection you must Refresh. You will not lose your import progress.
+    ![Import the Center of Excellence - Audit Log components solution](media/coe-custom2.png "Import the Center of Excellence - Audit Log components solution")
 
-1. Open the **Center of Excellence – Audit Log solution**, and edit the **Admin \| Sync Audit Logs**. 
+1. Paste in the ID you copied for directory (tenant) ID for the Tenant ID Environment Variable.
+    ![Set Environment Variables for the Center of Excellence - Audit Log components solution](media/coe-custom3.png "Set Environment Variables for the Center of Excellence - Audit Log components solution")
 
-    1. Select the flow in the solution to open it in the maker portal.
-
-       ![Select Admin Sync Audit Flow from solution](media/coe45.PNG "Select Admin Sync Audit Flow from solution")
-
-    1. Select **Edit**. (You won't be able to select **Edit** directly from the solution.)
-    
-       ![Edit flow](media/coe46.PNG "Edit flow")
-
-1. Look at the **Initialize tenantID** action, and paste in the ID you copied for directory (tenant) ID. 
-
-   ![Initialize Tenant ID in Power Automate](media/coe47.png "Initialize Tenant ID in Power Automate")
-
-1. (Optional) Update the time interval at which the log clusters should be retrieved. The default is set to one-day intervals (from the options of Month, Week, Day, Hour, Minute, or Second).
-
-1. (Optional) Update the start time and end time during which the logs will be read. The maximum is seven days in the past, and the end time must be after the start time. Use a positive number in the interval field.
-
-   ![Update the start time and end time during which the logs will read](media/coe48.png "Update the start time and end time during which the logs will read")
-
-1. Go back to the Center of Excellence - Audit Log solution, and open the flow details screen of the *(Child) Admin \| Sync Logs* flow by selecting the display name.
+1. Open the **Center of Excellence – Audit Log solution**, and select the **Admin \| [Child] Admin | Sync Logs**. 
 
 1. Edit the **Run only users** settings.
 
@@ -278,8 +185,83 @@ A Power Automate flow uses the custom connector, queries the audit log daily, an
 
 1. Select **Save**, and then close the **Flow details** tab.
 
-1. Select **Turn on** in the top navigation to turn on the child flow.
+1. (Optional) **Edit** the Admin | Sync Audit Logs flow to update the time interval at which the log clusters should be retrieved. The default is set to one-day intervals (from the options of Month, Week, Day, Hour, Minute, or Second).
 
-1. Refresh the page to make sure the status has changed to **On**.
+1. (Optional) **Edit** the Admin | Sync Audit Logs flow to  update the start time and end time during which the logs will be read. The maximum is seven days in the past, and the end time must be after the start time. Use a positive number in the interval field.
 
-1. Go back to the Center of Excellence – Audit Logs solution, select *Admin \| Sync Audit Logs* to open the flow details page, and then select **Turn on** for this flow as well.
+   ![Update the start time and end time during which the logs will read](media/coe48.png "Update the start time and end time during which the logs will read")
+
+1. Back in the solution, turn both the [Child] Admin | Sync Logs and the Admin | Sync Audit Logs flow on.
+
+   ![Turn Audit Log flows on](media/coe-custom4.PNG "Turn Audit Log flows on")
+
+## Option 2: Connect to the audit log by using basic authentication
+
+Make sure the account that is used to configure this section has permission to access the audit logs and doesn't have multifactor authentication enabled. Global tenant admins have access to the audit logs by default and can grant access to the audit logs for other user accounts or groups through the Exchange admin center.
+
+Keep in mind that after a user account has access to the audit logs, that user has access to all audit logs across every Microsoft service that reports telemetry to audit logs.
+
+### Install the custom connector
+
+1. Go to [flow.microsoft.com](https://flow.microsoft.com), and set the current environment to the same environment where the CoE solution is installed.
+
+1. In the left pane, expand **Data**, and then select **Custom Connectors**.
+
+1. Select **+ New custom connector – Import an Open API file**.
+
+   ![Create a custom connector page](media/coe27.png "Create a custom connector page")
+
+1. Provide a connector name (**Office 365 Audit Logs**), and then select the .swagger file that can be found in the CoE Starter Kit pack you downloaded.
+
+1. Select **Create Connector**. You don't need to change the Security and Definition information.
+
+1. Select **4. Test**.
+
+   ![Test your custom connector page](media/coe28.png "Test your custom connector page")
+
+1. Select **+ New Connection** to create a connection to your connector.
+
+1. Enter the email address and password of the user who has access to audit logs, and then select **Create connection**.
+
+   ![Create new connection option](media/coe29.png "Create new connection option")
+
+1. Select the refresh icon in the upper-right corner of the **Connections** area to ensure that the new connection is selected.
+
+1. Provide a **Start Date** and **End Date** for the **GetActivitiesByOperation**.
+
+1. Select **Test Operation**.
+
+   You should receive a (200) response, which indicates the query has been successfully executed.
+   ![The Get Activities By Operation action of the custom connector](media/coe30.png "The Get Activities By Operation action of the custom connector]")
+
+> [!IMPORTANT]
+> If you are using DLP, you will need to put this connector into the business group, see [Custom Connectors and DLP](https://docs.microsoft.com/power-platform/guidance/coe/limitations#Custom-Connectors-and-DLP)
+>
+> More information: [custom connector documentation](https://docs.microsoft.com/connectors/custom-connectors/define-openapi-definition#import-the-openapi-definition).
+
+### Import the flow template compressed (.zip) package named SyncAuditLogs.zip
+
+1. Go to [flow.microsoft.com](https://flow.microsoft.com), and set the current environment to the same environment where the CoE solution is installed.
+
+1. In the left pane, navigate to the **My Flows** tab.
+
+1. Select **Import**.
+
+1. Select the **Flow-SyncAuditLogs.zip** package, and then select **Import**.
+
+1. Update the connections:
+    1. For Admin \| Sync Audit Logs, select **Create as new**, and then select **Save**.
+
+    1. For the Office 365 Audit Logs connector, Common Data Service Connection, and Office 365 Audit Log Connection, select **Select during import**, and then choose your connection.
+       ![Import options when importing a new flow](media/coe31.png "Import options when importing a new flow]")
+
+    1. After the connections are configured, select **Import**.
+
+    1. Open the flow, and make sure there are no errors for any of the actions.
+
+    1. Select the back arrow in the upper-left corner to go back to the flow details
+        screen.
+
+    1. If the flow isn't on yet, turn on the flow.
+
+    1. Run the flow to start syncing audit log data to the Common Data Service entity.

@@ -32,18 +32,13 @@ Admin and governance tools fall into three broad categories:
 
 :::row:::
    :::column span="":::
-      **Admin center** <br>The core, most important capabilities for admins and makers are the functions in the core product admin centers. These features are designed to be the easiest and most robust way to complete tasks, and are fully supported by the engineering team:
+      **Admin center** <br>The core, most important capabilities for admins and makers are the functions in the core product [admin center](https://admin.powerplatform.microsoft.com/). These features are designed to be the easiest and most robust way to complete tasks, and are fully supported by the engineering team:
       - Environment and environment security management
       - Data loss prevention (DLP) policy management
       - Data integration and gateway management
       - Admin analytics (to view capacity and activity on Common Data Service, Power Apps, and Power Automate)
       - Support ticket requests
 
-      The admin centers include:
-      - [Power Platform admin center](https://admin.powerplatform.microsoft.com/)
-      - [Power Apps admin center](https://admin.powerapps.com/home)
-      - [Power Automate admin center](https://admin.flow.microsoft.com/)
-      - [Dynamics 365 admin center](https://port.crm.dynamics.com/)
    :::column-end:::
    :::column span="":::
        **Platform extensions** <br>Four connectors provide access to the same APIs that the products and admin centers use. These have been exposed through the connectors library to give users the ability to create custom solutions to execute administrative or governance-related tasks.

@@ -27,12 +27,6 @@ In this article, you'll learn how to:
 - Extend the starter kit.
 - Install updates to the starter kit.
 
-## Setup instructions video
-
-Watch how to download and deploy the solution.
-
-> [!VIDEO https://www.youtube.com/embed/L8gKjeE5GR4]
-
 ## Prerequisites
 
 The following are prerequisites for installing the CoE Starter Kit as it's included in the solution.
@@ -42,7 +36,7 @@ The following are prerequisites for installing the CoE Starter Kit as it's inclu
     -  This solution will work for environment admins, but the view will be restricted to only the environments an environment admin has access to.
     -  Dynamics 365 service admin is required for getting details about model-driven apps and solution-aware flows.
 
--  Power Apps Premium license (per app, per user, or Dynamics 365 Online licenses) is required for using Common Data Service.
+-  Power Apps Premium license (per app, per user) is required for using Common Data Service.
 
 -  Environment with a Common Data Service instance, where the user installing the solution has the System Administrator security role.
 
@@ -58,7 +52,7 @@ The following are prerequisites for installing the CoE Starter Kit as it's inclu
 
 These are the requirements for using the solution.
 
-- Power Apps Premium license (per app, per user, or Dynamics 365 Online licenses).
+- Power Apps Premium license (per app, per user).
 
 - For the Core Components solution, only the admins need a Power Apps Premium license. For the Governance Components solution, all makers require a Premium license. For the Nurture Components solution, everyone will require a Premium license.
 
@@ -94,19 +88,12 @@ When you're ready to extend the CoE Starter Kit with your own ideas, you'll do s
 
 Periodically, the solution will receive updates with new features, bug fixes, or optimizations. These updates will be announced on the [GitHub repo](https://aka.ms/CoEStarterKitRepo), and can be downloaded from there or the direct download at [aka.ms/CoEStarterKitDownload](https://aka.ms/CoEStarterKitDownload).
 
-Install the updates by importing the latest version to the environment where you originally installed the solution. Select **Upgrade** to update the solution and **Overwrite customizations** to receive changes from us to components.
-
-> [!NOTE]
-> **Overwrite Customizations** is not the default selection, and needs explicitly selected or you will not receive updates.
->![Overwrite Image](media/UpgradeAndOverwrite.png "Upgrade and Overwrite")
-
->[!WARNING]
->Currently, only model-driven app components and Common Data Service entities will be updated by using managed solution updates. Canvas apps and flows will be replaced during an update. If you're extending and customizing canvas apps, you'll need to make a copy of the app first (the copy won't receive updates).
+Install the updates by importing the latest version to the environment where you originally installed the solution. Select **Upgrade** to update the solution.
 
 ## FAQ
 
 **What licenses do I need to run this solution?**
-The apps and flows in the CoE Starter Kit use premium features like custom connectors and Common Data Service, therefore a per app or per user Power Apps license is required to run and play the apps. More information: [Microsoft Power Platform licensing overview](https://docs.microsoft.com/power-platform/admin/pricing-billing-skus)
+The apps and flows in the CoE Starter Kit use premium features like custom connectors and Common Data Service, therefore a per app or per user Power Apps license, as well as a per flow or per flow Power Automate license, is required to run and play the apps. More information: [Microsoft Power Platform licensing overview](https://docs.microsoft.com/power-platform/admin/pricing-billing-skus)
 
 If you want to use the Power BI report (packaged as part of the solution), you'll need a Power BI license. More information: [Power BI pricing](https://powerbi.microsoft.com/pricing/)
 
