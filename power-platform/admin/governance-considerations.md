@@ -144,7 +144,7 @@ In addition to monitoring, many customers want to subscribe to software creation
 ### FAQ
 
 **Problem**
-Currently, all users with Office E3 licenses can create apps in the Default environment. How can we enable Environment Maker rights to a select group, for example. 10 persons to create apps? 
+Currently, all users with Microsoft E3 licenses can create apps in the Default environment. How can we enable Environment Maker rights to a select group, for example. 10 persons to create apps? 
 
 **Recommendation**
 The [PowerShell cmdlets](https://powerapps.microsoft.com/blog/gdpr-admin-powershell-cmdlets/) and [Management connectors](https://powerapps.microsoft.com/blog/new-connectors-for-powerapps-and-flow-resources/) provide full flexibility and control to administrators to build the policies they want for their organization.
