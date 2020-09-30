@@ -122,4 +122,5 @@ If the job runs successfully, the merge assigns all the related contacts and the
 If during the record merge process another user deletes a related contact record, but order records still exist related to the contact record, the merge job will fail because a parent to a child record is missing. If you choose to skip the parenting check during the record merge, the orders with the missing contact record will be merged into the target account record. However, no related contact records will be assigned to the target account and the job will complete.
 
 ### See also
+
 [Entity relationships overview](/powerapps/maker/common-data-service/create-edit-entity-relationships)
