@@ -27,6 +27,9 @@ The Power Apps checker web API provides a mechanism to run static analysis check
 
 For information about using the checker service from PowerShell code see [Work with solutions using PowerShell](../powershell-api.md).
 
+> [!NOTE]
+> - Use of Power Apps checker does guarantee that a solution import will be successful. The static analysis checks performed against the solution do not know the configured state of the destination environment and import success may be dependent on other solutions or configurations in the environment. 
+
 <a name="bkmk_altApproaches"></a>
 
 ## Alternative approaches
@@ -69,7 +72,7 @@ Refer to the following topics for documentation on the individual APIs:
 
 ## Determine a geography
 
-When interacting with the Power Apps checker service, files are temporarily stored in Azure along with the reports that are generated. By using a geography specific API, you can control where the data is stored. It is suggested to use the same geography for each API call in the analysis lifecycle. Each geography may have a different version at any given point in time due to our multi-stage safe deployment approach and doing this ensures full version compatibility. It also may reduce execution time as the data will not have to travel as far of a distance in some cases. The following are the available geographies:
+When interacting with the Power Apps checker service, files are temporarily stored in Azure along with the reports that are generated. By using a geography specific API, you can control where the data is stored. Requests to a geography endpoint are routed to a regional instance based on best performance (latency to the requestor). Once a request enters a regional service instance, all processing and persisted data remains within that particular region. Certain API responses will return regional instance URLs for subsequent requests once an analysis job has been routed to specific region.  Be aware that each geography may have a different version of the service deployed at any given point in time due to our multi-stage safe deployment process and doing this ensures full version compatibility. Thus, the same geography should be used for each API call in the analysis lifecycle and may reduce overall execution time as the data may not have to travel as far of a distance over the wire. The following are the available geographies:
 
 |Azure datacenter|Name|Geography|Base URI|
 |---|---|---|---|
