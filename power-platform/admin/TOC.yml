@@ -24,6 +24,8 @@
       items:
       - name: Overview
         href: pricing-billing-skus.md
+      - name: Common Data Service capabilities with Microsoft 365 licenses
+        href: capabilities-with-microsoft-365-licenses.md
       - name: About licensing and license management
         href: wp-license-management.md            
       - name: Manage licenses in your org
