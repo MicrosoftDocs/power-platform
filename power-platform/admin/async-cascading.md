@@ -51,11 +51,7 @@ If a plug-in inside the asynchronous transaction triggers a new cascading delete
 ## Tracking asynchronous operation progress
 Administrators can monitor the processing of asynchronous operations in the **Settings** area. 
 
-<<<<<<< HEAD
-1. Sign into the **[Power Platform admin center](https://admin.powerplatform.microsoft.com/environments/)**, select the environment you want. Select **Settings**, expand **Audit and logs**, and then select **System jobs**.
-=======
 1. Sign into the **[Power Platform admin center](https://admin.powerplatform.microsoft.com/environments/)**, and then select the environment you want. Select **Settings**, expand **Audit and logs**, and then select **System jobs**.
->>>>>>> master
  
 2. The cascading operations are displayed in the **All System Jobs** view. 
 
