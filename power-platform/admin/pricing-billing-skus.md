@@ -98,9 +98,6 @@ Common Data Service functionality appears as the **Common Data Service** plan 
 
 Users who have any Power Platform or Dynamics license are always synced into the Common Data Service environments. However, for Office licenses where Common Data Service service plans are included, users are not auto-synced into Common Data Service until the Office application is accessed by the user. This user can now get access to Common Data Service entity and records based on the additional security roles and privileges that are assigned to this user, by the administrator. Such users, with just the Office license, are not auto-assigned any other security roles or privileges other than Maker role privilege in [default environment](environments-overview.md#the-default-environment).  As a security best practice,  the administrator needs to ensure that security roles and privileges are assigned based on functional roles and needs only, and not auto-assigned based on the user being synced or present in Common Data Service.  
 
-
-
-
 ## Power Apps and Power Automate Standalone plans
 
 Standalone Power Apps and Microsoft flow plans provide users the ability to create and run apps across data sources that extend beyond Microsoft 365, such as Salesforce, on-premises and custom data sources. These plans also include access to Common Data Service to store and manage data. Learn more: [What is Common Data Service?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
