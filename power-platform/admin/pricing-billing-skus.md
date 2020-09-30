@@ -58,24 +58,6 @@ Here is a brief overview of capabilities included with Power Apps for Microsoft 
 > - If you are an existing customer and a user with this license that comes directly to Common Data Service, you might get an error message that states “You are not a member of the organization”. We are addressing this problem in the coming weeks. 
 > - We currently sync some of these Microsoft Common Data Service licensed users to all Common Data Service environments. We are addressing this right now. Currently, these users will not be able to launch Power Apps for Microsoft 365 with this license. 
 
-## Power Apps and Power Automate Standalone plans
-
-Standalone Power Apps and Microsoft flow plans provide users the ability to create and run apps across data sources that extend beyond Microsoft 365, such as Salesforce, on-premises and custom data sources. These plans also include access to Common Data Service to store and manage data. Learn more: [What is Common Data Service?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
-
-More details around pricing and capabilities of standalone plans can be found in [Microsoft Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
-
-## Community Plan
-
-If you want to build skills and learn more about Power Apps, Power Automate, and Common Data Service, the Power Apps Community Plan is the right plan for you. The Power Apps Community Plan gives you a free development environment for individual use to learn with full functionality of Power Apps. More information: [Power Apps Community Plan](https://powerapps.microsoft.com/communityplan/).
-
-## Power Apps and Power Automate for Dynamics 365
-
-Power Apps is the platform to customize and extend applications in Dynamics 365, such as Dynamics 365 Sales and Customer Service, in context of the use rights.
-
-Dynamics 365 Applications can be customized using Power Apps and Power Automate capabilities.
-
-More information: [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544).
-
 ## Common Data Service capabilities with Microsoft 365 licenses
 
 As Common Data Service continues to grow, more Microsoft applications like Microsoft Project are utilizing Common Data Service. To enable these Microsoft applications, limited Common Data Service functionalities are added to select Microsoft 365 licenses. This is achieved by adding a new service plan named "Common Data Service" to the Microsoft 365 licenses.  To see the new service plan in the Microsoft 365 admin center, select a user, select the **Licenses and Apps** tab, and then scroll down and expand the **Apps** section. 
@@ -115,3 +97,25 @@ Common Data Service functionality appears as the **Common Data Service** plan 
 #### When can office licensed users be seen inside of Common Data Service?   
 
 Users who have any Power Platform or Dynamics license are always synced into the Common Data Service environments. However, for Office licenses where Common Data Service service plans are included, users are not auto-synced into Common Data Service until the Office application is accessed by the user. This user can now get access to Common Data Service entity and records based on the additional security roles and privileges that are assigned to this user, by the administrator. Such users, with just the Office license, are not auto-assigned any other security roles or privileges other than Maker role privilege in [default environment](environments-overview.md#the-default-environment).  As a security best practice,  the administrator needs to ensure that security roles and privileges are assigned based on functional roles and needs only, and not auto-assigned based on the user being synced or present in Common Data Service.  
+
+
+
+
+## Power Apps and Power Automate Standalone plans
+
+Standalone Power Apps and Microsoft flow plans provide users the ability to create and run apps across data sources that extend beyond Microsoft 365, such as Salesforce, on-premises and custom data sources. These plans also include access to Common Data Service to store and manage data. Learn more: [What is Common Data Service?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
+
+More details around pricing and capabilities of standalone plans can be found in [Microsoft Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
+
+## Community Plan
+
+If you want to build skills and learn more about Power Apps, Power Automate, and Common Data Service, the Power Apps Community Plan is the right plan for you. The Power Apps Community Plan gives you a free development environment for individual use to learn with full functionality of Power Apps. More information: [Power Apps Community Plan](https://powerapps.microsoft.com/communityplan/).
+
+## Power Apps and Power Automate for Dynamics 365
+
+Power Apps is the platform to customize and extend applications in Dynamics 365, such as Dynamics 365 Sales and Customer Service, in context of the use rights.
+
+Dynamics 365 Applications can be customized using Power Apps and Power Automate capabilities.
+
+More information: [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544).
+
