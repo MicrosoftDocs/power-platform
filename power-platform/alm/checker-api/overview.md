@@ -28,7 +28,7 @@ The Power Apps checker web API provides a mechanism to run static analysis check
 For information about using the checker service from PowerShell code see [Work with solutions using PowerShell](../powershell-api.md).
 
 > [!NOTE]
-> - Use of Power Apps checker does guarantee that a solution import will be successful. The static analysis checks performed against the solution do not know the configured state of the destination environment and import success may be dependent on other solutions or configurations in the environment. 
+> - Use of Power Apps checker does not guarantee that a solution import will be successful. The static analysis checks performed against the solution do not know the configured state of the destination environment and import success may be dependent on other solutions or configurations in the environment. 
 
 <a name="bkmk_altApproaches"></a>
 
