@@ -110,7 +110,8 @@ For any other issues with failed jobs, contact Microsoft Support. More informati
 ### Troubleshooting file deletion issues during cascade merge
 If you experience failures with cascade merge operations because files are deleted during the job run, you can skip the parenting check. This allows your merge to continue even if someone deletes a record from the set while the job is running in the background. To do this, when you choose to merge records, at the bottom of the merge window clear the option **Parenting check is enabled by default. Uncheck this to ignore the parenting check**.
 
-:::image type="content" source="media/merge-records-dialog.png" alt-text="Merge records dialog box":::
+> [!div class="mx-imgBorder"] 
+> ![Merge records dialog box](media/merge-records-dialog.png "Merge records dialog box")
 
 #### Merge record example
 
