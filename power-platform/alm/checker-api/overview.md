@@ -84,6 +84,7 @@ When interacting with the Power Apps checker service, files are temporarily stor
 |Public|Production|South America|southamerica.api.advisor.powerapps.com|
 |Public|Production|United Kingdom|unitedkingdom.api.advisor.powerapps.com|
 |Public|Production|France|france.api.advisor.powerapps.com|
+|Public|Production|Germany|germany.api.advisor.powerapps.com|
 |Public|Production|United Arab Emirates|unitedarabemirates.api.advisor.powerapps.com|
 |Public|Production|US Government|gov.api.advisor.powerapps.us|
 |Public|Production|US Government L4|high.api.advisor.powerapps.us|

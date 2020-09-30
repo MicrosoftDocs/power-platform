@@ -62,7 +62,6 @@ As an administrator, you should:
 
 More information: [Monitoring new and legacy capacity storage](https://docs.microsoft.com/power-platform/admin/whats-new-storage)
 
-
 ## Power Automate usage
 
 As an administrator, you should:

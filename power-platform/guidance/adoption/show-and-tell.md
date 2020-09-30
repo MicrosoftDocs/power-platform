@@ -73,3 +73,7 @@ Here are some tips for writing and sharing success stories:
 - Have *fun* writing your story; it’s a great way to showcase your work and have documentation of what you achieved.
 
 Share your success stories in a regular Microsoft Power Platform newsletter, highlight them on your intranet, or record an interview with the maker to upload and share with your maker community.
+
+Here's an example of how you could share the solution architecture:
+
+![Sample solution architecture](https://docs.microsoft.com/power-platform/guidance/adoption/media/story-architecture.png "Sample solution architecture")

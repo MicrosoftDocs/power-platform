@@ -85,7 +85,7 @@ Filters on this page can help you narrow down this view by app owner, app displa
 
 ## Flows
 
-The **Flows** page provides an overview of apps in your environment:
+The **Flows** page provides an overview of cloud based API automation flows in your environment:
 
 - Total Number of Flows
 
@@ -143,3 +143,43 @@ Through visuals, you'll be able to see your bot creation trend, your top active 
 Filters on this page can help you narrow down this view by environment and by maker.
 
 ![Power Virtual Agents](media/pb-pva.png "Power Virtual Agents")
+
+## UI flows
+
+The **UI flows** page provides an overview of UI based RPA automation flows in your environment:
+
+- Total Number of UI flows
+
+- Total Number of UI flows created this month
+
+- Total Number of UI flow Makers
+
+Through visuals, you'll be able to see your flow creation trend, your top active departments, and top environments. A list view of all flows enables you to sort your flows by type, and flow state.
+
+Filters on this page can help you narrow down this view by flow owner, flow display name, environment, maker department, or UI flow type.
+
+![UI flow overview](media/coe-ui1.png "UI flow overview")
+
+### UI flows usage
+
+The **UI flow usage** page provides an overview of UI based RPA automation flow runs in your environment:
+
+- Number of runs per date and UI flow type
+- Total # of runs
+- Last run date and status
+
+Filters on this page can help you narrow down this view by UI flow type, Run Status, maker, and environment.
+
+![UI flow usage](media/coe-ui2.png "UI flow usage")
+
+### UI flows errors
+
+The **UI flow errors** page provides an overview of UI based RPA automation flow runs that have failed in your environment:
+
+- UI flows Run Status
+- Error Type Details
+- Total # of runs, # failed runs, # successful runs as well as Last run and status
+
+Filters on this page can help you narrow down this view by UI flow type, Run Status, maker, and environment.
+
+![UI flow errors](media/coe-ui3.png "UI flow errors")
