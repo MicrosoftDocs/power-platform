@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/29/2020
+ms.date: 09/30/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -20,12 +20,12 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Introduced in September, 2020, *Project Oakdale* is a built-in, low-code data platform for Microsoft Teams that empowers users to build custom apps and workflows in Teams by using Power Apps and Power Automate. Project Oakdale—built on Common Data Service—provides relational data storage, rich data types, enterprise-grade governance, and one-click solution deployment to the Teams app store. More information: [Project Oakdale overview](/powerapps/teams/overview-data-platform)
+Introduced in September, 2020, *Project Oakdale* is a built-in, low-code data platform for Microsoft Teams that empowers users to build custom apps, bots, and flows in Teams by using Power Apps, Power Virtual Agents, and Power Automate. Project Oakdale—built on Common Data Service—provides relational data storage, rich data types, enterprise-grade governance, and one-click solution deployment to the Teams app store. More information: [Project Oakdale overview](/powerapps/teams/overview-data-platform)
 
-The Project Oakdale environment is automatically created for the selected team when you [create an app](/powerapps/teams/create-first-app) with the new Power Apps app in Teams for the first time or install a Power Apps app from the app catalog for the first time. The Project Oakdale environment is used to store, manage, and share team-specific data, apps, and flows. Each team can have one environment, and all data, apps and flows created with the Power Apps app inside a team are available from that team's Project Oakdale database.  
+The Project Oakdale environment is automatically created for the selected team when you create an [app](https://docs.microsoft.com/powerapps/teams/create-first-app) or [bot](https://docs.microsoft.com/power-virtual-agents/teams/authoring-first-bot-teams#create-a-bot) in Teams for the first time or install a Power Apps app from the app catalog for the first time. The Project Oakdale environment is used to store, manage, and share team-specific data, apps, and flows. Each team can have one environment, and all data, apps, bots, and flows created with the Power Apps app inside a team are available from that team's Project Oakdale database.  
 
 > [!NOTE]
-> - This is a preview feature
+> - This is a preview feature.
 > - [!INCLUDE [cc-preview-features-definition.md](../includes/cc-preview-features-definition.md)]
 > - The capability to promote Project Oakdale environments to Common Data Service won’t be available at public preview, but is expected to be available by general availability (GA).
 
@@ -40,7 +40,7 @@ Note the following regarding access to Microsoft Power Platform apps in Teams.
 
 - Project Oakdale capabilities will be available as part of select Microsoft 365 subscriptions. See the [Microsoft 365 licensing](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise?activetab=m365-enterprise:primaryr5).
 
-- Teams can invite guests who can access the apps, flows, and data in the Teams Project Oakdale database within their team. However, they won't be allowed to install, make, or edit apps. They can only discover and run apps in their team. 
+- Teams can invite guests who can access the apps, bots, flows, and data in the Teams Project Oakdale database within their team. However, they won't be allowed to install, make, or edit apps. They can only discover and run apps in their team. 
 
 - Apps created in Teams that use Project Oakdale will only be accessible in Teams and Teams Mobile, regardless of the user's license.  
 
@@ -48,13 +48,11 @@ Note the following regarding access to Microsoft Power Platform apps in Teams.
 
 - No direct API access or pro developer experience will be provided, and only Power Apps embedded within the Teams client will be able to access the runtime.
 
+- Tenant owners and members will be allowed to create their first app template, create a blank table app for the team, or a bot.
+
+- Team owners will be allowed to delete a team associated with a Project Oakdale environment, which will trigger the deletion of that environment.
+
 See also: [Project Oakdale licensing FAQs](powerapps-flow-licensing-faq.md#project-oakdale)
-
-## Admin experience
-
-Tenant owners and members will be allowed to create their first app template or create a blank table app for the team. More information: [Project Oakdale tables: Overview](https://docs.microsoft.com/powerapps/teams/create-table)
-
-Team owners will be allowed to delete a team associated with a Project Oakdale environment, which will trigger the deletion of that environment.
 
 ## Environment lifecycle
 
@@ -230,7 +228,7 @@ The following actions will be taken when customers approach and exceed the envir
 
 When a Project Oakdale environment in a team approaches or reaches the 2 GB capacity limit, the following actions will be taken: 
 - At 80 percent of the limit, the Teams users will see in the Teams maker experience a message informing them the capacity limit is about to be reached. At this point, customers are encouraged to either reduce storage usage or contact their admin for other options.  
-- At 100 percent of the limit, any existing apps will continue to work and existing apps can be updated. However, new apps and flows can't be created or installed as a result of having reached the capacity limit. 
+- At 100 percent of the limit, any existing apps will continue to work and existing apps can be updated. However, new apps, bots, and flows can't be created or installed as a result of having reached the capacity limit. 
 
 #### Tenant-level enforcement  
 
