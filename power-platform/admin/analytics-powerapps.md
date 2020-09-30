@@ -100,3 +100,8 @@ Select the environment and time period from the drop-down lists, and then select
 
 > [!div class="mx-imgBorder"] 
 > ![Power Apps analytics change environments](media/powerapps-analytics-change-environments.png "Power Apps analytics change environments")
+
+## FAQ
+
+### Why are some apps missing in my report?
+Currently, Power Apps analytics reports do not display model-driven apps data. Only canvas apps related data is displayed.
