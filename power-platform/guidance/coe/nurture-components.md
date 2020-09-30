@@ -20,6 +20,12 @@ search.app:
 
 An essential part of establishing a Center of Excellence (CoE) is nurturing your makers and an internal community. You'll want to share best practices and templates, and onboard new makers. The assets in this solution can help you develop a strategy for this motion.  
 
+## Demo: Nurture Components
+
+Watch how to use the Nurture Components solution.
+
+> [!VIDEO https://www.youtube.com/embed/StqxBgbt_ZM]
+
 The CoE Nurture Components solution contains assets relevant to everyone in the organization: admins and makers, in addition to users of apps and flows. More information: [Set up nurture components](setup-nurture-components.md)
 
 Here's a breakdown of the assets that form the Nurture Components solution:

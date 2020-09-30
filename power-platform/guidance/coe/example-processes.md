@@ -1,6 +1,6 @@
 ---
-title: "Example processes | MicrosoftDocs"
-description: "The example processes outlined here are meant to showcase common patterns other organizations have found useful and act as inspiration for defining your own processes."
+title: "Example App auditing process | MicrosoftDocs"
+description: "The App auditing sample process showcases how your CoE department or IT administrators can automate an auditing process on an app-level basis to gather additional information about an app, like business justification and impact of an outage, from the maker."
 author: manuelap-msft
 manager: devkeydet
 ms.service: power-platform
@@ -16,11 +16,9 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Example processes
+# App auditing process
 
 The components in the Center of Excellence (CoE) Starter Kit are designed for multiple uses. The example processes below, which use the starter kit components, are meant to showcase common patterns other organizations have found useful and&mdash;hopefully&mdash;act as inspiration for defining your own processes.
-
-## App auditing process
 
 The App auditing sample process showcases how your CoE department or IT administrators can automate an auditing process on an app-level basis to gather additional information about an app, like business justification and impact of an outage, from the maker.
 
