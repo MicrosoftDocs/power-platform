@@ -48,13 +48,11 @@ Note the following regarding access to Microsoft Power Platform apps in Teams.
 
 - No direct API access or pro developer experience will be provided, and only Power Apps embedded within the Teams client will be able to access the runtime.
 
+- Tenant owners and members will be allowed to create their first app template, create a blank table app for the team, or a bot.
+
+- Team owners will be allowed to delete a team associated with a Project Oakdale environment, which will trigger the deletion of that environment.
+
 See also: [Project Oakdale licensing FAQs](powerapps-flow-licensing-faq.md#project-oakdale)
-
-## Admin experience
-
-Tenant owners and members will be allowed to create their first app template, create a blank table app for the team, or a bot.
-
-Team owners will be allowed to delete a team associated with a Project Oakdale environment, which will trigger the deletion of that environment.
 
 ## Environment lifecycle
 
