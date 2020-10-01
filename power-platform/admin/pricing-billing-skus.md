@@ -5,7 +5,7 @@ author: dileepsinghmicrosoft
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/30/2020
+ms.date: 10/01/2020
 ms.author: dileeps
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -44,7 +44,7 @@ Here is a brief overview of capabilities included with Power Apps for Microsoft 
 
 ## Common Data Service capabilities with Microsoft 365 licenses
 
-As Common Data Service continues to grow, more Microsoft applications like Microsoft Project are using Common Data Service. To enable these Microsoft applications, limited Common Data Service functionality<!--Or it could be "limited Common Data Service capabilities..." There's no plural for "functionality". --> is added to select Microsoft 365 licenses. This is achieved by adding a new service plan named "Common Data Service" to the Microsoft 365 licenses. To see the new service plan in the Microsoft 365 admin center, select a user, select the **Licenses and Apps** tab, and then scroll down and expand the **Apps** section. 
+As Common Data Service continues to grow, more Microsoft applications like Microsoft Project are using Common Data Service. To enable these Microsoft applications, limited Common Data Service functionality is added to select Microsoft 365 licenses. This is achieved by adding a new service plan named "Common Data Service" to the Microsoft 365 licenses. To see the new service plan in the Microsoft 365 admin center, select a user, select the **Licenses and Apps** tab, and then scroll down and expand the **Apps** section. 
 
 > [!div class="mx-imgBorder"] 
 > ![Common Data Service license](./media/common-data-service-license.png "Common Data Service license")
@@ -53,9 +53,9 @@ As Common Data Service continues to grow, more Microsoft applications like Micro
 
 Common Data Service functionality required by other Microsoft 365 applications appears as the "Common Data Service" service plan in the **Apps** section of the Microsoft 365 admin center.  
 
-This new service plan allows select Microsoft 365 applications to take advantage of<!--Writing Style Guide--> Common Data Service as a platform for storing application data and use the underlying business logic tier as part of extending application capabilities. This extension also helps these applications to use Common Data Service instances within the [default environment](environments-overview.md#the-default-environment). However, if you need to create a Common Data Service instance within production or sandbox environments (other than the default environment), you're still required to have a premium Power Apps or Power Automate license. 
+This new service plan allows select Microsoft 365 applications to take advantage of Common Data Service as a platform for storing application data and use the underlying business logic tier as part of extending application capabilities. This extension also helps these applications to use Common Data Service instances within the [default environment](environments-overview.md#the-default-environment). However, if you need to create a Common Data Service instance within production or sandbox environments (other than the default environment), you're still required to have a premium Power Apps or Power Automate license. 
 
-These limited capabilities of Common Data Service are only available through select Microsoft 365 licenses and can't be used to run any custom Power Apps applications or Power Automate flows<!--Edit assumes "custom" applies to Power Automate flows also.-->, or run any Power Virtual Agent bots, or use any other data that doesn't belong to the Microsoft 365 applications that take advantage of these capabilities. 
+These limited capabilities of Common Data Service are only available through select Microsoft 365 licenses and can't be used to run any custom Power Apps applications or Power Automate flows, or run any Power Virtual Agent bots, or use any other data that doesn't belong to the Microsoft 365 applications that take advantage of these capabilities. 
 
 These limited capabilities aren't the common set included with every Office application. They can be different based on the Microsoft 365 applications that use these capabilities. For the complete list of various limited capabilities, customers should refer to the service description of these Microsoft 365 applications that contain these Common Data Service plans. These limited capabilities of Common Data Service don't entitle the licensed user to run standalone Power Apps or Power Automate, or any other Microsoft Power Platform applications that use Common Data Service. 
 
@@ -73,7 +73,7 @@ No, the capabilities of Common Data Service included with select Microsoft 365 l
 
 #### If customers can't use Common Data Service, why is this being shown in the Microsoft 365 admin center during the license assignment experience?  
 
-The service plan for Common Data Service is shown<!--Suggested.--> to provide visibility to customers that Common Data Service is being used to store and manage customer data related to the Microsoft 365 application that's using Common Data Service. Additionally, this was communicated to all customers so that customers can prepare for this change and update any internal training or user documentation that they might need.<!--Suggested.-->  
+The service plan for Common Data Service is shown to provide visibility to customers that Common Data Service is being used to store and manage customer data related to the Microsoft 365 application that's using Common Data Service. Additionally, this was communicated to all customers so that customers can prepare for this change and update any internal training or user documentation that they might need.
 
 #### What will be the impact if the service plan for Common Data Service is turned off (unselected)?  
 
@@ -81,7 +81,7 @@ Common Data Service functionality appears as the **Common Data Service** plan 
 
 #### When can Office-licensed users be seen inside of Common Data Service?
 
-Users who have any Microsoft Power Platform or Dynamics 365 license are always synced into the Common Data Service environments. However, for Office licenses where Common Data Service service plans are included, users aren't automatically synced into Common Data Service until the Office application is accessed by the user. After this occurs, the user can get access to Common Data Service entities<!--Edit okay?--> and records based on the additional security roles and privileges that the administrator assigned to this user. Such users, who just have the Office license, aren't automatically assigned any other security roles or privileges, other than the Maker role privilege in the [default environment](environments-overview.md#the-default-environment). As a security best practice, the administrator needs to ensure that security roles and privileges are assigned based on functional roles and needs only, and not automatically assigned based on the user being synced or present in Common Data Service. 
+Users who have any Microsoft Power Platform or Dynamics 365 license are always synced into the Common Data Service environments. However, for Office licenses where Common Data Service service plans are included, users aren't automatically synced into Common Data Service until the Office application is accessed by the user. After this occurs, the user can get access to Common Data Service entities and records based on the additional security roles and privileges that the administrator assigned to this user. Such users, who just have the Office license, aren't automatically assigned any other security roles or privileges, other than the Maker role privilege in the [default environment](environments-overview.md#the-default-environment). As a security best practice, the administrator needs to ensure that security roles and privileges are assigned based on functional roles and needs only, and not automatically assigned based on the user being synced or present in Common Data Service. 
 
 ### Known issues
 
