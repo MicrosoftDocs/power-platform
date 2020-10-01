@@ -108,9 +108,19 @@ If the user has been disabled or removed from the system, re-enabling or readdin
 For any other issues with failed jobs, contact Microsoft Support. More information: [Support overview](/power-platform/admin/support-overview)
 
 ### Troubleshooting file deletion issues during cascade merge
-If you experience failures with cascade merge operations because files are deleted during the job run, you can skip the parent check. This allows your merge to continue even if someone deletes a record from the set while the job is running in the background. To do this, when you choose to merge records, at the bottom of the merge window clear the option **Currently the parent check is enabled by default. If user wants to ignore parenting check then uncheck check box**.
+If you experience failures with cascade merge operations because files are deleted during the job run, you can skip the parenting check. This allows your merge to continue even if someone deletes a record from the set while the job is running in the background. To do this, when you choose to merge records, at the bottom of the merge window clear the option **Parenting check is enabled by default. Uncheck this to ignore the parenting check**.
 
-:::image type="content" source="media/merge-records-dialog.png" alt-text="Merge records dialog box":::
+> [!div class="mx-imgBorder"] 
+> ![Merge records dialog box](media/merge-records-dialog.png "Merge records dialog box")
+
+#### Merge record example
+
+Imagine that you have accounts with a relationship to contact, which has a relationship to orders. You want to merge two account records.
+
+If the job runs successfully, the merge assigns all the related contacts and their orders to the target account.
+
+If during the record merge process another user deletes a related contact record, but order records still exist related to the contact record, the merge job will fail because a parent to a child record is missing. If you choose to skip the parenting check during the record merge, the orders with the missing contact record will be merged into the target account record. However, no related contact records will be assigned to the target account and the job will complete.
 
 ### See also
+
 [Entity relationships overview](/powerapps/maker/common-data-service/create-edit-entity-relationships)
