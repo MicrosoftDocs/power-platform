@@ -40,23 +40,7 @@ Here is a brief overview of capabilities included with Power Apps for Microsoft 
 | Run Canvas apps offline                                               | Yes                          |
 | Support for data policies established by the Microsoft 365 administrator | Yes                          |
 | Access on-premises data or use premium or custom connectors           | \-                           |
-| Access to Common Data Service                    | Yes* (see note below)                |
-
-> [!NOTE]
-> <sup>*</sup>A limited set of Common Data Service capabilities are included with Microsoft 365 licenses to support some Microsoft 365 products. However, a Power Apps or Power Automate Standalone plan is still needed to run apps with Common Data Service.
->
-> Users with Common Data Service service plan in a Microsoft 365 license, can: 
-> 1. Access the Project App if a project is shared with them
-> 2. Access Common Data Service in the default environment with Maker privileges
-> 
-> Users with Common Data Service service plan in a Microsoft 365 license, cannot:
-> 1. Run any custom apps or Power Apps for Microsoft 365
->
-> These users should only get added to an environment once they access the environment or the app. We do not auto-sync these users to any environment.
-> 
-> **Known issues**
-> - If you are an existing customer and a user with this license that comes directly to Common Data Service, you might get an error message that states “You are not a member of the organization”. We are addressing this problem in the coming weeks. 
-> - We currently sync some of these Microsoft Common Data Service licensed users to all Common Data Service environments. We are addressing this right now. Currently, these users will not be able to launch Power Apps for Microsoft 365 with this license. 
+| Access to Common Data Service                    | Yes (see the next section for details)                |
 
 ## Common Data Service capabilities with Microsoft 365 licenses
 
@@ -96,7 +80,11 @@ Common Data Service functionality appears as the **Common Data Service** plan 
 
 #### When can office licensed users be seen inside of Common Data Service?   
 
-Users who have any Power Platform or Dynamics license are always synced into the Common Data Service environments. However, for Office licenses where Common Data Service service plans are included, users are not auto-synced into Common Data Service until the Office application is accessed by the user. This user can now get access to Common Data Service entity and records based on the additional security roles and privileges that are assigned to this user, by the administrator. Such users, with just the Office license, are not auto-assigned any other security roles or privileges other than Maker role privilege in [default environment](environments-overview.md#the-default-environment).  As a security best practice,  the administrator needs to ensure that security roles and privileges are assigned based on functional roles and needs only, and not auto-assigned based on the user being synced or present in Common Data Service.  
+Users who have any Power Platform or Dynamics license are always synced into the Common Data Service environments. However, for Office licenses where Common Data Service service plans are included, users are not auto-synced into Common Data Service until the Office application is accessed by the user. This user can now get access to Common Data Service entity and records based on the additional security roles and privileges that are assigned to this user, by the administrator. Such users, with just the Office license, are not auto-assigned any other security roles or privileges other than Maker role privilege in [default environment](environments-overview.md#the-default-environment).  As a security best practice,  the administrator needs to ensure that security roles and privileges are assigned based on functional roles and needs only, and not auto-assigned based on the user being synced or present in Common Data Service. 
+
+### Known issues
+- If you are an existing customer and a user with this license that comes directly to Common Data Service, you might get an error message that states “You are not a member of the organization”. We are addressing this problem in the coming weeks. 
+- We currently sync some of these Microsoft Common Data Service licensed users to all Common Data Service environments. We are addressing this right now. Currently, these users will not be able to launch Power Apps for Microsoft 365 with this license.
 
 ## Power Apps and Power Automate Standalone plans
 
