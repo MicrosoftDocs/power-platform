@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/01/2020
+ms.date: 10/05/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -285,7 +285,7 @@ In your Microsoft Teams admin center, you can use **Power Apps** and **Power Vir
 
 In addition to the new apps or bots creation experience through Power Apps and Power Virtual Agents, Teams apps (and associated Oakdale environments) can also be instantiated using the new sample apps made available by Microsoft as part of Public Preview. The available sample apps are listed [here](https://docs.microsoft.com/powerapps/teams/use-sample-apps-from-teams-store). You can enable/disable these apps for specific users by using the Teams apps permissions policies. For example, in Teams admin center, for App permissions policies under **Microsoft Apps** you will find **Employee Ideas**, **Inspection**, and **Issue Reporting** sample apps.
 
-Note that if disabled, Power Apps app also impacts the Teams users’ ability to use standalone Power Apps that were pinned earlier in the Teams channels using Power Apps app. In order for users to continue leveraging the standalone apps in the Teams experience despite turning off Power Apps maker experience for them, the alternate experience of pinning standalone apps to Teams channels or personal scope is now available using the new ‘Built by your colleagues’ catalog entry point. It is recommended that if you (an admin) choose to disable Power Apps for any user in your tenant, you should communicate the alternate paths available to restore the standalone apps that they were using in Teams channels from before using ‘Built by your colleagues’ catalog.
+Note that if disabled, Power Apps app also impacts the Teams users’ ability to use standalone Power Apps that were pinned earlier in the Teams channels using Power Apps app. For users to continue leveraging the standalone apps in the Teams experience despite turning off Power Apps maker experience for them, the alternate experience of pinning standalone apps to Teams channels or personal scope is now available using the new ‘Built by your colleagues’ catalog entry point. This action only needs to be performed once and updates the experience for all members of the team allowing them to use existing apps they had access to. It is recommended that if you (an admin) choose to disable Power Apps for any user in your tenant, you should communicate the alternate paths available to restore the standalone apps that they were using in Teams channels from before using ‘Built by your colleagues’ catalog.
 
 ## Known issues
 
