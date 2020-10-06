@@ -235,7 +235,7 @@ Keep in mind that after a user account has access to the audit logs, that user h
    ![The Get Activities By Operation action of the custom connector](media/coe30.png "The Get Activities By Operation action of the custom connector]")
 
 > [!IMPORTANT]
-> If you're using DLP, you'll need to put this connector into the business group. More information: [Custom connectors and DLP](limitations.md#Custom-Connectors-and-DLP) and [Import the OpenAPI definition](https://docs.microsoft.com/connectors/custom-connectors/define-openapi-definition#import-the-openapi-definition)<!--note from editor: This seems like an odd link. You haven't mentioned OpenAPI before.-->
+> If you're using DLP, you'll need to put this connector into the business group. More information: [Custom connectors and DLP](limitations.md#custom-connectors-and-dlp) and [Import the OpenAPI definition](https://docs.microsoft.com/connectors/custom-connectors/define-openapi-definition#import-the-openapi-definition)<!--note from editor: This seems like an odd link. You haven't mentioned OpenAPI before.-->
 
 ### Import the flow template compressed (.zip) package named SyncAuditLogs.zip
 
