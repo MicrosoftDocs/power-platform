@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 08/20/2020
+ms.date: 10/06/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin 
@@ -64,7 +64,7 @@ You have multiple options when creating an environment:
 
 ### Some important considerations when creating a new environment
 
-- **Why create an environment with a database**: When you create a production environment with a Common Data Service database, you have the option to add Dynamics 365 apps such as Dynamics 365 Sales and Field Service during the creation process (by choosing **Enable Dynamics 365 apps**). Currently, if you don't select **Enable Dynamics 365 apps** at the time of database provisioning, you will not be able to make this change later. 
+- **Why create an environment with a database**: When you create a production or sandbox environment with a Common Data Service database, you have the option to add Dynamics 365 apps such as Dynamics 365 Sales and Field Service during the creation process (by choosing **Enable Dynamics 365 apps**). Currently, if you don't select **Enable Dynamics 365 apps** at the time of database provisioning, you will not be able to make this change later. 
 - **Why create an environment without a database**: If you don't need Dynamics 365 apps or don't need to use Common Data Service, and you are creating Power Apps or Power Automate using other data sources, create the environment without the Common Data Service database.
 - **The Enable Dynamics 365 apps decision is not reversible**: Once you create an environment, if you don't select **Enable Dynamics 365 apps** at the time of database provisioning, you will not be able to make this change later.
 - **Dynamics 365 apps and trial environments**: Currently, Dynamics 365 apps cannot be enabled for trial environments. To create a trial with Dynamics 365 apps, see [Start your digital transformation here](https://trials.dynamics.com).

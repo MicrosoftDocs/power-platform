@@ -1,12 +1,14 @@
 ---
 title: "Audit data and user activity for security and compliance  | MicrosoftDocs"
 description: Audit data and user activity for security and compliance
-author: jimholtz
+author: pnghub
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/07/2020
-ms.author: jimholtz
+ms.author: gned
+ms.reviewer: jimholtz 
+
 search.audienceType: 
   - admin
 search.app:
