@@ -1,6 +1,6 @@
 ---
-title: "Nurture Components | MicrosoftDocs"
-description: "The CoE Nurture Components solution contains assets to share best practices and templates, and onboard new makers"
+title: "Nurture components | MicrosoftDocs"
+description: "The CoE nurture components solution contains assets to share best practices and templates, and onboard new makers"
 author: manuelap-msft
 manager: devkeydet
 ms.service: power-platform
@@ -20,22 +20,22 @@ search.app:
 
 An essential part of establishing a Center of Excellence (CoE) is nurturing your makers and an internal community. You'll want to share best practices and templates, and onboard new makers. The assets in this solution can help you develop a strategy for this motion.  
 
-## Demo: Nurture Components
+## Demo: Nurture components
 
-Watch how to use the Nurture Components solution.
+Watch how to use the nurture components solution.
 
 > [!VIDEO https://www.youtube.com/embed/StqxBgbt_ZM]
 
-The CoE Nurture Components solution contains assets relevant to everyone in the organization: admins and makers, in addition to users of apps and flows. More information: [Set up nurture components](setup-nurture-components.md)
+The CoE nurture components solution contains assets relevant to everyone in the organization: admins, makers, in addition to users of apps and flows. More information: [Set up nurture components](setup-nurture-components.md)
 
-Here's a breakdown of the assets that form the Nurture Components solution:
+Here's a breakdown of the assets that form the nurture components solution:
 
 - Onboard new makers, provide training, and share best practices
   - [Admin | Welcome Email (flow)](#flows)
   - [Template Catalog (canvas app)](#apps)
   - [Admin | Newsletter with Product Updates (flow)](#flows)
-  - [Training in a day Management and Registration (canvas apps)](#apps)
-  - [Training in a day Feedback Reminder, Registration Confirmation and Reminder (flow)](#flows)
+  - [Training in a Day Management and Registration (canvas apps)](#apps)
+  - [Training in a Day Feedback Reminder, Registration Confirmation and Reminder (flow)](#flows)
 - Encourage adoption
   - [App Catalog (canvas app)](#apps)
 
@@ -43,21 +43,21 @@ Here's a breakdown of the assets that form the Nurture Components solution:
 
 ### InADayAttendees
 
-Represents attendees that have registered for a Training in a day course by using the Training in a day Registration canvas app. The following information is available for each attendee:
+Represents attendees that have registered for a Training in a Day course by using the Training in a Day Registration canvas app. The following information is available for each attendee:
 
-- Attendee eMail
+- Attendee email
 - Name
-- Registered Event
+- Registered event
 
 ### InADayEvent
 
-Represents available training events created through the Training in a day Management canvas app. The following information is available for each event:
+Represents available training events created through the Training in a Day Management canvas app. The following information is available for each event:
 
 - Name
 - Description
-- Start Time
-- End Time
-- Max Attendees
+- Start time
+- End time
+- Max attendees
 - Location
 
 ## Flows
@@ -66,27 +66,27 @@ Represents available training events created through the Training in a day Manag
 
 Sends an email to a user who created an app, flow, custom connector, or environment. This flow gets triggered when a new record is created in the maker table.  
 
-You can customize the email sent out by the flow. By default, it will look like the following:
+You can customize the email sent out by the flow. By default, it will look like the following image.<!--note from editor: Is the wording and format of this email important to your message? If so, please use alt text to describe it for a reader with low vision.--> 
 
 ![Welcome email](media/coe5.PNG "Welcome email")
 
 ### Admin \| Newsletter with Product Updates
 
-Sends a weekly email with a summary of product updates, consisting of posts from the product blogs for Power Apps, Power Automate, and Power BI and the Power Apps Community blog.
+Sends a weekly email with a summary of product updates, consisting of posts from the product blogs for Power Apps, Power Automate, and Power BI, and the Power Apps Community blog.
 
 ![Newsletter with product updates](media/coe64.PNG "Newsletter with product updates")
 
 ### Training in a Day \| Feedback Reminder
 
-Sends an email to attendees of a training event on the day and requests feedback.
+Sends an email to attendees of a training event on the day, and requests feedback.
 
 ### Training in a Day \| Registration Confirmation
 
-Sends an email to an attendee when they register for a training in a day event
+Sends an email to an attendee when they register for a Training in a Day event.
 
 ### Training in a Day \| Reminder 3 days prior to event
 
-Sends a reminder email to an attendee of a training in a day event three days before the event.
+Sends a reminder email to an attendee of a Training in a Day event three days before the event.
 
 :::row:::
    :::column span="":::
@@ -101,11 +101,11 @@ Sends a reminder email to an attendee of a training in a day event three days be
 
 ### App Catalog
 
-A canvas app that gives visibility to certain apps to the organization. Admins can choose which apps to highlight in the App Catalog if the app meets admin requirements and is meant to be shared broadly.
+A canvas app that helps give visibility to certain apps in the organization. Admins can choose which apps to highlight in the app catalog if the app meets admin requirements and is meant to be shared broadly.
 
-When you first open the App Catalog, you won't see any apps there. There is a field on the Power Apps App entity called **In App Catalog**, which is a two-option set type field (Boolean). If the value is set to **Yes**, the app will show up in the catalog. To publish an app to the App Catalog, follow the [app auditing process](example-processes.md) in the Power Platform Admin View app.
+When you first open the app catalog, you won't see any apps there. There's a field on the Power Apps App entity called **In App Catalog**, which is a two-option set type field (Boolean). If the value is set to **Yes**, the app will show up in the catalog. To publish an app to the app catalog, follow the [app auditing process](example-processes.md) in the Power Platform Admin View app.
 
-**Permission**: As soon as you're using this process, you can share the App Catalog with the entire organization.
+**Permission**: As soon as you're using this process, you can share the app catalog with the entire organization.
 
 **Prerequisite**: This app uses Common Data Service; a Premium license is therefore required for every app user.
 
@@ -113,16 +113,14 @@ When you first open the App Catalog, you won't see any apps there. There is a fi
 
 ### Template Catalog
 
-Canvas app that allows CoE admins to share app and component templates, in addition to best practice documents, with their makers.
+A canvas app that CoE admins can use to share app and component templates, in addition to best practice documents, with their makers.
 
-**Permission**: After you've made the content ready, the Template Catalog can be shared with the entire organization.
+**Permission**: After you've made the content ready, the template catalog can be shared with the entire organization.
 
 **Prerequisite**: This app uses SharePoint in the background and requires a SharePoint site to be configured. This is described in [Set up nurture components](setup-nurture-components.md).
 
 > [!NOTE]
-> This app can't be used in the managed solution; it can only be tested and used after you've [imported it into your extended unmanaged solution](modify-components.md). This is due to some limitations in the environment variables and data sources in the canvas apps. <br>
->You can see how to [modify the data source here](modify-components.md#set-up-the-template-catalog-and-upload-components).
-
+> This app can't be used in the managed solution; it can only be tested and used after you've [imported it into your extended unmanaged solution](modify-components.md). This is due to some limitations in the environment variables and data sources in the canvas apps. For more information, go to [Set up the Template Catalog and upload components](modify-components.md#set-up-the-template-catalog-and-upload-components).
 
 #### Training in a Day – Management
 

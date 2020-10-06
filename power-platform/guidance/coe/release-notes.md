@@ -31,7 +31,7 @@ Select each version below to see release notes and updates for each component. Y
 | Audit Log |   [1.1](release-notes/auditlog-1.1.md) |
 | Theming Components |   [1.1](release-notes/theming-1.1.md) |
 
-### All Core (Admin) Components versions
+### All core (admin) components versions
 
 |  Version | First available |
 | --------- | ---------------|
@@ -39,7 +39,7 @@ Select each version below to see release notes and updates for each component. Y
 | [1.60](release-notes/core-1.60.md) | August 14, 2020 |
 | [1.54](release-notes/core-1.54.md) | July 24, 2020 |
 
-### All Governance (Compliance and Reporting) Components versions
+### All governance (compliance and reporting) components versions
 
 |  Version | First available |
 | --------- | ---------------|
@@ -47,14 +47,14 @@ Select each version below to see release notes and updates for each component. Y
 | [1.21](release-notes/governance-1.21.md) | August 14, 2020 |
 | [1.18](release-notes/governance-1.18.md) | July 8, 2020 |
 
-### All Nurture Components versions
+### All nurture components versions
 
 |  Version | First available |
 | --------- | ---------------|
 | [1.17](release-notes/nurture-1.17.md) | September 18, 2020 |
 | [1.14](release-notes/nurture-1.14.md) | June 27, 2020 |
 
-### All Audit Log Component versions
+### All audit log component versions
 
 |  Version | First available |
 | --------- | ---------------|

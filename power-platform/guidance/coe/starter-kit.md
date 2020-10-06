@@ -17,7 +17,7 @@ search.app:
   - Powerplatform
 ---
 # Microsoft Power Platform Center of Excellence (CoE) Starter Kit
-
+<!--note from editor: For quite a few of these CoE articles, the H1 and the title are the same. Please note that they need to be unique, as does the description, or we'll throw build errors that will become warnings soon. Also the description can't exceed 160 characters.-->
 A Center of Excellence (CoE) in an organization drives innovation and improvement and brings together like-minded people with similar business goals to share knowledge and success, while at the same time providing standards, consistency, and governance to the organization.
 
 The Microsoft Power Platform CoE Starter Kit is a collection of components and tools that are designed to help you get started with developing a strategy for adopting and supporting Microsoft Power Platform, with a focus on Power Apps and Power Automate.
@@ -44,9 +44,10 @@ Watch a quick overview of the CoE Starter Kit.
 > [!VIDEO https://www.youtube.com/embed/3eF__GY0Vzg]
 
 ## Related resources
-[Power Platform admin guide](/power-platform/admin/admin-documentation)<br/>
-[Power Platform ALM guide](/power-platform/alm)<br/>
-[Power BI docs](https://docs.microsoft.com/power-bi)<br/>
-[Power Apps docs](https://docs.microsoft.com/powerapps)<br/>
-[Power Automate docs](https://docs.microsoft.com/power-automate)<br/>
-[Power Virtual Agents docs](https://docs.microsoft.com/power-virtual-agents)
+
+[Microsoft Power Platform admin guide](/power-platform/admin/admin-documentation)<br/>
+[Application lifecycle management (ALM) with Microsoft Power Platform](/power-platform/alm)<br/>
+[Power BI documentation](https://docs.microsoft.com/power-bi)<br/>
+[Power Apps documentation](https://docs.microsoft.com/powerapps)<br/>
+[Power Automate documentation](https://docs.microsoft.com/power-automate)<br/>
+[Power Virtual Agents documentation](https://docs.microsoft.com/power-virtual-agents)

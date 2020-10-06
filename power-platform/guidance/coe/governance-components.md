@@ -1,6 +1,6 @@
 ---
-title: "Governance Components  | MicrosoftDocs"
-description: "The Governance components solution provides assets to automate common auditing and compliance scenarios."
+title: "Governance components  | MicrosoftDocs"
+description: "The governance components solution provides assets to automate common auditing and compliance scenarios."
 author: manuelap-msft
 manager: devkeydet
 ms.service: power-platform
@@ -20,95 +20,89 @@ search.app:
 
 After you've become familiar with your environments and resources, you might start thinking about governance processes for your apps. You might want to gather additional information about your apps from your makers, or audit specific connectors or app usage.
 
-## Demo: Governance Components
+## Demo: Governance components
 
-Watch how to use the Governance Components solution.
+Watch how to use the governance components solution.
 
 > [!VIDEO https://www.youtube.com/embed/6bfaFsFtLow]
 
-The Governance Components solution contains assets relevant to admins and makers. More information: [Set up governance components](setup-governance-components.md)
+The governance components solution contains assets relevant to admins and makers. More information: [Set up governance components](setup-governance-components.md)
 
 Here's a breakdown of the assets that form the governance components:
 
 - Sample audit process
   - [Developer Compliance Center (canvas app)](#apps)
-  - [Flow – Compliance detail request](#flows)
-  - [Business Process Flow for Auditing resources](#business-process-flows)
+  - [Compliance Detail Request (flow)](#flows)
+  - [Business process flows for auditing resources](#business-process-flows)
 
 - Archive unused apps
   - [App and Flow Archive and Clean Up – Start Approval and Check Approval (flows)](#flows)
   - [App Archive and Clean Up View (model-driven app)](#apps)
-
+<!--note from editor: Discussion of the following flows has been commented out, so should these lines be commented out too?:
 - Take action based on certain connector usage
-  - [Find and add admins as owners for apps that use certain connectors (flow)](#flows)
-  - [Find and disable flows that leverage certain connectors (flow)](#flows)
+  - [Find and Add Admins as Owners for Apps that Use Certain Connectors (flow)](#flows)
+  - [Find and Disable Flows that Leverage Certain Connectors (flow)](#flows)
+-->
 
 ## Entities
 
 ### Archive Approval
 
-Represents archival approval tasks started during the *App Archive and Clean Up* flow
+Represents archival approval tasks started during the App Archive and Clean Up flow.
 
 ## Flows
 
-### Admin \| Compliance detail request
+### Admin \| Compliance Detail Request
 
-This flow works in conjunction with other apps and flows in the CoE toolkit to facilitate a process described in the following section: [PowerApps App Auditing
-Process](example-processes.md).
+This flow works in conjunction with other apps and flows in the CoE Starter Kit to facilitate the process described in [App auditing process](example-processes.md). Compliance detail request emails are sent for apps and chatbots.
 
-Compliance detail request emails are sent for apps and chatbots.
+This flow sends an email to users who have apps in the tenant that aren't compliant with the following thresholds:
 
-It sends an email to users who have apps in the tenant that aren't compliant with the following thresholds:
+- The app is shared with more than 20 users or at least one group, and no business justification details have been provided for it.
 
-- The app is shared with more than 20 users or at least one group, and no business justification details have been provided.
+- The app does have business justification details, but hasn't been published in 60 days (so it's likely not on the latest version of Power Apps) or is missing a description.
 
-- The app has business justification details provided, but hasn't been published in 60 days (so is likely not on the latest version of Power Apps) or is missing a description.
+- The app has business justification details and an indication of high business impact, but no mitigation plan has been submitted to the attachments field.
 
-- The app has business justification details provided and has indicated high business impact, but hasn't submitted a mitigation plan to the attachments field.
+This flow sends an email to users who have chatbots in the tenant that aren't compliant with the following thresholds:
 
-It sends an email to users who have chatbots in the tenant that aren't compliant with the following thresholds:
+- The chatbot has been launched more than 50 times, and no business justification details have been provided for it.
 
-- The chatbot has more than 50 launches, and no business justification details have been provided.
+- The chatbot has business justification details and an indication of high business impact, but no mitigation plan has been submitted to the attachments field.
 
-- The chatbot has business justification details provided and has indicated high business impact, but hasn't submitted a mitigation plan to the attachments field.
+You can customize the email sent out by the flow; by default, it will look like the following image.<!--note from editor: Is the wording and format of this email important to your message? If so, please use alt text to describe it for a reader with low vision. It's actually not that clear even for sighted readers, so maybe you don't have to describe it word for word, but I think this description should be a bit more detailed.--> 
 
-You can customize the email sent out by the flow; by default, it will look like the following:  
+![Compliance detail request email](media/coe55.png "Compliance detail request email")
 
-![Compliance Detail Request email](media/coe55.png "Compliance Detail Request email")
+### Admin \| App Archive and Clean Up – Start Approval
 
-### Admin \| App archive and clean up – Start Approval
-
-Checks for apps that haven't been modified in the last six months (configurable) and asks the app owner (via flow approvals) if the app can be archived.
+Checks for apps that haven't been modified in the last six months (this time span is configurable) and asks the app owner (via flow approvals) whether the app can be archived.
 
 This flow starts the approval process and writes the approval task to the Archive Approval Common Data Service entity.
 
-![App archive and clean up – Approval](media/coe58.png "App archive and clean up – Approval")
+![App Archive and Clean Up – Start Approval flow](media/coe58.png "App Archive and Clean Up – Start Approval flow")
 
-### Admin \| App archive and clean up – Check Approval
+### Admin \| App Archive and Clean Up – Check Approval
 
 On a scheduled interval, checks for approval responses created by the App Archive and Clean Up – Start Approval flow and, if approved, archives the app file to SharePoint.
 
-**Prerequisite**: Create a SharePoint document library to store the archived apps, and configure this in the environment variables.
+**Prerequisite**: Create a SharePoint document library to store the archived apps, and configure this in the environment variable.
 
-**Customize**: By default, this flow will archive the application but not remove it or its permission from the environment, so that we don't inadvertently remove apps from your tenant. Update the [**Auto Delete On** Archive environmental variable](setup-governance-components.md#update-environment-variables) to also delete the app.
+**Customize**: By default, this flow will archive the application but not remove it or its permission from the environment, so that no apps are inadvertently removed from your tenant. To delete the app, update the [*Auto Delete On Archive* environment variable](setup-governance-components.md#update-environment-variables).
 
-### Admin \| Flow archive and clean up – Start Approval
+### Admin \| Flow Archive and Clean Up – Start Approval
 
-The same as the above flow but for flows instead of apps.
-
-Checks for flows that haven't been modified in the last six months (configurable) and asks the flow owner (via flow approvals) if the flow can be archived.
+Similar to the previous flow, but for flows rather than apps. This flow checks for flows that haven't been modified in the last six months (this time span is configurable) and asks the flow owner (via flow approvals) whether the flow can be archived.
 
 This flow starts the approval process and writes the approval task to the Archive Approval Common Data Service entity.
 
-### Admin \| Flow archive and clean up – Check Approval
+### Admin \| Flow Archive and Clean Up – Check Approval
 
-The same as the above flow but for flows instead of apps.
+Similar to the previous flow, but for flows rather than apps. On a scheduled interval, this flow checks for approval responses created by the Flow Archive and Clean Up – Start Approval flow and, if approved, archives the flow files to SharePoint. It archives two files per flow, one with the flow content, the other with the flow connections.
 
-On a scheduled interval, checks for approval responses created by the Flow Archive and Clean Up – Start Approval flow and, if approved, archives the flow files to SharePoint. It archives two files per flow, one with the flow content, the other with the flow connections.
+**Prerequisite**: The same SharePoint document library that's used to store the archived apps can be used to store archived flows.
 
-**Prerequisite**: The same SharePoint document library as used to  store the archived apps can be use to store archived flows.
-
-**Customize**: By default, this flow will archive the flow but not remove it or its permission from the environment, so that we don't inadvertently remove flows from your tenant. Update the [**Auto Delete On** Archive environmental variable](setup-governance-components.md#update-environment-variables) to also delete the flow.
+**Customize**: By default, this flow will archive the flow but not remove it or its permission from the environment, so that no flows are inadvertently removed from your tenant. To delete the flow, update the [*Auto Delete On Archive* environment variable](setup-governance-components.md#update-environment-variables).
 
 <!--### SETUP REQUIRED \| Admin \| Find and disable flows that leverage certain connectors
 
@@ -144,25 +138,25 @@ This app is used in the [auditing process](example-processes.md) as a tool for u
 
 #### Compliance Status
 
-A traffic light indicates how compliant the resource is towards a pre-defined rule set.
+A traffic light indicates how compliant the resource is in relation to a predefined rule set.
 
-- **Apps** are compliant if the app description is populated, the business justification is submitted and the app has been published in the past 60 days.
-- **Flows** are compliant if the flow description is populated, the business justification is submitted and the flow is not suspended.
-- **Chatbots** are compliant if the chatbot description and the business justification is populated, and the chatbot is not suspended.
-- **Custom Connectors** are compliant if the custom connector description, business justification and conditions of use are populated.
+- **Apps** are compliant if the app description is populated, the business justification is submitted, and the app has been published in the past 60 days.
+- **Flows** are compliant if the flow description is populated, the business justification is submitted, and the flow isn't suspended.
+- **Chatbots** are compliant if the chatbot description and the business justification are populated, and the chatbot isn't suspended.
+- **Custom connectors** are compliant if the custom connector description, business justification, and conditions of use are populated.
 
-**Customize**: Verify that the Compliance criteria matches your requirements, and update if necessary.
+**Customize**: Verify that the compliance criteria matches your requirements, and update if necessary.
 
-Makers can achieve compliance by providing additional information through the Support Details form:
+Makers can achieve compliance by providing additional information through the **Support Details** form:
 
-- **Business Justification**: Describe the business need and problem you are solving with this solution.
+- **Business Justification**: Describe the business need and the problem you're solving with this solution.
 - **Business Impact**: Define the operational impact this solution has on the people using it.
-- **Access Management**: Describe who has access to this resource, how access is managed (individual user access, access through group membership) and how joiners/movers/leavers processes are managed.
-- **Dependencies**: Describe any dependencies this solution uses, e.g. external or internal APIs or Azure resources.
-- **Conditions of use**: (connectors only) Describe in which situations the connector can and should be used.
+- **Access Management**: Describe who has access to this resource, how access is managed (individual user access or access through group membership) and how joiners/movers/leavers processes are managed.
+- **Dependencies**: Describe any dependencies this solution uses, for example external or internal APIs or Azure resources.
+- **Conditions of use**: (For connectors only) Describe in which situations the connector can and should be used.
 - **Mitigation Plan provided**: For critical solutions, upload a mitigation plan that details what business users will do in the event of an outage.
 
-**Customize**: Verify that the Support Details form matches your requirements, and update if necessary.
+**Customize**: Verify that the **Support Details** form matches your requirements, and update if necessary.
 
 :::row:::
    :::column span="":::
@@ -177,7 +171,7 @@ Makers can achieve compliance by providing additional information through the Su
 
 ### App Archive and Clean Up View
 
-A model-driven app that provides an interface to canvas apps that have been highlighted for archiving, and their approval status. This model-driven app works in conjunction with other apps and flows in the CoE toolkit to facilitate the process described for the [app auditing process](example-processes.md).
+A model-driven app that provides an interface to canvas apps that have been highlighted for archiving and their approval status. This model-driven app works in conjunction with other apps and flows in the CoE Starter Kit to facilitate the process described for the [app auditing process](example-processes.md).
 
 **Customize**: Instead of using this model-driven app, you can modify the Power Platform Admin View app to show the Archive Approval entity.
 
@@ -187,13 +181,11 @@ A model-driven app that provides an interface to canvas apps that have been high
 
 ### Power Apps App Approval BPF
 
-This process helps the admin audit the app approval process by providing a visualization of the stage in the process they're currently on.
-
-The audit stages are:
+This process helps the admin audit the app approval process by providing a visualization of the stage in the process they're currently on. The audit stages are:
 
 - Validate maker requirements.
 - Assess risk.
-- Highlight the app in the App Catalog.
+- Highlight the app in the app catalog.
 
 :::row:::
    :::column span="":::
@@ -206,13 +198,11 @@ The audit stages are:
 
 ### Flow Approval BPF
 
-This process helps the admin audit the flow approval process by providing a visualization of the stage in the process they're currently on.
-
-The audit stages are:
+This process helps the admin audit the flow approval process by providing a visualization of the stage in the process they're currently on. The audit stages are:
 
 - Validate maker requirements.
 - Assess risk.
-- Complete admin review.
+- Complete the admin review.
 
 :::row:::
    :::column span="":::
@@ -225,13 +215,11 @@ The audit stages are:
 
 ### Custom Connector Approval BPF
 
-This process helps the admin audit the custom connector approval process by providing a visualization of the stage in the process they're currently on.
-
-The audit stages are:
+This process helps the admin audit the custom connector approval process by providing a visualization of the stage in the process they're currently on. The audit stages are:
 
 - Validate maker requirements.
 - Assess risk.
-- Complete admin review.
+- Complete the admin review.
 
 :::row:::
    :::column span="":::
@@ -244,13 +232,11 @@ The audit stages are:
 
 ### Chatbot Approval BPF
 
-This process helps the admin audit the chatbot approval process by providing a visualization of the stage in the process they're currently on.
-
-The audit stages are:
+This process helps the admin audit the chatbot approval process by providing a visualization of the stage in the process they're currently on. The audit stages are:
 
 - Validate maker requirements.
 - Assess risk.
-- Complete admin review.
+- Complete the admin review.
 
 :::row:::
    :::column span="":::
@@ -261,16 +247,16 @@ The audit stages are:
    :::column-end:::
 :::row-end:::
 
-#### Activate the business process flows
+### Activate the business process flows
 
-All business process flows are disabled by default. To enable it, do the following:
+All business process flows are disabled by default. To enable them, do the following:
 
 1. Go to [make.powerapps.com](<https://make.powerapps.com>) and set the current environment to the same environment where the CoE solution is installed.
 
 1. Select **Solutions** > **Center of Excellence**.
 
-1. Select **Process** from the Filter option at the top.
+1. Select **Process** from the filter option at the top.
 
 1. In **Power Apps App Approval BPF**, select the ellipsis (…) button, and then select **Turn On**.
 
-1. Repeat the last step for **Flow Approval BPF, Chatbot Approval BPF and Custom Connector Approval BPF**.
+1. Repeat the previous step for **Flow Approval BPF**, **Custom Connector Approval BPF**, and **Chatbot Approval BPF**.
