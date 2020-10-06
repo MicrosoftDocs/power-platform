@@ -1,12 +1,13 @@
 ---
 title: "Common Data Service and model-driven apps activity logging  | MicrosoftDocs"
 description: Learn how to enable auditing to be used for reports in the Microsoft 365 Security Compliance Center.
-author: jimholtz
+author: pnghub
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/08/2020
-ms.author: jimholtz 
+ms.author: gned
+ms.reviewer: jimholtz 
 search.audienceType: 
   - admin
 search.app:
