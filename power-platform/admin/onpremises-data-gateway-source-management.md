@@ -47,18 +47,14 @@ Select a data source and then select **Settings** to see the following informat
 
 ## Manage users
 
-<!-- 
-Select a data source and then select **Manage Users** to see the list of current data source users. These users can use this data source in published reports and dataflows. Currently you cannot add but can remove users.​ 
--->
+Select a data source and then select **Manage Users** to see the list of current data source users. These users can use this data source in published reports and data flows. Currently you cannot add but can remove users.​ 
 
-Select the **People** icon (![Select People](media/people.png)) next to the data source name to see the list of data source users. Add or remove data source admins in the **Manage Users** page.
 
 ## Remove data source
 
-Use **Remove** to remove a data source. This operation is available for data gateways in standard mode as well as personal mode.
+Use **Remove** to remove a data source. 
 
-> [!div class="mx-imgBorder"] 
-> ![Remove gateway cluster](media/data-gateways-remove.png "Remove gateway cluster")
+need image
 
 ## Data source status
 
@@ -66,26 +62,9 @@ Select a data source, then select **Details** > **Check status** (![Data source 
 
 need image
 
-Use **Remove** to remove a gateway cluster. This operation is available for data gateways in standard mode as well as personal mode.
-
-> [!div class="mx-imgBorder"] 
-> ![Remove gateway cluster](media/data-gateways-remove.png "Remove gateway cluster")
-
-For more information, see [Remove or delete an on-premises data gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-manage#remove-or-delete-an-on-premises-data-gateway).
-
 ## Search
 
-Use **Search** to find gateway clusters and see their details. You can search for gateway cluster names and contact info, but not administrators.
-
-> [!div class="mx-imgBorder"] 
-> ![Search](media/manage-search.png "Search")
-
-## Manage gateways by region
-
-Select the region drop-down to see the list of gateway regions. When you select one of the regions, you'll see a list of gateways installed in that region. You can manage users or view gateway members for these gateways. By default, you'll see gateways within your tenant's default region.
-
-> [!div class="mx-imgBorder"] 
-> ![Manage by gateway region](media/manage-gateway-by-region.png "Manage by gateway region")
+Use **Search** to find data sources. need info
 
 ## Get Help
 For faster troubleshooting and assistance, select **Get help** to open a Get Help panel. Include the session ID in a customer support ticket for any issues on the Data Gateways feature in the Power Platform admin center.

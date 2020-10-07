@@ -28,6 +28,24 @@ search.app:
 - **Status**: Select (![Check status](media/gateway-status.png "Check status")) to check the status of a gateway member.
 - **Gateways**: The number of gateway members in the gateway cluster.
 
+## Details
+
+Select a gateway cluster and then select **Details** to see the following information on gateway members.
+
+> [!div class="mx-imgBorder"] 
+> ![Gateway details](media/data-gateways-details.png "Gateway details")
+
+> [!div class="mx-imgBorder"] 
+> ![Gateway member details](media/data-gateways-member-details.png "Gateway member details")
+
+- **Gateway name**: The name of the gateway member.
+- **Device name**: The physical device on which the gateway is installed.
+- **Version**: The gateway software version installed on the machine.
+- **Status**: Select (![Gateway status](media/gateway-status.png "Gateway status")) to check the status of a gateway member.
+- **State**: Select to enable or disable a gateway member.
+
+After selecting a gateway member, you can select **Remove** to remove it. This does not uninstall the gateway from the physical machine but removes all the metadata regarding the gateway.
+
 ## Gateway cluster settings
 
 Use **Settings** to set on-premises data gateway settings such as the gateway cluster name, department, General settings and Power BI settings. 
@@ -46,15 +64,11 @@ For more information on **Distribute requests across all active gateways in this
 
 ## Manage users
 
-<!-- 
-Select a data source and then select **Manage Users** to see the list of current data source users. These users can use this data source in published reports and dataflows. Currently you cannot add but can remove users.​ 
--->
-
-Select the **People** icon (![Select People](media/people.png)) next to the gateway cluster name to see the list of gateway users. Add or remove gateway admins in the **Manage Users** page.
+Select a gateway cluster and then select **Manage Users** to see the list of gateway users. Add or remove gateway admins in the **Manage Users** page.
 
 For personal gateways, this would show the owner of the personal gateway and cannot be changed due to the security scope of personal gateways.
 
-For on-Premises data gateway in standard mode, users can be added in any of the following three categories. 
+For on-premises data gateway in standard mode, users can be added in any of the following three categories. 
  
 - **Admin**: 
   - **Power BI**: Administrators have full control of the gateway, including adding other admins, creating data sources, managing data source users, and deleting the gateway. 
@@ -70,4 +84,37 @@ For on-Premises data gateway in standard mode, users can be added in any of the 
 
 > [!div class="mx-imgBorder"] 
 > ![Manage users](media/manage-gateway-users.png "Manage users")
+
+## Remove
+
+Use **Remove** to remove a gateway cluster. This operation is available for data gateways in standard mode as well as personal mode.
+
+> [!div class="mx-imgBorder"] 
+> ![Remove gateway cluster](media/data-gateways-remove.png "Remove gateway cluster")
+
+For more information, see [Remove or delete an on-premises data gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-manage#remove-or-delete-an-on-premises-data-gateway).
+
+## Search
+
+Use **Search** to find gateway clusters and see their details. You can search for gateway cluster names and contact info, but not administrators.
+
+> [!div class="mx-imgBorder"] 
+> ![Search](media/manage-search.png "Search")
+
+## Manage gateways by region
+
+Select the region drop-down to see the list of gateway regions. When you select one of the regions, you'll see a list of gateways installed in that region. You can manage users or view gateway members for these gateways. By default, you'll see gateways within your tenant's default region.
+
+> [!div class="mx-imgBorder"] 
+> ![Manage by gateway region](media/manage-gateway-by-region.png "Manage by gateway region")
+
+## Get Help
+For faster troubleshooting and assistance, select **Get help** to open a Get Help panel. Include the session ID in a customer support ticket for any issues on the Data Gateways feature in the Power Platform admin center.
+
+> [!div class="mx-imgBorder"] 
+> ![Get help](media/get-help.png "Get help")
+
+### See also
+ [On-premises data gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-onprem)<br/>
+ [Connecting to on-premises data sources with On-premises Data Gateway](https://docs.microsoft.com/azure/analysis-services/analysis-services-gateway)<br/>
 
