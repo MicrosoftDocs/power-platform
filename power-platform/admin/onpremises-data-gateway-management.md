@@ -132,6 +132,10 @@ Select a gateway cluster, then select **Details** > **Check status** (![Gateway 
 
 ## Manage users
 
+<!-- 
+Select a data source and then select **Manage Users** to see the list of current data source users. These users can use this data source in published reports and dataflows. Currently you cannot add but can remove users.​ 
+-->
+
 Select the **People** icon (![Select People](media/people.png)) next to the gateway cluster name to see the list of gateway users. Add or remove gateway admins in the **Manage Users** page.
 
 For personal gateways, this would show the owner of the personal gateway and cannot be changed due to the security scope of personal gateways.
