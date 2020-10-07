@@ -19,6 +19,8 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
+In the **Data** page of the Power Platform admin center (https://admin.powerplatform.microsoft.com), you can view and manage gateway clusters.
+
 > [!div class="mx-imgBorder"] 
 > ![Gateway clusters tab](media/data-gateways-tenant-admin-off-gwcluster.png "Gateway clusters tab")
 
