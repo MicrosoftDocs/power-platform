@@ -51,27 +51,10 @@ Set tenant administration to off to see data source and gateway cluster details.
 
 ### Data sources tab
 
-The on-premises data sources visible here include all on-prem data source definitions on gateways you are administrator of. The cloud data sources shown here are cloud connections in your published Power BI reports. In addition, you can review the following information about these data sources:​
 
-> [!div class="mx-imgBorder"] 
-> ![Data sources tab](media/data-gateways-tenant-admin-off-data-sources.png "Data sources tab")
-
-- **Data source name**: The name of the data source.
-- **Data source type**: The type of the data source. For supported data sources, see [Power BI data sources](https://docs.microsoft.com/power-bi/connect-data/power-bi-data-sources).
-- **Users**: Users who can use this data source in data sets and data flows.
-- **Status**: Select (![Check status](media/gateway-status.png "Check status")) to check the status of a gateway member.
-- **Gateway cluster name**: The gateway cluster on which this data source was created. If it is a cloud data source, this value will say “Cloud”.
 
 ### Gateway clusters tab
 
-> [!div class="mx-imgBorder"] 
-> ![Gateway clusters tab](media/data-gateways-tenant-admin-off-gwcluster.png "Gateway clusters tab")
-
-- **Gateway cluster name**: The name of the gateway cluster.
-- **Contact info**: Admin contact information for the gateway cluster. 
-- **Users**: The list of gateway users.
-- **Status**: Select (![Check status](media/gateway-status.png "Check status")) to check the status of a gateway member.
-- **Gateways**: The number of gateway members in the gateway cluster.
 
 ## Details
 
@@ -91,36 +74,9 @@ Select a gateway cluster and then select **Details** to see the following inform
 
 After selecting a gateway member, you can select **Remove** to remove it. This does not uninstall the gateway from the physical machine but removes all the metadata regarding the gateway.
 
-## Data source settings
 
-Select a data source and then select **Settings** to see the following information. This view is currently read-only. ​
 
-> [!div class="mx-imgBorder"] 
-> ![Data gateway settings tab](media/data-gateways-settings-tab.png "Data gateway settings tab")
 
-> [!div class="mx-imgBorder"] 
-> ![Data source settings](media/data-gateways-data-source-settings.png "Data source settings")
-
-- **Data source name**: The name of the data source.
-- **Data source type**: The type of the data source. For supported data sources, see [Power BI data sources](https://docs.microsoft.com/power-bi/connect-data/power-bi-data-sources).
-- **Connection Details**: Connection information. Check back for updated information.
-- **Authentication method**: The authentication method chosen for this connection.​
-
-## Gateway cluster settings
-
-Use **Settings** to set on-premises data gateway settings such as the gateway cluster name, department, General settings and Power BI settings. 
-
-> [!div class="mx-imgBorder"] 
-> ![Data gateway settings tab](media/data-gateways-settings-tab.png "Data gateway settings tab")
-
-> [!div class="mx-imgBorder"] 
-> ![Data gateway settings](media/data-gateways-settings.png "Data gateway settings")
-
-For more information on **Allow user's cloud datasources to refresh through this gateway cluster**, see [Merge or append on-premises and cloud data sources](https://go.microsoft.com/fwlink/p/?linkid=2005525).
-
-For more information on **Allow user's custom data connectors to refresh through this gateway cluster**, see [Use custom data connectors with the on-premises data gateway](https://docs.microsoft.com/power-bi/service-gateway-custom-connectors).
-
-For more information on **Distribute requests across all active gateways in this cluster**, see [Load balance across gateways in a cluster](https://docs.microsoft.com/data-integration/gateway/service-gateway-high-availability-clusters#load-balance-across-gateways-in-a-cluster).
 
 ## Status
 
