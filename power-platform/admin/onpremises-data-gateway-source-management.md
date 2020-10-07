@@ -52,7 +52,7 @@ Select a data source and then select **Settings** to see the following informat
 
 Select a data source and then select **Manage Users** to see the list of current data source users. These users can use this data source in published reports and data flows. Currently, you can remove users but not add users.​ 
 
-## Remove data source
+## Remove a data source
 
 Select a data source and then select **Remove** to remove the data source. 
 

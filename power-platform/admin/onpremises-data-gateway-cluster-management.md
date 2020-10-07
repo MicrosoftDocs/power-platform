@@ -85,21 +85,20 @@ For on-premises data gateway in standard mode, users can be added in any of the 
 > [!div class="mx-imgBorder"] 
 > ![Manage users](media/manage-gateway-users.png "Manage users")
 
-## Remove
+## Remove a gateway cluster
 
-Use **Remove** to remove a gateway cluster. This operation is available for data gateways in standard mode as well as personal mode.
+Select **Remove** to remove a gateway cluster. This operation is available for data gateways in standard mode as well as personal mode.
 
 > [!div class="mx-imgBorder"] 
 > ![Remove gateway cluster](media/data-gateways-remove.png "Remove gateway cluster")
 
 For more information, see [Remove or delete an on-premises data gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-manage#remove-or-delete-an-on-premises-data-gateway).
 
-## Search
-
-Use **Search** to find gateway clusters and see their details. You can search for gateway cluster names and contact info, but not administrators.
+## Get Help
+For faster troubleshooting and assistance, select **Get help** to open a Get Help panel. Include the session ID in a customer support ticket for any issues on the Data Gateways feature in the Power Platform admin center.
 
 > [!div class="mx-imgBorder"] 
-> ![Search](media/manage-search.png "Search")
+> ![Get help](media/get-help.png "Get help")
 
 ## Manage gateways by region
 
@@ -108,11 +107,19 @@ Select the region drop-down to see the list of gateway regions. When you select 
 > [!div class="mx-imgBorder"] 
 > ![Manage by gateway region](media/manage-gateway-by-region.png "Manage by gateway region")
 
-## Get Help
-For faster troubleshooting and assistance, select **Get help** to open a Get Help panel. Include the session ID in a customer support ticket for any issues on the Data Gateways feature in the Power Platform admin center.
+## Filter by gateway type
+
+Select the gateway type drop-down to filter by gateway type. By default, you'll see all data gateways running in standard mode. Use the filter to see data gateways in personal mode or all gateways. For more information, see [Types of gateways](https://docs.microsoft.com/power-bi/service-gateway-onprem#types-of-gateways).
 
 > [!div class="mx-imgBorder"] 
-> ![Get help](media/get-help.png "Get help")
+> ![Filter by type](media/filter-by-type.png "Filter by type")
+
+## Search
+
+Select **Search** to find gateway clusters and see their details. You can search for gateway cluster names and contact info, but not administrators.
+
+> [!div class="mx-imgBorder"] 
+> ![Search](media/manage-search.png "Search")
 
 ### See also
  [On-premises data gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-onprem)<br/>

@@ -112,7 +112,7 @@ For on-Premises data gateway in standard mode, users can be added in any of the 
 > [!div class="mx-imgBorder"] 
 > ![Manage users](media/manage-gateway-users.png "Manage users")
 
-## Remove
+## Remove a gateway cluster
 
 Use **Remove** to remove a gateway cluster. This operation is available for data gateways in standard mode as well as personal mode.
 
