@@ -25,6 +25,10 @@ Administrators and IT professionals should use this information to prepare for f
 > "Deprecated" means we intend to remove the feature or capability from a future major release. The feature or capability will continue to work and is fully supported until it is officially removed. This deprecation
 notification can span a few years. After removal, the feature or capability will no longer work. We are notifying you now so you have sufficient time to plan and update your code before the feature or capability is removed.
 
+## Automatic record creation rules and SLA items in web client are deprecated
+
+Effective from October 01, 2020, the automatic record creation and update rules and service-level agreements (SLAs) have been deprecated in the web client. For more information, see [Deprecations in Customer Service](https://go.microsoft.com/fwlink/p/?linkid=2145032).
+
 ## TimeZoneRule entity and some attributes of TimeZoneDefinition entity are deprecated
 
 Effective September 24, 2020, the **TimeZoneRule** entity and the **Bias** and **RetiredOrder** attributes of the **TimeZoneDefinition** entity are deprecated and will be removed in a future release. For all client-side time zone calculations, use the [LocalTimeFromUtcTime](https://docs.microsoft.com/dynamics365/customer-engagement/web-api/localtimefromutctime) and [UtcTimeFromLocalTime](https://docs.microsoft.com/dynamics365/customer-engagement/web-api/utctimefromlocaltime) functions in Web API or the [TimeZoneInfo](https://docs.microsoft.com/dotnet/api/system.timezoneinfo) class in the .NET framework. More information: [Blog: Deprecation of time zone entities in Common Data Service](https://powerapps.microsoft.com/blog/deprecation-of-time-zone-entities-in-common-data-service/) 
