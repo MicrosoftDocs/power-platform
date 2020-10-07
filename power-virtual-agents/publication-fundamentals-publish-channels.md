@@ -90,7 +90,9 @@ Different channels have different end-user experiences. The following table show
  [Markdown](https://daringfireball.net/projects/markdown/) | Supported | Supported | [Partially supported](https://www.facebook.com/help/147348452522644?helpref=related)
  [Welcome message](authoring-create-edit-topics.md#insert-nodes) | Supported | Supported | Not supported
 
-[1]: [Dynamics Omnichannel for Customer Service](https://docs.microsoft.com/dynamics365/omnichannel/omnichannel-customer-service-guide) has the same experience as Microsoft Teams when integrated with a Power Virtual Agents bot .  
+[1]: https://docs.microsoft.com/dynamics365/omnichannel/omnichannel-customer-service-guide
+
+[Dynamics Omnichannel for Customer Service](#) has the same experience as Microsoft Teams when integrated with a Power Virtual Agents bot .  
 
  ## In this section
 
