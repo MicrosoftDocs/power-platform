@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/06/2020
+ms.date: 10/08/2020
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -19,7 +19,9 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-In the **Data** page of the Power Platform admin center (https://admin.powerplatform.microsoft.com), you can view and manage Power BI cloud and on-premises data sources. The on-premises data sources on this page include all on-premises data source definitions for gateways you administer. The cloud data sources on this page are cloud connections in your published Power BI reports.
+In the **Data** page of the Power Platform admin center (https://admin.powerplatform.microsoft.com), you can view and manage Power BI cloud and on-premises data sources and gateway clusters. The on-premises data sources on this page include all on-premises data source definitions for gateways you administer. The cloud data sources on this page are cloud connections in your published Power BI reports.
+
+This article describes managing data sources. For information on managing gateway clusters, see [Preview: On-premises data gateway management](onpremises-data-gateway-management.md).
 
 > [!NOTE]
 > Data sources tab will not be available when **Tenant Administration** is turned on.​
@@ -52,9 +54,16 @@ Select a data source and then select **Settings** to see the following informat
 
 Select a data source and then select **Manage Users** to see the list of current data source users. These users can use this data source in published reports and data flows. Currently, you can remove users but not add users.​ 
 
+> [!div class="mx-imgBorder"] 
+> ![Manage users for data source](media/data-gateways-source-manage-users.png "Manage users for data source")
+
+
 ## Remove a data source
 
 Select a data source and then select **Remove** to remove the data source. 
+
+> [!div class="mx-imgBorder"] 
+> ![Remove a data source](media/data-gateways-remove-data-source.png "Remove a data source")
 
 ## Get Help
 For faster troubleshooting and assistance, select **Get help** to open a Get Help panel. Include the session ID in a customer support ticket for any issues on the Data Gateways feature in the Power Platform admin center.
@@ -62,12 +71,11 @@ For faster troubleshooting and assistance, select **Get help** to open a Get Hel
 > [!div class="mx-imgBorder"] 
 > ![Get help](media/get-help.png "Get help")
 
-## Manage gateways by region
+## Gateways by region
+
+Currently, data sources are only available for the default Power BI region. For other regions, you will not see any data sources
 
 Select the region drop-down to see the list of gateway regions. When you select one of the regions, you'll see a list of gateways installed in that region. You can manage users or view gateway members for these gateways. By default, you'll see gateways within your tenant's default region.
-
-> [!div class="mx-imgBorder"] 
-> ![Manage by gateway region](media/manage-gateway-by-region.png "Manage by gateway region")
 
 ## Search
 

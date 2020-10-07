@@ -21,7 +21,7 @@ search.app:
 
 The On-premises data gateway acts as a bridge, providing quick and secure data transfer between on-premises data (data that is not in the cloud) and the Power BI, Power Automate, Logic Apps, and Power Apps services. More information: [What is an on-premises data gateway?](https://docs.microsoft.com/data-integration/gateway/service-gateway-onprem)
 
-You can use the Power Platform admin center to get visibility into all on-premises data gateways in a tenant. To do so, sign in as a Power Platform service admin and select the **Data Gateway** option.
+You can use the Power Platform admin center to get visibility into all on-premises data gateways in a tenant. To do so, sign in as a Power Platform service admin and select the **Data** option.
 
 Users who are part of the Azure AD Global administrator role (which includes Global admins), Power BI service administrators, and Gateway administrators will have access to Data Gateway management on the Power Platform admin center. There may however be differences in the features available and the operations which can be performed by each of these roles.
 
@@ -38,7 +38,7 @@ When tenant administration is on, the **Data** page lists all on-premises data g
 - **Status**: Select **Check status** to see whether the gateway connection is online or offline.
 - **Gateways**: The number of gateway members in the gateway cluster.
 
-The gateway cluster list includes both On-premises data gateways and On-premises data gateways (personal mode).
+The gateway cluster list includes both on-premises data gateways and On-premises data gateways (personal mode).
 
 > [!div class="mx-imgBorder"] 
 > ![On-premises gateway page](media/onprem-gateway-manage780.png "On-premises gateway page")
