@@ -46,7 +46,6 @@ The gateway cluster list includes both On-premises data gateways and On-premises
 > [!div class="mx-imgBorder"] 
 > ![On-premises gateway page](media/onprem-gateway-manage780.png "On-premises gateway page")
 
-
 ## Tenant administration off
 
 Set tenant administration to off to see data source and gateway cluster details.
@@ -58,14 +57,11 @@ The on-premises data sources visible here include all on-prem data source defini
 > [!div class="mx-imgBorder"] 
 > ![Data sources tab](media/data-gateways-tenant-admin-off-data-sources.png "Data sources tab")
 
-
-
 - **Data source name**: The name of the data source.
 - **Data source type**: The type of the data source. For supported data sources, see [Power BI data sources](https://docs.microsoft.com/power-bi/connect-data/power-bi-data-sources).
 - **Users**: Users who can use this data source in data sets and data flows.
 - **Status**: Select (![Check status](media/gateway-status.png "Check status")) to check the status of a gateway member.
 - **Gateway cluster name**: The gateway cluster on which this data source was created. If it is a cloud data source, this value will say “Cloud”.
-
 
 ### Gateway clusters tab
 
@@ -103,14 +99,10 @@ Select a data source and then select Settings to see the following information.
 > [!div class="mx-imgBorder"] 
 > ![Data source settings](media/data-gateways-data-source-settings.png "Data source settings")
 
-
-Data source name:  Name of the data source​
-
-Data source type: Type of the data source. More information regarding the list of  supported data sources.  ​
-
-Connection Details: Connection Information. We plan to expand this in the future like you see in the “Managed gateways” page in Power BI​
-
-Authentication method: The authentication method chosen for this connection.​
+- **Data source name**: The name of the data source.
+- **Data source type**: The type of the data source. For supported data sources, see [Power BI data sources](https://docs.microsoft.com/power-bi/connect-data/power-bi-data-sources).
+- **Connection Details**: Connection information. Check back for updated information.
+- **Authentication method**: The authentication method chosen for this connection.​
 
 ## Gateway cluster settings
 
