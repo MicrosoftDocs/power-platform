@@ -63,7 +63,7 @@ The on-premises data sources visible here include all on-prem data source defini
 - **Data source name**: The name of the data source.
 - **Data source type**: The type of the data source. For supported data sources, see [Power BI data sources](https://docs.microsoft.com/power-bi/connect-data/power-bi-data-sources).
 - **Users**: Users who can use this data source in data sets and data flows.
-- **Status**: Select **Check status** to see whether the gateway connection is online or offline.
+- **Status**: Select (![Check status](media/gateway-status.png "Check status")) to check the status of a gateway member.
 - **Gateway cluster name**: The gateway cluster on which this data source was created. If it is a cloud data source, this value will say “Cloud”.
 
 
@@ -75,7 +75,7 @@ The on-premises data sources visible here include all on-prem data source defini
 - **Gateway cluster name**: The name of the gateway cluster.
 - **Contact info**: Admin contact information for the gateway cluster. 
 - **Users**: The list of gateway users.
-- **Status**: Select **Check status** to see whether the gateway connection is online or offline.
+- **Status**: Select (![Check status](media/gateway-status.png "Check status")) to check the status of a gateway member.
 - **Gateways**: The number of gateway members in the gateway cluster.
 
 ## Details
