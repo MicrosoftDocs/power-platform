@@ -94,7 +94,10 @@ After selecting a gateway member, you can select **Remove** to remove it. This d
 
 ## Data source settings
 
-Select a data source and then select Settings to see the following information. This view is currently read-only. ​
+Select a data source and then select **Settings** to see the following information. This view is currently read-only. ​
+
+> [!div class="mx-imgBorder"] 
+> ![Data gateway settings tab](media/data-gateways-settings-tab.png "Data gateway settings tab")
 
 > [!div class="mx-imgBorder"] 
 > ![Data source settings](media/data-gateways-data-source-settings.png "Data source settings")
