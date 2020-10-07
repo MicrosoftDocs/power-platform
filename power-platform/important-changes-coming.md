@@ -1,7 +1,7 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps"
 description: Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps 
-ms.date: 09/24/2020
+ms.date: 10/07/2020
 ms.topic: "article"
 ms.assetid: 994cc854-17f6-45d6-bc20-fcf1a3f2d6d6
 searchScope:
@@ -305,19 +305,6 @@ Microsoft will continue to provide security and other critical updates to the Dy
 
 If you are currently using the Dynamics 365 for Blackberry App together with Mobile Application Management for Blackberry, plan to migrate to Dynamics 365 for phones by October 31, 2019. We encourage you to migrate as soon as possible to take advantage of Microsoft's ongoing investments in the reliability, performance, and functionality of the Dynamics 365 mobile app.
 
-
-Service scheduling in Dynamics 365 Customer Service is deprecated
----------------------------------------------------------------------
-
-The existing service scheduling functionality is deprecated, and will no longer be available on December 1, 2020. The new scheduling experience, built on Universal Resource Scheduling (URS), is now available in the Unified Interface.
-
-Existing service scheduling users will be provided advance notice for a timebound migration to the new scheduling capabilities.
-
-There are two approaches to migrate to the scheduling experience:
-- Follow the guidance in the [Service Scheduling Guide](/dynamics365/customer-engagement/customer-service/basics-service-service-scheduling) to set up the new scheduling experience for an existing Dynamics 365 Customer Service organization.
-
-- If your organization requires features that rely on legacy APIs, the product team is offering an incremental migration option and will update your organization to the Unified Interface experience while continuing to allow the use of the legacy APIs. This approach is available in 2020 release wave 2 with Eary Access in August, 2020.
-
 Usage of Parature knowledgebase as the knowledge management solution is deprecated
 -----------------------------------------------------------------------------------------------
 
@@ -338,21 +325,6 @@ associated legacy Project Service Automation releases in accordance with
 Microsoft's [Modern Lifecycle
 Policy](https://support.microsoft.com/help/30881). The functionality
 available through this app will be available in a future release of Dynamics 365 Project Service Automation application.
-
-Contracts, Contract Line Items, and Contract Templates entities are deprecated
-------------------------------------------------------------------------------
-
-The Contracts, Contract Line Items, and Contract Templates entities are
-deprecated and will be removed in a future major release. This
-functionality has been replaced by entitlements in Dynamics 365 Customer
-Service.
-
-Standard SLAs in Dynamics 365 Customer Service are deprecated
------------------------------------------------------------------
-
-Standard service level agreements (**SLA Type** field is set to **Standard**)
-are deprecated and will be removed in a future major release.
-Standard SLAs are replaced by enhanced SLAs. More information: [Enhanced service level agreements](https://technet.microsoft.com/library/dn887187.aspx)
 
 Relationship Roles are deprecated
 ---------------------------------
