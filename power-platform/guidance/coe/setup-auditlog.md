@@ -173,7 +173,7 @@ A Power Automate flow uses the custom connector, queries the audit log daily, an
 1. Paste in the ID you copied for directory (tenant) ID for the Tenant ID Environment Variable.
     ![Set Environment Variables for the Center of Excellence - Audit Log components solution](media/coe-custom3.png "Set Environment Variables for the Center of Excellence - Audit Log components solution")
 
-1. Open the **Center of Excellence – Audit Log solution**, and select the **Admin \| [Child] Admin | Sync Logs**. 
+1. Open the **Center of Excellence – Audit Log solution**, and select the **[Child] Admin | Sync Logs**. 
 
 1. Edit the **Run only users** settings.
 
