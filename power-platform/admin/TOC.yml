@@ -566,12 +566,14 @@
         href: data-integrator.md
       - name: Data Integrator Error management and troubleshooting 
         href: data-integrator-error-management.md
-    - name: Data gateways
+    - name: Data sources and gateway clusters
       items: 
       - name: "Preview: About on-premises gateway"
         href: wp-onpremises-gateway.md
       - name: "Preview: On-premises data gateway management"
         href: onpremises-data-gateway-management.md
+      - name: "Preview: Data source management"
+        href: onpremises-data-gateway-source-management.md
     - name: Manage data
       items: 
       - name: Add or remove sample data 
