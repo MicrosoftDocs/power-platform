@@ -17,110 +17,72 @@ search.app:
 ---
 # Detect duplicates records and merge
 
-Duplicate records can creep into your data when you or others enter data
-manually or import data in bulk. Common Data Service helps you address potential
-duplicates by detecting duplicates for active records such as accounts and
-contacts.
+Duplicate records can creep into your data when you or others enter data manually or import data in bulk. Common Data Service helps you address potential duplicates by detecting duplicates for active records such as accounts and contacts.
 
-After you know there are duplicate records, you can merge the duplicates and
-retain the record you want. When you merge a record, any related or child
-records are also merged. Your administrator may also set up duplicate detection
-rules so duplicates are detected at the time of entering or updating records or
-importing records.
+After you know there are duplicate records, you can merge the duplicates and retain the record you want. When you merge a record, any related or child records are also merged. Your administrator may also set up duplicate detection rules so duplicates are detected at the time of entering or updating records or importing records.
 
-[Note: The new experience of detecting duplicates and merging them is supported
-when duplicates are detected while manually entering data in the app and not
-during import.]
+> [!NOTE]
+> The new experience of detecting duplicates and merging them is supported when duplicates are detected while manually entering data in the app and not during import.
 
 ## Resolve duplicates when creating or updating records
 
-When duplicates are found while you create or update records, you can either
-ignore the duplicate detection dialog box and save the record or you can merge
-the duplicate records to keep your data clean.
+When duplicates are found while you create or update records, you can either ignore the duplicate detection dialog box and save the record or you can merge the duplicate records to keep your data clean.
 
-[Note: The Merge option is available only for Account, Lead, and Contact
-entities.]
+> [!NOTE]
+> The Merge option is available only for Account, Lead, and Contact entities.
 
-When saving a new record or updated records, a **Duplicate records found**
-dialog box is shown if duplicates are found based on the duplicate detection
-rules set up for your organization. More information: [Set up duplicate
-detection rules to keep your data
-clean](https://docs.microsoft.com/en-us/power-platform/admin/set-up-duplicate-detection-rules-keep-data-clean)
+When saving a new record or updated records, a **Duplicate records found** dialog box is shown if duplicates are found based on the duplicate detection rules set up for your organization. More information: [Set up duplicate detection rules to keep your data clean](https://docs.microsoft.com/en-us/power-platform/admin/set-up-duplicate-detection-rules-keep-data-clean)
 
-![](media/4e1cd5d68998f86968ebb07936974480.png)
+> [!div class="mx-imgBorder"] 
+> ![Duplicate records found](media/duplicate-records-found.png "Duplicate records found")
 
 The dialog box shows the following details:
 
--   The **Current record** section of the dialog box shows the record that’s
-    being created or updated.
+- The **Current record** section of the dialog box shows the record that’s being created or updated.
 
--   The **Duplicates found** section shows the number of duplicate records found
-    along with the record type.
+- The **Duplicates found** section shows the number of duplicate records found along with the record type.
 
--   The **Matched records** section shows the possible duplicate records.
+- The **Matched records** section shows the possible duplicate records.
 
-The columns in the grids are shown dynamically based on the duplicate detection
-rule, so that you see relevant information to identify why a record was
-considered as a duplicate. For example, based on the rule, if two accounts are
-found to be duplicate because of same account name and email address, **Account
-Name** and **Email** columns are shown in the grid.
+The columns in the grids are shown dynamically based on the duplicate detection rule, so that you see relevant information to identify why a record was
+considered as a duplicate. For example, based on the rule, if two accounts are found to be duplicate because of same account name and email address, **Account Name** and **Email** columns are shown in the grid.
 
-# [Note: If the duplicate detection rule is not set to exclude inactive records, both active and inactive records are considered while detecting duplicates. More information: [Set up duplicate detection rules to keep your data clean]()
+> [!NOTE]
+> If the duplicate detection rule is not set to exclude inactive records, both active and inactive records are considered while detecting duplicates. More information: [Set up duplicate detection rules to keep your data clean](set-up-duplicate-detection-rules-keep-data-clean.md)
 
-You have an option to ignore the duplicates and save the new or updated record
-or merge the duplicate records.
+You have an option to ignore the duplicates and save the new or updated record or merge the duplicate records.
 
 -   To save the duplicate record, select **Ignore and save.**
 
     **- OR -**
 
--   To merge the duplicate records, under the **Matched records** section,
-    select the record that you want to merge, and then select **Merge**.
+-   To merge the duplicate records, under the **Matched records** section, select the record that you want to merge, and then select **Merge**.
 
 The **Merge Records** dialog box appears.
 
-![](media/a45e3c6a6f1c607af5933404e7edc84d.png)
+> [!div class="mx-imgBorder"] 
+> ![Merge accounts](media/duplicate-records-merge-accounts.png "Merge accounts")
 
-1.  In the dialog box, select the primary record.
+1. In the dialog box, select the primary record.
 
-    [Note: The option to select a primary record is available when both records
-    are existing in the system. If a duplicate is detected when a new record is
-    being saved, then the new record is always considered as the secondary
-    record.]
+   > [!NOTE]
+   > The option to select a primary record is available when both records are existing in the system. If a duplicate is detected when a new record is being saved, then the new record is always considered as the secondary record.
 
-    The primary record is kept, and the secondary record is deactivated. Data
-    from the secondary record is copied over to the primary record. When you
-    select a primary record, by default, all the fields of the primary records
-    are selected. This means that the data in these selected fields will be
-    retained. You have an option to choose the fields from secondary record,
-    too. When you do that, data from the selected fields of the secondary record
-    is copied over to the primary record and kept. All notes, activities, and
-    details associated with the secondary record are linked to the primary
-    record.
+   The primary record is kept, and the secondary record is deactivated. Data from the secondary record is copied over to the primary record. When you select a primary record, by default, all the fields of the primary records are selected. This means that the data in these selected fields will be retained. You have an option to choose the fields from secondary record, too. When you do that, data from the selected fields of the secondary record is copied over to the primary record and kept. All notes, activities, and details associated with the secondary record are linked to the primary record.
 
-2.  Use the following options to select the fields for which whose data must be
-    retained, and select **OK**:
+2. Use the following options to select the fields for which whose data must be retained, and select **OK**:
 
--   **Merge records by choosing fields with data:** When you select this, all
-    the fields that have data are selected regardless of whether the data is in
-    the primary record or secondary record. If both primary and secondary
-    records have data in the same fields, the fields of primary record are
-    selected.
+- **Merge records by choosing fields with data:** When you select this, all the fields that have data are selected regardless of whether the data is in the primary record or secondary record. If both primary and secondary records have data in the same fields, the fields of primary record are selected.
 
--   **View fields with conflicting data:** When you select this, only the fields
-    that have conflicting data are shown so you can quickly select the fields
-    from which you want to retain data. This is particularly useful when there’s
-    data in multiple fields and you only want to look at data that’s different
-    in the two records. This option is selected by default.
+- **View fields with conflicting data:** When you select this, only the fields that have conflicting data are shown so you can quickly select the fields from which you want to retain data. This is particularly useful when there’s data in multiple fields and you only want to look at data that’s different in the two records. This option is selected by default.
 
--   **Select all fields in this section.** When you select this, all fields
-    available in that section of a record are selected so you don’t have to
-    manually select the fields in that section. It works as a ‘Select all’
-    option for fields in a section.
+- **Select all fields in this section.** When you select this, all fields available in that section of a record are selected so you don’t have to manually select the fields in that section. It works as a ‘Select all’ option for fields in a section.
 
-    ![](media/eded6b752f80c94a474ca0ccb1c0e852.png)
+  > [!div class="mx-imgBorder"] 
+  > ![Select all fields](media/duplicate-records-select-all-fields.png "Select all fields")
 
-# [Note: You can’t merge data into an inactive record. ]
+  > [!NOTE]
+  > You can’t merge data into an inactive record.
 
 ## Merge records from a grid
 
@@ -128,79 +90,61 @@ You can merge two lead, account, or contact records.
 
 To merge two records:
 
-In the list of accounts, contacts, or leads, select two records of the same
-record type, and on the command bar, select **Merge**.
+In the list of accounts, contacts, or leads, select two records of the same record type, and on the command bar, select **Merge**.
 
-![](media/d8cccd93f3218704274d5abdedf76c5d.png)
+> [!div class="mx-imgBorder"] 
+> ![Merge contacts](media/duplicate-records-merge-contacts.png "Merge contacts")
 
-Follow the instructions from the **Resolve duplicates when creating or updating
-records** section of this topic.
+Follow the instructions from the **Resolve duplicates when creating or updating records** section of this topic.
 
 ## Enable the improved duplicate detection and merge experience
 
-To let users in your organization use the improved duplicate detection and merge
-experience, you must first enable it.
+To let users in your organization use the improved duplicate detection and merge experience, you must first enable it.
 
 To enable:
 
-1.  In your app, on the nav bar, select the **Settings** icon, and then select
-    **Advanced Settings**.
+1.  In your app, on the nav bar, select the **Settings** icon, and then select **Advanced Settings**.
 
     The Business Management settings page opens in a new browser tab.
 
-2.  On the nav bar, select **Settings \> Data Management** \> **Duplicate
-    Detection Settings**.
+2.  On the nav bar, select **Settings \> Data Management** \> **Duplicate Detection Settings**.
 
 OR
 
-In Power Platform admin center, select **Environments** \> **Settings** \>
-**Data Management** \> **Duplicate Detection Settings**.
+In Power Platform admin center, select **Environments** \> **Settings** \> **Data Management** \> **Duplicate Detection Settings**.
 
-1.  For **Enable improved duplicate detection and merge experience**, select
-    **Yes,** and select **OK**.
+1. For **Enable improved duplicate detection and merge experience**, select **Yes,** and select **OK**.
 
-    ![](media/f377fa87bd78dbc223cff8adc57d0084.png)
+   > [!div class="mx-imgBorder"] 
+   > ![Duplicate detection settings](media/duplicate-records-duplicate-detection-settings.png "Duplicate detection settings")
 
 ## What happens when duplicates are found while qualifying leads?
 
-When qualifying a lead, if a duplicate account or contact is detected while
-creating new records, a duplicate warning is shown to you. Depending on whether
-or not your system administrator has enabled the improved duplicate detection
-and merge experience, you will see the options to resolve duplicates.
+When qualifying a lead, if a duplicate account or contact is detected while creating new records, a duplicate warning is shown to you. Depending on whether or not your system administrator has enabled the improved duplicate detection and merge experience, you will see the options to resolve duplicates.
 
 ### Duplicate detection when improved duplicate detection and merge experience is disabled
 
-When the improved duplicate detection experience is disabled, you will see the
-"Duplicate warning" dialog box.
+When the improved duplicate detection experience is disabled, you will see the "Duplicate warning" dialog box.
 
-![Duplicate warning while qualifying a lead](media/16eea996b4b37d1e5385aafd931fc0fa.png)
+> [!div class="mx-imgBorder"] 
+> ![Duplicate warning while qualifying a lead](media/duplicate-records-warning.png "Duplicate warning while qualifying a lead")
 
-In the **Account** and **Contact** fields, select the matching account and
-contact record and select **Continue**. To ignore the duplicate warning and
-create new records, leave the Account and Contact fields blank, and select
-**Continue**.
+In the **Account** and **Contact** fields, select the matching account and contact record and select **Continue**. To ignore the duplicate warning and create new records, leave the Account and Contact fields blank, and select **Continue**.
 
-The **Account** and **Contact** lookup fields are filtered with matched results
-and shown along with additional information to precisely identify the record to
-which the lead should be linked. For example, when you click the **Contact**
-lookup search icon, you'll see only matched contact records.
+The **Account** and **Contact** lookup fields are filtered with matched results and shown along with additional information to precisely identify the record to
+which the lead should be linked. For example, when you click the **Contact** lookup search icon, you'll see only matched contact records.
 
 ### Duplicate detection when improved duplicate detection and merge experience is enabled
 
-When the improved duplicate detection and merge experience is enabled, you will
-see the **Account or Contact may already exists** dialog box.
+When the improved duplicate detection and merge experience is enabled, you will see the **Account or Contact may already exists** dialog box.
 
 ![](media/c3614477b83ffb6a227c04c3e9a44e6d.png)
 
-In the **Matched accounts** and Matched **contacts** section, it will show all
-the matching records (based on the duplicate detection rules) along with
-additional information to precisely identify the record to which the lead should
-be linked.
+> [!div class="mx-imgBorder"] 
+> ![Records may already exist](media/duplicate-records-already-exists.png "Records may already exist")
 
-\<add a note about inactive records\>.
+In the **Matched accounts** and Matched **contacts** section, it will show all the matching records (based on the duplicate detection rules) along with additional information to precisely identify the record to which the lead should be linked.
 
-To associate the lead record to an existing matching record, select the record,
-and select **Continue**. To create a new account or contact record, select
-**Ignore and save** without selecting a matching record.
+To associate the lead record to an existing matching record, select the record, and select **Continue**. To create a new account or contact record, select **Ignore and save** without selecting a matching record.
 
 The lead is qualified.
