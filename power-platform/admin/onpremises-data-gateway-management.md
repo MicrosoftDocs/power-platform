@@ -25,7 +25,7 @@ In the **Data** page of the [Power Platform admin center](https://admin.powerpla
 
 Users who are part of the Azure AD Global administrator role (which includes Global admins), Power BI service administrators, and Gateway administrators will have access to Data Gateway management on the Power Platform admin center. There may however be differences in the features available and the operations which can be performed by each of these roles.
 
-The Azure AD Global administrator role (which includes Global admins) and Power BI service administrators can use the **Tenant administration** setting to control the list of gateways exposed.
+The Azure AD Global administrator role (which includes Global admins) and Power BI service administrators can use the **Tenant administration** setting to control the list of gateways exposed. Only these admins will see the **Tenant administration** toggle.
 
 - Turn on **Tenant administration** to see and manage all gateways installed in your enterprise.
 - Turn off **Tenant administration** to see and manage all gateways for which you are an administrator.
@@ -35,7 +35,9 @@ You can switch between these two views using this toggle in the upper-right corn
 > [!div class="mx-imgBorder"] 
 > ![Power Platform admin](media/tenant-administration.png "Power Platform admin")
 
-When **Tenant administration** is on, the **Data** page lists all on-premises data gateway clusters installed on the tenant. In addition, you can review the following information about these clusters:
+## Data gateways
+
+The **Data** page lists all on-premises data gateway clusters installed. In addition, you can review the following information about these clusters:
 
 - **Gateway cluster name**: The name of the gateway cluster.
 - **Contact info**: Admin contact information for the gateway cluster. 
@@ -46,11 +48,7 @@ When **Tenant administration** is on, the **Data** page lists all on-premises da
 The gateway cluster list includes both on-premises data gateways and on-premises data gateways (personal mode).
 
 > [!div class="mx-imgBorder"] 
-> ![On-premises gateway page](media/onprem-gateway-manage780.png "On-premises gateway page")
-
-## Tenant administration off
-
-Set **Tenant administration** to **Off** to see and manage [data sources](onpremises-data-gateway-source-management.md) and gateway clusters (this article). When **Tenant administration** is set to off, data sources and gateway clusters appear as tabs. When **Tenant administration** is set to **On**, data source management is not possible and the tabs are removed allowing for gateway cluster management only.
+> ![On-premises gateway page](media/data-gateways-two-tab-view.png "On-premises gateway page")   
 
 ## Details
 

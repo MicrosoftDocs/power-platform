@@ -24,7 +24,7 @@ In the **Data** page of the Power Platform admin center (https://admin.powerplat
 This article describes managing data sources. For information on managing gateway clusters, see [Preview: On-premises data gateway management](onpremises-data-gateway-management.md).
 
 > [!NOTE]
-> Data sources tab will not be available when **Tenant Administration** is turned on.​
+> The data sources tab will not be available for tenant or service administrators when **Tenant Administration** is turned on.​
 
 > [!div class="mx-imgBorder"] 
 > ![Data sources tab](media/data-gateways-tenant-admin-off-data-sources.png "Data sources tab")
@@ -71,14 +71,12 @@ For faster troubleshooting and assistance, select **Get help** to open a Get Hel
 > [!div class="mx-imgBorder"] 
 > ![Get help](media/get-help.png "Get help")
 
-## Gateways by region
+## Region
 
 > [!div class="mx-imgBorder"] 
 > ![Data source regions](media/data-gateways-data-source-region.png "Data source regions")
 
 Currently, data sources are only available for the default Power BI region. For other regions, you will not see any data sources.
-
-Select the region drop-down to see the list of gateway regions. When you select one of the regions, you'll see a list of gateways installed in that region. You can manage users or view gateway members for these gateways. By default, you'll see gateways within your tenant's default region.
 
 ## Search
 
