@@ -68,6 +68,10 @@ To view the **Summary** page, select **Resources** > **Capacity** > **Summary**.
 > [!div class="mx-imgBorder"] 
 > ![Capacity page Summary tab](media/storage-data-capacity-page-review.png "Capacity page Summary tab")
 
+
+All entities of Common Data Service, including system entities, are included in the storage capacity reports.
+
+
 |Number  |Description |
 |---------|---------|
 |(1)   |**Storage capacity usage**  <ul><li>**File and database**: The following entities store data in file and database storage: <ul><li>Attachment</li><li>AnnotationBase</li><li>Any custom or out-of-the-box entity that has fields of datatype file or image (full size)</li><li>Any entity that is used by one or more installed Insights applications and [ends in *- Analytics*](#what-are-entities-ending-in---analytics-in-my-capacity-report) </li> </ul></li><li>**Log**: The following entities are used: <ul><li>AuditBase</li><li>PlugInTraceLogBase</li></ul><li>**Database only**: All other entities are counted for your database</li></ul> |
