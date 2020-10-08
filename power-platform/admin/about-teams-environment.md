@@ -27,7 +27,7 @@ The Project Oakdale environment is automatically created for the selected team w
 > [!NOTE]
 > - This is a preview feature.
 > - [!INCLUDE [cc-preview-features-definition.md](../includes/cc-preview-features-definition.md)]
-> - The capability to promote Project Oakdale environments to Common Data Service won’t be available at public preview, but is expected to be available by general availability (GA).
+> - The capability to promote Project Oakdale environments to Common Data Service isn’t available during the public preview release; it will be available soon.
 
 You can identify a Project Oakdale environment in the [Power Platform admin center](https://admin.powerplatform.microsoft.com) by using the **Type** column in the list of environments.
 
@@ -246,7 +246,7 @@ As mentioned for the environment-level enforcement, any existing apps will still
 <!-- fwlink 2134779 for for a few thing to know -->
 
 > [!IMPORTANT]
-> The capability to promote Project Oakdale environments to Common Data Service won’t be available at public preview, but is expected to be available by general availability (GA).
+> The capability to promote Project Oakdale environments to Common Data Service isn’t available during the public preview release; it will be available soon.
  
 The high-level flow and business rules for promoting a Project Oakdale environment follow. 
 
