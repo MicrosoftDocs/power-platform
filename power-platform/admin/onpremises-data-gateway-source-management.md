@@ -73,13 +73,19 @@ For faster troubleshooting and assistance, select **Get help** to open a Get Hel
 
 ## Gateways by region
 
-Currently, data sources are only available for the default Power BI region. For other regions, you will not see any data sources
+> [!div class="mx-imgBorder"] 
+> ![Data source regions](media/data-gateways-data-source-region.png "Data source regions")
+
+Currently, data sources are only available for the default Power BI region. For other regions, you will not see any data sources.
 
 Select the region drop-down to see the list of gateway regions. When you select one of the regions, you'll see a list of gateways installed in that region. You can manage users or view gateway members for these gateways. By default, you'll see gateways within your tenant's default region.
 
 ## Search
 
 Select **Search** to find data sources and see their details. You currently can search on data source names, data source types, and gateway cluster names, but not users and status.​
+
+> [!div class="mx-imgBorder"] 
+> ![Search data sources](media/data-gateways-data-source-search.png "Search data sources")
 
 ## Data source status
 
