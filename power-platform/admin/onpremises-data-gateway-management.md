@@ -30,7 +30,7 @@ The Azure AD Global administrator role (which includes Global admins) and Power 
 > [!div class="mx-imgBorder"] 
 > ![Power Platform admin](media/tenant-administration.png "Power Platform admin")
 
-When tenant administration is on, the **Data** page lists all on-premises data gateway clusters installed on the tenant. In addition, you can review the following information about these clusters:
+When **Tenant administration** is on, the **Data** page lists all on-premises data gateway clusters installed on the tenant. In addition, you can review the following information about these clusters:
 
 - **Gateway cluster name**: The name of the gateway cluster.
 - **Contact info**: Admin contact information for the gateway cluster. 
@@ -45,7 +45,7 @@ The gateway cluster list includes both on-premises data gateways and On-premises
 
 ## Tenant administration off
 
-Set **Tenant administration** to off to see and manage [data sources](onpremises-data-gateway-source-management.md) and [gateway clusters](onpremises-data-gateway-cluster-management.md).
+Set **Tenant administration** to **Off** to see and manage [data sources](onpremises-data-gateway-source-management.md) and gateway clusters (this article). When **Tenant administration** is set to off, data sources and gateway clusters appear as tabs. When **Tenant administration** is set to **On**, data source management is not possible and the tabs are removed allowing for gateway cluster management only.
 
 ## Details
 
