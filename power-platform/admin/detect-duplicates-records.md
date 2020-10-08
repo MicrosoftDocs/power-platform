@@ -31,7 +31,7 @@ When duplicates are found while you create or update records, you can either ign
 > [!NOTE]
 > The Merge option is available only for Account, Lead, and Contact entities.
 
-When saving a new record or updated records, a **Duplicate records found** dialog box is shown if duplicates are found based on the duplicate detection rules set up for your organization. More information: [Set up duplicate detection rules to keep your data clean](https://docs.microsoft.com/en-us/power-platform/admin/set-up-duplicate-detection-rules-keep-data-clean)
+When saving a new record or updated records, a **Duplicate records found** dialog box is shown if duplicates are found based on the duplicate detection rules set up for your organization. More information: [Set up duplicate detection rules to keep your data clean](set-up-duplicate-detection-rules-keep-data-clean.md)
 
 > [!div class="mx-imgBorder"] 
 > ![Duplicate records found](media/duplicate-records-found.png "Duplicate records found")
