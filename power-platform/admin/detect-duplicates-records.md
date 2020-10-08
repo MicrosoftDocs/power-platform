@@ -52,11 +52,11 @@ considered as a duplicate. For example, based on the rule, if two accounts are f
 
 You have an option to ignore the duplicates and save the new or updated record or merge the duplicate records.
 
--   To save the duplicate record, select **Ignore and save.**
+- To save the duplicate record, select **Ignore and save.**
 
-    **- OR -**
+  **- OR -**
 
--   To merge the duplicate records, under the **Matched records** section, select the record that you want to merge, and then select **Merge**.
+- To merge the duplicate records, under the **Matched records** section, select the record that you want to merge, and then select **Merge**.
 
 The **Merge Records** dialog box appears.
 
@@ -72,17 +72,17 @@ The **Merge Records** dialog box appears.
 
 2. Use the following options to select the fields for which whose data must be retained, and select **OK**:
 
-- **Merge records by choosing fields with data:** When you select this, all the fields that have data are selected regardless of whether the data is in the primary record or secondary record. If both primary and secondary records have data in the same fields, the fields of primary record are selected.
+   - **Merge records by choosing fields with data:** When you select this, all the fields that have data are selected regardless of whether the data is in the primary record or secondary record. If both primary and secondary records have data in the same fields, the fields of primary record are selected.
 
-- **View fields with conflicting data:** When you select this, only the fields that have conflicting data are shown so you can quickly select the fields from which you want to retain data. This is particularly useful when there’s data in multiple fields and you only want to look at data that’s different in the two records. This option is selected by default.
+   - **View fields with conflicting data:** When you select this, only the fields that have conflicting data are shown so you can quickly select the fields from which you want to retain data. This is particularly useful when there’s data in multiple fields and you only want to look at data that’s different in the two records. This option is selected by default.
 
-- **Select all fields in this section.** When you select this, all fields available in that section of a record are selected so you don’t have to manually select the fields in that section. It works as a ‘Select all’ option for fields in a section.
+   - **Select all fields in this section.** When you select this, all fields available in that section of a record are selected so you don’t have to manually select the fields in that section. It works as a ‘Select all’ option for fields in a section.
 
-  > [!div class="mx-imgBorder"] 
-  > ![Select all fields](media/duplicate-records-select-all-fields.png "Select all fields")
+    > [!div class="mx-imgBorder"] 
+    > ![Select all fields](media/duplicate-records-select-all-fields.png "Select all fields")
 
-  > [!NOTE]
-  > You can’t merge data into an inactive record.
+    > [!NOTE]
+    > You can’t merge data into an inactive record.
 
 ## Merge records from a grid
 
@@ -103,11 +103,11 @@ To let users in your organization use the improved duplicate detection and merge
 
 To enable:
 
-1.  In your app, on the nav bar, select the **Settings** icon, and then select **Advanced Settings**.
+1. In your app, on the nav bar, select the **Settings** icon, and then select **Advanced Settings**.
 
-    The Business Management settings page opens in a new browser tab.
+   The Business Management settings page opens in a new browser tab.
 
-2.  On the nav bar, select **Settings \> Data Management** \> **Duplicate Detection Settings**.
+2. On the nav bar, select **Settings \> Data Management** \> **Duplicate Detection Settings**.
 
 OR
 
@@ -137,8 +137,6 @@ which the lead should be linked. For example, when you click the **Contact** loo
 ### Duplicate detection when improved duplicate detection and merge experience is enabled
 
 When the improved duplicate detection and merge experience is enabled, you will see the **Account or Contact may already exists** dialog box.
-
-![](media/c3614477b83ffb6a227c04c3e9a44e6d.png)
 
 > [!div class="mx-imgBorder"] 
 > ![Records may already exist](media/duplicate-records-already-exists.png "Records may already exist")
