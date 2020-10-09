@@ -5,7 +5,7 @@ author: dileepsinghmicrosoft
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/22/2020
+ms.date: 10/09/2020
 ms.author: dileeps
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -341,7 +341,8 @@ No. A limited set of Common Data Service capabilities were recently added to Mic
 > [!NOTE]
 > There is a service plan called *Common Data Service for Teams* that is related to the Project Oakdale capabilities.
 
-
+### Is geo migration supported for Project Oakdale environments?
+Geo migration is not supported for Project Oakdale environments.
 
 ## Add-ons
 
