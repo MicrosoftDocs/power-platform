@@ -65,7 +65,7 @@ You have an option to ignore the duplicates and save the new or updated record o
   The **Merge Records** dialog box appears.
 
 
-<!-- The image shows the box as "Merge accounts". Do you want to change the line above to match? -->
+  <!-- The image shows the box as "Merge accounts". Do you want to change the line above to match? -->
 
 
 
