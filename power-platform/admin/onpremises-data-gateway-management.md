@@ -1,5 +1,5 @@
 ---
-title: "Preview: On-premises data gateway management  | MicrosoftDocs"
+title: "Preview: View and manage on-premises data gateways   | MicrosoftDocs"
 description: View and manage on-premises gateways. 
 author: jimholtz
 ms.service: power-platform
@@ -15,15 +15,21 @@ search.app:
   - Powerplatform
   - Flow
 ---
+
+
+<!-- editor comment: I altered the metadata title to make it different from the H1 title. -->
+
+
+
 # Preview: On-premises data gateway management
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 The on-premises data gateway acts as a bridge, providing quick and secure data transfer between on-premises data (data that is not in the cloud) and the Power BI, Power Automate, Logic Apps, and Power Apps services. More information: [What is an on-premises data gateway?](https://docs.microsoft.com/data-integration/gateway/service-gateway-onprem)
 
-In the **Data** page of the [Power Platform admin center](https://admin.powerplatform.microsoft.com), you can view and manage on-premises data gateways.
+On the **Data** page of the [Power Platform admin center](https://admin.powerplatform.microsoft.com), you can view and manage on-premises data gateways.
 
-Users who are part of the Azure AD Global administrator role (which includes Global admins), Power BI service administrators, and Gateway administrators will have access to Data Gateway management on the Power Platform admin center. There may however be differences in the features available and the operations which can be performed by each of these roles.
+Users who are part of the Azure AD Global administrator role (which includes Global admins), Power BI service administrators, and Gateway administrators will have access to data gateway management on the Power Platform admin center. However, there might be differences in the features available and the operations that can be performed by each of these roles.
 
 The Azure AD Global administrator role (which includes Global admins) and Power BI service administrators can use the **Tenant administration** setting to control the list of gateways exposed. Only these admins will see the **Tenant administration** toggle.
 
@@ -60,10 +66,10 @@ Select a gateway cluster and then select **Details** to see the following inform
 > [!div class="mx-imgBorder"] 
 > ![Gateway member details](media/data-gateways-member-details.png "Gateway member details")
 
-- **Gateway name**: The name of the gateway member.
-- **Device name**: The physical device on which the gateway is installed.
-- **Version**: The gateway software version installed on the machine.
+- **Name**: The name of the gateway member.
+- **Device**: The physical device on which the gateway is installed.
 - **Status**: Select (![Gateway status](media/gateway-status.png "Gateway status")) to check the status of a gateway member.
+- **Version**: The gateway software version installed on the machine.
 - **State**: Select to enable or disable a gateway member.
 
 After selecting a gateway member, you can select **Remove** to remove it. This does not uninstall the gateway from the physical machine but removes all the metadata regarding the gateway.
@@ -78,19 +84,19 @@ Select **Settings** to set on-premises data gateway settings such as the gateway
 > [!div class="mx-imgBorder"] 
 > ![Data gateway settings](media/data-gateways-settings.png "Data gateway settings")
 
-For more information on **Allow user's cloud datasources to refresh through this gateway cluster**, see [Merge or append on-premises and cloud data sources](https://go.microsoft.com/fwlink/p/?linkid=2005525).
+For more information on **Allow user's cloud datasources to refresh through this gateway cluster**, go to [Merge or append on-premises and cloud data sources](https://go.microsoft.com/fwlink/p/?linkid=2005525).
 
-For more information on **Allow user's custom data connectors to refresh through this gateway cluster**, see [Use custom data connectors with the on-premises data gateway](https://docs.microsoft.com/power-bi/service-gateway-custom-connectors).
+For more information on **Allow user's custom data connectors to refresh through this gateway cluster**, go to [Use custom data connectors with the on-premises data gateway](https://docs.microsoft.com/power-bi/service-gateway-custom-connectors).
 
-For more information on **Distribute requests across all active gateways in this cluster**, see [Load balance across gateways in a cluster](https://docs.microsoft.com/data-integration/gateway/service-gateway-high-availability-clusters#load-balance-across-gateways-in-a-cluster).
+For more information on **Distribute requests across all active gateways in this cluster**, go to [Load balance across gateways in a cluster](https://docs.microsoft.com/data-integration/gateway/service-gateway-high-availability-clusters#load-balance-across-gateways-in-a-cluster).
 
 ## Manage users
 
-Select a gateway cluster and then select **Manage Users** to see the list of gateway users. Add or remove gateway admins in the **Manage Users** page.
+Select a gateway cluster and then select **Manage users** to see the list of gateway users. Add or remove gateway admins on the **Manage users** page.
 
 For personal gateways, this would show the owner of the personal gateway and cannot be changed due to the security scope of personal gateways.
 
-For on-premises data gateway in standard mode, users can be added in any of the following three categories. 
+For on-premises data gateways in standard mode, users can be added in any of the following three categories: 
  
 - **Admin**: 
   - **Power BI**: Administrators have full control of the gateway, including adding other admins, creating data sources, managing data source users, and deleting the gateway. 
@@ -114,13 +120,18 @@ Use **Remove** to remove a gateway cluster. This operation is available for data
 > [!div class="mx-imgBorder"] 
 > ![Remove gateway cluster](media/data-gateways-remove.png "Remove gateway cluster")
 
-For more information, see [Remove or delete an on-premises data gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-manage#remove-or-delete-an-on-premises-data-gateway).
+For more information, go to [Remove or delete an on-premises data gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-manage#remove-or-delete-an-on-premises-data-gateway).
 
 ## Get Help
 For faster troubleshooting and assistance, select **Get help** to open a Get Help panel. Include the session ID in a customer support ticket for any issues on the Data Gateways feature in the Power Platform admin center.
 
 > [!div class="mx-imgBorder"] 
 > ![Get help](media/get-help.png "Get help")
+
+
+
+
+
 
 ## Manage gateways by region
 
