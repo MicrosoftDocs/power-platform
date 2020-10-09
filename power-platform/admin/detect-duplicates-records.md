@@ -58,10 +58,10 @@ You have an option to ignore the duplicates and save the new or updated record o
 
 - To merge the duplicate records, under the **Matched records** section, select the record that you want to merge, and then select **Merge**.
 
-The **Merge Records** dialog box appears.
+  The **Merge Records** dialog box appears.
 
-> [!div class="mx-imgBorder"] 
-> ![Merge accounts](media/duplicate-records-merge-accounts.png "Merge accounts")
+  > [!div class="mx-imgBorder"] 
+  > ![Merge accounts](media/duplicate-records-merge-accounts.png "Merge accounts")
 
 1. In the dialog box, select the primary record.
 
@@ -78,8 +78,8 @@ The **Merge Records** dialog box appears.
 
    - **Select all fields in this section.** When you select this, all fields available in that section of a record are selected so you don’t have to manually select the fields in that section. It works as a ‘Select all’ option for fields in a section.
 
-    > [!div class="mx-imgBorder"] 
-    > ![Select all fields](media/duplicate-records-select-all-fields.png "Select all fields")
+      > [!div class="mx-imgBorder"] 
+      > ![Select all fields](media/duplicate-records-select-all-fields.png "Select all fields")
 
     > [!NOTE]
     > You can’t merge data into an inactive record.
@@ -88,20 +88,20 @@ The **Merge Records** dialog box appears.
 
 You can merge two lead, account, or contact records.
 
-To merge two records:
+**To merge two records**
 
 In the list of accounts, contacts, or leads, select two records of the same record type, and on the command bar, select **Merge**.
 
 > [!div class="mx-imgBorder"] 
 > ![Merge contacts](media/duplicate-records-merge-contacts.png "Merge contacts")
 
-Follow the instructions from the **Resolve duplicates when creating or updating records** section of this topic.
+Follow the instructions from the [Resolve duplicates when creating or updating records](#resolve-duplicates-when-creating-or-updating-records) section of this topic.
 
 ## Enable the improved duplicate detection and merge experience
 
 To let users in your organization use the improved duplicate detection and merge experience, you must first enable it.
 
-To enable:
+**To enable**
 
 1. In your app, on the nav bar, select the **Settings** icon, and then select **Advanced Settings**.
 
@@ -109,9 +109,9 @@ To enable:
 
 2. On the nav bar, select **Settings \> Data Management** \> **Duplicate Detection Settings**.
 
-OR
+    OR
 
-In Power Platform admin center, select **Environments** \> **Settings** \> **Data Management** \> **Duplicate Detection Settings**.
+    In Power Platform admin center, select **Environments** \> **Settings** \> **Data Management** \> **Duplicate Detection Settings**.
 
 1. For **Enable improved duplicate detection and merge experience**, select **Yes,** and select **OK**.
 
