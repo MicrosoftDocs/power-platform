@@ -5,7 +5,7 @@ author: dileepsinghmicrosoft
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/09/2020
+ms.date: 10/11/2020
 ms.author: dileeps
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -67,9 +67,9 @@ Also, the guest must have the same license that’s required for non-guests to r
 
 Yes, non-profit, government and academic pricing is available in respective program channels.
 
-### What will happen to the Power Apps P1/P2 and Power Automate Plan 1 and Plan 2 plans on October 1, 2019?
+### What will happen to the Power Apps P1/P2 and Power Automate Plan 1 and Plan 2 plans on December 31, 2020?
 
-The existing P1 and P2 plans for Power Apps and Power Automate will be transitioning to the new Power Apps per app and per user plans, as well as the Power Automate per user and per Power Automate plans. Existing customers will be able to maintain the P1 and P2 plans for Power Apps and Power Automate for the duration of their current subscription period, and they may be eligible to also renew under current terms depending upon when their subscription period expires. Similarly, new customers may be able to purchase the existing P1 and P2 plans prior to April 1, 2020. Please contact your Microsoft account rep for more information.
+Power Apps P1 and P2, and Power Automate P1 and P2 plans will no longer be available for purchase, including via auto-renewal, after December 31, 2020. Customers with these plan licenses that have renewals falling on or after January 1, 2021 will need to transition to the Power Apps per user or per app plans, or the Power Automate per user or per flow plans to continue using the Power Platform services. Please contact your Microsoft account rep for more information.
 
 ### Are full Power Automate capabilities included in Power Apps licenses?
 
