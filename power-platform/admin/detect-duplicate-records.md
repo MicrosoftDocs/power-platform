@@ -58,7 +58,7 @@ You have an option to ignore the duplicates and save the new or updated record o
 
 - To merge the duplicate records, under the **Matched records** section, select the record that you want to merge, and then select **Merge**.
 
-  The **Merge <record type>** dialog box appears.
+  The **Merge (record type)** dialog box appears.
 
 
   > [!div class="mx-imgBorder"] 
