@@ -16,10 +16,6 @@ search.app:
   - Flow
 ---
 
-
-<!-- editor comment: The team is making an effort to have the metadata title differ from the H1 title, so I altered the metadata title a little. --> 
-
-
 # Detect duplicates records and merge
 
 Duplicate records can creep into your data when you or others enter data manually or import data in bulk. Common Data Service helps you address potential duplicates by detecting duplicates for active records such as accounts and contacts.
@@ -62,11 +58,7 @@ You have an option to ignore the duplicates and save the new or updated record o
 
 - To merge the duplicate records, under the **Matched records** section, select the record that you want to merge, and then select **Merge**.
 
-  The **Merge Records** dialog box appears.
-
-
-  <!-- The image shows the box as "Merge accounts". Do you want to change the line above to match? -->
-
+  The **Merge <record type>** dialog box appears.
 
 
   > [!div class="mx-imgBorder"] 
