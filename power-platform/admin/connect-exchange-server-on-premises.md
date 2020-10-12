@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/04/2020
+ms.date: 10/12/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -26,17 +26,11 @@ With version 9.0., you can connect your customer engagement apps (Dynamics 365 S
 <a name="BKMK_PreReq"></a>   
 ## Prerequisites  
 
-1. **Exchange Server**. The following versions are supported: [!INCLUDE[pn_ms_Exchange_Server_2010_short](../includes/pn-ms-exchange-server-2010-short.md)] SP3, [!INCLUDE[pn_Exchange_Server_2013_short](../includes/pn-exchange-server-2013-short.md)] SP1, [!INCLUDE[pn_exchange_server_2016_short](../includes/pn-exchange-server-2016-short.md)], or Exchange Server 2019.  
+1. **Exchange Server**. The following versions are supported: [!INCLUDE[pn_Exchange_Server_2013_short](../includes/pn-exchange-server-2013-short.md)] SP1, [!INCLUDE[pn_exchange_server_2016_short](../includes/pn-exchange-server-2016-short.md)], or Exchange Server 2019.  
 
 2. **Authentication**. During installation, [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] configures [!INCLUDE[pn_Internet_Information_Services](../includes/pn-internet-information-services.md)]. To connect customer engagement apps with [!INCLUDE[pn_Exchange_Server_short](../includes/pn-exchange-server-short.md)], Windows (NTLM) or Basic authentication must be enabled in [!INCLUDE[pn_Exchange_Server_short](../includes/pn-exchange-server-short.md)]. When configuring Windows (NTLM) authentication, make sure Basic authentication is disabled on Exchange server.  
 
      For more information on authentication, see:  
-
-   - Exchange Server 2010: [Configure Integrated Windows Authentication](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/aa998638(v=exchg.141))
-
-   - Exchange Server 2010: [Configure Basic Authentication](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/aa996407(v=exchg.141))  
-
-   - Exchange Server 2010: [Default Authentication Settings for Exchange-related Virtual Directories](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/gg247612(v=exchg.141))  
 
    - Exchange Server 2013: [Authentication and EWS in Exchange](https://docs.microsoft.com/exchange/client-developer/exchange-web-services/authentication-and-ews-in-exchange)  
 
