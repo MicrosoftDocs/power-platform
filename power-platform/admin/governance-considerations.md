@@ -176,7 +176,7 @@ It's well understood that monitoring as a critical aspect of managing software a
    - Service Health
    - Connectors used
 
-## View what users are licensed
+### View what users are licensed
 
 You can always look at individual user licensing in the Microsoft 365 admin center by drilling into specific users. 
 
