@@ -12,17 +12,17 @@ ms.custom: quotas, admin, ceX
 ms.collection: virtual-agent
 ---
 
-# Quotas and rate limit capacity considerations for Power Virtual Agents
+# Quotas and request limit capacity considerations for Power Virtual Agents
 
 Quotas are default constraints applied to chatbots that limit how often messages can be sent to the chatbot. The purpose of quotas is to throttle the service load for a client, which protects a service from being overloaded and the client from unexpected resource usage.
 
-Quotas are applied to your chatbots alongside the capacity constraints you gained by purchasing a [Power Virtual Agents plan](https://go.microsoft.com/fwlink/?linkid=2099502). Also see [Licensing and capacity considerations](requirements-licensing.md).
+Quotas are applied to your chatbots alongside the capacity constraints you gained by purchasing a [Power Virtual Agents plan](https://powervirtualagents.microsoft.com/pricing). Also see [Licensing and capacity considerations](requirements-licensing.md).
 
 The following quotas, defined as requests per minute (RPM) and requests per second (RPS), apply to Power Virtual Agents chatbots. A request is a message from the user to the chatbot, or a message from an Azure Bot Framework Skill, in a single chat session.  
   
   
 
-Action | Paid Plan
+Action | Quota with the paid plan
 --|--
 **Messages to a chatbot**<br/>Includes any message from a user or from integrations, such as Azure Bot Framework Skills, to a single chatbot. This includes multiple users interacting with a single chatbot. | 800 RPM\* 	
 
@@ -48,7 +48,7 @@ License | Number of API requests every 24 hours
 Learn more about [Power Automate limits](/power-platform/admin/api-request-limits-allocations)
 
 > [!NOTE]
-> For flows created from the Power Virtual Agents authoring canvas you will see the plan used as "Per user plan". Tegardless of what your per-user license is, the above limit will apply.
+> For flows created from the Power Virtual Agents authoring canvas you will see the plan used as "Per user plan". Regardless of what your per-user license is, the above limit will apply.
 
 
 
