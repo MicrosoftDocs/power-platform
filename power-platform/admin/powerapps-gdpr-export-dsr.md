@@ -6,7 +6,7 @@ ms.reviewer: paulliew
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/12/2020
+ms.date: 10/13/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
