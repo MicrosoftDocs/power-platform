@@ -40,7 +40,7 @@ adding an existing entity to the solution:
 
 -   **Include entity metadata**  This option includes no components&mdash;such as fields,
     forms, views, or related entities&mdash;but does include all the metadata
-    associated with the entity. Metadata includes the entity attributes, such as
+    associated with the entity. Metadata includes the entity properties, such as
     auditing, duplicate detection, and change tracking.
 
 -   **Include all components**  This option includes all components and metadata
