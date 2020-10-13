@@ -28,10 +28,10 @@ Below is a summary of the types of personal data that Power Apps can store for a
 
 Resources containing personal data | Website access |    PowerShell access
 --- | --- | --
-Environment    | Power Apps Admin center |     Power Apps cmdlets
-Environment permissions**    | Power Apps Admin center     | Power Apps cmdlets
-Canvas App    | Power Apps Admin center <br> Power Apps Portal |     Power Apps cmdlets
-Canvas App permissions    | Power Apps Admin center <br> Power Apps Portal    | Power Apps cmdlets
+Environment    | Power Platform admin center |     Power Apps cmdlets
+Environment permissions**    | Power Platform admin center     | Power Apps cmdlets
+Canvas App    | Power Apps Portal |     Power Apps cmdlets
+Canvas App permissions    | Power Apps Portal    | Power Apps cmdlets
 Gateway | Power Apps Portal***    | On-premises gateway cmdlets
 Gateway permissions    | Power Apps Portal***    |
 Custom connector | |    App creator: Available <br> Admin: Available
@@ -50,7 +50,7 @@ Power Apps user settings, user-app settings, and notifications | | App creator: 
 Any user with a valid Power Apps license can perform the user operations outlined in this document using the [Power Apps portal](https://make.powerapps.com) or [App creator cmdlets](https://go.microsoft.com/fwlink/?linkid=871448).
 
 ### For admins
-To perform the administration operations outlined in this document using the Power Apps Admin center, Power Automate Admin Center, or [Power Apps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804), you'll need the following:
+To perform the administration operations outlined in this document using the Power Platform admin center, Power Automate Admin Center, or [Power Apps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804), you'll need the following:
 
 * A paid Power Apps plan or a Power Apps trial. You can sign-up for a 30-day trial at [https://make.powerapps.com/trial](https://make.powerapps.com/trial). Trial licenses can be renewed if they've expired.
 
@@ -90,7 +90,7 @@ Users can be assigned permissions (such as Environment Admin, Environment Maker,
 
 ### For environments without a Common Data Service database
 
-#### Power Apps Admin center
+#### Power platform admin center
 Administrators can export a user's environment permissions from the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) by following these steps:
 
 1. From the Power Platform admin center, select each environment in your organization. You must be an [Microsoft 365 Global admin](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide) or an [Azure Active Directory Global Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) to be able to review all environments created within your organization.
