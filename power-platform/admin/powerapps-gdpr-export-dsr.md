@@ -167,7 +167,7 @@ Add-PowerAppsAccount
 Get-AppRoleAssignment | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
 ```
 
-### Power Platform admin center
+### Power Platform admin center 
 Administrators can export app roles assignments for a user from the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) by following these steps:
 
 1. From the Power Platform admin center, select each environment in your organization. You must be an [Microsoft 365 Global admin](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide) or an [Azure Active Directory Global Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) to be able to review all environments created within your organization.
@@ -176,11 +176,13 @@ Administrators can export app roles assignments for a user from the [Power Platf
 
 3. Select **Share** for each of the apps in the environment.
 
-    ![Select share](./media/powerapps-gdpr-export-dsr/select-admin-share-nofilter.png)
+   > [!div class="mx-imgBorder"] 
+   > ![Select app share](media/share-canvas-app.png "Select app share")
 
 4. If the user has access to the app, go to the app's **Share** page, copy the details, and then paste them into a document editor, such as Microsoft Word.
 
-    ![Admin app share page](./media/powerapps-gdpr-export-dsr/admin-share-page.png)
+   > [!div class="mx-imgBorder"] 
+   > ![Admin app share page](media/admin-share-page.png "Admin app share page")
 
 ### PowerShell cmdlets for admins
 Administrators can export all app role assignments for a user across all apps in their tenant by using the **Get-AdminAppRoleAssignment** function in the [Power Apps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804):
