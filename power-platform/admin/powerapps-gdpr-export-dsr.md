@@ -66,7 +66,7 @@ Administrators can export all environments created by a specific user from the [
 2. If the environment was created by the user from the DSR request, select **See all**, copy the details, and then paste them into a document editor, such as Microsoft Word.
 
    > [!div class="mx-imgBorder"] 
-   > ![Environment details](media/powerapps-gdpr-export-dsr/environment-details.png "Environment details")
+   > ![Environment details](media/environment-details.png "Environment details")
 
 ### PowerShell cmdlets for app creators
 Users can export the environments they have access to in Power Apps by using the **Get-PowerAppsEnvironment** function in the [Power Apps App creator PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871448):
@@ -101,7 +101,7 @@ Administrators can export a user's environment permissions from the [Power Platf
    > ![Environment roles](media/admin-environment-role-share-page1.png "Environment roles") power-platform\admin\media\admin-environment-role-share-page1.png
 
    > [!div class="mx-imgBorder"] 
-   > ![Environment maker user](media/admin-environment-role-share-page2.png"Environment maker user")
+   > ![Environment maker user](media/admin-environment-role-share-page2.png "Environment maker user")
 
 3. If the user has access to either role, go to the **Users** page, copy the details, and then paste them into a document editor, such as Microsoft Word.
 
@@ -139,9 +139,11 @@ An administrator can export apps created by a user starting from the [Power Plat
 
 4. Select **Share** for each of the apps created by that user and give yourself **Co-owner** access to the app:
 
-    ![Select app share](/media/share-canvas-app.png)
+   > [!div class="mx-imgBorder"] 
+   > ![Select app share](media/share-canvas-app.png "Select app share")
 
-    ![Give a user access](/media/grant-access.png)
+   > [!div class="mx-imgBorder"] 
+   > ![Give a user access](media/grant-access.png "Give a user access")
 
 5. Once you have access to each of the user's apps you can export a canvas app from the [Power Apps portal](https://make.powerapps.com). For step-by-step instructions on how to export an app, see [Exporting a canvas app](../alm/environment-and-tenant-migration.md#exporting-a-canvas-app).
 
