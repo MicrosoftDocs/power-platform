@@ -179,14 +179,10 @@ Administrators can export app roles assignments for a user from the [Power Platf
    > [!div class="mx-imgBorder"] 
    > ![Select app share](media/share-canvas-app.png "Select app share")  
 
-:::image type="content" source="media/share-canvas-app.png" alt-text="dddd":::
-
 4. If the user has access to the app, go to the app's **Share** page, copy the details, and then paste them into a document editor, such as Microsoft Word.
 
    > [!div class="mx-imgBorder"] 
    > ![Admin app share page](media/admin-share-page.png "Admin app share page")
-
-:::image type="content" source="media/admin-share-page.png" alt-text="ddddd":::
 
 ### PowerShell cmdlets for admins
 Administrators can export all app role assignments for a user across all apps in their tenant by using the **Get-AdminAppRoleAssignment** function in the [Power Apps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804):
