@@ -122,7 +122,7 @@ Use **Remove** to remove a gateway cluster. This operation is available for data
 
 For more information, go to [Remove or delete an on-premises data gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-manage#remove-or-delete-an-on-premises-data-gateway).
 
-## Get Help
+## Get help
 For faster troubleshooting and assistance, select **Get help** to open a Get Help panel. Include the session ID in a customer support ticket for any issues on the Data Gateways feature in the Power Platform admin center.
 
 > [!div class="mx-imgBorder"] 
