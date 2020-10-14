@@ -53,16 +53,17 @@
   - name: ALM for developers   
     href: alm-for-developers.md
     items:
-    - name: Use Microsoft Power Platform Build Tools
-      href: devops-build-tools.md
-    - name: Microsoft Power Platform Build Tools tasks
-      href: devops-build-tool-tasks.md
-    - name: GitHub Actions for Microsoft Power Platform
-      href: devops-github-actions.md
-    - name: Available GitHub Actions
-      href: devops-github-available-actions.md
+    - name: Microsoft Power Platform Build Tools
+      items:
+      - name: Use Microsoft Power Platform Build Tools
+        href: devops-build-tools.md
+      - name: Microsoft Power Platform Build Tools tasks
+        href: devops-build-tool-tasks.md
+      - name: GitHub Actions for Microsoft Power Platform
+        href: devops-github-actions.md
+      - name: Available GitHub Actions
+        href: devops-github-available-actions.md
     - name: Work with solution components
-      href: 
       items:
         - name: Microsoft Power Apps component framework
           href: component-framework.md
