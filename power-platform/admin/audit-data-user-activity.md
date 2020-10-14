@@ -104,7 +104,7 @@ System administrators can see activity for the entities that are enabled for aud
    - Select the **Refresh** button  ![Refresh button](media/html-viewer-grid-refresh.png "Refresh button") to view the most recent activity. 
 
 > [!IMPORTANT]
-> Large attribute values, such as Email description or Annotations, are capped at 5KB or ~5,000 characters. A capped attribute value can be recognized by 3 dots at the end of the text. For example, “lorem ipsum, lorem ip…”.
+> Large attribute values, such as [Email.description](https://docs.microsoft.com/powerapps/developer/common-data-service/reference/entities/email) or [Annotation](https://docs.microsoft.com/powerapps/developer/common-data-service/reference/entities/annotation), are limited (capped) at 5KB or ~5,000 characters. A capped attribute value can be recognized by three dots at the end of the text, for example, “lorem ipsum, lorem ip…”.
 
 ## Enable or disable entities and fields for auditing  
 System administrators or customizers can change the default audit settings for entities and for specific fields for an entity.  
