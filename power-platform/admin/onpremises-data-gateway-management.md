@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/08/2020
+ms.date: 10/14/2020
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -15,11 +15,6 @@ search.app:
   - Powerplatform
   - Flow
 ---
-
-
-<!-- editor comment: I altered the metadata title to make it different from the H1 title. -->
-
-
 
 # Preview: On-premises data gateway management
 

@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/05/2020
+ms.date: 10/14/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -17,7 +17,7 @@ search.app:
 ---
 # About the Project "Oakdale" environment (Preview)
 <!-- fwlink 2143567 -->
-<!--note from editor: The title, description, and H1 all need to be unique in an article. Also, the quotes around "Oakdale" (and always using "Project") are in a new Cloud Style Guide article, so I took the liberty of changing it throughout.-->
+
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Introduced in September, 2020, *Project "Oakdale"* is a built-in, low-code data platform for Microsoft Teams that empowers users to build custom apps, bots, and flows in Teams by using Power Apps, Power Virtual Agents, and Power Automate. Project "Oakdale"—built on Common Data Service—provides relational data storage, rich data types, enterprise-grade governance, and one-click solution deployment to the Teams app store. More information: [Project "Oakdale" overview](/powerapps/teams/overview-data-platform)
@@ -283,9 +283,9 @@ With the public preview release of Project "Oakdale," the ability to create apps
 
 In your Teams admin center, you can use **Power Apps** and **Power Virtual Agents** applications available under **Microsoft Apps** to enable or disable these new capabilities for specific users. More information: [Manage app permission policies in Microsoft Teams](https://docs.microsoft.com/microsoftteams/teams-app-permission-policies)
 
-In addition to the new experience of creating apps or bots with Power Apps and Power Virtual Agents, users can now use sample apps to instantiate Teams apps (and associated Project "Oakdale" environments).<!--note from editor: Edit okay? The passive voice was obscuring the agent of action, so it wasn't clear who was having the "creation experience" and who could instantiate the apps and associated environments.--> These sample apps are part of the public preview. Available sample apps are listed [here](https://docs.microsoft.com/powerapps/teams/use-sample-apps-from-teams-store). You can enable or disable these apps for specific users by using the Teams apps permissions policies. For example, for app permissions policies under **Microsoft Apps** in the Teams admin center, you'll find **Employee Ideas**, **Inspection**, and **Issue Reporting** sample apps.
+In addition to the new experience of creating apps or bots with Power Apps and Power Virtual Agents, users can now use sample apps to instantiate Teams apps (and associated Project "Oakdale" environments). These sample apps are part of the public preview. Available sample apps are listed [here](https://docs.microsoft.com/powerapps/teams/use-sample-apps-from-teams-store). You can enable or disable these apps for specific users by using the Teams apps permissions policies. For example, for app permissions policies under **Microsoft Apps** in the Teams admin center, you'll find **Employee Ideas**, **Inspection**, and **Issue Reporting** sample apps.
 
-Note that when the Power Apps app is disabled, users won't have access to any standalone apps that you pinned in their Teams channels with the Power Apps app.<!--note from editor: Edit okay? Trying to make the agent of action clear here.--> For users to continue using standalone apps in the Teams experience even after the Power Apps maker experience has been turned off for them, you can use the new **Built by your colleagues** catalog entry point to pin standalone apps to Teams channels or a user's personal scope<!--note from editor: Is this what "personal scope" is?-->. This action<!--note from editor: What action do you mean? Is there an activation step you can describe?--> only needs to be performed once: it updates the experience for all members of the team, allowing them to use existing apps they already had access to. We recommend that if you choose to disable Power Apps for any user in your tenant, you advise them that they can use the **Built by your colleagues** catalog to restore the standalone apps they were using before in Teams channels.<!--note from editor: Edit okay? I didn't know what "alternate paths" meant here.-->
+Note that when the Power Apps app is disabled, users won't have access to any standalone apps that you pinned in their Teams channels with the Power Apps app. For users to continue using standalone apps in the Teams experience even after the Power Apps maker experience has been turned off for them, you can use the new **Built by your colleagues** catalog entry point to pin standalone apps to Teams channels or a user's personal scope. This action only needs to be performed once: it updates the experience for all members of the team, allowing them to use existing apps they already had access to. We recommend that if you choose to disable Power Apps for any user in your tenant, you advise them that they can use the **Built by your colleagues** catalog to restore the standalone apps they were using before in Teams channels.
 
 ## Known issues
 
