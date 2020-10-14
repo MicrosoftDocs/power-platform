@@ -2,7 +2,7 @@
 title: "Use the Power Apps checker web API | Microsoft Docs"
 description: "The Power Apps checker Web API provides a development experience that can be used across a wide variety of programming languages, platforms, and devices"
 ms.custom: ""
-ms.date: 07/21/2020
+ms.date: 10/14/2020
 ms.service: powerapps
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -12,7 +12,7 @@ applies_to:
 ms.assetid: 0d5f7579-304a-4d28-ba73-df30722205eb
 caps.latest.revision: 1
 author: "mhuguet" # GitHub ID
-ms.author: "mhuguet"
+ms.author: "michu"
 ms.reviewer: "pehecke"
 manager: "maustinjones"
 search.audienceType: 
@@ -26,6 +26,9 @@ search.app:
 The Power Apps checker web API provides a mechanism to run static analysis checks against customizations and extensions to the Common Data Service platform. It is available for makers and developers to perform rich static analysis checks on their solutions against a set of best practice rules to quickly identify problematic patterns. The service provides the logic for the [solution checker feature](/powerapps/maker/common-data-service/use-powerapps-checker) in the Power Apps maker [portal](https://make.powerapps.com) and is included as part of the automation for [applications submitted to AppSource](/powerapps/developer/common-data-service/publish-app-appsource). Interacting with the service directly in this manner allows for analysis of solutions that are included as part of on-premise (all supported versions) and online environments.
 
 For information about using the checker service from PowerShell code see [Work with solutions using PowerShell](../powershell-api.md).
+
+> [!NOTE]
+> - Use of Power Apps checker does not guarantee that a solution import will be successful. The static analysis checks performed against the solution do not know the configured state of the destination environment and import success may be dependent on other solutions or configurations in the environment. 
 
 <a name="bkmk_altApproaches"></a>
 
@@ -69,7 +72,7 @@ Refer to the following topics for documentation on the individual APIs:
 
 ## Determine a geography
 
-When interacting with the Power Apps checker service, files are temporarily stored in Azure along with the reports that are generated. By using a geography specific API, you can control where the data is stored. It is suggested to use the same geography for each API call in the analysis lifecycle. Each geography may have a different version at any given point in time due to our multi-stage safe deployment approach and doing this ensures full version compatibility. It also may reduce execution time as the data will not have to travel as far of a distance in some cases. The following are the available geographies:
+When interacting with the Power Apps checker service, files are temporarily stored in Azure along with the reports that are generated. By using a geography specific API, you can control where the data is stored. Requests to a geography endpoint are routed to a regional instance based on best performance (latency to the requestor). Once a request enters a regional service instance, all processing and persisted data remains within that particular region. Certain API responses will return regional instance URLs for subsequent requests once an analysis job has been routed to a specific region. Be aware that each geography may have a different version of the service deployed at any given point in time due to the multi-stage safe deployment process, which ensures full version compatibility. Thus, the same geography should be used for each API call in the analysis lifecycle and may reduce overall execution time as the data may not have to travel as far over the wire. The following are the available geographies:
 
 |Azure datacenter|Name|Geography|Base URI|
 |---|---|---|---|
@@ -123,7 +126,7 @@ When publishing applications on AppSource, you must get your application certifi
 
 ## Find your tenant ID
 
-The ID of your tenant is needed to interact with the APIs that require a token. Refer to [this article](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id) for details on how to obtain the tenant ID. You can also use PowerShell commands to retrieve the tenant ID. The following example leverages the cmdlets in the [AzureAD module](https://docs.microsoft.com/powershell/module/azuread/?view=azureadps-2.0).
+The ID of your tenant is needed to interact with the APIs that require a token. Refer to [this article](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id) for details on how to obtain the tenant ID. You can also use PowerShell commands to retrieve the tenant ID. The following example leverages the cmdlets in the [AzureAD module](https://docs.microsoft.com/powershell/module/azuread/).
 
 ```powershell
 # Login to AAD as your user
