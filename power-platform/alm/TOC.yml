@@ -65,6 +65,14 @@
         href: devops-github-actions.md
       - name: Available GitHub Actions
         href: devops-github-available-actions.md
+      - name: Tutorials
+        items:
+        - name: Initial setup
+          href: 
+        - name: Build a model-driven app
+          href: 
+        - name: Automate solution deployment
+          href: 
     - name: Work with solution components
       items:
         - name: Microsoft Power Apps component framework
