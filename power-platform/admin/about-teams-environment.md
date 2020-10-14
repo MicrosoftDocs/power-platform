@@ -252,7 +252,7 @@ The high-level flow and business rules for promoting a Project "Oakdale" environ
 
 A tenant admin will be allowed to promote a Project "Oakdale" environment to a Common Data Service database environment. A typical flow is as follows:  
 
-:::image type="content" source="media/teams-environment-promotion-process.png" alt-text="Project "Oakdale" environment promotion process":::
+:::image type="content" source="media/teams-environment-promotion-process.png" alt-text="Project Oakdale environment promotion process":::
 
 1. Within a team, the Teams user chooses to create an app by using the new integrated Power Apps app creation experience in Teams, or by installing an existing Project "Oakdale" environment-based app. At this point, a Project "Oakdale" environment is provisioned for that team.  
 
