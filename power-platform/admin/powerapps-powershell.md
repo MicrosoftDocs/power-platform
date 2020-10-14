@@ -6,7 +6,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 10/09/2020
+ms.date: 10/14/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
