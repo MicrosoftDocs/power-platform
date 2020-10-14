@@ -418,38 +418,6 @@ Remove-DlpPolicy
 
 Deletes a DLP policy.
 
-#### Display all DLP policies
-
-```powershell
-Get-AdminDlpPolicy
-```
-
-Returns a list of all DLP policies.
-
-#### Display a filtered list of DLP policies
-
-```powershell
-Get-AdminDlpPolicy 'DisplayName'
-```
-
-Uses the display name to filter the policy list.
-
-#### Display all 'Business data only' API connectors in a policy
-
-```powershell
-Get-AdminDlpPolicy 'PolicyName' | Select –ExpandProperty BusinessDataGroup
-```
-
-Lists the API connections that are in the *Business data only* (or *BusinessDataGroup*) field in an input policy.
-
-#### Add a connector to the 'Business data only' group
-
-```powershell
-Add-ConnectorToBusinessDataGroup -PolicyName 'PolicyName' –ConnectorName 'ConnectorName'
-```
-
-Adds a connector to the *Business data only* group in a given DLP policy. See the list of connectors by *DisplayName* and *ConnectorName* (used as input) here.
-
 ### Block trial licenses commands
 
 Commands:
