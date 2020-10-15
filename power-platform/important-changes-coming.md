@@ -160,6 +160,7 @@ customers in Common Data Service.
 To allow for transition of customers and partner applications:
 
 - Effective October 2020, the authentication protocol will be retired for all new tenants.
+- Effective October 2020, the authentication protocol will not be available in all new [regions](https://docs.microsoft.com/power-platform/admin/regions-overview#what-regions-are-available).
 - Effective April 2021, the authentication protocol will be retired for all new environments within a tenant.
 - Effective April 2022, the authentication protocol will be retired for all new and existing environments within a tenant.
 
