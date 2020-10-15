@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: GitHub Actions for Power Platform initial setup | Microsoft Docs"
-description: "Get started with the GitHub Actions for Power Platform tutorial."
+description: "In this tutorial, get started with the GitHub Actions for Power Platform by creating three environments."
 keywords: 
 author: mikkelsen2000
 ms.author: pemikkel
@@ -9,25 +9,36 @@ ms.custom: ""
 ms.date: 10/14/2020
 ms.reviewer: "pehecke"
 ms.service: powerapps
-ms.topic: "article"
-search.audienceType: s
+ms.topic: "tutorial"
+search.audienceType: 
   - maker
 search.app: 
   - PowerApps
   - D365CE
+#Customer intent: As a developer, I want to use GitHub Actions so that my solution builds and deployment will be automated.
 ---
 
 # Tutorial: GitHub Actions for Power Platform initial setup
 
-This tutorial will give you an opportunity to get hands on with best practices to get your app into source control, generate a managed solution from Source (your build artifact), and finally deploy the app into another environment. You will need access to three Common Data Service environments (Development, Build, and Production) along with a GitHub account to automate deployments.
+This three part tutorial will give you an opportunity to get hands on with best practices to automate building and deploying your app using GitHub Actions. In this first tutorial, you will need access to three Common Data Service environments (Development, Build, and Production) along with a GitHub account to automate deployments.
 
-## Lab scenario
+> [!div class="checklist"]
+> * Create three Common Data Service environments in your tenant
 
-You will need to create three environments in your demo or customer tenant. To do this follow these instructions:
+In the following two tutorials, you will complete these tasks.
 
-1.	Login to a tenant that you have access to and that minimum 3GB available capacity which is required to create 3 environments.
-2.	Go to https://admin.powerapps.com , this will take you to the admin center
-3.	Select Environments in the navigation area
+> [!div class="checklist"]
+> * Get your app into source control
+> * Generate a managed solution (a build artifact) from source
+> * Deploy the app into another environment
+
+## Create required environments
+
+You will need to create, or have access to, three Common Data Service environments in your demo or customer tenant. To create these environments, follow the instructions below. Otherwise, proceed to the end of this tutorial for the next steps.
+
+1. Log into a tenant that you have access to and that minimum 3GB available capacity which is required to create 3 environments.
+2. Go to https://admin.powerapps.com , this will take you to the admin center
+3. Select Environments in the navigation area
 
 ![Select environment](media/github-actions-tutorial/gh-lab-0.30.png "Select environment")
 
@@ -53,4 +64,5 @@ You will need to create three environments in your demo or customer tenant. To d
 
 10.	Now you have the environments that we will need for this and ready to begin the next modules of this Hands-on lab
 
-[Next tutorial](github-actions-tutorial1.md)
+> [!div class="nextstepaction"]
+> [Next steps](./github-actions-tutorial1.md)
