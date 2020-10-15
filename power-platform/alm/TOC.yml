@@ -68,7 +68,7 @@
       - name: Tutorials
         items:
         - name: Initial setup
-          href: 
+          href: github-actions-tutorial0.md
         - name: Build a model-driven app
           href: 
         - name: Automate solution deployment
