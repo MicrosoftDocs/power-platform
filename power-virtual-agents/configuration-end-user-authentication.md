@@ -162,18 +162,6 @@ Scope List delimiter | The separator character for the scope list. Empty spaces 
 Authorization URL Template | URL template for authorization, defined by your identity provider. <br />For example, `https://login.microsoftonline.com/common/oauth2/v2.0/authorize` | On the app registration's **Overview** page, select **Endpoints**. This is listed as the **OAuth 2.0 authorization endpoint (v2)**.
 Authorization URL Query String Template | Query template for authorization, provided by your identity provider. <br />Keys in the query string template will vary depending on the identity provider. | Use `?client_id={ClientId}&response_type=code&redirect_uri={RedirectUrl}&scope={Scopes}&state={State}`.
 
-
-<!--
-### Configuring Application ID URI for SSO
-For compatibility with Teams SSO, please configure your Application ID URI with the following format:
-``api://botid-{TeamsBotID}`` 
-Where ```TeamsBotID``` is the Bot's ID, which you can find under "Manage" -> "Channel" -> "Microsoft Teams" -> "Submit for admin approval" -> "Bot App Id".
-
-If the Bot ID is ```123456789-f897-4760-91db-35a3cb2d11d5```, the Application ID URI should be ```api://botid-123456789-f897-4760-91db-35a3cb2d11d5````
-
-For more information, [consult the SSO configuration document](configure-sso.md)
--->
-
 ## Test your configuration
 
 After the setup steps are complete, save your configuration and test it by [creating a new topic using authentication](advanced-end-user-authentication.md).
@@ -185,7 +173,7 @@ Once you have your authentication configured, make sure to go to **Manage** -> *
 
 ## Remove the authentication configuration
 
-1. Select **Manage** on the side navigation pane, and then go to the **Security** tab and cick on the **Authentication** card.
+1. Select **Manage** on the side navigation pane, and then go to the **Security** tab and select the **Authentication** card.
 
 2. Select **No authentication**.
 
