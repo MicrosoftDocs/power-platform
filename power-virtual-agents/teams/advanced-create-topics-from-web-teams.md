@@ -3,7 +3,7 @@ title: "Get topic suggestions from support pages in Microsoft Teams"
 description: "Get suggestions on what topics to include from existing support content, such as FAQs, help sites, and Word and Excel documents"
 keywords: "PVA"
 ms.date: 9/22/2020
-ms.service: dynamics-365-ai
+ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt

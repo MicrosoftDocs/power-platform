@@ -3,7 +3,7 @@ title: "Review ISO, SOC, and HIPAA compliance"
 description: "Power Virtual Agents is compliant with a number of standards and is covered under HIPAA."
 ms.date: 9/22/2020
 ms.keywords: "PVA, ISO, SOC, certification, compliance"
-ms.service: "dynamics-365-ai"
+ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt
