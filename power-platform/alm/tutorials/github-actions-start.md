@@ -1,6 +1,7 @@
 ---
-title: "Tutorial: Get started with GitHub Actions for Power Platform | Microsoft Docs"
-description: "In this first part of a 3-part tutorial, get started with GitHub Actions for Power Platform by creating three environments for use in the other tutorials."
+title: "Tutorial: Get started with GitHub Actions for Microsoft Power Platform | Microsoft Docs"
+description: "In this first part of a 3-part tutorial, get started with GitHub Actions for 
+Microsoft Power Platform by creating three environments for use in the other tutorials."
 keywords: 
 author: mikkelsen2000
 ms.author: pemikkel
@@ -18,9 +19,9 @@ search.app:
 #Customer intent: As a developer, I want to use GitHub Actions so that my solution builds and deployment will be automated.
 ---
 
-# Tutorial: Get started with GitHub Actions for Power Platform
+# Tutorial: Get started with GitHub Actions for Microsoft Power Platform
 
-This three part tutorial will give you an opportunity to get hands on with best practices to automate building and deploying your app using GitHub Actions. In this first tutorial, you will need access to three Common Data Service environments (Development, Build, and Production) along with a GitHub account to automate deployments.
+This three part tutorial will give you an opportunity to get hands on with best practices to automate building and deploying your app using GitHub Actions for Power Platform. In this first tutorial, you will need access to three Common Data Service environments (Development, Build, and Production) along with a GitHub account to automate deployments.
 
 > [!div class="checklist"]
 > * Create three Common Data Service environments in your tenant

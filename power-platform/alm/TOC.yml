@@ -63,7 +63,7 @@
       items:
       - name: Use GitHub Actions for Microsoft Power Platform
         href: devops-github-actions.md
-      - name: Available GitHub Actions
+      - name: Available GitHub Actions for Microsoft Power Platform
         href: devops-github-available-actions.md
     - name: Work with solution components
       items:

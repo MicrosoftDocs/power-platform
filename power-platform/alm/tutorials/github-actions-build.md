@@ -1,5 +1,6 @@
 ---
-title: "Tutorial: Build a model-driven app for deployment using GitHub Actions | Microsoft Docs"
+title: "Tutorial: Build a model-driven app for deployment using GitHub Actions for Microsoft
+Power Platform | Microsoft Docs"
 description: "In this 2nd of a 3-part tutorial, build a Common Data Service model-driven app for later deployment using GitHub Actions."
 keywords: 
 author: mikkelsen2000
@@ -18,7 +19,7 @@ search.app:
 #Customer intent: As a developer, I want to use GitHub Actions so that my solution builds and deployment will be automated.
 ---
 
-# Tutorial: Build a model-driven app for deployment using GitHub Actions
+# Tutorial: Build a model-driven app for deployment using GitHub Actions for Microsoft Power Platform
 
 In this tutorial you will be creating a basic model-driven app to use in the next tutorial where you will learn how to automate the application lifecycle management of the app.
 
