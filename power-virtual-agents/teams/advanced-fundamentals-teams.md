@@ -3,7 +3,7 @@ title: "Advanced authoring of chatbots in Microsoft Teams"
 description: "Go beyond basic authoring of chatbots in the Power Virtual Agents app in Microsoft Teams."
 keywords: "PVA"
 ms.date: 9/22/2020
-ms.service: dynamics-365-ai
+ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt

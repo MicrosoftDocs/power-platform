@@ -3,7 +3,7 @@ title: "Analyze topic performance"
 description: "See how topics are performing, and determine what you can do to improve customer satisfaction."
 keywords: "PVA"
 ms.date: 9/22/2020
-ms.service: "dynamics-365-ai"
+ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt

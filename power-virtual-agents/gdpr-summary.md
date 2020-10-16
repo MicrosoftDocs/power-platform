@@ -2,7 +2,7 @@
 title: "Overview of GDPR compliance"
 description: "Review GDPR compliance information Power Virtual Agents."
 ms.date: 9/22/2020
-ms.service: "dynamics-365-ai"
+ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt
