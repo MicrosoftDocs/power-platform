@@ -16,7 +16,7 @@ search.app:
   - Flow
 ---
 
-# Detect duplicates records and merge
+# Detect duplicate records and merge
 
 Duplicate records can creep into your data when you or others enter data manually or import data in bulk. Common Data Service helps you address potential duplicates by detecting duplicates for active records such as accounts and contacts.
 
@@ -146,3 +146,11 @@ The **Matched accounts** and **Matched contacts** sections will show all the mat
 To associate the lead record to an existing matching record, select the record, and select **Continue**. To create a new account or contact record, select **Ignore and save** without selecting a matching record.
 
 The lead is qualified.
+
+### See also  
+ [Detect duplicate data so you can fix or remove it](detect-duplicate-data.md)
+ [Import data (all record types)](../admin/import-data-all-record-types.md)   
+ [Check for duplicates](set-up-duplicate-detection-rules-keep-data-clean.md)   
+ [Set up duplicate detection rules](set-up-duplicate-detection-rules-keep-data-clean.md)   
+ [Run system jobs to detect duplicates](run-bulk-system-jobs-detect-duplicate-records.md)   
+ [Delete bulk records](../admin/delete-bulk-records.md)
