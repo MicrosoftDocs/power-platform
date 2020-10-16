@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: Get started with GitHub Actions for Power Platform | Microsoft Docs"
-description: "In this tutorial, get started with the GitHub Actions for Power Platform by creating three environments."
+description: "In this first part of a 3-part tutorial, get started with GitHub Actions for Power Platform by creating three environments for use in the other tutorials."
 keywords: 
 author: mikkelsen2000
 ms.author: pemikkel
