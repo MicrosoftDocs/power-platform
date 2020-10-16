@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: Automate solution deployment using GitHub Actions for Microsoft Power Platform | Microsoft Docs"
-description: "In this 3rd of a 3-part tutorial, learn how to automate solution deployment using GitHub Actions."
+description: "In this tutorial, learn how to automate solution deployment using GitHub Actions for Microsoft Power Platform."
 keywords: 
 author: mikkelsen2000
 ms.author: pemikkel
