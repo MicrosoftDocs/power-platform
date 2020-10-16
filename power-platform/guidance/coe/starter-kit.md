@@ -17,7 +17,7 @@ search.app:
   - Powerplatform
 ---
 # Microsoft Power Platform Center of Excellence (CoE) Starter Kit
-<!--note from editor: For quite a few of these CoE articles, the H1 and the title are the same. Please note that they need to be unique, as does the description, or we'll throw build errors that will become warnings soon. Also the description can't exceed 160 characters.-->
+
 A Center of Excellence (CoE) in an organization drives innovation and improvement and brings together like-minded people with similar business goals to share knowledge and success, while at the same time providing standards, consistency, and governance to the organization.
 
 The Microsoft Power Platform CoE Starter Kit is a collection of components and tools that are designed to help you get started with developing a strategy for adopting and supporting Microsoft Power Platform, with a focus on Power Apps and Power Automate.

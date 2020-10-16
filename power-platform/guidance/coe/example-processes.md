@@ -28,7 +28,7 @@ The app auditing sample process showcases how your CoE department or IT administ
 
 **Solution:** The CoE has decided there should be an auditing process on an app-level basis, using Common Data Service as a data store for the business justifications. They decide to use apps and flows to facilitate this process.
 
-The flow named Admin \| Compliance Detail Request is used to iterate through all the apps in the tenant and check whether the apps are compliant. If the owner hasn't submitted a business justification and the app was shared broadly (in this example, with more than 20 users or at least one group), the flow sends the owner an email to notify them that their specific app isn't compliant with Contoso's policy. The email contains a link to the Developer Compliance Center canvas app, where the owner can provide the business justification details in a form submission. The Developer Compliance Center<!--note from editor: Edit okay? I wanted to be clear which app you mean here. (Or do you mean the email?) --> app also contain details about the compliance thresholds and has links to the app settings, so the owner can configure the description and republish if needed.
+The flow named Admin \| Compliance Detail Request is used to iterate through all the apps in the tenant and check whether the apps are compliant. If the owner hasn't submitted a business justification and the app was shared broadly (in this example, with more than 20 users or at least one group), the flow sends the owner an email to notify them that their specific app isn't compliant with Contoso's policy. The email contains a link to the Developer Compliance Center canvas app, where the owner can provide the business justification details in a form submission. The Developer Compliance Center app also contain details about the compliance thresholds and has links to the app settings, so the owner can configure the description and republish if needed.
 
 After the maker has proven compliance by adding these details, the admin can review those details and the app itself. A business process flow in the Power Platform Admin View (model-driven app) helps facilitate the auditing process.
 
@@ -50,11 +50,11 @@ Three items are tracked in the system, and the user might have to do all three:
 
 ![Maker point of view in the audit process](media/coe55.png "Maker point of view in the audit process")
 
-**Admin:** After an app meets all three of these requirements, it appears in the **Admin Review** filter view on the **Model Driven Apps – Audit and Report Components** page.<!--note from editor: Is this a page?-->
+**Admin:** After an app meets all three of these requirements, it appears in the **Admin Review** filter view on the **Power Platform Admin View** model driven app.
 
 ![Admin point of view in the audit process](media/coe71.png "Admin point of view in the audit process")
 
-An admin opens **Power Platform Admin View** > **Admin Review** and assesses all the apps due for review by looking at the **Audit** tab within the app, investigating the work done by the maker, and then marking their assessment in the **Admin Review** section.<!--note from editor: To fit in with the story better, it would be nice to have the "Highlight App in Catalog" step highlighted in the image.-->
+An admin opens **Power Platform Admin View** > **Admin Review** and assesses all the apps due for review by looking at the **Audit** tab within the app, investigating the work done by the maker, and then marking their assessment in the **Admin Review** section.
 
 The admin can decide to put an app in the app catalog and mark it as featured or not, depending on whether the app should be highlighted for users.
 

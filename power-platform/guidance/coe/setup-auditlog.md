@@ -22,7 +22,7 @@ The Audit Log Sync flow connects to the Microsoft 365 audit log to gather teleme
 
 The Center of Excellence (CoE) Starter Kit will work without this flow, but the usage information (app launches, unique users) in the Power BI dashboard will be blank.
 
-There are two options for connecting to the audit log: one uses basic authentication (username and password) and one uses an Azure AD<!--note from editor: To be consistent.--> app registration to establish an identity for your app and allow access to the APIs. If your admin account is protected by multifactor authentication, you'll need to connect by using Azure App Registration.
+There are two options for connecting to the audit log: one uses basic authentication (username and password) and one uses an Azure AD app registration to establish an identity for your app and allow access to the APIs. If your admin account is protected by multifactor authentication, you'll need to connect by using Azure App Registration.
 
 ## Before you use the audit log connector
 
@@ -40,7 +40,7 @@ Using these steps, you'll set up an Azure AD app registration that will be used 
 
 1. Sign in to [portal.azure.com](https://portal.azure.com).
 
-1. Go to **Azure Active Directory** > **App registrations**.<!--note from editor: Edit okay? I didn't know what the slash was meant to convey.-->
+1. Go to **Azure Active Directory** > **App registrations**.
 
    ![Azure AD app registration](media/coe33.png "Azure AD app registration")
 
@@ -231,11 +231,11 @@ Keep in mind that after a user account has access to the audit logs, that user h
 
 1. Select **Test Operation**.
 
-   A (200) response indicates that the query has been successfully executed.<!-- --note from editor: Please see the Writing Style Guide topic about "should": https://styleguides.azurewebsites.net/StyleGuide/Read?id=2700&topicid=35667-->
+   A (200) response indicates that the query has been successfully executed.
    ![The Get Activities By Operation action of the custom connector](media/coe30.png "The Get Activities By Operation action of the custom connector]")
 
 > [!IMPORTANT]
-> If you're using DLP, you'll need to put this connector into the business group. More information: [Custom connectors and DLP](limitations.md#custom-connectors-and-dlp) and [Import the OpenAPI definition](https://docs.microsoft.com/connectors/custom-connectors/define-openapi-definition#import-the-openapi-definition)<!--note from editor: This seems like an odd link. You haven't mentioned OpenAPI before.-->
+> If you're using DLP, you'll need to put this connector into the business group. More information: [Custom connectors and DLP](limitations.md#custom-connectors-and-dlp) and [Import the OpenAPI definition](https://docs.microsoft.com/connectors/custom-connectors/define-openapi-definition#import-the-openapi-definition)
 
 ### Import the flow template compressed (.zip) package named SyncAuditLogs.zip
 

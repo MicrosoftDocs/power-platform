@@ -145,7 +145,7 @@ Filters on this page can help you narrow down this view by environment and by ma
 
 ## UI flows
 
-The **UI flows** page provides an overview of UI-based robotic process automation (RPA)<!--note from editor: Edit okay?--> flows in your environment:
+The **UI flows** page provides an overview of UI-based robotic process automation (RPA) flows in your environment:
 
 - Total number of UI flows
 

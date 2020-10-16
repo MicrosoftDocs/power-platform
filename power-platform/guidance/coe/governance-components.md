@@ -38,11 +38,6 @@ Here's a breakdown of the assets that form the governance components:
 - Archive unused apps
   - [App and Flow Archive and Clean Up – Start Approval and Check Approval (flows)](#flows)
   - [App Archive and Clean Up View (model-driven app)](#apps)
-<!--note from editor: Discussion of the following flows has been commented out, so should these lines be commented out too?:
-- Take action based on certain connector usage
-  - [Find and Add Admins as Owners for Apps that Use Certain Connectors (flow)](#flows)
-  - [Find and Disable Flows that Leverage Certain Connectors (flow)](#flows)
--->
 
 ## Entities
 
@@ -70,9 +65,9 @@ This flow sends an email to users who have chatbots in the tenant that aren't co
 
 - The chatbot has business justification details and an indication of high business impact, but no mitigation plan has been submitted to the attachments field.
 
-You can customize the email sent out by the flow; by default, it will look like the following image.<!--note from editor: Is the wording and format of this email important to your message? If so, please use alt text to describe it for a reader with low vision. It's actually not that clear even for sighted readers, so maybe you don't have to describe it word for word, but I think this description should be a bit more detailed.--> 
+You can customize the email sent out by the flow; by default, it will look like the following image.
 
-![Compliance detail request email](media/coe55.png "Compliance detail request email")
+![The compliance detail request email informs a maker that they own an app that is currently missing compliance details which means it needs to be audited by an administrator per the support policy. Makers are prompted to complete the business justification and mitigation plan details in the Developer Compliance Center app to document the intended use of the app.](media/coe55.png "The compliance detail request email informs a maker that they own an app that is currently missing compliance details which means it needs to be audited by an administrator per the support policy. Makers are prompted to complete the business justification and mitigation plan details in the Developer Compliance Center app to document the intended use of the app.")
 
 ### Admin \| App Archive and Clean Up – Start Approval
 
@@ -103,28 +98,6 @@ Similar to the previous flow, but for flows rather than apps. On a scheduled int
 **Prerequisite**: The same SharePoint document library that's used to store the archived apps can be used to store archived flows.
 
 **Customize**: By default, this flow will archive the flow but not remove it or its permission from the environment, so that no flows are inadvertently removed from your tenant. To delete the flow, update the [*Auto Delete On Archive* environment variable](setup-governance-components.md#update-environment-variables).
-
-<!--### SETUP REQUIRED \| Admin \| Find and disable flows that leverage certain connectors
-
-> [!NOTE]
-> Are you aware of the [Data Loss Prevention Policy](https://docs.microsoft.com/power-platform/admin/wp-data-loss-prevention#the-effect-of-the-blocked-data-group) feature to block connectors. Connectors that are blocked can't be used by either flow or app makers. You might want to consider blocking the connector instead of having a reactive flow setup to discover its usage.
-
-Checks whether any flows are using specific connectors, notifies the flow maker, and then disables the flow. The admin will receive a report.
-
-**Customize**: On setup, the array provided is blank so that we don't inadvertently disable flows in your tenant. You must specify what connectors you want to audit by editing the flow and updating the *disableConnectorArray* as shown for the connectors of your choice.
-
-![In Power Automate, specify which connectors you want to perform an audit for](media/coe59.png "In Power Automate, specify which connectors you want to perform an audit for")
-
-![The Flow owner receives an email notifying them of the unauthorized connector usage](media/coe60.png "The Flow owner receives an email notifying them of the unauthorized connector usage")
-
-### SETUP REQUIRED \| Admin \| Find and add admins as owners for apps that leverage certain connectors
-
-> [!NOTE]
-> Are you aware of the [Data Loss Prevention Policy](https://docs.microsoft.com/power-platform/admin/wp-data-loss-prevention#the-effect-of-the-blocked-data-group) feature to block connectors. Connectors that are blocked can't be used by either flow or app makers. You might want to consider blocking the connector instead of having a reactive flow setup to discover its usage.
-
-Checks for apps that use certain connectors, notifies the app maker, and shares the app with the admin security group.
-
-**Customize**: On setup, the array provided is blank so that we don't inadvertently add owners to apps with connectors in your tenant. You must specify what connectors you want to audit by editing the flow and updating the *disableConnectorArray* as shown for the connectors of your choice.  -->
 
 ## Apps
 

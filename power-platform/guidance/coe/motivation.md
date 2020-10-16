@@ -17,7 +17,7 @@ search.app:
   - Powerplatform
 ---
 # What is a Center of Excellence?
-<!--note from editor: Edits to the first paragraph are suggested so the intros for the first three articles don't all have the same wording.-->
+
 Establishing a Microsoft Power Platform Center of Excellence (CoE) means investing in and nurturing organic growth while maintaining governance and control. A CoE is designed to drive innovation and improvement, and as a central function it can break down geographic and organizational silos. A CoE can be a powerful way for an organization to align around business goals rather than individual department metrics.
 
 A key principle is to clarify why you're setting up a CoE, what you aim to accomplish, and the key business outcomes you hope to achieve. Then get started, and learn and evolve along the way. For many, the CoE is the first step in fostering greater creativity and innovation across the organization by empowering business units to digitize and automate their business processes, while maintaining the necessary level of central oversight and governance.
@@ -48,6 +48,6 @@ Admin and governance tools fall into three broad categories:
        - [Power Apps for Makers](https://docs.microsoft.com/connectors/powerappsforappmakers/)
    :::column-end:::
     :::column span="":::
-      **Templates and customizations** <br>The [CoE Starter Kit](setup.md) falls into this category. The CoE templates use the admin connectors in combination with other connectors and formulas to achieve specific goals. The nature of a template is to provide a good solution for a specific task, but it might not have the exact functionality that you need. You might have to adjust it to achieve what you're looking for.<!--note from editor: Suggested.-->
+      **Templates and customizations** <br>The [CoE Starter Kit](setup.md) falls into this category. The CoE templates use the admin connectors in combination with other connectors and formulas to achieve specific goals. The nature of a template is to provide a good solution for a specific task, but it might not have the exact functionality that you need. You might have to adjust it to achieve what you're looking for.
    :::column-end:::
 :::row-end:::

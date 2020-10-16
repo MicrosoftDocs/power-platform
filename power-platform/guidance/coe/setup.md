@@ -42,7 +42,7 @@ The following are prerequisites for installing the CoE Starter Kit as it's inclu
 
 -  The environment must have a data loss prevention (DLP) policy that allows [Common Data Service](https://docs.microsoft.com/connectors/commondataservice/), [Common Data Service (current environment)](https://docs.microsoft.com/connectors/commondataserviceforapps/), [Office 365 Users](https://docs.microsoft.com/connectors/office365users/), [Power Platform for Admins](https://docs.microsoft.com/connectors/powerplatformforadmins/), [Power Automate Management](https://docs.microsoft.com/connectors/flowmanagement/), [Office 365 Outlook](https://docs.microsoft.com/connectors/office365/), [Power Apps for Admins](https://docs.microsoft.com/connectors/powerappsforadmins/), [Power Apps for Makers](https://docs.microsoft.com/connectors/powerappsforappmakers/), [SharePoint](https://docs.microsoft.com/connectors/sharepointonline/), [Azure Aciver Directory (Azure AD)](https://docs.microsoft.com/connectors/azuread/), [Power Automate for Admins](https://docs.microsoft.com/connectors/microsoftflowforadmins/), [RSS](https://docs.microsoft.com/connectors/rss/), [Office 365 Groups](https://docs.microsoft.com/connectors/office365groups/), [Approvals](https://docs.microsoft.com/connectors/approvals/) and HTTP to be used together. Those connectors must be in the business data&ndash;only bucket of the DLP policy for this environment. If you're using the [audit log](setup-auditlog.md) solution, the custom connector used to connect to the Microsoft 365 audit log also must be included in your business data&ndash;only bucket.
 
-- If multiple DLP policies apply to the same environment, either all of them must have the connectors the CoE Starter Kit uses in business data only or&mdash;if you have a policy that applies to all environments that you don't want to change&mdash;you can exclude the CoE environment from that policy<!--note from editor: Edit okay?-->. More information: [DLP policy scope](https://docs.microsoft.com/power-platform/admin/wp-data-loss-prevention#policy-scope)
+- If multiple DLP policies apply to the same environment, either all of them must have the connectors the CoE Starter Kit uses in business data only or&mdash;if you have a policy that applies to all environments that you don't want to change&mdash;you can exclude the CoE environment from that policy. More information: [DLP policy scope](https://docs.microsoft.com/power-platform/admin/wp-data-loss-prevention#policy-scope)
 
 - You've downloaded the CoE solution and CoE Power BI dashboard files to your device. The entire content package can be downloaded directly at [aka.ms/CoEStarterKitDownload](https://aka.ms/CoEStarterKitDownload).
 
@@ -80,7 +80,7 @@ When you're ready to extend the CoE Starter Kit with your own ideas, you'll do s
    > [!NOTE]
    > It's currently not possible to extend canvas apps or flows. If you want to make customizations to apps and flows, create a copy and add them to your unmanaged solution.
 
-1. Deploy your solution to test and production. We recommend making modifications and installing updates pushed by our team to the solution in a development environment dedicated to this kit, and hosting a production environment that has the real data. If data is being accessed and contributed by other users, it's a good idea to have separate development, test, and production environments.<!--note from editor: Edit okay? -->
+1. Deploy your solution to test and production. We recommend making modifications and installing updates pushed by our team to the solution in a development environment dedicated to this kit, and hosting a production environment that has the real data. If data is being accessed and contributed by other users, it's a good idea to have separate development, test, and production environments.
 
 ## Installing updates
 
@@ -92,7 +92,7 @@ Install the updates by importing the latest version to the environment where you
 
 ### What licenses do I need to run this solution?
 
-The apps and flows in the CoE Starter Kit use Premium features like custom connectors and Common Data Service, therefore a per-app or per-user Power Apps license, in addition to a per-flow<!--note from editor: Edit okay? Or should this have been "per-flow or per-user Power Automate"? --> Power Automate license, is required to run and play the apps. More information: [Microsoft Power Platform licensing overview](https://docs.microsoft.com/power-platform/admin/pricing-billing-skus)
+The apps and flows in the CoE Starter Kit use Premium features like custom connectors and Common Data Service, therefore a per-app or per-user Power Apps license, in addition to a per-flow Power Automate license, is required to run and play the apps. More information: [Microsoft Power Platform licensing overview](https://docs.microsoft.com/power-platform/admin/pricing-billing-skus)
 
 If you want to use the Power BI report (packaged as part of the solution), you'll need a Power BI license. More information: [Power BI pricing](https://powerbi.microsoft.com/pricing/)
 

@@ -38,7 +38,7 @@ This is the first step of the installation process and is required for every oth
    1. Go to [aka.ms/ppac](https://admin.powerplatform.microsoft.com/).
    1. Select **Environments** > **+ New**, and then enter a name, type, and purpose.
    1. Select **Yes** for creating the database, and then select **Next**.
-   1. Leave **Sample apps and data**<!--note from editor: Edit okay?--> set to **No**
+   1. Leave **Sample apps and data** set to **No**
    1. Select **Save**.
 
 1. Go to your new environment.
@@ -128,7 +128,7 @@ The following assets depend on the CoE Settings entity:
    |------|------------|
    | Company Name | Your company name as it will appear in dashboards |
    |Brand Logo | Link to your logo as an image file |
-   | Brand Primary Color          | Hexadecimal value of your primary brand color (\#CCCCCC)<!--note from editor: What do these letters mean here and in the next row? Will it be obvious to the reader?--> |
+   | Brand Primary Color          | Hexadecimal value of your primary brand color (\#CCCCCC) |
    | Brand Secondary Color        | Hexadecimal value of your secondary brand color (\#DDDDDD)   |
    | Email End User Support       | Email address for your helpdesk or user computing support team      |
    | Email Maker Support          | Email address for your Microsoft Power Platform maker support team           |
@@ -140,7 +140,7 @@ The following assets depend on the CoE Settings entity:
 
 1. Select **Save**.
 
-You don't need to add more records to the CoE Settings table. Any dependent components will always get values from the first record.<!--note from editor: Edits okay?-->
+You don't need to add more records to the CoE Settings table. Any dependent components will always get values from the first record.
 
 ## Set up audit log sync
 

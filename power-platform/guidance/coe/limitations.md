@@ -18,39 +18,39 @@ search.app:
 ---
 # Limitations
 
-There is no "one size fits all" solution for a Center of Excellence (CoE). Some companies will want a very restrictive set of rules on their organization in hopes of mitigating the unknown, while others will want to let users personally explore without limitations. Because of this, the CoE Starter Kit doesn't come equipped with a set of design patterns for everyone. For example, there are no components that are configured to automatically delete resources, because we didn't want to provide a tool that might unintentionally disrupt a business. Therefore, if your organization wants a more restrictive implementation, it must implement those restrictions in addition to using the tools from the starter kit.<!--note from editor: To fix the dangling modifier.-->
+There is no "one size fits all" solution for a Center of Excellence (CoE). Some companies will want a very restrictive set of rules on their organization in hopes of mitigating the unknown, while others will want to let users personally explore without limitations. Because of this, the CoE Starter Kit doesn't come equipped with a set of design patterns for everyone. For example, there are no components that are configured to automatically delete resources, because we didn't want to provide a tool that might unintentionally disrupt a business. Therefore, if your organization wants a more restrictive implementation, it must implement those restrictions in addition to using the tools from the starter kit.
 
 The following sections describe limitations for some components.
 
 ## Timeouts in the Admin | Sync Template V2
 
-The Common Data Service connector might experience some throttling limits if the tenant has a lot of resources. If you see 429 errors in the flow run history occurring in later runs, you can try the following resolution steps:<!--note from editor: If these two main steps should be taken sequentially, please stet the ordered list, otherwise they should be bullets. -->
+The Common Data Service connector might experience some throttling limits if the tenant has a lot of resources. If you see 429 errors in the flow run history occurring in later runs, you can try the following resolution steps:
 
 - **Configure the retry policy**
   1. Open **Admin \| Sync Template v2**, and then select **Edit**.
   1. Expand the step **Get Environments and store them in the CoE Common Data Service Entity**.
   1. Expand the step **Apply to each Environment**
-  1. Go to the **Settings** pane for each call to Common Data Service, and configure the timeout/retry settings.<!--note from editor: Can you say which values the reader should use for these settings, or are they going to know already?-->
+  1. Go to the **Settings** pane for each call to Common Data Service, and configure the timeout/retry settings. The default count is set to **10** and the default interval is set to **PT10S** - increase the values incrementally here.
 
      ![Configure retry policy](media/coe72.png "Configure the retry policy")
 
 - **Configure (reduce) concurrency in Foreach loops to reduce simultaneous calls**
   1. Open **Admin \| Sync Template v2**, and then select **Edit**.
   1. Expand the step **Get Environments and store them in the CoE Common Data Service Entity**.
-  1. Go to **Settings** for the **Apply to each Environment** step. 
+  1. Go to **Settings** for the **Apply to each Environment** step.
 
      ![Configure concurrency in Foreach](media/coe73.png "Configure concurrency in Foreach")
 
   1. Use the slider to reduce the value of **Degree of Parallelism**. The default value is 50; reducing the parallelism here will increase the runtime of the flow, so we suggest gradually lowering the number.
 
-## DLP Editor
+<!-- currently this apps are not available ## DLP Editor
 
 - The Environments call returns only the first 2,000 environments.
 - The app can't write back environment-type policies.
 
 ## DLP Customizer
 
-The app currently doesn't work for custom connectors that are installed as part of a managed solution.
+The app currently doesn't work for custom connectors that are installed as part of a managed solution. -->
 
 ## Government Community Cloud (GCC) environments
 
@@ -95,9 +95,9 @@ To add custom connectors shipped as part of this solution to the business data&n
 
 ## Security groups and approvals
 
-We recommend against using security groups to control access to the CoE environment, because it's likely that users who don't have access to this environment will be participating in approvals.<!--note from editor: Edit okay? I couldn't quite tell what this meant.-->
-If you choose to use a security group to control access, users will have to be a part of that group to work with the archival solutions.<!--note from editor: Edits okay?-->
+We recommend against using security groups to control access to the CoE environment, because it's likely that users who don't have access to this environment will be participating in approvals.
+If you choose to use a security group to control access, users will have to be a part of that group to work with the archival solutions.
 
 ## Shared component library in the theming components solution
 
-The shared component library in the [theming components solution](theming-components.md) isn't editable. Make your own copy if you want to expand<!--note from editor: Not "extend"? I'm not sure how expanding a library is related to editing it.--> it.
+The shared component library in the [theming components solution](theming-components.md) isn't editable. Make your own copy if you want to extend it.

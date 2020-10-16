@@ -49,7 +49,7 @@ More information: [Create a document library in SharePoint](https://support.offi
 
 ## Create an Azure AD security group
 
-The Admin \| Find and Add Admins as Owners for Apps that Leverage Certain Connectors<!--note from editor: Rather than use italics (which I've never thought was a good idea even though it was my idea :) ), why don't we treat flow names like file names and use title caps? The Style Guide allows that, and I think it's a good idea for these long flow names that are otherwise so hard to set apart.--> flow adds the Admin security group to apps; therefore, you need to configure the Admin security group first.
+Some features of the CoE Starter Kit require an Admin security group; therefore, you need to configure the Admin security group first.
 
 If you already have a security group, go to [portal.azure.com](<https://portal.azure.com/>) and get its object ID.
 
@@ -79,7 +79,7 @@ The core components solution is required for the audit and report components sol
    | Archive Site URL (SharePoint Site)  | The Archive and Clean Up flow archives app files (.msapp) to a SharePoint site. Paste the URL of the team site you created earlier in [Create a SharePoint document library](#create-a-sharepoint-document-library).
    | Archive Folder                      | The folder (document library) in the SharePoint site where you want the .msapp file to be stored. Paste the name of the [document library you created earlier](#create-a-sharepoint-document-library).   |
    | Auto Delete On Archive | Determines whether apps are deleted when they're archived in the Admin \| App Archive and Clean Up - Check Approvals and Archive flow. <br> Value must be Yes or No (default). |
-   | Developer Compliance Center         | Leave this blank on import, and [update the environment variable](#update-environment-variables) after the import has finished by first going to the details page of the Developer Compliance Center (canvas app) included with this solution, and then copying the web link (the link used <!--note from editor: Edit okay?-->to open the app) and pasting it into this variable.  |
+   | Developer Compliance Center         | Leave this blank on import, and [update the environment variable](#update-environment-variables) after the import has finished by first going to the details page of the Developer Compliance Center (canvas app) included with this solution, and then copying the web link (the link used to open the app) and pasting it into this variable.  |
    | Power Platform Admin Security Group | The Admin \| Find and Add Admins as Owners for Apps that Leverage Certain Connectors flow adds the Admin security group to apps. Configure the Admin security group first, and then enter the Azure AD group ID (**Object Id**) of the group here. Note: Be sure you enter the **Object Id**, not an email address. |
 
 1. Select **Import**, without adding values to the environment variables. We'll update them in the following step.
@@ -136,7 +136,7 @@ The archive approval flows (Admin \| App Archive and Clean Up – Start Approval
 
 ## Activate the flows
 
-This governance components solution contains five<!--note from editor: Edit okay? Original said "seven." Should we add "Admin \| Find and Add Admins as Owners for Apps that Leverage Certain Connectors" and "Admin | Find and Disable Flows that Leverage Certain Connectors"?--> flows:
+This governance components solution contains five flows:
 
 - Admin \| App Archive and Clean Up – Start Approval
 - Admin \| App Archive and Clean Up – Check Approval

@@ -19,7 +19,7 @@ search.app:
 
 # Use core components
 
-These components provide the core to get started with setting up a Center of Excellence (CoE). They sync all your resources into entities and build admin apps on top of that to help you get more visibility of the apps, flows, and makers in your environment. Additionally, apps like the DLP Editor<!--note from editor: Discussion of this app has been commented out.--> and Set App Permissions help with daily admin tasks. The core components solution contains assets relevant only to admins.<!--note from editor: If this is the case, is it necessary to include information about permissions for individual apps? Can there be one blanket statement about permissions in this article?--> More information: [Set up core components](setup-core-components.md)
+These components provide the core to get started with setting up a Center of Excellence (CoE). They sync all your resources into entities and build admin apps on top of that to help you get more visibility of the apps, flows, and makers in your environment. Additionally, apps like the Set App Permissions help with daily admin tasks. The core components solution contains assets relevant only to admins. More information: [Set up core components](setup-core-components.md)
 
 ## Demo: Core components
 
@@ -37,9 +37,6 @@ Here's a breakdown of the assets that form the core components:
   - [Admin | Sync Audit Log (flow)](#flows)
   - [Power BI dashboard](#power-bi-report)
   - [Power Platform Admin View (model-driven app)](#apps)
-- **DLP strategy and visibility**
-  - [DLP Editor (canvas app)](#apps)
-  - [DLP Customizer (canvas app)](#apps)<!--note from editor: Discussion of this app is also commented out.-->
 - **Bulk change permissions for apps and flow**
   - [Set App Permissions (canvas app)](#apps)
   - [Set Flow Permissions (canvas app)](#apps)
@@ -197,9 +194,9 @@ The [sync flows](#flows) of the CoE Starter Kit sync your tenant resources to th
 
 ### Admin \| Sync Template v2
 
-The Admin \| Sync Template v2 flow runs on a daily schedule, retrieves the environments in your tenant by using [List Environments as Admin](https://docs.microsoft.com/connectors/powerplatformforadmins/#list-environments-as-admin), and creates or updates a record for each environment in the Common Data Service Environment entity.
+The Admin \| Sync Template v2 flow runs on a weekly schedule, retrieves the environments in your tenant by using [List Environments as Admin](https://docs.microsoft.com/connectors/powerplatformforadmins/#list-environments-as-admin), and creates or updates a record for each environment in the Common Data Service Environment entity.
 
-Running this flow will also trigger the rest of the sync flows indirectly by updating the environment records in the Common Data Service instance you instantiated.<!--note from editor: "instance you instantiated" seems repetitive, but I'm not sure how to fix it. Can we just drop "you instantiated"?-->
+Running this flow will also trigger the rest of the sync flows indirectly by updating the environment records in the Common Data Service instance.
 
 ### Admin \| Sync Template v2 (Apps)
 
@@ -230,7 +227,7 @@ The Admin \| Sync Template v2 (Model Driven Apps) flow runs when an environment 
 
 ### Admin \| Sync Template v2 (Power Apps User Shared With)
 
-The Admin \| Sync Template v2 (Power Apps User Shared With) flow runs when a PowerApps App record (canvas app)<!--note from editor: I don't think "PowerApps App record" is an app, is it? --> is created or modified, and gets who the app is shared with by using [Get App Role Assignments as Admin](https://docs.microsoft.com/connectors/powerappsforadmins/#get-app-role-assignments-as-admin).
+The Admin \| Sync Template v2 (Power Apps User Shared With) flow runs when a PowerApps App record is created or modified, and gets who the app is shared with by using [Get App Role Assignments as Admin](https://docs.microsoft.com/connectors/powerappsforadmins/#get-app-role-assignments-as-admin).
 
 ### Admin \| Sync Template v2 (PVA)
 
@@ -297,7 +294,7 @@ Use this app to:
 
 You can also use this app to find apps that have been orphaned by the owner's having left your organization, and clean them up. More information: [Share a canvas app in Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/share-app)
 
-**Permission**: This app is intended to be used only by admins. Microsoft Power Platform Service Admin or Global Admin permission is required. Share this app<!--note from editor: Edit okay?--> with your CoE admins.
+**Permission**: This app is intended to be used only by admins. Microsoft Power Platform Service Admin or Global Admin permission is required. Share this app with your CoE admins.
 
 ![Set App Permissions](media/SetAppPerms.png "Set App Permissions")
 
@@ -330,9 +327,7 @@ Use this app to:
 - Add additional information, such as notes and risk assessments, to your resources.
 - Complete [app audits](example-processes.md).
 
-<!--note from editor: Should the following paragraph be included here?
 **Permission**: This app is intended to be used only by admins. Power Platform Service Admin or Global Admin permission is required. Share this app with your CoE admins.
--->
 
 ![Power Platform Admin View model-driven app](media/coe-mda1.png "Power Platform Admin View model-driven app")
 

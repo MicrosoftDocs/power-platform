@@ -66,9 +66,9 @@ Represents available training events created through the Training in a Day Manag
 
 Sends an email to a user who created an app, flow, custom connector, or environment. This flow gets triggered when a new record is created in the maker table.  
 
-You can customize the email sent out by the flow. By default, it will look like the following image.<!--note from editor: Is the wording and format of this email important to your message? If so, please use alt text to describe it for a reader with low vision.--> 
+You can customize the email sent out by the flow. By default, it will look like the following image.
 
-![Welcome email](media/coe5.PNG "Welcome email")
+![The Welcome email introduces a new maker to learning resources available.](media/coe5.PNG "The Welcome email introduces a new maker to learning resources available.")
 
 ### Admin \| Newsletter with Product Updates
 

@@ -125,14 +125,14 @@ You'll now configure the Power Apps visuals in the Power BI dashboard to point t
 
       ![Go to App Detail page in Power BI Desktop](media/coe84.PNG "Go to App Detail page in Power BI Desktop")
 
-1. Select the **Power Apps visual**<!--note from editor: Is this really what it's called on the tooltip?--> from **Visualizations**.
+1. Select **Power Apps for Power BI** from **Visualizations**.
 
      ![Power Apps in Power BI visual](media/coe85.PNG "Power Apps in Power BI visual")
 
 1. Select the fields from your dataset that you want to use in the app.
-1. With the visual selected, select **admin_appid** from **App** (on the **Fields** pane).<!--note from editor: I don't understand where the "App for Power Apps Data" comes from in the alt text for the next two images. -->
+1. With the visual selected, select **admin_appid** from **App** (on the **Fields** pane).
 
-     ![Select admin_appid from App for Power Apps Data](media/coe86.PNG "Select admin_appid from App for Power Apps Data")
+     ![Select admin_appid from App and add it to the Power Apps Data area on the visual](media/coe86.PNG "Select admin_appid from App and add it to the Power Apps Data area on the visual")
 
 1. With the visual selected, select the **admin_environmentid** environment (on the **Fields** pane).
 
@@ -156,7 +156,7 @@ You'll now configure the Power Apps visuals in the Power BI dashboard to point t
    Select the fields from your dataset that you want to use in the app.
 1. With the visual selected, select the **admin_flowid** and **admin_flowenvironment** flows under **Fields**.
 
-     ![Select admin_flowid and admin_flowenvironment from Flow for Power Apps Data](media/coe91.PNG "Select admin_flowid and admin_flowenvironment from Flow for Power Apps Data")
+     ![Select admin_flowid and admin_flowenvironment from Flow and add it to the Power Apps Data area on the visual](media/coe91.PNG "Select admin_flowid and admin_flowenvironment from Flow and add it to the Power Apps Data area on the visual")
 
 1. In the visual, select the environment of your CoE (where you imported the apps to).
 1. Select **Choose app**.

@@ -99,7 +99,7 @@ We've created a starter set of templates for you. To access them, do the followi
 
 ### Add your own templates
 
-If you have existing templates that you'd like to share with your makers (for example, template apps, brand guidelines, or app and flow samples), upload them to the TemplateApps<!--note from editor: You called this "AppTemplates" in line 58.--> document library so they show up in the template catalog.
+If you have existing templates that you'd like to share with your makers (for example, template apps, brand guidelines, or app and flow samples), upload them to the AppTemplates document library so they show up in the template catalog.
 
 ## Update environment variables
 

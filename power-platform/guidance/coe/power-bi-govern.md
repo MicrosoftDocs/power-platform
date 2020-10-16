@@ -46,7 +46,7 @@ Some typical assessments an admin might perform are described in the following s
 
 ### Identify widely shared apps
 
-Set **Shared with Everyone** to **True**, or select the **Number of Shared Users** on the slider on the rightmost filter pane<!--note from editor: Edit okay? Writing Style Guide doesn't like "right-hand."--> to find widely shared apps.
+Set **Shared with Everyone** to **True**, or select the **Number of Shared Users** on the slider on the rightmost filter pane to find widely shared apps.
 
 - Widely shared resources (shared with the entire tenant or many individual users) might need a stronger support model, or you might need to review the number of people they're shared with.
 
@@ -183,7 +183,7 @@ The **Archive Score** is the sum of multiple criteria:
 
 - Has the flow been modified since it was created? (+1)
 
-- Does the flow<!--note from editor: Should this be "flow name"?--> use non-production words such as *test*, *demo*, or *sample*? (+1)
+- Does the flow name use non-production words such as *test*, *demo*, or *sample*? (+1)
 
 - When was the flow last modified? (+3 for more than two years ago, +2 for more than one year ago, +1 for more than three months ago)
 
@@ -203,7 +203,7 @@ The **Archive Score** is the sum of multiple criteria:
 
 - Has the flow been modified since it was created? (+1)
 
-- Does the flow<!--note from editor: Should this be "flow name"?--> use non-production words such as *test*, *demo*, or *sample*? (+1)
+- Does the flow name use non-production words such as *test*, *demo*, or *sample*? (+1)
 
 - When was the flow last modified? (+3 for more than two years ago, +2 for more than one year ago, +1 for more than three months ago)
 

@@ -19,7 +19,7 @@ search.app:
 
 # Set up theming components
 
-You use theming components to create, manage, and share themes for canvas apps. A *theme* contains a collection of styles that define multiple design properties for controls and components such as colors, fonts, and borders. These styles are then applied automatically to controls and components when makers use the themed template app to create a new app.<!--note from editor: Suggested.-->
+You use theming components to create, manage, and share themes for canvas apps. A *theme* contains a collection of styles that define multiple design properties for controls and components such as colors, fonts, and borders. These styles are then applied automatically to controls and components when makers use the themed template app to create a new app.
 
 The theming components solution contains assets that are relevant to makers in addition to designers.
 
@@ -33,7 +33,7 @@ Before you begin, review the [prerequisites](setup.md#prerequisites) for using t
 
 ## Prerequisites
 
-- The Power Apps theming<!--note from editor: "theming system solution" seems out of step with the other references to solutions. --> solution contains Power Apps component framework<!--note from editor: Don't abbreviate, via Cloud Style Guide.--> elements. Publishing of canvas apps with code components must be enabled for the environment:
+- The Power Apps theming solution contains Power Apps component framework elements. Publishing of canvas apps with code components must be enabled for the environment:
 
     1. Go to the [Power Platform admin center](https://aka.ms/ppac).
     1. Go to your CoE environment, or the environment where you plan to import the solution.
