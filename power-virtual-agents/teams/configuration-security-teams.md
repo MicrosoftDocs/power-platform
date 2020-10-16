@@ -2,7 +2,7 @@
 title: "Configure access and authentication in Microsoft Teams"
 description: "Determine who can access and interact with your bot in the Power Virtual Agents app in Microsoft Teams."
 ms.date: 9/22/2020
-ms.service: "dynamics-365-ai"
+ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt
