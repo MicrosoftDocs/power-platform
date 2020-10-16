@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/08/2020
+ms.date: 10/16/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -135,10 +135,6 @@ In the **Account** and **Contact** fields, select the matching account and conta
 The **Account** and **Contact** lookup fields are filtered with matched results and shown along with additional information to precisely identify the record to which the lead should be linked. For example, when you select the **Contact** lookup search icon, you'll see only matched contact records.
 
 ### Duplicate detection when improved duplicate detection and merge experience is enabled
-
-
-<!-- There is a grammatical error in the dialog box. It should read "Account or Contact may already exist" (not "exists"). I'm correcting the mention of it in the procedure. -->
-
 
 When the improved duplicate detection and merge experience is enabled, you will see the **Account or Contact may already exist** dialog box.
 
