@@ -1,7 +1,7 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps"
 description: Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps 
-ms.date: 10/07/2020
+ms.date: 10/16/2020
 ms.topic: "article"
 ms.assetid: 994cc854-17f6-45d6-bc20-fcf1a3f2d6d6
 searchScope:
@@ -160,7 +160,7 @@ customers in Common Data Service.
 To allow for transition of customers and partner applications:
 
 - Effective October 2020, the authentication protocol will be retired for all new tenants.
-- Effective October 2020, the authentication protocol will not be available in all new [regions](https://docs.microsoft.com/power-platform/admin/regions-overview#what-regions-are-available).
+- Effective October 2020, the authentication protocol will not be available in all new [regions](regions-overview.md#what-regions-are-available).
 - Effective April 2021, the authentication protocol will be retired for all new environments within a tenant.
 - Effective April 2022, the authentication protocol will be retired for all new and existing environments within a tenant.
 
