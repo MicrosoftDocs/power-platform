@@ -20,9 +20,12 @@ ms.collection: virtual-agent
 
 By default, you can download up to seven days of bot conversation transcript sessions from the past 30 days directly from the Power Virtual Agents portal.
 
-You can also download and view chat transcripts in the Power Platform Admin Center.
+You can also download and view chat transcripts in the Power Apps portal.
 
 Lastly, you can manage the retention period for transcripts. This can be useful if you want to increase the date range from 30 days to something else.
+
+>[!NOTE]
+>If you no longer have access to your environment, you'll need to [create a support request](https://admin.powerplatform.microsoft.com/support) in the Power Platform admin center.
 
 ## Prerequisites
 
@@ -63,9 +66,9 @@ The downloaded file contains the following information:
 
 - TopicId: A unique identifier of the last authored topic triggered in this session. 
 
-## View and export bot conversation transcripts from the Power Platform admin center
+## View and export bot conversation transcripts from the Power Apps portal
 
-You can also view and export bot conversation transcripts from the Power Platform admin center.
+You can also view and export bot conversation transcripts from the Power Apps portal.
 
 First, you'll need to sign in to [https://www.powerapps.com](https://www.powerapps.com) with your credentials.
 
