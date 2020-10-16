@@ -30,6 +30,17 @@ This topic covers how you can set customer engagement apps to audit a broad rang
 ## What events are audited
 Logging takes place at the SDK layer which means a single action can trigger multiple events that are logged. The following are a sample of admin and user events you can audit.
 
+### Admin-related events
+
+|Event  |Description  |
+|---------|---------|
+|Publishing customizations  |An admin publishes a new customization which overrides a change done by the previous one. The action requires auditing for analysis.    |
+|Attribute deletes     |Admin accidentally deletes an attribute. This action also deletes the data. |
+|Team, user management     |Who was added, who was deleted, what access rights a user/team had is important for analyzing impact.|
+|Configure instance     |Adding solutions to an instance.|
+|Backup and restore     |Backup and restore actions at the tenant.|
+|Manage applications     |New instance added, existing instance deleted, trials converted to paid, etc.|
+
 ### User and support-related events 
 
 |Event  |Description  |
