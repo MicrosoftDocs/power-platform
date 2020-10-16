@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/04/2020
+ms.date: 10/16/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -52,6 +52,7 @@ To check for duplicates in the web application, you can use **Detect Duplicates*
 A duplicate detection job runs in the background while you do other things in the customer engagement apps. You can request email notification from customer engagement apps upon the completion of a duplicate detection job.  
   
 ### See also  
+ [Detect duplicate records and merge](detect-duplicate-records.md) <br />
  [Import data (all record types)](../admin/import-data-all-record-types.md)   
  [Check for duplicates](set-up-duplicate-detection-rules-keep-data-clean.md)   
  [Set up duplicate detection rules](set-up-duplicate-detection-rules-keep-data-clean.md)   
