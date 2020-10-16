@@ -121,7 +121,7 @@ In this flow, we're going to provide a special message and email when someone as
 
 
 4. Insert a **Call to action** and choose the flow you created. Set the `String_Input` to **Requirements** and the `Number_Input` to **Numberguests**.
-5. Now insert a message node with those variables. You could add another flow underneath this emails the information.
+5. Now insert a message node with those variables. You can now add another flow that emails the information.
 
  :::image type="content" source="media/flow-test-2.png" alt-text="Insert message node in canvas":::
 
