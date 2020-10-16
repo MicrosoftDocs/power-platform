@@ -3,7 +3,7 @@ title: "Overview of Power Virtual Agents in Microsoft Teams"
 description: "Use Power Virtual Agents in Teams to create chatbots for fellow employees or team members."
 keywords: "PVA, teams"
 ms.date: 9/22/2020
-ms.service: "dynamics-365-ai"
+ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt
