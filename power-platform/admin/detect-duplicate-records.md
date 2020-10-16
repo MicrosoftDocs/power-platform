@@ -148,7 +148,7 @@ To associate the lead record to an existing matching record, select the record, 
 The lead is qualified.
 
 ### See also  
- [Detect duplicate data so you can fix or remove it](detect-duplicate-data.md)
+ [Detect duplicate data so you can fix or remove it](detect-duplicate-data.md) <br />
  [Import data (all record types)](../admin/import-data-all-record-types.md)   
  [Check for duplicates](set-up-duplicate-detection-rules-keep-data-clean.md)   
  [Set up duplicate detection rules](set-up-duplicate-detection-rules-keep-data-clean.md)   
