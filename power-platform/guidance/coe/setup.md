@@ -35,6 +35,7 @@ The following are prerequisites for installing the CoE Starter Kit as it's inclu
     -  Microsoft Power Platform service admin, global tenant admin, or Dynamics 365 service admin for access to all tenant resources through the Power Apps APIs.
     -  This solution will work for environment admins, but the view will be restricted to only the environments an environment admin has access to.
     -  Dynamics 365 service admin is required for getting details about model-driven apps and solution-aware flows.
+    - This account must be email enabled.
 
 -  Power Apps Premium license (per app, per user) is required for using Common Data Service.
 

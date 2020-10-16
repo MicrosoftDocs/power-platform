@@ -225,19 +225,11 @@ The Admin \| Sync Template v2 (Custom Connector) flow runs when an environment i
 
 The Admin \| Sync Template v2 (Model Driven Apps) flow runs when an environment is created or modified, and gets model-driven app information. This information is retrieved from underlying Common Data Service entities and requires the user running the flow to have system administrator privileges in the environment.
 
-### Admin \| Sync Template v2 (Power Apps User Shared With)
-
-The Admin \| Sync Template v2 (Power Apps User Shared With) flow runs when a PowerApps App record is created or modified, and gets who the app is shared with by using [Get App Role Assignments as Admin](https://docs.microsoft.com/connectors/powerappsforadmins/#get-app-role-assignments-as-admin).
-
 ### Admin \| Sync Template v2 (PVA)
 
 The Admin \| Sync Template v2 (PVA) flow runs when an environment is created or updated, and retrieves Power Virtual Agents (bot) information. This information is retrieved from underlying Common Data Service entities and requires the user running the flow to have system administrator privileges in the environment.
 
 Turning on this flow is optional, and we recommend that you do so only if you're using Power Virtual Agents in your tenant and are interested in getting a tenant-wide overview.
-
-### Admin \| Sync Template v2 (Check Deleted)
-
-The Admin \| Sync Template v2 (Check Deleted) flow runs weekly, and compares CoE to the tenant to determine whether any objects were deleted since it was last run. The flow either just marks the objects as deleted (if the environment variable *Also Delete from CoE* is set to No) or deletes them from the CoE (if *Also Delete from CoE* is set to Yes).
 
 ### Admin \| Sync Template v2 (Sync Flow Errors)
 
@@ -254,6 +246,20 @@ Turning on this flow is optional, and we recommend that you do so only if you're
 The Admin \| Sync Template v2 (UI flow runs) flow runs on a schedule, and gets UI flow run history and session details.
 
 Turning on this flow is optional, and we recommended that you do so only if you're using UI flows in your tenant and are interested in getting a tenant-wide overview.
+
+### CLEANUP - Admin \| Sync Template v2 (Power Apps User Shared With)
+
+This long running flow runs every other week, and gets who the app is shared with by using [Get App Role Assignments as Admin](https://docs.microsoft.com/connectors/powerappsforadmins/#get-app-role-assignments-as-admin).
+
+### CLEANUP - Admin \| Sync Template v2 (Check Deleted)
+
+This long running flow runs every other week, and compares CoE to the tenant to determine if any objects were deleted since last run. Either just marks them as deleted (if env var Also Delete from CoE = no) or deletes them from the CoE (if Also Delete from CoE = yes).
+
+The audit log solution is able to find this information in on a daily basis for apps and flows, but not for other resources such as environments, UI flows and chatbots. Run this flow periodically to check for deleted resources.
+
+### CLEANUP - Admin \| Sync Template v2 (Orphaned Makers)
+
+This flow runs weekly, and checks if any makers have left the organization - if maker information can not be found in Azure AD/Office 365 Users, any resources created by the maker (apps, flows, environments, chatbots and UI flows) are marked as orphaned.
 
 ## Apps
 
