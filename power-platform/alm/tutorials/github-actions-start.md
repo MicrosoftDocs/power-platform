@@ -56,7 +56,7 @@ You will need to create, or have access to, three Common Data Service environmen
 
 ![Select environment](../media/github-actions-tutorial/gh-lab-0.70.png "Select environment")
 
-8. Set the currency to *USD* and language to **English**. Include the sample apps and data, and then select **Create database**.
+8. Set the currency to **USD** and language to **English**. Include the sample apps and data, and then select **Create database**.
 
 ![Set currency](../media/github-actions-tutorial/gh-lab-0.80.png "Set currency")
 
@@ -65,4 +65,8 @@ You will need to create, or have access to, three Common Data Service environmen
 10.	Now you have the environments that you will need in the next module of this tutorial.
 
 > [!div class="nextstepaction"]
-> [Next steps](./github-actions-1.md)
+> [Next steps](./github-actions-build.md)
+
+### See Also
+
+[Automate your workflow from idea to production](https://github.com/features/actions)

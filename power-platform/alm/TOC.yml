@@ -122,8 +122,8 @@
   - name: Tutorials
     items:
     - name: Get started with GitHub Actions
-      href: tutorials/github-actions-0.md
+      href: tutorials/github-actions-start.md
     - name: Build an app for GitHub Actions
-      href: tutorials/github-actions-1.md
+      href: tutorials/github-actions-build.md
     - name: Automate deployment using GitHub Actions
-      href: tutorials/github-actions-2.md
+      href: tutorials/github-actions-deploy.md
