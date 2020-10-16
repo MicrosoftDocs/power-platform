@@ -219,10 +219,6 @@ Runs when an environment is created or modified, and gets custom connector infor
 
 Runs when an environment is created or modified, and gets model-driven app information. This information is retrieved from underlying CDS entities and requires the user running the flow to have System Administrator privileges to the environment.
 
-### Admin \| Sync Template v2 (Power Apps User Shared With))
-
-Runs when a PowerApps App record (canvas app) is created or modified, and gets who the app is shared with using [Get App Role Assignments as Admin](https://docs.microsoft.com/connectors/powerappsforadmins/#get-app-role-assignments-as-admin).
-
 ### Admin \| Sync Template v2 (PVA)
 
 Runs when an environment is created or updated, and retrieves Power Virtual Agent (bot) information. This information is retrieved from underlying CDS entities and requires the user running the flow to have System Administrator privileges to the environment.
@@ -247,6 +243,16 @@ Turning this flow is optional; and only recommended if you are using UI flows in
 
 This flow runs on a schedule, and gets UI flow run history and session details.
 Turning this flow is optional; and only recommended if you are using UI flows in your tenant and interested in getting tenant wide overview.
+
+### CLEANUP - Admin \| Sync Template v2 (Check Deleted)
+
+This long running flow runs every other week, and compares CoE to the tenant to determine if any objects were deleted since last run. Either just marks them as deleted (if env var *Also Delete from CoE* = no) or deletes them from the CoE (if *Also Delete from CoE* = yes).
+
+The audit log solution is able to find this information in real  time for some, but not all, objects. So if you have that configured you should still run this flow periodically.
+
+### CLEANUP - Admin \| Sync Template v2 (Power Apps User Shared With))
+
+This long running flow runs every other week. It walks the tenant and finds, for all apps in the tenant, who the app is shared with using this connector: [Get App Role Assignments as Admin](https://docs.microsoft.com/connectors/powerappsforadmins/#get-app-role-assignments-as-admin).
 
 ## Apps
 
