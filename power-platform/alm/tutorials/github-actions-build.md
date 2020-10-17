@@ -20,7 +20,19 @@ search.app:
 
 # Tutorial: Build a model-driven app for deployment using GitHub Actions for Microsoft Power Platform
 
-In this tutorial you will be creating a basic model-driven app to use in the next tutorial where you will learn how to automate the application lifecycle management of the app.
+In this tutorial, you will be creating a simple model-driven app to deploy in the next tutorial.
+
+> [!div class="checklist"]
+> * Build a model-driven app
+
+In the next tutorial, you will learn how to:
+
+> [!div class="checklist"]
+> * Automate the application lifecycle management of your app
+
+If you already have a model-driven app in your development environment that you can use with the next tutorial, proceed to the end of this article for the next steps.
+
+## Build a model-driven app
 
 1.	Navigate to make.powerapps.com and sign in with your credentials.  Click the environment selector dropdown in the header and select your development environment.
 
@@ -96,3 +108,7 @@ Note: The solution publisher specifies who developed the app, so you should alwa
 
 > [!div class="nextstepaction"]
 > [Next steps](./github-actions-deploy.md)
+
+### See Also
+
+[Automate your workflow from idea to production](https://github.com/features/actions)
