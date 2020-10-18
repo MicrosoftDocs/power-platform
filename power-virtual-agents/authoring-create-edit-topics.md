@@ -10,6 +10,8 @@ ms.author: iawilt
 manager: shellyha
 ms.custom: authoring, ceX
 ms.collection: virtual-agent
+searchScope:
+  - "Power Virtual Agents"
 ---
 
 
