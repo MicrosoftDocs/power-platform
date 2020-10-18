@@ -10,6 +10,8 @@ ms.author: iawilt
 manager: shellyha
 ms.custom: onboarding, ceX
 ms.collection: virtual-agent
+searchScope:
+  - "Power Virtual Agents"
 ---
 
 # Create and delete Power Virtual Agents bots

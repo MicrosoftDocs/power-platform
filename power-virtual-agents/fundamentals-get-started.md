@@ -10,6 +10,8 @@ ms.author: iawilt
 manager: shellyha
 ms.custom: fundamentals, portal, ceX
 ms.collection: virtual-agent
+searchScope:
+  - "Power Virtual Agents"
 ---
 
 # Quickstart: Create and deploy a Power Virtual Agents bot online
