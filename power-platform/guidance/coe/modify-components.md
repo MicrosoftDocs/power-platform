@@ -22,10 +22,10 @@ Before making any changes to the Center of Excellence (CoE) Starter Kit, follow 
 
 ## Change the Welcome email to an Azure AD security group
 
-If you'd prefer to use an Azure Active Directory (Azure AD) security group instead of a Microsoft 365 group for your makers, you can modify the *Admin \| Welcome Email* flow.  
+If you'd prefer to use an Azure Active Directory (Azure AD) security group instead of a Microsoft 365 group for your makers, you can modify the Admin \| Welcome Email flow.  
 
 > [!NOTE]
-> Using an Azure AD security group will allow you to share apps with your maker security group. Currently, apps can't be shared with Microsoft 365 Groups.
+> Using an Azure AD security group will allow you to share apps with your maker security group. Currently, apps can't be shared with Microsoft 365 groups.
 
 1. Go to [make.powerapps.com](<https://make.powerapps.com>), and set the current environment to the environment where the CoE solution is installed.
 
@@ -57,23 +57,23 @@ If you'd prefer to use an Azure Active Directory (Azure AD) security group inste
 
 1. Select **Save**.
 
-## Set up the Template Catalog and upload components
+## Set up the template catalog and upload components
 
-Open the Template Catalog (canvas app) and edit the SharePoint connection to point to your new document library.
+Open Template Catalog (canvas app), and edit the SharePoint connection to point to your new document library.
 
-1. Browse to the **Center of Excellence - Nurture Components solution**.
+1. Browse to **Center of Excellence - Nurture Components solution**.
 
 1. Select **Template Catalog**, and then select **Edit**.
 
-1. Select **File** > **Save As** to create your own copy so that updates to the starter kit don't erase your changes. Add your copy of the Template Catalog to your unmanaged solution.
+1. Select **File** > **Save As** to create your own copy so that any updates to the starter kit won't erase your changes. Add your copy of the template catalog to your unmanaged solution.
 
-1. Go back to your copy of the Template Catalog.
+1. Go back to your copy of the template catalog.
 
-1. Select the **Data** icon in the left pane, and remove the reference to the SharePoint document library shown.
+1. On the left pane, select the **Data** icon, and remove the reference to the SharePoint document library.
 
     ![Template Catalog setup - modify SharePoint connection](media/coe76.png "Template Catalog setup - modify SharePoint connection")
 
-1. In the search bar under **Data sources**, enter **SharePoint**, select the SharePoint data source shown, and then select **Add a connection**.
+1. In the search bar under **Data sources**, enter **SharePoint**, select the SharePoint data source, and then select **Add a connection**.
 
     ![Template Catalog setup - add a SharePoint connection](media/coe77.png "Template Catalog setup - add a SharePoint connection")
 
@@ -85,7 +85,7 @@ Open the Template Catalog (canvas app) and edit the SharePoint connection to poi
 
 Your template catalog is now ready.
 
-![Template Catalog](media/coe78.png "Template Catalog")
+![Template catalog](media/coe78.png "Template catalog")
 
 <!--- Commenting this out until version 3.20041.19 is live so that these msapp files will work in production
 ### Controls provided in the Template Catalog app

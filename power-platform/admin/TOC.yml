@@ -515,13 +515,12 @@
           href: about-team-templates.md
         - name: Team templates for access rights 
           href: create-team-template-add-entity-form.md
-
+      - name: Encryption
+        items:
         - name: Encryption
-          items:
-          - name: Encryption
-            href: data-encryption.md
-          - name: Manage encryption key
-            href: manage-encryption-key.md 
+          href: data-encryption.md
+        - name: Manage encryption key
+          href: manage-encryption-key.md 
     - name: SharePoint and Power Apps
       items:
       - name: Manage your documents using SharePoint
@@ -586,6 +585,8 @@
         href: merge-data.md
       - name: Detect duplicate data
         href: detect-duplicate-data.md 
+      - name: Detect duplicate records
+        href: detect-duplicate-records.md
       - name: Duplicate detection rules
         href: set-up-duplicate-detection-rules-keep-data-clean.md 
       - name: Turn duplicate detection rules on or off

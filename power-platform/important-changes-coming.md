@@ -1,7 +1,7 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps"
 description: Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps 
-ms.date: 10/16/2020
+ms.date: 10/15/2020
 ms.topic: "article"
 ms.assetid: 994cc854-17f6-45d6-bc20-fcf1a3f2d6d6
 searchScope:
@@ -27,7 +27,7 @@ notification can span a few years. After removal, the feature or capability will
 
 ## Automatic record creation rules and SLA items in web client are deprecated
 
-Effective from October 01, 2020, the automatic record creation and update rules and service-level agreements (SLAs) have been deprecated in the web client. For more information, see [Deprecations in Customer Service](https://go.microsoft.com/fwlink/p/?linkid=2145032).
+Effective October 01, 2020, the automatic record creation and update rules and service-level agreements (SLAs) have been deprecated in the web client. For more information, see [Deprecations in Customer Service](https://go.microsoft.com/fwlink/p/?linkid=2145032).
 
 ## TimeZoneRule entity and some attributes of TimeZoneDefinition entity are deprecated
 
@@ -157,10 +157,10 @@ authentication flow and help application developers to utilize the capabilities
 of Azure Active Directory to secure and protect access to their applications and
 customers in Common Data Service.
 
-To allow for transition of customers and partner applications:
+To allow for transition of customers and partner applications: 
 
 - Effective October 2020, the authentication protocol will be retired for all new tenants.
-- Effective October 2020, the authentication protocol will not be available in all new [regions](regions-overview.md#what-regions-are-available).
+- Effective October 2020, the authentication protocol will not be available in all new [regions](admin/regions-overview.md#what-regions-are-available).
 - Effective April 2021, the authentication protocol will be retired for all new environments within a tenant.
 - Effective April 2022, the authentication protocol will be retired for all new and existing environments within a tenant.
 
