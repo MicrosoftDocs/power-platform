@@ -179,7 +179,7 @@ Admins can also [preinstall and pin the bot](/microsoftteams/teams-app-setup-pol
 Before submitting the bot to your organization, make sure:
 
 - Your bot is ready for release and in compliance with company standards, rules and policies.
-- You coordinate with your teammates: once the bot have been submitted it can't be re-submitted by a different user until the previous submission is approved or rejected by an admin.
+- You coordinate with your teammates: once the bot has been submitted it can't be re-submitted by a different user until the previous submission is approved or rejected by an admin.
 - You have removed the bot, if applicable, from the **Built by your colleagues** section. Submitting your bot for admin approval could result in your bot showing up in two places. See the instructions on [removing your bot](#remove-the-bot-from-the-built-by-your-colleagues-section) for details. 
 
 >[!NOTE]
