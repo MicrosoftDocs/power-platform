@@ -2,7 +2,6 @@
 title: "Enable change tracking to control data synchronization  | MicrosoftDocs"
 description: Enable change tracking to control data synchronization
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
@@ -28,5 +27,3 @@ Large organizations that synchronize their data with external data sources can n
   
    ![Select Change Tracking for an entity](../admin/media/change-tracking.PNG "Select Change Tracking for an entity")  
   
-### See also  
-
