@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 08/13/2020
+ms.date: 10/19/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -40,6 +40,8 @@ Most of these users are hidden from user views but they can be found by using th
 | | DataLakeStorage | DataLakeStorage@onmicrosoft.com | To allow solutions to manage workspaces, workspace permissions and the discovery of workspaces. | DataLakeWorkspaceAppAccess |
 | | JobServicePreProd| JobServicePreProd@onmicrosoft.com| Enable satellite services to schedule and dispatch messages to independently built workloads with guaranteed delivery of messages based on service-defined policies. | System admin |
 | | JobServiceProd| JobServiceProd@onmicrosoft.com| Enable satellite services to schedule and dispatch messages to independently built workloads with guaranteed delivery of messages based on service-defined policies. | System admin |
+| | # CCADataAnalyticsML | CCADAAdmins@microsoft.com | To allow AI insights in customer care apps like Customer Service, Field Service, etc. | System Customizer and System admin |
+
 
 **The purpose of the system account?** 
 - The System user is a built-in user account that is used to allow customers to perform system updates via plug-ins. 
