@@ -41,25 +41,25 @@ You will need to create, or have access to, three Common Data Service environmen
 2. Go to https://admin.powerapps.com, this will take you to the Power Platform admin center.
 3. Select **Environments** in the navigation area.
 
-![Select environment](../media/github-actions-tutorial/gh-lab-0.30.png "Select environment")
+    ![Select environment](../media/github-actions-tutorial/gh-lab-0.30.png "Select environment")
 
 4. Select **+ New Environment** to create your first new environment.
 
-![New environment](../media/github-actions-tutorial/gh-lab-0.40.png "New environment")
+    ![New environment](../media/github-actions-tutorial/gh-lab-0.40.png "New environment")
 
 5. The first environment should be named “Your Name – dev”, set the region to **United States (default)**, set the environment type to *Production* (if available),  if not use **Trial**.
 
-![Create environment](../media/github-actions-tutorial/gh-lab-0.50.png "Create environment")
+    ![Create environment](../media/github-actions-tutorial/gh-lab-0.50.png "Create environment")
 
 6. Select **Create environment**.
 
 7. Now that your environment has been created select **Create database**.
 
-![Select environment](../media/github-actions-tutorial/gh-lab-0.70.png "Select environment")
+    ![Select environment](../media/github-actions-tutorial/gh-lab-0.70.png "Select environment")
 
 8. Set the currency to **USD** and language to **English**. Include the sample apps and data, and then select **Create database**.
 
-![Set currency](../media/github-actions-tutorial/gh-lab-0.80.png "Set currency")
+    ![Set currency](../media/github-actions-tutorial/gh-lab-0.80.png "Set currency")
 
 9. Your development environment has been created, follow steps 4 – 8 above to create a second environment called “Your Name – build” , and then create a third environment called “Your Name – prod”. Note that the third environment can be a trial environment type.
 
