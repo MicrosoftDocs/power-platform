@@ -2,7 +2,6 @@
 title: "Enable change tracking to control data synchronization  | MicrosoftDocs"
 description: Enable change tracking to control data synchronization
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
