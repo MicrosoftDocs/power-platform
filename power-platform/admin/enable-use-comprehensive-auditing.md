@@ -28,7 +28,7 @@ This topic covers how you can set customer engagement apps to audit a broad rang
 - Available for production and not sandbox environments.
 
 ## What events are audited
-Logging takes place at the SDK layer which means a single action can trigger multiple events that are logged. The following are a sample of user events you can audit. We currently aren't logging admin events.
+Logging takes place at the SDK layer which means a single action can trigger multiple events that are logged. The following are a sample of user events you can audit. Admin events are currently not logged.
 
 ### User and support-related events 
 
