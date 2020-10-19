@@ -38,7 +38,7 @@ Most of these users are hidden from user views but they can be found by using th
 | | Powerqueryonline-CDStoAzuredatalake | Powerqueryonline-CDStoAzuredatalake@onmicrosoft.com |Service application to perform data query between Common Data Service and Azure Data Lake |N/A |
 | | Provision User | provisionapp@fabrikam.com |To perform Application installation from AppSource or System updates from Microsoft |System admin |
 | | DataLakeStorage | DataLakeStorage@onmicrosoft.com | To allow solutions to manage workspaces, workspace permissions and the discovery of workspaces. | DataLakeWorkspaceAppAccess |
-| | # CCADataAnalyticsML | CCADAAdmins@microsoft.com | To allow AI insights in customer care apps like Customer Service, Field Service, etc. | System Customizer and System Admin |
+| | # CCADataAnalyticsML | CCADAAdmins@microsoft.com | To allow AI insights in customer care apps like Customer Service, Field Service, etc. | System Customizer and System admin |
 
 **The purpose of the system account?** 
 - The System user is a built-in user account that is used to allow customers to perform system updates via plug-ins. 
