@@ -37,7 +37,8 @@ You can:
 ## Prerequisites
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations-teams.md)]
-- Your organization's [Microsoft Teams app permission policies](/microsoftteams/teams-app-permission-policies) will need to allow Power Platform apps to be added to teams before you or other users can find and add your bot to Microsoft Teams.
+- Your organization's [Microsoft Teams app permission policies](/microsoftteams/manage-power-platform-apps) will need to allow Power Platform apps to be added to Microsoft Teams before you or other users can directly install the bot in Microsoft Teams or find it in the Microsoft Teams app store **Built by your colleagues** section.  
+    Bots that are approved for the **Built by your organization** section (after submission to an admin) are managed separately by admins in the Microsoft Teams admin center's [Manage apps page](/microsoftteams/submit-approve-custom-apps#validate).
 - Before installing the bot for yourself or sharing the bot with others, you should [publish the bot at least once](publication-fundamentals-publish-channels-teams.md).
 
 
@@ -178,7 +179,7 @@ Admins can also [preinstall and pin the bot](/microsoftteams/teams-app-setup-pol
 Before submitting the bot to your organization, make sure:
 
 - Your bot is ready for release and in compliance with company standards, rules and policies.
-- You coordinate with your teammates: once the bot have been submitted it can't be re-submitted by a different user until the previous submission is approved or rejected by an admin.
+- You coordinate with your teammates: once the bot has been submitted it can't be re-submitted by a different user until the previous submission is approved or rejected by an admin.
 - You have removed the bot, if applicable, from the **Built by your colleagues** section. Submitting your bot for admin approval could result in your bot showing up in two places. See the instructions on [removing your bot](#remove-the-bot-from-the-built-by-your-colleagues-section) for details. 
 
 >[!NOTE]
@@ -210,23 +211,23 @@ Before submitting the bot to your organization, make sure:
 
 9. A final confirmation prompt will appear. Select **Yes** to continue. The bot will be sent to your admin [for them to approve it](/microsoftteams/submit-approve-custom-apps#validate), and you will see a note indicating the status of your submission.
 
-    :::image type="content" source="media/publish-share-submit-status.png" alt-text="The status has an organe bag with information about the status of the submissing, including the name of the bot, the version number, and the current status Waiting for approval":::
+    :::image type="content" source="media/publish-share-submit-status.png" alt-text="The status has an orange note with information about the status of the submission, including the name of the bot, the version number, and the current status Waiting for approval":::
 
     >[!NOTE]
     >After submitting the bot for admin approval, you should not change the bot's access setting to be less than everyone in your organization.  
     >This will result in users in the organization unable to chat with the bot after installing it from the Microsoft Teams app store **Built by your org** section.
 
-10. You will need to wait for your admin's approval.  You can check the latest status by selecting **Refresh**, or opening the **Share the bot** window from the **Publish** page.
+10. You will need to wait for your [admin's approval](/microsoftteams/submit-approve-custom-apps).  You can check the latest status by selecting **Refresh**, or opening the **Share the bot** window from the **Publish** page.
 
 11. After your admin approves the bot, the status will be updated to **Approved**. You can directly open the bot and share the approved version's link with other users.
 
 >[!NOTE]
 >If your app doesn't appear in the **Built by your org** section even though it's marked as **Approved**, your Teams app might be caching information. 
->Try signing out and back in again (if you're using the desktop app) or refreshing your browser (if you're using the web app of Teams).
+>Try signing out and back in again (if you're using the desktop app) or refreshing your browser (if you're using the Teams web app).
 
-#### Download the bot's Teams app manifest (advanced)
+### Download the bot's Teams app manifest (advanced)
 
-You can download the bot's Teams app manifest to make detail changes to the manifest directly and share with your admin or users in the tenant. 
+You can download the bot's Teams app manifest to make detail changes to the manifest directly and share with your admin or users in the tenant. You can also directly upload the app manifest into Microsoft Teams if your organization's policy allows you to [upload custom applications](/microsoftteams/platform/concepts/deploy-and-publish/apps-upload).
 
 
 1. Go to the **Chatbot** tab.
