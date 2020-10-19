@@ -63,7 +63,7 @@ You will need to create, or have access to, three Common Data Service environmen
 
 9. Your development environment has been created, follow steps 4 – 8 above to create a second environment called “Your Name – build” , and then create a third environment called “Your Name – prod”. Note that the third environment can be a trial environment type.
 
-10.	Now you have the environments that you will need in the next module of this tutorial.
+You now have the development, build, and production environments needed in the following modules of this tutorial.
 
 > [!div class="nextstepaction"]
 > [Next steps](./github-actions-build.md)

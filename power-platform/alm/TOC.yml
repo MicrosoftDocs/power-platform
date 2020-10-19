@@ -53,13 +53,13 @@
   - name: ALM for developers   
     href: alm-for-developers.md
     items:
-    - name: Microsoft Power Platform Build Tools
+    - name: Build Tools
       items:
       - name: Use Microsoft Power Platform Build Tools
         href: devops-build-tools.md
       - name: Microsoft Power Platform Build Tools tasks
         href: devops-build-tool-tasks.md
-    - name: GitHub Actions for Microsoft Power Platform
+    - name: GitHub Actions
       items:
       - name: Use GitHub Actions for Microsoft Power Platform
         href: devops-github-actions.md

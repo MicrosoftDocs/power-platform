@@ -20,7 +20,7 @@ search.app:
 
 # Tutorial: Build a model-driven app for deployment using GitHub Actions for Microsoft Power Platform
 
-In this tutorial, you will be creating a simple model-driven app to deploy in the next tutorial.
+In this tutorial, you will be creating a simple model-driven app to deploy using GitHub Actions for Microsoft Power Platform in the next tutorial.
 
 > [!div class="checklist"]
 > * Build a model-driven app
@@ -28,83 +28,85 @@ In this tutorial, you will be creating a simple model-driven app to deploy in th
 In the next tutorial, you will learn how to:
 
 > [!div class="checklist"]
-> * Automate the application lifecycle management of your app
+> * Deploy your app using application lifecycle management (ALM) automation
 
+<!-- TODO check if this statement is true or the reader must build this app -->
 If you already have a model-driven app in your development environment that you can use with the next tutorial, proceed to the end of this article for the next steps.
 
 ## Build a model-driven app
 
-1.	Navigate to make.powerapps.com and sign in with your credentials.  Click the environment selector dropdown in the header and select your development environment.
+1. IN your browser, navigate to https://make.powerapps.com and sign in with your credentials.  Click the environment selector dropdown in the header and select your development environment.
 
-![Select environment](../media/github-actions-tutorial/gh-lab-1.10.png "Select environment")
+  ![Select environment](../media/github-actions-tutorial/gh-lab-1.10.png "Select environment")
 
-2.	Click the Solutions area in the left navigation then click the New solution button to create a new solution.
+2. Click the **Solutions** area in the left navigation, and then click the **New solution** button to create a new solution.
 
-![New solution](../media/github-actions-tutorial/gh-lab-1.20.png "New solution")
+  ![New solution](../media/github-actions-tutorial/gh-lab-1.20.png "New solution")
  
-3.	In the side panel that appears, enter a name for the application and click the dropdown for the publisher and click the Add Publisher option
-Note: The solution publisher specifies who developed the app. For this reason, you should create a solution publisher name that's meaningful.
-Note: The solution publisher specifies who developed the app, so you should always create a solution publisher name that is meaningful. Furthermore, the solution publisher includes a prefix, which helps you distinguish system components or components introduced by others and is also a mechanism to help avoid naming collisions. This allows for solutions from different publishers to be installed in an environment with minimal conflicts.
+3. In the side panel that appears, enter a name for the application and click the dropdown for the publisher, and then click the **Add Publisher** option.
 
-![Create solution](../media/github-actions-tutorial/gh-lab-1.30.png "Create solution")
+  > [!NOTE]
+  > The solution publisher specifies who developed the app, so you should always create a solution publisher name that is meaningful. Furthermore, the solution publisher includes a prefix, which helps you distinguish system components or components introduced by others and is also a mechanism to help avoid naming collisions. This allows for solutions from different publishers to be installed in an environment with minimal conflicts.
 
-4.	A new window will pop up.  If a window does not pop up, check your popup blocker settings.  For the purposes of this lab, enter your ALMLab for the display name, name, and prefix and click Save and Close.
+  ![Create solution](../media/github-actions-tutorial/gh-lab-1.30.png "Create solution")
 
-![Create publisher](../media/github-actions-tutorial/gh-lab-1.40.png "Create publisher")
+4. A new window will be displayed.  If a window does not open, check your browser's popup blocker settings.  For the purposes of this lab, enter 'ALMLab' for the display name, name, and prefix, and then choose **Save and Close**.
 
-5.	On the new solution panel, select the publisher that you just created, give the application a version number, and click Create to create a new unmanaged solution in the environment.
+  ![Create publisher](../media/github-actions-tutorial/gh-lab-1.40.png "Create publisher")
 
-![New solution](../media/github-actions-tutorial/gh-lab-1.50.png "New solution")
+5. On the new solution panel, select the publisher that you just created, give the application a version number, and select **Create** to create a new unmanaged solution in the environment.
 
-6.	In the solutions list, select the solution you just created and click the Edit button.
+  ![New solution](../media/github-actions-tutorial/gh-lab-1.50.png "New solution")
 
-![Edit solution](../media/github-actions-tutorial/gh-lab-1.60.png "Edit solution")
+6. In the solutions list, select the solution you just created and click the **Edit** button.
 
-7.	Your new solution will be empty, and you need to add components to it.  In this lab we will create a custom entity and .  Click the New dropdown from the top navigation and select Entity
+  ![Edit solution](../media/github-actions-tutorial/gh-lab-1.60.png "Edit solution")
 
-![New entity](../media/github-actions-tutorial/gh-lab-1.70.png "New entity")
+7. Your new solution will be empty, and you need to add components to it. In this tutorial we will create a custom entity.  Click the **New** dropdown from the top navigation and then select **Entity**.
 
-8.	Enter a display name and plural name.  The system will fill out the entity name and other fields for you.  Click Create to create the entity.
+  ![New entity](../media/github-actions-tutorial/gh-lab-1.70.png "New entity")
 
-![Create entity](../media/github-actions-tutorial/gh-lab-1.80.png "Create entity")
+8. Enter a display name and plural name for the entity. The system will fill out the entity name and other fields for you. Click **Create** to create the entity.
 
-9.	Once your entity is created, click the solution name again to go back to the solution view to add another component
+  ![Create entity](../media/github-actions-tutorial/gh-lab-1.80.png "Create entity")
 
-10.	Click the New dropdown, then App, and Model-driven app
+9. Once your entity is created, select the solution name again to go back to the solution view to add another component.
 
-![New app](../media/github-actions-tutorial/gh-lab-1.100.png "New app")
+10. Click the **New** dropdown, then **App**, and **Model-driven app**.
 
-11.	Enter an application name and click the Done button
+  ![New app](../media/github-actions-tutorial/gh-lab-1.100.png "New app")
 
-![Enter app name](../media/github-actions-tutorial/gh-lab-1.110.png "Enter app name")
+11. Enter an application name, and then click the **Done** button.
 
-12.	In the application designer, click the Site Map to edit it.
+  ![Enter app name](../media/github-actions-tutorial/gh-lab-1.110.png "Enter app name")
 
-![Open sitemap](../media/github-actions-tutorial/gh-lab-1.120.png "Open sitemap")
+12. In the application designer, click the **Site Map** to edit it.
 
-13.	In the sitemap editor, select the New Subarea to get its current properties
+  ![Open sitemap](../media/github-actions-tutorial/gh-lab-1.120.png "Open sitemap")
 
-![Edit sitemap](../media/github-actions-tutorial/gh-lab-1.130.png "Edit sitemap")
+13. In the sitemap editor, select **New Subarea** to get its current properties.
 
-14.	Select the Entity dropdown and select your custom entity to add to the sitemap
+  ![Edit sitemap](../media/github-actions-tutorial/gh-lab-1.130.png "Edit sitemap")
 
-![Add entity](../media/github-actions-tutorial/gh-lab-1.140.png "Add entity")
+14.	Select the **Entity** dropdown and select your custom entity to add to the sitemap.
 
-15.	Click Save, then Publish, then Save and Close to go back to the application designer
+  ![Add entity](../media/github-actions-tutorial/gh-lab-1.140.png "Add entity")
 
-![Save sitemap](../media/github-actions-tutorial/gh-lab-1.150.png "Save sitemap")
+15.	Click **Save**, **Publish**, and then **Save And Close** to go back to the application designer.
 
-16.	Click Save then Validate to validate the application
+  ![Save sitemap](../media/github-actions-tutorial/gh-lab-1.150.png "Save sitemap")
 
-![Save and validate](../media/github-actions-tutorial/gh-lab-1.160.png "Save and validate")
+16.	Click **Save then Validate** to validate the application.
 
-17.	You should see one warning.  View the warning, then click Publish then Play
+  ![Save and validate](../media/github-actions-tutorial/gh-lab-1.160.png "Save and validate")
 
-![View warning and play](../media/github-actions-tutorial/gh-lab-1.170.png "View warning and play")
+17.	You should see one warning. View the warning, select **Publish**, and then **Play**.
 
-18.	This will take you to the application so that you can see how it looks.  You can use the application and close the tab when you are satisfied.
+  ![View warning and play](../media/github-actions-tutorial/gh-lab-1.170.png "View warning and play")
 
-![View app](../media/github-actions-tutorial/gh-lab-1.180.png "View app")
+18.	You should now see how the application you just built looks.  You can use the application and close its tab when you are satisfied.
+
+  ![View app](../media/github-actions-tutorial/gh-lab-1.180.png "View app")
 
 > [!div class="nextstepaction"]
 > [Next steps](./github-actions-deploy.md)
