@@ -27,7 +27,7 @@ notification can span a few years. After removal, the feature or capability will
 
 ## Automatic record creation rules and SLA items in web client are deprecated
 
-Effective from October 01, 2020, the automatic record creation and update rules and service-level agreements (SLAs) have been deprecated in the web client. For more information, see [Deprecations in Customer Service](https://go.microsoft.com/fwlink/p/?linkid=2145032).
+Effective October 01, 2020, the automatic record creation and update rules and service-level agreements (SLAs) have been deprecated in the web client. For more information, see [Deprecations in Customer Service](https://go.microsoft.com/fwlink/p/?linkid=2145032).
 
 ## TimeZoneRule entity and some attributes of TimeZoneDefinition entity are deprecated
 

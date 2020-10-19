@@ -16,15 +16,15 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Center of Excellence (CoE) Overview
+# Center of Excellence (CoE) overview
 
-A Center of Excellence (CoE) in an organization drives innovation and improvement and brings together like-minded people with similar business goals to share knowledge and success, while at the same time providing standards, consistency, and governance to the organization.
+A Center of Excellence (CoE) drives innovation and improvement, and brings together like-minded people with similar business goals to share knowledge and success, while providing standards, consistency, and governance.
 
-The Microsoft Power Platform CoE Starter Kit is a collection of components and tools that are designed to help get started with developing a strategy for adopting and supporting Microsoft Power Platform, with a focus on Power Apps and Power Automate.
+The Microsoft Power Platform CoE Starter Kit is a collection of components and tools that are designed to help you get started with developing a strategy for adopting and supporting Microsoft Power Platform, with a focus on Power Apps and Power Automate.
 
 You can download the most recently updated assets from the [GitHub repository](https://aka.ms/CoEStarterKitRepo).
 
-The kit doesn't represent the entire CoE, because managing a CoE requires more than the tools alone; the CoE also requires people, communication, and defined requirements and processes. The tools provided here are just a means to get to the end goal, but the CoE itself must be thoughtfully designed by each organization based on their needs and preferences. More information: [What is a Center of Excellence?](motivation.md)
+The kit doesn't represent the entire CoE, because managing a CoE requires more than tools alone; the CoE also requires people, communication, and defined requirements and processes. The tools provided here are just a means to get to the end goal, but the CoE itself must be thoughtfully designed by each organization based on their needs and preferences. More information: [What is a Center of Excellence?](motivation.md)
 
 The kit provides some automation and tooling to help teams build monitoring and automation necessary to support a CoE. The foundation of the kit is a Common Data Service data model and workflows to collect resource information across the environments in the tenant. The kit includes multiple apps and Power BI analytics to view and interact with the data you collect, in addition to flows to collect data across environments and help with workflows for your compliance needs. The kit also provides several templates and suggested patterns and practices for implementing CoE efforts.
 
@@ -48,11 +48,11 @@ After you've [installed the CoE Starter Kit solution](setup.md), get familiar wi
 > [!NOTE]
 > The following steps are just examples of what you can do with the components in the CoE Starter Kit. Explore the rest of the guidance here to see what's available and how to make the most of the kit.
 
-1. Open the Power BI dashboard and familiarize yourself with resources and makers that are already in your environments.
+1. Open the Power BI dashboard, and familiarize yourself with resources and makers that are already in your environments.
 
     ![CoE Power BI dashboard](media/coe1.PNG "CoE Power BI dashboard")
 
-1. Identify orphaned apps and assign them to new owners by using the embedded app in the Power BI dashboard.
+1. Identify orphaned apps, and assign them to new owners by using the embedded app in the Power BI dashboard.
 
     ![Set App Permissions canvas app](media/SetAppPerms.PNG "Set App Permission canvas app")
 
@@ -68,9 +68,9 @@ After you've [installed the CoE Starter Kit solution](setup.md), get familiar wi
 
 - Explore the [Power Apps admin documentation](https://docs.microsoft.com/power-platform/admin/admin-documentation).
 
-- Find training resources, including guided learning and step-by-step guides at [aka.ms/PowerPlatformLabs](https://aka.ms/powerplatformlabs).
+- Find training resources, including guided learning and step-by-step guides, at [aka.ms/PowerPlatformLabs](https://aka.ms/powerplatformlabs).
 
-- Read up on customer success stories and find resources relevant to your experience, technical background and skill level at [aka.ms/PowerPlatformResources](https://aka.ms/powerplatformresources).
+- Read up on customer success stories and find resources relevant to your experience, technical background, and skill level at [aka.ms/PowerPlatformResources](https://aka.ms/powerplatformresources).
 
 - Get started with the Microsoft Power Platform path on Microsoft Learn, a free online and interactive training platform [aka.ms/PowerUp](https://aka.ms/PowerUp).
 

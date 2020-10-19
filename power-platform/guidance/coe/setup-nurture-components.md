@@ -23,39 +23,36 @@ Multiple nurture components are provided in the Center of Excellence (CoE) Start
 
 ## Import the solution
 
-The Core Components solution is required for the Nurture Components solution, or any other component in the starter kit, to work.
+The core components solution is required for the nurture components solution, or any other component in the starter kit, to work.
 
-1. Follow the instructions detailed under [Set up core components](setup-core-components.md).
+1. Follow the instructions in [Set up core components](setup-core-components.md).
 
-1. Import the *CenterOfExcellenceNurtureComponents_x_x_x_xx_managed.zip* file.
-1. Create a new connection to the **RSS** connector, and set your Common Data Service connection
-    ![Import the Center of Excellence - Nurture components solution](media/msi-nurture.png "Import the Center of Excellence - Nurture components solution")
-1. Update the Environment Variable values. Please note, you can leave the values empty on import and [update the environment variable](#update-environment-variables) after import too.
+1. Import the CenterOfExcellenceNurtureComponents_*x_x_x_xx*_managed.zip file.
+1. Create a new connection to the **RSS** connector, and set your Common Data Service connection.
+    ![Import the CoE nurture components solution](media/msi-nurture.png "Import the CoE nurture components solution")
+1. Update the environment variable values. Note that if you choose, you can leave the values empty on import and [update them](#update-environment-variables) later after the import is completed.
 
     | Name | Default value |
     |------|---------------|
-    | Power Platform Maker Office 365 Group | The *Admin \| Welcome Email* flow sends a welcome email to onboard new makers and adds them to an Office 365 group. You can use this group to send communications to your makers or invite them to a Yammer or Teams group. Configure the group ID here.|
-    | Training in a day - Feedback Form     | The *Training in a day* package includes a flow that automatically sends a feedback request to attendees on the day of the event. Configure the form URL (<https://forms.office.com/>...) here.    |
-    | Power User Site URL (SharePoint Site) | The site that your Microsoft Power Platform Power Users can use to communicate and share files. You'll use it here to house the Template Library for them. |
-    1. Select **Import** without adding values to the Environment Variables, as we will update them later - see [update environment variables](#update-environment-variables)
+    | Power Platform Maker Office 365 Group | The Admin \| Welcome Email flow sends a welcome email to onboard new makers and adds them to an Office 365 group. You can use this group to send communications to your makers or invite them to a Yammer or Teams group. Configure the group ID here.|
+    | Training in a day - Feedback Form     | The Training in a Day package includes a flow that automatically sends a feedback request to attendees on the day of the event. Configure the form URL (<https://forms.office.com/>...) here.    |
+    | Power User Site URL (SharePoint Site) | The site that your Microsoft Power Platform power users can use to communicate and share files. You'll use it here to house the template library for them. |
 
 ## Create a SharePoint document library
 
 This library is used to store templates, components, and documents that you want to share with makers in your organization. In this section, you'll create and populate the library by using a set of starter materials.
 
-The Template Catalog app depends on this library. If you don't intend to use the Template Catalog, you can skip this step and go straight to [Update environment variables](#update-environment-variables).
+The Template Catalog app depends on this library. If you don't intend to use the template catalog, you can skip this step and go straight to [Update environment variables](#update-environment-variables).
 
 ### Create the site
 
-If you don't already have a SharePoint site for the Microsoft Power Platform Power Users in your tenant, create a new team now for them to access. This site is the one specified in the following environmental variable: *Power User Site URL (SharePoint Site)*.
-
-More information: [Create a team site in SharePoint](https://support.office.com/article/create-a-team-site-in-sharepoint-ef10c1e7-15f3-42a3-98aa-b5972711777d)
+If you don't already have a SharePoint site for the Microsoft Power Platform power users in your tenant, create a new team now for them to access. This site is the one specified in the following environment variable: *Power User Site URL (SharePoint Site)*. More information: [Create a team site in SharePoint](https://support.office.com/article/create-a-team-site-in-sharepoint-ef10c1e7-15f3-42a3-98aa-b5972711777d)
 
 ### Create the library
 
-We've created a helper flow to create the library for you. See the following zip file: *CreateCoETemplateLibaryDocLibraryinSP.zip*, part of your CoE Starter Kit download.
+We've created a helper flow to create the library for you. See the zip file CreateCoETemplateLibaryDocLibraryinSP.zip, which is part of your CoE Starter Kit download.
 
-1. Download and import this flow into your CoE environment using the same pattern as you did to [import the audit log flow](setup-auditlog.md).
+1. Download and import this flow into your CoE environment by using the same pattern as you did to [import the audit log flow](setup-auditlog.md).
 
 2. Ensure that the flow is turned on, and run the flow.
 3. When the flow is completed, you'll have a doc library named AppTemplates, with the following columns in the default view:
@@ -66,22 +63,18 @@ We've created a helper flow to create the library for you. See the following zip
    |DisplayName | Single line of text |
    |ItemDescription | Multiple lines of text |
    |Featured | Yes/No |
-   |TemplateType | Choice |
+   |TemplateType | Choice (the options are **App**, **Flow**, **Component**, **Image**, or **Document**)|
 
-   The **TemplateType** column will have the following options: **App**, **Flow**, **Component**, **Image**, or **Document**.
-
-   Ensure that you've set up the correct permissions for your SharePoint site; we recommend that you give view-only access to your Power Users.
-   
-   More information: [Create a document library in SharePoint](https://support.office.com/article/create-a-document-library-in-sharepoint-306728fe-0325-4b28-b60d-f902e1d75939)
+   Ensure that you've set up the correct permissions for your SharePoint site; we recommend that you give view-only access to your power users. More information: [Create a document library in SharePoint](https://support.office.com/article/create-a-document-library-in-sharepoint-306728fe-0325-4b28-b60d-f902e1d75939)
 
    > [!NOTE]
-   > Setup for the app that uses this environment, the [Template Catalog](nurture-components.md#template-catalog), cannot be completed until you extend the app, see how to [modify components](modify-components.md#set-up-the-template-catalog-and-upload-components)
+   > You can't complete setup for the [Template Catalog](nurture-components.md#template-catalog) app, which uses this environment, until you extend the app. More information: [Modify components](modify-components.md#set-up-the-template-catalog-and-upload-components)
 
 <!--- Commenting this out until version 3.20041.19 is live so that these msapp files will work in production
 ### Load sample templates
 We've created a starter set of templates for you. To access them, do the following:
 
-1. Download the CoE Starter Components zip file from the [GitHub repository](https://github.com/microsoft/powerapps-tools/tree/master/Administration/CoEStarterKit) and extract: *CoE Components.zip*
+1. Download the CoE Starter Components zip file from the [GitHub repository](https://github.com/microsoft/powerapps-tools/tree/master/Administration/CoEStarterKit) and extract: CoE Components.zip
 2. Browse to the newly created document library.
 ![BrowseToLib](media\sp-upload-1.png)
 3. Choose to upload files.
@@ -106,7 +99,7 @@ We've created a starter set of templates for you. To access them, do the followi
 
 ### Add your own templates
 
-If you have existing templates that you'd like to share with your makers (for example, template apps, brand guidelines, or app and flow samples), upload them to the TemplateApps document library so they show up in the Template Catalog.
+If you have existing templates that you'd like to share with your makers (for example, template apps, brand guidelines, or app and flow samples), upload them to the AppTemplates document library so they show up in the template catalog.
 
 ## Update environment variables
 
@@ -121,13 +114,13 @@ All flows in this solution depend on all environment variables' being configured
 
 | Name | Default value |
 |------|---------------|
-| Power Platform Maker Microsoft 365 Group | The *Admin \| Welcome Email* flow sends a welcome email to onboard new makers and adds them to a Microsoft 365 group. You can use this group to send communications to your makers or invite them to a Yammer or Teams group. Configure the group ID here.|
-| Training in a day - Feedback Form     | The *Training in a day* package includes a flow that automatically sends a feedback request to attendees on the day of the event. Configure the form URL (<https://forms.office.com/>...) here.    |
-| Power User Site URL (SharePoint Site) | The site that your Microsoft Power Platform Power Users can use to communicate and share files. You'll use it here to house the Template Library for them. |
+| Power Platform Maker Microsoft 365 Group | The Admin \| Welcome Email flow sends a welcome email to onboard new makers and adds them to a Microsoft 365 group. You can use this group to send communications to your makers or invite them to a Yammer or Teams group. Configure the group ID here.|
+| Training in a day - Feedback Form     | The Training in a Day package includes a flow that automatically sends a feedback request to attendees on the day of the event. Configure the form URL (<https://forms.office.com/>...) here.    |
+| Power User Site URL (SharePoint Site) | The site that your Microsoft Power Platform power users can use to communicate and share files. You'll use it here to house the template library for them. |
 
 ## Activate the flows
 
-The Nurture Components solution contains five flows:
+The nurture components solution contains five flows:
 
 -  Admin \| Newsletter with Product Updates
 
@@ -139,18 +132,18 @@ The Nurture Components solution contains five flows:
 
 -  Training in a day \| Reminder 3 days prior to event
 
-Follow the same instructions to configure the flows as explained in [Activate the Sync Template flows](setup-core-components.md#activate-the-sync-template-flows).
+Follow the same instructions to configure the flows as explained in [Activate the sync template flows](setup-core-components.md#activate-the-sync-template-flows).
 
 ## Set up a feedback form for your Training in a day
 
 1. Go to [forms.office.com](https://forms.office.com).
 1. Select **New Form**.
-1. Enter **Power Platform Training Feedback** for the title.
+1. Enter **Microsoft Power Platform Training Feedback** for the title.
 1. Select **+ Add New** to add the following questions:
     1. Rating: **Please rate the training course**
     1. Text: **What went well?**
     1. Text: **What didn't go well?**
-1. Select **Share**, and copy the link for *Send and collect responses*
+1. Select **Share**, and copy the link for **Send and collect responses**.
 
     ![Copy the feedback form URL to send and collect responses](media/nurture-feedback.png "Copy the feedback form URL to send and collect responses")
 
@@ -158,7 +151,7 @@ Follow the same instructions to configure the flows as explained in [Activate th
 
 ## Share apps with your organization
 
-The Nurture Components solution contains four apps. As soon as you're ready to adopt the CoE, share these apps as follows:
+The nurture components solution contains four apps. As soon as you're ready to adopt the CoE, share these apps as follows:
 
 - App Catalog; Share with your entire organization.
 
