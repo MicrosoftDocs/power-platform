@@ -5,7 +5,7 @@ author: dileepsinghmicrosoft
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/04/2020
+ms.date: 10/20/2020
 ms.author: dileeps
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -18,7 +18,7 @@ search.app:
 ---
 # Requests limits and allocations
 
-Effective October 2019, to help ensure service levels, availability and quality, there are entitlement limits to the number of requests users can make each day across customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), Power Apps, Power Automate, AI Builder, and Power Virtual Agents.
+To help ensure service levels, availability, and quality, there are entitlement limits to the number of requests users can make each day across Power Apps, Power Automate, AI Builder, Power Virtual Agents, and customer engagement apps in Dynamics 365 (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation).
 
 ## What is a Microsoft Power Platform request?
 
@@ -77,7 +77,7 @@ Power Apps and Power Automate capacity add-on allows customers to purchase addit
 Each capacity add-on provides an additional 10,000 requests/24 hours which can be assigned to any user. Multiple capacity add-ons can also be assigned to the same user.
 
 > [!NOTE] 
-> Power Apps and Power Automate capacity add-ons cannot be assigned to users yet. Assignment will be possible later in calendar year 2020. When supported these may be assigned to application and administrative and non-interactive users.
+> Currently, Power Apps and Power Automate capacity add-ons cannot be assigned to users.
 
 ## Non-licensed users/application users/Users with special free licenses 
 
