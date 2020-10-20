@@ -29,9 +29,11 @@ This three part tutorial will give you an opportunity to get hands on with best 
 In the following two tutorials, you will complete these tasks.
 
 > [!div class="checklist"]
-> * Get your app into source control
-> * Generate a managed solution (a build artifact) from source
-> * Deploy the app into another environment
+> * Create a model-driven app
+> * Export and deploy your app using application lifecycle management (ALM) automation
+
+> [!TIP]
+> If you are already familiar with the concept of multiple Common Data Service environments as well as how to use solutions to package your app, simply download and use the sample [ALMLab solution](https://github.com/microsoft/powerplatform-actions-lab/blob/main/solutions/ALMLab_1_0_0_1.zip) and then skip to the [last tutorial](github-actions-deploy.md) of this series.
 
 ## Create required environments
 

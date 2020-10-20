@@ -20,9 +20,15 @@ search.app:
 
 # Tutorial: Automate solution deployment using GitHub Actions for Microsoft Power Platform (Preview)
 
-In this hands-on lab, you will create a new repo and create two GitHub workflows using GitHub Actions for the Microsoft Power Platform. The workflows can automatically export your app (as an unmanaged solution)  from a development environment, generate a build artifact (managed solution) and deploy the app into production. The lab uses the **ALMLab.zip solution** you built in the ** module 1** and the environments you set up in **module 0**. 
+In this tutorial, you will:
 
-If you are already familiar with the concept of multiple environments as well as how to use solutions to package your app, then you can safely skip the first two modules, and simply download and use the sample ALMLab solution available [here](https://github.com/microsoft/powerplatform-actions-lab/blob/main/solutions/ALMLab_1_0_0_1.zip) throughout this lab. 
+> [!div class="checklist"]
+> * Create a new GitHub repository
+> * Create two GitHub workflows using GitHub Actions for the Microsoft Power Platform
+
+ The workflows can automatically export your app (as an unmanaged solution) from a development environment, generate a build artifact (managed solution), and deploy the app into your production environment. This tutorial uses the [ALMLab solution](https://github.com/microsoft/powerplatform-actions-lab/blob/main/solutions/ALMLab_1_0_0_1.zip) you built and the environments you set up in previous tutorials.
+
+Related tutorials: [Get started](github-actions-start.md), and [Build a model-driven app](github-actions-deploy.md).
 
 ## Create a GitHub Account
 2.	Go to github.com and click ‘create account’ (or sign in if you have an existing account)
@@ -233,3 +239,7 @@ We will now test the end-to-end process and then see how we can view and validat
 49.	Follow step 28 – 34 to create a new release and validate that the updated solution has been deployed to your production environment
 
 Congratulations, you have successfully setup a sample CI/CD workflow using GitHub actions!
+
+### See Also
+
+[Automate your workflow from idea to production](https://github.com/features/actions)

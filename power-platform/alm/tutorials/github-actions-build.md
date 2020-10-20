@@ -23,15 +23,12 @@ search.app:
 In this tutorial, you will be creating a simple model-driven app to deploy using GitHub Actions for Microsoft Power Platform in the next tutorial.
 
 > [!div class="checklist"]
-> * Build a model-driven app
+> * Create a model-driven app
 
 In the next tutorial, you will learn how to:
 
 > [!div class="checklist"]
-> * Deploy your app using application lifecycle management (ALM) automation
-
-<!-- TODO check if this statement is true or the reader must build this app -->
-If you already have a model-driven app in your development environment that you can use with the next tutorial, proceed to the end of this article for the next steps.
+> * Export and deploy your app using application lifecycle management (ALM) automation
 
 ## Build a model-driven app
 
@@ -98,7 +95,7 @@ Follow the steps below to build a model-driven app.
 
     ![Save sitemap](../media/github-actions-tutorial/gh-lab-1.150.png "Save sitemap")
 
-16.	Click **Save then Validate** to validate the application.
+16.	Click **Save**, and then **Validate** to validate the application.
 
     ![Save and validate](../media/github-actions-tutorial/gh-lab-1.160.png "Save and validate")
 
