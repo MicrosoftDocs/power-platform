@@ -31,64 +31,71 @@ In this tutorial, you will:
 Related tutorials: [Get started](github-actions-start.md), and [Build a model-driven app](github-actions-deploy.md).
 
 ## Create a GitHub Account
-2.	Go to github.com and click ‘create account’ (or sign in if you have an existing account)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Create account](../media/github-actions-tutorial/gh-lab-2.20.png "Create account")
+1. Go to https://github.com and click **Sign up** or **Start a free trial** (or sign in if you have an existing account).
 
-3.	After you have created your account – create a repository by selecting 'Create repository'
+    ![Create account](../media/github-actions-tutorial/gh-lab-2.20.png "Create account")
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Create repo](../media/github-actions-tutorial/gh-lab-2.30.png "Create repo")
+2. After you have created your account, create a repository by selecting 'Create repository' or **New**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Note: You might see the following alternative landing screen: 
+    ![Create repo](../media/github-actions-tutorial/gh-lab-2.30.png "Create repo")
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Create repo](../media/github-actions-tutorial/gh-lab-2.35.png "Create repo") 
+    You might see the following alternative landing screen:
 
-4.	Create your new repository and name it ‘poweractionslab’, make sure you select ‘Add a README file to initiate the repo and click ‘Create repository’
+    ![Create repo](../media/github-actions-tutorial/gh-lab-2.35.png "Create repo") 
 
-![Initiate](../media/github-actions-tutorial/gh-lab-2.40.png "Initiate")
+3. Create your new repository and name it ‘poweractionslab’, make sure you select **Add a README file** to initiate the repo and choose ‘Create repository’.
 
-### Create a new secret to be used by the GitHub actions
-5.	Navigate to the repo from the link in the import wizard and select ‘Settings’ and navigate to ‘Secrets’ and click ‘New secret’
+    ![Initiate repo](../media/github-actions-tutorial/gh-lab-2.40.png "Initiate repo")
 
-![Create secret](../media/github-actions-tutorial/gh-lab-2.50.png "Create secret")
+### Create a new secret to be used by GitHub Actions
 
-6.	On the secrets page, name the secret ‘password’, type the password for the username you are using to connect to the Power Platform in the ‘Value’ and click ‘Add secret’. The password will be referenced in the yml files used to define the GitHub workflows later in this lab. 
+1. Navigate to the repo from the link in the import wizard and select **Settings**, navigate to **Secrets**, and then click **New secret**.
 
-![Create secret](../media/github-actions-tutorial/gh-lab-2.60.png "Create secret")
+    ![Create secret](../media/github-actions-tutorial/gh-lab-2.50.png "Create secret")
 
-NOTE: In the preview, only username + password is supported. Support for Service Principals (Application User) will be available later in the fall 2020
-7.	The password is now securely stored as a GitHub Secret
+2. On the secrets page, name the secret ‘password’. Type the password for the username you are using to connect to Power Platform into the **Value** field and select **Add secret**. The password will be referenced in the YML files used to define the GitHub workflows later in this lab.
 
-![Create secret](../media/github-actions-tutorial/gh-lab-2.70.png "Create secret")
+    ![Create secret](../media/github-actions-tutorial/gh-lab-2.60.png "Create secret")
 
+    > [!NOTE]
+    > In the preview release, only username + password is supported. Support for service principals (Application User) will be available later in Fall 2020.
 
-## Create a workflow to export and unpack solution file to a new branch
-8.	Next, click on ‘Actions’ and ‘set up a workflow yourself’
+    The password is now securely stored as a GitHub secret.
 
-![Setup workflow](../media/github-actions-tutorial/gh-lab-2.80.png "Setup workflow")
+    ![Create secret](../media/github-actions-tutorial/gh-lab-2.70.png "Create secret")
 
-9.	This will start a new YML file with a basic workflow to help you get started with GitHub actions. 
+## Create a workflow to export and unpack the solution file to a new branch
 
-![Sample yml ](../media/github-actions-tutorial/gh-lab-2.90.png "Sample yml")
+1. Select **Actions**, and then **set up a workflow yourself**.
 
+    ![Setup workflow](../media/github-actions-tutorial/gh-lab-2.80.png "Setup workflow")
 
-10.	Delete the pre-created content and paste the content from the ‘export-and-branch-solution.yml’ file in the Actions lab and rename the file to ‘export-and-branch-solution’
+2. This will start a new YML file with a basic workflow to help you get started with GitHub Actions.
 
-![Rename and replace content](../media/github-actions-tutorial/gh-lab-2.100.png "Rename and replace content")
+    ![Sample YML file](../media/github-actions-tutorial/gh-lab-2.90.png "Sample YML file")
 
-11.	Update <ENVIRONMENTURL> with the url for the development environment you want to export from (for example https://poweractionsdev.crm.dynamics.com 
-12.	Update <USERNAME> with the username you are using to connect to the environment
-13.	You are now ready to commit your changes. Click ‘Start commit’, type ‘Create export yml’ in the title and add a description (optional). Next, click ‘Commit new file’
+3. Delete the pre-created content, paste the content from the [export-and-branch-solution.yml](https://github.com/microsoft/powerplatform-actions-lab/blob/main/sample-workflows/export-and-branch-solution.yml) file, and then rename the file to ‘export-and-branch-solution’.
 
-![Start commit](../media/github-actions-tutorial/gh-lab-2.130.png "Start commit")
+    ![Rename and replace content](../media/github-actions-tutorial/gh-lab-2.100.png "Rename and replace content")
 
-14.	Congratulations – you have now created your first GitHub workflow, using the following actions:
-- Who Am I: Ensures that you can successfully connect to the environment you are exporting from
-- Export Solution: Exports the solution file from your development environment
-- Unpack Solution: The solution file that is exported from the server is a zip file with consolidated configuration files.  These initial files are not suitable for source code management as they are not structured to make it feasible for source code management systems to properly do differencing on the files and capture the changes you want to commit to source control.  You need to ‘unpack’ the solution files to make them suitable for source control storage and processing.
-•	Branch Solution: Creates a new branch to store the exported solution
+4. Update `<ENVIRONMENTURL>` with the URL for the development environment you want to export from (for example: https://poweractionsdev.crm.dynamics.com). 
+
+5. Update `<USERNAME>` with the username you are using to connect to the environment.
+
+6. You are now ready to commit your changes. Select **Start commit**, type **Create export yml** in the title, and then add a description (optional). Next, click **Commit new file**.
+
+    ![Start commit](../media/github-actions-tutorial/gh-lab-2.130.png "Start commit")
+
+Congratulations, you have just created your first GitHub workflow, using the following actions:
+
+- **Who Am I**: Ensures that you can successfully connect to the environment you are exporting from.
+- **Export Solution**: Exports the solution file from your development environment.
+- **Unpack Solution**: The solution file that is exported from the server is a compressed (zip) file with consolidated configuration files. These initial files are not suitable for source code management as they are not structured to make it feasible for source code management systems to properly do differencing on the files and capture the changes you want to commit to source control. You need to ‘unpack’ the solution files to make them suitable for source control storage and processing.
+- **Branch Solution**: Creates a new branch to store the exported solution.
 
 ## Test ‘export and unpack’ workflow
+
 15.	Next, test that the workflow runs. Navigate to ‘Actions’ – ‘Run workflow’ and click ‘Run workflow’.
 
 ![Run workflow](../media/github-actions-tutorial/gh-lab-2.150.png "Run workflow")
