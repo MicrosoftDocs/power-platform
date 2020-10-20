@@ -1,6 +1,6 @@
 ---
 title: Requests limits and allocations | Microsoft Docs
-description: FAQ for licensing Power Apps and Power Automate
+description: Requests limits and allocations
 author: dileepsinghmicrosoft
 ms.service: power-platform
 ms.component: pa-admin
@@ -18,7 +18,7 @@ search.app:
 ---
 # Requests limits and allocations
 
-Effective October 2019, to help ensure service levels, availability and quality, there are entitlement limits to the number of requests users can make each day across customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), Power Apps, Power Automate, AI Builder, and Power Virtual Agents.
+To help ensure service levels, availability, and quality, there are entitlement limits to the number of requests users can make each day across Power Apps, Power Automate, AI Builder, Power Virtual Agents, and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation).
 
 ## What is a Microsoft Power Platform request?
 
@@ -77,9 +77,9 @@ Power Apps and Power Automate capacity add-on allows customers to purchase addit
 Each capacity add-on provides an additional 10,000 requests/24 hours which can be assigned to any user. Multiple capacity add-ons can also be assigned to the same user.
 
 > [!NOTE] 
-> Power Apps and Power Automate capacity add-ons cannot be assigned to users yet. Assignment will be possible later in calendar year 2020. When supported these may be assigned to application and administrative and non-interactive users.
+> Currently, Power Apps and Power Automate capacity add-ons cannot be assigned to users, including application, administrative, and non-interactive users.
 
-## Non-licensed users/application users/Users with special free licenses 
+## Non-licensed users, application users, and users with special free licenses 
 
 Common Data Service also provides the ability to have identities that do not require any user license to interact with the service. There are three types of
 these users:
@@ -88,7 +88,7 @@ these users:
 
 -   [Non-interactive users](create-users-assign-online-security-roles.md#create-a-non-interactive-user-account)
 
--   [Administrative users](create-users-assign-online-security-roles.md#create-an-administrative-user-account). 
+-   [Administrative users](create-users-assign-online-security-roles.md#create-an-administrative-user-account) 
 
 Additionally there are special free (\$0) licenses which are used to interact with Dynamics 365 applications like Dynamics 365 Marketing. See [How Marketing is licensed](https://docs.microsoft.com/dynamics365/customer-engagement/marketing/purchase-setup#how-marketing-is-licensed).
 
