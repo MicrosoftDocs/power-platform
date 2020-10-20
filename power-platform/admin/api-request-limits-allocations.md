@@ -79,7 +79,7 @@ Each capacity add-on provides an additional 10,000 requests/24 hours which can b
 > [!NOTE] 
 > Currently, Power Apps and Power Automate capacity add-ons cannot be assigned to users.
 
-## Non-licensed users/application users/Users with special free licenses 
+## Non-licensed users/application users/users with special free licenses 
 
 Common Data Service also provides the ability to have identities that do not require any user license to interact with the service. There are three types of
 these users:
