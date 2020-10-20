@@ -1,6 +1,6 @@
 ---
 title: Requests limits and allocations | Microsoft Docs
-description: FAQ for licensing Power Apps and Power Automate
+description: Requests limits and allocations
 author: dileepsinghmicrosoft
 ms.service: power-platform
 ms.component: pa-admin
