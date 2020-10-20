@@ -88,7 +88,7 @@ these users:
 
 -   [Non-interactive users](create-users-assign-online-security-roles.md#create-a-non-interactive-user-account)
 
--   [Administrative users](create-users-assign-online-security-roles.md#create-an-administrative-user-account). 
+-   [Administrative users](create-users-assign-online-security-roles.md#create-an-administrative-user-account) 
 
 Additionally there are special free (\$0) licenses which are used to interact with Dynamics 365 applications like Dynamics 365 Marketing. See [How Marketing is licensed](https://docs.microsoft.com/dynamics365/customer-engagement/marketing/purchase-setup#how-marketing-is-licensed).
 
