@@ -18,7 +18,7 @@ search.app:
 ---
 # Requests limits and allocations
 
-To help ensure service levels, availability, and quality, there are entitlement limits to the number of requests users can make each day across Power Apps, Power Automate, AI Builder, Power Virtual Agents, and customer engagement apps in Dynamics 365 (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation).
+To help ensure service levels, availability, and quality, there are entitlement limits to the number of requests users can make each day across Power Apps, Power Automate, AI Builder, Power Virtual Agents, and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation).
 
 ## What is a Microsoft Power Platform request?
 
@@ -77,9 +77,12 @@ Power Apps and Power Automate capacity add-on allows customers to purchase addit
 Each capacity add-on provides an additional 10,000 requests/24 hours which can be assigned to any user. Multiple capacity add-ons can also be assigned to the same user.
 
 > [!NOTE] 
-> Currently, Power Apps and Power Automate capacity add-ons cannot be assigned to users.
 
 ## Non-licensed users/application users/users with special free licenses 
+
+> Currently, Power Apps and Power Automate capacity add-ons cannot be assigned to users, including application, administrative, and non-interactive users.
+
+## Non-licensed users, application users, and users with special free licenses 
 
 Common Data Service also provides the ability to have identities that do not require any user license to interact with the service. There are three types of
 these users:
