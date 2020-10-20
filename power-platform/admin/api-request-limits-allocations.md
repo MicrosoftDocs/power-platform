@@ -77,7 +77,7 @@ Power Apps and Power Automate capacity add-on allows customers to purchase addit
 Each capacity add-on provides an additional 10,000 requests/24 hours which can be assigned to any user. Multiple capacity add-ons can also be assigned to the same user.
 
 > [!NOTE] 
-> Currently, Power Apps and Power Automate capacity add-ons cannot be assigned to users, including application, and administrative, and non-interactive users.
+> Currently, Power Apps and Power Automate capacity add-ons cannot be assigned to users, including application, administrative, and non-interactive users.
 
 ## Non-licensed users, application users, and users with special free licenses 
 
