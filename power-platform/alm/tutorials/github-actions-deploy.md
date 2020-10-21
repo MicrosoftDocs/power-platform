@@ -24,7 +24,7 @@ In this tutorial, you will:
 
 > [!div class="checklist"]
 > * Create a new GitHub repository
-> * Create two GitHub workflows using GitHub Actions for the Microsoft Power Platform
+> * Create two GitHub workflows using GitHub Actions for Microsoft Power Platform
 
  The workflows can automatically export your app (as an unmanaged solution) from a development environment, generate a build artifact (managed solution), and deploy the app into your production environment. This tutorial uses the [ALMLab solution](https://github.com/microsoft/powerplatform-actions-lab/blob/main/solutions/ALMLab_1_0_0_1.zip) you built and the environments you set up in previous tutorials.
 
@@ -36,7 +36,7 @@ Related tutorials: [Get started](github-actions-start.md), and [Build a model-dr
 
     ![Create account](../media/github-actions-tutorial/gh-lab-2.20.png "Create account")
 
-2. After you have created your account, create a repository by selecting 'Create repository' or **New**.
+2. After you have created your account, create a repository by selecting **Create repository** or **New**.
 
     ![Create repo](../media/github-actions-tutorial/gh-lab-2.30.png "Create repo")
 
@@ -44,7 +44,7 @@ Related tutorials: [Get started](github-actions-start.md), and [Build a model-dr
 
     ![Create repo](../media/github-actions-tutorial/gh-lab-2.35.png "Create repo") 
 
-3. Create your new repository and name it ‘poweractionslab’, make sure you select **Add a README file** to initiate the repo and choose ‘Create repository’.
+3. Create your new repository and name it ‘poweractionslab’. Make sure you select **Add a README file** to initiate the repo and choose **Create repository**.
 
     ![Initiate repo](../media/github-actions-tutorial/gh-lab-2.40.png "Initiate repo")
 
@@ -59,7 +59,7 @@ Related tutorials: [Get started](github-actions-start.md), and [Build a model-dr
     ![Create secret](../media/github-actions-tutorial/gh-lab-2.60.png "Create secret")
 
     > [!NOTE]
-    > In the preview release, only username + password is supported. Support for service principals (Application User) will be available later in Fall 2020.
+    > In the preview release, only username + password is supported. Support for service principals (application user) will be available later in Fall 2020.
 
     The password is now securely stored as a GitHub secret.
 
@@ -75,7 +75,7 @@ Related tutorials: [Get started](github-actions-start.md), and [Build a model-dr
 
     ![Sample YML file](../media/github-actions-tutorial/gh-lab-2.90.png "Sample YML file")
 
-3. Delete the pre-created content, paste the content from the [export-and-branch-solution.yml](https://github.com/microsoft/powerplatform-actions-lab/blob/main/sample-workflows/export-and-branch-solution.yml) file, and then rename the file to ‘export-and-branch-solution’.
+3. Delete the pre-created content, paste the content from the [export-and-branch-solution.yml](https://github.com/microsoft/powerplatform-actions-lab/blob/main/sample-workflows/export-and-branch-solution.yml) file, and then rename the file to ‘export-and-branch-solution’.yml.
 
     ![Rename and replace content](../media/github-actions-tutorial/gh-lab-2.100.png "Rename and replace content")
 
