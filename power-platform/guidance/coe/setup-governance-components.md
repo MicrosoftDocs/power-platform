@@ -152,3 +152,17 @@ The Governance Components solution contains one app, which is used by makers to 
 **Developer Compliance Center**
 
 As soon as you're ready to adopt the CoE with your app and flow makers, share this app with them. Your makers must have a Power Apps Premium license, as mentioned under [Prerequisites](setup.md#prerequisites).
+
+**Grant Data Permissions**
+
+Remember, as with all Power Apps, sharing the app does not grant permissions to the underlying data automatically. That must occur separately. 
+
+When you share the app you can use the built in security roles which were delivered with teh Core Solution, as shown here:
+
+1)	Select the drop down
+   ![Sharing Data 1](media/SharingData1.png "Sharing Data 1")
+
+2)	Choose the Power Platform Maker Security Role
+   ![Sharing Data 2](media/SharingData2.png "Sharing Data 2")
+
+3) Hit Share
