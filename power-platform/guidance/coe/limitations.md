@@ -59,9 +59,10 @@ The Common Data Service connector might experience some throttling limits if the
 - To fix this, you must have your admin security role added to the security roles for all developer environments, and then remove the check from the sync flow.
 More information: [Power Apps Community Plan](https://docs.microsoft.com/powerapps/maker/dev-community-plan)
 
-## Sync Flow (Model Driven Apps)
+## Sync Flow and Environment Types
 
-- It currently isn't possible to retrieve model-driven apps for developer environments (*My Name's* environment).
+- It currently isn't possible to retrieve the following objects for developer environments (*My Name's* environment), nor Teams environments.
+- Unsupported Objects: Model Driven Apps, RPA Flows, PVA Bots
 
 ## Custom connectors and DLP
 
