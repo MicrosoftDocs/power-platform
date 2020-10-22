@@ -3,11 +3,10 @@ title: Responding to Data Subject Rights (DSR) requests to delete customer data 
 description: Walkthrough of how to respond to Data Subject Rights (DSR) requests to delete Power Apps customer data.
 author: jimholtz
 ms.reviewer: paulliew
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/18/2020
+ms.date: 10/21/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -43,7 +42,7 @@ Custom-connector permissions |
 
 For the data and resources that require manual review, Power Apps offers the following experiences to reassign (if necessary) or delete personal data for a specific user:
 
-* Website access: [Power Apps site](https://make.powerapps.com), [Power Apps Admin center](https://admin.powerapps.com/), and [Microsoft 365 Service Trust Portal](https://servicetrust.microsoft.com/)
+* Website access: [Power Apps site](https://make.powerapps.com) and [Microsoft 365 Service Trust Portal](https://servicetrust.microsoft.com/)
 
 * PowerShell access: Power Apps cmdlets for [app creators](https://go.microsoft.com/fwlink/?linkid=871448) and [administrators](https://go.microsoft.com/fwlink/?linkid=871804) and cmdlets for [on-premises gateways](https://go.microsoft.com/fwlink/?linkid=872238).
 
@@ -51,10 +50,10 @@ Here is the breakdown of which experiences are available to delete each type of 
 
 Resources containing personal data | Website access    | PowerShell access
 --- | --- | ---
-Environment    | Power Apps Admin center |     Power Apps cmdlets
-Environment permissions**    | Power Apps Admin center | Power Apps cmdlets
-Canvas app    | Power Apps Admin center <br> Power Apps| Power Apps cmdlets
-Canvas-app permissions    | Power Apps Admin center | Power Apps cmdlets
+Environment    |  |     Power Apps cmdlets
+Environment permissions**    |  | Power Apps cmdlets
+Canvas app    | Power Apps| Power Apps cmdlets
+Canvas-app permissions    | | Power Apps cmdlets
 Connection | | App creator: Available <br> Admin: Available
 Connection permissions | | App creator: Available <br> Admin: Available
 Custom connector | | App creator: Available <br> Admin: Available
@@ -89,7 +88,7 @@ In order to determine if you are a member of an unmanaged tenant please follow t
 3. Otherwise, you belong to a **managed tenant**.
 
 ### For administrators
-To perform the administrative operations outlined in this document using the [Power Apps Admin center](https://admin.powerapps.com/), Power Automate admin center, or [PowerShell cmdlets for Power Apps administrators](https://go.microsoft.com/fwlink/?linkid=871804), you'll need the following:
+To perform the administrative operations outlined in this document using the Power Automate admin center or [PowerShell cmdlets for Power Apps administrators](https://go.microsoft.com/fwlink/?linkid=871804), you'll need the following:
 
 * A paid Power Apps plan or a Power Apps plan trial. You can sign-up for a 30-day trial at [https://make.powerapps.com/trial](https://make.powerapps.com/trial). Trial licenses can be renewed if they've expired.
 
@@ -105,14 +104,17 @@ As an administrator, you have two decisions to make when processing a DSR delete
 > [!IMPORTANT]
 > Deleting an environment will permanently delete all resources within the environment, including all apps, flows, connections, etc. So please review the contents of an environment before deletion.
 
-### Give access to a user's environments from the Power Apps Admin center
-An admin can grant administrative access to an environment created by a specific user from the [Power Apps Admin center](https://admin.powerapps.com/) by following these steps:
+### Give access to a user's environments 
+An admin can grant administrative access to an environment by following these steps:
 
-1. From the [Power Apps Admin center](https://admin.powerapps.com/), select each environment in your organization.
+1. From the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), select each environment in your organization.
 
-    ![Admin center landing page](./media/powerapps-gdpr-delete-dsr/admin-center-landing.png)
+2. If the environment was created by the user from the DSR request, under **Access**, **Environment admin**, select **See all**.
 
-2. If the environment was created by the user from the DSR request, select **Security**, and proceed with the steps outlined in [Administer environments](environments-administration.md) to give admin privileges to yourself or another user in your organization.
+environment-admin-see-all.png
+
+
+select **Security**, and proceed with the steps outlined in [Administer environments](environments-administration.md) to give admin privileges to yourself or another user in your organization.
 
     ![Environment security](./media/powerapps-gdpr-delete-dsr/share-environment.png)
 
