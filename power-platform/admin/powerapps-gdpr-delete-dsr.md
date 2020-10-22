@@ -88,7 +88,7 @@ In order to determine if you are a member of an unmanaged tenant please follow t
 3. Otherwise, you belong to a **managed tenant**.
 
 ### For administrators
-To perform the administrative operations outlined in this document using the Power Automate admin center or [PowerShell cmdlets for Power Apps administrators](https://go.microsoft.com/fwlink/?linkid=871804), you'll need the following:
+To perform the administrative operations outlined in this document using the Power Platform admin center,  Power Automate admin center, or [PowerShell cmdlets for Power Apps administrators](https://go.microsoft.com/fwlink/?linkid=871804), you'll need the following:
 
 * A paid Power Apps plan or a Power Apps plan trial. You can sign-up for a 30-day trial at [https://make.powerapps.com/trial](https://make.powerapps.com/trial). Trial licenses can be renewed if they've expired.
 
@@ -107,27 +107,22 @@ As an administrator, you have two decisions to make when processing a DSR delete
 ### Give access to a user's environments 
 An admin can grant administrative access to an environment by following these steps:
 
-1. From the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), select each environment in your organization.
+1. From the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), select an environment to give admin privileges to yourself or another user in your organization.
 
 2. If the environment was created by the user from the DSR request, under **Access**, **Environment admin**, select **See all**.
 
-environment-admin-see-all.png
+> [!div class="mx-imgBorder"] 
+> ![Select Environment admin, See all](media/environment-admin-see-all.png "Select Environment admin, See all")
 
+### Delete environments created by a user
+An admin can review and delete environments created by a specific user by following these steps:
 
-select **Security**, and proceed with the steps outlined in [Administer environments](environments-administration.md) to give admin privileges to yourself or another user in your organization.
+1. From the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), select an environment.
 
-    ![Environment security](./media/powerapps-gdpr-delete-dsr/share-environment.png)
+2. If the environment was created by the user from the DSR request, select **Delete** and then proceed with the steps to delete the environment.
 
-### Delete environments created by a user from the Power Apps Admin center
-An admin can review and delete environments created by a specific user from the [Power Apps Admin center](https://admin.powerapps.com/) by following these steps:
-
-1. From the [Power Apps Admin center](https://admin.powerapps.com/), select each environment in your organization.
-
-    ![Admin Center Landing Page](./media/powerapps-gdpr-delete-dsr/admin-center-landing.png)
-
-2. If the environment was created by the user from the DSR request, select **Delete** and then proceed with the steps to delete the environment:
-
-    ![Environment deletion](./media/powerapps-gdpr-delete-dsr/delete-environment.png)
+> [!div class="mx-imgBorder"] 
+> ![Delete environment](media/environment-delete.png "Delete environment")
 
 ### Give access to a user's environments using PowerShell
 An administrator can assign themselves (or another user within their organization) access to all environments created by a user by using the **Set-AdminEnvironmentRoleAssignment** function in the [PowerShell cmdlets for Power Apps administrators](https://go.microsoft.com/fwlink/?linkid=871804):
@@ -165,24 +160,19 @@ For more information, see [Administer environments](environments-administration.
 
 ### For environments without a Common Data Service database
 
-#### Power Apps Admin center
-An administrator can delete a user's environment permissions starting from the [Power Apps Admin center](https://admin.powerapps.com/) by following these steps:
+#### Power Platform admin center
+An administrator can delete a user's environment permissions starting from the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) by following these steps:
 
-1. From the [Power Apps Admin center](https://admin.powerapps.com/), select each environment in your organization.
+1. From the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), select an environment.
 
-    You must be an [Microsoft 365 Global admin](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide) or an [Azure Active Directory Global Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) to be able to review all environments that have been created within your organization.
+   You must be an [Microsoft 365 Global admin](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide) or an [Azure Active Directory Global Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) to be able to review all environments that have been created within your organization.
 
-    ![Admin Center Landing Page](./media/powerapps-gdpr-delete-dsr/admin-center-landing.png)
+2. If your environment does not have a Common Data Service database, you will see a section **Access**. Under **Access**, select either **Environment admin** or **Environment maker**, and then select **See all**.
 
-2. Select **Security**.
+   > [!div class="mx-imgBorder"] 
+   > ![Select Environment admin, See all](media/environment-admin-see-all.png "Select Environment admin, See all")
 
-    If your environment does not have a Common Data Service database, you will see a section for **Environment Roles.**
-
-3. Within **Environment Roles**, select both **Environment Admin** and **Environment Maker** separately and, using the search bar, search for the user's name.
-
-    ![Environment roles page](./media/powerapps-gdpr-delete-dsr/admin-environment-role-share-page.png)
-
-5.    If the user has access to either role, from within the **Users** screen, remove their permission, and select **Save**.
+3. Select a user, select **Remove** to remove their permission, and then select **Continue**.
 
 #### PowerShell
 An administrator can delete all environment role assignments for a user across all environments without a Common Data Service database by using the **Remove-AdminEnvironmentRoleAssignment** function in the [PowerShell cmdlets for Power Apps administrators](https://go.microsoft.com/fwlink/?linkid=871804):
@@ -218,26 +208,16 @@ Get-AdminApp -Owner $deleteDsrUserId | Set-AdminAppOwner -AppOwner $newAppOwnerU
 ### Delete a user's canvas app using the Power Apps site
 A user can delete an app from the [Power Apps site](https://make.powerapps.com). For the full steps on how to delete an app, please see deleting an app.
 
-### Delete a user's canvas app using the Power Apps Admin center
-An admin can delete apps created by a user starting from the [Power Apps Admin center](https://admin.powerapps.com/) by following these steps:
+### Delete a user's canvas app using the Power Platform admin center
+An admin can delete apps created by a user by following these steps:
 
-1. From the [Power Apps Admin center](https://admin.powerapps.com/), select each environment in your organization.
+1. From the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), select an environment.
 
-    You must be a [Microsoft 365 Global admin](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide) or an [Azure Active Directory Global Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) to be able to review all environments that have been created within your organization.
+   You must be a [Microsoft 365 Global admin](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide) or an [Azure Active Directory Global Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) to be able to review all environments that have been created within your organization.
 
-    ![Admin Center Landing Page](./media/powerapps-gdpr-delete-dsr/admin-center-landing.png)
+2. Under **Resources**, select **Power Apps**. 
 
-2. Select **Resources** > **Apps**.
-
-3. Using the search bar, search for the user's name, which will bring up any apps that have been created by that user within this environment:
-
-    ![Search apps](./media/powerapps-gdpr-delete-dsr/search-apps.png)
-
-4. Select **Details** for each of the apps owned by the user:
-
-    ![Select app details](./media/powerapps-gdpr-delete-dsr/select-app-details.png)
-
-5. Select **Delete** to delete each app:
+3. Select an app, and then select **Delete** > **Delete from cloud**.
 
 ### Delete a user's canvas app using the Power Apps Admin PowerShell cmdlets
 If an admin decides to delete all canvas apps owned by a user, they can do so using the **Remove-AdminApp** function in the [Power Apps Admin PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871804):
@@ -259,24 +239,7 @@ Whenever an app is shared with a user, Power Apps stores a record called a "role
 > [!NOTE]
 > The app owner's role assignment can only be deleted by assigning a new owner for the app.
 
-### Power Apps Admin center
-An admin can delete app-role assignments for a user starting from the [Power Apps Admin center](https://admin.powerapps.com/) by following these steps:
-
-1. From the [Power Apps Admin center](https://admin.powerapps.com/), select each environment in your organization.
-
-    You must be an [Microsoft 365 Global admin](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide) or an [Azure Active Directory Global Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) to be able to review all environments that have been created within your organization.
-
-    ![Admin Center Landing Page](./media/powerapps-gdpr-delete-dsr/admin-center-landing.png)
-
-2. For each environment select **Resources** > **Apps**.
-
-3. Select **Share** for each of the apps in the environment:
-
-    ![Select app share](./media/powerapps-gdpr-delete-dsr/select-admin-share-nofilter.png)
-
-4. If the user has access to the app, from within the app's **Share** screen, remove their permission and select **Save**.
-
-    ![Admin app share page](./media/powerapps-gdpr-delete-dsr/admin-share-page.png)
+To delete user permissions to a canvas app, see [Preview: Share a model-driven app](https://docs.microsoft.com/powerapps/maker/model-driven-apps/share-model-driven-app). For step 5, remove rather than add a role from the list.
 
 ### PowerShell cmdlets for admins
 An admin can delete all of a user's canvas-app role assignments by using the **Remove-AdminAppRoleAssignmnet** function in the [Power Apps Admin PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871804):
