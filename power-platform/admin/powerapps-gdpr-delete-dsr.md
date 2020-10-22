@@ -48,16 +48,16 @@ For the data and resources that require manual review, Power Apps offers the fol
 
 Here is the breakdown of which experiences are available to delete each type of resource that can contain personal data:
 
-Resources containing personal data | Website access    | PowerShell access
---- | --- | ---
-Environment    |  |     Power Apps cmdlets
-Environment permissions**    |  | Power Apps cmdlets
-Canvas app    | Power Apps| Power Apps cmdlets
-Canvas-app permissions    | | Power Apps cmdlets
-Connection | | App creator: Available <br> Admin: Available
-Connection permissions | | App creator: Available <br> Admin: Available
-Custom connector | | App creator: Available <br> Admin: Available
-Custom-connector permissions | | App creator: Available <br> Admin: Available
+|Resources containing personal data | Website access    | PowerShell access|
+|--- | --- | ---|
+|Environment    | Power Platform admin center |     Power Apps cmdlets|
+|Environment permissions**    | Power Platform admin center | Power Apps cmdlets|
+|Canvas app    | Power Platform admin center <br /> Power Apps| Power Apps cmdlets|
+|Canvas-app permissions    | Power Platform admin center | Power Apps cmdlets|
+|Connection | | App creator: Available <br> Admin: Available|
+|Connection permissions | | App creator: Available <br> Admin: Available|
+|Custom connector | | App creator: Available <br> Admin: Available|
+|Custom-connector permissions | | App creator: Available <br> Admin: Available|
 
 \** With the introduction of Common Data Service, if a database is created within the environment, environment permissions and model-driven app permissions are stored as records within the environment of that database. For guidance on how to respond to DSRs for users of Common Data Service, see [Responding to Data Subject Rights (DSR) requests for Common Data Service customer data](common-data-service-gdpr-dsr-guide.md).
 
