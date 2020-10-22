@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/28/2020
+ms.date: 11/01/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -15,11 +15,6 @@ search.app:
   - Powerplatform
   - Flow
 ---
-
-<!--from editor: Please review the uses of "Customer Engagement" and ensure they are in compliance with our current product branding. See lines 48, 70, 115, 143, 154 (three uses), and 159.
-Also, I updated the app names in lines 28-36. Please review.
--->
-
 
 # Dynamics 365 US Government 
 
@@ -56,6 +51,7 @@ Dynamics 365 US Government plans are available to qualified government and priva
 - Dynamics 365 ProDirect Support GCC
 - Dynamics 365 Enhanced Support GCC
 - Dynamics 365 Remote Assist GCC
+- Dynamics 365 Guides
 
 ### Dynamics 365 US Government – GCC AddOns
 
