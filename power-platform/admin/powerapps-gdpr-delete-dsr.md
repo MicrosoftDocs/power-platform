@@ -26,15 +26,15 @@ Power Apps allows users to build line-of-business applications that are a critic
 Here is the breakdown between which personal data will be automatically deleted and which data will require your manual review and deletion:
 
 Requires manual review and deletion |    Automatically deleted when the user is deleted from Azure Active Directory
---- | ---
-Environment\** | Gateway
-Environment permissions\*** | Gateway permissions
-Canvas app\** | Power Apps notifications
-Canvas-app permissions | Power Apps user settings
-Connection\** | Power Apps user-app settings
-Connection permissions |
-Custom connector\** |
-Custom-connector permissions |  
+| --- | ---| 
+| Environment\** | Gateway| 
+| Environment permissions\*** | Gateway permissions| 
+| Canvas app\** | Power Apps notifications| 
+| Canvas-app permissions | Power Apps user settings| 
+| Connection\** | Power Apps user-app settings| 
+| Connection permissions | | 
+| Custom connector\** | | 
+| Custom-connector permissions |  | 
 
 \** Each of these resources contains "Created By" and "Modified By" records that include personal data. For security reasons, these records will be retained until the resource is deleted.
 
