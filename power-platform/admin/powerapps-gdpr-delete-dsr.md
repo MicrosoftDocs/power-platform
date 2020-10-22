@@ -6,7 +6,7 @@ ms.reviewer: paulliew
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/21/2020
+ms.date: 10/22/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -42,7 +42,7 @@ Custom-connector permissions |
 
 For the data and resources that require manual review, Power Apps offers the following experiences to reassign (if necessary) or delete personal data for a specific user:
 
-* Website access: [Power Apps site](https://make.powerapps.com) and [Microsoft 365 Service Trust Portal](https://servicetrust.microsoft.com/)
+* Website access: [Power Apps site](https://make.powerapps.com), [Power Platform admin center](https://admin.powerplatform.microsoft.com/), and [Microsoft 365 Service Trust Portal](https://servicetrust.microsoft.com/)
 
 * PowerShell access: Power Apps cmdlets for [app creators](https://go.microsoft.com/fwlink/?linkid=871448) and [administrators](https://go.microsoft.com/fwlink/?linkid=871804) and cmdlets for [on-premises gateways](https://go.microsoft.com/fwlink/?linkid=872238).
 
@@ -88,7 +88,7 @@ In order to determine if you are a member of an unmanaged tenant please follow t
 3. Otherwise, you belong to a **managed tenant**.
 
 ### For administrators
-To perform the administrative operations outlined in this document using the Power Platform admin center,  Power Automate admin center, or [PowerShell cmdlets for Power Apps administrators](https://go.microsoft.com/fwlink/?linkid=871804), you'll need the following:
+To perform the administrative operations outlined in this document using the Power Platform admin center, Power Automate admin center, or [PowerShell cmdlets for Power Apps administrators](https://go.microsoft.com/fwlink/?linkid=871804), you'll need the following:
 
 * A paid Power Apps plan or a Power Apps plan trial. You can sign-up for a 30-day trial at [https://make.powerapps.com/trial](https://make.powerapps.com/trial). Trial licenses can be renewed if they've expired.
 
@@ -156,7 +156,6 @@ Get-AdminEnvironment -CreatedBy $deleteDsrUserId | Remove-AdminEnvironment
 ## Step 2: Delete the user's permissions to all other environments
 Users can be assigned permissions (such as Environment Admin and Environment Maker) in an environment, which are stored in the Power Apps service as a "role assignment."
 With the introduction of Common Data Service, if a database is created within the environment, these "role assignments" are stored as records within the environment of that database.
-For more information, see [Administer environments](environments-administration.md).
 
 ### For environments without a Common Data Service database
 
@@ -235,8 +234,6 @@ Whenever an app is shared with a user, Power Apps stores a record called a "role
 
 > [!NOTE]
 > An app's role assignments will be deleted when the app is deleted.
-
-> [!NOTE]
 > The app owner's role assignment can only be deleted by assigning a new owner for the app.
 
 To delete user permissions to a canvas app, see [Preview: Share a model-driven app](https://docs.microsoft.com/powerapps/maker/model-driven-apps/share-model-driven-app). For step 5, remove rather than add a role from the list.
