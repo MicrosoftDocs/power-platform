@@ -98,7 +98,7 @@ Administrators can export a user's environment permissions from the [Power Platf
 2. Select both **Environment Admin** and **Environment Maker** separately, and then using the search bar, search for the user's name.
 
    > [!div class="mx-imgBorder"] 
-   > ![Environment roles](media/admin-environment-role-share-page1.png "Environment roles") power-platform\admin\media\admin-environment-role-share-page1.png
+   > ![Environment roles](media/admin-environment-role-share-page1.png "Environment roles") 
 
    > [!div class="mx-imgBorder"] 
    > ![Environment maker user](media/admin-environment-role-share-page2.png "Environment maker user")
