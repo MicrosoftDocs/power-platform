@@ -245,7 +245,7 @@ We will now test the end-to-end process and then see how we can view and validat
 
     ![Squash and merge](../media/github-actions-tutorial/gh-lab-2.480.png "Squash and merge")
 
-15. Follow the steps in the [Test the release to production workflow](#Test-the-release-to-production-workflow) section to create a new release and validate that the updated solution has been deployed to your production environment.
+15. Follow the steps in the [Test the release to production workflow](#test-the-release-to-production-workflow) section to create a new release and validate that the updated solution has been deployed to your production environment.
 
 Congratulations, you have successfully setup a sample CI/CD workflow using GitHub actions!
 
