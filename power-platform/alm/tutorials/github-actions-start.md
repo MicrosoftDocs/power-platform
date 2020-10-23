@@ -1,7 +1,6 @@
 ---
 title: "Tutorial: Get started with GitHub Actions for Microsoft Power Platform | Microsoft Docs"
-description: "In this first part of a 3-part tutorial, get started with GitHub Actions for 
-Microsoft Power Platform by creating three environments for use in the other tutorials."
+description: "In this first part of a 3-part tutorial, get started with GitHub Actions for Microsoft Power Platform by creating three environments for use in the other tutorials."
 keywords: 
 author: mikkelsen2000
 ms.author: pemikkel
@@ -57,7 +56,7 @@ You will need to create, or have access to, three Common Data Service environmen
 
 7. Now that your environment has been created select **Create database**.
 
-    ![Select environment](../media/github-actions-tutorial/gh-lab-0.70.png "Select environment")
+    ![Choose environment](../media/github-actions-tutorial/gh-lab-0.70.png "Choose environment")
 
 8. Set the currency to **USD** and language to **English**. Include the sample apps and data, and then select **Create database**.
 

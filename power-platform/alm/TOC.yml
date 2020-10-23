@@ -65,6 +65,14 @@
         href: devops-github-actions.md
       - name: Available GitHub Actions for Microsoft Power Platform
         href: devops-github-available-actions.md
+      - name: Tutorials
+        items:
+        - name: Get started with GitHub Actions
+          href: tutorials/github-actions-start.md
+        - name: Build an app for GitHub Actions
+          href: tutorials/github-actions-build.md
+        - name: Automate deployment using GitHub Actions
+          href: tutorials/github-actions-deploy.md
     - name: Work with solution components
       items:
         - name: Microsoft Power Apps component framework
@@ -119,11 +127,3 @@
           href: create-patches-simplify-solution-updates.md
     - name: Edit the customizations file
       href: when-edit-customization-file.md
-  - name: Tutorials
-    items:
-    - name: Get started with GitHub Actions
-      href: tutorials/github-actions-start.md
-    - name: Build an app for GitHub Actions
-      href: tutorials/github-actions-build.md
-    - name: Automate deployment using GitHub Actions
-      href: tutorials/github-actions-deploy.md

@@ -39,11 +39,11 @@ Related tutorials: [Get started](github-actions-start.md), and [Build a model-dr
 
 2. After you have created your account, create a repository by selecting **Create repository** or **New**.
 
-    ![Create repo](../media/github-actions-tutorial/gh-lab-2.30.png "Create repo")
+    ![Create a repository](../media/github-actions-tutorial/gh-lab-2.30.png "Create a repository")
 
     You might see the following alternative landing screen:
 
-    ![Create repo](../media/github-actions-tutorial/gh-lab-2.35.png "Create repo") 
+    ![Create a new repository](../media/github-actions-tutorial/gh-lab-2.35.png "Create a new repository")
 
 3. Create your new repository and name it ‘poweractionslab’. Make sure you select **Add a README file** to initiate the repo and choose **Create repository**.
 
@@ -53,7 +53,7 @@ Related tutorials: [Get started](github-actions-start.md), and [Build a model-dr
 
 1. Navigate to the repo from the link in the import wizard and select **Settings**, navigate to **Secrets**, and then click **New secret**.
 
-    ![Create secret](../media/github-actions-tutorial/gh-lab-2.50.png "Create secret")
+    ![New secret](../media/github-actions-tutorial/gh-lab-2.50.png "New secret")
 
 2. On the secrets page, name the secret ‘password’. Type the password for the username you are using to connect to Power Platform into the **Value** field and select **Add secret**. The password will be referenced in the YML files used to define the GitHub workflows later in this lab.
 
@@ -64,7 +64,7 @@ Related tutorials: [Get started](github-actions-start.md), and [Build a model-dr
 
     The password is now securely stored as a GitHub secret.
 
-    ![Create secret](../media/github-actions-tutorial/gh-lab-2.70.png "Create secret")
+    ![Stored secret](../media/github-actions-tutorial/gh-lab-2.70.png "Stored secret")
 
 ## Create a workflow to export and unpack the solution file to a new branch
 
@@ -105,7 +105,7 @@ Congratulations, you have just created your first GitHub workflow using the foll
 
     ![Click to view workflow](../media/github-actions-tutorial/gh-lab-2.160.png "Click to view workflow")
 
-    ![View workflow](../media/github-actions-tutorial/gh-lab-2.165.png "View workflow")
+    ![Select adn view workflow](../media/github-actions-tutorial/gh-lab-2.165.png "Select and view workflow")
 
 3. After the workflow has completed, validate that a new branch has been created with the solution unpacked to the solutions/ALMLab folder. Select **Code** and then **Branches**.
 
@@ -174,7 +174,7 @@ You are now ready to test the last workflow. This workflow is triggered when a n
  
 4. Select **Actions** to view the running workflow.
 
-    ![Click to view workflow](../media/github-actions-tutorial/gh-lab-2.310.png "Click to view workflow")
+    ![Select to view workflow](../media/github-actions-tutorial/gh-lab-2.310.png "Select to view workflow")
 
 5. Choose the running workflow to view the actions as they run.
 
@@ -206,13 +206,13 @@ We will now test the end-to-end process and then see how we can view and validat
 
 5. Navigate back to your GitHub repo to **Actions**, choose **Run workflow**, and select the **Run workflow** button.
 
-    ![Run workflow](../media/github-actions-tutorial/gh-lab-2.390.png "Run workflow")
+    ![Run the workflow](../media/github-actions-tutorial/gh-lab-2.390.png "Run the workflow")
 
 6. After 5–10 seconds, the workflow will start and you can click on the running workflow to monitor its progress.
 
     ![Select workflow](../media/github-actions-tutorial/gh-lab-2.400.png "Select workflow")
 
-    ![View workflow](../media/github-actions-tutorial/gh-lab-2.405.png "View workflow")
+    ![View the workflow](../media/github-actions-tutorial/gh-lab-2.405.png "View the workflow")
 
 7. After the workflow completes, navigate to the new branch by selecting **Code** and then **Branches**.
 

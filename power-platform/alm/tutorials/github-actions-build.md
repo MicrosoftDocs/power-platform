@@ -55,7 +55,7 @@ Follow the steps below to build a model-driven app.
 
 5. On the new solution panel, select the publisher that you just created, give the application a version number, and select **Create** to create a new unmanaged solution in the environment.
 
-    ![New solution](../media/github-actions-tutorial/gh-lab-1.50.png "New solution")
+    ![New unmanaged solution](../media/github-actions-tutorial/gh-lab-1.50.png "New unmanaged solution")
 
 6. In the solutions list, select the solution you just created and click the **Edit** button.
 
