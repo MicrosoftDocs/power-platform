@@ -244,7 +244,7 @@ We will now test the end-to-end process and then see how we can view and validat
 
 14. On the **Pull request** page, select **Squash and merge** to merge the updated solution file into your main branch.
 
-    ![Squash and merge](../media/github-actions-tutorial/gh-lab-2.480.png "Squash and merge")
+    ![Squash and then merge](../media/github-actions-tutorial/gh-lab-2.480.png "Squash and then merge")
 
 15. Follow the steps in the [Test the release to production workflow](#test-the-release-to-production-workflow) section to create a new release and validate that the updated solution has been deployed to your production environment.
 
