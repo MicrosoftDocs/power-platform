@@ -40,15 +40,17 @@ An administrator can recover a recently deleted environment by using the Power P
    > [!NOTE]
    > If the alert is not visible, navigate to another page such as **Resources** > **Capacity** and then return to the **Environments** page.
 
-3. Select an environment to restore, and then select **Recover**.
+3. Select an environment to recover, and then select **Recover**.
 
    > [!div class="mx-imgBorder"] 
    > ![Select Recover](media/restore-delete-select-environment.png "Select Recover")
 
-4. Select **Continue** to confirm the recovery. It will take some time for the environment to be restored.
+4. Select **Continue** to confirm the recovery. 
 
    > [!div class="mx-imgBorder"] 
    > ![Select Continue](media/restore-delete-select-continue.png "Select Continue")
+
+It could take several hours for the environment to be recovered. During this period, the environment to be recovered will continue to show in the list of deleted environments. Once recovered, you'll see the environment in the **Environments** page.
 
 ## PowerShell
 
