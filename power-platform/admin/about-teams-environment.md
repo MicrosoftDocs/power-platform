@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/14/2020
+ms.date: 10/23/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -290,11 +290,8 @@ Note that when the Power Apps app is disabled, users won't have access to any st
 ## Known issues
 
 - The **Run diagnostics**" feature in the Power Platform admin center for team owners, members, and guests who don't have Azure Active Directory admin roles like Global Admin, or Power Platform Admin assigned, will show an alert that no security roles have been assigned directly to them. Security roles are auto-assigned by the SYSTEM for Team personas, so this alert can be ignored.
-- Teams environments currently show as created by "SYSTEM" within the Power Platform admin center. After this issue is fixed, existing environments will be retroactively updated to display the correct creator.
-- Team owners and members who trigger Teams environment creation can temporarily see the newly created environment in the Power Platform admin center. After this issue is resolved, team owners will be able to successfully administer their environment and team members won't be able to see the environment in the admin center.
 
-## Related topics
-
+### See also
 [Power Apps and Teams](https://docs.microsoft.com/powerapps/teams/overview) <br/>
 [Power Automate and Teams](https://docs.microsoft.com/power-automate/teams/overview)<br/>
 [Power Virtual Agents and Teams](https://aka.ms/pva-teams-docs)
