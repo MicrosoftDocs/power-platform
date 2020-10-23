@@ -19,6 +19,7 @@ search.app:
 ---
 
 # Tutorial: Automate solution deployment using GitHub Actions for Microsoft Power Platform (Preview)
+[This topic is pre-release documentation and is subject to change.]
 
 In this tutorial, you will learn how to:
 
