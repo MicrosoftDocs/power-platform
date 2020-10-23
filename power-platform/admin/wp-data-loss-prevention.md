@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/27/2020
+ms.date: 10/22/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -75,7 +75,7 @@ The following connectors can't be blocked by using DLP policies.
 |Microsoft Forms Pro      | Notifications        |
 |Microsoft Teams      | Common Data Service         |
 |Microsoft To-Do (Business)      | Common Data Service <br />(current environment)        |
-|Microsoft 365 Groups      | Power Apps Notifications         |
+|Microsoft 365 Groups      | Power Apps Notifications (v1 and v2)        |
 |Microsoft 365 Outlook      |         |
 |Microsoft 365 Users      |         |
 |OneDrive for Business      |         |
