@@ -34,7 +34,7 @@ Effective October 01, 2020, the automatic record creation and update rules and s
 Effective September 24, 2020, the **TimeZoneRule** entity and the **Bias** and **RetiredOrder** attributes of the **TimeZoneDefinition** entity are deprecated and will be removed in a future release. For all client-side time zone calculations, use the [LocalTimeFromUtcTime](https://docs.microsoft.com/dynamics365/customer-engagement/web-api/localtimefromutctime) and [UtcTimeFromLocalTime](https://docs.microsoft.com/dynamics365/customer-engagement/web-api/utctimefromlocaltime) functions in Web API or the [TimeZoneInfo](https://docs.microsoft.com/dotnet/api/system.timezoneinfo) class in the .NET framework. More information: [Blog: Deprecation of time zone entities in Common Data Service](https://powerapps.microsoft.com/blog/deprecation-of-time-zone-entities-in-common-data-service/) 
 
 
-## Online management API PowerShell module is deprecated
+## Online management API PowerShell module and REST API are deprecated
 
 Effective August 26, 2020, the online management API PowerShell module and the underlying [Online Management REST API](https://docs.microsoft.com/powerapps/developer/common-data-service/online-management-api/overview) are  deprecated. The [online management API PowerShell module](/powershell/powerapps/get-started-onlinemanagementapi?view=pa-ps-latest) will be updated in October, 2020 to point to newer underlying APIs and won’t receive further updates. We recommend that you use the Power Apps administration module. More information: [Get started using the Power Apps admin module](/powershell/powerapps/get-started-powerapps-admin?view=pa-ps-latest)
 
