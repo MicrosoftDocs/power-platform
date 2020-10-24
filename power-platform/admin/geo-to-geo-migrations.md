@@ -37,7 +37,8 @@ We continue to open new datacenter regions for business services, and to add dat
 - Canada (CAN) = .crm3.dynamics.com  
 - Europe, Middle East, Africa (EMEA) = .crm4.dynamics.com  
 - Asia Pacific (APAC) = *.crm5.dynamics.com  
-- Australia (OCE) = *.crm6.dynamics.com  
+- Australia (OCE) = *.crm6.dynamics.com
+- Germany (GER) = *.crm16.dynamics.com 
 - Japan (JPN) = *.crm7.dynamics.com  
 - India (IND) = *.crm8.dynamics.com 
 - United Kingdom (UK) = *.crm11.dynamics.com  
