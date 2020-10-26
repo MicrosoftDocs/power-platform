@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/31/2020
+ms.date: 10/26/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -35,7 +35,7 @@ If you're an administrator, you can determine the region of each environment in 
 
 ## What regions are available?
 
-Click on the View Report button in [Dynamics 365 and Power Platform availability](https://dynamics.microsoft.com/geographic-availability/)
+Select the **View Report** button in [Dynamics 365 and Power Platform availability](https://dynamics.microsoft.com/geographic-availability/).
 
 ## Who can create environments in these regions?
 
