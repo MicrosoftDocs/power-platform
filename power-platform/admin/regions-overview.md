@@ -35,17 +35,7 @@ If you're an administrator, you can determine the region of each environment in 
 
 ## What regions are available?
 
-- Asia
-- Australia
-- Canada
-- Europe
-- France
-- India
-- Japan
-- South America
-- United Kingdom
-- United States
-- US Government (GCC)
+Click on the View Report button in [Dynamics 365 and Power Platform availability](https://dynamics.microsoft.com/geographic-availability/)
 
 ## Who can create environments in these regions?
 
