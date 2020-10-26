@@ -6,7 +6,7 @@ author: mikkelsen2000
 ms.author: pemikkel
 manager: kvivek
 ms.custom: ""
-ms.date: 05/05/2020
+ms.date: 10/23/2020
 ms.reviewer: "pehecke"
 ms.service: powerapps
 ms.topic: "article"
@@ -18,6 +18,9 @@ search.app:
 ---
 
 # Online Management API (REST) to manage environments
+
+> [!NOTE]
+> Effective August 26, 2020, the Online Management API is [deprecated](/power-platform/important-changes-coming##online-management-api-powershell-module-and-rest-api-are-deprecated).
 
 The Online Management API is a REST API that lets you create and manage Common Data Service environments in your Microsoft 365 organization. As application publishers or ISVs, you can use the Online Management API to:
 
