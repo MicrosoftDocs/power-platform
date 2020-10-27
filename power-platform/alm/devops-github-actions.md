@@ -34,6 +34,8 @@ environments (available October 2020).</li></ul>
 
 GitHub Actions for Microsoft Power Platform can be used along with any other available GitHub Actions to compose your build and release workflows. Workflows that teams commonly put in place include provisioning development environments, export from development environment to source control, generate builds, and release.
 
+[!NOTE] GitHub Actions for the Power Platform only supports CDS environments. The Build Tools cannot be used to perform actions against a non-CDS environment.
+
 ## Key concepts
 GitHub Actions enable you to create custom software development life cycle (SDLC) workflows directly in your GitHub repository. For an overview of GitHub Actions and core concepts, review the following articles:
 
