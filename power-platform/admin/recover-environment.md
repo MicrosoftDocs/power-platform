@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/23/2020
+ms.date: 10/27/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -20,7 +20,7 @@ search.app:
 You can recover a recently deleted environment ([within 7 days of deletion](backup-restore-environments.md#how-long-are-my-manualon-demand-backups-and-system-backups-retained)), by using the Power Platform admin center or the Power Apps cmdlet Recover-AdminPowerAppEnvironment.
 
 > [!NOTE]
-> You should have at least 1GB of unused storage capacity to recover an environment. For information on viewing your current storage capacity, see [Common Data Service storage capacity](capacity-storage.md). 
+> Available storage capacity might be required in order to successfully recover an environment depending on the type of environment being recovered. For information on viewing your current storage capacity, see [Common Data Service storage capacity](capacity-storage.md). 
 > 
 > Please review the following topics that discuss how environments could become marked for deletion and how to restore environments.
 > - [Automatic environment cleanup](automatic-environment-cleanup.md)
