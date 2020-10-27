@@ -37,6 +37,8 @@ The Microsoft Power Platform Build Tools tasks can be used along with any other 
 Azure DevOps tasks to compose your build and release pipelines. Pipelines
 that teams commonly put in place include Initiate, Export from Dev, Build, and Release.
 
+[!NOTE] The Build Tools only support CDS environments. The Build Tools cannot be used to perform actions against a non-CDS environment
+
 ![ALM powered by Azure DevOps](media/initiate-build-release.png "ALM powered by Azure DevOps")
 
 ## What are Microsoft Power Platform Build Tools?
