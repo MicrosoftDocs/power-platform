@@ -27,7 +27,7 @@ notification can span a few years. After removal, the feature or capability will
 
 ## Organization data download filters for Mobile offline are deprecated. 
 
-Effective February 2021, Organization data download filters are deprecated. We recommend that you start preparing your organization and move relevant filter criteria from Organization data download filters to Offline profiles already now.Once relevant filter criteria have been moved, you can clear or delete it from the Organization data download filters. As warning, that data will not be downloaded since no criteria exist, can be ignored. For more information, see [Set up mobile offline synchronization to allow users to work in offline mode on their mobile device](https://docs.microsoft.com/en-us/dynamics365/mobile-app/setup-mobile-offline-for-admin). 
+Effective February 2021, Organization data download filters are deprecated. We recommend that you start preparing your organization and move relevant filter criteria from Organization data download filters to Offline profiles already now. Once relevant filter criteria have been moved, you can clear or delete it from the Organization data download filters. As a warning, that data will not be downloaded since no criteria exist, can be ignored. For more information, see [Set up mobile offline synchronization to allow users to work in offline mode on their mobile device](https://docs.microsoft.com/dynamics365/mobile-app/setup-mobile-offline-for-admin). 
  
 ## Automatic record creation rules and SLA items in web client are deprecated
 
