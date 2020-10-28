@@ -39,11 +39,9 @@ Beginning March 1, 2021, customers can only use our [standard cipher suites](/po
 
 Customers must upgrade their servers before March 1, 2021.  For more information about configuring TLS Cipher Suite order, see [Manage Transport Layer Security (TLS)](https://docs.microsoft.com/windows-server/security/tls/manage-tls).
 
-
 ## Organization data download filters for mobile offline are deprecated. 
 
 Effective February 2021, **Organization data download filter** option that filters the data when you set up mobile offline are deprecated. We recommend that you start preparing your organization and move relevant data filters from **Organization data download filter** to the offline profile option which lets you determine what data will be available when users work in offline mode. For more information, see [Create a mobile offline profile](https://docs.microsoft.com/dynamics365/mobile-app/preview-setup-mobile-offline#step-2-create-a-mobile-offline-profile-to-determine-what-data-will-be-available-while-offline). Once the old filter criteria has been moved to offline profile, you can clear or delete the filters set in **Organization data download filter**. 
-
 
 ## Automatic record creation rules and SLA items in web client are deprecated
 
