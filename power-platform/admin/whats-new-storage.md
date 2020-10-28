@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/11/2020
+ms.date: 10/29/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -62,6 +62,43 @@ Please review:
 - [Actions to take for a storage capacity deficit](capacity-storage.md#actions-to-take-for-a-storage-capacity-deficit).
 - For the legacy capacity storage model, see [Example storage capacity scenario](legacy-capacity-storage.md#example-storage-capacity-scenario). 
 - For the new capacity storage model, see [Example storage capacity scenarios, overage enforcement](capacity-storage.md#example-storage-capacity-scenarios-overage-enforcement).
+
+### Request a temporary extension
+
+If your database storage is over capacity, you will be unable to do a copy or restore of the over-capacity environment. 
+
+   > [!div class="mx-imgBorder"] 
+   > ![Capacity overage](media/capacity-overage.png "Overage")
+   
+
+You can request a temporary (30-day) extension for the affected environment so that you can perform copy and restore operations. To do so, follow these steps.
+
+#### Extension request for Copy
+
+1. In the Power Platform admin center, select an environment.
+2. Select **Copy** from the top menu bar.
+3. Select and enter the various copy options, and then select **Copy**.
+4. Select **Confirm**.
+5. The **Copy environment** page appears where you can select **Request an extension**.
+
+   > [!div class="mx-imgBorder"] 
+   > ![Request extension](media/capacity-request-extension.png "Request extension")
+
+#### Extension request for Restore
+
+1. In the Power Platform admin center, select an environment.
+2. Select **Backups** > **Restore or manage** from the top menu bar.
+3. Select the backup type, the date and time, and then select **Continue**.
+4. Select the various restore options, and then select **Restore**.
+5. Select **Confirm**.
+6. The **Restore backup** page appears where you can select **Request an extension**.
+
+#### About extensions
+
+- An extension allows admins to perform copy/restore environment operations for a maximum of 30 days while over the capacity limit.
+- Your organization can request an extension only once.
+- After the one-time extension, copy/restore environment actions will again be blocked if the tenant doesn't have available storage capacity. To avoid this, admins should reduce storage usage and/or purchase additional storage capacity.
+
 
 ### See also
 [Legacy storage capacity](legacy-capacity-storage.md) <br />
