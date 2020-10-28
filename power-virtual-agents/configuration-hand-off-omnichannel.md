@@ -76,5 +76,6 @@ Once your bot has been connected to Omnichannel for Customer Service, you cannot
 Some content may not show, such as emojis and certain types of notes or variables. If you encounter problems with the display of content, see the [Omnichannel for Customer Service documentation library](/dynamics365/omnichannel/omnichannel-readme).
 
 
+## Known limitations
+See [Known limitations when using Power Virtual Agents with Omnichannel for Customer Service](/dynamics365/omnichannel/administrator/configure-bot-virtual-agent#known-limitations) for more information.
 
-[!INCLUDE [handoff-known-limitations](includes/handoff-known-limitations.md)]
