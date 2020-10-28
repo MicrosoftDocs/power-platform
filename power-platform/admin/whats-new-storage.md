@@ -67,8 +67,8 @@ Please review:
 
 If your database storage is over capacity, you will be unable to do a copy or restore of the over-capacity environment. 
 
-   > [!div class="mx-imgBorder"] 
-   > ![Capacity overage](media/capacity-overage.png "Overage")
+> [!div class="mx-imgBorder"] 
+> ![Capacity overage](media/capacity-overage.png "Overage")
    
 
 You can request a temporary (30-day) extension for the affected environment so that you can perform copy and restore operations. To do so, follow these steps.
