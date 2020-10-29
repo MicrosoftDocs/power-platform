@@ -2,11 +2,10 @@
 title: "Common Data Service analytics   | MicrosoftDocs"
 description: Common Data Service analytics 
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/17/2020
+ms.date: 10/29/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -18,7 +17,7 @@ search.app:
 ---
 # Common Data Service analytics 
 
-We've improved how you view metrics for your organization. You no longer need to install or update a solution. Instead, you can view Common Data Service analytics right from the Power Platform admin center to quickly view adoption ad user metrics for your organization. 
+You can view Common Data Service analytics to quickly view adoption and user metrics for your organization. 
 
 To access these reports:
 
@@ -38,10 +37,6 @@ Admins with the following roles and a [license](pricing-billing-skus.md) can vie
 For more information on the different roles for managing your tenant across the platform, see [Use service admin roles to manage your tenant](use-service-admin-role-manage-tenant.md).
 
  **Key highlights**  
-
-- **Deprecating the solution**: Organization Insights, available as a preferred solution from AppSource, will no longer be supported or available for use in future releases.  
-
-- **Deprecating Organization Insights dashboard**: This dashboard will be removed from Common Data Service in future releases. 
 
 - **Monitor adoption and use**: Identify your most active users, the number and types of operations they're performing, number of pages requests, most-used entities, workflows, plug-ins, and more, over a period of time as you work toward your adoption goals.  
 
