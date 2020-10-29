@@ -60,11 +60,11 @@ For more information on the different roles for managing your tenant across the 
 > |Chart element|Description|  
 > |--------------|-----------------|  
 > |           Active Users            |                         Number of active users (unique users) who performed an operation that caused one of these SDK calls:<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update`.                          |
-> |             API Calls             |                                            Number of API calls that were made by the Common Data Service environment for the selected time period.                                            |
+> |             API Calls             |                                            Total number of API calls for all users that were made by the Common Data Service environment for the selected time period.                                            |
 > |            API Pass Rate             |                        This chart shows the API pass rate as percentage of total API calls that were made in the Common Data Service environment over the specified time.                        |
 > |           Executions            |                                        This chart shows how many plug-ins have been executed in the Common Data Service environment over the specified time.                                        |
 > |            Total Operations             |                         This chart shows how many operations (create, update, deletes, reads) have occurred in the Common Data Service environment over the specified time.                         |
-> | Most Active Users Performing Operations | List of most active users who performed an operation that caused a `Create`, `Update`, `Read`, or `Delete` SDK call in the [!INCLUDE[pn_crm_shortest](../includes/pn-crm-shortest.md)] environment over the selected time period. |
+> | Most Active Users Performing Operations | List of top ten most active users who performed an operation that caused a `Create`, `Update`, `Read`, or `Delete` SDK call in the [!INCLUDE[pn_crm_shortest](../includes/pn-crm-shortest.md)] environment over the selected time period. |
 > |        Top Plug-ins by Failures         |                                            This chart shows top 10 most failing plug-in in the Common Data Service environment over the specified time.                                             |
 
 <a name="BKMK_ActiveUsage"></a>   
