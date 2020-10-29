@@ -17,7 +17,7 @@ search.app:
 ---
 # Common Data Service analytics 
 
-You can view Common Data Service analytics to quickly view adoption ad user metrics for your organization. 
+You can view Common Data Service analytics to quickly view adoption and user metrics for your organization. 
 
 To access these reports:
 
