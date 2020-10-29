@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/11/2020
+ms.date: 10/29/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -38,6 +38,8 @@ If an email is tracked and is categorized as **Tracked to Dynamics**, removing t
 
 > [!NOTE]
 > You can set up a rule in Outlook to assign or remove a category. See [Manage email messages by using rules](https://support.office.com/article/manage-email-messages-by-using-rules-c24f5dea-9465-4df4-ad17-a50704d66c59?ui=en-US&rs=en-US&ad=US).
+>
+> As of version 9.1.0000.23475, server-side synchronization will now automatically categorize emails in Dynamics 365 recipient mailboxes if the email being processed has already been automatically tracked into Dynamics by another user or queue recipient of the same email. Note that manually tracked emails are not currently supported for this feature but are being planned for a future release.  
 
 ## Appointment
 You can track an appointment by assigning it the **Tracked to Dynamics 365** category. The appointment will be tracked and synced to customer engagement apps based on server-side synchronization rules.
