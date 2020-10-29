@@ -17,7 +17,7 @@ search.app:
 ---
 # Common Data Service analytics 
 
-You can view Common Data Service analytics to quickly view adoption and user metrics for your organization. 
+We've improved how you view metrics for your organization. You no longer need to install or update a solution. Instead, you can view Common Data Service analytics right from the Power Platform admin center to quickly view adoption ad user metrics for your organization. 
 
 To access these reports:
 
@@ -37,6 +37,10 @@ Admins with the following roles and a [license](pricing-billing-skus.md) can vie
 For more information on the different roles for managing your tenant across the platform, see [Use service admin roles to manage your tenant](use-service-admin-role-manage-tenant.md).
 
  **Key highlights**  
+
+- **Deprecating the solution**: Organization Insights, available as a preferred solution from AppSource, will no longer be supported or available for use in future releases.  
+
+- **Deprecating Organization Insights dashboard**: This dashboard will be removed from Common Data Service in future releases. 
 
 - **Monitor adoption and use**: Identify your most active users, the number and types of operations they're performing, number of pages requests, most-used entities, workflows, plug-ins, and more, over a period of time as you work toward your adoption goals.  
 
@@ -209,10 +213,10 @@ For more information on the different roles for managing your tenant across the 
 > |Chart element|Description|  
 > |--------------|-----------------|  
 > |  API Success Rate   | This chart shows the API success rate as percentage of total API calls that were made in the Common Data Service environment over the specified time. | 
-> | Top API by Failures |                       This chart shows top 10 failing API calls in the Common Data Service environment over the specified time.                       | 
-> |   Total API Calls   |              This chart shows how many API calls have been made in total in the Common Data Service environment over the specified time.              | 
-> |    Most Used API    |                           This chart shows top 10 most executed API calls in the Common Data Service environment database.                            | 
-> |      API Calls      |             This chart shows how many API calls have been made over time in the Common Data Service environment over the specified time.              |
+> | Top API by Failures |  This chart shows top 10 failing API calls in the Common Data Service environment over the specified time.  | 
+> |   Total API Calls   | This chart shows how many API calls have been made in total in the Common Data Service environment over the specified time.     | 
+> |    Most Used API    | This chart shows top 10 most executed API calls in the Common Data Service environment database. Adding the individual counts here will provide the total of the top 10 API calls. This will not be the same as the all up Total API Calls metric above.       | 
+> |      API Calls      | This chart shows how many API calls have been made over time in the Common Data Service environment over the specified time. Adding up the individual counts will equal the Total API Calls count.  |
 
 ### Update frequency  
  API Call Statistics chart data is updated as follows.  
