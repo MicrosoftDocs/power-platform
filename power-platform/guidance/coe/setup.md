@@ -81,7 +81,8 @@ When you're ready to extend the CoE Starter Kit with your own ideas, you'll do s
 1. Extend the CoE Starter Kit by making modifications to the solution components in the context of your new unmanaged solution.
 
    > [!NOTE]
-   > It's currently not possible to extend canvas apps or flows. If you want to make customizations to apps and flows, create a copy add them to your unmanaged solution.
+   > It's currently not possible to extend canvas apps or flows. If you want to make customizations to apps and flows, create a copy add them to your unmanaged solution. <br>
+   > If you edit them in the managed solution itself it will prevent you from getting changes on upgrade. See Installing updates below.
 
 1. Deploy your solution to test and production. We recommend making modifications and installing updates pushed by our team to the solution in a development environment dedicated to this kit, and hosting a production environment that has the real data. If data is being accessed and contributed by other users, that's a scenario to have a dev/test/prod environment.  
 
@@ -90,6 +91,13 @@ When you're ready to extend the CoE Starter Kit with your own ideas, you'll do s
 Periodically, the solution will receive updates with new features, bug fixes, or optimizations. These updates will be announced on the [GitHub repo](https://aka.ms/CoEStarterKitRepo), and can be downloaded from there or the direct download at [aka.ms/CoEStarterKitDownload](https://aka.ms/CoEStarterKitDownload).
 
 Install the updates by importing the latest version to the environment where you originally installed the solution. Select **Upgrade** to update the solution.
+
+> [!NOTE]
+> If you have mande any changes to the flows / apps in the solution they will not receive updates until you remove that managed layer. <br>
+> For every flow/app that you changed, go to the solution layers and remove it.
+> ![Upgrade 1](media/Upgrade1.png "Upgrade 1")
+> ![Upgrade 2](media/Upgrade2.png "Upgrade 2")
+
 
 ## FAQ
 
