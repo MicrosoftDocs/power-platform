@@ -80,3 +80,26 @@ Then, paste it in the new tab in your browser and press enter to launch Composer
 
 Give the browser permission to open Bot Framework Composer, if needed:
 ![Bot Framework Composer Link Permission in browser](media/ComposerUI_CopyLinkComposer_2.png)
+
+## Creating bot content for Power Virtual Agents in Composer
+When opened from Power Virtual Agents bot, Bot Framework Composer application launches a bot project on you compter and loads up your bot content into it.
+The **main (root) dialog** in your Composer project is the same as the project name you gave it. It corresponding to your Power Viurtal Agents bot content. In this example below, your **main (root) dialog** is **PVA_Composer_Bot**: 
+![Bot Framework Composer main (root) dialog](media/Composer_Guidelines/Gd_mainDialog_initial.png)
+
+There are few key guidliens to follow when using Composer, Bot Framework open-source visual authoring canvas, to create your bot content for Power Virtual Agents. <br>
+•	You cannot edit Power Virtual Agents topics in Composer; this content is read-only in Composer. However, you can create and add content to Power Virtual Agents in Composer.
+
+•	You can add new **Bot Framework triggers** of any kind to your **main (root) dialog**. However, the structure of **triggers** added to the **main (root) dialog** should be kept as simple as possible. **Send a reponse**, **Ask a question** or any actions that contain **Langauge Generation** cannot be used in **triggers** added to **main (root) dialog**. Doing so will result in validation errors and prevent your from publishing your Composer content to Power Virtual Agents.
+![Bot Framework Composer main (root) dialog](media/Composer_Guidelines/Gd_mainDialog_trigger.png)
+
+•	You can create and new **Bot Framework dialogs** and add **triggers** of any kind to them. **Send a response**,**Ask a question** and **Langauge Generation** can be used in **triggers** that belong to the new **dialogs**
+
+•	In **Bot Reponses** tab, the **main (root) dialog** section should be empty. Having any assets there will result in validation errors and prevent your from publishing your Composer content to Power Virtual Agents.
+![Bot Framework Composer main (root) dialog](media/Composer_Guidelines/Gd_BotReponses_main.png)
+
+•	In **Bot Responses** tab, **All** section should be empty (i.e: **Common.lg** file should be empty). Having any assets there will result in validation errors and prevent your from publishing your Composer content to Power Virtual Agents.
+![Bot Framework Composer main (root) dialog](media/Composer_Guidelines/Gd_BotReponses_all.png)
+
+•	All **Language Generation** and **Language Understanding** files should have the corresponding **dialogs**. For example, if you have only one **dialog** with name **dialog1**, then you can have **dialog1.en-us.lg** and **dialog.en-us.lu**, but you cannot have **extra.en-us.lg**.
+
+•	The **main (root) dialog** in Composer should never be deleted, as it correspoonts to Power Virtual Agents bot. The **main (root) dialog** can have 0 or more **triggers**.
