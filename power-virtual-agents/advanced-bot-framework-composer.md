@@ -57,4 +57,26 @@ Go back to Power Virtual Agents **Topics** page. You can now click on **Open in 
 ![Open Bot Framework Composer](media/Composer_AfterDownload.png)
 
 
+## Open Bot Framework Composer from Power Virtual Agents
+You should always open Bot Framework Composer from within Power Virtual Agents bot i you plan to create content for Power Virtual Agents bots. This will ensure that Composer instance that opens contains all the necessary plugins needed for integration with Power Virtual Agents. 
+You can open Composer from the **Topics** page in Power Virtual Agents using **Open in Bot Framework Composer (Preview)** button. Power Virtual Agents will attempt to launch your Composer application from the browser. You might need to grant your permission to do so:
+![Open Bot Framework Composer from browser](media/Composer_ConfirmAllowOpen.png)
 
+>[!NOTE]
+> In some cases, a firewall might be blocking some features in Composer and you might need to explicitly allow access.
+
+Bot Framework Composer application window is now open. If you are opening Composer from this Power Virtual Agents for the first time, you need to specify the **Name** (alphanumeric, no spaces or special characters) for your Composer project.  You can skip this step if you already have a bot project for this bot my selecting **Cancel** in this step.
+![Create Bot Framework Composer](media/ComposerUI_CreateProject.png)
+
+Your Power Virtual Agents bot is now open in Composer and you are ready to start developing.
+![Bot Framework Composer Project Initial View](media/ComposerUI_Open_initialView.png)
+
+In some cases, Power Virtual Agent might be unable to launch Composer application automatically. However, you can always launch it manually from your browser.
+Use **Copy Link** feature to copy the link to the Composer.
+![Bot Framework Composer Copy Link](media/ComposerUI_CopyLinkComposer.png)
+
+Then, paste it in the new tab in your browser and press enter to launch Composer manually:
+![Bot Framework Composer Link in browser](media/ComposerUI_CopyLinkComposer_1.png)
+
+Give the browser permission to open Bot Framework Composer, if needed:
+![Bot Framework Composer Link Permission in browser](media/ComposerUI_CopyLinkComposer_2.png)
