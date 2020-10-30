@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/29/2020
+ms.date: 10/30/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -65,13 +65,13 @@ Please review:
 
 ### Request a temporary extension
 
-If your database storage is over capacity, you will be unable to do a copy or restore of the over-capacity environment. 
+If your database storage is over capacity, admins will be unable to do a copy or restore any of their environments. 
 
 > [!div class="mx-imgBorder"] 
 > ![Capacity overage](media/capacity-overage.png "Overage")
    
 
-You can request a temporary (30-day) extension for the affected environment so that you can perform copy and restore operations. To do so, follow these steps.
+You can request a temporary (30-day) extension that allows copy and restore operations for the duration of the extension. To do so, follow these steps.
 
 #### Extension request for Copy
 
@@ -95,9 +95,9 @@ You can request a temporary (30-day) extension for the affected environment so t
 
 #### About extensions
 
-- An extension allows admins to perform copy/restore environment operations for a maximum of 30 days while over the capacity limit.
+- An extension allows admins to copy and restore environments for a maximum of 30 days while over the capacity limit.
 - Your organization can request an extension only once.
-- After the one-time extension, copy/restore environment actions will again be blocked if the tenant doesn't have available storage capacity. To avoid this, admins should reduce storage usage and/or purchase additional storage capacity.
+- After the one-time extension, copying and restoring environments will again be blocked if the tenant doesn't have available storage capacity. To avoid this, admins should reduce storage usage and/or purchase additional storage capacity.
 
 
 ### See also
