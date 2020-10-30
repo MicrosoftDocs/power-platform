@@ -1,0 +1,28 @@
+# DailySpecials(day)
+- SWITCH: ${day}
+- CASE: ${0}
+    - All tofu meals are 10% off on Sundays!
+    - Every Sunday, all tofu entrees are 10% off.
+- CASE: ${1}
+    - All steak options are 10% off on Mondays!
+    - Enjoy your Monday with a special offer of 10% off on all steak dishes!
+- CASE: ${2}
+    - All the chicken meal options are 10% off on Tuesdays!
+    - Tuesday special is 10% off on all the chicken dishes!
+  - CASE: ${3}
+    - All the chicken and tofu meal options are 10% off on Tuesdays!
+    - Wednesday special is 10% off on all the chicken and tofu dishes!
+  - CASE: ${4}
+    - On Thursdays, get a free delivery in Seattle, Bellevue and Redmond on all orders over $80!
+    - Thursday special is a free delivery on orders over $80 in Seattle, Bellevue and Redmond.
+- CASE: ${5} 
+    - Friday special - get a 10% discount on all dishes and delivery is free on all orders over $80!
+    - Every Friday, we offer 10% off on all meals and a free delivery on orders over $80!
+- CASE: ${6}
+    - On Saturdays, we have a free delivery on all orders over $50.
+    - Free delivery on all orders over $50 on Saturdays!
+- DEFAULT:
+    - Holiday special - free delivery anywhere in Seattle, Bellevue and Redmond on orders over $70 today!
+    - Holiday Delivery is on us if you are in Seattle, Belluve and Redmond and your order is over $70 total!
+
+    
