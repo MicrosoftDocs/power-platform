@@ -65,7 +65,7 @@ You can open Composer from the **Topics** page in Power Virtual Agents using **O
 >[!NOTE]
 > In some cases, a firewall might be blocking some features in Composer and you might need to explicitly allow access.
 
-Bot Framework Composer application window is now open. If you are opening Composer from this Power Virtual Agents for the first time, you need to specify the **Name** (alphanumeric, no spaces or special characters) for your Composer project.  You can skip this step if you already have a bot project for this bot my selecting **Cancel** in this step.
+Bot Framework Composer application window is now open. If you are opening Composer from this Power Virtual Agents for the first time, you need to specify the **Name** (alphanumeric, no spaces or special characters) for your **Composer project**.  You can skip this step if you already have a bot project for this bot my selecting **Cancel** in this step.
 ![Create Bot Framework Composer](media/ComposerUI_CreateProject.png)
 
 Your Power Virtual Agents bot is now open in Composer and you are ready to start developing.
@@ -81,9 +81,9 @@ Then, paste it in the new tab in your browser and press enter to launch Composer
 Give the browser permission to open Bot Framework Composer, if needed:
 ![Bot Framework Composer Link Permission in browser](media/ComposerUI_CopyLinkComposer_2.png)
 
-## Creating bot content for Power Virtual Agents in Composer
-When opened from Power Virtual Agents bot, Bot Framework Composer application launches a bot project on you compter and loads up your bot content into it.
-The **main (root) dialog** in your Composer project is the same as the project name you gave it. It corresponding to your Power Viurtal Agents bot content. In this example below, your **main (root) dialog** is **PVA_Composer_Bot**: 
+## Guildelines for creating bot content for Power Virtual Agents in Composer
+When opened from Power Virtual Agents bot, Bot Framework Composer application launches a **Composer project** on you compter and loads up your bot content into it.
+The **main (root) dialog** in your **Composer project** is the same as the project name you gave it. It corresponding to your Power Viurtal Agents bot content. In this example below, your **main (root) dialog** is **PVA_Composer_Bot**: 
 ![Bot Framework Composer main (root) dialog](media/Composer_Guidelines/Gd_mainDialog_initial.png)
 
 There are few key guidliens to follow when using Composer, Bot Framework open-source visual authoring canvas, to create your bot content for Power Virtual Agents. <br>
@@ -111,6 +111,30 @@ For a deep-dive on Bot Framework Composer **dialogs**, **events**, **trigers** a
 [Language Generation](https://docs.microsoft.com/en-us/composer/concept-language-generation)<br>
 [Conversation flow and memory](https://docs.microsoft.com/en-us/composer/concept-memory)<br>
 
+
+## Composer features not supported with Power Virtual Agents
+The following Bot Framework Composer features are not supported with Power Virtual Agents:
+
+•	LUIS Recognizer 
+Default Recognizer in Composer is set to Power Virtual Agents NLU
+
+•	Bot Skills
+Cannot invoke Bot Skills in Composer content meant for Power Virtual Agents
+
+•	QnA Maker
+This feature is not available in Composer for Power Virtual Agents
+
+•	OAuth Login and User Sign Off  
+These types of actions are not supported in Composer for Power Virtual Agents
+
+•	Dialog Inputs and Outputs
+Dialog Inputs and outputs are not supported in Composer for Power Virtual Agents
+
+•	Entity detection in Trigger Phrases in Composer
+Cannot use “# getUserName  - my name is {username=userName} in Composer
+
+•	Testing in Bot Framework Emulator
+All Composer content should be published and then tested in Power Virtual Agents  
 
 
 
