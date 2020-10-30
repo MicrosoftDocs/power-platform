@@ -92,7 +92,7 @@ There are few key guidliens to follow when using Composer, Bot Framework open-so
 •	You can add new **Bot Framework triggers** of any kind to your **main (root) dialog**. However, the structure of **triggers** added to the **main (root) dialog** should be kept as simple as possible. **Send a reponse**, **Ask a question** or any actions that contain **Langauge Generation** cannot be used in **triggers** added to **main (root) dialog**. Doing so will result in validation errors and prevent your from publishing your Composer content to Power Virtual Agents.
 ![Bot Framework Composer main (root) dialog](media/Composer_Guidelines/Gd_mainDialog_trigger.png)
 
-•	You can create and new **Bot Framework dialogs** and add **triggers** of any kind to them. **Send a response**,**Ask a question** and **Langauge Generation** can be used in **triggers** that belong to the new **dialogs**
+•	You can create and new **Bot Framework dialogs** and add **events** and **triggers** of any kind to them. **Send a response**,**Ask a question** and **Langauge Generation** can be used in **triggers** that belong to the new **dialogs**
 
 •	In **Bot Reponses** tab, the **main (root) dialog** section should be empty. Having any assets there will result in validation errors and prevent your from publishing your Composer content to Power Virtual Agents.
 ![Bot Framework Composer main (root) dialog](media/Composer_Guidelines/Gd_BotReponses_main.png)
@@ -103,3 +103,14 @@ There are few key guidliens to follow when using Composer, Bot Framework open-so
 •	All **Language Generation** and **Language Understanding** files should have the corresponding **dialogs**. For example, if you have only one **dialog** with name **dialog1**, then you can have **dialog1.en-us.lg** and **dialog.en-us.lu**, but you cannot have **extra.en-us.lg**.
 
 •	The **main (root) dialog** in Composer should never be deleted, as it correspoonts to Power Virtual Agents bot. The **main (root) dialog** can have 0 or more **triggers**.
+
+For a deep-dive on Bot Framework Composer **dialogs**, **events**, **trigers** and how to create advanced bot content with Bot Framework, please refer to the following resources:
+
+[Bot Framework Composer dialogs](https://docs.microsoft.com/en-us/composer/concept-dialog)<br>
+[Bot Framework Composer events and triggers](https://docs.microsoft.com/en-us/composer/concept-events-and-trigger)<br>
+[Language Generation](https://docs.microsoft.com/en-us/composer/concept-language-generation)<br>
+[Conversation flow and memory](https://docs.microsoft.com/en-us/composer/concept-memory)<br>
+
+
+
+
