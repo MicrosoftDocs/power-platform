@@ -22,16 +22,16 @@ Effective October 2019, to help ensure service levels, availability, and quality
 
 ## What is a Microsoft Power Platform request?
 
-Requests in Microsoft Power Platform consist of various actions which a user makes across various products. At a high level, below is what constitute an API request:
+Requests in Microsoft Power Platform consist of various actions that a user makes across various products. At a high level, below is what constitute an API request:
 
 - **Power Apps** – all API requests to connectors and Common Data Service.
 - **Power Automate** – all API requests to connectors, HTTP actions, and built-in actions from initializing variables to a simple compose action. Both succeeded and failed actions count towards these limits. Additionally, retries and additional requests from pagination count as action executions as well. 
-- **Common Data Service** – all create, read, update and delete (CRUD), assign, and share operations including user-driven and internal system requests required to complete CRUD transactions, as well as special operations like share or assign. These can be from any client or application and using any endpoint (SOAP or REST). These include, but are not limited to, [plug-ins], classic workflows, and custom controls making the earlier-mentioned operations.
+- **Common Data Service** – all create, read, update, and delete (CRUD), assign, and share operations including user-driven and internal system requests required to complete CRUD transactions, as well as special operations like share or assign. These can be from any client or application and using any endpoint (SOAP or REST). These include, but are not limited to, plug-ins, classic workflows, and custom controls making the earlier-mentioned operations.
 
 > [!NOTE]
 > For Common Data Service, there is be a small set of system internal operations that are excluded from limits, such as login, logout, and system metadata operations.
 
-The table below will describe the common requests limits as well as the allocation which a user gets based on the type of license assigned to the user.
+The table below will describe the common requests limits as well as the allocation that a user gets based on the type of license assigned to the user.
 
 ## Request limits based on user licenses
 
@@ -48,15 +48,15 @@ All the users of Microsoft Power Platform have limits on the number of requests 
 | Power Apps per app plan | 1,000 per user pass |
 | Non-licensed users | See *Non-licensed user* section below |
 
-<sup>1</sup>Dynamics 365 Enterprise applications include Dynamics 365 Sales Enterprise, Dynamics 365 Customer Service Enterprise, Dynamics 365 Field Service, Dynamics 365  Project Service Automation, Dynamics 365 Retail, Dynamics 365 Talent, Dynamics 365 Customer Engagement plan.
+<sup>1</sup> Dynamics 365 Enterprise applications include Dynamics 365 Sales Enterprise, Dynamics 365 Customer Service Enterprise, Dynamics 365 Field Service, Dynamics 365  Project Service Automation, Dynamics 365 Retail, Dynamics 365 Talent, Dynamics 365 Customer Engagement plan.
 
-<sup>2</sup>Dynamics 365 Professional includes Dynamics 365 Sales Professional, Dynamics 365 Customer Service Professional.
+<sup>2</sup> Dynamics 365 Professional includes Dynamics 365 Sales Professional, Dynamics 365 Customer Service Professional.
 
-<sup>3</sup>The per user plans include the previous Plan 1 and Plan 2.
+<sup>3</sup> The per user plans include the previous Plan 1 and Plan 2.
 
-<sup>4</sup>See **Appendix C** for Microsoft 365 licenses that include Power Apps and Power Automate capabilities in the [Licensing Guide](https://go.microsoft.com/fwlink/p/?linkid=2085130).
+<sup>4</sup> See **Appendix C** for Microsoft 365 licenses that include Power Apps and Power Automate capabilities in the [Licensing Guide](https://go.microsoft.com/fwlink/p/?linkid=2085130).
 
-If a user has multiple plans assigned from different product lines, the total number of requests allowed would be the sum of requests allocated to each license type. For example, if a user has both a Dynamics 365 Customer Service Enterprise license as well as a Power Apps per user license , then that user will have a total of 20000 + 5000 = 25000 requests available per 24 hours.
+If a user has multiple plans assigned from different product lines, the total number of requests allowed would be the sum of requests allocated to each license type. For example, if a user has both a Dynamics 365 Customer Service Enterprise license as well as a Power Apps per user license then that user will have a total of 20000 + 5000 = 25000 requests available per 24 hours.
 
 If a user has multiple licenses allocated within the same product line, for example if a user has a Dynamics 365 Customer Service Enterprise license as the base license and a Dynamics 365 Sales Enterprise license attached, the total number of requests would be what is provided by the base license - Dynamics 365 Customer Service.
 
@@ -114,11 +114,11 @@ Review the following resources for information about *current* service protectio
 
 Today, the Power Platform Admin Center contains [reports on Common Data Service API requests](https://docs.microsoft.com/power-platform/admin/analytics-common-data-service). This reporting today accounts for interactive and non-interactive traffic. This helps you to quickly view adoption and user metrics for your organization. If your apps or flows primarily use the Common Data Service, then these reports can serve as good approximations of the total usage of your solutions.
 
-Additionally, for Power Automate usage specifically, you can see the action usage for a given flow by selecting the **Analyics** action from the flow properties page, and this works across all types of actions. However, if you apps or flows do not use the Common Data Service, then at this time there are no reports available in the Power Platform Admin center, although this will be available during 2020 Release Wave 2. Administrators will also be notified via email about overages as a part of 2020 Release Wave 2.
+Additionally, for Power Automate usage specifically, you can see the action usage for a given flow by selecting the **Analytics** action from the flow properties page, and this works across all types of actions. However, if your apps or flows do not use the Common Data Service, then at this time there are no reports available in the Power Platform Admin center, although this will be available during 2020 Release Wave 2. Administrators will also be notified via email about overages as a part of 2020 Release Wave 2.
 
 ### What happens if a user or integration exceeds request capacity?
 
-When users exceed their limits, administrators can see this in the admin center (see above). YOu can do either one of the following:
+When users exceed their limits, administrators can see this in the admin center (see above). You can do either one of the following:
 
 - Adjust the app or flow to use fewer API requests
 
@@ -126,7 +126,7 @@ When users exceed their limits, administrators can see this in the admin center 
 
 Users won't be blocked from using an app or flow for occasional and reasonable overages at this point in time. However, if a user or flow exceeds the limits consistently for an extended period of time (more than 14 days), that user may be disabled or flow turned off.
 
-In addition, there are other applicable limits for [Common Data Service](https://docs.microsoft.com/powerapps/developer/common-data-service/api-limits), [Power Automate](https://docs.microsoft.com/flow/limits-and-config), and [Connectors](https://docs.microsoft.com/connectors/) that might directly impact your users, and those limits may not have any affordance for occasional or resonable overages. Flow owners will be notified via email if their flow is failing or encountering such limits, so be sure to monitor email for notifications about such flows.
+In addition, there are other applicable limits for [Common Data Service](https://docs.microsoft.com/powerapps/developer/common-data-service/api-limits), [Power Automate](https://docs.microsoft.com/flow/limits-and-config), and [Connectors](https://docs.microsoft.com/connectors/) that might directly impact your users, and those limits may not have any affordance for occasional or reasonable overages. Flow owners will be notified via email if their flow is failing or encountering such limits, so be sure to monitor email for notifications about such flows.
 
 ### Will there be a transition period for existing customers?
 
@@ -142,7 +142,7 @@ Once the transition period ends, certain operations will additionally be blocked
 
 ### What account's limits are used for classic workflows or Power Automate flows?
 
-It depends if the process is run on-demand or in the background. Instant flows, which are run on-demand, will use the limits of the account who started the process. On the other hand, workflows or automated/scheduled flows that run in the background will always use the limits of the owner of the process -- irrespective of why the process started or what accounts are used for connections inside of the process.
+It depends if the process is run on-demand or in the background. Instant flows, which are run on-demand, will use the limits of the account who started the process. On the other hand, workflows or automated/scheduled flows that run in the background will always use the limits of the owner of the process irrespective of why the process started or what accounts are used for connections inside of the process.
 
 ### Do the Microsoft Power Platform request limits roll over from day to day or month to month?
 
@@ -158,7 +158,7 @@ Yes, if these requests are making CRUD, assign, or share&ndash;type requests, th
 
 ### Should I use a third-party data integration tool instead of Power Automate to avoid hitting my limits?
 
-No, third-party data integration tools are subject to the exact same limits as scheduled, instant or automated flows. Thus, there is no difference whether you choose to use Power Automate or a third-party tool. Moreover, requests from Power Automate to the Common Data Service are not double-counted, a flow that calls one action will only count as one request against their limit, not two.
+No, third-party data integration tools are subject to the exact same limits as scheduled, instant, or automated flows. Thus, there is no difference whether you choose to use Power Automate or a third-party tool. Moreover, requests from Power Automate to the Common Data Service are not double-counted, a flow that calls one action will only count as one request against their limit, not two.
 
 ### See also
 [Common Data Service API limits overview](https://docs.microsoft.com/powerapps/maker/common-data-service/api-limits-overview)
