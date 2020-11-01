@@ -442,4 +442,15 @@ In the new action, select to call **DailySpecials** in **Begin a new dialog** pa
 You are now ready to add you Composer content to your Power Virtual Agents bot. Go to **Publish** tab and publish it to your Power Virtual Agents bot.
 ![Composer Publish to Power Virtual Agents bot](media/Composer_Example2/E2_main_publishSuccess.png)
 
+Once your new Composer content is successfully published, go to Power Virtual Agents **Topics** page to verify that your new Composer content has been uploaded correctly. In your **Topics** list, you now can see the new **Specials** and **DailySpecials** content that you have created in Bot Framework Composer.
 
+>[!NOTE]
+>You might need to refresh your **Topics** page in Power Virtual Agents to see the new content that has been uploaded from Composer. 
+
+![Power Virtual Agents Topics page](media/Composer_Example2/E2_DailySpecials_inPVA.png)
+
+Make sure **Track between topics** is turned on, and test your new bot content by entering the following in **test pane** in Power Virtual Agents to start a conversation:
+
+•	Do you have any specials?
+
+![Power Virtual Agents Test pane](media/Composer_Example2/Example2._cropped.gif)
