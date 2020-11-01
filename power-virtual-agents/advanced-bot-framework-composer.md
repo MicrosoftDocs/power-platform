@@ -136,5 +136,40 @@ Cannot use “# getUserName  - my name is {username=userName} in Composer
 •	Testing in Bot Framework Emulator
 All Composer content should be published and then tested in Power Virtual Agents  
 
+## Example 1 – showing an Adaptive Card in Power Virtual Agents 
+
+Go to **Topics** page in Power Virtual Agents and create a new topic called **Meal delivery options**. Add the following trigger phrases for this new topic:
+•	what meals can I order
+•	what meal options do you have
+•	what dishes do you deliver
+•	entrees available for delivery 
+
+Click **Save** to save your new topic and then select **Go to authoring canvas** to create your dialog:
+![Power Virtual Agents new topic](media/Composer_Example1/E1_MealsTopicDetails.png)
+
+In **Authoring canvas**, create a **Question** node to ask the user about their location and make sure to select entity **City** from the dropdown list in **Identity** field:
+![Power Virtual Agents Question node](media/Composer_Example1/E1_Dialog1.png)
+
+Rename the output variable **Var** to **user_city**.  Set the variable **Usage** to **Bot (any topic can access)** and **Save** the topic.
+![Power Virtual Agents variable](media/Composer_Example1/E1_Dialog2.png)
+
+Next, you will enhance this topic **Meal delivery options** to show the images of the meal choices avaliable in your user’s city by extending your bot with Bot Framework Composer content. Go back to **Topics** page and click on **Open in Bot Framework Composer (Preview)** button to download and launch Bot Framework Composer.
+![Power Virtual Agents Open Composer](media/Composer_Example1/E1_OpenComposer.png)
+
+Your Power Virtual Agents bot will open in a Bot Framework Composer project. You will see that Power Virtual Agents topics from your bot are uploaded into Composer but are not editable. **Recognizer Type** field is set to **Default Recognizer** which is **Power Virtual Agents NLU**.
+>[!TIP]
+>**LUIS** service is not supported as a Recognizer in for Power Virtual Agents in Composer. The **Default Recognizer** is set to **Power Virtual Agents NLU** instead. You do not need to have any addiotnal subscription to use **Power Virtual Agents NLU** because it is included in your Power Virtual Agents license.
+![Bot Framework Composer main (root) dialog](media/Composer_Example1/E1_Contoso_meals_initial.png)
+
+Go to **Design** tab in Composer and click on **+ Add** button and select **Add new dialog** in the dropdown list:
+![Composer Design tab](media/Composer_Example1/E1_Meals_creatNewDialog.png)
+
+Name your new dialog **Meals**. Press **OK** button to proceed to create a new dialog **Meals** in Composer. You will use this **Bot Framework dialog** to display an Adaptive Card.
+![Composer Design tab](media/Composer_Example1/E1_Meals_newDialog.png)
+
+Go to **Bot Responses** tab in Composer and open **Meals** section. Click on **Show code**:
+![Composer Design tab](media/Composer_Example1/E1_Meals_BotReponses_empty.png)
+
+
 
 
