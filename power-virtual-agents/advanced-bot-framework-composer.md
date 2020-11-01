@@ -409,4 +409,37 @@ Next, scroll down the **Prompt with multi-choice** panel and set **List style** 
 Select **Write an expression** for **Array of choices** field and set it to use **conversation.days_array** property we have created in this dialog.
 ![Composer Design View - set up array of choices](media/Composer_Example2/E2_DailySpecials_array_multi_option.png)
 
+You have created a multi-choice option list that is based on **conversation.days_array** and stores user selection into **conversation.day_choice** property.
+You can now use this **conversation.day_choice** property to display the daily special for the selected day. Add **Send a response** action to your **DailySpecials** dialog under **User Input** action and add the following in the **Language Generation** panel on the right:
+
+```C#
+- ${DailySpecials(conversation.day_choice)}
+```
+![Composer Design View - display Daily Special for the selected day](media/Composer_Example2/E2_DailySpecials_addResponse.png)
+
+Go to **Design View** tab in Composer and navigate to the Power Virtual Agents **main (root) dialog**; the is the top level read-only dialog in Composer that you have created when you opened Power Virtual Agents bot in Bot Framework Composer. Select **+ Add** button and choose **Add new trigger** option.
+
+![Composer Design View - add new trigger](media/Composer_Example2/E2_main_addNewTrigger.png)
+
+Set type of trigger to **Intent recognized** and name it **Specials**. Click **Submit** button.
+![Composer Design View - add new Intent Recorgized trigger](media/Composer_Example2/E2_main_nameNewTrigger.png)
+
+A new Bot Framework **intent trigger** will be created in Composer. On the right-hand side panel **Trigger Phrases**, please add the following trigger phrases for your intent:
+
+```C#
+-what specials do you have
+-any special deals
+-do you have discounts
+```
+![Composer Design View - Trigger Phrases](media/Composer_Example2/E2_main_addTriggerPhrases.png)
+
+Select **Begin a new dialog** menu option under **Dialog management** menu to create a node that can call another dialog:
+![Composer Design View - begin new dialog](media/Composer_Example2/E2_main_DialogManagement.png)
+
+In the new action, select to call **DailySpecials** in **Begin a new dialog** panel on the right:
+![Composer Design View - call a new dialog](media/Composer_Example2/E2_main_callDialog.png)
+
+You are now ready to add you Composer content to your Power Virtual Agents bot. Go to **Publish** tab and publish it to your Power Virtual Agents bot.
+![Composer Publish to Power Virtual Agents bot](media/Composer_Example2/E2_main_publishSuccess.png)
+
 
