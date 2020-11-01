@@ -339,4 +339,74 @@ To test you changes in Power Virtual Agents, open **Test pane** and make sure **
 ![Power Virtual Agents Example 1 test](media/Composer_Example1/Example1_cropped.gif)
 
 
+## Example 2 – displaying multi-select options list in Power Virtual Agents 
+Open the Power Virtual Agents bot used in the previous example and use **Open in Bot Framework Composer (Preview)** button in **Topics** page to open this bot in Composer. While in **Design View** in Composer and select **+ Add button** and choose to add another Bot Framework dialog.
+![Composer Create new Bot Framework dialog](media/Composer_Example2/E2_DailySpecials_create.png)
+
+In your new **DailySpecials** dialog in Composer, go to **Manage properties** and choose **Set a property** menu option to create a new Composer property in this dialog:
+![Composer Create new Bot Framework dialog](media/Composer_Example2/E2_DailySpecials_set_a_property.png)
+
+Give this property the following name in Composer **Set a property** panel on the right:
+
+
+```C#
+conversation.days_array
+```
+In **Value** field in **Set a property** panel, change the type to **[]** to indicate that this property is going to be an **array**. Enter the following data into the **Value** field to create an array populated with days of the week:
+
+```C#
+["Sunday",  "Monday",  "Tuesday",   "Wednesday",  "Thursday",  "Friday",  "Saturday"]
+```
+
+![Composer Create property](media/Composer_Example2/E2_DailySpecials_setArray.png)
+
+Next, go to **Bot Responses** tab in Composer and select **DailySpecials**. Click on **Show code** button.
+![Composer Bot Responses tab](media/Composer_Example2/E2_DialySpecials_BotReponse_initial.png)
+
+Add the following into the **Bot Reponses** tab for **DailySpecials** to create daily offers for all the days on the week:
+```C#
+# DailySpecials(day)
+- SWITCH: ${day}
+- CASE: ${0}
+    - All tofu meals are 10% off on Sundays!
+    - Every Sunday, all tofu entrees are 10% off.
+- CASE: ${1}
+    - All steak options are 10% off on Mondays!
+    - Enjoy your Monday with a special offer of 10% off on all steak dishes!
+- CASE: ${2}
+    - All the chicken meal options are 10% off on Tuesdays!
+    - Tuesday special is 10% off on all the chicken dishes!
+  - CASE: ${3}
+    - All the chicken and tofu meal options are 10% off on Wednesdays!
+    - Wednesday special is 10% off on all the chicken and tofu dishes!
+  - CASE: ${4}
+    - On Thursdays, get a free delivery in Seattle, Bellevue, and Redmond on all orders over $80!
+    - Thursday special is a free delivery on orders over $80 in Seattle, Bellevue, and Redmond.
+- CASE: ${5} 
+    - Friday special - get a 10% discount on all dishes and delivery is free on all orders over $80!
+    - Every Friday, we offer 10% off on all meals and a free delivery on orders over $80!
+- CASE: ${6}
+    - On Saturdays, we have a free delivery on all orders over $50.
+    - Free delivery on all orders over $50 on Saturdays!
+- DEFAULT:
+    - Holiday special - free delivery anywhere in Seattle, Bellevue and Redmond on orders over $70 today!
+    - Holiday Delivery is on us if you are in Seattle, Bellevue and Redmond and your order is over $70 total!
+```
+![Composer Bot Responses tab - Language Generation code](media/Composer_Example2/E2_DailySpecials_BotResponse.png)
+
+Go back to the **Design View** in Composer and select **BeginDialog** under **DailySecials**. Add new prompt for user input to this dialog by selecting **Multi-choice** under **Ask a question** menu option.
+![Composer Design View - ask a multi choice questions](media/Composer_Example2/E2_DailySpecials_aska question.png)
+
+Enter the following text for the prompt:
+-	Please select a day:
+![Composer Design View - add propmt language generation](media/Composer_Example2/E2_DailySpecials_prompt.png)
+
+Select **User Input (Choice)** action. In **Prompt with multi-choice** panel, under **User Input**, set **Property** to **conversation.day_choice**.  
+Set **Output format** to **index** to return the index of the selected option instead of value.
+![Composer Design View - set up choice output property](media/Composer_Example2/E2_DailySpecials_input_variable.png)
+
+Next, scroll down the **Prompt with multi-choice** panel and set **List style** to **HeroCard** to display our options list vertically. 
+Select **Write an expression** for **Array of choices** field and set it to use **conversation.days_array** property we have created in this dialog.
+![Composer Design View - set up array of choices](media/Composer_Example2/E2_DailySpecials_array_multi_option.png)
+
 
