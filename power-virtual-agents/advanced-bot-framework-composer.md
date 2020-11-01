@@ -333,3 +333,10 @@ Open **Meal delivery options** topic in **Authoring canvas** in Power Virtual Ag
 
 Your Power Virtual Agents topic **Meal delivery options** will call Bot Framework dialog **Meals** to display an Adaptive Card. Press **Save** to save the chamges to your topic.
 ![Power Virtual Agents - redirect to Bot Framework dialog](media/Composer_Example1/E1_MealsDelivery_RedirectToMeals.png)
+
+To test you changes in Power Virtual Agents, open **Test pane** and make sure **Track between topics** is set on. Type in the following to start your conversation:
+•	What meals do you deliver?
+![Power Virtual Agents Example 1 test](media/Composer_Example1/Example1_cropped.gif)
+
+
+
