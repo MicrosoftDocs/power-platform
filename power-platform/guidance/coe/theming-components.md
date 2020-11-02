@@ -82,7 +82,7 @@ After you've finished authoring the theme, select **Publish Theme**. Here, theme
 
 Complete the same steps for the AppTemplateTablet canvas app.
 
-Go back to the Theme Gallery app, and upload the template files you just downloaded.
+Go back to the Theme Editor app, and upload the template files you just downloaded.
 
 ![Theme Editor - Publish App Theme](media/theming-11.png "Theme Editor - Publish App Theme")
 
