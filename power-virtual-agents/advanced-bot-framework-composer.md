@@ -541,4 +541,20 @@ Make sure **Track between topics** is turned on, and test your new bot content b
 •	Is tofu vegan?
 
 ![Power Virtual Agents test](media/Composer_Example3/Example3_cropped.gif)
- 
+
+## Using Power Virtual Agents variables in Bot Framework Composer
+
+You can have read-only access to Power Virtual Agents global variables by referencing the following scope in Bot Framework Composer:
+•	virtualagent
+
+For example, you create a variable called **user_city** in Power Virtual Agents bot. Make it a global variable by setting its **Usage** to **Bot (any topic can access)** in Power Virtual Agents.
+![Power Virtual Agents - variable](media/Composer_Example1/E1_Dialog2.png)
+
+This setting makes Power Virtual Agents variable **user_city** available in Bot Framework Composer. Use the following notation to refer to it in Composer:
+
+ ```C#
+virtualagent.user_city 
+```
+![Composer - refer to Power Virtual Agents variables](media/Composer_Example1/E1_Meals_ResponseAdded.png)
+
+## Testing Bot Framework content with Power Virtual Agents
