@@ -454,3 +454,91 @@ Make sure **Track between topics** is turned on, and test your new bot content b
 •	Do you have any specials?
 
 ![Power Virtual Agents Test pane](media/Composer_Example2/Example2._cropped.gif)
+
+## Example 3 – using Bing Search as a fallback in Power Virtual Agents 
+Open the Power Virtual Agents bot used in the earlier exampls.  Go to **Topics** page and click on **Open in Bot Framework Composer (Preview)** button to open Composer. Select **+ Add** button in Composer to add another Bot Framework dialog. Name your new dialog **BingSearch** in Composer.
+![Composer add dialog](media/Composer_Example3/E3_BingSearch_addDialog.png)
+
+Once **BingSearch** dialog is added, go to **Bot Responses** tab for this dialog, switch to **Show code** view and insert the following Adaptive Card JSON:
+```JSON
+
+# adaptivecardjson_BingSearch(user_utterance)
+- ```
+{    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.2",
+    "fallbackText": "This card requires Media to be viewed. Ask your platform to update to Adaptive Cards v1.1 for this and more!",
+    "actions": [
+        {
+            "type": "Action.OpenUrl",
+            "title": "Search with Bing",
+            "url": "https://www.bing.com/search?q=${user_utterance}",
+            "style": "positive"
+        }
+    ],
+    "body": [
+        {
+            "type": "Image",
+            "url": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWe65Z?ver=2d4e&q=90&m=6&h=201&w=358&b=%23FFFFFFFF&l=f&o=t&aim=true"
+        },
+        {
+            "type": "TextBlock",
+            "text": "${user_utterance}",
+            "wrap": true,
+            "separator": true,
+            "horizontalAlignment": "Center",
+            "size": "Medium"
+            
+        }
+    ]
+}
+```
+
+![Composer Bot Responses - add JSON](media/Composer_Example3/E3_BingSearch_BotResponses_AdaptiveCard.png)
+
+
+
+Next, add this **Activity** to the same **Bot Reponses** window in Composer:
+```
+ # AdaptiveCardBingSearch(user_utterance)
+[Activity
+    Attachments = ${json(adaptivecardjson_BingSearch(user_utterance))}
+]
+
+```
+![Composer Bot Responses - add Activity](media/Composer_Example3/E3_BingSearch_BotResponses_Activity.png)
+
+
+Go to **Design** tab in Composer and select **BeginDialog** under **BingSearch** dialog. Add **Send a response** action and set the following in **Language Generation** panel:
+
+```C#
+-${AdaptiveCardBingSearch(turn.activity.text)}
+```
+![Composer BeginDialog - Send a response](media/Composer_Example3/E3_BingSearch_addBotReponse_BingSearch.png)
+
+Next, go to the **main (root) dialog** in Composer. Select **+ Add** button and choose **Add new trigger**.
+![Composer - Add new trigger](media/Composer_Example3/E3_BingSearch_addNewTrigger.png)
+
+Make sure the type of trigger is set to **Unknown Intent** and click **Submit** button.
+![Composer - unknown intent](media/Composer_Example3/E3_BingSearch_createUnknownIntent.png)
+
+Once **Unknown trigger** is created and open in **Design** view, select **Begin a new dialog** under **Dialog management menu**.
+![Composer Unknown Intent triger - Dialog management](media/Composer_Example3/E3_BingSearch_callDialog.png)
+
+In **Begin a new dialog** panel on the right, select dialog **BingSearch**.
+![Composer Unknown Intent triger - call BingSearch dialog](media/Composer_Example3/E3_BingSearch_callBingSearch.png)
+
+You are now ready to add you Composer content to your Power Virtual Agents bot. Go to **Publish** tab in Composer and publish it to your Power Virtual Agents bot.
+![Composer Publish tab](media/Composer_Example3/E3_BingSearch_uploadSuccess.png)
+
+Once your new Composer content is successfully published, you can now see that **OnUnknownIntent** was added to the **Topics** page in Power Virtual Agents.
+
+>[!NOTE]
+>You might need to refresh your **Topics** page to see the new bot content that has been added from Composer.
+![Power Virtual Agents Topics page](media/Composer_Example3/E3_BingSearch_inTopicsList.png)
+
+Make sure **Track between topics** is turned on, and test your new bot content by entering the following in **test pane** in Power Virtual Agents to start a bot conversation:
+•	Is tofu vegan?
+
+![Power Virtual Agents test](media/Composer_Example3/Example3_cropped.gif)
+ 
