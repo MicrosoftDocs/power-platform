@@ -576,3 +576,8 @@ If you having trouble publishing your Bot Framework Composer content to Power Vi
 
 This will bring up the list of warnings and errors that were encourered during the Publish process in Composer, along with suggestion son how to fix:
 ![Composer Publish - warnings and errors](media/Composer_Troubleshooting/Tl_PublishError.png)
+
+If a problem persists or you encounter issues developing in Bot Framework Composer, please got to [GitHub](https://github.com/microsoft/BotFramework-Composer/issues) to see the list of known issues in Composer or to log a new issue. <br>
+
+For troubleshooting your bot in Power Virtual Agents, please refer to [Troubleshoot your bot](https://docs.microsoft.com/en-us/power-virtual-agents/advanced-flow#troubleshoot-your-bot) section in Power Virtual Agents documentation.
+
