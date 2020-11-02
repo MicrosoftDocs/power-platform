@@ -5,7 +5,7 @@ author: dileepsinghmicrosoft
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/31/2020
+ms.date: 11/02/2020
 ms.author: dileeps
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -54,7 +54,7 @@ All the users of Microsoft Power Platform have limits on the number of requests 
 
 <sup>3</sup> The per user plans include the previous Plan 1 and Plan 2.
 
-<sup>4</sup> See **Appendix C** for Microsoft 365 licenses that include Power Apps and Power Automate capabilities in the [Licensing Guide](https://go.microsoft.com/fwlink/p/?linkid=2085130).
+<sup>4</sup> See **Appendix B** for Microsoft 365 licenses that include Power Apps and Power Automate capabilities in the [Licensing Guide](https://go.microsoft.com/fwlink/p/?linkid=2085130).
 
 If a user has multiple plans assigned from different product lines, the total number of requests allowed would be the sum of requests allocated to each license type. For example, if a user has both a Dynamics 365 Customer Service Enterprise license as well as a Power Apps per user license then that user will have a total of 20000 + 5000 = 25000 requests available per 24 hours.
 
