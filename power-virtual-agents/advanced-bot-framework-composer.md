@@ -115,25 +115,25 @@ For a deep-dive on Bot Framework Composer **dialogs**, **events**, **trigers** a
 ## Composer features not supported with Power Virtual Agents
 The following Bot Framework Composer features are not supported with Power Virtual Agents:
 
-•	LUIS Recognizer 
+•	LUIS Recognizer <br> 
 Default Recognizer in Composer is set to Power Virtual Agents NLU
 
-•	Bot Skills
+•	Bot Skills <br>
 Cannot invoke Bot Skills in Composer content meant for Power Virtual Agents
 
-•	QnA Maker
+•	QnA Maker <br>
 This feature is not available in Composer for Power Virtual Agents
 
-•	OAuth Login and User Sign Off  
+•	OAuth Login and User Sign Off  <br>
 These types of actions are not supported in Composer for Power Virtual Agents
 
-•	Dialog Inputs and Outputs
+•	Dialog Inputs and Outputs <br>
 Dialog Inputs and outputs are not supported in Composer for Power Virtual Agents
 
-•	Entity detection in Trigger Phrases in Composer
+•	Entity detection in Trigger Phrases in Composer <br>
 Cannot use “# getUserName  - my name is {username=userName} in Composer
 
-•	Testing in Bot Framework Emulator
+•	Testing in Bot Framework Emulator <br>
 All Composer content should be published and then tested in Power Virtual Agents  
 
 ## Example 1 – showing an Adaptive Card in Power Virtual Agents 
@@ -574,7 +574,7 @@ After your successfully publish your Bot Framework content, you can use Power Vi
 If you having trouble publishing your Bot Framework Composer content to Power Virtual Agents, you can use **See Log** feature in **Publish** tab in Composer. The loog will provide a detailed description of the errors encountered during validation. Please select the Publish attempt in the **Publish history** and click on **See Log** button.
 ![Composer Publish - See Log](media/Composer_Troubleshooting/TL_PublishHistory.png)
 
-This will bring up the list of warnings and errors that were encourered during the Publish process in Composer, along with suggestion son how to fix:
+This will bring up the list of warnings and errors that were encourered during the Publish process in Composer, along with suggestions on how to fix:
 ![Composer Publish - warnings and errors](media/Composer_Troubleshooting/Tl_PublishError.png)
 
 If a problem persists or you encounter issues developing in Bot Framework Composer, please got to [GitHub](https://github.com/microsoft/BotFramework-Composer/issues) to see the list of known issues in Composer or to log a new issue. <br>
@@ -583,7 +583,7 @@ For troubleshooting your bot in Power Virtual Agents, please refer to [Troublesh
 
 ## Learn More
 
-To learn more about developing in Bot Framework Composer, you can refer to these resources:
+To learn more about developing in Bot Framework Composer, you can refer to these resources:<br>
 [Bot Framework Composer documentation](https://docs.microsoft.com/en-us/composer/) <br>
 [Tour of Composer](https://docs.microsoft.com/en-us/composer/quickstart-tour-of-composer)<br>
 [Tutorial: Create a new bot](https://docs.microsoft.com/en-us/composer/tutorial/tutorial-create-bot)<br>
