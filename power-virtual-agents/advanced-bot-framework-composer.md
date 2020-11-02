@@ -581,3 +581,14 @@ If a problem persists or you encounter issues developing in Bot Framework Compos
 
 For troubleshooting your bot in Power Virtual Agents, please refer to [Troubleshoot your bot](https://docs.microsoft.com/en-us/power-virtual-agents/advanced-flow#troubleshoot-your-bot) section in Power Virtual Agents documentation.
 
+## Learn More
+
+To learn more about developing in Bot Framework Composer, you can refer to these resources:
+[Bot Framework Composer documentation](https://docs.microsoft.com/en-us/composer/) <br>
+[Tour of Composer](https://docs.microsoft.com/en-us/composer/quickstart-tour-of-composer)<br>
+[Tutorial: Create a new bot](https://docs.microsoft.com/en-us/composer/tutorial/tutorial-create-bot)<br>
+[Tutorial: Add cards and buttons to your bot](https://docs.microsoft.com/en-us/composer/tutorial/tutorial-cards)<br>
+[Tutorial: Add language generation to your bot](https://docs.microsoft.com/en-us/composer/tutorial/tutorial-language-generation)<br>
+[Bot Framework Composer on GitHub](https://github.com/Microsoft/BotFramework-Composer)
+
+
