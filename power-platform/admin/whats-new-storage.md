@@ -97,7 +97,7 @@ You can request a temporary (30-day) extension that allows copy and restore oper
 
 - An extension is at the tenant level.
 - An extension applies to both the legacy and new storage capacity models.
-- An extension does not allow you to create an environment.
+- An extension doesn't allow you to create an environment.
 - An extension allows admins to copy and restore environments for a maximum of 30 days while over the capacity limit.
 - Your organization can request an extension only once.
 - After the one-time extension, copying and restoring environments will again be blocked if the tenant doesn't have available storage capacity. To avoid this, admins should reduce storage usage and/or purchase additional storage capacity.
