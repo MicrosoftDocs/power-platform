@@ -117,9 +117,10 @@ Publishes all customizations in an environment.
 | Authentication type | (Required) Select whether to use username/password or service principal authentication. Note that username/password does not support multi-factor authentication. |
 | Service connection | (Required) The service connection to the environment in which you want to publish customizations. Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type. |
 
+
 ### Power Platform Set Solution Version
 
-Updates the version of a solution.
+Updates the version of a solution. 
 
 | Parameters    | Description   |
 |---------------|---------------|
@@ -128,6 +129,10 @@ Updates the version of a solution.
 | Solution name              | (Required) The name of the solution you want to set the version number for.     |
 | Solution Version Number              | (Required) Version number you want to set.     |
 
+Note that while version number can be hardcoded in the pipeline, it is recommended to use an Azure DevOps pipeline variable like [BuildId](https://docs.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml#build-variables). 
+This provides options to define the exact shape of version number under the "Options" tab, for example: $(year:yyyy)-$(Date:MM)-$(Date:dd)-$(rev:rr)-3
+
+This definition can then be used in the Set Solution Version task by setting the Version Number property with: $(Build.BuildId) instead of hard coding 20200824.0.0.2.
 
 ### Power Platform Deploy Package
 
