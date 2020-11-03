@@ -65,7 +65,7 @@ you might have inadvertently introduced when building your solution.
 
 ## Solution tasks
 
-This set of tasks perform actions against solutions, and includes the following tasks.
+This set of tasks can automate solution actions. Note that the environment tasks outlined later in this section that create, copy or restore an environment will overwrite the service connections with the newly created environmens. This makes it possible to perform solution tasks against environments that are created on demand. 
 
 ### Power Platform Import Solution
 Imports a solution into a target environment.
@@ -145,7 +145,7 @@ Automate common Environment Lifecycle Management (ELM) tasks.
 
 ### Power Platform Create Environment
 
-Creates a new environment.
+Creates a new environment. Creating a new environment also automatically creates the BuildTools.EnvironmentUrl which will be used as default service connection for subsequent tasks in the pipeline
 
 > [!NOTE]
 > A new environment can only be provisioned if your license or capacity
@@ -153,8 +153,8 @@ Creates a new environment.
 
 | Parameters        | Description     |
 |-------------------|-----------------|
-| Authentication type | (Required) This is set to username/password which is the only supported authentication method currently. Service principal authentication is planned for an upcoming release. Note that username/password does not support multi-factor authentication. |
-| Service connection | (Required) The service connection to the tenant for which you want to create the environment. Defined under **Service Connections** > **Generic Service Connection** in **Project Settings**. |
+| Authentication type | (Required) Select whether to use username/password or service principal authentication. Note that username/password does not support multi-factor authentication. |
+| Service connection | (Required) The service connection to the tenant for which you want to create the environment. Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type.|
 | Display name | (Required) The display name of the environment created. |
 | Deployment Region | (Required) The region that the environment should be deployed into.         |
 | Environment Type     | (Required) The type of instance to deploy. Options are **Sandbox** or **Production**.      |
@@ -169,8 +169,8 @@ Deletes an environment.
 
 | Parameters       | Description         |
 |------------------|---------------------|
-| Authentication type | (Required) This is set to username/password which is the only supported authentication method currently. Service principal authentication is planned for an upcoming release. Note that username/password does not support multi-factor authentication. |
-| Service connection | (Required) The service connection to the tenant for which you want to delete the environment. Defined under **Service Connections** > **Generic Service Connection** in **Project Settings**. |
+| Authentication type | (Required) Select whether to use username/password or service principal authentication. Note that username/password does not support multi-factor authentication. |
+| Service connection | (Required) The service connection to the tenant for which you want to delete the environment. Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type. |
 
 ### Power Platform Backup Environment
 
@@ -178,8 +178,8 @@ Backs up an environment.
 
 | Parameters   | Description   |
 |--------------|---------------|
-| Authentication type | (Required) This is set to username/password which is the only supported authentication method currently. Service principal authentication is planned for an upcoming release. Note that username/password does not support multi-factor authentication. |
-| Service connection | (Required) The service connection to the tenant for which you want to backup the environment. Defined under **Service Connections** > **Generic Service Connection** in **Project Settings**. |
+| Authentication type | (Required) Select whether to use username/password or service principal authentication. Note that username/password does not support multi-factor authentication.|
+| Service connection | (Required) The service connection to the tenant for which you want to backup the environment. Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type. |
 | Backup label               | (Required) The label to be assign to the backup.                                                                         |
 
 ### Power Platform Copy Environment
@@ -187,13 +187,13 @@ Backs up an environment.
 Copies an environment to a target environment. Two
 types of copies are available: full and minimal. A *Full* copy includes both data and
 solution metadata (customizations), whereas a *minimal* copy only includes solution
-metadata and not the actual data.
+metadata and not the actual data. 
 
 | Parameters     | Description     |
 |----------------|-----------------|
-| Authentication type | (Required) This is set to username/password which is the only supported authentication method currently. Service principal authentication is planned for an upcoming release. Note that username/password does not support multi-factor authentication. |
-| Service connection | (Required) The service connection for the source environment that you want to copy from. Defined under **Service Connections** in **Project Settings**. |
-| Service connection | (Required) The service connection for the target environment that you want to copy to. Defined under **Service Connections** in **Project Settings**. | 
+| Authentication type | (Required) Select whether to use username/password or service principal authentication. Note that username/password does not support multi-factor authentication. |
+| Service connection | (Required) The service connection for the source environment that you want to copy from. Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type. |
+| Target environment URL | (Required) The URL for the target environment that you want to copy to.  | 
 
 ## Build and release pipelines
 
