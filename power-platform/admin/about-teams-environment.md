@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/23/2020
+ms.date: 11/02/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -76,7 +76,7 @@ The lifetime of the environment will be tied to the team it was created in. If y
 Some operations are blocked by default, such as the Copy and Reset operations. For scenarios where you need this capability, use Common Data Service environments. See the previous table for details.
 
 > [!IMPORTANT]
-> Project Oakdale environments won't be allowed to change types until the promote operation has been carried out on the environment. After the promotion is complete, the Project Oakdale environment will have the full capabilities found in Common Data Service. In addition to the standard termination of the environments, if the Microsoft Office license expires, there will also be an inactivity clause for these environments. Specifically, when an environment is unused for over three months, it will be disabled and ultimately deleted. 
+> Project Oakdale environments won't be allowed to change types until the promote operation has been carried out on the environment. After the promotion is complete, the Project Oakdale environment will have the full capabilities found in Common Data Service.  
 >
 > If the team is deleted, the Project Oakdale environment that was created will also be deleted. The Project Oakdale environment itself may be deleted from within the team by the team owner. A warning will be provided prior to allowing the deletion to go through, to ensure there are no accidental deletions. 
 
