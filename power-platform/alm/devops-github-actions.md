@@ -30,9 +30,9 @@ solutions) that contains the various platform components such as customer engage
 <ul><li>Deploying to downstream environments</li></ul>
 
 <ul><li>Provisioning or de-provisioning
-environments. (Available October 2020)</li></ul>
+environments. (Available in late 2020)</li></ul>
 
-<ul><li>Perform static analysis check against solutions by using the Power Apps checker service (Available October 2020)</li></ul>
+<ul><li>Perform static analysis check against solutions by using the Power Apps checker service (Available in late 2020)</li></ul>
 
 
 GitHub actions for the Power Platform can be used along with any other available
@@ -77,10 +77,10 @@ from [GitHub Marketplace](https://github.com/marketplace?type=actions).
 To interact with a Power Platform environment, a secret must be created that enables the various GitHub actions to perform the required task. Two types of connections are available:
 
 - Username/password: Configured as a generic service connection with username and password. Note that username/password does not support multi-factor authentication.
-- Service principal and client secret: This connection type uses service principal based authentication and supports multi-factor authentication (Service principal authentication available October 2020).
+- Service principal and client secret: This connection type uses service principal based authentication and supports multi-factor authentication (Service principal authentication available in late 2020).
 
 ## Available runners
-Actions for Power Platform can only run on windows agent. Cross platform compatibility will be available late fall 2020
+Actions for Power Platform can only run on windows agent. Cross platform compatibility will be available in late 2020
 
 ## Frequently asked questions (FAQs)
 
