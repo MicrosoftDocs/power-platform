@@ -23,7 +23,6 @@ search.app:
 This three part tutorial will give you an opportunity to get hands on with best practices to automate building and deploying your app using GitHub Actions for Power Platform. The first two tutorials are all about setting up required environments and creating a solution to later use with GitHub Actions. If you are experienced with creating environments and solutions, you can follow the Tip below and skip to the third tutorial to begin using GitHub Actions for Power Platform.
 
 > [!div class="checklist"]
-
 > * (1) Create three Common Data Service environments in your tenant
 > * (2) Create a model-driven app
 > * (3) Export and deploy your app using application lifecycle management (ALM) automation
