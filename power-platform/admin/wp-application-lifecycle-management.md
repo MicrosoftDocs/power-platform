@@ -2,11 +2,10 @@
 title: "Application lifecycle management  | MicrosoftDocs"
 description: Application lifecycle management.
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/05/2020
+ms.date: 09/15/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -145,13 +144,16 @@ Applications often have data that is configuration, or reference data. This coul
 - Avoid duplicate records by defining a uniqueness condition for each entity based on a combination of fields.
 - Support updating of existing records.
 - Define a schema for what data is moved and use it over and over.
+- Filter only the records you want to move.
 
 The following image outlines the basic process for using the tool.
 
 > [!div class="mx-imgBorder"] 
 > ![Moving reference data](media/moving-reference-data.png "Moving reference data")
 
-The output from the tool is a .zip file containing the data and the schema file. The same tool can be used to import the data into the target Common Data Service environment. You can also package the data with a Solution Deployer package that we will discuss shortly, allowing it to be deployed alongside one or more Common Data Service solutions. More information: [Move configuration data across environments](https://docs.microsoft.com/power-platform/admin/manage-configuration-data)
+The output from the tool is a .zip file containing the data and the schema file. The same tool can be used to import the data into the target Common Data Service environment. You can also package the data with a Solution Deployer package that we will discuss shortly, allowing it to be deployed alongside one or more Common Data Service solutions. There are also community tools like [Microsoft.Xrm.DevOps.Data](https://github.com/abvogel/Microsoft.Xrm.DevOps.Data) to manage, export, and import data packages by command line using PowerShell.
+
+More information: [Move configuration data across environments](https://docs.microsoft.com/power-platform/admin/manage-configuration-data)
 
 ## Using the Package Deployer
 
