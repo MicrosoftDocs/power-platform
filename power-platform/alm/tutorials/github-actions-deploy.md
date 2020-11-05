@@ -29,7 +29,7 @@ In this tutorial, you will learn how to:
 
  The workflows can automatically export your app (as an unmanaged solution) from a development environment, generate a build artifact (managed solution), and deploy the app into your production environment. This tutorial uses the [ALMLab solution](https://github.com/microsoft/powerplatform-actions-lab/blob/main/solutions/ALMLab_1_0_0_1.zip) you built and the environments you set up in previous tutorials.
 
-Related tutorials: [Get started](github-actions-start.md), and [Build a model-driven app](github-actions-deploy.md).
+Related tutorials: [Get started](github-actions-start.md), and [Build a model-driven app](github-actions-build.md).
 
 ## Create a GitHub Account
 
