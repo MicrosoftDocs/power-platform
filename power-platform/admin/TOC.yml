@@ -511,6 +511,8 @@
         items:
         - name: Manage teams
           href: manage-teams.md
+        - name: Manage group teams
+          href: manage-group-teams.md
         - name: Team templates
           href: about-team-templates.md
         - name: Team templates for access rights 
