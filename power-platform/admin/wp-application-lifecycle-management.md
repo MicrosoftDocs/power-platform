@@ -18,6 +18,8 @@ search.app:
 
 # Application lifecycle management
 
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 Application lifecycle management (ALM) is important as the applications your organization builds become more complex and as more of your company depends on their stability. In this topic we discuss using ALM to handle more complex scenarios.
 
 > [!NOTE]
