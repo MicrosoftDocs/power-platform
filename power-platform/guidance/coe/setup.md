@@ -93,7 +93,7 @@ Periodically, the solution will receive updates with new features, bug fixes, or
 Install the updates by importing the latest version to the environment where you originally installed the solution. Select **Upgrade** to update the solution.
 
 > [!NOTE]
-> If you have mande any changes to the flows / apps in the solution they will not receive updates until you remove that managed layer. <br>
+> If you have made any changes to the flows / apps in the solution they will not receive updates until you remove that unmanaged layer. <br>
 > For every flow/app that you changed, go to the solution layers and remove it.
 > ![Upgrade 1](media/Upgrade1.png "Upgrade 1")
 > ![Upgrade 2](media/Upgrade2.png "Upgrade 2")
