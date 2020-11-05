@@ -23,6 +23,8 @@ search.app:
 
 Applies to Common Data Service
 
+An Azure Active Directory (Azure AD) *group* team. Similar to *owner* team, an Azure AD group team can own records and can have security roles assigned to the team. There are two *group* team types, and they correspond directly to the Azure AD group types – Security and Office. The *group* security role can be just for the team or for team member with User privileges [member's privilege inheritance](security-roles-privileges.md#team-members-privilege-inheritance). Team members are dynamically derived (added and removed) when they access the environment based on their Azure AD group membership. 
+
 ### Using Azure Active Directory groups to manage a user's app and data access 
 
 The administration of app and data access for Microsoft Common Data Service has been extended to allow administrators to use their organization's Azure Active Directory (Azure AD) groups to manage access rights for licensed Common Data Service users.
@@ -76,9 +78,9 @@ For more information, see [Assign a record to a user or team](https://docs.micro
    - Don't have the correct permissions? Contact your system administrator.
 
    Prerequisites:
-   1.    An Azure Active Directory (Azure AD) Group is required for each group team.
-   2.    Obtain the Azure AD Group's **ObjectID** from your https://portal.azure.com site.
-   3.    Create a custom security role that contains privileges per your team's collaboration requirement. Please see the discussion of [member's inherited privileges](security-roles-privileges.md#team-members-privilege-inheritance) if you need to extend the team member's privileges directly to a user.
+   1. An Azure Active Directory (Azure AD) Group is required for each group team.
+   2. Obtain the Azure AD Group's **ObjectID** from your https://portal.azure.com site.
+   3. Create a custom security role that contains privileges per your team's collaboration requirement. Please see the discussion of [member's inherited privileges](security-roles-privileges.md#team-members-privilege-inheritance) if you need to extend the team member's privileges directly to a user.
 
 2. In the web app, go to **Settings** > **Security**. In Microsoft Dynamics 365 for Outlook, go to **Settings** > **System** > **Security**.
 

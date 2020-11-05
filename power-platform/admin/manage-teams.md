@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/23/2020
+ms.date: 11/05/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -25,7 +25,7 @@ Using teams is optional. However, teams provide an easy way to share business ob
   
 - An *owner* team owns records and has security roles assigned to the team. The team's privileges are defined by these security roles. In addition to privileges provided by the team, team members have the privileges defined by their individual security roles and team [member's privilege inheritance](security-roles-privileges.md#team-members-privilege-inheritance) roles, and by the roles from other teams in which they are members. A team has full access rights on the records that the team owns. Team members are added manually to the owner team.
 
-- An Azure Active Directory (Azure AD) *group* team. Similar to *owner* team, an Azure AD group team can own records and can have security roles assigned to the team. There are two *group* team types, and they correspond directly to the Azure AD group types – Security and Office. The *group* security role can be just for the team or for team member with User privileges [member's privilege inheritance](security-roles-privileges.md#team-members-privilege-inheritance). Team members are dynamically derived (added and removed) when they access the environment based on their Azure AD group membership.  
+- An Azure Active Directory (Azure AD) *group* team. Similar to *owner* team, an Azure AD group team can own records and can have security roles assigned to the team. There are two *group* team types, and they correspond directly to the Azure AD group types – Security and Office. The *group* security role can be just for the team or for team member with User privileges [member's privilege inheritance](security-roles-privileges.md#team-members-privilege-inheritance). Team members are dynamically derived (added and removed) when they access the environment based on their Azure AD group membership. See [Manage group teams](manage-group-teams.md).
   
 - An *access* team doesn't own records and doesn't have security roles assigned to the team. The team members have privileges defined by their individual security roles and by roles from the teams in which they are members. The records are shared with an access team, and the team is granted access rights on the records, such as Read, Write, or Append.  
   
