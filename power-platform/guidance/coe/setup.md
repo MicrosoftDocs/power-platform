@@ -98,7 +98,6 @@ Install the updates by importing the latest version to the environment where you
 > ![Upgrade 1](media/Upgrade1.png "Upgrade 1")
 > ![Upgrade 2](media/Upgrade2.png "Upgrade 2")
 
-
 ## FAQ
 
 **What licenses do I need to run this solution?**

@@ -31,7 +31,8 @@ This is the first step of the installation process and is required for every oth
 
 1. Download the CoE Starter Kit compressed file ([aka.ms/CoeStarterKitDownload](https://aka.ms/CoeStarterKitDownload)).
 
-1. Extract the zip file.
+    >[!IMPORTANT]
+    > **Extract the zip file** after downloading and before moving on to the next step. The CoE Starter Kit compressed file contains all solution components as well as non-solution aware components that make up the CoE Starter Kit.
 
 1. Create an environment in which to set up the CoE.
 
