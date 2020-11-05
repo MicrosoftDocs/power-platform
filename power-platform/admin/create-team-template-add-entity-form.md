@@ -7,7 +7,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/28/2019
+ms.date: 11/05/2020
 search.audienceType: 
   - admin
 search.app:
@@ -44,15 +44,17 @@ Check your security role:
 
 7. On the **Actions** toolbar, select **Save**.  
   
-<!--
+
 ## Create a team template  
   
-1. [!INCLUDE[proc_settings_security](../includes/proc-settings-security.md)]  
+1. Go to **Settings** > **Security**.
   
 2. Choose **Access Team Templates**.  
   
 3. On the **Actions** toolbar, choose **New**, complete the required fields, and then choose **Save**.  
--->
+
+> [!NOTE]
+> You can create two access team templates per entity.
 
 ## Add a team template to the entity form   
   
