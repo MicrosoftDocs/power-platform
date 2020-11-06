@@ -40,7 +40,7 @@ You will need to create, or have access to, three Common Data Service environmen
 2. Go to https://admin.powerplatform.microsoft.com/, this will take you to the Power Platform admin center.
 3. Select **Environments** in the navigation area.
 
-4. Select **+ New Environment** to create your first new environment.
+4. Select **+ New** to create your first new environment.
 
     ![New environment](../media/github-actions-tutorial/gh-lab-0.10.png "New environment")
 
