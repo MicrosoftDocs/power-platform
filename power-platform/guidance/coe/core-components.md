@@ -261,6 +261,16 @@ The audit log solution is able to find this information in on a daily basis for 
 
 This flow runs weekly, and checks if any makers have left the organization - if maker information can not be found in Azure AD/Office 365 Users, any resources created by the maker (apps, flows, environments, chatbots and UI flows) are marked as orphaned.
 
+### CLEANUP - Admin \| Sync Template v2 (Check Deleted)
+
+This long running flow runs every other week, and compares CoE to the tenant to determine if any objects were deleted since last run. Either just marks them as deleted (if env var *Also Delete from CoE* = no) or deletes them from the CoE (if *Also Delete from CoE* = yes).
+
+The audit log solution is able to find this information in real  time for some, but not all, objects. So if you have that configured you should still run this flow periodically.
+
+### CLEANUP - Admin \| Sync Template v2 (Power Apps User Shared With))
+
+This long running flow runs every other week. It walks the tenant and finds, for all apps in the tenant, who the app is shared with using this connector: [Get App Role Assignments as Admin](https://docs.microsoft.com/connectors/powerappsforadmins/#get-app-role-assignments-as-admin).
+
 ## Apps
 
 <!--### DLP Editor

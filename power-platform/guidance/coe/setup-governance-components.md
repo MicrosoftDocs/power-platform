@@ -150,6 +150,17 @@ These flows will be turned off when you import the solution. You can turn them o
 
 The governance components solution contains one app, which is used by makers to update the compliance details of their applications.
 
-**Developer Compliance Center**
+### Developer Compliance Center
 
-As soon as you're ready to adopt the CoE with your app and flow makers, share this app with them. Your makers must have a Power Apps Premium license, as mentioned in [Prerequisites](setup.md#prerequisites).
+Your app, flow and bot makers will  use the Developer Compliance Center app to provide further information about the resources they're building - get familiar with the [audit process](example-processes.md) and share the app with your makers. Your makers must have a Power Apps Premium license to use this app.
+
+In addition to sharing the app, you will also need to share the data by providing data permissions to the user.
+
+1. Navigate to make.powerapps.com and select the app
+1. Select ... > Share
+1. Select the Common Data Service data permissions
+   ![Sharing Data 1](media/SharingData1.png "Sharing Data 1")
+1. Select the Power Platform Maker Security Role
+   ![Sharing Data 2](media/SharingData2.png "Sharing Data 2")
+1. Select Share
+
