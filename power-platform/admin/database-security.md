@@ -83,13 +83,9 @@ To add a security role to a team or a user who is already present in the Enabled
 
 3. In the **Access** tile, select **See all** under Security roles.
 
-<!-- // TODO: insert screenshot 
-
-
-
    > [!div class="mx-imgBorder"] 
-   > ![Select Manage users in Dynamics 365](media/manage-users-dynamics-365.png "Select Manage users in Dynamics 365")
--->
+   > ![See all users](media/see-all-users.png "See all users")
+
 4. Make sure the right Business unit is selected from the dropdown, and click on a role from the list of roles in the environment.
 
 5. Select **Add people** to add a user or team to the role. If you do not find a user or team to assign the role to, make sure the user or team is present in the environment and the user is in the Enabled status before assigning a role to them. 
