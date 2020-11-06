@@ -18,59 +18,62 @@ search.app:
 ---
 # Limitations
 
-There is no "one size fits all" solution for a Center of Excellence (CoE). Some companies will want a very restrictive set of rules on their organization in hopes of mitigating the unknown, while others will want to let users personally explore without limitations. Because of this, the CoE Starter Kit doesn't come equipped with a set of design patterns for everyone. For example, there are no components that are configured to automatically delete resources, because we didn't want to provide a tool that might unintentionally disrupt a business when installed. Therefore, if your organization wants a more restrictive implementation, it must be implemented in addition to these tools.
+There is no "one size fits all" solution for a Center of Excellence (CoE). Some companies will want a very restrictive set of rules on their organization in hopes of mitigating the unknown, while others will want to let users personally explore without limitations. Because of this, the CoE Starter Kit doesn't come equipped with a set of design patterns for everyone. For example, there are no components that are configured to automatically delete resources, because we didn't want to provide a tool that might unintentionally disrupt a business. Therefore, if your organization wants a more restrictive implementation, it must implement those restrictions in addition to using the tools from the starter kit.
 
-In addition to this high-level warning, the following notes pertain to limitations on some components.
+The following sections describe limitations for some components.
 
 ## Timeouts in the Admin | Sync Template V2
 
-The Common Data Service connector might experience some throttling limits if the tenant has a lot of resources. If you see 429 errors in the flow run history occurring in the later runs, you can try the following resolution steps:
+The Common Data Service connector might experience some throttling limits if the tenant has a lot of resources. If you see 429 errors in the flow run history occurring in later runs, you can try the following resolution steps:
 
-1. **Configure retry policy**
-    1. Open **Admin \| Sync Template v2**, and then select **Edit**.
-    1. Expand the step: **Get Environments and store them in the CoE Common Data Service Entity**.
-    1. Expand the step: **Apply to each Environment**
-    1. Go to the **Settings** pane for each call to Common Data Service, and configure the timeout/retry settings. <br> ![Configure retry policy](media/coe72.png "Configure the retry policy")
+- **Configure the retry policy**
+  1. Open **Admin \| Sync Template v2**, and then select **Edit**.
+  1. Expand the step **Get Environments and store them in the CoE Common Data Service Entity**.
+  1. Expand the step **Apply to each Environment**
+  1. Go to the **Settings** pane for each call to Common Data Service, and configure the timeout/retry settings. The default count is set to **10** and the default interval is set to **PT10S** - increase the values incrementally here.
 
-1. **Configure concurrency in Foreach**<br>
-    Reduce concurrency in Foreach loops to reduce simultaneous calls:
-    1. Open **Admin \| Sync Template v2**, and then select **Edit**.
-    1. Expand the step: **Get Environments and store them in the CoE Common Data Service Entity**.
-    1. Go to Settings for the **Apply to each Environment** step. <br>![Configure concurrency in Foreach](media/coe73.png "Configure concurrency in Foreach")
-    1. Reduce the **Degree of Parallelism** by using the slider. The default value is 50; reducing the parallelism here will increase the runtime of the flow, so we suggest gradually lowering the number.
+     ![Configure retry policy](media/coe72.png "Configure the retry policy")
 
-## Data loss prevention (DLP) editor
+- **Configure (reduce) concurrency in Foreach loops to reduce simultaneous calls**
+  1. Open **Admin \| Sync Template v2**, and then select **Edit**.
+  1. Expand the step **Get Environments and store them in the CoE Common Data Service Entity**.
+  1. Go to **Settings** for the **Apply to each Environment** step.
+
+     ![Configure concurrency in Foreach](media/coe73.png "Configure concurrency in Foreach")
+
+  1. Use the slider to reduce the value of **Degree of Parallelism**. The default value is 50; reducing the parallelism here will increase the runtime of the flow, so we suggest gradually lowering the number.
+
+<!-- currently this apps are not available ## DLP Editor
 
 - The Environments call returns only the first 2,000 environments.
-- The tool can't write back Environment-type policies.
+- The app can't write back environment-type policies.
 
-## DLP customizer
+## DLP Customizer
 
-- The tool currently doesn't work for custom connectors that are installed as part of a managed solution.
+The app currently doesn't work for custom connectors that are installed as part of a managed solution. -->
 
-## Government community cloud (GCC) environments
+## Government Community Cloud (GCC) environments
 
-- The CoE Starter Kit is available for GCC environments; however, the custom connector to connect to Microsoft 365 Audit Logs isn't available for GCC environments yet.
-- Embedding Power Apps canvas apps in Power BI Dashboards is not available for GCC environments yet.
+- The CoE Starter Kit is available for GCC environments; however, the custom connector to connect to Microsoft 365 audit logs isn't available for GCC environments yet.
+- Embedding Power Apps canvas apps in Power BI dashboards isn't available for GCC environments yet.
 
 ## Developer environments from the Power Apps Community Plan
 
-- Microsoft Power Platform protects developer-type SKUs from inquiry by non-authenticated users. This means that the Model Driven Apps in developer SKUs will be skipped from our tally work in the sync flow Admin | Sync Template v2 (Model Driven Apps).
-- To fix this, you must have your admin security role added to the security roles for all developer environments, and then remove the check from the sync flow.
-More information: [Power Apps Community Plan](https://docs.microsoft.com/powerapps/maker/dev-community-plan)
+Microsoft Power Platform protects developer-type SKUs from inquiry by non-authenticated users. This means that the model-driven apps in developer SKUs will be skipped from our tally work in the sync flow Admin | Sync Template v2 (Model Driven Apps).
 
-## Sync Flow and Environment Types
+To fix this, you must have your admin security role added to the security roles for all developer environments, and then remove the selection from the sync flow. More information: [Power Apps Community Plan](https://docs.microsoft.com/powerapps/maker/dev-community-plan)
 
-- It currently isn't possible to retrieve the following objects for developer environments (*My Name's* environment), nor Teams environments.
-- Unsupported Objects: Model Driven Apps, RPA Flows, PVA Bots
+## Sync Flow limitations for Developer and Microsoft TEam environments
+
+It currently isn't possible to retrieve the model-driven apps, chatbots and UI flows for developer environments (*My Name's* environment) and Microsoft Teams environments.
 
 ## Custom connectors and DLP
 
-To add custom connectors shipped as part of this solution to the business data&ndash;only group of your DLP policy, use the PowerShell cmdlets.
+To add custom connectors shipped as part of this solution to the business data&ndash;only group of your data loss prevention (DLP) policy, use PowerShell cmdlets.
 
 1. Install the [PowerShell cmdlets for Power Apps](https://docs.microsoft.com/power-platform/admin/powerapps-powershell).
 
-1. List all DLP policies, and copy the *PolicyName* (GUID) of the policy that is applied to your CoE Starter Kit environment.
+1. List all DLP policies, and copy the *PolicyName* (GUID) of the policy that's applied to your CoE Starter Kit environment.
 
     ```powershell
     Get-AdminDlpPolicy
@@ -90,11 +93,11 @@ To add custom connectors shipped as part of this solution to the business data&n
     Add-CustomConnectorToPolicy -PolicyName {your policy name GUID} -ConnectorName {the nName you copied from above} -GroupName hbi -ConnectorId /providers/Microsoft.PowerApps/scopes/admin/environments/{your environment GUID{/apis/{your connector name} -ConnectorType "Custom"
     ```
 
-## Security Groups and Approvals
+## Security groups and approvals
 
-We do not recommend that you use Security Groups to control access to the CoE Environment due to the expectation that users without access to this environment will be participating in Approvals.
-If you chose to use a Security Group then users will have to be a part of that group work with the archival solutions. 
+We recommend against using security groups to control access to the CoE environment, because it's likely that users who don't have access to this environment will be participating in approvals.
+If you choose to use a security group to control access, users will have to be a part of that group to work with the archival solutions.
 
-## Shared Component Library in the Theming components
+## Shared component library in the theming components solution
 
-The Shared Component Library part of the [Theming components](theming-components.md) is not editable. Make your own copy to expand it.
+The shared component library in the [theming components solution](theming-components.md) isn't editable. Make your own copy if you want to extend it.

@@ -2,9 +2,8 @@
 title: "Get topic suggestions from online content"
 description: "Use existing help and support content to quickly generate new topics for your Power Virtual Agents bot."
 keywords: "PVA"
-ms.date: 8/24/2020
-ms.service:
-  - dynamics-365-ai
+ms.date: 9/22/2020
+ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -16,7 +15,13 @@ ms.collection: virtual-agent
 
 # Create topics from existing online support content
 
-You can use content from existing webpages and online files when creating a Power Virtual Agents bot. This is useful if you already have help or support content, such as FAQ pages.
+Select the version of Power Virtual Agents you're using here:
+
+> [!div class="op_single_selector"]
+> - [Power Virtual Agents web app](advanced-create-topics-from-web.md)
+> - [Power Virtual Agents app in Microsoft Teams](/teams/advanced-create-topics-from-web-teams.md)
+
+You can use content from existing webpages when creating a Power Virtual Agents bot. This is useful if you already have help or support content, such as FAQ pages or support sites. 
 
 Rather than copying and pasting or manually re-creating this content, you can use AI-assisted authoring to automatically extract and insert relevant content from existing online resources into your bot.
 
@@ -66,6 +71,7 @@ After the extraction is complete, you'll be shown the suggested topics for furth
 5. Enter links to each webpage or online file from which you want to extract content, and then select **Add**. If you add a link by mistake, you can remove it by selecting **Delete** ![Delete](media/delete-suggested-topic.png).
 
     ![The Suggest topics page, where you enter URLs to extract suggested topics from](media/suggested-web-wizard.png "The Suggest topics page,where you enter URLs to extract suggested topics from")
+
     
 >[!IMPORTANT]
 >- The URLs must be secure (they must start with *https://*).
@@ -75,7 +81,7 @@ After the extraction is complete, you'll be shown the suggested topics for furth
 
 6. When you're done adding links to webpages and/or online files, select **Start**. The process can take several minutes, depending on the complexity and number of webpages or files you added. The message "Getting your suggestions. This may take several minutes" appears at the top of the screen while the extraction is in progress.
 
-    ![An alert that says "Getting your suggestions. This may take several minutes" appears at the top of the page](media/suggested-web-wait.png "An alert that says 'Getting your suggestions. This may take several minutes' appears at the top of the page")
+    :::image type="content" source="media/suggested-web-wait.png" alt-text="An alert that says Getting your suggestions. This may take several minutes appears at the top of the page":::
 
 >[!TIP]
 >You can add multiple webpages and links to online files, but we recommend that you include only a few at a time to keep the list of suggestions manageable.

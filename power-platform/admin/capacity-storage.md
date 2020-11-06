@@ -1,7 +1,7 @@
 ---
 title: "New Common Data Service storage capacity  | MicrosoftDocs"
 description: Introducing a new storage model for Common Data Service.
-ms.date: 09/01/2020
+ms.date: 10/08/2020
 ms.reviewer: ""
 ms.service: "power-platform"
 ms.topic: "quickstart"
@@ -67,6 +67,10 @@ To view the **Summary** page, select **Resources** > **Capacity** > **Summary**.
 
 > [!div class="mx-imgBorder"] 
 > ![Capacity page Summary tab](media/storage-data-capacity-page-review.png "Capacity page Summary tab")
+
+
+All entities of Common Data Service, including system entities, are included in the storage capacity reports.
+
 
 |Number  |Description |
 |---------|---------|

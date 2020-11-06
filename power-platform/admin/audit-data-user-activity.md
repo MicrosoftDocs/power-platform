@@ -1,12 +1,14 @@
 ---
 title: "Audit data and user activity for security and compliance  | MicrosoftDocs"
 description: Audit data and user activity for security and compliance
-author: jimholtz
+author: pnghub
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/07/2020
-ms.author: jimholtz
+ms.date: 10/14/2020
+ms.author: gned
+ms.reviewer: jimholtz 
+
 search.audienceType: 
   - admin
 search.app:
@@ -100,6 +102,9 @@ System administrators can see activity for the entities that are enabled for aud
    - Select **Enable/Disable Filters** to turn on filtering. Then, you can filter on a specific event, such as **Delete** actions.  
    - Choose an event to view specific details about the activity, such as field changes that were made during an update to a record and who performed the update.  
    - Select the **Refresh** button  ![Refresh button](media/html-viewer-grid-refresh.png "Refresh button") to view the most recent activity. 
+
+> [!IMPORTANT]
+> Large attribute values, such as [Email.description](https://docs.microsoft.com/powerapps/developer/common-data-service/reference/entities/email) or [Annotation](https://docs.microsoft.com/powerapps/developer/common-data-service/reference/entities/annotation), are limited (capped) at 5KB or ~5,000 characters. A capped attribute value can be recognized by three dots at the end of the text, for example, “lorem ipsum, lorem ip…”.
 
 ## Enable or disable entities and fields for auditing  
 System administrators or customizers can change the default audit settings for entities and for specific fields for an entity.  

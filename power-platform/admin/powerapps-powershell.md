@@ -6,7 +6,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 08/27/2020
+ms.date: 11/02/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -21,18 +21,18 @@ search.app:
 With PowerShell cmdlets for app creators and administrators, you can automate many of the monitoring and management tasks that are only possible manually today in [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 ## Cmdlets
-[Cmdlets](https://docs.microsoft.com/powershell/scripting/developer/cmdlet/cmdlet-overview?view=powershell-7) are functions written in PowerShell script language that execute commands in the Windows PowerShell environment. Running these Power Apps cmdlets will allow you to interact with your Business Application Platform without having to go through the admin portal in a web browser. You can combine these cmdlets with other PowerShell functions to write complex scripts that can optimize your workflow. Note that you can still use the cmdlets if you're not an admin on the tenant, but you will be limited to the resources you own. Cmdlets that start with the word 'Admin' are designed to be used by an administrative user account.
+[Cmdlets](https://docs.microsoft.com/powershell/scripting/developer/cmdlet/cmdlet-overview) are functions written in PowerShell script language that execute commands in the Windows PowerShell environment. Running these Power Apps cmdlets will allow you to interact with your Business Application Platform without having to go through the admin portal in a web browser. You can combine these cmdlets with other PowerShell functions to write complex scripts that can optimize your workflow. Note that you can still use the cmdlets if you're not an admin on the tenant, but you will be limited to the resources you own. Cmdlets that start with the word 'Admin' are designed to be used by an administrative user account.
 
 Cmdlets are available on the PowerShell gallery as two separate modules: 
 - [Administrator](https://www.powershellgallery.com/packages/Microsoft.PowerApps.Administration.PowerShell)
 - [Maker](https://www.powershellgallery.com/packages/Microsoft.PowerApps.PowerShell) 
 
-For information on the Power Apps admin module, see [Get started using the Power Apps admin module](https://docs.microsoft.com/powershell/powerapps/get-started-powerapps-admin?view=pa-ps-latest) and [Microsoft.PowerApps.Administration.PowerShell](https://docs.microsoft.com/powershell/module/microsoft.powerapps.administration.powershell/?view=pa-ps-latest).
+For information on the Power Apps admin module, see [Get started using the Power Apps admin module](https://docs.microsoft.com/powershell/powerapps/get-started-powerapps-admin) and [Microsoft.PowerApps.Administration.PowerShell](https://docs.microsoft.com/powershell/module/microsoft.powerapps.administration.powershell).
 
 > [!NOTE]
 > **Regarding Dynamics 365 Government Community Cloud (GCC) level 2 support:**
 > 
-> The default endpoint is "prod". If a user wants to run a PowerShell script targeting a GCC environment, the -Endpoint parameter needs to be changed to "usgov" for GCC Moderate or "usgovhigh" for GCC High. GCC DOD is not yet supported.
+> The default endpoint is "prod". If a user wants to run a PowerShell script targeting a GCC environment, the -Endpoint parameter needs to be changed to "usgov" for GCC Moderate, or "usgovhigh" for GCC High, or "dod" for GCC DOD.
 > 
 > ```powershell
 > Add-PowerAppsAccount -Endpoint "usgov" 
@@ -111,10 +111,12 @@ Users with a valid Power Apps license can perform the operations in these cmdlet
 | Read and respond to flow approvals | Get-FlowApprovalRequest <br> Get-FlowApproval <br> RespondTo-FlowApprovalRequest |
 | Read and delete connections | Get-PowerAppConnection *(previously Get-Connection)* <br> Remove-PowerAppConnection *(previously Remove-Connection)* |
 | Read, update, and delete connection permissions | Get-PowerAppConnectionRoleAssignment *(previously Get-ConnectionRoleAssignment)* <br> Set-PowerAppConnectionRoleAssignment *(previously Set-ConnectionRoleAssignment)* <br> Remove-PowerAppConnectionRoleAssignment *(previously Remove-ConnectionRoleAssignment)* |
-| Read and delete connectors | Get-PowerAppConnector *(previously Get-Connector)* <br> Remove-PowerAppConnector *(previously Remove-Connector)* |
-| Read, update, and delete custom connector permissions | Get-PowerAppConnectorRoleAssignment *(previously Get-ConnectorRoleAssignment)* <br> Set-PowerAppConnectorRoleAssignment *(previously Set-ConnectorRoleAssignment)* <br> Remove-PowerAppConnectorRoleAssignment *(previously Remove-ConnectorRoleAssignment)* |
+| Read, and delete connectors | Get-PowerAppConnector *(previously Get-Connector)* <br> Remove-PowerAppConnector *(previously Remove-Connector)* |
+| Add, read, update, and delete custom connector permissions | Get-PowerAppConnectorRoleAssignment *(previously Get-ConnectorRoleAssignment)* <br> Set-PowerAppConnectorRoleAssignment *(previously Set-ConnectorRoleAssignment)* <br> Remove-PowerAppConnectorRoleAssignment *(previously Remove-ConnectorRoleAssignment)*  |
 | Read, add, and remove policy URL patterns | Get-PowerAppPolicyUrlPatterns<br />New-PowerAppPolicyUrlPatterns<br />Remove-PowerAppPolicyUrlPatterns |
 | Read, register, and remove management apps | Get-PowerAppManagementApp<br /> Get-PowerAppManagementApps <br /> New-PowerAppManagementApp <br /> Remove-PowerAppManagementApp|
+| Read, create, update, and import protection keys | Get-PowerAppRetrieveAvailableTenantProtectionKeys<br />Get-PowerAppGenerateProtectionKey<br /> Get-PowerAppRetrieveTenantProtectionKey<br />New-PowerAppImportProtectionKey <br /> Set-PowerAppTenantProtectionKey |
+
 
 ## Power Apps cmdlets for administrators
 
@@ -123,13 +125,13 @@ To perform the administration operations in the admin cmdlets, you'll need the f
 
 - A user with any of these roles, Global admins, Azure Active Directory Global admins, or Dynamics 365 admin, can access the Power Apps admin PowerShell cmdlets. These roles no longer require a Power Apps plan for administrative access to the Power Apps admin PowerShell cmdlets. However, these administrators need to sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) at least once before using the PowerShell cmdlets. If this is not done, the cmdlets will fail with an authorization error.
 
-- [Microsoft 365 Global admin](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide) or an [Azure Active Directory Global Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal), or [Dynamics 365 admin](global-service-administrators-can-administer-without-license.md) permissions if you need to search through another user's resources. Note that Environment Admins only have access to those environments and environment resources for which they have permissions.
+- [Microsoft 365 Global admin](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) or an [Azure Active Directory Global Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal), or [Dynamics 365 admin](global-service-administrators-can-administer-without-license.md) permissions if you need to search through another user's resources. Note that Environment Admins only have access to those environments and environment resources for which they have permissions.
 
 ### Cmdlet list - Admin Cmdlets
 
 | Purpose | Cmdlets
 | --- | ---
-| Read, update, delete, and recover environments and Common Data Service databases | New-AdminPowerAppEnvironment <br> Set-AdminPowerAppEnvironmentDisplayName <br> Get-AdminPowerAppEnvironment *(previously Get-AdminEnvironment)* <br> Remove-AdminPowerAppEnvironment *(previously Remove-AdminEnvironment)* <br>Get-AdminPowerAppSoftDeletedEnvironment</br>Recover-AdminPowerAppEnvironment<br> Copy-PowerAppEnvironment<br />Backup-PowerAppEnvironment<br /> Get-PowerAppEnvironmentBackups<br /> Restore-PowerAppEnvironment<br /> Remove-PowerAppEnvironmentBackup<br />Reset-PowerAppEnvironment<br />New-AdminPowerAppCdsDatabase <br> Get-AdminPowerAppCdsDatabaseLanguages <br> Get-AdminPowerAppCdsDatabaseCurrencies <br> Get-AdminPowerAppEnvironmentLocations |
+| Read, update, delete, lock, unlock, and recover environments and Common Data Service databases | New-AdminPowerAppEnvironment <br> Set-AdminPowerAppEnvironmentDisplayName <br> Get-AdminPowerAppEnvironment *(previously Get-AdminEnvironment)* <br> Remove-AdminPowerAppEnvironment *(previously Remove-AdminEnvironment)* <br>Get-AdminPowerAppSoftDeletedEnvironment</br>Recover-AdminPowerAppEnvironment<br> Copy-PowerAppEnvironment<br />Backup-PowerAppEnvironment<br /> Get-PowerAppEnvironmentBackups<br /> Restore-PowerAppEnvironment<br /> Remove-PowerAppEnvironmentBackup<br />Reset-PowerAppEnvironment<br />New-AdminPowerAppCdsDatabase <br> Get-AdminPowerAppCdsDatabaseLanguages <br> Get-AdminPowerAppCdsDatabaseCurrencies <br> Get-AdminPowerAppEnvironmentLocations <br /> Set-PowerAppLockAllEnvironments <br /> Set-PowerAppUnlockEnvironment <br /> Set-PowerAppProtectionStatus |
 | Delete Common Data Service database | Remove-LegacyCDSDatabase | 
 | Read, update, and delete environment permissions <br><br> *These cmdlets only work today for environments that do not have a Common Data Service database.* | Get-AdminPowerAppEnvironmentRoleAssignment *(previously Get-AdminEnvironmentRoleAssignment)* <br> Set-AdminPowerAppEnvironmentRoleAssignment *(previously Set-AdminEnvironmentRoleAssignment)* <br> Remove-AdminPowerAppEnvironmentRoleAssignment *(previously Remove-AdminEnvironmentRoleAssignment)* <br /> Set-AdminPowerAppEnvironmentRuntimeStat |
 | Read, update, remove, and recover canvas apps | Get-AdminPowerApp *(previously Get-AdminApp)* <br> Remove-AdminPowerApp *(previously Remove-AdminApp)* <br> Get-AdminPowerAppConnectionReferences <br> Set-AdminPowerAppAsFeatured <br> Clear-AdminPowerAppAsFeatured <br> Set-AdminPowerAppAsHero <br> Clear-AdminPowerAppAsHero <br> Set-AdminPowerAppApisToBypassConsent <br> Clear-AdminPowerAppApisToBypassConsent <br> Get-AdminDeletedPowerAppsList <br> Get-AdminRecoverDeletedPowerApp |
@@ -142,11 +144,13 @@ To perform the administration operations in the admin cmdlets, you'll need the f
 | Read, update, and delete custom connector permissions | Get-AdminPowerAppConnectorRoleAssignment *(previously Get-AdminConnectorRoleAssignment)*<br> Set-AdminPowerAppConnectorRoleAssignment *(previously Set-AdminConnectorRoleAssignment)* <br> Remove-AdminPowerAppConnectorRoleAssignment *(previously Remove-AdminConnectorRoleAssignment)* |
 | Read a user's Power Apps user settings, user-app settings, and notifications | Get-AdminPowerAppsUserDetails |
 | Read and delete a user's Power Automate settings, which are not visible to user, but that support flow execution | Get-AdminFlowUserDetails <br> Remove-AdminFlowUserDetails |
-| Create, read, update and delete data loss prevention policies for your organization using a three-way classification - **Business**, **Non-Business**, and **Blocked**  |  Get-DlpPolicy *(previously Get-AdminDlpPolicy)* <br> New-DlpPolicy *(previously Add-AdminDlpPolicy)* <br>  Remove-DlpPolicy *(previously Remove-AdminDlpPolicy)* <br> Set-DlpPolicy *(previously Set-AdminDlpPolicy)*  |
+| Create, read, update and delete data loss prevention policies for your organization using a three-way classification - **Business**, **Non-Business**, and **Blocked**  |  Get-DlpPolicy *(previously Get-AdminDlpPolicy)* <br> New-DlpPolicy *(previously Add-AdminDlpPolicy)* <br>  Remove-DlpPolicy *(previously Remove-AdminDlpPolicy)* <br> Set-DlpPolicy *(previously Set-AdminDlpPolicy)*<br> <br> Learn more about the [Power Platform data loss prevention (DLP) SDK](data-loss-prevention-sdk.md). |
 | Read, add, remove, and update tenant settings | Get-TenantSettings<br />Set-TenantSettings<br /> Get-PowerAppTenantUrlPatterns <br />New-PowerAppTenantUrlPatterns <br /> Remove-PowerAppTenantUrlPatterns <br />Get-AdminPowerAppTenantConsumedQuota|
 | Read, add, and remove allowed consent/trial plans within the tenant | Remove-AllowedConsentPlans <br>Add-AllowedConsentPlans<br /> Get-AllowedConsentPlans |
 | Read tenant assigned user licenses | Get-AdminPowerAppLicenses |
 | Read, update, and reset the environment that Power Apps uses to save SharePoint form apps| Get-AdminPowerAppSharepointFormEnvironment <br />       Set-AdminPowerAppSharepointFormEnvironment <br /> Reset-AdminPowerAppSharepointFormEnvironment|
+| Read operation status | Get-AdminPowerAppOperationStatus  |
+| Read and update tenant isolation status and policy | Get-PowerAppTenantIsolationOperationStatus <br />   Get-PowerAppTenantIsolationPolicy <br /> Set-PowerAppTenantIsolationPolicy |
 
 ## Tips
 
@@ -418,38 +422,6 @@ Remove-DlpPolicy
 
 Deletes a DLP policy.
 
-#### Display all DLP policies
-
-```powershell
-Get-AdminDlpPolicy
-```
-
-Returns a list of all DLP policies.
-
-#### Display a filtered list of DLP policies
-
-```powershell
-Get-AdminDlpPolicy 'DisplayName'
-```
-
-Uses the display name to filter the policy list.
-
-#### Display all 'Business data only' API connectors in a policy
-
-```powershell
-Get-AdminDlpPolicy 'PolicyName' | Select –ExpandProperty BusinessDataGroup
-```
-
-Lists the API connections that are in the *Business data only* (or *BusinessDataGroup*) field in an input policy.
-
-#### Add a connector to the 'Business data only' group
-
-```powershell
-Add-ConnectorToBusinessDataGroup -PolicyName 'PolicyName' –ConnectorName 'ConnectorName'
-```
-
-Adds a connector to the *Business data only* group in a given DLP policy. See the list of connectors by *DisplayName* and *ConnectorName* (used as input) here.
-
 ### Block trial licenses commands
 
 Commands:
@@ -467,5 +439,5 @@ The allowed consent plans cmdlets can be used to add or remove access to a parti
 If you have any comments, suggestions, or questions, post them on the [Administering Power Apps community board](https://powerusers.microsoft.com/t5/Administering-PowerApps/bd-p/Admin_PowerApps).
 
 ### See also
-[Get started using the Power Apps admin module](https://docs.microsoft.com/powershell/powerapps/get-started-powerapps-admin?view=pa-ps-latest) <br />
-[Microsoft.PowerApps.Administration.PowerShell](https://docs.microsoft.com/powershell/module/microsoft.powerapps.administration.powershell/?view=pa-ps-latest)
+[Get started using the Power Apps admin module](https://docs.microsoft.com/powershell/powerapps/get-started-powerapps-admin) <br />
+[Microsoft.PowerApps.Administration.PowerShell](https://docs.microsoft.com/powershell/module/microsoft.powerapps.administration.powershell)

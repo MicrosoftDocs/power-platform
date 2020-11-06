@@ -2,9 +2,8 @@
 title: "Assign user licenses and manage access"
 description: "Assign licenses and manage access to Power Virtual Agents for your organization"
 keywords: "Administration, licensing, PVA"
-ms.date: 8/3/2020
-ms.service:
-  - dynamics-365-ai
+ms.date: 9/22/2020
+ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -15,12 +14,21 @@ ms.collection: virtual-agent
 
 # Assign licenses and manage access to Power Virtual Agents
 
+
+Select the version of Power Virtual Agents you're using here:
+
+> [!div class="op_single_selector"]
+> - [Power Virtual Agents web app](requirements-licensing.md)
+> - [Power Virtual Agents app in Microsoft Teams](teams/requirements-licensing-teams.md)
+
 This documentation is written for tenant admins. If you want to sign up for Power Virtual Agents as an individual, see the [Sign up for a Power Virtual Agents trial](sign-up-individual.md) topic.
+
 
 To create and manage bots with Power Virtual Agents, you need:
 
-- A license for each user, also known as a "per user license" (or "Power Virtual Agent User License" as referred to on the [Microsoft 365 admin center](admin.microsoft.com)), should be assigned to individual users who need access to create and manage chatbots.
-- A license for your organization, also known as a "tenant license" (or "Power Virtual Agent" as referred to on the [Microsoft 365 admin center](admin.microsoft.com)), should be purchased at the tenant level.
+
+- A license for each user, also known as a "per user license" (or "Power Virtual Agent User License" as referred to on the [Microsoft 365 admin center](https://admin.microsoft.com)), should be assigned to individual users who need access to create and manage chatbots.
+- A license for your organization, also known as a "tenant license" (or "Power Virtual Agent" as referred to on the [Microsoft 365 admin center](https://admin.microsoft.com)), should be acquired by the tenant admin. This license cannot be assigned to individual users.
 
 >[!NOTE]
 >Users of your bot don't need a special license. After you publish your bot, anyone who can access where you published the bot can interact with the bot.
@@ -82,7 +90,7 @@ The users can now sign in to the [Power Virtual Agents portal](https://powerva.m
 
 ## How to differentiate between tenant and user licenses
 
-If you are unsure whether you have both of the required licenses, on the [Microsoft 365 admin center](admin.microsoft.com) go to **Billing** and then **Subscriptions** to see the list of active licenses. For Power Virtual Agents you should see two licenses:
+If you are unsure whether you have both of the required licenses, on the [Microsoft 365 admin center](https://admin.microsoft.com) go to **Billing** and then **Subscriptions** to see the list of active licenses. For Power Virtual Agents you should see two licenses:
 1. Power Virtual Agent.
 2. Power Virtual Agent User License.
 

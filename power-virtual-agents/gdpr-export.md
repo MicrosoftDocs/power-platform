@@ -1,9 +1,8 @@
 ---
 title: "Responding to GDPR Data Subject Export Requests"
 description: "Learn how to respond​ to GDPR Data Subject Export Requests for Power Virtual Agents."
-ms.date: 8/3/2020
-ms.service:
-  - "dynamics-365-ai"
+ms.date: 9/22/2020
+ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -38,9 +37,9 @@ Power Virtual Agents offers the following capabilities to find or export persona
 
    ![Sign in to powerapps.com](media/export-1.png)
 
-2. After signing in, you are redirected to the Power Apps admin center.
+2. After signing in, you are redirected to the Power Platform admin center.
 
-   ![Power Apps admin center](media/export-2.png)
+   ![Power Platform admin center](media/export-2.png)
 
 3. In the side navigation pane, expand the **Data** node. Select **Entities** and select **Export data**.
 

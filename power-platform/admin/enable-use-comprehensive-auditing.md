@@ -1,12 +1,13 @@
 ---
 title: "Common Data Service and model-driven apps activity logging  | MicrosoftDocs"
 description: Learn how to enable auditing to be used for reports in the Microsoft 365 Security Compliance Center.
-author: jimholtz
+author: pnghub
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/08/2020
-ms.author: jimholtz 
+ms.date: 10/21/2020
+ms.author: gned
+ms.reviewer: jimholtz 
 search.audienceType: 
   - admin
 search.app:
@@ -27,18 +28,7 @@ This topic covers how you can set customer engagement apps to audit a broad rang
 - Available for production and not sandbox environments.
 
 ## What events are audited
-Logging takes place at the SDK layer which means a single action can trigger multiple events that are logged. The following are a sample of admin and user events you can audit.
-
-### Admin-related events
-
-|Event  |Description  |
-|---------|---------|
-|Publishing customizations  |An admin publishes a new customization which overrides a change done by the previous one. The action requires auditing for analysis.    |
-|Attribute deletes     |Admin accidentally deletes an attribute. This action also deletes the data. |
-|Team, user management     |Who was added, who was deleted, what access rights a user/team had is important for analyzing impact.|
-|Configure instance     |Adding solutions to an instance.|
-|Backup and restore     |Backup and restore actions at the tenant.|
-|Manage applications     |New instance added, existing instance deleted, trials converted to paid, etc.|
+Logging takes place at the SDK layer which means a single action can trigger multiple events that are logged. The following are a sample of user events you can audit. Admin events are currently not logged.
 
 ### User and support-related events 
 
@@ -49,7 +39,6 @@ Logging takes place at the SDK layer which means a single action can trigger mul
 |Export to Excel     |Exporting data to Excel moves the data outside of the secure environment and is vulnerable to threats.|
 |SDK calls via surround or custom apps    |Actions taken via the core platform or surround apps calling into the SDK to perform an action needs to be logged.|
 |All support CRUD activities     |Microsoft support engineer activities on customer environment.|
-|Admin activities     |Admin activities on customer tenant.|
 |Backend commands     |Microsoft support engineer activities on customer tenant and environment.|
 |Report Viewed  |Logging when a report is viewed. Critical customer content information might be displayed on the report.  |
 |Report Viewer Export  |Exporting a report to different formats moves the data outside of the secure environment and is vulnerable to threats.  |
@@ -70,7 +59,7 @@ Schemas define which fields are sent to the Microsoft 365 Security and Complianc
 |CreationTime     |Edm.Date         |No         |Date and time of when the log was generated in UTC          |
 |Operation     |Edm.Date         |No         |Name of the message called in the SDK          |
 |UserKey     |Edm.String         |No         |Unique Identifier of the User in AAD. AKA User PUID          |
-|UserType     |Self.UserType         |No         |The Microsoft 365 audit type (Admin, Regular, System)          |
+|UserType     |Self.UserType         |No         |The Microsoft 365 audit type (Regular, System)          |
 |User     |Edm.String        |No         |UPN of the user          |
 
 ## Customer engagement apps schema
@@ -125,21 +114,11 @@ The customer engagement apps schema contains fields specific to customer engagem
 
 ## Review your audit data using reports in Microsoft 365 Security and Compliance Center
 
-You can review your audit data in the Microsoft 365 Security and Compliance Center. See [Search the audit log for user and admin activity](https://support.office.com/article/search-the-audit-log-for-user-and-admin-activity-in-office-365-57ca5138-0ae0-4d34-bd40-240441ef2fb6).
+You can review your audit data in the Microsoft 365 Security and Compliance Center. See [Search the audit log in the compliance Center](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide).
 
 To use the preconfigured reports, go to https://protection.office.com > **Search & investigation** > **Audit log search** and select the **Dynamics 365 activities** tab.
 
 ![Audit log reports](media/D365-audit-log-reports.png "Audit log reports")
-
-![Audit log search results](media/audit-log-search-results.png "Audit log search results")
-
-The following are the preconfigured reports:
-
-|  |  |   |
-|---------|---------|---------|
-|Accessed out-of-box entity     |Accessed custom entity |Accessed admin entity  |
-|Performed bulk actions (such as delete and import)  |Accessed other entity type   |Accessed Power Platform admin center    |
-|Accessed internal management tool |Signed in or out  |Activated process or plug-in  |
 
 ## Create reports
 You can create your own reports to review your audit data. See [Search the audit log in the Security & Compliance Center](https://support.office.com/article/search-the-audit-log-in-the-office-365-security-compliance-center-0d4d0f35-390b-4518-800e-0c7ec95e946c).
@@ -240,7 +219,7 @@ The following are some examples of logs created with Activity Logging.
 
 ## Additional considerations
 
-When audit log search in the Microsoft 365 Security and Compliance Center is turned on, user and admin activity from your organization is recorded in the audit log and retained for 90 days. However, your organization might not want to record and retain audit log data. Or you might be using a third-party security information and event management (SIEM) application to access your auditing data. In those cases, a global admin can turn off audit log search in Microsoft 365.
+When audit log search in the Microsoft 365 Security and Compliance Center is turned on, user and activity from your organization is recorded in the audit log and retained for 90 days. However, your organization might not want to record and retain audit log data. Or you might be using a third-party security information and event management (SIEM) application to access your auditing data. In those cases, a global admin can turn off audit log search in Microsoft 365.
 
 ## Known issues
 
@@ -249,6 +228,7 @@ When audit log search in the Microsoft 365 Security and Compliance Center is tur
 - In future releases, logging will disabled for operations that are determined to not be useful based on a review of the logs. For example, some operations result from automated system activity, not user activity.
 
 ### See also
- [Audit data and user activity for security and compliance](audit-data-user-activity.md)<br />
- [Search the audit log for user and admin activity](https://support.office.com/article/search-the-audit-log-for-user-and-admin-activity-in-office-365-57ca5138-0ae0-4d34-bd40-240441ef2fb6)
- [Office 365 Management APIs overview](https://msdn.microsoft.com/office-365/office-365-managment-apis-overview)
+[Audit data and user activity for security and compliance](audit-data-user-activity.md)<br />
+[Search the audit log in the compliance Center](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide) <br />
+Search the audit log for user activity using [Office 365 Management APIs overview](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview)
+

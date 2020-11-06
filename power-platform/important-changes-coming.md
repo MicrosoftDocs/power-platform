@@ -1,13 +1,14 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps"
-ms.date: 09/04/2020
+description: Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps 
+ms.date: 11/04/2020
 ms.topic: "article"
 ms.assetid: 994cc854-17f6-45d6-bc20-fcf1a3f2d6d6
 searchScope:
   - "Power Platform"  
 ms.custom:
  - dyn365-hub
-ms.service: dynamics-365-crossapp
+ms.service: power-platform
 author: KumarVivek
 ms.author: kvivek
 manager: annbe
@@ -16,7 +17,7 @@ manager: annbe
 Important changes (deprecations) coming in Power Apps, Power Automate, and customer engagement apps
 ============================================================
 
-The announcements and deprecations described in this topic apply to Power Apps, Power Automate, and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Marketing, Dynamics 365 Field Service, and Dynamics 365 Project Service Automation).
+The announcements and deprecations described in this topic apply to Power Apps, Power Automate, and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Marketing, Dynamics 365 Field Service, and Dynamics 365 Project Service Automation).
 
 Administrators and IT professionals should use this information to prepare for future releases. This article was first published on June 27, 2017.
 
@@ -24,9 +25,38 @@ Administrators and IT professionals should use this information to prepare for f
 > "Deprecated" means we intend to remove the feature or capability from a future major release. The feature or capability will continue to work and is fully supported until it is officially removed. This deprecation
 notification can span a few years. After removal, the feature or capability will no longer work. We are notifying you now so you have sufficient time to plan and update your code before the feature or capability is removed.
 
-## Online management API PowerShell module is deprecated
+## TLS RSA cipher suites are deprecated
 
-Effective August 26, 2020, the online management API PowerShell module is deprecated. The [online management API PowerShell module](/powershell/powerapps/get-started-onlinemanagementapi?view=pa-ps-latest) will be updated in October, 2020 to point to newer underlying APIs and won’t receive further updates. We recommend that you use the Power Apps administration module. More information: [Get started using the Power Apps admin module](/powershell/powerapps/get-started-powerapps-admin?view=pa-ps-latest)
+Effective October 30, 2020, the following cipher suites are being deprecated from our servers.
+- "TLS_RSA_WITH_AES_256_GCM_SHA384”
+- "TLS_RSA_WITH_AES_128_GCM_SHA256”
+- "TLS_RSA_WITH_AES_256_CBC_SHA256”
+- "TLS_RSA_WITH_AES_128_CBC_SHA256”
+
+Cipher suites are used to encrypt messages to secure a network connection between clients/servers and other servers. We are removing the above list of cipher suites to comply with our current security protocols.   
+
+Beginning March 1, 2021, customers can only use our [standard cipher suites](/power-platform/admin/onpremises-server-cipher-tls-requirements). This change impacts your clients and servers that communicate with our servers, for example, syncing emails from your Microsoft Exchange server, running outbound plug-ins, using native (local) clients to access our servers.
+
+Customers must upgrade their servers before March 1, 2021.  For more information about configuring TLS Cipher Suite order, see [Manage Transport Layer Security (TLS)](https://docs.microsoft.com/windows-server/security/tls/manage-tls).
+
+
+## Organization data download filters for mobile offline are deprecated. 
+
+Effective February 2021, **Organization data download filter** option that filters the data when you set up mobile offline are deprecated. We recommend that you start preparing your organization and move relevant data filters from **Organization data download filter** to the offline profile option which lets you determine what data will be available when users work in offline mode. For more information, see [Create a mobile offline profile](https://docs.microsoft.com/dynamics365/mobile-app/preview-setup-mobile-offline#step-2-create-a-mobile-offline-profile-to-determine-what-data-will-be-available-while-offline). Once the old filter criteria has been moved to offline profile, you can clear or delete the filters set in **Organization data download filter**. 
+
+
+## Automatic record creation rules and SLA items in web client are deprecated
+
+Effective October 01, 2020, the automatic record creation and update rules and service-level agreements (SLAs) have been deprecated in the web client. For more information, see [Deprecations in Customer Service](https://go.microsoft.com/fwlink/p/?linkid=2145032).
+
+## TimeZoneRule entity and some attributes of TimeZoneDefinition entity are deprecated
+
+Effective September 24, 2020, the **TimeZoneRule** entity and the **Bias** and **RetiredOrder** attributes of the **TimeZoneDefinition** entity are deprecated and will be removed in a future release. For all client-side time zone calculations, use the [LocalTimeFromUtcTime](https://docs.microsoft.com/dynamics365/customer-engagement/web-api/localtimefromutctime) and [UtcTimeFromLocalTime](https://docs.microsoft.com/dynamics365/customer-engagement/web-api/utctimefromlocaltime) functions in Web API or the [TimeZoneInfo](https://docs.microsoft.com/dotnet/api/system.timezoneinfo) class in the .NET framework. More information: [Blog: Deprecation of time zone entities in Common Data Service](https://powerapps.microsoft.com/blog/deprecation-of-time-zone-entities-in-common-data-service/) 
+
+
+## Online management API PowerShell module and REST API are deprecated
+
+Effective August 26, 2020, the online management API PowerShell module and the underlying [Online Management REST API](https://docs.microsoft.com/powerapps/developer/common-data-service/online-management-api/overview) are  deprecated. The [online management API PowerShell module](/powershell/powerapps/get-started-onlinemanagementapi?view=pa-ps-latest) will be updated in October, 2020 to point to newer underlying APIs and won’t receive further updates. We recommend that you use the Power Apps administration module. More information: [Get started using the Power Apps admin module](/powershell/powerapps/get-started-powerapps-admin?view=pa-ps-latest)
 
 ## Company News Timeline solution is deprecated
 
@@ -91,9 +121,9 @@ For further information and steps to make a smooth transition, download [Dynamic
 ## Dynamics 365 Home is deprecated 
 ------------------------------------------------------
 
-Effective March 2020, the home page for Dynamics 365 applications (https://home.dynamics.com) is deprecated and won't be available after October 1, 2020. The Microsoft 365 apps page (https://www.office.com/apps) will replace it and provide users with a single page for productivity and business applications.  
+Effective March 2020, the home page for Dynamics 365 applications (https://home.dynamics.com) is deprecated and won't be available after October 31, 2020. The Microsoft 365 apps page (https://www.office.com/apps) will replace it and provide users with a single page for productivity and business applications.  
 
-Dynamics 365 Home users will see notification about the new location and recommendation to change browser bookmarks until October 1, 2020. After October 1, 2020, users navigating to <https://home.dynamics.com> will automatically be redirected to <https://www.office.com/apps> with a business application filter applied.
+Dynamics 365 Home users will see notification about the new location and recommendation to change browser bookmarks starting October 1, 2020. After October 31, 2020, users navigating to <https://home.dynamics.com> will automatically be redirected to <https://www.office.com/apps> with a business application filter applied.
 
 More information: <https://aka.ms/business-apps-discovery-docs>
 
@@ -147,9 +177,10 @@ authentication flow and help application developers to utilize the capabilities
 of Azure Active Directory to secure and protect access to their applications and
 customers in Common Data Service.
 
-To allow for transition of customers and partner applications:
+To allow for transition of customers and partner applications: 
 
 - Effective October 2020, the authentication protocol will be retired for all new tenants.
+- Effective October 2020, the authentication protocol will not be available in all new [regions](admin/regions-overview.md#what-regions-are-available).
 - Effective April 2021, the authentication protocol will be retired for all new environments within a tenant.
 - Effective April 2022, the authentication protocol will be retired for all new and existing environments within a tenant.
 
@@ -170,12 +201,12 @@ Effective October 14, 2019, the [rules](/powerapps/maker/canvas-apps/working-wit
 
 Legacy web client is deprecated
 -------------------------------
-As of September 2019, the legacy web client is deprecated. Customers must transition to Unified Interface before December 1, 2020. Microsoft will continue to provide support, security and other critical updates to the legacy web client until December 1, 2020 but won't release any additional functionality beyond what has already been announced.
+As of September 2019, the legacy web client is deprecated. Customers must transition to Unified Interface before December 4, 2020. Microsoft will continue to provide support, security and other critical updates to the legacy web client until December 4, 2020 but won't release any additional functionality beyond what has already been announced.
   
-On December 1, 2020, the legacy web client will no longer be available. Organizations should make the transition to the Unified Interface as soon as possible to take advantage of Microsoft’s ongoing investments in reliability, performance, and functionality. 
+On December 4, 2020, the legacy web client will no longer be available. Organizations should make the transition to the Unified Interface as soon as possible to take advantage of Microsoft’s ongoing investments in reliability, performance, and functionality. 
 
  
-In the coming months, for those that have not already made the transition, we will be sending reminders and scheduling updates to transition customers to Unified Interface prior to December 1, 2020. 
+In the coming months, for those that have not already made the transition, we will be sending reminders and scheduling updates to transition customers to Unified Interface prior to December 4, 2020. 
 For further information and steps to make a smooth transition, view our helpful resources and community site: 
 
 -   [Unified Interface Community
@@ -265,7 +296,7 @@ and supported until they are officially removed from a future major release. *A 
 |                       [globalContext.userSettings.transactionCurrencyId](/powerapps/developer/model-driven-apps/clientapi/reference/xrm-utility/getglobalcontext/usersettings#transactioncurrencyid)                       |                                                                                                                  [globalContext.userSettings.transactionCurrency](/powerapps/developer/model-driven-apps/clientapi/reference/xrm-utility/getglobalcontext/usersettings#transactioncurrency)                                                                                                                   |                                                                                                                                                The replacement method lets you access the display name along with the ID of transaction currency.                                                                                                                                                 |
 |                       [getData](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/reference/controls/getdata) and [setData](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/reference/controls/setdata) for Silverlight web resources                       |                                                                                                                  None                                                                                                                  |                                                                                                                                                Silverlight is no longer supported. These methods won't be available after October, 2020.                                                                                                                                                  |
 |                       [formContext.data.entity.save](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/reference/formcontext-data-entity/save)                       |                                                                                                                  [formContext.data.save](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/reference/formcontext-data/save)                                                                                                                  |                                                                                                                   |
-|                       [ClientGlobalContext.js.aspx](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/reference/getglobalcontext-clientglobalcontext.js.aspx#clientglobalcontextjsaspx)                       |                                                                                                                  None                                                                                                                  |  The `ClientGlobalContext.js.aspx` page is built on the legacy web client infrastructure. As the [legacy web client is deprecated](#legacy-web-client-is-deprecated) and scheduled to be unavailable effective December 1, 2020, the `ClientGlobalContext.js.aspx` page will also be removed along with the legacy web client on December 1, 2020.                                                                                                                 |
+|                       [ClientGlobalContext.js.aspx](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/reference/getglobalcontext-clientglobalcontext.js.aspx#clientglobalcontextjsaspx)                       |                                                                                                                  None                                                                                                                  |  The ClientGlobalContext.js.aspx page is deprecated and scheduled to be unavailable after October 1, 2021. Alternative methods to access global context information will be available before April 1, 2021.                                                                                                                 |
 |                       [getObject](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/reference/getglobalcontext-clientglobalcontext.js.aspx#clientglobalcontextjsaspx)                       |                                                                                                                  [getContentWindow](/powerapps/developer/model-driven-apps/clientapi/reference/controls/getcontentwindow)                                                                                                                  |                       |
 
 For information about the new client APIs, see [Apply business logic using client scripting in model-driven apps using JavaScript](/powerapps/developer/model-driven-apps/client-scripting)
@@ -299,19 +330,6 @@ Microsoft will continue to provide security and other critical updates to the Dy
 
 If you are currently using the Dynamics 365 for Blackberry App together with Mobile Application Management for Blackberry, plan to migrate to Dynamics 365 for phones by October 31, 2019. We encourage you to migrate as soon as possible to take advantage of Microsoft's ongoing investments in the reliability, performance, and functionality of the Dynamics 365 mobile app.
 
-
-Service scheduling in Dynamics 365 Customer Service is deprecated
----------------------------------------------------------------------
-
-The existing service scheduling functionality is deprecated, and will no longer be available on December 1, 2020. The new scheduling experience, built on Universal Resource Scheduling (URS), is now available in the Unified Interface.
-
-Existing service scheduling users will be provided advance notice for a timebound migration to the new scheduling capabilities.
-
-There are two approaches to migrate to the scheduling experience:
-- Follow the guidance in the [Service Scheduling Guide](/dynamics365/customer-engagement/customer-service/basics-service-service-scheduling) to set up the new scheduling experience for an existing Dynamics 365 Customer Service organization.
-
-- If your organization requires features that rely on legacy APIs, the product team is offering an incremental migration option and will update your organization to the Unified Interface experience while continuing to allow the use of the legacy APIs. This approach is available in 2020 release wave 2 with Eary Access in August, 2020.
-
 Usage of Parature knowledgebase as the knowledge management solution is deprecated
 -----------------------------------------------------------------------------------------------
 
@@ -332,21 +350,6 @@ associated legacy Project Service Automation releases in accordance with
 Microsoft's [Modern Lifecycle
 Policy](https://support.microsoft.com/help/30881). The functionality
 available through this app will be available in a future release of Dynamics 365 Project Service Automation application.
-
-Contracts, Contract Line Items, and Contract Templates entities are deprecated
-------------------------------------------------------------------------------
-
-The Contracts, Contract Line Items, and Contract Templates entities are
-deprecated and will be removed in a future major release. This
-functionality has been replaced by entitlements in Dynamics 365 Customer
-Service.
-
-Standard SLAs in Dynamics 365 Customer Service are deprecated
------------------------------------------------------------------
-
-Standard service level agreements (**SLA Type** field is set to **Standard**)
-are deprecated and will be removed in a future major release.
-Standard SLAs are replaced by enhanced SLAs. More information: [Enhanced service level agreements](https://technet.microsoft.com/library/dn887187.aspx)
 
 Relationship Roles are deprecated
 ---------------------------------

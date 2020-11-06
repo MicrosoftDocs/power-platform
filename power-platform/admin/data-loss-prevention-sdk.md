@@ -2,11 +2,10 @@
 title: "DLP SDK | MicrosoftDocs"
 description: Power Platform data loss prevention (DLP) SDK
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/11/2020
+ms.date: 10/09/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -44,7 +43,14 @@ This topic introduces the capabilities of the DLP SDK and shows you how DLP can 
 
 ## What this sample does
 
-This sample calls DLP APIs in Microsoft.PowerApps.Administration.PowerShell to create, read, update and remove DLP policies.
+This sample calls DLP APIs in Microsoft.PowerApps.Administration.PowerShell to create, read, update and remove DLP policies. Below are the scenarios supported by the SDK.
+
+1. Create a tenant-level policy that classifies connectors into **Business**, **Non-business**, and **Blocked** groups. 
+2. Create policy for all environments except certain environments that classifies connectors into **Business**, **Non-business**, and **Blocked** groups. 
+3. Create policy for single environment that classifies connectors into **Business**, **Non-business**, and **Blocked** groups. 
+4. Get list of tenant-level policies (all environments). 
+5. Update policy to move connector across groups (**Business**, **Non-business**, and **Blocked**). 
+6. Test compatibility of existing policies that previously used legacy powershell APIs and now use new PowerShell APIs. 
 
 ## How this sample works
 

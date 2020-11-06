@@ -27,6 +27,11 @@ highlightedContent:
       url: https://docs.microsoft.com/dynamics365/release-plans/
 
     # Card
+    - title: Microsoft Power Platform videos
+      itemType: video
+      url: https://www.youtube.com/c/mspowerplatform/
+
+    # Card
     - title: Microsoft Power Platform training on Microsoft Learn
       itemType: learn
       url: https://docs.microsoft.com/learn/powerplatform/
@@ -83,6 +88,9 @@ conceptualContent:
       - url: /power-platform/admin/admin-documentation
         itemType: overview
         text: Admin guide
+      - url: /power-platform/admin/pricing-billing-skus
+        itemType: overview
+        text: Licensing
       - url: /power-platform/alm
         itemType: overview
         text: Application lifecycle management (ALM) guide
@@ -94,7 +102,10 @@ conceptualContent:
       - url: /power-platform/guidance/coe/starter-kit
         itemType: overview
         text: Center of Excellence (CoE) Starter kit
-    
+      - url: https://www.youtube.com/playlist?list=PLi9EhCY4z99W2QOTgbwhFZEjpqc8YZDVH
+        itemType: video
+        text: "Videos: Power Apps and Power Automate Architecture Series"
+
 additionalContent:
 # Supports up to 3 sections
   sections:

@@ -2,9 +2,8 @@
 title: "Automatically start a chatbot conversation"
 description: "Configure your bot to start a conversation automatically, as soon as it's loaded"
 keywords: "PVA"
-ms.date: 8/3/2020
-ms.service:
-  - dynamics-365-ai
+ms.date: 9/22/2020
+ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -16,12 +15,17 @@ ms.collection: virtualagent
 
 # Configure your bot to start the conversation automatically
 
+Select the version of Power Virtual Agents you're using here:
+
+> [!div class="op_single_selector"]
+> - [Power Virtual Agents web app](configure-bot-greeting.md)
+> - [Power Virtual Agents app in Microsoft Teams](teams/configure-bot-greeting-teams.md)
 
 By default, chatbots created with Power Virtual Agents and [published to a website](publication-connect-bot-to-web-channels.md) will load without a greeting, and will passively wait for the user to start the conversation.
 
 However, you can use custom CSS and JavaScript code to automatically have the bot start the conversation when the bot loads.
 
-For example, you could have your bot say, "Hi, I’m Botty, a virtual agent" as soon as the bot loads.
+For example, you could have your bot say, "Hi, I'm Botty, a virtual agent" as soon as the bot loads.
 
 First, you'll need to deploy a custom canvas that includes arguments that trigger the greeting. By default, the custom canvas calls the default system greeting topic. You can, however, create a new topic to be used as the greeting, although you will need to divert the default system greeting topic to a new topic.
 
@@ -37,7 +41,7 @@ You can also combine the customized greeting with [customization to the look and
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 
 >[!IMPORTANT]
->You may install and use the sample code included in this documentation only for use with the Microsoft Power Virtual Agents service. The sample code is licensed "as is" and is excluded from any service level agreements or support services. You bear the risk of using it. 
+>You may install and use the sample code included in this documentation only for use with the Microsoft Power Virtual Agents product. The sample code is licensed "as is" and is excluded from any service level agreements or support services. You bear the risk of using it. 
 >Microsoft gives no express warranties, guarantees, or conditions and excludes all implied warranties, including merchantability, fitness for a particular purpose, and non-infringement.
 
 

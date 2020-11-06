@@ -2,9 +2,8 @@
 title: "Report analytics, performance, and usage"
 description: "The Summary analytics page shows you the scope of analytics, clustered with AI technology, so you can instantly see what topics and bots need improving."
 keywords: "PVA"
-ms.date: 8/3/2020
-ms.service:
-  - "dynamics-365-ai"
+ms.date: 9/22/2020
+ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -14,6 +13,12 @@ ms.collection: virtual-agent
 ---
 
 # Analyze bot performance and usage in Power Virtual Agents
+
+Select the version of Power Virtual Agents you're using here:
+
+> [!div class="op_single_selector"]
+> - [Power Virtual Agents web app](analytics-summary.md)
+> - [Power Virtual Agents app in Microsoft Teams](teams/analytics-summary-teams.md)
 
 >
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4mQpm]
@@ -51,7 +56,7 @@ Description | Details
 ----------- | -------
 Total sessions | The total number of sessions within the specified time period.
 Engagement rate | The percentage of total sessions that are engaged sessions. An engaged session is a session in which a user-created topic (as opposed to a system topic) is triggered, or the session ends in escalation. Engaged sessions can have one of three outcomes—they are either resolved, escalated, or abandoned.
-Resolution rate | The percentage of engaged sessions that are resolved. A resolved session is an engaged session in which the user receives an end-of-conversation survey that asks the question *“Did that answer your question?”* and the user either does not respond or responds *Yes*.
+Resolution rate | The percentage of engaged sessions that are resolved. A resolved session is an engaged session in which the user receives an end-of-conversation survey that asks the question *"Did that answer your question?"* and the user either does not respond or responds *Yes*.
 Escalation rate | The percentage of engaged sessions that are escalated. An escalated session is an engaged session that is escalated to a human agent.
 Abandon rate | The percentage of engaged sessions that are abandoned. An abandoned session is an engaged session that is neither resolved nor escalated after one hour from the beginning of the session.
 CSAT | The graphical view of the average of CSAT scores for sessions in which customers respond to an end-of-session request to take the survey.
@@ -73,7 +78,7 @@ The Session outcomes over time chart provides a graphical view of the daily reso
 
 Description | Details
 ----------- | -------
-Resolved | The daily rate of resolved sessions. A resolved session is an engaged session in which the user receives an end-of-conversation survey that asks the question *“Did that answer your question?”* and the user either does not respond or responds *Yes*.
+Resolved | The daily rate of resolved sessions. A resolved session is an engaged session in which the user receives an end-of-conversation survey that asks the question *"Did that answer your question?"* and the user either does not respond or responds *Yes*.
 Escalated | The daily rate of escalated sessions. An escalated session is an engaged session that is escalated to a human agent.
 Abandoned | The daily rate of abandoned sessions. An abandoned session is an engaged session that is neither resolved nor escalated after one hour from the beginning of the session.
 

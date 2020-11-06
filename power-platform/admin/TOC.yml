@@ -102,6 +102,8 @@
           href: trial-environments.md     
         - name: Sandbox environment
           href: sandbox-environments.md
+        - name: Project Oakdale environment (Preview)
+          href: about-teams-environment.md
         - name: View apps in your environments 
           href: admin-view-apps.md
         - name: Language collations 
@@ -256,10 +258,8 @@
             href: set-up-duplicate-detection-rules-keep-data-clean.md
           - name: Duplicate detection settings
             href: turn-duplicate-detection-rules-off-whole-organization.md
-          - name: Export field translations
-            href: https://docs.microsoft.com/dynamics365/customerengagement/on-premises/customize/export-customized-entity-field-text-translation
-          - name: Import field translations
-            href: https://docs.microsoft.com/dynamics365/customerengagement/on-premises/customize/import-translated-entity-field-text
+          - name: Asynchronous processing of cascading transactions
+            href: async-cascading.md
           - name: Imports
             href: https://docs.microsoft.com/dynamics365/customerengagement/on-premises/basics/import-accounts-leads-other-data 
           - name: Sample data
@@ -346,6 +346,8 @@
         href: database-security.md
       - name: Configure user access to an environment
         href: control-user-access.md  
+      - name: Diagnose user access
+        href: diagnose-user-access.md
       - name: View user profile
         href: https://docs.microsoft.com/powerapps/user/view-your-user-profile
       - name: Assign security roles
@@ -428,6 +430,8 @@
         href: powerapps-powershell.md           
       - name: Automation of tasks with PowerShell 
         href: wp-task-automation-powershell.md
+      - name: Data loss prevention SDK 
+        href: data-loss-prevention-sdk.md
     - name: Requirements
       items:
       - name: Requirements/supported configurations
@@ -507,17 +511,18 @@
         items:
         - name: Manage teams
           href: manage-teams.md
+        - name: Manage group teams
+          href: manage-group-teams.md
         - name: Team templates
           href: about-team-templates.md
         - name: Team templates for access rights 
           href: create-team-template-add-entity-form.md
-
+      - name: Encryption
+        items:
         - name: Encryption
-          items:
-          - name: Encryption
-            href: data-encryption.md
-          - name: Manage encryption key
-            href: manage-encryption-key.md 
+          href: data-encryption.md
+        - name: Manage encryption key
+          href: manage-encryption-key.md 
     - name: SharePoint and Power Apps
       items:
       - name: Manage your documents using SharePoint
@@ -562,12 +567,14 @@
         href: data-integrator.md
       - name: Data Integrator Error management and troubleshooting 
         href: data-integrator-error-management.md
-    - name: Data gateways
+    - name: Data sources and gateway clusters
       items: 
       - name: "Preview: About on-premises gateway"
         href: wp-onpremises-gateway.md
       - name: "Preview: On-premises data gateway management"
         href: onpremises-data-gateway-management.md
+      - name: "Preview: Data source management"
+        href: onpremises-data-gateway-source-management.md
     - name: Manage data
       items: 
       - name: Add or remove sample data 
@@ -580,6 +587,8 @@
         href: merge-data.md
       - name: Detect duplicate data
         href: detect-duplicate-data.md 
+      - name: Detect duplicate records
+        href: detect-duplicate-records.md
       - name: Duplicate detection rules
         href: set-up-duplicate-detection-rules-keep-data-clean.md 
       - name: Turn duplicate detection rules on or off
@@ -708,8 +717,6 @@
         href: https://docs.microsoft.com/dynamics365/customer-engagement/live-assist/live-assist-microsoft-dynamics-365-powered-by-cafe-x
       - name: Use Power BI
         href: use-power-bi.md 
-      - name: Embed an app in Teams
-        href: embed-app-teams.md        
       - name: Install, update, or remove a preferred solution
         href: install-remove-preferred-solution.md 
       - name: Add Microsoft 365 Online services
