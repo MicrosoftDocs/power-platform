@@ -7,7 +7,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/29/2020
+ms.date: 11/06/2020
 search.audienceType: 
   - admin
 search.app:
@@ -73,9 +73,9 @@ A user who already has the Environment Admin role in the environment can take th
 
 Security roles can be assigned to users or teams (including group teams). Before assigning a role to a user, [verify that the user is present in the environment in Enabled status](diagnose-user-access.md). [Add the user to the environment](add-users-to-environment.md) or [fix their status to become Enabled](diagnose-user-access.md) before assigning a role to them. You'll be able to assign a role as part of the process of adding the user. 
 
-In general, a security role can only be assigned to users who are in the Enabled status. But if you need to assign a security role to users in the Disabled state, you can do so by enabling **allowRoleAssignmentOnDisabledUsers** in OrgDBOrgSettings. 
+In general, a security role can only be assigned to users who have Enabled status. But if you need to assign a security role to users in the Disabled state, you can do so by enabling **allowRoleAssignmentOnDisabledUsers** in OrgDBOrgSettings. 
 
-To add a security role to a team or a user who is already present in the Enabled status in an environment: 
+To add a security role to a team or a user who have Enabled status in an environment: 
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
@@ -86,9 +86,15 @@ To add a security role to a team or a user who is already present in the Enabled
    > [!div class="mx-imgBorder"] 
    > ![See all security roles](media/see-all-security-roles.png "See all security roles")
 
-4. Make sure the right Business unit is selected from the dropdown, and click on a role from the list of roles in the environment.
+4. Make sure the right Business unit is selected from the dropdown, and select a role from the list of roles in the environment.
 
-5. Select **Add people** to add a user or team to the role. If you do not find a user or team to assign the role to, make sure the user or team is present in the environment and the user is in the Enabled status before assigning a role to them. 
+   > [!div class="mx-imgBorder"] 
+   > ![Select Business unit](media/security-role-business-unit.png "Select Business unit")
+
+5. Select **Add people** to add a user or team to the role. If you do not find a user or team to assign the role to, make sure the user or team is present in the environment and the user has Enabled status before assigning a role to them. 
+
+   > [!div class="mx-imgBorder"] 
+   > ![Add people](media/security-role-add-people.png "Add people")
 
 ## Create or configure a custom security role 
 
