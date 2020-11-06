@@ -36,7 +36,7 @@ Let's get started with tutorial #1 and create three Common Data Service environm
 
 You will need to create, or have access to, three Common Data Service environments in your demo or customer tenant. To create these environments, follow the instructions below. Otherwise, proceed to the end of this tutorial for the next steps.
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) with credentials that has access to a tenant with a minimum 3 GB available capacity (required to create the three environments).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) with credentials that provide access to a tenant with a minimum 3 GB available capacity (required to create the three environments).
 
 2. Select **Environments** in the navigation area.
 
