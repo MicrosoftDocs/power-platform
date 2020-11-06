@@ -48,17 +48,13 @@ You will need to create, or have access to, three Common Data Service environmen
 
     ![Create environment](../media/github-actions-tutorial/gh-lab-0.50.png "Create environment")
 
-6. Select **Create environment**.
+6. Select **Yes** to create a database and then **Next**.
 
-7. Now that your environment has been created select **Create database**.
-
-    ![Choose environment](../media/github-actions-tutorial/gh-lab-0.70.png "Choose environment")
-
-8. Set the currency to **USD** and language to **English**. Include the sample apps and data, and then select **Create database**.
+7. Set the currency to **USD** and language to **English**. Include the sample apps and data, provide a URL for your business organization, and then select **Save**.
 
     ![Set currency](../media/github-actions-tutorial/gh-lab-0.80.png "Set currency")
 
-9. Your development environment has been created, follow steps 4 – 8 above to create a second environment called “Your Name – build” , and then create a third environment called “Your Name – prod”. Note that the third environment can be a trial environment type.
+8. Your development environment has been created, follow steps 4 – 8 above to create a second environment called “Your Name – build” , and then create a third environment called “Your Name – prod”. Note that the third environment can be a trial environment type.
 
 You now have the development, build, and production environments needed in the following modules of this tutorial.
 
