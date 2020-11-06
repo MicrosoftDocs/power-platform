@@ -63,9 +63,9 @@ Microsoft Power Platform protects developer-type SKUs from inquiry by non-authen
 
 To fix this, you must have your admin security role added to the security roles for all developer environments, and then remove the selection from the sync flow. More information: [Power Apps Community Plan](https://docs.microsoft.com/powerapps/maker/dev-community-plan)
 
-## Sync flow (model-driven apps)
+## Sync Flow limitations for Developer and Microsoft TEam environments
 
-It currently isn't possible to retrieve model-driven apps for developer environments (*My Name*'s environment).
+It currently isn't possible to retrieve the model-driven apps, chatbots and UI flows for developer environments (*My Name's* environment) and Microsoft Teams environments.
 
 ## Custom connectors and DLP
 

@@ -73,7 +73,7 @@ from [GitHub actions lab](https://github.com/microsoft/powerplatform-actions-lab
 
 To interact with a Common Data Service environment, a secret must be created that enables the various GitHub Actions to perform the required task. Two types of connections are available:
 
-- Username/password: Configured as a generic service connection with username and password. Username/password authentication sdoes not support multi-factor authentication (MFA).
+- Username/password: Configured as a generic service connection with username and password. Username/password authentication does not support multi-factor authentication (MFA).
 - Service principal and client secret: This connection type uses service principal based authentication and supports multi-factor authentication. Service principal authentication availability is October 2020.
 
 ## Available runners
