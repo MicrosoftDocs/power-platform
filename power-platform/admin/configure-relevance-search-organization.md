@@ -17,6 +17,8 @@ search.app:
 ---
 # Configure Relevance Search to improve search results and performance 
 
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 <!-- legacy procedure -->
 
 Relevance Search delivers fast and comprehensive search results in a single list, sorted by relevance. As an administrator or customizer, you'll be able to enable and configure Relevance Search as described below. Many of the configuration steps use the same user interface as the Quick Find configuration.

@@ -25,6 +25,9 @@ search.app:
 ---
 
 # Known issues with document management
+
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 The customizations and configurations described here can cause issues with the document management feature. 
 
 ## Components from an Iframe
