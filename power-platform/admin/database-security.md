@@ -84,7 +84,7 @@ To add a security role to a team or a user who is already present in the Enabled
 3. In the **Access** tile, select **See all** under Security roles.
 
    > [!div class="mx-imgBorder"] 
-   > ![See all users](media/see-all-users.png "See all users")
+   > ![See all security roles](media/see-all-security-roles.png "See all security roles")
 
 4. Make sure the right Business unit is selected from the dropdown, and click on a role from the list of roles in the environment.
 
