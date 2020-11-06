@@ -18,6 +18,8 @@ search.app:
 ---
 # Security roles and privileges
 
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 To control data access, you must set up an organizational structure that both protects sensitive data and enables collaboration. You do this by setting up business units, security roles, and field security profiles.  
 
 > [!TIP]
