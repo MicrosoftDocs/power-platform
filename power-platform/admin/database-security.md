@@ -28,7 +28,7 @@ An environment can have zero or one Common Data Service database. The process fo
 ## Predefined security roles
 Environments include predefined security roles that reflect common user tasks with access levels defined to match the security best-practice goal of providing access to the minimum amount of business data required to use the app. 
 
-These security roles can be assigned to the user, [owner team](manage-teams.md#about-owner-teams) and [group team](manage-teams.md#about-group-teams). 
+These security roles can be assigned to the user, [owner team](manage-teams.md#about-owner-teams) and [group team](manage-group-teams.md). 
 
 There is another set of security roles that is assigned to [application users](system-application-users.md). Those security roles are installed by our services and cannot be updated.
 
@@ -55,7 +55,7 @@ There is another set of security roles that is assigned to [application users](s
 A user who already has the Environment Admin role in the environment can take these steps.
 
 > [!NOTE]
-> Roles can be assigned to [owner teams](manage-teams.md#create-an-owner-team) and [Azure AD group teams](manage-teams.md#create-a-group-team), in addition to individual users. 
+> Roles can be assigned to [owner teams](manage-teams.md#create-an-owner-team) and [Azure AD group teams](manage-group-teams.md), in addition to individual users.  
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
