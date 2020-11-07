@@ -53,8 +53,7 @@ There is another set of security roles that is assigned to [application users](s
 A user who already has the Environment Admin role in the environment can take these steps.
 
 > [!NOTE]
-> Roles can be assigned to [owner teams](manage-teams.md#create-an-owner-team) and [Azure AD group teams](manage-teams.md#create-a-group-team), in addition to individual users. 
-
+> Roles can be assigned to [owner teams](manage-teams.md#create-an-owner-team) and [Azure AD group teams](manage-group-teams.md), in addition to individual users. 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
 2. Select **Environments** > [select an environment].
