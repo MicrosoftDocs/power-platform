@@ -110,7 +110,7 @@ You need to have the appropriate privileges in order to assign security roles to
  For more information about the difference between [!INCLUDE[pn_MS_Online_Services](../includes/pn-ms-online-services.md)] administrator roles and security roles, see [Grant users access](grant-users-access.md).  
   
 > [!IMPORTANT] 
-> You must assign at least one security role to every user either directly or indirectly as a member of a [group team](manage-teams.md#about-group-teams). The service doesn't allow access to users who don't have at least one security role.
+> You must assign at least one security role to every user either directly or indirectly as a member of a [group team](manage-group-teams.md). The service doesn't allow access to users who don't have at least one security role.
 
 To assign security roles to users in an environment that has zero or one Common Data Service database, see [Configure user security to resources in an environment](database-security.md). 
 
