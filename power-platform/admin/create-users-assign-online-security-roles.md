@@ -26,7 +26,7 @@ You use the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admi
 > [!NOTE]
 > When you create a user and assign a license in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], the user is also created in customer engagement apps. It can take a few minutes to complete the synchronization process between the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] and customer engagement apps.
 > 
-> By entering a user ID and password, a user can access the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] to view information about the service. However, the user won't have access to customer engagement apps until the user has a security role assigned either directly or indirectly as a member of a [group team](manage-group-teams.md#about-group-teams). 
+> By entering a user ID and password, a user can access the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] to view information about the service. However, the user won't have access to customer engagement apps until the user has a security role assigned either directly or indirectly as a member of a [group team](manage-group-teams.md). 
 > 
 > [!TIP] 
 >  To force an immediate synchronization between the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] and customer engagement apps, do the following:  
@@ -109,7 +109,7 @@ You need to have the appropriate privileges in order to assign security roles to
  For more information about the difference between [!INCLUDE[pn_MS_Online_Services](../includes/pn-ms-online-services.md)] administrator roles and security roles, see [Grant users access](grant-users-access.md).  
   
 > [!IMPORTANT] 
-> You must assign at least one security role to every user either directly or indirectly as a member of a [group team](manage-teams.md#about-group-teams). The service doesn't allow access to users who don't have at least one security role.
+> You must assign at least one security role to every user either directly or indirectly as a member of a [group team](manage-group-teams.md). The service doesn't allow access to users who don't have at least one security role.
 
 To assign security roles to users in an environment that has zero or one Common Data Service database, see [Configure user security to resources in an environment](database-security.md). 
 

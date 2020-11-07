@@ -24,7 +24,7 @@ To access a Common Data Service environment, a user must meet the following crit
 1. Be enabled for sign-in in Azure Active Directory (Azure AD).
 2. Have a valid license that has a Dynamics 365 or Microsoft Power Platform recognized service plan, or the environment must have active per-app plans.
 3. Be a member of the environment's Azure AD group (if one has been associated with the environment).
-4. Have at least one Common Data Service security role assigned directly to them or to a [group team](manage-teams.md#about-group-teams) they're a member of.
+4. Have at least one Common Data Service security role assigned directly to them or to a [group team](manage-group-teams.md) they're a member of.
 
 A user's level of access within the environment and to the resources (apps and data) in the environment is determined by the privileges defined in the security roles assigned to that user. Their access mode being [Administrative](create-users-assign-online-security-roles.md#create-an-administrative-user-account) or [Read-Write](create-users-assign-online-security-roles.md#create-a-read-write-user-account) also determines their level of access within an environment.
 
