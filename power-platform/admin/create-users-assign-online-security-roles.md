@@ -3,6 +3,7 @@ title: "Create users and assign security roles | MicrosoftDocs"
 description: Create users and assign security roles
 author: jayasreekumar
 ms.reviewer: jimholtz
+ms.author: jkumar
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
