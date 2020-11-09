@@ -36,31 +36,25 @@ Let's get started with tutorial #1 and create three Common Data Service environm
 
 You will need to create, or have access to, three Common Data Service environments in your demo or customer tenant. To create these environments, follow the instructions below. Otherwise, proceed to the end of this tutorial for the next steps.
 
-1. Log into a tenant that you have access to and that minimum 3GB available capacity which is required to create three environments.
-2. Go to https://admin.powerapps.com, this will take you to the Power Platform admin center.
-3. Select **Environments** in the navigation area.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) with credentials that provide access to a tenant with a minimum 3 GB available capacity (required to create the three environments).
 
-    ![Select environment](../media/github-actions-tutorial/gh-lab-0.30.png "Select environment")
+2. Select **Environments** in the navigation area.
 
-4. Select **+ New Environment** to create your first new environment.
+3. Select **+ New** to create your first new environment.
 
-    ![New environment](../media/github-actions-tutorial/gh-lab-0.40.png "New environment")
+    ![New environment](../media/github-actions-tutorial/gh-lab-0.10.png "New environment")
 
-5. The first environment should be named “Your Name – dev”, set the region to **United States (default)**, set the environment type to *Production* (if available),  if not use **Trial**.
+4. The first environment should be named “Your Name – dev”, set the region to **United States (default)**, set the environment type to *Production* (if available),  if not use **Trial**.
 
     ![Create environment](../media/github-actions-tutorial/gh-lab-0.50.png "Create environment")
 
-6. Select **Create environment**.
+5. Select **Yes** to create a database and then **Next**.
 
-7. Now that your environment has been created select **Create database**.
-
-    ![Choose environment](../media/github-actions-tutorial/gh-lab-0.70.png "Choose environment")
-
-8. Set the currency to **USD** and language to **English**. Include the sample apps and data, and then select **Create database**.
+6. Set the currency to **USD** and language to **English**. Include the sample apps and data, provide a URL for your business organization, and then select **Save**.
 
     ![Set currency](../media/github-actions-tutorial/gh-lab-0.80.png "Set currency")
 
-9. Your development environment has been created, follow steps 4 – 8 above to create a second environment called “Your Name – build” , and then create a third environment called “Your Name – prod”. Note that the third environment can be a trial environment type.
+7. Your development environment has been created, follow steps 4 – 8 above to create a second environment called “Your Name – build” , and then create a third environment called “Your Name – prod”. Note that the third environment can be a trial environment type.
 
 You now have the development, build, and production environments needed in the following modules of this tutorial.
 
