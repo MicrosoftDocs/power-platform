@@ -19,6 +19,8 @@ search.app:
 
 # Configure user security to resources in an environment
 
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 Common Data Service uses a role-based security model to help secure access to the database. This topic explains how to create the security artifacts that you must have to help secure resources in an environment. Security roles can be used to configure environment-wide access to all resources in the environment, or to configure access to specific apps and data in the environment. Security roles control a user's access to an environment's resources through a set of access levels and permissions. The combination of access levels and permissions that are included in a specific security role governs the limitations on the user's view of apps and data, and on the user's interactions with that data. 
 
 An environment can have zero or one Common Data Service database. The process for assigning security roles for environments that have no Common Data Service database differs from that for an environment that does have a Common Data Service database. 
@@ -54,6 +56,7 @@ A user who already has the Environment Admin role in the environment can take th
 
 > [!NOTE]
 > Roles can be assigned to [owner teams](manage-teams.md#create-an-owner-team) and [Azure AD group teams](manage-group-teams.md), in addition to individual users. 
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
 2. Select **Environments** > [select an environment].

@@ -18,6 +18,8 @@ search.app:
 ---
 # Troubleshooting: Common user access issues
 
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 ## User access diagnostic tool in the Power Platform admin center
 
 Several factors influence user access in a Common Data Service environment. To help administrators with diagnosing user access to an environment and reasons for access or no access, the new “Run diagnostics” feature in the Power Platform admin center provides basic access diagnostics for individual users in the environment. The feature helps to detect potential causes to user sign-in and other issues and suggests potential mitigations. For more information, see: [Diagnose user access in an environment](diagnose-user-access.md).

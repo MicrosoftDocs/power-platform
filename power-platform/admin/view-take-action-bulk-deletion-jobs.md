@@ -18,6 +18,8 @@ search.app:
 ---
 # View and take action on bulk deletion jobs
 
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 You can view the status of, pause, postpone, and resume a system job that you created using **Bulk Record Deletion**.  
   
 1. In the Power Platform admin center, select an environment. 
