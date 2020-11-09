@@ -17,7 +17,9 @@ search.app:
 ---
 # System Settings General tab
 
-Use the settings on this page to change general system-level settings like preferences for saving, decimal and currency precision, and other default settings for customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation).  
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
+Use the settings on this page to change general system-level settings like preferences for saving, decimal and currency precision, and other default settings for model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service.  
 
 <!-- legacy procedure -->
 

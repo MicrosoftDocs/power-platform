@@ -17,6 +17,8 @@ search.app:
 ---
 # Plan for deployment and administration
 
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 Your deployment will go more smoothly with some preliminary planning.  The following table lists some of the items to consider before you start the actual deployment process.  
 
 
