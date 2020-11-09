@@ -101,7 +101,7 @@ Follow the instructions from the [Resolve duplicates when creating or updating r
 ### See also  
 [Enable the improved duplicate detection and merge experience](enable-improved-duplicate-detection.md) <br />
 [Detect duplicate data so you can fix or remove it](detect-duplicate-data.md) <br />
-[Import data (all record types)](../admin/import-data-all-record-types.md) 
+[Import data (all record types)](../admin/import-data-all-record-types.md) <br />
 [Check for duplicates](set-up-duplicate-detection-rules-keep-data-clean.md)  
 [Set up duplicate detection rules](set-up-duplicate-detection-rules-keep-data-clean.md)  
 [Run system jobs to detect duplicates](run-bulk-system-jobs-detect-duplicate-records.md)  
