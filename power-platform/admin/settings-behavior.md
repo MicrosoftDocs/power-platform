@@ -2,11 +2,10 @@
 title: "Manage behavior settings  | MicrosoftDocs"
 description: View and manage behavior settings for Common Data Service.
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/16/2019
+ms.date: 09/10/2020
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -38,9 +37,9 @@ Make sure you have the System Administrator or System Customizer security role o
 > |--------------|-----------------|  
 > |**Basic behavior**||  
 > |Auto save|Default: On. If **On**, after a record is created (initially saved), any changes made to a form will automatically be saved thirty seconds after the change is made. The 30-second period starts again after a change is made. If no changes are made, the automatic save doesn’t happen. More information: [Manage auto-save](https://docs.microsoft.com/dynamics365/customer-engagement/customize/manage-auto-save)|  
-> |Load default static content from Content Delivery Network|Default: On. Model-driven apps in Dynamics 365 will load out-of-the-box static content from the Azure Content Delivery Network (CDN) service. For firewall restrictions and IP approved list related issues, system administrators can select **Off** to disable the Azure Azure Content Delivery Network feature.|  
+> |Load default static content from Content Delivery Network|Default: On. Customer engagement apps will load out-of-the-box static content from the Azure Content Delivery Network (CDN) service. For firewall restrictions and IP approved list related issues, system administrators can select **Off** to disable the Azure Azure Content Delivery Network feature.|  
 > |Share reassigned records with original owner|Default: Off. Select whether a record is shared with the original owner of the record, or completely reassigned to another user.| 
-> |Open in application mode|Default: Off. Select **On** to enable application mode. When this mode is enabled, model-driven apps in Dynamics 365 can be opened in a browser without menus, navigation, or toolbars. Hiding these parts of the browser causes model-driven apps in Dynamics 365 to appear like a separate application rather than a website. |  
+> |Open in application mode|Default: Off. Select **On** to enable application mode. When this mode is enabled, customer engagement apps can be opened in a browser without menus, navigation, or toolbars. Hiding these parts of the browser causes customer engagement apps to appear like a separate application rather than a website. |  
 > | Use Unified Interface only | Default: Off. When you enable Unified Interface Only, all your apps, including those designed for the legacy web client, run in Unified Interface all the time. Environments with legacy web client apps will show a notification on the home page, prompting System Administrators to update those apps to Unified Interface.|
 > |Use legacy form rendering|Default: Off. For compatibility, use the legacy form rendering engine. Note that performance may be adversely affected. If you have forms that include unsupported customizations, these enhancements can cause compatibility problems. To avoid this, you can temporarily turn the form enhancements off by setting to **On**. We recommend that you reset this setting to **Off** after addressing scripting problems so you can take advantage of optimized forms. Note: When a form that includes unsupported customizations is used, such as unsupported JavaScript, the form may fail to load or the user will receive an error message.<br /><ul><li>If the form just fails, set the Use legacy form rendering option to **On**. If the form loads after you select this option, you may have unsupported customizations.</li><li>If the user receives an error, select "View the data that will be sent to Microsoft" and see the details in the <CrmScriptErrorReport> tags.</li> </ul> | 
 > |**Formatting**||  

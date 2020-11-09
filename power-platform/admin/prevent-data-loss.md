@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/05/2020
+ms.date: 09/24/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -134,4 +134,5 @@ See [Data loss prevention (DLP) policy commands](powerapps-powershell.md#data-lo
 
 [Data loss prevention policies](wp-data-loss-prevention.md) <br />
 [Create a data loss prevention (DLP) policy](create-dlp-policy.md) <br />
-[Data loss prevention (DLP) policy commands](powerapps-powershell.md#data-loss-prevention-dlp-policy-commands)
+[Data loss prevention (DLP) policy commands](powerapps-powershell.md#data-loss-prevention-dlp-policy-commands) <br />
+[Power Platform data loss prevention (DLP) SDK](data-loss-prevention-sdk.md)

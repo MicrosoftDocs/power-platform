@@ -81,7 +81,6 @@ A security role can be set to provide a team member with direct Basic-level acce
 
 This member's privilege inheritance role is applicable to [Owner](manage-teams.md#about-owner-teams) and Azure Active Directory (Azure AD) [group team](manage-group-teams.md). 
 
-
 > [!NOTE]
 > Prior to Team member's privilege inheritance release in May 2019, security roles behaved as **Team privileges**. Security roles created before this release are set as **Team privileges** and security roles created after this release are by default set as **User privileges**.
 
