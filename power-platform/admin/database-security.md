@@ -7,7 +7,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/29/2020
+ms.date: 11/06/2020
 search.audienceType: 
   - admin
 search.app:
@@ -26,7 +26,7 @@ An environment can have zero or one Common Data Service database. The process fo
 ## Predefined security roles
 Environments include predefined security roles that reflect common user tasks with access levels defined to match the security best-practice goal of providing access to the minimum amount of business data required to use the app. 
 
-These security roles can be assigned to the user, [owner team](manage-teams.md#about-owner-teams) and [group team](manage-teams.md#about-group-teams). 
+These security roles can be assigned to the user, [owner team](manage-teams.md#about-owner-teams) and [group team](manage-group-teams.md). 
 
 There is another set of security roles that is assigned to [application users](system-application-users.md). Those security roles are installed by our services and cannot be updated.
 
@@ -53,8 +53,7 @@ There is another set of security roles that is assigned to [application users](s
 A user who already has the Environment Admin role in the environment can take these steps.
 
 > [!NOTE]
-> Roles can be assigned to [owner teams](manage-teams.md#create-an-owner-team) and [Azure AD group teams](manage-teams.md#create-a-group-team), in addition to individual users. 
-
+> Roles can be assigned to [owner teams](manage-teams.md#create-an-owner-team) and [Azure AD group teams](manage-group-teams.md), in addition to individual users. 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
 2. Select **Environments** > [select an environment].
@@ -64,39 +63,37 @@ A user who already has the Environment Admin role in the environment can take th
    > [!div class="mx-imgBorder"] 
    > ![Choose a role](media/assign-security-role-nodb.png "Choose a role")
 
-4. Specify the names of one or more users or security groups from Azure AD, or specify that you want to add your entire organization.
+4. Specify the name or email address of one or more users or groups from Azure AD to assign this role to.
 
    > [!div class="mx-imgBorder"] 
    > ![Select an action](media/assign-security-role-nodb-action.png "Select an action")
 
 ## Assign security roles to users in an environment that has a Common Data Service database 
 
-Verify that the user you want to assign a security role to is present in the environment. If not, add the user to the environment. You'll be able to assign a security role as part of the process of adding the user. More information: [Add users to an environment](add-users-to-environment.md) 
+Security roles can be assigned to users or teams (including group teams). Before assigning a role to a user, [verify that the user is present in the environment in Enabled status](diagnose-user-access.md). [Add the user to the environment](add-users-to-environment.md) or [fix their status to become Enabled](diagnose-user-access.md) before assigning a role to them. You'll be able to assign a role as part of the process of adding the user. 
 
-In general, a security role can only be assigned to users who are in the Enabled state. But if you need to assign a security role to users in the Disabled state, you can do so by enabling **allowRoleAssignmentOnDisabledUsers** in OrgDBOrgSettings. 
+In general, a security role can only be assigned to users who have Enabled status. But if you need to assign a security role to users in the Disabled state, you can do so by enabling **allowRoleAssignmentOnDisabledUsers** in OrgDBOrgSettings. 
 
-To add a security role to a user who is already present in an environment: 
+To add a security role to a team or a user who have Enabled status in an environment: 
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
-2. Select **Environments** > [select an environment] > **Settings** > **Users + permissions** > **Users**. 
+2. Select **Environments** > [select an environment]. 
 
-3. Select **Manage users in Dynamics 365**.
-
-   > [!div class="mx-imgBorder"] 
-   > ![Select Manage users in Dynamics 365](media/manage-users-dynamics-365.png "Select Manage users in Dynamics 365")
-
-4. Select the user from the list of users in the environment, and then select **Manage roles**.
+3. In the **Access** tile, select **See all** under Security roles.
 
    > [!div class="mx-imgBorder"] 
-   > ![Select Manage roles](media/select-manage-roles.png "Select Manage roles")
+   > ![See all security roles](media/see-all-security-roles.png "See all security roles")
 
-5. Assign one or more security roles to the user. 
+4. Make sure the right Business unit is selected from the dropdown, and select a role from the list of roles in the environment.
 
    > [!div class="mx-imgBorder"] 
-   > ![Manage user roles](media/manage-user-roles.png "Manage user roles")
+   > ![Select Business unit](media/security-role-business-unit.png "Select Business unit")
 
-6. Select **OK**. 
+5. Select **Add people** to add a user or team to the role. If you do not find a user or team to assign the role to, make sure the user or team is present in the environment and the user has Enabled status before assigning a role to them. 
+
+   > [!div class="mx-imgBorder"] 
+   > ![Add people](media/security-role-add-people.png "Add people")
 
 ## Create or configure a custom security role 
 
