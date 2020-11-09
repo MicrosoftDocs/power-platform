@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/16/2020
+ms.date: 11/09/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -98,59 +98,11 @@ In the list of accounts, contacts, or leads, select two records of the same reco
 
 Follow the instructions from the [Resolve duplicates when creating or updating records](#resolve-duplicates-when-creating-or-updating-records) section of this topic.
 
-## Enable the improved duplicate detection and merge experience
-
-To let users in your organization use the improved duplicate detection and merge experience, you must first enable it.
-
-**To enable**
-
-1. In your app, on the nav bar, select the **Settings** icon, and then select **Advanced Settings**.
-
-   The Business Management settings page opens in a new browser tab.
-
-2. On the nav bar, select **Settings** \> **Data Management** \> **Duplicate Detection Settings**.
-
-    **- OR -**
-
-    In the Power Platform admin center, select **Environments** \> **Settings** \> **Data Management** \> **Duplicate Detection Settings**.
-
-1. For **Enable improved duplicate detection and merge experience**, select **Yes** and then select **OK**.
-
-   > [!div class="mx-imgBorder"] 
-   > ![Screenshot of the Duplicate Detection Settings options.](media/duplicate-records-duplicate-detection-settings.png "Duplicate detection settings")
-
-## What happens when duplicates are found while qualifying leads?
-
-When qualifying a lead, if a duplicate account or contact is detected while creating new records, a duplicate warning is shown to you. Depending on whether your system administrator has enabled the improved duplicate detection and merge experience, you will see the options to resolve duplicates.
-
-### Duplicate detection when improved duplicate detection and merge experience is disabled
-
-When the improved duplicate detection experience is disabled, you will see the **Duplicate warning** dialog box.
-
-> [!div class="mx-imgBorder"] 
-> ![Screenshot of the Duplicate warning dialog box.](media/duplicate-records-warning.png "Duplicate warning while qualifying a lead")
-
-In the **Account** and **Contact** fields, select the matching account and contact record and select **Continue**. To ignore the duplicate warning and create new records, leave the Account and Contact fields blank, and select **Continue**.
-
-The **Account** and **Contact** lookup fields are filtered with matched results and shown along with additional information to precisely identify the record to which the lead should be linked. For example, when you select the **Contact** lookup search icon, you'll see only matched contact records.
-
-### Duplicate detection when improved duplicate detection and merge experience is enabled
-
-When the improved duplicate detection and merge experience is enabled, you will see the **Account or Contact may already exist** dialog box.
-
-> [!div class="mx-imgBorder"] 
-> ![Screenshot of dialog box showing records might already exist.](media/duplicate-records-already-exists.png "Records may already exist")
-
-The **Matched accounts** and **Matched contacts** sections will show all the matching records (based on the duplicate detection rules) along with additional information to precisely identify the record to which the lead should be linked.
-
-To associate the lead record to an existing matching record, select the record, and select **Continue**. To create a new account or contact record, select **Ignore and save** without selecting a matching record.
-
-The lead is qualified.
-
 ### See also  
- [Detect duplicate data so you can fix or remove it](detect-duplicate-data.md) <br />
- [Import data (all record types)](../admin/import-data-all-record-types.md)   
- [Check for duplicates](set-up-duplicate-detection-rules-keep-data-clean.md)   
- [Set up duplicate detection rules](set-up-duplicate-detection-rules-keep-data-clean.md)   
- [Run system jobs to detect duplicates](run-bulk-system-jobs-detect-duplicate-records.md)   
- [Delete bulk records](../admin/delete-bulk-records.md)
+[Enable the improved duplicate detection and merge experience](enable-improved-duplicate-detection.md) <br />
+[Detect duplicate data so you can fix or remove it](detect-duplicate-data.md) <br />
+[Import data (all record types)](../admin/import-data-all-record-types.md) <br />   
+[Check for duplicates](set-up-duplicate-detection-rules-keep-data-clean.md)  <br />  
+[Set up duplicate detection rules](set-up-duplicate-detection-rules-keep-data-clean.md)  <br />  
+[Run system jobs to detect duplicates](run-bulk-system-jobs-detect-duplicate-records.md)  <br />  
+[Delete bulk records](../admin/delete-bulk-records.md)
