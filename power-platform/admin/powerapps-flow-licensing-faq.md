@@ -238,56 +238,56 @@ Since flows, as well as certain Power Automate features like approvals, run insi
 | Common Data Service Log Capacity      | \+ 0           | \+ 0           |
 | Common Data Service File Capacity     | \+ 200 MB      | \+ 200 MB      |
 
-## Project Oakdale
+## Dataverse for Teams
 
-Here is a list of Project Oakdale licensing FAQs; for more information about Project Oakdale, see [About the Project Oakdale environment](about-teams-environment.md).
+Here is a list of Dataverse for Teams licensing FAQs; for more information about Dataverse for Teams, see [About the Dataverse for Teams environment](about-teams-environment.md).
 
 ### Are the existing Microsoft Power Platform use rights included with Microsoft 365 licenses changing?
 
-To deliver a comprehensive low-code extensibility platform for Microsoft Teams, Microsoft Power Platform capabilities available as part of select Microsoft 365 subscriptions are expanding with the introduction of Project Oakdale.
+To deliver a comprehensive low-code extensibility platform for Microsoft Teams, Microsoft Power Platform capabilities available as part of select Microsoft 365 subscriptions are expanding with the introduction of Dataverse for Teams.
 
-Project Oakdale is a built-in flexible datastore that provides data storage and a one-click solution for (app/chatbot) deployment in Teams. With the addition of Microsoft Project Oakdale:
+Dataverse for Teams is a built-in flexible datastore that provides data storage and a one-click solution for (app/chatbot) deployment in Teams. With the addition of Microsoft Dataverse for Teams:
 - Power Apps capabilities seeded in Microsoft 365 licenses are expanding to enable building and deploying custom apps natively within Teams.
 -	Additionally, Power Virtual Agents capabilities are being introduced to Teams. Customers will now be able to build and deploy custom chatbots directly within Teams.
 
 The existing Power Platform functionality available for use in Microsoft 365 more broadly outside of Teams remains otherwise unchanged.
 
-### Is there any new capability coming with Project Oakdale to Power Automate rights included with Microsoft 365?
+### Is there any new capability coming with Dataverse for Teams to Power Automate rights included with Microsoft 365?
 
-Yes. With Project Oakdale, users now can build flows using Power Automate maker portal and that operate in a Project Oakdale environment. Please note that a Project Oakdale environment needs to be created first by either authoring an app or chatbot.
+Yes. With Dataverse for Teams, users now can build flows using Power Automate maker portal and that operate in a Dataverse for Teams environment. Please note that a Dataverse for Teams environment needs to be created first by either authoring an app or chatbot.
 
-### Which Microsoft 365 subscriptions include Project Oakdale and Power Virtual Agents capabilities with Teams?
+### Which Microsoft 365 subscriptions include Dataverse for Teams and Power Virtual Agents capabilities with Teams?
 
-Project Oakdale and Power Virtual Agents for Teams capabilities will be available as part of select Microsoft 365 subscriptions with Power Platform and Teams capabilities, excluding plans for US government environments (GCC, GCC High and DoD) and EDU A1 and SUB SKUs.
+Dataverse for Teams and Power Virtual Agents for Teams capabilities will be available as part of select Microsoft 365 subscriptions with Power Platform and Teams capabilities, excluding plans for US government environments (GCC, GCC High and DoD) and EDU A1 and SUB SKUs.
 
-### How is Project Oakdale environment created? 
+### How is Dataverse for Teams environment created? 
 
-In public preview, creation of Project Oakdale environments is not available from the Power Platform admin center. Creation of new Microsoft Project Oakdale environments will only be possible from within Teams. 
+In public preview, creation of Dataverse for Teams environments is not available from the Power Platform admin center. Creation of new Microsoft Dataverse for Teams environments will only be possible from within Teams. 
 
-### Can Project Oakdale be used outside of Teams?
+### Can Dataverse for Teams be used outside of Teams?
 
-Project Oakdale is designed to work in the Teams client across web, desktop and mobile. If you’d want to use Project Oakdale outside of Teams, you must promote your environment to Common Data Service. 
+Dataverse for Teams is designed to work in the Teams client across web, desktop and mobile. If you’d want to use Dataverse for Teams outside of Teams, you must promote your environment to Common Data Service. 
 
-### Is there a limit to Project Oakdale capacity? How many Project Oakdale environments can be created in a tenant?  
+### Is there a limit to Dataverse for Teams capacity? How many Dataverse for Teams environments can be created in a tenant?  
 
-Each Project Oakdale environment uniquely maps (1:1) to a Teams team and can store up to 1,000,000 records based on typical usage (enforced as 2GB relational database storage per Project Oakdale environment). For details on service limits, including the tenant-level capacity limits associated with Project Oakdale, see [About the Project Oakdale environment](about-teams-environment.md). 
+Each Dataverse for Teams environment uniquely maps (1:1) to a Teams team and can store up to 1,000,000 records based on typical usage (enforced as 2GB relational database storage per Dataverse for Teams environment). For details on service limits, including the tenant-level capacity limits associated with Dataverse for Teams, see [About the Dataverse for Teams environment](about-teams-environment.md). 
 
-### Can we control who can create environments with Project Oakdale?
+### Can we control who can create environments with Dataverse for Teams?
 Teams governs who can create and join a Team.
 
 In public preview, the environment is created when a team is created and when an owner or member tries to create an application in it.
 
-### Can a Project Oakdale environment be deleted?
-In public preview, a Project Oakdale environment is deleted when the associated Team is deleted.
+### Can a Dataverse for Teams environment be deleted?
+In public preview, a Dataverse for Teams environment is deleted when the associated Team is deleted.
 
-### How does the capacity enforcement work for Project Oakdale environments?
+### How does the capacity enforcement work for Dataverse for Teams environments?
 
-When the environment capacity limits are reached (2GB per environment) new solutions (apps/flows/chatbots) can't be created or installed in that specific Project Oakdale environment.
+When the environment capacity limits are reached (2GB per environment) new solutions (apps/flows/chatbots) can't be created or installed in that specific Dataverse for Teams environment.
 
 When the tenant capacity service limits are reached (grows with the # of eligible Office USLs in the tenant up to a max of 1TB or up to a max of 500 environments as explained [here](https://go.microsoft.com/fwlink/p/?linkid=2143567):
 
--	New solutions cannot be created or installed in any Microsoft Project Oakdale environment. 
--	New Microsoft Project Oakdale environments cannot be created in the tenant 
+-	New solutions cannot be created or installed in any Microsoft Dataverse for Teams environment. 
+-	New Microsoft Dataverse for Teams environments cannot be created in the tenant 
 
 In both cases:
 -	Users who want to create/install new apps/flows/bots in that environment will be prompted to notify that the capacity limit is reached, and they need to reduce storage usage or contact their admins.
@@ -295,37 +295,37 @@ In both cases:
 -	Existing solutions within the environment can be updated.  
 -	Certain options within each solution (Power Apps/Power Automate/Power Virtual Agents) will be hidden/grayed out.  
 
-### Can customers with Power Apps, Power Automate, and Power Virtual Agents subscriptions use premium connectors with Project Oakdale?  
-Yes. Accessing premium connectors in a specific Project Oakdale environment requires users in that environment to be licensed accordingly. 
+### Can customers with Power Apps, Power Automate, and Power Virtual Agents subscriptions use premium connectors with Dataverse for Teams?  
+Yes. Accessing premium connectors in a specific Dataverse for Teams environment requires users in that environment to be licensed accordingly. 
 
-Example: In a Project Oakdale environment, accessing premium connectors in the context of an app requires all users accessing the app to be licensed by either the Power Apps per app or per user plan depending on the customer scenario.
+Example: In a Dataverse for Teams environment, accessing premium connectors in the context of an app requires all users accessing the app to be licensed by either the Power Apps per app or per user plan depending on the customer scenario.
  
-### Can I use AI Builder with Project Oakdale?
-No.  Tables for AI Builder are not included in Project Oakdale.
+### Can I use AI Builder with Dataverse for Teams?
+No.  Tables for AI Builder are not included in Dataverse for Teams.
 
-### Can I use UI Flows with Project Oakdale?
+### Can I use UI Flows with Dataverse for Teams?
 
-No. UI Flows are not supported in Project Oakdale.
+No. UI Flows are not supported in Dataverse for Teams.
 
-### Can I use custom connectors in Project Oakdale?
-Custom connectors are not supported in Project Oakdale but support for Azure API Management (API-M) will be available in Project Oakdale.
+### Can I use custom connectors in Dataverse for Teams?
+Custom connectors are not supported in Dataverse for Teams but support for Azure API Management (API-M) will be available in Dataverse for Teams.
 
 ### Can customers purchase more capacity for an environment associated with a Team?
 
-No. Project Oakdale provides support for approximately 1 million rows per team. Although existing apps and chatbots will continue to work when a Microsoft Project Oakdale environment reaches the per environment limit (2GB), users who want to create a new app, flow, or chatbot in the environment will need to :
+No. Dataverse for Teams provides support for approximately 1 million rows per team. Although existing apps and chatbots will continue to work when a Microsoft Dataverse for Teams environment reaches the per environment limit (2GB), users who want to create a new app, flow, or chatbot in the environment will need to :
 1.	Purchase Power Apps, Power Automate, and Power Virtual Agents subscriptions based on their needs and start building their new app, flow, or chatbot in a Common Data Service environment.
-2.	Promote the existing Project Oakdale environment to Common Data Service in the Power Platform admin center and, if needed, purchase Power Apps, Power Automate, or Power Virtual Agents subscriptions based on their needs.
+2.	Promote the existing Dataverse for Teams environment to Common Data Service in the Power Platform admin center and, if needed, purchase Power Apps, Power Automate, or Power Virtual Agents subscriptions based on their needs.
 
 > [!NOTE]
-> The capability to promote Project Oakdale environments to Common Data Service won’t be available at public preview, but is expected to be available by general availability (GA).
+> The capability to promote Dataverse for Teams environments to Common Data Service won’t be available at public preview, but is expected to be available by general availability (GA).
  
-### Can customers package and export their solution (app/flow/chatbots) built in Project Oakdale, and then import that into a Common Data Service environment (assuming they have the corresponding license including access rights to Microsoft Common Data Service)?
+### Can customers package and export their solution (app/flow/chatbots) built in Dataverse for Teams, and then import that into a Common Data Service environment (assuming they have the corresponding license including access rights to Microsoft Common Data Service)?
 
 This capability is not available in public preview but is included in our roadmap.
 
-### Other than adding capacity, what are the other reasons to promote a Project Oakdale environment?
+### Other than adding capacity, what are the other reasons to promote a Dataverse for Teams environment?
 
-Promoting an environment from Project Oakdale to Common Data Service will enable customers to take advantage of additional capacity, capabilities, such as: 
+Promoting an environment from Dataverse for Teams to Common Data Service will enable customers to take advantage of additional capacity, capabilities, such as: 
 -	Enterprise ALM, data types
 -	Support for log and managed data lake
 -	Rich access control, auditing
@@ -334,15 +334,15 @@ Promoting an environment from Project Oakdale to Common Data Service will enable
 > [!NOTE]
 > Accessing an environment with Common Data Service requires all users to have a corresponding standalone Power Platform license for each service being utilized.
 
-### Why do I see Common Data Service plan in select Microsoft 365 subscriptions? Is this related to Project Oakdale?
+### Why do I see Common Data Service plan in select Microsoft 365 subscriptions? Is this related to Dataverse for Teams?
 
 No. A limited set of Common Data Service capabilities were recently added to Microsoft 365 licenses to support service capabilities available (for example, Microsoft Project). A standalone Power Apps, Power Automate, or Power Virtual Agents plan is still needed to run apps/flows/bots with Common Data Service. Review the [Project Service description](https://docs.microsoft.com/office365/servicedescriptions/project-online-service-description/project-online-service-description) for more details on the feature.
 
 > [!NOTE]
-> There is a service plan called *Common Data Service for Teams* that is related to the Project Oakdale capabilities.
+> There is a service plan called *Common Data Service for Teams* that is related to the Dataverse for Teams capabilities.
 
-### Is geo migration supported for Project Oakdale environments?
-Geo migration is not supported for Project Oakdale environments.
+### Is geo migration supported for Dataverse for Teams environments?
+Geo migration is not supported for Dataverse for Teams environments.
 
 ## Add-ons
 
