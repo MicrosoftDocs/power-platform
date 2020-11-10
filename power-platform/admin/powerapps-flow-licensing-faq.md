@@ -1,6 +1,6 @@
 ---
 title: Power Apps and Power Automate licensing FAQs| Microsoft Docs
-description: "FAQs for licensing Power Apps, Power Automate, Common Data Service, and AI Builder"
+description: "FAQs for licensing Power Apps, Power Automate, Dataverse, Dataverse for Teams, and AI Builder"
 author: dileepsinghmicrosoft
 ms.service: power-platform
 ms.component: pa-admin
@@ -77,7 +77,7 @@ Power Apps licenses will continue to include Power Automate capabilities. Howeve
 
 ### Is there a plan for developers?
 
-Yes, we have a free Community Plan to learn and build skills on Power Apps, Power Automate, and Common Data Service. [Learn more](https://powerapps.microsoft.com/communityplan/).
+Yes, we have a free Community Plan to learn and build skills on Power Apps, Power Automate, and Microsoft Dataverse. [Learn more](https://powerapps.microsoft.com/communityplan/).
 
 ### What happens when I use all the data storage, file storage, and flow runs included in my per user licenses?
 
@@ -97,7 +97,7 @@ Yes. To help ensure service levels, availability and quality, there are limits t
 
 API capacity is tracked based on consumption at an individual user level, and the daily limits cannot be pooled at any other level.
 
-API limits are also applicable to application users, non-interactive users and administrative users in Common Data Service platform.
+API limits are also applicable to application users, non-interactive users and administrative users in Dataverse.
 
 More information is available [here](https://aka.ms/platformlimits).
 
@@ -109,7 +109,7 @@ Free trials for Microsoft Power Apps last 30 days. For Power Automate, they are 
 
 ### Is there a way to develop my Microsoft Power Apps and Power Automate skills for more than 90 days?
 
-Yes, with the Power Apps Community Plan you get a free environment for individual use with functionality including the Common Data Service. In this environment you can explore and learn everything about Power Automate and Power Apps for free, but the Power Apps Community Plan is not intended for production use.
+Yes, with the Power Apps Community Plan you get a free environment for individual use with functionality including the Dataverse. In this environment you can explore and learn everything about Power Automate and Power Apps for free, but the Power Apps Community Plan is not intended for production use.
 
 [Learn more](https://powerapps.microsoft.com/pricing/).
 
@@ -172,7 +172,7 @@ In addition, apps and flows created prior to October 1, 2019 which are using the
 
 The extended transition period allows for using the connectors listed above but it does not allow these connectors to use gateways. Gateways were a premium capability before the transition and they continue to be a premium capability.
 
-Although apps may be granted to use the Dynamics 365 connector for an extended transition period, the ability to use the connector does not provide Common Data Service capacity. Common Data Service capacity is a prerequisite for Power Apps and Power Automate workflows to use Common Data Service. 
+Although apps may be granted to use the Dynamics 365 connector for an extended transition period, the ability to use the connector does not provide Dataverse capacity. Dataverse capacity is a prerequisite for Power Apps and Power Automate workflows to use Dataverse. 
 
 ### How many Power Apps applications I can run with Microsoft 365 plans?
 
@@ -214,29 +214,29 @@ No. After the minimum purchase of 5 flows, additional flows can be licensed indi
 
 Any end user running a flow will need to be licensed either by the per user or per Power Automate plans.
 
-There are features in Power Automate that are not running a flow directly, such as responding to an approval request or advancing a stage in a business process. These features are built on the Common Data Service. Normally, any use of these features requires either a standalone Power Automate per user plan, or, that the flow that creates these business process environments or approval requests to be licensed under the per flow plan.
+There are features in Power Automate that are not running a flow directly, such as responding to an approval request or advancing a stage in a business process. These features are built on the Dataverse. Normally, any use of these features requires either a standalone Power Automate per user plan, or, that the flow that creates these business process environments or approval requests to be licensed under the per flow plan.
 
-## Common Data Service
+## Dataverse
 
-### What Common Data Service capacity is included with the Power Apps and Power Automate plans?
+### What Dataverse capacity is included with the Power Apps and Power Automate plans?
 
 Every tenant with a Power Apps license gets default capacity. In addition, for each license there is additional capacity (pooled) added to the tenant.
 
 
 | **Power Apps capacity Limits**         | **Per license entitlement (Power Apps per app plan)** | **Per license entitlement (Power Apps per user plan)** |
 |---------------------------------------|------------------------------------------------------|-------------------------------------------------------|
-| Common Data Service Database Capacity | \+ 50 MB                                             | \+ 250 MB                                             |
-| Common Data Service Log Capacity      | \+ 0                                                 | \+ 0                                                  |
-| Common Data Service File Capacity     | \+ 400 MB                                            | \+ 2 GB                                               |
+| Dataverse Database Capacity | \+ 50 MB                                             | \+ 250 MB                                             |
+| Dataverse Log Capacity      | \+ 0                                                 | \+ 0                                                  |
+| Dataverse File Capacity     | \+ 400 MB                                            | \+ 2 GB                                               |
 
-Since flows, as well as certain Power Automate features like approvals, run inside of the Common Data Service, every tenant with a Power Automate license gets default capacity. In addition, for each per-user or per-flow license there is additional capacity added to the tenant.
+Since flows, as well as certain Power Automate features like approvals, run inside of the Dataverse, every tenant with a Power Automate license gets default capacity. In addition, for each per-user or per-flow license there is additional capacity added to the tenant.
 
 
 | **Power Automate capacity Limits**    | **+ Per user** | **+ Per flow** |
 |---------------------------------------|----------------|----------------|
-| Common Data Service Database Capacity | \+ 50 MB       | \+ 50 MB       |
-| Common Data Service Log Capacity      | \+ 0           | \+ 0           |
-| Common Data Service File Capacity     | \+ 200 MB      | \+ 200 MB      |
+| Dataverse Database Capacity | \+ 50 MB       | \+ 50 MB       |
+| Dataverse Log Capacity      | \+ 0           | \+ 0           |
+| Dataverse File Capacity     | \+ 200 MB      | \+ 200 MB      |
 
 ## Dataverse for Teams
 
@@ -266,7 +266,7 @@ In public preview, creation of Dataverse for Teams environments is not available
 
 ### Can Dataverse for Teams be used outside of Teams?
 
-Dataverse for Teams is designed to work in the Teams client across web, desktop and mobile. If you’d want to use Dataverse for Teams outside of Teams, you must promote your environment to Common Data Service. 
+Dataverse for Teams is designed to work in the Teams client across web, desktop and mobile. If you’d want to use Dataverse for Teams outside of Teams, you must promote your environment to Dataverse. 
 
 ### Is there a limit to Dataverse for Teams capacity? How many Dataverse for Teams environments can be created in a tenant?  
 
@@ -313,33 +313,33 @@ Custom connectors are not supported in Dataverse for Teams but support for Azure
 ### Can customers purchase more capacity for an environment associated with a Team?
 
 No. Dataverse for Teams provides support for approximately 1 million rows per team. Although existing apps and chatbots will continue to work when a Dataverse for Teams environment reaches the per environment limit (2GB), users who want to create a new app, flow, or chatbot in the environment will need to :
-1.	Purchase Power Apps, Power Automate, and Power Virtual Agents subscriptions based on their needs and start building their new app, flow, or chatbot in a Common Data Service environment.
-2.	Promote the existing Dataverse for Teams environment to Common Data Service in the Power Platform admin center and, if needed, purchase Power Apps, Power Automate, or Power Virtual Agents subscriptions based on their needs.
+1.	Purchase Power Apps, Power Automate, and Power Virtual Agents subscriptions based on their needs and start building their new app, flow, or chatbot in a Dataverse environment.
+2.	Promote the existing Dataverse for Teams environment to Dataverse in the Power Platform admin center and, if needed, purchase Power Apps, Power Automate, or Power Virtual Agents subscriptions based on their needs.
 
 > [!NOTE]
-> The capability to promote Dataverse for Teams environments to Common Data Service won’t be available at public preview, but is expected to be available by general availability (GA).
+> The capability to promote Dataverse for Teams environments to Dataverse won’t be available at public preview, but is expected to be available by general availability (GA).
  
-### Can customers package and export their solution (app/flow/chatbots) built in Dataverse for Teams, and then import that into a Common Data Service environment (assuming they have the corresponding license including access rights to Microsoft Common Data Service)?
+### Can customers package and export their solution (app/flow/chatbots) built in Dataverse for Teams, and then import that into a Dataverse environment (assuming they have the corresponding license including access rights to Microsoft Dataverse)?
 
 This capability is not available in public preview but is included in our roadmap.
 
 ### Other than adding capacity, what are the other reasons to promote a Dataverse for Teams environment?
 
-Promoting an environment from Dataverse for Teams to Common Data Service will enable customers to take advantage of additional capacity, capabilities, such as: 
+Promoting an environment from Dataverse for Teams to Dataverse will enable customers to take advantage of additional capacity, capabilities, such as: 
 -	Enterprise ALM, data types
 -	Support for log and managed data lake
 -	Rich access control, auditing
 -	Governance and security
 
 > [!NOTE]
-> Accessing an environment with Common Data Service requires all users to have a corresponding standalone Power Platform license for each service being utilized.
+> Accessing an environment with Dataverse requires all users to have a corresponding standalone Power Platform license for each service being utilized.
 
-### Why do I see Common Data Service plan in select Microsoft 365 subscriptions? Is this related to Dataverse for Teams?
+### Why do I see Dataverse plan in select Microsoft 365 subscriptions? Is this related to Dataverse for Teams?
 
-No. A limited set of Common Data Service capabilities were recently added to Microsoft 365 licenses to support service capabilities available (for example, Microsoft Project). A standalone Power Apps, Power Automate, or Power Virtual Agents plan is still needed to run apps/flows/bots with Common Data Service. Review the [Project Service description](https://docs.microsoft.com/office365/servicedescriptions/project-online-service-description/project-online-service-description) for more details on the feature.
+No. A limited set of Dataverse capabilities were recently added to Microsoft 365 licenses to support service capabilities available (for example, Microsoft Project). A standalone Power Apps, Power Automate, or Power Virtual Agents plan is still needed to run apps/flows/bots with Dataverse. Review the [Project Service description](https://docs.microsoft.com/office365/servicedescriptions/project-online-service-description/project-online-service-description) for more details on the feature.
 
 > [!NOTE]
-> There is a service plan called *Common Data Service for Teams* that is related to the Dataverse for Teams capabilities.
+> There is a service plan called *Dataverse for Teams* that is related to the Dataverse for Teams capabilities.
 
 ### Is geo migration supported for Dataverse for Teams environments?
 Geo migration is not supported for Dataverse for Teams environments.
@@ -358,11 +358,11 @@ A list of add-ons applicable to all standalone Power Apps and Power Automate pla
 
 - New **Power Apps and Power Automate capacity add-on** increases daily API request limits for Power Apps, Power Automate, and Dynamics 365 workloads for users that exceed their usage entitlement (10,000 daily API requests for $50 per month).
 
-- Common Data Service Database Capacity (1GB) $40 per month
+- Dataverse Database Capacity (1GB) $40 per month
 
-- Common Data Service File Capacity (1GB) $2 per month
+- Dataverse File Capacity (1GB) $2 per month
 
-- Common Data Service Log Capacity (1GB) $10 per month
+- Dataverse Log Capacity (1GB) $10 per month
 
 ## Portals
 
