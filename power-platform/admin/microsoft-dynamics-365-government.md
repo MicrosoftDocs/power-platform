@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/28/2020
+ms.date: 11/02/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -16,12 +16,9 @@ search.app:
   - Flow
 ---
 
-<!--from editor: Please review the uses of "Customer Engagement" and ensure they are in compliance with our current product branding. See lines 48, 70, 115, 143, 154 (three uses), and 159.
-Also, I updated the app names in lines 28-36. Please review.
--->
-
-
 # Dynamics 365 US Government 
+
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 In response to the unique and evolving requirements of the United States public sector, Microsoft has created Microsoft Dynamics 365 US Government that is available to qualified government entities in the United States. On October 11, 2016, Microsoft announced the next generation of intelligent business applications in the cloud under the brand Microsoft Dynamics 365. To this end, Microsoft Dynamics 365 US Government entails a continuity of the protected environment that was originally branded Microsoft CRM Online Government where the protections afforded to the government community cloud under the new brand are now represented by four discrete functions: Sales, Customer Service, Field Service, and Project Service Automation. This section provides an overview of features that are specific to Microsoft Dynamics 365 US Government.  It is important to note that the following Microsoft Dynamics 365 apps do not provide the compliance commitments or acquisition regulations documented in this Service Description:
 
@@ -56,6 +53,7 @@ Dynamics 365 US Government plans are available to qualified government and priva
 - Dynamics 365 ProDirect Support GCC
 - Dynamics 365 Enhanced Support GCC
 - Dynamics 365 Remote Assist GCC
+- Dynamics 365 Guides GCC
 
 ### Dynamics 365 US Government – GCC AddOns
 

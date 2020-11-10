@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/23/2020
+ms.date: 11/09/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -76,7 +76,7 @@ The lifetime of the environment will be tied to the team it was created in. If y
 Some operations are blocked by default, such as the Copy and Reset operations. For scenarios where you need this capability, use Common Data Service environments. See the previous table for details.
 
 > [!IMPORTANT]
-> Project Oakdale environments won't be allowed to change types until the promote operation has been carried out on the environment. After the promotion is complete, the Project Oakdale environment will have the full capabilities found in Common Data Service. In addition to the standard termination of the environments, if the Microsoft Office license expires, there will also be an inactivity clause for these environments. Specifically, when an environment is unused for over three months, it will be disabled and ultimately deleted. 
+> Project Oakdale environments won't be allowed to change types until the promote operation has been carried out on the environment. After the promotion is complete, the Project Oakdale environment will have the full capabilities found in Common Data Service.  
 >
 > If the team is deleted, the Project Oakdale environment that was created will also be deleted. The Project Oakdale environment itself may be deleted from within the team by the team owner. A warning will be provided prior to allowing the deletion to go through, to ensure there are no accidental deletions. 
 
@@ -91,7 +91,7 @@ This section summarizes user access to Project Oakdale environments and resource
 For users to access Project Oakdale environment apps, bots, and data, they must:
 
 - [Be enabled in Azure Active Directory](create-users-assign-online-security-roles.md#create-a-user-account).
-- Have an active Microsoft 365 license with a plan that includes Project "Oakdale."
+- Have an active Microsoft 365 license with a plan that includes Project Oakdale.
 - Be a member of the environment's security group.
 
 ### Conceptual model
@@ -143,7 +143,7 @@ Access to a Project Oakdale environment and its resources (apps, data) will be r
 </table>
 
 > [!NOTE]
-> [Record sharing](wp-security-cds.md#record-sharing) isn't supported in Project "Oakdale."  You can't share a record with another user or team.
+> [Record sharing](wp-security-cds.md#record-sharing) isn't supported in Project Oakdale.  You can't share a record with another user or team.
 
 ## Project Oakdale environments settings and actions
 <!-- fwlink 2133713 2134780(settings) 213924(backup/restore) -->
@@ -279,13 +279,18 @@ After promotion, the following applies to the newly promoted environment:
 
 ## Ability to govern Project Oakdale in Teams
 
-With the public preview release of Project "Oakdale," the ability to create apps or bots with the new Power Apps and Power Virtual Agents apps is enabled by default in Teams. Admins can enable or disable it for specific users by using the Teams apps permission policies in Teams.
+With the public preview release of Project Oakdale, the ability to create apps or bots with the new Power Apps and Power Virtual Agents apps is enabled by default in Teams. Admins can enable or disable it for specific users by using the Teams apps permission policies in Teams.
 
 In your Teams admin center, you can use **Power Apps** and **Power Virtual Agents** applications available under **Microsoft Apps** to enable or disable these new capabilities for specific users. More information: [Manage app permission policies in Microsoft Teams](https://docs.microsoft.com/microsoftteams/teams-app-permission-policies)
 
 In addition to the new experience of creating apps or bots with Power Apps and Power Virtual Agents, users can now use sample apps to instantiate Teams apps (and associated Project Oakdale environments). These sample apps are part of the public preview. Available sample apps are listed [here](https://docs.microsoft.com/powerapps/teams/use-sample-apps-from-teams-store). You can enable or disable these apps for specific users by using the Teams apps permissions policies. For example, for app permissions policies under **Microsoft Apps** in the Teams admin center, you'll find **Employee Ideas**, **Inspection**, and **Issue Reporting** sample apps.
 
-Note that when the Power Apps app is disabled, users won't have access to any standalone apps that you pinned in their Teams channels with the Power Apps app. For users to continue using standalone apps in the Teams experience even after the Power Apps maker experience has been turned off for them, you can use the new **Built by your colleagues** catalog entry point to pin standalone apps to Teams channels or a user's personal scope. This action only needs to be performed once: it updates the experience for all members of the team, allowing them to use existing apps they already had access to. We recommend that if you choose to disable Power Apps for any user in your tenant, you advise them that they can use the **Built by your colleagues** catalog to restore the standalone apps they were using before in Teams channels.
+Note that when the Power Apps app is disabled, users won't have access to any standalone apps that you pinned in their Teams channels with the Power Apps app. For users to continue using standalone apps in the Teams experience even after the Power Apps maker experience has been turned off for them, you can use the new **Built by your colleagues** catalog entry point to pin standalone apps to Teams channels or a user's personal scope. This action only needs to be performed once: it updates the experience for all members of the team, allowing them to use existing apps they already had access to. We recommend that if you choose to disable Power Apps for any user in your tenant, you advise them that they can use the **Built by your colleagues** catalog to restore the standalone apps they were using before in Teams channels. For more information about this entry point and corresponding controls, see [Manage Microsoft Power Platform apps in the Microsoft Teams admin center](https://docs.microsoft.com/microsoftteams/manage-power-platform-apps).
+
+The **Built by your colleagues** catalog intentionally filters out 'Shared with Everyone’ apps. These apps can be added to the Teams app catalog leveraging the ‘Upload a custom app’ capability in Teams. See [Publish a custom app by uploading an app package](https://docs.microsoft.com/microsoftteams/upload-custom-apps).
+
+> [!NOTE]
+> Power Platform data governance policies like data loss prevention and tenant isolation apply to Teams and Project Oakdale environments, similar to other environment types.
 
 ## Known issues
 

@@ -17,6 +17,8 @@ search.app:
 ---
 # Work with mail merge templates
 
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 You can use mail merge templates with Office Word to create customer-ready letters, faxes, e-mail messages, and quotes.  
   
  [!INCLUDE[pn_MS_Word_Full](../includes/pn-ms-word-short.md)] templates are created and edited in [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)], but can be uploaded to customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), to use with mail merge and share with other users. Only [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] .xml documents can be used as templates. To learn more about how to create mail merge templates, see the online Help in [!INCLUDE[pn_MS_Word_Full](../includes/pn-ms-word-short.md)].  

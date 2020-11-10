@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 10/19/2020
+ms.date: 10/28/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -32,7 +32,7 @@ Most of these users are hidden from user views but they can be found by using th
 | | Dynamics 365 Athena2-CDStoAzuredatalake | Dynamics365Athena2-CDStoAzuredatalake@onmicrosoft.com |Service application to perform data integration between Common Data Service to Azure Data Lake |DataLakeWorkspaceAppAccess |
 | | Dynamics 365 EnterpriseSales-CDStoAzuredatalake | Dynamics365EnterpriseSales-CDStoAzuredatalake@onmicrosoft.com |Service application to perform data integration between Common Data Service (Sales) to Azure Data Lake |N/A |
 | | # SIAutoCapture | SIAutoCapture@onmicrosoft.com | To be used for Auto Capture solution business requirements to perform data query and execute plugins from backend services. | SalesInsights AutoCapture Admin |
-| | # SalesInsights | SalesInsights@onmicrosoft.com | To allow Sales Insights to communicate with Common Data Service and Azure Data Lake for analysis and data updates. | Relationship Insights Admin and EAC App Access |
+| | # Dynamics 365 Sales | Dynamics365Sales@onmicrosoft.com | To allow Dynamics 365 Sales to communicate with Common Data Service and Azure Data Lake for analysis and data updates. | Sales system data sync and EAC App Access |
 | | Microsoft Project | Project@microsoft.com |Allow Project for the Web and Roadmap Service to communicate with Common Data Service |Project System and Portfolio User |
 | | Power Apps Checker Application | Pacheckerapp@microsoft.com |To perform static analysis of Power Apps solutions to assist in identifying performance and stability risks |Export customizations and Solution checker |
 | | Powerqueryonline-CDStoAzuredatalake | Powerqueryonline-CDStoAzuredatalake@onmicrosoft.com |Service application to perform data query between Common Data Service and Azure Data Lake |N/A |
@@ -40,7 +40,8 @@ Most of these users are hidden from user views but they can be found by using th
 | | DataLakeStorage | DataLakeStorage@onmicrosoft.com | To allow solutions to manage workspaces, workspace permissions and the discovery of workspaces. | DataLakeWorkspaceAppAccess |
 | | JobServicePreProd| JobServicePreProd@onmicrosoft.com| Enable satellite services to schedule and dispatch messages to independently built workloads with guaranteed delivery of messages based on service-defined policies. | System admin |
 | | JobServiceProd| JobServiceProd@onmicrosoft.com| Enable satellite services to schedule and dispatch messages to independently built workloads with guaranteed delivery of messages based on service-defined policies. | System admin |
-| | # CCADataAnalyticsML | CCADAAdmins@microsoft.com | To allow AI insights in customer care apps like Customer Service, Field Service, etc. | System Customizer and System admin |
+| | # CCADataAnalyticsML | CCADAAdmins@onmicrosoft.com | To allow AI insights in customer care apps like Customer Service, Field Service, etc. | System Customizer and System admin |
+| | # CDSReportService | CDSReportService@onmicrosoft.com | To allow user to run reports. |N/A |
 
 **The purpose of the system account?** 
 - The System user is a built-in user account that is used to allow customers to perform system updates via plug-ins. 

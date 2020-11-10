@@ -19,6 +19,9 @@ search.app:
 ---
 
 # Responding to DSR requests for system-generated logs in Power Apps, Power Automate, and Common Data Service
+
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 Microsoft gives you the ability to access, export, and delete system-generated logs that may be deemed personal under the European Union (EU) General Data Protection Regulation (GDPR) broad definition of *personal data*. Examples of system-generated logs that may be deemed personal under GDPR include:
 * Product and service usage data, such as user activity logs
 * User search requests and query data

@@ -53,16 +53,27 @@
   - name: ALM for developers   
     href: alm-for-developers.md
     items:
-    - name: Use Microsoft Power Platform Build Tools
-      href: devops-build-tools.md
-    - name: Microsoft Power Platform Build Tools tasks
-      href: devops-build-tool-tasks.md
-    - name: GitHub Actions for Microsoft Power Platform
-      href: devops-github-actions.md
-    - name: Available GitHub Actions
-      href: devops-github-available-actions.md
+    - name: Build Tools
+      items:
+      - name: Use Microsoft Power Platform Build Tools
+        href: devops-build-tools.md
+      - name: Microsoft Power Platform Build Tools tasks
+        href: devops-build-tool-tasks.md
+    - name: GitHub Actions
+      items:
+      - name: Use GitHub Actions for Microsoft Power Platform
+        href: devops-github-actions.md
+      - name: Available GitHub Actions for Microsoft Power Platform
+        href: devops-github-available-actions.md
+      - name: Tutorials
+        items:
+        - name: Get started with GitHub Actions
+          href: tutorials/github-actions-start.md
+        - name: Build an app for GitHub Actions
+          href: tutorials/github-actions-build.md
+        - name: Automate deployment using GitHub Actions
+          href: tutorials/github-actions-deploy.md
     - name: Work with solution components
-      href: 
       items:
         - name: Microsoft Power Apps component framework
           href: component-framework.md
@@ -116,4 +127,3 @@
           href: create-patches-simplify-solution-updates.md
     - name: Edit the customizations file
       href: when-edit-customization-file.md
-  

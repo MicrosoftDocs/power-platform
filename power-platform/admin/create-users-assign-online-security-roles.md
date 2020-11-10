@@ -1,13 +1,13 @@
 ---
 title: "Create users and assign security roles | MicrosoftDocs"
-description: Create users and assign security roles
+description: About creating users and assign security roles
 author: jayasreekumar
-ms.author: jkumar
 ms.reviewer: jimholtz
+ms.author: jkumar
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/04/2020
+ms.date: 11/06/2020
 search.audienceType: 
   - admin
 search.app:
@@ -18,6 +18,8 @@ search.app:
 ---
 # Create users and assign security roles
 
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 You use the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] to create user accounts for every user who needs access to apps created using Power Apps and customer engagement apps in Dynamics 365 (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation). The user account registers the user with [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)]. In addition to registration with the online service, the user account must be assigned a license in order for the user to have access to the service. Note that when you assign a user the global administrator or the service administrator role in the [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)], it automatically assigns the user the System Administrator security role. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Differences between the Microsoft Online services environment administrative roles and security roles](grant-users-access.md#BKMK_O365CRMroles)  
 
 ## Create a user account  
@@ -25,8 +27,9 @@ You use the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admi
   
 > [!NOTE]
 > When you create a user and assign a license in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], the user is also created in customer engagement apps. It can take a few minutes to complete the synchronization process between the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] and customer engagement apps.
-> 
-> By entering a user ID and password, a user can access the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] to view information about the service. However, the user won't have access to customer engagement apps until the user has a security role assigned either directly or indirectly as a member of a [group team](manage-teams.md#about-group-teams).  
+>
+> By entering a user ID and password, a user can access the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] to view information about the service. However, the user won't have access to customer engagement apps until the user has a security role assigned either directly or indirectly as a member of a [group team](manage-group-teams.md). 
+
 > 
 > [!TIP] 
 >  To force an immediate synchronization between the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] and customer engagement apps, do the following:  
@@ -78,7 +81,7 @@ For step-by-step instructions to use user licenses, see [Assign licenses to user
 For step-by-step instructions to use Power Apps per app plans, see [Power Apps per app plans](about-powerapps-perapp.md).
   
 > [!IMPORTANT]
-> Licensed users must be assigned at least one security role to access customer engagement apps. Security roles can be assigned either directly or indirectly as a member of a [group team](manage-teams.md#about-group-teams).
+> Licensed users must be assigned at least one security role to access customer engagement apps. Security roles can be assigned either directly or indirectly as a member of a [group team](manage-group-teams.md).
   
  **About user licenses**  
   
@@ -93,7 +96,8 @@ For step-by-step instructions to use Power Apps per app plans, see [Power Apps p
 - Each user license requires a unique Microsoft account, and every user who signs in needs a license. Most subscriptions include a specific number of user licenses.  
 
 > [!NOTE]
-> Certain default security roles are assigned to users based on the license and/or solution installed. These security roles only give users Read access to apps that are installed in the environment. For example, when a user is assigned the Dynamics 365 Plan license and is synced to an environment that has the Customer Service Hub app, the user is automatically assigned the Customer Service app access security role. No data access permission is granted to this role. The administrator is still required to assign the appropriate security role to the user (either directly or indirectly as a member of a [group team](manage-teams.md#about-group-teams)) in order for the user to view and interact with the data. 
+> Certain default security roles are assigned to users based on the license and/or solution installed. These security roles only give users Read access to apps that are installed in the environment. For example, when a user is assigned the Dynamics 365 Plan license and is synced to an environment that has the Customer Service Hub app, the user is automatically assigned the Customer Service app access security role. No data access permission is granted to this role. The administrator is still required to assign the appropriate security role to the user (either directly or indirectly as a member of a [group team](manage-group-teams.md#about-group-teams) in order for the user to view and interact with the data. 
+
 
 ## Assign a security role to a user  
  Security roles control a user's access to data through a set of access levels and permissions. The combination of access levels and permissions that are included in a specific security role sets limits on the user's view of data and on the user's interactions with that data.  
@@ -109,7 +113,7 @@ You need to have the appropriate privileges in order to assign security roles to
  For more information about the difference between [!INCLUDE[pn_MS_Online_Services](../includes/pn-ms-online-services.md)] administrator roles and security roles, see [Grant users access](grant-users-access.md).  
   
 > [!IMPORTANT] 
-> You must assign at least one security role to every user either directly or indirectly as a member of a [group team](manage-teams.md#about-group-teams). The service doesn't allow access to users who don't have at least one security role.
+> You must assign at least one security role to every user either directly or indirectly as a member of a [group team](manage-group-teams.md). The service doesn't allow access to users who don't have at least one security role.
 
 To assign security roles to users in an environment that has zero or one Common Data Service database, see [Configure user security to resources in an environment](database-security.md). 
 
