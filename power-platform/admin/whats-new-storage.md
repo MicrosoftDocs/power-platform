@@ -74,7 +74,7 @@ If your database storage is over capacity, admins will be unable to do a copy or
 You can request a temporary (30-day) extension that allows copy and restore operations for the duration of the extension. To do so, follow these steps.
 
 > [!NOTE]
-> The option to request a temporary exception is only available to tenant admins (Microsoft 365 Global admins). Other admins will not see the option.
+> The option to request a temporary exception is only available to tenant admins (Microsoft 365 Global admins). Other admins will not see the **Request an extension** option.
 
 #### Extension request for Copy
 
