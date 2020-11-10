@@ -2,8 +2,8 @@
 title: "Use chatbot variables to carry content across topics"
 description: "Bot variables can be used to store and retrieve information across multiple topics within the same bot and user session"
 keywords: "PVA"
-ms.date: 9/18/2020
-ms.service: dynamics-365-ai
+ms.date: 9/22/2020
+ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -13,6 +13,12 @@ ms.collection: virtual-agent
 ---
 
 # Reuse variables across topics
+
+Select the version of Power Virtual Agents you're using here:
+
+> [!div class="op_single_selector"]
+> - [Power Virtual Agents web app](authoring-variables-bot.md)
+> - [Power Virtual Agents app in Microsoft Teams](teams/authoring-variables-bot-teams.md)
 
 [Variables](authoring-variables.md) let you save responses from your customers. For example, you can save a customer's name in a variable called `UserName`. The bot can then address the customer by name as the conversation continues.
 
@@ -38,7 +44,7 @@ When you select the `{x}` button in a message node or question node when you're 
 
 When you use a condition node, a flow action node, or a skill node, you'll also see bot variables available there. 
  
-**Reuse a variable across topics by setting it as bot variable**
+**Reuse a variable across topics by setting it as a bot variable:**
 
 1. Select any variable in the authoring canvas.
 
@@ -54,7 +60,7 @@ When you use a condition node, a flow action node, or a skill node, you'll also 
 
 ## Manage bot variables
 
-After you've created a bot variable, you can see where it's first defined and what other topics are using it. This can be useful if you're working on a new bot, or if you have multiple variables and [complex topic branching](authoring-create-edit-topics.md#branch-based-on-a-condition).
+After you've created a bot variable, you can see where it's first defined and what other topics are using it. This can be useful if you're working on a new bot, or if you have multiple variables and [complex topic branching](authoring-create-edit-topics.md#add-a-condition).
 
 **Go to the source of a bot variable's definition**
 
@@ -151,7 +157,7 @@ In the examples described here, a simple declaration is made for the variables. 
         });
     ```
 
-2. Within your `<scrip>` section, call the `store` when you embed your bot, as in the following example where `store` is called just above where `styleOptions` is called (you'll need to replace the `BOT_ID` with your ID):
+2. Within your `<script>` section, call the `store` when you embed your bot, as in the following example where `store` is called just above where `styleOptions` is called (you'll need to replace the `BOT_ID` with your ID):
 
     ```html
     const BOT_ID = "12345-5678";
@@ -189,6 +195,10 @@ Nodes that contain references to the deleted bot variable will tell you they con
 
 
 Topics with nodes that contain references to deleted bot variables might stop working. Ensure that you remove or correct all the topics that were using the deleted variable before publishing.
+
+## Authentication-related bot variables
+
+Depending on the bot's authentication setup, you will have a set of bot variables associated with the authentication provider available to you. For details about which set of variables are available and how to use them, see the [Add end-user authentication to a Power Virtual Agents bot](advanced-end-user-authentication.md) documentation topic.
 
 ## Related links
 

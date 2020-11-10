@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/09/2020
+ms.date: 09/28/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -16,9 +16,11 @@ search.app:
   - Flow
 ---
 
-# Microsoft Power Apps US Government
+# Microsoft Power Apps US Government 
 
-In response to the unique and evolving requirements of the United States public sector, Microsoft has created Power Apps US Government, which consists of several plans for US government organizations. This section provides an overview of features that are specific to Power Apps US Government. It is recommended that you read this supplementary section alongside the Power Apps [documentation](https://docs.microsoft.com/powerapps/powerapps-overview), which covers information about the general Power Apps service description. For brevity, this service is commonly referred to as Power Apps Government Community Cloud (GCC).
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
+In response to the unique and evolving requirements of the United States public sector, Microsoft has created Power Apps US Government, which consists of several plans for US government organizations. This section provides an overview of features that are specific to Power Apps US Government. It is recommended that you read this supplementary section alongside the Power Apps [documentation](https://docs.microsoft.com/powerapps/powerapps-overview), which covers information about the general Power Apps service description. For brevity, this service is commonly referred to as Power Apps Government Community Cloud (GCC) or Power Apps Government Community Cloud – High (GCC High).
 
 The Power Apps US Government service description is designed to serve as an overlay to the general Power Apps service description. It defines the unique commitments of this service and the differences from Power Apps offerings that have been available to our customers since October 2016.
 
@@ -47,10 +49,11 @@ Entities with questions about eligibility for Power Apps US Government should co
 
 Access to Power Apps US Government plans is restricted to the following offerings; each plan is offered as a monthly subscription and can be licensed to an unlimited number of users:
 
-- Power Apps/Power Automate Plan US Government
-- In addition to the standalone plans, Power Apps and Power Automate capabilities are also included in certain Microsoft 365 US Government and Dynamics 365 US Government plans, allowing customers to extend and customize Microsoft 365 and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation). Please note that this licensing will automatically show up and be available in customer tenants around mid-April.
+- Power Apps per app plan for Government
+- Power Apps per user plan for Government
+- In addition to the standalone plans, Power Apps and Power Automate capabilities are also included in certain Microsoft 365 US Government and Dynamics 365 US Government plans, allowing customers to extend and customize Microsoft 365 and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, and Dynamics 365 Project Service Automation). 
 
-Additional information about the differences in functionality between these groups of licenses is described in more detail on the [Power Apps licensing information](https://powerapps.microsoft.com/pricing/) page. Power Apps US Government is available through the Volume Licensing and Cloud Solution Provider purchasing channels.
+Additional information about the differences in functionality between these groups of licenses is described in more detail on the [Power Apps licensing information](https://powerapps.microsoft.com/pricing/) page. Power Apps US Government is available through the Volume Licensing and Cloud Solution Provider purchasing channels. The Cloud Solution Provider program is not currently available for GCC High customers.
 
 ## What is customer data and customer content?
 
@@ -61,8 +64,6 @@ For more information on Power Apps protection of customer data, see the [Microso
 ## Data segregation for Government Community Cloud
 
 When provisioned as part of Power Apps US Government, the Power Apps service is offered in accordance with the National Institute of Standards and Technology (NIST) Special Publication 800-145.
-
-Microsoft refers to this offer as the Government Community Cloud (GCC).
 
 In addition to the logical separation of customer content at the application layer, the Power Apps US Government service provides your organization with a secondary layer of physical segregation for customer content by using infrastructure that is separate from the infrastructure used for commercial Power Apps customers. This includes using Azure services in the Azure Government cloud. To learn more, see [Azure Government](https://azure.microsoft.com/global-infrastructure/government/).
 
@@ -95,7 +96,8 @@ Power Apps support and service engineering staff do not have standing access to 
 
 Power Apps US Government is designed to support the Federal Risk and Authorization Management Program (FedRAMP) accreditation at a High Impact level. This infers alignment to [DoD DISA IL2](https://iase.disa.mil/cloud_security/cloudsrg/Pages/ImpactLevels.aspx). FedRAMP artifacts are available for review by federal customers who are required to comply with FedRAMP. Federal agencies can review these artifacts in support of their review to grant an Authority to Operate (ATO). 
 
-Note that, at the present time, the Power Apps US Government services are under review with FedRAMP but have been granted a Security Assessment Report (SAR) by a qualified Third Party Assessment Organization ([3PAO](https://www.fedramp.gov/3pao-requirements-update/)). As Microsoft moves to refresh FedRAMP artifacts as part of the standard audit cycles, content will be updated accordingly.
+> [!NOTE]
+> Power Apps has been authorized as a service within the Azure Government FedRAMP ATO.  More information, including how to access the FedRAMP documents, can be found in the FedRAMP Marketplace: https://marketplace.fedramp.gov/#!/product/azure-government-includes-dynamics-365?sort=productName&productNameSearch=azure%20government
 
 Power Apps US Government has features designed to support customer's CJIS Policy requirements for law enforcement agencies. Please visit the Power Apps US Government products page in Trust Center for more detailed information related to certifications and accreditations.
 
@@ -198,12 +200,15 @@ Please refer to the Azure IP Ranges and [Service Tags – US Government Cloud do
 
 To sign in with the Power Apps mobile client requires a few extra configuration steps. 
 
-1. On the sign-in page, select the gear icon in the lower-left corner.
-2. Select **Enable GCC mode**.
-3. Select **Enable**.
-4. On the sign-in page, select **Sign in**.
+1. On the sign-in page, select the gear icon in the lower-right corner.
+2. Select **Region** settings.
+3. Select one of the following:
+   - **GCC: US Government GCC**
+   - **GCC Hight: US Government GCC High**
+4. Select **OK**.
+5. On the sign-in page, select **Sign in**.
 
-The mobile application will now use the US Government Cloud domain to look up users. 
+The mobile application will now use the US Government Cloud domain. 
 
 ## On-premises data gateway configuration
 
@@ -219,19 +224,9 @@ Some of the features available in the commercial version of Power Apps are not a
 
 - Ability to add apps to Teams using the [Add to Teams button](https://docs.microsoft.com/powerapps/maker/canvas-apps/embed-teams-app).
 
-- [Integrate data into Common Data Service](data-integrator.md).
+- [Connectors](https://gov.flow.microsoft.us/connectors/): The most popular connectors in use in our commercial service (based on usage telemetry) have been published; if there is a connector available in the commercial offering that you do not see deployed, please contact support, and we will review your request. Note that third-party connectors will not be added to GCC High.  Features are being investigated with the Digital Loss Prevention (DLP) administration functionality that will enable Connectors to be added “blocked by default.”  Until this is possible, third-party connectors pose a measurable threat to organizations relying on the GCC High environment to maintain requisite data exfiltration controls.
 
-- [Power Query](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-cds-newentity-pq).
-
-- [Common Data Service analytics](analytics-common-data-service.md).
-
-- [Connectors](https://gov.flow.microsoft.us/connectors/): The most popular connectors in use in our commercial service (based on usage telemetry) have been published; if there is a connector available in the commercial offering that you do not see deployed, please contact support, and we will review your request.
-
-- [Customize a SharePoint list form by using Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/customize-list-form).
-
-- [Dataflows in Power Apps](https://docs.microsoft.com/powerapps/maker/common-data-service/create-and-use-dataflows)
-
-- [AI Builder](https://docs.microsoft.com/ai-builder/) is not yet available for GCC and GCC High tenants.
+- [AI Builder](https://docs.microsoft.com/ai-builder/).
 
 ## Requesting support
 
@@ -240,5 +235,6 @@ Having a problem with your service? You can create a support request to get the 
 More information: [Contact Technical Support](get-help-support.md)
 
 ### See also
-[Microsoft Power Automate US Government](https://docs.microsoft.com/flow/us-govt)
-
+[Microsoft Power Automate US Government](https://docs.microsoft.com/flow/us-govt) <br />
+[UI Flows](https://docs.microsoft.com/power-automate/ui-flows/overview) <br />
+[Dynamics 365 US Government](https://docs.microsoft.com/power-platform/admin/microsoft-dynamics-365-government)

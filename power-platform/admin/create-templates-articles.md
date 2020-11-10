@@ -18,6 +18,8 @@ search.app:
 ---
 # Create templates for articles
 
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 <!-- legacy procedure -->
 
 Article templates help you create new articles for your organization's knowledge base library. You can also create templates with boilerplate text to help article writers use consistent language and messaging.  

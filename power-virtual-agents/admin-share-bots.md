@@ -2,9 +2,8 @@
 title: "Share and collaborate on chatbots with other users"
 description: "Share Power Virtual Agents chatbots with other users, assign security roles, and work together."
 keywords: "Administration, share, multi-author, PVA"
-ms.date: 8/25/2020
-ms.service:
-  - dynamics-365-ai
+ms.date: 9/22/2020
+ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -14,6 +13,12 @@ ms.collection: virtual-agent
 ---
 
 # Share your bot with other users
+
+Select the version of Power Virtual Agents you're using here:
+
+> [!div class="op_single_selector"]
+> - [Power Virtual Agents web app](admin-share-bots.md)
+> - [Power Virtual Agents app in Microsoft Teams](/teams/admin-share-bots-teams.md)
 
 Share your bot with other users so multiple users can edit, manage, and collaborate on a bot. 
 
@@ -99,7 +104,7 @@ You can stop sharing a bot with a user, and any shared user can stop the bot fro
 
 2. Select **X** next to the users that you want to stop sharing the bot with.
  
-    ![Remove bot access ‘X’](media/sharing-remove-user.png) 
+    ![Remove bot access 'X'](media/sharing-remove-user.png) 
 
 3. Select **Share** to stop sharing the bot with the user.
 

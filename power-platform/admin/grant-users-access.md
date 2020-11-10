@@ -18,16 +18,21 @@ search.app:
 ---
 # Grant users access
 
+To have users up and running in Power Apps and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), you complete some administrative tasks in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)]—which you generally do only once—followed by administrative tasks.  
+
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 To have users up and running in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), you complete some administrative tasks in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)]—which you generally do only once—followed by administrative tasks.  
+
   
- Customer engagement apps are an online service subscription. When you signed up for this service, you received a set of licenses with your subscription, one license for each user. You can purchase additional licenses if you need them.  
+Power Apps is an online service subscription. When you signed up for this service, you received a set of licenses with your subscription, one license for each user. You can purchase additional licenses if you need them.  
   
  As described in step one that follows, in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], register your users so that they are recognized in the [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)], assign a license to each user, and then assign administrative roles to the users you choose to fill those roles. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Assigning admin roles](https://support.office.com/article/Assign-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504)  
   
- In customer engagement apps, populate the service with your organization’s data, including users and their security roles, business units, and any existing data that you want to import from other applications or services. If your organization uses business units, assign users to the appropriate business unit, and then assign a security role to each user. Customer engagement apps includes predefined security roles that aggregate a set of user permissions to simplify user security management. An organization can define additional roles or edit predefined security roles to meet its unique security needs. For more information about security roles, see [Security roles and privileges](../admin/security-roles-privileges.md).  
+In Power Apps, populate the service with your organization’s data, including users and their security roles, business units, and any existing data that you want to import from other applications or services. If your organization uses business units, assign users to the appropriate business unit, and then assign a security role to each user. Customer engagement apps includes predefined security roles that aggregate a set of user permissions to simplify user security management. An organization can define additional roles or edit predefined security roles to meet its unique security needs. For more information about security roles, see [Security roles and privileges](../admin/security-roles-privileges.md).  
   
 > [!IMPORTANT]
->  When you assigned any of the licenses or the Microsoft Power Automate license to a user,  the user is automatically added to all your environments, however users can’t access any customer engagement apps until they’ve been assigned at least one security role. See [Step Two: Assign security roles](../admin/grant-users-access.md#BKMK_StepTwo).  
+>  When you assigned any of the licenses or the Microsoft Power Automate license to a user,  the user is automatically added to all your environments, however users can’t access any apps until they’ve been assigned at least one security role. See [Step Two: Assign security roles](../admin/grant-users-access.md#BKMK_StepTwo).  
   
 <a name="BKMK_O365CRMroles"></a>   
 
@@ -41,7 +46,7 @@ To have users up and running in customer engagement apps (Dynamics 365 Sales, Dy
  Using roles is a powerful way to group a set of rights that are common to a job title or business unit. This way, the administrator can grant a whole set of permissions to users simply by assigning a user or group of users to a given role.  
   
 ## Step One: Provision users, and assign licenses and administrative roles in the Microsoft 365 admin center  
- Your organization’s subscription to customer engagement apps provides access to the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] through a global administrator account. The global administrator manages every aspect of the subscription and may add subscriptions to other [!INCLUDE[pn_MS_Online_Services](../includes/pn-ms-online-services.md)].  
+ Your organization’s subscription to Power Apps provides access to the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] through a global administrator account. The global administrator manages every aspect of the subscription and may add subscriptions to other [!INCLUDE[pn_MS_Online_Services](../includes/pn-ms-online-services.md)].  
   
  As the global administrator for your organization, one of your first tasks is to create users in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)]. This registers users in the system and enables users to be licensed to use services available within the online service environment. You decide which service you want your users to have by assigning a license for that service to a user. For instructions about creating users in the [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)], see [Add users and assign licenses at the same time](https://go.microsoft.com/fwlink/p/?LinkId=251998). For instructions about assigning a license to a user, see [Assign or remove licenses](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide).  
   

@@ -1,5 +1,5 @@
 ---
-title: "Available GitHub Actions for the Microsoft Power Platform | Microsoft Docs"
+title: "Available GitHub Actions for Microsoft Power Platform | Microsoft Docs"
 description: "Learn about the available GitHub Actions supporting continuous integration and delivery with Microsoft Power Platform."
 keywords: 
 author: mikkelsen2000
@@ -17,10 +17,10 @@ search.app:
   - D365CE
 ---
 
-# Available GitHub Actions for the Microsoft Power Platform (Preview)
+# Available GitHub Actions for Microsoft Power Platform (Preview)
 [This topic is pre-release documentation and is subject to change.]
 
-Available GitHub Actions for the Microsoft Power Platform are described in the following sections. In addition, example GitHub workflows using some of these actions will be showcased. For information about the GitHub Actions for Microsoft Power Platform and how to download them see [GitHub Actions for the Microsoft Power Platform](devops-github-actions.md).
+Available GitHub Actions for Microsoft Power Platform are described in the following sections. In addition, example GitHub workflows using some of these actions will be showcased. For information about the GitHub Actions for Microsoft Power Platform and how to download them see [GitHub Actions for Microsoft Power Platform](devops-github-actions.md).
 
 ## Configure deployment credentials
 Many of the actions require you to connect to a Common Data Service environment. You can add credentials as secrets in your the GitHub repository and then use them in the workflow.
@@ -93,10 +93,10 @@ Packs a solution represented in source control into a solution.zip file that can
 
 ## Build and release pipeline authoring
 
-To learn about creating multiple-action workflows and pipelines through hands-on authoring using GitHub Actions for the Microsoft Power Platform, complete the [GitHub Actions for Microsoft Power Platform labs](https://aka.ms/poweractionslab).
+To learn about creating multiple-action workflows and pipelines through hands-on authoring using GitHub Actions for Microsoft Power Platform, complete the [GitHub Actions for Microsoft Power Platform labs](https://aka.ms/poweractionslab).
 
 For more information about GitHub Actions, see [About GitHub Actions](https://help.github.com/actions/getting-started-with-github-actions/about-github-actions).
 
 ### See Also
 
-[GitHub Actions for the Microsoft Power Platform](devops-github-actions.md)
+[GitHub Actions for Microsoft Power Platform](devops-github-actions.md)

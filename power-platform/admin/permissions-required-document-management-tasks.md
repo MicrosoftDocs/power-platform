@@ -18,6 +18,8 @@ search.app:
 ---
 # Permissions required for document management tasks
 
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 The following table shows the default security roles or other permissions that are needed to perform each document management with [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.md)] task.  
   
 > [!IMPORTANT]

@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/13/2020
+ms.date: 10/12/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -144,7 +144,7 @@ In addition to monitoring, many customers want to subscribe to software creation
 ### FAQ
 
 **Problem**
-Currently, all users with Office E3 licenses can create apps in the Default environment. How can we enable Environment Maker rights to a select group, for example. 10 persons to create apps? 
+Currently, all users with Microsoft E3 licenses can create apps in the Default environment. How can we enable Environment Maker rights to a select group, for example. 10 persons to create apps? 
 
 **Recommendation**
 The [PowerShell cmdlets](https://powerapps.microsoft.com/blog/gdpr-admin-powershell-cmdlets/) and [Management connectors](https://powerapps.microsoft.com/blog/new-connectors-for-powerapps-and-flow-resources/) provide full flexibility and control to administrators to build the policies they want for their organization.
@@ -175,6 +175,20 @@ It's well understood that monitoring as a critical aspect of managing software a
    - Application-level auditing 
    - Service Health
    - Connectors used
+
+### View what users are licensed
+
+You can always look at individual user licensing in the Microsoft 365 admin center by drilling into specific users. 
+
+You can also use the following PowerShell command to export assigned user licenses.
+
+```powershell
+Get-AdminPowerAppLicenses -OutputFilePath '<licenses.csv>'
+```
+
+Exports all the assigned user licenses (Power Apps and Power Automate) in your tenant into a tabular view .csv file. The exported file contains both self-service sign up internal trial plans as well as plans that are sourced from Azure Active Directory. The internal trial plans are not visible to admins in the Microsoft 365 admin center.
+
+The export can take a while for tenants with a large number of Power Platform users.
 
 ### View app resources used in an Environment
 

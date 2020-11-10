@@ -2,9 +2,8 @@
 title: "Sign up for a trial"
 description: "You can sign up for Power Virtual Agents individually as a trial if you're not an admin of an organization."
 keywords: "Administration, licensing, PVA"
-ms.date: 8/3/2020
-ms.service:
-  - dynamics-365-ai
+ms.date: 9/22/2020
+ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt

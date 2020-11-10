@@ -19,6 +19,8 @@ search.app:
 
 <!-- legacy procedure -->
 
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 This topic explains how to fix common issues that may occur with SharePoint document management.
 
 ## Missing Documents button - validate and fix 

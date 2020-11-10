@@ -1,11 +1,11 @@
 ---
 title: Create and manage environments in the Power Platform admin center | Microsoft Docs
-description: Create and manage environments in the Power Platform admin center
+description: About creating and manage environments in the Power Platform admin center
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 08/20/2020
+ms.date: 11/09/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin 
@@ -22,7 +22,7 @@ An environment is a space to store, manage, and share your organization's busine
 > For the blog announcing the latest changes to environment creation, see [Provisioning and administration updates are now live in the Power Platform admin center](https://powerapps.microsoft.com/blog/provisioning-and-administration-updates-are-now-live-in-the-power-platform-admin-center/). 
 
 ## Provisioning a new environment
-You can provisioning a new environment based on [available capacity](capacity-storage.md). See the section [Create an environment in the Power Platform admin center](#create-an-environment-in-the-power-platform-admin-center).
+You can provision a new environment based on [available capacity](capacity-storage.md). See the section [Create an environment in the Power Platform admin center](#create-an-environment-in-the-power-platform-admin-center).
 
 ### What's new in provisioning environments
 We're consolidating how you view, create, and manage environments. 
@@ -64,7 +64,7 @@ You have multiple options when creating an environment:
 
 ### Some important considerations when creating a new environment
 
-- **Why create an environment with a database**: When you create a production environment with a Common Data Service database, you have the option to add Dynamics 365 apps such as Dynamics 365 Sales and Field Service during the creation process (by choosing **Enable Dynamics 365 apps**). Currently, if you don't select **Enable Dynamics 365 apps** at the time of database provisioning, you will not be able to make this change later. 
+- **Why create an environment with a database**: When you create a production or sandbox environment with a Common Data Service database, you have the option to add Dynamics 365 apps such as Dynamics 365 Sales and Field Service during the creation process (by choosing **Enable Dynamics 365 apps**). Currently, if you don't select **Enable Dynamics 365 apps** at the time of database provisioning, you will not be able to make this change later. 
 - **Why create an environment without a database**: If you don't need Dynamics 365 apps or don't need to use Common Data Service, and you are creating Power Apps or Power Automate using other data sources, create the environment without the Common Data Service database.
 - **The Enable Dynamics 365 apps decision is not reversible**: Once you create an environment, if you don't select **Enable Dynamics 365 apps** at the time of database provisioning, you will not be able to make this change later.
 - **Dynamics 365 apps and trial environments**: Currently, Dynamics 365 apps cannot be enabled for trial environments. To create a trial with Dynamics 365 apps, see [Start your digital transformation here](https://trials.dynamics.com).
@@ -101,6 +101,7 @@ To create an environment with a database, you need 1GB available database capaci
    |Setting  |Description  |
    |---------|---------|
    |Language     | The default language for this environment. More information: [Common Data Service language collations](language-collations.md)     |
+   | URL         | Enter your organization name. Organization URLs must be unique. If your organization name has already been reserved in the destination datacenter, it won't be available. |
    |Currency     | The base currency used for reporting.         |
    |Enable Dynamics 365 apps | Select **Yes** and make a selection to automatically deploy apps such as Dynamics 365 Sales and Dynamics 365 Customer Service. |
    |Deploy sample apps and data     | Select **Yes** to include sample apps and data. Sample data gives you something to experiment with as you learn. You must select **No** for **Enable Dynamics 365 apps** for this setting to appear.        |

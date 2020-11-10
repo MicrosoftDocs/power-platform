@@ -18,6 +18,8 @@ search.app:
 ---
 # Assign a business unit a different parent business
 
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 You can assign a different parent business to a business unit to accommodate changes in your business requirements. When you reassign a business unit, any child business units are also reassigned with it.  
   
 1. In the Power Platform admin center, select an environment. 

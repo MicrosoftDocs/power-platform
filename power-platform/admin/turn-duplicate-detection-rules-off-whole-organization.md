@@ -17,6 +17,8 @@ search.app:
 ---
 # Turn duplicate detection rules on or off for the whole organization
 
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 To maintain the integrity of your data, it’s a good idea to set up duplicate detection rules to reduce duplicate records in the system. Remember that after you create duplicate detection rules, you need to turn them on.  
   
 These settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Data management** > **Duplicate detection**.

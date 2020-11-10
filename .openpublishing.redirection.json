@@ -1,6 +1,26 @@
 {
   "redirections": [
     {
+      "source_path": "power-platform/important-changes-coming.md#service-scheduling-in-dynamics-365-customer-service-is-deprecated",
+      "redirect_url": "https://docs.microsoft.com/dynamics365/customer-service/deprecations-customer-service#service-scheduling-in-dynamics-365-customer-service-is-deprecated",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/important-changes-coming.md#contracts-contract-line-items-and-contract-templates-entities-are-deprecated",
+      "redirect_url": "https://docs.microsoft.com/dynamics365/customer-service/deprecations-customer-service#contracts-contract-line-items-and-contract-templates-entities-are-deprecated",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/important-changes-coming.md#standard-slas-in-dynamics-365-customer-service-are-deprecated",
+      "redirect_url": "https://docs.microsoft.com/dynamics365/customer-service/deprecations-customer-service#standard-slas-in-dynamics-365-customer-service-are-deprecated",
+      "redirect_document_id": "false"
+    },    
+    {
+      "source_path": "power-platform/admin/embed-app-teams.md",
+      "redirect_url": "https://docs.microsoft.com/powerapps/teams/overview",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "power-platform/admin/wp-connectors.md",
       "redirect_url": "https://docs.microsoft.com/powerapps/maker/canvas-apps/connections-list",
       "redirect_document_id": "false"

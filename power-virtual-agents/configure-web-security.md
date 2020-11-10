@@ -2,9 +2,8 @@
 title: "Configure web channel security"
 description: "Use Direct Line tokens or secrets to secure access to your bots."
 keywords: "direct line, token, secret, access, secure, security, channels, PVA"
-ms.date: 7/16/2020
-ms.service:
-  - dynamics-365-ai
+ms.date: 9/22/2020
+ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -14,10 +13,15 @@ ms.custom: configuration, ceX
 ms.collection: virtual-agent
 ---
 
-# Configure Direct Line channel security
+# Configure web and Direct Line channel security
 
+Select the version of Power Virtual Agents you're using here:
 
-When you create a Power Virtual Agents bot, it is immediately available in the **Demo website** and  **Custom website** channels to anyone who knows the bot ID. These channels are available by default, and no configuration is needed. 
+> [!div class="op_single_selector"]
+> - [Power Virtual Agents web app](configure-web-security.md)
+> - [Power Virtual Agents app in Microsoft Teams](teams/configure-web-security-teams.md)
+
+When you create a Power Virtual Agents bot, it is immediately available in the **Demo website** and **Custom website** channels to anyone who knows the bot ID. These channels are available by default, and no configuration is needed. 
 
 Users can find the bot ID directly from within Power Virtual Agents or by receiving it from someone. 
 
@@ -28,7 +32,7 @@ With Direct Line-based security, you can enable access only to locations that yo
 You can also swap and regenerate secrets and refresh tokens, and you can easily disable secured access if you no longer want to use it.
 
 >[!NOTE]
-> Power Virtual Agents uses the [Bot Framework Direct Line channel]( /azure/bot-service/bot-service-channel-directline?view=azure-bot-service-4.0) to connect your web page or app to the bot. 
+> Power Virtual Agents uses the [Bot Framework Direct Line channel]( /azure/bot-service/bot-service-channel-directline?view=azure-bot-service-4.0&preserve-view=true) to connect your web page or app to the bot. 
 
 ## Enable or disable web channel security
 
@@ -38,21 +42,24 @@ Once this option is enabled, channels will need the client to authenticate their
 
 Any access to the bot that doesn't provide this security measure won't work.
 
-1. On the top navigation pane, select **Settings** ![Settings icon](media/settings-icon.png "Settings icon"), and then select **Web channel security**.
+1. On the side navigation pane, select **Manage**, **Security**, and then select **Web channel security**.
 
-    ![Screenshot showing the Settings options, with Web channel security highlighted.](media/configure-web-security/settings-web-channel.png "Screenshot showing Web channel security highlighted on the Settings flyout.")
+
+    :::image type="content" source="media/configure-web-security/settings-web-channel.png" alt-text="Screenshot showing Web channel security highlighted on the Settings flyout.":::
 
 2. Turn the **Require secured access** switch to **Enabled**. 
  
-    ![Screenshot showing the Web channel security page.](media/configure-web-security/enable-web-security.png "Screenshot showing the Web channel security page.")
+
+    :::image type="content" source="media/configure-web-security/enable-web-security.png" alt-text="Screenshot showing the Web channel security page.":::
 
 >[!WARNING] 
-> Once "Require secured access" is enabled or disabled, the system can take up to two hours to propagate the settings and take effect. Until then, the previous setting will be in effect.  
+> Once "Require secured access" is enabled or disabled, the system can take up to two hours to propagate the settings and take effect. Until then, the previous setting will be in effect. You do not need to publish the bot for this change to take effect.
 >You should plan ahead to avoid exposing your bot unintentionally.
 
 If you need to disable the web channel security option, you can do so by switching **Require secured access** to **Disabled**. Disabling secured access can take up to two hours to propagate.
  
-![Screenshot showing a confirmation message when disabling secured access, which says this action renders the Demo website and any Direct Line channel not using a secret or token available. This action can take up to two hours to take effect.](media/configure-web-security/disable-web-security.png "Screenshot showing a confirmation message when disabling secured access.")
+
+:::image type="content" source="media/configure-web-security/disable-web-security.png" alt-text="Screenshot showing a confirmation message when disabling secured access, which says this action renders the Demo website and any Direct Line channel not using a secret or token available. This action can take up to two hours to take effect.":::
 
 ## Use secrets or tokens 
 
@@ -72,9 +79,7 @@ Choose the security model that works best for your situation.
 
 You'll need the secret so you can specify it in your app's authorization header requests or similar.
 
-1. On the top navigation pane, select **Settings** ![Settings icon](media/settings-icon.png "Settings icon"), and then select **Web channel security**.
-
-    ![Screenshot showing the Settings options, with Web channel security highlighted.](media/configure-web-security/settings-web-channel.png "Screenshot showing Web channel security highlighted on the Settings flyout.")
+1. On the side navigation pane, select **Manage**, **Security**, and then select **Web channel security**.
 
 2. Select **Copy** for either **Secret 1** or **Secret 2** to copy it to the clipboard. Select the visibility icon ![Visibility icon](media/configure-web-security/visibility-icon.png "Visibility icon") to reveal the secret. A warning prompt will appear before you can reveal it.
 
@@ -175,7 +180,7 @@ HTTP/1.1 200 OK
 ```
 
 
-For more details on refreshing a token, see the section **Refresh a Direct Line token** in the [Direct Line API - Authentication]( /azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0#refresh-token) topic.
+For more details on refreshing a token, see the section **Refresh a Direct Line token** in the [Direct Line API - Authentication]( /azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0#refresh-token&preserve-view=true) topic.
 
 ## See also
 - [Key Concepts - Publish your bot](publication-fundamentals-publish-channels.md)

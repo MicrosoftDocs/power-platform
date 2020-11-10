@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/08/2020
+ms.date: 10/29/2020
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -16,6 +16,8 @@ search.app:
   - Flow
 ---
 # Free up storage space
+
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 These are ways to reduce the amount of storage space used by removing or deleting different types of information from customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation). Use one or more of these methods to control your total data storage usage. You can delete certain categories of data as the need arises, or you can set up bulk deletion jobs to reoccur at set intervals.  
   
@@ -288,7 +290,7 @@ Use the following methods to free up storage for each of the capacity types.
   
    1.  Choose the arrow next to each criteria row, and then choose **Select Row**.  
   
-   2.  With all three rows selected, choose **Group AND**.  
+   2.  With both rows selected, choose **Group AND**.  
   
    > [!div class="mx-imgBorder"] 
    > ![Free up storage method 2](media/free-storage-method2b.png "Free up storage method 2")  

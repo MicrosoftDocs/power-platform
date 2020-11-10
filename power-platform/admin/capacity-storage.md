@@ -1,7 +1,7 @@
 ---
 title: "New Common Data Service storage capacity  | MicrosoftDocs"
 description: Introducing a new storage model for Common Data Service.
-ms.date: 09/01/2020
+ms.date: 10/08/2020
 ms.reviewer: ""
 ms.service: "power-platform"
 ms.topic: "quickstart"
@@ -17,6 +17,8 @@ search.app:
 ---
 
 # New Common Data Service storage capacity 
+
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 If you purchased storage in or after April 2019, or you have a mix of storage purchases made before and after April 2019, you'll see your storage capacity entitlement and usage by database, file, and log as it appears in the Power Platform admin center today. 
 
@@ -67,6 +69,10 @@ To view the **Summary** page, select **Resources** > **Capacity** > **Summary**.
 
 > [!div class="mx-imgBorder"] 
 > ![Capacity page Summary tab](media/storage-data-capacity-page-review.png "Capacity page Summary tab")
+
+
+All entities of Common Data Service, including system entities, are included in the storage capacity reports.
+
 
 |Number  |Description |
 |---------|---------|
