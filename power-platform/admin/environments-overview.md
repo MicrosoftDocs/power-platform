@@ -96,8 +96,8 @@ There are multiple types of environments. The type indicates the purpose of the 
 <td width="30%">  Only a single user account with the Community Plan has access.</td>
 </tr>
 <tr>
-<td width="20%"> Project Oakdale</td>
-<td width="50%">  Project Oakdale environments are automatically created for the selected team when you create an app in Teams using the Power Apps app for the first time or install a Power Apps app from the app catalog. See <a href="about-teams-environment.md">About the Project Oakdale environment</a>. </td>
+<td width="20%"> Microsoft Dataverse for Teams</td>
+<td width="50%">  Dataverse for Teams environments are automatically created for the selected team when you create an app in Teams using the Power Apps app for the first time or install a Power Apps app from the app catalog. See <a href="about-teams-environment.md">About the Dataverse for Teams environment</a>. </td>
 <td width="30%">  Tenant admins and/or Power Platform admins will not be able to access any of the core customer data in the Teams environment. However, they will be able to perform all system management operations, including customizations and updating user records, among other options. </td>
 </tr>
 <tr><td colspan="3">*&#8202;Users licensed for Power Apps, Power Automate, Microsoft 365, and Dynamics 365, standalone licenses, and free and trial licenses.</td></tr>
