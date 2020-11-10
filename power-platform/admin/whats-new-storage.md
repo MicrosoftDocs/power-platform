@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/02/2020
+ms.date: 11/10/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -75,7 +75,9 @@ You can request a temporary (30-day) extension that allows copy and restore oper
 
 #### Extension request for Copy
 
-1. In the Power Platform admin center, select an environment.
+You must be a tenant administrator to request an extension.
+
+1. Sign in as a tenant admin to the [Power Platform admin center](https://admin.powerplatform.microsoft.com), and then select an environment.
 2. Select **Copy** from the top menu bar.
 3. Select and enter the various copy options, and then select **Copy**.
 4. Select **Confirm**.
