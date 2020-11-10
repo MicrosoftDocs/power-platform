@@ -102,10 +102,12 @@ To resolve the issue, follow these steps:
 ### Are section groups supported?
  Sections groups that keep related sections together in OneNote aren't supported in model-driven Power Apps or customer engagement apps.  
   
-### Can I rename a section in OneNote Online?  
+### Can I rename a section in OneNote Online?
+
  No. You can only rename a section in the desktop version of OneNote. If you rename a section in OneNote Online, you won't see the updated section name in the app.  
   
-### Why do I see records that should be in the OneNote tab?  
+### Why do I see records that should be in the OneNote tab?
+
  This happens when you have deleted all of the sections in the notebook. It's recommended that you have at least one section in your OneNote notebook. To fix the issue do this:  
   
 1. Go to the record where you see the issue. For example, from the main menu select, **Sales** > **Accounts** > select an account record.  
