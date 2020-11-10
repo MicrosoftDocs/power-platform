@@ -240,13 +240,13 @@ Since flows, as well as certain Power Automate features like approvals, run insi
 
 ## Dataverse for Teams
 
-Here is a list of Dataverse for Teams licensing FAQs; for more information about Dataverse for Teams, see [About the Dataverse for Teams environment](about-teams-environment.md).
+Here is a list of Microsoft Dataverse for Teams licensing FAQs; for more information about Dataverse for Teams, see [About the Dataverse for Teams environment](about-teams-environment.md).
 
 ### Are the existing Microsoft Power Platform use rights included with Microsoft 365 licenses changing?
 
 To deliver a comprehensive low-code extensibility platform for Microsoft Teams, Microsoft Power Platform capabilities available as part of select Microsoft 365 subscriptions are expanding with the introduction of Dataverse for Teams.
 
-Dataverse for Teams is a built-in flexible datastore that provides data storage and a one-click solution for (app/chatbot) deployment in Teams. With the addition of Microsoft Dataverse for Teams:
+Dataverse for Teams is a built-in flexible datastore that provides data storage and a one-click solution for (app/chatbot) deployment in Teams. With the addition of Dataverse for Teams:
 - Power Apps capabilities seeded in Microsoft 365 licenses are expanding to enable building and deploying custom apps natively within Teams.
 -	Additionally, Power Virtual Agents capabilities are being introduced to Teams. Customers will now be able to build and deploy custom chatbots directly within Teams.
 
@@ -262,7 +262,7 @@ Dataverse for Teams and Power Virtual Agents for Teams capabilities will be avai
 
 ### How is Dataverse for Teams environment created? 
 
-In public preview, creation of Dataverse for Teams environments is not available from the Power Platform admin center. Creation of new Microsoft Dataverse for Teams environments will only be possible from within Teams. 
+In public preview, creation of Dataverse for Teams environments is not available from the Power Platform admin center. Creation of new Dataverse for Teams environments will only be possible from within Teams. 
 
 ### Can Dataverse for Teams be used outside of Teams?
 
@@ -286,8 +286,8 @@ When the environment capacity limits are reached (2GB per environment) new solut
 
 When the tenant capacity service limits are reached (grows with the # of eligible Office USLs in the tenant up to a max of 1TB or up to a max of 500 environments as explained [here](https://go.microsoft.com/fwlink/p/?linkid=2143567):
 
--	New solutions cannot be created or installed in any Microsoft Dataverse for Teams environment. 
--	New Microsoft Dataverse for Teams environments cannot be created in the tenant 
+-	New solutions cannot be created or installed in any Dataverse for Teams environment. 
+-	New Dataverse for Teams environments cannot be created in the tenant 
 
 In both cases:
 -	Users who want to create/install new apps/flows/bots in that environment will be prompted to notify that the capacity limit is reached, and they need to reduce storage usage or contact their admins.
@@ -312,7 +312,7 @@ Custom connectors are not supported in Dataverse for Teams but support for Azure
 
 ### Can customers purchase more capacity for an environment associated with a Team?
 
-No. Dataverse for Teams provides support for approximately 1 million rows per team. Although existing apps and chatbots will continue to work when a Microsoft Dataverse for Teams environment reaches the per environment limit (2GB), users who want to create a new app, flow, or chatbot in the environment will need to :
+No. Dataverse for Teams provides support for approximately 1 million rows per team. Although existing apps and chatbots will continue to work when a Dataverse for Teams environment reaches the per environment limit (2GB), users who want to create a new app, flow, or chatbot in the environment will need to :
 1.	Purchase Power Apps, Power Automate, and Power Virtual Agents subscriptions based on their needs and start building their new app, flow, or chatbot in a Common Data Service environment.
 2.	Promote the existing Dataverse for Teams environment to Common Data Service in the Power Platform admin center and, if needed, purchase Power Apps, Power Automate, or Power Virtual Agents subscriptions based on their needs.
 
