@@ -317,7 +317,7 @@ No. Dataverse for Teams provides support for approximately 1 million rows per te
 2.	Promote the existing Dataverse for Teams environment to Dataverse in the Power Platform admin center and, if needed, purchase Power Apps, Power Automate, or Power Virtual Agents subscriptions based on their needs.
 
 > [!NOTE]
-> The capability to promote Dataverse for Teams environments to Dataverse won’t be available at public preview, but is expected to be available by general availability (GA).
+> The capability to promote Dataverse for Teams environments to Dataverse won’t be available at public preview, but is expected to be available soon.
  
 ### Can customers package and export their solution (app/flow/chatbots) built in Dataverse for Teams, and then import that into a Dataverse environment (assuming they have the corresponding license including access rights to Microsoft Dataverse)?
 
