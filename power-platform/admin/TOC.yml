@@ -511,6 +511,8 @@
         items:
         - name: Manage teams
           href: manage-teams.md
+        - name: Manage group teams
+          href: manage-group-teams.md
         - name: Team templates
           href: about-team-templates.md
         - name: Team templates for access rights 
@@ -587,6 +589,8 @@
         href: detect-duplicate-data.md 
       - name: Detect duplicate records
         href: detect-duplicate-records.md
+      - name: Enable improved duplicate detection
+        href: enable-improved-duplicate-detection.md
       - name: Duplicate detection rules
         href: set-up-duplicate-detection-rules-keep-data-clean.md 
       - name: Turn duplicate detection rules on or off

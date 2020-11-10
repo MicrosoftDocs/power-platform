@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/02/2020
+ms.date: 10/28/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -133,7 +133,7 @@ If a user account is disabled in an environment, adding per app capacity, sharin
 ## FAQ
 
 ### I assigned the baseline access license to my users as a workaround suggested earlier. Now that this workaround is not needed, what should I do to ensure my users are setup correctly? 
-Ensure that the per app capacity is allocated to the environment. After this step, you can remove the baseline access license from the user using [these instructions](https://docs.microsoft.com/microsoft-365/admin/manage/remove-licenses-from-users?view=o365-worldwide). 
+As of October, 2020, the baseline access license is no longer required. Ensure that the per app capacity is allocated to the environment. After this step, you can remove the baseline access license from the user using [these instructions](https://docs.microsoft.com/microsoft-365/admin/manage/remove-licenses-from-users?view=o365-worldwide). 
 
 ### What happens if I assign a user the Power Apps per user license when earlier they were using apps by consuming the per app license? 
 Once the user is allocated a Power Apps per user license, when per app license consumption reports are available they will show per app licenses aren’t consumed by users that are assigned a per user plan.
@@ -158,39 +158,6 @@ No. Although after purchasing Power Apps per app plans they appear in [https://a
 ### For users expected to use a Power Apps per app plan, why are users that use an app shared with them prompted to start a Power Apps trial? 
 
 For users to run Power Apps apps they must have a license, this includes being assigned a trial, per user plan or be accessing an app in an environment with Power Apps per app plan allocation. 
-<!-- 
-Users are receiving trial prompts because Power Apps per app plan is currently dependent on a $0 ad-hoc subscription license being assigned to any user that will utilize a per app plan. The ad-hoc subscription license is called "Power Apps per app baseline access". When users access a canvas app for the first time, the platform attempts to auto-assign this to users so no action is required by a Power Platform admin or an end user. The auto assignment fails when the [AllowAdHocSubscription](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0#parameters) flag is set to false at the tenant level or [Remove-AllowedConsentPlans -Types "Internal"](https://docs.microsoft.com/power-platform/admin/powerapps-powershell#block-trial-licenses-commands) has been executed for the tenant. When the Power Apps per app baseline access license isn't assigned to a user, the Power Apps client prompts the user to start a trial to get an entitlement. 
-
-**Mitigation steps**:
-
-For customers that want to use a Power Apps per app plan and they have the *AllowAdHocSubscriptions* flag set to false, admins should do the following. 
-
-1. Turn on, at least temporarily, ad-hoc subscriptions. Run the following PowerShell command: 
-  
-   > ```powershell
-   > Set-MsolCompanySettings -AllowAdHocSubscriptions $true 
-   > ```
-
-   [Documentation for this PowerShell cmdlet](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0#parameters)
-
-2. Add to your tenant the required ad-hoc subscription to use a Power Apps per app plan by selecting the following link and completing the sign-up process: [https://signup.microsoft.com/signup?sku=bf666882-9c9b-4b2e-aa2f-4789b0a52ba2](https://signup.microsoft.com/signup?sku=bf666882-9c9b-4b2e-aa2f-4789b0a52ba2). 
-
-3. You are now able to assign the Power Apps per app baseline access license to all users expected to use a Power Apps per app plan. Assigning the baseline access plan can be done in [https://portal.azure.com](https://portal.azure.com) or [https://admin.microsoft.com](https://admin.microsoft.com). 
-
-4. You can assign the Power Apps per app baseline access individually to users or assign the license to a security group that contains all users that will receive a Power Apps per app plan. 
-
-5. This step is optional, at this point the admin can turn off AllowAdHocSubscriptions for their tenant by using the following command: 
-
-   > ```powershell
-   > Set-MsolCompanySettings -AllowAdHocSubscriptions $false
-   > ```
-
-6. Execute the following command, if viral consent plans were previously removed: [Add-AllowedConsentPlans -(Types @("Viral")](https://docs.microsoft.com/power-platform/admin/powerapps-powershell#block-trial-licenses-commands)
-
-   Viral licenses can be assigned to a user either by an admin or by non-admins that assign these licenses to themselves. The ability for a non-admin to assign the license themselves is controlled by [AllowAdHocSubscriptions](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-self-service-signup). 
-
-   If AllowAdHocSubscriptions is off and viral consent plans are allowed, end-users can use viral licenses already assigned to them but won't be able to sign up for viral licenses on their own. 
--->
 
 ### Why are makers prompted to start a trial when creating a premium connection using gateways? 
 This is an artifact of previous, but no longer required, licenses being assigned to Power Apps makers. This license check and prompt to start a trial will eventually be removed. 

@@ -17,6 +17,8 @@ search.app:
 ---
 # Enable document suggestions to recommend related documents
 
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 Enabling Document Suggestions helps your Dynamics 365 apps web browser and mobile users be aware of important documents related to what they're working on in Dynamics 365 apps such as a big sales opportunity. You, as the admin, define relevant fields. A recommendation engine using Azure text analytics uses keyword matching to associate related records to find similar documents. You create similarity rules in Dynamics 365 apps to provide your own similarity logic. Dynamics 365 apps then presents a list of suggested documents to the user while the user works in the current record.  
   
  ![Document recommendations feature diagram](media/document-recommendations.png "Document recommendations feature diagram")  

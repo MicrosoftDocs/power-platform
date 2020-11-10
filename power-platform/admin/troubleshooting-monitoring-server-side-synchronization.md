@@ -19,6 +19,8 @@ search.app:
 
 <!-- legacy procedure -->
 
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 This page is your source for issues and resolutions for troubleshooting server-side synchronization. Check back for updated information as issues are discovered and resolutions recorded.  
  
 ## The Server-Side Snychronization Failures dashboard
