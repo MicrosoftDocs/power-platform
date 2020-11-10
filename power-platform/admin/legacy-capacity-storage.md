@@ -17,6 +17,8 @@ search.app:
 ---
 # Legacy storage capacity
 
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 In April 2019, we introduced Common Data Service capacity storage that is optimized for relational data, attachments, and audit logs. If you purchased storage prior to April 2019, you are using the legacy licensing model for storage discussed in this topic.
 
 We're rolling out this feature now so check back if your user experience varies from the following content.

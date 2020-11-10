@@ -19,6 +19,8 @@ search.app:
 
 # Troubleshooting Word templates
 
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 This article helps you troubleshoot and resolve issues related to Word templates.
 
 ## I'm unable to see an entity image in a Word template for certain out-of-the-box and custom entities

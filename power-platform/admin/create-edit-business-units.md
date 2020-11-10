@@ -17,6 +17,8 @@ search.app:
 ---
 # Create or edit business units 
 
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 A business unit is a logical grouping of related business activities.  
   
  If your organization is structured around departments or divisions that have separate products, customers, and marketing lists, you might want to create business units. Business units are mapped to an organization’s departments or divisions. Users can securely access data in their own business unit, but they can’t access data in other business units.  
