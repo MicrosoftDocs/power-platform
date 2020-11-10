@@ -50,7 +50,7 @@ Note the following regarding access to Microsoft Power Platform apps in Teams.
 
 - Team owners will be allowed to delete a team associated with a Dataverse for Teams environment, which will trigger the deletion of that environment.
 
-See also: [Dataverse for Teams licensing FAQs](powerapps-flow-licensing-faq.md#project-oakdale)
+See also: [Dataverse for Teams licensing FAQs](powerapps-flow-licensing-faq.md#dataverse-for-teams)
 
 ## Environment lifecycle
 
