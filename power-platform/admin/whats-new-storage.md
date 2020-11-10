@@ -73,9 +73,10 @@ If your database storage is over capacity, admins will be unable to do a copy or
 
 You can request a temporary (30-day) extension that allows copy and restore operations for the duration of the extension. To do so, follow these steps.
 
-#### Extension request for Copy
+> [!NOTE]
+> The option to request a temporary exception is only available to tenant admins (Microsoft 365 Global admins). Other admins will not see the option.
 
-You must be a tenant administrator to request an extension.
+#### Extension request for Copy
 
 1. Sign in as a tenant admin to the [Power Platform admin center](https://admin.powerplatform.microsoft.com), and then select an environment.
 2. Select **Copy** from the top menu bar.
@@ -88,7 +89,7 @@ You must be a tenant administrator to request an extension.
 
 #### Extension request for Restore
 
-1. In the Power Platform admin center, select an environment.
+1. Sign in as a tenant admin to the [Power Platform admin center](https://admin.powerplatform.microsoft.com), and then select an environment.
 2. Select **Backups** > **Restore or manage** from the top menu bar.
 3. Select the backup type, the date and time, and then select **Continue**.
 4. Select the various restore options, and then select **Restore**.
