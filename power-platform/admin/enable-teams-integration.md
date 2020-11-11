@@ -35,4 +35,6 @@ To enable embedding of model-driven apps into Teams, do the following:
    > [!div class="mx-imgBorder"] 
    > ![Allow embedding of model-driven apps into Teams](./media/allow-embedding-apps-teams.png "Allow embedding of model-driven apps into Teams")
 
+5. Select **Save**.
+
 ### See also
