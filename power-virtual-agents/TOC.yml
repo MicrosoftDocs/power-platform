@@ -68,6 +68,8 @@
          href: advanced-flow.md
        - name: Use Bot Framework Skills
          href: advanced-use-skills.md
+       - name: Extend your bot with Bot Framework Composer
+         href: advanced-bot-framework-composer.md
        - name: Trigger hand-off to a live agent
          href: advanced-hand-off.md
     - name: Publish and integrate
