@@ -32,13 +32,13 @@ Out-of-the-box tooling around monitoring, alert, and actions falls into the foll
 - **Microsoft Flow for Admins** allows you to perform typical admin actions, such as disabling a flow or deleting a flow ([https://docs.microsoft.com/connectors/microsoftflowforadmins/](https://docs.microsoft.com/connectors/microsoftflowforadmins/)).
 - **Power Apps for Admins connector** can be used to set permissions on Power Apps or set permissions to a certain connector being used by this app ([https://docs.microsoft.com/connectors/powerappsforadmins/](https://docs.microsoft.com/connectors/powerappsforadmins/)).
 - **PowerApps for App Makers** can be used by the makers themselves, though some actions being an overlay to administrational tasks, such as settings permissions to a Power Apps app as mentioned previously ([https://docs.microsoft.com/connectors/powerappsforappmakers/](https://docs.microsoft.com/connectors/powerappsforappmakers/)).
-- **Power Platform for Admins** can be used to perform tasks against platform components, such as creating an environment or provisioning a Common Data Service database or creating a DLP policy for a specific environment ([https://docs.microsoft.com/connectors/powerplatformforadmins/](https://docs.microsoft.com/connectors/powerplatformforadmins/)).
+- **Power Platform for Admins** can be used to perform tasks against platform components, such as creating an environment or provisioning a Microsoft Dataverse database or creating a DLP policy for a specific environment ([https://docs.microsoft.com/connectors/powerplatformforadmins/](https://docs.microsoft.com/connectors/powerplatformforadmins/)).
 
 Check out the Admin-in-a-day content that can be found in the GitHub repository ([https://aka.ms/powerapps/admininaday](https://aka.ms/powerapps/admininaday)) that walks you through examples via hands-on labs with step-by-step instructions. 
 
 The [Center of Excellence Starter Kit](../guidance/coe/starter-kit.md) offers a template implementation using the Management and Admin connectors, and comes with a Power BI dashboard that can be leveraged to gain tenant-wide insights.
 
 ### See also
-[Common Data Service analytics](analytics-common-data-service.md)<br />
+[Dataverse analytics](analytics-common-data-service.md)<br />
 [Admin Analytics for Microsoft Power Automate](analytics-flow.md)<br />
 [Admin Analytics for Power Apps](analytics-powerapps.md)

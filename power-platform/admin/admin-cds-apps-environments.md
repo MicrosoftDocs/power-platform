@@ -1,6 +1,6 @@
 ---
-title: "Administer Common Data Service environments | MicrosoftDocs"
-description: Administer Common Data Service environments
+title: "Administer Microsoft Dataverse environments | MicrosoftDocs"
+description: Administer Microsoft Dataverse environments
 author: jimholtz
 manager: kvivek
 ms.service: power-platform
@@ -16,7 +16,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Administer Common Data Service environments 
+# Administer Microsoft Dataverse environments 
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 

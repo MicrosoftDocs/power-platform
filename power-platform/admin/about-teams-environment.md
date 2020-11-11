@@ -25,7 +25,7 @@ The Dataverse for Teams environment is automatically created for the selected te
 > [!NOTE]
 > - This is a preview feature.
 > - [!INCLUDE [cc-preview-features-definition.md](../includes/cc-preview-features-definition.md)]
-> - The capability to promote Dataverse for Teams environments to Common Data Service isn’t available during the public preview release; it will be available soon.
+> - The capability to promote Dataverse for Teams environments to Microsoft Dataverse isn’t available during the public preview release; it will be available soon.
 
 You can identify a Dataverse for Teams environment in the [Power Platform admin center](https://admin.powerplatform.microsoft.com) by using the **Type** column in the list of environments.
 
@@ -42,7 +42,7 @@ Note the following regarding access to Microsoft Power Platform apps in Teams.
 
 - Apps created in Teams that use Dataverse for Teams will only be accessible in Teams and Teams Mobile, regardless of the user's license.  
 
-- For any standalone Power Apps or Power Automate usage, which includes API access as well, the Dataverse for Teams schema will need to be promoted to Common Data Service.  
+- For any standalone Power Apps or Power Automate usage, which includes API access as well, the Dataverse for Teams schema will need to be promoted to Dataverse.  
 
 - No direct API access or pro developer experience will be provided, and only Power Apps embedded within the Teams client will be able to access the runtime.
 
@@ -67,14 +67,14 @@ This section provides a summary of key lifecycle operations that will be allowed
 |Create     | Only through Teams. Note: these Dataverse for Teams environments will be limited to a 1:1 mapping to the Teams team it was created in and bound to the Microsoft 365 group associated with the team.        | No        |
 |Delete     | The environment can be deleted by the team owner. Note: the environment will be deleted automatically if the team it was created in is also deleted.| Yes  |
 |Reset     | Not available by default for Dataverse for Teams environments.        | No        |
-|Promote     | Unlocks all the functionality of Common Data Service services for the environment.         | Yes        | 
+|Promote     | Unlocks all the functionality of Dataverse services for the environment.         | Yes        | 
 
-The lifetime of the environment will be tied to the team it was created in. If you promote an environment to Common Data Service, the 1:1 mapping isn't guaranteed because the environment can now be used by applications outside of Teams. The promoted environment is bound by the lifecycle rules associated with the Power Apps license and the configuration of the environment.
+The lifetime of the environment will be tied to the team it was created in. If you promote an environment to Dataverse, the 1:1 mapping isn't guaranteed because the environment can now be used by applications outside of Teams. The promoted environment is bound by the lifecycle rules associated with the Power Apps license and the configuration of the environment.
 
-Some operations are blocked by default, such as the Copy and Reset operations. For scenarios where you need this capability, use Common Data Service environments. See the previous table for details.
+Some operations are blocked by default, such as the Copy and Reset operations. For scenarios where you need this capability, use Dataverse environments. See the previous table for details.
 
 > [!IMPORTANT]
-> Dataverse for Teams environments won't be allowed to change types until the promote operation has been carried out on the environment. After the promotion is complete, the Dataverse for Teams environment will have the full capabilities found in Common Data Service.  
+> Dataverse for Teams environments won't be allowed to change types until the promote operation has been carried out on the environment. After the promotion is complete, the Dataverse for Teams environment will have the full capabilities found in Dataverse.  
 >
 > If the team is deleted, the Dataverse for Teams environment that was created will also be deleted. The Dataverse for Teams environment itself may be deleted from within the team by the team owner. A warning will be provided prior to allowing the deletion to go through, to ensure there are no accidental deletions. 
 
@@ -98,7 +98,7 @@ Every team in Teams is linked 1:1 to a [Microsoft 365 group](https://docs.micros
 
 Microsoft 365 Groups supports two user membership types: owners and members. Members can be users from the customer's own tenant or from a guest tenant. Any user management (addition, removal, user type change) made in a team will be reflected in the Microsoft 365 group, and vice versa.
 
-Access to a Dataverse for Teams environment and its resources (apps, data) will be restricted to users in the team. The Microsoft 365 group linked to a team will be automatically associated with the Dataverse for Teams environment, restricting access to users of that Microsoft 365 group. This Microsoft 365 Groups association with the Dataverse for Teams environment won't be editable until the environment is promoted to Common Data Service. 
+Access to a Dataverse for Teams environment and its resources (apps, data) will be restricted to users in the team. The Microsoft 365 group linked to a team will be automatically associated with the Dataverse for Teams environment, restricting access to users of that Microsoft 365 group. This Microsoft 365 Groups association with the Dataverse for Teams environment won't be editable until the environment is promoted to Dataverse. 
 
 ### Role assignments 
 
@@ -131,7 +131,7 @@ Access to a Dataverse for Teams environment and its resources (apps, data) will 
 <tr>
 <td width="20%"> Colleagues with access </td>
 <td width="50%"> Colleagues with access are people in the tenant who aren't in the team but have been invited to run apps in the team. By default, colleagues with access have no access to data. Their data access rights can be granted based on the app or resources that they need to run. Note: when a colleague with access is invited to run apps in a team, the Microsoft 365 group association with the team's Dataverse for Teams environment will be automatically removed to allow app run access to the colleague with access. </td>
-<td width="30%"> Common Data Service User</td>
+<td width="30%"> Dataverse User</td>
 </tr>
 <tr>
 <td width="20%"> Dynamics 365 admin who isn't in the team (that is, isn't in the Microsoft 365 group) </td>
@@ -200,7 +200,7 @@ Select **Promote to production**. See [Promotion process](#promotion-process).
 
 ## Capacity limits
 
-The consumption of capacity by Dataverse for Teams environments won't count towards the tenant's capacity limits. Instead, we'll provide a pool of capacity for Dataverse for Teams environments, which will be separate from the tenant's Microsoft Power Platform Common Data Service capacity pool. Capacity won't be transferable between these two pools.  
+The consumption of capacity by Dataverse for Teams environments won't count towards the tenant's capacity limits. Instead, we'll provide a pool of capacity for Dataverse for Teams environments, which will be separate from the tenant's Microsoft Power Platform Dataverse capacity pool. Capacity won't be transferable between these two pools.  
 
 **Per-environment limits on Dataverse for Teams environments**: Each Dataverse for Teams environment provides 2 GB of combined database and file storage, with a portion of this amount reserved for system use. To see the consumption of each Dataverse for Teams environment in a tenant, go to the Power Platform admin center (https://aka.ms/ppac), then to **Resources** > **Capacity** > **Microsoft Teams Capacity**.
 
@@ -211,8 +211,8 @@ The consumption of capacity by Dataverse for Teams environments won't count towa
 
 |Unit  |Service limit  |
 |---------|---------|
-|Dataverse for Teams environments      | 5 + 1 per 20 eligible office seats (up to a maximum of 500 environments) <br /> This limit on the number of environments can't be extended further. Should more instances be needed, consider deleting unused environments or promoting to environments to Common Data Service.   |
-|Max Dataverse for Teams environment storage per tenant      | 10 GB + Dataverse for Teams environments &times; 2 GB (up to a max of 1 TB). <br /> This storage limit can't be extended further. Should more storage be needed, consider promoting environments to Common Data Service.  |
+|Dataverse for Teams environments      | 5 + 1 per 20 eligible office seats (up to a maximum of 500 environments) <br /> This limit on the number of environments can't be extended further. Should more instances be needed, consider deleting unused environments or promoting to environments to Dataverse.   |
+|Max Dataverse for Teams environment storage per tenant      | 10 GB + Dataverse for Teams environments &times; 2 GB (up to a max of 1 TB). <br /> This storage limit can't be extended further. Should more storage be needed, consider promoting environments to Dataverse.  |
 |Max Dataverse for Teams environments API calls  | API requests in Microsoft Power Platform consist of various actions that a user makes across various products.  <br /> For more information about API calls and the per-user limits available, go to [Microsoft Power Platform request entitlements](https://aka.ms/PowerPlatformRequestEntitlements). |
 
 ### Enforcement
@@ -244,19 +244,19 @@ As mentioned for the environment-level enforcement, any existing apps will still
 <!-- fwlink 2134779 for for a few thing to know -->
 
 > [!IMPORTANT]
-> The capability to promote Dataverse for Teams environments to Common Data Service isn’t available during the public preview release; it will be available soon.
+> The capability to promote Dataverse for Teams environments to Dataverse isn’t available during the public preview release; it will be available soon.
  
 The high-level flow and business rules for promoting a Dataverse for Teams environment follow. 
 
-A tenant admin will be allowed to promote a Dataverse for Teams environment to a Common Data Service database environment. A typical flow is as follows:  
+A tenant admin will be allowed to promote a Dataverse for Teams environment to a Dataverse database environment. A typical flow is as follows:  
 
 :::image type="content" source="media/teams-environment-promotion-process.png" alt-text="Dataverse for Teams environment promotion process":::
 
 1. Within a team, the Teams user chooses to create an app by using the new integrated Power Apps app creation experience in Teams, or by installing an existing Dataverse for Teams environment-based app. At this point, a Dataverse for Teams environment is provisioned for that team.  
 
-2. Over time, the data stored in the Dataverse for Teams environment will grow and eventually reach the capacity limit that these environments have (2 GB). At this point, existing apps will continue to operate but new applications won't be allowed to be created or installed. Customers will be directed to contact a tenant admin to promote the Dataverse for Teams environments to Common Data Service and obtain more capacity. Alternatively, a Teams user can request that the admin promote the environment because they want to use a certain feature in Common Data Service.  
+2. Over time, the data stored in the Dataverse for Teams environment will grow and eventually reach the capacity limit that these environments have (2 GB). At this point, existing apps will continue to operate but new applications won't be allowed to be created or installed. Customers will be directed to contact a tenant admin to promote the Dataverse for Teams environments to Dataverse and obtain more capacity. Alternatively, a Teams user can request that the admin promote the environment because they want to use a certain feature in Dataverse.  
 
-3. Admins will review the request from the Teams user and make the decision to promote the environment from Teams to Common Data Service. At this point, the admin will go to the Power Platform admin center environments view to execute the promotion.   
+3. Admins will review the request from the Teams user and make the decision to promote the environment from Teams to Dataverse. At this point, the admin will go to the Power Platform admin center environments view to execute the promotion.   
 
    > [!NOTE]
    > To successfully carry out the promotion, the tenant must have at least as much available capacity as the size of the Dataverse for Teams environment that's being promoted. After its promotion, the consumed capacity of the promoted Dataverse for Teams environment will start counting towards the tenant's capacity. If an attempt is made to promote a Dataverse for Teams environment when the tenant doesn't have enough capacity, the promote operation will be blocked and an error message will be displayed.
@@ -269,8 +269,8 @@ After promotion, the following applies to the newly promoted environment:
 - The promoted environment's lifecycle will no longer be tied to the lifecycle of that team. If the team is deleted, the promoted environment remains. 
 - Any apps running on the environment will require Microsoft Power Platform (Power Apps, Power Automate) licenses to be accessed. 
 - The apps can run inside and outside of Teams. 
-- All existing apps will be associated with the promoted environment (Common Data Service) and can take advantage of the extended set of entities. 
-- The promoted environment capacity will start counting against the tenant's Common Data Service capacity. 
+- All existing apps will be associated with the promoted environment (Dataverse) and can take advantage of the extended set of entities. 
+- The promoted environment capacity will start counting against the tenant's Dataverse capacity. 
 - The Microsoft 365 Groups association will become editable. 
 - Team owners are assigned the System Admin roles on their environment and can access the environment by using the Power Platform admin center. 
 - Adding a new Teams Template app to the former team won't create a new Dataverse for Teams environment for the team. 

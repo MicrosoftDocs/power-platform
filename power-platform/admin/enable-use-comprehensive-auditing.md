@@ -1,5 +1,5 @@
 ---
-title: "Common Data Service and model-driven apps activity logging  | MicrosoftDocs"
+title: "Microsoft Dataverse and model-driven apps activity logging  | MicrosoftDocs"
 description: Learn how to enable auditing to be used for reports in the Microsoft 365 Security Compliance Center.
 author: pnghub
 ms.service: power-platform
@@ -16,7 +16,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Common Data Service and model-driven apps activity logging 
+# Microsoft Dataverse and model-driven apps activity logging 
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 

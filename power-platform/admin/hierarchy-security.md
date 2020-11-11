@@ -140,7 +140,7 @@ Make sure you have the System Administrator or System Customizer security role o
 -   Use hierarchy security models in conjunction with other existing security models for more complex scenarios. Avoid creating a large number of business units, instead, create fewer business units and add hierarchy security.  
   
 ### See also  
- [Security in Common Data Service](wp-security.md)   
+ [Security in Microsoft Dataverse](wp-security.md)   
  [Query and visualize hierarchical data](https://docs.microsoft.com/dynamics365/customer-engagement/customize/query-visualize-hierarchical-data)   
 
 

@@ -105,7 +105,7 @@ After completing the first three steps, you can now share apps.
 Share the model-driven app. See [Share a model-driven app with Power Apps](https://docs.microsoft.com/powerapps/maker/model-driven-apps/share-model-driven-app). 
 
 > [!IMPORTANT]
-> When the user launches the app, we create the user in the required Common Data Service environment. Users will not get added at the time of app sharing.
+> When the user launches the app, we create the user in the required Microsoft Dataverse environment. Users will not get added at the time of app sharing.
 
 ### Sharing canvas apps
 To share canvas apps, see [Share a canvas app in Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/share-app).  
@@ -124,7 +124,7 @@ The per app license gives a user access to two Power Apps and one portal for a s
 ## Known issues
 
 ### Reducing per app capacity to zero
-If you allocate per app capacity to an environment and later reduce per app capacity to zero, users that were added to Common Data Service while per app capacity was greater than zero will **not** get disabled in Common Data Service. However, these users won’t be able to launch apps since there is no per app capacity allocated to the environment. Admins should remove the role of the user they do not intend to access the platform.
+If you allocate per app capacity to an environment and later reduce per app capacity to zero, users that were added to Dataverse while per app capacity was greater than zero will **not** get disabled in Dataverse. However, these users won’t be able to launch apps since there is no per app capacity allocated to the environment. Admins should remove the role of the user they do not intend to access the platform.
 
 ### Disabled user account
 

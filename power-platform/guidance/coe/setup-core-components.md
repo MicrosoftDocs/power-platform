@@ -56,8 +56,8 @@ This is the first step of the installation process and is required for every oth
      ![Select the Common Data Service connector](media/msi-connection.png "Select the Common Data Service connector")
     1. Select **Create**.
     1. Complete the same steps for the following connectors:
-        - Common Data Service
-        - Common Data Service (current environment)
+        - Microsoft Dataverse
+        - Dataverse (current environment)
         - Power Apps for Admins
         - Power Apps for Makers
         - Power Platform for Admins
@@ -98,7 +98,7 @@ The import can take up to 10 minutes to be completed.
 
 ## Activate the sync template flows
 
-The flows with the prefix *Sync* are required for populating and cleaning up data in the Common Data Service entities (Environment, Power Apps App, Flow, Flow Action Detail, Connector, and Maker). The sync flows are used to write or delete data from the admin connectors to the Common Data Service entities. These flows run on a schedule.
+The flows with the prefix *Sync* are required for populating and cleaning up data in the Dataverse entities (Environment, Power Apps App, Flow, Flow Action Detail, Connector, and Maker). The sync flows are used to write or delete data from the admin connectors to the Dataverse entities. These flows run on a schedule.
 
 - Ensure that the **Status** of all **Admin \| Sync Template v2 (...)** flows is **On**.
 

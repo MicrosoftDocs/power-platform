@@ -29,10 +29,10 @@ Currently, the admin center provides the following capabilities.
 |Feature  |Description  |
 |---------|---------|
 |Environments | View, create, and manage your environments. Select an environment to see details and manage its setting. More information: [Manage environment settings](/power-platform/admin/admin-settings)|
-|Analytics     | Get a detailed view of key metrics for Power Platform apps. More information: [Common Data Service analytics](/power-platform/admin/analytics-common-data-service)      |
+|Analytics     | Get a detailed view of key metrics for Power Platform apps. More information: [Microsoft Dataverse analytics](/power-platform/admin/analytics-common-data-service)      |
 |Resources  |  More information: [View and manage resources](view-manage-resources.md)  |
 |Help + support     | Get a list of self-help solutions or create a support ticket for technical support. More information: [Get Help + Support](/power-platform/admin/get-help-support)       |
-|Data integration| More information: [Integrate data into Common Data Service ](data-integrator.md)  |
+|Data integration| More information: [Integrate data into Dataverse ](data-integrator.md)  |
 |Data gateways| More information: [Set up data transfer between on-premises data and cloud services ](onpremises-data-gateway-management.md) |
 |Data policies     | More information: [Create and manage data loss prevention policies](create-dlp-policy.md).       |
 

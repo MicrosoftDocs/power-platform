@@ -1,6 +1,6 @@
 ---
-title: "Manage Common Data Service settings  | MicrosoftDocs"
-description: View and manage Common Data Service settings.
+title: "Manage Microsoft Dataverse settings  | MicrosoftDocs"
+description: View and manage Microsoft Dataverse settings.
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
@@ -15,7 +15,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Manage Common Data Service settings
+# Manage Microsoft Dataverse settings
 
 You can view and manage the settings for your environments by signing in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com), going to the **Environments** page, selecting an environment, and then selecting **Settings**.
 

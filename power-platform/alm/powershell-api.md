@@ -19,7 +19,7 @@ search.app:
 
 # Work with solutions using PowerShell
 The Power Apps checker web API provides a mechanism to run static analysis
-checks against customizations and extensions to the Common Data Service
+checks against customizations and extensions to the Microsoft Dataverse
 platform. It's available for makers and developers to perform rich static
 analysis checks on their solutions against a set of best practice rules to
 quickly identify problematic patterns. To begin using the Power Apps checker Web

@@ -36,7 +36,7 @@ Admin and governance tools fall into three broad categories:
       - Environment and environment security management
       - Data loss prevention (DLP) policy management
       - Data integration and gateway management
-      - Admin analytics (to view capacity and activity on Common Data Service, Power Apps, and Power Automate)
+      - Admin analytics (to view capacity and activity on Microsoft Dataverse, Power Apps, and Power Automate)
       - Support ticket requests
 
    :::column-end:::
