@@ -287,4 +287,5 @@ The **Built by your colleagues** catalog intentionally filters out 'Shared with 
 ### See also
 [Power Apps and Teams](https://docs.microsoft.com/powerapps/teams/overview) <br/>
 [Power Automate and Teams](https://docs.microsoft.com/power-automate/teams/overview)<br/>
-[Power Virtual Agents and Teams](https://aka.ms/pva-teams-docs)
+[Power Virtual Agents and Teams](https://aka.ms/pva-teams-docs)<br />
+[Enable Microsoft Teams Integration for model-driven apps](enable-teams-integration.md)
