@@ -71,33 +71,41 @@ You can customize the email sent out by the flow; by default, it will look like 
 
 ### Admin \| App Archive and Clean Up – Start Approval
 
-Checks for apps that haven't been modified in the last six months (this time span is configurable) and asks the app owner (via flow approvals) whether the app can be archived.
+Checks for apps that haven't been modified or launched in the last six months (this time span is configurable) and asks the app owner (via flow approvals) whether the app can be deleted.
+
+It recommends that the app owner take a backup of the app in the event that they would like to restore it at some later point.
 
 This flow starts the approval process and writes the approval task to the Archive Approval Common Data Service entity.
 
 ![App Archive and Clean Up – Start Approval flow](media/coe58.png "App Archive and Clean Up – Start Approval flow")
 
-### Admin \| App Archive and Clean Up – Check Approval
-
-On a scheduled interval, checks for approval responses created by the App Archive and Clean Up – Start Approval flow and, if approved, archives the app file to SharePoint.
-
-**Prerequisite**: Create a SharePoint document library to store the archived apps, and configure this in the environment variable.
-
-**Customize**: By default, this flow will archive the application but not remove it or its permission from the environment, so that no apps are inadvertently removed from your tenant. To delete the app, update the [*Auto Delete On Archive* environment variable](setup-governance-components.md#update-environment-variables).
+**Customize**: By default, this flow will assign approvals to the app owner. In order to test in a debug environment, in which you do not want to involve users, you can update the [*ProductionEnvironment* environment variable](setup-governance-components.md#update-environment-variables) to **No**, and the approvals will be sent to the admin account instead.
 
 ### Admin \| Flow Archive and Clean Up – Start Approval
 
-Similar to the previous flow, but for flows rather than apps. This flow checks for flows that haven't been modified in the last six months (this time span is configurable) and asks the flow owner (via flow approvals) whether the flow can be archived.
+Similar to the previous flow, but for flows rather than apps. This flow checks for flows that haven't been modified in the last six months (this time span is configurable) and asks the flow owner (via flow approvals) whether the flow can be deleted.
+
+It recommends that the flow owner take a backup of the app in the event that they would like to restore it at some later point.
 
 This flow starts the approval process and writes the approval task to the Archive Approval Common Data Service entity.
 
-### Admin \| Flow Archive and Clean Up – Check Approval
+**Customize**: By default, this flow will assign approvals to the flow owner. In order to test in a debug environment, in which you do not want to involve users, you can update the [*ProductionEnvironment* environment variable](setup-governance-components.md#update-environment-variables) to **No**, and the approvals will be sent to the admin account instead.
 
-Similar to the previous flow, but for flows rather than apps. On a scheduled interval, this flow checks for approval responses created by the Flow Archive and Clean Up – Start Approval flow and, if approved, archives the flow files to SharePoint. It archives two files per flow, one with the flow content, the other with the flow connections.
+### Admin \| Admin | Check Approvals
 
-**Prerequisite**: The same SharePoint document library that's used to store the archived apps can be used to store archived flows.
+On a scheduled interval, checks for approval responses created by the Start Approval flows described above and, if newly approved, marks the approved date so that the Approval Clean Up flow (described below) can delete it after user has time to archive.
 
-**Customize**: By default, this flow will archive the flow but not remove it or its permission from the environment, so that no flows are inadvertently removed from your tenant. To delete the flow, update the [*Auto Delete On Archive* environment variable](setup-governance-components.md#update-environment-variables).
+If approved in the past, but before deletion, it sends a reminder to archive the app or flow before deletion.
+
+### Admin \| Approval Clean Up
+
+Runs on a daily basis and does two clean up tasks for the workflow.
+
+1. Deletes timed out requests. Deletes, from the Archive Approval table, all non-approved requests that were created over a month ago.
+
+1. Deletes the flows and apps that were approved for deletion more than 3 weeks ago (configurable).
+
+**Customize**: By default, this flow will not delete the apps and flows. This is to ensure you explicitly are ready for that to occur. To begin deletion of flows and apps, update the [*Auto Delete On Archive* environment variable](setup-governance-components.md#update-environment-variables) to **Yes**.
 
 ## Apps
 

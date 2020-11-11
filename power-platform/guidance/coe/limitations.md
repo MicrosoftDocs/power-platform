@@ -101,3 +101,8 @@ If you choose to use a security group to control access, users will have to be a
 ## Shared component library in the theming components solution
 
 The shared component library in the [theming components solution](theming-components.md) isn't editable. Make your own copy if you want to extend it.
+
+## Trial Licenses
+
+A Power Automate Per User license (amongst other license requirements) will be required to run the CoE Starter Kit flows, a trial license does not have sufficient API call allowances (https://docs.microsoft.com/en-us/power-automate/limits-and-config#looping-and-debatching-limits) to run the CoE Starter Kit flows.
+For full list of license requirements see [Setup Pre-requisits](setup.md#prerequisites)
