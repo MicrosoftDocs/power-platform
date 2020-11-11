@@ -21,32 +21,6 @@ search.app:
 
 Multiple governance components are provided in the Center of Excellence (CoE) Starter Kit; each will require some configuration to install. The installation instructions in this article have been segmented based on the set of components that should be grouped and installed together. Dependencies on other segments are outlined in each section.
 
-## Create a SharePoint document library
-
-The Archive and Clean Up flows will archive unneeded apps to a SharePoint library. If you intend to use those flows, you need to configure a SharePoint site and document library first.
-
-### Create the site
-
-If you don't already have a SharePoint site for CoE admins in your tenant, create a new team site now for them to access. This site will be specified later in the environment variable *Archive Site URL (SharePoint Site)*.
-
-More information: [Create a team site in SharePoint](https://support.office.com/article/create-a-team-site-in-sharepoint-ef10c1e7-15f3-42a3-98aa-b5972711777d)
-
->[!IMPORTANT]
-> As soon as you create the team site, you need to update the *Archive Site URL (SharePoint Site)* environment variable, as described in [Update environment variables](#update-environment-variables) later in this article.
-
-### Create the library
-
-We've created a helper flow to create the library for you. See the following zip file: CreateCoEArchivalDocLibraryinSP.zip.
-
-1. Download the zip file.
-1. Go to [https://flow.microsoft.com/](https://flow.microsoft.com/) > **Select CoE Environment** > **My Flows** > **Import**.
-1. Ensure that the flow is turned on, and run it.
-1. When the flow is completed, you'll have a document library named PowerAppsArchive.
-
-Ensure that you set up the correct permissions for your SharePoint site; we recommend that only your admin team have Contribute access to the site.
-
-More information: [Create a document library in SharePoint](https://support.office.com/article/create-a-document-library-in-sharepoint-306728fe-0325-4b28-b60d-f902e1d75939)
-
 ## Create an Azure AD security group
 
 Some features of the CoE Starter Kit require an Admin security group; therefore, you need to configure the Admin security group first.
@@ -76,8 +50,7 @@ The core components solution is required for the audit and report components sol
 
     | Name | Current value |
    |------|---------------|
-   | Archive Site URL (SharePoint Site)  | The Archive and Clean Up flow archives app files (.msapp) to a SharePoint site. Paste the URL of the team site you created earlier in [Create a SharePoint document library](#create-a-sharepoint-document-library).
-   | Archive Folder                      | The folder (document library) in the SharePoint site where you want the .msapp file to be stored. Paste the name of the [document library you created earlier](#create-a-sharepoint-document-library).   |
+   | ProductionEnvironment  | Determines if the environment in which you are running the flows is a Production or Debug environment.  Value must be Yes (default) or No.
    | Auto Delete On Archive | Determines whether apps are deleted when they're archived in the Admin \| App Archive and Clean Up - Check Approvals and Archive flow. <br> Value must be Yes or No (default). |
    | Developer Compliance Center         | Leave this blank on import, and [update the environment variable](#update-environment-variables) after the import has finished by first going to the details page of the Developer Compliance Center (canvas app) included with this solution, and then copying the web link (the link used to open the app) and pasting it into this variable.  |
    | Power Platform Admin Security Group | The Admin \| Find and Add Admins as Owners for Apps that Leverage Certain Connectors flow adds the Admin security group to apps. Configure the Admin security group first, and then enter the Azure AD group ID (**Object Id**) of the group here. Note: Be sure you enter the **Object Id**, not an email address. |
@@ -97,8 +70,7 @@ All flows in this solution depend on all environment variables' being configured
 
    | Name | Current value |
    |------|---------------|
-   | Archive Site URL (SharePoint Site)  | The Archive and Clean Up flow archives app files (.msapp) to a SharePoint site. Paste the URL of the team site you created earlier in [Create a SharePoint document library](#create-a-sharepoint-document-library).
-   | Archive Folder                      | The folder (document library) in the SharePoint site where you want the .msapp file to be stored. Paste the name of the [document library you created earlier](#create-a-sharepoint-document-library).   |
+   | ProductionEnvironment  | Determines if the environment in which you are running the flows is a Production or Debug environment.  Defaults to true.
    | Auto Delete On Archive | Determines whether apps are deleted when they're archived in the Admin \| App Archive and Clean Up - Check Approvals and Archive flow. <br> Value must be Yes or No(default). |
    | Developer Compliance Center         | Go to the details page of the Developer Compliance Center (canvas app) included with this solution, and then copy the web link (the link used to open the app) and paste it into this variable.  |
    | Power Platform Admin Security Group | The Admin \| Find and Add Admins as Owners for Apps that Leverage Certain Connectors flow adds the Admin security group to apps. Configure the Admin security group first, and then enter the Azure AD group ID (**Object Id**) of the group here. Note: Be sure you enter the **Object Id**, not an email address. |
@@ -139,9 +111,9 @@ The archive approval flows (Admin \| App Archive and Clean Up – Start Approval
 This governance components solution contains five flows:
 
 - Admin \| App Archive and Clean Up – Start Approval
-- Admin \| App Archive and Clean Up – Check Approval
 - Admin \| Flow Archive and Clean Up – Start Approval
-- Admin \| Flow Archive and Clean Up – Check Approval
+- Admin \| Admin | Approval Clean Up
+- Admin \| Check Approvals
 - Admin \| Compliance Detail Request
 
 These flows will be turned off when you import the solution. You can turn them on as soon as you're ready to use them.
