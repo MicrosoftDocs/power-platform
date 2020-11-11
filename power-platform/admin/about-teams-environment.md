@@ -23,9 +23,7 @@ Introduced in September, 2020, *Microsoft Dataverse for Teams* is a built-in, lo
 The Dataverse for Teams environment is automatically created for the selected team when you create an [app](https://docs.microsoft.com/powerapps/teams/create-first-app) or [bot](https://docs.microsoft.com/power-virtual-agents/teams/authoring-first-bot-teams#create-a-bot) in Teams for the first time or install a Power Apps app from the app catalog for the first time. The Dataverse for Teams environment is used to store, manage, and share team-specific data, apps, and flows. Each team can have one environment, and all data, apps, bots, and flows created with the Power Apps app inside a team are available from that team's Dataverse for Teams database.  
 
 > [!NOTE]
-> - This is a preview feature.
-> - [!INCLUDE [cc-preview-features-definition.md](../includes/cc-preview-features-definition.md)]
-> - The capability to promote Dataverse for Teams environments to Common Data Service isn’t available during the public preview release; it will be available soon.
+> The capability to promote Dataverse for Teams environments to Dataverse isn’t available now, it will be available soon.
 
 You can identify a Dataverse for Teams environment in the [Power Platform admin center](https://admin.powerplatform.microsoft.com) by using the **Type** column in the list of environments.
 
@@ -236,7 +234,7 @@ As mentioned for the environment-level enforcement, any existing apps will still
 <!-- fwlink 2134779 for for a few thing to know -->
 
 > [!IMPORTANT]
-> The capability to promote Dataverse for Teams environments to Common Data Service isn’t available during the public preview release; it will be available soon.
+> The capability to promote Dataverse for Teams environments to Dataverse isn’t available now; it will be available soon.
  
 The high-level flow and business rules for promoting a Dataverse for Teams environment follow. 
 
@@ -267,9 +265,9 @@ After promotion, the following applies to the newly promoted environment:
 - Team owners are assigned the System Admin roles on their environment and can access the environment by using the Power Platform admin center. 
 - Adding a new Teams Template app to the former team won't create a new Dataverse for Teams environment for the team. 
 
-## Ability to govern Dataverse for Teams in Teams
+## Ability to govern Dataverse for Teams
 
-With the public preview release of Dataverse for Teams, the ability to create apps or bots with the new Power Apps and Power Virtual Agents apps is enabled by default in Teams. Admins can enable or disable it for specific users by using the Teams apps permission policies in Teams.
+The ability to create apps or bots with the new Power Apps and Power Virtual Agents apps is enabled by default in Teams. Admins can enable or disable it for specific users by using the Teams apps permission policies in Teams.
 
 In your Teams admin center, you can use **Power Apps** and **Power Virtual Agents** applications available under **Microsoft Apps** to enable or disable these new capabilities for specific users. More information: [Manage app permission policies in Microsoft Teams](https://docs.microsoft.com/microsoftteams/teams-app-permission-policies)
 
