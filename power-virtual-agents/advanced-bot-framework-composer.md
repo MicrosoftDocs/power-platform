@@ -15,10 +15,10 @@ ms.collection: virtualagent
 
 # Extend you bot with Bot Framework Composer
 
-You can enhance your bot by developing custom dialogs with [Bot Framework Composer](/composer/) and then adding them to your Power Virtual agents bot. 
+You can enhance your bot by developing custom dialogs with [Bot Framework Composer](/composer/) and then adding them to your Power Virtual Agents bot. 
 
 Composer is integrated into Power Virtual Agents to allow developers and business users to build bots together. Composer lets you extend your bot with Bot Framework functionality, including:
-- Adaptive gialogs
+- Adaptive dialogs
 - Language generation (LG)
 - Regular expressions (RegEx)
 - Adaptive cards 
@@ -32,7 +32,7 @@ Bot Framework Composer lets you use a variety of pre-built functions and express
 Custom dialogs added with Bot Framework Composer are deployed, hosted, and executed together with the rest of Power Virtual Agents bot content, and do not require any additional Azure hosting.
 
 >[!IMPORTANT]
->Bot Framework Composer integration is not available to users who only have the [Teams Power Virtual Agents license](requirements-licensing-subscriptions). You must have a [trial](sign-up-individual) or full Power Virtual Agents license.
+>Bot Framework Composer integration is not available to users who only have the [Teams Power Virtual Agents license](requirements-licensing-subscriptions.md). You must have a [trial](sign-up-individual.md) or full Power Virtual Agents license.
 
 
 ## Prerequisites
@@ -71,46 +71,46 @@ Go back to Power Virtual Agents **Topics** page. Select **Open in Bot Framework 
 >[!NOTE]
 > In some cases, a firewall might be blocking some features in Composer and you might need to explicitly allow access. Check with your admin for details.
 
-If you are opening Composer from this Power Virtual Agents bot for the first time, you need to specify the **Name** (alphanumeric, no spaces or special characters) for your **Composer project**. You can skip this step if you already have a bot project for this bot my selecting **Cancel** in this step.
+If you're opening Composer from this Power Virtual Agents bot for the first time, you need to specify the **Name** (alphanumeric, no spaces or special characters) for your **Composer project**. You can skip this step if you already have a bot project for this bot my selecting **Cancel** in this step.
 ![Create Bot Framework Composer](media/ComposerUI_CreateProject.png)
 
 Your Power Virtual Agents bot is now open in Composer and you are ready to start developing.
 ![Bot Framework Composer Project Initial View](media/ComposerUI_Open_initialView.png)
 
-In some cases, Power Virtual Agenta might be unable to launch Composer automatically. However, you can always launch it manually from your browser.
+In some cases, Power Virtual Agents might be unable to launch Composer automatically. However, you can always launch it manually from your browser.
 Use the **Copy Link** feature to copy the link to the Composer and paste it as the URL in your web browser.
 ![Bot Framework Composer Copy Link](media/ComposerUI_CopyLinkComposer.png)
 
 
-## Guildelines for creating bot content for Power Virtual Agents in Composer
-When opened from a Power Virtual Agents bot, Composer launches a **Composer project** on you PC and loads your bot content into it.
+## Guidelines for creating bot content for Power Virtual Agents in Composer
+When opened from a Power Virtual Agents bot, Composer launches a **Composer project** on your PC and loads your bot content into it.
 
-The **main (root) dialog** in your **Composer project** is the same as the project name you gave it. It correspons to your Power Viurtal Agents bot content. In this example below, your **main (root) dialog** is **PVA_Composer_Bot**: 
+The **main (root) dialog** in your **Composer project** is the same as the project name you gave it. It corresponds to your Power Viurtal Agents bot content. In this example below, your **main (root) dialog** is **PVA_Composer_Bot**: 
 ![Bot Framework Composer main (root) dialog](media/Composer_Guidelines/Gd_mainDialog_initial.png)
 
-There are few key guidliens to follow when using Composer to create your bot content for Power Virtual Agents.
+There are few key guidelines to follow when using Composer to create your bot content for Power Virtual Agents.
 
 - You cannot edit Power Virtual Agents topics in Composer; this content is read-only in Composer. However, you can create and add content to Power Virtual Agents in Composer.
 
-- You can add new **Bot Framework triggers** of any kind to your **main (root) dialog**. However, the structure of **triggers** added to the **main (root) dialog** should be kept as simple as possible. **Send a reponse**, **Ask a question** or any actions that contain **Langauge Generation** cannot be used in **triggers** added to **main (root) dialog**. Doing so will result in validation errors and prevent you from publishing your Composer content to Power Virtual Agents.
+- You can add new **Bot Framework triggers** of any kind to your **main (root) dialog**. However, the structure of **triggers** added to the **main (root) dialog** should be kept as simple as possible. **Send a response**, **Ask a question**, or any actions that contain **Language Generation** cannot be used in **triggers** added to **main (root) dialog**. Doing so will result in validation errors and prevent you from publishing your Composer content to Power Virtual Agents.
 
 ![Bot Framework Composer main (root) dialog trigger phrases](media/Composer_Guidelines/Gd_mainDialog_trigger.png)
 
-- You can create new **Bot Framework dialogs** and add **events** and **triggers** of any kind to them. **Send a response**,**Ask a question**, and **Langauge Generation** can be used in **triggers** that belong to the new **dialogs**.
+- You can create new **Bot Framework dialogs** and add **events** and **triggers** of any kind to them. **Send a response**, **Ask a question**, and **Language Generation** can be used in **triggers** that belong to the new **dialogs**.
 
-- On the **Bot Reponses** tab, the **main (root) dialog** section should be empty. Having any assets there will result in validation errors and prevent your from publishing your Composer content to Power Virtual Agents.
+- On the **Bot Responses** tab, the **main (root) dialog** section should be empty. Having any assets there will result in validation errors and prevent you from publishing your Composer content to Power Virtual Agents.
 
 ![Bot Framework Composer main (root) dialog empty](media/Composer_Guidelines/Gd_BotReponses_main.png)
 
-- On the **Bot Responses** tab, the **All** section should be empty (that is, the **Common.lg** file should be empty). Having any assets there will result in validation errors and prevent your from publishing your Composer content to Power Virtual Agents.
+- On the **Bot Responses** tab, the **All** section should be empty (that is, the **Common.lg** file should be empty). Having any assets there will result in validation errors and prevent you from publishing your Composer content to Power Virtual Agents.
 
 ![Bot Framework Composer main (root) dialog with no assets](media/Composer_Guidelines/Gd_BotReponses_all.png)
 
 - All **Language Generation** (.lg) and **Language Understanding** (.lu) files should have the corresponding **dialogs**. For example, if you have only one **dialog** with name **dialog1**, then you can have **dialog1.en-us.lg** and **dialog1.en-us.lu**, but you cannot have **extra.en-us.lg**.
 
-- The **main (root) dialog** in Composer should never be deleted, as it correspoonts to your Power Virtual Agents bot. The **main (root) dialog** can have 0 or more **triggers**.
+- The **main (root) dialog** in Composer should never be deleted, as it corresponds to your Power Virtual Agents bot. The **main (root) dialog** can have zero or more **triggers**.
 
-For a deep-dive on Bot Framework Composer **dialogs**, **events**, **trigers** and how to create advanced bot content with Bot Framework, refer to the following resources:
+For a deep-dive on Bot Framework Composer **dialogs**, **events**, **triggers** and how to create advanced bot content with Bot Framework, refer to the following resources:
 
 - [Bot Framework Composer dialogs](/composer/concept-dialog)
 - [Bot Framework Composer events and triggers](/composer/concept-events-and-trigger)
@@ -130,7 +130,7 @@ Cannot invoke Bot Skills in Composer content meant for Power Virtual Agents
 - QnA Maker  
 This feature is not available in Composer for Power Virtual Agents
 
-- OAuth Login and User Sign Off  
+- OAuth Login and User Sign Out 
 These types of actions are not supported in Composer for Power Virtual Agents
 
 - Dialog Inputs and Outputs  
@@ -159,10 +159,10 @@ In the **Authoring canvas**, create a **Question** node to ask the user about th
 Rename the output variable **Var** to **user_city**. Set the variable **Usage** to **Bot (any topic can access)** and **Save** the topic.
 ![Power Virtual Agents variable](media/Composer_Example1/E1_Dialog2.png)
 
-Next, you will enhance this topic **Meal delivery options** to show the images of the meal choices avaliable in your user’s city by extending your bot with Bot Framework Composer content. Go back to **Topics** page and click on **Open in Bot Framework Composer (Preview)** button to download and launch Bot Framework Composer.
+Next, you will enhance this topic **Meal delivery options** to show the images of the meal choices availiable in your user’s city by extending your bot with Bot Framework Composer content. Go back to **Topics** page and click on **Open in Bot Framework Composer (Preview)** button to download and launch Bot Framework Composer.
 ![Power Virtual Agents Open Composer](media/Composer_Example1/E1_OpenComposer.png)
 
-Your Power Virtual Agents bot will open in a Bot Framework Composer project. You will see that Power Virtual Agents topics from your bot are uploaded into Composer but are not editable. **Recognizer Type** field is set to **Default Recognizer** which is **Power Virtual Agents NLU**.
+Your Power Virtual Agents bot will open in a Bot Framework Composer project. You will see that Power Virtual Agents topics from your bot are uploaded into Composer but are not editable. **Recognizer Type** field is set to **Default Recognizer**, which is **Power Virtual Agents NLU**.
 
 >[!TIP]
 >The **LUIS** service is not supported as a Recognizer for Power Virtual Agents in Composer. The **Default Recognizer** is set to **Power Virtual Agents NLU** instead. You do not need to have an additional subscription to use **Power Virtual Agents NLU** because it is included in your Power Virtual Agents license.
@@ -318,7 +318,7 @@ Add the **Activity** that will display this adaptive card in the Bot Framework d
 
 ![Composer Bot Responses tab - Activity](media/Composer_Example1/E1_Meals_BotResponse_Activity.png)
 
-Go back to **Design View** in Composer and select the **Meals** dialog. Select **BeginDialog** and add **Send a response** to your dialog. We'll use this node to display the adaptive card we have just created in the **Bot Reponses** tab.
+Go back to **Design View** in Composer and select the **Meals** dialog. Select **BeginDialog** and add **Send a response** to your dialog. We'll use this node to display the adaptive card we have created in the **Bot Responses** tab.
 
 ![Composer Begin Dialog - add Send a response action](media/Composer_Example1/E1_Meals_AddResponse.png)
 
@@ -334,11 +334,11 @@ For the new **Send a response** action, the **Language Generation** panel will o
 
 You are now ready to upload the **Meals** dialog to your Power Virtual Agents bot. Select the **Publish** tab and then the **Publish profile** of your bot, and choose **Publish to selected profile**. Add an optional comment and select **Okay** in the confirmation window to start uploading.
 
-![Composer Publish Example 1](media/Composer_Example1/E1_Meals_Publish.png)
+![Composer Publish Example 1 publish](media/Composer_Example1/E1_Meals_Publish.png)
 
 The Composer content will be validated by Power Virtual Agents and a successful publish will be reported in Composer.
 
-![Composer Publish Example 1](media/Composer_Example1/E1_Meals_Publish_Success.png)
+![Composer Publish Example 1 publish success](media/Composer_Example1/E1_Meals_Publish_Success.png)
 
 Go to the Power Virtual Agents **Topics** page to see your new Bot Framework content. Your new **Meals** Bot Framework dialog is now shown on the **Topics** page as part of your Power Virtual Agents bot.
 
@@ -348,11 +348,11 @@ Open the **Meal delivery options** topic in **Authoring canvas** in Power Virtua
 
 ![Power Virtual Agents - Authoring canvas](media/Composer_Example1/E1_MealsDelivery_redirect.png)
 
-Your Power Virtual Agents topic **Meal delivery options** will call the Bot Framework dialog **Meals** to display an adaptive card. Select **Save** to save the chamges to your topic.
+Your Power Virtual Agents topic **Meal delivery options** will call the Bot Framework dialog **Meals** to display an adaptive card. Select **Save** to save the changes to your topic.
 
 ![Power Virtual Agents - redirect to Bot Framework dialog](media/Composer_Example1/E1_MealsDelivery_RedirectToMeals.png)
 
-To test you changes in Power Virtual Agents, open **Test pane** and make sure **Track between topics** is set on. Type in the following to start your conversation:
+To test you changes in Power Virtual Agents, open **Test pane** and make sure **Track between topics** is set on. Type in the following text to start your conversation:
 - What meals do you deliver?
 
 ![Power Virtual Agents Example 1 test](media/Composer_Example1/Example1_cropped.gif)
@@ -362,20 +362,20 @@ To test you changes in Power Virtual Agents, open **Test pane** and make sure **
 
 Using Composer, you can create a multi-select options list to be used in your chatbot.
 
-Open the Power Virtual Agents bot used in the [Example 1](#example-1-show-an-adaptive-card-in-power-virtual-agents) and select **Open in Bot Framework Composer (Preview)** on the **Topics** page to open the bot in Composer. While in **Design View** in Composer select **+ Add** and choose to add another Bot Framework dialog.
+Open the Power Virtual Agents bot used in the [Example 1](#example-1--show-an-adaptive-card-in-power-virtual-agents) and select **Open in Bot Framework Composer (Preview)** on the **Topics** page to open the bot in Composer. While in **Design View** in Composer select **+ Add** and choose to add another Bot Framework dialog.
 
 ![Composer Create new Bot Framework dialog](media/Composer_Example2/E2_DailySpecials_create.png)
 
 In your new **DailySpecials** dialog in Composer, go to **Manage properties** and select **Set a property** to create a new Composer property in the dialog.
 
-![Composer Create new Bot Framework dialog](media/Composer_Example2/E2_DailySpecials_set_a_property.png)
+![Composer Create new Bot Framework dialog set property](media/Composer_Example2/E2_DailySpecials_set_a_property.png)
 
 Give this property the following name in Composer **Set a property** panel on the right:
 
 ```C#
 conversation.days_array
 ```
-In the **Value** field in the **Set a property** panel, change the type to **[]** to indicate that this property is going to be an array. Enter the following data into the **Value** field to create an array populated with days of the week:
+In the **Value** field in the **Set a property** panel, change the type to **\[\]** to indicate that this property is going to be an array. Enter the following data into the **Value** field to create an array populated with days of the week:
 
 ```C#
 ["Sunday",  "Monday",  "Tuesday",   "Wednesday",  "Thursday",  "Friday",  "Saturday"]
@@ -385,9 +385,9 @@ In the **Value** field in the **Set a property** panel, change the type to **[]*
 
 Next, go to **Bot Responses** tab in Composer and select **DailySpecials**. Select **Show code**.
 
-![Composer Bot Responses tab](media/Composer_Example2/E2_DialySpecials_BotReponse_initial.png)
+![Composer Bot Responses tab show code](media/Composer_Example2/E2_DialySpecials_BotReponse_initial.png)
 
-Add the following into the **Bot Reponses** tab for **DailySpecials** to create daily offers for all the days of the week:
+Add the following code into the **Bot Responses** tab for **DailySpecials** to create daily offers for all the days of the week:
 
 ```C#
 # DailySpecials(day)
@@ -448,7 +448,7 @@ You can use this **conversation.day_choice** property to display the daily speci
 ```
 ![Composer Design View - display Daily Special for the selected day](media/Composer_Example2/E2_DailySpecials_addResponse.png)
 
-Go to **Design View** tab in Composer and navigate to the Power Virtual Agents **main (root) dialog**. This dialog is the top level read-only dialog in Composer that you created when you opened your bot in Composer. Select **+ Add** and choose **Add new trigger** option.
+Go to **Design View** tab in Composer and navigate to the Power Virtual Agents **main (root) dialog**. This dialog is the top-level read-only dialog in Composer that you created when you opened your bot in Composer. Select **+ Add** and choose **Add new trigger** option.
 
 ![Composer Design View - add new trigger](media/Composer_Example2/E2_main_addNewTrigger.png)
 
@@ -480,16 +480,16 @@ Once your new Composer content is successfully published, go to the Power Virtua
 >[!NOTE]
 >You might need to refresh your **Topics** page in Power Virtual Agents to see the new content that has been uploaded from Composer. 
 
-![Power Virtual Agents Topics page](media/Composer_Example2/E2_DailySpecials_inPVA.png)
+![Power Virtual Agents Topics page refresh](media/Composer_Example2/E2_DailySpecials_inPVA.png)
 
-Make sure **Track between topics** is turned on, and test your new bot content by entering the following in the test bot in Power Virtual Agents to start a conversation:
+Make sure **Track between topics** is turned on, and test your new bot content by entering the following text in the test bot in Power Virtual Agents to start a conversation:
 
 - Do you have any specials?
 
 ![Power Virtual Agents Test pane](media/Composer_Example2/Example2._cropped.gif)
 
 ## Example 3 – Use Bing Search as a fallback in Power Virtual Agents 
-Open the Power Virtual Agents bot used in [Example 1](#example-1-show-an-adaptive-card-in-power-virtual-agents). 
+Open the Power Virtual Agents bot used in [Example 1](#example-1--show-an-adaptive-card-in-power-virtual-agents). 
 
 Go to the **Topics** page and select **Open in Bot Framework Composer (Preview)** to open Composer. 
 
@@ -499,7 +499,7 @@ Name your new dialog **BingSearch** in Composer.
 
 ![Composer add dialog](media/Composer_Example3/E3_BingSearch_addDialog.png)
 
-After the **BingSearch** dialog is added, go to the **Bot Responses** tab for this dialog, switch to **Show code** view and insert the following adaptive card JSON:
+After the **BingSearch** dialog is added, go to the **Bot Responses** tab for this dialog, switch to **Show code** view, and insert the following adaptive card JSON:
 
 ```JSON
 
@@ -538,7 +538,7 @@ After the **BingSearch** dialog is added, go to the **Bot Responses** tab for th
 ![Composer Bot Responses - add JSON](media/Composer_Example3/E3_BingSearch_BotResponses_AdaptiveCard.png)
 
 
-Add this **Activity** to the same **Bot Reponses** window in Composer:
+Add this **Activity** to the same **Bot Responses** window in Composer:
 
 ```
  # AdaptiveCardBingSearch(user_utterance)
@@ -550,7 +550,7 @@ Add this **Activity** to the same **Bot Reponses** window in Composer:
 ![Composer Bot Responses - add Activity](media/Composer_Example3/E3_BingSearch_BotResponses_Activity.png)
 
 
-Go to the **Design** tab in Composer and select **BeginDialog** under the **BingSearch** dialog. Add the **Send a response** action and set the following in the **Language Generation** panel:
+Go to the **Design** tab in Composer and select **BeginDialog** under the **BingSearch** dialog. Add the **Send a response** action and set the following entry in the **Language Generation** panel:
 
 ```C#
 -${AdaptiveCardBingSearch(turn.activity.text)}
@@ -576,7 +576,7 @@ In the **Begin a new dialog** panel on the right, select the dialog **BingSearch
 
 You are now ready to add you Composer content to your Power Virtual Agents bot. Go to **Publish** tab in Composer and publish it to your Power Virtual Agents bot.
 
-![Composer Publish tab](media/Composer_Example3/E3_BingSearch_uploadSuccess.png)
+![Screenshot of Composer Publish tab](media/Composer_Example3/E3_BingSearch_uploadSuccess.png)
 
 Once your new Composer content is successfully published, you can now see that **OnUnknownIntent** was added to the **Topics** page in Power Virtual Agents.
 
@@ -585,7 +585,7 @@ Once your new Composer content is successfully published, you can now see that *
 
 ![Power Virtual Agents Topics page](media/Composer_Example3/E3_BingSearch_inTopicsList.png)
 
-Make sure **Track between topics** is turned on, and test your new bot content by entering the following in the test bot in Power Virtual Agents to start a bot conversation:
+Make sure **Track between topics** is turned on, and test your new bot content by entering the following text in the test bot in Power Virtual Agents to start a bot conversation:
 - Is tofu vegan?
 
 ![Power Virtual Agents test](media/Composer_Example3/Example3_cropped.gif)
@@ -622,17 +622,17 @@ After you successfully publish your Bot Framework content, you can use Power Vir
 >The Bot Framework Emulator cannot be used to test Composer content created for Power Virtual Agents bots. 
 
 ## Troubleshooting
-If you having trouble publishing your Bot Framework Composer content to Power Virtual Agents, you can use the **See Log** feature in the **Publish** tab in Composer. The log will provide a detailed description of the errors encountered during validation. Select the Publish attempt in the **Publish history** and click on **See Log** button.
+If you're having trouble publishing your Bot Framework Composer content to Power Virtual Agents, you can use the **See Log** feature in the **Publish** tab in Composer. The log will provide a detailed description of the errors encountered during validation. Select the Publish attempt in the **Publish history** and click on **See Log** button.
 
 ![Composer Publish - See Log](media/Composer_Troubleshooting/TL_PublishHistory.png)
 
-This will bring up the list of warnings and errors that were encourered during the Publish process in Composer, along with suggestions on how to fix the errors:
+Selecting the log will bring up the list of warnings and errors that were encountered during the Publish process in Composer, along with suggestions on how to fix the errors:
 
 ![Composer Publish - warnings and errors](media/Composer_Troubleshooting/Tl_PublishError.png)
 
 If a problem persists or you encounter issues developing in Bot Framework Composer, go to [Bot Framework Composer issues on GitHub](https://github.com/microsoft/BotFramework-Composer/issues) to see the list of known issues in Composer or to log a new issue. 
 
-For troubleshooting your bot in Power Virtual Agents, refer to the [Troubleshoot your bot](advanced-flow#troubleshoot-your-bot) topic in Power Virtual Agents documentation.
+For troubleshooting your bot in Power Virtual Agents, refer to the [Troubleshoot your bot](advanced-flow.md#troubleshoot-your-bot) topic in Power Virtual Agents documentation.
 
 ## Learn More
 
