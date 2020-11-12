@@ -70,7 +70,7 @@ You don't have sufficient permissions to access customer engagement apps (Dynami
 
 In some cases, users are not automatically provisioned into Common Data Service environments. 
 
-If a user meets all access requirements but is still missing from an environment, the user likely falls into one of the following cases:
+If a user meets all access requirements but is still missing from an environment, the user may fall into one of the following cases:
 
 1. Users with Office licenses
 
