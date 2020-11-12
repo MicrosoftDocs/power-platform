@@ -36,7 +36,7 @@ In Power Apps, populate the service with your organization’s data, including u
   
 <a name="BKMK_O365CRMroles"></a>   
 
-## Differences between the Microsoft Online services environment administrative roles and Common Data Service security roles  
+## Differences between the Microsoft Online services environment administrative roles and Microsoft Dataverse security roles  
  *Administrative roles* are available to assign to users in the [!INCLUDE[pn_MS_Online_Services_Portal](../includes/pn-ms-online-services-portal.md)]. The administrative roles cover a set of rights and permissions related to managing the service subscription, such as adding users and assigning licenses. The global administrator role has rights to control every aspect of the subscription and to add subscriptions to other online services. The password administrator role has rights to reset a user’s password, create service requests, and monitor the service.  
   
  *Security roles* are assigned within customer engagement apps and cover rights and permissions-related aspects, for example, permission to update records or to publish customizations.  

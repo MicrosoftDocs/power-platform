@@ -40,7 +40,7 @@ that teams commonly put in place include Initiate, Export from Dev, Build, and R
 ![ALM powered by Azure DevOps](media/initiate-build-release.png "ALM powered by Azure DevOps")
 
 > [!NOTE] 
-> Microsoft Power Platform Build Tools are supported only for a Common Data Service environment with a database. More information: [Create an environment with a database](/power-platform/admin/create-environment#create-an-environment-with-a-database)
+> Microsoft Power Platform Build Tools are supported only for a Microsoft Dataverse environment with a database. More information: [Create an environment with a database](/power-platform/admin/create-environment#create-an-environment-with-a-database)
 
 ## What are Microsoft Power Platform Build Tools?
 

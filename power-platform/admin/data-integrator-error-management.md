@@ -1,6 +1,6 @@
 ---
 title: Data Integrator error management and troubleshooting
-description: Integrate data from multiple sources into Common Data Service
+description: Integrate data from multiple sources into Microsoft Dataverse
 author: sabinn-msft
 ms.service: power-platform
 ms.topic: how-to
@@ -19,7 +19,7 @@ search.app:
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-The Data Integrator is a point-to-point integration service used to integrate data from multiple sources--for example, Dynamics 365 Finance and Operations, Dynamics 365 Sales, Salesforce, and Microsoft SQL (Preview)--into Common Data Service. It also supports integrating data into Dynamics 365 Finance and Operations and Dynamics 365 Sales. The [Integrate data into Common Data Service](data-integrator.md) topic provides detailed step-by-step instructions to help you set up projects for process-based integration scenarios like Prospect to Cash, Field Service, and Project Service integrations. 
+The Data Integrator is a point-to-point integration service used to integrate data from multiple sources--for example, Dynamics 365 Finance and Operations, Dynamics 365 Sales, Salesforce, and Microsoft SQL (Preview)--into Microsoft Dataverse. It also supports integrating data into Dynamics 365 Finance and Operations and Dynamics 365 Sales. The [Integrate data into Dataverse](data-integrator.md) topic provides detailed step-by-step instructions to help you set up projects for process-based integration scenarios like Prospect to Cash, Field Service, and Project Service integrations. 
 
 While we are constantly evolving and driving fixes into the platform based on customer feedback, we understand there is a need to provide guidance when you run into issues. This topic walks you through error management and troubleshooting some of these issues.
 
@@ -145,7 +145,7 @@ If you are unable to see your connections or environments in the drop-down while
       > [!div class="mx-imgBorder"] 
       > ![Connections confirm access to entities](media/ConnectionstestFlow5.png "Connections confirm access to entities")
 
-* **Organizations**: This is where you would specify the legal entity (for example, USMF) for Dynamics 365 Finance and Operations, the business unit for Dynamics 365 Sales, or the Common Data Service organization name. If you miss this step, you get a message that contains valid names corresponding to your application that you then need to plug in under Organizations.
+* **Organizations**: This is where you would specify the legal entity (for example, USMF) for Dynamics 365 Finance and Operations, the business unit for Dynamics 365 Sales, or the Dataverse organization name. If you miss this step, you get a message that contains valid names corresponding to your application that you then need to plug in under Organizations.
 
 ### Project validation errors 
 

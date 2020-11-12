@@ -173,7 +173,7 @@ Once the copy process is complete, the target environment is placed in [Administ
 
 ### See also  
 [What's new about storage](whats-new-storage.md) <br />
-[New Common Data Service storage capacity](capacity-storage.md) <br />
+[New Microsoft Dataverse storage capacity](capacity-storage.md) <br />
 [Legacy storage capacity](legacy-capacity-storage.md)
 
 

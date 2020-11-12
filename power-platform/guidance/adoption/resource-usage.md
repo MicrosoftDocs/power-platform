@@ -39,7 +39,7 @@ Out-of-the-box tooling around monitoring, alerts, and actions falls into the fol
   - [Power Automate for Admins](https://docs.microsoft.com/connectors/microsoftflowforadmins/) allows you to perform typical admin actions, such as disabling or deleting a flow.
   - [Power Apps for Admins](https://docs.microsoft.com/connectors/powerappsforadmins/) to set permissions on Power Apps or set permissions to a certain connector being used by this app.
   - [Power Apps for Makers](https://docs.microsoft.com/connectors/powerappsforappmakers/), which can be used by the makers themselves, although some actions overlay administrational tasks, such as settings permissions to a Power Apps app as mentioned previously.
-  - [Power Platform for Admins](https://docs.microsoft.com/connectors/powerplatformforadmins) to perform tasks against platform components, such as creating an environment or provisioning a Common Data Service database or creating a data loss prevention (DLP) policy for a specific environment.
+  - [Power Platform for Admins](https://docs.microsoft.com/connectors/powerplatformforadmins) to perform tasks against platform components, such as creating an environment or provisioning a Microsoft Dataverse database or creating a data loss prevention (DLP) policy for a specific environment.
 
 The [Center of Excellence Starter Kit](https://aka.ms/coestarterkit) offers a template implementation using the management and admin connectors and comes with a Power BI dashboard that can be used to gain tenant-wide insights.
 

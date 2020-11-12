@@ -1,6 +1,6 @@
 ---
 title: "Manage behavior settings  | MicrosoftDocs"
-description: View and manage behavior settings for Common Data Service.
+description: View and manage behavior settings for Microsoft Dataverse.
 author: jimholtz
 manager: kvivek
 ms.service: power-platform

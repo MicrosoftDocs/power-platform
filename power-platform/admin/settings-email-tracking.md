@@ -1,6 +1,6 @@
 ---
 title: "Manage email tracking settings  | MicrosoftDocs"
-description: View and manage email tracking settings for Common Data Service.
+description: View and manage email tracking settings for Microsoft Dataverse.
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
