@@ -200,6 +200,8 @@
          href: teams/analytics-summary-teams.md
        - name: Analyze customer satisfaction
          href: teams/analytics-csat-teams.md
+       - name: Analyze session information
+         href: analytics-sessions-teams.md
        - name: Analyze topic usage
          href: teams/analytics-topic-details-teams.md
        - name: Analyze billed session information
