@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/21/2020
+ms.date: 11/16/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -179,6 +179,16 @@ By default, some out-of-the-box system entities are included in Relevance Search
 5. Select **Publish** for your changes to take effect.  
 
    If you want to change the **Can enable sync to external search index** property to **False**, you must first deselect the entity from Relevance search. If the entity is included in Relevance Search, you'll see the following message: "This entity is currently syncing to an external search index. You must remove the entity from the external search index before you can set the **Can Enable Sync to External Search Index** property to **False**." If **Can Enable Sync to External Search Index** is set to **False**, you'll see the following message when you try to include an entity in Relevance Search: "Entity can't be enabled for Relevance Search because of the configuration of its managed properties." For custom entities with particularly sensitive data, you may consider setting the **Can enable sync to external search index** property to **False**. Keep in mind, after you install the managed solution on the target system, you won't be able to change the value of the property because it's a managed property.  
+
+## Help improve Relevance Search results
+
+To help Microsoft improve Relevance Search, you can share your organization’s Relevance Search queries in Dynamics 365 and Power Platform applications with Microsoft. This data will help Microsoft build, improve, and validate the Microsoft machine learning model for the Dynamics 365 Natural Language search query technology.
+
+Your organization’s queries and results are reviewed by people using secured computers in the United States. Aggregate data about queries and results are used by Microsoft engineers and data scientists to improve future search query results for all users worldwide. Your data remains your property. Your organization’s data will be stored within your tenant’s compliance boundary and is automatically deleted after 30 days. You can delete the data at any time by navigating to the Power Platform admin center and toggling **Improve Relevance Search** to **Off**. For more information, see Terms of Service in Power Platform admin center.
+
+screenshot
+
+
 
 ### See also  
  [Use relevance search to search for records](https://docs.microsoft.com/powerapps/user/relevance-search)
