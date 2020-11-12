@@ -1,6 +1,6 @@
 ---
 title: "Use Bot Framework Composer with chatbots"
-description: "Use Bot Framework Composer to add adaptive cards, multi-select options, and more to your Power Virtual Agents chatbot."
+description: "Use Bot Framework Composer to add Adaptive Cards, multi-select options, and more to your Power Virtual Agents chatbot."
 keywords: "composer, adaptive card"
 ms.date: 11/11/2020
 ms.service: power-virtual-agents
@@ -25,7 +25,7 @@ Composer is integrated into Power Virtual Agents to allow developers and busines
 
 Composer with Power Virtual Agents lets you access conversational memory and context, including the variables defined in Power Virtual Agents. 
 
-For example, you could create event-driven dynamic dialogs to handle interruptions, cancelations and context switching. You could also add adaptive cards to display interactive elements like images and videos, forms, and more in the bot. 
+For example, you could create event-driven dynamic dialogs to handle interruptions, cancelations and context switching. You could also add Adaptive Cards to display interactive elements like images and videos, forms, and more in the bot. 
 
 Bot Framework Composer lets you use a variety of pre-built functions and expressions and define multiple variations of a phrase for the bot to select at random at runtime.
 
@@ -54,7 +54,7 @@ If you already have Composer installed, Power Virtual Agents will try to open yo
 
 
 
-If you don't have it installed, you can download it from the **download Composer** link. This takes you to a **Download confirmation** window where you can also learn more about Composer.
+If you don't have Bot Frameworker Installed installed, you can download it from the **download Composer** link. This link takes you to a **Download confirmation** window where you can also learn more about Composer.
     
 ![Screenshot of the Power Virtual Agents Composer window indicating that Composer is not installed.](media/composer/composer-not-present.png)
     
@@ -71,21 +71,24 @@ Go back to Power Virtual Agents **Topics** page. Select **Open in Bot Framework 
 >[!NOTE]
 > In some cases, a firewall might be blocking some features in Composer and you might need to explicitly allow access. Check with your admin for details.
 
-If you're opening Composer from this Power Virtual Agents bot for the first time, you need to specify the **Name** (alphanumeric, no spaces or special characters) for your **Composer project**. You can skip this step if you already have a bot project for this bot my selecting **Cancel** in this step.
+If you're opening Composer from this Power Virtual Agents bot for the first time, you need to specify the **Name** (alphanumeric, no spaces or special characters) for your **Composer project**. You can skip this step if you already have a bot project for this bot by selecting **Cancel** in this step.
+
 ![Create Bot Framework Composer](media/ComposerUI_CreateProject.png)
 
 Your Power Virtual Agents bot is now open in Composer and you are ready to start developing.
+
 ![Bot Framework Composer Project Initial View](media/ComposerUI_Open_initialView.png)
 
 In some cases, Power Virtual Agents might be unable to launch Composer automatically. However, you can always launch it manually from your browser.
 Use the **Copy Link** feature to copy the link to the Composer and paste it as the URL in your web browser.
+
 ![Bot Framework Composer Copy Link](media/ComposerUI_CopyLinkComposer.png)
 
 
 ## Guidelines for creating bot content for Power Virtual Agents in Composer
 When opened from a Power Virtual Agents bot, Composer launches a **Composer project** on your PC and loads your bot content into it.
 
-The **main (root) dialog** in your **Composer project** is the same as the project name you gave it. It corresponds to your Power Viurtal Agents bot content. In this example below, your **main (root) dialog** is **PVA_Composer_Bot**: 
+The **main (root) dialog** in your **Composer project** is the same as the project name you gave it. It corresponds to your Power Virtual Agents bot content. In this example below, your **main (root) dialog** is **PVA_Composer_Bot**: 
 ![Bot Framework Composer main (root) dialog](media/Composer_Guidelines/Gd_mainDialog_initial.png)
 
 There are few key guidelines to follow when using Composer to create your bot content for Power Virtual Agents.
@@ -130,16 +133,16 @@ Cannot invoke Bot Skills in Composer content meant for Power Virtual Agents
 - QnA Maker  
 This feature is not available in Composer for Power Virtual Agents
 
-- OAuth Login and User Sign Out 
+- OAuth Login and User Sign Out  
 These types of actions are not supported in Composer for Power Virtual Agents
 
 - Dialog Inputs and Outputs  
-Dialog Inputs and outputs are not supported in Composer for Power Virtual Agents
+Dialog Inputs and Outputs are not supported in Composer for Power Virtual Agents
 
 - Entity detection in trigger phrases in Composer  
 Cannot use `# getUserName  - my name is {username=userName}` in Composer
 
-- Testing in Bot Framework emulator  
+- Testing in Bot Framework Emulator  
 All Composer content should be published and then tested in Power Virtual Agents  
 
 ## Example 1 – Show an Adaptive Card in Power Virtual Agents 
@@ -151,15 +154,19 @@ Go to **Topics** in Power Virtual Agents and create a new topic called **Meal de
 - entrees available for delivery 
 
 Select **Save** to save your new topic and then select **Go to authoring canvas** to create your dialog:
+
 ![Power Virtual Agents new topic](media/Composer_Example1/E1_MealsTopicDetails.png)
 
 In the **Authoring canvas**, create a **Question** node to ask the user about their location and make sure to select entity **City** from the dropdown list in the **Identity** field:
+
 ![Power Virtual Agents Question node](media/Composer_Example1/E1_Dialog1.png)
 
 Rename the output variable **Var** to **user_city**. Set the variable **Usage** to **Bot (any topic can access)** and **Save** the topic.
+
 ![Power Virtual Agents variable](media/Composer_Example1/E1_Dialog2.png)
 
-Next, you will enhance this topic **Meal delivery options** to show the images of the meal choices availiable in your user’s city by extending your bot with Bot Framework Composer content. Go back to **Topics** page and click on **Open in Bot Framework Composer (Preview)** button to download and launch Bot Framework Composer.
+Next, you will enhance the topic **Meal delivery options** to show the images of the meal choices available in your user’s city by extending your bot with Bot Framework Composer content. Go back to **Topics** page and click on **Open in Bot Framework Composer (Preview)** button to download and launch Bot Framework Composer.
+
 ![Power Virtual Agents Open Composer](media/Composer_Example1/E1_OpenComposer.png)
 
 Your Power Virtual Agents bot will open in a Bot Framework Composer project. You will see that Power Virtual Agents topics from your bot are uploaded into Composer but are not editable. **Recognizer Type** field is set to **Default Recognizer**, which is **Power Virtual Agents NLU**.
@@ -173,7 +180,7 @@ Go to the **Design** tab in Composer and select **+ Add** and then **Add new dia
 
 ![Composer Design tab](media/Composer_Example1/E1_Meals_creatNewDialog.png)
 
-Name your new dialog **Meals**. Select **OK** to create a new dialog **Meals** in Composer. You will use this **Bot Framework dialog** to display an adaptive card.
+Name your new dialog **Meals**. Select **OK** to create a new dialog **Meals** in Composer. You will use this **Bot Framework dialog** to display an Adaptive Card.
 
 ![Composer Design tab new dialog](media/Composer_Example1/E1_Meals_newDialog.png)
 
@@ -181,7 +188,7 @@ Go to the **Bot Responses** tab in Composer and open the **Meals** section. Sele
 
 ![Composer Bot Responses tab](media/Composer_Example1/E1_Meals_BotReponses_empty.png)
 
-In the code window, copy and paste the following text strings and image URLs that you will use in your adaptive card:
+In the code window, copy and paste the following text strings and image URLs that you will use in your Adaptive Card:
 ```JSON
 # Chicken()
 -Chicken
@@ -203,11 +210,11 @@ In the code window, copy and paste the following text strings and image URLs tha
 
 ![Composer Bot Responses tab with strings.](media/Composer_Example1/E1_Meals_BotResponse_data.png)
 
-Next, add the adaptive card by adding the following JSON code to the same window. This adaptive card takes a parameter and displays a set of three images based on the image URLs.
+Next, add the Adaptive Card by adding the following JSON code to the same window. This Adaptive Card takes a parameter and displays a set of three images based on the image URLs.
 
-```JSON
+````JSON
 # adaptivecardjson_meals(location)
-
+- ```
 {
     "type": "AdaptiveCard",
     "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
@@ -302,11 +309,13 @@ Next, add the adaptive card by adding the following JSON code to the same window
         }
     ]
 }
- ```
- 
+```
+````
+
+  
 ![Composer Bot Responses tab - Adaptive Card JSON](media/Composer_Example1/E1_Meals_BotReponse_JSON.png)
 
-Add the **Activity** that will display this adaptive card in the Bot Framework dialog to the same window in Composer:
+Add the **Activity** that will display this Adaptive Card in the Bot Framework dialog to the same window in Composer:
 
 ```JSON
 # AdaptiveCardMeals(location)
@@ -318,11 +327,11 @@ Add the **Activity** that will display this adaptive card in the Bot Framework d
 
 ![Composer Bot Responses tab - Activity](media/Composer_Example1/E1_Meals_BotResponse_Activity.png)
 
-Go back to **Design View** in Composer and select the **Meals** dialog. Select **BeginDialog** and add **Send a response** to your dialog. We'll use this node to display the adaptive card we have created in the **Bot Responses** tab.
+Go back to **Design View** in Composer and select the **Meals** dialog. Select **BeginDialog** and add **Send a response** to your dialog. We'll use this node to display the Adaptive Card we have created in the **Bot Responses** tab.
 
 ![Composer Begin Dialog - add Send a response action](media/Composer_Example1/E1_Meals_AddResponse.png)
 
-For the new **Send a response** action, the **Language Generation** panel will open on the side in Composer. Add the following code to this window to show the adaptive card and pass a Power Virtual Agents global variable `user_city` as a parameter: 
+For the new **Send a response** action, the **Language Generation** panel will open on the side in Composer. Add the following code to this window to show the Adaptive Card and pass a Power Virtual Agents global variable `user_city` as a parameter: 
 
 ```JSON
 - ${AdaptiveCardMeals(virtualagent.user_city)}
@@ -348,7 +357,7 @@ Open the **Meal delivery options** topic in **Authoring canvas** in Power Virtua
 
 ![Power Virtual Agents - Authoring canvas](media/Composer_Example1/E1_MealsDelivery_redirect.png)
 
-Your Power Virtual Agents topic **Meal delivery options** will call the Bot Framework dialog **Meals** to display an adaptive card. Select **Save** to save the changes to your topic.
+Your Power Virtual Agents topic **Meal delivery options** will call the Bot Framework dialog **Meals** to display an Adaptive Card. Select **Save** to save the changes to your topic.
 
 ![Power Virtual Agents - redirect to Bot Framework dialog](media/Composer_Example1/E1_MealsDelivery_RedirectToMeals.png)
 
@@ -362,7 +371,11 @@ To test you changes in Power Virtual Agents, open **Test pane** and make sure **
 
 Using Composer, you can create a multi-select options list to be used in your chatbot.
 
-Open the Power Virtual Agents bot used in the [Example 1](#example-1--show-an-adaptive-card-in-power-virtual-agents) and select **Open in Bot Framework Composer (Preview)** on the **Topics** page to open the bot in Composer. While in **Design View** in Composer select **+ Add** and choose to add another Bot Framework dialog.
+Open the Power Virtual Agents bot used in the [Example 1](#example-1--show-an-adaptive-card-in-power-virtual-agents) and select **Open in Bot Framework Composer (Preview)** on the **Topics** page to open the bot in Composer. 
+
+While in **Design View** in Composer select **+ Add** and choose to add another Bot Framework dialog.
+
+Name your new dialog **DailySpecials** in Composer.
 
 ![Composer Create new Bot Framework dialog](media/Composer_Example2/E2_DailySpecials_create.png)
 
@@ -372,12 +385,12 @@ In your new **DailySpecials** dialog in Composer, go to **Manage properties** an
 
 Give this property the following name in Composer **Set a property** panel on the right:
 
-```C#
+```JSON
 conversation.days_array
 ```
 In the **Value** field in the **Set a property** panel, change the type to **\[\]** to indicate that this property is going to be an array. Enter the following data into the **Value** field to create an array populated with days of the week:
 
-```C#
+```JSON
 ["Sunday",  "Monday",  "Tuesday",   "Wednesday",  "Thursday",  "Friday",  "Saturday"]
 ```
 
@@ -389,7 +402,7 @@ Next, go to **Bot Responses** tab in Composer and select **DailySpecials**. Sele
 
 Add the following code into the **Bot Responses** tab for **DailySpecials** to create daily offers for all the days of the week:
 
-```C#
+```JSON
 # DailySpecials(day)
 - SWITCH: ${day}
 - CASE: ${0}
@@ -426,9 +439,9 @@ Add a new prompt for user input to this dialog by selecting **Multi-choice** und
 ![Composer Design View - ask a multi choice questions](media/Composer_Example2/E2_DailySpecials_askaquestion.png)
 
 Enter the following text for the prompt:
--	Please select a day:
+`- Please select a day:`
 
-    ![Composer Design View - add propmt language generation](media/Composer_Example2/E2_DailySpecials_prompt.png)
+![Composer Design View - add prompt language generation](media/Composer_Example2/E2_DailySpecials_prompt.png)
 
 Select the **User Input (Choice)** action. In the **Prompt with multi-choice** panel, under **User Input**, set **Property** to **conversation.day_choice**. 
 Set **Output format** to **index** to return the index of the selected option instead of a value.
@@ -443,7 +456,7 @@ Select **Write an expression** for the **Array of choices** field and set it to 
 You have created a multi-choice option list that is based on **conversation.days_array** and stores the user selection into the **conversation.day_choice** property.
 You can use this **conversation.day_choice** property to display the daily special for the selected day. Add a **Send a response** action to your **DailySpecials** dialog under the **User Input** action and add the following code in the **Language Generation** panel on the right:
 
-```C#
+```JSON
 - ${DailySpecials(conversation.day_choice)}
 ```
 ![Composer Design View - display Daily Special for the selected day](media/Composer_Example2/E2_DailySpecials_addResponse.png)
@@ -457,11 +470,12 @@ Set the type of trigger to **Intent recognized** and name it **Specials**. Selec
 
 A new Bot Framework **intent trigger** will be created in Composer. On the side panel **Trigger Phrases** add the following trigger phrases for your intent:
 
-```C#
+```JSON
 -what specials do you have
 -any special deals
 -do you have discounts
 ```
+
 ![Composer Design View - Trigger Phrases](media/Composer_Example2/E2_main_addTriggerPhrases.png)
 
 Select **Begin a new dialog** under **Dialog management** to create a node that can call another dialog:
@@ -482,7 +496,7 @@ Once your new Composer content is successfully published, go to the Power Virtua
 
 ![Power Virtual Agents Topics page refresh](media/Composer_Example2/E2_DailySpecials_inPVA.png)
 
-Make sure **Track between topics** is turned on, and test your new bot content by entering the following text in the test bot in Power Virtual Agents to start a conversation:
+Make sure **Track between topics** is turned on, and test your new bot content by entering the following text in the **Test bot** pane in Power Virtual Agents to start a conversation:
 
 - Do you have any specials?
 
@@ -499,9 +513,9 @@ Name your new dialog **BingSearch** in Composer.
 
 ![Composer add dialog](media/Composer_Example3/E3_BingSearch_addDialog.png)
 
-After the **BingSearch** dialog is added, go to the **Bot Responses** tab for this dialog, switch to **Show code** view, and insert the following adaptive card JSON:
+After the **BingSearch** dialog is added, go to the **Bot Responses** tab for this dialog, switch to **Show code** view, and insert the following Adaptive Card JSON:
 
-```JSON
+````JSON
 
 # adaptivecardjson_BingSearch(user_utterance)
 - ```
@@ -534,13 +548,14 @@ After the **BingSearch** dialog is added, go to the **Bot Responses** tab for th
     ]
 }
 ```
+````
 
 ![Composer Bot Responses - add JSON](media/Composer_Example3/E3_BingSearch_BotResponses_AdaptiveCard.png)
 
 
 Add this **Activity** to the same **Bot Responses** window in Composer:
 
-```
+```JSON
  # AdaptiveCardBingSearch(user_utterance)
 [Activity
     Attachments = ${json(adaptivecardjson_BingSearch(user_utterance))}
@@ -552,7 +567,7 @@ Add this **Activity** to the same **Bot Responses** window in Composer:
 
 Go to the **Design** tab in Composer and select **BeginDialog** under the **BingSearch** dialog. Add the **Send a response** action and set the following entry in the **Language Generation** panel:
 
-```C#
+```JSON
 -${AdaptiveCardBingSearch(turn.activity.text)}
 ```
 
@@ -585,7 +600,7 @@ Once your new Composer content is successfully published, you can now see that *
 
 ![Power Virtual Agents Topics page](media/Composer_Example3/E3_BingSearch_inTopicsList.png)
 
-Make sure **Track between topics** is turned on, and test your new bot content by entering the following text in the test bot in Power Virtual Agents to start a bot conversation:
+Make sure **Track between topics** is turned on, and test your new bot content by entering the following text in the **Test bot** pane in Power Virtual Agents to start a bot conversation:
 - Is tofu vegan?
 
 ![Power Virtual Agents test](media/Composer_Example3/Example3_cropped.gif)
@@ -601,19 +616,19 @@ For example, create a variable called **user_city** in your Power Virtual Agents
 
 This setting makes the Power Virtual Agents variable **user_city** available in Bot Framework Composer. Use the following notation to refer to it in Composer:
 
- ```C#
+ ```JSON
 virtualagent.user_city 
 ```
 
 ![Composer - refer to Power Virtual Agents variables](media/Composer_Example1/E1_Meals_ResponseAdded.png)
 
 ## Testing Bot Framework content with Power Virtual Agents
-You can test the content you have created in Bot Framework Composer by publishing it to Power Virtual Agents and using the test bot in Power Virtual Agents.
+You can test the content you have created in Bot Framework Composer by publishing it to Power Virtual Agents and using the **Test bot** pane in Power Virtual Agents.
 Publish your Bot Framework content to a Power Virtual Agents bot by selecting its **Publish profile** in the **Publish** tab in Composer.
 
 ![Composer Publish tab](media/Composer_Test/Test_Publish_Success.png)
 
-After you successfully publish your Bot Framework content, you can use Power Virtual Agents test bot to test it. Start a conversation with the bot by typing in a trigger phrase in the Power Virtual Agents test bot:
+After you successfully publish your Bot Framework content, you can use Power Virtual Agents **Test bot** pane to test it. Start a conversation with the bot by typing in a trigger phrase in the Power Virtual Agents **Test bot** pane:
 
 ![Power Virtual Agents test bot](media/Composer_Test/Test_image.png)
 
