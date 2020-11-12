@@ -1,6 +1,6 @@
 ---
 title: "Download chatbot sessions in Microsoft Teams"
-description: "Download sessions from the last 30 days for your bot conversations."
+description: "Download Power Virtual Agents chatbot session information from the last 30 days in the app in Microsoft Teams."
 keywords: "PVA, teams"
 ms.date: 11/12/2020
 ms.service: power-virtual-agents
