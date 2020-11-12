@@ -114,5 +114,5 @@ The shared component library in the [theming components solution](theming-compon
 
 ## Trial Licenses
 
-A Power Automate Per User license (amongst other license requirements) will be required to run the CoE Starter Kit flows, a trial license does not have sufficient API call allowances (https://docs.microsoft.com/en-us/power-automate/limits-and-config#looping-and-debatching-limits) to run the CoE Starter Kit flows.
+A Power Automate Per User license (amongst other license requirements) will be required to run the CoE Starter Kit flows, a trial license does not have sufficient API call allowances (https://docs.microsoft.com/power-automate/limits-and-config#looping-and-debatching-limits) to run the CoE Starter Kit flows.
 For full list of license requirements see [Setup Pre-requisits](setup.md#prerequisites)
