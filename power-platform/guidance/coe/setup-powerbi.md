@@ -22,7 +22,7 @@ The Power BI dashboard provides a holistic view with visualizations and insights
 
 ![CoE Starter Kit Power BI dashboard](media/coe1.PNG "CoE Starter Kit Power BI dashboard")
 
-You can either get the CoE Power BI dashboard from AppSource or download the Power BI file and configure it in Power BI Desktop, which will allow you to make changes to it. Both options are described below; both options require you to get the environment URL first.
+You can get the CoE Power BI dashboard by downloading the Power BI file and configuring it in Power BI Desktop. This will allow you to make changes to it. You are required you to get the environment URL in order to use the Dashboard.
 
 > [!NOTE]
 > - Before setting up the Power BI dashboard, you must have installed the [CoE core components solution](setup-core-components.md).<br>
@@ -44,44 +44,13 @@ You need the environment URL of the Microsoft Power Platform environment the CoE
 
    ![Environment settings available in the Power Platform admin center](media/coe20.png "Environment settings available in the Power Platform admin center")
 
-<!--## Option 1: Get the Power BI dashboard from AppSource
-
-> [!NOTE]
-> You can't deploy from AppSource if you're deploying to the government cloud (GCC). If you're using GCC, please use the [Configure the Power BI dashboard by using the .pbix file](#configure-by-using-pbix-file) instructions below.
-
-1. Go to the [CoE Starter Kit page on AppSource](https://appsource.microsoft.com/product/power-bi/powerapps_pbi.powerapps_coe).
-
-1. Select **Get It Now**
-
-   ![Microsoft Power Platform CoE Starter Kit offer on AppSource](media/coe21.png "Microsoft Power Platform CoE Starter Kit offer on AppSource")
-
-1. Accept the terms and conditions, and make sure you have signed in by using your organization account.
-
-1. Wait for the app to be installed.
-
-1. After the app installation is finished, select **Go to app**.
-
-   ![Your new app is ready](media/coe22.png "Your new app is ready")
-
-1. To connect the dashboard to your own environment and data, select **Connect** 
-
-   ![How to get started with your app from AppSource](media/coe24.png "How to get started with your app from AppSource")
-
-1. Copy and paste the URL you retrieved in [Get the environment URL](#get-the-environment-url), above, and then select **Next**
-
-   ![Connect to the new Microsoft Power Platform CoE Starter Kit tenant](media/coe23.png "Connect to the new Microsoft Power Platform CoE Starter Kit tenant")
-
-1. Confirm your sign-in to finish setting up the app.
-
-The dashboard app will appear under the **Reports** tab of your workspace, and can be opened from there.-->
-
-## Configure the Power BI dashboard<a name="configure-by-using-pbix-file"></a>
+## Configure the Power BI dashboard
 
 You can configure and modify the Power BI dashboard by working directly with the Power BI (.pbit) file and Power BI Desktop. This gives you flexibility in terms of modifying the dashboard to your own branding, and including (or excluding) pages or visuals you want to see (or not see) in the dashboard.
 
 1. In Power BI Desktop, open the PowerPlatformAdminDashboard.pbit file, which can be found in the CoE Starter Kit you downloaded from [aka.ms/CoeStarterKitDownload](https://aka.ms/CoEStarterKitDownload).
 
-1. Enter the URL of your environment instance for **OrgUrl**, and&mdash;if prompted&mdash;sign in to Power BI Desktop with your organization account that has access to the environment you installed the CoE Starter Kit in.
+1. Enter the URL of your environment instance (including the https:// prefix) for **OrgUrl**, and&mdash;if prompted&mdash;sign in to Power BI Desktop with your organization account that has access to the environment you installed the CoE Starter Kit in.
 
    ![Enter OrgUrl to configure Power BI dashboard](media/pbit.png "Enter OrgUrl to configure Power BI dashboard")
 

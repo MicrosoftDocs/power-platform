@@ -100,11 +100,16 @@ The import can take up to 10 minutes to be completed.
 
 The flows with the prefix *Sync* are required for populating and cleaning up data in the Common Data Service entities (Environment, Power Apps App, Flow, Flow Action Detail, Connector, and Maker). The sync flows are used to write or delete data from the admin connectors to the Common Data Service entities. These flows run on a schedule.
 
-- Ensure that the **Status** of all **Admin \| Sync Template v2 (...)** flows is **On**.
+Note that the first run of these will be long running. See the [limitations information](/limitations.md#Long-running-flows) for more details.
+We will avoid issues by enabling the flows in an explicit order. We recommend you repeat this order on each upgrade as well.
 
-    ![Ensure that all flows are on](media/msi-run.PNG "Ensure that all flows are on")
-
-The sync flows will start after you import the solution; you don't need to run them manually.
+1) Turn on: CLEANUP - Admin \| Sync Template v2 (Check Deleted)
+1) Wait until it finishes before you turn on any other flows.
+1) Ensure the Sync Template flows are already turned on for the following object types:<br> Apps, Connectors, Custom Connectors, Flows, Model Driven Apps, PVA, RPA
+1) Turn on Admin \| Sync Template v2. When it completes, turn it back off.
+1) This will cause the flows for the objects listed in step 3 to run. Wait until all of these complete.
+1) Turn back on Admin \| Sync Template v2.
+1) Turn on the rest of the flows listed in the solution
 
 ## Configure the CoE Settings entity
 
@@ -188,4 +193,4 @@ Environment variables are used to store application and flow configuration data 
     |Power Automate environment variable | For a US environment: <https://us.flow.microsoft.com/manage/environments/> <br>For an EMEA environment: <https://emea.flow.microsoft.com/manage/environments/> <br>For a GCC environment: <https://gov.flow.microsoft.us/manage/environments/> |
     |Admin eMail                         | Email address used in flows to send notifications to admins; this should be either your email address or a distribution list |
     |eMail Header Style                  | CSS style used to format emails that are sent to admins and makers. A default value is provided. [See the provided default value](code-samples/css/default-value-eMail-Header-Style.md). |
-    |Also Delete from CoE | When the Admin \| Sync Template v2 (Check Deleted) flow is run, this denotes whether you want the items deleted from CoE (Yes) or just marked as deleted (No, which is the default). |
+    |Also Delete from CoE | When the Admin \| Sync Template v2 (Check Deleted) flow is run, this denotes whether you want the items deleted from CoE (Yes, which is the default) or just marked as deleted (No). |
