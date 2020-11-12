@@ -95,9 +95,11 @@ The **main (root) dialog** in your **Composer project** is the same as the proje
 
 There are few key guidelines to follow when using Composer to create your bot content for Power Virtual Agents.
 
-- You cannot edit Power Virtual Agents topics in Composer; this content is read-only in Composer. However, you can create and add content to Power Virtual Agents in Composer.
+- You can't edit Power Virtual Agents topics in Composer; this content is read-only in Composer. However, you can create and add content to Power Virtual Agents in Composer.
 
 - You can add new **Bot Framework triggers** of any kind to your **main (root) dialog**. However, the structure of **triggers** added to the **main (root) dialog** should be kept as simple as possible. **Send a response**, **Ask a question**, or any actions that contain **Language Generation** cannot be used in **triggers** added to **main (root) dialog**. Doing so will result in validation errors and prevent you from publishing your Composer content to Power Virtual Agents.
+
+- You can't use Regular Expression Recognizer (RegEx) in the **main (root) dialog**. Using Regular Expression Recognizer in the **main (root) dialog** will prevent you from publishing your Composer content to Power Virtual Agents. However, you can use Regular Expression Recognizer in any other dialogs in Composer.
 
 ![Bot Framework Composer main (root) dialog trigger phrases](media/Composer_Guidelines/Gd_mainDialog_trigger.png)
 
