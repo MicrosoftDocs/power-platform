@@ -21,7 +21,7 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](../analytics-overview.md)
 > - [Power Virtual Agents app in Microsoft Teams](analytics-overview-teams.md)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
+
 
 Power Virtual Agents has a comprehensive set of analytics that show you the key performance indicators for your bot.
 

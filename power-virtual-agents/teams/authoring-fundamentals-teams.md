@@ -20,7 +20,7 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](../authoring-fundamentals.md)
 > - [Power Virtual Agents app in Microsoft Teams](authoring-fundamentals-teams.md)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
+
 
 When you create bots with Power Virtual Agents, you author and edit topics. 
 

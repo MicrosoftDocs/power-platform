@@ -23,7 +23,7 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](../advanced-end-user-authentication.md)
 > - [Power Virtual Agents app in Microsoft Teams](advanced-end-user-authentication-teams.md)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
+
 
 Bots created in Microsoft Teams come with authentication pre-configured to use Teams authentication. 
 

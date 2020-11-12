@@ -21,7 +21,7 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](../configure-bot-greeting.md)
 > - [Power Virtual Agents app in Microsoft Teams](configure-bot-greeting-teams.md)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
+
 
 By default, chatbots created with the Power Virtual Agents app in Microsoft Teams will automatically start the conversation when someone opens a chat with the bot.
 
