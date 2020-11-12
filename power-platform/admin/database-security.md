@@ -7,7 +7,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/06/2020
+ms.date: 11/12/2020
 search.audienceType: 
   - admin
 search.app:
@@ -63,9 +63,8 @@ For environments with no Common Data Service database, security roles can be ass
    > [!div class="mx-imgBorder"] 
    > ![Choose a role](media/assign-security-role-nodb.png "Choose a role")
 
-4. Specify the name or email address of one or more users or groups from Azure AD to assign this role to.
+4. Select **Add people**, and then specify the name or email address of one or more users or groups from Azure AD to assign this role to.
 
-// TODO: replace this screenshot with latest from PROD
    > [!div class="mx-imgBorder"] 
    > ![Select an action](media/assign-security-role-nodb-action.png "Select an action")
 
@@ -75,7 +74,7 @@ Security roles can be assigned to [owner teams](manage-teams.md#create-an-owner-
 
 In general, a security role can only be assigned to users who have Enabled status. But if you need to assign a security role to users in the Disabled state, you can do so by enabling **allowRoleAssignmentOnDisabledUsers** in OrgDBOrgSettings. 
 
-To add a security role to an owner team, group team or a user who has Enabled status in an environment: 
+To add a security role to an owner team, group team, or a user who has Enabled status in an environment: 
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
@@ -91,7 +90,7 @@ To add a security role to an owner team, group team or a user who has Enabled st
    > [!div class="mx-imgBorder"] 
    > ![Select Business unit](media/security-role-business-unit.png "Select Business unit")
 
-5. Select **Add people** to add a user or owner team or group team to the role. If you do not find a user or team to assign the role to, make sure the user or team is present in the environment and the user has Enabled status before assigning a role to them. 
+5. Select **Add people** to add a user, owner team, or group team to the role. If you do not find a user or team to assign the role to, make sure the user or team is present in the environment and the user has Enabled status before assigning a role to them. 
 
    > [!div class="mx-imgBorder"] 
    > ![Add people](media/security-role-add-people.png "Add people")
