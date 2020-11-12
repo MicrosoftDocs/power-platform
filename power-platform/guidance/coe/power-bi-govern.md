@@ -223,8 +223,6 @@ With the embedded app, you don't have to leave the Power BI dashboard to take ac
 
 - You can grant yourself or others ownership. Note that this will trigger an email notification to the users you share the app with.
 
-- You can archive the app (this requires that you've configured a SharePoint site with a document library beforehand).
-
 - You can delete the app.
 
 - You can email the app owner.
