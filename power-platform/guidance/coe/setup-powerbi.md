@@ -60,19 +60,10 @@ You can find the report later by going to [app.powerbi.com](https://app.powerbi.
 
 ### (Optional) Configure embedded apps in the CoE dashboard
 
-The dashboard can be configured to use embedded apps to enable you to drive action based on insights you find. With the embedded apps, you can grant yourself access to resources, archive and delete apps and flows, and reach out to the maker via email. You'll have to import the apps first, and then configure them in the dashboard.
+The dashboard can be configured to use embedded apps to enable you to drive action based on insights you find. With the embedded apps, you can grant yourself access to resources, delete apps and flows, and reach out to the maker via email. You'll have to import the apps first, and then configure them in the dashboard.
 
 #### Import embedded apps
 
-**Prerequisite:** You must have a SharePoint site with a document library set up already. This will be used to store archived apps.
-
-1. Go to **[flow.microsoft.com](https://flow.microsoft.com)** in the environment where you installed the CoE Starter Kit.
-1. Import the **PowerApps Button Archive App Flow** (PowerAppsButtonArchiveApp.zip) file and configure the connections. This flow archives apps to a SharePoint document library.
-1. After it's imported, edit the flow to update the SharePoint site URL and document library name. Paste the top-level SharePoint URL into the *archiveSiteUrl* variable, and paste the document library name into the *archiveFolder* variable (if your document library contains spaces in the name, leave those as they are in the display name).
-
-     ![Configure the SharePoint site URL and document library name](media/coe82.png "Configure the SharePoint site URL and document library name")
-
-1. Select **Save**.
 1. Go to **[make.powerapps.com](https://make.powerapps.com)** in the environment where you installed the CoE Starter Kit.
 1. On the left pane, select **Apps**.
 1. Select **Import canvas app**.
@@ -80,10 +71,8 @@ The dashboard can be configured to use embedded apps to enable you to drive acti
    ![Import canvas app](media/coe83.png "Import canvas app")
 
 1. Import the **Admin – Access this app** app (Admin-AccessthisApp.zip).
-1. Configure all the connections, including pointing to the PowerApps Button Archive App flow you just imported.
+1. Configure all the connections.
 1. Repeat the same steps for the **Admin – Access this flow** app (Admin-AccessthisFlow.zip). 
-   > [!NOTE]
-   > This app isn't linked to a flow. You won't have to update the connection references to include a flow.
 
 #### Embed apps into the Power BI dashboard
 
