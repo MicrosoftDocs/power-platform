@@ -166,7 +166,7 @@ You can specify users in an environment to provide access to Dataverse for Teams
    > [!div class="mx-imgBorder"] 
    > ![Add user to Dataverse for Teams environment](media/teams-environment-user-list-add.png "Add user to Dataverse for Teams environment") 
 
-6. Enter a name or email address of a user who meets the [user access requirements](#user-access-requirements) to add the user to the Dataverse for Teams environment, and then select **Add**.
+6. Enter a name or email address of a user who meets the user access requirements to add the user to the Dataverse for Teams environment, and then select **Add**.
 
    > [!div class="mx-imgBorder"] 
    > ![Add a user settings](media/teams-environment-add-user.png "Add a user settings") 
