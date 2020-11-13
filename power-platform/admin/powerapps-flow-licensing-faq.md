@@ -289,7 +289,7 @@ When the tenant capacity service limits are reached (grows with the # of eligibl
 -	New Dataverse for Teams environments cannot be created in the tenant 
 
 In both cases:
--	Users who want to create/install new apps/flows/bots in that environment will be prompted to notify that the capacity limit is reached, and they need to reduce storage usage or contact their admins.
+-	Users who want to create/install new chatbots, flows, or tables in that environment will be prompted to notify that the capacity limit is reached, and they need to reduce storage usage or contact their admins.
 -	Existing solutions in the environment will continue to work (CRUD allowed). The environments will be able to continue to grow beyond the 2GB limit.  
 -	Existing solutions within the environment can be updated.  
 -	Certain options within each solution (Power Apps/Power Automate/Power Virtual Agents) will be hidden/grayed out.  
