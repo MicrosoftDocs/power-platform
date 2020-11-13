@@ -26,11 +26,11 @@ You can download the most recently updated assets from the [GitHub repository](h
 
 The kit doesn't represent the entire CoE, because managing a CoE requires more than tools alone; the CoE also requires people, communication, and defined requirements and processes. The tools provided here are just a means to get to the end goal, but the CoE itself must be thoughtfully designed by each organization based on their needs and preferences. More information: [What is a Center of Excellence?](motivation.md)
 
-The kit provides some automation and tooling to help teams build monitoring and automation necessary to support a CoE. The foundation of the kit is a Common Data Service data model and workflows to collect resource information across the environments in the tenant. The kit includes multiple apps and Power BI analytics to view and interact with the data you collect, in addition to flows to collect data across environments and help with workflows for your compliance needs. The kit also provides several templates and suggested patterns and practices for implementing CoE efforts.
+The kit provides some automation and tooling to help teams build monitoring and automation necessary to support a CoE. The foundation of the kit is a Microsoft Dataverse data model and workflows to collect resource information across the environments in the tenant. The kit includes multiple apps and Power BI analytics to view and interact with the data you collect, in addition to flows to collect data across environments and help with workflows for your compliance needs. The kit also provides several templates and suggested patterns and practices for implementing CoE efforts.
 
 ## Disclaimer
 
-Although the underlying features and components used to build the kit (such as Common Data Service, admin APIs, and connectors) are fully supported, the kit itself represents sample implementations of these features. Our customers and community can use and customize these features to implement admin and governance capabilities in their organizations.
+Although the underlying features and components used to build the kit (such as Dataverse, admin APIs, and connectors) are fully supported, the kit itself represents sample implementations of these features. Our customers and community can use and customize these features to implement admin and governance capabilities in their organizations.
 
 If you face issues with:
 

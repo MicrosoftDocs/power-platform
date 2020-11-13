@@ -20,7 +20,7 @@ You can set a sandbox or production environment in administration mode so that o
   
 > [!NOTE]
 > - You can place sandbox or production environments in administration mode.  
-> - Processes that use code, such as plug-ins or custom workflow assemblies, continue to be processed by the Common Data Service platform when administration mode is enabled and background operations are disabled.
+> - Processes that use code, such as plug-ins or custom workflow assemblies, continue to be processed by the Microsoft Dataverse platform when administration mode is enabled and background operations are disabled.
   
  On the **Settings** panel, you can set the following:  
   

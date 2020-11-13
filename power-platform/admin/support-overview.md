@@ -28,7 +28,7 @@ search.app:
 
 ### Where is support available? 
 
-Support is available in markets where Common Data Service or Dynamics services are offered. Some specific services might not be covered in all regions immediately after general availability (GA).
+Support is available in markets where Microsoft Dataverse or Dynamics services are offered. Some specific services might not be covered in all regions immediately after general availability (GA).
 
 ### For which languages does Microsoft provide support? 
 

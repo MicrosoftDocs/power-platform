@@ -33,12 +33,12 @@ There are a few reasons why you shouldn't create apps and make customizations in
 
 ## Common Data Service Default Solution
 The default solution in Power Apps is the Common Data Service Default Solution,
-which is associated with the Common Data Service Default Publisher. The default
+which is associated with the Microsoft Dataverse Default Publisher. The default
 publisher prefix will be randomly assigned for this publisher, for example it
 might be *cr8a3*. This means that the name of every new item of metadata created
 in the default solution will have this prepended to the names used to uniquely
 identify the items. If you create a new entity named Animal, the unique name
-used by Common Data Service will be cr8a3_animal. The same is true for any new
+used by Dataverse will be cr8a3_animal. The same is true for any new
 fields (attributes), relationships, or option-set options. If you'll be
 customizing this special solution, consider changing the publisher prefix.
 

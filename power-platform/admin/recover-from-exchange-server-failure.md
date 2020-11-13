@@ -22,7 +22,7 @@ The process to restore a [!INCLUDE[pn_Exchange_Server_full](../includes/pn-excha
 > [!NOTE]
 > This topic applies to Email Router which has been deprecated and was removed in version 9.0. We strongly recommend that you migrate all email routing functionality to use the server-side synchronization feature.
   
-## Restore Exchange Server in a Common Data Service environment  
+## Restore Exchange Server in a Microsoft Dataverse environment  
   
 1. Restore [!INCLUDE[pn_Exchange_Server_short](../includes/pn-exchange-server-short.md)].  
   

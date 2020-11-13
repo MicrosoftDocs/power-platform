@@ -41,7 +41,7 @@ The notifications sent from the Business Application Group communications team w
 | Microsoft Power BI  | mspowerbi@microsoft.com| 
 
 
-Email notifications are sent to Common Data Service users who have the System Administrator role in an impacted environment.  If you want to change who receives email communications, see [Manage email notifications](../admin/manage-email-notifications.md).
+Email notifications are sent to Microsoft Dataverse users who have the System Administrator role in an impacted environment.  If you want to change who receives email communications, see [Manage email notifications](../admin/manage-email-notifications.md).
 
 ## Incident Communications
 Major service incident emails can easily be identified by the red banner.

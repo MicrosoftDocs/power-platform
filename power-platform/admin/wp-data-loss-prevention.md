@@ -55,16 +55,16 @@ The key point is that connectors in the same group can share data in Microsoft P
 
 Data flow to a specific service can be blocked altogether by marking that connector as **Blocked**. For example, if you place Facebook in the **Blocked** group, makers can't create an app or flow that uses the Facebook connector. This in turn restricts data flows to this service in Microsoft Power Platform. 
 
-All third-party connectors can be blocked. All Microsoft-owned premium connectors (except Common Data Service) can be blocked.
+All third-party connectors can be blocked. All Microsoft-owned premium connectors (except Microsoft Dataverse) can be blocked.
 
 ### List of connectors that can't be blocked
 
-All connectors driving core Microsoft Power Platform functionality (like Common Data Service, Approvals, and Notifications) as well as connectors enabling core Office customization scenarios like Microsoft Enterprise Plan standard connectors will remain non-blockable to ensure core user scenarios remain fully functional.
+All connectors driving core Microsoft Power Platform functionality (like Dataverse, Approvals, and Notifications) as well as connectors enabling core Office customization scenarios like Microsoft Enterprise Plan standard connectors will remain non-blockable to ensure core user scenarios remain fully functional.
 
 However, these non-blockable connectors can be classified into Business or Non-Business data groups. These connectors broadly fall into the following categories:
 
 -	Microsoft Enterprise Plan standard connectors (with no additional licensing implications).
--	Microsoft Power Platform–specific connectors that are part of the base platform capabilities. Within this, Common Data Service connectors are the only premium connectors that can't be blocked, because Common Data Service is an integral part of Microsoft Power Platform. 
+-	Microsoft Power Platform–specific connectors that are part of the base platform capabilities. Within this, Common Data Service connectors are the only premium connectors that can't be blocked, because Dataverse is an integral part of Microsoft Power Platform. 
 
 The following connectors can't be blocked by using DLP policies.
 
@@ -73,8 +73,8 @@ The following connectors can't be blocked by using DLP policies.
 |---------|---------|
 |Excel Online (Business)      | Approvals        |
 |Microsoft Forms Pro      | Notifications        |
-|Microsoft Teams      | Common Data Service         |
-|Microsoft To-Do (Business)      | Common Data Service <br />(current environment)        |
+|Microsoft Teams      | Dataverse         |
+|Microsoft To-Do (Business)      | Dataverse <br />(current environment)        |
 |Microsoft 365 Groups      | Power Apps Notifications (v1 and v2)        |
 |Microsoft 365 Outlook      |         |
 |Microsoft 365 Users      |         |

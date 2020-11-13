@@ -28,7 +28,7 @@ The core components solution is required for the nurture components solution, or
 1. Follow the instructions in [Set up core components](setup-core-components.md).
 
 1. Import the CenterOfExcellenceNurtureComponents_*x_x_x_xx*_managed.zip file.
-1. Create a new connection to the **RSS** connector, and set your Common Data Service connection.
+1. Create a new connection to the **RSS** connector, and set your Microsoft Dataverse connection.
     ![Import the CoE nurture components solution](media/msi-nurture.png "Import the CoE nurture components solution")
 1. Update the environment variable values. Note that if you choose, you can leave the values empty on import and [update them](#update-environment-variables) later after the import is completed.
 

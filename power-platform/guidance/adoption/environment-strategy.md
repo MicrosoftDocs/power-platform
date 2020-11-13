@@ -41,7 +41,7 @@ Before we get started, let’s look at some environment and security key facts:
 - Every tenant has a [default environment](https://docs.microsoft.com/power-platform/admin/environments-overview#the-default-environment).
 - [Non-default environments](https://docs.microsoft.com/power-platform/admin/environments-overview#types-of-environments) can be created by licensed Power Apps, Power Automate, and Dynamics 365 users. Creation can be restricted to only global and service admins via a tenant setting.
 - Non-default environments offer more control around [permissions](https://docs.microsoft.com/power-platform/admin/environments-overview#environment-permissions).
-- An environment can have one or zero [Common Data Service instances](https://docs.microsoft.com/power-platform/admin/create-database).
+- An environment can have one or zero [Microsoft Dataverse instances](https://docs.microsoft.com/power-platform/admin/create-database).
 - Environments include [predefined security roles](https://docs.microsoft.com/power-platform/admin/database-security) that reflect common user tasks with access levels defined to match the security best-practice goal of providing access to the minimum amount of business data required to use the app.
 
 ### Types of environments
@@ -52,7 +52,7 @@ Before you get started developing an environment strategy, ensure you understand
 
 Here is a **starting point** to consider for your environment strategy.
 
-- **Assign your admins the [Microsoft Power Platform service admin](https://docs.microsoft.com/power-platform/admin/use-service-admin-role-manage-tenant#power-platform-administrator) or Dynamics 365 service admin role.**<br>These roles provide administrative access to Power Apps canvas apps, flows, model-driven apps, environments, custom connectors, connections, gateways, Power Apps portals, AI Builder models, and all Common Data Service instances. This role should be assigned to admins who don't need global tenant admin access and are dedicated to managing Microsoft Power Platform.
+- **Assign your admins the [Microsoft Power Platform service admin](https://docs.microsoft.com/power-platform/admin/use-service-admin-role-manage-tenant#power-platform-administrator) or Dynamics 365 service admin role.**<br>These roles provide administrative access to Power Apps canvas apps, flows, model-driven apps, environments, custom connectors, connections, gateways, Power Apps portals, AI Builder models, and all Dataverse instances. This role should be assigned to admins who don't need global tenant admin access and are dedicated to managing Microsoft Power Platform.
   
 - **Restrict the creation of net-new production environments to admins.**<br>[Limiting environment creation](https://docs.microsoft.com/power-platform/admin/control-environment-creation) is beneficial to maintain control in general: both to prevent unaccounted capacity consumption and to reduce the number of environments to manage. If users have to request environments from central IT, it’s easier to see what people are working on if admins are the gatekeeper.
 
@@ -125,7 +125,7 @@ Based on successful experience with customer engagements, here is a list of addi
   - Only the service account has admin permissions in the environment.
   - All other users have end user permissions and cannot create new resources—this is important because if users are given access to a data connection, they cannot create any new interface to interact with the data that wasn’t intended by the developer.
   - IT is aware of production-grade applications that are in deployment since they’re involved in the implementation.
-  - Service accounts will need Microsoft Power Platform or Dynamics 365 service admin permission in PIM. Assign additional licenses as needed depending on what connectors need to be used in the request process (for example, if Common Data Service and Outlook are used, assign premium Power Apps and Office Enterprise).
+  - Service accounts will need Microsoft Power Platform or Dynamics 365 service admin permission in PIM. Assign additional licenses as needed depending on what connectors need to be used in the request process (for example, if Dataverse and Outlook are used, assign premium Power Apps and Office Enterprise).
   - When displaying the details for an application, it will show the service account as the creator and not the maker. This will help end users know who to contact in case of application issues.
   
   Consider if the risks of having a service account are important to you. Some organizations aren't comfortable having a service account because, for example, a shared resource with admin privileges cannot be tracked to a single person. This is valid, but can be mitigated with steps such as enforcing location-based conditional access, tracking the audit logs to an IP, or more extensive methods like maintaining a secure access workstation that requires user identification during use and restricting the service account access to that device.
@@ -134,7 +134,7 @@ Based on successful experience with customer engagements, here is a list of addi
   Have separate environments for separate project development, especially when dealing with secure data. Environments are containers for resources such as connections to data, and in development environments there might be multiple people with environment maker access. If makers have access to a shared data connection and can create apps and flows, there is a risk that someone will create a new interface to read, update, and delete data they might have been given access to. This is especially important to keep in mind for the default environment—you should always have important data connections, custom connectors, and other assets that need security in isolated environments to protect them.
 - **Share resources with Azure AD security groups**
 
-  Security groups can be used to manage access to Power Apps, flows, Common Data Service security roles, and other Office 365 services such as SharePoint Online. This removes the admin’s burden to update access to individual end users for each component (especially if multiple are involved)—the app owners can modify that at the security group level without IT (unless IT restricts access to security group management).
+  Security groups can be used to manage access to Power Apps, flows, Dataverse security roles, and other Office 365 services such as SharePoint Online. This removes the admin’s burden to update access to individual end users for each component (especially if multiple are involved)—the app owners can modify that at the security group level without IT (unless IT restricts access to security group management).
 - **Automate environment creation**
   
   The admin connectors (Microsoft Power Platform for Admins) make it possible to create an approval flow where users request environments when IT has restricted environment creation to admins. Central IT can review a request and approve or reject the creation of the environment, without being responsible for manually going to the admin center and creating the environment for the user, just for validating the request details, business justification, DLP requirements, and whether enough capacity is available.
@@ -144,9 +144,9 @@ Based on successful experience with customer engagements, here is a list of addi
 - **Less is better**
 
   Although it’s important to make sure resources are reasonably partitioned between projects and business units using environments, it’s still important to find a good balance between security and feasibility. Managing shared test and production environments is a good way to facilitate a larger number of *important* solutions while preserving capacity and following best practices. This maintains restricted permissions because test and production have restricted environment permissions, and therefore the end users can’t modify the applications.
-- **Provision environments with Common Data Service instances in the appropriate region**
+- **Provision environments with Dataverse instances in the appropriate region**
   
-  In companies where employees work in multiple countries, there might be some compliance considerations in terms of where data is stored and sent between countries. If the environment has a Common Data Service instance, the data is physically being stored in the region. Review the list of supported environment regions.
+  In companies where employees work in multiple countries, there might be some compliance considerations in terms of where data is stored and sent between countries. If the environment has a Dataverse instance, the data is physically being stored in the region. Review the list of supported environment regions.
 
 ### Factors that influence provisioning
 

@@ -162,7 +162,7 @@ You should see a (200) status returned, which means the query was successful.
 
 ### Set up the Power Automate flow
 
-A Power Automate flow uses the custom connector, queries the audit log daily, and writes the Power Apps launch events to a Common Data Service entity, which is then used in the Power BI dashboard to report on sessions and unique users of an app.
+A Power Automate flow uses the custom connector, queries the audit log daily, and writes the Power Apps launch events to a Microsoft Dataverse entity, which is then used in the Power BI dashboard to report on sessions and unique users of an app.
 
 1. Follow the instructions in [Set up core components](setup-core-components.md) to download the solution.
 1. Go to [make.powerapps.com](https://make.powerapps.com).
@@ -179,7 +179,7 @@ A Power Automate flow uses the custom connector, queries the audit log daily, an
 
    ![Child flow - run only users](media/coe49.png "Child flow - run only users")
 
-1. For both connections (the custom connector and Common Data Service), change the value to **Use this connection (userPrincipalName\@company.com)**. If there is no connection for any of the connectors, go to **Data** > **Connections**, and create one for the connector.
+1. For both connections (the custom connector and Dataverse), change the value to **Use this connection (userPrincipalName\@company.com)**. If there is no connection for any of the connectors, go to **Data** > **Connections**, and create one for the connector.
 
    ![Configure run only users](media/coe50.png "Configure run only users")
 
@@ -250,7 +250,7 @@ Keep in mind that after a user account has access to the audit logs, that user h
 1. Update the connections by following these steps:
     1. For Admin \| Sync Audit Logs, select **Create as new**, and then select **Save**.
 
-    1. For the Office 365 Audit Logs connector, Common Data Service connection, and Office 365 Audit Logs Connection, select **Select during import**, and then choose your connection.
+    1. For the Office 365 Audit Logs connector, Dataverse connection, and Office 365 Audit Logs Connection, select **Select during import**, and then choose your connection.
        ![Import options when importing a new flow](media/coe31.png "Import options when importing a new flow]")
 
     1. After the connections are configured, select **Import**.
@@ -261,4 +261,4 @@ Keep in mind that after a user account has access to the audit logs, that user h
 
     1. If the flow isn't on yet, turn it on.
 
-    1. Run the flow to start syncing audit log data to the Common Data Service entity.
+    1. Run the flow to start syncing audit log data to the Dataverse entity.
