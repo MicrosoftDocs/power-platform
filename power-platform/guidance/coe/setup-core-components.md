@@ -181,8 +181,8 @@ After the sync flows have finished running (depending on the number of environme
 
 Environment variables are used to store application and flow configuration data with data specific to your organization or environment.
 
->[!TIP]
->To view all environment variables in the environment, open the default solution for the environment and set the **Type** filter to **Environment variable**.
+>[!IMPORTANT]
+>To edit environment variables in the environment, open the default solution for the environment and set the **Type** filter to **Environment variable**.
 
 - Select a variable, and then configure its **Current Value**.
 
