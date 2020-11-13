@@ -131,6 +131,9 @@ The following Bot Framework Composer features are not supported with Power Virtu
 - LUIS Recognizer  
 Default Recognizer in Composer is set to Power Virtual Agents NLU
 
+- Custom recognizer  
+Custom recognizer is not supported in Composer for Power Virtual Agents
+
 - Bot Skills  
 Cannot invoke Bot Skills in Composer content meant for Power Virtual Agents
 
