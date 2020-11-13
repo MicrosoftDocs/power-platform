@@ -90,7 +90,7 @@ As mentioned above, there are cases where users are not provisioned automaticall
 
 4. **PowerShell cmdlets**: See [Powershell support for Power Apps](https://docs.microsoft.com/power-platform/admin/powerapps-powershell#power-apps-cmdlets-for-administrators)
 
-5. **Connectors**: See [Power Platform for Admins](https://docs.microsoft.com/en-us/connectors/powerplatformforadmins/#force-sync-user)
+5. **Connectors**: See [Power Platform for Admins](https://docs.microsoft.com/connectors/powerplatformforadmins/#force-sync-user)
 
 6. **Power Automate template**: See [Force Sync Azure Active Directory Group members to specified CDS instance](https://us.flow.microsoft.com/galleries/public/templates/6e4162ca7afc48479e3ad1caadc6c1e6/force-sync-azure-active-directory-group-members-to-specified-cds-instance/)
 
