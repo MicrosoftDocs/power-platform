@@ -15,7 +15,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# About the Microsoft Dataverse for Teams environment (Preview)
+# About the Microsoft Dataverse for Teams environment
 <!-- fwlink 2143567 -->
 
 Introduced in September, 2020, *Microsoft Dataverse for Teams* is a built-in, low-code data platform for Microsoft Teams that empowers users to build custom apps, bots, and flows in Teams by using Power Apps, Power Virtual Agents, and Power Automate. Dataverse for Teams—built on Microsoft Dataverse—provides relational data storage, rich data types, enterprise-grade governance, and one-click solution deployment to the Teams app store. More information: [Dataverse for Teams overview](/powerapps/teams/overview-data-platform)
