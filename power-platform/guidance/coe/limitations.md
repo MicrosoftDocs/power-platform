@@ -117,3 +117,8 @@ The shared component library in the [theming components solution](theming-compon
 
 A Power Automate Per User license (amongst other license requirements) will be required to run the CoE Starter Kit flows, a trial license does not have sufficient [API call allowances](https://docs.microsoft.com/power-automate/limits-and-config#looping-and-debatching-limits) to run the CoE Starter Kit flows.
 For full list of license requirements see [Setup Pre-requisits](setup.md#prerequisites).
+
+## PIM (Privileged Identity Management)
+
+We recommend you **do not use [PIM](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started)** to manage Power Platform Admin Role access, as the timing of when the role will be needed is unpredictable based on the different triggers in the toolkit suite.
+You may end up with incomplete or incorrect data if you use PIM and your Power Platform Admin Role.
