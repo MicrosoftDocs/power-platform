@@ -5,7 +5,7 @@ author: pnghub
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/14/2020
+ms.date: 11/13/2020
 ms.author: gned
 ms.reviewer: jimholtz 
 
@@ -55,7 +55,7 @@ This task requires the system administrator or customizer security role or equiv
   
 1. Browse to the Power Platform admin center and sign in using administrator credentials. 
   
-2. Go to **Environments** > [select an environment] > expand **Audit and logs** > **Audit settings**.
+2. Go to **Environments** > **Settings** > [select an environment] > expand **Audit and logs** > **Audit settings**.
   
    |      Setting |     Description    |
    |--------------------|---------------------|
