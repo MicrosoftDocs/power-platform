@@ -5,7 +5,7 @@ author: dileepsinghmicrosoft
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/11/2020
+ms.date: 11/16/2020
 ms.author: dileeps
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -266,7 +266,7 @@ In public preview, creation of Dataverse for Teams environments is not available
 
 ### Can Dataverse for Teams be used outside of Teams?
 
-Dataverse for Teams is designed to work in the Teams client across web, desktop and mobile. If you’d want to use Dataverse for Teams outside of Teams, you must promote your environment to Dataverse. 
+Dataverse for Teams is designed to work in the Teams client across web, desktop and mobile. If you’d want to use Dataverse for Teams outside of Teams, you must upgrade your environment to Dataverse. 
 
 ### Is there a limit to Dataverse for Teams capacity? How many Dataverse for Teams environments can be created in a tenant?  
 
@@ -314,18 +314,18 @@ Custom connectors are not supported in Dataverse for Teams but support for Azure
 
 No. Dataverse for Teams provides support for approximately 1 million rows per team. Although existing apps and chatbots will continue to work when a Dataverse for Teams environment reaches the per environment limit (2GB), users who want to create a new app, flow, or chatbot in the environment will need to :
 1.	Purchase Power Apps, Power Automate, and Power Virtual Agents subscriptions based on their needs and start building their new app, flow, or chatbot in a Dataverse environment.
-2.	Promote the existing Dataverse for Teams environment to Dataverse in the Power Platform admin center and, if needed, purchase Power Apps, Power Automate, or Power Virtual Agents subscriptions based on their needs.
+2.	Upgrade the existing Dataverse for Teams environment to Dataverse in the Power Platform admin center and, if needed, purchase Power Apps, Power Automate, or Power Virtual Agents subscriptions based on their needs.
 
 > [!NOTE]
-> The capability to promote Dataverse for Teams environments to Dataverse won’t be available at public preview, but is expected to be available soon.
+> The capability to upgrade Dataverse for Teams environments to Dataverse won’t be available at public preview, but is expected to be available soon.
  
 ### Can customers package and export their solution (app/flow/chatbots) built in Dataverse for Teams, and then import that into a Dataverse environment (assuming they have the corresponding license including access rights to Microsoft Dataverse)?
 
 This capability is not available in public preview but is included in our roadmap.
 
-### Other than adding capacity, what are the other reasons to promote a Dataverse for Teams environment?
+### Other than adding capacity, what are the other reasons to upgrade a Dataverse for Teams environment?
 
-Promoting an environment from Dataverse for Teams to Dataverse will enable customers to take advantage of additional capacity, capabilities, such as: 
+Upgrading an environment from Dataverse for Teams to Dataverse will enable customers to take advantage of additional capacity, capabilities, such as: 
 -	Enterprise ALM, data types
 -	Support for log and managed data lake
 -	Rich access control, auditing
