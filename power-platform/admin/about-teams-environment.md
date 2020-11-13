@@ -44,7 +44,7 @@ Note the following regarding access to Microsoft Power Platform apps in Teams.
 
 - No direct API access to the Dataverse for Teams will be provided, and only apps, bots, and flows embedded within the Teams client will be able to access the Dataverse for Teams runtime.
 
-See: [Dataverse for Teams licensing FAQ](powerapps-flow-licensing-faq.md#dataverse-for-teams-licensing-faq)
+See: [Dataverse for Teams licensing FAQ](powerapps-flow-licensing-faq.md#dataverse-for-teams)
 
 ## Environment lifecycle
 
