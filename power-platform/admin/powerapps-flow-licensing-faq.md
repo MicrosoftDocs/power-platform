@@ -258,11 +258,11 @@ Yes. With Dataverse for Teams, users now can build flows using Power Automate ma
 
 ### Which Microsoft 365 subscriptions include Dataverse for Teams and Power Virtual Agents capabilities with Teams?
 
-Dataverse for Teams and Power Virtual Agents for Teams capabilities will be available as part of select Microsoft 365 subscriptions with Power Platform and Teams capabilities, excluding plans for US government environments (GCC, GCC High and DoD) and EDU A1 and SUB SKUs.
+Dataverse for Teams and Power Virtual Agents for Teams capabilities will be available as part of select Microsoft 365 subscriptions with Power Platform and Teams capabilities, excluding plans for US government environments (GCC, GCC High and DoD) and EDU A1 and SUB SKUs. For more information, see the [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 
 ### How is Dataverse for Teams environment created? 
 
-In public preview, creation of Dataverse for Teams environments is not available from the Power Platform admin center. Creation of new Dataverse for Teams environments will only be possible from within Teams. 
+Creation of Dataverse for Teams environments is not available from the Power Platform admin center. Creation of new Dataverse for Teams environments will only be possible from within Teams. 
 
 ### Can Dataverse for Teams be used outside of Teams?
 
@@ -273,20 +273,19 @@ Dataverse for Teams is designed to work in the Teams client across web, desktop 
 Each Dataverse for Teams environment uniquely maps (1:1) to a Teams team and can store up to 1,000,000 records based on typical usage (enforced as 2GB relational database storage per Dataverse for Teams environment). For details on service limits, including the tenant-level capacity limits associated with Dataverse for Teams, see [About the Dataverse for Teams environment](about-teams-environment.md). 
 
 ### Can we control who can create environments with Dataverse for Teams?
-Teams governs who can create and join a Team.
 
-In public preview, the environment is created when a team is created and when an owner or member tries to create an application in it.
+Teams governs who can create and join a Team. The environment is created for a team when an owner or member tries to create an application in it.
 
 ### Can a Dataverse for Teams environment be deleted?
-In public preview, a Dataverse for Teams environment is deleted when the associated Team is deleted.
+A Dataverse for Teams environment is deleted when the associated Team is deleted.
 
 ### How does the capacity enforcement work for Dataverse for Teams environments?
 
-When the environment capacity limits are reached (2GB per environment) new solutions (apps/flows/chatbots) can't be created or installed in that specific Dataverse for Teams environment.
+When the environment capacity limits are reached (2GB per environment) new solutions (apps, chatbots, flows) can't be created or installed in that specific Dataverse for Teams environment.
 
 When the tenant capacity service limits are reached (grows with the # of eligible Office USLs in the tenant up to a max of 1TB or up to a max of 500 environments as explained [here](https://go.microsoft.com/fwlink/p/?linkid=2143567):
 
--	New solutions cannot be created or installed in any Dataverse for Teams environment. 
+-	New apps, chatbots, flows, or tables) cannot be created or installed in any Dataverse for Teams environment. 
 -	New Dataverse for Teams environments cannot be created in the tenant 
 
 In both cases:
@@ -301,31 +300,31 @@ Yes. Accessing premium connectors in a specific Dataverse for Teams environment 
 Example: In a Dataverse for Teams environment, accessing premium connectors in the context of an app requires all users accessing the app to be licensed by either the Power Apps per app or per user plan depending on the customer scenario.
  
 ### Can I use AI Builder with Dataverse for Teams?
-No.  Tables for AI Builder are not included in Dataverse for Teams.
+No. Tables for AI Builder are not included in Dataverse for Teams.
 
 ### Can I use UI Flows with Dataverse for Teams?
 
 No. UI Flows are not supported in Dataverse for Teams.
 
 ### Can I use custom connectors in Dataverse for Teams?
-Custom connectors are not supported in Dataverse for Teams but support for Azure API Management (API-M) will be available in Dataverse for Teams.
+Custom connectors are not supported in Dataverse for Teams but [support for Azure API Management (API-M)](https://powerapps.microsoft.com/blog/azure-api-management-connector-on-the-power-platform/) will be available later in Dataverse for Teams.
 
 ### Can customers purchase more capacity for an environment associated with a Team?
 
 No. Dataverse for Teams provides support for approximately 1 million rows per team. Although existing apps and chatbots will continue to work when a Dataverse for Teams environment reaches the per environment limit (2GB), users who want to create a new app, flow, or chatbot in the environment will need to :
 1.	Purchase Power Apps, Power Automate, and Power Virtual Agents subscriptions based on their needs and start building their new app, flow, or chatbot in a Dataverse environment.
-2.	Upgrade the existing Dataverse for Teams environment to Dataverse in the Power Platform admin center and, if needed, purchase Power Apps, Power Automate, or Power Virtual Agents subscriptions based on their needs.
+2.	[Upgrade](about-teams-environment.md#upgrade-process) the existing Dataverse for Teams environment to Dataverse in the Power Platform admin center and, if needed, purchase Power Apps, Power Automate, or Power Virtual Agents subscriptions based on their needs.
 
 > [!NOTE]
-> The capability to upgrade Dataverse for Teams environments to Dataverse won’t be available at public preview, but is expected to be available soon.
+> The capability to upgrade Dataverse for Teams environments to Dataverse environments isn’t available yet. Check back later for availability.
  
 ### Can customers package and export their solution (app/flow/chatbots) built in Dataverse for Teams, and then import that into a Dataverse environment (assuming they have the corresponding license including access rights to Microsoft Dataverse)?
 
-This capability is not available in public preview but is included in our roadmap.
+This capability is not available yet, but is included in our roadmap.
 
 ### Other than adding capacity, what are the other reasons to upgrade a Dataverse for Teams environment?
 
-Upgrading an environment from Dataverse for Teams to Dataverse will enable customers to take advantage of additional capacity, capabilities, such as: 
+[Upgrading](about-teams-environment.md#upgrade-process) an environment from Dataverse for Teams to Dataverse will enable customers to take advantage of additional capacity, capabilities, such as: 
 -	Enterprise ALM, data types
 -	Support for log and managed data lake
 -	Rich access control, auditing
@@ -336,7 +335,7 @@ Upgrading an environment from Dataverse for Teams to Dataverse will enable custo
 
 ### Why do I see Dataverse plan in select Microsoft 365 subscriptions? Is this related to Dataverse for Teams?
 
-No. A limited set of Dataverse capabilities were recently added to Microsoft 365 licenses to support service capabilities available (for example, Microsoft Project). A standalone Power Apps, Power Automate, or Power Virtual Agents plan is still needed to run apps/flows/bots with Dataverse. Review the [Project Service description](https://docs.microsoft.com/office365/servicedescriptions/project-online-service-description/project-online-service-description) for more details on the feature.
+No. A limited set of Dataverse capabilities were recently added to Microsoft 365 licenses to support service capabilities available (for example, Microsoft Project). A standalone Power Apps, Power Automate, or Power Virtual Agents plan is still needed to run apps/flows/bots with Dataverse. Review the [Common Data Service capabilities with Microsoft 365 licenses](/power-platform/admin/pricing-billing-skus#common-data-service-capabilities-with-microsoft-365-licenses) for more details on the feature.
 
 > [!NOTE]
 > There is a service plan called *Dataverse for Teams* that is related to the Dataverse for Teams capabilities.
