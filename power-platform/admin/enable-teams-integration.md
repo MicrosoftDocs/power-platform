@@ -37,4 +37,6 @@ To enable embedding model-driven apps into Teams, do the following:
 
 5. Select **Save**.
 
-### See also
+## Next steps
+
+After enabling this setting, follow the instructions here to embed your model-driven apps in Teams: [Embed a model-driven app as tab app in Teams](/powerapps/teams/embed-model-driven-teams-tab).
