@@ -82,15 +82,15 @@ Although these users are not pre-provisioned, they can be added to environments 
 
 As mentioned above, there are cases where users are not provisioned automatically. Additionally, there may be delays in reflecting the users' latest status in environments. In such cases, adding or refreshing specific users on demand can be helpful. There are multiple ways to do this: 
 
-1. **JIT user provisioning**: When users access an environment url, access requirements are checked at the time of login and qualified users are added to the environment
+1. **JIT user provisioning**: When users access an environment URL, access requirements are checked at the time of sign-in and qualified users are added to the environment.
 
-2. **User impersonation call**: Impersonation call triggers a JIT sync for the user. See [How to impersonate a user](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/impersonate-another-user-web-api#how-to-impersonate-a-user)
+2. **User impersonation call**: Impersonation call triggers a JIT sync for the user. See [How to impersonate a user](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/impersonate-another-user-web-api#how-to-impersonate-a-user).
 
-3. **Add users in the Power Platform admin center**: Admins can add or refresh users. See [Add users to an environment](add-users-to-environment.md)
+3. **Add users in the Power Platform admin center**: Admins can add or refresh users. See [Add users to an environment](add-users-to-environment.md).
 
-4. **PowerShell cmdlets**: See [Powershell support for Power Apps](https://docs.microsoft.com/power-platform/admin/powerapps-powershell#power-apps-cmdlets-for-administrators)
+4. **PowerShell cmdlets**: See [Powershell support for Power Apps](https://docs.microsoft.com/power-platform/admin/powerapps-powershell#power-apps-cmdlets-for-administrators).
 
-5. **Connectors**: See [Power Platform for Admins](https://docs.microsoft.com/connectors/powerplatformforadmins/#force-sync-user)
+5. **Connectors**: See [Power Platform for Admins](https://docs.microsoft.com/connectors/powerplatformforadmins/#force-sync-user).
 
-6. **Power Automate template**: See [Force Sync Azure Active Directory Group members to specified CDS instance](https://us.flow.microsoft.com/galleries/public/templates/6e4162ca7afc48479e3ad1caadc6c1e6/force-sync-azure-active-directory-group-members-to-specified-cds-instance/)
+6. **Power Automate template**: See [Force Sync Azure Active Directory Group members to specified CDS instance](https://us.flow.microsoft.com/galleries/public/templates/6e4162ca7afc48479e3ad1caadc6c1e6/force-sync-azure-active-directory-group-members-to-specified-cds-instance/).
 
