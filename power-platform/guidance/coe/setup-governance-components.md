@@ -36,6 +36,7 @@ The Core Components solution is required for the Audit and Report Components sol
    |------|---------------|
    | Auto Delete On Archive | Determines whether apps are deleted when they're archived in the following flow: Admin \| App Archive and Clean Up - Check Approvals and Archive. <br> Value must be Yes or No. A default value of No is provided. |
    | Developer Compliance Center         | Leave this blank on import, and [update the enviornment variable](#update-environment-variables) after the import has finished by first navigating to the details page of the Developer Compliance Center (canvas app) included with this solution, and copy the web link (to launch the app) and paste it into this variable.  |
+   | ProductionEnvironment | Determines if the environment is Production or Dev/Test. True (the default) will mean that the approvals are sent to app/flow owners. False will send those approvals to the admin email. |
 
 1. Select **Import** without adding values to the Environment Variables, as we will update them later - see [update environment variables](#update-environment-variables)
 
@@ -54,6 +55,7 @@ All flows in this solution depend on all environment variables' being configured
    |------|---------------|
    | Auto Delete On Archive | Determines whether apps are deleted when they're archived in the following flow: Admin \| App Archive and Clean Up - Check Approvals and Archive. <br> Value must be Yes or No. A default value of No is provided. |
    | Developer Compliance Center         | Navigate to the details page of the Developer Compliance Center (canvas app) included with this solution, and copy the web link (to launch the app) and paste it into this variable.  |
+   | ProductionEnvironment | Determines if the environment is Production or Dev/Test. True (the default) will mean that the approvals are sent to app/flow owners. False will send those approvals to the admin email. |
 
 ## Initialize flow approval entities in your environment
 
@@ -91,9 +93,9 @@ The archive approval flows (*Admin \| App Archive and Clean Up – Start Approva
 This Governance Components solution contains five flows:
 
 - Admin \| App Archive and Clean Up – Start Approval
-- Admin \| App Archive and Clean Up – Check Approval
+- Admin \| Approval Clean Up
+- Admin \| Check Approvals 
 - Admin \| Flow Archive and Clean Up – Start Approval
-- Admin \| Flow Archive and Clean Up – Check Approval
 - Admin \| Compliance detail request
 
 These flows will be turned off on solution import, and you can turn them on once you're ready to use them.
