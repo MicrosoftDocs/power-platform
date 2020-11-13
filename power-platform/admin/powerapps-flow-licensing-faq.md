@@ -285,7 +285,7 @@ When the environment capacity limits are reached (2GB per environment) new solut
 
 When the tenant capacity service limits are reached (grows with the # of eligible Office USLs in the tenant up to a max of 1TB or up to a max of 500 environments as explained [here](https://go.microsoft.com/fwlink/p/?linkid=2143567):
 
--	New apps, chatbots, flows, or tables) cannot be created or installed in any Dataverse for Teams environment. 
+-	New apps, chatbots, flows, or tables cannot be created or installed in any Dataverse for Teams environment. 
 -	New Dataverse for Teams environments cannot be created in the tenant 
 
 In both cases:
