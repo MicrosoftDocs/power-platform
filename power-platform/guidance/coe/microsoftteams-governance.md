@@ -16,7 +16,7 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Microsoft Teams integration auditing
+# Microsoft Teams environment audit process
 
 The [Microsoft Teams integration](https://docs.microsoft.com/power-platform/admin/about-teams-environment) empowers users to build custom apps, bots, and flows in Teams by using Power Apps, Power Virtual Agents, and Power Automate.
 
@@ -36,19 +36,23 @@ Here is that process from the point of view of the people involved and the compo
 
 **Team owner:** The Team owner gets a notification in Teams to provide a business justification for the environment they have just created. Team owners have 7 days to submit a business justification.
 
-![Maker point of view in the audit process](media/coe55.png "Maker point of view in the audit process")
+![Teams owner receives prompt to provide business justification](media/teams-1.png "Teams owner receives prompt to provide business justification")
 
 They also receive a Welcome note via email to provide them with further information about their environment, as well as conditions of using it.
 
+![Teams owner receives welcome email](media/teams-3.png "Teams owner receives welcome email")
+
 **Admin:** Microsoft teams environments can be reviewed using the **Microsoft Teams environment review** filter view on the **Power Platform Admin View** model driven app.
 
-![Admin point of view in the audit process](media/coe71.png "Admin point of view in the audit process")
+![Admin point of view in the audit process](media/teams-4.png "Admin point of view in the audit process")
 
 An admin opens **Power Platform Admin View** > **Environments** > **Admin Review** and assesses all the environments due for review by looking at the **Audit** tab within the app, investigating the justification done by the Team owner, and then approving or rejecting the justification in the **Admin Review** section.
 
+![Validate maker requirements](media/teams-5.png "Validate maker requirements")
+
 The admin can further decide to approve a business justification, but highlight it for later review by providing a date.
 
-![Validate maker requirements](media/coe54.png "Validate maker requirements")
+![Validate maker requirements](media/teams-6.png "Validate maker requirements")
 
 ## Monitoring and weekly Cleanup process
 
@@ -70,6 +74,8 @@ An admin can customize the conditions for deletion by creating their own copy of
 
 Team owners will receive a notification that there environment has been deleted.
 
+![Team owner receives notification](media/teams-2.png "Team owner receives notification")
+
 In addition to the automatic cleanup, admins also need to monitor how Microsoft Teams are used - a [Microsoft Teams environments](power-bi-monitor.md) report has been created in the CoE Starter Kit dashboard.
 
 The **Microsoft Teams environments** page shows you how many environments, environment makers, and apps and flows in Microsoft Teams environments you have.
@@ -84,3 +90,5 @@ The page visualize:
 The filters allow you to drill down and analyze trends by filtering on the created time or creator.
 
 A link to both the Environment page in the Admin Center, as well as the Teams itself is available and allows the admin to get further information about this environment.
+
+![Team owner receives notification](media/pb-6.png "Team owner receives notification")
