@@ -126,6 +126,8 @@
             href: coe/power-bi-nurture.md
         - name: Sample audit process
           href: coe/example-processes.md  
+        - name: Microsoft Teams environment management
+          href: coe/microsoftteams-governance.md  
     - name: Limitations
       href: coe/limitations.md
     - name: Release notes

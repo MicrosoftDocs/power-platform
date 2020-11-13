@@ -16,7 +16,7 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Microsoft Teams environment audit process
+# Microsoft Teams environment management
 
 The [Microsoft Teams integration](https://docs.microsoft.com/power-platform/admin/about-teams-environment) empowers users to build custom apps, bots, and flows in Teams by using Power Apps, Power Virtual Agents, and Power Automate.
 
