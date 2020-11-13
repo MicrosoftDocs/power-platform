@@ -17,7 +17,7 @@ search.app:
   - Flow
 ---
 
-# Power Apps and Power Automate licensing FAQs
+# Power Apps and Power Automate licensing FAQ
 
 We have found some common questions on licensing and plan options. We’ve included several here with their answers. For more details about Microsoft Power Apps and Microsoft Power Automate licensing, see [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 
@@ -238,7 +238,7 @@ Since flows, as well as certain Power Automate features like approvals, run insi
 | Dataverse Log Capacity      | \+ 0           | \+ 0           |
 | Dataverse File Capacity     | \+ 200 MB      | \+ 200 MB      |
 
-## Dataverse for Teams
+## Dataverse for Teams licensing FAQ
 
 Here is a list of Microsoft Dataverse for Teams licensing FAQs; for more information about Dataverse for Teams, see [About the Dataverse for Teams environment](about-teams-environment.md).
 
