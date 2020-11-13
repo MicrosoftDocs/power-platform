@@ -23,14 +23,15 @@ There is no "one size fits all" solution for a Center of Excellence (CoE). Some 
 The following sections describe limitations for some components.
 
 ## Long running flows
-There are some flows which walk the tenant in order to do their work. Specifically, the inventory flows in Core solution and the start archival flows in Governance solution.
 
-The Power Platform as a product has some protections which start to throttle flows once they have made too many API calls, and as a result these flows which walk the tenant often hit the throttle limits and begin to run slowly.
+There are some flows which crawl the tenant in order to do their work. Specifically, the inventory flows in Core solution and the start archival flows in Governance solution.
 
-A way to fix this is to have per-flow licenses for these long running flows. We suggest you experiment to see if your tenant size might need these, and if so, purchase and assign licenses to these flows. [Power Automate License Pricing](https://flow.microsoft.com/pricing/)
+To help ensure service levels, availability, and quality, there are entitlement limits to the number of requests users can make each day across Power Apps, Power Automate. Learn more: [Requests limits and allocations](https://docs.microsoft.com/power-platform/admin/api-request-limits-allocations)
+
+Larger tenants might require a per flow license in order for these flows to complete in a timely manner. [Power Automate License Pricing](https://flow.microsoft.com/pricing/)
 
 >[!TIP]
->To first run of the Sync flows in the Core Solution will run long as it must do an update for every flow/app/etc in the tenant. Subsequent runs  will only update apps/flows/etc that have changed since the last run and so these will not require the per-flow fix for most tenants.
+>The first run of the Sync flows in the Core Solution will run long as it will do an update for every flow/app/etc in the tenant. Subsequent runs  will only update apps/flows/etc that have changed since the last run and so these will not require a per flow license for most tenants.
 
 ## Timeouts in the Admin | Sync Template V2
 
@@ -114,5 +115,5 @@ The shared component library in the [theming components solution](theming-compon
 
 ## Trial Licenses
 
-A Power Automate Per User license (amongst other license requirements) will be required to run the CoE Starter Kit flows, a trial license does not have sufficient API call allowances (https://docs.microsoft.com/power-automate/limits-and-config#looping-and-debatching-limits) to run the CoE Starter Kit flows.
-For full list of license requirements see [Setup Pre-requisits](setup.md#prerequisites)
+A Power Automate Per User license (amongst other license requirements) will be required to run the CoE Starter Kit flows, a trial license does not have sufficient [API call allowances](https://docs.microsoft.com/power-automate/limits-and-config#looping-and-debatching-limits) to run the CoE Starter Kit flows.
+For full list of license requirements see [Setup Pre-requisits](setup.md#prerequisites).
