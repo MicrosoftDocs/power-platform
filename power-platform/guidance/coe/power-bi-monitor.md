@@ -85,6 +85,7 @@ The tables of environments shows:
 - Owner
 - Latest App launch in the environment
 - Number of apps and flows
+- A red icon if no apps or flows exist in the environments
 - Created On date
 
 The table of apps shows:

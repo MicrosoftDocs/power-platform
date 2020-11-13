@@ -25,7 +25,7 @@ Version 1.25 for the CoE Starter Kit Governance Components is now available. Thi
 
 ## Microsoft Teams environment governance
 
-The [Microsoft Teams integration](https://docs.microsoft.com/power-platform/admin/about-teams-environment) empowers users to build custom apps, bots, and flows in Teams by using Power Apps, Power Virtual Agents, and Power Automate. This release includes new components that provide a sample implementation of best practices for reactive governance of Microsoft Teams environment creation. Learn more about the new components: [Microsoft Teams environment audit process](../microsoftteams-governance.md)
+The [Microsoft Teams integration](https://docs.microsoft.com/power-platform/admin/about-teams-environment) empowers users to build custom apps, bots, and flows in Teams by using Power Apps, Power Virtual Agents, and Power Automate. This release includes new components that provide a sample implementation of best practices for reactive governance of Microsoft Teams environment creation. Learn more about the new components: [Microsoft Teams environment management](../microsoftteams-governance.md)
 
 ## Archival flows
 

@@ -354,4 +354,4 @@ With Power BI reports, you can get a holistic view of Common Data Service data w
 
 Follow the [setup instructions](setup-powerbi.md) to set up the Power BI dashboard. More information: [Gain deep insights into your Microsoft Power Platform adoption with the CoE Power BI dashboard](power-bi.md)
 
-![CoE Power BI dashboard](media/coe1.png "CoE Power BI dashboard")
+![CoE Power BI dashboard](media/pb-2.png "CoE Power BI dashboard")

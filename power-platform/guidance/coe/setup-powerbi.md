@@ -20,7 +20,7 @@ search.app:
 
 The Power BI dashboard provides a holistic view with visualizations and insights into resources in your tenant: environments, apps, Power Automate flows, connectors, connection references, makers, and audit logs. Telemetry from the audit log is stored from the moment you set up the Center of Excellence (CoE) Starter Kit, so over time you can look back and identify trends.
 
-![CoE Starter Kit Power BI dashboard](media/coe1.PNG "CoE Starter Kit Power BI dashboard")
+![CoE Starter Kit Power BI dashboard](media/pb-1.PNG "CoE Starter Kit Power BI dashboard")
 
 You can get the CoE Power BI dashboard by downloading the Power BI file and configuring it in Power BI Desktop. This will allow you to make changes to it. You are required you to get the environment URL in order to use the Dashboard.
 

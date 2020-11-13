@@ -30,7 +30,7 @@ The governance components solution contains assets relevant to admins and makers
 
 Here's a breakdown of the assets that form the governance components:
 
-- Microsoft Teams environment governance
+- Microsoft Teams environment management
   - [Ask team owners to provide a business justification (flow)](#flows)
   - [Welcome email to new team owners (flow)](#flows)
   - [Business process flow for auditing environments](#business-process-flows)
