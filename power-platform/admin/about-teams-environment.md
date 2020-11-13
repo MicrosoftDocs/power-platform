@@ -172,7 +172,7 @@ You can specify users in an environment to provide access to Dataverse for Teams
 5. Select **+ Add user** to add a tenant user to the selected Dataverse for Teams environment. 
 
    > [!div class="mx-imgBorder"] 
-   > ![Add user to Dataverse for Teams environment](media/teams-environment-user-list-add.png "Add user to Project \"Oakdale\" environment") 
+   > ![Add user to Dataverse for Teams environment](media/teams-environment-user-list-add.png "Add user to Dataverse for Teams environment") 
 
 6. Enter a name or email address of a user who meets the [user access requirements](#user-access-requirements) to add the user to the Dataverse for Teams environment, and then select **Add**.
 
@@ -186,7 +186,7 @@ You can specify users in an environment to provide access to Dataverse for Teams
 To delete a Dataverse for Teams environment, select it from the list of environments and then select **Delete**.
 
 > [!div class="mx-imgBorder"] 
-> ![Delete a Dataverse for Teams environment](media/teams-environment-manage-delete.png "Delete a Project \"Oakdale\" environment")
+> ![Delete a Dataverse for Teams environment](media/teams-environment-manage-delete.png "Delete a Dataverse for teams environment")
 
 ### Upgrade a Dataverse for Teams environment to production
 
