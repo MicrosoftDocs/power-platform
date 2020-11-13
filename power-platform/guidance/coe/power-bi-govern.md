@@ -20,6 +20,12 @@ search.app:
 
 As an admin, you'll want to use the insights you gather to drive action, such as performing risk assessments and identifying critical, orphaned, or unused resources. The pages in the **Govern** section enable you to drive action directly from within the Power BI report through an embedded app. The app can be used to grant yourself or others ownership of a resource, archive it, or delete it.
 
+## App license assessment
+
+You can use the App license assessment page to view apps that use premium or standard features and drill down into connectors, departments or makers that are using premium connectors.
+
+![Apps License Assessment](media/pb-22.png "Apps License Assessment")
+
 ## App risk assessment
 
 You can use the dashboard to identify overshared and overused resources, or resources that use specific connectors. Not only will you have visibility to those types of resources, you can grant yourself ownership to inspect the resource behavior and decide whether you need to take further action.
@@ -68,7 +74,7 @@ Orphaned apps, where the app owner has left the organization, will still work fo
 
 Select **SQL Server** in the **Connector** drop-down on the rightmost filter pane to find apps that use the SQL Server Connector.
 
-![Apps Risk Assessment](media/pb13.png "Apps Risk Assessment")
+![Apps Risk Assessment](media/pb-15.png "Apps Risk Assessment")
 
 ## Flows risk assessment
 
@@ -116,7 +122,7 @@ Select **SQL Server** in the **Connector** drop-down list on the rightmost filte
 
 Select actions or connectors you're interested in from the **Connector** and **Action** lists on the rightmost side of this page to find flows that use those connectors or actions.
 
-![Flows Risk Assessment ](media/pb14.png "Flows Risk Assessment")
+![Flows Risk Assessment ](media/pb-25.png "Flows Risk Assessment")
 
 ## UI flows risk assessment
 
@@ -136,7 +142,7 @@ Some typical assessments an admin might perform are described in the following s
 
 Select **Blank** in the **Owner** drop-down list on the rightmost filter pane to find orphaned flows.
 
-![UI flows Risk Assessment ](media/coe-ui4.png "UI flows Risk Assessment")
+![UI flows Risk Assessment ](media/pb-26.png "UI flows Risk Assessment")
 
 ## App and Flow Archive
 
@@ -150,10 +156,10 @@ Using the CoE dashboard, admins also have the ability to identify unused apps an
 
 :::row:::
    :::column span="":::
-      ![Power Apps Archive](media/pb10.png "Power Apps Archive")
+      ![Power Apps Archive](media/pb-16.png "Power Apps Archive")
    :::column-end:::
    :::column span="":::
-      ![Power Automate Archive](media/pb12.png "Power Automate Archive")
+      ![Power Automate Archive](media/pb-24.png "Power Automate Archive")
    :::column-end:::
 :::row-end:::
 
@@ -171,11 +177,11 @@ The **Archive Score** is the sum of multiple criteria:
 
 A [tooltip](https://docs.microsoft.com/power-bi/desktop-tooltips) shows additional details like the number of launches and last launched date.
 
-![App Archive](media/pb15.png "App Archive")
+![App Archive](media/pb-33.png "App Archive")
 
 Right-click to select a specific app, and then select **Drill through** >  **App Detail** to open the detail page for the selected app.
 
-![Go to the app detail page](media/coe81.png "Go to the app detail page")
+![Go to the app detail page](media/pb-32.png "Go to the app detail page")
 
 The **Flow Archive** page is sorted by highest archive score. You can target specific makers, date ranges, environments, departments, or connectors.
 
@@ -195,7 +201,7 @@ The **Archive Score** is the sum of multiple criteria:
 
 A tooltip shows additional details like the number of launches and last launched date, in addition to the scores for the above criteria.
 
-![Flow Archive](media/pb18.png "Flow Archive")
+![Flow Archive](media/pb-24.png "Flow Archive")
 
 The **UI flow Archive** page is sorted by highest archive score. You can target specific makers, date ranges, environments, departments, or connectors.
 
@@ -211,7 +217,7 @@ The **Archive Score** is the sum of multiple criteria:
 
 A tooltip shows additional details like the number of launches and last launched date, in addition to the scores for the above criteria.
 
-![UI flow Archive](media/coe-ui5.png "UI flow Archive")
+![UI flow Archive](media/pb-27.png "UI flow Archive")
 
 By right-clicking to select a specific flow and going to **Drill through** > **Flow Detail**, you can open the detail page for the selected flow.
 
@@ -229,7 +235,7 @@ With the embedded app, you don't have to leave the Power BI dashboard to take ac
 
 - After you've granted yourself ownership, you can open the maker portal to view the version number.
 
-![App Details](media/pb16.png "App Details")
+![App Details](media/pb-30.png "App Details")
 
 ### Flow Detail
 
@@ -247,10 +253,10 @@ With the embedded app, you don't have to leave the Power BI dashboard to take ac
 
 - After you've granted yourself ownership, you can open the maker portal to view flow analytics and details.
 
-![Flow Details](media/pb17.png "Flow Details")
+![Flow Details](media/pb-31.png "Flow Details")
 
 ### UI flow Detail
 
 The **UI flow Detail** page provides you with richer information about the runs of this UI flow. You will be able to review the run history, identify anomalies in time it takes to complete a single run, and view error codes and messages if the UI flow has failed.
 
-![UI flow Details](media/coe-ui6.png "UI flow Details")
+![UI flow Details](media/pb-34.png "UI flow Details")

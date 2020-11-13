@@ -20,9 +20,9 @@ search.app:
 
 With the **Monitor** section of the Center of Excellence (CoE) Power BI dashboard, you can query basic inventory (environments, apps, flows, makers, connectors, and audit logs) to monitor usage across your entire tenant and within each environment. These reports also support drill-downs and filtering, for example by maker department/country/city, connector usage, or premium feature usage.
 
-## Overview – Power Apps
+## Overview
 
-The **Overview – Power Apps** page provides you with a tenant-wide overview of resources:
+The **Overview – Power Apps, Power Automate and Chatbots** page provides you with a tenant-wide overview of resources:
 
 - Total number of environments (and environments created this month)
 
@@ -36,8 +36,6 @@ The **Overview – Power Apps** page provides you with a tenant-wide overview of
 - Total number of bots, bot makers, and bots created this month
 
 The visualizations highlight environments and makers that have the most resources, and show a map of where your makers are based.
-
-
 
 :::row:::
    :::column span="":::
@@ -127,7 +125,14 @@ Filters on this page can help you narrow down this view by app owner, app displa
 ![Apps overview](media/pb-7.png "Apps overview")
 
 The hamburger menu on this page helps you navigate to other reports relevant to Power Apps.
-![Apps navigation](media/pb-8.png "Apps navigation")
+
+### SharePoint integration
+
+The **SharePoint integration** page provides an overview of apps created to customize SharePoint list or document library forms.
+
+Navigate directly to the SharePoint site and view how many connectors are being used in a customized form.
+
+![SharePoint integration](media/pb-23.png "SharePoint integration")
 
 ## Flows
 

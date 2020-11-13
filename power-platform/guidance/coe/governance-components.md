@@ -56,7 +56,7 @@ Represents archival approval tasks started during the App Archive and Clean Up f
 
 This flow runs daily and checks if new environments of type [Microsoft Teams](https://docs.microsoft.com/power-platform/admin/about-teams-environment) have been created. Team owners who have created a Microsoft Teams environments receive an adaptive card via Teams that prompts them to provide a business justification.
 
-Additionally, this flow also sends a welcome email to new team owners to provide them with further information about their environment.
+Additionally, this flow also sends a welcome email to new team owners to provide them with further information about their environment. A link to the policy documentation you have set up as part of [configuring the CoE Settings](#setup-core-components.md) is included in this email.
 
 Save a copy of this flow if you want to change the wording in the emails or adaptive cards.
 
