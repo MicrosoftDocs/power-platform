@@ -72,9 +72,10 @@ In some cases, users are not automatically provisioned into Common Data Service 
 
 If a user meets all access requirements but is still missing from an environment, the user may fall into one of the following cases:
 
-1. Users with Office licenses
-
-2. Team or group owners
+1. Users with only Office licenses (with Common Data Service plan enabled) will not be pre-provisioned into Common Data Service environments.
+2. Owners of Azure AD groups that are associated with Common Data Service environments will not be pre-provisioned.
+3. Members of Azure AD groups that are part of a Group Team created for the Azure AD group will not be pre-provisioned.
+4. Users will not be pre-provisioned into Project Oakdale environments.
 
 Although these users are not pre-provisioned, they can be added to environments through on-demand sync. See the section below for ways to add or refresh users on demand.
 
