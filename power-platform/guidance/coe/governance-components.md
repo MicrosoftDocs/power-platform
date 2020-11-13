@@ -56,11 +56,15 @@ Represents archival approval tasks started during the App Archive and Clean Up f
 
 This flow runs daily and checks if new environments of type [Microsoft Teams](https://docs.microsoft.com/power-platform/admin/about-teams-environment) have been created. Team owners who have created a Microsoft Teams environments receive an adaptive card via Teams that prompts them to provide a business justification.
 
-Additionally, this flow also sends a welcome email to new team owners to provide them with further information about their environment. A link to the policy documentation you have set up as part of [configuring the CoE Settings](#setup-core-components.md) is included in this email.
+![Ask for Business Justification when Microsoft Teams environment is created](media/teams-1.png "Ask for Business Justification when Microsoft Teams environment is created")
+
+Additionally, this flow also sends a welcome email to new team owners to provide them with further information about their environment. A link to the policy documentation you have set up as part of [configuring the CoE Settings](setup-core-components.md) is included in this email.
+
+![Welcome email](media/teams-3.png "Welcome email")
 
 Save a copy of this flow if you want to change the wording in the emails or adaptive cards.
 
-Learn more about the Microsoft Teams governance process in the CoE Starter Kit: [Microsoft Teams environment audit process](#microsoftteams-governance.md)
+Learn more about the Microsoft Teams governance process in the CoE Starter Kit: [Microsoft Teams environment audit process](microsoftteams-governance.md)
 
 ## Microsoft Teams Admin | Weekly Clean Up of Microsoft Teams environments
 
@@ -72,11 +76,11 @@ This flow runs weekly and deletes environments that
 >[!NOTE]
 >Currently, bots created via Power Virtual Agents in Microsoft Teams environments are not discoverable in the CoE Starter Kit.
 
-Environments are deleted from the tenant, and marked as deleted in the Environment table of the CoE Starter Kit - you can view deleted environments in the [Power Platform Admin View](#core-components.md)
+Environments are deleted from the tenant, and marked as deleted in the Environment table of the CoE Starter Kit - you can view deleted environments in the [Power Platform Admin View](core-components.md)
 
 Save a copy of this flow if you want to change the make any changes to the criteria for when environments are deleted.
 
-Learn more about the Microsoft Teams governance process in the CoE Starter Kit: [Microsoft Teams environment audit process](#microsoftteams-governance.md)
+Learn more about the Microsoft Teams governance process in the CoE Starter Kit: [Microsoft Teams environment audit process](microsoftteams-governance.md)
 
 ### Admin \| Compliance Detail Request
 
