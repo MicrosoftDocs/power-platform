@@ -94,14 +94,6 @@ There is a difference in the model for user addition to environment, between Dat
 |Just-In-Time addition of users on their first access of a resource in the environment      |  Yes       |  Yes       |
 |On-demand addition of users (refer to [Add users to an environment](add-users-to-environment.md))      |  Yes       |  Yes       |
 
-### User access requirements
-
-For users to be Enabled in a Dataverse for Teams environment in order to have access to its resources and data, they must:
-
-- [Be enabled in Azure Active Directory](create-users-assign-online-security-roles.md#create-a-user-account).
-- Have an active Microsoft 365 license with a plan that includes Dataverse for Teams.
-- Be a member of the team and its backing Microsoft 365 group.
-
 ### Role assignments 
 
 <table style="width:100%">
