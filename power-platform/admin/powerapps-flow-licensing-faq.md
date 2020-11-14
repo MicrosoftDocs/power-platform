@@ -289,7 +289,7 @@ When the tenant capacity service limits are reached (grows with the # of eligibl
 -	New Dataverse for Teams environments cannot be created in the tenant 
 
 In both cases:
--	Users who want to create/install new chatbots, flows, or tables in that environment will be prompted to notify that the capacity limit is reached, and they need to reduce storage usage or contact their admins.
+-	Users who want to create/install new apps, chatbots, flows, or tables in that environment will be notified that the capacity limit is reached, and they need to reduce storage usage or contact their admins.
 -	Existing solutions in the environment will continue to work (CRUD allowed). The environments will be able to continue to grow beyond the 2GB limit.  
 -	Existing solutions within the environment can be updated.  
 -	Certain options within each solution (Power Apps/Power Automate/Power Virtual Agents) will be hidden/grayed out.  
@@ -309,9 +309,9 @@ No. UI Flows are not supported in Dataverse for Teams.
 ### Can I use custom connectors in Dataverse for Teams?
 Custom connectors are not supported in Dataverse for Teams but [support for Azure API Management (API-M)](https://powerapps.microsoft.com/blog/azure-api-management-connector-on-the-power-platform/) will be available later in Dataverse for Teams.
 
-### Can customers purchase more capacity for an environment associated with a Team?
+### Can customers purchase more capacity for a Dataverse for Teams environment?
 
-No. Dataverse for Teams provides support for approximately 1 million rows per team. Although existing apps and chatbots will continue to work when a Dataverse for Teams environment reaches the per environment limit (2GB), users who want to create a new app, flow, or chatbot in the environment will need to :
+No. Dataverse for Teams provides support for approximately 1 million rows per team. Although existing apps and chatbots will continue to work when a Dataverse for Teams environment reaches the per environment limit (2GB), users who want to create a new app, flow, chatbot, or table in the environment will need to :
 1.	Purchase Power Apps, Power Automate, and Power Virtual Agents subscriptions based on their needs and start building their new app, flow, or chatbot in a Dataverse environment.
 2.	[Upgrade](about-teams-environment.md#upgrade-process) the existing Dataverse for Teams environment to Dataverse in the Power Platform admin center and, if needed, purchase Power Apps, Power Automate, or Power Virtual Agents subscriptions based on their needs.
 
@@ -331,14 +331,14 @@ This capability is not available yet, but is included in our roadmap.
 -	Governance and security
 
 > [!NOTE]
-> Accessing an environment with Dataverse requires all users to have a corresponding standalone Power Platform license for each service being utilized.
+> Accessing an environment with Dataverse requires all users to have a corresponding standalone Power Platform license for each service being utilized. For example, a user accessing an app running on Dataverse needs to be licensed by either the Power Apps per app or per user plan depending on the customer scenario.
 
 ### Why do I see Dataverse plan in select Microsoft 365 subscriptions? Is this related to Dataverse for Teams?
 
 No. A limited set of Dataverse capabilities were recently added to Microsoft 365 licenses to support service capabilities available (for example, Microsoft Project). A standalone Power Apps, Power Automate, or Power Virtual Agents plan is still needed to run apps/flows/bots with Dataverse. Review the [Common Data Service capabilities with Microsoft 365 licenses](/power-platform/admin/pricing-billing-skus#common-data-service-capabilities-with-microsoft-365-licenses) for more details on the feature.
 
 > [!NOTE]
-> There is a service plan called *Dataverse for Teams* that is related to the Dataverse for Teams capabilities.
+> There is a service plan called *Dataverse for Teams* that is related to the Dataverse for Teams capabilities. This service plan is used by our platform for granting customer tenants Dataverse for Teams storage capacity and should not be deactivated.
 
 ### Is geo migration supported for Dataverse for Teams environments?
 Geo migration is not supported for Dataverse for Teams environments.
