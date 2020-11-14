@@ -208,7 +208,7 @@ The following actions will be taken when customers approach and exceed the envir
 #### Environment-level enforcement actions  
 
 > [!NOTE]
-> These environment-level enforcement actions won't be in place for the preview, but will take effect soon after general availability. 
+> These environment-level enforcement actions will take effect soon after general availability. 
 
 When a Dataverse for Teams environment in a team approaches or reaches the 2 GB capacity limit, the following actions will be taken: 
 - At 80 percent of the limit, the Teams users will see in the Teams maker experience a message informing them the capacity limit is about to be reached. At this point, customers are encouraged to either reduce storage usage or contact their admin for other options.  
@@ -267,14 +267,14 @@ The ability to create apps or bots with the new Power Apps and Power Virtual Age
 
 In your Teams admin center, you can use **Power Apps** and **Power Virtual Agents** applications available under **Microsoft Apps** to enable or disable these new capabilities for specific users. More information: [Manage app permission policies in Microsoft Teams](https://docs.microsoft.com/microsoftteams/teams-app-permission-policies)
 
-In addition to the new experience of creating apps or bots with Power Apps and Power Virtual Agents, users can now use sample apps to instantiate Teams apps (and associated Dataverse for Teams environments). These sample apps are part of the public preview. Available sample apps are listed [here](https://docs.microsoft.com/powerapps/teams/use-sample-apps-from-teams-store). You can enable or disable these apps for specific users by using the Teams apps permissions policies. For example, for app permissions policies under **Microsoft Apps** in the Teams admin center, you'll find **Employee Ideas**, **Inspection**, and **Issue Reporting** sample apps.
+In addition to the new experience of creating apps or bots with Power Apps and Power Virtual Agents, users can now use sample apps to instantiate Teams apps (and associated Dataverse for Teams environments). Available sample apps are listed [here](https://docs.microsoft.com/powerapps/teams/use-sample-apps-from-teams-store). You can enable or disable these apps for specific users by using the Teams apps permissions policies. For example, for app permissions policies under **Microsoft Apps** in the Teams admin center, you'll find **Employee Ideas**, **Inspection**, and **Issue Reporting** sample apps.
 
 Note that when the Power Apps app is disabled, users won't have access to any standalone apps that you pinned in their Teams channels with the Power Apps app. For users to continue using standalone apps in the Teams experience even after the Power Apps maker experience has been turned off for them, you can use the new **Built by your colleagues** catalog entry point to pin standalone apps to Teams channels or a user's personal scope. This action only needs to be performed once: it updates the experience for all members of the team, allowing them to use existing apps they already had access to. We recommend that if you choose to disable Power Apps for any user in your tenant, you advise them that they can use the **Built by your colleagues** catalog to restore the standalone apps they were using before in Teams channels. For more information about this entry point and corresponding controls, see [Manage Microsoft Power Platform apps in the Microsoft Teams admin center](https://docs.microsoft.com/microsoftteams/manage-power-platform-apps).
 
 The **Built by your colleagues** catalog intentionally filters out 'Shared with Everyone’ apps. These apps can be added to the Teams app catalog leveraging the ‘Upload a custom app’ capability in Teams. See [Publish a custom app by uploading an app package](https://docs.microsoft.com/microsoftteams/upload-custom-apps).
 
 > [!NOTE]
-> Power Platform data governance policies like data loss prevention and tenant isolation apply to Teams and Dataverse for Teams environments, similar to other environment types.
+> Microsoft Power Platform data governance policies like data loss prevention and tenant isolation apply to Teams and Dataverse for Teams environments, similar to other environment types.
 
 ## Known issues
 
