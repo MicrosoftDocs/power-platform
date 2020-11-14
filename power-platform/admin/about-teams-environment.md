@@ -53,7 +53,7 @@ This section provides a summary of key lifecycle operations that will be allowed
 > [!NOTE]
 > The Dataverse for Teams environment name is the same as the team name. You can filter the list of environments in the Power Platform admin center to show just Dataverse for Teams environments.
 
-|Operations  |Feature description  |Available in preview  |
+|Operations  |Feature description  |Available in GA  |
 |---------|---------|---------|
 |Backup     | Automated backups and labeled backups can be taken. Admins can view them in the Power Platform admin center. Backups will be available for up to 7 days.        |  Yes       |
 |Restore     | Only point-in-time restores to the same environment will be possible. Note: if the environment has been upgraded, the point-in-time restore will only be available starting from the moment it was upgraded. | Yes        |
