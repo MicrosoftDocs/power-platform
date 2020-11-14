@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 10/28/2020
+ms.date: 11/11/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -42,6 +42,7 @@ Most of these users are hidden from user views but they can be found by using th
 | | JobServiceProd| JobServiceProd@onmicrosoft.com| Enable satellite services to schedule and dispatch messages to independently built workloads with guaranteed delivery of messages based on service-defined policies. | System admin |
 | | # CCADataAnalyticsML | CCADAAdmins@onmicrosoft.com | To allow AI insights in customer care apps like Customer Service, Field Service, etc. | System Customizer and System admin |
 | | # CDSReportService | CDSReportService@onmicrosoft.com | To allow user to run reports. |N/A |
+| | Power Platform Dataflows | ppdfcdsclient@microsoft.com | Power Platform Dataflows service application to perform data preparation and loading into Common Data Service and Azure Data Lake | System Customizer and Delegate
 
 **The purpose of the system account?** 
 - The System user is a built-in user account that is used to allow customers to perform system updates via plug-ins. 

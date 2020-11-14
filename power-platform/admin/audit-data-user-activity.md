@@ -5,7 +5,7 @@ author: pnghub
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/14/2020
+ms.date: 11/13/2020
 ms.author: gned
 ms.reviewer: jimholtz 
 
@@ -55,7 +55,7 @@ This task requires the system administrator or customizer security role or equiv
   
 1. Browse to the Power Platform admin center and sign in using administrator credentials. 
   
-2. Go to **Environments** > [select an environment] > expand **Audit and logs** > **Audit settings**.
+2. Go to **Environments** > [select an environment] > **Settings** > expand **Audit and logs** > **Audit settings**.
   
    |      Setting |     Description    |
    |--------------------|---------------------|
@@ -80,7 +80,7 @@ This task requires the system administrator or customizer security role or equiv
 
 1. Browse to the Power Platform admin center and sign in using administrator credentials. 
   
-2. Go to **Environments** > [select an environment] > expand **Audit and logs** > **Legacy audit settings**.
+2. Go to **Environments** > [select an environment] > **Settings** > expand **Audit and logs** > **Legacy audit settings**.
 
 3. Select the entities you want to track. To start or stop auditing on specific entities, select or clear the following check boxes:  
   
@@ -97,7 +97,7 @@ System administrators can see activity for the entities that are enabled for aud
   
 1. Browse to the Power Platform admin center and sign in using administrator credentials. 
   
-2. Go to **Environments** > [select an environment] > expand **Audit and logs** > **Audit Summary View**.
+2. Go to **Environments** > [select an environment] > **Settings** > expand **Audit and logs** > **Audit Summary View**.
   
 3. In the **Audit Summary View**, you can do the following:  
   
@@ -115,7 +115,7 @@ System administrators or customizers can change the default audit settings for e
   
 1. Browse to the Power Platform admin center and sign in using administrator credentials. 
   
-2. Go to **Environments** > [select an environment] > expand **Audit and logs** > **Entity and Field Audit Settings**.
+2. Go to **Environments** > [select an environment] > **Settings** > expand **Audit and logs** > **Entity and Field Audit Settings**.
 
 3. Under **Components**, expand **Entities**.  
   

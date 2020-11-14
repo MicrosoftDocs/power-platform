@@ -360,6 +360,8 @@
           href: create-users-assign-online-security-roles.md
         - name: Use service admin roles to manage your tenant
           href: use-service-admin-role-manage-tenant.md
+        - name: Miscellaneous privileges
+          href: miscellaneous-privileges.md
         - name: Create or edit a security role
           href: create-edit-security-role.md
         - name: Copy a security role
@@ -591,6 +593,8 @@
         href: detect-duplicate-data.md 
       - name: Detect duplicate records
         href: detect-duplicate-records.md
+      - name: Enable improved duplicate detection
+        href: enable-improved-duplicate-detection.md
       - name: Duplicate detection rules
         href: set-up-duplicate-detection-rules-keep-data-clean.md 
       - name: Turn duplicate detection rules on or off
