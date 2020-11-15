@@ -38,7 +38,7 @@ This is the first step of the installation process and is required for every oth
 
 1. Create an environment in which to set up the CoE.
 
-   1. Go to [aka.ms/ppac](https://admin.powerplatform.microsoft.com/).
+   1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
    1. Select **Environments** > **+ New**, and then enter a name, type, and purpose.
    1. Select **Yes** for creating the database, and then select **Next**.
    1. Leave **Sample apps and data** set to **No**
