@@ -18,6 +18,8 @@ search.app:
 ---
 # Establishing an environment strategy
 
+[!INCLUDE[cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
+
 Environments are containers that administrators can use to manage apps, flows, connections, and other assets, along with permissions to allow organization members to use the resources. This article walks you through important details about environments in Microsoft Power Platform and discusses recommended ways to benefit from proactively managing them. More information: [Microsoft Power Platform environments overview](https://docs.microsoft.com/power-platform/admin/environments-overview)
 
 Developing an environment strategy means configuring environments and other layers of data security in a way that supports productive development in your organization, while securing and organizing resources. A strategy to manage environment provisioning and access, and controlling resources within them, is important to:
