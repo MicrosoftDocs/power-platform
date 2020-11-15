@@ -6,7 +6,7 @@ manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/10/2020
+ms.date: 11/16/2020
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -18,6 +18,8 @@ search.app:
 ---
 
 # Set up core components
+
+[!INCLUDE[cc-data-platform-banner](../../../includes/cc-data-platform-banner.md)]
 
 The Center of Excellence (CoE) core components solution provides components that you need to get started with setting up a CoE. They sync all your resources into entities and build admin apps on top of that to help you get more visibility into the apps, flows, and makers that exist in your environment. Additionally, apps like DLP Editor and Set App Permissions help with daily admin tasks.  
 
@@ -56,8 +58,8 @@ This is the first step of the installation process and is required for every oth
      ![Select the Common Data Service connector](media/msi-connection.png "Select the Common Data Service connector")
     1. Select **Create**.
     1. Complete the same steps for the following connectors:
-        - Microsoft Dataverse
-        - Dataverse (current environment)
+        - Common Data Service
+        - Common Data Service (current environment)
         - Power Apps for Admins
         - Power Apps for Makers
         - Power Platform for Admins
