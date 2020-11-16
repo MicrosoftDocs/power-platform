@@ -66,6 +66,9 @@ The downloaded file contains the following information:
 
 - TopicId: A unique identifier of the last authored topic triggered in this session. 
 
+>[!NOTE]
+>The download will start when you select the time period. It will be downloaded into your default browser download's location.
+
 ## View and export bot conversation transcripts from the Power Apps portal
 
 You can also view and export bot conversation transcripts from the Power Apps portal.
