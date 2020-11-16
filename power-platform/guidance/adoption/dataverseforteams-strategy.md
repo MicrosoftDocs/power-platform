@@ -18,7 +18,7 @@ search.app:
 ---
 # Manage Microsoft Dataverse for Teams environments
 
-Microsoft Dataverse for Teams empowers users to build custom apps, bots, and flows in Teams by using Power Apps, Power Virtual Agents, and Power Automate. When a team owner adds this capability to their team, a Power Platform environment with a Microsoft Dataverse for Teams database is created and linked to their team. Learn more: [About Microsoft Teams Environments](https://docs.microsoft.com/power-platform/admin/about-teams-environment).
+Microsoft Dataverse for Teams empowers users to build custom apps, bots, and flows in Teams by using Power Apps, Power Virtual Agents, and Power Automate. When a team owner adds this capability to their team, a Power Platform environment with a Microsoft Dataverse for Teams database is created and linked to their team. Learn more: [About Microsoft Datverse for Teams Environments](https://docs.microsoft.com/power-platform/admin/about-teams-environment).
 
 Dataverse for Teams honors the existing data governance paradigms of Microsoft Power Platform and enables access control in the Teams Admin Center. The Power Platform admin center provides more detail, including monitoring dedicated capacity utilization and [Data Loss Prevention (DLP) policies](https://docs.microsoft.com/power-platform/admin/wp-data-loss-prevention).  
 
@@ -28,7 +28,7 @@ Dataverse for Teams is a fully embedded experience, governance controls specific
 
 Our philosophy is to enable you to use Power Platform to manage Power Platform - therefore, use Power Automate to send welcome emails to owners of new Dataverse for Teams environments and request a business justification for their environments. Central IT can therefore effectively engage with new makers and ensure that Dataverse for Teams capacity is used effectively in the tenant and distributed to the most effective business use cases. Similar workflows can be used to apply specific DLP policies to Dataverse for Teams environments as needed and to invoke clean-up of unused assets that can be repurposed for more compelling scenarios in the tenant.
 
-## Govern Environment Creation
+## Govern environment creation
 
 We recommend setting up reactive governance workflows and monitoring abilities. This will provide Team owners the ability to provide a business justification, and admins the ability to review the business justification:
 
