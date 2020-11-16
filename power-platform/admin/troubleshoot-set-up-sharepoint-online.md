@@ -84,7 +84,7 @@ If FetchXML or LayoutXML are malformed, use the following to restore.
     From `<Managed>0</Managed>` to `<Managed>1</Managed>`.
 13.    In the solution contents folder, locate and open **customization.xml**.
 14.    Search the `<SavedQuery>` element where the **savedqueryid** attribute is equal to "0016f9f3-41cc-4276-9d11-04308d15858d".
-15.    If the `<SavedQuery>` element found in step 14 is similar to 
+15.    If you can't find a saved query with the ID specified in the previous step, go to step 19. However, if the `<SavedQuery>` element found in step 14 is similar to 
 `<SavedQuery unmodified="1">`, remove the **unmodified="n"** attribute. 
 16. Search layoutxml of Document associated grid (search for *Document Associated*).
     
@@ -154,7 +154,7 @@ If FetchXML or LayoutXML are malformed, use the following to restore.
 
 19. Similarly search the `<SavedQuery>` element where the **savedqueryid** attribute is equal to "a5b008ac-07d9-4554-8509-2c05767bff51".
 
-20. If the `<SavedQuery>` element found in step 19 is similar to `<SavedQuery unmodified="1">`, remove the **unmodified="n"** attribute.
+20. If you can't find a saved query with the ID specified in the previous step, go to step 24. However, if the `<SavedQuery>` element found in step 19 is similar to `<SavedQuery unmodified="1">`, remove the **unmodified="n"** attribute.
 
 21. Search layoutxml of All SharePoint Document (search for *All SharePoint Document*).
 
@@ -219,7 +219,7 @@ If FetchXML or LayoutXML are malformed, use the following to restore.
 
 24. Similarly search the `<SavedQuery>` element where the **savedqueryid** attribute is equal to "cb177797-b2ac-42a8-9773-5412321a965c".
 
-25. If the `<SavedQuery>` element found in step 24 is similar to `<SavedQuery unmodified="1">`, remove the **unmodified="n"** attribute.
+25. If you can't find a saved query with the ID specified in the previous step, go to step 29. However, if the `<SavedQuery>` element found in step 24 is similar to `<SavedQuery unmodified="1">`, remove the **unmodified="n"** attribute.
 
 26. Search layoutxml of OneNote SharePoint Document (search for *OneNote SharePoint Document*).
 
