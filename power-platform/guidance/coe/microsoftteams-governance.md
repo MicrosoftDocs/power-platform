@@ -18,11 +18,11 @@ search.app:
 ---
 # Microsoft Dataverse for Teams environment management
 
-Leverage our philosophy of using Microsoft Power Platform to manage Microsoft Power Platform by building automation to send welcome emails to owners of new Microsoft Dataverse for Teams environments and requesting business justification for the newly created environments. This ensures that central IT teams can effectively engage with the new makers onboarding the platform, and ensure that Dataverse for Teams capacity is leveraged effectively in your tenant and distributed to the most effective business use cases. Similar workflows can be used to apply specific DLP policies to Dataverse for Teams environments as needed and to invoke clean-up of unused assets that can be repurposed for more compelling scenarios in the tenant.
+Leverage our philosophy of using Microsoft Power Platform to manage Microsoft Power Platform by building automation to send welcome emails to owners of new Dataverse for Teams environments and requesting business justification for the newly created environments. This ensures that central IT teams can effectively engage with the new makers onboarding the platform, and ensure that Dataverse for Teams capacity is leveraged effectively in your tenant and distributed to the most effective business use cases. Similar workflows can be used to apply specific DLP policies to Dataverse for Teams environments as needed and to invoke clean-up of unused assets that can be repurposed for more compelling scenarios in the tenant.
 
 ## Process description
 
-**Problem statement:** Central IT wants to ensure that Microsoft Teams environments are leveraged effectively in their tenant. Central IT wants to understand the business justification for a Dataverse for Teams environment to be able to distribute them to the most effective business use cases, as well as be able to invoke cleanup of unused assets that can be repurposed for more compelling scenarios in the tenant.
+**Problem statement:** Central IT wants to ensure that Dataverse for Teams environments are leveraged effectively in their tenant. Central IT wants to understand the business justification for a Dataverse for Teams environment to be able to distribute them to the most effective business use cases, as well as be able to invoke cleanup of unused assets that can be repurposed for more compelling scenarios in the tenant.
 
 **Solution:** Reactive governance and monitoring abilities are configured to provide Team owners the ability to provide a business justification, and to provide Central IT with the ability to approve or reject the business justification as well as run regular automated cleanup flows.
 
