@@ -75,8 +75,5 @@ The downloaded file contains the following information:
 - TopicId: A unique identifier of the last authored topic triggered in this session. 
 
 
-See the [Power Virtual Agents web app version of this topic](../analytics-sessions.md) for information on how to view and export transcripts from the Power Apps portal, and how to change the default retention time.
-
-
 
 
