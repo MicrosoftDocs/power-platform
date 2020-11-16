@@ -40,7 +40,7 @@ Information available for chatbots:
 - Number of components, plus component details
 - Number of flows
 
-![Power Platform Admin View - View who an app is shared with](../media/pb-pva.png "Power Platform Admin View - View who an app is shared with")
+![Power Platform Admin View - Virtual Agents inventory](../media/pb-4.png "Power Platform Admin View - Virtual Agents inventory")
 
 ## Power Apps (canvas apps) "shared with" information
 
@@ -71,4 +71,3 @@ This flow contained a bug due to which new actions and triggers were not capture
 ## Admin | Sync Template v2 (Check Deleted)
 
 This flow runs weekly, and compares CoE to the tenant to determine if any objects were deleted since last run. Either just marks them as deleted.
-

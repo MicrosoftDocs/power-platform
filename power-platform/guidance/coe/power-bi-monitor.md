@@ -103,7 +103,7 @@ The table of apps shows:
 
 The filters allow you to filter by Owner as well as Created date.
 
-![Environments overview](media/pb-6.png "Environments overview")
+![Microsoft Teams Environments overview](media/pb-6.png "Microsoft Teams Environments overview")
 
 ## Apps
 

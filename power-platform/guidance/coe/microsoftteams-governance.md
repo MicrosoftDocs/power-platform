@@ -48,7 +48,7 @@ An admin opens **Power Platform Admin View** > **Environments** > **Microsoft Te
 
 The admin can further decide to approve a business justification, but highlight it for later review by providing a review date.
 
-![Validate maker requirements](media/teams-6.png "Validate maker requirements")
+![The admin can further decide to approve a business justification](media/teams-6.png "The admin can further decide to approve a business justification")
 
 ## Monitoring and weekly Cleanup process
 
@@ -87,4 +87,4 @@ The filters allow you to drill down and analyze trends by filtering on the creat
 
 A link to both the Environment page in the Admin Center, as well as the Teams itself is available and allows the admin to get further information about this environment.
 
-![Team owner receives notification](media/pb-6.png "Team owner receives notification")
+![Microsoft Teams environment dashboard](media/pb-6.png "Microsoft Teams environment dashboard")

@@ -50,4 +50,4 @@ The **App Shares** page shows your top apps (by the number of users it's shared 
 
 The **App Usage** page shows your top apps by number of app launches and your users who most frequently launch apps.
 
-![App Shares](media/pb-19.png "App Shares")
+![App Usage](media/pb-19.png "App Usage")
