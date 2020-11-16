@@ -18,7 +18,7 @@ ms.collection: virtual-agent
 > - [Power Virtual Agents web app](../authoring-test-bot.md)
 > - [Power Virtual Agents app in Microsoft Teams](authoring-test-bot-teams.md)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
+
 
 As you design your bot in Power Virtual Agents, you can use the **Test bot** pane to see how the bot leads  a user through the bot conversation. 
 

@@ -21,7 +21,7 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](../advanced-entities-slot-filling.md)
 > - [Power Virtual Agents app in Microsoft Teams](advanced-entities-slot-filling-teams.md)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
+
 
 Entities in chatbots let you store information in similar groups. 
 

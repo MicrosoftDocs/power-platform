@@ -20,7 +20,7 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](../analytics-summary.md)
 > - [Power Virtual Agents app in Microsoft Teams](analytics-summary-teams.md)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
+
 
 The Summary page gives you a broad overview of how well your bot is doing with these charts:
 

@@ -20,7 +20,7 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](../customize-default-canvas.md)
 > - [Power Virtual Agents app in Microsoft Teams](customize-default-canvas-teams.md)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
+
 
 You can customize how the bot looks when added as an app in Microsoft Teams. You can change the icon
 and the bot name at any time, and add a long and short description when you publish the bot.
