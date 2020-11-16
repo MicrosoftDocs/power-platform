@@ -33,9 +33,13 @@ Leverage our philosophy of using Power Platform to manage Power Platform by buil
 We recommend setting up reactive governance workflows and monitoring abilities to provide Team owners the ability to provide a business justification, and to provide admins with the ability to review the business justification:
 
 1. Team owner is prompted to **provide a business justification** for their new environment within X days of creating the environment
-  ![Team owner is prompted to **provide a business justification](media/teams-1.png "Team owner is prompted to **provide a business justification")
+
+    ![Team owner is prompted to **provide a business justification](media/teams-1.png "Team owner is prompted to **provide a business justification")
+
 1. **Admins approve or reject** the submitted business justifications, and optionally mark them for a later review.
-   ![Admins approve or reject** the submitted business justifications](media/teams-2.png "Admins approve or reject** the submitted business justifications")
+
+    ![Admins approve or reject** the submitted business justifications](media/teams-2.png "Admins approve or reject** the submitted business justifications")
+
 1. An **automated clean up** runs periodically and deletes rejected or unclaimed (no justification provided) environments. If needed, deleted environments can be restored within 7 days using [Power Platform Admin Center - Recover environment](https://docs.microsoft.com/power-platform/admin/recover-environment#power-platform-admin-center).
 1. Admins can also **review usage data and resource details** for Dataverse for Teams environments periodically, and can choose to delete unused environments to free up assets for important use cases.
 
