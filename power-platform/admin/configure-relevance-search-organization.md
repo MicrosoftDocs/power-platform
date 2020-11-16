@@ -186,9 +186,8 @@ To help Microsoft improve Relevance Search, you can share your organization’s 
 
 Your organization’s queries and results are reviewed by people using secured computers in the United States. Aggregate data about queries and results are used by Microsoft engineers and data scientists to improve future search query results for all users worldwide. Your data remains your property. Your organization’s data will be stored within your tenant’s compliance boundary and is automatically deleted after 30 days. You can delete the data at any time by navigating to the Power Platform admin center and toggling **Improve Relevance Search** to **Off**. For more information, see Terms of Service in Power Platform admin center.
 
-screenshot
-
-
+> [!div class="mx-imgBorder"] 
+> ![Improve Relevance Search results](media/improve-relevance-search-results.png "Improve Relevance Search results")
 
 ### See also  
  [Use relevance search to search for records](https://docs.microsoft.com/powerapps/user/relevance-search)
