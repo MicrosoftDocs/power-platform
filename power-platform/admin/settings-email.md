@@ -1,6 +1,6 @@
 ---
 title: "Manage email settings  | MicrosoftDocs"
-description: View and manage email settings for Common Data Service.
+description: View and manage email settings for Microsoft Dataverse.
 author: jimholtz
 manager: kvivek
 ms.service: power-platform

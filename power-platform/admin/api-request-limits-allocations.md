@@ -24,12 +24,12 @@ Effective October 2019, to help ensure service levels, availability, and quality
 
 Requests in Microsoft Power Platform consist of various actions that a user makes across various products. At a high level, below is what constitute an API request:
 
-- **Power Apps** – all API requests to connectors and Common Data Service.
+- **Power Apps** – all API requests to connectors and Microsoft Dataverse.
 - **Power Automate** – all API requests to connectors, HTTP actions, and built-in actions from initializing variables to a simple compose action. Both succeeded and failed actions count towards these limits. Additionally, retries and additional requests from pagination count as action executions as well. 
 - **Common Data Service** – all create, read, update, and delete (CRUD), assign, and share operations including user-driven and internal system requests required to complete CRUD transactions, as well as special operations like share or assign. These can be from any client or application and using any endpoint (SOAP or REST). These include, but are not limited to, plug-ins, classic workflows, and custom controls making the earlier-mentioned operations.
 
 > [!NOTE]
-> For Common Data Service, there is be a small set of system internal operations that are excluded from limits, such as login, logout, and system metadata operations.
+> For Dataverse, there is be a small set of system internal operations that are excluded from limits, such as login, logout, and system metadata operations.
 
 The table below will describe the common requests limits as well as the allocation that a user gets based on the type of license assigned to the user.
 
@@ -72,7 +72,7 @@ Each capacity add-on raises the request limits by an additional 10,000 per 24 ho
 
 ## Requests limits not based on licensed users or flows
 
-The Common Data Service provides the ability to have identities that do not require any user license to interact with the service. There are four types of
+The Dataverse provides the ability to have identities that do not require any user license to interact with the service. There are four types of
 these users:
 
 -   [Application users](create-users-assign-online-security-roles.md#create-an-application-user)
@@ -104,7 +104,7 @@ Apart from the daily API request limit, there are other service protection limit
 
 Review the following resources for information about *current* service protection limits for each service:
 
-- [Common Data Service  limits](https://docs.microsoft.com/powerapps/developer/common-data-service/api-limits): applicable for model-driven apps and customer engagement apps (such as Dynamics 365 Sales and Customer Service), Power Apps, and Power Automate connecting to Common Data Service/customer engagement apps
+- [Dataverse  limits](https://docs.microsoft.com/powerapps/developer/common-data-service/api-limits): applicable for model-driven apps and customer engagement apps (such as Dynamics 365 Sales and Customer Service), Power Apps, and Power Automate connecting to Dataverse/customer engagement apps
 - [Power Automate limits](https://docs.microsoft.com/flow/limits-and-config): applicable for automated, scheduled, and instant flows
 - [Limits in connectors](https://docs.microsoft.com/connectors/): applicable for Power Automate and Power Apps
 
@@ -112,9 +112,9 @@ Review the following resources for information about *current* service protectio
 
 ### What tools can I use to monitor and analyze API requests across the platform?
 
-Today, the Power Platform Admin Center contains [reports on Common Data Service API requests](https://docs.microsoft.com/power-platform/admin/analytics-common-data-service). This reporting today accounts for interactive and non-interactive traffic. This helps you to quickly view adoption and user metrics for your organization. If your apps or flows primarily use the Common Data Service, then these reports can serve as good approximations of the total usage of your solutions.
+Today, the Power Platform Admin Center contains [reports on Dataverse API requests](https://docs.microsoft.com/power-platform/admin/analytics-common-data-service). This reporting today accounts for interactive and non-interactive traffic. This helps you to quickly view adoption and user metrics for your organization. If your apps or flows primarily use the Dataverse, then these reports can serve as good approximations of the total usage of your solutions.
 
-Additionally, for Power Automate usage specifically, you can see the action usage for a given flow by selecting the **Analytics** action from the flow properties page, and this works across all types of actions. However, if your apps or flows do not use the Common Data Service, then at this time there are no reports available in the Power Platform Admin center, although this will be available during 2020 Release Wave 2. Administrators will also be notified via email about overages as a part of 2020 Release Wave 2.
+Additionally, for Power Automate usage specifically, you can see the action usage for a given flow by selecting the **Analytics** action from the flow properties page, and this works across all types of actions. However, if your apps or flows do not use the Dataverse, then at this time there are no reports available in the Power Platform Admin center, although this will be available during 2020 Release Wave 2. Administrators will also be notified via email about overages as a part of 2020 Release Wave 2.
 
 ### What happens if a user or integration exceeds request capacity?
 
@@ -126,7 +126,7 @@ When users exceed their limits, administrators can see this in the admin center 
 
 Users won't be blocked from using an app or flow for occasional and reasonable overages at this point in time. However, if a user or flow exceeds the limits consistently for an extended period of time (more than 14 days), that user may be disabled or flow turned off.
 
-In addition, there are other applicable limits for [Common Data Service](https://docs.microsoft.com/powerapps/developer/common-data-service/api-limits), [Power Automate](https://docs.microsoft.com/flow/limits-and-config), and [Connectors](https://docs.microsoft.com/connectors/) that might directly impact your users, and those limits may not have any affordance for occasional or reasonable overages. Flow owners will be notified via email if their flow is failing or encountering such limits, so be sure to monitor email for notifications about such flows.
+In addition, there are other applicable limits for [Dataverse](https://docs.microsoft.com/powerapps/developer/common-data-service/api-limits), [Power Automate](https://docs.microsoft.com/flow/limits-and-config), and [Connectors](https://docs.microsoft.com/connectors/) that might directly impact your users, and those limits may not have any affordance for occasional or reasonable overages. Flow owners will be notified via email if their flow is failing or encountering such limits, so be sure to monitor email for notifications about such flows.
 
 ### Will there be a transition period for existing customers?
 
@@ -136,7 +136,7 @@ Additionally, as enforcement is currently less strict, there is no facility to y
 
 ### Will my integrations stop working if application users exceed base request capacity?
 
-We do not currently stop integrations for occasional and reasonable overages. Administrators can see usage in the Power Platform admin center (for the Common Data Service, with general reporting coming during 2020 release wave 2). However, at this time, if a user or flow exceeds the limits consistently for an extended period of time, that user may be disabled or flow turned off.
+We do not currently stop integrations for occasional and reasonable overages. Administrators can see usage in the Power Platform admin center (for the Dataverse, with general reporting coming during 2020 release wave 2). However, at this time, if a user or flow exceeds the limits consistently for an extended period of time, that user may be disabled or flow turned off.
 
 Once the transition period ends, certain operations will additionally be blocked when a tenant exceeds their Power Platform request limits. These blocked operations will primarily be in administration and customization areas, but not limited to these operations (and may expand into other areas as well, depending on the overage scenarios). 
 
@@ -152,13 +152,13 @@ No. As it is a service performance limit, all the Power Platform request limits 
 
 No. Tenant level limits are shared across all application users, non-interactive users, administrative users, or SYSTEM user within the tenant.
 
-### Do the requests generated from classic Common Data Service workflows and plug-ins in Common Data Service count against the request limits?
+### Do the requests generated from classic Dataverse workflows and plug-ins in Dataverse count against the request limits?
 
 Yes, if these requests are making CRUD, assign, or share&ndash;type requests, they will count. In the case of classic workflows, this includes actions such as checking conditions, starting child workflows or stopping workflows. However, requests generated internally from the platform aren't counted, such as: sdkmessagerequest, solutioncomponentdefinition, and ribbonclientmetadatareporting.
 
 ### Should I use a third-party data integration tool instead of Power Automate to avoid hitting my limits?
 
-No, third-party data integration tools are subject to the exact same limits as scheduled, instant, or automated flows. Thus, there is no difference whether you choose to use Power Automate or a third-party tool. Moreover, requests from Power Automate to the Common Data Service are not double-counted, a flow that calls one action will only count as one request against their limit, not two.
+No, third-party data integration tools are subject to the exact same limits as scheduled, instant, or automated flows. Thus, there is no difference whether you choose to use Power Automate or a third-party tool. Moreover, requests from Power Automate to the Dataverse are not double-counted, a flow that calls one action will only count as one request against their limit, not two.
 
 ### See also
-[Common Data Service API limits overview](https://docs.microsoft.com/powerapps/maker/common-data-service/api-limits-overview)
+[Dataverse API limits overview](https://docs.microsoft.com/powerapps/maker/common-data-service/api-limits-overview)

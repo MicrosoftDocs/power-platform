@@ -1,6 +1,6 @@
 ---
 title: "Broadcast announcements to an entire organization  | MicrosoftDocs"
-description: View and manage behavior settings for Common Data Service.
+description: View and manage behavior settings for Microsoft Dataverse.
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin

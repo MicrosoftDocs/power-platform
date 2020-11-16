@@ -20,18 +20,18 @@ search.app:
 ---
 # Deploy packages using Package Deployer and Windows PowerShell
 
-[!INCLUDE[pn_package_deployer_long](../includes/pn-package-deployer-long.md)] enables administrators to deploy packages to a Common Data Service environment. 
+[!INCLUDE[pn_package_deployer_long](../includes/pn-package-deployer-long.md)] enables administrators to deploy packages to a Microsoft Dataverse environment. 
 
 > [!NOTE]
 > Package deployer also works with Dynamics 365 Customer Engagement (on-premises) organizations.
 
 A “package” can consist of any or all of the following:  
   
-- One or more Common Data Service solution files.  
+- One or more Dataverse solution files.  
   
 - Flat files or exported data files from the Configuration Migration tool. For information about the Configuration Migration tool, see [Manage your configuration data](manage-configuration-data.md).  
   
-- Custom code that can run during or after the package is deployed to Common Data Service environment.  
+- Custom code that can run during or after the package is deployed to Dataverse environment.  
   
 - HTML content specific to the package that can display at the beginning and end of the package deployment process. This can be useful to provide a description of the solutions and files that are deployed in the package.  
   

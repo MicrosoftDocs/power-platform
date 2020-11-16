@@ -18,7 +18,7 @@ search.app:
 ---
 
 # Overview of application lifecycle management with Microsoft Power Platform
-The articles in this section describe how you can implement application lifecycle management (ALM) using Power Apps, Power Automate, and Common Data Service. 
+The articles in this section describe how you can implement application lifecycle management (ALM) using Power Apps, Power Automate, and Microsoft Dataverse. 
 
 ## What is ALM? 
 ALM is the lifecycle management of applications, which includes governance, development, and maintenance. Moreover, it includes these disciplines: requirements management, software architecture, development, testing, maintenance, change management, continuous integration, project management, deployment, and release management. ALM tools provide a
@@ -45,9 +45,9 @@ The *application lifecycle* is the cyclical software development process that in
 
 ![The application lifecycle](media/application-lifecycle.png "The application lifecycle") 
 
-## ALM for Power Apps, Power Automate, and Common Data Service
+## ALM for Power Apps, Power Automate, and Dataverse
 
-Common Data Service in Microsoft Power Platform lets you securely store and manage data that's used by business applications. To use the features and tools available for ALM, all environments that participate in ALM must include a Common Data Service database.
+Dataverse in Microsoft Power Platform lets you securely store and manage data that's used by business applications. To use the features and tools available for ALM, all environments that participate in ALM must include a Dataverse database.
 
 The following concepts are important for understanding ALM using the Microsoft Power Platform.
 
@@ -61,5 +61,5 @@ For more information about how ALM and Azure DevOps technologies&mdash;combined 
 
 ### See also
 [ALM basics with Microsoft Power Platform](basics-alm.md)<br/>
-[What is Common Data Service?](/powerapps/maker/common-data-service/data-platform-intro) <br/>
+[What is Dataverse?](/powerapps/maker/common-data-service/data-platform-intro) <br/>
 [Application lifecycle management for Finance and Operations apps](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/app-lifecycle-management)

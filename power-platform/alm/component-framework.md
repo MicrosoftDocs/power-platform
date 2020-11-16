@@ -25,12 +25,12 @@ Data Service. The following sections describe how to do this.
 
 ## Package and deploy a code component
 
-This section describes how to import code components into Common Data Service so
+This section describes how to import code components into Microsoft Dataverse so
 that the components are available to Power Apps makers.
 
 After implementing the code components by using the Power Apps CLI, the next step
 is to pack all the code component elements into a solution file and import the
-solution file into Common Data Service so that you can see the code components
+solution file into Dataverse so that you can see the code components
 in the maker runtime experience.
 
 To create and import a solution file:
@@ -41,7 +41,7 @@ To create and import a solution file:
 
 2.  Create a new solution project by using the following command. The solution
     project is used for bundling the code component into a solution zip
-    (compressed) file that's used for importing into Common Data Service.
+    (compressed) file that's used for importing into Dataverse.
 
     ```dotnetcli
     pac solution init --publisher-name \<enter your publisher name\>
@@ -85,8 +85,8 @@ To create and import a solution file:
     \\bin\\release) folder after the build is successful.
 
 6.  You can use the [Microsoft Power Platform Build Tools](https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.PowerApps-BuildTools)
-    to automate importing the solution into a Common Data Service environment;
-    otherwise, you can manually [import the solution into Common Data Service](/powerapps/maker/common-data-service/import-update-export-solutions.md) by using
+    to automate importing the solution into a Dataverse environment;
+    otherwise, you can manually [import the solution into Dataverse](/powerapps/maker/common-data-service/import-update-export-solutions.md) by using
     the web portal.
 
 ## Additional tasks that you can do with the framework and solutions
@@ -94,7 +94,7 @@ To create and import a solution file:
 Below are links to additional common tasks that you can do when working with
 the framework and solutions.
 
-- [Create a solution project based on an existing solution in Common Data Service](/powerapps/developer/component-framework/import-custom-controls#create-a-solution-project-based-on-an-existing-solution-in-common-data-service)
+- [Create a solution project based on an existing solution in Dataverse](/powerapps/developer/component-framework/import-custom-controls#create-a-solution-project-based-on-an-existing-solution-in-common-data-service)
 
 - [Create a plug-in project and add a reference to it in your solution](/powerapps/developer/component-framework/import-custom-controls#create-a-plug-in-project-and-add-a-reference-to-it-in-your-solution)
 

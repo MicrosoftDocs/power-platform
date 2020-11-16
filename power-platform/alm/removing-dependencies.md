@@ -1,5 +1,5 @@
 ---
-title: "Removing dependencies (Common Data Service) | Microsoft Docs" # Intent and product brand in a unique string of 43-59 chars including spaces
+title: "Removing dependencies (Microsoft Dataverse) | Microsoft Docs" # Intent and product brand in a unique string of 43-59 chars including spaces
 description: "Dependencies sometimes can block operations. This article describes how dependencies can be removed." # 115-145 characters including spaces. This abstract displays in the search result.
 ms.custom: ""
 ms.date: 06/17/2020

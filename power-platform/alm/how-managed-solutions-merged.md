@@ -1,5 +1,5 @@
 ---
-title: "How managed solutions are merged (Common Data Service) | Microsoft Docs" 
+title: "How managed solutions are merged (Microsoft Dataverse) | Microsoft Docs" 
 description: "To avoid multiple installed solutions from interfering with one another, follow best practices while constructing a solution" 
 ms.custom: ""
 ms.date: 09/09/2020
@@ -19,12 +19,12 @@ search.app:
 # Understand how managed solutions are merged
 When you prepare your managed solution to be installed, remember that an environment might already have multiple solutions installed or that other solutions might be installed in the future. Construct a solution that follows best practices so that your solution won't interfere with other solutions.  
   
-The processes that Common Data Service uses to merge customizations emphasize maintaining the functionality of the solution. Although every effort is made to preserve the presentation, some incompatibilities between customizations might require that the computed resolution change some presentation details in favor of maintaining the customization functionality.
+The processes that Microsoft Dataverse uses to merge customizations emphasize maintaining the functionality of the solution. Although every effort is made to preserve the presentation, some incompatibilities between customizations might require that the computed resolution change some presentation details in favor of maintaining the customization functionality.
   
 <a name="BKMK_MergingFormCustomizations"></a>   
 
 ## Merge form customizations  
- The only form customizations that have to be merged are those that are performed on any entity forms that are already in the environment. Typically, this means that form customizations only have to be merged when your solution customizes the forms that were included for entities created when Common Data Service was installed. One way to avoid form merging is to provide new forms for any Common Data Service entities. Forms for custom entities won't require merging unless you're creating a solution that updates or modifies an existing managed solution that created the custom entities and their forms.  
+ The only form customizations that have to be merged are those that are performed on any entity forms that are already in the environment. Typically, this means that form customizations only have to be merged when your solution customizes the forms that were included for entities created when Dataverse was installed. One way to avoid form merging is to provide new forms for any Dataverse entities. Forms for custom entities won't require merging unless you're creating a solution that updates or modifies an existing managed solution that created the custom entities and their forms.  
   
  When a solution is packaged as a managed solution, the form definitions stored in FormXML are compared to the original FormXML and only the differences are included in the managed solution. When the managed solution is installed in a new environment, the form customization differences are then merged with the FormXML for the existing form to create a new form definition. This new form definition is what the user sees and what a system customizer can modify. When the managed solution is uninstalled, only those form elements found in the managed solution are removed.  
   

@@ -1,6 +1,6 @@
 ---
 title: Data Integration for Admins customer data
-description: Identifying, exporting and deleting personal data in data integration for Admins for Common Data Service
+description: Identifying, exporting and deleting personal data in data integration for Admins for Microsoft Dataverse
 author: sabinn-msft
 ms.service: power-platform
 ms.topic: how-to
@@ -15,7 +15,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Responding to Data Subject Rights (DSR) requests for Data Integration for Common Data Service customer data
+# Responding to Data Subject Rights (DSR) requests for Data Integration for Microsoft Dataverse customer data
 
 ## Introduction to DSR requests
 
@@ -29,11 +29,11 @@ The European Union (EU) General Data Protection Regulation (GDPR) gives rights t
 
 A formal request by a data subject to a controller to take an action on his or her personal data is called a Data Subject Rights (DSR) request.
 
-This article describes how Microsoft is preparing for the GDPR, and also provides examples of steps you can take to support GDPR compliance when using Data Integration for Admins via the administrator portal in Common Data Service . You'll learn how to use Microsoft products, services, and administrative tools to help controller customers find, access, and act on personal data in the Microsoft cloud in response to DSR requests.
+This article describes how Microsoft is preparing for the GDPR, and also provides examples of steps you can take to support GDPR compliance when using Data Integration for Admins via the administrator portal in Dataverse . You'll learn how to use Microsoft products, services, and administrative tools to help controller customers find, access, and act on personal data in the Microsoft cloud in response to DSR requests.
 
 ### Searching for and identifying personal data
 
-Data Integration for Admins in Common Data Service allows any user of the integrator application to view their data by using the data integration tab at:
+Data Integration for Admins in Dataverse allows any user of the integrator application to view their data by using the data integration tab at:
 
 [https://admin.powerapps.com/dataintegration](https://admin.powerapps.com/dataintegration)
 
@@ -51,11 +51,11 @@ All Templates are visible on the Templates tab:
 
 ## Securing and controlling access to personal information
 
-In the Data Integration for Admins in Common Data Service, data stored by the data integration application can only be accessed through the administrator portal.
+In the Data Integration for Admins in Dataverse, data stored by the data integration application can only be accessed through the administrator portal.
 
 ## Deleting personal data
 
-In Data Integration for Admins in Common Data Service user-authored data, projects, and connection sets can be deleted by the user the data is associated with. To delete their personal data, users can log on to the administrator portal: [https://admin.powerapps.com](https://admin.powerapps.com)
+In Data Integration for Admins in Dataverse user-authored data, projects, and connection sets can be deleted by the user the data is associated with. To delete their personal data, users can log on to the administrator portal: [https://admin.powerapps.com](https://admin.powerapps.com)
 
 Users can delete projects by navigating to the projects tab and clicking on the ellipses next to the project, and then selecting the delete option:
 
@@ -71,7 +71,7 @@ Users can delete connection sets by navigating to the connection sets tab and cl
 
 ## Exporting personal data
 
-In Data Integration for Admins in Common Data Service, user-authored data can be exported by the user the data is associated with. To export their personal data, users can log on to the administrator portal:
+In Data Integration for Admins in Dataverse, user-authored data can be exported by the user the data is associated with. To export their personal data, users can log on to the administrator portal:
 
 [https://admin.powerapps.com](https://admin.powerapps.com)
 

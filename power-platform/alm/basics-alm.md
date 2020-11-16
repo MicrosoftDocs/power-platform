@@ -32,7 +32,7 @@ This article describes the components, tools, and processes needed to implement 
 Environments are a space to store, manage, and share your organization's
 business data, apps, and business processes. They also serve as containers to
 separate apps that might have different roles, security requirements, or target
-audiences. Each environment can have only one Common Data Service database.
+audiences. Each environment can have only one Microsoft Dataverse database.
 
 > [!IMPORTANT]
 > When you create an environment, you can choose to install Dynamics 365 apps, such as Dynamics 365 Sales and Dynamics 365 Marketing. It is important to determine at that time if these apps are required or not because they can't be uninstalled or installed later. If you aren't building on these apps and will not require them in the future, we recommend that you not install them in your environments. This will help avoid dependency complications when you distribute solutions between environments.
@@ -53,7 +53,7 @@ Service environments:
     operation for their intended use.
 
 -   **Community**  The Power Apps Community Plan gives you access to Power Apps
-    premium functionality, Common Data Service, and Power Automate for
+    premium functionality, Dataverse, and Power Automate for
     individual use. This plan is primarily meant for learning purposes or
     creating business solutions to be distributed for AppSource Test Drive.
     Although you can't share assets from a Community Plan developer environment
@@ -70,16 +70,16 @@ or production.
 
 Define and manage the security of your resources and data in Common Data
 Service. Microsoft Power Platform provides environment-level admin roles to perform
-tasks. Common Data Service includes security roles that define the level of
+tasks. Dataverse includes security roles that define the level of
 access to apps, app components, and resources app makers and users have within
-Common Data Service.
+Dataverse.
 
 | **Environment purpose** | **Roles that have access**      | **Comments**     |
 |-------------------------|---------------------------------|------------------|
 | Development             | App makers and developers.       | App users shouldn't have access. Developers require at least the Environment Maker security role to create resources.       |
 | Test                    | Admins and people who are testing.  | App makers, developers, and production app users shouldn't have access. Test users should have just enough privileges to perform testing. |
 | Production              | Admins and app users. Users should have just enough access to perform their tasks for the apps they use. | App makers and developers shouldn't have access, or should only have user-level privileges.  |
-| Default              | By default, every user in your tenant can create and edit apps in a Common Data Service default environment that has a database. | We strongly recommend that you create environments for a specific purpose, and grant the appropriate roles and privileges only to those people who need them. |
+| Default              | By default, every user in your tenant can create and edit apps in a Dataverse default environment that has a database. | We strongly recommend that you create environments for a specific purpose, and grant the appropriate roles and privileges only to those people who need them. |
 
 More information: 
 - [Environments overview](/power-platform/admin/environments-overview)

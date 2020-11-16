@@ -46,7 +46,7 @@ In this section, we'll explore some best practices to follow when establishing a
 > [!div class="checklist"]
 > * [Report on resource usage](resource-usage.md)
 > * [Track user access](access-usage.md)
-> * [Monitor Common Data Service usage](cds-usage.md)
+> * [Monitor Microsoft Dataverse usage](cds-usage.md)
 > * [Monitor new connectors](new-connectors.md)
 > * [Set up sharing alerts and mitigations](sharing-alerts.md)
 > * Don't start from scratch, take advantage of the [CoE Starter Kit](../coe/starter-kit.md)

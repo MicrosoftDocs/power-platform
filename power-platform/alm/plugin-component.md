@@ -82,7 +82,7 @@ following these steps.
 
 The procedure to register a plug-in is similar to registering a custom workflow
 activity assembly, except you must also register one or more *steps* which
-identify the conditions under which the plug-in should be executed by Common Data Service.
+identify the conditions under which the plug-in should be executed by Microsoft Dataverse.
 
 To begin, follow these instructions to [register a plug-in and step](/powerapps/developer/common-data-service/register-plug-in) by using the Plug-in Registration tool. Next, we'll create a solution and then add the plug-in assembly and step to the solution by using the modern maker interface. The example "Followup" plug-in and step registration we'll use is shown in the following illustration.
 
