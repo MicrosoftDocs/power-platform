@@ -18,7 +18,7 @@ search.app:
 ---
 # Manage Microsoft Dataverse for Teams environments
 
-Microsoft Dataverse for Teams empowers users to build custom apps, bots, and flows in Teams by using Power Apps, Power Virtual Agents, and Power Automate. When a team owner adds this capability to their team, a Power Platform environment with a Microsoft Dataverse for Teams database is created and linked to their team. Learn more: [About Microsoft Datverse for Teams Environments](https://docs.microsoft.com/power-platform/admin/about-teams-environment).
+Microsoft Dataverse for Teams empowers users to build custom apps, bots, and flows in Teams by using Power Apps, Power Virtual Agents, and Power Automate. When a team owner adds this capability to their team, a Power Platform environment with a Microsoft Dataverse for Teams database is created and linked to their team. Learn more: [About Microsoft Datverse for Teams environments](https://docs.microsoft.com/power-platform/admin/about-teams-environment).
 
 Dataverse for Teams honors the existing data governance paradigms of Microsoft Power Platform and enables access control in the Teams Admin Center. The Power Platform admin center provides more detail, including monitoring dedicated capacity utilization and [Data Loss Prevention (DLP) policies](https://docs.microsoft.com/power-platform/admin/wp-data-loss-prevention).  
 
