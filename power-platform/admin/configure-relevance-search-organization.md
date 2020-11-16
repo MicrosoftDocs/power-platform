@@ -188,16 +188,16 @@ Your organization’s queries and results are reviewed by people using secured c
 
 **Improve Relevance Search results** is off by default. To enable:
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin.
+1.	In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.
 
-2. In the navigation pane, select **Environments**, select an environment, and then select **Settings**.
+2.	Select **Settings** > **Product** > **Features**.
 
 3. Expand **Search**, and then set **Improve Relevance Search results** to **On**.
 
    > [!div class="mx-imgBorder"] 
    > ![Improve Relevance Search results](media/improve-relevance-search-results.png "Improve Relevance Search results")
 
-4. Select **Save**.
+4.	Select **Save**.
 
 ### See also  
  [Use relevance search to search for records](https://docs.microsoft.com/powerapps/user/relevance-search)
