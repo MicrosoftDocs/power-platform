@@ -29,4 +29,4 @@ This version fixed a bug in the **Admin | Sync Template v2 (Power Apps User Shar
 
 This version fixed a bug in the **Admin | Sync Template v2 (Model Driven Apps)** flow, which caused environments with crm urls not ending in .crm to fail to sync. Example impact are environments like those with .crm4 in the url.
 
-This version fixed a bug in the **Admin | Sync Template v2 (PVA)** flow, which caused a failure when syncing a chatbot  component’s flow, when that flow has not yet been added to the Flow entity.
+This version fixed a bug in the **Admin | Sync Template v2 (PVA)** flow, which caused a failure when syncing a chatbot  component’s flow, when that flow has not yet been added to the Flow table.

@@ -21,7 +21,7 @@ search.app:
 
 [!INCLUDE[cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
 
-The Center of Excellence (CoE) core components solution provides components that you need to get started with setting up a CoE. They sync all your resources into entities and build admin apps on top of that to help you get more visibility into the apps, flows, and makers that exist in your environment. Additionally, apps like DLP Editor and Set App Permissions help with daily admin tasks.  
+The Center of Excellence (CoE) core components solution provides components that you need to get started with setting up a CoE. They sync all your resources into tables and build admin apps on top of that to help you get more visibility into the apps, flows, and makers that exist in your environment. Additionally, apps like DLP Editor and Set App Permissions help with daily admin tasks.  
 
 The core components solution contains assets that are only relevant to admins.
 
@@ -101,7 +101,7 @@ The import can take up to 10 minutes to be completed.
 
 ## Activate the sync template flows
 
-The flows with the prefix *Sync* are required for populating and cleaning up data in the Dataverse entities (Environment, Power Apps App, Flow, Flow Action Detail, Connector, and Maker). The sync flows are used to write or delete data from the admin connectors to the Dataverse entities. These flows run on a schedule.
+The flows with the prefix *Sync* are required for populating and cleaning up data in the Dataverse tables (Environment, Power Apps App, Flow, Flow Action Detail, Connector, and Maker). The sync flows are used to write or delete data from the admin connectors to the Dataverse tables. These flows run on a schedule.
 
 Note that the first run of these will be long running. See the [limitations information](/limitations.md#Long-running-flows) for more details.
 We will avoid issues by enabling the flows in an explicit order. We recommend you repeat this order on each upgrade as well.
@@ -114,14 +114,14 @@ We will avoid issues by enabling the flows in an explicit order. We recommend yo
 1) Turn back on Admin \| Sync Template v2.
 1) Turn on the rest of the flows listed in the solution
 
-## Configure the CoE Settings entity
+## Configure the CoE Settings table
 
-This section explains how to enter data in the CoE Settings entity. This entity will hold a single row of information that contains your logo, brand colors, and so on, which different applications will reference.
+This section explains how to enter data in the CoE Settings table. This table will hold a single row of information that contains your logo, brand colors, and so on, which different applications will reference.
 
-The following assets depend on the CoE Settings entity:
+The following assets depend on the CoE Settings table:
 
-- **Canvas apps**: The optional branding details (logo, brand colors) in all canvas apps are pulled from this entity. Optional support and community channel links are also used.
-- **Optional flows**: The optional branding details and support channel links are used in communication flows. You'll also configure links to canvas apps in the settings. (The main flow that syncs data to the resource entities doesn't depend on this setting configuration.)
+- **Canvas apps**: The optional branding details (logo, brand colors) in all canvas apps are pulled from this table. Optional support and community channel links are also used.
+- **Optional flows**: The optional branding details and support channel links are used in communication flows. You'll also configure links to canvas apps in the settings. (The main flow that syncs data to the resource tables doesn't depend on this setting configuration.)
 <!--markdownlint-disable MD036-->
 **To configure CoE settings**
 

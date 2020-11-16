@@ -62,7 +62,7 @@ These are the requirements for using the solution:
 - For the core components solution, only the admins need a Power Apps Premium license. For the governance components solution, all makers require a Premium license. For the nurture components solution, everyone will require a Premium license.
 
 > [!NOTE]
->The Admin \| Sync Template flows crawl through all the resources stored in Microsoft Power Platform and make a copy of details in each resource (for example, apps and flows) to Dataverse (entity definitions are provided in this solution). All data displayed in most of the starter kit components must be in Dataverse, which means that the sync template must be configured for everything else to work. The sync flows run daily overnight. When you first set up the CoE Starter Kit, you can manually start the Admin \| Sync Template v2 flow, which will start the process of crawling and storing the information in Dataverse.
+>The Admin \| Sync Template flows crawl through all the resources stored in Microsoft Power Platform and make a copy of details in each resource (for example, apps and flows) to Dataverse (table definitions are provided in this solution). All data displayed in most of the starter kit components must be in Dataverse, which means that the sync template must be configured for everything else to work. The sync flows run daily overnight. When you first set up the CoE Starter Kit, you can manually start the Admin \| Sync Template v2 flow, which will start the process of crawling and storing the information in Dataverse.
 
 Set up the CoE Starter Kit by following these instructions:
 

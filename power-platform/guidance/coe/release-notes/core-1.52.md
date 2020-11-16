@@ -25,7 +25,7 @@ Version 1.52 for the CoE Starter Kit Core Components is now available. This arti
 
 ## Power Virtual Agents inventory
 
-This version introduces inventory information for Power Virtual Agents. A new Admin | Sync Flows v2 (Chatbots) has been added to sync Power Virtual Agent information to the new Chatbot, Chatbot Component and Chatbot Component Flow entities. The Power Platform Admin View has been updated to include Chatbot information, and the CoE Starter Kit Power BI Dashboard has been updated to include a Virtual Agents overview and Virtual Agents detail page.
+This version introduces inventory information for Power Virtual Agents. A new Admin | Sync Flows v2 (Chatbots) has been added to sync Power Virtual Agent information to the new Chatbot, Chatbot Component and Chatbot Component Flow tables. The Power Platform Admin View has been updated to include Chatbot information, and the CoE Starter Kit Power BI Dashboard has been updated to include a Virtual Agents overview and Virtual Agents detail page.
 
 Information available for chatbots:
 
@@ -44,7 +44,7 @@ Information available for chatbots:
 
 ## Power Apps (canvas apps) "shared with" information
 
-This version introduces new entities that hold information on who a canvas app is shared with. A new Admin | Sync Flow v2 (Power Apps User Shared With) has been added to retrieve role assignments per app and store that information in the Power Platform User and Power Platform User Role entities. The Power Platform User Role table has a 1:n relationship with both Power Platform User and PowerApps App, as in one user has one role (owner, edit, view) per app, and one role is tied to one app.
+This version introduces new tables that hold information on who a canvas app is shared with. A new Admin | Sync Flow v2 (Power Apps User Shared With) has been added to retrieve role assignments per app and store that information in the Power Platform User and Power Platform User Role tables. The Power Platform User Role table has a 1:n relationship with both Power Platform User and PowerApps App, as in one user has one role (owner, edit, view) per app, and one role is tied to one app.
 If an app is shared with an Azure AD Group, information on group size is retrieved via the Azure AD connector and stored in the table.
 
 Information available for who an app is shared with:

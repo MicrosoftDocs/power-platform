@@ -44,7 +44,7 @@ Here's a breakdown of the assets that form the governance components:
   - [App and Flow Archive and Clean Up – Start Approval and Check Approval (flows)](#flows)
   - [App Archive and Clean Up View (model-driven app)](#apps)
 
-## Entities
+## Tables
 
 ### Archive Approval
 
@@ -74,7 +74,7 @@ This flow runs weekly and deletes environments that
 - have been created more than **90 days** ago and have no apps or flows in the environment
 
 >[!NOTE]
->Currently, bots created via Power Virtual Agents in Microsoft Teams environments are not discoverable in the CoE Starter Kit.
+> Currently, bots created via Power Virtual Agents in Microsoft Teams environments are not discoverable in the CoE Starter Kit.
 
 Environments are deleted from the tenant, and marked as deleted in the Environment table of the CoE Starter Kit - you can view deleted environments in the [Power Platform Admin View](core-components.md).
 
@@ -113,7 +113,7 @@ Checks for apps that haven't been modified or launched in the last six months (t
 
 It recommends that the app owner take a backup of the app in the event that they would like to restore it at some later point.
 
-This flow starts the approval process and writes the approval task to the Archive Approval Microsoft Dataverse entity.
+This flow starts the approval process and writes the approval task to the Archive Approval Dataverse table.
 
 ![App Archive and Clean Up – Start Approval flow](media/coe58.png "App Archive and Clean Up – Start Approval flow")
 
@@ -125,13 +125,17 @@ Similar to the previous flow, but for flows rather than apps. This flow checks f
 
 It recommends that the flow owner take a backup of the app in the event that they would like to restore it at some later point.
 
-This flow starts the approval process and writes the approval task to the Archive Approval Common Data Service entity.
+This flow starts the approval process and writes the approval task to the Archive Approval Dataverse table.
 
 **Customize**: By default, this flow will assign approvals to the flow owner. In order to test in a debug environment, in which you do not want to involve users, you can update the [*ProductionEnvironment* environment variable](setup-governance-components.md#update-environment-variables) to **No**, and the approvals will be sent to the admin account instead.
 
+### Admin \| Admin | Check Approvals
+
+On a scheduled interval, checks for approval responses created by the Start Approval flows described above and, if newly approved, marks the approved date so that the Approval Clean Up flow (described below) can delete it after user has time to archive.
+
+If approved in the past, but before deletion, it sends a reminder to archive the app or flow before deletion.
+
 ### Admin \| Approval Clean Up
-=======
-This flow starts the approval process and writes the approval task to the Archive Approval Dataverse entity.
 
 Runs on a daily basis and does two clean up tasks for the workflow.
 
@@ -188,7 +192,7 @@ Makers can achieve compliance by providing additional information through the **
 
 A model-driven app that provides an interface to canvas apps that have been highlighted for archiving and their approval status. This model-driven app works in conjunction with other apps and flows in the CoE Starter Kit to facilitate the process described for the [app auditing process](example-processes.md).
 
-**Customize**: Instead of using this model-driven app, you can modify the Power Platform Admin View app to show the Archive Approval entity.
+**Customize**: Instead of using this model-driven app, you can modify the Power Platform Admin View app to show the Archive Approval table.
 
 ![App Archive and Clean Up View](media/coe61.png "App Archive and Clean Up View")
 

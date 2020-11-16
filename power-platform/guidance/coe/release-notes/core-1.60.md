@@ -40,9 +40,9 @@ The Power Platform Admin View has been updated to show new icons for Virtual Age
 
 The Flow, Connector and Chatbot main forms have been updated with an Audit tab to enable admins to validate maker requirements, and add admin requirements.
 
-The Flow, Connector and Chatbot entities have new Admin Review views, similar to the PowerApps App Admin Review view.
+The Flow, Connector and Chatbot tables have new Admin Review views, similar to the PowerApps App Admin Review view.
 
-Business Process Flows to manage the Audit process for Flow, Connector and Chatbot entities have been added.
+Business Process Flows to manage the Audit process for Flow, Connector and Chatbot tables have been added.
 
 ## Bug Fixes
 

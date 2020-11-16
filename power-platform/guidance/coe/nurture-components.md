@@ -39,7 +39,7 @@ Here's a breakdown of the assets that form the nurture components solution:
 - Encourage adoption
   - [App Catalog (canvas app)](#apps)
 
-## Entities
+## Tables
 
 ### InADayAttendees
 
