@@ -22,7 +22,7 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](../authoring-template-topics.md)
 > - [Power Virtual Agents app in Microsoft Teams](authoring-template-topics-teams.md)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
+
 
 Power Virtual Agents includes a set of four lessons from which you can see examples of topics. These range from simple to complex scenarios that use [conditional branching](authoring-create-edit-topics-teams.md) and [custom entities](advanced-entities-slot-filling-teams.md).
 

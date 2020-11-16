@@ -20,7 +20,7 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](../authoring-first-bot.md)
 > - [Power Virtual Agents app in Microsoft Teams)](authoring-first-bot-teams.md)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
+
 
 You can create chatbots in the Power Virtual Agents app in Teams and then share them with other people in your team, company, or organization.
 

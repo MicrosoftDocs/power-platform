@@ -20,7 +20,7 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](../admin-share-bots.md)
 > - [Power Virtual Agents app in Microsoft Teams](admin-share-bots-teams.md)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
+
 
 You can collaborate with others when building chatbots in Microsoft Teams. This means other members of your team can make edits and changes, and you can see who else is editing a topic.
 

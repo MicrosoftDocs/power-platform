@@ -20,7 +20,7 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](../analytics-topic-details.md)
 > - [Power Virtual Agents app in Microsoft Teams](analytics-topic-details-teams.md)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
+
 
 
 The topic details page provides a view into the performance of individual topics and how they can be improved.

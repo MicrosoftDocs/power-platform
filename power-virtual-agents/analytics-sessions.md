@@ -12,9 +12,12 @@ ms.cusom: analysis, ceX
 ms.collection: virtual-agent
 ---
 
+
 # Analyze session information in Power Virtual Agents
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+> [!div class="op_single_selector"]
+> - [Power Virtual Agents web app](analytics-sessions.md)
+> - [Power Virtual Agents app in Microsoft Teams](teams/analytics-sessions-teams.md)
 
 
 

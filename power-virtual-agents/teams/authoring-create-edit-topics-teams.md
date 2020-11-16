@@ -21,7 +21,7 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](../authoring-create-edit-topics.md)
 > - [Power Virtual Agents app in Microsoft Teams](authoring-create-edit-topics-teams.md)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
+
 
 In Power Virtual Agents, a topic determines a how a bot responds to a question from a user. 
 

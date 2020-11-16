@@ -20,7 +20,7 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](../analytics-billed-sessions.md)
 > - [Power Virtual Agents app in Microsoft Teams](analytics-billed-sessions-teams.md)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
+
 
 When you purchase a Power Virtual Agents license, you gain capacity for the specified number of billed sessions. Power Virtual Agents pools this capacity across the entire tenant. 
 

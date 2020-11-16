@@ -20,7 +20,7 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](../fundamentals-get-started.md)
 > - [Power Virtual Agents app in Microsoft Teams](fundamentals-get-started-teams.md)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
+
 
 Power Virtual Agents empowers anyone in the organization to build chatbots with our built-in natural language processing and no-code graphical interface. With our latest Teams integration, you can create, author, test, and publish your bot into Teams all within the Microsoft Teams interface.
 
