@@ -76,7 +76,10 @@ This flow runs weekly and deletes environments that
 >[!NOTE]
 >Currently, bots created via Power Virtual Agents in Microsoft Teams environments are not discoverable in the CoE Starter Kit.
 
-Environments are deleted from the tenant, and marked as deleted in the Environment table of the CoE Starter Kit - you can view deleted environments in the [Power Platform Admin View](core-components.md)
+Environments are deleted from the tenant, and marked as deleted in the Environment table of the CoE Starter Kit - you can view deleted environments in the [Power Platform Admin View](core-components.md).
+
+>[!IMPORTANT]
+> You can recover a recently deleted environment (within 7 days of deletion), by using the Power Platform admin center or the Power Apps cmdlet Recover-AdminPowerAppEnvironment. Learn more: [Recover environment](https://docs.microsoft.com/power-platform/admin/recover-environment#power-platform-admin-center).
 
 Save a copy of this flow if you want to change the make any changes to the criteria for when environments are deleted.
 

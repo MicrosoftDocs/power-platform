@@ -120,5 +120,4 @@ For full list of license requirements see [Setup Pre-requisits](setup.md#prerequ
 
 ## PIM (Privileged Identity Management)
 
-We recommend you **do not use [PIM](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started)** to manage Power Platform Admin Role access, as the timing of when the role will be needed is unpredictable based on the different triggers in the toolkit suite.
-You may end up with incomplete or incorrect data if you use PIM and your Power Platform Admin Role.
+If your Power Platform admin role is managed via  **[PIM](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started)** ensure the Sync Flows of the Core Components solution are set up to complete during the time whilst your user is granted admin permission. If your user looses admin access during the run of the sync flows, you may end up with incomplete or incorrect data if you use PIM and your Power Platform Admin Role.

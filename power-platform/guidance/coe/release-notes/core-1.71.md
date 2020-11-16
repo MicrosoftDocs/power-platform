@@ -32,3 +32,11 @@ A new view for Microsoft Teams environments has been added to this table.
 ## Business Process Flow
 
 A business process flow to manage the approval of business justifications for Microsoft Teams environments has been added.
+
+## Power Platform Admin View
+
+The Power Platform Admin View has been updated with additional views on the Environment table, to review deleted environments and Microsoft Teams environments.
+
+## Sync Flows
+
+Bug fixes for the sync flows have been implemented.

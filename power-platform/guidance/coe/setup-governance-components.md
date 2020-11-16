@@ -90,15 +90,18 @@ The archive approval flows (*Admin \| App Archive and Clean Up – Start Approva
 
 ## Activate the flows
 
-This Governance Components solution contains five flows:
+This Governance Components solution contains flows that you will need to manually turn on, once you are ready to use them.
 
 - Admin \| App Archive and Clean Up – Start Approval
 - Admin \| Approval Clean Up
-- Admin \| Check Approvals 
+- Admin \| Check Approvals
 - Admin \| Flow Archive and Clean Up – Start Approval
 - Admin \| Compliance detail request
+- Microsoft Teams Admin \| Ask for Business Justification when Microsoft Teams environment is created
+- Microsoft Teams Admin \| Weekly Clean Up of Microsoft Teams environments
 
-These flows will be turned off on solution import, and you can turn them on once you're ready to use them.
+>[!IMPORTANT]
+> These flows will be turned off on solution import, and you can turn them on once you're ready to use them.
 
 ## Share apps with makers
 
