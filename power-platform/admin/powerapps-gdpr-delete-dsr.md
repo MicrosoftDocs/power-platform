@@ -40,7 +40,7 @@ Requires manual review and deletion |    Automatically deleted when the user is 
 
 \** Each of these resources contains "Created By" and "Modified By" records that include personal data. For security reasons, these records will be retained until the resource is deleted.
 
-\*** For environments that include a Common Data Service database, environment permissions (that is, which users are assigned to the Environment Maker and Admin roles) are stored as records in that database. For guidance on how to respond to DSRs for users of Common Data Service, see [Responding to Data Subject Rights (DSR) requests for Common Data Service customer data](common-data-service-gdpr-dsr-guide.md).
+\*** For environments that include a Microsoft Dataverse database, environment permissions (that is, which users are assigned to the Environment Maker and Admin roles) are stored as records in that database. For guidance on how to respond to DSRs for users of Dataverse, see [Responding to Data Subject Rights (DSR) requests for Dataverse customer data](common-data-service-gdpr-dsr-guide.md).
 
 For the data and resources that require manual review, Power Apps offers the following experiences to reassign (if necessary) or delete personal data for a specific user:
 
@@ -61,7 +61,7 @@ Here is the breakdown of which experiences are available to delete each type of 
 |Custom connector | | App creator: Available <br> Admin: Available|
 |Custom-connector permissions | | App creator: Available <br> Admin: Available|
 
-\** With the introduction of Common Data Service, if a database is created within the environment, environment permissions and model-driven app permissions are stored as records within the environment of that database. For guidance on how to respond to DSRs for users of Common Data Service, see [Responding to Data Subject Rights (DSR) requests for Common Data Service customer data](common-data-service-gdpr-dsr-guide.md).
+\** With the introduction of Dataverse, if a database is created within the environment, environment permissions and model-driven app permissions are stored as records within the environment of that database. For guidance on how to respond to DSRs for users of Dataverse, see [Responding to Data Subject Rights (DSR) requests for Dataverse customer data](common-data-service-gdpr-dsr-guide.md).
 
 ## Prerequisites
 
@@ -142,7 +142,7 @@ Get-AdminEnvironment -CreatedBy $deleteDsrUserId | Get-AdminEnvironmentRoleAssig
 ```
 
 > [!IMPORTANT]
-> This function works only in environments that do not have an environment of a database in Common Data Service.
+> This function works only in environments that do not have an environment of a database in Dataverse.
 
 ### Delete environments created by a user using PowerShell
  An administrator can delete all environments created by a user by using the **Remove-AdminEnvironment** function in the [PowerShell cmdlets for Power Apps administrators](https://go.microsoft.com/fwlink/?linkid=871804):
@@ -157,9 +157,9 @@ Get-AdminEnvironment -CreatedBy $deleteDsrUserId | Remove-AdminEnvironment
 
 ## Step 2: Delete the user's permissions to all other environments
 Users can be assigned permissions (such as Environment Admin and Environment Maker) in an environment, which are stored in the Power Apps service as a "role assignment."
-With the introduction of Common Data Service, if a database is created within the environment, these "role assignments" are stored as records within the environment of that database.
+With the introduction of Dataverse, if a database is created within the environment, these "role assignments" are stored as records within the environment of that database.
 
-### For environments without a Common Data Service database
+### For environments without a Dataverse database
 
 #### Power Platform admin center
 An administrator can delete a user's environment permissions starting from the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) by following these steps:
@@ -168,7 +168,7 @@ An administrator can delete a user's environment permissions starting from the [
 
    You must be an [Microsoft 365 Global admin](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide) or an [Azure Active Directory Global Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) to be able to review all environments that have been created within your organization.
 
-2. If your environment does not have a Common Data Service database, you will see a section **Access**. Under **Access**, select either **Environment admin** or **Environment maker**, and then select **See all**.
+2. If your environment does not have a Dataverse database, you will see a section **Access**. Under **Access**, select either **Environment admin** or **Environment maker**, and then select **See all**.
 
    > [!div class="mx-imgBorder"] 
    > ![Select Environment admin, See all](media/environment-admin-see-all.png "Select Environment admin, See all")
@@ -176,21 +176,21 @@ An administrator can delete a user's environment permissions starting from the [
 3. Select a user, select **Remove** to remove their permission, and then select **Continue**.
 
 #### PowerShell
-An administrator can delete all environment role assignments for a user across all environments without a Common Data Service database by using the **Remove-AdminEnvironmentRoleAssignment** function in the [PowerShell cmdlets for Power Apps administrators](https://go.microsoft.com/fwlink/?linkid=871804):
+An administrator can delete all environment role assignments for a user across all environments without a Dataverse database by using the **Remove-AdminEnvironmentRoleAssignment** function in the [PowerShell cmdlets for Power Apps administrators](https://go.microsoft.com/fwlink/?linkid=871804):
 
 ```powershell
 Add-PowerAppsAccount
 $deleteDsrUserId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
 
-#find all environment role assignments for the user for environments without a Common Data Service environment and delete them
+#find all environment role assignments for the user for environments without a Dataverse environment and delete them
 Get-AdminEnvironmentRoleAssignment -UserId $deleteDsrUserId | Remove-AdminEnvironmentRoleAssignment
 ```
 
 > [!IMPORTANT]
-> This function works only for environments that do not have an environment of a Common Data Service database.
+> This function works only for environments that do not have an environment of a Dataverse database.
 
-### For environments WITH a Common Data Service database
-With the introduction of the Common Data Service, if a database is created within the environment, these "role assignments" are stored as records within the environment of that database. Please refer to the following documentation on how to remove personal data from an environment of a database in Common Data Service: Common Data Service User personal data removal
+### For environments WITH a Dataverse database
+With the introduction of the Dataverse, if a database is created within the environment, these "role assignments" are stored as records within the environment of that database. Please refer to the following documentation on how to remove personal data from an environment of a database in Dataverse: Common Data Serviice User personal data removal
 
 ## Step 3: Delete or reassign all canvas apps owned by a user
 
@@ -356,10 +356,10 @@ Power Apps licenses always include Power Automate capabilities. In addition to b
 > [!IMPORTANT]
 > It is recommended that admins complete this step for a Power Apps user.
 
-## Step 10: Delete the user's personal data in environments of Common Data Service
-Certain Power Apps licenses, including the Power Apps Community Plan, give the ability for users within your organization to create environments of Common Data Service and to create and build apps on Common Data Service. The Power Apps Community Plan is a free license that allows users to try out Common Data Service in an individual environment. See the Power Apps pricing page for which capabilities are included in each Power Apps license.
+## Step 10: Delete the user's personal data in environments of Dataverse
+Certain Power Apps licenses, including the Power Apps Community Plan, give the ability for users within your organization to create environments of Dataverse and to create and build apps on Dataverse. The Power Apps Community Plan is a free license that allows users to try out Dataverse in an individual environment. See the Power Apps pricing page for which capabilities are included in each Power Apps license.
 
-For guidance on how to respond to DSRs for users who use Common Data Service, see [Responding to Data Subject Rights (DSR) requests for Common Data Service customer data](common-data-service-gdpr-dsr-guide.md).
+For guidance on how to respond to DSRs for users who use Dataverse, see [Responding to Data Subject Rights (DSR) requests for Dataverse customer data](common-data-service-gdpr-dsr-guide.md).
 
 > [!IMPORTANT]
 > It is recommended that admins complete this step for a Power Apps user.

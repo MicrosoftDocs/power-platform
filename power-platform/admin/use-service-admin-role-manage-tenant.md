@@ -70,7 +70,7 @@ The following matrix shows what management is possible with the various service 
 |**Analytics**|||||
 |Capacity|Yes|Yes|Yes<sup>2</sup>|No|  
 |Capacity allocation (Power Apps per app plans, Power Automate, AI Builder, and Portal) |Yes|Yes|Yes<sup>2</sup>|No|
-|Common Data Service|Yes|Yes|Yes<sup>2</sup>|No|  
+|Microsoft Dataverse|Yes|Yes|Yes<sup>2</sup>|No|  
 |Power Automate|Yes|Yes|Yes<sup>2</sup>|No|  
 |Power Apps|Yes|Yes|Yes<sup>2</sup>|No|  
 |**Help + support**|||||

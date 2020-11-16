@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: Build a model-driven app for deployment using GitHub Actions for Microsoft Power Platform | Microsoft Docs"
-description: "In this tutorial, build a Common Data Service model-driven app for later deployment using GitHub Actions for Microsoft Power Platform."
+description: "In this tutorial, build a Microsoft Dataverse model-driven app for later deployment using GitHub Actions for Microsoft Power Platform."
 keywords: 
 author: mikkelsen2000
 ms.author: pemikkel

@@ -32,7 +32,7 @@ The European Union (EU) General Data Protection Regulation (GDPR) gives rights t
 
 A formal request by a data subject to a controller to take an action on his or her personal data is called a Data Subject Rights (DSR) request.
 
-This article describes how Microsoft is preparing for the GDPR, and also provides examples of steps you can take to support GDPR compliance when using Power Apps, Power Automate, and Common Data Service. You'll learn how to use Microsoft products, services, and administrative tools to help controller customers find, access, and act on personal data in the Microsoft cloud in response to DSR requests.
+This article describes how Microsoft is preparing for the GDPR, and also provides examples of steps you can take to support GDPR compliance when using Power Apps, Power Automate, and Microsoft Dataverse. You'll learn how to use Microsoft products, services, and administrative tools to help controller customers find, access, and act on personal data in the Microsoft cloud in response to DSR requests.
 
 The following actions are covered in this article:
 
@@ -65,10 +65,10 @@ Connection permissions    | Certain types of connections can be shared with user
 Custom connector    | Custom connectors that a user has created to provide access to a data source not offered through one of the Power Apps standard connectors. [Learn more](https://go.microsoft.com/fwlink/?linkid=872245)
 Custom-connector permissions    | Custom connectors can be shared with users within an organization. [Learn more](https://go.microsoft.com/fwlink/?linkid=872246)
 Power Apps user and user-app settings    | Power Apps stores several user preferences and settings that are used to deliver the Power Apps runtime and portal experiences.
-Power Apps notifications    | Power Apps sends several types of notifications to users including when an app is shared with them and when a Common Data Service export operation has completed.
+Power Apps notifications    | Power Apps sends several types of notifications to users including when an app is shared with them and when a Dataverse export operation has completed.
 Gateway    | Gateways are on-premises data gateways that can be installed by a user to transfer data quickly and securely between Power Apps and a data source that isn't in the cloud. [Learn more](https://go.microsoft.com/fwlink/?linkid=872247)
 Gateway permissions    | Gateways can be shared with users within an organization. [Learn more](https://go.microsoft.com/fwlink/?linkid=872249)
-Model-driven apps and model-driven app permissions    | Model-driven app design is a component-focused approach to app development. Model-driven apps and their user access permissions are stored as data within the Common Data Service database.  [Learn more](https://go.microsoft.com/fwlink/?linkid=872248)
+Model-driven apps and model-driven app permissions    | Model-driven app design is a component-focused approach to app development. Model-driven apps and their user access permissions are stored as data within the Dataverse database.  [Learn more](https://go.microsoft.com/fwlink/?linkid=872248)
 
 Power Apps offers the following experiences to find personal data for a specific user:
 
@@ -87,10 +87,10 @@ For guidance on how to discover personal data stored by the Power Automate servi
 > [!IMPORTANT]
 > It is recommended that admins complete this step for a Power Apps user
 
-### Step 3: Find personal data for the user in environments of Common Data Service
-Certain Power Apps licenses, including the Power Apps Community Plan, give the ability for users within your organization to create environments of Common Data Service and to create and build apps on Common Data Service. The Power Apps Community Plan is a free license that allows users to try out Common Data Service in an individual environment. See the [Power Apps Pricing](https://powerapps.microsoft.com/pricing/) page for which capabilities are included in each Power Apps license.
+### Step 3: Find personal data for the user in environments of Dataverse
+Certain Power Apps licenses, including the Power Apps Community Plan, give the ability for users within your organization to create environments of Dataverse and to create and build apps on Dataverse. The Power Apps Community Plan is a free license that allows users to try out Dataverse in an individual environment. See the [Power Apps Pricing](https://powerapps.microsoft.com/pricing/) page for which capabilities are included in each Power Apps license.
 
-For guidance on how to discover personal data stored by Common Data Service, see [Responding to Data Subject Rights (DSR) requests for customer data in Common Data Service](common-data-service-gdpr-dsr-guide.md).
+For guidance on how to discover personal data stored by Dataverse, see [Responding to Data Subject Rights (DSR) requests for customer data in Dataverse](common-data-service-gdpr-dsr-guide.md).
 
 > [!IMPORTANT]
 > It is recommended that admins complete this step for a Power Apps user.

@@ -18,17 +18,17 @@ search.app:
 ---
 # Add users to an environment 
 
-Environments can have zero or one Common Data Service database. The process for adding users to environments that have no Common Data Service database differs from the process for environments that have one Common Data Service database. For an overview of environments, see [Environments overview](environments-overview.md). 
+Environments can have zero or one Microsoft Dataverse database. The process for adding users to environments that have no Dataverse database differs from the process for environments that have one Dataverse database. For an overview of environments, see [Environments overview](environments-overview.md). 
 
-## Add users to an environment that has no Common Data Service database 
+## Add users to an environment that has no Dataverse database 
 
-You don't have to add users to environments that have no Common Data Service database, because all users in the organization are present in these environments by default. However, for a user to get access to an environment's resources, a security role needs to be assigned to them. For information about assigning a security role to users in an environment, see [Configure user security to resources in an environment](database-security.md). 
+You don't have to add users to environments that have no Dataverse database, because all users in the organization are present in these environments by default. However, for a user to get access to an environment's resources, a security role needs to be assigned to them. For information about assigning a security role to users in an environment, see [Configure user security to resources in an environment](database-security.md). 
 
-## Add users to an environment that has a Common Data Service database 
+## Add users to an environment that has a Dataverse database 
 
-When an environment is created with a Common Data Service database or a Common Data Service database is added to an existing environment, all users in the organization are added automatically to the environment unless a security group is selected as an access filter. Review the following on automatic user addition to environments. 
+When an environment is created with a Dataverse database or a Dataverse database is added to an existing environment, all users in the organization are added automatically to the environment unless a security group is selected as an access filter. Review the following on automatic user addition to environments. 
 
-- For a user to be successfully added to an environment that has a Common Data Service database, the user must meet certain criteria. This same criteria applies to [enabling a user who is already present in an environment](create-users-assign-online-security-roles.md#enable-or-disable-user-accounts).
+- For a user to be successfully added to an environment that has a Dataverse database, the user must meet certain criteria. This same criteria applies to [enabling a user who is already present in an environment](create-users-assign-online-security-roles.md#enable-or-disable-user-accounts).
 
 - Automatic user addition to an environment takes time, especially if your organization is large and access to the environment isn't restricted to any security group. As a best practice, we recommend that you restrict access to your environment to a specific set of users by [associating your environment to a security group](control-user-access.md). 
 
@@ -36,7 +36,7 @@ When an environment is created with a Common Data Service database or a Common D
 
 - Because it can take a long time to automatically add users to an environment, you can use the following procedure to add specific users to the environment sooner. 
 
-**To add users to an environment that has a Common Data Service database**
+**To add users to an environment that has a Dataverse database**
 
 1. From the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select the environment to which you want to add users. 
 

@@ -1,6 +1,6 @@
 ---
-title: "Common Data Service language collations | MicrosoftDocs"
-description: "Understand the Common Data Service language collations"
+title: "Microsoft Dataverse language collations | MicrosoftDocs"
+description: "Understand the Microsoft Dataverse language collations"
 keywords: ""
 ms.date: 06/30/2020
 ms.service: powerapps
@@ -18,12 +18,12 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Common Data Service language collations
+# Microsoft Dataverse language collations
 
-When a Common Data Service environment is created, admins are asked to select which default language they would like to use. This sets the dictionary, time and date
+When a Dataverse environment is created, admins are asked to select which default language they would like to use. This sets the dictionary, time and date
 format, number format, and indexing properties for the environment.
 
-Language selections for Common Data Service also include collation settings that are applied to the SQL database, which stores entities and relational data. These collation settings affect things such as recognized characters, sorting, quick find, and filtering. The collations applied to Common Data Service environments are chosen based on the default language selected at the time of environment creation and aren't user configurable. After a collation is in place, it can't be changed.
+Language selections for Dataverse also include collation settings that are applied to the SQL database, which stores entities and relational data. These collation settings affect things such as recognized characters, sorting, quick find, and filtering. The collations applied to Dataverse environments are chosen based on the default language selected at the time of environment creation and aren't user configurable. After a collation is in place, it can't be changed.
 
 Collations contain the following case-sensitivity and accent-sensitivity options that can vary from language to language.
 
@@ -44,7 +44,7 @@ A language includes the following information:
 
 - **Collation**: The language collation uses the case-sensitivity and accent-sensitivity options associated with the language (_CI, _AS, _AI) described earlier. 
 
-## Language and associated collation used with Common Data Service
+## Language and associated collation used with Dataverse
 
 | **LCID and language**                       | **Collation** |
 |--------------------------------------------------------|---------------|

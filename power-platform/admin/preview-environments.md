@@ -67,7 +67,7 @@ You can provide feedback on the [Power Apps forum][8] and/or contact [support][9
 
 3. **Database cannot be created in Preview region**
 
-   Currently, you cannot create a database with Common Data Service in an environment in Preview (United States) region - we're working on it.
+   Currently, you cannot create a database with Microsoft Dataverse in an environment in Preview (United States) region - we're working on it.
 
 
 <!--Reference links in article-->

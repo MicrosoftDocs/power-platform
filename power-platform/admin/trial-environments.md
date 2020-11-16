@@ -57,7 +57,7 @@ The type of trial environment you create depends on where you start and your ten
    |Type     | Choose **Trial**.        |
    |Region     | Choose a region for the environment.        |
    |Purpose     | A description of the environment.         |
-   |Create a database for this environment? | Select **Yes** to add a Common Data Service database to the trial (standard) environment. |
+   |Create a database for this environment? | Select **Yes** to add a Microsoft Dataverse database to the trial (standard) environment. |
 
    > [!div class="mx-imgBorder"] 
    > ![Create a new trial (standard) environment, page two](./media/trial-subscription-standard.png "Create a new trial (standard) environment, page two")
@@ -92,7 +92,7 @@ The type of trial environment you create depends on where you start and your ten
    |Type     | **Trial (subscription-based)**.      |
    |Region     | A region for the environment.        |
    |Purpose     | A description of the environment.         |
-   |Create a database for this environment | This setting is preset to **Yes** and can't be changed, because a Common Data Services database must be created for a trial (subscription-based) environment.
+   |Create a database for this environment | This setting is preset to **Yes** and can't be changed, because a Dataverse database must be created for a trial (subscription-based) environment.
 
    > [!div class="mx-imgBorder"] 
    > ![Create a new trial (subscription-based) environment, page two](media/trial-subscription-based.png "Create a new trial (subscription-based) environment, page two")
@@ -151,7 +151,7 @@ It might take several hours to convert to a production environment.
 
 ### Who can convert a trial environment to a production environment?
 
-The organization (tenant) admin can determine who's allowed to create trial environments and convert them to production. If you're allowed to, and you have 1 GB of available production database capacity, you can convert a trial environment to production. You might need to free up or purchase additional capacity if the trial environment database exceeds available production capacity. To determine the size of the trial environment database, see [Common Data Service storage capacity](capacity-storage.md).
+The organization (tenant) admin can determine who's allowed to create trial environments and convert them to production. If you're allowed to, and you have 1 GB of available production database capacity, you can convert a trial environment to production. You might need to free up or purchase additional capacity if the trial environment database exceeds available production capacity. To determine the size of the trial environment database, see [Dataverse storage capacity](capacity-storage.md).
 
 ### I can see a trial (subscription-based) environment type option, why can't I create this trial type?
 
@@ -166,7 +166,7 @@ Here are some guidelines for exporting resources.
 |Type of resource in the environment  |How do I export it?  |
 |---------|---------|
 |Apps (canvas and model-driven) and flows     |You can use [packaging](../alm/environment-and-tenant-migration.md) to export apps and flows from one environment.         |
-|Data in the database (Common Data Service environment)     |<ul><li>[Export to Excel](/powerapps/user/export-data-excel) and save the data. You can then [import the data](/powerapps/user/import-data) into another environment.</li><li>Use [Data Integrator services](data-integrator.md) and APIs to export data into another environment.</li></ul> |
+|Data in the database (Dataverse environment)     |<ul><li>[Export to Excel](/powerapps/user/export-data-excel) and save the data. You can then [import the data](/powerapps/user/import-data) into another environment.</li><li>Use [Data Integrator services](data-integrator.md) and APIs to export data into another environment.</li></ul> |
 
 We delete trial (standard) environments that haven't had any activity in the environment databases for 30 days.
 

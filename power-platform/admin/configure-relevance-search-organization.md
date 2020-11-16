@@ -45,7 +45,7 @@ For more information about Relevance Search, see: [Using relevance search to sea
 
 Relevance Search is available in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation) that have installed version 9.0. It is not available for Customer Engagement (on-premises) organizations. Full-text Quick Find is available for Customer Engagement (on-premises) organizations, starting with Dynamics CRM 2015 Update Rollup 1. Quick Find is available for customer engagement apps organizations and Customer Engagement (on-premises) organizations.
 
-For more detailed comparison of the searches available in Common Data Service, see: [Compare search options in Common Data Service](https://docs.microsoft.com/powerapps/user/search).
+For more detailed comparison of the searches available in Microsoft Dataverse, see: [Compare search options in Dataverse](https://docs.microsoft.com/powerapps/user/search).
 
 
 ### Language support

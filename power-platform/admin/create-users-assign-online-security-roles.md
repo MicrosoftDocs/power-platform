@@ -113,7 +113,7 @@ You need to have the appropriate privileges in order to assign security roles to
 > [!IMPORTANT] 
 > You must assign at least one security role to every user either directly or indirectly as a member of a [group team](manage-group-teams.md). The service doesn't allow access to users who don't have at least one security role.
 
-To assign security roles to users in an environment that has zero or one Common Data Service database, see [Configure user security to resources in an environment](database-security.md). 
+To assign security roles to users in an environment that has zero or one Microsoft Dataverse database, see [Configure user security to resources in an environment](database-security.md). 
 
 ## (Optional) Assign an administrator role  
  You can share [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)] administration tasks among several people by assigning [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)] administrator roles to users you select to fill each role. You might decide to assign the global administrator role to a second person in your organization for times when you're not available.  
@@ -125,7 +125,7 @@ To assign security roles to users in an environment that has zero or one Common 
 
 ## Enable or disable user accounts
 
-User enablement and disablement only applies to environments that have a Common Data Service database. To enable a user in an environment that has a Common Data Service database, ensure that they're allowed to sign in, assign a license to the user, and then add the user to the security group that's associated with the environment. These are the same criteria used to [add users to an environment](add-users-to-environment.md). 
+User enablement and disablement only applies to environments that have a Dataverse database. To enable a user in an environment that has a Dataverse database, ensure that they're allowed to sign in, assign a license to the user, and then add the user to the security group that's associated with the environment. These are the same criteria used to [add users to an environment](add-users-to-environment.md). 
 
 To enable a user, assign a license to the user and add the user to the security group that's associated with an environment. If you enable a user account that was disabled, you must send a new invitation for the user to access the system.  
   
@@ -138,13 +138,13 @@ To disable a user account, remove a license from the user or remove the user fro
 >
 > You can [assign records](https://docs.microsoft.com/powerapps/user/assign-or-share-records) to a disabled user account and also [share reports](https://docs.microsoft.com/dynamics365/customer-engagement/basics/share-report-users-teams) and accounts with them. This can be useful when migrating on-premises versions to online. If you need to assign a security role to users who have a Disabled status, you can do so by enabling the allowRoleAssignmentOnDisabledUsers in [OrgDBOrgSettings](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm).
 > 
-> A Global admin, Power Platform admin, or a Dynamics 365 admin does not need a license to be enabled in a Common Data Service environment. See: [Global admins and Power Platform admins can administer without a license](global-service-administrators-can-administer-without-license.md). But since they are unlicensed, they will be set in the [Administrative access mode](create-users-assign-online-security-roles.md#create-a-read-write-user-account).  
+> A Global admin, Power Platform admin, or a Dynamics 365 admin does not need a license to be enabled in a Dataverse environment. See: [Global admins and Power Platform admins can administer without a license](global-service-administrators-can-administer-without-license.md). But since they are unlicensed, they will be set in the [Administrative access mode](create-users-assign-online-security-roles.md#create-a-read-write-user-account).  
 
 You must be a member of an appropriate administrator role to do these tasks. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Assign admin roles](https://go.microsoft.com/fwlink/p/?LinkId=255444)  
 
 ### Enable a user account in an environment  
 
-To enable a user in an environment that has a Common Data Service database, you enable sign-in for the user, assign a license to the user, and then add the user to a security group.
+To enable a user in an environment that has a Dataverse database, you enable sign-in for the user, assign a license to the user, and then add the user to a security group.
 
 **To enable sign-in**
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
@@ -168,7 +168,7 @@ To enable a user in an environment that has a Common Data Service database, you 
 
 ### Disable a user account in an environment 
 
-To disable a user account in an environment that has a Common Data Service database, you can either remove the user from the security group or remove the license from the user.
+To disable a user account in an environment that has a Dataverse database, you can either remove the user from the security group or remove the license from the user.
 
 **To remove a user from a security group**
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
@@ -278,7 +278,7 @@ You need to have the System Administrator security role or equivalent permission
 9. Go back to the customer engagement app and confirm that the non-interactive user account **Access Mode** is still set for **Non-interactive**.  
 
 ## Create an application user  
-You can use server-to-server (S2S) authentication to securely and seamlessly communicate between Common Data Service and your web applications and services. S2S authentication is the common way that apps registered on [!INCLUDE[pn_microsoft_appsource](../includes/pn-microsoft-appsource.md)] use to access the Common Data Service data of their subscribers. All operations performed by your application or service by using S2S will be performed as the application user you provide, rather than the user who's accessing your application.  
+You can use server-to-server (S2S) authentication to securely and seamlessly communicate between Dataverse and your web applications and services. S2S authentication is the common way that apps registered on [!INCLUDE[pn_microsoft_appsource](../includes/pn-microsoft-appsource.md)] use to access the Dataverse data of their subscribers. All operations performed by your application or service by using S2S will be performed as the application user you provide, rather than the user who's accessing your application.  
 
 All application users are created with a non-interactive user account, however they aren't counted toward the limit of seven non-interactive user accounts. In addition, there's no limit on how many application users you can create in an environment.
   
@@ -298,7 +298,7 @@ You can customize the default **Application User** form to allow updates to the 
 ## How stub users are created
 A stub user is a user record that has been created as a placeholder. For example, records have been imported that refer to this user but the user doesn't exist in customer engagement apps. This user can't sign in, can't be enabled, and can't be synchronized to Microsoft 365. This type of user can only be created through data import. 
 
-A default security role is automatically assigned to these imported users. The **Salesperson** security role is assigned in an environment and the **Common Data Service User** security role is assigned in a Power Apps environment.
+A default security role is automatically assigned to these imported users. The **Salesperson** security role is assigned in an environment and the **Common Data Serviice User** security role is assigned in a Power Apps environment.
 
 > [!NOTE]
 > By default, a security role can only be assigned to users with an Enabled status. If you need to assign a security role to users who have a Disabled status, you can do so by enabling the allowRoleAssignmentOnDisabledUsers [OrgDBOrgSettings](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm). 
@@ -373,4 +373,4 @@ The following table shows the fields that are populated on the user form (user r
 </table>
 
 ### See also
-[Get started with security roles in Common Data Service](https://docs.microsoft.com/learn/modules/get-started-security-roles/)
+[Get started with security roles in Dataverse](https://docs.microsoft.com/learn/modules/get-started-security-roles/)

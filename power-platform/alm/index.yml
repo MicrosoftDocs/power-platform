@@ -90,7 +90,7 @@ landingContent:
         links:
           - text: "Create apps in Power Apps"
             url: /powerapps/maker/
-          - text: "What is Common Data Service?"
+          - text: "What is Microsoft Dataverse?"
             url: /powerapps/maker/common-data-service/data-platform-intro
           - text: "Work with solutions"
             url: /powerapps/maker/common-data-service/solutions-overview
