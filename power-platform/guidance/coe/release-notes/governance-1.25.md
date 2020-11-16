@@ -25,23 +25,23 @@ Version 1.25 for the CoE Starter Kit Governance Components is now available. Thi
 
 ## Microsoft Teams environment governance
 
-The [Microsoft Teams integration](https://docs.microsoft.com/power-platform/admin/about-teams-environment) empowers users to build custom apps, bots, and flows in Teams by using Power Apps, Power Virtual Agents, and Power Automate. This release includes new components that provide a sample implementation of best practices for reactive governance of Microsoft Teams environment creation. Learn more about the new components: [Microsoft Teams environment management](../microsoftteams-governance.md)
+The [Microsoft Teams integration](https://docs.microsoft.com/power-platform/admin/about-teams-environment) enables users to build custom apps, bots, and flows in Teams. We are providing a sample implementation of best practices for reactive governance of Microsoft Dataverse for Teams environments with this release. Learn more about the new components: [Microsoft Teams environment management](../microsoftteams-governance.md)
 
 ## Archival flows
 
-In the past, the archival backed up the apps and flows for the owner in a SharePoint library, from where they could be restored. Based on feedback regarding the complexity of restoring apps and flows, we have moved to a system in which the users will be responsible for backup of their apps and flows themselves for later use and will be prompted to take a back up as part of the archival email.
+In the past, the archival backed up the apps and flows for the owner in a SharePoint library, from where they could be restored. Due to the complexity of restoring apps and flows, the updated flows will prompt users to back up their apps and flows themselves for later use.
 
-We have additionally changed the process for identifying apps and flows that need archiving:
+Additionally, the process for identifying apps and flows that need archiving has changed:
 
-- Apps will now check for both modified and launched dates. By default, if they have not been launched NOR modified in 6 months, they will flag for archival.
-- Flows will now be flagged for archival if they are not in the stopped state, as well as not modified in the last 6 months..
+- Apps will now check for both modified and launched dates. Apps will be flagged for archival if they have not been launched or modified in six months.
+- Flows will now be flagged for archival if they are not stopped and if they have not been modified in the last six months.
 
 Here is the detailed new archival workflow process:
 
-- A weekly flow sends an Archive Approval request for apps that have not been launched or modified in the last 6 months and flows that are not stopped and have not been modified in the last 6 months
-- The user can chose to Approve or Reject the request, and can of course ignore:
-  - **Approve**: The user will be reminded weekly for 3 weeks to backup and the resource will be deleted after 3 weeks. If they delete themselves, the reminders will stop.
+- A weekly flow sends an Archive Approval request for apps that have not been launched or modified in the last six months and flows that are not stopped and have not been modified in the last six months
+- The user can approve, reject or ignore the request:
+  - **Approve**: The user will be reminded weekly for three weeks to back up and the resource will be deleted after three weeks. If they delete themselves, the reminders will stop.
   - **Reject**: The resource will be ignored in the Archival flows for the next month.
-  - **Ignore**: If the user ignores the request, they will get another request the following week.
+  - **Ignore**: If the user ignores the request, and request will be sent the following week.
 
-A cleanup flow runs daily and deletes timed out approvals (1 month old) and deletes resources that have been approved for deletion 3 weeks ago.
+A cleanup flow runs daily and deletes timed out approvals and deletes resources that have been approved for deletion three weeks ago.

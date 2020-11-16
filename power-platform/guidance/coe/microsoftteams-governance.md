@@ -22,7 +22,7 @@ Leverage our philosophy of using Microsoft Power Platform to manage Microsoft Po
 
 ## Process description
 
-**Problem statement:** Central IT wants to ensure that Microsoft Teams environments and capacity is leveraged effectively in their tenant. Central IT wants to understand the business justification for a Dataverse for Teams environment to be able to distribute them to the most effective business use cases, as well as be able to invoke cleanup of unused assets that can be repurposed for more compelling scenarios in the tenant.
+**Problem statement:** Central IT wants to ensure that Microsoft Teams environments are leveraged effectively in their tenant. Central IT wants to understand the business justification for a Dataverse for Teams environment to be able to distribute them to the most effective business use cases, as well as be able to invoke cleanup of unused assets that can be repurposed for more compelling scenarios in the tenant.
 
 **Solution:** Reactive governance and monitoring abilities are configured to provide Team owners the ability to provide a business justification, and to provide Central IT with the ability to approve or reject the business justification as well as run regular automated cleanup flows.
 
@@ -56,7 +56,7 @@ Admins can also monitor inactive Microsoft Teams environments in their tenant an
 
 A weekly cleanup deletes environments that
 
-- have been created more than **7 days** ago and have no business justification or where the business justification has been rejected by the admin
+- have been created more than **seven days** ago and have no business justification or where the business justification has been rejected by the admin
 - have been created more than **90 days** ago and have no apps or flows in the environment
 
 > [!NOTE]
@@ -72,11 +72,11 @@ Team owners will receive a notification that their environment has been deleted.
 
 ![Team owner receives notification](media/teams-2.png "Team owner receives notification")
 
-In addition to the automatic cleanup, admins can also monitor how Microsoft Teams are used - a [Microsoft Teams environments](power-bi-monitor.md) report has been created in the CoE Starter Kit dashboard.
+In addition to the automatic cleanup, admins can also monitor how Microsoft Teams environments are used - a [Microsoft Teams environments](power-bi-monitor.md) report has been created in the CoE Starter Kit dashboard.
 
 The **Microsoft Teams environments** page shows you how many environments, environment makers, and apps and flows in Microsoft Teams environments you have.
 
-The page visualize:
+The page visualizes:
 
 - The Teams environment creation trend
 - The number of resources per environment
