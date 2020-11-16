@@ -80,6 +80,9 @@ To enable the new Relevance Search experience:
 
 3.	Under **Search**, set **Use new search experience** to **On**.
 
+   > [!div class="mx-imgBorder"] 
+   > ![New Relevance Search experience](media/admin-enable-search.png "New Relevance Search experience")
+
 4.	Select **Save**.
 
 For information on using the new Relevance Search experience, see [Use the new Relevance Search experience](https://docs.microsoft.com/en-us/powerapps/user/relevance-search#use-the-new-relevance-search-experience).
