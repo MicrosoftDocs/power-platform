@@ -192,7 +192,7 @@ Your organization’s queries and results are reviewed by people using secured c
 
 2.	Select **Settings** > **Product** > **Features**.
 
-3. Expand **Search**, and then set **Improve Relevance Search results** to **On**.
+3. Under **Search**, set **Improve Relevance Search results** to **On**.
 
    > [!div class="mx-imgBorder"] 
    > ![Improve Relevance Search results](media/improve-relevance-search-results.png "Improve Relevance Search results")
