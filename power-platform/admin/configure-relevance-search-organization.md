@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/21/2020
+ms.date: 11/16/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -16,6 +16,8 @@ search.app:
   - Flow
 ---
 # Configure Relevance Search to improve search results and performance 
+
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 <!-- legacy procedure -->
 
@@ -43,7 +45,7 @@ For more information about Relevance Search, see: [Using relevance search to sea
 
 Relevance Search is available in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation) that have installed version 9.0. It is not available for Customer Engagement (on-premises) organizations. Full-text Quick Find is available for Customer Engagement (on-premises) organizations, starting with Dynamics CRM 2015 Update Rollup 1. Quick Find is available for customer engagement apps organizations and Customer Engagement (on-premises) organizations.
 
-For more detailed comparison of the searches available in Common Data Service, see: [Compare search options in Common Data Service](https://docs.microsoft.com/powerapps/user/search).
+For more detailed comparison of the searches available in Microsoft Dataverse, see: [Compare search options in Dataverse](https://docs.microsoft.com/powerapps/user/search).
 
 
 ### Language support
@@ -177,6 +179,25 @@ By default, some out-of-the-box system entities are included in Relevance Search
 5. Select **Publish** for your changes to take effect.  
 
    If you want to change the **Can enable sync to external search index** property to **False**, you must first deselect the entity from Relevance search. If the entity is included in Relevance Search, you'll see the following message: "This entity is currently syncing to an external search index. You must remove the entity from the external search index before you can set the **Can Enable Sync to External Search Index** property to **False**." If **Can Enable Sync to External Search Index** is set to **False**, you'll see the following message when you try to include an entity in Relevance Search: "Entity can't be enabled for Relevance Search because of the configuration of its managed properties." For custom entities with particularly sensitive data, you may consider setting the **Can enable sync to external search index** property to **False**. Keep in mind, after you install the managed solution on the target system, you won't be able to change the value of the property because it's a managed property.  
+
+## Help improve Relevance Search results
+
+To help Microsoft improve Relevance Search, you can share your organization’s Relevance Search queries in Dynamics 365 and Power Platform applications with Microsoft. This data will help Microsoft build, improve, and validate the Microsoft machine learning model for the Dynamics 365 Natural Language search query technology.
+
+Your organization’s queries and results are reviewed by people using secured computers in the United States. Aggregate data about queries and results are used by Microsoft engineers and data scientists to improve future search query results for all users worldwide. Your data remains your property. Your organization’s data will be stored within your tenant’s compliance boundary and is automatically deleted after 30 days. You can delete the data at any time by navigating to the Power Platform admin center and toggling **Improve Relevance Search results** to **Off**. For more information, see Terms of Service in Power Platform admin center.
+
+**Improve Relevance Search results** is off by default. To enable:
+
+1.	In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.
+
+2.	Select **Settings** > **Product** > **Features**.
+
+3. Under **Search**, set **Improve Relevance Search results** to **On**.
+
+   > [!div class="mx-imgBorder"] 
+   > ![Improve Relevance Search results](media/improve-relevance-search-results.png "Improve Relevance Search results")
+
+4.	Select **Save**.
 
 ### See also  
  [Use relevance search to search for records](https://docs.microsoft.com/powerapps/user/relevance-search)

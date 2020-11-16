@@ -18,7 +18,7 @@ search.app:
 ---
 
 # About healthy ALM 
-This section provides information about the various scenarios that will help you reach the end goal of implementing and practicing healthy application lifecycle management (ALM) by using Power Apps, Power Automate, and Common Data Service in your organization. 
+This section provides information about the various scenarios that will help you reach the end goal of implementing and practicing healthy application lifecycle management (ALM) by using Power Apps, Power Automate, and Microsoft Dataverse in your organization. 
 
 The scenarios range from people who are new to Microsoft Power Platform to existing users practicing unhealthy ALM, and show how you can move to a recommended, successful ALM implementation. 
 

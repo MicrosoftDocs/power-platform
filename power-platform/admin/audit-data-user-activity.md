@@ -5,7 +5,7 @@ author: pnghub
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/14/2020
+ms.date: 11/13/2020
 ms.author: gned
 ms.reviewer: jimholtz 
 
@@ -18,6 +18,8 @@ search.app:
   - Flow
 ---
 # Audit data and user activity for security and compliance
+
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 The auditing feature logs changes that are made to customer records and user access so you can review the activity later. The auditing feature is designed to meet the auditing, compliance, security, and governance policies of many regulated enterprises.  
 <!-- 
@@ -53,7 +55,7 @@ This task requires the system administrator or customizer security role or equiv
   
 1. Browse to the Power Platform admin center and sign in using administrator credentials. 
   
-2. Go to **Environments** > [select an environment] > expand **Audit and logs** > **Audit settings**.
+2. Go to **Environments** > [select an environment] > **Settings** > expand **Audit and logs** > **Audit settings**.
   
    |      Setting |     Description    |
    |--------------------|---------------------|
@@ -61,14 +63,14 @@ This task requires the system administrator or customizer security role or equiv
    | Log access | Log whenever the system is accessed, generally by signing in  |  
    | Read logs | Logs will be sent to the [Microsoft 365 Security and Compliance Center](https://protection.office.com/homepage) |
 
-3. You can set a retention period for how long audit logs are kept in a Common Data Service environment. Under **Retain these logs for**, choose the period of time you wish to retain the logs.
+3. You can set a retention period for how long audit logs are kept in a Microsoft Dataverse environment. Under **Retain these logs for**, choose the period of time you wish to retain the logs.
 
    |      Setting |     Description    |
    |--------------------|---------------------|
    | Set the retention policy for these logs   | Default: 30 days.   |
    | Set a custom retention policy | Maximum: 100,000 days  |  
 
-   When new features are deployed, the audit retention period is set to **Forever** for all Common Data Service environments with existing audit data. The default audit retention period is 30 days for new environments and existing environments without any audit data. You can also change the audit retention value using the [Common Data Service Web API](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview). 
+   When new features are deployed, the audit retention period is set to **Forever** for all Dataverse environments with existing audit data. The default audit retention period is 30 days for new environments and existing environments without any audit data. You can also change the audit retention value using the [Dataverse Web API](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview). 
 
    Each audit log is stamped with the currently active retention period. Changing the retention period will not change already existing audit logs and is only applied to newly created audit logs. 
 
@@ -78,7 +80,7 @@ This task requires the system administrator or customizer security role or equiv
 
 1. Browse to the Power Platform admin center and sign in using administrator credentials. 
   
-2. Go to **Environments** > [select an environment] > expand **Audit and logs** > **Legacy audit settings**.
+2. Go to **Environments** > [select an environment] > **Settings** > expand **Audit and logs** > **Legacy audit settings**.
 
 3. Select the entities you want to track. To start or stop auditing on specific entities, select or clear the following check boxes:  
   
@@ -95,7 +97,7 @@ System administrators can see activity for the entities that are enabled for aud
   
 1. Browse to the Power Platform admin center and sign in using administrator credentials. 
   
-2. Go to **Environments** > [select an environment] > expand **Audit and logs** > **Audit Summary View**.
+2. Go to **Environments** > [select an environment] > **Settings** > expand **Audit and logs** > **Audit Summary View**.
   
 3. In the **Audit Summary View**, you can do the following:  
   
@@ -113,7 +115,7 @@ System administrators or customizers can change the default audit settings for e
   
 1. Browse to the Power Platform admin center and sign in using administrator credentials. 
   
-2. Go to **Environments** > [select an environment] > expand **Audit and logs** > **Entity and Field Audit Settings**.
+2. Go to **Environments** > [select an environment] > **Settings** > expand **Audit and logs** > **Entity and Field Audit Settings**.
 
 3. Under **Components**, expand **Entities**.  
   

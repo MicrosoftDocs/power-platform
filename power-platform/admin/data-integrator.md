@@ -1,6 +1,6 @@
 ---
-title: Integrate data into Common Data Service
-description: Integrate data from multiple sources into Common Data Service
+title: Integrate data into Microsoft Dataverse
+description: Integrate data from multiple sources into Microsoft Dataverse
 author: sabinn-msft
 ms.service: power-platform
 ms.topic: how-to
@@ -15,9 +15,11 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Integrate data into Common Data Service
+# Integrate data into Microsoft Dataverse
 
-The Data Integrator (for Admins) is a point-to-point integration service used to integrate data into Common Data Service. It supports integrating data from multiple sources—for example, Dynamics 365 Finance and Operations, Dynamics 365 Sales and SalesForce (Preview), SQL (Preview)—into Common Data Service. It also supports integrating data into Dynamics 365 Finance and Operations and Dynamics 365 Sales. This service has been generally available since July 2017.  
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
+The Data Integrator (for Admins) is a point-to-point integration service used to integrate data into Dataverse. It supports integrating data from multiple sources—for example, Dynamics 365 Finance and Operations, Dynamics 365 Sales and SalesForce (Preview), SQL (Preview)—into Dataverse. It also supports integrating data into Dynamics 365 Finance and Operations and Dynamics 365 Sales. This service has been generally available since July 2017.  
 
 We started with first-party apps—for example, Dynamics 365 Finance and Operations and Dynamics 365 Sales. With the help of Power Query or M-based connectors, we are now able to support additional sources like SalesForce (Preview) and SQL (Preview) and will extend this to 20+ sources in the near future. 
 
@@ -299,7 +301,7 @@ You can customize projects and templates in these ways:
     > [!div class="mx-imgBorder"] 
     > ![Customize template add task2](media/data-integrator/CustomizeTemplateAddtask175.png "Customize template add task2")
 
-    In this case, a new task was created to sync User entity from SalesForce to Users entity in Common Data Service.
+    In this case, a new task was created to sync User entity from SalesForce to Users entity in Dataverse.
 
     > [!div class="mx-imgBorder"] 
     > ![Customize template add task3](media/data-integrator/CustomizeTemplateAddtask275.png "Customize template add task3")
@@ -309,7 +311,7 @@ You can customize projects and templates in these ways:
     > [!div class="mx-imgBorder"] 
     > ![Customize template add task4](media/data-integrator/CustomizeTemplateAddtask3780.png "Customize template add task4")
 
-9. You just created a new template—in this case, a template to pull User entity data from SalesForce to Common Data Service. Select **Save** to save your customization.
+9. You just created a new template—in this case, a template to pull User entity data from SalesForce to Dataverse. Select **Save** to save your customization.
 
 10. Follow the steps to customize field mappings for this new template. You could run this project and/or save the project as a template from the **Project list** page.
 
@@ -454,7 +456,7 @@ For more information on Power Query, see [Power Query documentation](https://doc
 
 There are several factors that impact the performance of an integration scenario. Performance is highly dependent on: 
 
-- Which applications you are integrating: Dynamics 365 Finance and Operations and Common Data Service
+- Which applications you are integrating: Dynamics 365 Finance and Operations and Dataverse
 
 - Which entities are used: the entities' shape, validation, and business logic (standard and customizations)
 
@@ -462,7 +464,7 @@ The Data Integrator takes the data from the source application and pushes it int
 
 Dynamics 365 Finance and Operations uses the data management framework which provides a way to pull/push data in the most performant fashion. The data management framework is used to manage data entities and data entity packages in Microsoft Dynamics 365 Finance and Operations. 
 
-Dynamics 365 for Common Data Service uses OData APIs along with parallelism to maximize the performance. 
+Dynamics 365 for Dataverse uses OData APIs along with parallelism to maximize the performance. 
 
 You can use the following settings to tune the performance of Dynamics 365 Finance and Operations based on load, entity, and resources.
 
@@ -484,7 +486,7 @@ You can use the following settings to tune the performance of Dynamics 365 Finan
 - Turning off validations (optional): 
   While the Data Integrator does not bypass any business logic and validations, you may optionally turn off the ones that are not required to improve performance.
 
-Consider the following tips to ensure performance while importing or exporting data from Common Data Service environments.
+Consider the following tips to ensure performance while importing or exporting data from Dataverse environments.
 
 ### Importing/Exporting data to/from customer engagement apps
 

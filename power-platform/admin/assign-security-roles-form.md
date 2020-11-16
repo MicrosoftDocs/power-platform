@@ -18,6 +18,8 @@ search.app:
 ---
 # Assign security roles to a form to more finely control access
 
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 <!-- legacy procedure -->
 
 Control form and field access by assigning different security roles to different forms you create.  

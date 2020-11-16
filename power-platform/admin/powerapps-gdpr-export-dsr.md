@@ -18,6 +18,9 @@ search.app:
 ---
 
 # Responding to Data Subject Rights (DSR) requests to export Power Apps customer data
+
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 The "right of data portability" allows a data subject to request a copy of his or her personal data in an electronic format (that is, a structured, commonly used, machine readable and interoperable format) that may be transmitted to another data controller:
 
 * Website access: [Power Apps portal](https://make.powerapps.com), [Power Platform admin center](https://admin.powerplatform.microsoft.com/), and [Microsoft 365 Service Trust Portal](https://servicetrust.microsoft.com/)
@@ -40,7 +43,7 @@ Connection | | App creator: Available <br> Admin: Available
 Connection permissions    | | App creator: Available <br> Admin: Available
 Power Apps user settings, user-app settings, and notifications | | App creator: Available <br> Admin: Available
 
-> ** With the introduction of Common Data Service, if a database is created within the environment, environment permissions and model-driven app permissions are stored as records within the Common Data Service database environment. For guidance on how to respond to DSR requests for users that use Common Data Service, see [Responding to Data Subject Rights (DSR) requests for Common Data Service customer data](common-data-service-gdpr-dsr-guide.md).
+> ** With the introduction of Microsoft Dataverse, if a database is created within the environment, environment permissions and model-driven app permissions are stored as records within the Dataverse database environment. For guidance on how to respond to DSR requests for users that use Dataverse, see [Responding to Data Subject Rights (DSR) requests for Dataverse customer data](common-data-service-gdpr-dsr-guide.md).
 
 > *** An administrator can access these resources from the [Power Apps portal](https://make.powerapps.com) only if the owner of the resource has explicitly granted him or her access. If the administrator has not been granted access, he or she will need to leverage the [Power Apps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804).
 
@@ -86,9 +89,9 @@ Get-AdminEnvironment -CreatedBy $userId | ConvertTo-Json | Out-File -FilePath "U
 ```
  
 ## Step 2: Export the user's environment permissions
-Users can be assigned permissions (such as Environment Admin, Environment Maker, etc.) in an environment, which are stored in Power Apps as a *role assignment*. With the introduction of Common Data Service, if a database is created within the environment, the role assignments are stored as records within the Common Data Service database environment. For more information, see [Administer environments within Power Apps](environments-administration.md).
+Users can be assigned permissions (such as Environment Admin, Environment Maker, etc.) in an environment, which are stored in Power Apps as a *role assignment*. With the introduction of Dataverse, if a database is created within the environment, the role assignments are stored as records within the Dataverse database environment. For more information, see [Administer environments within Power Apps](environments-administration.md).
 
-### For environments without a Common Data Service database
+### For environments without a Dataverse database
 
 #### Power platform admin center
 Administrators can export a user's environment permissions from the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) by following these steps:
@@ -106,7 +109,7 @@ Administrators can export a user's environment permissions from the [Power Platf
 3. If the user has access to either role, go to the **Users** page, copy the details, and then paste them into a document editor, such as Microsoft Word.
 
 #### PowerShell cmdlets for admins
-Administrators can export all environment role assignments for a user across all environments without a Common Data Service database by using the **Get-AdminEnvironmentRoleAssignment** function in the [Power Apps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804):
+Administrators can export all environment role assignments for a user across all environments without a Dataverse database by using the **Get-AdminEnvironmentRoleAssignment** function in the [Power Apps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804):
 
 ```powershell
 Add-PowerAppsAccount
@@ -115,10 +118,10 @@ Get-AdminEnvironmentRoleAssignment -UserId $userId | ConvertTo-Json | Out-File -
 ```
 
 > [!IMPORTANT]
->  This function only works for environments that do not have a Common Data Service database environment.
+>  This function only works for environments that do not have a Dataverse database environment.
 
-### For environments with a Common Data Service database
-With the introduction of the Common Data Service, if a database is created within the environment, role assignments are stored as records within the Common Data Service database environment. For information on how to remove personal data from a Common Data Service database environment, see [Common Data Service User personal data removal](https://go.microsoft.com/fwlink/?linkid=871886).
+### For environments with a Dataverse database
+With the introduction of the Dataverse, if a database is created within the environment, role assignments are stored as records within the Dataverse database environment. For information on how to remove personal data from a Dataverse database environment, see [Common Data Serviice User personal data removal](https://go.microsoft.com/fwlink/?linkid=871886).
  
 ## Step 3: Export personal data contained within canvas apps created by the user
 
@@ -272,7 +275,7 @@ Get-AdminConnectorRoleAssignment -PrincipalObjectId $userId | ConvertTo-Json | O
 ```
  
 ## Step 9: Export Power Apps Notifications, User Settings, and User-App Settings
-Power Apps sends several types of notifications to users, including when an app is shared with them and when a Common Data Service export operation has completed. A user's notification history is visible to them within the [Power Apps portal](https://make.powerapps.com).
+Power Apps sends several types of notifications to users, including when an app is shared with them and when a Dataverse export operation has completed. A user's notification history is visible to them within the [Power Apps portal](https://make.powerapps.com).
 
 Power Apps also stores several different user preferences and settings that are used to deliver the Power Apps runtime and portal experiences, including when a user last opened an application, pinned an app, etc.
 
@@ -323,10 +326,10 @@ Power Apps licenses always include Power Automate capabilities. In addition to b
 >  We recommend that administrators complete this step for Power Apps users.
 
 
-## Step 12: Export the user's personal data in Common Data Service environments
-Anyone with a Power Apps license, provided there is 1GB available database capacity, can create Common Data Service environments and create and build apps on Common Data Service; this includes the Power Apps Community Plan, which is a free license that allows users to try out Common Data Service in an individual environment. To see which Common Data Service capabilities are included in each Power Apps license, see the [Power Apps Pricing page](https://powerapps.microsoft.com/pricing).
+## Step 12: Export the user's personal data in Dataverse environments
+Anyone with a Power Apps license, provided there is 1GB available database capacity, can create Dataverse environments and create and build apps on Dataverse; this includes the Power Apps Community Plan, which is a free license that allows users to try out Dataverse in an individual environment. To see which Dataverse capabilities are included in each Power Apps license, see the [Power Apps Pricing page](https://powerapps.microsoft.com/pricing).
 
-For guidance on how to respond to DSR requests for users that use Common Data Service, see [Responding to Data Subject Rights (DSR) requests for Common Data Service customer data](common-data-service-gdpr-dsr-guide.md).
+For guidance on how to respond to DSR requests for users that use Dataverse, see [Responding to Data Subject Rights (DSR) requests for Dataverse customer data](common-data-service-gdpr-dsr-guide.md).
 
 > [!IMPORTANT]
 >  We recommend that administrators complete this step for Power Apps users.

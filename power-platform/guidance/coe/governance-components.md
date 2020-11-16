@@ -113,7 +113,7 @@ Checks for apps that haven't been modified or launched in the last six months (t
 
 It recommends that the app owner take a backup of the app in the event that they would like to restore it at some later point.
 
-This flow starts the approval process and writes the approval task to the Archive Approval Common Data Service entity.
+This flow starts the approval process and writes the approval task to the Archive Approval Microsoft Dataverse entity.
 
 ![App Archive and Clean Up – Start Approval flow](media/coe58.png "App Archive and Clean Up – Start Approval flow")
 
@@ -129,13 +129,9 @@ This flow starts the approval process and writes the approval task to the Archiv
 
 **Customize**: By default, this flow will assign approvals to the flow owner. In order to test in a debug environment, in which you do not want to involve users, you can update the [*ProductionEnvironment* environment variable](setup-governance-components.md#update-environment-variables) to **No**, and the approvals will be sent to the admin account instead.
 
-### Admin \| Admin | Check Approvals
-
-On a scheduled interval, checks for approval responses created by the Start Approval flows described above and, if newly approved, marks the approved date so that the Approval Clean Up flow (described below) can delete it after user has time to archive.
-
-If approved in the past, but before deletion, it sends a reminder to archive the app or flow before deletion.
-
 ### Admin \| Approval Clean Up
+=======
+This flow starts the approval process and writes the approval task to the Archive Approval Dataverse entity.
 
 Runs on a daily basis and does two clean up tasks for the workflow.
 
@@ -153,7 +149,7 @@ This app is used in the [auditing process](example-processes.md) as a tool for u
 
 **Permission**: As soon as you're using the app auditing process, this app needs to be shared with your app makers. If you intend to use this process, modify the [Welcome email](setup-nurture-components.md) flow to add users to a security group, and then share this app with the security group.
 
-**Prerequisite**: This app uses Common Data Service; a Premium license is therefore required for each app user.
+**Prerequisite**: This app uses Dataverse; a Premium license is therefore required for each app user.
 
 #### Compliance Status
 

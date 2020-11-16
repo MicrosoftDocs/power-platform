@@ -17,6 +17,8 @@ search.app:
 ---
 # About Unified Interface for model-driven apps in Power Apps 
 
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 Unified Interface uses responsive web design principles to provide an optimal viewing and interaction experience for any screen size, device, or orientation. It brings all the rich experiences to any client that you are using. Whether you are using a browser, tablet, or phone, you will be able to consume similar experiences.
 
 More information: 

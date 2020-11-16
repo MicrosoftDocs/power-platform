@@ -1,6 +1,6 @@
 ---
-title: "New Common Data Service storage capacity  | MicrosoftDocs"
-description: Introducing a new storage model for Common Data Service.
+title: "New Microsoft Dataverse storage capacity  | MicrosoftDocs"
+description: Introducing a new storage model for Microsoft Dataverse.
 ms.date: 10/08/2020
 ms.reviewer: ""
 ms.service: "power-platform"
@@ -16,7 +16,9 @@ search.app:
   - Flow
 ---
 
-# New Common Data Service storage capacity 
+# New Microsoft Dataverse storage capacity 
+
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 If you purchased storage in or after April 2019, or you have a mix of storage purchases made before and after April 2019, you'll see your storage capacity entitlement and usage by database, file, and log as it appears in the Power Platform admin center today. 
 
@@ -33,9 +35,9 @@ We're rolling out this feature now so check back if your user experience varies 
 
 The following licenses provide capacity by using the new storage model. If you have any of these licenses, you'll see the new model report: 
 
-- Common Data Service for Apps Database Capacity 
-- Common Data Service for Apps File Capacity 
-- Common Data Service for Apps Log Capacity 
+- Dataverse for Apps Database Capacity 
+- Dataverse for Apps File Capacity 
+- Dataverse for Apps Log Capacity 
 
 To see whether you have any of these licenses, sign in to the Microsoft 365 admin center, and then go to **Billing** > **Licenses**.
 
@@ -69,7 +71,7 @@ To view the **Summary** page, select **Resources** > **Capacity** > **Summary**.
 > ![Capacity page Summary tab](media/storage-data-capacity-page-review.png "Capacity page Summary tab")
 
 
-All entities of Common Data Service, including system entities, are included in the storage capacity reports.
+All entities of Dataverse, including system entities, are included in the storage capacity reports.
 
 
 |Number  |Description |
@@ -180,7 +182,7 @@ You can always [free up storage](free-storage-space.md), [delete unwanted enviro
 
 ### Why is my storage consumption decreasing in database and growing in file?
 
-We are constantly optimizing the Common Data Service for ease of use, performance, and efficiency. Part of this ongoing effort is to move data to the best possible storage with the lowest cost for customers. File-type data such as “Annotation” and “Attachment” is moving from database to file storage. This leads to decreased usage of database capacity and an increase in file capacity.
+We are constantly optimizing the Dataverse for ease of use, performance, and efficiency. Part of this ongoing effort is to move data to the best possible storage with the lowest cost for customers. File-type data such as “Annotation” and “Attachment” is moving from database to file storage. This leads to decreased usage of database capacity and an increase in file capacity.
 
 ### Why could my database table size decrease while my table and file data sizes remain the same?
 
@@ -188,7 +190,7 @@ As part of moving file-type data such as “Annotation” and “Attachment” o
 
 ### Do indexes affect database storage usage?
 
-Possibly. Database storage includes both the database records and index files used to improve search performance. Indexes are created and optimized for peak performance and are updated frequently by the system by analyzing data use patterns. No user action is needed to optimize the indexes, as all Common Data Service stores have tuning enabled by default. A fluctuation in database storage can be represented by an increased or decreased number of indexes on the database. Common Data Service is continually being tuned to increase efficiency and incorporate new technologies that improve user experience and optimize storage capacity.  Common causes for an increase in index size are:
+Possibly. Database storage includes both the database records and index files used to improve search performance. Indexes are created and optimized for peak performance and are updated frequently by the system by analyzing data use patterns. No user action is needed to optimize the indexes, as all Dataverse stores have tuning enabled by default. A fluctuation in database storage can be represented by an increased or decreased number of indexes on the database. Dataverse is continually being tuned to increase efficiency and incorporate new technologies that improve user experience and optimize storage capacity.  Common causes for an increase in index size are:
 
 - An organization making use of new functionality (this can be custom, out-of-the-box, or part of an update or solution installation).
 - Data volume or complexity changes.
@@ -247,7 +249,7 @@ Default, production, and sandbox environments are counted for consumption. Trial
 
 ### What are entities ending in “- analytics" in my capacity report?
 
-Entities ending in “– Analytics” are entities used by one or more Insights applications, for example Sales Insights, Customer Service Hub, or Field Service and resource scheduling and optimization analytics dashboard to generate predictive insights and/or analytics dashboards. The data is synched from Common Data Service entities. See **More information** below for documentation covering the installed Insights applications and the entities used to create insights and dashboards.
+Entities ending in “– Analytics” are entities used by one or more Insights applications, for example Sales Insights, Customer Service Hub, or Field Service and resource scheduling and optimization analytics dashboard to generate predictive insights and/or analytics dashboards. The data is synched from Dataverse entities. See **More information** below for documentation covering the installed Insights applications and the entities used to create insights and dashboards.
 
 **More information:**
 - [Sales Insights ](https://docs.microsoft.com/dynamics365/ai/sales/help-hub#get-started)

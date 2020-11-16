@@ -19,6 +19,8 @@ search.app:
 
 # Plan and manage license and capacity allocations
 
+[!INCLUDE[cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
+
 Do you have questions about how to plan licensing and capacity for your organization's or team's applications or processes? Watch the following session to learn about the current and incoming capabilities of the platform and how you can take advantage and choose the right plans for your organization.
 >
 > [!VIDEO https://medius.studios.ms/video/asset/HIGHMP4/IG19-BRK2223]
@@ -60,9 +62,9 @@ Another key licensing concept to be aware of is the request limits and allocatio
 
 ## Storage capacity
 
-Common Data Service capacity (database, file, log, and add-ons) is pooled across the tenant and shared among all environments and workloads. The first subscription of Power Apps or Power Automate provides a one-time default capacity entitlement for the tenant. For example, a Power Apps per-user plan would set the tenant capacity initially as 10 GB of Common Data Service database, 20 GB of Common Data Service file, and 2 GB of Common Data Service log capacity. Each additional licensed user provides an additional per-user capacity grant that increases the overall tenant available capacity. There are also capacity add-ons available to purchase additional database, file, and log capacity.
+Microsoft Dataverse capacity (database, file, log, and add-ons) is pooled across the tenant and shared among all environments and workloads. The first subscription of Power Apps or Power Automate provides a one-time default capacity entitlement for the tenant. For example, a Power Apps per-user plan would set the tenant capacity initially as 10 GB of Dataverse database, 20 GB of Dataverse file, and 2 GB of Dataverse log capacity. Each additional licensed user provides an additional per-user capacity grant that increases the overall tenant available capacity. There are also capacity add-ons available to purchase additional database, file, and log capacity.
 
-Every environment can have zero or one Common Data Service database, which provides storage for your apps. To create a database, there must be at least 1 GB of Common Data Service database capacity remaining. Capacity is also consumed by normal Common Data Service storage consumption by storing data, files, and logs.
+Every environment can have zero or one Dataverse database, which provides storage for your apps. To create a database, there must be at least 1 GB of Dataverse database capacity remaining. Capacity is also consumed by normal Dataverse storage consumption by storing data, files, and logs.
 
 As an administrator, you can monitor your capacity usage in the admin portal.
 

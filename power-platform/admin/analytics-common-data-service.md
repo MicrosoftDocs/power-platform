@@ -1,6 +1,6 @@
 ---
-title: "Common Data Service analytics   | MicrosoftDocs"
-description: Common Data Service analytics 
+title: "Microsoft Dataverse analytics   | MicrosoftDocs"
+description: Microsoft Dataverse analytics 
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
@@ -15,9 +15,11 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Common Data Service analytics 
+# Microsoft Dataverse analytics 
 
-We've improved how you view metrics for your organization. You no longer need to install or update a solution. Instead, you can view Common Data Service analytics right from the Power Platform admin center to quickly view adoption ad user metrics for your organization. 
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
+We've improved how you view metrics for your organization. You no longer need to install or update a solution. Instead, you can view Dataverse analytics right from the Power Platform admin center to quickly view adoption ad user metrics for your organization. 
 
 To access these reports:
 
@@ -28,7 +30,7 @@ To access these reports:
 
 ## Who can view these reports?
 
-Admins with the following roles and a [license](pricing-billing-skus.md) can view the reports in Common Data Service analytics: 
+Admins with the following roles and a [license](pricing-billing-skus.md) can view the reports in Dataverse analytics: 
 - Environment Admin - can view reports for the environments that the admin has access to.
 - Power Platform admin – can view reports for all environments.
 - Dynamics 365 admin - can view reports for all environments.
@@ -40,7 +42,7 @@ For more information on the different roles for managing your tenant across the 
 
 - **Deprecating the solution**: Organization Insights, available as a preferred solution from AppSource, will no longer be supported or available for use in future releases.  
 
-- **Deprecating Organization Insights dashboard**: This dashboard will be removed from Common Data Service in future releases. 
+- **Deprecating Organization Insights dashboard**: This dashboard will be removed from Dataverse in future releases. 
 
 - **Monitor adoption and use**: Identify your most active users, the number and types of operations they're performing, number of pages requests, most-used entities, workflows, plug-ins, and more, over a period of time as you work toward your adoption goals.  
 
@@ -53,10 +55,10 @@ For more information on the different roles for managing your tenant across the 
 ## Home (default)  
 
 > [!div class="mx-imgBorder"] 
-> ![Common Data Service analytics Home Section](./media/organization-insights-home-section.png "Common Data Service analytics Home Section")  
+> ![Dataverse analytics Home Section](./media/organization-insights-home-section.png "Dataverse analytics Home Section")  
 
 ### About this dashboard  
- This is the default dashboard that provides information on the number of active Common Data Service users, storage usage, the most active workflows, and more.  
+ This is the default dashboard that provides information on the number of active Dataverse users, storage usage, the most active workflows, and more.  
 
 ### What's included in this dashboard  
 
@@ -64,19 +66,19 @@ For more information on the different roles for managing your tenant across the 
 > |Chart element|Description|  
 > |--------------|-----------------|  
 > |           Active Users            |                         Number of active users (unique users) who performed an operation that caused one of these SDK calls:<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update`.                          |
-> |             API Calls             |                                            Number of API calls that were made by the Common Data Service environment for the selected time period.                                            |
-> |            API Pass Rate             |                        This chart shows the API pass rate as percentage of total API calls that were made in the Common Data Service environment over the specified time.                        |
-> |           Executions            |                                        This chart shows how many plug-ins have been executed in the Common Data Service environment over the specified time.                                        |
-> |            Total Operations             |                         This chart shows how many operations (create, update, deletes, reads) have occurred in the Common Data Service environment over the specified time.                         |
+> |             API Calls             |                                            Number of API calls that were made by the Dataverse environment for the selected time period.                                            |
+> |            API Pass Rate             |                        This chart shows the API pass rate as percentage of total API calls that were made in the Dataverse environment over the specified time.                        |
+> |           Executions            |                                        This chart shows how many plug-ins have been executed in the Dataverse environment over the specified time.                                        |
+> |            Total Operations             |                         This chart shows how many operations (create, update, deletes, reads) have occurred in the Dataverse environment over the specified time.                         |
 > | Most Active Users Performing Operations | List of most active users who performed an operation that caused a `Create`, `Update`, `Read`, or `Delete` SDK call in the [!INCLUDE[pn_crm_shortest](../includes/pn-crm-shortest.md)] environment over the selected time period. |
-> |        Top Plug-ins by Failures         |                                            This chart shows top 10 most failing plug-in in the Common Data Service environment over the specified time.                                             |
+> |        Top Plug-ins by Failures         |                                            This chart shows top 10 most failing plug-in in the Dataverse environment over the specified time.                                             |
 
 <a name="BKMK_ActiveUsage"></a>   
 
 ## Active Users  
 
 > [!div class="mx-imgBorder"] 
-> ![Common Data Service analytics Active Usage Section](./media/organization-insights-active-usage-section.png "Common Data Service analytics Active Usage Section")  
+> ![Dataverse analytics Active Usage Section](./media/organization-insights-active-usage-section.png "Dataverse analytics Active Usage Section")  
  
 ### About this dashboard  
  Use this dashboard to find out how many [!INCLUDE[pn_dyn_365](../includes/pn-dyn-365.md)] users there are, how many licenses are in use, what custom entities are used most frequently, and more.  
@@ -89,7 +91,7 @@ For more information on the different roles for managing your tenant across the 
 > |             Total Active Users              |                            Total number of active users (unique users) who performed an operation that caused one of these SDK calls:<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update`.                            | 
 > |             Most Used  Entities             |                                                            Ten Entities which had the most<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and <br />`Update SDK Calls`.                                                             | 
 > |             Total Page Requests             | The number of page load requests for forms, dashboards, and reports. This is the count of requests received by the [!INCLUDE[pn_dyn_365](../includes/pn-dyn-365.md)] server. Pages that are cached while browsing won't be counted. | 
-> |              Total Operations               |                         This chart shows how many operations (create, update, deletes, reads) have occurred in the Common Data Service environment for the selected time period.                         | 
+> |              Total Operations               |                         This chart shows how many operations (create, update, deletes, reads) have occurred in the Dataverse environment for the selected time period.                         | 
 > | Active Users Performing Specific Operations |                       Total number of active users (unique users) over time who performed an operation that caused one of these SDK calls:<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update`.                       | 
 > |                Active Users                 |                 Number of active users (unique users) in your environment who performed an operation that caused one of these SDK calls:<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update` over time.                  | 
 > |   Most Active Users Performing Operations   |                        List of  most active users (unique users) over time who performed an operation that caused one of these SDK calls:<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update`.                        | 
@@ -100,12 +102,12 @@ For more information on the different roles for managing your tenant across the 
 > |           Active Users by Browser           |                                                                                               The number of active users by browser.                                                                                                | 
 > |       Active Users by Security Roles        |                                                                                            The number of active users by security roles.                                                                                            | 
 > |           Users by Business Unit            |                                                                                            The number of active users by business unit.                                                                                             | 
-> |         Number of Creates by Entity         |                                    How many create operations are performed by the selected user in the Common Data Service environment for the selected time period.                                    | 
-> |         Number of Updates by Entity         |                         How many update operations are performed on different entities by the selected user in the Common Data Service environment for the selected time period.                         | 
-> |          Number of Reads by Entity          |                          How many read operations are performed on different entities by the selected user in the Common Data Service environment for the selected time period.                          | 
-> |         Number of Deletes by Entity         |                         How many delete operations are performed on different entities by the selected user in the Common Data Service environment for the selected time period.                         | 
-> |         Total Operations Over Time          |                                        The total operations performed by the selected user in the Common Data Service environment over the selected time period.                                         | 
-> |         Total Operations by Entity          |                              The total operations performed on different entities by the selected user in the Common Data Service environment for the selected time period.                              | 
+> |         Number of Creates by Entity         |                                    How many create operations are performed by the selected user in the Dataverse environment for the selected time period.                                    | 
+> |         Number of Updates by Entity         |                         How many update operations are performed on different entities by the selected user in the Dataverse environment for the selected time period.                         | 
+> |          Number of Reads by Entity          |                          How many read operations are performed on different entities by the selected user in the Dataverse environment for the selected time period.                          | 
+> |         Number of Deletes by Entity         |                         How many delete operations are performed on different entities by the selected user in the Dataverse environment for the selected time period.                         | 
+> |         Total Operations Over Time          |                                        The total operations performed by the selected user in the Dataverse environment over the selected time period.                                         | 
+> |         Total Operations by Entity          |                              The total operations performed on different entities by the selected user in the Dataverse environment for the selected time period.                              | 
 > |          Active Users by Entities           |                                                                            Show the active users distributed over different entities                                                                            | 
 > |           Active Users by Client            |                                                                                   The active users distributed by client type                                                                                  | 
 > |   Active Users Using More than One Client   |                                                      The number of active users using more than one client, distributed over different client combinations                                                       | 
@@ -136,7 +138,7 @@ For more information on the different roles for managing your tenant across the 
 ## System Jobs  
 
 > [!div class="mx-imgBorder"] 
-> ![Common Data Service analytics System Jobs Section](./media/organization-insights-system-jobs-section.png "Common Data Service analytics System Jobs Section")
+> ![Dataverse analytics System Jobs Section](./media/organization-insights-system-jobs-section.png "Dataverse analytics System Jobs Section")
    
 ### About this dashboard  
  Use this dashboard to monitor and troubleshoot workflows.  
@@ -146,12 +148,12 @@ For more information on the different roles for managing your tenant across the 
 > [!div class="mx-tableFixed"]
 > |Chart element|Description|  
 > |--------------|-----------------|  
-> |      Workflow Executions      | This chart shows how many workflows have been executed in the Common Data Service environment over the specified time. | 
-> |     System Jobs Pass Rate     | This chart shows the system job's pass rate as percentage of system jobs that were executed in the Common Data Service environment over the specified time.  | 
-> | System Jobs Throughput/Minute | This chart shows the average system jobs that have been executed per hour in the Common Data Service environment over the specified time. | 
-> |    Executions and Backlog     |  This chart shows the number of executions and the backlog for system jobs in the Common Data Service environment over the specified time.   | 
-> |     Most Active Workflows     |  This chart shows top 10 most executed workflows in the Common Data Service environment over the specified time.  | 
-> |   Top Workflows by Failures   | This chart shows top 10 most failing workflows in the Common Data Service environment over the specified time. Click on a workflow to see the failures and their number of occurrences. | 
+> |      Workflow Executions      | This chart shows how many workflows have been executed in the Dataverse environment over the specified time. | 
+> |     System Jobs Pass Rate     | This chart shows the system job's pass rate as percentage of system jobs that were executed in the Dataverse environment over the specified time.  | 
+> | System Jobs Throughput/Minute | This chart shows the average system jobs that have been executed per hour in the Dataverse environment over the specified time. | 
+> |    Executions and Backlog     |  This chart shows the number of executions and the backlog for system jobs in the Dataverse environment over the specified time.   | 
+> |     Most Active Workflows     |  This chart shows top 10 most executed workflows in the Dataverse environment over the specified time.  | 
+> |   Top Workflows by Failures   | This chart shows top 10 most failing workflows in the Dataverse environment over the specified time. Click on a workflow to see the failures and their number of occurrences. | 
 
 ### Update frequency  
  System jobs chart data is updated as follows.  
@@ -170,7 +172,7 @@ For more information on the different roles for managing your tenant across the 
 ## Plug-ins  
 
 > [!div class="mx-imgBorder"] 
-> ![Common Data Service analytics Plugins Section](./media/organization-insights-plugins-section.png "Common Data Service analytics Plugins Section")  
+> ![Dataverse analytics Plugins Section](./media/organization-insights-plugins-section.png "Dataverse analytics Plugins Section")  
 
 ### About this dashboard  
  Use this dashboard to monitor and troubleshoot plug-ins.  
@@ -180,11 +182,11 @@ For more information on the different roles for managing your tenant across the 
 > [!div class="mx-tableFixed"]
 > |Chart element|Description|  
 > |--------------|-----------------|  
-> |      Plug-in Success Rate      | This chart shows the plug-in pass rate as percentage of total plug-in executions that were executed in the Common Data Service environment over the specified time. | 
-> |       Plug-in Executions       |                        This chart shows how many plug-ins have been executed in the Common Data Service environment over the specified time.                        | 
-> | Average Plug-in Execution Time |                This chart shows average time taken to successfully execute a plug-in in the Common Data Service environment over the specified time.                | 
-> |      Most Active Plug-ins      |                           This chart shows top 10 most executed plug-ins in the Common Data Service environment over the specified time.                            | 
-> |    Top Plug-ins by Failures    |                            This chart shows top 10 most failing plug-ins in the Common Data Service environment over the specified time.                            | 
+> |      Plug-in Success Rate      | This chart shows the plug-in pass rate as percentage of total plug-in executions that were executed in the Dataverse environment over the specified time. | 
+> |       Plug-in Executions       |                        This chart shows how many plug-ins have been executed in the Dataverse environment over the specified time.                        | 
+> | Average Plug-in Execution Time |                This chart shows average time taken to successfully execute a plug-in in the Dataverse environment over the specified time.                | 
+> |      Most Active Plug-ins      |                           This chart shows top 10 most executed plug-ins in the Dataverse environment over the specified time.                            | 
+> |    Top Plug-ins by Failures    |                            This chart shows top 10 most failing plug-ins in the Dataverse environment over the specified time.                            | 
 
 ### Update frequency  
  Plug-ins chart data is updated as follows.  
@@ -202,7 +204,7 @@ For more information on the different roles for managing your tenant across the 
 ## API Call Statistics  
 
 > [!div class="mx-imgBorder"] 
-> ![Common Data Service analytics API Call Statistics Section](./media/organization-insights-api-call-statistics-section.png "Common Data Service analytics API Call Statistics Section")  
+> ![Dataverse analytics API Call Statistics Section](./media/organization-insights-api-call-statistics-section.png "Dataverse analytics API Call Statistics Section")  
 
 ### About this dashboard  
  Use this dashboard to monitor and troubleshoot API calls.  
@@ -212,11 +214,11 @@ For more information on the different roles for managing your tenant across the 
 > [!div class="mx-tableFixed"]
 > |Chart element|Description|  
 > |--------------|-----------------|  
-> |  API Success Rate   | This chart shows the API success rate as percentage of total API calls that were made in the Common Data Service environment over the specified time. | 
-> | Top API by Failures |  This chart shows top 10 failing API calls in the Common Data Service environment over the specified time.  | 
-> |   Total API Calls   | This chart shows how many API calls have been made in total in the Common Data Service environment over the specified time.     | 
-> |    Most Used API    | This chart shows top 10 most executed API calls in the Common Data Service environment database. Adding the individual counts here will provide the total of the top 10 API calls. This will not be the same as the all up Total API Calls metric above.       | 
-> |      API Calls      | This chart shows how many API calls have been made over time in the Common Data Service environment over the specified time. Adding up the individual counts will equal the Total API Calls count.  |
+> |  API Success Rate   | This chart shows the API success rate as percentage of total API calls that were made in the Dataverse environment over the specified time. | 
+> | Top API by Failures |  This chart shows top 10 failing API calls in the Dataverse environment over the specified time.  | 
+> |   Total API Calls   | This chart shows how many API calls have been made in total in the Dataverse environment over the specified time.     | 
+> |    Most Used API    | This chart shows top 10 most executed API calls in the Dataverse environment database. Adding the individual counts here will provide the total of the top 10 API calls. This will not be the same as the all up Total API Calls metric above.       | 
+> |      API Calls      | This chart shows how many API calls have been made over time in the Dataverse environment over the specified time. Adding up the individual counts will equal the Total API Calls count.  |
 
 ### Update frequency  
  API Call Statistics chart data is updated as follows.  
@@ -234,7 +236,7 @@ For more information on the different roles for managing your tenant across the 
 ## Mailbox Usage  
 
 > [!div class="mx-imgBorder"] 
-> ![Common Data Service analytics Mailbox Usage Section](./media/organization-insights-mailbox-usage-section.png "Common Data Service analytics Mailbox Usage Section")  
+> ![Dataverse analytics Mailbox Usage Section](./media/organization-insights-mailbox-usage-section.png "Dataverse analytics Mailbox Usage Section")  
  
 ### About this dashboard  
 
@@ -275,13 +277,13 @@ Select **Download** to view available downloads and then select any of the repor
 All the download reports, except "Active Dynamics 365 Customer Engagement Plan Users by Application", show data:   
 - for an environment <br />
   and <br />
-- per the timeline in the filters for the out-of-box Common Data Service analytics reports. If you select a certain date range for the out-of-box Common Data Service reports, the same time filter applies to the downloads.  
+- per the timeline in the filters for the out-of-box Dataverse analytics reports. If you select a certain date range for the out-of-box Dataverse reports, the same time filter applies to the downloads.  
 - The maximum duration for data availability is 30 days.
 
 The "Active Dynamics 365 Customer Engagement Plan Users by Application" report always shows the last 30 days of data at the tenant level. 
 
 > [!div class="mx-imgBorder"] 
-> ![Common Data Service analytics Download Section](./media/organization-insights-download-section.png "Common Data Service analytics Download Section")  
+> ![Dataverse analytics Download Section](./media/organization-insights-download-section.png "Dataverse analytics Download Section")  
 
 ### What's included  
 
@@ -296,9 +298,9 @@ The "Active Dynamics 365 Customer Engagement Plan Users by Application" report a
 > | Most active users performing operations | List of  most active users (unique users) over time who performed an operation that caused one of these SDK calls:<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update`. |
 > | Most used custom entities |  List of custom entities which had the most<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and <br />`Update SDK Calls`. |
 > | Most used OOB entities  |  List of out-of-box entities which had the most<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and <br />`Update SDK Calls`. |
-> | Most active workflows | List of top 10 most executed workflows in the Common Data Service environment over the specified time.   |
-> | Most active plug-ins | List of top 10 most executed plug-ins in the Common Data Service environment over the specified time.  |
-> | Most used API  | List of top 10 most executed API calls in the Common Data Service environment database.   |
+> | Most active workflows | List of top 10 most executed workflows in the Dataverse environment over the specified time.   |
+> | Most active plug-ins | List of top 10 most executed plug-ins in the Dataverse environment over the specified time.  |
+> | Most used API  | List of top 10 most executed API calls in the Dataverse environment database.   |
 > | Active Dynamics 365 Customer Engagement Plan Users by Application | Active Dynamics 365 Customer Engagement plan users by application. Helps customers to know usage across different apps and entities so that when it is time to renew their subscription, they can chose the individual apps to be bought (for example Dynamics 365 for Sales, Dynamics 365 for Customer Service, etc.). The Customer Engagement plan which was a suite of all Customer Engagement applications is no longer being sold and people need to choose the individual apps to be bought.    |
 > | Non-conformant usage by users with Team Member license   | Shows customers how their users (with team member licenses) are using the product in ways that are deemed to be not conformant with the use rights entitled to this license, as per licensing guide.   |
 
@@ -309,9 +311,9 @@ The "Active Dynamics 365 Customer Engagement Plan Users by Application" report a
 Select **Change filters**.  
 
 > [!div class="mx-imgBorder"] 
-> ![Common Data Service analytics change filters](./media/organization-insights-change-filters.png "Common Data Service analytics change filters")  
+> ![Dataverse analytics change filters](./media/organization-insights-change-filters.png "Dataverse analytics change filters")  
 
-Select the environment and time-period from the drop-down lists, and then select **Apply** to save the changes. All the Common Data Service analytics reports are available using this selection. 
+Select the environment and time-period from the drop-down lists, and then select **Apply** to save the changes. All the Dataverse analytics reports are available using this selection. 
 
 > [!div class="mx-imgBorder"] 
-> ![Common Data Service analytics change filters apply](./media/organization-insights-change-filters-apply.png "Common Data Service analytics change filters apply")  
+> ![Dataverse analytics change filters apply](./media/organization-insights-change-filters-apply.png "Dataverse analytics change filters apply")  

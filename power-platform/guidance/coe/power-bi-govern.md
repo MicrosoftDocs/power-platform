@@ -84,7 +84,7 @@ The **Flows Risk Assessment** page enables you to filter by:
 
 - Maker
 
-- Connector (Microsoft 365 Users, Common Data Service)
+- Connector (Microsoft 365 Users, Microsoft Dataverse)
 
 - Operation (Parse JSON, HTTP)
 

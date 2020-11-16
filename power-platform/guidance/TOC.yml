@@ -39,7 +39,7 @@
             href: adoption/resource-usage.md
           - name: Track user access
             href: adoption/access-usage.md
-          - name: Monitor Common Data Service usage
+          - name: Monitor Microsoft Dataverse usage
             href: adoption/cds-usage.md
           - name: Monitor new connectors
             href: adoption/new-connectors.md

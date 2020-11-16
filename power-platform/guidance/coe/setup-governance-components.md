@@ -115,7 +115,7 @@ In addition to sharing the app, you will also need to share the data by providin
 
 1. Navigate to make.powerapps.com and select the app
 1. Select ... > Share
-1. Select the Common Data Service data permissions
+1. Select the Dataverse data permissions
    ![Sharing Data 1](media/SharingData1.png "Sharing Data 1")
 1. Select the Power Platform Maker Security Role
    ![Sharing Data 2](media/SharingData2.png "Sharing Data 2")
