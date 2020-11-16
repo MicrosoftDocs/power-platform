@@ -21,7 +21,7 @@ You can enhance your bot by developing custom dialogs with [Bot Framework Compos
 
 Composer is integrated into Power Virtual Agents to allow developers and business users to build bots together. Composer lets you extend your bot with Bot Framework functionality, including:
 - Adaptive dialogs
-- Language generation (LG)
+- Language Generation (LG)
 - Regular expressions (RegEx)
 - Adaptive cards 
 
@@ -665,5 +665,4 @@ To learn more about developing in Bot Framework Composer, see these resources:
 - [Tutorial: Add cards and buttons to your bot](/composer/tutorial/tutorial-cards)
 - [Tutorial: Add language generation to your bot](/composer/tutorial/tutorial-language-generation)
 - [Bot Framework Composer on GitHub](https://github.com/Microsoft/BotFramework-Composer)
-
 
