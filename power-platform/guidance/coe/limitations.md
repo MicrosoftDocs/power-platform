@@ -35,11 +35,11 @@ Larger tenants might require a per flow license in order for these flows to comp
 
 ## Timeouts in the Admin | Sync Template V2
 
-The Common Data Service connector might experience some throttling limits if the tenant has a lot of resources. If you see 429 errors in the flow run history occurring in later runs, you can try the following resolution steps:
+The Dataverse connector might experience some throttling limits if the tenant has a lot of resources. If you see 429 errors in the flow run history occurring in later runs, you can try the following resolution steps:
 
 - **Configure the retry policy**
   1. Open **Admin \| Sync Template v2**, and then select **Edit**.
-  1. Expand the step **Get Environments and store them in the CoE Microsoft Dataverse Entity**.
+  1. Expand the step **Get Environments and store them in the CoE Table**.
   1. Expand the step **Apply to each Environment**
   1. Go to the **Settings** pane for each call to Dataverse, and configure the timeout/retry settings. The default count is set to **10** and the default interval is set to **PT10S** - increase the values incrementally here.
 
@@ -47,7 +47,7 @@ The Common Data Service connector might experience some throttling limits if the
 
 - **Configure (reduce) concurrency in Foreach loops to reduce simultaneous calls**
   1. Open **Admin \| Sync Template v2**, and then select **Edit**.
-  1. Expand the step **Get Environments and store them in the CoE Dataverse Entity**.
+  1. Expand the step **Get Environments and store them in the CoE Table**.
   1. Go to **Settings** for the **Apply to each Environment** step.
 
      ![Configure concurrency in Foreach](media/coe73.png "Configure concurrency in Foreach")

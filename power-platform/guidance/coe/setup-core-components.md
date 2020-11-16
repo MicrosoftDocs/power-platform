@@ -54,12 +54,12 @@ This is the first step of the installation process and is required for every oth
 1. Create connections to all connectors used as part of the solution.
     1. Go to **Data** > **Connections**.
     1. Select **+ New Connection**.
-    1. Select **Common Data Service**.
-     ![Select the Common Data Service connector](media/msi-connection.png "Select the Common Data Service connector")
+    1. Select **Dataverse**.
+     ![Select the Datavsere connector](media/msi-connection.png "Select the Dataverse connector")
     1. Select **Create**.
     1. Complete the same steps for the following connectors:
-        - Common Data Service
-        - Common Data Service (current environment)
+        - Dataverse
+        - Dataverse (current environment)
         - Power Apps for Admins
         - Power Apps for Makers
         - Power Platform for Admins

@@ -85,7 +85,7 @@ The [sync flows](#flows) of the CoE Starter Kit sync your tenant resources to th
   - Flow orphaned
   - Flow trigger
 
-- **Flow Action Detail** represents the set of actions that occur in a flow. This entity has a many-to-one link with the Flow entity. The following information is available for each action or trigger:
+- **Flow Action Detail** represents the set of actions that occur in a flow. This table has a many-to-one link with the Flow table. The following information is available for each action or trigger:
   - Type (scope, for each, Microsoft 365 users)
   - Operation (for connectors, such as Send Email and List Items)
   - Is trigger (yes/no)
@@ -119,7 +119,7 @@ The [sync flows](#flows) of the CoE Starter Kit sync your tenant resources to th
   - User city, country, department, job title (from Microsoft 365)
   - Audit log event time
 
-- **CoE Settings** Configured settings live in a record in this entity. This is an important entity to populate data into during the setup process, because it contains details that are important for configuring the branding and support aspect of the solution. The following settings are available to configure:
+- **CoE Settings** Configured settings live in a record in this table. This is an important table to populate data into during the setup process, because it contains details that are important for configuring the branding and support aspect of the solution. The following settings are available to configure:
   - Brand logo
   - Company name
   - Primary color
@@ -172,7 +172,7 @@ The [sync flows](#flows) of the CoE Starter Kit sync your tenant resources to th
   - Environment
   - Modified on
   - State
-  - Type (topic, entity)
+  - Type (topic, table)
   - Uses flow (yes/no)
 
 - **PVA Component Flow** represents a flow triggered as part of Power Virtual Agents. The following information is available for each bot component flow:
@@ -195,13 +195,13 @@ The [sync flows](#flows) of the CoE Starter Kit sync your tenant resources to th
 
 ### Admin \| Sync Template v2
 
-The Admin \| Sync Template v2 flow runs on a weekly schedule, retrieves the environments in your tenant by using [List Environments as Admin](https://docs.microsoft.com/connectors/powerplatformforadmins/#list-environments-as-admin), and creates or updates a record for each environment in the Dataverse Environment entity.
+The Admin \| Sync Template v2 flow runs on a weekly schedule, retrieves the environments in your tenant by using [List Environments as Admin](https://docs.microsoft.com/connectors/powerplatformforadmins/#list-environments-as-admin), and creates or updates a record for each environment in the Dataverse Environment table.
 
 Running this flow will also trigger the rest of the sync flows indirectly by updating the environment records in the Dataverse instance.
 
 ### Admin \| Sync Template v2 (Apps)
 
-The Admin \| Sync Template v2 (Apps) flow runs when an environment is created or modified, and gets app information by using [Get Apps as Admin](https://docs.microsoft.com/connectors/powerappsforadmins/#get-apps-as-admin). This information is then created or updated in the PowerApps App entity.
+The Admin \| Sync Template v2 (Apps) flow runs when an environment is created or modified, and gets app information by using [Get Apps as Admin](https://docs.microsoft.com/connectors/powerappsforadmins/#get-apps-as-admin). This information is then created or updated in the PowerApps App table.
 
 ### Admin \| Sync Template v2 (Flows)
 
@@ -346,7 +346,7 @@ You can use this app to see who an app is shared with, what roles (editor or vie
 
 ![Use Power Platform Admin View to see who an app is shared with](media/coe-mda2.png "Use Power Platform Admin View to see who an app is shared with")
 
-You can use this app to see Microsoft Teams environments 
+You can use this app to see Microsoft Teams environments.
 
 ## Power BI report
 
