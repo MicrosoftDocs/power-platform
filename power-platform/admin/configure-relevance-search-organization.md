@@ -81,7 +81,7 @@ To enable the new Relevance Search experience:
 3.	Under **Search**, set **Use new search experience** to **On**.
 
    > [!div class="mx-imgBorder"] 
-   > ![New Relevance Search experience](media/admin-enable-search.png "New Relevance Search experience")
+   > ![New Relevance Search experience](media/admin-enable-search.jpg "New Relevance Search experience")
 
 4.	Select **Save**.
 
