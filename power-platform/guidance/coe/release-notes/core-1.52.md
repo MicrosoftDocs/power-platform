@@ -60,9 +60,9 @@ The Power Platform Admin View has been updated to show this information on the P
 
 ## Set App Permissions and Set Flow Permissions
 
-This version renames the Set New App Owner app to Set App Permissions, and introduces the capability to search by environment, by maker and by orphaned app. Additionally, it is now possible to change app owners, add new editors and viewers as well as remove app permissions with this app.
+This version renames the Set New App Owner app to Set App Permissions, and introduces the capability to search by environment, by maker, and by orphaned app. Additionally, it is now possible to change app owners, add new editors and viewers as well as remove app permissions with this app.
 
-This version also introduces a new Set Flow Permissions app that allows admins to search by environment, by maker and by orphaned flows and add new users to those flows.
+This version also introduces a new Set Flow Permissions app that allows admins to search by environment, by maker, and by orphaned flows and add new users to those flows.
 
 ## Admin | Sync Template v2 (Flow Action Details)
 
