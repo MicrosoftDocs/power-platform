@@ -73,7 +73,7 @@ You can customize the email sent out by the flow; by default, it will look like 
 
 Checks for apps that haven't been modified in the last six months (this time span is configurable) and asks the app owner (via flow approvals) whether the app can be archived.
 
-This flow starts the approval process and writes the approval task to the Archive Approval Common Data Service entity.
+This flow starts the approval process and writes the approval task to the Archive Approval Microsoft Dataverse entity.
 
 ![App Archive and Clean Up – Start Approval flow](media/coe58.png "App Archive and Clean Up – Start Approval flow")
 
@@ -89,7 +89,7 @@ On a scheduled interval, checks for approval responses created by the App Archiv
 
 Similar to the previous flow, but for flows rather than apps. This flow checks for flows that haven't been modified in the last six months (this time span is configurable) and asks the flow owner (via flow approvals) whether the flow can be archived.
 
-This flow starts the approval process and writes the approval task to the Archive Approval Common Data Service entity.
+This flow starts the approval process and writes the approval task to the Archive Approval Dataverse entity.
 
 ### Admin \| Flow Archive and Clean Up – Check Approval
 
@@ -107,7 +107,7 @@ This app is used in the [auditing process](example-processes.md) as a tool for u
 
 **Permission**: As soon as you're using the app auditing process, this app needs to be shared with your app makers. If you intend to use this process, modify the [Welcome email](setup-nurture-components.md) flow to add users to a security group, and then share this app with the security group.
 
-**Prerequisite**: This app uses Common Data Service; a Premium license is therefore required for each app user.
+**Prerequisite**: This app uses Dataverse; a Premium license is therefore required for each app user.
 
 #### Compliance Status
 

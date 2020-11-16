@@ -55,7 +55,7 @@ Once the Power Automate integration feature is enabled, the following privileges
 4. Select **Save**.
 
 > [!TIP]
-   >  The Power Automate menu only list flows that begin with the *When a record is selected* Common Data Service trigger and contain at least one trigger or action that references that entity.
+   >  The Power Automate menu only list flows that begin with the *When a record is selected* Microsoft Dataverse trigger and contain at least one trigger or action that references that entity.
    >  
  
 ### See also  

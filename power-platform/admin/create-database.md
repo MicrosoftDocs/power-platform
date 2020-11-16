@@ -1,6 +1,6 @@
 ---
-title: Add a Common Data Service database | Microsoft Docs
-description: Walkthrough of how to add a Common Data Service database.
+title: Add a Microsoft Dataverse database | Microsoft Docs
+description: Walkthrough of how to add a Microsoft Dataverse database.
 services: powerapps
 author: jimholtz
 ms.service: power-platform
@@ -16,11 +16,11 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Add a Common Data Service database
+# Add a Microsoft Dataverse database
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-You can create a database and build apps by using Common Data Service as a data store. You can either create your own custom entities or use the predefined entities. To create a database, you first need to either create an environment, or be assigned to an existing environment as an **Environment Admin**. In addition, you must be assigned the appropriate license. For information on purchasing a plan for using Common Data Service, see [Pricing info](pricing-billing-skus.md).
+You can create a database and build apps by using Dataverse as a data store. You can either create your own custom entities or use the predefined entities. To create a database, you first need to either create an environment, or be assigned to an existing environment as an **Environment Admin**. In addition, you must be assigned the appropriate license. For information on purchasing a plan for using Dataverse, see [Pricing info](pricing-billing-skus.md).
 
 There are various ways to add or create a database:
 
@@ -43,7 +43,7 @@ There are various ways to add or create a database:
 
    |Setting  |Description  |
    |---------|---------|
-   |Language     | The default language for this environment. More information: [Common Data Service language collations](language-collations.md)     |
+   |Language     | The default language for this environment. More information: [Dataverse language collations](language-collations.md)     |
    |Currency     | The base currency used for reporting.         |
    |Enable Dynamics 365 apps | Select **Yes** and make a selection to automatically deploy apps such as Dynamics 365 Sales and Dynamics 365 Customer Service. |
    |Deploy sample apps and data     | Select **Yes** to include sample apps and data. Sample data gives you something to experiment with as you learn. You must select **No** for **Enable Dynamics 365 apps** for this setting to appear.        |

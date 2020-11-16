@@ -44,12 +44,12 @@ search.app:
 3. On the **Company profile** page, your account country/region is listed under **Country or region**.  
   
 <a name="BKMK_Overview"></a>   
-## Common Data Service service overview  
+## Microsoft Dataverse service overview  
   
 ### Will multi-geo environments be available to customers in Canada?  
  Yes, multi-geo environments will be supported for Canada. Multi-geo environments are designed for companies with offices in multiple countries or regions who want to keep core customer data within those countries or regions. Availability of multi-geo environment support will be limited in the initial rollout to a fixed number of eligible customers. We'll continue to expand this capacity over time.  [Read more on how to create and edit multi-geo environments](https://docs.microsoft.com/dynamics365/admin/add-edit-multiregional-instances).  
   
-### Will the standard Common Data Service service level agreements be offered?  
+### Will the standard Dataverse service level agreements be offered?  
  Yes, the standard service level agreements (SLAs) will apply to the Canada regions, just as they do in our other regions around the world.  
   
 > [!NOTE]

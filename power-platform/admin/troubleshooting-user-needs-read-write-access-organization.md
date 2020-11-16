@@ -22,23 +22,23 @@ search.app:
 
 ## User access diagnostic tool in the Power Platform admin center
 
-Several factors influence user access in a Common Data Service environment. To help administrators with diagnosing user access to an environment and reasons for access or no access, the new “Run diagnostics” feature in the Power Platform admin center provides basic access diagnostics for individual users in the environment. The feature helps to detect potential causes to user sign-in and other issues and suggests potential mitigations. For more information, see: [Diagnose user access in an environment](diagnose-user-access.md).
+Several factors influence user access in a Microsoft Dataverse environment. To help administrators with diagnosing user access to an environment and reasons for access or no access, the new “Run diagnostics” feature in the Power Platform admin center provides basic access diagnostics for individual users in the environment. The feature helps to detect potential causes to user sign-in and other issues and suggests potential mitigations. For more information, see: [Diagnose user access in an environment](diagnose-user-access.md).
 
 ## User has no roles 
 
-When an error screen stating the user has no roles is encountered, a system administrator will need to assign roles to the user. Roles can be assigned directly to the user, or to a group team that the user is a part of. For information on how to assign Common Data Service security roles to a user, see: 
+When an error screen stating the user has no roles is encountered, a system administrator will need to assign roles to the user. Roles can be assigned directly to the user, or to a group team that the user is a part of. For information on how to assign Dataverse security roles to a user, see: 
 [Assign a security role to a user](create-users-assign-online-security-roles.md#assign-a-security-role-to-a-user)
 
 ## User does not have a license / user does not belong to the organization 
 
 1. Verify if a license has been assigned to the user and assign one if not already. See: [Add a license to a user account](create-users-assign-online-security-roles.md#add-a-license-to-a-user-account).
-2. Once a license is assigned, it may take some time for the license change to sync to the Common Data Service environment. To trigger a sync for this user, the system administrator for the environment can re-add the user to the environment. See: [Add users to an environment that has a Common Data Service database](add-users-to-environment.md#add-users-to-an-environment-that-has-a-common-data-service-database).
+2. Once a license is assigned, it may take some time for the license change to sync to the Dataverse environment. To trigger a sync for this user, the system administrator for the environment can re-add the user to the environment. See: [Add users to an environment that has a Dataverse database](add-users-to-environment.md#add-users-to-an-environment-that-has-a-dataverse-database). 
 
 ## User is not a member of the environment’s security group 
 
-1. As a system administrator of the environment, verify that the Common Data Service environment is associated with any Azure Active Directory group. See:  [Associate a security group with a Common Data Service environment](control-user-access.md#associate-a-security-group-with-a-common-data-service-environment).
+1. As a system administrator of the environment, verify that the Dataverse environment is associated with any Azure Active Directory group. See:  [Associate a security group with a Dataverse environment](control-user-access.md#associate-a-security-group-with-a-dataverse-environment). 
 2. Ensure the user with the access issue is a member of the group associated with the environment. See: [Create a security group and add members to the security group](control-user-access.md#create-a-security-group-and-add-members-to-the-security-group).
-3. Once user membership in the environment’s group is updated, it may take some time for the change to sync to the Common Data Service environment. To trigger a sync for this user, the system administrator for the environment can re-add the user to the environment. See: [Add users to an environment that has a Common Data Service database](add-users-to-environment.md#add-users-to-an-environment-that-has-a-common-data-service-database).
+3. Once user membership in the environment’s group is updated, it may take some time for the change to sync to the Dataverse environment. To trigger a sync for this user, the system administrator for the environment can re-add the user to the environment. See: [Add users to an environment that has a Dataverse database](add-users-to-environment.md#add-users-to-an-environment-that-has-a-dataverse-database). 
 
 ## User doesn’t have sufficient permissions 
 

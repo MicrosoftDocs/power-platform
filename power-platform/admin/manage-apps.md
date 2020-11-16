@@ -18,7 +18,9 @@ search.app:
 
 # Manage Dynamics 365 apps
 
-You can now use the Power Platform admin center to install, configure, and manage Dynamics 365 apps that run on Common Data Service. Apps in this topic refer to Dynamics 365 apps such as Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, and Dynamics 365 Marketing as well as apps purchased from Microsoft AppSource requiring any of these Dynamics 365 licenses.
+[!INCLUDE[cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
+You can now use the Power Platform admin center to install, configure, and manage Dynamics 365 apps that run on Microsoft Dataverse. Apps in this topic refer to Dynamics 365 apps such as Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, and Dynamics 365 Marketing as well as apps purchased from Microsoft AppSource requiring any of these Dynamics 365 licenses.
 
 > [!NOTE]
 > You can install and manage Dynamics 365 apps only in an environment that was created with a database and with Dynamics 365 apps enabled during the environment creation. A valid Dynamics 365 license is required to enable Dynamics 365 apps during the environment creation. More information: [Create an environment with a database](/power-platform/admin/create-environment#create-an-environment-with-a-database)
@@ -27,7 +29,7 @@ You can manage apps from either the [tenant level](#tenant-level-view-of-apps) o
 
 ## Tenant-level view of apps
 
-App management in the **Applications** tab of the Dynamics 365 admin center  is now done from the tenant-level view of apps in the Power Platform admin center. Follow these steps to see a list of all licensed Dynamics 365 apps for your tenant.
+App management in the **Applications** tab of the Dynamics 365 admin center is now done from the tenant-level view of apps in the Power Platform admin center. Follow these steps to see a list of all licensed Dynamics 365 apps for your tenant.
 
 |Legacy app management  | New app management  |
 |---------|---------|

@@ -20,8 +20,8 @@ search.app:
 # Solution layers
 
 Solution layering is implemented at a component level. Managed and
-unmanaged solutions exist at different layers within a Common Data Service
-environment. In Common Data Service, there are two distinct layers:
+unmanaged solutions exist at different layers within a Microsoft Dataverse
+environment. In Dataverse, there are two distinct layers:
 
 -   **Unmanaged layer** All imported unmanaged solutions and ad-hoc customizations
     exist at this layer. All unmanaged solutions share a single unmanaged layer.
@@ -97,7 +97,7 @@ environment might have multiple solutions installed or that other solutions migh
 installed in the future. Construct a solution that follows best practices so
 that your solution won't interfere with other solutions. More information: [Use segmented solutions](segmented-solutions-alm.md)
 
-The processes that Common Data Service uses to merge customizations emphasize
+The processes that Dataverse uses to merge customizations emphasize
 maintaining the functionality of the solution. Although every effort is made to
 preserve the presentation, some incompatibilities between customizations might
 require that the computed resolution change some presentation details in

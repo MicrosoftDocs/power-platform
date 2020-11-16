@@ -47,7 +47,7 @@ The visualizations highlight environments and makers that have the most resource
 
 ## Environments
 
-The **Environments** page shows you how many environments, environment makers, and Common Data Service instances you have.
+The **Environments** page shows you how many environments, environment makers, and Microsoft Dataverse instances you have.
 
 The graphs visualize:
 
@@ -119,7 +119,7 @@ The filters on this page are:
 
 - Connector tier (premium or standard)
 
-- Connector (Microsoft 365 Users, Common Data Service, Azure AD)
+- Connector (Microsoft 365 Users, Dataverse, Azure AD)
 
 The visuals then show you a list of all apps, flows, and makers using the tier or connector specified, in addition to the number of connections for the filters specified.
 

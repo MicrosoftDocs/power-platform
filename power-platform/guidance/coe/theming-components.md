@@ -48,7 +48,7 @@ The Theme Editor app allows designers to create and manage themes. A theme conta
 
 **Permission**: Share Theme Editor with your designers creating themes.
 
-**Prerequisite**: This app uses Common Data Service; a Premium license is therefore required for every app user.
+**Prerequisite**: This app uses Microsoft Dataverse; a Premium license is therefore required for every app user.
 
 >[!NOTE]
 > If you've recently enabled the use of [code components](setup-theming.md) in the environment, you might have to edit and republish Theme Editor to display the components correctly.
@@ -94,7 +94,7 @@ The Theme Gallery app can be used by app makers to browse existing themes and do
 
 **Permission**: Share the Theme Gallery with makers in your organization.
 
-**Prerequisite**: This app uses Common Data Service; a Premium license is therefore required for every app user.
+**Prerequisite**: This app uses Dataverse; a Premium license is therefore required for every app user.
 
 Makers can get an overview and browse available themes
 
