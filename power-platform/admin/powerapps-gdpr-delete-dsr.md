@@ -190,7 +190,7 @@ Get-AdminEnvironmentRoleAssignment -UserId $deleteDsrUserId | Remove-AdminEnviro
 > This function works only for environments that do not have an environment of a Dataverse database.
 
 ### For environments WITH a Dataverse database
-With the introduction of the Dataverse, if a database is created within the environment, these "role assignments" are stored as records within the environment of that database. Please refer to the following documentation on how to remove personal data from an environment of a database in Dataverse: Dataverse User personal data removal
+With the introduction of the Dataverse, if a database is created within the environment, these "role assignments" are stored as records within the environment of that database. Please refer to the following documentation on how to remove personal data from an environment of a database in Dataverse: Common Data Serviice User personal data removal
 
 ## Step 3: Delete or reassign all canvas apps owned by a user
 
