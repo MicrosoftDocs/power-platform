@@ -32,7 +32,7 @@ Watch how to use the core components solution.
 Here's a breakdown of the assets that form the core components:
 
 - **Catalog tenant resources**
-  - [Common Data Service entities](#entities): Environments, apps, flows, and more
+  - [Microsoft Dataverse entities](#entities): Environments, apps, flows, and more
   - [Admin | Sync Template v2 (flows)](#flows): All apps, flows, flow action details, custom connectors, connectors, model-driven apps, shared-with information, chatbots.
   - [Admin | Sync Audit Log (flow)](#flows)
   - [Power BI dashboard](#power-bi-report)
@@ -43,12 +43,12 @@ Here's a breakdown of the assets that form the core components:
 
 ## Entities
 
-The [sync flows](#flows) of the CoE Starter Kit sync your tenant resources to the following Common Data Service entities. All entities provide information about created by/on and modified by/on, in addition to resource-specific information.
+The [sync flows](#flows) of the CoE Starter Kit sync your tenant resources to the following Dataverse entities. All entities provide information about created by/on and modified by/on, in addition to resource-specific information.
 
 - **Environment** represents the Environment object, which contains apps, flows, and connectors. The following information is available for each environment:
   - Environment ID
   - Display name
-  - Common Data Service instance URL
+  - Dataverse instance URL
   - Created on
   - Environment maker (created by)
   - Region
@@ -189,15 +189,15 @@ The [sync flows](#flows) of the CoE Starter Kit sync your tenant resources to th
 - **Power Platform User SR**  Gives read-only access to the resources in the custom entities.
 
 > [!NOTE]
-> To easily explore and manage data stored in Common Data Service, we recommend that you install the [Microsoft Power Apps Office Add-in](https://appsource.microsoft.com/product/office/WA104380330?tab=Overview). More information: [Working with data in Common Data Service using the Excel Add-in!](https://powerapps.microsoft.com/blog/cds-for-apps-excel-importexport/)
+> To easily explore and manage data stored in Dataverse, we recommend that you install the [Microsoft Power Apps Office Add-in](https://appsource.microsoft.com/product/office/WA104380330?tab=Overview). More information: [Working with data in Dataverse using the Excel Add-in!](https://powerapps.microsoft.com/blog/cds-for-apps-excel-importexport/)
 
 ## Flows
 
 ### Admin \| Sync Template v2
 
-The Admin \| Sync Template v2 flow runs on a weekly schedule, retrieves the environments in your tenant by using [List Environments as Admin](https://docs.microsoft.com/connectors/powerplatformforadmins/#list-environments-as-admin), and creates or updates a record for each environment in the Common Data Service Environment entity.
+The Admin \| Sync Template v2 flow runs on a weekly schedule, retrieves the environments in your tenant by using [List Environments as Admin](https://docs.microsoft.com/connectors/powerplatformforadmins/#list-environments-as-admin), and creates or updates a record for each environment in the Dataverse Environment entity.
 
-Running this flow will also trigger the rest of the sync flows indirectly by updating the environment records in the Common Data Service instance.
+Running this flow will also trigger the rest of the sync flows indirectly by updating the environment records in the Dataverse instance.
 
 ### Admin \| Sync Template v2 (Apps)
 
@@ -224,11 +224,11 @@ The Admin \| Sync Template v2 (Custom Connector) flow runs when an environment i
 
 ### Admin \| Sync Template v2 (Model Driven Apps)
 
-The Admin \| Sync Template v2 (Model Driven Apps) flow runs when an environment is created or modified, and gets model-driven app information. This information is retrieved from underlying Common Data Service entities and requires the user running the flow to have system administrator privileges in the environment.
+The Admin \| Sync Template v2 (Model Driven Apps) flow runs when an environment is created or modified, and gets model-driven app information. This information is retrieved from underlying Dataverse entities and requires the user running the flow to have system administrator privileges in the environment.
 
 ### Admin \| Sync Template v2 (PVA)
 
-The Admin \| Sync Template v2 (PVA) flow runs when an environment is created or updated, and retrieves Power Virtual Agents (bot) information. This information is retrieved from underlying Common Data Service entities and requires the user running the flow to have system administrator privileges in the environment.
+The Admin \| Sync Template v2 (PVA) flow runs when an environment is created or updated, and retrieves Power Virtual Agents (bot) information. This information is retrieved from underlying Dataverse entities and requires the user running the flow to have system administrator privileges in the environment.
 
 Turning on this flow is optional, and we recommend that you do so only if you're using Power Virtual Agents in your tenant and are interested in getting a tenant-wide overview.
 
@@ -238,7 +238,7 @@ The Admin \| Sync Template v2 (Sync Flow Errors) flow runs on a schedule, and se
 
 ### Admin \| Sync Template v2 (RPA)
 
-The Admin \| Sync Template v2 (RPA) flow runs when an environment is created or updated, and retrieves UI flow information. This information is retrieved from underlying Common Data Service entities and requires the user running the flow to have system administrator privileges in the environment.
+The Admin \| Sync Template v2 (RPA) flow runs when an environment is created or updated, and retrieves UI flow information. This information is retrieved from underlying Dataverse entities and requires the user running the flow to have system administrator privileges in the environment.
 
 Turning on this flow is optional, and we recommend that you do so only if you're using UI flows in your tenant and are interested in getting a tenant-wide overview.
 
@@ -328,7 +328,7 @@ You can also use this app to find flows that have been orphaned by the owner's h
 
 ### Power Platform Admin View
 
-Power Platform Admin View is a model-driven app that provides an interface used to browse items in Common Data Service custom entities. It provides access to views and forms for the custom entities in the solution.
+Power Platform Admin View is a model-driven app that provides an interface used to browse items in Dataverse custom entities. It provides access to views and forms for the custom entities in the solution.
 
 Use this app to:
 
@@ -350,7 +350,7 @@ You can use this app to see Microsoft Teams environments
 
 ## Power BI report
 
-With Power BI reports, you can get a holistic view of Common Data Service data with visualizations and insights for Environment, PowerApps App, Flow, Connector, Connection Reference, Maker, and Audit Log entities.
+With Power BI reports, you can get a holistic view of Dataverse data with visualizations and insights for Environment, PowerApps App, Flow, Connector, Connection Reference, Maker, and Audit Log entities.
 
 Follow the [setup instructions](setup-powerbi.md) to set up the Power BI dashboard. More information: [Gain deep insights into your Microsoft Power Platform adoption with the CoE Power BI dashboard](power-bi.md)
 

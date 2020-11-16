@@ -17,7 +17,7 @@ search.app:
 ---
 # Manage sandbox environments
 
-A sandbox environment is any non-production environment of Common Data Service. Isolated from production, a sandbox environment is the place to safely develop and test application changes with low risk.
+A sandbox environment is any non-production environment of Microsoft Dataverse. Isolated from production, a sandbox environment is the place to safely develop and test application changes with low risk.
 
 ## View your sandbox environments  
 

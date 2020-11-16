@@ -102,7 +102,7 @@
           href: trial-environments.md     
         - name: Sandbox environment
           href: sandbox-environments.md
-        - name: Project Oakdale environment (Preview)
+        - name: Dataverse for Teams environment
           href: about-teams-environment.md
         - name: View apps in your environments 
           href: admin-view-apps.md
@@ -118,7 +118,7 @@
         items:
         - name: Power Platform 
           href: power-platform-settings.md
-        - name: Common Data Service settings
+        - name: Microsoft Dataverse settings
           href: admin-settings.md      
         - name: Environment database settings
           href: environment-database-settings.md     
@@ -220,6 +220,8 @@
             href: configure-server-based-authentication-sharepoint-on-premises.md
           - name: Document management settings
             href: enable-sharepoint-document-management-specific-entities.md
+          - name: Enable Teams Integration for model-driven apps
+            href: enable-teams-integration.md
           - name: Manage document suggestions
             href: enable-document-suggestions.md
           - name: OneDrive for business
@@ -358,6 +360,8 @@
           href: create-users-assign-online-security-roles.md
         - name: Use service admin roles to manage your tenant
           href: use-service-admin-role-manage-tenant.md
+        - name: Miscellaneous privileges
+          href: miscellaneous-privileges.md
         - name: Create or edit a security role
           href: create-edit-security-role.md
         - name: Copy a security role
@@ -382,7 +386,7 @@
         href: invite-users-azure-active-directory-b2b-collaboration.md    
     - name: Analytics
       items: 
-      - name: Common Data Service analytics 
+      - name: Dataverse analytics 
         href: analytics-common-data-service.md
       - name: Power Automate analytics
         href: analytics-flow.md
@@ -422,7 +426,7 @@
         href: dlp-activity-logging.md
       - name: Audit data and user activity for Dynamics 365 entities
         href: audit-data-user-activity.md
-      - name: Common Data Service and model-driven apps
+      - name: Dataverse and model-driven apps
         href: enable-use-comprehensive-auditing.md    
     - name: PowerShell support for Power Apps 
       items:
@@ -472,7 +476,7 @@
         href: wp-security.md     
       - name: Governance considerations
         href: governance-considerations.md
-      - name: Security concepts in Common Data Service
+      - name: Security concepts in Dataverse
         href: wp-security-cds.md
       - name: System and application users
         href: system-application-users.md
@@ -563,7 +567,7 @@
       items:
     - name: Data integration
       items:
-      - name: Integrate data into Common Data Service 
+      - name: Integrate data into Dataverse 
         href: data-integrator.md
       - name: Data Integrator Error management and troubleshooting 
         href: data-integrator-error-management.md
@@ -589,6 +593,8 @@
         href: detect-duplicate-data.md 
       - name: Detect duplicate records
         href: detect-duplicate-records.md
+      - name: Enable improved duplicate detection
+        href: enable-improved-duplicate-detection.md
       - name: Duplicate detection rules
         href: set-up-duplicate-detection-rules-keep-data-clean.md 
       - name: Turn duplicate detection rules on or off
@@ -759,7 +765,7 @@
       items:
       - name: System-generated logs 
         href: powerapps-gdpr-dsr-guide-systemlogs.md
-      - name: Data integrations for Common Data Service 
+      - name: Data integrations for Dataverse 
         href: data-integration-gdpr-dsr-guide.md
       - name: Power Apps customer data 
         items:
@@ -769,7 +775,7 @@
           href: powerapps-gdpr-export-dsr.md
         - name: Delete data 
           href: powerapps-gdpr-delete-dsr.md
-        - name: Common Data Service customer data 
+        - name: Dataverse customer data 
           href: common-data-service-gdpr-dsr-guide.md
     - name: Power Apps US Government
       href: powerapps-us-government.md

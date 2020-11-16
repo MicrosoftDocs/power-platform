@@ -1,5 +1,5 @@
 ---
-title: "Organize your solutions (Common Data Service) | Microsoft Docs" # Intent and product brand in a unique string of 43-59 chars including spaces
+title: "Organize your solutions (Microsoft Dataverse) | Microsoft Docs" # Intent and product brand in a unique string of 43-59 chars including spaces
 description: "This document lists down some strategies to organize your solutions" # 115-145 characters including spaces. This abstract displays in the search result.
 ms.custom: ""
 ms.date: 06/29/2020
@@ -20,7 +20,7 @@ search.app:
 
 Before you create solutions, take some time to plan ahead. For example, think about how many solutions you want to release and whether the solutions will share components.  
   
- Also, determine how many Common Data Service environments you’ll need to develop your line of solutions. You can use a single environment for most strategies described in this topic. However, if you decide to have only one environment and later realize that you need more, it can be challenging to change the solutions if people have already installed them. Using multiple environments, although introducing more complexity, can provide better flexibility.  
+ Also, determine how many Microsoft Dataverse environments you’ll need to develop your line of solutions. You can use a single environment for most strategies described in this topic. However, if you decide to have only one environment and later realize that you need more, it can be challenging to change the solutions if people have already installed them. Using multiple environments, although introducing more complexity, can provide better flexibility.  
   
 ## Strategies to organize your solutions
 

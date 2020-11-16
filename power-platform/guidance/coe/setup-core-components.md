@@ -6,7 +6,7 @@ manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/10/2020
+ms.date: 11/16/2020
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -18,6 +18,8 @@ search.app:
 ---
 
 # Set up core components
+
+[!INCLUDE[cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
 
 The Center of Excellence (CoE) core components solution provides components that you need to get started with setting up a CoE. They sync all your resources into entities and build admin apps on top of that to help you get more visibility into the apps, flows, and makers that exist in your environment. Additionally, apps like DLP Editor and Set App Permissions help with daily admin tasks.  
 
@@ -36,7 +38,7 @@ This is the first step of the installation process and is required for every oth
 
 1. Create an environment in which to set up the CoE.
 
-   1. Go to [aka.ms/ppac](https://admin.powerplatform.microsoft.com/).
+   1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
    1. Select **Environments** > **+ New**, and then enter a name, type, and purpose.
    1. Select **Yes** for creating the database, and then select **Next**.
    1. Leave **Sample apps and data** set to **No**
@@ -99,7 +101,7 @@ The import can take up to 10 minutes to be completed.
 
 ## Activate the sync template flows
 
-The flows with the prefix *Sync* are required for populating and cleaning up data in the Common Data Service entities (Environment, Power Apps App, Flow, Flow Action Detail, Connector, and Maker). The sync flows are used to write or delete data from the admin connectors to the Common Data Service entities. These flows run on a schedule.
+The flows with the prefix *Sync* are required for populating and cleaning up data in the Dataverse entities (Environment, Power Apps App, Flow, Flow Action Detail, Connector, and Maker). The sync flows are used to write or delete data from the admin connectors to the Dataverse entities. These flows run on a schedule.
 
 Note that the first run of these will be long running. See the [limitations information](/limitations.md#Long-running-flows) for more details.
 We will avoid issues by enabling the flows in an explicit order. We recommend you repeat this order on each upgrade as well.

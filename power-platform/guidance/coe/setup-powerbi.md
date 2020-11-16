@@ -30,7 +30,7 @@ You can get the CoE Power BI dashboard by downloading the Power BI file and conf
 
 ## Get the environment URL
 
-You need the environment URL of the Microsoft Power Platform environment the CoE Starter Kit is installed in. Power BI will connect to the Common Data Service entities in that environment.
+You need the environment URL of the Microsoft Power Platform environment the CoE Starter Kit is installed in. Power BI will connect to the Microsoft Dataverse entities in that environment.
 
 1. Go to the [Power Platform admin center](https://aka.ms/ppac).
 

@@ -107,7 +107,7 @@ When you first open the app catalog, you won't see any apps there. There's a fie
 
 **Permission**: As soon as you're using this process, you can share the app catalog with the entire organization.
 
-**Prerequisite**: This app uses Common Data Service; a Premium license is therefore required for every app user.
+**Prerequisite**: This app uses Microsoft Dataverse; a Premium license is therefore required for every app user.
 
 ![App Catalog](media/coe67.png "App Catalog")
 
@@ -128,7 +128,7 @@ If you're planning to run an internal Training in a Day event (such as App in a 
 
 **Permission**: Share with CoE admins or the owners of your internal training events.
 
-**Prerequisite**: This app uses Common Data Service; a Premium license is therefore required for the admins who are using it.
+**Prerequisite**: This app uses Dataverse; a Premium license is therefore required for the admins who are using it.
 
 ![Training in a Day Management app](media/coe69.png "Training in a Day Management app")
 
@@ -138,6 +138,6 @@ If you're planning to run a Training in a Day event, use this canvas app to enab
 
 **Permission**: As soon as you're running internal training events, share with everyone in the organization.
 
-**Prerequisite**: This app uses Common Data Service; a Premium license is therefore required for everyone in your org.
+**Prerequisite**: This app uses Dataverse; a Premium license is therefore required for everyone in your org.
 
 ![Training in a Day Registration app](media/coe70.png "Training in a Day Registration app")

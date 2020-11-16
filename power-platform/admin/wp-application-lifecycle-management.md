@@ -18,6 +18,8 @@ search.app:
 
 # Application lifecycle management
 
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 Application lifecycle management (ALM) is important as the applications your organization builds become more complex and as more of your company depends on their stability. In this topic we discuss using ALM to handle more complex scenarios.
 
 > [!NOTE]
@@ -41,18 +43,18 @@ ALM is not a one-size-fits-all concept. It can vary from organization to organiz
 
 Use the above ALM health check to measure where you are in your goal of having healthy ALM practices for your solutions.
 
-Next, let's look at some of the things you should consider as an administrator to help guide the application through its lifecycles from new to production and then ongoing maintenance and enhancements. For purposes of this section, application refers to the whole set of components from Power Apps canvas or model-driven apps, workflows, and any Common Data Service customizations.
+Next, let's look at some of the things you should consider as an administrator to help guide the application through its lifecycles from new to production and then ongoing maintenance and enhancements. For purposes of this section, application refers to the whole set of components from Power Apps canvas or model-driven apps, workflows, and any Microsoft Dataverse customizations.
 
 |New applications  |Existing applications being upgraded  |
 |---------|---------|
 |Who is the application owner, and who is involved in maintaining it?     | Are any new connectors being used by the application?        |
 |Who are the users of the apps? Are they already licensed?     | Is there any new reference data to update?        |
-|What environment did you build the app in?     | Are there any new canvas, Power Automate flows, or Common Data Service solutions added in this update?        |
+|What environment did you build the app in?     | Are there any new canvas, Power Automate flows, or Dataverse solutions added in this update?        |
 |Are there any Power Apps canvas or model-driven apps as part of the application?     | Any changes to how users are assigned security roles?        |
-|Are there any flows?     | Any impact on existing Common Data Service data?        |
+|Are there any flows?     | Any impact on existing Dataverse data?        |
 |What connectors are the apps using?     |Any changes in the required licenses?         |
 |Does anything require an on-premises gateway?     | Potentially any of the considerations from the New Application column, if it was not a consideration at the time.       |
-|Does the application use Common Data Service entities?     | Is any ALM automation needed?    |
+|Does the application use Dataverse entities?     | Is any ALM automation needed?    |
 |Is the application dependent on any other existing applications or external services?     |         |
 |Are there different security roles for different types of users?     |         |
 |Is there any existing data that must be migrated into the new production system?     |         |
@@ -79,8 +81,8 @@ Armed with the above information, consider each of the following as you get read
 Depending on the complexity of the application, anything from using a SharePoint List to track work and new features, and OneDrive to store exported assets, to a more complete solution like Visual Studio Team Services can help add some structure to your application life cycle process. What is appropriate for your organization depends on the size and maturity of the team that is building the overall application. The less technical will probably find a solution like OneDrive and SharePoint more approachable. Azure DevOps Services has several features that are tailored to support application lifecycle management. Azure DevOps Services is also free to get started. See [Azure DevOps](https://visualstudio.microsoft.com/team-services/). The following are some of those features:
 
 - Work item planning and tracking.
-- Version control. Offers a way to store exported assets. Using SDK tools like Solution Packager allows this to scale up to larger teams working on Common Data Service solution package customizations. For more details, review [SolutionPackager tool](https://docs.microsoft.com/powerapps/developer/common-data-service/compress-extract-solution-file-solutionpackager).
-- Build and release automation. This can be helpful for automating everything from exporting of Common Data Service solutions for backup, to compiling developer-built components. The release automation can take solutions and developer assets and coordinate deploying to test and production environments. These deployments can also leverage approval checkpoints as appropriate. Microsoft has released a preview of a Power Apps build tool that includes a number of Azure DevOps tasks for automating deployment of Common Data Service solutions. There are also community tools like [Xrm.CI.Framework](https://marketplace.visualstudio.com/items?itemName=WaelHamze.xrm-ci-framework-build-tasks) with which you can deploy Common Data Service solutions.
+- Version control. Offers a way to store exported assets. Using SDK tools like Solution Packager allows this to scale up to larger teams working on Dataverse solution package customizations. For more details, review [SolutionPackager tool](https://docs.microsoft.com/powerapps/developer/common-data-service/compress-extract-solution-file-solutionpackager).
+- Build and release automation. This can be helpful for automating everything from exporting of Dataverse solutions for backup, to compiling developer-built components. The release automation can take solutions and developer assets and coordinate deploying to test and production environments. These deployments can also leverage approval checkpoints as appropriate. Microsoft has released a preview of a Power Apps build tool that includes a number of Azure DevOps tasks for automating deployment of Dataverse solutions. There are also community tools like [Xrm.CI.Framework](https://marketplace.visualstudio.com/items?itemName=WaelHamze.xrm-ci-framework-build-tasks) with which you can deploy Dataverse solutions.
 
 The following is an example of the Team Status Dashboards that give the team an all-up view of their progress.
 
@@ -89,12 +91,12 @@ The following is an example of the Team Status Dashboards that give the team an 
 
 ## Exporting from the source environment
 
-We've covered the concept of exporting from Power Apps, Power Automate, and Common Data Service in other content. Let's look at additional considerations when exporting as part of an application lifecycle management process:
+We've covered the concept of exporting from Power Apps, Power Automate, and Dataverse in other content. Let's look at additional considerations when exporting as part of an application lifecycle management process:
 
-- Always save a copy of the exported Power Apps canvas app, Power Automate or Common Data Service solution file.
-- For Common Data Service solutions, if you are publishing a managed solution, make sure you also export an unmanaged solution. 
-- For Common Data Service solution export, you should always perform a publish on the solution or publish all for all solutions prior to export to ensure all changes are exported as expected. When possible, you should also run solution checker to ensure there are no problems.
-- For workflows and canvas apps, review the connectors that are used. Any custom connectors will need to be recreated prior to import in the target environment or must be included in the Common Data Service solution.
+- Always save a copy of the exported Power Apps canvas app, Power Automate or Dataverse solution file.
+- For Dataverse solutions, if you are publishing a managed solution, make sure you also export an unmanaged solution. 
+- For Dataverse solution export, you should always perform a publish on the solution or publish all for all solutions prior to export to ensure all changes are exported as expected. When possible, you should also run solution checker to ensure there are no problems.
+- For workflows and canvas apps, review the connectors that are used. Any custom connectors will need to be recreated prior to import in the target environment or must be included in the Dataverse solution.
 
 ## Importing into the target environment
 
@@ -102,10 +104,10 @@ We also covered import, but let's look at a few more things to consider:
 
 - Always evaluate what is already in the target environment.
 - Create any necessary custom connectors prior to import.
-- If you are importing a Common Data Service solution that is dependent on other Common Data Service solutions, make sure those are already imported into the Common Data Service environment.
-- If you import an unmanaged Common Data Service solution, make sure you publish all after import has completed.
+- If you are importing a Dataverse solution that is dependent on other Dataverse solutions, make sure those are already imported into the Dataverse environment.
+- If you import an unmanaged Dataverse solution, make sure you publish all after import has completed.
 - Remember, when you import an update to a Power Apps canvas application, you must publish the new version before others can see it.
-- If you are importing Common Data Service changes that remove any entities and data, consider a proactive on-demand backup prior to the import.
+- If you are importing Dataverse changes that remove any entities and data, consider a proactive on-demand backup prior to the import.
 
 ## Updating existing applications
 
@@ -121,7 +123,7 @@ The import feature, shown earlier, allows the maker to update an existing app in
 Once your application has been deployed you can mostly go into maintenance mode responding to user inquiries as needed. Here are a few things to consider while you are between updates:
 
 - Power Apps canvas applications need to be periodically republished for best performance and stability. About every six months you should republish your deployed Power Apps canvas applications even if they haven't changed. This ensures the application picks up the latest runtime changes in the environments.
-- Keep an eye on your Common Data Service environment storage usage as well as your API quotas and adjust resources and licensing as needed.
+- Keep an eye on your Dataverse environment storage usage as well as your API quotas and adjust resources and licensing as needed.
 
 ## Retiring and removing an application
 
@@ -129,15 +131,15 @@ As your organization evolves, it's likely one or more of the applications deploy
 
 - Confirm that any users understand the shutdown. Consider shutdown notifications in advance to ensure business continuity and minimize impact.
 - Removing access to the application components is often a good first step. Leaving it in this state for a period of time also helps to alert users and give them a chance to argue their case or save any data needed.
-- Deleting an environment will remove all associated Power Apps, workflows, and Common Data Service data. This is not the approach to take if you have multiple applications sharing the environment and you are retiring just a single application.
+- Deleting an environment will remove all associated Power Apps, workflows, and Dataverse data. This is not the approach to take if you have multiple applications sharing the environment and you are retiring just a single application.
 - When removing connections, you need to first consider the Power Apps canvas apps and workflows that might still be using them. This can be checked by looking at what is associated with the connection prior to deleting.
 - Custom connections are sometimes better to be left if they might be reused later because they would require extra effort to re-establish in the future.
-- To remove a Power Apps model-driven app depends on whether the Common Data Service solution containing it was installed as managed or unmanaged. If it was installed as unmanaged, you can delete the application module to remove it from users. Removing unmanaged Common Data Service solution components requires manually removing one item at a time from the environment. Removing the Common Data Service solution itself in this situation only removes the container and not the components. This is one of the key benefits of managed solutions—the ability to uninstall them as a unit.
-- If the solution installed is managed, you would uninstall/remove the Common Data Service solution containing it from the instance. When you remove the Common Data Service solution that contains that application, it's important to note that it also removes any other components and data as well. If you only want to remove the application, the best approach would be to remove the application in the development environment for that Common Data Service solution and then import the update using the Stage for Upgrade option on import. This will remove only that component, leaving all other components and data intact.
+- To remove a Power Apps model-driven app depends on whether the Dataverse solution containing it was installed as managed or unmanaged. If it was installed as unmanaged, you can delete the application module to remove it from users. Removing unmanaged Dataverse solution components requires manually removing one item at a time from the environment. Removing the Dataverse solution itself in this situation only removes the container and not the components. This is one of the key benefits of managed solutions—the ability to uninstall them as a unit.
+- If the solution installed is managed, you would uninstall/remove the Dataverse solution containing it from the instance. When you remove the Dataverse solution that contains that application, it's important to note that it also removes any other components and data as well. If you only want to remove the application, the best approach would be to remove the application in the development environment for that Dataverse solution and then import the update using the Stage for Upgrade option on import. This will remove only that component, leaving all other components and data intact.
 
 ## Moving reference data to another environment
 
-Applications often have data that is configuration, or reference data. This could be, for example, a list of territories, product lists, or other data that configures and makes the app work. Often components in the application take dependencies on the IDs of this data. The Configuration Migration Tool is designed to move this type of data from one Common Data Service environment to another. The key features of the tool allow you to:
+Applications often have data that is configuration, or reference data. This could be, for example, a list of territories, product lists, or other data that configures and makes the app work. Often components in the application take dependencies on the IDs of this data. The Configuration Migration Tool is designed to move this type of data from one Dataverse environment to another. The key features of the tool allow you to:
 
 - Select only the entities and fields for which you want to move data.
 - Maintain unique IDs of the records as they are moved.
@@ -151,13 +153,13 @@ The following image outlines the basic process for using the tool.
 > [!div class="mx-imgBorder"] 
 > ![Moving reference data](media/moving-reference-data.png "Moving reference data")
 
-The output from the tool is a .zip file containing the data and the schema file. The same tool can be used to import the data into the target Common Data Service environment. You can also package the data with a Solution Deployer package that we will discuss shortly, allowing it to be deployed alongside one or more Common Data Service solutions. There are also community tools like [Microsoft.Xrm.DevOps.Data](https://github.com/abvogel/Microsoft.Xrm.DevOps.Data) to manage, export, and import data packages by command line using PowerShell.
+The output from the tool is a .zip file containing the data and the schema file. The same tool can be used to import the data into the target Dataverse environment. You can also package the data with a Solution Deployer package that we will discuss shortly, allowing it to be deployed alongside one or more Dataverse solutions. There are also community tools like [Microsoft.Xrm.DevOps.Data](https://github.com/abvogel/Microsoft.Xrm.DevOps.Data) to manage, export, and import data packages by command line using PowerShell.
 
 More information: [Move configuration data across environments](https://docs.microsoft.com/power-platform/admin/manage-configuration-data)
 
 ## Using the Package Deployer
 
-So far, we've only talked about importing Common Data Service solutions manually via the user interface. The Package Deployer also works for Common Data Service solutions. The Package Deployer allows you to build a package that contains one or more Common Data Service solutions as well as one or more data files to import after the solutions are imported. 
+So far, we've only talked about importing Dataverse solutions manually via the user interface. The Package Deployer also works for Dataverse solutions. The Package Deployer allows you to build a package that contains one or more Dataverse solutions as well as one or more data files to import after the solutions are imported. 
 
 It is also possible for developers to build custom code that reacts to events from the package deployment process. This code can be used to handle updates to the target environment. Once the package is built, the package can be deployed interactively via the tool, or by command line using PowerShell. More information: [Create packages for the Package Deployer](https://docs.microsoft.com/powerapps/developer/common-data-service/package-deployer/create-packages-package-deployer)
 

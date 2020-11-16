@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/16/2020
+ms.date: 11/12/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -46,7 +46,7 @@ For other ways to access Dynamics 365 and Office apps, see [Quickly navigate wit
 In the future, the home for all of your business applications across Dynamics and the Power Platform will move to the apps page on [office.com](https://office.com/apps). This will help ensure that your end-users have a single spot to find all of their apps across the Microsoft ecosystem. Once the apps on the Dynamics home page have
 moved to [office.com](https://office.com/apps), we will provide a banner redirecting users to their new home.
 
-After October 1, 2020, when users navigate to https://home.dynamics.com, they will be redirected to https://www.office.com/apps with a deep link to their business applications.
+After April 1, 2021, when users navigate to https://home.dynamics.com, they will be redirected to https://www.office.com/apps with a deep link to their business applications.
 
 <a name="BKMK_directsignin"></a>   
 

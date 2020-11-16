@@ -21,35 +21,35 @@ search.app:
 
 ## About group teams
 
-Applies to Common Data Service
+Applies to Microsoft Dataverse
 
 An Azure Active Directory (Azure AD) *group* team. Similar to *owner* team, an Azure AD group team can own records and can have security roles assigned to the team. There are two *group* team types, and they correspond directly to the Azure AD group types – Security and Office. The *group* security role can be just for the team or for team member with User privileges [member's privilege inheritance](security-roles-privileges.md#team-members-privilege-inheritance). Team members are dynamically derived (added and removed) when they access the environment based on their Azure AD group membership. 
 
 ### Using Azure Active Directory groups to manage a user's app and data access 
 
-The administration of app and data access for Microsoft Common Data Service has been extended to allow administrators to use their organization's Azure Active Directory (Azure AD) groups to manage access rights for licensed Common Data Service users.
+The administration of app and data access for Microsoft Dataverse has been extended to allow administrators to use their organization's Azure Active Directory (Azure AD) groups to manage access rights for licensed Dataverse users.
 
 Both types of Azure AD groups—Office and Security—can be used to secure user-access rights. Using groups lets administrators assign a security role with its respective privileges to all the members of the group, instead of having to provide the access rights to an individual team member.
 
 Both types of Azure AD groups — Office and Security — with a Membership type *Assigned* can be used to secure user-access rights. Membership type *Dynamic User* and *Dynamic Device* is not supported. Using groups lets administrators assign a security role with its respective privileges to all the members of the group, instead of having to provide the access rights to an individual team member.
 
-The administrator can create Azure AD group teams that are associated to the Azure AD groups in each of the Common Data Service environments and assign a security role to these group teams. For each Azure AD group, the administrator can create group teams based on the Azure AD group membership types. The administrator can create separate group teams for owners, members, guests and members, and guests, and assign a respective security role to each of these teams.
+The administrator can create Azure AD group teams that are associated to the Azure AD groups in each of the Dataverse environments and assign a security role to these group teams. For each Azure AD group, the administrator can create group teams based on the Azure AD group membership types. The administrator can create separate group teams for owners, members, guests and members, and guests, and assign a respective security role to each of these teams.
 
 When members of these group teams access these environments, their access rights are automatically granted based on the group team's security role.
 
 #### Provision and deprovision users 
 
-Once the group team and its security role is established in an environment, user access to the environment is based on the user membership of the Azure AD groups. When a new user is created in the tenant, all the administrator needs to do is assign the user to the appropriate Azure AD group, and assign Common Data Service licenses. The user can immediately access the environment without the need to wait for the administrator to assign a security role.
+Once the group team and its security role is established in an environment, user access to the environment is based on the user membership of the Azure AD groups. When a new user is created in the tenant, all the administrator needs to do is assign the user to the appropriate Azure AD group, and assign Dataverse licenses. The user can immediately access the environment without the need to wait for the administrator to assign a security role.
 
 When users are deleted/disabled in Azure AD or removed from the Azure AD groups, they lose their group membership and won't be able to access the environment when they try to sign in.  
 
 #### Remove user access at run time 
 
-When a user is removed from the Azure AD groups by an administrator, the user is removed from the group team, and they lose their access rights the next time they access the environment. The memberships for the user's Azure AD groups and Common Data Service group teams are synchronized, and the user's access rights are dynamically derived at run time.
+When a user is removed from the Azure AD groups by an administrator, the user is removed from the group team, and they lose their access rights the next time they access the environment. The memberships for the user's Azure AD groups and Dataverse group teams are synchronized, and the user's access rights are dynamically derived at run time.
 
 #### Administer user security role 
 
-Administrators no longer have to wait for the user to sync to the environment and then to assign a security role to the user individually by using Azure AD group teams. Once a group team is established and created in an environment with a security role, any licensed Common Data Service users who are added to the Azure AD group can immediately access the environment. 
+Administrators no longer have to wait for the user to sync to the environment and then to assign a security role to the user individually by using Azure AD group teams. Once a group team is established and created in an environment with a security role, any licensed Dataverse users who are added to the Azure AD group can immediately access the environment. 
 
 #### Lock down user access to environments 
 
@@ -136,7 +136,7 @@ For more information, see [Assign a record to a user or team](https://docs.micro
 > - Membership Type cannot be changed after the group team is created.  If you need to update this field, you will need to delete the group team and create a new one.
 > - All existing group teams created prior to the new **Membership Type** field being added are automatically updated as **Members and guests**. There is no loss in functionality with these group teams as the default group team is mapped to the Azure AD Group **Members and guests** membership type. 
 > - If your environment has a security group, you will need to add the group team's Azure AD group as a member of that security group in order for the group team's users to be able to access the environment.
-> - The list of team members listed in each group team only displays the user members who have accessed the environment. This list doesn't show all the group members of the Azure AD group. The team member's privileges are derived dynamically at run-time when the team member accesses the application. The security role of the team is not assigned directly to the team member. Since team member's privileges are derived dynamically at run-time, the team member's Azure AD group memberships are cached upon the team member's log-in.  This means that any Azure AD group membership maintenance done on the team member in Azure AD will not be reflected until the next time the team member logs in or when the system refreshes the cache (after 8 hours of continuous log-in).
+> - **The list of team members listed in each group team only displays the user members who have accessed the environment.** This list doesn't show all the group members of the Azure AD group. The team member's privileges are derived dynamically at run-time when the team member accesses the application. The security role of the team is not assigned directly to the team member. Since team member's privileges are derived dynamically at run-time, the team member's Azure AD group memberships are cached upon the team member's log-in.  This means that any Azure AD group membership maintenance done on the team member in Azure AD will not be reflected until the next time the team member logs in or when the system refreshes the cache (after 8 hours of continuous log-in).
 > - Team members are maintained in each group team at run-time and the operation is done at the database level; therefore, the update to group team event is not available for plugin.
 > - You do not need to assign team members with an individual security role if your group team's security role has a [member's privilege inheritance](security-roles-privileges.md#team-members-privilege-inheritance) and the security role contains at least one privilege that has User level permission.
 

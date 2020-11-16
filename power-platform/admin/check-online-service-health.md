@@ -46,4 +46,4 @@ Select the **Message center** on your home dashboard (from the menu: **Health** 
    
 ### See also  
 [Get Help + Support](get-help-support.md) <br />
-[Common Data Service analytics](analytics-common-data-service.md)
+[Microsoft Dataverse analytics](analytics-common-data-service.md)

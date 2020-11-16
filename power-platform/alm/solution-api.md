@@ -1,6 +1,6 @@
 ---
 title: "Work with solutions using the SDK APIs | Microsoft Docs"
-description: "Learn about the APIs that are available to manage Common Data Service solutions."
+description: "Learn about the APIs that are available to manage Microsoft Dataverse solutions."
 keywords: 
 author: mikkelsen2000
 ms.author: pemikkel
@@ -114,7 +114,7 @@ contains.
 | **Field Label**        | **Description**          |
 |------------------------|-----------------------|
 | Display Name       | The name for the solution.   |
-| Name               | Common Data Service generates a unique name based on the **Display Name**. You can edit the unique name. The unique name must only contain alphanumeric characters or the underscore character.   |
+| Name               | Microsoft Dataverse generates a unique name based on the **Display Name**. You can edit the unique name. The unique name must only contain alphanumeric characters or the underscore character.   |
 | Publisher          | Use the **Publisher** lookup to associate the solution with a publisher.      |
 | Version            | Specify a version by using the following format: *major.minor.build.revision* (for example, 1.0.0.0.    |
 | Configuration Page | If you include an HTML Web resource in your solution, you can use this lookup to add it as your designated solution configuration page.    |

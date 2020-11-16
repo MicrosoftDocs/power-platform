@@ -18,7 +18,7 @@ search.app:
 ---
 # Use Power BI
 
-Power BI works with model-driven apps in Common Data Service to provide a self-service analytics solution. The Power BI service automatically refreshes the data displayed. With [!INCLUDE[pn_power_bi_desktop](../includes/pn-power-bi-desktop.md)] or [!INCLUDE[pn_MS_Excel_Full](../includes/pn-ms-excel-full.md)] Power Query for authoring reports and Power BI for sharing dashboards and refreshing data from model-driven apps or Dynamics 365 apps, such as Dynamics 365 Sales and Dynamics 365 Customer Service. Integrating Power BI with Common Data Service provides the personnel in your organization a powerful way to work with data.  
+Power BI works with model-driven apps in Microsoft Dataverse to provide a self-service analytics solution. The Power BI service automatically refreshes the data displayed. With [!INCLUDE[pn_power_bi_desktop](../includes/pn-power-bi-desktop.md)] or [!INCLUDE[pn_MS_Excel_Full](../includes/pn-ms-excel-full.md)] Power Query for authoring reports and Power BI for sharing dashboards and refreshing data from model-driven apps or Dynamics 365 apps, such as Dynamics 365 Sales and Dynamics 365 Customer Service. Integrating Power BI with Dataverse provides the personnel in your organization a powerful way to work with data.  
   
 ## Enable Power BI visualization embedding  
  Before users can embed Power BI visualizations on personal dashboards, the organization-wide setting must be enabled.  
@@ -45,6 +45,6 @@ To learn more about how to add Power BI dashboards to personal dashboards, see [
 
   
 ### See also  
-[Use Power BI with Common Data Service data](/powerapps/maker/common-data-service/use-powerbi-with-cds) 
+[Use Power BI with Dataverse data](/powerapps/maker/common-data-service/use-powerbi-with-cds) 
 
 
