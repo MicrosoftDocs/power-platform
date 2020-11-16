@@ -23,13 +23,13 @@ Composer is integrated into Power Virtual Agents to allow developers and busines
 - Adaptive dialogs
 - Language Generation (LG)
 - Regular expressions (RegEx)
-- Adaptive cards 
+- Adaptive Cards 
 
 Composer with Power Virtual Agents lets you access conversational memory and context, including the variables defined in Power Virtual Agents. 
 
 For example, you could create event-driven dynamic dialogs to handle interruptions, cancelations and context switching. You could also add Adaptive Cards to display interactive elements like images and videos, forms, and more in the bot. 
 
-Bot Framework Composer lets you use a variety of pre-built functions and expressions and define multiple variations of a phrase for the bot to select at random at runtime.
+Composer lets you use a variety of prebuilt functions and expressions and define multiple variations of a phrase for the bot to select at random at runtime.
 
 Custom dialogs added with Bot Framework Composer are deployed, hosted, and executed together with the rest of Power Virtual Agents bot content, and do not require any additional Azure hosting.
 
@@ -56,7 +56,7 @@ If you already have Composer installed, Power Virtual Agents will try to open yo
 
 
 
-If you don't have Bot Frameworker Installed installed, you can download it from the **download Composer** link. This link takes you to a **Download confirmation** window where you can also learn more about Composer.
+If you don't have Composer installed, you can download it from the **download Composer** link. This link takes you to a **Download confirmation** window where you can also learn more about Composer.
     
 ![Screenshot of the Power Virtual Agents Composer window indicating that Composer is not installed.](media/composer/composer-not-present.png)
     
@@ -99,7 +99,7 @@ There are few key guidelines to follow when using Composer to create your bot co
 
 - You can add new **Bot Framework triggers** of any kind to your **main (root) dialog**. However, the structure of **triggers** added to the **main (root) dialog** should be kept as simple as possible. **Send a response**, **Ask a question**, or any actions that contain **Language Generation** cannot be used in **triggers** added to **main (root) dialog**. Doing so will result in validation errors and prevent you from publishing your Composer content to Power Virtual Agents.
 
-- You can't use Regular Expression Recognizer (RegEx) in the **main (root) dialog**. Using Regular Expression Recognizer in the **main (root) dialog** will prevent you from publishing your Composer content to Power Virtual Agents. However, you can use Regular Expression Recognizer in any other dialogs in Composer.
+- You can't use the Regular expression recognizer (RegEx) in the **main (root) dialog**. Using the Regular expression recognizer in the **main (root) dialog** will prevent you from publishing your Composer content to Power Virtual Agents. However, you can use the Regular expression recognizer in any other Composer dialogs.
 
 ![Bot Framework Composer main (root) dialog trigger phrases](media/Composer_Guidelines/Gd_mainDialog_trigger.png)
 
@@ -109,7 +109,7 @@ There are few key guidelines to follow when using Composer to create your bot co
 
 ![Bot Framework Composer main (root) dialog empty](media/Composer_Guidelines/Gd_BotReponses_main.png)
 
-- On the **Bot Responses** tab, the **All** section should be empty (that is, the **Common.lg** file should be empty). Having any assets there will result in validation errors and prevent you from publishing your Composer content to Power Virtual Agents.
+- On the **Bot Responses** tab, the **All** section should be empty (that is, the **common.lg** file should be empty). Having any assets there will result in validation errors and prevent you from publishing your Composer content to Power Virtual Agents.
 
 ![Bot Framework Composer main (root) dialog with no assets](media/Composer_Guidelines/Gd_BotReponses_all.png)
 
@@ -176,7 +176,7 @@ Next, you will enhance the topic **Meal delivery options** to show the images of
 
 ![Power Virtual Agents Open Composer](media/Composer_Example1/E1_OpenComposer.png)
 
-Your Power Virtual Agents bot will open in a Bot Framework Composer project. You will see that Power Virtual Agents topics from your bot are uploaded into Composer but are not editable. **Recognizer Type** field is set to **Default Recognizer**, which is **Power Virtual Agents NLU**.
+Your Power Virtual Agents bot will open in a Bot Framework Composer project. You will see that Power Virtual Agents topics from your bot are uploaded into Composer but are not editable. The **Recognizer Type** field is set to **Default Recognizer**, which is **Power Virtual Agents NLU**.
 
 >[!TIP]
 >The **LUIS** service is not supported as a Recognizer for Power Virtual Agents in Composer. The **Default Recognizer** is set to **Power Virtual Agents NLU** instead. You do not need to have an additional subscription to use **Power Virtual Agents NLU** because it is included in your Power Virtual Agents license.
@@ -195,7 +195,7 @@ Go to the **Bot Responses** tab in Composer and open the **Meals** section. Sele
 
 ![Composer Bot Responses tab](media/Composer_Example1/E1_Meals_BotReponses_empty.png)
 
-In the code window, copy and paste the following text strings and image URLs that you will use in your Adaptive Card:
+In the code window, copy and paste the following LG templates that you will use in your Adaptive Card:
 ```JSON
 # Chicken()
 -Chicken
@@ -338,7 +338,7 @@ Go back to **Design View** in Composer and select the **Meals** dialog. Select *
 
 ![Composer Begin Dialog - add Send a response action](media/Composer_Example1/E1_Meals_AddResponse.png)
 
-For the new **Send a response** action, the **Language Generation** panel will open on the side in Composer. Add the following code to this window to show the Adaptive Card and pass a Power Virtual Agents global variable `user_city` as a parameter: 
+For the new **Send a response** action, the **Language Generation** panel will open on the side in Composer. Add the following expression to this window to show the Adaptive Card and pass a Power Virtual Agents global variable `user_city` as a parameter: 
 
 ```JSON
 - ${AdaptiveCardMeals(virtualagent.user_city)}
@@ -360,7 +360,7 @@ Go to the Power Virtual Agents **Topics** page to see your new Bot Framework con
 
 ![Power Virtual Agents Topics page - new Bot Framework dialog](media/Composer_Example1/E1_Meals_in_PVA_Topics.png)
 
-Open the **Meal delivery options** topic in **Authoring canvas** in Power Virtual Agents. Under a **Question** node, add a new **Go to another topic** node, and choose the Bot Framework dialog **Meals** from the list of available topics: 
+Open the **Meal delivery options** topic in **Authoring canvas** in Power Virtual Agents. Under the **Question** node, add a new **Go to another topic** node, and choose the Bot Framework dialog **Meals** from the list of available topics: 
 
 ![Power Virtual Agents - Authoring canvas](media/Composer_Example1/E1_MealsDelivery_redirect.png)
 
@@ -390,7 +390,7 @@ In your new **DailySpecials** dialog in Composer, go to **Manage properties** an
 
 ![Composer Create new Bot Framework dialog set property](media/Composer_Example2/E2_DailySpecials_set_a_property.png)
 
-Give this property the following name in Composer **Set a property** panel on the right:
+Give this property the following name in the **Set a property** panel on the right:
 
 ```JSON
 conversation.days_array
@@ -398,7 +398,7 @@ conversation.days_array
 In the **Value** field in the **Set a property** panel, change the type to **\[\]** to indicate that this property is going to be an array. Enter the following data into the **Value** field to create an array populated with days of the week:
 
 ```JSON
-["Sunday",  "Monday",  "Tuesday",   "Wednesday",  "Thursday",  "Friday",  "Saturday"]
+["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
 ```
 
 ![Composer Create property](media/Composer_Example2/E2_DailySpecials_setArray.png)
@@ -407,7 +407,7 @@ Next, go to **Bot Responses** tab in Composer and select **DailySpecials**. Sele
 
 ![Composer Bot Responses tab show code](media/Composer_Example2/E2_DialySpecials_BotReponse_initial.png)
 
-Add the following code into the **Bot Responses** tab for **DailySpecials** to create daily offers for all the days of the week:
+Add the following template to the **Bot Responses** tab for **DailySpecials** to create daily offers for all the days of the week:
 
 ```JSON
 # DailySpecials(day)
@@ -455,13 +455,13 @@ Set **Output format** to **index** to return the index of the selected option in
 
 ![Composer Design View - set up choice output property](media/Composer_Example2/E2_DailySpecials_input_variable.png)
 
-Next, scroll down the **Prompt with multi-choice** panel and set **List style** to **HeroCard** to display our options list vertically. 
+Next, scroll down the **Prompt with multi-choice** panel and set **List style** to **heroCard** to display our options list vertically. 
 Select **Write an expression** for the **Array of choices** field and set it to use the **conversation.days_array** property we created.
 
 ![Composer Design View - set up array of choices](media/Composer_Example2/E2_DailySpecials_array_multi_option.png)
 
 You have created a multi-choice option list that is based on **conversation.days_array** and stores the user selection into the **conversation.day_choice** property.
-You can use this **conversation.day_choice** property to display the daily special for the selected day. Add a **Send a response** action to your **DailySpecials** dialog under the **User Input** action and add the following code in the **Language Generation** panel on the right:
+You can use this **conversation.day_choice** property to display the daily special for the selected day. Add a **Send a response** action to your **DailySpecials** dialog under the **User Input** action and add the following expression in the **Language Generation** panel on the right:
 
 ```JSON
 - ${DailySpecials(conversation.day_choice)}
@@ -510,7 +510,7 @@ Make sure **Track between topics** is turned on, and test your new bot content b
 ![Power Virtual Agents Test pane](media/Composer_Example2/Example2._cropped.gif)
 
 ## Example 3 – Use Bing Search as a fallback in Power Virtual Agents 
-Open the Power Virtual Agents bot used in [Example 1](#example-1--show-an-adaptive-card-in-power-virtual-agents). 
+Open the Power Virtual Agents bot used in [Example 1](#example-1--show-an-adaptive-card-in-power-virtual-agents) and [Example 2](#example-2--display-a-multi-select-options-list-in-power-virtual-agents). 
 
 Go to the **Topics** page and select **Open in Bot Framework Composer (Preview)** to open Composer. 
 
@@ -572,7 +572,7 @@ Add this **Activity** to the same **Bot Responses** window in Composer:
 ![Composer Bot Responses - add Activity](media/Composer_Example3/E3_BingSearch_BotResponses_Activity.png)
 
 
-Go to the **Design** tab in Composer and select **BeginDialog** under the **BingSearch** dialog. Add the **Send a response** action and set the following entry in the **Language Generation** panel:
+Go to the **Design** tab in Composer and select **BeginDialog** under the **BingSearch** dialog. Add the **Send a response** action and add the following expression to the **Language Generation** panel:
 
 ```JSON
 -${AdaptiveCardBingSearch(turn.activity.text)}
@@ -588,11 +588,11 @@ Make sure the type of trigger is set to **Unknown Intent** and select **Submit**
 
 ![Composer - unknown intent](media/Composer_Example3/E3_BingSearch_createUnknownIntent.png)
 
-After **Unknown trigger** is created and open in **Design** view, select **Begin a new dialog** under **Dialog management menu**.
+After an **Unknown event trigger** is created and opened in the **Design** view, select **Begin a new dialog** under **Dialog management menu**.
 
 ![Composer Unknown Intent triger - Dialog management](media/Composer_Example3/E3_BingSearch_callDialog.png)
 
-In the **Begin a new dialog** panel on the right, select the dialog **BingSearch**.
+In the **Begin a new dialog** panel on the right, select the dialog named **BingSearch**.
 
 ![Composer Unknown Intent triger - call BingSearch dialog](media/Composer_Example3/E3_BingSearch_callBingSearch.png)
 
@@ -665,4 +665,3 @@ To learn more about developing in Bot Framework Composer, see these resources:
 - [Tutorial: Add cards and buttons to your bot](/composer/tutorial/tutorial-cards)
 - [Tutorial: Add language generation to your bot](/composer/tutorial/tutorial-language-generation)
 - [Bot Framework Composer on GitHub](https://github.com/Microsoft/BotFramework-Composer)
-
