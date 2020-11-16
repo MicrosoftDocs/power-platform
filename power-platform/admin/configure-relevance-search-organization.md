@@ -184,7 +184,17 @@ By default, some out-of-the-box system entities are included in Relevance Search
 
 To help Microsoft improve Relevance Search, you can share your organization’s Relevance Search queries in Dynamics 365 and Power Platform applications with Microsoft. This data will help Microsoft build, improve, and validate the Microsoft machine learning model for the Dynamics 365 Natural Language search query technology.
 
-Your organization’s queries and results are reviewed by people using secured computers in the United States. Aggregate data about queries and results are used by Microsoft engineers and data scientists to improve future search query results for all users worldwide. Your data remains your property. Your organization’s data will be stored within your tenant’s compliance boundary and is automatically deleted after 30 days. You can delete the data at any time by navigating to the Power Platform admin center and toggling **Improve Relevance Search** to **Off**. For more information, see Terms of Service in Power Platform admin center.
+Your organization’s queries and results are reviewed by people using secured computers in the United States. Aggregate data about queries and results are used by Microsoft engineers and data scientists to improve future search query results for all users worldwide. Your data remains your property. Your organization’s data will be stored within your tenant’s compliance boundary and is automatically deleted after 30 days. You can delete the data at any time by navigating to the Power Platform admin center and toggling **Improve Relevance Search results** to **Off**. For more information, see Terms of Service in Power Platform admin center.
+
+**Improve Relevance Search results** is off by default. To enable:
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+
+2. In the navigation pane, select **Environments**, select an environment, and then select **Settings**.
+
+3. Expand **Search**, and then set **Improve Relevance Search results** to **On**.
+
+4. Select **Save**.
 
 > [!div class="mx-imgBorder"] 
 > ![Improve Relevance Search results](media/improve-relevance-search-results.png "Improve Relevance Search results")
