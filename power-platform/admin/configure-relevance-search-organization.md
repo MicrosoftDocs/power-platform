@@ -85,7 +85,7 @@ To enable the new Relevance Search experience:
 
 4.	Select **Save**.
 
-For information on using the new Relevance Search experience, see [Use the new Relevance Search experience](https://docs.microsoft.com/en-us/powerapps/user/relevance-search#use-the-new-relevance-search-experience).
+For information on using the new Relevance Search experience, see [Use the new Relevance Search experience](https://docs.microsoft.com/powerapps/user/relevance-search#use-the-new-relevance-search-experience).
 
 > [!TIP]
 > We are addressing an issue that makes the feature **Use new search experience** not show up in environments that were created from another environment as a copy. Please try the following steps to mitigate the issue.
@@ -229,4 +229,4 @@ Your organization’s queries and results are reviewed by people using secured c
 
 ### See also  
  [Use relevance search to search for records](https://docs.microsoft.com/powerapps/user/relevance-search) <br />
- [Use the new Relevance Search experience](https://docs.microsoft.com/en-us/powerapps/user/relevance-search#use-the-new-relevance-search-experience)
+ [Use the new Relevance Search experience](https://docs.microsoft.com/powerapps/user/relevance-search#use-the-new-relevance-search-experience)
