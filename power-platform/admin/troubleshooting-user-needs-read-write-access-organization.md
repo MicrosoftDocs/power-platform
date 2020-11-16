@@ -68,12 +68,12 @@ You don't have sufficient permissions to access customer engagement apps (Dynami
 
 ## User is missing from environment despite meeting all requirements 
 
-In some cases, users are not automatically provisioned into Common Data Service environments. 
+In some cases, users are not automatically provisioned into Dataverse environments. 
 
 If a user meets all access requirements but is still missing from an environment, the user may fall into one of the following cases:
 
-1. Users with only Office licenses (with Common Data Service plan enabled) will not be pre-provisioned into Common Data Service environments.
-2. Owners of Azure AD groups that are associated with Common Data Service environments will not be pre-provisioned.
+1. Users with only Office licenses (with Common Data Service plan enabled) will not be pre-provisioned into Dataverse environments.
+2. Owners of Azure AD groups that are associated with Dataverse environments will not be pre-provisioned.
 3. Members of Azure AD groups that are part of a Group Team created for the Azure AD group will not be pre-provisioned.
 4. Users will not be pre-provisioned into Project Oakdale environments.
 
