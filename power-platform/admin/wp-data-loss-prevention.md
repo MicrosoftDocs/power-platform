@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/22/2020
+ms.date: 11/16/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -223,8 +223,7 @@ We are working to address the following known issues and limitations:
 1. Tenant-level policies created through the new UI enforce default grouping (typically non-business) on custom connectors. Currently there is no way to explicitly classify custom connectors in tenant-level policies or ignore them altogether. In order to manage custom connector settings explicitly using environment-level policies, exclude these environments from the tenant-level policies.
 2. Sorting by Created and Modified fields on Data Policy list view doesn’t work correctly.
 3. Three-way DLP policy creation isn't available through admin connectors. Also, the Power Platform for Admins connector always blocks LBI/Non-business group.
-4. If the default group is set as blocked, the list of connectors that can't be blocked won't apply when you use PowerShell to create DLP policies.
-5. Canvas apps assessment for DLP violations at launch time/runtime does not work as expected.
+4. Canvas apps assessment for DLP violations at launch time/runtime does not work as expected.
 
 ### See also
 
