@@ -7,7 +7,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/12/2020
+ms.date: 11/17/2020
 search.audienceType: 
   - admin
 search.app:
@@ -68,7 +68,7 @@ You don't have sufficient permissions to access customer engagement apps (Dynami
    
 ## User is missing from environment despite meeting all requirements 
 
-In some cases, users are not automatically provisioned into Common Data Service environments. 
+In some cases, users are not automatically provisioned into Dataverse environments. 
 
 If a user meets all access requirements but is still missing from an environment, the user may fall into one of the following cases:
 
@@ -76,7 +76,7 @@ If a user meets all access requirements but is still missing from an environment
 
 2. Team or group owners
 
-Although these users are not pre-provisioned, they can be added to environments through on-demand sync. Please see the section below for ways to add or refresh users on demand.
+Although these users are not pre-provisioned, they can be added to environments through on-demand sync. See the section below for ways to add or refresh users on demand.
 
 ## Adding or refreshing users on demand
 
@@ -84,14 +84,14 @@ As mentioned above, there are cases where users are not provisioned automaticall
 
 There are multiple ways to do this: 
 
-1. JIT user provisioning: When users access an environment url, access requirements are checked at the time of login and qualified users are added to the environment
+1. **JIT user provisioning**: When users access an environment URL, access requirements are checked at the time of sign-in and qualified users are added to the environment.
 
-2. User impersonation call: Impersonation call triggers a JIT sync for the user. Please see [How to impersonate a user](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/webapi/impersonate-another-user-web-api#how-to-impersonate-a-user)
+2. **User impersonation call**: Impersonation call triggers a JIT sync for the user. See [How to impersonate a user](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/impersonate-another-user-web-api#how-to-impersonate-a-user).
 
-3. AddUser in PPAC: Admins can add or refresh users in PPAC. Please see [Add users to an environment](add-users-to-environment.md)
+3. **Add users** in the Power Platform admin center: Admins can add or refresh users. See [Add users to an environment](add-users-to-environment.md)
 
-4. Powershell cmdlets: Please see [Powershell support for Power Apps](https://docs.microsoft.com/en-us/power-platform/admin/powerapps-powershell#power-apps-cmdlets-for-administrators)
+4. **Powershell cmdlets**: See [Powershell support for Power Apps](https://docs.microsoft.com/power-platform/admin/powerapps-powershell#power-apps-cmdlets-for-administrators).
 
-5. Connectors: Please see [Power Platform for Admins](https://docs.microsoft.com/en-us/connectors/powerplatformforadmins/#force-sync-user)
+5. **Connectors**: See [Power Platform for Admins](https://docs.microsoft.com/connectors/powerplatformforadmins/#force-sync-user).
 
-6. Power Automate template: Please see [Force Sync Azure Active Directory Group members to specified CDS instance](https://us.flow.microsoft.com/en-us/galleries/public/templates/6e4162ca7afc48479e3ad1caadc6c1e6/force-sync-azure-active-directory-group-members-to-specified-cds-instance/)
+6. **Power Automate template**: See [Force Sync Azure Active Directory Group members to specified CDS instance](https://us.flow.microsoft.com/galleries/public/templates/6e4162ca7afc48479e3ad1caadc6c1e6/force-sync-azure-active-directory-group-members-to-specified-cds-instance/).
