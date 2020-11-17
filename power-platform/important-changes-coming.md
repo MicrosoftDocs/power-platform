@@ -1,7 +1,7 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps"
 description: Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps 
-ms.date: 11/10/2020
+ms.date: 11/17/2020
 ms.topic: "article"
 ms.assetid: 994cc854-17f6-45d6-bc20-fcf1a3f2d6d6
 searchScope:
@@ -25,6 +25,10 @@ Administrators and IT professionals should use this information to prepare for f
 > "Deprecated" means we intend to remove the feature or capability from a future major release. The feature or capability will continue to work and is fully supported until it is officially removed. This deprecation
 notification can span a few years. After removal, the feature or capability will no longer work. We are notifying you now so you have sufficient time to plan and update your code before the feature or capability is removed.
 
+## Organization data download filters for mobile offline are deprecated. 
+
+Effective February 2021, **Organization data download filter** option that filters the data when you set up mobile offline are deprecated. We recommend that you start preparing your organization and move relevant data filters from **Organization data download filter** to the offline profile option, which lets you determine what data will be available when users work in offline mode. For more information, see [Create a mobile offline profile](https://docs.microsoft.com/dynamics365/mobile-app/preview-setup-mobile-offline#step-2-create-a-mobile-offline-profile-to-determine-what-data-will-be-available-while-offline). Once the old filter criteria has been moved to offline profile, you can clear or delete the filters set in **Organization data download filter**. 
+
 ## TLS RSA cipher suites are deprecated
 
 Effective October 30, 2020, the following cipher suites are being deprecated from our servers.
@@ -33,15 +37,15 @@ Effective October 30, 2020, the following cipher suites are being deprecated fro
 - "TLS_RSA_WITH_AES_256_CBC_SHA256”
 - "TLS_RSA_WITH_AES_128_CBC_SHA256”
 
-Cipher suites are used to encrypt messages to secure a network connection between clients/servers and other servers. We are removing the above list of cipher suites to comply with our current security protocols.   
+Cipher suites are used to encrypt messages to secure a network connection between clients/servers and other servers. We are removing the above list of cipher suites to comply with our current security protocols.
 
 Beginning March 1, 2021, customers can only use our [standard cipher suites](/power-platform/admin/onpremises-server-cipher-tls-requirements). This change impacts your clients and servers that communicate with our servers, for example, syncing emails from your Microsoft Exchange server, running outbound plug-ins, using native (local) clients to access our servers.
 
 Customers must upgrade their servers before March 1, 2021.  For more information about configuring TLS Cipher Suite order, see [Manage Transport Layer Security (TLS)](https://docs.microsoft.com/windows-server/security/tls/manage-tls).
 
-## Organization data download filters for mobile offline are deprecated. 
+## Document suggestions for all entities except case are deprecated
 
-Effective February 2021, **Organization data download filter** option that filters the data when you set up mobile offline are deprecated. We recommend that you start preparing your organization and move relevant data filters from **Organization data download filter** to the offline profile option, which lets you determine what data will be available when users work in offline mode. For more information, see [Create a mobile offline profile](https://docs.microsoft.com/dynamics365/mobile-app/preview-setup-mobile-offline#step-2-create-a-mobile-offline-profile-to-determine-what-data-will-be-available-while-offline). Once the old filter criteria has been moved to offline profile, you can clear or delete the filters set in **Organization data download filter**. 
+Effective October 20, 2020, the document suggestions feature has been deprecated for all entities, except the case entity. The case entity is available with Dynamics 365 Customer Service. More information: [Enable document suggestions to recommend related documents](admin/enable-document-suggestions.md) 
 
 ## Automatic record creation rules and SLA items in web client are deprecated
 
