@@ -573,7 +573,7 @@
         href: data-integrator-error-management.md
     - name: Data sources and gateway clusters
       items: 
-      - name: "Preview: About on-premises gateway"
+      - name: "About on-premises gateway"
         href: wp-onpremises-gateway.md
       - name: "Preview: On-premises data gateway management"
         href: onpremises-data-gateway-management.md
