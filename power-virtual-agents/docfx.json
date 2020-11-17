@@ -63,7 +63,7 @@
     },
     "fileMetadata": {
       "searchScope": {
-        "**.*": [ "Power Platform", "Power Virtual Agents" ]
+        "**.*": [ "Power Virtual Agents" ]
       }
     },
     "template": [],

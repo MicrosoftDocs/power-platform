@@ -19,7 +19,7 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](../configuration-security.md)
 > - [Power Virtual Agents app in Microsoft Teams](configuration-security-teams.md)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
+
 
 You can change who can access your bot, and what they can do, with the **Security** options available in Power Virtual Agents.
 

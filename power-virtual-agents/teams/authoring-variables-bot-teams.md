@@ -20,7 +20,7 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](../authoring-variables-bot.md)
 > - [Power Virtual Agents app in Microsoft Teams](authoring-variables-bot-teams.md)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
+
 
 [Variables](authoring-variables-teams.md) let you save responses from your customers. For example, you can save a customer's name in a variable called `UserName`. The bot can then address the customer by name as the conversation continues.
 

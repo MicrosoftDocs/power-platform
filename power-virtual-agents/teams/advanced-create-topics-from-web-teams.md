@@ -21,7 +21,7 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](../advanced-create-topics-from-web.md)
 > - [Power Virtual Agents app in Microsoft Teams](advanced-create-topics-from-web-teams.md)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
+
 
 You can import existing help text and automatically create topics for a chatbot, so you don't have to re-create lots of questions and answers.
 
