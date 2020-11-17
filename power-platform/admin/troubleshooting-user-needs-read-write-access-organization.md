@@ -31,7 +31,7 @@ When an error screen stating the user has no roles is encountered, a system admi
 
 ## User does not have a license / user does not belong to the organization 
 
-1. Verify if a license has been assigned to the user and assign one if not already. See: [Add a license to a user account].(create-users-assign-online-security-roles.md#add-a-license-to-a-user-account).
+1. Verify if a license has been assigned to the user and assign one if not already. See: [Add a license to a user account](create-users-assign-online-security-roles.md#add-a-license-to-a-user-account).
 2. Once a license is assigned, it may take some time for the license change to sync to the Dataverse environment. To trigger a sync for this user, the system administrator for the environment can re-add the user to the environment. See: [Add users to an environment that has a Dataverse database](add-users-to-environment.md#add-users-to-an-environment-that-has-a-dataverse-database). 
 
 ## User is not a member of the environment’s security group 
