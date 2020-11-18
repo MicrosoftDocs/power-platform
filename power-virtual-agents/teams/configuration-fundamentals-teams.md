@@ -20,7 +20,7 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](../configuration-fundamentals.md)
 > - [Power Virtual Agents app in Microsoft Teams](configuration-fundamentals-teams.md)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
+
 
 Power Virtual Agents has a number of advanced features that let you create a personalized look and feel to your bot, as well as give you more flexibility in what you users can ask your bot to do. 
 

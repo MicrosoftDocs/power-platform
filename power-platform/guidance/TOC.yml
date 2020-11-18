@@ -25,7 +25,7 @@
             href: adoption/capacity-and-licenses.md
           - name: Establish an environment strategy
             href: adoption/environment-strategy.md
-          - name: Manage Microsoft Dataverse for Teams environments 
+          - name: Manage Dataverse for Teams environments 
             href: adoption/dataverseforteams-strategy.md
       - name: Secure
         items: 

@@ -388,10 +388,14 @@
       items: 
       - name: Dataverse analytics 
         href: analytics-common-data-service.md
-      - name: Power Automate analytics
-        href: analytics-flow.md
       - name: Power Apps analytics
         href: analytics-powerapps.md
+      - name: Power Automate
+        items:
+        - name: Analytics for flows
+          href: analytics-flow.md
+        - name: Analytics for UI flows
+          href: analytics-ui-flow.md
     - name: Storage
       items: 
       - name: What's new for storage
@@ -573,7 +577,7 @@
         href: data-integrator-error-management.md
     - name: Data sources and gateway clusters
       items: 
-      - name: "Preview: About on-premises gateway"
+      - name: "About on-premises gateway"
         href: wp-onpremises-gateway.md
       - name: "Preview: On-premises data gateway management"
         href: onpremises-data-gateway-management.md

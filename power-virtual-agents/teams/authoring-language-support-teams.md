@@ -21,7 +21,6 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](../authoring-language-support.md)
 > - [Power Virtual Agents app in Microsoft Teams](authoring-language-support-teams.md)
 
-[!INCLUDE [](includes/cc-beta-prerelease-disclaimer-teams.md)]
 
 You can create chatbots in Power Virtual Agents in a number of languages. This means the bot will understand and respond in the language you specify.
 

@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/16/2020
+ms.date: 11/17/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -47,7 +47,6 @@ Relevance Search is available in customer engagement apps (Dynamics 365 Sales, D
 
 For more detailed comparison of the searches available in Microsoft Dataverse, see: [Compare search options in Dataverse](https://docs.microsoft.com/powerapps/user/search).
 
-
 ### Language support
 
 All searchable fields in Relevance Search  are processed in the language most closely matching the organization's base language, except Kazakh where all fields are processed using a basic, language-agnostic text processor.
@@ -65,6 +64,35 @@ To enable Relevance Search, do the following:
 3.	Under **Search**, set **Relevance Search** to **On**.
 
 4.	Select **Save**.
+
+## Enable the new Relevance Search experience
+
+The new search experience is available as a feature setting in the Power Platform admin Center. It combines the strength of Relevance Search as a service, with a user interface that is intuitive, familiar, and easy to use. When the Use new search experience setting is turned on, it will enable the new experience to all the apps in the environment.
+
+> [!NOTE]
+> The **Use new search experience feature** setting is only available for environments where Relevance Search is already turned on. For environments where Relevance Search has never been not turned on, the setting **Use new search experience** will not be shown and the new experience is turned on by default.
+
+To enable the new Relevance Search experience:
+
+1.	In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.
+
+2.	Select **Settings** > **Product** > **Features**.
+
+3.	Under **Search**, set **Use new search experience** to **On**.
+
+   > [!div class="mx-imgBorder"] 
+   > ![New Relevance Search experience](media/admin-enable-search.jpg "New Relevance Search experience")
+
+4.	Select **Save**.
+
+For information on using the new Relevance Search experience, see [Use the new Relevance Search experience](https://docs.microsoft.com/powerapps/user/relevance-search#use-the-new-relevance-search-experience).
+
+> [!TIP]
+> We are addressing an issue that makes the feature **Use new search experience** not show up in environments that were created from another environment as a copy. Please try the following steps to mitigate the issue.
+> 
+> 1. Turn **Relevance Search** off.
+> 2. Wait approximately 5 to 10 minutes.
+> 3. Turn **Relevance Search** on. 
 
 ## Select entities for Relevance Search  
  To configure Relevance Search, use the **Configure Relevance Search** selection on the task bar, as shown here.  
@@ -184,7 +212,7 @@ By default, some out-of-the-box system entities are included in Relevance Search
 
 To help Microsoft improve Relevance Search, you can share your organization’s Relevance Search queries in Dynamics 365 and Power Platform applications with Microsoft. This data will help Microsoft build, improve, and validate the Microsoft machine learning model for the Dynamics 365 Natural Language search query technology.
 
-Your organization’s queries and results are reviewed by people using secured computers in the United States. Aggregate data about queries and results are used by Microsoft engineers and data scientists to improve future search query results for all users worldwide. Your data remains your property. Your organization’s data will be stored within your tenant’s compliance boundary and is automatically deleted after 30 days. You can delete the data at any time by navigating to the Power Platform admin center and toggling **Improve Relevance Search results** to **Off**. For more information, see Terms of Service in Power Platform admin center.
+Your organization’s queries and results are reviewed by people using secured computers in the United States. Aggregate data about queries and results are used by Microsoft engineers and data scientists to improve future search query results for all users worldwide. Your data remains your property. Your organization’s data will be stored within your tenant’s compliance boundary and is automatically deleted after 30 days. You can delete the data at any time by navigating to the Power Platform admin center and toggling **Improve Relevance Search results** to **Off**. For more information, see **Terms of Service** in the Power Platform admin center.
 
 **Improve Relevance Search results** is off by default. To enable:
 
@@ -200,4 +228,5 @@ Your organization’s queries and results are reviewed by people using secured c
 4.	Select **Save**.
 
 ### See also  
- [Use relevance search to search for records](https://docs.microsoft.com/powerapps/user/relevance-search)
+ [Use relevance search to search for records](https://docs.microsoft.com/powerapps/user/relevance-search) <br />
+ [Use the new Relevance Search experience](https://docs.microsoft.com/powerapps/user/relevance-search#use-the-new-relevance-search-experience)
