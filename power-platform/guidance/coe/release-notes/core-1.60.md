@@ -23,9 +23,9 @@ search.app:
 
 Version 1.60 for the CoE Starter Kit Core Components is now available. This article describes the updates, including the new features and the fixes to existing functionality, included in this release. This version was first made available on August 14, 2020.
 
-## Entity changes
+## Table changes
 
-Entities **Chatbot, Flow and PowerApps Connector** have been updated to include fields that support the Compliance process of the [Governance Components](governance-1.21.md)
+Tables **Chatbot, Flow and PowerApps Connector** have been updated to include columns that support the Compliance process of the [Governance Components](governance-1.21.md)
 
 - Admin Requirement - Risk Assessment
 - Admin Requirement - Reviewed
@@ -40,12 +40,12 @@ The Power Platform Admin View has been updated to show new icons for Virtual Age
 
 The Flow, Connector and Chatbot main forms have been updated with an Audit tab to enable admins to validate maker requirements, and add admin requirements.
 
-The Flow, Connector and Chatbot entities have new Admin Review views, similar to the PowerApps App Admin Review view.
+The Flow, Connector and Chatbot tables have new Admin Review views, similar to the PowerApps App Admin Review view.
 
-Business Process Flows to manage the Audit process for Flow, Connector and Chatbot entities have been added.
+Business Process Flows to manage the Audit process for Flow, Connector and Chatbot tables have been added.
 
 ## Bug Fixes
 
-- Increase field lengths in Flow Resources entity for more robust handling
+- Increase field lengths in Flow Resources table for more robust handling
 - Sync Flows adjusted to short circuit when user doesn’t have permissions or the object of interest do not exist in the target environment.
-- CDS meta data stored in Environments entity and called from Sync Flows to reduce calls and reduce logic redundancy.
+- CDS meta data stored in Environments table and called from Sync Flows to reduce calls and reduce logic redundancy.

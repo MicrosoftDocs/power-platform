@@ -21,7 +21,7 @@ search.app:
 
 [!INCLUDE[cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
 
-The Center of Excellence (CoE) core components solution provides components that you need to get started with setting up a CoE. They sync all your resources into entities and build admin apps on top of that to help you get more visibility into the apps, flows, and makers that exist in your environment. Additionally, apps like DLP Editor and Set App Permissions help with daily admin tasks.  
+The Center of Excellence (CoE) core components solution provides components that you need to get started with setting up a CoE. They sync all your resources into tables and build admin apps on top of that to help you get more visibility into the apps, flows, and makers that exist in your environment. Additionally, apps like DLP Editor and Set App Permissions help with daily admin tasks.  
 
 The core components solution contains assets that are only relevant to admins.
 
@@ -54,12 +54,12 @@ This is the first step of the installation process and is required for every oth
 1. Create connections to all connectors used as part of the solution.
     1. Go to **Data** > **Connections**.
     1. Select **+ New Connection**.
-    1. Select **Common Data Service**.
-     ![Select the Common Data Service connector](media/msi-connection.png "Select the Common Data Service connector")
+    1. Select **Dataverse**.
+     ![Select the Datavsere connector](media/msi-connection.png "Select the Dataverse connector")
     1. Select **Create**.
     1. Complete the same steps for the following connectors:
-        - Common Data Service
-        - Common Data Service (current environment)
+        - Dataverse
+        - Dataverse (current environment)
         - Power Apps for Admins
         - Power Apps for Makers
         - Power Platform for Admins
@@ -69,6 +69,7 @@ This is the first step of the installation process and is required for every oth
         - Office 365 Outlook
         - Office 365 Groups
         - SharePoint
+        - Microsoft Teams
 
 1. On the left pane, select **Solutions**.
 
@@ -100,22 +101,27 @@ The import can take up to 10 minutes to be completed.
 
 ## Activate the sync template flows
 
-The flows with the prefix *Sync* are required for populating and cleaning up data in the Dataverse entities (Environment, Power Apps App, Flow, Flow Action Detail, Connector, and Maker). The sync flows are used to write or delete data from the admin connectors to the Dataverse entities. These flows run on a schedule.
+The flows with the prefix *Sync* are required for populating and cleaning up data in the Dataverse tables (Environment, Power Apps App, Flow, Flow Action Detail, Connector, and Maker). The sync flows are used to write or delete data from the admin connectors to the Dataverse tables. These flows run on a schedule.
 
-- Ensure that the **Status** of all **Admin \| Sync Template v2 (...)** flows is **On**.
+Note that the first run of these will be long running. See the [limitations information](/limitations.md#Long-running-flows) for more details.
+We will avoid issues by enabling the flows in an explicit order. We recommend you repeat this order on each upgrade as well.
 
-    ![Ensure that all flows are on](media/msi-run.PNG "Ensure that all flows are on")
+1) Turn on: CLEANUP - Admin \| Sync Template v2 (Check Deleted)
+1) Wait until it finishes before you turn on any other flows.
+1) Ensure the Sync Template flows are already turned on for the following object types:<br> Apps, Connectors, Custom Connectors, Flows, Model Driven Apps, PVA, RPA
+1) Turn on Admin \| Sync Template v2. When it completes, turn it back off.
+1) This will cause the flows for the objects listed in step 3 to run. Wait until all of these complete.
+1) Turn back on Admin \| Sync Template v2.
+1) Turn on the rest of the flows listed in the solution
 
-The sync flows will start after you import the solution; you don't need to run them manually.
+## Configure the CoE Settings table
 
-## Configure the CoE Settings entity
+This section explains how to enter data in the CoE Settings table. This table will hold a single row of information that contains your logo, brand colors, and so on, which different applications will reference.
 
-This section explains how to enter data in the CoE Settings entity. This entity will hold a single row of information that contains your logo, brand colors, and so on, which different applications will reference.
+The following assets depend on the CoE Settings table:
 
-The following assets depend on the CoE Settings entity:
-
-- **Canvas apps**: The optional branding details (logo, brand colors) in all canvas apps are pulled from this entity. Optional support and community channel links are also used.
-- **Optional flows**: The optional branding details and support channel links are used in communication flows. You'll also configure links to canvas apps in the settings. (The main flow that syncs data to the resource entities doesn't depend on this setting configuration.)
+- **Canvas apps**: The optional branding details (logo, brand colors) in all canvas apps are pulled from this table. Optional support and community channel links are also used.
+- **Optional flows**: The optional branding details and support channel links are used in communication flows. You'll also configure links to canvas apps in the settings. (The main flow that syncs data to the resource tables doesn't depend on this setting configuration.)
 <!--markdownlint-disable MD036-->
 **To configure CoE settings**
 
@@ -178,8 +184,8 @@ After the sync flows have finished running (depending on the number of environme
 
 Environment variables are used to store application and flow configuration data with data specific to your organization or environment.
 
->[!TIP]
->To view all environment variables in the environment, open the default solution for the environment and set the **Type** filter to **Environment variable**.
+>[!IMPORTANT]
+>To edit environment variables in the environment, open the default solution for the environment and set the **Type** filter to **Environment variable**.
 
 - Select a variable, and then configure its **Current Value**.
 
@@ -190,4 +196,4 @@ Environment variables are used to store application and flow configuration data 
     |Power Automate environment variable | For a US environment: <https://us.flow.microsoft.com/manage/environments/> <br>For an EMEA environment: <https://emea.flow.microsoft.com/manage/environments/> <br>For a GCC environment: <https://gov.flow.microsoft.us/manage/environments/> |
     |Admin eMail                         | Email address used in flows to send notifications to admins; this should be either your email address or a distribution list |
     |eMail Header Style                  | CSS style used to format emails that are sent to admins and makers. A default value is provided. [See the provided default value](code-samples/css/default-value-eMail-Header-Style.md). |
-    |Also Delete from CoE | When the Admin \| Sync Template v2 (Check Deleted) flow is run, this denotes whether you want the items deleted from CoE (Yes) or just marked as deleted (No, which is the default). |
+    |Also Delete from CoE | When the Admin \| Sync Template v2 (Check Deleted) flow is run, this denotes whether you want the items deleted from CoE (Yes, which is the default) or just marked as deleted (No). |

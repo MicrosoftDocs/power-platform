@@ -20,9 +20,9 @@ search.app:
 
 With the **Monitor** section of the Center of Excellence (CoE) Power BI dashboard, you can query basic inventory (environments, apps, flows, makers, connectors, and audit logs) to monitor usage across your entire tenant and within each environment. These reports also support drill-downs and filtering, for example by maker department/country/city, connector usage, or premium feature usage.
 
-## Overview – Power Apps and Power Automate
+## Overview
 
-The **Overview – Power Apps and Power Automate** page provides you with a tenant-wide overview of resources:
+The **Overview – Power Apps, Power Automate and Chatbots** page provides you with a tenant-wide overview of resources:
 
 - Total number of environments (and environments created this month)
 
@@ -33,15 +33,19 @@ The **Overview – Power Apps and Power Automate** page provides you with a tena
 - Total number of apps, app makers, and apps created this month
 
 - Total number of flows, flow makers, and flows created this month
+- Total number of bots, bot makers, and bots created this month
 
 The visualizations highlight environments and makers that have the most resources, and show a map of where your makers are based.
 
 :::row:::
    :::column span="":::
-      ![Overview Power Apps](media/pb2.png "Overview Power Apps")
+      ![Overview Power Apps](media/pb-2.png "Overview Power Apps")
    :::column-end:::
    :::column span="":::
-      ![Power Power Automate](media/pb3.png "Overview Power Automate")
+      ![Overview Power Automate](media/pb-3.png "Overview Power Automate")
+   :::column-end:::
+   :::column span="":::
+      ![Overview Chatbots](media/pb-4.png "Overview Chatbots")
    :::column-end:::
 :::row-end:::
 
@@ -61,7 +65,45 @@ The graphs visualize:
 
 The filters allow you to drill down and analyze specific environment types, maker trends, and changes over time through a filter on the **Environment Created** date.
 
-![Environments overview](media/pb4.png "Environments overview")
+![Environments overview](media/pb-5.png "Environments overview")
+
+## Microsoft Teams Environments
+
+The **Microsoft Teams Environments** page shows you the number of Microsoft Teams environments, environment makers, and resources in those environments you have
+
+The graphs visualize:
+
+- The environment creation trend
+
+- The number of resources per environment
+
+The tables of environments shows:
+
+- Environment Name
+- Link to the Environment in the Admin Center
+- Link to the connected Microsoft Teams
+- Owner
+- Latest App launch in the environment
+- Number of apps and flows
+- A red icon if no apps or flows exist in the environments
+- Created On date
+
+The table of apps shows:
+
+- App Name
+- Owner
+- Last Launched
+- Created On date
+- Modified On date
+
+>[!NOTE]
+> Last Launched information is only available if the [Audit Log](setup-auditlog.md) has been configured.
+>
+> Information about bots created via Power Virtual Agents in Microsoft Teams environments is currently not available in the CoE Starter Kit.
+
+The filters allow you to filter by Owner as well as Created date.
+
+![Microsoft Teams Environments overview](media/pb-6.png "Microsoft Teams Environments overview")
 
 ## Apps
 
@@ -81,7 +123,17 @@ On the graphs, you can see your app creation trend, your top active departments,
 
 Filters on this page can help you narrow down this view by app owner, app display name, environment, maker department, or connector used.
 
-![Apps overview](media/pb5.png "Apps overview")
+![Apps overview](media/pb-7.png "Apps overview")
+
+The hamburger menu on this page helps you navigate to other reports relevant to Power Apps.
+
+### SharePoint integration
+
+The **SharePoint integration** page provides an overview of apps created to customize SharePoint list or document library forms.
+
+Navigate directly to the SharePoint site and view how many connectors are being used in a customized form.
+
+![SharePoint integration](media/pb-23.png "SharePoint integration")
 
 ## Flows
 
@@ -99,7 +151,7 @@ Through visuals, you can see your flow creation trend, your top active departmen
 
 Filters on this page can help you narrow down this view by flow owner, flow display name, environment, maker department, or connector used.
 
-![Flow overview](media/pb6.png "Flow overview")
+![Flow overview](media/pb-9.png "Flow overview")
 
 ## Custom Connectors
 
@@ -109,7 +161,7 @@ Next to the total number of custom connectors and number of test connectors (tho
 
 Filters help you narrow down the view by connector creator, environment, or created date.
 
-![Custom Connector overview](media/pb9.png "Custom Connector overview")
+![Custom Connector overview](media/pb-14.png "Custom Connector overview")
 
 ## Connections
 
@@ -123,7 +175,7 @@ The filters on this page are:
 
 The visuals then show you a list of all apps, flows, and makers using the tier or connector specified, in addition to the number of connections for the filters specified.
 
-![Connections](media/pb8.png "Connections")
+![Connections](media/pb-11.png "Connections")
 
 ## Virtual Agents
 
@@ -141,7 +193,7 @@ Through visuals, you can see your bot creation trend, your top active department
 
 Filters on this page can help you narrow down this view by environment and by maker.
 
-![Power Virtual Agents](media/pb-pva.png "Power Virtual Agents")
+![Power Virtual Agents](media/pb-13.png "Power Virtual Agents")
 
 ## UI flows
 
@@ -157,7 +209,7 @@ Through visuals, you can see your flow creation trend, your top active departmen
 
 Filters on this page can help you narrow down this view by flow owner, flow display name, environment, maker department, or UI flow type.
 
-![UI flow overview](media/coe-ui1.png "UI flow overview")
+![UI flow overview](media/pb-12.png "UI flow overview")
 
 ### UI flows usage
 
@@ -169,7 +221,7 @@ The **UI flow usage** page provides an overview of UI=based RPA flow runs in you
 
 Filters on this page can help you narrow down this view by UI flow type, run status, maker, and environment.
 
-![UI flow usage](media/coe-ui2.png "UI flow usage")
+![UI flow usage](media/pb-17.png "UI flow usage")
 
 ### UI flows errors
 
@@ -181,4 +233,4 @@ The **UI flow errors** page provides an overview of UI-based RPA flow runs that 
 
 Filters on this page can help you narrow down this view by UI flow type, run status, maker, and environment.
 
-![UI flow errors](media/coe-ui3.png "UI flow errors")
+![UI flow errors](media/pb-18.png "UI flow errors")
