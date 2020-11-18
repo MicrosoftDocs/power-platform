@@ -2,7 +2,7 @@
 title: "Restrict cross-tenant access   | MicrosoftDocs"
 description: Restrict cross-tenant access  
 ms.custom: ""
-ms.date: 10/01/2020
+ms.date: 11/18/2020
 ms.reviewer: ""
 ms.service: power-platform
 ms.suite: ""
@@ -26,7 +26,7 @@ search.app:
 
 With tenant restrictions, organizations can control access to SaaS cloud applications, based on the Azure AD tenant the applications use for single sign-on. With tenant restrictions, organizations can specify the list of tenants that their users are permitted to access. Azure AD then only grants access to these permitted tenants using Azure AD-based tenant restriction. 
 
-Additionally, if organizations want to enforce tenant isolation for Power Platform connections, then they can use Power Platform’s tenant isolation capability. Note that the Power Platform tenant isolation feature does not impact Azure AD-based access outside of Power Apps and Power Automate. Power Platform tenant isolation only works for connectors using Azure AD-based authentication such as Office 365 Outlook or SharePoint. If you want to block connectors that use MSA authentication, you can [create a data loss prevention policy](create-dlp-policy.md) and classify the connector under the **Blocked** group.  
+Additionally, if organizations want to enforce tenant isolation for Power Platform connections, then they can use Power Platform’s tenant isolation capability. Note that the Power Platform tenant isolation feature does not impact Azure AD-based access outside of Power Apps and Power Automate. Power Platform tenant isolation only works for connectors using Azure AD-based authentication such as Office 365 Outlook or SharePoint. If you want to block connectors that use external identity providers such as Microsoft account, Google, etc., you can [create a data loss prevention policy](create-dlp-policy.md) and classify the connector under the **Blocked** group.  
 
 Power Platform tenant isolation ability is available with two options: one-way or two-way restriction.  
 
