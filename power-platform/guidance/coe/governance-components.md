@@ -64,7 +64,7 @@ Additionally, this flow also sends a welcome email to new team owners to provide
 
 Save a copy of this flow if you want to change the wording in the emails or adaptive cards.
 
-Learn more about the Microsoft Teams governance process in the CoE Starter Kit: [Microsoft Teams environment audit process](microsoftteams-governance.md)
+Learn more about the Microsoft Teams governance process in the CoE Starter Kit: [Microsoft Teams environment audit process](teams-governance.md)
 
 ## Microsoft Teams Admin | Weekly Clean Up of Microsoft Teams environments
 
@@ -83,7 +83,7 @@ Environments are deleted from the tenant, and marked as deleted in the Environme
 
 Save a copy of this flow if you want to change the make any changes to the criteria for when environments are deleted.
 
-Learn more about the Microsoft Teams governance process in the CoE Starter Kit: [Microsoft Teams environment audit process](microsoftteams-governance.md)
+Learn more about the Microsoft Teams governance process in the CoE Starter Kit: [Microsoft Teams environment audit process](teams-governance.md)
 
 ### Admin \| Compliance Detail Request
 
