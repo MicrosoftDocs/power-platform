@@ -26,7 +26,7 @@
           - name: Establish an environment strategy
             href: adoption/environment-strategy.md
           - name: Manage Dataverse for Teams environments 
-            href: adoption/dataverseforteams-strategy.md
+            href: adoption/teams-environment-strategy.md
       - name: Secure
         items: 
           - name: Establish DLP policies

@@ -31,7 +31,7 @@ In this section, we'll explore some best practices to follow when establishing a
 > * [Manage users](https://docs.microsoft.com/power-platform/admin/create-users-assign-online-security-roles)
 > * [Plan and manage license and capacity](capacity-and-licenses.md)
 > * [Establish an environment strategy](environment-strategy.md)
-> * [Manage Microsoft Dataverse for Teams environments](dataverseforteams-strategy.md)
+> * [Manage Microsoft Dataverse for Teams environments](teams-environment-strategy.md)
    :::column-end:::
    :::column span="":::
       <img src="media/i_protect.svg" alt="Secure icon" width="80"/><br><br>**Secure**
