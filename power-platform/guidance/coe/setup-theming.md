@@ -1,6 +1,6 @@
 ---
 title: "Set up the Power Apps theming solution | MicrosoftDocs"
-description: "The Power Apps theming solution contains a set apps, entities, custom controls and a component library.  The Theme editor app allows designers to create and manage themes."
+description: "The Power Apps theming solution contains a set apps, tables, custom controls and a component library.  The Theme editor app allows designers to create and manage themes."
 author: manuelap-msft
 manager: devkeydet
 ms.service: power-platform

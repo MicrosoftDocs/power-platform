@@ -22,13 +22,24 @@ There is no "one size fits all" solution for a Center of Excellence (CoE). Some 
 
 The following sections describe limitations for some components.
 
+## Long running flows
+
+There are some flows which crawl the tenant in order to do their work. Specifically, the inventory flows in Core solution and the start archival flows in Governance solution.
+
+To help ensure service levels, availability, and quality, there are entitlement limits to the number of requests users can make each day across Power Apps, Power Automate. Learn more: [Requests limits and allocations](https://docs.microsoft.com/power-platform/admin/api-request-limits-allocations)
+
+Larger tenants might require a per flow license in order for these flows to complete in a timely manner. [Power Automate License Pricing](https://flow.microsoft.com/pricing/)
+
+>[!TIP]
+>The first run of the Sync flows in the Core Solution will run long as it will do an update for every flow/app/etc in the tenant. Subsequent runs  will only update apps/flows/etc that have changed since the last run and so these will not require a per flow license for most tenants.
+
 ## Timeouts in the Admin | Sync Template V2
 
-The Common Data Service connector might experience some throttling limits if the tenant has a lot of resources. If you see 429 errors in the flow run history occurring in later runs, you can try the following resolution steps:
+The Dataverse connector might experience some throttling limits if the tenant has a lot of resources. If you see 429 errors in the flow run history occurring in later runs, you can try the following resolution steps:
 
 - **Configure the retry policy**
   1. Open **Admin \| Sync Template v2**, and then select **Edit**.
-  1. Expand the step **Get Environments and store them in the CoE Microsoft Dataverse Entity**.
+  1. Expand the step **Get Environments and store them in the CoE Table**.
   1. Expand the step **Apply to each Environment**
   1. Go to the **Settings** pane for each call to Dataverse, and configure the timeout/retry settings. The default count is set to **10** and the default interval is set to **PT10S** - increase the values incrementally here.
 
@@ -36,7 +47,7 @@ The Common Data Service connector might experience some throttling limits if the
 
 - **Configure (reduce) concurrency in Foreach loops to reduce simultaneous calls**
   1. Open **Admin \| Sync Template v2**, and then select **Edit**.
-  1. Expand the step **Get Environments and store them in the CoE Dataverse Entity**.
+  1. Expand the step **Get Environments and store them in the CoE Table**.
   1. Go to **Settings** for the **Apply to each Environment** step.
 
      ![Configure concurrency in Foreach](media/coe73.png "Configure concurrency in Foreach")
@@ -101,3 +112,12 @@ If you choose to use a security group to control access, users will have to be a
 ## Shared component library in the theming components solution
 
 The shared component library in the [theming components solution](theming-components.md) isn't editable. Make your own copy if you want to extend it.
+
+## Trial Licenses
+
+A Power Automate Per User license (amongst other license requirements) will be required to run the CoE Starter Kit flows, a trial license does not have sufficient [API call allowances](https://docs.microsoft.com/power-automate/limits-and-config#looping-and-debatching-limits) to run the CoE Starter Kit flows.
+For full list of license requirements see [Setup Pre-requisits](setup.md#prerequisites).
+
+## PIM (Privileged Identity Management)
+
+If your Power Platform admin role is managed via  **[PIM](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started)** ensure the Sync Flows of the Core Components solution are set up to complete during the time whilst your user is granted admin permission. If your user looses admin access during the run of the sync flows, you may end up with incomplete or incorrect data if you use PIM and your Power Platform Admin Role.

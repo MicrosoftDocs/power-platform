@@ -39,7 +39,7 @@ Here's a breakdown of the assets that form the nurture components solution:
 - Encourage adoption
   - [App Catalog (canvas app)](#apps)
 
-## Entities
+## Tables
 
 ### InADayAttendees
 
@@ -103,7 +103,7 @@ Sends a reminder email to an attendee of a Training in a Day event three days be
 
 A canvas app that helps give visibility to certain apps in the organization. Admins can choose which apps to highlight in the app catalog if the app meets admin requirements and is meant to be shared broadly.
 
-When you first open the app catalog, you won't see any apps there. There's a field on the Power Apps App entity called **In App Catalog**, which is a two-option set type field (Boolean). If the value is set to **Yes**, the app will show up in the catalog. To publish an app to the app catalog, follow the [app auditing process](example-processes.md) in the Power Platform Admin View app.
+When you first open the app catalog, you won't see any apps there. There's a field on the Power Apps App table called **In App Catalog**, which is a two-option set type field (Boolean). If the value is set to **Yes**, the app will show up in the catalog. To publish an app to the app catalog, follow the [app auditing process](example-processes.md) in the Power Platform Admin View app.
 
 **Permission**: As soon as you're using this process, you can share the app catalog with the entire organization.
 

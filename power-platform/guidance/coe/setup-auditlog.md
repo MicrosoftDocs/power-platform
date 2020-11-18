@@ -162,7 +162,7 @@ You should see a (200) status returned, which means the query was successful.
 
 ### Set up the Power Automate flow
 
-A Power Automate flow uses the custom connector, queries the audit log daily, and writes the Power Apps launch events to a Microsoft Dataverse entity, which is then used in the Power BI dashboard to report on sessions and unique users of an app.
+A Power Automate flow uses the custom connector, queries the audit log daily, and writes the Power Apps launch events to a Microsoft Dataverse table, which is then used in the Power BI dashboard to report on sessions and unique users of an app.
 
 1. Follow the instructions in [Set up core components](setup-core-components.md) to download the solution.
 1. Go to [make.powerapps.com](https://make.powerapps.com).
@@ -261,4 +261,4 @@ Keep in mind that after a user account has access to the audit logs, that user h
 
     1. If the flow isn't on yet, turn it on.
 
-    1. Run the flow to start syncing audit log data to the Dataverse entity.
+    1. Run the flow to start syncing audit log data to the Dataverse table.
