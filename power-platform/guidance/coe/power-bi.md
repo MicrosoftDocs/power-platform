@@ -34,8 +34,11 @@ The dashboard provides analytics and data for the following areas:
 
 Get ready to use the dashboard by installing the [core components of the CoE Starter Kit](setup-core-components.md) and configuring the Power BI dashboard by following the [dashboard setup instructions](setup-powerbi.md).
 
+>[!NOTE]
+>Screenshots are taken from a sample of the report that's [published as an app](https://docs.microsoft.com/power-bi/collaborate-share/service-create-distribute-apps). If you are working in Power BI Desktop or have published the report to a workspace, your navigation and view will be different.
+
 The first page of the dashboard provides an overview of all areas and their purpose, in addition to buttons to use to go to different sections and pages.
 
-![Power BI dashboard overview](media/pb1.png "Power BI dashboard overview")
+![Power BI dashboard overview](media/pb-1.png "Power BI dashboard overview")
 
 Within each section, you'll find [bookmarks](https://docs.microsoft.com/power-bi/desktop-bookmarks) at the top of each page to help you get to the information you're looking for.

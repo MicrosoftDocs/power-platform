@@ -41,6 +41,10 @@ The following are prerequisites for installing the CoE Starter Kit as it's inclu
 
 -  Power Apps Premium license (per app, per user) is required for using Microsoft Dataverse.
 
+-  Power Automate Premium license (per flow, per user) is required for using the sync flows.
+
+- A Microsoft Teams license is required for gathering information about your Microsoft Teams environments.
+ 
 -  Environment with a Dataverse instance, where the user installing the solution has the System Administrator security role.
 
 -  The environment must have a data loss prevention (DLP) policy that allows [Dataverse](https://docs.microsoft.com/connectors/commondataservice/), [Dataverse (current environment)](https://docs.microsoft.com/connectors/commondataserviceforapps/), [Office 365 Users](https://docs.microsoft.com/connectors/office365users/), [Power Platform for Admins](https://docs.microsoft.com/connectors/powerplatformforadmins/), [Power Automate Management](https://docs.microsoft.com/connectors/flowmanagement/), [Office 365 Outlook](https://docs.microsoft.com/connectors/office365/), [Power Apps for Admins](https://docs.microsoft.com/connectors/powerappsforadmins/), [Power Apps for Makers](https://docs.microsoft.com/connectors/powerappsforappmakers/), [SharePoint](https://docs.microsoft.com/connectors/sharepointonline/), [Azure Aciver Directory (Azure AD)](https://docs.microsoft.com/connectors/azuread/), [Power Automate for Admins](https://docs.microsoft.com/connectors/microsoftflowforadmins/), [RSS](https://docs.microsoft.com/connectors/rss/), [Office 365 Groups](https://docs.microsoft.com/connectors/office365groups/), [Approvals](https://docs.microsoft.com/connectors/approvals/) and HTTP to be used together. Those connectors must be in the business data&ndash;only bucket of the DLP policy for this environment. If you're using the [audit log](setup-auditlog.md) solution, the custom connector used to connect to the Microsoft 365 audit log also must be included in your business data&ndash;only bucket.
@@ -58,7 +62,7 @@ These are the requirements for using the solution:
 - For the core components solution, only the admins need a Power Apps Premium license. For the governance components solution, all makers require a Premium license. For the nurture components solution, everyone will require a Premium license.
 
 > [!NOTE]
->The Admin \| Sync Template flows crawl through all the resources stored in Microsoft Power Platform and make a copy of details in each resource (for example, apps and flows) to Dataverse (entity definitions are provided in this solution). All data displayed in most of the starter kit components must be in Dataverse, which means that the sync template must be configured for everything else to work. The sync flows run daily overnight. When you first set up the CoE Starter Kit, you can manually start the Admin \| Sync Template v2 flow, which will start the process of crawling and storing the information in Dataverse.
+>The Admin \| Sync Template flows crawl through all the resources stored in Microsoft Power Platform and make a copy of details in each resource (for example, apps and flows) to Dataverse (table definitions are provided in this solution). All data displayed in most of the starter kit components must be in Dataverse, which means that the sync template must be configured for everything else to work. The sync flows run daily overnight. When you first set up the CoE Starter Kit, you can manually start the Admin \| Sync Template v2 flow, which will start the process of crawling and storing the information in Dataverse.
 
 Set up the CoE Starter Kit by following these instructions:
 

@@ -23,7 +23,7 @@ search.app:
 
 Version 1.0.0.17 for the CoE Starter Kit Audit Log Components is now available. This article describes the updates, including the new features and the fixes to existing functionality, included in this release. This version was first made available on September 18, 2020.
 
-## Entity changes
+## Table changes
 
 Connection References have been added to the solution to support the new modern import solution experience. All flows have been updated to use connection references, rather than connections.
 

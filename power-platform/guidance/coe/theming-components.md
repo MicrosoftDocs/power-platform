@@ -1,6 +1,6 @@
 ---
 title: "Theming components | MicrosoftDocs"
-description: "The Power Apps theming solution contains a set apps, entities, custom controls and a component library.  The Theme editor app allows designers to create and manage themes."
+description: "The Power Apps theming solution contains a set apps, tables, custom controls and a component library.  The Theme editor app allows designers to create and manage themes."
 author: manuelap-msft
 manager: devkeydet
 ms.service: power-platform
@@ -30,7 +30,7 @@ Here's a breakdown of the assets that form the theming components solution:
 - [Theme Gallery app](#theme-gallery)
 - [Shared Component Library](#components)
 
-## Entities
+## Tables
 
 ### Theme
 
@@ -38,7 +38,7 @@ Represents a custom theme created with the [Theme Editor app](#apps).
 
 ### Style
 
-Represents the style properties corresponding to a theme created with the [Theme Editor app](#apps). Colors, borders, fonts are stored in this entity.
+Represents the style properties corresponding to a theme created with the [Theme Editor app](#apps). Colors, borders, fonts are stored in this table.
 
 ## Apps
 
