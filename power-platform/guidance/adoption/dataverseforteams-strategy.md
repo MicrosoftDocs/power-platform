@@ -6,7 +6,7 @@ manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/09/2020
+ms.date: 11/18/2020
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
