@@ -57,5 +57,6 @@ Make sure you have the System Administrator, System Customizer, Sales Manager, V
   
 ### See also  
  [Set up duplicate detection rules to keep your data clean](set-up-duplicate-detection-rules-keep-data-clean.md)   
+ [Enable the improved duplicate detection and merge experience](enable-improved-duplicate-detection.md)
  [Frequently asked questions about synchronizing records between customer engagement apps and Microsoft Outlook](frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook.md)   
  [Run bulk system jobs to detect duplicate records](run-bulk-system-jobs-detect-duplicate-records.md)
