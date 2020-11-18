@@ -388,10 +388,14 @@
       items: 
       - name: Dataverse analytics 
         href: analytics-common-data-service.md
-      - name: Power Automate analytics
-        href: analytics-flow.md
       - name: Power Apps analytics
         href: analytics-powerapps.md
+      - name: Power Automate
+        items:
+        - name: Analytics for flows
+          href: analytics-flow.md
+        - name: Analytics for UI flows
+          href: analytics-ui-flow.md
     - name: Storage
       items: 
       - name: What's new for storage

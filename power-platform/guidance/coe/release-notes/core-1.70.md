@@ -27,9 +27,9 @@ Version 1.70 for the CoE Starter Kit Core Components is now available. This arti
 
 Connection References have been added to the solution to support the new modern import solution experience. All flows have been updated to use connection references, rather than connections. The [setup instructions](../setup-core-components.md) have been updated to describe the new setup experience.
 
-## Entity changes
+## Table changes
 
-Entities **RPA** and **RPA Session** have been added to support inventory and analytics for Ui Flows.
+Tables **RPA** and **RPA Session** have been added to support inventory and analytics for Ui Flows.
 
 ## Power BI Dashboard
 

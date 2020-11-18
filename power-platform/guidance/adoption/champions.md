@@ -28,7 +28,7 @@ The out-of-the-box [Power Automate](https://docs.microsoft.com/power-platform/ad
 
 In addition to that, the dashboard part of the [CoE Starter Kit](https://aka.ms/coestarterkit) can give you a tenant-wide overview of makers in your environment, and what connectors they're using to create apps. You can see your top app and flow makers, what departments they are from, and identify trends over time.
 
-![CoE Starter Kit maker dashboard](../coe/media/pb7.png "CoE Starter Kit Maker Dashboard")
+![CoE Starter Kit maker dashboard](../coe/media/pb-10.png "CoE Starter Kit Maker Dashboard")
 
 You can see how many different connectors your makers are using and learn who is exploring different connectors. A great way to identify mature makers is looking at those who try out different connectors.
 
