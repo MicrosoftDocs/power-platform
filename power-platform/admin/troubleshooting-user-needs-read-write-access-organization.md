@@ -7,7 +7,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/17/2020
+ms.date: 11/18/2020
 search.audienceType: 
   - admin
 search.app:
@@ -72,9 +72,13 @@ In some cases, users are not automatically provisioned into Dataverse environmen
 
 If a user meets all access requirements but is still missing from an environment, the user may fall into one of the following cases:
 
-1. Users with Office licenses
+1. Users with only Office licenses (with Dataverse plan enabled) will not be pre-provisioned into Dataverse environments.
 
-2. Team or group owners
+2. Owners of Azure AD groups that are associated with Dataverse environments will not be pre-provisioned.
+
+3. Members of Azure AD groups that are part of a Group Team created for the Azure AD group will not be pre-provisioned. 
+
+4. Users will not be pre-provisioned into Microsoft Dataverse for Teams environments.
 
 Although these users are not pre-provisioned, they can be added to environments through on-demand sync. See the section below for ways to add or refresh users on demand.
 
