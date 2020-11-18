@@ -1,5 +1,5 @@
 ---
-title: "Example Microsoft Teams environment management| MicrosoftDocs"
+title: "Microsoft Dataverse for Teams environment management| MicrosoftDocs"
 description: "The Microsoft Teams environment management shows a sample process of managing Microsoft Teams environments with the Power Platform."
 author: manuelap-msft
 manager: devkeydet
@@ -26,7 +26,7 @@ Leverage our philosophy of using Microsoft Power Platform to manage Microsoft Po
 
 **Solution:** Reactive governance and monitoring abilities are configured to provide Team owners the ability to provide a business justification, and to provide Central IT with the ability to approve or reject the business justification as well as run regular automated cleanup flows.
 
-## Business Justification process
+## Business justification process
 
 Here is that process from the point of view of the people involved and the components they interact with.
 
@@ -60,7 +60,7 @@ A weekly cleanup deletes environments that
 - have been created more than **90 days** ago and have no apps or flows in the environment
 
 > [!NOTE]
-> Currently, bots created via Power Virtual Agents in Microsoft Teams environments are not discoverable in the CoE Starter Kit.
+> Currently, bots created using Power Virtual Agents in Microsoft Teams environments are not discoverable in the CoE Starter Kit.
 
 An admin can customize the conditions for deletion by creating their own copy of the flow and modifying it:
 
