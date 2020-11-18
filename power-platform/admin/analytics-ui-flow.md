@@ -21,7 +21,7 @@ search.audienceType:
   - flowadmin
 ---
 
-# View UI flows analytics in the Power Platform admin center
+# View analytics for UI flows
 
 As an admin, you will need to view the overall status of automation that runs in your organization. There are two options to monitor the analytics for automation that's built with UI flows:
 
