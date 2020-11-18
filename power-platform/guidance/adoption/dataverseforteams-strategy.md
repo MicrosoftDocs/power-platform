@@ -47,7 +47,7 @@ The [CoE Starter Kit](https://aka.ms/coestarterkit) provides a set of templates 
 
 Dedicated Dataverse for Teams environments will be used for appropriate business use cases. Additionally, admins can choose to set up public Teams teams that are already backed by Dataverse for Teams environments where test or trial users can be directed to. A public Teams will ensure that the tenant capacity limits are applied to appropriate business use cases while still allowing individual users to test the new capabilities.  
 
-## Monitor Dataverse in Teams Capacity and Usage
+## Monitor Dataverse in Teams capacity and usage
 
 Admins can use Power Apps and Power Automate Analytics reports in Power Platform Admin Center to view usage, performance, and errors related to Dataverse for Teams environments.
 
@@ -58,7 +58,7 @@ Admins can monitor capacity usage for Teams environments using dedicated [capaci
 A dashboard in the CoE Starter Kit further identifies the usage of Dataverse for Teams environments, as well as inactive environments with no apps or flows.
 ![A dashboard in the CoE Starter Kit further identifies the usage of Dataverse for Teams environments.](media/teams-3.png "A dashboard in the CoE Starter Kit further identifies the usage of Dataverse for Teams environments.")
 
-## Set up Data Loss Prevention policies
+## Set up data loss prevention policies
 
 Manage the data governance policies for newly created Dataverse for Teams environments by selecting one of these approaches:
 
@@ -68,7 +68,7 @@ Manage the data governance policies for newly created Dataverse for Teams enviro
 
 Learn more: [Best Practices for establishing a DLP Strategy](https://docs.microsoft.com/power-platform/guidance/adoption/dlp-strategy)
 
-## Use Teams Admin Center Controls
+## Use Teams Admin Center controls
 
 Global or Teams admins can use Teams app controls through Teams admin center to enable/disable Power Platform features within Teams. App controls are supported at an individual user level through Teams app permission policies and at tenant level through Teams manage apps settings.
 
