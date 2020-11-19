@@ -22,6 +22,11 @@ A [cipher suite](https://docs.microsoft.com/windows/win32/secauthn/cipher-suites
 
 Before a secure connection is established, the protocol and cipher are negotiated between server and client based on availability on both sides. 
 
+You can use your on-premises/local servers to integrate with the following Dataverse services:
+1. Syncing emails from your Exchange server.
+2. Running Outbound plug-ins.
+3. Running native/local clients to access your Dataverse environments.
+
 To comply with our security policy for a secure connection, your server must have the following: 
 
 1. Transport Layer Security (TLS) 1.2 (or higher) compliance
@@ -32,7 +37,14 @@ To comply with our security policy for a secure connection, your server must hav
    TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 <br />
    TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384 
 
+> [!IMPORTANT]
+> Older TLS 1.0 & 1.1 and cipher suites, eg TLS_RSA have been deprecated; see the [announcement](https://docs.microsoft.com/power-platform/important-changes-coming#tls-rsa-cipher-suites-are-deprecated).<p/>
+Your servers must have the above security protocol to continue running the Dataverse services.
+
 You may either upgrade the [Windows version](https://docs.microsoft.com/windows/win32/secauthn/cipher-suites-in-schannel) or update the [Windows TLS registry](https://docs.microsoft.com/windows-server/security/tls/tls-registry-settings) to make sure that you server end-point supports one of these ciphers.
+
+To verify that your server complies with the security protocol, you can perform a test using a TLS cipher and scanner tool, eg [SSLLABS](https://www.ssllabs.com/ssltest/analyze.html).
+
 
 ### See also
 [Connect to Exchange Server (on-premises)](connect-exchange-server-on-premises.md) <br />
