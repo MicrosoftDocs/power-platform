@@ -7,7 +7,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/07/2020
+ms.date: 11/19/2020
 search.audienceType: 
   - admin
 search.app:
@@ -38,12 +38,13 @@ To comply with our security policy for a secure connection, your server must hav
    TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384 
 
 > [!IMPORTANT]
-> Older TLS 1.0 & 1.1 and cipher suites, eg TLS_RSA have been deprecated; see the [announcement](https://docs.microsoft.com/power-platform/important-changes-coming#tls-rsa-cipher-suites-are-deprecated).<p/>
-Your servers must have the above security protocol to continue running the Dataverse services.
+> Older TLS 1.0 & 1.1 and cipher suites, (for example TLS_RSA) have been deprecated; see the [announcement](https://docs.microsoft.com/power-platform/important-changes-coming#tls-rsa-cipher-suites-are-deprecated).
+> 
+> Your servers must have the above security protocol to continue running the Dataverse services.
 
-You may either upgrade the [Windows version](https://docs.microsoft.com/windows/win32/secauthn/cipher-suites-in-schannel) or update the [Windows TLS registry](https://docs.microsoft.com/windows-server/security/tls/tls-registry-settings) to make sure that you server end-point supports one of these ciphers.
+You may either upgrade the [Windows version](https://docs.microsoft.com/windows/win32/secauthn/cipher-suites-in-schannel) or update the [Windows TLS registry](https://docs.microsoft.com/windows-server/security/tls/tls-registry-settings) to make sure that your server endpoint supports one of these ciphers.
 
-To verify that your server complies with the security protocol, you can perform a test using a TLS cipher and scanner tool, eg [SSLLABS](https://www.ssllabs.com/ssltest/analyze.html).
+To verify that your server complies with the security protocol, you can perform a test using a TLS cipher and scanner tool, for example [SSLLABS](https://www.ssllabs.com/ssltest/analyze.html).
 
 
 ### See also
