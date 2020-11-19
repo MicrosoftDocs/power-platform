@@ -18,7 +18,7 @@ search.app:
 ---
 # Microsoft Dataverse for Teams environment management
 
-Leverage our philosophy of using Microsoft Power Platform to manage Microsoft Power Platform by building automation to send welcome emails to owners of new Dataverse for Teams environments and requesting business justification for the newly created environments. This ensures that central IT teams can effectively engage with the new makers onboarding the platform, and ensure that Dataverse for Teams capacity is leveraged effectively in your tenant and distributed to the most effective business use cases. Similar workflows can be used to apply specific DLP policies to Dataverse for Teams environments as needed and to invoke clean-up of unused assets that can be repurposed for more compelling scenarios in the tenant.
+Leverage our philosophy of using Microsoft Power Platform to manage Microsoft Power Platform by building automation to send welcome emails to owners of new [Dataverse for Teams environments](/power-platform/admin/about-teams-environment) and requesting business justification for the newly created environments. This ensures that central IT teams can effectively engage with the new makers onboarding the platform, and ensure that Dataverse for Teams capacity is leveraged effectively in your tenant and distributed to the most effective business use cases. Similar workflows can be used to apply specific DLP policies to Dataverse for Teams environments as needed and to invoke clean-up of unused assets that can be repurposed for more compelling scenarios in the tenant.
 
 ## Process description
 
@@ -88,3 +88,6 @@ The filters allow you to drill down and analyze trends by filtering on the creat
 A link to both the Environment page in the Admin Center, as well as the Teams itself is available and allows the admin to get further information about this environment.
 
 ![Microsoft Teams environment dashboard](media/pb-6.png "Microsoft Teams environment dashboard")
+
+### See also
+[What is Dataverse for Teams?](/powerapps/teams/overview-data-platform)
