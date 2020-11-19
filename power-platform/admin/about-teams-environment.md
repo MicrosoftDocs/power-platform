@@ -110,27 +110,27 @@ There is a difference in the model for user addition to environment, between Dat
 <tr>
 <td width="20%"> Teams member </td>
 <td width="50%"> Members can view the Dataverse for Teams environment's resources, run all apps and resources, and create or update their own resources. They have full access to all data. </td>
-<td width="30%"> Teams member </td>
+<td width="30%"> Teams Member </td>
 </tr>
 <tr>
 <td width="20%"> Teams guest</td>
 <td width="50%">  Guests are people from outside the tenant that a team owner invites, such as a partner or a customer. They can view and run all resources in the team. By default, guests have full access to records they create and don't have access to other users' records. </td>
-<td width="30%"> Teams guest</td>
+<td width="30%"> Teams Guest</td>
 </tr>
 <tr>
-<td width="20%"> Global admin / Power Platform admin who isn't in the team</td>
-<td width="50%"> These are tenant-level admins who manage the health and maintenance of the tenant's environments. They need not be members of the team, but through their tenant-level admin privileges they can perform environment maintenance tasks such as backup and restore for all Dataverse for Teams environments. They are set to the Administrative access mode as opposed to the Read-Write access mode if they aren't in the team, so they'll only have Administrative access to the Dataverse for Teams environments. They can be explicitly given Read-Write access by another admin who already has Read-Write access to the environment.  </td>
+<td width="20%"> Global admin / Power Platform admin</td>
+<td width="50%"> These are tenant-level admins who manage the health and maintenance of the tenant's environments. They need not be owners or members of the team, but through their tenant-level admin privileges they can perform environment maintenance tasks such as backup and restore for all Dataverse for Teams environments. Similar to Dataverse, these tenant-level admins will have System Administrator privileges with Read-Write access mode to Dataverse for Teams environments. </td>
 <td width="30%"> System Administrator  </td>
+</tr>
+<tr>
+<td width="20%"> Dynamics 365 admin </td>
+<td width="50%"> These admins need to be owners or members of the team (since every team is linked to an Microsoft 365 group and the Dataverse for Teams environment will always be restricted for access to that Microsoft 365 group) in order to have System Administrator level privileges to manage the health and maintenance of the environment. </td>
+<td width="30%"> System Administrator if they are an owner in the team; System Administrator and Teams Member if they are a member in the team. No access if they are not an owner or member in the team. </td>
 </tr>
 <tr>
 <td width="20%"> Colleagues with access </td>
 <td width="50%"> Colleagues with access are people in the tenant who aren't in the team but have been invited to run apps in the team. By default, colleagues with access have no access to data. Their data access rights can be granted based on the app or resources that they need to run. Note: when a colleague with access is invited to run apps in a team, the Microsoft 365 group association with the team's Dataverse for Teams environment will be automatically removed to allow app run access to the colleague with access. </td>
-<td width="30%"> Common Data Serviice User</td>
-</tr>
-<tr>
-<td width="20%"> Dynamics 365 admin who isn't in the team (that is, isn't in the Microsoft 365 group) </td>
-<td width="50%"> These admins won't have access to manage the health and maintenance of the team environment.   </td>
-<td width="30%"> No access, because a Dataverse for Teams environment will always have the team's Microsoft 365 group associated with it, and Dynamics 365 Service admins are excluded from environments for which they aren't in the associated group.  </td>
+<td width="30%"> Common Data Service User</td>
 </tr>
 </table>
 
