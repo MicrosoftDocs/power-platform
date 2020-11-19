@@ -119,7 +119,7 @@ To get the fastest response time for issues you encounter with a preview or prod
 > [!div class="mx-imgBorder"] 
 > ![Select from this list for app issues](media/support-use-applications-addons.png "Select from this list for app issues")
 
-Do not select topics from **Administration Center** as this can result in lost time in routing your support request properly. 
+Do **not** select topics from **Administration Center** as this can result in lost time in routing your support request properly. 
 
 > [!div class="mx-imgBorder"] 
 > ![Don't select from this list for app issues](media/support-dont-use-administration-center.png "Don't select from this list for app issues")
