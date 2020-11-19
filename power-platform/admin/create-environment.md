@@ -1,11 +1,11 @@
 ---
 title: Create and manage environments in the Power Platform admin center | Microsoft Docs
-description: Create and manage environments in the Power Platform admin center
+description: About creating and manage environments in the Power Platform admin center
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 08/20/2020
+ms.date: 11/09/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin 
@@ -55,22 +55,22 @@ To determine which license a user has, sign in to the [Microsoft 365 admin cente
 ## Create an environment in the Power Platform admin center
 An environment provides storage for apps, flows, data, and various other resources. When users create an app in an environment, that app can connect to any data source, including connections, gateways, and flows. How you choose to leverage environments depends on your organization and the apps you're trying to build. For more information, see [Environments overview](environments-overview.md).
 
-You can store the app/business data in a database with Common Data Service. You can create a database with Common Data Service with any environment.
+You can store the app/business data in a database with Microsoft Dataverse. You can create a database with Dataverse with any environment.
 
 You have multiple options when creating an environment:
 
-1. [Create an environment with a Common Data Service database](#create-an-environment-with-a-database)
-2. [Create an environment without a Common Data Service database](#create-an-environment-without-a-database)
+1. [Create an environment with a Dataverse database](#create-an-environment-with-a-database)
+2. [Create an environment without a Dataverse database](#create-an-environment-without-a-database)
 
 ### Some important considerations when creating a new environment
 
-- **Why create an environment with a database**: When you create a production environment with a Common Data Service database, you have the option to add Dynamics 365 apps such as Dynamics 365 Sales and Field Service during the creation process (by choosing **Enable Dynamics 365 apps**). Currently, if you don't select **Enable Dynamics 365 apps** at the time of database provisioning, you will not be able to make this change later. 
-- **Why create an environment without a database**: If you don't need Dynamics 365 apps or don't need to use Common Data Service, and you are creating Power Apps or Power Automate using other data sources, create the environment without the Common Data Service database.
+- **Why create an environment with a database**: When you create a production or sandbox environment with a Dataverse database, you have the option to add Dynamics 365 apps such as Dynamics 365 Sales and Field Service during the creation process (by choosing **Enable Dynamics 365 apps**). Currently, if you don't select **Enable Dynamics 365 apps** at the time of database provisioning, you will not be able to make this change later. 
+- **Why create an environment without a database**: If you don't need Dynamics 365 apps or don't need to use Dataverse, and you are creating Power Apps or Power Automate using other data sources, create the environment without the Dataverse database.
 - **The Enable Dynamics 365 apps decision is not reversible**: Once you create an environment, if you don't select **Enable Dynamics 365 apps** at the time of database provisioning, you will not be able to make this change later.
 - **Dynamics 365 apps and trial environments**: Currently, Dynamics 365 apps cannot be enabled for trial environments. To create a trial with Dynamics 365 apps, see [Start your digital transformation here](https://trials.dynamics.com).
 
 ## Create an environment with a database
-You create a database to use Common Data Service as a data store. The Common Data Service is a cloud scale database used to securely store data for business applications built on Power Apps. Common Data Service provides not just data storage, but a way to implement business logic that enforces business rules and automation against the data. For more information, see [Why use Common Data Service?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro#why-use-common-data-service)
+You create a database to use Dataverse as a data store. The Dataverse is a cloud scale database used to securely store data for business applications built on Power Apps. Dataverse provides not just data storage, but a way to implement business logic that enforces business rules and automation against the data. For more information, see [Why use Dataverse?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro#why-use-common-data-service)
 
 ### Prerequisites 
 To create an environment with a database, you need 1GB available database capacity.
@@ -100,7 +100,8 @@ To create an environment with a database, you need 1GB available database capaci
 
    |Setting  |Description  |
    |---------|---------|
-   |Language     | The default language for this environment. More information: [Common Data Service language collations](language-collations.md)     |
+   |Language     | The default language for this environment. More information: [Dataverse language collations](language-collations.md)     |
+   | URL         | Enter your organization name. Organization URLs must be unique. If your organization name has already been reserved in the destination datacenter, it won't be available. |
    |Currency     | The base currency used for reporting.         |
    |Enable Dynamics 365 apps | Select **Yes** and make a selection to automatically deploy apps such as Dynamics 365 Sales and Dynamics 365 Customer Service. |
    |Deploy sample apps and data     | Select **Yes** to include sample apps and data. Sample data gives you something to experiment with as you learn. You must select **No** for **Enable Dynamics 365 apps** for this setting to appear.        |
@@ -200,10 +201,10 @@ No, Microsoft 365 licensed users will not be able to manage environments.
 Yes, it will appear in both admin centers.
 
 ### What is the Power Apps production environment limit?
-Provisioning environments is based on database capacity. Previously, it was two environments per Power Apps Plan 2 license. Now all you need is 1GB of available capacity to provision. All environments with or without Common Data Service will consume at least 1GB capacity.
+Provisioning environments is based on database capacity. Previously, it was two environments per Power Apps Plan 2 license. Now all you need is 1GB of available capacity to provision. All environments with or without Dataverse will consume at least 1GB capacity.
 
 ### See also 
 [Manage environments in Power Apps](environments-administration.md) <br />
-[Common Data Service storage capacity](capacity-storage.md) <br />
+[Dataverse storage capacity](capacity-storage.md) <br />
 [Control user access to environments: security groups and licenses](control-user-access.md)
 

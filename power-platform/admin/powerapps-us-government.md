@@ -18,6 +18,8 @@ search.app:
 
 # Microsoft Power Apps US Government 
 
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 In response to the unique and evolving requirements of the United States public sector, Microsoft has created Power Apps US Government, which consists of several plans for US government organizations. This section provides an overview of features that are specific to Power Apps US Government. It is recommended that you read this supplementary section alongside the Power Apps [documentation](https://docs.microsoft.com/powerapps/powerapps-overview), which covers information about the general Power Apps service description. For brevity, this service is commonly referred to as Power Apps Government Community Cloud (GCC) or Power Apps Government Community Cloud – High (GCC High).
 
 The Power Apps US Government service description is designed to serve as an overlay to the general Power Apps service description. It defines the unique commitments of this service and the differences from Power Apps offerings that have been available to our customers since October 2016.
@@ -55,7 +57,7 @@ Additional information about the differences in functionality between these grou
 
 ## What is customer data and customer content?
 
-Customer data, as defined in the Online Services Terms, means all data, including all text, sound, video, or image files, and software, that are provided to Microsoft by, or on behalf of, customers through the use of the Online Service. Customer content refers to a specific subset of customer data that has been directly created by users, such as content stored in databases through entries in the [Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro) entities (for example, contact information). Content is generally considered confidential information and in normal service operation is not sent over the internet without encryption.
+Customer data, as defined in the Online Services Terms, means all data, including all text, sound, video, or image files, and software, that are provided to Microsoft by, or on behalf of, customers through the use of the Online Service. Customer content refers to a specific subset of customer data that has been directly created by users, such as content stored in databases through entries in the [Microsoft Dataverse](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro) entities (for example, contact information). Content is generally considered confidential information and in normal service operation is not sent over the internet without encryption.
 
 For more information on Power Apps protection of customer data, see the [Microsoft Online Services Trust Center](https://www.microsoft.com/trustcenter/cloudservices/business-application-platform/default.aspx).
 
@@ -158,7 +160,7 @@ For those customers that implement network restrictions, please ensure access to
 *.crm9.dynamics.com<br/>
 *.dynamics365portals.us
 
-Please also refer to the Required IP Ranges to enable access to Common Data Service environments that users and administrators may create within your tenant:
+Please also refer to the Required IP Ranges to enable access to Dataverse environments that users and administrators may create within your tenant:
 
 [https://www.microsoft.com/download/confirmation.aspx?id=57063](https://www.microsoft.com/download/confirmation.aspx?id=57063)  (Focus on AzureCloud.usgovtexas and AzureCloud.usgovvirginia)
 
@@ -175,7 +177,7 @@ Please also refer to the Required IP Ranges to enable access to Common Data Serv
 *.crm.microsoftdynamics.us<br/>
 *.high.dynamics365portals.us
 
-Please also refer to the Required IP Ranges to enable access to Common Data Service environments that users and administrators may create within your tenant:
+Please also refer to the Required IP Ranges to enable access to Dataverse environments that users and administrators may create within your tenant:
 
 [https://www.microsoft.com/download/confirmation.aspx?id=57063](https://www.microsoft.com/download/confirmation.aspx?id=57063)  (Focus on AzureCloud.usgovtexas and AzureCloud.usgovvirginia)
 

@@ -3,7 +3,7 @@ title: "Language support in Microsoft Teams"
 description: "Create new chatbots in multiple languages, including tutorial and system topics, in the Power Virtual Agents app in Microsoft Teams."
 keywords: "PVA, language, regional, region"
 ms.date: 9/22/2020
-ms.service: dynamics-365-ai
+ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -21,7 +21,6 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](../authoring-language-support.md)
 > - [Power Virtual Agents app in Microsoft Teams](authoring-language-support-teams.md)
 
-[!INCLUDE [](includes/cc-beta-prerelease-disclaimer-teams.md)]
 
 You can create chatbots in Power Virtual Agents in a number of languages. This means the bot will understand and respond in the language you specify.
 

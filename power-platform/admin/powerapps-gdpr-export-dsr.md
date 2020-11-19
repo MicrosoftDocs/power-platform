@@ -3,11 +3,10 @@ title: Responding to Data Subject Rights (DSR) requests to export Power Apps cus
 description: Walkthrough of how to respond to Data Subject Rights (DSR) requests to export Power Apps customer data.
 author: jimholtz
 ms.reviewer: paulliew
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/18/2020
+ms.date: 10/13/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -19,9 +18,12 @@ search.app:
 ---
 
 # Responding to Data Subject Rights (DSR) requests to export Power Apps customer data
+
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 The "right of data portability" allows a data subject to request a copy of his or her personal data in an electronic format (that is, a structured, commonly used, machine readable and interoperable format) that may be transmitted to another data controller:
 
-* Website access: [Power Apps portal](https://make.powerapps.com), [Power Apps Admin center](https://admin.powerapps.com/), and [Microsoft 365 Service Trust Portal](https://servicetrust.microsoft.com/)
+* Website access: [Power Apps portal](https://make.powerapps.com), [Power Platform admin center](https://admin.powerplatform.microsoft.com/), and [Microsoft 365 Service Trust Portal](https://servicetrust.microsoft.com/)
 
 * PowerShell access: Power Apps [App creator cmdlets](https://go.microsoft.com/fwlink/?linkid=871448), [Admin cmdlets](https://go.microsoft.com/fwlink/?linkid=871804) and [On-premises gateway cmdlets](https://go.microsoft.com/fwlink/?linkid=872238)
 
@@ -29,10 +31,10 @@ Below is a summary of the types of personal data that Power Apps can store for a
 
 Resources containing personal data | Website access |    PowerShell access
 --- | --- | --
-Environment    | Power Apps Admin center |     Power Apps cmdlets
-Environment permissions**    | Power Apps Admin center     | Power Apps cmdlets
-Canvas App    | Power Apps Admin center <br> Power Apps Portal |     Power Apps cmdlets
-Canvas App permissions    | Power Apps Admin center <br> Power Apps Portal    | Power Apps cmdlets
+Environment    | Power Platform admin center |     Power Apps cmdlets
+Environment permissions**    | Power Platform admin center     | Power Apps cmdlets
+Canvas App    | Power Apps Portal |     Power Apps cmdlets
+Canvas App permissions    | Power Apps Portal    | Power Apps cmdlets
 Gateway | Power Apps Portal***    | On-premises gateway cmdlets
 Gateway permissions    | Power Apps Portal***    |
 Custom connector | |    App creator: Available <br> Admin: Available
@@ -41,7 +43,7 @@ Connection | | App creator: Available <br> Admin: Available
 Connection permissions    | | App creator: Available <br> Admin: Available
 Power Apps user settings, user-app settings, and notifications | | App creator: Available <br> Admin: Available
 
-> ** With the introduction of Common Data Service, if a database is created within the environment, environment permissions and model-driven app permissions are stored as records within the Common Data Service database environment. For guidance on how to respond to DSR requests for users that use Common Data Service, see [Responding to Data Subject Rights (DSR) requests for Common Data Service customer data](common-data-service-gdpr-dsr-guide.md).
+> ** With the introduction of Microsoft Dataverse, if a database is created within the environment, environment permissions and model-driven app permissions are stored as records within the Dataverse database environment. For guidance on how to respond to DSR requests for users that use Dataverse, see [Responding to Data Subject Rights (DSR) requests for Dataverse customer data](common-data-service-gdpr-dsr-guide.md).
 
 > *** An administrator can access these resources from the [Power Apps portal](https://make.powerapps.com) only if the owner of the resource has explicitly granted him or her access. If the administrator has not been granted access, he or she will need to leverage the [Power Apps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804).
 
@@ -51,7 +53,7 @@ Power Apps user settings, user-app settings, and notifications | | App creator: 
 Any user with a valid Power Apps license can perform the user operations outlined in this document using the [Power Apps portal](https://make.powerapps.com) or [App creator cmdlets](https://go.microsoft.com/fwlink/?linkid=871448).
 
 ### For admins
-To perform the administration operations outlined in this document using the Power Apps Admin center, Power Automate Admin Center, or [Power Apps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804), you'll need the following:
+To perform the administration operations outlined in this document using the Power Platform admin center, Power Automate Admin Center, or [Power Apps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804), you'll need the following:
 
 * A paid Power Apps plan or a Power Apps trial. You can sign-up for a 30-day trial at [https://make.powerapps.com/trial](https://make.powerapps.com/trial). Trial licenses can be renewed if they've expired.
 
@@ -59,16 +61,15 @@ To perform the administration operations outlined in this document using the Pow
 
 ## Step 1: Export personal data contained within environments created by the user
 
-### Power Apps Admin center
-Administrators can export all environments created by a specific user from the [Power Apps Admin center](https://admin.powerapps.com/) by following these steps:
+### Power Platform admin center
+Administrators can export all environments created by a specific user from the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) by following these steps:
 
-1. From the [Power Apps Admin center](https://admin.powerapps.com/), select each environment in your organization.
+1. From the Power Platform admin center, select each environment in your organization.
 
-    ![Admin Center Landing Page](./media/powerapps-gdpr-export-dsr/admin-center-landing.png)
+2. If the environment was created by the user from the DSR request, select **See all**, copy the details, and then paste them into a document editor, such as Microsoft Word.
 
-2. If the environment was created by the user from the DSR request, go to the **Details** page, copy the details, and then paste them into a document editor, such as Microsoft Word.
-
-    ![Environment details](./media/powerapps-gdpr-export-dsr/environment-details.png)
+   > [!div class="mx-imgBorder"] 
+   > ![Environment details](media/environment-details.png "Environment details")
 
 ### PowerShell cmdlets for app creators
 Users can export the environments they have access to in Power Apps by using the **Get-PowerAppsEnvironment** function in the [Power Apps App creator PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871448):
@@ -88,29 +89,27 @@ Get-AdminEnvironment -CreatedBy $userId | ConvertTo-Json | Out-File -FilePath "U
 ```
  
 ## Step 2: Export the user's environment permissions
-Users can be assigned permissions (such as Environment Admin, Environment Maker, etc.) in an environment, which are stored in Power Apps as a *role assignment*. With the introduction of Common Data Service, if a database is created within the environment, the role assignments are stored as records within the Common Data Service database environment. For more information, see [Administer environments within Power Apps](environments-administration.md).
+Users can be assigned permissions (such as Environment Admin, Environment Maker, etc.) in an environment, which are stored in Power Apps as a *role assignment*. With the introduction of Dataverse, if a database is created within the environment, the role assignments are stored as records within the Dataverse database environment. For more information, see [Administer environments within Power Apps](environments-administration.md).
 
-### For environments without a Common Data Service database
+### For environments without a Dataverse database
 
-#### Power Apps Admin center
-Administrators can export a user's environment permissions from the [Power Apps Admin center](https://admin.powerapps.com/) by following these steps:
+#### Power platform admin center
+Administrators can export a user's environment permissions from the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) by following these steps:
 
-1. From the [Power Apps Admin center](https://admin.powerapps.com/), select each environment in your organization. You must be an [Microsoft 365 Global admin](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide) or an [Azure Active Directory Global Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) to be able to review all environments created within your organization.
+1. From the Power Platform admin center, select each environment in your organization. You must be an [Microsoft 365 Global admin](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide) or an [Azure Active Directory Global Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) to be able to review all environments created within your organization.
 
-    ![Admin Center Landing Page](./media/powerapps-gdpr-export-dsr/admin-center-landing.png)
+2. Select both **Environment Admin** and **Environment Maker** separately, and then using the search bar, search for the user's name.
 
-2. Select **Security**.
+   > [!div class="mx-imgBorder"] 
+   > ![Environment roles](media/admin-environment-role-share-page1.png "Environment roles") 
 
-    If your environment does not have a Common Data Service database, you'll see a section for **Environment Roles.**
+   > [!div class="mx-imgBorder"] 
+   > ![Environment maker user](media/admin-environment-role-share-page2.png "Environment maker user")
 
-3. Select both **Environment Admin** and **Environment Maker** separately, and then using the search bar, search for the user's name.
-
-    ![Environment roles page](./media/powerapps-gdpr-export-dsr/admin-environment-role-share-page.png)
-
-4. If the user has access to either role, go to the **Users** page, copy the details, and then paste them into a document editor, such as Microsoft Word.
+3. If the user has access to either role, go to the **Users** page, copy the details, and then paste them into a document editor, such as Microsoft Word.
 
 #### PowerShell cmdlets for admins
-Administrators can export all environment role assignments for a user across all environments without a Common Data Service database by using the **Get-AdminEnvironmentRoleAssignment** function in the [Power Apps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804):
+Administrators can export all environment role assignments for a user across all environments without a Dataverse database by using the **Get-AdminEnvironmentRoleAssignment** function in the [Power Apps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804):
 
 ```powershell
 Add-PowerAppsAccount
@@ -119,36 +118,35 @@ Get-AdminEnvironmentRoleAssignment -UserId $userId | ConvertTo-Json | Out-File -
 ```
 
 > [!IMPORTANT]
->  This function only works for environments that do not have a Common Data Service database environment.
->
->
+>  This function only works for environments that do not have a Dataverse database environment.
 
-### For environments with a Common Data Service database
-With the introduction of the Common Data Service, if a database is created within the environment, role assignments are stored as records within the Common Data Service database environment. For information on how to remove personal data from a Common Data Service database environment, see [Common Data Service User personal data removal](https://go.microsoft.com/fwlink/?linkid=871886).
+### For environments with a Dataverse database
+With the introduction of the Dataverse, if a database is created within the environment, role assignments are stored as records within the Dataverse database environment. For information on how to remove personal data from a Dataverse database environment, see [Common Data Serviice User personal data removal](https://go.microsoft.com/fwlink/?linkid=871886).
  
 ## Step 3: Export personal data contained within canvas apps created by the user
 
 ### Power Apps portal
 A user can export an app from the [Power Apps portal](https://make.powerapps.com). For step-by-step instructions on how to export a canvas app, see [Exporting a canvas app](../alm/environment-and-tenant-migration.md#exporting-a-canvas-app).
 
-### Power Apps Admin center
-An administrator can export apps created by a user starting from the [Power Apps Admin center](https://admin.powerapps.com/) by following these steps:
+### Power Platform admin center
+An administrator can export apps created by a user starting from the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) by following these steps:
 
-1. From the [Power Apps Admin center](https://admin.powerapps.com/), select each environment in your organization. You must be an [Microsoft 365 Global admin](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide) or an [Azure Active Directory Global Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) to be able to review all environments created within your organization.
+1. From the Power Platform admin center, select each environment in your organization. You must be an [Microsoft 365 Global admin](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide) or an [Azure Active Directory Global Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) to be able to review all environments created within your organization.
 
-    ![Admin Center Landing Page](./media/powerapps-gdpr-export-dsr/admin-center-landing.png)
-
-2. Select **Resources**, and then select **Apps**.
+2. Select **Resources**, and then select **Power Apps**.
 
 3. Using the search bar, search for the user's name, which brings up any apps that user created within this environment:
 
-    ![Search apps](./media/powerapps-gdpr-export-dsr/search-apps.png)
+   > [!div class="mx-imgBorder"] 
+   > ![Search apps](media/search-apps.png "Search apps")
 
-4. Select **Share** for each of the apps created by that user and give yourself **Can edit** access to the app:
+4. Select **Share** for each of the apps created by that user and give yourself **Co-owner** access to the app:
 
-    ![Select app share](./media/powerapps-gdpr-export-dsr/select-share.png)
+   > [!div class="mx-imgBorder"] 
+   > ![Select app share](media/share-canvas-app.png "Select app share")
 
-    ![Give a user access](./media/powerapps-gdpr-export-dsr/grant-access.png)
+   > [!div class="mx-imgBorder"] 
+   > ![Give a user access](media/grant-access.png "Give a user access")
 
 5. Once you have access to each of the user's apps you can export a canvas app from the [Power Apps portal](https://make.powerapps.com). For step-by-step instructions on how to export an app, see [Exporting a canvas app](../alm/environment-and-tenant-migration.md#exporting-a-canvas-app).
 
@@ -172,22 +170,22 @@ Add-PowerAppsAccount
 Get-AppRoleAssignment | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
 ```
 
-### Power Apps Admin center
-Administrators can export app roles assignments for a user from the [Power Apps Admin center](https://admin.powerapps.com/) by following these steps:
+### Power Platform admin center 
+Administrators can export app roles assignments for a user from the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) by following these steps:
 
-1. From the [Power Apps Admin center](https://admin.powerapps.com/), select each environment in your organization. You must be an [Microsoft 365 Global admin](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide) or an [Azure Active Directory Global Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) to be able to review all environments created within your organization.
+1. From the Power Platform admin center, select each environment in your organization. You must be an [Microsoft 365 Global admin](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide) or an [Azure Active Directory Global Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) to be able to review all environments created within your organization.
 
-    ![Admin Center Landing Page](./media/powerapps-gdpr-export-dsr/admin-center-landing.png)
-
-2. For each environment, select **Resources**, and then select **Apps**.
+2. For each environment, select **Resources**, and then select **Power Apps**.
 
 3. Select **Share** for each of the apps in the environment.
 
-    ![Select share](./media/powerapps-gdpr-export-dsr/select-admin-share-nofilter.png)
+   > [!div class="mx-imgBorder"] 
+   > ![Select app share](media/share-canvas-app.png "Select app share")  
 
 4. If the user has access to the app, go to the app's **Share** page, copy the details, and then paste them into a document editor, such as Microsoft Word.
 
-    ![Admin app share page](./media/powerapps-gdpr-export-dsr/admin-share-page.png)
+   > [!div class="mx-imgBorder"] 
+   > ![Admin app share page](media/admin-share-page.png "Admin app share page")
 
 ### PowerShell cmdlets for admins
 Administrators can export all app role assignments for a user across all apps in their tenant by using the **Get-AdminAppRoleAssignment** function in the [Power Apps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804):
@@ -198,7 +196,7 @@ $userId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
 Get-AdminAppRoleAssignment -UserId $userId | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
 ```
 
-## Step 5: Export personal data contained within connections created by the user
+## Step 5: Export personal data contained within connections created by the user 
 Connections are used in conjunction with connectors when establishing connectivity with other APIs and SaaS systems. Connections include references to the user who created them and, as a result, can be deleted to remove any references to the user.
 
 ### PowerShell cmdlets for app creators
@@ -277,7 +275,7 @@ Get-AdminConnectorRoleAssignment -PrincipalObjectId $userId | ConvertTo-Json | O
 ```
  
 ## Step 9: Export Power Apps Notifications, User Settings, and User-App Settings
-Power Apps sends several types of notifications to users, including when an app is shared with them and when a Common Data Service export operation has completed. A user's notification history is visible to them within the [Power Apps portal](https://make.powerapps.com).
+Power Apps sends several types of notifications to users, including when an app is shared with them and when a Dataverse export operation has completed. A user's notification history is visible to them within the [Power Apps portal](https://make.powerapps.com).
 
 Power Apps also stores several different user preferences and settings that are used to deliver the Power Apps runtime and portal experiences, including when a user last opened an application, pinned an app, etc.
 
@@ -328,10 +326,10 @@ Power Apps licenses always include Power Automate capabilities. In addition to b
 >  We recommend that administrators complete this step for Power Apps users.
 
 
-## Step 12: Export the user's personal data in Common Data Service environments
-Anyone with a Power Apps license, provided there is 1GB available database capacity, can create Common Data Service environments and create and build apps on Common Data Service; this includes the Power Apps Community Plan, which is a free license that allows users to try out Common Data Service in an individual environment. To see which Common Data Service capabilities are included in each Power Apps license, see the [Power Apps Pricing page](https://powerapps.microsoft.com/pricing).
+## Step 12: Export the user's personal data in Dataverse environments
+Anyone with a Power Apps license, provided there is 1GB available database capacity, can create Dataverse environments and create and build apps on Dataverse; this includes the Power Apps Community Plan, which is a free license that allows users to try out Dataverse in an individual environment. To see which Dataverse capabilities are included in each Power Apps license, see the [Power Apps Pricing page](https://powerapps.microsoft.com/pricing).
 
-For guidance on how to respond to DSR requests for users that use Common Data Service, see [Responding to Data Subject Rights (DSR) requests for Common Data Service customer data](common-data-service-gdpr-dsr-guide.md).
+For guidance on how to respond to DSR requests for users that use Dataverse, see [Responding to Data Subject Rights (DSR) requests for Dataverse customer data](common-data-service-gdpr-dsr-guide.md).
 
 > [!IMPORTANT]
 >  We recommend that administrators complete this step for Power Apps users.

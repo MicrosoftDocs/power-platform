@@ -23,7 +23,8 @@
       {
         "files": [
           "**/*.png",
-          "**/*.jpg"
+          "**/*.jpg",
+          "**/*.gif"
         ],
         "exclude": [
           "**/obj/**",
@@ -62,7 +63,7 @@
     },
     "fileMetadata": {
       "searchScope": {
-        "**.*": [ "Power Platform", "Power Virtual Agents" ]
+        "**.*": [ "Power Virtual Agents" ]
       }
     },
     "template": [],

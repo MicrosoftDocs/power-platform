@@ -23,9 +23,11 @@ It's important to think about your upskilling strategy for makers—what will be
 Many training resources are available, from the [training days](in-a-day.md) already mentioned to online resources such as forums, documentation, and e-learning. Community events such as user groups, conferences, and happy hours help makers connect and share ideas outside your organization with like-minded people.
 
 Check out:
-- [Business Applications communities](https://powerusers.microsoft.com)
+
 - [Microsoft Learn content for Microsoft Power Platform](https://docs.microsoft.com/learn/powerplatform/)
 - [Microsoft Power Platform Fundamentals (Certification)](https://docs.microsoft.com/learn/certifications/power-platform-fundamentals)
+- [Microsoft Power Platform documentation](https://docs.microsoft.com/power-platform)
+- [Business Applications communities](https://powerusers.microsoft.com)
 - [Find a local user group](https://www.powerappsug.com/home)
 
 ## Grow your pool of talented people
@@ -36,7 +38,7 @@ Look for people with skills and strengths in the following roles:
 
 - **Citizen developers**: Continue to bring their day-to-day experience to how their job is done; when provided the right tools and training, can create apps to drive value.
 
-- **Pro developers**: Will design advanced interfaces using PCF in addition to building complex relationships or integrations with other applications, when the out-of-the-box limits have been reached, and the app needs to be extended.
+- **Pro developers**: Will design advanced interfaces using [Power Apps componenet framework](/powerapps/developer/component-framework/overview) in addition to building complex relationships or integrations with other applications, when the out-of-the-box limits have been reached, and the app needs to be extended.
 
 - **Trainers**: Are necessary to train others on how to use the apps that are built and made available across the organization, in addition to providing training on how to build apps.
 

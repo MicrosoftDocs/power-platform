@@ -3,7 +3,7 @@ title: "Extend your chatbot using Bot Framework skills in Microsoft Teams"
 description: "Add skills to chatbots in the Power Virtual Agents app in Microsoft Teams."
 keywords: "extensibility, integration, extend bot, bot framework, skills, custom capabilities, PVA"
 ms.date: 9/22/2020
-ms.service: dynamics-365-ai
+ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -21,7 +21,7 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents app in Microsoft Teams](configuration-add-skills-teams.md)
 
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
+
 
 Power Virtual Agents enables you to extend your bot using [Bot Framework skills](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0&preserve-view=true).
 

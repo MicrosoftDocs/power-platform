@@ -18,6 +18,8 @@ search.app:
 ---
 # Merge data
 
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 You can merge two records to combine the data or to [remove duplicates](https://docs.microsoft.com/powerapps/user/merge-duplicate-records). After doing a merge, check out the [Security considerations](#security-considerations) section to verify the changes meet your security requirements. You can merge Account, Contact, and Lead entities.
 
 Follow these steps to merge data.

@@ -25,6 +25,8 @@
             href: adoption/capacity-and-licenses.md
           - name: Establish an environment strategy
             href: adoption/environment-strategy.md
+          - name: Manage Dataverse for Teams environments 
+            href: adoption/teams-environment-strategy.md
       - name: Secure
         items: 
           - name: Establish DLP policies
@@ -39,7 +41,7 @@
             href: adoption/resource-usage.md
           - name: Track user access
             href: adoption/access-usage.md
-          - name: Monitor Common Data Service usage
+          - name: Monitor Microsoft Dataverse usage
             href: adoption/cds-usage.md
           - name: Monitor new connectors
             href: adoption/new-connectors.md
@@ -126,6 +128,8 @@
             href: coe/power-bi-nurture.md
         - name: Sample audit process
           href: coe/example-processes.md  
+        - name: Dataverse for Teams environment management
+          href: coe/teams-governance.md  
     - name: Limitations
       href: coe/limitations.md
     - name: Release notes

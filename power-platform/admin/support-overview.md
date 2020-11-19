@@ -2,7 +2,7 @@
 title: "Support Overview | MicrosoftDocs"
 description: Information on support for Dynamics 365
 ms.custom: ""
-ms.date: 09/15/2020
+ms.date: 10/27/2020
 ms.reviewer: ""
 ms.service: power-platform
 ms.suite: ""
@@ -28,7 +28,7 @@ search.app:
 
 ### Where is support available? 
 
-Support is available in markets where Common Data Service services are offered. Some specific services might not be covered in all regions immediately after general availability (GA).
+Support is available in markets where Microsoft Dataverse or Dynamics services are offered. Some specific services might not be covered in all regions immediately after general availability (GA).
 
 ### For which languages does Microsoft provide support? 
 
@@ -113,17 +113,17 @@ ProDirect, however, is more limited than Premier Advisory Support. ProDirect adv
 
 ### What is a preview (beta) service or feature? 
 
-Microsoft may provide access to customer engagement apps preview, beta, or other prerelease features, services, software, or regions, to obtain feedback and for evaluation purposes. There are many different kinds of preview services and features, with service availability and program access being the biggest differentiators:
+Microsoft may provide access to Dynamics 365 apps preview, beta, or other prerelease features, services, software, or regions, to obtain feedback and for evaluation purposes. There are many different kinds of preview services and features, with service availability and program access being the biggest differentiators:
 
-- **Public Preview**: Made available to subscribers through the Power Platform admin center, these services are intended to give subscribers an early look into what is coming and a chance to test upcoming services and features.
+- **Public Preview**: Made available to subscribers through the Power Platform admin center or Lifecycle Services, these services are intended to give subscribers an early look into what is coming and a chance to test upcoming services and features.
 - **Private Preview**: Provided only to a small subset of customers, in direct contact with the engineering teams, focused on direct and constant feedback during the development phase of a service.
 - **Limited Preview**: A fixed and limited number of customers can have access to this preview program, and once a maximum threshold is met, no more users are allowed into the program.
 
-When Microsoft offers you early access to customer engagement apps preview services and features, these preview services and features are subject to reduced or different service terms as set forth in your service agreement and the preview supplemental terms. Preview services and features are provided "as-is," "with all faults," and "as available," and are excluded from the Service SLAs or any Limited Warranties provided by Microsoft for services released to general availability (GA), and are made available to you on the condition that you agree to these terms of use, which supplement your agreement governing use of customer engagement apps.
+When Microsoft offers you early access to Dynamics 365 apps preview services and features, these preview services and features are subject to reduced or different service terms as set forth in your service agreement and the preview supplemental terms. Preview services and features are provided "as-is," "with all faults," and "as available," and are excluded from the Service SLAs or any Limited Warranties provided by Microsoft for services released to general availability (GA), and are made available to you on the condition that you agree to these terms of use, which supplement your agreement governing use of customer engagement apps.
 
 ### Do support plans cover preview (beta) services or features? 
 
-- Support for customer engagement apps services and features is provided only for "generally available" programs—see the previous question.
+- Support for Dynamics 365 apps services and features is provided only for "generally available" programs—see the previous question.
 Public preview and/or beta services may be supported through our [forums](https://community.dynamics.com/f) or other channels. 
 - Any technical support for a public preview service or feature is limited to break-fix scenarios and is available only in English with no 24/7 support available.
 
@@ -131,7 +131,7 @@ Public preview and/or beta services may be supported through our [forums](https:
 
 ### How do I contact Support? 
 
-- You get easy access to model-driven apps in Support by selecting the portal from the following table that matches the product for which you need assistance. Microsoft partners should use the [Partner Center portal](https://partner.microsoft.com/support) or the Premier support path listed in the table, as applicable.
+- You get easy access to Support by selecting the portal from the following table that matches the product for which you need assistance. Microsoft partners should use the [Partner Center portal](https://partner.microsoft.com/support) or the Premier support path listed in the table, as applicable.
 
 |Service  |Support portal  |
 |---------|---------|
@@ -151,7 +151,7 @@ Contacting Support over the phone will not speed up the processing of your reque
 
 ### How do I submit a support request? 
 
--    Access to technical support is provided through one of the [support plans included with customer engagement apps or through one of the premium support plans](https://dynamics.microsoft.com/support/plans/). Submit a technical support request from the correct support portal for the product or service for which you need assistance (see the table earlier in this topic). To begin the support-request submission process:
+-    Access to technical support is provided through one of the [support plans included with Dynamics 365 apps or through one of the premium support plans](https://dynamics.microsoft.com/support/plans/). Submit a technical support request from the correct support portal for the product or service for which you need assistance (see the table earlier in this topic). To begin the support-request submission process:
    -    From the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), select **Help + support** from the left navigation pane and then **New support request** from the top navigation.
    -    From the [Lifecycle Services portal](https://lcs.dynamics.com/), choose a project, select **Support** from the option list, and then select **Submit an incident**.
    -    From [Support for Business](https://support.microsoft.com/supportforbusiness/productselection), select the Dynamics 365 product family followed by the specific Dynamics 365 product or service for which you need help.
@@ -166,15 +166,15 @@ If you cannot submit a support request online, you can find a local support phon
 
 You can open a Subscription Management support request through the [Microsoft 365 Admin Portal](https://portal.office.com/), as long as you have a Power Platform admin sign-in credentials to the portal. To open a Subscription Management support request, sign in to the [Microsoft 365 Admin Portal](https://portal.office.com/), select the Admin app, and select the **Support – New Support Request** option from the left navigation. This provides access to the **Need Help?** pane, where you can type your Subscription Management question. If the recommended articles do not address your issue, select the **Contact Support** link at the bottom of the **Need Help?** pane, and provide the additional information needed to submit the support request.
 
-### Who can submit a support request? 
+### Who can submit a support request in the Power Platform admin center? 
 
 Any users with the Power Platform admin roles on the tenant containing the subscriptions can submit a support request. End users are not enabled for opening a support request and will need to have their permissions elevated within the tenant to accomplish this task. There is no alternative to this experience.
 
-### How do I authorize another person to submit support requests for a particular subscription? 
+### How do I authorize another person to submit support requests for a particular subscription in the Power Platform admin center? 
 
 To grant permission, you must have a Power Platform admin role on the tenant that contains the subscription. Assign the Service Administrator role to all users who want to create and manage support requests for that given tenant but do not require other permissions. [Learn more](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles?view=o365-worldwide) about role assignments in the portal.
 
-### I am developing applications on behalf of my client or assisting my client who is running customer engagement apps. How do I get support? 
+### I am developing applications on behalf of my client or assisting my client who is running customer engagement apps. How do I get support in the Power Platform admin center? 
 
 You can get support in two ways:
 
@@ -197,9 +197,9 @@ Initial Response Time is the period from when you submit your support request to
 
 Microsoft is committed to assist you in resolving your issue as soon as possible. Sometimes that means focusing efforts on reducing the business impact and mitigating any negative impact to your operation, before moving to a full solution. Therefore, we make a commitment to Initial Response Time and working with you until the impact of your issue is mitigated, having no direct SLA for support request resolution. The time it takes to troubleshoot and resolve a support request varies greatly based on the specifics of the issue. We will work with you to get the issue resolved as fast as possible. This applies to all levels of support.
 
-### I'm running a non-Microsoft technology with customer engagement apps or a custom application built using Open Source Software (OSS). Does my plan support it? 
+### I'm running a non-Microsoft technology with Dynamics 365 apps or a custom application built using Open Source Software (OSS). Does my plan support it? 
 
-- Microsoft offers customers the ability to run non-Microsoft technologies along with customer engagement apps. For all scenarios that are eligible for support through a Support plan, Microsoft Support will help in isolating the issue between the environment and your custom application.
+- Microsoft offers customers the ability to run non-Microsoft technologies along with Dynamics 365 apps. For all scenarios that are eligible for support through a Support plan, Microsoft Support will help in isolating the issue between the environment and your custom application.
 - Full technical support will be provided if the issue is determined to be caused by a service or platform. Commercially reasonable support will be provided to all other scenarios. When an adequate solution to your issue is not achieved, you might be referred to other support channels that are available for the non-Microsoft software.
 
 ### How do I get support during an outage or Service Interruption Event (SIE)? 
@@ -216,8 +216,8 @@ Technical support does not conduct RCAs as part of any support experience. If an
 
 ### How do I purchase Support? 
 
-- Support plans may be purchased either online or through an Enterprise Agreement. The Professional Direct  support plan is available online through the [Microsoft 365 Admin Center](https://portal.office.com/). You must be the Power Platform admin or owner to purchase a support plan.
-- If you purchase customer engagement apps through an Enterprise Agreement (EA), you can add a Professional Direct  support plan to your Enterprise Agreement by contacting your Large Account Reseller (LAR). 
+- Support plans may be purchased either online or through an Enterprise Agreement. The Professional Direct support plan is available online through the [Microsoft 365 Admin Center](https://portal.office.com/). 
+- If you purchase Dynamics 365 apps through an Enterprise Agreement (EA), you can add a Professional Direct  support plan to your Enterprise Agreement by contacting your Large Account Reseller (LAR). 
 
 ### When will I be billed for Support? 
 
@@ -285,7 +285,7 @@ Yes, Partners with Premier Support for Partners (PSfP) contracts are able to use
 
 ## Support for Partner
 
-### I have a Microsoft plan (such as MSDN, BizSpark or TechNet) that includes as a benefit a number of technical support requests. Can I use those for Customer Engagement (on-premises) technical support? 
+### I have a Microsoft plan (such as MSDN, BizSpark or TechNet) that includes as a benefit a number of technical support requests. Can I use those for on-premises technical support? 
 
 Yes, if you are eligible for these benefits and have activated your support access on the [Visual Studio subscription](https://my.visualstudio.com/) portal. If you have these benefits, then from [New support request](https://support.microsoft.com/supportforbusiness/productselection), select **Add contract** under the **Support Plan – Add or purchase a support plan** step, and enter your access ID and contract ID information to proceed.
 

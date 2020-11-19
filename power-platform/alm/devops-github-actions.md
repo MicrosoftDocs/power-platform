@@ -26,10 +26,13 @@ search.app:
 - Importing and exporting application metadata (also known as
 solutions) that contain various platform components such as customer engagement apps<!--note from editor: You don't actually have to name them all any more--> (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), canvas apps, model-driven apps, UI flows, virtual agents, AI Builder models, and connectors between development environments and source control.
 - Deploying to downstream environments.
-- Provisioning or de-provisioning environments (available October 2020).
-- Performing static analysis checks against solutions by using the Power Apps checker service (available October 2020).
+- Provisioning or de-provisioning environments (available late 2020).
+- Performing static analysis checks against solutions by using the Power Apps checker service (available late 2020).
 
 You can use GitHub Actions for Microsoft Power Platform along with any other available GitHub Actions to compose your build and release workflows. Workflows that teams commonly put in place include provisioning development environments, exporting from a development environment to source control, generating builds, and releasing apps.<!--To echo previous use of "release."-->
+
+> [!NOTE]
+> GitHub Actions for Microsoft Power Platform are supported only for a Microsoft Dataverse environment with a database. More information: [Create an environment with a database](/power-platform/admin/create-environment#create-an-environment-with-a-database)
 
 ## Key concepts
 
@@ -66,14 +69,14 @@ from the [GitHub Actions lab](https://github.com/microsoft/powerplatform-actions
 
 ## Connection to environments
 
-To interact with a Common Data Service environment, a secret must be created that enables the various GitHub Actions to perform the required task. Two types of connections are available:
+To interact with a Dataverse environment, a secret must be created that enables the various GitHub Actions to perform the required task. Two types of connections are available:
 
-- Username/password: Configured as a generic service connection with username and password. Username/password authentication doesn't support multifactor authentication<!--Writing Style Guide: https://styleguides.azurewebsites.net/StyleGuide/Read?id=2700&topicid=47408-->.
-- Service principal and client secret: This connection type uses service principal&ndash;based authentication and supports multifactor authentication. Service principal authentication availability is October 2020.
+- Username/password: Configured as a generic service connection with username and password. Username/password authentication doesn't support multifactor authentication.
+- Service principal and client secret: This connection type uses service principal&ndash;based authentication and supports multifactor authentication. Service principal authentication availability in late 2020.
 
 ## Available runners
 
-GitHub Actions for Microsoft Power Platform can only run on a Microsoft Windows agent. Cross-platform compatibility availability is late third quarter 2020.
+GitHub Actions for Microsoft Power Platform can only run on a Microsoft Windows agent. Cross platform compatibility will be available in late 2020.
 
 ## Frequently asked questions
 <!--You just need one or the other, not both.-->

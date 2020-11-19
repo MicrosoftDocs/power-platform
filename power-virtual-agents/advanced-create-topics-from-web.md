@@ -3,7 +3,7 @@ title: "Get topic suggestions from online content"
 description: "Use existing help and support content to quickly generate new topics for your Power Virtual Agents bot."
 keywords: "PVA"
 ms.date: 9/22/2020
-ms.service: dynamics-365-ai
+ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -75,9 +75,9 @@ After the extraction is complete, you'll be shown the suggested topics for furth
     
 >[!IMPORTANT]
 >- The URLs must be secure (they must start with *https://*).
->- The URLs must be publically available, that is, they can't need a user to log in.
->- For online files, we do not support file upload. You must provide the full URL to the location of the file, as in the example *https://www.microsoft.com/thisisafile.pdf*.
->- For online files, we currently support PDF, DOCX, PPTX, TXT files and 2-column formats in TSV, XLSX (first sheet only), and CSV.
+>- The URLs must be publicly available, that is, they can't need a user to log in.
+>- For online files, we do not support file upload. You must provide the full URL to the location of the file, including the file extension, as in the example *https://www.microsoft.com/thisisafile.pdf*.
+>- For online files, we currently support PDF, DOCX, PPTX, TXT files and 2-column formats in TSV, XLSX (first sheet only), and CSV. The file extension must be included in the URL.
 
 6. When you're done adding links to webpages and/or online files, select **Start**. The process can take several minutes, depending on the complexity and number of webpages or files you added. The message "Getting your suggestions. This may take several minutes" appears at the top of the screen while the extraction is in progress.
 

@@ -1,6 +1,6 @@
 ---
 title: "Manage behavior settings  | MicrosoftDocs"
-description: View and manage behavior settings for Common Data Service.
+description: View and manage behavior settings for Microsoft Dataverse.
 author: jimholtz
 manager: kvivek
 ms.service: power-platform
@@ -17,6 +17,8 @@ search.app:
   - Flow
 ---
 # Manage behavior settings 
+
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 Use Behavior settings to adjust how model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, appear and functions.
 

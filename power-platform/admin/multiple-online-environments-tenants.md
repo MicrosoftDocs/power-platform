@@ -51,7 +51,7 @@ The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service,
   
 - Data is not shared across environments.  
   
-- See [Common Data Service storage capacity](capacity-storage.md) for how storage is shared across environments.  
+- See [Microsoft Dataverse storage capacity](capacity-storage.md) for how storage is shared across environments.  
   
 - All environments for a single customer tenant will be set up in the geography where they initially signed up for their account. Storage consumption is totaled and tracked across all the environments attached to a customer tenant.  
   

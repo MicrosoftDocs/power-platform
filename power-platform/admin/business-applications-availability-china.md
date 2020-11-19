@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/01/2020
+ms.date: 11/03/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -73,10 +73,10 @@ The Azure AD account management services are hosted on physical servers managed 
 - [Power Apps solution checker](https://docs.microsoft.com/powerapps/maker/common-data-service/use-powerapps-checker) (Planned for end of calendar year 2020.)
 - [Power Query](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-cds-newentity-pq) (Planned for end of calendar year 2020.)
 - [Dataflows in Power Apps](https://docs.microsoft.com/powerapps/maker/common-data-service/create-and-use-dataflows) (Planned for end of calendar year 2020.)
-- [Integrate data into Common Data Service](https://docs.microsoft.com/power-platform/admin/data-integrator)
+- [Integrate data into Microsoft Dataverse](https://docs.microsoft.com/power-platform/admin/data-integrator)
 - [Export to Azure Data Lake (aka Athena)](https://docs.microsoft.com/powerapps/maker/common-data-service/export-to-data-lake)
-- [Dual-write from Common Data Service to Dynamics 365 Finance and Operations apps](https://powerapps.microsoft.com/blog/announcing-dual-write-preview/)
-- [Common Data Service analytics](https://docs.microsoft.com/power-platform/admin/analytics-common-data-service) (Planned for end of calendar year 2020.)
+- [Dual-write from Dataverse to Dynamics 365 Finance and Operations apps](https://powerapps.microsoft.com/blog/announcing-dual-write-preview/)
+- [Dataverse analytics](https://docs.microsoft.com/power-platform/admin/analytics-common-data-service) (Planned for April 2020.)
 - [AI Builder](https://docs.microsoft.com/ai-builder/), a separate add-on offering for Power Platform.
 - [Connectors](https://docs.microsoft.com/connectors/connector-reference/): The most popular connectors in use in our commercial service (based on usage telemetry) have been published; if there is a connector available in the commercial offering that you do not see deployed, please contact support, and we will review your request. 
 

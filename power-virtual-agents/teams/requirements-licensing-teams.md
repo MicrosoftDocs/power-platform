@@ -3,7 +3,7 @@ title: "Assign user licenses and manage access in Teams"
 description: "Manage licensing for the Power Virtual Agents app in Microsoft Teams."
 keywords: "Administration, licensing, PVA"
 ms.date: 9/22/2020
-ms.service: dynamics-365-ai
+ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -20,7 +20,7 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](../requirements-licensing.md)
 > - [Power Virtual Agents app in Microsoft Teams](requirements-licensing-teams.md)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
+
 
 
 If you can access Teams, and if you can add the Power Virtual Agents app, then it's likely you already have all the necessary licenses. Users of your bot will also need to access Teams, but you can't add users to a team unless they already have access to Teams as a whole.

@@ -3,7 +3,7 @@ title: "Fundamentals - Publish a chatbot to various channels in Microsoft Teams"
 description: "Publish your bot to Microsoft Teams."
 keywords: "Publish; demo; demo website; channels, PVA"
 ms.date: 9/22/2020
-ms.service: dynamics-365-ai
+ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -20,7 +20,7 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](../publication-fundamentals-publish-channels.md)
 > - [Power Virtual Agents app in Microsoft Teams](publication-fundamentals-publish-channels-teams.md)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
+
 
 Once you're satisfied with your bot's content and quality, you can publish your bot to allow users to engage with your bot. You must publish your bot at least once for the user to chat with the bot in Microsoft Teams.
 

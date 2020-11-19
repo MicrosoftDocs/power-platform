@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/31/2020
+ms.date: 10/26/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -35,17 +35,7 @@ If you're an administrator, you can determine the region of each environment in 
 
 ## What regions are available?
 
-- Asia
-- Australia
-- Canada
-- Europe
-- France
-- India
-- Japan
-- South America
-- United Kingdom
-- United States
-- US Government (GCC)
+Select the **View Report** button in [Dynamics 365 and Power Platform availability](https://dynamics.microsoft.com/geographic-availability/).
 
 ## Who can create environments in these regions?
 
@@ -69,7 +59,7 @@ You can create a database for an environment in one region (for example, United 
 
 ## What features are specific to a given region?
 
-Environments can be created in different regions, and are bound to that geographic location. When you create an app in an environment, that app is deployed in datacenters in that geographic location. This applies to any items you create in that environment, including  databases in the Common Data Service, apps, connections, gateways, and custom connectors.
+Environments can be created in different regions, and are bound to that geographic location. When you create an app in an environment, that app is deployed in datacenters in that geographic location. This applies to any items you create in that environment, including  databases in the Microsoft Dataverse, apps, connections, gateways, and custom connectors.
 
 For optimal performance, if your users are in Europe, create and use the environment in the Europe region. If your users are in the United States, create and use the environment in the U.S.
 

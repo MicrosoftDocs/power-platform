@@ -2,7 +2,7 @@
 title: "Regional settings and data locations in Microsoft Teams"
 description: "Identify the geographic location where your data will be stored, and plan for globalization features, including currency and date and time formats, in the Power Virtual Agents app in Microsoft Teams."
 ms.date: 9/22/2020
-ms.service: "dynamics-365-ai"
+ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -20,7 +20,7 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](../data-location.md)
 > - [Power Virtual Agents app in Microsoft Teams](data-location-teams.md)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
+
 
 Power Virtual Agents supports multiple globalization scenarios, and lets you choose where you want your data to live.
 

@@ -29,7 +29,7 @@ For quick reference, you can find the Trust Center Information for the Microsoft
 
 ## Data Location
 
-Microsoft operates multiple data centers world-wide that support the Microsoft Power platform applications. When your organization establishes a tenant, it establishes the default geographical (geo) location. In addition, when creating environments to support applications and contain Common Data Service data the environments can be targeted for a specific geo. A current list of the geos for the Microsoft Power Platform can be found here https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location
+Microsoft operates multiple data centers world-wide that support the Microsoft Power platform applications. When your organization establishes a tenant, it establishes the default geographical (geo) location. In addition, when creating environments to support applications and contain Microsoft Dataverse data the environments can be targeted for a specific geo. A current list of the geos for the Microsoft Power Platform can be found here https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location
 
 To support continuity of operations, Microsoft may replicate data to other regions within a geo, but the data will not move outside the geo to support data resiliency. This supports the ability to fail over or recover more rapidly in the event of a severe outage. There are some reasonable exceptions to keeping data in the specific geo that are listed on the above site primary focused on legal and support. It’s also important to note, that you or your users can take actions that expose data outside of the geo. Other
 services can also be configured to access the data and expose it outside of the geo. By default, authorized users can access the platform and your applications and data from anywhere in the world where there is connectivity.
@@ -40,7 +40,7 @@ Data as it is in transit between user devices and the Microsoft datacenters are 
 
 Data transferred through the on-premises data gateway is also encrypted. Data that users upload is typically sent to Azure Blob storage, and all metadata and artifacts for the system itself are stored in an Azure SQL database and Azure Table storage.
 
-All environments of the Common Data Service database use SQL Server Transparent Data Encryption (TDE) to perform real-time encryption of data when written to disk, also known as encryption at rest.
+All environments of the Dataverse database use SQL Server Transparent Data Encryption (TDE) to perform real-time encryption of data when written to disk, also known as encryption at rest.
 
 By default, Microsoft stores and manages the database encryption keys for your environments so you don’t have to. The manage keys feature in the Power Platform admin center gives administrators the ability to self-manage the database encryption keys that are associated with environments of Dynamics 365 (online). You can read more about managing your own keys [here](manage-encryption-key.md) but generally it is recommended have Microsoft manage the keys unless you have a specific business need to maintain your own.
 
@@ -64,7 +64,7 @@ The following links point to detailed information to help you respond to DSR req
 |Platform Feature Area  |Link to detailed response steps  |
 |---------|---------|
 |Power Apps  |  [Responding to Data Subject Rights (DSR) requests to export Power Apps customer data](powerapps-gdpr-export-dsr.md)      |
-|Common Data Service     |  [Responding to Data Subject Rights (DSR) requests for Common Data Service customer data](common-data-service-gdpr-dsr-guide.md)     |
+|Dataverse     |  [Responding to Data Subject Rights (DSR) requests for Dataverse customer data](common-data-service-gdpr-dsr-guide.md)     |
 |Power Automate    | https://docs.microsoft.com/flow/gdpr-dsr-summary        |
 |Microsoft Accounts (MSAs)     | https://docs.microsoft.com/flow/gdpr-dsr-summary-msa        |
 |Customer engagement apps     |https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-dynamics365         |

@@ -16,7 +16,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Admin Analytics for Microsoft Power Automate
+# View analytics for flows
 
 Environment admins can access analytics for Power Automate in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/analytics/flow). The reports provide insights into runs, usage, errors, types of flows created, shared flows, and details on connectors associated with all the different flow types like automated flows, button flows, scheduled flows, approval flows, business process flows. These reports are not available for the UI flows type.
 

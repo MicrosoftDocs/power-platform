@@ -1,5 +1,5 @@
 ---
-title: "Create solutions that support multiple languages (Common Data Service) | Microsoft Docs" # Intent and product brand in a unique string of 43-59 chars including spaces
+title: "Create solutions that support multiple languages (Microsoft Dataverse) | Microsoft Docs" # Intent and product brand in a unique string of 43-59 chars including spaces
 description: "<Description>" # 115-145 characters including spaces. This abstract displays in the search result.
 ms.custom: ""
 ms.date: 06/23/2020
@@ -17,7 +17,7 @@ search.app:
 ---
 # Create solutions that support multiple languages
 
-Common Data Service supports multiple languages. If you want your solution to be installed for organizations that include different base languages or that have multiple languages provisioned, take this into account when planning your solution. The following table lists tactics to use along with solution components to include in a solution that supports multiple languages.  
+Microsoft Dataverse supports multiple languages. If you want your solution to be installed for organizations that include different base languages or that have multiple languages provisioned, take this into account when planning your solution. The following table lists tactics to use along with solution components to include in a solution that supports multiple languages.  
   
 |Tactic|Solution component type|  
 |------------|-----------------------------|  
@@ -34,7 +34,7 @@ Common Data Service supports multiple languages. If you want your solution to be
  <a name="BKMK_Localizable_Web_Resources"></a>
 
  ## String (RESX) web resources
- With string (RESX) web resources added with Common Data Service developers have a more robust option to create web resources that support multiple languages. More information [String (RESX) web resources](/dynamics365/customer-engagement/developer/resx-web-resources).
+ With string (RESX) web resources added with Dataverse developers have a more robust option to create web resources that support multiple languages. More information [String (RESX) web resources](/dynamics365/customer-engagement/developer/resx-web-resources).
   
 <a name="BKMK_EmbeddedLabels"></a>   
 
@@ -77,7 +77,7 @@ Common Data Service supports multiple languages. If you want your solution to be
   
 4. In the spreadsheet, provide the corresponding translations.  
   
-5. Import translations back into the same Common Data Service organization using the “Import Translations” functionality and publish your changes.  
+5. Import translations back into the same Dataverse organization using the “Import Translations” functionality and publish your changes.  
   
 6. The next time the solution is exported it carries all the translations that you provided.  
   
@@ -116,9 +116,9 @@ Common Data Service supports multiple languages. If you want your solution to be
  After you import the completed translations, customized text appears for users who work in the languages that you had the text translated into.  
   
 > [!NOTE]
-> Common Data Service cannot import translated text that is over 500 characters long. If any of the items in your translation file are longer than 500 characters, the import process fails. If the import process fails, review the line in the file that caused the failure, reduce the number of characters, and try to import again.  
+> Dataverse cannot import translated text that is over 500 characters long. If any of the items in your translation file are longer than 500 characters, the import process fails. If the import process fails, review the line in the file that caused the failure, reduce the number of characters, and try to import again.  
   
- Because customization is supported only in the base language, you may be working in Common Data Service with the base language set as your language preference. To verify that the translated text appears, you must change your language preference for the Common Data Service user interface. To perform additional customization work, you must change back to the base language.  
+ Because customization is supported only in the base language, you may be working in Dataverse with the base language set as your language preference. To verify that the translated text appears, you must change your language preference for the Dataverse user interface. To perform additional customization work, you must change back to the base language.  
   
 <a name="BKMK_LocalizationInBaseLanguageStrings"></a>   
 
@@ -175,7 +175,7 @@ Common Data Service supports multiple languages. If you want your solution to be
   
 6. While using the organization base language you can navigate to the **Solutions** area in **Settings** and add the localized dialog as part of a solution.  
   
-   The dialog created in the other language will only be displayed to users who view Common Data Service using that language.  
+   The dialog created in the other language will only be displayed to users who view Dataverse using that language.  
   
 <a name="BKMK_UseXMLWebResourcesAsLanguageResources"></a>   
 

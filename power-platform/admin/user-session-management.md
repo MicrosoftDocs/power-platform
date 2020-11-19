@@ -27,7 +27,7 @@ The maximum user session timeout of 24 hours is removed.  This means that a user
 ### Honor Azure AD session policy 
 By default, the customer engagement apps leverage the Azure Active Directory (Azure AD) [session policy](https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes) to manage the user session timeout.  Customer engagement apps use the Azure AD ID Token with a Policy Check Interval (PCI) claims.  Every hour a new Azure AD ID Token is fetched silently in the background and the Azure AD instant policy is enforced (by Azure AD). For example, if an administrator disables or deletes a user account, blocks the user from signing in, and an administrator or user revokes the refresh token, the Azure AD session policy is enforced. 
 
-This Azure AD ID token refresh cycle continues in the background based on the Azure AD token lifetime policy configurations.  Users continue to access the customer engagement apps/Common Data Service data without the needs to re-authenticate until the Azure AD token lifetime policy expires. 
+This Azure AD ID token refresh cycle continues in the background based on the Azure AD token lifetime policy configurations.  Users continue to access the customer engagement apps/Microsoft Dataverse data without the needs to re-authenticate until the Azure AD token lifetime policy expires. 
 
 > [!NOTE]
 > - The default Azure AD refresh token expiration is 90 days.  This token lifetime properties can be configured. For detailed information, see [Configurable token lifetimes in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes#configurable-token-lifetime-properties).
@@ -41,7 +41,7 @@ This Azure AD ID token refresh cycle continues in the background based on the Az
 
 
 ### Resilience to Azure AD outages 
-In an event that there are intermittent Azure AD outages, authenticated users can continue to access the customer engagement apps/Common Data Service data if the PCI claims has not expired or the user has opted in the 'Stay signed in' during authentication. 
+In an event that there are intermittent Azure AD outages, authenticated users can continue to access the customer engagement apps/Dataverse data if the PCI claims has not expired or the user has opted in the 'Stay signed in' during authentication. 
 
 ### Set Custom Session timeout for individual environment 
 For environments that require different session timeout values, administrators can continue to set the session timeout and/or inactivity timeout in the System Settings.  These settings override the default Azure AD session policy and users will be directed to Azure AD for re-authentication when these settings expired.   

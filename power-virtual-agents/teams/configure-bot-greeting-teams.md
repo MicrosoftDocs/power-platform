@@ -3,7 +3,7 @@ title: "Automatically start a chatbot conversation in Microsoft Teams"
 description: "Change the default greeting that a chatbot in the Power Virtual Agents app in Microsoft Teams uses."
 keywords: "PVA"
 ms.date: 9/22/2020
-ms.service: dynamics-365-ai
+ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -21,7 +21,7 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](../configure-bot-greeting.md)
 > - [Power Virtual Agents app in Microsoft Teams](configure-bot-greeting-teams.md)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
+
 
 By default, chatbots created with the Power Virtual Agents app in Microsoft Teams will automatically start the conversation when someone opens a chat with the bot.
 

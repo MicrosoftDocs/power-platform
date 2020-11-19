@@ -3,7 +3,7 @@ title: "Review customer satisfaction for your chatbots in Microsoft Teams"
 description: "See how well customers are interacting with your bot, and identify areas for improvement in the Power Virtual Agents app in Microsoft Teams."
 keywords: "PVA, teams"
 ms.date: 9/22/2020
-ms.service: "dynamics-365-ai"
+ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -20,7 +20,7 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](../analytics-csat.md)
 > - [Power Virtual Agents app in Microsoft Teams](analytics-csat-teams.md)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
+
 
 
 

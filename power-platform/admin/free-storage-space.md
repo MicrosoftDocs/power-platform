@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/08/2020
+ms.date: 10/29/2020
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -17,6 +17,8 @@ search.app:
 ---
 # Free up storage space
 
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 These are ways to reduce the amount of storage space used by removing or deleting different types of information from customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation). Use one or more of these methods to control your total data storage usage. You can delete certain categories of data as the need arises, or you can set up bulk deletion jobs to reoccur at set intervals.  
   
 > [!WARNING]
@@ -25,10 +27,10 @@ These are ways to reduce the amount of storage space used by removing or deletin
 > [!NOTE]
 >  - Except for methods 3 and 5, all these methods require that you have an administrator security role, such as System Administrator. This gives you permission to delete records in bulk and to delete system jobs.  
 >  - After performing actions to free up storage, the system can take up to 24 hours to update storage information. We recommend waiting up to 24 hours and monitoring your storage.  
->  - Storage consumed does not directly correspond to the size reported in Common Data Service for Apps; consumption includes additional storage for metadata and encryption. For example, removing 10MB of storage from a file does not mean the file size is reduced by 10MB.
+>  - Storage consumed does not directly correspond to the size reported in Microsoft Dataverse for Apps; consumption includes additional storage for metadata and encryption. For example, removing 10MB of storage from a file does not mean the file size is reduced by 10MB.
 >  - Some platform operations require you to wait 24-36 hours to confirm data size changes. Such operations include but are not limited to upgrades to new versions and introduction of new workflows. Such operations require system adjustments that might result in a momentary size increase report.
 
-## Freeing storage for Common Data Service
+## Freeing storage for Dataverse
 
 Use the following methods to free up storage for each of the capacity types.
 
@@ -288,7 +290,7 @@ Use the following methods to free up storage for each of the capacity types.
   
    1.  Choose the arrow next to each criteria row, and then choose **Select Row**.  
   
-   2.  With all three rows selected, choose **Group AND**.  
+   2.  With both rows selected, choose **Group AND**.  
   
    > [!div class="mx-imgBorder"] 
    > ![Free up storage method 2](media/free-storage-method2b.png "Free up storage method 2")  
@@ -421,4 +423,4 @@ Entities and entity fields enabled for Relevance Search have an impact on the da
 See [Delete approval history from Power Automate](https://docs.microsoft.com/power-automate/gdpr-dsr-delete#delete-approval-history-from-power-automate).
 
 ### See also
-[Common Data Service storage capacity](capacity-storage.md)
+[Dataverse storage capacity](capacity-storage.md)

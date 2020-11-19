@@ -3,7 +3,7 @@ title: "Use topics to design a chatbot conversation in Microsoft Teams"
 description: "Use the authoring canvas in the Power Virtual Agents app in Microsoft Teams to create an end-to-end conversation."
 keywords: "PVA, authoring canvas, conversation"
 ms.date: 9/22/2020
-ms.service: dynamics-365-ai
+ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -21,7 +21,7 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](../authoring-create-edit-topics.md)
 > - [Power Virtual Agents app in Microsoft Teams](authoring-create-edit-topics-teams.md)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
+
 
 In Power Virtual Agents, a topic determines a how a bot responds to a question from a user. 
 

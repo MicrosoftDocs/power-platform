@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/13/2020
+ms.date: 10/12/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -22,13 +22,13 @@ Many customers wonder: How can Power Apps and Power Automate be made available t
 
 |Theme  |Common questions related to each theme for which this content answers  |
 |---------|---------|
-|Architecture     | <ul><li>What are the basic constructs and concepts of Power Apps, Power Automate, and Common Data Service?</li> <br /><li>How do these constructs fit together at design time and runtime?</li></ul> |
+|Architecture     | <ul><li>What are the basic constructs and concepts of Power Apps, Power Automate, and Microsoft Dataverse?</li> <br /><li>How do these constructs fit together at design time and runtime?</li></ul> |
 |Security     | <ul><li>What are the best practices for security design considerations?</li> <br /><li>How do I leverage our existing user and group management solutions to manage access and security roles in Power Apps?</li></ul>     |
 |Alert and Action     | <ul><li>How do I define the governance model between citizen developers and managed IT services?</li> <br /><li>How do I define the governance model between central IT and the business unit admins?</li> <br /><li>How should I approach support for non-default environments in my organization? </li></ul>        |
 |Monitor     | <ul><li>How are we capturing compliance / auditing data?</li> <br /><li>How can I measure adoption and usage within my organization?</li></ul> |
 
 ## Architecture
-It's best to familiarize oneself with Environments as the first step to building the right governance story for your company. Environments are the containers for all resources utilized by a Power Apps, Power Automate and Common Data Service. [Environments Overview](environments-overview.md) is a good primer which should be followed by [What is Common Data Service?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro), [Types of Power Apps](https://docs.microsoft.com/powerapps/maker/), [Microsoft Power Automate](https://docs.microsoft.com/power-automate/getting-started), [Connectors](https://docs.microsoft.com/powerapps/maker/canvas-apps/connections-list),  and [On-premises Gateways](wp-onpremises-gateway.md). 
+It's best to familiarize oneself with Environments as the first step to building the right governance story for your company. Environments are the containers for all resources utilized by a Power Apps, Power Automate and Dataverse. [Environments Overview](environments-overview.md) is a good primer which should be followed by [What is Dataverse?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro), [Types of Power Apps](https://docs.microsoft.com/powerapps/maker/), [Microsoft Power Automate](https://docs.microsoft.com/power-automate/getting-started), [Connectors](https://docs.microsoft.com/powerapps/maker/canvas-apps/connections-list),  and [On-premises Gateways](wp-onpremises-gateway.md). 
 
 ## Security 
 This section outlines mechanisms that exist to control who can access Power Apps in an environment and access data: licenses, environments, environment roles, Azure Active Directory, Data Loss Prevention policies and admin connectors that can be used with Power Automate. 
@@ -41,32 +41,32 @@ Access to Power Apps and Power Automate starts with having a license, the type o
 |---------|---------|
 |Microsoft 365 Included     | This allows users to extend SharePoint and other Office assets they already have. |
 |Dynamics 365 Included     | This allows users to customize and extend customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), they already have.  |
-|Power Apps plan  | This allows: <ul><li>making enterprise connectors and Common Data Service accessible for use.</li><li>users to use robust business logic across application types and administration capabilities.</li></ul>  |
-|Power Apps Community | This allows a user to use Power Apps, Power Automate, Common Data Service and customer connectors in a single for individual use. There is no ability to share apps. |
+|Power Apps plan  | This allows: <ul><li>making enterprise connectors and Dataverse accessible for use.</li><li>users to use robust business logic across application types and administration capabilities.</li></ul>  |
+|Power Apps Community | This allows a user to use Power Apps, Power Automate, Dataverse and customer connectors in a single for individual use. There is no ability to share apps. |
 |Power Automate Free | This allows users to create unlimited flows and perform 750 runs. |
 |Power Automate plan| See [Microsoft Power Apps and Microsoft Power Automate Licensing Guide](https://go.microsoft.com/fwlink/p/?linkid=2085130).|
 
 
 ### Environments
-After users have licenses, environments exist as containers for all resources utilized by Power Apps, Power Automate and Common Data Service. Environments can be used to target different audiences and/or for different purposes such as developing, testing and production. More information can be found in the [Environments Overview](environments-overview.md).
+After users have licenses, environments exist as containers for all resources utilized by Power Apps, Power Automate and Dataverse. Environments can be used to target different audiences and/or for different purposes such as developing, testing and production. More information can be found in the [Environments Overview](environments-overview.md).
 
 ### Secure your data and network
 - Power Apps and Power Automate *do not* provide users with access to any data assets that they don't already have access to. Users should only have access to data that they really require access to.
 - Network Access control policies can also apply to Power Apps and Power Automate. For environment, one can block access to a site from within a network by blocking the sign-on page to prevent connections to that site from being created in Power Apps and Power Automate. 
-- In an environment, access is controlled at three levels: [Environment roles](database-security.md), Resource permissions for Power Apps, Power Automate, etc… and [Common Data Service security roles](wp-security-cds.md) (if a Common Data Service data base is provisioned). 
-- When Common Data Service is created in an environment the Common Data Service roles will take over for controlling security in the environment (and all environment admins and makers are migrated).
+- In an environment, access is controlled at three levels: [Environment roles](database-security.md), Resource permissions for Power Apps, Power Automate, etc… and [Dataverse security roles](wp-security-cds.md) (if a Dataverse data base is provisioned). 
+- When Dataverse is created in an environment the Dataverse roles will take over for controlling security in the environment (and all environment admins and makers are migrated).
 
 The following principals are supported for each role type.
 
 |Environment type  |Role  |Principal Type (Azure AD)  |
 |---------|---------|---------|
-|Environment without Common Data Service     | Environment role        | User, group, tenant         |
+|Environment without Dataverse     | Environment role        | User, group, tenant         |
 |     | Resource permission: Canvas app        | User, group, tenant        |
 |     | Resource permission: Power Automate, Custom Connector, Gateways, Connections<sup>1</sup>        | User, group        |
-|Environment with Common Data Service      | Environment role        | User        |
+|Environment with Dataverse      | Environment role        | User        |
 |     |Resource permission: Canvas app         |User, group, tenant         |
 |     | Resource permission: Power Automate, Custom Connector, Gateways, Connections<sup>1</sup>          |User, group         |
-|     |Common Data Service role (applies to all model-driven apps and components)         |User         |
+|     |Dataverse role (applies to all model-driven apps and components)         |User         |
 
 <sup>1</sup>Only certain connections (like SQL) can be shared.
 
@@ -155,7 +155,7 @@ It's well understood that monitoring as a critical aspect of managing software a
 
 ### Review the audit trail
 
-[Activity logging for Power Apps](logging-powerapps.md) is integrated with Office Security and Compliance center for comprehensive logging across Microsoft services like Common Data Service and Microsoft 365. Office provides an API to query this data, which is currently used by many SIEM vendors to use the Activity Logging data for reporting.
+[Activity logging for Power Apps](logging-powerapps.md) is integrated with Office Security and Compliance center for comprehensive logging across Microsoft services like Dataverse and Microsoft 365. Office provides an API to query this data, which is currently used by many SIEM vendors to use the Activity Logging data for reporting.
 
 ### View the Power Apps and Power Automate license report
 
@@ -175,6 +175,20 @@ It's well understood that monitoring as a critical aspect of managing software a
    - Application-level auditing 
    - Service Health
    - Connectors used
+
+### View what users are licensed
+
+You can always look at individual user licensing in the Microsoft 365 admin center by drilling into specific users. 
+
+You can also use the following PowerShell command to export assigned user licenses.
+
+```powershell
+Get-AdminPowerAppLicenses -OutputFilePath '<licenses.csv>'
+```
+
+Exports all the assigned user licenses (Power Apps and Power Automate) in your tenant into a tabular view .csv file. The exported file contains both self-service sign up internal trial plans as well as plans that are sourced from Azure Active Directory. The internal trial plans are not visible to admins in the Microsoft 365 admin center.
+
+The export can take a while for tenants with a large number of Power Platform users.
 
 ### View app resources used in an Environment
 

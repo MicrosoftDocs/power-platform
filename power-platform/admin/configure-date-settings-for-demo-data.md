@@ -18,6 +18,8 @@ search.app:
 ---
 # Configure date settings for demo data 
 
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 Use the information below to automatically keep your demo environment data current.
 
 **Before you begin** <br />

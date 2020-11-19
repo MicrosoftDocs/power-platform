@@ -3,7 +3,7 @@ title: "Share chatbots with other users in Microsoft Teams"
 description: "Work on Power Virtual Agents chatbots with other people in your team, and see who else has recently modified topics."
 keywords: "Administration, share, multi-author, PVA, teams"
 ms.date: 9/22/2020
-ms.service: dynamics-365-ai
+ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -20,7 +20,7 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](../admin-share-bots.md)
 > - [Power Virtual Agents app in Microsoft Teams](admin-share-bots-teams.md)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
+
 
 You can collaborate with others when building chatbots in Microsoft Teams. This means other members of your team can make edits and changes, and you can see who else is editing a topic.
 

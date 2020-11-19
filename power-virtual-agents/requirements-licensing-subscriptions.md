@@ -3,7 +3,7 @@ title: "Get access to Power Virtual Agents"
 description: "Compare the capabilities you can access in Power Virtual Agents depending on whether you have a Microsoft 365 subscription or standalone Power Virtual Agents subscription."
 keywords: "Administration, licensing, PVA, standalone, compare, comparison"
 ms.date: 9/22/2020
-ms.service: dynamics-365-ai
+ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -23,6 +23,8 @@ If you already have licenses, see the [Assign licenses and manage access to Powe
 
 
 Power Virtual Agents for Microsoft Teams enables customers to build conversational interfaces within Microsoft Teams. The chatbots can use data stored in Project Oakdale or many other sources using the supplied standard connectors.
+
+Capabilities available in the Power Virtual Agents app in Microsoft Teams are available as part of select Microsoft 365 subscriptions with Power Platform and Teams capabilities, excluding plans for US government environments (GCC, GCC High and DoD) and EDU A1 and SUB SKUs.
 
 The following table is a brief comparison of capabilities in the Power Virtual Agents for Microsoft Teams plan, which is available in select Microsoft 365 subscriptions, against the standalone Power Virtual Agents subscription. 
 
