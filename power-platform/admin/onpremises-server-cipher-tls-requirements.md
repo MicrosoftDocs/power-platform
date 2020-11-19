@@ -1,5 +1,5 @@
 ---
-title: "On-premises server cipher suites and TLS requirements  | MicrosoftDocs"
+title: "Server cipher suites and TLS requirements  | MicrosoftDocs"
 description: Power Platform settings
 author: paulliew
 ms.author: paulliew
@@ -16,7 +16,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# On-premises server cipher suites and TLS requirements 
+# Server cipher suites and TLS requirements 
 
 A [cipher suite](https://docs.microsoft.com/windows/win32/secauthn/cipher-suites-in-schannel) is a set of cryptographic algorithms. This is used to encrypt messages between clients/servers and other servers.  
 
