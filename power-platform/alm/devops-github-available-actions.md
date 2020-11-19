@@ -27,8 +27,6 @@ Available GitHub Actions for Microsoft Power Platform are described in the follo
 
 Many of the actions require you to connect to a Microsoft Dataverse environment. You can add credentials as secrets in your the GitHub repository and then use them in the workflow.
 
-Many of the actions require you to connect to a Common Data Service environment. You can add credentials as secrets in your GitHub repository and then use them in the workflow.
-
 ## Helper tasks
 
 The available helper tasks are described below.
@@ -41,14 +39,14 @@ Verifies the service connection by connecting to the service and sending a `WhoA
 |---------------|---------------|
 | environment-url | The URL for the environment you're connecting to.|
 | user-name | The username of the account you're using to connect with. |
-| password-secret | The password for *user-name*<!--Via Writing Style Guide, italic for parameters.-->. GitHub passwords are defined in **Settings** under **Secrets**. Note that you can't retrieve a secret after it has been defined and saved. |
+| password-secret | The password for *user-name*. GitHub passwords are defined in **Settings** under **Secrets**. Note that you can't retrieve a secret after it has been defined and saved. |
 
 ## Solution tasks
 
 These tasks perform actions against solutions and include the following.
 
 ### Microsoft Power Platform import solution
-<!--Edit to heading okay? To be parallel.-->
+
 Imports a solution into a target environment.
 
 | Parameter           | Description        |
@@ -56,7 +54,7 @@ Imports a solution into a target environment.
 | environment-url| (Required) The URL for the target environment that you want to import the solution into (for example, [https://powerappsactions.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)).|
 |user-name|(Required) If you're using username/password authentication, the username of the account you're using to connect with.|
 | password-secret | (Required) If you're using username/password authentication, the password for the account you're using to connect with. |
- | solution-file        | (Required) The path and file name<!--To be parallel, also to avoid the slash and "filename."--> of the solution file you want to import.   |
+ | solution-file        | (Required) The path and file name of the solution file you want to import.   |
 
 ### Microsoft Power Platform export solution
 
@@ -69,7 +67,7 @@ Exports a solution from a source environment.
 | password-secret | (Required) If you're using username/password authentication, the password for *user-name*. GitHUb passwords are defined in **Settings** under **Secrets**. Note that you can't retrieve a secret after it has been defined and saved. |
  | solution-name              | (Required) The name of the solution to export.<p/>Always use the solution's *name*, not its *display name*.    |
  | solution-output-file        | (Required) The path and file name of the solution.zip file to export the source environment to.|
-  | managed        | (Required) Export as a managed solution; the default is to export as an unmanaged solution.<!--Do you need to say what the possible values are (true or false?), or does it have to be **managed**? -->|
+  | managed        | (Required) Set to **true** to export as a managed solution; the default (**false**) is to export as an unmanaged solution.
 
 ### Microsoft Power Platform unpack solution
 
