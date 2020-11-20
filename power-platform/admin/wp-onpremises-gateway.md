@@ -58,4 +58,4 @@ A recovery key is assigned (that is, not auto-generated) by the administrator at
 
 ### See also
 [On-premises data gateway](https://docs.microsoft.com/power-bi/service-gateway-onprem) <br />
-[On-premises server cipher suites and TLS requirements](onpremises-server-cipher-tls-requirements.md)
+[On-premises server cipher suites and TLS requirements](server-cipher-tls-requirements.md)
