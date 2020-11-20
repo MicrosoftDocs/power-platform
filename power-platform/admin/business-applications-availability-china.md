@@ -17,6 +17,8 @@ search.app:
 ---
 # Power Apps operated by 21Vianet and Power Automate operated by 21Vianet
 
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 ## Overview
 
 Microsoft Power BI, Microsoft Power BI Premium, Microsoft Power BI Embedded, Microsoft Dynamics 365 Customer Service, Microsoft Dynamics 365 Sales, Microsoft Dynamics 365 Field Service, Microsoft Dynamics 365 Finance, and Microsoft Dynamics 365 Supply Chain Management online services operated by 21Vianet are already available in China. Microsoft Power Apps and Microsoft Power Automate are now available to serve customers in regulated industries and commercial organizations that do business with entities in China and require local data residency.  

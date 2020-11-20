@@ -20,6 +20,8 @@ search.app:
 ---
 # Microsoft Dataverse language collations
 
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 When a Dataverse environment is created, admins are asked to select which default language they would like to use. This sets the dictionary, time and date
 format, number format, and indexing properties for the environment.
 

@@ -17,6 +17,8 @@ search.app:
 ---
 # About the Microsoft Cloud Canada datacenter
 
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 <a name="BKMK_NewCloud"></a>   
 ## New Microsoft Cloud Services in Canada  
   

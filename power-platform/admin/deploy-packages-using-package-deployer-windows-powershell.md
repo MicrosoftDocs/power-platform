@@ -20,6 +20,8 @@ search.app:
 ---
 # Deploy packages using Package Deployer and Windows PowerShell
 
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 [!INCLUDE[pn_package_deployer_long](../includes/pn-package-deployer-long.md)] enables administrators to deploy packages to a Microsoft Dataverse environment. 
 
 > [!NOTE]
