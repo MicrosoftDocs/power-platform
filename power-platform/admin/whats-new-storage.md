@@ -18,6 +18,8 @@ search.app:
 
 # What's new about storage
 
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 We've made some key enhancements to admin experiences for the Power Platform admin center:
 
 - Storage reporting is based on customer licenses and capacity add-ons.
