@@ -109,7 +109,7 @@ Professional Direct (ProDirect) Limited Advisory support provides you access to 
 - Improving reliability and recoverability.
 - Enhancing security.
 
-ProDirect, however, is more limited than Premier Advisory Support. ProDirect advisors do not provide detailed advisory assistance specific to an individual customer, such as design, architecture, or code reviews; detailed instructions for application or configuration tuning (for example, performance tuning); or the verification of specifications. ProDirect does not provide onsite support or engage in implementation activities such as, but not limited to, coding or configuration for customer development or deployment.
+ProDirect, however, is more limited than Premier/Unified Advisory Support. ProDirect advisors do not provide detailed advisory assistance specific to an individual customer, such as design, architecture, or code reviews; detailed instructions for application or configuration tuning (for example, performance tuning); or the verification of specifications. ProDirect does not provide onsite support or engage in implementation activities such as, but not limited to, coding or configuration for customer development or deployment.
 
 ### What is a preview (beta) service or feature? 
 
