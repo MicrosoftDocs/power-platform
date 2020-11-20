@@ -310,7 +310,7 @@ Yes, Partners with Premier Support for Partners (PSfP) contracts are able to use
 
 Support depends on how you purchased your licenses.
 
-|  |  |
+| &nbsp;  | &nbsp; |
 |---------|---------|
 |Direct Online Subscription, Enhanced and ProDirect Customers     | Office Admin Center        |
 |Volume Licensing: MPSA/Enterprise agreements and Open     | Volume Licensing Service Center (VLSC)        |
