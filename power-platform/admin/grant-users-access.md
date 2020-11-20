@@ -18,9 +18,9 @@ search.app:
 ---
 # Grant users access
 
-To have users up and running in Power Apps and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), you complete some administrative tasks in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)]—which you generally do only once—followed by administrative tasks.  
-
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
+To have users up and running in Power Apps and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), you complete some administrative tasks in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)]—which you generally do only once—followed by administrative tasks.  
 
 To have users up and running in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), you complete some administrative tasks in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)]—which you generally do only once—followed by administrative tasks.  
 

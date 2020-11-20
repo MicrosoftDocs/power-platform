@@ -58,7 +58,7 @@ Follow these steps to assign a service admin role.
 
 The following matrix shows what management is possible with the various service admin roles compared to the Microsoft 365 global admin role.
 
-|    |Microsoft 365<br>Global admin<br />  |Power Platform<br> admin <br />  |Dynamics 365<br> admin<br />  | Power BI<br> admin<br />  |
+|  &nbsp;    |Microsoft 365<br>Global admin<br />  |Power Platform<br> admin <br />  |Dynamics 365<br> admin<br />  | Power BI<br> admin<br />  |
 |---------|---------|---------|---------|---------|
 |**POWER PLATFORM** |||||  
 |**Environments** |||||  
