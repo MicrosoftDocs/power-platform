@@ -17,10 +17,11 @@ search.app:
 ---
 # Security enhancements: User session and access management 
 
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 You can use security enhancements to better secure the customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation). 
 
 ## User session timeout management
-
 
 The maximum user session timeout of 24 hours is removed.  This means that a user is not forced to login with their credentials to use the customer engagement apps and other Microsoft service apps like Outlook that were opened in the same browser session every 24 hours. 
 

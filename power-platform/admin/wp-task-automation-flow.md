@@ -2,7 +2,6 @@
 title: "Automation of tasks with Power Automate  | MicrosoftDocs"
 description: Automation of tasks with Power Automate 
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
@@ -17,6 +16,8 @@ search.app:
   - Flow
 ---
 # Automation of tasks with Microsoft Power Automate 
+
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 One of the unique things about Power Automate is you can use it to manage itself along with other parts of Microsoft Power Platform. The following connectors can be helpful to automate administrator tasks with Power Automate.
 
