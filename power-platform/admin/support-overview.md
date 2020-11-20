@@ -24,6 +24,8 @@ search.app:
 ---
 # Support overview
 
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 ## About support
 
 ### Where is support available? 
