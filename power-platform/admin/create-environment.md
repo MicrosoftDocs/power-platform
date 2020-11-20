@@ -16,6 +16,9 @@ search.app:
   - Flow
 ---
 # Create and manage environments in the Power Platform admin center 
+
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 An environment is a space to store, manage, and share your organization's business data, apps, and flows. It also serves as a container to separate apps that may have different roles, security requirements, or target audiences. Power Apps automatically creates a single default environment for each tenant, which is shared by all users in that tenant.
 
 > [!TIP]
