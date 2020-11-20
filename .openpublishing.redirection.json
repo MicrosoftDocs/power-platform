@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "power-platform/admin/onpremises-server-cipher-tls-requirements.md",
+      "redirect_url": "server-cipher-tls-requirements",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "power-platform/important-changes-coming.md#service-scheduling-in-dynamics-365-customer-service-is-deprecated",
       "redirect_url": "https://docs.microsoft.com/dynamics365/customer-service/deprecations-customer-service#service-scheduling-in-dynamics-365-customer-service-is-deprecated",
       "redirect_document_id": "false"
