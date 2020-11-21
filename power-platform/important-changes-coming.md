@@ -79,15 +79,15 @@ It is our goal to deliver a powerful bot experience that allows users to retriev
 
 Effective May 5, 2020 the [Dynamics 365 connector](/connectors/dynamicscrmonline/) used for Flows, Logic Apps, and Canvas Apps is officially deprecated. We recommend that you do not create new connections using this connector.
 
-Rather than use the Dynamics 365 connector, the [Dataverse (Current Environment) connector](/connectors/commondataserviceforapps/) should be your first choice *if you can use it*. You may not be able to use the Dataverse (Current Environment) connector in every situation today because of the following limitations:
+Rather than use the Dynamics 365 connector, the [Common Data Service (Current Environment) connector](/connectors/commondataserviceforapps/) should be your first choice *if you can use it*. You may not be able to use the Common Data Service (Current Environment) connector in every situation today because of the following limitations:
 
 - It is not available in Logic Apps.
 - It does not enable cross-tenant or cross environment connections. 
 - It cannot be used for canvas apps that use the [Power Apps for Windows client](https://www.microsoft.com/p/power-apps/9nblggh5z8f3).
 
-If you cannot use the Dataverse (Current Environment) connector, you should use the [Common Data Service connector](/connectors/commondataservice/). This connector has all the capabilities of the Dynamics 365 connector, and includes several improvements that increase reliability.
+If you cannot use the Common Data Service (Current Environment) connector, you should use the [Common Data Service connector](/connectors/commondataservice/). This connector has all the capabilities of the Dynamics 365 connector, and includes several improvements that increase reliability.
 
-The Dataverse (Current Environment) connector represents the future for connections using Dataverse. This includes Dynamics 365 apps using Dataverse. Work is underway to make this connector the only connector you will need. But at the current time, the previously mentioned limitations mean that you can't use it in all places where the Dynamics 365 connector or Common Data Service connector can be used today.
+The Common Data Service (Current Environment) connector represents the future for connections using Dataverse. This includes Dynamics 365 apps using Dataverse. Work is underway to make this connector the only connector you will need. But at the current time, the previously mentioned limitations mean that you can't use it in all places where the Dynamics 365 connector or Common Data Service connector can be used today.
 
 At this time, there is no requirement to convert canvas apps, flows, or logic apps to stop using the Dynamics 365 connector because of the known blocking limitations. But you should stop creating new connections with the Dynamics 365 connector and convert them if you can.
 
@@ -99,7 +99,7 @@ At this time, there is no requirement to convert canvas apps, flows, or logic ap
 
 ### Forward looking guidance
 
-When the Dataverse (Current Environment) connector represents a viable replacement for all situations where the Dynamics 365 and Common Data Service connectors are used today, we intend to remove both the current Dynamics 365 and Common Data Service connectors so that a single connector based on the Dataverse (Current Environment) connector will remain. At that time it will be required to convert any Flows, Logic Apps and Canvas Apps still using the Dynamics 365 and Common Data Service connectors.
+When the Common Data Service (Current Environment) connector represents a viable replacement for all situations where the Dynamics 365 and Common Data Service connectors are used today, we intend to remove both the current Dynamics 365 and Common Data Service connectors so that a single connector based on the Common Data Service (Current Environment) connector will remain. At that time it will be required to convert any Flows, Logic Apps and Canvas Apps still using the Dynamics 365 and Common Data Service connectors.
 
 We will announce timelines as they are determined.
 
