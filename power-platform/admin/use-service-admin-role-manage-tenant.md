@@ -18,6 +18,8 @@ search.app:
 ---
 # Use service admin roles to manage your tenant
 
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 To help you administer environments and settings for Power Platform, you can assign users to manage at the tenant level without having to assign the more powerful Microsoft 365 global admin privilege.  
 
 There are two Power Platform related service admin roles you can assign to provide a high level of admin management.
@@ -58,7 +60,7 @@ Follow these steps to assign a service admin role.
 
 The following matrix shows what management is possible with the various service admin roles compared to the Microsoft 365 global admin role.
 
-|    |Microsoft 365<br>Global admin<br />  |Power Platform<br> admin <br />  |Dynamics 365<br> admin<br />  | Power BI<br> admin<br />  |
+|  &nbsp;    |Microsoft 365<br>Global admin<br />  |Power Platform<br> admin <br />  |Dynamics 365<br> admin<br />  | Power BI<br> admin<br />  |
 |---------|---------|---------|---------|---------|
 |**POWER PLATFORM** |||||  
 |**Environments** |||||  

@@ -19,6 +19,8 @@ search.app:
 ---
 # Control user access to environments: security groups and licenses
 
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 If your company has multiple Microsoft Dataverse environments, you can use security groups to control which licensed users can be a member of a particular environment.  
   
 Consider the following example scenario:  

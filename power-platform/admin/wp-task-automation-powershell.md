@@ -17,6 +17,8 @@ search.app:
 ---
 # Automation of tasks with PowerShell 
 
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 The PowerShell cmdlets allow you to do similar tasks that you would do with the admin portals but do them in scripting where you can sequentially execute multiple commands or pipe output from one to automate common tasks. Using the PowerShell cmdlets or the management connectors, you can build flows and apps that help you to implement your governance policies. There are multiple PowerShell cmdlets that you can work with. The following is an overview of each that you would likely interact with.
 
 |PowerShell cmdlet library  |Common tasks  |

@@ -30,7 +30,7 @@ search.app:
    
 The following tables help you decide which data map to use.  
 
-|          |          |
+|  &nbsp;  |   &nbsp;  |
 |-------------|------|
 |  **System Data Maps**   | **When to Use**    |
 |     Default (Automatic Mapping)      | Recommended. Use when you want the wizard to map the imported data to the columns and fields in customer engagement apps automatically.<br /><br /> If the wizard can't determine how to map your data, you'll have an opportunity to map it manually later. **Important:**  Import files can only contain one type of data, such as contacts, leads, accounts, or cases. Also, the column headings in the source file must match exactly with the field names in customer engagement apps. |
