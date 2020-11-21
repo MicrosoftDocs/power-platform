@@ -22,11 +22,11 @@ search.app:
 
 One of the key features of [Dataverse](/powerapps/maker/common-data-service/data-platform-intro) is its rich security model that can adapt to many business usage scenarios. This security model is only in play when there is a Dataverse database in the environment. As an administrator, you likely won't be building the entire security model yourself, but will often be involved in the process of managing users and making sure they have the proper configuration as well as troubleshooting security access related issues.
 
-## Role based security
+## Role-based security
 
 Dataverse uses role-based security to group together a collection of privileges. These security roles can be associated directly to users, or they can be associated with Dataverse teams and business units. Users can then be associated with the team, and therefore all users associated with the team will benefit from the role. A key concept of Dataverse security to understand is all privilege grants are accumulative with the greatest amount of access prevailing. Simply put, if you gave broad organization level read access to all contact records, you can’t go back and hide a single record.
 
-## Business Units
+## Business units
 
 Business units work in conjunction with security roles to determine the effective security that a user has. Business units are a security modeling building block that helps in managing users and the data they can access. Business units define a security boundary. Every Dataverse database has a single root business unit.
 
@@ -37,7 +37,7 @@ To better understand let’s look at the following example. We have three busine
 > [!div class="mx-imgBorder"] 
 > ![Example business units](media/example-business-unit.png "Example business units")
 
-## Entity/Record Ownership
+## Entity/record ownership
 
 Dataverse supports two types of record ownership. Organization owned, and User or Team owned. This is a choice that happens at the time the entity is created and can’t be changed. For security purposes, records that are organization owned, the only access level choices is either the user can perform the operation or can’t. For user and team owned records, the access level choice for most privileges are tiered Organization, Business Unit, Business Unit and Child Business Unit or only the user’s own records. That means for read privilege on contact, I could set user owned, and the user would only see their own records.
 
@@ -59,9 +59,11 @@ In the above example, we have given organization level access to Contact which m
 
 ## Teams
 
-Teams are another important security building block. Teams are owned by a Business Unit. Every Business Unit has one default team that is automatically created when the Business Unit is created. The default team members are managed by Dataverse and always contain all users associated with that Business Unit. You can’t manually add or remove members from the default team, they are dynamically adjusted by the system as [new users are associated/disassociated with business units] (https://docs.microsoft.com/power-platform/admin/create-edit-business-units). There are two types of teams, owning teams and access teams. Owning Teams can own records, which gives any team member direct access to that record. Users can be members of multiple teams. This will allow it to be a powerful way of granting permissions to users in a broad way without micromanaging access at the individual user level. Access teams are discussed below as part of Record Sharing.
+Teams are another important security building block. Teams are owned by a Business Unit. Every Business Unit has one default team that is automatically created when the Business Unit is created. The default team members are managed by Dataverse and always contain all users associated with that Business Unit. You can’t manually add or remove members from the default team, they are dynamically adjusted by the system as [new users are associated/disassociated with business units](https://docs.microsoft.com/power-platform/admin/create-edit-business-units). There are two types of teams, owning teams and access teams.
+- Owning Teams can own records, which gives any team member direct access to that record. Users can be members of multiple teams. This will allow it to be a powerful way of granting permissions to users in a broad way without micromanaging access at the individual user level. 
+- Access teams are discussed in the next section as part of record sharing.
 
-## Record Sharing
+## Record sharing
 
 Individual records can be shared on a one by one basis with another user. This is a powerful way of handling exceptions that don’t fall into the record ownership or member of a business unit access model. It should be an exception though because it is a less performant way of controlling access. Sharing tougher to troubleshoot because it is not a consistently implemented access control. Sharing can be done at both the user and team level. Sharing with a team is a more efficient way of sharing. A more advanced concept of sharing is with Access Teams which provides auto creation of a team and sharing of record access with the team based on an Access Team Template (template of permissions) which is applied. Access teams can also be used without the templates, with just manual add/remove of it’s members. Access teams are more performant because they don’t allow owning records by the team or having security roles assigned to the team. Users get access because the record is shared with the team and the user is a member.
 
@@ -75,11 +77,11 @@ Sometimes record-level control of access is not adequate for some business scena
 
 Field-level security is enabled on a field by field basis. Access is then managed by creating a Field Security Profile. The profile contains all fields that have field-level security enabled and the access granted by that specific profile. Each field can be controlled within the profile for Create, Update and Read access. Field Security Profiles are then associated with a user or Teams to grant those privileges to the users to the records they already have access to. It’s important to note that field-level security has nothing to do with record-level security, a user must already have access to the record for the Field Security Profile to grant them any access to the fields. Field-level security should be used as needed and not excessively as it can add overhead that is detrimental if over used.
 
-### Managing Security Across Multiple Environments
+### Managing security across multiple environments
 
 Security roles and Field Security Profiles can be packaged up and moved from one environment to the next using Dataverse solutions. Business Units and Teams must be created and managed in each Dataverse environment along with the assignment of users to the necessary security components.
 
-### Configuring Users Environment Security
+### Configuring users environment security
 
 Once roles, teams and business units are created in an environment it is time to assign the users their security configurations. First, when you create a user you will associate the user with a business unit. By default, this is the root business unit in the organization. They are also added to the default team of that business unit.
 
