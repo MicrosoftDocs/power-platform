@@ -19,7 +19,7 @@ search.app:
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-In a perfect world as an administrator you would only visit a single portal to perform all your administrative tasks but given the scope and breadth of the different products involved and their differing release cycles, there are multiple portals with which you will interact. The following outlines the different portals and the most common tasks you perform there.
+In a perfect world, as an administrator you would only visit a single portal to perform all your administrative tasks but given the scope and breadth of the different products involved and their differing release cycles, there are multiple portals with which you will interact. The following outlines the different portals and the most common tasks you perform there.
 
 |Portal  |Common Tasks  |
 |---------|---------|
@@ -35,5 +35,5 @@ In a perfect world as an administrator you would only visit a single portal to p
 |Security and Compliance Center<br/>https://protection.office.com     |In addition to the general compliance tasks, administrators can come here to search the Audit log to see Power Automate audit events         |
 
 Over the near-term future we will see consolidation of the Power Apps, Power Automate, and the Dynamics 365 administration portals into a more unified administrative portal experience.
-For partners helping their customers manage their cloud services using delegated administration capabilities you will not be able to use delegated access to the Power Apps and Power Automate portals. Currently, you would need to have a user in the customer's tenant and assign that user a Power Apps plan.
+For partners, helping their customers manage their cloud services using delegated administration capabilities you will not be able to use delegated access to the Power Apps and Power Automate portals. Currently, you would need to have a user in the customer's tenant and assign that user a Power Apps plan.
 
