@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/19/2020
+ms.date: 11/21/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -31,11 +31,10 @@ Users can access the model-driven apps with the most recent versions of these po
   
 For more detailed information about supported browsers, see [Web application requirements](web-application-requirements.md).  
   
-For a mobile device, such as an iPad or smartphone, the following apps are available:  
-  
+For a mobile device, such as an iPad or smartphone, the following apps are available for model-driven apps and Dynamics 365 apps (such as Dynamics 365 Sales and Dynamics 365 Marketing):
+
+- [Power Apps mobile](/powerapps/user/run-canvas-and-model-apps-on-mobile) app  
 - [Dynamics 365 for phones and Dynamics 365 for tablets](https://docs.microsoft.com/dynamics365/mobile-app/install-dynamics-365-for-phones-and-tablets)
-  
-For more detailed information about supported phones and tablets, see [Dynamics 365 mobile and tablet device support](/dynamics365/mobile-app/support-phones-tablets).  
   
 > [!NOTE]
 > - Users who try to view model-driven apps on an unsupported browser are redirected to the Unified Interface experience. For more information, see [Unified Interface Overview](about-unified-interface.md).  
