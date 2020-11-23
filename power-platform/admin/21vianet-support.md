@@ -22,7 +22,7 @@ The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service,
 ## Self-help resources
 
 - [Dynamics 365 documentation](https://docs.microsoft.com/dynamics365/)
-- [Model-driven apps operated by 21Vianet in China](about-microsoft-cloud-china.md)
+- [Dynamics 365 apps operated by 21Vianet in China](about-microsoft-cloud-china.md)
 
 ## Presales support
 
