@@ -1,6 +1,6 @@
 ---
-title: "Support Overview | MicrosoftDocs"
-description: Information on support for Dynamics 365
+title: "Support for Microsoft Power Platform and customer engagement apps in Dynamics 365 | MicrosoftDocs"
+description: Information on support for Microsoft Power Platform and customer engagement apps in Dynamics 365
 ms.custom: ""
 ms.date: 10/27/2020
 ms.reviewer: ""
@@ -28,7 +28,7 @@ search.app:
 
 ### Where is support available? 
 
-Support is available in markets where Microsoft Dataverse or Dynamics services are offered. Some specific services might not be covered in all regions immediately after general availability (GA).
+Support is available in markets where Microsoft Dataverse or Dynamics 365 services are offered. Some specific services might not be covered in all regions immediately after general availability (GA).
 
 ### For which languages does Microsoft provide support? 
 
@@ -216,7 +216,7 @@ Technical support does not conduct RCAs as part of any support experience. If an
 
 ### How do I purchase Support? 
 
-- Support plans may be purchased either online or through an Enterprise Agreement. The Professional Direct support plan is available online through the [Microsoft 365 Admin Center](https://portal.office.com/). 
+- Support plans may be purchased either online or through an Enterprise Agreement. The Professional Direct support plan is available online through the Microsoft 365 Admin Center. More information: [Ways to contact support for business products](/microsoft-365/admin/contact-support-for-business-products) 
 - If you purchase Dynamics 365 apps through an Enterprise Agreement (EA), you can add a Professional Direct  support plan to your Enterprise Agreement by contacting your Large Account Reseller (LAR). 
 
 ### When will I be billed for Support? 
