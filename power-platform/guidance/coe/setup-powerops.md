@@ -169,14 +169,20 @@ Add users to the field security profile:
 
 This section explains how to enter data in the Deployment Stages and  table. PowerOps depends on these tables being configured.
 
+add info on get environment url and id
+![Save the Field Security Profile](media/git-11.png "Save the Field Security Profile")
+
 ### Deployment Stages
 
 You will no enter three rows that contain information about your deployment stages (Development/Test/Production)
 
 1. Go to [make.powerapps.com](https://make.powerapps.com/), select **Solutions**, and then open the **Power Platform GitHub ALM** solution.
 1. Select the **Deployment Stage** table.
+    ![Select the Deployment Stage table](media/git-12.png "Select the Deployment Stage table")
 1. Select **Edit data in Excel**.
+    ![Select Edit data in Excel](media/git-13.png "Select Edit data in Excel")
 1. Open the file in Edit Mode.
+    ![Open the file in Edit Mode.](media/git-14.png "Open the file in Edit Mode.")
 1. Add the below three rows with your information for the deployment stages
     | Name | BuildEnabled | Order | Password | Username | Target Environment Name | Target Environment URL | Stage Owner |
     |------|---------------|------|------|------|------|------|------|
@@ -184,6 +190,7 @@ You will no enter three rows that contain information about your deployment stag
     | TEST | Yes | 2 | *Your password* | *Your username* | *Your Test Environment* | *Your Test Environment*  | *Owner*  |
     | PROD | Yes | 3 | *Your password* | *Your username* | *Your Prod Environment Name* | *Your Prd Environment URL* | *Owner* |
 1. Select **Publish** to update the data in the table.
+    ![Publish changes to update the data in the table](media/git-15.png "Publish changes to update the data in the table")
 
 ### Import localization data
 
@@ -208,9 +215,11 @@ If you have a paid GitHub org plan, configure org secrets:
 1. Navigate to your org in GitHub (https://github.com/yourorg).
 1. Select **Settings**.
 1. Select **Secrets**.
+    ![Select Secrets from your GitHub Org Settings](media/git-20.png "Select Secrets from your GitHub Org Settings")
 1. Select **New Secret**.
 1. Enter **DEV_ENVIRONMENT_SECRET** as a secret name for your Dev deployment stage, and enter the value for your secret.
 1. Select **Private Repositories** from the Repository access dropdown.
+         ![Select Private Repositories for your Secret](media/git-21.png "Select Private Repositories for your Secret")
 1. Select **Add Secret**.
 1. Complete the above steps to add a **TEST_ENVIRONMENT_SECRET** and **PROD_ENVIRONMENT_SECRET**.
 
@@ -223,6 +232,7 @@ If you do not have a paid GitHub org plan, follow the below steps for all projec
 1. Select **Secrets**.
 1. Select **New Secret**.
 1. Enter **DEV_ENVIRONMENT_SECRET** as a secret name for your Dev deployment stage, and enter the value for your secret.
+    ![Select Private Repositories for your Secret](media/git-22.png "Select Private Repositories for your Secret")
 1. Select **Add Secret**.
 1. Complete the above steps to add a **TEST_ENVIRONMENT_SECRET** and **PROD_ENVIRONMENT_SECRET**.
 
