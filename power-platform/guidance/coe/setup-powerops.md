@@ -213,10 +213,8 @@ You will now import localized end user facing text into the **StringText** table
 If you have a paid GitHub org plan, configure org secrets:
 
 1. Navigate to your org in GitHub (https://github.com/yourorg).
-1. Select **Settings**.
-1. Select **Secrets**.
+1. Select **Settings** > **Secret** > **New organization secret**
     ![Select Secrets from your GitHub Org Settings](media/git-20.png "Select Secrets from your GitHub Org Settings")
-1. Select **New Secret**.
 1. Enter **DEV_ENVIRONMENT_SECRET** as a secret name for your Dev deployment stage, and enter the value for your secret.
 1. Select **Private Repositories** from the Repository access dropdown.
          ![Select Private Repositories for your Secret](media/git-21.png "Select Private Repositories for your Secret")
@@ -228,9 +226,7 @@ If you have a paid GitHub org plan, configure org secrets:
 If you do not have a paid GitHub org plan, follow the below steps for all projects created in PowerOps.
 
 1. Navigate to your org in GitHub (https://github.com/yourorg).
-1. Select **Settings**.
-1. Select **Secrets**.
-1. Select **New Secret**.
+1. Select **Settings** > **Secret** > **New organization secret**
 1. Enter **DEV_ENVIRONMENT_SECRET** as a secret name for your Dev deployment stage, and enter the value for your secret.
     ![Select Private Repositories for your Secret](media/git-22.png "Select Private Repositories for your Secret")
 1. Select **Add Secret**.
