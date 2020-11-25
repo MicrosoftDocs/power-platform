@@ -129,36 +129,38 @@ Please refer to [Licensing guide](https://go.microsoft.com/fwlink/?linkid=208513
 
 Effective October 1, 2019, the SQL, Azure, and Dynamics 365 connectors listed below will be reclassified from Standard to Premium. Non-Microsoft connectors that had previously been classified as standard connectors will still be available to Microsoft 365 users. A standalone Power Apps or Power Automate plan license is required to access all Premium, on-premises and custom connectors.
 
-Azure Application Insights  
-Azure Automation  
-Azure Blob Storage  
-Azure Container  
-Azure Cosmos  
-Azure Data Factory  
-Azure Data Lake  
-Azure DevOps  
-Azure Event Grid  
-Azure Event Grid Publish  
-Azure File Storage  
-Azure IoT Central  
-Azure Kusto  
-Azure Log Analytics  
-Azure Log Analytics Data Collector  
-Azure Queues  
-Azure Resource Manager  
-Azure SQL  
-Azure SQL Data Warehouse  
-Azure Table Storage  
-Dynamics 365  
-Dynamics 365 Customer Insights  
-Dynamics 365 Finance & Operations  
-Dynamics 365 Sales Insights  
-Dynamics 365 Business Central  
-Dynamics 365 Business Central (on-premises)  
-Dynamics NAV  
-Event Hubs  
-Service Bus  
-SQL Server
+Premium connectors list at October 2019 (will expand over time):
+- Azure Application Insights  
+- Azure Automation  
+- Azure Blob Storage  
+- Azure Container  
+- Azure Cosmos  
+- Azure Data Factory  
+- Azure Data Lake  
+- Azure DevOps  
+- Azure Event Grid  
+- Azure Event Grid Publish  
+- Azure File Storage  
+- Azure IoT Central  
+- Azure Kusto  
+- Azure Log Analytics  
+- Azure Log Analytics Data Collector  
+- Azure Queues  
+- Azure Resource Manager  
+- Azure SQL  
+- Azure SQL Data Warehouse  
+- Azure Table Storage  
+- Common Data Service
+- Dynamics 365  
+- Dynamics 365 Customer Insights  
+- Dynamics 365 Finance & Operations  
+- Dynamics 365 Sales Insights  
+- Dynamics 365 Business Central  
+- Dynamics 365 Business Central (on-premises)  
+- Dynamics NAV  
+- Event Hubs  
+- Service Bus  
+- SQL Server
 
 Power Automate plan-based limits on trigger frequency and the number of runs allocated to a tenant per month are being removed.
 
