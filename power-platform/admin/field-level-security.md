@@ -16,7 +16,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Field-level security to control access
+# Field-level security to control access 
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
