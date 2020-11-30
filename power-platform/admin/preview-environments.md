@@ -17,6 +17,9 @@ search.app:
 ---
 
 # Power Apps Preview Program
+
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 Power Apps updates the platform and its capabilities every few days or weeks. The Power Apps Preview program is a way to get early access to those upcoming functionalities and updates prior to availability in other regions (where customer production apps are deployed). 
 
 With the Power Apps Preview program, you can:

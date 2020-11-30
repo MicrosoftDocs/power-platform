@@ -19,6 +19,8 @@ search.app:
 
 # Power Apps and Power Automate licensing FAQ
 
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 We have found some common questions on licensing and plan options. We’ve included several here with their answers. For more details about Microsoft Power Apps and Microsoft Power Automate licensing, see [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 
 ## General licensing questions

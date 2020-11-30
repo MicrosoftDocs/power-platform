@@ -17,6 +17,8 @@ search.app:
 ---
 # Diagnose user access in an environment 
 
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 Multiple factors affect user access to Microsoft Dataverse environments. Administrators can use the **Run diagnostics** command to assess user access to a Dataverse environment, and get details and mitigation suggestions as to why a user can or can't access the environment.
 
 To access a Dataverse environment, a user must meet the following criteria:
