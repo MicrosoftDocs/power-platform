@@ -1,6 +1,6 @@
 ---
-title: "Support Overview | MicrosoftDocs"
-description: Information on support for Dynamics 365
+title: "Support for Microsoft Power Platform and customer engagement apps in Dynamics 365 | MicrosoftDocs"
+description: Information on support for Microsoft Power Platform and customer engagement apps in Dynamics 365
 ms.custom: ""
 ms.date: 11/20/2020
 ms.reviewer: ""
@@ -30,7 +30,7 @@ search.app:
 
 ### Where is support available? 
 
-Support is available in markets where Microsoft Dataverse or Dynamics services are offered. Some specific services might not be covered in all regions immediately after general availability (GA).
+Support is available in markets where Microsoft Dataverse or Dynamics 365 services are offered. Some specific services might not be covered in all regions immediately after general availability (GA).
 
 ### For which languages does Microsoft provide support? 
 
@@ -232,7 +232,7 @@ In scenarios where a problem is not able to be reproduced in a standard non-modi
 
 ### How do I purchase Support? 
 
-- Support plans may be purchased either online or through an Enterprise Agreement. The Professional Direct support plan is available online through the [Microsoft 365 Admin Center](https://portal.office.com/). 
+- Support plans may be purchased either online or through an Enterprise Agreement. The Professional Direct support plan is available online through the [Microsoft 365 admin center](https://admin.microsoft.com/). More information: [Ways to contact support for business products](/microsoft-365/admin/contact-support-for-business-products) 
 - If you purchase Dynamics 365 apps through an Enterprise Agreement (EA), you can add a Professional Direct  support plan to your Enterprise Agreement by contacting your Large Account Reseller (LAR). 
 
 ### When will I be billed for Support? 
@@ -245,12 +245,12 @@ At the end of your term, your plan will automatically renew to the same Support 
 
 ### How do I change or cancel my Support plan? 
 
-Manage your support plan subscriptions through the [Microsoft 365 Admin Portal](https://portal.office.com/).
+Manage your support plan subscriptions through the [Microsoft 365 admin center](https://admin.microsoft.com/).
 
 - To change your support plan, first cancel your existing support plan, and then purchase a new support plan.
 - To cancel your support plan, select the support plan subscription that you want to cancel, and then select **Cancel subscription**.   [Learn more](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/cancel-your-subscription?view=o365-worldwide) by reviewing this article.
 
-If you still have questions, open a new support request with the Billing team in the [Microsoft 365 Admin Portal](https://portal.office.com/). 
+If you still have questions, open a new support request with the Billing team in the [Microsoft 365 admin center](https://admin.microsoft.com/). 
 
 Support requires commitment for the duration of the subscription term. Cancellation will not result in a prorated refund.
 
@@ -279,13 +279,13 @@ Yes, each EA enrollment requires a separate support plan. If you have one Suppor
 
 ### How do I submit a support request using my Premier contract? 
 
-Power Platform admin center (PPAC) and the Lifecycle Services (LCS) are designed to recognize and entitle Premier and Unified Access IDs.
+Power Platform admin center and the Lifecycle Services (LCS) are designed to recognize and entitle Premier and Unified Access IDs.
 
-In **PPAC**: You can link your Premier contract to your account by entering your Premier Access ID and Contract ID information in the Power Platform admin center, which you can do by selecting **Help + Support** and turning on the Premier support toggle in the new incident submission experience. This is a one-time process, and your Premier contract information will be saved with your account, being accessible from all subscriptions where you have Owner/Administrator privileges. 
+- In **Power Platform admin center**: You can link your Premier contract to your account by entering your Premier Access ID and Contract ID information in the Power Platform admin center, which you can do by selecting **Help + Support** and turning on the Premier support toggle in the new incident submission experience. This is a one-time process, and your Premier contract information will be saved with your account, being accessible from all subscriptions where you have Owner/Administrator privileges. 
 
-In **LCS**: You can link your Premier contract to your account by selecting a project within LCS. Select the **Support** option from the drop-down menu, and then select **Manage Contracts**. This is a one-time process, and your Premier contract information will be saved for use with any support incident you create in LCS.
+- In **LCS**: You can link your Premier contract to your account by selecting a project within LCS. Select the **Support** option from the drop-down menu, and then select **Manage Contracts**. This is a one-time process, and your Premier contract information will be saved for use with any support incident you create in LCS.
 
-Contact your Technical Account Manager (TAM) if you don't have your access ID and contract ID information.
+Contact your Technical Account Manager if you don't have your access ID and contract ID information.
 
 Although Premier customers can continue to use the [Microsoft Premier Online](https://support.microsoft.com/premier) portal or phone channels to submit a support request, using the Power Platform admin center or Lifecycle Services has a number of significant advantages, including:
 
@@ -300,7 +300,7 @@ To purchase Premier support, you should contact your Microsoft Account Manager. 
 
 ### What if I already have a Premier contract, and I want to learn more about how to get the most from it? 
 
-Contact your Technical Account Manager (TAM) to discuss options for best using your existing Premier support agreement or rightsizing your Premier agreement to better suit your needs. You can find your TAM's name and contact information on the [Microsoft Premier Online](https://support.microsoft.com/premier) portal.
+Contact your Technical Account Manager to discuss options for best using your existing Premier support agreement or rightsizing your Premier agreement to better suit your needs. You can find your TAM's name and contact information on the [Microsoft Premier Online](https://support.microsoft.com/premier) portal.
 
 ### Can Partners use the Premier Support for Partner (PSfP) contract for Support? 
 

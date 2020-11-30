@@ -44,7 +44,7 @@ Notice that these values are recommendations and don’t guarantee satisfactory 
 
 
 ## Supported versions of Internet Explorer and Microsoft Edge  
- The following table describes the [!INCLUDE[pn_ms_Windows_short](../includes/pn-ms-windows-short.md)] and [!INCLUDE[pn_Internet_Explorer](../includes/pn-internet-explorer.md)] or [!INCLUDE[pn_microsoft_edge](../includes/pn-microsoft-edge.md)] versions supported for use with the web application.  
+ The following table describes the [!INCLUDE[pn_ms_Windows_short](../includes/pn-ms-windows-short.md)] and [!INCLUDE[pn_Internet_Explorer](../includes/pn-internet-explorer.md)] or [!INCLUDE[pn_microsoft_edge](../includes/pn-microsoft-edge.md)] versions supported for use with model-driven apps.  
 
 
 | Windows version | Internet Explorer 10 | Internet Explorer 11<sup>2</sup> | Microsoft Edge |
@@ -58,7 +58,7 @@ Notice that these values are recommendations and don’t guarantee satisfactory 
 <sup>2</sup> Check requirements for individual apps, such as [Customer Service Hub application requirements](https://docs.microsoft.com/dynamics365/customer-service/customer-service-hub-user-guide-basics). <br/>
 
 > [!IMPORTANT]
->  Although you may be able to use [!INCLUDE[pn_IE_8](../includes/pn-ie-8.md)], [!INCLUDE[pn_IE_9](../includes/pn-ie-9.md)], or an [!INCLUDE[pn_Internet_Explorer](../includes/pn-internet-explorer.md)] and [!INCLUDE[pn_ms_Windows_short](../includes/pn-ms-windows-short.md)] combination that is not supported in the previous table, those web browsers are not recommended and are not supported with this version of customer engagement apps.  
+>  Although you may be able to use [!INCLUDE[pn_IE_8](../includes/pn-ie-8.md)], [!INCLUDE[pn_IE_9](../includes/pn-ie-9.md)], or an [!INCLUDE[pn_Internet_Explorer](../includes/pn-internet-explorer.md)] and [!INCLUDE[pn_ms_Windows_short](../includes/pn-ms-windows-short.md)] combination that is not supported in the previous table, those web browsers are not recommended and are not supported with model-driven apps.  
 > 
 >  Using plug-ins or other third-party extensions in your browser can increase load times on pages with lists of data.  
 
@@ -80,7 +80,7 @@ To find the latest release for these web browsers, visit the software manufactur
 > - Mozilla Firefox ESR (Extended Support Release) versions aren’t supported.  
 
 ## Supported versions of Office  
- To use customer engagement apps (such as Dynamics 365 Sales and Customer Service) with [!INCLUDE[pn_MS_Office](../includes/pn-ms-office.md)] integration features, such as Export to Excel and Mail Merge, you must have one of the following [!INCLUDE[pn_MS_Office](../includes/pn-ms-office.md)] versions on the computer that is running the web application:  
+ To use model-driven apps and customer engagement apps (such as Dynamics 365 Sales and Customer Service) with [!INCLUDE[pn_MS_Office](../includes/pn-ms-office.md)] integration features, such as Export to Excel and Mail Merge, you must have one of the following [!INCLUDE[pn_MS_Office](../includes/pn-ms-office.md)] versions on the computer that is running the web application:  
 
 - [!INCLUDE[pn_MS_Office_365](../includes/pn-ms-office-365.md)]  
 
@@ -100,9 +100,7 @@ To find the latest release for these web browsers, visit the software manufactur
 ## Transport Layer Security (TLS) requirement
 Web browsers and other client applications that use Transport Layer Security (TLS) versions earlier than TLS 1.2 won't be able to connect to their [!INCLUDE [pn-crm-online-shortest](../includes/pn-crm-online-shortest.md)] environments and the admin center. 
 
-For more information, see these blog posts: 
-- [Updates coming to connection security](https://blogs.msdn.microsoft.com/crm/2017/09/28/updates-coming-to-dynamics-365-customer-engagement-connection-security/)
-- [TLS 1.2 support at Microsoft](https://blogs.microsoft.com/microsoftsecure/2017/06/20/tls-1-2-support-at-microsoft/)
+For more information, see this blog post: [TLS 1.2 support at Microsoft](https://blogs.microsoft.com/microsoftsecure/2017/06/20/tls-1-2-support-at-microsoft/)
 
 ### See also  
  [Supported web browsers and mobile devices](../admin/supported-web-browsers-and-mobile-devices.md)   
