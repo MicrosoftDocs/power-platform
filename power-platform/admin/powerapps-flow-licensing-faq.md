@@ -5,7 +5,7 @@ author: dileepsinghmicrosoft
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/16/2020
+ms.date: 11/30/2020
 ms.author: dileeps
 ms.reviewer: jimholtz
 search.audienceType: 
