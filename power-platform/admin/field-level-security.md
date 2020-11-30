@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/25/2020
+ms.date: 11/30/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -28,7 +28,7 @@ Record-level permissions are granted at the entity level, but you may have certa
   
 - Data access requests from within a client application, such as web browser, mobile client, or [!INCLUDE[pn_microsoft_dynamics_crm_for_outlook](../includes/pn-microsoft-dynamics-crm-for-outlook.md)].  
   
-- Web service calls using the [!INCLUDE[pn_sdk](../includes/pn-sdk.md)] (for use in plug-ins, custom workflow activities, and custom code)  
+- Web service calls using the Microsoft Dataverse web services (for use in plug-ins, custom workflow activities, and custom code)  
   
 - Reporting (using Filtered Views)  
   
