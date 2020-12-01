@@ -31,7 +31,7 @@ Effective August, 2021, Microsoft 365 apps and services will no longer support M
 
 The removal of Internet Explorer 11 support for Microsoft 365 apps and services will impact some customers who use Dynamics 365 and Microsoft Power Platform products that are designed to be used through an Internet Explorer 11 interface. After August 2021, Internet Explorer 11 won't be supported for such Dynamics 365 and Microsoft Power Platform products. 
 
-For more information and the complete list of products impacted by this change, see this [FAQ] (TODO: Add FAQ link).
+For more information and the complete list of products impacted by this change, see this [FAQ](https://aka.ms/IEsupportDeprecationBAG). Contact your Microsoft Customer Service representative or Microsoft Partner if you have additional questions.
 
 
 ## Organization data download filters for mobile offline are deprecated. 
