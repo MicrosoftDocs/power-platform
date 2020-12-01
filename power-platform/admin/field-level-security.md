@@ -122,7 +122,7 @@ Any users not defined in the previously created field security profiles will not
 > ![Field security enabled](media/field-security-enabled.png "Field security enabled")
  
 Although most attributes can be secured, there are system attributes, such as IDs, timestamps, and record tracking attributes, that can't. Below are a few examples of attributes that can't be enabled for field security. 
--    ownerid, processed, stageid, accountid, contactid
+-    ownerid, processid, stageid, accountid, contactid
 -    createdby, modifiedby, OwningTeam, OwningUser
 - createdon, EntityImage_Timestamp, modifiedon, OnHoldTime, overriddencreatedon
 -    statecode, statuscode
