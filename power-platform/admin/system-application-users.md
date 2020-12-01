@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 11/11/2020
+ms.date: 11/30/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -30,7 +30,7 @@ Most of these users are hidden from user views but they can be found by using th
 |Application | Business Application Platform Service account |bap_sa@microsoft.com |To setup Power Apps system and configurations |System admin |
 | | Dynamics 365 Athena-CDStoAzuredatalake | Dynamics365Athena-CDStoAzuredatalake@onmicrosoft.com |Service application to perform data integration between Microsoft Dataverse to Azure Data Lake |DataLakeWorkspaceAppAccess |
 | | Dynamics 365 Athena2-CDStoAzuredatalake | Dynamics365Athena2-CDStoAzuredatalake@onmicrosoft.com |Service application to perform data integration between Dataverse to Azure Data Lake |DataLakeWorkspaceAppAccess |
-| | Dynamics 365 EnterpriseSales-CDStoAzuredatalake | Dynamics365EnterpriseSales-CDStoAzuredatalake@onmicrosoft.com |Service application to perform data integration between Dataverse (Sales) to Azure Data Lake |N/A |
+| | EnterpriseSales | EnterpriseSales@onmicrosoft.com |Service application to perform data integration between Dataverse (Sales) to Azure Data Lake |N/A |
 | | # SIAutoCapture | SIAutoCapture@onmicrosoft.com | To be used for Auto Capture solution business requirements to perform data query and execute plugins from backend services. | SalesInsights AutoCapture Admin |
 | | # Dynamics 365 Sales | Dynamics365Sales@onmicrosoft.com | To allow Dynamics 365 Sales to communicate with Dataverse and Azure Data Lake for analysis and data updates. | Sales system data sync and EAC App Access |
 | | Microsoft Project | Project@microsoft.com |Allow Project for the Web and Roadmap Service to communicate with Dataverse |Project System and Portfolio User |
