@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/21/2020
+ms.date: 12/01/2020
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -35,7 +35,7 @@ An example of solutions provided for Dynamics 365 App for Outlook issues:
   - Billing Admin
   - Service Admin
   - CRM Service Admin
-  - Power Platform Admin    `
+  - Power Platform Admin  
   - Security Admin
   - CRM Organization Admin
   - Partner Delegated Admin
@@ -112,6 +112,17 @@ Fill out the pages and then submit to have your support request receive an exped
 ![Fill in outage info](media/report-outage-page-one.png "Fill in outage info")
 
 We'd love to know your thoughts on the new outage reporting process. Or, if you'd like to be considered for this limited Preview, please fill out this [form](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR-5Axi2KMXdNi_1eF9P36tZUN1FUQkJLNVBZVVlOSVk0T0tIQTBIMk9VOC4u).
+
+## For app-specific issues
+To get the fastest response time for issues you encounter with a preview or production release of a specific customer engagement app or add-on, create a support request for the specific application from the **Application and Add-ons** menu.   
+
+> [!div class="mx-imgBorder"] 
+> ![Select from this list for app issues](media/support-use-applications-addons.png "Select from this list for app issues")
+
+Do **not** select topics from **Administration Center** as this can result in lost time in routing your support request properly. 
+
+> [!div class="mx-imgBorder"] 
+> ![Don't select from this list for app issues](media/support-dont-use-administration-center.png "Don't select from this list for app issues")
 
 ### See also
 [Support overview](support-overview.md)<br />
