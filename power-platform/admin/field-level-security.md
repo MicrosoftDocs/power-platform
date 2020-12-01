@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/25/2020
+ms.date: 11/30/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -16,7 +16,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Field-level security to control access
+# Field-level security to control access 
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
@@ -28,7 +28,7 @@ Record-level permissions are granted at the entity level, but you may have certa
   
 - Data access requests from within a client application, such as web browser, mobile client, or [!INCLUDE[pn_microsoft_dynamics_crm_for_outlook](../includes/pn-microsoft-dynamics-crm-for-outlook.md)].  
   
-- Web service calls using the [!INCLUDE[pn_sdk](../includes/pn-sdk.md)] (for use in plug-ins, custom workflow activities, and custom code)  
+- Web service calls using the Microsoft Dataverse web services (for use in plug-ins, custom workflow activities, and custom code)  
   
 - Reporting (using Filtered Views)  
   
@@ -67,7 +67,7 @@ A combination of these three permissions can be configured to determine the user
 |------------------|------------|  
 |Vice presidents|Full. Can create, update, and view mobile phone numbers for contacts.|  
 |Sales Managers|Read-only. Can only view mobile phone numbers for contacts.|  
-|Salespersons and all other users|None. Cannot create, update or view mobile phone numbers for contacts.|  
+|Salespersons and all other users|None. Cannot create, update, or view mobile phone numbers for contacts.|  
   
  To restrict this field, you would perform the following tasks.  
   
@@ -133,7 +133,7 @@ You can view the entity metadata for your organization including which fields ca
 ## Best practices when you use field security  
  When you use calculated fields that include a field that is secured, data may be displayed in the calculated field to users that don't have permission to the secured field. In this situation, both the original field and the calculated field should be secured.  
   
- Some data, such as addresses, are actually made up of multiple fields. Therefore, to completely secure data that includes multiple fields, such as addresses, you must secure and configure the appropriate field security profiles on multiple fields for the entity. For example, to completely secure addresses for an entity, secure all relevant address fields, such as address_line1, address_line2, address_line3, address1_city, address1_composite, and so on.  
+ Some data, such as addresses, are made up of multiple fields. Therefore, to completely secure data that includes multiple fields, such as addresses, you must secure and configure the appropriate field security profiles on multiple fields for the entity. For example, to completely secure addresses for an entity, secure all relevant address fields, such as address_line1, address_line2, address_line3, address1_city, address1_composite, and so on.  
   
 ### See also  
  [Video: Field Level Security in Microsoft Dynamics CRM 2015](https://www.youtube.com/watch?v=Czc9sKvWd9k&list=UUem1HuioGqKEn8Li3l4DIYQ)   
