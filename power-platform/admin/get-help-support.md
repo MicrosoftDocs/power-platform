@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/20/2020
+ms.date: 12/01/2020
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -35,7 +35,7 @@ An example of solutions provided for Dynamics 365 App for Outlook issues:
   - Billing Admin
   - Service Admin
   - CRM Service Admin
-  - Power Platform Admin    `
+  - Power Platform Admin  
   - Security Admin
   - CRM Organization Admin
   - Partner Delegated Admin
