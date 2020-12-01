@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/08/2020
+ms.date: 12/01/2020
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -52,7 +52,7 @@ Select a data source and then select **Settings** to see the following informat
 
 ## Manage users
 
-Select a data source and then select **Manage users** to see the list of current data source users. These users can use this data source in published reports and data flows. Currently, you can remove users but not add users. 
+Select a data source and then select **Manage users** to see the list of current data source users. These users can use this data source in published reports and data flows. 
 
 > [!div class="mx-imgBorder"] 
 > ![Manage users for data source](media/data-gateways-source-manage-users.png "Manage users for data source")
