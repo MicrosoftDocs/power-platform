@@ -171,6 +171,12 @@ Once the copy process is complete, the target environment is placed in [Administ
     - **Client-side JavaScript**. Take a look at your JavaScript and HTML web resources for read/write operations that could impact external services.  
     - **IFRAMES**. Determine if the target of an IFRAME is a production environment.  
 
+## Known issues
+
+### Failures during a copy operation
+Power Virtual Agent resources were recently included as part of the copy operation. If you are getting consistent failures during a copy operation and you have Power Virtual Agent resources installed in the source environment, then the problem might be that the Power Virtual Agent solutions are not installed in the target environment. If you explicitly uninstalled the Power Virtual Agent solutions from the target environment, you can work around this by re-installing the solutions. Otherwise, you should choose a different target environment.
+
+
 ### See also  
 [What's new about storage](whats-new-storage.md) <br />
 [New Microsoft Dataverse storage capacity](capacity-storage.md) <br />
