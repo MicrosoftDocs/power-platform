@@ -5,7 +5,7 @@ author: pnghub
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/13/2020
+ms.date: 12/02/2020
 ms.author: gned
 ms.reviewer: jimholtz 
 
@@ -64,6 +64,9 @@ This task requires the system administrator or customizer security role or equiv
    | Read logs | Logs will be sent to the [Microsoft 365 Security and Compliance Center](https://protection.office.com/homepage) |
 
 3. You can set a retention period for how long audit logs are kept in a Microsoft Dataverse environment. Under **Retain these logs for**, choose the period of time you wish to retain the logs.
+
+   > [!NOTE]
+   > The audit data retention policy will be visible once your environment has been upgraded. This will happen over time. 
 
    |      Setting |     Description    |
    |--------------------|---------------------|
