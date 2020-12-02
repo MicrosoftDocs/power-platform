@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/30/2020
+ms.date: 12/01/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -27,7 +27,7 @@ You can use Copy environment in the Power Platform admin center to copy the cust
 > - You can only copy to a sandbox environment in the same tenant and region.
 > - Currently, any components that have not been added to a solution (including canvas apps, flows, custom connectors, and connections) will not be copied to the target environment.
 > - You cannot copy from or to a default environment.
-> - You must have sufficient [storage capacity](whats-new-storage.md) to copy an environment.
+> - You must have at least 1 GB of [storage capacity](whats-new-storage.md) to copy an environment.
   
 ## Copy over everything
  An Everything copy includes all application data, users, and customizations, and schemas from the source environment and is suitable for:  
