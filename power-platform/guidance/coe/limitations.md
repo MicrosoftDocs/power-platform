@@ -43,14 +43,14 @@ The Dataverse connector might experience some throttling limits if the tenant ha
   1. Expand the step **Apply to each Environment**
   1. Go to the **Settings** pane for each call to Dataverse, and configure the timeout/retry settings. The default count is set to **10** and the default interval is set to **PT10S** - increase the values incrementally here.
 
-     ![Configure retry policy](media/coe72.png "Configure the retry policy")
+     ![Configure retry policy](media/coe72.PNG "Configure the retry policy")
 
 - **Configure (reduce) concurrency in Foreach loops to reduce simultaneous calls**
   1. Open **Admin \| Sync Template v2**, and then select **Edit**.
   1. Expand the step **Get Environments and store them in the CoE Table**.
   1. Go to **Settings** for the **Apply to each Environment** step.
 
-     ![Configure concurrency in Foreach](media/coe73.png "Configure concurrency in Foreach")
+     ![Configure concurrency in Foreach](media/coe73.PNG "Configure concurrency in Foreach")
 
   1. Use the slider to reduce the value of **Degree of Parallelism**. The default value is 50; reducing the parallelism here will increase the runtime of the flow, so we suggest gradually lowering the number.
 
@@ -120,4 +120,4 @@ For full list of license requirements see [Setup Pre-requisits](setup.md#prerequ
 
 ## PIM (Privileged Identity Management)
 
-If your Power Platform admin role is managed via  **[PIM](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started)** ensure the Sync Flows of the Core Components solution are set up to complete during the time whilst your user is granted admin permission. If your user looses admin access during the run of the sync flows, you may end up with incomplete or incorrect data if you use PIM and your Power Platform Admin Role.
+If your Power Platform admin role is managed via  **[PIM](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started)** ensure the Sync Flows of the Core Components solution are set up to complete during the time whilst your user is granted admin permission. If your user loses admin access during the run of the sync flows, you may end up with incomplete or incorrect data if you use PIM and your Power Platform Admin Role.
