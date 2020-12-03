@@ -86,7 +86,7 @@ There are multiple types of environments. The type indicates the purpose of the 
 <tr>
 <td width="20%"> Sandbox</td>
 <td width="50%">   These are non-production environments, which offer features like copy and reset. Sandbox environments are used for development and testing, separate from production. Provisioning sandbox environments can be restricted to admins (because production environment creation can be blocked), but converting from a production to a sandbox environment can't be blocked. </td>
-<td width="30%">  Full control. <br />If used for testing, only user access is needed. <br />Developers require Environment Maker access to create resources.</td>
+<td width="30%">  Full control. If used for testing, only user access is needed. Developers require Environment Maker access to create resources.</td>
 </tr>
 <tr>
 <td width="20%"> Trial</td>
