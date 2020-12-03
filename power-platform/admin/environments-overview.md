@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/01/2020
+ms.date: 12/03/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -82,11 +82,11 @@ There are multiple types of environments. The type indicates the purpose of the 
 <tr>
 <td width="20%"> Default</td>
 <td width="50%"> These are a special type of production environment. Each tenant has a default environment that's created automatically. Its characteristics are discussed in the following section, <a href="#the-default-environment">The default environment</a>. </td>
-<td width="30%">  Limited control&mdash;all licensed users* have the Environment Maker role.</td>
+<td width="30%">  Limited control. All licensed users* have the Environment Maker role.</td>
 <tr>
 <td width="20%"> Sandbox</td>
 <td width="50%">   These are non-production environments, which offer features like copy and reset. Sandbox environments are used for development and testing, separate from production. Provisioning sandbox environments can be restricted to admins (because production environment creation can be blocked), but converting from a production to a sandbox environment can't be blocked. </td>
-<td width="30%">  Full control. <br />If used for testing, only user access is needed. <br />Developers require Environment Maker access to create resources.</td>
+<td width="30%">  Full control. If used for testing, only user access is needed. Developers require Environment Maker access to create resources.</td>
 </tr>
 <tr>
 <td width="20%"> Trial</td>
@@ -101,11 +101,10 @@ There are multiple types of environments. The type indicates the purpose of the 
 <tr>
 <td width="20%"> Microsoft Dataverse for Teams</td>
 <td width="50%">  Dataverse for Teams environments are automatically created for the selected team when you create an app in Teams using the Power Apps app for the first time or install a Power Apps app from the app catalog. See <a href="about-teams-environment.md">About the Dataverse for Teams environment</a>. </td>
-<td width="30%">  Tenant admins and/or Power Platform admins will not be able to access any of the core customer data in the Teams environment. However, they will be able to perform all system management operations, including customizations and updating user records, among other options. </td>
+<td width="30%">  Limited control. Admins have limited settings available for Teams environments.  No customizations of security role or assignments are available.  Teams members are automatically mapped to their Teams membership type - Owners, Members, and Guests - with a corresponding security role assigned by the system.  </td>
 </tr>
 <tr><td colspan="3">*&#8202;Users licensed for Power Apps, Power Automate, Microsoft 365, and Dynamics 365, standalone licenses, and free and trial licenses.</td></tr>
 </table>
-
 
 <a name="the-default-environment"></a>
 
