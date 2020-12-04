@@ -14,7 +14,6 @@ ms.collection: virtual-agent
 
 # Responding to requests to delete data from Power Virtual Agents
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 Power Virtual Agents offers the following experiences to delete personal data for a specific user:
 
