@@ -1,12 +1,14 @@
 ---
 title: System and application users | Microsoft Docs
 description: About system and application users 
-author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
 ms.date: 11/30/2020
-ms.author: jimholtz
+author: jayasreekumar
+ms.author: jkumar
+ms.reviewer: jimholtz
+ms.custom: "admin-security"
 search.audienceType: 
   - admin
 search.app:
@@ -17,6 +19,8 @@ search.app:
 ---
 
 # System and application users
+
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 There is a list of special system and application users that is created when the system is provisioned.  Special system users are created for integration and support scenarios. Application users are created during system provisioning for setup and configuration management.  [Application users](create-users-assign-online-security-roles.md#create-an-application-user) can also be used for performing back-end services.  
 

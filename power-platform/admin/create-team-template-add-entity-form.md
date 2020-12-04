@@ -4,6 +4,7 @@ description: Create a team template and add to an entity form
 author: paulliew
 ms.author: paulliew
 ms.reviewer: jimholtz
+ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual

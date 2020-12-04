@@ -1,13 +1,14 @@
 ---
 title: "Manage user account synchronization  | MicrosoftDocs"
 description: Manage user account synchronization
-author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 07/17/2019
-ms.author: jimholtz
+author: jayasreekumar
+ms.author: jkumar
+ms.reviewer: jimholtz
+ms.custom: "admin-security"
 search.audienceType: 
   - admin
 search.app:
