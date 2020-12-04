@@ -2,7 +2,6 @@
 title: "Restrict cross-tenant access   | MicrosoftDocs"
 description: Restrict cross-tenant access  
 ms.date: 11/18/2020
-ms.reviewer: ""
 ms.service: power-platform
 ms.suite: ""
 ms.tgt_pltfrm: ""

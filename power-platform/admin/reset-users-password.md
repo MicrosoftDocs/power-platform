@@ -9,7 +9,6 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/30/2017
-ms.author: jimholtz
 search.audienceType: 
   - admin
 search.app:
