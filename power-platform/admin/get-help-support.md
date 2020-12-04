@@ -125,7 +125,7 @@ Do **not** select topics from **Administration Center** as this can result in lo
 > ![Don't select from this list for app issues](media/support-dont-use-administration-center.png "Don't select from this list for app issues")
 
 ## Model driven apps and support environments
-For some support requests, you’ll be asked to request a support environment. Currently, support environments can’t be created for the Power Apps or Power Automate product options in the **What product where you using when the issue occurred** field. To create a support request which includes a support environment for Power Platform issues, select the **Dynamics 365 Customer Engagement** product for that field.
+For some support requests, you’ll be asked to request a support environment. Currently, support environments can’t be created for the Power Apps or Power Automate product options in the **What product where you using when the issue occurred?** field. To create a support request which includes a support environment for Power Platform issues, select the **Dynamics 365 Customer Engagement** product for that field.
 
 > [!div class="mx-imgBorder"] 
 > ![Select Dynamics 365 Customer Engagement](media/new-support-request-ce-product.png "Select Dynamics 365 Customer Engagement")
