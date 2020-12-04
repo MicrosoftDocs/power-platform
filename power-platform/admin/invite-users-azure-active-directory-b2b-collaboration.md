@@ -1,12 +1,14 @@
 ---
 title: "Invite users with Azure Active Directory B2B collaboration  | MicrosoftDocs"
 description: Invite users with Azure Active Directory B2B collaboration
-author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/08/2020
-ms.author: jimholtz
+author: jayasreekumar
+ms.author: jkumar
+ms.reviewer: jimholtz
+ms.custom: "admin-security"
 search.audienceType: 
   - admin
 search.app:
