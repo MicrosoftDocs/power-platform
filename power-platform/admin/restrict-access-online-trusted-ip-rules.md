@@ -1,12 +1,14 @@
 ---
 title: "Block access by location with Azure AD Conditional Access  | MicrosoftDocs"
 description: Block access by location with Azure AD Conditional Access
-author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/09/2020
-ms.author: jimholtz
+author: jayasreekumar
+ms.author: jkumar
+ms.reviewer: jimholtz
+ms.custom: "admin-security"
 search.audienceType: 
   - admin
 search.app:
@@ -16,6 +18,8 @@ search.app:
   - Flow
 ---
 # Block access by location with Azure AD Conditional Access
+
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 You can limit access to users with block access by location to reduce unauthorized access. When block access by location restrictions are set in a user’s profile and the user tries to log in from a blocked location, access to customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), are blocked.  
   

@@ -1,12 +1,14 @@
 ---
 title: "Data encryption | MicrosoftDocs"
 description: Data encryption
-author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/04/2020
-ms.author: matp
+author: jayasreekumar
+ms.author: jkumar
+ms.reviewer: matp
+ms.custom: "admin-security"
 search.audienceType: 
   - admin
 search.app:

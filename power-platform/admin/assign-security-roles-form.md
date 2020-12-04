@@ -4,6 +4,7 @@ description: Assign security roles to a form
 author: paulliew
 ms.author: paulliew
 ms.reviewer: jimholtz
+ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
