@@ -29,10 +29,12 @@ notification can span a few years. After removal, the feature or capability will
 
 Effective December 2020, Microsoft Internet Explorer 11 support for Dynamics 365 and Microsoft Power Platform is deprecated, and Internet Explorer 11 won’t be supported after August, 2021. 
 
-This will impact customers who use Dynamics 365 and Microsoft Power Platform products that are designed to be used through an Internet Explorer 11 interface. After August 2021, Internet Explorer 11 won't be supported for such Dynamics 365 and Microsoft Power Platform products. It is recommended that customers transition to Microsoft Edge. 
+This will impact customers who use Dynamics 365 and Microsoft Power Platform products that are designed to be used through an Internet Explorer 11 interface. After August 2021, Internet Explorer 11 won't be supported for such Dynamics 365 and Microsoft Power Platform products. We recommend that customers transition to Microsoft Edge. 
+<!--note from editor: Per the style guide, we should not use "it is recommended". I would have changed it to "required", but I am assuming customers can use any browser they want. If we require them to use Edge, then please fix it to say that. https://styleguides.azurewebsites.net/Styleguide/Read?id=2700&topicid=35666-->
+
 
 For the complete list of products impacted by this change and transitioning from Internet Explorer 11 to a supported browser, see this [FAQ](https://aka.ms/IEsupportDeprecationBAG). If you have additional questions, contact your Microsoft Customer Service representative or Microsoft Partner.
-
+<!--note from editor: It would be better for accessibility to put the FAQ title in the link. I can't access the page, or I would do that. I don't have a login for it. Please fix. -->
 
 ## Organization data download filters for mobile offline are deprecated. 
 
