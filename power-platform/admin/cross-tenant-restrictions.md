@@ -1,7 +1,6 @@
 ---
 title: "Restrict cross-tenant access   | MicrosoftDocs"
 description: Restrict cross-tenant access  
-ms.custom: ""
 ms.date: 11/18/2020
 ms.reviewer: ""
 ms.service: power-platform
@@ -10,10 +9,12 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 applies_to: 
   - "Dynamics 365 (online)"
-author: "jimholtz"
 ms.assetid: 
 caps.latest.revision: 63
-ms.author: "jimholtz"
+author: jayasreekumar
+ms.author: jkumar
+ms.reviewer: jimholtz
+ms.custom: "admin-security"
 search.audienceType: 
   - admin
 search.app:

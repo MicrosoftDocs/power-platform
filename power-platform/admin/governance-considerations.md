@@ -1,12 +1,14 @@
 ---
 title: Governance considerations | Microsoft Docs
 description: Explains how Power Apps and Power Automate be made widely available to their business and be supported by IT.
-author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 10/12/2020
-ms.author: jimholtz
+author: jayasreekumar
+ms.author: jkumar
+ms.reviewer: jimholtz
+ms.custom: "admin-security"
 search.audienceType: 
   - admin
 search.app:

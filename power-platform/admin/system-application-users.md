@@ -1,12 +1,14 @@
 ---
 title: System and application users | Microsoft Docs
 description: About system and application users 
-author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
 ms.date: 11/30/2020
-ms.author: jimholtz
+author: jayasreekumar
+ms.author: jkumar
+ms.reviewer: jimholtz
+ms.custom: "admin-security"
 search.audienceType: 
   - admin
 search.app:

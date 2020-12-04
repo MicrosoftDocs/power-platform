@@ -5,6 +5,7 @@ services: powerapps
 author: jayasreekumar
 ms.author: jkumar
 ms.reviewer: jimholtz
+ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual

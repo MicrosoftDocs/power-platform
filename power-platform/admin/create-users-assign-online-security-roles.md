@@ -4,6 +4,7 @@ description: About creating users and assign security roles
 author: jayasreekumar
 ms.reviewer: jimholtz
 ms.author: jkumar
+ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
