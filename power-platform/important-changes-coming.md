@@ -1,7 +1,7 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps"
 description: Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps 
-ms.date: 12/02/2020
+ms.date: 12/04/2020
 ms.topic: "article"
 ms.assetid: 994cc854-17f6-45d6-bc20-fcf1a3f2d6d6
 searchScope:
@@ -30,11 +30,8 @@ notification can span a few years. After removal, the feature or capability will
 Effective December 2020, Microsoft Internet Explorer 11 support for Microsoft Dynamics 365 and Microsoft Power Platform is deprecated, and Internet Explorer 11 won’t be supported after August, 2021. 
 
 This will impact customers who use Dynamics 365 and Microsoft Power Platform products that are designed to be used through an Internet Explorer 11 interface. After August 2021, Internet Explorer 11 won't be supported for such Dynamics 365 and Microsoft Power Platform products. We recommend that customers transition to Microsoft Edge. 
-<!--note from editor: Per the style guide, we should not use "it is recommended". I would have changed it to "required", but I am assuming customers can use any browser they want. If we require them to use Edge, then please fix it to say that. https://styleguides.azurewebsites.net/Styleguide/Read?id=2700&topicid=35666-->
 
-
-For the complete list of products impacted by this change and transitioning from Internet Explorer 11 to a supported browser, see this [FAQ](https://aka.ms/IEsupportDeprecationBAG). If you have additional questions, contact your Microsoft Customer Service representative or Microsoft Partner.
-<!--note from editor: It would be better for accessibility to put the FAQ title in the link. I can't access the page, or I would do that. I don't have a login for it. Please fix. -->
+For the complete list of products impacted by this change and transitioning from Internet Explorer 11 to a supported browser, see this [FAQ: Internet Explorer 11 deprecation for Dynamics 365 and Microsoft Power Platform Products](https://aka.ms/IEsupportDeprecationBAG). If you have additional questions, contact your Microsoft Customer Service representative or Microsoft Partner.
 
 ## Organization data download filters for mobile offline are deprecated. 
 
