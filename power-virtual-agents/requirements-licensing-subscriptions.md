@@ -37,8 +37,8 @@ Web security | [Secure access enabled by default, no ability to generate secrets
 Azure bot framework skills | Not available | [Ability to extend Power Virtual Agents bots with Azure bot framework skills](advanced-use-skills.md)
 
 >[!NOTE]
->A paid, standalone Power Virtual Agents subscription is required to run flows with premium connectors in the context of Power Virtual Agents chatbots. 
->Similarly, use rights and functionality available as part of paid, standalone Power Automate subscriptions serve automation scenarios and cannot be applied to Power Virtual Agents scenarios.
+>A paid, standalone Power Virtual Agents subscription is required to run flows with premium connectors in the context of Power Virtual Agents chatbots.  
+Similarly, use rights and functionality available as part of paid, standalone Power Automate subscriptions serve automation scenarios and cannot be applied to Power Virtual Agents scenarios.
 
 ### Upgrading your license
 To access the full range of Power Virtual Agents capabilities, you need to upgrade your plan to a standalone Power Virtual Agents subscription. 
