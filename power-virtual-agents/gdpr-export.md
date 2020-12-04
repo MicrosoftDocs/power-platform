@@ -13,7 +13,6 @@ ms.collection: virtual-agent
 
 # Export data to respond to requests for copies of personal data in Power Virtual Agents
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 
 
