@@ -1,13 +1,13 @@
 ---
 title: "Security concepts in Microsoft Dataverse | MicrosoftDocs"
 description: Provides detailed information about the security model and concepts in Microsoft Dataverse.
-ms.custom: ""
 ms.date: 07/21/2020
-ms.reviewer: "jimholtz"
 ms.service: power-platform
 ms.topic: "article"
-author: "jimholtz"
-ms.author: "jimholtz"
+author: jayasreekumar
+ms.author: jkumar
+ms.reviewer: jimholtz
+ms.custom: "admin-security"
 search.audienceType: 
   - admin
 search.app:
