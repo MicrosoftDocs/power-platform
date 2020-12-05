@@ -50,7 +50,7 @@ Make sure you have the System Administrator or System Customizer security role o
 > |Show app download message|Default: On. If **On**, users will see a message regarding downloading the Dynamics 365 for tablets app.|  
 > |Show legacy app to everyone, not just admin|Default: On. The legacy web app, also known as *Dynamics 365 - custom*, is hidden from end users when a new environment is provisioned. It is always visible to those with System Administrator and System Customizer roles, and to other custom roles with similar privileges.  More information: [Dynamics 365 - custom](enable-unified-interface-only.md#dynamics-365---custom).|  
 > |Legacy app name|Enter the label to use for the legacy app. This appears on the Dynamics 365 home page. The legacy label is *Dynamics 365 - custom*. More information: [Dynamics 365 - custom](enable-unified-interface-only.md#dynamics-365---custom).|
-> |Show welcome screen on sign in|Default: On. Select **On** to see the detailed card form in a dashboard. If set to **Off**, only the header and minimal details are displayed in the card form.|  
+> |Show welcome screen on sign in|Default: On.|  
 > |Show Microsoft Power Automate on forms and in the site map|Default: On. Select **On** to enable embedded Power Automate flows in your organization. More information: [Enable embedded Power Automate to automate processes](enable-embedded-flow-in-your-organization.md).|  
 > |Show dashboard cards in expanded state|Default: Off. Select **On** to see the detailed card form in a dashboard. If set to **Off**, only the header and minimal details are displayed in the card form.|  
 
