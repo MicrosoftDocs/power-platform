@@ -33,7 +33,7 @@ This will impact customers who use Dynamics 365 and Microsoft Power Platform pro
 
 For the complete list of products impacted by this change and transitioning from Internet Explorer 11 to a supported browser, see [FAQ: Internet Explorer 11 deprecation for Dynamics 365 and Microsoft Power Platform Products](https://aka.ms/IEsupportDeprecationBAG). If you have additional questions, contact your Microsoft Customer Service representative or Microsoft Partner.
 
-## Organization data download filters for mobile offline are deprecated. 
+## Organization data download filters for mobile offline are deprecated 
 
 Effective February 2021, **Organization data download filter** option that filters the data when you set up mobile offline are deprecated. We recommend that you start preparing your organization and move relevant data filters from **Organization data download filter** to the offline profile option, which lets you determine what data will be available when users work in offline mode. For more information, see [Create a mobile offline profile](https://docs.microsoft.com/dynamics365/mobile-app/preview-setup-mobile-offline#step-2-create-a-mobile-offline-profile-to-determine-what-data-will-be-available-while-offline). Once the old filter criteria has been moved to offline profile, you can clear or delete the filters set in **Organization data download filter**. 
 
