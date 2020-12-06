@@ -1,6 +1,6 @@
 ---
-title: Set up the export to Application Insights from the Power Platform admin center| Microsoft Docs
-description: About setting up the export to Application Insights from the Power Platform admin center
+title: Set up exporting to Application Insights | Microsoft Docs
+description: About setting up exporting to Application Insights from the Power Platform admin center
 services: powerapps
 author: jimholtz
 ms.service: power-platform
@@ -16,4 +16,4 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Set up the export to Application Insights from the Power Platform admin center
+# Set up  exporting to Application Insights 
