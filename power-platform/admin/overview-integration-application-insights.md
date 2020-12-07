@@ -49,7 +49,8 @@ take 100
 
 App insights provides different views. The Overview panel shows a summary of the key diagnostic metrics of your app and is a gateway to the other features of the portal. You can drill into metrics for more details. See sample below.
 
-image
+> [!div class="mx-imgBorder"] 
+> ![Application Insights Overview panel](media/application-insights-overview.png "Application Insights Overview panel")
 
 ## Performance  panel in Application Insights
 
@@ -59,7 +60,8 @@ The Performance panel shows the count and average duration of each operation for
 
 Under the server section, the most frequently called API's and what the latency looks like are listed. 
 
-image
+> [!div class="mx-imgBorder"] 
+> ![Application Insights Performance panel](media/application-insights-performance.png "Application Insights Performance panel")
 
 Calls with higher number of calls and higher duration are potential items for investigation. In the above example, the POST /XRMServices/2011/Organization.svc/web has a high number of calls and a high duration.  Similarly, the GET /api/data/v9.0/accounts has a relatively higher duration. 
 
@@ -68,10 +70,13 @@ Selecting one of the operations will also show you details on top 3 dependencies
 If you toggle to the Browser view, you will see data on which pages are being hit most frequently in the environment and what the latency for each of these. You will see metrics including session counts and the dependencies associated with the different operations. For example, clicking on the Accounts operation will provide requests made to the account entity.
 
 image
+> [!div class="mx-imgBorder"] 
+> ![Application Insights Performance panel for account](media/application-insights-performance-account.png "Application Insights Performance panel for account")
 
 You could drill into a specific sample to see where time is spent on the particular operation. 
 
-image
+> [!div class="mx-imgBorder"] 
+> ![Application Insights Performance transaction details](media/application-insights-performance-transaction-details.png "Application Insights Performance transaction details")
 
 Reference to Application Insights documentation for performance issues
 
@@ -79,19 +84,23 @@ Reference to Application Insights documentation for performance issues
 
 To open the Failures panel either select Failures under the Investigate menu or click the Failed requests graph.
 
-image
+> [!div class="mx-imgBorder"] 
+> ![Application Insights failures](media/application-insights-failures.png "Application Insights failures")
 
 The exceptions table in Application Insights powers the Failure panel. It shows the count of failed requests and the number of users affected for each operation for the application. You can see error details for the operations, dependencies, on the errors for both server and browser.  Failures related to CRUD specific http methods (GET, POST, PUT, DELETE) used in the API operations are available here. This can be used to identify those failures that most impact users. For example, you can see below that the GET/api/data/v9.0/GetClientMetaData operation has a high number of failures and users. Selecting this operation shows further information about this operation in the right panel.  
 
-image
+> [!div class="mx-imgBorder"] 
+> ![Application Insights failure dependencies](media/application-insights-failures-dependencies.png "Application Insights failure dependencies")
 
 You can also see the failures related to the dependencies including summary view of the common response codes mapped to failures.
 
-image
+> [!div class="mx-imgBorder"] 
+> ![Application Insights failures details](media/application-insights-failures-details.png "Application Insights failures details")
 
 You can drill into the details of the step where the bottleneck occurred.
 
-image
+> [!div class="mx-imgBorder"] 
+> ![Application Insights logs query](media/application-insights-logs-query.png "Application Insights log query")
 
 Reference to using Application Insights to find application run-time exceptions.
 
@@ -100,6 +109,8 @@ Reference to using Application Insights to find application run-time exceptions.
 In Application Insights, go to the the Logs panel under Monitoring menu.
 
 image
+> [!div class="mx-imgBorder"] 
+> ![Application Insights logs query](media/application-insights-logs-query.png "Application Insights log query")
 
 **Common Fields**: All the tables populated in Application insights have these common fields.
 
