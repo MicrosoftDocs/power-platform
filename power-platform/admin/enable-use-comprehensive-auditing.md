@@ -93,14 +93,17 @@ The customer engagement apps schema contains fields specific to customer engagem
 ## Enable auditing 
 
 1. Choose **Settings** > **Administration** > **System Settings** > **Auditing tab**.
+	- From the [Power Apps Home Page](https://make.powerapps.com/), click **Settings (gear icon)** > **Advanced settings** >  **Expand the Settings dropdown** > **Auditing** > **Global Audit Settings**.
 2. Under **Audit Settings**, enable the following check boxes:
    - **Start Auditing**
-   - **Audit user access**
-   - **Start Read Auditing** (Note: this only appears if you enable **Start Auditing**.)
+   - **Audit user access** (Note: captures user login only.)
+   - **Start Read Auditing** (Note: captures most user activities/events.)
 3. Under **Enable Auditing in the following areas**, enable the check boxes for the areas you want to audit and then choose **OK**.
    
    ![System Settings Auditing](media/system-settings-auditing.png "System Settings Auditing")
-4. Go to **Settings** > **Customizations** > **Customize the System**
+4. To set Table- and Field-level auditing, go to **Settings** > **Customizations** > **Customize the System**
+	- From the System Settings screen (above), click **Entity and Field Audit Settings**.
+	- From the [Power Apps Home Page](https://make.powerapps.com/), click **Settings (gear icon)** > **Advanced settings** >  **Expand the Settings dropdown** > **Customizations** > **Customize the System**.
 5. Under **Components**, expand **Entities** and select an entity to audit, such as **Account**.
 6. Scroll down and under **Data Services** enable **Auditing**.
 7. Under **Auditing**, enable the following check boxes:
