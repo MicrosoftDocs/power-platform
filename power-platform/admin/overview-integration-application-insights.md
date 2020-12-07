@@ -69,7 +69,6 @@ Selecting one of the operations will also show you details on top 3 dependencies
 
 If you toggle to the Browser view, you will see data on which pages are being hit most frequently in the environment and what the latency for each of these. You will see metrics including session counts and the dependencies associated with the different operations. For example, clicking on the Accounts operation will provide requests made to the account entity.
 
-image
 > [!div class="mx-imgBorder"] 
 > ![Application Insights Performance panel for account](media/application-insights-performance-account.png "Application Insights Performance panel for account")
 
@@ -108,7 +107,6 @@ Reference to using Application Insights to find application run-time exceptions.
 
 In Application Insights, go to the the Logs panel under Monitoring menu.
 
-image
 > [!div class="mx-imgBorder"] 
 > ![Application Insights logs query](media/application-insights-logs-query.png "Application Insights log query")
 
