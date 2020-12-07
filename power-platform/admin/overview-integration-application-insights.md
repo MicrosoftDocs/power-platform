@@ -22,12 +22,11 @@ Application Insights a part of the Azure monitoring eco-system, is widely used w
 
 ## What telemetry and which tables are being populated in the Application Insights? 
 
-
 |Telemetry type  |Application Insights table name  |
 |---------|---------|
 |UCI page loads      | Page views        |
 |UCI outbound network requests     | Dependency        |
-|CDS API incoming calls     | Request        |
+|Dataverse API incoming calls     | Request        |
 |Plugin executions     | Dependency        |
 |SDK executions (Retrieve, RetrieveMultiple, FetchXml transformation, etc.)     | Dependency        |
 |Exceptions during execution of plugin and SDK calls     | Exceptions        |
@@ -42,7 +41,9 @@ Application Insights has a wide range of features that will help you to leverage
 
 Example: List top 10 records for formloads in the pageviews table 
 pageViews
-| take 100
+```
+take 100
+```
 
 ## Overview panel in Application Insights
 
@@ -109,7 +110,7 @@ union requests, dependencies, pageViews
 - **session_Id**  : This uniquely identifies all activities in a single user session. The session value is reset when a user opens a new tab, hits F5/refresh, closes and reopens the mobile app.
 - **user_Id, user_AuthenticatedId**: These are both currently set to the Azure Active Directory id of the user. 
 - **client_IP**: This field is always populated to 0.0.0.0 by Application Insights for GDPR compliance. The IP address provided is used to populate the client_City, client_StateOrProvince, client_CountryOrRegion fields.
-- **client_Type**: The value here is “Browser” if the logs are coming from UCI and its “Server” if logs are coming from CDS. Note that the userAgent can be found in the ‘requests’ table under customDimensions when available.
+- **client_Type**: The value here is “Browser” if the logs are coming from UCI and its “Server” if logs are coming from Dataverse. Note that the userAgent can be found in the ‘requests’ table under customDimensions when available.
 
 Since the Application Insights schema is fixed, and this feature pushed data into Application Insights as an export process, the customDimensions fields in Application Insights is used to add properties. 
 

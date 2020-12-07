@@ -59,7 +59,7 @@ There are additional properties in customDimensions that provide more details fo
 
 pageView
 ```
-|take 1
+take 1
 ```
 
 image
