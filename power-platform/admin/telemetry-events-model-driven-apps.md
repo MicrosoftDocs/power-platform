@@ -58,7 +58,9 @@ This data goes into the pageView table in Application Insights. An entry is logg
 There are additional properties in customDimensions that provide more details for UCI Page Loads. For example, this query will return the values for all the attributes in the pageView table.
 
 pageView
+```
 |take 1
+```
 
 image
 
@@ -87,7 +89,9 @@ For CDS events, the id field or operation_ParentId in AppInsights is the x-ms-se
 These are calls to other dependencies made by UCI to render a certain page. This could be outgoing calls to CDS, or other integrations like Azure DevOps, Office etc. This data is available in the “dependency” table with the name “UCI Request”.
 dependencies
 
-| where type == "UCI REQUEST"
+```
+where type == "UCI REQUEST"
+```
 
 **Fields**: 
 - **Name**: The URL being invoked by UCI
@@ -121,25 +125,31 @@ image
 
 In the above request, the UCI request takes longer than the actual CDS API (Web API request). The breakdown in this case is the duration of the CDS API call(56ms) + CustomProperties.warmLatency(89ms) which adds up to close to the complete operation duration(144ms). The warmLatency is indicative of slowness for that particular client and could be an issue analyzed at the user level with the following query:
 dependencies
-| where ['type'] == "UCI REQUEST"
-| summarize avg(toint(customDimensions.warmLatency)), avg(toint(customDimensions.coldLatency)), avg(toint(customDimensions.warmThroughput)) by user_Id
 
+```
+where ['type'] == "UCI REQUEST"
+summarize avg(toint(customDimensions.warmLatency)), avg(toint(customDimensions.coldLatency)), avg(toint(customDimensions.warmThroughput)) by user_Id
+```
 
 pageViews
-| summarize avg(toint(customDimensions.warmLatency)), avg(toint(customDimensions.coldLatency)), avg(toint(customDimensions.warmThroughput)) by user_Id
-
+```
+summarize avg(toint(customDimensions.warmLatency)), avg(toint(customDimensions.coldLatency)), avg(toint(customDimensions.warmThroughput)) by user_Id
+```
 
 ## Can I determine how the user is accessing the system?
 
 The userAgent attribute in the customDimensions field in the requests table of Application Insights has this data.  The below query can be used to get an overview of the different sources from where the users are accessing the system.
 
 pageViews
-| summarize count() by tostring(customDimensions.userAgent), user_Id
+```
+summarize count() by tostring(customDimensions.userAgent), user_Id
+```
 
 dependencies
-| where ['type'] == "UCI REQUEST"
-| summarize count() by tostring(customDimensions.userAgent), user_Id
-
+```
+where ['type'] == "UCI REQUEST"
+summarize count() by tostring(customDimensions.userAgent), user_Id
+```
 
 |When the customDimensions.userAgent value starts with  | Where is the user accessing the system from   |
 |---------|---------|
@@ -171,8 +181,11 @@ dependencies
 
 
 ## How do I get the count of users accessing from browser, mobile or embedded application?
+
 pageViews
-| summarize count() by tostring(customDimensions.hostType)
+```
+summarize count() by tostring(customDimensions.hostType)
+```
 
 Sample result-set
 
@@ -181,14 +194,18 @@ image
 ## To narrow down to a specific user:
 
 pageViews
-| where user_Id == “<userid>”
-| summarize count() by tostring(customDimensions.hostType)
+```
+where user_Id == “<userid>”
+summarize count() by tostring(customDimensions.hostType)
+```
 
 Using Application Insights in conjunction with UCI Monitor tool:
 The UCI monitor tool helps with realtime troubleshooting on a session from the UCI side. The end to end transaction requests should be available in Application Insights. To look at the logs for a given action, note the Activity Id from a row in the Event Details in Monitor. This can be used to query for logs as follows:
 
 union *
-| where operation_Id contains "<ActivityIdHere>"
+```
+where operation_Id contains "<ActivityIdHere>"
+```
 
 Note that the Monitor tool is a realtime debugging tool, however, data availability through this feature could take up to a few hours.
 
@@ -203,13 +220,16 @@ This can then be used to look at all the activities in that session to look for 
 image
 
 union *
-| where session_Id == '<sessionIdHere>'
-
+```
+where session_Id == '<sessionIdHere>'
+```
 
 ## Which forms are being used in different locations and the load performance of the forms in these locations?
 
 pageViews
-| summarize avg(duration) by name, client_City, client_CountryOrRegion
+```
+summarize avg(duration) by name, client_City, client_CountryOrRegion
+```
 
 ## Is an external API call the failure and drill down into the error stack to help with debug?
 
@@ -218,7 +238,4 @@ image
 The Browser section of the Failures pane contains UCI outgoing requests. The requests going to CDS or the organization contain the organization URL. There might be other requests going to other URLs (for instance this organization has a customization calling out to dc.services.visualstudio.com). Failures for these external outgoing calls can then be drilled into by looking at the end-to-end transaction.
 
 ## Can I set an alert on performance threshold for certain form actions? When the alert is received will it allow a maker to diagnose and troubleshoot the issue?
-
-
-
 
