@@ -20,7 +20,6 @@ Power Virtual Agents in Teams supports single sign-on (SSO), which means chatbot
 
 >[!IMPORTANT] 
 >Teams SSO is only supported for Azure Active Directory (Azure AD). Other account types such as Microsoft Account or other OAuth accounts are not supported for SSO in Power Virtual Agents in Teams.
-
 >You can suggest support for additional account types at the [at the Power Virtual Agents ideas forum](https://powerusers.microsoft.com/t5/Power-Virtual-Agents-Ideas/idb-p/pva_ideas).
 
 >[!IMPORTANT] 
@@ -46,13 +45,13 @@ The steps required to configure single sign on for SSO are:
 
 The first step is to get the Teams app ID. To get this, log into the PVA portal at [https://powerva.microsoft.com](https://powerva.microsoft.com) and open the bot that you want to configure Teams SSO for.
  
-Go to Manage -> Channels -> Microsoft Teams.
+Go to **Manage** -> **Channels** -> **Microsoft Teams**.
  
 In the panel on the right, select 'Submit for admin approval' and then copy the app ID by clicking on Copy. This will copy the app ID that you will next use in the Azure app registration you created for the AAD authentication.
 
 <IMAGE 1>
 
-Note, if you haven't already enabled the Teams channel, you will see this. Select 'Turn on Teams' and then re-try step 1 above to get the app ID.
+Note, if you haven't already enabled the Teams channel, you will see this. Select **Turn on Teams** and then re-try step 1 above to get the app ID.
 
 <IMAGE 2>
 
@@ -79,7 +78,7 @@ Go to **API Permissions**. Select **Grant admin consent for <your tenant name>**
 
 ### Define a custom scope for your bot
 
-Now, back on the 'Expose an API' screen, go to 'Add a scope'
+Now, back on the **Expose an API** screen, go to **Add a scope**
 
 <IMAGE 5>
 
@@ -95,17 +94,18 @@ Enter a scope name, Admin consent display name, Admin consent description.
 
 Next, add two client applications IDs. There is a separate client ID for the Teams mobile/desktop application vs. Teams on the web.
  
-1fec8e78-bce4-4aaf-ab1b-5451cc387264 (Teams mobile/desktop application)
-5e3ce6c0-2b1f-4285-8d4b-75ee78787346 (Teams on the web)
+```1fec8e78-bce4-4aaf-ab1b-5451cc387264``` (Teams mobile/desktop application)
+
+```5e3ce6c0-2b1f-4285-8d4b-75ee78787346``` (Teams on the web)
  
-Select Add a client application.
-Enter the first Application (client) ID, 1fec8e78-bce4-4aaf-ab1b-5451cc387264 into the Client ID field. Select the checkbox for the listed scope that you created.
+Select **Add a client application**.
+Enter the first Application (client) ID, ```1fec8e78-bce4-4aaf-ab1b-5451cc387264``` into the **Client ID** field. Select the checkbox for the listed scope that you created.
  
 Select Add application.
 
 <IMAGE 7>
 
-Repeat the same and add 5e3ce6c0-2b1f-4285-8d4b-75ee78787346 as the second application (client ID) and make sure to select the scope checkbox.
+Repeat the same and add ```5e3ce6c0-2b1f-4285-8d4b-75ee78787346``` as the second application (client ID) and make sure to select the scope checkbox.
  
 Once these steps are done, the 'Expose an API' page should have these values: 
 
@@ -138,12 +138,11 @@ Select **More** to expand to see the Teams SSO configuration details. Scroll all
  
 Here, add the following:
  
-AAD application's client ID: Add the Application ID from the Overview page of the AAD app registration. This is the same client ID that was add ed in the Client ID field when creating the AAD authentication in PVA.
+AAD application's client ID: Add the Application ID from the Overview page of the AAD app registration. This is the same client ID that was add ed in the **Client ID** field when creating the AAD authentication in PVA.
  
-Resource URI: This is the Application ID URI from the 'Expose an API' page in the AAD app registration.
+Resource URI: This is the Application ID URI from the **Expose an API** page in the AAD app registration.
  
-Save
-Close
+Save and Close
 
 
 <IMAGE 10>
@@ -153,7 +152,10 @@ With this, you have successfully configured SSO for your Teams bot.
 These steps update the manifest file. Now you can actually download the manifest file (zip file) and then upload to Teams for test or distribution.
 
 Select **Download manifest** to get the new manifest.
- 
+
+>[!NOTE] 
+> Make sure to test your bot authentication functionality in all channels to ensure they are working as intended.
+
 <IMAGE 11>
 
 
