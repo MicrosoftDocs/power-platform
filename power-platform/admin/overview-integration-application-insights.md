@@ -18,7 +18,7 @@ search.app:
 ---
 # Overview of integration with Application Insights
 
-Application Insights a part of the Azure monitoring eco-system, is widely used within the enterprise landscape for monitoring and diagnostics. Data from a specific org/environment that is already collected will be pushed to your own Application Insights instance. The data is stored in Log Analytics by Application Insights and visualized in Performance and Failures panels under the Investigate menu. The data is exported to your Application Insights instance in the standard schema defined by Application Insights. The support, developer and admin persona can leverage this feature to triage and resolve issues.
+Application Insights, a part of the Azure monitoring ecosystem, is widely used within the enterprise landscape for monitoring and diagnostics. Data from a specific tenant or environment that is already collected will be pushed to your own Application Insights environment. The data is stored in Log Analytics by Application Insights and visualized in [Performance](https://docs.microsoft.com/azure/azure-monitor/learn/tutorial-performance) and [Failures](https://docs.microsoft.com/azure/azure-monitor/learn/tutorial-runtime-exceptions) panels under the **Investigate** menu. The data is exported to your Application Insights environment in the standard schema defined by Application Insights. The support, developer, and admin persona can leverage this feature to triage and resolve issues.
 
 ## What telemetry and which tables are being populated in the Application Insights? 
 
@@ -27,7 +27,7 @@ Application Insights a part of the Azure monitoring eco-system, is widely used w
 |UCI page loads      | Page views        |
 |UCI outbound network requests     | Dependency        |
 |Dataverse API incoming calls     | Request        |
-|Plugin executions     | Dependency        |
+|Plug-in executions     | Dependency        |
 |SDK executions (Retrieve, RetrieveMultiple, FetchXml transformation, etc.)     | Dependency        |
 |Exceptions during execution of plugin and SDK calls     | Exceptions        |
 
