@@ -19,7 +19,7 @@ ms.collection: virtual-agent
 Power Virtual Agents in Teams supports single sign-on (SSO), which means chatbots can sign the user in silently, without having the user sign in again. The user would already be signed in when using Teams, and this provides a seamless experience in a Power Virtual Agents bot in Teams for scenarios that require user specific information like user name. 
 
 >[!IMPORTANT] 
->Teams SSO is only supported for Azure Active Directory v2 application (Azure AD v2 application). Other application types such as Azure AD v1, Microsoft Account, or other OAuth accounts does not support  SSO in Power Virtual Agents.
+>Teams SSO is only supported for Azure Active Directory v2 application (Azure AD v2 application). Other application types such as Azure AD v1 does not support SSO in Power Virtual Agents.
 >You can suggest support for additional account types at the [at the Power Virtual Agents ideas forum](https://powerusers.microsoft.com/t5/Power-Virtual-Agents-Ideas/idb-p/pva_ideas).
 
 >[!IMPORTANT] 
