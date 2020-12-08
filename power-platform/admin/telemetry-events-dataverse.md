@@ -98,6 +98,9 @@ These failure details correlate with the rest of the events in the Plugin and SD
 
 You will notice that some of the fields in the exceptions table are not populated. This is because these fields can only be set if the Application Insights SDK is used to emit logs from the source. This feature collects platform telemetry and then pushes it into Application Insights per the Application Insights schema. 
 
+> [!div class="mx-imgBorder"] 
+> ![Application Insights exceptions table](media/application-insights-exceptions-table.png "Application Insights exceptions table")
+
 exceptions
 | take 10
 
@@ -111,7 +114,7 @@ This query will return all the attribute details from the exceptions table
   - pluginName: Name of the plugin where the exception was thrown
 
 > [!div class="mx-imgBorder"] 
-> ![Application Insights exceptions table](media/application-insights-exceptions-table.png "Application Insights exceptions table")
+> ![Application Insights exceptions table attribute details](media/application-insights-exceptions-table-attribute-details.png "Application Insights exceptions table attribute details")
 
 If a user reports an error, you could use the userid (AAD Id) to understand details from the exception table:
 
@@ -123,7 +126,7 @@ dependencies
 | where type == "SDK Retrieve"
 
 > [!div class="mx-imgBorder"] 
-> ![Application Insights exceptions table attribute details](media/application-insights-exceptions-table-attribute-details.png "Application Insights exceptions table attribute details")
+> ![Application Insights SDK retrieve query](media/application-insights-query-sdk-retrieve.png "Application Insights SDK retrieve query")
 
 1.	How can I determine if my Plugin upgrade caused a performance degradation?
 
@@ -142,7 +145,7 @@ requests
 | render timechart 
 
 > [!div class="mx-imgBorder"] 
-> ![Application Insights SDK retrieve query](media/application-insights-query-sdk-retrieve.png "Application Insights SDK retrieve query")
+> ![Application Insights API performance time chart](media/application-insights-api-performance-timechart.png "Application Insights API performance time chart")
 
 In this chart, we can see the performance of the API endpoint over a period of time against the number of requests being made.
 
@@ -153,7 +156,7 @@ You can also setup an alert based on the performance of a particular API here wi
 Looking at the Failures pane gives an overview of the failures in a given time period. You can then narrow down to a specific one based on the API call or dependency type to see the end to end view:
 
 > [!div class="mx-imgBorder"] 
-> ![Application Insights API performance time chart](media/application-insights-api-performance-timechart.png "Application Insights API performance time chart")
+> ![Application Insights failures details](media/application-insights-failures-details.png "Application Insights failures details")
 
 4.	I want to quickly build ad-hoc reports by Application/System management to understand details for my specific use case.
 
