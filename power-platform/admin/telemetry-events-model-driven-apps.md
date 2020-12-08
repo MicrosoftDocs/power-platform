@@ -83,11 +83,11 @@ take 1
 - **WarmLatency**: Subsequent estimation for network latency which is the typical expected latency for each request
 - **WarmThroughput**: Estimated throughput of the network in kbps  
 	
-For CDS events, the id field or operation_ParentId in AppInsights is the x-ms-service-request-id. The  operationId maps to the ActivityId on the backend for troubleshooting purposes and support requests.
+For Microsoft Dataverse events, the id field or operation_ParentId in AppInsights is the x-ms-service-request-id. The  operationId maps to the ActivityId on the backend for troubleshooting purposes and support requests.
 
 ## What kind of data is available for UCI Outbound network requests?
 
-These are calls to other dependencies made by UCI to render a certain page. This could be outgoing calls to CDS, or other integrations like Azure DevOps, Office etc. This data is available in the “dependency” table with the name “UCI Request”.
+These are calls to other dependencies made by UCI to render a certain page. This could be outgoing calls to Dataverse, or other integrations like Azure DevOps, Office etc. This data is available in the “dependency” table with the name “UCI Request”.
 dependencies
 
 ```
@@ -98,7 +98,7 @@ where type == "UCI REQUEST"
 - **Name**: The URL being invoked by UCI
 - **Target**: Currently the same as Name
 - **Success**: Did the call succeed or fail.   
-- **UserId**: The CDS system user id of the logged in user
+- **UserId**: The Dataverse system user id of the logged in user
 - **Duration**: The duration of the call
 - **customDimensions**: contains the below 
 
@@ -124,9 +124,9 @@ One scenario where this can very valuable is when a user from a region (say Asia
 warmLatency, warmThroughput and coldLatency can be used to understand the breakdown of where time is spent on Page Loads and other UCI requests as follows:
 
 > [!div class="mx-imgBorder"] 
-> ![Application Insights UCI sloweness](media/application-insights-uci-slowness.png "Application Insights UCI slowness")
+> ![Application Insights UCI slowness](media/application-insights-uci-slowness.png "Application Insights UCI slowness")
 
-In the above request, the UCI request takes longer than the actual CDS API (Web API request). The breakdown in this case is the duration of the CDS API call(56ms) + CustomProperties.warmLatency(89ms) which adds up to close to the complete operation duration(144ms). The warmLatency is indicative of slowness for that particular client and could be an issue analyzed at the user level with the following query:
+In the above request, the UCI request takes longer than the actual Dataverse API (Web API request). The breakdown in this case is the duration of the Dataverse API call(56ms) + CustomProperties.warmLatency(89ms) which adds up to close to the complete operation duration(144ms). The warmLatency is indicative of slowness for that particular client and could be an issue analyzed at the user level with the following query:
 dependencies
 
 ```
@@ -239,12 +239,10 @@ summarize avg(duration) by name, client_City, client_CountryOrRegion
 
 ## Is an external API call the failure and drill down into the error stack to help with debug?
 
-image
-
 > [!div class="mx-imgBorder"] 
 > ![Settings > About Session ID](media/application-insights-external-api-call.png "Settings > About Session ID")
 
-The Browser section of the Failures pane contains UCI outgoing requests. The requests going to CDS or the organization contain the organization URL. There might be other requests going to other URLs (for instance this organization has a customization calling out to dc.services.visualstudio.com). Failures for these external outgoing calls can then be drilled into by looking at the end-to-end transaction.
+The Browser section of the Failures pane contains UCI outgoing requests. The requests going to Dataverse or the organization contain the organization URL. There might be other requests going to other URLs (for instance this organization has a customization calling out to dc.services.visualstudio.com). Failures for these external outgoing calls can then be drilled into by looking at the end-to-end transaction.
 
 ## Can I set an alert on performance threshold for certain form actions? When the alert is received will it allow a maker to diagnose and troubleshoot the issue?
 
