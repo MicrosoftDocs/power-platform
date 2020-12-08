@@ -141,7 +141,7 @@ summarize avg(toint(customDimensions.warmLatency)), avg(toint(customDimensions.c
 
 ### Can I determine how the user is accessing the system?
 
-The userAgent attribute in the customDimensions field in the requests table of Application Insights has this data.  The below query can be used to get an overview of the different sources from where the users are accessing the system.
+The *userAgent* attribute in the *customDimensions* field in the **requests** table of Application Insights has this data.  The below query can be used to get an overview of the different sources from where the users are accessing the system.
 
 pageViews
 ```
