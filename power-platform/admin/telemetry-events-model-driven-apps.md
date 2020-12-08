@@ -62,7 +62,8 @@ pageView
 take 1
 ```
 
-image
+> [!div class="mx-imgBorder"] 
+> ![Application Insights pageView table](media/application-insights-pageview-table.png "Application Insights pageView table")
 
 - **AppModule**: App module name 
 - **EntityName**: This is present when relevant and available on page types like EditForm, EntityList and Dashboards when they are bound to an entity. There are scenarios when the form is not bound to an entity and the value would show up as undefined.
@@ -101,7 +102,8 @@ where type == "UCI REQUEST"
 - **Duration**: The duration of the call
 - **customDimensions**: contains the below 
 
-image
+  > [!div class="mx-imgBorder"] 
+  > ![Application Insights UCI REQUEST](media/application-insights-uci-request.png "Application Insights UCI REQUEST")
 
 - **appModule**: The appModule making the call.
 - **bodySize**: The size of the response encoded and decoded.
@@ -121,7 +123,8 @@ One scenario where this can very valuable is when a user from a region (say Asia
 
 warmLatency, warmThroughput and coldLatency can be used to understand the breakdown of where time is spent on Page Loads and other UCI requests as follows:
 
-image
+> [!div class="mx-imgBorder"] 
+> ![Application Insights UCI sloweness](media/application-insights-uci-slowness.png "Application Insights UCI slowness")
 
 In the above request, the UCI request takes longer than the actual CDS API (Web API request). The breakdown in this case is the duration of the CDS API call(56ms) + CustomProperties.warmLatency(89ms) which adds up to close to the complete operation duration(144ms). The warmLatency is indicative of slowness for that particular client and could be an issue analyzed at the user level with the following query:
 dependencies
@@ -189,7 +192,8 @@ summarize count() by tostring(customDimensions.hostType)
 
 Sample result-set
 
-image
+> [!div class="mx-imgBorder"] 
+> ![Application Insights sample result set](media/application-insights-sample-result-set.png "Application Insights sample result set")
 
 ## To narrow down to a specific user:
 
@@ -213,11 +217,13 @@ Note that the Monitor tool is a realtime debugging tool, however, data availabil
 
 The user can share their sessionId from the About section in UCI for the specific organization  :
 
-image
+> [!div class="mx-imgBorder"] 
+> ![Settings > About](media/settings-about.png "Settings > About")
 
 This can then be used to look at all the activities in that session to look for issues:
 
-image
+> [!div class="mx-imgBorder"] 
+> ![Settings > About Session ID](media/settings-about-session-id.png "Settings > About Session ID")
 
 union *
 ```
@@ -234,6 +240,9 @@ summarize avg(duration) by name, client_City, client_CountryOrRegion
 ## Is an external API call the failure and drill down into the error stack to help with debug?
 
 image
+
+> [!div class="mx-imgBorder"] 
+> ![Settings > About Session ID](media/application-insights-external-api-call.png "Settings > About Session ID")
 
 The Browser section of the Failures pane contains UCI outgoing requests. The requests going to CDS or the organization contain the organization URL. There might be other requests going to other URLs (for instance this organization has a customization calling out to dc.services.visualstudio.com). Failures for these external outgoing calls can then be drilled into by looking at the end-to-end transaction.
 
