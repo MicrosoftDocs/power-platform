@@ -57,11 +57,13 @@ The first step is to get the Teams app ID. To get this, log into the PVA portal 
 
 ### Add the App ID URI in the Azure app registration
 
-Go to the Azure AD application configuration portal and find the AAD application that you configured in PVA bot for authentication. 
+Next, we will add the App ID URI in teh Azure app registration
+
+1. Go to the Azure AD application configuration portal and find the AAD application that you configured in PVA bot for authentication. 
  
-Go to **Expose an API** on the left side and set the Application ID URI to be in format of ```api://botid-{teamsbotid}```, where you replace ```{teamsbotid}``` with the ID from above.
+2. Go to **Expose an API** on the left side and set the Application ID URI to be in format of ```api://botid-{teamsbotid}```, where you replace ```{teamsbotid}``` with the ID from above.
  
-Click **Save**.
+3. Click **Save**.
 
     :::image type="content" source="media/teams-sso-azure-set-app-id.png" alt-text="Setting the correct App ID in Azure Portal":::
 
