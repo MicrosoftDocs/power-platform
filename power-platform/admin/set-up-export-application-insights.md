@@ -29,31 +29,38 @@ search.app:
 
 1.	In the Power Platform Admin Center, on the left nav bar, go to the Data Export option. Click on new data export.
 
-image
+> [!div class="mx-imgBorder"] 
+> ![Data export](media/data-export.png "Data export")
 
 2.	Select Export to Application Insights. 
 
-image
+> [!div class="mx-imgBorder"] 
+> ![Data export to Application Insights](media/data-export-application-insights.png "Data export to Application Insights")
 
 3.	Search for the environment that you will set up for the Application Insights data export setup. You can choose to filter based off the environment type.
 
-image
+> [!div class="mx-imgBorder"] 
+> ![Select an environment type](media/data-export-application-insights-select-environment-type.png "Select an environment type")
 
 Save, once you choose the environment.
 
-image
+> [!div class="mx-imgBorder"] 
+> ![Select an environment](media/data-export-application-insights-select-environment.png "Select an environment")
 
 4.	Now choose the Azure subscription, Resource Group and Application Insights instance and click on Create. You must have one of - contributor, writer or admin rights to the Application Insights instance. Typically a production environment/org will map to one Application Insights instance. 
 
-image
+> [!div class="mx-imgBorder"] 
+> ![Data export Application Insights details](media/data-export-application-insights-details.png "Data export Application Insights details")
 
 5.	The data export connection should now be set up. In the next 24 hours, data will start being exported to your Application Insights instance.
 
-image
+> [!div class="mx-imgBorder"] 
+> ![Data export success](media/data-export-application-insights-success.png "Data export success")
 
 6.	In case you decide that you would like to stop the data export to Application Insights, you can choose to Delete export. You could set up a new connection whenever you decide to restart the data export.
 
-image
+> [!div class="mx-imgBorder"] 
+> ![Delete export](media/data-export-delete.png "Delete export")
 
 ## Regional Availability 
 
