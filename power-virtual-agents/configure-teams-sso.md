@@ -19,11 +19,11 @@ ms.collection: virtual-agent
 Power Virtual Agents in Teams supports single sign-on (SSO), which means chatbots can sign the user in silently, without having the user sign in again. The user would already be signed in when using Teams, and this provides a seamless experience in a Power Virtual Agents bot in Teams for scenarios that require user specific information like user name. 
 
 >[!IMPORTANT] 
->Teams SSO is only supported for Azure Active Directory (Azure AD). Other account types such as Microsoft Account or other OAuth accounts are not supported for SSO in Power Virtual Agents in Teams.
+>Teams SSO is only supported for Azure Active Directory v2 (Azure AD v2). Other account types such as Azure AD v1, Microsoft Account, or other OAuth accounts does not support  SSO in Power Virtual Agents.
 >You can suggest support for additional account types at the [at the Power Virtual Agents ideas forum](https://powerusers.microsoft.com/t5/Power-Virtual-Agents-Ideas/idb-p/pva_ideas).
 
 >[!IMPORTANT] 
->If you have SSO configured for the web publication channel, it is important to note that the steps documented here need to be followed for authentication to work in Teams bots.
+>If you have SSO configured for the web publication channel, it is important to note that the steps documented here need to be followed for authentication to work in Teams bots. If your web publication channel has SSO configured but it is not following the instructions in this documentation, authentication in the Teams channel will fail without an error message. If authentication is not working for your bot on your Teams channel, please double check the configuration against this document.
 
 ## Prerequisites
 
@@ -50,6 +50,7 @@ Go to **Manage** -> **Channels** -> **Microsoft Teams**.
 In the panel on the right, select 'Submit for admin approval' and then copy the app ID by clicking on Copy. This will copy the app ID that you will next use in the Azure app registration you created for the AAD authentication.
 
 <IMAGE 1>
+    :::image type="content" source="media/XYZ.png" alt-text="Image alt text here":::
 
 Note, if you haven't already enabled the Teams channel, you will see this. Select **Turn on Teams** and then re-try step 1 above to get the app ID.
 
@@ -117,7 +118,7 @@ Once these steps are done, the 'Expose an API' page should have these values:
  
 Now, go back to the AAD authentication defined in PVA earlier, when following the steps to [create the new AAD authentication in PVA](https://docs.microsoft.com/en-us/power-virtual-agents/configuration-end-user-authentication#configure-authentication-with-manual-azure-ad)
  
-Add the Token Exchange URL.  The token exchange URL is the scope  defined in step 3 above. 
+Add the Token Exchange URL.  The token exchange URL is the scope URL defined in step 3 above. 
  
 Go to **Manage** -> **Security** -> **Authentication**. 
 Copy the scope from step 3 above and paste it into the Token Exchange URL field.
