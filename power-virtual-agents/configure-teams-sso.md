@@ -23,11 +23,10 @@ Power Virtual Agents in Teams supports single sign-on (SSO), which means chatbot
 >You can suggest support for additional account types at the [at the Power Virtual Agents ideas forum](https://powerusers.microsoft.com/t5/Power-Virtual-Agents-Ideas/idb-p/pva_ideas).
 
 >[!IMPORTANT] 
->If you have SSO configured for the web publication channel, it is important to note that the steps documented here need to be followed for authentication to work in Teams bots. If your web publication channel has SSO configured but it is not following the instructions in this documentation, authentication in the Teams channel will fail without an error message. If authentication is not working for your bot on your Teams channel, please double check the configuration against this document.
+>If you have SSO configured for the web publication channel, the steps documented here need to be followed for authentication to work in Teams bots. If your web publication channel has SSO configured but it is not following the instructions in this documentation, authentication in the Teams channel will fail without an error message. If authentication is not working for your bot on your Teams channel, please double check the configuration against this document.
 
 ## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 - [Register a new app with AAD](configuration-end-user-authentication#use-azure-active-directory-as-your-identity-provider)
 - [Add an authentication topic to your bot](advanced-end-user-authentication.md)
 
@@ -49,12 +48,12 @@ Go to **Manage** -> **Channels** -> **Microsoft Teams**.
  
 In the panel on the right, select 'Submit for admin approval' and then copy the app ID by clicking on Copy. This will copy the app ID that you will next use in the Azure app registration you created for the AAD authentication.
 
-<IMAGE 1>
-    :::image type="content" source="media/XYZ.png" alt-text="Image alt text here":::
+    :::image type="content" source="media/teams-sso-app-id.png" alt-text="Submit for admin approval screen showing App ID":::
 
 Note, if you haven't already enabled the Teams channel, you will see this. Select **Turn on Teams** and then re-try step 1 above to get the app ID.
 
-<IMAGE 2>
+    :::image type="content" source="media/teams-sso-channel-off.png" alt-text="Teams channel pane showing that the channel is turned off":::
+
 
 ### Add the App ID URI in the Azure app registration
 
@@ -64,7 +63,7 @@ Go to **Expose an API** on the left side and set the Application ID URI to be in
  
 Click **Save**.
 
-<IMAGE 3>
+    :::image type="content" source="media/teams-sso-azure-set-app-id.png" alt-text="Setting the correct App ID in Azure Portal":::
 
 
 ### Grant admin consent 
@@ -150,13 +149,17 @@ Save and Close
 
 With this, you have successfully configured SSO for your Teams bot.
  
-These steps update the manifest file. Now you can actually download the manifest file (zip file) and then upload to Teams for test or distribution.
+These steps update the manifest file. Now you can actually download the manifest file (zip file) and then upload to Teams for test or distribution, or submit for your admin approval.
 
 Select **Download manifest** to get the new manifest.
+
+<IMAGE 11>
 
 >[!NOTE] 
 > Make sure to test your bot authentication functionality in all channels to ensure they are working as intended.
 
-<IMAGE 11>
+>[!IMPORTANT] 
+> If your users have used the manifest to install the bot, they will need to get a new manifest after this configuration is complete and install the bot again for the Teams SSO to work. The Teams manifest does not refresh automatically. Alternatively, if you submit for Admin approval, the manifest is updated automatically.
+
 
 
