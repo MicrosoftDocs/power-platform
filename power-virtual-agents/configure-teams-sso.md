@@ -44,13 +44,13 @@ The steps required to configure single sign on for SSO are:
 
 The first step is to get the Teams app ID. To get this, log into the PVA portal at [https://powerva.microsoft.com](https://powerva.microsoft.com) and open the bot that you want to configure Teams SSO for.
  
-Go to **Manage** -> **Channels** -> **Microsoft Teams**.
+1. Go to **Manage** -> **Channels** -> **Microsoft Teams**.
  
-In the panel on the right, select 'Submit for admin approval' and then copy the app ID by clicking on Copy. This will copy the app ID that you will next use in the Azure app registration you created for the AAD authentication.
+2. In the panel on the right, select 'Submit for admin approval' and then copy the app ID by clicking on Copy. This will copy the app ID that you will next use in the Azure app registration you created for the AAD authentication.
 
     :::image type="content" source="media/teams-sso-app-id.png" alt-text="Submit for admin approval screen showing App ID":::
 
-Note, if you haven't already enabled the Teams channel, you will see this. Select **Turn on Teams** and then re-try step 1 above to get the app ID.
+3. Note, if you haven't already enabled the Teams channel, you will see this. Select **Turn on Teams** and then re-try step 1 above to get the app ID.
 
     :::image type="content" source="media/teams-sso-channel-off.png" alt-text="Teams channel pane showing that the channel is turned off":::
 
