@@ -42,7 +42,7 @@ search.app:
    > [!div class="mx-imgBorder"] 
    > ![Select an environment type](media/data-export-application-insights-select-environment-type.png "Select an environment type")
 
-Select **Save** after choosing the environment.
+   Select **Save** after choosing the environment.
 
    > [!div class="mx-imgBorder"] 
    > ![Select an environment](media/data-export-application-insights-select-environment.png "Select an environment")
