@@ -16,7 +16,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Set up exporting to Application Insights 
+# Set up exporting to Application Insights  
 
 ## Prerequisites
 
@@ -29,38 +29,38 @@ search.app:
 
 1. In the Power Platform admin center, select **Data Export** > **New data export**.
 
-> [!div class="mx-imgBorder"] 
-> ![Data export](media/data-export.png "Data export")
+   > [!div class="mx-imgBorder"] 
+   > ![Data export](media/data-export.png "Data export")
 
 2. Select **Export to Application Insights**. 
 
-> [!div class="mx-imgBorder"] 
-> ![Data export to Application Insights](media/data-export-application-insights.png "Data export to Application Insights")
+   > [!div class="mx-imgBorder"] 
+   > ![Data export to Application Insights](media/data-export-application-insights.png "Data export to Application Insights")
 
 3. Search for the environment that you will set up for the Application Insights data export setup. You can choose to filter based on the environment type.
 
-> [!div class="mx-imgBorder"] 
-> ![Select an environment type](media/data-export-application-insights-select-environment-type.png "Select an environment type")
+   > [!div class="mx-imgBorder"] 
+   > ![Select an environment type](media/data-export-application-insights-select-environment-type.png "Select an environment type")
 
 Select **Save** after choosing the environment.
 
-> [!div class="mx-imgBorder"] 
-> ![Select an environment](media/data-export-application-insights-select-environment.png "Select an environment")
+   > [!div class="mx-imgBorder"] 
+   > ![Select an environment](media/data-export-application-insights-select-environment.png "Select an environment")
 
 4. Choose the Azure subscription, Resource Group, and Application Insights environment, and then select **Create**. You must have one of the following rights - contributor, writer or admin - to the Application Insights environment. Typically, a production environment/tenant will map to one Application Insights environment. 
 
-> [!div class="mx-imgBorder"] 
-> ![Data export Application Insights details](media/data-export-application-insights-details.png "Data export Application Insights details")
+   > [!div class="mx-imgBorder"] 
+   > ![Data export Application Insights details](media/data-export-application-insights-details.png "Data export Application Insights details")
 
 5. The data export connection should now be set up. In the next 24 hours, data will start being exported to your Application Insights environment.
 
-> [!div class="mx-imgBorder"] 
-> ![Data export success](media/data-export-application-insights-success.png "Data export success")
+   > [!div class="mx-imgBorder"] 
+   > ![Data export success](media/data-export-application-insights-success.png "Data export success")
 
 6. To stop the data export to Application Insights, select **Delete export**. You can set up a new connection whenever you decide to restart the data export.
 
-> [!div class="mx-imgBorder"] 
-> ![Delete export](media/data-export-delete.png "Delete export")
+   > [!div class="mx-imgBorder"] 
+   > ![Delete export](media/data-export-delete.png "Delete export")
 
 ## Regional Availability 
 
