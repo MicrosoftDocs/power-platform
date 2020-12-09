@@ -114,8 +114,6 @@
          href: configure-web-security.md
        - name: Configure single sign-on
          href: configure-sso.md
-       - name: Configure single sign-on for Teams channel
-         href: configure-teams-sso.md
        - name: Configure hand-off to a generic engagement hub
          href: configure-generic-handoff.md
        - name: Configure hand-off to Omnichannel for Customer Service
@@ -218,6 +216,8 @@
          href: teams/configuration-security-teams.md
        - name: Configure web and Direct Line channel security
          href: teams/configure-web-security-teams.md
+       - name: Configure single sign-on for Teams
+         href: configure-sso-teams.md
        - name: Configure end-user authentication
          href: teams/configuration-end-user-authentication-teams.md
        - name: Configure how the bot starts the conversation

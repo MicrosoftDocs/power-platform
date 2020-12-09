@@ -16,6 +16,12 @@ ms.collection: virtual-agent
 # Configure single sign-on with Azure Active Directory in Power Virtual Agents
 
 
+Select the version of Power Virtual Agents you're using here:
+
+> [!div class="op_single_selector"]
+> - [Power Virtual Agents web app](configure-sso.md)
+> - [Power Virtual Agents app in Microsoft Teams](teams/configure-sso-teams.md)
+
 Power Virtual Agents supports single sign-on (SSO), which means chatbots can sign the user in if they're in to the page where the bot is deployed.  
 
 For example, the bot is hosted on the corporate intranet or in an app that the user is already signed in to.
@@ -25,11 +31,11 @@ For example, the bot is hosted on the corporate intranet or in an app that the u
 >You can suggest support for additional account types [at the Power Virtual Agents ideas forum](https://powerusers.microsoft.com/t5/Power-Virtual-Agents-Ideas/idb-p/pva_ideas).
 
 >[!IMPORTANT] 
->SSO is only supported on the [live website publication channel](publication-connect-bot-to-web-channels.md) and Teams channel. Other channels are not supported.
+>SSO is only supported on the [live website publication channel](publication-connect-bot-to-web-channels.md) and the Teams channel. Other channels are not supported.
 >You can suggest support for additional channels [at the Power Virtual Agents ideas forum](https://powerusers.microsoft.com/t5/Power-Virtual-Agents-Ideas/idb-p/pva_ideas).
 
 >[!IMPORTANT]
->If you also have Teams channel enabled, you need to follow the configuration instructions on the [Configure single sign-on for Teams channel](configure-teams-sso.md) documentation. Failing to configure the Teams SSO settings as instructed on that page will lead your users to always fail authentication when using the Teams channel.
+>If you also have Teams channel enabled, you need to follow the configuration instructions on the [Configure single sign-on for Teams channel](teams/configure-sso-teams.md) documentation. Failing to configure the Teams SSO settings as instructed on that page will lead your users to always fail authentication when using the Teams channel.
 
 ## Prerequisites
 
