@@ -2,7 +2,7 @@
 title: "Policies and Communications for service incidents  | MicrosoftDocs"
 description: Policies and Communications for service incidents
 author: astockli
-manager: timrob
+ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
