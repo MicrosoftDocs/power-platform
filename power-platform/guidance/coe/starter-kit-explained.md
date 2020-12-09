@@ -44,4 +44,10 @@ The Center of Excellence (CoE) Starter Kit is shipped in multiple components:
 
     The theming components solution contains assets that are relevant to makers and designers. More information: [Set up theming components](setup-theming.md) and [Use theming components](theming-components.md)
 
+- **Center of Excellence – PowerOps components**  
+
+    The Power Platform ALM Starter Kit is intended to provide Power Platform makers guidance on creating healthy Application Lifecycle Management practices for their solutions as part of their overall DevOps strategy. The tools provided in the starter kit are intended for use by any level of maker's experience and background with ALM. The PowerOps components implement ALM using GitHub.
+
+    The PowerOps components solution contains assets that are relevant to makers and admins. More information: [Set up PowerOps components](setup-powerops.md) and [Use PowerOps components](powerops-components.md)
+
 We recommend becoming familiar with the CoE core components solution before you add governance, nurture, or theming components.

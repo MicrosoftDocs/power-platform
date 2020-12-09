@@ -1,6 +1,6 @@
 ---
 title: "Set up the Power Ops ALM solution | MicrosoftDocs"
-description: "The Power Ops ALM solution uses GitHub to facilitate moving solutions from development to test to production environments."
+description: "The Power Ops ALM solution uses GitHub to move solutions from development to test to production environments."
 author: manuelap-msft
 manager: devkeydet
 ms.service: power-platform
@@ -19,7 +19,9 @@ search.app:
 
 # Set up PowerOps components
 
-You can use the PowerOps components to facilitate ALM for Power Platform solutions. The PowerOps components help you create projects, get your own development environment and follow best practices to move solutions from development to test to production environments.
+The Power Platform ALM Starter Kit provides Power Platform makers guidance on creating healthy Application Lifecycle Management practices for their solutions. This would be part of setting up an overall DevOps strategy. The tools in the starter kit can be used by any level of maker's experience and background with ALM.
+
+The goal of these tools is to enable makers to apply source control strategies using Git and use automated builds, testing, and deployment of solutions to their environments without the need for manual intervention by the maker, administrator, developer, or tester. The goal is also to provide makers the ability to work without intimate knowledge of the downstream technologies and to be able to switch quickly from developing solution to source controlling the solution and ultimately pushing the apps to other environments with as few interruptions to their work as possible.
 
 This solution uses [GitHub actions](https://docs.microsoft.com/power-platform/alm/devops-github-actions) for source control and deployments. The [GitHub connector](https://docs.microsoft.com/connectors/github/) is used in flows to interact with GitHub.
 
@@ -31,12 +33,9 @@ This solution uses [GitHub actions](https://docs.microsoft.com/power-platform/al
 - Create a GitHub account at [GitHub.com](https://github.com)
 - Create a [GitHub org](https://docs.github.com/free-pro-team@latest/github/setting-up-and-managing-organizations-and-teams/creating-a-new-organization-from-scratch)
 
-- If you aren't already using the CoE Starter Kit, we recommend [creating a new environment](https://docs.microsoft.com/power-platform/admin/create-environment) for CoE solutions.
-- If you are already using other CoE Starter Kit components, use the environment that you created as part of setting up the [core components](setup-core-components.md) for this solution.
-
 ## Create an Azure AD app registration
 
-Using these steps, you'll set up an Azure AD app registration that will be used to create environments and retrieve solutions within an environment.
+Set up an Azure AD app registration that will be used to create environments and retrieve solutions within an environment.
 
 Sign in to [portal.azure.com](https://portal.azure.com).
 
@@ -60,7 +59,19 @@ Sign in to [portal.azure.com](https://portal.azure.com).
 
    1. Select **Add permissions**.
 
-1. Select **Overview**, and copy and paste the application (client) ID values to notepad. You'll need these values in the next step as you configure the custom connector.
+1. Under **Overview**, select **Add a Redirect URI**.
+
+1. Select **+ Add a platform** > **Mobile and Desktop Applications**.
+1. Select the **Native Client** and **MSAL Only** option and select **Configure**
+1. For Implicit Access, select **Access Token**
+1. For Supported Account Type, select **Accounts in any organizational directory (Any Azure AD directory - Multitenant)**
+1. For Advanced Settings, set **Allow Public Client Flows** to **Yes** 
+
+1. Enter the URL you copied from the **Redirect URL** section of the custom connector.
+
+1. Select **Configure**.
+
+1. Select **Overview**, and copy and paste the application (client) ID value to notepad. You'll need this value in the next step as you configure the custom connector.
 
 Leave the Azure portal open, because you'll need to make some configuration updates after you set up the custom connector.
 
@@ -72,7 +83,7 @@ Leave the Azure portal open, because you'll need to make some configuration upda
 
 1. Go to [make.powerapps.com](<https://make.powerapps.com>).
 
-1. Go to your CoE environment. In the example in the following image, we're importing to the environment named **Contoso CoE**.
+1. Go to your Development environment. In the example in the following image, we're importing to the environment named **Contoso CoE**.
 
      ![Power Apps maker portal environment selection](media/coe6.png "Power Apps maker portal environment selection")
 
@@ -83,7 +94,7 @@ Leave the Azure portal open, because you'll need to make some configuration upda
      ![Select the Datavsere connector](media/msi-connection.png "Select the Dataverse connector")
     1. Select **+** to create a connection.
     1. Complete the same steps for the following connectors:
-        - Mail
+        - Office 365 Outlook
         - GitHub
         - Power Apps for Makers
         - Power Platform for Admins
@@ -105,47 +116,59 @@ Leave the Azure portal open, because you'll need to make some configuration upda
 
      ![Establish connections to activate your solution](media/git-4.png "Establish connections to activate your solution.")
 
-1. Update environment variable values. The environment variables are used to store application and flow configuration data with data specific to your organization or environment. You will configure some Environment Variables during import, and you will [update some environment variables](#update-environment-variables) after import.
-
-    Configure the following variables for the PowerOps components solution during Import, leave the remaining ones blank and select **Save**.
-
-    | Name | Current Value |
-    |------|---------------|
-    |OrgName| The name of the GitHub Org created during [Pre-Requisites](#pre-requisites) |
-    |Dependency Environment User Id| Enter the User Id if you have a solution that needs to be installed when a new environment is created. Leave blank if you do not have a solution that needs to be installed first. |
-    |Dependency Environment Url| Enter the Environment Url if you have a solution that needs to be installed when a new environment is created. Leave blank if you do not have a solution that needs to be installed first. |
-    |Client ID | Enter the Applicaiton (client) ID from the Azure App Registration |
-
-     ![Update environment variable values](media/git-3.png "Update environment variable values.")
-
 1. Select **Import**.
 
-## Update environment variables
+## Configure Environment Settings and Deployment Stages after import
 
-Environment variables are used to store application and flow configuration data with data specific to your organization or environment. You will have configured some Environment Variables during import, and some after import.
+1. Go to [make.powerapps.com](<https://make.powerapps.com>).
+1. On the left pane, select **Solutions**.
+1. Select the **Power Platform GitHub ALM** solution and open the **PowerOps Admin** app.
 
-- The WebHookURL environment variable depend on the import to have finished for their value. It is mandatory to update this variable after import.
-- The GitHubOrgPlanExists and OrgLanguage environment variables are shipped with a Default Value that you can change after import. It is optional to update this variables after import.
-- The remaining environment variables have been configured during import, and can be changed using the below steps.
+![Configure Environment Settings and Deployment Stages after import using the PowerOps Admin app](media/git-24.png "Configure Environment Settings and Deployment Stages after import using the PowerOps Admin app.")
+
+### Setup Deployment Stages
 
 >[!IMPORTANT]
->To edit environment variables in the environment, open the **Default Solution** for the environment and set the **Type** filter to **Environment variable**.
+>Update one row at a time and select **Update** to save your changes.
 
-- Select a variable, and then configure its **Current Value**.
+1. Update the **Stage Owner Email** for each of the three stages (DEV, TEST & PROD). The stage owner will receive notification for approving the project creation and deployment.
+1. Update the **Admin username and password**. These credentials can be a service account or a user account with Power Platform Admin role.
+1. For each of the Test and Production stages, select a pre-existing environment that will be used for Test and Production deployments.
+    >[!NOTE]
+    >Your Dev environment is the environment you installed the solution in
 
-    Configure the following variables for the PowerOps components solution, and then select **Save**.
+### Update the "Webhook Url" value
 
-    | Name | Current Value |
-    |------|---------------|
-    |WebHookURL | Edit the WorkflowCompleteNotification flow in your solution, select the "When a HTTP request is received" action and copy the HTTP POST URL in the action. Enter this URL as the Current Value for this variable. |
-    | GitHubOrgPlanExist | Enter Yes if a paid GitHub Org plan exists for your organization. Default Value: No |
-    | OrgLanguage | Change your preferred language. Power Apps uses the [IETF BCP-47 language tag format](https://docs.microsoft.com/powerapps/maker/canvas-apps/functions/function-language#language-tags), for example en_US, fr_FR, it_IT. Default Value: en_US |
-    |OrgName| The name of the GitHub Org created during [Pre-Requisites](#pre-requisites) |
-    |Dependency Environment User Id| Enter the User Id if you have a solution that needs to be installed when a new environment is created. Leave blank if you do not have a solution that needs to be installed first. |
-    |Dependency Environment Url| Enter the Environment Url if you have a solution that needs to be installed when a new environment is created. Leave blank if you do not have a solution that needs to be installed first. |
-    |Client ID | Enter the Applicaiton (client) ID from the Azure App Registration |
+This Url will be used as a callback URL from GitHub.
 
-## Configure field level security
+1. In a new tab, go to [make.powerapps.com](<https://make.powerapps.com>) > **Solutions** > **Power Platform GitHub ALM** solution.
+1. Edit the **WorkflowCompleteNotification** flow.
+1. Select the first action and copy the URL in the action
+1. Go back to the **PowerOps Admin** app and update the **Webhook Url** with the value copied from the previous step.
+1. Select **Update**.
+
+### Update the Client ID
+
+The Client ID is needed for flows to create an environment and perform other admin-related activities like fetching solutions and apps inside an environment.
+
+1. In the PowerOps Admin app, update the Client ID with the Application (client) ID value you copied during [Create an Azure AD app registration](#create-an-azure-ad-app-registration).
+1. Select **Update**
+
+### Update the GitHub Org Name
+
+1. Enter your GitHub org name (see [prerequisite](#prerequisites)). The repositories will be created inside this org.
+1. Select Update.
+
+### Update the language
+
+1. Change your preferred language. Power Apps uses the [IETF BCP-47 language tag format](https://docs.microsoft.com/powerapps/maker/canvas-apps/functions/function-language#language-tags), for example en_US, fr_FR, it_IT. 
+1. Select Update.
+
+### Update the “GitHub Plan Exist”
+
+If there’s a Paid GitHub Org Plan that exists for your org. Toggle “GitHub Plan Exists” to On.
+
+## Secure admin credentials
 
 [Field level security](https://docs.microsoft.com/power-platform/admin/field-level-security) is enabled to secure credentials for deployments. As an admin, you will need to add users to the **FieldSecurityForPassword** field security profile to enable those users to add their credentials for the deployment from development to test and production environments.
 
@@ -159,51 +182,19 @@ Add users to the field security profile:
 1. Select **Add**.
 1. Search for Users.
     ![Search for Users for the Field Security Profile](media/git-8.png "Search for Users for the Field Security Profile")
-1. Click **Select** to add them to the security profile.
+1. **Select** to add them to the security profile.
     ![Select Users to add them to a Field Security Profile](media/git-9.png "Select Users to add them to a Field Security Profile")
 1. Repeat this step for all users that will use PowerOps.
 1. Select **Save and Close**.
     ![Save the Field Security Profile](media/git-10.png "Save the Field Security Profile")
 
-## Enter prerequisite data
+## Configure GitHub org secrets
 
-This section explains how to enter data in the Deployment Stages and  table. PowerOps depends on these tables being configured.
+GitHub Org secrets will be used to make API calls to import/export solutions and to interact with Microsoft Dataverse. Secrets are the recommended way of storing sensitive information.
 
-add info on get environment url and id
-![Save the Field Security Profile](media/git-11.png "Save the Field Security Profile")
+GitHub supports org secrets and repository level secrets. If you have a paid plan, all the secrets created at the org level can be used by private repositories as well. That’s the advantage of having a paid plan. Otherwise, **the admin has to create secrets for all of the repositories**.
 
-### Deployment Stages
-
-You will no enter three rows that contain information about your deployment stages (Development/Test/Production)
-
-1. Go to [make.powerapps.com](https://make.powerapps.com/), select **Solutions**, and then open the **Power Platform GitHub ALM** solution.
-1. Select the **Deployment Stage** table.
-    ![Select the Deployment Stage table](media/git-12.png "Select the Deployment Stage table")
-1. Select **Edit data in Excel**.
-    ![Select Edit data in Excel](media/git-13.png "Select Edit data in Excel")
-1. Open the file in Edit Mode.
-    ![Open the file in Edit Mode.](media/git-14.png "Open the file in Edit Mode.")
-1. Add the below three rows with your information for the deployment stages
-    | Name | BuildEnabled | Order | Password | Username | Target Environment Name | Target Environment URL | Stage Owner |
-    |------|---------------|------|------|------|------|------|------|
-    | DEV | No | 1 | *Your password* | *Your username* | *Your Development Environment Name* | *Your Development Environment URL* | *Owner* |
-    | TEST | Yes | 2 | *Your password* | *Your username* | *Your Test Environment* | *Your Test Environment*  | *Owner*  |
-    | PROD | Yes | 3 | *Your password* | *Your username* | *Your Prod Environment Name* | *Your Prd Environment URL* | *Owner* |
-1. Select **Publish** to update the data in the table.
-    ![Publish changes to update the data in the table](media/git-15.png "Publish changes to update the data in the table")
-
-### Import localization data
-
-You will now import localized end user facing text into the **StringText** table. This table is then used in the canvas app to show labels, buttons and controls to end users in your preferred language.
-
-1. Go to [make.powerapps.com](https://make.powerapps.com/), select **Solutions**, and then open the **Power Platform GitHub ALM** solution.
-1. Select the **StringText** table.
-1. Select **Get Data from Excel**.
-1. Select **File not uploaded** to browse for a file.
-1. Browse to the folder you extracted the CoE Starter Kit download to and select the **cat_deploymentstages.csv** file.
-1. Once the mapping status has changed to *Mapping was successful*, select **Import**
-
-## Configure Org Secrets
+Learn more: [GitHub Team offerings](https://docs.github.com/free-pro-team@latest/github/getting-started-with-github/githubs-products#github-team).
 
 >[!IMPORTANT]
 > The environment admin must have GitHub repo admin permissions to complete the below steps.
@@ -225,14 +216,14 @@ If you have a paid GitHub org plan, configure org secrets:
 
 If you do not have a paid GitHub org plan, follow the below steps for all projects created in PowerOps.
 
+>[!NOTE]
+>These steps need to be followed for all projects created in PowerOps.
+
 1. Navigate to your org in GitHub (https://github.com/yourorg).
 1. Select **Settings** > **Secret** > **New organization secret**
 1. Enter **DEV_ENVIRONMENT_SECRET** as a secret name for your Dev deployment stage, and enter the value for your secret.
     ![Select Private Repositories for your Secret](media/git-22.png "Select Private Repositories for your Secret")
 1. Select **Add Secret**.
 1. Complete the above steps to add a **TEST_ENVIRONMENT_SECRET** and **PROD_ENVIRONMENT_SECRET**.
-
->[!NOTE]
-> Configure an additional **DEPENDENCY_ENVIRONMENT_SECRET** secret if you have configured a solution that needs to be installed during environment setup.
 
 You can now [use the PowerOps components](powerops-components.md).

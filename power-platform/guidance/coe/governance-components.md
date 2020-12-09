@@ -68,6 +68,9 @@ Learn more about the Microsoft Teams governance process in the CoE Starter Kit: 
 
 ## Microsoft Teams Admin | Weekly Clean Up of Microsoft Teams environments
 
+> [!IMPORTANT]
+> This flow deletes environments for which no business justification exists, or where the business justification has been rejected. Only turn this flow on **a week** after enabling the *Microsoft Teams Admin | Ask for Business Justification when Microsoft Teams environment is created* flow to ensure makers have an opportunity to provide a business justification before their environments get deleted.
+
 This flow runs weekly and deletes environments that
 
 - have been created more than **7 days** ago and have no business justification or where the business justification has been rejected by the admin

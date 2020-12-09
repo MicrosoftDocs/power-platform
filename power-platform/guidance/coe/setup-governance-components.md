@@ -101,7 +101,7 @@ This Governance Components solution contains flows that you will need to manuall
 - Microsoft Teams Admin \| Weekly Clean Up of Microsoft Teams environments
 
 >[!IMPORTANT]
-> These flows will be turned off on solution import, and you can turn them on once you're ready to use them.
+> These flows will be turned off on solution import, and you can turn them on once you're ready to use them. Only turn on the Weekly Clean Up of Microsoft Teams environments once you are ready to enforce deletion of Teams environments.
 
 ## Share apps with makers
 
