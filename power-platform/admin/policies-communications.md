@@ -6,7 +6,7 @@ manager: timrob
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/21/2020
+ms.date: 12/09/2020
 ms.author: astockli
 search.audienceType: 
   - admin
@@ -107,6 +107,7 @@ The following are service update times. Database updates run 24 hours after serv
 | ZAF           | crm14.dynamics.com | 5 PM to 2 AM |
 | UAE           | crm15.dynamics.com| 3 PM to 12 AM |
 | GER           | crm16.dynamics.com| 6 PM TO 3 AM |
+| CHE           | crm17.dynamics.com|  6 PM to 3 AM |
 | CHN           | crm.dynamics.cn | 3 PM to 9 PM |
 
 ### Service Update Release Schedule
