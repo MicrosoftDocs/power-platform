@@ -161,7 +161,7 @@ The Client ID is needed for flows to create an environment and perform other adm
 
 ### Update the language
 
-1. Change your preferred language. Power Apps uses the [IETF BCP-47 language tag format](https://docs.microsoft.com/powerapps/maker/canvas-apps/functions/function-language#language-tags), for example en_US, fr_FR, it_IT. 
+1. Change your preferred language. Power Apps uses the [IETF BCP-47 language tag format](https://docs.microsoft.com/powerapps/maker/canvas-apps/functions/function-language#language-tags), for example en_US, fr_FR, it_IT.
 1. Select Update.
 
 ### Update the “GitHub Plan Exist”
@@ -176,16 +176,21 @@ Add users to the field security profile:
 
 1. Go to [make.powerapps.com](https://make.powerapps.com/), select **Solutions**, and then open the **Power Platform GitHub ALM** solution.
 1. Select **FieldSecurityForPassword** from the solution.
+
     ![Select FieldSecurityForPassword from the solution](media/git-6.png "Select FieldSecurityForPassword from the solution")
 1. Select **Users**.
+
      ![Select Users from Field Security Profile](media/git-7.png "Select Users from Field Security Profile")
 1. Select **Add**.
 1. Search for Users.
+
     ![Search for Users for the Field Security Profile](media/git-8.png "Search for Users for the Field Security Profile")
 1. **Select** to add them to the security profile.
+
     ![Select Users to add them to a Field Security Profile](media/git-9.png "Select Users to add them to a Field Security Profile")
 1. Repeat this step for all users that will use PowerOps.
 1. Select **Save and Close**.
+
     ![Save the Field Security Profile](media/git-10.png "Save the Field Security Profile")
 
 ## Configure GitHub org secrets
