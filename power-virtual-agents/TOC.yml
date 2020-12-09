@@ -217,7 +217,7 @@
        - name: Configure web and Direct Line channel security
          href: teams/configure-web-security-teams.md
        - name: Configure single sign-on for Teams
-         href: configure-sso-teams.md
+         href: teams/configure-sso-teams.md
        - name: Configure end-user authentication
          href: teams/configuration-end-user-authentication-teams.md
        - name: Configure how the bot starts the conversation
