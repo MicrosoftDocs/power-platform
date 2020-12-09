@@ -4,7 +4,7 @@ description: About system and application users
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 11/30/2020
+ms.date: 12/09/2020
 author: jayasreekumar
 ms.author: jkumar
 ms.reviewer: jimholtz
@@ -47,6 +47,7 @@ Most of these users are hidden from user views but they can be found by using th
 | | # CCADataAnalyticsML | CCADAAdmins@onmicrosoft.com | To allow AI insights in customer care apps like Customer Service, Field Service, etc. | System Customizer and System admin |
 | | # CDSReportService | CDSReportService@onmicrosoft.com | To allow user to run reports. |N/A |
 | | Power Platform Dataflows | ppdfcdsclient@microsoft.com | Power Platform Dataflows service application to perform data preparation and loading into Dataverse and Azure Data Lake | System Customizer and Delegate
+| | AIBuilderProd | aibuilderfpapp@microsoft.com | To perform authentication for AI Builder | System admin |
 
 **The purpose of the system account?** 
 - The System user is a built-in user account that is used to allow customers to perform system updates via plug-ins. 

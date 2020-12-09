@@ -4,7 +4,7 @@ description: About data loss prevention (DLP) policies.
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/16/2020
+ms.date: 12/09/2020
 author: jayasreekumar
 ms.author: jkumar
 ms.reviewer: jimholtz
@@ -228,6 +228,7 @@ We are working to address the following known issues and limitations:
 2. Sorting by Created and Modified fields on Data Policy list view doesn’t work correctly.
 3. Three-way DLP policy creation isn't available through admin connectors. Also, the Power Platform for Admins connector always blocks LBI/Non-business group.
 4. Canvas apps assessment for DLP violations at launch time/runtime does not work as expected.
+5. Blocking the HTTP Request connector via DLP will currently block child flows, since child flows are implemented using the HTTP connector. Work is underway to separate DLP enforcement for child flows so they are treated no differently than other flows.
 
 ### See also
 
