@@ -9,24 +9,18 @@ author: iaanw
 ms.author: iawilt
 manager: shellyha
 ms.reviewer: clmori
-ms.custom: authentication, ceX, teams
+ms.custom: authentication, ceX
 ms.collection: virtual-agent
 ---
 
 # Configure single sign-on with Azure Active Directory for Power Virtual Agents chatbots in Microsoft Teams 
-
-Select the version of Power Virtual Agents you're using here:
-
-> [!div class="op_single_selector"]
-> - [Power Virtual Agents web app](../configure-sso.md)
-> - [Power Virtual Agents app in Microsoft Teams](configure-sso-teams.md)
 
 The Power Virtual Agents app in Microsoft Teams supports single sign-on (SSO), which means chatbots can sign the user in silently, without having the user sign in again. 
 
 When using Teams the user is already signed-in, so Power Virtual Agents chatbots can use this information for scenarios that require user-specific information like a user's name or other details. 
 
 >[!IMPORTANT] 
->SSO in the Power Virtual Agents app in Teams is only supported for Azure Active Directory v2 appx (Azure AD v2 apps). Other app types, such as Azure AD v1, do not support SSO in the Power Virtual Agents app in Microsoft Teams.  
+>SSO in the Power Virtual Agents app in Teams is only supported for Azure Active Directory v2 apps (Azure AD v2 apps). Other app types, such as Azure AD v1, do not support SSO in the Power Virtual Agents app in Microsoft Teams.  
 >You can suggest support for additional account types at the [at the Power Virtual Agents ideas forum](https://powerusers.microsoft.com/t5/Power-Virtual-Agents-Ideas/idb-p/pva_ideas).
 
 >[!IMPORTANT] 
@@ -36,8 +30,8 @@ When using Teams the user is already signed-in, so Power Virtual Agents chatbots
 
 ## Prerequisites
 
-- [Register a new app with Azure AD](../configuration-end-user-authentication.md#use-azure-active-directory-as-your-identity-provider)
-- [Add an authentication topic to your bot](../advanced-end-user-authentication.md)
+- [Register a new app with Azure AD](configuration-end-user-authentication.md#use-azure-active-directory-as-your-identity-provider)
+- [Add an authentication topic to your bot](advanced-end-user-authentication.md)
 
 
 ## Configure single sign-on
@@ -50,7 +44,7 @@ The steps required to configure SSO for the Power Virtual Agents app in Microsof
 
 This topic describes how to do these three steps. After you've finished these steps, you should: 
 
-1. [Publish your changes in the Power Virtual Agents web app](publication-add-bot-to-microsoft-teams-teams.md).
+1. [Publish your changes in the Power Virtual Agents web app](publication-add-bot-to-microsoft-teams.md).
 1. Test that SSO is working as expected in all the channels your bot is available.
 
 ## Create your Azure AD app
@@ -158,9 +152,9 @@ You'll need to add the token exchange URL to allow Teams and Power Virtual Agent
 
 To add the token exchange url:
  
-1. Go to the Azure AD authentication you configured when following the steps to [create the new Azure AD authentication in the Power Virtual Agents web app](../configuration-end-user-authentication.md#configure-authentication-with-manual-azure-ad).
+1. Go to the Azure AD authentication you configured when following the steps to [create the new Azure AD authentication in the Power Virtual Agents web app](configuration-end-user-authentication.md#configure-authentication-with-manual-azure-ad).
  
-1. Add the Token Exchange URL as described in the [Configure SSO with Azure AD](../configure-sso.md#configure-authentication-in-power-virtual-agents-to-enable-single-sign-on) topic, under the **Configure authentication in Power Virtual Agents to Enable SSO** heading.
+1. Add the Token Exchange URL as described in the [Configure SSO with Azure AD](configure-sso.md#configure-authentication-in-power-virtual-agents-to-enable-single-sign-on) topic, under the **Configure authentication in Power Virtual Agents to Enable SSO** heading.
 
     :::image type="content" source="media/TeamsSSO/image9.png" alt-text="Screenshot displaying correct Token Exchange URL configuration":::
 
@@ -183,7 +177,7 @@ To add Teams SSO configuration information in the Power Virtual Agents bot:
     :::image type="content" source="media/TeamsSSO/image10.png" alt-text="Screenshot displaying correct Teams channel SSO configuration.":::
 
  
-These steps update the manifest file for the bot. Now you can download the manifest file (as a .zip file) and upload to Teams for test or distribution, or submit for your admin approval. For more information, see the [Add bot to Microsoft Teams in Teams](publication-add-bot-to-microsoft-teams-teams.md) topic.
+These steps update the manifest file for the bot. Now you can download the manifest file (as a .zip file) and upload to Teams for test or distribution, or submit for your admin approval. For more information, see the [Add bot to Microsoft Teams in Teams](publication-add-bot-to-microsoft-teams.md) topic.
 
 1. Select **Download manifest** to get the new manifest.
 
