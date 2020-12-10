@@ -1,6 +1,6 @@
 ---
-title: "Set up the Power Ops ALM solution | MicrosoftDocs"
-description: "The Power Ops ALM solution uses GitHub to move solutions from development to test to production environments."
+title: "Set up PowerOps components | MicrosoftDocs"
+description: "The PowerOps components will help you follow best DevOps practices to source control and move your solution from your development environment to test and production environments using GitHub."
 author: manuelap-msft
 manager: devkeydet
 ms.service: power-platform
@@ -19,9 +19,7 @@ search.app:
 
 # Set up PowerOps components
 
-The Power Platform ALM Starter Kit provides Power Platform makers guidance on creating healthy Application Lifecycle Management practices for their solutions. This would be part of setting up an overall DevOps strategy. The tools in the starter kit can be used by any level of maker's experience and background with ALM.
-
-The goal of these tools is to enable makers to apply source control strategies using Git and use automated builds, testing, and deployment of solutions to their environments without the need for manual intervention by the maker, administrator, developer, or tester. The goal is also to provide makers the ability to work without intimate knowledge of the downstream technologies and to be able to switch quickly from developing solution to source controlling the solution and ultimately pushing the apps to other environments with as few interruptions to their work as possible.
+The PowerOps components enable makers to apply source control strategies using GitHub and use automated builds and deployment of solutions to their environments without the need for manual intervention by the maker, administrator, developer, or tester. In addition PowerOps provides makers the ability to work without intimate knowledge of the downstream technologies and to be able to switch quickly from developing solutions to source controlling the solution and ultimately pushing their apps to other environments with as few interruptions to their work as possible.
 
 This solution uses [GitHub actions](https://docs.microsoft.com/power-platform/alm/devops-github-actions) for source control and deployments. The [GitHub connector](https://docs.microsoft.com/connectors/github/) is used in flows to interact with GitHub.
 

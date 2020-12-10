@@ -1,6 +1,6 @@
 ---
 title: "PowerOps components | MicrosoftDocs"
-description: "The PowerOps components will help you follow best DevOps practices to move your solution from your development environment to test and production environments using GitHub actions."
+description: "The PowerOps components will help you follow best DevOps practices to source control and move your solution(s) from your development environment to test and production environments using GitHub."
 author: manuelap-msft
 manager: devkeydet
 ms.service: power-platform
@@ -18,7 +18,9 @@ search.app:
 ---
 # Use PowerOps components
 
-The PowerOps components will help you follow best DevOps practices to move your solution from development to test to production environments using GitHub actions. More information: [Set up PowerOps components](setup-powerops.md)
+The PowerOps components will help you follow best DevOps practices to source control and move your solution(s) from development to test to production environments using GitHub. More information: [Set up PowerOps components](setup-powerops.md)
+
+The PowerOps components enable makers to apply source control strategies using GitHub and use automated builds and deployment of solutions to their environments without the need for manual intervention by the maker, administrator, developer, or tester. In addition PowerOps provides makers the ability to work without intimate knowledge of the downstream technologies and to be able to switch quickly from developing solutions to source controlling the solution and ultimately pushing their apps to other environments with as few interruptions to their work as possible.
 
 The PowerOps app shows a maker all of their projects and allows them to deploy their work in progress or final solution to a test and production environment.
 Once a new project is created and approved, makers can navigate to [make.powerapps.com](https://make.powerapps.com) to build and create assets - such as apps, flows, and tables - in a solution that has been created for them.
