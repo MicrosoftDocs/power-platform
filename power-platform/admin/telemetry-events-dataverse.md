@@ -143,7 +143,7 @@ where type == "SDK Retrieve"
 > [!div class="mx-imgBorder"] 
 > ![Application Insights SDK retrieve query](media/application-insights-query-sdk-retrieve.png "Application Insights SDK retrieve query")
 
-1.	How can I determine if my plug-in upgrade caused a performance degradation?
+1. How can I determine if my plug-in upgrade caused a performance degradation?
 
 dependencies
 ```
@@ -154,7 +154,7 @@ summarize avg(duration) by name
 
 The plug-in name should also contain the version for custom plug-ins.
 
-2.	How was the API performing prior to a reported issue based on time-of-day or location? Was API degradation gradual or sudden?
+2. How was the API performing prior to a reported issue based on time-of-day or location? Was API degradation gradual or sudden?
 
 requests
 ```
@@ -170,21 +170,31 @@ In this chart, we can see the performance of the API endpoint over a period of t
 
 You can also setup an alert based on the performance of a particular API here within [Application Insights](https://docs.microsoft.com/azure/azure-monitor/learn/tutorial-alert).
 
-3.	Can I drill down on errors/failures at specific times or for specific users to allow for understanding the call stack?
+3. Can I drill down on errors/failures at specific times or for specific users to allow for understanding the call stack?
 
 Looking at the **Failures** pane gives an overview of the failures in a given time period. You can then narrow down to a specific failure based on the API call or dependency type to see the end-to-end view.
 
 > [!div class="mx-imgBorder"] 
 > ![Application Insights failures details](media/application-insights-failures-details.png "Application Insights failures details")
 
-4.	I want to quickly build ad-hoc reports by Application/System management to understand details for my specific use case.
+4. Can I create custom dashboards? 
 
-## Sample Queries
+Yes – you can build [custom dashboards](https://docs.microsoft.com/azure/azure-monitor/learn/tutorial-app-dashboards) with Application Insights. 
 
-Sample questions that you should be able to answer once data is available in your own Application Insights.
+5. Can I determine plug-in usage performance (response time) and failure rates during peak usage? 
 
-1.	Can I determine plug-in usage performance for user(s) or failure rates during peak usage?
+Yes. See the following sample query to understand how your plug-ins perform.
 
-2.	Can I understand execution paths? Are calls made by the plug-in slowing the plug-in? 
- 
+dependencies
+```
+where ['type'] == "Plugin" 
+where name == "[Plugin name here]" 
+summarize avg(duration) by bin(timestamp, 1h) 
+render timechart
+```
+
+> [!div class="mx-imgBorder"] 
+> ![Plug-in usage performance](media/application-insights-plugin-usage-performance.png "Plug-in usage performance")
+
+
 
