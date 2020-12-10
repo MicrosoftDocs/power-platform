@@ -112,8 +112,10 @@
          href: configuration-security.md
        - name: Configure web and Direct Line channel security
          href: configure-web-security.md
-       - name: Configure single sign-on
+       - name: Configure single sign-on for Web
          href: configure-sso.md
+       - name: Configure single sign-on for Teams
+         href: configure-sso-teams.md
        - name: Configure hand-off to a generic engagement hub
          href: configure-generic-handoff.md
        - name: Configure hand-off to Omnichannel for Customer Service
