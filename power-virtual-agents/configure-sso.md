@@ -29,7 +29,7 @@ For example, the bot is hosted on the corporate intranet or in an app that the u
 >You can suggest support for additional channels [at the Power Virtual Agents ideas forum](https://powerusers.microsoft.com/t5/Power-Virtual-Agents-Ideas/idb-p/pva_ideas).
 
 >[!IMPORTANT]
->If you also have Teams channel enabled, you need to follow the configuration instructions on the [Configure single sign-on for Teams channel](teams/configure-sso-teams.md) documentation. Failing to configure the Teams SSO settings as instructed on that page will lead your users to always fail authentication when using the Teams channel.
+>If you also have Teams channel enabled, you need to follow the configuration instructions on the [Configure single sign-on for Teams channel](configure-sso-teams.md) documentation. Failing to configure the Teams SSO settings as instructed on that page will lead your users to always fail authentication when using the Teams channel.
 
 ## Prerequisites
 
