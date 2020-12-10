@@ -4,7 +4,7 @@ description: About data loss prevention (DLP) policies.
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/09/2020
+ms.date: 12/10/2020
 author: jayasreekumar
 ms.author: jkumar
 ms.reviewer: jimholtz
@@ -101,10 +101,7 @@ The following connectors can't be blocked by using DLP policies.
 
 By default, custom connectors aren't part of the standard configuration capabilities of DLP policies in the Power Platform admin center. However, you can use DLP policy PowerShell commands to set them up into **Business**, **Non-Business**, and **Blocked** groups. More information: [Data Loss Prevention (DLP) policy commands](powerapps-powershell.md#data-loss-prevention-dlp-policy-commands) 
 
-Unlike standard and premium connectors, which are available to all environments in the tenant, custom connectors are scoped specifically to an individual environment. Therefore, you can't use tenant-level DLP policies to manipulate custom connectors, you must use environment-level DLP policies. By using PowerShell, you can configure DLP policy to include these connectors. After they're added, they can then be managed in the admin center.
-
-> [!NOTE]
-> Only custom connectors that are stored in a tenant's default environment will be displayed with their associated icon and display name in the policy editor. All other custom connectors will be displayed with the default connector icon and their internal name.
+Unlike standard and premium connectors, which are available to all environments in the tenant, custom connectors are scoped specifically to an individual environment. Therefore, you can't use tenant-level DLP policies to manipulate custom connectors, you must use environment-level DLP policies. By using PowerShell, you can configure DLP policy to include these connectors. 
 
 ### Default data group for new connectors
 
