@@ -124,6 +124,9 @@ To define a custom scope for your bot:
 
 ### Add authorized client app IDs
 
+>[!NOTE]
+>Remember to replace the example IDs and values below with your own Azure AD configured values.
+
 Now you'll need to add the Teams client app IDs, which are:
  
 - ```1fec8e78-bce4-4aaf-ab1b-5451cc387264``` (Teams mobile/desktop application)
@@ -183,11 +186,9 @@ These steps update the manifest file for the bot. Now you can download the manif
 
     :::image type="content" source="media/TeamsSSO/image11.png" alt-text="Screenshot displaying Download manifest button highlighted":::
 
->[!NOTE] 
-> Make sure to test your bot authentication functionality in all channels to ensure they are working as intended.
-
 >[!IMPORTANT] 
 > If your users have used the manifest to install the bot, they will need to get a new manifest after this configuration is complete and install the bot again for the Teams SSO to work. The Teams manifest does not refresh automatically. Alternatively, if you submit for Admin approval, the manifest is updated automatically.
 
-
+>[!NOTE] 
+> Make sure to test your bot authentication functionality in all channels to ensure they are working as intended.
 
