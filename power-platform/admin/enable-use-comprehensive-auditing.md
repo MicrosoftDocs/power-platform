@@ -5,7 +5,7 @@ author: pnghub
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/21/2020
+ms.date: 12/10/2020
 ms.author: gned
 ms.reviewer: jimholtz 
 search.audienceType: 
@@ -92,25 +92,38 @@ The customer engagement apps schema contains fields specific to customer engagem
 
 ## Enable auditing 
 
-1. Choose **Settings** > **Administration** > **System Settings** > **Auditing tab**.
+1. Choose **Settings** > **Administration** > **System Settings** > **Auditing tab**. 
+   - Or, from the [Power Apps Home Page](https://make.powerapps.com/), select **Settings (gear icon)** > **Advanced settings** >  **Settings** > **Auditing** > **Global Audit Settings**.
+
 2. Under **Audit Settings**, enable the following check boxes:
    - **Start Auditing**
-   - **Audit user access**
-   - **Start Read Auditing** (Note: this only appears if you enable **Start Auditing**.)
-3. Under **Enable Auditing in the following areas**, enable the check boxes for the areas you want to audit and then choose **OK**.
+   - **Audit user access** (Note: captures user sign-in only)
+   - **Start Read Auditing** (Note: captures most user activities/events)
+
+3. Under **Enable Auditing in the following areas**, enable the check boxes for the areas you want to audit and then select **OK**.
    
    ![System Settings Auditing](media/system-settings-auditing.png "System Settings Auditing")
-4. Go to **Settings** > **Customizations** > **Customize the System**
+
+4. To set table and field-level auditing, select **Settings** > **Customizations** > **Customize the System**.
+	- Or, from the System Settings page (above), select **Entity and Field Audit Settings**.
+	- Or, from the [Power Apps Home Page](https://make.powerapps.com/), select **Settings (gear icon)** > **Advanced settings** >  **Settings** > **Customizations** > **Customize the System**.
+
 5. Under **Components**, expand **Entities** and select an entity to audit, such as **Account**.
+
 6. Scroll down and under **Data Services** enable **Auditing**.
+
 7. Under **Auditing**, enable the following check boxes:
    - **Single record auditing. Log a record when opened.**
    - **Multiple record auditing. Log all records displayed on an opened page.**
 
    ![Retrieve Auditing](media/retrieve-auditing.png "Retrieve Auditing")
+
 8. Choose **Save**.
+
 9. Choose **Publish** to publish the customization.
+
 10. Repeat steps 5 - 9 for other entities you want to audit.
+
 11. Turn on audit logging in Microsoft 365. See [Turn audit log search on or off](https://support.office.com/article/turn-office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014).
 
 
