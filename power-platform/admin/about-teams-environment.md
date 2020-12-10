@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/19/2020
+ms.date: 12/10/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -46,7 +46,7 @@ Note the following regarding access to Microsoft Power Platform apps in Teams:
 
 - No direct API access to Dataverse for Teams will be provided, and only apps, bots, and flows embedded within the Microsoft Teams client will be able to access the Dataverse for Teams runtime.
 
-More information:<!--note from editor: Style Guide wants us to avoid "see". In the long version of a cross-reference, we should use "go to" (as in "for information about THIS AND THAT, go to <link>").--> [Dataverse for Teams licensing FAQ](powerapps-flow-licensing-faq.md#dataverse-for-teams)
+More information: [Dataverse for Teams licensing FAQ](powerapps-flow-licensing-faq.md#dataverse-for-teams)
 
 ## Environment lifecycle
 
@@ -86,14 +86,14 @@ Every team in Microsoft Teams is linked 1:1 to a [Microsoft 365 group](https://d
 
 Microsoft 365 Groups supports two user membership types: owners and members. Members can be users from the customer's own tenant or from a guest tenant. Any user management (addition, removal, user type change) made in a team will be reflected in the Microsoft 365 group, and vice versa.
 
-Access to a Dataverse for Teams environment and its resources (apps, data) will be restricted to users in the team. The Microsoft 365 group linked to a team will be automatically associated with the Dataverse for Teams environment, restricting access to users of that group. This Microsoft 365 Group<!--note from editor: We want to avoid possessives with our brand and feature names, via Writing Style Guide.--> association with the Dataverse for Teams environment won't be editable until the environment is upgraded to Dataverse.
+Access to a Dataverse for Teams environment and its resources (apps, data) will be restricted to users in the team. The Microsoft 365 group linked to a team will be automatically associated with the Dataverse for Teams environment, restricting access to users of that group. This Microsoft 365 Group association with the Dataverse for Teams environment won't be editable until the environment is upgraded to Dataverse.
 
-There's a difference in the models for adding users to Dataverse environments and adding them to Dataverse for Teams environments.<!--note from editor: Suggested.--> The following table describes the differences.
+There's a difference in the models for adding users to Dataverse environments and adding them to Dataverse for Teams environments. The following table describes the differences.
 
 |Feature  |Dataverse for Teams  |Dataverse  |
 |---------|---------|---------|
 |Automatic addition of all users in the Microsoft 365 group associated with the environment    |  No       |  Yes       |
-|Just-in-time addition of users the first time they access a resource in the environment<!--note from editor: Suggested.-->      |  Yes       |  Yes       |
+|Just-in-time addition of users the first time they access a resource in the environment  |  Yes       |  Yes       |
 |On-demand addition of users (refer to [Add users to an environment](add-users-to-environment.md))      |  Yes       |  Yes       |
 
 ### Role assignments 
@@ -132,7 +132,7 @@ There's a difference in the models for adding users to Dataverse environments an
 <tr>
 <td width="20%"> Colleagues with access </td>
 <td width="50%"> Colleagues with access are people in the tenant who aren't in the team but have been invited to run apps in the team. By default, colleagues with access have no access to data. Their data access rights can be granted based on the app or resources that they need to run. Note: when a colleague with access is invited to run apps in a team, the Microsoft 365 group association with the team's Dataverse for Teams environment will be automatically removed to allow app run access to the colleague with access. </td>
-<td width="30%"> Common Data Service User</td><!--note from editor: I assume this is a copacetic occurrence of Common Data Service?-->
+<td width="30%"> Common Data Service User</td>
 </tr>
 </table>
 
@@ -280,7 +280,7 @@ The **Built by your colleagues** catalog intentionally filters out **Shared with
 
 ## Known issues
 
-- The **Run diagnostics**" feature in the Power Platform admin center for team owners, members, and guests who don't have Azure Active Directory admin roles like Global Admin, or Power Platform Admin assigned, will show an alert that no security roles have been assigned directly to them. Security roles are automatically assigned by the system for Microsoft Teams personas,<!--note from editor: Edit okay?--> so this alert can be ignored.
+- The **Run diagnostics**" feature in the Power Platform admin center for team owners, members, and guests who don't have Azure Active Directory admin roles like Global Admin, or Power Platform Admin assigned, will show an alert that no security roles have been assigned directly to them. Security roles are automatically assigned by the system for Microsoft Teams personas, so this alert can be ignored.
 
 ### See also
 
