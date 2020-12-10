@@ -5,7 +5,7 @@ author: pnghub
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/21/2020
+ms.date: 12/10/2020
 ms.author: gned
 ms.reviewer: jimholtz 
 search.audienceType: 
@@ -20,8 +20,7 @@ search.app:
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-Protecting data, preserving privacy, and complying with regulations such as the [General Data Protection Regulation](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx) are certainly some of the highest priorities for your business. It's critical that you audit the entirety of data processing actions taking place to be able to analyze for possible security breaches. This information from Activity Logging can be used when you perform a Data Protection Impact Assessment (DPIA) addressing the use of Office, Power Apps, Microsoft Power Automate, and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation)
-.  
+Protecting data, preserving privacy, and complying with regulations such as the [General Data Protection Regulation](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx) are certainly some of the highest priorities for your business. It's critical that you audit the entirety of data processing actions taking place to be able to analyze for possible security breaches. This information from Activity Logging can be used when you perform a Data Protection Impact Assessment (DPIA) addressing the use of Office, Power Apps, Microsoft Power Automate, and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation).  
 
 This topic covers how you can set customer engagement apps to audit a broad range of data processing activities and use the [Microsoft 365 Security and Compliance Center](https://support.office.com/article/go-to-the-office-365-security-compliance-center-7e696a40-b86b-4a20-afcc-559218b7b1b8?ui=en-US&rs=en-US&ad=US) to review the data in activity reports.
 
@@ -92,25 +91,38 @@ The customer engagement apps schema contains fields specific to customer engagem
 
 ## Enable auditing 
 
-1. Choose **Settings** > **Administration** > **System Settings** > **Auditing tab**.
+1. Choose **Settings** > **Administration** > **System Settings** > **Auditing tab**. 
+   - Or, from the [Power Apps Home Page](https://make.powerapps.com/), select **Settings (gear icon)** > **Advanced settings** >  **Settings** > **Auditing** > **Global Audit Settings**.
+
 2. Under **Audit Settings**, enable the following check boxes:
    - **Start Auditing**
-   - **Audit user access**
-   - **Start Read Auditing** (Note: this only appears if you enable **Start Auditing**.)
-3. Under **Enable Auditing in the following areas**, enable the check boxes for the areas you want to audit and then choose **OK**.
+   - **Audit user access** (Note: captures user sign-in only)
+   - **Start Read Auditing** (Note: captures most user activities/events)
+
+3. Under **Enable Auditing in the following areas**, enable the check boxes for the areas you want to audit and then select **OK**.
    
    ![System Settings Auditing](media/system-settings-auditing.png "System Settings Auditing")
-4. Go to **Settings** > **Customizations** > **Customize the System**
+
+4. To set table and field-level auditing, select **Settings** > **Customizations** > **Customize the System**.
+	- Or, from the System Settings page (above), select **Entity and Field Audit Settings**.
+	- Or, from the [Power Apps Home Page](https://make.powerapps.com/), select **Settings (gear icon)** > **Advanced settings** >  **Settings** > **Customizations** > **Customize the System**.
+
 5. Under **Components**, expand **Entities** and select an entity to audit, such as **Account**.
+
 6. Scroll down and under **Data Services** enable **Auditing**.
+
 7. Under **Auditing**, enable the following check boxes:
    - **Single record auditing. Log a record when opened.**
    - **Multiple record auditing. Log all records displayed on an opened page.**
 
    ![Retrieve Auditing](media/retrieve-auditing.png "Retrieve Auditing")
+
 8. Choose **Save**.
+
 9. Choose **Publish** to publish the customization.
+
 10. Repeat steps 5 - 9 for other entities you want to audit.
+
 11. Turn on audit logging in Microsoft 365. See [Turn audit log search on or off](https://support.office.com/article/turn-office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014).
 
 
