@@ -5,7 +5,7 @@ author: dileepsinghmicrosoft
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/02/2020
+ms.date: 12/09/2020
 ms.author: dileeps
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -132,7 +132,7 @@ In addition, there are other applicable limits for [Dataverse](https://docs.micr
 
 ### Will there be a transition period for existing customers?
 
-Yes, for the year of 2020, *all* customers are in a transition period. That means that enforcement of the limits is not as strict compared to once the transition period ends, which will be after the full reporting is available in the Power Platform admin center (2020 release wave 2). This does not mean there are *no* daily limits - it simply means that the currently enforced limits are more generous than the stated limits, in order to prevent potential unintended impact on your apps or flows.
+Yes, all customers are in a transition period. That means that enforcement of the limits is not as strict compared to once the transition period ends, which will be after the full reporting is available in the Power Platform admin center (2020 release wave 2). This does not mean there are *no* daily limits - it simply means that the currently enforced limits are more generous than the stated limits, in order to prevent potential unintended impact on your apps or flows.
 
 Additionally, as enforcement is currently less strict, there is no facility to yet assign the **Power Apps and Power Automate capacity add-on** to a user. However, it is recommended that you purchase these add-ons now to remain within your license terms and to be prepared for when the transition period ends. 
 
