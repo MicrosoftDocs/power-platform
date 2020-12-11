@@ -18,7 +18,9 @@ search.app:
 ---
 # Use Innovation Backlog components
 
-Blurb
+Leverage our Innovation Backlog app to ask users to submit ideas for apps and flows that need building, and describe pain points with the current process. As users describe the process, they will provide information about personas involved, tools used, and measures for improvement. This information is then used to calculate an ROI and complexity score.
+
+Pick the most impactful ideas to for your development team to build, or select them for an upcoming hackathon. Other users can vote on ideas, or add their own scenarios to an existing idea. Developers can additionally request feedback and testimonials to build their portfolio.
 
 More information: [Set up Innovation Backlog components](#setup-innovationbacklog.md)
 
