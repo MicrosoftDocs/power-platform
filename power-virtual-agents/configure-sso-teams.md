@@ -32,7 +32,7 @@ When using Teams the user is already signed-in, so Power Virtual Agents chatbots
 
 - [Register a new app with Azure AD](configuration-end-user-authentication.md#use-azure-active-directory-as-your-identity-provider)
 - [Add an authentication topic to your bot](advanced-end-user-authentication.md)
-- Your bot and AAD application are under the same tenant.
+- Make sure your bot and Azure AD app are under the same tenant
 
 
 ## Configure single sign-on
