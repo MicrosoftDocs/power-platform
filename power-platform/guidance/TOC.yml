@@ -98,6 +98,8 @@
         href: coe/setup-powerbi.md
       - name: Set up theming components
         href: coe/setup-theming.md
+      - name: Set up Innovation Backklog components
+        href: coe/setup-innovationbacklog.md
     - name: What's in the CoE Starter Kit
       items:  
       - name: CoE Starter Kit modules
@@ -112,6 +114,8 @@
           href: coe/nurture-components.md  
         - name: Theming components
           href: coe/theming-components.md   
+        - name: Innovation Backlog components
+          href: coe/innovationbacklog-components.md   
         - name: Extend and modify components
           href: coe/modify-components.md
     - name: How to use the CoE Starter Kit
@@ -130,6 +134,8 @@
           href: coe/example-processes.md  
         - name: Dataverse for Teams environment management
           href: coe/teams-governance.md  
+        - name: Idea and Innovation Backlog
+          href: coe/use-innovation-backlog.md  
     - name: Limitations
       href: coe/limitations.md
     - name: Release notes

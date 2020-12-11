@@ -1,0 +1,76 @@
+---
+title: "Use the Innovation Backlog | MicrosoftDocs"
+description: "Use the Innovation Backlog solution to gather ideas, pain points and business value measures of apps or automation that need building.."
+author: manuelap-msft
+manager: devkeydet
+ms.service: power-platform
+ms.component: pa-admin
+ms.topic: conceptual
+ms.date: 04/10/2020
+ms.author: mapichle
+ms.reviewer: jimholtz
+search.audienceType: 
+  - admin
+search.app: 
+  - D365CE
+  - PowerApps
+  - Powerplatform
+---
+# Manage app and flow ideas in the Innovation Backlog
+
+Leverage our Innovation Backlog app to ask users to submit ideas for apps and flows that need building, and describe pain points with the current process. As users describe the process, they will provide information about personas involved, tools used and measures for improvement. This information is then used to calculate an ROI and complexity score.
+
+Pick the most impactful ideas to for your development team to build, or select them for an upcoming hackathon. Other users can vote on ideas, or add their own scenarios to an existing idea. Developers can additionally request feedback and testimonials to build their portfolio.
+
+## Process description
+
+**Problem statement:** The Center of Excellence wants to ensure the most impactful and valuable scenarios are selected for development. They want to ensure ideas are submitted via a standard process that gathers information on personas, tools and pain points.
+
+**Solution:** A canvas app can be used by everyone in the organization to describe their ideas and pain points, or vote on existing ideas.
+
+[Set the Innovation Backlog up](#setup-innovationbacklog.md) and share the Innovation Backlog canvas app with your organization.
+
+### Add a new idea
+
+1. Open the Innovation Backlog app and select **Add idea**.
+    ![Add an idea in the Innovation Backlog](media/ib-13.png "Add an idea in the Innovation Backlog")
+1. Describe your idea and pain points with the current process.
+    ![Describe your idea and pain points with the current process.](media/ib-13.png "Describe your idea and pain points with the current process.")
+1. Describe people participating in this process - remember to include approvers and external parties, such as customers or vendors, as well.
+    ![Describe people impacted by this process.](media/ib-15.png "Describe people impacted by this process.")
+1. Select the tools used for the current process - those can be software tools, such as Excel and Outlook, or non-software tools, such as doing calculations in your head or having to organize a meeting. You can add your own tools, if you can't find them in the list.
+    ![Select the tools used for the current process](media/ib-16.png "Select the tools used for the current process")
+1. Measure the value of your idea. Based on the pain points you entered in the first screen, the tool will suggest some measures for you. Pick a measure from the list, and enter the relevant data - such as time involved completing the task.
+
+    ![Measure the value of your idea](media/ib-17.png "Measure the value of your idea")
+
+    Add your own measure by selecting **Add Measure** and filling out the details.
+
+    ![Add your own measure](media/ib-18.png "Add your own measure")
+
+    Make sure all measures are saved (the icon will turn green), and add as many measures as needed to describe your current pain points.
+
+    ![Add as many measures as needed to describe your current pain points](media/ib-19.png "Add as many measures as needed to describe your current pain points")
+
+1. Share how the existing process works - this is an optional step, but will help developers understand your process better. You can upload a Visio diagram, use [Process Advisor](https://docs.microsoft.com/power-automate/process-advisor-overview) or describe your process inline in the tool. 
+    ![Share how your existing process works.](media/ib-20.png "Share how your existing process works.")
+1. Lastly, help a developer understand how complex your process is - based on the information you provided, the tool is making some estimations here that you can update.
+        ![Help a developer understand how complex your process is.](media/ib-21.png "Help a developer understand how complex your process is.")
+1. That's it, your idea can now be voted on or picked up by a developer.
+    ![Your idea is now saved.](media/ib-22.png "Your idea is now saved.")
+
+### Pick an idea for development
+
+A Power Platform developer can now browse ideas, and pick them for development. They can either pick ideas with the highest impact, or ideas where they are familiar with the process and tools used and have high confidence in being able to make them. This is a great opportunity for new makers to learn more and help others in the organization!
+
+1. Email the voters or creator to let them know you're interested in developing their ideal
+    ![Email the voter or creator of the idea.](media/ib-23.png "Email the voter or creator of the idea.")
+
+    ![Let them know you are interested in picking up their idea](media/ib-24.png "Let them know you are interested in picking up their idea")
+
+1. Assign yourself as the development owner by selecting **Edit Dev Owner**
+    ![Edit Dev Owner to assign yourself development ownership of the idea](media/ib-25.png "Edit Dev Owner to assign yourself development ownership of the idea")
+
+1. Send an email to the creator and voters to let them know the solution is ready for testing, and request their feedback.
+
+ ![Ask for testing and feedback](media/ib-26.png "Ask for testing and feedback")
