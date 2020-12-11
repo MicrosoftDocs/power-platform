@@ -50,7 +50,7 @@ Once the Power Automate integration feature is enabled, the following privileges
 
 2. Select **Settings** > **Product** > **Behavior**.   
   
-3. Under **Display behavior**, select **Show Power Automate on forms and in the site map** to Power Automate. Once enabled, this setting cannot be disabled again.
+3. Under **Display behavior**, select **Show Power Automate on forms and in the site map** to enable Power Automate. Once enabled, this setting cannot be disabled again.
 
 4. Select **Save**.
 
