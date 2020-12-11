@@ -22,7 +22,7 @@ Leverage our Innovation Backlog app to ask users to submit ideas for apps and fl
 
 Pick the most impactful ideas to for your development team to build, or select them for an upcoming hackathon. Other users can vote on ideas, or add their own scenarios to an existing idea. Developers can additionally request feedback and testimonials to build their portfolio.
 
-More information: [Set up Innovation Backlog components](#setup-innovationbacklog.md)
+More information: [Set up Innovation Backlog components](setup-innovationbacklog.md)
 
 Here's a breakdown of the assets that form the nurture components solution:
 
@@ -70,7 +70,7 @@ This instant flow runs once during setup to add some default values in the softw
 
 A canvas app that the Innovation Backlog admin uses to update icons for non-software tools, configure further pain points and delete obsolete or old ideas from the Innovation Backlog.
 
-**Permission**: Share this app with the Innovation Backlog admini - this can be your CoE or Power Platform adoption lead.
+**Permission**: Share this app with the Innovation Backlog admin - this can be your CoE or Power Platform adoption lead.
 
 **Prerequisite**: This app uses Microsoft Dataverse; a Premium license is therefore required for every app user.
 
@@ -86,4 +86,4 @@ A canvas app that is used to share and vote on ideas, describe pain points and a
 
 ![Innovation Backlog app](media/ib-12.png "Innovation Backlog app")
 
-Learn more about how to [use the Innovation Backlog](#use-innovation-backlog.md).
+Learn more about how to [use the Innovation Backlog](use-innovation-backlog.md).

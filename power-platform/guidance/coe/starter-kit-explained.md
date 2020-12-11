@@ -48,6 +48,6 @@ The Center of Excellence (CoE) Starter Kit is shipped in multiple components:
 
    Blurb
 
-    The Innovation Backlog solution contains assets that are relevant to everyone in the organization. More information: [Set up Innovation Backlog components](setup-innovationbacklog.md), [What's in the Innovation Backlog components](innovationbackklog-components.md), and [Use the Innovation Backlog](#use-innovationbacklog.md)
+    The Innovation Backlog solution contains assets that are relevant to everyone in the organization. More information: [Set up Innovation Backlog components](setup-innovationbacklog.md), [What's in the Innovation Backlog components](innovationbackklog-components.md), and [Use the Innovation Backlog](use-innovationbacklog.md)
 
 We recommend becoming familiar with the CoE core components solution before you add governance, nurture, or theming components.

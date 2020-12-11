@@ -28,7 +28,7 @@ Pick the most impactful ideas to for your development team to build, or select t
 
 **Solution:** A canvas app can be used by everyone in the organization to describe their ideas and pain points, or vote on existing ideas.
 
-[Set up the Innovation Backlog](#setup-innovationbacklog.md) and share the Innovation Backlog canvas app with your organization.
+[Set up the Innovation Backlog](setup-innovationbacklog.md) and share the Innovation Backlog canvas app with your organization.
 
 ## Add a new idea
 
@@ -78,8 +78,8 @@ As a Power Platform developer, you can now browse ideas, and pick them for devel
 
     ![Change the status to complete](media/ib-34.png "Change the status to complete]")
 
-1. Provide further details for the solution, such as technology used and cost it took to develop.
-     ![Change the status to complete](media/ib-35.png "Change the status to complete")
+1. Provide further details for the solution you have developed, such as technology used and cost it took to develop.
+     ![Provide further details for the solution, such as technology used and cost it took to develop.](media/ib-35.png "Provide further details for the solution, such as technology used and cost it took to develop.")
 
 1. Ask the idea creator and voters to provide feedback.
      ![Ask the idea creator and voters to provide feedback.](media/ib-36.png "Ask the idea creator and voters to provide feedback.")
@@ -91,4 +91,4 @@ Other users can browse ideas, add their votes or own scenarios if they have simi
 1. Browse ideas and select **Add Like** if you think this is a valuable idea.
      ![Browse and vote on ideas](media/ib-31.png "Browse and vote on ideas")
 1. If your team has a similar process, select **Add team repo** to describe your version of this process.
-         ![Browse and vote on ideas](media/ib-32.png "Browse and vote on ideas")
+         ![Add a team repo if your team has a similar process](media/ib-32.png "Add a team repo if your team has a similar process")
