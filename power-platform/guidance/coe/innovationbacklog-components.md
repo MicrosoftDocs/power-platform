@@ -26,7 +26,7 @@ Here's a breakdown of the assets that form the nurture components solution:
 
 ## Security roles
 
-- **Innovation Backlog Maker** Gives a user access to read and create records in the Innovation Backlog tables. When you share the Innovation Backlog app with your team, make sure to assign them the Innovation Backlog Maker security role.
+**Innovation Backlog Maker** Gives a user access to read and create records in the Innovation Backlog tables. When you share the Innovation Backlog app with your team, make sure to assign them the Innovation Backlog Maker security role.
 
 ## Tables
 
