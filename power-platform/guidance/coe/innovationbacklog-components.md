@@ -54,7 +54,7 @@ View an entity relationship diagram of the tables used for the Innovation Backlo
 
 ## Flows
 
-### Add Pain Point
+### Add Pain Points
 
 This instant cloud flow runs once during setup to add some default values into the pain points table. Pain points are selected when a new idea is added to the Innovation Backlog.
 
@@ -66,7 +66,7 @@ This instant flow runs once during setup to add some default values in the softw
 
 ### Innovation Backlog Admin
 
-A canvas app that the Innovation Backlog admin uses to update icons for non-software tools and delete obsolete or old ideas from the Innovation Backlog.
+A canvas app that the Innovation Backlog admin uses to update icons for non-software tools, configure further pain points and delete obsolete or old ideas from the Innovation Backlog.
 
 **Permission**: Share this app with the Innovation Backlog admini - this can be your CoE or Power Platform adoption lead.
 
