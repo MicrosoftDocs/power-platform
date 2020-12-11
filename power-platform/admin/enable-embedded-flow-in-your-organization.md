@@ -41,16 +41,20 @@ Once the Power Automate integration feature is enabled, the following privileges
   
 - One or more flows created in the Power Automate environment to use with customer engagement apps. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Create a flow by using customer engagement apps](https://docs.microsoft.com/power-automate/connection-dynamics365)  
   
-## Enable or disable Power Automate in your organization  
+## Enable Power Automate in your organization  
  By default, all security roles allow users to run flows on the records that they have access to.  
   
- To enable or disable Power Automate integration in your organization, follow these steps.  
+ To enable Power Automate integration in your organization, follow the below steps.  
+
+> [!IMPORTANT]
+   >  Once the Power Automate integration option has been enabled, it cannot be disabled again.
+   >  
 
 1. In the Power Platform admin center, select an environment. 
 
 2. Select **Settings** > **Product** > **Behavior**.   
   
-3. Under **Display behavior**, select **Show Power Automate on forms and in the site map** to enable or disable Power Automate.
+3. Under **Display behavior**, select **Show Power Automate on forms and in the site map** to enable Power Automate. Once enabled, this setting cannot be disabled again.
 
 4. Select **Save**.
 
