@@ -51,7 +51,7 @@ Before you begin, review the [prerequisites](setup.md#prerequisites) for using t
 
 1. In the pop-up window, select **Choose File**.
 
-1. Select the Center Of Excellence theming solution from File Explorer (CenterOfExcellenceInnovationBacklog_*x_x_x_xx*_managed.zip).
+1. Select the Center Of Excellence Innovation Backlog solution from File Explorer (CenterOfExcellenceInnovationBacklog_*x_x_x_xx*_managed.zip).
 
 1. When the compressed (.zip) file has been loaded, select **Next**.
 
