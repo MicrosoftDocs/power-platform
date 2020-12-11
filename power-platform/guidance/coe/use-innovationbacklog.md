@@ -63,16 +63,26 @@ Pick the most impactful ideas to for your development team to build, or select t
 
 As a Power Platform developer, you can now browse ideas, and pick them for development. Pick ideas that have the highest impact, or ones where you are familiar with the team and process. This is a great opportunity for new makers to learn more and help others in the organization!
 
+1. Search for ideas by keyword, tool, team, name or creator.
+     ![Search for ideas by keyword, tool, team, name or creator.](media/ib-33.png "Search for ideas by keyword, tool, team, name or creator.")
+
 1. Email the voters or creator to let them know you're interested in developing their ideal
     ![Email the voter or creator of the idea.](media/ib-23.png "Email the voter or creator of the idea.")
 
-    ![Let them know you are interested in picking up their idea](media/ib-24.png "Let them know you are interested in picking up their idea")
+    ![Let voters and creators know you are interested in picking up their idea](media/ib-24.png "Let voters and creators know you are interested in picking up their idea")
 
 1. Assign yourself as the development owner by selecting **Edit Dev Owner**
     ![Edit Dev Owner to assign yourself development ownership of the idea](media/ib-25.png "Edit Dev Owner to assign yourself development ownership of the idea")
 
-1. Send an email to the creator and voters to let them know the solution is ready for testing, and request their feedback.
-     ![Ask for testing and feedback](media/ib-26.png "Ask for testing and feedback")
+1. Change the status to **Complete** once you're done developing the solution.
+
+    ![Change the status to complete](media/ib-34.png "Change the status to complete]")
+
+1. Provide further details for the solution, such as technology used and cost it took to develop.
+     ![Change the status to complete](media/ib-35.png "Change the status to complete")
+
+1. Ask the idea creator and voters to provide feedback.
+     ![Ask the idea creator and voters to provide feedback.](media/ib-3y.png "Ask the idea creator and voters to provide feedback.")
 
 ### Vote on ideas and add your own scenario
 
