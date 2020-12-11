@@ -30,7 +30,7 @@ Pick the most impactful ideas to for your development team to build, or select t
 
 [Set up the Innovation Backlog](#setup-innovationbacklog.md) and share the Innovation Backlog canvas app with your organization.
 
-### Add a new idea
+## Add a new idea
 
 1. Open the Innovation Backlog app and select **Add idea**.
     ![Add an idea in the Innovation Backlog](media/ib-13.png "Add an idea in the Innovation Backlog")
@@ -59,7 +59,7 @@ Pick the most impactful ideas to for your development team to build, or select t
 1. That's it, your idea can now be voted on or picked up by a developer.
     ![Your idea is now saved.](media/ib-22.png "Your idea is now saved.")
 
-### Pick an idea for development
+## Pick an idea for development
 
 As a Power Platform developer, you can now browse ideas, and pick them for development. Pick ideas that have the highest impact, or ones where you are familiar with the team and process. This is a great opportunity for new makers to learn more and help others in the organization!
 
@@ -82,9 +82,9 @@ As a Power Platform developer, you can now browse ideas, and pick them for devel
      ![Change the status to complete](media/ib-35.png "Change the status to complete")
 
 1. Ask the idea creator and voters to provide feedback.
-     ![Ask the idea creator and voters to provide feedback.](media/ib-3y.png "Ask the idea creator and voters to provide feedback.")
+     ![Ask the idea creator and voters to provide feedback.](media/ib-36.png "Ask the idea creator and voters to provide feedback.")
 
-### Vote on ideas and add your own scenario
+## Vote on ideas and add your own scenario
 
 Other users can browse ideas, add their votes or own scenarios if they have similar processes.
 
