@@ -24,6 +24,10 @@ More information: [Set up Innovation Backlog components](#setup-innovationbacklo
 
 Here's a breakdown of the assets that form the nurture components solution:
 
+## Security roles
+
+- **Innovation Backlog Maker** Gives a user access to read and create records in the Innovation Backlog tables. When you share the Innovation Backlog app with your team, make sure to assign them the Innovation Backlog Maker security role.
+
 ## Tables
 
 Ideas and information about ideas, such as pain points, personas, measures and tools used, are stored in the following Dataverse tables:
@@ -43,6 +47,10 @@ Ideas and information about ideas, such as pain points, personas, measures and t
 - Innovation Backlog Pain Points Measures
 - Innovation Backlog Tool
 - Innovation Backlog Workitem
+
+View an entity relationship diagram of the tables used for the Innovation Backlog:
+
+![Innovation Backlog entity relationship diagram](media/ib-27.png "Innovation Backlog entity relationship diagram")
 
 ## Flows
 

@@ -35,7 +35,7 @@ Pick the most impactful ideas to for your development team to build, or select t
 1. Open the Innovation Backlog app and select **Add idea**.
     ![Add an idea in the Innovation Backlog](media/ib-13.png "Add an idea in the Innovation Backlog")
 1. Describe your idea and pain points with the current process.
-    ![Describe your idea and pain points with the current process.](media/ib-13.png "Describe your idea and pain points with the current process.")
+    ![Describe your idea and pain points with the current process.](media/ib-14.png "Describe your idea and pain points with the current process.")
 1. Describe people participating in this process - remember to include approvers and external parties, such as customers or vendors, as well.
     ![Describe people impacted by this process.](media/ib-15.png "Describe people impacted by this process.")
 1. Select the tools that are used for the current process - it can be software tools, such as Excel and Outlook, or non-software tools, such as doing calculations in your head or having to organize a meeting. You can add your own tools, if you can't find them in the list.
@@ -74,3 +74,12 @@ As a Power Platform developer, you can now browse ideas, and pick them for devel
 1. Send an email to the creator and voters to let them know the solution is ready for testing, and request their feedback.
 
  ![Ask for testing and feedback](media/ib-26.png "Ask for testing and feedback")
+
+### Vote on ideas and add your own scenario
+
+Other users can browse ideas, add their votes or own scenarios if they have similar processes.
+
+1. Browse ideas and select **Add Like** if you think this is a valuable idea.
+     ![Browse and vote on ideas](media/ib-31.png "Browse and vote on ideas")
+1. If your team has a similar process, select **Add team repo** to describe your version of this process.
+         ![Browse and vote on ideas](media/ib-32.png "Browse and vote on ideas")
