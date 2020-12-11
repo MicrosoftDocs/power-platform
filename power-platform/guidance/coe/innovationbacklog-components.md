@@ -20,6 +20,8 @@ search.app:
 
 Blurb
 
+More information: [Set up Innovation Backlog components](#setup-innovationbacklog.md)
+
 Here's a breakdown of the assets that form the nurture components solution:
 
 ## Tables
