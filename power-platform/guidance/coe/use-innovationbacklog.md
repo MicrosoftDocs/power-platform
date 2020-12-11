@@ -72,8 +72,7 @@ As a Power Platform developer, you can now browse ideas, and pick them for devel
     ![Edit Dev Owner to assign yourself development ownership of the idea](media/ib-25.png "Edit Dev Owner to assign yourself development ownership of the idea")
 
 1. Send an email to the creator and voters to let them know the solution is ready for testing, and request their feedback.
-
- ![Ask for testing and feedback](media/ib-26.png "Ask for testing and feedback")
+     ![Ask for testing and feedback](media/ib-26.png "Ask for testing and feedback")
 
 ### Vote on ideas and add your own scenario
 
