@@ -44,9 +44,9 @@ Once the Power Automate integration feature is enabled, the following privileges
 ## Enable Power Automate in your organization  
  By default, all security roles allow users to run flows on the records that they have access to.  
   
- To enable Power Automate integration in your organization, follow the below steps.  
+ To enable Power Automate integration in your organization, follow these steps.  
 
-> [!IMPORTANT]
+   > [!IMPORTANT]
    >  Once the Power Automate integration option has been enabled, it cannot be disabled again.
    >  
 
@@ -54,11 +54,11 @@ Once the Power Automate integration feature is enabled, the following privileges
 
 2. Select **Settings** > **Product** > **Behavior**.   
   
-3. Under **Display behavior**, select **Show Power Automate on forms and in the site map** to enable Power Automate. Once enabled, this setting cannot be disabled again.
+3. Under **Display behavior**, select **Show Power Automate on forms and in the site map** to enable Power Automate. Once enabled, this setting cannot be disabled.
 
 4. Select **Save**.
 
-> [!TIP]
+   > [!TIP]
    >  The Power Automate menu only list flows that begin with the *When a record is selected* Microsoft Dataverse trigger and contain at least one trigger or action that references that entity.
    >  
  
