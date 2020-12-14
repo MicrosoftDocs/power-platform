@@ -18,7 +18,7 @@ search.app:
 ---
 # Use the Innovation Backlog app to manage app and flow ideas
 
-Use the Innovation Backlog app to ask users to submit ideas for apps and flows that needs to be built, and describe pain points with the current process. As users describe the process, they will provide information about personas involved, tools used, and measures for improvement. This information is then used to calculate an ROI and complexity score.
+Use the Innovation Backlog app to ask users to submit ideas for apps and flows that need to be built, and describe pain points with the current process. As users describe the process, they will provide information about personas involved, tools used, and measures for improvement. This information is then used to calculate an ROI and complexity score.
 
 Pick the most impactful ideas to for your development team to build, or select them for an upcoming hackathon. Other users can vote on ideas, or add their own scenarios to an existing idea. Developers can additionally request feedback and testimonials to build their portfolio.
 
@@ -54,7 +54,7 @@ Pick the most impactful ideas to for your development team to build, or select t
 
 1. Share how the existing process works - this optional step will help developers understand your process better. You can upload a Visio diagram, use [Process Advisor](https://docs.microsoft.com/power-automate/process-advisor-overview), or describe your process inline in the tool. 
     ![Share how your existing process works.](media/ib-20.png "Share how your existing process works.")
-1. Lastly, help a developer understand how complex your process is . We are making some estimations here that you can update.
+1. Lastly, help a developer understand how complex your process is. We are making some estimations here that you can update.
         ![Help a developer understand how complex your process is.](media/ib-21.png "Help a developer understand how complex your process is.")
 1. That's it, your idea can now be voted on or picked up by a developer.
     ![Your idea is now saved.](media/ib-22.png "Your idea is now saved.")
@@ -63,7 +63,7 @@ Pick the most impactful ideas to for your development team to build, or select t
 
 As a Power Platform developer, you can now browse ideas, and pick them for development. Pick ideas that have the highest impact, or ones where you are familiar with the team and process. This is a great opportunity for new makers to learn more and help others in the organization!
 
-1. Search for ideas by keyword, tool, team, name or creator.
+1. Search for ideas by keyword, tool, team, name, or creator.
      ![Search for ideas by keyword, tool, team, name or creator.](media/ib-33.png "Search for ideas by keyword, tool, team, name or creator.")
 
 1. Email the voters or creator to let them know you're interested in developing their ideal

@@ -32,7 +32,7 @@ Here's a breakdown of the assets that form the nurture components solution:
 
 ## Tables
 
-Ideas and information, such as pain points, personas, measures and tools used, are stored in the following Dataverse tables:
+Ideas and information, such as pain points, personas, measures, and tools used, are stored in the following Dataverse tables:
 
 - Innovation Backlog Idea
 - Backlog Idea Vote
@@ -86,4 +86,4 @@ A canvas app that is used to share and vote on ideas, describe pain points and a
 
 ![Innovation Backlog app](media/ib-12.png "Innovation Backlog app")
 
-More information: [Use the Innovation Backlog app](use-innovationbacklog.md).
+More information: [Use the Innovation Backlog app](use-innovationbacklog.md)

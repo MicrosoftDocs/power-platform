@@ -6,7 +6,7 @@ manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/10/2020
+ms.date: 12/14/2020
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -17,16 +17,16 @@ search.app:
   - Powerplatform
 ---
 
-# Set up Innovation Backlog components
+# Set up the Innovation Backlog components
 
-Leverage our Innovation Backlog app to ask users to submit ideas for apps and flows that need building, and describe pain points with the current process. As users describe the process, they will provide information about personas involved, tools used, and measures for improvement. This information is then used to calculate an ROI and complexity score.
+Use the Innovation Backlog app to ask users to submit ideas for apps and flows that need building, and describe pain points with the current process. As users describe the process, they will provide information about personas involved, tools used, and measures for improvement. This information is then used to calculate an ROI and complexity score.
 
 Pick the most impactful ideas to for your development team to build, or select them for an upcoming hackathon. Other users can vote on ideas, or add their own scenarios to an existing idea. Developers can additionally request feedback and testimonials to build their portfolio.
 
 The Innovation Backlog solution contains assets that are relevant to all users in your organization.
 
->[!IMPORTANT]
->The Innovation Backlog components solution doesn't have a dependency on other components of the CoE Starter Kit. It can be used independently.
+> [!IMPORTANT]
+> The Innovation Backlog components solution doesn't have a dependency on other components of the CoE Starter Kit. It can be used independently.
 
 Before you begin, review the [prerequisites](setup.md#prerequisites) for using the starter kit solution.
 
@@ -35,23 +35,23 @@ Before you begin, review the [prerequisites](setup.md#prerequisites) for using t
 
 ## Import the solution
 
-1. Download the CoE Starter Kit compressed file ([aka.ms/CoeStarterKitDownload](https://aka.ms/CoeStarterKitDownload)).
+1. Download the CoE Starter Kit compressed file from ([aka.ms/CoeStarterKitDownload](https://aka.ms/CoeStarterKitDownload)).
 
 1. Extract the zip file.
 
-1. Go to [make.powerapps.com](<https://make.powerapps.com>).
+1. Sign in to [Power Apps](<https://make.powerapps.com>).
 
-1. Go to your CoE environment. In the example in the following image, we're importing to the environment named **Contoso CoE**.
+1. Select your CoE environment. In the example, we're importing to the environment named **Contoso CoE**.
 
      ![Power Apps maker portal environment selection](media/coe6.png "Power Apps maker portal environment selection")
 
 1. On the left pane, select **Solutions**.
 
-1. Select **Import**. A pop-up window appears. (If the window doesn't appear, be sure your browser's pop-up blocker is disabled and try again.)
+1. Select **Import**. A pop-up window appears. (If the window doesn't appear, ensure that your browser's pop-up blocker is disabled and try again.)
 
 1. In the pop-up window, select **Choose File**.
 
-1. Select the Center Of Excellence Innovation Backlog solution from File Explorer (CenterOfExcellenceInnovationBacklog_*x_x_x_xx*_managed.zip).
+1. Select the Center Of Excellence Innovation Backlog solution: CenterOfExcellenceInnovationBacklog_*x_x_x_xx*_managed.zip.
 
 1. When the compressed (.zip) file has been loaded, select **Next**.
 
@@ -74,11 +74,11 @@ Before you begin, review the [prerequisites](setup.md#prerequisites) for using t
 
 1. Open the **Innovation Backlog Admin** app.
     ![Open the Innovation Backlog Admin app](media/ib-4.png "Open the Innovation Backlog Admin app")
-1. Select **Go icons**.
+1. Select **Go Icon**.
         ![Select Go Icons to update icons](media/ib-5.png "Select Go Icons to update icons")
 1. Select each non-software tool, add an icon from the **ToolIcons** folder, and select **Add** to save the icon.
     ![Add an icon for a non-software tool in the Admin app](media/ib-10.png "Add an icon for a non-software tool in the Admin app")
-1. Go back to the Center of Excellence - Innovation Backlog solution and select **Innovation Backlog** canvas app.
+1. Go back to the Center of Excellence - Innovation Backlog solution and select the **Innovation Backlog** canvas app.
     ![Open the Innovation Backlog app](media/ib-6.png "Open the Innovation Backlog app")
 1. Copy the **Web Link**
         ![Copy the Web Link](media/ib-9.png "Copy the Web Link")
@@ -87,4 +87,4 @@ Before you begin, review the [prerequisites](setup.md#prerequisites) for using t
 1. Select the **InnovationBacklogAppURL** variable and paste in the URL for the Innovation Backlog app.
     ![Update the InnovationBacklogAppURL environment variable](media/ib-8.png "Update the InnovationBacklogAppURL environment variable")
 
-You can now [use the Innovation Backlog](innovationbacklog-components.md).
+You can now [use the Innovation Backlog app](innovationbacklog-components.md).
