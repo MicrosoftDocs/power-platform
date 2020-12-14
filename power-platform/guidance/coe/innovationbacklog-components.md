@@ -1,5 +1,5 @@
 ---
-title: "Use Innovation Backlog components | MicrosoftDocs"
+title: "Use the Innovation Backlog components | MicrosoftDocs"
 description: "The Innovation Backlog app contains assets log ideas and perform business value assessments."
 author: manuelap-msft
 manager: devkeydet
@@ -16,7 +16,7 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Use Innovation Backlog components
+# Use the Innovation Backlog components
 
 Use the Innovation Backlog app to ask users to submit ideas for apps and flows that need building, and describe pain points with the current process. As users describe the process, they will provide information about personas involved, tools used, and measures for improvement. This information is then used to calculate an ROI and complexity score.
 
