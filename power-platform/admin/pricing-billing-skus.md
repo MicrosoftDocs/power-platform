@@ -25,6 +25,12 @@ The topics in this section provide detailed information about Power Apps and Mic
 
 For information about Power BI licensing, see [Power BI Pricing](https://powerbi.microsoft.com/pricing/).
 
+## Power Apps and Power Automate Standalone plans
+
+Standalone Power Apps and Microsoft flow plans provide users the ability to create and run apps across data sources that extend beyond Microsoft 365, such as Salesforce, on-premises and custom data sources. These plans also include access to Dataverse to store and manage data. Learn more: [What is Dataverse?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
+
+More details around pricing and capabilities of standalone plans can be found in [Microsoft Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
+
 ## Power Apps/Power Automate for Microsoft 365
 
 Power Apps/Power Automate capabilities for Microsoft 365 enable users to extend and customize the Office experience with Power Apps and Power Automate. Users can create applications and flows based on Microsoft 365 data. These productivity apps can also utilize data outside of Microsoft 365 by connecting to common services including Box.com, Facebook, and many more via the use of standard connectors.
@@ -89,12 +95,6 @@ Users who have any Microsoft Power Platform or Dynamics 365 license are always s
 
 - If you're an existing customer and a user with this license who comes directly to Dataverse, you might get an error message that states "You are not a member of the organization." We're addressing this problem in the coming weeks.
 - We currently sync some of these Microsoft Dataverse licensed users to all Dataverse environments. We're addressing this right now. Currently, these users won't be able to open Power Apps for Microsoft 365 with this license.
-
-## Power Apps and Power Automate Standalone plans
-
-Standalone Power Apps and Microsoft flow plans provide users the ability to create and run apps across data sources that extend beyond Microsoft 365, such as Salesforce, on-premises and custom data sources. These plans also include access to Dataverse to store and manage data. Learn more: [What is Dataverse?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
-
-More details around pricing and capabilities of standalone plans can be found in [Microsoft Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 
 ## Community Plan
 
