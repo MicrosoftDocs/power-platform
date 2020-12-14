@@ -86,4 +86,4 @@ A canvas app that is used to share and vote on ideas, describe pain points and a
 
 ![Innovation Backlog app](media/ib-12.png "Innovation Backlog app")
 
-More information: [Use the Innovation Backlog app](use-innovation-backlog.md).
+More information: [Use the Innovation Backlog app](use-innovationbacklog.md).
