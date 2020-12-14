@@ -1,12 +1,12 @@
 ---
-title: "Use the Innovation Backlog | MicrosoftDocs"
+title: "Use the Innovation Backlog app to manage app and flow ideas | MicrosoftDocs"
 description: "Use the Innovation Backlog solution to gather ideas, pain points, and business value measures."
 author: manuelap-msft
 manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/10/2020
+ms.date: 12/14/2020
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -16,9 +16,9 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Manage app and flow ideas in the Innovation Backlog
+# Use the Innovation Backlog app to manage app and flow ideas
 
-Leverage our Innovation Backlog app to ask users to submit ideas for apps and flows that need building, and describe pain points with the current process. As users describe the process, they will provide information about personas involved, tools used, and measures for improvement. This information is then used to calculate an ROI and complexity score.
+Use the Innovation Backlog app to ask users to submit ideas for apps and flows that needs to be built, and describe pain points with the current process. As users describe the process, they will provide information about personas involved, tools used, and measures for improvement. This information is then used to calculate an ROI and complexity score.
 
 Pick the most impactful ideas to for your development team to build, or select them for an upcoming hackathon. Other users can vote on ideas, or add their own scenarios to an existing idea. Developers can additionally request feedback and testimonials to build their portfolio.
 
