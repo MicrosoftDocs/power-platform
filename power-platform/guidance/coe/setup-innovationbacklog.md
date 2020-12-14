@@ -35,7 +35,7 @@ Before you begin, review the [prerequisites](setup.md#prerequisites) for using t
 
 ## Import the solution
 
-1. Download the CoE Starter Kit compressed file from ([aka.ms/CoeStarterKitDownload](https://aka.ms/CoeStarterKitDownload)).
+1. Download the CoE Starter Kit compressed file from [aka.ms/CoeStarterKitDownload](https://aka.ms/CoeStarterKitDownload).
 
 1. Extract the zip file.
 
