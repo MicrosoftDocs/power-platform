@@ -47,7 +47,7 @@ Once the Power Automate integration feature is enabled, the following privileges
  To enable Power Automate integration in your organization, follow these steps.  
 
    > [!IMPORTANT]
-   >  Once the Power Automate integration option has been enabled, it cannot be disabled again.
+   >  Once the Power Automate integration option has been enabled, it cannot be disabled.
    >  
 
 1. In the Power Platform admin center, select an environment. 
@@ -59,7 +59,7 @@ Once the Power Automate integration feature is enabled, the following privileges
 4. Select **Save**.
 
    > [!TIP]
-   >  The Power Automate menu only list flows that begin with the *When a record is selected* Microsoft Dataverse trigger and contain at least one trigger or action that references that entity.
+   >  The Power Automate menu only lists flows that begin with the *When a record is selected* Microsoft Dataverse trigger and contain at least one trigger or action that references that entity.
    >  
  
 ### See also  
