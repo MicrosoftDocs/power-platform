@@ -1,5 +1,5 @@
 ---
-title: "Set up the Innovation Backlog components | MicrosoftDocs"
+title: "Set up Innovation Backlog components | MicrosoftDocs"
 description: "The Innovation Backlog components contain a canvas app that can be used for managing an idea backlog, gathering information on complexity and ROI as well as voting on ideas."
 author: manuelap-msft
 manager: devkeydet
@@ -17,7 +17,7 @@ search.app:
   - Powerplatform
 ---
 
-# Set up the Innovation Backlog components
+# Set up Innovation Backlog components
 
 Use the Innovation Backlog app to ask users to submit ideas for apps and flows that need building, and describe pain points with the current process. As users describe the process, they will provide information about personas involved, tools used, and measures for improvement. This information is then used to calculate an ROI and complexity score.
 
