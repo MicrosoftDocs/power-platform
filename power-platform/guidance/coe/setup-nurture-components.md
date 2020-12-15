@@ -52,7 +52,7 @@ If you don't already have a SharePoint site for the Microsoft Power Platform pow
 
 We've created a helper flow to create the library for you. See the zip file CreateCoETemplateLibaryDocLibraryinSP.zip, which is part of your CoE Starter Kit download.
 
-1. Download and import this flow into your CoE environment by using the same pattern as you did to [import the audit log flow](setup-auditlog.md).
+1. Go to [flow.microsoft.com](https://flow.microsoft.com) > **My Flows** > **Import** and import the CreateCoETemplateLibaryDocLibraryinSP.zip cloud flow.
 
 2. Ensure that the flow is turned on, and run the flow.
 3. When the flow is completed, you'll have a doc library named AppTemplates, with the following columns in the default view:
