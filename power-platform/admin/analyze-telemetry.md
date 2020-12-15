@@ -18,6 +18,8 @@ search.app:
 ---
 # Analyze model-driven apps and Microsoft Dataverse telemetry with Application Insights
 
+<!-- fwlink: 2147020 2151390 -->
+
 Customers can set up their own Application Insights environment to receive telemetry on diagnostics and performance already captured by the Dataverse platform.
  
 You can subscribe to receive the telemetry about operations that applications perform on your Dataverse and within model-driven apps. This telemetry provides information that you can use to diagnose and troubleshoot issues related to errors and performance. 
