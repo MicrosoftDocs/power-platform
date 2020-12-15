@@ -4,7 +4,7 @@ description: About system and application users
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 12/09/2020
+ms.date: 12/15/2020
 author: jayasreekumar
 ms.author: jkumar
 ms.reviewer: jimholtz
