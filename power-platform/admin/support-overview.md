@@ -2,7 +2,7 @@
 title: "Support for Microsoft Power Platform and customer engagement apps in Dynamics 365 | MicrosoftDocs"
 description: Information on support for Microsoft Power Platform and customer engagement apps in Dynamics 365
 ms.custom: ""
-ms.date: 12/04/2020
+ms.date: 12/16/2020
 ms.reviewer: ""
 ms.service: power-platform
 ms.suite: ""
@@ -52,7 +52,7 @@ Microsoft provides support in English globally and provides additional languages
 
 ### What hours are considered local business hours for support? 
 
-For most countries and regions, business hours are from 9 AM to 5 PM weekdays (weekends and holidays excluded). For North America, business hours are defined as 6 AM to 6 PM Pacific Time, Monday through Friday, excluding holidays. In Japan, business hours are from 9 AM to 5:30 PM weekdays. 
+For most countries and regions, business hours are from 8 AM to 6 PM weekdays (weekends and holidays excluded). For North America, business hours are defined as 6 AM to 6 PM Pacific Time, Monday through Friday, excluding holidays. In Japan, business hours are from 9 AM to 5:30 PM weekdays. 
 
 ### Do I need a support plan if I need assistance with a technical issue? 
 
