@@ -4,7 +4,7 @@ description: Explains how Power Apps and Power Automate be made widely available
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/12/2020
+ms.date: 12/16/2020
 author: jayasreekumar
 ms.author: jkumar
 ms.reviewer: jimholtz
@@ -200,3 +200,6 @@ The export can take a while for tenants with a large number of Power Platform us
 2. Select an Environment.
 3. Optionally, the list of resources used in an Environment may be downloaded as a .csv.
 
+### See also
+[Use best practices to secure and govern Power Automate environments](https://docs.microsoft.com/learn/paths/best-practices-environments/)
+[Microsoft Power Platform Center of Excellence (CoE) Starter Kit](../guidance/coe/starter-kit.md)
