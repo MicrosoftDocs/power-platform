@@ -201,5 +201,5 @@ The export can take a while for tenants with a large number of Power Platform us
 3. Optionally, the list of resources used in an Environment may be downloaded as a .csv.
 
 ### See also
-[Use best practices to secure and govern Power Automate environments](https://docs.microsoft.com/learn/paths/best-practices-environments/)
+[Use best practices to secure and govern Power Automate environments](https://docs.microsoft.com/learn/paths/best-practices-environments/) <br />
 [Microsoft Power Platform Center of Excellence (CoE) Starter Kit](../guidance/coe/starter-kit.md)
