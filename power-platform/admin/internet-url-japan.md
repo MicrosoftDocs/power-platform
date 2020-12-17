@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/22/2020
+ms.date: 12/17/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -43,6 +43,8 @@ To select a different region, see [Internet accessible URLs required](online-req
 - https://cloudredirectorjpnsec.cloudapp.net
 - https://*.azureedge.net
 - https://www.crmdynint.com
+- https://mem.gfx.ms
+- https://cloudredirectornamsec.cloudapp.net
 
 ### See also
 [Internet accessible URLs required](online-requirements.md#internet-accessible-urls-required)
