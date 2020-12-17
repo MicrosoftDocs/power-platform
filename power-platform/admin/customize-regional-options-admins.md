@@ -42,7 +42,7 @@ Make sure you have the System Administrator or System Customizer security role o
   
    - Select the **Time** tab to change the time format, time separator, and notation for morning and afternoon.  
   
-   - Select the **Date** tab to set the type of calendar, first day of the week, first week of the year, formats for long and short dates, and whether or not to show week numbers in calendar views.  
+   - Select the **Date** tab to set the type of calendar, first day of the week, first week of the year, formats for long and short dates, and whether or not to show week numbers in [calendar view](/powerapps/user/calendar-view).  
   
 5. Select **Apply** to apply the changes and continue working in the dialog box, or select **OK** to save the changes and close the dialog box.  
 
