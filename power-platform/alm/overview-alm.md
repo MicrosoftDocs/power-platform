@@ -53,7 +53,7 @@ The following concepts are important for understanding ALM using the Microsoft P
 
 -   *Solutions* are the mechanism for implementing ALM; you use them to distribute components across environments through export and import. A component represents something that you can potentially customize. Anything that can be included in a solution is a component, such as site maps, apps, entities, fields, charts, or plug-ins. 
 
--   *Common Data Service* stores all the artifacts, including solutions.
+-   *Dataverse* stores all the artifacts, including solutions.
 
 -   *Source control* should be your source of truth for storing and collaborating on your components.
 
