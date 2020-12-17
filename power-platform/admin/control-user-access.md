@@ -9,7 +9,7 @@ ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/15/2020
+ms.date: 12/17/2020
 search.audienceType: 
   - admin
 search.app:
@@ -94,10 +94,12 @@ Or, purchase and assign per app passes: [About Power Apps per app plans](about-p
    > [!div class="mx-imgBorder"] 
    > ![Select Edit](media/edit-environment.png "Select Edit")
 
-3. In the **Settings** page, select **Edit** (![Edit](media/edit-button.png)).
+3. In the **Edit details** page, select **Edit** (![Edit](media/edit-button.png)).
   
    > [!div class="mx-imgBorder"] 
    > ![Edit security group](media/edit-security-group.png "Edit security group")
+
+   Only the first 200 security groups will be returned and selectable by default. To select additional security groups, use **Search** to look for a specific security group.
 
 4. Select a security group, select **Done**, and then select **Save**.
 
