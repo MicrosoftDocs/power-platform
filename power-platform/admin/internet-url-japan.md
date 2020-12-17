@@ -43,6 +43,8 @@ To select a different region, see [Internet accessible URLs required](online-req
 - https://cloudredirectorjpnsec.cloudapp.net
 - https://*.azureedge.net
 - https://www.crmdynint.com
+- https://mem.gfx.ms
+- https://cloudredirectorjpnsec.cloudapp.net
 
 ### See also
 [Internet accessible URLs required](online-requirements.md#internet-accessible-urls-required)
