@@ -19,7 +19,7 @@ search.app:
 
 # Set up PowerOps components
 
-The PowerOps components enable makers to apply source control strategies using GitHub and use automated builds and deployment of solutions to their environments without the need for manual intervention by the maker, administrator, developer, or tester. In addition PowerOps provides makers the ability to work without intimate knowledge of the downstream technologies and to be able to switch quickly from developing solutions to source controlling the solution and ultimately pushing their apps to other environments with as few interruptions to their work as possible.
+The PowerOps components enable makers to apply source control strategies using GitHub to use automated builds and deployment of solutions to their environments without the need for manual intervention by the maker, administrator, developer, or tester. In addition PowerOps provides makers the ability to work without intimate knowledge of the downstream technologies and to be able to switch quickly from developing solutions to source controlling the solution and ultimately pushing their apps to other environments with as few interruptions to their work as possible.
 
 This solution uses [GitHub actions](https://docs.microsoft.com/power-platform/alm/devops-github-actions) for source control and deployments. The [GitHub connector](https://docs.microsoft.com/connectors/github/) is used in flows to interact with GitHub.
 
@@ -28,14 +28,14 @@ This solution uses [GitHub actions](https://docs.microsoft.com/power-platform/al
 
 ## Prerequisites
 
-- Create a GitHub account at [GitHub.com](https://github.com)
-- Create a [GitHub org](https://docs.github.com/free-pro-team@latest/github/setting-up-and-managing-organizations-and-teams/creating-a-new-organization-from-scratch)
+- GitHub account at [GitHub.com](https://github.com)
+- [GitHub organization](https://docs.github.com/free-pro-team@latest/github/setting-up-and-managing-organizations-and-teams/creating-a-new-organization-from-scratch)
 
 ## Create an Azure AD app registration
 
 Set up an Azure AD app registration that will be used to create environments and retrieve solutions within an environment.
 
-Sign in to [portal.azure.com](https://portal.azure.com).
+1. Sign in to [portal.azure.com](https://portal.azure.com).
 
 1. Go to **Azure Active Directory** > **App registrations**.
 
@@ -47,23 +47,23 @@ Sign in to [portal.azure.com](https://portal.azure.com).
 
 1. Select **API Permissions** > **+ Add a permission**.
 
-1. Select **PowerApps Runtime Service**, and configure permissions as follows:
+1. Select **PowerApps Runtime Service**.
 
    ![API Permissions - Add a permission](media/git-1.png "Add a permission")
 
-   1. Select **Delegated permissions**, and then select **user_impersonation**.
+1. Select **Delegated permissions**, and then select **user_impersonation**.
 
       ![Delegated permissions](media/git-2.png "Delegated permissions")
 
-   1. Select **Add permissions**.
+1. Select **Add permissions**.
 
 1. Under **Overview**, select **Add a Redirect URI**.
 
 1. Select **+ Add a platform** > **Mobile and Desktop Applications**.
-1. Select the **Native Client** and **MSAL Only** option and select **Configure**
-1. For Implicit Access, select **Access Token**
-1. For Supported Account Type, select **Accounts in any organizational directory (Any Azure AD directory - Multitenant)**
-1. For Advanced Settings, set **Allow Public Client Flows** to **Yes** 
+1. Select the **Native Client** and **MSAL Only** option and select **Configure**.
+1. For Implicit Access, select **Access Token**.
+1. For Supported Account Type, select **Accounts in any organizational directory (Any Azure AD directory - Multitenant)**.
+1. For Advanced Settings, set **Allow Public Client Flows** to **Yes**.
 
 1. Enter the URL you copied from the **Redirect URL** section of the custom connector.
 
@@ -71,7 +71,7 @@ Sign in to [portal.azure.com](https://portal.azure.com).
 
 1. Select **Overview**, and copy and paste the application (client) ID value to notepad. You'll need this value in the next step as you configure the custom connector.
 
-Leave the Azure portal open, because you'll need to make some configuration updates after you set up the custom connector.
+Leave the Azure portal open, because you'll need to copy some information when you set up the custom connector.
 
 ## Import the solution
 
@@ -81,7 +81,7 @@ Leave the Azure portal open, because you'll need to make some configuration upda
 
 1. Go to [make.powerapps.com](<https://make.powerapps.com>).
 
-1. Go to your Development environment. In the example in the following image, we're importing to the environment named **Contoso CoE**.
+1. Go to your development environment. In the example in the following image, we're importing to the environment named **Contoso CoE**.
 
      ![Power Apps maker portal environment selection](media/coe6.png "Power Apps maker portal environment selection")
 
@@ -124,24 +124,22 @@ Leave the Azure portal open, because you'll need to make some configuration upda
 
 ![Configure Environment Settings and Deployment Stages after import using the PowerOps Admin app](media/git-24.png "Configure Environment Settings and Deployment Stages after import using the PowerOps Admin app.")
 
-### Setup Deployment Stages
+### Set up deployment stages
 
 >[!IMPORTANT]
 >Update one row at a time and select **Update** to save your changes.
 
 1. Update the **Stage Owner Email** for each of the three stages (DEV, TEST & PROD). The stage owner will receive notification for approving the project creation and deployment.
 1. Update the **Admin username and password**. These credentials can be a service account or a user account with Power Platform Admin role.
-1. For each of the Test and Production stages, select a pre-existing environment that will be used for Test and Production deployments.
-    >[!NOTE]
-    >Your Dev environment is the environment you installed the solution in
+1. For each of the Test and Production stages, select a pre-existing environment that will be used for Test and Production deployments. Your dev environment is the environment provisioned when you created a project in PowerOps.
 
 ### Update the "Webhook Url" value
 
-This Url will be used as a callback URL from GitHub.
+This Url will be used for callbacks from GitHub.
 
 1. In a new tab, go to [make.powerapps.com](<https://make.powerapps.com>) > **Solutions** > **Power Platform GitHub ALM** solution.
 1. Edit the **WorkflowCompleteNotification** flow.
-1. Select the first action and copy the URL in the action
+1. Select the first action and copy the URL in the action.
 1. Go back to the **PowerOps Admin** app and update the **Webhook Url** with the value copied from the previous step.
 1. Select **Update**.
 
