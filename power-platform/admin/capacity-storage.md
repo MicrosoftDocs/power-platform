@@ -1,7 +1,7 @@
 ---
 title: "New Microsoft Dataverse storage capacity  | MicrosoftDocs"
 description: Introducing a new storage model for Microsoft Dataverse.
-ms.date: 10/08/2020
+ms.date: 12/01/2020
 ms.reviewer: ""
 ms.service: "power-platform"
 ms.topic: "quickstart"
@@ -126,7 +126,11 @@ The following details are provided:
 
 We're making changes for what happens when an organization's storage capacity usage is greater than the capacity entitled or purchased via add-ons.
 
-For now, if you exceed your storage capacity, you'll receive notifications alerting you to the over-capacity usage. These notifications will occur as alerts in the Power Platform admin center. In the future, certain admin operations will no longer be available when a tenant exceeds storage capacity entitlements. Check back for updated information. 
+If you exceed your storage capacity, you'll receive notifications alerting you to the over-capacity usage. These notifications will occur as alerts in the Power Platform admin center. The following admin operations will no longer be available when a tenant exceeds storage capacity entitlements: 
+
+- Create new environment (requires minimum 1GB capacity available)
+- Copy an environment (requires minimum 1GB capacity available)
+- Restore an environment (requires minimum 1GB capacity available)
 
 ## Example storage capacity scenarios, overage enforcement
 

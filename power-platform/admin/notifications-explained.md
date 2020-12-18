@@ -1,6 +1,6 @@
 ---
 title: "Notifications for Business Application Group services  | MicrosoftDocs"
-description: CNotifications for Business Application Group services
+description: Notifications for Business Application Group services
 author: astockli
 manager: timrob
 ms.service: power-platform
@@ -29,7 +29,7 @@ The [Microsoft 365 Message Center](https://docs.microsoft.com/office365/admin/ma
 The [Service health dashboard](https://docs.microsoft.com/office365/enterprise/view-service-health) will show the latest status of updates and incidents regarding your service. To learn how to get to the Microsoft 365 Service health dashboard, see [Check your service health](check-online-service-health.md). 
 
 ## Email notifications
-The notifications sent from the Business Application Group communications team will be for the following services and email addresses.  Please be sure to check your spam folder for these messages.
+The notifications sent from the Business Application Group communications team will be for the following services and email addresses.  Be sure to check your spam folder for these messages.
 
 |Service | Notification Email | 
 | ------------- | -------------| 
@@ -60,7 +60,7 @@ Planned maintenance includes updates and changes to the service to provide incre
 ![Planned and unplanned maintenance banner](../admin/media/Maintenance-Notification-Banner.png "Maintenance Notification Banner")
 
 ## Communications for releases, package deployments, and awareness
-Communications can be informational in nature, drive specific actions, or both. The target audience for these communications are System Administrators or individuals designated to run the service. You can easily identify these by the light-blue banner.
+Communications can be informational in nature, drive specific actions, or both. The target audience for these communications is System Administrators or individuals designated to run the service. You can easily identify these by the light-blue banner.
 
 ![General awareness email banner](../admin/media/Customer-Notification-Banner.png "Customer Notification Banner") 
  
