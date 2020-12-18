@@ -9,7 +9,7 @@ ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/04/2020
+ms.date: 12/17/2020
 search.audienceType: 
   - admin
 search.app:
@@ -40,11 +40,11 @@ In this example, four security groups provide controlled access to a specific en
 - When users are added to the security group, they are added to the Dataverse environment.  
 - When users are removed from the group, they are disabled in the Dataverse environment.  
 - When a security group is associated with an existing environment with users, all users in the environment that are not members of the group will be disabled. 
-- If a Dataverse environment does not have an associated security group, all users with a Dataverse license (customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation)), Power Automate, Power Apps, etc.) will be created as users and enabled in the environment.  
-- If a security group is associated with an environment, only users with Dataverse licenses that are members of the environment security group will be created as users in the Dataverse environment.  
+- If a Dataverse environment does not have an associated security group, all users with a Dataverse license (customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), Power Automate, Power Apps, etc.) or per app plan will be created as users and enabled in the environment.  
+- If a security group is associated with an environment, only users with Dataverse licenses or per app plan that are members of the environment security group will be created as users in the Dataverse environment.  
 - When you assign a security group to an environment, that environment will not show up in [home.dynamics.com](https://home.dynamics.com) for users not in the group.  
 - If you do not assign a security group to an environment, the environment will show up in [home.dynamics.com](https://home.dynamics.com) even for those who have not been assigned a security role in that Dataverse environment.  
-- If you do not specify a security group, all users who have a Dataverse license, (customer engagement apps (such as Dynamics 365 Sales and Customer Service)) will be added to the new environment.
+- If you do not specify a security group, all users who have a Dataverse license (customer engagement apps (such as Dynamics 365 Sales and Customer Service)) or per app plan will be added to the new environment.
 - **New**: Security groups cannot be assigned to default and developer environment types. If you've already assigned a security group to your default or developer environment, we recommend removing it since the default environment is intended to be shared with all users in the tenant and the developer environment is intended for use by only the owner of the environment.
 - Dataverse environments support associating the following group types: Security and Microsoft 365. Associating [other group types](https://docs.microsoft.com/microsoft-365/admin/create-groups/compare-groups?WT.mc_id=365AdminCSH&view=o365-worldwide) is not supported.
 
@@ -82,6 +82,8 @@ In this example, four security groups provide controlled access to a specific en
 1. In the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], select **Users** > **Active users** > **+ Add a user**. Enter the user information, select licenses, and then select **Add**.  
   
    [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Add users and assign licenses at the same time](https://go.microsoft.com/fwlink/p/?LinkID=615205)  
+
+Or, purchase and assign per app passes: [About Power Apps per app plans](about-powerapps-perapp.md)
   
 ## Associate a security group with a Dataverse environment  
   
@@ -92,10 +94,12 @@ In this example, four security groups provide controlled access to a specific en
    > [!div class="mx-imgBorder"] 
    > ![Select Edit](media/edit-environment.png "Select Edit")
 
-3. In the **Settings** page, select **Edit** (![Edit](media/edit-button.png)).
+3. In the **Edit details** page, select **Edit** (![Edit](media/edit-button.png)).
   
    > [!div class="mx-imgBorder"] 
    > ![Edit security group](media/edit-security-group.png "Edit security group")
+
+   Only the first 200 security groups will be returned and selectable by default. To select additional security groups, use **Search** to look for a specific security group.
 
 4. Select a security group, select **Done**, and then select **Save**.
 

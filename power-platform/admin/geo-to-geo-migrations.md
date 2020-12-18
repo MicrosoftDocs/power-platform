@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/25/2020
+ms.date: 12/14/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -46,7 +46,7 @@ We continue to open new datacenter regions for business services, and to add dat
 - United Kingdom (UK) = *.crm11.dynamics.com  
 - United Arab Emirates (UAE) = *.crm15.dynamics.com 
 
- [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Direct sign in](sign-in-office-365-apps.md#BKMK_directsignin) and [Discover the URL for your organization using the Web API](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/discover-url-organization-web-api)
+ [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Direct sign in](sign-in-office-365-apps.md#BKMK_directsignin)
 
  For example, if your existing organization URL is https://myorg.crm<strong>5</strong>.dynamics.com and you request it to be moved to Australia, the new organization URL will be https://myorg.crm<strong>6</strong>.dynamics.com.  
 

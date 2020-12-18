@@ -4,9 +4,9 @@ description: Block forwarded emails sent from Microsoft Power Automate.
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/27/2020
-author: jayasreekumar
-ms.author: jkumar
+ms.date: 12/14/2020
+author: paulliew
+ms.author: paulliew
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
 search.audienceType: 
@@ -47,8 +47,8 @@ azure-logic-apps/1.0 (workflow afa0fb167803450aa650267e95d43287; version
 
 Exchange admins can use these headers to set up exfiltration blocking rules in the Exchange admin center as enumerated in the example below. Here the ‘mail flow’ rule rejects outbound email messages with:  
 
-- ‘x-ms-mail-operation-type’ header set as ‘Forward’ and  
-- ‘x-ms-mail-application’ header set as ‘Microsoft Power Automate’  
+- ‘x-ms-mail-application’ header set as ‘Microsoft Power Automate’ and
+- ‘x-ms-mail-operation-type’ header set as ‘Send’ or ‘Forward’  
 
 This is equivalent to the Exchange ‘mail flow’ rule set up for message type equal to ‘auto-forward’ while using Outlook and Outlook on the web clients. 
 
