@@ -25,7 +25,7 @@ Version 1.52 for the CoE Starter Kit Core Components is now available. This arti
 
 ## Power Virtual Agents inventory
 
-This version introduces inventory information for Power Virtual Agents. A new Admin | Sync Flows v2 (Chatbots) has been added to sync Power Virtual Agent information to the new Chatbot, Chatbot Component, and Chatbot Component Flow tables. The Power Platform Admin View has been updated to include Chatbot information. The CoE Starter Kit Power BI Dashboard has been updated to include a Virtual Agents overview and Virtual Agents detail page.
+This version introduces inventory information for Power Virtual Agents. A new Admin | Sync Flows v3 (Chatbots) has been added to sync Power Virtual Agent information to the new Chatbot, Chatbot Component, and Chatbot Component Flow tables. The Power Platform Admin View has been updated to include Chatbot information. The CoE Starter Kit Power BI Dashboard has been updated to include a Virtual Agents overview and Virtual Agents detail page.
 
 Information available for chatbots:
 
@@ -44,7 +44,7 @@ Information available for chatbots:
 
 ## Power Apps (canvas apps) "shared with" information
 
-This version introduces new tables that store information on users canvas apps have been shared with. A new Admin | Sync Flow v2 (Power Apps User Shared With) has been added to retrieve role assignments per app. Group size is stored for apps shared with Azure AD security groups.
+This version introduces new tables that store information on users canvas apps have been shared with. A new Admin | Sync Flow v3 (Power Apps User Shared With) has been added to retrieve role assignments per app. Group size is stored for apps shared with Azure AD security groups.
 
 Information available for users an app is shared with:
 
@@ -63,6 +63,6 @@ This version renames the Set New App Owner app to Set App Permissions, and intro
 
 This version also introduces a new Set Flow Permissions app that allows admins to search by environment, by maker, and by orphaned flows and add new users to those flows.
 
-## Admin | Sync Template v2 (Check Deleted)
+## Admin | Sync Template v3 (Check Deleted)
 
 This flow runs weekly, and compares CoE to the tenant to determine if any objects were deleted since last run. Either just marks them as deleted.

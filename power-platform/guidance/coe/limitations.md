@@ -33,12 +33,12 @@ Larger tenants might require a per flow license in order for these flows to comp
 >[!TIP]
 >The first run of the Sync flows in the Core Solution will run long as it will do an update for every flow/app/etc in the tenant. Subsequent runs  will only update apps/flows/etc that have changed since the last run and so these will not require a per flow license for most tenants.
 
-## Timeouts in the Admin | Sync Template V2
+## Timeouts in the Admin | Sync Template v3
 
 The Dataverse connector might experience some throttling limits if the tenant has a lot of resources. If you see 429 errors in the flow run history occurring in later runs, you can try the following resolution steps:
 
 - **Configure the retry policy**
-  1. Open **Admin \| Sync Template v2**, and then select **Edit**.
+  1. Open **Admin \| Sync Template v3**, and then select **Edit**.
   1. Expand the step **Get Environments and store them in the CoE Table**.
   1. Expand the step **Apply to each Environment**
   1. Go to the **Settings** pane for each call to Dataverse, and configure the timeout/retry settings. The default count is set to **10** and the default interval is set to **PT10S** - increase the values incrementally here.
@@ -46,7 +46,7 @@ The Dataverse connector might experience some throttling limits if the tenant ha
      ![Configure retry policy](media/coe72.png "Configure the retry policy")
 
 - **Configure (reduce) concurrency in Foreach loops to reduce simultaneous calls**
-  1. Open **Admin \| Sync Template v2**, and then select **Edit**.
+  1. Open **Admin \| Sync Template v3**, and then select **Edit**.
   1. Expand the step **Get Environments and store them in the CoE Table**.
   1. Go to **Settings** for the **Apply to each Environment** step.
 
@@ -69,7 +69,7 @@ Embedding Power Apps canvas apps in Power BI dashboards isn't available for GCC 
 
 ## Developer environments from the Power Apps Community Plan
 
-Microsoft Power Platform protects developer-type SKUs from inquiry by non-authenticated users. This means that the model-driven apps in developer SKUs will be skipped from our tally work in the sync flow Admin | Sync Template v2 (Model Driven Apps).
+Microsoft Power Platform protects developer-type SKUs from inquiry by non-authenticated users. This means that the model-driven apps in developer SKUs will be skipped from our tally work in the sync flow Admin | Sync Template v3 (Model Driven Apps).
 
 To fix this, you must have your admin security role added to the security roles for all developer environments, and then remove the selection from the sync flow. More information: [Power Apps Community Plan](https://docs.microsoft.com/powerapps/maker/dev-community-plan)
 
