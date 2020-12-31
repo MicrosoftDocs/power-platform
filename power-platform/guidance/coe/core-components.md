@@ -282,10 +282,6 @@ The audit log solution is able to find this information in on a daily basis for 
 
 This flow runs weekly, and checks if any makers have left the organization - if maker information can not be found in Azure AD/Office 365 Users, any resources created by the maker (apps, cloud and desktop flows, environments, chatbots) are marked as orphaned.
 
-### CLEANUP - Admin \| Sync Template v3 (Power Apps User Shared With))
-
-This long running flow runs every other week. It walks the tenant and finds, for all apps in the tenant, who the app is shared with using this connector: [Get App Role Assignments as Admin](https://docs.microsoft.com/connectors/powerappsforadmins/#get-app-role-assignments-as-admin).
-
 ## Apps
 
 <!--### DLP Editor
