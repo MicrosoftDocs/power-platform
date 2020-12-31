@@ -94,6 +94,11 @@ Now you'll configure and set up a custom connector that uses the [Office 365 Man
   ![Custom connector setup](media/coe-custom1.png "Custom connector setup")
 
 1. Leave the **1. General** page as-is, and then select **2. Security**.
+    
+   >[!IMPORTANT]
+   > If your tenant is a GCC tenant, change the host to https://manage-gcc.office.com.
+   > If your tenant is a GCC high tenant, change the host to https://manage.office365.us
+   > More information: [Activity API operations](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference?view=o365-worldwide#activity-api-operations)
 
 1. Select **Edit** at the bottom of the **OAuth 2.0** area to edit the authentication parameters.
 
@@ -105,7 +110,7 @@ Now you'll configure and set up a custom connector that uses the [Office 365 Man
 
 1. Don't change the **Tenant ID**.
 
-1. Set the **Resource URL** to https://manage.office.com
+1. Set the **Resource URL** to https://manage.office.com for a commercial tenant, https://manage-gcc.office.com for a GCC tenant, and https://manage.office365.us for a GCC high tenant.
 
 1. Copy the **Redirect URL** into your text document in Notepad.
 

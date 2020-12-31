@@ -39,12 +39,8 @@ The following are prerequisites for installing the CoE Starter Kit as it's inclu
     -  Dynamics 365 service admin is required for getting details about model-driven apps and solution-aware flows.
     - This account must be email enabled.
 
--  Power Apps Premium license (per app, per user) is required for using Microsoft Dataverse.
+- Premium licenses are required to use the CoE Starter Kit. Depending on what components you will use, your organization size and the existing licenses available in your organization, you will require either a Power Apps per user or per app or Power Automate per user or per flow license or a combination of these licenses.
 
--  Power Automate Premium license (per flow, per user) is required for using the sync flows.
-
-- A Microsoft Teams license is required for gathering information about your Microsoft Teams environments.
- 
 -  Environment with a Dataverse instance, where the user installing the solution has the System Administrator security role.
 
 -  The environment must have a data loss prevention (DLP) policy that allows [Dataverse](https://docs.microsoft.com/connectors/commondataservice/), [Dataverse (current environment)](https://docs.microsoft.com/connectors/commondataserviceforapps/), [Office 365 Users](https://docs.microsoft.com/connectors/office365users/), [Power Platform for Admins](https://docs.microsoft.com/connectors/powerplatformforadmins/), [Power Automate Management](https://docs.microsoft.com/connectors/flowmanagement/), [Office 365 Outlook](https://docs.microsoft.com/connectors/office365/), [Power Apps for Admins](https://docs.microsoft.com/connectors/powerappsforadmins/), [Power Apps for Makers](https://docs.microsoft.com/connectors/powerappsforappmakers/), [SharePoint](https://docs.microsoft.com/connectors/sharepointonline/), [Azure Aciver Directory (Azure AD)](https://docs.microsoft.com/connectors/azuread/), [Power Automate for Admins](https://docs.microsoft.com/connectors/microsoftflowforadmins/), [RSS](https://docs.microsoft.com/connectors/rss/), [Office 365 Groups](https://docs.microsoft.com/connectors/office365groups/), [Approvals](https://docs.microsoft.com/connectors/approvals/) and HTTP to be used together. Those connectors must be in the business data&ndash;only bucket of the DLP policy for this environment. If you're using the [audit log](setup-auditlog.md) solution, the custom connector used to connect to the Microsoft 365 audit log also must be included in your business data&ndash;only bucket.
@@ -54,12 +50,6 @@ The following are prerequisites for installing the CoE Starter Kit as it's inclu
 - You've downloaded the CoE solution and CoE Power BI dashboard files to your device. The entire content package can be downloaded directly at [aka.ms/CoEStarterKitDownload](https://aka.ms/CoEStarterKitDownload).
 
 - Both the governance components and nurture components solutions require the core solution before they can be installed. Theming components can be used independently, and have no dependency on other CoE Starter Kit components.
-
-These are the requirements for using the solution:
-
-- Power Apps Premium license (per app, per user).
-
-- For the core components solution, only the admins need a Power Apps Premium license. For the governance components solution, all makers require a Premium license. For the nurture components solution, everyone will require a Premium license.
 
 > [!NOTE]
 >The Admin \| Sync Template flows crawl through all the resources stored in Microsoft Power Platform and make a copy of details in each resource (for example, apps and flows) to Dataverse (table definitions are provided in this solution). All data displayed in most of the starter kit components must be in Dataverse, which means that the sync template must be configured for everything else to work. The sync flows run daily overnight. When you first set up the CoE Starter Kit, you can manually start the Admin \| Sync Template v2 flow, which will start the process of crawling and storing the information in Dataverse.
@@ -106,14 +96,10 @@ Install the updates by importing the latest version to the environment where you
 
 ### What licenses do I need to run this solution?
 
-The apps and flows in the CoE Starter Kit use Premium features like custom connectors and Dataverse, therefore a per-app or per-user Power Apps license, in addition to a per-flow Power Automate license, is required to run and play the apps. More information: [Microsoft Power Platform licensing overview](https://docs.microsoft.com/power-platform/admin/pricing-billing-skus)
+The apps and flows in the CoE Starter Kit use Premium features like custom connectors and Dataverse, therefore premium licenses are required to use the components of the kit. More information: [Microsoft Power Platform licensing overview](https://docs.microsoft.com/power-platform/admin/pricing-billing-skus)
 
 If you want to use the Power BI report (packaged as part of the solution), you'll need a Power BI license. More information: [Power BI pricing](https://powerbi.microsoft.com/pricing/)
 
 ### It looks like I found a bug with the app; where should I go?
 
 To file a bug against the solution, go to [aka.ms/coe-starter-kit-issues](https://aka.ms/coe-starter-kit-issues).
-
-### What features are currently not supported in Government Community Cloud (GCC)?
-
-The Microsoft 365 audit log and custom connector aren't available in the Government Community Cloud.

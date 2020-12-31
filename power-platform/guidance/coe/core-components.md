@@ -33,7 +33,7 @@ Here's a breakdown of the assets that form the core components:
 
 - **Catalog tenant resources**
   - [Microsoft Dataverse tables](#tables): Environments, apps, flows, and more
-  - [Admin | Sync Template v2 (flows)](#flows): All apps, flows, flow action details, custom connectors, connectors, model-driven apps, shared-with information, chatbots.
+  - [Admin | Sync Template v2 (flows)](#flows): All apps, cloud and desktop flows, cloud flow action details, custom connectors, connectors, model-driven apps, shared-with information, chatbots.
   - [Admin | Sync Audit Log (flow)](#flows)
   - [Power BI dashboard](#power-bi-report)
   - [Power Platform Admin View (model-driven app)](#apps)
@@ -74,7 +74,7 @@ The [sync flows](#flows) of the CoE Starter Kit sync your tenant resources to th
   - App type (canvas, model-driven, SharePoint form app)
   - App orphaned
 
-- **Flow** represents a flow. The following information is available for each flow:
+- **Flow** represents a cloud flow. The following information is available for each cloud flow:
   - Display name
   - Flow ID
   - Environment
@@ -85,7 +85,7 @@ The [sync flows](#flows) of the CoE Starter Kit sync your tenant resources to th
   - Flow orphaned
   - Flow trigger
 
-- **Flow Action Detail** represents the set of actions that occur in a flow. This table has a many-to-one link with the Flow table. The following information is available for each action or trigger:
+- **Flow Action Detail** represents the set of actions that occur in a cloud flow. This table has a many-to-one link with the Flow table. The following information is available for each action or trigger:
   - Type (scope, for each, Microsoft 365 users)
   - Operation (for connectors, such as Send Email and List Items)
   - Is trigger (yes/no)
@@ -99,7 +99,7 @@ The [sync flows](#flows) of the CoE Starter Kit sync your tenant resources to th
   - Publisher
   - Tier (standard/premium)
 
-- **Connection Reference** The linking table for the many-to-many relationships among connectors (PowerApps Connector) and flows (Flows) or apps (PowerApps App).
+- **Connection Reference** The linking table for the many-to-many relationships among connectors (PowerApps Connector) and cloud flows (Flows) or apps (PowerApps App).
 
 - **Maker** represents a user who has created an app, flow, custom connector, or environment. The following information is available for each maker (retrieved from Microsoft 365 Users profiles):
   - Display name
@@ -115,7 +115,7 @@ The [sync flows](#flows) of the CoE Starter Kit sync your tenant resources to th
 
 - **Audit Log** represents session details for Power Apps. The following information is available for each audit log entry:
   - Operation (launched app, deleted app, deleted flow)
-  - App/flow ID
+  - App/cloud flow ID
   - User city, country, department, job title (from Microsoft 365)
   - Audit log event time
 
@@ -180,6 +180,26 @@ The [sync flows](#flows) of the CoE Starter Kit sync your tenant resources to th
   - ID
   - Created on/by
 
+- **RPA** represents a desktop flow. The following information is available for each desktop flow:
+  - Display name
+  - ID
+  - Created on
+  - Owner
+  - Modified on
+  - Desktop flow type (Power Automate Desktop, Selenium IDE)
+  - Status
+  - Environment
+  - Is desktop flow orphaned (yes/no)
+
+- **RPA Session** represents a desktop flow session. The following information is available for each bot:
+  - ID
+  - Desktop Flow
+  - Status Code
+  - Started On
+  - Completed On
+  - Error Code
+  - Error Message
+
 ## Security roles
 
 - **Power Platform Admin SR** Gives full access to create, read, write, and delete operations on the custom tables.
@@ -205,7 +225,7 @@ The Admin \| Sync Template v2 (Apps) flow runs when an environment is created or
 
 ### Admin \| Sync Template v2 (Flows)
 
-The Admin \| Sync Template v2 (Flows) flow runs when an environment is created or modified, and gets flow information by using [List Flows as Admin](https://docs.microsoft.com/connectors/flowmanagement/#list-flows-as-admin). Also updates the record if flows have been deleted.
+The Admin \| Sync Template v2 (Flows) flow runs when an environment is created or modified, and gets cloud flow information by using [List Flows as Admin](https://docs.microsoft.com/connectors/flowmanagement/#list-flows-as-admin). Also updates the record if flows have been deleted.
 
 ### Admin \| Sync Template v2 (Flow Action Details)
 
@@ -236,17 +256,17 @@ Turning on this flow is optional, and we recommend that you do so only if you're
 
 The Admin \| Sync Template v2 (Sync Flow Errors) flow runs on a schedule, and sends an email to the admin about environments that failed to sync (with a link to the flow instance).
 
-### Admin \| Sync Template v2 (RPA)
+### Admin \| Sync Template v2 (Desktop Flow)
 
-The Admin \| Sync Template v2 (RPA) flow runs when an environment is created or updated, and retrieves UI flow information. This information is retrieved from underlying Dataverse tables and requires the user running the flow to have system administrator privileges in the environment.
+The Admin \| Sync Template v2 (RPA) flow runs when an environment is created or updated, and retrieves desktop flow information. This information is retrieved from underlying Dataverse tables and requires the user running the flow to have system administrator privileges in the environment.
 
-Turning on this flow is optional, and we recommend that you do so only if you're using UI flows in your tenant and are interested in getting a tenant-wide overview.
+Turning on this flow is optional, and we recommend that you do so only if you're using desktop flows in your tenant and are interested in getting a tenant-wide overview.
 
-### Admin \| Sync Template v2 (UI flow runs)
+### Admin \| Sync Template v2 (Desktop flow runs)
 
-The Admin \| Sync Template v2 (UI flow runs) flow runs on a schedule, and gets UI flow run history and session details.
+The Admin \| Sync Template v2 (Desktop flow runs) flow runs on a schedule, and gets desktop flow run history and session details.
 
-Turning on this flow is optional, and we recommended that you do so only if you're using UI flows in your tenant and are interested in getting a tenant-wide overview.
+Turning on this flow is optional, and we recommended that you do so only if you're using desktop flows in your tenant and are interested in getting a tenant-wide overview.
 
 ### CLEANUP - Admin \| Sync Template v2 (Power Apps User Shared With)
 
@@ -256,11 +276,11 @@ This long running flow runs every other week, and gets who the app is shared wit
 
 This long running flow runs every other week, and compares CoE to the tenant to determine if any objects were deleted since last run. Either just marks them as deleted (if env var Also Delete from CoE = no) or deletes them from the CoE (if Also Delete from CoE = yes).
 
-The audit log solution is able to find this information in on a daily basis for apps and flows, but not for other resources such as environments, UI flows and chatbots. Run this flow periodically to check for deleted resources.
+The audit log solution is able to find this information in on a daily basis for apps and flows, but not for other resources such as environments, desktop flows and chatbots. Run this flow periodically to check for deleted resources.
 
 ### CLEANUP - Admin \| Sync Template v2 (Orphaned Makers)
 
-This flow runs weekly, and checks if any makers have left the organization - if maker information can not be found in Azure AD/Office 365 Users, any resources created by the maker (apps, flows, environments, chatbots and UI flows) are marked as orphaned.
+This flow runs weekly, and checks if any makers have left the organization - if maker information can not be found in Azure AD/Office 365 Users, any resources created by the maker (apps, cloud and desktop flows, environments, chatbots) are marked as orphaned.
 
 ### CLEANUP - Admin \| Sync Template v2 (Power Apps User Shared With))
 

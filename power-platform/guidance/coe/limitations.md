@@ -65,8 +65,7 @@ The app currently doesn't work for custom connectors that are installed as part 
 
 ## Government Community Cloud (GCC) environments
 
-- The CoE Starter Kit is available for GCC environments; however, the custom connector to connect to Microsoft 365 audit logs isn't available for GCC environments yet.
-- Embedding Power Apps canvas apps in Power BI dashboards isn't available for GCC environments yet.
+Embedding Power Apps canvas apps in Power BI dashboards isn't available for GCC environments yet.
 
 ## Developer environments from the Power Apps Community Plan
 
@@ -74,35 +73,9 @@ Microsoft Power Platform protects developer-type SKUs from inquiry by non-authen
 
 To fix this, you must have your admin security role added to the security roles for all developer environments, and then remove the selection from the sync flow. More information: [Power Apps Community Plan](https://docs.microsoft.com/powerapps/maker/dev-community-plan)
 
-## Sync Flow limitations for Developer and Microsoft TEam environments
+## Sync Flow limitations for Developer and Microsoft Team environments
 
-It currently isn't possible to retrieve the model-driven apps, chatbots and UI flows for developer environments (*My Name's* environment) and Microsoft Teams environments.
-
-## Custom connectors and DLP
-
-To add custom connectors shipped as part of this solution to the business data&ndash;only group of your data loss prevention (DLP) policy, use PowerShell cmdlets.
-
-1. Install the [PowerShell cmdlets for Power Apps](https://docs.microsoft.com/power-platform/admin/powerapps-powershell).
-
-1. List all DLP policies, and copy the *PolicyName* (GUID) of the policy that's applied to your CoE Starter Kit environment.
-
-    ```powershell
-    Get-AdminDlpPolicy
-    ```
-
-1. Go to [flow.microsoft.com](https://flow.microsoft.com) > **Data** > **Custom Connector**, and then select **Edit** on the custom connector.
-
-   ![Edit the  connector](media/DLP-CC2.png "Edit the custom connector")
-
-1. Copy the connector name.
-
-   ![Copy the connector name](media/DLP-CC3.png "Copy the connector name")
-
-1. In PowerShell, use Add-CustomConnectorToPolicy to add the custom connector to your policy.
-
-    ```powershell
-    Add-CustomConnectorToPolicy -PolicyName {your policy name GUID} -ConnectorName {the nName you copied from above} -GroupName hbi -ConnectorId /providers/Microsoft.PowerApps/scopes/admin/environments/{your environment GUID{/apis/{your connector name} -ConnectorType "Custom"
-    ```
+It currently isn't possible to retrieve the model-driven apps, chatbots and Desktop flows for developer environments (*My Name's* environment) and Microsoft Teams environments.
 
 ## Security groups and approvals
 
@@ -115,9 +88,9 @@ The shared component library in the [theming components solution](theming-compon
 
 ## Trial Licenses
 
-A Power Automate Per User license (amongst other license requirements) will be required to run the CoE Starter Kit flows, a trial license does not have sufficient [API call allowances](https://docs.microsoft.com/power-automate/limits-and-config#looping-and-debatching-limits) to run the CoE Starter Kit flows.
+Trial licenses does not have sufficient [API call allowances](https://docs.microsoft.com/power-automate/limits-and-config#looping-and-debatching-limits) to run the CoE Starter Kit flows.
 For full list of license requirements see [Setup Pre-requisits](setup.md#prerequisites).
 
 ## PIM (Privileged Identity Management)
 
-If your Power Platform admin role is managed via  **[PIM](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started)** ensure the Sync Flows of the Core Components solution are set up to complete during the time whilst your user is granted admin permission. If your user looses admin access during the run of the sync flows, you may end up with incomplete or incorrect data if you use PIM and your Power Platform Admin Role.
+If your Power Platform admin role is managed via  **[PIM](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started)** ensure the Sync Flows of the Core Components solution are set up to complete during the time whilst your user is granted admin permission. If your user loses admin access during the run of the sync flows, you may end up with incomplete or incorrect data if you use PIM and your Power Platform Admin Role.

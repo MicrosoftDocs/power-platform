@@ -184,12 +184,12 @@ After the sync flows have finished running (depending on the number of environme
 
 Environment variables are used to store application and flow configuration data with data specific to your organization or environment.
 
->[!IMPORTANT]
->To edit environment variables in the environment, open the default solution for the environment and set the **Type** filter to **Environment variable**.
+1. Go to [make.powerapps.com](<https://make.powerapps.com>).
+1. On the left pane, select **Solutions**.
+1. Select the **Default Solution**, and change the filter to show **Environment Variables**.
+1. Select a variable that you want to update, and then configure its **Current Value**.
 
-- Select a variable, and then configure its **Current Value**.
-
-    Configure the following variables for the core components solution, and then select **Save**.
+    Update one of the following variables for the core components solution, and then select **Save**.
 
     | Name | Current Value |
     |------|---------------|

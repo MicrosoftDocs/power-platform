@@ -124,25 +124,25 @@ Select actions or connectors you're interested in from the **Connector** and **A
 
 ![Flows Risk Assessment ](media/pb-25.png "Flows Risk Assessment")
 
-## UI flows risk assessment
+## Desktop flows risk assessment
 
-The **UI flows Risk Assessment** page enables you to filter by:
+The **Desktop flows Risk Assessment** page enables you to filter by:
 
 - Environment
 
 - Maker
 
-- UI flow type
+- Desktop flow type
 
 Some typical assessments an admin might perform are described in the following sections.
 
-### Identify orphaned UI flows
+### Identify orphaned Desktop flows
 
-- Orphaned UI flows, where the flow owner has left the organization, will stop working. It's therefore important to identify orphaned UI flows, check whether they're still needed, and find a new owner.
+- Orphaned desktop flows, where the flow owner has left the organization, will stop working. It's therefore important to identify orphaned desktop flows, check whether they're still needed, and find a new owner.
 
 Select **Blank** in the **Owner** drop-down list on the rightmost filter pane to find orphaned flows.
 
-![UI flows Risk Assessment ](media/pb-26.png "UI flows Risk Assessment")
+![Desktop flows Risk Assessment ](media/pb-26.png "Desktop flows Risk Assessment")
 
 ## App and Flow Archive
 
@@ -152,7 +152,7 @@ Using the CoE dashboard, admins also have the ability to identify unused apps an
 
 - The highest possible score for a flow is 7. A score of 7 represents a flow that hasn't been modified since it was created, is using a non-production word like _test_ or _demo_ in the title, was created over three years ago, was likely created from a template, is in a stopped state, and isn't complex (contains fewer than five actions).
 
-- The highest possible score for a UI flow is 4. A score of 4 represents a UI flow that hasn't been modified since it was created, is using a non-production word like _test_ or _demo_ in the title, was created over a year ago, and was likely created from a template.
+- The highest possible score for a desktop flow is 4. A score of 4 represents a desktop flow that hasn't been modified since it was created, is using a non-production word like _test_ or _demo_ in the title, was created over a year ago, and was likely created from a template.
 
 :::row:::
    :::column span="":::
@@ -203,7 +203,7 @@ A tooltip shows additional details like the number of launches and last launched
 
 ![Flow Archive](media/pb-24.png "Flow Archive")
 
-The **UI flow Archive** page is sorted by highest archive score. You can target specific makers, date ranges, environments, departments, or connectors.
+The **desktop flow Archive** page is sorted by highest archive score. You can target specific makers, date ranges, environments, departments, or connectors.
 
 The **Archive Score** is the sum of multiple criteria:
 
@@ -217,7 +217,7 @@ The **Archive Score** is the sum of multiple criteria:
 
 A tooltip shows additional details like the number of launches and last launched date, in addition to the scores for the above criteria.
 
-![UI flow Archive](media/pb-27.png "UI flow Archive")
+![Desktop flow Archive](media/pb-27.png "Desktop flow Archive")
 
 By right-clicking to select a specific flow and going to **Drill through** > **Flow Detail**, you can open the detail page for the selected flow.
 
@@ -255,8 +255,8 @@ With the embedded app, you don't have to leave the Power BI dashboard to take ac
 
 ![Flow Details](media/pb-31.png "Flow Details")
 
-### UI flow Detail
+### Desktop flow Detail
 
-The **UI flow Detail** page provides you with richer information about the runs of this UI flow. You will be able to review the run history, identify anomalies in time it takes to complete a single run, and view error codes and messages if the UI flow has failed.
+The **desktop flow Detail** page provides you with richer information about the runs of this desktop flow. You will be able to review the run history, identify anomalies in time it takes to complete a single run, and view error codes and messages if the desktop flow has failed.
 
-![UI flow Details](media/pb-34.png "UI flow Details")
+![Desktop flow Details](media/pb-34.png "Desktop flow Details")
