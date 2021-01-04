@@ -6,7 +6,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/08/2020
+ms.date: 01/04/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -38,7 +38,7 @@ You can also use telemetry to observe overall performance trends so you can proa
 
 ## How does it work?
 
-Microsoft already gathers extensive telemetry on Dataverse and model-driven apps. With Application Insights integration, an environment or tenant admin provides the Application Insights instrumentation key during the data export set-up process in the Power Platform admin center. Once setup is complete, telemetry that Microsoft gathers about your Dataverse environment, and any model-driven apps that use Application Insights, are sent to your Application Insights environment, approximately every hour. To get an Application Insights resource, see [how to create an Application Insights resource](https://docs.microsoft.com/azure/azure-monitor/app/create-new-resource).
+Microsoft already gathers extensive telemetry on Dataverse and model-driven apps. With Application Insights integration, an environment or tenant admin provides the Application Insights instrumentation key during the data export set-up process in the Power Platform admin center. Once setup is complete, telemetry that Microsoft gathers about your Dataverse environment, and any model-driven apps that use Application Insights, are sent to your Application Insights environment. To get an Application Insights resource, see [how to create an Application Insights resource](https://docs.microsoft.com/azure/azure-monitor/app/create-new-resource).
 
 If you decide to opt-out, you can go to the Power Platform admin center and delete the data export connection. This will stop the data export process. You can restart the process any time.
 
@@ -53,6 +53,14 @@ If you need to contact technical support, the ID values for operation (operation
 If you are working with a partner, or you are a system integrator, standardized telemetry means that people will not need to learn about the different design choices that were made for custom telemetry in different environments.
 
 Note that the [Monitor tool](https://powerapps.microsoft.com/blog/monitor-now-supports-model-driven-apps/) can be used for live detailed debugging for canvas and model-driven apps.
+
+# Custom telemetry
+
+If the standard telemetry doesn’t provide some specific metric that you need, you can still write code to supplement what is already being gathered. 
+
+For client-side JavaScript in model-driven apps, you can use the same patterns you use today to write to your Application Insights resource. 
+
+For server-side code using plug-ins, any trace logs you have written will appear in Application Insights without having to write any code. But trace logs are intended for debugging and troubleshooting rather than telemetry. 
 
 ## What is included and not included?
 
