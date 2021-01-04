@@ -28,7 +28,7 @@ Most of these users are hidden from user views but they can be found by using th
 
 |User type  |Full name  |User name  |Purpose  | Security role assigned |
 |-----------|-----------|-----------|---------|------------------------|
-|System | SYSTEM | n/a | See below. | n/a |
+|System | SYSTEM | N/A | See below. | N/A |
 | | Support user |crmoln@microsoft.com |To allow Microsoft support staff to have restricted/limited access to any customer environment for customer support. |Support user (does not have privilege to customer data) |
 | | Delegated admin |crmoln2@microsoft.com |See [For partners: the Delegated admin](for-partners-delegated-administrator.md). |System admin |
 |Application | Business Application Platform Service account |bap_sa@microsoft.com |To setup Power Apps system and configurations. |System admin |
