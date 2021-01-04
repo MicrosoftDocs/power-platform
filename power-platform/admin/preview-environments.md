@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/31/2020
+ms.date: 01/04/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -17,6 +17,9 @@ search.app:
 ---
 
 # Power Apps Preview Program
+
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 Power Apps updates the platform and its capabilities every few days or weeks. The Power Apps Preview program is a way to get early access to those upcoming functionalities and updates prior to availability in other regions (where customer production apps are deployed). 
 
 With the Power Apps Preview program, you can:
@@ -31,7 +34,7 @@ Currently we will be rolling out preview for the following scenarios across Powe
 3. **Playing apps**: You need to play the apps in a preview environment using the web player. When you do that, you will be automatically taken to [preview version of web player][4]. Apps will play with the vNext version of the Power Apps web player. Current limitations include - Power Apps Mobile for iOS, Android, and Windows are currently not available for preview. Playing the apps created in the First Release environment might not work - we're working on it.
 
 ## How to get early access to the upcoming updates?
-For Power Apps, all the apps and related resources are stored in an environment. Early access to all preview functionalities are also available with an environment created in a region where the vNext (preview) is deployed. For now, there is only one region, **Preview (United States)**, as shown in the image below:
+For Power Platform, all the apps, flows, and related resources are stored in an environment. Early access to all preview functionalities are also available with an environment created in a region where the vNext (preview) is deployed. For now, there is only one region, **Preview (United States)**, as shown in the image below:
 
 > [!div class="mx-imgBorder"] 
 > ![Preview environment](./media/preview-environment/env3-preview.png "Preview environment")
