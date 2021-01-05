@@ -113,10 +113,9 @@ In Application Insights, go to the the **Logs** panel under the **Monitoring** m
 **Common Fields**: All the [tables](#what-telemetry-and-which-tables-are-being-populated-in-the-application-insights) populated in Application insights have these common fields:
 
 - **cloud_RoleInstance**: For events emitted as a part of this effort, this field will be set to “CDS Data Export” to ensure they can be identified versus other events in the same Application Insights environment.
-- **operation_Id**: This links together all the operations in a single interaction. One way to get all related events to a failing event 
-  ```pageViews
-  dependencies, union
-  requests where operation_Id == “<insert id here>”
+- **operation_Id**: This links together all the operations in a single interaction. One way to get all related events to a failing event.
+  ``` union_requests,dependencies,pageViews 
+  where operation_Id == “<insert id here>”
   ```
 - **session_Id** : This uniquely identifies all activities in a single user session. The session value is reset when a user opens a new tab, selects F5/refresh, closes, and reopens the mobile app.
 - **user_Id, user_AuthenticatedId**: These are both currently set to the Azure Active Directory ID of the user. 
