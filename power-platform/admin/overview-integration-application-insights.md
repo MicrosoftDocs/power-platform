@@ -45,7 +45,7 @@ Example: List top 10 records for formloads in the pageViews table
 take 100
 ```
 
-pageViews
+pageViews<br />
 | take 100
 
 ## Overview panel in Application Insights
