@@ -45,7 +45,7 @@ requests<br />
 These are logs for custom plug-ins running for a given operation and are found in the **dependency** table. 
 
 dependencies<br />
-| where type == "Plugin"
+| where type == "Plugin"<br />
 | take 100
 
 > [!div class="mx-imgBorder"] 
@@ -80,7 +80,7 @@ dependencies<br />
 These are logs for SDK operations triggered as a part of an incoming request. These are logged to the **dependency** table in Application Insights, as they are tracked as dependencies for the request to execute. They are identified by the type name starting with SDK. Here is a sample query:
 
 dependencies<br />
-| where type starts with "SDK"
+| where type starts with "SDK"<br />
 | take 10
 
 > [!div class="mx-imgBorder"] 
@@ -134,8 +134,8 @@ dependencies<br />
 ### How can I determine if my plug-in upgrade caused a performance degradation?
 
 dependencies<br />
-| where ['type'] == "Plugin"
-| where name startswith "<InsertYourPluginName>"
+| where ['type'] == "Plugin"<br />
+| where name startswith "<InsertYourPluginName>"<br />
 | summarize avg(duration) by name
 
 The plug-in name should also contain the version for custom plug-ins.
@@ -143,8 +143,8 @@ The plug-in name should also contain the version for custom plug-ins.
 ### How was the API performing prior to a reported issue based on time-of-day or location? Was API degradation gradual or sudden?
 
 requests<br />
-| where url == "https://<URLHere>"
-| summarize avg(duration), count() by bin(timestamp, 1h)
+| where url == "https://<URLHere>"<br />
+| summarize avg(duration), count() by bin(timestamp, 1h)<br />
 | render timechart 
 
 > [!div class="mx-imgBorder"] 
@@ -170,9 +170,9 @@ Yes – you can build [custom dashboards](https://docs.microsoft.com/azure/azure
 Yes. See the following sample query to understand how your plug-ins perform.
 
 dependencies<br />
-| where ['type'] == "Plugin" 
-| where name == "[Plugin name here]" 
-| summarize avg(duration) by bin(timestamp, 1h) 
+| where ['type'] == "Plugin"<br />
+| where name == "[Plugin name here]"<br />
+| summarize avg(duration) by bin(timestamp, 1h)<br />
 | render timechart
 
 > [!div class="mx-imgBorder"] 

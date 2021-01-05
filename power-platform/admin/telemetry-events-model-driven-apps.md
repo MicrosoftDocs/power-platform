@@ -179,7 +179,7 @@ Sample result-set:
 ### To narrow down to a specific user:
 
 pageViews<br />
-| where user_Id == “<userid>”
+| where user_Id == “<userid>”<br />
 | summarize count() by tostring(customDimensions.hostType)
 
 **Using Application Insights in conjunction with the [UCI Monitor tool](https://powerapps.microsoft.com/blog/monitor-now-supports-model-driven-apps/)**
