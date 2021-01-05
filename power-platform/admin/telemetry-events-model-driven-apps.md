@@ -56,9 +56,9 @@ This data goes into the **pageView** table in Application Insights. An entry is 
 
 There are additional properties in **customDimensions** that provide more details for UCI page loads. For example, this query will return the values for all the attributes in the **pageView** table.
 
-```pageView
-take 1
-```
+pageView<br />
+| take 1
+
 
 > [!div class="mx-imgBorder"] 
 > ![Application Insights pageView table](media/application-insights-pageview-table.png "Application Insights pageView table")
@@ -88,9 +88,8 @@ For Microsoft Dataverse events, the *ID* field or *operation_ParentId* in Applic
 
 These are calls to other dependencies made by UCI to render a certain page. This could be outgoing calls to Dataverse, or other integrations like Azure DevOps, Office etc. This data is available in the **dependency** table with the name “UCI Request”.
 
-```dependencies
-where type == "UCI REQUEST"
-```
+dependencies<br />
+| where type == "UCI REQUEST"
 
 **Fields**: 
 - **Name**: The URL being invoked by UCI
@@ -126,31 +125,22 @@ One scenario where this can very valuable is when a user from a region (say Asia
 
 In the above request, the UCI request takes longer than the actual Dataverse API (Web API request). The breakdown in this case is the duration of the Dataverse API call(56ms) + CustomProperties.warmLatency(89ms) which adds up to close to the complete operation duration(144ms). The warmLatency is indicative of slowness for that particular client and could be an issue analyzed at the user level with the following query:
 
+dependencies<br />
+| where ['type'] == "UCI REQUEST"
+| summarize avg(toint(customDimensions.warmLatency)), avg(toint(customDimensions.coldLatency)), avg(toint(customDimensions.warmThroughput)) by user_Id
 
-```dependencies
-where ['type'] == "UCI REQUEST"
-summarize avg(toint(customDimensions.warmLatency)), avg(toint(customDimensions.coldLatency)), avg(toint(customDimensions.warmThroughput)) by user_Id
-```
-
-
-```pageViews
-summarize avg(toint(customDimensions.warmLatency)), avg(toint(customDimensions.coldLatency)), avg(toint(customDimensions.warmThroughput)) by user_Id
-```
+pageViews<br />
+| summarize avg(toint(customDimensions.warmLatency)), avg(toint(customDimensions.coldLatency)), avg(toint(customDimensions.warmThroughput)) by user_Id
 
 ### Can I determine how the user is accessing the system?
 
 The *userAgent* attribute in the *customDimensions* field in the **requests** table of Application Insights has this data.  The below query can be used to get an overview of the different sources from where the users are accessing the system.
 
+pageViews<br />
+| summarize count() by tostring(customDimensions.userAgent), user_Id
 
-```pageViews
-summarize count() by tostring(customDimensions.userAgent), user_Id
-```
-
-
-```dependencies
-where ['type'] == "UCI REQUEST"
-summarize count() by tostring(customDimensions.userAgent), user_Id
-```
+dependencies<br />
+| where ['type'] == "UCI REQUEST"
 
 |When the customDimensions.userAgent value starts with  | Where is the user accessing the system from   |
 |---------|---------|
@@ -177,13 +167,10 @@ summarize count() by tostring(customDimensions.userAgent), user_Id
 |node-fetch     |  NodeJS       |
 |LinkedInBot     | LinkedInBot        |
 
-
 ### How do I get the count of users accessing from browser, mobile or embedded application?
 
-
-```pageViews
-summarize count() by tostring(customDimensions.hostType)
-```
+pageViews<br />
+| summarize count() by tostring(customDimensions.hostType)
 
 Sample result-set:
 
@@ -192,20 +179,17 @@ Sample result-set:
 
 ### To narrow down to a specific user:
 
-
-```pageViews
-where user_Id == “<userid>”
-summarize count() by tostring(customDimensions.hostType)
-```
+pageViews<br />
+| where user_Id == “<userid>”
+| summarize count() by tostring(customDimensions.hostType)
 
 **Using Application Insights in conjunction with the [UCI Monitor tool](https://powerapps.microsoft.com/blog/monitor-now-supports-model-driven-apps/)**
 
 The UCI monitor tool helps with real-time troubleshooting on a session from the UCI side. The end to end transaction requests should be available in Application Insights. To look at the logs for a given action, note the Activity Id from a row in the Event Details in Monitor. This can be used to query for logs as follows:
 
 
-```union*
-where operation_Id contains "<ActivityIdHere>"
-```
+union *<br />
+| where operation_Id contains "<ActivityIdHere>"
 
 Note that the Monitor tool is a realtime debugging tool, however, data availability through this feature could take up to a few hours.
 
@@ -222,16 +206,13 @@ This can then be used to look at all the activities in that session to look for 
 > ![Settings > About Session ID](media/settings-about-session-id.png "Settings > About Session ID")
 
 
-```union*
-where session_Id == '<sessionIdHere>'
-```
+union *<br />
+| where session_Id == '<sessionIdHere>'
 
 ### Which forms are being used in different locations and the load performance of the forms in these locations?
 
-
-```pageViews
-summarize avg(duration) by name, client_City, client_CountryOrRegion
-```
+pageViews<br />
+| summarize avg(duration) by name, client_City, client_CountryOrRegion
 
 ### Is an external API call the failure and can I drill down into the error stack to help with debug?
 
