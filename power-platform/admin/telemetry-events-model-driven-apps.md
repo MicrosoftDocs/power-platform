@@ -202,8 +202,8 @@ summarize count() by tostring(customDimensions.hostType)
 
 The UCI monitor tool helps with real-time troubleshooting on a session from the UCI side. The end to end transaction requests should be available in Application Insights. To look at the logs for a given action, note the Activity Id from a row in the Event Details in Monitor. This can be used to query for logs as follows:
 
-union *
-```
+
+```union*
 where operation_Id contains "<ActivityIdHere>"
 ```
 
@@ -222,7 +222,7 @@ This can then be used to look at all the activities in that session to look for 
 > ![Settings > About Session ID](media/settings-about-session-id.png "Settings > About Session ID")
 
 
-```union *
+```union*
 where session_Id == '<sessionIdHere>'
 ```
 
