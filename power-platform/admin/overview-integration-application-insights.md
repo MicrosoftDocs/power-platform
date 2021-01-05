@@ -37,7 +37,7 @@ Application Insights has a wide range of features that will help you to leverage
 - Proactive monitoring using [Smart Detection](https://docs.microsoft.com/azure/azure-monitor/app/proactive-diagnostics).
 - [Setting up alerts](https://docs.microsoft.com/azure/azure-monitor/learn/tutorial-alert) for important scenarios based on your org.
 - Visualize and track common [navigation patterns](https://docs.microsoft.com/azure/azure-monitor/app/usage-flows) from a usage perspective. This will help you understand if a user always clicks on a specific tab first, before navigating back to the main tab and closing the form. It could, for example, indicate that a field should be positioned on the first tab, instead of another tab. This will save the user time every time they open this record.
-- Custom queries to troubleshoot performance and errors by using the **Logs** panel under the Monitoring menu.
+- Custom queries to troubleshoot performance and errors by using the [Logs](https://docs.microsoft.com/azure/azure-monitor/log-query/log-query-overview) panel under the Monitoring menu.
 
 Example: List top 10 records for formloads in the pageViews table 
 
