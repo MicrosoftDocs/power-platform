@@ -18,9 +18,9 @@ search.app:
 ---
 # Overview of integration with Application Insights
 
-Application Insights, a part of the Azure monitoring ecosystem, is widely used within the enterprise landscape for monitoring and diagnostics. Data from a specific tenant or environment that is already collected will be pushed to your own Application Insights environment. The data is stored in Log Analytics by Application Insights and visualized in [Performance](https://docs.microsoft.com/azure/azure-monitor/learn/tutorial-performance) and [Failures](https://docs.microsoft.com/azure/azure-monitor/learn/tutorial-runtime-exceptions) panels under the **Investigate** menu. The data is exported to your Application Insights environment in the standard schema defined by Application Insights. The support, developer, and admin persona can leverage this feature to triage and resolve issues.
+Application Insights, a part of the Azure monitoring ecosystem, is widely used within the enterprise landscape for monitoring and diagnostics. Data already collected from a specific tenant or environment will be pushed to your own Application Insights environment. The data is stored in Log Analytics by Application Insights and visualized in [Performance](https://docs.microsoft.com/azure/azure-monitor/learn/tutorial-performance) and [Failures](https://docs.microsoft.com/azure/azure-monitor/learn/tutorial-runtime-exceptions) panels under the **Investigate** menu. The data is exported to your Application Insights environment in the standard schema defined by Application Insights. The support, developer, and admin persona can leverage this feature to triage and resolve issues.
 
-## What telemetry and which tables are being populated in the Application Insights? 
+## What telemetry and which tables are being populated in Application Insights? 
 
 |Telemetry type  |Application Insights table name  |
 |---------|---------|
@@ -36,7 +36,7 @@ Application Insights has a wide range of features that will help you to leverage
 - [Create a dashboard](https://docs.microsoft.com/azure/azure-monitor/learn/tutorial-logs-dashboards) for an overview of the health of your org.
 - Proactive monitoring using [Smart Detection](https://docs.microsoft.com/azure/azure-monitor/app/proactive-diagnostics).
 - [Setting up alerts](https://docs.microsoft.com/azure/azure-monitor/learn/tutorial-alert) for important scenarios based on your org.
-- Visualize and track common [navigation patterns](https://docs.microsoft.com/azure/azure-monitor/app/usage-flows) from a usage perspective. This will help you understand if a user always clicks on a specific tab first, before navigating back to the main tab and closing the form. It could, for example, indicate that a field should be positioned on the first tab, instead of another tab. This will save the user time every time they open this record.
+- Visualize and track common [navigation patterns](https://docs.microsoft.com/azure/azure-monitor/app/usage-flows) from a usage perspective. This will help you understand if a user always selects a specific tab first, before navigating back to the main tab and closing the form. It could, for example, indicate that a field should be positioned on the first tab, instead of another tab. This will save the user time every time they open this record.
 - Custom queries to troubleshoot performance and errors by using the [Logs](https://docs.microsoft.com/azure/azure-monitor/log-query/log-query-overview) panel under the Monitoring menu.
 
 Example: List top 10 records for formloads in the pageViews table 
@@ -44,6 +44,9 @@ Example: List top 10 records for formloads in the pageViews table
 ```pageViews 
 take 100
 ```
+
+pageViews
+| take 100
 
 ## Overview panel in Application Insights
 
@@ -113,11 +116,11 @@ In Application Insights, go to the the **Logs** panel under the **Monitoring** m
 **Common Fields**: All the [tables](#what-telemetry-and-which-tables-are-being-populated-in-the-application-insights) populated in Application insights have these common fields:
 
 - **cloud_RoleInstance**: For events emitted as a part of this effort, this field will be set to “CDS Data Export” to ensure they can be identified versus other events in the same Application Insights environment.
-- **operation_Id**: This links together all the operations in a single interaction. One way to get all related events to a failing event.
+- **operation_Id**: This links together all the operations in a single interaction - one way to get all related events to a failing event.
   ``` union_requests,dependencies,pageViews 
   where operation_Id == “<insert id here>”
   ```
-- **session_Id** : This uniquely identifies all activities in a single user session. The session value is reset when a user opens a new tab, selects F5/refresh, closes, and reopens the mobile app.
+- **session_Id** : This uniquely identifies all activities in a single user session. The session value is reset when a user opens a new tab, selects F5/refresh, closes and reopens the mobile app.
 - **user_Id, user_AuthenticatedId**: These are both currently set to the Azure Active Directory ID of the user. 
 - **client_IP**: This field is always populated to 0.0.0.0 by Application Insights for General Data Protection Regulation (GDPR) compliance. The IP address provided is used to populate the *client_City*, *client_StateOrProvince*, and *client_CountryOrRegion* fields.
 - **client_Type**: The value here is “Browser” if the logs are coming from UCI and “Server” if logs are coming from Dataverse. Note that the userAgent can be found in the **requests** table under **customDimensions** when available.
