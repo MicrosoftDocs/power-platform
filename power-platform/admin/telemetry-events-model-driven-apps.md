@@ -59,7 +59,6 @@ There are additional properties in **customDimensions** that provide more detail
 pageView<br />
 | take 1
 
-
 > [!div class="mx-imgBorder"] 
 > ![Application Insights pageView table](media/application-insights-pageview-table.png "Application Insights pageView table")
 
@@ -67,7 +66,7 @@ pageView<br />
 - **appModule**: App module name 
 - **entityName**: This is present when relevant and available on page types like EditForm, EntityList and Dashboards when they are [bound to an entity](https://docs.microsoft.com/powerapps/maker/model-driven-apps/configure-interactive-experience-dashboards#create-an-entity-specific-dashboard). There are scenarios when the form is not bound to an entity and the value would show up as undefined.
 - **hostType**: Browser/MobileApplication/Embedded
-- **isBoot**: is it the first load of a session.
+- **isBoot**: Is it the first load of a session
 - **loadType**
   -	0: First visit to a particular-page type (for example, first form visit)
   -	1: First visit to a particular configuration (for example,  first account form visit)
@@ -93,24 +92,24 @@ dependencies<br />
 
 **Fields**: 
 - **Name**: The URL being invoked by UCI
-- **Target**: Currently the same as Name.
-- **Success**: Did the call succeed or fail . 
-- **UserId**: The Dataverse system user ID of the logged in user.
-- **Duration**: The duration of the call.
-- **customDimensions**: Contains the following. 
+- **Target**: Currently the same as Name
+- **Success**: Did the call succeed or fail  
+- **UserId**: The Dataverse system user ID of the logged in user
+- **Duration**: The duration of the call
+- **customDimensions**: Contains the following: 
 
   > [!div class="mx-imgBorder"] 
   > ![Application Insights UCI REQUEST](media/application-insights-uci-request.png "Application Insights UCI REQUEST")
 
-- **appModule**: The appModule making the call.
-- **bodySize**: The size of the response encoded and decoded.
-- **cached**: Whether the request went to the local cache or had to go to the server. Please note that this does not work as expected if the end user was on the Internet Explorer browser.
-- **download**: Time taken to download the response.
-- **stall**: Time where the request was waiting in the browser queue.
+- **appModule**: The appModule making the call
+- **bodySize**: The size of the response encoded and decoded
+- **cached**: Whether the request went to the local cache or had to go to the server. Note that this does not work as expected if the end user was on the Internet Explorer browser.
+- **download**: Time taken to download the response
+- **stall**: Time where the request was waiting in the browser queue
 - **ttfb**: Time spent waiting for the initial response, also known as the Time To First Byte. This time captures the latency of a round trip to the server in addition to the time spent waiting for the server to deliver the response.
-- **coldLatency**: First estimation for network latency which includes SSL handshake time.
-- **warmLatency**: Subsequent estimation for network latency which is the typical expected latency for each request.
-- **warmThroughput**: Estimated throughput of the network in Kbps.
+- **coldLatency**: First estimation for network latency which includes SSL handshake time
+- **warmLatency**: Subsequent estimation for network latency which is the typical expected latency for each request
+- **warmThroughput**: Estimated throughput of the network in Kbps
 
 ## Discover and Analyze Scenarios
 
@@ -123,7 +122,7 @@ One scenario where this can very valuable is when a user from a region (say Asia
 > [!div class="mx-imgBorder"] 
 > ![Application Insights UCI slowness](media/application-insights-uci-slowness.png "Application Insights UCI slowness")
 
-In the above request, the UCI request takes longer than the actual Dataverse API (Web API request). The breakdown in this case is the duration of the Dataverse API call(56ms) + CustomProperties.warmLatency(89ms) which adds up to close to the complete operation duration(144ms). The warmLatency is indicative of slowness for that particular client and could be an issue analyzed at the user level with the following query:
+In the above request, the UCI request takes longer than the actual Dataverse API (Web API request). The breakdown in this case is the duration of the Dataverse API call(56ms) + CustomProperties.warmLatency(89ms) which adds up to close to the complete operation duration (144ms). The warmLatency is indicative of slowness for that particular client and could be an issue analyzed at the user level with the following query:
 
 dependencies<br />
 | where ['type'] == "UCI REQUEST"
@@ -187,7 +186,6 @@ pageViews<br />
 
 The UCI monitor tool helps with real-time troubleshooting on a session from the UCI side. The end to end transaction requests should be available in Application Insights. To look at the logs for a given action, note the Activity Id from a row in the Event Details in Monitor. This can be used to query for logs as follows:
 
-
 union *<br />
 | where operation_Id contains "<ActivityIdHere>"
 
@@ -204,7 +202,6 @@ This can then be used to look at all the activities in that session to look for 
 
 > [!div class="mx-imgBorder"] 
 > ![Settings > About Session ID](media/settings-about-session-id.png "Settings > About Session ID")
-
 
 union *<br />
 | where session_Id == '<sessionIdHere>'
