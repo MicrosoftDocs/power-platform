@@ -6,7 +6,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/08/2020
+ms.date: 01/04/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -56,8 +56,7 @@ This data goes into the **pageView** table in Application Insights. An entry is 
 
 There are additional properties in **customDimensions** that provide more details for UCI page loads. For example, this query will return the values for all the attributes in the **pageView** table.
 
-pageView
-```
+```pageView
 take 1
 ```
 
@@ -89,8 +88,7 @@ For Microsoft Dataverse events, the *ID* field or *operation_ParentId* in Applic
 
 These are calls to other dependencies made by UCI to render a certain page. This could be outgoing calls to Dataverse, or other integrations like Azure DevOps, Office etc. This data is available in the **dependency** table with the name “UCI Request”.
 
-dependencies
-```
+```dependencies
 where type == "UCI REQUEST"
 ```
 
@@ -128,14 +126,14 @@ One scenario where this can very valuable is when a user from a region (say Asia
 
 In the above request, the UCI request takes longer than the actual Dataverse API (Web API request). The breakdown in this case is the duration of the Dataverse API call(56ms) + CustomProperties.warmLatency(89ms) which adds up to close to the complete operation duration(144ms). The warmLatency is indicative of slowness for that particular client and could be an issue analyzed at the user level with the following query:
 
-dependencies
-```
+
+```dependencies
 where ['type'] == "UCI REQUEST"
 summarize avg(toint(customDimensions.warmLatency)), avg(toint(customDimensions.coldLatency)), avg(toint(customDimensions.warmThroughput)) by user_Id
 ```
 
-pageViews
-```
+
+```pageViews
 summarize avg(toint(customDimensions.warmLatency)), avg(toint(customDimensions.coldLatency)), avg(toint(customDimensions.warmThroughput)) by user_Id
 ```
 
@@ -143,13 +141,13 @@ summarize avg(toint(customDimensions.warmLatency)), avg(toint(customDimensions.c
 
 The *userAgent* attribute in the *customDimensions* field in the **requests** table of Application Insights has this data.  The below query can be used to get an overview of the different sources from where the users are accessing the system.
 
-pageViews
-```
+
+```pageViews
 summarize count() by tostring(customDimensions.userAgent), user_Id
 ```
 
-dependencies
-```
+
+```dependencies
 where ['type'] == "UCI REQUEST"
 summarize count() by tostring(customDimensions.userAgent), user_Id
 ```
@@ -158,9 +156,6 @@ summarize count() by tostring(customDimensions.userAgent), user_Id
 |---------|---------|
 |Mozilla     | Browser Type, version        |
 |azure-logic-apps     |  azure-logic-apps       |
-|FileStoreService     |         |
-|URL Checker	     |         |
-| MSWAC  |   |
 |PowerApps     | PowerApps        |
 |Microsoft Office Excel     | Office Excel        |
 |Portals	     |  Portals       |
@@ -185,8 +180,8 @@ summarize count() by tostring(customDimensions.userAgent), user_Id
 
 ### How do I get the count of users accessing from browser, mobile or embedded application?
 
-pageViews
-```
+
+```pageViews
 summarize count() by tostring(customDimensions.hostType)
 ```
 
@@ -197,8 +192,8 @@ Sample result-set:
 
 ### To narrow down to a specific user:
 
-pageViews
-```
+
+```pageViews
 where user_Id == “<userid>”
 summarize count() by tostring(customDimensions.hostType)
 ```
@@ -226,15 +221,15 @@ This can then be used to look at all the activities in that session to look for 
 > [!div class="mx-imgBorder"] 
 > ![Settings > About Session ID](media/settings-about-session-id.png "Settings > About Session ID")
 
-union *
-```
+
+```union *
 where session_Id == '<sessionIdHere>'
 ```
 
 ### Which forms are being used in different locations and the load performance of the forms in these locations?
 
-pageViews
-```
+
+```pageViews
 summarize avg(duration) by name, client_City, client_CountryOrRegion
 ```
 
@@ -247,3 +242,4 @@ The Browser section of the **Failures** pane contains UCI outgoing requests. The
 
 ### Can I set an alert on performance threshold for certain form actions? When the alert is received will it allow a maker to diagnose and troubleshoot the issue?
 
+Yes. Application Insights allows you to set up [alerts](https://docs.microsoft.com/azure/azure-monitor/learn/tutorial-alert) to monitor the health of your application.

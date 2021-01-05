@@ -6,7 +6,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/08/2020
+ms.date: 01/04/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -32,8 +32,8 @@ These are calls made to the Dataverse API. These could be from UCI, legacy web c
 - **CustomDimensions**:
   - **UserAgent**: Application Insights automatically populates the user agent field with “PC” as these logs are being pushed from a server in a datacenter. Application Insights does not allow override of the user agent field. Sometimes, the user agent field is not available to populate. The user agent from which the call was made can be viewed with this query.
   
-requests
-```
+
+```requests
 summarize count() by tostring(customDimensions.userAgent)
 ```
 
@@ -46,8 +46,8 @@ summarize count() by tostring(customDimensions.userAgent)
 
 These are logs for custom plug-ins running for a given operation and are found in the **dependency** table. 
 
-dependencies
-```
+
+```dependencies
 where type == "Plugin"
 take 100
 ```
@@ -83,8 +83,8 @@ take 100
 
 These are logs for SDK operations triggered as a part of an incoming request. These are logged to the **dependency** table in Application Insights, as they are tracked as dependencies for the request to execute. They are identified by the type name starting with SDK. Here is a sample query:
 
-dependencies
-```
+
+```dependencies
 where type starts with "SDK"
 take 10
 ```
@@ -109,8 +109,8 @@ You will notice that some of the fields in the exceptions table are not populate
 > [!div class="mx-imgBorder"] 
 > ![Application Insights exceptions table](media/application-insights-exceptions-table.png "Application Insights exceptions table")
 
-exceptions
-```
+
+```exceptions
 take 10
 ```
 
@@ -128,15 +128,15 @@ This query will return all the attribute details from the **exception** table.
 
 If a user reports an error, you could use the userid (Azure AD ID) to understand details from the **exception** table.
 
-exceptions
-```
+
+```exceptions
 where user_Id == '12345678-68cd-4e73-908f-126342b36315'
 ```
 
 The Entity id and Entity name are available in the customDimensions in the **dependency** table.
  
-dependencies
-```
+
+```dependencies
 where type == "SDK Retrieve"
 ```
 
@@ -145,8 +145,8 @@ where type == "SDK Retrieve"
 
 ### How can I determine if my plug-in upgrade caused a performance degradation?
 
-dependencies
-```
+
+```dependencies
 where ['type'] == "Plugin"
 where name startswith "<InsertYourPluginName>"
 summarize avg(duration) by name
@@ -156,8 +156,8 @@ The plug-in name should also contain the version for custom plug-ins.
 
 ### How was the API performing prior to a reported issue based on time-of-day or location? Was API degradation gradual or sudden?
 
-requests
-```
+
+```requests
 where url == "https://<URLHere>"
 summarize avg(duration), count() by bin(timestamp, 1h)
 render timechart 
@@ -185,8 +185,7 @@ Yes – you can build [custom dashboards](https://docs.microsoft.com/azure/azure
 
 Yes. See the following sample query to understand how your plug-ins perform.
 
-dependencies
-```
+```dependencies
 where ['type'] == "Plugin" 
 where name == "[Plugin name here]" 
 summarize avg(duration) by bin(timestamp, 1h) 
@@ -196,5 +195,28 @@ render timechart
 > [!div class="mx-imgBorder"] 
 > ![Plug-in usage performance](media/application-insights-plugin-usage-performance.png "Plug-in usage performance")
 
+### Will this telemetry have throttling? 
 
+Yes. Basic 429 error details are currently provided.
 
+> [!div class="mx-imgBorder"] 
+> ![Basic 429 error](media/application-insights-basic-429-error.png "Basic 429 error")
+
+### Can I understand execution paths? Are calls made by the plug-in slowing the plug-in?  
+
+Yes. You can view all the messages and plug-ins that are executed for any request.  
+
+Duration of all message and plug-in execution is logged. If any plug-in is taking more time, you can identify that plug-in. If the plug-in is making a callback to DataVerse, the duration of that call is logged. More information about plug-ins is planned for future deployment.  
+
+Any outbound call made by the plug-in will be automatically logged as a dependency. 
+
+> [!div class="mx-imgBorder"] 
+> ![End-to-end transaction](media/application-insights-end-to-end-transaction.png "End-to-end transaction")
+
+### Can I view telemetry for a specific request? 
+
+DataVerse returns x-ms-service-requestId in the header response to all requests. Using this requestId, you can query for all telemetry. 
+
+```union *
+where operation_ParentId contains <requestId> 
+```

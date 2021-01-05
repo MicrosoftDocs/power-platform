@@ -54,7 +54,7 @@ If you are working with a partner, or you are a system integrator, standardized 
 
 Note that the [Monitor tool](https://powerapps.microsoft.com/blog/monitor-now-supports-model-driven-apps/) can be used for live detailed debugging for canvas and model-driven apps.
 
-# Custom telemetry
+## Custom telemetry
 
 If the standard telemetry doesn’t provide some specific metric that you need, you can still write code to supplement what is already being gathered. 
 
