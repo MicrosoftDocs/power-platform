@@ -125,8 +125,8 @@ One scenario where this can very valuable is when a user from a region (say Asia
 In the above request, the UCI request takes longer than the actual Dataverse API (Web API request). The breakdown in this case is the duration of the Dataverse API call(56ms) + CustomProperties.warmLatency(89ms) which adds up to close to the complete operation duration (144ms). The warmLatency is indicative of slowness for that particular client and could be an issue analyzed at the user level with the following query:
 
 dependencies<br />
-| where ['type'] == "UCI REQUEST"
-| summarize avg(toint(customDimensions.warmLatency)), avg(toint(customDimensions.coldLatency)), avg(toint(customDimensions.warmThroughput)) by user_Id
+"|" where ['type'] == "UCI REQUEST"
+"|" summarize avg(toint(customDimensions.warmLatency)), avg(toint(customDimensions.coldLatency)), avg(toint(customDimensions.warmThroughput)) by user_Id
 
 pageViews<br />
 | summarize avg(toint(customDimensions.warmLatency)), avg(toint(customDimensions.coldLatency)), avg(toint(customDimensions.warmThroughput)) by user_Id
