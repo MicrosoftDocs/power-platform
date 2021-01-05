@@ -217,6 +217,6 @@ Any outbound call made by the plug-in will be automatically logged as a dependen
 
 DataVerse returns x-ms-service-requestId in the header response to all requests. Using this requestId, you can query for all telemetry. 
 
-```union *
+```union*
 where operation_ParentId contains <requestId> 
 ```
