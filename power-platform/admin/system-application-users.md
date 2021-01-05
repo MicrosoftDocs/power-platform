@@ -4,7 +4,7 @@ description: About system and application users
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 12/15/2020
+ms.date: 01/04/2021
 author: jayasreekumar
 ms.author: jkumar
 ms.reviewer: jimholtz
@@ -28,7 +28,7 @@ Most of these users are hidden from user views but they can be found by using th
 
 |User type  |Full name  |User name  |Purpose  | Security role assigned |
 |-----------|-----------|-----------|---------|------------------------|
-|System | SYSTEM | n/a | See below. | n/a |
+|System | SYSTEM | N/A | See below. | N/A |
 | | Support user |crmoln@microsoft.com |To allow Microsoft support staff to have restricted/limited access to any customer environment for customer support. |Support user (does not have privilege to customer data) |
 | | Delegated admin |crmoln2@microsoft.com |See [For partners: the Delegated admin](for-partners-delegated-administrator.md). |System admin |
 |Application | Business Application Platform Service account |bap_sa@microsoft.com |To setup Power Apps system and configurations. |System admin |
@@ -52,7 +52,7 @@ Most of these users are hidden from user views but they can be found by using th
 | | CDSFileStorage | CDSFileStorage@onmicrosoft.com | To perform background operations like Organization Lifecycle (OLC) operations, file reconciliation and migration. | FileStoreService App Access |
 | |GDSGlobalDiscovery | GDSGlobalDiscovery@onmicrosoft.com | To validate which environments that users can access. | Global Discovery Service Role |
 | | BAP | BAP@onmicrosoft.com | To perform administrative operations on Dataverse linked environments: fetch user roles, provision users, assign roles in Power Platform portals.| N/A |
-
+| | ProductInsights | ProductInsights@onmicrosoft.com | To export data from Customer Insights to Engagement Insights | DataLakeWorkspaceAppAccess    |
 
 
 **The purpose of the system account?** 
