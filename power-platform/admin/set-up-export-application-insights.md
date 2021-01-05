@@ -69,7 +69,7 @@ search.app:
 |Canada     | Jan 2021        |
 |EMEA     | Jan 2021        |
 |North America     | Jan 2021        |
-|Germany  | Azure Dependencies        |
+|Germany  | TBD       |
 |France     | March 2021        |
 |South America     | Jan 2021        |
 |Asia Pacific     |  Jan 2021       |
@@ -77,9 +77,9 @@ search.app:
 |UK     | Jan 2021        |
 |OCE     | Jan 2021        |
 |India     | March 2021        |
-|South Africa (ZAF)     | Azure Dependencies        |
+|South Africa (ZAF)     | TBD       |
 |UAE     | March 2021        |
-|Switzerland (CHE)     | Azure Dependencies        |
+|Switzerland (CHE)     | TBD     |
 
 
 
