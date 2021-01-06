@@ -282,6 +282,10 @@ The audit log solution is able to find this information in on a daily basis for 
 
 This flow runs weekly, and checks if any makers have left the organization - if maker information can not be found in Azure AD/Office 365 Users, any resources created by the maker (apps, cloud and desktop flows, environments, chatbots) are marked as orphaned.
 
+### CLEANUP - Admin \| Sync Template v3 (Connection Status)
+
+This flow runs weekly, and checks if any apps or flows have unresolved connections.
+
 ## Apps
 
 <!--### DLP Editor

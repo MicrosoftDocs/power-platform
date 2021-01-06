@@ -103,7 +103,7 @@ The import can take up to 10 minutes to be completed.
 
 The flows with the prefix *Sync* are required for populating and cleaning up data in the Dataverse tables (Environment, Power Apps App, Flow, Flow Action Detail, Connector, and Maker). The sync flows are used to write or delete data from the admin connectors to the Dataverse tables. These flows run on a schedule.
 
-Note that the first run of these will be long running. See the [limitations information](/limitations.md#Long-running-flows) for more details.
+Note that the first run of these will be long running. See the [limitations information](limitations.md#Long-running-flows) for more details.
 We will avoid issues by enabling the flows in an explicit order. We recommend you repeat this order on each upgrade as well.
 
 1) Turn on: CLEANUP - Admin \| Sync Template v3 (Check Deleted)
@@ -197,3 +197,4 @@ Environment variables are used to store application and flow configuration data 
     |Admin eMail                         | Email address used in flows to send notifications to admins; this should be either your email address or a distribution list |
     |eMail Header Style                  | CSS style used to format emails that are sent to admins and makers. A default value is provided. [See the provided default value](code-samples/css/default-value-eMail-Header-Style.md). |
     |Also Delete from CoE | When the Admin \| Sync Template v3 (Check Deleted) flow is run, this denotes whether you want the items deleted from CoE (Yes, which is the default) or just marked as deleted (No). |
+    | Full Inventory | Determines if you want to only update objects that have changed, or all objects. Defaults to No. Switching to Yes will cause the flows to inventory every single app, flow, and bot. |
