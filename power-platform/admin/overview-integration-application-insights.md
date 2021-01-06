@@ -109,7 +109,7 @@ In Application Insights, go to the the **Logs** panel under the **Monitoring** m
 > [!div class="mx-imgBorder"] 
 > ![Application Insights logs query](media/application-insights-logs-query.png "Application Insights log query")
 
-**Common Fields**: All the [tables](#what-telemetry-and-which-tables-are-being-populated-in-the-application-insights) populated in Application insights have these common fields:
+**Common Fields**: All the [tables](#what-telemetry-and-which-tables-are-being-populated-in-application-insights) populated in Application insights have these common fields:
 
 - **cloud_RoleInstance**: For events emitted as a part of this effort, this field will be set to “CDS Data Export” to ensure they can be identified versus other events in the same Application Insights environment.
 - **operation_Id**: This links together all the operations in a single interaction - one way to get all related events to a failing event.
