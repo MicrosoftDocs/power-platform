@@ -117,7 +117,7 @@ Now you'll configure and set up a custom connector that uses the [Office 365 Man
 1. Select **Update Connector**.
 
 > [!NOTE]
-> If you have a [data loss prevention (DLP) policy](https://docs.microsoft.com/power-platform/admin/wp-data-loss-prevention) configured for your CoE Starter Kit environment, you'll need to add this connector to the business data&ndash;only group of this policy. More information: [Add custom connectors to your DLP policy](limitations.md#custom-connectors-and-dlp) and [custom connector documentation](https://docs.microsoft.com/connectors/custom-connectors/define-openapi-definition#import-the-openapi-definition)
+> If you have a [data loss prevention (DLP) policy](https://docs.microsoft.com/power-platform/admin/wp-data-loss-prevention) configured for your CoE Starter Kit environment, you'll need to add this connector to the business data&ndash;only group of this policy. 
 
 ### Update Azure AD app registration with the redirect URL
 
@@ -240,7 +240,7 @@ Keep in mind that after a user account has access to the audit logs, that user h
    ![The Get Activities By Operation action of the custom connector](media/coe30.png "The Get Activities By Operation action of the custom connector]")
 
 > [!IMPORTANT]
-> If you're using DLP, you'll need to put this connector into the business group. More information: [Custom connectors and DLP](limitations.md#custom-connectors-and-dlp) and [Import the OpenAPI definition](https://docs.microsoft.com/connectors/custom-connectors/define-openapi-definition#import-the-openapi-definition)
+> If you're using DLP, you'll need to put this connector into the business group. 
 
 ### Import the flow template compressed (.zip) package named SyncAuditLogs.zip
 

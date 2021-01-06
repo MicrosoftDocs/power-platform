@@ -33,7 +33,7 @@ Tables **RPA** and **RPA Session** have been added to support inventory and anal
 
 ## Power BI Dashboard
 
-The [Power BI Dashboard](../power-bi-monitor.md#ui-flows) has been updated to show desktop flow inventory and run details.
+The [Power BI Dashboard](../power-bi-monitor.md#desktop-flows) has been updated to show desktop flow inventory and run details.
 
 ## Custom Connector
 

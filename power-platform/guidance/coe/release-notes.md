@@ -25,7 +25,7 @@ Select each version below to see release notes and updates for each component. Y
 
 |  Component     | Latest version |
 |--------|-------------|
-| Core (Admin) Components |   [1.71](release-notes/core-1.71.md)    |
+| Core (Admin) Components |   [1.72](release-notes/core-1.72.md)    |
 | Governance (Compliance and Reporting) Components |   [1.25](release-notes/governance-1.25.md)  |
 | Nurture Components |   [1.23](release-notes/nurture-1.23.md)  |
 | Audit Log |   [1.0](release-notes/auditlog-1.0.md) |
@@ -35,6 +35,7 @@ Select each version below to see release notes and updates for each component. Y
 
 |  Version | First available |
 | --------- | ---------------|
+| [1.72](release-notes/core-1.72.md) | January 6, 2021 |
 | [1.71](release-notes/core-1.71.md) | November 16, 2020 |
 | [1.70.6](release-notes/core-1.70.6.md) | October 16, 2020 |
 | [1.70](release-notes/core-1.70.md) | September 18, 2020 |

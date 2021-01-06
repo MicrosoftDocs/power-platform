@@ -103,7 +103,7 @@ The import can take up to 10 minutes to be completed.
 
 The flows with the prefix *Sync* are required for populating and cleaning up data in the Dataverse tables (Environment, Power Apps App, Flow, Flow Action Detail, Connector, and Maker). The sync flows are used to write or delete data from the admin connectors to the Dataverse tables. These flows run on a schedule.
 
-Note that the first run of these will be long running. See the [limitations information](limitations.md#Long-running-flows) for more details.
+Note that the first run of these will be long running. See the [limitations information](limitations.md) for more details.
 We will avoid issues by enabling the flows in an explicit order. We recommend you repeat this order on each upgrade as well.
 
 1) Turn on: CLEANUP - Admin \| Sync Template v3 (Check Deleted)
