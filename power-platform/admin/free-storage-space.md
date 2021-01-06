@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/29/2020
+ms.date: 01/06/2021
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -45,12 +45,12 @@ Use the following methods to free up storage for each of the capacity types.
 |     | **Method 10**: Delete audit logs        |
 |     | Delete plug-in trace logs using a [bulk deletion job](delete-bulk-records.md) |
 |**Database**     |         |
-|     | **Method 1**: Delete bulk email and workflow environments using a bulk deletion job        |
+|     | **Method 1**: Delete bulk email and workflow instances using a bulk deletion job        |
 |     | **Method 2**: Evaluate and delete suspended workflows        |
 |     | **Method 7**: Remove bulk duplicate detection jobs and associated copies of duplicate records        |
-|     | **Method 8**: Delete bulk import environments using a bulk deletion job        |
-|     | **Method 9**: Delete bulk deletion job environments using a bulk deletion job        |
-|     | **Method 11**: Remove unrequired entities and fields from Relevance Search        |
+|     | **Method 8**: Delete bulk import instances using a bulk deletion job        |
+|     | **Method 9**: Delete bulk deletion job instances using a bulk deletion job        |
+|     | **Method 11**: Remove unrequired tables and columns from Relevance Search        |
 
 
 ## Reduce file storage
@@ -224,7 +224,7 @@ Use the following methods to free up storage for each of the capacity types.
 
 ## Reduce database storage
 
-### Method 1: Delete bulk email and workflow environments using a bulk deletion job  
+### Method 1: Delete bulk email and workflow instances using a bulk deletion job  
   
 > [!WARNING]
 >  If you delete this data, you will no longer be able to tell if an email was sent through bulk email or if a workflow rule ran against a record. The emails that were sent and the actions that ran against the record in the workflow will remain.  
@@ -301,20 +301,20 @@ Use the following methods to free up storage for each of the capacity types.
   
 ### Method 7: Remove bulk duplicate detection jobs and associated copies of duplicate records  
 
- Every time that a duplicate detection job runs, a copy of each duplicate record is stored in the database as part of the duplicate detection job. For example, if you have 100 duplicate records, every time that you run a duplicate detection job that finds these duplicates, whether it is manual or reoccurring, those 100 duplicate records will be stored in the database under that environment of that duplicate job until the duplicates are merged or deleted, or until the environment of that duplicate detection job is deleted.  
+ Every time that a duplicate detection job runs, a copy of each duplicate record is stored in the database as part of the duplicate detection job. For example, if you have 100 duplicate records, every time that you run a duplicate detection job that finds these duplicates, whether it is manual or reoccurring, those 100 duplicate records will be stored in the database under that instance of that duplicate job until the duplicates are merged or deleted, or until the instance of that duplicate detection job is deleted.  
   
 1. [!INCLUDE[proc_settings_datamanagement](../includes/proc-settings-datamanagement.md)]  
   
 2. Choose **Duplicate Detection Jobs**.  
   
-3. Select the duplicate detection job environments you want to delete and then choose **Delete** (X).  
+3. Select the duplicate detection job instances you want to delete and then choose **Delete** (X).  
   
    To avoid wasting storage space, make sure duplicates are resolved promptly so that they are not reported in multiple duplicate detection jobs.  
 
 > [!div class="mx-imgBorder"] 
 > ![Free up storage method 7](media/free-storage-method7a.png "Free up storage method 7")  
   
-### Method 8: Delete bulk import environments using a bulk deletion job  
+### Method 8: Delete bulk import instances using a bulk deletion job  
 
  Every time you perform a bulk import, there is a system job associated with that import. The system job details show which records imported successfully and which records failed.  
   
@@ -361,7 +361,7 @@ Use the following methods to free up storage for each of the capacity types.
 
 12. Choose **Next**, review the bulk deletion job, and then choose **Submit** to create the recurring job.  
   
-### Method 9: Delete bulk deletion job environments using a bulk deletion job  
+### Method 9: Delete bulk deletion job instances using a bulk deletion job  
 
  When you are bulk deleting data, such as in many of the methods described in this article, a bulk deletion system job is created and can be deleted.  
   
@@ -411,12 +411,12 @@ Use the following methods to free up storage for each of the capacity types.
 
 12. Choose **Next**, review the bulk deletion job, and then choose **Submit** to create the recurring job.  
 
-### Method 11: Remove unrequired entities and fields from Relevance Search
+### Method 11: Remove unrequired tables and columns from Relevance Search
 
-Entities and entity fields enabled for Relevance Search have an impact on the database storage capacity. 
+Tables and tables fields enabled for Relevance Search have an impact on the database storage capacity. 
 
-- To revise the list of entities selected for Relevance Search results, see [Select entities for Relevance Search](configure-relevance-search-organization.md#select-entities-for-relevance-search).
-- To revise the list of fields selected for each entity for Relevance Search results, see [Configure searchable fields for Relevance Search](configure-relevance-search-organization.md#configure-searchable-fields-for-relevance-search). 
+- To revise the list of tables selected for Relevance Search results, see [Select entities for Relevance Search](configure-relevance-search-organization.md#select-entities-for-relevance-search).
+- To revise the list of fields selected for each table for Relevance Search results, see [Configure searchable fields for Relevance Search](configure-relevance-search-organization.md#configure-searchable-fields-for-relevance-search). 
 
 ## Free up storage used by flow approvals
 
