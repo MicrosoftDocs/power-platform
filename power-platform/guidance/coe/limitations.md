@@ -18,28 +18,28 @@ search.app:
 ---
 # Limitations
 
-There is no "one size fits all" solution for a Center of Excellence (CoE). Some companies will want a very restrictive set of rules on their organization in hopes of mitigating the unknown, while others will want to let users personally explore without limitations. Because of this, the CoE Starter Kit doesn't come equipped with a set of design patterns for everyone. For example, there are no components that are configured to automatically delete resources, because we didn't want to provide a tool that might unintentionally disrupt a business. Therefore, if your organization wants a more restrictive implementation, it must implement those restrictions in addition to using the tools from the starter kit.
+There is no "one size fits all" solution for a Center of Excellence (CoE). Some companies will want a restrictive set of rules on their organization in hopes of mitigating the unknown, while others will want to let users personally explore without limitations. Because of this, the CoE Starter Kit doesn't come equipped with a set of design patterns for everyone. If your organization wants a more restrictive implementation, it must implement those restrictions in addition to using the tools from the starter kit.
 
 The following sections describe limitations for some components.
 
 ## Long running flows
 
-There are some flows which crawl the tenant in order to do their work. Specifically, the inventory flows in Core solution and the start archival flows in Governance solution.
+There are some flows, which crawl the tenant in order to do their work. Specifically, the inventory flows in Core solution and the start archival flows in Governance solution.
 
 To help ensure service levels, availability, and quality, there are entitlement limits to the number of requests users can make each day across Power Apps, Power Automate. Learn more: [Requests limits and allocations](https://docs.microsoft.com/power-platform/admin/api-request-limits-allocations)
 
-Larger tenants might require a per flow license in order for these flows to complete in a timely manner. [Power Automate License Pricing](https://flow.microsoft.com/pricing/)
+Larger tenants might require a per flow license in order for these flows to complete in a timely manner. More information: [Power Automate License Pricing](https://flow.microsoft.com/pricing/)
 
 >[!TIP]
 >The first run of the Sync flows in the Core Solution will run long as it will do an update for every flow/app/etc in the tenant. Subsequent runs  will only update apps/flows/etc that have changed since the last run and so these will not require a per flow license for most tenants.
 
 ## Flows that use the Common Data Service (Current Environment) connector
 
-The Admin | Sync Template v3 (Flows) and CLEANUP - Admin | Sync Template v3 (Connection Status) will fail to collect inventory information for flows that use the Common Data Service (Current Environment) connector. The [Get Flow as Admin](https://docs.microsoft.com/connectors/flowmanagement/) currently has a limitation, where flows using that connector can not be retrieved.
+The Admin | Sync Template v3 (Flows) and CLEANUP - Admin | Sync Template v3 (Connection Status) will fail to collect inventory information for flows that use the Common Data Service (Current Environment) connector. The [Get Flow as Admin](https://docs.microsoft.com/connectors/flowmanagement/) currently has a limitation, where flows using that connector cannot be retrieved.
 
 ## Timeouts in the Admin | Sync Template v3
 
-The Dataverse connector might experience some throttling limits if the tenant has a lot of resources. If you see 429 errors in the flow run history occurring in later runs, you can try the following resolution steps:
+The Dataverse connector might experience some throttling limits if the tenant has many resources. If you see 429 errors in the flow run history occurring in later runs, you can try the following resolution steps:
 
 - **Configure the retry policy**
   1. Open **Admin \| Sync Template v3**, and then select **Edit**.
@@ -73,13 +73,13 @@ Embedding Power Apps canvas apps in Power BI dashboards isn't available for GCC 
 
 ## Developer environments from the Power Apps Community Plan
 
-Microsoft Power Platform protects developer-type SKUs from inquiry by non-authenticated users. This means that the model-driven apps in developer SKUs will be skipped from our tally work in the sync flow Admin | Sync Template v3 (Model Driven Apps).
+Microsoft Power Platform protects developer-type SKUs from inquiry by non-authenticated users. This configuration means that the model-driven apps in developer SKUs will be skipped from our tally work in the sync flow Admin | Sync Template v3 (Model Driven Apps).
 
 To fix this, you must have your admin security role added to the security roles for all developer environments, and then remove the selection from the sync flow. More information: [Power Apps Community Plan](https://docs.microsoft.com/powerapps/maker/dev-community-plan)
 
 ## Sync Flow limitations for Developer and Microsoft Team environments
 
-It currently isn't possible to retrieve the model-driven apps, chatbots and Desktop flows for developer environments (*My Name's* environment) and Microsoft Teams environments.
+It currently isn't possible to retrieve the model-driven apps, chatbots, and Desktop flows for developer environments (*My Name's* environment) and Microsoft Teams environments.
 
 ## Security groups and approvals
 
@@ -92,8 +92,8 @@ The shared component library in the [theming components solution](theming-compon
 
 ## Trial Licenses
 
-Trial licenses does not have sufficient [API call allowances](https://docs.microsoft.com/power-automate/limits-and-config#looping-and-debatching-limits) to run the CoE Starter Kit flows.
-For full list of license requirements see [Setup Pre-requisits](setup.md#prerequisites).
+Trial licenses do not have sufficient [API call allowances](https://docs.microsoft.com/power-automate/limits-and-config#looping-and-debatching-limits) to run the CoE Starter Kit flows.
+For full list of license requirements see [Setup Prerequisite](setup.md#prerequisites).
 
 ## PIM (Privileged Identity Management)
 
