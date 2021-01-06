@@ -33,6 +33,10 @@ Larger tenants might require a per flow license in order for these flows to comp
 >[!TIP]
 >The first run of the Sync flows in the Core Solution will run long as it will do an update for every flow/app/etc in the tenant. Subsequent runs  will only update apps/flows/etc that have changed since the last run and so these will not require a per flow license for most tenants.
 
+## Flows that use the Common Data Service (Current Environment) connector
+
+The Admin | Sync Template v3 (Flows) and CLEANUP - Admin | Sync Template v3 (Connection Status) will fail to collect inventory information for flows that use the Common Data Service (Current Environment) connector. The [Get Flow as Admin](https://docs.microsoft.com/connectors/flowmanagement/) currently has a limitation, where flows using that connector can not be retrieved.
+
 ## Timeouts in the Admin | Sync Template v3
 
 The Dataverse connector might experience some throttling limits if the tenant has a lot of resources. If you see 429 errors in the flow run history occurring in later runs, you can try the following resolution steps:
