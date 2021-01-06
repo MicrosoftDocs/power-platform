@@ -44,6 +44,7 @@ Due to certain technological dependencies, the following features listed will no
 - [Company News Timeline](https://docs.microsoft.com/dynamics365/customer-engagement/company-news-timeline/get-company-news-timeline-dynamics-365-phones-tablets) provides valuable insights from the latest news about tenant customers on the phone or tablet. This feature will be unavailable.
 - [Global Discovery Service API](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/discover-url-organization-web-api) which programmatically enables customer applications to discover user organization (also known as environment) and find environments across regions will not be available.
 - The service health Organization Insights feature will be unavailable.
+- [Omnichannel for Customer Service](https://docs.microsoft.com/dynamics365/customer-service/introduction-omnichannel) is unavailable.
 - [Portals](https://docs.microsoft.com/dynamics365/customer-engagement/portals/administer-manage-portal-dynamics-365) for the Dataverse services will be unavailable.
 - [Dynamics 365 for phones and tablets](https://docs.microsoft.com/dynamics365/customer-engagement/mobile-app/overview) will be unavailable.
 - The following Microsoft AppSource hosted solutions for the Dataverse services will not be available:
