@@ -36,7 +36,6 @@ The following are prerequisites for installing the CoE Starter Kit as it's inclu
 -  Admin account:
     -  Microsoft Power Platform service admin, global tenant admin, or Dynamics 365 service admin for access to all tenant resources through the Power Apps APIs.
     -  This solution will work for environment admins, but the view will be restricted to only the environments an environment admin has access to.
-    -  Dynamics 365 service admin is required for getting details about model-driven apps and solution-aware flows.
     - This account must be email enabled.
 
 - Premium licenses are required to use the CoE Starter Kit. Depending on what components you will use, your organization size and the existing licenses available in your organization, you will require either a Power Apps per user or per app or Power Automate per user or per flow license or a combination of these licenses.
