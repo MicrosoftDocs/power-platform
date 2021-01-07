@@ -187,7 +187,7 @@ pageViews<br />
 The UCI monitor tool helps with real-time troubleshooting on a session from the UCI side. The end to end transaction requests should be available in Application Insights. To look at the logs for a given action, note the Activity Id from a row in the Event Details in Monitor. This can be used to query for logs as follows:
 
 union *<br />
-| where operation_Id contains "<ActivityIdHere>"
+| where operation_Id contains "[ActivityIdHere]"
 
 Note that the Monitor tool is a realtime debugging tool, however, data availability through this feature could take up to a few hours.
 
