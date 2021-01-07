@@ -103,15 +103,15 @@ The import can take up to 10 minutes to be completed.
 
 The flows with the prefix *Sync* are required for populating and cleaning up data in the Dataverse tables (Environment, Power Apps App, Flow, Flow Action Detail, Connector, and Maker). The sync flows are used to write or delete data from the admin connectors to the Dataverse tables. These flows run on a schedule.
 
-Note that the first run of these will be long running. See the [limitations information](/limitations.md#Long-running-flows) for more details.
+Note that the first run of these will be long running. See the [limitations information](limitations.md) for more details.
 We will avoid issues by enabling the flows in an explicit order. We recommend you repeat this order on each upgrade as well.
 
-1) Turn on: CLEANUP - Admin \| Sync Template v2 (Check Deleted)
+1) Turn on: CLEANUP - Admin \| Sync Template v3 (Check Deleted)
 1) Wait until it finishes before you turn on any other flows.
 1) Ensure the Sync Template flows are already turned on for the following object types:<br> Apps, Connectors, Custom Connectors, Flows, Model Driven Apps, PVA, RPA
-1) Turn on Admin \| Sync Template v2. When it completes, turn it back off.
+1) Turn on Admin \| Sync Template v3. When it completes, turn it back off.
 1) This will cause the flows for the objects listed in step 3 to run. Wait until all of these complete.
-1) Turn back on Admin \| Sync Template v2.
+1) Turn back on Admin \| Sync Template v3.
 1) Turn on the rest of the flows listed in the solution
 
 ## Configure the CoE Settings table
@@ -171,7 +171,7 @@ After the sync flows have finished running (depending on the number of environme
 
 **To check the status of a flow**
 
-1. Select **Admin \| Sync Template v2**.
+1. Select **Admin \| Sync Template v3**.
 
    This will open a new tab to the **Flow detail** page.
 
@@ -184,16 +184,17 @@ After the sync flows have finished running (depending on the number of environme
 
 Environment variables are used to store application and flow configuration data with data specific to your organization or environment.
 
->[!IMPORTANT]
->To edit environment variables in the environment, open the default solution for the environment and set the **Type** filter to **Environment variable**.
+1. Go to [make.powerapps.com](<https://make.powerapps.com>).
+1. On the left pane, select **Solutions**.
+1. Select the **Default Solution**, and change the filter to show **Environment Variables**.
+1. Select a variable that you want to update, and then configure its **Current Value**.
 
-- Select a variable, and then configure its **Current Value**.
-
-    Configure the following variables for the core components solution, and then select **Save**.
+    Update one of the following variables for the core components solution, and then select **Save**.
 
     | Name | Current Value |
     |------|---------------|
     |Power Automate environment variable | For a US environment: <https://us.flow.microsoft.com/manage/environments/> <br>For an EMEA environment: <https://emea.flow.microsoft.com/manage/environments/> <br>For a GCC environment: <https://gov.flow.microsoft.us/manage/environments/> |
     |Admin eMail                         | Email address used in flows to send notifications to admins; this should be either your email address or a distribution list |
     |eMail Header Style                  | CSS style used to format emails that are sent to admins and makers. A default value is provided. [See the provided default value](code-samples/css/default-value-eMail-Header-Style.md). |
-    |Also Delete from CoE | When the Admin \| Sync Template v2 (Check Deleted) flow is run, this denotes whether you want the items deleted from CoE (Yes, which is the default) or just marked as deleted (No). |
+    |Also Delete from CoE | When the Admin \| Sync Template v3 (Check Deleted) flow is run, this denotes whether you want the items deleted from CoE (Yes, which is the default) or just marked as deleted (No). |
+    | Full Inventory | Determines if you want to only update objects that have changed, or all objects. Defaults to No. Switching to Yes will cause the flows to inventory every single app, flow, and bot. |
