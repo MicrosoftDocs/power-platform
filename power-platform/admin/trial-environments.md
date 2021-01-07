@@ -17,6 +17,9 @@ search.app:
   - Flow
 ---
 # About trial environments
+
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 Using the Power Platform admin center, you can create environments of multiple types. Using trial environments, companies and customers can try out new features and solutions. There are two types of trial environments: trial (standard) and trial (subscription-based). 
 
 > [!NOTE]
@@ -38,7 +41,7 @@ The type of trial environment you create depends on where you start and your ten
 |Trial (standard)     |  User or admin      |  Power Platform admin center. See [Create a trial (standard) environment in the Power Platform admin center](#create-a-trial-standard-environment-in-the-power-platform-admin-center)       |
 |Trial (standard)       |  User or admin         | [https://trials.dynamics.com](https://trials.dynamics.com)     |
 |Trial (subscription-based)      | Admin        | Power Platform admin center. See [Create a trial (subscription-based) environment in the Power Platform admin center](#create-a-trial-subscription-based-environment-in-the-power-platform-admin-center)        |
-|Trial (subscription-based)      |  User or admin        | "Get started"<!--Suggested--> pages, such as: <br /> <ul><li>[https://dynamics.microsoft.com/get-started/?appname=salespro](https://dynamics.microsoft.com/get-started/?appname=salespro)</li><li>[https://dynamics.microsoft.com/get-started/?appname=customerservice](https://dynamics.microsoft.com/get-started/?appname=customerservice)</li></ul>      |
+|Trial (subscription-based)      |  User or admin        | "Get started" pages, such as: <br /> <ul><li>[https://dynamics.microsoft.com/get-started/?appname=salespro](https://dynamics.microsoft.com/get-started/?appname=salespro)</li><li>[https://dynamics.microsoft.com/get-started/?appname=customerservice](https://dynamics.microsoft.com/get-started/?appname=customerservice)</li></ul>      |
 
 ## Create a trial (standard) environment in the Power Platform admin center
 
