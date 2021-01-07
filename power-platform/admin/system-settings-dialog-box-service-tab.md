@@ -25,7 +25,7 @@ Use this tab to set preferences for the customer service area, such as service l
   
 1. [!INCLUDE[proc_permissions_system_admin_and_customizer](../includes/proc-permissions-system-admin-and-customizer.md)]  
   
-    Check your security role  
+    Check your security role.  
   
    - [!INCLUDE[proc_follow_steps_in_link](../includes/proc-follow-steps-in-link.md)]  
   
@@ -36,7 +36,7 @@ Use this tab to set preferences for the customer service area, such as service l
 3. Select the **System Settings** > **Service** tab.  
   
 > [!NOTE]
-> With the version 9.1 release, service configuration settings in service management are available in the Customer Service Hub based on Unified Interface experience. You are recommended to manage service configuration settings using the new experience. </br>
+> With the version 9.1 release, service configuration settings in service management are available in the Customer Service Hub based on the Unified Interface experience. You are recommended to manage service configuration settings using the new experience. </br>
 > In the Customer Service Hub app, go to **Service Management** and select **Service Terms** > **Service Configuration Settings** in the sitemap to access the Service configuration settings. 
   
 |                                                                                                                                                                                                                                                                                   Settings                                                                                                                                                                                                                                                                                    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |

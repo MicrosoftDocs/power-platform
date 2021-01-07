@@ -219,7 +219,7 @@ Legacy web client is deprecated
 -------------------------------
 As of September 2019, the legacy web client is deprecated. Customers must transition to Unified Interface before December 4, 2020. Microsoft will continue to provide support, security, and other critical updates to the legacy web client until December 4, 2020 but won't release any additional functionality beyond what has already been announced.
   
-On December 4, 2020, the legacy web client will no longer be available. Organizations should make the transition to the Unified Interface as soon as possible to take advantage of Microsoft’s ongoing investments in reliability, performance, and functionality. 
+On December 4, 2020, the legacy web client will no longer be available. Organizations should make the transition to Unified Interface as soon as possible to take advantage of Microsoft’s ongoing investments in reliability, performance, and functionality. 
 
  
 In the coming months, for those that have not already made the transition, we will be sending reminders and scheduling updates to transition customers to Unified Interface prior to December 4, 2020. 
@@ -320,7 +320,7 @@ For information about the new client APIs, see [Apply business logic using clien
 EntityMetadata.IsInteractionCentricEnabled property is deprecated
 -----------------------------------------------------------------
 
-All entities supported in the Unified Interface are now enabled for the interactive experience in the new Customer Service Hub app. This implies that
+All entities supported in Unified Interface are now enabled for the interactive experience in the new Customer Service Hub app. This implies that
 the **EntityMetadata**.[IsInteractionCentricEnabled](/dotnet/api/microsoft.xrm.sdk.metadata.entitymetadata.isinteractioncentricenabled)
 property, which indicates whether an entity can be enabled for interactive experience, is no longer relevant. The corresponding setting for this property
 in the Customization tool, **Enable for interactive experience**, is removed, and the
@@ -409,7 +409,7 @@ Silverlight (XAP) web resource is deprecated
 --------------------------------------------
 
 The Silverlight (XAP) web resource is deprecated on the web client, and is not
-supported on the Unified Interface. Instead of Silverlight web resources, you must use custom
+supported on Unified Interface. Instead of Silverlight web resources, you must use custom
 controls created using the HTML web resources
 with HTML5 to create UI components to visualize and interact with data.
 
