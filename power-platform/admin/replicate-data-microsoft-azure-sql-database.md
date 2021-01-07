@@ -625,9 +625,9 @@ EXEC SP_EXECUTESQL @sql;
    Example query for entity record deletion.
 
 ```sql
-DELETE FROM [dbo].[prefix_account] A
+DELETE A FROM [dbo].[prefix_account] A
 WHERE id IN (SELECT CONVERT(uniqueidentifier, recordid) FROM [dbo].[prefix_DeleteLog] DL WHERE DL.entityname ='account'
-AND DL.VersionNumber &gt; A.VersionNumber)
+AND DL.VersionNumber > A.VersionNumber)
 ```
 
 ### Entities that don't support data export  

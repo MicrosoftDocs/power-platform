@@ -113,7 +113,7 @@ To verify that a release wave is enabled, open the environment, go to **Settings
 |![Opt-in status](media/update-status.png "Opt-in status")<br /> An example screenshot. May not be current wave.        | ![Opt-in status webclient](media/update-status-webclient.png "Opt-in status webclient") <br /> An example screenshot. May not be current wave.         |
 
 > [!NOTE]
-> You need to select **About** from a Dynamics 365 apps page that's displayed in the [Unified Interface](about-unified-interface.md), such as Sales Hub or Customer Service Hub pages. 
+> You need to select **About** from a Dynamics 365 apps page that's displayed in [Unified Interface](about-unified-interface.md), such as Sales Hub or Customer Service Hub pages. 
 >
 > The server version won't be updated to the next version after a release wave is enabled. 
 
