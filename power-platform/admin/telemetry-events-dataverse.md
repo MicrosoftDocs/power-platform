@@ -135,7 +135,7 @@ dependencies<br />
 
 dependencies<br />
 | where ['type'] == "Plugin"<br />
-| where name startswith &#8220;<InsertYourPluginName>&#8221;<br />
+| where name startswith "[InsertYourPluginName]"<br />
 | summarize avg(duration) by name
 
 The plug-in name should also contain the version for custom plug-ins.
