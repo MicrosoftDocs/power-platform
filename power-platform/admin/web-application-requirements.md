@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/11/2020
+ms.date: 01/06/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -49,13 +49,13 @@ Notice that these values are recommendations and don’t guarantee satisfactory 
 
 | Windows version | Internet Explorer 10 | Internet Explorer 11<sup>2</sup> | Microsoft Edge |
 |-----------------------------------------------------------------------------|-----------------------------------------------|-----------------------------------------------------------|-----------------------------------------------------------------|
-|           Windows 10      |           Not supported<sup>1</sup>           |                         Supported                         |                            Supported                            |
-|          Windows 8.1       |           Not supported<sup>1</sup>           |                         Supported                         |                          Not supported                          |
-|             Windows 8           |                   Not supported                    |                 Not supported<sup>1</sup>                 |                          Not supported                          |
-|            Windows 7          |                   Not supported                |                         Supported                         |                          Not supported                          |
+|           Windows 10      |   Not supported<sup>1</sup>           |     Not supported       |      Supported    |
+|          Windows 8.1       | Not supported<sup>1</sup>           |     Not supported    |    Not supported    |
+|             Windows 8           |  Not supported   |   Not supported<sup>1</sup>   |     Not supported     |
+|            Windows 7          |   Not supported   |    Not supported   |   Not supported  |
 
  <sup>1</sup> This version of [!INCLUDE[pn_ms_Windows_short](../includes/pn-ms-windows-short.md)] doesn’t support the version of [!INCLUDE[pn_Internet_Explorer](../includes/pn-internet-explorer.md)]. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Internet Explorer 11 – FAQ for IT Pros](https://technet.microsoft.com/library/dn268945.aspx)  <br/>
-<sup>2</sup> Check requirements for individual apps, such as [Customer Service Hub application requirements](https://docs.microsoft.com/dynamics365/customer-service/customer-service-hub-user-guide-basics). <br/>
+<sup>2</sup> Check requirements for individual apps, such as [Customer Service Hub application requirements](https://docs.microsoft.com/dynamics365/customer-service/customer-service-hub-user-guide-basics). Microsoft Internet Explorer 11 support is deprecated. We recommend that you use Microsoft Edge. More information: [Deprecation announcement](../important-changes-coming.md#internet-explorer-11-support-for-dynamics-365-and-microsoft-power-platform-is-deprecated)<br/>
 
 > [!IMPORTANT]
 >  Although you may be able to use [!INCLUDE[pn_IE_8](../includes/pn-ie-8.md)], [!INCLUDE[pn_IE_9](../includes/pn-ie-9.md)], or an [!INCLUDE[pn_Internet_Explorer](../includes/pn-internet-explorer.md)] and [!INCLUDE[pn_ms_Windows_short](../includes/pn-ms-windows-short.md)] combination that is not supported in the previous table, those web browsers are not recommended and are not supported with model-driven apps.  
