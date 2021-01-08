@@ -113,8 +113,8 @@ In Application Insights, go to the the **Logs** panel under the **Monitoring** m
 
 - **cloud_RoleInstance**: For events emitted as a part of this effort, this field will be set to “CDS Data Export” to ensure they can be identified versus other events in the same Application Insights environment.
 - **operation_Id**: This links together all the operations in a single interaction - one way to get all related events to a failing event.
- union_requests, dependencies, pageViews <br />
-| where operation_Id == “[insert id here]”
+  pageViews <br />
+  | where operation_Id == “[insert id here]”
 - **session_Id** : This uniquely identifies all activities in a single user session. The session value is reset when a user opens a new tab, selects F5/refresh, closes and reopens the mobile app.
 - **user_Id, user_AuthenticatedId**: These are both currently set to the Azure Active Directory ID of the user. 
 - **client_IP**: This field is always populated to 0.0.0.0 by Application Insights for General Data Protection Regulation (GDPR) compliance. The IP address provided is used to populate the *client_City*, *client_StateOrProvince*, and *client_CountryOrRegion* fields.
