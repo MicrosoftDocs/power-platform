@@ -27,7 +27,7 @@ To control data access, you must set up an organizational structure that both pr
 > Check out the following video: [How to set up security roles](https://go.microsoft.com/fwlink/p/?linkid=2020433).
   
 ## Security roles  
-A security role defines how different users, such as salespeople, access different types of records. To control access to data, you can modify existing security roles, create new security roles, or change which security roles are assigned to each user. Each user can have multiple security roles.  
+A security role defines how different users, such as salespeople, access different types of records. To control access to data, you can modify existing security roles, create new security roles, or change which security roles are assigned to each user. Each user can have multiple security roles. See [predefined security roles](https://docs.microsoft.com/power-platform/admin/database-security#predefined-security-roles).
   
 Security role privileges are cumulative: having more than one security role gives a user every privilege available in every role.  
   
