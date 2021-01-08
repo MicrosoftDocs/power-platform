@@ -26,8 +26,6 @@ There is a list of special system and application users that is created when the
 
 Most of these users are hidden from user views but they can be found by using the Advanced Find on the Users entity.  Do not delete or modify these users including changing or reassigning security role. 
 
-[predefined security roles](database-security.md#predefined-security-roles)
-
 |User type  |Full name  |User name  |Purpose  | Security role assigned |
 |-----------|-----------|-----------|---------|------------------------|
 |System | SYSTEM | N/A | See below. | N/A |
