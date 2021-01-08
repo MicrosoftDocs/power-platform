@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/10/2020
+ms.date: 01/07/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -276,6 +276,8 @@ Note that when the Power Apps app is disabled, users won't have access to any st
 The **Built by your colleagues** catalog intentionally filters out **Shared with Everyone** apps. These apps can be added to the Microsoft Teams app catalog by using the **Upload a custom app** capability in Microsoft Teams. More information: [Publish a custom app by uploading an app package](https://docs.microsoft.com/microsoftteams/upload-custom-apps)
 
 > [!NOTE]
+> Disabling the Power Apps and Power Virtual Agent app in Teams prevents users from creating new apps and bots but does not prevent the creation of Dataverse for Teams environments. There are other apps (Inspection, Employee Ideas, and Issue reporting) that will create a Dataverse for Teams environment if you add one of those apps to a team. To prevent Dataverse for Teams environments from being created with these apps, these apps need to be blocked.
+>
 > Microsoft Power Platform data governance policies like data loss prevention and tenant isolation apply to Microsoft Teams and Dataverse for Teams environments, similar to other environment types.
 
 ## Known issues
