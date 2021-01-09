@@ -397,8 +397,9 @@
         - name: Analytics for UI flows
           href: analytics-ui-flow.md
       - name: Analyze telemetry with Application Insights
-        href: analyze-telemetry.md
         items:
+        - name: Model-driven apps and Microsoft Dataverse telemetry
+          href: analyze-telemetry.md
         - name: Overview of integration with Application Insights
           href: overview-integration-application-insights.md
         - name: Telemetry events for model-driven apps 
