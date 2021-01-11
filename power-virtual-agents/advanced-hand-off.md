@@ -17,9 +17,9 @@ ms.custom: handoff, ceX, advanced-authoring
 
 
 
-With Power Virtual Agents, you can hand-off conversations to live agents seamlessly and contextually.
+With Power Virtual Agents, you can hand off conversations to live agents seamlessly and contextually.
 
-When you hand off a conversation, you share the full history of the conversation (the context) as well as all user-defined variables. This means live agents that are using any connected engagement hub can be notified that a conversation requires a live agent, see the context of the prior conversation, and resume the conversation.
+When you hand off a conversation, you share the full history of the conversation (the context) as well as all user-defined variables. Having access to this context means live agents that are using any connected engagement hub can be notified that a conversation requires a live agent, see the context of the prior conversation, and resume the conversation.
 
 For more information about how to configure hand-off with [Omnichannel for Customer Service](https://go.microsoft.com/fwlink/?linkid=2098992), see the [Configure hand-off to Omnichannel for Customer Service](configuration-hand-off-omnichannel.md) topic.
    
@@ -46,19 +46,19 @@ For more information about how to configure hand-off with [Omnichannel for Custo
 
 
 ## Triggering hand-off to a live agent
-Customers engaging with the bot can ask for a live agent at any point in the conversation. This can happen in two ways, with an implicit trigger or an explicit trigger.
+Customers engaging with the bot can ask for a live agent at any point in the conversation. This escalation can happen in two ways, with an implicit trigger or an explicit trigger.
 
-Upon triggering the hand-off topic, Power Virtual Agents initiates hand-off to the configured engagement hub and sends over all conversation context to find the next best live agent to ramp them up so they can resume the conversation.
+Upon triggering the hand-off topic, Power Virtual Agents starts the hand-off to the configured engagement hub and sends over all conversation context to find the next best live agent to ramp them up so they can resume the conversation.
 
 ### Implicit triggers
 In some instances, the bot may be unable to determine the intent of a customer's conversation. For example, the customer may be asking a specific question for which there is no [topic](getting-started-create-topics.md), or there is no matching option within a topic. 
 
 In other instances, your customers may ask to be handed off to a live agent immediately. For example, customers may type "talk to agent" mid-way into a conversation.
 
-When the bot detects this, it will automatically redirect the user to the [**Escalate** system topic](authoring-create-edit-topics.md). This is known as *implicit triggering*.
+When the bot detects an escalation in this manner, it will automatically redirect the user to the [**Escalate** system topic](authoring-create-edit-topics.md). This type of trigger is known as *implicit triggering*.
 
 ### Explicit triggers
-When creating topics for your bot, you may determine that some topics require interaction with a human. This is known as *explicit triggering*. 
+When creating topics for your bot, you may determine that some topics require interaction with a human. This type of trigger is known as *explicit triggering*. 
 
 In these instances, you must add a **Transfer to agent** node into the topic.
 
@@ -78,20 +78,20 @@ This node lets you add a **Private message to agent**, which is sent to the conn
 
     ![Screenshot of adding a node](media/handoff-add-node.png)
 
-1. Underneath the message node you just created, click the plus (+) icon, go to **End the conversation** and then select **Transfer to agent**
+1. Underneath the message node, click the plus (+) icon, go to **End the conversation** and then select **Transfer to agent**
 
     ![Screenshot of adding the node](media/handoff-add-transfer-node.png)
 
-1. Enter an optional private message to the live agent in the **Transfer to agent** node. This can be useful if you have multiple topics with **Transfer to agent** nodes as the information is stored in the `va_AgentMessage` [context variable](#contextual-variables-available-upon-hand-off).
+1. Enter an optional private message to the live agent in the **Transfer to agent** node. This optional message can be useful if you have multiple topics with **Transfer to agent** nodes as the information is stored in the `va_AgentMessage` [context variable](#contextual-variables-available-upon-hand-off).
 
-The topic will initiate a transfer to a live agent when this node is reached. You can test the hand-off by triggering the topic in the test canvas.
+The topic will start the transfer to a live agent when this node is reached. You can test the hand-off by triggering the topic in the test canvas.
 
 >[!NOTE]
->Once you add a **Transfer to agent** node into a conversation, each time you trigger hand-off your users will see a "No renderer for this activity" message on the demo website. This suggests the need to [customize your chat canvas](extend-custom-canvas-connect.md) to implement custom client-side code that brings in a human agent from your engagement hub into the conversation.
+>Once you add a **Transfer to agent** node into a conversation, each time you trigger hand-off your users will see a "No renderer for this activity" message on the demo website. This message suggests the need to [customize your chat canvas](extend-custom-canvas-connect.md) to implement custom client-side code that brings in a human agent from your engagement hub into the conversation.
 
 
 ## Contextual variables available upon hand-off
-Beyond providing an automated way for a conversation to be ported into an engagement hub, it's important to ensure that the best agent for a specific problem is engaged. To help route conversations to the most appropriate live agent there are a number of context variables that are also passed to the engagement hub. 
+Beyond providing an automated way for a conversation to be ported into an engagement hub, it's important to ensure that the best agent for a specific problem is engaged. To help route conversations to the most appropriate live agen there are context variables that are also passed to the engagement hub. 
 
 You can use these variables to automatically determine where the conversation should be routed. For example, you may have added **Transfer to agent** nodes to several different topics, and you want to route conversations related to certain topics to specific agents. 
 
