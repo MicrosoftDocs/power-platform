@@ -99,16 +99,16 @@ The following table lists the context variables available by default.
 
 | Context | Purpose | Example |
 | ------- | ------- | ------- |
-| `va_Scope` | Helps route escalations to a live agent | `"bot"` |
-| `va_LastTopic` | Helps route escalations to a live agent and helps ramp-up a live agent | `"Return items"` |
-| `va_Topics` | Helps ramp-up a live agent | `[ "Greetings", "Store Hours", "Return Item" ]` |
-| `va_LastPhrases` | Helps route escalation to a live agent and helps ramp-up a live agent | `"Can I return my item"` |
-| `va_Phrases` | Helps ramp-up a live agent | `["Hi", "When does store open", "Can I return my item" ] ` |
-| `va_ConversationId` | Helps uniquely identify a bot conversation | `GUID` |
-| `va_AgentMessage` | Helps ramp-up a live agent | `"Got a gift from: HandoffTest"` |
-| `va_BotId` | Helps identify the bot that is handing off a conversation | `GUID` |
-| `va_Language` | Helps route escalation to a live agent | `"en-us"` |
-| All [user-defined topic variables](how-to-variables.md) | Helps ramp-up a live agent | `@StoreLocation = "Bellevue"` |
+| `va_Scope` | Helps route escalations to a live agent. | `"bot"` |
+| `va_LastTopic` | Helps route escalations to a live agent and helps ramp-up a live agent. Includes the last topic that was triggered by an utterance from the user. | `"Return items"` |
+| `va_Topics` | Helps ramp-up a live agent. | `[ "Greetings", "Store Hours", "Return Item" ]` |
+| `va_LastPhrases` | Helps route escalation to a live agent and helps ramp-up a live agent. | `"Can I return my item"` |
+| `va_Phrases` | Helps ramp-up a live agent. | `["Hi", "When does store open", "Can I return my item" ] ` |
+| `va_ConversationId` | Helps uniquely identify a bot conversation. | `GUID` |
+| `va_AgentMessage` | Helps ramp-up a live agent. | `"Got a gift from: HandoffTest"` |
+| `va_BotId` | Helps identify the bot that is handing off a conversation. | `GUID` |
+| `va_Language` | Helps route escalation to a live agent. | `"en-us"` |
+| All [user-defined topic variables](how-to-variables.md) | Helps ramp-up a live agent. | `@StoreLocation = "Bellevue"` |
 
 A customer may go through several topics prior to escalating. Power Virtual Agents gathers all contextual variables across topics and merges them before sending to the engagement hub. 
 
