@@ -28,6 +28,9 @@ You do not need to write any code to enable this telemetry. You can enable or di
 
 [Application Insights](https://docs.microsoft.com/azure/azure-monitor/app/app-insights-overview), is a part of the Azure monitoring ecosystem. It is widely used by enterprises for monitoring and diagnostics. Many customers have added code to their extensions to capture this data into their Application Insights environment. This additional code has a cost; not only the cost to write and maintain, but also performance cost at runtime. These costs can be avoided by using Application Insights built-in integration.
 
+> [!NOTE]
+> Additional details on minimum Dataverse capacity requirements will be made available along with the Application Insights integration feature Release Notes.
+        
 ## Why do I need telemetry?
 
 Telemetry provides data about what is going on within a model-driven app or on the server. Without this data, the app or service is a ‘black box’; the only way to get insights on if you have an issue is to contact technical support. Telemetry enables you to detect and measure specific operations to better understand whether things are working normally, or something is negatively impacting the system.
