@@ -56,9 +56,9 @@ Microsoft provides support in English globally and provides additional languages
 |---------|---------|---------|---------|
 |Asia-Pacific (excluding Japan)    | 7 AM - 9 PM <br />GMT+8         | Monday through Friday        | Weekends and holidays        |
 |Japan     | 9 AM - 5:30 PM <br />local time        | Monday through Friday        | Weekends and holidays         |
-|Row3     | 8 AM to 6 PM <br />CET (UTC +1)        | Monday through Friday             | Weekends and holidays         |
-|Row4     | 6 AM - 6 PM <br />Pacific time        | Monday through Friday             | Weekends and holidays         |
-|Row5     | 9 AM - 5 PM <br />local time        | Monday through Friday             | Weekends and holidays         |
+|EMEA     | 8 AM to 6 PM <br />CET (UTC +1)        | Monday through Friday             | Weekends and holidays         |
+|North America     | 6 AM - 6 PM <br />Pacific time        | Monday through Friday             | Weekends and holidays         |
+|All others unless stated otherwise     | 9 AM - 5 PM <br />local time        | Monday through Friday             | Weekends and holidays         |
 
 ### Do I need a support plan if I need assistance with a technical issue? 
 
