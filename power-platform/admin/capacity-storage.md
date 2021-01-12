@@ -18,8 +18,6 @@ search.app:
 
 # New Microsoft Dataverse storage capacity 
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 If you purchased storage in or after April 2019, or you have a mix of storage purchases made before and after April 2019, you'll see your storage capacity entitlement and usage by database, file, and log as it appears in the Power Platform admin center today. 
 
 Data volume continues to grow exponentially, as businesses advance their digital transformation journey and bring data together across their organization. Modern business applications need to support new business scenarios, manage new data types, and help organizations with the increasing complexity of compliance mandates. To support the growing needs of today's organizations, data storage solutions need to evolve continuously and provide the right solution to support expanding business needs.
@@ -71,12 +69,12 @@ To view the **Summary** page, select **Resources** > **Capacity** > **Summary**.
 > ![Capacity page Summary tab](media/storage-data-capacity-page-review.png "Capacity page Summary tab")
 
 
-All entities of Dataverse, including system entities, are included in the storage capacity reports.
+All tables of Dataverse, including system tables, are included in the storage capacity reports.
 
 
 |Number  |Description |
 |---------|---------|
-|(1)   |**Storage capacity usage**  <ul><li>**File and database**: The following entities store data in file and database storage: <ul><li>Attachment</li><li>AnnotationBase</li><li>Any custom or out-of-the-box entity that has fields of datatype file or image (full size)</li><li>Any entity that is used by one or more installed Insights applications and [ends in *- Analytics*](#what-are-entities-ending-in---analytics-in-my-capacity-report) </li> </ul></li><li>**Log**: The following entities are used: <ul><li>AuditBase</li><li>PlugInTraceLogBase</li></ul><li>**Database only**: All other entities are counted for your database</li></ul> |
+|(1)   |**Storage capacity usage**  <ul><li>**File and database**: The following tables store data in file and database storage: <ul><li>Attachment</li><li>AnnotationBase</li><li>Any custom or out-of-the-box table that has columns of datatype file or image (full size)</li><li>Any table that is used by one or more installed Insights applications and [ends in *- Analytics*](#what-are-tables-ending-in---analytics-in-my-capacity-report) </li> </ul></li><li>**Log**: The following tables are used: <ul><li>AuditBase</li><li>PlugInTraceLogBase</li></ul><li>**Database only**: All other tables are counted for your database</li></ul> |
 |(2)    |**Storage capacity, by source** <ul><li>**Org (tenant) default**: The default capacity given at the time of sign-up </li><li>**User licenses**: Additional capacity added for every user license purchased</li><li>**Additional storage**: Any additional storage you bought </li><li>**Total**: Total storage available </li><li>**View self-service sources**: See [View self-service license amounts and storage capacity](view-self-service-capacity.md)</li></ul>      |
 |(3)     |**Top storage usage, by environment**: The environments that consume the most capacity        |
 
@@ -194,7 +192,7 @@ As part of moving file-type data such as “Annotation” and “Attachment” o
 
 ### Do indexes affect database storage usage?
 
-Possibly. Database storage includes both the database records and index files used to improve search performance. Indexes are created and optimized for peak performance and are updated frequently by the system by analyzing data use patterns. No user action is needed to optimize the indexes, as all Dataverse stores have tuning enabled by default. A fluctuation in database storage can be represented by an increased or decreased number of indexes on the database. Dataverse is continually being tuned to increase efficiency and incorporate new technologies that improve user experience and optimize storage capacity.  Common causes for an increase in index size are:
+Possibly. Database storage includes both the database rows and index files used to improve search performance. Indexes are created and optimized for peak performance and are updated frequently by the system by analyzing data use patterns. No user action is needed to optimize the indexes, as all Dataverse stores have tuning enabled by default. A fluctuation in database storage can be represented by an increased or decreased number of indexes on the database. Dataverse is continually being tuned to increase efficiency and incorporate new technologies that improve user experience and optimize storage capacity.  Common causes for an increase in index size are:
 
 - An organization making use of new functionality (this can be custom, out-of-the-box, or part of an update or solution installation).
 - Data volume or complexity changes.
@@ -202,14 +200,14 @@ Possibly. Database storage includes both the database records and index files us
 
 If Quick Find lookups are configured for data that's frequently used, this will also create additional indexes in the database. Admin-configured Quick Find values can increase the size of the indexes based on:
 
-- The number of fields chosen and the data type of those fields.
-- The volume of records for the entities and fields.
+- The number of columns chosen and the data type of those columns.
+- The volume of rows for the tables and columns.
 - The complexity of the database structure.
 
 Because custom Quick Find lookups are created by an admin in the org, these can be user-controlled. Admins can reduce some of the storage used by these custom indexes by doing the following: 
 
-- Removing unneeded fields and/or entities
-- Eliminating multiline text fields from inclusion
+- Removing unneeded columns and/or tables
+- Eliminating multiline text columns from inclusion
 
 ### I just bought the new capacity-based licenses. How do I provision an environment by using this model?
 
@@ -241,7 +239,7 @@ We've disabled email notifications with the move to the new storage model. Revie
 
 ### I'm an existing customer. Should I expect my file and log usage to change?
 
-Log and files data usage isn't expected to be exactly the same size as when the same data is stored by using database, due to different storage and indexing technologies. The current set of out-of-the-box entities stored in file and log storage might change in the future.
+Log and files data usage isn't expected to be exactly the same size as when the same data is stored by using database, due to different storage and indexing technologies. The current set of out-of-the-box tables stored in file and log storage might change in the future.
 
 ### The capacity report shows the entitlement breakdown per license, but I have more licenses in my tenant and not all of them are listed in the breakdown. Why?
 
@@ -251,9 +249,9 @@ Not all licenses give per-user entitlement. For example, the Team Member license
 
 Default, production, and sandbox environments are counted for consumption. Trial, preview, support, and developer environments aren't counted.
 
-### What are entities ending in “- analytics" in my capacity report?
+### What are tables ending in “- analytics" in my capacity report?
 
-Entities ending in “– Analytics” are entities used by one or more Insights applications, for example Sales Insights, Customer Service Hub, or Field Service and resource scheduling and optimization analytics dashboard to generate predictive insights and/or analytics dashboards. The data is synched from Dataverse entities. See **More information** below for documentation covering the installed Insights applications and the entities used to create insights and dashboards.
+Tables ending in “– Analytics” are tables used by one or more Insights applications, for example Sales Insights, Customer Service Hub, or Field Service and resource scheduling and optimization analytics dashboard to generate predictive insights and/or analytics dashboards. The data is synched from Dataverse tables. See **More information** below for documentation covering the installed Insights applications and the tables used to create insights and dashboards.
 
 **More information:**
 - [Sales Insights ](https://docs.microsoft.com/dynamics365/ai/sales/help-hub#get-started)
