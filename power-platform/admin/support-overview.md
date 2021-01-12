@@ -2,7 +2,7 @@
 title: "Support for Microsoft Power Platform and customer engagement apps in Dynamics 365 | MicrosoftDocs"
 description: Information on support for Microsoft Power Platform and customer engagement apps in Dynamics 365
 ms.custom: ""
-ms.date: 12/16/2020
+ms.date: 01/12/2021
 ms.reviewer: ""
 ms.service: power-platform
 ms.suite: ""
@@ -23,8 +23,6 @@ search.app:
   - Flow
 ---
 # Support overview
-
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 ## About support
 
