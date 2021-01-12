@@ -6,7 +6,7 @@ author: NHelgren
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/28/2020
+ms.date: 01/12/2021
 ms.author: matp
 search.audienceType: 
   - admin
@@ -125,7 +125,7 @@ If during the record merge process another user deletes a related contact record
 
 #### Merge causing locks that prevent other access changes
     
-The Cascade Merge operation grants access to the new owner of the subordinate entity. To do this, it accesses the Principal Object Table and makes changes to the Principal Object Access table which requires a lock. If a merge operation contains many records (based on the cascade relationship), this lock could be in place for an extended amount of time. This could result in an error if an operation attempts to grant/revoke access of an unrelated record while the merge is running. If this occurs, try executing the merge in off hours so the blocking can be reduced.
+The Cascade Merge operation grants access to the new owner of the subordinate entity. To do this, the Cascade Merge operation accesses and makes changes to the Principal Object Table which require a lock. If a merge operation contains many records (based on the cascade relationship), this lock could be in place for an extended amount of time. This could result in an error if an operation attempts to grant/revoke access of an unrelated record while the merge is running. If this occurs, try executing the merge in off hours so the blocking can be reduced.
 
 
 ### See also
