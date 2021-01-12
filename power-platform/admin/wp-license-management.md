@@ -5,7 +5,7 @@ author: dileepsinghmicrosoft
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/03/2020
+ms.date: 01/11/2021
 ms.author: dileeps
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -48,7 +48,7 @@ As the administrator, you will likely be assisting users that had started in a t
 
 ## Power Apps Community Plan
 
-In addition to the trial plans, there is also a *free* Power Apps Community Plan. This is a special plan that allows individual self-service sign up and it provides an individual environment that the user can use to build apps and flows. These environments will show up on the administrator’s list of environments and will list the type of environment as “Developer”. The environments are for individual use, so there is no ability to share with other users. Users in your organization can self-service signup for this plan even if they have Power Apps and Power Automate license entitlements via another licensing plan. Signup for the community plan can be found here <https://powerapps.microsoft.com/communityplan/> and more details on its features here <https://docs.microsoft.com/powerapps/maker/dev-community-plan>
+In addition to the trial plans, there is also a *free* Power Apps Community Plan. This is a special plan that allows individual self-service sign up and it provides an individual environment that the user can use to build apps and flows. These environments will show up on the administrator’s list of environments and will list the type of environment as “Developer”. The environments are for individual use, so there is no ability to share with other users. Users in your organization can self-service sign up for this plan even if they have Power Apps and Power Automate license entitlements via another licensing plan. Sign-up for the community plan can be found [here](https://powerapps.microsoft.com/communityplan/) and more details on its features [here](https://docs.microsoft.com/powerapps/maker/dev-community-plan).
 
 ## What users are licensed
 
