@@ -52,7 +52,13 @@ Microsoft provides support in English globally and provides additional languages
 
 ### What hours are considered local business hours for support? 
 
-For most countries and regions, business hours are from 8 AM to 6 PM weekdays (weekends and holidays excluded). For North America, business hours are defined as 6 AM to 6 PM Pacific Time, Monday through Friday, excluding holidays. In Japan, business hours are from 9 AM to 5:30 PM weekdays. 
+|Region/Country  |Local hours  |Days  |Exclusions  |
+|---------|---------|---------|---------|
+|Asia-Pacific (excluding Japan)    | 7 AM - 9 PM <br />GMT+8         | Monday through Friday        | Weekends and holidays        |
+|Japan     | 9 AM - 5:30 PM <br />local time        | Monday through Friday        | Weekends and holidays         |
+|Row3     | 8 AM to 6 PM <br />CET (UTC +1)        | Monday through Friday             | Weekends and holidays         |
+|Row4     | 6 AM - 6 PM <br />Pacific time        | Monday through Friday             | Weekends and holidays         |
+|Row5     | 9 AM - 5 PM <br />local time        | Monday through Friday             | Weekends and holidays         |
 
 ### Do I need a support plan if I need assistance with a technical issue? 
 
