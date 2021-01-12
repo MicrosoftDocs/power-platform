@@ -5,7 +5,7 @@ author: pnghub
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/02/2020
+ms.date: 01/11/2021
 ms.author: gned
 ms.reviewer: jimholtz 
 
@@ -18,8 +18,6 @@ search.app:
   - Flow
 ---
 # Audit data and user activity for security and compliance
-
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 The auditing feature logs changes that are made to customer records and user access so you can review the activity later. The auditing feature is designed to meet the auditing, compliance, security, and governance policies of many regulated enterprises.  
 <!-- 
@@ -60,8 +58,8 @@ This task requires the system administrator or customizer security role or equiv
    |      Setting |     Description    |
    |--------------------|---------------------|
    | Start Auditing   | Start or stop auditing.    |
-   | Log access | Log whenever the system is accessed, generally by signing in  |  
-   | Read logs | Logs will be sent to the [Microsoft 365 Security and Compliance Center](https://protection.office.com/homepage) |
+   | Audit user access | Log whenever the system is accessed, generally by signing in  |  
+   | Start Read Auditing  | Logs will be sent to the [Microsoft 365 Security and Compliance Center](https://protection.office.com/homepage) |
 
 3. You can set a retention period for how long audit logs are kept in a Microsoft Dataverse environment. Under **Retain these logs for**, choose the period of time you wish to retain the logs.
 
@@ -81,9 +79,9 @@ This task requires the system administrator or customizer security role or equiv
   
 ## Set specific areas of the product to audit
 
-1. Browse to the Power Platform admin center and sign in using administrator credentials. 
+1. In the web app, go to **Settings** > **Administration**.
   
-2. Go to **Environments** > [select an environment] > **Settings** > expand **Audit and logs** > **Legacy audit settings**.
+2. Choose **System Settings**, and then choose the **Auditing** tab.  
 
 3. Select the entities you want to track. To start or stop auditing on specific entities, select or clear the following check boxes:  
   
