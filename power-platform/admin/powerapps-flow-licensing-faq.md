@@ -5,7 +5,7 @@ author: dileepsinghmicrosoft
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/30/2020
+ms.date: 01/12/2021
 ms.author: dileeps
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -18,6 +18,8 @@ search.app:
 ---
 
 # Power Apps and Power Automate licensing FAQ
+
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 We have found some common questions on licensing and plan options. We’ve included several here with their answers. For more details about Microsoft Power Apps and Microsoft Power Automate licensing, see [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 
@@ -202,6 +204,13 @@ Yes, you can use the Dynamics 365 Finance and Operations connector to build canv
 
 The per user plan is intended to support the broad adoption of an automation culture in an organization. Every user with this plan is entitled to use an unlimited number of flows, within service limits. The per flow plan provides an organization with the flexibility to license by the number of flows, instead of licensing each user accessing the flows individually with the per user plan.
 
+### What do I do if my per user plan flow causes a throttling warning?
+
+The per flow plan provides [higher limits](https://docs.microsoft.com/power-automate/limits-and-config) than the per user plans. If your flow is approaching license limits, then switching that flow to use a per flow plan should resolve the situation.
+
+### What do I do if my per flow plan flow causes a throttling warning?
+
+The per flow plan provides [high limits](https://docs.microsoft.com/power-automate/limits-and-config), but if your flow is approaching license limits, then splitting the workload across multiple flows can help.
 
 ### Which flows count in the Power Automate per flow plan?
 
