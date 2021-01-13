@@ -132,7 +132,7 @@ There's a difference in the models for adding users to Dataverse environments an
 <tr>
 <td width="20%"> Colleagues with access </td>
 <td width="50%"> Colleagues with access are people in the tenant who aren't in the team but have been invited to run apps in the team. By default, colleagues with access have no access to data. Their data access rights can be granted based on the app or resources that they need to run. Note: when a colleague with access is invited to run apps in a team, the Microsoft 365 group association with the team's Dataverse for Teams environment will be automatically removed to allow app run access to the colleague with access. </td>
-<td width="30%"> Common Data Service User</td>
+<td width="30%"> Basic User</td>
 </tr>
 </table>
 
