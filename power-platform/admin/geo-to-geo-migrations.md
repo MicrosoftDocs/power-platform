@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/14/2020
+ms.date: 01/15/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -17,15 +17,14 @@ search.app:
 ---
 # Geo to geo migrations
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 We continue to open new datacenter regions for business services, and to add datacenters to existing regions.  
 
  The Geo Migration feature will allow customers to move their environments in a single tenant from one region to another. There are no user-interface changes or version changes as part of this move. In the case of an environment residing in an [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] environment in a single tenant, moving the Microsoft Dataverse environment doesn't move the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] environment; they are separate services. Your environment will still appear in your tenant alongside the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] environment.  
 
 > [!IMPORTANT]
 > - Support for geo migration is limited and generally not available.
-> - To request a regional migration, please contact your account manager or see [Technical Support](get-help-support.md).  
+> - To request a regional migration, please contact your account manager or see [Technical Support](get-help-support.md).
+> - After making a request, expect at least a week for the migration to be completed.  
 > - Geo migrations are not supported into or out of US GCC, US GCC High, or China.
 > - The Dynamics 365 Marketing app does not support geo migration, due to component dependencies. For more information, see [Manage your Dynamics 365 Marketing instances](https://docs.microsoft.com/dynamics365/marketing/manage-marketing-instances).
 > - Geo migration is not supported for Microsoft Dataverse for Teams environments.
