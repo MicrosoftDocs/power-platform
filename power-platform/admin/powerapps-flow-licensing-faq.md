@@ -223,7 +223,7 @@ No. After the minimum purchase of 5 flows, additional flows can be licensed indi
 
 ### Do users who run flows need to be licensed, or do only users who create flows need to be licensed?
 
-Any end user running a flow will need to be licensed either by the per user or per Power Automate plans.
+Any end user running a flow will need to be licensed either by the per user or Power Automate per flow plans.
 
 There are features in Power Automate that are not running a flow directly, such as responding to an approval request or advancing a stage in a business process. These features are built on the Dataverse. Normally, any use of these features requires either a standalone Power Automate per user plan, or, that the flow that creates these business process environments or approval requests to be licensed under the per flow plan.
 
