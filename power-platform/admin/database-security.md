@@ -1,14 +1,14 @@
 ---
 title: Configure user security in an environment | Microsoft Docs
 description: Configure user security in environment
-author: jayasreekumar
-ms.author: jkumar
+ms.author: jimholtz
+author: jimholtz
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/12/2020
+ms.date: 01/14/2021
 search.audienceType: 
   - admin
 search.app:
