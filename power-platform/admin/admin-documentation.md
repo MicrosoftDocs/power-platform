@@ -1,6 +1,6 @@
 ---
 title: "Administer Power Platform  | MicrosoftDocs"
-description: "The Power Platform admin center a unified portal for administrators to manage environments and settings for Power Apps, Power Automate, and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation)."
+description: "The Power Platform admin center is a unified portal for administrators to manage environments and settings for Power Apps, Power Automate, and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation)."
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
@@ -15,7 +15,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Administer Power Platform 
+# Administer Microsoft Power Platform 
 
 The [Power Platform admin center](https://admin.powerplatform.microsoft.com) provides a unified portal for administrators to manage environments and settings for Power Apps, Power Automate, and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation).
 
@@ -29,7 +29,7 @@ Currently, the admin center provides the following capabilities.
 |Feature  |Description  |
 |---------|---------|
 |Environments | View, create, and manage your environments. Select an environment to see details and manage its setting. More information: [Manage environment settings](/power-platform/admin/admin-settings)|
-|Analytics     | Get a detailed view of key metrics for Power Platform apps. More information: [Microsoft Dataverse analytics](/power-platform/admin/analytics-common-data-service)      |
+|Analytics     | Get a detailed view of key metrics for Microsoft Power Platform apps. More information: [Microsoft Dataverse analytics](/power-platform/admin/analytics-common-data-service)      |
 |Resources  |  More information: [View and manage resources](view-manage-resources.md)  |
 |Help + support     | Get a list of self-help solutions or create a support ticket for technical support. More information: [Get Help + Support](/power-platform/admin/get-help-support)       |
 |Data integration| More information: [Integrate data into Dataverse ](data-integrator.md)  |
