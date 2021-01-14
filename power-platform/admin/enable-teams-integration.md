@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/16/2020
+ms.date: 01/14/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -35,7 +35,16 @@ To enable embedding model-driven apps into Teams, do the following:
    > [!div class="mx-imgBorder"] 
    > ![Allow embedding of model-driven apps into Teams](./media/allow-embedding-apps-teams.png "Allow embedding of model-driven apps into Teams")
 
-5. Select **Save**.
+5. Select **Additional Microsoft Teams settings** > **System Settings** > **General tab**.
+
+6. Under **Microsoft Teams Integration**, set **Enable Basic Microsoft Teams integration (requires system admin permissions)** to **Yes**.
+
+   > [!div class="mx-imgBorder"] 
+   > ![Enable Teams environment integration](media/teams-environment-enable-integration.png "Enable Teams environment integration")
+
+7. Go through the various pages that follow to complete enabling Teams integration.
+
+8. Return to the **Microsoft Teams Integration** settings page and select **Save**.
 
 ## Next steps
 
