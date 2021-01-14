@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/26/2020
+ms.date: 01/14/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -67,6 +67,16 @@ For optimal performance, if your users are in Europe, create and use the environ
 
 > [!NOTE]
 > On-premises data gateways aren't available in the India region.
+> 
+> Microsoft Dataverse for Teams is not available in the following regions:
+> - Germany
+> - Switzerland
+> - South Africa
+> - South Korea
+> - Switzerland
+> - UAE
+> - GCC
+> - GCC High
 
 ## Can I create an environment outside of my tenant region?
 
