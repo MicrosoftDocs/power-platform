@@ -28,7 +28,7 @@ The Dataverse for Teams environment is automatically created for the selected te
 > [!NOTE]
 > The capability to upgrade Dataverse for Teams environments to Dataverse environments isn't available yet. Check back later for availability.
 
-You can identify a Dataverse for Teams environment in the [Power Platform admin center](https://admin.powerplatform.microsoft.com) by using the **Type** column in the list of environments.
+You can identify a Dataverse for Teams environment in the [Microsoft Power Platform admin center](https://admin.powerplatform.microsoft.com) by using the **Type** column in the list of environments.
 
 > [!div class="mx-imgBorder"] 
 > ![A Dataverse for Teams environment in the environment list](media/teams-environment-list.png "A Dataverse for Teams environment in the environment list")
@@ -285,7 +285,7 @@ The **Built by your colleagues** catalog intentionally filters out **Shared with
 
 ## Known issues
 
-- The **Run diagnostics**" feature in the Power Platform admin center for team owners, members, and guests who don't have Azure Active Directory admin roles like Global Admin, or Power Platform Admin assigned, will show an alert that no security roles have been assigned directly to them. Security roles are automatically assigned by the system for Microsoft Teams personas, so this alert can be ignored.
+- The **Run diagnostics** feature in the Power Platform admin center for team owners, members, and guests who don't have Azure Active Directory admin roles like Global Admin, or Power Platform Admin assigned, will show an alert that no security roles have been assigned directly to them. Security roles are automatically assigned by the system for Microsoft Teams personas, so this alert can be ignored.
 
 ### See also
 
