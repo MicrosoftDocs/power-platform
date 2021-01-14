@@ -70,7 +70,6 @@ For optimal performance, if your users are in Europe, create and use the environ
 > 
 > Microsoft Dataverse for Teams is not available in the following regions:
 > - Germany
-> - Switzerland
 > - South Africa
 > - South Korea
 > - Switzerland
