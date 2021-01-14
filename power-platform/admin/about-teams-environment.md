@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/07/2021
+ms.date: 01/14/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -16,6 +16,7 @@ search.app:
   - Flow
 ---
 # About the Microsoft Dataverse for Teams environment
+
 <!-- fwlink 2143567 -->
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
@@ -45,6 +46,8 @@ Note the following regarding access to Microsoft Power Platform apps in Teams:
 - Teams can invite guests who can access the apps, bots, flows, and data in the Dataverse for Teams database within their team. However, they won't be allowed to install, make, or edit apps. They can only discover and run apps in their team.
 
 - No direct API access to Dataverse for Teams will be provided, and only apps, bots, and flows embedded within the Microsoft Teams client will be able to access the Dataverse for Teams runtime.
+
+- Dataverse for Teams is not available in the following regions: Germany, South Africa, South Korea, Switzerland, UAE, GCC, GCC High.
 
 More information: [Dataverse for Teams licensing FAQ](powerapps-flow-licensing-faq.md#dataverse-for-teams)
 
