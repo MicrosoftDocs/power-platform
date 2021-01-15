@@ -1,14 +1,14 @@
 ---
 title: "Create users and assign security roles | MicrosoftDocs"
 description: About creating users and assign security roles
-author: jayasreekumar
+author: jimholtz
 ms.reviewer: jimholtz
-ms.author: jkumar
+ms.author: jimholtz
 ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/06/2020
+ms.date: 01/14/2021
 search.audienceType: 
   - admin
 search.app:
@@ -101,7 +101,7 @@ For step-by-step instructions to use Power Apps per app plans, see [Power Apps p
 ## Assign a security role to a user  
  Security roles control a user's access to data through a set of access levels and permissions. The combination of access levels and permissions that are included in a specific security role sets limits on the user's view of data and on the user's interactions with that data.  
   
- Customer engagement apps provide a default set of security roles. If necessary for your organization, you can create new security roles by editing one of the default security roles and then saving it under a new name.  
+ Customer engagement apps provide a default set of security roles. If necessary for your organization, you can create new security roles by editing one of the default security roles and then saving it under a new name. See [Predefined security roles](database-security.md#predefined-security-roles).
   
  You can assign more than one security role to a user. The effect of multiple security roles is cumulative, which means that the user has the permissions associated with all security roles assigned to the user.  
   
