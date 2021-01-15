@@ -1,6 +1,6 @@
 ---
-title: "PowerOps components | MicrosoftDocs"
-description: "The PowerOps components will help you follow best DevOps practices to source control and move your solution(s) from your development environment to test and production environments using GitHub."
+title: "ALM Helper for Makers | MicrosoftDocs"
+description: "The ALM Helper for Makers  will help you follow best DevOps practices to source control and move your solution(s) from your development environment to test and production environments using GitHub."
 author: manuelap-msft
 manager: devkeydet
 ms.service: power-platform
@@ -16,22 +16,23 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Use PowerOps components
+# Use ALM Helper for Makers
 
-The PowerOps components will help you follow best DevOps practices to source control and move your solution(s) from development to test to production environments using GitHub. More information: [Set up PowerOps components](setup-powerops.md)
+The ALM Helper for Makers will help you follow best DevOps practices to source control and move your solution(s) from development to test to production environments using GitHub. [Set up PowerOps components](setup-almhelper.md)
 
-The PowerOps components enable makers to apply source control strategies using GitHub and use automated builds and deployment of solutions to their environments without the need for manual intervention by the maker, administrator, developer, or tester. In addition PowerOps provides makers the ability to work without intimate knowledge of the downstream technologies and to be able to switch quickly from developing solutions to source controlling the solution and ultimately pushing their apps to other environments with as few interruptions to their work as possible.
+The ALM Helper for Makers enables makers to apply source control strategies using GitHub and use automated builds and deployment of solutions to their environments without the need for manual intervention by the maker, administrator, developer, or tester. In addition the ALM Helper for Makers provides makers the ability to work without intimate knowledge of the downstream technologies and to be able to switch quickly from developing solutions to source controlling the solution and ultimately pushing their apps to other environments with as few interruptions to their work as possible.
 
-The PowerOps app shows a maker all of their projects and allows them to deploy their work in progress or final solution to a test and production environment.
-Once a new project is created and approved, makers can navigate to [make.powerapps.com](https://make.powerapps.com) to build and create assets - such as apps, flows, and tables - in a solution that has been created for them.
+The ALM Helper for Makers app shows a maker all of their projects and allows them to deploy their work in progress or final solution to a test and production environment. Once a new project is created and approved, makers can navigate to [make.powerapps.com](https://make.powerapps.com) to build and create assets - such as apps, flows, and tables - in a solution that has been created for them.
+
+The ALM Helper for Makers will help you follow best DevOps practices to source control and move your solution(s) from development to test to production environments using GitHub. More information: [Set up PowerOps components](setup-powerops.md)
 
 **Prerequisite**: This app uses Microsoft Dataverse; a Premium license is therefore required for every app user.
 
 1. Go to [make.powerapps.com](<https://make.powerapps.com>).
 1. On the left pane, select **Solutions**.
-1. Select the **Power Platform GitHub ALM** solution and open the **PowerOps** app. You may need to launch the app in an In Private browser session if the app fails to load.
+1. Select the **Power Platform GitHub ALM** solution and open the **ALM Helper for Makers** app. You may need to launch the app in an In Private browser session if the app fails to load.
 
-![PowerOps app](media/git-23.png "PowerOps app")
+![ALM Helper for Makers app](media/git-23.png "ALM Helper for Makers app")
 
 The app dashboard shows all projects created by your user.
 
@@ -91,4 +92,4 @@ When deploying to test, a pull request is created and when the deployment reques
 
 Makers can check the deployment history for their project by navigating to the detail pages for their project (using > arrow)
 
-![View deployment history](media/git-34.png "View deployment history")
+![View deployment history](media/git-35.png "View deployment history")
