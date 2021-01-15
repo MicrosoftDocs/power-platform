@@ -7,7 +7,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/27/2020
+ms.date: 01/15/2021
 search.audienceType: 
   - admin
 search.app:
@@ -159,6 +159,10 @@ The organization (tenant) admin can determine who's allowed to create trial envi
 ### I can see a trial (subscription-based) environment type option, why can't I create this trial type?
 
 Make sure that you have an active Dynamics 365 Trial subscription.
+
+### Why can’t I backup my trial environment?
+
+Administrative operations (copy, backup, restore, and reset) are not supported for trials, except delete.
 
 ### How can I retain my data and resources if I don't have a way to convert the trial (standard) environment to a production environment?
 
