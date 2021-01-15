@@ -1,6 +1,6 @@
 ---
-title: "Set up PowerOps components | MicrosoftDocs"
-description: "The PowerOps components will help you follow best DevOps practices to source control and move your solution from your development environment to test and production environments using GitHub."
+title: "Set up ALM Helper for Makers components | MicrosoftDocs"
+description: "The ALM Helper for Makers components will help you follow best DevOps practices to source control and move your solution from your development environment to test and production environments using GitHub."
 author: manuelap-msft
 manager: devkeydet
 ms.service: power-platform
@@ -17,16 +17,34 @@ search.app:
   - Powerplatform
 ---
 
-# Set up PowerOps components
+# Set up ALM Helper for Makers components
 
-The PowerOps components enable makers to apply source control strategies using GitHub to use automated builds and deployment of solutions to their environments without the need for manual intervention by the maker, administrator, developer, or tester. In addition PowerOps provides makers the ability to work without intimate knowledge of the downstream technologies and to be able to switch quickly from developing solutions to source controlling the solution and ultimately pushing their apps to other environments with as few interruptions to their work as possible.
+The ALM Helper for Makers components enable makers to apply source control strategies using GitHub and use automated builds and deployment of solutions to their environments without the need for manual intervention by the maker, administrator, developer, or tester. In addition PowerOps provides makers the ability to work without intimate knowledge of the downstream technologies and to be able to switch quickly from developing solutions to source controlling the solution and ultimately pushing their apps to other environments with as few interruptions to their work as possible.
 
 This solution uses [GitHub actions](https://docs.microsoft.com/power-platform/alm/devops-github-actions) for source control and deployments. The [GitHub connector](https://docs.microsoft.com/connectors/github/) is used in flows to interact with GitHub.
 
 >[!IMPORTANT]
->The PowerOps components solution doesn't have a dependency on other components of the CoE Starter Kit. It can be used independently.
+>The ALM Helper for Makers solution doesn't have a dependency on other components of the CoE Starter Kit. It can be used independently.
 
 ## Prerequisites
+
+### Environments
+
+The application will manage deploying solutions from Development to Testing and to Production. You will need separate environments for deploying the ALM Helper for Makers solution, and for Development, Test and Production of you project.
+
+- Create an environment with a Dataverse database for deploying the ALM Helper for Makers solution.
+- Any target environment (Development, Test and Production) will require a Dataverse database for deploying solutions.
+- Create a GitHub account at [GitHub.com](https://github.com).
+- Create a [GitHub org](https://docs.github.com/free-pro-team@latest/github/setting-up-and-managing-organizations-and-teams/creating-a-new-organization-from-scratch).
+
+### Users and Permissions
+
+You will need the following users and permissions in Power Platform and Azure:
+
+- A licensed **Power Apps user** with **System Administrator role** in the environment where the ALM Helper for Makers solution will be deployed.
+    >[!NOTE] This user must not have Multi-Factor Authentication enabled until full support of Service Principals are enabled in GitHub workflows.
+
+- A licensed **Azure user** with permissions to create **App Registrations and Grant Admin consent** to App Registrations in Azure Active Directory.
 
 - GitHub account at [GitHub.com](https://github.com)
 - [GitHub organization](https://docs.github.com/free-pro-team@latest/github/setting-up-and-managing-organizations-and-teams/creating-a-new-organization-from-scratch)
@@ -47,27 +65,19 @@ Set up an Azure AD app registration that will be used to create environments and
 
 1. Select **API Permissions** > **+ Add a permission**.
 
-1. Select **PowerApps Runtime Service**.
-
-   ![API Permissions - Add a permission](media/git-1.png "Add a permission")
+1. Select **Dynamics CRM**.
 
 1. Select **Delegated permissions**, and then select **user_impersonation**.
 
       ![Delegated permissions](media/git-2.png "Delegated permissions")
 
 1. Select **Add permissions**.
+1. Select **Grant admin consent for [Your Organization]**.
 
-1. Under **Overview**, select **Add a Redirect URI**.
+1. Select **Authentication** from the menu.
+1. Under Advanced Settings > Allow public client flows > Toggle **Enable the following mobile and desktop flows** to Yes.
 
-1. Select **+ Add a platform** > **Mobile and Desktop Applications**.
-1. Select the **Native Client** and **MSAL Only** option and select **Configure**.
-1. For Implicit Access, select **Access Token**.
-1. For Supported Account Type, select **Accounts in any organizational directory (Any Azure AD directory - Multitenant)**.
-1. For Advanced Settings, set **Allow Public Client Flows** to **Yes**.
-
-1. Enter the URL you copied from the **Redirect URL** section of the custom connector.
-
-1. Select **Configure**.
+1. Select **Save**.
 
 1. Select **Overview**, and copy and paste the application (client) ID value to notepad. You'll need this value in the next step as you configure the custom connector.
 
@@ -81,7 +91,7 @@ Leave the Azure portal open, because you'll need to copy some information when y
 
 1. Go to [make.powerapps.com](<https://make.powerapps.com>).
 
-1. Go to your development environment. In the example in the following image, we're importing to the environment named **Contoso CoE**.
+1. Go to your target environment. In the example in the following image, we're importing to the environment named **Contoso CoE**.
 
      ![Power Apps maker portal environment selection](media/coe6.png "Power Apps maker portal environment selection")
 
@@ -131,7 +141,7 @@ Leave the Azure portal open, because you'll need to copy some information when y
 
 1. Update the **Stage Owner Email** for each of the three stages (DEV, TEST & PROD). The stage owner will receive notification for approving the project creation and deployment.
 1. Update the **Admin username and password**. These credentials can be a service account or a user account with Power Platform Admin role.
-1. For each of the Test and Production stages, select a pre-existing environment that will be used for Test and Production deployments. Your dev environment is the environment provisioned when you created a project in PowerOps.
+1. For each of the Test and Production stages, select a pre-existing environment that will be used for Test and Production deployments. Your dev environment is the environment provisioned when you created a project.
 
 ### Update the "Webhook Url" value
 
