@@ -31,7 +31,7 @@ Follow these steps to connect customer engagement apps (Dynamics 365 Sales, Dyna
 
 ## Create an email server profile  
 
-1. In the Power Platform admin center, select an environment. 
+1. In the Microsoft Power Platform admin center, select an environment. 
 
 2. Select **Settings** > **Email** > **Server profiles**.  
 
