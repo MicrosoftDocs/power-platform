@@ -64,7 +64,7 @@ The Azure AD account management services are hosted on physical servers managed 
 #### Power Automate features not available 
 
 - [UI flows](https://docs.microsoft.com/power-automate/ui-flows/overview) (Planned for end of calendar year.)
-- [AI Builder](https://docs.microsoft.com/ai-builder/), a separate add-on offering for Power Platform.
+- [AI Builder](https://docs.microsoft.com/ai-builder/), a separate add-on offering for Microsoft Power Platform.
 - [Power Automate mobile application](https://docs.microsoft.com/flow/mobile-manage-flows)
 - [Submitting templates](https://docs.microsoft.com/flow/publish-a-template)
 - [Connectors](https://docs.microsoft.com/connectors/connector-reference/): The most popular connectors in use in our commercial service (based on usage telemetry) have been published; if there is a connector available in the commercial offering that you do not see deployed, please contact [support](https://en.21vbluecloud.com/contact), and we will review your request.
@@ -79,7 +79,7 @@ The Azure AD account management services are hosted on physical servers managed 
 - [Export to Azure Data Lake (aka Athena)](https://docs.microsoft.com/powerapps/maker/common-data-service/export-to-data-lake)
 - [Dual-write from Dataverse to Dynamics 365 Finance and Operations apps](https://powerapps.microsoft.com/blog/announcing-dual-write-preview/)
 - [Dataverse analytics](https://docs.microsoft.com/power-platform/admin/analytics-common-data-service) (Planned for April 2020.)
-- [AI Builder](https://docs.microsoft.com/ai-builder/), a separate add-on offering for Power Platform.
+- [AI Builder](https://docs.microsoft.com/ai-builder/), a separate add-on offering for Microsoft Power Platform.
 - [Connectors](https://docs.microsoft.com/connectors/connector-reference/): The most popular connectors in use in our commercial service (based on usage telemetry) have been published; if there is a connector available in the commercial offering that you do not see deployed, please contact support, and we will review your request. 
 
 ## Additional resources
