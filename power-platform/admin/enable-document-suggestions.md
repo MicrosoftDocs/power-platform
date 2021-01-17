@@ -110,7 +110,7 @@ External sites, such as an on-premises SharePoint document library can be includ
 ## Enable Document Suggestions  
  To enable Document Suggestions, do the following:  
   
-1. Browse to the Power Platform admin center and sign in using administrator credentials.
+1. Browse to the Microsoft Power Platform admin center and sign in using administrator credentials.
   
 2. Go to **Environments** > [select an environment] > **Settings** > **Integration** > **Document management settings** > **Manage Document Suggestions**.
   
