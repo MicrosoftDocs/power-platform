@@ -80,7 +80,7 @@ The following principals are supported for each role type.
 
 #### FAQ - What permissions exist at an Azure AD tenant level? 
 
-Today, Power Platform admins can perform the following: 
+Today, Microsoft Power Platform admins can perform the following: 
 
 1. Download the Power Apps & Power Automate license report
 1. Create DLP policy scoped only to 'All Environments' or scoped to include/exclude specific environments
