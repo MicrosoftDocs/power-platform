@@ -1,6 +1,6 @@
 ---
 title: "Opt in to early access updates  | MicrosoftDocs"
-description: Opt in to early access updates in Power Platform and Dynamics 365 
+description: Opt in to early access updates in Microsoft Power Platform and Dynamics 365. 
 author: angelmarshall
 ms.author: tsmarsha
 ms.reviewer: jimholtz
@@ -18,12 +18,12 @@ search.app:
 ---
 # Opt in to early access updates 
 
-Power Platform and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation) deliver two [major releases](policies-communications.md#major-release-events) per year (April and October) that offer new capabilities and functionality.
+Microsoft Power Platform and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation) deliver two [major releases](policies-communications.md#major-release-events) per year (April and October) that offer new capabilities and functionality.
 
 Because the major releases include features that affect the user experience, you can opt in for early access to self-update to the new release, and start testing and validating the new features before they're automatically enabled for your users.
 
 > [!TIP]
-> Check out the early access features for [Power Platform](https://aka.ms/PowerPlatformEAFeatures) and [Dynamics 365](https://aka.ms/Dynamics365EAFeatures) to know the features that will roll out to the users automatically when you opt in for an update.
+> Check out the early access features for Microsoft [Power Platform](https://aka.ms/PowerPlatformEAFeatures) and [Dynamics 365](https://aka.ms/Dynamics365EAFeatures) to know the features that will roll out to the users automatically when you opt in for an update.
 
 ## Early access availability  
 For each of the major releases, you can opt in for early access updates approximately two months before the major release is automatically enabled in your region.
@@ -48,7 +48,7 @@ The early access updates are available for all types of environments, including 
 > Although you can enable early access updates in a production environment, we highly recommend that you create a copy of your production environment as a sandbox environment to try out the new features first. The updates can't be reverted after they've been enabled; therefore, if you test and validate the updates in a sandbox environment before enabling them in a production environment, you can determine the impact they'll have on users in your organization.
 >
 > Be sure to:
-> - Learn about the Dynamics 365 [release plan](https://aka.ms/Dynamics365ReleasePlan) and Power Platform [release plan](https://aka.ms/PowerPlatformReleasePlan), and the new features available for early access. 
+> - Learn about the Dynamics 365 [release plan](https://aka.ms/Dynamics365ReleasePlan) and Microsoft Power Platform [release plan](https://aka.ms/PowerPlatformReleasePlan), and the new features available for early access. 
 > - Review [Prepare for a release wave](#prepare-for-a-release-wave). 
 > - Validate and test the updates in a sandbox environment before rolling out to production. 
 
