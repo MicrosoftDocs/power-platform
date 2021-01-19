@@ -5,7 +5,7 @@ author: dileepsinghmicrosoft
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/09/2020
+ms.date: 01/19/2021
 ms.author: dileeps
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -47,7 +47,7 @@ All the users of Microsoft Power Platform have limits on the number of requests 
 | Power Apps per user plan<sup>3</sup> | 5,000 |
 | Power Automate per user plan<sup>3</sup>  | 5,000 |
 | Office licenses (that include Power Apps/Power Automate)<sup>4</sup>  | 2,000 |
-| Power Apps per app plan | 1,000 per user pass |
+| Power Apps per app plan | 1,000 per app pass |
 | Non-licensed users | See *Non-licensed user* section below |
 
 <sup>1</sup> Dynamics 365 Enterprise applications include Dynamics 365 Sales Enterprise, Dynamics 365 Customer Service Enterprise, Dynamics 365 Field Service, Dynamics 365  Project Service Automation, Dynamics 365 Retail, Dynamics 365 Talent, Dynamics 365 Customer Engagement plan.
