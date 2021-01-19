@@ -59,6 +59,13 @@ There are additional properties in **customDimensions** that provide more detail
 pageView<br />
 | take 1
 
+Test of kusto
+
+```kusto
+pageView
+| take 1
+```
+
 > [!div class="mx-imgBorder"] 
 > ![Application Insights pageView table](media/application-insights-pageview-table.png "Application Insights pageView table")
 
