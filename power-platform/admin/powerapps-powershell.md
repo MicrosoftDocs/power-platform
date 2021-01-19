@@ -290,7 +290,7 @@ Get-AdminPowerAppLicenses -OutputFilePath '<licenses.csv>'
 
 Exports all the assigned user licenses (Power Apps and Power Automate) in your tenant into a tabular view .csv file. The exported file contains both self-service sign up internal trial plans as well as plans that are sourced from Azure Active Directory. The internal trial plans are not visible to admins in the Microsoft 365 admin center.
 
-The export can take a while for tenants with a large number of Power Platform users.
+The export can take a while for tenants with a large number of Microsoft Power Platform users.
 
 #### Set logged in user as the owner of a canvas app
 
