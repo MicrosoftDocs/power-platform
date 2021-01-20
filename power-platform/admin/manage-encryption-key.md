@@ -4,7 +4,7 @@ description: "Learn how you can manage database encryption key for your environm
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/17/2020
+ms.date: 01/20/2021
 author: jayasreekumar
 ms.author: miferlan
 ms.reviewer: matp
@@ -97,7 +97,7 @@ These actions will result in disabling all the environments within the tenant fr
   
 -   PFX encryption key files must be password protected.  
   
-For more information about generating and transferring an HSM-protected key over the Internet see [How to generate and transfer HSM-protected keys for Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-hsm-protected-keys).  
+For more information about generating and transferring an HSM-protected key over the Internet see [How to generate and transfer HSM-protected keys for Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-hsm-protected-keys).  Only [nCipher Vendor HSM key](https://docs.microsoft.com/azure/key-vault/keys/hsm-protected-keys#supported-hsms) is supported. Before generating your HSM key, go to the Power Platform Admin center portal Manage encryption keys/Create New key window to obtain the Subscription ID for your environment Region. You need to copy and paste this Subscription ID into your HSM to create the key.  This will ensure that only our Azure Key Vault can open your file.
   
 <a name="keymgt_tasks"></a>   
 
