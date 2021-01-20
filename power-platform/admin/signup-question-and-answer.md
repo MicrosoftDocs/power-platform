@@ -126,7 +126,7 @@ If your organization already has an existing Microsoft 365 environment and all u
 
 If your organization already has an existing Microsoft 365 environment but not all users in your organization have Microsoft 365 accounts, then we create a user in the tenant and assign licenses based on the user's work or school email address. This means that the number of users you are managing at any particular time will grow as users in your organization sign up for the service.
 
-If your organization does not have an Microsoft 365 environment connected to your email domain, there is no change in how you manage identity. Users will be added to a new, cloud-only user directory, and you will have the option to take over as the Power Platform admin and manage them.
+If your organization does not have an Microsoft 365 environment connected to your email domain, there is no change in how you manage identity. Users will be added to a new, cloud-only user directory, and you will have the option to take over as the Microsoft Power Platform admin and manage them.
 
 ### What is the process to manage a tenant created by Microsoft for my users?
 If a tenant was created by Microsoft, you can claim and manage that tenant using the following steps:
