@@ -127,7 +127,7 @@ To create, edit, or delete DLP policies, you must have either Environment Admin 
 
 6. Select **Next** as needed to close the **Edit Policy** process.
 
-The data group you chose will be the default group to automatically classify any new connectors added to Power Platform after your policy has been created. 
+The data group you chose will be the default group to automatically classify any new connectors added to Microsoft Power Platform after your policy has been created. 
 
 ## Use DLP PowerShell commands
 See [Data loss prevention (DLP) policy commands](powerapps-powershell.md#data-loss-prevention-dlp-policy-commands).
