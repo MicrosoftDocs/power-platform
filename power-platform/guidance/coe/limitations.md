@@ -33,6 +33,19 @@ Larger tenants might require a per flow license in order for these flows to comp
 >[!TIP]
 >The first run of the Sync flows in the Core Solution will run long as it will do an update for every flow/app/etc in the tenant. Subsequent runs  will only update apps/flows/etc that have changed since the last run and so these will not require a per flow license for most tenants.
 
+## Incomplete Inventory
+
+The inventory sync flows themselves used to be long running, walking the entire tenant in order to update properties for all flows, apps, bots, etc. <br><br>
+Due to the throttling changes in the product we have made the sync flows (other than the clean up ones) now only update an app, flow, etc when it is new or has been updated. <br><br>
+This works for most situations, but occasionally, if we have made an addition or fix to the sync flows, you wont be able to see the benefits of that fix on unchanged objects until you run a full inventory. <br>
+In order to do so: <br>
+
+1) Set the environment variable for **_full inventory_** to "Yes"
+1) Run the sync flows
+1) Turn the variable back to "No" in order to avoid long running nature of the suite.
+
+See here for how to set up [update environment variables](setup-core-components.md#update-environment-variables)
+
 ## Flows that use the Common Data Service (Current Environment) connector
 
 The Admin | Sync Template v3 (Flows) and CLEANUP - Admin | Sync Template v3 (Connection Status) will fail to collect inventory information for flows that use the Common Data Service (Current Environment) connector. The [Get Flow as Admin](https://docs.microsoft.com/connectors/flowmanagement/) currently has a limitation, where flows using that connector cannot be retrieved.
