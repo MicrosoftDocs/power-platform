@@ -63,7 +63,7 @@ All environments of Microsoft Dataverse use [!INCLUDE[pn_MS_SQL_Server](../inclu
   
 <a name="KM_risk"></a>  
  
-## Understand the potential risk when you manage your keys  
+## Understand the potential risk when you manage your keys 
  As with any business critical application, personnel within your organization who have administrative-level access must be trusted. Before you use the key management feature, you should understand the risk when you manage your database encryption keys. It is conceivable that a malicious administrator (a person who is granted or has gained administrator-level access with intent to harm an organization's security or business processes) working within your organization might use the manage keys feature to create a key and use it to lock all environments in the tenant. 
 
 Consider the following sequence of events.  
