@@ -16,7 +16,7 @@ search.app:
   - Flow
 ---
 
-# What's new about storage
+# What's new about storage 
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
