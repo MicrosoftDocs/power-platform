@@ -55,7 +55,7 @@ Most of these users are hidden from user views but they can be found by using th
 | | BAP | BAP@onmicrosoft.com | To perform administrative operations on Dataverse linked environments: fetch user roles, provision users, assign roles in Power Platform portals.| N/A |
 | | Microsoft Forms Pro | enterprisesurveyappuser@contoso.com | To perform data integration between Dynamics 365 Customer Voice and Dataverse | System Administrator  |
 | | PowerVIrtualAgents  | PowerVirtualAgents@onmicrosoft.com | To manage the PVA capabilities within Dataverse environments | CCI Admin, System Customizer, and Environment Maker    |
-| | BizQA | BizQA@onmicrosoft.com | to access search telemetry to improve search experience | BizQAApp   |
+| | BizQA | BizQA@onmicrosoft.com | To access search telemetry to improve search experience | BizQAApp   |
 | | ProductInsights | ProductInsights@onmicrosoft.com | To export data from Customer Insights to Engagement Insights | DataLakeWorkspaceAppAccess    |
 
 
