@@ -17,7 +17,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Manage the encryption key 
+# Manage the encryption key
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
