@@ -77,6 +77,9 @@ An example of solutions provided for Dynamics 365 App for Outlook issues:
    > [!div class="mx-imgBorder"] 
    > ![See solutions](media/create-support-ticket.png "See solutions")
 
+   > [!div class="mx-imgBorder"] 
+   > ![New support request screen](media/create-support-ticket2.png "Solutions")
+
    Based on the information you provided, you'll see a list of possible solutions to your issue. Select the relevant solution and see if the content can successfully guide you to a fix. 
 
 4. If the guidance doesn't resolve your issue, scroll down and select **Next**, and fill in the fields in the form pages.
