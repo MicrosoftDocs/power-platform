@@ -318,7 +318,7 @@ Support depends on how you purchased your licenses.
 
 | &nbsp;  | &nbsp; |
 |---------|---------|
-|Direct Online Subscription, Enhanced and ProDirect Customers     | Office Admin Center        |
+|Direct Online Subscription, Enhanced and ProDirect Customers     | Microsoft 365 admin center        |
 |Volume Licensing: MPSA/Enterprise agreements and Open     | Volume Licensing Service Center (VLSC)        |
 |Cloud Solution Provider (CSP)      | Contact your partner.        |
 
