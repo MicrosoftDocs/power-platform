@@ -133,7 +133,7 @@
           href: powershell-api.md
         - name: Work with solutions (SDK API) 
           href: solution-api.md
-        - name: Import and export using a background job
+        - name: Import and export using a job
           href: solution-async.md
         - name: Create patches 
           href: create-patches-simplify-solution-updates.md

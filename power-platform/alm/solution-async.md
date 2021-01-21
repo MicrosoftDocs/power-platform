@@ -29,6 +29,113 @@ Have you ever run into the situation during the import or export of a large solu
 | --- | --- | --- |
 | Import a solution | [ImportSolutionAsync](/dynamics365/customer-engagement/web-api/importsolution) | [ImportSolutionAsyncRequest](/dotnet/api/microsoft.crm.sdk.messages.importsolutionrequest) |
 
+Now let's take a look at some example code that demonstrates the use of `ImportSolutionAsync`.
+
+# [Web API (C#)](#tab/webapi-csharp)
+
+```csharp
+private void ImportSolutionUsingJob(HttpClient httpClient, string filepath) 
+{ 
+   HttpRequestMessage request = null; 
+
+  try 
+  { 
+    byte[] fileBytes = File.ReadAllBytes(filepath); 
+    request = new HttpRequestMessage(HttpMethod.Post, "api/data/v9.0/ImportSolutionAsync"); 
+
+    var str = @"[ 
+    { 
+      '@odata.type':'Microsoft.Dynamics.CRM.environmentvariablevalue', 
+      'schemaname':'pa_EV1', 
+      'environmentvariablevalueid': '04c897b5-b838-ea11-a813-000d3a5a4145', 
+      'value':'testvalue1' 
+    },
+    { 
+      '@odata.type':'Microsoft.Dynamics.CRM.environmentvariablevalue', 
+      'schemaname':'pa_EV2', 
+      'value':'testvalue2' 
+    }, ]"; 
+
+  var inputs = new JObject(); 
+  var solParams = new JObject(); 
+  solParams["StageSolutionUploadId"] = Guid.Empty; 
+
+  inputs["SolutionParameters"] = solParams; 
+  inputs["OverwriteUnmanagedCustomizations"] = false; 
+  inputs["PublishWorkflows"] = true; 
+  inputs["CustomizationFile"] = Convert.ToBase64String(fileBytes); 
+  inputs["ComponentParameters"] = JArray.Parse(str); 
+
+  var body = JsonConvert.SerializeObject(inputs); 
+  request.Content = new StringContent(body); 
+  request.Content.Headers.ContentType = MediaTypeHeaderValue.Parse("application/json"); 
+
+  //Send the HttpRequest 
+  var response = httpClient.SendAsync(request); 
+  response.Wait(); 
+
+  var result = response.Result.Content.ReadAsStringAsync(); 
+  result.Wait(); 
+
+  var jsonRes = JsonConvert.DeserializeObject(result.Result).ToString(); 
+} 
+
+catch (Exception err) 
+{ 
+  throw new Exception(err.Message); 
+}
+
+```
+
+# [SDK API (C#)](#tab/sdk-csharp)
+
+```csharp
+private void ImportSolutionUsingJob(IOrganizationService svc, string filepath)  
+{ 
+  byte[] fileBytes = File.ReadAllBytes(filepath); 
+  var param = new EntityCollection();
+
+  var e1 = new Entity("connectionreference") 
+  { 
+    ["connectionreferencelogicalname"] = "cr485_sharedmsnweather_01b85", 
+    ["connectionreferencedisplayname"] = "MSN Weather", 
+    ["connectorid"] = "/providers/Microsoft.PowerApps/apis/shared_msnweather", 
+    ["connectionid"] = "bcb82cb72ed04d86b33407289cf458e0" 
+  }; 
+
+  var e2 = new Entity("connectionreference") 
+  { 
+    ["connectionreferencelogicalname"] = "cr485_sharedcommondataservice_eb48e", 
+    ["connectionreferencedisplayname"] = "Common Data Service", 
+    ["connectorid"] = "/providers/Microsoft.PowerApps/apis/shared_commondataservice", 
+    ["connectionid"] = "c0701bf51f934042bc78e6a961babada" 
+  }; 
+
+  var e3 = new Entity("connectionreference") 
+  { 
+    ["connectionreferencelogicalname"] = "cr485_sharedsendmail_53930", 
+    ["connectionreferencedisplayname"] = "Mail", 
+    ["connectorid"] = "/providers/Microsoft.PowerApps/apis/shared_sendmail", 
+    ["connectionid"] = "6c4b14bb6c66492786cdaf1f58f61d14" 
+  }; 
+
+  param.Entities.Add(e1); 
+  param.Entities.Add(e2); 
+  param.Entities.Add(e3); 
+
+  var r = new OrganizationRequest(); 
+  r.RequestName = "ImportSolutionAsync"; 
+  r["SolutionParameters"] = new SolutionParameters(); 
+  r["OverwriteUnmanagedCustomizations"] = false; 
+  r["PublishWorkflows"] = true; 
+  r["CustomizationFile"] = fileBytes; 
+  r["ComponentParameters"] = param; 
+
+  var response = proxy.Execute(r);
+} 
+
+```
+
 ## Solution export
 
 `ExportSolution` is the action (or message) that performs the synchronous export operation. To execute the export operation as an asynchronous job use `ExportSolutionAsync`.
