@@ -29,9 +29,9 @@ Have you ever run into the situation during the import or export of a large solu
 | --- | --- | --- |
 | Import a solution | [ImportSolutionAsync](/dynamics365/customer-engagement/web-api/importsolution) | [ImportSolutionAsyncRequest](/dotnet/api/microsoft.crm.sdk.messages.importsolutionrequest) |
 
-Now let's take a look at some example code that demonstrates the use of `ImportSolutionAsync`.
+Now let's take a look at some example code that demonstrates `ImportSolutionAsync`.
 
-# [Web API (C#)](#tab/webapi-csharp)
+### [Web API (C#)](#tab/webapi-csharp)
 
 ```csharp
 private void ImportSolutionUsingJob(HttpClient httpClient, string filepath) 
@@ -84,10 +84,9 @@ catch (Exception err)
 { 
   throw new Exception(err.Message); 
 }
-
 ```
 
-# [SDK API (C#)](#tab/sdk-csharp)
+### [SDK API (C#)](#tab/sdk-csharp)
 
 ```csharp
 private void ImportSolutionUsingJob(IOrganizationService svc, string filepath)  
@@ -133,8 +132,13 @@ private void ImportSolutionUsingJob(IOrganizationService svc, string filepath)
 
   var response = proxy.Execute(r);
 } 
-
 ```
+
+`ImportSolutionAsync` shares many input parameters with `ImportSolution` but adds `ComponentParameters` and `SolutionParameters`. `ComponentParameters` can be used to overwrite the component data in the customization XML file. `SolutionParameters` can be used to pass the `StageSolutionUploadId` as was shown in the example code.
+
+The response returning from `ImportSolutionAsync` contains `ImportJobKey` and `AsyncOperationId`. The `ImportJobKey` value can be used to obtain the import result and the `AsyncOperationId` value can be used to track the import status.
+
+---
 
 ## Solution export
 
