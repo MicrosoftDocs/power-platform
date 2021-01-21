@@ -138,7 +138,7 @@ private void ImportSolutionUsingJob(IOrganizationService svc, string filepath)
 
 `ImportSolutionAsync` shares many input parameters with `ImportSolution` but adds `ComponentParameters` and `SolutionParameters`. `ComponentParameters` can be used to overwrite the component data in the customization XML file. `SolutionParameters` can be used to pass the `StageSolutionUploadId` of a staged solution as was shown in the example code.
 
-The response returning from `ImportSolutionAsync` contains `ImportJobKey` and `AsyncOperationId`. The `ImportJobKey` value can be used to obtain the import result and the `AsyncOperationId` value can be used to track the import status.
+The response returned from `ImportSolutionAsync` contains `ImportJobKey` and `AsyncOperationId`. The `ImportJobKey` value can be used to obtain the import result and the `AsyncOperationId` value can be used to track the import job status.
 
 ## Solution export
 
@@ -147,3 +147,19 @@ The response returning from `ImportSolutionAsync` contains `ImportJobKey` and `A
 | Operation | Web API | SDK API |
 | --- | --- | --- |
 | Export a solution | [ExportSolutionAsync](/dynamics365/customer-engagement/web-api/exportsolution) | [ExportSolutionAsyncRequest](/dotnet/api/microsoft.crm.sdk.messages.exportsolutionrequest) |
+
+Now let's take a look at some example code that demonstrates `ExportSolutionAsync`.
+
+### [Web API (C#)](#tab/webapi-csharp)
+
+```csharp
+
+```
+
+### [SDK API (C#)](#tab/sdk-csharp)
+
+```csharp
+
+```
+
+---
