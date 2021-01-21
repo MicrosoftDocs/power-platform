@@ -56,6 +56,7 @@ All flows in this solution depend on all environment variables' being configured
    | Auto Delete On Archive | Determines whether apps are deleted when they're archived in the following flow: Admin \| App Archive and Clean Up - Check Approvals and Archive. <br> Value must be Yes or No. A default value of No is provided. |
    | Developer Compliance Center         | Navigate to the details page of the Developer Compliance Center (canvas app) included with this solution, and copy the web link (to launch the app) and paste it into this variable.  |
    | ProductionEnvironment | Determines if the environment is Production or Dev/Test. True (the default) will mean that the approvals are sent to app/flow owners. False will send those approvals to the admin email. |
+   | Approval Admin | Optional variable for users that have a distribution list for the Admin Email env var. Since you cannot use a distribution list for approvals, this variable will allow you to specify a secondary email that is a person for Approvals |
 
 ## Initialize flow approval tables in your environment
 
