@@ -35,11 +35,11 @@ Check community forums to see if other users have posted a solution that might h
 
 ## Microsoft support
 
-If you're an administrator of your Power Virtual Agents tenant, you can use the Power Platform Admin Center to request support from Microsoft.
+If you're an administrator of your Power Virtual Agents tenant, you can use the Microsoft Power Platform admin center to request support from Microsoft.
 
-1. Sign in to the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
 2. In the side navigation pane, select **Help + Support**, and then select **New support request**.
 
-For detailed information about the help and support experience in the Power Platform Admin center, see [Get Help + Support](/power-platform/admin/get-help-support) at the Power Platform admin documentation library.
+For detailed information about the help and support experience in the Power Platform admin center, see [Get Help + Support](/power-platform/admin/get-help-support) at the Microsoft Power Platform admin documentation library.
 
