@@ -1,6 +1,6 @@
 ---
 title: What's new for storage | Microsoft Docs
-description: Learn what's new about storage for Power Platform
+description: Learn what's new about storage for Microsoft Power Platform
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
@@ -20,7 +20,7 @@ search.app:
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-We've made some key enhancements to admin experiences for the Power Platform admin center:
+We've made some key enhancements to admin experiences for the Microsoft Power Platform admin center:
 
 - Storage reporting is based on customer licenses and capacity add-ons.
 - Changes have been implemented for exceeding storage capacity entitlements.
