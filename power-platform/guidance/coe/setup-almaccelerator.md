@@ -1,6 +1,6 @@
 ---
-title: "Set up ALM Helper for Makers components | MicrosoftDocs"
-description: "The ALM Helper for Makers components will help you follow best DevOps practices to source control and move your solution from your development environment to test and production environments using GitHub."
+title: "Set up ALM Accelerator for Makers components | MicrosoftDocs"
+description: "The ALM Accelerator for Makers components will help you follow best DevOps practices to source control and move your solution from your development environment to test and production environments using GitHub."
 author: manuelap-msft
 manager: devkeydet
 ms.service: power-platform
@@ -17,22 +17,22 @@ search.app:
   - Powerplatform
 ---
 
-# Set up ALM Helper for Makers components
+# Set up ALM Accelerator for Makers components
 
-The ALM Helper for Makers components enable makers to apply source control strategies using GitHub and use automated builds and deployment of solutions to their environments without the need for manual intervention by the maker, administrator, developer, or tester. In addition PowerOps provides makers the ability to work without intimate knowledge of the downstream technologies and to be able to switch quickly from developing solutions to source controlling the solution and ultimately pushing their apps to other environments with as few interruptions to their work as possible.
+The ALM Accelerator for Makers components enable makers to apply source control strategies using GitHub and use automated builds and deployment of solutions to their environments without the need for manual intervention by the maker, administrator, developer, or tester. In addition the ALM Accelerator provides makers the ability to work without intimate knowledge of the downstream technologies and to be able to switch quickly from developing solutions to source controlling the solution and ultimately pushing their apps to other environments with as few interruptions to their work as possible.
 
 This solution uses [GitHub actions](https://docs.microsoft.com/power-platform/alm/devops-github-actions) for source control and deployments. The [GitHub connector](https://docs.microsoft.com/connectors/github/) is used in flows to interact with GitHub.
 
 >[!IMPORTANT]
->The ALM Helper for Makers solution doesn't have a dependency on other components of the CoE Starter Kit. It can be used independently.
+>The ALM Accelerator for Makers solution doesn't have a dependency on other components of the CoE Starter Kit. It can be used independently.
 
 ## Prerequisites
 
 ### Environments
 
-The application will manage deploying solutions from Development to Testing and to Production. You will need separate environments for deploying the ALM Helper for Makers solution, and for Development, Test and Production of you project.
+The application will manage deploying solutions from Development to Testing and to Production. You will need separate environments for deploying the ALM Accelerator for Makers solution, and for Development, Test and Production of you project.
 
-- Create an environment with a Dataverse database for deploying the ALM Helper for Makers solution.
+- Create an environment with a Dataverse database for deploying the ALM Accelerator for Makers solution.
 - Any target environment (Development, Test and Production) will require a Dataverse database for deploying solutions.
 - Create a GitHub account at [GitHub.com](https://github.com).
 - Create a [GitHub org](https://docs.github.com/free-pro-team@latest/github/setting-up-and-managing-organizations-and-teams/creating-a-new-organization-from-scratch).
@@ -41,7 +41,7 @@ The application will manage deploying solutions from Development to Testing and 
 
 You will need the following users and permissions in Power Platform and Azure:
 
-- A licensed **Power Apps user** with **System Administrator role** in the environment where the ALM Helper for Makers solution will be deployed.
+- A licensed **Power Apps user** with **System Administrator role** in the environment where the ALM Accelerator for Makers solution will be deployed.
     >[!NOTE] This user must not have Multi-Factor Authentication enabled until full support of Service Principals are enabled in GitHub workflows.
 
 - A licensed **Azure user** with permissions to create **App Registrations and Grant Admin consent** to App Registrations in Azure Active Directory.
@@ -115,7 +115,7 @@ Leave the Azure portal open, because you'll need to copy some information when y
 
 1. In the pop-up window, select **Choose File**.
 
-1. Select the PowerOps GitHub ALM solution from File Explorer (PowerPlatformGitHubALM_x_x_x_xx_managed.zip).
+1. Select the ALM Accelerator solution from File Explorer (PowerPlatformGitHubALM_x_x_x_xx_managed.zip).
 
 1. When the compressed (.zip) file has been loaded, select **Next**.
 
@@ -130,9 +130,9 @@ Leave the Azure portal open, because you'll need to copy some information when y
 
 1. Go to [make.powerapps.com](<https://make.powerapps.com>).
 1. On the left pane, select **Solutions**.
-1. Select the **Power Platform GitHub ALM** solution and open the **PowerOps Admin** app.
+1. Select the **Power Platform GitHub ALM** solution and open the **ALM Accelerator Admin Configuration** app.
 
-![Configure Environment Settings and Deployment Stages after import using the PowerOps Admin app](media/git-24.png "Configure Environment Settings and Deployment Stages after import using the PowerOps Admin app.")
+![Configure Environment Settings and Deployment Stages after import using the ALM Accelerator Admin app](media/git-24.png "Configure Environment Settings and Deployment Stages after import using the ALM Accelerator Admin app.")
 
 ### Set up deployment stages
 
@@ -150,14 +150,14 @@ This Url will be used for callbacks from GitHub.
 1. In a new tab, go to [make.powerapps.com](<https://make.powerapps.com>) > **Solutions** > **Power Platform GitHub ALM** solution.
 1. Edit the **WorkflowCompleteNotification** flow.
 1. Select the first action and copy the URL in the action.
-1. Go back to the **PowerOps Admin** app and update the **Webhook Url** with the value copied from the previous step.
+1. Go back to the **ALM Accelerator Admin** app and update the **Webhook Url** with the value copied from the previous step.
 1. Select **Update**.
 
 ### Update the Client ID
 
 The Client ID is needed for flows to create an environment and perform other admin-related activities like fetching solutions and apps inside an environment.
 
-1. In the PowerOps Admin app, update the Client ID with the Application (client) ID value you copied during [Create an Azure AD app registration](#create-an-azure-ad-app-registration).
+1. In the ALM Accelerator Admin app, update the Client ID with the Application (client) ID value you copied during [Create an Azure AD app registration](#create-an-azure-ad-app-registration).
 1. Select **Update**
 
 ### Update the GitHub Org Name
@@ -194,7 +194,7 @@ Add users to the field security profile:
 1. **Select** to add them to the security profile.
 
     ![Select Users to add them to a Field Security Profile](media/git-9.png "Select Users to add them to a Field Security Profile")
-1. Repeat this step for all users that will use PowerOps.
+1. Repeat this step for all users that will use the ALM Accelerator App.
 1. Select **Save and Close**.
 
     ![Save the Field Security Profile](media/git-10.png "Save the Field Security Profile")
@@ -225,10 +225,10 @@ If you have a paid GitHub org plan, configure org secrets:
 
 ## Free GitHub org plan
 
-If you do not have a paid GitHub org plan, follow the below steps for all projects created in PowerOps.
+If you do not have a paid GitHub org plan, follow the below steps for all projects created in the ALM Accelerator App.
 
 >[!NOTE]
->These steps need to be followed for all projects created in PowerOps.
+>These steps need to be followed for all projects created in the ALM Accelerator.
 
 1. Navigate to your org in GitHub (https://github.com/yourorg).
 1. Select **Settings** > **Secret** > **New organization secret**
@@ -237,4 +237,4 @@ If you do not have a paid GitHub org plan, follow the below steps for all projec
 1. Select **Add Secret**.
 1. Complete the above steps to add a **TEST_ENVIRONMENT_SECRET** and **PROD_ENVIRONMENT_SECRET**.
 
-You can now [use the PowerOps components](powerops-components.md).
+You can now [use the ALM Accelerator components](almaccelerator-components.md).
