@@ -116,8 +116,6 @@ You can request a temporary (30-day) extension that allows copy and restore oper
 |---------|---------|
 |December 2020     |  As part of our storage optimization efforts, we continue to make improvements. In December 2020, we included most of the *WebResourceBase* table and *RibbonClientMetadataBase* table as part of file storage. Customers will see file storage consumption increase and database consumption reduced based on the amount of data in these tables. This effort will continue for other tables in the future. Check back here to see when additional tables go through a similar transition.    |
 
-
-
 ### See also
 [Legacy storage capacity](legacy-capacity-storage.md) <br />
 [Dataverse storage capacity](capacity-storage.md) <br />
