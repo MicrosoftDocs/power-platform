@@ -16,15 +16,15 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Use ALM Accelerator for Makers
+# Use the ALM Accelerator for Makers
 
-The ALM Accelerator for Makers will help you follow best DevOps practices to source control and move your solution(s) from development to test to production environments using GitHub. [Set up PowerOps components](setup-almhelper.md)
+The ALM Accelerator for Makers will help you follow DevOps best practices to source control and move your solution(s) from development to test to production environments using GitHub. [Set up ALM Accelerator components](setup-almhelper.md)
 
 The ALM Accelerator for Makers enables makers to apply source control strategies using GitHub and use automated builds and deployment of solutions to their environments without the need for manual intervention by the maker, administrator, developer, or tester. In addition the ALM Accelerator for Makers provides makers the ability to work without intimate knowledge of the downstream technologies and to be able to switch quickly from developing solutions to source controlling the solution and ultimately pushing their apps to other environments with as few interruptions to their work as possible.
 
 The ALM Accelerator for Makers app shows a maker all of their projects and allows them to deploy their work in progress or final solution to a test and production environment. Once a new project is created and approved, makers can navigate to [make.powerapps.com](https://make.powerapps.com) to build and create assets - such as apps, flows, and tables - in a solution that has been created for them.
 
-The ALM Accelerator for Makers will help you follow best DevOps practices to source control and move your solution(s) from development to test to production environments using GitHub. More information: [Set up PowerOps components](setup-powerops.md)
+The ALM Accelerator for Makers will help you follow DevOps best practices to source control and move your solution(s) from development to test to production environments using GitHub. More information: [Set up ALM Accelerator components](setup-ALM Accelerator.md)
 
 **Prerequisite**: This app uses Microsoft Dataverse; a Premium license is therefore required for every app user.
 
@@ -70,9 +70,9 @@ When deploying to test, the solution for this project is also checked in to the 
 
 ## View deployment status
 
-PowerOps will show the status of the deployment. When a deployment is completed or fails, both the admin and the app maker will receive an email notification with the details. If the deployment is successful, the notification email will have links to the environment where the solution has been deployed.  
+The ALM Accelerator will show the status of the deployment. When a deployment is completed or fails, both the admin and the app maker will receive an email notification with the details. If the deployment is successful, the notification email will have links to the environment where the solution has been deployed.  
 
-![View deployment status in PowerOps app](media/git-32.png "View deployment status in PowerOps app")
+![View deployment status in ALM Accelerator app](media/git-32.png "View deployment status in ALM Accelerator app")
 
 ## View build details
 
