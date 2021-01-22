@@ -1,6 +1,6 @@
 ---
 title: "Set up ALM Accelerator for Makers components | MicrosoftDocs"
-description: "The ALM Accelerator for Makers components will help you follow best DevOps practices to source control and move your solution from your development environment to test and production environments using GitHub."
+description: "The ALM Accelerator for Makers components will help you follow ALM patterns & practices to source control and move your solution from your development environment to test and production environments using GitHub."
 author: manuelap-msft
 manager: devkeydet
 ms.service: power-platform

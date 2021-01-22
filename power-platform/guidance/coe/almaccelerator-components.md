@@ -1,6 +1,6 @@
 ---
 title: "ALM Accelerator for Makers | MicrosoftDocs"
-description: "The ALM Accelerator for Makers  will help you follow best DevOps practices to source control and move your solution(s) from your development environment to test and production environments using GitHub."
+description: "The ALM Accelerator for Makers  will help you follow ALM patterns & practices to source control and move your solution(s) from your development environment to test and production environments using GitHub."
 author: manuelap-msft
 manager: devkeydet
 ms.service: power-platform
@@ -18,13 +18,13 @@ search.app:
 ---
 # Use the ALM Accelerator for Makers
 
-The ALM Accelerator for Makers will help you follow DevOps best practices to source control and move your solution(s) from development to test to production environments using GitHub. [Set up ALM Accelerator components](setup-almaccelerator.md)
+The ALM Accelerator for Makers will help you follow ALM patterns & practices to source control and move your solution(s) from development to test to production environments using GitHub. [Set up ALM Accelerator components](setup-almaccelerator.md)
 
 The ALM Accelerator for Makers enables makers to apply source control strategies using GitHub and use automated builds and deployment of solutions to their environments without the need for manual intervention by the maker, administrator, developer, or tester. In addition the ALM Accelerator for Makers provides makers the ability to work without intimate knowledge of the downstream technologies and to be able to switch quickly from developing solutions to source controlling the solution and ultimately pushing their apps to other environments with as few interruptions to their work as possible.
 
 The ALM Accelerator for Makers app shows a maker all of their projects and allows them to deploy their work in progress or final solution to a test and production environment. Once a new project is created and approved, makers can navigate to [make.powerapps.com](https://make.powerapps.com) to build and create assets - such as apps, flows, and tables - in a solution that has been created for them.
 
-The ALM Accelerator for Makers will help you follow DevOps best practices to source control and move your solution(s) from development to test to production environments using GitHub. More information: [Set up ALM Accelerator components](setup-almaccelerator.md)
+The ALM Accelerator for Makers will help you follow ALM patterns & practices to source control and move your solution(s) from development to test to production environments using GitHub. More information: [Set up ALM Accelerator components](setup-almaccelerator.md)
 
 **Prerequisite**: This app uses Microsoft Dataverse; a Premium license is therefore required for every app user.
 
