@@ -69,7 +69,7 @@ Set up an Azure AD app registration that will be used to create environments and
 
 1. Select **Delegated permissions**, and then select **user_impersonation**.
 
-      ![Delegated permissions](media/git-2.png "Delegated permissions")
+      ![Delegated permissions](media/crm-api-registration2.png "Delegated permissions")
 
 1. Select **Add permissions**.
 1. Select **Grant admin consent for [Your Organization]**.
