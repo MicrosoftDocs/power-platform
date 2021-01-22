@@ -98,8 +98,8 @@
         href: coe/setup-powerbi.md
       - name: Set up theming components
         href: coe/setup-theming.md
-      - name: Set up PowerOps components
-        href: coe/setup-powerops.md
+      - name: Set up ALM Accelerator components
+        href: coe/setup-almaccelerator.md
     - name: What's in the CoE Starter Kit
       items:  
       - name: CoE Starter Kit modules
@@ -114,8 +114,8 @@
           href: coe/nurture-components.md  
         - name: Theming components
           href: coe/theming-components.md   
-        - name: PowerOps components
-          href: coe/powerops-components.md  
+        - name: ALM Accelerator components
+          href: coe/almaccelerator-components.md  
         - name: Extend and modify components
           href: coe/modify-components.md
     - name: How to use the CoE Starter Kit

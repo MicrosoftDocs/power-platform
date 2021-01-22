@@ -25,5 +25,5 @@ Version 1.1 for the CoE Starter Kit ALM Helper for Makers is now available. This
 
 This is the first version of the ALM Helper for Makers components:
 
-- [Setup PowerOps components](../setup-almhelper.md)
-- [Use PowerOps components](../almhelper-components.md)
+- [Setup ALM Accelerator for Makers components](../setup-almaccelerator.md)
+- [Use ALM Accelerator for Makers components](../almaccelerator-components.md)
