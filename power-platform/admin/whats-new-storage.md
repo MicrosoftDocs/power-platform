@@ -110,6 +110,13 @@ You can request a temporary (30-day) extension that allows copy and restore oper
 - Your organization can request an extension only once.
 - After the one-time extension, copying and restoring environments will again be blocked if the tenant doesn't have available storage capacity. To avoid this, admins should reduce storage usage and/or purchase additional storage capacity.
 
+## Change log for major updates in storage
+
+|Date  |Description  |
+|---------|---------|
+|December 2020     |  As part of our storage optimization efforts, we continue to make improvements. In December 2020, we included most of the *WebResourceBase* table and *RibbonClientMetadataBase* table as part of file storage. Customers will see file storage consumption increase and database consumption reduced based on the amount of data in these tables. This effort will continue for other tables in the future. Check back here to see when additional tables go through a similar transition.    |
+
+
 
 ### See also
 [Legacy storage capacity](legacy-capacity-storage.md) <br />
