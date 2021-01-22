@@ -48,6 +48,6 @@ The Center of Excellence (CoE) Starter Kit is shipped in multiple components:
 
     The ALM components are intended to provide Power Platform makers guidance on creating healthy Application Lifecycle Management practices for their solutions as part of their overall DevOps strategy.
 
-    The ALM Accelerator components solution contains assets that are relevant to makers and admins. More information: [Set up ALM Accelerator for Makers components](setup-almaccelerator.md) and [Use ALM Accelerator for Makers components](almaccelerator-components.md)
+    The ALM Accelerator for Makers components solution contains assets that are relevant to makers and admins. More information: [Set up ALM Accelerator for Makers components](setup-almaccelerator.md) and [Use ALM Accelerator for Makers components](almaccelerator-components.md)
 
 We recommend becoming familiar with the CoE core components solution before you add governance, nurture, or theming components.

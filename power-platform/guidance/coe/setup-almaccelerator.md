@@ -237,4 +237,4 @@ If you do not have a paid GitHub org plan, follow the below steps for all projec
 1. Select **Add Secret**.
 1. Complete the above steps to add a **TEST_ENVIRONMENT_SECRET** and **PROD_ENVIRONMENT_SECRET**.
 
-You can now [use the ALM Accelerator components](almaccelerator-components.md).
+You can now [use the ALM Accelerator for Makers components](almaccelerator-components.md).

@@ -98,7 +98,7 @@
         href: coe/setup-powerbi.md
       - name: Set up theming components
         href: coe/setup-theming.md
-      - name: Set up ALM Accelerator components
+      - name: Set up ALM Accelerator for Makers components
         href: coe/setup-almaccelerator.md
     - name: What's in the CoE Starter Kit
       items:  
@@ -114,7 +114,7 @@
           href: coe/nurture-components.md  
         - name: Theming components
           href: coe/theming-components.md   
-        - name: ALM Accelerator components
+        - name: ALM Accelerator for Makers components
           href: coe/almaccelerator-components.md  
         - name: Extend and modify components
           href: coe/modify-components.md
