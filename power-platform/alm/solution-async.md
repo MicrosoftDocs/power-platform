@@ -147,6 +147,7 @@ The response returned from `ImportSolutionAsync` contains `ImportJobKey` and `As
 | Operation | Web API | SDK API |
 | --- | --- | --- |
 | Export a solution | [ExportSolutionAsync](/dynamics365/customer-engagement/web-api/exportsolution) | [ExportSolutionAsyncRequest](/dotnet/api/microsoft.crm.sdk.messages.exportsolutionrequest) |
+| Download an exported solution file | DownloadSolutionExportData | DownloadSolutionExportDataRequest |
 
 Now let's take a look at some example code that demonstrates `ExportSolutionAsync`.
 
@@ -168,7 +169,7 @@ var response = service.Execute(req);
 
 ---
 
-In the response are the `AsyncOperationId` and `ExportJobId` parameter values. Use the `AsyncOperationId` in the response to verify the asynchronous job status success (`statecode` == 3; `statuscode` == 30). Next, use the `DownloadSolutionExportData` action (or message) with the `ExportJobId` value from the response to download the exported solution file, which is returned in the `ExportSolutionFile` parameter.
+In the response are the `AsyncOperationId` and `ExportJobId` parameter values. Use the `AsyncOperationId` in the response to verify the success of the asynchronous job (`statecode` == 3; `statuscode` == 30). Next, use the `DownloadSolutionExportData` action (or message) with the `ExportJobId` value from the response to download the exported solution file, which is returned in the `ExportSolutionFile` parameter.
 
 ### [Web API (C#)](#tab/webapi-csharp)
 
