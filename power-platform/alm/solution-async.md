@@ -159,7 +159,30 @@ Now let's take a look at some example code that demonstrates `ExportSolutionAsyn
 ### [SDK API (C#)](#tab/sdk-csharp)
 
 ```csharp
+var service = (OrganizationServiceProxy)xsc.CreateOrganizationService();
+var req = new OrganizationRequest("ExportSolutionAsync");
+req.Parameters.Add("SolutionName", "ExportSolutionAsyncTest");
+req.Parameters.Add("Managed", false);
+var response = service.Execute(req);
+```
 
+---
+
+In the response are the `AsyncOperationId` and `ExportJobId` parameter values. Use the `AsyncOperationId` in the response to verify the asynchronous job status success (`statecode` == 3; `statuscode` == 30). Next, use the `DownloadSolutionExportData` action (or message) with the `ExportJobId` value from the response to download the exported solution file, which is returned in the `ExportSolutionFile` parameter.
+
+### [Web API (C#)](#tab/webapi-csharp)
+
+```csharp
+
+```
+
+### [SDK API (C#)](#tab/sdk-csharp)
+
+```csharp
+var service = (OrganizationServiceProxy)xsc.CreateOrganizationService();
+var req = new OrganizationRequest("DownloadSolutionExportData");
+req.Parameters.Add("ExportJobId", Guid.Parse("a9089b53-a1c7-ea11-a813-000d3a14420d");
+var response = service.Execute(req);
 ```
 
 ---
