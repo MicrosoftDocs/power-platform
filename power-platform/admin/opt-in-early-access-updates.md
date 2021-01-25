@@ -125,7 +125,7 @@ Each release wave includes features and functionality that are enabled for diffe
 - **Users by admins, makers, or analysts**: These features must be enabled or configured by the administrators, makers, or business analysts to be available for their users.
 
 By opting in for early access updates, you'll get features that are mandatory changes that are automatically enabled for users.
-For more details, check the **Enabled for** column in [Dynamics 365](https://aka.ms/Dynamics365ReleasePlan) and [Power Platform](https://aka.ms/PowerPlatformReleasePlan) release plans.
+For more details, check the **Enabled for** column in [Dynamics 365](https://aka.ms/Dynamics365ReleasePlan) and Microsoft [Power Platform](https://aka.ms/PowerPlatformReleasePlan) release plans.
 
 ## Prepare for a release wave  
 The following checklist provides the general guidelines to help you prepare for a release wave. 
@@ -182,7 +182,7 @@ See [Policies and communications](policies-communications.md#scheduled-system-up
 #### Deployment schedule
 
 > [!IMPORTANT]
-> As announced in the [blog post](https://aka.ms/covid19Blog), Microsoft is making some changes to the update schedules in April in response to COVID-19. The 2020 release wave 1, April updates will be generally available as mentioned in the [Dynamics 365](https://aka.ms/Dynamics365ReleasePlan) and [Power Platform](https://aka.ms/PowerPlatformReleasePlan) release plans. However, we are making some changes to the release schedule as explained later in [this article](https://docs.microsoft.com/dynamics365/get-started/release-schedule). Microsoft will continue to release critical updates for Dynamics 365 applications and Power Platform. Microsoft is also extending the deprecation timelines for some capabilities to provide customers and partners additional time to make the transition. Microsoft is committed to providing support to our customers and partners during this period.
+> As announced in the [blog post](https://aka.ms/covid19Blog), Microsoft is making some changes to the update schedules in April in response to COVID-19. The 2020 release wave 1, April updates will be generally available as mentioned in the [Dynamics 365](https://aka.ms/Dynamics365ReleasePlan) and Microsoft [Power Platform](https://aka.ms/PowerPlatformReleasePlan) release plans. However, we are making some changes to the release schedule as explained later in [this article](https://docs.microsoft.com/dynamics365/get-started/release-schedule). Microsoft will continue to release critical updates for Dynamics 365 applications and Power Platform. Microsoft is also extending the deprecation timelines for some capabilities to provide customers and partners additional time to make the transition. Microsoft is committed to providing support to our customers and partners during this period.
 
 The following is the updated schedule for when the 2020 release wave 1 features will be enabled by regions. 
 
@@ -200,6 +200,6 @@ During the general availability deployment, your environments will be updated wi
 
 ### See also
 [Dynamics 365 release schedule and early access ](https://docs.microsoft.com/dynamics365/get-started/release-schedule)<br />
-[Dynamics 365 and Power Platform Release Plans ](https://docs.microsoft.com/dynamics365/release-plans/)<br />
+[Dynamics 365 and Microsoft Power Platform Release Plans ](https://docs.microsoft.com/dynamics365/release-plans/)<br />
 [Policies and communications](https://docs.microsoft.com/power-platform/admin/policies-communications)
 
