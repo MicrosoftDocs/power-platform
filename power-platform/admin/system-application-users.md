@@ -4,7 +4,7 @@ description: About system and application users
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 01/20/2021
+ms.date: 01/25/2021
 author: paulliew
 ms.author: paulliew
 ms.reviewer: jimholtz
@@ -57,7 +57,7 @@ Most of these users are hidden from user views but they can be found by using th
 | | PowerVIrtualAgents  | PowerVirtualAgents@onmicrosoft.com | To manage the PVA capabilities within Dataverse environments | CCI Admin, System Customizer, and Environment Maker    |
 | | BizQA | BizQA@onmicrosoft.com | To access search telemetry to improve search experience | BizQAApp   |
 | | ProductInsights | ProductInsights@onmicrosoft.com | To export data from Customer Insights to Engagement Insights | DataLakeWorkspaceAppAccess    |
-
+| | Dynamics365 SalesForecasting | Dynamics365SalesForecasting@onmicrosoft.com | To fetch entity data and metadata for forecasting feature | ForecastAppUser    |
 
 
 **The purpose of the system account?** 
