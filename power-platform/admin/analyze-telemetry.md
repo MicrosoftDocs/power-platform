@@ -6,7 +6,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/04/2021
+ms.date: 01/21/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -29,7 +29,12 @@ You don't need to write any code to enable this telemetry. You can enable or dis
 [Application Insights](https://docs.microsoft.com/azure/azure-monitor/app/app-insights-overview) is part of the Azure Monitor ecosystem. It's widely used by enterprises for monitoring and diagnostics. Many customers have added code to their extensions to capture this data into their Application Insights environments. This additional code has a cost, however&mdash;not only the cost to write and maintain, but also a performance cost at runtime. These costs can be avoided by using Application Insights built-in integration.
 
 > [!NOTE]
+
 > Additional details about minimum Dataverse capacity requirements will be made available<!--note from editor: Can you say where?-->, along with the Application Insights integration feature Release Notes.<!--note from editor: Can this be more specific? I found [Release notes - Application Insights](https://docs.microsoft.com/azure/azure-monitor/app/release-notes), would that work?-->
+
+
+> At general availability, enablement of Application Insights will be subject to minimum paid/premium licenses to be available for the tenant. Details of these requirements will be provided in admin documentation and in general availability [release plans](https://docs.microsoft.com/dynamics365/release-plans/).
+        
 
 ## Why do I need telemetry?
 

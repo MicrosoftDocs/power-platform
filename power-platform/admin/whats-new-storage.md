@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/01/2020
+ms.date: 01/22/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -16,7 +16,7 @@ search.app:
   - Flow
 ---
 
-# What's new about storage
+# What's new about storage 
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
@@ -27,7 +27,7 @@ We've made some key enhancements to admin experiences for the Power Platform adm
 
 We're rolling out these features now so check back if your user experience varies from the following content.
 
-## Updates to storage reporting
+## Updates to storage reporting 
 
 In April 2019, we introduced Microsoft Dataverse capacity storage that's optimized for relational data (database), attachments (file), and audit logs (log). New customers of Power Apps, Power Automate, and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation) receive a tenant-wide default entitlement for each of these three storage types and additional per user subscription license entitlements. Additional storage can be purchased in 1-GB increments. Existing customers won't be affected by this change until the end of their current Power Apps or Dynamics 365 subscription, when renewal is required.
 
@@ -110,6 +110,11 @@ You can request a temporary (30-day) extension that allows copy and restore oper
 - Your organization can request an extension only once.
 - After the one-time extension, copying and restoring environments will again be blocked if the tenant doesn't have available storage capacity. To avoid this, admins should reduce storage usage and/or purchase additional storage capacity.
 
+## Change log for major updates in storage
+
+|Date  |Description  |
+|---------|---------|
+|December 2020     |  As part of our storage optimization efforts, we continue to make improvements. In December 2020, we included most of the *WebResourceBase* table and *RibbonClientMetadataBase* table as part of file storage. Customers will see file storage consumption increase and database consumption reduced based on the amount of data in these tables. This effort will continue for other tables in the future. Check back here to see when additional tables go through a similar transition.    |
 
 ### See also
 [Legacy storage capacity](legacy-capacity-storage.md) <br />

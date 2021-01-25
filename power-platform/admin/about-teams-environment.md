@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/07/2021
+ms.date: 01/14/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -16,6 +16,7 @@ search.app:
   - Flow
 ---
 # About the Microsoft Dataverse for Teams environment
+
 <!-- fwlink 2143567 -->
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
@@ -45,6 +46,8 @@ Note the following regarding access to Microsoft Power Platform apps in Teams:
 - Teams can invite guests who can access the apps, bots, flows, and data in the Dataverse for Teams database within their team. However, they won't be allowed to install, make, or edit apps. They can only discover and run apps in their team.
 
 - No direct API access to Dataverse for Teams will be provided, and only apps, bots, and flows embedded within the Microsoft Teams client will be able to access the Dataverse for Teams runtime.
+
+- Dataverse for Teams is not available in the following regions: Germany, South Africa, South Korea, Switzerland, UAE, GCC, GCC High.
 
 More information: [Dataverse for Teams licensing FAQ](powerapps-flow-licensing-faq.md#dataverse-for-teams)
 
@@ -132,7 +135,7 @@ There's a difference in the models for adding users to Dataverse environments an
 <tr>
 <td width="20%"> Colleagues with access </td>
 <td width="50%"> Colleagues with access are people in the tenant who aren't in the team but have been invited to run apps in the team. By default, colleagues with access have no access to data. Their data access rights can be granted based on the app or resources that they need to run. Note: when a colleague with access is invited to run apps in a team, the Microsoft 365 group association with the team's Dataverse for Teams environment will be automatically removed to allow app run access to the colleague with access. </td>
-<td width="30%"> Common Data Service User</td>
+<td width="30%"> Basic User</td>
 </tr>
 </table>
 
