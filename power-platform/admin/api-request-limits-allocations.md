@@ -163,5 +163,5 @@ Yes, if these requests are making CRUD, assign, or share&ndash;type requests, th
 No, third-party data integration tools are subject to the exact same limits as scheduled, instant, or automated flows. Thus, there is no difference whether you choose to use Power Automate or a third-party tool. Moreover, requests from Power Automate to the Dataverse are not double-counted, a flow that calls one action will only count as one request against their limit, not two.
 
 ### See also
-[Dataverse API limits overview](https://docs.microsoft.com/powerapps/maker/common-data-service/api-limits-overview)
+[Dataverse API limits overview](https://docs.microsoft.com/powerapps/maker/common-data-service/api-limits-overview) <br />
 [Power Automate limits and configuration](https://docs.microsoft.com/power-automate/limits-and-config)
