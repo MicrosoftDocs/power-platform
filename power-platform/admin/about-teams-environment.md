@@ -1,5 +1,5 @@
 ---
-title: "About the Dataverse for Teams environment | MicrosoftDocs"
+title: "About the Microsoft Dataverse for Teams environment | MicrosoftDocs"
 description: Administer and manage Microsoft Dataverse for Teams environment
 author: jimholtz
 ms.service: power-platform
@@ -15,7 +15,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# About the Microsoft Dataverse for Teams environment
+# About the Dataverse for Teams environment
 
 <!-- fwlink 2143567 -->
 
