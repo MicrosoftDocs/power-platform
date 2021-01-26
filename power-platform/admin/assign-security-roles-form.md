@@ -17,7 +17,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Assign security roles to a form to more finely control access
+# Assign security roles to a model-driven app form
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
