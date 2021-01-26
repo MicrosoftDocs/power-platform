@@ -17,7 +17,7 @@ manager: annbe
 Important changes (deprecations) coming in Power Apps, Power Automate, and customer engagement apps
 ============================================================
 
-The announcements and deprecations described in this topic apply to Power Apps, Power Automate, and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Marketing, Dynamics 365 Field Service, and Dynamics 365 Project Service Automation).
+The announcements and deprecations described in this article apply to Power Apps, Power Automate, and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Marketing, Dynamics 365 Field Service, and Dynamics 365 Project Service Automation).
 
 Administrators and IT professionals should use this information to prepare for future releases. This article was first published on June 27, 2017.
 
@@ -27,7 +27,7 @@ notification can span a few months or years. After removal, the feature or capab
 
 ## Low-density headers in model-driven apps won't be supported with the 2021 release wave 2
 
-With the upcoming 2021 release wave 2 (public preview in August 2021 and GA in October 2021), the low-density header option and runtime experience won't be supported in model-driven app forms.
+With the upcoming 2021 release wave 2 (public preview in August 2021 and GA in October 2021), the low-density header option, and runtime experience won't be supported in model-driven app forms.
 
 #### Why is this needed?
 
@@ -119,7 +119,7 @@ Effective September 24, 2020, the **TimeZoneRule** entity and the **Bias** and *
 
 ## Online management API PowerShell module and REST API are deprecated
 
-Effective August 26, 2020, the online management API PowerShell module and the underlying [Online Management REST API](https://docs.microsoft.com/powerapps/developer/common-data-service/online-management-api/overview) are  deprecated. The [online management API PowerShell module](/powershell/powerapps/get-started-onlinemanagementapi?view=pa-ps-latest) will be updated in October, 2020 to point to newer underlying APIs and won’t receive further updates. We recommend that you use the Power Apps administration module. More information: [Get started using the Power Apps admin module](/powershell/powerapps/get-started-powerapps-admin?view=pa-ps-latest)
+Effective August 26, 2020, the online management API PowerShell module, and the underlying [Online Management REST API](https://docs.microsoft.com/powerapps/developer/common-data-service/online-management-api/overview) are  deprecated. The [online management API PowerShell module](/powershell/powerapps/get-started-onlinemanagementapi?view=pa-ps-latest) will be updated in October, 2020 to point to newer underlying APIs and won’t receive further updates. We recommend that you use the Power Apps administration module. More information: [Get started using the Power Apps admin module](/powershell/powerapps/get-started-powerapps-admin?view=pa-ps-latest)
 
 ## Company News Timeline solution is deprecated
 
@@ -154,13 +154,13 @@ At this time, there is no requirement to convert canvas apps, flows, or logic ap
 
 |Type|Guidance|
 |---------|---------|
-|Flows|If you can convert existing Flows to use the Common Data Service (Current Environment) connector, we recommend you do so.|
+|Flows|If you can convert existing flows to use the Common Data Service (Current Environment) connector, we recommend you do so.|
 |Logic Apps|We recommend you stop creating new connections using the Dynamics 365 connector and use the Common Data Service Connector instead.|
 |Canvas Apps|Canvas apps created after November 2019 should not have used the connector infrastructure by default. These apps should automatically connect to the Common Data Service instance within the same environment. <br /><br />If you have a canvas app that used the  Dynamics 365 connector, find information about how to convert them here: [Converting canvas apps with the Dynamics 365 connector](/powerapps/maker/canvas-apps/use-native-cds-connector#converting-canvas-apps-with-the-dynamics-365-connector).|
 
 ### Forward looking guidance
 
-When the Common Data Service (Current Environment) connector represents a viable replacement for all situations where the Dynamics 365 and Common Data Service connectors are used today, we intend to remove both the current Dynamics 365 and Common Data Service connectors so that a single connector based on the Common Data Service (Current Environment) connector will remain. At that time it will be required to convert any Flows, Logic Apps and Canvas Apps still using the Dynamics 365 and Common Data Service connectors.
+When the Common Data Service (Current Environment) connector represents a viable replacement for all situations where the Dynamics 365 and Common Data Service connectors are used today, we intend to remove both the current Dynamics 365 and Common Data Service connectors so that a single connector based on the Common Data Service (Current Environment) connector will remain. At that time it will be required to convert any Flows, Logic Apps, and Canvas Apps still using the Dynamics 365 and Common Data Service connectors.
 
 We will announce timelines as they are determined.
 
