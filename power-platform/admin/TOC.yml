@@ -369,9 +369,7 @@
       - name: Create an administrative user
         href: prevent-elevation-security-role-privilege.md
       - name: Troubleshoot common user access issues 
-        href: troubleshooting-user-needs-read-write-access-organization.md
-      - name: Assign security roles to a form
-        href: assign-security-roles-form.md       
+        href: troubleshooting-user-needs-read-write-access-organization.md     
       - name: Manage user account synchronization 
         href: manage-user-account-synchronization.md       
       - name: Hierarchy security to control access
