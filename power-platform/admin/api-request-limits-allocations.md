@@ -5,7 +5,7 @@ author: dileepsinghmicrosoft
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/19/2021
+ms.date: 01/26/2021
 ms.author: dileeps
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -164,3 +164,4 @@ No, third-party data integration tools are subject to the exact same limits as s
 
 ### See also
 [Dataverse API limits overview](https://docs.microsoft.com/powerapps/maker/common-data-service/api-limits-overview)
+[Power Automate limits and configuration](https://docs.microsoft.com/power-automate/limits-and-config)
