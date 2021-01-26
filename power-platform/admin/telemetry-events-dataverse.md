@@ -145,19 +145,23 @@ dependencies<br />
 
 ### How can I determine whether my plug-in upgrade caused a performance degradation?
 
-dependencies<br />
-| where ['type'] == "Plugin"<br />
-| where name startswith "[InsertYourPluginName]"<br />
+```kusto
+dependencies
+| where ['type'] == "Plugin"
+| where name startswith "[InsertYourPluginName]"
 | summarize avg(duration) by name
+```
 
 The plug-in name should<!--note from editor: Please see https://styleguides.azurewebsites.net/StyleGuide/Read?id=2700&topicid=35667. "Should" is for recommendations, not to express probability. Can this be "will probably" or something?--> also contain the version for custom plug-ins.
 
 ### How was the API performing prior to a reported issue, based on time of day or location? Was API degradation gradual or sudden?
 
-requests<br />
-| where url == "https://<URLHere>"<br />
-| summarize avg(duration), count() by bin(timestamp, 1h)<br />
+```kusto
+requests
+| where url == "https://<URLHere>"
+| summarize avg(duration), count() by bin(timestamp, 1h)
 | render timechart 
+```
 
 > [!div class="mx-imgBorder"] 
 > ![Application Insights API performance time chart](media/application-insights-api-performance-timechart.png "Application Insights API performance time chart")
@@ -181,11 +185,13 @@ Yes. You can build [custom dashboards](https://docs.microsoft.com/azure/azure-mo
 
 Yes. See the following sample query to understand how your plug-ins perform.
 
-dependencies<br />
-| where ['type'] == "Plugin"<br />
-| where name == "[Plugin name here]"<br />
-| summarize avg(duration) by bin(timestamp, 1h)<br />
+```kusto
+dependencies
+| where ['type'] == "Plugin"
+| where name == "[Plugin name here]"
+| summarize avg(duration) by bin(timestamp, 1h)
 | render timechart
+```
 
 > [!div class="mx-imgBorder"] 
 > ![Plug-in usage performance](media/application-insights-plugin-usage-performance.png "Plug-in usage performance")
@@ -212,6 +218,9 @@ Any outbound call made by the plug-in will automatically be logged as a dependen
 
 Dataverse returns x-ms-service-requestId in the header response to all requests. Using this requestId, you can query for all telemetry. 
 
-union *<br />
+```kusto
+union *
 | where operation_ParentId contains <requestId> 
+```
+
 

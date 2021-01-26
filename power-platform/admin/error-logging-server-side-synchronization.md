@@ -1,13 +1,13 @@
 ---
 title: "Error logging for server-side synchronization   | MicrosoftDocs"
 description: Error logging for server-side synchronization 
-author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/30/2017
-ms.author: jimholtz
+author: revachauhan
+ms.author: rechauha
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
