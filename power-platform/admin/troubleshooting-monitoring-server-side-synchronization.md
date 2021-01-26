@@ -1,12 +1,13 @@
 ---
 title: "Troubleshooting and monitoring server-side synchronization  | MicrosoftDocs"
 description: Troubleshooting and monitoring server-side synchronization
-author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/11/2020
-ms.author: jimholtz
+author: revachauhan
+ms.author: rechauha
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
