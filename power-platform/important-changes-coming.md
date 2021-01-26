@@ -25,7 +25,7 @@ Administrators and IT professionals should use this information to prepare for f
 > "Deprecated" means we intend to remove the feature or capability from a future major release. The feature or capability will continue to work and is fully supported until it is officially removed. This deprecation
 notification can span a few months or years. After removal, the feature or capability will no longer work. We are notifying you now so you have sufficient time to plan and update your code before the feature or capability is removed.
 
-## Low Density headers in model-driven apps won't be supported with the 2021 release wave 2
+## Low-density headers in model-driven apps won't be supported with the 2021 release wave 2
 
 With the upcoming 2021 release wave 2 (public preview in August 2021 and GA in October 2021), the low-density header option and runtime experience won't be supported in model-driven app forms.
 
