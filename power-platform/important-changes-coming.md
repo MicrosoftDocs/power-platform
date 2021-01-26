@@ -67,7 +67,7 @@ Main forms will no longer include the footer when a record is opened. Any out of
 - To meet the October 2021 deadline, you will need to move fields or controls added to a form footer to either the header or a section on the form.
 - If you do nothing, the footer fields or controls that you have added will no longer render on the form and will not be available to your users. 
 
-The out of box fields currently on the footer will be included on the form as part of the 2021 release wave 2 updates. So, you will not lose status or unsaved changes while or opening a form in a new window. The **Save** option is already available in the command bar and is always visible to the user. 
+The out of box fields currently on the footer will be included on the form as part of the 2021 release wave 2 updates. So, you will not lose status or unsaved changes while opening a form in a new window. The **Save** option is already available in the command bar and is always visible to the user. 
 
 While we understand that these types of changes can be disruptive for makers that use the footer today, we always evaluate the experiences to ensure they provide a modern experience that improves usability, support accessibility requirements, and improves discoverability for highly used fields and controls on a page.
  
