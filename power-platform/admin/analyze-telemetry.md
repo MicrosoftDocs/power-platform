@@ -6,7 +6,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/21/2021
+ms.date: 01/25/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -17,7 +17,6 @@ search.app:
   - Flow
 ---
 # Analyze model-driven apps and Microsoft Dataverse telemetry with Application Insights
-<!--note from editor: The title, description, and H1 all need to be unique within a topic, or we'll see build warnings. I sort of cheated here by just removing "Microsoft," but the other topics need to have their titles tweaked so they don't just echo the H1. -->
 <!-- fwlink: 2147020 2151390 -->
 
 You can set up an Application Insights environment to receive telemetry on diagnostics and performance captured by the Dataverse platform.
@@ -29,10 +28,6 @@ You don't need to write any code to enable this telemetry. You can enable or dis
 [Application Insights](https://docs.microsoft.com/azure/azure-monitor/app/app-insights-overview) is part of the Azure Monitor ecosystem. It's widely used by enterprises for monitoring and diagnostics. Many customers have added code to their extensions to capture this data into their Application Insights environments. This additional code has a cost, however&mdash;not only the cost to write and maintain, but also a performance cost at runtime. These costs can be avoided by using Application Insights built-in integration.
 
 > [!NOTE]
-
-> Additional details about minimum Dataverse capacity requirements will be made available<!--note from editor: Can you say where?-->, along with the Application Insights integration feature Release Notes.<!--note from editor: Can this be more specific? I found [Release notes - Application Insights](https://docs.microsoft.com/azure/azure-monitor/app/release-notes), would that work?-->
-
-
 > At general availability, enablement of Application Insights will be subject to minimum paid/premium licenses to be available for the tenant. Details of these requirements will be provided in admin documentation and in general availability [release plans](https://docs.microsoft.com/dynamics365/release-plans/).
         
 
@@ -46,7 +41,7 @@ You can also use telemetry to observe overall performance trends so you can proa
 
 ## How does it work?
 
-Microsoft already gathers extensive telemetry on Dataverse and model-driven apps. With Application Insights integration, an environment or tenant admin provides the Application Insights instrumentation key while setting up the data export process in the Power Platform admin center.<!--note from editor: Suggested.--> As soon as setup is complete, telemetry that Microsoft gathers about your Dataverse environment and any model-driven apps that use Application Insights are sent to your Application Insights environment. More information: [Create an Application Insights resource](https://docs.microsoft.com/azure/azure-monitor/app/create-new-resource)
+Microsoft already gathers extensive telemetry on Dataverse and model-driven apps. With Application Insights integration, an environment or tenant admin provides the Application Insights instrumentation key while setting up the data export process in the Power Platform admin center. As soon as setup is complete, telemetry that Microsoft gathers about your Dataverse environment and any model-driven apps that use Application Insights are sent to your Application Insights environment. More information: [Create an Application Insights resource](https://docs.microsoft.com/azure/azure-monitor/app/create-new-resource)
 
 If you decide to opt out, you can go to the Power Platform admin center and delete the data export connection. This will stop the data export process. You can restart the process any time.
 
@@ -60,7 +55,7 @@ If you need to contact technical support, you can use the ID values for the oper
 
 If you're working with a partner or you're a system integrator, standardized telemetry means that people won't need to learn about the different design choices that were made for custom telemetry in different environments.
 
-Note that Monitor can be used for [live detailed debugging for canvas apps and model-driven apps](https://powerapps.microsoft.com/blog/monitor-now-supports-model-driven-apps/).<!--note from editor: Suggest making this text hot instead. Making "Monitor" hot makes me expect the link to further define Monitor.-->
+Note that Monitor can be used for [live detailed debugging for canvas apps and model-driven apps](https://powerapps.microsoft.com/blog/monitor-now-supports-model-driven-apps/).
 
 ## Custom telemetry
 
@@ -68,19 +63,17 @@ If the standard telemetry doesn't provide some specific metric that you need, yo
 
 For client-side JavaScript in model-driven apps, you can use the same patterns you use today to write to your Application Insights resource.
 
-For server-side code using plug-ins, any trace logs you've written will appear in Application Insights without your having to write any code. But trace logs are intended for debugging and troubleshooting rather than telemetry.<!--note from editor: Will the significance of this statement be self-evident, or could it use more explanation?-->
+For server-side code using plug-ins, any trace logs you've written will appear in Application Insights without your having to write any code. But trace logs are intended for debugging and troubleshooting rather than telemetry.
 
 ## What is included and not included?
 
-Multiple telemetry types will be available in your Application Insights environment. It's important to note that Application Insights has a defined [schema](https://docs.microsoft.com/azure/azure-monitor/app/data-model). The tables in Application Insights are populated in accordance with this schema during<!--note from editor: Edit okay? "With" can be ambiguous.--> data export.
+Multiple telemetry types will be available in your Application Insights environment. It's important to note that Application Insights has a defined [schema](https://docs.microsoft.com/azure/azure-monitor/app/data-model). The tables in Application Insights are populated in accordance with this schema during data export.
 
-For model-driven apps, the telemetry covers common application features such as edit form, grid, and dashboard load events. These are events where performance is typically an issue. Currently, save events and ribbon commands aren't included. <<DELETE?This feature is currently for model-driven apps only.>> See [telemetry events for model-driven apps](telemetry-events-model-driven-apps.md#what-kind-of-page-loads-are-available). 
+For model-driven apps, the telemetry covers common application features such as edit form, grid, and dashboard load events. These are events where performance is typically an issue. Currently, save events and ribbon commands aren't included. This feature is currently available for model-driven apps only. See [telemetry events for model-driven apps](telemetry-events-model-driven-apps.md#what-kind-of-page-loads-are-available). 
 
 For canvas apps, an [existing capability](https://powerapps.microsoft.com/blog/log-telemetry-for-your-apps-using-azure-application-insights/) allows the app maker to [log custom telemetry](https://docs.microsoft.com/powerapps/maker/canvas-apps/application-insights) with Application Insights when developing the app.
 
 Dataverse includes all the requests made on the server. You'll be able to see how the requests are processed within the web server. You won't get detailed information from the database itself, except for the duration of time spent processing the operation. You also won't have telemetry related to the physical resources of the server, such as memory consumption. More information: [Telemetry events for Dataverse](telemetry-events-dataverse.md)
 
-<!--note from editor: This is repeated from the "Custom telemetry" section:
-Note that if the standard telemetry doesn't provide some specific metric that you need, you can still write code to supplement what's already being gathered. For client-side JavaScript in model-driven apps, you can use the same patterns you might use today to write to your Application Insights resource. For server-side code that uses plug-ins, you'll find that any trace logs you've written will appear in Application Insights without having to write any code at all. But trace logs are intended for debugging and troubleshooting rather than telemetry.
--->
+
 

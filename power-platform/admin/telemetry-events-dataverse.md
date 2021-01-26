@@ -6,7 +6,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/04/2021
+ms.date: 01/25/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -45,9 +45,11 @@ These are calls made to the Dataverse API. They can be from Unified Interface (U
 
 These logs for custom plug-ins running for a given operation are found in the **dependency** table. The following is a sample query:<!--note from editor: Edit okay? The query needs some kind of intro.-->
 
-dependencies<br />
-| where type == "Plugin"<br />
+```kusto
+dependencies
+| where type == "Plugin"
 | take 100
+```
 
 > [!div class="mx-imgBorder"] 
 > ![Application Insights Dataverse plug-in execution logs](media/application-insights-dataverse-execution-logs.png "Application Insights Dataverse plug-in execution logs")
@@ -80,9 +82,11 @@ dependencies<br />
 
 These are logs for SDK operations triggered as a part of an incoming request. These are logged to the **dependency** table in Application Insights, because they're tracked as dependencies for the request to execute. They're identified by the type name, starting with **SDK**. The following is a sample query:
 
-dependencies<br />
-| where type starts with "SDK"<br />
+```kusto
+dependencies
+| where type starts with "SDK"
 | take 10
+```
 
 > [!div class="mx-imgBorder"] 
 > ![Application Insights query SDK](media/application-insights-query-sdk.png "Application Insights query SDK")
@@ -104,8 +108,10 @@ You'll notice that some of the fields in the **exceptions** table aren't populat
 > [!div class="mx-imgBorder"] 
 > ![Application Insights exceptions table](media/application-insights-exceptions-table.png "Application Insights exceptions table")
 
-exceptions<br />
+```kusto
+exceptions
 | take 10
+```
 
 This query will return all the attribute details from the **exception** table.
 
@@ -122,13 +128,17 @@ This query will return all the attribute details from the **exception** table.
 
 If a user reports an error, you can use the user ID (Azure Active Directory ID) to understand details from the **exception** table.
 
-exceptions<br />
+```kusto
+exceptions
 | where user_Id == '12345678-68cd-4e73-908f-126342b36315'
+```
 
 The entity ID and entity name are available in **customDimensions** in the **dependency** table.
 
+```kusto
 dependencies<br />
 | where type == "SDK Retrieve"
+```
 
 > [!div class="mx-imgBorder"] 
 > ![Application Insights SDK retrieve query](media/application-insights-query-sdk-retrieve.png "Application Insights SDK retrieve query")

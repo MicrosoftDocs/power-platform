@@ -6,7 +6,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/04/2021
+ms.date: 01/25/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -52,7 +52,7 @@ Performance data related to page loads and Unified Interface (UCI) outbound netw
 
 ## Where is the page load data available?
 
-This data goes into the **pageView** table in Application Insights. An entry is logged every time a user loads a page in Unified Interface. The data logged will only include "clean" loads. Loads whose duration can't accurately be measured&mdash;fast navigation, switching away from the app, an alert message&mdash;won't be included. Because of this, we recommend against using this data for accurate numbers related to usage analytics.<!--note from editor: Suggested.--> 
+This data goes into the **pageView** table in Application Insights. An entry is logged every time a user loads a page in Unified Interface. The data logged will only include "clean" loads. Loads whose duration can't accurately be measured&mdash;fast navigation, switching away from the app, an alert message&mdash;won't be included. Because of this, we recommend against using this data for accurate numbers related to usage analytics.
 
 There are additional properties in **customDimensions** that provide more details for Unified Interface page loads. For example, this query will return the values for all the attributes in the **pageView** table.
 
@@ -88,7 +88,7 @@ For Microsoft Dataverse events, the **ID** field or **operation_ParentId** in Ap
 
 ## What kind of data is available for UCI outbound network requests?
 
-These are calls to other dependencies made by Unified Interface to render a certain page. They might be outgoing calls to Dataverse or to other integrations like Azure DevOps or Office<!--note from editor: Should this be Microsoft 365?-->. Use the following query to get this data, which is available in the UCI Request dependency table: 
+These are calls to other dependencies made by Unified Interface to render a certain page. They might be outgoing calls to Dataverse or to other integrations like Azure DevOps or Office. Use the following query to get this data, which is available in the UCI Request dependency table: 
 
 ```kusto
 dependencies
@@ -98,11 +98,11 @@ dependencies
 The UCI Request dependency table has the following fields: 
 
 - **Name**: The URL being invoked by Unified Interface.
-- **Target**: Currently the same as **Name**.<!--note from editor: What does "Currently" mean?-->
+- **Target**: Currently the same as **Name**.
 - **Success**: Whether the call succeeded or failed. 
 - **UserId**: The Dataverse system user ID of the signed-in user.
 - **Duration**: The duration of the call.
-- **customDimensions**: Contains the following attributes:<!--note from editor: Suggested.-->
+- **customDimensions**: Contains the following attributes:
 
   > [!div class="mx-imgBorder"] 
   > ![Application Insights UCI REQUEST](media/application-insights-uci-request.png "Application Insights UCI REQUEST")
@@ -121,21 +121,21 @@ The UCI Request dependency table has the following fields:
 
 ### Why are some of my users experiencing slowness on Unified Interface?
 
-One scenario where discovery and analysis<!--note from editor: Is this what "this" means here?--> can be very valuable is when a user from a region (say, Asia) reports that a form is performing slowly. This user based in Asia might be accessing an environment or organization in North America. The details will show the total load time in addition to the network-related duration. It might very well be that this is a cause of the slow performance perceived by the user.
+One scenario where discovery and analysis can be very valuable is when a user from a region (say, Asia) reports that a form is performing slowly. This user based in Asia might be accessing an environment or organization in North America. The details will show the total load time in addition to the network-related duration. It might very well be that this is a cause of the slow performance perceived by the user.
 
-You can use the **warmLatency**, **warmThroughput**, and **coldLatency** attributes to understand the breakdown of where time is spent on page loads and other Unified Interface requests, as shown in the following image.<!--note from editor: This image seems to be carrying much of the meaning of this section. Can you beef up the alt text so it explains how the reader can get to the UI?-->
+You can use the **warmLatency**, **warmThroughput**, and **coldLatency** attributes to understand the breakdown of where time is spent on page loads and other Unified Interface requests, as shown in the following image.
 
 > [!div class="mx-imgBorder"] 
 > ![Application Insights UCI slowness](media/application-insights-uci-slowness.png "Application Insights UCI slowness")
 
-In the above request<!--note from editor: To what does "the above request" refer? Should the query below be moved before the image?-->, the Unified Interface request takes longer than the actual Dataverse API (Web API) request. The breakdown in this case is the duration of the Dataverse API call (56 ms) plus the value of **CustomProperties.warmLatency**<!--note from editor: Should this be **customDimensions.warmLatency**? If not, should it be "...the value of **warmLatency** in the **Custom Properties" list"?--> (89 ms), which adds up to nearly the duration of the entire operation (144 ms). The **warmLatency** value is indicative of slowness for that particular client and might be an issue you can analyze at the user level by using the following query:
+In the above request, the Unified Interface request takes longer than the actual Dataverse API (Web API) request. The breakdown in this case is the duration of the Dataverse API call (56 ms) plus the value of **CustomDimensions.warmLatency** (89 ms), which adds up to nearly the duration of the entire operation (144 ms). The **warmLatency** value is indicative of slowness for that particular client and might be an issue you can analyze at the user level by using the following query:
 
 ```kusto
 dependencies
 | where ['type'] == "UCI REQUEST"
 | summarize avg(toint(customDimensions.warmLatency)), avg(toint(customDimensions.coldLatency)), avg(toint(customDimensions.warmThroughput)) by user_Id
 
-pageViews
+pageView
 | summarize avg(toint(customDimensions.warmLatency)), avg(toint(customDimensions.coldLatency)), avg(toint(customDimensions.warmThroughput)) by user_Id
 ```
 
@@ -144,14 +144,13 @@ pageViews
 The **userAgent** attribute in the **customDimensions** field in the Application Insights **requests** table has this data. You can use the following query to get an overview of the different sources from where users are accessing the system:
 
 ```kusto
-pageViews
+pageView
 | summarize count() by tostring(customDimensions.userAgent), user_Id
 
 dependencies
 | where ['type'] == "UCI REQUEST"
 ```
 
-<!--note from editor: The edits to this table assume that the right-hand column should have the "generic" version of the string in question, otherwise it doesn't seem helpful to just repeat the left column.-->
 |When the customDimensions.userAgent value starts with  | Where is the user accessing the system from?   |
 |---------|---------|
 |Mozilla     | Browser Type, version        |
@@ -159,19 +158,19 @@ dependencies
 |PowerApps     | Power Apps        |
 |Microsoft Office Excel     | Office Excel        |
 |Portals	     |  Portals       |
-|DynamicsDataIntegration     | Dynamics Data Integration <!--note from editor: Edit okay? -->       |
+|DynamicsDataIntegration     | Dynamics Data Integration       |
 |XrmToolBox.exe     | XrmToolBox        |
 |PluginRegistration     | Plugin Registration        |
 |LogicAppsDesigner     | Logic Apps Designer        |
 |Apache-HttpClient     |  Apache HTTP client       |
-|Microsoft Flow     | Power Automate <!--note from editor: Edit okay? Also, should the left-hand column entry be MicrosoftFlow, no space? (Or MicrosoftPowerAutomate?)-->       |
+|Microsoft Flow     | Power Automate        |
 |UnifiedServiceDesk     | Unified Service Desk        |
 |PostmanRuntime     | Postman        |
 |OfficeGroupsConnector     | Office Groups connector        |
-|Microsoft.Data.Mashup     | Power Query<!--note from editor: Edit okay? -->       |
+|Microsoft.Data.Mashup     | Power Query    |
 |Apache-Olingo     | Apache Olingo        |
 |Dalvik     |  Android       |
-|Jakarta Commons-Http<!--note from editor: Is that space okay? -->     | Jakarta        |
+|Jakarta Commons-Http    | Jakarta        |
 |Informatica     | Informatica        |
 |axios     | Axios        |
 |node-fetch     |  NodeJS       |
@@ -180,7 +179,7 @@ dependencies
 ### How do I get a count of users accessing from browser, mobile, or embedded applications?
 
 ```kusto
-pageViews
+pageView
 | summarize count() by tostring(customDimensions.hostType)
 ```
 
@@ -189,17 +188,16 @@ The following image shows an example set of results from this query.
 > [!div class="mx-imgBorder"] 
 > ![Application Insights sample result set](media/application-insights-sample-result-set.png "Application Insights sample result set")
 
-To narrow down to a specific user, use following query:<!--note from editor: What does "narrow down" mean in the context of getting a count? If you're narrowing the query down to one user, the count won't be much of a surprise.-->
+### How do I narrow down to a specific user?
 
 ```kusto
-pageViews
-| where user_Id == "<userid>"
+pageView
+| where user_Id == "[userid]"
 | summarize count() by tostring(customDimensions.hostType)
 ```
 
-### Can I use Application Insights in conjunction with Monitor?
-<!--note from editor: I think the preceding line was supposed to be a heading? The article structure got confusing in here. I made it a question just to be parallel with other headings in this section.-->
-[Azure Monitor](https://powerapps.microsoft.com/blog/monitor-now-supports-model-driven-apps/) helps with real-time troubleshooting on a session from the Unified Interface side. The end-to-end transaction requests should be<!--note from editor: Please see https://styleguides.azurewebsites.net/StyleGuide/Read?id=2700&topicid=35667. "Should" is for recommendations, not to express probability. Could this be "will probably be", "might be," or simply "will be"?--> available in Application Insights. To look at the logs for a given action, note the activity ID from a row in the event details page in Monitor. You can find the logs by using the following query:
+### How do I use Application Insights in conjunction with Monitor?
+[Azure Monitor](https://powerapps.microsoft.com/blog/monitor-now-supports-model-driven-apps/) helps with real-time troubleshooting on a session from the Unified Interface side. The end-to-end transaction requests will probably be available in Application Insights. To look at the logs for a given action, note the activity ID from a row in the event details page in Monitor. You can find the logs by using the following query:
 
 ```kusto
 union *
@@ -217,27 +215,27 @@ The user can share their session ID from the **About** section in Unified Interf
 
 > [!div class="mx-imgBorder"] 
 > ![Settings > About Session ID](media/settings-about-session-id.png "Settings > About Session ID")
-<!--note from editor: I moved the image up because the following sentence needs to be right before the query. The two images really should be side by side or cropped (do we want "2020 release wave 2 enabled" there?).-->
+
 You can then use this ID to find issues by looking at all the activities in that session. Use the following query:
-<!--note from editor: It doesn't look like variables are being handled consistently in these code blocks. In line 206, we have "[ActivityIDHere]". Line 225 has '<sessionIdHere>'. Also note, the text on line 225 doesn't render on Docs.-->
+
 ```kusto
 union *
-| where session_Id == '<sessionIdHere>'
+| where session_Id == '[sessionIdHere]'
 ```
 
 ### Which forms are being used in different locations, and what are the load performance of the forms in these locations?
 
 ```kusto
-pageViews
+pageView
 | summarize avg(duration) by name, client_City, client_CountryOrRegion
 ```
 
 ### Is an external API call the failure, and can I drill down into the error stack to help with debugging?
 
-The **Browser** view of the **Failures** panel<!--note from editor: Got this wording from the overview topic.--> contains Unified Interface outgoing requests. The requests going to Dataverse or the organization contain the organization URL. There might be other requests going to other URLs (for instance, in the following image, the organization has a customization calling out to dc.services.visualstudio.com). You can look at the end-to-end transaction to further examine the failures for these external outgoing calls.
-<!--note from editor: This isn't the correct alt text, needs to be fleshed out.-->
+The **Browser** view of the **Failures** panel contains Unified Interface outgoing requests. The requests going to Dataverse or the organization contain the organization URL. There might be other requests going to other URLs (for instance, in the following image, the organization has a customization calling out to dc.services.visualstudio.com). You can look at the end-to-end transaction to further examine the failures for these external outgoing calls.
+
 > [!div class="mx-imgBorder"] 
-> ![Settings > About Session ID](media/application-insights-external-api-call.png "Settings > About Session ID")
+> ![Browse vew of the Failures panel](media/application-insights-external-api-call.png "Browse vew of the Failures panel")
 
 ### Can I set an alert on the performance threshold for certain form actions? When the alert is received, will it allow a maker to diagnose and troubleshoot the issue?
 
