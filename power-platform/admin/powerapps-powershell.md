@@ -318,6 +318,30 @@ Get-AdminRecoverDeletedPowerApp -AppName 'AppName' -EnvironmentName 'Environment
 
 This recovers a canvas app that is discoverable via Get-AdminDeletedPowerAppsList cmdlet. Any canvas app that isn't displayed in Get-AdminDeletedPowerAppsList isn't recoverable.
 
+#### Designate SharePoint custom form environment
+
+The following cmdlets can be used to specify and verify which environment SharePoint custom forms are saved to, instead of the default environment. When the designated environment for SharePoint custom forms changes, this is the environment where newly created custom forms are saved. Existing custom forms do not automatically migrate to different environments as these cmdlets are used. The ability for a user to create a custom form in a designated environment requires that user to have the Environment Maker role. Users can be granted the Environment Maker role in https://admin.powerplatform.microsoft.com).  
+
+Note, any environment which isn’t the default environment, can be deleted. If the designated SharePoint custom form environment is deleted the custom forms are deleted with it.
+
+```powershell
+Get-AdminPowerAppSharepointFormEnvironment  
+```
+
+This returns the EnvironmentName for the environment currently designated for newly created SharePoint custom forms. If an environment has never been designated, the default environment is returned. 
+
+```powershell
+Set-AdminPowerAppSharepointFormEnvironment –EnvironmentName 'EnvironmentName' 
+```
+
+This designates the environment newly created SharePoint custom forms save to, instead of the default environment. Existing custom forms do not automatically migrate to the newly designated environment. Only production environments may be designated for SharePoint custom forms.  
+
+```powershell
+Reset-AdminPowerAppSharepointFormEnvironment  
+```
+
+This resets the default environment as the designated environment to save SharePoint custom forms.
+
 ### Power Automate commands
 
 Use these commands to view and modify data related to Power Automate.
