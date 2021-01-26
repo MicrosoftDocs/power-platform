@@ -1,12 +1,13 @@
 ---
 title: "Connect Gmail accounts using OAuth 2.0  | MicrosoftDocs"
 description: "Connect Gmail accounts using OAuth 2.0"
-author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/15/2021
-ms.author: jimholtz
+author: revachauhan
+ms.author: rechauha
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:

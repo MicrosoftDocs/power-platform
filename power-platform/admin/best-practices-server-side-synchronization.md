@@ -1,12 +1,13 @@
 ---
 title: "Best practices for server-side synchronization  | MicrosoftDocs"
 description: Best practices for server-side synchronization
-author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/04/2020
-ms.author: jimholtz
+author: revachauhan
+ms.author: rechauha
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
