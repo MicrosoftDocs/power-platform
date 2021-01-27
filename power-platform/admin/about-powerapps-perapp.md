@@ -26,7 +26,7 @@ The following release plan topic announces the availability of this feature: [Ne
 > [!IMPORTANT]
 > - Although, Power Apps per app plans appear in the [Microsoft 365 admin center](https://admin.microsoft.com), you shouldn't attempt to assign them to users there. Power Apps per app plans must be allocated to an environment (and not to users) by an admin in the [Power Platform admin center](https://admin.powerplatform.microsoft.com). After per app plans are allocated to an environment, they are assigned when apps are shared with users in the environment.
 > - You can't assign Power Apps per app plan baseline access licenses to users in a trial environment.
-> - [Power Apps for Windows](https://www.microsoft.com/store/productId/9NBLGGH5Z8F3) isn't supported if you have the Power Apps per app plan.
+> - [Power Apps for Windows](https://www.microsoft.com/p/power-apps/9nblggh5z8f3?activetab=pivot:overviewtab) isn't supported if you have the Power Apps per app plan.
 
 ## Steps for using per app plans 
 
