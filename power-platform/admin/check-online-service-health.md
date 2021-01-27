@@ -17,6 +17,8 @@ search.app:
 ---
 # How do I check my online service health?
 
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 You can quickly get a real-time status of your Dynamics 365 and Microsoft 365 services. The dashboard on the Microsoft 365 Admin Center provides a comprehensive view of the service health of your online services. If users are having trouble signing in to Dynamics 365 apps, check this page to see if there is a service outage.
   
 ## View a snapshot of service health  
@@ -46,4 +48,4 @@ Select the **Message center** on your home dashboard (from the menu: **Health** 
    
 ### See also  
 [Get Help + Support](get-help-support.md) <br />
-[Common Data Service analytics](analytics-common-data-service.md)
+[Microsoft Dataverse analytics](analytics-common-data-service.md)

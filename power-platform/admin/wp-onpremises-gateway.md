@@ -1,12 +1,11 @@
 ---
-title: "Preview: About on-premises gateways  | Microsoft Docs"
+title: "About on-premises gateways  | Microsoft Docs"
 description: About on-premises gateway
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/14/2020
+ms.date: 10/22/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -16,9 +15,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Preview: About on-premises gateway
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# About on-premises gateway
 
 The on-premises gateway allows Power Apps and Power Automate to reach back to on-premises resources to support hybrid integration scenarios. The gateway leverages Azure Service Bus relay technology to security allow access to on-premises resources.
 
@@ -61,4 +58,4 @@ A recovery key is assigned (that is, not auto-generated) by the administrator at
 
 ### See also
 [On-premises data gateway](https://docs.microsoft.com/power-bi/service-gateway-onprem) <br />
-[On-premises server cipher suites and TLS requirements](onpremises-server-cipher-tls-requirements.md)
+[On-premises server cipher suites and TLS requirements](server-cipher-tls-requirements.md)

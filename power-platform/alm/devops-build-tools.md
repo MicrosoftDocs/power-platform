@@ -33,15 +33,18 @@ environments</li></ul>
 <ul><li>Perform static analysis checks against solutions by using the Power Apps checker service</li></ul>
 
 
-The Microsoft Power Platform Build Tools tasks can be used along with any other available
+Microsoft Power Platform Build Tools tasks can be used along with any other available
 Azure DevOps tasks to compose your build and release pipelines. Pipelines
 that teams commonly put in place include Initiate, Export from Dev, Build, and Release.
 
 ![ALM powered by Azure DevOps](media/initiate-build-release.png "ALM powered by Azure DevOps")
 
+> [!NOTE] 
+> Microsoft Power Platform Build Tools are supported only for a Microsoft Dataverse environment with a database. More information: [Create an environment with a database](/power-platform/admin/create-environment#create-an-environment-with-a-database)
+
 ## What are Microsoft Power Platform Build Tools?
 
-The Microsoft Power Platform Build Tools are a collection of Power Platform&ndash;specific Azure DevOps
+Microsoft Power Platform Build Tools are a collection of Power Platform&ndash;specific Azure DevOps
 build tasks that eliminate the need to manually download custom tooling and
 scripts to manage the application lifecycle of apps built on the Power Platform. The tasks can be used
 individually to perform a simple task, such as importing a solution into a

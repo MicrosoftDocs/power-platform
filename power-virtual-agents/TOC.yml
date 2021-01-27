@@ -68,6 +68,8 @@
          href: advanced-flow.md
        - name: Use Bot Framework Skills
          href: advanced-use-skills.md
+       - name: Extend your bot with Bot Framework Composer
+         href: advanced-bot-framework-composer.md
        - name: Trigger hand-off to a live agent
          href: advanced-hand-off.md
     - name: Publish and integrate
@@ -110,8 +112,10 @@
          href: configuration-security.md
        - name: Configure web and Direct Line channel security
          href: configure-web-security.md
-       - name: Configure single sign-on
+       - name: Configure single sign-on for Web
          href: configure-sso.md
+       - name: Configure single sign-on for Teams
+         href: configure-sso-teams.md
        - name: Configure hand-off to a generic engagement hub
          href: configure-generic-handoff.md
        - name: Configure hand-off to Omnichannel for Customer Service
@@ -200,6 +204,8 @@
          href: teams/analytics-summary-teams.md
        - name: Analyze customer satisfaction
          href: teams/analytics-csat-teams.md
+       - name: Analyze session information
+         href: teams/analytics-sessions-teams.md
        - name: Analyze topic usage
          href: teams/analytics-topic-details-teams.md
        - name: Analyze billed session information

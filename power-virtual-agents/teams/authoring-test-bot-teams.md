@@ -3,7 +3,7 @@ title: "Check your chatbot with the Test bot in Microsoft Teams"
 description: "The Test bot lets you check how well your topics are working, and lets you navigate topic nodes in the Power Virtual Agents app in Microsoft Teams."
 keywords: "PVA"
 ms.date: 9/22/2020
-ms.service: dynamics-365-ai
+ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -18,7 +18,7 @@ ms.collection: virtual-agent
 > - [Power Virtual Agents web app](../authoring-test-bot.md)
 > - [Power Virtual Agents app in Microsoft Teams](authoring-test-bot-teams.md)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
+
 
 As you design your bot in Power Virtual Agents, you can use the **Test bot** pane to see how the bot leads  a user through the bot conversation. 
 

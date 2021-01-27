@@ -6,7 +6,7 @@ author: NHelgren
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/28/2020
+ms.date: 01/12/2021
 ms.author: matp
 search.audienceType: 
   - admin
@@ -18,6 +18,8 @@ search.app:
 ---
 
 # Asynchronous processing of cascading transactions
+
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 Certain transactions can be configured to cascade across all related records. This means the change on a parent record will be transacted upon (cascade down through) all the child records. Cascading relationships are configured at the entity level. For more information about cascading relationships, see [Configure entity relationship cascading behavior](https://docs.microsoft.com/powerapps/developer/common-data-service/configure-entity-relationship-cascading-behavior).
 
@@ -120,6 +122,11 @@ Imagine that you have accounts with a relationship to contact, which has a relat
 If the job runs successfully, the merge assigns all the related contacts and their orders to the target account.
 
 If during the record merge process another user deletes a related contact record, but order records still exist related to the contact record, the merge job will fail because a parent to a child record is missing. If you choose to skip the parenting check during the record merge, the orders with the missing contact record will be merged into the target account record. However, no related contact records will be assigned to the target account and the job will complete.
+
+#### Merge causing locks that prevent other access changes
+    
+The Cascade Merge operation grants access to the new owner of the subordinate entity. To do this, the Cascade Merge operation accesses and makes changes to the Principal Object Table which require a lock. If a merge operation contains many records (based on the cascade relationship), this lock could be in place for an extended amount of time. This could result in an error if an operation attempts to grant/revoke access of an unrelated record while the merge is running. If this occurs, try executing the merge in off hours so the blocking can be reduced.
+
 
 ### See also
 

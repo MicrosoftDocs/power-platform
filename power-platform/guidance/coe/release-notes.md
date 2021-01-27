@@ -25,16 +25,19 @@ Select each version below to see release notes and updates for each component. Y
 
 |  Component     | Latest version |
 |--------|-------------|
-| Core (Admin) Components |   [1.70](release-notes/core-1.70.md)    |
-| Governance (Compliance and Reporting) Components |   [1.23](release-notes/governance-1.23.md)  |
-| Nurture Components |   [1.17](release-notes/nurture-1.17.md)  |
-| Audit Log |   [1.1](release-notes/auditlog-1.1.md) |
+| Core (Admin) Components |   [1.72](release-notes/core-1.72.md)    |
+| Governance (Compliance and Reporting) Components |   [1.25](release-notes/governance-1.25.md)  |
+| Nurture Components |   [1.23](release-notes/nurture-1.23.md)  |
+| Audit Log |   [1.0](release-notes/auditlog-1.0.md) |
 | Theming Components |   [1.1](release-notes/theming-1.1.md) |
 
 ### All Core (Admin) Components versions
 
 |  Version | First available |
 | --------- | ---------------|
+| [1.72](release-notes/core-1.72.md) | January 6, 2021 |
+| [1.71](release-notes/core-1.71.md) | November 16, 2020 |
+| [1.70.6](release-notes/core-1.70.6.md) | October 16, 2020 |
 | [1.70](release-notes/core-1.70.md) | September 18, 2020 |
 | [1.60](release-notes/core-1.60.md) | August 14, 2020 |
 | [1.54](release-notes/core-1.54.md) | July 24, 2020 |
@@ -43,6 +46,7 @@ Select each version below to see release notes and updates for each component. Y
 
 |  Version | First available |
 | --------- | ---------------|
+| [1.25](release-notes/governance-1.25.md) | November 16, 2020 |
 | [1.23](release-notes/governance-1.23.md) | September 18, 2020 |
 | [1.21](release-notes/governance-1.21.md) | August 14, 2020 |
 | [1.18](release-notes/governance-1.18.md) | July 8, 2020 |
@@ -51,34 +55,6 @@ Select each version below to see release notes and updates for each component. Y
 
 |  Version | First available |
 | --------- | ---------------|
+| [1.23](release-notes/nurture-1.23.md) | October 16, 2020 |
 | [1.17](release-notes/nurture-1.17.md) | September 18, 2020 |
 | [1.14](release-notes/nurture-1.14.md) | June 27, 2020 |
-
-### All Audit Log Component versions
-
-|  Version | First available |
-| --------- | ---------------|
-| [1.1](release-notes/auditlog-1.1.md) | September 18, 2020 |
-| [1.0.0.16](release-notes/auditlog-1.0.md) | May 29, 2020 |
-
-<!-- NOTE: We will add this with the next release to have a version history, but had feedback that adding this with the first release adds confusion for users who are not familiar with the Power Apps release notes
-### All Core (Admin) Components versions
-
-### All Governance (Compliance and Reporting) Components versions
-
-|  Version | First available |
-| --------- | ---------------|
-| [1.18](release-notes/governance-1.18.md) | June 27, 2020 |
-
-### All Nurture Components versions
-
-|  Version | First available |
-| --------- | ---------------|
-| [1.14](release-notes/nurture-1.14.md) | June 27, 2020 |
-
-### All Audit Log Component versions
-
-|  Version | First available |
-| --------- | ---------------|
-| [1.0.0.16](release-notes/auditlog-1.0.0.16.md) | May 29, 2020 |
->

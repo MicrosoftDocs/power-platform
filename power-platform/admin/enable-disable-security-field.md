@@ -1,13 +1,14 @@
 ---
 title: "Enable or disable security for a field  | MicrosoftDocs"
 description: Enable or disable security for a field 
-author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/25/2020
-ms.author: jimholtz
+author: jayasreekumar
+ms.author: jkumar
+ms.reviewer: jimholtz
+ms.custom: "admin-security"
 search.audienceType: 
   - admin
 search.app:
@@ -17,6 +18,8 @@ search.app:
   - Flow
 ---
 # Enable or disable security for a field to control access
+
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 <!-- legacy procedure -->
 

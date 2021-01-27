@@ -3,7 +3,7 @@ title: "Customize how the bot looks to users in Microsoft Teams"
 description: "Change the name, icon, and color of your bot in the Power Virtual Agents app in Microsoft Teams without needing to know any code."
 keywords: "PVA"
 ms.date: 9/22/2020
-ms.service: dynamics-365-ai
+ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -20,7 +20,7 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](../customize-default-canvas.md)
 > - [Power Virtual Agents app in Microsoft Teams](customize-default-canvas-teams.md)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
+
 
 You can customize how the bot looks when added as an app in Microsoft Teams. You can change the icon
 and the bot name at any time, and add a long and short description when you publish the bot.

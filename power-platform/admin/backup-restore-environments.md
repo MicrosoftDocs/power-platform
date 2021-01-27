@@ -6,7 +6,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/04/2020
+ms.date: 01/19/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -28,7 +28,7 @@ Some backups take place without you having to do anything.
 
 About **system backups**:  
   
-- All your environments are backed up.  
+- All your environments, except Trial environments (standard and subscription-based), are backed up.  
 - System backups occur continuously. The underlying technology used is Azure SQL Database. See SQL Database documentation [Automated backups](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups) for details.
 - System backups for production environments that have been created with a database and have one or more Dynamics 365 applications installed are retained up to 28 days. System backups for production environments which do not have Dynamics 365 applications deployed in them will be retained for 7 days. System backups for sandbox environments will be retained for 7 days.
 - You must restore an environment to the same region in which it was backed up.
@@ -181,9 +181,9 @@ Obtaining a copy of your database backup isn't available. Moving your online dat
 ### Do we have any database size restriction to take a backup or restore an organization through user interface (UI) or API?
 We don't have any restriction on database size (or storage capacity/entitlement) to take a backup through UI or API. However, when an organization’s storage capacity usage is greater than the entitled capacity, the following admin operations will be blocked:
 
-- **Restore an environment**
+- Restore an environment (requires minimum 1GB capacity available)
 - Create new environment (requires minimum 1GB capacity available)
-- Copy an environment
+- Copy an environment (requires minimum 1GB capacity available)
  
 To be compliant with storage usage requirements, customers can always [free up storage](free-storage-space.md), [archive data](recover-database-space-deleting-audit-logs.md), [delete unwanted environments](delete-environment.md), or buy more capacity. To learn more about capacity add-ons, see the Add-ons section in the Dynamics 365 Licensing Guide or the Power Apps and Power Automate Licensing Guide. You can work through your organization’s standard procurement process to purchase capacity add-ons.
  

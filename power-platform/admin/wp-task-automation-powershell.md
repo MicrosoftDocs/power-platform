@@ -17,13 +17,15 @@ search.app:
 ---
 # Automation of tasks with PowerShell 
 
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 The PowerShell cmdlets allow you to do similar tasks that you would do with the admin portals but do them in scripting where you can sequentially execute multiple commands or pipe output from one to automate common tasks. Using the PowerShell cmdlets or the management connectors, you can build flows and apps that help you to implement your governance policies. There are multiple PowerShell cmdlets that you can work with. The following is an overview of each that you would likely interact with.
 
 |PowerShell cmdlet library  |Common tasks  |
 |---------|---------|
 |Power Apps cmdlets <br/>[PowerShell support for Power Apps](powerapps-powershell.md)  |Designed for app makers and administrators to automate tasks with environments and associated apps, flows, and connectors.      |
 |Microsoft 365 cmdlets<br/> https://docs.microsoft.com/office365/enterprise/powershell/getting-started-with-office-365-powershell    |These are focused on Microsoft 365 related tasks and can be used to automate user-related actions and tasks; for example, assignment of licenses.         |
-|Dynamics 365 cmdlets<br/> https://docs.microsoft.com/powershell/dynamics365/customer-engagement/overview     |These are useful if you have any environments with Common Data Service databases. Modules include support for using the Common Data Service online admin API, as well as to automate solution deployment to the Common Data Service environments.         |
+|Dynamics 365 cmdlets<br/> https://docs.microsoft.com/powershell/dynamics365/customer-engagement/overview     |These are useful if you have any environments with Microsoft Dataverse databases. Modules include support for using the Dataverse online admin API, as well as to automate solution deployment to the Dataverse environments.         |
 |Microsoft Azure cmdlets <br/> https://docs.microsoft.com/powershell/azure/overview     | The Azure cmdlets are useful if you are including any Azure components in your overall solution. This could also be used to script setup of the on-premises application gateway.        |
 
 You can use a combination of all the above cmdlets to build PowerShell scripts to do bulk operations on users, environments or their resources.

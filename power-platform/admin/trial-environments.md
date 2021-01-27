@@ -7,7 +7,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/27/2020
+ms.date: 01/19/2021
 search.audienceType: 
   - admin
 search.app:
@@ -17,6 +17,9 @@ search.app:
   - Flow
 ---
 # About trial environments
+
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 Using the Power Platform admin center, you can create environments of multiple types. Using trial environments, companies and customers can try out new features and solutions. There are two types of trial environments: trial (standard) and trial (subscription-based). 
 
 > [!NOTE]
@@ -38,7 +41,7 @@ The type of trial environment you create depends on where you start and your ten
 |Trial (standard)     |  User or admin      |  Power Platform admin center. See [Create a trial (standard) environment in the Power Platform admin center](#create-a-trial-standard-environment-in-the-power-platform-admin-center)       |
 |Trial (standard)       |  User or admin         | [https://trials.dynamics.com](https://trials.dynamics.com)     |
 |Trial (subscription-based)      | Admin        | Power Platform admin center. See [Create a trial (subscription-based) environment in the Power Platform admin center](#create-a-trial-subscription-based-environment-in-the-power-platform-admin-center)        |
-|Trial (subscription-based)      |  User or admin        | "Get started"<!--Suggested--> pages, such as: <br /> <ul><li>[https://dynamics.microsoft.com/get-started/?appname=salespro](https://dynamics.microsoft.com/get-started/?appname=salespro)</li><li>[https://dynamics.microsoft.com/get-started/?appname=customerservice](https://dynamics.microsoft.com/get-started/?appname=customerservice)</li></ul>      |
+|Trial (subscription-based)      |  User or admin        | "Get started" pages, such as: <br /> <ul><li>[https://dynamics.microsoft.com/get-started/?appname=salespro](https://dynamics.microsoft.com/get-started/?appname=salespro)</li><li>[https://dynamics.microsoft.com/get-started/?appname=customerservice](https://dynamics.microsoft.com/get-started/?appname=customerservice)</li></ul>      |
 
 ## Create a trial (standard) environment in the Power Platform admin center
 
@@ -57,7 +60,7 @@ The type of trial environment you create depends on where you start and your ten
    |Type     | Choose **Trial**.        |
    |Region     | Choose a region for the environment.        |
    |Purpose     | A description of the environment.         |
-   |Create a database for this environment? | Select **Yes** to add a Common Data Service database to the trial (standard) environment. |
+   |Create a database for this environment? | Select **Yes** to add a Microsoft Dataverse database to the trial (standard) environment. |
 
    > [!div class="mx-imgBorder"] 
    > ![Create a new trial (standard) environment, page two](./media/trial-subscription-standard.png "Create a new trial (standard) environment, page two")
@@ -92,7 +95,7 @@ The type of trial environment you create depends on where you start and your ten
    |Type     | **Trial (subscription-based)**.      |
    |Region     | A region for the environment.        |
    |Purpose     | A description of the environment.         |
-   |Create a database for this environment | This setting is preset to **Yes** and can't be changed, because a Common Data Services database must be created for a trial (subscription-based) environment.
+   |Create a database for this environment | This setting is preset to **Yes** and can't be changed, because a Dataverse database must be created for a trial (subscription-based) environment.
 
    > [!div class="mx-imgBorder"] 
    > ![Create a new trial (subscription-based) environment, page two](media/trial-subscription-based.png "Create a new trial (subscription-based) environment, page two")
@@ -151,11 +154,15 @@ It might take several hours to convert to a production environment.
 
 ### Who can convert a trial environment to a production environment?
 
-The organization (tenant) admin can determine who's allowed to create trial environments and convert them to production. If you're allowed to, and you have 1 GB of available production database capacity, you can convert a trial environment to production. You might need to free up or purchase additional capacity if the trial environment database exceeds available production capacity. To determine the size of the trial environment database, see [Common Data Service storage capacity](capacity-storage.md).
+The organization (tenant) admin can determine who's allowed to create trial environments and convert them to production. If you're allowed to, and you have 1 GB of available production database capacity, you can convert a trial environment to production. You might need to free up or purchase additional capacity if the trial environment database exceeds available production capacity. To determine the size of the trial environment database, see [Dataverse storage capacity](capacity-storage.md).
 
 ### I can see a trial (subscription-based) environment type option, why can't I create this trial type?
 
 Make sure that you have an active Dynamics 365 Trial subscription.
+
+### Why can’t I backup my trial environment?
+
+Administrative operations (copy, backup, restore, and reset) are not supported for trials, except delete.
 
 ### How can I retain my data and resources if I don't have a way to convert the trial (standard) environment to a production environment?
 
@@ -166,7 +173,7 @@ Here are some guidelines for exporting resources.
 |Type of resource in the environment  |How do I export it?  |
 |---------|---------|
 |Apps (canvas and model-driven) and flows     |You can use [packaging](../alm/environment-and-tenant-migration.md) to export apps and flows from one environment.         |
-|Data in the database (Common Data Service environment)     |<ul><li>[Export to Excel](/powerapps/user/export-data-excel) and save the data. You can then [import the data](/powerapps/user/import-data) into another environment.</li><li>Use [Data Integrator services](data-integrator.md) and APIs to export data into another environment.</li></ul> |
+|Data in the database (Dataverse environment)     |<ul><li>[Export to Excel](/powerapps/user/export-data-excel) and save the data. You can then [import the data](/powerapps/user/import-data) into another environment.</li><li>Use [Data Integrator services](data-integrator.md) and APIs to export data into another environment.</li></ul> |
 
 We delete trial (standard) environments that haven't had any activity in the environment databases for 30 days.
 

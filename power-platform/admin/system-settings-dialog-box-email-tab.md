@@ -18,6 +18,8 @@ search.app:
 ---
 # System Settings Email tab
 
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 Use the settings on this page to set up email processing in model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service.  
 
 <!-- legacy procedure -->

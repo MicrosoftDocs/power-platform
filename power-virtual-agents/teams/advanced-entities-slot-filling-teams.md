@@ -3,7 +3,7 @@ title: "Create and use entities in Microsoft Teams"
 description: "Use entities in your chatbots to create sophisticated conversations."
 keywords: "PVA, teams"
 ms.date: 9/22/2020
-ms.service: dynamics-365-ai
+ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -21,7 +21,7 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](../advanced-entities-slot-filling.md)
 > - [Power Virtual Agents app in Microsoft Teams](advanced-entities-slot-filling-teams.md)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
+
 
 Entities in chatbots let you store information in similar groups. 
 

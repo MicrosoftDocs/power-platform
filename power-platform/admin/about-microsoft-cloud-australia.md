@@ -16,6 +16,9 @@ search.app:
   - Flow
 ---
 # About the Microsoft Cloud Australia datacenter
+
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
  If you’re an existing Power Apps customer with a billing address mapping to a new data center region, review the information in this topic to understand the move process.  
   
 <a name="BKMK_Expansion"></a>   
@@ -57,9 +60,9 @@ Services deployed in the Australia East Region will replicate data to the Austra
   
  For the Australia East and Southeast Region datacenters, access to provisioning resources in these datacenters is limited, as described here:  
   
-- For Web Direct, access to the datacenters is based on the country/region set in your Common Data Service account.  
+- For Web Direct, access to the datacenters is based on the country/region set in your Microsoft Dataverse account.  
   
-  - If the account country/region is Australia, New Zealand or Fiji, Common Data Service resources will be provisioned in the Australia East and Southeast Region datacenters.  
+  - If the account country/region is Australia, New Zealand or Fiji, Dataverse resources will be provisioned in the Australia East and Southeast Region datacenters.  
   
   - If the account country/region is not Australia, New Zealand, or Fiji, the customer will not be able to provision services in the Australia East and Southeast Region datacenters. To do so a customer needs to try or purchase customer engagement apps (such as Dynamics 365 Sales and Customer Service) for an organization located in Australia, New Zealand or Fiji. The customer can create another Web direct account for organizations located in Australia, New Zealand and Fiji, with a billing address in any these regions, if they wish to select and deploy services in the Australia East and Southeast Region datacenters.  
   

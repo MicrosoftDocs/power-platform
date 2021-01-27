@@ -1,5 +1,5 @@
 ---
-title: "When to edit the customizations file (Common Data Service) | Microsoft Docs"
+title: "When to edit the customizations file (Microsoft Dataverse) | Microsoft Docs"
 description: "The customizations.xml file that is exported as part of an unmanaged solution can be edited to perform specific customization tasks. After editing the file you can compress the modified file together with the other files exported in the unmanaged solution. You apply the changes by importing that modified unmanaged solution."
 keywords: ""
 ms.date: 06/29/2020
@@ -35,7 +35,7 @@ The customizations.xml file that is exported as part of an unmanaged solution ca
  For more information about editing the ribbon by editing the customization.xml manually, see [Customize commands and the ribbon](/powerapps/developer/model-driven-apps/customize-commands-ribbon).  
   
  **Editing the SiteMap**  
- The SDK describes the process of editing the SiteMap by editing the customization.xml file directly. However, its recommended that you use the site map designer in Common Data Service to create or update site maps. More information: [Create a site map for an app using the site map designer](/powerapps/maker/model-driven-apps/create-site-map-app)
+ The SDK describes the process of editing the SiteMap by editing the customization.xml file directly. However, its recommended that you use the site map designer in Microsoft Dataverse to create or update site maps. More information: [Create a site map for an app using the site map designer](/powerapps/maker/model-driven-apps/create-site-map-app)
   
  You can also use one of the community-developed site map editors, such as the [XrmToolBox Site Map Editor](https://www.xrmtoolbox.com/plugins/MsCrmTools.SiteMapEditor/).   
   
@@ -49,7 +49,7 @@ The customizations.xml file that is exported as part of an unmanaged solution ca
  Definitions of views for entities are included in the customizations.xml file and may be manually edited. The view editor in the application is the most commonly used tool for this purpose. Editing customizations.xml is an alternative method. For more information, see [Customize entity views](/powerapps/developer/model-driven-apps/customize-entity-views).
   
  **Editing the ISV.config**  
- In earlier versions of Dynamics 365 Common Data Service, ISV.Config was the way to add client application extensions as well as some other configuration options. For Microsoft Dynamics CRM 2011 and Microsoft Dynamics 365 Online, the Ribbon provides the way to extend the application. The only remaining capability left in ISV.Config is to customize the appearance of the Service Calendar. For more information, see [Service Calendar Appearance Configuration](/dynamics365/customer-engagement/developer/customize-dev/service-calendar-appearance-configuration)
+ In earlier versions of Dynamics 365 Dataverse, ISV.Config was the way to add client application extensions as well as some other configuration options. For Microsoft Dynamics CRM 2011 and Microsoft Dynamics 365 Online, the Ribbon provides the way to extend the application. The only remaining capability left in ISV.Config is to customize the appearance of the Service Calendar. For more information, see [Service Calendar Appearance Configuration](/dynamics365/customer-engagement/developer/customize-dev/service-calendar-appearance-configuration)
   
 ## Unsupported tasks  
  Defining any other solution components by editing the exported customizations.xml file is not supported. This includes the following:  

@@ -3,7 +3,7 @@ title: "Report analytics, performance, and usage in Microsoft Teams"
 description: "The Summary analytics page in the Power Virtual Agents app in Microsoft Teams shows you the scope of analytics, clustered with AI technology, so you can instantly see what topics and bots need improving."
 keywords: "PVA"
 ms.date: 9/22/2020
-ms.service: "dynamics-365-ai"
+ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -20,7 +20,7 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](../analytics-summary.md)
 > - [Power Virtual Agents app in Microsoft Teams](analytics-summary-teams.md)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
+
 
 The Summary page gives you a broad overview of how well your bot is doing with these charts:
 

@@ -1,12 +1,13 @@
 ---
 title: "Connect to Exchange Server (on-premises) | MicrosoftDocs"
 description: Connect to Exchange Server (on-premises)
-author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/04/2020
-ms.author: jimholtz
+ms.date: 10/12/2020
+author: revachauhan
+ms.author: rechauha
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
@@ -17,6 +18,8 @@ search.app:
 ---
 # Connect to Exchange Server (on-premises)
 
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 <!-- legacy procedure -->
 
 With version 9.0., you can connect your customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), with [!INCLUDE[pn_Exchange_Server_full](../includes/pn-exchange-server-full.md)] (on-premises).  
@@ -26,17 +29,11 @@ With version 9.0., you can connect your customer engagement apps (Dynamics 365 S
 <a name="BKMK_PreReq"></a>   
 ## Prerequisites  
 
-1. **Exchange Server**. The following versions are supported: [!INCLUDE[pn_ms_Exchange_Server_2010_short](../includes/pn-ms-exchange-server-2010-short.md)] SP3, [!INCLUDE[pn_Exchange_Server_2013_short](../includes/pn-exchange-server-2013-short.md)] SP1, [!INCLUDE[pn_exchange_server_2016_short](../includes/pn-exchange-server-2016-short.md)], or Exchange Server 2019.  
+1. **Exchange Server**. The following versions are supported: [!INCLUDE[pn_Exchange_Server_2013_short](../includes/pn-exchange-server-2013-short.md)] SP1, [!INCLUDE[pn_exchange_server_2016_short](../includes/pn-exchange-server-2016-short.md)], or Exchange Server 2019.  
 
 2. **Authentication**. During installation, [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] configures [!INCLUDE[pn_Internet_Information_Services](../includes/pn-internet-information-services.md)]. To connect customer engagement apps with [!INCLUDE[pn_Exchange_Server_short](../includes/pn-exchange-server-short.md)], Windows (NTLM) or Basic authentication must be enabled in [!INCLUDE[pn_Exchange_Server_short](../includes/pn-exchange-server-short.md)]. When configuring Windows (NTLM) authentication, make sure Basic authentication is disabled on Exchange server.  
 
      For more information on authentication, see:  
-
-   - Exchange Server 2010: [Configure Integrated Windows Authentication](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/aa998638(v=exchg.141))
-
-   - Exchange Server 2010: [Configure Basic Authentication](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/aa996407(v=exchg.141))  
-
-   - Exchange Server 2010: [Default Authentication Settings for Exchange-related Virtual Directories](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/gg247612(v=exchg.141))  
 
    - Exchange Server 2013: [Authentication and EWS in Exchange](https://docs.microsoft.com/exchange/client-developer/exchange-web-services/authentication-and-ews-in-exchange)  
 
@@ -48,7 +45,7 @@ With version 9.0., you can connect your customer engagement apps (Dynamics 365 S
 
 3. **ApplicationImpersonation role**. You need to create and configure a service account with the **ApplicationImpersonation** role in [!INCLUDE[pn_Microsoft_Exchange](../includes/pn-microsoft-exchange.md)]. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Impersonation and EWS in Exchange](https://msdn.microsoft.com/library/office/dn722377\(v=exchg.150\).aspx).  
 
-4. **Secured connection**. The connection between customer engagement apps and Exchange must be encrypted via [TLS/SSL](https://docs.microsoft.com/windows/win32/secauthn/cipher-suites-in-schannel) and current [cipher suites](onpremises-server-cipher-tls-requirements.md). 
+4. **Secured connection**. The connection between customer engagement apps and Exchange must be encrypted via [TLS/SSL](https://docs.microsoft.com/windows/win32/secauthn/cipher-suites-in-schannel) and current [cipher suites](server-cipher-tls-requirements.md). 
 
 5. **Exchange Web Services (EWS)**. Connections to EWS must be allowed through the firewall. Often a reverse proxy is used for the exterior facing connection.  
 

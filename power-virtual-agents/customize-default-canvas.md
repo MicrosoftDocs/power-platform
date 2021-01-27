@@ -3,7 +3,7 @@ title: "Customize the web chat canvas"
 description: "Change the name, icon, and color of your bot with CSS and JavaScript styling."
 keywords: "PVA"
 ms.date: 9/22/2020
-ms.service: dynamics-365-ai
+ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -46,10 +46,7 @@ Lastly, you can [change the name and bot icon](#change-the-bot-name-and-icon) (w
 
 ## Change the bot name and icon
 
-You can change the bot's name and icon. 
-
->[!NOTE]
->Changing the bot's avatar icon only applies to the bot's avatar when it's [added to Microsoft Teams](publication-add-bot-to-microsoft-teams.md).
+You can change the bot's name and icon. This will affect the icon in all channels where you publish your bot.
 
 **To change the bot's name and icon:**
 

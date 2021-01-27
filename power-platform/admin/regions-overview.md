@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/31/2020
+ms.date: 01/14/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -16,6 +16,8 @@ search.app:
   - Flow
 ---
 # Regions overview 
+
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 For multinational companies with employees and customers distributed around the world, you can create and manage environments specific to your global regions. You can create an environment in a different region than where your tenant resides. Local environments can provide quicker data access for users in that region. Be sure to read [A multi-environment deployment](multiple-online-environments-tenants.md#a-multi-environment-deployment) to understand the features of multiple environments.  
 
@@ -35,17 +37,7 @@ If you're an administrator, you can determine the region of each environment in 
 
 ## What regions are available?
 
-- Asia
-- Australia
-- Canada
-- Europe
-- France
-- India
-- Japan
-- South America
-- United Kingdom
-- United States
-- US Government (GCC)
+Select the **View Report** button in [Dynamics 365 and Power Platform availability](https://dynamics.microsoft.com/geographic-availability/).
 
 ## Who can create environments in these regions?
 
@@ -69,12 +61,21 @@ You can create a database for an environment in one region (for example, United 
 
 ## What features are specific to a given region?
 
-Environments can be created in different regions, and are bound to that geographic location. When you create an app in an environment, that app is deployed in datacenters in that geographic location. This applies to any items you create in that environment, including  databases in the Common Data Service, apps, connections, gateways, and custom connectors.
+Environments can be created in different regions, and are bound to that geographic location. When you create an app in an environment, that app is deployed in datacenters in that geographic location. This applies to any items you create in that environment, including  databases in the Microsoft Dataverse, apps, connections, gateways, and custom connectors.
 
 For optimal performance, if your users are in Europe, create and use the environment in the Europe region. If your users are in the United States, create and use the environment in the U.S.
 
 > [!NOTE]
 > On-premises data gateways aren't available in the India region.
+> 
+> Microsoft Dataverse for Teams is not available in the following regions:
+> - Germany
+> - South Africa
+> - South Korea
+> - Switzerland
+> - UAE
+> - GCC
+> - GCC High
 
 ## Can I create an environment outside of my tenant region?
 

@@ -2,11 +2,10 @@
 title: "Geo to geo migrations  | MicrosoftDocs"
 description: Geo to geo migrations
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/28/2020
+ms.date: 01/13/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -20,13 +19,15 @@ search.app:
 
 We continue to open new datacenter regions for business services, and to add datacenters to existing regions.  
 
- The Geo Migration feature will allow customers to move their environments in a single tenant from one region to another. There are no user-interface changes or version changes as part of this move. In the case of an environment residing in an [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] environment in a single tenant, moving the Common Data Service environment doesn't move the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] environment; they are separate services. Your environment will still appear in your tenant alongside the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] environment.  
+ The Geo Migration feature will allow customers to move their environments in a single tenant from one region to another. There are no user-interface changes or version changes as part of this move. In the case of an environment residing in an [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] environment in a single tenant, moving the Microsoft Dataverse environment doesn't move the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] environment; they are separate services. Your environment will still appear in your tenant alongside the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] environment.  
 
 > [!IMPORTANT]
 > - Support for geo migration is limited and generally not available.
-> - To request a regional migration, please contact your account manager or see [Technical Support](get-help-support.md).  
+> - To request a regional migration, please contact your account manager or see [Technical Support](get-help-support.md).
+> - After making a request, expect at least 10 days for the migration to be completed.  
 > - Geo migrations are not supported into or out of US GCC, US GCC High, or China.
 > - The Dynamics 365 Marketing app does not support geo migration, due to component dependencies. For more information, see [Manage your Dynamics 365 Marketing instances](https://docs.microsoft.com/dynamics365/marketing/manage-marketing-instances).
+> - Geo migration is not supported for Microsoft Dataverse for Teams environments.
 
 ## Impact of migrating  
  Moving an environment to a different region changes your tenant to be multiregional - enabling regional features in the [!INCLUDE[pn_dyn_365_admin_center](../includes/pn-dyn-365-admin-center.md)].  
@@ -37,13 +38,14 @@ We continue to open new datacenter regions for business services, and to add dat
 - Canada (CAN) = .crm3.dynamics.com  
 - Europe, Middle East, Africa (EMEA) = .crm4.dynamics.com  
 - Asia Pacific (APAC) = *.crm5.dynamics.com  
-- Australia (OCE) = *.crm6.dynamics.com  
+- Australia (OCE) = *.crm6.dynamics.com
+- Germany (GER) = *.crm16.dynamics.com 
 - Japan (JPN) = *.crm7.dynamics.com  
 - India (IND) = *.crm8.dynamics.com 
 - United Kingdom (UK) = *.crm11.dynamics.com  
 - United Arab Emirates (UAE) = *.crm15.dynamics.com 
 
- [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Direct sign in](sign-in-office-365-apps.md#BKMK_directsignin) and [Discover the URL for your organization using the Web API](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/discover-url-organization-web-api)
+ [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Direct sign in](sign-in-office-365-apps.md#BKMK_directsignin)
 
  For example, if your existing organization URL is https://myorg.crm<strong>5</strong>.dynamics.com and you request it to be moved to Australia, the new organization URL will be https://myorg.crm<strong>6</strong>.dynamics.com.  
 

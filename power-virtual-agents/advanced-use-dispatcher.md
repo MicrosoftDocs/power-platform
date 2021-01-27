@@ -3,7 +3,7 @@ title: "Use a Microsoft Bot Framework bot"
 description: "Use and extend an existing Microsoft Bot Framework bot to work with Power Virtual Agents."
 keywords: "extensibility, integration, extend bot, bot framework, PVA"
 ms.date: 9/22/2020
-ms.service: "dynamics-365-ai"
+ms.service: power-virtual-agents
 ms.topic: article
 author: pawant-ms
 ms.author: iawilt
@@ -66,7 +66,7 @@ You'll need to retrieve your Power Virtual Agents bot's content (topics and utte
 
 ### Retrieve topics and utterances from your bot
 
-  1.	Export `BotContent` and `Annotations` from Common Data Service. [Review how to export data](https://docs.microsoft.com/power-virtual-agents/gdpr-export).
+  1.	Export `BotContent` and `Annotations` from Microsoft Dataverse. [Review how to export data](https://docs.microsoft.com/power-virtual-agents/gdpr-export).
   
   2.  Download the zip file and unzip it to find two CSV files: `annotations.csv` and `msdynce_botcontents.csv`
   

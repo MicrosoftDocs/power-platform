@@ -1,12 +1,14 @@
 ---
 title: "Data encryption | MicrosoftDocs"
 description: Data encryption
-author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/04/2020
-ms.author: matp
+author: jayasreekumar
+ms.author: jkumar
+ms.reviewer: matp
+ms.custom: "admin-security"
 search.audienceType: 
   - admin
 search.app:
@@ -16,6 +18,8 @@ search.app:
   - Flow
 ---
 # Enhance security by encrypting your data
+
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), use standard [!INCLUDE[pn_MS_SQL_Server](../includes/pn-ms-sql-server.md)] cell level encryption for a set of default entity attributes that contain sensitive information, such as user names and email passwords. This feature can help organizations meet FIPS 140-2 compliance.  
   

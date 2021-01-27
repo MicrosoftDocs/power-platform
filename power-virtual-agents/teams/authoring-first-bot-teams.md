@@ -3,7 +3,7 @@ title: "Create conversational chatbots in Microsoft Teams"
 description: "Create a new bot in the Power Virtual Agents app in Microsoft Teams."
 keywords: "PVA, create"
 ms.date: 9/22/2020
-ms.service: dynamics-365-ai
+ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -20,7 +20,7 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](../authoring-first-bot.md)
 > - [Power Virtual Agents app in Microsoft Teams)](authoring-first-bot-teams.md)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
+
 
 You can create chatbots in the Power Virtual Agents app in Teams and then share them with other people in your team, company, or organization.
 
@@ -57,6 +57,9 @@ The very first step is to add the Power Virtual Agents app. Then you can create 
 When you create a bot, it has to go into a team - everyone in that team will be able to see and use the bot (but you can share it with people in other teams later on). If you want other people to have access to edit the bot, you need to [add them to your team](admin-share-bots-teams.md#share-bots).
 
 All bots have to belong to a team. You can [create a new team](/MicrosoftTeams/get-started-with-teams-create-your-first-teams-and-channels#create-a-team) if necessary, before you add a bot to it.
+
+>[!IMPORTANT]
+>You can't create a bot in a hidden membership team (a team where members can't see the details of other members). If you try to do so, you'll see an error message, and you'll need to create your bot in another team that doesn't have the [hiddenmembership](/graph/api/resources/group?view=graph-rest-1.0&preserve-view=true#group-visibility-options) setting.
 
 The first time you create a bot in a team, it will take 1 to 10 minutes to build the necessary systems in the backend, but every bot after that will take much less time (around 1 or 2 minutes).
 

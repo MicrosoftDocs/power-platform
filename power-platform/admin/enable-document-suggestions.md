@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/26/2020
+ms.date: 10/27/2020
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -17,19 +17,24 @@ search.app:
 ---
 # Enable document suggestions to recommend related documents
 
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
+> [!IMPORTANT]
+> The document suggestions feature has been deprecated for all tables, except the case table. The case table is available with Dynamics 365 Customer Service. More information: [Create a case](/dynamics365/customer-service/customer-service-hub-user-guide-create-a-case)
+
 Enabling Document Suggestions helps your Dynamics 365 apps web browser and mobile users be aware of important documents related to what they're working on in Dynamics 365 apps such as a big sales opportunity. You, as the admin, define relevant fields. A recommendation engine using Azure text analytics uses keyword matching to associate related records to find similar documents. You create similarity rules in Dynamics 365 apps to provide your own similarity logic. Dynamics 365 apps then presents a list of suggested documents to the user while the user works in the current record.  
   
- ![Document recommendations feature diagram](media/document-recommendations.png "Document recommendations feature diagram")  
+ <!-- Removed diagram because it uses an opportunity entity example that is no longer supported. ![Document recommendations feature diagram](media/document-recommendations.png "Document recommendations feature diagram")   -->
   
 > [!NOTE]
 >  The Document Suggestions feature doesn't require a connection to the Azure Text Analytics service. If you choose not to use Azure Text Analytics, Document Suggestions will use the built-in keyword matching  logic available in Dynamics 365 apps. However, we recommend that you use Azure Text Analytics service for more advanced keyword matching.  
   
- Document Suggestions searches other like-entities to determine similarities found in documents located on a SharePoint site, OneDrive, or external location. Suggested documents can be in several different formats such as Word, Excel, PowerPoint, OneNote, Adobe PDF, and text files. When similar documents are found Document Suggestions presents them offering  you  the ability to open the document or make a copy.  
+ Document Suggestions searches other like-records to determine similarities found in documents located on a SharePoint site, OneDrive, or external location. Suggested documents can be in several different formats such as Word, Excel, PowerPoint, OneNote, Adobe PDF, and text files. When similar documents are found Document Suggestions presents them offering  you  the ability to open the document or make a copy.  
   
 ## Requirements  
  The following are required to use Document Suggestions with Dynamics 365 apps.  
   
-- Dynamics 365 apps  
+- Dynamics 365 Customer Service.
   
 - To suggest documents located on SharePoint:  
   
@@ -50,7 +55,7 @@ Enabling Document Suggestions helps your Dynamics 365 apps web browser and mobil
 - A system administrator must define a similarity rule for each entity type that is to be included in Document Suggestions. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Use advanced similarity rules to view similar case suggestions](https://docs.microsoft.com/dynamics365/customer-service/suggest-similar-cases-for-a-case).
   
 ## How it works  
- The entities that can use Document Suggestions are Contact, Opportunity, Lead, Account, Case, and custom entities.  
+ You use Document Suggestions with the Case entity.  
   
  You can use the built-in pattern matching that is included natively with the Document Suggestions feature, but we recommend that you use Azure Text Analytics service for more advanced keyword matching.  
   
@@ -62,13 +67,13 @@ Enabling Document Suggestions helps your Dynamics 365 apps web browser and mobil
   
 2. Other SharePoint sites.  
   
-3. OneDrive  
+3. OneDrive.
   
 4. Microsoft 365 Groups (when solution is installed).  
   
 5. External URL (when configured).  
   
-Currently, Document Suggestions does not search attachments that are added to Notes in Dynamics 365 apps records.  
+Document Suggestions does not search attachments that are added to Notes in Dynamics 365 apps records.  
   
 ### Adding an external URL to search another site  
 External sites, such as an on-premises SharePoint document library can be included in Document Suggestions by adding an external URL for the site to be searched.  
@@ -109,11 +114,9 @@ External sites, such as an on-premises SharePoint document library can be includ
   
 2. Go to **Environments** > [select an environment] > **Settings** > **Integration** > **Document management settings** > **Manage Document Suggestions**.
   
-3. In the **Select Entities** area, select the entities that you want to include in Document Suggestions, and then select **Apply**.  
+3. In the **Select Entities** area, select the **Case** entity to include in Document Suggestions, and then select **Apply**.  
   
    > [!TIP]
-   > If the entities (contact, opportunity, lead, account, or custom) aren't listed in the **Select Entities** area, it is because similarity rules for the entity have not been defined and activated.  [Use advanced similarity rules to view similar case suggestions](https://docs.microsoft.com/dynamics365/customer-service/suggest-similar-cases-for-a-case).
+   > If the case entity isn't listed in the **Select Entities** area, it is because similarity rules for the case entity have not been defined and activated.  [Use advanced similarity rules to view similar case suggestions](https://docs.microsoft.com/dynamics365/customer-service/suggest-similar-cases-for-a-case).
   
 4. Set external URL to include in Document Suggestions. By default, Document Suggestions searches in Microsoft 365 services like SharePoint or OneDrive. If you want to search  an external site in addition to the available Microsoft 365 services, such as an on-premises SharePoint site, enter the base URL to the external system. Dynamics 365 apps will append a search query string to the base URL you provide. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Adding an external URL to search another site](#adding-an-external-url-to-search-another-site).
-  
-### See also  

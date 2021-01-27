@@ -1,12 +1,14 @@
 ---
 title: "Data loss prevention policies  | MicrosoftDocs"
 description: About data loss prevention (DLP) policies.
-author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/27/2020
-ms.author: jimholtz
+ms.date: 12/10/2020
+author: jayasreekumar
+ms.author: jkumar
+ms.reviewer: jimholtz
+ms.custom: "admin-security"
 search.audienceType: 
   - admin
 search.app:
@@ -16,6 +18,8 @@ search.app:
   - Flow
 ---
 # Data loss prevention policies
+
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 Your organization's data is likely one of the most important assets you're responsible for safeguarding as an administrator. The ability to build apps and automation to use that data is a large part of your company's success. You can use Power Apps and Power Automate for rapid build and rollout of these high-value apps so that users can measure and act on the data in real time. Apps and automation are becoming increasingly connected across multiple data sources and multiple services. Some of these might be external, third-party services and might even include some social networks. Users generally have good intentions, but they can easily overlook the potential for exposure from data leakage to services and audiences that shouldn't have access to the data.
 
@@ -55,16 +59,16 @@ The key point is that connectors in the same group can share data in Microsoft P
 
 Data flow to a specific service can be blocked altogether by marking that connector as **Blocked**. For example, if you place Facebook in the **Blocked** group, makers can't create an app or flow that uses the Facebook connector. This in turn restricts data flows to this service in Microsoft Power Platform. 
 
-All third-party connectors can be blocked. All Microsoft-owned premium connectors (except Common Data Service) can be blocked.
+All third-party connectors can be blocked. All Microsoft-owned premium connectors (except Microsoft Dataverse) can be blocked.
 
 ### List of connectors that can't be blocked
 
-All connectors driving core Microsoft Power Platform functionality (like Common Data Service, Approvals, and Notifications) as well as connectors enabling core Office customization scenarios like Microsoft Enterprise Plan standard connectors will remain non-blockable to ensure core user scenarios remain fully functional.
+All connectors driving core Microsoft Power Platform functionality (like Dataverse, Approvals, and Notifications) as well as connectors enabling core Office customization scenarios like Microsoft Enterprise Plan standard connectors will remain non-blockable to ensure core user scenarios remain fully functional.
 
 However, these non-blockable connectors can be classified into Business or Non-Business data groups. These connectors broadly fall into the following categories:
 
 -	Microsoft Enterprise Plan standard connectors (with no additional licensing implications).
--	Microsoft Power Platform–specific connectors that are part of the base platform capabilities. Within this, Common Data Service connectors are the only premium connectors that can't be blocked, because Common Data Service is an integral part of Microsoft Power Platform. 
+-	Microsoft Power Platform–specific connectors that are part of the base platform capabilities. Within this, Common Data Service connectors are the only premium connectors that can't be blocked, because Dataverse is an integral part of Microsoft Power Platform. 
 
 The following connectors can't be blocked by using DLP policies.
 
@@ -73,9 +77,9 @@ The following connectors can't be blocked by using DLP policies.
 |---------|---------|
 |Excel Online (Business)      | Approvals        |
 |Microsoft Forms Pro      | Notifications        |
-|Microsoft Teams      | Common Data Service         |
-|Microsoft To-Do (Business)      | Common Data Service <br />(current environment)        |
-|Microsoft 365 Groups      | Power Apps Notifications         |
+|Microsoft Teams      | Dataverse         |
+|Microsoft To-Do (Business)      | Dataverse <br />(current environment)        |
+|Microsoft 365 Groups      | Power Apps Notifications (v1 and v2)        |
 |Microsoft 365 Outlook      |         |
 |Microsoft 365 Users      |         |
 |OneDrive for Business      |         |
@@ -97,10 +101,7 @@ The following connectors can't be blocked by using DLP policies.
 
 By default, custom connectors aren't part of the standard configuration capabilities of DLP policies in the Power Platform admin center. However, you can use DLP policy PowerShell commands to set them up into **Business**, **Non-Business**, and **Blocked** groups. More information: [Data Loss Prevention (DLP) policy commands](powerapps-powershell.md#data-loss-prevention-dlp-policy-commands) 
 
-Unlike standard and premium connectors, which are available to all environments in the tenant, custom connectors are scoped specifically to an individual environment. Therefore, you can't use tenant-level DLP policies to manipulate custom connectors, you must use environment-level DLP policies. By using PowerShell, you can configure DLP policy to include these connectors. After they're added, they can then be managed in the admin center.
-
-> [!NOTE]
-> Only custom connectors that are stored in a tenant's default environment will be displayed with their associated icon and display name in the policy editor. All other custom connectors will be displayed with the default connector icon and their internal name.
+Unlike standard and premium connectors, which are available to all environments in the tenant, custom connectors are scoped specifically to an individual environment. Therefore, you can't use tenant-level DLP policies to manipulate custom connectors, you must use environment-level DLP policies. By using PowerShell, you can configure DLP policy to include these connectors. 
 
 ### Default data group for new connectors
 
@@ -223,8 +224,8 @@ We are working to address the following known issues and limitations:
 1. Tenant-level policies created through the new UI enforce default grouping (typically non-business) on custom connectors. Currently there is no way to explicitly classify custom connectors in tenant-level policies or ignore them altogether. In order to manage custom connector settings explicitly using environment-level policies, exclude these environments from the tenant-level policies.
 2. Sorting by Created and Modified fields on Data Policy list view doesn’t work correctly.
 3. Three-way DLP policy creation isn't available through admin connectors. Also, the Power Platform for Admins connector always blocks LBI/Non-business group.
-4. If the default group is set as blocked, the list of connectors that can't be blocked won't apply when you use PowerShell to create DLP policies.
-5. Canvas apps assessment for DLP violations at launch time/runtime does not work as expected.
+4. Canvas apps assessment for DLP violations at launch time/runtime does not work as expected.
+5. Blocking the HTTP Request connector via DLP will currently block child flows, since child flows are implemented using the HTTP connector. Work is underway to separate DLP enforcement for child flows so they are treated no differently than other flows.
 
 ### See also
 

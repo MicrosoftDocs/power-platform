@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/01/2020
+ms.date: 12/03/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -17,6 +17,9 @@ search.app:
 ---
 
 # Environments overview
+
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 An *environment* is a space to store, manage, and share your organization's business data, apps, and flows. It also serves as a container to separate apps that might have different roles, security requirements, or target audiences. How you choose to use environments depends on your organization and the apps you're trying to build. For example:
 
 * You can choose to only build your apps in a single environment.
@@ -30,13 +33,13 @@ An *environment* is a space to store, manage, and share your organization's busi
 ## Environment scope
 Each environment is created under an Azure Active Directory (Azure AD) tenant, and its resources can only be accessed by users within that tenant. An environment is also bound to a geographic location, like the United States. When you create an app in an environment, that app is routed only to datacenters in that geographic location. Any items that you create in that environment (including connections, gateways, flows using Microsoft Power Automate, and more) are also bound to their environment's location.
 
-Every environment can have zero or one Common Data Service database, which provides storage for your apps. Whether you can create a database for your environment depends on the license you purchase for Power Apps and your permissions within that environment. More information: [Pricing info](pricing-billing-skus.md)
+Every environment can have zero or one Microsoft Dataverse database, which provides storage for your apps. Whether you can create a database for your environment depends on the license you purchase for Power Apps and your permissions within that environment. More information: [Pricing info](pricing-billing-skus.md)
 
-When you create an app in an environment, that app is only permitted to connect to the data sources that are also deployed in that same environment, including connections, gateways, flows, and Common Data Service databases. For example, consider a scenario where you've created two environments named Test and Dev, and created a Common Data Service database in each of the environments. If you create an app in the Test environment, it will only be permitted to connect to the Test database; it won't be able to connect to the 'Dev' database.
+When you create an app in an environment, that app is only permitted to connect to the data sources that are also deployed in that same environment, including connections, gateways, flows, and Dataverse databases. For example, consider a scenario where you've created two environments named Test and Dev, and created a Dataverse database in each of the environments. If you create an app in the Test environment, it will only be permitted to connect to the Test database; it won't be able to connect to the 'Dev' database.
 
 You can also move resources between environments. More information: [Migrate resources](../alm/environment-and-tenant-migration.md)
 
-![The Contoso Corporation tenant encompasses three environments, each of which has its own apps, flows, and Common Data Service database](./media/environments-overview/Environments.png "The Contoso Corporation tenant encompasses three environments, each of which has its own apps, flows, and Common Data Service database")
+![The Contoso Corporation tenant encompasses three environments, each of which has its own apps, flows, and Dataverse database](./media/environments-overview/Environments.png "The Contoso Corporation tenant encompasses three environments, each of which has its own apps, flows, and Dataverse database")
 
 ## Environment permissions
 Environments have two built-in roles that provide access to permissions within an environment:
@@ -45,7 +48,7 @@ Environments have two built-in roles that provide access to permissions within a
 
     * Add or remove a user or group from either the Environment Admin or Environment Maker role.
 
-    * Provision a Common Data Service database for the environment.
+    * Provision a Dataverse database for the environment.
 
     * View and manage all resources created within the environment.
 
@@ -73,17 +76,17 @@ There are multiple types of environments. The type indicates the purpose of the 
 </tr>
 <tr>
 <td width="20%"> Production</td>
-<td width="50%">  This is intended to be used for permanent work in an organization. It can be created and owned by an administrator or anyone with a Power Apps license, provided there is 1&nbsp;GB available database capacity. These environments are also created for each existing Common Data Service database when it is upgraded to version 9.0 or later. Production environments are what you should use for any environments on which you depend.        </td>
+<td width="50%">  This is intended to be used for permanent work in an organization. It can be created and owned by an administrator or anyone with a Power Apps license, provided there is 1&nbsp;GB available database capacity. These environments are also created for each existing Dataverse database when it is upgraded to version 9.0 or later. Production environments are what you should use for any environments on which you depend.        </td>
 <td width="30%"> Full control.  </td>
 </tr>
 <tr>
 <td width="20%"> Default</td>
 <td width="50%"> These are a special type of production environment. Each tenant has a default environment that's created automatically. Its characteristics are discussed in the following section, <a href="#the-default-environment">The default environment</a>. </td>
-<td width="30%">  Limited control&mdash;all licensed users* have the Environment Maker role.</td>
+<td width="30%">  Limited control. All licensed users* have the Environment Maker role.</td>
 <tr>
 <td width="20%"> Sandbox</td>
 <td width="50%">   These are non-production environments, which offer features like copy and reset. Sandbox environments are used for development and testing, separate from production. Provisioning sandbox environments can be restricted to admins (because production environment creation can be blocked), but converting from a production to a sandbox environment can't be blocked. </td>
-<td width="30%">  Full control. <br />If used for testing, only user access is needed. <br />Developers require Environment Maker access to create resources.</td>
+<td width="30%">  Full control. If used for testing, only user access is needed. Developers require Environment Maker access to create resources.</td>
 </tr>
 <tr>
 <td width="20%"> Trial</td>
@@ -96,13 +99,12 @@ There are multiple types of environments. The type indicates the purpose of the 
 <td width="30%">  Only a single user account with the Community Plan has access.</td>
 </tr>
 <tr>
-<td width="20%"> Project Oakdale</td>
-<td width="50%">  Project Oakdale environments are automatically created for the selected team when you create an app in Teams using the Power Apps app for the first time or install a Power Apps app from the app catalog. See <a href="about-teams-environment.md">About the Project Oakdale environment</a>. </td>
-<td width="30%">  Tenant admins and/or Power Platform admins will not be able to access any of the core customer data in the Teams environment. However, they will be able to perform all system management operations, including customizations and updating user records, among other options. </td>
+<td width="20%"> Microsoft Dataverse for Teams</td>
+<td width="50%">  Dataverse for Teams environments are automatically created for the selected team when you create an app in Teams using the Power Apps app for the first time or install a Power Apps app from the app catalog. See <a href="about-teams-environment.md">About the Dataverse for Teams environment</a>. </td>
+<td width="30%">  Limited control. Admins have limited settings available for Teams environments.  No customizations of security role or assignments are available.  Teams members are automatically mapped to their Teams membership type - Owners, Members, and Guests - with a corresponding security role assigned by the system.  </td>
 </tr>
 <tr><td colspan="3">*&#8202;Users licensed for Power Apps, Power Automate, Microsoft 365, and Dynamics 365, standalone licenses, and free and trial licenses.</td></tr>
 </table>
-
 
 <a name="the-default-environment"></a>
 
@@ -118,7 +120,7 @@ A single default environment is automatically created by Power Apps for each ten
 The default environment is named as follows: "{Azure AD tenant name} (default)"
 
 ## Production and trial environments
-You can create environments for different purposes. A trial environment is for trying out the environment and the experience of using a database with Common Data Service. It expires after a certain period. 
+You can create environments for different purposes. A trial environment is for trying out the environment and the experience of using a database with Dataverse. It expires after a certain period. 
 
 ## Manage environments in the Power Platform admin center
 
@@ -142,5 +144,5 @@ Select **Edit** to review and edit environment details.
 > ![More environment details](media/environment-details-more.png "More environment details")
 
 ### See also
-[Microsoft Learn: Create and manage environments in Common Data Service](https://docs.microsoft.com/learn/modules/create-manage-environments/)<br />
+[Microsoft Learn: Create and manage environments in Dataverse](https://docs.microsoft.com/learn/modules/create-manage-environments/)<br />
 

@@ -3,7 +3,7 @@ title: "Add user authentication to chatbot topics in Microsoft Teams"
 description: "Insert user authentication into a topic using the Power Virtual Agents app in Microsoft Teams to allow your users to sign in directly within a conversation."
 keywords: "User Authentication, Authentication, AAD, MSA, Identity Provider, PVA"
 ms.date: 9/22/2020
-ms.service: dynamics-365-ai
+ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -23,7 +23,7 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](../advanced-end-user-authentication.md)
 > - [Power Virtual Agents app in Microsoft Teams](advanced-end-user-authentication-teams.md)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
+
 
 Bots created in Microsoft Teams come with authentication pre-configured to use Teams authentication. 
 

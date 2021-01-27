@@ -2,11 +2,11 @@
 title: "Policies and Communications for service incidents  | MicrosoftDocs"
 description: Policies and Communications for service incidents
 author: astockli
-manager: timrob
+ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/14/2020
+ms.date: 12/09/2020
 ms.author: astockli
 search.audienceType: 
   - admin
@@ -102,10 +102,12 @@ The following are service update times. Database updates run 24 hours after serv
 | JPN           | crm7.dynamics.com | 10 AM to 7 PM |
 | IND           | crm8.dynamics.com | 7:30PM to 1AM |
 | GCC           | crm9.dynamics.com | 2 AM to 11 AM |
+| GCC High      | crm.microsoftdynamics.us | 2 AM to 11 AM |
 | GBR           | crm11.dynamics.com | 6 PM to 3 AM |
 | ZAF           | crm14.dynamics.com | 5 PM to 2 AM |
 | UAE           | crm15.dynamics.com| 3 PM to 12 AM |
 | GER           | crm16.dynamics.com| 6 PM TO 3 AM |
+| CHE           | crm17.dynamics.com|  6 PM to 3 AM |
 | CHN           | crm.dynamics.cn | 3 PM to 9 PM |
 
 ### Service Update Release Schedule

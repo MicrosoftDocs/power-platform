@@ -8,7 +8,7 @@ brand: dynamics
 metadata:
   title: Microsoft Power Virtual Agents documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: See how Power Virtual Agents can be used to build powerful AI-driven chatbots. # Required; article description that is displayed in search results. < 160 chars.
-  ms.service: dynamics-365-ai #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.service: power-virtual-agents #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: hub-page # Required
   author: iaanw #Required; your GitHub user alias, with correct capitalization.
   ms.author: iawilt #Required; microsoft alias of author; optional team alias.

@@ -3,7 +3,7 @@ title: "Use chatbot variables to carry content across topics in Microsoft Teams"
 description: "Bot variables can be used in the Power Virtual Agents app in Microsoft Teams to store and retrieve information across multiple topics within the same bot."
 keywords: "PVA"
 ms.date: 9/22/2020
-ms.service: dynamics-365-ai
+ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -20,7 +20,7 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](../authoring-variables-bot.md)
 > - [Power Virtual Agents app in Microsoft Teams](authoring-variables-bot-teams.md)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
+
 
 [Variables](authoring-variables-teams.md) let you save responses from your customers. For example, you can save a customer's name in a variable called `UserName`. The bot can then address the customer by name as the conversation continues.
 

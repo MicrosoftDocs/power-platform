@@ -17,6 +17,8 @@ search.app:
 ---
 # About Unified Interface for model-driven apps in Power Apps 
 
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 Unified Interface uses responsive web design principles to provide an optimal viewing and interaction experience for any screen size, device, or orientation. It brings all the rich experiences to any client that you are using. Whether you are using a browser, tablet, or phone, you will be able to consume similar experiences.
 
 More information: 
@@ -49,7 +51,7 @@ You can access Unified Interface apps from the following locations in a browser:
 ## Accessing Unified Interface apps on phone and tablets
 The Unified Interface apps are the only apps supported on phones and tablets. When users sign in to their environment, they will see the Unified Interface apps only on their apps landing page. 
 
-|  | |  |
+| &nbsp; | &nbsp; | &nbsp; |
 |---------|---------|---------|
 |On phone <br/>![Unified Interface phone app](media/uci-app-phone.png "Unified Interface phone app")     |    |On tablet <br/>![Unified Interface tablet app](media/uci-app-tablet.png "Unified Interface tablet app")    |
 

@@ -17,6 +17,8 @@ search.app:
 ---
 # About the Microsoft Cloud Japan datacenter
 
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
  If you’re an existing customer with a billing address mapping to a new data center region, review the information in this topic to understand the move process:  
   
 <a name="BKMK_Expansion"></a>   
@@ -100,7 +102,7 @@ A support engineer will assist you in verifying required prerequisites and provi
 ## Pricing  
   
 ### How will billing be handled for customers whose environments are moved from an existing tenant located outside of Japan to a new tenant in Japan?  
- Billing is related to the country/region where the customer signs up for the Common Data Service service, not where the service is deployed.  
+ Billing is related to the country/region where the customer signs up for the Microsoft Dataverse service, not where the service is deployed.  
   
 ### Will all versions be available?  
  You’ll be able to purchase all licenses that are currently available in the market today. For more information, see: [Pricing List](https://go.microsoft.com/fwlink/p/?LinkID=401462).  

@@ -4,6 +4,7 @@ description: Use service admin roles to manage your tenant
 author: jayasreekumar
 ms.author: jkumar
 ms.reviewer: jimholtz
+ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
@@ -17,6 +18,8 @@ search.app:
   - Flow
 ---
 # Use service admin roles to manage your tenant
+
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 To help you administer environments and settings for Power Platform, you can assign users to manage at the tenant level without having to assign the more powerful Microsoft 365 global admin privilege.  
 
@@ -58,7 +61,7 @@ Follow these steps to assign a service admin role.
 
 The following matrix shows what management is possible with the various service admin roles compared to the Microsoft 365 global admin role.
 
-|    |Microsoft 365<br>Global admin<br />  |Power Platform<br> admin <br />  |Dynamics 365<br> admin<br />  | Power BI<br> admin<br />  |
+|  &nbsp;    |Microsoft 365<br>Global admin<br />  |Power Platform<br> admin <br />  |Dynamics 365<br> admin<br />  | Power BI<br> admin<br />  |
 |---------|---------|---------|---------|---------|
 |**POWER PLATFORM** |||||  
 |**Environments** |||||  
@@ -70,7 +73,7 @@ The following matrix shows what management is possible with the various service 
 |**Analytics**|||||
 |Capacity|Yes|Yes|Yes<sup>2</sup>|No|  
 |Capacity allocation (Power Apps per app plans, Power Automate, AI Builder, and Portal) |Yes|Yes|Yes<sup>2</sup>|No|
-|Common Data Service|Yes|Yes|Yes<sup>2</sup>|No|  
+|Microsoft Dataverse|Yes|Yes|Yes<sup>2</sup>|No|  
 |Power Automate|Yes|Yes|Yes<sup>2</sup>|No|  
 |Power Apps|Yes|Yes|Yes<sup>2</sup>|No|  
 |**Help + support**|||||

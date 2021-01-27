@@ -26,6 +26,8 @@ search.app:
 
 # Troubleshooting document management issues
 
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 This topic explains how to use information provided in error messages to fix issues with the document management feature.
 Below is an [index](#index-of-errors) that will help you to reach the right solution. The link in each cell navigates to the reason and mitigation steps for the corresponding error message.
 
@@ -117,10 +119,10 @@ Error message displayed for missing folder:
 
   Folder path is `../<entity name>/<record name>`
 
-  - Error message in the Unified Interface:
+  - Error message in Unified Interface:
 
     > [!div class="mx-imgBorder"]
-    > ![Folder error in unified interface](media/folder-error1-in-unified-interface.png)
+    > ![Folder error in Unified Interface](media/folder-error1-in-unified-interface.png)
 
     *or*
 
@@ -146,25 +148,25 @@ Error message displayed for missing folder:
 
   Folder path is `../<account or contact>/<account or contact name>/<entity name>/<record name>`
 
-  - Error message in the Unified Interface:
+  - Error message in Unified Interface:
 
     > [!div class="mx-imgBorder"]
-    > ![Error message in Unified Interface2](media/folder-error2-in-unified-interface.png)
+    > ![Error message in Unified Interface](media/folder-error2-in-unified-interface.png)
 
     *or*
 
     > [!div class="mx-imgBorder"]
-    > ![Error message in Unified Interface2](media/folder-error2-in-unified-interface-dialog.png)
+    > ![Error message in Unified Interface](media/folder-error2-in-unified-interface-dialog.png)
 
   - Error message in the web client:
 
     > [!div class="mx-imgBorder"]
-    > ![Error message in web client2](media/folder-error2-in-web-client.png)
+    > ![Error message in web client](media/folder-error2-in-web-client.png)
 
     *or*
 
     > [!div class="mx-imgBorder"]
-    > ![Error message in web client2](media/missing-folder-error1-uic-dialog.png)
+    > ![Error message in web client](media/missing-folder-error1-uic-dialog.png)
 
     Log file:
 

@@ -1,6 +1,6 @@
 ---
-title: "Use Common Data Service usage reports | MicrosoftDocs"
-description: "The Common Data Service analytics in the Power Platform admin center will provide details about Common Data Service usage in the selected environment."
+title: "Use Microsoft Dataverse usage reports | MicrosoftDocs"
+description: "The Microsoft Dataverse analytics in the Power Platform admin center will provide details about Dataverse usage in the selected environment."
 author: manuelap-msft
 manager: devkeydet
 ms.service: power-platform
@@ -16,13 +16,15 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Monitor Common Data Service usage
+# Monitor Microsoft Dataverse usage
 
-The Common Data Service analytics in the Power Platform admin center will provide details on Common Data Service usage in the selected environment. You can change environments by selecting **Change filters** and then selecting your environment. You can also adjust the date range. Only the past 28 days of data are available.
+[!INCLUDE[cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
 
-![Common Data Service analytics](media/resource-usage3.png "Common Data Service analytics")
+The Dataverse analytics in the Power Platform admin center will provide details on Dataverse usage in the selected environment. You can change environments by selecting **Change filters** and then selecting your environment. You can also adjust the date range. Only the past 28 days of data are available.
 
-Common Data Service analytics helps you monitor the following:
+![Dataverse analytics](media/resource-usage3.png "Dataverse analytics")
+
+Dataverse analytics helps you monitor the following:
 
 :::row:::
    :::column span="":::
@@ -57,12 +59,12 @@ Common Data Service analytics helps you monitor the following:
 
 As an administrator, you should:
 
-- Monitor activities performed on the Common Data Service database.
-- Ensure overall health of the platform by regularly checking on system jobs operating, plug-ins being used by app makers, and API calls performed against Common Data Service.
+- Monitor activities performed on the Dataverse database.
+- Ensure overall health of the platform by regularly checking on system jobs operating, plug-ins being used by app makers, and API calls performed against Dataverse.
 
-## Common Data Service audit logging
+## Dataverse audit logging
 
-You also have audit logging available for actions in Common Data Service. This includes create, update, and delete operations on records in addition to changes to Common Data Service metadata. More information: [Common Data Service auditing overview](https://docs.microsoft.com/powerapps/developer/common-data-service/auditing-overview)
+You also have audit logging available for actions in Dataverse. This includes create, update, and delete operations on records in addition to changes to Dataverse metadata. More information: [Dataverse auditing overview](https://docs.microsoft.com/powerapps/developer/common-data-service/auditing-overview)
 
 For auditing to be captured, it must be enabled in the following three places:
 
@@ -72,7 +74,7 @@ For auditing to be captured, it must be enabled in the following three places:
 
   Then [enable auditing data and user activity](https://docs.microsoft.com/power-platform/admin/audit-data-user-activity) for security and compliance.
   
-  ![Manage logging for Common Data Service data](media/cdslog4.png "Manage logging for Common Data Service data")
+  ![Manage logging for Dataverse data](media/cdslog4.png "Manage logging for Dataverse data")
 
 - Enable the entity property for auditing. Select **Environment** > **Audit and logs** > **Entity and field audit settings**.
 
