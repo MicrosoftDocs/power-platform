@@ -22,7 +22,7 @@ search.app:
 
 1. Ensure that you have an [Application Insights environment](https://docs.microsoft.com/azure/azure-monitor/app/create-new-resource) set up for receiving the data, in addition to the [environment](environments-overview.md) that has a database. 
    - For the Application Insights environment, you must have contributor, writer, or admin rights.
-   - The Application Insights environment must be unique for an environment or tenant. Note that Application Insights out-of-the-box reports won't function correctly if a single Application Insights environment contains data from multiple environments.<!--note from editor: Edit okay? I wasn't sure what this meant.-->
+   - The Application Insights environment must be unique for an environment or tenant. Note that Application Insights out-of-the-box reports won't function correctly if a single Application Insights environment contains data from multiple environments.
 2. To set up data export in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) you'll need one of these roles: Power Platform Service admin, Dynamics 365 admin, or Microsoft 365 Global admin. 
 
 ## Set up export to your Applications Insights environment from the Power Platform admin center
@@ -47,7 +47,7 @@ search.app:
    > [!div class="mx-imgBorder"] 
    > ![Select an environment](media/data-export-application-insights-select-environment.png "Select an environment")
 
-4. Choose the Azure subscription, resource group, and Application Insights environment<!--note from editor: The image shows it as "Application Insights instance," but if you want to call it an environment instead, these strings would be fine formatted generically. If we want to quote the UI directly though, this can be "Choose the Azure **Subscription**, **Resource group**, and **Application Insights instance**..."-->, and then select **Create**. You must have contributor, writer, or admin rights to the Application Insights environment. Typically, one production environment or tenant maps to one Application Insights environment. 
+4. Choose the Azure subscription, resource group, and Application Insights environment, and then select **Create**. You must have contributor, writer, or admin rights to the Application Insights environment. Typically, one production environment or tenant maps to one Application Insights environment. 
 
    > [!div class="mx-imgBorder"] 
    > ![Data export Application Insights details](media/data-export-application-insights-details.png "Data export Application Insights details")

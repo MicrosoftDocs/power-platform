@@ -22,14 +22,15 @@ The data stream currently provides performance data related to Dataverse API inc
 
 ## Dataverse API incoming calls
 
-These are calls made to the Dataverse API. They can be from Unified Interface (UCI), the legacy web client, custom clients that use the SDK, and so on. They can be found in the **requests** table of Application Insights, which has the following fields.<!--note from editor: Suggested, so there's an introduction to this list. In similar places these lists are called "attributes", I'm not sure which is correct here. Also, I'm not sure why the names of these tables are (mostly) bold and lowercase. It looks like they're actually the names of tabs in the UI, and they're capitalized there, but I don't know if those tabs are the same as these references to "tables."-->
+These are calls made to the Dataverse API. They can be from Unified Interface (UCI), the legacy web client, custom clients that use the SDK, and so on. They can be found in the **requests** table of Application Insights, which has the following fields.
 
-- **Name**: The type of request. These fall into two categories:<!--note from editor: No order is implied, so I changed numbers to bullets here.-->
+- **Name**: The type of request. These fall into two categories:
   - **Web API Request**: A request to the OData v4 endpoint that's commonly used by Unified Interface and modern clients. This request is transformed into an operation that's common to both. Web API is a "wrapper" to enable the RESTful programming model, but after data is received, everything becomes the same within the server. When the response is returned, it's converted to JSON if the request came from the Web API.
   - **Organization Service Request**: A request to the SOAP endpoint used by SDK clients or the legacy web client.
-- **Duration**: The amount of time<!--note from editor: Suggested.--> the server took to respond to the request.
+- **Duration**: The amount of time the server took to respond to the request.
 - **Url**: The URL to which the call was made.
-- **CustomDimensions: UserAgent**: Application Insights automatically populates the user agent field with **PC** as<!--note from editor: Does "as" mean "while" here? Or does it mean "because"? If the latter, please use "because" instead.--> these logs are being pushed from a server in a datacenter. Application Insights doesn't allow the user agent field to be overridden. Sometimes, the user agent field isn't available to populate. The user agent from which the call was made can be viewed by using the following query:<!--note from editor: I melded this list item with the preceding entry because you don't want to have just one bullet in a list. However, if "Operation_Name" belongs in this list also, I suggest moving it up here so that the image doesn't break up the indenting. (So it would be <ul>CustomDimensions<ul>Operation_Name...</ul><ul>UserAgent...</ul></ul>)-->
+- **CustomDimensions**:
+  - **UserAgent**: Application Insights automatically populates the user agent field with **PC** as these logs are being pushed from a server in a datacenter. Application Insights doesn't allow the user agent field to be overridden. Sometimes, the user agent field isn't available to populate. The user agent from which the call was made can be viewed by using the following query:
 
     ```kusto
     requests
@@ -39,11 +40,11 @@ These are calls made to the Dataverse API. They can be from Unified Interface (U
     > [!div class="mx-imgBorder"] 
     > ![Application Insights CustomDimensions UserAgent](media/application-insights-customdimensions-useragent.png "Application Insights CustomDimensions UserAgent")
 
-- **Operation_Name**: The readable name of the operation to display on views, such as the end-to-end transaction view.<!--note from editor: If this doesn't belong under "CustomDimensions," would it be possible to move it before the "CustomDimensions" list item? Just to make it clear that it isn't a continuation of the CustomDimensions list.-->
+- **Operation_Name**: The readable name of the operation to display on views, such as the end-to-end transaction view.
 
 ## Dataverse plug-in execution logs
 
-These logs for custom plug-ins running for a given operation are found in the **dependency** table. The following is a sample query:<!--note from editor: Edit okay? The query needs some kind of intro.-->
+These logs for custom plug-ins running for a given operation are found in the **dependency** table. The following is a sample query:
 
 ```kusto
 dependencies
@@ -66,7 +67,7 @@ dependencies
   - **PluginName**: The user-friendly name of the plug-in.
   - **PluginType**: The name of the type of plug-in being executed.
   - **PluginVersion**: The version of the published plug-in. The intention here is to be able to use this information to troubleshoot version updates.
-  - **Stage**: Maps to the following values:<!--note from editor: Edit okay? Not sure what "internally" means here. Also, can the values be organized with the number first (i.e. "10 = PreValidation"...) and in numerical order?-->
+  - **Stage**: Maps to the following values:
     - PreValidation = 10
     - PreOperation = 20
     - PreOperationBeforeExternalPlugins = 15
@@ -76,7 +77,7 @@ dependencies
     - PostOperationAfterExternalPlugins = 45
     - PostOperation = 40
     - PostOperationDeprecated = 50
-  - **StepName**: The name of the SDK Message Processing step. This is usually generated by the Plug-in Registration tool by using information about the **PluginName**, **PluginType**, and the name of the operation&mdash;for instance *ErrorMessageTest.ThrowException: Create of account*.<!--note from editor: Should "Create of account" be "Creation of account" or "Create account"?-->
+  - **StepName**: The name of the SDK Message Processing step. This is usually generated by the Plug-in Registration tool by using information about the **PluginName**, **PluginType**, and the name of the operation&mdash;for instance *ErrorMessageTest.ThrowException: Creation of account*.
 
 ## Dataverse SDK logs
 
@@ -152,7 +153,7 @@ dependencies
 | summarize avg(duration) by name
 ```
 
-The plug-in name should<!--note from editor: Please see https://styleguides.azurewebsites.net/StyleGuide/Read?id=2700&topicid=35667. "Should" is for recommendations, not to express probability. Can this be "will probably" or something?--> also contain the version for custom plug-ins.
+The plug-in name should also contain the version for custom plug-ins.
 
 ### How was the API performing prior to a reported issue, based on time of day or location? Was API degradation gradual or sudden?
 
