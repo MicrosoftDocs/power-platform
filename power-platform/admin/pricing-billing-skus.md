@@ -19,6 +19,8 @@ search.app:
 
 # Licensing overview for Microsoft Power Platform
 
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 The topics in this section provide detailed information about Power Apps and Microsoft Power Automate licensing.
 
 For information about Power BI licensing, see [Power BI Pricing](https://powerbi.microsoft.com/pricing/).
