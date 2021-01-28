@@ -60,7 +60,14 @@ All flows in this solution depend on all environment variables' being configured
 
 ## Initialize flow approval tables in your environment
 
-The archive approval flows (*Admin \| App Archive and Clean Up – Start Approval*, *Admin \| Flow Archive and Clean Up – Start Approval*, *Admin \| App Archive and Clean Up – Check Approval*, and *Admin \| Flow Archive and Clean Up – Check Approval*), use the built-in Approval actions of Power Automate. In the background, the built-in Approval actions use Dataverse. If you've installed the solution in a new environment, the Approval tables must be initialized. The easiest way to do this is to create a "dummy" approval flow.
+The archive approval flows use the built-in Approval actions of Power Automate.
+
+- *Admin \| Archive and Clean Up v2 (Start Approval for Apps)*
+- *Admin \| Archive and Clean Up v2 (Start Approval for Flows)*
+- *Admin \| App Archive and Clean Up – Check Approval*
+- *Admin \| Flow Archive and Clean Up – Check Approval*)
+
+ In the background, the built-in Approval actions use Dataverse. If you've installed the solution in a new environment, the Approval tables must be initialized. The easiest way to do this is to create a "dummy" approval flow.
 
 1. Go to [flow.microsoft.com](https://flow.microsoft.com).
 
@@ -93,10 +100,10 @@ The archive approval flows (*Admin \| App Archive and Clean Up – Start Approva
 
 This Governance Components solution contains flows that you will need to manually turn on, once you are ready to use them.
 
-- Admin \| App Archive and Clean Up – Start Approval
-- Admin \| Approval Clean Up
-- Admin \| Check Approvals
-- Admin \| Flow Archive and Clean Up – Start Approval
+- Admin \| Archive and Clean Up v2 (Start Approval for Apps)
+- Admin \| Archive and Clean Up v2 (Start Approval for Flows)
+- Admin \| Archive and Clean Up v2 (Clean Up and Delete)
+- Admin \| Archive and Clean Up v2 (Check Approval)
 - Admin \| Compliance detail request
 - Microsoft Teams Admin \| Ask for Business Justification when Microsoft Teams environment is created
 - Microsoft Teams Admin \| Weekly Clean Up of Microsoft Teams environments
