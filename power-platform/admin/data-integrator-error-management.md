@@ -97,6 +97,7 @@ Each project execution is marked with the status Completed, Warning, or Error:
    > ![Project status error](media/ProjectStatus_Error.png "Project status error")
 
    If the project execution is in the **Error** state, then it will automatically retry execution at the next scheduled run.
+   If you do not update source record, it will not automatically be included in the next run.
 
 You can also manually retry an execution by selecting **Re-run execution** via the ellipsis (...) on the **Execution history** page.
 
