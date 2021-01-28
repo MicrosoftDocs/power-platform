@@ -19,7 +19,7 @@ search.app:
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-The Data Integrator (for Admins) is a point-to-point integration service used to integrate data into Dataverse. It supports integrating data from multiple sources—for example, Dynamics 365 Finance and Operations, Dynamics 365 Sales and SalesForce (Preview), SQL (Preview)—into Dataverse. It also supports integrating data into Dynamics 365 Finance and Operations and Dynamics 365 Sales. This service has been generally available since July 2017.  
+The Data Integrator (for Admins) is a point-to-point integration service used to integrate data into Dataverse. It supports integrating data between Dynamics 365 Finance and Operations and Dataverse. It also supports integrating data into Dynamics 365 Finance and Operations and Dynamics 365 Sales. This service has been generally available since July 2017.  
 
 We started with first-party apps—for example, Dynamics 365 Finance and Operations and Dynamics 365 Sales. With the help of Power Query or M-based connectors, we are now able to support additional sources like SalesForce (Preview) and SQL (Preview) and will extend this to 20+ sources in the near future. 
 
