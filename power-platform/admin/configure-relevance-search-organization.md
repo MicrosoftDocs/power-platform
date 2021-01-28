@@ -53,7 +53,7 @@ All searchable fields in Relevance Search  are processed in the language most cl
 
 ## Enable Relevance Search
 
-Relevance Search is an opt-in feature, set to off by default. Enabling Relevance Search makes this search option available to all members of your organization. Relevance Search does not support lifecycle operations (create, delete, backup, recover, copy, reset, and so on). In the event of such an operation, please re-enable Relevance Search.
+Relevance Search is an opt-in feature, set to off by default. Enabling Relevance Search makes this search option available to all members of your organization. Relevance Search does not support lifecycle operations (create, delete, backup, recover, copy, reset, and so on). In the event of such an operation, re-enable Relevance Search.
 
 To enable Relevance Search, do the following:
 
