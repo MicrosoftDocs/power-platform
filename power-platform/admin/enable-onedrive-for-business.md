@@ -41,7 +41,7 @@ This feature was introduced in [!INCLUDE[pn_crm_online_2016_update_shortest](../
 ## Enable OneDrive for Business  
  You can enable [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)] as follows.  
 
-1. In the Power Platform admin center, select an environment. 
+1. In the Microsoft Power Platform admin center, select an environment. 
 
 2. Select **Settings** > **Integration** > **Document management settings**. 
   

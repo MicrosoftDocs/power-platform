@@ -97,7 +97,7 @@ Connection sets are a collection of two connections, environments for the connec
 
 **To create a connection set**
 
-1. Go to [Power Apps Admin center](https://admin.powerapps.com).
+1. Go to [Power Apps admin center](https://admin.powerapps.com).
 
 2. Select the **Data Integration** tab in the left-hand navigation pane.
 
@@ -134,7 +134,7 @@ Projects enable the flow of data between systems. A project contains mappings fo
 
 **To create a data integration project**
 
-1. Go to [Power Apps Admin center](https://admin.powerapps.com).
+1. Go to [Power Apps admin center](https://admin.powerapps.com).
 
 2. Select the **Data Integration** tab in the left navigation pane.
 
@@ -213,7 +213,7 @@ After you create an integration project, you get the option to run it manually o
 
 **To set up schedule-based writes**
 
-1. Go to [Power Apps Admin center](https://admin.powerapps.com).
+1. Go to [Power Apps admin center](https://admin.powerapps.com).
 
 2. You can schedule projects in two different ways.<br>
 
@@ -258,7 +258,7 @@ You can customize projects and templates in these ways:
 
 **To create a connection set**
 
-1. Go to [Power Apps Admin center](https://admin.powerapps.com).
+1. Go to [Power Apps admin center](https://admin.powerapps.com).
 
 2. Select the project for which you want to customize field mappings and then select the arrow between source and destination fields.
 
@@ -276,7 +276,7 @@ You can customize projects and templates in these ways:
 
 **To create your own template by modifying existing templates**
 
-1. Go to [Power Apps Admin center](https://admin.powerapps.com).
+1. Go to [Power Apps admin center](https://admin.powerapps.com).
 
 2. Identify source and destination and direction of flow for your new template.
 
@@ -376,7 +376,7 @@ With Power Query support, we now provide advanced filtering and data transformat
 
 **To set up advanced filtering and data transformation**
 
-1. Go to [Power Apps Admin center](https://admin.powerapps.com).
+1. Go to [Power Apps admin center](https://admin.powerapps.com).
 
 2. Select the project where you want to enable advanced query and then select **Advanced Query**.
 

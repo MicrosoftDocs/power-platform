@@ -56,7 +56,7 @@ Purchase licenses for your organization by going to the [Microsoft 365 admin cen
 
 ## Acquire user licenses
 
-1. After you've purchased a Power Virtual Agents license from the Microsoft 365 Admin Center, you need to purchase user licenses to give users access to the product. In the Microsoft 365 admin center, go to **Billing**, and then select **Purchase services**.
+1. After you've purchased a Power Virtual Agents license from the Microsoft 365 admin center, you need to purchase user licenses to give users access to the product. In the Microsoft 365 admin center, go to **Billing**, and then select **Purchase services**.
 
 2. Scroll down to the **Add-ons** section.
 

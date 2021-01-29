@@ -21,7 +21,7 @@ search.app:
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-Introduced in September, 2020, *Microsoft Dataverse for Teams* is a built-in, low-code data platform for Microsoft Teams that empowers users to build custom apps, bots, and flows in Microsoft Teams by using Power Apps, Power Virtual Agents, and Power Automate. Dataverse for Teams—built on Microsoft Dataverse—provides relational data storage, rich data types, enterprise-grade governance, and one-click solution deployment to the Microsoft Teams app store. More information: [Dataverse for Teams overview](/powerapps/teams/overview-data-platform)
+Introduced in September 2020, *Microsoft Dataverse for Teams* is a built-in, low-code data platform for Microsoft Teams that empowers users to build custom apps, bots, and flows in Microsoft Teams by using Power Apps, Power Virtual Agents, and Power Automate. Dataverse for Teams—built on Microsoft Dataverse—provides relational data storage, rich data types, enterprise-grade governance, and one-click solution deployment to the Microsoft Teams app store. More information: [Dataverse for Teams overview](/powerapps/teams/overview-data-platform)
 
 The Dataverse for Teams environment is automatically created for the selected team when you create an [app](https://docs.microsoft.com/powerapps/teams/create-first-app) or [bot](https://docs.microsoft.com/power-virtual-agents/teams/authoring-first-bot-teams#create-a-bot) in Microsoft Teams for the first time or install a Power Apps app from the app catalog for the first time. The Dataverse for Teams environment is used to store, manage, and share team-specific data, apps, and flows. Each team can have one environment, and all data, apps, bots, and flows created with the Power Apps app inside a team are available from that team's Dataverse for Teams database.  
 
@@ -285,7 +285,7 @@ The **Built by your colleagues** catalog intentionally filters out **Shared with
 
 ## Known issues
 
-- The **Run diagnostics**" feature in the Power Platform admin center for team owners, members, and guests who don't have Azure Active Directory admin roles like Global Admin, or Power Platform Admin assigned, will show an alert that no security roles have been assigned directly to them. Security roles are automatically assigned by the system for Microsoft Teams personas, so this alert can be ignored.
+- The **Run diagnostics** feature in the Power Platform admin center for team owners, members, and guests who don't have Azure Active Directory admin roles like Global Admin, or Power Platform Admin assigned, will show an alert that no security roles have been assigned directly to them. Security roles are automatically assigned by the system for Microsoft Teams personas, so this alert can be ignored.
 
 ### See also
 

@@ -50,7 +50,7 @@ Once the Power Automate integration feature is enabled, the following privileges
    >  Once the Power Automate integration option has been enabled, it cannot be disabled.
    >  
 
-1. In the Power Platform admin center, select an environment. 
+1. In the Microsoft Power Platform admin center, select an environment. 
 
 2. Select **Settings** > **Product** > **Behavior**.   
   
