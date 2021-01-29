@@ -114,9 +114,9 @@ Review the following resources for information about *current* service protectio
 
 ### What tools can I use to monitor and analyze API requests across the platform?
 
-Today, the Power Platform Admin Center contains [reports on Dataverse API requests](https://docs.microsoft.com/power-platform/admin/analytics-common-data-service). This reporting today accounts for interactive and non-interactive traffic. This helps you to quickly view adoption and user metrics for your organization. If your apps or flows primarily use the Dataverse, then these reports can serve as good approximations of the total usage of your solutions.
+Today, the Power Platform admin center contains [reports on Dataverse API requests](https://docs.microsoft.com/power-platform/admin/analytics-common-data-service). This reporting today accounts for interactive and non-interactive traffic. This helps you to quickly view adoption and user metrics for your organization. If your apps or flows primarily use the Dataverse, then these reports can serve as good approximations of the total usage of your solutions.
 
-Additionally, for Power Automate usage specifically, you can see the action usage for a given flow by selecting the **Analytics** action from the flow properties page, and this works across all types of actions. However, if your apps or flows do not use the Dataverse, then at this time there are no reports available in the Power Platform Admin center, although this will be available during 2020 Release Wave 2. Administrators will also be notified via email about overages as a part of 2020 Release Wave 2.
+Additionally, for Power Automate usage specifically, you can see the action usage for a given flow by selecting the **Analytics** action from the flow properties page, and this works across all types of actions. However, if your apps or flows do not use the Dataverse, then at this time there are no reports available in the Power Platform admin center, although this will be available during 2020 Release Wave 2. Administrators will also be notified via email about overages as a part of 2020 Release Wave 2.
 
 ### What happens if a user or integration exceeds request capacity?
 
@@ -140,7 +140,7 @@ Additionally, as enforcement is currently less strict, there is no facility to y
 
 We do not currently stop integrations for occasional and reasonable overages. Administrators can see usage in the Power Platform admin center (for the Dataverse, with general reporting coming during 2020 release wave 2). However, at this time, if a user or flow exceeds the limits consistently for an extended period of time, that user may be disabled or flow turned off.
 
-Once the transition period ends, certain operations will additionally be blocked when a tenant exceeds their Power Platform request limits. These blocked operations will primarily be in administration and customization areas, but not limited to these operations (and may expand into other areas as well, depending on the overage scenarios). 
+Once the transition period ends, certain operations will additionally be blocked when a tenant exceeds their Microsoft Power Platform request limits. These blocked operations will primarily be in administration and customization areas, but not limited to these operations (and may expand into other areas as well, depending on the overage scenarios). 
 
 ### What account's limits are used for classic workflows or Power Automate flows?
 
@@ -148,7 +148,7 @@ It depends if the process is run on-demand or in the background. Instant flows, 
 
 ### Do the Microsoft Power Platform request limits roll over from day to day or month to month?
 
-No. As it is a service performance limit, all the Power Platform request limits are calculated on a rolling 24-hour period. If they aren't consumed, they don't roll over to the next day or next month.
+No. As it is a service performance limit, all the Microsoft Power Platform request limits are calculated on a rolling 24-hour period. If they aren't consumed, they don't roll over to the next day or next month.
 
 ### Does each application user, non-interactive user, administrative user, or SYSTEM user get their own tenant-level limit?
 

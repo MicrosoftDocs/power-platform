@@ -91,7 +91,7 @@ You receive this error message:
 We can't find the notebook. The OneNote notebook might have been removed or moved to another location. Check the notebook location or contact your administrator to update the location record stored in Dynamics 365 Customer Engagement. (Error: 0x80060729)  
 
 To resolve the issue, follow these steps:   
-1. Sign into the [Power Platform](https://admin.powerplatform.microsoft.com/), and open the environment you want. 
+1. Sign into [Microsoft Power Platform](https://admin.powerplatform.microsoft.com/), and open the environment you want. 
 1. Select **Settings** > **Integration**, and then select **Document management settings**.  
 1. Select **SharePoint Document Locations**, open that document location record, and then change the corresponding URL to match your notebook location.  
   

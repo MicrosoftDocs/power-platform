@@ -51,7 +51,7 @@ System administrators and customizers can start or stop auditing for an organiza
 ## Start/stop auditing and set retention policy  
 This task requires the system administrator or customizer security role or equivalent permissions.  
   
-1. Browse to the Power Platform admin center and sign in using administrator credentials. 
+1. Browse to the Microsoft Power Platform admin center and sign in using administrator credentials. 
   
 2. Go to **Environments** > [select an environment] > **Settings** > expand **Audit and logs** > **Audit settings**.
   

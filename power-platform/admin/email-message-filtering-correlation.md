@@ -1,6 +1,6 @@
 ---
 title: "Use email message filtering and correlation to specify which emails are tracked   | MicrosoftDocs"
-description: Use E3mail message filtering and correlation to specify which emails are tracked 
+description: Use Email message filtering and correlation to specify which emails are tracked. 
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
@@ -39,7 +39,7 @@ Email correlation is set on the **Email** tab of the System Settings page and ca
 ## How customer engagement apps uses conversations to track emails  
  Use [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] conversations to increase the probability for email identification and matching. [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] groups together related email and assigns them an id (conversation id), to identify emails that are part of one conversation.  
 
-1. In the Power Platform admin center, select an environment. 
+1. In the Microsoft Power Platform admin center, select an environment. 
 
 2. Select **Settings** > **Email** > **Email tracking**.  
 

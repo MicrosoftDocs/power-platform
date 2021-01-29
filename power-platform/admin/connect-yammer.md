@@ -47,7 +47,7 @@ search.app:
   
 2. [!INCLUDE[proc_settings_system](../includes/proc-settings-system.md)]  
   
-3. In the Power Platform admin center, select an environment. 
+3. In the Microsoft Power Platform admin center, select an environment. 
 
 4. Select **Settings** > **Integration** > **Yammer**.  
   

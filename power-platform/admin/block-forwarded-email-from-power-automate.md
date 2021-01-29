@@ -21,13 +21,13 @@ search.app:
 
  Microsoft Exchange allows admins to disable email auto-forwards and auto-replies to remote domains (external recipients) by using specific message type headers such as ‘Auto-forward’ received from Outlook and Outlook on the web clients.  
 
-Similarly, Power Platform has the inbuilt ability to insert specific SMTP headers in emails sent through Power Automate and Power Apps using the Microsoft 365 Exchange/Outlook connector. These SMTP headers can now be used to set up appropriate exfiltration (unauthorized transfer of data from one device to another) rules in Exchange for outbound emails.  
+Similarly, Microsoft Power Platform has the inbuilt ability to insert specific SMTP headers in emails sent through Power Automate and Power Apps using the Microsoft 365 Exchange/Outlook connector. These SMTP headers can now be used to set up appropriate exfiltration (unauthorized transfer of data from one device to another) rules in Exchange for outbound emails.  
 
 For more details on the Microsoft 365 Outlook connector, see: [SMTP headers](https://docs.microsoft.com/connectors/office365/#smtp-headers). 
 
 ## Block exfiltration of forwarded emails 
 
-Admins can set up Exchange mail flow rules to monitor or block emails sent by Power Automate and/or Power Apps using the Microsoft 365 Outlook connector. The format of the SMTP header sent by Power Platform is as follows. A reserved word ‘Microsoft Power Automate’ or ‘Microsoft Power Apps’ is inserted with the header type: ‘x-ms-mail-application’. For example:
+Admins can set up Exchange mail flow rules to monitor or block emails sent by Power Automate and/or Power Apps using the Microsoft 365 Outlook connector. The format of the SMTP header sent by Microsoft Power Platform is as follows. A reserved word ‘Microsoft Power Automate’ or ‘Microsoft Power Apps’ is inserted with the header type: ‘x-ms-mail-application’. For example:
 
 ```
 **x-ms-mail-application: Microsoft Power Automate**; User-Agent: 
@@ -56,7 +56,7 @@ This is equivalent to the Exchange ‘mail flow’ rule set up for message type 
 
 ## Exempt specific flows from exfiltration blocking
 
-In addition to the new ‘x-ms-mail-application’, Power Platform also inserts the workflow identifier as the new ‘User-Agent’ header which is equal to the app or flow ID.  
+In addition to the new ‘x-ms-mail-application’, Microsoft Power Platform also inserts the workflow identifier as the new ‘User-Agent’ header which is equal to the app or flow ID.  
 
 ```
 x-ms-mail-application: Microsoft Power Automate; User-Agent: 
