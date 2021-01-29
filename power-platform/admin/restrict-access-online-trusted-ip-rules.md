@@ -63,4 +63,5 @@ Block access by location is set using Azure Active Directory (AD) Conditional Ac
   > ![Restricted IP Microsoft Dynamics ERP cloud app](media/restrictedip-erp.png "Restricted IP Microsoft Dynamics ERP cloud app")
 
 ### See also  
- [How to set Azure Active Directory device-based conditional access policy for access control to Azure Active Directory connected applications](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-policy-connected-applications/)   
+ [How to set Azure Active Directory device-based conditional access policy for access control to Azure Active Directory connected applications](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-policy-connected-applications/)<br />   
+[Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/)
