@@ -1,6 +1,6 @@
 ---
 title: "DLP SDK | MicrosoftDocs"
-description: Power Platform data loss prevention (DLP) SDK
+description: Microsoft Power Platform data loss prevention (DLP) SDK
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual

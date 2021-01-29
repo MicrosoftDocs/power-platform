@@ -37,7 +37,7 @@ For information on predefined security roles, see [Predefined security roles](da
   
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
   
-2. In the Power Platform admin center, select an environment. 
+2. In the Microsoft Power Platform admin center, select an environment. 
 
 3. Select **Settings** > **Users + permissions** > **Security roles**.  
    

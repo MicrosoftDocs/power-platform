@@ -52,7 +52,7 @@ The Power Apps per app plan is designed to help organizations solve for one busi
 
 No. Embedded canvas components within the model-driven app will not count towards the two apps limit in the per app licensing model.
 
-### What are the self-service purchase options for the Power Platform products?
+### What are the self-service purchase options for the Microsoft Power Platform products?
 
 See the FAQ: [Self-service purchase FAQ](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq#admin-capabilities).
 
@@ -71,7 +71,7 @@ Yes, non-profit, government and academic pricing is available in respective prog
 
 ### What will happen to the Power Apps and Power Automate Plan 1 and Plan 2 plans on December 31, 2020?
 
-Power Apps P1 and P2 and Power Automate P1 and P2 plans will no longer be available for purchase, including via auto-renewal, after December 31, 2020. Customers with these plan licenses that have renewals falling on or after January 1, 2021 will need to transition to the Power Apps per user or per app plans, or the Power Automate per user or per flow plans to continue using the Power Platform services. Please contact your Microsoft account rep for more information.
+Power Apps P1 and P2 and Power Automate P1 and P2 plans will no longer be available for purchase, including via auto-renewal, after December 31, 2020. Customers with these plan licenses that have renewals falling on or after January 1, 2021 will need to transition to the Power Apps per user or per app plans, or the Power Automate per user or per flow plans to continue using the Microsoft Power Platform services. Please contact your Microsoft account rep for more information.
 
 ### Are full Power Automate capabilities included in Power Apps licenses?
 
@@ -261,7 +261,7 @@ Dataverse for Teams is a built-in flexible datastore that provides data storage 
 - Power Apps capabilities seeded in Microsoft 365 licenses are expanding to enable building and deploying custom apps natively within Teams.
 -	Additionally, Power Virtual Agents capabilities are being introduced to Teams. Customers will now be able to build and deploy custom chatbots directly within Teams.
 
-The existing Power Platform functionality available for use in Microsoft 365 more broadly outside of Teams remains otherwise unchanged.
+The existing Microsoft Power Platform functionality available for use in Microsoft 365 more broadly outside of Teams remains otherwise unchanged.
 
 ### Is there any new capability coming with Dataverse for Teams to Power Automate rights included with Microsoft 365?
 
@@ -269,7 +269,7 @@ Yes. With Dataverse for Teams, users now can build flows using Power Automate ma
 
 ### Which Microsoft 365 subscriptions include Dataverse for Teams and Power Virtual Agents capabilities with Teams?
 
-Dataverse for Teams and Power Virtual Agents for Teams capabilities will be available as part of select Microsoft 365 subscriptions with Power Platform and Teams capabilities, excluding plans for US government environments (GCC, GCC High and DoD) and EDU A1 and SUB SKUs. For more information, see the [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
+Dataverse for Teams and Power Virtual Agents for Teams capabilities will be available as part of select Microsoft 365 subscriptions with Micrsoft Power Platform and Teams capabilities, excluding plans for US government environments (GCC, GCC High and DoD) and EDU A1 and SUB SKUs. For more information, see the [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 
 ### How is Dataverse for Teams environment created? 
 
@@ -342,7 +342,7 @@ This capability is not available yet, but is included in our roadmap.
 -	Governance and security
 
 > [!NOTE]
-> Accessing an environment with Dataverse requires all users to have a corresponding standalone Power Platform license for each service being utilized. For example, a user accessing an app running on Dataverse needs to be licensed by either the Power Apps per app or per user plan depending on the customer scenario.
+> Accessing an environment with Dataverse requires all users to have a corresponding standalone Microsoft Power Platform license for each service being utilized. For example, a user accessing an app running on Dataverse needs to be licensed by either the Power Apps per app or per user plan depending on the customer scenario.
 
 ### Why do I see Dataverse plan in select Microsoft 365 subscriptions? Is this related to Dataverse for Teams?
 

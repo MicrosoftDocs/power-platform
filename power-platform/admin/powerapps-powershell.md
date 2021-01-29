@@ -147,7 +147,7 @@ To perform the administration operations in the admin cmdlets, you'll need the f
 | Read, update, and delete custom connector permissions | Get-AdminPowerAppConnectorRoleAssignment *(previously Get-AdminConnectorRoleAssignment)*<br> Set-AdminPowerAppConnectorRoleAssignment *(previously Set-AdminConnectorRoleAssignment)* <br> Remove-AdminPowerAppConnectorRoleAssignment *(previously Remove-AdminConnectorRoleAssignment)* |
 | Read a user's Power Apps user settings, user-app settings, and notifications | Get-AdminPowerAppsUserDetails |
 | Read and delete a user's Power Automate settings, which are not visible to user, but that support flow execution | Get-AdminFlowUserDetails <br> Remove-AdminFlowUserDetails |
-| Create, read, update and delete data loss prevention policies for your organization using a three-way classification - **Business**, **Non-Business**, and **Blocked**  |  Get-DlpPolicy *(previously Get-AdminDlpPolicy)* <br> New-DlpPolicy *(previously Add-AdminDlpPolicy)* <br>  Remove-DlpPolicy *(previously Remove-AdminDlpPolicy)* <br> Set-DlpPolicy *(previously Set-AdminDlpPolicy)*<br> <br> Learn more about the [Power Platform data loss prevention (DLP) SDK](data-loss-prevention-sdk.md). |
+| Create, read, update and delete data loss prevention policies for your organization using a three-way classification - **Business**, **Non-Business**, and **Blocked**  |  Get-DlpPolicy *(previously Get-AdminDlpPolicy)* <br> New-DlpPolicy *(previously Add-AdminDlpPolicy)* <br>  Remove-DlpPolicy *(previously Remove-AdminDlpPolicy)* <br> Set-DlpPolicy *(previously Set-AdminDlpPolicy)*<br> <br> Learn more about the [Microsoft Power Platform data loss prevention (DLP) SDK](data-loss-prevention-sdk.md). |
 | Read, add, remove, and update tenant settings | Get-TenantSettings<br />Set-TenantSettings<br /> Get-PowerAppTenantUrlPatterns <br />New-PowerAppTenantUrlPatterns <br /> Remove-PowerAppTenantUrlPatterns <br />Get-AdminPowerAppTenantConsumedQuota|
 | Read, add, and remove allowed consent/trial plans within the tenant | Remove-AllowedConsentPlans <br>Add-AllowedConsentPlans<br /> Get-AllowedConsentPlans |
 | Read tenant assigned user licenses | Get-AdminPowerAppLicenses |
@@ -290,7 +290,7 @@ Get-AdminPowerAppLicenses -OutputFilePath '<licenses.csv>'
 
 Exports all the assigned user licenses (Power Apps and Power Automate) in your tenant into a tabular view .csv file. The exported file contains both self-service sign up internal trial plans as well as plans that are sourced from Azure Active Directory. The internal trial plans are not visible to admins in the Microsoft 365 admin center.
 
-The export can take a while for tenants with a large number of Power Platform users.
+The export can take a while for tenants with a large number of Microsoft Power Platform users.
 
 #### Set logged in user as the owner of a canvas app
 

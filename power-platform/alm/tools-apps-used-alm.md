@@ -1,6 +1,6 @@
 ---
-title: "Overview of tools and apps used with application lifecycle management (ALM) in Power Platform | Microsoft Docs"
-description: "Learn about the tools and apps used with application lifecycle management (ALM) in Power Platform"
+title: "Overview of tools and apps used with application lifecycle management (ALM) in Microsoft Power Platform | Microsoft Docs"
+description: "Learn about the tools and apps used with application lifecycle management (ALM) in Microsoft Power Platform."
 keywords: 
 author: Mattp123
 ms.author: matp
