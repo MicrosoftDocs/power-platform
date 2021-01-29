@@ -1,12 +1,13 @@
 ---
 title: "Connect to Exchange Server (on-premises) | MicrosoftDocs"
 description: Connect to Exchange Server (on-premises)
-author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 10/12/2020
-ms.author: jimholtz
+author: revachauhan
+ms.author: rechauha
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:

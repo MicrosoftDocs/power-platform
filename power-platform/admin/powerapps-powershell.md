@@ -6,7 +6,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 11/02/2020
+ms.date: 01/26/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -105,7 +105,7 @@ Users with a valid Power Apps license can perform the operations in these cmdlet
 
 | Purpose | Cmdlet |
 | --- | --- |
-| Add a canvas app to a Microsoft Dataverse solution | SetPowerAppAsSolutionAware |
+| Add a canvas app to a Microsoft Dataverse solution | Set-PowerAppAsSolutionAware |
 | Read environments | Get-PowerAppEnvironment *(previously Get-PowerAppsEnvironment)* <br> Get-FlowEnvironment |
 | Read, update, and delete a canvas app | Get-PowerApp *(previously Get-App)* <br> Remove-PowerApp *(previously Remove-App)* <br> Publish-PowerApp *(previously Publish-App)* <br> Set-AppDisplayName *(previously Set-PowerAppDisplayName)*<br> Get-PowerAppVersion *(previously Get-AppVersion)* <br> Restore-PowerAppVersion *(previously Restore-AppVersion)* |
 | Read, update, and delete canvas app permissions | Get-PowerAppRoleAssignment *(previously Get-AppRoleAssignment)* <br> Set-PowerAppRoleAssignment *(previously Set-AppRoleAssignment)* <br> Remove-PowerAppRoleAssignment *(previously Remove-AppRoleAssignment)* |
@@ -317,6 +317,30 @@ Get-AdminRecoverDeletedPowerApp -AppName 'AppName' -EnvironmentName 'Environment
 ```
 
 This recovers a canvas app that is discoverable via Get-AdminDeletedPowerAppsList cmdlet. Any canvas app that isn't displayed in Get-AdminDeletedPowerAppsList isn't recoverable.
+
+#### Designate SharePoint custom form environment
+
+The following cmdlets can be used to specify and verify which environment SharePoint custom forms are saved to, instead of the default environment. When the designated environment for SharePoint custom forms changes, this is the environment where newly created custom forms are saved. Existing custom forms don't automatically migrate to different environments as these cmdlets are used. The ability for a user to create a custom form in a designated environment requires that user to have the Environment Maker role. Users can be granted the Environment Maker role in the [Power Platform admin center](https://admin.powerplatform.microsoft.com).  
+
+Note, any environment which isn’t the default environment, can be deleted. If the designated SharePoint custom form environment is deleted the custom forms are deleted with it.
+
+```powershell
+Get-AdminPowerAppSharepointFormEnvironment  
+```
+
+This returns the EnvironmentName for the environment currently designated for newly created SharePoint custom forms. If an environment has never been designated, the default environment is returned. 
+
+```powershell
+Set-AdminPowerAppSharepointFormEnvironment –EnvironmentName 'EnvironmentName' 
+```
+
+This designates the environment newly created SharePoint custom forms save to, instead of the default environment. Existing custom forms don't automatically migrate to the newly designated environment. Only production environments may be designated for SharePoint custom forms.  
+
+```powershell
+Reset-AdminPowerAppSharepointFormEnvironment  
+```
+
+This resets the default environment as the designated environment to save SharePoint custom forms.
 
 ### Power Automate commands
 

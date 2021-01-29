@@ -2,7 +2,7 @@
 title: "Get access to Power Virtual Agents"
 description: "Compare the capabilities you can access in Power Virtual Agents depending on whether you have a Microsoft 365 subscription or standalone Power Virtual Agents subscription."
 keywords: "Administration, licensing, PVA, standalone, compare, comparison"
-ms.date: 9/22/2020
+ms.date: 1/21/2021
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -33,7 +33,8 @@ Capability | Select Microsoft 365 subscriptions | Power Virtual Agents subscript
 Deploy bot to channels | [Microsoft Teams](teams/publication-add-bot-to-microsoft-teams-teams.md) | [Any channel supported by Power Virtual Agents](publication-fundamentals-publish-channels.md)
 Power Automate connectors | [Standard connectors available for flows triggered from Power Virtual Agents](teams/advanced-flow-teams.md) | [Premium connectors available for flows triggered from Power Virtual Agents](advanced-flow.md)
 Web security | [Secure access enabled by default, no ability to generate secrets to enable secure access](teams/configure-web-security-teams.md) | [Ability to generate secrets and turn on or off secure access as wanted by the bot author](configure-web-security.md)
-Azure bot framework skills | Not available | [Ability to extend Power Virtual Agents bots with Azure bot framework skills](advanced-use-skills.md)
+Use Microsoft Bot Framework skills | Not available | [Ability to extend Power Virtual Agents bots with Microsoft Bot Framework skills](advanced-use-skills.md)
+Integrate Micrsoft Bot Framework dialogs | Not available | [Develop custom dialogs with Bot Framework Composer](advanced-bot-framework-composer.md)
 
 >[!NOTE]
 >A paid, standalone Power Virtual Agents subscription is required to run flows with premium connectors in the context of Power Virtual Agents chatbots.  
@@ -58,13 +59,3 @@ The standalone Power Virtual Agents subscription allows you to build chatbots on
 
 
 You can obtain a standalone Power Virtual Agents subscription from the Microsoft 365 admin center. Learn more at the [Assign licenses and manage access to Power Virtual Agents](requirements-licensing.md) topic.
-
-
-
-
-
-
-
-
-
-

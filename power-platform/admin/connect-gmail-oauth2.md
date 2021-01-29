@@ -1,12 +1,13 @@
 ---
 title: "Connect Gmail accounts using OAuth 2.0  | MicrosoftDocs"
 description: "Connect Gmail accounts using OAuth 2.0"
-author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/04/2020
-ms.author: jimholtz
+ms.date: 01/15/2021
+author: revachauhan
+ms.author: rechauha
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
@@ -85,7 +86,7 @@ Follow the steps for **Create a project** in: [Create, shut down, and restore pr
    |Application type     | Web application         |
    |Name     |  The name of your web client       |
    |Authorized JavaScript origins     | Your environment's  URL (for example, https://contoso.crm.dynamics.com)        |
-   |Authorized redirect URIs     | Your environment's URL with "/_grid/cmds?dlg_gmailoauth.aspx" appended to it (for example, https://contoso.crm.dynamics.com/_grid/cmds/dlg_gmailoauth.aspx)        |
+   |Authorized redirect URIs     | Your environment's URL with "/_grid/cmds/dlg_gmailoauth.aspx" appended to it (for example, https://contoso.crm.dynamics.com/_grid/cmds/dlg_gmailoauth.aspx)        |
 
    > [!div class="mx-imgBorder"] 
    > ![Create OAuth client ID](media/gmail-oauth-consent-create-clientid.png "Create OAuth client ID")
@@ -143,12 +144,19 @@ Use the following settings:
 
 6. Proceed through the Gmail sign-in and authorization pages.
 
-## Step 6: Test and enable
+## Step 6: Add test users
+
+In the Google Cloud Platform (Developer Console), add users in the Test Users section when publishing the app. See [Google Cloud Platform Console Help](https://support.google.com/cloud/answer/7454865).
+
+> [!div class="mx-imgBorder"] 
+> ![Add test users](media/gmail-oauth-add-users.png "Add test users")
+
+## Step 7: Test and enable
 
 > [!NOTE]
 > These steps should be done by the mailbox user.
 
-In the web app, select **Test & Enable Mailbox** to test the mailbox configured in step 5.
+In the web app, select **Test & Enable Mailbox** to test the mailbox configured in step 6.
 
    > [!div class="mx-imgBorder"] 
    > ![Test and enable mailbox](media/gmail-oauth-test-enable-mailbox.png "Test and enable mailbox")

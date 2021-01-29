@@ -1,12 +1,13 @@
 ---
 title: "Connect POP3 or SMTP servers  | MicrosoftDocs"
 description: Connect to POP3 or SMTP servers 
-author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/04/2020
-ms.author: jimholtz
+author: revachauhan
+ms.author: rechauha
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:

@@ -1,8 +1,7 @@
 ---
-title: "Overview | MicrosoftDocs"
+title: "Resource overview | MicrosoftDocs"
 description: About resources
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
@@ -16,7 +15,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Overview
+# Resource overview
 
 <!-- This was created for fwlink 2126968. Don't delete. -->
 
