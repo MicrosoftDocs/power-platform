@@ -56,7 +56,7 @@ With version 9.0., you can connect your customer engagement apps (Dynamics 365 S
 
 ## Create an email server profile  
 
-1. In the Power Platform admin center, select an environment. 
+1. In the Microsoft Power Platform admin center, select an environment. 
 
 2. Select **Settings** > **Email** > **Server profiles**.  
 

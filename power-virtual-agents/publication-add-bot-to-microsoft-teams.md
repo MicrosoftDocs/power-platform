@@ -36,7 +36,7 @@ You can:
 ## Prerequisites
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
-- Your organization's [Microsoft Teams app permission policies](/microsoftteams/manage-power-platform-apps) will need to allow Power Platform apps to be added to Microsoft Teams before you can directly install the bot in Microsoft Teams. Bots that are approved for admin submission in the **Built by your organization** section is managed separately by the admin in the Microsoft Teams admin center [Manage apps page](/microsoftteams/submit-approve-custom-apps#validate).
+- Your organization's [Microsoft Teams app permission policies](/microsoftteams/manage-power-platform-apps) will need to allow Microsoft Power Platform apps to be added to Microsoft Teams before you can directly install the bot in Microsoft Teams. Bots that are approved for admin submission in the **Built by your organization** section is managed separately by the admin in the Microsoft Teams admin center [Manage apps page](/microsoftteams/submit-approve-custom-apps#validate).
 - Before installing the bot for yourself or sharing the bot with others, you should [publish the bot at least once](publication-fundamentals-publish-channels.md).
 
 
