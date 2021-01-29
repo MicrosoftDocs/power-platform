@@ -55,7 +55,7 @@ Block access by location is set using Azure Active Directory (AD) Conditional Ac
   > [!div class="mx-imgBorder"] 
   > ![Restricted IP Dataverse cloud app](media/restrictedip-cds.png "Restricted IP Dataverse cloud app")
 
-or
+  or
 
    For **Step 6. Under Cloud apps or actions**, select the Microsoft Dynamics ERP for Finance and Operations application.
 
