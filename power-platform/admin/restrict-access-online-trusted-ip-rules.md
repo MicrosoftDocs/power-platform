@@ -4,9 +4,9 @@ description: Block access by location with Azure AD Conditional Access
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/09/2020
-author: jayasreekumar
-ms.author: jkumar
+ms.date: 01/29/2021
+author: paulliew
+ms.author: paulliew
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
 search.audienceType: 
@@ -63,8 +63,9 @@ Block access by location is set using Azure Active Directory (AD) Conditional Ac
 
 or
    For **Step 6. Under Cloud apps or actions**, select the Microsoft Dynamics ERP for Finance and Operations application.
-  >> to jim, please add pic here for "Restricted IP F&O cloud app")
 
+  > [!div class="mx-imgBorder"] 
+  > ![Restricted IP Microsoft Dynamics ERP cloud app](media/restrictedip-erp.png "Restricted IP Microsoft Dynamics ERP cloud app")
 
 ### See also  
  [How to set Azure Active Directory device-based conditional access policy for access control to Azure Active Directory connected applications](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-policy-connected-applications/)   
