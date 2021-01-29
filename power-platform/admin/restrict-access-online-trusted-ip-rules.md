@@ -50,14 +50,14 @@ Block access by location is set using Azure Active Directory (AD) Conditional Ac
 1. Create a Named location. See [Define locations](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-location#define-locations). 
 2. Create a Conditional Access policy. See [Create a Conditional Access policy](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-location#create-a-conditional-access-policy).
 
-   For **Step 6. Under Cloud apps or actions**, select the Microsoft Dataverse application.
+  For **Step 6. Under Cloud apps or actions**, select the Microsoft Dataverse application.
 
   > [!div class="mx-imgBorder"] 
   > ![Restricted IP Dataverse cloud app](media/restrictedip-cds.png "Restricted IP Dataverse cloud app")
 
   or
 
-   For **Step 6. Under Cloud apps or actions**, select the Microsoft Dynamics ERP for Finance and Operations application.
+  For **Step 6. Under Cloud apps or actions**, select the Microsoft Dynamics ERP for Finance and Operations application.
 
   > [!div class="mx-imgBorder"] 
   > ![Restricted IP Microsoft Dynamics ERP cloud app](media/restrictedip-erp.png "Restricted IP Microsoft Dynamics ERP cloud app")
