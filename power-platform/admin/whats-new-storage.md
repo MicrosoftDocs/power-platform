@@ -118,6 +118,81 @@ You can request a temporary (30-day) extension that allows copy and restore oper
 | January 2021 | We've added database, log, and file storage capacity with the Project for the Web licenses. See [Project for the web and Microsoft Dataverse](https://docs.microsoft.com/office365/servicedescriptions/project-online-service-description/project-online-service-description?redirectedfrom=MSDN#project-roadmap-and-power-automate).  <br /><br /> We've changed the default capacities for the following: <br /> :::image type="content" source="media/storage-data-default-capacity-change.png" alt-text="Default capacity change"::: <br /> See the ["Subscription Capacity" section of the Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130). |
 
 
+<table>
+<thead>
+  <tr>
+    <th>Date</th>
+    <th>Description</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>December 2020 </td>
+    <td>As part of our storage optimization efforts, we continue to make improvements. In December 2020, we included most of the *WebResourceBase* table and *RibbonClientMetadataBase* table as part of file storage. Customers will see file storage consumption increase and database consumption reduced based on the amount of data in these tables. This effort will continue for other tables in the future. Check back here to see when additional tables go through a similar transition.</td>
+  </tr>
+  <tr>
+    <td>January 2021</td>
+    <td>We've added database, log, and file storage capacity with the Project for the Web licenses. See [Project for the web and Microsoft Dataverse](https://docs.microsoft.com/office365/servicedescriptions/project-online-service-description/project-online-service-description?redirectedfrom=MSDN#project-roadmap-and-power-automate).<br />table>
+<thead>
+  <tr>
+    <th>Power Apps Default Capacity per tenant</th>
+    <th>Default per app<br>(current)</th>
+    <th>Default per app<br>(after 1/29/21)</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Dataverse Database capacity</td>
+    <td>1GB</td>
+    <td>5GB</td>
+  </tr>
+  <tr>
+    <td>Dataverse File capacity</td>
+    <td>20GB</td>
+    <td>20GB</td>
+  </tr>
+  <tr>
+    <td>Dataverse Log capacity</td>
+    <td>2GB</td>
+    <td>2GB</td>
+  </tr>
+</tbody>
+</table></td>
+  </tr>
+</tbody>
+</table>
+
+
+
+
+<table>
+<thead>
+  <tr>
+    <th>Power Apps Default Capacity per tenant</th>
+    <th>Default per app<br>(current)</th>
+    <th>Default per app<br>(after 1/29/21)</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Dataverse Database capacity</td>
+    <td>1GB</td>
+    <td>5GB</td>
+  </tr>
+  <tr>
+    <td>Dataverse File capacity</td>
+    <td>20GB</td>
+    <td>20GB</td>
+  </tr>
+  <tr>
+    <td>Dataverse Log capacity</td>
+    <td>2GB</td>
+    <td>2GB</td>
+  </tr>
+</tbody>
+</table>
+
+
 ### See also
 [Legacy storage capacity](legacy-capacity-storage.md) <br />
 [Dataverse storage capacity](capacity-storage.md) <br />
