@@ -21,7 +21,7 @@ search.app:
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-You can limit access to users with block access by location to reduce unauthorized access. When block access by location restrictions are set in a user’s profile and the user tries to log in from a blocked location, access to customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, Dynamics 365 Project Service Automation), and Dynamics 365 for Finance and Operations apps are blocked.  
+You can limit access to users with block access by location to reduce unauthorized access. When block access by location restrictions is set in a user’s profile and the user tries to sign in from a blocked location, access to customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, Dynamics 365 Project Service Automation), and Dynamics 365 for Finance and Operations apps are blocked.  
   
  **Requirements**  
   
@@ -34,7 +34,7 @@ You can limit access to users with block access by location to reduce unauthoriz
 ## Additional security considerations  
 Block access is only enforced during user authentication.  This is done by the [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)] Conditional Access capability. Customer engagement and Finance and Operations apps set a session timeout limit to balance protecting user data and the number of times users are prompted for their sign-in credentials. Block access for devices (including laptops) is not applied until the session timeout expires.  
   
- For example, block access is setup to only allow access to customer engagement and Finance and Operations apps when users are working from a corporate office.  When a user signs in into customer engagement and Finance and Operations apps using their laptop from their office and establishes a session, the user can continue to access customer engagement and Finance and Operations apps after leaving the office until the session timeout expires.  This behavior also applies to mobile and offsite connections such as: Dynamics 365 for Phones and Tablets, [!INCLUDE[pn_crm_app_for_outlook_short](../includes/pn-crm-app-for-outlook-short.md)], and Dynamics 365 for Finance and Operations Mobile App.
+ For example, block access is set up to only allow access to customer engagement and Finance and Operations apps when users are working from a corporate office.  When a user signs in into customer engagement and Finance and Operations apps using their laptop from their office and establishes a session, the user can continue to access customer engagement and Finance and Operations apps after leaving the office until the session timeout expires.  This behavior also applies to mobile and offsite connections such as: Dynamics 365 for Phones and Tablets, [!INCLUDE[pn_crm_app_for_outlook_short](../includes/pn-crm-app-for-outlook-short.md)], and Dynamics 365 for Finance and Operations Mobile App.
   
 <a name="BKMK_CreateSecurityGroup"></a>   
 
@@ -62,7 +62,7 @@ Block access by location is set using Azure Active Directory (AD) Conditional Ac
   > ![Restricted IP Dataverse cloud app](media/restrictedip-cds.png "Restricted IP Dataverse cloud app")
 
 or
-   For **Step 6. Under Cloud apps or actions**, select the Microsoft Dynamice ERP for Finance and Operations application.
+   For **Step 6. Under Cloud apps or actions**, select the Microsoft Dynamics ERP for Finance and Operations application.
   >> to jim, please add pic here for "Restricted IP F&O cloud app")
 
 
