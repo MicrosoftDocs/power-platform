@@ -66,8 +66,7 @@ or production.
 
 ### Who should have access? 
 
-Define and manage the security of your resources and data in Common Data
-Service. Microsoft Power Platform provides environment-level admin roles to perform
+Define and manage the security of your resources and data in Microsoft Dataverse. Microsoft Power Platform provides environment-level admin roles to perform
 tasks. Dataverse includes security roles that define the level of
 access to apps, app components, and resources app makers and users have within
 Dataverse.

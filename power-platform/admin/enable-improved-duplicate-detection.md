@@ -30,7 +30,7 @@ To let users in your organization use the improved duplicate detection and merge
 
     **- OR -**
 
-    In the Power Platform admin center, select **Environments** \> **Settings** \> **Data Management** \> **Duplicate Detection Settings**.
+    In the Microsoft Power Platform admin center, select **Environments** \> **Settings** \> **Data Management** \> **Duplicate Detection Settings**.
 
 1. For **Enable improved duplicate detection and merge experience**, select **Yes** and then select **OK**.
 

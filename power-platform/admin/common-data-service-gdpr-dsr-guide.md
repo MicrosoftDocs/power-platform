@@ -86,7 +86,7 @@ Only Global admin and Dataverse System Administrators can perform the discover, 
 ### Discover
 System Administrators can create multiple Dataverse environments. These environments can be used for trial, development, or production purposes. Each of these environments has a copy of the system User table with any custom attributes that may have been added by the system administrator, as well as the user personal data synced from the Microsoft 365 admin center.
 
-System administrators can find a list of all the Dataverse environments by navigating to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+System administrators can find a list of all the Dataverse environments by navigating to the Microsoft [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
 You can find personal data from Dataverse users within the following resources:
 

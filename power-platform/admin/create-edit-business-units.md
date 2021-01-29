@@ -51,7 +51,7 @@ A business unit is a logical grouping of related business activities.
 
 ## Create a new business unit  
   
-These settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Users + permissions** > **Business units**.
+These settings can be found in the Microsoft Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Users + permissions** > **Business units**.
 
 Make sure you have the System Administrator or System Customizer security role or equivalent permissions to update the setting.
 
