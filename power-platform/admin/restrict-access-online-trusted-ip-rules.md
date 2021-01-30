@@ -64,4 +64,5 @@ Block access by location is set using Azure Active Directory (AD) Conditional Ac
 
 ### See also  
 [How to set Azure Active Directory device-based conditional access policy for access control to Azure Active Directory connected applications](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-policy-connected-applications/) <br />
-[Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/)
+[Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/) <br />
+[Restrict access with Conditional access for Finance and Operations apps](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/CloudSecurity/ConditionalAccess)
