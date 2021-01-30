@@ -178,6 +178,7 @@ A Power Automate flow uses the custom connector, queries the audit log daily, an
 1. Paste in the ID you copied for directory (tenant) ID for the *Tenant ID*.
     ![Set environment variables for the CoE audit log components solution](media/coe-custom3.png "Set environment variables for the CoE audit log components solution")
 
+
 1. Open the **Center of Excellence – Audit Log solution**, and select **Admin \| \[Child\] Admin | Sync Logs**. 
 
 1. Edit the **Run only users** settings.
@@ -267,3 +268,4 @@ Keep in mind that after a user account has access to the audit logs, that user h
     1. If the flow isn't on yet, turn it on.
 
     1. Run the flow to start syncing audit log data to the Dataverse table.
+
