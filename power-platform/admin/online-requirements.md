@@ -76,6 +76,14 @@ Select your region:
 > - [Dynamics 365 US Government environments](internet-url-us-government.md)
 > - [United Kingdom area-based organizations](internet-url-united-kingdom.md)
 
+## Ports
+Dataverse exposes ports *18085* and *8085* to perform maintenance operations for customer databases.  The maintenance operations are executed to ensure that Microsoft Dynamics 365 environments are performing at optimal performance standards.  These maintenance operations include but are not limited to: 
+	Database Update Operation
+	App Update Operation
+These maintenance operations are executed by the [Asynchronous Service](https://docs.microsoft.com/powerapps/developer/data-platform/asynchronous-service).
+
+Dataverse exposes port *5558* to expose the [Dataverse Tabular Data Stream](https://docs.microsoft.com/openspecs/windows_protocols/ms-tds/893fcc7e-8a39-4b3c-815a-773b7b982c50). 
+
 ### See also  
  [Plan for Deployment and Administration](../admin/plan-for-deployment-and-administration.md)  <br /> 
  [Work with requirements as a solution architect for Power Platform and Dynamics 365](https://docs.microsoft.com/learn/modules/work-with-requirements/index)
