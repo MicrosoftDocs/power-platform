@@ -10,8 +10,8 @@ applies_to:
   - "Dynamics 365 (online)"
 ms.assetid: 
 caps.latest.revision: 63
-author: jayasreekumar
-ms.author: jkumar
+author: jimholtz
+ms.author: jimholtz
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
 search.audienceType: 
