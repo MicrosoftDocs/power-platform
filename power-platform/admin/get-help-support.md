@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/26/2021
+ms.date: 02/01/2021
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -49,9 +49,7 @@ An example of solutions provided for Dynamics 365 App for Outlook issues:
 - For the following [support plans](https://www.microsoft.com/dynamics365/support):
    
   - Subscription Support
-  - Enhanced Support
   - Professional Direct Support
-  - Premier Support
   - Unified Support
 
 > [!NOTE]
@@ -107,7 +105,7 @@ You can check the status and edit your request on this page.
 
 ## Advisory services and premium support plan
 
-A premium support plan includes advisory services. You can submit a request to get answers relative to recommendations, best practices, general advice or guidance on the usage of the products.
+A [premium support plan](https://dynamics.microsoft.com/support/plans/) includes advisory services. You can submit a request to get answers relative to recommendations, best practices, general advice or guidance on the usage of the products.
 
 Without a premium support plan, you can only submit request on technical issues. Progressively, such restriction will be enforced and you won't be able to create a support request for advisory services unless you have a premium support plan.
 
@@ -132,6 +130,12 @@ Do **not** select topics from **Administration Center** as this can result in lo
 
 > [!div class="mx-imgBorder"] 
 > ![Don't select from this list for app issues](media/support-dont-use-administration-center.png "Don't select from this list for app issues")
+
+## Model driven apps and support environments
+For some support requests, you’ll be asked to request a support environment. Currently, support environments can’t be created for the Power Apps or Power Automate product options in the **What product where you using when the issue occurred?** field. To create a support request which includes a support environment for Power Platform issues, select the **Dynamics 365 Customer Engagement** product for that field.
+
+> [!div class="mx-imgBorder"] 
+> ![Select Dynamics 365 Customer Engagement](media/new-support-request-ce-product.png "Select Dynamics 365 Customer Engagement")
 
 ### See also
 [Support overview](support-overview.md)<br />
