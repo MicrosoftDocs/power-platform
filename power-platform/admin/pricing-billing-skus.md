@@ -19,7 +19,7 @@ search.app:
 
 # Licensing overview for Microsoft Power Platform
 
-The topics in this section provide detailed information about Power Apps and Microsoft Power Automate licensing.
+The topics in this section provide detailed information about Power Apps and Power Automate licensing.
 
 For information about:
 
