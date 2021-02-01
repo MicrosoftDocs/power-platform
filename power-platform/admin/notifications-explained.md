@@ -62,15 +62,7 @@ Planned maintenance includes updates and changes to the service to provide incre
 ## Communications for releases, package deployments, and awareness
 Communications can be informational in nature, drive specific actions, or both. The target audience for these communications is System Administrators or individuals designated to run the service. You can easily identify these by the light-blue banner.
 
-![General awareness email banner](../admin/media/Customer-Notification-Banner.png "Customer Notification Banner") 
- 
-Power BI will display with the following yellow banner:
- 
-![Power BI](../admin/media/PowerBI-banner.png "Power BI") 
- 
- Power Apps/Power Automate will display with the following purple banner:
- 
-![Power Apps](../admin/media/PowerApps-Banner.png "PowerApps") 
+![General awareness email banner](../admin/media/proactive banner.jpg "Customer Notification Banner") 
 
 ## Action requested communications 
 Action requested notifications are sent when we detect that a configuration or a setting for your environment is causing the service to perform below expectations. The notification will include details on the situation as well as guidance on how to return performance to normal.
