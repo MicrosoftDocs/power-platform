@@ -84,7 +84,7 @@ Dataverse exposes ports *18085* and *8085* to perform maintenance operations for
 
 These maintenance operations are executed by the [Asynchronous Service](https://docs.microsoft.com/powerapps/developer/data-platform/asynchronous-service).
 
-Dataverse exposes port *5558* to expose the [Dataverse Tabular Data Stream](https://docs.microsoft.com/openspecs/windows_protocols/ms-tds/893fcc7e-8a39-4b3c-815a-773b7b982c50). 
+Dataverse exposes ports *1433* and *5558* to expose the [Dataverse Tabular Data Stream](https://docs.microsoft.com/openspecs/windows_protocols/ms-tds/893fcc7e-8a39-4b3c-815a-773b7b982c50). 
 
 ### See also  
  [Plan for Deployment and Administration](../admin/plan-for-deployment-and-administration.md)  <br /> 
