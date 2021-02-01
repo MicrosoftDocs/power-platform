@@ -1,13 +1,14 @@
 ---
 title: "Notifications for Business Application Group services  | MicrosoftDocs"
 description: Notifications for Business Application Group services
-author: astockli
-manager: timrob
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/08/2020
+ms.date: 02/01/2021
 ms.author: astockli
+author: astockli
+manager: timrob
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
