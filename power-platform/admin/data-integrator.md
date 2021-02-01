@@ -4,7 +4,7 @@ description: Integrate data from multiple sources into Microsoft Dataverse
 ms.service: power-platform
 ms.topic: how-to
 ms.component: cds
-ms.date: 01/29/2021
+ms.date: 02/01/2021
 ms.author: sabinn
 author: sabinn-msft
 ms.reviewer: jimholtz
@@ -22,10 +22,8 @@ search.app:
 
 The Data Integrator (for Admins) is a point-to-point integration service used to integrate data into Dataverse. It supports integrating data between Finance and Operations apps and Dataverse. It also supports integrating data into Finance and Operations apps and Dynamics 365 Sales. This service has been generally available since July 2017.   
 
-We started with first-party apps—for example, Finance and Operations apps and Dynamics 365 Sales. With the help of Power Query or M-based connectors, we are now able to support additional sources like SalesForce (Preview) and SQL (Preview) and will extend this to 20+ sources in the near future. 
-
-> [!div class="mx-imgBorder"]
-> ![Data source to destination](media/data-integrator/DataIntegratorP2P-new.PNG "Data source to destination")
+> [!NOTE]
+> We highly recommend customers start using [dual-write] (https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page) which provides tightly coupled, bidirectional integration between Finance and Operations apps and Dataverse. Any data change in Finance and Operations apps causes writes to Dataverse, and any data change in Dataverse causes writes to Finance and Operations apps. This automated data flow provides an integrated user experience across the apps. 
 
 > [!TIP]
 > Check out the blog: [Data Integrator Updates – New features with an intuitive user interface providing a fluent experience](https://powerapps.microsoft.com/blog/data-integrator-updates-new-features-with-an-intuitive-user-interface-providing-a-fluent-experience/).
