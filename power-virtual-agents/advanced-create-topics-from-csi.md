@@ -47,7 +47,7 @@ After reviewing topic details and identifying a candidate for automation, you ca
 
     ![Automate topics from topic details page](media/automate-topic-details.png)
 
-2. Customer Service Insights opens a new browser tab and goes to the [Power Virtual Agents web app](https://powerva.microsoft.com), where it creates a new topic in the currently active bot. 
+2. Customer Service Insights opens a new browser tab and goes to the [Power Virtual Agents web app](https://web.powerva.microsoft.com), where it creates a new topic in the currently active bot. 
 
     The **Name** and **Trigger phrases** are prefilled from the topic you selected for automation. 
     
