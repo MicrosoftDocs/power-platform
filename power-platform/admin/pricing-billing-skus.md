@@ -23,6 +23,8 @@ The topics in this section provide detailed information about Power Apps and Mic
 
 For information about Power BI licensing, see [Power BI Pricing](https://powerbi.microsoft.com/pricing/).
 
+For information about Power Virtual Agents licensing, see [Licensing for Power Virtual Agents](/power-virtual-agents/requirements-licensing-subscriptions.md) and for information about pricing, see [Power Virtual Agents pricing plans](https://powervirtualagents.microsoft.com/pricing/).
+
 ## Power Apps and Power Automate Standalone plans
 
 Standalone Power Apps and Microsoft flow plans provide users the ability to create and run apps across data sources that extend beyond Microsoft 365, such as Salesforce, on-premises and custom data sources. These plans also include access to Dataverse to store and manage data. Learn more: [What is Dataverse?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
