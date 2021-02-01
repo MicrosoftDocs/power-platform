@@ -64,6 +64,10 @@ search.app:
 > 2.  For **Look for**, select **Personal Document Templates**.  
 > 3.  Click **Results** (!).  
 > 4.  Select the personal document template to delete and then click Delete (![Delete button](../admin/media/nb-ua-r1-trashbin.png "Delete button")).  
+> 
+> To update templates, delete the template and upload an updated version of that template.
+
+
 
  After clicking **Create Word Template**, select an entity to filter with, and then click **Word Template** > **Select Entity**.  
 
