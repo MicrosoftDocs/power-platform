@@ -151,7 +151,7 @@
        - name: Share bots with users in your organization
          href: teams/admin-share-bots-teams.md
        - name: Upgrade a Dataverse for Teams environment
-         href: teams/upgrade-dataverse-teams.md
+         href: teams/admin-upgrade-dataverse-teams.md
        - name: Regional settings and data locations for organizations
          href: teams/data-location-teams.md
     - name: Author and edit
