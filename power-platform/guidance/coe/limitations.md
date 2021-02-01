@@ -33,6 +33,14 @@ Larger tenants might require a per flow license in order for these flows to comp
 >[!TIP]
 >The first run of the Sync flows in the Core Solution will run long as it will do an update for every flow/app/etc in the tenant. Subsequent runs  will only update apps/flows/etc that have changed since the last run and so these will not require a per flow license for most tenants.
 
+## Incomplete Inventory
+
+The sync flows in the Core Component solution will only update resources that have changed since the last run. After an upgrade, you will only see the benefits of bug fixes or changes when you run a full inventory sync: 
+
+1) Set the **Full inventory** environment variable to *Yes* (Learn more: [update environment variables](setup-core-components.md#update-environment-variables)).
+1) Run the *Admin | Sync Template v3* flow.
+1) Set the **Full inventory** environment variable back to *No*.
+
 ## Flows that use the Common Data Service (Current Environment) connector
 
 The Admin | Sync Template v3 (Flows) and CLEANUP - Admin | Sync Template v3 (Connection Status) will fail to collect inventory information for flows that use the Common Data Service (Current Environment) connector. The [Get Flow as Admin](https://docs.microsoft.com/connectors/flowmanagement/) currently has a limitation, where flows using that connector cannot be retrieved.
@@ -47,14 +55,14 @@ The Dataverse connector might experience some throttling limits if the tenant ha
   1. Expand the step **Apply to each Environment**
   1. Go to the **Settings** pane for each call to Dataverse, and configure the timeout/retry settings. The default count is set to **10** and the default interval is set to **PT10S** - increase the values incrementally here.
 
-     ![Configure retry policy](media/coe72.png "Configure the retry policy")
+     ![Configure retry policy](media/coe72.PNG "Configure the retry policy")
 
 - **Configure (reduce) concurrency in Foreach loops to reduce simultaneous calls**
   1. Open **Admin \| Sync Template v3**, and then select **Edit**.
   1. Expand the step **Get Environments and store them in the CoE Table**.
   1. Go to **Settings** for the **Apply to each Environment** step.
 
-     ![Configure concurrency in Foreach](media/coe73.png "Configure concurrency in Foreach")
+     ![Configure concurrency in Foreach](media/coe73.PNG "Configure concurrency in Foreach")
 
   1. Use the slider to reduce the value of **Degree of Parallelism**. The default value is 50; reducing the parallelism here will increase the runtime of the flow, so we suggest gradually lowering the number.
 

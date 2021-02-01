@@ -30,7 +30,7 @@ To help you get started making bots, we've created an end-to-end guide that take
 
 - The scenario and how to map what your needs are to what a chatbot can do
 - How to create a bot in the Power Virtual Agents app in Microsoft Teams
-- How to build and enhance topics that answer commmon HR-style questions
+- How to build and enhance topics that answer common HR-style questions
 - How to test, publish, and share the bot with the organization
 
 In this guide, **HR Support bot** is a friendly question and answer bot that brings a support professional expert from the HR team into the loop when it is unable to help. An employee can ask the bot a question and the bot responds with an answer if the bot has content for it. 

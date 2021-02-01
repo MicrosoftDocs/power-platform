@@ -56,10 +56,18 @@ All flows in this solution depend on all environment variables' being configured
    | Auto Delete On Archive | Determines whether apps are deleted when they're archived in the following flow: Admin \| App Archive and Clean Up - Check Approvals and Archive. <br> Value must be Yes or No. A default value of No is provided. |
    | Developer Compliance Center         | Navigate to the details page of the Developer Compliance Center (canvas app) included with this solution, and copy the web link (to launch the app) and paste it into this variable.  |
    | ProductionEnvironment | Determines if the environment is Production or Dev/Test. True (the default) will mean that the approvals are sent to app/flow owners. False will send those approvals to the admin email. |
+   | Approval Admin | Optional variable for users that have a distribution list for the Admin Email env var. Since you cannot use a distribution list for approvals, this variable will allow you to specify a secondary email that is a person for Approvals |
 
 ## Initialize flow approval tables in your environment
 
-The archive approval flows (*Admin \| App Archive and Clean Up – Start Approval*, *Admin \| Flow Archive and Clean Up – Start Approval*, *Admin \| App Archive and Clean Up – Check Approval*, and *Admin \| Flow Archive and Clean Up – Check Approval*), use the built-in Approval actions of Power Automate. In the background, the built-in Approval actions use Dataverse. If you've installed the solution in a new environment, the Approval tables must be initialized. The easiest way to do this is to create a "dummy" approval flow.
+The archive approval flows use the built-in Approval actions of Power Automate.
+
+- *Admin \| Archive and Clean Up v2 (Start Approval for Apps)*
+- *Admin \| Archive and Clean Up v2 (Start Approval for Flows)*
+- *Admin \| App Archive and Clean Up – Check Approval*
+- *Admin \| Flow Archive and Clean Up – Check Approval*)
+
+ In the background, the built-in Approval actions use Dataverse. If you've installed the solution in a new environment, the Approval tables must be initialized. The easiest way to do this is to create a "dummy" approval flow.
 
 1. Go to [flow.microsoft.com](https://flow.microsoft.com).
 
@@ -92,10 +100,10 @@ The archive approval flows (*Admin \| App Archive and Clean Up – Start Approva
 
 This Governance Components solution contains flows that you will need to manually turn on, once you are ready to use them.
 
-- Admin \| App Archive and Clean Up – Start Approval
-- Admin \| Approval Clean Up
-- Admin \| Check Approvals
-- Admin \| Flow Archive and Clean Up – Start Approval
+- Admin \| Archive and Clean Up v2 (Start Approval for Apps)
+- Admin \| Archive and Clean Up v2 (Start Approval for Flows)
+- Admin \| Archive and Clean Up v2 (Clean Up and Delete)
+- Admin \| Archive and Clean Up v2 (Check Approval)
 - Admin \| Compliance detail request
 - Microsoft Teams Admin \| Ask for Business Justification when Microsoft Teams environment is created
 - Microsoft Teams Admin \| Weekly Clean Up of Microsoft Teams environments
