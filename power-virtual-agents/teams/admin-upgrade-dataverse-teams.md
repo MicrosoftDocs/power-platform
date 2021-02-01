@@ -27,7 +27,7 @@ Tenant admins can upgrade a Dataverse for Teams environment to reach full functi
 
 Admins can start the upgrade process from the [Power Platform admin
 center](https://admin.powerplatform.microsoft.com/). 
-For more information about upgrading Dataverse environments, see the [Dataverse for Teams environments – Upgrade process topic](/power-platform/admin/about-teams-environment\#upgrade-process).
+For more information about upgrading Dataverse environments, see the [Dataverse for Teams environments - Upgrade process topic](/power-platform/admin/about-teams-environment\#upgrade-process).
 
 ## Impact of upgrading an environment on Power Virtual Agents
 
@@ -40,7 +40,7 @@ During the upgrade, users will experience issues if they try to chat with your b
 
 After an environment has been successfully upgraded, users can continue to edit bots in the Power Virtual Agents for Teams app.
 
-Users can also choose to edit the bot in the Power Virtual Agents web app at [https://web.powerva.microsoft.com\](https://powerva.microsoft.com).
+Users can also choose to edit the bot in the Power Virtual Agents web app at [https://web.powerva.microsoft.com](https://powerva.microsoft.com).
 
 Upgraded environments are shown with a diamond icon next to their name in the list of environments in the **Chatbots** tab.
 
