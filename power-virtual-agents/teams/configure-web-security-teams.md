@@ -24,7 +24,10 @@ Select the version of Power Virtual Agents you're using here:
 
 
 
-You can configure advanced web channel security options with the Power Virtual Agents app in Microsoft Teams.
+You can configure advanced web channel security options with the Power Virtual Agents app in Microsoft Teams. 
+
+>[!NOTE]
+>If you have a [Teams-only license, you can't generate secrets to enable secure access](../requirements-licensing-subscriptions.md). Secure access tokens are created automatically for you and secure access is enabled by default.
 
 Read more about using [Configuring web channel security in the Power Virtual Agents web app documentation](../configure-web-security.md).
 
