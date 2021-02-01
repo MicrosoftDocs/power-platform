@@ -35,16 +35,11 @@ Larger tenants might require a per flow license in order for these flows to comp
 
 ## Incomplete Inventory
 
-The inventory sync flows themselves used to be long running, walking the entire tenant in order to update properties for all flows, apps, bots, etc. <br><br>
-Due to the throttling changes in the product we have made the sync flows (other than the clean up ones) now only update an app, flow, etc when it is new or has been updated. <br><br>
-This works for most situations, but occasionally, if we have made an addition or fix to the sync flows, you wont be able to see the benefits of that fix on unchanged objects until you run a full inventory. <br>
-In order to do so: <br>
+The sync flows in the Core Component solution will only update resources that have changed since the last run. After an upgrade, you will only see the benefits of bug fixes or changes when you run a full inventory sync: 
 
-1) Set the environment variable for **_full inventory_** to "Yes"
-1) Run the sync flows
-1) Turn the variable back to "No" in order to avoid long running nature of the suite.
-
-See here for how to set up [update environment variables](setup-core-components.md#update-environment-variables)
+1) Set the **Full inventory** environment variable to *Yes* (Learn more: [update environment variables](setup-core-components.md#update-environment-variables)).
+1) Run the *Admin | Sync Template v3* flow.
+1) Set the **Full inventory** environment variable back to *No*.
 
 ## Flows that use the Common Data Service (Current Environment) connector
 
