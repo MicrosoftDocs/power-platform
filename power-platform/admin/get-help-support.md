@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/26/2021
+ms.date: 02/01/2021
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -49,9 +49,7 @@ An example of solutions provided for Dynamics 365 App for Outlook issues:
 - For the following [support plans](https://www.microsoft.com/dynamics365/support):
    
   - Subscription Support
-  - Enhanced Support
   - Professional Direct Support
-  - Premier Support
   - Unified Support
 
 > [!NOTE]
@@ -107,7 +105,7 @@ You can check the status and edit your request on this page.
 
 ## Advisory services and premium support plan
 
-A premium support plan includes advisory services. You can submit a request to get answers relative to recommendations, best practices, general advice or guidance on the usage of the products.
+A [premium support plan](https://dynamics.microsoft.com/support/plans/) includes advisory services. You can submit a request to get answers relative to recommendations, best practices, general advice or guidance on the usage of the products.
 
 Without a premium support plan, you can only submit request on technical issues. Progressively, such restriction will be enforced and you won't be able to create a support request for advisory services unless you have a premium support plan.
 
