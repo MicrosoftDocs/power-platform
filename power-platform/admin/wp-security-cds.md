@@ -4,8 +4,8 @@ description: Provides detailed information about the security model and concepts
 ms.date: 07/21/2020
 ms.service: power-platform
 ms.topic: "article"
-author: jayasreekumar
-ms.author: jkumar
+author: jimholtz
+ms.author: jimholtz
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
 search.audienceType: 
