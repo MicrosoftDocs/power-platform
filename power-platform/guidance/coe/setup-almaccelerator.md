@@ -42,7 +42,8 @@ The application will manage deploying solutions from Development to Testing and 
 You will need the following users and permissions in Power Platform and Azure:
 
 - A licensed **Power Apps user** with **System Administrator role** in the environment where the ALM Accelerator for Makers solution will be deployed.
-    >[!NOTE] This user must not have Multi-Factor Authentication enabled until full support of Service Principals are enabled in GitHub workflows.
+    >[!NOTE]
+    > This user must not have Multi-Factor Authentication enabled until full support of Service Principals are enabled in GitHub workflows.
 
 - A licensed **Azure user** with permissions to create **App Registrations and Grant Admin consent** to App Registrations in Azure Active Directory.
 
@@ -219,7 +220,7 @@ If you have a paid GitHub org plan, configure org secrets:
     ![Select Secrets from your GitHub Org Settings](media/git-20.png "Select Secrets from your GitHub Org Settings")
 1. Enter **DEV_ENVIRONMENT_SECRET** as a secret name for your Dev deployment stage, and enter the value for your secret.
 1. Select **Private Repositories** from the Repository access dropdown.
-         ![Select Private Repositories for your Secret](media/git-21.png "Select Private Repositories for your Secret")
+         ![For the Paid GitHub org plan, select Private Repositories for your Secret](media/git-21.png "For the Paid GitHub org plan, sslect Private Repositories for your Secret")
 1. Select **Add Secret**.
 1. Complete the above steps to add a **TEST_ENVIRONMENT_SECRET** and **PROD_ENVIRONMENT_SECRET**.
 
@@ -233,7 +234,7 @@ If you do not have a paid GitHub org plan, follow the below steps for all projec
 1. Navigate to your org in GitHub (https://github.com/yourorg).
 1. Select **Settings** > **Secret** > **New organization secret**
 1. Enter **DEV_ENVIRONMENT_SECRET** as a secret name for your Dev deployment stage, and enter the value for your secret.
-    ![Select Private Repositories for your Secret](media/git-22.png "Select Private Repositories for your Secret")
+    ![For the free GitHub org plan, select Private Repositories for your Secret](media/git-22.png "For the free GitHub org plan, select Private Repositories for your Secret")
 1. Select **Add Secret**.
 1. Complete the above steps to add a **TEST_ENVIRONMENT_SECRET** and **PROD_ENVIRONMENT_SECRET**.
 

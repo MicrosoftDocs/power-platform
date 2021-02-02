@@ -1,6 +1,6 @@
 ---
-title: "Release notes and latest version of the CoE starter kit ALM Helper for Makers | MicrosoftDocs"
-description: "Release notes and latest version of the CoE Starter Kit."
+title: "Release notes and latest version of the CoE starter kit ALM Accelerator for Makers | MicrosoftDocs"
+description: "Release notes and latest version of the CoE Starter Kit ALM Accelerator for Makers 1.11."
 author: manuelap-msft
 manager: devkeydet
 ms.service: power-platform
@@ -17,13 +17,13 @@ search.app:
   - Powerplatform
 ---
 
-# Released version ALM Helper for Makers 1.11
+# Released version ALM Accelerator for Makers 1.11
 
 ## Introduction
 
-Version 1.1 for the CoE Starter Kit ALM Helper for Makers is now available. This article describes the updates, including the new features and the fixes to existing functionality, included in this release. This version was first made available on January 18, 2020.
+Version 1.1 for the CoE Starter Kit ALM Accelerator for Makers is now available. This article describes the updates, including the new features and the fixes to existing functionality, included in this release. This version was first made available on January 18, 2020.
 
-This is the first version of the ALM Helper for Makers components:
+This is the first version of the ALM Accelerator for Makers components:
 
 - [Setup ALM Accelerator for Makers components](../setup-almaccelerator.md)
 - [Use ALM Accelerator for Makers components](../almaccelerator-components.md)
