@@ -5,7 +5,7 @@ author: dileepsinghmicrosoft
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/16/2020
+ms.date: 01/12/2021
 ms.author: dileeps
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -18,6 +18,8 @@ search.app:
 ---
 
 # Power Apps and Power Automate licensing FAQ
+
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 We have found some common questions on licensing and plan options. We’ve included several here with their answers. For more details about Microsoft Power Apps and Microsoft Power Automate licensing, see [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 
@@ -50,7 +52,7 @@ The Power Apps per app plan is designed to help organizations solve for one busi
 
 No. Embedded canvas components within the model-driven app will not count towards the two apps limit in the per app licensing model.
 
-### What are the self-service purchase options for the Power Platform products?
+### What are the self-service purchase options for the Microsoft Power Platform products?
 
 See the FAQ: [Self-service purchase FAQ](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq#admin-capabilities).
 
@@ -69,7 +71,7 @@ Yes, non-profit, government and academic pricing is available in respective prog
 
 ### What will happen to the Power Apps and Power Automate Plan 1 and Plan 2 plans on December 31, 2020?
 
-Power Apps P1 and P2 and Power Automate P1 and P2 plans will no longer be available for purchase, including via auto-renewal, after December 31, 2020. Customers with these plan licenses that have renewals falling on or after January 1, 2021 will need to transition to the Power Apps per user or per app plans, or the Power Automate per user or per flow plans to continue using the Power Platform services. Please contact your Microsoft account rep for more information.
+Power Apps P1 and P2 and Power Automate P1 and P2 plans will no longer be available for purchase, including via auto-renewal, after December 31, 2020. Customers with these plan licenses that have renewals falling on or after January 1, 2021 will need to transition to the Power Apps per user or per app plans, or the Power Automate per user or per flow plans to continue using the Microsoft Power Platform services. Please contact your Microsoft account rep for more information.
 
 ### Are full Power Automate capabilities included in Power Apps licenses?
 
@@ -129,36 +131,38 @@ Please refer to [Licensing guide](https://go.microsoft.com/fwlink/?linkid=208513
 
 Effective October 1, 2019, the SQL, Azure, and Dynamics 365 connectors listed below will be reclassified from Standard to Premium. Non-Microsoft connectors that had previously been classified as standard connectors will still be available to Microsoft 365 users. A standalone Power Apps or Power Automate plan license is required to access all Premium, on-premises and custom connectors.
 
-Azure Application Insights  
-Azure Automation  
-Azure Blob Storage  
-Azure Container  
-Azure Cosmos  
-Azure Data Factory  
-Azure Data Lake  
-Azure DevOps  
-Azure Event Grid  
-Azure Event Grid Publish  
-Azure File Storage  
-Azure IoT Central  
-Azure Kusto  
-Azure Log Analytics  
-Azure Log Analytics Data Collector  
-Azure Queues  
-Azure Resource Manager  
-Azure SQL  
-Azure SQL Data Warehouse  
-Azure Table Storage  
-Dynamics 365  
-Dynamics 365 Customer Insights  
-Dynamics 365 Finance & Operations  
-Dynamics 365 Sales Insights  
-Dynamics 365 Business Central  
-Dynamics 365 Business Central (on-premises)  
-Dynamics NAV  
-Event Hubs  
-Service Bus  
-SQL Server
+Premium connectors list at October 2019 (will expand over time):
+- Azure Application Insights  
+- Azure Automation  
+- Azure Blob Storage  
+- Azure Container  
+- Azure Cosmos  
+- Azure Data Factory  
+- Azure Data Lake  
+- Azure DevOps  
+- Azure Event Grid  
+- Azure Event Grid Publish  
+- Azure File Storage  
+- Azure IoT Central  
+- Azure Kusto  
+- Azure Log Analytics  
+- Azure Log Analytics Data Collector  
+- Azure Queues  
+- Azure Resource Manager  
+- Azure SQL  
+- Azure SQL Data Warehouse  
+- Azure Table Storage  
+- Common Data Service
+- Dynamics 365  
+- Dynamics 365 Customer Insights  
+- Dynamics 365 Finance & Operations  
+- Dynamics 365 Sales Insights  
+- Dynamics 365 Business Central  
+- Dynamics 365 Business Central (on-premises)  
+- Dynamics NAV  
+- Event Hubs  
+- Service Bus  
+- SQL Server
 
 Power Automate plan-based limits on trigger frequency and the number of runs allocated to a tenant per month are being removed.
 
@@ -200,6 +204,13 @@ Yes, you can use the Dynamics 365 Finance and Operations connector to build canv
 
 The per user plan is intended to support the broad adoption of an automation culture in an organization. Every user with this plan is entitled to use an unlimited number of flows, within service limits. The per flow plan provides an organization with the flexibility to license by the number of flows, instead of licensing each user accessing the flows individually with the per user plan.
 
+### What do I do if my per user plan flow causes a throttling warning?
+
+The per flow plan provides [higher limits](https://docs.microsoft.com/power-automate/limits-and-config) than the per user plans. If your flow is approaching license limits, then switching that flow to use a per flow plan should resolve the situation.
+
+### What do I do if my per flow plan flow causes a throttling warning?
+
+The per flow plan provides [high limits](https://docs.microsoft.com/power-automate/limits-and-config), but if your flow is approaching license limits, then splitting the workload across multiple flows can help.
 
 ### Which flows count in the Power Automate per flow plan?
 
@@ -212,7 +223,7 @@ No. After the minimum purchase of 5 flows, additional flows can be licensed indi
 
 ### Do users who run flows need to be licensed, or do only users who create flows need to be licensed?
 
-Any end user running a flow will need to be licensed either by the per user or per Power Automate plans.
+Any end user running a flow will need to be licensed either by the per user or Power Automate per flow plans.
 
 There are features in Power Automate that are not running a flow directly, such as responding to an approval request or advancing a stage in a business process. These features are built on the Dataverse. Normally, any use of these features requires either a standalone Power Automate per user plan, or, that the flow that creates these business process environments or approval requests to be licensed under the per flow plan.
 
@@ -250,7 +261,7 @@ Dataverse for Teams is a built-in flexible datastore that provides data storage 
 - Power Apps capabilities seeded in Microsoft 365 licenses are expanding to enable building and deploying custom apps natively within Teams.
 -	Additionally, Power Virtual Agents capabilities are being introduced to Teams. Customers will now be able to build and deploy custom chatbots directly within Teams.
 
-The existing Power Platform functionality available for use in Microsoft 365 more broadly outside of Teams remains otherwise unchanged.
+The existing Microsoft Power Platform functionality available for use in Microsoft 365 more broadly outside of Teams remains otherwise unchanged.
 
 ### Is there any new capability coming with Dataverse for Teams to Power Automate rights included with Microsoft 365?
 
@@ -258,7 +269,7 @@ Yes. With Dataverse for Teams, users now can build flows using Power Automate ma
 
 ### Which Microsoft 365 subscriptions include Dataverse for Teams and Power Virtual Agents capabilities with Teams?
 
-Dataverse for Teams and Power Virtual Agents for Teams capabilities will be available as part of select Microsoft 365 subscriptions with Power Platform and Teams capabilities, excluding plans for US government environments (GCC, GCC High and DoD) and EDU A1 and SUB SKUs. For more information, see the [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
+Dataverse for Teams and Power Virtual Agents for Teams capabilities will be available as part of select Microsoft 365 subscriptions with Micrsoft Power Platform and Teams capabilities, excluding plans for US government environments (GCC, GCC High and DoD) and EDU A1 and SUB SKUs. For more information, see the [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 
 ### How is Dataverse for Teams environment created? 
 
@@ -331,7 +342,7 @@ This capability is not available yet, but is included in our roadmap.
 -	Governance and security
 
 > [!NOTE]
-> Accessing an environment with Dataverse requires all users to have a corresponding standalone Power Platform license for each service being utilized. For example, a user accessing an app running on Dataverse needs to be licensed by either the Power Apps per app or per user plan depending on the customer scenario.
+> Accessing an environment with Dataverse requires all users to have a corresponding standalone Microsoft Power Platform license for each service being utilized. For example, a user accessing an app running on Dataverse needs to be licensed by either the Power Apps per app or per user plan depending on the customer scenario.
 
 ### Why do I see Dataverse plan in select Microsoft 365 subscriptions? Is this related to Dataverse for Teams?
 

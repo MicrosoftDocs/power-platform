@@ -1,12 +1,14 @@
 ---
 title: "DLP SDK | MicrosoftDocs"
-description: Power Platform data loss prevention (DLP) SDK
-author: jimholtz
+description: Microsoft Power Platform data loss prevention (DLP) SDK
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 10/09/2020
+author: jimholtz
 ms.author: jimholtz
+ms.reviewer: jimholtz
+ms.custom: "admin-security"
 search.audienceType: 
   - admin
 search.app:

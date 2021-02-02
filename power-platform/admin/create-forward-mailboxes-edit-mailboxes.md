@@ -1,12 +1,13 @@
 ---
 title: "Create forward mailboxes or edit mailboxes | MicrosoftDocs"
 description: Create forward mailboxes or edit mailboxes 
-author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/29/2020
-ms.author: jimholtz
+author: revachauhan
+ms.author: rechauha
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
@@ -31,7 +32,7 @@ A forward mailbox is used as a collection box for email messages that are transf
 > [!TIP]
 >  You can use an [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] shared mailbox when you create a queue in customer engagement apps and not consume an [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] license for a forwarding email account.  
 
-These settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Email** > **Mailboxes**.
+These settings can be found in the Microsoft Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Email** > **Mailboxes**.
 
 Make sure you have the System Administrator or System Customizer security role or equivalent permissions.
 

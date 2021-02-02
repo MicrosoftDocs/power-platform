@@ -39,11 +39,9 @@ audiences. Each environment can have only one Microsoft Dataverse database.
 
 ### Types of environments used in ALM
 
-Using the Power Platform admin center, you can create these types of Common Data
-Service environments:
+Using the Power Platform admin center, you can create these types of Dataverse environments:
 
--   **Sandbox**  A sandbox environment is any non-production environment of Common
-    Data Service. Isolated from production, a sandbox environment is the place
+-   **Sandbox**  A sandbox environment is any non-production environment of Dataverse. Isolated from production, a sandbox environment is the place
     to safely develop and test application changes with low risk. Sandbox
     environments include capabilities that would be harmful in a production
     environment, such as reset, delete, and copy operations. More information:
@@ -68,8 +66,7 @@ or production.
 
 ### Who should have access? 
 
-Define and manage the security of your resources and data in Common Data
-Service. Microsoft Power Platform provides environment-level admin roles to perform
+Define and manage the security of your resources and data in Microsoft Dataverse. Microsoft Power Platform provides environment-level admin roles to perform
 tasks. Dataverse includes security roles that define the level of
 access to apps, app components, and resources app makers and users have within
 Dataverse.

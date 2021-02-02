@@ -35,8 +35,6 @@ To create and manage bots with Power Virtual Agents, you need:
 
 More information: [Licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130)
 
-> [!NOTE]
-> To follow the instructions in this topic, you must use the non-preview version of the admin center (ensure the **Try the new admin center** setting is turned off).
   
 >[!IMPORTANT]
 >If you purchase a Power Virtual Agents license through volume licensing or any channel other than the [Microsoft 365 admin center](https://admin.microsoft.com/admin/default.aspx), you need to acquire both a tenant license and a user licenses through that channel, preferably as part of a single transaction.
@@ -58,7 +56,7 @@ Purchase licenses for your organization by going to the [Microsoft 365 admin cen
 
 ## Acquire user licenses
 
-1. After you've purchased a Power Virtual Agents license from the Microsoft 365 Admin Center, you need to purchase user licenses to give users access to the product. In the Microsoft 365 admin center, go to **Billing**, and then select **Purchase services**.
+1. After you've purchased a Power Virtual Agents license from the Microsoft 365 admin center, you need to purchase user licenses to give users access to the product. In the Microsoft 365 admin center, go to **Billing**, and then select **Purchase services**.
 
 2. Scroll down to the **Add-ons** section.
 

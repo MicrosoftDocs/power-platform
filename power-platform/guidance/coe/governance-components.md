@@ -110,7 +110,7 @@ You can customize the email sent out by the flow; by default, it will look like 
 
 ![The compliance detail request email informs a maker that they own an app that is currently missing compliance details which means it needs to be audited by an administrator per the support policy. Makers are prompted to complete the business justification and mitigation plan details in the Developer Compliance Center app to document the intended use of the app.](media/coe55.png "The compliance detail request email informs a maker that they own an app that is currently missing compliance details which means it needs to be audited by an administrator per the support policy. Makers are prompted to complete the business justification and mitigation plan details in the Developer Compliance Center app to document the intended use of the app.")
 
-### Admin \| App Archive and Clean Up – Start Approval
+### Admin \| Archive and Clean Up v2 (Start Approval for Apps)
 
 Checks for apps that haven't been modified or launched in the last six months (this time span is configurable) and asks the app owner (via flow approvals) whether the app can be deleted.
 
@@ -118,11 +118,11 @@ It recommends that the app owner take a backup of the app in the event that they
 
 This flow starts the approval process and writes the approval task to the Archive Approval Dataverse table.
 
-![App Archive and Clean Up – Start Approval flow](media/coe58.png "App Archive and Clean Up – Start Approval flow")
+![Archive and Clean Up v2 (Start Approval for Apps) flow](media/coe58.png "Archive and Clean Up v2 (Start Approval for Apps) flow")
 
 **Customize**: By default, this flow will assign approvals to the app owner. In order to test in a debug environment, in which you do not want to involve users, you can update the [*ProductionEnvironment* environment variable](setup-governance-components.md#update-environment-variables) to **No**, and the approvals will be sent to the admin account instead.
 
-### Admin \| Flow Archive and Clean Up – Start Approval
+### Admin \| Archive and Clean Up v2 (Start Approval for Flows)
 
 Similar to the previous flow, but for flows rather than apps. This flow checks for flows that haven't been modified in the last six months (this time span is configurable) and asks the flow owner (via flow approvals) whether the flow can be deleted.
 
@@ -132,13 +132,13 @@ This flow starts the approval process and writes the approval task to the Archiv
 
 **Customize**: By default, this flow will assign approvals to the flow owner. In order to test in a debug environment, in which you do not want to involve users, you can update the [*ProductionEnvironment* environment variable](setup-governance-components.md#update-environment-variables) to **No**, and the approvals will be sent to the admin account instead.
 
-### Admin \| Admin | Check Approvals
+### Admin \| Archive and Clean Up v2 (Check Approval)
 
-On a scheduled interval, checks for approval responses created by the Start Approval flows described above and, if newly approved, marks the approved date so that the Approval Clean Up flow (described below) can delete it after user has time to archive.
+On a scheduled interval, checks for approval responses created by the Start Approval flows described above and, if newly approved, marks the approved date so that the Archive and Clean Up v2 (Clean Up and Delete) flow (described below) can delete it after user has time to archive.
 
 If approved in the past, but before deletion, it sends a reminder to archive the app or flow before deletion.
 
-### Admin \| Approval Clean Up
+### Admin \| Archive and Clean Up v2 (Clean Up and Delete)
 
 Runs on a daily basis and does two clean up tasks for the workflow.
 

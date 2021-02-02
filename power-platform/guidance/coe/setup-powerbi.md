@@ -26,7 +26,7 @@ You can get the CoE Power BI dashboard by downloading the Power BI file and conf
 
 > [!NOTE]
 > - Before setting up the Power BI dashboard, you must have installed the [CoE core components solution](setup-core-components.md).<br>
-> - Before you see data in the dashboard, the [core components solution sync flows](core-components.md#admin--sync-template-v2) will need to have completed their runs.
+> - Before you see data in the dashboard, the [core components solution sync flows](core-components.md#admin--sync-template-v3) will need to have completed their runs.
 
 ## Get the environment URL
 

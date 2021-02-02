@@ -46,10 +46,7 @@ Lastly, you can [change the name and bot icon](#change-the-bot-name-and-icon) (w
 
 ## Change the bot name and icon
 
-You can change the bot's name and icon. 
-
->[!NOTE]
->Changing the bot's avatar icon only applies to the bot's avatar when it's [added to Microsoft Teams](publication-add-bot-to-microsoft-teams.md).
+You can change the bot's name and icon. This will affect the icon in all channels where you publish your bot.
 
 **To change the bot's name and icon:**
 

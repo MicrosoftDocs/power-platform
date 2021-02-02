@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/30/2020
+ms.date: 12/18/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -17,7 +17,7 @@ search.app:
 ---
 # Copy an environment
 
-You can use Copy environment in the Power Platform admin center to copy the customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), and all data from any environment to a sandbox environment. You can select two levels of copy: **Everything** or **Customizations and schemas only**.  
+You can use Copy environment in the Microsoft Power Platform admin center to copy the customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), and all data from any environment to a sandbox environment. You can select two levels of copy: **Everything** or **Customizations and schemas only**.  
 
 > [!div class="mx-imgBorder"] 
 > ![Copy menu](media/copy-menu.png "Copy menu")
@@ -27,7 +27,7 @@ You can use Copy environment in the Power Platform admin center to copy the cust
 > - You can only copy to a sandbox environment in the same tenant and region.
 > - Currently, any components that have not been added to a solution (including canvas apps, flows, custom connectors, and connections) will not be copied to the target environment.
 > - You cannot copy from or to a default environment.
-> - You must have sufficient [storage capacity](whats-new-storage.md) to copy an environment.
+> - You must have at least 1 GB of [storage capacity](whats-new-storage.md) to copy an environment.
   
 ## Copy over everything
  An Everything copy includes all application data, users, and customizations, and schemas from the source environment and is suitable for:  
@@ -170,6 +170,12 @@ Once the copy process is complete, the target environment is placed in [Administ
 - **Client extensibility**. Review the following.  
     - **Client-side JavaScript**. Take a look at your JavaScript and HTML web resources for read/write operations that could impact external services.  
     - **IFRAMES**. Determine if the target of an IFRAME is a production environment.  
+
+## Known issues
+
+### Failures during a copy operation
+Power Virtual Agent resources were recently included as part of the copy operation. If you are getting consistent failures during a copy operation and you have Power Virtual Agent resources installed in the source environment, the problem might be that the Power Virtual Agent solutions are not installed in the target environment. If you explicitly uninstalled the Power Virtual Agent solutions from the target environment, you can work around this by re-installing the solutions. Otherwise, you should choose a different target environment.
+
 
 ### See also  
 [What's new about storage](whats-new-storage.md) <br />

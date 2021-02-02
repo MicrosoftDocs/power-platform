@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/08/2020
+ms.date: 12/14/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -33,8 +33,30 @@ The following table lists the newest datacenter regions. Checkout the interactiv
 |**Japan**|Japan|[About Microsoft Cloud Japan](about-microsoft-cloud-japan.md)|  
 |**Oceania**|Australia, New Zealand, Fiji|[About Microsoft Cloud Australia](about-microsoft-cloud-australia.md)|  
 |**US GCC/United States**<br />**US GCC High/United States**  | United States |[Dynamics 365 US Government](microsoft-dynamics-365-government.md) |
-  
-<a name="BKMK_Process"></a>   
+
+The following is a list of regions and their URL.
+
+|Region | URL | 
+| ------------- | -------------     | 
+| NAM           | crm.dynamics.com  | 
+| DEU           | crm.microsoftdynamics.de | 
+| SAM           | crm2.dynamics.com | 
+| CAN           | crm3.dynamics.com | 
+| EUR           | crm4.dynamics.com | 
+| FRA           | crm12.dynamics.com | 
+| APJ           | crm5.dynamics.com | 
+| OCE           | crm6.dynamics.com | 
+| JPN           | crm7.dynamics.com | 
+| IND           | crm8.dynamics.com | 
+| GCC           | crm9.dynamics.com | 
+| GCC High      | crm.microsoftdynamics.us | 
+| GBR           | crm11.dynamics.com | 
+| ZAF           | crm14.dynamics.com | 
+| UAE           | crm15.dynamics.com| 
+| GER           | crm16.dynamics.com| 
+| CHE           | crm17.dynamics.com|  
+| CHN           | crm.dynamics.cn | 
+
 ## Migration process  
  This is the overall process for migrating to a new datacenter.  
   

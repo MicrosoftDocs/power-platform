@@ -195,42 +195,42 @@ Filters on this page can help you narrow down this view by environment and by ma
 
 ![Power Virtual Agents](media/pb-13.png "Power Virtual Agents")
 
-## UI flows
+## Desktop flows
 
-The **UI flows** page provides an overview of UI-based robotic process automation (RPA) flows in your environment:
+The **desktop flows** page provides an overview of UI-based robotic process automation (RPA) flows in your environment:
 
-- Total number of UI flows
+- Total number of desktop flows
 
-- Total number of UI flows created this month
+- Total number of desktop flows created this month
 
-- Total number of UI flow makers
+- Total number of desktop flow makers
 
 Through visuals, you can see your flow creation trend, your top active departments, and top environments. Use the list view of all flows to sort your flows by type, and flow state.
 
-Filters on this page can help you narrow down this view by flow owner, flow display name, environment, maker department, or UI flow type.
+Filters on this page can help you narrow down this view by flow owner, flow display name, environment, maker department, or desktop flow type.
 
-![UI flow overview](media/pb-12.png "UI flow overview")
+![Desktop flow overview](media/pb-12.png "Desktop flow overview")
 
-### UI flows usage
+### Desktop flows usage
 
-The **UI flow usage** page provides an overview of UI=based RPA flow runs in your environment:
+The **desktop flow usage** page provides an overview of UI=based RPA flow runs in your environment:
 
-- Number of runs per date and UI flow type
+- Number of runs per date and desktop flow type
 - Total number of runs
 - Last run date and status
 
-Filters on this page can help you narrow down this view by UI flow type, run status, maker, and environment.
+Filters on this page can help you narrow down this view by desktop flow type, run status, maker, and environment.
 
-![UI flow usage](media/pb-17.png "UI flow usage")
+![Desktop flow usage](media/pb-17.png "Desktop flow usage")
 
-### UI flows errors
+### Desktop flows errors
 
-The **UI flow errors** page provides an overview of UI-based RPA flow runs that have failed in your environment:
+The **desktop flow errors** page provides an overview of UI-based RPA flow runs that have failed in your environment:
 
-- UI flows run status
+- Desktop flows run status
 - Error type details
 - Total number of runs, number of failed runs, and number of successful runs in addition to last run date and status
 
-Filters on this page can help you narrow down this view by UI flow type, run status, maker, and environment.
+Filters on this page can help you narrow down this view by desktop flow type, run status, maker, and environment.
 
-![UI flow errors](media/pb-18.png "UI flow errors")
+![Desktop flow errors](media/pb-18.png "Desktop flow errors")

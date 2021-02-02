@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/26/2020
+ms.date: 01/14/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -16,6 +16,8 @@ search.app:
   - Flow
 ---
 # Regions overview 
+
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 For multinational companies with employees and customers distributed around the world, you can create and manage environments specific to your global regions. You can create an environment in a different region than where your tenant resides. Local environments can provide quicker data access for users in that region. Be sure to read [A multi-environment deployment](multiple-online-environments-tenants.md#a-multi-environment-deployment) to understand the features of multiple environments.  
 
@@ -35,7 +37,7 @@ If you're an administrator, you can determine the region of each environment in 
 
 ## What regions are available?
 
-Select the **View Report** button in [Dynamics 365 and Power Platform availability](https://dynamics.microsoft.com/geographic-availability/).
+Select the **View Report** button in [Dynamics 365 and Microsoft Power Platform availability](https://dynamics.microsoft.com/geographic-availability/).
 
 ## Who can create environments in these regions?
 
@@ -65,6 +67,15 @@ For optimal performance, if your users are in Europe, create and use the environ
 
 > [!NOTE]
 > On-premises data gateways aren't available in the India region.
+> 
+> Microsoft Dataverse for Teams is not available in the following regions:
+> - Germany
+> - South Africa
+> - South Korea
+> - Switzerland
+> - UAE
+> - GCC
+> - GCC High
 
 ## Can I create an environment outside of my tenant region?
 

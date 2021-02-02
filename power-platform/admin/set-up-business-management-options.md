@@ -21,7 +21,7 @@ search.app:
 
 Select one of the following links for information about settings on the Business Management Options page:  
   
-|||  
+| &nbsp; | &nbsp; |  
 |-|-|  
 |[Work with fiscal year settings](../admin/work-fiscal-year-settings.md)|[Create or edit a goal](https://docs.microsoft.com/dynamics365/sales-enterprise/create-edit-goal-sales)|  
 |[Set when your business is closed (Customer Service)](https://docs.microsoft.com/dynamics365/field-service/set-when-business-closed)|[Add facilities and equipment for service scheduling (Customer Service)](https://docs.microsoft.com/dynamics365/field-service/add-facilities-equipment-service-scheduling)|  

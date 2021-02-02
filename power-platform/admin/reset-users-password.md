@@ -2,12 +2,13 @@
 title: "Reset a user's password  | MicrosoftDocs"
 description: Reset a user's password 
 author: jimholtz
-manager: kvivek
+ms.author: jimholtz
+ms.reviewer: jimholtz
+ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/30/2017
-ms.author: jimholtz
 search.audienceType: 
   - admin
 search.app:

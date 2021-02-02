@@ -1,13 +1,14 @@
 ---
 title: "Create users and assign security roles | MicrosoftDocs"
 description: About creating users and assign security roles
-author: jayasreekumar
+author: jimholtz
 ms.reviewer: jimholtz
-ms.author: jkumar
+ms.author: jimholtz
+ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/06/2020
+ms.date: 01/14/2021
 search.audienceType: 
   - admin
 search.app:
@@ -30,7 +31,6 @@ You use the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admi
 >
 > By entering a user ID and password, a user can access the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] to view information about the service. However, the user won't have access to customer engagement apps until the user has a security role assigned either directly or indirectly as a member of a [group team](manage-group-teams.md). 
 
-> 
 > [!TIP] 
 >  To force an immediate synchronization between the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] and customer engagement apps, do the following:  
 > 
@@ -98,11 +98,10 @@ For step-by-step instructions to use Power Apps per app plans, see [Power Apps p
 > [!NOTE]
 > Certain default security roles are assigned to users based on the license and/or solution installed. These security roles only give users Read access to apps that are installed in the environment. For example, when a user is assigned the Dynamics 365 Plan license and is synced to an environment that has the Customer Service Hub app, the user is automatically assigned the Customer Service app access security role. No data access permission is granted to this role. The administrator is still required to assign the appropriate security role to the user (either directly or indirectly as a member of a [group team](manage-group-teams.md#about-group-teams) in order for the user to view and interact with the data. 
 
-
 ## Assign a security role to a user  
  Security roles control a user's access to data through a set of access levels and permissions. The combination of access levels and permissions that are included in a specific security role sets limits on the user's view of data and on the user's interactions with that data.  
   
- Customer engagement apps provide a default set of security roles. If necessary for your organization, you can create new security roles by editing one of the default security roles and then saving it under a new name.  
+ Customer engagement apps provide a default set of security roles. If necessary for your organization, you can create new security roles by editing one of the default security roles and then saving it under a new name. See [Predefined security roles](database-security.md#predefined-security-roles).
   
  You can assign more than one security role to a user. The effect of multiple security roles is cumulative, which means that the user has the permissions associated with all security roles assigned to the user.  
   

@@ -1,13 +1,14 @@
 ---
 title: Configure user security in an environment | Microsoft Docs
 description: Configure user security in environment
-author: jayasreekumar
-ms.author: jkumar
+ms.author: jimholtz
+author: jimholtz
 ms.reviewer: jimholtz
+ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/12/2020
+ms.date: 01/14/2021
 search.audienceType: 
   - admin
 search.app:
@@ -19,36 +20,53 @@ search.app:
 
 # Configure user security to resources in an environment
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 Microsoft Dataverse uses a role-based security model to help secure access to the database. This topic explains how to create the security artifacts that you must have to help secure resources in an environment. Security roles can be used to configure environment-wide access to all resources in the environment, or to configure access to specific apps and data in the environment. Security roles control a user's access to an environment's resources through a set of access levels and permissions. The combination of access levels and permissions that are included in a specific security role governs the limitations on the user's view of apps and data, and on the user's interactions with that data. 
 
 An environment can have zero or one Dataverse database. The process for assigning security roles for environments that have no Dataverse database differs from that for an environment that does have a Dataverse database. 
 
 ## Predefined security roles 
+
 Environments include predefined security roles that reflect common user tasks with access levels defined to match the security best-practice goal of providing access to the minimum amount of business data required to use the app. 
 
 These security roles can be assigned to the user, [owner team](manage-teams.md#about-owner-teams) and [group team](manage-group-teams.md). 
 
 There is another set of security roles that is assigned to [application users](system-application-users.md). Those security roles are installed by our services and cannot be updated.
 
+Which predefined security roles are available in your environment depends on the environment type.
+
+### Environments without a Dataverse database
+
+Environment Maker and Environment Admin are the only predefined roles for environments that have no Dataverse database. These roles are defined in the following table.
+
 | Security role  | Database privileges*  | Description |
 |---------|---------|---------|
 | Environment Admin     |  Create, Read, Write, Delete, Customizations, Security Roles       | The Environment Admin role can perform all administrative actions on an environment, including the following: <br /><ul><li>Add or remove a user from either the Environment Admin or Environment Maker role.</li><li>Provision a Dataverse database for the environment. After a database is provisioned, the System Customizer role should also be assigned to an Environment Admin to give them access to the environment's data.</li><li>View and manage all resources created within an environment.</li><li>Set data loss prevention policies. More information: [Data loss prevention policies](prevent-data-loss.md)</li></ul>    |
-| Environment Maker     |  Customizations       | Can create new resources associated with an environment, including apps, connections, custom APIs, gateways, and flows using Microsoft Power Automate. However, this role doesn't have any privileges to access data within an environment. More information: [Environments overview](https://docs.microsoft.com/power-platform/admin/environments-overview)        |
+| Environment Maker     |  Customizations       | Can create new resources associated with an environment, including apps, connections, custom APIs, gateways, and flows using Microsoft Power Automate. However, this role doesn't have any privileges to access data within an environment. More information: [Environments overview](https://docs.microsoft.com/power-platform/admin/environments-overview) <br /><br />Environment makers can also distribute the apps they build in an environment to other users in your organization. They can share the app with individual users, security groups, or all users in the organization. More information: [Share an app in Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/share-app)        |
+
+*The scope of these privileges is global, unless specified otherwise.
+
+### Environments with a Dataverse database
+
+If the environment has a Dataverse database, a user must be assigned the System Administrator role instead of the Environment Admin role for full admin privileges, as described in the following table. 
+
+For users who make apps that connect to the database and need to create or update entities and security roles, you need to assign the System Customizer role in addition to the Environment Maker role. This is necessary because the Environment Maker role doesn't have privileges on the environment's data. 
+
+| Security role  | Database privileges*  | Description |
+|---------|---------|---------|
+| Environment Maker     |  Customizations       | Can create new resources associated with an environment, including apps, connections, custom APIs, gateways, and flows using Microsoft Power Automate. However, this role doesn't have any privileges to access data within an environment. More information: [Environments overview](https://docs.microsoft.com/power-platform/admin/environments-overview) <br /> <br />Environment makers can also distribute the apps they build in an environment to other users in your organization. They can share the app with individual users, security groups, or all users in the organization. More information: [Share an app in Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/share-app)       |
 | System Administrator     |  Create, Read, Write, Delete, Customizations, Security Roles       | Has full permission to customize or administer the environment, including creating, modifying, and assigning security roles. Can view all data in the environment. More information: [Privileges required for customization](https://docs.microsoft.com/dynamics365/customer-engagement/customize/privileges-required-customization)        |
 | System Customizer     | Create (self), Read (self), Write (self), Delete (self), Customizations         | Has full permission to customize the environment. However, users with this role can only view records for environment entities that they create. More information: [Privileges required for customization](https://docs.microsoft.com/dynamics365/customer-engagement/customize/privileges-required-customization)        |
-| Common Data Service User     |  Read (self), Create (self), Write (self), Delete (self)       | Can run an app within the environment and perform common tasks for the records that they own. Note that this only applies to non-custom entities. More information: [Create or configure a custom security role](#create-or-configure-a-custom-security-role)   |
+| Basic User   |  Read (self), Create (self), Write (self), Delete (self)       | Can run an app within the environment and perform common tasks for the records that they own. Note that this only applies to non-custom entities. More information: [Create or configure a custom security role](#create-or-configure-a-custom-security-role) <br /><br />  **Note**: the Common Data Service User security role was renamed to Basic User. There is no action required - this is just a name changed and it doesn't impact the user privileges or role assignment.  If you have a Solution with the Common Data Service User security role, you can inadvertently update the security role name back to Common Data Service User when you import the Solution. Please update the Solution before re-importing.|
 | Delegate     | Act on behalf of another user        | Allows code to *impersonate*, or run as another user.  Typically used with another security role to allow access to records. More information: [Impersonate another user](https://docs.microsoft.com/powerapps/developer/common-data-service/impersonate-another-user)        |
 | Support User | Read Customizations, Read Business Management settings      | Has full Read permission to customization and business management settings to allow Support staff to troubleshoot environment configuration issues. Does not have access to core records.      |
 
 *The scope of these privileges is global, unless specified otherwise.
 
-> [!NOTE]
-> - Environment Maker and Environment Admin are the only predefined roles for environments that have no Dataverse database. 
-> - The Environment Maker role can create resources within an environment, including apps, connections, custom connectors, gateways, and flows using Power Automate. Environment makers can also distribute the apps they build in an environment to other users in your organization. They can share the app with individual users, security groups, or all users in the organization. More information: [Share an app in Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/share-app) 
-> - For users who make apps that connect to the database and need to create or update entities and security roles, you need to assign the System Customizer role in addition to the Environment Maker role. This is necessary because the Environment Maker role doesn't have privileges on the environment's data. 
-> - If the environment has a Dataverse database, a user must be assigned the System Administrator role instead of the Environment Admin role for full admin privileges, as described in the preceding table. 
+Other security roles you have that are not in the above table might have been provided when you installed Dynamics 365 apps.
+
+### Dataverse for Teams environments
+
+For information on Dataverse for Teams environment security roles, see [User access to Dataverse for Teams environments](about-teams-environment.md#user-access-to-dataverse-for-teams-environments).
 
 ## Assign security roles to users in an environment that has no Dataverse database 
 

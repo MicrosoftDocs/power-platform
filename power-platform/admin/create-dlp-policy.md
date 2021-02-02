@@ -1,12 +1,14 @@
 ---
 title: Create a data loss prevention (DLP) policy | Microsoft Docs
 description: In this quickstart, you learn how to create a data loss prevention (DLP) policy in Power Apps
-author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 04/29/2020
+ms.date: 09/24/2020
+author: jimholtz
 ms.author: jimholtz
+ms.reviewer: jimholtz
+ms.custom: "admin-security"
 search.audienceType: 
   - admin
 search.app:
@@ -30,7 +32,7 @@ DLP policies can be created at the tenant level or at the environment level and 
 
 Tenant-level policies can be defined to include or exclude specific environments. To follow the steps described in this article for tenant-level policies, *one* of the following permissions is required:
 
-- Power Platform admin permissions
+- Microsoft Power Platform admin permissions
 - Microsoft 365 Global admin permissions
 
 We refer to these roles throughout this article as *tenant admins*. More information: [Use service admin roles to manage your tenant](use-service-admin-role-manage-tenant.md)
@@ -95,7 +97,7 @@ After this policy is saved, any Power Apps or Power Automate maker who is part o
    </tr>
    <tr> 
    <td width="20%"> Type</td>
-   <td width="80%"> Whether connector usage requires a Premium license or is it included in the base/Standard license for Power Platform.    </td>
+   <td width="80%"> Whether connector usage requires a Premium license or is it included in the base/Standard license for Microsoft Power Platform.    </td>
    </tr>
    <tr>
    <td width="20%"> Publisher</td>
@@ -137,7 +139,7 @@ After this policy is saved, any Power Apps or Power Automate maker who is part o
    </tr>
    <tr>
    <td width="20%"> Set default group </td>
-   <td width="80%"> The group that maps any new connectors added by Power Platform <i>after</i> your DLP policy is created. More information: <a href="wp-data-loss-prevention.md#default-data-group-for-new-connectors">Default data group for new connectors</a>      </td>
+   <td width="80%"> The group that maps any new connectors added by Microsoft Power Platform <i>after</i> your DLP policy is created. More information: <a href="wp-data-loss-prevention.md#default-data-group-for-new-connectors">Default data group for new connectors</a>      </td>
    </tr>
    <tr>
    <td width="20%"> Search Connectors </td>
@@ -156,7 +158,7 @@ After this policy is saved, any Power Apps or Power Automate maker who is part o
    |**1**  |   | Assign one or more connectors across connector classification groups        |
    |**2**  |   | Connector classification group pivot tables    |
    |**3**  |   | Search bar to find connectors across properties like **Name**, **Blockable**, **Type**, or **Publisher**       |
-   |**4**  |  |  Connector classification group that maps any new connectors added by Power Platform *after* your DLP policy is created.         |
+   |**4**  |  |  Connector classification group that maps any new connectors added by Microsoft Power Platform *after* your DLP policy is created.         |
    |**5**  |   |  Select, multi-select, or bulk-select connectors to move across groups        |
    |**6**  |   |  Alphabetical sort capability across individual columns        |
    |**7**  |   |  Action buttons to assign individual connectors across connector classification groups        |
@@ -176,7 +178,7 @@ After this policy is saved, any Power Apps or Power Automate maker who is part o
 
    For connectors like SharePoint that are not blockable, the **Block** action will be grayed out and a warning will appear.
 
-5. Review and change the default group setting for new connectors, if you need to. We recommend keeping the default setting as **Non-Business** to map any new connectors added to Power Platform by default. **Non-Business** connectors can be manually assigned to **Business** or **Blocked** later by editing the DLP policy, after you've had a chance to review and assign them. If the new connector setting is **Blocked**, any new connectors that are blockable will be mapped to **Blocked**, as expected. However, any new connectors that are unblockable will be mapped to **Non-Business** because by design they can't be blocked. 
+5. Review and change the default group setting for new connectors, if you need to. We recommend keeping the default setting as **Non-Business** to map any new connectors added to Microsoft Power Platform by default. **Non-Business** connectors can be manually assigned to **Business** or **Blocked** later by editing the DLP policy, after you've had a chance to review and assign them. If the new connector setting is **Blocked**, any new connectors that are blockable will be mapped to **Blocked**, as expected. However, any new connectors that are unblockable will be mapped to **Non-Business** because by design they can't be blocked. 
 
    In the upper-right corner, select **Set default group**.
 
@@ -297,4 +299,5 @@ See [Data Loss Prevention (DLP) policy commands](powerapps-powershell.md#data-lo
 
 [Data loss prevention policies](wp-data-loss-prevention.md) <br />
 [Manage data loss prevention (DLP) policies](prevent-data-loss.md) <br />
-[Data loss prevention (DLP) policy commands](powerapps-powershell.md#data-loss-prevention-dlp-policy-commands)
+[Data loss prevention (DLP) policy commands](powerapps-powershell.md#data-loss-prevention-dlp-policy-commands) <br />
+[Power Platform data loss prevention (DLP) SDK](data-loss-prevention-sdk.md)

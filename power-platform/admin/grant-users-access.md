@@ -1,13 +1,14 @@
 ---
 title: "Grant users access  | MicrosoftDocs"
 description: Grant users access
-author: jayasreekumar
-ms.author: jkumar
+author: jimholtz
+ms.author: jimholtz
 ms.reviewer: jimholtz
+ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/08/2020
+ms.date: 01/14/2021
 search.audienceType: 
   - admin
 search.app:
@@ -18,13 +19,12 @@ search.app:
 ---
 # Grant users access
 
-To have users up and running in Power Apps and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), you complete some administrative tasks in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)]—which you generally do only once—followed by administrative tasks.  
-
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
+To have users up and running in Power Apps and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), you complete some administrative tasks in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)]—which you generally do only once—followed by administrative tasks.  
 
 To have users up and running in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), you complete some administrative tasks in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)]—which you generally do only once—followed by administrative tasks.  
 
-  
 Power Apps is an online service subscription. When you signed up for this service, you received a set of licenses with your subscription, one license for each user. You can purchase additional licenses if you need them.  
   
  As described in step one that follows, in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], register your users so that they are recognized in the [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)], assign a license to each user, and then assign administrative roles to the users you choose to fill those roles. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Assigning admin roles](https://support.office.com/article/Assign-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504)  
@@ -39,7 +39,7 @@ In Power Apps, populate the service with your organization’s data, including u
 ## Differences between the Microsoft Online services environment administrative roles and Microsoft Dataverse security roles  
  *Administrative roles* are available to assign to users in the [!INCLUDE[pn_MS_Online_Services_Portal](../includes/pn-ms-online-services-portal.md)]. The administrative roles cover a set of rights and permissions related to managing the service subscription, such as adding users and assigning licenses. The global administrator role has rights to control every aspect of the subscription and to add subscriptions to other online services. The password administrator role has rights to reset a user’s password, create service requests, and monitor the service.  
   
- *Security roles* are assigned within customer engagement apps and cover rights and permissions-related aspects, for example, permission to update records or to publish customizations.  
+ *Security roles* are assigned within customer engagement apps and cover rights and permissions-related aspects, for example, permission to update records or to publish customizations. Environments include predefined security roles that reflect common user tasks with access levels defined to match the security best-practice goal of providing access to the minimum amount of business data required to use the app. See [Predefined security roles](database-security.md#predefined-security-roles).
   
  The roles are similar in that both types contain aggregated sets of permissions that allow access to some items and not to others, and that allow some actions to be taken but not others. The roles are different in that the first one applies to the management of the subscription but not to the service itself, and the second applies only within the service.  
   

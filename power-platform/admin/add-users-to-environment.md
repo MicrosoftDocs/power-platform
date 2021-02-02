@@ -1,9 +1,10 @@
 ---
 title: "Add users to an environment | MicrosoftDocs"
 description: Add users to environment 
-author: jayasreekumar
-ms.author: jkumar
+author: jimholtz
+ms.author: jimholtz
 ms.reviewer: jimholtz
+ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
@@ -17,6 +18,8 @@ search.app:
   - Flow
 ---
 # Add users to an environment 
+
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 Environments can have zero or one Microsoft Dataverse database. The process for adding users to environments that have no Dataverse database differs from the process for environments that have one Dataverse database. For an overview of environments, see [Environments overview](environments-overview.md). 
 
@@ -38,7 +41,7 @@ When an environment is created with a Dataverse database or a Dataverse database
 
 **To add users to an environment that has a Dataverse database**
 
-1. From the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select the environment to which you want to add users. 
+1. From the Microsoft [Power Platform admin center](https://admin.powerplatform.microsoft.com), select the environment to which you want to add users. 
 
 2. Select **Settings** > **Users + permissions** > **Users**. 
 

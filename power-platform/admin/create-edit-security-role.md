@@ -4,10 +4,11 @@ description: Create or edit a security role
 author: paulliew
 ms.author: paulliew
 ms.reviewer: jimholtz
+ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/04/2020
+ms.date: 01/14/2021
 search.audienceType: 
   - admin
 search.app:
@@ -23,6 +24,8 @@ search.app:
 You can create new security roles to accommodate changes in your business requirements or you can edit the privileges associated with an existing security role.
   
  If you need to back up your security role changes, or export security roles for use in a different implementation, you can export them as part of exporting customizations. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Export your customizations as a solution](https://docs.microsoft.com/powerapps/maker/common-data-service/use-solutions-for-your-customizations)  
+
+For information on predefined security roles, see [Predefined security roles](database-security.md#predefined-security-roles).
   
 ## Create a security role  
   
@@ -34,7 +37,7 @@ You can create new security roles to accommodate changes in your business requir
   
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
   
-2. In the Power Platform admin center, select an environment. 
+2. In the Microsoft Power Platform admin center, select an environment. 
 
 3. Select **Settings** > **Users + permissions** > **Security roles**.  
    

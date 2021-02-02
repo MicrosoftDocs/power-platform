@@ -1,12 +1,13 @@
 ---
 title: "Supported email service configurations for server-side synchronization | MicrosoftDocs"
 description: Supported email service configurations for server-side synchronization
-author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 10/09/2020
-ms.author: jimholtz
+author: revachauhan
+ms.author: rechauha
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:

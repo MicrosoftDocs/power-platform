@@ -13,7 +13,6 @@ ms.collection: virtual-agent
 
 # Export data to respond to requests for copies of personal data in Power Virtual Agents
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 
 
@@ -37,7 +36,7 @@ Power Virtual Agents offers the following capabilities to find or export persona
 
    ![Sign in to powerapps.com](media/export-1.png)
 
-2. After signing in, you are redirected to the Power Platform admin center.
+2. After signing in, you are redirected to the Microsoft Power Platform admin center.
 
    ![Power Platform admin center](media/export-2.png)
 

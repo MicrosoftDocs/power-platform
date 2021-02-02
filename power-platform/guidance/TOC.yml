@@ -98,6 +98,8 @@
         href: coe/setup-powerbi.md
       - name: Set up theming components
         href: coe/setup-theming.md
+      - name: Set up Innovation Backlog components
+        href: coe/setup-innovationbacklog.md
       - name: Set up ALM Accelerator for Makers components
         href: coe/setup-almaccelerator.md
     - name: What's in the CoE Starter Kit
@@ -114,6 +116,8 @@
           href: coe/nurture-components.md  
         - name: Theming components
           href: coe/theming-components.md   
+        - name: Innovation Backlog components
+          href: coe/innovationbacklog-components.md   
         - name: ALM Accelerator for Makers components
           href: coe/almaccelerator-components.md  
         - name: Extend and modify components
@@ -134,6 +138,8 @@
           href: coe/example-processes.md  
         - name: Dataverse for Teams environment management
           href: coe/teams-governance.md  
+        - name: Use the Innovation Backlog app
+          href: coe/use-innovationbacklog.md  
     - name: Limitations
       href: coe/limitations.md
     - name: Release notes

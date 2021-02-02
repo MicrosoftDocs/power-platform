@@ -1,9 +1,10 @@
 ---
 title: "Use service admin roles to manage your tenant   | MicrosoftDocs"
 description: Use service admin roles to manage your tenant 
-author: jayasreekumar
-ms.author: jkumar
+author: jimholtz
+ms.author: jimholtz
 ms.reviewer: jimholtz
+ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
@@ -18,7 +19,9 @@ search.app:
 ---
 # Use service admin roles to manage your tenant
 
-To help you administer environments and settings for Power Platform, you can assign users to manage at the tenant level without having to assign the more powerful Microsoft 365 global admin privilege.  
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
+To help you administer environments and settings for Microsoft Power Platform, you can assign users to manage at the tenant level without having to assign the more powerful Microsoft 365 global admin privilege.  
 
 There are two Power Platform related service admin roles you can assign to provide a high level of admin management.
 
@@ -27,14 +30,14 @@ There are two Power Platform related service admin roles you can assign to provi
 The Dynamics 365 admin can:
 
 - Sign in to and manage multiple environments. If an environment uses a security group, a service admin would need to be added to the security group in order to manage that environment. Not assigning to an in place security group essentially locks these admins out of any admin management. 
-- Perform admin functions in Power Platform because they have the system admin role.  
+- Perform admin functions in Microsoft Power Platform because they have the system admin role.  
 
 ## Power Platform administrator 
   
  Users with the Power Platform admin role can:  
   
 - Sign in to and manage multiple environments. Power Platform admins **are not affected** by security group membership and can manage environments even if not added to an environment's security group.
-- Perform admin functions in Power Platform because they have the system admin role.
+- Perform admin functions in Microsoft Power Platform because they have the system admin role.
   
 Both service admin roles cannot do functions restricted to the Microsoft 365 global admin such as manage user accounts, manage subscriptions, access settings for Microsoft 365 apps like Microsoft Exchange or Microsoft SharePoint.  
   
@@ -58,7 +61,7 @@ Follow these steps to assign a service admin role.
 
 The following matrix shows what management is possible with the various service admin roles compared to the Microsoft 365 global admin role.
 
-|    |Microsoft 365<br>Global admin<br />  |Power Platform<br> admin <br />  |Dynamics 365<br> admin<br />  | Power BI<br> admin<br />  |
+|  &nbsp;    |Microsoft 365<br>Global admin<br />  |Power Platform<br> admin <br />  |Dynamics 365<br> admin<br />  | Power BI<br> admin<br />  |
 |---------|---------|---------|---------|---------|
 |**POWER PLATFORM** |||||  
 |**Environments** |||||  

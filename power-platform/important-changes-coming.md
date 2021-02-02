@@ -1,7 +1,7 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps"
 description: Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps 
-ms.date: 11/17/2020
+ms.date: 12/04/2020
 ms.topic: "article"
 ms.assetid: 994cc854-17f6-45d6-bc20-fcf1a3f2d6d6
 searchScope:
@@ -17,15 +17,76 @@ manager: annbe
 Important changes (deprecations) coming in Power Apps, Power Automate, and customer engagement apps
 ============================================================
 
-The announcements and deprecations described in this topic apply to Power Apps, Power Automate, and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Marketing, Dynamics 365 Field Service, and Dynamics 365 Project Service Automation).
+The announcements and deprecations described in this article apply to Power Apps, Power Automate, and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Marketing, Dynamics 365 Field Service, and Dynamics 365 Project Service Automation).
 
 Administrators and IT professionals should use this information to prepare for future releases. This article was first published on June 27, 2017.
 
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future major release. The feature or capability will continue to work and is fully supported until it is officially removed. This deprecation
-notification can span a few years. After removal, the feature or capability will no longer work. We are notifying you now so you have sufficient time to plan and update your code before the feature or capability is removed.
+notification can span a few months or years. After removal, the feature or capability will no longer work. We are notifying you now so you have sufficient time to plan and update your code before the feature or capability is removed.
 
-## Organization data download filters for mobile offline are deprecated. 
+## Low-density headers in model-driven apps won't be supported with the 2021 release wave 2
+
+With the upcoming 2021 release wave 2 (public preview in August 2021 and GA in October 2021), the low-density header option, and runtime experience won't be supported in model-driven app forms.
+
+#### Why is this needed?
+
+- Makers have moved away from low-density headers and usage is low. 
+- Low-density headers don't promote a highly dense experience and require users to always use the flyout for all controls across view-port sizes (small to very-wide) 
+
+#### Impact
+Any current form that is configured to be “low-density” will be automatically updated to render in a [high-density with flyout](https://docs.microsoft.com/powerapps/maker/model-driven-apps/form-designer-header-properties#high-density-header-flyout) mode in a model driven app. Here is an example of high-density header with flyout:
+
+> [!div class="mx-imgBorder"] 
+> ![Header flyout with high-density header](media/form-header-flyout-high-density.png "Header flyout with high-density header")
+
+#### Action required by you
+
+To meet the October 2021 deadline, you will need to update any of your forms from a low-density format to a high-density with flyout mode using the modern form designer. More information: [Configure header density](https://docs.microsoft.com/powerapps/maker/model-driven-apps/form-designer-header-properties#configuring-header-density). 
+
+If you don't make this change, the form will no longer honor this setting at runtime, and will default to high-density with flyout.
+
+
+## Form footers in model-driven app won't be supported with the 2021 release wave 2
+
+With the upcoming 2021 release wave 2 (public preview in August 2021 and GA in October 2021), form footers won't be supported in a model-driven app form. 
+
+#### Why is this needed? 
+
+- The footer does not meet the Microsoft [Web Content Accessibility Guidelines (WCAG) 2.0](https://docs.microsoft.com/compliance/regulatory/offering-WCAG-2-1) compliance for accessibility. 
+- Data density is highly impacted by the form footer and does not support a good customer experience. Controls are not discoverable and lead to many customer usability issues. 
+- Makers have moved away from adding controls into the footer and there is low usage of other controls, out of box or custom, in the current footer form experiences. 
+- Components created using Power Apps component framework aren't fully compatible with form footers, which cause usability issues when added to a form footer. 
+- Form footers are not included in the mobile experience or on the view and dashboard pages.  This change will align the form experience with other pages in a model-driven app. 
+
+#### Impact
+
+Main forms will no longer include the footer when a record is opened. Any out of box or custom controls that have been added to the form footer will no longer be available and you'll need to plan to remove the fields if they are no longer necessary or move the fields to the header and use the [high-density header with flyout](https://docs.microsoft.com/powerapps/maker/model-driven-apps/form-designer-header-properties#high-density-header-flyout) or add them onto the main form. The recommended approach is to move field that users need to access regardless of the form tab a user is on to the header and set it to use the [high-density header with flyout](https://docs.microsoft.com/powerapps/maker/model-driven-apps/form-designer-header-properties#high-density-header-flyout).  If there is only one tab, the recommendation is to move them into a new section on the form. 
+
+#### Action required by you
+- To meet the October 2021 deadline, you will need to move fields or controls added to a form footer to either the header or a section on the form.
+- If you do nothing, the footer fields or controls that you have added will no longer render on the form and will not be available to your users. 
+
+The out of box fields currently on the footer will be removed and included on the form as part of the 2021 release wave 2 updates. So, you will not lose status or unsaved changes while opening a form in a new window. The **Save** option is already available in the command bar and is always visible to the user. 
+
+While we understand that these types of changes can be disruptive for makers that use the footer today, we always evaluate the experiences to ensure they provide a modern experience that improves usability, support accessibility requirements, and improves discoverability for highly used fields and controls on a page.
+ 
+
+## The Microsoft Dynamics 365 application for Windows is deprecated
+
+Effective April 2021, the [Microsoft Dynamics 365 app for Windows](https://go.microsoft.com/fwlink/?linkid=838618) that lets you run customer engagement apps (such as Dynamics 365 Sales, Dynamics 365 Customer Service, and Dynamics 365 Marketing) is deprecated. Microsoft will continue to provide security and other critical updates for the [Microsoft Dynamics 365 app for Windows](https://go.microsoft.com/fwlink/?linkid=838618) until January 29, 2021, but will not release any another features or functionalities for the app. After April 1, 2021, the app will be removed from the Microsoft Store, and it will not be supported. 
+ 
+We recommend that you start using your web browser as soon as possible to run your customer engagement apps (such as Dynamics 365 Sales, Dynamics 365 Customer Service, and Dynamics 365 Marketing) on Windows to take advantage of the ongoing improvements for the web app.
+
+## Internet Explorer 11 support for Dynamics 365 and Microsoft Power Platform is deprecated
+
+Effective December 2020, Microsoft Internet Explorer 11 support for Microsoft Dynamics 365 and Microsoft Power Platform is deprecated, and Internet Explorer 11 won’t be supported after August  2021. 
+
+This will impact customers who use Dynamics 365 and Microsoft Power Platform products that are designed to be used through an Internet Explorer 11 interface. After August 2021, Internet Explorer 11 won't be supported for such Dynamics 365 and Microsoft Power Platform products. We recommend that customers transition to Microsoft Edge. 
+
+For the complete list of products impacted by this change and transitioning from Internet Explorer 11 to a supported browser, see [FAQ: Internet Explorer 11 deprecation for Dynamics 365 and Microsoft Power Platform Products](https://aka.ms/IEsupportDeprecationBAG). If you have more questions, contact your Microsoft Customer Service representative or Microsoft Partner.
+
+## Organization data download filters for mobile offline are deprecated 
 
 Effective February 2021, **Organization data download filter** option that filters the data when you set up mobile offline are deprecated. We recommend that you start preparing your organization and move relevant data filters from **Organization data download filter** to the offline profile option, which lets you determine what data will be available when users work in offline mode. For more information, see [Create a mobile offline profile](https://docs.microsoft.com/dynamics365/mobile-app/preview-setup-mobile-offline#step-2-create-a-mobile-offline-profile-to-determine-what-data-will-be-available-while-offline). Once the old filter criteria has been moved to offline profile, you can clear or delete the filters set in **Organization data download filter**. 
 
@@ -58,11 +119,11 @@ Effective September 24, 2020, the **TimeZoneRule** entity and the **Bias** and *
 
 ## Online management API PowerShell module and REST API are deprecated
 
-Effective August 26, 2020, the online management API PowerShell module and the underlying [Online Management REST API](https://docs.microsoft.com/powerapps/developer/common-data-service/online-management-api/overview) are  deprecated. The [online management API PowerShell module](/powershell/powerapps/get-started-onlinemanagementapi?view=pa-ps-latest) will be updated in October, 2020 to point to newer underlying APIs and won’t receive further updates. We recommend that you use the Power Apps administration module. More information: [Get started using the Power Apps admin module](/powershell/powerapps/get-started-powerapps-admin?view=pa-ps-latest)
+Effective August 26, 2020, the online management API PowerShell module, and the underlying [Online Management REST API](https://docs.microsoft.com/powerapps/developer/common-data-service/online-management-api/overview) are  deprecated. The [online management API PowerShell module](/powershell/powerapps/get-started-onlinemanagementapi?view=pa-ps-latest) will be updated in October, 2020 to point to newer underlying APIs and won’t receive further updates. We recommend that you use the Power Apps administration module. More information: [Get started using the Power Apps admin module](/powershell/powerapps/get-started-powerapps-admin?view=pa-ps-latest)
 
 ## Company News Timeline solution is deprecated
 
-Effective July 10, 2020, the [Company News Timeline](https://docs.microsoft.com/dynamics365/company-news-timeline/get-company-news-timeline-dynamics-365-phones-tablets) solution, which delivers relevant news from Bing News about customers and categorizes it in inline when you're looking at customer accounts will be deprecated. Until September 10, 2020, Microsoft will continue to provide support for the feature, but won't release any additional functionality beyond what is already present. Starting September 10, 2020, you will need to uninstall the solution which will remove the news widget from the Account record pages. 
+Effective July 10, 2020, the [Company News Timeline](https://docs.microsoft.com/dynamics365/company-news-timeline/get-company-news-timeline-dynamics-365-phones-tablets) solution, which delivers relevant news from Bing News about customers and categorizes it in inline when you're looking at customer accounts will be deprecated. Until September 10, 2020, Microsoft will continue to provide support for the feature, but won't release any other functionality beyond what is already present. Starting September 10, 2020, you will need to uninstall the solution, which will remove the news widget from the Account record pages. 
 
 1. To remove the solution, go to **Advanced settings** and select **Solutions**. 
 2. Select **CompanyNewsTimeline** and then select **Delete**. 
@@ -79,27 +140,27 @@ It is our goal to deliver a powerful bot experience that allows users to retriev
 
 Effective May 5, 2020 the [Dynamics 365 connector](/connectors/dynamicscrmonline/) used for Flows, Logic Apps, and Canvas Apps is officially deprecated. We recommend that you do not create new connections using this connector.
 
-Rather than use the Dynamics 365 connector, the [Dataverse (Current Environment) connector](/connectors/commondataserviceforapps/) should be your first choice *if you can use it*. You may not be able to use the Dataverse (Current Environment) connector in every situation today because of the following limitations:
+Rather than use the Dynamics 365 connector, the [Common Data Service (Current Environment) connector](/connectors/commondataserviceforapps/) should be your first choice *if you can use it*. You may not be able to use the Common Data Service (Current Environment) connector in every situation today because of the following limitations:
 
 - It is not available in Logic Apps.
 - It does not enable cross-tenant or cross environment connections. 
 - It cannot be used for canvas apps that use the [Power Apps for Windows client](https://www.microsoft.com/p/power-apps/9nblggh5z8f3).
 
-If you cannot use the Dataverse (Current Environment) connector, you should use the [Common Data Service connector](/connectors/commondataservice/). This connector has all the capabilities of the Dynamics 365 connector, and includes several improvements that increase reliability.
+If you cannot use the Common Data Service (Current Environment) connector, you should use the [Common Data Service connector](/connectors/commondataservice/). This connector has all the capabilities of the Dynamics 365 connector, and includes several improvements that increase reliability.
 
-The Dataverse (Current Environment) connector represents the future for connections using Dataverse. This includes Dynamics 365 apps using Dataverse. Work is underway to make this connector the only connector you will need. But at the current time, the previously mentioned limitations mean that you can't use it in all places where the Dynamics 365 connector or Common Data Service connector can be used today.
+The Common Data Service (Current Environment) connector represents the future for connections using Dataverse. This includes Dynamics 365 apps using Dataverse. Work is underway to make this connector the only connector you will need. But at the current time, the previously mentioned limitations mean that you can't use it in all places where the Dynamics 365 connector or Common Data Service connector can be used today.
 
 At this time, there is no requirement to convert canvas apps, flows, or logic apps to stop using the Dynamics 365 connector because of the known blocking limitations. But you should stop creating new connections with the Dynamics 365 connector and convert them if you can.
 
 |Type|Guidance|
 |---------|---------|
-|Flows|If you can convert existing Flows to use the Common Data Service (Current Environment) connector, we recommend you do so.|
+|Flows|If you can convert existing flows to use the Common Data Service (Current Environment) connector, we recommend you do so.|
 |Logic Apps|We recommend you stop creating new connections using the Dynamics 365 connector and use the Common Data Service Connector instead.|
 |Canvas Apps|Canvas apps created after November 2019 should not have used the connector infrastructure by default. These apps should automatically connect to the Common Data Service instance within the same environment. <br /><br />If you have a canvas app that used the  Dynamics 365 connector, find information about how to convert them here: [Converting canvas apps with the Dynamics 365 connector](/powerapps/maker/canvas-apps/use-native-cds-connector#converting-canvas-apps-with-the-dynamics-365-connector).|
 
 ### Forward looking guidance
 
-When the Dataverse (Current Environment) connector represents a viable replacement for all situations where the Dynamics 365 and Common Data Service connectors are used today, we intend to remove both the current Dynamics 365 and Common Data Service connectors so that a single connector based on the Dataverse (Current Environment) connector will remain. At that time it will be required to convert any Flows, Logic Apps and Canvas Apps still using the Dynamics 365 and Common Data Service connectors.
+When the Common Data Service (Current Environment) connector represents a viable replacement for all situations where the Dynamics 365 and Common Data Service connectors are used today, we intend to remove both the current Dynamics 365 and Common Data Service connectors so that a single connector based on the Common Data Service (Current Environment) connector will remain. At that time it will be required to convert any Flows, Logic Apps, and Canvas Apps still using the Dynamics 365 and Common Data Service connectors.
 
 We will announce timelines as they are determined.
 
@@ -205,7 +266,7 @@ Legacy web client is deprecated
 -------------------------------
 As of September 2019, the legacy web client is deprecated. Customers must transition to Unified Interface before December 4, 2020. Microsoft will continue to provide support, security, and other critical updates to the legacy web client until December 4, 2020 but won't release any additional functionality beyond what has already been announced.
   
-On December 4, 2020, the legacy web client will no longer be available. Organizations should make the transition to the Unified Interface as soon as possible to take advantage of Microsoft’s ongoing investments in reliability, performance, and functionality. 
+On December 4, 2020, the legacy web client will no longer be available. Organizations should make the transition to Unified Interface as soon as possible to take advantage of Microsoft’s ongoing investments in reliability, performance, and functionality. 
 
  
 In the coming months, for those that have not already made the transition, we will be sending reminders and scheduling updates to transition customers to Unified Interface prior to December 4, 2020. 
@@ -306,7 +367,7 @@ For information about the new client APIs, see [Apply business logic using clien
 EntityMetadata.IsInteractionCentricEnabled property is deprecated
 -----------------------------------------------------------------
 
-All entities supported in the Unified Interface are now enabled for the interactive experience in the new Customer Service Hub app. This implies that
+All entities supported in Unified Interface are now enabled for the interactive experience in the new Customer Service Hub app. This implies that
 the **EntityMetadata**.[IsInteractionCentricEnabled](/dotnet/api/microsoft.xrm.sdk.metadata.entitymetadata.isinteractioncentricenabled)
 property, which indicates whether an entity can be enabled for interactive experience, is no longer relevant. The corresponding setting for this property
 in the Customization tool, **Enable for interactive experience**, is removed, and the
@@ -370,7 +431,7 @@ provide standardized documents or customized data analysis for your
 organization.
 
 Mail merges from previous versions is deprecated. This includes the mail-merge
-Word add-in as well as mail-merge templates (**Settings \> Templates \> Mail Merge
+Word add-in and mail-merge templates (**Settings \> Templates \> Mail Merge
 Templates**).
 
 More information: [Create Word and Excel templates](https://docs.microsoft.com/previous-versions/dynamicscrm-2016/admins-customizers-dynamics-365/mt826692(v=crm.8))
@@ -395,7 +456,7 @@ Silverlight (XAP) web resource is deprecated
 --------------------------------------------
 
 The Silverlight (XAP) web resource is deprecated on the web client, and is not
-supported on the Unified Interface. Instead of Silverlight web resources, you must use custom
+supported on Unified Interface. Instead of Silverlight web resources, you must use custom
 controls created using the HTML web resources
 with HTML5 to create UI components to visualize and interact with data.
 

@@ -1,6 +1,6 @@
 ---
 title: "Opt in to early access updates  | MicrosoftDocs"
-description: Opt in to early access updates in Power Platform and Dynamics 365 
+description: Opt in to early access updates in Microsoft Power Platform and Dynamics 365. 
 author: angelmarshall
 ms.author: tsmarsha
 ms.reviewer: jimholtz
@@ -18,12 +18,12 @@ search.app:
 ---
 # Opt in to early access updates 
 
-Power Platform and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation) deliver two [major releases](policies-communications.md#major-release-events) per year (April and October) that offer new capabilities and functionality.
+Microsoft Power Platform and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation) deliver two [major releases](policies-communications.md#major-release-events) per year (April and October) that offer new capabilities and functionality.
 
 Because the major releases include features that affect the user experience, you can opt in for early access to self-update to the new release, and start testing and validating the new features before they're automatically enabled for your users.
 
 > [!TIP]
-> Check out the early access features for [Power Platform](https://aka.ms/PowerPlatformEAFeatures) and [Dynamics 365](https://aka.ms/Dynamics365EAFeatures) to know the features that will roll out to the users automatically when you opt in for an update.
+> Check out the early access features for Microsoft [Power Platform](https://aka.ms/PowerPlatformEAFeatures) and [Dynamics 365](https://aka.ms/Dynamics365EAFeatures) to know the features that will roll out to the users automatically when you opt in for an update.
 
 ## Early access availability  
 For each of the major releases, you can opt in for early access updates approximately two months before the major release is automatically enabled in your region.
@@ -48,7 +48,7 @@ The early access updates are available for all types of environments, including 
 > Although you can enable early access updates in a production environment, we highly recommend that you create a copy of your production environment as a sandbox environment to try out the new features first. The updates can't be reverted after they've been enabled; therefore, if you test and validate the updates in a sandbox environment before enabling them in a production environment, you can determine the impact they'll have on users in your organization.
 >
 > Be sure to:
-> - Learn about the Dynamics 365 [release plan](https://aka.ms/Dynamics365ReleasePlan) and Power Platform [release plan](https://aka.ms/PowerPlatformReleasePlan), and the new features available for early access. 
+> - Learn about the Dynamics 365 [release plan](https://aka.ms/Dynamics365ReleasePlan) and Microsoft Power Platform [release plan](https://aka.ms/PowerPlatformReleasePlan), and the new features available for early access. 
 > - Review [Prepare for a release wave](#prepare-for-a-release-wave). 
 > - Validate and test the updates in a sandbox environment before rolling out to production. 
 
@@ -113,7 +113,7 @@ To verify that a release wave is enabled, open the environment, go to **Settings
 |![Opt-in status](media/update-status.png "Opt-in status")<br /> An example screenshot. May not be current wave.        | ![Opt-in status webclient](media/update-status-webclient.png "Opt-in status webclient") <br /> An example screenshot. May not be current wave.         |
 
 > [!NOTE]
-> You need to select **About** from a Dynamics 365 apps page that's displayed in the [Unified Interface](about-unified-interface.md), such as Sales Hub or Customer Service Hub pages. 
+> You need to select **About** from a Dynamics 365 apps page that's displayed in [Unified Interface](about-unified-interface.md), such as Sales Hub or Customer Service Hub pages. 
 >
 > The server version won't be updated to the next version after a release wave is enabled. 
 
@@ -125,7 +125,7 @@ Each release wave includes features and functionality that are enabled for diffe
 - **Users by admins, makers, or analysts**: These features must be enabled or configured by the administrators, makers, or business analysts to be available for their users.
 
 By opting in for early access updates, you'll get features that are mandatory changes that are automatically enabled for users.
-For more details, check the **Enabled for** column in [Dynamics 365](https://aka.ms/Dynamics365ReleasePlan) and [Power Platform](https://aka.ms/PowerPlatformReleasePlan) release plans.
+For more details, check the **Enabled for** column in [Dynamics 365](https://aka.ms/Dynamics365ReleasePlan) and Microsoft [Power Platform](https://aka.ms/PowerPlatformReleasePlan) release plans.
 
 ## Prepare for a release wave  
 The following checklist provides the general guidelines to help you prepare for a release wave. 
@@ -182,7 +182,7 @@ See [Policies and communications](policies-communications.md#scheduled-system-up
 #### Deployment schedule
 
 > [!IMPORTANT]
-> As announced in the [blog post](https://aka.ms/covid19Blog), Microsoft is making some changes to the update schedules in April in response to COVID-19. The 2020 release wave 1, April updates will be generally available as mentioned in the [Dynamics 365](https://aka.ms/Dynamics365ReleasePlan) and [Power Platform](https://aka.ms/PowerPlatformReleasePlan) release plans. However, we are making some changes to the release schedule as explained later in [this article](https://docs.microsoft.com/dynamics365/get-started/release-schedule). Microsoft will continue to release critical updates for Dynamics 365 applications and Power Platform. Microsoft is also extending the deprecation timelines for some capabilities to provide customers and partners additional time to make the transition. Microsoft is committed to providing support to our customers and partners during this period.
+> As announced in the [blog post](https://aka.ms/covid19Blog), Microsoft is making some changes to the update schedules in April in response to COVID-19. The 2020 release wave 1, April updates will be generally available as mentioned in the [Dynamics 365](https://aka.ms/Dynamics365ReleasePlan) and Microsoft [Power Platform](https://aka.ms/PowerPlatformReleasePlan) release plans. However, we are making some changes to the release schedule as explained later in [this article](https://docs.microsoft.com/dynamics365/get-started/release-schedule). Microsoft will continue to release critical updates for Dynamics 365 applications and Power Platform. Microsoft is also extending the deprecation timelines for some capabilities to provide customers and partners additional time to make the transition. Microsoft is committed to providing support to our customers and partners during this period.
 
 The following is the updated schedule for when the 2020 release wave 1 features will be enabled by regions. 
 
@@ -200,6 +200,6 @@ During the general availability deployment, your environments will be updated wi
 
 ### See also
 [Dynamics 365 release schedule and early access ](https://docs.microsoft.com/dynamics365/get-started/release-schedule)<br />
-[Dynamics 365 and Power Platform Release Plans ](https://docs.microsoft.com/dynamics365/release-plans/)<br />
+[Dynamics 365 and Microsoft Power Platform Release Plans ](https://docs.microsoft.com/dynamics365/release-plans/)<br />
 [Policies and communications](https://docs.microsoft.com/power-platform/admin/policies-communications)
 

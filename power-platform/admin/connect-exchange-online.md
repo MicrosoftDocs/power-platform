@@ -1,12 +1,13 @@
 ---
 title: "Connect to Exchange Online | MicrosoftDocs"
 description: Connect to Exchange Online
-author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/04/2020
-ms.author: jimholtz
+author: revachauhan
+ms.author: rechauha
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
@@ -48,7 +49,7 @@ With both customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Se
 ## Verify you have the profile: Microsoft Exchange Online  
  If you have an [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] subscription in the same tenant as your subscription, customer engagement apps create a default profile for the email connection: **Microsoft Exchange Online**. To verify this profile:  
   
-1. In the Power Platform admin center, select an environment. 
+1. In the Microsoft Power Platform admin center, select an environment. 
 
 2. Select **Settings** > **Email** > **Server profiles**.  
   

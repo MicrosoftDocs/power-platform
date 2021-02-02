@@ -51,7 +51,7 @@ You can access Unified Interface apps from the following locations in a browser:
 ## Accessing Unified Interface apps on phone and tablets
 The Unified Interface apps are the only apps supported on phones and tablets. When users sign in to their environment, they will see the Unified Interface apps only on their apps landing page. 
 
-|  | |  |
+| &nbsp; | &nbsp; | &nbsp; |
 |---------|---------|---------|
 |On phone <br/>![Unified Interface phone app](media/uci-app-phone.png "Unified Interface phone app")     |    |On tablet <br/>![Unified Interface tablet app](media/uci-app-tablet.png "Unified Interface tablet app")    |
 

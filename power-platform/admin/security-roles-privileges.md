@@ -4,10 +4,11 @@ description: Overview of security roles and privileges
 author: paulliew
 ms.author: paulliew
 ms.reviewer: jimholtz
+ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/09/2020
+ms.date: 01/08/2021
 search.audienceType: 
   - admin
 search.app:
@@ -26,7 +27,7 @@ To control data access, you must set up an organizational structure that both pr
 > Check out the following video: [How to set up security roles](https://go.microsoft.com/fwlink/p/?linkid=2020433).
   
 ## Security roles  
-A security role defines how different users, such as salespeople, access different types of records. To control access to data, you can modify existing security roles, create new security roles, or change which security roles are assigned to each user. Each user can have multiple security roles.  
+A security role defines how different users, such as salespeople, access different types of records. To control access to data, you can modify existing security roles, create new security roles, or change which security roles are assigned to each user. Each user can have multiple security roles. See [Predefined security roles](database-security.md#predefined-security-roles).
   
 Security role privileges are cumulative: having more than one security role gives a user every privilege available in every role.  
   
@@ -80,7 +81,6 @@ The colored circles on the security role settings page define the access level f
 A security role can be set to provide a team member with direct Basic-level access user privileges. A team member can create records that they own and records that have the team as owner when the Basic access level for Create is given. When the Basic access level for Read is given, team member can access records that are owned by both that team member and by the team.  
 
 This member's privilege inheritance role is applicable to [Owner](manage-teams.md#about-owner-teams) and Azure Active Directory (Azure AD) [group team](manage-group-teams.md). 
-
 
 > [!NOTE]
 > Prior to Team member's privilege inheritance release in May 2019, security roles behaved as **Team privileges**. Security roles created before this release are set as **Team privileges** and security roles created after this release are by default set as **User privileges**.

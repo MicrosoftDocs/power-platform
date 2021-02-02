@@ -25,17 +25,20 @@ Select each version below to see release notes and updates for each component. Y
 
 |  Component     | Latest version |
 |--------|-------------|
-| Core (Admin) Components |   [1.71](release-notes/core-1.71.md)    |
-| Governance (Compliance and Reporting) Components |   [1.25](release-notes/governance-1.25.md)  |
+| Core (Admin) Components |   [1.85](release-notes/core-1.85.md)    |
+| Governance (Compliance and Reporting) Components |   [1.30](release-notes/governance-1.25.md)  |
 | Nurture Components |   [1.23](release-notes/nurture-1.23.md)  |
-| Audit Log |   [1.0](release-notes/auditlog-1.0.md) |
+| Audit Log |   [1.4](release-notes/auditlog-1.0.md) |
 | Theming Components |   [1.1](release-notes/theming-1.1.md) |
 | ALM Accelerator for Makers |   [1.1](release-notes/almhelper-1.1.md) |
+| Innovation Backlog |   [1.2](release-notes/innovation-1.2.md) |
 
 ### All Core (Admin) Components versions
 
 |  Version | First available |
 | --------- | ---------------|
+| [1.85](release-notes/core-1.85.md) | February 1, 2021 |
+| [1.72](release-notes/core-1.72.md) | January 6, 2021 |
 | [1.71](release-notes/core-1.71.md) | November 16, 2020 |
 | [1.70.6](release-notes/core-1.70.6.md) | October 16, 2020 |
 | [1.70](release-notes/core-1.70.md) | September 18, 2020 |
@@ -46,6 +49,7 @@ Select each version below to see release notes and updates for each component. Y
 
 |  Version | First available |
 | --------- | ---------------|
+| [1.30](release-notes/governance-1.30.md) | February 1, 2021 |
 | [1.25](release-notes/governance-1.25.md) | November 16, 2020 |
 | [1.23](release-notes/governance-1.23.md) | September 18, 2020 |
 | [1.21](release-notes/governance-1.21.md) | August 14, 2020 |
@@ -58,3 +62,11 @@ Select each version below to see release notes and updates for each component. Y
 | [1.23](release-notes/nurture-1.23.md) | October 16, 2020 |
 | [1.17](release-notes/nurture-1.17.md) | September 18, 2020 |
 | [1.14](release-notes/nurture-1.14.md) | June 27, 2020 |
+
+### All Audit Log Components versions
+
+|  Version | First available |
+| --------- | ---------------|
+| [1.4](release-notes/auditlog-1.4.md) | February 1, 2021 |
+| [1.1](release-notes/auditlog-1.1.md) | September 18, 2020 |
+| [1.0](release-notes/auditlog-1.0.md) | July 8, 2020.

@@ -1,13 +1,14 @@
 ---
 title: "Set up security permissions for a field  | MicrosoftDocs"
 description: Set up security permissions for a field
-author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/30/2020
+author: jimholtz
 ms.author: jimholtz
+ms.reviewer: jimholtz
+ms.custom: "admin-security"
 search.audienceType: 
   - admin
 search.app:

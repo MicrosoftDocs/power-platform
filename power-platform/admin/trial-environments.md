@@ -7,7 +7,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/27/2020
+ms.date: 01/19/2021
 search.audienceType: 
   - admin
 search.app:
@@ -17,7 +17,10 @@ search.app:
   - Flow
 ---
 # About trial environments
-Using the Power Platform admin center, you can create environments of multiple types. Using trial environments, companies and customers can try out new features and solutions. There are two types of trial environments: trial (standard) and trial (subscription-based). 
+
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
+Using the Microsoft Power Platform admin center, you can create environments of multiple types. Using trial environments, companies and customers can try out new features and solutions. There are two types of trial environments: trial (standard) and trial (subscription-based). 
 
 > [!NOTE]
 > The term "trial," as used in all other topics and the user interface, refers to the standard type of trial environment rather than the subscription-based type.
@@ -38,7 +41,7 @@ The type of trial environment you create depends on where you start and your ten
 |Trial (standard)     |  User or admin      |  Power Platform admin center. See [Create a trial (standard) environment in the Power Platform admin center](#create-a-trial-standard-environment-in-the-power-platform-admin-center)       |
 |Trial (standard)       |  User or admin         | [https://trials.dynamics.com](https://trials.dynamics.com)     |
 |Trial (subscription-based)      | Admin        | Power Platform admin center. See [Create a trial (subscription-based) environment in the Power Platform admin center](#create-a-trial-subscription-based-environment-in-the-power-platform-admin-center)        |
-|Trial (subscription-based)      |  User or admin        | "Get started"<!--Suggested--> pages, such as: <br /> <ul><li>[https://dynamics.microsoft.com/get-started/?appname=salespro](https://dynamics.microsoft.com/get-started/?appname=salespro)</li><li>[https://dynamics.microsoft.com/get-started/?appname=customerservice](https://dynamics.microsoft.com/get-started/?appname=customerservice)</li></ul>      |
+|Trial (subscription-based)      |  User or admin        | "Get started" pages, such as: <br /> <ul><li>[https://dynamics.microsoft.com/get-started/?appname=salespro](https://dynamics.microsoft.com/get-started/?appname=salespro)</li><li>[https://dynamics.microsoft.com/get-started/?appname=customerservice](https://dynamics.microsoft.com/get-started/?appname=customerservice)</li></ul>      |
 
 ## Create a trial (standard) environment in the Power Platform admin center
 
@@ -156,6 +159,10 @@ The organization (tenant) admin can determine who's allowed to create trial envi
 ### I can see a trial (subscription-based) environment type option, why can't I create this trial type?
 
 Make sure that you have an active Dynamics 365 Trial subscription.
+
+### Why can’t I backup my trial environment?
+
+Administrative operations (copy, backup, restore, and reset) are not supported for trials, except delete.
 
 ### How can I retain my data and resources if I don't have a way to convert the trial (standard) environment to a production environment?
 

@@ -1,6 +1,6 @@
 ---
 title: "Enable the hybrid experience  | MicrosoftDocs"
-description: Some features are not yet present in the Unified Interface but can be enabled for display as legacy dialogs in the Unified Interface through the hybrid experience.
+description: Some features are not yet present in Unified Interface but can be enabled for display as legacy dialogs in Unified Interface through the hybrid experience.
 author: jimholtz
 manager: kvivek
 ms.service: power-platform
@@ -24,7 +24,7 @@ search.app:
 
 Most of the core functionalities of sales and customer service have moved to the [Unified Interface](about-unified-interface.md) experience. Some of the features that are not yet on Unified Interface can now be accessed in the Unified Interface client. 
 
-The following features are not yet present in the Unified Interface but can be enabled for display as legacy dialogs in the Unified Interface through the hybrid experience.
+The following features are not yet present in Unified Interface but can be enabled for display as legacy dialogs in Unified Interface through the hybrid experience.
 
 - [Advanced Find](https://docs.microsoft.com/powerapps/user/advanced-find) 
 - Bulk edit

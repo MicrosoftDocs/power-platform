@@ -13,7 +13,7 @@ ms.custom: "cex"
 ms.collection: virtualagent
 ---
 
-# Extend you bot with Bot Framework Composer
+# Extend your bot with Bot Framework Composer
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 

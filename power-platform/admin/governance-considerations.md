@@ -1,12 +1,14 @@
 ---
 title: Governance considerations | Microsoft Docs
 description: Explains how Power Apps and Power Automate be made widely available to their business and be supported by IT.
-author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/12/2020
+ms.date: 12/16/2020
+author: jimholtz
 ms.author: jimholtz
+ms.reviewer: jimholtz
+ms.custom: "admin-security"
 search.audienceType: 
   - admin
 search.app:
@@ -17,6 +19,8 @@ search.app:
 ---
 
 # Governance considerations 
+
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 Many customers wonder: How can Power Apps and Power Automate be made available to their broader business and supported by IT? Governance is the answer. It aims to enable business groups to focus on solving business problems efficiently while complying with IT and business compliance standards. The following content is intended to structure themes often associated with governing software and bring awareness to capabilities available for each theme as it relates to governing Power Apps and Power Automate. 
 
@@ -76,7 +80,7 @@ The following principals are supported for each role type.
 
 #### FAQ - What permissions exist at an Azure AD tenant level? 
 
-Today, Power Platform admins can perform the following: 
+Today, Microsoft Power Platform admins can perform the following: 
 
 1. Download the Power Apps & Power Automate license report
 1. Create DLP policy scoped only to 'All Environments' or scoped to include/exclude specific environments
@@ -196,3 +200,6 @@ The export can take a while for tenants with a large number of Power Platform us
 2. Select an Environment.
 3. Optionally, the list of resources used in an Environment may be downloaded as a .csv.
 
+### See also
+[Use best practices to secure and govern Power Automate environments](https://docs.microsoft.com/learn/paths/best-practices-environments/) <br />
+[Microsoft Power Platform Center of Excellence (CoE) Starter Kit](../guidance/coe/starter-kit.md)

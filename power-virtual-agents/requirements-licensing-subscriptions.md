@@ -2,7 +2,7 @@
 title: "Get access to Power Virtual Agents"
 description: "Compare the capabilities you can access in Power Virtual Agents depending on whether you have a Microsoft 365 subscription or standalone Power Virtual Agents subscription."
 keywords: "Administration, licensing, PVA, standalone, compare, comparison"
-ms.date: 9/22/2020
+ms.date: 1/21/2021
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -14,19 +14,18 @@ ms.collection: virtual-agent
 
 # Licensing for Power Virtual Agents
 
-This topic includes details about Power Virtual Agents Licensing. You can also review the [Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130) to learn more.
+This topic includes details about Power Virtual Agents Licensing. You can also review the [Microsoft Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130) to learn more.
 
 If you already have licenses, see the [Assign licenses and manage access to Power Virtual Agents](requirements-licensing.md) topic.
 
 
 ## Power Virtual Agents for Microsoft Teams plan
 
+Power Virtual Agents for Microsoft Teams enables customers to build conversational interfaces within Microsoft Teams. The chatbots can use data stored in Microsoft Dataverse for Teams or many other sources using the supplied standard connectors.
 
-Power Virtual Agents for Microsoft Teams enables customers to build conversational interfaces within Microsoft Teams. The chatbots can use data stored in Project Oakdale or many other sources using the supplied standard connectors.
+Capabilities available in the Power Virtual Agents app in Microsoft Teams are available as part of select Microsoft 365 subscriptions with Microsoft Power Platform and Microsoft Teams capabilities, excluding plans for US government environments (GCC, GCC High, and DoD) and EDU A1 and SUB SKUs.
 
-Capabilities available in the Power Virtual Agents app in Microsoft Teams are available as part of select Microsoft 365 subscriptions with Power Platform and Teams capabilities, excluding plans for US government environments (GCC, GCC High and DoD) and EDU A1 and SUB SKUs.
-
-The following table is a brief comparison of capabilities in the Power Virtual Agents for Microsoft Teams plan, which is available in select Microsoft 365 subscriptions, against the standalone Power Virtual Agents subscription. 
+This table compares capabilities in the Power Virtual Agents for Microsoft Teams plan, which is available in select Microsoft 365 subscriptions, against the standalone Power Virtual Agents subscription. 
 
 
 Capability | Select Microsoft 365 subscriptions | Power Virtual Agents subscription
@@ -34,8 +33,12 @@ Capability | Select Microsoft 365 subscriptions | Power Virtual Agents subscript
 Deploy bot to channels | [Microsoft Teams](teams/publication-add-bot-to-microsoft-teams-teams.md) | [Any channel supported by Power Virtual Agents](publication-fundamentals-publish-channels.md)
 Power Automate connectors | [Standard connectors available for flows triggered from Power Virtual Agents](teams/advanced-flow-teams.md) | [Premium connectors available for flows triggered from Power Virtual Agents](advanced-flow.md)
 Web security | [Secure access enabled by default, no ability to generate secrets to enable secure access](teams/configure-web-security-teams.md) | [Ability to generate secrets and turn on or off secure access as wanted by the bot author](configure-web-security.md)
-Azure bot framework skills | Not available | [Ability to extend Power Virtual Agents bots with Azure bot framework skills](advanced-use-skills.md)
+Use Microsoft Bot Framework skills | Not available | [Ability to extend Power Virtual Agents bots with Microsoft Bot Framework skills](advanced-use-skills.md)
+Integrate Micrsoft Bot Framework dialogs | Not available | [Develop custom dialogs with Bot Framework Composer](advanced-bot-framework-composer.md)
 
+>[!NOTE]
+>A paid, standalone Power Virtual Agents subscription is required to run flows with premium connectors in the context of Power Virtual Agents chatbots.  
+Similarly, use rights and functionality available as part of paid, standalone Power Automate subscriptions serve automation scenarios and cannot be applied to Power Virtual Agents scenarios.
 
 ### Upgrading your license
 To access the full range of Power Virtual Agents capabilities, you need to upgrade your plan to a standalone Power Virtual Agents subscription. 
@@ -56,13 +59,3 @@ The standalone Power Virtual Agents subscription allows you to build chatbots on
 
 
 You can obtain a standalone Power Virtual Agents subscription from the Microsoft 365 admin center. Learn more at the [Assign licenses and manage access to Power Virtual Agents](requirements-licensing.md) topic.
-
-
-
-
-
-
-
-
-
-

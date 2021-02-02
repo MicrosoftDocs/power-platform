@@ -4,6 +4,7 @@ description: Create a team template and add to an entity form
 author: paulliew
 ms.author: paulliew
 ms.reviewer: jimholtz
+ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
@@ -27,7 +28,7 @@ A team template can be used for the entities that are enabled for automatically 
     
 ## Enable an entity for access teams  
 
-These settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **User's + permissions** > **Teams**.
+These settings can be found in the Microsoft Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **User's + permissions** > **Teams**.
 
 Make sure you have the System Administrator or System Customizer security role or equivalent permissions.
 

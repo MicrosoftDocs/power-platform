@@ -27,7 +27,7 @@ You can delete a business unit to completely remove it.
 > -   The records owned by the business unit (for example: Teams, Facilities/Equipment, and Resource Groups) are deleted at the same time you delete the business unit.  
 > -   You can't delete a business unit until you reassign all the business unit records to another business unit.  
 
-1. In the Power Platform admin center, select an environment. 
+1. In the Microsoft Power Platform admin center, select an environment. 
 
 2. Select **Settings** > **Users + permissions** > **Business units**.  
   
