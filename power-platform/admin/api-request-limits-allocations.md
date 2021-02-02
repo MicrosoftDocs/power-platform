@@ -5,7 +5,7 @@ author: dileepsinghmicrosoft
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/26/2021
+ms.date: 02/02/2021
 ms.author: dileeps
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -70,7 +70,7 @@ Power Apps and Power Automate capacity add-on allows customers to increase the l
 Each capacity add-on raises the request limits by an additional 10,000 per 24 hours. Multiple capacity add-ons can also be assigned to the same user.
 
 > [!NOTE] 
-> Currently, capacity add-ons cannot be assigned to users (including application, administrative, and non-interactive users), because of the transition period. Assignment will be supported once the transition period ends, during 2020 Release Wave 2.
+> Currently, capacity add-ons cannot be assigned to users (including application, administrative, and non-interactive users), because of the transition period (see [FAQ](#will-there-be-a-transition-period-for-existing-customers)) below. Assignment will be supported once the transition period ends.
 
 ## Requests limits not based on licensed users or flows
 
@@ -116,7 +116,7 @@ Review the following resources for information about *current* service protectio
 
 Today, the Power Platform admin center contains [reports on Dataverse API requests](https://docs.microsoft.com/power-platform/admin/analytics-common-data-service). This reporting today accounts for interactive and non-interactive traffic. This helps you to quickly view adoption and user metrics for your organization. If your apps or flows primarily use the Dataverse, then these reports can serve as good approximations of the total usage of your solutions.
 
-Additionally, for Power Automate usage specifically, you can see the action usage for a given flow by selecting the **Analytics** action from the flow properties page, and this works across all types of actions. However, if your apps or flows do not use the Dataverse, then at this time there are no reports available in the Power Platform admin center, although this will be available during 2020 Release Wave 2. Administrators will also be notified via email about overages as a part of 2020 Release Wave 2.
+Additionally, for Power Automate usage specifically, you can see the action usage for a given flow by selecting the **Analytics** action from the flow properties page, and this works across all types of actions. However, if your apps or flows do not use the Dataverse, then there are no reports available in the Power Platform admin center at this time.
 
 ### What happens if a user or integration exceeds request capacity?
 
@@ -132,13 +132,13 @@ In addition, there are other applicable limits for [Dataverse](https://docs.micr
 
 ### Will there be a transition period for existing customers?
 
-Yes, all customers are in a transition period. That means that enforcement of the limits is not as strict compared to once the transition period ends, which will be after the full reporting is available in the Power Platform admin center (2020 release wave 2). This does not mean there are *no* daily limits - it simply means that the currently enforced limits are more generous than the stated limits, in order to prevent potential unintended impact on your apps or flows.
+Yes, all customers are in a transition period. That means that enforcement of the limits is not as strict compared to once the transition period ends, which will be after the full reporting is available in the Power Platform admin center. This does not mean there are *no* daily limits - it simply means that the currently enforced limits are more generous than the stated limits, in order to prevent potential unintended impact on your apps or flows.
 
 Additionally, as enforcement is currently less strict, there is no facility to yet assign the **Power Apps and Power Automate capacity add-on** to a user. However, it is recommended that you purchase these add-ons now to remain within your license terms and to be prepared for when the transition period ends. 
 
 ### Will my integrations stop working if application users exceed base request capacity?
 
-We do not currently stop integrations for occasional and reasonable overages. Administrators can see usage in the Power Platform admin center (for the Dataverse, with general reporting coming during 2020 release wave 2). However, at this time, if a user or flow exceeds the limits consistently for an extended period of time, that user may be disabled or flow turned off.
+We do not currently stop integrations for occasional and reasonable overages. For flows that use Dataverse, administrators can see usage in the Analytics section of the Power Platform admin center. However, at this time, if a user or flow exceeds the limits consistently for an extended period of time, that user may be disabled or flow turned off.
 
 Once the transition period ends, certain operations will additionally be blocked when a tenant exceeds their Microsoft Power Platform request limits. These blocked operations will primarily be in administration and customization areas, but not limited to these operations (and may expand into other areas as well, depending on the overage scenarios). 
 
