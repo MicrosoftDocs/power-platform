@@ -32,13 +32,13 @@ Many customers wonder: How can Power Apps and Power Automate be made available t
 |Monitor     | <ul><li>How are we capturing compliance / auditing data?</li> <br /><li>How can I measure adoption and usage within my organization?</li></ul> |
 
 ## Architecture
-It's best to familiarize oneself with Environments as the first step to building the right governance story for your company. Environments are the containers for all resources utilized by a Power Apps, Power Automate and Dataverse. [Environments Overview](environments-overview.md) is a good primer which should be followed by [What is Dataverse?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro), [Types of Power Apps](https://docs.microsoft.com/powerapps/maker/), [Microsoft Power Automate](https://docs.microsoft.com/power-automate/getting-started), [Connectors](https://docs.microsoft.com/powerapps/maker/canvas-apps/connections-list),  and [On-premises Gateways](wp-onpremises-gateway.md). 
+It's best to familiarize oneself with Environments as the first step to building the right governance story for your company. Environments are the containers for all resources used by a Power Apps, Power Automate and Dataverse. [Environments Overview](environments-overview.md) is a good primer which should be followed by [What is Dataverse?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro), [Types of Power Apps](https://docs.microsoft.com/powerapps/maker/), [Microsoft Power Automate](https://docs.microsoft.com/power-automate/getting-started), [Connectors](https://docs.microsoft.com/powerapps/maker/canvas-apps/connections-list),  and [On-premises Gateways](wp-onpremises-gateway.md). 
 
 ## Security 
 This section outlines mechanisms that exist to control who can access Power Apps in an environment and access data: licenses, environments, environment roles, Azure Active Directory, Data Loss Prevention policies and admin connectors that can be used with Power Automate. 
 
 ### Licensing 
-Access to Power Apps and Power Automate starts with having a license, the type of license a user has determines the assets and data a user can access. The following table outlines differences in resources available to a user based on their plan type, from a high-level. Granular licensing details can be found in the [Licensing overview](pricing-billing-skus.md).
+Access to Power Apps and Power Automate starts with having a license. The type of license a user has determines the assets and data a user can access. The following table outlines differences in resources available to a user based on their plan type, from a high level. Granular licensing details can be found in the [Licensing overview](pricing-billing-skus.md).
 
 
 |Plan  |Description  |
@@ -46,18 +46,18 @@ Access to Power Apps and Power Automate starts with having a license, the type o
 |Microsoft 365 Included     | This allows users to extend SharePoint and other Office assets they already have. |
 |Dynamics 365 Included     | This allows users to customize and extend customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), they already have.  |
 |Power Apps plan  | This allows: <ul><li>making enterprise connectors and Dataverse accessible for use.</li><li>users to use robust business logic across application types and administration capabilities.</li></ul>  |
-|Power Apps Community | This allows a user to use Power Apps, Power Automate, Dataverse and customer connectors in a single for individual use. There is no ability to share apps. |
-|Power Automate Free | This allows users to create unlimited flows and perform 750 runs. |
+|Power Apps Community | This allows a user to use Power Apps, Power Automate, Dataverse and customer connectors in a single for individual use. There's no ability to share apps. |
+|Power Automate Free | This allows users to create unlimited flows and do 750 runs. |
 |Power Automate plan| See [Microsoft Power Apps and Microsoft Power Automate Licensing Guide](https://go.microsoft.com/fwlink/p/?linkid=2085130).|
 
 
 ### Environments
-After users have licenses, environments exist as containers for all resources utilized by Power Apps, Power Automate and Dataverse. Environments can be used to target different audiences and/or for different purposes such as developing, testing and production. More information can be found in the [Environments Overview](environments-overview.md).
+After users have licenses, environments exist as containers for all resources used by Power Apps, Power Automate and Dataverse. Environments can be used to target different audiences and/or for different purposes such as developing, testing and production. More information can be found in the [Environments Overview](environments-overview.md).
 
 ### Secure your data and network
 - Power Apps and Power Automate *do not* provide users with access to any data assets that they don't already have access to. Users should only have access to data that they really require access to.
 - Network Access control policies can also apply to Power Apps and Power Automate. For environment, one can block access to a site from within a network by blocking the sign-on page to prevent connections to that site from being created in Power Apps and Power Automate. 
-- In an environment, access is controlled at three levels: [Environment roles](database-security.md), Resource permissions for Power Apps, Power Automate, etc… and [Dataverse security roles](wp-security-cds.md) (if a Dataverse data base is provisioned). 
+- In an environment, access is controlled at three levels: [Environment roles](database-security.md), Resource permissions for Power Apps, Power Automate, etc. and [Dataverse security roles](wp-security-cds.md) (if a Dataverse data base is provisioned). 
 - When Dataverse is created in an environment the Dataverse roles will take over for controlling security in the environment (and all environment admins and makers are migrated).
 
 The following principals are supported for each role type.
@@ -80,7 +80,7 @@ The following principals are supported for each role type.
 
 #### FAQ - What permissions exist at an Azure AD tenant level? 
 
-Today, Microsoft Power Platform admins can perform the following: 
+Today, Microsoft Power Platform admins can do the following: 
 
 1. Download the Power Apps & Power Automate license report
 1. Create DLP policy scoped only to 'All Environments' or scoped to include/exclude specific environments
@@ -102,7 +102,7 @@ For customers with Azure AD Premium, conditional access policies can be defined 
 
 #### Creating a Conditional Access Policy
 
-1. Sign-in to [https://portal.azure.com](https://portal.azure.com) 
+1. Sign in to [https://portal.azure.com](https://portal.azure.com) 
 2. Select Azure Active Directory
 3. Select Conditional Access.
 4. Select + New Policy
@@ -116,11 +116,11 @@ For customers with Azure AD Premium, conditional access policies can be defined 
 
 #### FAQ
 
-Q: Can I control, on the tenant level, which connector is at all available, e.g. No to Dropbox or Twitter but Yes to SharePoint)?
+Q: Can I control, on the tenant level, which connector is at all available, for example No to Dropbox or Twitter but Yes to SharePoint)?
 
-A: This is not possible. Customers can subscribe to Audit events to perform corrective action if there are flows that have been built that create concerns for customers. In fact, a very large Power Apps customer has leveraged this approach to apply another level of governance.
+A: This is not possible. Customers can subscribe to Audit events to do corrective action if there are flows that have been built that create concerns for customers. In fact, a very large Power Apps customer has leveraged this approach to apply another level of governance.
  
-Q: What about Sharing connectors between users? E.g. the connector for Teams is a general one that can be shared (?)
+Q: What about Sharing connectors between users? For example, the connector for Teams is a general one that can be shared?
 
 A: Connectors are available to all users. With the exception of premium or custom connectors which need either an additional license (premium connectors) or have to be explicitly shared (custom connectors)
 
@@ -190,7 +190,7 @@ You can also use the following PowerShell command to export assigned user licens
 Get-AdminPowerAppLicenses -OutputFilePath '<licenses.csv>'
 ```
 
-Exports all the assigned user licenses (Power Apps and Power Automate) in your tenant into a tabular view .csv file. The exported file contains both self-service sign up internal trial plans as well as plans that are sourced from Azure Active Directory. The internal trial plans are not visible to admins in the Microsoft 365 admin center.
+Exports all the assigned user licenses (Power Apps and Power Automate) in your tenant into a tabular view .csv file. The exported file contains both self-service sign-up internal trial plans as well as plans that are sourced from Azure Active Directory. The internal trial plans are not visible to admins in the Microsoft 365 admin center.
 
 The export can take a while for tenants with a large number of Power Platform users.
 
