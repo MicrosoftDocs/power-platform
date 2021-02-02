@@ -105,7 +105,7 @@ GET /api/botmanagement/v1/directline/directlinetoken
 Example:
 
 ```
-GET https://web.powerva.microsoft.com/api/botmanagement/v1/directline/directlinetoken?botId=<ENTER-YOUR-BOTID>&tenantId=<ENTER-YOUR-TENANTID>
+GET https://powerva.microsoft.com/api/botmanagement/v1/directline/directlinetoken?botId=<ENTER-YOUR-BOTID>&tenantId=<ENTER-YOUR-TENANTID>
 ```
 If the request is successful, a *Direct Line* token will be returned for the requested bot.
 

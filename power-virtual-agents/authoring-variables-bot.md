@@ -161,7 +161,7 @@ In the examples described here, a simple declaration is made for the variables. 
 
     ```html
     const BOT_ID = "12345-5678";
-    const theURL = "https://web.powerva.microsoft.com/api/botmanagement/v1/directline/directlinetoken?botId=" + BOT_ID;
+    const theURL = "https://powerva.microsoft.com/api/botmanagement/v1/directline/directlinetoken?botId=" + BOT_ID;
 
     fetch(theURL)
         .then(response => response.json())

@@ -124,7 +124,7 @@ You'll need to deploy a custom canvas that includes arguments that cause the [de
                 // Add your BOT ID below
                 var BOT_ID = "<ENTER YOUR BOT ID>"; 
 
-                var theURL = "https://web.powerva.microsoft.com/api/botmanagement/v1/directline/directlinetoken?botId=" + BOT_ID;
+                var theURL = "https://powerva.microsoft.com/api/botmanagement/v1/directline/directlinetoken?botId=" + BOT_ID;
 
                 const store = window.WebChat.createStore(
                    {},

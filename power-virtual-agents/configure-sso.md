@@ -266,7 +266,7 @@ Update the custom canvas page where the bot is located to intercept the login ca
 
             // Add your BOT ID below 
             var BOT_ID = "<BOT ID>";
-            var theURL = "https://web.powerva.microsoft.com/api/botmanagement/v1/directline/directlinetoken?botId=" + BOT_ID;
+            var theURL = "https://powerva.microsoft.com/api/botmanagement/v1/directline/directlinetoken?botId=" + BOT_ID;
 
             const {
                 token

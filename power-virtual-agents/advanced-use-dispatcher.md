@@ -168,7 +168,7 @@ The following steps require you to add code that registers your new dispatch end
       "DynamicsBotId": "<Bot Id>",
       "DynamicsBotTenantId": "<Tenant Id>",
       "DynamicsBotName": "<Bot Name>",
-      "DynamicsBotTokenEndpoint": "https://web.powerva.microsoft.com/api/botmanagement/v1/directline/directlinetoken",
+      "DynamicsBotTokenEndpoint": "https://powerva.microsoft.com/api/botmanagement/v1/directline/directlinetoken",
     }
     ```
 
