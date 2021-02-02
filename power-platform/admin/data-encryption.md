@@ -5,8 +5,8 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/04/2020
-author: jayasreekumar
-ms.author: jkumar
+author: Mattp123
+ms.author: matp
 ms.reviewer: matp
 ms.custom: "admin-security"
 search.audienceType: 

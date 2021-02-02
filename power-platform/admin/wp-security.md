@@ -5,8 +5,8 @@ ms.date: 06/30/2020
 ms.service: power-platform
 ms.topic: "get-started-article"
 ms.assetid: 83200632-a36b-4401-ba41-952e5b43f939
-author: jayasreekumar
-ms.author: jkumar
+author: jimholtz
+ms.author: jimholtz
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
 search.audienceType: 

@@ -1,8 +1,8 @@
 ---
 title: "Troubleshooting: Common user access issues  | MicrosoftDocs"
 description: "Troubleshooting: Common user access issues"
-author: jayasreekumar
-ms.author: jkumar
+author: jimholtz
+ms.author: jimholtz
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
 ms.service: power-platform
