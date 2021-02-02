@@ -5,7 +5,7 @@ author: dileepsinghmicrosoft
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/01/2020
+ms.date: 02/01/2021
 ms.author: dileeps
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -23,7 +23,11 @@ search.app:
 
 The topics in this section provide detailed information about Power Apps and Microsoft Power Automate licensing.
 
-For information about Power BI licensing, see [Power BI Pricing](https://powerbi.microsoft.com/pricing/).
+For information about:
+
+- Power BI licensing, see [Power BI Pricing](https://powerbi.microsoft.com/pricing/).
+
+- Power Virtual Agents licensing, see [Licensing for Power Virtual Agents](/power-virtual-agents/requirements-licensing-subscriptions.md) and for information about pricing, see [Power Virtual Agents pricing plans](https://powervirtualagents.microsoft.com/pricing/).
 
 ## Power Apps and Power Automate Standalone plans
 
