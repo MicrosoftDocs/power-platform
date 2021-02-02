@@ -17,7 +17,7 @@ search.app:
   - Flow
 ---
 
-# Licensing overview for Microsoft Power Platform
+# Licensing overview for Microsoft Power Platform 
 
 The topics in this section provide detailed information about Power Apps and Power Automate licensing.
 
