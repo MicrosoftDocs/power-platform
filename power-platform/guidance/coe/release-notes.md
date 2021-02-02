@@ -30,7 +30,7 @@ Select each version below to see release notes and updates for each component. Y
 | Nurture Components |   [1.23](release-notes/nurture-1.23.md)  |
 | Audit Log |   [1.0](release-notes/auditlog-1.0.md) |
 | Theming Components |   [1.1](release-notes/theming-1.1.md) |
-| ALM Helper for Makers |   [1.1](release-notes/almhelper-1.1.md) |
+| ALM Accelerator for Makers |   [1.1](release-notes/almhelper-1.1.md) |
 
 ### All Core (Admin) Components versions
 
