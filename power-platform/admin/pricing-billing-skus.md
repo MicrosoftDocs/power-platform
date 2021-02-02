@@ -17,7 +17,7 @@ search.app:
   - Flow
 ---
 
-# Licensing overview for Microsoft Power Platform
+# Licensing overview for Microsoft Power Platform 
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
