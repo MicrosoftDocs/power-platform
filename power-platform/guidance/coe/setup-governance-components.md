@@ -21,6 +21,44 @@ search.app:
 
 Multiple governance components are provided in the Center of Excellence (CoE) Starter Kit; each will require some configuration to install. The installation instructions in this article have been segmented based on the set of components that should be grouped and installed together, and dependencies on other segments are outlined in each section.
 
+## Initialize flow approval tables in your environment
+
+The archive approval flows use the built-in Approval actions of Power Automate.
+
+- *Admin \| Archive and Clean Up v2 (Start Approval for Apps)*
+- *Admin \| Archive and Clean Up v2 (Start Approval for Flows)*
+- *Admin \| Archive and Clean Up v2 (Check Approval)*
+- *Admin \| Archive and Clean Up v2 (Clean Up and Delete)*
+
+ In the background, the built-in Approval actions use Dataverse. If you've installed the solution in a new environment, the Approval tables must be initialized. The easiest way to do this is to create a "dummy" approval flow.
+
+1. Go to [flow.microsoft.com](https://flow.microsoft.com).
+
+1. Select **+ New** > **Instant (From Blank)**.
+
+1. Pick **manually trigger a flow** as the trigger, and enter *Admin \| Dummy Approval Flow* as the name.
+   
+   ![Build an instant flow](media/coe14.png "Build an instant flow")
+
+1. Select **+ New Step** to add an approval action to the flow, and then search for and select **Create an approval**.
+
+1. Select a dummy title, and enter your email address under **Assigned To**.
+
+   ![Approval flow](media/coe16.png "Approval flow")
+
+1. In the upper-right corner, select **Test**, and then select **I'll perform the trigger action**.
+
+1. Select **Save & Test**  
+
+1. Select **Run Flow**  
+
+    > [!NOTE]
+    > This flow can take up to ten minutes to run initially. After it runs, you can delete the flow because it won't be needed anymore.
+
+1. Select **Solutions** on the left side panel, and you should now see two new Flow Approvals solutions. Note that the presence of these solutions was the point of this step, and the way you know it succeeded.
+
+   ![Flow Approval solutions](media/coe17.png "Flow Approval solutions")
+
 ## Import the solution
 
 The Core Components solution is required for the Audit and Report Components solution, or any other component in the starter kit, to work.
@@ -58,52 +96,14 @@ All flows in this solution depend on all environment variables' being configured
    | ProductionEnvironment | Determines if the environment is Production or Dev/Test. True (the default) will mean that the approvals are sent to app/flow owners. False will send those approvals to the admin email. |
    | Approval Admin | Optional variable for users that have a distribution list for the Admin Email env var. Since you cannot use a distribution list for approvals, this variable will allow you to specify a secondary email that is a person for Approvals |
 
-## Initialize flow approval tables in your environment
-
-The archive approval flows use the built-in Approval actions of Power Automate.
-
-- *Admin \| Archive and Clean Up v2 (Start Approval for Apps)*
-- *Admin \| Archive and Clean Up v2 (Start Approval for Flows)*
-- *Admin \| App Archive and Clean Up – Check Approval*
-- *Admin \| Flow Archive and Clean Up – Check Approval*)
-
- In the background, the built-in Approval actions use Dataverse. If you've installed the solution in a new environment, the Approval tables must be initialized. The easiest way to do this is to create a "dummy" approval flow.
-
-1. Go to [flow.microsoft.com](https://flow.microsoft.com).
-
-1. Select **+ New** > **Instant (From Blank)**.
-
-1. Pick **manually trigger a flow** as the trigger, and enter *Admin \| Dummy Approval Flow* as the name.
-   
-   ![Build an instant flow](media/coe14.png "Build an instant flow")
-
-1. Select **+ New Step** to add an approval action to the flow, and then search for and select **Create an approval**.
-
-1. Select a dummy title, and enter your email address under **Assigned To**.
-
-   ![Approval flow](media/coe16.png "Approval flow")
-
-1. In the upper-right corner, select **Test**, and then select **I'll perform the trigger action**.
-
-1. Select **Save & Test**  
-
-1. Select **Run Flow**  
-
-    > [!NOTE]
-    > This flow can take up to ten minutes to run initially. After it runs, you can delete the flow because it won't be needed anymore.
-
-1. Select **Solutions** on the left side panel, and you should now see two new Flow Approvals solutions. Note that the presence of these solutions was the point of this step, and the way you know it succeeded.
-
-   ![Flow Approval solutions](media/coe17.png "Flow Approval solutions")
-
 ## Activate the flows
 
 This Governance Components solution contains flows that you will need to manually turn on, once you are ready to use them.
 
 - Admin \| Archive and Clean Up v2 (Start Approval for Apps)
 - Admin \| Archive and Clean Up v2 (Start Approval for Flows)
-- Admin \| Archive and Clean Up v2 (Clean Up and Delete)
 - Admin \| Archive and Clean Up v2 (Check Approval)
+- Admin \| Archive and Clean Up v2 (Clean Up and Delete)
 - Admin \| Compliance detail request
 - Microsoft Teams Admin \| Ask for Business Justification when Microsoft Teams environment is created
 - Microsoft Teams Admin \| Weekly Clean Up of Microsoft Teams environments
