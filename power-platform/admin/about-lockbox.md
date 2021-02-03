@@ -1,12 +1,13 @@
 ---
 title: "Lockbox for Power Platform | MicrosoftDocs"
 description: About lockbox for Power Platform
-author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/03/2021
-ms.author: jimholtz
+author: jimholtz
+ms.author: miferlan
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
