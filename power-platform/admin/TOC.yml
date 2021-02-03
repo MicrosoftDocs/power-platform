@@ -394,6 +394,18 @@
           href: analytics-flow.md
         - name: Analytics for UI flows
           href: analytics-ui-flow.md
+      - name: Analyze telemetry with Application Insights
+        items:
+        - name: Model-driven apps and Microsoft Dataverse telemetry
+          href: analyze-telemetry.md
+        - name: Overview of integration with Application Insights
+          href: overview-integration-application-insights.md
+        - name: Telemetry events for model-driven apps 
+          href: telemetry-events-model-driven-apps.md
+        - name: Telemetry events for Dataverse
+          href: telemetry-events-dataverse.md   
+        - name: Set up export to Application Insights
+          href: set-up-export-application-insights.md
     - name: Storage
       items: 
       - name: What's new for storage
@@ -683,6 +695,8 @@
           href: best-practices-server-side-synchronization.md
         - name: Create forward mailboxes or edit mailboxes
           href: create-forward-mailboxes-edit-mailboxes.md
+        - name: Create queue items from synchronized email messages
+          href: create-queue-items-from-synchronized-email-messages.md
       - name: Configure Outlook or Exchange folder-level tracking
         href: configure-outlook-exchange-folder-level-tracking.md
       - name: Use Outlook category to track appointments and emails
