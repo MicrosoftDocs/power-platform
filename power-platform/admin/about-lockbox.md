@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/23/2020
+ms.date: 02/03/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -21,14 +21,14 @@ Lockbox for Microsoft Power Platform provides an interface to review&mdash;and a
 
 ## Summary
 
-You define which [Common Data Service databases](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro) need to be protected with lockbox by creating a lockbox policy. Global administrators can configure the lockbox policy. More information: [Configure the lockbox policy](#configure-the-lockbox-policy)
+You define which [Dataverse databases](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro) need to be protected with lockbox by creating a lockbox policy. Global administrators can configure the lockbox policy. More information: [Configure the lockbox policy](#configure-the-lockbox-policy)
 
 Whenever Microsoft attempts to access data that's stored in a database that's protected by lockbox, a lockbox request is sent to the global administrators. More information: [Review a lockbox request](#review-a-lockbox-request)
 
 After access is granted to Microsoft, any action taking place in the database during the elevated access period is recorded and made available to your organization as SQL audit logs. You can export these logs to your own data lake. More information: [Audit lockbox requests](#audit-lockbox-requests)
 
 > [!NOTE]
-> Lockbox only protects Common Data Service databases. Any data you have that's located in other data stores is currently out of scope.
+> Lockbox only protects Dataverse databases. Any data you have that's located in other data stores is currently out of scope.
 
 ## Workflow
 
@@ -70,7 +70,7 @@ Global administrators can create or update the lockbox policy in the Power Platf
 
    |Setting  |Description  |
    |---------|---------|
-   |Environments with a database     | Select this to protect your organization's environments that are associated with a Common Data Service database.      |
+   |Environments with a database     | Select this to protect your organization's environments that are associated with a Dataverse database.      |
 
    > [!div class="mx-imgBorder"] 
    > ![Turn lockbox on or off](media/lockbox-turn-on.png "Turn lockbox on or off")
