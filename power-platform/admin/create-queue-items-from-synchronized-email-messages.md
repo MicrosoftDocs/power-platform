@@ -24,7 +24,7 @@ There are several OrgDbOrgSetting options available to control how queue items a
 - **CreateQueueItemsForAcceptingQueueRecipients**
   - When enabled, the system will create a queue item for each resolved queue recipient during incoming email processing. If **AutoRouteToOwnerQueue** is enabled for the email entity, the system additionally creates a queue item in the email owner’s default queue.  The default value is true.
 - **SSSCreateAdditionalQueueItemsForAlreadyTrackedEmail**
-  - When enabled, server-side synchronization will create a queue item for the synchronizing queue if an email has already been delivered to Dynamics and the queue item does not exist in the synchronizing queue. The default value is false.
+  - When enabled, server-side synchronization will create a queue item for the synchronizing queue if an email has already been created by server-side synchronization and the queue item does not exist in the synchronizing queue. The default value is false.
 
 These settings can be mixed and matched to achieve the desired flexibility in how queue items should be automatically created by the system. For example, the system can create multiple queue items for each queue recipient on an as-needed basis using the following settings combination and flow described below:
 
