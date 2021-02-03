@@ -70,7 +70,7 @@ A combination of these three permissions can be configured to determine the user
 |Sales Managers|Read-only. Can only view mobile phone numbers for contacts.|  
 |Salespersons and all other users|None. Cannot create, update, or view mobile phone numbers for contacts.|  
   
- To restrict this field, you would perform the following tasks.  
+ To restrict this field, you would do the following tasks.  
   
  Secure the field.  
   
@@ -80,7 +80,7 @@ A combination of these three permissions can be configured to determine the user
   
 3. Select **Entities** > **Contact** > **Fields**.  
   
-4. Select **mobilephone**, select **Edit**.  
+4. Select **mobile phone**, select **Edit**.  
   
 5. Next to **Field Security**, select **Enable**, select **Save and Close**.  
   
@@ -101,7 +101,7 @@ Configure the security profiles.
       > [!TIP]
       >  Instead of adding each user, create one or more teams that include all users that you want to grant read access.  
   
-   5. Select **Field Permissions**, select **mobilephone**, select **Edit**, select **Yes** next to **Allow Read**, and then select **OK**.  
+   5. Select **Field Permissions**, select **mobile phone**, select **Edit**, select **Yes** next to **Allow Read**, and then select **OK**.  
   
 2. Create the field security profiles for vice presidents.  
   
@@ -109,11 +109,11 @@ Configure the security profiles.
   
    2.  Select **Users**, select **Add**, select the users that you want to grant full access to the mobile phone number on the contact form, and then select **Add**.  
   
-   3.  Select **Field Permissions**, select **mobilephone**, select **Edit**, select **Yes** next to **Allow Read**, **Allow Update**, and **Allow Create**, and then select **OK**.  
+   3.  Select **Field Permissions**, select **mobile phone**, select **Edit**, select **Yes** next to **Allow Read**, **Allow Update**, and **Allow Create**, and then select **OK**.  
   
 3. Select **Save and Close**.  
   
-Any users not defined in the previously created field security profiles will not have access to the mobile phone field on contact forms or views. The field value displays ![Lock icon](../admin/media/admin-field-level-security-lock.png "Lock icon") ********, indicating that the field is secured.  
+Any users not defined in the previously created field security profiles won't have access to the mobile phone field on contact forms or views. The field value displays ![Lock icon](../admin/media/admin-field-level-security-lock.png "Lock icon") ********, indicating that the field is secured.  
   
 <a name="BKMK_FLS_fields"></a>   
 ## Which fields can be secured?  
