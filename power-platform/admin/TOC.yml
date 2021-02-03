@@ -695,6 +695,8 @@
           href: best-practices-server-side-synchronization.md
         - name: Create forward mailboxes or edit mailboxes
           href: create-forward-mailboxes-edit-mailboxes.md
+        - name: Create queue items from synchronized email messages
+          item: create-queue-items-from-synchronized-email-messages.md
       - name: Configure Outlook or Exchange folder-level tracking
         href: configure-outlook-exchange-folder-level-tracking.md
       - name: Use Outlook category to track appointments and emails
