@@ -275,6 +275,7 @@ Admins, as described in the Permission model table, can change the settings so m
 ## Enable server-side synchronization functionality for Exchange Online in China
 
 In order to connect Dynamics 365 with your Exchange Online tenant in China and use server-side synchronization functionality, follow these steps:
+
 1. If your org was provisioned before October 17th, 2020, contact  21Vianet support to allow your org to connect to Exchange online. If your org was provisioned after October 17th, 2020, this step is not required.
 2. Run the below PowerShell script to point your Exchange Online email server profile to the required EWS endpoint.
 3. Configure the mailbox, and then test and enable the mailbox.
