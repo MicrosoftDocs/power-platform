@@ -285,7 +285,7 @@ PowerShell script to change EWS endpoint:
 ```powershell
 #Specify email server profile Id and orgUrl
 param ( 
-    [string]$emailServerProfileId = "<profile id", 
+    [string]$emailServerProfileId = "<profile id>", 
     [string]$orgUrl = "<org url>", 
     [string]$defaultserverlocation = "https://partner.outlook.cn/EWS/Exchange.asmx" 
 ) 
