@@ -4,7 +4,7 @@ description: Connect to Exchange Online
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/04/2020
+ms.date: 02/04/2021
 author: revachauhan
 ms.author: rechauha
 ms.reviewer: jimholtz
@@ -272,7 +272,7 @@ Admins, as described in the Permission model table, can change the settings so m
 > [!TIP]
 >  If you're unable to synchronize contacts, appointments, and tasks for a mailbox, you may want to select the **Sync items with Exchange from this org only, even if Exchange was set to sync with a different org** check box. [Read more about this check box](when-would-want-use-check-box.md).  
   
-## Enable server-side synchronization functionality enablement for Exchange Online in China
+## Enable server-side synchronization functionality for Exchange Online in China
 
 In order to connect Dynamics 365 with your Exchange Online tenant in China and use server-side synchronization functionality, follow these steps:
 1. If your org was provisioned before October 17th, 2020, contact  21Vianet support to allow your org to connect to Exchange online. If your org was provisioned after October 17th, 2020, this step is not required.
