@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/06/2021
+ms.date: 02/04/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -75,6 +75,10 @@ Due to certain technological dependencies, the following features listed will no
   - [Project Service Automation](https://dynamics.microsoft.com/project-service-automation/overview/)
   - [Marketing (for >10 users)](https://docs.microsoft.com/dynamics365/customer-engagement/marketing/help-hub)
   - [Microsoft Social Engagement](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/integrate-social-engagement-dynamics-365)
+
+## Enable server-side synchronization functionality for Exchange Online in China
+
+To connect Dynamics 365 with your Exchange Online tenant in China and use server-side synchronization functionality, see [Enable server-side synchronization functionality for Exchange Online in China](connect-exchange-online.md#enable-server-side-synchronization-functionality-for-exchange-online-in-china).
 
 
 ## Additional resources
