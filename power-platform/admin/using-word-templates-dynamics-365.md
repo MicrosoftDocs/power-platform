@@ -1,12 +1,13 @@
 ---
 title: "Use Word templates to create standardized documents  | MicrosoftDocs"
 description: Use Word templates to create standardized documents
-author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/11/2020
-ms.author: jimholtz
+ms.date: 02/04/2021
+author: chrisgarty
+ms.author: cgarty
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
@@ -63,7 +64,10 @@ search.app:
 > 1.  Click Advanced Find (![Screen shot of Advanced Find button](../admin/media/advanced-find-button.PNG "Screen shot of Advanced Find button")).  
 > 2.  For **Look for**, select **Personal Document Templates**.  
 > 3.  Click **Results** (!).  
-> 4.  Select the personal document template to delete and then click Delete (![Delete button](../admin/media/nb-ua-r1-trashbin.png "Delete button")).  
+> 4.  Select the personal document template to delete and then click **Delete** (![Delete button](../admin/media/nb-ua-r1-trashbin.png "Delete button")).  
+>
+> To update templates, delete the template and then upload an updated version of that template.
+
 
  After clicking **Create Word Template**, select an entity to filter with, and then click **Word Template** > **Select Entity**.  
 
