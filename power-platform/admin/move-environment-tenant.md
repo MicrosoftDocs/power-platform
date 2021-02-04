@@ -2,19 +2,17 @@
 title: "Tenant to tenant migration  | MicrosoftDocs"
 description: Information on tenant to tenant migration 
 ms.custom: ""
-ms.date: 01/19/2020
-ms.reviewer: ""
+ms.date: 02/04/2021
 ms.service: power-platform
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 applies_to: 
   - "Dynamics 365 (online)"
-author: "jimholtz"
+author: jimholtz
+ms.author: jimholtz
+ms.reviewer: ""
 ms.assetid: 
-caps.latest.revision: 63
-ms.author: "jimholtz"
-manager: kvivek
 search.audienceType: 
   - admin
 search.app:
@@ -54,6 +52,14 @@ If you do not have a subscription and/or trial in the destination tenant, then y
 You will need to create a temporary environment or environments in the destination tenant, depending on how many source environments you are migrating.  Source environment type and destination environment type must match (production vs non-production (sandbox)). The users to be migrated from one tenant to another need to be created on the target tenant as well.
 
 The destination tenant needs an equal or higher number of active user licenses, environment licenses for the environments being migrated, and equal or greater storage as the source tenant.
+
+### Additional considerations
+
+After moving environments to another tenant:
+
+- The environment ID in the target tenant cannot be set to the same environment ID as in the source tenant. This is not supported. 
+- The org URL, org ID, and the name do not change. 
+- Security group mapping is handled as part of the manual tenant to tenant migration process. At the very least, a replacement (or removal) will be needed because the security group won’t exist with the same ID in the new Azure AD tenant. 
 
 ## How the move works
 
