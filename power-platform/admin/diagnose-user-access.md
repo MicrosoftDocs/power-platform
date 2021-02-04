@@ -4,7 +4,7 @@ description: About diagnose user access in an environment
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/08/2020
+ms.date: 02/04/2021
 author: jimholtz
 ms.author: jimholtz
 ms.reviewer: jimholtz
