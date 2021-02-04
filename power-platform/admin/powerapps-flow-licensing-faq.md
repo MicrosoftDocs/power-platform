@@ -1,12 +1,12 @@
 ---
 title: Power Apps and Power Automate licensing FAQs| Microsoft Docs
 description: "FAQs for licensing Power Apps, Power Automate, Dataverse, Dataverse for Teams, and AI Builder"
-author: dileepsinghmicrosoft
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/12/2021
-ms.author: dileeps
+ms.date: 02/04/2021
+author: chrisgarty
+ms.author: cgarty
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
@@ -199,6 +199,10 @@ Power Automate use rights with Dynamics 365 licenses: Dynamics 365 licenses will
 Yes, you can use the Dynamics 365 Finance and Operations connector to build canvas apps using this data.
 
 ## Power Automate
+
+### Can I get a brief explanation of how Power Automate license plans work?
+
+Each user and flow has a license plan. If the flow is set to the per-flow plan then that is the license plan it will get and it has the highest performance profile. If the flow is set to the per-user plan, then it will get the plan of its primary owner. If a user has multiple plans, such as a Microsoft 365 plan and a Dynamics 365 plan, the flow will use the higher-performance plan. The standard user license plan for Power Automate is the Power Automate per-user plan, but there are a range of other license plans a user could be running with. Users running the free or Office 365 license plans will only be able to access standard connectors, but most of the other license plans provide access to premium connectors. For details about license plans that include Power Automate capabilities, see the Power Platform [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130). For details about the limits and performance profile of license plans, see the [Power Automate Limits](https://docs.microsoft.com/power-automate/limits-and-config).
 
 ### When would I use the Power Automate per user plan versus the Power Automate per flow plan?
 
