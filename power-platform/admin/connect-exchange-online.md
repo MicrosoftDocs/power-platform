@@ -4,7 +4,7 @@ description: Connect to Exchange Online
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/04/2020
+ms.date: 02/04/2021
 author: revachauhan
 ms.author: rechauha
 ms.reviewer: jimholtz
@@ -29,8 +29,6 @@ With both customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Se
 > 
 > [!IMPORTANT]
 > [!INCLUDE[cc_feature_requires_office_365](../includes/cc-feature-requires-office-365.md)]  
-  
-<a name="BKMK_GetExchangeReady"></a>   
 
 ## Get Exchange ready  
  To use [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] with customer engagement apps, you must have an [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] subscription that comes as part of an [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] subscription or that can be subscribed to separately. For information on [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)], see:  
@@ -43,8 +41,6 @@ With both customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Se
   
 > [!TIP]
 >  To make sure you've got a good connection to [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)], run the [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/). For information on what tests to run, see [Test mail flow with the Remote Connectivity Analyzer](https://technet.microsoft.com/library/dn305950\(v=exchg.150\).aspx).  
-  
-<a name="BKMK_VerifyProfile"></a>   
 
 ## Verify you have the profile: Microsoft Exchange Online  
  If you have an [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] subscription in the same tenant as your subscription, customer engagement apps create a default profile for the email connection: **Microsoft Exchange Online**. To verify this profile:  
@@ -56,8 +52,6 @@ With both customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Se
 3. Select **Active Email Server Profiles** and check that the **Microsoft Exchange Online** profile is in the list. If the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] profile is missing, verify you have an [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] subscription and that it exists in the same tenant as your subscription.  
   
 4. If there are multiple profiles, select the **Microsoft Exchange Online** profile and set it as default.  
-  
-<a name="BKMK_ConfigureDefault"></a>   
 
 ## Configure default email processing and synchronization  
  Set server-side synchronization to be the default configuration method for newly created users.  
@@ -79,8 +73,6 @@ With both customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Se
 4. Select **Save**.  
   
 All new users will have these settings applied to their mailbox.  
-  
-<a name="BKMK_ConfigureMailboxes"></a>   
 
 ## Configure mailboxes  
  New users will have their mailboxes configured automatically with the settings you made in the prior section. For existing users added prior to the above settings, you must set the Server Profile and the delivery method for email, appointments, contacts, and tasks.  
@@ -243,8 +235,6 @@ Admins, as described in the Permission model table, can change the settings so m
 
 3. Select **Save**.
 
-<a name="BKMK_TestConfiguration"></a>   
-
 ## Test configuration of mailboxes  
 
 1. In the web app, go to **Settings** > **Email Configuration** > **Mailboxes**.  
@@ -269,8 +259,6 @@ Admins, as described in the Permission model table, can change the settings so m
 > [!TIP]
 >  If you're unable to synchronize contacts, appointments, and tasks for a mailbox, you may want to select the **Sync items with Exchange from this org only, even if Exchange was set to sync with a different org** check box. [Read more about this check box](when-would-want-use-check-box.md).  
   
-<a name="BKMK_TestEmailConfig"></a>   
-
 ## Test email configuration for all mailboxes associated with an email server profile 
 
 1. In the Power Platform admin center, select an environment. 
@@ -284,6 +272,30 @@ Admins, as described in the Permission model table, can change the settings so m
 > [!TIP]
 >  If you're unable to synchronize contacts, appointments, and tasks for a mailbox, you may want to select the **Sync items with Exchange from this org only, even if Exchange was set to sync with a different org** check box. [Read more about this check box](when-would-want-use-check-box.md).  
   
+## Enable server-side synchronization functionality for Exchange Online in China
+
+In order to connect Dynamics 365 with your Exchange Online tenant in China and use server-side synchronization functionality, follow these steps:
+
+1. If your org was provisioned before October 17th, 2020, contact  21Vianet support to allow your org to connect to Exchange online. If your org was provisioned after October 17th, 2020, this step is not required.
+2. Run the below PowerShell script to point your Exchange Online email server profile to the required EWS endpoint.
+3. Configure the mailbox, and then test and enable the mailbox.
+
+PowerShell script to change EWS endpoint:
+
+```powershell
+#Specify email server profile Id and orgUrl
+param ( 
+    [string]$emailServerProfileId = "<profile id>", 
+    [string]$orgUrl = "<org url>", 
+    [string]$defaultserverlocation = "https://partner.outlook.cn/EWS/Exchange.asmx" 
+) 
+Install-Module Microsoft.Xrm.Data.PowerShell -Force
+$conn = Connect-CrmOnline -Credential $cred -ServerUrl $orgUrl 
+$emailserverprofile = Get-CrmRecord -conn $conn -EntityLogicalName emailserverprofile -Id $emailServerProfileId -Fields defaultserverlocation
+$emailserverprofile.defaultserverlocation = $defaultserverlocation; 
+Set-CrmRecord -conn $conn -CrmRecord $emailserverprofile  
+```
+
 ### See also  
 [Troubleshooting and monitoring server-side synchronization](../admin/troubleshooting-monitoring-server-side-synchronization.md)   
 [Test mail flow by validating your connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/test-mail-flow)   
