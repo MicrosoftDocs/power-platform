@@ -284,6 +284,33 @@ Admins, as described in the Permission model table, can change the settings so m
 > [!TIP]
 >  If you're unable to synchronize contacts, appointments, and tasks for a mailbox, you may want to select the **Sync items with Exchange from this org only, even if Exchange was set to sync with a different org** check box. [Read more about this check box](when-would-want-use-check-box.md).  
   
+## Enable server-side synchronization functionality enablement for Exchange Online in China
+
+In order to connect Dynamics 365 with your Exchange Online tenant in China and use server-side synchronization functionality, follow these steps:
+1. If your org was provisioned before October 17th, 2020, contact  21Vianet support to allow your org to connect to Exchange online. If your org was provisioned after October 17th, 2020, this step is not required.
+2. Run the below PowerShell script to point your Exchange Online email server profile to the required EWS endpoint.
+3. Configure the mailbox, and then test and enable the mailbox.
+
+PowerShell script to change EWS endpoint:
+
+```powershell
+#Specify email server profile Id and orgUrl
+param ( 
+    [string]$emailServerProfileId = "<profile id", 
+    [string]$orgUrl = "<org url>", 
+    [string]$defaultserverlocation = "https://partner.outlook.cn/EWS/Exchange.asmx" 
+) 
+Install-Module Microsoft.Xrm.Data.PowerShell -Force
+$conn = Connect-CrmOnline -Credential $cred -ServerUrl $orgUrl 
+$emailserverprofile = Get-CrmRecord -conn $conn -EntityLogicalName emailserverprofile -Id $emailServerProfileId -Fields defaultserverlocation
+$emailserverprofile.defaultserverlocation = $defaultserverlocation; 
+Set-CrmRecord -conn $conn -CrmRecord $emailserverprofile  
+```
+
+
+
+
+
 ### See also  
 [Troubleshooting and monitoring server-side synchronization](../admin/troubleshooting-monitoring-server-side-synchronization.md)   
 [Test mail flow by validating your connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/test-mail-flow)   
