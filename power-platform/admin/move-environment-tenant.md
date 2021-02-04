@@ -58,7 +58,7 @@ The destination tenant needs an equal or higher number of active user licenses, 
 After moving environments to another tenant:
 
 - The environment ID in the target tenant cannot be set to the same environment ID as in the source tenant. This is not supported. 
-- The org URL, org ID, and name do not change. 
+- The org URL, org ID, and the name do not change. 
 
 ## How the move works
 
