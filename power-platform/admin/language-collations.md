@@ -90,18 +90,12 @@ A language includes the following information:
 | 1087 Kazakh                                            | \_CI_AS       |
 | 1110 Galician (Spain)                                  | \_CI_AS       |
 | 2052 Simplified Chinese (China) - Stroke 90 dataset    | \_CI_AI       |
-| 2055 German (Switzerland)                              | \_CI_AS       |
-| 2064 Italian (Switzerland)                             | \_CI_AS       |
 | 2070 Portuguese (Portugal)                             | \_CI_AI       |
 | 2074 Serbian - Latin character set                     | \_CI_AS       |
 | 3076 Traditional Chinese Hong Kong - Stroke 90 dataset | \_CI_AI       |
-| 3079 German (Austria)                                  | \_CI_AS       |
-| 3081 English (Australia)                               | \_CI_AS       |
-| 3081 English (UK)                                      | \_CI_AS       |
 | 3082 Modern Spanish (Spain)                            | \_CI_AI       |
-| 3084 French (Canada)                                   | \_CI_AI       |
 | 3098 Serbian - Cyrillic dataset                        | \_CI_AI       |
-| 4108 French (Switzerland)                              | \_CI_AI       |
+
 
 ### See also
 
