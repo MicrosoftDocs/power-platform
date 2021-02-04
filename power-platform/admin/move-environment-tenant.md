@@ -59,7 +59,7 @@ After moving environments to another tenant:
 
 - The environment ID in the target tenant cannot be set to the same environment ID as in the source tenant. This is not supported. 
 - The org URL, org ID, and the name do not change. 
-- Security group mapping is handled as part of the manual tenant to tenant process. At the very least, a replacement (or removal) will be needed because the security group won’t exist with the same ID in the new Azure AD tenant. 
+- Security group mapping is handled as part of the manual tenant to tenant migration process. At the very least, a replacement (or removal) will be needed because the security group won’t exist with the same ID in the new Azure AD tenant. 
 
 ## How the move works
 
