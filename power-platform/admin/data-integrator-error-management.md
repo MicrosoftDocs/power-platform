@@ -1,12 +1,13 @@
 ---
 title: Data Integrator error management and troubleshooting
 description: Integrate data from multiple sources into Microsoft Dataverse
-author: sabinn-msft
 ms.service: power-platform
 ms.topic: how-to
 ms.component: cds
-ms.date: 01/29/2021
+ms.date: 02/04/2021
+author: sabinn-msft
 ms.author: sabinn
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
@@ -96,7 +97,7 @@ Each project execution is marked with the status Completed, Warning, or Error:
    > [!div class="mx-imgBorder"] 
    > ![Project status error](media/ProjectStatus_Error.png "Project status error")
 
-   If the project execution is in the **Error** state, then it will automatically retry execution at the next scheduled run.
+   If the project execution is in the **Error** state, then it will automatically retry execution at the next scheduled run. If you do not update the source record, it will not automatically be included in the next run.
 
 You can also manually retry an execution by selecting **Re-run execution** via the ellipsis (...) on the **Execution history** page.
 
