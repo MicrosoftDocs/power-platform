@@ -54,7 +54,7 @@ Represents archival approval tasks started during the App Archive and Clean Up f
 
 ### Microsoft Teams Admin | Ask for Business Justification when Microsoft Teams environment is created
 
-This flow runs daily and checks if new environments of type [Microsoft Teams](https://docs.microsoft.com/power-platform/admin/about-teams-environment) have been created. Team owners who have created a Microsoft Teams environments receive an adaptive card via Teams that prompts them to provide a business justification.
+This flow runs daily and checks whether new environments of type [Microsoft Teams](https://docs.microsoft.com/power-platform/admin/about-teams-environment) have been created. Team owners who have created a Microsoft Teams environments receive an adaptive card via Teams that prompts them to provide a business justification.
 
 ![Ask for Business Justification when Microsoft Teams environment is created](media/teams-1.png "Ask for Business Justification when Microsoft Teams environment is created")
 
@@ -71,20 +71,20 @@ Learn more about the Microsoft Teams governance process in the CoE Starter Kit: 
 > [!IMPORTANT]
 > This flow deletes environments for which no business justification exists, or where the business justification has been rejected. Only turn this flow on **a week** after enabling the *Microsoft Teams Admin | Ask for Business Justification when Microsoft Teams environment is created* flow to ensure makers have an opportunity to provide a business justification before their environments get deleted.
 
-This flow runs weekly and deletes environments that
+This flow runs weekly and deletes environments that:
 
-- have been created more than **7 days** ago and have no business justification or where the business justification has been rejected by the admin
-- have been created more than **90 days** ago and have no apps or flows in the environment
+- Have been created more than **7 days** ago and have no business justification, or the business justification has been rejected by the admin.
+- Have been created more than **90 days** ago and have no apps or flows in the environment.
 
 >[!NOTE]
-> Currently, bots created via Power Virtual Agents in Microsoft Teams environments are not discoverable in the CoE Starter Kit.
+> Currently, bots created via Power Virtual Agents in Microsoft Teams environments aren't discoverable in the CoE Starter Kit.
 
-Environments are deleted from the tenant, and marked as deleted in the Environment table of the CoE Starter Kit - you can view deleted environments in the [Power Platform Admin View](core-components.md).
+Environments are deleted from the tenant and marked as deleted in the Environment table of the CoE Starter Kit. You can view deleted environments in the [Power Platform Admin View](core-components.md).
 
 >[!IMPORTANT]
-> You can recover a recently deleted environment (within 7 days of deletion), by using the Power Platform admin center or the Power Apps cmdlet Recover-AdminPowerAppEnvironment. Learn more: [Recover environment](https://docs.microsoft.com/power-platform/admin/recover-environment#power-platform-admin-center).
+> You can recover a recently deleted environment (within seven days of deletion) by using the Power Platform admin center or the Power Apps cmdlet Recover-AdminPowerAppEnvironment. More information: [Recover environment](https://docs.microsoft.com/power-platform/admin/recover-environment#power-platform-admin-center)
 
-Save a copy of this flow if you want to change the make any changes to the criteria for when environments are deleted.
+Save a copy of this flow in case you want to make any changes to the criteria for when environments are deleted.
 
 Learn more about the Microsoft Teams governance process in the CoE Starter Kit: [Microsoft Teams environment audit process](teams-governance.md)
 
