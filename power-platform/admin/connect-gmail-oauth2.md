@@ -4,7 +4,7 @@ description: "Connect Gmail accounts using OAuth 2.0"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/15/2021
+ms.date: 02/05/2021
 author: revachauhan
 ms.author: rechauha
 ms.reviewer: jimholtz
@@ -65,7 +65,7 @@ Follow the steps for **Create a project** in: [Create, shut down, and restore pr
 
 2. Select **Create**.
 
-3. Enter an application name and your environment's fully qualified domain name (for example: contoso.crm.dynamics.com). Then, select **Save**.
+3. Enter an application name and your environment’s top private domain name (for example: dynamics.com). Then, select **Save**.
 
    > [!div class="mx-imgBorder"] 
    > ![Enter application name and domain](media/gmail-oauth-consent-domain-name.png "Enter application name and domain")
