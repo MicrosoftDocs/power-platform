@@ -8,7 +8,7 @@ ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/18/2020
+ms.date: 02/04/2021
 search.audienceType: 
   - admin
 search.app:
@@ -21,27 +21,61 @@ search.app:
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-## User access diagnostic tool in the Power Platform admin center
+Multiple factors affect user access to Microsoft Dataverse environments. Administrators can use the **Run diagnostics** command to assess user access to a Dataverse environment, and get details and mitigation suggestions as to why a user can or can't access the environment.
 
-Several factors influence user access in a Microsoft Dataverse environment. To help administrators with diagnosing user access to an environment and reasons for access or no access, the new “Run diagnostics” feature in the Power Platform admin center provides basic access diagnostics for individual users in the environment. The feature helps to detect potential causes to user sign-in and other issues and suggests potential mitigations. For more information, see: [Diagnose user access in an environment](diagnose-user-access.md).
+To access a Dataverse environment, a user must meet the following criteria:
 
-## User has no roles 
+1. Be enabled for sign-in in Azure Active Directory (Azure AD).
+2. Have a valid license that has a Dynamics 365 or Microsoft Power Platform recognized service plan, or the environment must have active per-app plans.
+3. Be a member of the environment's Azure AD group (if one has been associated with the environment).
+4. Have at least one Dataverse security role assigned directly to them or to a [group team](manage-group-teams.md) they're a member of.
+
+A user's level of access within the environment and to the resources (apps and data) in the environment is determined by the privileges defined in the security roles assigned to that user. Their access mode being [Administrative](create-users-assign-online-security-roles.md#create-an-administrative-user-account) or [Read-Write](create-users-assign-online-security-roles.md#create-a-read-write-user-account) also determines their level of access within an environment.
+
+Use the following steps to run user access diagnostics on a user in a Dataverse environment.
+
+1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment. 
+
+2. Select **Settings** > **Users + permissions** > **Users**.  
+
+3. Select a user. 
+
+4. Select **Run diagnostics**.
+
+   > [!div class="mx-imgBorder"] 
+   > ![Select Run diagnostics](media/teams-environment-user-list.png "Select Run diagnostics") 
+
+5. Review the details for the user, and take any needed corrective actions.
+
+   > [!div class="mx-imgBorder"] 
+   > ![Run diagnostics results](media/run-diagnostics-results.png "Run diagnostics results")
+
+> [!NOTE]
+> The action of running or rerunning diagnostics will force the user information in Azure AD to synchronize to the environment's Dataverse database to provide up-to-date status on the user's properties. If the diagnostic run doesn't eliminate the root cause of a user access issue, please provide the results of the diagnostic run in the support ticket you create; this will greatly help Microsoft Support engineers to resolve your issue faster.
+
+## Access issues
+
+### User access diagnostic tool in the Power Platform admin center
+
+Several factors influence user access in a Microsoft Dataverse environment. To help administrators with diagnosing user access to an environment and reasons for access or no access, the new “Run diagnostics” feature in the Power Platform admin center provides basic access diagnostics for individual users in the environment. The feature helps to detect potential causes to user sign-in and other issues and suggests potential mitigations. For more information, see: [Troubleshooting: Common user access issues](troubleshooting-user-needs-read-write-access-organization.md).
+
+### User has no roles 
 
 When an error screen stating the user has no roles is encountered, a system administrator will need to assign roles to the user. Roles can be assigned directly to the user, or to a group team that the user is a part of. For information on how to assign Dataverse security roles to a user, see: 
 [Assign a security role to a user](create-users-assign-online-security-roles.md#assign-a-security-role-to-a-user)
 
-## User does not have a license / user does not belong to the organization 
+### User does not have a license / user does not belong to the organization 
 
 1. Verify if a license has been assigned to the user and assign one if not already. See: [Add a license to a user account](create-users-assign-online-security-roles.md#add-a-license-to-a-user-account).
 2. Once a license is assigned, it may take some time for the license change to sync to the Dataverse environment. To trigger a sync for this user, the system administrator for the environment can re-add the user to the environment. See: [Add users to an environment that has a Dataverse database](add-users-to-environment.md#add-users-to-an-environment-that-has-a-dataverse-database). 
 
-## User is not a member of the environment’s security group 
+### User is not a member of the environment’s security group 
 
 1. As a system administrator of the environment, verify that the Dataverse environment is associated with any Azure Active Directory group. See:  [Associate a security group with a Dataverse environment](control-user-access.md#associate-a-security-group-with-a-dataverse-environment). 
 2. Ensure the user with the access issue is a member of the group associated with the environment. See: [Create a security group and add members to the security group](control-user-access.md#create-a-security-group-and-add-members-to-the-security-group).
 3. Once user membership in the environment’s group is updated, it may take some time for the change to sync to the Dataverse environment. To trigger a sync for this user, the system administrator for the environment can re-add the user to the environment. See: [Add users to an environment that has a Dataverse database](add-users-to-environment.md#add-users-to-an-environment-that-has-a-dataverse-database). 
 
-## User doesn’t have sufficient permissions 
+### User doesn’t have sufficient permissions 
 
 You don't have sufficient permissions to access customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation). A system administrator will need to do the following:  
   
@@ -67,7 +101,7 @@ You don't have sufficient permissions to access customer engagement apps (Dynami
   
    ![User Entity UI settings](../admin/media/user-entity.png "User Entity UI settings")  
    
-## User is missing from environment despite meeting all requirements 
+### User is missing from environment despite meeting all requirements 
 
 In some cases, users are not automatically provisioned into Dataverse environments. 
 
@@ -83,7 +117,7 @@ If a user meets all access requirements but is still missing from an environment
 
 Although these users are not pre-provisioned, they can be added to environments through on-demand sync. See the section below for ways to add or refresh users on demand.
 
-## Adding or refreshing users on demand
+### Adding or refreshing users on demand
 
 As mentioned above, there are cases where users are not provisioned automatically. Additionally, there may be delays in reflecting the users' latest status in environments. In such cases, adding or refreshing specific users on demand can be helpful. 
 
@@ -100,3 +134,7 @@ There are multiple ways to do this:
 5. **Connectors**: See [Power Platform for Admins](https://docs.microsoft.com/connectors/powerplatformforadmins/#force-sync-user).
 
 6. **Power Automate template**: See [Force Sync Azure Active Directory Group members to specified CDS instance](https://us.flow.microsoft.com/galleries/public/templates/6e4162ca7afc48479e3ad1caadc6c1e6/force-sync-azure-active-directory-group-members-to-specified-cds-instance/).
+
+### Known issue
+
+The check for the presence of security roles assigned to a user only checks for roles directly assigned to the user and can't currently check for roles inherited through group team memberships.
