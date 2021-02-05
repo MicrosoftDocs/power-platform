@@ -65,7 +65,7 @@ Follow the steps for **Create a project** in: [Create, shut down, and restore pr
 
 2. Select **Create**.
 
-3. Enter an application name and your environment’s top private domain name (for example: dynamics.com). Then, select **Save**.
+3. Enter an application name and your environment’s top private domain name (for example: dynamics.com) for **Authorized domains**. Then, select **Save**.
 
    > [!div class="mx-imgBorder"] 
    > ![Enter application name and domain](media/gmail-oauth-consent-domain-name.png "Enter application name and domain")
