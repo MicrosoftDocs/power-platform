@@ -64,7 +64,7 @@ Select a gateway cluster and then select **Details** to see the following inform
 - **Name**: The name of the gateway member.
 - **Device**: The physical device on which the gateway is installed.
 - **Status**: Select (![Gateway status](media/gateway-status.png "Gateway status")) to check the status of a gateway member.
-- **Version**: The gateway software version installed on the machine.
+- **Version**: The gateway software version installed on the machine. (Version numbers shown here are cached, Once you update your gateway version on gateway machine, it usually takes 5-6 days to reflect the changes in Power Platform Admin Center)
 - **State**: Select to enable or disable a gateway member.
 
 After selecting a gateway member, you can select **Remove** to remove it. This does not uninstall the gateway from the physical machine but removes all the metadata regarding the gateway.
