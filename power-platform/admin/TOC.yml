@@ -348,8 +348,6 @@
         href: database-security.md
       - name: Configure user access to an environment
         href: control-user-access.md  
-      - name: Diagnose user access
-        href: diagnose-user-access.md
       - name: View user profile
         href: https://docs.microsoft.com/powerapps/user/view-your-user-profile
       - name: Assign security roles
