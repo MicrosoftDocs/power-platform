@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/14/2021
+ms.date: 02/05/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -39,7 +39,9 @@ Note the following regarding access to Microsoft Power Platform apps in Teams:
 
 - Dataverse for Teams will be available as part of select Microsoft 365 subscriptions with Microsoft Power Platform and Microsoft Teams capabilities, excluding plans for US government environments (GCC, GCC High and DoD) and EDU A1 and SUB SKUs. 
 
-- Apps created in Microsoft Teams that use Dataverse for Teams will only be accessible in Microsoft Teams and Microsoft Teams Mobile, regardless of the user's license.  
+- Apps created in Microsoft Teams that use Dataverse for Teams will be accessible outside of Microsoft Teams in a web browser if you have a trial or standalone Power Apps license. However, note the following:
+  - Apps created in Teams are not displayed in the list of apps in make.powerapps.com or Power Apps mobile app. The only way to run these apps is to launch them in a web browser from Teams using **Go to website** or **Open in browser** in the Power Apps mobile app.
+  - When run outside of Teams, the Teams integration object’s values won’t be available.
 
 - For any standalone Power Apps or Power Automate usage, which includes Dataverse API access as well, the Dataverse for Teams environment will need to be upgraded to Dataverse.  
 
