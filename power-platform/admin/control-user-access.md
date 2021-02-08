@@ -2,14 +2,14 @@
 title: "Control user access to environments: security groups and licenses | Microsoft Docs"
 description: Learn how to control user access to environments using security groups and licenses
 services: powerapps
-author: jimholtz
-ms.author: jimholtz
+author: paulliew
+ms.author: paulliew
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/17/2020
+ms.date: 02/08/2021
 search.audienceType: 
   - admin
 search.app:
@@ -40,7 +40,7 @@ In this example, four security groups provide controlled access to a specific en
 - When users are added to the security group, they are added to the Dataverse environment.  
 - When users are removed from the group, they are disabled in the Dataverse environment.  
 - When a security group is associated with an existing environment with users, all users in the environment that are not members of the group will be disabled. 
-- If a Dataverse environment does not have an associated security group, all users with a Dataverse license (customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), Power Automate, Power Apps, etc.) or per app plan will be created as users and enabled in the environment.  
+- If a Dataverse environment does not have an associated security group, all users with a Dataverse license (customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), Power Automate, Power Apps, etc.) will be created as users and enabled in the environment.  
 - If a security group is associated with an environment, only users with Dataverse licenses or per app plan that are members of the environment security group will be created as users in the Dataverse environment.  
 - When you assign a security group to an environment, that environment will not show up in [home.dynamics.com](https://home.dynamics.com) for users not in the group.  
 - If you do not assign a security group to an environment, the environment will show up in [home.dynamics.com](https://home.dynamics.com) even for those who have not been assigned a security role in that Dataverse environment.  
