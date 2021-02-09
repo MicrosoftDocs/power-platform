@@ -7,7 +7,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/08/2020
+ms.date: 02/09/2021
 search.audienceType: 
   - admin
 search.app:
@@ -24,6 +24,8 @@ Because the major releases include features that affect the user experience, you
 
 > [!TIP]
 > Check out the early access features for Microsoft [Power Platform](https://aka.ms/PowerPlatformEAFeatures) and [Dynamics 365](https://aka.ms/Dynamics365EAFeatures) to know the features that will roll out to the users automatically when you opt in for an update.
+> 
+> If you opt in to early access for 2021 Release Wave 1 updates and Relevance Search is enabled then the new Relevance Search experience is turned on for all users. Users won't have the option to use categorized search anymore. For  more information, see [Opt in to early access updates](https://docs.microsoft.com/power-platform/admin/opt-in-early-access-updates)
 
 ## Early access availability  
 For each of the major releases, you can opt in for early access updates approximately two months before the major release is automatically enabled in your region.
