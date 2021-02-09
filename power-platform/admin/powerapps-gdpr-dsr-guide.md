@@ -1,6 +1,6 @@
 ---
-title: Responding to Data Subject Rights (DSR) requests for Power Apps customer data  | Microsoft Docs
-description: Walkthough of how to respond to Data Subject Rights (DSR) requests for Power Apps customer data
+title: "Responding to Data Subject Rights (DSR) requests for Power Apps customer data"
+description: "Walkthough of how to respond to Data Subject Rights (DSR) requests for Power Apps customer data to support GDPR compliance."
 author: jimholtz
 ms.reviewer: paulliew
 ms.service: power-platform
