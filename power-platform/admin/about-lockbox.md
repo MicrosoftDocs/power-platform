@@ -4,7 +4,7 @@ description: About lockbox for Power Platform
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/03/2021
+ms.date: 02/09/2021
 author: jimholtz
 ms.author: miferlan
 ms.reviewer: jimholtz
@@ -22,14 +22,14 @@ Lockbox for Microsoft Power Platform provides an interface to review&mdash;and a
 
 ## Summary
 
-You define which [Dataverse databases](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro) need to be protected with lockbox by creating a lockbox policy. Global administrators can configure the lockbox policy. More information: [Configure the lockbox policy](#configure-the-lockbox-policy)
+You define which environments with [Dataverse databases](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro) need to be protected with lockbox by creating a lockbox policy. Global administrators can configure the lockbox policy. More information: [Configure the lockbox policy](#configure-the-lockbox-policy)
 
-Whenever Microsoft attempts to access data that's stored in a database that's protected by lockbox, a lockbox request is sent to the global administrators. More information: [Review a lockbox request](#review-a-lockbox-request)
+Whenever Microsoft attempts to access data that's stored in an Azure SQL database that's protected by lockbox, a lockbox request is sent to the global administrators. More information: [Review a lockbox request](#review-a-lockbox-request)
 
-After access is granted to Microsoft, any action taking place in the database during the elevated access period is recorded and made available to your organization as SQL audit logs. You can export these logs to your own data lake. More information: [Audit lockbox requests](#audit-lockbox-requests)
+After access is granted to Microsoft, any action taking place in the Azure SQL database during the elevated access period is recorded and made available to your organization as SQL audit logs. You can export these logs to your own data lake. More information: [Audit lockbox requests](#audit-lockbox-requests)
 
 > [!NOTE]
-> Lockbox only protects Dataverse databases. Any data you have that's located in other data stores is currently out of scope.
+> Dataverse leverages several Azure storage technologies. A single Dataverse database could store data in Azure SQL, Azure Cosmos DB, Azure Storage, etc. When lockbox is applied to an environment with a Dataverse database, lockbox only protects the data that is stored in Azure SQL. Any data located in other data stores is currently out of scope.
 
 ## Workflow
 
@@ -45,13 +45,13 @@ After access is granted to Microsoft, any action taking place in the database du
 
    Based on the JIT rule, this request might include an approval from internal Microsoft approvers. For example, the approver might be the customer support lead or the DevOps manager.
 
-4. When the request asks for direct access to customer data, a lockbox request is generated if the database is protected according to the organization's lockbox policy. An email notification is sent to the designated approvers about the pending data access request from Microsoft. 
+4. When the request asks for direct access to customer data, a lockbox request is generated if the Azure SQL database is protected according to the organization's lockbox policy. An email notification is sent to the designated approvers about the pending data access request from Microsoft. 
 
    :::image type="content" source="media/lockbox-sample-approval.png" alt-text="Sample lockbox approval":::
 
 5. The approver signs in to the Power Platform admin center and approves the request. If the request is rejected or it isn't approved within 12 hours, it expires, and no access is granted to the Microsoft engineer. 
 
-6. After the approver from your organization approves the request, the Microsoft engineer receives the approval message, signs in to the tenant, and fixes your issue. Microsoft engineers have a set amount of time to fix the issue, after which the access is automatically revoked. 
+6. After the approver from your organization approves the request, the Microsoft engineer obtains the elevated permissions that were initially requested and fixes your issue. Microsoft engineers have a set amount of time to fix the issue, after which the access is automatically revoked. 
 
    > [!NOTE]
    > All actions performed by a Microsoft engineer are recorded and made available in SQL audit logs.
