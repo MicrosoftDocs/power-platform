@@ -1,6 +1,6 @@
 ---
-title: "Define subjects to categorize cases, products, and articles   | MicrosoftDocs"
-description: Define subjects to categorize cases, products, and articles
+title: "Define subjects to categorize cases, products, and articles"
+description: "Learn to create and edit subjects to categorize service cases, knowledge base articles, products, and sales literature in customer engagement apps."
 author: shubhadaj
 manager: shujoshi
 ms.service: power-platform

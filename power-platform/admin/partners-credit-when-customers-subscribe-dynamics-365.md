@@ -1,6 +1,6 @@
 ---
-title: "For partners: Get the credit when your customers subscribe to Dynamics 365  | MicrosoftDocs"
-description: "For partners: Get the credit when your customers subscribe to Dynamics 365"
+title: "Partners: Get credit when your customers subscribe to Dynamics 365"
+description: "As a Microsoft Dynamics 365 partner, learn how to help your customers sign up for a trial subscription, customize it, and set yourself as the partner of record."
 author: jimholtz
 manager: kvivek
 ms.service: power-platform
