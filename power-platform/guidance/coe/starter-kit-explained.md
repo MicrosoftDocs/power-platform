@@ -46,11 +46,11 @@ The Center of Excellence (CoE) Starter Kit is shipped in multiple components:
 
 - **Center of Excellence – application lifecycle management components**  
 
-    The ALM components are intended to provide Power Platform makers guidance on creating healthy Application Lifecycle Management practices for their solutions as part of their overall DevOps strategy.
+    The application lifecycle management (ALM) components are intended to provide Power Platform makers guidance on creating healthy ALM practices for their solutions as part of their overall DevOps strategy.
 
     The ALM Accelerator for Makers components solution contains assets that are relevant to makers and admins. More information: [Set up ALM Accelerator for Makers components](setup-almaccelerator.md) and [Use ALM Accelerator for Makers components](almaccelerator-components.md)
 
-- **Center of Excellence – Innovation Backlog components**   
+- **Center of Excellence – Innovation Backlog components**
 
     The Innovation Backlog solution contains assets that are relevant to everyone in the organization. More information: [Set up Innovation Backlog components](setup-innovationbacklog.md), [What's in the Innovation Backlog components](innovationbacklog-components.md), and [Use the Innovation Backlog app](use-innovationbacklog.md)
 
