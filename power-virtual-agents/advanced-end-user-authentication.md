@@ -74,6 +74,25 @@ The ```AuthToken``` variable contains the user's token, obtained after the user 
 
 Don't use `AuthToken` inside **Message** nodes, or on flows that you don't trust. 
 
+## Testing authentication variables
+
+When testing topics which uses authentication and authentication variables in the Test bot, the account of the person logged into PVA will always be used. There might be a need to test other values for UserDisplayName and UserID, especially for the empty value cases. To test other values for UserDisplayName and UserID, the following command can be sent to the test bot.
+
+```/debug set bot.UserDisplayName "Tomas Richardson"```
+
+To set an empty value to the same variable, the following command can be sent to the test bot:
+
+```/debug set bot.UserDisplayName ""```
+
+You can also set the ```UserID``` variable to empty, as follows:
+
+```/debug set bot.UserID ""```
+
+Note that you cannot set UserID to a non-empty value due security reasons. 
+
+These commands only work on the Test bot inside PVA, they do not work in a production bot deployed to a channel.
+
+
 ## Authentication when using "Only for Teams" configuration
 
 If your authentication option is set to **Only for Teams**, you don't need to explicitly add authentication to your topics. In this configuration, any user in Microsoft Teams is automatically signed in via their Teams credentials and they don't need to explicitly sign in with an authentication card. If your authentication option is set to Manual, then you will need to add the authentication node (even for the Teams channel). 
