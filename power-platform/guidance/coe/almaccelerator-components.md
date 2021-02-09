@@ -18,17 +18,17 @@ search.app:
 ---
 # Use the ALM Accelerator for Makers components
 <!--note from editor: This article seems to be misplaced in the TOC. Wouldn't it be better under the "How to use the CoE Starter Kit" node? And then there could be an additional article for the "Components overview" node that simply lists tables, apps, flows, components (if any)? -->
-Use the ALM Accelerator for Makers app<!--note from editor: Using "app" here is parallel with the Innovation Backlog article, but I'm not sure it's correct. I can't see any pattern with describing this as a "components solution," a "solution," or an "app." I've tried to leave them as you had them, but can you please double-check all the instances to be sure the terminology is right?--> to follow ALM patterns and practices for source control, and move your solutions from development to test to production environments by using GitHub. More information: [Set up ALM Accelerator for Makers components](setup-almaccelerator.md)
+Use the ALM Accelerator for Makers components to follow ALM patterns and practices for source control, and move your solutions from development to test to production environments by using GitHub. More information: [Set up ALM Accelerator for Makers components](setup-almaccelerator.md)
 
 ALM Accelerator for Makers enables makers to apply source control strategies by using GitHub, and use automated builds and deployment of solutions to their environments without the need for manual intervention by the maker, administrator, developer, or tester. In addition, ALM Accelerator for Makers provides makers the ability to work without intimate knowledge of downstream technologies and switch quickly from developing solutions to implementing source control for the solution&mdash;and, ultimately, pushing their apps to other environments with as few interruptions to their work as possible.
 
-Makers can use the ALM Accelerator for Makers app to view all their projects, and deploy their work-in-progress or completed<!--note from editor: We want to avoid "final solution" for historical reasons.--> solution to a test or<!--note from editor: Edit okay?--> production environment. After a new project has been created and approved, makers can go to [make.powerapps.com](https://make.powerapps.com) to build and create assets&mdash;such as apps, flows, and tables&mdash;in a solution that has been created for them.
+Makers can use the ALM Accelerator for Makers app to view all their projects, and deploy their work-in-progress or completed solution to a test or production environment. After a new project has been created and approved, makers can go to [make.powerapps.com](https://make.powerapps.com) to build and create assets&mdash;such as apps, flows, and tables&mdash;in a solution that has been created for them.
 
 **Prerequisite**: This app uses Microsoft Dataverse; a Premium license is therefore required for every app user.
 
 1. Go to [make.powerapps.com](<https://make.powerapps.com>).
 1. On the left pane, select **Solutions**.
-1. Select the **Power Platform GitHub ALM** solution, and then select **ALM Accelerator for Makers**. You might need to open the app in a private<!--note from editor: If Microsoft Edge is the only supported browser, this should be "InPrivate". If Chrome is supported, "private" is the better generic term.--> browser session if the app fails to load.
+1. Select the **Power Platform GitHub ALM** solution, and then select **ALM Accelerator for Makers**. You might need to open the app in a private browser session if the app fails to load.
 
 ![ALM Accelerator for Makers app](media/git-23.png "ALM Accelerator for Makers app")
 
@@ -41,7 +41,7 @@ The app dashboard shows all projects created by your user.
 
 ![Request approval for a new project](media/git-26.png "Request approval for a new project")
 
-When a user submits this request, an Approval request is sent to a predefined administrator. The admin will review the request, and approve or reject it. After a project is created and approved, go to the maker portal to build and create resources (apps, flows, entities<!--note from editor: Should this be "tables"?-->, and so on) under the newly created solution for your project.
+When a user submits this request, an Approval request is sent to a predefined administrator. The admin will review the request, and approve or reject it. After a project is created and approved, go to the maker portal to build and create resources (apps, flows, tables, and so on) under the newly created solution for your project.
 
 ![Admins can approve or reject new project requests](media/git-27.png "Admins can approve or reject new project requests")
 

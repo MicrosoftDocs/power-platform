@@ -18,17 +18,16 @@ search.app:
 ---
 
 # Set up ALM Accelerator for Makers components
-<!--note from editor: I recommend that the intro to this article be streamlined and not repeat the more elaborate background information from the "Using" article. A setup article should be focused on the tasks of setting up, it's not really the right place for an overview.-->
-The ALM Accelerator for Makers components solution will help you follow ALM patterns and practices for source control, and move your solutions from development to test to production environments by using GitHub. This solution uses [GitHub actions](https://docs.microsoft.com/power-platform/alm/devops-github-actions) for source control and deployments. The [GitHub connector](https://docs.microsoft.com/connectors/github/) is used in flows to interact with GitHub. More information: [Use the ALM Accelerator for Makers components](almaccelerator-components.md)
+This solution uses [GitHub actions](https://docs.microsoft.com/power-platform/alm/devops-github-actions) for source control and deployments. The [GitHub connector](https://docs.microsoft.com/connectors/github/) is used in flows to interact with GitHub. More information: [Use the ALM Accelerator for Makers components](almaccelerator-components.md)
 
 >[!IMPORTANT]
->The ALM Accelerator for Makers components solution doesn't have a dependency on other components of the CoE Starter Kit. It can be used independently.
+>The ALM Accelerator for Makers components don't have a dependency on other components of the CoE Starter Kit. It can be used independently.
 
 ## Prerequisites
 
 ### Environments
 
-The application<!--note from editor: Is this referring to the ALM Accelerator for Makers app? It's called a components solution, a solution, and an app, and I'm not sure what the difference is. Would it be possible to settle on one term? (Or none, and mostly just call it by its name with no modifier?)--> will manage deploying solutions from development to testing to production environments. You'll need separate environments for deploying ALM Accelerator for Makers, and for the development, testing, and production of your project.
+The ALM Accelerator for Makers components will manage deploying solutions from development to testing to production environments. You'll need separate environments for deploying ALM Accelerator for Makers, and for the development, testing, and production of your project.
 
 - Create an environment with a Microsoft Dataverse database for deploying ALM Accelerator for Makers.
 - Any target environment (development, test, or production) will require a Dataverse database for deploying solutions.
@@ -37,7 +36,7 @@ The application<!--note from editor: Is this referring to the ALM Accelerator fo
 
 ### Users and permissions
 
-You'll need the following users and permissions in Microsoft Power Platform and Azure Active Directory (Azure AD)<!--note from editor: Edit okay?-->:
+You'll need the following users and permissions in Microsoft Power Platform and Azure Active Directory (Azure AD):
 
 - A licensed Power Apps user with the System Administrator role in the environment where ALM Accelerator for Makers will be deployed.
     >[!NOTE]
@@ -67,7 +66,7 @@ Set up an Azure AD app registration that will be used to create environments and
 
 1. Select **Dynamics CRM**.
 
-1. Select **Delegated permissions**, and then select **user_impersonation**.<!--note from editor: Is this screenshot showing the latest UI?-->
+1. Select **Delegated permissions**, and then select **user_impersonation**.
 
     ![Delegated permissions](media/crm-api-registration2.png "Delegated permissions")
 
@@ -133,7 +132,7 @@ Leave the Azure portal open, because you'll need to copy some information when y
 
 1. Go to [make.powerapps.com](<https://make.powerapps.com>).
 1. On the left pane, select **Solutions**.
-1. Select the **Power Platform GitHub ALM** solution, and then open the **ALM Accelerator Admin Configuration** app.<!--note from editor: This seems to be an outdated UI? Also, note that "Environement" is misspelled.-->
+1. Select the **Power Platform GitHub ALM** solution, and then open the **ALM Accelerator Admin Configuration** app.
 
 ![Configure environment settings and deployment stages after import by using the ALM Accelerator Admin app](media/git-24.png "Configure environment settings and deployment stages after import by using the ALM Accelerator Admin app.")
 
@@ -144,7 +143,7 @@ Leave the Azure portal open, because you'll need to copy some information when y
 
 1. Update the **Stage Owner Email** for each of the three stages (**DEV**, **TEST**, and **PROD**). The stage owner will receive notification for approving project creation and deployment.
 1. Update the **Admin username and password**. These credentials can be a service account or a user account with the Power Platform Admin role.
-1. For each of the test and production stages, select a pre-existing environment that will be used for test and production deployments. Your development environment is the environment provisioned when you first create<!--note from editor: Edit okay? Has the first project been created by now? (If so, this should be "first created a project"). --> a project.
+1. For each of the test and production stages, select a pre-existing environment that will be used for test and production deployments. Your development environment is the environment provisioned when you first create a project.
 
 ### Update the Webhook Url value
 
@@ -195,7 +194,7 @@ If a paid GitHub org plan exists for your org, turn on the **GitHub Plan Exists*
 
 1. Select **Add**.
 
-1. Search for a user you want to add to the profile.<!--note from editor: Edits here assume this has to be done one user at a time.-->
+1. Search for a user you want to add to the profile.
 
     ![Search for users for the Field Security Profile](media/git-8.png "Search for Users for the Field Security Profile")
 
@@ -213,7 +212,7 @@ If a paid GitHub org plan exists for your org, turn on the **GitHub Plan Exists*
 
 GitHub org secrets will be used to make API calls to import and export solutions, and to interact with Dataverse. Secrets are the recommended way of storing sensitive information.
 
-GitHub supports org secrets and repository-level secrets. If you have a paid plan, all the secrets created at the org level can be used by private repositories as well. That's the advantage of having a paid plan. Otherwise, the admin has to create secrets for each repository.<!--note from editor: Edit okay? I assume the secret won't be applicable to all the repos at once.-->
+GitHub supports org secrets and repository-level secrets. If you have a paid plan, all the secrets created at the org level can be used by private repositories as well. That's the advantage of having a paid plan. Otherwise, the admin has to create secrets for each repository.
 
 Learn more: [GitHub Team offerings](https://docs.github.com/free-pro-team@latest/github/getting-started-with-github/githubs-products#github-team).
 
@@ -227,8 +226,8 @@ If you have a paid GitHub org plan, configure org secrets by following these ste
 1. Go to your org in GitHub (https://github.com/yourorg).
 1. Select **Settings** > **Secret** > **New organization secret**
     ![Select Secrets from your GitHub org settings](media/git-20.png "Select Secrets from your GitHub org settings")
-1. Enter **DEV_ENVIRONMENT_SECRET** as the name<!--note from editor: Edit okay? The name isn't actually a secret, right?--> for your development deployment stage, and enter the value for your secret.
-1. In the **Repository access** list, select **Private Repositories**.<!--note from editor: In the image, it looks like Private Repositories is grayed out and un    available. -->
+1. Enter **DEV_ENVIRONMENT_SECRET** as the name for your development deployment stage, and enter the value for your secret.
+1. In the **Repository access** list, select **Private Repositories**.
          ![For the paid GitHub org plan, select Private Repositories for your secret](media/git-21.png "For the paid GitHub org plan, select Private Repositories for your Secret")
 1. Select **Add Secret**.
 1. Repeat the preceding steps to add a **TEST_ENVIRONMENT_SECRET** and **PROD_ENVIRONMENT_SECRET**.
@@ -247,4 +246,4 @@ If you don't have a paid GitHub org plan, do the following for all projects crea
 1. Select **Add Secret**.
 1. Repeat the preceding steps to add a **TEST_ENVIRONMENT_SECRET** and **PROD_ENVIRONMENT_SECRET**.
 
-You can now [use the ALM Accelerator for Makers components](almaccelerator-components.md).<!--note from editor: Should this be "app"?-->
+You can now [use the ALM Accelerator for Makers components](almaccelerator-components.md).
