@@ -244,8 +244,9 @@ To allow for transition of customers and partner applications:
 
 - Effective October 2020, the authentication protocol will be retired for all new tenants.
 - Effective October 2020, the authentication protocol will not be available in all new [regions](admin/regions-overview.md#what-regions-are-available).
-- Effective April 2021, the authentication protocol will be retired for all new environments within a tenant.
+- Effective April 2021<sup>1</sup>, the authentication protocol will be retired for all new environments within a tenant.
 - Effective April 2022, the authentication protocol will be retired for all new and existing environments within a tenant.
+<sup>1</sup>The retirement of new environments starts April 1st, 2021 and rolls out gradually in all regions within a 6-week window.
 
 More information: [Use of Office365 authentication with the WS-Trust security protocol](/powerapps/developer/common-data-service/authenticate-office365-deprecation)
 
