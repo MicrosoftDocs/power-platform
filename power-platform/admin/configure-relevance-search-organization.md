@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/28/2021
+ms.date: 02/09/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -71,6 +71,8 @@ The new search experience is available as a feature setting in the Power Platfor
 
 > [!NOTE]
 > The **Use new search experience feature** setting is only available for environments where Relevance Search is already turned on. For environments where Relevance Search has never been not turned on, the setting **Use new search experience** will not be shown and the new experience is turned on by default.
+> 
+> If you opt in to early access for 2021 Release Wave 1 updates and Relevance Search is enabled then the new Relevance Search experience is turned on for all users. Users won't have the option to use categorized search anymore. For more information, see [Opt in to early access updates](opt-in-early-access-updates.md).
 
 To enable the new Relevance Search experience:
 
