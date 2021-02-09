@@ -1,6 +1,6 @@
 ---
-title: "Move from unmanaged to managed solution ALM with Power Apps | Microsoft Docs"
-description: "Learn how to move from unmanaged to managed solutions to support ALM with Power Apps"
+title: "Move from unmanaged to managed solutions to support healthy ALM with Power Apps"
+description: "Learn how to move from unmanaged to managed solutions in your organization to support healthy application lifecycle management (ALM) with Power Apps."
 keywords: 
 author: Mattp123
 ms.author: matp
