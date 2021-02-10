@@ -21,43 +21,6 @@ search.app:
 
 Multiple governance components are provided in the Center of Excellence (CoE) Starter Kit; each will require some configuration to install. The installation instructions in this article have been segmented based on the set of components that should be grouped and installed together, and dependencies on other segments are outlined in each section.
 
-## Import the solution
-
-The Core Components solution is required for the Audit and Report Components solution, or any other component in the starter kit, to work.
-
-1. Follow the instructions detailed under [Set up core components](setup-core-components.md).
-
-1. Import the *CenterOfExcellenceAuditComponents_x_x_x_xx_managed.zip* file.
-1. Create a new connection to the all connectors.
-    ![Import the Center of Excellence - Governance components solution](media/msig-import.png "Import the Center of Excellence - Governance components solution")
-1. Update the Environment Variable values. Environment variables are used to store application and flow configuration data. This means that you only have to set the value once per environment and it will be used in all necessary flows and apps in that environment.
-
-    | Name | Current value |
-   |------|---------------|
-   | Auto Delete On Archive | Determines whether apps are deleted when they're archived in the following flow: Admin \| App Archive and Clean Up - Check Approvals and Archive. <br> Value must be Yes or No. A default value of No is provided. |
-   | Developer Compliance Center         | Leave this blank on import, and [update the enviornment variable](#update-environment-variables) after the import has finished by first navigating to the details page of the Developer Compliance Center (canvas app) included with this solution, and copy the web link (to launch the app) and paste it into this variable.  |
-   | ProductionEnvironment | Determines if the environment is Production or Dev/Test. True (the default) will mean that the approvals are sent to app/flow owners. False will send those approvals to the admin email. |
-
-1. Select **Import** without adding values to the Environment Variables, as we will update them later - see [update environment variables](#update-environment-variables)
-
-## Update environment variables
-
-This step should be completed after you import the solution. Environment variables are used to store application and flow configuration data. This means that you only have to set the value once per environment and it will be used in all necessary flows and apps in that environment..
-
-All flows in this solution depend on all environment variables' being configured.
-
->[!TIP]
->To view all environment variables in the environment, open the default solution for the environment, and set the **Type** filter to **Environment variable**.
-
-1. Select **See Environment Variables** to set the values as described in the following table.
-
-   | Name | Current value |
-   |------|---------------|
-   | Auto Delete On Archive | Determines whether apps are deleted when they're archived in the following flow: Admin \| App Archive and Clean Up - Check Approvals and Archive. <br> Value must be Yes or No. A default value of No is provided. |
-   | Developer Compliance Center         | Navigate to the details page of the Developer Compliance Center (canvas app) included with this solution, and copy the web link (to launch the app) and paste it into this variable.  |
-   | ProductionEnvironment | Determines if the environment is Production or Dev/Test. True (the default) will mean that the approvals are sent to app/flow owners. False will send those approvals to the admin email. |
-   | Approval Admin | Optional variable for users that have a distribution list for the Admin Email env var. Since you cannot use a distribution list for approvals, this variable will allow you to specify a secondary email that is a person for Approvals |
-
 ## Initialize flow approval tables in your environment
 
 The archive approval flows use the built-in Approval actions of Power Automate.
@@ -95,6 +58,43 @@ The archive approval flows use the built-in Approval actions of Power Automate.
 1. Select **Solutions** on the left side panel, and you should now see two new Flow Approvals solutions. Note that the presence of these solutions was the point of this step, and the way you know it succeeded.
 
    ![Flow Approval solutions](media/coe17.png "Flow Approval solutions")
+
+## Import the solution
+
+The Core Components solution is required for the Audit and Report Components solution, or any other component in the starter kit, to work.
+
+1. Follow the instructions detailed under [Set up core components](setup-core-components.md).
+
+1. Import the *CenterOfExcellenceAuditComponents_x_x_x_xx_managed.zip* file.
+1. Create a new connection to the all connectors.
+    ![Import the Center of Excellence - Governance components solution](media/msig-import.png "Import the Center of Excellence - Governance components solution")
+1. Update the Environment Variable values. Environment variables are used to store application and flow configuration data. This means that you only have to set the value once per environment and it will be used in all necessary flows and apps in that environment.
+
+    | Name | Current value |
+   |------|---------------|
+   | Auto Delete On Archive | Determines whether apps are deleted when they're archived in the following flow: Admin \| App Archive and Clean Up - Check Approvals and Archive. <br> Value must be Yes or No. A default value of No is provided. |
+   | Developer Compliance Center         | Leave this blank on import, and [update the enviornment variable](#update-environment-variables) after the import has finished by first navigating to the details page of the Developer Compliance Center (canvas app) included with this solution, and copy the web link (to launch the app) and paste it into this variable.  |
+   | ProductionEnvironment | Determines if the environment is Production or Dev/Test. True (the default) will mean that the approvals are sent to app/flow owners. False will send those approvals to the admin email. |
+
+1. Select **Import** without adding values to the Environment Variables, as we will update them later - see [update environment variables](#update-environment-variables)
+
+## Update environment variables
+
+This step should be completed after you import the solution. Environment variables are used to store application and flow configuration data. This means that you only have to set the value once per environment and it will be used in all necessary flows and apps in that environment..
+
+All flows in this solution depend on all environment variables' being configured.
+
+>[!TIP]
+>To view all environment variables in the environment, open the default solution for the environment, and set the **Type** filter to **Environment variable**.
+
+1. Select **See Environment Variables** to set the values as described in the following table.
+
+   | Name | Current value |
+   |------|---------------|
+   | Auto Delete On Archive | Determines whether apps are deleted when they're archived in the following flow: Admin \| App Archive and Clean Up - Check Approvals and Archive. <br> Value must be Yes or No. A default value of No is provided. |
+   | Developer Compliance Center         | Navigate to the details page of the Developer Compliance Center (canvas app) included with this solution, and copy the web link (to launch the app) and paste it into this variable.  |
+   | ProductionEnvironment | Determines if the environment is Production or Dev/Test. True (the default) will mean that the approvals are sent to app/flow owners. False will send those approvals to the admin email. |
+   | Approval Admin | Optional variable for users that have a distribution list for the Admin Email env var. Since you cannot use a distribution list for approvals, this variable will allow you to specify a secondary email that is a person for Approvals |
 
 ## Activate the flows
 

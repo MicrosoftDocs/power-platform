@@ -19,8 +19,6 @@ search.app:
 
 # Released version Governance Components 1.18
 
-## Introduction
-
 Version 1.18 for the CoE Starter Kit Governance Components is now available. This article describes the updates, including the new features and the fixes to existing functionality, included in this release. This version was first made available on July 8, 2020.
 
 ## Admin \| Flow archive and clean up

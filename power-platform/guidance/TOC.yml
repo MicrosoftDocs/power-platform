@@ -118,8 +118,6 @@
           href: coe/theming-components.md   
         - name: Innovation Backlog components
           href: coe/innovationbacklog-components.md   
-        - name: ALM Accelerator for Makers components
-          href: coe/almaccelerator-components.md  
         - name: Extend and modify components
           href: coe/modify-components.md
     - name: How to use the CoE Starter Kit
@@ -139,7 +137,9 @@
         - name: Dataverse for Teams environment management
           href: coe/teams-governance.md  
         - name: Use the Innovation Backlog app
-          href: coe/use-innovationbacklog.md  
+          href: coe/use-innovationbacklog.md 
+        - name: Use the ALM Accelerator for Makers
+          href: coe/almaccelerator-components.md
     - name: Limitations
       href: coe/limitations.md
     - name: Release notes
