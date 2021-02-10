@@ -98,7 +98,7 @@ All flows in this solution depend on all environment variables' being configured
 
 ## Activate the flows
 
-This Governance Components solution contains flows that you will need to manually turn on, once you are ready to use them.
+This Governance Components solution contains flows that you'll need to manually turn on as soon as you're ready to use them.
 
 - Admin \| Archive and Clean Up v2 (Start Approval for Apps)
 - Admin \| Archive and Clean Up v2 (Start Approval for Flows)
@@ -109,7 +109,7 @@ This Governance Components solution contains flows that you will need to manuall
 - Microsoft Teams Admin \| Weekly Clean Up of Microsoft Teams environments
 
 >[!IMPORTANT]
-> These flows will be turned off on solution import, and you can turn them on once you're ready to use them. Only turn on the Weekly Clean Up of Microsoft Teams environments once you are ready to enforce deletion of Teams environments.
+> These flows will be turned off on solution import, and you can turn them on as soon as you're ready to use them. Only turn on the Weekly Clean Up of Microsoft Teams environments when you're ready to enforce the deletion of Teams environments.
 
 ## Share apps with makers
 
@@ -117,14 +117,20 @@ The Governance Components solution contains one app, which is used by makers to 
 
 ### Developer Compliance Center
 
-Your app, flow and bot makers will  use the Developer Compliance Center app to provide further information about the resources they're building - get familiar with the [audit process](example-processes.md) and share the app with your makers. Your makers must have a Power Apps Premium license to use this app.
+Your app, flow, and bot makers will use the Developer Compliance Center app to provide further information about the resources they're building. Get familiar with the [audit process](example-processes.md) and share the app with your makers. Your makers must have a Power Apps Premium license to use this app.
 
-In addition to sharing the app, you will also need to share the data by providing data permissions to the user.
+In addition to sharing the app, you'll also need to share the data by providing data permissions to the user.
 
-1. Navigate to make.powerapps.com and select the app
-1. Select ... > Share
-1. Select the Dataverse data permissions
+1. Go to make.powerapps.com and select the app.
+
+1. Select **...** > **Share**.
+
+1. Select the Dataverse data permissions.
+
    ![Sharing Data 1](media/SharingData1.png "Sharing Data 1")
-1. Select the Power Platform Maker Security Role
+
+1. Select the Power Platform Maker Security Role.
+
    ![Sharing Data 2](media/SharingData2.png "Sharing Data 2")
-1. Select Share
+
+1. Select **Share**.
