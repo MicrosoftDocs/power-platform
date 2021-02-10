@@ -19,8 +19,6 @@ search.app:
 
 # Released version Core Components 1.54
 
-## Introduction
-
 Version 1.54 for the CoE Starter Kit Core Components is now available. This article describes the updates, including the new features and the fixes to existing functionality, included in this release. This version was first made available on July 24, 2020.
 
 ## Bug Fixes
