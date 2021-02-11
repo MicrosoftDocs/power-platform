@@ -9,7 +9,7 @@ ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/08/2021
+ms.date: 02/11/2021
 search.audienceType: 
   - admin
 search.app:
@@ -37,6 +37,7 @@ In this example, four security groups provide controlled access to a specific en
   
  Note the following about security groups:  
   
+- Nested security groups are not supported. If there is a nested security group in an environment's security group, members of the nested security group will be ignored. 
 - When users are added to the security group, they are added to the Dataverse environment.  
 - When users are removed from the group, they are disabled in the Dataverse environment.  
 - When a security group is associated with an existing environment with users, all users in the environment that are not members of the group will be disabled. 
