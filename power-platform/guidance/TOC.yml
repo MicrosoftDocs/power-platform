@@ -100,6 +100,8 @@
         href: coe/setup-theming.md
       - name: Set up Innovation Backlog components
         href: coe/setup-innovationbacklog.md
+      - name: Set up ALM Accelerator for Makers components
+        href: coe/setup-almaccelerator.md
     - name: What's in the CoE Starter Kit
       items:  
       - name: CoE Starter Kit modules
@@ -135,7 +137,9 @@
         - name: Dataverse for Teams environment management
           href: coe/teams-governance.md  
         - name: Use the Innovation Backlog app
-          href: coe/use-innovationbacklog.md  
+          href: coe/use-innovationbacklog.md 
+        - name: Use the ALM Accelerator for Makers
+          href: coe/almaccelerator-components.md
     - name: Limitations
       href: coe/limitations.md
     - name: Release notes

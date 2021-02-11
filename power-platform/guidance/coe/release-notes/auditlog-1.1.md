@@ -19,9 +19,7 @@ search.app:
 
 # Released version Audit Log Components 1.1
 
-## Introduction
-
-Version 1.0.0.17 for the CoE Starter Kit Audit Log Components is now available. This article describes the updates, including the new features and the fixes to existing functionality, included in this release. This version was first made available on September 18, 2020.
+Version 1.1 for the CoE Starter Kit Audit Log Components is now available. This article describes the updates, including the new features and the fixes to existing functionality, included in this release. This version was first made available on September 18, 2020.
 
 ## Table changes
 
