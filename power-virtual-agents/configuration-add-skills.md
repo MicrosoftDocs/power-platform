@@ -51,7 +51,7 @@ Before registering the skill, provide the bot's ID to your skills developer to a
 
 **Add bot to skill's allow list:**
 
-1. In the [Power Virtual Agents portal](https://powerva.microsoft.com), on the side navigation pane, expand the **Manage** menu and select **Skills**.
+1. In the [Power Virtual Agents portal](https://web.powerva.microsoft.com), on the side navigation pane, expand the **Manage** menu and select **Skills**.
 
    ![Select Manage, then Skills](media/skills-menu.png)
 
@@ -66,7 +66,7 @@ Before registering the skill, provide the bot's ID to your skills developer to a
 
 **Enter the skill manifest URL to add a skill to your bot:**
 
-1. In the [Power Virtual Agents portal](https://powerva.microsoft.com), on the side navigation pane, expand the **Manage** menu and select **skills**.
+1. In the [Power Virtual Agents portal](https://web.powerva.microsoft.com), on the side navigation pane, expand the **Manage** menu and select **skills**.
 
    ![Select Manage, then skills](media/skills-menu.png)
 
