@@ -19,8 +19,6 @@ search.app:
 
 # Released version Nurture Components 1.14
 
-## Introduction
-
 Version 1.14 for the CoE Starter Kit Nurture Components is now available. This article describes the updates, including the new features and the fixes to existing functionality, included in this release. This version was first made available in preview on April 17, 2020.
 
 > [!NOTE]

@@ -412,9 +412,7 @@ With Power Query support, we now provide advanced filtering and data transformat
     > [!div class="mx-imgBorder"] 
     > ![Enable filtering](media/data-integrator/EnablePQFiltering80.png "Enable filtering")
 
-<!--note from editor: I don't see an "otherwise" in the screenshot. I see "else".-->
-
-9. Default value transforms can be achieved using the conditional column. To do this, from the **Add Column** dropdown list, select **Add Conditional Column** and enter the name of the new column. Fill in both **Then** and **Otherwise** with what should be the default value, using any field and value for **If** and **equal to**.
+9. Default value transforms can be achieved using the conditional column. To do this, from the **Add Column** dropdown list, select **Add Conditional Column** and enter the name of the new column. Fill in both **Then** and **Else** with what should be the default value, using any field and value for **If** and **equal to**.
 
     > [!div class="mx-imgBorder"] 
     > ![Add conditional column](media/data-integrator/EnablePQDefaultValueTransforms2780.png "Add conditional column")
