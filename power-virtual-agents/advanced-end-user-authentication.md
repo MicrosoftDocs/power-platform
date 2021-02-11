@@ -2,7 +2,7 @@
 title: "Add user authentication to chatbot topics"
 description: "Insert user authentication into a topic to allow your users to sign in directly within a conversation."
 keywords: "User Authentication, Authentication, AAD, MSA, Identity Provider, PVA"
-ms.date: 9/22/2020
+ms.date: 2/11/2020
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -76,21 +76,21 @@ Don't use `AuthToken` inside **Message** nodes, or on flows that you don't trust
 
 ## Testing authentication variables
 
-When testing topics which uses authentication and authentication variables in the Test bot, the account of the person logged into PVA will always be used. There might be a need to test other values for UserDisplayName and UserID, especially for the empty value cases. To test other values for UserDisplayName and UserID, the following command can be sent to the test bot.
+By default, the **Test bot** pane will use the account of the currently signed-in user to populate the `UserDisplayName` and `UserID` variables. However, when testing topics that use authentication, you might want to use other values for these variables (or even a blank value). 
 
-```/debug set bot.UserDisplayName "Tomas Richardson"```
+For example, you might want to test how special characters are used, or what happens if the variable is empty. 
 
-To set an empty value to the same variable, the following command can be sent to the test bot:
+This only applies to the **Test bot** pane; you can't use the commands described in this section in a published bot deployed to a channel.
 
-```/debug set bot.UserDisplayName ""```
+The following table lists the commands that will populate these variables. Enter the command into the **Test bot** pane just as you would if you were normally chatting with the bot. You'll receive a confirmation message from the bot if you're successful. If your bot doesn't use authentication, you'll receive an error.
 
-You can also set the ```UserID``` variable to empty, as follows:
+Variable | Custom value code | Empty (blank) value code
+-- | -- | --
+`UserDisplayName` | ```/debug set bot.UserDisplayName "Value"``` | ```/debug set bot.UserDisplayName ""```
+`UserID` | Not available | ```/debug set bot.UserID ""```
 
-```/debug set bot.UserID ""```
-
-Note that you cannot set UserID to a non-empty value due security reasons. 
-
-These commands only work on the Test bot inside PVA, they do not work in a production bot deployed to a channel.
+>[!IMPORTANT]
+>You can't populate the `UserID` variable with a custom value (other than an empty or blank value) due to security reasons. 
 
 
 ## Authentication when using "Only for Teams" configuration
