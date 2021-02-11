@@ -84,6 +84,8 @@ This only applies to the **Test bot** pane; you can't use the commands described
 
 The following table lists the commands that will populate these variables. Enter the command into the **Test bot** pane just as you would if you were normally chatting with the bot. You'll receive a confirmation message from the bot if you're successful. If your bot doesn't use authentication, you'll receive an error.
 
+If you reset the **Test bot** pane (or you make changes to a topic that cause the **Test bot** to reset automatically), you will need to send the commands again.
+
 Variable | Custom value command | Empty (blank) value command
 -- | -- | --
 `UserDisplayName` | ```/debug set bot.UserDisplayName "Value"``` | ```/debug set bot.UserDisplayName ""```
