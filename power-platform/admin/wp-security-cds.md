@@ -1,7 +1,7 @@
 ---
 title: "Security concepts in Microsoft Dataverse | MicrosoftDocs"
 description: Provides detailed information about the security model and concepts in Microsoft Dataverse.
-ms.date: 07/21/2020
+ms.date: 02/11/2021
 ms.service: power-platform
 ms.topic: "article"
 author: jimholtz
@@ -21,6 +21,9 @@ search.app:
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 One of the key features of [Dataverse](/powerapps/maker/common-data-service/data-platform-intro) is its rich security model that can adapt to many business usage scenarios. This security model is only in play when there is a Dataverse database in the environment. As an administrator, you likely won't be building the entire security model yourself, but will often be involved in the process of managing users and making sure they have the proper configuration and troubleshooting security access related issues.
+
+> [!TIP]
+> ![Video symbol](../admin/media/video-thumbnail-4.png "Video symbol") Check out the following video: [Common Data Service – Security Concepts Shown In Demos](https://youtu.be/8UWSj-vvxzU)  
 
 ## Role-based security
 
