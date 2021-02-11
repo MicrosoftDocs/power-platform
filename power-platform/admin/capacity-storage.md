@@ -1,7 +1,7 @@
 ---
 title: "New Microsoft Dataverse storage capacity  | MicrosoftDocs"
 description: Introducing a new storage model for Microsoft Dataverse.
-ms.date: 01/22/2021
+ms.date: 02/11/2021
 ms.reviewer: ""
 ms.service: "power-platform"
 ms.topic: "quickstart"
@@ -84,11 +84,20 @@ The actual files such as .pdf (or any other file attachment type) are stored in 
 
 This page provides similar information as the **Summary** tab, but with an environment-level view of where your organization is using capacity.
 
-To view the **Storage capacity** page, select **Resources** > **Capacity** > **Storage capacity**. See the next section for using the **Details** button (![Storage data details button](media/storage-data-details-button.png "Storage data details button")) to see environment capacity analytics.
+To view the **Storage capacity** page, select **Resources** > **Capacity** > **Dataverse**. 
+
+Note the following features:
+
+|Feature  |Description  |
+|---------|---------|
+|Trial     | Select the **Trial** tab to list trial environments.        |
+|Download     | Select **Download** above the list of environments to download an Excel .CSV file with high-level storage information for each environment that the user has permissions to see in the Power Platform admin center.        |
+|Search     | Use **Search** to search by the environment name and the environment type.         |
+|Last updated   | The Last updated column shows when the environment was last updated.        |
+|Details  | See the next section for using the **Details** button (![Storage data details button](media/storage-data-details-button.png "Storage data details button")) to see environment capacity analytics.   |
 
 > [!div class="mx-imgBorder"] 
 > ![Storage data per environment details button](media/storage-data-per-environment2.png "Storage data per environment details button")
-
 
 > [!NOTE]
 > - The following environments don't count against capacity and are shown as 0 GB:
@@ -104,7 +113,7 @@ This page provides an environment-level detailed view of where your organization
 
 **To view environment-level capacity analytics**
 
-1. Select **Resources** > **Capacity** > **Storage capacity**.
+1. Select **Resources** > **Capacity** > **Dataverse**.
 2. Select an environment.
 3. Select **Details** (![Storage data details button2](media/storage-data-details-button.png "Storage data details button2")).
 
