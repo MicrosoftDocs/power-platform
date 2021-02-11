@@ -2,7 +2,7 @@
 title: "Rate limits for chatbots"
 description: "Rate limits determine how often messages can be sent to a chatbot"
 keywords: "PVA, quotas, rate limits, requests, restrictions"
-ms.date: 9/22/2020
+ms.date: 2/11/2021
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -18,7 +18,7 @@ Quotas are default constraints applied to chatbots that limit how often messages
 
 Quotas are applied to your chatbots alongside the capacity constraints you gained by purchasing a [Power Virtual Agents plan](https://powervirtualagents.microsoft.com/pricing). Also see [Licensing and capacity considerations](requirements-licensing.md).
 
-The following quotas, defined as requests per minute (RPM) and requests per second (RPS), apply to Power Virtual Agents chatbots. A request is a message from the user to the chatbot, or a message from an Azure Bot Framework Skill, in a single chat session.  
+The following quotas, defined as requests per minute (RPM), apply to Power Virtual Agents chatbots. A request is a message from the user to the chatbot, or a message from an Azure Bot Framework Skill, in a single chat session.  
   
   
 
@@ -31,7 +31,7 @@ Action | Quota with the paid plan
 
 ## Power Virtual Agents for Teams service limit 
 
-Power Virtual Agents sessions that are included with [select Microsoft 365 subscriptions](requirements-licensing-subscriptions.md#power-virtual-agents-for-microsoft-teams-plan) are not pooled and have the following limits:
+Power Virtual Agents sessions that are included with [select Microsoft 365 subscriptions](requirements-licensing-subscriptions.md#power-virtual-agents-for-microsoft-teams-plan) aren't pooled and have the following limits:
 
 License | Session limits every 24 hours
 --|--
