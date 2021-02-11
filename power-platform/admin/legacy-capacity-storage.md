@@ -1,7 +1,7 @@
 ---
 title: "Legacy storage capacity  | MicrosoftDocs"
 description: About the legacy storage model.
-ms.date: 01/22/2021
+ms.date: 02/11/2021
 ms.reviewer: ""
 ms.service: "power-platform"
 ms.topic: "quickstart"
@@ -78,7 +78,17 @@ To view the **Summary** page, select **Resources** > **Capacity** > **Summary**.
 
 This page provides similar information as the **Summary** tab, but with an environment-level view of where your organization is using capacity.
 
-To view the **Storage capacity** page, select **Resources** > **Capacity** > **Storage capacity**. See the next section for using the **Details** button (![Details button](media/storage-data-details-button.png "Details button")) to see environment capacity analytics.
+To view the **Storage capacity** page, select **Resources** > **Capacity** > **Dataverse**. 
+
+Note the following features:
+
+|Feature  |Description  |
+|---------|---------|
+|Trial     | Select the **Trial** tab to list trial environments.        |
+|Download     | Select **Download** above the list of environments to download an Excel .CSV file with high-level storage information for each environment.        |
+|Search     | Use **Search** to search by the environment name and the environment type.         |
+|Last updated   | The Last updated column shows when the environment was last updated.        |
+|Details  | See the next section for using the **Details** button (![Storage data details button](media/storage-data-details-button.png "Storage data details button")) to see environment capacity analytics.   |
 
 > [!div class="mx-imgBorder"] 
 > ![Storage capacity tab](media/capacity-old-license-model-storage-tab.png "Storage capacity tab")
@@ -98,7 +108,7 @@ This page provides an environment-level detailed view of where your organization
 
 **To view environment-level capacity analytics**
 
-1. Select **Resources** > **Capacity** > **Storage capacity**.
+1. Select **Resources** > **Capacity** > **Dataverse**.
 2. Select an environment.
 3. Select **Details** (![Details button](media/storage-data-details-button.png "Details button")).
 
