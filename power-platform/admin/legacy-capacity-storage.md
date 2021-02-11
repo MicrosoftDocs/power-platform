@@ -85,7 +85,7 @@ Note the following features:
 |Feature  |Description  |
 |---------|---------|
 |Trial     | Select the **Trial** tab to list trial environments.        |
-|Download     | Select **Download** above the list of environments to download an Excel .CSV file with high-level storage information for each environment that the user has permissions to see in the Power Platform admin center.        |
+|Download     | Select **Download** above the list of environments to download an Excel .CSV file with high-level storage information for each environment.        |
 |Search     | Use **Search** to search by the environment name and the environment type.         |
 |Last updated   | The Last updated column shows when the environment was last updated.        |
 |Details  | See the next section for using the **Details** button (![Storage data details button](media/storage-data-details-button.png "Storage data details button")) to see environment capacity analytics.   |
