@@ -1,12 +1,13 @@
 ---
 title: "Replicate data to Azure SQL Database using Data Export Service | MicrosoftDocs"
 description: Replicate data to Azure SQL Database using Data Export Service 
-author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/27/2021
-ms.author: jimholtz
+ms.date: 02/11/2021
+ms.author: sabinn
+author: sabinn-msft
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
@@ -74,7 +75,7 @@ For information about the programmatic interface for managing configuration and 
   
 - Grant PermissionsToSecrets permission to the application with the id "b861dbcc-a7ef-4219-a005-0e4de4ea7dcf." This can be completed by running the [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)][!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] command below and is used to access the Key Vault that contains the connection string secret. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [How to set up Azure Key Vault](#SetupAzureKV)  
   
-- The Key Vault should be tagged with the organization (OrgId) and tenant ids (TenantId).  This can be completed by running the [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)][!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] command below. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [How to set up Azure Key Vault](#SetupAzureKV)  
+- Secrets within the Key Vault should be tagged with the organization (OrgId) and tenant ids (TenantId).  This can be completed by running the [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)][!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] command below. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [How to set up Azure Key Vault](#SetupAzureKV)  
   
 - Configure your firewall rules to allow communication between Data Export Service and Azure Key Vault.
 
