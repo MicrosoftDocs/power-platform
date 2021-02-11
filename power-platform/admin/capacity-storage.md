@@ -84,13 +84,20 @@ The actual files such as .pdf (or any other file attachment type) are stored in 
 
 This page provides similar information as the **Summary** tab, but with an environment-level view of where your organization is using capacity.
 
-To view the **Storage capacity** page, select **Resources** > **Capacity** > **Dataverse**. See the next section for using the **Details** button (![Storage data details button](media/storage-data-details-button.png "Storage data details button")) to see environment capacity analytics.
+To view the **Storage capacity** page, select **Resources** > **Capacity** > **Dataverse**. 
 
-Select **Download** above the list of environments to download an Excel .CSV file with high-level storage information for each environment that the user has permissions to see in the Power Platform admin center.
+Note the following features:
+
+|Feature  |Description  |
+|---------|---------|
+|Trial     | Select the **Trial** tab to list trial environments.        |
+|Download     | Select **Download** above the list of environments to download an Excel .CSV file with high-level storage information for each environment that the user has permissions to see in the Power Platform admin center.        |
+|Search     | Use **Search** to search by the environment name and the environment type.         |
+|Last updated   | The Last updated column shows when the environment was last updated.        |
+|Details (![Storage data details button](media/storage-data-details-button.png "Storage data details button")) | See the next section for using the **Details** button to see environment capacity analytics.   |
 
 > [!div class="mx-imgBorder"] 
 > ![Storage data per environment details button](media/storage-data-per-environment2.png "Storage data per environment details button")
-
 
 > [!NOTE]
 > - The following environments don't count against capacity and are shown as 0 GB:
