@@ -29,6 +29,14 @@ Action | Quota with the paid plan
 
 \*Chatbots created in the North America region support 600 RPM. 800 RPM applies to [all other supported regions](data-location.md).
 
+## Power Virtual Agents for Teams service limit 
+
+Power Virtual Agents sessions that are included with [select Microsoft 365 subscriptions](requirements-licensing-subscriptions.md#power-virtual-agents-for-microsoft-teams-plan) are not pooled and have the following limits:
+
+License | Session limits every 24 hours
+--|--
+**Power Virtual Agents for Teams** | 10 per user
+
 ## Error messages when quotas are met
 
 If the quota for **messages to a chatbot** is met, the user chatting with the chatbot will see a failure notice when they try to send a message. They'll be prompted to retry.
