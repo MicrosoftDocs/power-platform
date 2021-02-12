@@ -1,6 +1,6 @@
 ---
-title: "Create and update solutions in Power Apps | Microsoft Docs"
-description: "Learn about managed properties in Power Apps"
+title: "Create and update custom Power Apps solutions for ALM"
+description: "Learn how to create and update custom solutions in Power Apps, including solution patches and clones."
 keywords: 
 author: Mattp123
 ms.author: matp
