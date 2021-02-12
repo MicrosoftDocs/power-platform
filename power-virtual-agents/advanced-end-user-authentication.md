@@ -2,7 +2,7 @@
 title: "Add user authentication to chatbot topics"
 description: "Insert user authentication into a topic to allow your users to sign in directly within a conversation."
 keywords: "User Authentication, Authentication, AAD, MSA, Identity Provider, PVA"
-ms.date: 9/22/2020
+ms.date: 2/11/2020
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -73,6 +73,27 @@ The ```AuthToken``` variable contains the user's token, obtained after the user 
 > Make sure you're passing the `AuthToken` variable only to trusted sources. It contains user authentication information, which, if compromised, could harm the user.
 
 Don't use `AuthToken` inside **Message** nodes, or on flows that you don't trust. 
+
+## Testing authentication variables
+
+By default, the **Test bot** pane will use the account of the currently signed-in user to populate the `UserDisplayName` and `UserID` variables. However, when testing topics that use authentication, you might want to use other values for these variables (or even a blank value). 
+
+For example, you might want to test how special characters are used, or what happens if the variable is empty. 
+
+This only applies to the **Test bot** pane; you can't use the commands described in this section in a published bot deployed to a channel.
+
+The following table lists the commands that will populate these variables. Enter the command into the **Test bot** pane just as you would if you were normally chatting with the bot. You'll receive a confirmation message from the bot if you're successful. If your bot doesn't use authentication, you'll receive an error.
+
+If you reset the **Test bot** pane (or you make changes to a topic that cause the **Test bot** to reset automatically), you will need to send the commands again.
+
+Variable | Custom value command | Empty (blank) value command
+-- | -- | --
+`UserDisplayName` | ```/debug set bot.UserDisplayName "Value"``` | ```/debug set bot.UserDisplayName ""```
+`UserID` | Not available | ```/debug set bot.UserID ""```
+
+>[!IMPORTANT]
+>You can't populate the `UserID` variable with a custom value (other than an empty or blank value) due to security reasons. 
+
 
 ## Authentication when using "Only for Teams" configuration
 

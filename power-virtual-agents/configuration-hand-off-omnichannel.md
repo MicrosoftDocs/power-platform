@@ -70,7 +70,15 @@ Sign in to the Power Virtual Agents bot you want to connect to Omnichannel for C
 >If you want to test the bot on your custom website, you must use the embed code that is specified in the chat widget you set up in Omnichannel (see **Prerequisites** in the [Integrate a Power Virtual Agents bot](/dynamics365/omnichannel/administrator/configure-bot-virtual-agent#prerequisites) article). If you use the embed code from the Power Virtual Agents site, hand-off will not occur correctly.
 
 ## Remove Omnichannel for Customer Service connection
-Once your bot has been connected to Omnichannel for Customer Service, you cannot remove the connection setting. If you erroneously connected to the wrong instance or environment, you will need to create a new bot and try connecting to Omnichannel for Customer Service again.
+You can remove a bot from Omnichannel for Customer Service by disconnecting the connection in Power Virtual Agents.
+
+1. Sign in to the Power Virtual Agents bot you want to connect to Omnichannel for Customer Service.
+
+1. Select **Settings**, and then **Transfer to agent**.
+
+1. Under **Dynamics 365 Omnichannel Customer Engagement**, select **Disconnect**.
+
+    :::image type="content" source="media/configuration-hand-off-omnichannel/disconnect-omnichannel.png" alt-text="Screenshot of the Transfer to agent page in Power Virtual Agents where you can select the Disconnect button to remove the connection.":::
 
 ## Content display issues
 Some content may not show, such as emojis and certain types of notes or variables. If you encounter problems with the display of content, see the [Omnichannel for Customer Service documentation library](/dynamics365/omnichannel/omnichannel-readme).

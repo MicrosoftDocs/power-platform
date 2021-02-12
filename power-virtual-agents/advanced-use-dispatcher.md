@@ -48,7 +48,7 @@ You'll need to retrieve your Power Virtual Agents bot's content (topics and utte
 
 1.	In Microsoft Edge, select F12 to open DevTools. (Note: For other browsers, use comparable commands and functionality.)
 
-2.	[Sign in to your Power Virtual Agents environment](https://powerva.microsoft.com) using your Azure Active Directory (Azure AD) credentials. 
+2.	[Sign in to your Power Virtual Agents environment](https://web.powerva.microsoft.com) using your Azure Active Directory (Azure AD) credentials. 
 
 3.	Go to the **Network** tab.
     >[!div class="mx-imgBorder"]
