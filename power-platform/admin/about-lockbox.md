@@ -31,7 +31,7 @@ After access is granted to Microsoft, any action taking place in the Azure SQL d
 > [!NOTE]
 > When you turn on lockbox for an environment with a Dataverse database, lockbox only supports access requests to Dataverse data stored in Azure SQL. Any Dataverse data stored in non-SQL data stores is currently out of scope. When lockbox is applied to an environment with a Dataverse database, lockbox only protects the data that is stored in Azure SQL. Any data located in other data stores is currently out of scope.
 
-## Workflow
+## Workflow 
 
 1. Your organization has an issue with Microsoft Power Platform, and opens a support request with Microsoft Support.
 
