@@ -84,7 +84,7 @@ Repeat these steps to add more users, or exit the Microsoft 365 admin center if 
   > [!NOTE]
   > To simplify user license management, you can assign licenses to an Azure Active Directory (Azure AD) security group. More information: [Assign licenses to users by group membership in Azure Active Directory](/azure/active-directory/users-groups-roles/licensing-groups-assign)
 
-The users can now sign in to the [Power Virtual Agents portal](https://powerva.microsoft.com).
+The users can now sign in to the [Power Virtual Agents portal](https://web.powerva.microsoft.com).
 
 ## How to differentiate between tenant and user licenses
 

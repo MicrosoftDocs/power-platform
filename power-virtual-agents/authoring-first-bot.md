@@ -26,7 +26,7 @@ To help get you started and tailor the bot to your specific needs, Power Virtual
 
 >[!NOTE]
 >You can only see bots in the version of Power Virtual Agents where you created them.  
->This means if you create a bot with the Power Virtual Agents app in Microsoft Teams, you will not see the bot in the web app of Power Virtual Agents at https://powerva.microsoft.com.
+>This means if you create a bot with the Power Virtual Agents app in Microsoft Teams, you will not see the bot in the web app of Power Virtual Agents at https://web.powerva.microsoft.com.
 
 
  

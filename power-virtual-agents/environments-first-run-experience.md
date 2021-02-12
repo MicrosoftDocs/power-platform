@@ -85,7 +85,7 @@ To create a bot in an environment where you don't have access, you'll need to be
 
 2. Assign the security role of "bot author" to you in the environment. More information: [Create users and assign security roles](/power-platform/admin/create-users-assign-online-security-roles#assign-a-security-role-to-a-user).
 
-You can then return to the [Power Virtual Agents portal](https://powerva.microsoft.com) and create a bot in the environment.
+You can then return to the [Power Virtual Agents portal](https://web.powerva.microsoft.com) and create a bot in the environment.
 
 More information:
 - [Power Platform - Environments overview](/power-platform/admin/environments-overview)
