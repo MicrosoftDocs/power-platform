@@ -4,7 +4,7 @@ description: About lockbox for Power Platform
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/09/2021
+ms.date: 02/11/2021
 author: jimholtz
 ms.author: miferlan
 ms.reviewer: jimholtz
@@ -29,7 +29,7 @@ Whenever Microsoft attempts to access data that's stored in an Azure SQL databas
 After access is granted to Microsoft, any action taking place in the Azure SQL database during the elevated access period is recorded and made available to your organization as SQL audit logs. You can export these logs to your own data lake. More information: [Audit lockbox requests](#audit-lockbox-requests)
 
 > [!NOTE]
-> When you turn on lockbox for an environment with a Dataverse database, lockbox only supports access requests to Dataverse data stored in Azure SQL. Any Dataverse data stored in non-SQL data stores is currently out of scope. When lockbox is applied to an environment with a Dataverse database, lockbox only protects the data that is stored in Azure SQL. Any data located in other data stores is currently out of scope.
+> Dataverse leverages several Azure storage technologies. A single Dataverse database could store data in Azure SQL, Azure Cosmos DB, Azure Storage, etc. When you turn on lockbox for an environment with a Dataverse database, lockbox only supports access requests to Dataverse data stored in Azure SQL. Any Dataverse data stored in non-SQL data stores is currently out of scope.
 
 ## Workflow 
 
