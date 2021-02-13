@@ -33,8 +33,9 @@ The model-driven Power Apps and customer engagement apps (Dynamics 365 Sales, Dy
  You use a common web browser, such as [!INCLUDE[pn_Internet_Explorer](../includes/pn-internet-explorer.md)], [!INCLUDE[tn_Mozilla_Firefox](../includes/tn-mozilla-firefox.md)], [!INCLUDE[tn_Google_Chrome](../includes/tn-google-chrome.md)] or [!INCLUDE[tn_Apple_Safari](../includes/tn-apple-safari.md)] to view, add, or edit information stored in your organization’s  database. For more information about the supported web browsers and hardware requirements, see [Web application requirements for Microsoft Dynamics 365 apps](web-application-requirements.md).  
 
 ## Mobile device requirements  
- Users can work in model-driven Power Apps or customer engagement apps by one of these mobile apps:
- - [Power Apps mobile](https://docs.microsoft.com/en-us/powerapps/mobile/run-powerapps-on-mobile)
+ Work with model-driven Power Apps or customer engagement apps on your mobile device. For supported device and requirements, see:
+ 
+ - [Power Apps mobile](https://docs.microsoft.com/powerapps/mobile/run-powerapps-on-mobile#supported-devices)
  - [Dynamics 365 for phones and Dynamics 365 for tablets](https://docs.microsoft.com/dynamics365/mobile-app/support-phones-tablets).
 
 ## Microsoft Office requirements  
