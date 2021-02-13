@@ -23,7 +23,7 @@ search.app:
   
 - Web browser. No need to install anything to run customer engagement apps from a computer running a supported web browser.  
 
-- [Dynamics 365 App for Outlook](https://docs.microsoft.com/dynamics365/outlook-app/overview). An [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] which let you manage your app data right within [!INCLUDE[pn_MS_Outlook_Full](../includes/pn-ms-outlook-full.md)].  
+- [Dynamics 365 App for Outlook](https://docs.microsoft.com/dynamics365/outlook-app/overview). An [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] which, lets you manage your app data right within [!INCLUDE[pn_MS_Outlook_Full](../includes/pn-ms-outlook-full.md)].  
 
 - [Power Apps mobile](https://docs.microsoft.com/powerapps/mobile/run-powerapps-on-mobile). Use the Power Apps mobile app to run model-driven apps on your mobile device. 
   
