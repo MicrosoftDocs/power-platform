@@ -19,11 +19,11 @@ search.app:
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-The model-driven Power Apps and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), give you the following options to access data:  
+[Model-driven Power Apps](https://docs.microsoft.com/powerapps/maker/model-driven-apps/model-driven-app-overview) and customer engagement apps (such as [Dynamics 365 Sales](https://docs.microsoft.com/dynamics365/sales-professional/help-hub), [Dynamics 365 Customer Service](https://docs.microsoft.com/dynamics365/customer-service/help-hub), and [Dynamics 365 Marketing](https://docs.microsoft.com/dynamics365/marketing/help-hub) and [Dynamics 365 Project Operations](https://docs.microsoft.com/dynamics365/project-operations)), give you the following options to access data:  
   
 - Web browser. No need to install anything to run customer engagement apps from a computer running a supported web browser.  
 
-- [Dynamics 365 App for Outlook](https://docs.microsoft.com/dynamics365/outlook-app/overview). An [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] add-in that provides you with a complete set of customer engagement apps capabilities right within [!INCLUDE[pn_MS_Outlook_Full](../includes/pn-ms-outlook-full.md)].  
+- [Dynamics 365 App for Outlook](https://docs.microsoft.com/dynamics365/outlook-app/overview). An [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] add-in that provides you with a complete set of model-driven apps capabilities right within [!INCLUDE[pn_MS_Outlook_Full](../includes/pn-ms-outlook-full.md)].  
 
 - [Power Apps mobile](https://docs.microsoft.com/powerapps/mobile/run-powerapps-on-mobile). Use the Power Apps mobile app to run model-driven apps on your mobile device. 
   
