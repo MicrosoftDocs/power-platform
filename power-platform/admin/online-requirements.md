@@ -36,7 +36,7 @@ search.app:
  Work with model-driven Power Apps or customer engagement apps on your mobile device. For supported device and requirements, see:
  
  - [Power Apps mobile](https://docs.microsoft.com/powerapps/mobile/run-powerapps-on-mobile#supported-devices)
- - [Dynamics 365 for phones and Dynamics 365 for tablets](https://docs.microsoft.com/dynamics365/mobile-app/support-phones-tablets).
+ - [Dynamics 365 for phones and Dynamics 365 for tablets](https://docs.microsoft.com/dynamics365/mobile-app/support-phones-tablets)
 
 ## Microsoft Office requirements  
  Customer engagement apps leverage the capabilities of on-premises versions of [!INCLUDE[pn_MS_Office](../includes/pn-ms-office.md)] or [!INCLUDE[pn_MS_Office_365](../includes/pn-ms-office-365.md)] and integrates with [!INCLUDE[pn_MS_Word_Full](../includes/pn-ms-word-full.md)] and [!INCLUDE[pn_MS_Excel_Full](../includes/pn-ms-excel-full.md)]. For more information about the supported versions of [!INCLUDE[pn_MS_Office](../includes/pn-ms-office.md)], see [Supported versions of Office](web-application-requirements.md#supported-versions-of-office).  
