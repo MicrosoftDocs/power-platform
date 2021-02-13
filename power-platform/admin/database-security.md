@@ -8,7 +8,7 @@ ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/14/2021
+ms.date: 02/12/2021
 search.audienceType: 
   - admin
 search.app:
@@ -32,6 +32,24 @@ These security roles can be assigned to the user, [owner team](manage-teams.md#a
 
 There is another set of security roles that is assigned to [application users](system-application-users.md). Those security roles are installed by our services and cannot be updated.
 
+## Summary of resources available for predefined security roles 
+The following table describes which resources can be authored by each security role.
+
+|Resource  |Environment Maker  |Environment Admin  |System Customizer  |System Admin  |
+|---------|---------|---------|---------|---------|
+|Canvas app     |X         |X         |-         |X         |
+|Cloud flow     |X (non-solution aware)         |X         |X (solution aware)         |X         |
+|Connector     |X         |X         |-         |X         |
+|Connection     |X         |X         |-         |X         |
+|Data gateway     |X         |X         |-         |X         |
+|Dataflow     |X         |X         |-         |X         |
+|Dataverse tables     |-         |-         |X         |X         |
+|Model-driven app     |-         |-         |X         |X         |
+|Solution framework     |-         |-         |X         |X         |
+|Desktop flow     |-         |-         |X         |X         |
+|AI Builder     |-         |-         |X         |X         |
+
+## Which predefined security roles are available
 Which predefined security roles are available in your environment depends on the environment type.
 
 ### Environments without a Dataverse database
