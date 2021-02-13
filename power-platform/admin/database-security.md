@@ -8,7 +8,7 @@ ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/14/2021
+ms.date: 02/12/2021
 search.audienceType: 
   - admin
 search.app:
@@ -20,7 +20,7 @@ search.app:
 
 # Configure user security to resources in an environment
 
-Microsoft Dataverse uses a role-based security model to help secure access to the database. This topic explains how to create the security artifacts that you must have to help secure resources in an environment. Security roles can be used to configure environment-wide access to all resources in the environment, or to configure access to specific apps and data in the environment. Security roles control a user's access to an environment's resources through a set of access levels and permissions. The combination of access levels and permissions that are included in a specific security role governs the limitations on the user's view of apps and data, and on the user's interactions with that data. 
+Microsoft Dataverse uses a role-based security model to help secure access to the database. This article explains how to create the security artifacts that you must have to help secure resources in an environment. Security roles can be used to configure environment-wide access to all resources in the environment, or to configure access to specific apps and data in the environment. Security roles control a user's access to an environment's resources through a set of access levels and permissions. The combination of access levels and permissions that are included in a specific security role governs the limitations on the user's view of apps and data, and on the user's interactions with that data. 
 
 An environment can have zero or one Dataverse database. The process for assigning security roles for environments that have no Dataverse database differs from that for an environment that does have a Dataverse database. 
 
@@ -32,6 +32,24 @@ These security roles can be assigned to the user, [owner team](manage-teams.md#a
 
 There is another set of security roles that is assigned to [application users](system-application-users.md). Those security roles are installed by our services and cannot be updated.
 
+## Summary of resources available for predefined security roles 
+The following table describes which resources can be authored by each security role.
+
+|Resource  |Environment Maker  |Environment Admin  |System Customizer  |System Admin  |
+|---------|---------|---------|---------|---------|
+|Canvas app     |X         |X         |-         |X         |
+|Cloud flow     |X (non-solution aware)         |X         |X (solution aware)         |X         |
+|Connector     |X         |X         |-         |X         |
+|Connection     |X         |X         |-         |X         |
+|Data gateway     |X         |X         |-         |X         |
+|Dataflow     |X         |X         |-         |X         |
+|Dataverse tables     |-         |-         |X         |X         |
+|Model-driven app     |-         |-         |X         |X         |
+|Solution framework     |-         |-         |X         |X         |
+|Desktop flow     |-         |-         |X         |X         |
+|AI Builder     |-         |-         |X         |X         |
+
+## Environments and security roles
 Which predefined security roles are available in your environment depends on the environment type.
 
 ### Environments without a Dataverse database
@@ -163,7 +181,7 @@ Start by downloading the solution from the Download Center: [Dataverse minimum p
 
 Then, follow these directions to import the solution: [Import solutions](/powerapps/maker/common-data-service/import-update-export-solutions).
 
-When you import the solution, it creates the **min prv apps use** role, which you can copy (see: [Create a security role by Copy Role](create-edit-security-role.md#create-a-security-role-by-copy-role)). When the Copy Role process is completed, navigate to each tab&mdash;**Core Records**, **Business Management**, **Customization**, and so on&mdash;and set the appropriate privileges. 
+When you import the solution, it creates the **min pro apps use** role, which you can copy (see: [Create a security role by Copy Role](create-edit-security-role.md#create-a-security-role-by-copy-role)). When the Copy Role process is completed, navigate to each tab&mdash;**Core Records**, **Business Management**, **Customization**, and so on&mdash;and set the appropriate privileges. 
 
 > [!IMPORTANT]
 > You should try out the solution in a development environment before importing it into a production environment. 
