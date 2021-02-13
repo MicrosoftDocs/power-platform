@@ -49,7 +49,7 @@ The following table describes which resources can be authored by each security r
 |Desktop flow     |-         |-         |X         |X         |
 |AI Builder     |-         |-         |X         |X         |
 
-## Which predefined security roles are available
+## Environments and security roles
 Which predefined security roles are available in your environment depends on the environment type.
 
 ### Environments without a Dataverse database
