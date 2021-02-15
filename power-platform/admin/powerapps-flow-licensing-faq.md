@@ -475,3 +475,17 @@ AI models available in public preview do not require paid AI Builder capacity. A
 
 ### Is a trial available for AI Builder?
 Users without an existing Power Apps or Power Automate license can access AI Builder trial capacity for 30 days by signing up for either a Power Apps or Power Automate trial. Existing Power Apps and Power Automate users can access AI Builder trial capacity for 30-days by signing into the respective service and accessing AI Builder in the left navigation pane.  
+
+## Power Automate RPA license
+
+### How can I apply unattended RPA licenses to my flow
+There are a few steps to apply unattended RPA licenses:
+- Step 1: the tenant admin needs to purchase or get trial version of the unattended RPA add-on capacity for this tenant. The tenant admin can do this from the M365 admin portal [here](https://admin.microsoft.com/AdminPortal/Home#/catalog). Just search the add-ons session from purchase services page
+  ![get unattended license](./media/RPA-license/unattended-license-M365.JPG)
+- Step 2: the environment admin needs to assign the available (paid or trial) unattended add-on capacities to a specific environment
+  ![manage unattended license](./media/RPA-license/unattended-license-manage.png)
+- Step 3: now the flow makers can run unattended desktop flows within the environment where unattended capacity is available. 
+> [!NOTE]
+> The unattended add-on is environment based. So if you have multiple environments needs to run unattended RPA, you need to assign add-on capacity to each of them. 
+> Also if you need to run multiple unattended desktop flows in parallel at the same time in one environment, you need to assign the right number of unattended add-on to this environment to scale up.
+ 
