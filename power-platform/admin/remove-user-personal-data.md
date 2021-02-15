@@ -66,3 +66,6 @@ You can also update the data for a disabled user using the Web API or Organizati
 
 ### See also
 [Analyze and share your data with Excel templates](analyze-your-data-with-excel-templates.md)<br/>
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

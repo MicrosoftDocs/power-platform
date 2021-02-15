@@ -119,3 +119,5 @@ Data centers undergo audits like any other expansion.
 [Microsoft Azure Germany](https://azure.microsoft.com/overview/clouds/germany/)<br />
 [New datacenter regions](new-datacenter-regions.md)<br />
 [Migrate customer data to the new "Local" German regions](https://docs.microsoft.com/dynamics365/get-started/migrate-data-german-region)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

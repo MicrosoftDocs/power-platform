@@ -154,3 +154,6 @@ The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service,
 ### See also
 [Blog: What is a tenant?](https://powerbi.microsoft.com/blog/what-is-a-tenant/) <br />
 [Environments overview](environments-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -40,3 +40,6 @@ Review and modify the following settings:
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

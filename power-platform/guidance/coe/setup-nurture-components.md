@@ -160,3 +160,6 @@ The nurture components solution contains four apps. As soon as you're ready to a
 - Training in a day Management: Share with admins only.
 
 - Training in a day Registration: Share with your entire organization.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -472,3 +472,6 @@ For information on *past* deprecations, see:
 - [Important changes coming in future releases of Dynamics 365](https://docs.microsoft.com/previous-versions/dynamicscrm-2016/administering-dynamics-365/dn265924(v=crm.8))
 
 - [Important changes coming in future releases of Dynamics 365 (Developers)](https://docs.microsoft.com/previous-versions/dynamicscrm-2016/developers-guide/dn281891(v=crm.8))
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

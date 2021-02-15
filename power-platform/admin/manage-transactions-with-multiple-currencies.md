@@ -79,3 +79,6 @@ Currencies determine the prices for products in the product catalog and the cost
 
 ### See also  
  [System Settings dialog box - General tab](system-settings-dialog-box-general-tab.md)   
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

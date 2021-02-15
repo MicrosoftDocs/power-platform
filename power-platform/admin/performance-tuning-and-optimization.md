@@ -34,3 +34,6 @@ Operations that require intensive database transactions examples:
 [Verify network capacity and throughput for clients](verify-network-capacity-throughput-clients.md) <br />
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

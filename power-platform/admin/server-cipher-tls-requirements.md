@@ -57,3 +57,6 @@ To verify that your server complies with the security protocol, you can perform 
 [Cipher Suites in TLS/SSL (Schannel SSP)](https://docs.microsoft.com/windows/win32/secauthn/cipher-suites-in-schannel)  <br />
 [Manage Transport Layer Security (TLS)](https://docs.microsoft.com/windows-server/security/tls/manage-tls)  <br />
 [How to enable TLS 1.2](https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2)  
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

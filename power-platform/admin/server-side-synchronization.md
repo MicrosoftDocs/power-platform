@@ -66,3 +66,6 @@ Server-side synchronization is the preferred option for organizations with users
 ### See also  
  [Set up server-side synchronization of email, appointments, contacts, and tasks](../admin/set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks.md)   
  [Synchronizing data with Outlook or Exchange FAQ](frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

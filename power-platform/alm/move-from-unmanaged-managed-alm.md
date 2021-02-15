@@ -87,3 +87,6 @@ Larger, more complex projects require these tasks:<!--This would be better as a 
 
 ###  See also
 [Scenario 4: Supporting team development](team-development-alm.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -24,3 +24,6 @@ Version 1.17 for the CoE Starter Kit Nurture Components is now available. This a
 ## Modern Solution Import Experience
 
 Connection References have been added to the solution to support the new modern import solution experience. All flows have been updated to use connection references, rather than connections.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

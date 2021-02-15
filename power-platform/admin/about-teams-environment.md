@@ -295,3 +295,6 @@ The **Built by your colleagues** catalog intentionally filters out **Shared with
 [Power Automate and Teams](https://docs.microsoft.com/power-automate/teams/overview)<br/>
 [Power Virtual Agents and Teams](https://aka.ms/pva-teams-docs)<br />
 [Enable Microsoft Teams Integration for model-driven apps](enable-teams-integration.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

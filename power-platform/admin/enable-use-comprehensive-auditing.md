@@ -246,3 +246,6 @@ When audit log search in the Microsoft 365 Security and Compliance Center is tur
 [Search the audit log in the compliance Center](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide) <br />
 Search the audit log for user activity using [Office 365 Management APIs overview](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

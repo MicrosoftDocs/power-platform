@@ -50,3 +50,6 @@ Admins can do the following from the Power Platform admin center:
    > ![Share or delete app](media/resources-edit-power-app.png "Share or delete app") 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

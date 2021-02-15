@@ -331,3 +331,6 @@ protected void ExecutePreValidateAccountDelete(LocalPluginContext localContext)
 ### See also  
 
 [Localize product property values](/dynamics365/customer-engagement/developer/localize-product-property-values)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -165,3 +165,6 @@ If your customer wants to disable your access to the subscription, they must com
 1. Sign in to the [!INCLUDE[pn_Online_Subscription](../includes/pn-online-subscription.md)] with the [!INCLUDE[pn_Windows_Live_ID](../includes/pn-windows-live-id.md)] you use for the billing administrator at your company.  
   
 2. Follow the steps in [Create users and assign security roles](create-users-assign-online-security-roles.md) to disable the user from the partner company.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

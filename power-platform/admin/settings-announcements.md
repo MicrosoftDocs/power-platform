@@ -81,3 +81,6 @@ Make the announcements available to other users in your organization by using we
 7. Select **Save**.
 
 8. Add this new web resource to any existing or new dashboard.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -21,3 +21,6 @@ Microsoft Power Automate administrators can use the Microsoft Power Platform adm
 
 ### See also
 [Working with the admin portals](wp-work-with-admin-portals.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

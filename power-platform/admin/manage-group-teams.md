@@ -145,3 +145,6 @@ For more information, see [Assign a record to a user or team](https://docs.micro
 
 ### See also
 [Manage teams](manage-teams.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

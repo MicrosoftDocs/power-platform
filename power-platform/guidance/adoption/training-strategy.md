@@ -63,3 +63,6 @@ Citizen developers will come from all parts of your organization and, traditiona
 An effective way to gain buy-in is to highlight the positive impact the project can have for different stakeholders.
 
 Creating an innovation-friendly culture can take time. It's important to address people's concerns about how it might affect their part of the organization, both in the short term and the long run.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -44,3 +44,6 @@ You can control how model-driven apps in Dynamics 365, such as Dynamics 365 Sale
   
 ### See also  
  [Customize regional options (admins)](../admin/customize-regional-options-admins.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

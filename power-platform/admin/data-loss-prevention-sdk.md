@@ -58,3 +58,6 @@ This sample calls DLP APIs in Microsoft.PowerApps.Administration.PowerShell to c
 
 This sample provides some DLP scenarios about how to call DLP APIs for your reference. You can run the sample and see the result.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -72,3 +72,6 @@ You can purchase Power Apps subscriptions for your organization from the [Micros
 ## Power Apps per app plan
 
 See [About Power Apps per app plans](about-powerapps-perapp.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

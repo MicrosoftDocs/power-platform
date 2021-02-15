@@ -98,3 +98,6 @@ More information: [About GitHub Actions](https://help.github.com/actions/getting
 ### See Also
 
 [GitHub Actions for Microsoft Power Platform](devops-github-actions.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

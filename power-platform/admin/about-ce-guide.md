@@ -33,3 +33,6 @@ Use links on this page to manage organization-wide settings. App-specific settin
 
 ### See also
 [Working with the admin portals](wp-work-with-admin-portals.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

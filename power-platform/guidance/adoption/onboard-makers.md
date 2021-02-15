@@ -31,3 +31,6 @@ The [nurture components](https://docs.microsoft.com/power-platform/guidance/coe/
 Even though we recommend that you use the CoE Starter Kit, alternatively the [hands-on lab](https://github.com/microsoft/powerapps-tools/blob/master/Administration/AdminInADay/LabMaterials/M03_Automation.docx) part of our admin-in-a-day training includes step-by-step instructions on how to set up a welcome email flow.
 
 ![Sample welcome email to new makers](https://docs.microsoft.com/power-platform/guidance/coe/media/coe5.png "Sample welcome email to new makers")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

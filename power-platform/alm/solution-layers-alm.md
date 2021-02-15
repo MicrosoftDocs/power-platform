@@ -106,3 +106,6 @@ favor of maintaining the customization functionality.
 ### See also
 
 [Understand how managed solutions are merged](how-managed-solutions-merged.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

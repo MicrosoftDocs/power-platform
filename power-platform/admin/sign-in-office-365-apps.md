@@ -54,3 +54,6 @@ After April 1, 2021, when users navigate to https://home.dynamics.com, they will
  [Quickly navigate with the Office app launcher and the Dynamics 365 home page](../admin/quickly-navigate-office-365-app-launcher.md)   
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

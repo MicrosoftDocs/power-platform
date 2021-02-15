@@ -36,3 +36,5 @@ Select **Edit** to review and edit all your environment details.
 
 ### See also
 [Environments Overview](environments-overview.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
