@@ -424,3 +424,6 @@ See [Delete approval history from Power Automate](https://docs.microsoft.com/pow
 
 ### See also
 [Dataverse storage capacity](capacity-storage.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

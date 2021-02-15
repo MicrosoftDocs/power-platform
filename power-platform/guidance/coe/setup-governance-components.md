@@ -134,3 +134,6 @@ In addition to sharing the app, you'll also need to share the data by providing 
    ![Sharing Data 2](media/SharingData2.png "Sharing Data 2")
 
 1. Select **Share**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

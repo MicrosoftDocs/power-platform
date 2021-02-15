@@ -47,3 +47,6 @@ Make sure you have the System Administrator or System Customizer security role o
 > |Allow auto-tracking on outgoing email|Default: Off. Content coming.|
 > |**Tracking between people**| |
 > |Track emails sent between Dynamics 365 users as two activities|Default: On. Select this option to create two email activities between [!INCLUDE[pn_crm_shortest](../includes/pn-crm-shortest.md)] users, one for the sender and one for the recipient.| 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

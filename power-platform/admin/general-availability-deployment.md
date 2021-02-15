@@ -48,3 +48,6 @@ The general availability deployment is based on the regions where environments a
 [Dynamics 365 and Power Platform Release Plans ](https://docs.microsoft.com/dynamics365/release-plans/) <br />
 [Policies and communications ](policies-communications.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

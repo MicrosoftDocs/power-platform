@@ -100,3 +100,6 @@ A language includes the following information:
 ### See also
 
 [Environments overview](environments-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

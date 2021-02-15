@@ -161,3 +161,6 @@ In the web app, select **Test & Enable Mailbox** to test the mailbox configured 
    > [!div class="mx-imgBorder"] 
    > ![Test and enable mailbox](media/gmail-oauth-test-enable-mailbox.png "Test and enable mailbox")
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

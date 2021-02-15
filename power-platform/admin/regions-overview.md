@@ -80,3 +80,6 @@ For optimal performance, if your users are in Europe, create and use the environ
 ## Can I create an environment outside of my tenant region?
 
 Currently, there are limits to creating an environment for a region that differs from your tenant region. Please contact your account manager or [Technical Support](get-help-support.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

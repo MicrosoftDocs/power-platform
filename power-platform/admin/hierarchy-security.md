@@ -145,3 +145,6 @@ Make sure you have the System Administrator or System Customizer security role o
  [Query and visualize hierarchical data](https://docs.microsoft.com/dynamics365/customer-engagement/customize/query-visualize-hierarchical-data)   
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -42,3 +42,6 @@ The [Center of Excellence Starter Kit](../guidance/coe/starter-kit.md) offers a 
 [Dataverse analytics](analytics-common-data-service.md)<br />
 [Admin Analytics for Microsoft Power Automate](analytics-flow.md)<br />
 [Admin Analytics for Power Apps](analytics-powerapps.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -68,3 +68,6 @@ Use the settings on this page to configure system-level settings for the sales a
  [Set up product bundles to sell multiple items together](https://docs.microsoft.com/dynamics365/sales-enterprise/create-product-bundles-sell-multiple-items-together)   
  [Use properties to describe a product](https://docs.microsoft.com/dynamics365/sales-enterprise/use-properties-describe-product)  
  [Administrator and Sales Manager Guide](https://docs.microsoft.com/dynamics365/sales-enterprise/admin-guide)  
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -43,3 +43,6 @@ Role-based security controls access to a specific entity type, record-based secu
   
 ### See also  
  [Control data access](../admin/security-roles-privileges.md)   
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -25,3 +25,6 @@ This is the first version of the ALM Accelerator for Makers components:
 
 - [Set up ALM Accelerator for Makers components](../setup-almaccelerator.md)
 - [Use ALM Accelerator for Makers components](../almaccelerator-components.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

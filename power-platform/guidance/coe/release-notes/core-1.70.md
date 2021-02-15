@@ -40,3 +40,6 @@ To help with the setup, the custom connector used in the [Audit Log components](
 ## Deprecation
 
 The DLP Editor and DLP Customizer canvas apps have been deprecated, due to limitations with the DLP actions in the Power Platform for Admins connector.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

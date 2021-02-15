@@ -309,3 +309,6 @@ search.app:
 ### See also  
  [Download a template for data import](../admin/download-template-data-import.md)   
  [Using Word templates](../admin/using-word-templates-dynamics-365.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

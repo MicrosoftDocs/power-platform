@@ -103,3 +103,5 @@ With relationships, the only managed property is **Can Be Customized**. This sin
 
 ### See also
 [Use segmented solutions](segmented-solutions-alm.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

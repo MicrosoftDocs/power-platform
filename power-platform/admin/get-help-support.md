@@ -140,3 +140,6 @@ For some support requests, you’ll be asked to request a support environment. C
 ### See also
 [Support overview](support-overview.md)<br />
 [How do I check my online service health?](check-online-service-health.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

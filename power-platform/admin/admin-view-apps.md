@@ -56,3 +56,6 @@ In this topic, you learned how to download and view a list of apps created in an
 > [!div class="nextstepaction"]
 > [Manage apps created in your organization](admin-manage-apps.md)
 -->
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

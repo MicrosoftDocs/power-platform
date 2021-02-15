@@ -64,3 +64,6 @@ Exports all the assigned user licenses (Power Apps and Power Automate) in your t
 
 The export can take a while for tenants with a large number of Microsoft Power Platform users.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

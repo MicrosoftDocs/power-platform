@@ -110,3 +110,6 @@ More information: [Power Apps PowerShell overview](https://docs.microsoft.com/po
 
 ### See also
 [Implementing healthy ALM](implement-healthy-alm.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

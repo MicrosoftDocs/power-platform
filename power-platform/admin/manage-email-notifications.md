@@ -30,3 +30,6 @@ If you need to pull a list of email addresses that will receive admin notificati
 ## Send email notifications to multiple recipients  
 
 By default, admins will receive update notifications. You can add others to receive update notifications using the [Set-AdminPowerAppCdsAdditionalNotificationEmails cmdlet](https://docs.microsoft.com/powershell/module/microsoft.powerapps.administration.powershell/set-adminpowerappcdsadditionalnotificationemails?view=pa-ps-latest).  It will allow you to set email addresses of users linked to an environment, other than default admins, that should receive notifications.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

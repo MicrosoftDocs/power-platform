@@ -488,3 +488,6 @@ Consider the following tips to ensure performance while importing or exporting d
 ### Importing/Exporting data to/from customer engagement apps
 
 - Ensure indexes are defined for integration keys.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

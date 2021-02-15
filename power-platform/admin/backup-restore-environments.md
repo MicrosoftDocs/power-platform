@@ -203,3 +203,6 @@ Only sandbox environments can be restored to.
 [Manage sandbox environments](sandbox-environments.md) <br />
 [Environments overview](environments-overview.md) <br />
 [Licensing overview for Microsoft Power Platform](pricing-billing-skus.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -28,3 +28,6 @@ Features from the Power Apps admin center have moved to the Microsoft Power Plat
 [Working with the admin portals](wp-work-with-admin-portals.md) <br />
 [Reference: Videos and PowerPoint presentations](videos.md) <br />
 [What's the role of a Power Apps administrator?](overview-role-powerapps-admin.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

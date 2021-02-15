@@ -47,3 +47,6 @@ The [CoE Starter Kit](https://aka.ms/coestarterkit), a collection of templates, 
 - Identify [implicitly shared app connections](https://docs.microsoft.com/power-platform/guidance/coe/power-bi-govern#identify-implicitly-shared-app-connections).
 
 - Set up an [app auditing process](https://docs.microsoft.com/power-platform/guidance/coe/example-processes) that requires app makers to provide more details—such as business justification and impact—if an app is shared with a high number of users.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

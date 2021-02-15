@@ -107,3 +107,6 @@ Now, when you download and open a document based on this template, it will conta
 ### See also
 
 [Use Word templates to create standardized documents](using-word-templates-dynamics-365.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

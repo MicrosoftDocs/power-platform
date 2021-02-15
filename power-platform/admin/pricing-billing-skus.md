@@ -110,3 +110,6 @@ Dynamics 365 Applications can be customized using Power Apps and Power Automate 
 
 More information: [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544).
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

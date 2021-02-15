@@ -121,3 +121,6 @@ remove any steps that depend on it. You must remove those steps individually.
 ### See also
 
 [Web resources](web-resource-component.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

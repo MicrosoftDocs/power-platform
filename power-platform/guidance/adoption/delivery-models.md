@@ -55,3 +55,6 @@ This team should also consider the notion of a Center of Excellence to manage th
 ## BizDevOps
 
 Rapid app development can only happen at the speed that operations such as IT can support the apps created. BizDevOps is a holistic relationship between app makers and operations that works in a virtuous loop. For this to work, all teams need to have a clear vision of the digital culture the organization is moving toward. To get the maximum value from the apps created, they need reliable support, governance, and maintainability. As technology evolves, updates will need to be made on the apps to keep them current. Not only being aware of change, but having a plan for managing it, is a key to successful apps.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

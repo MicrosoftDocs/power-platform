@@ -49,3 +49,6 @@ If you want to create a security role that is similar to another security role, 
  [Security roles](../admin/security-roles-privileges.md)   
  [Field-level security](../admin/field-level-security.md)
  [Prevent elevation of security role privilege](prevent-elevation-security-role-privilege.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

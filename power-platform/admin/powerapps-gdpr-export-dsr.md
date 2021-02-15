@@ -333,3 +333,6 @@ For guidance on how to respond to DSR requests for users that use Dataverse, see
 
 > [!IMPORTANT]
 >  We recommend that administrators complete this step for Power Apps users.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

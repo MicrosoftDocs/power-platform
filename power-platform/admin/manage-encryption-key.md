@@ -294,3 +294,6 @@ A customer tenant can have environments that are encrypted using the Microsoft m
 ### See also  
 [Microsoft.Xrm.OnlineManagementAPI PowerShell reference](/powershell/module/microsoft.xrm.onlinemanagementapi/?view=dynamics365ce-ps) <br />
 [SQL Server: Transparent Data Encryption (TDE)](/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

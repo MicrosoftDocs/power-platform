@@ -232,3 +232,6 @@ We are working to address the following known issues and limitations:
 [Create a data loss prevention (DLP) policy](create-dlp-policy.md) <br />
 [Manage data loss prevention (DLP) policies](prevent-data-loss.md) <br />
 [Data loss prevention (DLP) policy commands](powerapps-powershell.md#data-loss-prevention-dlp-policy-commands)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

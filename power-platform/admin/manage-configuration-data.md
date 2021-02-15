@@ -83,3 +83,6 @@ For information on downloading the Configuration Migration tool, see [Download t
 [Modify a configuration data schema](modify-configuration-data-schema.md)<br /> 
 [Import configuration data](import-configuration-data.md)<br /> 
 [Manage product catalog configuration](../admin/manage-product-catalog-configuration.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

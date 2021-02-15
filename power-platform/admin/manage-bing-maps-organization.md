@@ -66,3 +66,6 @@ Learn how you can manage [!INCLUDE[pn_bing_maps](../includes/pn-bing-maps.md)] f
 [!INCLUDE[cc_privacy_crm_bing_maps](../includes/cc-privacy-crm-bing-maps.md)]
   
 ### See also  
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
