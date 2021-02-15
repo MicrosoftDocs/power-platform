@@ -69,3 +69,6 @@ One of the main reasons people use customer engagement apps (Dynamics 365 Sales,
  
  
  
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

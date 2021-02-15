@@ -36,3 +36,6 @@ To get you started administering Power Apps, Power Automate, and Dataverse, chec
 * Learn how to [create a data loss protection (DLP) policy](create-dlp-policy.md).
 * Learn how to [download a list of active users in your tenant](admin-view-user-licenses.md).
 * Learn about [environments](environments-overview.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -44,3 +44,6 @@ The following is a high-level overview of how security model is implemented in D
 [Block access by location with Azure AD Conditional Access](restrict-access-online-trusted-ip-rules.md)<br />
 [Cross-tenant inbound and outbound restrictions](cross-tenant-restrictions.md)<br />
 [Control user access to environments: security groups and licenses](control-user-access.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

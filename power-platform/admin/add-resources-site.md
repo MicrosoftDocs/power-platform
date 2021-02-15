@@ -40,3 +40,6 @@ After you create a site, you can add resources such as users, equipment, or faci
   
 ### See also  
  [Regional and language options for your organization](enable-languages.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

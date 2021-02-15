@@ -115,3 +115,6 @@ In order to assign security roles to a user, you need to have the appropriate pr
 
 By default, the System Administrator security role has all the required privileges to assign security roles to any user including assigning the System Administrator security role. If you have a need to allow non-System Administrators to assign security roles, you should consider creating a custom security role. See [Create an administrative user and prevent elevation of security role privilege](prevent-elevation-security-role-privilege.md). 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -104,3 +104,6 @@ To view reports in another environment:
 
 
 ![View reports from another environment](media/analytics-flow/new-environment.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

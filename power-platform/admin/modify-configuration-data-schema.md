@@ -54,3 +54,6 @@ Download the Configuration Migration Tool. The Configuration Migration tool is a
  [Import configuration data](import-configuration-data.md)   
  [Create a schema to export configuration data](create-schema-export-configuration-data.md)   
  [Manage your configuration data](manage-configuration-data.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

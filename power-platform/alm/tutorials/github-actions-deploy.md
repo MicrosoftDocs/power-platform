@@ -253,3 +253,6 @@ Congratulations, you have successfully setup a sample CI/CD workflow using GitHu
 ### See Also
 
 [Automate your workflow from idea to production](https://github.com/features/actions)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

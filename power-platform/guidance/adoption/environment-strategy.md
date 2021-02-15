@@ -199,3 +199,6 @@ Set up a [SharePoint site or a wiki](wiki-community.md) that clearly communicate
   - Protect organization data. Avoid moving data from highly confidential or confidential data sources to non-protected or external storage.
 
 Also clearly communicate your organization’s [DLP policies to makers](dlp-strategy.md#clearly-communicate-your-organizations-dlp-policies-to-makers).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

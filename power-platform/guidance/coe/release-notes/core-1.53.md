@@ -26,3 +26,6 @@ Version 1.53 for the CoE Starter Kit Core Components is now available. This arti
 This version fixed bugs in the **Admin | Sync Template v3 (Power Apps Shared With Users)** flow - the trigger in this flow was incorrect.
 
 This version fixed the exponential timeout settings in the **Admin | Sync Template v3 (PVA)** flow to ensure customers do not hit thresholds.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

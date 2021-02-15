@@ -59,3 +59,6 @@ To open settings for legacy client apps, select the arrow next to the app name, 
 > ![Legacy settings](media/legacy-settings.png "Legacy settings")
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

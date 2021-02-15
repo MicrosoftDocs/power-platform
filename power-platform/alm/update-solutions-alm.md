@@ -121,3 +121,6 @@ A patch must have a higher build or revision number than the parent solution. It
 
 ### See also
 [Overview of tools and apps used with ALM](tools-apps-used-alm.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

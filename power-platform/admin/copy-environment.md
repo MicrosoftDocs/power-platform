@@ -183,3 +183,6 @@ Power Virtual Agent resources were recently included as part of the copy operati
 [Legacy storage capacity](legacy-capacity-storage.md)
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

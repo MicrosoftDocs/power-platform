@@ -31,3 +31,6 @@ The following articles can help you understand how to get started with your ente
 
    :::column-end:::
 :::row-end:::
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

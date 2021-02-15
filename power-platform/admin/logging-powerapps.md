@@ -80,3 +80,5 @@ To use the preconfigured Power Apps reports, go to https://protection.office.com
  [Search the audit log in the compliance Center](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide)<br/>
  [Office 365 Management APIs overview](https://msdn.microsoft.com/office-365/office-365-managment-apis-overview)<br/>
  [Permissions in the Security & Compliance Center](https://docs.microsoft.com/office365/securitycompliance/permissions-in-the-security-and-compliance-center)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

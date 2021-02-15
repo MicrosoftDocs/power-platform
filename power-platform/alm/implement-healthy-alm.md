@@ -38,3 +38,6 @@ The scenarios range from people who are new to Microsoft Power Platform to exist
 
 ### See also
 [ALM basics in Power Apps](basics-alm.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

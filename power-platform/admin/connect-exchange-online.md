@@ -299,3 +299,6 @@ Set-CrmRecord -conn $conn -CrmRecord $emailserverprofile
 ### See also  
 [Troubleshooting and monitoring server-side synchronization](../admin/troubleshooting-monitoring-server-side-synchronization.md)   
 [Test mail flow by validating your connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/test-mail-flow)   
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

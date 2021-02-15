@@ -164,3 +164,6 @@ This is an artifact of previous, but no longer required, licenses being assigned
 
 **Mitigation steps**:
 The maker should sign up for the trial to proceed with creating the connection that uses a gateway. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

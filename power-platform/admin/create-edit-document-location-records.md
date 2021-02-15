@@ -53,3 +53,6 @@ search.app:
 >  To activate or deactivate a document location, on the **Document Locations** page, select the document location record, and choose **Activate** or **Deactivate**.  
   
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

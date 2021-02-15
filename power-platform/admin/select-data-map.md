@@ -44,3 +44,6 @@ The following tables help you decide which data map to use.
 |  **Custom Maps** (optional)   | **When to Use**    |  
 |  Custom maps   |   If available, custom data maps created for your organization are listed here.   |  
   
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

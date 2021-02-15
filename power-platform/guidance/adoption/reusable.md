@@ -77,3 +77,6 @@ When you use the **Send a copy** feature, it also allows you to provide an Offic
 ## Additional guidelines
 
 You might have additional guidelines, such as brand standards, logos and brand pictures, colors, accessibility standards in the form of PDFs, or links on your intranet. Make sure your makers know how to find those, and make them easily available in a template catalog or link list from your [maker community](wiki-community.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

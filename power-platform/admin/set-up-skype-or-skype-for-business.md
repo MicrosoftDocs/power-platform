@@ -64,3 +64,6 @@ When you use [!INCLUDE[pn_skype_for_business](../includes/pn-skype-for-business.
 ### See also 
  [Skype for Business and Skype integration](skype-business-integration.md)   
  [Skype for Business help](https://support.office.com/skype-for-business)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

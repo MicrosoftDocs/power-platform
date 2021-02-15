@@ -140,3 +140,6 @@ A solution component represents something that you can potentially customize. An
 ### See also
 [Solution layers](solution-layers-alm.md) <br />
 [Create and manage environments in the Power Platform admin center](https://docs.microsoft.com/power-platform/admin/create-environment) <br />
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

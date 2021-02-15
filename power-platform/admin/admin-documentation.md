@@ -39,3 +39,6 @@ Currently, the admin center provides the following capabilities.
 ### See also
 [Working with the admin portals](wp-work-with-admin-portals.md)<br />
 [Reference: Videos and PowerPoint presentations](videos.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -43,3 +43,6 @@ Additionally, if the Archival process of the Governance components is used, apps
 ## Bug Fixes
 
 - Change the Check Approval flows to use a recurrence instead of an automated trigger
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

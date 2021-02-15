@@ -119,3 +119,6 @@ Follow these steps to make all the out-of-the-box actions available and entities
 
 ### See also
 [Overview of building model-driven apps](https://docs.microsoft.com/powerapps/maker/model-driven-apps/model-driven-app-overview)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

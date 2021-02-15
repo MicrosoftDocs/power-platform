@@ -70,3 +70,6 @@ Select each version below to see release notes and updates for each component. Y
 | [1.4](release-notes/auditlog-1.4.md) | February 1, 2021 |
 | [1.1](release-notes/auditlog-1.1.md) | September 18, 2020 |
 | [1.0](release-notes/auditlog-1.0.md) | July 8, 2020 |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

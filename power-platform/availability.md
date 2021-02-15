@@ -31,3 +31,6 @@ Please review and respect the full disclaimer included in all printed and electr
 
 ### See also
 [International availability of Dynamics 365](https://docs.microsoft.com/dynamics365/get-started/availability)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -92,3 +92,6 @@ Don’t stop at the hackathon—put together short- and long-term plans:
 -	What’s the pipeline of apps that are going to be built? 
 -	Will any of the apps built during the hackathon make it into production, and how can your makers be supported on that journey? 
 -	Create enthusiasm for Microsoft Power Platform after the event by sharing some stories in internal newsletters or on your intranet; get creative and ask attendees for quotes or even interview them.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

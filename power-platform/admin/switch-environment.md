@@ -40,3 +40,5 @@ You may decide that your customization work developed and tested on a sandbox en
    > ![Select Continue](media/switch-environment.png "Select Continue")
 
 5. On the confirmation page, select  **OK**.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

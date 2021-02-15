@@ -99,3 +99,6 @@ th, td {
 </style> </head>
 
 ```
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -75,3 +75,6 @@ After you've [installed the CoE Starter Kit solution](setup.md), get familiar wi
 - Get started with the Microsoft Power Platform path on Microsoft Learn, a free online and interactive training platform [aka.ms/PowerUp](https://aka.ms/PowerUp).
 
 - As an admin looking after the CoE, you should be familiar with the administration and governance of Microsoft Power Platform. We recommend the following white paper as a resource: [aka.ms/PowerAppsAdminWhitepaper](https://aka.ms/powerappsadminwhitepaper).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

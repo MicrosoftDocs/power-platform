@@ -46,3 +46,6 @@ Download the Configuration Migration Tool. The Configuration Migration tool is a
   
 ### See also  
  [Manage your configuration data using the Configuration Migration tool](manage-configuration-data.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -46,3 +46,6 @@ You will see the license and capacity information for the licenses you have purc
 
 ### If there are no licenses purchased by tenant users 
 The **Capacity from self-service user licenses** page will be blank.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

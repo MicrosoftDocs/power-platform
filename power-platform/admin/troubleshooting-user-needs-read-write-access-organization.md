@@ -138,3 +138,5 @@ There are multiple ways to do this:
 ### Known issue
 
 The check for the presence of security roles assigned to a user only checks for roles directly assigned to the user and can't currently check for roles inherited through group team memberships.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

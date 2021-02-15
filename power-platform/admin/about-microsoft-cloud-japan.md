@@ -110,3 +110,6 @@ A support engineer will assist you in verifying required prerequisites and provi
 ### See also  
  [Office 365 now available from datacenters in Japan](https://blogs.office.com/2014/12/15/office-365-now-available-datacenters-japan/)   
  [New datacenter regions](new-datacenter-regions.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

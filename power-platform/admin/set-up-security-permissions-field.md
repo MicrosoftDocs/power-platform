@@ -59,3 +59,6 @@ You can restrict access to a field by creating a field security profile. After y
   
 ### See also  
  [Enable or disable security for a field](../admin/enable-disable-security-field.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -247,3 +247,6 @@ If you don't have a paid GitHub org plan, do the following for all projects crea
 1. Repeat the preceding steps to add a **TEST_ENVIRONMENT_SECRET** and **PROD_ENVIRONMENT_SECRET**.
 
 You can now [use the ALM Accelerator for Makers components](almaccelerator-components.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

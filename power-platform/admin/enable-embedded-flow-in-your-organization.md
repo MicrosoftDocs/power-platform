@@ -64,3 +64,6 @@ Once the Power Automate integration feature is enabled, the following privileges
  
 ### See also  
  [Create and edit web resources](https://docs.microsoft.com/powerapps/maker/model-driven-apps/create-edit-web-resources)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -112,3 +112,6 @@ Organizations can create a model and visualize their sales territories in a hier
 ### See also  
  [Administrator and sales manager guide](https://docs.microsoft.com/dynamics365/sales-enterprise/admin-guide)   
  [Nurture sales from lead to order (Sales)](https://docs.microsoft.com/dynamics365/sales-enterprise/nurture-sales-from-lead-order-sales)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

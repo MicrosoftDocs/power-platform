@@ -51,3 +51,6 @@ Field-level security lets you set which fields users can see or edit. For exampl
 ### See also  
  [Field-level security](field-level-security.md)   
  [Set up security permissions for a field](../admin/set-up-security-permissions-field.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

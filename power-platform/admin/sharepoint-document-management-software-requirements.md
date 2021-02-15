@@ -86,3 +86,6 @@ If you want to use [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint
 
 ### See also  
 [Set up SharePoint integration](set-up-sharepoint-integration.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
