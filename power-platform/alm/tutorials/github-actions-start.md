@@ -64,3 +64,6 @@ You now have the development, build, and production environments needed in the f
 ### See Also
 
 [Automate your workflow from idea to production](https://github.com/features/actions)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

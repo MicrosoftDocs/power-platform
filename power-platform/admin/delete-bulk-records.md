@@ -55,3 +55,6 @@ For information about how to implement bulk delete in code, see [Delete data in 
 ### See also  
  [Manage your data](add-remove-sample-data.md)   
  [Data Encryption](data-encryption.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

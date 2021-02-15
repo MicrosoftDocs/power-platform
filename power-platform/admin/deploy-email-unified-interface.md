@@ -75,3 +75,6 @@ Here, you can read and manage your emails in the Email in Unified Interface app.
 
 [Accessibility for people with disabilities](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/basics/accessibility-people-with-disabilities)<br/>
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

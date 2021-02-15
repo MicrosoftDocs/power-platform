@@ -176,3 +176,6 @@ You can use the OrgDBOrgSettings tool to change database settings that govern de
 
 For more information, see [Environment database settings](environment-database-settings.md).
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -64,3 +64,6 @@ By default,  when you build or customize a model-driven app, you work with the s
 [Managed properties](managed-properties-alm.md)
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

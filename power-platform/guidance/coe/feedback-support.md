@@ -24,3 +24,6 @@ If you face issues with:
 
 - **Using the kit**: Report your issue here: [aka.ms/coe-starter-kit-issues](https://github.com/microsoft/powerapps-tools/issues/new?assignees=JeneferM-MSFT&labels=coestarterkit&template=-coe-starter-kit-app--bug-report.md&title=%5BBUG%5D%3A+issue+title). (Microsoft Support won't help you with issues related to this kit, but they will help with related, underlying platform and feature issues.)
 - **The core features in Microsoft Power Platform**: Use your standard channel to contact Microsoft Support.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

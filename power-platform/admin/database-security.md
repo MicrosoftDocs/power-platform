@@ -190,3 +190,6 @@ When you import the solution, it creates the **min pro apps use** role, which yo
 [Grant users access](grant-users-access.md) <br />
 [Control user access to environments: security groups and licenses](control-user-access.md) <br />
 [How access to a record is determined](how-record-access-determined.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

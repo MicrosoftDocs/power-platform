@@ -119,3 +119,6 @@ Content-Type: application/json; charset=utf-8
 [Retrieve the list of rules](retrieve-rules.md)<br />
 [Upload a file](upload-file.md)<br />
 [Invoke analysis](analyze.md)<br />
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

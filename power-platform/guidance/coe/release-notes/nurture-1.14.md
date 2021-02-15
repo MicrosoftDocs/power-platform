@@ -23,3 +23,6 @@ Version 1.14 for the CoE Starter Kit Nurture Components is now available. This a
 
 > [!NOTE]
 > No specific fixes or improvements have been publicly disclosed as a part of this released version.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

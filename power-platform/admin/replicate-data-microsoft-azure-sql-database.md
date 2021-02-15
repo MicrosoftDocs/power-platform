@@ -654,3 +654,6 @@ If your error logs show "String length in source longer than destination schema 
  [AppSource: Data Export Service](https://appsource.microsoft.com/product/dynamics-365/mscrm.44f192ec-e387-436c-886c-879923d8a448)   <br />
  [Data Export Service](https://docs.microsoft.com/powerapps/developer/common-data-service/data-export-service) <br />
  [Team Blog: Introduction to Data Export Service](https://blogs.msdn.microsoft.com/crm/2017/04/11/introduction-to-dynamics-365-data-export-service/)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

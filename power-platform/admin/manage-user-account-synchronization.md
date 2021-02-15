@@ -78,3 +78,6 @@ Review the following resources to equip you to make the right decision for your 
    Your URL should look like: https://<em>contoso</em>.crm.dynamics.com?whr=*<http://sts1.fabrikam.com/adfs/services/trust>*  
   
    Send this URL to your users and encourage them to bookmark it.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

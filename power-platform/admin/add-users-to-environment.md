@@ -58,3 +58,6 @@ When an environment is created with a Dataverse database or a Dataverse database
    > ![Enter name](media/add-user-enter-name.png "Enter name")
 
 7. After a user is added to the environment, [assign a security role to the user](database-security.md) to configure their access to resources in the environment. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

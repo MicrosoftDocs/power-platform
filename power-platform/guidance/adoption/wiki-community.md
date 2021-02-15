@@ -45,3 +45,6 @@ Here are a few tips on what the wiki should include:
 - **UI/UX**: Discussion area on corporate standards/styles and overall best practices around UX.
 
 ![Sample Microsoft Power Platform wiki page](media/wiki.png "Sample Microsoft Power Platform wiki page")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

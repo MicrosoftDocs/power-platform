@@ -72,3 +72,6 @@ After creating a mail merge template, follow these steps to use it.
 
 4. Open the downloaded file in Microsoft Word and go through the steps.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

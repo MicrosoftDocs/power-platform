@@ -301,3 +301,6 @@ See [Data Loss Prevention (DLP) policy commands](powerapps-powershell.md#data-lo
 [Manage data loss prevention (DLP) policies](prevent-data-loss.md) <br />
 [Data loss prevention (DLP) policy commands](powerapps-powershell.md#data-loss-prevention-dlp-policy-commands) <br />
 [Power Platform data loss prevention (DLP) SDK](data-loss-prevention-sdk.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

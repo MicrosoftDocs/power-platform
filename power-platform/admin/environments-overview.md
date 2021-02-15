@@ -146,3 +146,6 @@ Select **Edit** to review and edit environment details.
 ### See also
 [Microsoft Learn: Create and manage environments in Dataverse](https://docs.microsoft.com/learn/modules/create-manage-environments/)<br />
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

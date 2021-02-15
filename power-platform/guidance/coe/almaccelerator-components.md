@@ -87,3 +87,6 @@ Before a maker can deploy their project to production, the project must have bee
 Makers can check the deployment history for their project by navigating to the detail pages for their project (by using the **>** arrow).
 
 ![View deployment history](media/git-35.png "View deployment history")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

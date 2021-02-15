@@ -25,3 +25,6 @@ The deployment of the Microsoft Dataverse services in France is built upon the f
 
 Microsoft strives to maintain functional parity between our commercially available service and customer engagement apps offerings in France. However, there are few exceptions affected by dependent service or partner-solution availability, market priorities, or compliance regulations. For more information about these exceptions or for questions about services in France, contact [Microsoft Dynamics Online support](https://dynamics.microsoft.com/support/).
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

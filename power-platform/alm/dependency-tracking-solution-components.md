@@ -166,3 +166,6 @@ Solutions are made of solution components. You’ll use the **Solutions** area i
  [Work with solutions using the SDK APIs](solution-api.md)]  
  [Solution Entity Reference](/powerapps/developer/common-data-service/reference/entities/solution)  
  [SolutionComponent Entity Reference](/powerapps/developer/common-data-service/reference/entities/solutioncomponent)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

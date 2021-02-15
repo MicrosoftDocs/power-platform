@@ -124,3 +124,6 @@ To determine whether or not you are a user of a managed or unmanaged tenant, per
    ```
 
 3. Otherwise, you belong to a managed tenant.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

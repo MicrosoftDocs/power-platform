@@ -18,3 +18,5 @@ search.app:
 # User settings
 
 See [Create users and assign security roles](create-users-assign-online-security-roles.md).
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

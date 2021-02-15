@@ -84,3 +84,6 @@ An email template is attached to an email activity after the activity is created
   
 ### See also  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

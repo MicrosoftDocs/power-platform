@@ -41,3 +41,6 @@ This guidance aligns to the following buckets and responsibilities of your adopt
 [Power Apps guidance documentation](https://docs.microsoft.com/powerapps/guidance/)<Br>
 [Power Apps documentation](https://docs.microsoft.com/powerapps)<Br>
 [Power Automate documentation](https://docs.microsoft.com/power-automate)<Br>
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

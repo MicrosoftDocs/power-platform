@@ -76,3 +76,6 @@ We continue to open new datacenter regions for business services, and to add dat
 
 ### See also  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

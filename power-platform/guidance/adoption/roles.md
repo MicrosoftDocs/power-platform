@@ -39,3 +39,6 @@ We recommend that you have a team or function that looks at automating tasks, su
 ## User support
 
 You'll already have an established IT ticket support process and it's important to onboard those teams as well—create guidance and FAQs and define your support processes and resources.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

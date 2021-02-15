@@ -27,3 +27,6 @@ Power BI administrators use the Power BI admin portal to manage a Power BI tenan
 
 ### See also
 [Working with the admin portals](wp-work-with-admin-portals.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

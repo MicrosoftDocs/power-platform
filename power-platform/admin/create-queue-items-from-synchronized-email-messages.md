@@ -37,3 +37,6 @@ These settings can be mixed and matched to achieve the desired flexibility in ho
 3. On one of the queues, the email is moved to the inbox folder to be picked up for server-side synchronization processing. Because **CreateQueueItemForSynchronizingMailbox** is enabled and **CreateQueueItemsForAcceptingQueueRecipients** is disabled, the system only creates a queue item for the queue that processed the email.
 4. Another queue mailbox opts into the queue item creation process by moving the email to the inbox. Because **SSSCreateAdditionalQueueItemsForAlreadyTrackedEmail** is true, server-side synchronization discovers the moved email but recognizes that it has already been promoted. As a result, the system will create the additional queue item for the current synchronizing queue mailbox and associate it with the existing email that was synchronized by the first queue mailbox in step 3.  Note: this action does not call the **DeliverIncoming SDK Message for Email** and instead uses the **Create SDK Message for QueueItem**.
 5. Step 4 can repeat as needed as more queues ‘opt-in’ to the queue item creation process by moving the email to the inbox folder for processing.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

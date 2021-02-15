@@ -197,3 +197,6 @@ Additionally, you can open the job history of the project and drill through the 
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

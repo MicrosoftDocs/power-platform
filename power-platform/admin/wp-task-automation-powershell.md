@@ -80,3 +80,6 @@ That would produce the following detailed information:
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

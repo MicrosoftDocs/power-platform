@@ -232,3 +232,5 @@ Your organization’s queries and results are reviewed by people using secured c
 ### See also  
  [Use relevance search to search for records](https://docs.microsoft.com/powerapps/user/relevance-search) <br />
  [Use the new Relevance Search experience](https://docs.microsoft.com/powerapps/user/relevance-search#use-the-new-relevance-search-experience)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

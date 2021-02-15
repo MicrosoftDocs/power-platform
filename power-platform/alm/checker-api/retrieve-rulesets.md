@@ -87,3 +87,5 @@ Content-Type: application/json; charset=utf-8
 [Upload a file](upload-file.md)<br />
 [Invoke analysis](analyze.md)<br />
 [Check for analysis status](check-status.md)<br />
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

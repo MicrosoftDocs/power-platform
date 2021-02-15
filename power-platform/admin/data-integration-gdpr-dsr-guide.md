@@ -88,3 +88,6 @@ To export templates, users can navigate to the templates tab and click on the el
 To export connection sets, users can navigate to the connection set tab and click on the ellipses next to the connection set, and then select the export option:
 
 ![Export connection sets by clicking on the ellipsis](./media/data-integration-gdpr-dsr/connsets-exp.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

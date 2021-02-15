@@ -52,3 +52,6 @@ Use this tab to set preferences for the customer service area, such as service l
   
 ### See also  
 [Service Manager guide (Customer Service Hub)](https://docs.microsoft.com/dynamics365/customer-service/service-manager-guide) 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

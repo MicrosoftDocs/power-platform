@@ -47,3 +47,6 @@ Business Process Flows to manage the Audit process for Flow, Connector and Chatb
 - Increase field lengths in Flow Resources table for more robust handling
 - Sync Flows adjusted to short circuit when user doesn’t have permissions or the object of interest do not exist in the target environment.
 - CDS meta data stored in Environments table and called from Sync Flows to reduce calls and reduce logic redundancy.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

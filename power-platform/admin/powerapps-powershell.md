@@ -469,3 +469,6 @@ If you have any comments, suggestions, or questions, post them on the [Administe
 ### See also
 [Get started using the Power Apps admin module](https://docs.microsoft.com/powershell/powerapps/get-started-powerapps-admin) <br />
 [Microsoft.PowerApps.Administration.PowerShell](https://docs.microsoft.com/powershell/module/microsoft.powerapps.administration.powershell)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
