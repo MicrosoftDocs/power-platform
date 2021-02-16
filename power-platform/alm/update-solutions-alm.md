@@ -1,6 +1,6 @@
 ---
-title: "Create and update solutions in Power Apps | Microsoft Docs"
-description: "Learn about managed properties in Power Apps"
+title: "Create and update custom Power Apps solutions for ALM"
+description: "Learn how to create and update custom solutions in Power Apps, including solution patches and clones."
 keywords: 
 author: Mattp123
 ms.author: matp
@@ -121,3 +121,6 @@ A patch must have a higher build or revision number than the parent solution. It
 
 ### See also
 [Overview of tools and apps used with ALM](tools-apps-used-alm.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

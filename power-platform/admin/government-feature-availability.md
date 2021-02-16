@@ -68,3 +68,6 @@ Customizations or email configurations in Dynamics 365 GCC and GCC High can only
  [IP addresses and URLs](online-requirements.md#ip-addresses-and-urls)<br />
  [PowerBI for US Government Customers](https://docs.microsoft.com/power-bi/service-govus-overview)<br/>
  [Compliance Offerings](https://www.microsoft.com/trustcenter/compliance/complianceofferings?product=Dynamics365)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -375,3 +375,6 @@ The following table shows the fields that are populated on the user form (user r
 
 ### See also
 [Get started with security roles in Dataverse](https://docs.microsoft.com/learn/modules/get-started-security-roles/)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

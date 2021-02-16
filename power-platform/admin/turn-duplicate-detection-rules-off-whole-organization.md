@@ -61,3 +61,6 @@ Make sure you have the System Administrator, System Customizer, Sales Manager, V
 [Run bulk system jobs to detect duplicate records](run-bulk-system-jobs-detect-duplicate-records.md) <br />
 [Frequently asked questions about synchronizing records between customer engagement apps and Microsoft Outlook](frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook.md) 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

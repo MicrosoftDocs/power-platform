@@ -63,3 +63,6 @@ This feature was introduced in [!INCLUDE[pn_crm_online_2016_update_shortest](../
 ### See also  
  [Enable OneDrive for Business (on-premises)](connect-onedrive-business.md)   
  [What is OneDrive for Business?](https://support.office.com/article/What-is-OneDrive-for-Business-187f90af-056f-47c0-9656-cc0ddca7fdc2)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

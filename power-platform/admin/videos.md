@@ -28,3 +28,6 @@ search.app:
 |How to get the best support for Power Apps, Power Automate, and Dynamics 365 | [Video](https://youtu.be/An3IfFdZlT8)| [Deck](https://medius.studios.ms/video/asset/PPT/MBAS19-THR2002) |
 |Planning your enterprise deployment - Capacity Management | [Video](https://youtu.be/RCo3XNaAD2A) | [Deck](https://medius.studios.ms/video/asset/PPT/MBAS19-THR3005)          |
 |Best practices for setting up security and environments in the Power Platform admin center     | [Video](https://youtu.be/SVY-h5YRMEY)| [Deck](https://medius.studios.ms/video/asset/PPT/MBAS19-THR2003) |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

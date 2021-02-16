@@ -269,3 +269,6 @@ Keep in mind that after a user account has access to the audit logs, that user h
 
     1. Run the flow to start syncing audit log data to the Dataverse table.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

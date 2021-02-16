@@ -83,3 +83,6 @@ Global or Microsoft Teams admins can use Microsoft Teams app controls through th
 |**Various Sample Apps**| The ability to create new apps, flows and bots by using sample apps within Microsoft Teams. This is tied to the implicit ability to create new Dataverse for Teams environments.|
 
 Given that these controls block environment creator, maker, and user access, we recommend that admins instead use reactive constructs&mdash;either by building their own or by using the templates in the CoE Starter Kit&mdash;to govern Dataverse for Teams environment creation workflows.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -95,3 +95,6 @@ GitHub Actions are available at no cost. However, a valid GitHub subscription is
 ### See also
 
 [Available GitHub Actions](devops-github-available-actions.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

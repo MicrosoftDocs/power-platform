@@ -75,3 +75,6 @@ Before you begin, review the [prerequisites](setup.md#prerequisites) for using t
 1. Select **Close**.
 
 You can now [use the theming components](theming-components.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -86,3 +86,6 @@ The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service,
 ### See also  
 [Manage configuration data](manage-configuration-data.md)   <br />
 [Product catalog entities](manage-product-catalog-configuration.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

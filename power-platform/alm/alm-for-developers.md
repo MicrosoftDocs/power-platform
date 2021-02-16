@@ -59,3 +59,6 @@ to avoid conflict.
 
 [Microsoft Power Platform Build Tools for Azure DevOps](devops-build-tools.md)  
 [Power Apps for developers](https://docs.microsoft.com/powerapps/#pivot=home&panel=developer)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

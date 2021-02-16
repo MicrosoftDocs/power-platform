@@ -103,3 +103,6 @@ The following matrix shows what management is possible with the various service 
 ### See also  
 [Environments overview](environments-overview.md)<br />
 [What is Power BI administration?](https://docs.microsoft.com/power-bi/service-admin-administering-power-bi-in-your-organization)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

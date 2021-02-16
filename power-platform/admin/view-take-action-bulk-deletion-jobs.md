@@ -42,3 +42,6 @@ You can view the status of, pause, postpone, and resume a system job that you cr
   
 ### See also  
  [Delete bulk records](delete-bulk-records.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

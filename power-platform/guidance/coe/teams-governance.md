@@ -88,3 +88,6 @@ The page visualizes:
 ### See also
 
 [What is Dataverse for Teams?](/powerapps/teams/overview-data-platform)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

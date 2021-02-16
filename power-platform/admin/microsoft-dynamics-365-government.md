@@ -208,3 +208,6 @@ Effective March 2, 2020, the *regional* [Discovery Service](/powerapps/developer
 [IP addresses and URLs](online-requirements.md#ip-addresses-and-urls)<br />
 [Power Apps US Government](https://docs.microsoft.com/power-platform/admin/powerapps-us-government)<br />
 [Power Automate US Government](https://docs.microsoft.com/power-automate/us-govt)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

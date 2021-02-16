@@ -26,3 +26,6 @@ Version 1.18 for the CoE Starter Kit Governance Components is now available. Thi
 This version introduces new flows that checks for flows that haven't been modified in the last six months (configurable) and asks the flow owner (via flow approvals) if the flow can be archived. If approved, archives the flow files to SharePoint. It archives two files per flow, one with the flow content, the other with the flow connections.
 
 The flows names are: Admin \| Flow archive and clean up - Start Approval and Admin \| Flow archive and clean up - Check Approval.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

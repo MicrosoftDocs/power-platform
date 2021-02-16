@@ -52,3 +52,6 @@ Before you release your managed solution you should consider how you will mainta
 ### See also  
 
 [Publish your app on AppSource](/powerapps/developer/common-data-service/publish-app-appsource)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

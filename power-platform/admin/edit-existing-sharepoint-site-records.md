@@ -73,3 +73,6 @@ Store documents related to your records in [!INCLUDE[pn_ms_SharePoint_long](../i
 ### See also  
  [Set up SharePoint integration](set-up-sharepoint-integration.md)   
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

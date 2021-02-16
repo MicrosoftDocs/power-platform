@@ -40,3 +40,6 @@ A Center of Excellence could start off quite simple with a single individual usi
 - **Evolve** your CoE strategy with those learnings.
 
 Learn how [Standard Bank](https://powerapps.microsoft.com/blog/standard-bank-south-africa-creates-a-center-of-excellence-for-the-power-platform/) established their Center of Excellence, including best practices, benefits and impact, and key learnings.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -40,3 +40,6 @@ You can use [!INCLUDE[cc_server_side_synch](../includes/cc-server-side-synch.md)
 ### See also  
 [Server-side synchronization](../admin/server-side-synchronization.md) 
 [Troubleshooting server-side synchronization](../admin/troubleshooting-monitoring-server-side-synchronization.md)   
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -19,3 +19,6 @@ search.app:
 
 You can now manage your solutions in the Microsoft Power Platform admin center. See [Environment-level view of apps](manage-apps.md#environment-level-view-of-apps).
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

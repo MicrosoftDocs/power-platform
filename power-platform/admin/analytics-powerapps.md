@@ -105,3 +105,6 @@ Select the environment and time period from the drop-down lists, and then select
 
 ### Why are some apps missing in my report?
 Currently, Power Apps analytics reports do not display model-driven apps data. Only canvas apps related data is displayed.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

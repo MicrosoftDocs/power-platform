@@ -123,3 +123,6 @@ You can request a temporary (30-day) extension that allows copy and restore oper
 [Dataverse storage capacity](capacity-storage.md) <br />
 [Free up storage space](free-storage-space.md) <br />
 [Delete and recover environments](delete-environment.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

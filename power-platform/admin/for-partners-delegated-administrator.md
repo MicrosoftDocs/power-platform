@@ -54,3 +54,6 @@ To create a simple custom view to see the delegated admin user:
 ### See also  
  [Partners: Offer delegated administration](https://support.office.com/article/Partners-Offer-delegated-administration-26530dc0-ebba-415b-86b1-b55bc06b073e?ui=en-US&rs=en-US&ad=US)   
  [Partners: Add or delete a delegated admin](https://support.office.com/article/partners-add-or-delete-a-delegated-admin-201ccb3b-6011-4bf1-a6b2-84e7cc1ee2d0)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

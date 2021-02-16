@@ -54,3 +54,6 @@ For information on how to use profile cards, see [View the profile card for a co
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -68,3 +68,6 @@ You can control which of your managed solution components are customizable by us
 ### See also  
 
 [Managed properties](managed-properties-alm.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -221,3 +221,6 @@ Services deployed in the Australia East Region will replicate data to the Austra
 ### See also  
  [Office 365 and Dynamics CRM Online now available from datacenters in Australia](https://blogs.office.com/2015/03/30/office-365-and-dynamics-crm-online-now-available-from-datacenters-in-australia/)    
  [New datacenter regions](new-datacenter-regions.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

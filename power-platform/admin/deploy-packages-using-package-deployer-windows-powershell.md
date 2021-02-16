@@ -309,3 +309,6 @@ Get-Help Import-CrmPackage -full
  
 ### See also  
  [Create packages for the CRM Package Deployer](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/developer/create-packages-package-deployer)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -77,3 +77,6 @@ Share your success stories in a regular Microsoft Power Platform newsletter, hig
 Here's an example of how you could share the solution architecture:
 
 ![Sample solution architecture](https://docs.microsoft.com/power-platform/guidance/adoption/media/story-architecture.png "Sample solution architecture")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

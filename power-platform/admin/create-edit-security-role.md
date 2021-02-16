@@ -158,3 +158,6 @@ When you import the solution, it creates the **min prv apps use** role which you
 ### See also  
  [Security concepts](../admin/wp-security-cds.md)   
  [Copy a security role](../admin/copy-security-role.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -37,3 +37,6 @@ In a perfect world, as an administrator you would only visit a single portal to 
 Over the near-term future we will see consolidation of the Power Apps, Power Automate, and the Dynamics 365 administration portals into a more unified administrative portal experience.
 For partners, helping their customers manage their cloud services using delegated administration capabilities you will not be able to use delegated access to the Power Apps and Power Automate portals. Currently, you would need to have a user in the customer's tenant and assign that user a Power Apps plan.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

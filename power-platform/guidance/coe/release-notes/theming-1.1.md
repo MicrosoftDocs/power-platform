@@ -25,3 +25,6 @@ This is the first version of the Theming components:
 
 - [Setup Theming components](../setup-theming.md)
 - [Use Theming components](../theming-components.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

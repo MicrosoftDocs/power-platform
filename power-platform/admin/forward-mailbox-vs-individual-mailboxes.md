@@ -55,3 +55,6 @@ For the above reasons, forward mailboxes are supported, but not recommended, and
 3. Customer engagement apps (by using server-side synchronization or Email Router) retrieve the message from the forward mailbox and creates the appropriate records.  
   
 ### See also  
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

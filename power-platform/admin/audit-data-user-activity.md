@@ -1,14 +1,13 @@
 ---
 title: "Audit data and user activity for security and compliance"
 description: "Learn how to use auditing to log changes to records and user access. System admins and customizers can use this feature to meet security and compliance policies."
-author: pnghub
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/11/2021
-ms.author: gned
+author: tjvass
+ms.author: tjvass
 ms.reviewer: jimholtz 
-
 search.audienceType: 
   - admin
 search.app:
@@ -144,3 +143,6 @@ System administrators or customizers can change the default audit settings for e
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
