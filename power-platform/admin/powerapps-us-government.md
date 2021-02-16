@@ -238,3 +238,6 @@ More information: [Contact Technical Support](get-help-support.md)
 [Microsoft Power Automate US Government](https://docs.microsoft.com/flow/us-govt) <br />
 [UI Flows](https://docs.microsoft.com/power-automate/ui-flows/overview) <br />
 [Dynamics 365 US Government](https://docs.microsoft.com/power-platform/admin/microsoft-dynamics-365-government)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

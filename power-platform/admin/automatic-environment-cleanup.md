@@ -55,3 +55,6 @@ Within 24 hours after the licenses and capacity are applied to your tenant, the 
 [Back up and restore environments](backup-restore-environments.md) <br />
 [Licensing overview for Microsoft Power Platform](pricing-billing-skus.md)<br />
 [Microsoft Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

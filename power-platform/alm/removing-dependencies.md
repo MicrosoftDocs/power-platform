@@ -246,3 +246,6 @@ Remove all references, and then save and publish both the app and the site map.
  [Solution concepts](/power-platform/alm/solution-concepts-alm)  
  [Solution layers](/power-platform/alm/solution-layers-alm)  
  [Dependency tracking for solution components](dependency-tracking-solution-components.md)]
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

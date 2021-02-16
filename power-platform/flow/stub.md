@@ -24,3 +24,5 @@ robots: noindex,nofollow
 > ![This page is under construction. Check back soon!](media/under_construction.png "Coming soon")  [!INCLUDE[cc-under-construction](../includes/cc-under-construction.md)]
 
 Stub topic.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

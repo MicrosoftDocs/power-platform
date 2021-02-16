@@ -30,3 +30,6 @@ Select one of the following links for information about settings on the Business
 |[Use sites to manage your service locations (Customer Service)](https://docs.microsoft.com/dynamics365/field-service/use-sites-manage-service-locations)|[Define subjects to categorize cases, products, and articles](../admin/define-subjects-categorize-cases-products-articles.md)|  
 |[Manage transactions with multiple currencies](../admin/manage-transactions-with-multiple-currencies.md)|[Create connections to view relationships between records](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/basics/create-connections-view-relationships-between-records)|  
 |[Create connections to define and view relationships between records](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/basics/create-connections-view-relationships-between-records)|[Set up rules to automatically create or update records (Customer Service)](https://docs.microsoft.com/dynamics365/customer-service/set-up-rules-to-automatically-create-or-update-records)|
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

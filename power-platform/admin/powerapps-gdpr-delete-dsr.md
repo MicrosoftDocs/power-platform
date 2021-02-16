@@ -381,3 +381,6 @@ If you are a member of an unmanaged tenant then you will need to follow these st
 2. Select **Close account** and follow the instructions to delete your account from your Azure AD tenant.
 
     ![Select Close account](./media/powerapps-gdpr-delete-dsr/close-account.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

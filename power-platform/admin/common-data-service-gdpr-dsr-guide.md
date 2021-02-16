@@ -429,3 +429,6 @@ From [Power Apps](https://make.powerapps.com), do the following:
 11. Select **Search**, and then select and open the Excel spreadsheet that you just updated.
 
 12. Select **Import**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -38,3 +38,5 @@ The Power Platform Admin View has been updated with additional views on the Envi
 ## Sync Flows
 
 Bug fixes for the sync flows have been implemented.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

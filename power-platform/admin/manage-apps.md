@@ -146,3 +146,6 @@ Filters are applied to the **Select an environment** drop-down list as follows:
 ### See also
 [Portal administration with Power Platform admin center](https://docs.microsoft.com/powerapps/maker/portals/admin/power-platform-admin-center) 
 -->
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

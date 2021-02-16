@@ -211,3 +211,6 @@ Provisioning environments is based on database capacity. Previously, it was two 
 [Dataverse storage capacity](capacity-storage.md) <br />
 [Control user access to environments: security groups and licenses](control-user-access.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

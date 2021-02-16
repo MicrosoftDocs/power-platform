@@ -38,3 +38,6 @@ Administrators set up document management, specify permissions for managing task
   
 ## See also
 [SharePoint Document Management software requirements](sharepoint-document-management-software-requirements.md) <br />
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

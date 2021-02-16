@@ -260,3 +260,6 @@ With the embedded app, you don't have to leave the Power BI dashboard to take ac
 The **desktop flow Detail** page provides you with richer information about the runs of this desktop flow. You will be able to review the run history, identify anomalies in time it takes to complete a single run, and view error codes and messages if the desktop flow has failed.
 
 ![Desktop flow Details](media/pb-34.png "Desktop flow Details")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

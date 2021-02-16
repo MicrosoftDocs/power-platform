@@ -40,3 +40,6 @@ To learn how to set up Conditional Access policies, see [Plan a Conditional Acce
 [Best practices for Conditional Access in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/conditional-access/best-practices)<br>
 [License Requirements to enable Conditional Access](https://docs.microsoft.com//azure/active-directory/conditional-access/overview#license-requirements)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

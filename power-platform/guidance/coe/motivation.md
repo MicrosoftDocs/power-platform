@@ -51,3 +51,6 @@ Admin and governance tools fall into three broad categories:
       **Templates and customizations** <br>The [CoE Starter Kit](setup.md) falls into this category. The CoE templates use the admin connectors in combination with other connectors and formulas to achieve specific goals. The nature of a template is to provide a good solution for a specific task, but it might not have the exact functionality that you need. You might have to adjust it to achieve what you're looking for.
    :::column-end:::
 :::row-end:::
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

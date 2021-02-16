@@ -335,3 +335,6 @@ This error message can occur when the SharePoint site that is configured with do
 
 ### See also
 [Troubleshooting server-based authentication](troubleshooting-server-based-authentication.md) 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

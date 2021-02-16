@@ -198,3 +198,6 @@ The result of the solution analysis is a zip file containing one or more reports
 [Upload a file](upload-file.md)<br />
 [Invoke analysis](analyze.md)<br />
 [Check for analysis status](check-status.md)<br />
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

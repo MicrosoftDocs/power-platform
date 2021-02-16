@@ -70,3 +70,5 @@ Article templates help you create new articles for your organization's knowledge
   
 ### See also  
  [eBook: Use KB articles to help your customers](https://go.microsoft.com/fwlink/p/?LinkId=394983)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

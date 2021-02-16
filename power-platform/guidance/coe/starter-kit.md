@@ -51,3 +51,6 @@ Watch a quick overview of the CoE Starter Kit.
 [Power Apps documentation](https://docs.microsoft.com/powerapps)<br/>
 [Power Automate documentation](https://docs.microsoft.com/power-automate)<br/>
 [Power Virtual Agents documentation](https://docs.microsoft.com/power-virtual-agents)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

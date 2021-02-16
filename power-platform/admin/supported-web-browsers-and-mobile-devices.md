@@ -52,3 +52,6 @@ For a mobile device, such as an iPad or smartphone, the following apps are avail
   
 ### See Also  
  [Supported web browsers and mobile devices - earlier versions](https://technet.microsoft.com/library/dn531055.aspx)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

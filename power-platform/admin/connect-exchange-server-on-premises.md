@@ -211,3 +211,6 @@ With version 9.0., you can connect your customer engagement apps (Dynamics 365 S
  [Server-side synchronization](../admin/server-side-synchronization.md)   
  [Autodiscover service](https://technet.microsoft.com/library/bb124251\(v=exchg.150\).aspx)   
  [Managing the Autodiscover Service](https://technet.microsoft.com/library/aa995956\(v=exchg.141\).aspx)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

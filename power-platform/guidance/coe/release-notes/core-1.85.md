@@ -28,3 +28,6 @@ A new column, *Exclude From Archive* has been added to the PowerApps App and Flo
 ## Apps
 
 The DLP Editor v2 canvas app has been added. This canvas app reads and updates data loss prevention (DLP) policies while showing a list of apps and flows that are impacted by the policy configurations.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

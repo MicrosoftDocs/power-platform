@@ -219,3 +219,6 @@ application development:
 - [ALM environment strategy](environment-strategy-alm.md) 
 - [Solution concepts](solution-concepts-alm.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

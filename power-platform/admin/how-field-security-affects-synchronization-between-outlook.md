@@ -104,3 +104,6 @@ Securing a field with field-level security can impact synchronization between cu
   
 ### See also  
  [Field-level security](../admin/field-level-security.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

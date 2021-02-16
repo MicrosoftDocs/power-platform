@@ -54,3 +54,6 @@ Make sure you have the System Administrator or System Customizer security role o
 > |Show Microsoft Power Automate on forms and in the site map|Default: On. Select **On** to enable embedded Power Automate flows in your organization. More information: [Enable embedded Power Automate to automate processes](enable-embedded-flow-in-your-organization.md).|  
 > |Show dashboard cards in expanded state|Default: Off. Select **On** to see the detailed card form in a dashboard. If set to **Off**, only the header and minimal details are displayed in the card form.|  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

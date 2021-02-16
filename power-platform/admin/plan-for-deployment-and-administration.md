@@ -35,3 +35,6 @@ Your deployment will go more smoothly with some preliminary planning.  The follo
 ### See also 
  [Requirements](online-requirements.md)   
  [Grant users access](grant-users-access.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

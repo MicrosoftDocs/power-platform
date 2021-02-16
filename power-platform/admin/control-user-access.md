@@ -132,3 +132,6 @@ The security group associated with the environment will be removed and the envir
 
 ### See also
 [Create users and assign security roles](create-users-assign-online-security-roles.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

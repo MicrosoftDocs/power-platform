@@ -46,3 +46,6 @@ One of the unique things about Power Automate is you can use it to manage itself
 If you want to try building it yourself, here is a good walkthrough of creating the flow from scratch: https://flow.microsoft.com/blog/new-flow-connector-notifications/
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -62,3 +62,6 @@ Two-way tenant isolation restricts incoming connection attempts into your tenant
 |B     | B        | Yes        |
 
 ![Restrict outbound and inbound cross-tenant access](media/restrict-outbound-inbound-cross-tenant.png "Restrict outbound and inbound cross-tenant access")
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

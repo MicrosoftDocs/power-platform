@@ -99,3 +99,6 @@ To see folder tracking in action, see the video [Folder Level Tracking in CRM On
 ### See also  
  [Frequently asked questions about synchronizing records between customer engagement apps and Microsoft Outlook](frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook.md)<br />
  [Configure folder-level tracking](../admin/configure-outlook-exchange-folder-level-tracking.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

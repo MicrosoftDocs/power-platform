@@ -98,3 +98,6 @@ If the entity selected for the Based on entity folder structure has two lookups,
 ### See also
 [Troubleshooting server-based authentication](troubleshooting-server-based-authentication.md) <br />
 [Troubleshoot SharePoint integration](troubleshoot-set-up-sharepoint-online.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -43,3 +43,6 @@ Here is the detailed new archival workflow process:
   - **Ignore**: If the user ignores the request, and request will be sent the following week.
 
 A cleanup flow runs daily and deletes timed out approvals and deletes resources that have been approved for deletion three weeks ago.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -39,3 +39,6 @@ There are two ways to find your organization ID and name.
 
 > [!div class="mx-imgBorder"] 
 > ![Determine org ID and name](media/org-id-name.png "Determine org ID and name")
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

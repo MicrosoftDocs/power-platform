@@ -234,3 +234,6 @@ The **desktop flow errors** page provides an overview of UI-based RPA flow runs 
 Filters on this page can help you narrow down this view by desktop flow type, run status, maker, and environment.
 
 ![Desktop flow errors](media/pb-18.png "Desktop flow errors")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

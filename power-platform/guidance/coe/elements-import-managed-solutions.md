@@ -17,3 +17,5 @@ search.app:
   - Powerplatform
 ---
 # Import Managed Solutions
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

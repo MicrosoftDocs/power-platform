@@ -51,3 +51,6 @@ There are several ways to import data:
   
 ### See also  
  [Detect duplicate data](detect-duplicate-data.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

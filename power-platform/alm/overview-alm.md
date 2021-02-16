@@ -1,6 +1,6 @@
 ---
-title: "Overview of Application lifecycle management (ALM) with Microsoft Power Platform | Microsoft Docs"
-description: "Learn how to implement application lifecycle management with Microsoft Power Platform"
+title: "Application lifecycle management (ALM) with Microsoft Power Platform"
+description: "Overview of how to implement application lifecycle management (ALM) using Power Apps, Power Automate, and Microsoft Dataverse."
 keywords: 
 author: shmcarth
 ms.author: shmcarth
@@ -63,3 +63,6 @@ For more information about how ALM and Azure DevOps technologies&mdash;combined 
 [ALM basics with Microsoft Power Platform](basics-alm.md)<br/>
 [What is Dataverse?](/powerapps/maker/common-data-service/data-platform-intro) <br/>
 [Application lifecycle management for Finance and Operations apps](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/app-lifecycle-management)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

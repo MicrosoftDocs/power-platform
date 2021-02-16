@@ -111,3 +111,6 @@ Location: [Geographical URI]/api/status/9E378E56-6F35-41E9-BF8B-C0CC88E2B832&api
 [Retrieve the list of rules](retrieve-rules.md)<br />
 [Upload a file](upload-file.md)<br />
 [Check for analysis status](check-status.md)<br />
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

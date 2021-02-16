@@ -92,3 +92,6 @@ Other users can browse ideas, add their votes or own scenarios if they have simi
      ![Browse and vote on ideas](media/ib-31.png "Browse and vote on ideas")
 1. If your team has a similar process, select **Add team repo** to describe your version of this process.
          ![Add a team repo if your team has a similar process](media/ib-32.png "Add a team repo if your team has a similar process")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
