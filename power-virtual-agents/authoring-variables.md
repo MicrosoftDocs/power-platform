@@ -113,7 +113,7 @@ When using a variable in an action node, if a variable's base type matches with 
 ## Use literal values in action nodes
 Alternatively, you can type a literal value into an action node variable input field instead of selecting a variable from the dropdown. When passing a literal this way, you can type it's value directly into the input field as seen below.
 
-![Use literal values for action inputs](media/LietralActionInput.png)
+![Use literal values for action inputs](media/LiteralActionInput.png)
 
 
 
