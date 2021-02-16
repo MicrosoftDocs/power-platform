@@ -6,9 +6,9 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/11/2021
-ms.author: gned
+author: tjvass
+ms.author: tjvass
 ms.reviewer: jimholtz 
-
 search.audienceType: 
   - admin
 search.app:

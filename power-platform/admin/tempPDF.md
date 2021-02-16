@@ -1,0 +1,1 @@
+[!include[](./about-teams-environment.md)]
