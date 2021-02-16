@@ -1,6 +1,6 @@
 ---
-title: "Managed properties in Power Apps | Microsoft Docs"
-description: "Learn about managed properties in Power Apps"
+title: "View and edit managed properties in Power Apps solutions"
+description: "Learn how to view and edit managed properties in Power Apps solutions when implementing application lifecycle management (ALM)."
 keywords: 
 author: Mattp123
 ms.author: matp
@@ -105,3 +105,4 @@ With relationships, the only managed property is **Can Be Customized**. This sin
 [Use segmented solutions](segmented-solutions-alm.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+
