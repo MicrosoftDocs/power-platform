@@ -55,3 +55,6 @@ Specify to audit specific areas of the product, as described in the following ta
   
 ### See also  
  [Audit data and user activity](https://docs.microsoft.com/powerapps/developer/common-data-service/audit-user-access)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

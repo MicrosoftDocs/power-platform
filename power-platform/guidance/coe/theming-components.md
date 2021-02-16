@@ -132,3 +132,6 @@ The shared component library in the theming component solution contains a Header
 For a component to also use the theme, makers will need to update the **Style** property and set it to **ComponentStyles**. **ComponentStyles** is a collection of styles specially formatted for components and is initialized as part of the app start code.
 
 ![Update the ComponentStyles property](media/theming-17.png "Update the ComponentStyles property")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

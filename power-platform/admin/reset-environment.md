@@ -57,3 +57,5 @@ The reset process starts.
 > [!div class="mx-imgBorder"] 
 > ![Reset environment status](media/reset-environment-status.png "Reset environment status")
   
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

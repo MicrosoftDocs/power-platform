@@ -58,3 +58,6 @@ In the end, nurture means connecting the dots and creating a whole that is bette
 
    :::column-end:::
 :::row-end:::
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

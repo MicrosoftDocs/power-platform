@@ -496,3 +496,4 @@ Follow these steps to apply unattended RPA licenses to your flows.
 > The unattended add-on is environment-specific. So, if you have multiple environments that need to run unattended RPA, you need to assign add-on capacity to each of them. 
 > Also if you need to run multiple unattended desktop flows in parallel in a single environment, you need to assign the right number of unattended add-ons to the environment to support the flow runs.
  
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

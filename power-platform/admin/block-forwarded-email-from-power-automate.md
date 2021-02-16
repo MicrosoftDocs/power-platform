@@ -73,3 +73,6 @@ Alternately, admins can use other exception capabilities in Exchange mail rules 
 
 > [!div class="mx-imgBorder"] 
 > ![Block outbound forwards exception list](media/block-outbound-forwards-exception-list85.png "Block outbound forwards exception list")
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

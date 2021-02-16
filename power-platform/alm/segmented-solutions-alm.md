@@ -65,3 +65,6 @@ More information: [Create segmented solutions](/powerapps/maker/common-data-serv
 
 ### See also
 [Update a solution](update-solutions-alm.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

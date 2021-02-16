@@ -40,3 +40,6 @@ To know how to view the alerts and the actions you can take on these alerts, see
 ### See also  
  [Troubleshooting and monitoring server-side synchronization](../admin/troubleshooting-monitoring-server-side-synchronization.md)   
  [Supported scenarios for server-side synchronization](../admin/supported-email-service-configurations-server-side-synchronization.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

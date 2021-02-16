@@ -49,3 +49,6 @@ Check out the [App in an Hour](https://powerapps.microsoft.com/blog/hands-on-lab
 ## Q & A sessions
 
 Your existing makers might have questions on how to build apps and flows. Through regular Q&A sessions, makers can get live help with things they are struggling with. By recording these session, others wo struggle with the same things can also benefit, and you can build a library of content available to new makers.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

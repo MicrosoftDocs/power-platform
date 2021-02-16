@@ -27,3 +27,6 @@ Large organizations that synchronize their data with external data sources can n
   
    ![Select Change Tracking for an entity](../admin/media/change-tracking.PNG "Select Change Tracking for an entity")  
   
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

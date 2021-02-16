@@ -125,3 +125,5 @@ You can filter your view to display reports from a specific **environment** or f
 - [Create desktop UI flows](https://docs.microsoft.com/power-automate/ui-flows/create-desktop).
 - [Create Web UI flows](https://docs.microsoft.com/power-automate/ui-flows/create-web).
 - Run [UI flows](https://docs.microsoft.com/power-automate/ui-flows/run-ui-flow).
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

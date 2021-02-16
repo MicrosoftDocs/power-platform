@@ -42,3 +42,6 @@ The first page of the dashboard provides an overview of all areas and their purp
 ![Power BI dashboard overview](media/pb-1.png "Power BI dashboard overview")
 
 Within each section, you'll find [bookmarks](https://docs.microsoft.com/power-bi/desktop-bookmarks) at the top of each page to help you get to the information you're looking for.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

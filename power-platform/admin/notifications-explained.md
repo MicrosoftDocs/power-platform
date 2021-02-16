@@ -76,3 +76,6 @@ You can easily identify these communications by the dark-blue banner.
 ![Post-purchase email banner](../admin/media/post-purchase-banner.png "Post-purchase email banner")  
  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

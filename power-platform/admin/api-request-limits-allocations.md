@@ -165,3 +165,5 @@ No, third-party data integration tools are subject to the exact same limits as s
 ### See also
 [Dataverse API limits overview](https://docs.microsoft.com/powerapps/maker/common-data-service/api-limits-overview) <br />
 [Power Automate limits and configuration](https://docs.microsoft.com/power-automate/limits-and-config)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

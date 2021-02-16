@@ -82,3 +82,6 @@ You can provide feedback on the [Power Apps forum][8] and/or contact [support][9
 [8]: https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1
 [9]: https://powerapps.microsoft.com/support/
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

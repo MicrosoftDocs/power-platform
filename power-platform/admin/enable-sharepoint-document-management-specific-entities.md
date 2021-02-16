@@ -82,3 +82,6 @@ Store the documents related to entity records in [!INCLUDE[pn_ms_SharePoint_long
 ### See also  
  [Edit existing SharePoint site records](../admin/edit-existing-sharepoint-site-records.md)   
  [Set up SharePoint integration](set-up-sharepoint-integration.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

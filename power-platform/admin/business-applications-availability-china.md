@@ -89,3 +89,6 @@ The Azure AD account management services are hosted on physical servers managed 
 - [Service Level Agreement](https://www.21vbluecloud.com/powerplatform/pp-sla/)
 - [Privacy statement](https://www.21vbluecloud.com/powerplatform/pp-privacy/)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

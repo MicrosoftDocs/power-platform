@@ -24,3 +24,6 @@ Version 1.23 for the CoE Starter Kit Nurture Components is now available. This a
 ### Bug fixes
 
 A dependency issue was introduced with the latest release, and fixed with this one.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

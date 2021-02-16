@@ -39,3 +39,6 @@ The home for all of your business applications across Dynamics and the Microsoft
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

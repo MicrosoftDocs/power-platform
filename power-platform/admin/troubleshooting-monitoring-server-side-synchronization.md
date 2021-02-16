@@ -265,3 +265,6 @@ This is a known issue and is not supported. If the organizer is someone outside 
 [Best practices and things to know about server-side synchronization](../admin/best-practices-server-side-synchronization.md)   
 [{Hidden Gem}Understanding Server Side sync Performance Dashboard](https://dynamicsofdynamicscrm.wordpress.com/2015/07/27/hidden-gemunderstanding-server-side-sync-performance-dashboard/)   
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

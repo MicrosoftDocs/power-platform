@@ -54,3 +54,6 @@ For the updates to take effect, sign out of the environment and sign in again.
 
 > [!NOTE]
 > Updating environment database settings impacts the environment and should be done with caution. You should first test out the database settings in a non-production environment. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

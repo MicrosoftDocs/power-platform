@@ -75,3 +75,6 @@ To learn more on using PowerShell cmdlets for environments, see [Power Apps cmdl
 [Cmdlet list - Admin Cmdlets](powerapps-powershell.md#cmdlet-list---admin-cmdlets) <br />
 [Licensing overview for Microsoft Power Platform](pricing-billing-skus.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

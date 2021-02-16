@@ -55,3 +55,6 @@ Before you create solutions, take some time to plan ahead. For example, think ab
 
 [Use segmented solutions](/power-platform/alm/segmented-solutions-alm)
 [Scenario 5: Supporting team development](team-development-alm.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -69,3 +69,6 @@ When the Conflicts Tab appears on an imported form, you can move the component d
 ### See also  
 
 [Use a solution to customize](use-solutions-for-your-customizations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

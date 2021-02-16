@@ -103,3 +103,6 @@ the framework and solutions.
 ### See also
 
 [Plug-ins](plugin-component.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

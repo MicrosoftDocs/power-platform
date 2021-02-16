@@ -148,3 +148,6 @@ For example, you can create a team template for the Account entity with the Read
  [Download: Access Teams in Microsoft Dynamics CRM](https://download.microsoft.com/download/E/9/0/E9009308-CA01-4B37-B03C-435B8ACB49B4/Access%20Teams%20with%20Microsoft%20Dynamics%20CRM%202013.pdf)   
  [Download: Scalable security modeling with Microsoft Dynamics CRM](https://go.microsoft.com/fwlink/p/?LinkID=328757)   
  [Entity relationship behavior](https://docs.microsoft.com/powerapps/maker/common-data-service/create-edit-entity-relationships#entity-relationship-behavior)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

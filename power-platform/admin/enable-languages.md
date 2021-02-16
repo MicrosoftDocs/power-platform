@@ -61,3 +61,6 @@ Make sure you have the System Administrator or System Customizer security role o
  Each user selects the language to display in an app.  See [Languages tab options](https://docs.microsoft.com/powerapps/user/set-personal-options#languages-tab-options).
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

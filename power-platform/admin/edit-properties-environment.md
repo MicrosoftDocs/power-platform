@@ -72,3 +72,5 @@ Administrators can edit properties of an environment, such as the friendly name,
   
 ### See also
 [Control user access to environments: security groups and licenses](control-user-access.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

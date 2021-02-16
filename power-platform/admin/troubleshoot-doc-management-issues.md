@@ -190,3 +190,6 @@ This error typically occurs when the SharePoint folder was created for the recor
 
 ### See also
 [Known issues with document management](doc-management-known-issues.md) 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

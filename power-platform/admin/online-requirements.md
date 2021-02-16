@@ -95,3 +95,6 @@ Dataverse exposes ports *1433* and *5558* to expose the [Dataverse Tabular Data 
  [Plan for Deployment and Administration](../admin/plan-for-deployment-and-administration.md)  <br /> 
  [Work with requirements as a solution architect for Power Platform and Dynamics 365](https://docs.microsoft.com/learn/modules/work-with-requirements/index)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

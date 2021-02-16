@@ -164,3 +164,6 @@ So far, we've only talked about importing Dataverse solutions manually via the u
 It is also possible for developers to build custom code that reacts to events from the package deployment process. This code can be used to handle updates to the target environment. Once the package is built, the package can be deployed interactively via the tool, or by command line using PowerShell. More information: [Create packages for the Package Deployer](https://docs.microsoft.com/powerapps/developer/common-data-service/package-deployer/create-packages-package-deployer)
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

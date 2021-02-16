@@ -48,3 +48,6 @@ Use the tab to set preferences for plug-in and workflow tracing and also the use
   
 ### See also  
  [Debug a plug-in](https://docs.microsoft.com/powerapps/developer/common-data-service/debug-plug-in)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

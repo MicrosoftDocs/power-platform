@@ -87,3 +87,6 @@ You can set the values of datetime fields to automatically move forward by a spe
 [Modify a schema](modify-configuration-data-schema.md) <br />
 [Manage your configuration data](manage-configuration-data.md) <br />
 [Import configuration data](import-configuration-data.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

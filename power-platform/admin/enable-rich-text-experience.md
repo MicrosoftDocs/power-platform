@@ -72,3 +72,6 @@ Write-Host "Appointment RTE updated value: " $organizationEntity.appointmentrich
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

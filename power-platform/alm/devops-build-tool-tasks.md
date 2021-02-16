@@ -240,3 +240,6 @@ The following figure shows the build tool tasks that you might add to a pipeline
 
 [Microsoft Power Platform Build Tools for Azure DevOps](devops-build-tools.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

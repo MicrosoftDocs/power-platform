@@ -21,3 +21,6 @@ search.app:
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -39,3 +39,6 @@ You can delete an environment to recover storage space and to remove Personally 
 [Cmdlet list - Admin Cmdlets](powerapps-powershell.md#cmdlet-list---admin-cmdlets) <br />
 [Licensing overview for Power Platform](pricing-billing-skus.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

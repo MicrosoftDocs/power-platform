@@ -59,3 +59,6 @@ They will:
 - Create a contest (for example, scavenger hunts and giveaways) between departments to encourage people to interact with Microsoft Power Platform.
 - Encourage the sharing of stories, either through show-and-tell sessions or regular newsletters. You can lean on our [public case studies](https://powerapps.microsoft.com/blog/category/case-studies/) for ideas on how to structure those stories.
 - Recognize and reward the work champions are doing. Remember, they're not a support team but business representatives. Is there a company reward or benefit program that their work could tie into? Are there vouchers or other goodies they could receive? Could the benefit even be a premium license or their own environment to play in?
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

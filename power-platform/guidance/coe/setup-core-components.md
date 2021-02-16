@@ -198,3 +198,6 @@ Environment variables are used to store application and flow configuration data 
     |eMail Header Style                  | CSS style used to format emails that are sent to admins and makers. A default value is provided. [See the provided default value](code-samples/css/default-value-eMail-Header-Style.md). |
     |Also Delete from CoE | When the Admin \| Sync Template v3 (Check Deleted) flow is run, this denotes whether you want the items deleted from CoE (Yes, which is the default) or just marked as deleted (No). |
     | Full Inventory | Determines if you want to only update objects that have changed, or all objects. Defaults to No. Switching to Yes will cause the flows to inventory every single app, flow, and bot. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

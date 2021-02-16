@@ -154,3 +154,6 @@ If you want all users to be in the same tenant regardless of their email address
 
 > [!IMPORTANT]
 > There is no supported automated mechanism to move users across tenants once they have been created. To learn about adding domains to a single Microsoft 365 tenant, see [Add a domain to Microsoft 365](https://support.office.com/article/Add-your-users-and-domain-to-Office-365-ffdb2216-330d-4d73-832b-3e31bcb5b2a7).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

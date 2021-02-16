@@ -110,3 +110,6 @@ Set up a [SharePoint site or a wiki](wiki-community.md) that clearly communicate
 - Your admin group’s email ID so that makers can make contact for exception scenarios. For example, admins can help makers get back into compliance editing an existing DLP policy, moving the solution to a different environment, creating a new environment and a new DLP policy, and moving the maker and resource to this new environment.
 
 Also clearly communicate your organization's [environment strategy to makers](environment-strategy.md#clearly-communicate-your-organizations-environment-strategy-to-makers).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
