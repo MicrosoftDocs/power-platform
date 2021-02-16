@@ -289,6 +289,11 @@ These instructions use adding weather information to a flow as an example. If yo
 
 1. Select **Save** to save your topic. 
 
+## Pass literal values into action input fiels
+
+Alternatively, if you rather type in a literal value for action input instead of using a variable as an action input, you can type the value directly into the field. 
+
+![Pass literal values into action inputs](media/LiteralActionInput.png)
 
 ## Test your flow and topic
 
