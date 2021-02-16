@@ -82,3 +82,5 @@ If the **Enable Server-Based SharePoint Integration** icon doesn't appear in the
 ### See also
 [Set up SharePoint integration](../admin/set-up-sharepoint-integration.md) 
   
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
+

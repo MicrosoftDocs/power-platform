@@ -32,3 +32,5 @@ To move to healthy application lifecycle management (ALM), you must:
 
 ### See also
 [Scenario 3: Moving from unmanaged to managed solutions in your organization](move-from-unmanaged-managed-alm.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

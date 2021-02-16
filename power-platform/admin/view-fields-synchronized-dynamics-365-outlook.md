@@ -61,3 +61,6 @@ In [!INCLUDE[pn_crm_2015_outlook](../includes/pn-crm-2015-outlook.md)] or later,
  [What fields can be synchronized between customer engagement apps and Outlook or Exchange?](what-fields-synchronized-outlook.md)   
  [Control field synchronization between customer engagement apps and Outlook or Exchange (admins)](control-field-synchronization-outlook.md)   
  [How security affects synchronization between customer engagement apps and Outlook or Exchange](how-field-security-affects-synchronization-between-outlook.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

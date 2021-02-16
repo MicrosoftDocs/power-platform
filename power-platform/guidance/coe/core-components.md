@@ -375,3 +375,6 @@ With Power BI reports, you can get a holistic view of Dataverse data with visual
 Follow the [setup instructions](setup-powerbi.md) to set up the Power BI dashboard. More information: [Gain deep insights into your Microsoft Power Platform adoption with the CoE Power BI dashboard](power-bi.md)
 
 ![CoE Power BI dashboard](media/pb-2.png "CoE Power BI dashboard")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

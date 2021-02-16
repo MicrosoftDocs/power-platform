@@ -96,3 +96,6 @@ Security is a complex article and is best accomplished as a joint effort between
 
 ### See also
 [Configure environment security](database-security.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

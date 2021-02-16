@@ -31,3 +31,6 @@ You can try Power Apps for free by signing up either for a 30 day trial or commu
 Visit <https://trials.dynamics.com> and select the required app to sign up for a 30-day trial.
 
 For detailed information about signing up, purchasing or using individual customer engagement apps, see the respective app's documentation at [Dynamics 365 documentation](https://docs.microsoft.com/dynamics365/). 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

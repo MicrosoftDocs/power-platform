@@ -23,3 +23,6 @@ Have you heard from colleagues who have attended a [Microsoft Power Platform tra
 The articles in [Planning a Power Apps project](https://docs.microsoft.com/powerapps/guidance/planning/introduction) can teach you how to convert an idea into a fully working solution by using Power Apps.
 
 Use the materials to organize solution envisioning workshops with makers and help them plan and execute their Power Apps projects. This could be a great add-on to an App in a Day event that you are running internally.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

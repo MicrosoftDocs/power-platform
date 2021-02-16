@@ -57,3 +57,6 @@ More information: [Establishing an environment strategy for Microsoft Power Plat
 
 ### See also
 [Solution concepts](solution-concepts-alm.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

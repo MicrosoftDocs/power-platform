@@ -62,3 +62,6 @@ To maintain the integrity of system data, you should check for duplicates regula
  [Turn duplicate detection rules on or off for the whole organization](../admin/turn-duplicate-detection-rules-off-whole-organization.md)   
  [View and take action on bulk deletion jobs](../admin/view-take-action-bulk-deletion-jobs.md)   
  [Detect duplicate data](detect-duplicate-data.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -125,3 +125,6 @@ You'll now configure the Power Apps visuals in the Power BI dashboard to point t
 1. Resize and move the visual to the location you want. Delete the placeholder from the template, and move your embedded app to the same place.
 
 Republish the dashboard, and view it under [app.powerbi.com](https://app.powerbi.com/).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

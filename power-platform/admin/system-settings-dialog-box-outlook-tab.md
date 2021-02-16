@@ -51,3 +51,6 @@ Use the settings on this page to configure how [!INCLUDE[pn_MS_Outlook_Short](..
 |                                              **Set whether users see customer engagement apps message**                                              |                                                                                                                                                                                                                 |
 |         Users see “Get [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)]” option displayed in the message bar          |                                 Default: Yes. If Yes, the **Get Dynamics 365 for Outlook** button is displayed.                                  |
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

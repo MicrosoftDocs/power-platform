@@ -44,3 +44,6 @@ You can set a sandbox or production environment in administration mode so that o
 4. Under **Administration mode**, toggle **Disabled** to **Enabled**.
 
 5. Optionally, you can set **Background operations** and **Custom message**, and then select **Save**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

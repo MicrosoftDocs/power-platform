@@ -30,3 +30,5 @@ For information about assigning security roles to a model-driven app form, see [
 ### See also
 
 [Grant users access](grant-users-access.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -47,3 +47,6 @@ Make sure you have the System Administrator or System Customizer security role o
 5. Select **Apply** to apply the changes and continue working in the dialog box, or select **OK** to save the changes and close the dialog box.  
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

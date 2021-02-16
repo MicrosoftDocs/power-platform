@@ -99,3 +99,6 @@ As an administrator, you should:
 - Know that audit logging can be helpful in tracking down complex business logic problems that are a result of too many updates or conflicting updates occurring.
 - Frequently review the logging data, because it can provide help in troubleshooting logic problems. So, having some level of audit logging enabled ahead of the need is helpful to expedite problem solving.
 - Regularly review your audit log size, and delete audit records.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -222,3 +222,6 @@ Administrators can set whether a sync occurs and the sync direction for customer
 3. **Start Date:** When a task is created and tracked in [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)], the system assigns the task a reminder time. Reminder information is not synced from [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] to customer engagement apps. However, when a task has Due Time set, it will be synchronized to Reminder Time in [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)].  
   
 ### See also  
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

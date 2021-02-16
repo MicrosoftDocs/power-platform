@@ -317,3 +317,6 @@ Select the environment and time-period from the drop-down lists, and then select
 
 > [!div class="mx-imgBorder"] 
 > ![Dataverse analytics change filters apply](./media/organization-insights-change-filters-apply.png "Dataverse analytics change filters apply")  
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

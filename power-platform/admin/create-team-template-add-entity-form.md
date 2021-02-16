@@ -97,3 +97,6 @@ Check your security role:
 > [!NOTE]
 > The Access Team template does not get exported with its entity in a Solution.  Administrators will need to recreate the template when exporting the entity into another environment.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

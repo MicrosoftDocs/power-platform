@@ -84,3 +84,6 @@ The following admins will be able to allocate add-on capacity in the Power Platf
 
 ### See also
 [About Power Apps per app plans](about-powerapps-perapp.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -144,3 +144,6 @@ You're now ready to use Microsoft 365 Groups. See [Collaborate with your colleag
  [Set up customer engagement apps to use Exchange Online](connect-exchange-online.md)   
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

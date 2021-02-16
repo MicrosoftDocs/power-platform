@@ -62,3 +62,6 @@ Set-TenantSettings $settings
 Download and install the admin PowerShell cmdlets as described [here](https://www.powershellgallery.com/packages/Microsoft.PowerApps.Administration.PowerShell/2.0.1). For more information about our cmdlets, see [PowerShell support for Power Apps](powerapps-powershell.md).
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

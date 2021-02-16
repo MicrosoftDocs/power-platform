@@ -150,3 +150,6 @@ User A opens a OneNote note in Dynamics 365 Customer Engagement (on-premises) an
 ### See also
 
 [Turn on server-based SharePoint integration](set-up-sharepoint-integration.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

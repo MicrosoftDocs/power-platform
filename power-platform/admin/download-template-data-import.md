@@ -40,3 +40,6 @@ Make sure you have the System Administrator or System Customizer security role o
 [Import data (all record types) from multiple sources](import-data-all-record-types.md) <br />
 [Import data](https://docs.microsoft.com/powerapps/developer/common-data-service/import-data)
  
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

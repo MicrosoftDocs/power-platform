@@ -20,3 +20,6 @@ search.app:
 # Manage environments in the Power Apps Admin center
 
 Environment management is now done in the [Power Platform admin center](environments-overview.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

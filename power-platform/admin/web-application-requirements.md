@@ -105,3 +105,6 @@ For more information, see this blog post: [TLS 1.2 support at Microsoft](https:/
 ### See also  
  [Supported web browsers and mobile devices](../admin/supported-web-browsers-and-mobile-devices.md)   
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

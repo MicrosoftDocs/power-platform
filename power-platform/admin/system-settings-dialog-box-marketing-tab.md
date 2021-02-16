@@ -47,3 +47,6 @@ Use the settings on this page to configure marketing settings for model-driven a
 |                                      Send acknowledgement to customers when they unsubscribe                                      |                                                 If the previous setting **Set "Do Not Send Marketing Material"** is Yes, you can use this setting to send a response to customers when they unsubscribe.                                                 |
 |                                                Template for Acknowledgement Email                                                 |                                                              If the two previous settings are Yes, you must specify an email template to use to respond to customers when they unsubscribe.                                                              |
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

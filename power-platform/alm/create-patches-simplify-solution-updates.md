@@ -108,3 +108,6 @@ If you add an entity to a solution and export the solution, the entity and all o
   
 ### See also  
  [Use segmented solutions](segmented-solutions-alm.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

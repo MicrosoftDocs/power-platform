@@ -141,3 +141,6 @@ You can view the entity metadata for your organization including which fields ca
  [Create a field security profile](set-up-security-permissions-field.md)   
  [Add or remove security from a field](enable-disable-security-field.md)   
  [Hierarchy security](../admin/hierarchy-security.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

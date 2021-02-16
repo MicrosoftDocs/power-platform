@@ -20,3 +20,6 @@ search.app:
 
 Creating and managing environments is now done in the Microsoft [Power Platform admin center](create-environment.md).
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

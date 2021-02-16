@@ -50,3 +50,6 @@ To learn more about how to add Power BI dashboards to personal dashboards, see [
 [Use Power BI with Dataverse data](/powerapps/maker/common-data-service/use-powerbi-with-cds) 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
