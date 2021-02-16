@@ -478,14 +478,21 @@ Users without an existing Power Apps or Power Automate license can access AI Bui
 
 ## Power Automate RPA license
 
-### How can I apply unattended RPA licenses to my flow
-There are a few steps to apply unattended RPA licenses:
-- Step 1: the tenant admin needs to purchase or get trial version of the unattended RPA add-on capacity for this tenant. The tenant admin can do this from the M365 admin portal [here](https://admin.microsoft.com/AdminPortal/Home#/catalog). Just search the add-ons session from purchase services page
-  ![get unattended license](./media/RPA-license/unattended-license-M365.JPG)
-- Step 2: the environment admin needs to assign the available (paid or trial) unattended add-on capacities to a specific environment
-  ![manage unattended license](./media/RPA-license/unattended-license-manage.png)
-- Step 3: now the flow makers can run unattended desktop flows within the environment where unattended capacity is available. 
+### How can I apply unattended RPA licenses to my flows?
+
+Follow these steps to apply unattended RPA licenses to your flows.
+
+1. The tenant admin must purchase or get trial a version of the unattended RPA add-on capacity for the tenant. The tenant admin can do this from the [Microsoft 365 admin portal](https://admin.microsoft.com/AdminPortal/Home#/catalog). Just search the purchase services page for the add-on.
+  
+   ![get unattended license](./media/RPA-license/unattended-license-M365.JPG)
+  
+1. The environment admin must assign the available (paid or trial) unattended add-on capacities to a specific environment.
+  
+   ![manage unattended license](./media/RPA-license/unattended-license-manage.png)
+  
+1. Makers can now run unattended desktop flows within the environment that has the unattended capacity. 
+
 > [!NOTE]
-> The unattended add-on is environment based. So if you have multiple environments needs to run unattended RPA, you need to assign add-on capacity to each of them. 
-> Also if you need to run multiple unattended desktop flows in parallel at the same time in one environment, you need to assign the right number of unattended add-on to this environment to scale up.
+> The unattended add-on is environment-specific. So, if you have multiple environments that need to run unattended RPA, you need to assign add-on capacity to each of them. 
+> Also if you need to run multiple unattended desktop flows in parallel in a single environment, you need to assign the right number of unattended add-ons to the environment to support the flow runs.
  
