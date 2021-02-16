@@ -1,6 +1,6 @@
 ---
-title: "Switching from the list component or changing the SharePoint deployment | MicrosoftDocs"
-description: Switching from the list component or changing the SharePoint deployment
+title: "Switch from list component in SharePoint or change deployment type"
+description: "Learn how to switch from list component to server-based authentication for SharePoint and how to change the SharePoint deployment type."
 author: Mattp123
 ms.service: power-platform
 ms.component: pa-admin
@@ -81,3 +81,5 @@ If the **Enable Server-Based SharePoint Integration** icon doesn't appear in the
 ### See also
 [Set up SharePoint integration](../admin/set-up-sharepoint-integration.md) 
   
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
+

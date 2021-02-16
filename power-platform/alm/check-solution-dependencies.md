@@ -27,3 +27,6 @@ search.app:
 |<xref:Microsoft.Crm.Sdk.Messages.RetrieveRequiredComponentsRequest>|Returns a list of the dependencies for solution components that another solution component directly depends on. This message provides the reverse of the `RetrieveDependentComponentsRequest` message.|  
 |<xref:Microsoft.Crm.Sdk.Messages.RetrieveDependenciesForDeleteRequest>|Returns a list of all the dependencies for solution components that could prevent deleting a solution component.|  
 |<xref:Microsoft.Crm.Sdk.Messages.RetrieveDependenciesForUninstallRequest>|Returns a list of all the dependencies for solution components that could prevent uninstalling a managed solution.|  
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

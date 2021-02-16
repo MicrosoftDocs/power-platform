@@ -28,3 +28,6 @@ If a user loses a password, you can reset it. To reset a user’s password, you 
   
 ### See also  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

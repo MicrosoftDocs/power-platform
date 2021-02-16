@@ -63,3 +63,6 @@ The admin can decide to put an app in the app catalog and mark it as featured or
 **Users:** The maker and users can now see the app in the app catalog.
 
 ![App catalog](media/coe67.png "App catalog")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

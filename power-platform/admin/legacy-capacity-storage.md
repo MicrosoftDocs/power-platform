@@ -177,3 +177,6 @@ Entities ending in “– Analytics” are entities used by one or more Insights
 [Free up storage space](free-storage-space.md) <br />
 [Capacity add-ons](capacity-add-on.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

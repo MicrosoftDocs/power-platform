@@ -81,3 +81,6 @@ As an administrator, you should:
 - Regularly monitor overall service performance to ensure user run-time experience when interacting with the platform services.
 
 More information: [Admin Analytics for Power Apps](https://docs.microsoft.com/power-platform/admin/analytics-powerapps)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -64,3 +64,6 @@ With field synchronization, admins can set the sync direction between customer e
 [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [How field security affects synchronization between customer engagement apps and Outlook](../admin/how-field-security-affects-synchronization-between-outlook.md) and [Security concepts](../admin/wp-security-cds.md)  
   
 ### See also  
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -45,3 +45,5 @@ To select a different region, see [Internet accessible URLs required](online-req
 
 ### See also
 [Internet accessible URLs required](online-requirements.md#internet-accessible-urls-required)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

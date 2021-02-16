@@ -81,3 +81,6 @@ As an administrator, you should:
 
 - Carefully think about audit data via Office 365 Security & Compliance Center in addition to other mechanisms for monitoring. You can create new alert policies to help ensure the overall health of your citizen app development platform.
 - Further explore Power Automate capabilities that can help you automate additional steps for ensuring Microsoft Power Platform service health.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

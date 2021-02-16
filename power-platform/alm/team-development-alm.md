@@ -35,3 +35,5 @@ Supporting team development consists of multiple apps and development team membe
 
 ### See also
 [Scenario 6: Embrace your citizen developers in the ALM process](embrace-citizen-devs.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

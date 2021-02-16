@@ -107,3 +107,6 @@ If you want to use the Power BI report (packaged as part of the solution), you'l
 ### It looks like I found a bug with the app; where should I go?
 
 To file a bug against the solution, go to [aka.ms/coe-starter-kit-issues](https://aka.ms/coe-starter-kit-issues).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

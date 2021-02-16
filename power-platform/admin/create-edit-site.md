@@ -45,3 +45,6 @@ You can create a new site to add an office location or other facility where serv
 ### See also  
  [Create or edit business units](../admin/create-edit-business-units.md)   
  [Add resources to a site](../admin/add-resources-site.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

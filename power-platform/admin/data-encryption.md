@@ -66,3 +66,6 @@ Make sure you have the System Administrator or System Customizer security role o
  [FIPS 140 Evaluation](https://technet.microsoft.com/library/cc750357.aspx)   
  [Manage Your Data](add-remove-sample-data.md)   
  [Manage configuration data](manage-configuration-data.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

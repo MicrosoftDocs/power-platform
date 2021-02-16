@@ -58,3 +58,6 @@ Admins can do the following from the Power Platform admin center:
    |**Share**     | Share the flow with others        |
    |**Disable**     | Disable the flow        |
    |**Delete**     | Delete the flow        |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -38,3 +38,5 @@ sample: [Import files as web resources](/powerapps/developer/model-driven-apps/s
 ### See also
 
 [Configuration Migration and Package Deployer tools](configure-and-deploy-tools.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

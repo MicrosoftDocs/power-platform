@@ -21,3 +21,6 @@ Use the [Center of Excellence (CoE) kit](https://docs.microsoft.com/power-platfo
 
 ### See also
 [ALM for developers](alm-for-developers.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

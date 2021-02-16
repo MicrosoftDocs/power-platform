@@ -38,3 +38,5 @@ For more information about using the tool, including how to download it, see
 
 [Package Deployer tool](package-deployer-tool.md)  
 [Solution Packager tool](solution-packager-tool.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

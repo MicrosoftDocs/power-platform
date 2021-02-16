@@ -22,3 +22,5 @@ With the retirement of the Power Apps admin center, this feature is no longer av
 
 You can view apps in your environments. In the Microsoft Power Platform admin center, select an environment and then select an item in the **Resources** section. See [Manage Power Apps](admin-manage-apps.md#manage-power-apps). 
 
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
+

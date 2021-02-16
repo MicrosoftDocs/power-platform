@@ -39,3 +39,6 @@ For more information about [!INCLUDE[pn_Exchange_Server_2013_full](../includes/p
 For more information about [!INCLUDE[pn_Exchange_Server_2010_full](../includes/pn-exchange-server-2010-full.md)] backup and recovery, see [Understanding Backup, Restore and Disaster Recovery](https://technet.microsoft.com/library/dd876874\(v=exchg.141\).aspx).  
   
 ### See also  
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

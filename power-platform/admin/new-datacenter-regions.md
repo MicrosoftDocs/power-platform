@@ -68,3 +68,6 @@ The following is a list of regions and their URL.
  [Geo to geo migrations](geo-to-geo-migrations.md)   
  [Products by region](https://azure.microsoft.com/regions/services/)   
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

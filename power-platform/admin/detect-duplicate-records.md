@@ -108,3 +108,6 @@ Follow the instructions from the [Resolve duplicates when creating or updating r
 [Set up duplicate detection rules](set-up-duplicate-detection-rules-keep-data-clean.md)  
 [Run system jobs to detect duplicates](run-bulk-system-jobs-detect-duplicate-records.md)  
 [Delete bulk records](../admin/delete-bulk-records.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

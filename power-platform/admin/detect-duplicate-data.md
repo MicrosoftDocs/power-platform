@@ -58,3 +58,6 @@ A duplicate detection job runs in the background while you do other things in th
  [Set up duplicate detection rules](set-up-duplicate-detection-rules-keep-data-clean.md)   
  [Run system jobs to detect duplicates](run-bulk-system-jobs-detect-duplicate-records.md)   
  [Delete bulk records](../admin/delete-bulk-records.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

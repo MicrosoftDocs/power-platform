@@ -42,3 +42,6 @@ The following is a high-level look at how the multiple layers of security make u
 
 It’s important to note that when accessing data sources via connectors, all the underlying security that the data source offers is in addition to the layers of security described above. Power Apps and Power Automate don't provide users with access to the connector data source they don’t already have. Users should only have access to data that they really require access to. Few connectors allow implicit sharing for data services like SQL Server, and Azure Blob storage can be blocked in default and other environments with the DLP policy feature to block connectors.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

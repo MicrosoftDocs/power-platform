@@ -101,3 +101,6 @@ The reset process starts.
  When you place a sandbox environment in administration mode only users with System Administrator or System Customizer security roles will be able to sign in to that environment. Administration mode is useful when you want to make operational changes and not have regular users affect your work, and not have your work affect regular users.  
 
 See [Administration mode](admin-mode.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

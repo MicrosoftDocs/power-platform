@@ -183,3 +183,6 @@ We delete trial (standard) environments that haven't had any activity in the env
 [Licensing overview](pricing-billing-skus.md) <br />
 [Block trial licenses commands](powerapps-powershell.md#block-trial-licenses-commands) <br />
 [Control who can create and manage environments in the Power Platform admin center](control-environment-creation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

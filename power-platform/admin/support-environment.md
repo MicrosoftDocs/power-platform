@@ -82,3 +82,6 @@ To assist with diagnosing and resolving a support issue, you must consent to the
 
 > [!div class="mx-imgBorder"] 
 > ![Consent for support environment](./media/consent-support-environment.png "Consent for support environment")
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

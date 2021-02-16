@@ -27,3 +27,6 @@ A filter has been added to this flow to only process relevant audit log events (
 
 > [!IMPORTANT]
 > If you are using a previous version of the Audit Log solution we recommend you upgrade as soon as possible, to improve performance and reliability of the Audit Log data available to the CoE Starter Kit.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

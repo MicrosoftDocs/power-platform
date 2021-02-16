@@ -52,3 +52,6 @@ The following are recommended ways to update to Unified Interface based on how t
 - Contact the ISV (Independent Software Vendor) or the third party app publisher and get a new version that updates the apps to Unified Interface.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -72,3 +72,6 @@ You’ll be provided with a list of prerequisites and post-requisites for your m
 
 We will adhere to the terms of the [Microsoft Online Services Service Level Agreement](https://go.microsoft.com/fwlink/p/?LinkID=523897) for all moves.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -47,3 +47,6 @@ Use the settings on this page to configure reporting settings for model-driven a
 ### See also  
  [Use Power BI](https://docs.microsoft.com/powerapps/user/find-admin)   
  [System Settings dialog box - General tab](../admin/system-settings-dialog-box-general-tab.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

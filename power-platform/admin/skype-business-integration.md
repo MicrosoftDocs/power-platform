@@ -79,3 +79,6 @@ If your organization uses [!INCLUDE[pn_skype_for_business](../includes/pn-skype-
 ### See also  
  [Set up customer engagement apps to use Skype or Skype for Business](../admin/set-up-skype-or-skype-for-business.md)   
  [Requirements](online-requirements.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

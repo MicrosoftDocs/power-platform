@@ -18,3 +18,5 @@ search.app:
 # Manage users overview
 
 The configure user security content is available in the [Manage users](grant-users-access.md) section.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

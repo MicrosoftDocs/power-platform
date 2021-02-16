@@ -205,3 +205,6 @@ During the general availability deployment, your environments will be updated wi
 [Dynamics 365 and Microsoft Power Platform Release Plans ](https://docs.microsoft.com/dynamics365/release-plans/)<br />
 [Policies and communications](https://docs.microsoft.com/power-platform/admin/policies-communications)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

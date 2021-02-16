@@ -41,3 +41,6 @@ More information: [Solution concepts](solution-concepts-alm.md)
 
 ### See also
 [Scenario 2: Moving from a single production environment](move-from-single-env-alm.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

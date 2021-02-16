@@ -40,3 +40,6 @@ Use the settings on this page to configure calendar settings for customer engage
   
 ### See also  
  [Create or edit an appointment](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/basics/create-edit-appointment)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

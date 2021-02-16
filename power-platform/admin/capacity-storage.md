@@ -274,3 +274,6 @@ Tables ending in “– Analytics” are tables used by one or more Insights app
 [Automatic tuning in Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-automatic-tuning) <br />
 [What's new in storage](whats-new-storage.md) <br />
 [Free up storage space](free-storage-space.md) <br />
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

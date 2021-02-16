@@ -126,3 +126,6 @@ You can invite other users to access your environment. The [!INCLUDE[pn_Office_3
  [Azure Active Directory B2B collaboration frequently-asked questions (FAQ)](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-faq)   
  [Azure Active Directory B2B Collaboration](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)   
  [Azure AD B2B: New updates make cross-business collab easy](https://blogs.technet.microsoft.com/enterprisemobility/2017/02/01/azure-ad-b2b-new-updates-make-cross-business-collab-easy/)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

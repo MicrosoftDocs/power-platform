@@ -25,3 +25,6 @@ Use the **System Settings** dialog box to specify system-level settings for your
 > Getting to the **System Settings** dialog box can vary based on the type of app you're using (Unified Interface or the legacy web client). You might need to adjust the procedural steps in this section to reflect your app type. See [Settings](../admin/admin-settings.md#app-settings).
 >
 > Also, we are moving some settings from customer engagement apps to the Power Platform admin center. See [Environment settings are moving](../admin/admin-settings.md#environment-settings-are-moving).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

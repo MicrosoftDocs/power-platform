@@ -28,3 +28,6 @@ Connection References have been added to the solution to support the new modern 
 ## Custom Connector
 
 To help with the setup, the custom connector used in the [Audit Log components](../setup-auditlog.md) has been removed from this solution and added to the Core solution.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

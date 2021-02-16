@@ -101,3 +101,6 @@ Use the settings on this page to change general system-level settings like prefe
 ### See also  
  [Manage auto-save](https://docs.microsoft.com/powerapps/maker/model-driven-apps/manage-auto-save)   
  [Customize the Help experience](https://docs.microsoft.com/powerapps/maker/model-driven-apps/manage-auto-save)   
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
