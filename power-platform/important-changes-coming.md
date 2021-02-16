@@ -1,7 +1,7 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps"
 description: Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps 
-ms.date: 12/04/2020
+ms.date: 02/16/2021
 ms.topic: "article"
 ms.assetid: 994cc854-17f6-45d6-bc20-fcf1a3f2d6d6
 searchScope:
@@ -55,19 +55,19 @@ With the upcoming 2021 release wave 2 (public preview in August 2021 and GA in O
 
 - The footer does not meet the Microsoft [Web Content Accessibility Guidelines (WCAG) 2.0](https://docs.microsoft.com/compliance/regulatory/offering-WCAG-2-1) compliance for accessibility. 
 - Data density is highly impacted by the form footer and does not support a good customer experience. Controls are not discoverable and lead to many customer usability issues. 
-- Makers have moved away from adding controls into the footer and there is low usage of other controls, out of box or custom, in the current footer form experiences. 
+- Makers have moved away from adding controls into the footer and there is low usage of other controls, out of box or custom, in the current form footer experiences. 
 - Components created using Power Apps component framework aren't fully compatible with form footers, which cause usability issues when added to a form footer. 
 - Form footers are not included in the mobile experience or on the view and dashboard pages.  This change will align the form experience with other pages in a model-driven app. 
 
 #### Impact
 
-Main forms will no longer include the footer when a record is opened. Any out of box or custom controls that have been added to the form footer will no longer be available and you'll need to plan to remove the fields if they are no longer necessary or move the fields to the header and use the [high-density header with flyout](https://docs.microsoft.com/powerapps/maker/model-driven-apps/form-designer-header-properties#high-density-header-flyout) or add them onto the main form. The recommended approach is to move field that users need to access regardless of the form tab a user is on to the header and set it to use the [high-density header with flyout](https://docs.microsoft.com/powerapps/maker/model-driven-apps/form-designer-header-properties#high-density-header-flyout).  If there is only one tab, the recommendation is to move them into a new section on the form. 
+Main forms will no longer include the footer when a record is opened. Any out of box or custom controls that have been added to the form footer will no longer be available and you'll need to remove the fields if they are no longer necessary or move the fields to the header and use the [high-density header with flyout](https://docs.microsoft.com/powerapps/maker/model-driven-apps/form-designer-header-properties#high-density-header-flyout) or add them onto the main form. The recommended approach is to move fields that users need to access regardless of the form tab a user is on to the header and set it to use the [high-density header with flyout](https://docs.microsoft.com/powerapps/maker/model-driven-apps/form-designer-header-properties#high-density-header-flyout).  If there is only one tab, the recommendation is to move them into a new section on the form. 
 
 #### Action required by you
 - To meet the October 2021 deadline, you will need to move fields or controls added to a form footer to either the header or a section on the form.
 - If you do nothing, the footer fields or controls that you have added will no longer render on the form and will not be available to your users. 
 
-The out of box fields currently on the footer will be removed and included on the form as part of the 2021 release wave 2 updates. So, you will not lose status or unsaved changes while opening a form in a new window. The **Save** option is already available in the command bar and is always visible to the user. 
+The out of box fields currently on the footer will be removed and included on the form as part of the 2021 release wave 2 updates. So, you will not lose status, unsaved changes or the option to open a form in a new window. The **Save** option is already available in the command bar and is always visible to the user. 
 
 While we understand that these types of changes can be disruptive for makers that use the footer today, we always evaluate the experiences to ensure they provide a modern experience that improves usability, support accessibility requirements, and improves discoverability for highly used fields and controls on a page.
  
