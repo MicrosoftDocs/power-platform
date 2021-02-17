@@ -37,7 +37,7 @@ The following lists the scenarios when a user is deleted:
 - If the user is in the environment and has a status of **disabled**, the status remains as **disabled**.
 - If the user is not present in the environment, there is no action taken.
 
-It can take between 30 minutes to 6 hours for a user’s status to be updated in an environment when the user is deleted from Microsoft 365 admin center.  If you need to update the user status immediately, you can following the below steps as outlined in [Troubleshooting: Common user access issues](troubleshooting-user-needs-read-write-access-organization.md).
+It can take between 30 minutes to 6 hours for a user’s status to be updated in an environment when the user is deleted from the Microsoft 365 admin center.  If you need to update the user status immediately, you can following the steps below as outlined in [Troubleshooting: Common user access issues](troubleshooting-user-needs-read-write-access-organization.md).
 
 Follow these steps to run user access diagnostics on a user in a Dataverse environment.
 
@@ -46,4 +46,31 @@ Follow these steps to run user access diagnostics on a user in a Dataverse envir
 3. Select a **user**.
 4. Select **Run diagnostics**.
 
-<!-- Question for Paul, once user is deleted from M365 and shows up as disabled in D365, how to re-enable in D365?>
+<!-- Question for Paul, once user is deleted from M365 and shows up as disabled in D365, how to re-enable in D365? 
+Diagnosis fails for disabled users -->
+
+## About disabled users
+
+You can view a list of disabled users by following these steps:
+
+1. In the Power Platform admin center, select an environment.
+
+2. Select **Settings** > **Users + permissions** > **Users**.
+
+3. In the top menu bar, select **Manage users in Dynamics 365**. 
+
+4. From the drop-down menu, choose **Disabled users**. 
+
+> [!NOTE]
+> To delete or re-enable disabled users, contact [Support](support-overview.md).
+
+
+
+
+
+
+
+
+
+
+
