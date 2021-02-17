@@ -51,7 +51,7 @@ Diagnosis fails for disabled users -->
 
 ## About disabled users
 
-You can view a list of disabled users by following these steps:
+When you view the **Users** page in the Power Platform admin center, you can see a list of enabled and disabled users. To view a list of disabled users, follow these steps:
 
 1. In the Power Platform admin center, select an environment.
 
