@@ -25,3 +25,5 @@ Select the version of Power Virtual Agents you're using here:
 You can configure a Power Virtual Agents bot to provide authentication capabilities, so users can sign in with an Azure Active Directory (AAD), or any [OAuth2 identity provider](/azure/active-directory/develop/v2-oauth2-auth-code-flow), such as a Microsoft account, or Facebook. 
 
 You can configure authentication from within the Power Virtual Agents app in Microsoft Teams, but you should refer to the web app version of this topic for more information: [Configure end-usr authentication](../configuration-end-user-authentication.md).
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

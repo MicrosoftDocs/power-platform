@@ -69,3 +69,6 @@ Topic | Description
 [Manage topics](authoring-topic-management.md) | Copy, edit, and manage which topics should be available in your bot.
 [Test your bot](authoring-test-bot.md) | Test your bot directly within the Power Virtual Agents portal without needing to deploy or publish it.
 [Supported languages](authoring-language-support.md) | Choose from a number of languages when you create your bot, with user interface, system, and template topic localization.
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

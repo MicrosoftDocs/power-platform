@@ -271,3 +271,6 @@ In order to host your custom canvas, deploy all files to a web app.
 
 -  [Bot Framework web chat](https://github.com/microsoft/BotFramework-WebChat)
 -  [Generating a direct line token](https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0#generate-token&preserve-view=true)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

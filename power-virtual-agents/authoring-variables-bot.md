@@ -204,3 +204,6 @@ Depending on the bot's authentication setup, you will have a set of bot variable
 
 - [Use variables](authoring-variables.md)
 - [Customize the look and feel of the bot](customize-default-canvas.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

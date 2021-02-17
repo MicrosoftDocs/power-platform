@@ -193,3 +193,6 @@ These steps update the manifest file for the bot. Now you can download the manif
 >[!NOTE] 
 > Make sure to test your bot authentication functionality in all channels to ensure they are working as intended.
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

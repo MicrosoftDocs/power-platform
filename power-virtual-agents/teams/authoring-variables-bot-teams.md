@@ -98,3 +98,6 @@ For more details on complex and advanced scenarios using bot variables, includin
 
 - [Use variables](authoring-variables-teams.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

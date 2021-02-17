@@ -88,3 +88,6 @@ Abandon rate impact | The topic's abandon-rate impact score. The abandon-rate im
 ## Topic Volume by Day chart
 
 The Topic volume by day chart provides a graphical view of the number of sessions for the topic over the specified time period.
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

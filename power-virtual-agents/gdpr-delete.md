@@ -59,3 +59,6 @@ All bot system telemetry is automatically deleted within 29 days. No action from
 
 > [!NOTE]
 > Removing personal data includes removing all personal data and system-generated logs except audit log information.
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

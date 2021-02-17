@@ -69,3 +69,6 @@ This option controls who can access your bot. You can select one of two groups:
 The **Authentication** setting impacts how you can manage access to the bot. 
 
 For more information on configuration the **Authentication** setting and other access options available, see the [Power Virtual Agents web app](../configuration-security.md#access-settings-based-on-authentication-configuration) version of this topic.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

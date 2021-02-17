@@ -167,3 +167,6 @@ The following instructions describe how to set a job to delete transcripts that 
     ![The list of bulk delete jobs, now showing the new job just created](media/sessions-job-ready.png)
  
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

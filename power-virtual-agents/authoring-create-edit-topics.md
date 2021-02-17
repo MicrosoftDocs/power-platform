@@ -215,3 +215,6 @@ You can also have the conversation [handed over to a live agent](advanced-hand-o
 Once you've finished designing and testing your bot, you can consider [publishing it to the web, mobile or native apps, or Microsoft Bot Framework channels](publication-fundamentals-publish-channels.md).
 
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

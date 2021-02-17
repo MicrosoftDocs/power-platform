@@ -19,3 +19,5 @@ ms.collection: virtual-agent
 
 
 For details on EU Data Protection Regulation (GDPR) for Power Virtual Agents, see [GDPR compliance for Power Virtual Agents](../gdpr-summary.md) or select the web app version of this topic above.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

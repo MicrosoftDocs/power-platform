@@ -114,3 +114,6 @@ When using a variable in an action node, if a variable's base type matches with 
 ## Related links
 - [Reuse variables across topics](authoring-variables-bot.md)
 - [Customize the look and feel of the bot](customize-default-canvas.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

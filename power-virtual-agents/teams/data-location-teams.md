@@ -57,3 +57,6 @@ Power Virtual Agents in Teams can be created in the [supported data locations](.
 ## See also
 
 - [Language support](authoring-language-support-teams.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

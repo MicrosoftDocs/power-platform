@@ -116,3 +116,6 @@ If there are topics with similarly named context variables, Power Virtual Agents
 
 
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

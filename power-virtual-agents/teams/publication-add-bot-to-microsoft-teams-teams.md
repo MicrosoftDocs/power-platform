@@ -296,3 +296,6 @@ You can always reconnect your bot after disconnecting by selecting **Turn on Tea
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

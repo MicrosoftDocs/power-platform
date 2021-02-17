@@ -179,3 +179,6 @@ New conversations between user and the bot will have the latest published bot co
 - After removing the Facebook channel, it might take a few minutes before the bot is removed fully and becomes unreachable on Facebook Messenger.
 - After removing a Facebook page, it might take a few minutes before the bot becomes unreachable by visitors to the removed page through Facebook Messenger.
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

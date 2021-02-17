@@ -131,3 +131,6 @@ Improving the abandon rate for the top abandon-rate topics in red has the greate
 To see additional information about each topic, select the **Detail** link to display the topic details page. For more information, see [Topic details page](analytics-topic-details.md).
 
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]
