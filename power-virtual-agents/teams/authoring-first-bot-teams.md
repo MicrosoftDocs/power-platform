@@ -102,3 +102,6 @@ You'll be asked to confirm the deletion of the bot by entering the bot's name, a
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

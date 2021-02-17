@@ -146,3 +146,6 @@ You can [test the topics in the test chat](authoring-test-bot-teams.md), but you
 [Create your first bot](authoring-first-bot-teams.md)  
 [Create and edit topics](authoring-create-edit-topics-teams.md)  
 [Fundamentals - Publish your bot](publication-fundamentals-publish-channels-teams.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -58,3 +58,6 @@ Next, [register a skill in Power Virtual Agents](configuration-add-skills.md).
 1. You should [test your bot](authoring-test-bot.md) to make sure it's using the Skill properly.
 
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

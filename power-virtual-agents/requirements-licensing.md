@@ -113,3 +113,6 @@ See [Quotas and rate limit capacity considerations for Power Virtual Agents](req
 [See Power Automate request limits for Power Virtual Agents](requirements-quotas.md#power-automate-request-limits)
 [See how to use Power Automate with Power Virtual Agents](advanced-flow.md). 
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

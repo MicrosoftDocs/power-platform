@@ -114,3 +114,6 @@ There is no limit to the number of times a topic can be copied. A number will be
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -383,3 +383,6 @@ As next steps, you can continue working on their bot, adding more topics and ref
 See the [Power Virtual Agents app in Microsoft Teams](fundamentals-what-is-power-virtual-agents-teams.md) overview topic for more ideas on what to do with Power Virtual Agents.
 
 For additional help, or to post and vote on ideas, check out the [Power Virtual Agents community forum](https://aka.ms/pva_forum) and [Community help and support](../fundamentals-support.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

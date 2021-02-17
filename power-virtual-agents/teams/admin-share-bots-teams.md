@@ -89,3 +89,6 @@ Power Virtual Agents will detect this and prevent you from overwriting your cowo
 ![Screenshot showing a prompt that says Updated content available and gives you options to discard your changes or save a copy](media/sharing-multi-conflict-teams.png)
 
 If you save your changes to a new topic, you can then review your coworker's changes and merge the two topics, deleting the copy of the topic once you've finished.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

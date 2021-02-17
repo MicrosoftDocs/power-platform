@@ -47,3 +47,6 @@ If you need more information about licenses, see the following topics:
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

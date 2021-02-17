@@ -180,3 +180,6 @@ Once you have your authentication configured, make sure to go to **Manage** -> *
 3. Publish the bot.
 
 If authentication variables are being used in a topic, they will become **Unknown** variables. Go to the Topics page to see which topics have errors and fix them before publishing. 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

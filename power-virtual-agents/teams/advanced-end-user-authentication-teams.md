@@ -34,3 +34,6 @@ You can also enable user authentication within a bot conversation so the bot can
 - Use single sign-on (SSO) on web channels so your users don't need to sign in manually. 
 
 Read more about [Configuring and using authentication in the Power Virtual Agents web app documentation](../advanced-end-user-authentication.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
