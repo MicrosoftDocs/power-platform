@@ -46,4 +46,4 @@ Follow these steps to run user access diagnostics on a user in a Dataverse envir
 3. Select a **user**.
 4. Select **Run diagnostics**.
 
-
+<!-- Question for Paul, once user is deleted from M365 and shows up as disabled in D365, how to re-enable in D365?>
