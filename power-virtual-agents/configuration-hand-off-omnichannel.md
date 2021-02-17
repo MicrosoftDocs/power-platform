@@ -87,3 +87,6 @@ Some content may not show, such as emojis and certain types of notes or variable
 ## Known limitations
 See [Known limitations when using Power Virtual Agents with Omnichannel for Customer Service](/dynamics365/omnichannel/administrator/configure-bot-virtual-agent#known-limitations) for more information.
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

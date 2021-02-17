@@ -371,3 +371,6 @@ You're ready to test your dispatcher to ensure seamless interaction between Dyna
 3.  Open the Bot Emulator where you add the name and endpoint to your bot.
     >[!div class="mx-imgBorder"]
     ![Dialog to create new bot in the bot emulator](media/dispatch-bot-emulator.png)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

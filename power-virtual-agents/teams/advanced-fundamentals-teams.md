@@ -47,3 +47,6 @@ Topic | Description
 [Create topics from existing support content](advanced-create-topics-from-web-teams.md) | Utilize your existing web content to quickly create bots and topics.
 [Add end-user authentication](advanced-end-user-authentication-teams.md) | Allow users to sign in from within the bot.
 [Add actions using Power Automate](advanced-flow-teams.md) | Connect to existing and create new flows that let you automate and send and receive data.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

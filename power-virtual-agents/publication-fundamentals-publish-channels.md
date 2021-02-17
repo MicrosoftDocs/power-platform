@@ -99,3 +99,6 @@ Different channels have different end-user experiences. The following table show
 - [Add bot to Facebook](publication-add-bot-to-facebook.md) | Add your bot to Facebook Messenger.
 - [Add bot to mobile and custom apps (web-based or native)](publication-connect-bot-to-custom-application.md) | Add your bot to mobile or custom native apps (developer coding required).
 - [Add bot to Azure Bot Service channels](publication-connect-bot-to-azure-bot-service-channels.md) | Add your bot to Azure Bot Service channels (developer coding required).
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -46,3 +46,5 @@ Topic | Description
 [Add end-user authentication](advanced-end-user-authentication.md) | Allow users to sign in from within the bot.
 [Add actions using Power Automate](advanced-flow.md) | Connect to existing and create new flows that let you automate and send and receive data.
 [Trigger hand-off to a live agent](advanced-hand-off.md) | Send entire transcripts of a bot conversation to a live agent when the bot isn't able to resolve the issue.
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

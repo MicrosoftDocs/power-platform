@@ -34,3 +34,6 @@ See the [Power Virtual Agents web app version of this topic](../analytics-billed
 ## Known issues
 
 - We've recently introduced the capability for selected Microsoft 365 subscriptions to deploy bots to Microsoft Teams. The Power Virtual Agents analytics dashboards have not been updated to reflect this change.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

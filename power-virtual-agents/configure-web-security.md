@@ -187,3 +187,6 @@ For more details on refreshing a token, see the section **Refresh a Direct Line 
 - [Add bot to mobile and custom apps (web-based or native)](publication-connect-bot-to-custom-application.md)
 - [Add bot to Azure Bot Service channels](publication-connect-bot-to-azure-bot-service-channels.md)
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

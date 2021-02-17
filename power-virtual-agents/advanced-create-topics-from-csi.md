@@ -63,3 +63,6 @@ You can also automate topics from the Topics page by hovering over the topic you
 
 
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

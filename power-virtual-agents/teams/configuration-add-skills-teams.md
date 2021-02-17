@@ -29,3 +29,6 @@ You can add a skill from within the Power Virtual Agents app in Microsoft Teams,
 
 You should also review and refer to the web app version of this topic for more information: [Extend your bot using Bot Framework skills](../configuration-add-skills.md).
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

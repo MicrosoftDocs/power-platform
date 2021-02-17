@@ -359,3 +359,6 @@ Update the custom canvas page where the bot is located to intercept the login ca
 
 #### Full sample code
 For reference, you can find the full sample code, with the MSAL and store conditional scripts already included [at our GitHub repo](https://github.com/microsoft/PowerVirtualAgentsSamples/blob/master/BuildYourOwnCanvasSamples/3.single-sign-on/index.html).
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

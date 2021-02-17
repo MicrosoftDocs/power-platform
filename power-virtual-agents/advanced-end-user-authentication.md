@@ -165,3 +165,6 @@ Add any logic you might want to treat this case. As an example, we have provided
 ## Testing your topic
 
 Make sure to [test your topic](authoring-test-bot.md) using a real user configured in your identity provider. Ensure both the sign-in success and failure paths are exercised, so there are no surprises if your user fails to sign in or there is an error with the identity provider's sign-in experience.
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

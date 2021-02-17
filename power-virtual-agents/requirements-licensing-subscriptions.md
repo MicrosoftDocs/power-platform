@@ -59,3 +59,6 @@ The standalone Power Virtual Agents subscription allows you to build chatbots on
 
 
 You can obtain a standalone Power Virtual Agents subscription from the Microsoft 365 admin center. Learn more at the [Assign licenses and manage access to Power Virtual Agents](requirements-licensing.md) topic.
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

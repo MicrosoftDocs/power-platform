@@ -72,3 +72,6 @@ To reset the system fallback behavior and return it to its default behavior, go 
 >This will remove the fallback topic and any changes you made to it. 
 
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]
