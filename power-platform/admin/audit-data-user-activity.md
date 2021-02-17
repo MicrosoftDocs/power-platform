@@ -4,7 +4,7 @@ description: "Learn how to use auditing to log changes to records and user acces
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/11/2021
+ms.date: 02/17/2021
 author: tjvass
 ms.author: tjvass
 ms.reviewer: jimholtz 
@@ -78,11 +78,13 @@ This task requires the system administrator or customizer security role or equiv
   
 ## Set specific areas of the product to audit
 
-1. In the web app, go to **Settings** > **Administration**.
-  
-2. Choose **System Settings**, and then choose the **Auditing** tab.  
+1. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
 
-3. Select the entities you want to track. To start or stop auditing on specific entities, select or clear the following check boxes:  
+2. Select **Settings** > **Administration**.
+  
+3. Choose **System Settings**, and then choose the **Auditing** tab.  
+
+4. Select the entities you want to track. To start or stop auditing on specific entities, select or clear the following check boxes:  
   
   <!--  **Audit user access**. Tracks when a user accesses customer engagement apps (such as Dynamics 365 Sales and Customer Service), including the user name and time.  -->
    - **Common Entities**. Tracks common entities like Account, Contact, Goal, Product, and User.  
@@ -90,7 +92,7 @@ This task requires the system administrator or customizer security role or equiv
    - **Marketing Entities**. Tracks Campaign entity activity.  
    - **Customer Service Entities**. Tracks Case, Contract, Queue, and Service entity activity.  
   
-4. Select **OK**.  
+5. Select **OK**.  
 
 ## View audit logging details  
 System administrators can see activity for the entities that are enabled for audit logging.  
