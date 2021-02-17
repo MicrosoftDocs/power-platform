@@ -64,9 +64,9 @@ When you view the **Users** page in the Power Platform admin center, you can see
 > [!NOTE]
 > To delete or re-enable disabled users, contact [Support](support-overview.md).
 
-
-
-
+### See also
+[Delete a user from your organization](https://docs.microsoft.com/en-us/microsoft-365/admin/add-users/delete-a-user?view=o365-worldwide)
+[Troubleshooting: Common user access issues](troubleshooting-user-needs-read-write-access-organization.md)
 
 
 
