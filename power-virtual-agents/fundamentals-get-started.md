@@ -189,3 +189,6 @@ You've now created a bot, created your own topic, tested it out, published it to
 For questions not covered in the product documentation or for feature ideas, please [visit our community](https://aka.ms/PowerVirtualAgentsForum) and post questions.
 
 We would also like to hear your ideas on Power Virtual Agents. Please [visit our Ideas board](https://aka.ms/PowerVirtualAgentsIdeas) and post your ideas.
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

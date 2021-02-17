@@ -334,3 +334,6 @@ You can help us improve Power Virtual Agents by flagging issues with the **Flag 
 
 
 All information collected is anonymous and will be used to help improve bot quality.
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

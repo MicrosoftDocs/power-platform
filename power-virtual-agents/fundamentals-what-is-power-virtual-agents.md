@@ -61,3 +61,6 @@ Microsoft Power Virtual Agents (1) is not intended or made available as a medica
 
 [Using analytics to improve your bot](analytics-overview.md)
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

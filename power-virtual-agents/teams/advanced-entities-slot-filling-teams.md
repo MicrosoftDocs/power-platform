@@ -45,3 +45,6 @@ Entities in the Power Virtual Agents app on Teams have the same functionality as
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

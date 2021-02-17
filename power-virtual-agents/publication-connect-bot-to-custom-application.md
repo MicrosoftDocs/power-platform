@@ -241,3 +241,6 @@ If your application needs to hand off to a live agent provider, you will need to
 If you want your bot to send the Greeting system topic automatically when a user starts a conversation, you can send an activity with `Type=event` and `Name=startsConversation`.
 
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

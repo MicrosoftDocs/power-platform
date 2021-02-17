@@ -59,3 +59,6 @@ Power Virtual Agents is compliant with the ISO standards listed in the following
 ## HIPAA coverage
 
 [HIPAA](https://www.hhs.gov/hipaa/index.html) is a United States healthcare law that establishes requirements for the use, disclosure, and safeguarding of individually identifiable health information. It applies to covered entities&mdash;doctors' offices, hospitals, health insurers, and other healthcare companies&mdash;that have access to patients' protected health information (PHI), in addition to business associates&mdash;such as cloud service and IT providers&mdash;that process PHI on their behalf.
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

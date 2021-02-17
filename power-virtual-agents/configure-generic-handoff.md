@@ -97,3 +97,6 @@ The following snippet of code parses the `handoff.initiate` event activity and e
             }
         }
 ```
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

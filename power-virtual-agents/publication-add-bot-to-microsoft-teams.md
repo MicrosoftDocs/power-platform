@@ -226,3 +226,6 @@ You can always reconnect your bot after disconnecting by selecting **Turn on Tea
 - Teams has [rate limiting](/microsoftteams/platform/concepts/bots/rate-limit) on bots. Depending on your business needs, you might want to keep your bot content concise for bots that are added to Microsoft Teams.
 - Currently, if your bot supports [end-user authentication](advanced-end-user-authentication.md), the user will not be able to explicitly sign out. This will fail the Microsoft Teams AppSource certification if you are publishing your bot in the Seller Dashboard. This does not apply to personal or tenant usage of the bot. Learn more at [Publish your Microsoft Teams app](/microsoftteams/platform/publishing/apps-publish) and [AppSource Validation Policy](/office/dev/store/validation-policies).
 - Disconnecting your bot from Teams might take a few minutes before the bot becomes unreachable by users on Microsoft Teams.
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

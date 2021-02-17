@@ -79,3 +79,6 @@ If the conversation path in the **Test your bot** pane moves from one topic to a
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

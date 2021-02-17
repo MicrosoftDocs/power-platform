@@ -90,3 +90,6 @@ You can also add the bot to your Power Platform admin center.
 
 
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

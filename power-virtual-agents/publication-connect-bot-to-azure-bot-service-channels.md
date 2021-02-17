@@ -206,3 +206,6 @@ After you have your Azure Bot Service relay bot ready, you need to [deploy the b
 ## Set up Azure Bot Service channels
 You can set up the channels you want to connect to by signing in to the Azure portal and selecting the Azure Bot Service resource group you have deployed to. View the specific instructions for each channel at [Azure Bot Service Channels](/azure/bot-service/bot-service-manage-channels?view=azure-bot-service-4.0&preserve-view=true).
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

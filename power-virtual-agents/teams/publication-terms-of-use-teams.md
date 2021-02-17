@@ -45,3 +45,6 @@ Developer's name | *Powered by Power Virtual Agents* | You should include a name
 >For privacy policy or terms of use, contact the developer of this app.
 
 If you do not enter links to a privacy statement or terms of use, then chatbot users are redirected here.  
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
