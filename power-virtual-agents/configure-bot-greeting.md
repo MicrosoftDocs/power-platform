@@ -242,3 +242,6 @@ You can now test your bot by going to the webpage where you deployed your bot's
 
 
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

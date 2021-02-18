@@ -149,3 +149,6 @@ Suggested topics are added to the **Existing** tab with their status set to **Of
 [Create your first bot](authoring-first-bot.md)  
 [Create and edit topics](authoring-create-edit-topics.md)  
 [Fundamentals - Publish your bot](publication-fundamentals-publish-channels.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

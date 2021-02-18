@@ -43,3 +43,6 @@ If you're an administrator of your Power Virtual Agents tenant, you can use the 
 
 For detailed information about the help and support experience in the Power Platform admin center, see [Get Help + Support](/power-platform/admin/get-help-support) at the Microsoft Power Platform admin documentation library.
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

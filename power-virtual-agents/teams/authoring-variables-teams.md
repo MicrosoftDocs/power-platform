@@ -27,3 +27,6 @@ Variables let you save responses from your customers in a conversation with your
 For example, you can save a customer's name in a variable called `UserName`. The bot can then address the customer by name as the conversation continues.
 
 You can add and use variables in a bot's authoring canvas in Microsoft Teams, but you should review and refer to the web app version of this topic for more information: [Use variables](../authoring-variables.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -110,3 +110,6 @@ Microsoft won't transfer customer data outside the selected Azure geographic loc
 ## See also
 
 - [Language support](authoring-language-support.md)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

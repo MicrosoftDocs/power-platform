@@ -64,3 +64,6 @@ You can also combine the customized greeting with [customization to the look and
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

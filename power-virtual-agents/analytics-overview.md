@@ -55,3 +55,6 @@ Topic | Description
 [Analyze topic usage](analytics-topic-details.md) | See how individual topics are doing and how well they're working at resolving issues.
 [Analyze session information](analytics-sessions.md) | Review and monitor how sessions are doing, including analytics from the topics triggered during a session.
 [Analyze billed session information](analytics-billed-sessions.md) | Understand how sessions are being billed, based on their usage.
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

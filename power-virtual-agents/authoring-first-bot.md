@@ -94,3 +94,6 @@ You will need to [create a new environment](environments-first-run-experience.md
 Your environment might not show up in the drop-down menu due to one of the following:
  - The environment doesn't have a database created. To resolve this, go to [admin.powerplatform.com](https://admin.powerplatform.com) to [create a database in your environment](/power-platform/admin/create-database).
  - The environment is created in an unsupported region. Learn more about [supported data locations](data-location.md).
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

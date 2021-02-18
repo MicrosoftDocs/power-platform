@@ -64,3 +64,6 @@ You can download session data from the [sessions analytics page](analytics-sessi
 
 2. Select the **Learn more about the Data Log Export** link under the **Microsoft Data Log Export** section. This will open a new tab or window and go to the [User Privacy blade in the Azure Portal](https://portal.azure.com/#blade/Microsoft_Azure_Policy/UserPrivacyMenuBlade/Overview). Here you can request an export of data.
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

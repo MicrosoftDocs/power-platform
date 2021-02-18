@@ -80,3 +80,6 @@ Power Virtual Agents supports languages in three stages. The stage indicates how
 ### See also
 
 [Data locations for organizations using Power Virtual Agents](data-location-teams.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

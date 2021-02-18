@@ -71,3 +71,6 @@ Now that you've published your bot and it's ready for others to use, you can [ad
 ## Known limitations
 - Customer satisfaction survey is a text-only version in Microsoft Teams instead of an adaptive card.
 - Microsoft Teams can only render up to six suggested actions for user in one question node.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

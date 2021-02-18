@@ -56,3 +56,6 @@ If bot authors want to share a bot with other authors after you've upgraded an e
 
 >[!IMPORTANT]
 >After upgrading, qualified sessions will be considered as billed even if they do not leverage premium functionality such as premium connectors, non-Microsoft Teams channels or Azure Framework extensibility. For more information, see the [Licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

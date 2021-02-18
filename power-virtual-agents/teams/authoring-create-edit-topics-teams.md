@@ -220,3 +220,6 @@ When you end the conversation, you can have a survey appear that asks the user i
 Once you've finished designing and testing your bot, you can consider [publishing it](publication-fundamentals-publish-channels-teams.md) so other team members can use it.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

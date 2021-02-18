@@ -103,3 +103,6 @@ It looks like something went wrong.<br/>(`AADERROR_OTHER`)|There was a transient
 Something went wrong while checking your skill. <br/>(`ENDPOINT_HEALTHCHECK_FAILED`, `HEALTH_PING_FAILED`) | Check if your skill endpoint is online and responding to messages.|
 This skill has not allow-listed your bot <br/>(`ENDPOINT_HEALTHCHECK_UNAUTHORIZED`) | Check if your bot has been added to the skills allowlist. [Learn more about adding a skill to the allowlist](https://go.microsoft.com/fwlink/?linkid=2123431). |
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]
