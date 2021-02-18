@@ -4,7 +4,7 @@ description: Set up security permissions for a field
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/30/2020
+ms.date: 02/17/2021
 author: jimholtz
 ms.author: jimholtz
 ms.reviewer: jimholtz
@@ -35,27 +35,29 @@ You can restrict access to a field by creating a field security profile. After y
   
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
   
-2. In the web app, go to **Settings** > **Security**.
+2. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+
+3. Select **Settings** > **Security**.
   
-3. Click **Field Security Profiles**, and then on the command bar, click **New**.  
+4. Select **Field Security Profiles**, and then on the command bar, select **New**.  
   
-4. Enter a name and a description (optional) and click **Save**.  
+5. Enter a name and a description (optional) and select **Save**.  
   
-5. Under **Common**, click **Field permissions**.  
+6. Under **Common**, select **Field permissions**.  
   
-6. Select a field, and then click **Edit**.  
+7. Select a field, and then select **Edit**.  
   
-7. Select the permissions that you want to assign to users or teams, and then click **OK**.  
+8. Select the permissions that you want to assign to users or teams, and then select **OK**.  
   
-8. To add users or teams:  
+9. To add users or teams:  
   
-   1.  Under **Members**, click **Teams** or **Users**.  
+   1.  Under **Members**, select **Teams** or **Users**.  
   
-   2.  On the command bar, click **Add**.  
+   2.  On the command bar, select **Add**.  
   
-   3.  In the **Look Up Records** dialog box, select a team or user from the list (or search for a team or user), and then click **Select**.  
+   3.  In the **Look Up Records** dialog box, select a team or user from the list (or search for a team or user), and then select **Select**.  
   
-   4.  Repeat the preceding steps to add multiple teams or users, and then click **Add**.  
+   4.  Repeat the preceding steps to add multiple teams or users, and then select **Add**.  
   
 ### See also  
  [Enable or disable security for a field](../admin/enable-disable-security-field.md)

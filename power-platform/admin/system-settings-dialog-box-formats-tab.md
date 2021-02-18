@@ -2,11 +2,10 @@
 title: "System Settings Formats tab   | MicrosoftDocs"
 description: System Settings Formats tab 
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/08/2020
+ms.date: 02/17/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -18,7 +17,7 @@ search.app:
 ---
 # System Settings Formats tab
 
-You can control how model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, display numbers, currencies, times, and dates for your organization. 
+You can control how customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), display numbers, currencies, times, and dates for your organization. 
 
 <!-- legacy procedure -->
   
@@ -32,9 +31,11 @@ You can control how model-driven apps in Dynamics 365, such as Dynamics 365 Sale
   
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
   
-2. In the web app, go to **Settings** > **Administration**.
+2. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+
+3. Select **Settings** > **Administration**.
   
-3. Choose **System Settings** > **Formats** tab.  
+4. Select **System Settings** > **Formats** tab.  
   
 |Settings|Description|  
 |--------------|-----------------|  

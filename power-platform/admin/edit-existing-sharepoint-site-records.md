@@ -5,7 +5,7 @@ author: Mattp123
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/04/2020
+ms.date: 02/17/2021
 ms.author: matp
 search.audienceType: 
   - admin
@@ -38,8 +38,10 @@ Store documents related to your records in [!INCLUDE[pn_ms_SharePoint_long](../i
   
    - Don't have the correct permissions? Contact your system administrator.  
   
-2. In the web apps, go to **Settings** > **Document Management**.
-  
+1. In the Power Platform admin center, select an environment. 
+
+2. Select **Settings** > **Integration** > **Document management settings**.  
+
 3. Select **[!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] Sites**.  
   
 4. Select the site record you want to modify, and then select **Edit**.  

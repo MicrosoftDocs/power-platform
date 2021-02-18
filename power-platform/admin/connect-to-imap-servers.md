@@ -4,7 +4,7 @@ description: Connect to IMAP or SMTP servers
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/04/2020
+ms.date: 02/17/2021
 author: revachauhan
 ms.author: rechauha
 ms.reviewer: jimholtz
@@ -93,8 +93,6 @@ Set server-side synchronization to be the default configuration method.
      ![System Settings for server-side synchronization](../admin/media/imap-profile.png "System Settings for server-side synchronization")  
 
 4. Select **OK**.  
-
-<a name="BKMK_ConfigureMailboxes"></a>  
  
 ## Configure mailboxes  
  To set mailboxes to use the default profile, you must first set the Server Profile and the delivery method for email, appointments, contacts, and tasks.  
@@ -105,11 +103,13 @@ Set server-side synchronization to be the default configuration method.
 
 ### Set mailboxes to the default profile  
 
-1. In the web app, go to **Settings** > **Email Configuration** > **Mailboxes**.  
+1. In the Power Platform admin center, select an environment. 
 
-2. Choose **Active Mailboxes**.  
+2. Select **Settings** > **Email** > **Mailboxes**.  
 
-3. Select all the mailboxes that you want to associate with the IMAP profile you created, select **Apply Default Email Settings**, verify the settings, and then select **OK**.  
+3. Select **Active Mailboxes**.  
+
+4. Select all the mailboxes that you want to associate with the IMAP profile you created, select **Apply Default Email Settings**, verify the settings, and then select **OK**.  
 
    ![Apply default email settings](../admin/media/apply-default-email-settings.png "Apply default email settings")  
 
@@ -117,43 +117,48 @@ Set server-side synchronization to be the default configuration method.
 
 ### Edit mailboxes to set the profile and delivery methods  
 
-1.  In the web app, go to **Settings** > **Email Configuration** > **Mailboxes**.  
+1. In the Power Platform admin center, select an environment. 
 
-2.  Select **Active Mailboxes**.  
+2. Select **Settings** > **Email** > **Mailboxes**.  
 
-3.  Select the mailboxes that you want to configure, and then select **Edit**.  
+3. Select **Active Mailboxes**.  
 
-4.  In the **Change Multiple Records** form, under **Synchronization Method**, set **Server Profile** to the IMAP profile you created earlier.  
+4. Select the mailboxes that you want to configure, and then select **Edit**.  
 
-5.  Set **Incoming** and **Outgoing** **Email** to **Server-Side Synchronization or Email Router**.  
+5. In the **Change Multiple Records** form, under **Synchronization Method**, set **Server Profile** to the IMAP profile you created earlier.  
 
-6.  Set **Appointments, Contacts, and Tasks** to **None**.  
+6. Set **Incoming** and **Outgoing** **Email** to **Server-Side Synchronization or Email Router**.  
 
+7. Set **Appointments, Contacts, and Tasks** to **None**.  
 
-7.  Select **Change**.  
+8. Select **Change**.  
 
 <a name="BKMK_ApproveEmail"></a> 
   
 ## Approve email  
- You need to approve each user mailbox or queue before that mailbox can process email.  
+You need to approve each user mailbox or queue before that mailbox can process email.  
 
-1.  In the web app, go to **Settings** > **Email Configuration** > **Mailboxes**.  
+1. In the Power Platform admin center, select an environment. 
 
-2.  Select **Active Mailboxes**.  
+2. Select **Settings** > **Email** > **Mailboxes**.  
 
-3.  Select the mailboxes that you want to approve, and then select **More Commands** (**…**) > **Approve Email**.  
+3. Select **Active Mailboxes**.  
 
-4.  Select **OK**.  
+4. Select the mailboxes that you want to approve, and then select **More Commands** (**…**) > **Approve Email**.  
+
+5. Select **OK**.  
 
 <a name="BKMK_TestConfiguration"></a>   
 
 ## Test configuration of mailboxes  
 
-1. In the web app, go to **Settings** > **Email Configuration** > **Mailboxes**.  
+1. In the Power Platform admin center, select an environment. 
 
-2. Select **Active Mailboxes**.  
+2. Select **Settings** > **Email** > **Mailboxes**.  
 
-3. Select the mailboxes you want to test, and then select **Test & Enable Mailboxes**.  
+3. Select **Active Mailboxes**.  
+
+4. Select the mailboxes you want to test, and then select **Test & Enable Mailboxes**.  
 
     This tests the incoming and outgoing email configuration of the selected mailboxes and enables them for email processing. If an error occurs in a mailbox, an alert is shown on the Alerts wall of the mailbox and the profile owner. Depending on the nature of the error, customer engagement apps try to process the email again after some time or disables the mailbox for email processing.  
 
