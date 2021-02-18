@@ -207,3 +207,17 @@ Sample code that demonstrates staging is provided below.
 ```
 
 ---
+
+Sample code that demonstrates staging with a solution upgrade is provided below.
+
+### [Web API (C#)](#tab/webapi-csharp)
+
+```csharp
+// Coming soon
+```
+
+### [SDK API (C#)](#tab/sdk-csharp)
+
+```csharp
+// Coming soon
+```
