@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/29/2020
+ms.date: 02/17/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -28,13 +28,15 @@ The Delegated Admin user won't appear in standard provided views. You must creat
   
 To create a simple custom view to see the delegated admin user:  
   
-1. In the web app, go to **Settings** > **Security** > **Users**.  
+1. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+
+2. Select **Settings** > **Security** > **Users**.
   
-2. Choose **Select a view** (![Drop-down button](../admin/media/dropdown-button.png "Drop-down button")) and then choose **Create Personal View**.  
+3. Choose **Select a view** (![Drop-down button](../admin/media/dropdown-button.png "Drop-down button")) and then choose **Create Personal View**.  
   
-3. Verify **Users** is selected in **Look for**.  
+4. Verify **Users** is selected in **Look for**.  
   
-4. Choose **User** > **Contains Data**, and then choose **Results**.  
+5. Choose **User** > **Contains Data**, and then choose **Results**.  
   
    ![Create a custom user view](../admin/media/user-custom-view.png "Create a custom user view")  
   
