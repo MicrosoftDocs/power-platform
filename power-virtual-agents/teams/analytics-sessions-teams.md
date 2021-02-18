@@ -77,3 +77,6 @@ The downloaded file contains the following information:
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

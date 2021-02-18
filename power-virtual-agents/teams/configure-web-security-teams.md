@@ -32,3 +32,6 @@ You can configure advanced web channel security options with the Power Virtual A
 Read more about using [Configuring web channel security in the Power Virtual Agents web app documentation](../configure-web-security.md).
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

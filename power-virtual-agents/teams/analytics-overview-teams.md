@@ -59,3 +59,6 @@ Topic | Description
 [Analyze customer satisfaction](analytics-csat-teams.md) | Identify overall trends in customer satisfaction, and where satisfaction is falling behind.
 [Analyze topic usage](analytics-topic-details-teams.md) | See how individual topics are doing and how well they're working at resolving issues.
 [Analyze billed session information](analytics-billed-sessions-teams.md) | Understand how sessions are being billed, based on their usage.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

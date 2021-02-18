@@ -90,3 +90,5 @@ There are three options for authentication:
 Guest users can be considered part of the organization depending on their user configuration.
 
 External access users, however, are always external to the organization. Make sure to check both the user account settings and the bot access configuration to ensure the right people have access to your bot.
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]
