@@ -23,7 +23,7 @@ Save time when creating multiple campaigns by creating a campaign template. Camp
   
 ## Create a campaign template  
   
-1. In the web app, use the [Area switcher](powerapps/user/navigation.md#area-switcher) to select **Marketing**, and then go to **Marketing** > **Campaigns**.
+1. In the web app, use the [Area switcher](/powerapps/user/navigation.md#area-switcher) to select **Marketing**, and then go to **Marketing** > **Campaigns**.
   
 2. Select **New Template**. 
   

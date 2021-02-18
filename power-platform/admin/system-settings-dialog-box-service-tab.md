@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/11/2020
+ms.date: 02/17/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -31,9 +31,11 @@ Use this tab to set preferences for the customer service area, such as service l
   
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
   
-2. In the web app, go to **Settings** > **Administration**.
+2. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+
+3. Select **Settings** > **Administration**.
   
-3. Select the **System Settings** > **Service** tab.  
+4. Select the **System Settings** > **Service** tab.  
   
 > [!NOTE]
 > With the version 9.1 release, service configuration settings in service management are available in the Customer Service Hub based on the Unified Interface experience. You are recommended to manage service configuration settings using the new experience. </br>

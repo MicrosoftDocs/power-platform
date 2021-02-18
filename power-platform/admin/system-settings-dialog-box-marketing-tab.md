@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/10/2020
+ms.date: 02/17/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -31,9 +31,11 @@ Use the settings on this page to configure marketing settings for customer engag
 
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
 
-2. In the web app, go to **Settings** > **Administration**.
+2. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
 
-3. Choose **System Settings** > **Marketing** tab.  
+3. Select **Settings** > **Administration**.
+
+4. Select **System Settings** > **Marketing** tab.  
 
 |                                                             Settings                                                              |                                                                                                                       Description                                                                                                                        |
 |-----------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

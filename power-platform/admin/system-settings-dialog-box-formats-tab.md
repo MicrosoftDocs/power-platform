@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/10/2020
+ms.date: 02/17/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -31,9 +31,11 @@ You can control how customer engagement apps (Dynamics 365 Sales, Dynamics 365 C
   
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
   
-2. In the web app, go to **Settings** > **Administration**.
+2. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+
+3. Select **Settings** > **Administration**.
   
-3. Choose **System Settings** > **Formats** tab.  
+4. Select **System Settings** > **Formats** tab.  
   
 |Settings|Description|  
 |--------------|-----------------|  

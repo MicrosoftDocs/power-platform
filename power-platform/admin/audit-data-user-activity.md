@@ -82,7 +82,7 @@ This task requires the system administrator or customizer security role or equiv
 
 2. Select **Settings** > **Administration**.
   
-3. Choose **System Settings**, and then choose the **Auditing** tab.  
+3. Select **System Settings**, and then select the **Auditing** tab.  
 
 4. Select the entities you want to track. To start or stop auditing on specific entities, select or clear the following check boxes:  
   
