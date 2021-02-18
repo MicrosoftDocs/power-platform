@@ -4,7 +4,7 @@ description: Enable or disable security for a field
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/25/2020
+ms.date: 02/17/2021
 author: jimholtz
 ms.author: jimholtz
 ms.reviewer: jimholtz
@@ -29,24 +29,26 @@ Field-level security lets you set which fields users can see or edit. For exampl
   
 > [!NOTE]
 >  You can't change the permissions on a field that you don't have permission to access.  
+
+1. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+
+2. Select **Settings** > **Customizations**.
+
+3. Select **Customize the System**.  
   
-1. In the web app, go to **Settings** > **Customizations**.
+4. Under **Components**, expand **Entities**, expand the entity that has the field you want to secure, and then click **Fields**.  
   
-2. Click **Customize the System**.  
+5. In the list of fields, double-click the field you want to secure.  
   
-3. Under **Components**, expand **Entities**, expand the entity that has the field you want to secure, and then click **Fields**.  
+6. In the **Field** window, on the **General** tab, to the right of **Field Security**, specify whether to **Enable** or **Disable** security for the field.  
   
-4. In the list of fields, double-click the field you want to secure.  
+7. Click **Save** or **Save and Close**.  
   
-5. In the **Field** window, on the **General** tab, to the right of **Field Security**, specify whether to **Enable** or **Disable** security for the field.  
+8. When your customizations are complete, publish them:  
   
-6. Click **Save** or **Save and Close**.  
+   - To publish customizations for only the entity that you are currently editing, in the navigation pane, select the entity, and then click **Publish**.  
   
-7. When your customizations are complete, publish them:  
-  
-   -   To publish customizations for only the entity that you are currently editing, in the navigation pane, select the entity, and then click **Publish**.  
-  
-   -   To publish customizations for all unpublished entities at one time, in the navigation pane, click **Entities**, and then on the command toolbar, click **Publish All Customizations**.  
+   - To publish customizations for all unpublished entities at one time, in the navigation pane, click **Entities**, and then on the command toolbar, click **Publish All Customizations**.  
   
 ### See also  
  [Field-level security](field-level-security.md)   

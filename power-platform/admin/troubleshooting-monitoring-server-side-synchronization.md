@@ -4,7 +4,7 @@ description: Troubleshooting and monitoring server-side synchronization
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/11/2020
+ms.date: 02/17/2021
 author: revachauhan
 ms.author: rechauha
 ms.reviewer: jimholtz
@@ -154,14 +154,16 @@ If you create an email message in customer engagement apps (Dynamics 365 Sales, 
  **Solution:**  
   
  To add the Organizer field to the appointment form:  
+
+1. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+
+2. Select **Settings** > **Customizations** > **Customize the System**.  
   
-1.  In the web app, go to **Settings** > **Customizations** > **Customize the System**  
+3. Under **Components**, expand **Entities** > **Appointment**, and then select **Forms**.  
   
-2.  Under **Components**, expand **Entities** > **Appointment**, and then click **Forms**.  
+4. Select **Appointment**, and then drag the **Organizer** field onto the form.  
   
-3.  Click **Appointment**, and then drag the **Organizer** field onto the form.  
-  
-4.  Click **Save** > **Publish**.  
+5. Select **Save** > **Publish**.  
   
 ### Appointments, contacts, and tasks can't be synchronized  
  **Alert:** Appointments, contacts, and tasks can't be synchronized because the email address of the mailbox \<Mailbox Name> is configured with another organization. The best practice is to overwrite the configuration when you test and enable the mailbox in your primary organization. Also, change the synchronization method for your mailbox in non-primary organizations to None.  

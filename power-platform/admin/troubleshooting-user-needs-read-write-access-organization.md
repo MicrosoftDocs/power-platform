@@ -123,7 +123,7 @@ As mentioned above, there are cases where users are not provisioned automaticall
 
 There are multiple ways to do this: 
 
-1. **JIT user provisioning**: When users access an environment URL, access requirements are checked at the time of sign-in and qualified users are added to the environment.
+1. **Just-in-time (JIT) user provisioning**: When users access an environment URL, access requirements are checked at the time of sign-in and qualified users are added to the environment.
 
 2. **User impersonation call**: Impersonation call triggers a JIT sync for the user. See [How to impersonate a user](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/impersonate-another-user-web-api#how-to-impersonate-a-user).
 

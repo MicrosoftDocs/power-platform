@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/11/2020
+ms.date: 02/17/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -32,25 +32,25 @@ You can set the fiscal year period, and how it's displayed, for your organizatio
   
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
   
-2. In the web app, go to **Settings** > **Business Management**.
+2. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
   
-3. Click **Fiscal Year Settings**.  
+3. Select **Fiscal Year Settings**.  
   
 4. Type information in the text boxes.  
   
-   -   In the **Start Date** box, select the date to start the fiscal year.  
+   - In the **Start Date** box, select the date to start the fiscal year.  
   
-   -   In the **Fiscal Period Template** drop-down list, select how your fiscal year is divided.  
+   - In the **Fiscal Period Template** drop-down list, select how your fiscal year is divided.  
   
-   -   In the **Fiscal Year** drop-down list, select how you want to display the fiscal year.  
+   - In the **Fiscal Year** drop-down list, select how you want to display the fiscal year.  
   
-   -   In **Name Based On** drop-down list, select whether the fiscal year name is displayed on the start or end of the fiscal year.  
+   - In **Name Based On** drop-down list, select whether the fiscal year name is displayed on the start or end of the fiscal year.  
   
-   -   In the **Fiscal Period** drop-down list, select how you want to display the fiscal period.  
+   - In the **Fiscal Period** drop-down list, select how you want to display the fiscal period.  
   
-   -   In the **Display As** drop-down list, select how you want the fiscal year abbreviation and the year to appear.  
+   - In the **Display As** drop-down list, select how you want the fiscal year abbreviation and the year to appear.  
   
-5. Click **OK**.  
+5. Select **OK**.  
   
 ### See also  
  [Set up sales territories to organize business markets by geographical area](../admin/set-up-sales-territories-organize-business-markets-geographical-area.md)

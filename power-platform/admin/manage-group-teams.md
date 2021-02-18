@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/18/2020
+ms.date: 02/17/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -84,25 +84,27 @@ For more information, see [Assign a record to a user or team](https://docs.micro
    2. Obtain the Azure AD Group's **ObjectID** from your https://portal.azure.com site.
    3. Create a custom security role that contains privileges per your team's collaboration requirement. Please see the discussion of [member's inherited privileges](security-roles-privileges.md#team-members-privilege-inheritance) if you need to extend the team member's privileges directly to a user.
 
-2. In the web app, go to **Settings** > **Security**. In Microsoft Dynamics 365 for Outlook, go to **Settings** > **System** > **Security**.
+2. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
 
-3. Select **Teams**.
+3. Select **Settings** > **Security**. In Microsoft Dynamics 365 for Outlook, go to **Settings** > **System** > **Security**.
 
-4. On the Actions toolbar, select **New** button.
+4. Select **Teams**.
 
-5. Enter a team name.
+5. On the Actions toolbar, select **New** button.
 
-6. Select a business unit.
+6. Enter a team name.
 
-7. Enter an administrator.
+7. Select a business unit.
 
-8. Select **Team Type** (a drop-down list is displayed).
+8. Enter an administrator.
 
-9. Select **AAD Security** or **Office group** (this must match the Azure AD Group type).
+9. Select **Team Type** (a drop-down list is displayed).
 
-10. Enter the respective Azure AD **ObjectID** of the Azure AD Security or Office group.
+10. Select **AAD Security** or **Office group** (this must match the Azure AD Group type).
 
-11. Select **Membership Type**, and then one of the following:
+11. Enter the respective Azure AD **ObjectID** of the Azure AD Security or Office group.
+
+12. Select **Membership Type**, and then one of the following:
   
     - **Members and guests**
     - **Members**
@@ -111,7 +113,7 @@ For more information, see [Assign a record to a user or team](https://docs.micro
 
     The Azure AD group members from the selected membership type will be mapped to the group team when the member accesses the system.   
 
-12. Select **Save**. 
+13. Select **Save**. 
     
     If you don't select the business unit to which the team will belong, by default, the root business unit is selected. The root business unit is the first business unit created for an organization.
 
@@ -123,15 +125,17 @@ For more information, see [Assign a record to a user or team](https://docs.micro
    - Follow the steps in [View your user profile](https://docs.microsoft.com/powerapps/user/view-your-user-profile).
    - Don't have the correct permissions? Contact your system administrator.
 
-2. In the web app, go to **Settings** > **Security**. In Dynamics 365 for Outlook, go to **Settings** > **System** > **Security**.
+2. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
 
-3. Select **Teams**.
+3. Select **Settings** > **Security**. In Dynamics 365 for Outlook, go to **Settings** > **System** > **Security**.
 
-4. In the **Teams** drop-down list, select **All AAD Office or Security Teams**.
+4. Select **Teams**.
 
-5. In the grid, select the team you want to edit.
+5. In the **Teams** drop-down list, select **All AAD Office or Security Teams**.
 
-6. On the Actions toolbar, select **Edit**, change the desired fields (Membership Type cannot be updated), and then select **Save**.
+6. In the grid, select the team you want to edit.
+
+7. On the Actions toolbar, select **Edit**, change the desired fields (Membership Type cannot be updated), and then select **Save**.
 
 > [!NOTE]
 > - You can only create one group team for each Azure AD group membership type per environment, and the Azure AD ObjectId of the group team cannot be edited once the group team is created.
