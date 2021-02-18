@@ -4,7 +4,7 @@ description: Field-level security
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/30/2020
+ms.date: 02/17/2021
 author: jimholtz
 ms.author: jimholtz
 ms.reviewer: jimholtz
@@ -73,35 +73,39 @@ A combination of these three permissions can be configured to determine the user
  To restrict this field, you would do the following tasks.  
   
  Secure the field.  
+
+1. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+
+2. Select **Settings** > **Customizations**.
+
+3. Select **Customize the System**.  
   
-1. In the web app, go to **Settings** > **Customizations**.
+4. Select **Entities** > **Contact** > **Fields**.  
   
-2. Select **Customize the System**.  
+5. Select **mobile phone**, select **Edit**.  
   
-3. Select **Entities** > **Contact** > **Fields**.  
+6. Next to **Field Security**, select **Enable**, select **Save and Close**.  
   
-4. Select **mobile phone**, select **Edit**.  
-  
-5. Next to **Field Security**, select **Enable**, select **Save and Close**.  
-  
-6. Publish the customization.  
+7. Publish the customization.  
 
 Configure the security profiles.  
   
 1. Create the field security profile for sales managers.  
+
+   1. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+
+   2. Select **Settings** > **Security**.
   
-   1. In the web app, go to **Settings** > **Security**.
+   3. Select **Field Security Profiles**.  
   
-   2. Select **Field Security Profiles**.  
+   5. Select **New**, enter a name, such as *Sales Manager access contact mobile phone*, and select **Save**.  
   
-   3. Select **New**, enter a name, such as *Sales Manager access contact mobile phone*, and select **Save**.  
-  
-   4. Select **Users**, select **Add**, select the users that you want to grant read access to the mobile phone number on the contact form, and then select **Add**.  
+   6. Select **Users**, select **Add**, select the users that you want to grant read access to the mobile phone number on the contact form, and then select **Add**.  
   
       > [!TIP]
       >  Instead of adding each user, create one or more teams that include all users that you want to grant read access.  
   
-   5. Select **Field Permissions**, select **mobile phone**, select **Edit**, select **Yes** next to **Allow Read**, and then select **OK**.  
+   7. Select **Field Permissions**, select **mobile phone**, select **Edit**, select **Yes** next to **Allow Read**, and then select **OK**.  
   
 2. Create the field security profiles for vice presidents.  
   

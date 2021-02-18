@@ -4,7 +4,7 @@ description: Connect to Exchange Online
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/04/2021
+ms.date: 02/17/2021
 author: revachauhan
 ms.author: rechauha
 ms.reviewer: jimholtz
@@ -82,12 +82,14 @@ All new users will have these settings applied to their mailbox.
  Choose **one** of the following methods:  
   
 ### Set mailboxes to the default profile  
+
+1. In the Power Platform admin center, select an environment. 
+
+2. Select **Settings** > **Email** > **Mailboxes**.  
   
-1. In the web app, go to **Settings** > **Email Configuration** > **Mailboxes**.  
+3. Select **Active Mailboxes**.  
   
-2. Choose **Active Mailboxes**.  
-  
-3. Select all the mailboxes that you want to associate with the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] profile, select **Apply Default Email Settings**, verify the settings, and then select **OK**.  
+4. Select all the mailboxes that you want to associate with the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] profile, select **Apply Default Email Settings**, verify the settings, and then select **OK**.  
   
    ![Apply default email settings](../admin/media/apply-default-email-settings.png "Apply default email settings")  
   
@@ -95,22 +97,22 @@ All new users will have these settings applied to their mailbox.
   
 ### Edit mailboxes to set the profile and delivery methods  
   
-1.  In the web app, go to **Settings** > **Email Configuration** > **Mailboxes**.  
-  
-2.  Select **Active Mailboxes**.  
-  
-3.  Select the mailboxes that you want to configure, and then select **Edit**.  
-  
-4.  In the **Change Multiple Records** form, under **Synchronization Method**, set **Server Profile** to **Microsoft Exchange Online**.  
-  
-5.  Set **Incoming** and **Outgoing** **Email** to **Server-Side Synchronization or Email Router**.  
-  
-6.  Set **Appointments, Contacts, and Tasks** to **Server-Side Synchronization**.  
-  
-7.  Select **Change**.  
-  
-<a name="BKMK_ApproveEmail"></a>   
+1. In the Power Platform admin center, select an environment. 
 
+2. Select **Settings** > **Email** > **Mailboxes**.  
+  
+3. Select **Active Mailboxes**.  
+  
+4. Select the mailboxes that you want to configure, and then select **Edit**.  
+  
+5. In the **Change Multiple Records** form, under **Synchronization Method**, set **Server Profile** to **Microsoft Exchange Online**.  
+  
+6. Set **Incoming** and **Outgoing** **Email** to **Server-Side Synchronization or Email Router**.  
+  
+7. Set **Appointments, Contacts, and Tasks** to **Server-Side Synchronization**.  
+  
+8. Select **Change**.  
+  
 ## Approve email  
 
 To approve emails for customer engagement apps, a user requires:
@@ -215,13 +217,15 @@ To manually assign the **Approve Email Addresses for Users or Queues** privilege
 
 #### Approve mailboxes
 
-1. In the web app, go to **Settings** > **Email Configuration** > **Mailboxes**.  
+1. In the Power Platform admin center, select an environment. 
+
+2. Select **Settings** > **Email** > **Mailboxes**.  
   
-2. Select **Active Mailboxes**.  
+3. Select **Active Mailboxes**.  
   
-3. Select the mailboxes that you want to approve, and then select **More Commands** (**…**) > **Approve Email**.  
+4. Select the mailboxes that you want to approve, and then select **More Commands** (**…**) > **Approve Email**.  
   
-4. Select **OK**.  
+5. Select **OK**.  
 
 ### Remove requirement to approve mailboxes
 
@@ -237,11 +241,13 @@ Admins, as described in the Permission model table, can change the settings so m
 
 ## Test configuration of mailboxes  
 
-1. In the web app, go to **Settings** > **Email Configuration** > **Mailboxes**.  
+1. In the Power Platform admin center, select an environment. 
+
+2. Select **Settings** > **Email** > **Mailboxes**.  
   
-2. Select **Active Mailboxes**.  
+3. Select **Active Mailboxes**.  
   
-3. Select the mailboxes you want to test, and then select **Test & Enable Mailbox**.  
+4. Select the mailboxes you want to test, and then select **Test & Enable Mailbox**.  
 
    > [!div class="mx-imgBorder"] 
    > ![Test and enable mailboxes](media/test-enable-mailbox85.png "Test and enable mailboxes")

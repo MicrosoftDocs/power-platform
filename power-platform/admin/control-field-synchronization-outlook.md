@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/04/2020
+ms.date: 02/17/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -30,22 +30,24 @@ With field synchronization, admins can set the sync direction between customer e
   
 ## Set field synchronization between customer engagement apps and Outlook  
   
-1. Sign in as an admin. 
+1. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
 
-2. In the web app, select **Settings** > **Administration** > **System Settings** > **Synchronization** tab.
+2. Select **Settings** > **Administration**.
+
+3. Select **System Settings**, and then choose the **Synchronization** tab. 
   
    For [Unified Interface](about-unified-interface.md), select Settings (![Gear button](../admin/media/selection-rule-gear.png "Gear button")) in the upper-right corner > **Advanced Settings** > **Settings** > **Administration** > **System Settings** > **Synchronization** tab.
   
-3. Under **Synchronize items with Outlook or Exchange**, select **synchronized fields**.  
+4. Under **Synchronize items with Outlook or Exchange**, select **synchronized fields**.  
   
-4. For the fields you want to change synchronization, choose the arrows in the Sync Direction column. Each choice will change the direction.  
+5. For the fields you want to change synchronization, choose the arrows in the Sync Direction column. Each choice will change the direction.  
   
    ![Appointment fields for synchronization](../admin/media/appointment-field-sync.png "Appointment fields for synchronization")  
   
    > [!TIP]
    >  Hover over a field name to see the fields mapped to it.  
   
-5. Select **OK** > **OK** to close the open dialog boxes.  
+6. Select **OK** > **OK** to close the open dialog boxes.  
   
    Let your users know they can view (not change) the synchronization settings. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [What fields can be synchronized between customer engagement apps and Outlook?](what-fields-synchronized-outlook.md)  
   

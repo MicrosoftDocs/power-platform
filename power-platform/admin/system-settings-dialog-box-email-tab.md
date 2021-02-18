@@ -2,11 +2,10 @@
 title: "System Settings Email tab | MicrosoftDocs"
 description: System Settings Email tab 
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/11/2020
+ms.date: 02/17/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -37,25 +36,27 @@ Use the settings on this page to set up email processing in model-driven apps in
   
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
   
-2. In the web app, go to **Settings** > **Email Configuration**.
+2. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+
+3. Select **Settings** > **Email Configuration**.
   
-3. Choose **Email Configuration Settings**.  
+4. Select **Email Configuration Settings**.  
   
 > [!div class="mx-tableFixed"]
 > |   Settings    |   Description     |
 > |---------|--------------|
 > |    **Configure email processing**    |      |
 > |   Process Email Using  |  Select whether you want to process email by using server-side synchronization or the Email Router. Server-side synchronization is the preferred method.<br /><br /> [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Integrate your email system](integrate-synchronize-your-email-system.md)   |
-> |  **Configure default synchronization method**  |  For any mailbox that's automatically created in model-driven apps in Dynamics 365,  the default email settings defined in this section will be applied when a user or queue is created.  |  
-> | Server Profile   | For server-side synchronization, select the email server profile that you want to use. The email server profile holds the configuration data that enables model-driven apps in Dynamics 365 to connect to [!INCLUDE[pn_Microsoft_Exchange](../includes/pn-microsoft-exchange.md)]. If you're connecting model-driven apps in Dynamics 365 with [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)], the email server profile is automatically created for you.  |
+> |  **Configure default synchronization method**  |  For any mailbox that's automatically created in customer engagement apps,  the default email settings defined in this section will be applied when a user or queue is created.  |  
+> | Server Profile   | For server-side synchronization, select the email server profile that you want to use. The email server profile holds the configuration data that enables customer engagement apps to connect to [!INCLUDE[pn_Microsoft_Exchange](../includes/pn-microsoft-exchange.md)]. If you're connecting customer engagement apps with [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)], the email server profile is automatically created for you.  |
 > | Incoming Email  |   Select whether you want to use [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)], the Email Router, server-side synchronization, or a forward mailbox for processing incoming email. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Create forward mailboxes or edit mailboxes](create-forward-mailboxes-edit-mailboxes.md)  |
 > |  Outgoing Email  |  Select whether you want to use [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)], the Email Router, or server-side synchronization for processing outgoing email.   |
-> |  Appointments, Contacts, and Tasks   |   Select whether you want to use [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)] or server-side synchronization to synchronize appointments, contacts, and tasks between [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] and model-driven apps in Dynamics 365. <br>**Note:**  You can't synchronize appointments, contacts, and tasks if you're synchronizing with a [!INCLUDE[pn_POP3_short](../includes/pn-pop3-short.md)] email server.  |
+> |  Appointments, Contacts, and Tasks   |   Select whether you want to use [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)] or server-side synchronization to synchronize appointments, contacts, and tasks between [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] and customer engagement apps. <br>**Note:**  You can't synchronize appointments, contacts, and tasks if you're synchronizing with a [!INCLUDE[pn_POP3_short](../includes/pn-pop3-short.md)] email server.  |
 > |  **Email processing for unapproved users and queues**  |  Select these check boxes if you want to allow email processing only for users and queues whose email addresses have been approved. More information: [Approve email](connect-exchange-online.md#approve-email)<ul><li>Process email only for approved users</li><li>Process email only for approved queues</li></ul> |
 > |  **Configure folder-level tracking and email correlation**  |  |
 > | Use folder-level tracking for [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] folders (server-side synchronization must be enabled) | Users can set up [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] tracking folders and then move messages to those folders to track them automatically on virtually any device. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Track Outlook email by moving it to a tracked Exchange folder](track-outlook-email-by-moving-it-tracked-exchange-folder.md)<br /><br /> Folder-level tracking provides 100&nbsp;percent tracking accuracy. To use folder-level tracking:<ul><li>You must select this check box.</li><li>Your organization must synchronize email through server-side synchronization. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Set up server-side synchronization](set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks.md)</li></ul> |
 > |  Use correlation to track email conversations  | Select this check box if you want to link email activities with other related records by using the information in the email headers. This method uses email properties for correlation and is more accurate than smart matching, but less accurate than folder-level tracking or tracking tokens. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Email message filtering and correlation](email-message-filtering-correlation.md) <br>**Note:**  Email correlation using email headers works best when email is processed by using server-side synchronization. If you're using the Email Router to process email, you can use tracking tokens or smart matching to correlate email activities with related records. |
-> |  Use tracking tokens  |  Select this check box to use tracking tokens and to configure how model-driven apps in Dynamics 365 displays them in the Subject line of the email messages.<br /><br /> Tracking tokens provide 100% tracking accuracy. If you don't want to see tokens in Subject lines, however, consider folder-level tracking, which also provides 100% tracking accuracy.<br /><br /> You can configure prefixes and other sections of tracking tokens. Long prefixes or too many prefix changes may cause lost data in history, however. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Email message filtering and correlation](email-message-filtering-correlation.md)  |
+> |  Use tracking tokens  |  Select this check box to use tracking tokens and to configure how customer engagement apps displays them in the Subject line of the email messages.<br /><br /> Tracking tokens provide 100% tracking accuracy. If you don't want to see tokens in Subject lines, however, consider folder-level tracking, which also provides 100% tracking accuracy.<br /><br /> You can configure prefixes and other sections of tracking tokens. Long prefixes or too many prefix changes may cause lost data in history, however. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Email message filtering and correlation](email-message-filtering-correlation.md)  |
 > |  Use smart matching  |  Select this check box to use smart matching to correlate email based on the similarity between email messages. Smart matching isn't as accurate as tracking tokens or folder-level tracking. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Email message filtering and correlation](email-message-filtering-correlation.md)   |
 > |  **Set tracking options for emails between users**  | |
 > | Track email sent between two users as two activities | Select this option to create two email activities between users, one for the sender and one for the recipient.  |
@@ -75,7 +76,7 @@ Use the settings on this page to set up email processing in model-driven apps in
   
 ### See also  
  [Track Outlook email by moving it to a tracked Exchange folder](track-outlook-email-by-moving-it-tracked-exchange-folder.md)   
- [Frequently asked questions about synchronizing records between model-driven apps in Dynamics 365 and Outlook](frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook.md)   
+ [Frequently asked questions about synchronizing records between customer engagement apps and Outlook](frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook.md)   
  [Set up email through server-side synchronization](set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks.md)   
 
 
