@@ -187,3 +187,23 @@ var response = service.Execute(req);
 ```
 
 ---
+
+## Staging a solution import
+
+In comparison to importing a solution where the solution is imported and available in the environment right away, staging breaks the import process into more controllable phases. The staging process imports the solution as a "holding" solution where the administrator can decide when to make the staged solution available to users, or to perform an upgrade (in the case of a solution upgrade) in the target environment. Part of the staging process is validation of the staged solution. This way you can stage the solution, know that the solution is valid, and schedule when to apply that solution or upgrade to the target environment.
+
+Sample code that demonstrates staging is provided below.
+
+### [Web API (C#)](#tab/webapi-csharp)
+
+```csharp
+// Coming soon
+```
+
+### [SDK API (C#)](#tab/sdk-csharp)
+
+```csharp
+// Coming soon
+```
+
+---
