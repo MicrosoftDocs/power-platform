@@ -146,8 +146,8 @@ The response returned from `ImportSolutionAsync` contains `ImportJobKey` and `As
 
 | Operation | Web API | SDK API |
 | --- | --- | --- |
-| Export a solution | [ExportSolutionAsync](/dynamics365/customer-engagement/web-api/exportsolution) | [ExportSolutionAsyncRequest](/dotnet/api/microsoft.crm.sdk.messages.exportsolutionrequest) |
-| Download an exported solution file | DownloadSolutionExportData | DownloadSolutionExportDataRequest |
+| Export a solution | [ExportSolutionAsync](/dynamics365/customer-engagement/web-api/exportsolution) | use the generic [OrganizationRequest](/dotnet/api/microsoft.xrm.sdk.organizationrequest) and set the **RequestName** property to "ExportSolutionAsync" |
+| Download an exported solution file | [DownloadSolutionExportData](/dynamics365/customer-engagement/web-api/downloadsolutionexportdata) | use the generic [OrganizationRequest](/dotnet/api/microsoft.xrm.sdk.organizationrequest) and set the **RequestName** property to "DownloadSolutionExportData"|
 
 Now let's take a look at some example code that demonstrates `ExportSolutionAsync`.
 
