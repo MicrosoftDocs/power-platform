@@ -1,6 +1,6 @@
 ---
-title: "Import and export solutions using an asynchronous job | Microsoft Docs"
-description: "Learn about using an asynchronous job for import and export of large solution files."
+title: "Import, export, and staging of solutions | Microsoft Docs"
+description: "Learn about staging solutions and using an asynchronous job for import and export of large solution files."
 keywords: 
 author: mikkelsen2000
 ms.author: pemikkel
@@ -17,7 +17,7 @@ search.app:
   - D365CE
 ---
 
-# Import and export solutions using an asynchronous job
+# Import, export, and staging of solutions
 
 Have you ever run into the situation during the import or export of a large solution where the operation times out? If so, you may be a candidate for performing the solution import/export using an asynchronous job. This topic describes how to initiate the asynchronous import or export job using the SDK and Web APIs.
 
@@ -154,7 +154,7 @@ Now let's take a look at some example code that demonstrates `ExportSolutionAsyn
 ### [Web API (C#)](#tab/webapi-csharp)
 
 ```csharp
-
+// Coming soon
 ```
 
 ### [SDK API (C#)](#tab/sdk-csharp)
@@ -174,7 +174,7 @@ In the response are the `AsyncOperationId` and `ExportJobId` parameter values. U
 ### [Web API (C#)](#tab/webapi-csharp)
 
 ```csharp
-
+// COming soon
 ```
 
 ### [SDK API (C#)](#tab/sdk-csharp)
@@ -191,6 +191,11 @@ var response = service.Execute(req);
 ## Staging a solution import
 
 In comparison to importing a solution where the solution is imported and available in the environment right away, staging breaks the import process into more controllable phases. The staging process imports the solution as a "holding" solution where the administrator can decide when to make the staged solution available to users, or to perform an upgrade (in the case of a solution upgrade) in the target environment. Part of the staging process is validation of the staged solution. This way you can stage the solution, know that the solution is valid, and schedule when to apply that solution or upgrade to the target environment.
+
+
+| Operation | Web API | SDK API |
+| --- | --- | --- |
+| Stage a solution | [StageSolution](/dynamics365/customer-engagement/web-api/stagesolution) | use the generic [OrganizationRequest](/dotnet/api/microsoft.xrm.sdk.organizationrequest) and set the **RequestName** property to "StageSolution" |
 
 Sample code that demonstrates staging is provided below.
 
@@ -221,3 +226,5 @@ Sample code that demonstrates staging with a solution upgrade is provided below.
 ```csharp
 // Coming soon
 ```
+
+---
