@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/27/2021
+ms.date: 02/18/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -135,8 +135,8 @@ If a user account is disabled in an environment, adding per app capacity, sharin
 ### I assigned the baseline access license to my users as a workaround suggested earlier. Now that this workaround is not needed, what should I do to ensure my users are setup correctly? 
 As of October, 2020, the baseline access license is no longer required. Ensure that the per app capacity is allocated to the environment. After this step, you can remove the baseline access license from the user using [these instructions](https://docs.microsoft.com/microsoft-365/admin/manage/remove-licenses-from-users?view=o365-worldwide). 
 
-### What happens if I assign a user the Power Apps per user license when earlier they were using apps by consuming the per app license? 
-Once the user is allocated a Power Apps per user license, when per app license consumption reports are available they will show per app licenses aren’t consumed by users that are assigned a per user plan.
+### What happens if I assign a user the Power Apps per user license when earlier they were using apps with the per app license? 
+Once the user is allocated a Power Apps per user license, per app license consumption reports will show per app licenses aren’t being consumed.
 
 ### When will I be able to see the list of users who are using the Power Apps per app license?
 We are currently working on this report. Please check back again for more details. This report will be available in the Power Platform admin center. 

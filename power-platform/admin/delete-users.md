@@ -19,7 +19,7 @@ search.app:
 ---
 # Delete users
 
-Users are deleted in the Microsoft 365 admin center as follows: 
+Users are deleted in the Microsoft 365 admin center as follows:
 
 1. In the [Microsoft 365 admin center](https://admin.microsoft.com/), go to the **Users** > [Active users](https://go.microsoft.com/fwlink/p/?linkid=834822) page.
 
