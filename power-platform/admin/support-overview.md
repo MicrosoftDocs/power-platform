@@ -2,7 +2,7 @@
 title: "Support for Microsoft Power Platform and customer engagement apps in Dynamics 365 | MicrosoftDocs"
 description: Information on support for Microsoft Power Platform and customer engagement apps in Dynamics 365
 ms.custom: ""
-ms.date: 01/26/2021
+ms.date: 02/19/2021
 ms.reviewer: ""
 ms.service: power-platform
 ms.suite: ""
@@ -64,11 +64,16 @@ Yes, you need a support plan to receive one-on-one technical support. Some subsc
 
 <table style="width:100%">
   <tr>
+    <th>Product</th>
     <th>Subscription (included)</th>
     <th>Professional Direct</th>
     <th>Premier Support</th>
     <th>Unified Support</th>
     <th></th>
+  </tr>
+  <tr> 
+    <td width="30%">Power Apps, Power Automate, Power Virtual Agents</td>
+    <td width="70%" colspan="4"><a href="https://admin.powerplatform.microsoft.com">Power Platform admin center</a></td>
   </tr>
   <tr> 
     <td width="30%">Customer engagement apps (such as Dynamics 365 Sales and Customer Service) and AI apps including mixed reality apps and Insights apps</td>
@@ -108,6 +113,12 @@ We have designed our support plans to meet different business needs:
 
 - Technical support Break-fix issues are technical problems you experience while using services. "Break-fix" is an industry term that refers to "work involved in supporting a technology when it fails in the normal course of its function, which requires intervention by a support organization to be restored to working order."
 - How functionality works is not considered a break-fix issue but is more closely related to training. These "how-to" questions involve a transfer of knowledge and can often be answered by reviewing product documentation, raising a question in online community forums, or contacting a knowledgeable individual such as a partner. While there might be some elements of knowledge transfer involved in solving a break-fix issue, in general, assisted training is not included in support plans.
+
+### What is Advisory Service and which support plans allow it? 
+
+- Advisory Service is support provided by Microsoft teams. It provides recommendations, best practices, general advice or guidance on the usage of the products.  
+- Advisory Service is only available to customers with higher tiers of support plans:  Professional Direct, Premier Support, or Unified Support. 
+- Requests can be submitted using your Technical Account Manager, or using the same Support Request interface used for Technical Support. 
 
 ### How does Professional Direct Limited Advisory support compare to Premier/Unified Advisory support? 
 
