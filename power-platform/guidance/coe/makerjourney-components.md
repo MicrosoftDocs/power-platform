@@ -1,6 +1,6 @@
 ---
-title: "Use the Innovation Backlog components | MicrosoftDocs"
-description: "The Innovation Backlog app contains assets log ideas and perform business value assessments."
+title: "Use the Maker Journey components | MicrosoftDocs"
+description: "The Maker Journey components contain a canvas app that can be used for determining what impact a maker's solution might have on licensing, storage, support, etc."
 author: manuelap-msft
 manager: devkeydet
 ms.service: power-platform
@@ -16,74 +16,57 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Use the Innovation Backlog components
+# Use the Maker Journey components
 
-Use the Innovation Backlog app to ask users to submit ideas for apps and flows that need building, and describe pain points with the current process. As users describe the process, they will provide information about personas involved, tools used, and measures for improvement. This information is then used to calculate an ROI and complexity score.
+Use the Maker Assessment app to ask users a series of questions like who will support the app, and the types of data to which it will connect. You can then submit an email to an admin alias with the findings including notes that premium licenses or extra storage may be required.
 
-Pick the most impactful ideas to for your development team to build, or select them for an upcoming hackathon. Other users can vote on ideas, or add their own scenarios to an existing idea. Developers can additionally request feedback and testimonials to build their portfolio.
+Use the Maker Assessment Admin App to tailor these questions to fit your organizational needs.
 
-More information: [Set up Innovation Backlog components](setup-innovationbacklog.md)
+More information: [Set up Maker Journey components](setup-makerjourney.md)
 
-Here's a breakdown of the assets that form the nurture components solution:
+Here's a breakdown of the assets that from the Maker Journey components solution:
 
 ## Security roles
 
-**Innovation Backlog Maker** Gives a user access to read and create records in the Innovation Backlog tables. When you share the Innovation Backlog app with your team, make sure to assign them the **Innovation Backlog Maker** security role.
+Maker Journey Admin SR
+
+**Maker Journey Admin SR** Gives a user full access (create, read, write, etc) to the Maker Journey tables. When you share the Maker Assessment Admin app with your admin team, make sure to assign them the **Maker Journey Admin SR** security role.
+
+**Maker Journey Maker SR** Gives a user read access to the Maker Journey tables. When you share the Maker Assessment app with your organization, make sure to assign them the **Maker Journey Maker SR** security role.
 
 ## Tables
 
-Ideas and information, such as pain points, personas, measures, and tools used, are stored in the following Dataverse tables:
+Questions, answers, and categories for questions, are stored in the following Dataverse tables:
 
-- Innovation Backlog Idea
-- Backlog Idea Vote
-- Backlog Item Complexity
-- Backlog Item Documentset
-- Backlog Item MeasureSet
-- Backlog Item PainPointSet
-- Backlog Item PersonaSet
-- Backlog Item Solution
-- Backlog Item Testimonial
-- Backlog Item Toolset
-- Backlog Item Workflow
-- Innovation Backlog Pain Points
-- Innovation Backlog Pain Points Measures
-- Innovation Backlog Tool
-- Innovation Backlog Workitem
-
-View an entity relationship diagram of the tables used for the Innovation Backlog app:
-
-![Innovation Backlog entity relationship diagram](media/ib-27.png "Innovation Backlog entity relationship diagram")
+- Assessment Category
+- Assessment Questions
+- Answer Options
 
 ## Flows
 
-### Add pain points
+### Setup - starter data
 
-This instant cloud flow runs once during setup to add some default values into the pain points table. Pain points are selected when a new idea is added to the Innovation Backlog.
-
-### Update software tools
-
-This instant flow runs once during setup to add some default values in the software tools table. Software tools are selected when a new idea is added to the Innovation Backlog.
+This instant cloud flow runs once during setup to add some starter questions, answers, and categories into your dataverse tables.
 
 ## Apps
 
-### Innovation Backlog Admin app
+### Maker Assessment Admin App
 
-A canvas app that the Innovation Backlog admin uses to update icons for non-software tools, configure further pain point,s and delete obsolete or old ideas from the Innovation Backlog app.
+A canvas app that the Maker Journey admin uses to enter or update the questions, answers, and categories, that are listed in the apps.
 
-**Permission**: Share this app with the Innovation Backlog admin - this can be your CoE or Power Platform adoption lead.
+**Permission**: Share this app with the Maker Journey admins - this can be your CoE or Power Platform adoption lead.
 
-**Prerequisite**: This app uses Dataverse; a Premium license is therefore required for every app user.
+**Prerequisite**: This app uses Dataverse; a Premium license is therefore required for every app user unless installed in Dataverse for Teams.
 
-![Innovation Backlog Admin app](media/ib-11.png "Innovation Backlog Admin app")
+![Maker Journey Admin app](media/MakerJourneyAdminApp.png "Maker Journey Admin app")
 
-### Innovation Backlog app
+### Maker Assessment
 
-A canvas app that is used to share and vote on ideas, describe pain points and apps that need building, and measure ROI.
+A canvas app that is used by makers to see if they will need special licenses, storage, etc. And then share a mail with the admin team of findings.
 
-**Permission**: The Innovation Backlog app can be shared with the entire organization.
+**Permission**: The Maker Assessment app can be shared with the entire organization.
 
-**Prerequisite**: This app uses Dataverse; a Premium license is therefore required for every app user.
+**Prerequisite**: This app uses Dataverse; a Premium license is therefore required for every app user unless installed in Dataverse for Teams.
 
-![Innovation Backlog app](media/ib-12.png "Innovation Backlog app")
-
-More information: [Use the Innovation Backlog app](use-innovationbacklog.md)
+![Maker Assessment app, screen 1](media/MakerJourneyAssessmentApp_1.png "Maker Assessment app, screen 1")
+![Maker Assessment app, screen 2](media/MakerJourneyAssessmentApp_2.png "Maker Assessment app, screen 2")
