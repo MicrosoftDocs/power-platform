@@ -611,9 +611,9 @@ Make sure **Track between topics** is turned on, and test your new bot content b
 
 ![Power Virtual Agents test](media/Composer_Example3/Example3_cropped.gif)
 
-## Use Power Virtual Agents variables in Bot Framework Composer
+## Use and update Power Virtual Agents variables in Bot Framework Composer
 
-You can use and update Power Virtual Agents global variables in Bot Framework Composer by referencing the following scope:
+You can use and update the values in Power Virtual Agents global variables in Bot Framework Composer by referencing the following scope:
 - `virtualagent`
 
 For example, create a variable called **user_city** in your Power Virtual Agents bot. Make it a global variable by setting its **Usage** to **Bot (any topic can access)**.
