@@ -130,6 +130,9 @@ If you allocate per app capacity to an environment and later reduce per app capa
 
 If a user account is disabled in an environment, adding per app capacity, sharing the app with the user, and the user launching the app will **not** enable the user. We are working to address this issue. 
 
+### Trial prompt while making app with premium connection
+Users in organizations with only Power Apps per app plan may see a trial prompt when creating apps that use premium connections, e.g. an app connects to SQL using a gateway. The app creator is entitled to add premium connections to their app. However, the app creator must sign up for the trial until the trial prompt is removed in the premium connection experience. 
+
 ## FAQ
 
 ### I assigned the baseline access license to my users as a workaround suggested earlier. Now that this workaround is not needed, what should I do to ensure my users are setup correctly? 
