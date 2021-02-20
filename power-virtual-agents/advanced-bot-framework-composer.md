@@ -344,7 +344,7 @@ For the new **Send a response** action, the **Language Generation** panel will o
 ```
 
 >[!TIP]
->You can [access Power Virtual Agents global variables in Composer](#use-power-virtual-agents-variables-in-bot-framework-composer) by referencing the scope **virtualagent**. For example, **${virtualagent.user_city}** will refer to the value of a variable that was created and set in the Power Virtual Agents bot.
+>You can [access Power Virtual Agents global variables in Composer](#use-power-virtual-agents-variables-in-bot-framework-composer) by referencing the scope **virtualagent**. For example, **${virtualagent.user_city}** will refer to the value of a variable that was created in the Power Virtual Agents bot.
 
 
 You are now ready to upload the **Meals** dialog to your Power Virtual Agents bot. Select the **Publish** tab and then the **Publish profile** of your bot, and choose **Publish to selected profile**. Add an optional comment and select **Okay** in the confirmation window to start uploading.
@@ -613,17 +613,17 @@ Make sure **Track between topics** is turned on, and test your new bot content b
 
 ## Use Power Virtual Agents variables in Bot Framework Composer
 
-You can have read-only access to Power Virtual Agents global variables by referencing the following scope in Bot Framework Composer:
+You can use and update Power Virtual Agents global variables in Bot Framework Composer by referencing the following scope:
 - `virtualagent`
 
 For example, create a variable called **user_city** in your Power Virtual Agents bot. Make it a global variable by setting its **Usage** to **Bot (any topic can access)**.
 
 ![Power Virtual Agents - variable](media/Composer_Example1/E1_Dialog2.png)
 
-This setting makes the Power Virtual Agents variable **user_city** available in Bot Framework Composer. Use the following notation to refer to it in Composer:
+This setting makes the Power Virtual Agents variable **user_city** available in Bot Framework Composer in **virtualagent** scope. Use the following notation to refer to it in Composer:
 
  ```JSON
-virtualagent.user_city 
+${virtualagent.user_city} 
 ```
 
 ![Composer - refer to Power Virtual Agents variables](media/Composer_Example1/E1_Meals_ResponseAdded.png)
