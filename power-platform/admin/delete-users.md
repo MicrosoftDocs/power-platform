@@ -8,7 +8,7 @@ ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/18/2021
+ms.date: 02/22/2021
 search.audienceType: 
   - admin
 search.app:
@@ -57,16 +57,21 @@ When you view the **Users** page in the Power Platform admin center, you can see
 
 4. From the drop-down menu, choose **Disabled users**. 
 
-## Re-enable disabled users
+## Restore deleted users
 
-To re-enable a disabled user, follow these steps:
+To restore a deleted user, follow these steps:
 
 1. In the [Microsoft 365 admin center](https://admin.microsoft.com/), go to the **Users** > [Deleted users](https://go.microsoft.com/fwlink/p/?linkid=834822) page.
 
-2. Select the names of the users that you want to delete, select **More options** (...), and then select **Delete user**.
+2. Select the names of the user that you want to re-enable, select **Restore user**, and then proceed through various pages.
+
+3. Re-assign licenses as needed to the user in the Microsoft 365 admin center.
+
+> [!NOTE]
+> You can restore deleted users up to 30 days after deletion.
 
 ### See also
-[Delete a user from your organization](https://docs.microsoft.com/en-us/microsoft-365/admin/add-users/delete-a-user?view=o365-worldwide) <br />
+[Delete a user from your organization](https://docs.microsoft.com/microsoft-365/admin/add-users/delete-a-user?view=o365-worldwide) <br />
 [Troubleshooting: Common user access issues](troubleshooting-user-needs-read-write-access-organization.md)
 
 
