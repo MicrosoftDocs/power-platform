@@ -49,7 +49,7 @@ Note the following regarding access to Microsoft Power Platform apps in Teams:
 
 - No direct API access to Dataverse for Teams will be provided, and only apps, bots, and flows embedded within the Microsoft Teams client will be able to access the Dataverse for Teams runtime.
 
-- Dataverse for Teams is not available in the following regions: Germany, South Africa, South Korea, Switzerland, UAE, GCC, GCC High.
+- Dataverse for Teams is not available in the following regions: South Africa, South Korea, UAE, GCC, GCC High.
 
 More information: [Dataverse for Teams licensing FAQ](powerapps-flow-licensing-faq.md#dataverse-for-teams)
 
