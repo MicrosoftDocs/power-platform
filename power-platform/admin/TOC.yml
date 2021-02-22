@@ -439,7 +439,55 @@
       - name: Audit data and user activity for Dynamics 365 entities
         href: audit-data-user-activity.md
       - name: Dataverse and model-driven apps
-        href: enable-use-comprehensive-auditing.md    
+        href: enable-use-comprehensive-auditing.md   
+    - name: Programmability and Extensibility
+      items:
+      - name: Overview
+        href: programmability-extensibility-overview.md
+      - name: Versioning and support
+        href: programmability-versioning-support.md
+      - name: Authentication
+        href: programmability-authentication.md
+      - name: Tutorials
+        items:
+          - name: Create a daily capacity report
+            href: tutorial-daily-capacity-report.md
+      - name: PowerShell
+        items:
+          - name: Getting started
+            href: powershell-getting-started.md
+          - name: Installation
+            href: powershell-installation.md
+          - name: Creating a service principal
+            href: powershell-service-principal.md
+          - name: Cmdlet Reference
+            href: external.md
+      - name: Connectors
+        items:
+          - name: Getting started
+            href: connectors-getting-started.md
+          - name: Connector reference
+            href: external.md
+      - name: Power Platform API
+        items:
+          - name: Getting started
+            href: power-platform-api-getting-started.md
+          - name: Creating a service principal
+            href: power-platform-api-service-principal.md
+          - name: Create a request
+            href: power-platform-api-create-request.md
+          - name: Process the response
+            href: power-platform-api-process-response.md
+          - name: Async operations, throttling, and paging
+            href: power-platform-api-async-throttling-paging.md
+          - name: Reference
+            items:
+              - name: 2021-02-01
+                items:
+                  - name: Environments
+                    items:
+                      - name: List environments
+                        href: api/2021-02-01/environments/list-environments.md
     - name: PowerShell support for Power Apps 
       items:
       - name: About PowerShell support
