@@ -291,9 +291,9 @@ These instructions use adding weather information to a flow as an example. If yo
 
 ## Pass literal values into action input fiels
 
-Alternatively, if you rather type in a literal value for action input instead of using a variable as an action input, you can type the value directly into the field. 
+Alternatively, if you'd rather type in a literal value for an action input instead of using a variable as an action input, you can type the value directly into the field. 
 
-![Pass literal values into action inputs](media/LiteralActionInput.png)
+:::image type="content" source="media/LiteralActionInput.png" alt-text="Pass literal values into action inputs.":::
 
 ## Test your flow and topic
 
