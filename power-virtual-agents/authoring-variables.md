@@ -111,9 +111,9 @@ When using a variable in an action node, if a variable's base type matches with 
 ![Use entity in an action node](media/User_a_variable_in_Skills(draft).PNG)
 
 ## Use literal values in action nodes
-Alternatively, you can type a literal value into an action node variable input field instead of selecting a variable from the dropdown. When passing a literal this way, you can type it's value directly into the input field as seen below.
+Alternatively, you can type a literal value into an action node variable input field instead of selecting a variable from the menu. When passing a literal this way, you can type its value directly into the input field.
 
-![Use literal values for action inputs](media/LiteralActionInput.png)
+:::image type="content" source="media/LiteralActionInput.png" alt-text="Screenshot showing the use of literal values for action inputs.":::
 
 
 
