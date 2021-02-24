@@ -228,6 +228,8 @@ Some of the features available in the commercial version of Power Apps are not a
 
 - [AI Builder](https://docs.microsoft.com/ai-builder/).
 
+- [Geospatial features](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/geospatial-overview) are not available in government environments.
+
 ## Requesting support
 
 Having a problem with your service? You can create a support request to get the issue resolved.  
