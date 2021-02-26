@@ -55,7 +55,7 @@ To create an environment, all the following must be true:
 
    To determine which license a user has, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) and follow the steps in [Assign licenses to multiple users on the Active users page](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users?view=o365-worldwide).
 
-2. The tenant (or user in the case of email trials) must have available quota:
+2. The tenant (or user in the case of email trials) must have the following:
 
    - For production and sandbox environments, the tenant must have at least 1GB of database storage capacity available.
    - For trial (subscription-based) environments, each offer-based trial (aka "admin trial") subscription must have three slots of entitlement.
