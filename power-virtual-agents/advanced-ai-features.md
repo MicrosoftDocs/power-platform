@@ -80,7 +80,7 @@ Specifically, with this feature enabled, when the bot asks questions such as tho
 | <ul></br><li>`I'll help if I can. Would you tell me your job title please?`</li></br><li>`Sure, I'd be glad to help. Please enter your career title to proceed.`</li></br></ul> | Job title |
 | <ul></br><li>`Might I know your last name in order to proceed?`</li></br><li>`I see. Allow me to review this case number. Can you also tell me your last name for me to address you properly?`</li></br></ul> | Last name |
 | <ul></br><li>`I'll see if I can help. Could you please enter your director's name?`</li></br><li>`I'll help you if I can. could you tell me your principal's name, please?`</li></br><li>`What is your manager's name?`</li></br><li>`Please share the name of your supervisor.`</li></br></ul> | Manager's name |
-| <ul></br><li>`Wondering if you would please provide your conjugal status?</li></br><li>`To assist you I'll need you to enter your marital status.`</li></br></ul> | Marital status |
+| <ul></br><li>`Wondering if you would please provide your conjugal status?`</li></br><li>`To assist you I'll need you to enter your marital status.`</li></br></ul> | Marital status |
 | <ul></br><li>`Wondering if you would please provide your middle name?`</li></br><li>`I'd be glad to help you with that. By the way, may I ask for your middle name so that I can address you properly?`</li></br></ul> | Middle name |
 | <ul></br><li>`Could you please provide me with your mobile phone number?`</li></br><li>`It's not a problem. I'll just need your cell phone number please.`</li></br></ul> | Mobile phone number |
 | <ul></br><li>`I'll need your nickname please?`</li></br><li>`It's my pleasure to assist. Can you inform me of your nickname?`</li></br></ul> | Nick name |
