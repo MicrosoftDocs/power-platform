@@ -57,9 +57,11 @@ To create an environment, all the following must be true:
 
 2. The tenant (or user in the case of email trials) must have available quota:
 
-   - For production and sandbox environments, the tenant must have at least 1 GB of database storage capacity available.
-   - For trial (subscription-based) environments, each offer-based trial (aka "admin trial") subscription has database, file, and log storage capacity entitlement.
-   - For trial (standard) environments, the quota is per-user and is given by various license types (including free Trial licenses). In almost all cases this entitlement is one per user.
+   - For production and sandbox environments, the tenant must have at least 1GB of database storage capacity available.
+   - For trial (subscription-based) environments, each offer-based trial (aka "admin trial") subscription must have three slots of entitlement.
+   - For trial (standard) environments, the user needs a license providing per-user entitlement for trial environments. This applies to tenant-level admins, as well. Users wanting to create a standard trial can get the necessary license for free by signing up for a Power Apps trial via one of these paths:
+     - https://apps.powerapps.com/trial
+     - https://aka.ms/pa-trial (via signup.microsoft.com)
 
 3.	Tenant policy must allow environment creation.
 
