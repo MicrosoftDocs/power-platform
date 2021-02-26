@@ -39,37 +39,34 @@ We're consolidating how you view, create, and manage environments.
 
 To create an environment, all the following must be true:
 
-1.	The user must have a license assigned that gives the "CanProvisionEnvironments" privilege. This requirement is waived for tenant-level admins (and this is what the doc excerpt you reference is talking about)
-2.	The tenant (or user in the case of email trials) must have available quota
-1.	For prod/sandbox environment types, this means the tenant must have at least 1 GB of DB storage capacity available
-2.	For subscription-based-trial environment types, each offer-based trial (aka "admin trial") subscription gives 3 slots of entitlement
-3.	For email trials (or just "Trial" type), the quota is per-user, and is given by various license types (including free Trial licenses). In almost all cases this entitlement is one per user (technically there is a separate pool for Dynamics email trials provisioned through trials.dynamics.com and the CDS email trials provisioned in PPAC).
-3.	Tenant policy must allow it. E.g. Tenant Admins can lock it down so that only tenant admins can provision environments (separate policy exists for production environments and trial environments)
+1. The user has a license (Yes below) that allows environment creation. This requirement is waived for Global admins and Power Platform admins.
 
+   | License | Trial | Production |
+   | --- | --- | --- |
+   | Microsoft 365 Plans |No | No |
+   | Dynamics 365 Teams Plans   |No | No |
+   | Power Apps Community Plan   |No | No |
+   | Dynamics 365 trial | Yes (one) | No|
+   | Dynamics 365 Plans |Yes (one)| Yes |
+   | Power Apps plan |Yes (one)| Yes |
+   | Power Apps trial |Yes (one)| Yes |
+   | Power Virtual Agents trial plan |Yes | No |
+   | Power Virtual Agents plan | No | Yes |
 
+   To determine which license a user has, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) and follow the steps in [Assign licenses to multiple users on the Active users page](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users?view=o365-worldwide).
 
+2. The tenant (or user in the case of email trials) must have available quota:
 
+   - For production and sandbox environments, the tenant must have at least 1 GB of database storage capacity available.
+   - For trial (subscription-based) environments, each offer-based trial (aka "admin trial") subscription has database, file, and log storage capacity entitlement.
+   - For trial (standard) environments, the quota is per-user and is given by various license types (including free Trial licenses). In almost all cases this entitlement is one per user.
 
+3.	Tenant policy must allow environment creation.
 
-
-Your license determines whether you can create environments.
-
-| License | Trial | Production |
-| --- | --- | --- |
-| Microsoft 365 Plans |No | No |
-| Dynamics 365 Teams Plans   |No | No |
-| Power Apps Community Plan   |No | No |
-| Dynamics 365 trial | Yes (one) | No|
-| Dynamics 365 Plans |Yes (one)| Yes |
-| Power Apps plan |Yes (one)| Yes |
-| Power Apps trial |Yes (one)| Yes |
-| Power Virtual Agents trial plan |Yes | No |
-| Power Virtual Agents plan | No | Yes |
-
-To determine which license a user has, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) and follow the steps in [Assign licenses to multiple users on the Active users page](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users?view=o365-worldwide).
-
+<!-- 
 > [!NOTE]
 > Global admins and Power Platform admins can create environments without a license provided the environment has available database storage capacity. See [Administer without a license](global-service-administrators-can-administer-without-license.md). 
+-->
 
 ## Create an environment in the Power Platform admin center
 An environment provides storage for apps, flows, data, and various other resources. When users create an app in an environment, that app can connect to any data source, including connections, gateways, and flows. How you choose to leverage environments depends on your organization and the apps you're trying to build. For more information, see [Environments overview](environments-overview.md).
