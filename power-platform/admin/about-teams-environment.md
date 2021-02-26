@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/05/2021
+ms.date: 02/24/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -24,9 +24,6 @@ search.app:
 Introduced in September 2020, *Microsoft Dataverse for Teams* is a built-in, low-code data platform for Microsoft Teams that empowers users to build custom apps, bots, and flows in Microsoft Teams by using Power Apps, Power Virtual Agents, and Power Automate. Dataverse for Teams—built on Microsoft Dataverse—provides relational data storage, rich data types, enterprise-grade governance, and one-click solution deployment to the Microsoft Teams app store. More information: [Dataverse for Teams overview](/powerapps/teams/overview-data-platform)
 
 The Dataverse for Teams environment is automatically created for the selected team when you create an [app](https://docs.microsoft.com/powerapps/teams/create-first-app) or [bot](https://docs.microsoft.com/power-virtual-agents/teams/authoring-first-bot-teams#create-a-bot) in Microsoft Teams for the first time or install a Power Apps app from the app catalog for the first time. The Dataverse for Teams environment is used to store, manage, and share team-specific data, apps, and flows. Each team can have one environment, and all data, apps, bots, and flows created with the Power Apps app inside a team are available from that team's Dataverse for Teams database.  
-
-> [!NOTE]
-> The capability to upgrade Dataverse for Teams environments to Dataverse environments isn't available yet. Check back later for availability.
 
 You can identify a Dataverse for Teams environment in the [Power Platform admin center](https://admin.powerplatform.microsoft.com) by using the **Type** column in the list of environments.
 
@@ -49,7 +46,7 @@ Note the following regarding access to Microsoft Power Platform apps in Teams:
 
 - No direct API access to Dataverse for Teams will be provided, and only apps, bots, and flows embedded within the Microsoft Teams client will be able to access the Dataverse for Teams runtime.
 
-- Dataverse for Teams is not available in the following regions: Germany, South Africa, South Korea, Switzerland, UAE, GCC, GCC High.
+- Dataverse for Teams is not available in the following regions: South Africa, South Korea, UAE, GCC, GCC High.
 
 More information: [Dataverse for Teams licensing FAQ](powerapps-flow-licensing-faq.md#dataverse-for-teams)
 
@@ -235,9 +232,6 @@ As mentioned for the environment-level enforcement, any existing apps will still
 ## Upgrade process 
 <!-- fwlink 2122620 for failure need 1GB -->
 <!-- fwlink 2134779 for for a few thing to know -->
-
-> [!IMPORTANT]
-> The capability to upgrade Dataverse for Teams environments to Dataverse environments isn’t available yet. Check back later for availability.
  
 The high-level flow and business rules for upgrading a Dataverse for Teams environment follow. 
 
