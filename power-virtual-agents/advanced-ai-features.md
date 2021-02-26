@@ -15,7 +15,7 @@ ms.collection: virtual-agent
 
 ## AI models in Power Virtual Agents - background
 
-![In Power Virtual Agents conversational AI is infused in each step of the bot building journey wrapped in an experience friendly to business users.](media/nlu-models.png)
+![In Power Virtual Agents conversational AI is infused in each step of the bot building journey wrapped in an experience friendly to business users.](media/advanced-ai-features/nlu-models.png)
 
 Power Virtual Agents hosts multiple AI models and AI capabilities on a single service, the core of which is a transformer-based natural language understanding (NLU) model.
 
@@ -28,7 +28,7 @@ Shorter trigger phrases are better, and you should aim for two to ten words. You
 
 This is described in the tooltip associated with the **Trigger phrases** section on a topic's **Details** page.
 
-![Screenshot of the trigger phrase section in the topic details page.](media/trigger-phrase-tooltip.png)
+![Screenshot of the trigger phrase section in the topic details page.](media/advanced-ai-features/trigger-phrase-tooltip.png)
 
 There are some specific features that further improve how the AI in Power Virtual Agents understands what your bot users are asking, and how the AI provides answers.
 
@@ -53,7 +53,7 @@ The next time someone asks the same question, the bot doesn’t ask for clarific
 In this example, it also understands the misspelling of “something” to mean “something”, so it’s able to carry over the improved intent triggering even though the bot user’s question is spelled differently.
 
 
-![Screenshot of a bot conversation showing the improvements to auto triggering.](media/triggering-improvements.png)
+![Screenshot of a bot conversation showing the improvements to auto triggering.](media/advanced-ai-features/triggering-improvements.png)
 
 ### Conversation personalization (Preview)
 
@@ -62,7 +62,7 @@ When this feature is enabled, the bot will reuse information from Microsoft Grap
 Specifically, with this feature enabled, when the bot asks questions such as those in the following table, the corresponding user information will be pulled from Microsoft Graph and Azure AD (for authenticated users) and provided as prompts for the user to choose as an option. 
 
 
-![Screenshot of the triggering improvements highlighted as part of topic authoring.](media/improvements-authoring.png)
+![Screenshot of the triggering improvements highlighted as part of topic authoring.](media/advanced-ai-features/improvements-authoring.png)
 
 | Sample bot questions | User property automatically filled from Microsoft Graph or Azure AD |
 |-------------------------|-------------------------|
@@ -103,7 +103,7 @@ To use these advanced AI capabilities in Power Virtual Agents:
 
 4.  Select **Save** at the top of the tab.
 
-![Screenshot showing the new AI capabilities section under the Manage tab ](media/enable-features.png)
+![Screenshot showing the new AI capabilities section under the Manage tab ](media/advanced-ai-features/enable-features.png)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
