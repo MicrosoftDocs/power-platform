@@ -1,25 +1,27 @@
 ---
-title: Build global support into canvas apps | Microsoft Docs
-description: Use Power Apps to build apps that are used worldwide.
+title: Global support in Power Fx | Microsoft Docs
+description: Use Power Fx to express logic worldwide.
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 10/25/2016
+ms.date: 02/26/2021
 ms.author: gregli
 search.audienceType: 
   - maker
 search.app: 
   - PowerApps
 ---
-# Build global support into canvas apps
-Power Apps is a global product. You can build and use canvas apps in many different languages and regions.
+# Global support
+Power Fx is a global product. You can build and use Power Fx in many different languages and regions.
 
-Both while building and running apps, the text displayed by Power Apps has been translated into different kinds of languages.  You'll see menu items, dialog boxes, ribbon tabs, and other text in your native language.  Typing in and displaying dates and numbers is also adapted for your particular language and region.  For example, some regions of the world use a **.** (dot or period) as the decimal separator while others use a **,** (comma).  
+Both while building and running logic, the text displayed by Power Fx will be displayed in the appropriate languages.  Typing in and displaying dates and numbers is adapted for your particular language and region.  
 
-The apps you create can be globally aware as well.  Use the **[Language](functions/function-language.md)**, **[Text](functions/function-text.md)**, **[Value](functions/function-value.md)**, **[DateValue](functions/function-datevalue-timevalue.md)**, and other functions to adapt what is displayed and used as input in different languages.   
+For example, some regions of the world use a **.** (dot or period) as the decimal separator while others use a **,** (comma).  This is what Excel does too.  This is commonly not done in other programming languages, using a canonical **.** as the decimal separator for all users worldwide.  To be as approachable as possible for makers at all levels, it is important that `3,14` is a decimal number for a person in France who has used that syntax all their lives.   
+
+The apps you create can be globally aware as well.  Use the **Language**, **Text**, and **Value**, **DateValue**, and other functions to adapt what is displayed and used as input in different languages.   
 
 ## Language settings
 When using the native studio or a native player, the language used is provided by the host operating system. For Windows, this setting can be controlled under "All Settings" and then "Time & language" settings.  Windows also allows you to specify the characters to use for the decimal separator, overriding the language setting.  
@@ -57,7 +59,7 @@ You can use whatever names you like for:
 * Context variable names
 
 ### Formula separators and chaining operator
-Some [separators and operators](functions/operators.md) will shift based on the decimal separator of the author's language:
+Some [separators and operators](operators.md) will shift based on the decimal separator of the author's language:
 
 | Author's language decimal separator | Power Apps decimal separator | Power Apps list separator | Power Apps chaining operator |
 | --- | --- | --- | --- |
@@ -67,8 +69,8 @@ Some [separators and operators](functions/operators.md) will shift based on the 
 The change in the Power Apps list separator is consistent with what happens to the Excel list separator.  It impacts:
 
 * Arguments in function calls.
-* Fields in a [record](working-with-tables.md#elements-of-a-table).
-* Records in a [table](working-with-tables.md#inline-value-tables).
+* Fields in a [record](tables.md#elements-of-a-table).
+* Records in a [table](tables.md#inline-value-tables).
 
 For example, consider the following formula expressed in a language and region that uses dot or period as the decimal separator, such as Japan or the United Kingdom:
 
@@ -86,7 +88,7 @@ Internally the formula doesn't change, all that changes is how it's displayed an
 The app you create can adapt to different languages, providing a great user experience for your users around the world.
 
 ### Language function
-The **[Language](functions/function-language.md)** function returns the language tag of the current user.  For example, this function returns **"en-GB"** for users in Great Britain and **"de-DE"** for users in Germany.  
+The **Language** function returns the language tag of the current user.  For example, this function returns **"en-GB"** for users in Great Britain and **"de-DE"** for users in Germany.  
 
 Among other things, you can use **Language** to display translated text for your users.  Your app can include a table of translated values in your app:
 
@@ -100,12 +102,12 @@ LookUp( Table1, TextID = "Hello" && (LanguageTag = Left( Language(), 2 ) || IsBl
 
 Translated strings in other languages could be longer than they are in your language.  In many cases, the labels and other elements that display the strings in your user interface will need to be wider to accommodate.
 
-For more information, see the documentation for the **[Language](functions/function-language.md)** function.
+For more information, see the documentation for the **Language** function.
 
 ### Formatting numbers, dates, and times
 Numbers, dates, and times are written in different formats in different parts of the world.  The meaning of commas, decimals, and the order of month, date, and year vary from location to location.   
 
-The **[Text](functions/function-text.md)** function formats numbers and dates using the language setting of the user.
+The **Text** function formats numbers and dates using the language setting of the user.
 
 **Text** requires a format string to know how you want to format the number or date.  This format string can take one of two forms:
 
@@ -116,15 +118,15 @@ The "[$-en-US]" on the front of the custom format string tells **Text** in which
 
 The third argument to **Text** specifies which language to use for the result of the function.  The default is the language setting of the current user.
 
-For more information, see the documentation for the **[Text](functions/function-text.md)** function.      
+For more information, see the documentation for the **Text** function.      
 
 ### Reading numbers, dates, and times
 There are four functions for reading numbers, dates, and times provided by the user:
 
-* **[Value](functions/function-value.md)**: Converts a number in a text string to a number value.
-* **[DateValue](functions/function-datevalue-timevalue.md)**: Converts a date value in a text string to a date/time value.  Anytime specified in the text string is ignored.
-* **[TimeValue](functions/function-datevalue-timevalue.md)**: Converts a time value in a text string to a date/time value.  Any date specified in the text string is ignored.
-* **[DateTimeValue](functions/function-datevalue-timevalue.md)**: Converts a date and time value in a text string to a date/time value.  
+* **Value**: Converts a number in a text string to a number value.
+* **DateValue**: Converts a date value in a text string to a date/time value.  Anytime specified in the text string is ignored.
+* **TimeValue**: Converts a time value in a text string to a date/time value.  Any date specified in the text string is ignored.
+* **DateTimeValue**: Converts a date and time value in a text string to a date/time value.  
 
 If you have used Excel, all of these functions are combined in the single **Value** function.  They're broken out here since Power Apps has separate types for date/time values and numbers.
 
@@ -140,14 +142,12 @@ For example:
 * **TimeValue( "11:43:02", "fr-FR" )** or **TimeValue( "11:43:02" )** when located where "fr-FR" is the user's language returns the date/time value **January 1, 1970 at 11:43:02**.
 * **DateTimeValue( "11:43:02 1/2/01", "de-DE" )** or **DateTimeValue( "11:43:02 1/2/01" )** when located where "de-DE" is the user's language returns the date/time value **February 1, 2001 at 11:43:02**.
 
-For more information, see the documentation for the **[Value](functions/function-value.md)** and **[DateValue, TimeValue, and DateTimeValue](functions/function-datevalue-timevalue.md)**  functions and [working with dates and times](show-text-dates-times.md).
+For more information, see the documentation for the **Value** and **DateValue, TimeValue, and DateTimeValue**  functions.
 
 ### Calendar and Clock information
-The **[Calendar](functions/function-clock-calendar.md)** and **[Clock](functions/function-clock-calendar.md)** functions provide calendar and clock information for the user's current language.  
+The **Calendar** and **Clock** functions provide calendar and clock information for the user's current language.  
 
 Among other things, use these functions to provide a **Dropdown** control with a list of choices.  
 
-For more information, see the documentation for the **[Calendar](functions/function-clock-calendar.md)** and **[Clock](functions/function-clock-calendar.md)**  functions.
+For more information, see the documentation for the **Calendar** and **Clock**  functions.
 
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

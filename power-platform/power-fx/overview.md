@@ -32,6 +32,7 @@ This article is an overview of the language and its design principles.  Further 
 - [Tables](tables.md)
 - [Variables](variables.md)
 - [Imperative logic](imperative.md)
+- [Global supprt](global-support.md)
 - [Expression grammar](expression-grammar.md)
 - [YAML formula grammar](yaml-formula-grammar.md)
 
@@ -109,6 +110,19 @@ Polymorphic types are supported, but before being used their type must be pinned
 Types are derived from their use without being declared.  For example, setting a variable to a number results in that variable's type being established as a number.
 
 Conflicting type usage results in a compile time error.
+
+### Locale-sensitive decimal separators
+
+Some regions of the world use a **.** (dot or period) as the decimal separator while others use a **,** (comma).  This is what Excel does too.  This is commonly not done in other programming languages, using a canonical **.** as the decimal separator for all users worldwide.  To be as approachable as possible for makers at all levels, it is important that `3,14` is a decimal number for a person in France who has used that syntax all their lives.  
+
+The choice of decimal separator has a cascading impact on the list separator, used for function call arguments, and the chaining operator:
+
+| Author's language decimal separator | Power Fx decimal separator | Power Fx list separator | Power Fx chaining operator |
+| --- | --- | --- | --- |
+| **.** (dot or period) |**.** (dot or period) |**,** (comma) |**;** (semi-colon) |
+| **,** (comma) |**,** (comma) |**;** (semi-colon) |**;;** (double semi-colon) |
+
+See [global supprt](global-support.md) for more details.
 
 ### Not object oriented 
 
