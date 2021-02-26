@@ -1,14 +1,42 @@
+---
+title: Power Fx Overview | Microsoft Docs
+description: Overview of the Power Fx language
+author: gregli-msft
+manager: kvivek
+ms.service: powerapps
+ms.topic: conceptual
+ms.reviewer: tapanm
+ms.date: 02/26/2021
+ms.author: gregli
+search.audienceType: 
+  - maker
+search.app: 
+  - PowerApps
+---
 # Power Fx
 
-Power Fx is the low-code language used across the Power Platform.  It is a general purpose, declarative, and functional programming language
+Power Fx is the low-code language used across the Power Platform.  It is a general purpose, declarative, and functional programming language.
 
-At its heart, Power Fx binds object properties together with declarative spreadsheet-like formulas.  Think of a UI control's Visible property like a spreadsheet cell, with an associated formula that calculates its value based on other control properties.  The formula logic recalculates automatically just like a spreadsheet does which affects the control's visibility.  
+At its heart, Power Fx binds objects together with declarative spreadsheet-like formulas.  Think of a UI control's **Visible** property like a spreadsheet cell, with an associated formula that calculates its value based on other control properties.  The formula logic recalculates automatically just like a spreadsheet does which affects the control's visibility.  
 
-In addition, Power Fx offers imperative logic.  Spreadsheets don't typically have buttons, but apps do.  The same expression language is used for both declarative and imperative logic.
+In addition, Power Fx offers imperative logic when needed.  Spreadsheets don't typically have buttons, that may submit changes to a database, but apps often do.  The same expression language is used for both declarative and imperative logic.
 
-Power Fx is expressed in text.  It is considered a "low-code" language that makers can work with directly in a Excel like formula bar or Visual Studio Code text window.  The "low" is due to the concise and simple nature of the language - a maker or developer will not need to write very much to get the job done.  
+Power Fx is expressed in human friendly text.  It is considered a "low-code" language that makers can work with directly in a Excel like formula bar or Visual Studio Code text window.  The "low" is due to the concise and simple nature of the language, making common programming tasks easy for both makers and developers.
 
-Power Fx will be made available as open source.  It's open source home is [https://github.com/microsoft/power-fx](https://github.com/microsoft/power-fx).  It is currently integrated into Canvas Power Apps where you can experience it today.
+Power Fx will be made available as open source.  It is currently integrated into Canvas Power Apps where you can experience it today.  We are in the process of extracting it from this product for use in other products and as open source.  Power Fx's open source home is [https://github.com/microsoft/power-fx](https://github.com/microsoft/power-fx).  
+
+This article is an overview of the language and its design principles.  Further details can be found in these articles:
+
+- [Data types](data-types.md)
+- [Operators and identifiers](operators.md)
+- [Tables](tables.md)
+- [Variables](variables.md)
+- [Imperative logic](imperative.md)
+- [Expression grammar](expression-grammar.md)
+- [YAML formula grammar](yaml-formula-grammar.md)
+
+> [!NOTE]
+> This documentation is incomplete.  Just as we are extracting and generalizing the code for Power Fx from canvas Power Apps, so too we are the documentation.  If you don't find an answer here, please check the [canvas Power Apps documentation](../../powerapps/maker/canvas-apps/formula-reference.md).
 
 ## Audience 
 
@@ -28,11 +56,13 @@ So it is with Power Fx as well.  An incremental compiler is used to continuously
 
 For convenience, this document refers to the *compiler* in the same way most programming languages do.     
  
-## Formula vs. Expression
+## Formulas vs. Expressions
 
-## "No Code" to "Pro Code" spectrum
+Nearly all programming languages, including Power Fx, have expressions: a way to represent a calculation over numbers, strings, and other data types.  For example `mass * acceleration` in most languages expresses multiplication of `mass` and `acceleration`.  The result of an expression can be placed in a variable, used as an argument to a procedure, or nested in a bigger expression.
 
-"No code" experiences can be easily built on top of the "low-code" language.
+Power Fx takes this a step further.  An expression by itself says nothing about what it is calculating.  It is up to the maker to place it in a variable or pass it to a function. In Power Fx, instead of only writing an expression that has no specific meaning, one writes a *formula* that binds the expression to an identifier.  One writes `force = mass * acceleration` as a formula, in the mathematical sense, for calculating `force` that is always true.  As `mass` or `acceleartion` changes, `force` automatically updates to a new value.  An expression described a calculation, a formula gives that calculation a name and uses it as a recipe.  This is why we refer to Power Fx as a formula language.
+
+The **Fx** in the Power Fx name is a reference to the script *fx* icon that can be commonly found next to the formula bar in spreadsheets.  Technically the *fx* icon refers to functions, but the association with formulas is strong and can be found in many other products beyond spreadsheets.  Either way, both formulas and functions are at the heart of Power Fx.    
 
 ## Principles 
 
@@ -47,6 +77,8 @@ For example, all operations are presented to the maker as synchronous when under
 ### Excel consistency 
 
 The PowerApps language borrows heavily from the Excel formula language.  We seek to leverage as much Excel knowledge and experience from the many makers who also use Excel.  Types, operators, and function semantics are as close to Excel as possible.
+
+If Excel does not have an answer, we next look to SQL.  After Excel, SQL is the next most commonly used declarative language and can provide guidance on data operations and strong typing that Excel does not.
 
 ### Declarative 
 
@@ -70,7 +102,7 @@ For example, a Gallery control does not have separate Sort and Filter properties
 
 The types of all values are known at compile time.  This allows for the early detection of errors and rich suggestions while authoring. 
 
-Polymorphic types are supported, but before being used their type must be pinned to a static type and that type must be known at compile time.
+Polymorphic types are supported, but before being used their type must be pinned to a static type and that type must be known at compile time.  The **IsType** and **AsType** functions are provided for testing and casting types.
 
 ### Type inference 
 
@@ -100,11 +132,11 @@ For example, Excel had no answer for comments, so we use C like line and inline 
 
 ### Language evolution 
 
-Like most languages, this language is a work in progress.  Backward compatibility is obviously important and nobody wants existing apps to break.  However, there are times when language features should be changed or deprecated.
+Like most languages, Power Fx is a work in progress.  Backward compatibility is obviously important and nobody wants existing apps to break.  However, there are times when language features should be changed or deprecated.
 
-Power Fx has facilities for actively moving apps forward without breaking them.  Apps are stamped with the version of the language they were written in.  When compiled in a newer version of the language, upgrade code in the compiler will rewrite the maker's formulas as needed to move them forward.
+Power Fx has facilities for actively moving code forward without breaking it.  Apps are stamped with the version of the language they were written in.  When compiled in a newer version of the language, upgrade code in the compiler will rewrite the maker's formulas as needed to move them forward.
 
-As a result, Power Fx may evolve faster than the norm.
+As a result, Power Fx may evolve faster and more aggressively than the norm.  It is possible for us to rename functions, for example, we changed **ShowError** to **Notify** when the function expanded beyond just errors.  
 
 ### No Undefined value
 

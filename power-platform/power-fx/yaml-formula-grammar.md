@@ -1,6 +1,6 @@
 ---
 title: Power Fx YAML Formula Grammar | Microsoft Docs
-description: Data types in canvas apps
+description: Power Fx YAML formula syntax
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
