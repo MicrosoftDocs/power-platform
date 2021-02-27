@@ -3,6 +3,7 @@ title: Power Fx Expression Grammar | Microsoft Docs
 description: Annotated grammar for the Power Fx language
 author: gregli-msft
 manager: kvivek
+ms.reviewer: nabuthuk
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
@@ -15,11 +16,11 @@ search.app:
 ---
 # Power Fx Expression Grammar
 
-Power Fx is based on formulas that bind a name to an expression.  Just like a spreadsheet, as inbound dependencies to the expression change, the expression is recalculated and the value of the name changes, possibly cascading the recalculation into other formulas.  
+Power Fx is based on formulas that binds a name to an expression.  Just like a spreadsheet, as inbound dependencies to the expression change, the expression is recalculated and the value of the name changes, possibly cascading the recalculation into other formulas.  
 
-This grammar covers the expression part of a formula.  Binding to a name to create a formula is dependent on how Power Fx is integrated.  In spreadsheets, the binding syntax is generally not exposed and is implied by where the expression is written, for example typing =B1 in the A1 cell.  In some cases, no binding is required at all and Power Fx is used as an expression evaluator, for example in supporting calculated columns of a database table.  For Power Apps, the binding is implied when in Power Apps Studio with [a serialization format based on YAML for use outside Power Apps Studio](expression-grammar.md).
+This grammar covers the expression part of the formula. Binding to a name to create a formula is dependent on how Power Fx is integrated. In spreadsheets, the binding syntax is not exposed and is implied by where the expression is written, for example `typing =B1` in the A1 cell. In some cases, no binding is required at all and Power Fx is used as an expression evaluator, for example in supporting calculated columns of a database table. For Power Apps, the binding is implied when in Power Apps Studio with [a serialization format based on YAML for use outside Power Apps Studio](expression-grammar.md).
 
-### Grammar conventions 
+## Grammar conventions
 
 The lexical and syntactic grammars are presented using grammar productions. Each grammar production defines a non-terminal symbol and the possible expansions of that non-terminal symbol into sequences of non-terminal or terminal symbols. In grammar productions, non-terminal symbols are shown in italic type, and terminal symbols are shown in a fixed-width font.
 
@@ -27,10 +28,9 @@ The first line of a grammar production is the name of the non-terminal symbol be
 
 &emsp;&emsp;*GlobalIdentifier* **:**
 &emsp;&emsp;&emsp;&emsp;`[@`&emsp;*Identifier*&emsp;`]`
-
 defines a *GlobalIdentifier* to consist of the token `[@`, followed by an *Identifier*, followed by the token `]`
 
-When there is more than one possible expansion of a non-terminal symbol, the alternatives are listed on separate lines. A subscripted suffix "opt" is used to indicate an optional symbol. The production:
+When there is more than one possible expansion of a non-terminal symbol, the alternatives are listed on separate lines. A subscripted suffix "opt" is used to indicate an optional symbol. For example,the production:
 
 &emsp;&emsp;*FunctionCall* **:**
 &emsp;&emsp;&emsp;&emsp;*FunctionIdentifier*&emsp;`(`&emsp;*FunctionArguments*<sub>opt</sub>&emsp;`)`
@@ -90,7 +90,7 @@ Whitespace is used to separate comments and tokens within a PowerApps document.
 &emsp;&emsp;&emsp;&emsp;Horizontal tab character (U+0009)
 &emsp;&emsp;&emsp;&emsp;Line feed character (U+000A)
 &emsp;&emsp;&emsp;&emsp;Vertical tab character (U+000B)
-&emsp;&emsp;&emsp;&emsp;Form feed chracter (U+000C)
+&emsp;&emsp;&emsp;&emsp;Form feed character (U+000C)
 &emsp;&emsp;&emsp;&emsp;Carriage return character (U+000D)
 &emsp;&emsp;&emsp;&emsp;Next line character (U+0085)
 
@@ -143,7 +143,7 @@ The following example includes two delimited comments:
 "Hello, world"    /* This is an example of a text literal */
 ```
 
-The following examples includes three single-line comments:
+The following examples include three single-line comments:
 
 ```powerapps-dot
 // Hello, world
@@ -301,13 +301,13 @@ A *SingleQuotedIdentifier* can contain any sequence of Unicode characters to be 
 
 #### Case sensitivity 
 
-PowerApps identifiers are case sensitive.  The authoring tool will auto correct to the correct case when a formula is being written.
+Power Apps identifiers are case-sensitive.  The authoring tool will auto correct to the correct case when a formula is being written.
 
 ## Separators 
 
 &emsp;&emsp;<a name="DecimalSeparator"></a>*DecimalSeparator* **:**
-&emsp;&emsp;&emsp;&emsp;`.` (dot) for language that use a dot as the seperator for decimal numbers, for example `1.23`
-&emsp;&emsp;&emsp;&emsp;`,` (comma) for languages that use a comma as the seperator for decimal numbers, for example `1,23`
+&emsp;&emsp;&emsp;&emsp;`.` (dot) for language that uses a dot as the separator for decimal numbers, for example `1.23`
+&emsp;&emsp;&emsp;&emsp;`,` (comma) for languages that use a comma as the separator for decimal numbers, for example `1,23`
 
 &emsp;&emsp;<a name="ListSeparator"></a>*ListSeparator* **:**
 &emsp;&emsp;&emsp;&emsp;`,` (comma) if *[DecimalSeparator](#DecimalSeparator)* is `.` (dot)

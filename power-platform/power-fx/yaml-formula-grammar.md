@@ -3,6 +3,7 @@ title: Power Fx YAML Formula Grammar | Microsoft Docs
 description: Power Fx YAML formula syntax
 author: gregli-msft
 manager: kvivek
+ms.reviewer: nabuthuk
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
@@ -16,13 +17,13 @@ search.app:
 
 # Power Fx YAML Formula Grammar
 
-The Power Apps formula language has a well established grammar for expressions based on Excel.  However, it lacks the syntax for binding an expression to a property, this has always been handled behind the scenes by the hosting app.
+The Power Apps formula language has a well-established grammar for expressions based on Excel. However, it lacks the syntax for binding an expression to a property, this has always been handled behind the scenes by the hosting app.
 
-We have selected the industry standard [YAML](https://yaml.org/spec/1.2/spec.html) as our language for this binding.  There are already a large number of editors, tools, and libraries for manipulating YAML.  This document describes how we represent formulas in YAML.
+We have selected the industry standard [YAML](https://yaml.org/spec/1.2/spec.html) as our language for this binding. There are already a large number of editors, tools, and libraries for working with YAML.  This article describes how we represent formulas in YAML.
 
-At this time, we support only a restricted subset of YAML.  Only the constructs described in this document are supported.  
+At this time, we support only a restricted subset of YAML. Only the constructs described in this article are supported.  
 
-This is very much a work in progress and may change.  Not everything that defines a Canvas app is represented here, additional information flows through the other files that the tool produces and consumes.
+This is very much a work in progress and may change. Not everything that defines a canvas app is represented here, additional information flows through other files that the tool produces and consume.
 
 ## Leading =
 
@@ -37,8 +38,9 @@ Text: |
 ```
 
 We use the `=` in this manner for three reasons:
+
 - It is consistent with Excel's usage of a leading `=` to bind an expression to a cell.
-- It effectively escapes the formula language's syntax so that YAML does not attempt to parse it.  Normally. YAML would treat `text: 1:00` as minutes and seconds, converting to a number.  By inserting an `=`, YAML will not use its implicit typing rules and formulas will not be unharmed.  Using `=` covers most cases, but not all, and those exceptions are described below under *Single-line formulas*.
+- It effectively escapes the formula language's syntax so that YAML does not attempt to parse it.  Normally, YAML would treat `text: 1:00` as minutes and seconds, converting to a number.  By inserting an `=`, YAML will not use its implicit typing rules and formulas will not be unharmed.  Using `=` covers most cases, but not all, and those exceptions are described below under *Single-line formulas*.
 - In the future, we can support both formulas (starts with `=`) and non-formulas (no `=`) in the same file, just as Excel does.  We can do this in YAML and non-YAML files alike across in source files of the Power Platform.  Anywhere a formula is supported, the leading `=` differentiates a Power Apps formula expression from a static scalar value.
 
 ## Single-line formulas
@@ -47,7 +49,7 @@ Single-line formulas are written in the form:
 
 *Name* `:` `SPACE` `=` *Expression*
 
-The space between the colon and the equals sign is required to be YAML compliant.  The equals sign disrupts YAML's normal interpretation of the expression, allowing the rest of the line to be interrupted as the formula language. 
+The space between the colon and the equals sign is required to be YAML-compliant.  The equals sign disrupts YAML's normal interpretation of the expression, allowing the rest of the line to be interrupted as the formula language. 
 
 For example:
 
@@ -59,11 +61,11 @@ Boolean1: =true
 Time1: =1:34
 ```
 
-The pound sign `#` and colon `:` are not allowed anywhere in single-line formulas, even if they are in a quoted text string or identifier name. To use a pound sign or colon, the formula must be expressed as a multi-line formula.  The pound sign is interpreted as a comment in YAML and the colon is interpreted as a new name map in YAML.  To add a comment to a single line comment, use the formula language's line comment starting with `//`.
+The pound sign `#` and colon `:` are not allowed anywhere in single-line formulas, even if they are in a quoted text string or identifier name. To use a pound sign or colon, the formula must be expressed as a multi-line formula.  The pound sign is interpreted as a comment in YAML and the colon is interpreted as a new name map in YAML.  To add a comment to a single-line comment, use the formula language's line comment starting with `//`.
 
 Using normal YAML escaping with single quotes and C-like backslashes is not supported.  If these would be required, us a multi-line formula instead.  We do this for consistency and to facilitate cut/paste between the formula bar in Power Apps Studio and YAML source files.
 
-See the canvas app [operators and identifiers](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/functions/operators) documentation for details on allowed names and the structure of an expression.
+See the canvas apps [operators and identifiers](https://docs.microsoft.com/powerapps/maker/canvas-apps/functions/operators) documentation for details on allowed names and the structure of an expression.
 
 ## Multi-line formulas
 
@@ -77,6 +79,7 @@ Formulas can span multiple lines using YAML's block scalar indicators:
 All lines that are a part of the block must be indented at least one space in from the level of the first line.
 
 For example:
+
 ```
 Text1: |
     ="Hello, World"
@@ -90,7 +93,7 @@ We accept all forms of YAML multi-line scalar notation on import, including for 
 
 ## Component instance
 
-Components are instanced using YAML object notation.  The type of the object is established with the `As` operator as a part of the left hand side YAML tag.  For container controls, objects can be nested.
+Components are instanced using YAML object notation. The type of the object is established with the `As` operator as a part of the left-hand side YAML tag.  For container controls, objects can be nested.
 
 *Name*&emsp;`As`&emsp;*Component-Type*&emsp;[ `.`&emsp;*Component-Template* ]&emsp;`:`
 &emsp;( *Single-Line-Formula* or *Multi-Line-Formula* or *Object-instance* )
@@ -99,6 +102,7 @@ Components are instanced using YAML object notation.  The type of the object is 
 All lines that are a part of the block must be indented at least one space in from the level of the first line.
 
 For example:
+
 ```
 Gallery1 As Gallery.horizontalGallery:
     Fill: = Color.White
@@ -113,26 +117,26 @@ Gallery1 As Gallery.horizontalGallery:
             ) 
 ```
 
-*Component-Type* can be any canvas component or control.  Base types, such as *Number* are not supported.
+*Component-Type* can be any canvas component or control.  Base types, such as *Number* is not supported.
 
 *Component-Template* is an optional specifier for components that have different templates such as the Gallery.  Not all components will have templates.
 
 If *Name* contains special characters and is wrapped with single quotes, then the entire phrase to the left of the colon will need to be escaped.  This can be done in two ways: 
-- Use single quotes to wrap the entire left hand side, requiring the existing single quotes to be doubled:
+
+- Use single quotes to wrap the entire left-hand side, requiring the existing single quotes to be doubled:
     ```
     '''A name with a space'' As Gallery':
     ```
-- Use double quotes to wrap the entire left hand side, but be careful that there are no double quotes in the name:
+- Use double quotes to wrap the entire left-hand side, but be careful that there are no double quotes in the name:
     ```
     "'A name with a space' As Gallery":
     ```
 
 ## Component definition
 
-Similarly, components are defined by creating an instance of one of the supported base types.  The base types cannot be instanced directly.  Within an object definition, properties can be added to what the base type provides.
+Similarly, components are defined by creating an instance of one of the supported base types. The base types cannot be instanced directly.  Within an object definition, properties can be added to what the base type provides.
 
-The supported base types are:
-- CanvasComponent
+The supported base types are: CanvasComponent
 
 ### Simple property definition
 
@@ -148,7 +152,7 @@ For output properties, the expression provides the calculation to be performed. 
 
 At this time, all properties are data flow only and cannot contain side effects.
 
-At this time, additional metadata about the property is not defined here but is instead in the other files of the .msapp file, for example the property's description. 
+At this time, additional metadata about the property is not defined here but is instead in the other files of the `.msapp` file, for example the property's description. 
 
 For example:
 
@@ -174,11 +178,13 @@ YAML's `#` line comments are not preserved anywhere in the source format.  Inste
 
 There are a few places where the formula language and YAML grammars are incompatible or could be confusing for a user.  In these cases, we will throw an error.  
 
-For example in:
+For example, in:
+
 ```
 Text: ="Hello #PowerApps"
 Record: ={ a: 1, b: 2 }
 ```
+
 the `#` is treated as a comment by YAML even though it is embedded in what Excel would consider a double quoted text string.  In the record case, YAML considers `a:` and `b:` to be another name map binding.  To avoid confusion, we will error on these cases during import.  In these cases, a YAML multi-line form can be used instead.
 
-YAML allows the same name map to be reused, the last silently overriding any previous definitions.  As this can be very confusing for a low code maker and can result in the loss of a property formula, we will error if we see the same name twice.
+YAML allows the same name map to be reused, the last silently overriding any previous definitions.  As this can be confusing for a low-code maker and can result in the loss of a property formula, we will error if we see the same name twice.
