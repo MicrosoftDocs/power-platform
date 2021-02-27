@@ -5,7 +5,7 @@ author: gregli-msft
 manager: kvivek
 ms.service: power-fx
 ms.topic: conceptual
-ms.reviewer: tapanm
+ms.reviewer: nabuthuk
 ms.date: 02/26/2021
 ms.author: gregli
 search.audienceType: 

@@ -6,16 +6,17 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: tapanm
-ms.date: 02/26/2021
+ms.reviewer: nabuthuk
+ms.date: 02/25/2021
 ms.author: gregli
 search.audienceType: 
   - maker
 search.app: 
   - PowerApps
 ---
-# Global support
-Power Fx is a global product. You can build and use Power Fx in many different languages and regions.
+# Build global support into canvas apps
+
+Power Apps is a global product. You can build and use canvas apps in many different languages and regions.
 
 Both while building and running logic, the text displayed by Power Fx will be displayed in the appropriate languages.  Typing in and displaying dates and numbers is adapted for your particular language and region.  
 
