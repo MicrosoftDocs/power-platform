@@ -30,14 +30,14 @@ The first line of a grammar production is the name of the non-terminal symbol be
 &emsp;&emsp;&emsp;&emsp;`[@`&emsp;*Identifier*&emsp;`]`
 defines a *GlobalIdentifier* to consist of the token `[@`, followed by an *Identifier*, followed by the token `]`
 
-When there is more than one possible expansion of a non-terminal symbol, the alternatives are listed on separate lines. A subscripted suffix "opt" is used to indicate an optional symbol. For example,the production:
+When there is more than one possible expansion of a non-terminal symbol, the alternatives are listed on separate lines. A subscripted suffix "opt" is used to indicate an optional symbol. For example, the production:
 
 &emsp;&emsp;*FunctionCall* **:**
 &emsp;&emsp;&emsp;&emsp;*FunctionIdentifier*&emsp;`(`&emsp;*FunctionArguments*<sub>opt</sub>&emsp;`)`
 
 is shorthand for:
 
-&emsp;&emsp;*FunctionCall* **:**
+&emsp;&emsp;*FunctionCall***:**
 &emsp;&emsp;&emsp;&emsp;*FunctionIdentifier*&emsp;`(`&emsp;`)`
 &emsp;&emsp;&emsp;&emsp;*FunctionIdentifier*&emsp;`(`&emsp;*FunctionArguments*&emsp;`)`
 
@@ -82,7 +82,7 @@ At the lexical level, a Power Fx expression consists of a stream of *Whitespace*
 
 ### Whitespace
 
-Whitespace is used to separate comments and tokens within a PowerApps document.
+Whitespace is used to separate comments and tokens within a Power Apps document.
 
 &emsp;&emsp;<a name="Whitespace"></a>*Whitespace* **:**<br>
 &emsp;&emsp;&emsp;&emsp;any Unicode Space separator (class Zs)<br>
@@ -283,19 +283,19 @@ A *SingleQuotedIdentifier* can contain any sequence of Unicode characters to be 
 
 ### Disambiguated identifier
 
-&emsp;&emsp;<a name="DisambiguatedIdentifier"></a>*DisambiguatedIdentifier* **:**<br>
+&emsp;&emsp;<a name="DisambiguatedIdentifier"></a>*DisambiguatedIdentifier:*<br>
 &emsp;&emsp;&emsp;&emsp;*[TableColumnIdentifier](#TableColumnIdentifier)*<br>
 &emsp;&emsp;&emsp;&emsp;*[GlobalIdentifier](#GlobalIdentifier)*<br>
 
 &emsp;&emsp;<a name="TableColumnIdentifier"></a>*TableColumnIdentifier* **:**<br>
 &emsp;&emsp;&emsp;&emsp;*[Identifier](#Identifier)*&emsp;`[@`&emsp;*[Identifier](#Identifier)*&emsp;`]`<br>
 
-&emsp;&emsp;<a name="GlobalIdentifier"></a>*GlobalIdentifier* **:**<br>
+&emsp;&emsp;<a name="GlobalIdentifier"></a>*GlobalIdentifier:*<br>
 &emsp;&emsp;&emsp;&emsp;`[@`&emsp;*[Identifier](#Identifier)*&emsp;`]`<br>
 
 ### Context keywords
 
-&emsp;&emsp;<a name="ContextKeyword"></a>*ContextKeyword* **:**<br>
+&emsp;&emsp;<a name="ContextKeyword"></a>*ContextKeyword:*<br>
 &emsp;&emsp;&emsp;&emsp;`Parent`<br>
 &emsp;&emsp;&emsp;&emsp;`Self`<br>
 &emsp;&emsp;&emsp;&emsp;`ThisItem`<br>
@@ -307,15 +307,15 @@ Power Apps identifiers are case-sensitive.  The authoring tool will auto correct
 
 ## Separators
 
-&emsp;&emsp;<a name="DecimalSeparator"></a>*DecimalSeparator* **:**<br>
-&emsp;&emsp;&emsp;&emsp;`.` (dot) for language that use a dot as the separator for decimal numbers, for example `1.23`<br>
+&emsp;&emsp;<a name="DecimalSeparator"></a>*DecimalSeparator:*<br>
+&emsp;&emsp;&emsp;&emsp;`.` (dot) for language that uses a dot as the separator for decimal numbers, for example `1.23`<br>
 &emsp;&emsp;&emsp;&emsp;`,` (comma) for languages that use a comma as the separator for decimal numbers, for example `1,23`<br>
 
-&emsp;&emsp;<a name="ListSeparator"></a>*ListSeparator* **:**<br>
+&emsp;&emsp;<a name="ListSeparator"></a>*ListSeparator:*<br>
 &emsp;&emsp;&emsp;&emsp;`,` (comma) if *[DecimalSeparator](#DecimalSeparator)* is `.` (dot)<br>
 &emsp;&emsp;&emsp;&emsp;`;` (semi-colon) if *[DecimalSeparator](#DecimalSeparator)* is `,` (comma)<br>
 
-&emsp;&emsp;<a name="ChainingSeparator"></a>*ChainingSeparator* **:**<br>
+&emsp;&emsp;<a name="ChainingSeparator"></a>*ChainingSeparator:*<br>
 &emsp;&emsp;&emsp;&emsp;`;` (semi-colon) if *[DecimalSeparator](#DecimalSeparator)* is `.` (dot)<br>
 &emsp;&emsp;&emsp;&emsp;`;;` (double semi-colon) if *[DecimalSeparator](#DecimalSeparator)* is `,` (comma)<br>
 
@@ -323,74 +323,74 @@ Power Apps identifiers are case-sensitive.  The authoring tool will auto correct
 
 Operators are used in formulas to describe operations involving one or more operands. For example, the expression `a + b` uses the `+` operator to add the two operands `a` and `b`.
 
-&emsp;&emsp;<a name="Operator"></a>*Operator* **:**<br>
+&emsp;&emsp;<a name="Operator"></a>*Operator:*<br>
 &emsp;&emsp;&emsp;&emsp;*[BinaryOperator](#BinaryOperator)*<br>
 &emsp;&emsp;&emsp;&emsp;*[BinaryOperatorRequiresWhitespace](#BinaryOperatorRequiresWhitespace)*<br>
 &emsp;&emsp;&emsp;&emsp;*[PrefixOperator](#PrefixOperator)*<br>
 &emsp;&emsp;&emsp;&emsp;*[PrefixOperatorRequiresWhitespace](#PrefixOperatorRequiresWhitespace)*<br>
 &emsp;&emsp;&emsp;&emsp;*[PostfixOperator](#PostfixOperator)*<br>
 
-&emsp;&emsp;<a name="BinaryOperator"></a>*BinaryOperator* **:** **one of**<br>
+&emsp;&emsp;<a name="BinaryOperator"></a>*BinaryOperator:* **one of**<br>
 &emsp;&emsp;&emsp;&emsp;`=`&emsp;`<`&emsp;`<=`&emsp;`>`&emsp;`>=`&emsp;`<>`<br>
 &emsp;&emsp;&emsp;&emsp;`+`&emsp;`-`&emsp;`*`&emsp;`/`&emsp;`^`<br>
 &emsp;&emsp;&emsp;&emsp;`&`<br>
 &emsp;&emsp;&emsp;&emsp;`&&`&emsp;`||`<br>
 &emsp;&emsp;&emsp;&emsp;`in`&emsp;`exactin`<br>
 
-&emsp;&emsp;<a name="BinaryOperatorRequiresWhitespace"></a>*BinaryOperatorRequiresWhitespace* **:**<br>
+&emsp;&emsp;<a name="BinaryOperatorRequiresWhitespace"></a>*BinaryOperatorRequiresWhitespace:*<br>
 &emsp;&emsp;&emsp;&emsp;`And`&emsp;*[Whitespace](#Whitespace)*<br>
 &emsp;&emsp;&emsp;&emsp;`Or`&emsp;*[Whitespace](#Whitespace)*<br>
 
-&emsp;&emsp;<a name="PrefixOperator"></a>*PrefixOperator* **:**<br>
+&emsp;&emsp;<a name="PrefixOperator"></a>*PrefixOperator:*<br>
 &emsp;&emsp;&emsp;&emsp;`!`<br>
 
-&emsp;&emsp;<a name="PrefixOperatorRequiresWhitespace"></a>*PrefixOperatorRequiresWhitespace* **:**<br>
+&emsp;&emsp;<a name="PrefixOperatorRequiresWhitespace"></a>*PrefixOperatorRequiresWhitespace:*<br>
 &emsp;&emsp;&emsp;&emsp;`Not`&emsp;*[Whitespace](#Whitespace)*<br>
 
-&emsp;&emsp;<a name="PostfixOperator"></a>*PostfixOperator* **:**<br>
+&emsp;&emsp;<a name="PostfixOperator"></a>*PostfixOperator:*<br>
 &emsp;&emsp;&emsp;&emsp;`%`<br>
 
 ### Reference operator
 
-&emsp;&emsp;<a name="ReferenceOperator"></a>*ReferenceOperator* **:** **one of**<br>
+&emsp;&emsp;<a name="ReferenceOperator"></a>*ReferenceOperator:* **one of**<br>
 &emsp;&emsp;&emsp;&emsp;`.`&emsp;`!`<br>
 
 ### Object reference
 
-&emsp;&emsp;<a name="Reference"></a>*Reference* **:**<br>
+&emsp;&emsp;<a name="Reference"></a>*Reference:*<br>
 &emsp;&emsp;&emsp;&emsp;*[BaseReference](#BaseReference)*<br>
 &emsp;&emsp;&emsp;&emsp;*[BaseReference](#BaseReference)*&emsp;*[ReferenceOperator](#ReferenceOperator)*&emsp;*[ReferenceList](#ReferenceList)*<br>
 
-&emsp;&emsp;<a name="BaseReference"></a>*BaseReference* **:**<br>
+&emsp;&emsp;<a name="BaseReference"></a>*BaseReference:*<br>
 &emsp;&emsp;&emsp;&emsp;*[Identifier](#Identifier)*<br>
 &emsp;&emsp;&emsp;&emsp;*[DisambiguatedIdentifier](#DisambiguatedIdentifier)*<br>
 &emsp;&emsp;&emsp;&emsp;*[ContextKeyword](#ContextKeyword)*<br>
 
-&emsp;&emsp;<a name="ReferenceList"></a>*ReferenceList* **:**<br>
+&emsp;&emsp;<a name="ReferenceList"></a>*ReferenceList:*<br>
 &emsp;&emsp;&emsp;&emsp;*[Identifier](#Identifier)*<br>
 &emsp;&emsp;&emsp;&emsp;*[Identifier](#Identifier)*&emsp;*[ReferenceOperator](#ReferenceOperator)*&emsp;*[ReferenceList](#ReferenceList)*<br>
 
 ### Inline record
 
-&emsp;&emsp;<a name="InlineRecord"></a>*InlineRecord* **:**<br>
+&emsp;&emsp;<a name="InlineRecord"></a>*InlineRecord:*<br>
 &emsp;&emsp;&emsp;&emsp;`{`&emsp;*[InlineRecordList](#InlineRecordList)*<sub>opt</sub>&emsp;`}`<br>
 
-&emsp;&emsp;<a name="InlineRecordList"></a>*InlineRecordList* **:**<br>
+&emsp;&emsp;<a name="InlineRecordList"></a>*InlineRecordList:*<br>
 &emsp;&emsp;&emsp;&emsp;*[Identifier](#Identifier)*&emsp;`:`&emsp;*[Expression](#Expression)*<br>
 &emsp;&emsp;&emsp;&emsp;*[Identifier](#Identifier)*&emsp;`:`&emsp;*[Expression](#Expression)*&emsp;*[ListSeparator](#ListSeparator)*&emsp;*[InlineRecordList](#InlineRecordList)*<br>
 
 ### Inline table
 
-&emsp;&emsp;<a name="InlineTable"></a>*InlineTable* **:**<br>
+&emsp;&emsp;<a name="InlineTable"></a>*InlineTable:*<br>
 &emsp;&emsp;&emsp;&emsp;`[`&emsp;*[InlineTableList](#InlineTableList)*<sub>opt</sub>&emsp;`]`<br>
 
-&emsp;&emsp;<a name="InlineTableList"></a>*InlineTableList* **:**<br>
+&emsp;&emsp;<a name="InlineTableList"></a>*InlineTableList:*<br>
 &emsp;&emsp;&emsp;&emsp;*[Expression](#Expression)*<br>
 &emsp;&emsp;&emsp;&emsp;*[Expression](#Expression)*&emsp;*[ListSeparator](#ListSeparator)*&emsp;*[InlineTableList](#InlineTableList)*<br>
 
 ## Expression
 
-&emsp;&emsp;<a name="Expression"></a>*Expression* **:**<br>
+&emsp;&emsp;<a name="Expression"></a>*Expression:*<br>
 &emsp;&emsp;&emsp;&emsp;*[Literal](#Literal)*<br>
 &emsp;&emsp;&emsp;&emsp;*[Reference](#Reference)*<br>
 &emsp;&emsp;&emsp;&emsp;*[InlineRecord](#InlineRecord)*<br>
@@ -403,19 +403,19 @@ Operators are used in formulas to describe operations involving one or more oper
 
 ### Chained expressions
 
-&emsp;&emsp;<a name="ChainedExpression"></a>*ChainedExpression* **:**<br>
+&emsp;&emsp;<a name="ChainedExpression"></a>*ChainedExpression:*<br>
 &emsp;&emsp;&emsp;&emsp;*[Expression](#Expression)*<br>
 &emsp;&emsp;&emsp;&emsp;*[Expression](#Expression)*&emsp;*[ChainingSeparator](#ChainingSeparator)*&emsp;*[ChainedExpression](#ChainedExpression)*<sub>opt</sub><br>
 
 ### Function call
 
-&emsp;&emsp;<a name="FunctionCall"></a>*FunctionCall* **:**<br>
+&emsp;&emsp;<a name="FunctionCall"></a>*FunctionCall:*<br>
 &emsp;&emsp;&emsp;&emsp;*[FunctionIdentifier](#FunctionIdentifier)*&emsp;`(`&emsp;*[FunctionArguments](#FunctionArguments)*<sub>opt</sub>&emsp;`)`<br>
 
-&emsp;&emsp;<a name="FunctionIdentifier"></a>*FunctionIdentifier* **:**<br>
+&emsp;&emsp;<a name="FunctionIdentifier"></a>*FunctionIdentifier:*<br>
 &emsp;&emsp;&emsp;&emsp;*[Identifier](#Identifier)*<br>
 &emsp;&emsp;&emsp;&emsp;*[Identifier](#Identifier)*&emsp;`.`&emsp;*[FunctionIdentifier](#FunctionIdentifier)*<br>
 
-&emsp;&emsp;<a name="FunctionArguments"></a>*FunctionArguments* **:**<br>
+&emsp;&emsp;<a name="FunctionArguments"></a>*FunctionArguments:*<br>
 &emsp;&emsp;&emsp;&emsp;*[ChainedExpression](#ChainedExpression)*<br>
 &emsp;&emsp;&emsp;&emsp;*[ChainedExpression](#ChainedExpression)*&emsp;*[ListSeparator](#ListSeparator)*&emsp;*[FunctionArguments](#FunctionArguments)*<br>

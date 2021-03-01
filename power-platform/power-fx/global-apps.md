@@ -25,14 +25,17 @@ For example, some regions of the world use a **.** (dot or period) as the decima
 The apps you create can be globally aware as well.  Use the **Language**, **Text**, and **Value**, **DateValue**, and other functions to adapt what is displayed and used as input in different languages.   
 
 ## Language settings
+
 When using the native studio or a native player, the language used is provided by the host operating system. For Windows, this setting can be controlled under "All Settings" and then "Time & language" settings.  Windows also allows you to specify the characters to use for the decimal separator, overriding the language setting.  
 
 When using the web experiences, the language used is provided by the browser.  Most browser default to the host operating system's setting with some also providing a way to set the language manually.
 
 ## Authoring environment
+
 The authoring environment adapts to the language setting of the author.  The app itself is stored in a language agnostic manner, so that authors using different languages can edit the same app.
 
 ### Names in formulas
+
 Most elements in formula are always in English:
 
 * Function names: **If**, **Navigate**, **Collect**, and so on.

@@ -32,7 +32,7 @@ This article is an overview of the language and its design principles. More deta
 - [Tables](tables.md)
 - [Variables](variables.md)
 - [Imperative logic](imperative.md)
-- [Global supprt](global-support.md)
+- [Global support](global-support.md)
 - [Expression grammar](expression-grammar.md)
 - [YAML formula grammar](yaml-formula-grammar.md)
 
@@ -122,7 +122,7 @@ The choice of decimal separator has a cascading impact on the list separator, us
 | **.** (dot or period) |**.** (dot or period) |**,** (comma) |**;** (semi-colon) |
 | **,** (comma) |**,** (comma) |**;** (semi-colon) |**;;** (double semi-colon) |
 
-See [global supprt](global-support.md) for more details.
+See [global support](global-support.md) for more details.
 
 ### Not object oriented 
 
