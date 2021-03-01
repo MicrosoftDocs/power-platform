@@ -15,17 +15,17 @@ search.app:
 ---
 # Power Fx
 
-Power Fx is the low-code language used across Microsoft Power Platform.  It is a general-purpose, declarative, and functional programming language.
+Power Fx is the low-code language that will be used across Microsoft Power Platform. It is a general-purpose, strong typed, declarative, and functional programming language.
 
 Power Fx binds objects together with declarative spreadsheet-like formulas. For example, think of a UI control's **Visible** property as a spreadsheet cell, with an associated formula that calculates its value based on other control's properties. The formula logic recalculates automatically similar to how a spreadsheet does which affects the control's visibility.  
 
-Also, Power Fx offers imperative logic when needed. Spreadsheets don't typically have buttons, that may submit changes to a database, but apps often do. The same expression language is used for both declarative and imperative logic.
+Also, Power Fx offers imperative logic when needed. Spreadsheets don't typically have buttons, that can submit changes to a database, but apps often do. The same expression language is used for both declarative and imperative logic.
 
 Power Fx is expressed in a human-friendly text. It is considered as a low-code language that makers can work with directly in an Excel-like formula bar or Visual Studio Code text window. The "low" is due to the concise and simple nature of the language, making common programming tasks easy for both makers and developers.
 
-Power Fx will be made available as an open-source. It is currently integrated into canvas apps where you can experience it today.  We are in the process of extracting it from this product for use in other products and as an open-source.  More information: [Power Fx open-source](https://github.com/microsoft/power-fx).  
+Power Fx will be made available as an open-source. It is currently integrated into canvas apps where you can experience it today.  We are in the process of extracting it from Power Apps and use it in other Power Platform products and as an open-source.  More information: [Power Fx open-source](https://github.com/microsoft/power-fx).  
 
-This article is an overview of the language and its design principles. More details can be found in the following articles:
+This article is an overview of the language and its design principles. To learn more about Power Fx, see the following articles:
 
 - [Data types](data-types.md)
 - [Operators and identifiers](operators.md)
@@ -37,41 +37,43 @@ This article is an overview of the language and its design principles. More deta
 - [YAML formula grammar](yaml-formula-grammar.md)
 
 > [!NOTE]
-> This documentation is incomplete, as we are extracting and generalizing the code for Power Fx from canvas apps. If you don't find any information here, see [canvas Power Apps documentation](../../powerapps/maker/canvas-apps/formula-reference.md).
+> This article and other articles related to Power Fx in this section are incomplete, as we are extracting and generalizing the code for Power Fx from canvas apps. If you don't find any information in these articles, see [Power Apps formula reference](../../powerapps/maker/canvas-apps/formula-reference.md).
 
-## Audience 
+## Audience
 
-Power Fx is designed to be an easy-to-use programming language. It serves the needs of a wide spectrum ranging from those who have never explicitly programmed or written any code to seasoned professionals and developers.
+Power Fx is designed to be an easy-to-use programming language. It serves the needs of a wide spectrum of audience ranging from those who have never written any code to seasoned professionals and developers.
 
-Spreadsheets are the most widely used tool for expressing logic by a wide margin. Without even realizing it, people are programming when they write spreadsheet cell formulas. Power Fx is built on the hypothesis that we could leverage spreadsheet patterns and knowledge beyond the spreadsheet, to the creation of apps, workflows, virtual agents, and many other domains.  In doing so, we could enable the general population to express logic in more places for more purposes.  We refer to anyone who has the ability and motivation to express logic as a *maker*.
+Spreadsheets are the most widely used tool for expressing logic by a wide margin. Power Fx is built on the hypothesis that we could leverage the spreadsheet patterns and knowledge beyond spreadsheet, to the creation of apps, workflows, virtual agents, and many other domains. In doing so, we could enable the general audience to express logic in more places for more purposes. 
 
-Professional developers can also use this language as it offers speed of development benefits over more traditional languages.  These folks may have written code in JavaScript, C#, Python, or any other professional programming language.  Where we need to differentiate, we refer to anyone who writes traditional code as a *developer*.
+Professional developers can also use this language as it offers speed of development benefits over more traditional languages. Developers may have written code in JavaScript, C#, Python, or any other professional programming language.  Where we need to differentiate, we refer to anyone who writes traditional code as a *developer*.
 
-In this article, we refer to makers when referring to a feature that could be used by either end of the spectrum.  We refer to the user as a developer if the feature is more advanced and is beyond the scope of an Excel user.
+> [!NOTE]
+> In this article, we refer to makers when referring to a feature that could be used by either end of the spectrum.  We refer to the user as a developer if the feature is more advanced and is beyond the scope of an Excel user.
 
 ## Environment
 
 A defining aspect of spreadsheets is that they are always live and changes are reflected instantaneously.  There is no compile or run mode in a spreadsheet. When a formula is modified or a value is entered, the spreadsheet immediately recalculates to reflect the changes.
 
-The same thing is implemented with Power Fx as well. An incremental compiler is used to continuously keep the program and the data it is operating in sync. Changes automatically propagate through the program's graph, affecting the results of dependent calculations, which may drive properties on controls such as color or position.  The incremental compiler also provides a rich formula editing experience with IntelliSense, suggestions, autocomplete, and type checking.
+The same thing is implemented with Power Fx as well. An incremental compiler is used to continuously keep the program and the data it is operating in sync. Changes automatically propagate through the program's graph, affecting the results of dependent calculations, which may drive properties on controls such as color or position. The incremental compiler also provides a rich formula editing experience with IntelliSense, suggestions, autocomplete, and type checking.
 
-For convenience, this article refers to the *compiler* in the same way, most programming languages do.
+> [!NOTE]
+> For convenience, this article refers to the word *compiler* in the same way, most programming languages do.
  
 ## Formulas vs. Expressions
 
-Nearly all programming languages, including Power Fx, have expressions: a way to represent a calculation over numbers, strings, and other data types. For example `mass * acceleration` in most languages expresses multiplication of `mass` and `acceleration`.  The result of an expression can be placed in a variable, used as an argument to a procedure, or nested in a bigger expression.
+All programming languages, including Power Fx, have expressions: a way to represent a calculation over numbers, strings, and other data types. For example `mass * acceleration` in most languages expresses multiplication of `mass` and `acceleration`.  The result of an expression can be placed in a variable, used as an argument to a procedure, or nested in a bigger expression.
 
 Power Fx takes this a step further. An expression by itself says nothing about what it is calculating. It is up to the maker to place it in a variable or pass it to a function. In Power Fx, instead of only writing an expression that has no specific meaning, one writes a *formula* that binds the expression to an identifier.  One writes `force = mass * acceleration` as a formula, in the mathematical sense, for calculating `force` that is always true.  As `mass` or `acceleration` changes, `force` automatically update to a new value.  An expression described a calculation, a formula gives that calculation a name and uses it as a recipe. This is why we refer to Power Fx as a formula language.
 
-The **Fx** in the Power Fx name is a reference to the script *fx* icon that can be commonly found next to the formula bar in spreadsheets. Technically the *fx* icon refers to functions, but the association with formulas is strong and can be found in many other products beyond spreadsheets.  Either way, both formulas, and functions are at the heart of Power Fx.
+The **Fx** in the Power Fx name is a reference to the script *fx* icon that is commonly found next to the formula bar in spreadsheets. Technically the *fx* icon refers to functions, but the association with formulas is strong and can be found in many other products beyond spreadsheets.  Either way, both formulas, and functions are at the heart of Power Fx.
 
-## Principles 
+## Design principles 
 
 ### Simple
 
-Our target audience includes makers who are not trained as developers.  Wherever possible, we use the knowledge that this audience would already know or can pick up quickly.  The number of concepts required to be successful is kept to a minimum.
+Power Fx is designed to target *maker* audience who is not trained as developers.  Wherever possible, we use the knowledge that this audience would already know or can pick up quickly.  The number of concepts required to be successful is kept to a minimum.
 
-Being simple is also good for developers.  For this audience, we aim to be a low-code language that cuts down the time required to build a solution.
+Being simple is also good for developers. For developer audience, we aim to be a low-code language that cuts down the time required to build a solution.
 
 For example, all operations are presented to the maker as synchronous when under the covers they may be done asynchronously. There is no need to set up a callback to free up the UI thread or otherwise be aware of threading. The compiler may also reorder or parallelize operations that have no dependencies. All of these are important implementation details that the maker need not concern themselves with and likely would get wrong if they did.
 
@@ -150,6 +152,17 @@ Power Fx has facilities for actively moving code forward without breaking it. Ca
 
 As a result, Power Fx may evolve faster and more aggressively than normal.  We can rename functions, for example, we changed **ShowError** to **Notify** when the function expanded beyond just errors.  
 
-### No Undefined value
+### No undefined value
 
 Some language such as JavaScript uses the concept of an "undefined" value for uninitialized variables or missing property. For simplicity's purpose, we have avoided this concept, treating instances that would be undefined elsewhere as either an error or a blank value.  For example, all uninitialized variables start with a blank value.  All data types can take on the value of blank.
+
+## Related articles
+
+[Data types](data-types.md)<br>
+[Operators and identifiers](operators.md)<br>
+[Tables](tables.md)<br>
+[Variables](variables.md)<br>
+[Imperative logic](imperative.md)<br>
+[Global support](global-support.md)<br>
+[Expression grammar](expression-grammar.md)<br>
+[YAML formula grammar](yaml-formula-grammar.md)

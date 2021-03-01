@@ -1,6 +1,6 @@
 name: Power Fx
 items: 
-- name: What is Power FX
+- name: What is Power Fx
   items:
   - name: Overview
     href: overview.md
@@ -20,4 +20,5 @@ items:
     href: tables.md 
   - name: variables
     href: variables.md
-    
+- name: Power Apps docs 
+  href: /powerapps   
