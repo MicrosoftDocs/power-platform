@@ -17,6 +17,9 @@ search.app:
 
 Power Fx is the low-code language that will be used across Microsoft Power Platform. It is a general-purpose, strong typed, declarative, and functional programming language.
 
+> [!NOTE]
+> Power Fx is the new name for Power Apps formula language. More information: [Get started with formulas in Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/working-with-formulas)
+
 Power Fx binds objects together with declarative spreadsheet-like formulas. For example, think of a UI control's **Visible** property as a spreadsheet cell, with an associated formula that calculates its value based on other control's properties. The formula logic recalculates automatically similar to how a spreadsheet does which affects the control's visibility.  
 
 Also, Power Fx offers imperative logic when needed. Spreadsheets don't typically have buttons, that can submit changes to a database, but apps often do. The same expression language is used for both declarative and imperative logic.

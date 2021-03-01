@@ -18,7 +18,7 @@ search.app:
 
 Power Apps is a global product. You can build and use canvas apps in many different languages and regions.
 
-Both while building and running logic, the text displayed by Power Fx will be displayed in the appropriate languages.  Typing in and displaying dates and numbers is adapted for your particular language and region.  
+Both while building and running logic, the text displayed by Power Fx will be displayed in the appropriate languages. Typing in and displaying dates and numbers is adapted for your particular language and region.  
 
 For example, some regions of the world use a **.** (dot or period) as the decimal separator while others use a **,** (comma).  This is what Excel does too.  This is commonly not done in other programming languages, using a canonical **.** as the decimal separator for all users worldwide.  To be as approachable as possible for makers at all levels, it is important that `3,14` is a decimal number for a person in France who has used that syntax all their lives.   
 
