@@ -20,7 +20,7 @@ search.app:
 
 >[!NOTE]
 >**March 2021 Power Automate Desktop preview users**:
->- Power Automate Desktop can be used either with a [Microsoft account](https://support.microsoft.com/office/what-account-to-use-with-office-and-you-need-one-914e6610-2763-47ac-ab36-602a81068235#bkmk_msavsworkschool), or a work or school account.
+>- Power Automate Desktop can be used either with a [Microsoft account](https://docs.microsoft.com/power-automate/desktop-flows/getting-started-msa), or a work or school account.
 >- If you use **Microsoft Teams with a work or school account**, you can [create a Dataverse database](https://docs.microsoft.com/power-automate/desktop-flows/create-database) to use with Power Automate Desktop for the preview.
 >- A Dataverse database isn't required if you sign into Power Automate Desktop with a work or school account.
 
