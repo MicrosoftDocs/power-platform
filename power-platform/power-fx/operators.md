@@ -15,7 +15,8 @@ search.app:
 ---
 # Operators and Identifiers
 
-> Power Fx is the new name for the Power Apps canvas formula language.  These articles are a work in progress as we extract the language from Power Apps canavs, integrate with other products of the Power Platform, and make available as open source.  Start with the [Power Fx Overview](overview.md) for an introduction to the language.  
+> [!NOTE]
+> Power Fx is the new name for canvas apps formula language.  These articles are work in progress as we extract the language from canvas apps, integrate it with other products of the Power Platform, and make available as open source.  Start with the [Power Fx Overview](overview.md) for an introduction to the language.    
 
 Some of these operators are dependent on the language of the author.  See [Global apps](global-apps.md) for more information.
 

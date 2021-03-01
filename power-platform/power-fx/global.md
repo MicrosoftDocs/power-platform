@@ -17,7 +17,7 @@ search.app:
 # Global support
 
 > [!NOTE]
-> Power Fx is the new name for the Power Apps canvas formula language.  These articles are a work in progress as we extract the language from Power Apps canavs, integrate with other products of the Power Platform, and make available as open source.  Start with the [Power Fx Overview](overview.md) for an introduction to the language.   
+> Power Fx is the new name for canvas apps formula language.  These articles are work in progress as we extract the language from canvas apps, integrate it with other products of the Power Platform, and make available as open source.  Start with the [Power Fx Overview](overview.md) for an introduction to the language.    
 
 Power Fx is a global product. You can build and use the programming language in many different languages and regions.
 

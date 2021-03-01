@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: International availability of Microsoft Power Platform
 description: This topic provides information about the international availability of Microsoft Power Platform.
 author: kvivek 
