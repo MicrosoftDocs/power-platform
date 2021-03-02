@@ -29,6 +29,12 @@ The core components solution contains assets that are only relevant to admins.
 
 ## Import the solution
 
+The CoE Starter Kit can be used in both Production environments and Dataverse for Teams environments. Where you install it will depend on your organization setup, your adoption of Microsoft Power Platform so far and what you want to achieve with the CoE Starter Kit. Before you decide, compare [Dataverse vs Dataverse for Teams](https://docs.microsoft.com/powerapps/teams/data-platform-compare)
+
+Learn more: [What is Dataverse for Teams](https://docs.microsoft.com/powerapps/teams/overview-data-platform)
+
+### Option 1: Import the solution into a Production environment
+
 This is the first step of the installation process and is required for every other component in the starter kit to work. You'll need to create an environment in which to set up the CoE. For more information about how to decide on the best strategy for your organization, go to [Establishing an Environment Strategy for Microsoft Power Platform](https://docs.microsoft.com/power-platform/guidance/adoption/environment-strategy) and [Application lifecycle management](https://docs.microsoft.com/power-platform/admin/wp-application-lifecycle-management).
 
 1. Download the CoE Starter Kit compressed file ([aka.ms/CoeStarterKitDownload](https://aka.ms/CoeStarterKitDownload)).
@@ -58,8 +64,8 @@ This is the first step of the installation process and is required for every oth
      ![Select the Datavsere connector](media/msi-connection.png "Select the Dataverse connector")
     1. Select **Create**.
     1. Complete the same steps for the following connectors:
-        - Dataverse
-        - Dataverse (current environment)
+        - Common Data Service
+        - Common Data Service (current environment)
         - Power Apps for Admins
         - Power Apps for Makers
         - Power Platform for Admins
@@ -69,7 +75,6 @@ This is the first step of the installation process and is required for every oth
         - Office 365 Outlook
         - Office 365 Groups
         - SharePoint
-        - Microsoft Teams
 
 1. On the left pane, select **Solutions**.
 
@@ -99,6 +104,67 @@ This is the first step of the installation process and is required for every oth
 
 The import can take up to 10 minutes to be completed.
 
+### Option 2: Import the solution into a Dataverse for Teams environment
+
+This is the first step of the installation process and is required for every other component in the starter kit to work.
+
+Before you begin:
+
+- decide which team to add the Core Components solution to or create a new team.
+- [install the Power Apps app](https://docs.microsoft.com/powerapps/teams/install-personal-app) in Teams.
+- [create your first app](https://docs.microsoft.com/powerapps/teams/create-first-app) (at least one app is required in the environment to enable the solution import experience).
+
+1. Download the CoE Starter Kit compressed file ([aka.ms/CoeStarterKitDownload](https://aka.ms/CoeStarterKitDownload)).
+
+    >[!IMPORTANT]
+    > **Extract the zip file** after downloading and before moving on to the next step. The CoE Starter Kit compressed file contains all solution components as well as non-solution aware components that make up the CoE Starter Kit.
+
+1. Open to the Power Apps app in Teams, select **Build**, and select the Team you want to add the solution to.
+
+1. Select **See All**
+
+    ![Open the Power Apps app in Teams to import a new solution.](media/ibteams-1.png "Open the Power Apps app in Teams to import a new solution.")
+
+1. Select **Import**
+
+1. In the pop-up window, select **Choose File**.
+
+1. Select the Center Of Excellence Core Components for Teams solution: CenterOfExcellenceCoreComponentsTeams_*x_x_x_xx*_managed.zip.
+
+1. When the compressed (.zip) file has been loaded, select **Next**.
+
+1. Establish connections to the
+    - Common Data Service
+    - Common Data Service (current environment)
+    - Power Apps for Admins
+    - Power Apps for Makers
+    - Power Platform for Admins
+    - Power Automate for Admins
+    - Power Automate Management
+    - Office 365 Users
+    - Office 365 Outlook
+    - Office 365 Groups
+    - SharePoint
+
+    If you create a new connection, you must select **Refresh**. You won't lose your import progress.
+
+     ![Establish connections to activate your solution](media/coreteams-1.png "Establish connections to activate your solution.")
+
+1. Update environment variable values. The environment variables are used to store application and flow configuration data with data specific to your organization or environment. This means that you only have to set the value once per environment and it will be used in all necessary flows and apps in that environment. All the flows in the solution depend on all environment variables' being configured.
+
+    Configure the following variables for the core components solution, and then select **Save**. (If you need to change the value of an environment variable after you import the solution, go to [Update environment variables](#update-environment-variables).)
+
+    | Name | Current Value |
+    |------|---------------|
+    |Power Automate environment variable | For a US environment: <https://us.flow.microsoft.com/manage/environments/> <br>For an EMEA environment: <https://emea.flow.microsoft.com/manage/environments/> <br>For a GCC environment: <https://gov.flow.microsoft.us/manage/environments/> |
+    |Admin eMail                         | Email address used in flows to send notifications to admins; this should be either your email address or a distribution list |
+
+     ![Update environment variable values](media/coreteams-2.png "Update environment variable values.")
+
+1. Select **Import**.
+
+The import can take up to 10 minutes to be completed.
+
 ## Activate the sync template flows
 
 The flows with the prefix *Sync* are required for populating and cleaning up data in the Dataverse tables (Environment, Power Apps App, Flow, Flow Action Detail, Connector, and Maker). The sync flows are used to write or delete data from the admin connectors to the Dataverse tables. These flows run on a schedule.
@@ -123,15 +189,8 @@ The following assets depend on the CoE Settings table:
 - **Canvas apps**: The optional branding details (logo, brand colors) in all canvas apps are pulled from this table. Optional support and community channel links are also used.
 - **Optional flows**: The optional branding details and support channel links are used in communication flows. You'll also configure links to canvas apps in the settings. (The main flow that syncs data to the resource tables doesn't depend on this setting configuration.)
 <!--markdownlint-disable MD036-->
-**To configure CoE settings**
 
-1. Go to [make.powerapps.com](https://make.powerapps.com/), select **Apps**, and then open the **Power Platform Admin View** model-driven app in Play mode.
-
-1. On the left pane, select **Configure**.
-
-1. On the **Configure view** screen, select **+ New**.
-
-1. Provide values as listed in the following table.
+The following values are expected for these settings:
 
    | Setting | Value |
    |------|------------|
@@ -147,7 +206,23 @@ The following assets depend on the CoE Settings table:
    |Link to Policy Documentation | Link to internal Microsoft Power Platform policies; for example, a Teams channel or SharePoint site |
    |Version                      | Set to 1.0        |
 
-1. Select **Save**.
+**To configure CoE settings**
+
+1. For Option 1 (Core Components installed in Production environment)
+    1. Go to [make.powerapps.com](https://make.powerapps.com/), select **Apps**, and then open the **Power Platform Admin View** model-driven app in Play mode.
+    1. On the left pane, select **Configure**.
+    1. On the **Configure view** screen, select **+ New**.
+    1. Provide values as listed in the above table.
+    1. Select **Save**.
+
+1. For Option 2 (Core Components installed in Dataverse for Teams environment)
+    1. 1. Open to the Power Apps app in Teams, select **Build**, and select the Team you have added the solution to.
+    1. Select **Installed apps**.
+    1. Select **See all** for Center of Excellence - Core Components.
+    1. Select **Tables > COE Settings**.
+    1. Select **Edit data**.
+    1. Provide values as listed in the above table for each column.
+    1. Select **Close**.
 
 You don't need to add more records to the CoE Settings table. Any dependent components will always get values from the first record.
 
@@ -163,7 +238,10 @@ The CoE Power BI dashboard provides a holistic view with visualizations and insi
 
 The core components solution doesn't contain any apps for makers or users, only admin-specific apps. These components are designed to give admins better visibility and overview of resources and usage in their environments. None of the components are to be shared with makers or users.
 
-The user account who uploaded the solution, and the environment admin of the environment the solution exists in, will have full access to the solution; however, you might want to share these apps with specific other users. More information: [Share a canvas app in Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/share-app)
+More information:
+<br>
+[Share a canvas app in Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/share-app)<br>
+[Publish and add an app to Teams](https://docs.microsoft.com/powerapps/teams/publish-and-share-apps#publish-and-add-an-app-to-teams)
 
 ## Wait for flows to finish
 
@@ -184,7 +262,7 @@ After the sync flows have finished running (depending on the number of environme
 
 Environment variables are used to store application and flow configuration data with data specific to your organization or environment.
 
-1. Go to [make.powerapps.com](<https://make.powerapps.com>).
+1. Go to [flow.microsoft.com](<https://flow.microsoft.com>).
 1. On the left pane, select **Solutions**.
 1. Select the **Default Solution**, and change the filter to show **Environment Variables**.
 1. Select a variable that you want to update, and then configure its **Current Value**.
