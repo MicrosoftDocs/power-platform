@@ -58,16 +58,22 @@ Before you begin, review the [prerequisites](setup.md#prerequisites) for using t
 1. Establish connections if they do not already exist. If you create a new connection, you must select **Refresh**. You won't lose your import progress.
          ![Setup connections](media/MakerJourneyConnections.png "Setup connections.")
 
-1. Enter the email address of the user or the distribution list where you would like the summary mails sent.
-<br>Note that this can be added later instead if you are not yet sure by browsing to the default solution and selecting the environment variable there.
+1. Enter the environment variable values: 
+    1. The URL to the Innvoation Backlog app if you have that installed. See [Innovation Backlog setup](setup-innovationbacklog.md)
+    1. The email address of the user or the distribution list where you would like the summary mails sent.
+<br><br>
+Note that this can be added later instead if you are not yet sure by browsing to the default solution and selecting the environment variable there.
      ![Enter admin name for summary mails.](media/MakerJourneyEnvVars.png "Enter admin name for summary mails.")
 
 1. Select **Import**. (This might take some time.)
+1. When the import succeeds, select Installed Apps to see the solution, and select See All to see the objects within.
+     ![Go to installed apps.](media/MakerJourneyInstalledApps.png "Go to installed apps.")
 
 1. Next you will load data to get the starter set of assessment questions we have provided.
     1. Extract the MakerJourneyData.zip file. You can find this file in the initial download.
     1. Put the three files found in the zip file into a SP library in your tenant. Note their location.
-    1. Open the Maker Journey solution and open for editing the flow **Setup - starter data**
+    1. Open the Maker Journey solution and open for editing the flow **Setup - starter data**.
+    <br>Note if you do not see the flow in the solution, click **Cloud flows** instead.
     1. Update the three calls to Excel to point to the files you put in SP in the steps above.
     1. Select AssessmentCategory.xlsx for Categories
         ![Select AssessmentCategory.xlsx for Categories.](media/MakerJourneyCategoryTable.png "Select AssessmentCategory.xlsx for Categories.")
@@ -108,8 +114,11 @@ Before you begin:
 1. Establish connections if they do not already exist. If you create a new connection, you must select **Refresh**. You won't lose your import progress.
          ![Setup connections](media/MakerJourneyConnections.png "Setup connections.")
 
-1. Enter the email address of the user or the distribution list where you would like the summary mails sent.
-<br>Note that this can be added later instead if you are not yet sure by browsing to the default solution and selecting the environment variable there.
+1. Enter the environment variable values: 
+    1. The URL to the Innvoation Backlog app if you have that installed. See [Innovation Backlog setup](setup-innovationbacklog.md)
+    1. The email address of the user or the distribution list where you would like the summary mails sent.
+<br><br>
+Note that these can be added later instead if you are not yet sure by browsing to the default solution and selecting the environment variable there.
      ![Enter admin name for summary mails.](media/MakerJourneyEnvVars.png "Enter admin name for summary mails.")
 
 1. Select **Import**. (This might take some time.)
