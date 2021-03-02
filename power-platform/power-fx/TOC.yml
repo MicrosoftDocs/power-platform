@@ -9,16 +9,16 @@ items:
   - name: YAML formula grammar
     href: yaml-formula-grammar.md
   - name: Global apps
-    href: global-apps.md
+    href: global.md
   - name: Data types
     href: data-types.md 
   - name: Imperatives
-    href: imperatives.md
+    href: imperative.md
   - name: Operators
     href: operators.md
   - name: Tables
     href: tables.md 
-  - name: variables
+  - name: Variables
     href: variables.md
 - name: Power Apps docs 
   href: /powerapps   
