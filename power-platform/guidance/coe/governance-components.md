@@ -189,17 +189,14 @@ Makers can achieve compliance by providing additional information through the **
    :::column-end:::
 :::row-end:::
 
-## Model-driven app
-
 ### App Archive and Clean Up View
 
-A model-driven app that provides an interface to canvas apps that have been highlighted for archiving and their approval status. This model-driven app works in conjunction with other apps and flows in the CoE Starter Kit to facilitate the process described for the [app auditing process](example-processes.md).
-
-**Customize**: Instead of using this model-driven app, you can modify the Power Platform Admin View app to show the Archive Approval table.
-
-![App Archive and Clean Up View](media/coe61.png "App Archive and Clean Up View")
+An app that provides an interface to canvas apps that have been highlighted for archiving and their approval status. This app works in conjunction with other apps and flows in the CoE Starter Kit to facilitate the process described for the [app auditing process](example-processes.md).
 
 ## Business process flows
+
+> [!NOTE]
+> Business process flows are not available if you have installed the Core Components in Dataverse for Teams.
 
 ### Power Apps App Approval BPF
 

@@ -18,6 +18,9 @@ search.app:
 ---
 # Set up the audit log connector
 
+> [!NOTE]
+> This Audit Log solution is not available for Dataverse for Teams.
+
 The Audit Log Sync flow connects to the Microsoft 365 audit log to gather telemetry data (unique users, launches) for apps. The flow uses a custom connector to connect to the Audit Log. In the following instructions, you'll set up the custom connector and configure the flow.
 
 The Center of Excellence (CoE) Starter Kit will work without this flow, but the usage information (app launches, unique users) in the Power BI dashboard will be blank.

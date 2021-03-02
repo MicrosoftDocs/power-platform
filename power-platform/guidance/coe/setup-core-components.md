@@ -29,7 +29,7 @@ The core components solution contains assets that are only relevant to admins.
 
 ## Import the solution
 
-The CoE Starter Kit can be used in both Production environments and Dataverse for Teams environments. Where you install it will depend on your organization setup, your adoption of Microsoft Power Platform so far and what you want to achieve with the CoE Starter Kit. Before you decide, compare [Dataverse vs Dataverse for Teams](https://docs.microsoft.com/powerapps/teams/data-platform-compare)
+The Core Components can be used in both Production environments and Dataverse for Teams environments. Where you install it will depend on your organization setup, your adoption of Microsoft Power Platform so far and what you want to achieve with the CoE Starter Kit. Before you decide, compare [Dataverse vs Dataverse for Teams](https://docs.microsoft.com/powerapps/teams/data-platform-compare)
 
 Learn more: [What is Dataverse for Teams](https://docs.microsoft.com/powerapps/teams/overview-data-platform)
 
@@ -216,7 +216,7 @@ The following values are expected for these settings:
     1. Select **Save**.
 
 1. For Option 2 (Core Components installed in Dataverse for Teams environment)
-    1. 1. Open to the Power Apps app in Teams, select **Build**, and select the Team you have added the solution to.
+    1. Open to the Power Apps app in Teams, select **Build**, and select the Team you have added the solution to.
     1. Select **Installed apps**.
     1. Select **See all** for Center of Excellence - Core Components.
     1. Select **Tables > COE Settings**.

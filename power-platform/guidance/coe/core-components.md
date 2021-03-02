@@ -73,6 +73,7 @@ The [sync flows](#flows) of the CoE Starter Kit sync your tenant resources to th
   - Shared with tenant (yes/no)
   - App type (canvas, model-driven, SharePoint form app)
   - App orphaned
+  - Excused from archival
 
 - **Flow** represents a cloud flow. The following information is available for each cloud flow:
   - Display name
@@ -84,6 +85,7 @@ The [sync flows](#flows) of the CoE Starter Kit sync your tenant resources to th
   - State (started, suspended, stopped)
   - Flow orphaned
   - Flow trigger
+  - Excused from archival
 
 - **Flow Action Detail** represents the set of actions that occur in a cloud flow. This table has a many-to-one link with the Flow table. The following information is available for each action or trigger:
   - Type (scope, for each, Microsoft 365 users)
@@ -288,23 +290,23 @@ This flow runs weekly, and checks if any apps or flows have unresolved connectio
 
 ## Apps
 
-<!--### DLP Editor
+### DLP Editor v2
 
-DLP Editor is a canvas app that reads and updates data loss prevention (DLP) policies while showing a list of apps that are affected by the policy configurations.
+DLP Editor v2 is a canvas app that reads and updates data loss prevention (DLP) policies while showing a list of apps and flows that are impacted by the policy configurations.
 
 Use this app to:
 
 - Make changes to DLP policies.
 - See what impact each change will have.
-- Mitigate the risk that changes in DLP policies will break a flow or an app by contacting makers.
+- Mitigate the risk by contacting makers.
 
-More information: [Introduction to data groups](https://docs.microsoft.com/power-platform/admin/introduction-to-data-groups)
+More information: [Data Loss Prevention policies](https://docs.microsoft.com/power-platform/admin/wp-data-loss-prevention)
 
 **Permission**: Intended to be used only by admins. Power Platform Service Admin or Global Admin permission is required. Share this app with your CoE admins.
 
-![DLP Editor](media/coe51.png "DLP Editor")
+![DLP Editor](media/dlp_new1.png "DLP Editor")
 
-### DLP Customizer
+<!--### DLP Customizer
 
 DLP Customizer is a canvas app you can use to add custom connectors to the business data group of a DLP policy, or to enable HTTP connectors to a DLP policy. More information: [HTTP and custom connector support for DLP policies](https://docs.microsoft.com/business-applications-release-notes/october18/microsoft-flow/http-and-custom-connector-support-for-dlp-policies)
 
@@ -348,6 +350,9 @@ You can also use this app to find flows that have been orphaned by the owner's h
 
 ### Power Platform Admin View
 
+> [!NOTE]
+> This app is not available if you have installed the Core Components in Dataverse for Teams.
+
 Power Platform Admin View is a model-driven app that provides an interface used to browse items in Dataverse custom tables. It provides access to views and forms for the custom tables in the solution.
 
 Use this app to:
@@ -375,6 +380,5 @@ With Power BI reports, you can get a holistic view of Dataverse data with visual
 Follow the [setup instructions](setup-powerbi.md) to set up the Power BI dashboard. More information: [Gain deep insights into your Microsoft Power Platform adoption with the CoE Power BI dashboard](power-bi.md)
 
 ![CoE Power BI dashboard](media/pb-2.png "CoE Power BI dashboard")
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
