@@ -98,7 +98,7 @@ This is the first step of the installation process and is required for every oth
     |Power Automate environment variable | For a US environment: <https://us.flow.microsoft.com/manage/environments/> <br>For an EMEA environment: <https://emea.flow.microsoft.com/manage/environments/> <br>For a GCC environment: <https://gov.flow.microsoft.us/manage/environments/> |
     |Admin eMail                         | Email address used in flows to send notifications to admins; this should be either your email address or a distribution list |
 
-     ![Update environment variable values](media/msi-envvar.png "Update environment variable values.")
+     ![Update environment variable values](media/msi-envvar.png "Update environment variable values")
 
 1. Select **Import**.
 
