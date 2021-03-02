@@ -254,9 +254,9 @@ More information: [Use of Office365 authentication with the WS-Trust security pr
 Regional Discovery Service is deprecated
 ----------------------------------------------------------------------------------------------
 
-Effective March 2, 2020, the *regional* [Discovery Service](/powerapps/developer/common-data-service/org-service/discovery-service) will be deprecated. Until March 1, 2021, Microsoft will continue to provide support, security, and other critical updates for the *regional* Discovery Service, but won't release any additional functionality beyond what has already been announced. After March 1, 2021, the *regional* Discovery Service won't be available.
+Effective March 2, 2020, the *regional* [Discovery Service](/powerapps/developer/common-data-service/org-service/discovery-service) will be deprecated. Microsoft will continue to provide support, security, and other critical updates for the *regional* Discovery Service, but won't release any additional functionality beyond what has already been announced. After March 1, 2021, the *regional* Discovery Service is planned to be shut down. The final date for the shut down is to be determined.
 
-Customers must transition to using the [global OData V4 Discovery Service](/powerapps/developer/common-data-service/webapi/discover-url-organization-web-api#global-discovery-service) before March 1, 2021. More information: [Modify your code to use global Discovery Service](/powerapps/developer/common-data-service/webapi/discovery-orgsdk-to-webapi).
+Customers must transition to using the [global OData V4 Discovery Service](/powerapps/developer/common-data-service/webapi/discover-url-organization-web-api#global-discovery-service) as soon as possible so their applications are not impacted. More information: [Modify your code to use global Discovery Service](/powerapps/developer/common-data-service/webapi/discovery-orgsdk-to-webapi).
 
 Rules feature in canvas apps is deprecated
 ----------------------------------
