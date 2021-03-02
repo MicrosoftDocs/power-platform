@@ -1,6 +1,6 @@
 ---
-title: Global support in Power Fx | Microsoft Docs
-description: Use Power Fx to express logic worldwide.
+title: Global support in Microsoft Power Fx | Microsoft Docs
+description: Use Microsoft Power Fx to express logic worldwide.
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -17,9 +17,7 @@ search.app:
 # Global support
 
 > [!NOTE]
-> Power Fx is the new name for canvas apps formula language.  These articles are work in progress as we extract the language from canvas apps, integrate it with other products of the Power Platform, and make available as open source.  Start with the [Power Fx Overview](overview.md) for an introduction to the language.    
-
-Power Fx is a global product. You can build and use the programming language in many different languages and regions.
+> Microsoft Power Fx is the new name for canvas apps formula language.  These articles are work in progress as we extract the language from canvas apps, integrate it with other products of the Power Platform, and make available as open source.  Start with the [Microsoft Power Fx Overview](overview.md) for an introduction to the language.    
 
 Both while building and running logic, the text displayed by Power Fx will be displayed in the appropriate languages. Typing in and displaying dates and numbers is adapted for your particular language and region.  
 
