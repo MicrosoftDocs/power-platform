@@ -16,7 +16,7 @@ search.app:
 # Power Fx overview
 
 > [!NOTE]
-> Power Fx is the new name for canvas apps formula language.  This overview article and the associated articles are a work in progress as we extract the language from canvas apps, integrate it with other products of the Power Platform, and make it available as open source.  To learn more about and experience the language today, start with [get started with formulas in Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/working-with-formulas) and sign up for a free [Power Apps trial](https://powerapps.microsoft.com).  
+> Power Fx is the new name for canvas apps formula language. This overview article and the associated articles are a work in progress as we extract the language from canvas apps, integrate it with other products of the Power Platform, and make it available as open source.  To learn more about and experience the language today, start with [Get started with formulas in Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/working-with-formulas) and sign up for a free [Power Apps trial](https://powerapps.microsoft.com).  
 
 Power Fx is the low-code language that will be used across the Microsoft Power Platform. It is a general-purpose, strong typed, declarative, and functional programming language.
 
@@ -263,3 +263,4 @@ Some language such as JavaScript uses the concept of an "undefined" value for un
 [Global support](global.md)<br>
 [Expression grammar](expression-grammar.md)<br>
 [YAML formula grammar](yaml-formula-grammar.md)
+[Get started with formulas in Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/working-with-formulas)
