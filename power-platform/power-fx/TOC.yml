@@ -1,0 +1,24 @@
+name: Microsoft Power Fx
+items: 
+- name: What is Microsoft Power Fx
+  items:
+  - name: Overview
+    href: overview.md
+  - name: Expression grammar
+    href: expression-grammar.md
+  - name: YAML formula grammar
+    href: yaml-formula-grammar.md
+  - name: Global apps
+    href: global.md
+  - name: Data types
+    href: data-types.md 
+  - name: Imperatives
+    href: imperative.md
+  - name: Operators
+    href: operators.md
+  - name: Tables
+    href: tables.md 
+  - name: Variables
+    href: variables.md
+- name: Power Apps docs 
+  href: /powerapps   
