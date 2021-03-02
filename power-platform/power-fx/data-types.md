@@ -35,9 +35,9 @@ This article provides details for the data types that Power Fx supports. When ex
 | **Media** | A URI text string to a video or audio recording. | **MyVideo** added as an app resource<br>**"https://northwindtraders.com/intro.mp4"**<br>**"appres://blobmanager/3ba411c..."** |
 | **Number** | A floating-point number. | **123**<br>**-4.567**<br>**8.903e121** |
 | **Option set** | A choice from a set of options, backed by a number. This data type combines a localizable text label with a numeric value. The label appears in the app, and the numeric value is stored and used for comparisons. | **ThisItem.OrderStatus** |
-| **Record** | A record of data values. This compound data type contains instances of other data types that are listed in this topic. More information: [Working with tables](../working-with-tables.md). | **{ Company: "Northwind Traders",<br>Staff: 35, <br>NonProfit: false }** |
-| **Record reference** | A reference to a record in an entity. Such references are often used with polymorphic lookups. More information: [Working with references](../working-with-references.md).| **First(Accounts).Owner** |
-| **Table** | A table of records.  All of the records must have the same names for their fields with the same data types, and omitted fields are treated as *blank*. This compound data type contains instances of other data types that are listed in this topic. More information: [Working with tables](../working-with-tables.md). | **Table( { FirstName: "Sidney",<br>LastName: "Higa" }, <br>{ FirstName: "Nancy",<br>LastName: "Anderson" } )**
+| **Record** | A record of data values. This compound data type contains instances of other data types that are listed in this topic. More information: [Working with tables](/powerapps/maker/canvas-apps/working-with-tables). | **{ Company: "Northwind Traders",<br>Staff: 35, <br>NonProfit: false }** |
+| **Record reference** | A reference to a record in an entity. Such references are often used with polymorphic lookups. More information: [Working with references](/powerapps/maker/canvas-apps/working-with-references).| **First(Accounts).Owner** |
+| **Table** | A table of records.  All of the records must have the same names for their fields with the same data types, and omitted fields are treated as *blank*. This compound data type contains instances of other data types that are listed in this topic. More information: [Working with tables](/powerapps/maker/canvas-apps/working-with-tables). | **Table( { FirstName: "Sidney",<br>LastName: "Higa" }, <br>{ FirstName: "Nancy",<br>LastName: "Anderson" } )**
 | **Text** | A Unicode text string. | **"Hello, World"** |
 | **Time** | A time without a date, in the time zone of the app's user. | **Time( 11, 23, 45 )** |
 | **Two option** | A choice from a set of two options, backed by a boolean value. This data type combines a localizable text label with a boolean value. The label appears in the app, and the boolean value is stored and used for comparisons. | **ThisItem.Taxable** |
@@ -50,7 +50,7 @@ All data types can have a value of *blank* (in other words, no value). The term 
 
 Use the **Blank** function with the **Set** or **Patch** function to set a variable or field to *blank*. For example, **Set( x, Blank() )** removes any value in the global variable **x**.  
 
-Test for a *blank* value by using the [**IsBlank**](function-isblank-isempty.md) function. Replace possible *blank* values with non-*blank* values by using the [**Coalesce**](function-isblank-isempty.md) function.
+Test for a *blank* value by using the [**IsBlank**](/powerapps/maker/canvas-apps/functions/function-isblank-isempty) function. Replace possible *blank* values with non-*blank* values by using the [**Coalesce**](/powerapps/maker/canvas-apps/functions/function-isblank-isempty) function.
 
 Because all data types support *blank*, the **Boolean** and **Two option** data types effectively have three possible values.
 
@@ -60,7 +60,7 @@ All four of these data types are based on a [Unicode](https://en.wikipedia.org/w
 
 ### Embedded text
 
-Embedded text strings in a formula are enclosed in double quotation marks.  Use two double quotes together to represent a single double quote in the text string.  For example, using the following formula in the **OnSelect** property of a [**Button**](../controls/control-button.md) control:
+Embedded text strings in a formula are enclosed in double quotation marks.  Use two double quotes together to represent a single double quote in the text string.  For example, using the following formula in the **OnSelect** property of a [**Button**](/powerapps/maker/canvas-apps/controls/control-button) control:
 
 ```powerapps-dot
 Notify( "Jane said ""Hello, World!""" )
@@ -78,13 +78,13 @@ Through the **File** menu, you can add image, video, and audio files as app reso
 
 ![Northwind resource](media/data-types/nwind-resource.png "Northwind resource")
 
-To use this resource in an app, specify it in the **Image** property of an [**Image**](../controls/control-image.md) control:
+To use this resource in an app, specify it in the **Image** property of an [**Image**](/powerapps/maker/canvas-apps/controls/control-image) control:
 
 ![Northwind image](media/data-types/nwind-image.png "Northwind image")
 
 ### URIs for images and other media
 
-You can dig a little deeper into that last example by setting the **Text** property of a [**Label**](../controls/control-text-box.md) control to **nwindlogo**. The label shows a text string:
+You can dig a little deeper into that last example by setting the **Text** property of a [**Label**](/powerapps/maker/canvas-apps/controls/control-text-box) control to **nwindlogo**. The label shows a text string:
 
 ![Northwind text](media/data-types/nwind-text.png "Northwind text")
 
@@ -100,7 +100,7 @@ That URI displays a scaled-up version of two purple diamonds:
 
 ![Double diamonds](media/data-types/double-diamonds.png "Double diamonds")
 
-You can show the most recent image captured in a [**Camera**](../controls/control-camera.md) control if you set the **Image** property of an image control to the **Photo** property of the camera control. The app holds the image in memory, and the **Photo** property of the camera control returns a URI reference to the image. For example, you might take a picture, and the camera's **Photo** property could return **"appres://blobmanager/7b12ffa2ea4547e5b3812cb1c7b0a2a0/1"**.
+You can show the most recent image captured in a [**Camera**](/powerapps/maker/canvas-apps/controls/control-camera) control if you set the **Image** property of an image control to the **Photo** property of the camera control. The app holds the image in memory, and the **Photo** property of the camera control returns a URI reference to the image. For example, you might take a picture, and the camera's **Photo** property could return **"appres://blobmanager/7b12ffa2ea4547e5b3812cb1c7b0a2a0/1"**.
 
 You use a URI to reference an image or another media file stored in a database. That way, the app doesn't retrieve the actual data until it's needed. For example, an attachment in a Microsoft Dataverse entity might return **"appres://datasources/Contacts/table/..."** As in the camera example, you can display this image by setting the **Image** property of an image control to this reference, which retrieves the binary data.
 
@@ -144,7 +144,7 @@ This table shows some examples:
 
 When used in Power Apps, for **User local** date/times, Power Fx uses the time zone of the browser or device, but model-driven apps use the user's setting in Dataverse. These settings typically match, but results will differ if these settings differ.
 
-Use the [**DateAdd**](function-dateadd-datediff.md) and [**TimeZoneInformation**](function-dateadd-datediff.md) functions to convert local time to UTC and back again.  See the examples at the end of the documentation for these functions.
+Use the [**DateAdd**](/powerapps/maker/canvas-apps/functions/function-dateadd-datediff) and [**TimeZoneInformation**](/powerapps/maker/canvas-apps/functions/function-dateadd-datediff) functions to convert local time to UTC and back again.  See the examples at the end of the documentation for these functions.
 
 ### Numeric equivalents
 
@@ -152,7 +152,7 @@ Power Fx holds and calculates all date/time values, whether **User local** or **
 
 When Power Fx reads a **Time zone independent** value from a data source or writes such a value to a data source, the app automatically adjusts the value to compensate for the time zone of the app's user. The app then treats the value as a UTC value, consistent with all other date/time values in the app. Because of this compensation, the original **Time zone independent** value appears when the app adjusts the UTC value for the app user's time zone.
 
-You can observe this behavior more closely by using the [**Value**](function-value.md) function to access the underlying numerical value for a date/time value. This function returns the date/time value as the number of milliseconds since January 1, 1970 00:00:00.000 UTC.
+You can observe this behavior more closely by using the [**Value**](/powerapps/maker/canvas-apps/functions/function-value) function to access the underlying numerical value for a date/time value. This function returns the date/time value as the number of milliseconds since January 1, 1970 00:00:00.000 UTC.
 
 Because every date/time value is held in UTC, the formula **Value( Date( 1970, 1, 1 ) )** won't return zero in most parts of the world because the **Date** function returns a date in UTC. For example, the formula would return 28,800,000 in a time zone that's offset from UTC by eight hours. That number reflects the number of milliseconds in eight hours.
 
@@ -167,7 +167,7 @@ Returning to our example from above:
 
 Unix times reflect the number of seconds since January 1, 1970 00:00:00 UTC. Because Power Fx uses milliseconds instead of seconds, you can convert between the two by multiplying or dividing by 1,000.
 
-For example, Unix time shows September 9, 2001, at 01:46:40 UTC as 1,000,000,000. To show that date/time value as text, multiply that number by 1,000 to convert it to milliseconds, and then use it in a [**Text**](function-text.md) function. The formula **Text( 1000000000 * 1000, DateTimeFormat.UTC )** returns the string **2001-09-09T01:46:40.000Z**.
+For example, Unix time shows September 9, 2001, at 01:46:40 UTC as 1,000,000,000. To show that date/time value as text, multiply that number by 1,000 to convert it to milliseconds, and then use it in a [**Text**](/powerapps/maker/canvas-apps/functions/function-text) function. The formula **Text( 1000000000 * 1000, DateTimeFormat.UTC )** returns the string **2001-09-09T01:46:40.000Z**.
 
 However, that function returns **Saturday, September 8, 2001 18:46:40** if you use the **DateTimeFormat.LongDateTime24** format in a time zone that's -7 hours offset from UTC (7 hours west of UTC). This result shows the **DateTime** value correctly based on the local time zone.
 
@@ -179,7 +179,7 @@ If you need the Unix time in a **Date** value for further calculations or displa
 
 ### SQL Server
 
-SQL Server has [**Datetime**, **Datetime2**, and other date/time data types](https://docs.microsoft.com/sql/t-sql/functions/date-and-time-data-types-and-functions-transact-sql?view=sql-server-2017) that don't include a time-zone offset and don't indicate which time zone they're in. Power Fx assumes these values are stored in UTC and treat them as **User local**. If the values are meant to be,  time-zone independent, correct for the UTC translations by using the [**TimeZoneOffset**](function-dateadd-datediff.md#converting-to-utc) function.
+SQL Server has [**Datetime**, **Datetime2**, and other date/time data types](https://docs.microsoft.com/sql/t-sql/functions/date-and-time-data-types-and-functions-transact-sql?view=sql-server-2017) that don't include a time-zone offset and don't indicate which time zone they're in. Power Fx assumes these values are stored in UTC and treat them as **User local**. If the values are meant to be,  time-zone independent, correct for the UTC translations by using the [**TimeZoneOffset**](/powerapps/maker/canvas-apps/functions/function-dateadd-datediff) function.
 
 Power Fx uses the included time-zone information in **Datetimeoffset** fields when converting a value to the app's internal UTC representation. The apps always use UTC as the time zone (zero time zone offset) when they write data.
 
@@ -200,7 +200,7 @@ With(
 
 A **Date** value can include time information with it, which is usually midnight. A **Time** value can carry date information, which is usually January 1, 1970. Dataverse also stores time information with a **Date Only** field but shows only the date information by default. Similarly, Power Fx sometimes distinguish between these data types to determine default formats and controls.
 
-Adding and subtracting date and time values directly isn't recommended because time-zone and other conversions could cause confusing results. Either use the **Value** function to convert date/time values to milliseconds first and take into account the app user's time zone, or use the [**DateAdd**](function-dateadd-datediff.md) and [**DateDiff**](function-dateadd-datediff.md) functions to add or subtract from one of these values.
+Adding and subtracting date and time values directly isn't recommended because time-zone and other conversions could cause confusing results. Either use the **Value** function to convert date/time values to milliseconds first and take into account the app user's time zone, or use the [**DateAdd**](/powerapps/maker/canvas-apps/functions/function-dateadd-datediff) and [**DateDiff**](/powerapps/maker/canvas-apps/functions/function-dateadd-datediff) functions to add or subtract from one of these values.
 
 ## Option sets and Two options
 
