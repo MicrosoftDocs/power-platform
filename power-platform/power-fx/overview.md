@@ -262,5 +262,5 @@ Some language such as JavaScript uses the concept of an "undefined" value for un
 [Imperative logic](imperative.md)<br>
 [Global support](global.md)<br>
 [Expression grammar](expression-grammar.md)<br>
-[YAML formula grammar](yaml-formula-grammar.md)
-[Get started with formulas in Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/working-with-formulas)
+[YAML formula grammar](yaml-formula-grammar.md)<br/>
+[Formulas in Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/working-with-formulas)
