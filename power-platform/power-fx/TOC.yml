@@ -1,6 +1,6 @@
-name: Power Fx
+name: Microsoft Power Fx
 items: 
-- name: What is Power Fx
+- name: What is Microsoft Power Fx
   items:
   - name: Overview
     href: overview.md

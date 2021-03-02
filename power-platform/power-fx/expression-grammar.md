@@ -1,6 +1,6 @@
 ---
-title: Power Fx Expression Grammar | Microsoft Docs
-description: Annotated grammar for the Power Fx language
+title: Microsoft Power Fx Expression Grammar | Microsoft Docs
+description: Annotated grammar for the Microsoft Power Fx language
 author: gregli-msft
 manager: kvivek
 ms.reviewer: nabuthuk
@@ -14,12 +14,12 @@ search.audienceType:
 search.app: 
   - PowerApps
 ---
-# Power Fx Expression Grammar
+# Expression Grammar
 
 > [!NOTE]
-> Power Fx is the new name for canvas apps formula language.  These articles are work in progress as we extract the language from canvas apps, integrate it with other products of the Power Platform, and make available as open source.  Start with the [Power Fx Overview](overview.md) for an introduction to the language.     
+> Microsoft Power Fx is the new name for canvas apps formula language.  These articles are work in progress as we extract the language from canvas apps, integrate it with other products of the Power Platform, and make available as open source.  Start with the [Microsoft Power Fx Overview](overview.md) for an introduction to the language.     
 
-Power Fx is based on formulas that binds a name to an expression.  Just like in spreadsheet, as inbound dependencies to the expression change, the expression is recalculated and the value of the name changes, possibly cascading the recalculation into other formulas.  
+Microsoft Power Fx is based on formulas that binds a name to an expression.  Just like in spreadsheet, as inbound dependencies to the expression change, the expression is recalculated and the value of the name changes, possibly cascading the recalculation into other formulas.  
 
 This grammar covers the expression part of the formula. Binding to a name to create a formula is dependent on how Power Fx is integrated. In spreadsheets, the binding syntax is not exposed and is implied by where the expression is written, for example typing `=B1` in the A1 cell. In some cases, no binding is required at all and Power Fx is used as an expression evaluator, for example in supporting calculated columns of a database table. For Power Apps, the binding is implied when in Power Apps Studio with [a serialization format based on YAML for use outside Power Apps Studio](yaml-formula-grammar.md).
 
