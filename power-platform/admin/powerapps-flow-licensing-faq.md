@@ -298,7 +298,7 @@ A Dataverse for Teams environment is deleted when the associated Team is deleted
 
 When the environment capacity limits are reached (2GB per environment) new solutions (apps, chatbots, flows) can't be created or installed in that specific Dataverse for Teams environment.
 
-When the tenant capacity service limits are reached (grows with the # of eligible Office USLs in the tenant as explained [here](https://go.microsoft.com/fwlink/p/?linkid=2143567):
+When the tenant capacity service limits are reached (grows with the # of eligible Microsoft 365 USLs in the tenant as explained [here](https://go.microsoft.com/fwlink/p/?linkid=2143567):
 
 -	New apps, chatbots, flows, or tables cannot be created or installed in any Dataverse for Teams environment. 
 -	New Dataverse for Teams environments cannot be created in the tenant 
