@@ -15,7 +15,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Required URLs for North America-based organizations
+# Required URLs for North America-based organizations 
 
 If you cannot access Microsoft Dynamics 365 apps, or specific URLs fail to load when you use Microsoft Dynamics 365, a proxy or firewall may be configured to prevent  Dynamics 365 URLs from accessing server resources.
 
