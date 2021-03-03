@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/22/2020
+ms.date: 03/03/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -43,6 +43,29 @@ To select a different region, see [Internet accessible URLs required](online-req
 - https://cloudredirectornamsec.cloudapp.net
 - https://*.azureedge.net
 - https://www.crmdynint.com
+
+
+
+|URL  |Justification  |
+|---------|---------|
+|http://login.microsoftonline-p.com     |Required for Microsoft Cloud Authentication. Includes B2C/Guest scenarios.         |
+|https://login.live.com     |         |
+|https://secure.aadcdn.microsoftonline-p.com     |         |
+|https://auth.gfx.ms     |         |
+|https://*.windows.net     |         |
+|http://*.passport.net     |         |
+|http://*.crm.dynamics.com     | Required for D365CE / CDS Orgs/environments access. Includes integration  and static CDN content endpoints. (Replace URLs for other geos as needed)        |
+|https://*.crm.dynamics.com     |         |
+|https://home.dynamics.com     |         |
+|https://www.crmdynint.com     |         |
+|https://*.azureedge.net     |         |
+|https://*.microsoftonline.com     | Required for authentication and M365 Services such as M365 Admin Center        |
+|https://go.microsoft.com     |Required for product documentation and context sensitive help pages         |
+|https://urs.microsoft.com     | Required for Microsoft defender SmartScreen filtering      |
+|http://crl.microsoft.com/pki/crl/products/microsoftrootcert.crl     | Required for Certification Revocation List checks        |
+|https://dynamics.microsoft.com     |      |
+
+
 
 ### See also
 [Internet accessible URLs required](online-requirements.md#internet-accessible-urls-required)
