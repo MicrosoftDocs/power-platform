@@ -54,7 +54,7 @@ To select a different region, see [Internet accessible URLs required](online-req
 <tbody>
   <tr>
     <td>http://login.microsoftonline-p.com </td>
-    <td rowspan="6">Required for Microsoft Cloud Authentication. Includes B2C/Guest scenarios. </td>
+    <td rowspan="6">Required for Microsoft Cloud Authentication. Includes business to client and guest scenarios. </td>
   </tr>
   <tr>
     <td>https://login.live.com </td>
@@ -73,7 +73,7 @@ To select a different region, see [Internet accessible URLs required](online-req
   </tr>
   <tr>
     <td>http://*.crm9.dynamics.com </td>
-    <td rowspan="5">Required for D365CE / CDS Orgs/environments access. Includes integration  and static CDN content endpoints. (Replace URLs for other geos as needed)</td>
+    <td rowspan="5">Required for Dynamics 365 and Dataverse environments access. Includes integration and static Content Delivery Network (CDN) content endpoints. Replace URLs for other geos as needed.</td>
   </tr>
   <tr>
     <td>https://*.crm9.dynamics.com </td>
@@ -89,7 +89,7 @@ To select a different region, see [Internet accessible URLs required](online-req
   </tr>
   <tr>
     <td>https://*.microsoftonline.com  </td>
-    <td>Required for authentication and M365 Services such as M365 Admin Center </td>
+    <td>Required for authentication and Microsoft 365 services such as the Microsoft 365 admin center.</td>
   </tr>
   <tr>
     <td>https://go.microsoft.com  </td>
