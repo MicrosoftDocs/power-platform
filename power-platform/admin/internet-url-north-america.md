@@ -44,26 +44,72 @@ To select a different region, see [Internet accessible URLs required](online-req
 - https://*.azureedge.net
 - https://www.crmdynint.com
 
+<table>
+<thead>
+  <tr>
+    <th>URL</th>
+    <th>Justification</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>http://login.microsoftonline-p.com </td>
+    <td rowspan="6">Required for Microsoft Cloud Authentication. Includes B2C/Guest scenarios. </td>
+  </tr>
+  <tr>
+    <td>https://login.live.com </td>
+  </tr>
+  <tr>
+    <td>https://secure.aadcdn.microsoftonline-p.com    </td>
+  </tr>
+  <tr>
+    <td>https://auth.gfx.ms  </td>
+  </tr>
+  <tr>
+    <td>https://*.windows.net  </td>
+  </tr>
+  <tr>
+    <td>http://*.passport.net </td>
+  </tr>
+  <tr>
+    <td>http://*.crm.dynamics.com </td>
+    <td rowspan="5">Required for D365CE / CDS Orgs/environments access. Includes integration  and static CDN content endpoints. (Replace URLs for other geos as needed)</td>
+  </tr>
+  <tr>
+    <td>https://*.crm.dynamics.com </td>
+  </tr>
+  <tr>
+    <td>https://home.dynamics.com </td>
+  </tr>
+  <tr>
+    <td>https://www.crmdynint.com  </td>
+  </tr>
+  <tr>
+    <td>https://*.azureedge.net  </td>
+  </tr>
+  <tr>
+    <td>https://*.microsoftonline.com  </td>
+    <td>Required for authentication and M365 Services such as M365 Admin Center </td>
+  </tr>
+  <tr>
+    <td>https://go.microsoft.com  </td>
+    <td>Required for product documentation and context sensitive help pages   </td>
+  </tr>
+  <tr>
+    <td>https://urs.microsoft.com   </td>
+    <td>Required for Microsoft defender SmartScreen filtering   </td>
+  </tr>
+  <tr>
+    <td>http://crl.microsoft.com/pki/crl/products/microsoftrootcert.crl  </td>
+    <td>Required for Certification Revocation List checks    </td>
+  </tr>
+  <tr>
+    <td>https://dynamics.microsoft.com  </td>
+    <td>  </td>
+  </tr>
+</tbody>
+</table>
 
-
-|URL  |Justification  |
-|---------|---------|
-|http://login.microsoftonline-p.com     |Required for Microsoft Cloud Authentication. Includes B2C/Guest scenarios.         |
-|https://login.live.com     |         |
-|https://secure.aadcdn.microsoftonline-p.com     |         |
-|https://auth.gfx.ms     |         |
-|https://*.windows.net     |         |
-|http://*.passport.net     |         |
-|http://*.crm.dynamics.com     | Required for D365CE / CDS Orgs/environments access. Includes integration  and static CDN content endpoints. (Replace URLs for other geos as needed)        |
-|https://*.crm.dynamics.com     |         |
-|https://home.dynamics.com     |         |
-|https://www.crmdynint.com     |         |
-|https://*.azureedge.net     |         |
-|https://*.microsoftonline.com     | Required for authentication and M365 Services such as M365 Admin Center        |
-|https://go.microsoft.com     |Required for product documentation and context sensitive help pages         |
-|https://urs.microsoft.com     | Required for Microsoft defender SmartScreen filtering      |
-|http://crl.microsoft.com/pki/crl/products/microsoftrootcert.crl     | Required for Certification Revocation List checks        |
-|https://dynamics.microsoft.com     |      |
 
 
 
