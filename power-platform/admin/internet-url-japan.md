@@ -110,18 +110,6 @@ To select a different region, see [Internet accessible URLs required](online-req
     <td>https://dynamics.microsoft.com  </td>
     <td>  </td>
   </tr>
-  <tr>
-    <td>https://dynamicscrmjpn.accesscontrol.windows.net  </td>
-    <td>  </td>
-  </tr>
-  <tr>
-    <td>https://cloudredirectorjpn.cloudapp.net </td>
-    <td>  </td>
-  </tr>
-  <tr>
-    <td>https://cloudredirectorjpnsec.cloudapp.net  </td>
-    <td>  </td>
-  </tr>
 </tbody>
 </table>
 
