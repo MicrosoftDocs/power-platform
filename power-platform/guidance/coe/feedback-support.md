@@ -1,6 +1,6 @@
 ---
-title: "Feedback and support | MicrosoftDocs"
-description: "Describes the process on how to provide feedback and raise issues with the CoE Starter Kit."
+title: "Feedback and support for Center of Excellence (CoE) Starter Kit"
+description: "Report issues and feedback for Center of Excellence (CoE) Starter Kit and get help on Microsoft Power Platform."
 author: manuelap-msft
 manager: devkeydet
 ms.service: power-platform
