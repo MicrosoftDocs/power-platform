@@ -35,7 +35,7 @@ Server-side synchronization is the preferred option for organizations with users
 
  When synchronization using server-side synchronization occurs, the process is dynamic and unique for each user’s mailbox. The synchronization algorithm ensures that mailboxes are synced according to dynamic parameters such as the number of email messages and the activity within the mailbox. Normally, email synchronization occurs every 5 minutes. When a mailbox has many email messages, the interval can be reduced dynamically to 2 minutes. If the mailbox is less active, the interval can be increased up to 12 minutes. Generally speaking, you can assume that a mailbox will be synced at least once every 12 minutes. Note that you can’t manually synchronize records through server-side synchronization and when you track email (**Track** button), this occurs immediately.  
 
-Server-side synchronization runs on a schedule for each mailbox and has different synchronization delays based on the workload processed. Available workloads are incoming emails, outgoing emails, and appointments, contacts, and tasks synchronization.
+Server-side synchronization runs on a schedule for each mailbox and has different synchronization delays based on the workload processed. Available workloads are incoming emails, outgoing emails, and appointments, contacts, and tasks (ACT) synchronization.
 
 Once a mailbox has been successfully tested and enabled, server-side synchronization will start processing for the configured workloads continuously. When workload processing starts, server-side synchronization will interact with your mailbox on the external email service provider, as well as with your data on the Dynamics 365 environment. These interactions can take time based on the responsiveness of the email service provider, the number of items being synchronized, connection throttling, the amount of data exchanged, and the number of attachments. Furthermore, these interactions can take additional time based on the active customizations deployed to Dynamics 365.
 
@@ -51,29 +51,17 @@ Once an incoming sync cycle completes, a mailbox will postpone processing of inc
 Server-side synchronization scans your Dynamics 365 environment for outgoing email messages in a pending send status which have been sent using the Send SDK request. It updates the status on outgoing email messages as “Pending Send" for the active mailbox at a frequency of 5 minutes and submits these email messages to the configured email service provider.  
 
 > [!IMPORTANT]
-> Generating a massive amount of outgoing email messages in Dynamics 365 which goes beyond your email service capacity can cause a backlog and new email messages from the same mailbox can also be delayed. 
+> Generating a massive amount of outgoing email messages in Dynamics 365 which goes beyond your email service capacity can cause a backlog and a delay of new email messages from the same mailbox. 
 >
 > Before creating bulk outgoing email messages, review your email service throttling limits.
-> For Gmail: https://support.google.com/a/answer/166852?hl=en
-> For Exchange Online: https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits
+> For Gmail: (Gmail sending limits in Google Workspace)[https://support.google.com/a/answer/166852?hl=en]
+> For Exchange Online: (Sending limits)[https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits]
 
-### Appointment/Contacts/Tasks sync frequency
-Once an ACT (Appointment/Contacts/Tasks) sync cycle completes, a mailbox will be postponed for processing for 5 to 12 mins* for ACT synchronization.
-This means the mailbox will be ready for processing again in 5 to 12 mins* based on how active the mailbox has been in the last sync cycles.
-*If the mailbox is enabled for ACT and Incoming as well, the postpone time will be between 5 and 15 mins  
+### ACT sync frequency
+Once an ACT sync cycle completes, a mailbox will be postponed for processing for 5 to 12 minutes<sup>1</sup> for ACT synchronization. This means the mailbox will be ready for processing again in 5 to 12 minutes<sup>1</sup> based on how active the mailbox has been in the last sync cycles.
 
+<sup>1</sup>If the mailbox is enabled for ACT and incoming as well, the postpone time will be between 5 and 15 minutes.  
 
-
-
-
-
-
-
-
-
-
-
-  
 ## Features available with server-side synchronization 
  Some features offered by server-side synchronization include the following:  
   

@@ -73,7 +73,7 @@ To select a different region, see [Internet accessible URLs required](online-req
   </tr>
   <tr>
     <td>http://*.crm9.dynamics.com </td>
-    <td rowspan="5">Required for Dynamics 365 and Dataverse environments access. Includes integration and static Content Delivery Network (CDN) content endpoints. Replace URLs for other geos as needed.</td>
+    <td rowspan="5">Required for Dynamics 365 and Dataverse environments access. Includes integration and static Content Delivery Network (CDN) content endpoints. </td>
   </tr>
   <tr>
     <td>https://*.crm9.dynamics.com </td>
