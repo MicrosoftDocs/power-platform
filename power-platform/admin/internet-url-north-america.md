@@ -93,15 +93,15 @@ To select a different region, see [Internet accessible URLs required](online-req
   </tr>
   <tr>
     <td>https://go.microsoft.com  </td>
-    <td>Required for product documentation and context sensitive help pages   </td>
+    <td>Required for product documentation and context-sensitive help pages.   </td>
   </tr>
   <tr>
     <td>https://urs.microsoft.com   </td>
-    <td>Required for Microsoft defender SmartScreen filtering   </td>
+    <td>Required for Microsoft defender SmartScreen filtering.   </td>
   </tr>
   <tr>
     <td>http://crl.microsoft.com/pki/crl/products/microsoftrootcert.crl  </td>
-    <td>Required for Certification Revocation List checks    </td>
+    <td>Required for Certification Revocation List checks.    </td>
   </tr>
   <tr>
     <td>https://dynamics.microsoft.com  </td>

@@ -4,7 +4,7 @@ description: Server-side synchronization
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/09/2020
+ms.date: 03/03/2021
 author: revachauhan
 ms.author: rechauha
 ms.reviewer: jimholtz
@@ -17,8 +17,6 @@ search.app:
   - Flow
 ---
 # Server-side synchronization
-
-<a name="BKMK_serversidesync"></a> 
 
 Server-side synchronization is the preferred option for organizations with users who run customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), in a web browser or on a mobile device, such as a tablet or smartphone. Server-side synchronization provides direct apps-to-email server synchronization. When you use [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)], this includes bi-directional synchronization of email, contacts, tasks, and appointments. The data synchronized for each user can be controlled by using synchronization filters that are available from the **Synchronization** tab in the user options dialog.  
   
@@ -34,7 +32,47 @@ Server-side synchronization is the preferred option for organizations with users
 >  A user can only map to a single [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] or POP3 mailbox. Similarly, an [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] or POP3 mailbox can only be mapped to a single user. When customer engagement apps detect that an [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] or POP3 mailbox has already been mapped to a user, a dialog box is displayed to present a choice to the user whether to map the user to the [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] mailbox. When the user selects yes, it breaks the previous user to [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] mailbox mapping and subsequently the synchronization that would occur between the user and the [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] mailbox.  
   
 ## Server-side synchronization frequency 
- When synchronization by using server-side synchronization occurs, the process is dynamic and unique for each user’s mailbox. The synchronization algorithm ensures that mailboxes are synced according to dynamic parameters such as the number of email messages and the activity within the mailbox. Normally, email synchronization occurs every 5 minutes. When a mailbox has many email messages, the interval can be reduced dynamically to 2 minutes. If the mailbox is less active, the interval can be increased up to 12 minutes. Generally speaking, you can assume that a mailbox will be synced at least once every 12 minutes. Note that you can’t manually synchronize records through server-side synchronization and when you track email (**Track** button), this occurs immediately.  
+
+ When synchronization using server-side synchronization occurs, the process is dynamic and unique for each user’s mailbox. The synchronization algorithm ensures that mailboxes are synced according to dynamic parameters such as the number of email messages and the activity within the mailbox. Normally, email synchronization occurs every 5 minutes. When a mailbox has many email messages, the interval can be reduced dynamically to 2 minutes. If the mailbox is less active, the interval can be increased up to 12 minutes. Generally speaking, you can assume that a mailbox will be synced at least once every 12 minutes. Note that you can’t manually synchronize records through server-side synchronization and when you track email (**Track** button), this occurs immediately.  
+
+Server-side synchronization runs on a schedule for each mailbox and has different synchronization delays based on the workload processed. Available workloads are incoming emails, outgoing emails, and appointments, contacts, and tasks synchronization.
+
+Once a mailbox has been successfully tested and enabled, server-side synchronization will start processing for the configured workloads continuously. When workload processing starts, server-side synchronization will interact with your mailbox on the external email service provider, as well as with your data on the Dynamics 365 environment. These interactions can take time based on the responsiveness of the email service provider, the number of items being synchronized, connection throttling, the amount of data exchanged, and the number of attachments. Furthermore, these interactions can take additional time based on the active customizations deployed to Dynamics 365.
+
+Because the next scheduled synchronization time for a given workload is calculated at the end of its processing cycle, this means that a prolonged synchronization cycle for a workload may impact the overall throughput of a mailbox. As such, there is no defined SLA for the duration of a sync cycle as it’s directly influenced by the external factors mentioned above. 
+
+### Incoming sync frequency
+Once an incoming sync cycle completes, a mailbox will postpone processing of incoming emails for 5 minutes. This means the mailbox will be ready for processing again in 5 minutes.  
+
+> [!IMPORTANT]
+> Having long-running synchronous customizations (plugins/workflows) in the email Deliver flow can lead to lower throughput. Moving these customizations to async execution can improve throughput.
+
+### Outgoing sync frequency
+Server-side synchronization scans your Dynamics 365 environment for outgoing email messages in a pending send status which have been sent using the Send SDK request. It updates the status on outgoing email messages as “Pending Send" for the active mailbox at a frequency of 5 minutes and submits these email messages to the configured email service provider.  
+
+> [!IMPORTANT]
+> Generating a massive amount of outgoing email messages in Dynamics 365 which goes beyond your email service capacity can cause a backlog and new email messages from the same mailbox can also be delayed. 
+>
+> Before creating bulk outgoing email messages, review your email service throttling limits.
+> For Gmail: https://support.google.com/a/answer/166852?hl=en
+> For Exchange Online: https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits
+
+### Appointment/Contacts/Tasks sync frequency
+Once an ACT (Appointment/Contacts/Tasks) sync cycle completes, a mailbox will be postponed for processing for 5 to 12 mins* for ACT synchronization.
+This means the mailbox will be ready for processing again in 5 to 12 mins* based on how active the mailbox has been in the last sync cycles.
+*If the mailbox is enabled for ACT and Incoming as well, the postpone time will be between 5 and 15 mins  
+
+
+
+
+
+
+
+
+
+
+
+
   
 ## Features available with server-side synchronization 
  Some features offered by server-side synchronization include the following:  
