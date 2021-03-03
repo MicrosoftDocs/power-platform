@@ -63,7 +63,6 @@ The Azure AD account management services are hosted on physical servers managed 
 
 #### Power Automate features not available 
 
-- [UI flows](https://docs.microsoft.com/power-automate/ui-flows/overview) (Planned for end of calendar year.)
 - [AI Builder](https://docs.microsoft.com/ai-builder/), a separate add-on offering for Microsoft Power Platform.
 - [Power Automate mobile application](https://docs.microsoft.com/flow/mobile-manage-flows)
 - [Submitting templates](https://docs.microsoft.com/flow/publish-a-template)
