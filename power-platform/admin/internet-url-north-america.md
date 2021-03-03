@@ -22,7 +22,7 @@ If you cannot access Microsoft Dynamics 365 apps, or specific URLs fail to load 
 Add the following URLs to the approved list to allow traffic to proceed to these URLs.
 
 To select a different region, see [Internet accessible URLs required](online-requirements.md#internet-accessible-urls-required).
-
+<!-- 
 - http://login.microsoftonline-p.com
 - https://login.live.com
 - https://secure.aadcdn.microsoftonline-p.com
@@ -43,7 +43,7 @@ To select a different region, see [Internet accessible URLs required](online-req
 - https://cloudredirectornamsec.cloudapp.net
 - https://*.azureedge.net
 - https://www.crmdynint.com
-
+-->
 <table>
 <thead>
   <tr>

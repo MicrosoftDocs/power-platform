@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/22/2020
+ms.date: 03/03/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -22,7 +22,7 @@ If you cannot access Microsoft Dynamics 365 apps, or specific URLs fail to load 
 Add the following URLs to the approved list to allow traffic to proceed to these URLs.
 
 To select a different region, see [Internet accessible URLs required](online-requirements.md#internet-accessible-urls-required).
-
+<!-- 
 - https://login.live.com
 - http://crl.microsoft.com/pki/crl/products/microsoftrootcert.crl
 - https://mbs.microsoft.com
@@ -42,6 +42,74 @@ To select a different region, see [Internet accessible URLs required](online-req
 - https://*.azureedge.net
 - https://www.crmdynint.com
 - https://www.www.crmdynint-gcc.com
+-->
+
+<table>
+<thead>
+  <tr>
+    <th>URL</th>
+    <th>Justification</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>http://login.microsoftonline-p.com </td>
+    <td rowspan="6">Required for Microsoft Cloud Authentication. Includes B2C/Guest scenarios. </td>
+  </tr>
+  <tr>
+    <td>https://login.live.com </td>
+  </tr>
+  <tr>
+    <td>https://secure.aadcdn.microsoftonline-p.com    </td>
+  </tr>
+  <tr>
+    <td>https://auth.gfx.ms  </td>
+  </tr>
+  <tr>
+    <td>https://*.windows.net  </td>
+  </tr>
+  <tr>
+    <td>http://*.passport.net </td>
+  </tr>
+  <tr>
+    <td>http://*.crm9.dynamics.com </td>
+    <td rowspan="5">Required for D365CE / CDS Orgs/environments access. Includes integration  and static CDN content endpoints. (Replace URLs for other geos as needed)</td>
+  </tr>
+  <tr>
+    <td>https://*.crm9.dynamics.com </td>
+  </tr>
+  <tr>
+    <td>https://home.dynamics.com </td>
+  </tr>
+  <tr>
+    <td>https://www.crmdynint.com  </td>
+  </tr>
+  <tr>
+    <td>https://*.azureedge.net  </td>
+  </tr>
+  <tr>
+    <td>https://*.microsoftonline.com  </td>
+    <td>Required for authentication and M365 Services such as M365 Admin Center </td>
+  </tr>
+  <tr>
+    <td>https://go.microsoft.com  </td>
+    <td>Required for product documentation and context sensitive help pages   </td>
+  </tr>
+  <tr>
+    <td>https://urs.microsoft.com   </td>
+    <td>Required for Microsoft defender SmartScreen filtering   </td>
+  </tr>
+  <tr>
+    <td>http://crl.microsoft.com/pki/crl/products/microsoftrootcert.crl  </td>
+    <td>Required for Certification Revocation List checks    </td>
+  </tr>
+  <tr>
+    <td>https://dynamics.microsoft.com  </td>
+    <td>  </td>
+  </tr>
+</tbody>
+</table>
+
 
 ### See also
 [Internet accessible URLs required](online-requirements.md#internet-accessible-urls-required)
