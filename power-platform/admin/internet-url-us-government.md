@@ -54,7 +54,7 @@ To select a different region, see [Internet accessible URLs required](online-req
 <tbody>
   <tr>
     <td>http://login.microsoftonline-p.com </td>
-    <td rowspan="6">Required for Microsoft Cloud Authentication. Includes business to client and guest scenarios. </td>
+    <td rowspan="6">Required for Microsoft Cloud Authentication. Includes business-to-consumer (B2C) and guest scenarios. </td>
   </tr>
   <tr>
     <td>https://login.live.com </td>
