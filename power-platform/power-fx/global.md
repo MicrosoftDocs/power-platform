@@ -3,7 +3,7 @@ title: Global support in Microsoft Power Fx | Microsoft Docs
 description: Use Microsoft Power Fx to express logic worldwide.
 author: gregli-msft
 manager: kvivek
-ms.service: powerapps
+ms.service: power-platform
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: nabuthuk

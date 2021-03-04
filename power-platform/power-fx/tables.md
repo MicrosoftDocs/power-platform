@@ -3,7 +3,7 @@ title: Tables in Microsoft Power Fx | Microsoft Docs
 description: Reference information about working with tables, columns, and records in Microsoft Power Fx
 author: gregli-msft
 manager: kvivek
-ms.service: power-fx
+ms.service: power-platform
 ms.topic: conceptual
 ms.reviewer: nabuthuk
 ms.date: 02/26/2021
