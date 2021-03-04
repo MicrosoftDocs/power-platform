@@ -64,7 +64,9 @@ The Azure AD account management services are hosted on physical servers managed 
 #### Power Automate features not available 
 
 - [AI Builder](https://docs.microsoft.com/ai-builder/), a separate add-on offering for Microsoft Power Platform.
-- [Power Automate mobile application](https://docs.microsoft.com/flow/mobile-manage-flows)
+- [Power Automate mobile application](https://docs.microsoft.com/flow/mobile-manage-flows).
+- [Connectors](https://docs.microsoft.com/connectors/connector-reference/connector-reference-powerautomate-connectors): The most popular connectors in use in our commercial service (based on usage telemetry) have been published; if there is a connector available in the commercial offering that you do not see deployed, please contact [support](https://en.21vbluecloud.com/contact), and we will review your request.
+
 
 #### Power Apps features not available
 
