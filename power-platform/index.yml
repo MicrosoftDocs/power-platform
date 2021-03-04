@@ -94,6 +94,9 @@ conceptualContent:
       - url: /power-platform/alm
         itemType: overview
         text: Application lifecycle management (ALM) guide
+      - url: /power-platform/power-fx
+        itemType: overview
+        text: Introducing Microsoft Power Fx 
     - title: Best practices guidance
       links:
       - url: /power-platform/guidance/adoption/methodology
