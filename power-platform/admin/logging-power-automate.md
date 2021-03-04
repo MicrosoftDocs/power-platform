@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/10/2021
+ms.date: 03/03/2021
 ms.author: deonhe
 search.app: 
   - Flow
@@ -33,19 +33,27 @@ You can find logs of Power Automate activities in the [Microsoft 365 compliance
     
     ![Select audit from the menu](./media/audit-logs/show-all.png)
 
-Within the **Audit** screen, Power Platform admins can search the audit logs across many popular services including Power BI, Azure AD, Microsoft Teams, Dynamics 365, Microsoft Power Apps Power Automate, and Microsoft Dataverse.
+Power Platform admins can search the **Audit** screen for details from the following popular services.
 
-Once the Audit log search screen is accessed, an administrator can filter for specific activities by pulling down the **Activities** dropdown. By scrolling down the list, a section dedicated to Microsoft Power Apps activities can be found.
+- Power BI
+- Azure AD
+- Microsoft Teams
+- Dynamics 365
+- Power Apps,
+- Power Automate
+- Dataverse.
+
+Administrators can filter for specific activities by via the **Activities**list. You will find the Power Automate activities within this list.
 
 ## See audited events
 
-Logging takes place at the SDK layer, so a single action can trigger multiple logged events. Here's a sample of the user events that you can audit.
+All logging is done at the SDK layer, so a single action can trigger multiple logged events. Here's a sample of the user events that you can audit.
 
 Event | Description
 -|-
-Created flow | When a flow gets created
+Created flow | The time a flow was created
 Edited flow | Any updates made to the flow
-Deleted flow | When the flow is deleted
+Deleted flow | When the flow was deleted
 Edited permissions | Every time a user's permissions to the flow changes
 Deleted permissions | Every time a user's permissions to the flow is removed
 Started a paid trial | When the user starts a paid trial
@@ -54,7 +62,7 @@ Renewed a paid trial | When the user renews a paid trial
 
 ## Get details on base schema for logging
 
-Schemas define which Power Automate fields that are sent to the Microsoft 365 compliance center. Some fields are common to all applications that send audit data to Microsoft 365, while others are specific to Power Automate. The base schema contains these common fields.
+Schemas define the Power Automate fields that are sent to the Microsoft 365 compliance center. Some fields are common to all applications that send audit data to Microsoft 365, while others are specific to Power Automate. The base schema contains these common fields.
 
 Field display name | Logical name | Type | Mandatory | Description
 -|-|-|-|-
@@ -76,4 +84,4 @@ Additional info | Additional information if any, for example, the environment na
 
 ## Limitations
 
-Only cloud flow activity is recorded, desktop flow activity is recorded using the Microsoft Dataverse audit logs.
+Only activity from cloud flows is recorded in the Microsoft Compliance Center. Activity for desktop flows is recorded in the Microsoft Dataverse audit logs.
