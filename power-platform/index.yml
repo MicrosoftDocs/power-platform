@@ -87,13 +87,13 @@ conceptualContent:
       links:
       - url: /power-platform/admin/admin-documentation
         itemType: overview
-        text: Admin guide
-      - url: /power-platform/admin/pricing-billing-skus
-        itemType: overview
-        text: Licensing
+        text: Admin guide      
       - url: /power-platform/alm
         itemType: overview
         text: Application lifecycle management (ALM) guide
+      - url: /power-platform/power-fx/overview
+        itemType: overview
+        text: Introducing Microsoft Power Fx 
     - title: Best practices guidance
       links:
       - url: /power-platform/guidance/adoption/methodology
