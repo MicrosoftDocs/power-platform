@@ -43,7 +43,7 @@ Power Platform admins can search the **Audit** screen for details from the fol
 - Power Automate
 - Dataverse.
 
-Administrators can filter for specific activities by via the **Activities**list. You will find the Power Automate activities within this list.
+Administrators can filter for specific activities via the **Activities** list. You will find the Power Automate activities within this list.
 
 ## See audited events
 
@@ -51,13 +51,13 @@ All logging is done at the SDK layer, so a single action can trigger multiple lo
 
 Event | Description
 -|-
-Created flow | The time a flow was created
-Edited flow | Any updates made to the flow
-Deleted flow | When the flow was deleted
-Edited permissions | Every time a user's permissions to the flow changes
-Deleted permissions | Every time a user's permissions to the flow is removed
-Started a paid trial | When the user starts a paid trial
-Renewed a paid trial | When the user renews a paid trial
+|Created flow | The time a flow was created|
+|Edited flow | Any updates made to the flow|
+|Deleted flow | When the flow was deleted|
+|Edited permissions | Every time a user's permissions to the flow changes|
+|Deleted permissions | Every time a user's permissions to the flow is removed|
+|Started a paid trial | When the user starts a paid trial|
+|Renewed a paid trial | When the user renews a paid trial|
 
 
 ## Get details on base schema for logging
