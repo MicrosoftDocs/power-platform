@@ -454,38 +454,38 @@
       items:
       - name: Requirements/supported configurations
         href: online-requirements.md
-      - name: Internet accessible URLs required
-        items:
-        - name: Required URLs for Asia/Pacific area-based organizations
-          href: internet-url-asia-pacific.md    
-        - name: Required URLs for Canada-based organizations
-          href: internet-url-canada.md
-        - name: Required URLs for Europe, Africa, and Middle East-based organizations
-          href: internet-url-europe-africa-middle-east.md
-        - name: Required URLs for France-based organizations
-          href: internet-url-france.md
-        - name: Required URLs for Germany-based organizations
-          href: internet-url-germany.md
-        - name: Required URLs for India-based organizations
-          href: internet-url-india.md      
-        - name: Required URLs for Japan-based organizations
-          href: internet-url-japan.md
-        - name: Required URLs for North America-based organizations
-          href: internet-url-north-america.md
-        - name: Required URLs for Oceania-based organizations
-          href: internet-url-oceania.md     
-        - name: Required URLs for South Africa-based organizations
-          href: internet-url-south-africa.md     
-        - name: Required URLs for South America-based organizations
-          href: internet-url-south-america.md          
-        - name: Required URLs for Switzerland-based organizations
-          href: internet-url-switzerland.md
-        - name: Required URLs for UAE-based organizations
-          href: internet-url-uae.md     
-        - name: Required URLs for United Kingdom-based organizations
-          href: internet-url-united-kingdom.md   
-        - name: Required URLs for Dynamics 365 US Government-based organizations
-          href: internet-url-us-government.md
+      # - name: Internet accessible URLs required
+      #   items:
+      #   - name: Required URLs for Asia/Pacific area-based organizations
+      #     href: internet-url-asia-pacific.md    
+      #   - name: Required URLs for Canada-based organizations
+      #     href: internet-url-canada.md
+      #   - name: Required URLs for Europe, Africa, and Middle East-based organizations
+      #     href: internet-url-europe-africa-middle-east.md
+      #   - name: Required URLs for France-based organizations
+      #     href: internet-url-france.md
+      #   - name: Required URLs for Germany-based organizations
+      #     href: internet-url-germany.md
+      #   - name: Required URLs for India-based organizations
+      #     href: internet-url-india.md      
+      #   - name: Required URLs for Japan-based organizations
+      #     href: internet-url-japan.md
+      #   - name: Required URLs for North America-based organizations
+      #     href: internet-url-north-america.md
+      #   - name: Required URLs for Oceania-based organizations
+      #     href: internet-url-oceania.md     
+      #   - name: Required URLs for South Africa-based organizations
+      #     href: internet-url-south-africa.md     
+      #   - name: Required URLs for South America-based organizations
+      #     href: internet-url-south-america.md          
+      #   - name: Required URLs for Switzerland-based organizations
+      #     href: internet-url-switzerland.md
+      #   - name: Required URLs for UAE-based organizations
+      #     href: internet-url-uae.md     
+      #   - name: Required URLs for United Kingdom-based organizations
+      #     href: internet-url-united-kingdom.md   
+      #   - name: Required URLs for Dynamics 365 US Government-based organizations
+      #     href: internet-url-us-government.md
       - name: Plan for deployment and administration
         href: plan-for-deployment-and-administration.md
       - name: Supported web browsers and mobile devices
