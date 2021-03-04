@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/01/2021
+ms.date: 03/04/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -70,16 +70,21 @@ Add the following URLs to the approved list to allow traffic to proceed to these
 
 Select your region:
 > [!div class="op_single_selector"]
-> - [North America-based organizations](internet-url-north-america.md)
-> - [South America-based organization](internet-url-south-america.md)
-> - [Europe, Africa, and Middle East-based organization](internet-url-europe-africa-middle-east.md)
 > - [Asia/Pacific area-based organization](internet-url-asia-pacific.md)
-> - [Japan area-based organizations](internet-url-japan.md)
-> - [India area-based organizations](internet-url-india.md)
 > - [Canada area-based organizations](internet-url-canada.md)
+> - [Europe, Africa, and Middle East-based organization](internet-url-europe-africa-middle-east.md)
+> - [France area-based organizations](internet-url-france.md)
+> - [Germany area-based organizations](internet-url-germany.md)
+> - [India area-based organizations](internet-url-india.md)
+> - [Japan area-based organizations](internet-url-japan.md)
+> - [North America-based organizations](internet-url-north-america.md)
 > - [Oceania area-based organizations](internet-url-oceania.md)
-> - [Dynamics 365 US Government environments](internet-url-us-government.md)
+> - [South African-based organization](internet-url-south-africa.md)
+> - [South America-based organization](internet-url-south-america.md)
+> - [Switzerland area-based organizations](internet-url-switzerland.md)
+> - [UAE area-based organizations](internet-url-uae.md)
 > - [United Kingdom area-based organizations](internet-url-united-kingdom.md)
+> - [Dynamics 365 US Government environments](internet-url-us-government.md)
 
 ## Ports
 Dataverse exposes ports *18085* and *8085* to perform maintenance operations for customer databases.  The maintenance operations are executed to ensure that Microsoft Dynamics 365 environments are performing at optimal performance standards.  These maintenance operations include but are not limited to: 
