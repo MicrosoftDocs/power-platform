@@ -3,7 +3,7 @@ title: Tables in Microsoft Power Fx | Microsoft Docs
 description: Reference information about working with tables, columns, and records in Microsoft Power Fx
 author: gregli-msft
 manager: kvivek
-ms.service: power-fx
+ms.service: power-platform
 ms.topic: conceptual
 ms.reviewer: nabuthuk
 ms.date: 02/26/2021
@@ -26,7 +26,7 @@ In Microsoft Power Fx, you can write a formula that accesses information in Micr
 You can build a variety of formulas that take the name of a table as an argument, just as a formula in Excel takes one or more cell references as arguments. Some formulas in Power Fx return a table that reflects the other arguments that you specify. For example, you might create a formula:
 
 * to update a record in a table by specifying that table as one of multiple arguments for the **[Patch](/powerapps/maker/canvas-apps/functions/function-patch)** function
-* to add, remove, and rename columns in a table by specifying that table as an argument for the **[AddColumns](/powerapps/maker/canvas-apps/functions/function-table-shaping)**, **[DropColumns](f/powerapps/maker/canvas-apps/functions/function-table-shaping)**, or **[RenameColumns](/powerapps/maker/canvas-apps/functions/function-table-shaping)** function. None of those functions modifies the original table. Instead, the function returns another table based on the other arguments that you specify.
+* to add, remove, and rename columns in a table by specifying that table as an argument for the **[AddColumns](/powerapps/maker/canvas-apps/functions/function-table-shaping)**, **[DropColumns](/powerapps/maker/canvas-apps/functions/function-table-shaping)**, or **[RenameColumns](/powerapps/maker/canvas-apps/functions/function-table-shaping)** function. None of those functions modifies the original table. Instead, the function returns another table based on the other arguments that you specify.
 
 ## Elements of a table
 
