@@ -1,6 +1,6 @@
 ---
-title: "Required URLs for Canada-based organizations  | MicrosoftDocs"
-description: Required URLs for Canada-based organizations 
+title: "Required URLs for UAE-based organizations  | MicrosoftDocs"
+description: Required URLs for UAE-based organizations 
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
@@ -15,7 +15,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Required URLs for Canada-based organizations 
+# Required URLs for UAE-based organizations 
 
 If you cannot access Microsoft Dynamics 365 apps, or specific URLs fail to load when you use Microsoft Dynamics 365, a proxy or firewall may be configured to prevent  Dynamics 365 URLs from accessing server resources.
 
@@ -51,11 +51,11 @@ To select a different region, see [Internet accessible URLs required](online-req
     <td>http://*.passport.net </td>
   </tr>
   <tr>
-    <td>http://*.crm3.dynamics.com </td>
+    <td>http://*.crm15.dynamics.com </td>
     <td rowspan="5">Required for Dynamics 365 and Dataverse environments access. Includes integration and static Content Delivery Network (CDN) content endpoints. </td>
   </tr>
   <tr>
-    <td>https://*.crm3.dynamics.com </td>
+    <td>https://*.crm15.dynamics.com </td>
   </tr>
   <tr>
     <td>https://home.dynamics.com </td>
@@ -88,6 +88,7 @@ To select a different region, see [Internet accessible URLs required](online-req
   </tr>
 </tbody>
 </table>
+
 
 ### See also
 [Internet accessible URLs required](online-requirements.md#internet-accessible-urls-required)
