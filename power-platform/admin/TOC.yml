@@ -336,6 +336,8 @@
         href: admin-view-user-licenses.md
       - name: Create users and assign security roles
         href: create-users-assign-online-security-roles.md
+      - name: Delete users
+        href: delete-users.md
       - name: Reset a user's password
         href: reset-users-password.md          
       - name: Assign licenses to users
@@ -390,7 +392,7 @@
         items:
         - name: Analytics for flows
           href: analytics-flow.md
-        - name: Analytics for desktop flows
+        - name: Analytics for UI flows
           href: analytics-ui-flow.md
       # - name: Analyze telemetry with Application Insights
       #   items:
@@ -433,9 +435,7 @@
     - name: Activity logging
       items: 
       - name: Power Apps activity logging
-        href: logging-powerapps.md
-      - name: Power Automate activity logging
-        href: logging-power-automate.md 
+        href: logging-powerapps.md 
       - name: Data loss prevention activity logging
         href: dlp-activity-logging.md
       - name: Audit data and user activity for Dynamics 365 entities
@@ -454,28 +454,6 @@
       items:
       - name: Requirements/supported configurations
         href: online-requirements.md
-      - name: Internet accessible URLs required
-        items:
-        - name: Required URLs for North America-based organizations
-          href: internet-url-north-america.md
-        - name: Required URLs for South America-based organizations
-          href: internet-url-south-america.md          
-        - name: Required URLs for Europe, Africa, and Middle East-based organizations
-          href: internet-url-europe-africa-middle-east.md
-        - name: Required URLs for Asia/Pacific area-based organizations
-          href: internet-url-asia-pacific.md        
-        - name: Required URLs for Japan-based organizations
-          href: internet-url-japan.md
-        - name: Required URLs for India-based organizations
-          href: internet-url-india.md      
-        - name: Required URLs for Canada-based organizations
-          href: internet-url-canada.md
-        - name: Required URLs for Oceania-based organizations
-          href: internet-url-oceania.md         
-        - name: Required URLs for Dynamics 365 US Government-based organizations
-          href: internet-url-us-government.md
-        - name: Required URLs for United Kingdom-based organizations
-          href: internet-url-united-kingdom.md     
       - name: Plan for deployment and administration
         href: plan-for-deployment-and-administration.md
       - name: Supported web browsers and mobile devices
