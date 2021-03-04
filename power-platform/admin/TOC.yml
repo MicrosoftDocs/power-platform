@@ -390,7 +390,7 @@
         items:
         - name: Analytics for flows
           href: analytics-flow.md
-        - name: Analytics for UI flows
+        - name: Analytics for desktop flows
           href: analytics-ui-flow.md
       # - name: Analyze telemetry with Application Insights
       #   items:

@@ -4,7 +4,7 @@ description: "FAQs for licensing Power Apps, Power Automate, Dataverse, Datavers
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/04/2021
+ms.date: 02/24/2021
 author: chrisgarty
 ms.author: cgarty
 ms.reviewer: jimholtz
@@ -298,7 +298,7 @@ A Dataverse for Teams environment is deleted when the associated Team is deleted
 
 When the environment capacity limits are reached (2GB per environment) new solutions (apps, chatbots, flows) can't be created or installed in that specific Dataverse for Teams environment.
 
-When the tenant capacity service limits are reached (grows with the # of eligible Office USLs in the tenant up to a max of 1TB or up to a max of 500 environments as explained [here](https://go.microsoft.com/fwlink/p/?linkid=2143567):
+When the tenant capacity service limits are reached (grows with the # of eligible Microsoft 365 USLs in the tenant as explained [here](https://go.microsoft.com/fwlink/p/?linkid=2143567):
 
 -	New apps, chatbots, flows, or tables cannot be created or installed in any Dataverse for Teams environment. 
 -	New Dataverse for Teams environments cannot be created in the tenant 
@@ -330,9 +330,6 @@ No. Dataverse for Teams provides support for approximately 1 million rows per te
 1.	Purchase Power Apps, Power Automate, and Power Virtual Agents subscriptions based on their needs and start building their new app, flow, or chatbot in a Dataverse environment.
 2.	[Upgrade](about-teams-environment.md#upgrade-process) the existing Dataverse for Teams environment to Dataverse in the Power Platform admin center and, if needed, purchase Power Apps, Power Automate, or Power Virtual Agents subscriptions based on their needs.
 
-> [!NOTE]
-> The capability to upgrade Dataverse for Teams environments to Dataverse environments isn’t available yet. Check back later for availability.
- 
 ### Can customers package and export their solution (app/flow/chatbots) built in Dataverse for Teams, and then import that into a Dataverse environment (assuming they have the corresponding license including access rights to Microsoft Dataverse)?
 
 This capability is not available yet, but is included in our roadmap.

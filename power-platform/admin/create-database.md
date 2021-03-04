@@ -18,6 +18,13 @@ search.app:
 ---
 # Add a Microsoft Dataverse database
 
+>[!IMPORTANT]
+>**March 2021 Power Automate Desktop preview users**:
+>- [Power Automate Desktop](/power-automate/desktop-flows/introduction) can be used either with a [Microsoft account](https://docs.microsoft.com/power-automate/desktop-flows/getting-started-msa), or a work or school account.
+>- If you use **Microsoft Teams with a work or school account**, you can [create a Dataverse database](https://docs.microsoft.com/power-automate/desktop-flows/create-database) to use with Power Automate Desktop for the preview.
+>- A Dataverse database isn't required if you sign into Power Automate Desktop with a Microsoft account.
+
+
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 You can create a database and build apps by using Dataverse as a data store. You can either create your own custom entities or use the predefined entities. To create a database, you first need to either create an environment, or be assigned to an existing environment as an **Environment Admin**. In addition, you must be assigned the appropriate license. For information on purchasing a plan for using Dataverse, see [Pricing info](pricing-billing-skus.md).

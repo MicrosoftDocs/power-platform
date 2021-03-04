@@ -184,9 +184,9 @@ For further information and steps to make a smooth transition, download [Dynamic
 ## Dynamics 365 Home is deprecated 
 ------------------------------------------------------
 
-Effective March 2020, the home page for Dynamics 365 applications (https://home.dynamics.com) is deprecated and won't be available after April 1, 2021. The Microsoft 365 apps page (https://www.office.com/apps) will replace it and provide users with a single page for productivity and business applications.  
+Effective March 2020, the home page for Dynamics 365 applications (https://home.dynamics.com) is deprecated and won't be available on or after April 1, 2021. The Microsoft 365 apps page (https://www.office.com/apps) will replace it and provide users with a single page for productivity and business applications.  
 
-Dynamics 365 Home users will see notification about the new location and recommendation to change browser bookmarks starting October 1, 2020. After April 1, 2021, users navigating to <https://home.dynamics.com> will automatically be redirected to <https://www.office.com/apps> with a business application filter applied.
+Dynamics 365 Home users will see notification about the new location and recommendation to change browser bookmarks starting October 1, 2020. On or after April 1, 2021, users will no longer be able to navigate to <https://home.dynamics.com> from the Office 365 applications list or the Office 365 [application launcher](https://docs.microsoft.com/en-us/power-platform/admin/quickly-navigate-office-365-app-launcher#quickly-move-between-apps-with-the-app-launcher). After May 2021, users who navigate to <https://home.dynamics.com> will automatically be redirected to <https://www.office.com/apps> with a business application filter applied.
 
 More information: <https://aka.ms/business-apps-discovery-docs>
 
@@ -254,9 +254,9 @@ More information: [Use of Office365 authentication with the WS-Trust security pr
 Regional Discovery Service is deprecated
 ----------------------------------------------------------------------------------------------
 
-Effective March 2, 2020, the *regional* [Discovery Service](/powerapps/developer/common-data-service/org-service/discovery-service) will be deprecated. Until March 1, 2021, Microsoft will continue to provide support, security, and other critical updates for the *regional* Discovery Service, but won't release any additional functionality beyond what has already been announced. After March 1, 2021, the *regional* Discovery Service won't be available.
+Effective March 2, 2020, the *regional* [Discovery Service](/powerapps/developer/common-data-service/org-service/discovery-service) will be deprecated. Microsoft will continue to provide support, security, and other critical updates for the *regional* Discovery Service, but won't release any additional functionality beyond what has already been announced. After March 1, 2021, the *regional* Discovery Service is planned to be shut down. The final date for the shut down is to be determined.
 
-Customers must transition to using the [global OData V4 Discovery Service](/powerapps/developer/common-data-service/webapi/discover-url-organization-web-api#global-discovery-service) before March 1, 2021. More information: [Modify your code to use global Discovery Service](/powerapps/developer/common-data-service/webapi/discovery-orgsdk-to-webapi).
+Customers must transition to using the [global OData V4 Discovery Service](/powerapps/developer/common-data-service/webapi/discover-url-organization-web-api#global-discovery-service) as soon as possible so their applications are not impacted. More information: [Modify your code to use global Discovery Service](/powerapps/developer/common-data-service/webapi/discovery-orgsdk-to-webapi).
 
 Rules feature in canvas apps is deprecated
 ----------------------------------
