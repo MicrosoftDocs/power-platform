@@ -8,7 +8,7 @@ ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/12/2021
+ms.date: 03/04/2021
 search.audienceType: 
   - admin
 search.app:
@@ -75,6 +75,8 @@ For users who make apps that connect to the database and need to create or updat
 | System Administrator     |  Create, Read, Write, Delete, Customizations, Security Roles       | Has full permission to customize or administer the environment, including creating, modifying, and assigning security roles. Can view all data in the environment. More information: [Privileges required for customization](https://docs.microsoft.com/dynamics365/customer-engagement/customize/privileges-required-customization)        |
 | System Customizer     | Create (self), Read (self), Write (self), Delete (self), Customizations         | Has full permission to customize the environment. However, users with this role can only view records for environment entities that they create. More information: [Privileges required for customization](https://docs.microsoft.com/dynamics365/customer-engagement/customize/privileges-required-customization)        |
 | Basic User   |  Read (self), Create (self), Write (self), Delete (self)       | Can run an app within the environment and perform common tasks for the records that they own. Note that this only applies to non-custom entities. More information: [Create or configure a custom security role](#create-or-configure-a-custom-security-role) <br /><br />  **Note**: the Common Data Service User security role was renamed to Basic User. There is no action required - this is just a name changed and it doesn't impact the user privileges or role assignment.  If you have a Solution with the Common Data Service User security role, you can inadvertently update the security role name back to Common Data Service User when you import the Solution. Please update the Solution before re-importing.|
+| Service Reader | Read | Has full Read permission to all entities including custom entities. This is primarily used by backend service that requires reading all entities.    |
+| Service Writer | Create, Read, Write | Has full Create, Read, and Write to all entities including custom entities. This is primarily used by backend service that requires creating and updating records.    |
 | Delegate     | Act on behalf of another user        | Allows code to *impersonate*, or run as another user.  Typically used with another security role to allow access to records. More information: [Impersonate another user](https://docs.microsoft.com/powerapps/developer/common-data-service/impersonate-another-user)        |
 | Support User | Read Customizations, Read Business Management settings      | Has full Read permission to customization and business management settings to allow Support staff to troubleshoot environment configuration issues. Does not have access to core records.      |
 
