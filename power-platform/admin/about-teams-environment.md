@@ -302,13 +302,13 @@ Follow these steps to apply a DLP policy:
    > [!div class="mx-imgBorder"] 
    > ![Teams environment policy](media/teams-environment-policy.png "Teams environment policy")
 
-### Note the following
-Each time the function runs, it replaces the existing list of environments in the policy with all Teams environments in the tenant. Because the function immediately updates the policy, it requires both the policy name and the policy display name as parameters to ensure that you're targeting the correct policy. If the display name doesn't match the given policy name, the policy will not be modified. 
-
-> [!div class="mx-imgBorder"] 
-> ![Display name mismatch](media/display-name-mismatch.png "Display name mismatch")
-
-We recommended that this script is run on a schedule to ensure that the DLP policy will always apply to the most recent list of Teams environments. If a Teams environment is created after this script is run, it will not be governed by the policy until the policy's environments are updated, either by rerunning the script or manually adding the new environment to the policy. If a non-Teams environment is added to the policy, it will be removed next time the script is run. 
+> [!NOTE]
+> Each time the function runs, it replaces the existing list of environments in the policy with all Teams environments in the tenant. Because the function immediately updates the policy, it requires both the policy name and the policy display name as parameters to ensure that you're targeting the correct policy. If the display name doesn't match the given policy name, the policy will not be modified. 
+>
+> > [!div class="mx-imgBorder"] 
+> > ![Display name mismatch](media/display-name-mismatch.png "Display name mismatch")
+>
+> We recommend that this script is run on a schedule to ensure that the DLP policy will always apply to the most recent list of Teams environments. If a Teams environment is created after this script is run, it will not be governed by the policy until the policy's environments are updated, either by rerunning the script or manually adding the new environment to the policy. If a non-Teams environment is added to the policy, it will be removed next time the script is run. 
 
 ## Known issues
 
