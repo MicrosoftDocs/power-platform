@@ -82,7 +82,7 @@ You can edit both of these topic types in the same manner as for topics you crea
 
 1. In the topic details for the topic you want to edit, select **Go to authoring canvas**.
 
-   ![The Go to authoring canvas is to the side of the trigger phrases](media/topics-details-canvas.png "The Go to authoring canvas is to the side of the trigger phrases")
+   ![The Go to authoring canvas is to the side of the trigger phrases.](media/topics-details-canvas.png "The Go to authoring canvas is to the side of the trigger phrases")
 
 1. Power Virtual Agents opens the topic in the authoring canvas and displays the topic's trigger phrases. The authoring canvas is where you define the conversation path between a customer and the bot.
 
@@ -93,7 +93,11 @@ You can edit both of these topic types in the same manner as for topics you crea
 
 1. You can add additional nodes by selecting the **Plus** (**+**) icon on the line or branch between or after a node.
 
-   ![Screenshot of adding a node](media/handoff-add-node.png "Screenshot of adding a node")
+   ![Screenshot of adding a node.](media/handoff-add-node.png "Screenshot of adding a node")
+   
+1. You can also move or change the paths between a node by clicking and dragging the node anchor, which looks like a small circle on top of the node. When dragging, you'll see a dotted line indicating the original path. You can also double-click the anchor and then select the new place for the anchor (you won't see a dotted line).
+
+    :::image type="content" source="media/move-anchor-node.png" alt-text="Screenshot of moving a node's anchor.":::
 
 ### Insert nodes
 
