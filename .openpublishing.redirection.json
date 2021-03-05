@@ -1,6 +1,56 @@
 {
   "redirections": [
     {
+      "source_path": "power-platform/admin/internet-url-united-kingdom.md",
+      "redirect_url": "online-requirements#internet-accessible-urls-required",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/internet-url-us-government.md",
+      "redirect_url": "online-requirements#internet-accessible-urls-required",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/internet-url-oceania.md",
+      "redirect_url": "online-requirements#internet-accessible-urls-required",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/internet-url-canada.md",
+      "redirect_url": "online-requirements#internet-accessible-urls-required",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/internet-url-india.md",
+      "redirect_url": "online-requirements#internet-accessible-urls-required",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/internet-url-japan.md",
+      "redirect_url": "online-requirements#internet-accessible-urls-required",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/internet-url-asia-pacific.md",
+      "redirect_url": "online-requirements#internet-accessible-urls-required",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/internet-url-europe-africa-middle-east.md",
+      "redirect_url": "online-requirements#internet-accessible-urls-required",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/internet-url-south-america.md",
+      "redirect_url": "online-requirements#internet-accessible-urls-required",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/internet-url-north-america.md",
+      "redirect_url": "online-requirements#internet-accessible-urls-required",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "power-platform/admin/diagnose-user-access.md",
       "redirect_url": "troubleshooting-user-needs-read-write-access-organization",
       "redirect_document_id": "false"

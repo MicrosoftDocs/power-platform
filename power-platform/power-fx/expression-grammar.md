@@ -4,9 +4,8 @@ description: Annotated grammar for the Microsoft Power Fx language
 author: gregli-msft
 manager: kvivek
 ms.reviewer: nabuthuk
-ms.service: powerapps
+ms.service: power-platform
 ms.topic: reference
-ms.custom: canvas
 ms.date: 02/24/2021
 ms.author: gregli
 search.audienceType: 

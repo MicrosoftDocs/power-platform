@@ -87,7 +87,7 @@ conceptualContent:
       links:
       - url: /power-platform/admin/admin-documentation
         itemType: overview
-        text: Admin guide
+        text: Admin guide      
       - url: /power-platform/admin/pricing-billing-skus
         itemType: overview
         text: Licensing
@@ -105,7 +105,15 @@ conceptualContent:
       - url: https://www.youtube.com/playlist?list=PLi9EhCY4z99W2QOTgbwhFZEjpqc8YZDVH
         itemType: video
         text: "Videos: Power Apps and Power Automate Architecture Series"
-
+    - title: Introducing Microsoft Power Fx
+      links:      
+      - url: /power-platform/power-fx/overview
+        itemType: overview
+        text: What is Microsoft Power Fx?
+      - url: https://github.com/microsoft/power-fx
+        itemType: reference
+        text: Microsoft Power Fx Open Source project
+        
 additionalContent:
 # Supports up to 3 sections
   sections:

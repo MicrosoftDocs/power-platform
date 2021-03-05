@@ -3,7 +3,7 @@ title: Data types | Microsoft Docs
 description: Data types in Microsoft Power Fx
 author: gregli-msft
 manager: kvivek
-ms.service: power-fx
+ms.service: power-platform
 ms.topic: reference
 ms.reviewer: nabuthuk
 ms.date: 02/26/2021
