@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/02/2021
+ms.date: 03/05/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -278,6 +278,42 @@ The **Built by your colleagues** catalog intentionally filters out **Shared with
 > Disabling the Power Apps and Power Virtual Agent app in Teams prevents users from creating new apps and bots but does not prevent the creation of Dataverse for Teams environments. There are other apps (Inspection, Employee Ideas, and Issue reporting) that will create a Dataverse for Teams environment if you add one of those apps to a team. To prevent Dataverse for Teams environments from being created with these apps, these apps need to be blocked.
 >
 > Microsoft Power Platform data governance policies like data loss prevention and tenant isolation apply to Microsoft Teams and Dataverse for Teams environments, similar to other environment types.
+
+## Applying a data loss prevention policy to all Dataverse for Teams environments 
+
+Microsoft now offers a solution that applies a data loss prevention policy (DLP) to all Teams environments within a tenant, allowing you to better control your organization's data without hindering your ability to create low-code and no-code solutions within Teams. 
+
+Follow these steps to apply a DLP policy:
+
+1. Choose or create the policy that you want applied to your Teams environments. This policy must be marked to apply to specific environments, which can be done as follows: 
+   - In [PowerShell](powerapps-powershell.md#create-a-dlp-policy), make sure its environmentType is "OnlyEnvironments," or 
+   - In the [web app](create-dlp-policy.md), make sure the scope is set to multiple environments. 
+
+   You will need to add at least one environment to save your policy. Any environments you add now will be overridden by the PowerShell function below, which will automatically add the Teams environments to the policy. 
+
+2. Import the necessary modules using this command: 
+
+   ```powershell
+   Install-Module -Name Microsoft.PowerApps.Administration.PowerShell -Force 
+   ```
+
+3. Run the [ReplacePolicyEnvironmentsForOnlyEnvironmentType](https://github.com/microsoft/PowerApps-Samples/blob/83c77d157f4d3b3a5a54413d975159e5552bfb4f/powershell/admin-center/Microsoft.PowerApps.Administration.PowerShell.Samples.psm1#L1270-L1310) function (available in the [DLP SDK](data-loss-prevention-sdk.md)). This will identify the Teams environments in the tenant and add them to the given policy. 
+
+   > [!div class="mx-imgBorder"] 
+   > ![Teams environment policy](media/teams-environment-policy.png "Teams environment policy")
+
+> [!NOTE]
+> Each time it runs, this function replaces the existing list of environments in the policy with all Teams environments in the tenant. Because the function immediately updates the policy, it requires both the policy name and the policy display name as parameters to ensure that you're targeting the correct policy. If the display name doesn't match the given policy name, the policy will not be modified. 
+> 
+>  > [!div class="mx-imgBorder"] 
+>  > ![Display name mismatch](media/display-name-mismatch.png "Display name mismatch")
+>
+> We recommended that this script is run on a schedule to ensure the DLP policy will always apply to the most recent list of Teams environments. If a Teams environment is created after this script is run, it will not be governed by the policy until the policy's environments are updated, either by rerunning the script or manually adding the new environment to the policy. If a non-Teams environment is added to the policy, it will be removed next time the script is run. 
+
+
+
+
+
 
 ## Known issues
 
