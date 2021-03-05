@@ -7,7 +7,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/08/2021
+ms.date: 03/04/2021
 search.audienceType: 
   - admin
 search.app:
@@ -31,13 +31,17 @@ You can use your on-premises/local servers to integrate with the following Datav
 
 To comply with our security policy for a secure connection, your server must have the following: 
 
-1. Transport Layer Security (TLS) 1.2 (or higher) compliance
+1. Transport Layer Security (TLS) 1.2 compliance
 2. At least one of the following ciphers: 
 
+   TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 <br />
+   TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 <br />
    TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 <br />
    TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 <br />
+   TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256 <br />
+   TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384 <br />
    TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 <br />
-   TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384 
+   TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
 
 > [!IMPORTANT]
 > Older TLS 1.0 & 1.1 and cipher suites, (for example TLS_RSA) have been deprecated; see the [announcement](https://docs.microsoft.com/power-platform/important-changes-coming#tls-rsa-cipher-suites-are-deprecated).
