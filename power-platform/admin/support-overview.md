@@ -106,7 +106,7 @@ We have designed our support plans to meet different business needs:
 
 - Technical support Break-fix issues are technical problems you experience while using services. "Break-fix" is an industry term that refers to "work involved in supporting a technology when it fails in the normal course of its function, which requires intervention by a support organization to be restored to working order."
 - How functionality works is not considered a break-fix issue but is more closely related to training. These "how-to" questions - or Advisory services - involve a transfer of knowledge and can often be answered by reviewing product documentation, raising a question in online community forums, or contacting a knowledgeable individual such as a partner. While there might be some elements of knowledge transfer involved in solving a break-fix issue, in general, assisted training is not included in support plans.
-- 
+
 ### How does Professional Direct Limited Advisory support compare to Premier/Unified Advisory support? 
 
 Professional Direct (ProDirect) Limited Advisory support provides you access to Support guidance based on (1) publicly available, best practices documentation regarding customer engagement apps and (2) information from the Dynamics 365 Forums. ProDirect advisors offer you support based on their access to Microsoft documentation, to the support engineers, and also to the product group. Best practices guidance might include:
