@@ -2,7 +2,7 @@
 title: "Support for Microsoft Power Platform and customer engagement apps in Dynamics 365 | MicrosoftDocs"
 description: Information on support for Microsoft Power Platform and customer engagement apps in Dynamics 365
 ms.custom: ""
-ms.date: 01/26/2021
+ms.date: 03/05/2021
 ms.reviewer: ""
 ms.service: power-platform
 ms.suite: ""
@@ -11,8 +11,6 @@ ms.topic: "article"
 applies_to: 
   - "Dynamics 365 (online)"
 author: "jimholtz"
-ms.assetid: 
-caps.latest.revision: 63
 ms.author: "jimholtz"
 search.audienceType: 
   - admin
@@ -60,23 +58,27 @@ Microsoft provides support in English globally and provides additional languages
 
 ### Do I need a support plan if I need assistance with a technical issue?
 
-Yes, you need a support plan to receive one-on-one technical support. Some subscriptions include support plans. You can find more information about the existing support plans at [Support Plans](https://dynamics.microsoft.com/support/plans/). The following table outlines the best way to submit a new support request based on your product or service and customer support plan. Microsoft partners should use the [Partner Center portal](https://partner.microsoft.com/support) or the support option listed in the table, as applicable.
+Yes, you need a support plan to receive one-on-one technical support. Some subscriptions include support plans. You can find more information about the existing support plans at [Support Plans](https://dynamics.microsoft.com/support/plans/).
+
+### Where should I go to file a support request?
+
+The following table outlines the best way to submit a new support request based on your product or service and customer support plan. Microsoft partners should use the [Partner Center portal](https://partner.microsoft.com/support) or the support option listed in the table, as applicable.
 
 <table style="width:100%">
   <tr>
+    <th>Product</th>
     <th>Subscription (included)</th>
     <th>Professional Direct</th>
     <th>Premier Support</th>
     <th>Unified Support</th>
-    <th></th>
   </tr>
   <tr> 
-    <td width="30%">Customer engagement apps (such as Dynamics 365 Sales and Customer Service) and AI apps including mixed reality apps and Insights apps</td>
+    <td width="30%">Power Apps, Power Automate, Power Virtual Agents</td>
     <td width="70%" colspan="4"><a href="https://admin.powerplatform.microsoft.com">Power Platform admin center</a></td>
   </tr>
-  <tr>
-    <td width="30%">Finance and Operations (online and on-premises)</td>
-    <td width="70%" colspan="4"><a href="https://lcs.dynamics.com">Lifecycle Services</a></td>
+  <tr> 
+    <td width="30%">Dynamics 365 and Power Platform</td>
+    <td width="70%" colspan="4"><a href="https://admin.powerplatform.microsoft.com">Power Platform admin center</a></td>
   </tr>
   <tr>
     <td width="30%">Dynamics 365 Business Central</td>
@@ -90,7 +92,7 @@ Yes, you need a support plan to receive one-on-one technical support. Some subsc
     <td>Unified Support</td>
   </tr>
   <tr>
-    <td>Dynamics</td>
+    <td>Customer Engagement (on-premises) </td>
     <td colspan="2"><a href="https://support.microsoft.com/supportforbusiness/productselection">Support for Business</a></td>
     <td colspan="2"><a href="https://serviceshub.microsoft.com/">Services Hub</a></td>
   </tr>
@@ -107,7 +109,7 @@ We have designed our support plans to meet different business needs:
 ###  What's the difference between technical support and advisory services?
 
 - Technical support Break-fix issues are technical problems you experience while using services. "Break-fix" is an industry term that refers to "work involved in supporting a technology when it fails in the normal course of its function, which requires intervention by a support organization to be restored to working order."
-- How functionality works is not considered a break-fix issue but is more closely related to training. These "how-to" questions involve a transfer of knowledge and can often be answered by reviewing product documentation, raising a question in online community forums, or contacting a knowledgeable individual such as a partner. While there might be some elements of knowledge transfer involved in solving a break-fix issue, in general, assisted training is not included in support plans.
+- How functionality works is not considered a break-fix issue but is more closely related to training. These "how-to" questions - or Advisory services - involve a transfer of knowledge and can often be answered by reviewing product documentation, raising a question in online community forums, or contacting a knowledgeable individual such as a partner. While there might be some elements of knowledge transfer involved in solving a break-fix issue, in general, assisted training is not included in support plans.
 
 ### How does Professional Direct Limited Advisory support compare to Premier/Unified Advisory support? 
 
