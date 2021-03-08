@@ -1,6 +1,6 @@
 ---
-title: Regions overview  Microsoft Docs
-description: Learn about regions in Power Apps
+title: "Choose the region when setting up an environment"
+description: "Learn about the factors in selecting a region when creating a new environment in Microsoft Power Platform admin center."
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
