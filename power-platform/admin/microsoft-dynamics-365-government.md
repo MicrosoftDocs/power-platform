@@ -171,6 +171,10 @@ You use a different set of URLs to access Dynamics 365 US Government environment
 - GCC: *.crm9.dynamics.com
 - GCC High:  *.crm.microsoftdynamics.us
 
+### Dynamics 365 Customer Voice
+
+- GCC/GCC High: https://customervoice.microsoft.us
+
 ### Discovery Service (Deprecated)
 
 - GCC: https://disco.crm9.dynamics.com/XRMServices/2011/Discovery.svc
