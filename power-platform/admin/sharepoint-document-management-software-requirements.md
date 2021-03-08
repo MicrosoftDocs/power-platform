@@ -1,6 +1,6 @@
 ---
-title: "SharePoint Document Management software requirements  | MicrosoftDocs"
-description: SharePoint Document Management software requirements
+title: "Requirements for using SharePoint document management"
+description: "Learn about the software requirements for using SharePoint document management for apps in Dynamics 365, including site collections and server-based integration."
 author: Mattp123
 manager: kvivek
 ms.service: power-platform
