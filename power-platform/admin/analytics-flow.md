@@ -1,6 +1,6 @@
 ---
-title: "Power Automate analytics  | MicrosoftDocs"
-description: The admin reports provide a view into environment level usage, errors, service performance.
+title: "Administrator analytics and reports for Microsoft Power Automate"
+description: "Admins can view Microsoft Power Automate analytics in the Power Platform admin center, including reports on run data of flows, flows created, usage, and errors."
 author: "MSFTMan"
 manager: kvivek
 ms.service: power-platform
