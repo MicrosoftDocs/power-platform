@@ -4,7 +4,7 @@ description: Microsoft Power Platform data loss prevention (DLP) SDK
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/05/2021
+ms.date: 03/08/2021
 author: jimholtz
 ms.author: jimholtz
 ms.reviewer: jimholtz
