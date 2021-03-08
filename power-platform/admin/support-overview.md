@@ -73,10 +73,6 @@ The following table outlines the best way to submit a new support request based 
     <th>Unified Support</th>
   </tr>
   <tr> 
-    <td width="30%">Power Apps, Power Automate, Power Virtual Agents</td>
-    <td width="70%" colspan="4"><a href="https://admin.powerplatform.microsoft.com">Power Platform admin center</a></td>
-  </tr>
-  <tr> 
     <td width="30%">Dynamics 365 and Power Platform</td>
     <td width="70%" colspan="4"><a href="https://admin.powerplatform.microsoft.com">Power Platform admin center</a></td>
   </tr>
