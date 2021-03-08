@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/09/2021
+ms.date: 03/08/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -128,6 +128,10 @@ For information on using the new Relevance Search experience, see [Use the new R
 5. Select **Publish All Customizations** for your changes to take effect.  
 
 By default, some out-of-the-box system entities are included in Relevance Search. However, custom entities aren't included. You must add them to Relevance Search.  
+
+> [!NOTE]
+> Relevance Search configuration is not solution aware and does not get deployed with solutions. You must enable Relevance Search and configure the entities in each environment.
+
 
 ## Configure searchable fields for Relevance Search  
 
