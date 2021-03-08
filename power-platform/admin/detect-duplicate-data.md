@@ -1,6 +1,6 @@
 ---
-title: "Detect duplicate data  | MicrosoftDocs"
-description: Detect duplicate data 
+title: "Detect duplicate data with match codes and rules"
+description: "Learn about duplicate detection rules for data, including match codes, and their limitations for Dynamics 365 records."
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
