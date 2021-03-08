@@ -464,6 +464,10 @@ AI Builder includes several model types, including custom and prebuilt – a ful
 
  AI models consume service credits when they are trained, used in an app or flow, or scheduled to periodically run. The amount of capacity consumed varies based the AI model, as well as the size and complexity of the data set.
 
+### What can I do with the 5,000 AI credits included in the per user plan with attended RPA?
+Each user license grants you 5000 credits, allowing you to assess the capabilities in AI Builder. For instance, you could use these credits to extract data from a few documents with *form processing* or perform hundreds of basic OCR extractions with *text recognition*.
+
+
 ### Which AI models are available for free in public preview and which are in paid GA status?
 
 The release status for AI Builder features is available [here](https://go.microsoft.com/fwlink/?linkid=2102828).
@@ -472,10 +476,6 @@ AI models available in public preview do not require paid AI Builder capacity. A
 
 ### Is a trial available for AI Builder?
 Users without an existing Power Apps or Power Automate license can access AI Builder trial capacity for 30 days by signing up for either a Power Apps or Power Automate trial. Existing Power Apps and Power Automate users can access AI Builder trial capacity for 30-days by signing into the respective service and accessing AI Builder in the left navigation pane. 
-
-### What can I do with the 5,000 AI credits included in the per user plan with attended RPA?
-Each user license grants you 5000 credits, allowing you to assess the capabilities in AI Builder. For instance, you could use these credits to extract data from a few documents with *form processing* or perform hundreds of basic OCR extractions with *text recognition*.
-
 
 ## Power Automate RPA license
 
