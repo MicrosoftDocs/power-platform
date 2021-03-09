@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/13/2021
+ms.date: 03/09/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -54,7 +54,7 @@ We continue to open new datacenter regions for business services, and to add dat
 > [!NOTE]
 >  Organization URLs must be unique. If your organization name has already been reserved in the destination datacenter, it won't be available. In the unlikely event this happens, we will work with you to decide how to proceed.  
 
- To see the datacenter regions, go to [Where is my data?](https://o365datacentermap.azurewebsites.net/) and then click **Select Your Region**.  
+See [Where your data is located](https://www.microsoft.com/trust-center/privacy/data-location).  
 
  The following topics have information that could be helpful to understand the move process:  
 
