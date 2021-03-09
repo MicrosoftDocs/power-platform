@@ -58,12 +58,17 @@ To create an environment, all the following must be true:
 2. The tenant (or user in the case of email trials) must have the following:
 
    - For production and sandbox environments, the tenant must have at least 1GB of database storage capacity available.
-   - For trial (subscription-based) environments, each offer-based trial (aka "admin trial") subscription must have three slots of entitlement.
-   - For trial (standard) environments, the user needs a license providing per-user entitlement for trial environments. This applies to tenant-level admins, as well. Users wanting to create a standard trial can get the necessary license for free by signing up for a Power Apps trial via one of these paths:
+   - For trial (subscription-based) environments, each offer-based trial (also known as "admin trial") subscription must have three subscription-based trial environments.
+   - For trial (standard) environments, the user needs a license providing per-user entitlement for trial environments. This applies to tenant-level admins, as well. 
+   
+   Users wanting to create a standard trial can get the necessary license for free by signing up for a Power Apps trial via one of these paths:
+     **For a trial with customer engagement apps**
+     - https://trials.dynamics.com and select the required app to sign up for a 30-day trial
+     **For a trial with no apps**
      - https://apps.powerapps.com/trial
-     - https://aka.ms/pa-trial (via signup.microsoft.com)
+     - https://powerapps.com and select **Try Free** at the top of the page
 
-3.	Tenant policy must allow environment creation.
+3.	Tenant policy must allow environment creation. See [Control who can create and manage environments in the Power Platform admin center](control-environment-creation.md)
 
 <!-- 
 > [!NOTE]
