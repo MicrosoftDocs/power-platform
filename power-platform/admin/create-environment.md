@@ -62,8 +62,11 @@ To create an environment, all the following must be true:
    - For trial (standard) environments, the user needs a license providing per-user entitlement for trial environments. This applies to tenant-level admins, as well. 
    
    Users wanting to create a standard trial can get the necessary license for free by signing up for a Power Apps trial via one of these paths:
+
      **For a trial with customer engagement apps**
+    
      - https://trials.dynamics.com and select the required app to sign up for a 30-day trial
+    
      **For a trial with no apps**
      - https://apps.powerapps.com/trial
      - https://powerapps.com and select **Try Free** at the top of the page
