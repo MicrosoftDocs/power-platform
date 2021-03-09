@@ -697,6 +697,8 @@
         href: frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook.md 
       - name: Set personal options that affect tracking and synchronization
         href: set-personal-options-affect-tracking-synchronization-between-dynamics-365-outlook-exchange.md
+      - name: Send email on behalf of another user 
+        href: send-email-on-behalf.md
       - name: Monitor email processing errors
         href: monitor-email-processing-errors.md 
       - name: Why does the email sent have a "Pending Send" status?
