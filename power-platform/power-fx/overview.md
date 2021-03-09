@@ -23,7 +23,7 @@ Power Fx is the low-code language that will be used across Microsoft Power Platf
 Power Fx is expressed in human-friendly text. It's a low-code language that makers can work with directly in an Excel-like formula bar or Visual Studio Code text window. The "low" in low-code is due to the concise and simple nature of the language, making common programming tasks easy for both makers and developers. It enables the full spectrum of development from no-code for those who have never programmed before to "pro-code" for the seasoned professional, with no learning or rewriting cliffs in between, enabling diverse teams to collaborate and save time and expense.
 
 > [!NOTE]
-> In this article, we refer to *makers* when we describe a feature that might be used at either end of the programming skill spectrum. We refer to the user as a *developer* if the feature is more advanced and is likely beyond the scope of a typical Excel user.<!--note from editor: Edits suggested, and also I suggest moving this note up here where you first start using the maker terminology. It was a bit buried before. If you don't like it here, it could go at the end of this first section.-->
+> In this article, we refer to *makers* when we describe a feature that might be used at either end of the programming skill spectrum. We refer to the user as a *developer* if the feature is more advanced and is likely beyond the scope of a typical Excel user.
 
 Power Fx binds objects together with declarative spreadsheet-like formulas. For example, think of the **Visible** property of a UI control as a cell in an Excel worksheet, with an associated formula that calculates its value based on the properties of other controls. The formula logic recalculates the value automatically, similar to how a spreadsheet does, which affects the visibility of the control.
 
@@ -46,19 +46,19 @@ This article is an overview of the language and its design principles. To learn 
 
 What if you could build an app as easily as you build a worksheet in Excel?
 
-What if you could take advantage of your existing spreadsheet knowledge?<!--note from editor: Via Writing Style Guide, "spreadsheet" is the type of program that Excel is, "workbook" is the file you create by using Excel, "worksheet" is a page in a workbook. -->
+What if you could take advantage of your existing spreadsheet knowledge?
 
 These were the questions that inspired the creation of Power Apps and Power Fx. Hundreds of millions of people create worksheets with Excel every day; let's bring them app creation that's easy and uses Excel concepts that they already know. By breaking Power Fx out of Power Apps, we're going to answer these questions for building automation, or a virtual agent, or other domains.
 
 All programming languages, including Power Fx, have *expressions*: a way to represent a calculation over numbers, strings, or other data types. For example, `mass * acceleration` in most languages expresses multiplication of `mass` and `acceleration`. The result of an expression can be placed in a variable, used as an argument to a procedure, or nested in a bigger expression.
 
-Power Fx takes this a step further. An expression by itself says nothing about what it's calculating. It's up to the maker to place it in a variable or pass it to a function. In Power Fx, instead of only writing an expression that has no specific meaning, you write a *formula* that binds the expression to an identifier. You write `force = mass * acceleration` as a formula for calculating `force`.<!--note from editor: Suggested.-->  As `mass` or `acceleration` changes, `force` is automatically updated to a new value. The expression described a calculation, a formula gave that calculation a name and used it as a recipe. This is why we refer to Power Fx as a *formula language*.
+Power Fx takes this a step further. An expression by itself says nothing about what it's calculating. It's up to the maker to place it in a variable or pass it to a function. In Power Fx, instead of only writing an expression that has no specific meaning, you write a *formula* that binds the expression to an identifier. You write `force = mass * acceleration` as a formula for calculating `force`. As `mass` or `acceleration` changes, `force` is automatically updated to a new value. The expression described a calculation, a formula gave that calculation a name and used it as a recipe. This is why we refer to Power Fx as a *formula language*.
 
 For example, this [formula from Stack Overflow](https://stackoverflow.com/questions/350264/how-can-i-perform-a-reverse-string-search-in-excel-without-using-vba) searches a string in reverse order. In Excel, it looks like the following image.
-<!--note from editor: All images need alt text that's descriptive enough so that a reader with low vision can understand what the images convey. The :::image::: extension makes it possible to have a very elaborate description of the image. Please see whether my suggestions below would be adequate for someone who couldn't see the images at all.
+
 > [!div class="mx-imgBorder"]
-> ![Reverse search](media/overview/reverse-search-excel.png "Reverse search")-->
-:::image type="complex" source="media/overview/reverse-search-excel.png" alt-text="Reverse search":::
+> ![Reverse search](media/overview/reverse-search-excel.png "Reverse search")
+
 Screenshot of a formula bar in Excel with the formula:
 =RIGHT(A1,LEN(A1)-
 FIND("|",
@@ -68,10 +68,10 @@ Cell A1 contains the text "Hello, World! It is great to meet you!" Cell A2 conta
 :::image-end:::
 
 Power Fx works with this same formula, with the cell references replaced with control property references:
-<!--
+
 > [!div class="mx-imgBorder"]
-> ![Power Fx reverse search](media/overview/reverse-search-power-apps.gif "Power Fx reverse search")-->
-:::image type="complex" source="media/overview/reverse-search-power-apps.gif" alt-text="Power Fx reverse search":::
+> ![Power Fx reverse search](media/overview/reverse-search-power-apps.gif "Power Fx reverse search")
+
 Screenshot of a Power Fx formula bar in Power Apps. The formula is
 =RIGHT(Input.Text,Len(Input.Text)-
 FIND("|",
@@ -83,7 +83,7 @@ In the Input box below the formula, the text "Hello, World! It is great to meet 
 As the `Input` control value is changed, the `Label` control automatically recalculates the formula and shows the new value. There are no `OnChange` event handlers here, as would be common in other languages.
 
 Another example that uses a formula for the `Fill` color of the screen. As the sliders that control Red, Green, and Blue are changed, the background color automatically changes as it's being recalculated.
-<!--note from editor: I think this graphic needs to be redesigned. It not only lacks the ability to pause the animation (which is required for animations longer than five seconds), it flickers more than three times a second, which can be very bad for readers who are prone to seizures. Please see https://learningplayer.microsoft.com/activity/102005/launch for a description of the requirements for these types of graphics.-->
+
 > [!div class="mx-imgBorder"]
 > ![Color slider](media/overview/color-sliders-power-apps.gif "Color slider")
 
@@ -105,7 +105,7 @@ A defining aspect of worksheets is that they're always live, and changes are ref
 The same thing is implemented with Power Fx. An incremental compiler is used to continuously keep the program in sync with the data it's operating on. Changes are automatically propagated through the program's graph, affecting the results of dependent calculations, which might drive properties on controls such as color or position. The incremental compiler also provides a rich formula editing experience with IntelliSense, suggestions, autocomplete, and type checking.
 
 In the animation below, the order number is displayed in a label control dependent on the slider control, even though there are two errors on the labels below it. The app is very much alive and interactive. The first attempt at fixing the formula by entering `.InvalidName` results in an immediate red line and error displayed, as it should, but the app keeps running.
-<!--note from editor: This image might also flicker too quickly. It does need a way to pause it, also it needs more descriptive alt text.-->
+
 > [!div class="mx-imgBorder"]
 > ![Always live](media/overview/always-live.gif "Always live")
 
@@ -118,23 +118,23 @@ After each change, the slider continues with its last value and any variables re
 Power Fx describes business logic in concise, yet powerful, formulas. Most logic can be reduced to a single line, with plenty of expressiveness and control for more complex needs. The goal is to keep to a minimum the number of concepts a maker needs to understand&mdash;ideally, no more than an Excel user would already know.
 
 For example, to look up the first name of an employee for an order, you write the Power Fx as shown in the following animation. Beyond Excel concepts, the only added concept used here is the dot **"."** notation for drilling into a data structure, in this case `.Employee.'First Name'`. The animation shows the mapping between the parts of the Power Fx formula and the concepts that need to be explicitly coded in the equivalent JavaScript.
-<!--note from editor: Can you add alt text to describe which elements of the formula are being associated with the JavaScript? The text that follows the image is great at describing the JavaScript side.-->
+
 > [!div class="mx-imgBorder"]
 > ![Low-code JavaScript](media/overview/low-code-javascript.gif "Low-code JavaScript")
 
 Let's look more in-depth at all the things that Power Fx is doing for us and the freedom it has to optimize because the formula was declarative:
 
-- **Asynchronous**: All data operations in Power Fx are asynchronous. The maker doesn't need to specify this, nor does the maker need to synchronize operations<!--note from editor: Edit okay? "Synchronize" needs an object here.--> after the call is over. The maker doesn't need to be aware of this concept at all, they don't need to know what a promise or lambda function is.<!--note from editor: "Promise" isn't mentioned in the animation, is it necessary to mention it here? I'm not sure why "lambda" is worth mentioning here or in the animation either, if you're just bringing it up to tell the reader to ignore it.-->
+- **Asynchronous**: All data operations in Power Fx are asynchronous. The maker doesn't need to specify this, nor does the maker need to synchronize operations after the call is over. The maker doesn't need to be aware of this concept at all, they don't need to know what a promise or lambda function is.
 
 - **Local and remote**: Power Fx uses the same syntax and functions for data that's local in-memory and remote in a database or service. The user need not think about this distinction. Power Fx automatically delegates what it can to the server, to process filters and sorts there more efficiently.
 
-- **Relational data**: Orders and Customers<!--note from editor: Should this be "Employees"? I don't see "Customers" in the GIF. --> are two different tables, with a many-to-one relationship. The OData query<!--note from editor: Will the reader know why you're bringing up OData here when the example shows JavaScript?--> requires an "$expand" with knowledge of the foreign key, similar to a Join in SQL<!--note from editor: Is this what "SL" meant?-->. The formula has none of this; in fact, database keys are another concept the maker doesn't need to know about. The maker can use simple dot notation to access the entire graph of relationships from a record.
+- **Relational data**: Orders and Customers are two different tables, with a many-to-one relationship. The OData query requires an "$expand" with knowledge of the foreign key, similar to a Join in SQL. The formula has none of this; in fact, database keys are another concept the maker doesn't need to know about. The maker can use simple dot notation to access the entire graph of relationships from a record.
 
 - **Projection**: When writing a query, many developers write `select * from table`, which brings back all the columns of data. Power Fx analyzes all the columns that are used through the entire app, even across formula dependencies. Projection is automatically optimized and, again, a maker doesn't need to know what "projection" means.
 
-- **Retrieve only what is needed**: In this example, the `LookUp` function implies that only one record should be retrieved and that's all that's returned. If more records are requested by using the `Filter` function&mdash;for which thousands of records might qualify&mdash;only a single page of data is returned at a time, on the order of 100 records per page<!--note from editor: Edit okay?-->. The user must gesture through a gallery or data table to see more data, and it will automatically be brought in for them. The maker can reason about large sets of data without needing to think about limiting data requests to manageable<!--note from editor: Suggested.--> chunks.
+- **Retrieve only what is needed**: In this example, the `LookUp` function implies that only one record should be retrieved and that's all that's returned. If more records are requested by using the `Filter` function&mdash;for which thousands of records might qualify&mdash;only a single page of data is returned at a time, on the order of 100 records per page. The user must gesture through a gallery or data table to see more data, and it will automatically be brought in for them. The maker can reason about large sets of data without needing to think about limiting data requests to manageable chunks.
 
-- **Runs only when needed**:<!--note from editor: The animation should also be changed - either "Runs only when needed" or "Runs only when it's needed". --> We defined a formula for the `Text` property of the label control. As the variable selected changes, the `LookUp` is automatically recalculated and the label is updated. The maker didn't need to write an OnChange handler for Selection, and didn't need to remember that this label is dependent upon it. This is declarative programming, as discussed earlier: the maker specified what they wanted to have in the label, not how or when it should be fetched. If this label isn't visible because it's on a screen that isn't visible, or its `Visible` property is false, we can defer this calculation until the label is visible and effectively eliminate it if that rarely happens.<!--note from editor: What does this mean?-->
+- **Runs only when needed**: We defined a formula for the `Text` property of the label control. As the variable selected changes, the `LookUp` is automatically recalculated and the label is updated. The maker didn't need to write an OnChange handler for Selection, and didn't need to remember that this label is dependent upon it. This is declarative programming, as discussed earlier: the maker specified what they wanted to have in the label, not how or when it should be fetched. If this label isn't visible because it's on a screen that isn't visible, or its `Visible` property is false, we can defer this calculation until the label is visible and effectively eliminate it if that rarely happens.
 
 - **Excel syntax translation**: Excel is used by many users, most of whom know that the ampersand (**&**) is used for string concatenation. JavaScript uses a plus sign (**+**), and other languages use a dot (**.**).
 
@@ -144,31 +144,31 @@ Let's look more in-depth at all the things that Power Fx is doing for us and the
 
 You don't have to read and write Power Fx to start expressing logic. There are lots of customizations and logic that can be expressed through simple switches and UI builders. These no-code tools have been built to read and write Power Fx to ensure that there's plenty of headroom for someone to take it further, while acknowledging that no-code tools will never offer all the expressiveness of the full language. Even when used with no-code builders, the formula bar is front and center in Power Apps to educate the maker about what's being done on their behalf so they can begin to learn Power Fx.
 
-Let's take a look at some examples. In Power Apps, the property panel provides no-code switches and knobs for the properties of the controls. In practice, most property values are static. You can use the color builder to change the background color of the `Gallery`. Notice that the formula bar reflects this change, updating the formula to a different `RGBA` call. At any time, you can go to the formula bar and take this a step further&mdash;in this example, by using `ColorFade` to adjust the color. The color property still appears in the properties panel, but an **fx** icon<!--note from editor: Edit okay? This seems to be what you call it in the next paragraph.--> appears on hover and you're directed to the formula bar. This fully works in two ways:<!--note from editor: I'm not sure what this means.--> removing the `ColorFade` call returns the color to something the property panel can understand, and you can use it again to set a color.
-<!--note from editor: The following image needs descriptive alt text. I don't know what to suggest because I'm not sure what's happening in the animation.-->
+Let's take a look at some examples. In Power Apps, the property panel provides no-code switches and knobs for the properties of the controls. In practice, most property values are static. You can use the color builder to change the background color of the `Gallery`. Notice that the formula bar reflects this change, updating the formula to a different `RGBA` call. At any time, you can go to the formula bar and take this a step further&mdash;in this example, by using `ColorFade` to adjust the color. The color property still appears in the properties panel, but an **fx** icon appears on hover and you're directed to the formula bar. This fully works in two ways: removing the `ColorFade` call returns the color to something the property panel can understand, and you can use it again to set a color.
+
 > [!div class="mx-imgBorder"]
 > ![No-code color](media/overview/no-code-color.gif "No-code color")
 
 Here's a more complicated example. The gallery shows a list of employees from Dataverse. Dataverse provides views over table data. We can select one of these views and the formula is changed to use the `Filter` function with this view name. The two drop-down menus can be used to dial in the correct table and view without touching the formula bar. But let's say you want to go further and add a sort. We can do that in the formula bar, and the property panel again shows an fx icon and directs modifications to the formula bar. And again, if we simplify the formula to something the property panel can read and write, it again can be used.
-<!--note from editor: The following image needs more descriptive alt text.-->
+
 > [!div class="mx-imgBorder"]
 > ![No-code sort](media/overview/no-code-sort.gif "No-code sort")
 
-These have been simple examples. We believe Power Fx makes a great language for describing no-code interactions. It is concise, powerful, and easy to parse, and provides the headroom that is so often needed with "no cliffs" up to low-code.<!--note from editor: I find these mixed metaphors to be a bit confusing.-->
+These have been simple examples. We believe Power Fx makes a great language for describing no-code interactions. It is concise, powerful, and easy to parse, and provides the headroom that is so often needed with "no cliffs" up to low-code.
 
 ## Pro code
 
 Low-code makers sometimes build things that require the help of an expert or are taken over by a professional developer to maintain and enhance. Professionals also appreciate that low-code development can be easier, faster, and less costly than building a professional tool. Not every situation requires the full power of Visual Studio.
 
 Professionals want to use professional tools to be most productive. Power Fx formulas can be stored in [YAML source files](yaml-formula-grammar.md), which are easy to edit with Visual Studio Code, Visual Studio, or any other text editor and enable Power Fx to be put under source control with GitHub, Azure DevOps, or any other source code control system.
-<!--note from editor: These images need more descriptive alt text. -->
+
 > [!div class="mx-imgBorder"]
 > ![Pro code Visual Studio Code](media/overview/pro-code-vscode.gif "Pro code Visual Studio Code")
 
 > [!div class="mx-imgBorder"]
 > ![Pro code GitHub](media/overview/pro-code-github.gif "Pro code GitHub")
 
-Power Fx supports formula-based components for sharing and reuse. We announced support for parameters to component properties, enabling the creation of pure user-defined functions with more enhancements on the way.<!--note from editor: Suggest removing this reference to "a few weeks ago" in the interests of future-proofing this article.-->
+Power Fx supports formula-based components for sharing and reuse. We announced support for parameters to component properties, enabling the creation of pure user-defined functions with more enhancements on the way.
 
 Also, Power Fx is great at stitching together components and services built by professionals. Out-of-the-box connectors provide access to hundreds of data sources and web services, custom connectors enable Power Fx to talk to any REST web service, and code components enable Power Fx to interact with fully custom JavaScript on the screen and page.
 
@@ -182,13 +182,13 @@ Being simple is also good for developers. For the developer audience, we aim to 
 
 ### Excel consistency
 
-The Power Fx<!--note from editor: Edit okay?--> language borrows heavily from the Excel formula language. We seek to take advantage of Excel knowledge and experience from the many makers who also use Excel. Types, operators, and function semantics are as close to Excel as possible.
+Microsoft Power Fx language borrows heavily from the Excel formula language. We seek to take advantage of Excel knowledge and experience from the many makers who also use Excel. Types, operators, and function semantics are as close to Excel as possible.
 
 If Excel doesn't have an answer, we next look to SQL. After Excel, SQL is the next most commonly used declarative language and can provide guidance on data operations and strong typing that Excel doesn't.
 
 ### Declarative
 
-The maker describes *what* they want their logic to do, not exactly *how* or *when* to do it. This allows the compiler to optimize by performing operations in parallel, deferring work until needed, and pre-fetching and reusing cached data.<!--note from editor: Our style guide says to supply a complete list, don't use "etc.". This seems like a good list of ways a compiler can optimize performance, but if there are other that need to be mentioned, please mention them.-->
+The maker describes *what* they want their logic to do, not exactly *how* or *when* to do it. This allows the compiler to optimize by performing operations in parallel, deferring work until needed, and pre-fetching and reusing cached data.
 
 For example, in an Excel worksheet, the author defines the relationships among cells but Excel decides when and in what order formulas are evaluated. Similarly, formulas in an app can be thought of as "recalc-ing" as needed based on user actions, database changes, or timer events.
 
@@ -231,17 +231,17 @@ More information: [Global support](global.md)
 
 ### Not object-oriented 
 
-Excel isn't object-oriented, and neither is Power Fx. For example, in some languages, the length of a string is expressed as a property of the string, such as `"Hello World".length` in JavaScript. Excel and Power Fx<!--note from editor: Edit okay?--> instead express this in terms of a function, as `Len( "Hello World" )`.
+Excel isn't object-oriented, and neither is Power Fx. For example, in some languages, the length of a string is expressed as a property of the string, such as `"Hello World".length` in JavaScript. Excel and Power Fx instead express this in terms of a function, as `Len( "Hello World" )`.
 
 Components with properties and methods are object-oriented and Power Fx easily works with them. But where possible, we prefer a functional approach.
 
 ### Extensible 
 
-Makers can create their components and functions by using Power Fx itself.<!--note from editor: Edit okay?--> Developers can create their components and functions by writing JavaScript.
+Makers can create their components and functions by using Power Fx itself. Developers can create their components and functions by writing JavaScript.
 
 ### Developer friendly 
 
-Although makers are our primary target, we try to be developer-friendly wherever possible. If it doesn't conflict with the design principles described previously, we do things in a way that a developer will appreciate. For example, Excel has no capability for adding<!--note from editor: Suggested.--> comments, so we use C-like line and inline comments.
+Although makers are our primary target, we try to be developer-friendly wherever possible. If it doesn't conflict with the design principles described previously, we do things in a way that a developer will appreciate. For example, Excel has no capability for adding comments, so we use C-like line and inline comments.
 
 ### Language evolution 
 
@@ -253,7 +253,7 @@ For example, we introduced the `ShowError` function to display an error banner w
 
 ![Show error](media/overview/showerror-2018.png "Show error")
 
-Users loved it, but they also asked us for a way to show a success banner (green background) or an informational banner (blue background). So, we came up with a more generic `Notify` function that takes a second argument for the kind of notification. We could have just added `Notify` and kept `ShowError` the way it was, but instead we replaced `ShowError` with `Notify`. We removed a function that had previously been in production and replaced it with something else. Because there would have been two ways to do the same thing, this would have caused confusion&mdash;especially for new users&mdash;and, most importantly it would have added complexity. Nobody complained, everybody appreciated the change and then moved on to their next Notify feature.<!--note from editor: Suggest removing the sentence that was here. It's not clear who it's being addressed to.-->
+Users loved it, but they also asked us for a way to show a success banner (green background) or an informational banner (blue background). So, we came up with a more generic `Notify` function that takes a second argument for the kind of notification. We could have just added `Notify` and kept `ShowError` the way it was, but instead we replaced `ShowError` with `Notify`. We removed a function that had previously been in production and replaced it with something else. Because there would have been two ways to do the same thing, this would have caused confusion&mdash;especially for new users&mdash;and, most importantly it would have added complexity. Nobody complained, everybody appreciated the change and then moved on to their next Notify feature.
 
 This is how the same app looks when loaded into the latest version of Power Apps. No action was required by the user to make this transformation happen, it occurred automatically when the app was opened.
 

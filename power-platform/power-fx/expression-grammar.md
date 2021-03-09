@@ -20,14 +20,14 @@ search.app:
 
 Microsoft Power Fx is based on formulas that bind a name to an expression. Just like in Excel worksheets, as inbound dependencies to the expression change, the expression is recalculated and the value of the name changes, possibly cascading the recalculation into other formulas.
 
-This grammar covers the expression part of the formula. Binding to a name to create a formula is dependent on how Power Fx is integrated. In worksheets, the binding syntax isn't exposed, it's implied by the location where the expression is written&mdash;for example, entering `=B1` in the A1 cell. In some cases, no binding is required at all and Power Fx is used as an expression evaluator, for example in supporting calculated columns of a database table. For Power Apps, the binding is implied when working<!--note from editor: Edit okay? I wasn't sure what "when in Power Apps Studio" meant here.--> in Power Apps Studio with [a serialization format based on YAML for use outside Power Apps Studio](yaml-formula-grammar.md).
+This grammar covers the expression part of the formula. Binding to a name to create a formula is dependent on how Power Fx is integrated. In worksheets, the binding syntax isn't exposed, it's implied by the location where the expression is written&mdash;for example, entering `=B1` in the A1 cell. In some cases, no binding is required at all and Power Fx is used as an expression evaluator, for example in supporting calculated columns of a database table. For Power Apps, the binding is implied when working in Power Apps Studio with [a serialization format based on YAML for use outside Power Apps Studio](yaml-formula-grammar.md).
 
 ## Grammar conventions
 
 The lexical and syntactic grammars are presented by using grammar productions. Each grammar production defines a non-terminal symbol and the possible expansions of that non-terminal symbol into sequences of non-terminal or terminal symbols. In grammar productions, non-terminal symbols are shown in italic type, and terminal symbols are shown in a fixed-width font.
 
 The first line of a grammar production is the name of the non-terminal symbol being defined, followed by a colon. Each successive indented line contains a possible expansion of the non-terminal symbol given as a sequence of non-terminal or terminal symbols. For example, the production:
-<!--note from editor: Did you add the space between the italic string and the bold colon as a compromise because markdown formatting doesn't like to have three asterisks in a row? If so, you can remove the space and use single asterisks for italic and double underlines for bold (so it would be, for example, *GlobalIdentifier*__:__). -->
+
 &emsp;&emsp;*GlobalIdentifier* **:**<br>
 &emsp;&emsp;&emsp;&emsp;`[@`&emsp;*Identifier*&emsp;`]`
 
@@ -79,9 +79,9 @@ The lexical-unit production defines the lexical grammar for a Power Fx expressio
 &emsp;&emsp;<a name="ExpressionElement"></a>*ExpressionElement* **:**<br>
 &emsp;&emsp;&emsp;&emsp;*[Whitespace](#Whitespace)*<br>
 &emsp;&emsp;&emsp;&emsp;*[Comment](#Comment)*<br>
-&emsp;&emsp;&emsp;&emsp;*[Token](#Token)*<br><!--note from editor: This link doesn't seem to go anywhere.-->
+&emsp;&emsp;&emsp;&emsp;*[Token](#Token)*<br>
 
-At the lexical level, a Power Fx expression consists of a stream of *Whitespace*, *Comment*, and *Token* elements. Each of these productions<!--note from editor: "Token" isn't covered below.--> is covered in the following sections. Only *Token* elements are significant in the syntactic grammar.
+At the lexical level, a Power Fx expression consists of a stream of *Whitespace*, *Comment*, and *Token* elements. Each of these productions is covered in the following sections. Only *Token* elements are significant in the syntactic grammar.
 
 ### Whitespace
 
@@ -199,7 +199,7 @@ A *number literal* is used to write a numeric value and produce a number value.
 
 #### Text literals
 
-A *text literal* is used to write a sequence of Unicode characters and produce a text value. Text literals are enclosed in double quotation marks. To include double quotation marks in the text value, repeat the double quotation marks<!--note from editor: Suggested, to fix the dangling modifier.-->, as shown in the following example:
+A *text literal* is used to write a sequence of Unicode characters and produce a text value. Text literals are enclosed in double quotation marks. To include double quotation marks in the text value, repeat the double quotation marks, as shown in the following example:
 
 ```powerapps-dot
 "The ""quoted"" text" // The "quoted" text
@@ -222,7 +222,7 @@ A *text literal* is used to write a sequence of Unicode characters and produce a
 &emsp;&emsp;&emsp;&emsp;`"`&emsp;`"`<br>
 
 ## Identifiers
-<!--note from editor: In this section, I've made class names bold in accordance with Writing Style Guide.-->
+
 An *identifier* is a name used to refer to a value. Identifiers can either be regular identifiers or single quoted identifiers.
 
 &emsp;&emsp;<a name="Identifier"></a>*Identifier* **:**<br>
@@ -266,7 +266,7 @@ An *identifier* is a name used to refer to a value. Identifiers can either be re
 
 ### Single quoted identifiers
 
-A *single quoted identifier*<!--note from editor: Edit okay? Having this be a lowercase phrase makes it parallel with others.--> can contain any sequence of Unicode characters to be used as an identifier, including keywords, whitespace, comments, and operators. Single quotation mark characters are supported with an escape sequence of two single quotation marks.
+A *single quoted identifier* can contain any sequence of Unicode characters to be used as an identifier, including keywords, whitespace, comments, and operators. Single quotation mark characters are supported with an escape sequence of two single quotation marks.
 
 &emsp;&emsp;<a name="SingleQuotedIdentifier"></a>*SingleQuotedIdentifier* **:**<br>
 &emsp;&emsp;&emsp;&emsp;*[SingleQuotedIdentifierCharacters](#SingleQuotedIdentifierCharacters)*<br>
@@ -309,7 +309,7 @@ A *single quoted identifier*<!--note from editor: Edit okay? Having this be a lo
 Power Apps identifiers are case-sensitive. The authoring tool will automatically change them to the correct case when a formula is being written.
 
 ## Separators
-<!--note from editor: In this section, I've used "dot" to be consistent with other articles.-->
+
 &emsp;&emsp;<a name="DecimalSeparator"></a>*DecimalSeparator:*<br>
 &emsp;&emsp;&emsp;&emsp;`.` (dot) for languages that use a dot as the separator for decimal numbers, for example `1.23`<br>
 &emsp;&emsp;&emsp;&emsp;`,` (comma) for languages that use a comma as the separator for decimal numbers, for example `1,23`<br>
