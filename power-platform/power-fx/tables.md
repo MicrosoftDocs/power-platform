@@ -16,7 +16,7 @@ search.app:
 # Tables
 
 > [!NOTE]
-> Microsoft Power Fx is the new name for canvas apps formula language.  These articles are work in progress as we extract the language from canvas apps, integrate it with other products of the Power Platform, and make available as open source.  Start with the [Microsoft Power Fx Overview](overview.md) for an introduction to the language.   
+> Microsoft Power Fx is the new name for the canvas apps formula language.  These articles are work in progress as we extract the language from canvas apps, integrate it with other Microsoft Power Platform products, and make it available as open source.  Start with the [Microsoft Power Fx Overview](overview.md) for an introduction to the language.   
 
 In Microsoft Power Fx, you can write a formula that accesses information in Microsoft Excel, SharePoint, SQL Server, and several other sources that store data in records and tables. To work most effectively with this kind of data, review the concepts that underlie these structures.
 
