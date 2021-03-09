@@ -146,7 +146,7 @@ AddColumns(
 
 Here we are adding a calculated column to the result. **AddColumns** has its own record scope that it uses to calculate the difference between what has been requested and what is available.
 
-![Toorder](media/tables/toorder.png "Toorder")
+![Add columns](media/tables/toorder.png "Add columns")
 
 Finally, we can reduce the result table to just the columns that we want:
 

@@ -79,7 +79,7 @@ The lexical-unit production defines the lexical grammar for a Power Fx expressio
 &emsp;&emsp;<a name="ExpressionElement"></a>*ExpressionElement* **:**<br>
 &emsp;&emsp;&emsp;&emsp;*[Whitespace](#Whitespace)*<br>
 &emsp;&emsp;&emsp;&emsp;*[Comment](#Comment)*<br>
-&emsp;&emsp;&emsp;&emsp;*[Token](#Token)*<br>
+<!--&emsp;&emsp;&emsp;&emsp;*[Token](#Token)*<br>-->
 
 At the lexical level, a Power Fx expression consists of a stream of *Whitespace*, *Comment*, and *Token* elements. Each of these productions is covered in the following sections. Only *Token* elements are significant in the syntactic grammar.
 
