@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/09/2020
+ms.date: 03/09/2021
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -16,6 +16,9 @@ search.app:
   - Flow
 ---
 # Broadcast announcements to an entire organization 
+
+> [!IMPORTANT]
+> Announcements are deprecated and will be removed in a future major release.
 
 Circulate information quickly to a wide set of users at one go by using Announcements in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation). Announcements can also serve as message boards, where you can post topics of your interest that you wish to share, or get answers to.
 
