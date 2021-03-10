@@ -15,7 +15,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Create and manage environments in the Power Platform admin center 
+# Create and manage environments in the Power Platform admin center
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
