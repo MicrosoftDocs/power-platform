@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 12/17/2020
+ms.date: 03/10/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin 
@@ -161,25 +161,6 @@ You need 1GB available database capacity.
 
    > [!div class="mx-imgBorder"] 
    > ![Create new environment settings](./media/new-environment-page1-nodb.png "Create new environment settings")
-
-## Provision a sandbox environment
-To provision a [sandbox environment](sandbox-environments.md), you change a production environment to sandbox.
-
-1. Sign in to the Power Platform admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin, Global admin, or Power Platform admin).
-
-2. From the left-side menu, select **Environments**, and then select a production environment.
-
-3. Select **Edit**
-
-   > [!div class="mx-imgBorder"] 
-   > ![Select Edit](media/select-edit.png "Select Edit")
-
-4. Under **Type**, choose the sandbox environment type. 
-
-   > [!div class="mx-imgBorder"] 
-   > ![Select sandbox environment](media/select-sandbox.png "Select sandbox environment")
-
-5. Select **Save**.
 
 ## Setting an environment refresh cadence
 You can indicate how often you would prefer an environment to receive updates and features to certain Microsoft Power Platform services. You have two options to choose from after creating an environment.
