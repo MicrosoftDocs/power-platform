@@ -8,7 +8,7 @@ manager: kvivek
 ms.custom: ""
 ms.date: 05/05/2020
 ms.reviewer: "matp"
-ms.service: powerapps
+ms.service: power-platform
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
