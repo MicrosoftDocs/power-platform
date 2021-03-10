@@ -32,7 +32,6 @@ We're consolidating how you view, create, and manage environments.
 
 - **Environments can now be provisioned in the Microsoft Power Platform admin center**: You can create environments in the Power Platform admin center. Previously, environments could only be created in the Dynamics 365 admin center and the Power Apps admin center. 
 - **Admins can govern environment creation**: To limit environment creation to admins (Dynamics 365 admins, Global admins, or Power Platform admins), see [Control who can create environments in the Power Platform admin center](control-environment-creation.md). Previously, limiting was done by controlling who had Power Apps P2 licenses.  
-- **Admins can see all environments**: Admins can see all environments (environments with and without a database, and environments with apps) in the Power Platform admin center. Previously, admins could not see environments created without a database.
 - **Trial environment provisioning**: You can create one trial environment per user. Previously, you could create two per user. See [About trial environments](trial-environments.md).
 
 ## Who can create environments?
@@ -58,12 +57,12 @@ To create an environment, all the following must be true:
 2. The tenant (or user in the case of email trials) must have the following:
 
    - For production and sandbox environments, the tenant must have at least 1GB of database storage capacity available.
-   - For trial (subscription-based) environments, each offer-based trial (also known as "admin trial") subscription must have three subscription-based trial environments.
-   - For trial (standard) environments, the user needs a license providing per-user entitlement for trial environments. This applies to tenant-level admins, as well. 
+   - For trial (subscription-based) environments, each offer-based trial (also known as "admin trial") subscription entitles the tenant to three subscription-based trial environments.
+   - For trial (standard) environments, the user needs a license providing per-user entitlement for trial environments (refer to the table above). This applies to tenant-level admins, as well. 
    
    Users wanting to create a standard trial can get the necessary license for free by signing up for a Power Apps trial via one of these paths:
 
-     **For a trial with customer engagement apps**
+     **For a trial with Dynamics 365 apps**
     
      - https://trials.dynamics.com and select the required app to sign up for a 30-day trial
     
