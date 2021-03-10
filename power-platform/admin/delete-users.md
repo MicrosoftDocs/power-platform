@@ -8,7 +8,7 @@ ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/22/2021
+ms.date: 03/10/2021
 search.audienceType: 
   - admin
 search.app:
@@ -68,7 +68,7 @@ To restore a deleted user, follow these steps:
 3. Re-assign licenses as needed to the user in the Microsoft 365 admin center.
 
 > [!NOTE]
-> You can restore deleted users up to 30 days after deletion.
+> You can restore deleted users up to 30 days after deletion. When a deleted user is restored and a license is re-assigned, the user’s status is set to **enabled** in the respective environment(s) that the user was disabled. 
 
 ### See also
 [Delete a user from your organization](https://docs.microsoft.com/microsoft-365/admin/add-users/delete-a-user?view=o365-worldwide) <br />
