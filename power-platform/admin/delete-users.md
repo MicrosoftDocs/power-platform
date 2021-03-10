@@ -37,7 +37,7 @@ The following lists the scenarios when a user is deleted:
 - If the user is in the environment and has a status of **disabled**, the status remains as **disabled**.
 - If the user is not present in the environment, there is no action taken.
 
-It can take between 30 minutes to 6 hours for a user’s status to be updated in an environment when the user is deleted from the Microsoft 365 admin center.  If you need to update the user status immediately, you can follow the steps in [User diagnostics](troubleshooting-user-needs-read-write-access-organization.md#user-diagnostics) to see what needs to be done to restore the user.
+It can take between 30 minutes to 6 hours for a user’s status to be updated in an environment when the user is deleted from the Microsoft 365 admin center.  If you need to update the user status immediately, you can follow the steps in [User diagnostics](troubleshooting-user-needs-read-write-access-organization.md#user-diagnostics) to see what needs to be done to restore the user. 
 
 > [!div class="mx-imgBorder"] 
 > ![Run diagnostics results](media/run-diagnostics.png "Run diagnostics results")
