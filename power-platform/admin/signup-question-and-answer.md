@@ -21,21 +21,19 @@ search.app:
 This topic describes how users in your organization can get access to use Power Apps, and how you can control access to the Power Apps service. Visit the [Power Automate administration FAQs](https://docs.microsoft.com/power-automate/organization-q-and-a) to learn about admin controls.
 
 ## Sign up for Power Apps
-### What is Power Apps?
-Microsoft Power Apps enables users to create applications for Windows, iOS, and Android mobile devices. Using these apps, you can create connections to common SaaS services, including Twitter, Microsoft 365, Dropbox, and Excel.
 
 ### How do users sign up for Power Apps?
 If a user doesn’t have any Power Apps licenses, the only sign-up option for individual users in your organization is the Power Apps trial, for which they can sign up through the Power Apps website:
 
-##### Option 1
+#### Option 1
 Users can sign up by going to [powerapps.microsoft.com](https://powerapps.microsoft.com), selecting **Try free**, and then completing the sign-up process for Power Apps.
 
-##### Option 2
+#### Option 2
 Users can sign up by going to [powerapps.microsoft.com](https://powerapps.microsoft.com), selecting **Sign in**, signing in with their work or school accounts, and sign up for the Power Apps trial by accepting the Power Apps terms of use.    
 
 When a user in your organization signs up for Power Apps, that user is assigned a Power Apps license automatically.
 
-##### Option 3
+#### Option 3
 Users are prompted to begin a trial before they can use a shared app that requires additional licensing.
 
 > [!NOTE]
@@ -61,6 +59,7 @@ If a person signs up for a 30 day trial of Microsoft Power Apps, and you choose 
 Finally, if your company wants to restrict the use of its data in Microsoft Power Apps, use [data loss prevention (DLP) policies](prevent-data-loss.md).
 
 ## Administration of Power Apps
+
 ### Why has the Power Apps icon appeared in the Microsoft 365 app launcher?
 Microsoft Power Apps is a fundamental part of the Microsoft 365 suite and is enabled as a service as a part of existing Microsoft 365 SKU's. As users everywhere in the world can now use Microsoft Power Apps, it appears in 'All apps' in the app launcher screen. See [Licensing overview](pricing-billing-skus.md) to understand which Microsoft 365 SKUs now include Power Apps.
 
