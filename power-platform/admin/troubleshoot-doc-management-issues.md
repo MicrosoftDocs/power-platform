@@ -3,7 +3,7 @@ title: "Troubleshooting Document Management Issues | MicrosoftDocs"
 description: "Learn how to troubleshoot issues with document management"
 keywords: encrypt
 ms.date: 06/15/2020
-ms.service: powerapps
+ms.service: power-platform
 ms.custom: 
 ms.topic: article
 applies_to: 

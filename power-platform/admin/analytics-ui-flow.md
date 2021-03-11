@@ -8,7 +8,7 @@ author: msftman
 manager: kvivek
 editor: ''
 tags: ''
-ms.service: flow
+ms.service: power-platform
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na

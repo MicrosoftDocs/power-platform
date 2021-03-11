@@ -8,7 +8,7 @@ manager: jstrauss
 ms.custom: ""
 ms.date: 10/14/2020
 ms.reviewer: "pehecke"
-ms.service: powerapps
+ms.service: power-platform
 ms.topic: "tutorial"
 search.audienceType: 
   - maker

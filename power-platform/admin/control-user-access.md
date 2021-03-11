@@ -9,7 +9,7 @@ ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/11/2021
+ms.date: 03/11/2021
 search.audienceType: 
   - admin
 search.app:
@@ -85,6 +85,9 @@ In this example, four security groups provide controlled access to a specific en
    [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Add users and assign licenses at the same time](https://go.microsoft.com/fwlink/p/?LinkID=615205)  
 
 Or, purchase and assign per app passes: [About Power Apps per app plans](about-powerapps-perapp.md)
+
+> [!NOTE]
+> If a Dataverse environment has a Power Apps per app plan allocated, all users will be considered licensed when they attempt to access the environment, including users that do not have individual licenses assigned. Per app plan allocation on a Dataverse environment satisfies the requirement for users to be licensed in order to access the environment.
   
 ## Associate a security group with a Dataverse environment  
   
