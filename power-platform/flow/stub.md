@@ -3,7 +3,7 @@ title: "Preview: Administer Microsoft Flow | MicrosoftDocs"
 ms.custom: ""
 ms.date: 07/30/2018
 ms.reviewer: ""
-ms.service: crm-online
+ms.service: power-platform
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"
