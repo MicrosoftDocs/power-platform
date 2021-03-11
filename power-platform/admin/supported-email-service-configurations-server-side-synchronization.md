@@ -45,7 +45,7 @@ Depending on your customer engagement apps (Dynamics 365 Sales, Dynamics 365 Cus
 - Using an email server profile other than Exchange Online  
 
 ## Using Exchange Online cross-tenant with customer engagement apps (limited support)
-Customers can use an “Exchange Server (Hybrid)” E-mail Server Profile configured with the EWS endpoint of the Office 365 service (https://outlook.office365.com/EWS/Exchange.asmx). This configuration requires use of an account in Exchange setup with Application Impersonation. More information how to configure Dynamics 365 (Online) with this hybrid connection configuration can be found at the following links:
+Customers can use an Exchange Server (Hybrid) profile configured with the Exchange Web Services (EWS) endpoint of the Office 365 service (https://outlook.office365.com/EWS/Exchange.asmx). This configuration requires the use of an account in Exchange setup with [ApplicationImpersonation](/exchange/client-developer/exchange-web-services/impersonation-and-ews-in-exchange). More information how to configure Dynamics 365 (Online) with this hybrid connection configuration can be found at the following links:
 
 - [Connect to Exchange Server (on-premises)](connect-exchange-server-on-premises.md)
 - [Best practices for server-side synchronization](best-practices-server-side-synchronization.md)
