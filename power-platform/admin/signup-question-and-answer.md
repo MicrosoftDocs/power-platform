@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/25/2021
+ms.date: 03/11/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -54,7 +54,7 @@ Users within your organization can gain access to Power Apps in four ways:
 ### Can I block users in my organization from signing up for Power Apps?
 Any individual can try out the features of Microsoft Power Apps for 30 days, and incur no costs as outlined in the [How do users sign up for Power Apps](#how-do-users-sign-up-for-power-apps) section.
 
-As a global admin, you can control your users' ability to sign up for Power Apps trial with option 1. You do this by enabling or disabling self-service signup. If you want to disable all self-service sign-ups, use Azure AD PowerShell commands to change the **AllowAdHocSubscriptions** setting. This option turns off self-service sign-up for all Microsoft cloud-based apps and services. Options 2 and 3 are available to any user in a tenant and cannot be disabled by an admin. After the user's trial expires, the user will need to renew the trial license to continue using Power Apps. 
+As a global admin, you can control your users' ability to sign up for Power Apps trial with option 1. You do this by enabling or disabling self-service sign-up. If you want to disable all self-service sign-ups, use Azure AD PowerShell commands to change the **AllowAdHocSubscriptions** setting. This option turns off self-service sign-up for all Microsoft cloud-based apps and services. For blocking via options 2 and 3, see  [Block trial licenses commands](powerapps-powershell.md#block-trial-licenses-commands).
 
 If a person signs up for a 30 day trial of Microsoft Power Apps, and you choose to not support them inside of your organization, they cannot incur costs to your company. When an individual signs up for Microsoft Power Apps, that is a relationship between that individual and Microsoft directly, like any other public cloud services from Microsoft, such as Bing, Wunderlist, OneDrive or Outlook.com, and does not imply that the service is provided by your organization.
 
