@@ -4,7 +4,7 @@ description: "Learn about the email service configurations supported by server-s
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/09/2020
+ms.date: 03/10/2021
 author: revachauhan
 ms.author: rechauha
 ms.reviewer: jimholtz
@@ -43,6 +43,18 @@ Depending on your customer engagement apps (Dynamics 365 Sales, Dynamics 365 Cus
 - Using Impersonation  
 - Setting Auto Discover Server Location to No  
 - Using an email server profile other than Exchange Online  
+
+## Using Exchange Online cross-tenant with customer engagement apps (limited support)
+Customers can use an “Exchange Server (Hybrid)” E-mail Server Profile configured with the EWS endpoint of the Office 365 service (https://outlook.office365.com/EWS/Exchange.asmx). This configuration requires use of an account in Exchange setup with Application Impersonation. More information how to configure Dynamics 365 (Online) with this hybrid connection configuration can be found at the following links:
+
+- [Connect to Exchange Server (on-premises)](connect-exchange-server-on-premises.md)
+- [Best practices for server-side synchronization](best-practices-server-side-synchronization.md)
+
+> [!NOTE]
+> The following only applies to cross-tenant:
+> - Dynamics 365 App for Outlook is currently not supported.
+> - Approval of Dynamics 365 mailbox records must be performed by a system administrator. 
+> - We are aware of the Exchange Basic authentication deprecation schedule and are working on an alternate implementation.
 
 ## Unsupported email service configurations  
  Server-side synchronization doesn't support the following scenarios:  
