@@ -3,7 +3,7 @@ title: "Microsoft Dataverse language collations | MicrosoftDocs"
 description: "Understand the Microsoft Dataverse language collations"
 keywords: ""
 ms.date: 06/30/2020
-ms.service: powerapps
+ms.service: power-platform
 ms.custom: 
 ms.topic: article
 author: "NHelgren"

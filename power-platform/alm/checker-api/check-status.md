@@ -3,7 +3,7 @@ title: "Check for analysis status | Microsoft Docs"
 description: "Learn how to form a GET request using the Power Apps checker web API to check the status of an analysis request job."
 ms.custom: ""
 ms.date: 06/09/2020
-ms.service: powerapps
+ms.service: power-platform
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
