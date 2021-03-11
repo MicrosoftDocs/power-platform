@@ -4,7 +4,7 @@ description: "Learn about the email service configurations supported by server-s
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/10/2021
+ms.date: 03/11/2021
 author: revachauhan
 ms.author: rechauha
 ms.reviewer: jimholtz
