@@ -68,7 +68,7 @@ Customers can use an Exchange Server (Hybrid) profile configured with the Exchan
 - [!INCLUDE[pn_ms_Exchange_Server_2003_short](../includes/pn-ms-exchange-server-2003-short.md)] and [!INCLUDE[pn_ms_Exchange_Server_2007_short](../includes/pn-ms-exchange-server-2007-short.md)]  
 - Server-side synchronization in customer engagement apps requires a [!INCLUDE[pn_POP3_short](../includes/pn-pop3-short.md)]/SMTP email server that is also FIPS 140-2 compliant. Some email servers are not FIPS 140-2 compliant, such as MSN, Outlook.com, or Windows Live Mail.  
 - Multi-factor authentication isn't supported for customer engagement apps to Exchange Server (on-premises), and Customer Engagement (on-premises) to Exchange Online.
-- Currently, connecting customer engagement apps with [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] in a different tenant is not supported. 
+- Currently, connecting customer engagement apps with [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] in a different tenant is supported with with the limitations listed in the above note.
   
 For most situations not supported by server-side synchronization, you can use the [!INCLUDE[pn_CRM_E-Mail_Router](../includes/pn-crm-e-mail-router.md)]. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Integrate your email system](integrate-synchronize-your-email-system.md)  
   
