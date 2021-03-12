@@ -4,7 +4,7 @@ description: Server-side synchronization provides direct apps-to-email server sy
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/08/2021
+ms.date: 03/12/2021
 author: revachauhan
 ms.author: rechauha
 ms.reviewer: jimholtz
@@ -17,32 +17,31 @@ search.app:
   - Flow
 ---
 # Server-side synchronization
-<!--note from editor: Please verify that the title and description are okay.-->
+
 Server-side synchronization is the preferred option for organizations with users who run customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation) in a web browser or on a mobile device, such as a tablet or smartphone. Server-side synchronization provides direct apps-to-email server synchronization. When you use [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)], this includes bidirectional synchronization of email, contacts, tasks, and appointments. The data synchronized for each user can be controlled by using synchronization filters that are available on the **Synchronization** tab in the user options dialog box.  
   
 If you use a POP3 email server, the data that is synchronized includes email only.  
   
-Using server-side synchronization makes messaging data available to a web browser, tablet, or smartphone that's running customer engagement apps. More information: [Server-side synchronization of email, appointments, contacts, and tasks](../admin/set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks.md)<!--note from editor: Please verify that the alt text for the following image is okay.-->
+Using server-side synchronization makes messaging data available to a web browser, tablet, or smartphone that's running customer engagement apps. More information: [Server-side synchronization of email, appointments, contacts, and tasks](../admin/set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks.md)
   
 ![Diagram showing email, appointments, contacts, and tasks being synced between a Dynamics CRM org and Exchange Server, and various devices sharing this same data in the cloud](../admin/media/server-side-sync-diagram.png "Server-side synchronization")  
   
 > [!NOTE]
-> A user can only map to a single [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] or POP3 mailbox. Similarly, an [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] or POP3 mailbox can only be mapped to a single user. When customer engagement apps detect that an [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] or POP3 mailbox has already been mapped to a user, a dialog box is displayed to present a choice to the user whether to map the user to the [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] mailbox. When the user selects **Yes**, it breaks the previous user-to-[!INCLUDE[pn_Exchange](../includes/pn-exchange.md)]-mailbox mapping and, subsequently, the synchronization that would occur between the user and the [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] mailbox.<!--note from editor: If this should and can be avoided, is there any practical advice we can give here?-->
+> A user can only map to a single [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] or POP3 mailbox. Similarly, an [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] or POP3 mailbox can only be mapped to a single user. When customer engagement apps detect that an [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] or POP3 mailbox has already been mapped to a user, a dialog box is displayed to present a choice to the user whether to map the user to the [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] mailbox. When the user selects **Yes**, it breaks the previous user-to-[!INCLUDE[pn_Exchange](../includes/pn-exchange.md)]-mailbox mapping and, subsequently, the synchronization that would occur between the user and the [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] mailbox.
   
 ## Server-side synchronization frequency
-<!--note from editor: The style guide actually wants us to use "sync" everywhere, but in practice we practically never do in our content. This leaves me stuck between a rock and a hard place and unable to impose consistency between "synchronization" and "sync" in this article.-->
 Server-side synchronization runs on a schedule for each mailbox and has different synchronization delays based on the workload processed. Available workloads are incoming emails, outgoing emails, and appointments, contacts, and tasks synchronization.
 
 After a mailbox has been successfully tested and enabled, server-side synchronization will start processing for the configured workloads continuously. When workload processing starts, server-side synchronization will interact with your mailbox on the external email service provider, and also with your data in the Dynamics 365 environment. These interactions can take time based on the responsiveness of the email service provider, the number of items being synchronized, connection throttling, the amount of data exchanged, and the number of attachments. Furthermore, these interactions can take additional time based on the active customizations deployed to Dynamics 365.
 
-Because the next scheduled synchronization time for a given workload is calculated at the end of its processing cycle, this means that a prolonged synchronization cycle for a workload might affect the overall throughput of a mailbox. As such, there is no defined SLA for the duration of a synchronization cycle because it's directly influenced by the external factors mentioned here.<!--note from editor: Suggested. If you don't like, it should be "previously" instead of "above."-->
+Because the next scheduled synchronization time for a given workload is calculated at the end of its processing cycle, this means that a prolonged synchronization cycle for a workload might affect the overall throughput of a mailbox. As such, there is no defined SLA for the duration of a synchronization cycle because it's directly influenced by the external factors mentioned previously.
 
 ### Incoming sync frequency
 
 After an incoming sync cycle is completed, a mailbox will postpone the processing of incoming emails for five minutes. This means the mailbox will be ready for processing again in five minutes.  
 
 > [!IMPORTANT]
-> Having long-running synchronous customizations (plug-ins and workflows) in the email delivery<!--note from editor: Edit okay?--> flow can lead to lower throughput. Moving these customizations to async execution can improve throughput.
+> Having long-running synchronous customizations (plug-ins and workflows) in the email delivery flow can lead to lower throughput. Moving these customizations to async execution can improve throughput.
 
 ### Outgoing sync frequency
 
@@ -56,10 +55,9 @@ Server-side synchronization scans your Dynamics 365 environment for outgoing ema
 > - For Exchange Online: [Sending limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits)
 
 ### Appointments, contacts, and tasks sync frequency
-<!--note from editor: The abbreviation isn't used anywhere else in the doc set; the phrase is spelled out everywhere else.-->
 After a sync cycle is completed for appointments, contacts, and tasks, a mailbox will be postponed for processing for 5 to 12 minutes after the synchronization. This means that the mailbox will be ready for processing again in 5 to 12 minutes, based on how active the mailbox has been in the last sync cycles.
 
-If the mailbox is enabled for appointments, contacts, and tasks and incoming email<!--note from editor: Edit okay? There seemed to be something missing.--> as well, the postpone time will be from 5 to 15 minutes.  
+If the mailbox is enabled for appointments, contacts, and tasks and incoming email as well, the postpone time will be from 5 to 15 minutes.  
 
 ## Features available with server-side synchronization
 
