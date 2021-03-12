@@ -451,7 +451,7 @@
       - name: Tutorials
         items:
           - name: Create a daily capacity report
-            href: tutorial-daily-capacity-report.md
+            href: programmability-tutorial-daily-capacity-report.md
       - name: PowerShell
         items:
           - name: Getting started
@@ -461,13 +461,13 @@
           - name: Creating a service principal
             href: powershell-create-service-principal.md
           - name: Cmdlet Reference
-            href: external.md
+            href: https://docs.microsoft.com/en-us/powershell/module/microsoft.powerapps.administration.powershell/?view=pa-ps-latest
       - name: Connectors
         items:
           - name: Getting started
             href: connectors-getting-started.md
           - name: Connector reference
-            href: external.md
+            href: https://docs.microsoft.com/en-us/connectors/powerplatformforadmins/
       - name: Power Platform API
         items:
           - name: Getting started
