@@ -4,7 +4,7 @@ description: "Learn about the email service configurations supported by server-s
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/09/2020
+ms.date: 03/11/2021
 author: revachauhan
 ms.author: rechauha
 ms.reviewer: jimholtz
@@ -44,6 +44,18 @@ Depending on your customer engagement apps (Dynamics 365 Sales, Dynamics 365 Cus
 - Setting Auto Discover Server Location to No  
 - Using an email server profile other than Exchange Online  
 
+## Connecting customer engagement apps with Exchange Online in a different tenant (limited support)
+Customers can use an Exchange Server (Hybrid) profile configured with the Exchange Web Services (EWS) endpoint of the Office 365 service (https://outlook.office365.com/EWS/Exchange.asmx). This configuration requires the use of an account in Exchange setup with [ApplicationImpersonation](/exchange/client-developer/exchange-web-services/impersonation-and-ews-in-exchange). More information how to configure Dynamics 365 (Online) with this hybrid connection configuration can be found at:
+
+- [Connect to Exchange Server (on-premises)](connect-exchange-server-on-premises.md)
+- [Best practices for server-side synchronization](best-practices-server-side-synchronization.md)
+
+> [!NOTE]
+> The following limitations apply to connecting cross-tenant:
+> - Dynamics 365 App for Outlook is currently not supported.
+> - Approval of Dynamics 365 mailbox records must be performed by a system administrator. 
+> - We are aware of the Exchange Basic authentication deprecation schedule and are working on an alternate implementation.
+
 ## Unsupported email service configurations  
  Server-side synchronization doesn't support the following scenarios:  
   
@@ -56,8 +68,7 @@ Depending on your customer engagement apps (Dynamics 365 Sales, Dynamics 365 Cus
 - [!INCLUDE[pn_ms_Exchange_Server_2003_short](../includes/pn-ms-exchange-server-2003-short.md)] and [!INCLUDE[pn_ms_Exchange_Server_2007_short](../includes/pn-ms-exchange-server-2007-short.md)]  
 - Server-side synchronization in customer engagement apps requires a [!INCLUDE[pn_POP3_short](../includes/pn-pop3-short.md)]/SMTP email server that is also FIPS 140-2 compliant. Some email servers are not FIPS 140-2 compliant, such as MSN, Outlook.com, or Windows Live Mail.  
 - Multi-factor authentication isn't supported for customer engagement apps to Exchange Server (on-premises), and Customer Engagement (on-premises) to Exchange Online.
-- Currently, connecting customer engagement apps with [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] in a different tenant is not supported. 
-  
+
 For most situations not supported by server-side synchronization, you can use the [!INCLUDE[pn_CRM_E-Mail_Router](../includes/pn-crm-e-mail-router.md)]. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Integrate your email system](integrate-synchronize-your-email-system.md)  
   
 > [!NOTE]
