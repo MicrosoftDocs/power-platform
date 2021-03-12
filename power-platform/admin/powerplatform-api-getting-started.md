@@ -18,8 +18,8 @@ search.app:
 Power Platform API is currently used to manage environments, tenant settings, and to query capacity consumption. 
 
 ## Versions and API references
-There are at most two supported versions of the API at any given time.  To learn more about version support and breaking changes, visit the [Versioning and support](linkhere.co) article.  
+There are at most two supported versions of the API at any given time.  To learn more about version support and breaking changes, visit the [Versioning and support](programmability-versioning-support.md) article.  
 
 | Version | Reference | Deprecation date | Decommission date
 | --- | --- | --- | --- |
-| 2021-02-01 | [2021-02-01 Ref](linkhere.co) | 2021-04-01 | 2021-10-01 |
+| 2020-10-01 | [2020-10-01 Ref](api/2020-10-01/environments/list-environments.md) | 2021-04-01 | 2021-10-01 |

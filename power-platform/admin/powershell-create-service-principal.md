@@ -20,7 +20,7 @@ Often times authenticating via username and password is not ideal, especially wi
 ## Registering an admin management application
 First and foremost, the client application needs to be registered in your Azure Active Directory tenant.  To get this setup, review the [Authentication](linkhere.co) article for Power Platform APIs as the same application setup is required for PowerShell.
 
-After your client application is registered in Azure Active Directory, it also needs to be registered with Power Platform.  Today, there is no way to do this via the Power Platform admin center, it must be done programmatically via Power Platform API or PowerShell for Power Platform Administrators.  A Service Principal cannot register itself, by design the application must be registered by an administrator username and password context.  This ensures that the application is created knowingly by someone who is an administrator for the tenant.
+After your client application is registered in Azure Active Directory, it also needs to be registered with Power Platform.  Today, there is no way to do this via the Power Platform admin center, it must be done programmatically via Power Platform API or PowerShell for Power Platform Administrators.  A Service Principal cannot register itself, by design the application must be registered by an **administrator username and password context**.  This ensures that the application is created knowingly by someone who is an administrator for the tenant.
 
 To register a new management application, use the following script:
 ```PowerShell
@@ -45,4 +45,4 @@ Get-AdminPowerAppEnvironment
 ```
 
 ## Limitations of Service Principals
-As of now, Service Principal authentication works for Environment management, Tenant settings, andPower App management.  Any cmdlets related to Flow are not supported for this kind of authentication.  This support will be added in the future.
+As of now, Service Principal authentication works for Environment management, Tenant settings, and Power App management.  Any cmdlets related to Flow are not supported for this kind of authentication.  This support will be added in the future.

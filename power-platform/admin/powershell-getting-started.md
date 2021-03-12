@@ -20,7 +20,7 @@ PowerShell for Power Platform Administrators cmdlets are designed for managing a
 This article helps you get started with the PowerShell module and teaches the core concepts behind it.
 
 ## Installation
-The easiest way to get started with the PowerShell module is by installing it on your local machine. Follow the instructions in [Installation](linkhere.co) to import the module, or to update an outdated version you might have installed previously.
+The easiest way to get started with the PowerShell module is by installing it on your local machine. Follow the instructions in [Installation](powershell-installation.md) to import the module, or to update an outdated version you might have installed previously.
 
 ## Sign in to Power Platform
 Sign in interactively with the Add-PowerAppsAccount cmdlet. 
@@ -29,7 +29,7 @@ Sign in interactively with the Add-PowerAppsAccount cmdlet.
 Add-PowerAppsAccount -Endpoint prod
 ```
 
-Alternatively, you can sign in with a client ID and secret or certificate.  To do this, you will need to [Create a Service Principal](linkhere.co).
+Alternatively, you can sign in with a client ID and secret or certificate.  To do this, you will need to [Create a Service Principal](powershell-create-service-principal.md).
 
 ```PowerShell
 $appId = "CLIENT_ID_FROM_AZURE_APP"

@@ -57,14 +57,14 @@ The response is always a **200 OK** response, unless you aren't correctly authen
       "name": "5ca1c616-6060-46ba-abc1-18d312f1cb3a",
       "properties": {
         "azureRegion": "westus",
-        "displayName": "SecurityTest",
-        "description": "Security",
+        "displayName": "My Power Platform Environment",
+        "description": "This is my environment purpose description",
         "createdTime": "2020-10-22T04:38:17.8550157Z",
         "createdBy": {
           "id": "0f747967-84c4-4f29-84c2-682fb00390c8",
           "displayName": "ServicePrincipal",
           "type": "ServicePrincipal",
-          "tenantId": "d8d86e5f-13e9-4bb5-bb94-0f99b507cd15"
+          "tenantId": "5ca1c616-6060-46ba-abc1-18d312f1cb3a"
         },
         "lastModifiedTime": "2021-02-22T18:38:08.4718532Z",
         "provisioningState": "Succeeded",
@@ -146,7 +146,7 @@ The response is always a **200 OK** response, unless you aren't correctly authen
         "databaseType": "CommonDataService",
         "linkedEnvironmentMetadata": {
           "resourceId": "3b48b422-0b37-4070-8054-601867eb8b23",
-          "friendlyName": "SecurityTest",
+          "friendlyName": "My Power Platform Environment",
           "uniqueName": "96c28a9e98934bf798bb71c9d92134",
           "domainName": "org0fadb1dd",
           "version": "9.2.21013.00152",

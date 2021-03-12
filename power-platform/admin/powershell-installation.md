@@ -15,7 +15,7 @@ search.app:
 ---
 
 # Installing PowerShell for Power Platform Administrators
-PowerShell in this topic requires PowerShell version 5.x. To check the version of PowerShell running on your machine, run the following command:
+PowerShell in this topic requires PowerShell version 5.x.  This will be updated to use a newer version in the future. To check the version of PowerShell running on your machine, run the following command:
 
 > ```powershell
 > $PSVersionTable.PSVersion

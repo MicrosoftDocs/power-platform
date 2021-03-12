@@ -1,5 +1,5 @@
 ---
-title: Programmability and Extensibility - Connectors - Getting started | Microsoft Docs
+title: Programmability and Extensibility - Power Platform for Admins Management Connectors - Getting started | Microsoft Docs
 description: Power Platform API getting started.
 author: laneswenka
 ms.reviewer: jimholtz
@@ -14,7 +14,7 @@ search.app:
   - Powerplatform
 ---
 
-# Get started with Management Connectors
+# Get started with Power Platform for Admins Management Connectors
 A connector is a proxy or a wrapper around an API that allows the underlying service to talk to the Power Platform API. It provides a way for users to connect their accounts and leverage a set of pre-built actions and triggers to build their apps and workflows.
 
 These connectors are ready-made for environment management and other common activities for Power Platform administrators.  
@@ -32,4 +32,10 @@ There are two types of triggers.
 
 **Polling Triggers**: These triggers call your service at a specified frequency to check for new data. When new data is available, it causes a new run of your workflow instance with the data as input.
 
-**Push Triggers**: These triggers listen for data on an endpoint, that is, they wait for an event to occur. The occurrence of this event causes a new run of your workflow instance.
+**Push Triggers**: These triggers listen for data on an endpoint, that is, they wait for an event to occur. The occurrence of this event causes a new run of your workflow instance.  Support for Push type triggers will be added in a future release.
+
+## Create your first workflow
+To create your first workflow using the Power Platform for Admins connectors, see the below articles for getting started with Power Automate and the connector reference.  
+
+* [Get started with your first Power Automate flow](https://docs.microsoft.com/en-us/power-automate/get-started-logic-flow)
+* [Power Platform for Admins connector reference](https://docs.microsoft.com/en-us/connectors/powerplatformforadmins/)
