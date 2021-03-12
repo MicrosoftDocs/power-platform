@@ -1,12 +1,12 @@
 ---
 title: Programmability and Extensibility - Authentication | Microsoft Docs
-description: Overview of authentication for Power Platform programmability tools.
+description: Overview of authentication for Power Platform programmability tools
 author: laneswenka
 ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 02/22/2021
+ms.date: 03/15/2021
 ms.author: laswenka
 search.audienceType: 
   - admin
@@ -18,18 +18,18 @@ search.app:
 This topic provides an overview of the authentication setup for the various programmability tools.
 
 ## Register a client application in Azure Active Directory
-For an overview of general Azure Active Directory client application creation, please visit [Quickstart: Register a client application](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app).  However, for Power Platform there are some specifics worth mentioning in the sections below.
+For an overview of general Azure Active Directory client application creation, please visit [Quickstart: Register a client application](/azure/active-directory/develop/quickstart-register-app).  However, for Power Platform there are some specifics worth mentioning in the sections below. 
 
-### Authentication Advanced Settings
-In the Azure Portal, navigate to your newly created client application and visit the **Manage - Authentication** tab.  Under the *Advanced Settings* section, turn the **Public Client** switch to **Yes**.  This will ensure you can obtain a JSON Web Token (JWT) using simple username and password authentication.  This type of authentication is required for interactive applications you might build as well as registering a Service Principal entry in Power Platform.
+### Authentication advanced settings
+In the Azure Portal, navigate to your newly created client application and select the **Manage - Authentication** tab.  Under the **Advanced Settings** section, set the **Public Client** switch to **Yes**.  This will ensure you can obtain a JSON Web Token (JWT) using simple username and password authentication.  This type of authentication is required for interactive applications you might build as well as registering a Service Principal entry in Power Platform.
 
-### API Permissions
+### API permissions
 In the Azure Portal, navigate to the **Manage - API Permissions** tab.  Under the *Configure permissions* section, click the **Add a Permission** button.  On the dialog window that opens, click on the **APIs my organization uses** tab, and then search for **PowerApps Service**.  You may see several entries with a name similar to this, ensure you use the one with the guid **475226c6-020e-4fb2-8a90-7a972cbfc1d4**.  Include all of the Delegated Permissions such as the *User permissions - Access the Power Apps Service API* option.
 
-After this is added to the client application, use the **Grant admin consent** button to complete the setup.  This is necessary for instances where you wish to start using a tool like the REST APIs which do not have a graphical user interface (GUI) that can request consent on a per-use basis.
+After this is added to the client application, select **Grant admin consent** to complete the setup.  This is necessary for instances where you wish to start using a tool like the REST APIs which do not have a graphical user interface (GUI) that can request consent on a per-use basis.
 
 ### Certificates and secrets
-In the Azure Portal, navigate to the **Manage - Certificates and secrets** tab.  Under the *Certificates* section, upload an x509 certificate that you can use to authenticate.  Optionally, you can use the *Secrets* section to generate a client secret.  Save the secret in a safe location for use with your automation needs.  The certifcate or secret options will allow you to authenticate with Azure Active Directory and receivev a token for this client, of which you will pass along to either the REST APIs or PowerShell commandlets.  
+In the Azure Portal, navigate to the **Manage - Certificates and secrets** tab.  Under the *Certificates* section, upload an x509 certificate that you can use to authenticate.  Optionally, you can use the *Secrets* section to generate a client secret.  Save the secret in a safe location for use with your automation needs.  The certifcate or secret options will allow you to authenticate with Azure Active Directory and receive a token for this client, of which you will pass along to either the REST APIs or PowerShell cmdlets.  
 
 ### Obtain a token for username and password authentication
 Send a POST request via HTTP to Azure Active Directory with a username and password payload.

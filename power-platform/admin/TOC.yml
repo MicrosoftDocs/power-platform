@@ -394,18 +394,18 @@
           href: analytics-flow.md
         - name: Analytics for UI flows
           href: analytics-ui-flow.md
-      - name: Analyze telemetry with Application Insights
-        items:
-        - name: Model-driven apps and Microsoft Dataverse telemetry
-          href: analyze-telemetry.md
-        - name: Overview of integration with Application Insights
-          href: overview-integration-application-insights.md
-        - name: Telemetry events for model-driven apps 
-          href: telemetry-events-model-driven-apps.md
-        - name: Telemetry events for Dataverse
-          href: telemetry-events-dataverse.md   
-        - name: Set up export to Application Insights
-          href: set-up-export-application-insights.md
+      # - name: Analyze telemetry with Application Insights
+      #   items:
+      #   - name: Model-driven apps and Microsoft Dataverse telemetry
+      #     href: analyze-telemetry.md
+      #   - name: Overview of integration with Application Insights
+      #     href: overview-integration-application-insights.md
+      #   - name: Telemetry events for model-driven apps 
+      #     href: telemetry-events-model-driven-apps.md
+      #   - name: Telemetry events for Dataverse
+      #     href: telemetry-events-dataverse.md   
+      #   - name: Set up export to Application Insights
+      #     href: set-up-export-application-insights.md
     - name: Storage
       items: 
       - name: What's new for storage
@@ -442,6 +442,10 @@
         href: audit-data-user-activity.md
       - name: Dataverse and model-driven apps
         href: enable-use-comprehensive-auditing.md   
+ 
+ 
+
+ 
     - name: Programmability and Extensibility
       items:
       - name: Overview
@@ -452,40 +456,45 @@
         href: programmability-authentication.md
       - name: Tutorials
         items:
-          - name: Create a daily capacity report
-            href: programmability-tutorial-daily-capacity-report.md
+        - name: Create a daily capacity report
+          href: programmability-tutorial-create-daily-capacity-report.md
       - name: PowerShell
         items:
-          - name: Getting started
-            href: powershell-getting-started.md
-          - name: Installation
-            href: powershell-installation.md
-          - name: Creating a service principal
-            href: powershell-create-service-principal.md
-          - name: Cmdlet Reference
-            href: https://docs.microsoft.com/en-us/powershell/module/microsoft.powerapps.administration.powershell/?view=pa-ps-latest
+        - name: Getting started
+          href: powershell-getting-started.md
+        - name: Installation
+          href: powershell-installation.md
+        - name: Creating a service principal
+          href: powershell-create-service-principal.md
+        - name: Cmdlet Reference
+          href: https://docs.microsoft.com/en-us/powershell/module/microsoft.powerapps.administration.powershell/?view=pa-ps-latest
       - name: Connectors
         items:
-          - name: Getting started
-            href: connectors-getting-started.md
-          - name: Connector reference
-            href: https://docs.microsoft.com/en-us/connectors/powerplatformforadmins/
+        - name: Getting started
+          href: connectors-getting-started.md
+        - name: Connector reference
+          href: https://docs.microsoft.com/en-us/connectors/powerplatformforadmins/
       - name: Power Platform API
         items:
-          - name: Getting started
-            href: powerplatform-api-getting-started.md
-          - name: Creating a service principal
-            href: powerplatform-api-create-service-principal.md
-          - name: Async operations, throttling, and paging
-            href: powerplatform-api-async-throttling-paging.md
-          - name: Reference
+        - name: Getting started
+          href: powerplatform-api-getting-started.md
+        - name: Creating a service principal
+          href: powerplatform-api-create-service-principal.md
+        - name: Async operations, throttling, and paging
+          href: powerplatform-api-async-throttling-paging.md
+        - name: Reference
+          items:
+          - name: 2020-10-01
             items:
-              - name: 2020-10-01
-                items:
-                  - name: Environments
-                    items:
-                      - name: List environments
-                        href: api/2020-10-01/environments/list-environments.md
+            - name: Environments
+              items:
+              - name: List environments
+                href: api/2020-10-01/environments/list-environments.md
+ 
+ 
+ 
+ 
+ 
     - name: PowerShell support for Power Apps 
       items:
       - name: About PowerShell support
