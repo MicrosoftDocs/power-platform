@@ -59,7 +59,7 @@ Next we will authenticate with Microsoft Azure Active Directory (Azure AD) and r
 In this tutorial, we are using a KeyVault to store our Service Principal secret value.  In this way, an IT administrator can make this value securely available for your workflow.  This is then populated in the POST call to Azure AD to retrieve the token as shown:
 
 > [!div class="mx-imgBorder"] 
-> ![Authenticate and receive a token](media/capacity4.png "Authenticate and receive a token")
+> ![Authenticate with Azure AD and retrieve a token for calling the Power Platform API](media/capacity4.png "Authenticate with Azure AD and retrieve a token for calling the Power Platform API")
 
 We then parse the Azure AD token response in to a strongly typed object using this JSON schema:
 
@@ -83,14 +83,16 @@ We then parse the Azure AD token response in to a strongly typed object using th
 }
 ```
 
-<img src="media/capacity5.png" widght="300px" alt="" /><br/>
+> [!div class="mx-imgBorder"] 
+> ![Parse the Azure AD token response into a strongly typed object](media/capacity5.png "Parse the Azure AD token response into a strongly typed object")
 
 ## Call the List Environments endpoint
-Now it is time to call the Power Platform API.  We’ll use the List Environments endpoint to retrieve all of our environments and their metadata, specifically with the $expand parameter for capacity.  This also uses the Authorization header with the Bearer Token we received in the previous section from Azure AD.  If you used username/password context you can also enter that Bearer Token at this step as well.
+Now it is the time to call the Power Platform API.  We’ll use the List Environments endpoint to retrieve all of our environments and their metadata, specifically with the $expand parameter for capacity.  This also uses the Authorization header with the Bearer Token we received in the previous section from Azure AD.  If you used username/password context you can also enter that Bearer Token at this step as well.
 
-<img src="media/capacity6.png" widght="300px" alt="" /><br/>
+> [!div class="mx-imgBorder"] 
+> ![Use the List Environments endpoint to retrieve all environments and their metadata](media/capacity6.png "Use the List Environments endpoint to retrieve all environments and their metadata")
 
-We then parse the Power Platform API response in to a strongly typed object using this JSON schema:
+We then parse the Power Platform API response into a strongly typed object using this JSON schema:
 ```json
 {
     "properties": {
@@ -347,14 +349,20 @@ We then parse the Power Platform API response in to a strongly typed object usin
     "type": "object"
 }
 ```
-<img src="media/capacity7.png" widght="300px" alt="" /><br/>
+
+> [!div class="mx-imgBorder"] 
+> ![Use the List Environments endpoint to retrieve all environments and their metadata](media/capacity7.png "Use the List Environments endpoint to retrieve all environments and their metadata")
 
 ## Iterate through the Capacity object
 This is the most complex part of the tutorial.  Here we will use a loop inside of a loop to iterate each environment in the List Environment response, and each environment has an array of capacity details that we will iterate as well.  This will let us capture the necessary information for each environment row in our capacity report table.
+
 Let’s take this step by step.  First, we will use a For Each control using the ‘value’ of the Parse-List-Response output:
-<img src="media/capacity8.png" widght="300px" alt="" /><br/>
+
+> [!div class="mx-imgBorder"] 
+> ![Use a For Each control using the value of the Parse-List-Response output](media/capacity8.png "Use a For Each control using the value of the Parse-List-Response output")
 
 Then we parse this single environment in to a strongly typed object using this JSON schema:
+
 ```json
 {
     "properties": {
@@ -592,10 +600,14 @@ Then we parse this single environment in to a strongly typed object using this J
 ```
 Next, we will use another For Each control using the ‘capacity’ of the Parse-CurrentItem output. Then we parse this in to a strongly typed object using this JSON schema:
 [code]
-<img src="media/capacity9.png" widght="300px" alt="" /><br/>
+
+> [!div class="mx-imgBorder"] 
+> ![Use another For Each control using the capacity of the Parse-CurrentItem output](media/capacity9.png "Use another For Each control using the capacity of the Parse-CurrentItem output")
 
 Now we can use the Switch control on the CapacityType property from the Parse-Capacity output.  This will either be a value of ‘Database’, ‘File’, or ‘Log’.  Under each switch case, capture the related ‘actualConsumption’ property in to the related variable.  In the below case, you’ll see we are capturing Database capacity:
-<img src="media/capacity10.png" widght="300px" alt="" /><br/>
+
+> [!div class="mx-imgBorder"] 
+> ![Use the Switch control on the CapacityType property from the Parse-Capacity output](media/capacity10.png "Use the Switch control on the CapacityType property from the Parse-Capacity output")
 
 As the last step in the ‘For each environment’ loop, we now can capture the environment details for this row in the report.  Using the Append to array variable control, use the below JSON schema:
 ```json
@@ -620,14 +632,20 @@ As the last step in the ‘For each environment’ loop, we now can capture the 
     "type": "object"
 }
 ```
-<img src="media/capacity11.png" widght="300px" alt="" /><br/>
+
+> [!div class="mx-imgBorder"] 
+> ![Capture the environment details](media/capacity11.png "Capture the environment details")
 
 ## Save to an HTML table
 Congratulations, you’ve now made it to the easy part!  Now that we have our fully populated and simplified environment array, we can pass this value to the Create HTML table connector:
-<img src="media/capacity12.png" widght="300px" alt="" /><br/>
+
+> [!div class="mx-imgBorder"] 
+> ![Pass value to the Create HTML table connector](media/capacity12.png "Pass value to the Create HTML table connector")
 
 Running the logic app we can now see the output of the HTML table report:
-<img src="media/capacity13.png" widght="300px" alt="" /><br/>
+
+> [!div class="mx-imgBorder"] 
+> ![Output of the HTML table report](media/capacity13.png "Output of the HTML table report")
 
 The report could be optionally emailed to stakeholders in this example for Cost Accounting purposes, or the data could be saved in to a database for further analysis and historical trending.  
 
