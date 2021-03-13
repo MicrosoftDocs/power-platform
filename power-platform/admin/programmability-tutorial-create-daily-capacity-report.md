@@ -55,14 +55,14 @@ After this, we will need to create five variables as detailed below:
 > ![Create five variables](media/capacity3.png "Create five variables")
 
 Next we will authenticate with Microsoft Azure Active Directory (Azure AD) and retrieve a token for calling the Power Platform API.  If you haven’t completed your Azure AD setup, visit [Create a service principal for the Power Platform API] article.
+
 In this tutorial, we are using a KeyVault to store our Service Principal secret value.  In this way, an IT administrator can make this value securely available for your workflow.  This is then populated in the POST call to Azure AD to retrieve the token as shown:
 
 > [!div class="mx-imgBorder"] 
-> ![Create five variables](media/capacity4.png "Create five variables")
-
-<img src="media/capacity4.png" widght="300px" alt="" /><br/>
+> ![Authenticate and receive a token](media/capacity4.png "Authenticate and receive a token")
 
 We then parse the Azure AD token response in to a strongly typed object using this JSON schema:
+
 ```json
 {
     "properties": {
@@ -82,6 +82,7 @@ We then parse the Azure AD token response in to a strongly typed object using th
     "type": "object"
 }
 ```
+
 <img src="media/capacity5.png" widght="300px" alt="" /><br/>
 
 ## Call the List Environments endpoint
