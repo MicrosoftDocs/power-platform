@@ -6,7 +6,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 02/22/2021
+ms.date: 03/15/2021
 ms.author: laswenka
 search.audienceType: 
   - admin
@@ -16,43 +16,53 @@ search.app:
 
 # Create a daily capacity report
 
-The Power Platform API can be used to extract the various details and metadata from your Power Platform environments, both those that use Microsoft Datavserse and those that do not.  
+The Power Platform API can be used to extract the various details and metadata from your Power Platform environments, both those that use Microsoft Dataverse and those that do not.  
 
 In this tutorial, you will learn how to:
 
-> [!div class="checklist"]
-> * Create a Power Automate or Logic App workflow that authenticates with the Power Platform API.
-> * Call the List Environments endpoint to retrieve your Power Platform enviornment details.
-> * Iterate through the capacity object to retrieve the actual consumption.
-> * Save this in to an HTML table for display.
+- Create a Power Automate or Logic App workflow that authenticates with the Power Platform API.
+- Call the List Environments endpoint to retrieve your Power Platform environment details.
+- Iterate through the capacity object to retrieve the actual consumption.
+- Save this in to an HTML table for display.
 
 As an example of this scenario, a customer is looking to get a handle on their capacity consumption so that they can better understand the allocation of their total tenant capacity by department.  This is so that the customer can perform some internal cost accounting functions and chargebacks based on how much each department is consuming of the total available capacity.  This customer is using the Environment Description to call out the department that owns each environment.  
 
 > [!IMPORTANT]
-> The Power Platform API is in preview, the hostname and data contracts are subject to change by the time the endpoints become Generally Available.  At that time, this article will be updated with the final endopint details.
+> The Power Platform API is in preview, the hostname and data contracts are subject to change by the time the endpoints become generally available.  At that time, this article will be updated with the final endpoint details.
 
 ## Create the workflow and setup the variables
 To start off, in this tutorial we will use a Logic App workflow.  A Power Automate flow is also acceptable, as well as any other orchestration engine that your company prefers to use for automation.  All of the calls to retrieve the data will be using RESTful APIs so any tooling that supports REST will work with this tutorial.
+
 Visit the Azure portal, and create a new Logic App and give it a name:
-<img src="media/capacity1.png" widght="300px" alt="" /><br/>
+
+> [!div class="mx-imgBorder"] 
+> ![Create a logic app](media/capacity1.png "Create a logic app")
 
 After that has finished provisioning, edit the workflow using the Designer and setup a Recurrence trigger to run daily:
-<img src="media/capacity2.png" widght="300px" alt="" /><br/>
 
-After this, we will need to create 5 variables as detailed below:
+> [!div class="mx-imgBorder"] 
+> ![Setup a Recurrence trigger](media/capacity2.png "Setup a Recurrence trigger")
 
-* **SPN-Id** – This is your service principal ClientID.  It will be used later to perform the authentication in a Service Principal context.  If you are using username/password context, you can skip this variable.
-*	**DBCapacity** – This is a Float variable for the consumed DB capacity in megabytes.
-*	**FileCapacity** – This is a Float variable for the consumed File capacity in megabytes.
-*	**LogCapacity** – This is a Float variable for the consumed Log capacity in megabytes.
-*	**SimplifiedEnvironmentArray-Init** – This is an Array variable that we will populate with a few environment properties.  This drastically simplifies the final HTML table report output.
-<img src="media/capacity3.png" widght="300px" alt="" /><br/>
+After this, we will need to create five variables as detailed below:
 
-Next we will authenticate with Azure Active Directory (AAD) and retrieve a token for calling the Power Platform API.  If you haven’t completed your AAD setup, visit [Create a service principal for the Power Platform API] article.
-In this tutorial, we are using a KeyVault to store our Service Principal secret value.  In this way, an IT administrator can make this value securely available for your workflow.  This is then populated in the POST call to AAD to retrieve the token as shown:
+- **SPN-Id** – This is your service principal ClientID.  It will be used later to perform the authentication in a Service Principal context.  If you are using username/password context, you can skip this variable.
+- **DBCapacity** – This is a Float variable for the consumed DB capacity in megabytes.
+- **FileCapacity** – This is a Float variable for the consumed File capacity in megabytes.
+- **LogCapacity** – This is a Float variable for the consumed Log capacity in megabytes.
+- **SimplifiedEnvironmentArray-Init** – This is an Array variable that we will populate with a few environment properties.  This drastically simplifies the final HTML table report output.
+
+> [!div class="mx-imgBorder"] 
+> ![Create five variables](media/capacity3.png "Create five variables")
+
+Next we will authenticate with Microsoft Azure Active Directory (Azure AD) and retrieve a token for calling the Power Platform API.  If you haven’t completed your Azure AD setup, visit [Create a service principal for the Power Platform API] article.
+In this tutorial, we are using a KeyVault to store our Service Principal secret value.  In this way, an IT administrator can make this value securely available for your workflow.  This is then populated in the POST call to Azure AD to retrieve the token as shown:
+
+> [!div class="mx-imgBorder"] 
+> ![Create five variables](media/capacity4.png "Create five variables")
+
 <img src="media/capacity4.png" widght="300px" alt="" /><br/>
 
-We then parse the AAD token response in to a strongly typed object using this JSON schema:
+We then parse the Azure AD token response in to a strongly typed object using this JSON schema:
 ```json
 {
     "properties": {
@@ -75,7 +85,7 @@ We then parse the AAD token response in to a strongly typed object using this JS
 <img src="media/capacity5.png" widght="300px" alt="" /><br/>
 
 ## Call the List Environments endpoint
-Now it is time to call the Power Platform API.  We’ll use the List Environments endpoint to retrieve all of our environments and their metadata, specifically with the $expand parameter for capacity.  This also uses the Authorization header with the Bearer Token we received in the previous section from AAD.  If you used username/password context you can also enter that Bearer Token at this step as well.
+Now it is time to call the Power Platform API.  We’ll use the List Environments endpoint to retrieve all of our environments and their metadata, specifically with the $expand parameter for capacity.  This also uses the Authorization header with the Bearer Token we received in the previous section from Azure AD.  If you used username/password context you can also enter that Bearer Token at this step as well.
 
 <img src="media/capacity6.png" widght="300px" alt="" /><br/>
 

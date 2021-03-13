@@ -31,18 +31,18 @@ Microsoft will provide details of programmability changes in the [Release Notes]
 
 Here are some examples of breaking changes:
 
-- The URL or fundamental request/response is changed
-- A declared property is removed or renamed, or its type is changed
-- The API or API parameters are removed or renamed
-- A required request parameter is added
+- The URL or fundamental request/response is changed.
+- A declared property is removed or renamed, or its type is changed.
+- The API or API parameters are removed or renamed.
+- A required request parameter is added.
 
 Here are some examples of non-breaking changes:
 
-- Properties are added that are nullable or have a default value
-- A member is added to an enumeration
-- Paging is introduced to existing collections
-- Error codes are changed
-- The order of properties in requests or responses is changed
+- Properties are added that are nullable or have a default value.
+- A member is added to an enumeration.
+- Paging is introduced to existing collections.
+- Error codes are changed.
+- The order of properties in requests or responses is changed.
 
 ## Next steps
 Now that you understand the versioning and support strategy, let's walk through how to authenticate with the Power Platform.
