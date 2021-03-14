@@ -452,7 +452,7 @@
         href: programmability-authentication.md
       - name: Tutorials
         items:
-        - name: Create a daily capacity report
+        - name: "Preview: Create a daily capacity report"
           href: programmability-tutorial-create-daily-capacity-report.md
       - name: PowerShell
         items:
@@ -474,7 +474,7 @@
         items:
         - name: Getting started
           href: powerplatform-api-getting-started.md
-        - name: Creating a service principal
+        - name: "Preview: Creating a service principal"
           href: powerplatform-api-create-service-principal.md
         - name: Reference
           items:
@@ -482,7 +482,7 @@
             items:
             - name: Environments
               items:
-              - name: List environments
+              - name: "Preview: List environments"
                 href: list-environments.md
     - name: PowerShell support for Power Apps 
       items:
