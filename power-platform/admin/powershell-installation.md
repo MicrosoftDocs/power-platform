@@ -1,12 +1,12 @@
 ---
 title: Programmability and Extensibility - PowerShell - Installation | Microsoft Docs
-description: PowerShell for Power Platform Administrators installation.
+description: PowerShell for Power Platform Administrators installation
 author: laneswenka
 ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 02/22/2021
+ms.date: 03/15/2021
 ms.author: laswenka
 search.audienceType: 
   - admin
@@ -15,13 +15,13 @@ search.app:
 ---
 
 # Installing PowerShell for Power Platform Administrators
-PowerShell in this topic requires PowerShell version 5.x.  This will be updated to use a newer version in the future. To check the version of PowerShell running on your machine, run the following command:
+PowerShell in this article requires PowerShell version 5.x.  This will be updated to use a newer version in the future. To check the version of PowerShell running on your machine, run the following command:
 
 > ```powershell
 > $PSVersionTable.PSVersion
 > ```
 
-If you have an outdated version, see [Upgrading existing Windows PowerShell](https://docs.microsoft.com/powershell/scripting/windows-powershell/install/installing-windows-powershell#upgrading-existing-windows-powershell).
+If you have an outdated version, see [Upgrading existing Windows PowerShell](/powershell/scripting/windows-powershell/install/installing-windows-powershell#upgrading-existing-windows-powershell).  
 
 > [!IMPORTANT]
 > The modules described in this document, use .NET Framework. This makes it incompatible with PowerShell 6.0 and later, which uses .NET Core. 

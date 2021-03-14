@@ -6,7 +6,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 02/22/2021
+ms.date: 03/15/2021
 ms.author: laswenka
 search.audienceType: 
   - admin
@@ -29,7 +29,7 @@ Sign in interactively with the Add-PowerAppsAccount cmdlet.
 Add-PowerAppsAccount -Endpoint prod
 ```
 
-Alternatively, you can sign in with a client ID and secret or certificate.  To do this, you will need to [Create a Service Principal](powershell-create-service-principal.md).
+Alternatively, you can sign in with a client ID and secret or certificate.  To do this, you will need to [Create a service principal](powershell-create-service-principal.md).
 
 ```PowerShell
 $appId = "CLIENT_ID_FROM_AZURE_APP"
@@ -42,6 +42,6 @@ Add-PowerAppsAccount -Endpoint prod -TenantID $tenantId -ApplicationId $appId -C
 ### Prerequisite
 To perform the administration operations in the cmdlets, you'll need the following:
 
-A user with any of these roles, Global admins, Azure Active Directory Global admins, or Dynamics 365 admin, can access the Power Apps admin PowerShell cmdlets. These roles no longer require a Power Apps plan for administrative access to the Power Apps admin PowerShell cmdlets. However, these administrators need to sign in to the Power Platform admin center at least once before using the PowerShell cmdlets. If this is not done, the cmdlets will fail with an authorization error.
+A user with any of these roles, Global admins, Microsoft Azure Active Directory Global admins, or Dynamics 365 admin, can access the Power Apps admin PowerShell cmdlets. These roles no longer require a Power Apps plan for administrative access to the Power Apps admin PowerShell cmdlets. However, these administrators need to sign in to the Power Platform admin center at least once before using the PowerShell cmdlets. If this is not done, the cmdlets will fail with an authorization error.
 
 Microsoft 365 Global admin or an Azure Active Directory Global Administrator, or Dynamics 365 admin permissions if you need to search through another user's resources. Note that Environment Admins only have access to those environments and environment resources for which they have permissions.

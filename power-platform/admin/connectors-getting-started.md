@@ -1,12 +1,12 @@
 ---
 title: Programmability and Extensibility - Power Platform for Admins Management Connectors - Getting started | Microsoft Docs
-description: Power Platform API getting started.
+description: Power Platform API getting started
 author: laneswenka
 ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 02/22/2021
+ms.date: 03/15/2021
 ms.author: laswenka
 search.audienceType: 
   - admin
@@ -23,7 +23,7 @@ These connectors are ready-made for environment management and other common acti
 Each connector offers a set of operations classified as 'Actions' and 'Triggers'. Once you connect to the underlying service, these operations can be easily leveraged within your apps and workflows.
 
 ### Actions
-Actions are changes directed by a user. For example, you would use an action to look up, write, update, or delete data in a SQL database. All actions directly map to operations defined in the Swagger.
+Actions are changes directed by a user. For example, you would use an action to look up, write, update, or delete data in a Microsoft Azure SQL database. All actions directly map to operations defined in the Swagger.
 
 ### Triggers
 Several connectors provide triggers that can notify your app when specific events occur. For example, the FTP connector has the OnUpdatedFile trigger. You can build either a Logic App or a flow that listens to this trigger and performs an action whenever the trigger fires.
@@ -37,5 +37,5 @@ There are two types of triggers.
 ## Create your first workflow
 To create your first workflow using the Power Platform for Admins connectors, see the below articles for getting started with Power Automate and the connector reference.  
 
-* [Get started with your first Power Automate flow](https://docs.microsoft.com/en-us/power-automate/get-started-logic-flow)
-* [Power Platform for Admins connector reference](https://docs.microsoft.com/en-us/connectors/powerplatformforadmins/)
+- [Get started with your first Power Automate flow](/power-automate/get-started-logic-flow)
+- [Power Platform for Admins connector reference](/connectors/powerplatformforadmins)
