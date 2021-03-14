@@ -22,4 +22,4 @@ There are at most two supported versions of the API at any given time.  To learn
 
 | Version | Reference | Deprecation date | Decommission date
 | --- | --- | --- | --- |
-| 2020-10-01 | [2020-10-01 Ref](api/2020-10-01/environments/list-environments.md) | 2021-04-01 | 2021-10-01 |
+| 2020-10-01 | [2020-10-01 Ref](list-environments.md) | 2021-04-01 | 2021-10-01 |
