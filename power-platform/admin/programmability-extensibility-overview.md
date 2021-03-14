@@ -1,5 +1,5 @@
 ---
-title: Programmability and Extensibility | Microsoft Docs
+title: "Preview: Programmability and extensibility | Microsoft Docs"
 description: Overview of available programmable tools for Power Platform administrators
 author: laneswenka
 ms.reviewer: jimholtz
@@ -14,7 +14,10 @@ search.app:
   - Powerplatform
 ---
 
-# Programmability and extensibility overview
+# Preview: Programmability and extensibility overview
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+
 Power Platform administrators often have the need to orchestrate and automate routine activities for their tenant.  This can be accomplished in a variety of ways using the tools outlined below.  
 
 > [!NOTE]

@@ -1,5 +1,5 @@
 ---
-title: Programmability and Extensibility - Power Platform API - Creating a service principal | Microsoft Docs
+title: "Preview: Programmability and extensibility - Power Platform API - Creating a service principal | Microsoft Docs"
 description: Power Platform API and service principal authentication
 author: laneswenka
 ms.reviewer: jimholtz
@@ -14,7 +14,10 @@ search.app:
   - Powerplatform
 ---
 
-# Creating a service principal application via API
+# Preview: Creating a service principal application via API
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+
 Often authenticating via username and password is not ideal, especially with the rise of multifactor authentication.  In such cases, service principal (or client credentials flow) authentication is preferred.
 
 ## Registering an admin management application
