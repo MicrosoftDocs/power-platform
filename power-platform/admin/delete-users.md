@@ -8,7 +8,7 @@ ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/10/2021
+ms.date: 03/14/2021
 search.audienceType: 
   - admin
 search.app:
@@ -18,18 +18,18 @@ search.app:
   - Flow
 ---
 # Delete users
-<!--note from editor: Please double-check my edit to the title (it can't be the same as the H1, but I'm not sure I've captured the point of this article there). -->
+
 Users are deleted in the Microsoft 365 admin center as follows:
 
 1. In the [Microsoft 365 admin center](https://admin.microsoft.com/), go to the **Users** > [**Active users**](https://go.microsoft.com/fwlink/p/?linkid=834822) page.
 
-2. Select the name<!--note from editor: Should "name" be plural? If so, "users" should be plural also.--> of the user you want to delete, select **More options** (...), and then select **Delete user**.
+2. Select the names of the users you want to delete, and then select **Delete user**.
 
-Although you deleted the user's account, you're still paying for the license. To stop paying for the license, follow the procedures in [Delete a user from your organization](https://docs.microsoft.com/microsoft-365/admin/add-users/delete-a-user?view=o365-worldwide).<!--note from editor: Suggested. I was confused by the reference to "the next procedure."--> Or, you can assign the license to another user. It won't be assigned to anyone automatically.
+Although you deleted the user's account, you're still paying for the license. To stop paying for the license, follow the procedures in [Delete a user from your organization](/microsoft-365/admin/add-users/delete-a-user?view=o365-worldwide). Or, you can assign the license to another user. It won't be assigned to anyone automatically.
 
 ## About deleted users
 
-When a user is deleted from the Microsoft 365 admin center, the user isn't removed from environments in which they're active. Instead, the user's status is set to **Disabled** in Dynamics 365.<!--note from editor: Capitalized because it's from the UI.-->
+When a user is deleted from the Microsoft 365 admin center, the user isn't removed from environments in which they're active. Instead, the user's status is set to **Disabled** in Dynamics 365.
 
 The following lists the scenarios when a user is deleted:
 
@@ -37,7 +37,7 @@ The following lists the scenarios when a user is deleted:
 - If the user is in the environment and has a status of **Disabled**, the status remains as **Disabled**.
 - If the user isn't present in the environment, no action is taken.
 
-It can take from 30 minutes to 6 hours for a user's status to be updated in an environment when the user is deleted from the Microsoft 365 admin center. If you need to update the user status immediately, you can follow the steps in [User diagnostics](troubleshooting-user-needs-read-write-access-organization.md#user-diagnostics) to see what needs to be done to restore the user.<!--note from editor: I'm not sure how this last phrase, "see what needs to be done to restore the user," helps the reader "update the user status immediately"? They seem like two different goals.--> 
+It can take from 30 minutes to 6 hours for a user's status to be updated in an environment when the user is deleted from the Microsoft 365 admin center. If you need to update the user status immediately, you can follow the steps in [User diagnostics](troubleshooting-user-needs-read-write-access-organization.md#user-diagnostics) to see what needs to be done to restore the user.
 
 > [!div class="mx-imgBorder"] 
 > ![Run diagnostics results](media/run-diagnostics.png "Run diagnostics results")
@@ -46,7 +46,7 @@ It can take from 30 minutes to 6 hours for a user's status to be updated in an e
 > A user deleted from the Microsoft 365 admin center is put on the **Deleted user** list for 30 days and can be restored as directed in [Restore a user](https://docs.microsoft.com/microsoft-365/admin/add-users/restore-user?view=o365-worldwide).
 
 ## View the list of disabled users
-<!--note from editor: Suggested edit to the heading because it isn't really an "About" section so much as a how-to.-->
+
 1. In the Power Platform admin center, select an environment.
 
 2. Select **Settings** > **Users + permissions** > **Users**.
@@ -59,7 +59,7 @@ It can take from 30 minutes to 6 hours for a user's status to be updated in an e
 
 1. In the [Microsoft 365 admin center](https://admin.microsoft.com/), go to the **Users** > [**Deleted users**](https://go.microsoft.com/fwlink/p/?linkid=834822) page.
 
-2. Select the name<!--note from editor: Edit okay? Or should it be "names of the users..."?--> of the user you want to re-enable, select **Restore user**, and then proceed through various pages.
+2. Select the name of the user you want to re-enable, select **Restore user**, and then proceed through various pages.
 
 3. Reassign licenses as needed to the user in the Microsoft 365 admin center.
 
