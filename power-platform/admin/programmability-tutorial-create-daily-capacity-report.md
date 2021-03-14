@@ -16,21 +16,21 @@ search.app:
 
 # Create a daily capacity report
 
-The Power Platform API can be used to extract the various details and metadata from your Power Platform environments, both those that use Microsoft Dataverse and those that do not.  
+The Power Platform API can be used to extract the various details and metadata from your Power Platform environments, both those that use Microsoft Dataverse and those that don't.  
 
 In this tutorial, you will learn how to:
 
 - Create a Power Automate or Logic App workflow that authenticates with the Power Platform API.
 - Call the List Environments endpoint to retrieve your Power Platform environment details.
 - Iterate through the capacity object to retrieve the actual consumption.
-- Save this in to an HTML table for display.
+- Save the consumption data into an HTML table for display.
 
 As an example of this scenario, a customer is looking to get a handle on their capacity consumption so that they can better understand the allocation of their total tenant capacity by department.  This is so that the customer can perform some internal cost accounting functions and chargebacks based on how much each department is consuming of the total available capacity.  This customer is using the Environment Description to call out the department that owns each environment.  
 
 > [!IMPORTANT]
 > The Power Platform API is in preview, the hostname and data contracts are subject to change by the time the endpoints become generally available.  At that time, this article will be updated with the final endpoint details.
 
-## Create the workflow and setup the variables
+## Create the workflow and set up the variables
 To start off, in this tutorial we will use a Logic App workflow.  A Power Automate flow is also acceptable, as well as any other orchestration engine that your company prefers to use for automation.  All of the calls to retrieve the data will be using RESTful APIs so any tooling that supports REST will work with this tutorial.
 
 Visit the Azure portal, and create a new Logic App and give it a name:
@@ -43,12 +43,12 @@ After that has finished provisioning, edit the workflow using the Designer and s
 > [!div class="mx-imgBorder"] 
 > ![Setup a Recurrence trigger](media/capacity2.png "Setup a Recurrence trigger")
 
-After this, we will need to create five variables as detailed below:
+Next, we'll need to create five variables as detailed below:
 
 - **SPN-Id** – This is your service principal ClientID.  It will be used later to perform the authentication in a Service Principal context.  If you are using username/password context, you can skip this variable.
-- **DBCapacity** – This is a Float variable for the consumed DB capacity in megabytes.
-- **FileCapacity** – This is a Float variable for the consumed File capacity in megabytes.
-- **LogCapacity** – This is a Float variable for the consumed Log capacity in megabytes.
+- **DBCapacity** – This is a Float variable for the consumed database capacity in megabytes.
+- **FileCapacity** – This is a Float variable for the consumed file capacity in megabytes.
+- **LogCapacity** – This is a Float variable for the consumed log capacity in megabytes.
 - **SimplifiedEnvironmentArray-Init** – This is an Array variable that we will populate with a few environment properties.  This drastically simplifies the final HTML table report output.
 
 > [!div class="mx-imgBorder"] 
@@ -354,14 +354,14 @@ We then parse the Power Platform API response into a strongly typed object using
 > ![Use the List Environments endpoint to retrieve all environments and their metadata](media/capacity7.png "Use the List Environments endpoint to retrieve all environments and their metadata")
 
 ## Iterate through the Capacity object
-This is the most complex part of the tutorial.  Here we will use a loop inside of a loop to iterate each environment in the List Environment response, and each environment has an array of capacity details that we will iterate as well.  This will let us capture the necessary information for each environment row in our capacity report table.
+This is the most complex part of the tutorial.  Here we'll use a loop inside of a loop to iterate each environment in the List Environment response, and each environment has an array of capacity details that we will iterate as well.  This will let us capture the necessary information for each environment row in our capacity report table.
 
 Let’s take this step by step.  First, we will use a For Each control using the ‘value’ of the Parse-List-Response output:
 
 > [!div class="mx-imgBorder"] 
 > ![Use a For Each control using the value of the Parse-List-Response output](media/capacity8.png "Use a For Each control using the value of the Parse-List-Response output")
 
-Then we parse this single environment in to a strongly typed object using this JSON schema:
+Then we parse this single environment into a strongly typed object using this JSON schema:
 
 ```json
 {

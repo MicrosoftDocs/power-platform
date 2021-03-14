@@ -476,8 +476,6 @@
           href: powerplatform-api-getting-started.md
         - name: Creating a service principal
           href: powerplatform-api-create-service-principal.md
-        - name: Async operations, throttling, and paging
-          href: powerplatform-api-async-throttling-paging.md
         - name: Reference
           items:
           - name: "2020-10-01"
