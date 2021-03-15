@@ -40,14 +40,14 @@ Visit the Azure portal, and create a new Logic App and give it a name:
 > [!div class="mx-imgBorder"] 
 > ![Create a logic app](media/capacity1.png "Create a logic app")
 
-After that has finished provisioning, edit the workflow using the Designer and setup a Recurrence trigger to run daily:
+After that has finished provisioning, edit the workflow using the Designer and set up a Recurrence trigger to run daily:
 
 > [!div class="mx-imgBorder"] 
 > ![Setup a Recurrence trigger](media/capacity2.png "Setup a Recurrence trigger")
 
 Next, we'll need to create five variables as detailed below:
 
-- **SPN-Id** – This is your service principal ClientID.  It will be used later to perform the authentication in a service principal context.  If you are using username/password context, you can skip this variable.
+- **SPN-Id** – This is your service principal ClientID.  It'll be used later to perform the authentication in a service principal context.  If you are using username/password context, you can skip this variable.
 - **DBCapacity** – This is a Float variable for the consumed database capacity in megabytes.
 - **FileCapacity** – This is a Float variable for the consumed file capacity in megabytes.
 - **LogCapacity** – This is a Float variable for the consumed log capacity in megabytes.
@@ -63,7 +63,7 @@ In this tutorial, we are using a KeyVault to store our service principal secret 
 > [!div class="mx-imgBorder"] 
 > ![Authenticate with Azure AD and retrieve a token for calling the Power Platform API](media/capacity4.png "Authenticate with Azure AD and retrieve a token for calling the Power Platform API")
 
-We then parse the Azure AD token response in to a strongly typed object using this JSON schema:
+We then parse the Azure AD token response in to a typed object using this JSON schema:
 
 ```json
 {
@@ -89,7 +89,7 @@ We then parse the Azure AD token response in to a strongly typed object using th
 > ![Parse the Azure AD token response into a strongly typed object](media/capacity5.png "Parse the Azure AD token response into a strongly typed object")
 
 ## Call the List Environments endpoint
-Now it is the time to call the Power Platform API.  We’ll use the List Environments endpoint to retrieve all of our environments and their metadata, specifically with the $expand parameter for capacity.  This also uses the Authorization header with the Bearer Token we received in the previous section from Azure AD.  If you used username/password context you can also enter that Bearer Token at this step as well.
+Now is the time to call the Power Platform API.  We’ll use the List Environments endpoint to retrieve all of our environments and their metadata, specifically with the $expand parameter for capacity.  This also uses the Authorization header with the Bearer Token we received in the previous section from Azure AD.  If you used username/password context, you can also enter that Bearer Token at this step as well.
 
 > [!div class="mx-imgBorder"] 
 > ![Use the List Environments endpoint to retrieve all environments and their metadata](media/capacity6.png "Use the List Environments endpoint to retrieve all environments and their metadata")
@@ -353,7 +353,7 @@ We then parse the Power Platform API response into a strongly typed object using
 ```
 
 > [!div class="mx-imgBorder"] 
-> ![Use the List Environments endpoint to retrieve all environments and their metadata](media/capacity7.png "Use the List Environments endpoint to retrieve all environments and their metadata")
+> ![Parse the Power Platform API response into a strongly typed object](media/capacity7.png "Parse the Power Platform API response into a strongly typed object")
 
 ## Iterate through the Capacity object
 This is the most complex part of the tutorial.  Here we'll use a loop inside of a loop to iterate each environment in the List Environment response, and each environment has an array of capacity details that we will iterate as well.  This will let us capture the necessary information for each environment row in our capacity report table.
@@ -604,7 +604,7 @@ Next, we will use another For Each control using the ‘capacity’ of the Parse
 [code]
 
 > [!div class="mx-imgBorder"] 
-> ![Use another For Each control using the capacity of the Parse-CurrentItem output](media/capacity9.png "Use another For Each control using the capacity of the Parse-CurrentItem output")
+> ![For Each control using the capacity of the Parse-CurrentItem output](media/capacity9.png "For Each control using the capacity of the Parse-CurrentItem output")
 
 Now we can use the Switch control on the CapacityType property from the Parse-Capacity output.  This will either be a value of ‘Database’, ‘File’, or ‘Log’.  Under each switch case, capture the related ‘actualConsumption’ property in to the related variable.  In the below case, you’ll see we are capturing Database capacity:
 
