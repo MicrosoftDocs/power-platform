@@ -41,8 +41,8 @@ Here's a breakdown of the assets that form the governance components:
   - [Business process flows for auditing resources](#business-process-flows)
 
 - Archive unused apps
-  - [App and Flow Archive and Clean Up – Start Approval and Check Approval (flows)](#flows)
-  - [App Archive and Clean Up View (model-driven app)](#apps)
+  - [App and Flow Archive and Clean Up – Start Approval and Check Approval (flows)](#admin--archive-and-clean-up-v2-start-approval-for-apps)
+  - [App Archive and Clean Up View (canvas app)](#app-archive-and-clean-up-view)
 
 ## Tables
 
