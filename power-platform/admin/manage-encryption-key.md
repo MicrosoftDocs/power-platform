@@ -4,7 +4,7 @@ description: "Learn how you can manage database encryption key for your environm
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/20/2021
+ms.date: 03/15/2021
 author: Mattp123
 ms.author: miferlan
 ms.reviewer: matp
