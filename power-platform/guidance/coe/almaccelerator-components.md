@@ -17,6 +17,7 @@ search.app:
   - Powerplatform
 ---
 # Use the ALM Accelerator for Makers app
+
 Use the ALM Accelerator for Makers app to follow ALM patterns and practices for source control, and move your solutions from development to test to production environments by using GitHub. More information: [Set up ALM Accelerator for Makers components](setup-almaccelerator.md)
 
 ALM Accelerator for Makers enables makers to apply source control strategies by using GitHub, and use automated builds and deployment of solutions to their environments without the need for manual intervention by the maker, administrator, developer, or tester. In addition, ALM Accelerator for Makers provides makers the ability to work without intimate knowledge of downstream technologies and switch quickly from developing solutions to implementing source control for the solution&mdash;and, ultimately, pushing their apps to other environments with as few interruptions to their work as possible.

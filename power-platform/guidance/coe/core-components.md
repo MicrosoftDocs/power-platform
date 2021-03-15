@@ -351,7 +351,7 @@ You can also use this app to find flows that have been orphaned by the owner's h
 ### Power Platform Admin View
 
 > [!NOTE]
-> This app is not available if you have installed the Core Components in Dataverse for Teams.
+> This app is not available if you have installed the Core Components in Dataverse for Teams. A canvas app is available to browse tenant inventory.
 
 Power Platform Admin View is a model-driven app that provides an interface used to browse items in Dataverse custom tables. It provides access to views and forms for the custom tables in the solution.
 
