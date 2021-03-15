@@ -353,7 +353,7 @@ We then parse the Power Platform API response into a strongly typed object using
 ```
 
 > [!div class="mx-imgBorder"] 
-> ![Use the List Environments endpoint to retrieve all environments and their metadata](media/capacity7.png "Use the List Environments endpoint to retrieve all environments and their metadata")
+> ![Parse the Power Platform API response into a strongly typed object](media/capacity7.png "Parse the Power Platform API response into a strongly typed object")
 
 ## Iterate through the Capacity object
 This is the most complex part of the tutorial.  Here we'll use a loop inside of a loop to iterate each environment in the List Environment response, and each environment has an array of capacity details that we will iterate as well.  This will let us capture the necessary information for each environment row in our capacity report table.
