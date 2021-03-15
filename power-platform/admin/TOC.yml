@@ -442,7 +442,7 @@
         href: audit-data-user-activity.md
       - name: Dataverse and model-driven apps
         href: enable-use-comprehensive-auditing.md   
-    - name: Programmability and Extensibility
+    - name: Programmability and extensibility
       items:
       - name: Overview
         href: programmability-extensibility-overview.md
