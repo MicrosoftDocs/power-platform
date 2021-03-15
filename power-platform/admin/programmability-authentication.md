@@ -15,21 +15,21 @@ search.app:
 ---
 
 # Authentication
-This topic provides an overview of the authentication setup for the various programmability tools.
+This article provides an overview of the authentication setup for the various programmability tools.
 
 ## Register a client application in Azure Active Directory
-For an overview of general Azure Active Directory client application creation, please visit [Quickstart: Register a client application](/azure/active-directory/develop/quickstart-register-app).  However, for Power Platform there are some specifics worth mentioning in the sections below. 
+For an overview of general Azure Active Directory client application creation, visit [Quickstart: Register a client application](/azure/active-directory/develop/quickstart-register-app).  However, for Power Platform there are some specifics worth mentioning in the sections below. 
 
 ### Authentication advanced settings
-In the Azure Portal, navigate to your newly created client application and select the **Manage - Authentication** tab.  Under the **Advanced Settings** section, set the **Public Client** switch to **Yes**.  This will ensure you can obtain a JSON Web Token (JWT) using simple username and password authentication.  This type of authentication is required for interactive applications you might build as well as registering a Service Principal entry in Power Platform.
+In the Azure portal, navigate to your newly created client application and select the **Manage - Authentication** tab.  Under the **Advanced Settings** section, set the **Public Client** switch to **Yes**.  This will ensure you can obtain a JSON Web Token (JWT) using simple username and password authentication.  This type of authentication is required for interactive applications you might build and registering a Service Principal entry in Power Platform.
 
 ### API permissions
-In the Azure Portal, navigate to the **Manage - API Permissions** tab.  Under the *Configure permissions* section, click the **Add a Permission** button.  On the dialog window that opens, click on the **APIs my organization uses** tab, and then search for **PowerApps Service**.  You may see several entries with a name similar to this, ensure you use the one with the guid **475226c6-020e-4fb2-8a90-7a972cbfc1d4**.  Include all of the Delegated Permissions such as the *User permissions - Access the Power Apps Service API* option.
+In the Azure portal, navigate to the **Manage - API Permissions** tab.  Under the *Configure permissions* section, select **Add a Permission**.  On the dialog window that opens, select the **APIs my organization uses** tab, and then search for **Power Apps Service**.  You may see several entries with a name similar to this, ensure you use the one with the guid **475226c6-020e-4fb2-8a90-7a972cbfc1d4**.  Include all of the Delegated Permissions such as the *User permissions - Access the Power Apps Service API* option.
 
 After this is added to the client application, select **Grant admin consent** to complete the setup.  This is necessary for instances where you wish to start using a tool like the REST APIs which do not have a graphical user interface (GUI) that can request consent on a per-use basis.
 
 ### Certificates and secrets
-In the Azure Portal, navigate to the **Manage - Certificates and secrets** tab.  Under the *Certificates* section, upload an x509 certificate that you can use to authenticate.  Optionally, you can use the *Secrets* section to generate a client secret.  Save the secret in a safe location for use with your automation needs.  The certifcate or secret options will allow you to authenticate with Azure Active Directory and receive a token for this client, of which you will pass along to either the REST APIs or PowerShell cmdlets.  
+In the Azure portal, navigate to the **Manage - Certificates and secrets** tab.  Under the *Certificates* section, upload an x509 certificate that you can use to authenticate.  Optionally, you can use the *Secrets* section to generate a client secret.  Save the secret in a safe location for use with your automation needs.  The certificate or secret options will allow you to authenticate with Azure Active Directory and receive a token for this client, of which you will pass along to either the REST APIs or PowerShell cmdlets.  
 
 ### Obtain a token for username and password authentication
 Send a POST request via HTTP to Azure Active Directory with a username and password payload.
@@ -42,7 +42,7 @@ POST https://login.microsoftonline.com/YOUR_TENANT.COM/oauth2/v2.0/token
 BODY:
 client_id={CLIENT_ID_FROM_AZURE_CLIENT_APP}&scope=https://service.powerapps.com//.default&username={USER_EMAIL_ADDRESS}&password={PASSWORD}&grant_type=password
 ```
-The above example contains placeholders that you can retrieve from your client application in Azure Active Directory.  You will receive a response that can be used to make subsequent calls to Power Platform API.
+The above example contains placeholders that you can retrieve from your client application in Azure Active Directory.  You'll receive a response that can be used to make subsequent calls to Power Platform API.
 
 ```JSON
 {
@@ -57,7 +57,7 @@ The above example contains placeholders that you can retrieve from your client a
 Use the **access_token** value in subsequent calls to the Power Platform API using the **Authorization** HTTP header.
 
 ### Obtain a token for client authentication
-Send a POST request via HTTP to Azure Active Directory with a client secret payload.  This is often referred to as Service Principal authentication.  Note that this can only be used after you have registered this client application ID with the Power Platform.  
+Send a POST request via HTTP to Azure Active Directory with a client secret payload.  This is often referred to as service principal authentication.  This can only be used after you have registered this client application ID with the Power Platform.  
 
 ```HTTP
 Content-Type: application/x-www-form-urlencoded
@@ -67,7 +67,7 @@ POST https://login.microsoftonline.com/YOUR_TENANT.COM/oauth2/v2.0/token
 BODY:
 client_id={CLIENT_ID_FROM_AZURE_CLIENT_APP}&scope=https://service.powerapps.com//.default&client_secret={SECRET_FROM_AZURE_CLIENT_APP}&grant_type=client_credentials
 ```
-The above example contains placeholders that you can retrieve from your client application in Azure Active Directory.  You will receive a response that can be used to make subsequent calls to Power Platform API.
+The above example contains placeholders that you can retrieve from your client application in Azure Active Directory.  You'll receive a response that can be used to make subsequent calls to Power Platform API.
 
 ```JSON
 {
