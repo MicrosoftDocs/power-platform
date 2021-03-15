@@ -47,7 +47,7 @@ After that has finished provisioning, edit the workflow using the Designer and s
 
 Next, we'll need to create five variables as detailed below:
 
-- **SPN-Id** – This is your service principal ClientID.  It will be used later to perform the authentication in a Service Principal context.  If you are using username/password context, you can skip this variable.
+- **SPN-Id** – This is your service principal ClientID.  It will be used later to perform the authentication in a service principal context.  If you are using username/password context, you can skip this variable.
 - **DBCapacity** – This is a Float variable for the consumed database capacity in megabytes.
 - **FileCapacity** – This is a Float variable for the consumed file capacity in megabytes.
 - **LogCapacity** – This is a Float variable for the consumed log capacity in megabytes.
@@ -56,9 +56,9 @@ Next, we'll need to create five variables as detailed below:
 > [!div class="mx-imgBorder"] 
 > ![Create five variables](media/capacity3.png "Create five variables")
 
-Next we will authenticate with Microsoft Azure Active Directory (Azure AD) and retrieve a token for calling the Power Platform API.  If you haven’t completed your Azure AD setup, visit [Create a service principal for the Power Platform API] article.
+Next we will authenticate with Microsoft Azure Active Directory (Azure AD) and retrieve a token for calling the Power Platform API.  If you haven’t completed your Azure AD setup, see [Authentication](programmability-authentication.md).
 
-In this tutorial, we are using a KeyVault to store our Service Principal secret value.  In this way, an IT administrator can make this value securely available for your workflow.  This is then populated in the POST call to Azure AD to retrieve the token as shown:
+In this tutorial, we are using a KeyVault to store our service principal secret value.  In this way, an IT administrator can make this value securely available for your workflow.  This is then populated in the POST call to Azure AD to retrieve the token as shown:
 
 > [!div class="mx-imgBorder"] 
 > ![Authenticate with Azure AD and retrieve a token for calling the Power Platform API](media/capacity4.png "Authenticate with Azure AD and retrieve a token for calling the Power Platform API")
