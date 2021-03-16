@@ -648,7 +648,7 @@ If your error logs show "String length in source longer than destination schema 
 
 ### No support for attachments
 
-Exporting attachments, such as documentbody on Annotation table is not supported
+Exporting attachments such as documentbody on *Annotation* table is not supported.
   
 ## Privacy notice  
 [!INCLUDE[cc_privacy_data_export](../includes/cc-privacy-data-export.md)]
