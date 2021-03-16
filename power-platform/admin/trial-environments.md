@@ -16,7 +16,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# About trial environments 
+# About trial environments
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
@@ -153,6 +153,8 @@ To extend a standard trial:
 
    > [!div class="mx-imgBorder"] 
    > ![Extend a trial](media/extend-trial.png "Extend a trial")
+
+:::image type="content" source="media/extend-trial-.png" alt-text="alt text":::
 
 3. Select **Extend trial**
 
