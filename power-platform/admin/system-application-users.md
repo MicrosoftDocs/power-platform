@@ -18,7 +18,7 @@ search.app:
   - Flow
 ---
 
-# System and application users
+# System and application users 
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
