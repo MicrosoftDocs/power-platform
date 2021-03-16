@@ -163,7 +163,7 @@ Your trial will be extended 30 days from the previous expiration date.
 To extend a subscription trial:
 
 - Partners can request an extension of offer-based trials on behalf of their customer. See https://transform.microsoft.com/customer-trials.
-- Customer admins can request a single extension in the Microsoft 365 admin center. See https://docs.microsoft.com/en-us/microsoft-365/commerce/extend-your-trial?view=o365-worldwide. Note that while these instructions are for Office, they apply equally to Dynamics 365 admin trials and other Power Platform admin trials.
+- Customer admins can request a single extension in the Microsoft 365 admin center. See https://docs.microsoft.com/en-us/microsoft-365/commerce/extend-your-trial?view=o365-worldwide. Note that while these instructions are for Microsoft 365, they apply equally to Dynamics 365 admin trials and other Power Platform admin trials.
 
 ## Convert either type of trial environment to a production environment
 
