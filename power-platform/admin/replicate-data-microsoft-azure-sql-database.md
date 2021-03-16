@@ -645,6 +645,10 @@ If your error logs show "Cannot create a row of size <size> which is greater tha
 ### Length of string in source is longer than destination schema for ColumnName
 
 If your error logs show "String length in source longer than destination schema for [ColumnName, MaxDataLength]" you are running into an issue where the string length of your source data is longer than destination. If the string length of your source data is longer than destination, writes to destination will fail.To mitigate this issue, you would either need to reduce size of data or increase the length of column, greater than MaxLength manually in the DB.
+
+### No support for attachments
+
+Exporting attachments such as documentbody on *Annotation* table is not supported.
   
 ## Privacy notice  
 [!INCLUDE[cc_privacy_data_export](../includes/cc-privacy-data-export.md)]
