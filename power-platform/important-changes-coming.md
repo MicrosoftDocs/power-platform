@@ -463,15 +463,16 @@ controls created using the HTML web resources
 with HTML5 to create UI components to visualize and interact with data.
 
 
-
-
-
 ## Past deprecations
 
 For information on *past* deprecations, see:
 - [Important changes coming in future releases of Dynamics 365](https://docs.microsoft.com/previous-versions/dynamicscrm-2016/administering-dynamics-365/dn265924(v=crm.8))
 
 - [Important changes coming in future releases of Dynamics 365 (Developers)](https://docs.microsoft.com/previous-versions/dynamicscrm-2016/developers-guide/dn281891(v=crm.8))
+
+## Other deprecation articles
+
+[Removed or deprecated features in Finance and Operations apps](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
