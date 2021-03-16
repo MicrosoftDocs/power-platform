@@ -16,7 +16,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# About trial environments
+# About trial environments 
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
