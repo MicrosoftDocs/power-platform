@@ -7,7 +7,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/19/2021
+ms.date: 03/16/2021
 search.audienceType: 
   - admin
 search.app:
@@ -136,6 +136,35 @@ A trial (subscription-based) environment lasts as long as the subscription is ac
 
    > [!div class="mx-imgBorder"] 
    > ![Check trial (subscription-based) expiration](media/subscription-expiration-date.png "Check trial (subscription-based) expiration")
+
+## Extend a trial
+
+Note the following:
+
+- Within the last 7 days before the trial environment is set to expire, the trial environment admin can do a self-service extension of the expiring environment. This adds an additional 30 days from the current expiration date.
+- There is only one self-service extension allowed per trial environment. To further retain the environment, it must be [converted to production](#convert-either-type-of-trial-environment-to-a-production-environment).
+- This only applies to standard trials. This does not apply to subscription-based trial environments since their lifetime is tied to the lifetime of the environment.
+
+To extend a standard trial:
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) with admin credentials.
+
+2. Go to **Environments**, and then select an expiring environment that has the **Extend trial** option. The **Extend trial** option appears when there are 7 days remaining before the environment expires.
+
+   > [!div class="mx-imgBorder"] 
+   > ![Extend a trial](media/extend-trial.png "Extend a trial")
+
+3. Select **Extend trial**
+
+4. Read the notification and then select **Extend trial**. 
+
+Your trial will be extended 30 days from the previous expiration date.
+
+To extend a subscription trial:
+
+- Partners can request an extension of offer-based trials on behalf of their customer here: https://transform.microsoft.com/customer-trials.
+- Customer admins can request a single extension in the M365 admin center by following the instructions here: https://docs.microsoft.com/en-us/microsoft-365/commerce/extend-your-trial?view=o365-worldwide. Note that while these instructions are for Office, they apply equally to Dynamics admin trials and other Power Platform admin trials.
+
 
 ## Convert either type of trial environment to a production environment
 
