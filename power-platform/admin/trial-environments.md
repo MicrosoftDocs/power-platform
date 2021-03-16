@@ -154,8 +154,6 @@ To extend a standard trial:
    > [!div class="mx-imgBorder"] 
    > ![Extend a trial](media/extend-trial.png "Extend a trial")
 
-:::image type="content" source="media/extend-trial-.png" alt-text="alt text":::
-
 3. Select **Extend trial**
 
 4. Read the notification and then select **Extend trial**. 
