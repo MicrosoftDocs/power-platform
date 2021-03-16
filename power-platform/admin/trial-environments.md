@@ -137,7 +137,7 @@ A trial (subscription-based) environment lasts as long as the subscription is ac
    > [!div class="mx-imgBorder"] 
    > ![Check trial (subscription-based) expiration](media/subscription-expiration-date.png "Check trial (subscription-based) expiration")
 
-## Extend a trial
+## Extend a trial 
 
 Note the following:
 
