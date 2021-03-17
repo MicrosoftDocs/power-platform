@@ -117,8 +117,7 @@ We have designed our support plans to meet different business needs:
     <td>Premier/Unified Support</td>
     <td>A comprehensive support solution for all Microsoft enterprise technologies, including Microsoft Dynamics 365, Microsoft Azure, and Microsoft 365 across the cloud, hybrid, and on-premises. Includes around the clock problem resolution, proactive advisory services, onsite support, and add-on services to customize your support experience</td>
   </tr>
-  </table>
-  
+</table>
 
 ### What is a preview (beta) service or feature?
 
