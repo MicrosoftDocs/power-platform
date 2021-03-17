@@ -168,7 +168,7 @@ The expiration of subscription-based trial (also know as an admin trial) environ
 
 Admins can request a single extension in the Microsoft 365 admin center. See https://docs.microsoft.com/microsoft-365/commerce/extend-your-trial?view=o365-worldwide
 
-Partners can request an extension of offer-based trials on behalf of their customer. See https://transform.microsoft.com/customer-trials.
+Partners can request an extension of offer-based trials on behalf of their customer. See [Business Applications](https://dynamics.microsoft.com).
 
 ## Convert either type of trial environment to a production environment
 
