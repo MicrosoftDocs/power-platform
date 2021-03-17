@@ -60,7 +60,7 @@ Microsoft provides support in English globally and provides additional languages
 
 Yes, you need a support plan to receive one-on-one technical support. Some subscriptions include support plans. You can find more information about the existing support plans at [Support Plans](https://dynamics.microsoft.com/support/plans/).
 
-### Where should I go to file a support request?
+### Where should I go to file a support request? 
 
 The following table outlines the best way to submit a new support request based on your product or service and customer support plan. Microsoft partners should use the [Partner Center portal](https://partner.microsoft.com/support) or the support option listed in the table, as applicable.
 
