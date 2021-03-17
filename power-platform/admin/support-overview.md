@@ -36,12 +36,12 @@ Microsoft provides support in English globally and provides additional languages
 |---------|---------|---------|---------|
 |<sup>*</sup>Provided globally all day, every day   |<sup>*</sup>Provided to customers in Japan all day, every day        |Available to customers in Europe/Middle East/Africa regions during those regions' business hours <br />Spanish/Portuguese available to customers in South America during that region's business hours   | Available to customers in Asia/Pacific region during that region's business hours        |
 
-<sup>*</sup>24/7 (all day, every day) support is available based on issue severity and your support offering.
+<sup>*</sup>around the clock (all day, every day) support is available based on issue severity and your support offering.
 
 > [!NOTE]
 > Translation services might be available to assist with additional languages outside normal business hours.
 
-### Do I get 24/7 support? 
+### Do I get around the clock support? 
 
 - Microsoft provides all day, every day support for all Severity A issues and might provide all day, every day assistance for issues of other severity based on your support offering. 
 - For those issues that do not qualify for all day, every day support, Microsoft provides assistance during local business hours only.
@@ -107,17 +107,17 @@ We have designed our support plans to meet different business needs:
 - Technical support Break-fix issues are technical problems you experience while using services. "Break-fix" is an industry term that refers to "work involved in supporting a technology when it fails in the normal course of its function, which requires intervention by a support organization to be restored to working order."
 - How functionality works is not considered a break-fix issue but is more closely related to training. These "how-to" questions - or Advisory services - involve a transfer of knowledge and can often be answered by reviewing product documentation, raising a question in online community forums, or contacting a knowledgeable individual such as a partner. While there might be some elements of knowledge transfer involved in solving a break-fix issue, in general, assisted training is not included in support plans.
 
-### How does Professional Direct Limited Advisory support compare to Premier/Unified Advisory support? 
-
-Professional Direct (ProDirect) Limited Advisory support provides you access to Support guidance based on (1) publicly available, best practices documentation regarding customer engagement apps and (2) information from the Dynamics 365 Forums. ProDirect advisors offer you support based on their access to Microsoft documentation, to the support engineers, and also to the product group. Best practices guidance might include:
-
-- Planning for deployments and migrations.
-- Boosting performance.
-- Improving reliability and recoverability.
-- Enhancing security.
-
-ProDirect, however, is more limited than Premier/Unified Advisory Support. ProDirect advisors do not provide detailed advisory assistance specific to an individual customer, such as design, architecture, or code reviews; detailed instructions for application or configuration tuning (for example, performance tuning); or the verification of specifications. ProDirect does not provide onsite support or engage in implementation activities such as, but not limited to, coding or configuration for customer development or deployment.
-
+### How does Professional Direct support compare to Premier/Unified  support? 
+<table style="width:100%">
+  <tr>
+    <td>Professional Direct Support </td>
+    <td>Provides a cohesive support experience with exceptional tools and resources to accommodate customer needs during all stages of the customer lifecycle. One-hour response times for critical issues, around the clock problem resolution, escalation services, proactive advisory services and ask-the-experts webinars.  </td>
+  </tr><tr>
+    <td>Premier/Unified Support</td>
+    <td>A comprehensive support solution for all Microsoft enterprise technologies, including Microsoft Dynamics 365, Microsoft Azure, and Microsoft 365 across the cloud, hybrid, and on-premises. Includes around the clock problem resolution, proactive advisory services, onsite support, and add-on services to customize your support experience</td>
+  </tr>
+  </table>
+  
 ### What is a preview (beta) service or feature?
 
 Microsoft may provide access to Dynamics 365 apps preview, beta, or other prerelease features, services, software, or regions, to obtain feedback and for evaluation purposes. There are many different kinds of preview services and features, with service availability and program access being the biggest differentiators:
@@ -132,7 +132,7 @@ When Microsoft offers you early access to Dynamics 365 apps preview services and
 
 - Support for Dynamics 365 apps services and features is provided only for "generally available" programs—see the previous question.
 Public preview and/or beta services may be supported through our [forums](https://community.dynamics.com/f) or other channels. 
-- Any technical support for a public preview service or feature is limited to break-fix scenarios and is available only in English with no 24/7 support available.
+- Any technical support for a public preview service or feature is limited to break-fix scenarios and is available only in English with no around the clock support available.
 
 ## Using Support
 
@@ -194,10 +194,10 @@ Initial Response Time is the period from when you submit your support request to
 
 |Severity level  |Customer's situation  |Initial Response Time  |
 |---------|---------|---------|
-|**Critical**     | **Critical business impact** <br /> Customer's business has significant loss or degradation of services and requires immediate attention.   | Unified Core/Advanced: < 1 hour, 24/7 <br /> Unified Performance: < 30 minutes, 24/7    |
-|**Severity A**    | **Critical business impact** <br /> Customer's business has significant loss or degradation of services and requires immediate attention.        |     Subscription: < 1 hour, 24/7 <br />ProDirect: < 1 hour, 24/7 <br /> Premier: < 1 hour, 24/7   |
-|**Severity B**    | **Moderate business impact** <br /> Customer's business has moderate loss or degradation of services, but work can reasonably continue in an impaired manner.  |Subscription: < 4 hours <br />ProDirect: < 2 hours <br />Premier: < 2 hours, 24/7   |
-|**Standard**     | **Standard business impact** <br /> Customer's business has moderate loss or degradation of services, but work can reasonably continue in an impaired manner. | Unified Core: < 8 hours, 24/7 <br />Unified Advanced/Performance: < 4 hours, 24/7    |
+|**Critical**     | **Critical business impact** <br /> Customer's business has significant loss or degradation of services and requires immediate attention.   | Unified Core/Advanced: < 1 hour, around the clock <br /> Unified Performance: < 30 minutes, around the clock    |
+|**Severity A**    | **Critical business impact** <br /> Customer's business has significant loss or degradation of services and requires immediate attention.        |     Subscription: < 1 hour, around the clock <br />ProDirect: < 1 hour, around the clock <br /> Premier: < 1 hour, around the clock   |
+|**Severity B**    | **Moderate business impact** <br /> Customer's business has moderate loss or degradation of services, but work can reasonably continue in an impaired manner.  |Subscription: < 4 hours <br />ProDirect: < 2 hours <br />Premier: < 2 hours, around the clock   |
+|**Standard**     | **Standard business impact** <br /> Customer's business has moderate loss or degradation of services, but work can reasonably continue in an impaired manner. | Unified Core: < 8 hours, around the clock <br />Unified Advanced/Performance: < 4 hours, around the clock    |
 |**Severity C**     | **Minimum business impact** <br />Customer's business is functioning with minor impediments of services.      | Subscription: < 8 hours <br /> ProDirect: < 4 hours <br />Premier: < 4 hours    |
 
 ### How quickly will you resolve my support request?
