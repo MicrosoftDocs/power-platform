@@ -2,7 +2,7 @@
 title: "Support for Microsoft Power Platform and customer engagement apps in Dynamics 365 | MicrosoftDocs"
 description: Information on support for Microsoft Power Platform and customer engagement apps in Dynamics 365
 ms.custom: ""
-ms.date: 03/05/2021
+ms.date: 03/17/2021
 ms.reviewer: ""
 ms.service: power-platform
 ms.suite: ""
@@ -107,7 +107,8 @@ We have designed our support plans to meet different business needs:
 - Technical support Break-fix issues are technical problems you experience while using services. "Break-fix" is an industry term that refers to "work involved in supporting a technology when it fails in the normal course of its function, which requires intervention by a support organization to be restored to working order."
 - How functionality works is not considered a break-fix issue but is more closely related to training. These "how-to" questions - or Advisory services - involve a transfer of knowledge and can often be answered by reviewing product documentation, raising a question in online community forums, or contacting a knowledgeable individual such as a partner. While there might be some elements of knowledge transfer involved in solving a break-fix issue, in general, assisted training is not included in support plans.
 
-### How does Professional Direct support compare to Premier/Unified  support? 
+### How does Professional Direct support compare to Premier/Unified support? 
+
 <table style="width:100%">
   <tr>
     <td>Professional Direct Support </td>
