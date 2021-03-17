@@ -137,19 +137,19 @@ A trial (subscription-based) environment lasts as long as the subscription is ac
    > [!div class="mx-imgBorder"] 
    > ![Check trial (subscription-based) expiration](media/subscription-expiration-date.png "Check trial (subscription-based) expiration")
 
-## Extend a trial 
+## Extend a trial (standard) environment
 
 Note the following:
 
-- Within the last 7 days before the trial environment is set to expire, the trial environment admin can do a self-service extension of the expiring environment. This adds an additional 30 days from the current expiration date.
-- There is only one self-service extension allowed per trial environment. To further retain the environment, it must be [converted to production](#convert-either-type-of-trial-environment-to-a-production-environment).
-- This only applies to standard trials. This does not apply to subscription-based trial environments since their lifetime is tied to the lifetime of the environment.
+- Within the last 7 days before the standard trial environment is set to expire, the trial environment admin can do a self-service extension of the expiring environment. This adds an additional 30 days from the original expiration date.
+- There is only one self-service extension allowed per standard trial environment. To further retain the environment, it must be [converted to production](#convert-either-type-of-trial-environment-to-a-production-environment).
 
-To extend a standard trial:
+
+**To extend a standard trial:**
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) with admin credentials.
 
-2. Go to **Environments**, and then select an expiring environment that has the **Extend trial** option. The **Extend trial** option appears when there are 7 days remaining before the environment expires.
+2. Go to **Environments**, and then select an expiring environment that has the **Extend trial** option. The **Extend trial** option appears when there are 7 days or less remaining before the environment expires.
 
    > [!div class="mx-imgBorder"] 
    > ![Extend a trial](media/extend-trial.png "Extend a trial")
@@ -158,12 +158,15 @@ To extend a standard trial:
 
 4. Read the notification and then select **Extend trial**. 
 
-Your trial will be extended 30 days from the previous expiration date.
+Your trial will be extended 30 days from the original expiration date.
 
-To extend a subscription trial:
+## Extend a trial (subscription-based) environment
 
-- Partners can request an extension of offer-based trials on behalf of their customer. See https://transform.microsoft.com/customer-trials.
-- Customer admins can request a single extension in the Microsoft 365 admin center. See https://docs.microsoft.com/microsoft-365/commerce/extend-your-trial?view=o365-worldwide. Note, that while these instructions are for Microsoft 365, they apply equally to Dynamics 365 admin trials and other Power Platform admin trials.
+The expiration of subscription-based trial (also know as admin trial) environments is tied to the expiration of the subscription. Therefore, subscription-based trial environments cannot be independently extended. There are limited options for extending admin trial subscriptions which affects extending the expiration of any associated trial environments.
+
+**To extend a subscription-based (admin) trial:**
+
+Partners can request an extension of offer-based trials on behalf of their customer. See https://transform.microsoft.com/customer-trials.
 
 ## Convert either type of trial environment to a production environment
 
