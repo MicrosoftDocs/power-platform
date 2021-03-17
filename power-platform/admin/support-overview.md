@@ -119,15 +119,14 @@ We have designed our support plans to meet different business needs:
   </tr>
   </table>
   
-## What is a preview (beta) service or feature?
+
+### What is a preview (beta) service or feature?
 
 Microsoft may provide access to Dynamics 365 apps preview, beta, or other prerelease features, services, software, or regions, to obtain feedback and for evaluation purposes. There are many different kinds of preview services and features, with service availability and program access being the biggest differentiators:
 
 - **Public Preview**: Made available to subscribers through the Power Platform admin center or Lifecycle Services, these services are intended to give subscribers an early look into what is coming and a chance to test upcoming services and features.
 - **Private Preview**: Provided only to a small subset of customers, in direct contact with the engineering teams, focused on direct and constant feedback during the development phase of a service.
 - **Limited Preview**: A fixed and limited number of customers can have access to this preview program, and once a maximum threshold is met, no more users are allowed into the program.
-
-### What is a preview (beta) service or feature?
 
 When Microsoft offers you early access to Dynamics 365 apps preview services and features, these preview services and features are subject to reduced or different service terms as set forth in your service agreement and the preview supplemental terms. Preview services and features are provided "as-is," "with all faults," and "as available," and are excluded from the Service SLAs or any Limited Warranties provided by Microsoft for services released to general availability (GA), and are made available to you on the condition that you agree to these terms of use, which supplement your agreement governing use of customer engagement apps.
 
