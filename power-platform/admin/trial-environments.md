@@ -162,7 +162,7 @@ Your trial will be extended 30 days from the original expiration date.
 
 ## Extend a trial (subscription-based) environment
 
-The expiration of subscription-based trial (also know as admin trial) environments is tied to the expiration of the subscription. Therefore, subscription-based trial environments cannot be independently extended. There are limited options for extending admin trial subscriptions which affects extending the expiration of any associated trial environments.
+The expiration of subscription-based trial (also know as an admin trial) environments is tied to the expiration of the subscription. Therefore, subscription-based trial environments cannot be independently extended. There are limited options for extending admin trial subscriptions which affects extending the expiration of any associated trial environments.
 
 **To extend a subscription-based (admin) trial:**
 
