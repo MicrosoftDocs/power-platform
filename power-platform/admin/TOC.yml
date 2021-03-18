@@ -137,19 +137,19 @@
         - name: Business 
           items:
           - name: Business closures 
-            href: https://docs.microsoft.com/dynamics365/customer-service/set-when-business-closed-csh
+            href: /dynamics365/customer-service/set-when-business-closed-csh
           - name: Fiscal year
             href: work-fiscal-year-settings.md
           - name: Connection roles
-            href: https://docs.microsoft.com/dynamics365/customerengagement/on-premises/basics/create-connections-view-relationships-between-records
+            href: /dynamics365/customerengagement/on-premises/basics/create-connections-view-relationships-between-records
           - name: Manage transactions with multiple currencies
             href: manage-transactions-with-multiple-currencies.md 
           - name: Queues
-            href: https://docs.microsoft.com/dynamics365/customer-service/set-up-queues-manage-activities-cases
+            href: /dynamics365/customer-service/set-up-queues-manage-activities-cases
           - name: Customize regional options
             href: customize-regional-options-admins.md 
           - name: Relationship roles
-            href: https://docs.microsoft.com/dynamics365/customerengagement/on-premises/basics/create-connections-view-relationships-between-records
+            href: /dynamics365/customerengagement/on-premises/basics/create-connections-view-relationships-between-records
           - name: Create or edit a site
             href: create-edit-site.md
           - name: Add resources to a site
@@ -165,7 +165,7 @@
           - name: Hierarchy security
             href: hierarchy-security.md
           - name: Mobile configuration
-            href: https://docs.microsoft.com/dynamics365/mobile-app/setup-mobile-offline-for-admin
+            href: /dynamics365/mobile-app/setup-mobile-offline-for-admin
           - name: Positions
             href: hierarchy-security.md#position-hierarchy
           - name: Security roles
@@ -189,17 +189,17 @@
         - name: Templates
           items:
           - name: Access team templates
-            href: https://docs.microsoft.com/dynamics365/customerengagement/on-premises/admin/about-team-templates
+            href: /dynamics365/customerengagement/on-premises/admin/about-team-templates
           - name: Article templates
             href: create-templates-articles.md
           - name: Contract templates
-            href: https://docs.microsoft.com/dynamics365/customer-service/create-entitlement-define-support-terms-customer
+            href: /dynamics365/customer-service/create-entitlement-define-support-terms-customer
           - name: Data import templates
             href: download-template-data-import.md
           - name: Document templates
-            href: https://docs.microsoft.com/dynamics365/customerengagement/on-premises/admin/work-with-templates
+            href: /dynamics365/customerengagement/on-premises/admin/work-with-templates
           - name: Email signatures
-            href: https://docs.microsoft.com/dynamics365/customerengagement/on-premises/basics/create-signature-dynamics-365-email-queue
+            href: /dynamics365/customerengagement/on-premises/basics/create-signature-dynamics-365-email-queue
           - name: Email templates
             href: create-templates-email.md
           - name: Mail merge templates
@@ -229,7 +229,7 @@
           - name: OneNote
             href: set-up-onenote-integration-in-dynamics-365.md
           - name: Outlook
-            href: https://docs.microsoft.com/dynamics365/outlook-app/deploy-dynamics-365-app-for-outlook
+            href: /dynamics365/outlook-app/deploy-dynamics-365-app-for-outlook
           - name: SharePoint document locations
             href: create-edit-document-location-records.md
           - name: SharePoint sites
@@ -241,13 +241,13 @@
         - name: Data management 
           items:
           - name: Add ready-to-use business process
-            href: https://docs.microsoft.com/dynamics365/customerengagement/on-premises/customize/add-ready-use-business-processes
+            href: /dynamics365/customerengagement/on-premises/customize/add-ready-use-business-processes
           - name: Announcements
             href: settings-announcements.md
           - name: Auto-numbering prefixes
             href: change-auto-number-prefix-contract-case-article-quote-order-invoice-campaign-category-knowledge-articles.md 
           - name: Automatic record creation policies
-            href: https://docs.microsoft.com/dynamics365/customer-engagement/customer-service/set-up-rules-to-automatically-create-or-update-records
+            href: /dynamics365/customer-engagement/customer-service/set-up-rules-to-automatically-create-or-update-records
           - name: Bulk deletion
             href: delete-bulk-records.md
           - name: Data import wizard
@@ -263,7 +263,7 @@
           - name: Asynchronous processing of cascading transactions
             href: async-cascading.md
           - name: Imports
-            href: https://docs.microsoft.com/dynamics365/customerengagement/on-premises/basics/import-accounts-leads-other-data 
+            href: /dynamics365/customerengagement/on-premises/basics/import-accounts-leads-other-data
           - name: Sample data
             href: add-remove-sample-data.md
         - name: Encryption
@@ -275,7 +275,7 @@
           - name: All legacy settings
             href: set-up-business-management-options.md
           - name: Dynamics 365 for Outlook
-            href: https://docs.microsoft.com/dynamics365/outlook-app/deploy-dynamics-365-app-for-outlook
+            href: /dynamics365/outlook-app/deploy-dynamics-365-app-for-outlook
         - name: System 
           items: 
           - name: Overview
@@ -351,7 +351,7 @@
       - name: Configure user access to an environment
         href: control-user-access.md  
       - name: View user profile
-        href: https://docs.microsoft.com/powerapps/user/view-your-user-profile
+        href: /powerapps/user/view-your-user-profile
       - name: Assign security roles
         items:  
         - name: About security roles and privileges
@@ -431,7 +431,7 @@
       - name: Manage Power Automate flows
         href: manage-power-automate.md
       - name: Portal administration
-        href: https://docs.microsoft.com/powerapps/maker/portals/admin/power-platform-admin-center
+        href: /powerapps/maker/portals/admin/power-platform-admin-center
     - name: Activity logging
       items: 
       - name: Power Apps activity logging
@@ -463,13 +463,13 @@
         - name: Creating a service principal
           href: powershell-create-service-principal.md
         - name: Cmdlet Reference
-          href: https://docs.microsoft.com/powershell/module/microsoft.powerapps.administration.powershell/?view=pa-ps-latest
+          href: /powershell/module/microsoft.powerapps.administration.powershell/?view=pa-ps-latest
       - name: Connectors
         items:
         - name: Getting started
           href: connectors-getting-started.md
         - name: Connector reference
-          href: https://docs.microsoft.com/connectors/powerplatformforadmins/
+          href: /connectors/powerplatformforadmins/
       - name: Power Platform API
         items:
         - name: Getting started
@@ -682,7 +682,7 @@
       - name: Overview
         href: integrate-synchronize-your-email-system.md 
       - name: Deploy Dynamics 365 App for Outlook
-        href: https://docs.microsoft.com/dynamics365/customer-engagement/outlook-app/deploy-dynamics-365-app-for-outlook
+        href: /dynamics365/customer-engagement/outlook-app/deploy-dynamics-365-app-for-outlook
       - name: Enable accessible email flow
         href: deploy-email-unified-interface.md 
       - name: Server-side sync overview
@@ -758,7 +758,7 @@
       - name: Enable Power Automate integration
         href: enable-embedded-flow-in-your-organization.md 
       - name: "Preview feature: Live Assist powered by Café X"
-        href: https://docs.microsoft.com/dynamics365/customer-engagement/live-assist/live-assist-microsoft-dynamics-365-powered-by-cafe-x
+        href: /dynamics365/customer-engagement/live-assist/live-assist-microsoft-dynamics-365-powered-by-cafe-x
       - name: Use Power BI
         href: use-power-bi.md 
       - name: Install, update, or remove a preferred solution
@@ -772,7 +772,7 @@
         - name: Connect to SharePoint Online
           href: set-up-dynamics-365-online-to-use-sharepoint-online.md 
         - name: Set up Microsoft Teams integration
-          href: https://docs.microsoft.com/dynamics365/teams-integration/teams-install-app
+          href: /dynamics365/teams-integration/teams-install-app
         - name: Skype for Business and Skype integration
           href: skype-business-integration.md 
         - name: Set up Skype or Skype for Business
@@ -898,7 +898,6 @@
   - name: International availability
     href: ../availability.md
   - name: Adoption best practices
-    href: /power-platform/guidance/adoption/methodology
+    href: ../guidance/adoption/methodology.md
   - name: Center of Excellence (CoE) Kit
-    href: /power-platform/guidance/coe/starter-kit
-    
+    href: ../guidance/coe/starter-kit.md

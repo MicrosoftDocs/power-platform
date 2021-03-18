@@ -57,7 +57,7 @@ The following are the Power Automate and Power Apps activities that are logged:
 > [!IMPORTANT]
 > In order to take advantage of the activity logging, you must turn on audit logging in the tenant before data is available for viewing.
 
-This is completed via the following PowerShell commands. More information: [Turn Audit Log Search On or Off](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off). It might take several hours after you turn on audit log search before you can return results when you search the audit log.
+This is completed via the following PowerShell commands. More information: [Turn Audit Log Search On or Off](/microsoft-365/compliance/turn-audit-log-search-on-or-off). It might take several hours after you turn on audit log search before you can return results when you search the audit log.
 
 ```powershell
 Enable-OrganizationCustomization
@@ -73,7 +73,7 @@ Add-RoleGroupMember "Compliance Management" -Member user1
 > [!NOTE]
 > This will give the user access to view all audit log entries. There's no way to restrict access to only view Power Apps and Power Automate log entries.
 
-If your organization uses a Security Information and Event Management (SIEM) server, you can learn how to enable integration with activity logging. More information: [SIEM Server Integration](https://docs.microsoft.com/microsoft-365/security/office-365-security/siem-server-integration)
+If your organization uses a Security Information and Event Management (SIEM) server, you can learn how to enable integration with activity logging. More information: [SIEM Server Integration](/microsoft-365/security/office-365-security/siem-server-integration)
 
 You might also find Microsoft Compliance Manager helpful to manage your compliance efforts across Microsoft cloud services in a single place. More information: [Compliance Manager](https://aka.ms/compliancemanager)
 

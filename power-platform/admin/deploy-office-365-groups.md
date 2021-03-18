@@ -93,7 +93,7 @@ Once installation of the solution has completed, you can configure Microsoft 365
   
 All of your pending system customizations will be published, including those you may have saved but not published in another area.  
   
-You're now ready to use Microsoft 365 Groups. See [Collaborate with your colleagues using Microsoft 365 groups](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/basics/collaborate-with-colleagues-using-office-365-groups).  
+You're now ready to use Microsoft 365 Groups. See [Collaborate with your colleagues using Microsoft 365 groups](/dynamics365/customerengagement/on-premises/basics/collaborate-with-colleagues-using-office-365-groups).  
   
 ## Use the Microsoft 365 Connectors for Groups  
  Use the Microsoft 365 Connectors for Groups to connect new or existing Microsoft 365 Groups with customer engagement apps so the group is notified when new activities are posted. To set it up, follow these steps:  
@@ -141,7 +141,7 @@ You're now ready to use Microsoft 365 Groups. See [Collaborate with your colleag
  When a user leverages the Microsoft 365 groups feature to connect an Office Group to customer engagement apps, data (including new conversations and documents) will be stored on the Exchange and/or SharePoint system and shared with the members of that Office Group, even if they are not licensed or authorized users. Users will only be able to share the data that they have access to, and Administrators can limit the data that is shared by limiting the access privileges of their users.  
   
 ### See also  
- [Collaborate with your colleagues using Microsoft 365 groups](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/basics/collaborate-with-colleagues-using-office-365-groups)   
+ [Collaborate with your colleagues using Microsoft 365 groups](/dynamics365/customerengagement/on-premises/basics/collaborate-with-colleagues-using-office-365-groups)   
  [CRM Blog: Dynamics CRM Online connector for Microsoft 365 groups](https://blogs.msdn.microsoft.com/crm/2016/04/01/dynamics-crm-online-connector-for-office-365-groups/)   
  [Set up customer engagement apps to use Exchange Online](connect-exchange-online.md)   
 

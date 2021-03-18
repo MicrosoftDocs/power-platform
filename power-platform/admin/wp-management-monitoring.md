@@ -28,11 +28,11 @@ Out-of-the-box tooling around monitoring, alert, and actions falls into the foll
 
 **Management and Admin Connectors** offer the ability to use the platform's own tools to manage and monitor itself. Part of the out-of-the-box available 275+ connectors and approval process capabilities are five admin-specific connectors you should be familiar with.
 
-- **Power Automate Management connector** is specifically designed to help with administrative management and monitoring ([https://docs.microsoft.com/connectors/flowmanagement](https://docs.microsoft.com/connectors/flowmanagement/)).
-- **Microsoft Flow for Admins** allows you to perform typical admin actions, such as disabling a flow or deleting a flow ([https://docs.microsoft.com/connectors/microsoftflowforadmins/](https://docs.microsoft.com/connectors/microsoftflowforadmins/)).
-- **Power Apps for Admins connector** can be used to set permissions on Power Apps or set permissions to a certain connector being used by this app ([https://docs.microsoft.com/connectors/powerappsforadmins/](https://docs.microsoft.com/connectors/powerappsforadmins/)).
-- **PowerApps for App Makers** can be used by the makers themselves, though some actions being an overlay to administrational tasks, such as settings permissions to a Power Apps app as mentioned previously ([https://docs.microsoft.com/connectors/powerappsforappmakers/](https://docs.microsoft.com/connectors/powerappsforappmakers/)).
-- **Power Platform for Admins** can be used to perform tasks against platform components, such as creating an environment or provisioning a Microsoft Dataverse database or creating a DLP policy for a specific environment ([https://docs.microsoft.com/connectors/powerplatformforadmins/](https://docs.microsoft.com/connectors/powerplatformforadmins/)).
+- **Power Automate Management connector** is specifically designed to help with administrative management and monitoring ([https://docs.microsoft.com/connectors/flowmanagement](/connectors/flowmanagement/)).
+- **Microsoft Flow for Admins** allows you to perform typical admin actions, such as disabling a flow or deleting a flow ([https://docs.microsoft.com/connectors/microsoftflowforadmins/](/connectors/microsoftflowforadmins/)).
+- **Power Apps for Admins connector** can be used to set permissions on Power Apps or set permissions to a certain connector being used by this app ([https://docs.microsoft.com/connectors/powerappsforadmins/](/connectors/powerappsforadmins/)).
+- **PowerApps for App Makers** can be used by the makers themselves, though some actions being an overlay to administrational tasks, such as settings permissions to a Power Apps app as mentioned previously ([https://docs.microsoft.com/connectors/powerappsforappmakers/](/connectors/powerappsforappmakers/)).
+- **Power Platform for Admins** can be used to perform tasks against platform components, such as creating an environment or provisioning a Microsoft Dataverse database or creating a DLP policy for a specific environment ([https://docs.microsoft.com/connectors/powerplatformforadmins/](/connectors/powerplatformforadmins/)).
 
 Check out the Admin-in-a-day content that can be found in the GitHub repository ([https://aka.ms/powerapps/admininaday](https://aka.ms/powerapps/admininaday)) that walks you through examples via hands-on labs with step-by-step instructions. 
 

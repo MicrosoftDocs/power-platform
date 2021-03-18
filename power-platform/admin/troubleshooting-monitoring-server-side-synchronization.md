@@ -142,7 +142,7 @@ If you create an email message in customer engagement apps (Dynamics 365 Sales, 
   
  For more information on configuring [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] impersonation and granting mailbox access, see:  
   
--   [Configuring Exchange Impersonation](https://technet.microsoft.com/library/bb204095.aspx)  
+-   [Configuring Exchange Impersonation](/previous-versions/office/developer/exchange-server-2010/bb204095(v=exchg.140))  
   
 -   [Allow Mailbox Access](https://technet.microsoft.com/library/aa996343\(v=exchg.141\).aspx)  
   
@@ -260,7 +260,7 @@ This is a known issue and is not supported. If the organizer is someone outside 
  Changes made to Service Appointments and Activities will update in [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)] when you synchronize but the reverse is not true. When you make changes to Service Appointments or Activities in [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)], the changes are not synchronized to customer engagement apps. Service appointments are scheduled by an agent and need free/busy information for resources available only in customer engagement apps.  
   
 ### Be aware of Exchange Online receiving and sending limits  
- For enterprise customers with a large mail flow, make sure you're not running up against Exchange Online receiving and sending limits. See [Exchange Online Limits](https://technet.microsoft.com/library/exchange-online-limits.aspx)  
+ For enterprise customers with a large mail flow, make sure you're not running up against Exchange Online receiving and sending limits. See [Exchange Online Limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits)  
   
 ### See also  
 [Server-side synchronization](../admin/server-side-synchronization.md) 

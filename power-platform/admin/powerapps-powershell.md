@@ -24,13 +24,13 @@ search.app:
 With PowerShell cmdlets for app creators and administrators, you can automate many of the monitoring and management tasks that are only possible manually today in [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 ## Cmdlets
-[Cmdlets](https://docs.microsoft.com/powershell/scripting/developer/cmdlet/cmdlet-overview) are functions written in PowerShell script language that execute commands in the Windows PowerShell environment. Running these Power Apps cmdlets will allow you to interact with your Business Application Platform without having to go through the admin portal in a web browser. You can combine these cmdlets with other PowerShell functions to write complex scripts that can optimize your workflow. Note that you can still use the cmdlets if you're not an admin on the tenant, but you will be limited to the resources you own. Cmdlets that start with the word 'Admin' are designed to be used by an administrative user account.
+[Cmdlets](/powershell/scripting/developer/cmdlet/cmdlet-overview) are functions written in PowerShell script language that execute commands in the Windows PowerShell environment. Running these Power Apps cmdlets will allow you to interact with your Business Application Platform without having to go through the admin portal in a web browser. You can combine these cmdlets with other PowerShell functions to write complex scripts that can optimize your workflow. Note that you can still use the cmdlets if you're not an admin on the tenant, but you will be limited to the resources you own. Cmdlets that start with the word 'Admin' are designed to be used by an administrative user account.
 
 Cmdlets are available on the PowerShell gallery as two separate modules: 
 - [Administrator](https://www.powershellgallery.com/packages/Microsoft.PowerApps.Administration.PowerShell)
 - [Maker](https://www.powershellgallery.com/packages/Microsoft.PowerApps.PowerShell) 
 
-For information on the Power Apps admin module, see [Get started using the Power Apps admin module](https://docs.microsoft.com/powershell/powerapps/get-started-powerapps-admin) and [Microsoft.PowerApps.Administration.PowerShell](https://docs.microsoft.com/powershell/module/microsoft.powerapps.administration.powershell).
+For information on the Power Apps admin module, see [Get started using the Power Apps admin module](/powershell/powerapps/get-started-powerapps-admin) and [Microsoft.PowerApps.Administration.PowerShell](/powershell/module/microsoft.powerapps.administration.powershell).
 
 > [!NOTE]
 > **Regarding Dynamics 365 Government Community Cloud (GCC) level 2 support:**
@@ -48,7 +48,7 @@ PowerShell in this topic requires PowerShell version 5.x. To check the version o
 > $PSVersionTable.PSVersion
 > ```
 
-If you have an outdated version, see [Upgrading existing Windows PowerShell](https://docs.microsoft.com/powershell/scripting/windows-powershell/install/installing-windows-powershell#upgrading-existing-windows-powershell).
+If you have an outdated version, see [Upgrading existing Windows PowerShell](/powershell/scripting/windows-powershell/install/installing-windows-powershell#upgrading-existing-windows-powershell).
 
 > [!IMPORTANT]
 > The modules described in this document, use .NET Framework. This makes it incompatible with PowerShell 6.0 and later, which uses .NET Core. 
@@ -128,7 +128,7 @@ To perform the administration operations in the admin cmdlets, you'll need the f
 
 - A user with any of these roles, Global admins, Azure Active Directory Global admins, or Dynamics 365 admin, can access the Power Apps admin PowerShell cmdlets. These roles no longer require a Power Apps plan for administrative access to the Power Apps admin PowerShell cmdlets. However, these administrators need to sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) at least once before using the PowerShell cmdlets. If this is not done, the cmdlets will fail with an authorization error.
 
-- [Microsoft 365 Global admin](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) or an [Azure Active Directory Global Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal), or [Dynamics 365 admin](global-service-administrators-can-administer-without-license.md) permissions if you need to search through another user's resources. Note that Environment Admins only have access to those environments and environment resources for which they have permissions.
+- [Microsoft 365 Global admin](/microsoft-365/admin/add-users/about-admin-roles) or an [Azure Active Directory Global Administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal), or [Dynamics 365 admin](global-service-administrators-can-administer-without-license.md) permissions if you need to search through another user's resources. Note that Environment Admins only have access to those environments and environment resources for which they have permissions.
 
 ### Cmdlet list - Admin Cmdlets
 
@@ -414,7 +414,7 @@ Returns a list of all custom connector details in the tenant.
 ### Data loss prevention (DLP) policy commands 
 
 > [!NOTE]
-> The ability to block connectors by using a three-way classification&mdash;**Business**, **Non-Business**, and **Blocked**&mdash;in addition to DLP policy UI support in the Power Platform admin center are currently in public preview. There is new DLP policy PowerShell support for three-way DLP policy classification, which is also in public preview. Legacy DLP policy support for two-way classification (**Business** and **Non-Business**), along with admin center UI and PowerShell support for two-way classification, are currently generally available and will continue to be available for the foreseeable future. More information: [Connectors documentation](https://docs.microsoft.com/connectors/)
+> The ability to block connectors by using a three-way classification&mdash;**Business**, **Non-Business**, and **Blocked**&mdash;in addition to DLP policy UI support in the Power Platform admin center are currently in public preview. There is new DLP policy PowerShell support for three-way DLP policy classification, which is also in public preview. Legacy DLP policy support for two-way classification (**Business** and **Non-Business**), along with admin center UI and PowerShell support for two-way classification, are currently generally available and will continue to be available for the foreseeable future. More information: [Connectors documentation](/connectors/)
 
 These cmdlets control the DLP policies on your tenant.
 
@@ -467,8 +467,8 @@ The allowed consent plans cmdlets can be used to add or remove access to a parti
 If you have any comments, suggestions, or questions, post them on the [Administering Power Apps community board](https://powerusers.microsoft.com/t5/Administering-PowerApps/bd-p/Admin_PowerApps).
 
 ### See also
-[Get started using the Power Apps admin module](https://docs.microsoft.com/powershell/powerapps/get-started-powerapps-admin) <br />
-[Microsoft.PowerApps.Administration.PowerShell](https://docs.microsoft.com/powershell/module/microsoft.powerapps.administration.powershell)
+[Get started using the Power Apps admin module](/powershell/powerapps/get-started-powerapps-admin) <br />
+[Microsoft.PowerApps.Administration.PowerShell](/powershell/module/microsoft.powerapps.administration.powershell)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
