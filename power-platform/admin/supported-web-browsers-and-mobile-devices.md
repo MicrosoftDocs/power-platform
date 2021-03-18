@@ -34,7 +34,7 @@ For more detailed information about supported browsers, see [Web application req
 For a mobile device, such as an iPad or smartphone, the following apps are available for model-driven apps and Dynamics 365 apps (such as Dynamics 365 Sales and Dynamics 365 Marketing):
 
 - [Power Apps mobile](/powerapps/user/run-canvas-and-model-apps-on-mobile) app  
-- [Dynamics 365 for phones and Dynamics 365 for tablets](https://docs.microsoft.com/dynamics365/mobile-app/install-dynamics-365-for-phones-and-tablets)
+- [Dynamics 365 for phones and Dynamics 365 for tablets](/dynamics365/mobile-app/install-dynamics-365-for-phones-and-tablets)
   
 > [!NOTE]
 > - Users who try to view model-driven apps on an unsupported browser are redirected to the Unified Interface experience. For more information, see [Unified Interface Overview](about-unified-interface.md).  
@@ -51,7 +51,7 @@ For a mobile device, such as an iPad or smartphone, the following apps are avail
  If you export an [!INCLUDE[pn_MS_Excel_Full](../includes/pn-ms-excel-full.md)] worksheet as a Dynamic Worksheet while using [!INCLUDE[tn_Safari](../includes/tn-safari.md)], you may receive an error when trying to open the file. To remedy this, right-click the file, click **Get Info**, and, under **Open With**, select [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)].  
   
 ### See Also  
- [Supported web browsers and mobile devices - earlier versions](https://technet.microsoft.com/library/dn531055.aspx)
+ [Supported web browsers and mobile devices - earlier versions](/previous-versions/dynamicscrm-2016/administering-dynamics-365/dn531055(v=crm.8))
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

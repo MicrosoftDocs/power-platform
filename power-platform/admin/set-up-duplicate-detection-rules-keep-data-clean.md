@@ -89,8 +89,8 @@ To maintain the integrity of your data, it's a good idea to have rules in place 
 ### See also  
  [Turn duplicate detection rules on or off for the whole organization](../admin/turn-duplicate-detection-rules-off-whole-organization.md)<br />
  [Run bulk system jobs to detect duplicate records](../admin/run-bulk-system-jobs-detect-duplicate-records.md)<br />
- [Merge duplicate records for accounts, contacts, or leads](https://docs.microsoft.com/powerapps/user/merge-duplicate-records)<br />
- [Developer's Guide: Duplicate Rule entities](https://docs.microsoft.com/powerapps/developer/common-data-service/duplicaterule-entities)
+ [Merge duplicate records for accounts, contacts, or leads](/powerapps/user/merge-duplicate-records)<br />
+ [Developer's Guide: Duplicate Rule entities](/powerapps/developer/common-data-service/duplicaterule-entities)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

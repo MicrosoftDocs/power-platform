@@ -59,10 +59,10 @@ To remove personal data:
 
 ## Remove user personal data using Web services
 
-You can also update the data for a disabled user using the Web API or Organization service. The user information is stored in the [SystemUser](https://docs.microsoft.com/powerapps/developer/common-data-service/reference/entities/systemuser) entity, and you can update data in any of the [writeable attributes](https://docs.microsoft.com/powerapps/developer/common-data-service/reference/entities/systemuser#writable-attributes) in the SystemUser entity. For examples about updating data in a record, see: 
+You can also update the data for a disabled user using the Web API or Organization service. The user information is stored in the [SystemUser](/powerapps/developer/common-data-service/reference/entities/systemuser) entity, and you can update data in any of the [writeable attributes](/powerapps/developer/common-data-service/reference/entities/systemuser#writable-attributes) in the SystemUser entity. For examples about updating data in a record, see: 
 
-- [Update and delete entities using the Web API](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/update-delete-entities-using-web-api)
-- [Use the Entity class for create, update and delete](https://docs.microsoft.com/powerapps/developer/common-data-service/org-service/entity-operations-update-delete)
+- [Update and delete entities using the Web API](/powerapps/developer/common-data-service/webapi/update-delete-entities-using-web-api)
+- [Use the Entity class for create, update and delete](/powerapps/developer/common-data-service/org-service/entity-operations-update-delete)
 
 ### See also
 [Analyze and share your data with Excel templates](analyze-your-data-with-excel-templates.md)<br/>
