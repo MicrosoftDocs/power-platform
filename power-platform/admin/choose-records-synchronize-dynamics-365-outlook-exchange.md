@@ -38,7 +38,7 @@ The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service,
    ![Online synchronization filters](media/online-sync-filters-dialog-box2.png "Online synchronization filters")  
   
    > [!NOTE]
-   > If you're a system administrator, you can create or modify organization-wide filters (system filters) through the SDK. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Tell me more about system filters](https://docs.microsoft.com/powerapps/developer/common-data-service/outlook-client/offline-outlook-filters-templates) 
+   > If you're a system administrator, you can create or modify organization-wide filters (system filters) through the SDK. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Tell me more about system filters](/powerapps/developer/common-data-service/outlook-client/offline-outlook-filters-templates) 
   
 4. Do one of the following:  
   
