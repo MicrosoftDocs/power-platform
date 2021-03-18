@@ -17,19 +17,28 @@ search.app:
   - D365CE
 ---
 
-# Available GitHub Actions for Microsoft Power Platform (Preview)
+# Available GitHub Adminstrative Actions for Microsoft Power Platform (Preview)
 
 [This topic is pre-release documentation and is subject to change.]
 
-Available GitHub Actions for Microsoft Power Platform are described in the following sections. In addition, example GitHub workflows using some of these actions are showcased. For more information about GitHub Actions and how to download them, go to [GitHub Actions for Microsoft Power Platform](devops-github-actions.md).
+Available GitHub Actions for administrative functions for Microsoft Power Platform are described in the following sections. 
 
 ## Configure deployment credentials
 
-Many of the actions require you to connect to a Microsoft Dataverse environment. You can add credentials as secrets in your the GitHub repository and then use them in the workflow.
+Many of the actions require you to connect to a Microsoft Dataverse environment. You can add service principal or user credentials as secrets in your the GitHub repository and then use them in the workflow.<br/>
+For details on how to setup secrets in GitHub please refer to [the following article on GitHub](https://docs.github.com/en/actions/reference/encrypted-secrets#using-encrypted-secrets-in-a-workflow) <br/>
+To learn how to setup service principal authentication for Power Platform please refer to [following document](https://docs.microsoft.com/en-us/power-platform/alm/devops-build-tools#configure-service-connections-using-a-service-principal)<br/>
 
-## Helper tasks
+Once configured properly you can call the Service Principal from with in your Action scripts <br/>
+Parameters to define within your GitHub Action Script as [Environment Variables](https://docs.github.com/en/actions/reference/environment-variables): <br/>
+Application Id such as: `WF_APPLICATION_ID:<your application id>` <br/>
+Tenant Id such as: `WF_TENANT_ID:<your tenant id>` <br/>
 
-The available helper tasks are described below.
+The Client Secret will be stored as a GitHub Secret, as described earlier and will be referenced from within the action script using a parameter like: <br/>
+`client secret: ${{secrets.CLIENT_SECRET_GITHUB_ACTIONS}}` <br/>
+## Administrative tasks
+
+The administrative tasks are explained 
 
 ### Microsoft Power Platform WhoAmI
 
