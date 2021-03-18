@@ -46,7 +46,7 @@ Code snippets used in this document are from [relay bot sample code](https://git
 
 ### References
 The instructions in this document reference the following:
-- [Deploy your bot to Azure](https://aka.ms/azuredeployment) for instructions on deploying the Azure Bot Service bot.
+- [Deploy your bot to Azure](/azure/bot-service/bot-builder-deploy-az-cli) for instructions on deploying the Azure Bot Service bot.
 - [Azure Bot Service Channels](/azure/bot-service/bot-service-manage-channels?view=azure-bot-service-4.0&preserve-view=true) to connect to any Azure Bot Service-supported channel.
 - [Azure Bot Service debug with the emulator](/azure/bot-service/bot-service-debug-emulator?view=azure-bot-service-4.0&tabs=csharp&preserve-view=true) for instructions on debugging the Azure Bot Service bot.
 
@@ -200,7 +200,7 @@ The following example uses samples from the [relay bot sample code](https://gith
 An example of response parsing can be found in the [relay bot sample code](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/RelayBotSample) ResponseConverter.cs.
 
 ## Deploy to Azure Bot Service
-After you have your Azure Bot Service relay bot ready, you need to [deploy the bot to your Azure Bot Service](https://aka.ms/azuredeployment). 
+After you have your Azure Bot Service relay bot ready, you need to [deploy the bot to your Azure Bot Service](/azure/bot-service/bot-builder-deploy-az-cli). 
 
 
 ## Set up Azure Bot Service channels
