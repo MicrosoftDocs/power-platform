@@ -263,15 +263,15 @@ Default, production, and sandbox environments are counted for consumption. Trial
 Tables ending in “– Analytics” are tables used by one or more Insights applications, for example Sales Insights, Customer Service Hub, or Field Service and resource scheduling and optimization analytics dashboard to generate predictive insights and/or analytics dashboards. The data is synched from Dataverse tables. See **More information** below for documentation covering the installed Insights applications and the tables used to create insights and dashboards.
 
 **More information:**
-- [Sales Insights ](https://docs.microsoft.com/dynamics365/ai/sales/help-hub#get-started)
-- [Field Service and resource scheduling optimization (RSO)](https://docs.microsoft.com/dynamics365/field-service/scheduling-analytics-reports)                                                                                             
-- [Customer Service Hub](https://docs.microsoft.com/dynamics365/customer-service/customer-service-analytics-insights-csh) 
-- [Field Service](https://docs.microsoft.com/dynamics365/field-service/reports) 
+- [Sales Insights ](/dynamics365/ai/sales/help-hub#get-started)
+- [Field Service and resource scheduling optimization (RSO)](/dynamics365/field-service/scheduling-analytics-reports)                                                                                             
+- [Customer Service Hub](/dynamics365/customer-service/customer-service-analytics-insights-csh) 
+- [Field Service](/dynamics365/field-service/reports) 
 
 ### See also
 
 [Capacity add-ons](capacity-add-on.md)<br />
-[Automatic tuning in Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-automatic-tuning) <br />
+[Automatic tuning in Azure SQL Database](/azure/sql-database/sql-database-automatic-tuning) <br />
 [What's new in storage](whats-new-storage.md) <br />
 [Free up storage space](free-storage-space.md) <br />
 

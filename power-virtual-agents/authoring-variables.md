@@ -79,7 +79,7 @@ In the bot authoring canvas, add a question node by choosing **Ask a question**.
 
 **Create a variable:**
 
-1. Go to the [**Topics page**](getting-started-create-topics.md) for the bot you want to edit.
+1. Go to the [**Topics page**](./authoring-create-edit-topics.md) for the bot you want to edit.
 
 1. Open the authoring canvas for the topic you want to add a variable to.
 

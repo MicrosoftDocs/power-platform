@@ -43,7 +43,7 @@ When you enable auditing, customer engagement apps (Dynamics 365 Sales, Dynamics
   
 ### See also  
 [Audit data and user activity](audit-data-user-activity.md)<br />
-[Retrieve and delete the history of audited data changes](https://docs.microsoft.com/powerapps/developer/common-data-service/retrieve-and-delete-the-history-of-audited-data-changes)
+[Retrieve and delete the history of audited data changes](/powerapps/developer/common-data-service/retrieve-and-delete-the-history-of-audited-data-changes)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -420,7 +420,7 @@ Tables and tables fields enabled for Relevance Search have an impact on the data
 
 ## Free up storage used by flow approvals
 
-See [Delete approval history from Power Automate](https://docs.microsoft.com/power-automate/gdpr-dsr-delete#delete-approval-history-from-power-automate).
+See [Delete approval history from Power Automate](/power-automate/gdpr-dsr-delete#delete-approval-history-from-power-automate).
 
 ### See also
 [Dataverse storage capacity](capacity-storage.md)

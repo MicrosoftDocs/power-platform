@@ -30,7 +30,7 @@ This article describes managing data sources. For information on managing gatewa
 > ![Data sources tab](media/data-gateways-tenant-admin-off-data-sources.png "Data sources tab")
 
 - **Data Source Name**: The name of the data source.
-- **Data source type**: The type of the data source. For supported data sources, see [Power BI data sources](https://docs.microsoft.com/power-bi/connect-data/power-bi-data-sources).
+- **Data source type**: The type of the data source. For supported data sources, see [Power BI data sources](/power-bi/connect-data/power-bi-data-sources).
 - **Users**: Users who can use this data source in data sets and data flows.
 - **Status**: Select (![Check status](media/gateway-status.png "Check status")) to check the status of a gateway member.
 - **Gateway cluster name**: The gateway cluster on which this data source was created. If it is a cloud data source, this value will be “Cloud”.
@@ -46,7 +46,7 @@ Select a data source and then select **Settings** to see the following informat
 > ![Data source settings](media/data-gateways-data-source-settings.png "Data source settings")
 
 - **Data Source Name**: The name of the data source.
-- **Data source type**: The type of the data source. For supported data sources, see [Power BI data sources](https://docs.microsoft.com/power-bi/connect-data/power-bi-data-sources).
+- **Data source type**: The type of the data source. For supported data sources, see [Power BI data sources](/power-bi/connect-data/power-bi-data-sources).
 - **Connection details**: Connection information. Check back for updated information.
 - **Authentication Method**: The authentication method chosen for this connection.
 
@@ -90,8 +90,8 @@ Select **Search** to find data sources and see their details. You currently can
 Select a data source, and then select **Check status** (![Data source status](media/gateway-status.png "Data source status")) to see the status of a data source.
 
 ### See also
- [On-premises data gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-onprem)<br/>
- [Connecting to on-premises data sources with On-premises Data Gateway](https://docs.microsoft.com/azure/analysis-services/analysis-services-gateway)<br/>
+ [On-premises data gateway](/data-integration/gateway/service-gateway-onprem)<br/>
+ [Connecting to on-premises data sources with On-premises Data Gateway](/azure/analysis-services/analysis-services-gateway)<br/>
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

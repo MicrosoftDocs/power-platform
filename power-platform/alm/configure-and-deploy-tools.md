@@ -32,7 +32,7 @@ Configuration capture can't be automated.
 > [Microsoft.Xrm.Tooling.ConfigurationMigration](https://www.powershellgallery.com/packages/Microsoft.Xrm.Tooling.ConfigurationMigration/) module.
 
 For more information about using the tool, including how to download it, see
-[Move configuration data across environments and organizations with the Configuration Migration tool](https://docs.microsoft.com/power-platform/admin/manage-configuration-data).
+[Move configuration data across environments and organizations with the Configuration Migration tool](../admin/manage-configuration-data.md).
 
 ### See also
 

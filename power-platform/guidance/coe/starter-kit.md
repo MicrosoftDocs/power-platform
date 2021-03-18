@@ -45,12 +45,12 @@ Watch a quick overview of the CoE Starter Kit.
 
 ## Related resources
 
-[Microsoft Power Platform admin guide](/power-platform/admin/admin-documentation)<br/>
-[Application lifecycle management (ALM) with Microsoft Power Platform](/power-platform/alm)<br/>
-[Power BI documentation](https://docs.microsoft.com/power-bi)<br/>
-[Power Apps documentation](https://docs.microsoft.com/powerapps)<br/>
-[Power Automate documentation](https://docs.microsoft.com/power-automate)<br/>
-[Power Virtual Agents documentation](https://docs.microsoft.com/power-virtual-agents)
+[Microsoft Power Platform admin guide](../../admin/admin-documentation.md)<br/>
+[Application lifecycle management (ALM) with Microsoft Power Platform](../../alm/index.yml)<br/>
+[Power BI documentation](/power-bi)<br/>
+[Power Apps documentation](/powerapps)<br/>
+[Power Automate documentation](/power-automate)<br/>
+[Power Virtual Agents documentation](/power-virtual-agents)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

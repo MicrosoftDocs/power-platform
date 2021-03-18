@@ -95,6 +95,6 @@ landingContent:
           - text: "Work with solutions"
             url: /powerapps/maker/common-data-service/solutions-overview
           - text: "Power Platform admin guide"
-            url: /power-platform/admin/admin-documentation
+            url: ../admin/admin-documentation.md
           - text: "Power Platform Center of Excellence (CoE) Kit"
-            url: /power-platform/guidance/coe/starter-kit-explained
+            url: ../guidance/coe/starter-kit-explained.md

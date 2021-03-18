@@ -80,9 +80,9 @@ these users:
 -   [Application users](create-users-assign-online-security-roles.md#create-an-application-user)
 -   [Non-interactive users](create-users-assign-online-security-roles.md#create-a-non-interactive-user-account)
 -   [Administrative users](create-users-assign-online-security-roles.md#create-an-administrative-user-account)
--   [SYSTEM user](https://docs.microsoft.com/dynamics365/customer-engagement/web-api/systemuser?view=dynamics-ce-odata-9#operations)
+-   [SYSTEM user](/dynamics365/customer-engagement/web-api/systemuser?view=dynamics-ce-odata-9#operations)
 
-Additionally there are special free (\$0) licenses which are used to interact with Dynamics 365 applications like Dynamics 365 Marketing. See [How Marketing is licensed](https://docs.microsoft.com/dynamics365/customer-engagement/marketing/purchase-setup#how-marketing-is-licensed).
+Additionally there are special free (\$0) licenses which are used to interact with Dynamics 365 applications like Dynamics 365 Marketing. See [How Marketing is licensed](/dynamics365/customer-engagement/marketing/purchase-setup#how-marketing-is-licensed).
 
 For these identities, every tenant will get base request capacity per tenant that can only be used by these users and not by users with standard licenses.
 
@@ -106,15 +106,15 @@ Apart from the daily API request limit, there are other service protection limit
 
 Review the following resources for information about *current* service protection limits for each service:
 
-- [Dataverse  limits](https://docs.microsoft.com/powerapps/developer/common-data-service/api-limits): applicable for model-driven apps and customer engagement apps (such as Dynamics 365 Sales and Customer Service), Power Apps, and Power Automate connecting to Dataverse/customer engagement apps
-- [Power Automate limits](https://docs.microsoft.com/flow/limits-and-config): applicable for automated, scheduled, and instant flows
-- [Limits in connectors](https://docs.microsoft.com/connectors/): applicable for Power Automate and Power Apps
+- [Dataverse  limits](/powerapps/developer/common-data-service/api-limits): applicable for model-driven apps and customer engagement apps (such as Dynamics 365 Sales and Customer Service), Power Apps, and Power Automate connecting to Dataverse/customer engagement apps
+- [Power Automate limits](/flow/limits-and-config): applicable for automated, scheduled, and instant flows
+- [Limits in connectors](/connectors/): applicable for Power Automate and Power Apps
 
 ## Frequently asked questions
 
 ### What tools can I use to monitor and analyze API requests across the platform?
 
-Today, the Power Platform admin center contains [reports on Dataverse API requests](https://docs.microsoft.com/power-platform/admin/analytics-common-data-service). This reporting today accounts for interactive and non-interactive traffic. This helps you to quickly view adoption and user metrics for your organization. If your apps or flows primarily use the Dataverse, then these reports can serve as good approximations of the total usage of your solutions.
+Today, the Power Platform admin center contains [reports on Dataverse API requests](./analytics-common-data-service.md). This reporting today accounts for interactive and non-interactive traffic. This helps you to quickly view adoption and user metrics for your organization. If your apps or flows primarily use the Dataverse, then these reports can serve as good approximations of the total usage of your solutions.
 
 Additionally, for Power Automate usage specifically, you can see the action usage for a given flow by selecting the **Analytics** action from the flow properties page, and this works across all types of actions. However, if your apps or flows do not use the Dataverse, then there are no reports available in the Power Platform admin center at this time.
 
@@ -128,7 +128,7 @@ When users exceed their limits, administrators can see this in the admin center 
 
 Users won't be blocked from using an app or flow for occasional and reasonable overages at this point in time. However, if a user or flow exceeds the limits consistently for an extended period of time (more than 14 days), that user may be disabled or flow turned off.
 
-In addition, there are other applicable limits for [Dataverse](https://docs.microsoft.com/powerapps/developer/common-data-service/api-limits), [Power Automate](https://docs.microsoft.com/flow/limits-and-config), and [Connectors](https://docs.microsoft.com/connectors/) that might directly impact your users, and those limits may not have any affordance for occasional or reasonable overages. Flow owners will be notified via email if their flow is failing or encountering such limits, so be sure to monitor email for notifications about such flows.
+In addition, there are other applicable limits for [Dataverse](/powerapps/developer/common-data-service/api-limits), [Power Automate](/flow/limits-and-config), and [Connectors](/connectors/) that might directly impact your users, and those limits may not have any affordance for occasional or reasonable overages. Flow owners will be notified via email if their flow is failing or encountering such limits, so be sure to monitor email for notifications about such flows.
 
 ### Will there be a transition period for existing customers?
 
@@ -163,7 +163,7 @@ Yes, if these requests are making CRUD, assign, or share&ndash;type requests, th
 No, third-party data integration tools are subject to the exact same limits as scheduled, instant, or automated flows. Thus, there is no difference whether you choose to use Power Automate or a third-party tool. Moreover, requests from Power Automate to the Dataverse are not double-counted, a flow that calls one action will only count as one request against their limit, not two.
 
 ### See also
-[Dataverse API limits overview](https://docs.microsoft.com/powerapps/maker/common-data-service/api-limits-overview) <br />
-[Power Automate limits and configuration](https://docs.microsoft.com/power-automate/limits-and-config)
+[Dataverse API limits overview](/powerapps/maker/common-data-service/api-limits-overview) <br />
+[Power Automate limits and configuration](/power-automate/limits-and-config)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
