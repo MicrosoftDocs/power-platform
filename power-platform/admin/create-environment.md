@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 12/17/2020
+ms.date: 03/15/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin 
@@ -15,7 +15,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Create and manage environments in the Power Platform admin center 
+# Create and manage environments in the Power Platform admin center
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
@@ -32,10 +32,10 @@ We're consolidating how you view, create, and manage environments.
 
 - **Environments can now be provisioned in the Microsoft Power Platform admin center**: You can create environments in the Power Platform admin center. Previously, environments could only be created in the Dynamics 365 admin center and the Power Apps admin center. 
 - **Admins can govern environment creation**: To limit environment creation to admins (Dynamics 365 admins, Global admins, or Power Platform admins), see [Control who can create environments in the Power Platform admin center](control-environment-creation.md). Previously, limiting was done by controlling who had Power Apps P2 licenses.  
-- **Admins can see all environments**: Admins can see all environments (environments with and without a database, and environments with apps) in the Power Platform admin center. Previously, admins could not see environments created without a database.
 - **Trial environment provisioning**: You can create one trial environment per user. Previously, you could create two per user. See [About trial environments](trial-environments.md).
 
 ## Who can create environments?
+
 Your license determines whether you can create environments.
 
 | License | Trial | Production |
@@ -52,8 +52,46 @@ Your license determines whether you can create environments.
 
 To determine which license a user has, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) and follow the steps in [Assign licenses to multiple users on the Active users page](/office365/admin/manage/assign-licenses-to-users?view=o365-worldwide).
 
+To create an environment, all the following must be true:
+
+1. The user has a license (Yes below) that allows environment creation. This requirement is waived for Global admins and Power Platform admins.
+
+   | License | Trial | Production |
+   | --- | --- | --- |
+   | Microsoft 365 Plans |No | No |
+   | Dynamics 365 Teams Plans   |No | No |
+   | Power Apps Community Plan   |No | No |
+   | Dynamics 365 trial | Yes (one) | No|
+   | Dynamics 365 Plans |Yes (one)| Yes |
+   | Power Apps plan |Yes (one)| Yes |
+   | Power Apps trial |Yes (one)| Yes |
+   | Power Virtual Agents trial plan |Yes | No |
+   | Power Virtual Agents plan | No | Yes |
+
+   To determine which license a user has, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) and follow the steps in [Assign licenses to multiple users on the Active users page](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users?view=o365-worldwide).
+
+2. The tenant (or user in the case of email trials) must have the following:
+
+   - For production and sandbox environments, the tenant must have at least 1GB of database storage capacity available.
+   - For trial (subscription-based) environments, each offer-based trial (also known as "admin trial") subscription entitles the tenant to three subscription-based trial environments. Only tenant-level admins are able to provision trial (subscription-based) environments.
+   - For trial (standard) environments, the user needs a license providing per-user entitlement for trial environments (refer to the table above). This applies to tenant-level admins, as well. 
+   
+   Users wanting to create a standard trial can get the necessary license for free by signing up for a Power Apps trial via one of these paths:
+
+     **For a trial with Dynamics 365 apps**
+    
+     - https://trials.dynamics.com and select the required app to sign up for a 30-day trial
+    
+     **For a trial with no apps**
+     - https://apps.powerapps.com/trial
+     - https://powerapps.com and select **Try Free** at the top of the page
+
+3.	Tenant policy must allow environment creation. See [Control who can create and manage environments in the Power Platform admin center](control-environment-creation.md)
+
+<!-- 
 > [!NOTE]
-> Global admins and Power Platform admins can create environments without a license. See [Administer without a license](global-service-administrators-can-administer-without-license.md). 
+> Global admins and Power Platform admins can create environments without a license provided the environment has available database storage capacity. See [Administer without a license](global-service-administrators-can-administer-without-license.md). 
+-->
 
 ## Create an environment in the Power Platform admin center
 An environment provides storage for apps, flows, data, and various other resources. When users create an app in an environment, that app can connect to any data source, including connections, gateways, and flows. How you choose to leverage environments depends on your organization and the apps you're trying to build. For more information, see [Environments overview](environments-overview.md).
@@ -139,25 +177,6 @@ You need 1GB available database capacity.
 
    > [!div class="mx-imgBorder"] 
    > ![Create new environment settings](./media/new-environment-page1-nodb.png "Create new environment settings")
-
-## Provision a sandbox environment
-To provision a [sandbox environment](sandbox-environments.md), you change a production environment to sandbox.
-
-1. Sign in to the Power Platform admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin, Global admin, or Power Platform admin).
-
-2. From the left-side menu, select **Environments**, and then select a production environment.
-
-3. Select **Edit**
-
-   > [!div class="mx-imgBorder"] 
-   > ![Select Edit](media/select-edit.png "Select Edit")
-
-4. Under **Type**, choose the sandbox environment type. 
-
-   > [!div class="mx-imgBorder"] 
-   > ![Select sandbox environment](media/select-sandbox.png "Select sandbox environment")
-
-5. Select **Save**.
 
 ## Setting an environment refresh cadence
 You can indicate how often you would prefer an environment to receive updates and features to certain Microsoft Power Platform services. You have two options to choose from after creating an environment.

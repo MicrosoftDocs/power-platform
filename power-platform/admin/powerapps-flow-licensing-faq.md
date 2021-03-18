@@ -346,7 +346,6 @@ This capability is not available yet, but is included in our roadmap.
 > Accessing an environment with Dataverse requires all users to have a corresponding standalone Microsoft Power Platform license for each service being utilized. For example, a user accessing an app running on Dataverse needs to be licensed by either the Power Apps per app or per user plan depending on the customer scenario.
 
 ### Why do I see Dataverse plan in select Microsoft 365 subscriptions? Is this related to Dataverse for Teams?
-
 No. A limited set of Dataverse capabilities were recently added to Microsoft 365 licenses to support service capabilities available (for example, Microsoft Project). A standalone Power Apps, Power Automate, or Power Virtual Agents plan is still needed to run apps/flows/bots with Dataverse. Review the [Dataverse capabilities with Microsoft 365 licenses](pricing-billing-skus.md#dataverse-capabilities-with-microsoft-365-licenses) for more details on the feature.
 
 > [!NOTE]
