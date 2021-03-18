@@ -72,7 +72,7 @@ from the [GitHub Actions lab](https://github.com/microsoft/powerplatform-actions
 To interact with a Dataverse environment, a secret must be created that enables the various GitHub Actions to perform the required task. Two types of connections are available:
 
 - Username/password: Configured as a generic service connection with username and password. Username/password authentication doesn't support multifactor authentication.
-- Service principal and client secret: This connection type uses service principal&ndash;based authentication and supports multifactor authentication. Service principal authentication availability in late 2020.
+- Service principal and client secret: This connection type uses service principal&ndash;based authentication and supports multifactor authentication. Service principal authentication
 
 ## Available runners
 
