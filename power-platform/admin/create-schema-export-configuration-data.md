@@ -25,7 +25,7 @@ The Configuration Migration tool lets you build a schema to describe your export
 
 ## Before you begin 
 
-Download the Configuration Migration Tool. The Configuration Migration tool is available as a [NuGet package](https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.ConfigurationMigration.Wpf). To download the tool, see [Download tools from NuGet](https://docs.microsoft.com/powerapps/developer/common-data-service/download-tools-nuget). Follow the steps on this page to extract the **DataMigrationUtility.exe** tool. 
+Download the Configuration Migration Tool. The Configuration Migration tool is available as a [NuGet package](https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.ConfigurationMigration.Wpf). To download the tool, see [Download tools from NuGet](/powerapps/developer/common-data-service/download-tools-nuget). Follow the steps on this page to extract the **DataMigrationUtility.exe** tool. 
  
 <a name="CreateandExport"></a>  
 
@@ -122,7 +122,7 @@ Download the Configuration Migration Tool. The Configuration Migration tool is a
 8. Click **Exit** to close the tool.  
 
 ### See also 
- [Download tools from NuGet](https://docs.microsoft.com/powerapps/developer/common-data-service/download-tools-nuget) <br />
+ [Download tools from NuGet](/powerapps/developer/common-data-service/download-tools-nuget) <br />
  [Modify a schema](modify-configuration-data-schema.md) <br />
  [Manage your configuration data](manage-configuration-data.md) <br /> 
  [Import configuration data](import-configuration-data.md)
