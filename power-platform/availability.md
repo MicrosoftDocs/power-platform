@@ -28,7 +28,7 @@ The information will be updated periodically. Microsoft provides no license, exp
 Review and respect the full disclaimer included in all printed and electronically distributed versions of this document.
 
 ### See also
-[International availability of Dynamics 365](https://docs.microsoft.com/dynamics365/get-started/availability)
+[International availability of Dynamics 365](/dynamics365/get-started/availability)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

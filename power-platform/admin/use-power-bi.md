@@ -41,9 +41,9 @@ Power BI works with model-driven apps in Microsoft Dataverse to provide a self-s
 4. Select **Save**.  
 
 ## Add Power BI tiles and dashboards in a model-driven app  
-To learn more about how to add Power BI tiles to personal dashboards, see [Embed Power BI tiles on your personal dashboard  ](https://docs.microsoft.com/powerapps/user/add-powerbi-dashboards#embed--power-bi-tiles-on-your-personal-dashboard).  
+To learn more about how to add Power BI tiles to personal dashboards, see [Embed Power BI tiles on your personal dashboard  ](/powerapps/user/add-powerbi-dashboards#embed--power-bi-tiles-on-your-personal-dashboard).  
   
-To learn more about how to add Power BI dashboards to personal dashboards, see [Add a Power BI dashboard on your personal dashboard](https://docs.microsoft.com/powerapps/user/add-powerbi-dashboards).  
+To learn more about how to add Power BI dashboards to personal dashboards, see [Add a Power BI dashboard on your personal dashboard](/powerapps/user/add-powerbi-dashboards).  
 
   
 ### See also  

@@ -21,7 +21,7 @@ search.app:
 ## Introduction
 Microsoft regularly communicates work done to maintain and update Dynamics 365, Microsoft Power Platform (Power Apps, Power Automate, Power Virtual Agents, and other services) and all integrated Apps to ensure security, performance, availability, and to provide new features and functionality. Microsoft also communicates details of service incidents including the potential user experience, the start and end times of the incident, and any workaround that may be available. For each of these activities, communication is provided through the Microsoft 365 admin center in the Message Center, and the Service health dashboard. From time-to-time, Microsoft may also send direct email to users with the System Administrator role in a specifically impacted environment. For example, during a service incident we attempt to deliver an organization-specific email to impacted System Administrators.
   
-If you’re not sure who your admin is, see [Find your administrator or support person](https://docs.microsoft.com/powerapps/user/find-admin).  
+If you’re not sure who your admin is, see [Find your administrator or support person](/powerapps/user/find-admin).  
   
  If you want to add additional recipients who receive email communications, see [Manage email notifications to admins](manage-email-notifications.md).  
   
@@ -29,7 +29,7 @@ If you’re not sure who your admin is, see [Find your administrator or support 
   
 ## Scheduled system updates
 
-The Service teams regularly performs security updates and minor service updates on a weekly basis.  There are also two major events in April and October that are delivered through the weekly update mechanism, and details can be found in the [Business Applications Release Notes](https://docs.microsoft.com/dynamics365/release-plans/). 
+The Service teams regularly performs security updates and minor service updates on a weekly basis.  There are also two major events in April and October that are delivered through the weekly update mechanism, and details can be found in the [Business Applications Release Notes](/dynamics365/release-plans/). 
 
 <a name="bkmk_SecurityUpdates"></a>   
 
@@ -56,11 +56,11 @@ We are transforming how we do service updates. We will deliver two major release
 In addition to the two major updates, we will continue to deploy regular performance and reliability improvement updates throughout the year. We are phasing deployments over several weeks following safe deployment practices and monitoring updates closely for any issues.  Notifications about when the major release events are enabled in each geographic region are published in the Message Center.
 
 > [!IMPORTANT]
-> Be sure to check out [Opt in to early access updates](https://docs.microsoft.com/power-platform/admin/opt-in-early-access-updates) for important information about updating to the latest version.  
+> Be sure to check out [Opt in to early access updates](./opt-in-early-access-updates.md) for important information about updating to the latest version.  
   
  **How do I find out about Major release events?**  
   
-To find out what’s new and how to prepare for the next release, check the [Business Applications Release Notes](https://docs.microsoft.com/dynamics365/release-plans/). 
+To find out what’s new and how to prepare for the next release, check the [Business Applications Release Notes](/dynamics365/release-plans/). 
  
 ### Minor service updates
  
@@ -70,7 +70,7 @@ Minor service updates contain customization changes to support new features, pro
 - A Message Center notification is published that details when the deployment will be delivered into the environment 
 - A link to the Weekly Release Notes that contain the list of fixes that are included
   
-A list of service updates can be found on our [Version Availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
+A list of service updates can be found on our [Version Availability page](/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
   
 ## System maintenance
 
@@ -111,7 +111,7 @@ The following are service update times. Database updates run 24 hours after serv
 | CHN           | crm.dynamics.cn | 3 PM to 9 PM |
 
 ### Service Update Release Schedule
-To see the Service Update release schedule for your regions see our new [Released Versions](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#latest-version-availability) page.  
+To see the Service Update release schedule for your regions see our new [Released Versions](/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#latest-version-availability) page.  
 
 
 **Prior notification**  
@@ -162,7 +162,7 @@ A major service incident occurs when multiple organizations can’t access the s
   
 **How do I find out about major service incidents?**  
 
-Check the [Service health dashboard](https://docs.microsoft.com/office365/enterprise/view-service-health) to view the status of the service.  If you are experiencing an issue that is not displayed in the Service health dashboard you can open a ticket [here](https://admin.powerplatform.microsoft.com/).
+Check the [Service health dashboard](/office365/enterprise/view-service-health) to view the status of the service.  If you are experiencing an issue that is not displayed in the Service health dashboard you can open a ticket [here](https://admin.powerplatform.microsoft.com/).
 
 If the Service health dashboard is not available, the status of customer engagement apps can be reviewed at the [backup status site](https://status.office.com/).
 
@@ -171,7 +171,7 @@ If the service incident breaches your *Service Level Agreement*, you can claim a
 <a name="BKMK_ServiceRestored"></a>  
  
 ### Service restored  
-You can see the Service incident marked as Service restored in your Microsoft 365 service health page. To learn how to get to the Microsoft 365 service health page, see [View the status of your services](https://docs.microsoft.com/office365/enterprise/view-service-health).
+You can see the Service incident marked as Service restored in your Microsoft 365 service health page. To learn how to get to the Microsoft 365 service health page, see [View the status of your services](/office365/enterprise/view-service-health).
   
 <a name="BKMK_GeneralAwareness"></a>
 
@@ -187,12 +187,12 @@ When there is a major service incident that impacts multiple customers, the Dyna
 - Next steps  
 
 ### Communications for releases, package deployments, and awareness
-The [Microsoft 365 Message Center](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide) will display information specific to managing the service, including changes with the service and releases or feature offerings. The messaging can be informational in nature, drive specific actions, or both. The target audience for these communications are System Administrators or individuals designated to run the service. 
+The [Microsoft 365 Message Center](/office365/admin/manage/message-center?view=o365-worldwide) will display information specific to managing the service, including changes with the service and releases or feature offerings. The messaging can be informational in nature, drive specific actions, or both. The target audience for these communications are System Administrators or individuals designated to run the service. 
  
  <a name="BKMK_PostPurchase"></a>   
 
 ### Post-purchase customer lifecycle communications  
-Once a customer has purchased customer engagement apps, we send a series of email communications to administrators during the first year. These communications direct customers to several resources that will assist both administrators and users to successfully adopt and expand their use of customer engagement apps.  This information can be found in the [Microsoft 365 Message Center](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide) as well.
+Once a customer has purchased customer engagement apps, we send a series of email communications to administrators during the first year. These communications direct customers to several resources that will assist both administrators and users to successfully adopt and expand their use of customer engagement apps.  This information can be found in the [Microsoft 365 Message Center](/office365/admin/manage/message-center?view=o365-worldwide) as well.
   
 ### Notice about Online Policies
 Please review [Notice About Online Policies and Similar Documents](https://www.microsoft.com/en-us/legal/intellectualproperty/mtl/onlinedisclaimer.aspx).

@@ -41,11 +41,11 @@ Relevance Search brings the following benefits:
 
 - Includes the ability to search documents found in Notes and Attachments on Emails and Appointments 
 
-For more information about Relevance Search, see: [Using relevance search to search for records](https://docs.microsoft.com/powerapps/user/relevance-search).
+For more information about Relevance Search, see: [Using relevance search to search for records](/powerapps/user/relevance-search).
 
 Relevance Search is available in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation) that have installed version 9.0. It is not available for Customer Engagement (on-premises) organizations. Full-text Quick Find is available for Customer Engagement (on-premises) organizations, starting with Dynamics CRM 2015 Update Rollup 1. Quick Find is available for customer engagement apps organizations and Customer Engagement (on-premises) organizations.
 
-For more detailed comparison of the searches available in Microsoft Dataverse, see: [Compare search options in Dataverse](https://docs.microsoft.com/powerapps/user/search).
+For more detailed comparison of the searches available in Microsoft Dataverse, see: [Compare search options in Dataverse](/powerapps/user/search).
 
 ### Language support
 
@@ -87,7 +87,7 @@ To enable the new Relevance Search experience:
 
 4.	Select **Save**.
 
-For information on using the new Relevance Search experience, see [Use the new Relevance Search experience](https://docs.microsoft.com/powerapps/user/relevance-search#use-the-new-relevance-search-experience).
+For information on using the new Relevance Search experience, see [Use the new Relevance Search experience](/powerapps/user/relevance-search#use-the-new-relevance-search-experience).
 
 > [!TIP]
 > We are addressing an issue that makes the feature **Use new search experience** not show up in environments that were created from another environment as a copy. Please try the following steps to mitigate the issue.
@@ -234,7 +234,7 @@ Your organization’s queries and results are reviewed by people using secured c
 4.	Select **Save**.
 
 ### See also  
- [Use relevance search to search for records](https://docs.microsoft.com/powerapps/user/relevance-search) <br />
- [Use the new Relevance Search experience](https://docs.microsoft.com/powerapps/user/relevance-search#use-the-new-relevance-search-experience)
+ [Use relevance search to search for records](/powerapps/user/relevance-search) <br />
+ [Use the new Relevance Search experience](/powerapps/user/relevance-search#use-the-new-relevance-search-experience)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

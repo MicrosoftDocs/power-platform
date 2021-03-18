@@ -23,7 +23,7 @@ Microsoft Power Automate lets you create automated processes between your favori
 
 ![Lead record with Power Automate integration](media/flow-integration.png)
 
-Environments use the same environment in which the environment resides. For more information about Power Automate environments, see [Using environments within Power Automate](https://docs.microsoft.com/power-automate/environments-overview-admin)
+Environments use the same environment in which the environment resides. For more information about Power Automate environments, see [Using environments within Power Automate](/power-automate/environments-overview-admin)
   
 The Power Automate integration feature is not available in the following service or geographic regions.
 - Microsoft Power Apps US Government
@@ -37,9 +37,9 @@ Once the Power Automate integration feature is enabled, the following privileges
   
 ## Prerequisites  
   
-- A Power Automate connection for customer engagement apps (recommended). [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Connectors](https://docs.microsoft.com/connectors/)  
+- A Power Automate connection for customer engagement apps (recommended). [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Connectors](/connectors/)  
   
-- One or more flows created in the Power Automate environment to use with customer engagement apps. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Create a flow by using customer engagement apps](https://docs.microsoft.com/power-automate/connection-dynamics365)  
+- One or more flows created in the Power Automate environment to use with customer engagement apps. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Create a flow by using customer engagement apps](/power-automate/connection-dynamics365)  
   
 ## Enable Power Automate in your organization  
  By default, all security roles allow users to run flows on the records that they have access to.  
@@ -63,7 +63,7 @@ Once the Power Automate integration feature is enabled, the following privileges
    >  
  
 ### See also  
- [Create and edit web resources](https://docs.microsoft.com/powerapps/maker/model-driven-apps/create-edit-web-resources)
+ [Create and edit web resources](/powerapps/maker/model-driven-apps/create-edit-web-resources)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
