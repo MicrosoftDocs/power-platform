@@ -140,7 +140,7 @@ Once server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short
  
 ## Known issue
 
-SharePoint Online has introduced a new feature that enables a SharePoint or global administrator in Microsoft 365 to block or limit access to SharePoint and OneDrive content from unmanaged devices. For more information, see [Control access from unmanaged devices](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices).
+SharePoint Online has introduced a new feature that enables a SharePoint or global administrator in Microsoft 365 to block or limit access to SharePoint and OneDrive content from unmanaged devices. For more information, see [Control access from unmanaged devices](/sharepoint/control-access-from-unmanaged-devices).
 
 You can set access at three levels:
 1. Allow full access  from desktop apps, mobile apps and the web

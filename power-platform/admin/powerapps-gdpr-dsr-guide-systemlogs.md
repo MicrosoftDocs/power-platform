@@ -45,7 +45,7 @@ To access and export system-generated logs, do the following:
 
 4. To create a new request for a user, click **Create Export Data Request**.
 
-    After you create a new request, the request is listed on the **Data Log Export** page, where you can track its status. After a request is complete, you can click a link to access the system-generated logs, which will be exported to your organization's Azure storage location within 30 days of creating the request. The data will be saved in common, machine-readable file formats such as XML, CSV, or JSON. If you don't have an Azure account and Azure storage location, you'll need to create an Azure account and/or Azure storage location for your organization so that the Data Log Export tool can export the system-generated logs. For more information, see [Introduction to Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-introduction).
+    After you create a new request, the request is listed on the **Data Log Export** page, where you can track its status. After a request is complete, you can click a link to access the system-generated logs, which will be exported to your organization's Azure storage location within 30 days of creating the request. The data will be saved in common, machine-readable file formats such as XML, CSV, or JSON. If you don't have an Azure account and Azure storage location, you'll need to create an Azure account and/or Azure storage location for your organization so that the Data Log Export tool can export the system-generated logs. For more information, see [Introduction to Azure Storage](/azure/storage/common/storage-introduction).
 
 The following table summarizes accessing and exporting system-generated logs for managed tenants:
 

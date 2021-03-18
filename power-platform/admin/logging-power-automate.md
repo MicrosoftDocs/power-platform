@@ -23,7 +23,7 @@ search.audienceType:
 ---
 # View Power Automate audit logs 
 
-You can find logs of Power Automate activities in the [Microsoft 365 compliance center](https://compliance.microsoft.com/). These logs are also accessible to developers via the [Office 365 Management API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview).
+You can find logs of Power Automate activities in the [Microsoft 365 compliance center](https://compliance.microsoft.com/). These logs are also accessible to developers via the [Office 365 Management API](/office/office-365-management-api/office-365-management-apis-overview).
 
 ## Access the logs
 

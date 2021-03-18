@@ -32,7 +32,7 @@ Many customers wonder: How can Power Apps and Power Automate be made available t
 |Monitor     | <ul><li>How are we capturing compliance / auditing data?</li> <br /><li>How can I measure adoption and usage within my organization?</li></ul> |
 
 ## Architecture
-It's best to familiarize oneself with Environments as the first step to building the right governance story for your company. Environments are the containers for all resources used by a Power Apps, Power Automate and Dataverse. [Environments Overview](environments-overview.md) is a good primer which should be followed by [What is Dataverse?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro), [Types of Power Apps](https://docs.microsoft.com/powerapps/maker/), [Microsoft Power Automate](https://docs.microsoft.com/power-automate/getting-started), [Connectors](https://docs.microsoft.com/powerapps/maker/canvas-apps/connections-list),  and [On-premises Gateways](wp-onpremises-gateway.md). 
+It's best to familiarize oneself with Environments as the first step to building the right governance story for your company. Environments are the containers for all resources used by a Power Apps, Power Automate and Dataverse. [Environments Overview](environments-overview.md) is a good primer which should be followed by [What is Dataverse?](/powerapps/maker/common-data-service/data-platform-intro), [Types of Power Apps](/powerapps/maker/), [Microsoft Power Automate](/power-automate/getting-started), [Connectors](/powerapps/maker/canvas-apps/connections-list),  and [On-premises Gateways](wp-onpremises-gateway.md). 
 
 ## Security 
 This section outlines mechanisms that exist to control who can access Power Apps in an environment and access data: licenses, environments, environment roles, Azure Active Directory, Data Loss Prevention policies and admin connectors that can be used with Power Automate. 
@@ -201,7 +201,7 @@ The export can take a while for tenants with a large number of Power Platform us
 3. Optionally, the list of resources used in an Environment may be downloaded as a .csv.
 
 ### See also
-[Use best practices to secure and govern Power Automate environments](https://docs.microsoft.com/learn/paths/best-practices-environments/) <br />
+[Use best practices to secure and govern Power Automate environments](/learn/paths/best-practices-environments/) <br />
 [Microsoft Power Platform Center of Excellence (CoE) Starter Kit](../guidance/coe/starter-kit.md)
 
 

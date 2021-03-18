@@ -48,7 +48,7 @@ As the administrator, you'll likely be assisting users that had started in a tri
 
 ## Power Apps Community Plan
 
-In addition to the trial plans, there's also a *free* Power Apps Community Plan. This is a special plan that allows up individual self-service sign and it provides an individual environment that the user can use to build apps and flows. These environments will show up on the administrator’s list of environments and will list the type of environment as “Developer”. The environments are for individual use, so there's no ability to share with other users. Users in your organization can self-service sign up for this plan even if they have Power Apps and Power Automate license entitlements via another licensing plan. Sign-up for the community plan can be found [here](https://powerapps.microsoft.com/communityplan/) and more details on its features [here](https://docs.microsoft.com/powerapps/maker/dev-community-plan).
+In addition to the trial plans, there's also a *free* Power Apps Community Plan. This is a special plan that allows up individual self-service sign and it provides an individual environment that the user can use to build apps and flows. These environments will show up on the administrator’s list of environments and will list the type of environment as “Developer”. The environments are for individual use, so there's no ability to share with other users. Users in your organization can self-service sign up for this plan even if they have Power Apps and Power Automate license entitlements via another licensing plan. Sign-up for the community plan can be found [here](https://powerapps.microsoft.com/communityplan/) and more details on its features [here](/powerapps/maker/dev-community-plan).
 
 ## What users are licensed
 

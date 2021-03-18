@@ -38,7 +38,7 @@ To let users in your organization use the improved duplicate detection and merge
    > ![Screenshot of the Duplicate Detection Settings options.](media/duplicate-records-duplicate-detection-settings.png "Duplicate detection settings")
 
 ### See also
-[What happens when duplicates are found while qualifying leads?](https://docs.microsoft.com/dynamics365/sales-enterprise/qualify-lead-convert-opportunity-sales#what-happens-when-duplicates-are-found-while-qualifying-leads)
+[What happens when duplicates are found while qualifying leads?](/dynamics365/sales-enterprise/qualify-lead-convert-opportunity-sales#what-happens-when-duplicates-are-found-while-qualifying-leads)
 
 
 

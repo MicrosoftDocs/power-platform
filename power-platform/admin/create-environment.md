@@ -36,6 +36,22 @@ We're consolidating how you view, create, and manage environments.
 
 ## Who can create environments?
 
+Your license determines whether you can create environments.
+
+| License | Trial | Production |
+| --- | --- | --- |
+| Microsoft 365 Plans |No | No |
+| Dynamics 365 Teams Plans   |No | No |
+| Power Apps Community Plan   |No | No |
+| Dynamics 365 trial | Yes (one) | No|
+| Dynamics 365 Plans |Yes (one)| Yes |
+| Power Apps plan |Yes (one)| Yes |
+| Power Apps trial |Yes (one)| Yes |
+| Power Virtual Agents trial plan |Yes | No |
+| Power Virtual Agents plan | No | Yes |
+
+To determine which license a user has, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) and follow the steps in [Assign licenses to multiple users on the Active users page](/office365/admin/manage/assign-licenses-to-users?view=o365-worldwide).
+
 To create an environment, all the following must be true:
 
 1. The user has a license (Yes below) that allows environment creation. This requirement is waived for Global admins and Power Platform admins.
@@ -95,7 +111,7 @@ You have multiple options when creating an environment:
 - **Dynamics 365 apps and trial environments**: Currently, Dynamics 365 apps cannot be enabled for trial environments. To create a trial with Dynamics 365 apps, see [Start your digital transformation here](https://trials.dynamics.com).
 
 ## Create an environment with a database
-You create a database to use Dataverse as a data store. The Dataverse is a cloud scale database used to securely store data for business applications built on Power Apps. Dataverse provides not just data storage, but a way to implement business logic that enforces business rules and automation against the data. For more information, see [Why use Dataverse?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro#why-use-common-data-service)
+You create a database to use Dataverse as a data store. The Dataverse is a cloud scale database used to securely store data for business applications built on Power Apps. Dataverse provides not just data storage, but a way to implement business logic that enforces business rules and automation against the data. For more information, see [Why use Dataverse?](/powerapps/maker/common-data-service/data-platform-intro#why-use-common-data-service)
 
 ### Prerequisites 
 To create an environment with a database, you need 1GB available database capacity.
