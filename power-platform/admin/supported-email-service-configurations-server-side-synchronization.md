@@ -4,7 +4,7 @@ description: "Learn about the email service configurations supported by server-s
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/11/2021
+ms.date: 03/17/2021
 author: revachauhan
 ms.author: rechauha
 ms.reviewer: jimholtz
@@ -53,7 +53,7 @@ Customers can use an Exchange Server (Hybrid) profile configured with the Exchan
 > [!NOTE]
 > The following limitations apply to connecting cross-tenant:
 > - Dynamics 365 App for Outlook is currently not supported.
-> - Approval of Dynamics 365 mailbox records must be performed by a system administrator. 
+> - Approval of Dynamics 365 mailbox records must be performed by a Global tenant admin or an Exchange admin of the primary tenant. 
 > - We are aware of the Exchange Basic authentication deprecation schedule and are working on an alternate implementation.
 
 ## Unsupported email service configurations  
