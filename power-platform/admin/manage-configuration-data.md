@@ -40,7 +40,7 @@ The Configuration Migration tool enables you to move configuration data across e
   
 - Embed the exported modules created from this tool (schema and data files) in other programs. For example, you can use the exported data in Package Deployer along with other solutions files and data to create and deploy packages on a environment. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Deploy packages using  Package Deployer](/powerapps/developer/common-data-service/package-deployer/create-packages-package-deployer)  
   
-For information on downloading the Configuration Migration tool, see [Download tools from NuGet](https://docs.microsoft.com/powerapps/developer/common-data-service/download-tools-nuget).
+For information on downloading the Configuration Migration tool, see [Download tools from NuGet](/powerapps/developer/common-data-service/download-tools-nuget).
 
 <a name="HowItWorks"></a>   
 
@@ -78,7 +78,7 @@ For information on downloading the Configuration Migration tool, see [Download t
 -   Back up your production environment before importing the data.  
   
 ### See also  
-[Download tools from NuGet](https://docs.microsoft.com/powerapps/developer/common-data-service/download-tools-nuget)<br />
+[Download tools from NuGet](/powerapps/developer/common-data-service/download-tools-nuget)<br />
 [Create a schema to export configuration data](create-schema-export-configuration-data.md)<br />
 [Modify a configuration data schema](modify-configuration-data-schema.md)<br /> 
 [Import configuration data](import-configuration-data.md)<br /> 

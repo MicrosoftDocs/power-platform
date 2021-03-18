@@ -165,10 +165,10 @@ When you sign in to the Power Platform admin center, you'll be notified if your 
 Entities ending in “– Analytics” are entities used by one or more Insights applications, for example Sales Insights, Customer Service Hub, or Field Service and resource scheduling and optimization analytics dashboard to generate predictive insights and/or analytics dashboards. The data is synched from Dataverse entities. See **More information** below for documentation covering the installed Insights applications and the entities used to create insights and dashboards.
 
 **More information:**
-- [Sales Insights ](https://docs.microsoft.com/dynamics365/ai/sales/help-hub#get-started)
-- [Field Service and resource scheduling optimization (RSO)](https://docs.microsoft.com/dynamics365/field-service/scheduling-analytics-reports)                                                                                             
-- [Customer Service Hub](https://docs.microsoft.com/dynamics365/customer-service/customer-service-analytics-insights-csh) 
-- [Field Service](https://docs.microsoft.com/dynamics365/field-service/reports) 
+- [Sales Insights ](/dynamics365/ai/sales/help-hub#get-started)
+- [Field Service and resource scheduling optimization (RSO)](/dynamics365/field-service/scheduling-analytics-reports)                                                                                             
+- [Customer Service Hub](/dynamics365/customer-service/customer-service-analytics-insights-csh) 
+- [Field Service](/dynamics365/field-service/reports) 
 
 ### See also
 

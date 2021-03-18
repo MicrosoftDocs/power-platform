@@ -49,7 +49,7 @@ SharePoint document locations are records in model-driven apps, such as Dynamics
 
 To store documents for records, the document libraries or folders must be in place. If model-driven apps are unable to create the document libraries and folders automatically, you can manually create these in SharePoint. After you create the document libraries and folders in SharePoint, you must create document location records in model-driven apps to point to these SharePoint document libraries and folders.
 
-For more information, see [Create or edit document location records](https://docs.microsoft.com/power-platform/admin/create-edit-document-location-records).
+For more information, see [Create or edit document location records](./create-edit-document-location-records.md).
 
 ## "File not found" error when using multiple SharePoint sites
 
@@ -73,7 +73,7 @@ Points to consider:
 
 -  The SharePoint site for which the Document Management Settings wizard is last run becomes the default site. You can reset the default site if required by running the Document Management Settings wizard again for that particular site.
 
-For more information, see [Create or edit document location records](https://docs.microsoft.com/power-platform/admin/create-edit-document-location-records).
+For more information, see [Create or edit document location records](./create-edit-document-location-records.md).
 
 ## SharePoint enforces resource throttling with 5000 or more documents
 A document library with 5000 or more documents might experience resource throttling.

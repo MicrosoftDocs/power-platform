@@ -38,7 +38,7 @@ The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service,
   
  System administrators turn on SLAs and select case hold functionality in the web app using **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings** > **Settings** > **Service Management** > **Service Configuration Settings**. Afterwards, CSR Managers can create SLAs using the enhanced SLA type that allows pause and resume functionality. SLAs are created in **Settings** > **Service Management**.  
   
- [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Define service level agreements (SLAs)](https://docs.microsoft.com/dynamics365/customer-service/define-service-level-agreements)  
+ [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Define service level agreements (SLAs)](/dynamics365/customer-service/define-service-level-agreements)  
   
 ## Considerations when you choose a SLA type  
  Because there are two types of SLAs that have different functionality, consider the following features before you choose an SLA type. We recommend that you use only one type of SLA for an organization.  
