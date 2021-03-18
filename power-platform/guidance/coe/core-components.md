@@ -215,32 +215,32 @@ The [sync flows](#flows) of the CoE Starter Kit sync your tenant resources to th
 
 ### Admin \| Sync Template v3
 
-The Admin \| Sync Template v3 flow runs on a weekly schedule, retrieves the environments in your tenant by using [List Environments as Admin](https://docs.microsoft.com/connectors/powerplatformforadmins/#list-environments-as-admin), and creates or updates a record for each environment in the Dataverse Environment table.
+The Admin \| Sync Template v3 flow runs on a weekly schedule, retrieves the environments in your tenant by using [List Environments as Admin](/connectors/powerplatformforadmins/#list-environments-as-admin), and creates or updates a record for each environment in the Dataverse Environment table.
 
 Running this flow will also trigger the rest of the sync flows indirectly by updating the environment records in the Dataverse instance.
 
 ### Admin \| Sync Template v3 (Apps)
 
-The Admin \| Sync Template v3 (Apps) flow runs when an environment is created or modified, and gets app information by using [Get Apps as Admin](https://docs.microsoft.com/connectors/powerappsforadmins/#get-apps-as-admin). This information is then created or updated in the PowerApps App table.
+The Admin \| Sync Template v3 (Apps) flow runs when an environment is created or modified, and gets app information by using [Get Apps as Admin](/connectors/powerappsforadmins/#get-apps-as-admin). This information is then created or updated in the PowerApps App table.
 
 ### Admin \| Sync Template v3 (Flows)
 
-The Admin \| Sync Template v3 (Flows) flow runs when an environment is created or modified, and gets cloud flow information by using [List Flows as Admin](https://docs.microsoft.com/connectors/flowmanagement/#list-flows-as-admin). Also updates the record if flows have been deleted.
+The Admin \| Sync Template v3 (Flows) flow runs when an environment is created or modified, and gets cloud flow information by using [List Flows as Admin](/connectors/flowmanagement/#list-flows-as-admin). Also updates the record if flows have been deleted.
 
 ### Admin \| Sync Template v3 (Flow Action Details)
 
 The Admin \| Sync Template v3 (Flow Action Details) flow runs once daily on a schedule, and gets the actions and triggers for all flows.
 
 > [!WARNING]
-> This flow uses [Get Flow as Admin](https://docs.microsoft.com/connectors/flowmanagement/#get-flow-as-admin) to get action and trigger details for every individual flow in your tenant. Thus, it can be a very time-consuming and resource-consuming flow to run.<br><br>Turning on this flow is optional, and we recommend that you do so only to perform action-level reporting or analysis, such as reporting on who's using the Send Email action of the Microsoft 365 Outlook connector.
+> This flow uses [Get Flow as Admin](/connectors/flowmanagement/#get-flow-as-admin) to get action and trigger details for every individual flow in your tenant. Thus, it can be a very time-consuming and resource-consuming flow to run.<br><br>Turning on this flow is optional, and we recommend that you do so only to perform action-level reporting or analysis, such as reporting on who's using the Send Email action of the Microsoft 365 Outlook connector.
 
 ### Admin \| Sync Template v3 (Connectors)
 
-The Admin \| Sync Template v3 (Connectors) flow runs once daily on a schedule, gets connector information by using [Get Connectors](https://docs.microsoft.com/connectors/powerappsforappmakers/#get-connectors), and stores information such as the connector name, publisher, and tier.
+The Admin \| Sync Template v3 (Connectors) flow runs once daily on a schedule, gets connector information by using [Get Connectors](/connectors/powerappsforappmakers/#get-connectors), and stores information such as the connector name, publisher, and tier.
 
 ### Admin \| Sync Template v3 (Custom Connector)
 
-The Admin \| Sync Template v3 (Custom Connector) flow runs when an environment is created or modified, gets custom connector information by using [Get Custom Connectors as Admin](https://docs.microsoft.com/connectors/powerappsforadmins/#get-custom-connectors-as-admin), and stores information such as the name, endpoint, and created by/on.
+The Admin \| Sync Template v3 (Custom Connector) flow runs when an environment is created or modified, gets custom connector information by using [Get Custom Connectors as Admin](/connectors/powerappsforadmins/#get-custom-connectors-as-admin), and stores information such as the name, endpoint, and created by/on.
 
 ### Admin \| Sync Template v3 (Model Driven Apps)
 
@@ -270,7 +270,7 @@ Turning on this flow is optional, and we recommended that you do so only if you'
 
 ### CLEANUP - Admin \| Sync Template v3 (Power Apps User Shared With)
 
-This long running flow runs every other week, and gets who the app is shared with by using [Get App Role Assignments as Admin](https://docs.microsoft.com/connectors/powerappsforadmins/#get-app-role-assignments-as-admin).
+This long running flow runs every other week, and gets who the app is shared with by using [Get App Role Assignments as Admin](/connectors/powerappsforadmins/#get-app-role-assignments-as-admin).
 
 ### CLEANUP - Admin \| Sync Template v3 (Check Deleted)
 
@@ -298,7 +298,7 @@ Use this app to:
 - See what impact each change will have.
 - Mitigate the risk that changes in DLP policies will break a flow or an app by contacting makers.
 
-More information: [Introduction to data groups](https://docs.microsoft.com/power-platform/admin/introduction-to-data-groups)
+More information: [Introduction to data groups](/power-platform/admin/introduction-to-data-groups)
 
 **Permission**: Intended to be used only by admins. Power Platform Service Admin or Global Admin permission is required. Share this app with your CoE admins.
 
@@ -306,7 +306,7 @@ More information: [Introduction to data groups](https://docs.microsoft.com/power
 
 ### DLP Customizer
 
-DLP Customizer is a canvas app you can use to add custom connectors to the business data group of a DLP policy, or to enable HTTP connectors to a DLP policy. More information: [HTTP and custom connector support for DLP policies](https://docs.microsoft.com/business-applications-release-notes/october18/microsoft-flow/http-and-custom-connector-support-for-dlp-policies)
+DLP Customizer is a canvas app you can use to add custom connectors to the business data group of a DLP policy, or to enable HTTP connectors to a DLP policy. More information: [HTTP and custom connector support for DLP policies](/business-applications-release-notes/october18/microsoft-flow/http-and-custom-connector-support-for-dlp-policies)
 
 **Permission**: Intended to be used only by admins. Power Platform Service Admin or Global Admin permission is required. Share this app with your CoE admins.
 
@@ -323,7 +323,7 @@ Use this app to:
 - Remove app permissions.
 - Change app permissions from editors to viewers or viewers to editors.
 
-You can also use this app to find apps that have been orphaned by the owner's having left your organization, and clean them up. More information: [Share a canvas app in Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/share-app)
+You can also use this app to find apps that have been orphaned by the owner's having left your organization, and clean them up. More information: [Share a canvas app in Power Apps](/powerapps/maker/canvas-apps/share-app)
 
 **Permission**: This app is intended to be used only by admins. Microsoft Power Platform Service Admin or Global Admin permission is required. Share this app with your CoE admins.
 
@@ -340,7 +340,7 @@ Use this app to:
 
 Note that the ownership of a flow can't be changed.
 
-You can also use this app to find flows that have been orphaned by the owner's having left your organization, and clean them up. More information: [Share a flow](https://docs.microsoft.com/power-automate/create-team-flows)
+You can also use this app to find flows that have been orphaned by the owner's having left your organization, and clean them up. More information: [Share a flow](/power-automate/create-team-flows)
 
 **Permission**: This app is intended to be used only by admins. Microsoft Power Platform Service Admin or Global Admin permission is required. Share this app with your CoE admins.
 

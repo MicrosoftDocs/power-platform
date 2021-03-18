@@ -37,10 +37,10 @@ This guidance aligns to the following buckets and responsibilities of your adopt
 
 ## Related resources
 
-[Microsoft Power Platform admin guide](/power-platform/admin/admin-documentation)<Br>
-[Power Apps guidance documentation](https://docs.microsoft.com/powerapps/guidance/)<Br>
-[Power Apps documentation](https://docs.microsoft.com/powerapps)<Br>
-[Power Automate documentation](https://docs.microsoft.com/power-automate)<Br>
+[Microsoft Power Platform admin guide](../../admin/admin-documentation.md)<Br>
+[Power Apps guidance documentation](/powerapps/guidance/)<Br>
+[Power Apps documentation](/powerapps)<Br>
+[Power Automate documentation](/power-automate)<Br>
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

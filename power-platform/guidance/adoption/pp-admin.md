@@ -25,7 +25,7 @@ To help you administer environments and settings, you can assign users the Micro
 
 These are service admin roles and can be assigned via the [Microsoft 365 admin center](https://admin.microsoft.com/).
 
-More information: [Use service admin roles to manage your tenant](https://docs.microsoft.com/power-platform/admin/use-service-admin-role-manage-tenant#service-administrator-permission-matrix)
+More information: [Use service admin roles to manage your tenant](../../admin/use-service-admin-role-manage-tenant.md#service-administrator-permission-matrix)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
