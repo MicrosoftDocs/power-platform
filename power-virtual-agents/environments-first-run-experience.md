@@ -64,7 +64,7 @@ You can, however, create additional environments by using the [Power Platform Ad
    
    > [!NOTE]
    > The environment needs to be created in a supported region, otherwise you won't be able to use it when creating a bot.
-   > More information: [Supported data locations](https://go.microsoft.com/fwlink/?linkid=2106441).
+   > More information: [Supported data locations](./data-location.md).
 
 3. Specify the details of the database, such as the language and currency type, and then select **Save**.
 
