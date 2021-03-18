@@ -39,11 +39,11 @@ Review capacity entitlements and usage from the [Power Platform admin center](ht
 
 ## Self-service purchase
 
-Microsoft launched [self-service purchase](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq) for Microsoft Power Platform (Power BI, Power Apps, and Power Automate). This capability currently isn't available to government, non-profit, or education tenants in the United States.
+Microsoft launched [self-service purchase](/microsoft-365/commerce/subscriptions/self-service-purchase-faq) for Microsoft Power Platform (Power BI, Power Apps, and Power Automate). This capability currently isn't available to government, non-profit, or education tenants in the United States.
 
 Customers can make a self-service purchase online from the Microsoft Power BI, Power Apps, and Power Automate websites. Customers will first be asked to enter an email address to ensure they are a user in an existing Azure Active Directory (Azure AD) tenant. Then they'll be directed to log in by using their Azure AD credentials. After signing in, the customer will be asked to select how many subscriptions they want to purchase and provide credit card payment. When the purchase is complete, they'll be able to start using their subscription. The purchaser will also be able to access a limited view of the Microsoft 365 admin center where they can enable other people in their organization to use the product.
 
-Admins are provided with a way to turn off self-service purchasing on a per product basis via the [MSCommerce PowerShell module](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/allowselfservicepurchase-powershell). Here's an example script to disable self-service purchase for Power Automate:
+Admins are provided with a way to turn off self-service purchasing on a per product basis via the [MSCommerce PowerShell module](/microsoft-365/commerce/subscriptions/allowselfservicepurchase-powershell). Here's an example script to disable self-service purchase for Power Automate:
 
 ```powershell
 Import-Module -Name MSCommerce
@@ -54,11 +54,11 @@ where {$_.ProductName -match 'Power Automate'}
 Update-MSCommerceProductPolicy -Policy
 ```
 
-More details can be found in the [self-service purchasing FAQ](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq).
+More details can be found in the [self-service purchasing FAQ](/microsoft-365/commerce/subscriptions/self-service-purchase-faq).
 
 ## API capacity
 
-Another key licensing concept to be aware of is the request limits and allocation. On a daily per user basis, API usage is tracked across Power Apps and Power Automate workflows, in addition to direct developer API usage. The usage is expected to stay below the API request allocation that is provided based on the type of usage. The allocation and usage are tracked at the user level and not at the tenant level. The allocations have been designed so that most users will never exceed the limits. You can monitor basic usage metrics in the admin portal and more detailed usage will be provided in the future. Administrators should work with app makers to help them design their solutions to stay within the limits. If usage for a user continuously exceeds the limit, consider an add-on to increase the individual user's limit. For more details about request limits and allocations, see [Microsoft Power Platform limits](https://aka.ms/platformlimits).
+Another key licensing concept to be aware of is the request limits and allocation. On a daily per user basis, API usage is tracked across Power Apps and Power Automate workflows, in addition to direct developer API usage. The usage is expected to stay below the API request allocation that is provided based on the type of usage. The allocation and usage are tracked at the user level and not at the tenant level. The allocations have been designed so that most users will never exceed the limits. You can monitor basic usage metrics in the admin portal and more detailed usage will be provided in the future. Administrators should work with app makers to help them design their solutions to stay within the limits. If usage for a user continuously exceeds the limit, consider an add-on to increase the individual user's limit. For more details about request limits and allocations, see [Microsoft Power Platform limits](../../admin/api-request-limits-allocations.md).
 
 ## Storage capacity
 

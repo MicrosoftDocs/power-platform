@@ -26,7 +26,7 @@ The following sections describe limitations for some components.
 
 There are some flows, which crawl the tenant in order to do their work. Specifically, the inventory flows in Core solution and the start archival flows in Governance solution.
 
-To help ensure service levels, availability, and quality, there are entitlement limits to the number of requests users can make each day across Power Apps, Power Automate. Learn more: [Requests limits and allocations](https://docs.microsoft.com/power-platform/admin/api-request-limits-allocations)
+To help ensure service levels, availability, and quality, there are entitlement limits to the number of requests users can make each day across Power Apps, Power Automate. Learn more: [Requests limits and allocations](../../admin/api-request-limits-allocations.md)
 
 Larger tenants might require a per flow license in order for these flows to complete in a timely manner. More information: [Power Automate License Pricing](https://flow.microsoft.com/pricing/)
 
@@ -43,7 +43,7 @@ The sync flows in the Core Component solution will only update resources that ha
 
 ## Flows that use the Common Data Service (Current Environment) connector
 
-The Admin | Sync Template v3 (Flows) and CLEANUP - Admin | Sync Template v3 (Connection Status) will fail to collect inventory information for flows that use the Common Data Service (Current Environment) connector. The [Get Flow as Admin](https://docs.microsoft.com/connectors/flowmanagement/) currently has a limitation, where flows using that connector cannot be retrieved.
+The Admin | Sync Template v3 (Flows) and CLEANUP - Admin | Sync Template v3 (Connection Status) will fail to collect inventory information for flows that use the Common Data Service (Current Environment) connector. The [Get Flow as Admin](/connectors/flowmanagement/) currently has a limitation, where flows using that connector cannot be retrieved.
 
 ## Timeouts in the Admin | Sync Template v3
 
@@ -83,7 +83,7 @@ Embedding Power Apps canvas apps in Power BI dashboards isn't available for GCC 
 
 Microsoft Power Platform protects developer-type SKUs from inquiry by non-authenticated users. This configuration means that the model-driven apps in developer SKUs will be skipped from our tally work in the sync flow Admin | Sync Template v3 (Model Driven Apps).
 
-To fix this, you must have your admin security role added to the security roles for all developer environments, and then remove the selection from the sync flow. More information: [Power Apps Community Plan](https://docs.microsoft.com/powerapps/maker/dev-community-plan)
+To fix this, you must have your admin security role added to the security roles for all developer environments, and then remove the selection from the sync flow. More information: [Power Apps Community Plan](/powerapps/maker/dev-community-plan)
 
 ## Sync Flow limitations for Developer and Microsoft Team environments
 
@@ -100,12 +100,12 @@ The shared component library in the [theming components solution](theming-compon
 
 ## Trial Licenses
 
-Trial licenses do not have sufficient [API call allowances](https://docs.microsoft.com/power-automate/limits-and-config#looping-and-debatching-limits) to run the CoE Starter Kit flows.
+Trial licenses do not have sufficient [API call allowances](/power-automate/limits-and-config#looping-and-debatching-limits) to run the CoE Starter Kit flows.
 For full list of license requirements see [Setup Prerequisite](setup.md#prerequisites).
 
 ## PIM (Privileged Identity Management)
 
-If your Power Platform admin role is managed via  **[PIM](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started)** ensure the Sync Flows of the Core Components solution are set up to complete during the time whilst your user is granted admin permission. If your user loses admin access during the run of the sync flows, you may end up with incomplete or incorrect data if you use PIM and your Power Platform Admin Role.
+If your Power Platform admin role is managed via  **[PIM](/azure/active-directory/privileged-identity-management/pim-getting-started)** ensure the Sync Flows of the Core Components solution are set up to complete during the time whilst your user is granted admin permission. If your user loses admin access during the run of the sync flows, you may end up with incomplete or incorrect data if you use PIM and your Power Platform Admin Role.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

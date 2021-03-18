@@ -85,7 +85,7 @@ Armed with the above information, consider each of the following as you get read
 Depending on the complexity of the application, anything from using a SharePoint List to track work and new features, and OneDrive to store exported assets, to a more complete solution like Visual Studio Team Services can help add some structure to your application life cycle process. What is appropriate for your organization depends on the size and maturity of the team that is building the overall application. The less technical will probably find a solution like OneDrive and SharePoint more approachable. Azure DevOps Services has several features that are tailored to support application lifecycle management. Azure DevOps Services is also free to get started. See [Azure DevOps](https://visualstudio.microsoft.com/team-services/). The following are some of those features:
 
 - Work item planning and tracking.
-- Version control. Offers a way to store exported assets. Using SDK tools like Solution Packager allows this to scale up to larger teams working on Dataverse solution package customizations. For more details, review [SolutionPackager tool](https://docs.microsoft.com/powerapps/developer/common-data-service/compress-extract-solution-file-solutionpackager).
+- Version control. Offers a way to store exported assets. Using SDK tools like Solution Packager allows this to scale up to larger teams working on Dataverse solution package customizations. For more details, review [SolutionPackager tool](/powerapps/developer/common-data-service/compress-extract-solution-file-solutionpackager).
 - Build and release automation. This can be helpful for automating everything from exporting of Dataverse solutions for backup, to compiling developer-built components. The release automation can take solutions and developer assets and coordinate deploying to test and production environments. These deployments can also leverage approval checkpoints as appropriate. Microsoft has released a preview of a Power Apps build tool that includes a number of Azure DevOps tasks for automating deployment of Dataverse solutions. There are also community tools like [Xrm.CI.Framework](https://marketplace.visualstudio.com/items?itemName=WaelHamze.xrm-ci-framework-build-tasks) with which you can deploy Dataverse solutions.
 
 The following is an example of the Team Status Dashboards that give the team an all-up view of their progress.
@@ -159,13 +159,13 @@ The following image outlines the basic process for using the tool.
 
 The output from the tool is a .zip file containing the data and the schema file. The same tool can be used to import the data into the target Dataverse environment. You can also package the data with a Solution Deployer package that we will discuss shortly, allowing it to be deployed alongside one or more Dataverse solutions. There are also community tools like [Microsoft.Xrm.DevOps.Data](https://github.com/abvogel/Microsoft.Xrm.DevOps.Data) to manage, export, and import data packages by command line using PowerShell.
 
-More information: [Move configuration data across environments](https://docs.microsoft.com/power-platform/admin/manage-configuration-data)
+More information: [Move configuration data across environments](./manage-configuration-data.md)
 
 ## Using the Package Deployer
 
 So far, we've only talked about importing Dataverse solutions manually via the user interface. The Package Deployer also works for Dataverse solutions. The Package Deployer allows you to build a package that contains one or more Dataverse solutions as well as one or more data files to import after the solutions are imported. 
 
-It is also possible for developers to build custom code that reacts to events from the package deployment process. This code can be used to handle updates to the target environment. Once the package is built, the package can be deployed interactively via the tool, or by command line using PowerShell. More information: [Create packages for the Package Deployer](https://docs.microsoft.com/powerapps/developer/common-data-service/package-deployer/create-packages-package-deployer)
+It is also possible for developers to build custom code that reacts to events from the package deployment process. This code can be used to handle updates to the target environment. Once the package is built, the package can be deployed interactively via the tool, or by command line using PowerShell. More information: [Create packages for the Package Deployer](/powerapps/developer/common-data-service/package-deployer/create-packages-package-deployer)
 
 
 

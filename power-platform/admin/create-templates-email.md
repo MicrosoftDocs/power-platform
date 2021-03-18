@@ -80,7 +80,7 @@ An email template is attached to an email activity after the activity is created
 > [!NOTE]
 > - To change a shared template to a personal one or a personal template to a shared one, on the template form, on the **Actions**![action](../admin/media/action-button.png "action") menu, select **Revert to Personal Template**, or select **Make Template Available to Organization**.  
 > - If you use an email template as a signature in another template, insert the signature template first. Otherwise, the Subject line will be overwritten.  
-> - If you need to back up your templates, or export them for use in a different implementation, you can export them as part of exporting customizations. More information: [Export your customizations as a solution](https://docs.microsoft.com/powerapps/maker/model-driven-apps/distribute-model-driven-app).  
+> - If you need to back up your templates, or export them for use in a different implementation, you can export them as part of exporting customizations. More information: [Export your customizations as a solution](/powerapps/maker/model-driven-apps/distribute-model-driven-app).  
   
 ### See also  
 

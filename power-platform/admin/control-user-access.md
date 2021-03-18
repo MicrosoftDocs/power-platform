@@ -47,7 +47,7 @@ In this example, four security groups provide controlled access to a specific en
 - If you do not assign a security group to an environment, the environment will show up in [home.dynamics.com](https://home.dynamics.com) even for those who have not been assigned a security role in that Dataverse environment.  
 - If you do not specify a security group, all users who have a Dataverse license (customer engagement apps (such as Dynamics 365 Sales and Customer Service)) or per app plan will be added to the new environment.
 - **New**: Security groups cannot be assigned to default and developer environment types. If you've already assigned a security group to your default or developer environment, we recommend removing it since the default environment is intended to be shared with all users in the tenant and the developer environment is intended for use by only the owner of the environment.
-- Dataverse environments support associating the following group types: Security and Microsoft 365. Associating [other group types](https://docs.microsoft.com/microsoft-365/admin/create-groups/compare-groups?WT.mc_id=365AdminCSH&view=o365-worldwide) is not supported.
+- Dataverse environments support associating the following group types: Security and Microsoft 365. Associating [other group types](/microsoft-365/admin/create-groups/compare-groups?view=o365-worldwide&WT.mc_id=365AdminCSH) is not supported.
 
 <!-- 
 - When you remove a security group that is associated with a Dataverse environment, either by editing the environment and removing the security group or by deleting the security group, Dataverse licensed users who were members of the security group will have the same access to Dynamics 365 apps. 
@@ -76,13 +76,13 @@ In this example, four security groups provide controlled access to a specific en
 > [!NOTE]
 > If the users you want to add to the security group are not created, create the users and assign to them the Dataverse licenses.  
 > 
-> To add multiple users, see: [bulk add users to Office365 groups](https://go.microsoft.com/fwlink/p/?LinkID=615203).  
+> To add multiple users, see: [bulk add users to Office365 groups](/microsoft-365/enterprise/add-several-users-at-the-same-time).  
   
 ### Create a user and assign license  
   
 1. In the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], select **Users** > **Active users** > **+ Add a user**. Enter the user information, select licenses, and then select **Add**.  
   
-   [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Add users and assign licenses at the same time](https://go.microsoft.com/fwlink/p/?LinkID=615205)  
+   [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Add users and assign licenses at the same time](/microsoft-365/admin/add-users/add-users)  
 
 Or, purchase and assign per app passes: [About Power Apps per app plans](about-powerapps-perapp.md)
 

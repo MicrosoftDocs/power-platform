@@ -201,13 +201,13 @@ You use a different set of URLs to access Dynamics 365 US Government environment
   
 ## Regional Discovery Service is deprecated
 
-Effective March 2, 2020, the *regional* [Discovery Service](/powerapps/developer/common-data-service/org-service/discovery-service) will be deprecated. More information: [Regional Discovery Service is deprecated](/power-platform/important-changes-coming#regional-discovery-service-is-deprecated).
+Effective March 2, 2020, the *regional* [Discovery Service](/powerapps/developer/common-data-service/org-service/discovery-service) will be deprecated. More information: [Regional Discovery Service is deprecated](../important-changes-coming.md#regional-discovery-service-is-deprecated).
 
 ### See also  
 [Dynamics 365 US Government - Feature availability](government-feature-availability.md)<br/>
 [IP addresses and URLs](online-requirements.md#ip-addresses-and-urls)<br />
-[Power Apps US Government](https://docs.microsoft.com/power-platform/admin/powerapps-us-government)<br />
-[Power Automate US Government](https://docs.microsoft.com/power-automate/us-govt)
+[Power Apps US Government](./powerapps-us-government.md)<br />
+[Power Automate US Government](/power-automate/us-govt)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
