@@ -74,7 +74,7 @@ These settings can be found in the Microsoft Power Platform admin center by goin
 
 Make sure you have the System Administrator or System Customizer security role or equivalent permissions to update the setting.
 
-- Follow the steps in [View your user profile](https://docs.microsoft.com/powerapps/user/view-your-user-profile).
+- Follow the steps in [View your user profile](/powerapps/user/view-your-user-profile).
 - Don’t have the correct permissions? Contact your system administrator.
   
  The hierarchy security is disabled by default. To enable:  
@@ -142,7 +142,7 @@ Make sure you have the System Administrator or System Customizer security role o
   
 ### See also  
  [Security in Microsoft Dataverse](wp-security.md)   
- [Query and visualize hierarchical data](https://docs.microsoft.com/dynamics365/customer-engagement/customize/query-visualize-hierarchical-data)   
+ [Query and visualize hierarchical data](/dynamics365/customer-engagement/customize/query-visualize-hierarchical-data)   
 
 
 

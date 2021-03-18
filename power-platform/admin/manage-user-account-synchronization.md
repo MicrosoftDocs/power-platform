@@ -34,9 +34,9 @@ It’s important to carefully consider which identity model to use to get up and
   
 Review the following resources to equip you to make the right decision for your company:  
   
--   [Microsoft 365 identity models and Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkID=534820)  
+-   [Microsoft 365 identity models and Azure Active Directory](/microsoft-365/enterprise/about-microsoft-365-identity)  
   
--   [What is Azure AD Connect?](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)  
+-   [What is Azure AD Connect?](/azure/active-directory/connect/active-directory-aadconnect)  
   
 -   [Microsoft 365 integration with on-premises environments](https://support.office.com/article/Office-365-integration-with-on-premises-environments-263faf8d-aa21-428b-aed3-2021837a4b65)  
   
