@@ -75,6 +75,8 @@ Git is a popular example of a version control system.
 The Configuration Migration Tool enables you to move configuration and/or reference data across
 environments. Configuration/reference data is different from user and transactional data and is used to
 define custom functionality in apps based on Dataverse. More information: [Move configuration data across environments and organizations with the Configuration Migration Tool](../admin/manage-configuration-data.md)
+>[!NOTE]
+>The Configuration Migration Tool is best suited for migrating relational configuration data. [Environment variables](powerapps-docs/maker/data-platform/EnvironmentVariables.md) >are recommended for storing and migrating non-relational configuration parameters. 
 
 ## Package Deployer
 Package Deployer lets administrators or developers deploy comprehensive packages of relevant
