@@ -104,7 +104,7 @@ Microsoft Dataverse supports multiple languages. If you want your solution to be
   
  After the text in the worksheets has been localized, add both the CrmTranslations.xml and [Content_Types].xml files to a single compressed .zip file. You can now import this file.  
   
- If you prefer to work with the exported files programmatically as an XML document, see [Word, Excel, and PowerPoint Standards Support](https://docs.microsoft.com/openspecs/office_standards/ms-offstandlp/d5784a8b-7070-466b-befa-b7bf3724c6f0) for information about the schemas these files use.  
+ If you prefer to work with the exported files programmatically as an XML document, see [Word, Excel, and PowerPoint Standards Support](/openspecs/office_standards/ms-offstandlp/d5784a8b-7070-466b-befa-b7bf3724c6f0) for information about the schemas these files use.  
   
 #### Importing translated text  
   
@@ -163,7 +163,7 @@ Microsoft Dataverse supports multiple languages. If you want your solution to be
   
 1. Install the appropriate language pack and provision the language.  
   
-    For more information, see [Language Pack Installation Instructions](https://technet.microsoft.com/library/hh699674.aspx).  
+    For more information, see [Language Pack Installation Instructions](/previous-versions/dynamicscrm-2016/deployment-administrators-guide/hh699674(v=crm.8)).  
   
 2. Change your personal options to specify the **User Interface Language** for the language you want for the dialog.  
   
