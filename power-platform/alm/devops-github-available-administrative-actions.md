@@ -38,17 +38,31 @@ The Client Secret will be stored as a GitHub Secret, as described earlier and wi
 `client secret: ${{secrets.CLIENT_SECRET_GITHUB_ACTIONS}}` <br/>
 ## Administrative tasks
 
-The administrative tasks are explained 
+The available administrative tasks are explained below
 
-### Microsoft Power Platform WhoAmI
+### Microsoft Power Platform create environment
 
-Verifies the service connection by connecting to the service and sending a `WhoAmI` [[SDK](/dotnet/api/microsoft.crm.sdk.messages.whoamirequest)/[Web API](/dynamics365/customer-engagement/web-api/whoami)] request. This task can be useful to include early in your DevOps pipeline, to verify connectivity before processing begins.
+Creates an environment in the Power Platform tenant
 
 | Parameter    | Description   |
 |---------------|---------------|
-| environment-url | The URL for the environment you're connecting to.|
 | user-name | The username of the account you're using to connect with. |
 | password-secret | The password for *user-name*. GitHub passwords are defined in **Settings** under **Secrets**. Note that you can't retrieve a secret after it has been defined and saved. |
+|app-id| The application id to authenticate with. This parameter is **required** when authenticating with Service Principal credentials|
+|client-secret| The Client secret used to authenticate the GitHub pipeline. This parameter is **required** when authenticating with Service Principal Credentials|
+|tenant-id| The tenant-id when authenticating with app-id and client-secret|
+|name| name of the environment that you are going to create| 
+|region| name of the region of where your environment will be created <br/> default is `unitedstates`|
+|type| the type of environment (Trial,Sandbox,Production,SubscriptionBasedTrial) <br/> details about trial environments can be found at this [link](https://docs.microsoft.com/en-us/power-platform/admin/trial-environments)|
+|currency| The currency to use for the environment <br/> default is `USD`|
+|language| The language to use for the environment <br/> default is `English`|
+|templates| The Dynamics365 templates that needs to be deployed to the environment <br/> Passed as comma separated values|
+|domain| The domain name of the environment URL <br/> e.g.: `https://{contoso}0.crm.dynamics.com`|
+
+
+
+the output will be the URL of the new environment
+
 
 ## Solution tasks
 
