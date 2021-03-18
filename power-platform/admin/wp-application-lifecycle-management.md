@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/15/2020
+ms.date: 03/18/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -23,7 +23,7 @@ search.app:
 Application lifecycle management (ALM) is important as the applications your organization builds become more complex and as more of your company depends on their stability. In this topic we discuss using ALM to handle more complex scenarios.
 
 > [!NOTE]
-> Check out our new [application lifecycle management (ALM) guide for Microsoft Power Platform](/power-platform/alm)!
+> Check out our new [application lifecycle management (ALM) guide for Microsoft Power Platform](/power-platform/alm).
 
 ALM is not a one-size-fits-all concept. It can vary from organization to organization and even within, based on the type of solution being built. If you were to look at a typical mission-critical solution, the following would be a good health check of your current Microsoft Power Platform ALM maturity:
 
@@ -39,7 +39,6 @@ ALM is not a one-size-fits-all concept. It can vary from organization to organiz
 
   Solution Packager is also how you take individual files from source control and repackage them for managed solution deployment to other environments like test and production.
   
-
 - **Can you service (bug fix) production while working on your next version?** A key concept of a healthy ALM practice is not making changes in test or production. By having a good source control and environment strategy, you can ensure your dev–test–production release pipeline stays viable even while you are working on the next version.
 
 - **Are you using environment variables and connection references?** Canvas apps and flows often connect to external data sources and input parameters often need to change in different environments. Connection references allow re-mapping required connections in new environments and environment variables allow you to change input parameter values. Using these together ensures applications are properly connected to external data without the need to make changes to the referencing apps and flows in test or production. 
