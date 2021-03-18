@@ -38,7 +38,12 @@ ALM is not a one-size-fits-all concept. It can vary from organization to organiz
 - **Are you using Solution Packager?** Solution Packager allows taking a solution file and breaking it down into individual files for each solution component. This allows what you check in to source control to be traced at a very granular level and helps avoid conflicts with multiple people checking in changes. 
 
   Solution Packager is also how you take individual files from source control and repackage them for managed solution deployment to other environments like test and production.
+  
+
 - **Can you service (bug fix) production while working on your next version?** A key concept of a healthy ALM practice is not making changes in test or production. By having a good source control and environment strategy, you can ensure your dev–test–production release pipeline stays viable even while you are working on the next version.
+
+- **Are you using environment variables and connection references?** Canvas apps and flows often connect to external data sources and input parameters often need to change in different environments. Connection references allow re-mapping required connections in new environments and environment variables allow you to change input parameter values. Using these together ensures applications are properly connected to external data without the need to make changes to the referencing apps and flows in test or production. 
+
 - **Do you have automated ALM?** While all of the above can be done manually, having an automated, repeatable process is ideal. Using the tooling like Microsoft Power Platform Build Tools (which we will discuss later) with Azure DevOps, much of the ALM process, including the approvals, can be automated to progress through the release pipeline.
 
 Use the above ALM health check to measure where you are in your goal of having healthy ALM practices for your solutions.
