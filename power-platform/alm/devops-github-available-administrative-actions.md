@@ -142,9 +142,6 @@ the output will be the URL of the new environment
 
 
 
-
-
-
 ## Helper tasks
 
 The available helper tasks are described below.
