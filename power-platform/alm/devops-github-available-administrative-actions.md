@@ -42,7 +42,7 @@ The available administrative tasks are explained below
 
 ### Microsoft Power Platform create environment
 
-Creates an environment in the Power Platform tenant
+[Creates an environment in the Power Platform tenant](https://docs.microsoft.com/en-us/power-platform/admin/create-environment)
 
 | Parameter    | Description   |
 |---------------|---------------|
@@ -67,7 +67,7 @@ the output will be the URL of the new environment
 
 ### Microsoft Power Platform copy environment
 
-Creates a copy of a given environment 
+[Creates a copy of a given environment](https://docs.microsoft.com/en-us/power-platform/admin/copy-environment) 
 
 | Parameter           | Description        |
 |----------------------|--------------------------|
@@ -82,7 +82,7 @@ Creates a copy of a given environment
 
 ### Microsoft Power Platform backup environment 
 
-Creates a backup of a given environment
+[Creates a backup of a given environment](https://docs.microsoft.com/en-us/power-platform/admin/backup-restore-environments)
 
 | Parameter           | Description        |
 |----------------------|--------------------------|
@@ -93,6 +93,39 @@ Creates a backup of a given environment
 |app-id| The application id to authenticate with. This parameter is **required** when authenticating with Service Principal credentials|
 |client-secret| The Client secret used to authenticate the GitHub pipeline. This parameter is **required** when authenticating with Service Principal Credentials|
 |tenant-id| The tenant-id when authenticating with app-id and client-secret|
+
+
+
+### Microsoft Power Platform restore environment
+
+[Action to restore an environment from backup](https://docs.microsoft.com/en-us/power-platform/admin/backup-restore-environments)
+
+| Parameter           | Description        |
+|----------------------|--------------------------|
+|source-url| Source URL of the Power Platform environment to restore <br/> e.g. `https://env-backup-source.crm.dynamics.com`|
+|target-url| Target URL of the Power Platofmr environment to be restored to <br/> e.g. `https://env-target-restore.crm.dynamics.com`|
+|user-name | The username of the account you're using to connect with. |
+|password-secret | The password for *user-name*. GitHub passwords are defined in **Settings** under **Secrets**. Note that you can't retrieve a secret after it has been defined and saved. |
+|app-id| The application id to authenticate with. This parameter is **required** when authenticating with Service Principal credentials|
+|client-secret| The Client secret used to authenticate the GitHub pipeline. This parameter is **required** when authenticating with Service Principal Credentials|
+|tenant-id| The tenant-id when authenticating with app-id and client-secret|
+
+
+
+### Microsoft Power Platform reset environment 
+
+[Action to reset environment to delete and reprovision the environment](https://docs.microsoft.com/en-us/power-platform/admin/reset-environment) 
+
+| Parameter           | Description        |
+|----------------------|--------------------------|
+|environment-url| URL of the environment that needs to be backed up <br/> e.g. `https://env-to-reset.crm.dynamics.com`|
+|user-name | The username of the account you're using to connect with. |
+|password-secret | The password for *user-name*. GitHub passwords are defined in **Settings** under **Secrets**. Note that you can't retrieve a secret after it has been defined and saved. |
+|app-id| The application id to authenticate with. This parameter is **required** when authenticating with Service Principal credentials|
+|client-secret| The Client secret used to authenticate the GitHub pipeline. This parameter is **required** when authenticating with Service Principal Credentials|
+|tenant-id| The tenant-id when authenticating with app-id and client-secret|
+
+
 
 ## Build and release pipeline authoring
 
