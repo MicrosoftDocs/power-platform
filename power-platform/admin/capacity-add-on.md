@@ -38,8 +38,6 @@ The **Add-ons** tile shows summary information about the capacity add-ons that y
 
 Each capacity has a usage gauge that shows how many units have been assigned compared to the available capacity. Capacities are measured in different ways depending on the product. For example, App passes are assigned individually, while AI Builder capacity is measured in credits. Refer to the product documentation for more information about metering.
 
-Select **Download reports** 
-
 ## Allocate or change capacity in an environment
 
 To allocate capacity to an environment:
@@ -54,7 +52,7 @@ To allocate capacity to an environment:
    - Select the **Add-ons** tab. Select **Assign to an environment** in the upper-left menu bar.    
    - Select the **Add-ons** tab. Select an environment, and then select **Manage add-ons** in the upper-left menu bar.
 
-  You can also select **Download reports** to download usage reports for various capacities.
+   You can also select **Download reports** to download usage reports for various capacities.
 
 4. Select the environment where you want to add capacity from the **Environment** drop-down menu, and then allocate from your available capacity.
 
