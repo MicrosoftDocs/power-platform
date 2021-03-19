@@ -63,7 +63,7 @@ The report displays available storage capacity by source in addition to overall 
 
 This page provides a tenant-level view of where your organization is using storage capacity.
 
-To view the **Summary** page, select **Resources** > **Capacity** > **Summary**.
+To view the **Summary** page, select **Resources** > **Capacity** > **Summary** tab.
 
 > [!div class="mx-imgBorder"] 
 > ![Capacity storage details](media/capacity-old-license-model-explained.png "Capacity storage details")
@@ -79,7 +79,7 @@ To view the **Summary** page, select **Resources** > **Capacity** > **Summary**.
 
 This page provides similar information as the **Summary** tab, but with an environment-level view of where your organization is using capacity.
 
-To view this page, select **Resources** > **Capacity** > **Dataverse**. 
+To view this page, select **Resources** > **Capacity** > **Dataverse** tab. 
 
 Note the following features:
 
@@ -122,7 +122,7 @@ The following details are provided:
 
 This page provides a view of the capacity storage used by your Microsoft Teams environments. Teams environment capacity usage doesn't count towards your organization's Dataverse usage.
 
-To view this page, select **Resources** > **Capacity** > **Microsoft Teams**. 
+To view this page, select **Resources** > **Capacity** > **Microsoft Teams** tab. 
 
 |Feature  |Description  |
 |---------|---------|
@@ -140,7 +140,7 @@ Use this page to view your organization's add-on usage details and to assign add
 
 This page provides a view of the capacity storage used by your trial environments. Trial environment capacity usage doesn't count towards your organization's Dataverse usage.
 
-To view this page, select **Resources** > **Capacity** > **Trials**. 
+To view this page, select **Resources** > **Capacity** > **Trials** tab. 
 
 |Feature  |Description  |
 |---------|---------|
