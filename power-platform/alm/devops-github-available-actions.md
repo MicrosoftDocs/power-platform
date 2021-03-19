@@ -25,7 +25,17 @@ Available GitHub Actions for Microsoft Power Platform are described in the follo
 
 ## Configure deployment credentials
 
-Many of the actions require you to connect to a Microsoft Dataverse environment. You can add credentials as secrets in your the GitHub repository and then use them in the workflow.
+Many of the actions require you to connect to a Microsoft Dataverse environment. You can add service principal or user credentials as secrets in your the GitHub repository and then use them in the workflow.<br/>
+For details on how to setup secrets in GitHub please refer to [the following article on GitHub](https://docs.github.com/en/actions/reference/encrypted-secrets#using-encrypted-secrets-in-a-workflow) <br/>
+To learn how to setup service principal authentication for Power Platform please refer to [following document](https://docs.microsoft.com/en-us/power-platform/alm/devops-build-tools#configure-service-connections-using-a-service-principal)<br/>
+
+Once configured properly you can call the Service Principal from with in your Action scripts <br/>
+Parameters to define within your GitHub Action Script as [Environment Variables](https://docs.github.com/en/actions/reference/environment-variables): <br/>
+Application Id such as: `WF_APPLICATION_ID:<your application id>` <br/>
+Tenant Id such as: `WF_TENANT_ID:<your tenant id>` <br/>
+
+The Client Secret will be stored as a GitHub Secret, as described earlier and will be referenced from within the action script using a parameter like: <br/>
+`client secret: ${{secrets.CLIENT_SECRET_GITHUB_ACTIONS}}` <br/>
 
 ## Helper tasks
 
@@ -40,6 +50,9 @@ Verifies the service connection by connecting to the service and sending a `WhoA
 | environment-url | The URL for the environment you're connecting to.|
 | user-name | The username of the account you're using to connect with. |
 | password-secret | The password for *user-name*. GitHub passwords are defined in **Settings** under **Secrets**. Note that you can't retrieve a secret after it has been defined and saved. |
+|app-id| The application id to authenticate with. This parameter is **required** when authenticating with Service Principal credentials|
+|client-secret| The Client secret used to authenticate the GitHub pipeline. This parameter is **required** when authenticating with Service Principal Credentials|
+|tenant-id| The tenant-id when authenticating with app-id and client-secret|
 
 ## Solution tasks
 
@@ -54,7 +67,10 @@ Imports a solution into a target environment.
 | environment-url| (Required) The URL for the target environment that you want to import the solution into (for example, [https://powerappsactions.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)).|
 |user-name|(Required) If you're using username/password authentication, the username of the account you're using to connect with.|
 | password-secret | (Required) If you're using username/password authentication, the password for the account you're using to connect with. |
- | solution-file        | (Required) The path and file name of the solution file you want to import.   |
+| solution-file        | (Required) The path and file name of the solution file you want to import.   |
+|app-id| The application id to authenticate with. This parameter is **required** when authenticating with Service Principal credentials|
+|client-secret| The Client secret used to authenticate the GitHub pipeline. This parameter is **required** when authenticating with Service Principal Credentials|
+|tenant-id| The tenant-id when authenticating with app-id and client-secret|
 
 ### Microsoft Power Platform export solution
 
@@ -65,9 +81,12 @@ Exports a solution from a source environment.
 | environment-url| (Required) The URL for the environment that you want to export the solution from (for example, [https://powerappsactions.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)).|
 |user-name|(Required) If you're using username/password authentication, the username of the account you're using to connect with.|
 | password-secret | (Required) If you're using username/password authentication, the password for *user-name*. GitHUb passwords are defined in **Settings** under **Secrets**. Note that you can't retrieve a secret after it has been defined and saved. |
+|app-id| The application id to authenticate with. This parameter is **required** when authenticating with Service Principal credentials|
+|client-secret| The Client secret used to authenticate the GitHub pipeline. This parameter is **required** when authenticating with Service Principal Credentials|
+|tenant-id| The tenant-id when authenticating with app-id and client-secret|
  | solution-name              | (Required) The name of the solution to export.<p/>Always use the solution's *name*, not its *display name*.    |
  | solution-output-file        | (Required) The path and file name of the solution.zip file to export the source environment to.|
-  | managed        | (Required) Set to **true** to export as a managed solution; the default (**false**) is to export as an unmanaged solution.
+| managed        | (Required) Set to **true** to export as a managed solution; the default (**false**) is to export as an unmanaged solution.
 
 ### Microsoft Power Platform unpack solution
 
