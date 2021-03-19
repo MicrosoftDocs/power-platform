@@ -6,17 +6,13 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 03/15/2021
+ms.date: 03/19/2021
 ms.author: laswenka
 search.audienceType: 
   - admin
 search.app:
   - Powerplatform
 ---
-
-
-<!-- The final paragraph mentions "Flow" - should this be a generic "flow" or maybe Power Automate? -->
-
 
 # Creating a service principal application via PowerShell
 Authenticating via username and password is often not ideal, especially with the rise of multifactor authentication.  In such cases, service principal (or client credentials flow) authentication is preferred.

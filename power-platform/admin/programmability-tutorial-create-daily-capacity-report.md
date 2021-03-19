@@ -6,22 +6,13 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 03/15/2021
+ms.date: 03/19/2021
 ms.author: laswenka
 search.audienceType: 
   - admin
 search.app:
   - Powerplatform
 ---
-
-
-<!-- On line 613, is [code] supposed to be there? 
->
-For reference, here is style guidance on Logic Apps/logic app: https://styleguides.azurewebsites.net/Styleguide/Read?id=2696&topicid=27515
-Here is style guidance on host name: https://styleguides.azurewebsites.net/Styleguide/Read?id=2700&topicid=33967   
-Style guidance for Key Vault/key vault: https://styleguides.azurewebsites.net/Styleguide/Read?id=2696&topicid=27780  -->
-
-
 
 # Preview: Create a daily capacity report
 
@@ -610,7 +601,6 @@ Then we parse this single environment into a strongly typed object using this JS
 }
 ```
 Next, we will use another For Each control using the ‘capacity’ of the Parse-CurrentItem output. Then we parse this into a strongly typed object using this JSON schema:
-[code]
 
 > [!div class="mx-imgBorder"] 
 > ![For Each control using the capacity of the Parse-CurrentItem output](media/capacity9.png "For Each control using the capacity of the Parse-CurrentItem output")

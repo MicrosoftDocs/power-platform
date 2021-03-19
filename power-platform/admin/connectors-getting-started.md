@@ -1,12 +1,12 @@
 ---
-title: Programmability and Extensibility - Power Platform for Admins Management Connectors - Getting started | Microsoft Docs
+title: Programmability and Extensibility - Power Platform for Admins management connectors - Getting started | Microsoft Docs
 description: Power Platform API getting started
 author: laneswenka
 ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 03/15/2021
+ms.date: 03/19/2021
 ms.author: laswenka
 search.audienceType: 
   - admin
@@ -14,13 +14,7 @@ search.app:
   - Powerplatform
 ---
 
-
-<!-- I'm unsure whether "Management Connectors" are part of the name, or if those words should be lowercase. I'm guessing they should be lowercase in the title. Line 44 just calls them Power Platform for Admins connectors.  
-Also, I haven't come across "Swagger" before - are you certain readers will know what it is? -->
-
-
-
-# Get started with Power Platform for Admins Management Connectors
+# Get started with Power Platform for Admins management connectors
 A connector is a proxy or a wrapper around an API that allows the underlying service to talk to the Power Platform API. It provides a way for users to connect their accounts and leverage a set of prebuilt actions and triggers to build their apps and workflows.
 
 These connectors are ready-made for environment management and other common activities for Microsoft Power Platform administrators.  
@@ -29,7 +23,7 @@ These connectors are ready-made for environment management and other common acti
 Each connector offers a set of operations classified as *actions* and *triggers*. Once you connect to the underlying service, these operations can be easily leveraged within your apps and workflows.
 
 ### Actions
-Actions are changes directed by a user. For example, you would use an action to look up, write, update, or delete data in a Microsoft Azure SQL database. All actions directly map to operations defined in the Swagger.
+Actions are changes directed by a user. For example, you would use an action to look up, write, update, or delete data in a Microsoft Azure SQL database. All actions directly map to operations defined in [Swagger](/aspnet/core/tutorials/web-api-help-pages-using-swagger?view=aspnetcore-5.0).
 
 ### Triggers
 Several connectors provide triggers that can notify your app when specific events occur. For example, the FTP connector has the OnUpdatedFile trigger. You can build either a logic app or a flow that listens to this trigger and performs an action whenever the trigger fires.
