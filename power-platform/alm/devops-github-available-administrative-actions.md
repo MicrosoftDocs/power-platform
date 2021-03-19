@@ -1,6 +1,6 @@
 ---
-title: "Available GitHub Actions for Microsoft Power Platform | Microsoft Docs"
-description: "Learn about the available GitHub Actions supporting continuous integration and delivery with Microsoft Power Platform."
+title: "Available GitHub Administration Actions for Microsoft Power Platform | Microsoft Docs"
+description: "Learn about the available GitHub Administration Actions supporting continuous integration and delivery with Microsoft Power Platform."
 keywords: 
 author: kkanakas
 ms.author: kartikka
