@@ -118,7 +118,7 @@ the output will be the URL of the new environment
 
 | Parameter           | Description        |
 |----------------------|--------------------------|
-|environment-url| URL of the environment that needs to be backed up <br/> e.g. `https://env-to-reset.crm.dynamics.com`|
+|environment-url| URL of the environment that needs to be reset <br/> e.g. `https://env-to-reset.crm.dynamics.com`|
 |user-name | The username of the account you're using to connect with. |
 |password-secret | The password for *user-name*. GitHub passwords are defined in **Settings** under **Secrets**. Note that you can't retrieve a secret after it has been defined and saved. |
 |app-id| The application id to authenticate with. This parameter is **required** when authenticating with Service Principal credentials|
@@ -126,6 +126,41 @@ the output will be the URL of the new environment
 |tenant-id| The tenant-id when authenticating with app-id and client-secret|
 
 
+
+### Microsoft Power Platform delete environment
+
+[Action to delete environment to recover storage space](https://docs.microsoft.com/en-us/power-platform/admin/delete-environment)
+
+| Parameter           | Description        |
+|----------------------|--------------------------|
+|environment-url| URL of the environment that needs to be delete <br/> e.g. `https://env-to-delete.crm.dynamics.com`|
+|user-name | The username of the account you're using to connect with. |
+|password-secret | The password for *user-name*. GitHub passwords are defined in **Settings** under **Secrets**. Note that you can't retrieve a secret after it has been defined and saved. |
+|app-id| The application id to authenticate with. This parameter is **required** when authenticating with Service Principal credentials|
+|client-secret| The Client secret used to authenticate the GitHub pipeline. This parameter is **required** when authenticating with Service Principal Credentials|
+|tenant-id| The tenant-id when authenticating with app-id and client-secret|
+
+
+
+
+
+
+## Helper tasks
+
+The available helper tasks are described below.
+
+### Microsoft Power Platform WhoAmI
+
+Verifies the service connection by connecting to the service and sending a `WhoAmI` [[SDK](/dotnet/api/microsoft.crm.sdk.messages.whoamirequest)/[Web API](/dynamics365/customer-engagement/web-api/whoami)] request. This task can be useful to include early in your DevOps pipeline, to verify connectivity before processing begins.
+
+| Parameter    | Description   |
+|---------------|---------------|
+| environment-url | The URL for the environment you're connecting to.|
+| user-name | The username of the account you're using to connect with. |
+| password-secret | The password for *user-name*. GitHub passwords are defined in **Settings** under **Secrets**. Note that you can't retrieve a secret after it has been defined and saved. |
+|app-id| The application id to authenticate with. This parameter is **required** when authenticating with Service Principal credentials|
+|client-secret| The Client secret used to authenticate the GitHub pipeline. This parameter is **required** when authenticating with Service Principal Credentials|
+|tenant-id| The tenant-id when authenticating with app-id and client-secret|
 
 ## Build and release pipeline authoring
 
