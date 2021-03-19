@@ -108,6 +108,38 @@ Packs a solution represented in source control into a solution.zip file that can
 | solution-folder             | (Required) The path and source folder of the solution to pack.      |
 | solution-type                  | (Optional) The type of solution to pack. Options include **Unmanaged** (recommended), **Managed**, and **Both**. |
 
+### Microsoft Power Platform Publish Solution
+
+Publishes the solution customizations 
+
+| environment-url| (Required) The URL for the  environment that you want to publish the solution into (for example, [https://powerappsactions.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)).|
+|user-name|(Required) If you're using username/password authentication, the username of the account you're using to connect with.|
+| password-secret | (Required) If you're using username/password authentication, the password for the account you're using to connect with. |
+| solution-file        | (Required) The path and file name of the solution file you want to import.   |
+|app-id| The application id to authenticate with. This parameter is **required** when authenticating with Service Principal credentials|
+|client-secret| The Client secret used to authenticate the GitHub pipeline. This parameter is **required** when authenticating with Service Principal Credentials|
+|tenant-id| The tenant-id when authenticating with app-id and client-secret|
+
+
+### Microsoft Power Platform Clone Solution
+
+Clones the solution for a given environment
+
+| environment-url| (Required) The URL for the  environment that you want to clone the solution from (for example, [https://powerappsactions.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)).|
+|user-name|(Required) If you're using username/password authentication, the username of the account you're using to connect with.|
+| password-secret | (Required) If you're using username/password authentication, the password for the account you're using to connect with. |
+| solution-file        | (Required) The path and file name of the solution file you want to import.   |
+|app-id| The application id to authenticate with. This parameter is **required** when authenticating with Service Principal credentials|
+|client-secret| The Client secret used to authenticate the GitHub pipeline. This parameter is **required** when authenticating with Service Principal Credentials|
+|tenant-id| The tenant-id when authenticating with app-id and client-secret|
+|solution-name | (Required) The path and file name of the solution.zip file needed to clone (for example, out/CI/ALMLab.zip).|
+|solution-version | Version of the solution to clone| 
+|target-folder | Target folder to place the extracted solution into. (for example, <Git repository>\target-solution-folder) |
+|Working-directory | temporary folder for work in progress artifacts needed for cloning the solution <br/> default: `root of the repository`|
+
+
+
+
 ## Build and release pipeline authoring
 
 To learn about creating multiple-action workflows and pipelines through hands-on authoring by using GitHub Actions for Microsoft Power Platform, complete the [GitHub Actions for Microsoft Power Platform labs](https://aka.ms/poweractionslab).
