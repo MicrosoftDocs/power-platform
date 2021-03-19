@@ -129,6 +129,10 @@ To view this page, select **Resources** > **Capacity** > **Microsoft Teams**.
 |Download     | Select **Download** above the list of environments to download an Excel .CSV file with high-level storage information for each environment that the signed-in admin has permission to see in the Power Platform admin center.        |
 |Search     | Use **Search** to search by the environment name and the environment type.         |
 
+### Add-ons tab
+
+Use this page to view your organization's add-on usage details and to assign add-ons to environments. See [View capacity add-ons in Power Platform admin center](capacity-add-on.md#view-capacity-add-ons-in-power-platform-admin-center)
+
 ### Trial tab
 
 This page provides a view of the capacity storage used by your trial environments. Trial environment capacity usage doesn't count towards your organization's Dataverse usage.
