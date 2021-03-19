@@ -64,53 +64,35 @@ Creates an environment in the Power Platform tenant
 the output will be the URL of the new environment
 
 
-## Solution tasks
 
-These tasks perform actions against solutions and include the following.
+### Microsoft Power Platform copy environment
 
-### Microsoft Power Platform import solution
-
-Imports a solution into a target environment.
+Creates a copy of a given environment 
 
 | Parameter           | Description        |
 |----------------------|--------------------------|
-| environment-url| (Required) The URL for the target environment that you want to import the solution into (for example, [https://powerappsactions.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)).|
-|user-name|(Required) If you're using username/password authentication, the username of the account you're using to connect with.|
-| password-secret | (Required) If you're using username/password authentication, the password for the account you're using to connect with. |
- | solution-file        | (Required) The path and file name of the solution file you want to import.   |
+|source-url| Source URL of the Power Platform environment to copy <br/> e.g. `https://source-env.crm.dynamics.com`|
+|target-url| Target URL of the Power Platofmr environment to copy <br/> e.g. `https://target-copy-env.crm.dynamics.com`|
+|user-name | The username of the account you're using to connect with. |
+|password-secret | The password for *user-name*. GitHub passwords are defined in **Settings** under **Secrets**. Note that you can't retrieve a secret after it has been defined and saved. |
+|app-id| The application id to authenticate with. This parameter is **required** when authenticating with Service Principal credentials|
+|client-secret| The Client secret used to authenticate the GitHub pipeline. This parameter is **required** when authenticating with Service Principal Credentials|
+|tenant-id| The tenant-id when authenticating with app-id and client-secret|
 
-### Microsoft Power Platform export solution
 
-Exports a solution from a source environment.
+### Microsoft Power Platform backup environment 
 
-| Parameter      | Description     |
-|-----------------|---------------------|
-| environment-url| (Required) The URL for the environment that you want to export the solution from (for example, [https://powerappsactions.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)).|
-|user-name|(Required) If you're using username/password authentication, the username of the account you're using to connect with.|
-| password-secret | (Required) If you're using username/password authentication, the password for *user-name*. GitHUb passwords are defined in **Settings** under **Secrets**. Note that you can't retrieve a secret after it has been defined and saved. |
- | solution-name              | (Required) The name of the solution to export.<p/>Always use the solution's *name*, not its *display name*.    |
- | solution-output-file        | (Required) The path and file name of the solution.zip file to export the source environment to.|
-  | managed        | (Required) Set to **true** to export as a managed solution; the default (**false**) is to export as an unmanaged solution.
+Creates a backup of a given environment
 
-### Microsoft Power Platform unpack solution
-
-Takes a compressed solution file and decomposes it into multiple XML files so these files can be more easily read and managed by a source control system.
-
-| Parameter    | Description       |
-|---------------|-------------------|
-| solution-file              | (Required) The path and file name of the solution.zip file to unpack.     |
-| solution-folder | (Required) The path and target folder you want to unpack the solution into.      |
-| solution-type | (Required) The type of solution you want to unpack. Options include **Unmanaged** (recommended), **Managed**, and **Both**. |
-
-### Microsoft Power Platform pack solution
-
-Packs a solution represented in source control into a solution.zip file that can be imported into another environment.
-
-| Parameter       | Description     |
-|------------------|-----------------|
-| solution-file              | (Required) The path and file name of the solution.zip file to pack the solution into (for example, out/CI/ALMLab.zip).     |
-| solution-folder             | (Required) The path and source folder of the solution to pack.      |
-| solution-type                  | (Optional) The type of solution to pack. Options include **Unmanaged** (recommended), **Managed**, and **Both**. |
+| Parameter           | Description        |
+|----------------------|--------------------------|
+|environment-url| URL of the environment that needs to be backed up <br/> e.g. `https://env-to-backup.crm.dynamics.com`|
+|backup-label| Useful name to Label the backup of the environment|
+|user-name | The username of the account you're using to connect with. |
+|password-secret | The password for *user-name*. GitHub passwords are defined in **Settings** under **Secrets**. Note that you can't retrieve a secret after it has been defined and saved. |
+|app-id| The application id to authenticate with. This parameter is **required** when authenticating with Service Principal credentials|
+|client-secret| The Client secret used to authenticate the GitHub pipeline. This parameter is **required** when authenticating with Service Principal Credentials|
+|tenant-id| The tenant-id when authenticating with app-id and client-secret|
 
 ## Build and release pipeline authoring
 
