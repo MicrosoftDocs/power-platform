@@ -2,7 +2,7 @@
 title: "Automate chatbot actions with flows"
 description: "Retrieve data and automate processes in your Power Virtual Agents bot with flows."
 keywords: "PVA, flow, automate"
-ms.date: 9/22/2020
+ms.date: 3/19/2020
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
