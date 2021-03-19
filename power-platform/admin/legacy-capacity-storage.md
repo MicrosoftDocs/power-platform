@@ -73,6 +73,7 @@ To view the **Summary** page, select **Resources** > **Capacity** > **Summary**.
 |(1)   |**Storage capacity usage**  <ul><li>**File and database**: The following entities store data in file and database storage: <ul><li>Attachment</li><li>AnnotationBase</li><li>Any custom or out-of-the-box entity that has fields of datatype file or image (full size)</li><li>Any entity that is used by one or more installed Insights applications and [ends in *- Analytics*](#what-are-entities-ending-in---analytics-in-my-capacity-report) </li> </ul><ul><li>WebResourceBase</li></ul><ul><li>RibbonClientMetadataBase</li></ul></li><li>**Log**: The following entities are used: <ul><li>AuditBase</li><li>PlugInTraceLogBase</li></ul><li>**Database only**: All other entities are counted for your database</li></ul>  |
 |(2)    |**Storage capacity, by source** <ul><li>**Org (tenant) default**: The default capacity given at the time of sign-up </li><li>**User licenses**: Additional capacity added for every user license purchased</li><li>**Additional storage**: Any additional storage you bought </li><li>**Total**: Total storage available </li><li>**View self-service sources**: See [View self-service license amounts and storage capacity](view-self-service-capacity.md)</li></ul>      |
 |(3)     |**Top storage usage, by environment**: The environments that consume the most capacity        |
+|(4)  |  **Add-ons**:  Your organization's add-on usage details. See [View capacity add-ons in Power Platform admin center](capacity-add-on.md#view-capacity-add-ons-in-power-platform-admin-center) |
 
 ### Dataverse tab
 
@@ -92,7 +93,6 @@ Note the following features:
 > [!div class="mx-imgBorder"] 
 > ![Dataverse capacity tab](media/capacity-old-license-model-storage-tab.png "Dataverse capacity tab")
 
-
 > [!NOTE]
 > - The following environments don't count against capacity and are shown as 0 GB:
 >   - Microsoft Teams
@@ -104,7 +104,7 @@ Note the following features:
 
 #### Environment storage capacity details
 
-This page provides an environment-level detailed view of where your organization is using capacity, in addition to the three types of capacity consumption. 
+Select the **Details** button (![Storage data details button](media/storage-data-details-button.png "Storage data details button")) on the **Summary** tab view to see  an environment-level detailed view of where your organization is using capacity, in addition to the three types of capacity consumption. 
 
 > [!div class="mx-imgBorder"] 
 > ![Environment capacity analytics](media/capacity-old-license-model-storage-details.png "Environment capacity analytics")
