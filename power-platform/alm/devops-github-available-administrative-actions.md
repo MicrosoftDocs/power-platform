@@ -65,7 +65,7 @@ the output will be the URL of the new environment
 
 
 
-### Microsoft Power Platform copy environment
+### Copy environment
 
 [Creates a copy of a given environment](https://docs.microsoft.com/en-us/power-platform/admin/copy-environment) 
 
@@ -80,7 +80,7 @@ the output will be the URL of the new environment
 |tenant-id| The tenant-id when authenticating with app-id and client-secret|
 
 
-### Microsoft Power Platform backup environment 
+### Backup environment 
 
 [Creates a backup of a given environment](https://docs.microsoft.com/en-us/power-platform/admin/backup-restore-environments)
 
@@ -96,7 +96,7 @@ the output will be the URL of the new environment
 
 
 
-### Microsoft Power Platform restore environment
+### Restore environment
 
 [Action to restore an environment from backup](https://docs.microsoft.com/en-us/power-platform/admin/backup-restore-environments)
 
@@ -112,7 +112,7 @@ the output will be the URL of the new environment
 
 
 
-### Microsoft Power Platform reset environment 
+### Reset environment 
 
 [Action to reset environment to delete and reprovision the environment](https://docs.microsoft.com/en-us/power-platform/admin/reset-environment) 
 
@@ -127,7 +127,7 @@ the output will be the URL of the new environment
 
 
 
-### Microsoft Power Platform delete environment
+### Delete environment
 
 [Action to delete environment to recover storage space](https://docs.microsoft.com/en-us/power-platform/admin/delete-environment)
 
@@ -146,7 +146,7 @@ the output will be the URL of the new environment
 
 The available helper tasks are described below.
 
-### Microsoft Power Platform WhoAmI
+###  WhoAmI
 
 Verifies the service connection by connecting to the service and sending a `WhoAmI` [[SDK](/dotnet/api/microsoft.crm.sdk.messages.whoamirequest)/[Web API](/dynamics365/customer-engagement/web-api/whoami)] request. This task can be useful to include early in your DevOps pipeline, to verify connectivity before processing begins.
 
