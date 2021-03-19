@@ -80,7 +80,7 @@ All tables of Dataverse, including system tables, are included in the storage ca
 
 The actual files such as .pdf (or any other file attachment type) are stored in file storage. However, certain attributes needed to access the files are stored in the database as well.
 
-### Storage capacity tab
+### Dataverse tab
 
 This page provides similar information as the **Summary** tab, but with an environment-level view of where your organization is using capacity.
 

@@ -74,43 +74,37 @@ To view the **Summary** page, select **Resources** > **Capacity** > **Summary**.
 |(2)    |**Storage capacity, by source** <ul><li>**Org (tenant) default**: The default capacity given at the time of sign-up </li><li>**User licenses**: Additional capacity added for every user license purchased</li><li>**Additional storage**: Any additional storage you bought </li><li>**Total**: Total storage available </li><li>**View self-service sources**: See [View self-service license amounts and storage capacity](view-self-service-capacity.md)</li></ul>      |
 |(3)     |**Top storage usage, by environment**: The environments that consume the most capacity        |
 
-### Storage capacity tab
+### Dataverse tab
 
 This page provides similar information as the **Summary** tab, but with an environment-level view of where your organization is using capacity.
 
-To view the **Storage capacity** page, select **Resources** > **Capacity** > **Dataverse**. 
+To view this page, select **Resources** > **Capacity** > **Dataverse**. 
 
 Note the following features:
 
 |Feature  |Description  |
 |---------|---------|
-|Trial     | Select the **Trial** tab to list trial environments.        |
 |Download     | Select **Download** above the list of environments to download an Excel .CSV file with high-level storage information for each environment that the signed-in admin has permission to see in the Power Platform admin center.        |
 |Search     | Use **Search** to search by the environment name and the environment type.         |
 |Last updated   | The Last updated column shows when the environment was last updated.        |
 |Details  | See the next section for using the **Details** button (![Storage data details button](media/storage-data-details-button.png "Storage data details button")) to see environment capacity analytics.   |
 
 > [!div class="mx-imgBorder"] 
-> ![Storage capacity tab](media/capacity-old-license-model-storage-tab.png "Storage capacity tab")
+> ![Dataverse capacity tab](media/capacity-old-license-model-storage-tab.png "Dataverse capacity tab")
 
 
 > [!NOTE]
 > - The following environments don't count against capacity and are shown as 0 GB:
+>   - Microsoft Teams
 >   - Trial 
 >   - Preview
 >   - Support
 >   - Developer
-> - You can select an environment that's showing 0 GB, and then go to its **Environment analytics** page to see the actual consumption.
+> - You can select an environment that's showing 0 GB, and then go to its storage capacity details page to see the actual consumption.
 
-### Environment capacity analytics
+#### Environment storage capacity details
 
 This page provides an environment-level detailed view of where your organization is using capacity, in addition to the three types of capacity consumption. 
-
-**To view environment-level capacity analytics**
-
-1. Select **Resources** > **Capacity** > **Dataverse**.
-2. Select an environment.
-3. Select **Details** (![Details button](media/storage-data-details-button.png "Details button")).
 
 > [!div class="mx-imgBorder"] 
 > ![Environment capacity analytics](media/capacity-old-license-model-storage-details.png "Environment capacity analytics")
@@ -123,6 +117,28 @@ The following details are provided:
 - Top files tables and their growth over time
 - Actual log usage
 - Top tables and their growth over time
+
+### Microsoft Teams tab
+
+This page provides a view of the capacity storage used by your Microsoft Teams environments. Teams environment capacity usage doesn't count towards your organization's Dataverse usage.
+
+To view this page, select **Resources** > **Capacity** > **Microsoft Teams**. 
+
+|Feature  |Description  |
+|---------|---------|
+|Download     | Select **Download** above the list of environments to download an Excel .CSV file with high-level storage information for each environment that the signed-in admin has permission to see in the Power Platform admin center.        |
+|Search     | Use **Search** to search by the environment name and the environment type.         |
+
+### Trial tab
+
+This page provides a view of the capacity storage used by your trial environments. Trial environment capacity usage doesn't count towards your organization's Dataverse usage.
+
+To view this page, select **Resources** > **Capacity** > **Trials**. 
+
+|Feature  |Description  |
+|---------|---------|
+|Download     | Select **Download** above the list of environments to download an Excel .CSV file with high-level storage information for each environment that the signed-in admin has permission to see in the Power Platform admin center.        |
+|Search     | Use **Search** to search by the environment name and the environment type.         |
 
 ## Example storage capacity scenario
 
