@@ -48,7 +48,7 @@ To see whether you have any of these licenses, sign in to the Microsoft 365 admi
 
 1. Sign in to the Power Platform admin center, and then select an environment. 
 
-2. Select **Resources** > **Capacity**.
+2. Select **Resources** > **Capacity** > **Summary** tab.
 
 3. View the data on the **Summary** page.
 
@@ -63,7 +63,7 @@ The new licensing storage model looks like the following image.
 
 This page provides a tenant-level view of where your organization is using storage capacity.
 
-To view the **Summary** page, select **Resources** > **Capacity** > **Summary**.
+To view the **Summary** page, select **Resources** > **Capacity** > **Summary** tab.
 
 > [!div class="mx-imgBorder"] 
 > ![Capacity page Summary tab](media/storage-data-capacity-page-review.png "Capacity page Summary tab")
@@ -84,7 +84,7 @@ The actual files such as .pdf (or any other file attachment type) are stored in 
 
 This page provides similar information as the **Summary** tab, but with an environment-level view of where your organization is using capacity.
 
-To view the **Storage capacity** page, select **Resources** > **Capacity** > **Dataverse**. 
+To view the **Storage capacity** page, select **Resources** > **Capacity** > **Dataverse** tab. 
 
 Note the following features:
 
@@ -105,7 +105,7 @@ Note the following features:
 >   - Preview
 >   - Support
 >   - Developer
-> - You can select an environment that's showing 0 GB, and then go to its **Environment Analytics** page to see the actual consumption.
+> - You can select an environment that's showing 0 GB, and then go to its environment capacity analytics page to see the actual consumption.
 
 ### Environment capacity analytics
 
@@ -113,7 +113,7 @@ This page provides an environment-level detailed view of where your organization
 
 **To view environment-level capacity analytics**
 
-1. Select **Resources** > **Capacity** > **Dataverse**.
+1. Select **Resources** > **Capacity** > **Dataverse** tab.
 2. Select an environment.
 3. Select **Details** (![Storage data details button2](media/storage-data-details-button.png "Storage data details button2")).
 

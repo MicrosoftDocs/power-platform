@@ -44,7 +44,7 @@ To allocate capacity to an environment:
 
 1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). 
 
-2. Select **Resources** > **Capacity** > **Summary**.
+2. Select **Resources** > **Capacity** > **Summary** tab.
 
 3. On the **Summary** tab view, do **one** of the following to open the **Manage add-ons** screen:
 
