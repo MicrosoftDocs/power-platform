@@ -1,6 +1,6 @@
 ---
-title: "Tenant to tenant migration  | MicrosoftDocs"
-description: Information on tenant to tenant migration 
+title: "Migrate an environment to a different tenant"
+description: "Learn about the impact of moving an environment from one tenant to another. Review the prerequisites and considerations before submitting a request." 
 ms.custom: ""
 ms.date: 02/04/2021
 ms.service: power-platform
