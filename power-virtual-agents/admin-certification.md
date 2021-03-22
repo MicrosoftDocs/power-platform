@@ -61,4 +61,10 @@ Power Virtual Agents is compliant with the ISO standards listed in the following
 [HIPAA](https://www.hhs.gov/hipaa/index.html) is a United States healthcare law that establishes requirements for the use, disclosure, and safeguarding of individually identifiable health information. It applies to covered entities&mdash;doctors' offices, hospitals, health insurers, and other healthcare companies&mdash;that have access to patients' protected health information (PHI), in addition to business associates&mdash;such as cloud service and IT providers&mdash;that process PHI on their behalf.
 
 
+## Outsourced Service Provider’s Audit Report (OSPAR)
+The OSPAR framework was established by the Association of Banks in Singapore (ABS), which formulated IT security guidelines for outsourced service providers (OSPs) that seek to provide services to Singapore’s financial institutions. The ABS Guidelines are intended to assist financial institutions in understanding approaches to due diligence, vendor management, and key technical and organizational controls that should be implemented in cloud outsourcing arrangements, particularly for material workloads. 
+
+Power Virtual Agents has OSPAR attestation. [Learn more about the ABS OSPR](/compliance/regulatory/offering-abs-ospar.md)
+
+
 [!INCLUDE[footer-include](includes/footer-banner.md)]
