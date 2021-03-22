@@ -68,7 +68,7 @@ Use the following methods to free up storage for each of the capacity types.
   
    **Attachments (Item)**  
   
-   **File Size (Bytes)** – **Is Greater Than** - In the text box, type a byte value, such as 1,048,576 (1MB in binary).  
+   **File Size (Bytes)** – **Is Greater Than** - In the text box, type a byte value, such as 1,048,576 (this is binary for 1MB).  
  
 > [!div class="mx-imgBorder"] 
 > ![Free up storage method 3](media/free-storage-method3a.png "Free up storage method 3")  
@@ -101,7 +101,7 @@ Use the following methods to free up storage for each of the capacity types.
   
    **Attachments (Item)**  
   
-   **File Size (Bytes)** – **Is Greater Than** – In the text box, type a byte value, such as 1,048,576 (1MB in binary).  
+   **File Size (Bytes)** – **Is Greater Than** – In the text box, type a byte value, such as 1,048,576 (this is binary for 1MB).  
   
 6. Group the first two criteria rows:  
   
