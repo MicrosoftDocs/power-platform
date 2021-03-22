@@ -1,6 +1,6 @@
 ---
-title: What's new for storage | Microsoft Docs
-description: Learn what's new about storage for Microsoft Power Platform
+title: "What's new for storage administration in Microsoft Power Platform"
+description: "Learn about enhancements for storage that affect administrators, including reporting and reaching Dataverse database capacity limits."
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin

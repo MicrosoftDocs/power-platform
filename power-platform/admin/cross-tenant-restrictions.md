@@ -1,6 +1,6 @@
 ---
-title: "Restrict cross-tenant access   | MicrosoftDocs"
-description: Restrict cross-tenant access  
+title: "Restrict cross-tenant inbound and outbound access"
+description: "Use tenant restrictions to control access to SaaS cloud applications based on the Azure AD tenant. You can also enforce tenant isolation for Power Platform connections."  
 ms.date: 11/18/2020
 ms.service: power-platform
 ms.suite: ""
