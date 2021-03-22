@@ -25,7 +25,7 @@ For information about:
 
 - Power BI licensing, see [Power BI Pricing](https://powerbi.microsoft.com/pricing/).
 
-- Power Virtual Agents licensing, see [Licensing for Power Virtual Agents](/power-virtual-agents/requirements-licensing-subscriptions.md) and for information about pricing, see [Power Virtual Agents pricing plans](https://powervirtualagents.microsoft.com/pricing/).
+- Power Virtual Agents licensing, see [Licensing for Power Virtual Agents](/power-virtual-agents/requirements-licensing-subscriptions) and for information about pricing, see [Power Virtual Agents pricing plans](https://powervirtualagents.microsoft.com/pricing/).
 
 ## Power Apps and Power Automate Standalone plans
 
