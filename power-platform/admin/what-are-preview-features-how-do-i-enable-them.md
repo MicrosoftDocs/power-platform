@@ -1,6 +1,6 @@
 ---
-title: "What are Preview features, and how do I enable them?  | MicrosoftDocs"
-description: What are Preview features, and how do I enable them? 
+title: "Enable Preview features to get early access"
+description: "Learn how to enable Preview features that have limited functionality to get early access and provide feedback."
 author: jimholtz
 manager: kvivek
 ms.service: power-platform
