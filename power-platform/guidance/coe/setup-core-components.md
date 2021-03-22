@@ -70,6 +70,8 @@ This is the first step of the installation process and is required for every oth
         - Office 365 Groups
         - SharePoint
         - Microsoft Teams
+        - Notifications
+        - SharePoint Online
 
 1. On the left pane, select **Solutions**.
 
