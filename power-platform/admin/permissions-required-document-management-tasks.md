@@ -1,6 +1,6 @@
 ---
-title: "Permissions required for document management tasks   | MicrosoftDocs"
-description: Permissions required for document management tasks
+title: "Permissions and roles for SharePoint document management tasks"
+description: "Learn about the security roles and permissions required for document management tasks when using SharePoint."
 author: Mattp123
 manager: kvivek
 ms.service: power-platform
