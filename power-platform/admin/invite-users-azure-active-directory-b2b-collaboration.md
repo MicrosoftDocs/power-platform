@@ -4,7 +4,7 @@ description: Invite users with Azure Active Directory B2B collaboration
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/27/2021
+ms.date: 03/22/2021
 author: jimholtz
 ms.author: jimholtz
 ms.reviewer: jimholtz
@@ -50,7 +50,7 @@ You can invite other users to access your environment. The [!INCLUDE[pn_Office_3
    
 6. Power Apps Maker experiences
    
-   Invited users cannot sign in to https://make.powerapps.com or https://create.powerapps.com as a guest of a tenant. For time being, users can only sign in to their home tenant in these maker experiences. 
+   Invited users cannot sign in to https://make.powerapps.com or https://create.powerapps.com as a guest of a tenant. For the time being, users can only sign in to their home tenant in these maker experiences. 
 
 ## Invite a user  
  You can add users to through [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)] B2B user collaboration. Global admins and limited admins can use the [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] portal to invite B2B collaboration users to the directory, to any security group, or to any application.  
@@ -131,6 +131,6 @@ You can invite other users to access your environment. The [!INCLUDE[pn_Office_3
  [Azure Active Directory B2B Collaboration](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)   
  [Azure AD B2B: New updates make cross-business collab easy](https://blogs.technet.microsoft.com/enterprisemobility/2017/02/01/azure-ad-b2b-new-updates-make-cross-business-collab-easy/)
 
-[Share a canvas app with guest users](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/share-app-guests)
+[Share a canvas app with guest users](https://docs.microsoft.com/powerapps/maker/canvas-apps/share-app-guests)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
