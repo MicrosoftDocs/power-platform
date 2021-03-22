@@ -56,7 +56,9 @@ The [sync flows](#flows) of the CoE Starter Kit sync your tenant resources to th
   - Number of apps (rollup)
   - Number of flows (rollup)
   - Number of custom connectors (rollup)
-  - Microsoft Teams ID and URL for environments of type Teams
+  - Environment Owner (if environments are created by admins, manually store owner here)
+  - Business Area
+  - Approved Capacity
 
 - **PowerApps App** represents an app. The following information is available for each app:
   - Display name
@@ -201,6 +203,22 @@ The [sync flows](#flows) of the CoE Starter Kit sync your tenant resources to th
   - Completed On
   - Error Code
   - Error Message
+
+- **Environment Capacity** stores capacity information for an environment
+  - Capacity Type (File, Database, Log)
+  - Unit (GB, MB)
+  - Actual Consumption
+  - Rated Consumption (takes into account minimum capacity reservation required for the particular environment type)
+
+- **Environment Add Ons** stores add-on information for an environment
+  - Add On Type (Per App Pass, AI Builder Consumption)
+  - Unit (MB, Logins)
+  - Allocation
+
+- **Environment Business Area** represents the owning business area of an environment, if cross-charging is required
+  - Area Name
+  - Cost Code
+  - Area Lead
 
 ## Security roles
 

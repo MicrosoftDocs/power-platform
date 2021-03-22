@@ -27,7 +27,7 @@ The Developer Compliance Center canvas app has been updated to use responsive la
 
 ## App and Flow Archive and Clean Up view
 
-Previously a model driven app, this has now been replaced with a canvas app to enable solution import into Dataverse for Teams. 
+Previously a model driven app, this has now been replaced with a canvas app to enable solution import into Dataverse for Teams.
 
 ## Exclude Default Environment from Compliance Flows
 
