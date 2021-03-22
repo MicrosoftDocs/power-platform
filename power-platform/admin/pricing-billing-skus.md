@@ -1,6 +1,6 @@
 ---
-title: Licensing overview | Microsoft Docs
-description: Overview of licensing in Power Apps.
+title: Licensing overview for Microsoft Power Platform | Microsoft Docs
+description: Overview of licensing in Microsoft Power Platform (Power Apps, Power Automate, Power Virtual Agents, Power BI, AI Builder, Dataverse, portals).
 author: dileepsinghmicrosoft
 ms.service: power-platform
 ms.component: pa-admin
