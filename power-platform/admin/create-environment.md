@@ -68,7 +68,7 @@ To create an environment, all the following must be true:
    | Power Virtual Agents trial plan |Yes | No |
    | Power Virtual Agents plan | No | Yes |
 
-   To determine which license a user has, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) and follow the steps in [Assign licenses to multiple users on the Active users page](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users?view=o365-worldwide).
+   To determine which license a user has, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) and follow the steps in [Assign licenses to multiple users on the Active users page](/office365/admin/manage/assign-licenses-to-users?view=o365-worldwide).
 
 2. The tenant (or user in the case of email trials) must have the following:
 
