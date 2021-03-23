@@ -25,10 +25,10 @@ You can subscribe to receive telemetry about operations that applications perfor
 
 You don't need to write any code to enable this telemetry. You can enable or disable the telemetry feed at any time.
 
-[Application Insights](https://docs.microsoft.com/azure/azure-monitor/app/app-insights-overview) is part of the Azure Monitor ecosystem. It's widely used by enterprises for monitoring and diagnostics. Many customers have added code to their extensions to capture this data into their Application Insights environments. This additional code has a cost, however&mdash;not only the cost to write and maintain, but also a performance cost at runtime. These costs can be avoided by using Application Insights built-in integration.
+[Application Insights](/azure/azure-monitor/app/app-insights-overview) is part of the Azure Monitor ecosystem. It's widely used by enterprises for monitoring and diagnostics. Many customers have added code to their extensions to capture this data into their Application Insights environments. This additional code has a cost, however&mdash;not only the cost to write and maintain, but also a performance cost at runtime. These costs can be avoided by using Application Insights built-in integration.
 
 > [!NOTE]
-> At general availability, enablement of Application Insights will be subject to minimum paid/premium licenses to be available for the tenant. Details of these requirements will be provided in admin documentation and in general availability [release plans](https://docs.microsoft.com/dynamics365/release-plans/).
+> At general availability, enablement of Application Insights will be subject to minimum paid/premium licenses to be available for the tenant. Details of these requirements will be provided in admin documentation and in general availability [release plans](/dynamics365/release-plans/).
         
 
 ## Why do I need telemetry?
@@ -41,13 +41,13 @@ You can also use telemetry to observe overall performance trends so you can proa
 
 ## How does it work?
 
-Microsoft already gathers extensive telemetry on Dataverse and model-driven apps. With Application Insights integration, an environment or tenant admin provides the Application Insights instrumentation key while setting up the data export process in the Power Platform admin center. As soon as setup is complete, telemetry that Microsoft gathers about your Dataverse environment and any model-driven apps that use Application Insights are sent to your Application Insights environment. More information: [Create an Application Insights resource](https://docs.microsoft.com/azure/azure-monitor/app/create-new-resource)
+Microsoft already gathers extensive telemetry on Dataverse and model-driven apps. With Application Insights integration, an environment or tenant admin provides the Application Insights instrumentation key while setting up the data export process in the Power Platform admin center. As soon as setup is complete, telemetry that Microsoft gathers about your Dataverse environment and any model-driven apps that use Application Insights are sent to your Application Insights environment. More information: [Create an Application Insights resource](/azure/azure-monitor/app/create-new-resource)
 
 If you decide to opt out, you can go to the Power Platform admin center and delete the data export connection. This will stop the data export process. You can restart the process any time.
 
 ## Benefits of this integration approach
 
-When you use Application Insights integration, you'll receive a standardized set of telemetry that follows the Application Insights [telemetry data model](https://docs.microsoft.com/azure/azure-monitor/app/data-model).
+When you use Application Insights integration, you'll receive a standardized set of telemetry that follows the Application Insights [telemetry data model](/azure/azure-monitor/app/data-model).
 
 The telemetry is correlated so that you can follow operations that start with a mouse click in a model-driven app all the way through to the server and back. Along the way, you'll be able to see what parts of the application are being used and how much time each step takes.
 
@@ -67,11 +67,11 @@ For server-side code using plug-ins, any trace logs you've written will appear i
 
 ## What is included and not included?
 
-Multiple telemetry types will be available in your Application Insights environment. It's important to note that Application Insights has a defined [schema](https://docs.microsoft.com/azure/azure-monitor/app/data-model). The tables in Application Insights are populated in accordance with this schema during data export.
+Multiple telemetry types will be available in your Application Insights environment. It's important to note that Application Insights has a defined [schema](/azure/azure-monitor/app/data-model). The tables in Application Insights are populated in accordance with this schema during data export.
 
 For model-driven apps, the telemetry covers common application features such as edit form, grid, and dashboard load events. These are events where performance is typically an issue. Currently, save events and ribbon commands aren't included. This feature is currently available for model-driven apps only. See [telemetry events for model-driven apps](telemetry-events-model-driven-apps.md#what-kind-of-page-loads-are-available). 
 
-For canvas apps, an [existing capability](https://powerapps.microsoft.com/blog/log-telemetry-for-your-apps-using-azure-application-insights/) allows the app maker to [log custom telemetry](https://docs.microsoft.com/powerapps/maker/canvas-apps/application-insights) with Application Insights when developing the app.
+For canvas apps, an [existing capability](https://powerapps.microsoft.com/blog/log-telemetry-for-your-apps-using-azure-application-insights/) allows the app maker to [log custom telemetry](/powerapps/maker/canvas-apps/application-insights) with Application Insights when developing the app.
 
 Dataverse includes all the requests made on the server. You'll be able to see how the requests are processed within the web server. You won't get detailed information from the database itself, except for the duration of time spent processing the operation. You also won't have telemetry related to the physical resources of the server, such as memory consumption. More information: [Telemetry events for Dataverse](telemetry-events-dataverse.md)
 

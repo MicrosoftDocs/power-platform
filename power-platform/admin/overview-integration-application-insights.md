@@ -18,7 +18,7 @@ search.app:
 ---
 # Overview of integration with Application Insights
 
-Application Insights, a feature of Azure Monitor, is widely used within the enterprise landscape for monitoring and diagnostics. Data that has already been collected from a specific tenant or environment is pushed to your own Application Insights environment. The data is stored in Azure Monitor logs by Application Insights, and visualized in [Performance](https://docs.microsoft.com/azure/azure-monitor/learn/tutorial-performance) and [Failures](https://docs.microsoft.com/azure/azure-monitor/learn/tutorial-runtime-exceptions) panels under **Investigate** on the left pane. The data is exported to your Application Insights environment in the standard schema defined by Application Insights. The support, developer, and admin personas can use this feature to triage and resolve issues.
+Application Insights, a feature of Azure Monitor, is widely used within the enterprise landscape for monitoring and diagnostics. Data that has already been collected from a specific tenant or environment is pushed to your own Application Insights environment. The data is stored in Azure Monitor logs by Application Insights, and visualized in [Performance](/azure/azure-monitor/learn/tutorial-performance) and [Failures](/azure/azure-monitor/learn/tutorial-runtime-exceptions) panels under **Investigate** on the left pane. The data is exported to your Application Insights environment in the standard schema defined by Application Insights. The support, developer, and admin personas can use this feature to triage and resolve issues.
 
 ## What telemetry and which tables are being populated in Application Insights?
 
@@ -33,11 +33,11 @@ Application Insights, a feature of Azure Monitor, is widely used within the ente
 
 Application Insights has a wide range of features to help you use this data:
 
-- [Create a dashboard](https://docs.microsoft.com/azure/azure-monitor/learn/tutorial-logs-dashboards) for an overview of the health of your org.
-- Perform proactive monitoring by using [Smart Detection](https://docs.microsoft.com/azure/azure-monitor/app/proactive-diagnostics).
-- [Set up alerts](https://docs.microsoft.com/azure/azure-monitor/learn/tutorial-alert) for important scenarios based on your org.
-- Visualize and track common [navigation patterns](https://docs.microsoft.com/azure/azure-monitor/app/usage-flows) from a usage perspective. This will help you understand, for example, whether a user always selects a specific tab first before navigating back to the main tab and closing the form. If so, this might indicate that a field should be positioned on the first tab, instead of another tab, to save the user time every time they open this record.
-- Create custom queries to troubleshoot performance and errors by using the [**Logs**](https://docs.microsoft.com/azure/azure-monitor/log-query/log-query-overview) panel under **Monitoring** on the left pane.
+- [Create a dashboard](/azure/azure-monitor/learn/tutorial-logs-dashboards) for an overview of the health of your org.
+- Perform proactive monitoring by using [Smart Detection](/azure/azure-monitor/app/proactive-diagnostics).
+- [Set up alerts](/azure/azure-monitor/learn/tutorial-alert) for important scenarios based on your org.
+- Visualize and track common [navigation patterns](/azure/azure-monitor/app/usage-flows) from a usage perspective. This will help you understand, for example, whether a user always selects a specific tab first before navigating back to the main tab and closing the form. If so, this might indicate that a field should be positioned on the first tab, instead of another tab, to save the user time every time they open this record.
+- Create custom queries to troubleshoot performance and errors by using the [**Logs**](/azure/azure-monitor/log-query/log-query-overview) panel under **Monitoring** on the left pane.
 
 Example: List the top 10 records for form loads in the **pageView** table:
 
@@ -78,7 +78,7 @@ You can drill into a specific sample to see where time is spent on the particula
 > [!div class="mx-imgBorder"] 
 > ![Application Insights Performance end-to-end transaction details](media/application-insights-performance-transaction-details.png "Application Insights Performance end-to-end transaction details")
 
-More information: [Find and diagnose performance issues with Azure Application Insights](https://docs.microsoft.com/azure/azure-monitor/learn/tutorial-performance)
+More information: [Find and diagnose performance issues with Azure Application Insights](/azure/azure-monitor/learn/tutorial-performance)
 
 ## Failures panel in Application Insights
 
@@ -102,7 +102,7 @@ You can drill into the details of the step where the bottleneck occurred.
 > [!div class="mx-imgBorder"] 
 > ![Application Insights logs query](media/application-insights-logs-query.png "Application Insights log query")
 
-More information: [Find and diagnose run-time exceptions with Azure Application Insights](https://docs.microsoft.com/azure/azure-monitor/learn/tutorial-runtime-exceptions)
+More information: [Find and diagnose run-time exceptions with Azure Application Insights](/azure/azure-monitor/learn/tutorial-runtime-exceptions)
 
 ## Querying data in Application Insights 
 

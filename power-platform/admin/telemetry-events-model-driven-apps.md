@@ -67,7 +67,7 @@ pageView
 The **pageView** table attributes include:
 
 - **appModule**: The app module name.
-- **entityName**: This attribute is present when relevant. It's available on page types like EditForm, EntityList, and Dashboards when they're [bound to an entity](https://docs.microsoft.com/powerapps/maker/model-driven-apps/configure-interactive-experience-dashboards#create-an-entity-specific-dashboard). In some scenarios, the form isn't bound to an entity and the value appears as undefined.
+- **entityName**: This attribute is present when relevant. It's available on page types like EditForm, EntityList, and Dashboards when they're [bound to an entity](/powerapps/maker/model-driven-apps/configure-interactive-experience-dashboards#create-an-entity-specific-dashboard). In some scenarios, the form isn't bound to an entity and the value appears as undefined.
 - **hostType**: Browser/MobileApplication/Embedded
 - **isBoot**: Is this the first load of a session?
 - **loadType**
@@ -239,4 +239,4 @@ The **Browser** view of the **Failures** panel contains Unified Interface outgoi
 
 ### Can I set an alert on the performance threshold for certain form actions? When the alert is received, will it allow a maker to diagnose and troubleshoot the issue?
 
-Yes. You can set up [alerts](https://docs.microsoft.com/azure/azure-monitor/learn/tutorial-alert) in Application Insights to monitor the health of your application.
+Yes. You can set up [alerts](/azure/azure-monitor/learn/tutorial-alert) in Application Insights to monitor the health of your application.

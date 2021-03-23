@@ -22,7 +22,7 @@ Lockbox for Microsoft Power Platform provides an interface to review&mdash;and a
 
 ## Summary
 
-You define which environments with [Dataverse databases](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro) need to be protected with lockbox by creating a lockbox policy. Global administrators can configure the lockbox policy. More information: [Configure the lockbox policy](#configure-the-lockbox-policy)
+You define which environments with [Dataverse databases](/powerapps/maker/common-data-service/data-platform-intro) need to be protected with lockbox by creating a lockbox policy. Global administrators can configure the lockbox policy. More information: [Configure the lockbox policy](#configure-the-lockbox-policy)
 
 Whenever Microsoft attempts to access data that's stored in an Azure SQL database that's protected by lockbox, a lockbox request is sent to the global administrators. More information: [Review a lockbox request](#review-a-lockbox-request)
 
@@ -114,7 +114,7 @@ The following image is an example of the SQL logs that are generated. On row 248
 > [!div class="mx-imgBorder"] 
 > ![Example SQL log](media/lockbox-example-sql-log.png "Example SQL log")
 
-To export SQL audit logs to your organization's [data lake](https://docs.microsoft.com/azure/architecture/data-guide/scenarios/data-lake):
+To export SQL audit logs to your organization's [data lake](/azure/architecture/data-guide/scenarios/data-lake):
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
 

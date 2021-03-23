@@ -32,7 +32,7 @@ These limited capabilities of Common Data Service are only available through sel
 
 These limited capabilities are not the common set included with every Office application. They can be different based on the Microsoft 365 applications that leverage these capabilities. For the complete list of various limited capabilities, customers should refer to the service description of these Microsoft 365 applications that contain these Common Data Service plans. These limited capabilities of Common Data Service do not entitle the licensed user to run standalone Power Apps or Power Automate or any other Power Platform applications which leverage Common Data Service. 
 
-Review the [Microsoft Project Service description](https://docs.microsoft.com/office365/servicedescriptions/project-online-service-description/project-online-service-description) for more details on the limited use of Common Data Service that comes with Microsoft Project. 
+Review the [Microsoft Project Service description](/office365/servicedescriptions/project-online-service-description/project-online-service-description) for more details on the limited use of Common Data Service that comes with Microsoft Project. 
 
 ## Frequently asked questions
 

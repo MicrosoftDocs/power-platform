@@ -58,9 +58,9 @@ dependencies
 - **Name/Target**: The fully qualified type name for the plug-in being executed.
 - **Duration**: The amount of time it took for the plug-in to be executed.
 - **CustomDimensions**: 
-  - **Depth**: The current [depth](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.iexecutioncontext.depth?view=dynamics-general-ce-9) of the execution in the call stack.
+  - **Depth**: The current [depth](/dotnet/api/microsoft.xrm.sdk.iexecutioncontext.depth?view=dynamics-general-ce-9) of the execution in the call stack.
   - **EntityName**: The name of the entity being acted on by the plug-in.
-  - **IsolationType**: A [value](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.iexecutioncontext.isolationmode?view=dynamics-general-ce-9) indicating whether the plug-in is being executed in the sandbox:
+  - **IsolationType**: A [value](/dotnet/api/microsoft.xrm.sdk.iexecutioncontext.isolationmode?view=dynamics-general-ce-9) indicating whether the plug-in is being executed in the sandbox:
     - 1: None
     - 2: Sandbox
     - 3: External
@@ -169,7 +169,7 @@ requests
 
 In this chart, we can see the performance of the API endpoint over a period of time against the number of requests being made.
 
-You can also [set up an alert](https://docs.microsoft.com/azure/azure-monitor/learn/tutorial-alert) based on the performance of a particular API here within Application Insights.
+You can also [set up an alert](/azure/azure-monitor/learn/tutorial-alert) based on the performance of a particular API here within Application Insights.
 
 ### Can I drill down on errors or failures at specific times or for specific users to allow for understanding the call stack?
 
@@ -180,7 +180,7 @@ Looking at the **Failures** panel gives an overview of the failures in a given t
 
 ### Can I create custom dashboards? 
 
-Yes. You can build [custom dashboards](https://docs.microsoft.com/azure/azure-monitor/learn/tutorial-app-dashboards) with Application Insights. 
+Yes. You can build [custom dashboards](/azure/azure-monitor/learn/tutorial-app-dashboards) with Application Insights. 
 
 ### Can I determine plug-in usage performance (response time) and failure rates during peak usage? 
 
