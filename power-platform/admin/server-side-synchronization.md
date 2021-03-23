@@ -52,7 +52,7 @@ Server-side synchronization scans your Dynamics 365 environment for outgoing ema
 >
 > Before creating bulk outgoing email messages, review your email service throttling limits:
 > - For Gmail: [Gmail sending limits in Google Workspace](https://support.google.com/a/answer/166852?hl=en)
-> - For Exchange Online: [Sending limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits)
+> - For Exchange Online: [Sending limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits)
 
 ### Appointments, contacts, and tasks sync frequency
 After a sync cycle is completed for appointments, contacts, and tasks, a mailbox will be postponed for processing for 5 to 12 minutes after the synchronization. This means that the mailbox will be ready for processing again in 5 to 12 minutes, based on how active the mailbox has been in the last sync cycles.
