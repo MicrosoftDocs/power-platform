@@ -420,8 +420,8 @@ Relationship Roles are deprecated
 ---------------------------------
 
 Relationship Roles (**Settings \> Business Management \> Relationship Roles**) are
-deprecated and will be removed in a future major release. This
-feature is replaced by **Connection Roles**. More information: [Create connections to view relationships between
+being deprecated along with their user interface components. These will be removed in a future major release. 
+This feature is replaced by **Connection Roles**. More information: [Create connections to view relationships between
 records](/previous-versions/dynamicscrm-2016/admins-customizers-dynamics-365/mt826690(v=crm.8)).
 
 Mail Merge is deprecated
