@@ -1,7 +1,7 @@
 ---
 title: "Legacy storage capacity  | MicrosoftDocs"
 description: About the legacy storage model.
-ms.date: 02/11/2021
+ms.date: 03/26/2021
 ms.reviewer: ""
 ms.service: "power-platform"
 ms.topic: "quickstart"
@@ -157,6 +157,19 @@ To view this page, select **Resources** > **Capacity** > **Trials** tab.
 |**Total storage**     | 100 GB        | 110 GB        |
 
 The 110 GB of storage is used by the three types of storage: database, log, and file. This tenant is 10 GB over in storage usage. Therefore, there is a deficit. This tenant should free up storage or purchase more capacity.
+
+## Changes for exceeding storage capacity entitlements
+
+We're making changes for what happens when an organization's storage capacity is close to, or exceeds the capacity entitled or purchased via add-ons.
+
+Notifications for capacity approaching storage limits will be triggered when any of total legacy model storage has less than 15% of space available.  Another warning notification that admin operations could be impacted will be sent when total legacy model capacity has less than 5% of space available.  The final tier of notification will trigger when the tenant is ‘in overage’ (storage usage exceeds capacity entitlements), which will alert the admin that the operations below will no longer be available until the overage is resolved.
+
+- Create new environment (requires minimum 1GB capacity available)
+- Copy an environment (requires minimum 1GB capacity available)
+- Restore an environment (requires minimum 1GB capacity available)
+
+Additionally, there will still be a notification banner in the Power Platform admin center when a tenant has exceeded storage capacity.
+
 
 ## Actions to take for a storage capacity deficit
 
