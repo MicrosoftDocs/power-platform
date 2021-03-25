@@ -1,6 +1,6 @@
 ---
-title: "Set up SharePoint integration  | MicrosoftDocs"
-description: Set up SharePoint integration
+title: "Benefits of document management with SharePoint integration"
+description: "Learn about the benefits of using the document management capabilities of SharePoint in your apps."
 author: Mattp123
 ms.service: power-platform
 ms.component: pa-admin
