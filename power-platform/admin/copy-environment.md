@@ -1,6 +1,6 @@
 ---
-title: "Copy an environment to a sandbox environment  | MicrosoftDocs"
-description: Learn how to copy a sandbox environment. 
+title: "Copy an environment to a sandbox environment"
+description: "Learn how to copy apps and data from an environment to a sandbox environment. Review next steps for administrators in the target environment." 
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin

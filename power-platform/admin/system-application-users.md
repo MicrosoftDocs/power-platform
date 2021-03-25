@@ -1,6 +1,6 @@
 ---
-title: System and application users | Microsoft Docs
-description: About system and application users 
+title: "Special system users and application users"
+description: "Learn about the special system and application users created when the system is provisioned, including assigned security role, user name, and purpose." 
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
