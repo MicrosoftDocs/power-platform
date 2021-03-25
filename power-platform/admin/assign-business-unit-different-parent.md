@@ -1,6 +1,6 @@
 ---
-title: "Assign a business unit a different parent business | MicrosoftDocs"
-description: Assign a business unit to a different parent business.
+title: "Assign a business unit a different parent business"
+description: "Learn how to change the parent business for a business unit and its child business units."
 author: jimholtz
 manager: kvivek
 ms.service: power-platform
