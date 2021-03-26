@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/13/2020
+ms.date: 03/26/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -32,7 +32,7 @@ You can delete an environment to recover storage space and to remove Personally 
 3. Provide the confirmation data and then select **Confirm**.
 
 > [!NOTE]
-> If you're [changing an environment's URL](edit-properties-environment.md) such as when you change its name, you must wait up to 24 hours before the old URL can be reused for other environments.
+> The URL of a deleted environment can't be used again for another environment until at least 24 hours have passed since the environment deletion.
 
 ### See also 
 [Back up and restore environments](backup-restore-environments.md) <br />

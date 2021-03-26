@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 03/15/2021
+ms.date: 03/26/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin 
@@ -109,7 +109,7 @@ You have multiple options when creating an environment:
 - **Why create an environment without a database**: If you don't need Dynamics 365 apps or don't need to use Dataverse, and you are creating Power Apps or Power Automate using other data sources, create the environment without the Dataverse database.
 - **The Enable Dynamics 365 apps decision is not reversible**: Once you create an environment, if you don't select **Enable Dynamics 365 apps** at the time of database provisioning, you won't be able to make this change later nor be able to install Dynamics 365 apps on this environment. 
 - **Dynamics 365 apps and trial environments**: Currently, Dynamics 365 apps cannot be enabled for trial environments. To create a trial with Dynamics 365 apps, see [Start your digital transformation here](https://trials.dynamics.com).
-- If you're [changing an environment's URL](edit-properties-environment.md) such as when you change its name, you must wait up to 24 hours before the old URL can be reused for other environments.
+- The URL can't be that of an environment that's been [deleted](delete-environment.md) or [changed](edit-properties-environment.md) until at least 24 hours have passed since an environment deletion or change.
 
 ## Create an environment with a database
 You create a database to use Dataverse as a data store. The Dataverse is a cloud scale database used to securely store data for business applications built on Power Apps. Dataverse provides not just data storage, but a way to implement business logic that enforces business rules and automation against the data. For more information, see [Why use Dataverse?](/powerapps/maker/common-data-service/data-platform-intro#why-use-common-data-service)
