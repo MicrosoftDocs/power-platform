@@ -100,17 +100,18 @@ When a user interacts with the chatbot, however, the variable might be filled in
 
 In this situation, the flow or skill will still run and fill in the variable, overwriting whatever was previously stored in the variable.
  
+## Bot variables lifecycle and resetting its value
+
+Bot variables are accessible from any topic, and its assigned value persists throughout the session. 
+
+The only case in which a bot variable value is cleared is then the user is redirected to the "Start over" system topic, or when the user triggers this topic directly (e.g. by typing "Start over". In this case, the bot variable will have no value, as if the conversation has just started again. Previous values of bot variables will all be reset once the start over topic is triggered.
+
+
 ## Set a bot variable's value from external sources
 
 You can set a bot variable to be initialized with an external source. This lets the bot start the conversation with some context. 
 
 For example, a customer brings up a bot chat from your web site, and the site already knows the customer's name. You let the bot know the user's name before starting the conversation, and the bot can have a more intelligent conversation with the customer without having to ask for their name again.
-
-**Bot variables lifecycle and resetting its value**
-
-Bot variables are accessible from any topic, and its assigned value persists throughout the session. 
-
-The only case in which a bot variable value is cleared is then the user is redirected to the "Start over" system topic, or when the user triggers this topic directly (e.g. by typing "Start over". In this case, the bot variable will have no value, as if the conversation has just started again. Previous values of bot variables will all be reset once the start over topic is triggered.
 
 **Set bot variable from external source**
 
