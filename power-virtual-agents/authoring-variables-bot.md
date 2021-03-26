@@ -104,7 +104,7 @@ In this situation, the flow or skill will still run and fill in the variable, ov
 
 Bot variables are accessible from any topic, and its assigned value persists throughout the session. 
 
-The only case in which a bot variable value is cleared is then the user is redirected to the "Start over" system topic, or when the user triggers this topic directly (e.g. by typing "Start over". In this case, the bot variable will have no value, as if the conversation has just started again. Previous values of bot variables will all be reset once the start over topic is triggered.
+The only case in which a bot variable value is cleared is then the user is redirected to the "Start over" system topic, or when the user triggers this topic directly (e.g. by typing "Start over"). In this case, the bot variable will have no value, as if the conversation has just started again. Previous values of bot variables will all be reset once the start over topic is triggered.
 
 
 ## Set a bot variable's value from external sources
