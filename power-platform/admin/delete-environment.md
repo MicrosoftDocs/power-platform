@@ -31,6 +31,9 @@ You can delete an environment to recover storage space and to remove Personally 
 
 3. Provide the confirmation data and then select **Confirm**.
 
+> [!NOTE]
+> If you're [changing an environment's URL](edit-properties-environment.md) such as when you change its name, you must wait up to 24 hours before the old URL can be reused for other environments.
+
 ### See also 
 [Back up and restore environments](backup-restore-environments.md) <br />
 [Automatic environment cleanup](automatic-environment-cleanup.md) <br />
@@ -42,3 +45,5 @@ You can delete an environment to recover storage space and to remove Personally 
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+
+“After a URL name change is saved, all users who access that environment must be notified of the change. Users will be able to access the environment for up to 24 hours by using the previous URL. After the 24-hour period has passed, the previous URL will not work.”
