@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/08/2021
+ms.date: 03/29/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -212,7 +212,45 @@ By default, some out-of-the-box system entities are included in Relevance Search
 
 5. Select **Publish** for your changes to take effect.  
 
-   If you want to change the **Can enable sync to external search index** property to **False**, you must first deselect the entity from Relevance search. If the entity is included in Relevance Search, you'll see the following message: "This entity is currently syncing to an external search index. You must remove the entity from the external search index before you can set the **Can Enable Sync to External Search Index** property to **False**." If **Can Enable Sync to External Search Index** is set to **False**, you'll see the following message when you try to include an entity in Relevance Search: "Entity can't be enabled for Relevance Search because of the configuration of its managed properties." For custom entities with particularly sensitive data, you may consider setting the **Can enable sync to external search index** property to **False**. Keep in mind, after you install the managed solution on the target system, you won't be able to change the value of the property because it's a managed property.  
+   If you want to change the **Can enable sync to external search index** property to **False**, you must first deselect the entity from Relevance Search. If the entity is included in Relevance Search, you'll see the following message: "This entity is currently syncing to an external search index. You must remove the entity from the external search index before you can set the **Can Enable Sync to External Search Index** property to **False**." If **Can Enable Sync to External Search Index** is set to **False**, you'll see the following message when you try to include an entity in Relevance Search: "Entity can't be enabled for Relevance Search because of the configuration of its managed properties." For custom entities with particularly sensitive data, you may consider setting the **Can enable sync to external search index** property to **False**. Keep in mind, after you install the managed solution on the target system, you won't be able to change the value of the property because it's a managed property.  
+
+## Configure quick actions
+
+The new Relevance Search experience brings some of the most frequently used actions closer to search results, to help end users complete their tasks without having to navigate to the record page in model-driven apps. Quick actions are a small set of commands specific to a table. End users can see quick actions when they are interacting with search in model-driven apps running on a web browser. Some of the commonly used tables are configured to show a set of commands to help them complete their task without losing context.
+
+
+|Table  |Quick actions  |
+|---------|---------|
+|Account     | Assign, Share, Email a link        |
+|Contact     | Assign, Share, Email a link        |
+|Appointment     | Mark complete, Cancel, Set Regarding, Assign, Email a link        |
+|Task     | Mark complete, Cancel, Set Regarding, Assign, Email a link        |
+|Phone call     | Mark complete, Cancel, Set Regarding, Assign, Email a link        |
+|Email     | Cancel, Set Regarding, Email a link        |
+|Any custom table     | Assign, Share, Email a link        |
+
+Quick actions are a subset of the table's homepage grid commands. For example, when you select an account in its homepage grid, the Account table's quick actions are derived from the set of commands at the top of the page. This is important to understand the customization options available to configure quick actions. You can use the ribbon’s <EnableRule> to hide or show quick actions for a table. To learn more about defining ribbon enable rules in Power Apps, see [Define ribbon enable rules](/powerapps/developer/model-driven-apps/define-ribbon-enable-rules).
+
+The following three new enable rules give you the flexibility to optimize quick actions:
+
+**ShowOnQuickAction rule**
+Use this rule to make a command appear only as a quick action.
+ 
+> [!div class="mx-imgBorder"] 
+> ![Three new enable rules](media/three-enable-rules.png "Three new enable rules")
+
+**ShowOnGridAndQuickAction rule**
+Use this rule to make a command appear on the homepage grid as well as a quick action.
+
+**ShowOnGrid rule**
+Use this rule to make a command appear on the homepage grid only. You can use this command to hide an existing quick action.
+
+> [!NOTE]
+> Each table can have up to five quick actions. 
+> 
+> Quick actions currently show up only in the context of search - alongside suggestions and in the results page on the primary column. The same set of quick actions appears alongside suggestions and in the results page.
+
+
 
 ## Help improve Relevance Search results
 
