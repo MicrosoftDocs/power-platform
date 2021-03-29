@@ -233,24 +233,22 @@ Quick actions are a subset of the table's homepage grid commands. For example, w
 
 The following three new enable rules give you the flexibility to optimize quick actions:
 
-**ShowOnQuickAction rule**
-Use this rule to make a command appear only as a quick action.
+- **ShowOnQuickAction rule**
+  Use this rule to make a command appear only as a quick action.
  
-> [!div class="mx-imgBorder"] 
-> ![Three new enable rules](media/three-enable-rules.png "Three new enable rules")
+  > [!div class="mx-imgBorder"] 
+  > ![Three new enable rules](media/three-enable-rules.png "Three new enable rules")
 
-**ShowOnGridAndQuickAction rule**
-Use this rule to make a command appear on the homepage grid as well as a quick action.
+- **ShowOnGridAndQuickAction rule**
+  Use this rule to make a command appear on the homepage grid as well as a quick action.
 
-**ShowOnGrid rule**
-Use this rule to make a command appear on the homepage grid only. You can use this command to hide an existing quick action.
+- **ShowOnGrid rule**
+  Use this rule to make a command appear on the homepage grid only. You can use this command to hide an existing quick action.
 
-> [!NOTE]
-> Each table can have up to five quick actions. 
-> 
-> Quick actions currently show up only in the context of search - alongside suggestions and in the results page on the primary column. The same set of quick actions appears alongside suggestions and in the results page.
-
-
+  > [!NOTE]
+  > Each table can have up to five quick actions. 
+  > 
+  > Quick actions currently show up only in the context of search - alongside suggestions and in the results page on the primary column. The same set of quick actions appears alongside suggestions and in the results page.
 
 ## Help improve Relevance Search results
 
