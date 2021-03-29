@@ -119,7 +119,7 @@ For information on using the new Relevance Search experience, see [Use the new R
 
 2. Select **Customize the System**.  
 
-3. Under **Components**, expand **Entities**, and then select **Configure Relevance Search**.  
+3. Under **Components**, select **Entities**, and then select **Configure Relevance Search**.  
 
 4. The **Select Entities** dialog box opens. Select **Add** to select the entities for the search results. When you're done, select **OK**.  
 
