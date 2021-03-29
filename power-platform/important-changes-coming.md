@@ -73,16 +73,16 @@ While we understand that these types of changes can be disruptive for makers tha
 
 ## Model driven controls deprecation
 
-With the upcoming 2021 release wave 1 (public preview in February 2021 and GA in April 2021), some older controls for model driven apps will be deprecated.  These controls include Flip Switch, Calendar Control (V1), Linear Slider, Radio Knob, Arc Knob, Linear Gauge; along with the Website Preview control, MultiSelectPicklistControl (V1) and the Flip Label.
+With the upcoming 2021 release wave 1 (public preview in February 2021 and GA in April 2021), some older controls for model driven apps will be deprecated. These controls include Flip Switch, Calendar Control (V1), Linear Slider, Radio Knob, Arc Knob, Linear Gauge; along with the Website Preview control, MultiSelectPicklistControl (V1), and the Flip Label.
 
 #### Why is this needed? 
 
-- These controls are not discoverable and no longer conform to Microsoft Accessibility standards and do not support a good customer experience.
-- Flip labels are problematic for a number of reasons. They look like text inputs, it’s not clear what the control is just by its appearance.  Users cannot see all the options available to choose from, they may be “yes / no” or “enable / disable”.
+-	These controls are outdated and don’t conform to our current standards for useability and accessibility. 
+-	For example, we’ve received feedback that the Flip Label control is difficult to determine its intended use and users commonly don’t see the options available to choose from, such as "yes / no" or "enable / disable."
 
 #### Impact
 
-- Starting April 2021, these controls will can no longer be added to forms. 
+- Starting April 2021, these controls can no longer be added to forms. 
 - For instances of Flip Label control, the control will be transitioned to a drop down.
 - For all other controls, they will continue to work within existing forms until April 2022.
 
