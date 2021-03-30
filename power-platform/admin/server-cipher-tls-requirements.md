@@ -63,4 +63,5 @@ To verify that your server complies with the security protocol, you can perform 
 [How to enable TLS 1.2](/mem/configmgr/core/plan-design/security/enable-tls-1-2)  
 
 
+
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
