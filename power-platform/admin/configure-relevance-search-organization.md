@@ -94,7 +94,7 @@ For information on using the new Relevance Search experience, see [Use the new R
 > 2. Wait approximately 5 to 10 minutes.
 > 3. Turn **Relevance Search** on. 
 
-## Select entities for Relevance Search  
+## Select entities for Relevance Search 
  To configure Relevance Search, use the **Configure Relevance Search** selection on the task bar, as shown here.  
 
  ![Configure Relevance Search](../admin/media/relevance-search-configure-search.png "Configure Relevance Search")  
