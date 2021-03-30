@@ -16,7 +16,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Server cipher suites and TLS requirements 
+# Server cipher suites and TLS requirements
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
