@@ -94,7 +94,7 @@ For information on using the new Relevance Search experience, see [Use the new R
 > 2. Wait approximately 5 to 10 minutes.
 > 3. Turn **Relevance Search** on. 
 
-## Select entities for Relevance Search  
+## Select entities for Relevance Search 
  To configure Relevance Search, use the **Configure Relevance Search** selection on the task bar, as shown here.  
 
  ![Configure Relevance Search](../admin/media/relevance-search-configure-search.png "Configure Relevance Search")  
@@ -234,18 +234,18 @@ The following three new enable rules give you the flexibility to optimize quick 
 - **ShowOnQuickAction rule**
   Use this rule to make a command appear only as a quick action.
 
-```XML
-<CommandDefinition Id="new.contact.Command.Call">
-  <EnableRules>
-    <EnableRule Id="Mscrm.SelectionCountExactlyOne" />
-    <EnableRule Id="Mscrm.ShowOnQuickAction" />
-  </EnableRules>
-  <DisplayRules />
-  <Actions>
-    <JavaScriptFunction FunctionName="simplealert" />
-  </Actions>
-</CommandDefinition>
-```
+  ```XML
+  <CommandDefinition Id="new.contact.Command.Call">
+    <EnableRules>
+      <EnableRule Id="Mscrm.SelectionCountExactlyOne" />
+      <EnableRule Id="Mscrm.ShowOnQuickAction" />
+    </EnableRules>
+    <DisplayRules />
+    <Actions>
+      <JavaScriptFunction FunctionName="simplealert" />
+    </Actions>
+  </CommandDefinition>
+  ```
 
 - **ShowOnGridAndQuickAction rule**
   Use this rule to make a command appear on the homepage grid as well as a quick action.
