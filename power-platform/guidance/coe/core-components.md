@@ -306,6 +306,10 @@ This flow runs weekly, and checks if any makers have left the organization - if 
 
 This flow runs weekly, and checks if any apps or flows have unresolved connections.
 
+### Admin \| Capacity Alerts
+
+This flow checks actual capacity consumption and compares it with approved capacity, that an admin sets. The flow will send an alert to the admin for environments that exceed the approved capacity, or are at 80% of approved capacity.
+
 ## Apps
 
 ### DLP Editor v2
@@ -379,6 +383,7 @@ Use this app to:
 - Learn about your makers, connectors, apps, and flows.
 - Find out who apps are shared with.
 - Add additional information, such as notes and risk assessments, to your resources.
+- Set approved capacity for environments, and see capacity and add-on information per environment.
 - Complete [app audits](example-processes.md).
 
 **Permission**: This app is intended to be used only by admins. Power Platform Service Admin or Global Admin permission is required. Share this app with your CoE admins.

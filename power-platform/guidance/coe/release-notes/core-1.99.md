@@ -23,7 +23,7 @@ Version 1.99 for the CoE Starter Kit Core Components is now available. This arti
 
 ## Capacity and Add Ons
 
-Environment capacity and add-ons are now stored and can be reported on. New tables (Environment Capacity, Environment Add Ons) have been added to store this information. The Power Platform Admin View model-driven app has been updated to view this information. The Admin | Sync Template v3 flow has been updated to retrieve and save this information.
+Environment capacity and add-ons are now stored and can be reported on. New tables (Environment Capacity, Environment Add Ons) have been added to store this information. The Power Platform Admin View model-driven app has been updated to view this information. The Admin | Sync Template v3 flow has been updated to retrieve and save this information. The Admin | Capacity Alert flow has been added to alert the admin of capacities over or close to their approved capacity.
 
 ## Bug fixes
 
