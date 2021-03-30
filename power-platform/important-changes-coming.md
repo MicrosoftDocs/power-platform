@@ -94,7 +94,7 @@ We will not make other changes to forms or controls.  Makers are encouraged to m
 - Evaluate other deprecated controls to determine if they're still useful within existing forms.
 
 ## Microsoft Dynamics 365 Email Router is deprecated
-The Microsoft Dynamics 365 Email Router will become deprecated April 21, 2021. For information on migrating email routing functionality to use the server-side synchronization feature, see: [Migrate settings from the Email Router to server-side synchronization](/previous-versions/dynamicscrm-2016/administering-dynamics-365/dn832114(v=crm.8)).
+The Microsoft Dynamics 365 Email Router will no longer function on April 21, 2021. For information on migrating email routing functionality to use the server-side synchronization feature, see: [Migrate settings from the Email Router to server-side synchronization](/previous-versions/dynamicscrm-2016/administering-dynamics-365/dn832114(v=crm.8)).
 
 
 ## The Microsoft Dynamics 365 application for Windows is deprecated
