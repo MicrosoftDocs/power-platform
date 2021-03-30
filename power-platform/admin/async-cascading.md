@@ -19,9 +19,7 @@ search.app:
 
 # Asynchronous processing of cascading transactions
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
-Certain transactions can be configured to cascade across all related records. This means the change on a parent record will be transacted upon (cascade down through) all the child records. Cascading relationships are configured at the entity level. For more information about cascading relationships, see [Configure entity relationship cascading behavior](/powerapps/developer/common-data-service/configure-entity-relationship-cascading-behavior).
+Certain transactions can be configured to cascade across all related records. This means the change on a parent record will be transacted upon (cascade down through) all the child records. Cascading relationships are configured at the entity level. For more information about cascading relationships, see [Configure table relationship cascading behavior](/powerapps/developer/common-data-service/configure-entity-relationship-cascading-behavior).
 
 ## Synchronous versus asynchronous modes
  By default, cascading operations are performed as a synchronous transaction. For a synchronous cascading transaction, all impacted records are identified by the system. As the records are processed, they are locked by the system. Once all the changes have been completed, the records are unlocked and the transaction is completed.
@@ -130,7 +128,7 @@ The Cascade Merge operation grants access to the new owner of the subordinate en
 
 ### See also
 
-[Entity relationships overview](/powerapps/maker/common-data-service/create-edit-entity-relationships)
+[Table relationships overview](/powerapps/maker/common-data-service/create-edit-entity-relationships)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

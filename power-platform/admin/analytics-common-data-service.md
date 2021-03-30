@@ -17,8 +17,6 @@ search.app:
 ---
 # Microsoft Dataverse analytics
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 We've improved how you view metrics for your organization. You no longer need to install or update a solution. Instead, you can view Dataverse analytics right from the Microsoft Power Platform admin center to quickly view adoption and user metrics for your organization. 
 
 To access these reports:
