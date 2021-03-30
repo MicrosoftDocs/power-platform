@@ -17,8 +17,6 @@ search.app:
 ---
 # Configure Relevance Search to improve search results and performance 
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 <!-- legacy procedure -->
 
 Relevance Search delivers fast and comprehensive search results in a single list, sorted by relevance. As an administrator or customizer, you'll be able to enable and configure Relevance Search as described below. Many of the configuration steps use the same user interface as the Quick Find configuration.
@@ -235,9 +233,19 @@ The following three new enable rules give you the flexibility to optimize quick 
 
 - **ShowOnQuickAction rule**
   Use this rule to make a command appear only as a quick action.
- 
-  > [!div class="mx-imgBorder"] 
-  > ![Three new enable rules](media/three-enable-rules.png "Three new enable rules")
+
+```XML
+<CommandDefinition Id="new.contact.Command.Call">
+  <EnableRules>
+    <EnableRule Id="Mscrm.SelectionCountExactlyOne" />
+    <EnableRule Id="Mscrm.ShowOnQuickAction" />
+  </EnableRules>
+  <DisplayRules />
+  <Actions>
+    <JavaScriptFunction FunctionName="simplealert" />
+  </Actions>
+</CommandDefinition>
+```
 
 - **ShowOnGridAndQuickAction rule**
   Use this rule to make a command appear on the homepage grid as well as a quick action.
