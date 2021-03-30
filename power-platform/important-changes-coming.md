@@ -70,7 +70,28 @@ Main forms will no longer include the footer when a record is opened. Any out of
 The out of box fields currently on the footer will be removed and included on the form as part of the 2021 release wave 2 updates. So, you will not lose status, unsaved changes or the option to open a form in a new window. The **Save** option is already available in the command bar and is always visible to the user. 
 
 While we understand that these types of changes can be disruptive for makers that use the footer today, we always evaluate the experiences to ensure they provide a modern experience that improves usability, support accessibility requirements, and improves discoverability for highly used fields and controls on a page.
- 
+
+## Model-driven app controls deprecation
+
+With the upcoming 2021 release wave 1 (public preview in February 2021 and GA in April 2021), some older controls for model-driven apps will be deprecated. These controls include Flip Switch, Calendar Control (V1), Linear Slider, Radial Knob, Arc Knob, Linear Gauge; along with the Website Preview control, MultiSelectPicklistControl (V1), and the Flip Label.
+
+#### Why is this needed? 
+
+-	These controls are outdated and don’t conform to our current standards for useability and accessibility. 
+-	For example, we’ve received feedback that the Flip Label control is difficult to determine its intended use and users commonly don’t see the options available to choose from, such as "yes / no" or "enable / disable."
+
+#### Impact
+
+- Starting April 2021, these controls can no longer be added to forms. 
+- For instances of Flip Label control, the control will be transitioned to a drop down.
+- For all other controls, they will continue to work within existing forms until April 2022.
+
+#### Action required by you
+We will not make other changes to forms or controls.  Makers are encouraged to make updates:
+
+- Use the Toggle control as a replacement for Flip Label and Flip Switch.
+- Use the Calendar Control (V2) as a replacement for Calendar Control (V1).
+- Evaluate other deprecated controls to determine if they're still useful within existing forms.
 
 ## The Microsoft Dynamics 365 application for Windows is deprecated
 
@@ -184,7 +205,7 @@ For further information and steps to make a smooth transition, download [Dynamic
 ## Dynamics 365 Home is deprecated 
 ------------------------------------------------------
 
-Effective March 2020, the home page for Dynamics 365 applications (https://home.dynamics.com) is deprecated and won't be available on or after April 1, 2021. The Microsoft 365 apps page (https://www.office.com/apps) will replace it and provide users with a single page for productivity and business applications.  
+Effective March 2020, the home page for Dynamics 365 applications (https://home.dynamics.com) is deprecated and won't be available on or after May 2021. The Microsoft 365 apps page (https://www.office.com/apps) will replace it and provide users with a single page for productivity and business applications.  
 
 Dynamics 365 Home users will see notification about the new location and recommendation to change browser bookmarks starting October 1, 2020. On or after April 1, 2021, users will no longer be able to navigate to <https://home.dynamics.com> from the Office 365 applications list or the Office 365 [application launcher](admin/quickly-navigate-office-365-app-launcher.md#quickly-move-between-apps-with-the-app-launcher). After May 2021, users who navigate to <https://home.dynamics.com> will automatically be redirected to <https://www.office.com/apps> with a business application filter applied.
 
