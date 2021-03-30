@@ -19,8 +19,6 @@ search.app:
 
 <!-- legacy procedure -->
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] gives colleagues at your organization a central place to have conversations, create and edit documents, and share information without sending a single email or attending any meetings.  
   
  After you set up your organization to work with [!INCLUDE[pn_yammer](../includes/pn-yammer.md)], employees will see posts in a newsfeed on their customer engagement apps dashboard whenever people update customer info, and they'll be able to join in the conversation with their own posts.  

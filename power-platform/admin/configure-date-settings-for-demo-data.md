@@ -2,7 +2,6 @@
 title: "Configure date settings for demo data  | MicrosoftDocs"
 description: Configure date settings for demo data 
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
@@ -18,11 +17,9 @@ search.app:
 ---
 # Configure date settings for demo data 
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 Use the information below to automatically keep your demo environment data current.
 
-**Before you begin** <br />
+**Before you begin** 
 
 Download the Configuration Migration Tool. The Configuration Migration tool is available as a [NuGet package](https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.ConfigurationMigration.Wpf). To download the tool, see [Download tools from NuGet](/powerapps/developer/common-data-service/download-tools-nuget). Follow the steps on this page to extract the **DataMigrationUtility.exe** tool. 
 
