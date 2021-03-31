@@ -18,8 +18,6 @@ search.app:
 ---
 # Requests limits and allocations
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 Effective October 2019, to help ensure service levels, availability, and quality, there are entitlement limits to the number of requests users can make each day across Power Apps, Power Automate, AI Builder, Power Virtual Agents, and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation).
 
 ## What is a Microsoft Power Platform request?

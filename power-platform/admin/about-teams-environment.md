@@ -19,8 +19,6 @@ search.app:
 
 <!-- fwlink 2143567 -->
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 Introduced in September 2020, *Microsoft Dataverse for Teams* is a built-in, low-code data platform for Microsoft Teams that empowers users to build custom apps, bots, and flows in Microsoft Teams by using Power Apps, Power Virtual Agents, and Power Automate. Dataverse for Teams—built on Microsoft Dataverse—provides relational data storage, rich data types, enterprise-grade governance, and one-click solution deployment to the Microsoft Teams app store. More information: [Dataverse for Teams overview](/powerapps/teams/overview-data-platform)
 
 The Dataverse for Teams environment is automatically created for the selected team when you create an [app](/powerapps/teams/create-first-app) or [bot](/power-virtual-agents/teams/authoring-first-bot-teams#create-a-bot) in Microsoft Teams for the first time or install a Power Apps app from the app catalog for the first time. The Dataverse for Teams environment is used to store, manage, and share team-specific data, apps, and flows. Each team can have one environment, and all data, apps, bots, and flows created with the Power Apps app inside a team are available from that team's Dataverse for Teams database.  
@@ -256,7 +254,7 @@ After upgrade, the following applies to the newly upgraded environment:
 - The upgraded environment's lifecycle will no longer be tied to the lifecycle of that team. If the team is deleted, the upgraded environment remains. 
 - Any apps running on the environment will require Microsoft Power Platform (Power Apps, Power Automate) licenses to be accessed. 
 - The apps can run inside and outside of Microsoft Teams. 
-- All existing apps will be associated with the upgraded environment (Dataverse) and can take advantage of the extended set of entities. 
+- All existing apps will be associated with the upgraded environment (Dataverse) and can take advantage of the extended set of tables. 
 - The upgraded environment capacity will start counting against the tenant's Dataverse capacity. 
 - The Microsoft 365 Groups association will become editable. 
 - Team owners are assigned the System Admin roles on their environment and can access the environment by using the Power Platform admin center. 
