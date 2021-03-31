@@ -19,8 +19,6 @@ search.app:
 
 [!INCLUDE [pn-dynamics-crm-online](../includes/pn-dynamics-crm-online.md)]
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 Microsoft 365 Groups, available with Dynamics 365 apps, provides a new environment for collaboration with Microsoft 365 users who don't use customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), such as Dynamics 365 Sales and Customer Service. For example, use Microsoft 365 Groups when a sales team has a major opportunity requiring input from several people who don't have access to customer engagement apps. Microsoft 365 Groups provides a single location to share documents, conversations, meetings, and notes. You can enable Microsoft 365 Groups for any entity.  
   
 > [!TIP]

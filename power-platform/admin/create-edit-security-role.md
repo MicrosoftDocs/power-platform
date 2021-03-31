@@ -19,8 +19,6 @@ search.app:
 ---
 # Create or edit a security role to manage access
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 You can create new security roles to accommodate changes in your business requirements or you can edit the privileges associated with an existing security role.
   
  If you need to back up your security role changes, or export security roles for use in a different implementation, you can export them as part of exporting customizations. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Export your customizations as a solution](/powerapps/maker/common-data-service/use-solutions-for-your-customizations)  
