@@ -17,8 +17,6 @@ search.app:
 ---
 # Customer engagement apps - operated by 21Vianet in China
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 Microsoft Dataverse services operated by 21Vianet is designed to comply with regulatory requirements in China. The services are a physically separated environment of cloud services operated and transacted currently by a local operator, Shanghai Blue Cloud Technology Co., Ltd (“21Vianet”). This is a wholly owned subsidiary of Beijing 21Vianet Broadband Data Center Co., Ltd. located in mainland China.
 
 Microsoft strives to maintain functional parity between our commercially available service and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), - operated by 21Vianet in China. However, there are notable exceptions to this affected by dependent service or partner-solution availability, market priorities, or compliance regulations.
@@ -38,7 +36,7 @@ For information on provisioning environments, see [Create and manage environment
 Due to certain technological dependencies, the following features listed will not be available for general availability of Dataverse services operated by 21Vianet. For information about future feature availability, see [Business applications and platform release notes](/dynamics365/release-plans/).
 
 - [Manage your documents using SharePoint](manage-documents-using-sharepoint.md) isn’t supported with Dataverse services operated by 21Vianet. 
-- [Search for records in an app](/powerapps/user/search) or **Categorized Search** used for searching records across multiple entities will be unavailable.
+- [Search for rows in an app](/powerapps/user/search) or **Categorized Search** used for searching rows across multiple tables will be unavailable.
 - [Microsoft 365 Groups](/dynamics365/customerengagement/on-premises/basics/collaborate-with-colleagues-using-office-365-groups) feature used for shared workspace for emails, conversations, files, and events in Dataverse services will be unavailable.
 - [Online Management API](/powerapps/developer/common-data-service/online-management-api) (Admin API) enables customers to create and manage the Dataverse environments using REST API will be unavailable.
 - [Company News Timeline](/dynamics365/customer-engagement/company-news-timeline/get-company-news-timeline-dynamics-365-phones-tablets) provides valuable insights from the latest news about tenant customers on the phone or tablet. This feature will be unavailable.
