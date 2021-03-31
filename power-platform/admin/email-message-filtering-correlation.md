@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/19/2021
+ms.date: 03/30/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -30,8 +30,7 @@ Server-side synchronization, [!INCLUDE[pn_microsoft_dynamics_crm_for_outlook](..
 - **Email messages from records that are email enabled**. Email messages are tracked from any record type that contains an email address, including customized record types (entities).  
 
 - **No email messages**. No email messages received by the user are tracked (will have activities created). This option only affects auto tracked emails.
-Emails manually tracked by the end user in Outlook via Dynamics 365 App for Outlook, folder-level tracking, or Outlook category are still synchronized to Dynamics 365. 
-
+Emails manually tracked by the end user in Outlook via [Dynamics 365 App for Outlook](/dynamics365/outlook-app/dynamics-365-app-outlook-user-s-guide), [folder-level tracking](configure-outlook-exchange-folder-level-tracking.md), or [Outlook category](use-outlook-category-track-appointments-emails.md) are still synchronized to Dynamics 365. 
 
 By default, the **Email messages in response to email** option is enabled. Correlation occurs after an email message is filtered. System administrators can turn off all message tracking for a particular user by setting **Incoming Email** under **Synchronization Method** to **None** on the Mailbox form.  
 
