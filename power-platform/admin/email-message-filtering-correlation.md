@@ -17,8 +17,6 @@ search.app:
 ---
 # Use Email message filtering and correlation to specify which emails are tracked 
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 Server-side synchronization, [!INCLUDE[pn_microsoft_dynamics_crm_for_outlook](../includes/pn-microsoft-dynamics-crm-for-outlook.md)], or the Email Router can automatically create email activities in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), which are based on received email messages. This type of automation is known as email message tracking. Users can select a filtering option that determines what email messages will be tracked. Filtering is set on the **Email** tab of the **Set Personal Options** dialog box in the client applications. Users can set the following options:  
 
 - **All email messages**. All email messages received by the user are tracked (will have activities created).  
@@ -27,7 +25,7 @@ Server-side synchronization, [!INCLUDE[pn_microsoft_dynamics_crm_for_outlook](..
 
 - **Email messages from Leads, Contacts, and Accounts**. Only email messages sent from leads, contacts, and accounts in the database are saved as activities.  
 
-- **Email messages from records that are email enabled**. Email messages are tracked from any record type that contains an email address, including customized record types (entities).  
+- **Email messages from records that are email enabled**. Email messages are tracked from any record type that contains an email address, including customized record types (tables).  
 
 - **No email messages**. No email messages received by the user are tracked (will have activities created). This option only affects auto tracked emails.
 Emails manually tracked by the end user in Outlook via [Dynamics 365 App for Outlook](/dynamics365/outlook-app/dynamics-365-app-outlook-user-s-guide), [folder-level tracking](configure-outlook-exchange-folder-level-tracking.md), or [Outlook category](use-outlook-category-track-appointments-emails.md) are still synchronized to Dynamics 365. 
@@ -61,9 +59,9 @@ When customer engagement apps tracks an email, it associates the email address t
 5. Equipment
 6. Team
 7. Business unit
-8. Email-enabled entities (for example: Queues, custom, etc.)
+8. Email-enabled tables (for example: Queues, custom, etc.)
 
-In the email **To** field, all of the records of email-enabled entities with the email address will be listed.
+In the email **To** field, all of the records of email-enabled tables with the email address will be listed.
 
 <a name="BKMK_tracking-token"></a>   
 

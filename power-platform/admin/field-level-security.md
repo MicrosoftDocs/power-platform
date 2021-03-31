@@ -19,8 +19,6 @@ search.app:
 ---
 # Field-level security to control access 
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 <!-- legacy procedure -->
 
 Record-level permissions are granted at the entity level, but you may have certain fields associated with an entity that contain data that is more sensitive than the other fields. For these situations, you use field-level security to control access to specific fields.  
