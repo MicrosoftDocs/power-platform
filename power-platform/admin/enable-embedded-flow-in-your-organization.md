@@ -17,8 +17,6 @@ search.app:
 ---
 # Enable Power Automate integration to automate processes
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 Microsoft Power Automate lets you create automated processes between your favorite apps and services. The ability to run flows from within customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), such as Dynamics 365 Sales and Customer Service, make it simple for users to combine a broad spectrum of services that can be initiated from within Dynamics 365 apps, such as messaging, social engagement, and document routing services.  
 
 ![Lead record with Power Automate integration](media/flow-integration.png)
@@ -59,7 +57,7 @@ Once the Power Automate integration feature is enabled, the following privileges
 4. Select **Save**.
 
    > [!TIP]
-   >  The Power Automate menu only lists flows that begin with the *When a record is selected* Microsoft Dataverse trigger and contain at least one trigger or action that references that entity.
+   >  The Power Automate menu only lists flows that begin with the *When a record is selected* Microsoft Dataverse trigger and contain at least one trigger or action that references that record.
    >  
  
 ### See also  
