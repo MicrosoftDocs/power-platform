@@ -166,6 +166,8 @@ Notifications for capacity approaching storage limits will be triggered when any
 - Copy an environment (requires minimum 1GB capacity available)
 - Restore an environment (requires minimum 1GB capacity available)
 
+These notifications are sent out to tenant admins on a weekly basis. At this time, there is no option for the tenants to opt-out of these notifications or delegate these notifications to someone else. All tenant admins for a tenant will automatically receive these notifications.
+
 Additionally, there will still be a notification banner in the Power Platform admin center when a tenant has exceeded storage capacity.
 
 ## Actions to take for a storage capacity deficit
