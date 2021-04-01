@@ -17,8 +17,6 @@ search.app:
 ---
 # Legacy storage capacity
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 In April 2019, we introduced Microsoft Dataverse capacity storage that is optimized for relational data, attachments, and audit logs. If you purchased storage prior to April 2019, you are using the legacy licensing model for storage discussed in this topic.
 
 We're rolling out this feature now so check back if your user experience varies from the following content.
@@ -72,7 +70,7 @@ All tables of Dataverse, including system tables, are included in the storage ca
 
 |Number  |Description |
 |---------|---------|
-|(1)   |**Storage capacity usage**  <ul><li>**File and database**: The following entities store data in file and database storage: <ul><li>Attachment</li><li>AnnotationBase</li><li>Any custom or out-of-the-box entity that has fields of datatype file or image (full size)</li><li>Any entity that is used by one or more installed Insights applications and [ends in *- Analytics*](#what-are-entities-ending-in---analytics-in-my-capacity-report) </li> </ul><ul><li>WebResourceBase</li></ul><ul><li>RibbonClientMetadataBase</li></ul></li><li>**Log**: The following entities are used: <ul><li>AuditBase</li><li>PlugInTraceLogBase</li></ul><li>**Database only**: All other entities are counted for your database</li></ul>  |
+|(1)   |**Storage capacity usage**  <ul><li>**File and database**: The following tables store data in file and database storage: <ul><li>Attachment</li><li>AnnotationBase</li><li>Any custom or out-of-the-box table that has columns of datatype file or image (full size)</li><li>Any table that is used by one or more installed Insights applications and [ends in *- Analytics*](#what-are-tables-ending-in---analytics-in-my-capacity-report) </li> </ul><ul><li>WebResourceBase</li></ul><ul><li>RibbonClientMetadataBase</li></ul></li><li>**Log**: The following tables are used: <ul><li>AuditBase</li><li>PlugInTraceLogBase</li></ul><li>**Database only**: All other tables are counted for your database</li></ul>  |
 |(2)    |**Storage capacity, by source** <ul><li>**Org (tenant) default**: The default capacity given at the time of sign-up </li><li>**User licenses**: Additional capacity added for every user license purchased</li><li>**Additional storage**: Any additional storage you bought </li><li>**Total**: Total storage available </li><li>**View self-service sources**: See [View self-service license amounts and storage capacity](view-self-service-capacity.md)</li></ul>      |
 |(3)     |**Top storage usage, by environment**: The environments that consume the most capacity        |
 |(4)  |  **Add-ons**:  Your organization's add-on usage details. See [View capacity add-ons in Power Platform admin center](capacity-add-on.md#view-capacity-add-ons-in-power-platform-admin-center) |
@@ -158,7 +156,6 @@ To view this page, select **Resources** > **Capacity** > **Trials** tab.
 
 The 110 GB of storage is used by the three types of storage: database, log, and file. This tenant is 10 GB over in storage usage. Therefore, there is a deficit. This tenant should free up storage or purchase more capacity.
 
-<!--
 ## Changes for exceeding storage capacity entitlements
 
 We're making changes for what happens when an organization's storage capacity is close to, or exceeds the capacity entitled or purchased via add-ons.
@@ -170,7 +167,6 @@ Notifications for capacity approaching storage limits will be triggered when any
 - Restore an environment (requires minimum 1GB capacity available)
 
 Additionally, there will still be a notification banner in the Power Platform admin center when a tenant has exceeded storage capacity.
--->
 
 ## Actions to take for a storage capacity deficit
 
@@ -198,9 +194,9 @@ You'll see the report for the [new licensing model](capacity-storage.md).
 
 When you sign in to the Power Platform admin center, you'll be notified if your capacity usage is more than the capacity you're entitled to. 
 
-### What are entities ending in “- analytics” in my capacity report?
+### What are tables ending in “- analytics” in my capacity report?
 
-Entities ending in “– Analytics” are entities used by one or more Insights applications, for example Sales Insights, Customer Service Hub, or Field Service and resource scheduling and optimization analytics dashboard to generate predictive insights and/or analytics dashboards. The data is synched from Dataverse entities. See **More information** below for documentation covering the installed Insights applications and the entities used to create insights and dashboards.
+Tables ending in “– Analytics” are tables used by one or more Insights applications, for example Sales Insights, Customer Service Hub, or Field Service and resource scheduling and optimization analytics dashboard to generate predictive insights and/or analytics dashboards. The data is synched from Dataverse tables. See **More information** below for documentation covering the installed Insights applications and the tables used to create insights and dashboards.
 
 **More information:**
 - [Sales Insights ](/dynamics365/ai/sales/help-hub#get-started)

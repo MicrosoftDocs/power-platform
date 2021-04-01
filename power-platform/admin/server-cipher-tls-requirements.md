@@ -16,7 +16,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Server cipher suites and TLS requirements 
+# Server cipher suites and TLS requirements
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
@@ -61,6 +61,7 @@ To verify that your server complies with the security protocol, you can perform 
 [Cipher Suites in TLS/SSL (Schannel SSP)](/windows/win32/secauthn/cipher-suites-in-schannel)  <br />
 [Manage Transport Layer Security (TLS)](/windows-server/security/tls/manage-tls)  <br />
 [How to enable TLS 1.2](/mem/configmgr/core/plan-design/security/enable-tls-1-2)  
+
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
