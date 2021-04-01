@@ -79,6 +79,7 @@ The Core Components solution is required for the Governance Components solution,
    | Auto Delete On Archive | Determines whether apps are deleted when they're archived in the following flow: Admin \| App Archive and Clean Up - Check Approvals and Archive. <br> Value must be Yes or No. A default value of No is provided. |
    | Developer Compliance Center         | Leave this blank on import, and [update the enviornment variable](#update-environment-variables) after the import has finished by first navigating to the details page of the Developer Compliance Center (canvas app) included with this solution, and copy the web link (to launch the app) and paste it into this variable.  |
    | ProductionEnvironment | Determines if the environment is Production or Dev/Test. True (the default) will mean that the approvals are sent to app/flow owners. False will send those approvals to the admin email. |
+   | Exclude Default environment from Compliance Request flows | Set to Yes if you want to Exclude the Default environment from the *Admin - Compliance Details* request flow. A default value of No is provided. |
 
 1. Select **Import** without adding values to the Environment Variables, as we will update them later - see [update environment variables](#update-environment-variables)
 
@@ -99,6 +100,7 @@ All flows in this solution depend on all environment variables' being configured
    | Developer Compliance Center         | Navigate to the details page of the Developer Compliance Center (canvas app) included with this solution, and copy the web link (to launch the app) and paste it into this variable.  |
    | ProductionEnvironment | Determines if the environment is Production or Dev/Test. True (the default) will mean that the approvals are sent to app/flow owners. False will send those approvals to the admin email. |
    | Approval Admin | Optional variable for users that have a distribution list for the Admin Email env var. Since you cannot use a distribution list for approvals, this variable will allow you to specify a secondary email that is a person for Approvals |
+   | Exclude Default environment from Compliance Request flows | Set to Yes if you want to Exclude the Default environment from the *Admin - Compliance Details* request flow. A default value of No is provided. |
 
 ## Activate the flows
 
@@ -141,9 +143,9 @@ In addition to sharing the app, you'll also need to share the data by providing 
 
 1. Select **Share**.
 
-## Share the app from a Dataverse for Teams environment
+#### Share the app from a Dataverse for Teams environment
 
-You will share the app with your colleagues that don't belong to your CoE team. 
+You will share the app with your colleagues that don't belong to your CoE team.
 
 More information: [Sharing for broad distribution apps](https://docs.microsoft.com/powerapps/teams/publish-and-share-apps#share-broad-distribution-apps-with-colleagues)
 
@@ -159,8 +161,10 @@ More information: [Sharing for broad distribution apps](https://docs.microsoft.c
     1. Repeat these steps for the Environment, Flow, PVA, Desktop flow tables.
     1. Repeat these steps for the COE Settings table, but grant **Reference** permission only.
 1. Select **Build** and select **Share with colleagues** to share the app with your colleagues. You must be a Team Owner to see this option.
+
    ![Sharing with colleagues](media/govteams-1.png "Sharing with colleagues")
 1. Search for, and select the security group you want to share the apps and tables with. Select the **Developer Compliance Center** app.
+
    ![Search for a security group](media/govteams-2.png "Search for a security group")
 1. Select **Save**.
 
