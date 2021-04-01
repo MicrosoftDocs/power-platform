@@ -163,6 +163,18 @@ Notifications for capacity approaching storage limits will be triggered when any
 
 Additionally, there will still be a notification banner in the Power Platform admin center when a tenant has exceeded storage capacity. 
 
+<!--
+We're making changes for what happens when an organization's storage capacity is close to, or exceeds the capacity entitled or purchased via add-ons.
+
+Notifications for capacity approaching storage limits will be triggered when any of the three storage capacities (database, file, or log) have less than 15% of space available.  Another warning notification that admin operations could be impacted will be sent when any of the three storage capacities have less than 5% of space available.  The final tier of notification will trigger when the tenant is ‘in overage’ (storage usage exceeds capacity entitlements), which will alert the admin that the operations below will no longer be available until the overage is resolved.
+
+-	Create new environment (requires minimum 1GB capacity available)
+-	Copy an environment (requires minimum 1GB capacity available)
+-	Restore an environment (requires minimum 1GB capacity available)
+
+Additionally, there will still be a notification banner in the Power Platform admin center when a tenant has exceeded storage capacity. 
+-->
+
 ## Example storage capacity scenarios, overage enforcement
 
 You should be within limits for your entitled capacity for database, log, and file. If you have used more capacity than you're entitled to, you should buy more capacity or free up capacity. However, if you've overused database, log, or file capacity, review the following scenarios to understand when enforcement will be applied.
