@@ -396,6 +396,36 @@
           href: analytics-flow.md
         - name: Analytics for UI flows
           href: analytics-ui-flow.md
+        - name: Reports 
+          items:
+          - name: Overview reports
+            items:
+            - name: Usage 
+              href: usage-overview-report.md
+            - name: Inventory 
+              href: inventory-overview-report.md
+            - name: Custom connectors 
+              href: custom-connectors-overview-report.md
+            - name: Environments 
+              href: environments-overview-report.md
+          - name: Power Apps reports  
+            items:
+            - name: Usage 
+              href: power-apps-usage-report.md
+            - name: Maker 
+              href: power-apps-maker-report.md
+            - name: Inventory 
+              href: power-apps-inventory-report.md
+            - name: App connectors
+              href: power-apps-connectors-report.md
+            - name: Apps shared 
+              href: power-apps-shared-report.md
+          - name: Power Automate reports 
+            items:
+            - name: Usage
+              href: power-automate-usage-report.md
+            - name: Inventory 
+              href: power-automate-inventory-report.md
       # - name: Analyze telemetry with Application Insights
       #   items:
       #   - name: Model-driven apps and Microsoft Dataverse telemetry
