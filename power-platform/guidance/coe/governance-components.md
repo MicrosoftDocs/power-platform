@@ -41,8 +41,8 @@ Here's a breakdown of the assets that form the governance components:
   - [Business process flows for auditing resources](#business-process-flows)
 
 - Archive unused apps
-  - [App and Flow Archive and Clean Up – Start Approval and Check Approval (flows)](#flows)
-  - [App Archive and Clean Up View (model-driven app)](#apps)
+  - [App and Flow Archive and Clean Up – Start Approval and Check Approval (flows)](#admin--archive-and-clean-up-v2-start-approval-for-apps)
+  - [App Archive and Clean Up View (canvas app)](#app-archive-and-clean-up-view)
 
 ## Tables
 
@@ -52,9 +52,19 @@ Represents archival approval tasks started during the App Archive and Clean Up f
 
 ## Flows
 
+| Flow | Type | Schedule |
+| --- | --- | --- |
+|[Microsoft Teams Admin \|  Ask for Business Justification when Microsoft Teams environment is created](#microsoft-teams-admin--ask-for-business-justification-when-microsoft-teams-environment-is-created) | Automated |  when *Admin \| Sync Template v3* flow adds or modifies a record in the Environment table |
+| [Microsoft Teams Admin \|  Weekly Clean Up of Microsoft Teams environments](#microsoft-teams-admin--weekly-clean-up-of-microsoft-teams-environments) | Schedule | Weekly |
+| [Admin \| Compliance Detail Request](#admin--compliance-detail-request) | Schedule | Weekly |
+| [Admin \| Archive and Clean Up v2 (Start Approval for Apps)](#admin--archive-and-clean-up-v2-start-approval-for-apps) | Schedule | Weekly |
+| [Admin \| Archive and Clean Up v2 (Start Approval for Flows)](#admin--archive-and-clean-up-v2-start-approval-for-flows) | Schedule | Weekly |
+| [Admin \| Archive and Clean Up v2 (Check Approval)](#admin--archive-and-clean-up-v2-check-approval) | Schedule | Daily |
+| [Admin \| Archive and Clean Up v2 (Clean Up and Delete)](#admin--archive-and-clean-up-v2-clean-up-and-delete) | Schedule | Daily |
+
 ### Microsoft Teams Admin | Ask for Business Justification when Microsoft Teams environment is created
 
-This flow runs daily and checks if new environments of type [Microsoft Teams](https://docs.microsoft.com/power-platform/admin/about-teams-environment) have been created. Team owners who have created a Microsoft Teams environments receive an adaptive card via Teams that prompts them to provide a business justification.
+This flow runs daily and checks whether new environments of type [Microsoft Teams](https://docs.microsoft.com/power-platform/admin/about-teams-environment) have been created. Team owners who have created a Microsoft Teams environments receive an adaptive card via Teams that prompts them to provide a business justification.
 
 ![Ask for Business Justification when Microsoft Teams environment is created](media/teams-1.png "Ask for Business Justification when Microsoft Teams environment is created")
 
@@ -68,20 +78,23 @@ Learn more about the Microsoft Teams governance process in the CoE Starter Kit: 
 
 ## Microsoft Teams Admin | Weekly Clean Up of Microsoft Teams environments
 
-This flow runs weekly and deletes environments that
+> [!IMPORTANT]
+> This flow deletes environments for which no business justification exists, or where the business justification has been rejected. Only turn this flow on **a week** after enabling the *Microsoft Teams Admin | Ask for Business Justification when Microsoft Teams environment is created* flow to ensure makers have an opportunity to provide a business justification before their environments get deleted.
 
-- have been created more than **7 days** ago and have no business justification or where the business justification has been rejected by the admin
-- have been created more than **90 days** ago and have no apps or flows in the environment
+This flow runs weekly and deletes environments that:
+
+- Have been created more than **7 days** ago and have no business justification, or the business justification has been rejected by the admin.
+- Have been created more than **90 days** ago and have no apps or flows in the environment.
 
 >[!NOTE]
-> Currently, bots created via Power Virtual Agents in Microsoft Teams environments are not discoverable in the CoE Starter Kit.
+> Currently, bots created via Power Virtual Agents in Microsoft Teams environments aren't discoverable in the CoE Starter Kit.
 
-Environments are deleted from the tenant, and marked as deleted in the Environment table of the CoE Starter Kit - you can view deleted environments in the [Power Platform Admin View](core-components.md).
+Environments are deleted from the tenant and marked as deleted in the Environment table of the CoE Starter Kit. You can view deleted environments in the [Power Platform Admin View](core-components.md).
 
 >[!IMPORTANT]
-> You can recover a recently deleted environment (within 7 days of deletion), by using the Power Platform admin center or the Power Apps cmdlet Recover-AdminPowerAppEnvironment. Learn more: [Recover environment](https://docs.microsoft.com/power-platform/admin/recover-environment#power-platform-admin-center).
+> You can recover a recently deleted environment (within seven days of deletion) by using the Power Platform admin center or the Power Apps cmdlet Recover-AdminPowerAppEnvironment. More information: [Recover environment](https://docs.microsoft.com/power-platform/admin/recover-environment#power-platform-admin-center)
 
-Save a copy of this flow if you want to change the make any changes to the criteria for when environments are deleted.
+Save a copy of this flow in case you want to make any changes to the criteria for when environments are deleted.
 
 Learn more about the Microsoft Teams governance process in the CoE Starter Kit: [Microsoft Teams environment audit process](teams-governance.md)
 
@@ -186,17 +199,14 @@ Makers can achieve compliance by providing additional information through the **
    :::column-end:::
 :::row-end:::
 
-## Model-driven app
-
 ### App Archive and Clean Up View
 
-A model-driven app that provides an interface to canvas apps that have been highlighted for archiving and their approval status. This model-driven app works in conjunction with other apps and flows in the CoE Starter Kit to facilitate the process described for the [app auditing process](example-processes.md).
-
-**Customize**: Instead of using this model-driven app, you can modify the Power Platform Admin View app to show the Archive Approval table.
-
-![App Archive and Clean Up View](media/coe61.png "App Archive and Clean Up View")
+An app that provides an interface to canvas apps that have been highlighted for archiving and their approval status. This app works in conjunction with other apps and flows in the CoE Starter Kit to facilitate the process described for the [app auditing process](example-processes.md).
 
 ## Business process flows
+
+> [!NOTE]
+> Business process flows are not available if you have installed the Core Components in Dataverse for Teams.
 
 ### Power Apps App Approval BPF
 
@@ -279,3 +289,6 @@ All business process flows are disabled by default. To enable them, do the follo
 1. In **Power Apps App Approval BPF**, select the ellipsis (…) button, and then select **Turn On**.
 
 1. Repeat the previous step for **Flow Approval BPF**, **Custom Connector Approval BPF**, and **Chatbot Approval BPF**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

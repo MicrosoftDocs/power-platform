@@ -63,6 +63,21 @@ Set up the CoE Starter Kit by following these instructions:
 - [Set up the CoE Power BI dashboard](setup-powerbi.md)
 - [Set up theming components](setup-theming.md)
 
+## Compare
+
+| | Dataverse for Teams environment | Production environment |
+| --- | --- | --- |
+| Syncing inventory to Dataverse tables | Yes | Yes |
+| Collecting telemetry information from the Audit Log | No | Yes
+| Power Platform Admin View to view and filter resources | Canvas App | Model Driven App |
+| Power BI Dashboard | Yes | Yes |
+| Canvas Apps part of Core Components (DLP Editor, Set App and Flow Permission Apps) | Yes | Yes |
+| Apps and Flows part of Governance Components | Yes | Yes |
+| Apps and Flows part of Nurture Components | Yes | Yes |
+| Sharing the Developer Compliance Center with makers | Share with colleagues who have a Microsoft 365 license in Teams | Sharing requires users to have a Power Apps Per User or Per App License |
+| Sharing the App Catalog app | Share with colleagues who have a Microsoft 365 license in Teams | Sharing requires users to have a Power Apps Per User or Per App License |
+| Sharing the Training in a day app | Share with colleagues who have a Microsoft 365 license in Teams | Sharing requires users to have a Power Apps Per User or Per App License |
+
 ## Extending the starter kit
 
 When you're ready to extend the CoE Starter Kit with your own ideas, you'll do so by making modifications to the solution components in your own unmanaged solution:

@@ -92,6 +92,7 @@ This is the first step of the installation process and is required for every oth
     |------|---------------|
     |Power Automate environment variable | For a US environment: <https://us.flow.microsoft.com/manage/environments/> <br>For an EMEA environment: <https://emea.flow.microsoft.com/manage/environments/> <br>For a GCC environment: <https://gov.flow.microsoft.us/manage/environments/> |
     |Admin eMail                         | Email address used in flows to send notifications to admins; this should be either your email address or a distribution list |
+    | Power Platform Maker Office 365 Group | The Admin \| Welcome Email flow sends a welcome email to onboard new makers and adds them to an Office 365 group. You can use this group to send communications to your makers or invite them to a Yammer or Teams group. Configure the group ID here.|
 
      ![Update environment variable values](media/msi-envvar.png "Update environment variable values.")
 
@@ -198,3 +199,4 @@ Environment variables are used to store application and flow configuration data 
     |eMail Header Style                  | CSS style used to format emails that are sent to admins and makers. A default value is provided. [See the provided default value](code-samples/css/default-value-eMail-Header-Style.md). |
     |Also Delete from CoE | When the Admin \| Sync Template v3 (Check Deleted) flow is run, this denotes whether you want the items deleted from CoE (Yes, which is the default) or just marked as deleted (No). |
     | Full Inventory | Determines if you want to only update objects that have changed, or all objects. Defaults to No. Switching to Yes will cause the flows to inventory every single app, flow, and bot. |
+    | Power Platform Maker Office 365 Group | The Admin \| Welcome Email flow sends a welcome email to onboard new makers and adds them to an Office 365 group. You can use this group to send communications to your makers or invite them to a Yammer or Teams group. Configure the group ID here.|

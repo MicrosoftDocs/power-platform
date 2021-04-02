@@ -62,54 +62,14 @@ Represents available training events created through the Training in a Day Manag
 
 ## Flows
 
-### Admin \| Welcome Email
-
-Sends an email to a user who created an app, flow, custom connector, or environment. This flow gets triggered when a new record is created in the maker table.  
-
-You can customize the email sent out by the flow. By default, it will look like the following image.
-
-![The Welcome email introduces a new maker to learning resources available.](media/coe5.PNG "The Welcome email introduces a new maker to learning resources available.")
-
-### Admin \| Newsletter with Product Updates
-
-Sends a weekly email with a summary of product updates, consisting of posts from the product blogs for Power Apps, Power Automate, and Power BI, and the Power Apps Community blog.
-
-![Newsletter with product updates](media/coe64.PNG "Newsletter with product updates")
-
-### Training in a Day \| Feedback Reminder
-
-Sends an email to attendees of a training event on the day, and requests feedback.
-
-### Training in a Day \| Registration Confirmation
-
-Sends an email to an attendee when they register for a Training in a Day event.
-
-### Training in a Day \| Reminder 3 days prior to event
-
-Sends a reminder email to an attendee of a Training in a Day event three days before the event.
-
-:::row:::
-   :::column span="":::
-      ![Training in a Day reminder](media/coe66.png "Training in a Day reminder")
-   :::column-end:::
-   :::column span="":::
-      ![Training in a Day feedback request](media/coe65.png "Training in a Day feedback request")
-   :::column-end:::
-:::row-end:::
+| Flow | Type | Schedule | Description |
+| --- | --- | --- | --- | --- |
+| Admin \| Newsletter with Product Updates | Schedule | Weekly | Sends a weekly email with a summary of product updates, consisting of posts from the product blogs for Power Apps, Power Automate, and Power BI, and the Power Apps Community blog. |
+| Training in a Day \| Feedback Reminder | Schedule | Daily | Sends an email to attendees of a training event on the day, and requests feedback. |
+| Training in a Day \| Registration Confirmation Automated | Automated | when a user registers for an event using the [Training in a day](#training-in-a-day--registration) app | Sends an email to attendees of a training event on the day, and requests feedback. |
+| Training in a Day \| Reminder 3 days prior to event | Schedule | Daily | Sends a reminder email to an attendee of a Training in a Day event three days before the event.
 
 ## Apps
-
-### App Catalog
-
-A canvas app that helps give visibility to certain apps in the organization. Admins can choose which apps to highlight in the app catalog if the app meets admin requirements and is meant to be shared broadly.
-
-When you first open the app catalog, you won't see any apps there. There's a field on the Power Apps App table called **In App Catalog**, which is a two-option set type field (Boolean). If the value is set to **Yes**, the app will show up in the catalog. To publish an app to the app catalog, follow the [app auditing process](example-processes.md) in the Power Platform Admin View app.
-
-**Permission**: As soon as you're using this process, you can share the app catalog with the entire organization.
-
-**Prerequisite**: This app uses Microsoft Dataverse; a Premium license is therefore required for every app user.
-
-![App Catalog](media/coe67.png "App Catalog")
 
 ### Template Catalog
 
