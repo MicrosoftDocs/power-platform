@@ -21,10 +21,6 @@ search.app:
 
 Multiple governance components are provided in the Center of Excellence (CoE) Starter Kit; each will require some configuration to install. The installation instructions in this article have been segmented based on the set of components that should be grouped and installed together, and dependencies on other segments are outlined in each section.
 
-The Governance Components can be used in both Production environments and Dataverse for Teams environments. Where you install it will depend on your organization setup, your adoption of Microsoft Power Platform so far and what you want to achieve with the CoE Starter Kit. Before you decide, compare [Dataverse vs Dataverse for Teams](https://docs.microsoft.com/powerapps/teams/data-platform-compare)
-
-Learn more: [What is Dataverse for Teams](https://docs.microsoft.com/powerapps/teams/overview-data-platform)
-
 ## Initialize flow approval tables in your environment
 
 The archive approval flows use the built-in Approval actions of Power Automate.
@@ -106,8 +102,8 @@ This Governance Components solution contains flows that you'll need to manually 
 
 - Admin \| Archive and Clean Up v2 (Start Approval for Apps)
 - Admin \| Archive and Clean Up v2 (Start Approval for Flows)
-- Admin \| Archive and Clean Up v2 (Clean Up and Delete)
 - Admin \| Archive and Clean Up v2 (Check Approval)
+- Admin \| Archive and Clean Up v2 (Clean Up and Delete)
 - Admin \| Compliance detail request
 - Microsoft Teams Admin \| Ask for Business Justification when Microsoft Teams environment is created
 - Microsoft Teams Admin \| Weekly Clean Up of Microsoft Teams environments

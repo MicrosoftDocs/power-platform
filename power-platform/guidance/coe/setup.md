@@ -49,6 +49,10 @@ The following are prerequisites for installing the CoE Starter Kit as it's inclu
 
 -  The environment must have a data loss prevention (DLP) policy that allows [Dataverse](https://docs.microsoft.com/connectors/commondataservice/), [Dataverse (current environment)](https://docs.microsoft.com/connectors/commondataserviceforapps/), [Office 365 Users](https://docs.microsoft.com/connectors/office365users/), [Power Platform for Admins](https://docs.microsoft.com/connectors/powerplatformforadmins/), [Power Automate Management](https://docs.microsoft.com/connectors/flowmanagement/), [Office 365 Outlook](https://docs.microsoft.com/connectors/office365/), [Power Apps for Admins](https://docs.microsoft.com/connectors/powerappsforadmins/), [Power Apps for Makers](https://docs.microsoft.com/connectors/powerappsforappmakers/), [SharePoint](https://docs.microsoft.com/connectors/sharepointonline/), [Azure Aciver Directory (Azure AD)](https://docs.microsoft.com/connectors/azuread/), [Power Automate for Admins](https://docs.microsoft.com/connectors/microsoftflowforadmins/), [RSS](https://docs.microsoft.com/connectors/rss/), [Office 365 Groups](https://docs.microsoft.com/connectors/office365groups/), [Approvals](https://docs.microsoft.com/connectors/approvals/), [Microsoft Teams](https://docs.microsoft.com/connectors/teams/) and HTTP to be used together. Those connectors must be in the business data&ndash;only bucket of the DLP policy for this environment. If you're using the [audit log](setup-auditlog.md) solution, the custom connector used to connect to the Microsoft 365 audit log also must be included in your business data&ndash;only bucket.
 
+-  The DLP Policy on this environment needs to allow [Dataverse](https://docs.microsoft.com/connectors/commondataservice/), [Dataverse (current environment)](https://docs.microsoft.com/connectors/commondataserviceforapps/), [Office 365 Users](https://docs.microsoft.com/connectors/office365users/), [Power Platform for Admins](https://docs.microsoft.com/connectors/powerplatformforadmins/), [Power Automate Management](https://docs.microsoft.com/connectors/flowmanagement/), [Office 365 Outlook](https://docs.microsoft.com/connectors/office365/), [Power Apps for Admins](https://docs.microsoft.com/connectors/powerappsforadmins/), [Power Apps for Makers](https://docs.microsoft.com/connectors/powerappsforappmakers/), [SharePoint](https://docs.microsoft.com/connectors/sharepointonline/), [Azure Aciver Directory (Azure AD)](https://docs.microsoft.com/connectors/azuread/), [Power Automate for Admins](https://docs.microsoft.com/connectors/microsoftflowforadmins/), [RSS](https://docs.microsoft.com/connectors/rss/), [Office 365 Groups](https://docs.microsoft.com/connectors/office365groups/), [Approvals](https://docs.microsoft.com/connectors/approvals/), HTTP, and [Notifications](https://docs.microsoft.com/connectors/flowpush/) to be used together. Those connectors must be in the business data&ndash;only bucket of the DLP policy for this environment. 
+
+- If you're using the [audit log](setup-auditlog.md) solution, the custom connector used to connect to the Microsoft 365 audit log also must be included in your business data&ndash;only bucket. And the DLP policy must be of type Environment, not Tenant.
+
 - If you're using the [ALM Accelerator for Makers](almaccelerator-components.md) components, the environment must have a DLP policy that allows [Dataverse](https://docs.microsoft.com/connectors/commondataservice/), [Office 365 Outlook](https://docs.microsoft.com/connectors/office365/), [Power Apps for Makers](https://docs.microsoft.com/connectors/powerappsforappmakers/), [Approvals](https://docs.microsoft.com/connectors/approvals/), [GitHub](https://docs.microsoft.com/connectors/github/), [Power Platform for Admins](https://docs.microsoft.com/connectors/powerplatformforadmins/) and [Content Conversion](https://docs.microsoft.com//connectors/conversionservice/) to be used together. Those connectors must be in the business data&ndash;only bucket of the DLP policy for this environment.
 
 - If multiple DLP policies apply to the same environment, either all of them must have the connectors the CoE Starter Kit uses in business data only or&mdash;if you have a policy that applies to all environments that you don't want to change&mdash;you can exclude the CoE environment from that policy. More information: [DLP policy scope](https://docs.microsoft.com/power-platform/admin/wp-data-loss-prevention#policy-scope)
@@ -67,6 +71,24 @@ Set up the CoE Starter Kit by following these instructions:
 - [Set up nurture components](setup-nurture-components.md)
 - [Set up the CoE Power BI dashboard](setup-powerbi.md)
 - [Set up theming components](setup-theming.md)
+
+## Compare
+
+The CoE Starter Kit can be used in both Production environments and Dataverse for Teams environments. Where you install it will depend on your organization setup, your adoption of Microsoft Power Platform so far and what you want to achieve with the CoE Starter Kit. Before you decide, compare [Dataverse vs Dataverse for Teams](https://docs.microsoft.com/powerapps/teams/data-platform-compare) and review the impact on CoE Starter Kit features based on where you install it:
+
+
+| | Dataverse for Teams environment | Production environment |
+| --- | --- | --- |
+| Syncing inventory to Dataverse tables | Yes | Yes |
+| Collecting telemetry information from the Audit Log | No | Yes
+| Power Platform Admin View to view and filter resources | Canvas App | Model Driven App |
+| Power BI Dashboard | Yes | Yes |
+| Canvas Apps part of Core Components (DLP Editor, Set App and Flow Permission Apps) | Yes | Yes |
+| Apps and Flows part of Governance Components | Yes | Yes |
+| Apps and Flows part of Nurture Components | Yes | Yes |
+| Sharing the Developer Compliance Center with makers | Share with colleagues who have a Microsoft 365 license in Teams | Sharing requires users to have a Power Apps Per User or Per App License |
+| Sharing the App Catalog app | Share with colleagues who have a Microsoft 365 license in Teams | Sharing requires users to have a Power Apps Per User or Per App License |
+| Sharing the Training in a day app | Share with colleagues who have a Microsoft 365 license in Teams | Sharing requires users to have a Power Apps Per User or Per App License |
 
 ## Extending the starter kit
 
