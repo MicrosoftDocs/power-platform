@@ -21,10 +21,13 @@ search.app:
 ---
 # Administer Power Apps
 
-Features from the Power Apps Admin center have moved to the Power Platform admin center. Power Apps administrators can use the  [Power Platform admin center](https://admin.powerplatform.microsoft.com) to manage environments and settings for Power Apps.
+Features from the Power Apps admin center have moved to the Microsoft Power Platform admin center. Power Apps administrators can use the [Power Platform admin center](https://admin.powerplatform.microsoft.com) to manage environments and settings for Power Apps.
 
 
 ### See also
 [Working with the admin portals](wp-work-with-admin-portals.md) <br />
 [Reference: Videos and PowerPoint presentations](videos.md) <br />
 [What's the role of a Power Apps administrator?](overview-role-powerapps-admin.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

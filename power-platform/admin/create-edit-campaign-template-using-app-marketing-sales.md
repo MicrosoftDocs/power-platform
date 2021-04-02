@@ -23,9 +23,9 @@ Save time when creating multiple campaigns by creating a campaign template. Camp
   
 ## Create a campaign template  
   
-1. In the web app, go to **Marketing** > **Campaigns**.
+1. In the web app, use the [Area switcher](/powerapps/user/navigation#area-switcher) to select **Marketing**, and then go to **Marketing** > **Campaigns**.
   
-2. Select **New Template**.  
+2. Select **New Template**. 
   
     \- OR -  
   
@@ -52,3 +52,6 @@ Save time when creating multiple campaigns by creating a campaign template. Camp
  [Add an activity to a campaign using in-app marketing (Sales)](https://docs.microsoft.com/dynamics365/sales-enterprise/add-activity-campaign-using-app-marketing-sales)   
  [Add a marketing list, sales literature, or product to a campaign using in-app marketing (Sales)](https://docs.microsoft.com/dynamics365/sales-enterprise/add-marketing-list-sales-literature-product-campaign-using-app-marketing-sales)   
  [Track a marketing campaign response using in-app marketing (Sales)](https://docs.microsoft.com/dynamics365/sales-enterprise/track-marketing-campaign-response-using-app-marketing-sales)   
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

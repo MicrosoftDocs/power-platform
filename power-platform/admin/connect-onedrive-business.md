@@ -34,7 +34,7 @@ Users can create and manage private documents with [!INCLUDE[pn_onedrive_for_bus
 ## Enable OneDrive for Business  
  You enable [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)] as follows:  
   
-1. In the Power Platform admin center, select an environment. 
+1. In the Microsoft Power Platform admin center, select an environment. 
 
 2. Select **Settings** > **Integration** > **Document management settings**.   
   
@@ -81,3 +81,6 @@ $wellKnownApp.Update()
  [Use OneDrive for Business to manage your private documents](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/basics/use-onedrive-business-manage-private-documents)   
  [What is OneDrive for Business?](https://support.office.com/article/What-is-OneDrive-for-Business-187f90af-056f-47c0-9656-cc0ddca7fdc2)   
  [SharePoint Online and OneDrive for Business: software boundaries and limits](https://support.office.com/article/SharePoint-Online-and-OneDrive-for-Business-software-boundaries-and-limits-8F34FF47-B749-408B-ABC0-B605E1F6D498)   
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

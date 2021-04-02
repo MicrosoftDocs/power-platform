@@ -1,12 +1,12 @@
 ---
 title: Power Apps and Power Automate licensing FAQs| Microsoft Docs
 description: "FAQs for licensing Power Apps, Power Automate, Dataverse, Dataverse for Teams, and AI Builder"
-author: dileepsinghmicrosoft
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/12/2021
-ms.author: dileeps
+ms.date: 02/24/2021
+author: chrisgarty
+ms.author: cgarty
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
@@ -52,7 +52,7 @@ The Power Apps per app plan is designed to help organizations solve for one busi
 
 No. Embedded canvas components within the model-driven app will not count towards the two apps limit in the per app licensing model.
 
-### What are the self-service purchase options for the Power Platform products?
+### What are the self-service purchase options for the Microsoft Power Platform products?
 
 See the FAQ: [Self-service purchase FAQ](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq#admin-capabilities).
 
@@ -71,7 +71,7 @@ Yes, non-profit, government and academic pricing is available in respective prog
 
 ### What will happen to the Power Apps and Power Automate Plan 1 and Plan 2 plans on December 31, 2020?
 
-Power Apps P1 and P2 and Power Automate P1 and P2 plans will no longer be available for purchase, including via auto-renewal, after December 31, 2020. Customers with these plan licenses that have renewals falling on or after January 1, 2021 will need to transition to the Power Apps per user or per app plans, or the Power Automate per user or per flow plans to continue using the Power Platform services. Please contact your Microsoft account rep for more information.
+Power Apps P1 and P2 and Power Automate P1 and P2 plans will no longer be available for purchase, including via auto-renewal, after December 31, 2020. Customers with these plan licenses that have renewals falling on or after January 1, 2021 will need to transition to the Power Apps per user or per app plans, or the Power Automate per user or per flow plans to continue using the Microsoft Power Platform services. Please contact your Microsoft account rep for more information.
 
 ### Are full Power Automate capabilities included in Power Apps licenses?
 
@@ -200,6 +200,10 @@ Yes, you can use the Dynamics 365 Finance and Operations connector to build canv
 
 ## Power Automate
 
+### Can I get a brief explanation of how Power Automate license plans work?
+
+Each user and flow has a license plan. If the flow is set to the per-flow plan then that is the license plan it will get and it has the highest performance profile. If the flow is set to the per-user plan, then it will get the plan of its primary owner. If a user has multiple plans, such as a Microsoft 365 plan and a Dynamics 365 plan, the flow will use the higher-performance plan. The standard user license plan for Power Automate is the Power Automate per-user plan, but there are a range of other license plans a user could be running with. Users running the free or Office 365 license plans will only be able to access standard connectors, but most of the other license plans provide access to premium connectors. For details about license plans that include Power Automate capabilities, see the Power Platform [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130). For details about the limits and performance profile of license plans, see the [Power Automate Limits](https://docs.microsoft.com/power-automate/limits-and-config).
+
 ### When would I use the Power Automate per user plan versus the Power Automate per flow plan?
 
 The per user plan is intended to support the broad adoption of an automation culture in an organization. Every user with this plan is entitled to use an unlimited number of flows, within service limits. The per flow plan provides an organization with the flexibility to license by the number of flows, instead of licensing each user accessing the flows individually with the per user plan.
@@ -261,7 +265,7 @@ Dataverse for Teams is a built-in flexible datastore that provides data storage 
 - Power Apps capabilities seeded in Microsoft 365 licenses are expanding to enable building and deploying custom apps natively within Teams.
 -	Additionally, Power Virtual Agents capabilities are being introduced to Teams. Customers will now be able to build and deploy custom chatbots directly within Teams.
 
-The existing Power Platform functionality available for use in Microsoft 365 more broadly outside of Teams remains otherwise unchanged.
+The existing Microsoft Power Platform functionality available for use in Microsoft 365 more broadly outside of Teams remains otherwise unchanged.
 
 ### Is there any new capability coming with Dataverse for Teams to Power Automate rights included with Microsoft 365?
 
@@ -269,7 +273,7 @@ Yes. With Dataverse for Teams, users now can build flows using Power Automate ma
 
 ### Which Microsoft 365 subscriptions include Dataverse for Teams and Power Virtual Agents capabilities with Teams?
 
-Dataverse for Teams and Power Virtual Agents for Teams capabilities will be available as part of select Microsoft 365 subscriptions with Power Platform and Teams capabilities, excluding plans for US government environments (GCC, GCC High and DoD) and EDU A1 and SUB SKUs. For more information, see the [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
+Dataverse for Teams and Power Virtual Agents for Teams capabilities will be available as part of select Microsoft 365 subscriptions with Micrsoft Power Platform and Teams capabilities, excluding plans for US government environments (GCC, GCC High and DoD) and EDU A1 and SUB SKUs. For more information, see the [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 
 ### How is Dataverse for Teams environment created? 
 
@@ -294,7 +298,7 @@ A Dataverse for Teams environment is deleted when the associated Team is deleted
 
 When the environment capacity limits are reached (2GB per environment) new solutions (apps, chatbots, flows) can't be created or installed in that specific Dataverse for Teams environment.
 
-When the tenant capacity service limits are reached (grows with the # of eligible Office USLs in the tenant up to a max of 1TB or up to a max of 500 environments as explained [here](https://go.microsoft.com/fwlink/p/?linkid=2143567):
+When the tenant capacity service limits are reached (grows with the # of eligible Microsoft 365 USLs in the tenant as explained [here](https://go.microsoft.com/fwlink/p/?linkid=2143567):
 
 -	New apps, chatbots, flows, or tables cannot be created or installed in any Dataverse for Teams environment. 
 -	New Dataverse for Teams environments cannot be created in the tenant 
@@ -326,9 +330,6 @@ No. Dataverse for Teams provides support for approximately 1 million rows per te
 1.	Purchase Power Apps, Power Automate, and Power Virtual Agents subscriptions based on their needs and start building their new app, flow, or chatbot in a Dataverse environment.
 2.	[Upgrade](about-teams-environment.md#upgrade-process) the existing Dataverse for Teams environment to Dataverse in the Power Platform admin center and, if needed, purchase Power Apps, Power Automate, or Power Virtual Agents subscriptions based on their needs.
 
-> [!NOTE]
-> The capability to upgrade Dataverse for Teams environments to Dataverse environments isn’t available yet. Check back later for availability.
- 
 ### Can customers package and export their solution (app/flow/chatbots) built in Dataverse for Teams, and then import that into a Dataverse environment (assuming they have the corresponding license including access rights to Microsoft Dataverse)?
 
 This capability is not available yet, but is included in our roadmap.
@@ -342,7 +343,7 @@ This capability is not available yet, but is included in our roadmap.
 -	Governance and security
 
 > [!NOTE]
-> Accessing an environment with Dataverse requires all users to have a corresponding standalone Power Platform license for each service being utilized. For example, a user accessing an app running on Dataverse needs to be licensed by either the Power Apps per app or per user plan depending on the customer scenario.
+> Accessing an environment with Dataverse requires all users to have a corresponding standalone Microsoft Power Platform license for each service being utilized. For example, a user accessing an app running on Dataverse needs to be licensed by either the Power Apps per app or per user plan depending on the customer scenario.
 
 ### Why do I see Dataverse plan in select Microsoft 365 subscriptions? Is this related to Dataverse for Teams?
 
@@ -471,3 +472,25 @@ AI models available in public preview do not require paid AI Builder capacity. A
 
 ### Is a trial available for AI Builder?
 Users without an existing Power Apps or Power Automate license can access AI Builder trial capacity for 30 days by signing up for either a Power Apps or Power Automate trial. Existing Power Apps and Power Automate users can access AI Builder trial capacity for 30-days by signing into the respective service and accessing AI Builder in the left navigation pane.  
+
+## Power Automate RPA license
+
+### How can I apply unattended RPA licenses to my flows?
+
+Follow these steps to apply unattended RPA licenses to your flows.
+
+1. The tenant admin must purchase or get trial a version of the unattended RPA add-on capacity for the tenant. The tenant admin can do this from the [Microsoft 365 admin portal](https://admin.microsoft.com/AdminPortal/Home#/catalog). Just search the purchase services page for the add-on.
+  
+   ![get unattended license](./media/RPA-license/unattended-license-M365.JPG)
+  
+1. The environment admin must assign the available (paid or trial) unattended add-on capacities to a specific environment.
+  
+   ![manage unattended license](./media/RPA-license/unattended-license-manage.png)
+  
+1. Makers can now run unattended desktop flows within the environment that has the unattended capacity. 
+
+> [!NOTE]
+> The unattended add-on is environment-specific. So, if you have multiple environments that need to run unattended RPA, you need to assign add-on capacity to each of them. 
+> Also if you need to run multiple unattended desktop flows in parallel in a single environment, you need to assign the right number of unattended add-ons to the environment to support the flow runs.
+ 
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

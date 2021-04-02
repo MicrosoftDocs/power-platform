@@ -1,7 +1,7 @@
 ---
 title: "New Microsoft Dataverse storage capacity  | MicrosoftDocs"
 description: Introducing a new storage model for Microsoft Dataverse.
-ms.date: 12/18/2020
+ms.date: 02/11/2021
 ms.reviewer: ""
 ms.service: "power-platform"
 ms.topic: "quickstart"
@@ -18,7 +18,7 @@ search.app:
 
 # New Microsoft Dataverse storage capacity 
 
-If you purchased storage in or after April 2019, or you have a mix of storage purchases made before and after April 2019, you'll see your storage capacity entitlement and usage by database, file, and log as it appears in the Power Platform admin center today. 
+If you purchased storage in or after April 2019, or you have a mix of storage purchases made before and after April 2019, you'll see your storage capacity entitlement and usage by database, file, and log as it appears in the Microsoft Power Platform admin center today. 
 
 Data volume continues to grow exponentially, as businesses advance their digital transformation journey and bring data together across their organization. Modern business applications need to support new business scenarios, manage new data types, and help organizations with the increasing complexity of compliance mandates. To support the growing needs of today's organizations, data storage solutions need to evolve continuously and provide the right solution to support expanding business needs.
 
@@ -74,7 +74,7 @@ All tables of Dataverse, including system tables, are included in the storage ca
 
 |Number  |Description |
 |---------|---------|
-|(1)   |**Storage capacity usage**  <ul><li>**File and database**: The following tables store data in file and database storage: <ul><li>Attachment</li><li>AnnotationBase</li><li>Any custom or out-of-the-box table that has columns of datatype file or image (full size)</li><li>Any table that is used by one or more installed Insights applications and [ends in *- Analytics*](#what-are-tables-ending-in---analytics-in-my-capacity-report) </li> </ul></li><li>**Log**: The following tables are used: <ul><li>AuditBase</li><li>PlugInTraceLogBase</li></ul><li>**Database only**: All other tables are counted for your database</li></ul> |
+|(1)   |**Storage capacity usage**  <ul><li>**File and database**: The following tables store data in file and database storage: <ul><li>Attachment</li><li>AnnotationBase</li><li>Any custom or out-of-the-box table that has columns of datatype file or image (full size)</li><li>Any table that is used by one or more installed Insights applications and [ends in *- Analytics*](#what-are-tables-ending-in---analytics-in-my-capacity-report) </li> </ul></li><ul><li>WebResourceBase</li></ul><ul><li>RibbonClientMetadataBase</li></ul><li>**Log**: The following tables are used: <ul><li>AuditBase</li><li>PlugInTraceLogBase</li></ul><li>**Database only**: All other tables are counted for your database</li></ul>  |
 |(2)    |**Storage capacity, by source** <ul><li>**Org (tenant) default**: The default capacity given at the time of sign-up </li><li>**User licenses**: Additional capacity added for every user license purchased</li><li>**Additional storage**: Any additional storage you bought </li><li>**Total**: Total storage available </li><li>**View self-service sources**: See [View self-service license amounts and storage capacity](view-self-service-capacity.md)</li></ul>      |
 |(3)     |**Top storage usage, by environment**: The environments that consume the most capacity        |
 
@@ -84,11 +84,20 @@ The actual files such as .pdf (or any other file attachment type) are stored in 
 
 This page provides similar information as the **Summary** tab, but with an environment-level view of where your organization is using capacity.
 
-To view the **Storage capacity** page, select **Resources** > **Capacity** > **Storage capacity**. See the next section for using the **Details** button (![Storage data details button](media/storage-data-details-button.png "Storage data details button")) to see environment capacity analytics.
+To view the **Storage capacity** page, select **Resources** > **Capacity** > **Dataverse**. 
+
+Note the following features:
+
+|Feature  |Description  |
+|---------|---------|
+|Trial     | Select the **Trial** tab to list trial environments.        |
+|Download     | Select **Download** above the list of environments to download an Excel .CSV file with high-level storage information for each environment that the signed-in admin has permission to see in the Power Platform admin center.        |
+|Search     | Use **Search** to search by the environment name and the environment type.         |
+|Last updated   | The Last updated column shows when the environment was last updated.        |
+|Details  | See the next section for using the **Details** button (![Storage data details button](media/storage-data-details-button.png "Storage data details button")) to see environment capacity analytics.   |
 
 > [!div class="mx-imgBorder"] 
 > ![Storage data per environment details button](media/storage-data-per-environment2.png "Storage data per environment details button")
-
 
 > [!NOTE]
 > - The following environments don't count against capacity and are shown as 0 GB:
@@ -104,7 +113,7 @@ This page provides an environment-level detailed view of where your organization
 
 **To view environment-level capacity analytics**
 
-1. Select **Resources** > **Capacity** > **Storage capacity**.
+1. Select **Resources** > **Capacity** > **Dataverse**.
 2. Select an environment.
 3. Select **Details** (![Storage data details button2](media/storage-data-details-button.png "Storage data details button2")).
 
@@ -265,3 +274,6 @@ Tables ending in “– Analytics” are tables used by one or more Insights app
 [Automatic tuning in Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-automatic-tuning) <br />
 [What's new in storage](whats-new-storage.md) <br />
 [Free up storage space](free-storage-space.md) <br />
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

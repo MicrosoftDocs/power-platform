@@ -1,12 +1,13 @@
 ---
-title: "Supported email service configurations for server-side synchronization | MicrosoftDocs"
-description: Supported email service configurations for server-side synchronization
-author: jimholtz
+title: "Email service configurations supported by server-side synchronization"
+description: "Learn about the email service configurations supported by server-side synchronization when using customer engagement apps and Microsoft Power Platform."
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 10/09/2020
-ms.author: jimholtz
+author: revachauhan
+ms.author: rechauha
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
@@ -65,3 +66,6 @@ For most situations not supported by server-side synchronization, you can use th
 ### See also  
  [Server-side synchronization](server-side-synchronization.md)   
  [Set up server-side synchronization of email, appointments, contacts, and tasks](set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -48,7 +48,7 @@ You'll need to retrieve your Power Virtual Agents bot's content (topics and utte
 
 1.	In Microsoft Edge, select F12 to open DevTools. (Note: For other browsers, use comparable commands and functionality.)
 
-2.	[Sign in to your Power Virtual Agents environment](https://powerva.microsoft.com) using your Azure Active Directory (Azure AD) credentials. 
+2.	[Sign in to your Power Virtual Agents environment](https://web.powerva.microsoft.com) using your Azure Active Directory (Azure AD) credentials. 
 
 3.	Go to the **Network** tab.
     >[!div class="mx-imgBorder"]
@@ -371,3 +371,6 @@ You're ready to test your dispatcher to ensure seamless interaction between Dyna
 3.  Open the Bot Emulator where you add the name and endpoint to your bot.
     >[!div class="mx-imgBorder"]
     ![Dialog to create new bot in the bot emulator](media/dispatch-bot-emulator.png)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

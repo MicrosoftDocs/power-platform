@@ -25,3 +25,6 @@ Effective January 16, 2020, Microsoft Social Engagement was discontinued for all
 
 More information: [Frequently asked questions about Microsoft Social Engagement service discontinuation](https://docs.microsoft.com/dynamics365/social-engagement/eol/discontinuation-faq)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

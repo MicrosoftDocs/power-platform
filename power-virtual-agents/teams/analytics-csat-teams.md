@@ -72,3 +72,6 @@ The Average CSAT score chart provides a graphical view of the average of CSAT sc
 ## CSAT survey response rate chart
 
 The CSAT survey response rate chart shows the number of CSAT surveys that were presented and the percentage of surveys that were completed.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

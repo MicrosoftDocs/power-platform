@@ -138,3 +138,6 @@ The SolutionPackager tool can be used with any source control system. After a so
 ### See also  
  [Solution Component File Reference (SolutionPackager)](/powerapps/developer/common-data-service/solution-component-file-reference-solutionpackager)  
  [SolutionPackager tool](solution-packager-tool.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -19,7 +19,7 @@ search.app:
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-You can quickly get a real-time status of your Dynamics 365 and Microsoft 365 services. The dashboard on the Microsoft 365 Admin Center provides a comprehensive view of the service health of your online services. If users are having trouble signing in to Dynamics 365 apps, check this page to see if there is a service outage.
+You can quickly get a real-time status of your Dynamics 365 and Microsoft 365 services. The dashboard on the Microsoft 365 admin center provides a comprehensive view of the service health of your online services. If users are having trouble signing in to Dynamics 365 apps, check this page to see if there is a service outage.
   
 ## View a snapshot of service health  
 Browse to the [Microsoft 365 admin center](https://admin.microsoft.com/) and sign in using Global admin credentials. You can see a quick snapshot of service health for some of your Microsoft 365 services.  Select **Service health** (from the menu: **Health** > **Service health**) to get more information on all your services.  
@@ -49,3 +49,6 @@ Select the **Message center** on your home dashboard (from the menu: **Health** 
 ### See also  
 [Get Help + Support](get-help-support.md) <br />
 [Microsoft Dataverse analytics](analytics-common-data-service.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

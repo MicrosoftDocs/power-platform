@@ -92,3 +92,6 @@ Select a data source, and then select **Check status** (![Data source status](me
 ### See also
  [On-premises data gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-onprem)<br/>
  [Connecting to on-premises data sources with On-premises Data Gateway](https://docs.microsoft.com/azure/analysis-services/analysis-services-gateway)<br/>
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

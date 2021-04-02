@@ -56,3 +56,6 @@ For information on picking a synchronization method, see [Integrate your email s
   
 ### See also  
  [Forward mailbox vs. individual mailboxes](../admin/forward-mailbox-vs-individual-mailboxes.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

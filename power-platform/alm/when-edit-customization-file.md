@@ -99,3 +99,6 @@ The customizations.xml file that is exported as part of an unmanaged solution ca
  [SiteMap schema](/dynamics365/customer-engagement/developer/customize-dev/sitemap-schema)  
  [Form XML schema](/powerapps/developer/model-driven-apps/form-xml-schema)  
  [Schema Support for the Customization File](/powerapps/developer/model-driven-apps/edit-customizations-xml-file-schema-validation)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

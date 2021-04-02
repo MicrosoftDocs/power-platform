@@ -2,11 +2,10 @@
 title: "Enable the hybrid experience  | MicrosoftDocs"
 description: Some features are not yet present in Unified Interface but can be enabled for display as legacy dialogs in Unified Interface through the hybrid experience.
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/02/2020
+ms.date: 02/17/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -39,9 +38,13 @@ The following features are not yet present in Unified Interface but can be enabl
 
 These features are enabled through a setting in System Settings.
 
-1. In the web app, go to **Settings** > **Administration** > **System Settings**.  
-2. Select the **General** tab.  
-3. Set **Enable embedding of certain legacy dialogs in Unified Interface browser client** to **Yes**.
+1. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+
+2. Select **Settings** > **Administration**.
+
+3. Select **System Settings**, and then select the **General** tab. 
+
+4. Set **Enable embedding of certain legacy dialogs in Unified Interface browser client** to **Yes**.
 
 ![Enable hybrid experience](media/hybrid-system-settings.png "Enable hybrid experience")
 
@@ -59,3 +62,6 @@ If you disable the hybrid experience, these commands are not available in the co
 
 ### See also  
  [Unified Interface](about-unified-interface.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

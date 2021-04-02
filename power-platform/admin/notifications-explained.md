@@ -1,13 +1,14 @@
 ---
 title: "Notifications for Business Application Group services  | MicrosoftDocs"
-description: CNotifications for Business Application Group services
-author: astockli
-manager: timrob
+description: Notifications for Business Application Group services
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/08/2020
+ms.date: 02/01/2021
 ms.author: astockli
+author: astockli
+manager: timrob
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
@@ -29,7 +30,7 @@ The [Microsoft 365 Message Center](https://docs.microsoft.com/office365/admin/ma
 The [Service health dashboard](https://docs.microsoft.com/office365/enterprise/view-service-health) will show the latest status of updates and incidents regarding your service. To learn how to get to the Microsoft 365 Service health dashboard, see [Check your service health](check-online-service-health.md). 
 
 ## Email notifications
-The notifications sent from the Business Application Group communications team will be for the following services and email addresses.  Please be sure to check your spam folder for these messages.
+The notifications sent from the Business Application Group communications team will be for the following services and email addresses.  Be sure to check your spam folder for these messages.
 
 |Service | Notification Email | 
 | ------------- | -------------| 
@@ -60,17 +61,9 @@ Planned maintenance includes updates and changes to the service to provide incre
 ![Planned and unplanned maintenance banner](../admin/media/Maintenance-Notification-Banner.png "Maintenance Notification Banner")
 
 ## Communications for releases, package deployments, and awareness
-Communications can be informational in nature, drive specific actions, or both. The target audience for these communications are System Administrators or individuals designated to run the service. You can easily identify these by the light-blue banner.
+Communications can be informational in nature, drive specific actions, or both. The target audience for these communications is System Administrators or individuals designated to run the service. You can easily identify these by the light-blue banner.
 
-![General awareness email banner](../admin/media/Customer-Notification-Banner.png "Customer Notification Banner") 
- 
-Power BI will display with the following yellow banner:
- 
-![Power BI](../admin/media/PowerBI-banner.png "Power BI") 
- 
- Power Apps/Power Automate will display with the following purple banner:
- 
-![Power Apps](../admin/media/PowerApps-Banner.png "PowerApps") 
+![General awareness email banner](../admin/media/Proactive-Banner.jpg "Proactive Banner") 
 
 ## Action requested communications 
 Action requested notifications are sent when we detect that a configuration or a setting for your environment is causing the service to perform below expectations. The notification will include details on the situation as well as guidance on how to return performance to normal.
@@ -83,3 +76,6 @@ You can easily identify these communications by the dark-blue banner.
 ![Post-purchase email banner](../admin/media/post-purchase-banner.png "Post-purchase email banner")  
  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

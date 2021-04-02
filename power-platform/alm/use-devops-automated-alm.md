@@ -29,3 +29,5 @@ For this scenario, you should:
 ### See also
 
 [Microsoft Power Platform Build Tools for Azure DevOps](devops-build-tools.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

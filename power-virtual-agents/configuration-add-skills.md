@@ -51,7 +51,7 @@ Before registering the skill, provide the bot's ID to your skills developer to a
 
 **Add bot to skill's allow list:**
 
-1. In the [Power Virtual Agents portal](https://powerva.microsoft.com), on the side navigation pane, expand the **Manage** menu and select **Skills**.
+1. In the [Power Virtual Agents portal](https://web.powerva.microsoft.com), on the side navigation pane, expand the **Manage** menu and select **Skills**.
 
    ![Select Manage, then Skills](media/skills-menu.png)
 
@@ -66,7 +66,7 @@ Before registering the skill, provide the bot's ID to your skills developer to a
 
 **Enter the skill manifest URL to add a skill to your bot:**
 
-1. In the [Power Virtual Agents portal](https://powerva.microsoft.com), on the side navigation pane, expand the **Manage** menu and select **skills**.
+1. In the [Power Virtual Agents portal](https://web.powerva.microsoft.com), on the side navigation pane, expand the **Manage** menu and select **skills**.
 
    ![Select Manage, then skills](media/skills-menu.png)
 
@@ -103,3 +103,6 @@ It looks like something went wrong.<br/>(`AADERROR_OTHER`)|There was a transient
 Something went wrong while checking your skill. <br/>(`ENDPOINT_HEALTHCHECK_FAILED`, `HEALTH_PING_FAILED`) | Check if your skill endpoint is online and responding to messages.|
 This skill has not allow-listed your bot <br/>(`ENDPOINT_HEALTHCHECK_UNAUTHORIZED`) | Check if your bot has been added to the skills allowlist. [Learn more about adding a skill to the allowlist](https://go.microsoft.com/fwlink/?linkid=2123431). |
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

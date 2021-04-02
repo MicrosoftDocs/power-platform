@@ -5,8 +5,8 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/11/2021
-author: jayasreekumar
-ms.author: jkumar
+author: jimholtz
+ms.author: jimholtz
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
 search.audienceType: 
@@ -39,3 +39,6 @@ For information about how to create a team template, enable an table for system-
  [Create a team template and add to an table form](create-team-template-add-entity-form.md)   
  [Manage teams](manage-teams.md)    
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

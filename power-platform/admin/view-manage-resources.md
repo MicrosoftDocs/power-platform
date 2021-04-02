@@ -1,8 +1,7 @@
 ---
-title: "Overview | MicrosoftDocs"
+title: "Resource overview | MicrosoftDocs"
 description: About resources
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
@@ -16,7 +15,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Overview
+# Resource overview
 
 <!-- This was created for fwlink 2126968. Don't delete. -->
 
@@ -32,3 +31,6 @@ See the following topics:
 - [Manage Power Apps](admin-manage-apps.md)
 - [Manage Power Automate flows](manage-power-automate.md)
 - [Portal administration with Power Platform admin center](https://docs.microsoft.com/powerapps/maker/portals/admin/power-platform-admin-center) 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -36,7 +36,7 @@ In this model, you create central teams of product owners who own the low-code d
 
 With this model, you create a central team that can pick up development of apps based on organizational priorities. Additionally, because they would have foundational expertise in Power Apps, your team will include members who specialize in specific parts of Microsoft Power Platform such as Power Automate, Power BI, and the Power Apps component framework, or they could specialize in third-party integration and artificial intelligence. This model is an effective way to drive change across your organization and is the best way to deliver any type of application.
 
-Here is a digital briefing from Schlumberger depicting this type of model having grown through both decentralized and matrixed models. Learn more about how Schlumberger is adopting the Power Platform: [Prolific app maker ignites low code revolution at Schlumberger](https://powerapps.microsoft.com/blog/schlumberger/)
+Here is a digital briefing from Schlumberger depicting this type of model having grown through both decentralized and matrixed models. Learn more about how Schlumberger is adopting Microsoft Power Platform: [Prolific app maker ignites low code revolution at Schlumberger](https://powerapps.microsoft.com/blog/schlumberger/)
 
 | Type of application delivery | Delivery model type | Build time of the application | Lifetime of the application | Examples | IT engagement |
 |---|----|----|---|----|----|
@@ -55,3 +55,6 @@ This team should also consider the notion of a Center of Excellence to manage th
 ## BizDevOps
 
 Rapid app development can only happen at the speed that operations such as IT can support the apps created. BizDevOps is a holistic relationship between app makers and operations that works in a virtuous loop. For this to work, all teams need to have a clear vision of the digital culture the organization is moving toward. To get the maximum value from the apps created, they need reliable support, governance, and maintainability. As technology evolves, updates will need to be made on the apps to keep them current. Not only being aware of change, but having a plan for managing it, is a key to successful apps.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

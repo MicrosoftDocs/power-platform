@@ -30,7 +30,7 @@ There are three stages for using capacity add-ons:
 
 ## View capacity add-ons in Power Platform admin center
 
-If your organization has purchased capacity add-ons, an **Add-ons** tile appears on the **Capacity** screen in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). Sign into the Admin center, and select **Resources** > **Capacity** in the left-side navigation pane.
+If your organization has purchased capacity add-ons, an **Add-ons** tile appears on the **Capacity** screen in the Microsoft [Power Platform admin center](https://admin.powerplatform.microsoft.com/). Sign into the admin center, and select **Resources** > **Capacity** in the left-side navigation pane.
 
 The **Add-ons** tile shows summary information about the capacity add-ons that your organization has.
 
@@ -84,3 +84,6 @@ The following admins will be able to allocate add-on capacity in the Power Platf
 
 ### See also
 [About Power Apps per app plans](about-powerapps-perapp.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

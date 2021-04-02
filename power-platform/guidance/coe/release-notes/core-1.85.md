@@ -19,8 +19,6 @@ search.app:
 
 # Released version Core Components 1.85
 
-## Introduction
-
 Version 1.85 for the CoE Starter Kit Core Components is now available. This article describes the updates, including the new features and the fixes to existing functionality, included in this release. This version was first made available on February 1, 2021.
 
 ## Tables
@@ -30,3 +28,6 @@ A new column, *Exclude From Archive* has been added to the PowerApps App and Flo
 ## Apps
 
 The DLP Editor v2 canvas app has been added. This canvas app reads and updates data loss prevention (DLP) policies while showing a list of apps and flows that are impacted by the policy configurations.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

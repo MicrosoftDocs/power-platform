@@ -20,7 +20,7 @@ search.app:
 # Microsoft Power Platform Build Tools for Azure DevOps
 
 Use Microsoft Power Platform Build Tools to automate common build and deployment tasks related
-to apps built on the Power Platform. These tasks include: 
+to apps built on Microsoft Power Platform. These tasks include: 
 
 <ul><li>Synchronization of solution metadata (also known as
 solutions) that contains the various platform components such as customer engagement apps (Dynamics 365 Sales, Customer Service, Field Service, Marketing, and Project Service Automation), canvas apps, model-driven apps, UI flows, virtual agents, AI Builder models, and connectors between development environments and source control</li></ul>
@@ -46,7 +46,7 @@ that teams commonly put in place include Initiate, Export from Dev, Build, and R
 
 Microsoft Power Platform Build Tools are a collection of Power Platform&ndash;specific Azure DevOps
 build tasks that eliminate the need to manually download custom tooling and
-scripts to manage the application lifecycle of apps built on the Power Platform. The tasks can be used
+scripts to manage the application lifecycle of apps built on Microsoft Power Platform. The tasks can be used
 individually to perform a simple task, such as importing a solution into a
 downstream environment, or used together in a pipeline to orchestrate a
 scenario such as "generate a build artifact", "deploy to test", or "harvest maker
@@ -75,20 +75,20 @@ searching for "Power Platform".
 
 ## Connection to environments
 
-To interact with the Power Platform environment, a connection must be established that enables the various build tool tasks to perform the required actions. Two types of connections are available:
+To interact with the Microsoft Power Platform environment, a connection must be established that enables the various build tool tasks to perform the required actions. Two types of connections are available:
 
 - Username/password: Configured as a generic service connection with username and password. Note that username/password does not support multi-factor authentication.
 - Service principal and client secret: (recommended) This connection type uses service principal based authentication and supports multi-factor authentication.
 
 ## Configure service connections using a service principal
 
-To configure a connection using service principal, you must first create an application registration in Azure Active Directory (AAD) with the required permissions and then create the associated Application User in the Power Platform environment you want to connect to. We have offered a script to facilitate some of the steps required in the section below, while detailed information with manual step-by-step instructions are available [here](https://docs.microsoft.com/powerapps/developer/common-data-service/use-single-tenant-server-server-authentication#azure-application-registration).
+To configure a connection using service principal, you must first create an application registration in Azure Active Directory (AAD) with the required permissions and then create the associated Application User in the Microsoft Power Platform environment you want to connect to. We have offered a script to facilitate some of the steps required in the section below, while detailed information with manual step-by-step instructions are available [here](https://docs.microsoft.com/powerapps/developer/common-data-service/use-single-tenant-server-server-authentication#azure-application-registration).
 
 ### Create service principal and client secret using PowerShell
 
 This PowerShell script assists in creating and configuring the service principal to be used with the Microsoft Power Platform Build Tools tasks. It first registers an Application object and corresponding Service Principal Name (SPN) in AAD.
 
-This application is then added as an administrator user to the Power Platform tenant itself.
+This application is then added as an administrator user to the Microsoft Power Platform tenant itself.
 
 **Installation**
 
@@ -122,7 +122,7 @@ Use the information displayed to configure the Power Platform service connection
 
 
 ### Configure environment with the Application ID
-The Application ID must be added as an Application User in the Power Platform environment you are connecting to. Information on how to add an application user is available [here](https://docs.microsoft.com/powerapps/developer/common-data-service/use-single-tenant-server-server-authentication#application-user-creation) 
+The Application ID must be added as an Application User in the Microsoft Power Platform environment you are connecting to. Information on how to add an application user is available [here](https://docs.microsoft.com/powerapps/developer/common-data-service/use-single-tenant-server-server-authentication#application-user-creation) 
 
 Ensure that the added Application User has the system administrator role assigned (available from “Manage Roles” in the security settings for the application user).
 
@@ -155,3 +155,6 @@ Ensure that the added Application User has the system administrator role assigne
 ### See Also
 
 [Build tool tasks](devops-build-tool-tasks.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

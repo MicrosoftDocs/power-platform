@@ -1,12 +1,13 @@
 ---
 title: "Connect to Exchange Server (on-premises) | MicrosoftDocs"
 description: Connect to Exchange Server (on-premises)
-author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/12/2020
-ms.author: jimholtz
+ms.date: 02/17/2021
+author: revachauhan
+ms.author: rechauha
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
@@ -25,7 +26,6 @@ With version 9.0., you can connect your customer engagement apps (Dynamics 365 S
 
  Check out the following white paper: [Setup Guide: Server-side synchronization for CRM Online and Exchange Server](https://download.microsoft.com/download/E/D/0/ED05CA70-190F-4BAE-9F6A-0BB2F0010B81/Setup%20Guide%20Server-side%20synchronization%20for%20CRM%20Online%20and%20Exchange%20Server.pdf)  
 
-<a name="BKMK_PreReq"></a>   
 ## Prerequisites  
 
 1. **Exchange Server**. The following versions are supported: [!INCLUDE[pn_Exchange_Server_2013_short](../includes/pn-exchange-server-2013-short.md)] SP1, [!INCLUDE[pn_exchange_server_2016_short](../includes/pn-exchange-server-2016-short.md)], or Exchange Server 2019.  
@@ -51,11 +51,9 @@ With version 9.0., you can connect your customer engagement apps (Dynamics 365 S
 > [!TIP]
 >  To make sure you've got a good connection to [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] on-premises run the [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/). For information on what tests to run, see [Test mail flow with the Remote Connectivity Analyzer](https://technet.microsoft.com/library/dn305950\(v=exchg.150\).aspx).  
 
-<a name="BKMK_CreateProfile"></a>   
-
 ## Create an email server profile  
 
-1. In the Power Platform admin center, select an environment. 
+1. In the Microsoft Power Platform admin center, select an environment. 
 
 2. Select **Settings** > **Email** > **Server profiles**.  
 
@@ -89,7 +87,6 @@ With version 9.0., you can connect your customer engagement apps (Dynamics 365 S
 
 6. Select **Test Connection** and review the results. To diagnose issues, see the following section.  
 
-<a name="BKMK_TroubleshootHybrid"></a>   
 ### Troubleshooting the Exchange Server (Hybrid) profile connection  
  If you've run **Test Connection** and have issues with the Exchange Server (Hybrid) profile connection, use the information in the **Test Connection** dialog box to diagnose and fix the connection.  
 
@@ -98,8 +95,6 @@ With version 9.0., you can connect your customer engagement apps (Dynamics 365 S
  In this case, there's a problem with Auto Discover. The admin should review the user name and password used for **Authentication Using Impersonation** for the Exchange Server (Hybrid) profile.  
 
  You can find information on recurring issues and other troubleshooting information in [Blog: Test and Enable Mailboxes in Microsoft Dynamics CRM 2015](https://blogs.msdn.com/b/crm/archive/2015/08/31/test-and-enable-mailboxes-in-microsoft-dynamics-crm-2015.aspx) and [Troubleshooting and monitoring server-side synchronization](../admin/troubleshooting-monitoring-server-side-synchronization.md).  
-
-<a name="BKMK_ConfigDefaultProcess"></a>   
 
 ## Configure default email processing and synchronization  
  Set server-side synchronization to be the default configuration method.  
@@ -122,8 +117,6 @@ With version 9.0., you can connect your customer engagement apps (Dynamics 365 S
 
 4. Select **Save**.  
 
-<a name="BKMK_ConfigMailbox"></a>   
-
 ## Configure mailboxes  
  To set mailboxes to use the default profile, you must first set the Server Profile and the delivery method for email, appointments, contacts, and tasks.  
 
@@ -133,11 +126,13 @@ With version 9.0., you can connect your customer engagement apps (Dynamics 365 S
 
 ### Set mailboxes to the default profile  
 
-1. In the web app, go to **Settings** > **Email Configuration** > **Mailboxes**.  
+1. In the Power Platform admin center, select an environment. 
 
-2. Select **Active Mailboxes**.  
+2. Select **Settings** > **Email** > **Mailboxes**.  
 
-3. Select all the mailboxes that you want to associate with the [!INCLUDE[pn_Exchange_Server_short](../includes/pn-exchange-server-short.md)] profile you created, select **Apply Default Email Settings**, verify the settings, and then select **OK**.  
+3. Select **Active Mailboxes**.  
+
+4. Select all the mailboxes that you want to associate with the [!INCLUDE[pn_Exchange_Server_short](../includes/pn-exchange-server-short.md)] profile you created, select **Apply Default Email Settings**, verify the settings, and then select **OK**.  
 
    ![Apply default email settings](../admin/media/apply-default-email-settings.png "Apply default email settings")  
 
@@ -145,42 +140,44 @@ With version 9.0., you can connect your customer engagement apps (Dynamics 365 S
 
 ### Edit mailboxes to set the profile and delivery methods  
 
-1. In the web app, go to **Settings** > **Email Configuration** > **Mailboxes**.  
+1. In the Power Platform admin center, select an environment. 
 
-2. Select **Active Mailboxes**.  
+2. Select **Settings** > **Email** > **Mailboxes**.  
 
-3. Select the mailboxes that you want to configure, and then select **Edit**.  
+3. Select **Active Mailboxes**.  
 
-4. In the **Change Multiple Records** form, under **Synchronization Method**, set **Server Profile** to the [!INCLUDE[pn_Exchange_Server_short](../includes/pn-exchange-server-short.md)] profile you created earlier.  
+4. Select the mailboxes that you want to configure, and then select **Edit**.  
 
-5. Set **Incoming** and **Outgoing** **Email** to **Server-Side Synchronization or Email Router**.  
+5. In the **Change Multiple Records** form, under **Synchronization Method**, set **Server Profile** to the [!INCLUDE[pn_Exchange_Server_short](../includes/pn-exchange-server-short.md)] profile you created earlier.  
 
-6. Set **Appointments, Contacts, and Tasks** to **Server-Side Synchronization**.  
+6. Set **Incoming** and **Outgoing** **Email** to **Server-Side Synchronization or Email Router**.  
 
-7. Select **Change**.  
+7. Set **Appointments, Contacts, and Tasks** to **Server-Side Synchronization**.  
 
-<a name="BKMK_ApproveEmail"></a>   
+8. Select **Change**.  
 
 ## Approve email  
  You need to approve each user mailbox or queue before that mailbox can process email.  
 
-1.  In the web app, go to **Settings** > **Email Configuration** > **Mailboxes**.  
+1. In the Power Platform admin center, select an environment. 
 
-2.  Select **Active Mailboxes**.  
+2. Select **Settings** > **Email** > **Mailboxes**.  
 
-3.  Select the mailboxes that you want to approve, and then select **More Commands** (**…**) > **Approve Email**.  
+3. Select **Active Mailboxes**.  
 
-4.  Select **OK**.  
+4. Select the mailboxes that you want to approve, and then select **More Commands** (**…**) > **Approve Email**.  
 
-<a name="BKMK_TestMailboxConfig"></a>   
+5. Select **OK**.  
 
 ## Test configuration of mailboxes  
 
-1. Go to **Settings** > **Email Configuration** > **Mailboxes**.  
+1. In the Power Platform admin center, select an environment. 
 
-2. Select **Active Mailboxes**.  
+2. Select **Settings** > **Email** > **Mailboxes**.  
 
-3. Select the mailboxes you want to test, and then select **Test & Enable Mailboxes**.  
+3. Select **Active Mailboxes**.  
+
+4. Select the mailboxes you want to test, and then select **Test & Enable Mailboxes**.  
 
     This tests the incoming and outgoing email configuration of the selected mailboxes and enables them for email processing. If an error occurs in a mailbox, an alert is shown on the Alerts wall of the mailbox and the profile owner. Depending on the nature of the error, customer engagement apps try to process the email again after some time or disables the mailbox for email processing.  
 
@@ -188,8 +185,6 @@ With version 9.0., you can connect your customer engagement apps (Dynamics 365 S
 
 > [!TIP]
 >  If you're unable to synchronize contacts, appointments, and tasks for a mailbox, you may want to select the **Sync items with Exchange from this org only, even if Exchange was set to sync with a different org** check box. [Read more about this check box](when-would-want-use-check-box.md).  
-
-<a name="BKMK_TestAllMailbox"></a>   
 
 ## Test email configuration for all mailboxes associated with an email server profile  
 
@@ -210,3 +205,6 @@ With version 9.0., you can connect your customer engagement apps (Dynamics 365 S
  [Server-side synchronization](../admin/server-side-synchronization.md)   
  [Autodiscover service](https://technet.microsoft.com/library/bb124251\(v=exchg.150\).aspx)   
  [Managing the Autodiscover Service](https://technet.microsoft.com/library/aa995956\(v=exchg.141\).aspx)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

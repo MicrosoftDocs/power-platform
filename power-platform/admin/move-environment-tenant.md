@@ -2,19 +2,17 @@
 title: "Tenant to tenant migration  | MicrosoftDocs"
 description: Information on tenant to tenant migration 
 ms.custom: ""
-ms.date: 01/19/2020
-ms.reviewer: ""
+ms.date: 02/04/2021
 ms.service: power-platform
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 applies_to: 
   - "Dynamics 365 (online)"
-author: "jimholtz"
+author: jimholtz
+ms.author: jimholtz
+ms.reviewer: ""
 ms.assetid: 
-caps.latest.revision: 63
-ms.author: "jimholtz"
-manager: kvivek
 search.audienceType: 
   - admin
 search.app:
@@ -55,6 +53,14 @@ You will need to create a temporary environment or environments in the destinati
 
 The destination tenant needs an equal or higher number of active user licenses, environment licenses for the environments being migrated, and equal or greater storage as the source tenant.
 
+### Additional considerations
+
+After moving environments to another tenant:
+
+- The environment ID in the target tenant cannot be set to the same environment ID as in the source tenant. This is not supported. 
+- The org URL, org ID, and the name do not change. 
+- Security group mapping is handled as part of the manual tenant to tenant migration process. At the very least, a replacement (or removal) will be needed because the security group won’t exist with the same ID in the new Azure AD tenant. 
+
 ## How the move works
 
 You’ll be provided with a list of prerequisites and post-requisites for your migration as part of the support request raised. The following table describes what Microsoft does before, during, and after your move.
@@ -66,3 +72,6 @@ You’ll be provided with a list of prerequisites and post-requisites for your m
 
 We will adhere to the terms of the [Microsoft Online Services Service Level Agreement](https://go.microsoft.com/fwlink/p/?LinkID=523897) for all moves.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

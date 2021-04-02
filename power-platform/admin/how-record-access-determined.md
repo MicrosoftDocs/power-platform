@@ -5,8 +5,8 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
 ms.date: 09/11/2020
-author: jayasreekumar
-ms.author: jkumar
+author: jimholtz
+ms.author: jimholtz
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
 search.audienceType: 
@@ -124,3 +124,6 @@ In this case, the user would have access to the record if both of the following 
 [Security roles and privileges](security-roles-privileges.md) <br />
 [Create users and assign security roles](create-users-assign-online-security-roles.md) <br />
 [Create or edit a security role to manage access](create-edit-security-role.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

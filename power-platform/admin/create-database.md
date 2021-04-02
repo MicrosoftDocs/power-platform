@@ -18,13 +18,20 @@ search.app:
 ---
 # Add a Microsoft Dataverse database
 
+>[!IMPORTANT]
+>**March 2021 Power Automate Desktop preview users**:
+>- [Power Automate Desktop](/power-automate/desktop-flows/introduction) can be used either with a [Microsoft account](https://docs.microsoft.com/power-automate/desktop-flows/getting-started-msa), or a work or school account.
+>- If you use **Microsoft Teams with a work or school account**, you can [create a Dataverse database](https://docs.microsoft.com/power-automate/desktop-flows/create-database) to use with Power Automate Desktop for the preview.
+>- A Dataverse database isn't required if you sign into Power Automate Desktop with a Microsoft account.
+
+
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 You can create a database and build apps by using Dataverse as a data store. You can either create your own custom entities or use the predefined entities. To create a database, you first need to either create an environment, or be assigned to an existing environment as an **Environment Admin**. In addition, you must be assigned the appropriate license. For information on purchasing a plan for using Dataverse, see [Pricing info](pricing-billing-skus.md).
 
 There are various ways to add or create a database:
 
-- In the Power Platform admin center
+- In the Microsoft Power Platform admin center
 - In the **Entities** pane of powerapps.com
 
 > [!NOTE]
@@ -72,3 +79,6 @@ To create a database, you must be an administrator in the selected environment, 
 
 ## Privacy notice
 With the Microsoft Power Apps Common Data Model we collect and store custom entity and field names in our diagnostic systems.  We use this knowledge to improve the Common Data Model for our customers. The entity and field names that Creators create help us understand scenarios that are common across the Microsoft Power Apps community and ascertain gaps in the service’s standard entity coverage, such as schemas related to organizations. The data in the database tables associated with these entities is not accessed or used by Microsoft or replicated outside of the region in which the database is provisioned. Note, however, the custom entity and field names may be replicated across regions and are deleted in accordance with our data retention policies. Microsoft is committed to your privacy as described further in our [Trust Center](https://www.microsoft.com/trustcenter/Privacy/default.aspx).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

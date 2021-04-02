@@ -55,7 +55,7 @@ Related tutorials: [Get started](github-actions-start.md), and [Build a model-dr
 
     ![New secret](../media/github-actions-tutorial/gh-lab-2.50.png "New secret")
 
-2. On the secrets page, name the secret ‘password’. Type the password for the username you are using to connect to Power Platform into the **Value** field and select **Add secret**. The password will be referenced in the YML files used to define the GitHub workflows later in this lab.
+2. On the secrets page, name the secret ‘password’. Type the password for the username you are using to connect to Microsoft Power Platform into the **Value** field and select **Add secret**. The password will be referenced in the YML files used to define the GitHub workflows later in this lab.
 
     ![Create secret](../media/github-actions-tutorial/gh-lab-2.60.png "Create secret")
 
@@ -253,3 +253,6 @@ Congratulations, you have successfully setup a sample CI/CD workflow using GitHu
 ### See Also
 
 [Automate your workflow from idea to production](https://github.com/features/actions)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

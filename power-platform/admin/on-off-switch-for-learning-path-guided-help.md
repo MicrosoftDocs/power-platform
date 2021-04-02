@@ -51,3 +51,6 @@ This setting changes access to Learning Path for an entire organization.
 ### See also  
  [Create guided help (Learning Path) for your app](/powerapps/maker/model-driven-apps/create-guided-help-learning-path)   
  [Video: Learning Path in-app Help designer for customers and partners](https://go.microsoft.com/fwlink/p/?linkid=723184)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

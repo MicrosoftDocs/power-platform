@@ -33,7 +33,7 @@ Follow these steps.
 
 4. Select an activity, click outside the search window to close it, and then select **Search**.
 
-Within the Audit log search screen, Power Platform admins can search audit logs across many popular services including eDiscovery, Exchange, Power BI, Azure AD, Microsoft Teams, customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), and Power Platform. 
+Within the Audit log search screen, Power Platform admins can search audit logs across many popular services including eDiscovery, Exchange, Power BI, Azure AD, Microsoft Teams, customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), and Microsoft Power Platform. 
 
 Once the Audit log search screen is accessed, an administrator can filter for specific activities by pulling down the **Activities** dropdown. By scrolling down the list, a section dedicated to Microsoft Power Platform activities can be found. 
 
@@ -158,3 +158,6 @@ Here’s what the Additional Info JSON might look like for an “Update” opera
 
 ### See also
 [Data loss prevention policies](wp-data-loss-prevention.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

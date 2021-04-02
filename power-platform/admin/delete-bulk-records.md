@@ -36,7 +36,7 @@ With bulk deletion you can perform the following operations:
 - Schedule the start time of a recurring bulk delete.   
 - Retrieve the information about the failures that occurred during a bulk deletion.  
 
-These settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Data management** > **Bulk deletion**.
+These settings can be found in the Microsoft Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Data management** > **Bulk deletion**.
 
 Make sure you have the System Administrator or System Customizer security role or equivalent permissions to update the setting.
 
@@ -55,3 +55,6 @@ For information about how to implement bulk delete in code, see [Delete data in 
 ### See also  
  [Manage your data](add-remove-sample-data.md)   
  [Data Encryption](data-encryption.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

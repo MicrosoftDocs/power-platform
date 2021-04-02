@@ -28,7 +28,7 @@ You can also download and view chat transcripts in the Power Apps portal.
 Lastly, you can manage the retention period for transcripts. This can be useful if you want to increase the date range from 30 days to something else.
 
 >[!NOTE]
->If you no longer have access to your environment, you'll need to [create a support request](https://admin.powerplatform.microsoft.com/support) in the Power Platform admin center.
+>If you no longer have access to your environment, you'll need to [create a support request](https://admin.powerplatform.microsoft.com/support) in the Microsoft Power Platform admin center.
 
 ## Prerequisites
 
@@ -167,3 +167,6 @@ The following instructions describe how to set a job to delete transcripts that 
     ![The list of bulk delete jobs, now showing the new job just created](media/sessions-job-ready.png)
  
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

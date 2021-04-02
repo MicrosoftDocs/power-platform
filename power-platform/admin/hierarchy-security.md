@@ -70,7 +70,7 @@ The hierarchy security model is an extension to the existing security models tha
 > In order for the user at the higher position to see all the lower position user's records, the lower position user must have an 'enabled' user status. The higher position user will not be able to see the 'disabled' lower position user's records.
   
 ## Set up hierarchy security  
-These settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Users + Permissions** > **Hierarchy security**.
+These settings can be found in the Microsoft Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Users + Permissions** > **Hierarchy security**.
 
 Make sure you have the System Administrator or System Customizer security role or equivalent permissions to update the setting.
 
@@ -145,3 +145,6 @@ Make sure you have the System Administrator or System Customizer security role o
  [Query and visualize hierarchical data](https://docs.microsoft.com/dynamics365/customer-engagement/customize/query-visualize-hierarchical-data)   
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

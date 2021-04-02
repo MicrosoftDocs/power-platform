@@ -1,12 +1,13 @@
 ---
 title: "When would I want to use this check box?  | MicrosoftDocs"
 description: When would I want to use this check box?
-author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/11/2020
-ms.author: jimholtz
+author: revachauhan
+ms.author: rechauha
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
@@ -45,3 +46,6 @@ search.app:
   
 ### See also  
  [Set up server-side synchronization of email, appointments, contacts, and tasks](set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

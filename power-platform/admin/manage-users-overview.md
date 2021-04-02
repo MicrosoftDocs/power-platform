@@ -1,6 +1,6 @@
 ---
-title: Overview | Microsoft Docs
-description: Manage users overview
+title: Manage users overview | Microsoft Docs
+description: Overview
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
@@ -15,6 +15,8 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Overview
+# Manage users overview
 
 The configure user security content is available in the [Manage users](grant-users-access.md) section.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

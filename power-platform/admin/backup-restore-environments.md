@@ -35,7 +35,7 @@ About **system backups**:
   
 ### Restore a system backup  
   
-1. Browse to the Power Platform admin center and sign in using administrator credentials. Consider using the less privileged service admin role instead of the global admin role. See [Use the service admin role to manage your tenant](use-service-admin-role-manage-tenant.md).
+1. Browse to the Microsoft Power Platform admin center and sign in using administrator credentials. Consider using the less privileged service admin role instead of the global admin role. See [Use the service admin role to manage your tenant](use-service-admin-role-manage-tenant.md).
   
 2. Go to **Environments** > [select an environment] > **Backups** > **Restore or manage**.
   
@@ -202,4 +202,7 @@ Only sandbox environments can be restored to.
 [Automatic environment cleanup](automatic-environment-cleanup.md) <br />
 [Manage sandbox environments](sandbox-environments.md) <br />
 [Environments overview](environments-overview.md) <br />
-[Licensing overview for Power Platform](pricing-billing-skus.md)
+[Licensing overview for Microsoft Power Platform](pricing-billing-skus.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

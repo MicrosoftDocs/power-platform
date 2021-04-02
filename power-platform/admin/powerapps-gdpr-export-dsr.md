@@ -23,7 +23,7 @@ search.app:
 
 The "right of data portability" allows a data subject to request a copy of his or her personal data in an electronic format (that is, a structured, commonly used, machine readable and interoperable format) that may be transmitted to another data controller:
 
-* Website access: [Power Apps portal](https://make.powerapps.com), [Power Platform admin center](https://admin.powerplatform.microsoft.com/), and [Microsoft 365 Service Trust Portal](https://servicetrust.microsoft.com/)
+* Website access: [Power Apps portal](https://make.powerapps.com), [Microsoft Power Platform admin center](https://admin.powerplatform.microsoft.com/), and [Microsoft 365 Service Trust Portal](https://servicetrust.microsoft.com/)
 
 * PowerShell access: Power Apps [App creator cmdlets](https://go.microsoft.com/fwlink/?linkid=871448), [Admin cmdlets](https://go.microsoft.com/fwlink/?linkid=871804) and [On-premises gateway cmdlets](https://go.microsoft.com/fwlink/?linkid=872238)
 
@@ -53,7 +53,7 @@ Power Apps user settings, user-app settings, and notifications | | App creator: 
 Any user with a valid Power Apps license can perform the user operations outlined in this document using the [Power Apps portal](https://make.powerapps.com) or [App creator cmdlets](https://go.microsoft.com/fwlink/?linkid=871448).
 
 ### For admins
-To perform the administration operations outlined in this document using the Power Platform admin center, Power Automate Admin Center, or [Power Apps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804), you'll need the following:
+To perform the administration operations outlined in this document using the Power Platform admin center, Power Automate admin center, or [Power Apps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804), you'll need the following:
 
 * A paid Power Apps plan or a Power Apps trial. You can sign-up for a 30-day trial at [https://make.powerapps.com/trial](https://make.powerapps.com/trial). Trial licenses can be renewed if they've expired.
 
@@ -333,3 +333,6 @@ For guidance on how to respond to DSR requests for users that use Dataverse, see
 
 > [!IMPORTANT]
 >  We recommend that administrators complete this step for Power Apps users.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -4,9 +4,9 @@ description: Manage user account synchronization
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/17/2019
-author: jayasreekumar
-ms.author: jkumar
+ms.date: 01/21/2021
+author: jimholtz
+ms.author: jimholtz
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
 search.audienceType: 
@@ -52,17 +52,18 @@ Review the following resources to equip you to make the right decision for your 
 > [!IMPORTANT]
 > The following URLs would be used for subscriptions hosted in these locations.  
 >   
-> -   LATAM/SAM: https://\<*yourCRMorganizationname*>.crm2.dynamics.com?whr=\<*yourFederationServiceIdentifier*>  
-> -   CAN: https://\<*yourCRMorganizationname*>.crm3.dynamics.com?whr=\<*yourFederationServiceIdentifier*>  
-> -   EMEA: https://\<*yourCRMorganizationname*>.crm4.dynamics.com?whr=\<*yourFederationServiceIdentifier*>  
-> -   APAC: https://\<*yourCRMorganizationname*>.crm5.dynamics.com?whr=\<*yourFederationServiceIdentifier*>  
-> -   OCE: https://\<*yourCRMorganizationname*>.crm6.dynamics.com?whr=\<*yourFederationServiceIdentifier*>  
-> -   JPN: https://\<*yourCRMorganizationname*>.crm7.dynamics.com?whr=\<*yourFederationServiceIdentifier*>  
-> -   IND: https://\<*yourCRMorganizationname*>.crm8.dynamics.com?whr=\<*yourFederationServiceIdentifier*>  
-> -   United States of America Government: https://\< *yourCRMorganizationname*>.crm9.dynamics.com?whr=\<*yourFederationServiceIdentifier*>  
-> -   UK: https://\<*yourCRMorganizationname*>.crm11.dynamics.com?whr=\<*yourFederationServiceIdentifier*>  
-> -   FRA: https://\<*yourCRMorganizationname*>.crm12.dynamics.com?whr=\<*yourFederationServiceIdentifier*>  
-> -   DEU: https://\<*yourCRMorganizationname*>.crm.microsoftdynamics.de?whr=\<yourFederationServiceIdentifier>  
+> - LATAM/SAM: https://\<*yourCRMorganizationname*>.crm2.dynamics.com?whr=\<*yourFederationServiceIdentifier*>  
+> - CAN: https://\<*yourCRMorganizationname*>.crm3.dynamics.com?whr=\<*yourFederationServiceIdentifier*>  
+> - EMEA: https://\<*yourCRMorganizationname*>.crm4.dynamics.com?whr=\<*yourFederationServiceIdentifier*>  
+> - APAC: https://\<*yourCRMorganizationname*>.crm5.dynamics.com?whr=\<*yourFederationServiceIdentifier*>  
+> - OCE: https://\<*yourCRMorganizationname*>.crm6.dynamics.com?whr=\<*yourFederationServiceIdentifier*>  
+> - JPN: https://\<*yourCRMorganizationname*>.crm7.dynamics.com?whr=\<*yourFederationServiceIdentifier*>  
+> - IND: https://\<*yourCRMorganizationname*>.crm8.dynamics.com?whr=\<*yourFederationServiceIdentifier*>  
+> - United States of America Government: https://\< *yourCRMorganizationname*>.crm9.dynamics.com?whr=\<*yourFederationServiceIdentifier*>  
+> - UK: https://\<*yourCRMorganizationname*>.crm11.dynamics.com?whr=\<*yourFederationServiceIdentifier*>  
+> - FRA: https://\<*yourCRMorganizationname*>.crm12.dynamics.com?whr=\<*yourFederationServiceIdentifier*>  
+> - UAE: https://<*yourCRMorganizationname*>.crm15.dynamics.com?whr=<*yourFederationServiceIdentifier*>
+> - DEU: https://\<*yourCRMorganizationname*>.crm.microsoftdynamics.de?whr=\<*yourFederationServiceIdentifier*>  
 
  You can get the Federation Service identifier for your organization by using the following steps:  
   
@@ -77,3 +78,6 @@ Review the following resources to equip you to make the right decision for your 
    Your URL should look like: https://<em>contoso</em>.crm.dynamics.com?whr=*<http://sts1.fabrikam.com/adfs/services/trust>*  
   
    Send this URL to your users and encourage them to bookmark it.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -37,7 +37,7 @@ For information on predefined security roles, see [Predefined security roles](da
   
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
   
-2. In the Power Platform admin center, select an environment. 
+2. In the Microsoft Power Platform admin center, select an environment. 
 
 3. Select **Settings** > **Users + permissions** > **Security roles**.  
    
@@ -158,3 +158,6 @@ When you import the solution, it creates the **min prv apps use** role which you
 ### See also  
  [Security concepts](../admin/wp-security-cds.md)   
  [Copy a security role](../admin/copy-security-role.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -42,3 +42,6 @@ Topic | Description
 [Configure how the bot starts the conversation](configure-bot-greeting-teams.md) | Change what the bot says when it starts a conversation.
 [Customize the look and feel of your bot](customize-default-canvas-teams.md) | Change the bot's icon, name, and description so it looks unique in the Microsoft Teams app store.
 [Enable and configure Azure Bot Framework skills](configuration-add-skills-teams.md) | Extend your bot with Bot Framework skills.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

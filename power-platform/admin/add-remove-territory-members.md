@@ -5,8 +5,8 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/30/2017
-author: jayasreekumar
-ms.author: jkumar
+author: jimholtz
+ms.author: jimholtz
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
 search.audienceType: 
@@ -53,3 +53,6 @@ To accommodate changes in sales territories or the representatives that are assi
 ### See also  
  [Manage users](../admin/create-users-assign-online-security-roles.md)   
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

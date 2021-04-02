@@ -51,3 +51,6 @@ To create an app in the right environment:
 Whether you are working in [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) or Power Apps Studio, the list of apps, connections, etc. that you see is always filtered based on the environment that's selected in the dropdown. If you don't see the apps you're looking for, always confirm whether the right environment is selected.
 
 For more information about environments, see [this overview](environments-overview.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

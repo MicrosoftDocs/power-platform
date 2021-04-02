@@ -5,8 +5,8 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/30/2017
-author: jayasreekumar
-ms.author: jkumar
+author: jimholtz
+ms.author: jimholtz
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
 search.audienceType: 
@@ -43,3 +43,6 @@ Role-based security controls access to a specific entity type, record-based secu
   
 ### See also  
  [Control data access](../admin/security-roles-privileges.md)   
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

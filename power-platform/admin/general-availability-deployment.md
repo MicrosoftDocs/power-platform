@@ -1,13 +1,13 @@
 ---
 title: "General availability deployment  | MicrosoftDocs"
 description: About general availability deployment
-author: angelmarshall
-ms.author: tsmarsha
+author: jimholtz
+ms.author: jimholtz
 ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/26/2020
+ms.date: 01/21/2021
 search.audienceType: 
   - admin
 search.app:
@@ -34,17 +34,20 @@ Throughout a release wave, your environments will be updated during one of the w
 
 The general availability deployment is based on the regions where environments are created.
 
-|Regions  |Schedule for 2020 wave 2 general availability deployment|
+|Regions  |Schedule for 2021 wave 1 general availability deployment|
 |---------|---------|
-|South America<br />Canada<br />India<br />France<br />Emirates<br />South Africa<br />Germany  |  Friday, October 2nd – Sunday, October 4th     |
-|Japan<br />Asia Pacific<br />Great Britain<br />Australia   | Friday, October 9th – Sunday, October 11th      |
-|Europe     | Friday, October 16th – Sunday, October 18th       |
-|North America     |  Friday, October 23nd – Sunday, October 25th        |
-|China | Friday, October 30th – Sunday, November 1st   |
-|GCC<br />GCC High<br />DOD  | Friday, October 30th – Sunday, November 1st <br />See [Dynamics 365 US Government](microsoft-dynamics-365-government.md). |
+|South America<br />Canada<br />India<br />France<br />Emirates<br />South Africa<br />Germany  |  Friday, April 2nd – Sunday, April 4th     |
+|Japan<br />Asia Pacific<br />Great Britain<br />Australia   | Friday, April 9th – Sunday, April 11th      |
+|Europe     | Friday, April 16th – Sunday, April 18th       |
+|North America     |  Friday, April 23nd – Sunday, April 25th        |
+|China | Friday, April 30th – Sunday, May 2nd  |
+|GCC<br />GCC High<br />DOD  | Friday, April 30th – Sunday, May 2nd <br />See [Dynamics 365 US Government](microsoft-dynamics-365-government.md). |
 
 ### See also
 [Dynamics 365 release schedule](https://docs.microsoft.com/dynamics365/get-started/release-schedule) <br />
 [Dynamics 365 and Power Platform Release Plans ](https://docs.microsoft.com/dynamics365/release-plans/) <br />
 [Policies and communications ](policies-communications.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

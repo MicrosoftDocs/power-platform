@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/28/2020
+ms.date: 01/27/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -19,16 +19,14 @@ search.app:
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-Power Apps per app plan allows individual users to run **two applications** and **one portal** for a specific business scenario in a **specific environment** based on the full capabilities of Power Apps. This plan provides an easy way for users to get started with Power Apps before broader scale adoption. These are available to purchase from the Office admin center and you can allocate add-ons in the [Capacity](https://admin.powerplatform.microsoft.com/resources/capacity) area in the Power Platform admin center. More information: [Capacity add-ons](capacity-add-on.md).
+Power Apps per app plan allows individual users to run **two applications** and **one portal** for a specific business scenario in a **specific environment** based on the full capabilities of Power Apps. This plan provides an easy way for users to get started with Power Apps before broader scale adoption. These are available to purchase from the Office admin center and you can allocate add-ons in the [Capacity](https://admin.powerplatform.microsoft.com/resources/capacity) area in the Microsoft Power Platform admin center.<!-- Edit note: Should Office be changed to Microsoft 365. It is used elsewhere. --> More information: [Capacity add-ons](capacity-add-on.md).
 
 The following release plan topic announces the availability of this feature: [New licensing options for Power Automate standalone paid plans](https://docs.microsoft.com/power-platform-release-plan/2019wave2/power-automate/new-licensing-options-power-automate-standalone-paid-plans).
 
 > [!IMPORTANT]
-> Although, Power Apps per app plans appear in the [Microsoft 365 admin center](https://admin.microsoft.com), you shouldn't attempt to assign them to users there. Power Apps per app plans must be allocated to an environment (and not to users) by an admin in the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
->
-> After per app plans are allocated to an environment, they are assigned when apps are shared with users in the environment.
->
-> You cannot assign Power Apps per app plan baseline access licenses to users in a trial environment.
+> - Although, Power Apps per app plans appear in the [Microsoft 365 admin center](https://admin.microsoft.com), you shouldn't attempt to assign them to users there. Power Apps per app plans must be allocated to an environment (and not to users) by an admin in the [Power Platform admin center](https://admin.powerplatform.microsoft.com). After per app plans are allocated to an environment, they are assigned when apps are shared with users in the environment.
+> - You can't assign Power Apps per app plan baseline access licenses to users in a trial environment.
+> - Power Apps for Windows isn't supported if you have the Power Apps per app plan.
 
 ## Steps for using per app plans 
 
@@ -166,3 +164,6 @@ This is an artifact of previous, but no longer required, licenses being assigned
 
 **Mitigation steps**:
 The maker should sign up for the trial to proceed with creating the connection that uses a gateway. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

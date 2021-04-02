@@ -1,12 +1,13 @@
 ---
 title: "Connect POP3 or SMTP servers  | MicrosoftDocs"
 description: Connect to POP3 or SMTP servers 
-author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/04/2020
-ms.author: jimholtz
+author: revachauhan
+ms.author: rechauha
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
@@ -31,7 +32,7 @@ Follow these steps to connect customer engagement apps (Dynamics 365 Sales, Dyna
 
 ## Create an email server profile  
 
-1. In the Power Platform admin center, select an environment. 
+1. In the Microsoft Power Platform admin center, select an environment. 
 
 2. Select **Settings** > **Email** > **Server profiles**.  
 
@@ -104,11 +105,13 @@ Follow these steps to connect customer engagement apps (Dynamics 365 Sales, Dyna
 
 #### Set mailboxes to the default profile  
 
-1. In the web app, go to **Settings** > **Email Configuration** > **Mailboxes**.  
+1. In the Power Platform admin center, select an environment. 
 
-2. Choose **Active Mailboxes**.  
+2. Select **Settings** > **Email** > **Mailboxes**.  
 
-3. Select all the mailboxes that you want to associate with the POP3-SMTP profile you created, select **Apply Default Email Settings**, verify the settings, and then select **OK**.  
+3. Select **Active Mailboxes**.  
+
+4. Select all the mailboxes that you want to associate with the POP3-SMTP profile you created, select **Apply Default Email Settings**, verify the settings, and then select **OK**.  
 
    ![Apply default email settings](../admin/media/apply-default-email-settings.png "Apply default email settings")  
 
@@ -116,43 +119,48 @@ Follow these steps to connect customer engagement apps (Dynamics 365 Sales, Dyna
 
 #### Edit mailboxes to set the profile and delivery methods  
 
-1.  In the web app, go to **Settings** > **Email Configuration** > **Mailboxes**.  
+1. In the Power Platform admin center, select an environment. 
 
-2.  Select **Active Mailboxes**.  
+2. Select **Settings** > **Email** > **Mailboxes**.  
 
-3.  Select the mailboxes that you want to configure, and then select **Edit**.  
+3. Select **Active Mailboxes**.  
 
-4.  In the **Change Multiple Records** form, under **Synchronization Method**, set **Server Profile** to the POP3-SMTP profile you created earlier.  
+4. Select the mailboxes that you want to configure, and then select **Edit**.  
 
-5.  Set **Incoming** and **Outgoing** **Email** to **Server-Side Synchronization or Email Router**.  
+5. In the **Change Multiple Records** form, under **Synchronization Method**, set **Server Profile** to the POP3-SMTP profile you created earlier.  
 
-6.  Set **Appointments, Contacts, and Tasks** to **None**.  
+6. Set **Incoming** and **Outgoing** **Email** to **Server-Side Synchronization or Email Router**.  
 
+7. Set **Appointments, Contacts, and Tasks** to **None**.  
 
-7.  Select **Change**.  
+8. Select **Change**.  
 
 <a name="BKMK_ApproveEmail"></a> 
 
 ## Approve email  
- You need to approve each user mailbox or queue before that mailbox can process email.  
+You need to approve each user mailbox or queue before that mailbox can process email.  
 
-1.  In the web app, go to **Settings** > **Email Configuration** > **Mailboxes**.  
+1. In the Power Platform admin center, select an environment. 
 
-2.  Select **Active Mailboxes**.  
+2. Select **Settings** > **Email** > **Mailboxes**.  
 
-3.  Select the mailboxes that you want to approve, and then select **More Commands** (**…**) > **Approve Email**.  
+3. Select **Active Mailboxes**.  
 
-4.  Select **OK**.  
+4. Select the mailboxes that you want to approve, and then select **More Commands** (**…**) > **Approve Email**.  
+
+5. Select **OK**.  
 
 <a name="BKMK_TestConfiguration"></a>   
 
 ## Test configuration of mailboxes  
 
-1. In the web app, go to **Settings** > **Email Configuration** > **Mailboxes**.  
+1. In the Power Platform admin center, select an environment. 
 
-2. Select **Active Mailboxes**.  
+2. Select **Settings** > **Email** > **Mailboxes**.  
 
-3. Select the mailboxes you want to test, and then select **Test & Enable Mailboxes**.  
+3. Select **Active Mailboxes**.  
+
+4. Select the mailboxes you want to test, and then select **Test & Enable Mailboxes**.  
 
     This tests the incoming and outgoing email configuration of the selected mailboxes and enables them for email processing. If an error occurs in a mailbox, an alert is shown on the Alerts wall of the mailbox and the profile owner. Depending on the nature of the error, customer engagement apps try to process the email again after some time or disables the mailbox for email processing.  
 
@@ -183,13 +191,10 @@ Follow these steps to connect customer engagement apps (Dynamics 365 Sales, Dyna
 ## Network ports for Power Apps US Government  
  The following ports are open for outbound connections between Power Apps US Government and internet services.  
 
--   80 HTTP  
-
--   443 HTTPS 
-
--   465 Secure SMTP  
-
--   995 Secure POP3  
+- 80 HTTP  
+- 443 HTTPS 
+- 465 Secure SMTP  
+- 995 Secure POP3  
 
 Customizations or email configurations in Power Apps US Government can only use these ports.  
 
@@ -197,3 +202,6 @@ Customizations or email configurations in Power Apps US Government can only use 
  [Troubleshooting and monitoring server-side synchronization](troubleshooting-monitoring-server-side-synchronization.md) <br />
  [Test mail flow with the Remote Connectivity Analyzer](https://technet.microsoft.com/library/dn305950\(v=exchg.150\).aspx)   
  [Microsoft Power Apps US Government](powerapps-us-government.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -122,3 +122,6 @@ search.app:
 ### See also  
  [Office 365 datacenters now available in Canada](https://blogs.office.com/2016/05/10/office-365-datacenters-now-available-in-canada/)<br />
  [New datacenter regions](new-datacenter-regions.md)  
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

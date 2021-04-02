@@ -1,12 +1,13 @@
 ---
 title: "Replicate data to Azure SQL Database using Data Export Service | MicrosoftDocs"
 description: Replicate data to Azure SQL Database using Data Export Service 
-author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/09/2020
-ms.author: jimholtz
+ms.date: 02/11/2021
+ms.author: sabinn
+author: sabinn-msft
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
@@ -23,7 +24,7 @@ The [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] is
   
 > [!NOTE]
 > - You can use the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] with customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation). <br />
-> - We're now previewing a similar capability to export your Dataverse data to Azure Data Lake Gen2. You'll be able to link your Dataverse environment to a data lake in your Azure subscription, select standard or custom entities, and then export data to the data lake. All data or metadata changes (initial and incremental) in Dataverse are automatically pushed to Azure Data Lake Gen2 without any additional action. More information: [Exporting Dataverse data to Azure Data Lake](https://powerapps.microsoft.com/blog/exporting-cds-data-to-azure-data-lake-preview/) 
+> - Similarly, you can export your Dataverse data to Azure Data Lake Gen2. You can link your Dataverse environment to a data lake in your Azure subscription, select standard or custom entities, and then export data to the data lake. All data or metadata changes (initial and incremental) in Dataverse are automatically pushed to Azure Data Lake Gen2 without any additional action. More information: [Exporting Dataverse data to Azure Data Lake](https://powerapps.microsoft.com/blog/exporting-cds-data-to-azure-data-lake-preview/) 
   
 For information about the programmatic interface for managing configuration and administration of the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)], see [Data Export Service](https://docs.microsoft.com/powerapps/developer/common-data-service/data-export-service) in the developer guide.
   
@@ -74,7 +75,7 @@ For information about the programmatic interface for managing configuration and 
   
 - Grant PermissionsToSecrets permission to the application with the id "b861dbcc-a7ef-4219-a005-0e4de4ea7dcf." This can be completed by running the [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)][!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] command below and is used to access the Key Vault that contains the connection string secret. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [How to set up Azure Key Vault](#SetupAzureKV)  
   
-- The Key Vault should be tagged with the organization (OrgId) and tenant ids (TenantId).  This can be completed by running the [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)][!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] command below. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [How to set up Azure Key Vault](#SetupAzureKV)  
+- Secrets within the Key Vault should be tagged with the organization (OrgId) and tenant ids (TenantId).  This can be completed by running the [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)][!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] command below. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [How to set up Azure Key Vault](#SetupAzureKV)  
   
 - Configure your firewall rules to allow communication between Data Export Service and Azure Key Vault.
 
@@ -653,3 +654,6 @@ If your error logs show "String length in source longer than destination schema 
  [AppSource: Data Export Service](https://appsource.microsoft.com/product/dynamics-365/mscrm.44f192ec-e387-436c-886c-879923d8a448)   <br />
  [Data Export Service](https://docs.microsoft.com/powerapps/developer/common-data-service/data-export-service) <br />
  [Team Blog: Introduction to Data Export Service](https://blogs.msdn.microsoft.com/crm/2017/04/11/introduction-to-dynamics-365-data-export-service/)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

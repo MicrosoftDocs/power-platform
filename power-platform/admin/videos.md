@@ -2,11 +2,10 @@
 title: "Videos  | MicrosoftDocs"
 description: Videos and PowerPoint presentations 
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/09/2020
+ms.date: 02/18/2021
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -20,6 +19,8 @@ search.app:
 
 |Topic  |Video  |PowerPoint  |
 |---------|---------|---------|
+| Azure Active Directory group membership  |  [Video](https://youtu.be/GW2Rz53BX6o)  | |
+| Check user's access to a record using the Check Access feature  |  [Video](https://youtu.be/rigZ1FvrgSY) |  |
 |Top 10 tips to securely roll out Microsoft Power Apps and Microsoft Power Automate |[Video](https://youtu.be/BnolkTK2Sng) | [Deck](https://medius.studios.ms/video/asset/PPT/MBAS19-BRK2005) |
 |What's new for Power Apps and Microsoft Dynamics 365 admins |[Video](https://youtu.be/arzQrPPItlY) |[Deck](https://medius.studios.ms/video/asset/PPT/MBAS19-BRK2000) |
 |Best practices for managing and automating (ALM) |[Video](https://youtu.be/aWjMFxI3y8c)| [Deck](https://medius.studios.ms/video/asset/PPT/MBAS19-BRK2001) |
@@ -28,3 +29,6 @@ search.app:
 |How to get the best support for Power Apps, Power Automate, and Dynamics 365 | [Video](https://youtu.be/An3IfFdZlT8)| [Deck](https://medius.studios.ms/video/asset/PPT/MBAS19-THR2002) |
 |Planning your enterprise deployment - Capacity Management | [Video](https://youtu.be/RCo3XNaAD2A) | [Deck](https://medius.studios.ms/video/asset/PPT/MBAS19-THR3005)          |
 |Best practices for setting up security and environments in the Power Platform admin center     | [Video](https://youtu.be/SVY-h5YRMEY)| [Deck](https://medius.studios.ms/video/asset/PPT/MBAS19-THR2003) |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -87,3 +87,6 @@ You can see the bot bypass a follow-up question. For example, try testing with "
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

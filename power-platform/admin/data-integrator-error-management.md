@@ -1,12 +1,13 @@
 ---
-title: Data Integrator error management and troubleshooting
-description: Integrate data from multiple sources into Microsoft Dataverse
-author: sabinn-msft
+title: "Error management and troubleshooting for data integration projects"
+description: "Troubleshoot issues and manage errors when executing data integration projects using the Data Integrator service."
 ms.service: power-platform
 ms.topic: how-to
 ms.component: cds
-ms.date: 02/18/2020
+ms.date: 02/04/2021
+author: sabinn-msft
 ms.author: sabinn
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
@@ -19,7 +20,7 @@ search.app:
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-The Data Integrator is a point-to-point integration service used to integrate data from multiple sources--for example, Dynamics 365 Finance and Operations, Dynamics 365 Sales, Salesforce, and Microsoft SQL (Preview)--into Microsoft Dataverse. It also supports integrating data into Dynamics 365 Finance and Operations and Dynamics 365 Sales. The [Integrate data into Dataverse](data-integrator.md) topic provides detailed step-by-step instructions to help you set up projects for process-based integration scenarios like Prospect to Cash, Field Service, and Project Service integrations. 
+The Data Integrator is a point-to-point integration service used to integrate data from multiple sources--for example, Finance and Operations apps, Dynamics 365 Sales, Salesforce, and Microsoft SQL (Preview)--into Microsoft Dataverse. It also supports integrating data into Finance and Operations apps and Dynamics 365 Sales. The [Integrate data into Dataverse](data-integrator.md) topic provides detailed step-by-step instructions to help you set up projects for process-based integration scenarios like Prospect to Cash, Field Service, and Project Service integrations. 
 
 While we are constantly evolving and driving fixes into the platform based on customer feedback, we understand there is a need to provide guidance when you run into issues. This topic walks you through error management and troubleshooting some of these issues.
 
@@ -96,7 +97,7 @@ Each project execution is marked with the status Completed, Warning, or Error:
    > [!div class="mx-imgBorder"] 
    > ![Project status error](media/ProjectStatus_Error.png "Project status error")
 
-   If the project execution is in the **Error** state, then it will automatically retry execution at the next scheduled run.
+   If the project execution is in the **Error** state, then it will automatically retry execution at the next scheduled run. If you do not update the source record, it will not automatically be included in the next run.
 
 You can also manually retry an execution by selecting **Re-run execution** via the ellipsis (...) on the **Execution history** page.
 
@@ -118,7 +119,7 @@ If you are unable to see your connections or environments in the drop-down while
 
 * **Environment**: If you don’t see your environments in the drop-down, ensure that the account you used to create the connections has the appropriate access to the entity. A good way to test this is by creating a *flow* (using Microsoft Power Automate). 
 
-  Here is an example of creating a simple flow to test your connection to Dynamics 365 Finance and Operations:
+  Here is an example of creating a simple flow to test your connection to Finance and Operations apps:
 
   1. Create a new flow (choose **Create from blank**) under **Business logic/Flow** from [https://make.powerapps.com](https://make.powerapps.com).
 
@@ -135,7 +136,7 @@ If you are unable to see your connections or environments in the drop-down while
       > [!div class="mx-imgBorder"] 
       > ![Connections create record](media/ConnectionstestFlow3.png "Connections create record")
 
-  4. Select the drop-down under **environment** to show all the Dynamics 365 Finance and Operations environments. This is a good step to verify that your account (from the previous step) has access to the environments. 
+  4. Select the drop-down under **environment** to show all the Finance and Operations apps environments. This is a good step to verify that your account (from the previous step) has access to the environments. 
 
       > [!div class="mx-imgBorder"] 
       > ![Connections environments](media/ConnectionstestFlow4.png "Connections environments")
@@ -145,7 +146,7 @@ If you are unable to see your connections or environments in the drop-down while
       > [!div class="mx-imgBorder"] 
       > ![Connections confirm access to entities](media/ConnectionstestFlow5.png "Connections confirm access to entities")
 
-* **Organizations**: This is where you would specify the legal entity (for example, USMF) for Dynamics 365 Finance and Operations, the business unit for Dynamics 365 Sales, or the Dataverse organization name. If you miss this step, you get a message that contains valid names corresponding to your application that you then need to plug in under Organizations.
+* **Organizations**: This is where you would specify the legal entity (for example, USMF) for Finance and Operations apps, the business unit for Dynamics 365 Sales, or the Dataverse organization name. If you miss this step, you get a message that contains valid names corresponding to your application that you then need to plug in under Organizations.
 
 ### Project validation errors 
 
@@ -183,7 +184,7 @@ If you are notified of a project execution that completed with a warning or is i
 > [!div class="mx-imgBorder"] 
 > ![Troubleshooting error](media/Tshoot-WarningError1.png "Troubleshooting error")
 
-If this is an integration project where Dynamics 365 Finance and Operations is the source, go to the Data Management workspace in Dynamics 365 Finance and Operations. Then filter projects based on your data integration project name, or specifically choose the type of import or export job.
+If this is an integration project where Finance and Operations apps is the source, go to the Data Management workspace in Finance and Operations apps. Then filter projects based on your data integration project name, or specifically choose the type of import or export job.
 
 > [!div class="mx-imgBorder"] 
 > ![Data Management workspace](media/Tshoot-WarningError2.png "Data Management workspace")
@@ -196,3 +197,6 @@ Additionally, you can open the job history of the project and drill through the 
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

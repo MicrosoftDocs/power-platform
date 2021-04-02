@@ -19,8 +19,6 @@ search.app:
 
 # Released version Core Components 1.60
 
-## Introduction
-
 Version 1.60 for the CoE Starter Kit Core Components is now available. This article describes the updates, including the new features and the fixes to existing functionality, included in this release. This version was first made available on August 14, 2020.
 
 ## Table changes
@@ -49,3 +47,6 @@ Business Process Flows to manage the Audit process for Flow, Connector and Chatb
 - Increase field lengths in Flow Resources table for more robust handling
 - Sync Flows adjusted to short circuit when user doesn’t have permissions or the object of interest do not exist in the target environment.
 - CDS meta data stored in Environments table and called from Sync Flows to reduce calls and reduce logic redundancy.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

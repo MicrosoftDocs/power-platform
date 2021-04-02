@@ -36,7 +36,7 @@ You can:
 ## Prerequisites
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
-- Your organization's [Microsoft Teams app permission policies](/microsoftteams/manage-power-platform-apps) will need to allow Power Platform apps to be added to Microsoft Teams before you can directly install the bot in Microsoft Teams. Bots that are approved for admin submission in the **Built by your organization** section is managed separately by the admin in the Microsoft Teams admin center [Manage apps page](/microsoftteams/submit-approve-custom-apps#validate).
+- Your organization's [Microsoft Teams app permission policies](/microsoftteams/manage-power-platform-apps) will need to allow Microsoft Power Platform apps to be added to Microsoft Teams before you can directly install the bot in Microsoft Teams. Bots that are approved for admin submission in the **Built by your organization** section is managed separately by the admin in the Microsoft Teams admin center [Manage apps page](/microsoftteams/submit-approve-custom-apps#validate).
 - Before installing the bot for yourself or sharing the bot with others, you should [publish the bot at least once](publication-fundamentals-publish-channels.md).
 
 
@@ -226,3 +226,6 @@ You can always reconnect your bot after disconnecting by selecting **Turn on Tea
 - Teams has [rate limiting](/microsoftteams/platform/concepts/bots/rate-limit) on bots. Depending on your business needs, you might want to keep your bot content concise for bots that are added to Microsoft Teams.
 - Currently, if your bot supports [end-user authentication](advanced-end-user-authentication.md), the user will not be able to explicitly sign out. This will fail the Microsoft Teams AppSource certification if you are publishing your bot in the Seller Dashboard. This does not apply to personal or tenant usage of the bot. Learn more at [Publish your Microsoft Teams app](/microsoftteams/platform/publishing/apps-publish) and [AppSource Validation Policy](/office/dev/store/validation-policies).
 - Disconnecting your bot from Teams might take a few minutes before the bot becomes unreachable by users on Microsoft Teams.
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

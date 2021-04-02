@@ -4,9 +4,9 @@ description: Manage teams
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/05/2020
-author: jayasreekumar
-ms.author: jkumar
+ms.date: 02/17/2021
+author: jimholtz
+ms.author: jimholtz
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
 search.audienceType: 
@@ -84,21 +84,23 @@ For more information, see [Assign a record to a user or team](https://docs.micro
    - Follow the steps in [View your user profile](https://docs.microsoft.com/powerapps/user/view-your-user-profile).
    - Don't have the correct permissions? Contact your system administrator.
 
-2. In the web app, go to **Settings** > **Security**. In Microsoft Dynamics 365 for Outlook, go to **Settings** > **System** > **Security**.
+2. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
 
-3. Select **Teams**.
+3. Select **Settings** > **Security**. In Microsoft Dynamics 365 for Outlook, go to **Settings** > **System** > **Security**.
 
-4. On the Actions toolbar, select **New** button.
+4. Select **Teams**.
 
-5. Enter a team name.
+5. On the Actions toolbar, select **New** button.
 
-6. Select a business unit.
+6. Enter a team name.
 
-7. Enter an administrator.
+7. Select a business unit.
 
-8. Select **Owner** in **Team Type**.
+8. Enter an administrator.
 
-9. Complete other required fields, and then select **Save**.
+9. Select **Owner** in **Team Type**.
+
+10. Complete other required fields, and then select **Save**.
 
    If you don't select the business unit to which the team will belong, by default, the root business unit is selected. The root business unit is the first business unit created for an organization.
 
@@ -110,15 +112,17 @@ For more information, see [Assign a record to a user or team](https://docs.micro
    - Follow the steps in [View your user profile](https://docs.microsoft.com/powerapps/user/view-your-user-profile).
    - Don't have the correct permissions? Contact your system administrator.
 
-2. In the web app, go to **Settings** > **Security**. In Dynamics 365 for Outlook, go to **Settings** > **System** > **Security**.
+2. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
 
-3. Select **Teams**.
+3. Select **Settings** > **Security**. In Dynamics 365 for Outlook, go to **Settings** > **System** > **Security**.
 
-4. In the **Teams** drop-down list, select **All Owner Teams** or another appropriate view.
+4. Select **Teams**.
 
-5. In the grid, select the team you want to edit.
+5. In the **Teams** drop-down list, select **All Owner Teams** or another appropriate view.
 
-6. On the Actions toolbar, select **Edit**, change the desired fields, and then select **Save**.
+6. In the grid, select the team you want to edit.
+
+7. On the Actions toolbar, select **Edit**, change the desired fields, and then select **Save**.
 
 ## About access teams and team templates  
  You can create an access team manually by choosing the team type **Access**, or let the system create and manage an access team for you. When you create an access team, you can share multiple records with the team.  
@@ -148,3 +152,6 @@ For example, you can create a team template for the Account entity with the Read
  [Download: Access Teams in Microsoft Dynamics CRM](https://download.microsoft.com/download/E/9/0/E9009308-CA01-4B37-B03C-435B8ACB49B4/Access%20Teams%20with%20Microsoft%20Dynamics%20CRM%202013.pdf)   
  [Download: Scalable security modeling with Microsoft Dynamics CRM](https://go.microsoft.com/fwlink/p/?LinkID=328757)   
  [Entity relationship behavior](https://docs.microsoft.com/powerapps/maker/common-data-service/create-edit-entity-relationships#entity-relationship-behavior)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

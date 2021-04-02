@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/04/2020
+ms.date: 02/17/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -41,9 +41,10 @@ The following settings/environment are required for profile cards to be enabled 
 1. Microsoft 365 (Exchange Online)
 2. Unified Interface Build 9.1.0.4626 or higher
 3. Enable Admin setting
-   1. In the web app, navigate to **Settings** > **Administration** > **System Settings**
-   2. Select the **General** tab.
-   3. For **Enable users to view contact cards**, select **Yes**, and then **OK**.
+   1. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+   2. Select **Settings** > **Administration**.
+   3. Select **System Settings**, and then select the **General** tab. 
+   4. For **Enable users to view contact cards**, select **Yes**, and then **OK**.
 
 > [!div class="mx-imgBorder"] 
 > ![Enable users to view contact cards](media/enable-users-view-contact-cards.png "Enable users to view contact cards")
@@ -54,3 +55,6 @@ For information on how to use profile cards, see [View the profile card for a co
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

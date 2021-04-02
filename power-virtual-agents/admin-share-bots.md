@@ -37,7 +37,7 @@ You can stop sharing a bot with individual users at any time.
 Everyone you share the bot with can view, edit, configure, share, and publish the bot. They can't delete the bot.
 
 >[!NOTE]
->You can only share the bot with users who have Power Platform licenses. Users who don't have a license can [sign up for a free trial](sign-up-individual.md) so they can edit the bot.
+>You can only share the bot with users who have Microsoft Power Platform licenses. Users who don't have a license can [sign up for a free trial](sign-up-individual.md) so they can edit the bot.
 
 
 1. To share a bot, sign in to Power Virtual Agents and select **Share** at the top of the bot's home page.
@@ -117,7 +117,7 @@ The **Environment security roles** section shows when you share a bot and only i
 You must be a **System administrator** of the environment where the bot is located to view and add security roles.
 
 >[!NOTE]
->You can only *assign* security roles when sharing a bot. You can't remove security roles when sharing. For full security role management, [use the Power Platform Admin Center](/power-platform/admin/create-users-assign-online-security-roles#assign-a-security-role-to-a-user).  
+>You can only *assign* security roles when sharing a bot. You can't remove security roles when sharing. For full security role management, [use the Power Platform admin center](/power-platform/admin/create-users-assign-online-security-roles#assign-a-security-role-to-a-user).  
 > Learn more about [security roles](/power-platform/admin/security-roles-privileges) and [predefined security roles](/power-platform/admin/database-security#predefined-security-roles).
 
 
@@ -179,3 +179,6 @@ Power Virtual Agents will detect this and prevent you from overwriting your cowo
 ![Screenshot showing a prompt that says Updated content available and gives you options to discard your changes or save a copy](media/sharing-multi-conflict.png)
 
 If you save your changes to a new topic, you can then review your coworker's changes and merge the two topics, deleting the copy of the topic once you've finished.
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

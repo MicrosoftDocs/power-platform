@@ -6,7 +6,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 11/02/2020
+ms.date: 02/08/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -105,7 +105,7 @@ Users with a valid Power Apps license can perform the operations in these cmdlet
 
 | Purpose | Cmdlet |
 | --- | --- |
-| Add a canvas app to a Microsoft Dataverse solution | SetPowerAppAsSolutionAware |
+| Add a canvas app to a Microsoft Dataverse solution | Set-PowerAppAsSolutionAware |
 | Read environments | Get-PowerAppEnvironment *(previously Get-PowerAppsEnvironment)* <br> Get-FlowEnvironment |
 | Read, update, and delete a canvas app | Get-PowerApp *(previously Get-App)* <br> Remove-PowerApp *(previously Remove-App)* <br> Publish-PowerApp *(previously Publish-App)* <br> Set-AppDisplayName *(previously Set-PowerAppDisplayName)*<br> Get-PowerAppVersion *(previously Get-AppVersion)* <br> Restore-PowerAppVersion *(previously Restore-AppVersion)* |
 | Read, update, and delete canvas app permissions | Get-PowerAppRoleAssignment *(previously Get-AppRoleAssignment)* <br> Set-PowerAppRoleAssignment *(previously Set-AppRoleAssignment)* <br> Remove-PowerAppRoleAssignment *(previously Remove-AppRoleAssignment)* |
@@ -132,10 +132,10 @@ To perform the administration operations in the admin cmdlets, you'll need the f
 
 ### Cmdlet list - Admin Cmdlets
 
-| Purpose | Cmdlets
-| --- | ---
+| Purpose | Cmdlets |
+| --- | --- |
 | Read, update, delete, lock, unlock, and recover environments and Dataverse databases | New-AdminPowerAppEnvironment <br> Set-AdminPowerAppEnvironmentDisplayName <br> Get-AdminPowerAppEnvironment *(previously Get-AdminEnvironment)* <br> Remove-AdminPowerAppEnvironment *(previously Remove-AdminEnvironment)* <br>Get-AdminPowerAppSoftDeletedEnvironment</br>Recover-AdminPowerAppEnvironment<br> Copy-PowerAppEnvironment<br />Backup-PowerAppEnvironment<br /> Get-PowerAppEnvironmentBackups<br /> Restore-PowerAppEnvironment<br /> Remove-PowerAppEnvironmentBackup<br />Reset-PowerAppEnvironment<br />New-AdminPowerAppCdsDatabase <br> Get-AdminPowerAppCdsDatabaseLanguages <br> Get-AdminPowerAppCdsDatabaseCurrencies <br> Get-AdminPowerAppEnvironmentLocations <br /> Set-PowerAppLockAllEnvironments <br /> Set-PowerAppUnlockEnvironment <br /> Set-PowerAppProtectionStatus |
-| Delete Dataverse database | Remove-LegacyCDSDatabase | 
+| Delete legacy Common Data Service v1 database  | Remove-LegacyCDSDatabase | 
 | Read, update, and delete environment permissions <br><br> *These cmdlets only work today for environments that do not have a Dataverse database.* | Get-AdminPowerAppEnvironmentRoleAssignment *(previously Get-AdminEnvironmentRoleAssignment)* <br> Set-AdminPowerAppEnvironmentRoleAssignment *(previously Set-AdminEnvironmentRoleAssignment)* <br> Remove-AdminPowerAppEnvironmentRoleAssignment *(previously Remove-AdminEnvironmentRoleAssignment)* <br /> Set-AdminPowerAppEnvironmentRuntimeStat |
 | Read, update, remove, and recover canvas apps | Get-AdminPowerApp *(previously Get-AdminApp)* <br> Remove-AdminPowerApp *(previously Remove-AdminApp)* <br> Get-AdminPowerAppConnectionReferences <br> Set-AdminPowerAppAsFeatured <br> Clear-AdminPowerAppAsFeatured <br> Set-AdminPowerAppAsHero <br> Clear-AdminPowerAppAsHero <br> Set-AdminPowerAppApisToBypassConsent <br> Clear-AdminPowerAppApisToBypassConsent <br> Get-AdminDeletedPowerAppsList <br> Get-AdminRecoverDeletedPowerApp |
 | Read, update, and delete canvas app permissions | Get-AdminPowerAppRoleAssignment *(previously Get-AdminAppRoleAssignment)* <br> Remove-AdminPowerAppRoleAssignment *(previously Remove-AdminAppRoleAssignment)* <br> Set-AdminPowerAppRoleAssignment *(previously Set-AdminAppRoleAssignment)* <br> Set-AdminPowerAppOwner *(previously Set-AdminAppOwner)* |
@@ -147,7 +147,8 @@ To perform the administration operations in the admin cmdlets, you'll need the f
 | Read, update, and delete custom connector permissions | Get-AdminPowerAppConnectorRoleAssignment *(previously Get-AdminConnectorRoleAssignment)*<br> Set-AdminPowerAppConnectorRoleAssignment *(previously Set-AdminConnectorRoleAssignment)* <br> Remove-AdminPowerAppConnectorRoleAssignment *(previously Remove-AdminConnectorRoleAssignment)* |
 | Read a user's Power Apps user settings, user-app settings, and notifications | Get-AdminPowerAppsUserDetails |
 | Read and delete a user's Power Automate settings, which are not visible to user, but that support flow execution | Get-AdminFlowUserDetails <br> Remove-AdminFlowUserDetails |
-| Create, read, update and delete data loss prevention policies for your organization using a three-way classification - **Business**, **Non-Business**, and **Blocked**  |  Get-DlpPolicy *(previously Get-AdminDlpPolicy)* <br> New-DlpPolicy *(previously Add-AdminDlpPolicy)* <br>  Remove-DlpPolicy *(previously Remove-AdminDlpPolicy)* <br> Set-DlpPolicy *(previously Set-AdminDlpPolicy)*<br> <br> Learn more about the [Power Platform data loss prevention (DLP) SDK](data-loss-prevention-sdk.md). |
+| Create, read, update and delete data loss prevention policies for your organization using a three-way classification - **Business**, **Non-Business**, and **Blocked**  |  Get-DlpPolicy *(previously Get-AdminDlpPolicy)* <br> New-DlpPolicy *(previously Add-AdminDlpPolicy)* <br>  Remove-DlpPolicy *(previously Remove-AdminDlpPolicy)* <br> Set-DlpPolicy *(previously Set-AdminDlpPolicy)*<br> <br> Learn more about the [Microsoft Power Platform data loss prevention (DLP) SDK](data-loss-prevention-sdk.md). |
+| Read, add, update, and remove data loss prevention tenant settings | Get-PowerAppDlpErrorSettings<br />New-PowerAppDlpErrorSettings<br />Remove-PowerAppDlpErrorSettings<br />Set-PowerAppDlpErrorSettings |
 | Read, add, remove, and update tenant settings | Get-TenantSettings<br />Set-TenantSettings<br /> Get-PowerAppTenantUrlPatterns <br />New-PowerAppTenantUrlPatterns <br /> Remove-PowerAppTenantUrlPatterns <br />Get-AdminPowerAppTenantConsumedQuota|
 | Read, add, and remove allowed consent/trial plans within the tenant | Remove-AllowedConsentPlans <br>Add-AllowedConsentPlans<br /> Get-AllowedConsentPlans |
 | Read tenant assigned user licenses | Get-AdminPowerAppLicenses |
@@ -290,7 +291,7 @@ Get-AdminPowerAppLicenses -OutputFilePath '<licenses.csv>'
 
 Exports all the assigned user licenses (Power Apps and Power Automate) in your tenant into a tabular view .csv file. The exported file contains both self-service sign up internal trial plans as well as plans that are sourced from Azure Active Directory. The internal trial plans are not visible to admins in the Microsoft 365 admin center.
 
-The export can take a while for tenants with a large number of Power Platform users.
+The export can take a while for tenants with a large number of Microsoft Power Platform users.
 
 #### Set logged in user as the owner of a canvas app
 
@@ -317,6 +318,30 @@ Get-AdminRecoverDeletedPowerApp -AppName 'AppName' -EnvironmentName 'Environment
 ```
 
 This recovers a canvas app that is discoverable via Get-AdminDeletedPowerAppsList cmdlet. Any canvas app that isn't displayed in Get-AdminDeletedPowerAppsList isn't recoverable.
+
+#### Designate SharePoint custom form environment
+
+The following cmdlets can be used to specify and verify which environment SharePoint custom forms are saved to, instead of the default environment. When the designated environment for SharePoint custom forms changes, this is the environment where newly created custom forms are saved. Existing custom forms don't automatically migrate to different environments as these cmdlets are used. The ability for a user to create a custom form in a designated environment requires that user to have the Environment Maker role. Users can be granted the Environment Maker role in the [Power Platform admin center](https://admin.powerplatform.microsoft.com).  
+
+Note, any environment which isn’t the default environment, can be deleted. If the designated SharePoint custom form environment is deleted the custom forms are deleted with it.
+
+```powershell
+Get-AdminPowerAppSharepointFormEnvironment  
+```
+
+This returns the EnvironmentName for the environment currently designated for newly created SharePoint custom forms. If an environment has never been designated, the default environment is returned. 
+
+```powershell
+Set-AdminPowerAppSharepointFormEnvironment –EnvironmentName 'EnvironmentName' 
+```
+
+This designates the environment newly created SharePoint custom forms save to, instead of the default environment. Existing custom forms don't automatically migrate to the newly designated environment. Only production environments may be designated for SharePoint custom forms.  
+
+```powershell
+Reset-AdminPowerAppSharepointFormEnvironment  
+```
+
+This resets the default environment as the designated environment to save SharePoint custom forms.
 
 ### Power Automate commands
 
@@ -444,3 +469,6 @@ If you have any comments, suggestions, or questions, post them on the [Administe
 ### See also
 [Get started using the Power Apps admin module](https://docs.microsoft.com/powershell/powerapps/get-started-powerapps-admin) <br />
 [Microsoft.PowerApps.Administration.PowerShell](https://docs.microsoft.com/powershell/module/microsoft.powerapps.administration.powershell)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

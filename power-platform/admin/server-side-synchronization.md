@@ -1,12 +1,13 @@
 ---
 title: "Server-side synchronization  | MicrosoftDocs"
 description: Server-side synchronization
-author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/09/2020
-ms.author: jimholtz
+author: revachauhan
+ms.author: rechauha
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
@@ -65,3 +66,6 @@ Server-side synchronization is the preferred option for organizations with users
 ### See also  
  [Set up server-side synchronization of email, appointments, contacts, and tasks](../admin/set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks.md)   
  [Synchronizing data with Outlook or Exchange FAQ](frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

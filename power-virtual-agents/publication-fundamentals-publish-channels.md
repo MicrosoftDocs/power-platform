@@ -83,14 +83,13 @@ Each channel requires different steps and configurations, which can be found in 
 ## Channel experience reference table
 Different channels have different end-user experiences. The following table shows a high-level overview of the experiences for each channel. You can take the channel experiences into account when optimizing your bot content for specific channels.
 
- Experience | Website | Microsoft Teams(1) | Facebook
+ Experience | Website | Microsoft Teams(1) | Facebook | Dynamics Omnichannel for Customer Service
  ---|---|---|---
- [Customer satisfaction survey](authoring-create-edit-topics.md#insert-nodes) | Adaptive card | Text-only | Text-only
- [Multiple-choice options](authoring-create-edit-topics.md#insert-nodes) | Supported | [Supported up to 6](/microsoftteams/platform/concepts/cards/cards-reference#hero-card) | [Supported up to 13](https://developers.facebook.com/docs/messenger-platform/send-messages/quick-replies/)
- [Markdown](https://daringfireball.net/projects/markdown/) | Supported | Supported | [Partially supported](https://www.facebook.com/help/147348452522644?helpref=related)
- [Welcome message](authoring-create-edit-topics.md#insert-nodes) | Supported | Supported | Not supported
+ [Customer satisfaction survey](authoring-create-edit-topics.md#insert-nodes) | Adaptive card | Text-only | Text-only | [Supported](/dynamics365/customer-service/asynchronous-channels#card-support)
+ [Multiple-choice options](authoring-create-edit-topics.md#insert-nodes) | Supported | [Supported up to 6](/microsoftteams/platform/concepts/cards/cards-reference#hero-card) | [Supported up to 13](https://developers.facebook.com/docs/messenger-platform/send-messages/quick-replies/) | [Not supported when deployed to Microsoft Teams](/dynamics365/customer-service/asynchronous-channels#suggested-actions-support). Otherwise supported for other channels.
+ [Markdown](https://daringfireball.net/projects/markdown/) | Supported | Supported | [Partially supported](https://www.facebook.com/help/147348452522644?helpref=related) | Supported
+ [Welcome message](authoring-create-edit-topics.md#insert-nodes) | Supported | Supported | Not supported | Supported
 
-(1): [Dynamics Omnichannel for Customer Service](https://docs.microsoft.com/dynamics365/omnichannel/omnichannel-customer-service-guide) has the same experience as Microsoft Teams when integrated with a Power Virtual Agents bot .  
 
  ## In this section
 
@@ -100,3 +99,6 @@ Different channels have different end-user experiences. The following table show
 - [Add bot to Facebook](publication-add-bot-to-facebook.md) | Add your bot to Facebook Messenger.
 - [Add bot to mobile and custom apps (web-based or native)](publication-connect-bot-to-custom-application.md) | Add your bot to mobile or custom native apps (developer coding required).
 - [Add bot to Azure Bot Service channels](publication-connect-bot-to-azure-bot-service-channels.md) | Add your bot to Azure Bot Service channels (developer coding required).
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

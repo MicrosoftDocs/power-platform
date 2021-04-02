@@ -348,8 +348,6 @@
         href: database-security.md
       - name: Configure user access to an environment
         href: control-user-access.md  
-      - name: Diagnose user access
-        href: diagnose-user-access.md
       - name: View user profile
         href: https://docs.microsoft.com/powerapps/user/view-your-user-profile
       - name: Assign security roles
@@ -369,9 +367,7 @@
       - name: Create an administrative user
         href: prevent-elevation-security-role-privilege.md
       - name: Troubleshoot common user access issues 
-        href: troubleshooting-user-needs-read-write-access-organization.md
-      - name: Assign security roles to a form
-        href: assign-security-roles-form.md       
+        href: troubleshooting-user-needs-read-write-access-organization.md     
       - name: Manage user account synchronization 
         href: manage-user-account-synchronization.md       
       - name: Hierarchy security to control access
@@ -396,6 +392,18 @@
           href: analytics-flow.md
         - name: Analytics for UI flows
           href: analytics-ui-flow.md
+      # - name: Analyze telemetry with Application Insights
+      #   items:
+      #   - name: Model-driven apps and Microsoft Dataverse telemetry
+      #     href: analyze-telemetry.md
+      #   - name: Overview of integration with Application Insights
+      #     href: overview-integration-application-insights.md
+      #   - name: Telemetry events for model-driven apps 
+      #     href: telemetry-events-model-driven-apps.md
+      #   - name: Telemetry events for Dataverse
+      #     href: telemetry-events-dataverse.md   
+      #   - name: Set up export to Application Insights
+      #     href: set-up-export-application-insights.md
     - name: Storage
       items: 
       - name: What's new for storage
@@ -685,6 +693,8 @@
           href: best-practices-server-side-synchronization.md
         - name: Create forward mailboxes or edit mailboxes
           href: create-forward-mailboxes-edit-mailboxes.md
+        - name: Create queue items from synchronized email messages
+          href: create-queue-items-from-synchronized-email-messages.md
       - name: Configure Outlook or Exchange folder-level tracking
         href: configure-outlook-exchange-folder-level-tracking.md
       - name: Use Outlook category to track appointments and emails

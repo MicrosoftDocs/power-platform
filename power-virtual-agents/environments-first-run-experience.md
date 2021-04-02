@@ -85,7 +85,7 @@ To create a bot in an environment where you don't have access, you'll need to be
 
 2. Assign the security role of "bot author" to you in the environment. More information: [Create users and assign security roles](/power-platform/admin/create-users-assign-online-security-roles#assign-a-security-role-to-a-user).
 
-You can then return to the [Power Virtual Agents portal](https://powerva.microsoft.com) and create a bot in the environment.
+You can then return to the [Power Virtual Agents portal](https://web.powerva.microsoft.com) and create a bot in the environment.
 
 More information:
 - [Power Platform - Environments overview](/power-platform/admin/environments-overview)
@@ -120,3 +120,6 @@ You will need to [create a new environment](environments-first-run-experience.md
 Your environment might not show up in the drop-down menu due to one of the following:
  - The environment doesn't have a database created. To resolve this issue, go to [admin.powerplatform.com](https://admin.powerplatform.com) to [create a database in your environment](/power-platform/admin/create-database).
  - The environment is created in an unsupported region. More information: [Supported data locations](data-location.md).
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

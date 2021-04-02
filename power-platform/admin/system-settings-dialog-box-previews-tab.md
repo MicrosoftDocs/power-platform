@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/11/2020
+ms.date: 02/17/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -31,9 +31,11 @@ Use the settings on this page to enable preview features in customer engagement 
   
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
   
-2. In the web app, go to **Settings** > **Administration**.
+2. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+
+3. Select **Settings** > **Administration**.
   
-3. Choose the **System Settings** > **Previews** tab.  
+4. Choose the **System Settings** > **Previews** tab.  
   
 |Settings|Description|  
 |--------------|-----------------|  
@@ -50,3 +52,6 @@ Use the settings on this page to enable preview features in customer engagement 
 
 ### See also
 [What are Preview features and how do I enable them?](what-are-preview-features-how-do-i-enable-them.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

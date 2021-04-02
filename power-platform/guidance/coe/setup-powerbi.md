@@ -44,13 +44,16 @@ You need the environment URL of the Microsoft Power Platform environment the CoE
 
    ![Environment settings available in the Power Platform admin center](media/coe20.png "Environment settings available in the Power Platform admin center")
 
+> [!NOTE]
+> The Power BI dashboard uses Direct Query to connect to Microsoft Dataverse, therefore TDS Endpoint has to be enabled for the environment: [Manage feature settings](https://docs.microsoft.com/power-platform/admin/settings-features)
+
 ## Configure the Power BI dashboard
 
 You can configure and modify the Power BI dashboard by working directly with the Power BI (.pbit) file and Power BI Desktop. This gives you flexibility in terms of modifying the dashboard to your own branding, and including (or excluding) pages or visuals you want to see (or not see) in the dashboard.
 
 1. In Power BI Desktop, open the PowerPlatformAdminDashboard.pbit file, which can be found in the CoE Starter Kit you downloaded from [aka.ms/CoeStarterKitDownload](https://aka.ms/CoEStarterKitDownload).
 
-1. Enter the URL of your environment instance (including the https:// prefix) for **OrgUrl**, and&mdash;if prompted&mdash;sign in to Power BI Desktop with your organization account that has access to the environment you installed the CoE Starter Kit in.
+1. Enter the URL of your environment instance (do not include the https:// prefix) for **OrgUrl**, and&mdash;if prompted&mdash;sign in to Power BI Desktop with your organization account that has access to the environment you installed the CoE Starter Kit in.
 
    ![Enter OrgUrl to configure Power BI dashboard](media/pbit.png "Enter OrgUrl to configure Power BI dashboard")
 
@@ -125,3 +128,6 @@ You'll now configure the Power Apps visuals in the Power BI dashboard to point t
 1. Resize and move the visual to the location you want. Delete the placeholder from the template, and move your embedded app to the same place.
 
 Republish the dashboard, and view it under [app.powerbi.com](https://app.powerbi.com/).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

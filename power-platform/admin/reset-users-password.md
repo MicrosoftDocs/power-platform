@@ -1,8 +1,8 @@
 ---
 title: "Reset a user's password  | MicrosoftDocs"
 description: Reset a user's password 
-author: jayasreekumar
-ms.author: jkumar
+author: jimholtz
+ms.author: jimholtz
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
 ms.service: power-platform
@@ -28,3 +28,6 @@ If a user loses a password, you can reset it. To reset a user’s password, you 
   
 ### See also  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

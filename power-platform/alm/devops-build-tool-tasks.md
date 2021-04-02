@@ -29,7 +29,7 @@ The available helper tasks are described below.
 
 This task is required to be added once before any other Power Platform Build Tools tasks in build and
 release pipelines. This task installs a set of Power Platform&ndash;specific tools required
-by the agent to run the Power Platform build tasks. This task doesn't require any
+by the agent to run the Microsoft Power Platform build tasks. This task doesn't require any
 additional configuration when added, but contains parameters for the specific versions
 of each of the tools that are being installed.
 To stay up to date with the tool versions over time, make sure these parameters correspond
@@ -55,7 +55,7 @@ you might have inadvertently introduced when building your solution.
 
 | Parameters         | Description      |
 |--------------------|------------------|
-| Service Connection                         | (Required) A connection to a licensed Power Platform environment is required to use the Power Platform checker.  Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type.<p/>Note: Service Principal is the only authentication method available for the checker task so if you are using username/password for all other tasks, you will have to create a separate connection to use with the checker task. For more information on how to configure service principals to be used with this task see [Configure service principal connections for Power Platform environments](devops-build-tools.md#configure-service-connections-using-a-service-principal). |
+| Service Connection                         | (Required) A connection to a licensed Microsoft Power Platform environment is required to use the Power Platform checker.  Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type.<p/>Note: Service Principal is the only authentication method available for the checker task so if you are using username/password for all other tasks, you will have to create a separate connection to use with the checker task. For more information on how to configure service principals to be used with this task see [Configure service principal connections for Power Platform environments](devops-build-tools.md#configure-service-connections-using-a-service-principal). |
 | User default Power Platform Checker endpoint       | By default, the geographic location of the checker service will use the same geography as the environment you connect to. By un-checking the default, you have an option to specify another geo to use, for example https://japan.api.advisor.powerapps.com. For a list of available geographies, see [Use the Power Platform Checker API](https://docs.microsoft.com/powerapps/developer/common-data-service/checker/webapi/overview#determine-a-geography).|
 | Location of file(s) to analyze       | (Required) Specify whether to reference a local file or a reference file from a shared access signature (SAS) URL.<p/>Note: It is important to reference an exported solution file and not the unpacked source files in your repository. Both managed and unmanaged solution files can be analyzed. |
 | Local files to analyze/SAS URI for the file to analyze | (Required) Specify the path and file name of the zip files to analyze. Wildcards can be used. For example, enter \*\*\\*.zip for all zip files in all subfolders.<p/>If **File from SAS URI** was chosen as location of files to analyze, simply enter the SAS URI. You can add more than one SAS URI through a comma (,) or semi-colon (;) separated list.     |
@@ -240,3 +240,6 @@ The following figure shows the build tool tasks that you might add to a pipeline
 
 [Microsoft Power Platform Build Tools for Azure DevOps](devops-build-tools.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

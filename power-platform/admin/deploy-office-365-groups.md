@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/04/2020
+ms.date: 02/17/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -80,14 +80,16 @@ Once installation of the solution has completed, you can configure Microsoft 365
   
 ## Configure Microsoft 365 groups  
  Once you provision Microsoft 365 Groups, you can enable them for any entity. Security group membership is associated with the entity. You configure Microsoft 365 Groups in customer engagement apps.  
+
+1. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+
+2. Select **Settings** > **Office 365 Groups**.
+
+3. On the **Microsoft 365 Groups Integration Settings** page, select ![Add properties button](../admin/media/add-properties-button.png "Add properties button")**Add entity** and choose an entity from the drop-down list. Repeat this step for each entity you want to enable, including custom entities.  
   
-1. In the web app, go to **Settings** > **Microsoft 365 groups**. You may need to first select the **Gear** icon (![Gear icon](media/selection-rule-gear-button.png)) > **Advanced settings**.
+4. Optionally, you can select **Auto-create** for an entity to have a new group automatically created when a new record for that entity is created. However, we recommend you choose this option only for entities that typically require large groups to collaborate.  
   
-2. On the **Microsoft 365 Groups Integration Settings** page, select ![Add properties button](../admin/media/add-properties-button.png "Add properties button")**Add entity** and choose an entity from the drop-down list. Repeat this step for each entity you want to enable, including custom entities.  
-  
-3. Optionally, you can select **Auto-create** for an entity to have a new group automatically created when a new record for that entity is created. However, we recommend you choose this option only for entities that typically require large groups to collaborate.  
-  
-4. When you have added all the entities you want to enable for Microsoft 365 Groups, select **Publish All**.  
+5. When you have added all the entities you want to enable for Microsoft 365 Groups, select **Publish All**.  
   
 All of your pending system customizations will be published, including those you may have saved but not published in another area.  
   
@@ -144,3 +146,6 @@ You're now ready to use Microsoft 365 Groups. See [Collaborate with your colleag
  [Set up customer engagement apps to use Exchange Online](connect-exchange-online.md)   
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

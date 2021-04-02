@@ -4,8 +4,8 @@ description: "Learn how you can manage database encryption key for your environm
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/17/2020
-author: jayasreekumar
+ms.date: 01/20/2021
+author: Mattp123
 ms.author: miferlan
 ms.reviewer: matp
 ms.custom: "admin-security"
@@ -17,13 +17,13 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Manage the encryption key
+# Manage the encryption key 
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 All environments of Microsoft Dataverse use [!INCLUDE[pn_MS_SQL_Server](../includes/pn-ms-sql-server.md)] Transparent Data Encryption (TDE) to perform real-time encryption of data when written to disk, also known as encryption at rest.  
   
- By default, [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] stores and manages the database encryption key for your environments so you don't have to.  The manage keys feature in the Power Platform admin center gives administrators the ability to self-manage the database encryption key that is associated with the Dataverse tenant. 
+ By default, [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] stores and manages the database encryption key for your environments so you don't have to. The manage keys feature in the Microsoft Power Platform admin center gives administrators the ability to self-manage the database encryption key that is associated with the Dataverse tenant. 
 
 <!--  [!IMPORTANT]
 >  Self-managed database encryption keys are only available in the [!INCLUDE[pn_CRM_Online](../includes/pn-crm-8-2-0-online.md)] and may not be made available for later versions. --> 
@@ -63,7 +63,7 @@ All environments of Microsoft Dataverse use [!INCLUDE[pn_MS_SQL_Server](../inclu
   
 <a name="KM_risk"></a>  
  
-## Understand the potential risk when you manage your keys  
+## Understand the potential risk when you manage your keys
  As with any business critical application, personnel within your organization who have administrative-level access must be trusted. Before you use the key management feature, you should understand the risk when you manage your database encryption keys. It is conceivable that a malicious administrator (a person who is granted or has gained administrator-level access with intent to harm an organization's security or business processes) working within your organization might use the manage keys feature to create a key and use it to lock all environments in the tenant. 
 
 Consider the following sequence of events.  
@@ -97,7 +97,7 @@ These actions will result in disabling all the environments within the tenant fr
   
 -   PFX encryption key files must be password protected.  
   
-For more information about generating and transferring an HSM-protected key over the Internet see [How to generate and transfer HSM-protected keys for Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-hsm-protected-keys).  
+For more information about generating and transferring an HSM-protected key over the Internet see [How to generate and transfer HSM-protected keys for Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-hsm-protected-keys).  Only [nCipher Vendor HSM key](https://docs.microsoft.com/azure/key-vault/keys/hsm-protected-keys#supported-hsms) is supported. Before generating your HSM key, go to the Power Platform admin center **Manage encryption keys**/**Create New key** window to obtain the subscription ID for your environment region. You need to copy and paste this subscription ID into your HSM to create the key. This will ensure that only our Azure Key Vault can open your file.
   
 <a name="keymgt_tasks"></a>   
 
@@ -147,7 +147,7 @@ To perform this task using PowerShell, see [Get-CRMGenerateProtectionkey](/power
 1.    Select **Upload the Key**, select the .pfx or .byok<sup>1</sup> file, and then select **Open**. 
 2.    Enter the password for the key, and then select **Create**.
 
-<sup>1</sup> For .byok encryption key files, make sure you use the subscription id as shown on the screen when you export the encryption key from your local HSM. More information: [How to generate and transfer HSM-protected keys for Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-hsm-protected-keys). 
+<sup>1</sup> For .byok encryption key files, make sure you use the subscription ID as shown on the screen when you export the encryption key from your local HSM. More information: [How to generate and transfer HSM-protected keys for Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-hsm-protected-keys). 
 
 To perform this task using PowerShell, see [New-CRMImportProtectionKey](/powershell/module/microsoft.xrm.onlinemanagementapi/new-crmimportprotectionkey?view=dynamics365ce-ps) and [Set-CrmTenantProtectionKey](/powershell/module/microsoft.xrm.onlinemanagementapi/set-crmtenantprotectionkey?view=dynamics365ce-ps).
 
@@ -294,3 +294,6 @@ A customer tenant can have environments that are encrypted using the Microsoft m
 ### See also  
 [Microsoft.Xrm.OnlineManagementAPI PowerShell reference](/powershell/module/microsoft.xrm.onlinemanagementapi/?view=dynamics365ce-ps) <br />
 [SQL Server: Transparent Data Encryption (TDE)](/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -93,3 +93,6 @@ The real good information comes from clicking on the More Information and drilli
 > ![Power Automate audit log events details more information](media/flow-audit-log-events-detail-information.png "Power Automate audit log events details more information")
 
 Audit data is retained for 90 days. You can do CDSV exports of the data allowing you to move it into Excel or PowerBI for further analysis. You can find a complete walkthrough of using the audit information here https://flow.microsoft.com/blog/security-and-compliance-center/
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

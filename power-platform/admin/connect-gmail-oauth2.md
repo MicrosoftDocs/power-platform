@@ -1,12 +1,13 @@
 ---
 title: "Connect Gmail accounts using OAuth 2.0  | MicrosoftDocs"
 description: "Connect Gmail accounts using OAuth 2.0"
-author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/15/2021
-ms.author: jimholtz
+ms.date: 02/17/2021
+author: revachauhan
+ms.author: rechauha
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
@@ -27,9 +28,11 @@ Follow the steps in this article to set up server-side synchronization to send a
 
 We're in the process of rolling out this feature. To determine if your environment can connect Gmail accounts using OAuth 2.0, do the following:
 
-1. In the web app, select **Settings** > **Email configuration** > **Mailboxes**. To open settings for apps that use [Unified Interface](about-unified-interface.md), look in the upper-right corner and select the **Gear** icon (![Gear icon](media/selection-rule-gear-button.png)). Then select **Advanced settings**. 
+1. In the Power Platform admin center, select an environment. 
 
-2. Select a mailbox and check the top menu bar for the **Signin To Gmail** icon. If present, the feature is enabled for this environment.
+2. Select **Settings** > **Email** > **Mailboxes**. To open settings for apps that use [Unified Interface](about-unified-interface.md), look in the upper-right corner and select the **Gear** icon (![Gear icon](media/selection-rule-gear-button.png)). Then select **Advanced settings**. 
+
+3. Select a mailbox and check the top menu bar for the **Signin To Gmail** icon. If present, the feature is enabled for this environment.
 
    > [!div class="mx-imgBorder"] 
    > ![Determine feature availability](media/gmail-how-to-know.png "Determine feature availability")
@@ -64,7 +67,7 @@ Follow the steps for **Create a project** in: [Create, shut down, and restore pr
 
 2. Select **Create**.
 
-3. Enter an application name and your environment's fully qualified domain name (for example: contoso.crm.dynamics.com). Then, select **Save**.
+3. Enter an application name and your environment’s top private domain name (for example: dynamics.com) for **Authorized domains**. Then, select **Save**.
 
    > [!div class="mx-imgBorder"] 
    > ![Enter application name and domain](media/gmail-oauth-consent-domain-name.png "Enter application name and domain")
@@ -122,11 +125,15 @@ Use the following settings:
 > [!NOTE]
 > These steps should be done by the mailbox user.
 
-1. In the web app, select **Settings** > **Email configuration** > **Mailboxes**.
+1. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
 
-2. Select the mailbox for the user configured in previous steps.
+2. Select **Settings** > **Administration**.
 
-3. Use the following settings:
+3. Select **Settings** > **Email configuration** > **Mailboxes**.
+
+4. Select the mailbox for the user configured in previous steps.
+
+5. Use the following settings:
 
    |Setting  |Use  |
    |---------|---------|
@@ -137,11 +144,11 @@ Use the following settings:
    > [!div class="mx-imgBorder"] 
    > ![OAuth mailbox information](media/gmail-oauth-mailbox-information.png "OAuth mailbox information")
 
-4. Select **Save**.
+6. Select **Save**.
 
-5. Select **Signin to Gmail**.
+7. Select **Signin to Gmail**.
 
-6. Proceed through the Gmail sign-in and authorization pages.
+8. Proceed through the Gmail sign-in and authorization pages.
 
 ## Step 6: Add test users
 
@@ -155,8 +162,11 @@ In the Google Cloud Platform (Developer Console), add users in the Test Users se
 > [!NOTE]
 > These steps should be done by the mailbox user.
 
-In the web app, select **Test & Enable Mailbox** to test the mailbox configured in step 6.
+Select **Test & Enable Mailbox** to test the mailbox configured in step 6.
 
    > [!div class="mx-imgBorder"] 
    > ![Test and enable mailbox](media/gmail-oauth-test-enable-mailbox.png "Test and enable mailbox")
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

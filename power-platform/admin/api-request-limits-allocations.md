@@ -5,7 +5,7 @@ author: dileepsinghmicrosoft
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/19/2021
+ms.date: 02/02/2021
 ms.author: dileeps
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -48,7 +48,7 @@ All the users of Microsoft Power Platform have limits on the number of requests 
 | Power Automate per user plan<sup>3</sup>  | 5,000 |
 | Office licenses (that include Power Apps/Power Automate)<sup>4</sup>  | 2,000 |
 | Power Apps per app plan | 1,000 per app pass |
-| Non-licensed users | See *Non-licensed user* section below |
+| Non-licensed users | See [Requests limits not based on licensed users or flows](#requests-limits-not-based-on-licensed-users-or-flows) below |
 
 <sup>1</sup> Dynamics 365 Enterprise applications include Dynamics 365 Sales Enterprise, Dynamics 365 Customer Service Enterprise, Dynamics 365 Field Service, Dynamics 365  Project Service Automation, Dynamics 365 Retail, Dynamics 365 Talent, Dynamics 365 Customer Engagement plan.
 
@@ -70,7 +70,7 @@ Power Apps and Power Automate capacity add-on allows customers to increase the l
 Each capacity add-on raises the request limits by an additional 10,000 per 24 hours. Multiple capacity add-ons can also be assigned to the same user.
 
 > [!NOTE] 
-> Currently, capacity add-ons cannot be assigned to users (including application, administrative, and non-interactive users), because of the transition period. Assignment will be supported once the transition period ends, during 2020 Release Wave 2.
+> Currently, capacity add-ons cannot be assigned to users (including application, administrative, and non-interactive users), because of the transition period (see [FAQ](#will-there-be-a-transition-period-for-existing-customers)) below. Assignment will be supported once the transition period ends.
 
 ## Requests limits not based on licensed users or flows
 
@@ -114,9 +114,9 @@ Review the following resources for information about *current* service protectio
 
 ### What tools can I use to monitor and analyze API requests across the platform?
 
-Today, the Power Platform Admin Center contains [reports on Dataverse API requests](https://docs.microsoft.com/power-platform/admin/analytics-common-data-service). This reporting today accounts for interactive and non-interactive traffic. This helps you to quickly view adoption and user metrics for your organization. If your apps or flows primarily use the Dataverse, then these reports can serve as good approximations of the total usage of your solutions.
+Today, the Power Platform admin center contains [reports on Dataverse API requests](https://docs.microsoft.com/power-platform/admin/analytics-common-data-service). This reporting today accounts for interactive and non-interactive traffic. This helps you to quickly view adoption and user metrics for your organization. If your apps or flows primarily use the Dataverse, then these reports can serve as good approximations of the total usage of your solutions.
 
-Additionally, for Power Automate usage specifically, you can see the action usage for a given flow by selecting the **Analytics** action from the flow properties page, and this works across all types of actions. However, if your apps or flows do not use the Dataverse, then at this time there are no reports available in the Power Platform Admin center, although this will be available during 2020 Release Wave 2. Administrators will also be notified via email about overages as a part of 2020 Release Wave 2.
+Additionally, for Power Automate usage specifically, you can see the action usage for a given flow by selecting the **Analytics** action from the flow properties page, and this works across all types of actions. However, if your apps or flows do not use the Dataverse, then there are no reports available in the Power Platform admin center at this time.
 
 ### What happens if a user or integration exceeds request capacity?
 
@@ -132,15 +132,15 @@ In addition, there are other applicable limits for [Dataverse](https://docs.micr
 
 ### Will there be a transition period for existing customers?
 
-Yes, all customers are in a transition period. That means that enforcement of the limits is not as strict compared to once the transition period ends, which will be after the full reporting is available in the Power Platform admin center (2020 release wave 2). This does not mean there are *no* daily limits - it simply means that the currently enforced limits are more generous than the stated limits, in order to prevent potential unintended impact on your apps or flows.
+Yes, all customers are in a transition period. That means that enforcement of the limits is not as strict compared to once the transition period ends, which will be after the full reporting is available in the Power Platform admin center. This does not mean there are *no* daily limits - it simply means that the currently enforced limits are more generous than the stated limits, in order to prevent potential unintended impact on your apps or flows.
 
 Additionally, as enforcement is currently less strict, there is no facility to yet assign the **Power Apps and Power Automate capacity add-on** to a user. However, it is recommended that you purchase these add-ons now to remain within your license terms and to be prepared for when the transition period ends. 
 
 ### Will my integrations stop working if application users exceed base request capacity?
 
-We do not currently stop integrations for occasional and reasonable overages. Administrators can see usage in the Power Platform admin center (for the Dataverse, with general reporting coming during 2020 release wave 2). However, at this time, if a user or flow exceeds the limits consistently for an extended period of time, that user may be disabled or flow turned off.
+We do not currently stop integrations for occasional and reasonable overages. For flows that use Dataverse, administrators can see usage in the Analytics section of the Power Platform admin center. However, at this time, if a user or flow exceeds the limits consistently for an extended period of time, that user may be disabled or flow turned off.
 
-Once the transition period ends, certain operations will additionally be blocked when a tenant exceeds their Power Platform request limits. These blocked operations will primarily be in administration and customization areas, but not limited to these operations (and may expand into other areas as well, depending on the overage scenarios). 
+Once the transition period ends, certain operations will additionally be blocked when a tenant exceeds their Microsoft Power Platform request limits. These blocked operations will primarily be in administration and customization areas, but not limited to these operations (and may expand into other areas as well, depending on the overage scenarios). 
 
 ### What account's limits are used for classic workflows or Power Automate flows?
 
@@ -148,7 +148,7 @@ It depends if the process is run on-demand or in the background. Instant flows, 
 
 ### Do the Microsoft Power Platform request limits roll over from day to day or month to month?
 
-No. As it is a service performance limit, all the Power Platform request limits are calculated on a rolling 24-hour period. If they aren't consumed, they don't roll over to the next day or next month.
+No. As it is a service performance limit, all the Microsoft Power Platform request limits are calculated on a rolling 24-hour period. If they aren't consumed, they don't roll over to the next day or next month.
 
 ### Does each application user, non-interactive user, administrative user, or SYSTEM user get their own tenant-level limit?
 
@@ -163,4 +163,7 @@ Yes, if these requests are making CRUD, assign, or share&ndash;type requests, th
 No, third-party data integration tools are subject to the exact same limits as scheduled, instant, or automated flows. Thus, there is no difference whether you choose to use Power Automate or a third-party tool. Moreover, requests from Power Automate to the Dataverse are not double-counted, a flow that calls one action will only count as one request against their limit, not two.
 
 ### See also
-[Dataverse API limits overview](https://docs.microsoft.com/powerapps/maker/common-data-service/api-limits-overview)
+[Dataverse API limits overview](https://docs.microsoft.com/powerapps/maker/common-data-service/api-limits-overview) <br />
+[Power Automate limits and configuration](https://docs.microsoft.com/power-automate/limits-and-config)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

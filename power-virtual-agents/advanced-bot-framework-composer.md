@@ -665,3 +665,6 @@ To learn more about developing in Bot Framework Composer, see these resources:
 - [Tutorial: Add cards and buttons to your bot](/composer/tutorial/tutorial-cards)
 - [Tutorial: Add language generation to your bot](/composer/tutorial/tutorial-language-generation)
 - [Bot Framework Composer on GitHub](https://github.com/Microsoft/BotFramework-Composer)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

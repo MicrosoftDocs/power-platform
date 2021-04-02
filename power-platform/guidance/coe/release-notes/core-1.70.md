@@ -19,8 +19,6 @@ search.app:
 
 # Released version Core Components 1.70
 
-## Introduction
-
 Version 1.70 for the CoE Starter Kit Core Components is now available. This article describes the updates, including the new features and the fixes to existing functionality, included in this release. This version was first made available on September 21, 2020.
 
 ## Modern Solution Import Experience
@@ -42,3 +40,6 @@ To help with the setup, the custom connector used in the [Audit Log components](
 ## Deprecation
 
 The DLP Editor and DLP Customizer canvas apps have been deprecated, due to limitations with the DLP actions in the Power Platform for Admins connector.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

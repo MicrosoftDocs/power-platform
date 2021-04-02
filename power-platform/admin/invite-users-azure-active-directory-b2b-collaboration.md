@@ -4,9 +4,9 @@ description: Invite users with Azure Active Directory B2B collaboration
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/08/2020
-author: jayasreekumar
-ms.author: jkumar
+ms.date: 01/27/2021
+author: jimholtz
+ms.author: jimholtz
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
 search.audienceType: 
@@ -21,14 +21,12 @@ search.app:
 
 You can invite other users to access your environment. The [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] Global admin can do this through the [Azure portal](https://portal.azure.com). Invited users can access your environment using their own login credentials once a license and a security role are assigned to them. You don’t need to create a new user account and temporary password for these invited users in your own [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] tenant.  
   
-<a name="BKMK_Requirements"></a>   
 ## Requirements  
   
 - To send  business-to-business (B2B) user invitations, you  must have an [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)] Global admin role.  
   
 - To bulk- invite users, get the latest [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)][!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] which can be downloaded from the [PowerShell module's release page](https://www.powershellgallery.com/packages/AzureADPreview/2.0.0.98).  
   
-<a name="BKMK_Incompatibilities"></a>   
 ## Incompatibilities  
  The following features are not supported for B2B invited users.  
   
@@ -46,7 +44,9 @@ You can invite other users to access your environment. The [!INCLUDE[pn_Office_3
   
    [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)] connects a group to customer engagement apps. Data (including new conversations and documents) are stored in the [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] and/or [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] system. Since invited users belong to a different [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] tenant, the invited users do not have permission to create [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)] in the invited-to [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] tenant. However, they can participate in the [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)] conversations as a guest in their [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] Inbox, but not within customer engagement apps.  
   
-<a name="BKMK_InviteUser"></a>   
+5. Dynamics 365 Customer Voice
+   
+   Invited users will not be able to use Dynamics 365 Customer Voice. You must create a new user in your tenant and then provide access to the new user.
 
 ## Invite a user  
  You can add users to through [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)] B2B user collaboration. Global admins and limited admins can use the [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] portal to invite B2B collaboration users to the directory, to any security group, or to any application.  
@@ -78,7 +78,6 @@ You can invite other users to access your environment. The [!INCLUDE[pn_Office_3
 > [!NOTE]
 >  Until you add a license to the user account, the user will not have access to customer engagement apps. Follow the steps below to add a license through the [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] portal.  
   
-<a name="BKMK_UpdateUserName"></a>   
 ## Update user’s name and usage location  
  To assign a license, the invited user’s **Usage location** must be specified. Admins can update the invited user’s profile on the [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] portal.  
   
@@ -94,7 +93,6 @@ You can invite other users to access your environment. The [!INCLUDE[pn_Office_3
   
 4. Click **Save**, and then close the Profile blade.  
   
-<a name="BKMK_AssignLicense"></a>   
 ## Assign invited users a license and security role  
  Assign your invited users a license and security role so the user can use customer engagement apps.  
   
@@ -116,11 +114,9 @@ You can invite other users to access your environment. The [!INCLUDE[pn_Office_3
   
    Next, assign the invited users with appropriate security roles for the environment so they can access it. See [Create users and assign security roles](../admin/create-users-assign-online-security-roles.md).  
   
-<a name="BKMK_ApproveEmail"></a>   
 ## Approve email or enable mailbox (not supported)  
  Since server-side synchronization is not supported, System admins cannot approve an invited email address or mailbox since emails cannot be synced from the invited user’s [!INCLUDE[pn_Microsoft_Exchange](../includes/pn-microsoft-exchange.md)].  
   
-<a name="BKMK_NotifyUser"></a>   
 ## Notify your invited users  
  To complete the user invitation, notify your invited users and provide them with the URL for the environment they are invited to (for example, https://contoso.crm.dynamics.com).  
   
@@ -130,3 +126,6 @@ You can invite other users to access your environment. The [!INCLUDE[pn_Office_3
  [Azure Active Directory B2B collaboration frequently-asked questions (FAQ)](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-faq)   
  [Azure Active Directory B2B Collaboration](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)   
  [Azure AD B2B: New updates make cross-business collab easy](https://blogs.technet.microsoft.com/enterprisemobility/2017/02/01/azure-ad-b2b-new-updates-make-cross-business-collab-easy/)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

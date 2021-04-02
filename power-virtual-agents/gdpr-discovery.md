@@ -32,3 +32,6 @@ Aggregated metrics | Used to determine bot behavior.
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

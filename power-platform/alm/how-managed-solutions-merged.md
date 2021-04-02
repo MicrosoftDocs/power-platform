@@ -1,6 +1,6 @@
 ---
-title: "How managed solutions are merged (Microsoft Dataverse) | Microsoft Docs" 
-description: "To avoid multiple installed solutions from interfering with one another, follow best practices while constructing a solution" 
+title: "How managed solutions are merged (Microsoft Dataverse)" 
+description: "To avoid multiple installed solutions from interfering with one another, follow best practices while constructing a solution." 
 ms.custom: ""
 ms.date: 09/09/2020
 ms.reviewer: ""
@@ -69,3 +69,6 @@ When the Conflicts Tab appears on an imported form, you can move the component d
 ### See also  
 
 [Use a solution to customize](use-solutions-for-your-customizations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

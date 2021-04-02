@@ -37,7 +37,7 @@ If you're an administrator, you can determine the region of each environment in 
 
 ## What regions are available?
 
-Select the **View Report** button in [Dynamics 365 and Power Platform availability](https://dynamics.microsoft.com/geographic-availability/).
+Select the **View Report** button in [Dynamics 365 and Microsoft Power Platform availability](https://dynamics.microsoft.com/geographic-availability/).
 
 ## Who can create environments in these regions?
 
@@ -80,3 +80,6 @@ For optimal performance, if your users are in Europe, create and use the environ
 ## Can I create an environment outside of my tenant region?
 
 Currently, there are limits to creating an environment for a region that differs from your tenant region. Please contact your account manager or [Technical Support](get-help-support.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

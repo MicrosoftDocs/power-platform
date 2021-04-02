@@ -30,7 +30,7 @@ To let users in your organization use the improved duplicate detection and merge
 
     **- OR -**
 
-    In the Power Platform admin center, select **Environments** \> **Settings** \> **Data Management** \> **Duplicate Detection Settings**.
+    In the Microsoft Power Platform admin center, select **Environments** \> **Settings** \> **Data Management** \> **Duplicate Detection Settings**.
 
 1. For **Enable improved duplicate detection and merge experience**, select **Yes** and then select **OK**.
 
@@ -40,3 +40,6 @@ To let users in your organization use the improved duplicate detection and merge
 ### See also
 [What happens when duplicates are found while qualifying leads?](https://docs.microsoft.com/dynamics365/sales-enterprise/qualify-lead-convert-opportunity-sales#what-happens-when-duplicates-are-found-while-qualifying-leads)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

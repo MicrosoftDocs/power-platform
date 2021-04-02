@@ -1,12 +1,12 @@
 ---
 title: "DLP SDK | MicrosoftDocs"
-description: Power Platform data loss prevention (DLP) SDK
+description: Microsoft Power Platform data loss prevention (DLP) SDK
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 10/09/2020
-author: jayasreekumar
-ms.author: jkumar
+author: jimholtz
+ms.author: jimholtz
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
 search.audienceType: 
@@ -58,3 +58,6 @@ This sample calls DLP APIs in Microsoft.PowerApps.Administration.PowerShell to c
 
 This sample provides some DLP scenarios about how to call DLP APIs for your reference. You can run the sample and see the result.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

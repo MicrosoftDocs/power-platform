@@ -101,3 +101,6 @@ If you're planning to run a Training in a Day event, use this canvas app to enab
 **Prerequisite**: This app uses Dataverse; a Premium license is therefore required for everyone in your org.
 
 ![Training in a Day Registration app](media/coe70.png "Training in a Day Registration app")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -19,9 +19,9 @@ search.app:
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-We've improved how you view metrics for your organization. You no longer need to install or update a solution. Instead, you can view Dataverse analytics right from the Power Platform admin center to quickly view adoption ad user metrics for your organization. 
+We've improved how you view metrics for your organization. You no longer need to install or update a solution. Instead, you can view Dataverse analytics right from the Microsoft Power Platform admin center to quickly view adoption and user metrics for your organization. 
 
-To access these reports:
+To access these reports:<!-- Edit note: Do you still select Common Data Service and not Dataverse. -->
 
 1. Go to the navigation bar on the left side.
 2. Select **Analytics**.
@@ -317,3 +317,6 @@ Select the environment and time-period from the drop-down lists, and then select
 
 > [!div class="mx-imgBorder"] 
 > ![Dataverse analytics change filters apply](./media/organization-insights-change-filters-apply.png "Dataverse analytics change filters apply")  
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

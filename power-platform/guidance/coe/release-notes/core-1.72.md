@@ -19,10 +19,10 @@ search.app:
 
 # Released version Core Components 1.72
 
-## Introduction
-
 Version 1.72 for the CoE Starter Kit Core Components is now available. This article describes the updates, including the new features and the fixes to existing functionality, included in this release. This version was first made available on January 6, 2021.
 
 ## Sync Flows
 
 All Sync flows have been updated to use the Common Data Service (Current Environment) connector. This will improve reliability and performance.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

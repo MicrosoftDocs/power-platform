@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/08/2020
+ms.date: 02/17/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -36,7 +36,7 @@ The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service,
 ## Case-on-hold support  
  One feature of SLA tracking is the ability to control the case-on-hold status. For example, this functionality lets you pause a case for a time when the case is on hold waiting for a response from the customer. Once the response is received, the case is resumed.  
   
- System administrators turn on SLAs and select case hold functionality in the web app using **Settings** > **Service Management** > **Service Configuration Settings**. Afterwards, CSR Managers can create SLAs using the enhanced SLA type that allows pause and resume functionality. SLAs are created in **Settings** > **Service Management**.  
+ System administrators turn on SLAs and select case hold functionality in the web app using **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings** > **Settings** > **Service Management** > **Service Configuration Settings**. Afterwards, CSR Managers can create SLAs using the enhanced SLA type that allows pause and resume functionality. SLAs are created in **Settings** > **Service Management**.  
   
  [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Define service level agreements (SLAs)](https://docs.microsoft.com/dynamics365/customer-service/define-service-level-agreements)  
   
@@ -57,3 +57,6 @@ The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service,
 ### See also  
  [Video: SLA Enhancements in Microsoft Dynamics CRM 2015](https://youtu.be/rgmPqLsG8WI)   
  [Enable languages](../admin/enable-languages.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

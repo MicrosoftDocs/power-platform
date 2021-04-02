@@ -1,6 +1,6 @@
 ---
-title: "Move from unmanaged to managed solution ALM with Power Apps | Microsoft Docs"
-description: "Learn how to move from unmanaged to managed solutions to support ALM with Power Apps"
+title: "Move from unmanaged to managed solutions to support healthy ALM with Power Apps"
+description: "Learn how to move from unmanaged to managed solutions in your organization to support healthy application lifecycle management (ALM) with Power Apps."
 keywords: 
 author: Mattp123
 ms.author: matp
@@ -87,3 +87,6 @@ Larger, more complex projects require these tasks:<!--This would be better as a 
 
 ###  See also
 [Scenario 4: Supporting team development](team-development-alm.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

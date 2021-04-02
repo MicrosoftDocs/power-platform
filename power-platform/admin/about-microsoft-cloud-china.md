@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/06/2021
+ms.date: 02/04/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -76,6 +76,10 @@ Due to certain technological dependencies, the following features listed will no
   - [Marketing (for >10 users)](https://docs.microsoft.com/dynamics365/customer-engagement/marketing/help-hub)
   - [Microsoft Social Engagement](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/integrate-social-engagement-dynamics-365)
 
+## Enable server-side synchronization functionality for Exchange Online in China
+
+To connect Dynamics 365 with your Exchange Online tenant in China and use server-side synchronization functionality, see [Enable server-side synchronization functionality for Exchange Online in China](connect-exchange-online.md#enable-server-side-synchronization-functionality-for-exchange-online-in-china).
+
 
 ## Additional resources
 - [Apps Operated by 21Vianet Support](21vianet-support.md)
@@ -88,3 +92,6 @@ Due to certain technological dependencies, the following features listed will no
 - [OSPT (世纪互联在线服务的服务级别协议)](https://www.21vbluecloud.com/ostpt/)
 - [Azure Docs (in Chinese)](https://docs.azure.cn/zh-cn/)
 - [Azure China 21Vianet](https://docs.microsoft.com/azure/china/china-welcome)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -23,9 +23,9 @@ search.app:
 Application lifecycle management (ALM) is important as the applications your organization builds become more complex and as more of your company depends on their stability. In this topic we discuss using ALM to handle more complex scenarios.
 
 > [!NOTE]
-> Check out our new [application lifecycle management (ALM) guide for Power Platform](/power-platform/alm)!
+> Check out our new [application lifecycle management (ALM) guide for Microsoft Power Platform](/power-platform/alm)!
 
-ALM is not a one-size-fits-all concept. It can vary from organization to organization and even within, based on the type of solution being built. If you were to look at a typical mission-critical solution, the following would be a good health check of your current Power Platform ALM maturity:
+ALM is not a one-size-fits-all concept. It can vary from organization to organization and even within, based on the type of solution being built. If you were to look at a typical mission-critical solution, the following would be a good health check of your current Microsoft Power Platform ALM maturity:
 
 - **Are you deploying managed solutions?** Managed solutions are how Microsoft intends for solutions to be deployed to environments beyond development. All ALM tooling and solution features from Microsoft to support deployment will be targeted toward this goal.
 - **Are your development environments single purpose?** As much as capacity allows, you should try to have individual development environments for each solution. This ensures you don't get cross-solution contamination.
@@ -164,3 +164,6 @@ So far, we've only talked about importing Dataverse solutions manually via the u
 It is also possible for developers to build custom code that reacts to events from the package deployment process. This code can be used to handle updates to the target environment. Once the package is built, the package can be deployed interactively via the tool, or by command line using PowerShell. More information: [Create packages for the Package Deployer](https://docs.microsoft.com/powerapps/developer/common-data-service/package-deployer/create-packages-package-deployer)
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

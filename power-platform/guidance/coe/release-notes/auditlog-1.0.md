@@ -19,8 +19,6 @@ search.app:
 
 # Released version Audit Log Components 1.0
 
-## Introduction
-
 Version 1.2 for the CoE Starter Kit Audit Log Components is now available. This article describes the updates, including the new features and the fixes to existing functionality, included in this release. This version was first made available on July 8, 2020.
 
 ## [Child] Admin | Sync Logs
@@ -29,3 +27,6 @@ A filter has been added to this flow to only process relevant audit log events (
 
 > [!IMPORTANT]
 > If you are using a previous version of the Audit Log solution we recommend you upgrade as soon as possible, to improve performance and reliability of the Audit Log data available to the CoE Starter Kit.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

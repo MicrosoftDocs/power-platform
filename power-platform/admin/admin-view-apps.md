@@ -20,7 +20,7 @@ search.app:
 
 With the retirement of the Power Apps admin center, this feature is no longer available.
 
-You can view apps in your environments. In the Power Platform admin center, select an environment and then select an item in the **Resources** section. See [Manage Power Apps](admin-manage-apps.md#manage-power-apps). 
+You can view apps in your environments. In the Microsoft Power Platform admin center, select an environment and then select an item in the **Resources** section. See [Manage Power Apps](admin-manage-apps.md#manage-power-apps). 
 
 <!--
 If you're an Environment admin, you can view and download a list of apps created in the environments that you're administering. If you're a 365 Global admin or Power Platform admin, you can view and download a list of apps created in all of the environments in your organization.
@@ -56,3 +56,6 @@ In this topic, you learned how to download and view a list of apps created in an
 > [!div class="nextstepaction"]
 > [Manage apps created in your organization](admin-manage-apps.md)
 -->
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

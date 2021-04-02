@@ -30,7 +30,7 @@ The following table shows tasks that are associated with changing regional and l
 
 ## Enable the language  
 
-These settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Product** > **Languages**.
+These settings can be found in the Microsoft Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Product** > **Languages**.
 
 Make sure you have the System Administrator or System Customizer security role or equivalent permissions to update the setting.
 
@@ -61,3 +61,6 @@ Make sure you have the System Administrator or System Customizer security role o
  Each user selects the language to display in an app.  See [Languages tab options](https://docs.microsoft.com/powerapps/user/set-personal-options#languages-tab-options).
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

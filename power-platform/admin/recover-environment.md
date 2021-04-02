@@ -17,7 +17,7 @@ search.app:
 ---
 # Recover environment
 
-You can recover a recently deleted environment ([within 7 days of deletion](backup-restore-environments.md#how-long-are-my-manualon-demand-backups-and-system-backups-retained)), by using the Power Platform admin center or the Power Apps cmdlet Recover-AdminPowerAppEnvironment.
+You can recover a recently deleted environment ([within 7 days of deletion](backup-restore-environments.md#how-long-are-my-manualon-demand-backups-and-system-backups-retained)), by using the Microsoft Power Platform admin center or the Power Apps cmdlet Recover-AdminPowerAppEnvironment.
 
 > [!NOTE]
 > Available storage capacity might be required in order to successfully recover an environment depending on the type of environment being recovered. For information on viewing your current storage capacity, see [Microsoft Dataverse storage capacity](capacity-storage.md). 
@@ -73,5 +73,8 @@ To learn more on using PowerShell cmdlets for environments, see [Power Apps cmdl
 [Manage sandbox environments](sandbox-environments.md) <br />
 [Environments overview](environments-overview.md) <br />
 [Cmdlet list - Admin Cmdlets](powerapps-powershell.md#cmdlet-list---admin-cmdlets) <br />
-[Licensing overview for Power Platform](pricing-billing-skus.md)
+[Licensing overview for Microsoft Power Platform](pricing-billing-skus.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -5,8 +5,8 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/11/2020
-author: jayasreekumar
-ms.author: jkumar
+author: jimholtz
+ms.author: jimholtz
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
 search.audienceType: 
@@ -115,3 +115,6 @@ Customer engagement apps use Azure Active Directory as the identity provider.  T
 - To enforce users to reauthenticate, users are required to sign in with their credentials after they signed out within the application. 
 - To prevent users from sharing credentials to access customer engagement apps, the user access token is validated to ensure that the user who was given access by the identity provider is the same user who is accessing customer engagement apps.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

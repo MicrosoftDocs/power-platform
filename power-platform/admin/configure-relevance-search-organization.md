@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/17/2020
+ms.date: 02/09/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -53,7 +53,7 @@ All searchable fields in Relevance Search  are processed in the language most cl
 
 ## Enable Relevance Search
 
-Relevance Search is an opt-in feature, set to off by default. Enabling Relevance Search makes this search option available to all members of your organization.
+Relevance Search is an opt-in feature, set to off by default. Enabling Relevance Search makes this search option available to all members of your organization. Relevance Search does not support lifecycle operations (create, delete, backup, recover, copy, reset, and so on). In the event of such an operation, re-enable Relevance Search.
 
 To enable Relevance Search, do the following:
 
@@ -71,6 +71,8 @@ The new search experience is available as a feature setting in the Power Platfor
 
 > [!NOTE]
 > The **Use new search experience feature** setting is only available for environments where Relevance Search is already turned on. For environments where Relevance Search has never been not turned on, the setting **Use new search experience** will not be shown and the new experience is turned on by default.
+> 
+> If you opt in to early access for 2021 Release Wave 1 updates and Relevance Search is enabled then the new Relevance Search experience is turned on for all users. Users won't have the option to use categorized search anymore. For more information, see [Opt in to early access updates](opt-in-early-access-updates.md).
 
 To enable the new Relevance Search experience:
 
@@ -230,3 +232,5 @@ Your organization’s queries and results are reviewed by people using secured c
 ### See also  
  [Use relevance search to search for records](https://docs.microsoft.com/powerapps/user/relevance-search) <br />
  [Use the new Relevance Search experience](https://docs.microsoft.com/powerapps/user/relevance-search#use-the-new-relevance-search-experience)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

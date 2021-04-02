@@ -1,6 +1,6 @@
 ---
-title: "Global and Power Platform admins can administer without a license | MicrosoftDocs"
-description: Global and Power Platform admins can administer without a license 
+title: "Administrator access for unlicensed Power Platform and Global admins"
+description: "Learn about the levels of permission in customer engagement apps available for Global admins and Microsoft Power Platform admins who don't have a license."
 author: paulliew
 ms.author: paulliew
 ms.reviewer: jimholtz
@@ -18,7 +18,7 @@ search.app:
 ---
 # Global admins and Power Platform admins can administer without a license
 
-By default, all Global admin and Power Platform admins who do not have a license are granted the following two levels of permission in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation).  
+By default, all Global admin and Microsoft Power Platform admins who do not have a license are granted the following two levels of permission in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation).  
   
 - System administrator security role  
 - Administrative access mode  
@@ -54,3 +54,6 @@ To give these administrators access to additional areas, such as the Sales, Mark
 ### See also  
 [Assigning admin roles](https://support.office.com/article/Assign-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504) <br />
 [Create an Administrative user account](https://docs.microsoft.com/power-platform/admin/create-users-assign-online-security-roles#create-an-administrative-user-account)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

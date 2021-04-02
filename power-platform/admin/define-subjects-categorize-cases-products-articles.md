@@ -1,12 +1,12 @@
 ---
-title: "Define subjects to categorize cases, products, and articles   | MicrosoftDocs"
-description: Define subjects to categorize cases, products, and articles
+title: "Define subjects to categorize cases, products, and articles"
+description: "Learn to create and edit subjects to categorize service cases, knowledge base articles, products, and sales literature in customer engagement apps."
 author: shubhadaj
 manager: shujoshi
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/04/2020
+ms.date: 02/17/2021
 ms.author: shujoshi
 search.audienceType: 
   - admin
@@ -37,8 +37,10 @@ The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service,
 
 
 ## Create or edit a subject  (Customer Service app) 
+
+1. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
   
-1. In the web app, go to **Settings** > **Business Management**. Select **Subjects**. You can also get there by going to **Settings** > **Service Management** > **Subjects**.  
+2. Select **Subjects**. 
   
 2. To add a subject, under **Common Tasks**, select **Add a Subject**.  
   
@@ -61,3 +63,6 @@ The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service,
 4. Select **OK**.  
   
 ### See also 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

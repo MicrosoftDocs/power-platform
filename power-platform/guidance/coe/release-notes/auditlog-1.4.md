@@ -19,10 +19,11 @@ search.app:
 
 # Released version Audit Log Components 1.4
 
-## Introduction
-
 Version 1.4 for the CoE Starter Kit Audit Log Components is now available. This article describes the updates, including the new features and the fixes to existing functionality, included in this release. This version was first made available on February 1, 2021.
 
 ## Cloud flows
 
 Cloud flows have been updated to use the Common Data Service (current environment) connector to increase reliability and performance.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

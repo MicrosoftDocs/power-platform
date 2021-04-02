@@ -1,12 +1,13 @@
 ---
 title: "Best practices for server-side synchronization  | MicrosoftDocs"
 description: Best practices for server-side synchronization
-author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/04/2020
-ms.author: jimholtz
+author: revachauhan
+ms.author: rechauha
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
@@ -74,3 +75,6 @@ Consider the following when planning and deploying server-side synchronization.
 ### See also  
 [Server-side synchronization](../admin/server-side-synchronization.md) 
 [Troubleshooting server-side synchronization](../admin/troubleshooting-monitoring-server-side-synchronization.md)   
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

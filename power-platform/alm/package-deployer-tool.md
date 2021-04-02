@@ -487,3 +487,6 @@ While deploying the packages, Dataverse administrators must:
 ### See also
 
 [Solution Packager tool](solution-packager-tool.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

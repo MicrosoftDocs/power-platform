@@ -17,7 +17,7 @@ search.app:
 ---
 # Copy an environment
 
-You can use Copy environment in the Power Platform admin center to copy the customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), and all data from any environment to a sandbox environment. You can select two levels of copy: **Everything** or **Customizations and schemas only**.  
+You can use Copy environment in the Microsoft Power Platform admin center to copy the customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), and all data from any environment to a sandbox environment. You can select two levels of copy: **Everything** or **Customizations and schemas only**.  
 
 > [!div class="mx-imgBorder"] 
 > ![Copy menu](media/copy-menu.png "Copy menu")
@@ -183,3 +183,6 @@ Power Virtual Agent resources were recently included as part of the copy operati
 [Legacy storage capacity](legacy-capacity-storage.md)
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

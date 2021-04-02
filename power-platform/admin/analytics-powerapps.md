@@ -17,7 +17,7 @@ search.app:
 ---
 # Admin Analytics for Power Apps
 
-Analytics for the environment admin is available at the Power Platform admin center. The admin reports provide a view into environment level usage, errors, service performance to drive governance, and change management services to users. These reports are available for canvas apps only and not available for model-driven apps.
+Analytics for the environment admin is available at the Microsoft Power Platform admin center. The admin reports provide a view into environment level usage, errors, service performance to drive governance, and change management services to users. These reports are available for canvas apps only and not available for model-driven apps.
 
 To access these reports, sign in to the Power Platform admin center and select **Analytics** > **Power Apps**. Reports appear in a menu bar at the top of the page.
 
@@ -105,3 +105,6 @@ Select the environment and time period from the drop-down lists, and then select
 
 ### Why are some apps missing in my report?
 Currently, Power Apps analytics reports do not display model-driven apps data. Only canvas apps related data is displayed.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

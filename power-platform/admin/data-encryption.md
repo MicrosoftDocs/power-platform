@@ -5,8 +5,8 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/04/2020
-author: jayasreekumar
-ms.author: jkumar
+author: Mattp123
+ms.author: matp
 ms.reviewer: matp
 ms.custom: "admin-security"
 search.audienceType: 
@@ -29,7 +29,7 @@ Users who have the system administrator security role can change the encryption 
 
 ## Change an organization encryption key  
 
-These settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Encryption** > **Data encryption**.
+These settings can be found in the Microsoft Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Encryption** > **Data encryption**.
 
 Make sure you have the System Administrator or System Customizer security role or equivalent permissions to update the setting.
 
@@ -66,3 +66,6 @@ Make sure you have the System Administrator or System Customizer security role o
  [FIPS 140 Evaluation](https://technet.microsoft.com/library/cc750357.aspx)   
  [Manage Your Data](add-remove-sample-data.md)   
  [Manage configuration data](manage-configuration-data.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

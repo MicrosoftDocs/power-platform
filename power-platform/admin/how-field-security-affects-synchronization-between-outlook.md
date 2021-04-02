@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/08/2020
+ms.date: 02/17/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -38,20 +38,22 @@ Securing a field with field-level security can impact synchronization between cu
  ![Job Title field](../admin/media/job-title-field.png "Job Title field")  
   
  He did the following steps:  
+
+1. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+
+2. Select **Settings** > **Customizations**.
   
-1. In the web app, go to **Settings** > **Customizations**.
+3. Select **Customize the System**.  
   
-2. Choose **Customize the System**.  
+4. Expand **Entities** > **Contact**.  
   
-3. Expand **Entities** > **Contact**.  
+5. Select **Fields** and select **jobtitle**. There are a lot of Contact fields so you'll need to advance several pages.  
   
-4. Choose **Fields** and select **jobtitle**. There are a lot of Contact fields so you'll need to advance several pages.  
+6. Select **Edit**.  
   
-5. Choose **Edit**.  
+7. For Field Security, select **Enable** > **Save and Close**.  
   
-6. For Field Security, choose **Enable** > **Save and Close**.  
-  
-7. Choose **Publish All Customizations**.  
+8. Select **Publish All Customizations**.  
   
    John also secured the following Contact fields so they won't appear in customer engagement apps: ftpsiteurl, governmentid  
   
@@ -61,31 +63,35 @@ Securing a field with field-level security can impact synchronization between cu
  ![Field Security Profile](../admin/media/field-security-profile.png "Field Security Profile")  
   
  He did the following to create the field security profile:  
+
+1. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+
+2. Select **Settings** > **Security**.
   
-1. In the web app, go to **Settings** > **Security**.
+3. Select **Field Security Profiles**.  
   
-2. Choose **Field Security Profiles**.  
+4. Create a profile. Select **New** and enter a Name.  
   
-3. Create a profile. Choose **New** and enter a Name.  
+5. Select **Save and Close**.  
   
-4. Choose **Save and Close**.  
+6. Select the new profile > **Users** > **Add**  
   
-5. Choose the new profile > **Users** > **Add**  
-  
-6. Select users and then choose **Select** > **Add**.  
+7. Select users and then celect **Select** > **Add**.  
   
 ### Set field permissions  
  With a field security profile created and users added to the profile, John can now set permissions on the fields to match his organization's requirements.  
   
  ![Edit Field Security form](../admin/media/edit-field-security.png "Edit Field Security form")  
   
-1. In the web app, go to **Settings** > **Security**.
+1. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+
+2. Select **Settings** > **Security**.
   
-2. Choose **Field Security Profiles** > your profile.  
+3. Select **Field Security Profiles** > your profile.  
   
-3. Choose **Field Permissions** > the field to secure > **Edit**  
+4. Select **Field Permissions** > the field to secure > **Edit**  
   
-4. Change the security settings to match your company's requirements and then choose **OK** > **Save and Close**.  
+5. Change the security settings to match your company's requirements and then select **OK** > **Save and Close**.  
   
 ### What the user sees  
  Nancy, a salesperson at Contoso, uses [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)] and creates a new contact and tracks it in Dynamics 365 apps.  
@@ -104,3 +110,6 @@ Securing a field with field-level security can impact synchronization between cu
   
 ### See also  
  [Field-level security](../admin/field-level-security.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

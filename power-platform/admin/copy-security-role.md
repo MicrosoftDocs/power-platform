@@ -32,7 +32,7 @@ If you want to create a security role that is similar to another security role, 
   
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
   
-2. In the Power Platform admin center, select an environment. 
+2. In the Microsoft Power Platform admin center, select an environment. 
 
 3. Select **Settings** > **Users + permissions** > **Security roles**.  
   
@@ -49,3 +49,6 @@ If you want to create a security role that is similar to another security role, 
  [Security roles](../admin/security-roles-privileges.md)   
  [Field-level security](../admin/field-level-security.md)
  [Prevent elevation of security role privilege](prevent-elevation-security-role-privilege.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

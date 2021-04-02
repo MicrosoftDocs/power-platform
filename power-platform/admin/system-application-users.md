@@ -4,9 +4,9 @@ description: About system and application users
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 01/08/2021
-author: jayasreekumar
-ms.author: jkumar
+ms.date: 01/25/2021
+author: paulliew
+ms.author: paulliew
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
 search.audienceType: 
@@ -53,7 +53,11 @@ Most of these users are hidden from user views but they can be found by using th
 | | CDSUserManagement | CDSUserManagement@onmicrosoft.com | To provision and synchronize users into Dataverse from Active Directory. | System Administrator |
 | |GDSGlobalDiscovery | GDSGlobalDiscovery@onmicrosoft.com | To validate which environments that users can access. | Global Discovery Service Role |
 | | BAP | BAP@onmicrosoft.com | To perform administrative operations on Dataverse linked environments: fetch user roles, provision users, assign roles in Power Platform portals.| N/A |
+| | Microsoft Forms Pro | enterprisesurveyappuser@contoso.com | To perform data integration between Dynamics 365 Customer Voice and Dataverse | System Administrator  |
+| | PowerVIrtualAgents  | PowerVirtualAgents@onmicrosoft.com | To manage the PVA capabilities within Dataverse environments | CCI Admin, System Customizer, and Environment Maker    |
+| | BizQA | BizQA@onmicrosoft.com | To access search telemetry to improve search experience | BizQAApp   |
 | | ProductInsights | ProductInsights@onmicrosoft.com | To export data from Customer Insights to Engagement Insights | DataLakeWorkspaceAppAccess    |
+| | Dynamics365 SalesForecasting | Dynamics365SalesForecasting@onmicrosoft.com | To fetch entity data and metadata for forecasting feature | ForecastAppUser    |
 
 
 **The purpose of the system account?** 
@@ -76,3 +80,6 @@ Most of these users are hidden from user views but they can be found by using th
 - The application user is a built-in user account that is used to perform integration and system back-end service to support a particular feature.  
 - Since these are built-in user accounts, they cannot be updated. The security role that is assigned to these accounts cannot be updated either.  This is to prevent any service outages.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

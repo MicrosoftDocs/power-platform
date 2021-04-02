@@ -56,3 +56,6 @@ If you receive a message that your sign-up couldn't be completed it means your o
 
 > [!div class="mx-imgBorder"]
 > ![Viral sign up disabled with message saying Sorry we can't finish signing you up](media/licensing-sign-up-disabled.jpg)
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

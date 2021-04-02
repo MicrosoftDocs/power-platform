@@ -46,3 +46,5 @@ Sample data gives you something to experiment with as you learn customer engagem
    - **Install Sample Data**, and then select **Close**.  
    - To close the screen without making changes, just select **Close**.
   
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

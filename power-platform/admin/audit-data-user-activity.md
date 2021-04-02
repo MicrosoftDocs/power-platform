@@ -1,14 +1,13 @@
 ---
-title: "Audit data and user activity for security and compliance  | MicrosoftDocs"
-description: Audit data and user activity for security and compliance
-author: pnghub
+title: "Audit data and user activity for security and compliance"
+description: "Learn how to use auditing to log changes to records and user access. System admins and customizers can use this feature to meet security and compliance policies."
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/11/2021
-ms.author: gned
+ms.date: 02/17/2021
+author: tjvass
+ms.author: tjvass
 ms.reviewer: jimholtz 
-
 search.audienceType: 
   - admin
 search.app:
@@ -51,7 +50,7 @@ System administrators and customizers can start or stop auditing for an organiza
 ## Start/stop auditing and set retention policy  
 This task requires the system administrator or customizer security role or equivalent permissions.  
   
-1. Browse to the Power Platform admin center and sign in using administrator credentials. 
+1. Browse to the Microsoft Power Platform admin center and sign in using administrator credentials. 
   
 2. Go to **Environments** > [select an environment] > **Settings** > expand **Audit and logs** > **Audit settings**.
   
@@ -79,11 +78,13 @@ This task requires the system administrator or customizer security role or equiv
   
 ## Set specific areas of the product to audit
 
-1. In the web app, go to **Settings** > **Administration**.
-  
-2. Choose **System Settings**, and then choose the **Auditing** tab.  
+1. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
 
-3. Select the entities you want to track. To start or stop auditing on specific entities, select or clear the following check boxes:  
+2. Select **Settings** > **Administration**.
+  
+3. Select **System Settings**, and then select the **Auditing** tab.  
+
+4. Select the entities you want to track. To start or stop auditing on specific entities, select or clear the following check boxes:  
   
   <!--  **Audit user access**. Tracks when a user accesses customer engagement apps (such as Dynamics 365 Sales and Customer Service), including the user name and time.  -->
    - **Common Entities**. Tracks common entities like Account, Contact, Goal, Product, and User.  
@@ -91,7 +92,7 @@ This task requires the system administrator or customizer security role or equiv
    - **Marketing Entities**. Tracks Campaign entity activity.  
    - **Customer Service Entities**. Tracks Case, Contract, Queue, and Service entity activity.  
   
-4. Select **OK**.  
+5. Select **OK**.  
 
 ## View audit logging details  
 System administrators can see activity for the entities that are enabled for audit logging.  
@@ -144,3 +145,6 @@ System administrators or customizers can change the default audit settings for e
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

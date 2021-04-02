@@ -56,7 +56,6 @@ The [sync flows](#flows) of the CoE Starter Kit sync your tenant resources to th
   - Number of apps (rollup)
   - Number of flows (rollup)
   - Number of custom connectors (rollup)
-  - Microsoft Teams ID and URL for environments of type Teams
   - Environment Owner (if environments are created by admins, manually store owner here)
   - Business Area
   - Approved Capacity

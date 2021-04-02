@@ -117,3 +117,6 @@ Table(
    :::column-end:::
 :::row-end:::
 --->
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

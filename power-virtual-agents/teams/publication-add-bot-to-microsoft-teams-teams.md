@@ -37,13 +37,12 @@ You can:
 ## Prerequisites
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations-teams.md)]
-- Your organization's [Microsoft Teams app permission policies](/microsoftteams/manage-power-platform-apps) will need to allow Power Platform apps to be added to Microsoft Teams before you or other users can directly install the bot in Microsoft Teams or find it in the Microsoft Teams app store **Built by your colleagues** section.  
+- Your organization's [Microsoft Teams app permission policies](/microsoftteams/manage-power-platform-apps) will need to allow Microsoft Power Platform apps to be added to Microsoft Teams before you or other users can directly install the bot in Microsoft Teams or find it in the Microsoft Teams app store **Built by your colleagues** section.  
     Bots that are approved for the **Built by your organization** section (after submission to an admin) are managed separately by admins in the Microsoft Teams admin center's [Manage apps page](/microsoftteams/submit-approve-custom-apps#validate).
 - Before installing the bot for yourself or sharing the bot with others, you should [publish the bot at least once](publication-fundamentals-publish-channels-teams.md).
 
 
 ## Install a bot as an app in Microsoft Teams
-
 
 
 After you have published a bot, you and people in your organization can install to chat with it in Microsoft Teams. Whenever you make updates to your bot and publish it, those updates will be reflected in everyone's copy of the bot.
@@ -77,8 +76,6 @@ You should add your bot to your own version of Teams before sharing it with othe
 
 **Share a link so others can add the bot:**
 
-
-
 1. Go to the **Chatbot** tab.
 
     :::image type="content" source="media/publish-chatbot-tab-on-homepage.png" alt-text="The chatbot tab is in the top navigation pane.":::
@@ -89,7 +86,7 @@ You should add your bot to your own version of Teams before sharing it with othe
 
 4. Select **Share the bot** 
 
-    This pops up a new window where you can customize how the bot will be shown to people searching for it on the Teams app store. 
+    This pops up a new window where you can customize how the bot will be shown to people searching for it on the Microsoft Teams app store. 
 
     :::image type="content" source="media/publish-teams-share-flyout.png" alt-text="Selecting Share the bot opens a new flyout window.":::
 
@@ -299,3 +296,6 @@ You can always reconnect your bot after disconnecting by selecting **Turn on Tea
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

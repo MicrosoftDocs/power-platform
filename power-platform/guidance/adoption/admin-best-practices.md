@@ -58,3 +58,6 @@ In this section, we'll explore some best practices to follow when establishing a
 
 [Microsoft Power Platform admin guide](/power-platform/admin/admin-documentation)<Br>
 [Microsoft Power Apps and Power Automate Admin Whitepaper](https://aka.ms/powerappsadminwhitepaper)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

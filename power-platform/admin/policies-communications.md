@@ -19,7 +19,7 @@ search.app:
 # Policies and Communications for service incidents
 
 ## Introduction
-Microsoft regularly communicates work done to maintain and update Dynamics 365, Power Platform (Power Apps, Power Automate, Power Virtual Agents, and other services) and all integrated Apps to ensure security, performance, availability, and to provide new features and functionality. Microsoft also communicates details of service incidents including the potential user experience, the start and end times of the incident, and any workaround that may be available. For each of these activities, communication is provided through the Microsoft 365 Admin center in the Message Center, and the Service health dashboard. From time-to-time, Microsoft may also send direct email to users with the System Administrator role in a specifically impacted environment. For example, during a service incident we attempt to deliver an organization-specific email to impacted System Administrators.
+Microsoft regularly communicates work done to maintain and update Dynamics 365, Microsoft Power Platform (Power Apps, Power Automate, Power Virtual Agents, and other services) and all integrated Apps to ensure security, performance, availability, and to provide new features and functionality. Microsoft also communicates details of service incidents including the potential user experience, the start and end times of the incident, and any workaround that may be available. For each of these activities, communication is provided through the Microsoft 365 admin center in the Message Center, and the Service health dashboard. From time-to-time, Microsoft may also send direct email to users with the System Administrator role in a specifically impacted environment. For example, during a service incident we attempt to deliver an organization-specific email to impacted System Administrators.
   
 If you’re not sure who your admin is, see [Find your administrator or support person](https://docs.microsoft.com/powerapps/user/find-admin).  
   
@@ -140,7 +140,7 @@ If your update is completed within the defined maintenance window, you won’t r
 
 ### How to sign up for notifications
 
-To receive communications regarding incidents, updates, or features, reach out to your Microsoft 365 administrator and ask to have your email address added to the Admin center notification page.
+To receive communications regarding incidents, updates, or features, reach out to your Microsoft 365 administrator and ask to have your email address added to the admin center notification page.
 
 <a name="bkmk_UnplannedMaintenance"></a>  
 
@@ -199,3 +199,6 @@ Please review [Notice About Online Policies and Similar Documents](https://www.m
 
 If you have any feedback, please fill out our [survey](https://forms.office.com/FormsPro/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxclc4NDdL5CqxoDKPhEMtxUQlNBTkhCWkZEQk1FM1JORU5XSTZFUFJNVyQlQCN0PWcu), and share your thoughts!
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

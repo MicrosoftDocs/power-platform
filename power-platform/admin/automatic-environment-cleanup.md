@@ -44,7 +44,7 @@ Here's what you can expect to receive if you (as an admin) or someone in your or
 
 ## Actions you can take to prevent environment disabling and deletion
 
-Any time prior to the environment deletion you can purchase licenses. Be sure to purchase enough licenses and/or capacity to cover all the production environments in your tenant. See [Licensing overview for Power Platform](pricing-billing-skus.md).
+Any time prior to the environment deletion you can purchase licenses. Be sure to purchase enough licenses and/or capacity to cover all the production environments in your tenant. See [Licensing overview for Microsoft Power Platform](pricing-billing-skus.md).
 
 Within 24 hours after the licenses and capacity are applied to your tenant, the environment will automatically be enabled and no longer be considered marked for deletion. If your environment has already been deleted, it is possible to recover it within a limited window of time. See [Recover environment](recover-environment.md).
 
@@ -53,5 +53,8 @@ Within 24 hours after the licenses and capacity are applied to your tenant, the 
 
 ### See also
 [Back up and restore environments](backup-restore-environments.md) <br />
-[Licensing overview for Power Platform](pricing-billing-skus.md)<br />
+[Licensing overview for Microsoft Power Platform](pricing-billing-skus.md)<br />
 [Microsoft Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

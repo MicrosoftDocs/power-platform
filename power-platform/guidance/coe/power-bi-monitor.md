@@ -163,7 +163,7 @@ Filters help you narrow down the view by connector creator, environment, or crea
 
 ![Custom Connector overview](media/pb-14.png "Custom Connector overview")
 
-## Connections
+## App Connections
 
 The **Connections** page shows which resources and makers are using which connectors and&mdash;at a high level&mdash;which resources and makers are using premium features.
 
@@ -173,7 +173,7 @@ The filters on this page are:
 
 - Connector (Microsoft 365 Users, Dataverse, Azure AD)
 
-The visuals then show you a list of all apps, flows, and makers using the tier or connector specified, in addition to the number of connections for the filters specified.
+The visuals then show you a list of all apps and makers using the tier or connector specified, in addition to the number of connections for the filters specified.
 
 ![Connections](media/pb-11.png "Connections")
 
@@ -234,3 +234,6 @@ The **desktop flow errors** page provides an overview of UI-based RPA flow runs 
 Filters on this page can help you narrow down this view by desktop flow type, run status, maker, and environment.
 
 ![Desktop flow errors](media/pb-18.png "Desktop flow errors")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

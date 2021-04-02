@@ -37,3 +37,6 @@ If you create an email message in customer engagement apps (Dynamics 365 Sales, 
   
 ### See also  
  [Integrate your email system](../admin/integrate-synchronize-your-email-system.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

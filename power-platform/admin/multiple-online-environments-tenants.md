@@ -102,7 +102,7 @@ The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service,
   
    For example, if User A has an account to access Tenant A their license allows them to access any and all environments created within Tenant A - if they are allowed by their administrator.  If User A needs to access environments within Tenant B, they will need an additional license.  
   
-- Each tenant will require Power Platform admin(s) with unique sign-in credentials, and each tenant affiliate will manage its tenant separately in the administrator console.  
+- Each tenant will require Microsoft Power Platform admin(s) with unique sign-in credentials, and each tenant affiliate will manage its tenant separately in the administrator console.  
   
 - Multiple environments within a tenant are visible from the interface if the administrator has access.  
   
@@ -154,3 +154,6 @@ The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service,
 ### See also
 [Blog: What is a tenant?](https://powerbi.microsoft.com/blog/what-is-a-tenant/) <br />
 [Environments overview](environments-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -57,3 +57,6 @@ To improve query performance, index management is executed automatically using A
   
 ### See also  
  [Performance tuning and optimization](../admin/performance-tuning-and-optimization.md)   
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

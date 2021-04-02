@@ -2,7 +2,7 @@
 title: "Configure user authentication"
 description: "Configure authentication with your identity provider to enable users to sign in when having a bot conversation."
 keywords: "Authentication, IdP, PVA, AAD"
-ms.date: 9/22/2020
+ms.date: 2/11/2021
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -181,16 +181,5 @@ Once you have your authentication configured, make sure to go to **Manage** -> *
 
 If authentication variables are being used in a topic, they will become **Unknown** variables. Go to the Topics page to see which topics have errors and fix them before publishing. 
 
-### Permanently remove the authentication configuration
 
-> [!Note]
-> Deleting the authentication information from the bot does not remove it from Azure Bot Service. If you want to clear the configuration from Azure Bot Service, you will need to contact your subscription owner, who will need to follow these steps. If these steps can't be followed, contact your Microsoft Support manager to have the issue resolved.
-
-1. Sign in to the [Azure Portal](https://portal.azure.com).
-
-1. Go to **Bot Services**.
-
-1. Select the connection to be deleted.
-
-1. Delete the connection.
-
+[!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
 title: Create and manage environments in Power Apps | Microsoft Docs
-description: Create and manage environments in the Power Apps Admin center
+description: Create and manage environments in the Power Apps admin center
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
@@ -16,7 +16,10 @@ search.app:
   - Flow
 ---
 
-# Create and manage environments in the Power Apps Admin center
+# Create and manage environments in the Power Apps admin center
 
-Creating and managing environments is now done in the [Power Platform admin center](create-environment.md).
+Creating and managing environments is now done in the Microsoft [Power Platform admin center](create-environment.md).
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

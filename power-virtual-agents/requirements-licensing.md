@@ -56,7 +56,7 @@ Purchase licenses for your organization by going to the [Microsoft 365 admin cen
 
 ## Acquire user licenses
 
-1. After you've purchased a Power Virtual Agents license from the Microsoft 365 Admin Center, you need to purchase user licenses to give users access to the product. In the Microsoft 365 admin center, go to **Billing**, and then select **Purchase services**.
+1. After you've purchased a Power Virtual Agents license from the Microsoft 365 admin center, you need to purchase user licenses to give users access to the product. In the Microsoft 365 admin center, go to **Billing**, and then select **Purchase services**.
 
 2. Scroll down to the **Add-ons** section.
 
@@ -84,7 +84,7 @@ Repeat these steps to add more users, or exit the Microsoft 365 admin center if 
   > [!NOTE]
   > To simplify user license management, you can assign licenses to an Azure Active Directory (Azure AD) security group. More information: [Assign licenses to users by group membership in Azure Active Directory](/azure/active-directory/users-groups-roles/licensing-groups-assign)
 
-The users can now sign in to the [Power Virtual Agents portal](https://powerva.microsoft.com).
+The users can now sign in to the [Power Virtual Agents portal](https://web.powerva.microsoft.com).
 
 ## How to differentiate between tenant and user licenses
 
@@ -113,3 +113,6 @@ See [Quotas and rate limit capacity considerations for Power Virtual Agents](req
 [See Power Automate request limits for Power Virtual Agents](requirements-quotas.md#power-automate-request-limits)
 [See how to use Power Automate with Power Virtual Agents](advanced-flow.md). 
 
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

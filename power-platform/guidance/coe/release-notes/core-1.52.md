@@ -19,8 +19,6 @@ search.app:
 
 # Released version Core Components 1.52
 
-## Introduction
-
 Version 1.52 for the CoE Starter Kit Core Components is now available. This article describes the updates, including the new features and the fixes to existing functionality, included in this release. This version was first made available on July 8, 2020.
 
 ## Power Virtual Agents inventory
@@ -66,3 +64,6 @@ This version also introduces a new Set Flow Permissions app that allows admins t
 ## Admin | Sync Template v3 (Check Deleted)
 
 This flow runs weekly, and compares CoE to the tenant to determine if any objects were deleted since last run. Either just marks them as deleted.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

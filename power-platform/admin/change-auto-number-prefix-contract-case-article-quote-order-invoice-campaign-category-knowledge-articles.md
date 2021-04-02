@@ -21,7 +21,7 @@ search.app:
 
 Contracts, cases, articles, quotes, orders, invoices, marketing campaigns, categories, and knowledge articles are automatically numbered. If your organization has standard numbering formats, you can change the default three-character prefixes and number format to match your organization.  
 
-These settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Data management** > **Auto numbering**.
+These settings can be found in the Microsoft Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Data management** > **Auto numbering**.
 
 Make sure you have the System Administrator or System Customizer security role or equivalent permissions to update the setting.
 
@@ -50,3 +50,6 @@ Make sure you have the System Administrator or System Customizer security role o
   
 ### See also  
  [Use solutions for your customizations](https://docs.microsoft.com/dynamics365/customer-engagement/customize/use-solutions-for-your-customizations)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

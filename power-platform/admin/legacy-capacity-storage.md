@@ -1,7 +1,7 @@
 ---
 title: "Legacy storage capacity  | MicrosoftDocs"
 description: About the legacy storage model.
-ms.date: 08/19/2020
+ms.date: 02/11/2021
 ms.reviewer: ""
 ms.service: "power-platform"
 ms.topic: "quickstart"
@@ -41,7 +41,7 @@ To see whether you have any of these licenses, sign in to the Microsoft 365 admi
 
 ## Verifying your legacy storage model
 
-1. Sign in to the Power Platform admin center, and then select an environment. 
+1. Sign in to the Microsoft Power Platform admin center, and then select an environment. 
 
 2. Select **Resources** > **Capacity**.
 
@@ -70,7 +70,7 @@ To view the **Summary** page, select **Resources** > **Capacity** > **Summary**.
 
 |Number  |Description |
 |---------|---------|
-|(1)   |**Storage capacity usage**  <ul><li>**File and database**: The following entities store data in file and database storage: <ul><li>Attachment</li><li>AnnotationBase</li><li>Any custom or out-of-the-box entity that has fields of datatype file or image (full size)</li><li>Any entity that is used by one or more installed Insights applications and [ends in *- Analytics*](#what-are-entities-ending-in---analytics-in-my-capacity-report) </li> </ul></li><li>**Log**: The following entities are used: <ul><li>AuditBase</li><li>PlugInTraceLogBase</li></ul><li>**Database only**: All other entities are counted for your database</li></ul> |
+|(1)   |**Storage capacity usage**  <ul><li>**File and database**: The following entities store data in file and database storage: <ul><li>Attachment</li><li>AnnotationBase</li><li>Any custom or out-of-the-box entity that has fields of datatype file or image (full size)</li><li>Any entity that is used by one or more installed Insights applications and [ends in *- Analytics*](#what-are-entities-ending-in---analytics-in-my-capacity-report) </li> </ul><ul><li>WebResourceBase</li></ul><ul><li>RibbonClientMetadataBase</li></ul></li><li>**Log**: The following entities are used: <ul><li>AuditBase</li><li>PlugInTraceLogBase</li></ul><li>**Database only**: All other entities are counted for your database</li></ul>  |
 |(2)    |**Storage capacity, by source** <ul><li>**Org (tenant) default**: The default capacity given at the time of sign-up </li><li>**User licenses**: Additional capacity added for every user license purchased</li><li>**Additional storage**: Any additional storage you bought </li><li>**Total**: Total storage available </li><li>**View self-service sources**: See [View self-service license amounts and storage capacity](view-self-service-capacity.md)</li></ul>      |
 |(3)     |**Top storage usage, by environment**: The environments that consume the most capacity        |
 
@@ -78,7 +78,17 @@ To view the **Summary** page, select **Resources** > **Capacity** > **Summary**.
 
 This page provides similar information as the **Summary** tab, but with an environment-level view of where your organization is using capacity.
 
-To view the **Storage capacity** page, select **Resources** > **Capacity** > **Storage capacity**. See the next section for using the **Details** button (![Details button](media/storage-data-details-button.png "Details button")) to see environment capacity analytics.
+To view the **Storage capacity** page, select **Resources** > **Capacity** > **Dataverse**. 
+
+Note the following features:
+
+|Feature  |Description  |
+|---------|---------|
+|Trial     | Select the **Trial** tab to list trial environments.        |
+|Download     | Select **Download** above the list of environments to download an Excel .CSV file with high-level storage information for each environment that the signed-in admin has permission to see in the Power Platform admin center.        |
+|Search     | Use **Search** to search by the environment name and the environment type.         |
+|Last updated   | The Last updated column shows when the environment was last updated.        |
+|Details  | See the next section for using the **Details** button (![Storage data details button](media/storage-data-details-button.png "Storage data details button")) to see environment capacity analytics.   |
 
 > [!div class="mx-imgBorder"] 
 > ![Storage capacity tab](media/capacity-old-license-model-storage-tab.png "Storage capacity tab")
@@ -98,7 +108,7 @@ This page provides an environment-level detailed view of where your organization
 
 **To view environment-level capacity analytics**
 
-1. Select **Resources** > **Capacity** > **Storage capacity**.
+1. Select **Resources** > **Capacity** > **Dataverse**.
 2. Select an environment.
 3. Select **Details** (![Details button](media/storage-data-details-button.png "Details button")).
 
@@ -167,3 +177,6 @@ Entities ending in “– Analytics” are entities used by one or more Insights
 [Free up storage space](free-storage-space.md) <br />
 [Capacity add-ons](capacity-add-on.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

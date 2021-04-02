@@ -131,3 +131,6 @@ The Cascade Merge operation grants access to the new owner of the subordinate en
 ### See also
 
 [Entity relationships overview](/powerapps/maker/common-data-service/create-edit-entity-relationships)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

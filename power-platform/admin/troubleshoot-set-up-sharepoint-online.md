@@ -5,7 +5,7 @@ author: Mattp123
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/11/2020
+ms.date: 02/17/2021
 ms.author: matp
 search.audienceType: 
   - admin
@@ -64,7 +64,8 @@ If FetchXML or LayoutXML are malformed, use the following to restore.
     Check your security role:
     1. Follow the steps in [View your user profile](https://docs.microsoft.com/powerapps/user/view-your-user-profile).
     2. Don't have the correct permissions? Contact your system administrator.
-2. In the web app, go to **Settings** > **Customizations** > **Solutions**. 
+
+2. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**, go to **Settings** > **Customizations** > **Solutions**. 
 3. Create a solution (named SharePointDocumentSolution). For more information, see [Create a solution](https://docs.microsoft.com/powerapps/maker/canvas-apps/add-app-solution).
 4. Choose **Entities** > **Add Existing** > **Entity** > find and add **SharePoint Document** entity  (select all fields, forms, views). 
 5. Select **Save** and **Close**.
@@ -78,13 +79,13 @@ If FetchXML or LayoutXML are malformed, use the following to restore.
     > [!div class="mx-imgBorder"] 
     > ![Search for Document Associated](media/sharepoint-document-associated-grid.png "Search for Document Associated")  -->
 
-10.    Extract the exported solution zip file (downloaded file from Step 8).  
-11.    In the solution contents folder, locate and then open **Solution.xml**.
-12.    Change the following value in **Solution.xml**, and then save it. <br />
+10. Extract the exported solution zip file (downloaded file from Step 8).  
+11. In the solution contents folder, locate and then open **Solution.xml**.
+12. Change the following value in **Solution.xml**, and then save it. <br />
     From `<Managed>0</Managed>` to `<Managed>1</Managed>`.
-13.    In the solution contents folder, locate and open **customization.xml**.
-14.    Search the `<SavedQuery>` element where the **savedqueryid** attribute is equal to "0016f9f3-41cc-4276-9d11-04308d15858d".
-15.    If you can't find a saved query with the ID specified in the previous step, go to step 19. However, if the `<SavedQuery>` element found in step 14 is similar to 
+13. In the solution contents folder, locate and open **customization.xml**.
+14. Search the `<SavedQuery>` element where the **savedqueryid** attribute is equal to "0016f9f3-41cc-4276-9d11-04308d15858d".
+15. If you can't find a saved query with the ID specified in the previous step, go to step 19. However, if the `<SavedQuery>` element found in step 14 is similar to 
 `<SavedQuery unmodified="1">`, remove the **unmodified="n"** attribute. 
 16. Search layoutxml of Document associated grid (search for *Document Associated*).
     
@@ -335,3 +336,6 @@ This error message can occur when the SharePoint site that is configured with do
 
 ### See also
 [Troubleshooting server-based authentication](troubleshooting-server-based-authentication.md) 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
