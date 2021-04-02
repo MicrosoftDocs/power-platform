@@ -1,6 +1,6 @@
 ---
-title: Usage overview | Microsoft Docs
-description: Learn about usage overview details via a report
+title: Power Apps shared | Microsoft Docs
+description: Learn about Power Apps shared details via a report
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
@@ -16,4 +16,4 @@ search.app:
   - Flow
 ---
 
-# Usage overview
+# Power Apps shared

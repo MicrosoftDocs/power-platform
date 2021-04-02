@@ -1,6 +1,6 @@
 ---
-title: Usage overview | Microsoft Docs
-description: Learn about usage overview details via a report
+title: Custom connectors overview | Microsoft Docs
+description: Learn about custom connectors overview details via a report
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
@@ -16,4 +16,4 @@ search.app:
   - Flow
 ---
 
-# Usage overview
+# Custom connectors overview
