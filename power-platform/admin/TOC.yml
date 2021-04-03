@@ -437,7 +437,9 @@
     - name: Activity logging
       items: 
       - name: Power Apps activity logging
-        href: logging-powerapps.md 
+        href: logging-powerapps.md
+      - name: Power Automate activity logging
+        href: logging-power-automate.md 
       - name: Data loss prevention activity logging
         href: dlp-activity-logging.md
       - name: Audit data and user activity for Dynamics 365 entities
