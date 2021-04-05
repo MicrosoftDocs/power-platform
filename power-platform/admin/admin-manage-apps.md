@@ -50,7 +50,7 @@ Admins can do the following from the Power Platform admin center:
    > ![Share or delete app](media/resources-edit-power-app.png "Share or delete app") 
 
 ### See also
-[Power Apps admin PowerShell support](https://docs.microsoft.com/power-platform/admin/powerapps-powershell#power-apps-commands)
+[Power Apps admin PowerShell support](powerapps-powershell.md#power-apps-commands)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
