@@ -6,7 +6,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 02/08/2021
+ms.date: 04/05/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -452,7 +452,7 @@ Deletes a DLP policy.
 
 ### Governance error message content commands
 
-The following cmdlets can be used to lead your end users to your organization’s governance reference material, including a link to governance documentation and a governance contact, when they encounter an experience prompted by governance controls. For instance, when governance error message content is set it will appear in Power Apps Data Loss Prevention policy runtime enforcement messages. 
+The following cmdlets can be used to lead your end users to your organization’s governance reference material, including a link to governance documentation and a governance contact, when they are prompted by governance controls. For instance, when governance error message content is set it will appear in Power Apps Data Loss Prevention policy runtime enforcement messages. 
 
 #### Set governance error message content 
 
@@ -469,7 +469,7 @@ New-PowerAppDlpErrorSettings -TenantId 'TenantId' -ErrorSettings @{
 } 
 ``` 
 
-The governance error message url and email can be shown independently or together. Each value’s presence in governance error message is controlled by the ‘enabled’ field.  
+The governance error message URL and email can be shown independently or together. Each value’s presence in the governance error message is controlled by the ‘enabled’ field.  
 
 #### Display governance error message content 
 
