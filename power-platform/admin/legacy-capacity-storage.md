@@ -1,7 +1,7 @@
 ---
 title: "Legacy storage capacity  | MicrosoftDocs"
 description: About the legacy storage model.
-ms.date: 03/31/2021
+ms.date: 04/05/2021
 ms.reviewer: ""
 ms.service: "power-platform"
 ms.topic: "quickstart"
