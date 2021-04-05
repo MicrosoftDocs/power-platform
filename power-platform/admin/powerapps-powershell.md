@@ -343,6 +343,25 @@ Reset-AdminPowerAppSharepointFormEnvironment
 
 This resets the default environment as the designated environment to save SharePoint custom forms.
 
+#### Display tenant setting for ability to share apps with ‘Everyone’ 
+
+```powershell
+$settings = Get-TenantSettings 
+$settings.PowerPlatform.PowerApps.disableShareWithEveryone 
+```
+
+This setting controls whether users with the Environment Maker security role can share canvas apps with '[Everyone in an organization](/powerapps/maker/canvas-apps/share-app)'. When the setting is set to ‘false’, only users with an admin role (Dynamics 365 admin, Power Platform Service admin, Azure AD tenant admin) can share apps with ‘Everyone in an organization’.  
+
+Note, regardless of this tenant settings value makers with the sharing privilege can share apps with security groups of any size. This control only determines whether the ‘Everyone’ shorthand may be used when sharing.  
+
+#### Change tenant setting for ability to share apps with ‘Everyone’ 
+
+```powershell
+$settings = Get-TenantSettings 
+$settings.powerPlatform.powerApps.disableShareWithEveryone = $True 
+Set-TenantSettings -RequestBody $settings
+```
+
 ### Power Automate commands
 
 Use these commands to view and modify data related to Power Automate.
