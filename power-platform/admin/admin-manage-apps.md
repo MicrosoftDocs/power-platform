@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/05/2020
+ms.date: 04/05/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -49,7 +49,8 @@ Admins can do the following from the Power Platform admin center:
    > [!div class="mx-imgBorder"] 
    > ![Share or delete app](media/resources-edit-power-app.png "Share or delete app") 
 
-
+### See also
+[Power Apps admin PowerShell support](powerapps-powershell.md#power-apps-commands)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

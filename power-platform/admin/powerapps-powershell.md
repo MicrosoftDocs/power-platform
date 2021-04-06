@@ -6,7 +6,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 02/08/2021
+ms.date: 04/05/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -343,6 +343,25 @@ Reset-AdminPowerAppSharepointFormEnvironment
 
 This resets the default environment as the designated environment to save SharePoint custom forms.
 
+#### Display tenant setting for ability to share apps with ‘Everyone’ 
+
+```powershell
+$settings = Get-TenantSettings 
+$settings.PowerPlatform.PowerApps.disableShareWithEveryone 
+```
+
+This setting controls whether users with the Environment Maker security role can share canvas apps with '[Everyone in an organization](/powerapps/maker/canvas-apps/share-app)'. When the setting is set to ‘false’, only users with an admin role (Dynamics 365 admin, Power Platform Service admin, Azure AD tenant admin) can share apps with ‘Everyone in an organization’.  
+
+Note, regardless of this tenant settings value makers with the sharing privilege can share apps with security groups of any size. This control only determines whether the ‘Everyone’ shorthand may be used when sharing.  
+
+#### Change tenant setting for ability to share apps with ‘Everyone’ 
+
+```powershell
+$settings = Get-TenantSettings 
+$settings.powerPlatform.powerApps.disableShareWithEveryone = $True 
+Set-TenantSettings -RequestBody $settings
+```
+
 ### Power Automate commands
 
 Use these commands to view and modify data related to Power Automate.
@@ -449,6 +468,48 @@ Remove-DlpPolicy
 ```
 
 Deletes a DLP policy.
+
+### Governance error message content commands
+
+The following cmdlets can be used to lead your end users to your organization’s governance reference material, including a link to governance documentation and a governance contact, when they are prompted by governance controls. For instance, when governance error message content is set it will appear in Power Apps Data Loss Prevention policy runtime enforcement messages. 
+
+#### Set governance error message content 
+
+```powershell 
+New-PowerAppDlpErrorSettings -TenantId 'TenantId' -ErrorSettings @{  
+  ErrorMessageDetails = @{ 
+    enabled = $True  
+    url = "https://contoso.org/governanceMaterial" 
+  } 
+  ContactDetails= @{  
+    enabled = $True 
+    email = "admin@contoso.com" 
+  } 
+} 
+``` 
+
+The governance error message URL and email can be shown independently or together. Each value’s presence in the governance error message is controlled by the ‘enabled’ field.  
+
+#### Display governance error message content 
+
+```powershell 
+Get-PowerAppDlpErrorSettings -TenantId 'TenantId' 
+``` 
+
+#### Update governance error message content 
+
+```powershell 
+Set-PowerAppDlpErrorSettings -TenantId 'TenantId' -ErrorSettings @{  
+  ErrorMessageDetails = @{ 
+    enabled = $True  
+    url = "https://contoso.org/governanceMaterial" 
+  } 
+  ContactDetails= @{  
+    enabled = $True 
+    email = "admin@contoso.com" 
+  } 
+} 
+``` 
 
 ### Block trial licenses commands
 

@@ -1,6 +1,6 @@
 ---
-title: "Plan for deployment and administration  | MicrosoftDocs"
-description: Plan for deployment and administration 
+title: "Plan for deployment and administration"
+description: "As an administrator, learn about the considerations when planning for deployment." 
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin

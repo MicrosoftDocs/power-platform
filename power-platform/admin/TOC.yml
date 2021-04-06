@@ -94,6 +94,8 @@
           href: move-environment-tenant.md
         - name: Back up and restore environment
           href: backup-restore-environments.md
+        - name: Edit environment properties
+          href: edit-properties-environment.md
         - name: Administration mode
           href: admin-mode.md
         - name: Customer managed encryption key
@@ -435,7 +437,9 @@
     - name: Activity logging
       items: 
       - name: Power Apps activity logging
-        href: logging-powerapps.md 
+        href: logging-powerapps.md
+      - name: Power Automate activity logging
+        href: logging-power-automate.md 
       - name: Data loss prevention activity logging
         href: dlp-activity-logging.md
       - name: Audit data and user activity for Dynamics 365 entities
@@ -860,8 +864,6 @@
     items:
     - name: Environments 
       items:
-      - name: Edit environment properties
-        href: edit-properties-environment.md
       - name: Create an environment in Power Apps
         href: create-environment-powerapps.md
       - name: Working with environments and Power Apps
