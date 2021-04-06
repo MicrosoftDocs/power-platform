@@ -97,7 +97,7 @@ There are few key guidelines to follow when using Composer to create your bot co
 
 - You can't edit Power Virtual Agents topics in Composer; this content is read-only in Composer. However, you can create and add content to Power Virtual Agents in Composer.
 
-- You can add new **Bot Framework triggers** of any kind to your **main (root) dialog**. However, the structure of **triggers** added to the **main (root) dialog** should be kept as simple as possible. **Send a response**, **Ask a question**, or any actions that contain **Language Generation** cannot be used in **triggers** added to **main (root) dialog**. Doing so will result in validation errors and prevent you from publishing your Composer content to Power Virtual Agents.
+- You can add new **Bot Framework triggers** of any kind to your **main (root) dialog**. You can use **Send a response**, **Ask a question**, and **Language Generation** in the new **triggers** added to **main (root) dialog**.
 
 - You can't use the Regular expression recognizer (RegEx) in the **main (root) dialog**. Using the Regular expression recognizer in the **main (root) dialog** will prevent you from publishing your Composer content to Power Virtual Agents. However, you can use the Regular expression recognizer in any other Composer dialogs.
 
@@ -105,7 +105,6 @@ There are few key guidelines to follow when using Composer to create your bot co
 
 - You can create new **Bot Framework dialogs** and add **events** and **triggers** of any kind to them. **Send a response**, **Ask a question**, and **Language Generation** can be used in **triggers** that belong to the new **dialogs**.
 
-- On the **Bot Responses** tab, the **main (root) dialog** section should be empty. Having any assets there will result in validation errors and prevent you from publishing your Composer content to Power Virtual Agents.
 
 ![Bot Framework Composer main (root) dialog empty](media/Composer_Guidelines/Gd_BotReponses_main.png)
 
@@ -345,7 +344,7 @@ For the new **Send a response** action, the **Language Generation** panel will o
 ```
 
 >[!TIP]
->You can [access Power Virtual Agents global variables in Composer](#use-power-virtual-agents-variables-in-bot-framework-composer) by referencing the scope **virtualagent**. For example, **virtualagent.user_city** will refer to the value of a variable that was created and set in the Power Virtual Agents bot.
+>You can [access Power Virtual Agents global variables in Composer](#use-power-virtual-agents-variables-in-bot-framework-composer) by referencing the scope **virtualagent**. For example, **${virtualagent.user_city}** will refer to the value of a variable that was created in the Power Virtual Agents bot.
 
 
 You are now ready to upload the **Meals** dialog to your Power Virtual Agents bot. Select the **Publish** tab and then the **Publish profile** of your bot, and choose **Publish to selected profile**. Add an optional comment and select **Okay** in the confirmation window to start uploading.
@@ -612,19 +611,19 @@ Make sure **Track between topics** is turned on, and test your new bot content b
 
 ![Power Virtual Agents test](media/Composer_Example3/Example3_cropped.gif)
 
-## Use Power Virtual Agents variables in Bot Framework Composer
+## Use and update Power Virtual Agents variables in Bot Framework Composer
 
-You can have read-only access to Power Virtual Agents global variables by referencing the following scope in Bot Framework Composer:
+You can use and update the values in Power Virtual Agents global variables in Bot Framework Composer by referencing the following scope:
 - `virtualagent`
 
 For example, create a variable called **user_city** in your Power Virtual Agents bot. Make it a global variable by setting its **Usage** to **Bot (any topic can access)**.
 
 ![Power Virtual Agents - variable](media/Composer_Example1/E1_Dialog2.png)
 
-This setting makes the Power Virtual Agents variable **user_city** available in Bot Framework Composer. Use the following notation to refer to it in Composer:
+This setting makes the Power Virtual Agents variable **user_city** available in Bot Framework Composer in **virtualagent** scope. Use the following notation to refer to it in Composer:
 
  ```JSON
-virtualagent.user_city 
+${virtualagent.user_city} 
 ```
 
 ![Composer - refer to Power Virtual Agents variables](media/Composer_Example1/E1_Meals_ResponseAdded.png)

@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/13/2021
+ms.date: 03/09/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -26,7 +26,7 @@ We continue to open new datacenter regions for business services, and to add dat
 > - To request a regional migration, please contact your account manager or see [Technical Support](get-help-support.md).
 > - After making a request, expect at least 10 days for the migration to be completed.  
 > - Geo migrations are not supported into or out of US GCC, US GCC High, or China.
-> - The Dynamics 365 Marketing app does not support geo migration, due to component dependencies. For more information, see [Manage your Dynamics 365 Marketing instances](https://docs.microsoft.com/dynamics365/marketing/manage-marketing-instances).
+> - The Dynamics 365 Marketing app does not support geo migration, due to component dependencies. For more information, see [Manage your Dynamics 365 Marketing instances](/dynamics365/marketing/manage-marketing-instances).
 > - Geo migration is not supported for Microsoft Dataverse for Teams environments.
 
 ## Impact of migrating  
@@ -54,7 +54,7 @@ We continue to open new datacenter regions for business services, and to add dat
 > [!NOTE]
 >  Organization URLs must be unique. If your organization name has already been reserved in the destination datacenter, it won't be available. In the unlikely event this happens, we will work with you to decide how to proceed.  
 
- To see the datacenter regions, go to [Where is my data?](https://o365datacentermap.azurewebsites.net/) and then click **Select Your Region**.  
+See [Where your data is located](https://www.microsoft.com/trust-center/privacy/data-location).  
 
  The following topics have information that could be helpful to understand the move process:  
 

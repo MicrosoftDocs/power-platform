@@ -2,7 +2,7 @@
 title: "Work with chatbot variables"
 description: "Use variables to use custom and prebuilt entities to allow for customized conversations in your bot."
 keywords: "PVA"
-ms.date: 9/22/2020
+ms.date: 3/19/2021
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -79,7 +79,7 @@ In the bot authoring canvas, add a question node by choosing **Ask a question**.
 
 **Create a variable:**
 
-1. Go to the [**Topics page**](getting-started-create-topics.md) for the bot you want to edit.
+1. Go to the [**Topics page**](./authoring-create-edit-topics.md) for the bot you want to edit.
 
 1. Open the authoring canvas for the topic you want to add a variable to.
 
@@ -109,6 +109,12 @@ When a variable is automatically created, a default name will be given. You rena
 When using a variable in an action node, if a variable's base type matches with a parameter type specified for a flow or Bot Framework Skill, it will show up as a candidate to be used to feed to this parameter. The output from the action nodes will generate new variables as well.  
 
 ![Use entity in an action node](media/User_a_variable_in_Skills(draft).PNG)
+
+## Use literal values in action nodes
+Alternatively, you can type a literal value into an action node variable input field instead of selecting a variable from the menu. When passing a literal this way, you can type its value directly into the input field.
+
+:::image type="content" source="media/LiteralActionInput.png" alt-text="Screenshot showing the use of literal values for action inputs.":::
+
 
 
 ## Related links

@@ -3,7 +3,7 @@ title: Tables in Microsoft Power Fx | Microsoft Docs
 description: Reference information about working with tables, columns, and records in Microsoft Power Fx
 author: gregli-msft
 manager: kvivek
-ms.service: power-fx
+ms.service: power-platform
 ms.topic: conceptual
 ms.reviewer: nabuthuk
 ms.date: 02/26/2021
@@ -16,7 +16,7 @@ search.app:
 # Tables
 
 > [!NOTE]
-> Microsoft Power Fx is the new name for canvas apps formula language.  These articles are work in progress as we extract the language from canvas apps, integrate it with other products of the Power Platform, and make available as open source.  Start with the [Microsoft Power Fx Overview](overview.md) for an introduction to the language.   
+> Microsoft Power Fx is the new name for the canvas apps formula language.  These articles are work in progress as we extract the language from canvas apps, integrate it with other Microsoft Power Platform products, and make it available as open source.  Start with the [Microsoft Power Fx Overview](overview.md) for an introduction to the language.   
 
 In Microsoft Power Fx, you can write a formula that accesses information in Microsoft Excel, SharePoint, SQL Server, and several other sources that store data in records and tables. To work most effectively with this kind of data, review the concepts that underlie these structures.
 
@@ -26,7 +26,7 @@ In Microsoft Power Fx, you can write a formula that accesses information in Micr
 You can build a variety of formulas that take the name of a table as an argument, just as a formula in Excel takes one or more cell references as arguments. Some formulas in Power Fx return a table that reflects the other arguments that you specify. For example, you might create a formula:
 
 * to update a record in a table by specifying that table as one of multiple arguments for the **[Patch](/powerapps/maker/canvas-apps/functions/function-patch)** function
-* to add, remove, and rename columns in a table by specifying that table as an argument for the **[AddColumns](/powerapps/maker/canvas-apps/functions/function-table-shaping)**, **[DropColumns](f/powerapps/maker/canvas-apps/functions/function-table-shaping)**, or **[RenameColumns](/powerapps/maker/canvas-apps/functions/function-table-shaping)** function. None of those functions modifies the original table. Instead, the function returns another table based on the other arguments that you specify.
+* to add, remove, and rename columns in a table by specifying that table as an argument for the **[AddColumns](/powerapps/maker/canvas-apps/functions/function-table-shaping)**, **[DropColumns](/powerapps/maker/canvas-apps/functions/function-table-shaping)**, or **[RenameColumns](/powerapps/maker/canvas-apps/functions/function-table-shaping)** function. None of those functions modifies the original table. Instead, the function returns another table based on the other arguments that you specify.
 
 ## Elements of a table
 
@@ -146,7 +146,7 @@ AddColumns(
 
 Here we are adding a calculated column to the result. **AddColumns** has its own record scope that it uses to calculate the difference between what has been requested and what is available.
 
-![Toorder](media/tables/toorder.png "Toorder")
+![Add columns](media/tables/toorder.png "Add columns")
 
 Finally, we can reduce the result table to just the columns that we want:
 

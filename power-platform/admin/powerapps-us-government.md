@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/28/2020
+ms.date: 03/02/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -20,7 +20,7 @@ search.app:
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-In response to the unique and evolving requirements of the United States public sector, Microsoft has created Power Apps US Government, which consists of several plans for US government organizations. This section provides an overview of features that are specific to Power Apps US Government. It is recommended that you read this supplementary section alongside the Power Apps [documentation](https://docs.microsoft.com/powerapps/powerapps-overview), which covers information about the general Power Apps service description. For brevity, this service is commonly referred to as Power Apps Government Community Cloud (GCC) or Power Apps Government Community Cloud – High (GCC High).
+In response to the unique and evolving requirements of the United States public sector, Microsoft has created Power Apps US Government, which consists of several plans for US government organizations. This section provides an overview of features that are specific to Power Apps US Government. It is recommended that you read this supplementary section alongside the Power Apps [documentation](/powerapps/powerapps-overview), which covers information about the general Power Apps service description. For brevity, this service is commonly referred to as Power Apps Government Community Cloud (GCC) or Power Apps Government Community Cloud – High (GCC High).
 
 The Power Apps US Government service description is designed to serve as an overlay to the general Power Apps service description. It defines the unique commitments of this service and the differences from Power Apps offerings that have been available to our customers since October 2016.
 
@@ -57,7 +57,7 @@ Additional information about the differences in functionality between these grou
 
 ## What is customer data and customer content?
 
-Customer data, as defined in the Online Services Terms, means all data, including all text, sound, video, or image files, and software, that are provided to Microsoft by, or on behalf of, customers through the use of the Online Service. Customer content refers to a specific subset of customer data that has been directly created by users, such as content stored in databases through entries in the [Microsoft Dataverse](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro) entities (for example, contact information). Content is generally considered confidential information and in normal service operation is not sent over the internet without encryption.
+Customer data, as defined in the Online Services Terms, means all data, including all text, sound, video, or image files, and software, that are provided to Microsoft by, or on behalf of, customers through the use of the Online Service. Customer content refers to a specific subset of customer data that has been directly created by users, such as content stored in databases through entries in the [Microsoft Dataverse](/powerapps/maker/common-data-service/data-platform-intro) entities (for example, contact information). Content is generally considered confidential information and in normal service operation is not sent over the internet without encryption.
 
 For more information on Power Apps protection of customer data, see the [Microsoft Online Services Trust Center](https://www.microsoft.com/trustcenter/cloudservices/business-application-platform/default.aspx).
 
@@ -113,7 +113,7 @@ If you adopt the use of Active Directory Federation Services (AD FS) 2.0 and set
 
 ## Power Apps US Government and third-party services
 
-Power Apps US Government provides the ability to integrate third-party applications into the service through [connectors](https://docs.microsoft.com/connectors/index). These third-party applications and services might involve storing, transmitting, and processing your organization's customer data on third-party systems that are outside of the Power Apps US Government infrastructure and therefore are not covered by the Power Apps US Government compliance and data protection commitments.
+Power Apps US Government provides the ability to integrate third-party applications into the service through [connectors](/connectors/index). These third-party applications and services might involve storing, transmitting, and processing your organization's customer data on third-party systems that are outside of the Power Apps US Government infrastructure and therefore are not covered by the Power Apps US Government compliance and data protection commitments.
 
 We recommend that you review the privacy and compliance statements provided by the third parties when assessing the appropriate use of these services for your organization.
 
@@ -183,7 +183,7 @@ Please also refer to the Required IP Ranges to enable access to Dataverse enviro
 
 ## Regional Discovery Service is deprecated
 
-Effective March 2, 2020, the *regional* [Discovery Service](/powerapps/developer/common-data-service/org-service/discovery-service) will be deprecated. More information: [Regional Discovery Service is deprecated](/power-platform/important-changes-coming#regional-discovery-service-is-deprecated) 
+Effective March 2, 2020, the *regional* [Discovery Service](/powerapps/developer/common-data-service/org-service/discovery-service) will be deprecated. More information: [Regional Discovery Service is deprecated](../important-changes-coming.md#regional-discovery-service-is-deprecated) 
 
 ## Connectivity between Power Apps US Government and public Azure Cloud Services
 
@@ -212,7 +212,7 @@ The mobile application will now use the US Government Cloud domain.
 
 ## On-premises data gateway configuration
 
-Install an [on-premises data gateway](https://docs.microsoft.com/powerapps/maker/canvas-apps/gateway-management) to transfer data quickly and securely between a canvas app that's built in Power Apps and a data source that isn't in the cloud, such as an on-premises SQL Server database or an on-premises SharePoint site.
+Install an [on-premises data gateway](/powerapps/maker/canvas-apps/gateway-management) to transfer data quickly and securely between a canvas app that's built in Power Apps and a data source that isn't in the cloud, such as an on-premises SQL Server database or an on-premises SharePoint site.
 
 If your organization (tenant) has already configured and successfully connected the on-premises data gateway for Power BI US Government, then the process and configuration your organization executed to enable that will also enable on-premises connectivity for Power Apps. However, if you are unable to connect to your tenant, you might need to go through a process to add your tenant to an approved list, which will enable this capability for your tenant. Should this occur, please open a support ticket to address your needs. The support team will follow an established process to address your request.
 
@@ -220,13 +220,14 @@ If your organization (tenant) has already configured and successfully connected 
 
 Some of the features available in the commercial version of Power Apps are not available to Power Apps US Government customers. The Power Apps team is actively working on making the following features available to US Government customers and will update this article when these features become available:
 
-- Embed in [Power BI](https://docs.microsoft.com/power-bi/).
+- Embed in [Power BI](/power-bi/).
 
-- Ability to add apps to Teams using the [Add to Teams button](https://docs.microsoft.com/powerapps/maker/canvas-apps/embed-teams-app).
+- Ability to add apps to Teams using the [Add to Teams button](/powerapps/maker/canvas-apps/embed-teams-app).
 
 - [Connectors](https://gov.flow.microsoft.us/connectors/): The most popular connectors in use in our commercial service (based on usage telemetry) have been published; if there is a connector available in the commercial offering that you do not see deployed, please contact support, and we will review your request. Note that third-party connectors will not be added to GCC High.  Features are being investigated with the Digital Loss Prevention (DLP) administration functionality that will enable Connectors to be added “blocked by default.”  Until this is possible, third-party connectors pose a measurable threat to organizations relying on the GCC High environment to maintain requisite data exfiltration controls.
 
-- [AI Builder](https://docs.microsoft.com/ai-builder/).
+- [AI Builder](/ai-builder/).
+- [Geospatial features](/powerapps/maker/canvas-apps/geospatial-overview) are not available in government environments.
 
 ## Requesting support
 
@@ -235,9 +236,9 @@ Having a problem with your service? You can create a support request to get the 
 More information: [Contact Technical Support](get-help-support.md)
 
 ### See also
-[Microsoft Power Automate US Government](https://docs.microsoft.com/flow/us-govt) <br />
-[UI Flows](https://docs.microsoft.com/power-automate/ui-flows/overview) <br />
-[Dynamics 365 US Government](https://docs.microsoft.com/power-platform/admin/microsoft-dynamics-365-government)
+[Microsoft Power Automate US Government](/flow/us-govt) <br />
+[UI Flows](/power-automate/ui-flows/overview) <br />
+[Dynamics 365 US Government](./microsoft-dynamics-365-government.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

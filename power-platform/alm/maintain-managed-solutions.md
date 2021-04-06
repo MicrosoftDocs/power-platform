@@ -4,7 +4,7 @@ description: "" # 115-145 characters including spaces. This abstract displays in
 ms.custom: ""
 ms.date: 06/29/2020
 ms.reviewer: "pehecke"
-ms.service: powerapps
+ms.service: power-platform
 ms.topic: "article"
 author: mikkelsen2000
 ms.author: pemikkel

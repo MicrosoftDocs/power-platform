@@ -28,7 +28,7 @@ The gateway service must run on a local server in your on-premises location. The
 
 During the install the gateway is set up to use NT Service\PBIEgwService for the Windows service signin. You can switch this to a domain user or managed service account if you’d like.
 
-You can use the same gateway in multiple environments as long as the gateway region and the environment region match. See [FAQ for regions in Power Automate](https://docs.microsoft.com/power-automate/regions-overview) 
+You can use the same gateway in multiple environments as long as the gateway region and the environment region match. See [FAQ for regions in Power Automate](/power-automate/regions-overview) 
 
 ## Gateway administration access
 
@@ -57,7 +57,7 @@ Updates are not auto-installed for the on-premises data gateway. It's highly enc
 A recovery key is assigned (that is, not auto-generated) by the administrator at the time the on-premises data gateway is installed. The recovery key is required if the gateway is to be relocated to another machine, or if the gateway is to be restored. Therefore, the key should be retained where other system administrators can locate it if necessary.
 
 ### See also
-[On-premises data gateway](https://docs.microsoft.com/power-bi/service-gateway-onprem) <br />
+[On-premises data gateway](/power-bi/service-gateway-onprem) <br />
 [On-premises server cipher suites and TLS requirements](server-cipher-tls-requirements.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

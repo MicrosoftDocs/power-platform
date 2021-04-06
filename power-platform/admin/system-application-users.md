@@ -1,10 +1,10 @@
 ---
-title: System and application users | Microsoft Docs
-description: About system and application users 
+title: "Special system users and application users"
+description: "Learn about the special system and application users created when the system is provisioned, including assigned security role, user name, and purpose." 
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 01/25/2021
+ms.date: 04/05/2021
 author: paulliew
 ms.author: paulliew
 ms.reviewer: jimholtz
@@ -18,7 +18,7 @@ search.app:
   - Flow
 ---
 
-# System and application users
+# System and application users 
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
@@ -46,7 +46,7 @@ Most of these users are hidden from user views but they can be found by using th
 | | JobServiceProd| JobServiceProd@onmicrosoft.com| Enable satellite services to schedule and dispatch messages to independently built workloads with guaranteed delivery of messages based on service-defined policies. | System admin |
 | | # CCADataAnalyticsML | CCADAAdmins@onmicrosoft.com | To allow AI insights in customer care apps like Customer Service, Field Service, etc. | System Customizer and System admin |
 | | # CDSReportService | CDSReportService@onmicrosoft.com | To allow user to run reports. |N/A |
-| | Power Platform Dataflows | ppdfcdsclient@onmicrosoft.com | Power Platform Dataflows service application to perform data preparation and loading into Dataverse and Azure Data Lake. | System Customizer and Delegate
+| | Power Platform Dataflows | ppdfcdsclient@onmicrosoft.com | Power Platform Dataflows service application to perform data preparation and loading into Dataverse and Azure Data Lake. | System admin
 | | AIBuilderProd | aibuilderfpapp@onmicrosoft.com | To perform authentication for AI Builder. | System admin |
 | | AriaMdlExporter | AriaMdlExporter@onmicrosoft.com | To export data from Engagement Insights to Managed Data Lake. | DataLakeWorkspaceAppAccess |
 | | CDSFileStorage | CDSFileStorage@onmicrosoft.com | To perform background operations like Organization Lifecycle (OLC) operations, file reconciliation and migration. | FileStoreService App Access |
@@ -58,6 +58,7 @@ Most of these users are hidden from user views but they can be found by using th
 | | BizQA | BizQA@onmicrosoft.com | To access search telemetry to improve search experience | BizQAApp   |
 | | ProductInsights | ProductInsights@onmicrosoft.com | To export data from Customer Insights to Engagement Insights | DataLakeWorkspaceAppAccess    |
 | | Dynamics365 SalesForecasting | Dynamics365SalesForecasting@onmicrosoft.com | To fetch entity data and metadata for forecasting feature | ForecastAppUser    |
+| | # Omnichannel | Ominichannel@onmicrosoft.com | To perform data integration between Omnichannel for Customer Service and Dataverse | System admin    |
 
 
 **The purpose of the system account?** 

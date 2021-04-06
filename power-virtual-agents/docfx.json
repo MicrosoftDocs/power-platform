@@ -59,7 +59,8 @@
       "search.audienceType": [
         "maker"
       ],
-      "search.appverid": "met150"
+      "search.appverid": "met150",
+      "recommendations": true
     },
     "fileMetadata": {
       "searchScope": {

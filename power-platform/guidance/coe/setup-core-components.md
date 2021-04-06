@@ -37,6 +37,7 @@ Learn more: [What is Dataverse for Teams](https://docs.microsoft.com/powerapps/t
 
 This is the first step of the installation process and is required for every other component in the starter kit to work. You'll need to create an environment in which to set up the CoE. For more information about how to decide on the best strategy for your organization, go to [Establishing an Environment Strategy for Microsoft Power Platform](https://docs.microsoft.com/power-platform/guidance/adoption/environment-strategy) and [Application lifecycle management](https://docs.microsoft.com/power-platform/admin/wp-application-lifecycle-management).
 
+
 1. Download the CoE Starter Kit compressed file ([aka.ms/CoeStarterKitDownload](https://aka.ms/CoeStarterKitDownload)).
 
     >[!IMPORTANT]

@@ -171,7 +171,7 @@ Power Virtual Agents calls into Azure AD to perform the actual exchange.
 
     ![Go to Manage and then Authentication](media/auth-manage-sm.png)
 
-1. Enter the full scope URI from the **Expose an API** blade for the canvas app registration in the **Token exchange URL** field. The URI will be in the format of `api://1234-4567/scope.name`.
+1. Enter the full scope URI from the **Expose an API** blade for the bot’s authentication app registration in the **Token exchange URL** field. The URI will be in the format of `api://1234-4567/scope.name`.
 
     ![Screenshot highlighting the scope's API](media/sso-api.png "Screenshot highlighting the scope's API")  
 

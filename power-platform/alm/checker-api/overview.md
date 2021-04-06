@@ -3,7 +3,7 @@ title: "Use the Power Apps checker web API | Microsoft Docs"
 description: "The Power Apps checker Web API provides a development experience that can be used across a wide variety of programming languages, platforms, and devices"
 ms.custom: ""
 ms.date: 10/14/2020
-ms.service: powerapps
+ms.service: power-platform
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
@@ -126,7 +126,7 @@ When publishing applications on AppSource, you must get your application certifi
 
 ## Find your tenant ID
 
-The ID of your tenant is needed to interact with the APIs that require a token. Refer to [this article](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id) for details on how to obtain the tenant ID. You can also use PowerShell commands to retrieve the tenant ID. The following example leverages the cmdlets in the [AzureAD module](https://docs.microsoft.com/powershell/module/azuread/).
+The ID of your tenant is needed to interact with the APIs that require a token. Refer to [this article](/onedrive/find-your-office-365-tenant-id) for details on how to obtain the tenant ID. You can also use PowerShell commands to retrieve the tenant ID. The following example leverages the cmdlets in the [AzureAD module](/powershell/module/azuread/).
 
 ```powershell
 # Login to AAD as your user
@@ -182,7 +182,7 @@ Once you have acquired the token, it is advised that you provide the same token 
 <a name="bkmk_transport"></a>
 
 ## Transport security
-For best-in-class encryption, the checker service only supports communications using Transport Layer Security (TLS) 1.2 and above. For guidance on .NET best practices around TLS, refer to [Transport Layer Security (TLS) best practices with the .NET Framework](https://docs.microsoft.com/dotnet/framework/network-programming/tls).
+For best-in-class encryption, the checker service only supports communications using Transport Layer Security (TLS) 1.2 and above. For guidance on .NET best practices around TLS, refer to [Transport Layer Security (TLS) best practices with the .NET Framework](/dotnet/framework/network-programming/tls).
 
 <a name="bkmk_report"></a>
 

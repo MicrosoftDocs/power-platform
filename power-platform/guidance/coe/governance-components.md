@@ -64,7 +64,7 @@ Represents archival approval tasks started during the App Archive and Clean Up f
 
 ### Microsoft Teams Admin | Ask for Business Justification when Microsoft Teams environment is created
 
-This flow runs daily and checks whether new environments of type [Microsoft Teams](https://docs.microsoft.com/power-platform/admin/about-teams-environment) have been created. Team owners who have created a Microsoft Teams environments receive an adaptive card via Teams that prompts them to provide a business justification.
+This flow runs daily and checks whether new environments of type [Microsoft Teams](../../admin/about-teams-environment.md) have been created. Team owners who have created a Microsoft Teams environments receive an adaptive card via Teams that prompts them to provide a business justification.
 
 ![Ask for Business Justification when Microsoft Teams environment is created](media/teams-1.png "Ask for Business Justification when Microsoft Teams environment is created")
 
@@ -92,7 +92,7 @@ This flow runs weekly and deletes environments that:
 Environments are deleted from the tenant and marked as deleted in the Environment table of the CoE Starter Kit. You can view deleted environments in the [Power Platform Admin View](core-components.md).
 
 >[!IMPORTANT]
-> You can recover a recently deleted environment (within seven days of deletion) by using the Power Platform admin center or the Power Apps cmdlet Recover-AdminPowerAppEnvironment. More information: [Recover environment](https://docs.microsoft.com/power-platform/admin/recover-environment#power-platform-admin-center)
+> You can recover a recently deleted environment (within seven days of deletion) by using the Power Platform admin center or the Power Apps cmdlet Recover-AdminPowerAppEnvironment. More information: [Recover environment](../../admin/recover-environment.md#power-platform-admin-center)
 
 Save a copy of this flow in case you want to make any changes to the criteria for when environments are deleted.
 

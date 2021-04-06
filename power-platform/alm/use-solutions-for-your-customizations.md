@@ -4,7 +4,7 @@ description: "Learn how to customize Power Apps"
 ms.custom: ""
 ms.date: 05/05/2020
 ms.reviewer: ""
-ms.service: powerapps
+ms.service: power-platform
 ms.topic: "article"
 author: "Mattp123"
 ms.author: "matp"

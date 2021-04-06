@@ -29,9 +29,9 @@ There are two options for connecting to the audit log: one uses basic authentica
 
 ## Before you use the audit log connector
 
-1. Microsoft 365 audit log search must be turned on for the audit log connector to work. More information: [Turn audit log search on or off](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off?view=o365-worldwide&preserve-view=true)
-1. You must have access to the audit log. The Microsoft Power Platform Service Admin role doesn't give you access to the audit log. More information: [Search the audit log in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?preserve-view=true&view=o365-worldwide#before-you-begin)
-1. Your tenant must have a subscription that supports unified audit logging. More information: [Security & Compliance Center availability for business and enterprise plans](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)
+1. Microsoft 365 audit log search must be turned on for the audit log connector to work. More information: [Turn audit log search on or off](/microsoft-365/compliance/turn-audit-log-search-on-or-off?preserve-view=true&view=o365-worldwide)
+1. You must have access to the audit log. The Microsoft Power Platform Service Admin role doesn't give you access to the audit log. More information: [Search the audit log in the Security & Compliance Center](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?preserve-view=true&view=o365-worldwide#before-you-begin)
+1. Your tenant must have a subscription that supports unified audit logging. More information: [Security & Compliance Center availability for business and enterprise plans](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)
 
 ## Option 1: Connect to the audit log by using an Azure AD app registration
 
@@ -39,7 +39,7 @@ The Office 365 Management APIs use Azure Active Directory (Azure AD) to provide 
 
 ### Create an Azure AD app registration for the Office 365 Management API
 
-Using these steps, you'll set up an Azure AD app registration that will be used in a custom connector and Power Automate flow to connect to the audit log. More information: [Get started with Office 365 Management APIs](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis)
+Using these steps, you'll set up an Azure AD app registration that will be used in a custom connector and Power Automate flow to connect to the audit log. More information: [Get started with Office 365 Management APIs](/office/office-365-management-api/get-started-with-office-365-management-apis)
 
 1. Sign in to [portal.azure.com](https://portal.azure.com).
 
@@ -89,7 +89,7 @@ Leave the Azure portal open, because you'll need to make some configuration upda
 
 ### Set up the custom connector
 
-Now you'll configure and set up a custom connector that uses the [Office 365 Management APIs](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis).
+Now you'll configure and set up a custom connector that uses the [Office 365 Management APIs](/office/office-365-management-api/get-started-with-office-365-management-apis).
 
 1. Go to [make.powerapps.com](https://make.powerapps.com) > **Data** > **Custom Connectors**. The Office 365 Management API custom connector will be listed here; it has been imported with the core components solution.
 1. Select **Edit**.
@@ -101,7 +101,7 @@ Now you'll configure and set up a custom connector that uses the [Office 365 Man
    >[!IMPORTANT]
    > If your tenant is a GCC tenant, change the host to https://manage-gcc.office.com.
    > If your tenant is a GCC high tenant, change the host to https://manage.office365.us
-   > More information: [Activity API operations](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference?preserve-view=true&view=o365-worldwide#activity-api-operations)
+   > More information: [Activity API operations](/office/office-365-management-api/office-365-management-activity-api-reference?preserve-view=true&view=o365-worldwide#activity-api-operations)
 
 1. Select **Edit** at the bottom of the **OAuth 2.0** area to edit the authentication parameters.
 
@@ -120,8 +120,7 @@ Now you'll configure and set up a custom connector that uses the [Office 365 Man
 1. Select **Update Connector**.
 
 > [!NOTE]
-> If you have a [data loss prevention (DLP) policy](https://docs.microsoft.com/power-platform/admin/wp-data-loss-prevention) configured for your CoE Starter Kit environment, you'll need to add this connector to the business data&ndash;only group of this policy. <br>
-See [Custom Connectors in DLP](CustomConnectorsInDLP.md) 
+> If you have a [data loss prevention (DLP) policy](../../admin/wp-data-loss-prevention.md) configured for your CoE Starter Kit environment, you'll need to add this connector to the business data&ndash;only group of this policy. 
 
 ### Update Azure AD app registration with the redirect URL
 
@@ -137,7 +136,7 @@ See [Custom Connectors in DLP](CustomConnectorsInDLP.md)
 
 ### Start a subscription to audit log content
 
-Go back to the custom connector to set up a connection to the custom connector and [start a subscription to the audit log content](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference#start-a-subscription), as described in the following steps.
+Go back to the custom connector to set up a connection to the custom connector and [start a subscription to the audit log content](/office/office-365-management-api/office-365-management-activity-api-reference#start-a-subscription), as described in the following steps.
 
 > [!IMPORTANT]
 > You must complete these steps for subsequent steps to work. If you don't create a new connection and test the connector here, setting up the flow and child flow in later steps will fail.
@@ -162,7 +161,7 @@ You should see a (200) status returned, which means the query was successful.
 > If you don't see a (200) response, the request has failed. There's an error with your setup that's keeping the flow from working. Common issues to check are: 
 >
 > - Are audit logs enabled, and do you have permission to view the audit logs? Check [protection.office.com](https://protection.office.com) > **Search** > **Audit Log Search**.
-> - If you don't have permissions, see [Requirements to search the audit log](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?preserve-view=true&view=o365-worldwide#requirements-to-search-the-audit-log).
+> - If you don't have permissions, see [Requirements to search the audit log](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?preserve-view=true&view=o365-worldwide#requirements-to-search-the-audit-log).
 > -. Have you enabled the audit log very recently? If so, try again in a few minutes, to give the audit log time to activate.
 > - Have you pasted in the correct tenant ID from your Azure AD app registration?
 > - Have you pasted in the correct resource URL, with no added spaces or characters at the end?
