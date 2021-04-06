@@ -25,4 +25,8 @@ Version 1.30 for the CoE Starter Kit Nurture Components is now available. This a
 
 All canvas apps have been updated to use responsive layout containers and a new theme.
 
+## Moving components to Core
+
+Admin | Welcome email (flow) and App catalog (canvas app) have been moved to Core components in an effort to allow Nurture components to be used standalone.
+
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
