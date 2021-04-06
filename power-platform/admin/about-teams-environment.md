@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/08/2021
+ms.date: 04/06/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -222,7 +222,7 @@ When a Dataverse for Teams environment in a team approaches or reaches the 2 GB 
 > These tenant-level enforcement actions will take effect at general availability.
 
 When a tenant approaches or reaches their tenant-wide Microsoft Teams limits described earlier, the following actions will be taken: 
-- At 80 percent of the limit, a notification that capacity is reaching its limit will be sent to the Power Platform center admin. The admin will be encouraged to consider reducing storage usage or upgrading some of the Dataverse for Teams environments.
+- At 80 percent of the limit, a notification that capacity is reaching its limit will be sent to the tenant admin (Microsoft 365 Global admin, Power Platform admin, Dynamics 365 admin). The admin will be encouraged to consider reducing storage usage or upgrading some of the Dataverse for Teams environments.
 - At 100 percent of the limit, the creation of new Dataverse for Teams environments will be blocked. Any users attempting to create a new Dataverse for Teams environment will be prompted to contact the tenant admin as the result of the capacity limit being reached. Additionally, new apps, chatbots, flows, and tables won't be allowed to be created or installed in any existing Dataverse for Teams environment.  
 
 As mentioned for the environment-level enforcement, any existing apps will still be able to function as expected.  
