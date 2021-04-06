@@ -24,4 +24,61 @@ The Usage Overview report contains information such as the total number of apps,
 
 2. Select **Analytics** > **Usage**.
 
+## About the Usage Overview report
+
 :::image type="content" source="media/usage-report.png" alt-text="Usage report":::
+
+|Item  |Description  |
+|---------|---------|
+|1    |         |
+|2    |         |
+|3    |         |
+|4     |         |
+|5     |         |
+
+
+## Setting filters
+
+Information on how to set a filter.
+
+## Usage Overview report details
+
+### Users
+
+|Item  |Description  |
+|---------|---------|
+|Apps    |         |
+|Unique users     |         |
+|Return users     |         |
+|Session count     |         |
+
+### Flows
+
+|Item  |Description  |
+|---------|---------|
+|Flows    |         |
+|Runs     |         |
+|Run count     |         |
+
+### PVA bots
+
+|Item  |Description  |
+|---------|---------|
+|PVA bots    |         |
+|Engaged sessions    |         |
+|Billed sessions     |         |
+
+### Portals 
+
+|Item  |Description  |
+|---------|---------|
+|Portals    |         |
+|Page views    |         |
+|Internal logins    |         |
+|External logins    |         |
+
+### AI models
+
+|Item  |Description  |
+|---------|---------|
+|TBD    |         |
