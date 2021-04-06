@@ -1,10 +1,10 @@
 ---
-title: "DLP SDK | MicrosoftDocs"
-description: Microsoft Power Platform data loss prevention (DLP) SDK
+title: "Microsoft Power Platform data loss prevention (DLP) SDK"
+description: "Learn about the capabilities of the Microsoft Power Platform data loss prevention (DLP) software development kit (SDK) and run a sample in PowerShell."
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/09/2020
+ms.date: 03/08/2021
 author: jimholtz
 ms.author: jimholtz
 ms.reviewer: jimholtz
@@ -53,6 +53,7 @@ This sample calls DLP APIs in Microsoft.PowerApps.Administration.PowerShell to c
 4. Get list of tenant-level policies (all environments). 
 5. Update policy to move connector across groups (**Business**, **Non-business**, and **Blocked**). 
 6. Test compatibility of existing policies that previously used legacy powershell APIs and now use new PowerShell APIs. 
+7. Apply a DLP policy to all Teams environments within a tenant. More information: [Applying a data loss prevention policy to all Dataverse for Teams environments](about-teams-environment.md#applying-a-data-loss-prevention-policy-to-all-dataverse-for-teams-environments)
 
 ## How this sample works
 

@@ -18,12 +18,10 @@ search.app:
 ---
 # Integrate data into Microsoft Dataverse
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 The Data Integrator (for Admins) is a point-to-point integration service used to integrate data into Dataverse. It supports integrating data between Finance and Operations apps and Dataverse. It also supports integrating data into Finance and Operations apps and Dynamics 365 Sales. This service has been generally available since July 2017.   
 
 > [!NOTE]
-> We highly recommend customers start using [dual-write](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page) which provides tightly coupled, bidirectional integration between Finance and Operations apps and Dataverse. Any data change in Finance and Operations apps causes writes to Dataverse, and any data change in Dataverse causes writes to Finance and Operations apps. This automated data flow provides an integrated user experience across the apps. 
+> We highly recommend customers start using [dual-write](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page) which provides tightly coupled, bidirectional integration between Finance and Operations apps and Dataverse. Any data change in Finance and Operations apps causes writes to Dataverse, and any data change in Dataverse causes writes to Finance and Operations apps. This automated data flow provides an integrated user experience across the apps. 
 
 > [!TIP]
 > Check out the blog: [Data Integrator Updates – New features with an intuitive user interface providing a fluent experience](https://powerapps.microsoft.com/blog/data-integrator-updates-new-features-with-an-intuitive-user-interface-providing-a-fluent-experience/).
@@ -39,10 +37,10 @@ The Prospect to Cash integration enables sellers to handle and monitor their sal
 
 See the video: [Prospect to cash integration](https://www.youtube.com/watch?v=AVV9x5x-XCg)
 
-For more information about the Prospect to Cash integration, see the documentation on the [Prospect to Cash solution](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/prospect-to-cash).
+For more information about the Prospect to Cash integration, see the documentation on the [Prospect to Cash solution](/dynamics365/unified-operations/supply-chain/sales-marketing/prospect-to-cash).
 
-We also support [Field Service integration](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order)
-and [PSA (Project Service Automation) integration](https://docs.microsoft.com/dynamics365/unified-operations/financials/project-management/psa-integration?toc=/fin-and-ops/toc.json) to Finance and Operations apps.
+We also support [Field Service integration](/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order)
+and [PSA (Project Service Automation) integration](/dynamics365/unified-operations/financials/project-management/psa-integration?toc=%2ffin-and-ops%2ftoc.json) to Finance and Operations apps.
 
 ## Data Integrator Platform
 
@@ -437,7 +435,7 @@ With Power Query support, we now provide advanced filtering and data transformat
     > [!div class="mx-imgBorder"] 
     > ![Pick new column](media/data-integrator/EnablePQDefaultValueTransforms6780.png "Pick new column")
 
-For more information on Power Query, see [Power Query documentation](https://docs.microsoft.com/power-query/).
+For more information on Power Query, see [Power Query documentation](/power-query/).
 
 > [!NOTE]
 > - Once **Advanced Query and Filtering** is enabled, transforms via **Fn** are not supported, and instead should be defined using Advanced Query and Filtering. 
@@ -446,7 +444,7 @@ For more information on Power Query, see [Power Query documentation](https://doc
 > 
 >   <i>The powerquery job failed with error: Exception ExceptionType:MashupEvaluationException, ExceptionMessage:EvaluationQuotaReached, EvaluationResponse:{"ResultType":"ErrorCode","Code":"EvaluationQuotaReached"</i> 
 >
->   Review the guidance on [Power Query Online Limits](https://docs.microsoft.com/power-query/power-query-online-limits).
+>   Review the guidance on [Power Query Online Limits](/power-query/power-query-online-limits).
 > - Modifying the _url_ directly in the mashup editor is not supported. Only the filter applied using the mashup editor UI or specified in source filter edit field on mapping page will be used.
 
 ## Performance tuning

@@ -39,8 +39,8 @@ The following are recommended ways to update to Unified Interface based on how t
 
 ## Apps created in your sandbox environment
 
-- Be sure to import the changes in your target environment via a managed solution only. See [Import, update, and export solutions](https://docs.microsoft.com/powerapps/maker/common-data-service/import-update-export-solutions) for guidance on installing an update to an existing managed solution.
-- Modify the app properties by following the steps detailed in [Manage app properties](https://docs.microsoft.com/powerapps/maker/model-driven-apps/manage-app-properties), and set the **Client** type to **Unified Interface**
+- Be sure to import the changes in your target environment via a managed solution only. See [Import, update, and export solutions](/powerapps/maker/common-data-service/import-update-export-solutions) for guidance on installing an update to an existing managed solution.
+- Modify the app properties by following the steps detailed in [Manage app properties](/powerapps/maker/model-driven-apps/manage-app-properties), and set the **Client** type to **Unified Interface**
 - Import the changes to your target environment via a managed solution update.
 
 ## Apps installed from AppSource

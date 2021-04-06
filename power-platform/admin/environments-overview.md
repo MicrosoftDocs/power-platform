@@ -37,7 +37,7 @@ Every environment can have zero or one Microsoft Dataverse database, which provi
 
 When you create an app in an environment, that app is only permitted to connect to the data sources that are also deployed in that same environment, including connections, gateways, flows, and Dataverse databases. For example, consider a scenario where you've created two environments named Test and Dev, and created a Dataverse database in each of the environments. If you create an app in the Test environment, it will only be permitted to connect to the Test database; it won't be able to connect to the 'Dev' database.
 
-You can also move resources between environments. More information: [Migrate resources](../alm/environment-and-tenant-migration.md)
+You can also move resources between environments. More information: [Migrate resources](/powerapps/maker/data-platform/export-solutions)
 
 ![The Contoso Corporation tenant encompasses three environments, each of which has its own apps, flows, and Dataverse database](./media/environments-overview/Environments.png "The Contoso Corporation tenant encompasses three environments, each of which has its own apps, flows, and Dataverse database")
 
@@ -144,7 +144,7 @@ Select **Edit** to review and edit environment details.
 > ![More environment details](media/environment-details-more.png "More environment details")
 
 ### See also
-[Microsoft Learn: Create and manage environments in Dataverse](https://docs.microsoft.com/learn/modules/create-manage-environments/)<br />
+[Microsoft Learn: Create and manage environments in Dataverse](/learn/modules/create-manage-environments/)<br />
 
 
 

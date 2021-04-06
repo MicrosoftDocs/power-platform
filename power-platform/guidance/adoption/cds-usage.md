@@ -64,7 +64,7 @@ As an administrator, you should:
 
 ## Dataverse audit logging
 
-You also have audit logging available for actions in Dataverse. This includes create, update, and delete operations on records in addition to changes to Dataverse metadata. More information: [Dataverse auditing overview](https://docs.microsoft.com/powerapps/developer/common-data-service/auditing-overview)
+You also have audit logging available for actions in Dataverse. This includes create, update, and delete operations on records in addition to changes to Dataverse metadata. More information: [Dataverse auditing overview](/powerapps/developer/common-data-service/auditing-overview)
 
 For auditing to be captured, it must be enabled in the following three places:
 
@@ -72,7 +72,7 @@ For auditing to be captured, it must be enabled in the following three places:
 
   ![Enable auditing in the Power Platform admin center](media/cdslog2.png "Enable auditing in the Power Platform admin center")
 
-  Then [enable auditing data and user activity](https://docs.microsoft.com/power-platform/admin/audit-data-user-activity) for security and compliance.
+  Then [enable auditing data and user activity](../../admin/audit-data-user-activity.md) for security and compliance.
   
   ![Manage logging for Dataverse data](media/cdslog4.png "Manage logging for Dataverse data")
 

@@ -4,7 +4,7 @@ description: "This document lists down some strategies to organize your solution
 ms.custom: ""
 ms.date: 06/29/2020
 ms.reviewer: "pehecke"
-ms.service: powerapps
+ms.service: power-platform
 ms.topic: "article"
 author: mikkelsen2000
 ms.author: pemikkel
@@ -53,7 +53,7 @@ Before you create solutions, take some time to plan ahead. For example, think ab
   
 ### See also  
 
-[Use segmented solutions](/power-platform/alm/segmented-solutions-alm)
+[Use segmented solutions](./segmented-solutions-alm.md)
 [Scenario 5: Supporting team development](team-development-alm.md)
 
 

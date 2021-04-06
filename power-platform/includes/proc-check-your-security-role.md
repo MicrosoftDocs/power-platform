@@ -1,1 +1,1 @@
-Follow the steps in [View your user profile](https://docs.microsoft.com/powerapps/user/view-your-user-profile).
+Follow the steps in [View your user profile](/powerapps/user/view-your-user-profile).

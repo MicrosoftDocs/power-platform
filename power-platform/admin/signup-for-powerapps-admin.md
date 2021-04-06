@@ -25,14 +25,14 @@ This topic provides information on how to purchase Power Apps for your organizat
 > [!NOTE]
 > To purchase Power Apps for an organization, you must already be an Microsoft 365 Global or Billing Admin of a tenant, or you must create a tenant.
 >
-> Beginning January 2020, self-service purchase, subscription, and license management capabilities for Microsoft Power Platform products (Power BI, Power Apps, and Power Automate) are available for commercial cloud customers in the United States. For more information, including steps to enable or disable self-service purchasing in your organization, see [Self-service purchase FAQs](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq).
+> Beginning January 2020, self-service purchase, subscription, and license management capabilities for Microsoft Power Platform products (Power BI, Power Apps, and Power Automate) are available for commercial cloud customers in the United States. For more information, including steps to enable or disable self-service purchasing in your organization, see [Self-service purchase FAQs](/microsoft-365/commerce/subscriptions/self-service-purchase-faq).
 
 ## Choosing the right plan
 For details about what licenses you can choose for your organization, see [Licensing overview for Microsoft Power Platform](pricing-billing-skus.md).
 
 ## Purchase Power Apps directly
 
-You can purchase Power Apps subscriptions for your organization from [Power Apps pricing](https://powerapps.microsoft.com/pricing/) page and then assign Power Apps licenses to your users. [Learn more](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide).
+You can purchase Power Apps subscriptions for your organization from [Power Apps pricing](https://powerapps.microsoft.com/pricing/) page and then assign Power Apps licenses to your users. [Learn more](/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide).
 
 1. Visit the [Power Apps pricing](https://powerapps.microsoft.com/pricing/) page.
 
@@ -42,7 +42,7 @@ You can purchase Power Apps subscriptions for your organization from [Power Apps
 
 ## Get Power Apps through Microsoft 365
 
-You can purchase Power Apps subscriptions for your organization from the [Microsoft 365 admin center](https://admin.microsoft.com) and then assign Power Apps licenses to your users. [Learn more](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide).
+You can purchase Power Apps subscriptions for your organization from the [Microsoft 365 admin center](https://admin.microsoft.com) and then assign Power Apps licenses to your users. [Learn more](/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide).
 
 ### Get a subscription trial
 

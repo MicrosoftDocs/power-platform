@@ -7,7 +7,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/19/2021
+ms.date: 03/18/2021
 search.audienceType: 
   - admin
 search.app:
@@ -137,6 +137,40 @@ A trial (subscription-based) environment lasts as long as the subscription is ac
    > [!div class="mx-imgBorder"] 
    > ![Check trial (subscription-based) expiration](media/subscription-expiration-date.png "Check trial (subscription-based) expiration")
 
+## Extend a trial (standard) environment
+
+Note the following:
+
+- Within the last 7 days before the standard trial environment is set to expire, the trial environment admin can do a self-service extension of the expiring environment. This adds an additional 30 days from the original expiration date.
+- There is only one self-service extension allowed per standard trial environment. To further retain the environment, it must be [converted to production](#convert-either-type-of-trial-environment-to-a-production-environment).
+
+
+**To extend a standard trial:**
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) with admin credentials.
+
+2. Go to **Environments**, and then select an expiring environment that has the **Extend trial** option. The **Extend trial** option appears when there are 7 days or less remaining before the environment expires.
+
+   > [!div class="mx-imgBorder"] 
+   > ![Extend a trial](media/extend-trial.png "Extend a trial")
+
+3. Select **Extend trial**
+
+4. Read the notification and then select **Extend trial**. 
+
+Your trial will be extended 30 days from the original expiration date.
+
+## Extend a trial (subscription-based) environment
+
+The expiration of subscription-based trial (also know as an admin trial) environments is tied to the expiration of the subscription. Therefore, subscription-based trial environments cannot be independently extended. There are limited options for extending admin trial subscriptions which affects extending the expiration of any associated trial environments.
+
+**To extend a subscription-based (admin) trial:**
+
+Admins can request a single extension in the Microsoft 365 admin center. See https://docs.microsoft.com/microsoft-365/commerce/extend-your-trial?view=o365-worldwide
+
+There is only one self-service extension allowed per offer-based trial environment. To further retain the environment, it must be [converted to production](#convert-either-type-of-trial-environment-to-a-production-environment).
+
+
 ## Convert either type of trial environment to a production environment
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) with admin credentials.
@@ -172,7 +206,7 @@ Here are some guidelines for exporting resources.
 
 |Type of resource in the environment  |How do I export it?  |
 |---------|---------|
-|Apps (canvas and model-driven) and flows     |You can use [packaging](../alm/environment-and-tenant-migration.md) to export apps and flows from one environment.         |
+|Apps (canvas and model-driven) and flows     |You can use [packaging](/powerapps/maker/data-platform/export-solutions) to export apps and flows from one environment.         |
 |Data in the database (Dataverse environment)     |<ul><li>[Export to Excel](/powerapps/user/export-data-excel) and save the data. You can then [import the data](/powerapps/user/import-data) into another environment.</li><li>Use [Data Integrator services](data-integrator.md) and APIs to export data into another environment.</li></ul> |
 
 We delete trial (standard) environments that haven't had any activity in the environment databases for 30 days.

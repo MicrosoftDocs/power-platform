@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/05/2020
+ms.date: 04/05/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -26,7 +26,7 @@ Admins can do the following from the Power Platform admin center:
 
 ## Prerequisites
 
-- Either a Power Apps plan or Power Automate plan. Alternatively, you can sign up for a [free Power Apps trial](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps).
+- Either a Power Apps plan or Power Automate plan. Alternatively, you can sign up for a [free Power Apps trial](/powerapps/maker/signup-for-powerapps).
 
 - Power Apps Environment Admin, Global admin, or Power Platform admin permissions. For more information, see [Environments administration in Power Apps](environments-administration.md).
 
@@ -49,7 +49,8 @@ Admins can do the following from the Power Platform admin center:
    > [!div class="mx-imgBorder"] 
    > ![Share or delete app](media/resources-edit-power-app.png "Share or delete app") 
 
-
+### See also
+[Power Apps admin PowerShell support](powerapps-powershell.md#power-apps-commands)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

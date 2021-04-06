@@ -1,12 +1,11 @@
 ---
-title: Microsoft Power Fx Expression Grammar | Microsoft Docs
+title: Microsoft Power Fx expression grammar | Microsoft Docs
 description: Annotated grammar for the Microsoft Power Fx language
 author: gregli-msft
 manager: kvivek
 ms.reviewer: nabuthuk
-ms.service: powerapps
+ms.service: power-platform
 ms.topic: reference
-ms.custom: canvas
 ms.date: 02/24/2021
 ms.author: gregli
 search.audienceType: 
@@ -14,38 +13,38 @@ search.audienceType:
 search.app: 
   - PowerApps
 ---
-# Expression Grammar
+# Expression grammar
 
 > [!NOTE]
-> Microsoft Power Fx is the new name for canvas apps formula language.  These articles are work in progress as we extract the language from canvas apps, integrate it with other products of the Power Platform, and make available as open source.  Start with the [Microsoft Power Fx Overview](overview.md) for an introduction to the language.     
+> Microsoft Power Fx is the new name for the formula language for canvas apps. These articles are a work in progress as we extract the language from canvas apps, integrate it with other Microsoft Power Platform products, and make it available as open source. Start with the [Microsoft Power Fx overview](overview.md) for an introduction to the language.
 
-Microsoft Power Fx is based on formulas that binds a name to an expression.  Just like in spreadsheet, as inbound dependencies to the expression change, the expression is recalculated and the value of the name changes, possibly cascading the recalculation into other formulas.  
+Microsoft Power Fx is based on formulas that bind a name to an expression. Just like in Excel worksheets, as inbound dependencies to the expression change, the expression is recalculated and the value of the name changes, possibly cascading the recalculation into other formulas.
 
-This grammar covers the expression part of the formula. Binding to a name to create a formula is dependent on how Power Fx is integrated. In spreadsheets, the binding syntax is not exposed and is implied by where the expression is written, for example typing `=B1` in the A1 cell. In some cases, no binding is required at all and Power Fx is used as an expression evaluator, for example in supporting calculated columns of a database table. For Power Apps, the binding is implied when in Power Apps Studio with [a serialization format based on YAML for use outside Power Apps Studio](yaml-formula-grammar.md).
+This grammar covers the expression part of the formula. Binding to a name to create a formula is dependent on how Power Fx is integrated. In worksheets, the binding syntax isn't exposed, it's implied by the location where the expression is written&mdash;for example, entering `=B1` in the A1 cell. In some cases, no binding is required at all and Power Fx is used as an expression evaluator, for example in supporting calculated columns of a database table. For Power Apps, the binding is implied when working in Power Apps Studio with [a serialization format based on YAML for use outside Power Apps Studio](yaml-formula-grammar.md).
 
 ## Grammar conventions
 
-The lexical and syntactic grammars are presented using grammar productions. Each grammar production defines a non-terminal symbol and the possible expansions of that non-terminal symbol into sequences of non-terminal or terminal symbols. In grammar productions, non-terminal symbols are shown in italic type, and terminal symbols are shown in a fixed-width font.
+The lexical and syntactic grammars are presented by using grammar productions. Each grammar production defines a non-terminal symbol and the possible expansions of that non-terminal symbol into sequences of non-terminal or terminal symbols. In grammar productions, non-terminal symbols are shown in italic type, and terminal symbols are shown in a fixed-width font.
 
-The first line of a grammar production is the name of the non-terminal symbol being defined, followed by a colon. Each successive indented line contains a possible expansion of the non-terminal given as a sequence of non-terminal or terminal symbols. For example, the production:
+The first line of a grammar production is the name of the non-terminal symbol being defined, followed by a colon. Each successive indented line contains a possible expansion of the non-terminal symbol given as a sequence of non-terminal or terminal symbols. For example, the production:
 
 &emsp;&emsp;*GlobalIdentifier* **:**<br>
 &emsp;&emsp;&emsp;&emsp;`[@`&emsp;*Identifier*&emsp;`]`
 
-defines a *GlobalIdentifier* to consist of the token `[@`, followed by an *Identifier*, followed by the token `]`
+defines a *GlobalIdentifier* to consist of the token `[@`, followed by an *Identifier*, followed by the token `]`.
 
-When there is more than one possible expansion of a non-terminal symbol, the alternatives are listed on separate lines. A subscripted suffix "opt" is used to indicate an optional symbol. For example, the production:
+When there is more than one possible expansion of a non-terminal symbol, the alternatives are listed on separate lines. The subscript "opt" is used to indicate an optional symbol. For example, the production:
 
 &emsp;&emsp;*FunctionCall* **:**<br>
 &emsp;&emsp;&emsp;&emsp;*FunctionIdentifier*&emsp;`(`&emsp;*FunctionArguments*<sub>opt</sub>&emsp;`)`
 
 is shorthand for:
 
-&emsp;&emsp;*FunctionCall***:**<br>
+&emsp;&emsp;*FunctionCall* **:**<br>
 &emsp;&emsp;&emsp;&emsp;*FunctionIdentifier*&emsp;`(`&emsp;`)`<br>
 &emsp;&emsp;&emsp;&emsp;*FunctionIdentifier*&emsp;`(`&emsp;*FunctionArguments*&emsp;`)`
 
-Alternatives are normally listed on separate lines, though in cases where there are many alternatives, the phrase "one of" may precede a list of expansions given on a single line. This is simply shorthand for listing each of the alternatives on a separate line.
+Alternatives are normally listed on separate lines, though in cases where there are many alternatives, the phrase "one of" might precede a list of expansions given on a single line. This is simply shorthand for listing each of the alternatives on separate lines.
 
 For example, the production:
 
@@ -80,7 +79,7 @@ The lexical-unit production defines the lexical grammar for a Power Fx expressio
 &emsp;&emsp;<a name="ExpressionElement"></a>*ExpressionElement* **:**<br>
 &emsp;&emsp;&emsp;&emsp;*[Whitespace](#Whitespace)*<br>
 &emsp;&emsp;&emsp;&emsp;*[Comment](#Comment)*<br>
-&emsp;&emsp;&emsp;&emsp;*[Token](#Token)*<br>
+<!--&emsp;&emsp;&emsp;&emsp;*[Token](#Token)*<br>-->
 
 At the lexical level, a Power Fx expression consists of a stream of *Whitespace*, *Comment*, and *Token* elements. Each of these productions is covered in the following sections. Only *Token* elements are significant in the syntactic grammar.
 
@@ -103,8 +102,8 @@ Whitespace is used to separate comments and tokens within a Power Apps document.
 
 Two forms of comments are supported:
 
-- Single-line comments that start with the characters // and extend to the end of the source line.
-- Delimited comments that start with the characters /\* and end with the characters \*/. Delimited comments may span multiple lines.
+- Single-line comments that start with the characters `//` and extend to the end of the source line.
+- Delimited comments that start with the characters `/*` and end with the characters `*/`. Delimited comments can span multiple lines.
 
 &emsp;&emsp;<a name="Comment"></a>*Comment* **:**<br>
 &emsp;&emsp;&emsp;&emsp;*[DelimitedComment](#DelimitedComment)*<br>
@@ -137,9 +136,9 @@ Two forms of comments are supported:
 &emsp;&emsp;<a name="DelimitedCommentNoSlashAsteriskCharacter"></a>*DelimitedCommentNoSlashAsteriskCharacter* **:**<br>
 &emsp;&emsp;&emsp;&emsp;any Unicode character except a / (slash) or * (asterisk)<br>
 
-Comments do not nest. The character sequences `/*` and `*/` have no special meaning within a *single-line-comment*, and the character sequences `//` and `/*` have no special meaning within a *delimited-comment*.
+Comments aren't nested. The character sequences `/*` and `*/` have no special meaning within a single-line comment, and the character sequences `//` and `/*` have no special meaning within a delimited comment.
 
-Comments are not processed within *text-literal*.
+Comments aren't processed within text-literal strings.
 
 The following example includes two delimited comments:
 
@@ -159,7 +158,7 @@ The following examples include three single-line comments:
 
 ### Literals
 
-A literal is a source code representation of a value.
+A *literal* is a source code representation of a value.
 
 &emsp;&emsp;<a name="Literal"></a>*Literal* **:**<br>
 &emsp;&emsp;&emsp;&emsp;*[LogicalLiteral](#LogicalLiteral)*<br>
@@ -168,14 +167,14 @@ A literal is a source code representation of a value.
 
 #### Logical literals
 
-A logical literal is used to write the values true and false and produces a logical value.
+A *logical literal* is used to write the values true and false, and produce a logical value.
 
 &emsp;&emsp;<a name="LogicalLiteral"></a>*LogicalLiteral* **:** **one of**<br>
 &emsp;&emsp;&emsp;&emsp;`true`&emsp;`false`<br>
 
 #### Number literals
 
-A number literal is used to write a numeric value and produces a number value.
+A *number literal* is used to write a numeric value and produce a number value.
 
 &emsp;&emsp;<a name="NumberLiteral"></a>*NumberLiteral* **:**<br>
 &emsp;&emsp;&emsp;&emsp;*[DecimalDigits](#DecimalDigits)*&emsp;*[ExponentPart](#ExponentPart)*<sub>opt</sub><br>
@@ -200,7 +199,7 @@ A number literal is used to write a numeric value and produces a number value.
 
 #### Text literals
 
-A text literal is used to write a sequence of Unicode characters and produces a text value.  Text literals are enclosed in double quotes.  To include double quotes in the text value, the double quote mark is repeated:
+A *text literal* is used to write a sequence of Unicode characters and produce a text value. Text literals are enclosed in double quotation marks. To include double quotation marks in the text value, repeat the double quotation marks, as shown in the following example:
 
 ```powerapps-dot
 "The ""quoted"" text" // The "quoted" text
@@ -224,7 +223,7 @@ A text literal is used to write a sequence of Unicode characters and produces a 
 
 ## Identifiers
 
-An identifier is a name used to refer to a value. Identifiers can either be regular identifiers or single quoted identifiers.
+An *identifier* is a name used to refer to a value. Identifiers can either be regular identifiers or single quoted identifiers.
 
 &emsp;&emsp;<a name="Identifier"></a>*Identifier* **:**<br>
 &emsp;&emsp;&emsp;&emsp;*[IdentifierName](#IdentifierName)* **but** **not** *[Operator](#Operator)* **or** *[ContextKeyword](#ContextKeyword)*<br>
@@ -248,26 +247,26 @@ An identifier is a name used to refer to a value. Identifiers can either be regu
 &emsp;&emsp;&emsp;&emsp;*[IdentifierContinueCharacter](#IdentifierContinueCharacter)*&emsp;*[IdentifierContinueCharacters](#IdentifierContinueCharacters)*<sub>opt</sub><br>
 
 &emsp;&emsp;<a name="LetterCharacter"></a>*LetterCharacter* **:**<br>
-&emsp;&emsp;&emsp;&emsp;any Unicode character of the classes Uppercase letter (Lu), Lowercase letter (Ll)<br>
-&emsp;&emsp;&emsp;&emsp;any Unicode character of the class Titlecase letter (Lt)<br>
-&emsp;&emsp;&emsp;&emsp;any Unicode character of the classes Letter modifier (Lm), Letter other (Lo)<br>
-&emsp;&emsp;&emsp;&emsp;any Unicode character of the class Number letter (Nl)<br>
+&emsp;&emsp;&emsp;&emsp;any Unicode character of the class **Uppercase letter** (**Lu**) or **Lowercase letter** (**Ll**)<br>
+&emsp;&emsp;&emsp;&emsp;any Unicode character of the class **Titlecase letter** (**Lt**)<br>
+&emsp;&emsp;&emsp;&emsp;any Unicode character of the class **Letter modifier** (**Lm**) or **Letter other** (**Lo**)<br>
+&emsp;&emsp;&emsp;&emsp;any Unicode character of the class **Number letter** (**Nl**)<br>
 
 &emsp;&emsp;<a name="CombiningCharacter"></a>*CombiningCharacter* **:**<br>
-&emsp;&emsp;&emsp;&emsp;any Unicode character of the classes Non-spacing mark (Mn), Spacing combining mark (Mc)<br>
+&emsp;&emsp;&emsp;&emsp;any Unicode character of the class **Non-spacing mark** (**Mn**) or **Spacing combining mark** (**Mc**)<br>
 
 &emsp;&emsp;<a name="DecimalDigitCharacter"></a>*DecimalDigitCharacter* **:**<br>
-&emsp;&emsp;&emsp;&emsp;any Unicode character of the class Decimal digit (Nd)<br>
+&emsp;&emsp;&emsp;&emsp;any Unicode character of the class **Decimal digit** (**Nd**)<br>
 
 &emsp;&emsp;<a name="ConnectingCharacter"></a>*ConnectingCharacter* **:**<br>
-&emsp;&emsp;&emsp;&emsp;any Unicode character of the class Connector punctuation (Pc)<br>
+&emsp;&emsp;&emsp;&emsp;any Unicode character of the class **Connector punctuation** (**Pc**)<br>
 
 &emsp;&emsp;<a name="FormattingCharacter"></a>*FormattingCharacter* **:**<br>
-&emsp;&emsp;&emsp;&emsp;any Unicode character of the class Format (Cf)<br>
+&emsp;&emsp;&emsp;&emsp;any Unicode character of the class **Format** (**Cf**)<br>
 
 ### Single quoted identifiers
 
-A *SingleQuotedIdentifier* can contain any sequence of Unicode characters to be used as an identifier, including keywords, whitespace, comments, and operators.  Single quote characters are supported with a double single quote escape sequence.
+A *single quoted identifier* can contain any sequence of Unicode characters to be used as an identifier, including keywords, whitespace, comments, and operators. Single quotation mark characters are supported with an escape sequence of two single quotation marks.
 
 &emsp;&emsp;<a name="SingleQuotedIdentifier"></a>*SingleQuotedIdentifier* **:**<br>
 &emsp;&emsp;&emsp;&emsp;*[SingleQuotedIdentifierCharacters](#SingleQuotedIdentifierCharacters)*<br>
@@ -307,21 +306,21 @@ A *SingleQuotedIdentifier* can contain any sequence of Unicode characters to be 
 
 ### Case sensitivity
 
-Power Apps identifiers are case-sensitive.  The authoring tool will auto correct to the correct case when a formula is being written.
+Power Apps identifiers are case-sensitive. The authoring tool will automatically change them to the correct case when a formula is being written.
 
 ## Separators
 
 &emsp;&emsp;<a name="DecimalSeparator"></a>*DecimalSeparator:*<br>
-&emsp;&emsp;&emsp;&emsp;`.` (dot) for language that uses a dot as the separator for decimal numbers, for example `1.23`<br>
+&emsp;&emsp;&emsp;&emsp;`.` (dot) for languages that use a dot as the separator for decimal numbers, for example `1.23`<br>
 &emsp;&emsp;&emsp;&emsp;`,` (comma) for languages that use a comma as the separator for decimal numbers, for example `1,23`<br>
 
 &emsp;&emsp;<a name="ListSeparator"></a>*ListSeparator:*<br>
 &emsp;&emsp;&emsp;&emsp;`,` (comma) if *[DecimalSeparator](#DecimalSeparator)* is `.` (dot)<br>
-&emsp;&emsp;&emsp;&emsp;`;` (semi-colon) if *[DecimalSeparator](#DecimalSeparator)* is `,` (comma)<br>
+&emsp;&emsp;&emsp;&emsp;`;` (semicolon) if *[DecimalSeparator](#DecimalSeparator)* is `,` (comma)<br>
 
 &emsp;&emsp;<a name="ChainingSeparator"></a>*ChainingSeparator:*<br>
-&emsp;&emsp;&emsp;&emsp;`;` (semi-colon) if *[DecimalSeparator](#DecimalSeparator)* is `.` (dot)<br>
-&emsp;&emsp;&emsp;&emsp;`;;` (double semi-colon) if *[DecimalSeparator](#DecimalSeparator)* is `,` (comma)<br>
+&emsp;&emsp;&emsp;&emsp;`;` (semicolon) if *[DecimalSeparator](#DecimalSeparator)* is `.` (dot)<br>
+&emsp;&emsp;&emsp;&emsp;`;;` (double semicolon) if *[DecimalSeparator](#DecimalSeparator)* is `,` (comma)<br>
 
 ## Operators
 

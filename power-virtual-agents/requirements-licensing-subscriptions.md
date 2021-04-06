@@ -25,6 +25,8 @@ Power Virtual Agents for Microsoft Teams enables customers to build conversation
 
 Capabilities available in the Power Virtual Agents app in Microsoft Teams are available as part of select Microsoft 365 subscriptions with Microsoft Power Platform and Microsoft Teams capabilities, excluding plans for US government environments (GCC, GCC High, and DoD) and EDU A1 and SUB SKUs.
 
+Power Virtual Agents availability in GCC and GCC High plans are estimated to be generally available by June 2021. See the [Power Virtual Agents Community](https://powerusers.microsoft.com/t5/Power-Virtual-Agents-Community/ct-p/PVACommunity) for more information and to request assistance. 
+
 This table compares capabilities in the Power Virtual Agents for Microsoft Teams plan, which is available in select Microsoft 365 subscriptions, against the standalone Power Virtual Agents subscription. 
 
 
