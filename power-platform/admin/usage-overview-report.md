@@ -30,16 +30,13 @@ The Usage Overview report contains information such as the total number of apps,
 
 |Item  |Description  |
 |---------|---------|
-|1    |         |
-|2    |         |
-|3    |         |
-|4     |         |
-|5     |         |
+|1    |  Tiles       |
+|2    |  Map       |
+|3    |   Chart      |
+|4     |  App       |
+|5     | Filter info        |
 
 
-## Setting filters
-
-Information on how to set a filter.
 
 ## Usage Overview report details
 
