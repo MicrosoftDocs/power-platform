@@ -148,7 +148,7 @@ Before you begin:
 
     If you create a new connection, you must select **Refresh**. You won't lose your import progress.
 
-     ![Establish connections to activate your solution](media/coreteams-1.png "Establish connections to activate your solution.")
+     ![Establish connections to all connectors used in the solution](media/coreteams-1.png "Establish connections to all connectors used in the solution.")
 
 1. Update environment variable values. The environment variables are used to store application and flow configuration data with data specific to your organization or environment. This means that you only have to set the value once per environment and it will be used in all necessary flows and apps in that environment. All the flows in the solution depend on all environment variables' being configured.
 
@@ -159,7 +159,7 @@ Before you begin:
     |Power Automate environment variable | For a US environment: <https://us.flow.microsoft.com/manage/environments/> <br>For an EMEA environment: <https://emea.flow.microsoft.com/manage/environments/> <br>For a GCC environment: <https://gov.flow.microsoft.us/manage/environments/> |
     |Admin eMail                         | Email address used in flows to send notifications to admins; this should be either your email address or a distribution list |
 
-     ![Update environment variable values](media/coreteams-2.png "Update environment variable values.")
+     ![Set environment variable values](media/coreteams-2.png "Set environment variable values.")
 
 1. Select **Import**.
 
