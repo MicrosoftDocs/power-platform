@@ -70,6 +70,8 @@ Set up the CoE Starter Kit by following these instructions:
 
 ## Production vs Dataverse for Teams environment
 
+The CoE Starter Kit can be used in both Production environments and Dataverse for Teams environments. Where you install it will depend on your organization setup, your adoption of Microsoft Power Platform so far and what you want to achieve with the CoE Starter Kit. Before you decide, compare [Dataverse vs Dataverse for Teams](https://docs.microsoft.com/powerapps/teams/data-platform-compare) and review the impact on CoE Starter Kit features based on where you install it:
+
 | | Dataverse for Teams environment | Production environment |
 | --- | --- | --- |
 | Syncing inventory to Dataverse tables | Yes, will require a Power Automate Per User/Per Flow license | Yes, will require a Power Automate Per User/Per Flow license |
@@ -82,8 +84,6 @@ Set up the CoE Starter Kit by following these instructions:
 | Sharing the Developer Compliance Center with makers | Share with colleagues who have a Microsoft 365 license in Teams | Sharing requires users to have a Power Apps Per User or Per App License |
 | Sharing the App Catalog app | Share with colleagues who have a Microsoft 365 license in Teams | Sharing requires users to have a Power Apps Per User or Per App License |
 | Sharing the Training in a day app | Share with colleagues who have a Microsoft 365 license in Teams | Sharing requires users to have a Power Apps Per User or Per App License |
-
-More information: [Dataverse vs Dataverse for Teams](https://docs.microsoft.com/powerapps/teams/data-platform-compare)
 
 ## Extending the starter kit
 
