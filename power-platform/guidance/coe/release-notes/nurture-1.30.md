@@ -1,6 +1,6 @@
 ---
 title: "Release notes and latest version of the CoE starter kit Nurture Components 1.30 | MicrosoftDocs"
-description: "Release notes and latest version of the CoE Starter Kit."
+description: "Release notes and latest version of the CoE Starter Kit Nurture Components."
 author: manuelap-msft
 manager: devkeydet
 ms.service: power-platform
@@ -19,7 +19,7 @@ search.app:
 
 # Released version Nurture Components 1.30
 
-Version 1.30 for the CoE Starter Kit Nurture Components is now available. This article describes the updates, including the new features and the fixes to existing functionality, included in this release. This version was first made available in preview on April 1, 2021.
+Version 1.30 for the CoE Starter Kit Nurture Components is now available. This article describes the updates, including the new features and the fixes to existing functionality, included in this release. This version was first made available in preview on April 8, 2021.
 
 ## Canvas Apps
 

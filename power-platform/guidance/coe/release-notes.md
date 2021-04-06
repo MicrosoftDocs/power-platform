@@ -38,7 +38,7 @@ Select each version below to see release notes and updates for each component. Y
 
 |  Version | First available |
 | --------- | ---------------|
-| [1.99](release-notes/core-1.99.md) | April 6, 2021 |
+| [1.99](release-notes/core-1.99.md) | April 8, 2021 |
 | [1.85](release-notes/core-1.85.md) | February 1, 2021 |
 | [1.72](release-notes/core-1.72.md) | January 6, 2021 |
 | [1.71](release-notes/core-1.71.md) | November 16, 2020 |
@@ -51,7 +51,7 @@ Select each version below to see release notes and updates for each component. Y
 
 |  Version | First available |
 | --------- | ---------------|
-| [1.46](release-notes/governance-1.46.md) | April 6, 2021 |
+| [1.46](release-notes/governance-1.46.md) | April 8, 2021 |
 | [1.30](release-notes/governance-1.30.md) | February 1, 2021 |
 | [1.25](release-notes/governance-1.25.md) | November 16, 2020 |
 | [1.23](release-notes/governance-1.23.md) | September 18, 2020 |
@@ -62,7 +62,7 @@ Select each version below to see release notes and updates for each component. Y
 
 |  Version | First available |
 | --------- | ---------------|
-| [1.30](release-notes/nurture-1.30.md) | April 6, 2021 |
+| [1.30](release-notes/nurture-1.30.md) | April 8, 2021 |
 | [1.23](release-notes/nurture-1.23.md) | October 16, 2020 |
 | [1.17](release-notes/nurture-1.17.md) | September 18, 2020 |
 | [1.14](release-notes/nurture-1.14.md) | June 27, 2020 |

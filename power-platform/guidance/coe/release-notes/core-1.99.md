@@ -19,7 +19,7 @@ search.app:
 
 # Released version Core Components 1.99
 
-Version 1.99 for the CoE Starter Kit Core Components is now available. This article describes the updates, including the new features and the fixes to existing functionality, included in this release. This version was first made available on April 1, 2021.
+Version 1.99 for the CoE Starter Kit Core Components is now available. This article describes the updates, including the new features and the fixes to existing functionality, included in this release. This version was first made available on April 8, 2021.
 
 ## Capacity and Add Ons
 
