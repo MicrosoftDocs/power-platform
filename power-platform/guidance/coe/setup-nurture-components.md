@@ -40,6 +40,8 @@ The core components solution is required for the nurture components solution, or
     |------|---------------|
     | Training in a day - Feedback Form     | The Training in a Day package includes a flow that automatically sends a feedback request to attendees on the day of the event. Configure the form URL (<https://forms.office.com/>...) here.    |
     | Power User Site URL (SharePoint Site) | The site that your Microsoft Power Platform power users can use to communicate and share files. You'll use it here to house the template library for them. |
+    | Innovation Backlog URL | (optional) URl to the [Innovation Backlog](use-innovationbacklog.md) canvas app, if you are using this app |
+    | Maker Journey Admin eMail | eMail of the admin or CoE team that will respond to queries from the Maker Assessment app |
 
 ## Create a SharePoint document library
 
@@ -119,6 +121,8 @@ All flows in this solution depend on all environment variables' being configured
 |------|---------------|
 | Training in a day - Feedback Form     | The Training in a Day package includes a flow that automatically sends a feedback request to attendees on the day of the event. Configure the form URL (<https://forms.office.com/>...) here.    |
 | Power User Site URL (SharePoint Site) | The site that your Microsoft Power Platform power users can use to communicate and share files. You'll use it here to house the template library for them. |
+| Innovation Backlog URL | (optional) URl to the [Innovation Backlog](use-innovationbacklog.md) canvas app, if you are using this app |
+| Maker Journey Admin eMail | eMail of the admin or CoE team that will respond to queries from the Maker Assessment app |
 
 ## Activate the flows
 
@@ -135,6 +139,24 @@ The nurture components solution contains five flows:
 -  Training in a day \| Reminder 3 days prior to event
 
 Follow the same instructions to configure the flows as explained in [Activate the sync template flows](setup-core-components.md#activate-the-sync-template-flows).
+
+## Set up data for the Maker Assessment app
+
+Get the Maker Assessment ready to use by importing an initial set of assessment questions. You can add your own questions or customize the existing ones after this import.
+
+1. Extract the *MakerJourneyData.zip* file. You can find this file in the initial download.
+1. Upload the three files to a SharePoint document library in your tenant. Note their location.
+1. Open the Center of Excellence - Nurture solution and edit the **Setup - starter data** flow.
+1. Update the Excel actions to point to the files you put in SharePoint document library in the steps above.
+    1. Select AssessmentCategory.xlsx for Categories
+        ![Select AssessmentCategory.xlsx for Categories.](media/MakerJourneyCategoryTable.png "Select AssessmentCategory.xlsx for Categories.")
+    1. Select Assessments.xlsx for Questions
+        ![Select Assessments.xlsx for Questions.](media/MakerJourneyQuestionTable.png "Select Assessments.xlsx for Questions.")
+    1. Select AnswerOptions.xlsx for Answers
+        ![Select AnswerOptions.xlsx for Answers.](media/MakerJourneyAnswerTable.png "Select AnswerOptions.xlsx for Answers.")
+    1. Save the flow, turn it on, and run it.
+
+1. You can now use the [Maker Assessment app](nurture-components.md), and should start with the Maker Assessment Admin app to ensure you are happy with the starter set of questions we have just uploaded.
 
 ## Set up a feedback form for your Training in a day
 
@@ -155,7 +177,7 @@ Follow the same instructions to configure the flows as explained in [Activate th
 
 The nurture components solution contains four apps. As soon as you're ready to adopt the CoE, share these apps as follows:
 
-- App Catalog; Share with your entire organization.
+- Maker Assessment: Share with your makers or your entire organization.
 
 - Template Catalog: Share with your makers or your entire organization.
 

@@ -30,14 +30,19 @@ The CoE nurture components solution contains assets relevant to everyone in the 
 
 Here's a breakdown of the assets that form the nurture components solution:
 
-- Onboard new makers, provide training, and share best practices
-  - [Admin | Welcome Email (flow)](#flows)
+- Onboard new makers and share best practices
+  - [Maker Assessment](#apps)
   - [Template Catalog (canvas app)](#apps)
   - [Admin | Newsletter with Product Updates (flow)](#flows)
+- Encourage adoption
   - [Training in a Day Management and Registration (canvas apps)](#apps)
   - [Training in a Day Feedback Reminder, Registration Confirmation and Reminder (flow)](#flows)
-- Encourage adoption
-  - [App Catalog (canvas app)](#apps)
+
+## Security roles
+
+**Maker Journey Admin SR** Gives a user full access (create, read, write, etc) to the Maker Assessment tables. When you share the Maker Assessment Admin app with your admin team, make sure to assign them the **Maker Journey Admin SR** security role.
+
+**Maker Journey Maker SR** Gives a user read access to the Maker Assessment tables. When you share the Maker Assessment app with your organization, make sure to assign them the **Maker Journey Maker SR** security role.
 
 ## Tables
 
@@ -60,6 +65,18 @@ Represents available training events created through the Training in a Day Manag
 - Max attendees
 - Location
 
+### Assessment Category
+
+Categories - such as Data, Audience, Support - used in the Maker Assessment app.
+
+### Assessment Questions
+
+Questions used in the Maker Assessment app.
+
+## Answer Options
+
+Potential answers to questions in the Maker Assessment app.
+
 ## Flows
 
 | Flow | Type | Schedule | Description |
@@ -68,8 +85,29 @@ Represents available training events created through the Training in a Day Manag
 | Training in a Day \| Feedback Reminder | Schedule | Daily | Sends an email to attendees of a training event on the day, and requests feedback. |
 | Training in a Day \| Registration Confirmation Automated | Automated | when a user registers for an event using the [Training in a day](#training-in-a-day--registration) app | Sends an email to attendees of a training event on the day, and requests feedback. |
 | Training in a Day \| Reminder 3 days prior to event | Schedule | Daily | Sends a reminder email to an attendee of a Training in a Day event three days before the event.
+| Setup - starter data | Instant | Manual (once) | This instant cloud flow runs once during setup to add some starter questions, answers, and categories into your dataverse tables.
 
 ## Apps
+
+### Maker Assessment Admin App
+
+A canvas app that the Maker Assessment admin uses to enter or update the questions, answers, and categories, that are listed in the apps.
+
+**Permission**: Share this app with the Maker Assessment admins - this can be your CoE or Power Platform adoption lead.
+
+**Prerequisite**: This app uses Dataverse; a Premium license is therefore required for every app user unless installed in Dataverse for Teams.
+
+![Maker Journey Admin app](media/MakerJourneyAdminApp.png "Maker Journey Admin app")
+
+### Maker Assessment
+
+The Maker Assessment app can be used to ask users a series of questions regarding the target audience, data and support of the solution they are planning and informing them about governance, support and license considerations a maker needs to keep in mind before starting the development of their solution.
+
+**Permission**: The Maker Assessment app can be shared with the entire organization.
+
+**Prerequisite**: This app uses Dataverse; a Premium license is therefore required for every app user unless installed in Dataverse for Teams.
+
+![Maker Assessment app, screen 1](media/MakerJourneyAssessmentApp_1.png "Maker Assessment app, screen 1")
 
 ### Template Catalog
 

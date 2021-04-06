@@ -34,12 +34,13 @@ Here's a breakdown of the assets that form the core components:
 - **Catalog tenant resources**
   - [Microsoft Dataverse tables](#tables): Environments, apps, flows, and more
   - [Admin | Sync Template v3 (flows)](#flows): All apps, cloud and desktop flows, cloud flow action details, custom connectors, connectors, model-driven apps, shared-with information, chatbots.
-  - [Admin | Sync Audit Log (flow)](#flows)
+  - [Admin | Welcome email](#flows)
   - [Power BI dashboard](#power-bi-report)
   - [Power Platform Admin View (model-driven app)](#apps)
 - **Bulk change permissions for apps and flow**
   - [Set App Permissions (canvas app)](#apps)
   - [Set Flow Permissions (canvas app)](#apps)
+  - [App Catalog](#apps)
 
 ## Tables
 
