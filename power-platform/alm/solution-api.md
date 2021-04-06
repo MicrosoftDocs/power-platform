@@ -28,7 +28,7 @@ this and more by using the APIs that are available to you. Below are some exampl
 of what you can accomplish using the .NET SDK APIs, the SOAP 2011 endpoint, and custom code.
 
 > [!NOTE]
-> You can also perform these same operations using the Web API. The related actions are: [ImportSolution](https://docs.microsoft.com/dynamics365/customer-engagement/web-api/importsolution), [ExportSolution](https://docs.microsoft.com/dynamics365/customer-engagement/web-api/exportsolution), [CloneAsPatch](https://docs.microsoft.com/dynamics365/customer-engagement/web-api/cloneaspatch), and [CloneAsSolution](https://docs.microsoft.com/dynamics365/customer-engagement/web-api/cloneassolution).
+> You can also perform these same operations using the Web API. The related actions are: [ImportSolution](/dynamics365/customer-engagement/web-api/importsolution), [ExportSolution](/dynamics365/customer-engagement/web-api/exportsolution), [CloneAsPatch](/dynamics365/customer-engagement/web-api/cloneaspatch), and [CloneAsSolution](/dynamics365/customer-engagement/web-api/cloneassolution).
 
 ## Create, export, or import an unmanaged solution
 
@@ -54,7 +54,7 @@ exists, the customization prefix might have been changed, so this sample seeks t
 capture the current customization prefix. The `PublisherId` is also captured so
 that the publisher record can be deleted. If the publisher isn't found, a new
 publisher is created using
-the [IOrganizationService](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.iorganizationservice).[Create](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.iorganizationservice.create) method.
+the [IOrganizationService](/dotnet/api/microsoft.xrm.sdk.iorganizationservice).[Create](/dotnet/api/microsoft.xrm.sdk.iorganizationservice.create) method.
 
 ```csharp
 // Define a new publisher
@@ -172,7 +172,7 @@ and [Add an existing solution component](#add-an-existing-solution-component)
 ### Export an unmanaged solution
 
 This code sample shows how to export an unmanaged solution or package a managed
-solution. The code uses the [ExportSolutionRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.exportsolutionrequest) class to export a compressed file representing an unmanaged solution. The option to create a managed solution is set by using the [Managed](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.exportsolutionrequest.managed#Microsoft_Crm_Sdk_Messages_ExportSolutionRequest_Managed) property.
+solution. The code uses the [ExportSolutionRequest](/dotnet/api/microsoft.crm.sdk.messages.exportsolutionrequest) class to export a compressed file representing an unmanaged solution. The option to create a managed solution is set by using the [Managed](/dotnet/api/microsoft.crm.sdk.messages.exportsolutionrequest.managed#Microsoft_Crm_Sdk_Messages_ExportSolutionRequest_Managed) property.
 This sample saves a file named *samplesolution.zip* to the output folder.
 
 ```csharp
@@ -196,7 +196,7 @@ Console.WriteLine("Solution exported to {0}.", outputDir + filename);
 ### Import an unmanaged solution
 
 Importing (or upgrading) a solution by using code is accomplished with
-[ImportSolutionRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.importsolutionrequest).
+[ImportSolutionRequest](/dotnet/api/microsoft.crm.sdk.messages.importsolutionrequest).
 
 ```csharp
 // Install or upgrade a solution
@@ -214,11 +214,11 @@ _serviceProxy.Execute(impSolReq);
 
 You can use the ImportJob entity to capture data about the success of the
 solution import. When you specify an `ImportJobId` for the
-[ImportSolutionRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.importsolutionrequest),
+[ImportSolutionRequest](/dotnet/api/microsoft.crm.sdk.messages.importsolutionrequest),
 you can use that value to query the ImportJob entity about the status of the
 import. The `ImportJobId` can also be used to download an import log file using
 the
-[RetrieveFormattedImportJobResultsRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.retrieveformattedimportjobresultsrequest)
+[RetrieveFormattedImportJobResultsRequest](/dotnet/api/microsoft.crm.sdk.messages.retrieveformattedimportjobresultsrequest)
 message.
 
 ```csharp
@@ -384,10 +384,10 @@ Console.WriteLine("Deleted the {0} solution.", ImportedSolution.FriendlyName);
 
 ## Cloning, patching, and upgrading
 
-You can perform additional solution operations by using the available APIs. For cloning and patching solutions use the [CloneAsPatchRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.cloneaspatchrequest)
-and [CloneAsSolutionRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.cloneassolutionrequest). For information about cloning and patching, see [Create solution patches](/powerapps/maker/common-data-service/solution-patches).
+You can perform additional solution operations by using the available APIs. For cloning and patching solutions use the [CloneAsPatchRequest](/dotnet/api/microsoft.crm.sdk.messages.cloneaspatchrequest)
+and [CloneAsSolutionRequest](/dotnet/api/microsoft.crm.sdk.messages.cloneassolutionrequest). For information about cloning and patching, see [Create solution patches](/powerapps/maker/common-data-service/solution-patches).
 
-When performing solution upgrades use the [StageAndUpgradeRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.stageandupgraderequest) and [DeleteAndPromoteRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.deleteandpromoterequest). For more information about the process of staging and upgrades, see [Upgrade or update a solution](/powerapps/maker/common-data-service/update-solutions).
+When performing solution upgrades use the [StageAndUpgradeRequest](/dotnet/api/microsoft.crm.sdk.messages.stageandupgraderequest) and [DeleteAndPromoteRequest](/dotnet/api/microsoft.crm.sdk.messages.deleteandpromoterequest). For more information about the process of staging and upgrades, see [Upgrade or update a solution](/powerapps/maker/common-data-service/update-solutions).
 
 ## Detect solution dependencies
 

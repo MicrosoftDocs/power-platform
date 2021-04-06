@@ -123,7 +123,7 @@ Create a new app based on the template.
 
 ### Shared component library
 
-[Component libraries](https://docs.microsoft.com/powerapps/maker/canvas-apps/component-library) provide a centralized and managed repository of components for reusability. Component libraries are the recommended way to share components across apps.
+[Component libraries](/powerapps/maker/canvas-apps/component-library) provide a centralized and managed repository of components for reusability. Component libraries are the recommended way to share components across apps.
 
 The shared component library in the theming component solution contains a Header, TabControl, and PreLoader component. The shared component library isn't editable. Make a copy of the library before expanding it.
 

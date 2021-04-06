@@ -18,8 +18,6 @@ search.app:
 ---
 # Connect to Exchange Online
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 <!-- legacy procedure -->
 
 With both customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), and [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] hosted as online services, connecting the two is a simpler, more straightforward configuration.  
@@ -35,9 +33,9 @@ With both customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Se
   
 -   [Exchange Online](https://technet.microsoft.com/library/jj200580\(v=exchg.150\).aspx)  
   
--   [Exchange Online Service Description](https://technet.microsoft.com/library/jj819276.aspx)  
+-   [Exchange Online Service Description](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description)  
   
--   [Microsoft 365 and Office 365 service descriptions](https://technet.microsoft.com/office/dn788955)  
+-   [Microsoft 365 and Office 365 service descriptions](/office365/servicedescriptions/office-365-service-descriptions-technet-library)  
   
 > [!TIP]
 >  To make sure you've got a good connection to [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)], run the [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/). For information on what tests to run, see [Test mail flow with the Remote Connectivity Analyzer](https://technet.microsoft.com/library/dn305950\(v=exchg.150\).aspx).  
@@ -60,7 +58,7 @@ With both customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Se
 
 2. Select **Settings** > **Email** > **Email settings**.  
   
-3. Set the processing and synchronization fields as follows:  
+3. Set the processing and synchronization columns as follows:  
   
    - **Server Profile**: [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)]  
   
@@ -77,7 +75,7 @@ All new users will have these settings applied to their mailbox.
 ## Configure mailboxes  
  New users will have their mailboxes configured automatically with the settings you made in the prior section. For existing users added prior to the above settings, you must set the Server Profile and the delivery method for email, appointments, contacts, and tasks.  
   
- In addition to administrator permissions, you must have Read and Write privileges on the Mailbox entity to set the delivery method for the mailbox.  
+ In addition to administrator permissions, you must have Read and Write privileges on the Mailbox table to set the delivery method for the mailbox.  
   
  Choose **one** of the following methods:  
   
@@ -256,7 +254,7 @@ Admins, as described in the Permission model table, can change the settings so m
   
    To see alerts for an individual mailbox, open the mailbox and then under **Common**, select **Alerts**.  
   
-   The result of the email configuration test is displayed in the **Incoming Email Status**, **Outgoing Email Status**, and **Appointments, Contacts, and Tasks Status** fields of a mailbox record. An alert is also generated when the configuration is successfully completed for a mailbox. This alert is shown to the mailbox owner.  
+   The result of the email configuration test is displayed in the **Incoming Email Status**, **Outgoing Email Status**, and **Appointments, Contacts, and Tasks Status** columns of a mailbox record. An alert is also generated when the configuration is successfully completed for a mailbox. This alert is shown to the mailbox owner.  
   
    You can find information on recurring issues and other troubleshooting information in [Blog: Test and Enable Mailboxes in Microsoft Dynamics CRM 2015](https://blogs.msdn.com/b/crm/archive/2015/08/31/test-and-enable-mailboxes-in-microsoft-dynamics-crm-2015.aspx) and [Troubleshooting and monitoring server-side synchronization](../admin/troubleshooting-monitoring-server-side-synchronization.md).  
   
@@ -304,7 +302,7 @@ Set-CrmRecord -conn $conn -CrmRecord $emailserverprofile
 
 ### See also  
 [Troubleshooting and monitoring server-side synchronization](../admin/troubleshooting-monitoring-server-side-synchronization.md)   
-[Test mail flow by validating your connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/test-mail-flow)   
+[Test mail flow by validating your connectors](/exchange/mail-flow-best-practices/test-mail-flow)   
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

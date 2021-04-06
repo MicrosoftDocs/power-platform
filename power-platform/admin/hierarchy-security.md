@@ -19,8 +19,6 @@ search.app:
 ---
 # Hierarchy security to control access
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 The hierarchy security model is an extension to the existing security models that use business units, security roles, sharing, and teams. It can be used in conjunction with all other existing security models. The hierarchy security offers a more granular access to records for an organization and helps to bring the maintenance costs down. For example, in complex scenarios, you can start with creating several business units and then add the hierarchy security. This will achieve a more granular access to data with far less maintenance costs that a large number of business units may require.  
   
 ## Manager hierarchy and Position hierarchy security models  
@@ -74,7 +72,7 @@ These settings can be found in the Microsoft Power Platform admin center by goin
 
 Make sure you have the System Administrator or System Customizer security role or equivalent permissions to update the setting.
 
-- Follow the steps in [View your user profile](https://docs.microsoft.com/powerapps/user/view-your-user-profile).
+- Follow the steps in [View your user profile](/powerapps/user/view-your-user-profile).
 - Don’t have the correct permissions? Contact your system administrator.
   
  The hierarchy security is disabled by default. To enable:  
@@ -142,7 +140,7 @@ Make sure you have the System Administrator or System Customizer security role o
   
 ### See also  
  [Security in Microsoft Dataverse](wp-security.md)   
- [Query and visualize hierarchical data](https://docs.microsoft.com/dynamics365/customer-engagement/customize/query-visualize-hierarchical-data)   
+ [Query and visualize hierarchical data](/dynamics365/customer-engagement/customize/query-visualize-hierarchical-data)   
 
 
 

@@ -25,7 +25,7 @@ These settings can be found in the Microsoft Power Platform admin center by goin
 
 Make sure you have the System Administrator or System Customizer security role or equivalent permissions to update the setting.
 
-- Follow the steps in [View your user profile](https://docs.microsoft.com/powerapps/user/view-your-user-profile).
+- Follow the steps in [View your user profile](/powerapps/user/view-your-user-profile).
 - Don’t have the correct permissions? Contact your system administrator.
   
 1. Select an environment and go to **Settings** > **Data management** > **Templates**.
@@ -38,7 +38,7 @@ Make sure you have the System Administrator or System Customizer security role o
   
 ### See also  
 [Import data (all record types) from multiple sources](import-data-all-record-types.md) <br />
-[Import data](https://docs.microsoft.com/powerapps/developer/common-data-service/import-data)
+[Import data](/powerapps/developer/common-data-service/import-data)
  
 
 

@@ -17,8 +17,6 @@ search.app:
 ---
 # Move configuration data across environments and organizations with the Configuration Migration tool
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 The Configuration Migration tool enables you to move configuration data across environments and organizations. Configuration data is used to define custom functionality in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), and is typically stored in custom entities. Configuration data is different from end user data (account, contacts, and so on). A typical example of configuration data is what you define in [!INCLUDE[pn_unified_service_desk_for_crm](../includes/pn-unified-service-desk-for-crm.md)] to configure a customized call center agent application. The [!INCLUDE[pn_unified_service_desk](../includes/pn-unified-service-desk.md)] entities, along with the configuration data that is stored in the entities, define an agent application. For more information about [!INCLUDE[pn_unified_service_desk](../includes/pn-unified-service-desk.md)], see [Unified Service Desk Guide](/dynamics365/customer-engagement/unified-service-desk/unified-service-desk).  
   
  The Configuration Migration tool enables you to:  
@@ -40,7 +38,7 @@ The Configuration Migration tool enables you to move configuration data across e
   
 - Embed the exported modules created from this tool (schema and data files) in other programs. For example, you can use the exported data in Package Deployer along with other solutions files and data to create and deploy packages on a environment. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Deploy packages using  Package Deployer](/powerapps/developer/common-data-service/package-deployer/create-packages-package-deployer)  
   
-For information on downloading the Configuration Migration tool, see [Download tools from NuGet](https://docs.microsoft.com/powerapps/developer/common-data-service/download-tools-nuget).
+For information on downloading the Configuration Migration tool, see [Download tools from NuGet](/powerapps/developer/common-data-service/download-tools-nuget).
 
 <a name="HowItWorks"></a>   
 
@@ -78,7 +76,7 @@ For information on downloading the Configuration Migration tool, see [Download t
 -   Back up your production environment before importing the data.  
   
 ### See also  
-[Download tools from NuGet](https://docs.microsoft.com/powerapps/developer/common-data-service/download-tools-nuget)<br />
+[Download tools from NuGet](/powerapps/developer/common-data-service/download-tools-nuget)<br />
 [Create a schema to export configuration data](create-schema-export-configuration-data.md)<br />
 [Modify a configuration data schema](modify-configuration-data-schema.md)<br /> 
 [Import configuration data](import-configuration-data.md)<br /> 

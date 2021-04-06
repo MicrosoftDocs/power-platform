@@ -19,9 +19,7 @@ search.app:
 ---
 # Enhance security by encrypting your data
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
-The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), use standard [!INCLUDE[pn_MS_SQL_Server](../includes/pn-ms-sql-server.md)] cell level encryption for a set of default entity attributes that contain sensitive information, such as user names and email passwords. This feature can help organizations meet FIPS 140-2 compliance.  
+The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), use standard [!INCLUDE[pn_MS_SQL_Server](../includes/pn-ms-sql-server.md)] cell level encryption for a set of default table attributes that contain sensitive information, such as user names and email passwords. This feature can help organizations meet FIPS 140-2 compliance.  
   
 All new and upgraded organizations use data encryption by default. Data encryption can’t be turned off.  
   
@@ -33,7 +31,7 @@ These settings can be found in the Microsoft Power Platform admin center by goin
 
 Make sure you have the System Administrator or System Customizer security role or equivalent permissions to update the setting.
 
-- Follow the steps in [View your user profile](https://docs.microsoft.com/powerapps/user/view-your-user-profile).
+- Follow the steps in [View your user profile](/powerapps/user/view-your-user-profile).
 - Don’t have the correct permissions? Contact your system administrator.
 
 1. Select an environment and go to **Settings** > **Encryption** > **Data encryption**.
@@ -62,8 +60,8 @@ Make sure you have the System Administrator or System Customizer security role o
 5. As a best practice, save the text file that contains the encryption key on a computer in a secure location on an encrypted hard drive.  
   
 ### See also  
- [SQL Server Encryption](https://technet.microsoft.com/library/bb510663.aspx)   
- [FIPS 140 Evaluation](https://technet.microsoft.com/library/cc750357.aspx)   
+ [SQL Server Encryption](/sql/relational-databases/security/encryption/sql-server-encryption)   
+ [FIPS 140 Evaluation](/windows/security/threat-protection/fips-140-validation)   
  [Manage Your Data](add-remove-sample-data.md)   
  [Manage configuration data](manage-configuration-data.md)
 

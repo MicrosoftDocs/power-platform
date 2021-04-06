@@ -17,11 +17,9 @@ search.app:
 ---
 # Power Apps operated by 21Vianet and Power Automate operated by 21Vianet
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 ## Overview
 
-Microsoft Power BI, Microsoft Power BI Premium, Microsoft Power BI Embedded, Microsoft Dynamics 365 Customer Service, Microsoft Dynamics 365 Sales, Microsoft Dynamics 365 Field Service, Microsoft Dynamics 365 Finance, and Microsoft Dynamics 365 Supply Chain Management online services operated by 21Vianet are already available in China. Microsoft Power Apps and Microsoft Power Automate are now available to serve customers in regulated industries and commercial organizations that do business with entities in China and require local data residency.  
+Microsoft Power BI, Microsoft Power BI Premium, Microsoft Power BI Embedded, Microsoft Dynamics 365 Customer Service, Microsoft Dynamics 365 Sales, Microsoft Dynamics 365 Field Service, Microsoft Dynamics 365 Finance, and Microsoft Dynamics 365 Supply Chain Management online services operated by 21Vianet are already available in China. Microsoft Power Apps and Microsoft Power Automate are now available to serve customers in regulated industries and commercial organizations that do business with tables in China and require local data residency.  
 
 Microsoft Dynamics 365 (Dynamics 365 Customer Service, Dynamics 365 Sales, Dynamics 365 Field Service, Dynamics 365 Finance, and Dynamics 365 Supply Chain Management) and Microsoft Power Platform (Microsoft Power BI, Power BI Premium, Power BI Embedded, Power Apps, and Power Automate) online services collectively known as “Business Applications” operated by 21Vianet are a physically separated instance of cloud services operated and transacted by a local operator, Shanghai Blue Cloud Technology Co., Ltd (“21Vianet”). This is a wholly owned subsidiary of Beijing 21Vianet Broadband Data Center Co., Ltd. located in mainland China.
 
@@ -33,7 +31,7 @@ For more information about these exceptions or for questions about service avail
 
 ## Feature availability information 
 
-Due to certain technical dependencies, the following features listed will not be available for general availability of Power Apps operated by 21Vianet and Power Automate operated by 21Vianet. For information about future feature availability, see [Business applications and platform release plans](https://go.microsoft.com/fwlink/p/?linkid=2010158).
+Due to certain technical dependencies, the following features listed will not be available for general availability of Power Apps operated by 21Vianet and Power Automate operated by 21Vianet. For information about future feature availability, see [Business applications and platform release plans](/dynamics365/release-plans/).
 
 ### Power Apps operated by 21Vianet and Power Automate operated by 21Vianet plans
 
@@ -51,35 +49,35 @@ Power Apps and Power Automate include several features that allow users to conne
 
 Power Apps and Power Automate maintain the actual resources, information flow, and data management, while relying on Microsoft 365 to provide the visual styles that are presented to the customer administrator through their management console. 
 
-Power Apps and Power Automate will not have the ability to integrate third-party applications into the service through [Connectors](https://docs.microsoft.com/connectors). 
+Power Apps and Power Automate will not have the ability to integrate third-party applications into the service through [Connectors](/connectors). 
 
 ### Power Apps operated by 21Vianet and Power Automate operated by 21Vianet
 
 When a user of an organization employing Active Directory Federation Services (AD FS) attempts to access Power Automate, the user is redirected to a login page hosted on the organization’s AD FS server. The user provides credentials to their organization's AD FS server. The organization's AD FS server attempts to authenticate the credentials using the organization’s Azure Active Directory (Azure AD) infrastructure. If authentication is successful, the organization’s AD FS server issues a SAML (Security Assertion Markup Language) ticket that contains information about the user’s identity and group membership.
 
-The customer’s AD FS server signs this ticket using one half of an asymmetric key pair and then it sends the ticket to Azure AD via encrypted Transport Layer Security (TLS). Azure AD validates the signature using the other half of the asymmetric key pair and then geo-redundant storage (GRS) access based on the ticket. The user's identity and group membership information remain encrypted in Azure AD. In other words, only limited user-identifiable information is stored in Azure AD. You can find full details of the Azure AD security architecture and control implementation in [Azure self-service password (SSP)](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-howitworks).
+The customer’s AD FS server signs this ticket using one half of an asymmetric key pair and then it sends the ticket to Azure AD via encrypted Transport Layer Security (TLS). Azure AD validates the signature using the other half of the asymmetric key pair and then geo-redundant storage (GRS) access based on the ticket. The user's identity and group membership information remain encrypted in Azure AD. In other words, only limited user-identifiable information is stored in Azure AD. You can find full details of the Azure AD security architecture and control implementation in [Azure self-service password (SSP)](/azure/active-directory/authentication/concept-sspr-howitworks).
 
 The Azure AD account management services are hosted on physical servers managed by the Microsoft Global Foundation Services (GFS). Network access to these servers is controlled by GFS-managed network devices using rules set by Azure. Users do not interact directly with Azure AD.
 
 #### Power Automate features not available 
 
-- [AI Builder](https://docs.microsoft.com/ai-builder/), a separate add-on offering for Microsoft Power Platform.
-- [Power Automate mobile application](https://docs.microsoft.com/flow/mobile-manage-flows).
-- [Connectors](https://docs.microsoft.com/connectors/connector-reference/connector-reference-powerautomate-connectors): The most popular connectors in use in our commercial service (based on usage telemetry) have been published; if there is a connector available in the commercial offering that you do not see deployed, please contact [support](https://en.21vbluecloud.com/contact), and we will review your request.
+- [AI Builder](/ai-builder/), a separate add-on offering for Microsoft Power Platform.
+- [Power Automate mobile application](/flow/mobile-manage-flows).
+- [Connectors](/connectors/connector-reference/connector-reference-powerautomate-connectors): The most popular connectors in use in our commercial service (based on usage telemetry) have been published; if there is a connector available in the commercial offering that you do not see deployed, please contact [support](https://en.21vbluecloud.com/contact), and we will review your request.
 
 
 #### Power Apps features not available
 
 - Embed in [Microsoft Teams](https://powerapps.microsoft.com/blog/powerapps-teams/) as Microsoft Teams is not yet available in China.
-- [Power Apps solution checker](https://docs.microsoft.com/powerapps/maker/common-data-service/use-powerapps-checker) (Planned for end of calendar year 2020.)
-- [Power Query](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-cds-newentity-pq) (Planned for end of calendar year 2020.)
-- [Dataflows in Power Apps](https://docs.microsoft.com/powerapps/maker/common-data-service/create-and-use-dataflows) (Planned for end of calendar year 2020.)
-- [Integrate data into Microsoft Dataverse](https://docs.microsoft.com/power-platform/admin/data-integrator)
-- [Export to Azure Data Lake (aka Athena)](https://docs.microsoft.com/powerapps/maker/common-data-service/export-to-data-lake)
+- [Power Apps solution checker](/powerapps/maker/common-data-service/use-powerapps-checker) (Planned for end of calendar year 2020.)
+- [Power Query](/powerapps/maker/common-data-service/data-platform-cds-newentity-pq) (Planned for end of calendar year 2020.)
+- [Dataflows in Power Apps](/powerapps/maker/common-data-service/create-and-use-dataflows) (Planned for end of calendar year 2020.)
+- [Integrate data into Microsoft Dataverse](./data-integrator.md)
+- [Export to Azure Data Lake (aka Athena)](/powerapps/maker/common-data-service/export-to-data-lake)
 - [Dual-write from Dataverse to Dynamics 365 Finance and Operations apps](https://powerapps.microsoft.com/blog/announcing-dual-write-preview/)
-- [Dataverse analytics](https://docs.microsoft.com/power-platform/admin/analytics-common-data-service) (Planned for April 2020.)
-- [AI Builder](https://docs.microsoft.com/ai-builder/), a separate add-on offering for Microsoft Power Platform.
-- [Connectors](https://docs.microsoft.com/connectors/connector-reference/): The most popular connectors in use in our commercial service (based on usage telemetry) have been published; if there is a connector available in the commercial offering that you do not see deployed, please contact support, and we will review your request. 
+- [Dataverse analytics](./analytics-common-data-service.md) (Planned for April 2020.)
+- [AI Builder](/ai-builder/), a separate add-on offering for Microsoft Power Platform.
+- [Connectors](/connectors/connector-reference/): The most popular connectors in use in our commercial service (based on usage telemetry) have been published; if there is a connector available in the commercial offering that you do not see deployed, please contact support, and we will review your request. 
 
 ## Additional resources
 

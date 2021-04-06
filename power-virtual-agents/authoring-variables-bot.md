@@ -2,7 +2,7 @@
 title: "Use chatbot variables to carry content across topics"
 description: "Bot variables can be used to store and retrieve information across multiple topics within the same bot and user session"
 keywords: "PVA"
-ms.date: 9/22/2020
+ms.date: 3/19/2020
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -100,6 +100,13 @@ When a user interacts with the chatbot, however, the variable might be filled in
 
 In this situation, the flow or skill will still run and fill in the variable, overwriting whatever was previously stored in the variable.
  
+## Bot variables lifecycle and resetting its value
+
+Bot variables are accessible from any topic, and the bot variable's assigned value persists throughout [the session](analytics-billed-sessions.md#definition-of-a-billed-session). 
+
+The value is only cleared when the bot user is redirected to [the **Start over** system topic](authoring-create-edit-topics.md#use-system-and-sample-topics), or when the user triggers this topic directly (for example, by typing *Start over*). In this case, all bot variables will be reset and won't have any values.
+
+
 ## Set a bot variable's value from external sources
 
 You can set a bot variable to be initialized with an external source. This lets the bot start the conversation with some context. 

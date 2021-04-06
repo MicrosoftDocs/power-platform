@@ -37,7 +37,7 @@ To enable embedding model-driven apps into Teams, do the following:
 
 5. Before selecting **Save**, you should consider making additional settings changes. Please review:
 
-   - [Install and set up Microsoft Teams integration](https://docs.microsoft.com/dynamics365/teams-integration/teams-install-app)
+   - [Install and set up Microsoft Teams integration](/dynamics365/teams-integration/teams-install-app)
 
    Select **Additional Microsoft Teams settings** > **System Settings** > **General tab** to get to the settings described in the above link.
 
