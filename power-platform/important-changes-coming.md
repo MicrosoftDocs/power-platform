@@ -70,7 +70,32 @@ Main forms will no longer include the footer when a record is opened. Any out of
 The out of box fields currently on the footer will be removed and included on the form as part of the 2021 release wave 2 updates. So, you will not lose status, unsaved changes or the option to open a form in a new window. The **Save** option is already available in the command bar and is always visible to the user. 
 
 While we understand that these types of changes can be disruptive for makers that use the footer today, we always evaluate the experiences to ensure they provide a modern experience that improves usability, support accessibility requirements, and improves discoverability for highly used fields and controls on a page.
- 
+
+## Model-driven app controls deprecation
+
+With the upcoming 2021 release wave 1 (public preview in February 2021 and GA in April 2021), some older controls for model-driven apps will be deprecated. These controls include Flip Switch, Calendar Control (V1), Linear Slider, Radial Knob, Arc Knob, Linear Gauge; along with the Website Preview control, MultiSelectPicklistControl (V1), and the Flip Label.
+
+#### Why is this needed? 
+
+-	These controls are outdated and don’t conform to our current standards for useability and accessibility. 
+-	For example, we’ve received feedback that the Flip Label control is difficult to determine its intended use and users commonly don’t see the options available to choose from, such as "yes / no" or "enable / disable."
+
+#### Impact
+
+- Starting April 2021, these controls can no longer be added to forms. 
+- For instances of Flip Label control, the control will be transitioned to a drop down.
+- For all other controls, they will continue to work within existing forms until April 2022.
+
+#### Action required by you
+We will not make other changes to forms or controls.  Makers are encouraged to make updates:
+
+- Use the Toggle control as a replacement for Flip Label and Flip Switch.
+- Use the Calendar Control (V2) as a replacement for Calendar Control (V1).
+- Evaluate other deprecated controls to determine if they're still useful within existing forms.
+
+## Microsoft Dynamics 365 Email Router is deprecated
+The Microsoft Dynamics 365 Email Router will no longer function on April 21, 2021. For information on migrating email routing functionality to use the server-side synchronization feature, see: [Migrate settings from the Email Router to server-side synchronization](/previous-versions/dynamicscrm-2016/administering-dynamics-365/dn832114(v=crm.8)).
+
 
 ## The Microsoft Dynamics 365 application for Windows is deprecated
 
@@ -100,7 +125,7 @@ Effective October 30, 2020, the following cipher suites are being deprecated fro
 
 Cipher suites are used to encrypt messages to secure a network connection between clients/servers and other servers. We are removing the above list of cipher suites to comply with our current security protocols.
 
-Beginning March 1, 2021, customers can only use our [standard cipher suites](/power-platform/server-cipher-tls-requirements). This change impacts your clients and servers that communicate with our servers, for example, syncing emails from your Microsoft Exchange server, running outbound plug-ins, using native (local) clients to access our servers.
+Beginning March 1, 2021, customers can only use our [standard cipher suites](/power-platform/admin/server-cipher-tls-requirements). This change impacts your clients and servers that communicate with our servers, for example, syncing emails from your Microsoft Exchange server, running outbound plug-ins, using native (local) clients to access our servers.
 
 Customers must upgrade their servers before March 1, 2021.  For more information about configuring TLS Cipher Suite order, see [Manage Transport Layer Security (TLS)](/windows-server/security/tls/manage-tls).
 
@@ -184,7 +209,7 @@ For further information and steps to make a smooth transition, download [Dynamic
 ## Dynamics 365 Home is deprecated 
 ------------------------------------------------------
 
-Effective March 2020, the home page for Dynamics 365 applications (https://home.dynamics.com) is deprecated and won't be available on or after April 1, 2021. The Microsoft 365 apps page (https://www.office.com/apps) will replace it and provide users with a single page for productivity and business applications.  
+Effective March 2020, the home page for Dynamics 365 applications (https://home.dynamics.com) is deprecated and won't be available on or after May 2021. The Microsoft 365 apps page (https://www.office.com/apps) will replace it and provide users with a single page for productivity and business applications.  
 
 Dynamics 365 Home users will see notification about the new location and recommendation to change browser bookmarks starting October 1, 2020. On or after April 1, 2021, users will no longer be able to navigate to <https://home.dynamics.com> from the Office 365 applications list or the Office 365 [application launcher](admin/quickly-navigate-office-365-app-launcher.md#quickly-move-between-apps-with-the-app-launcher). After May 2021, users who navigate to <https://home.dynamics.com> will automatically be redirected to <https://www.office.com/apps> with a business application filter applied.
 
@@ -254,9 +279,9 @@ More information: [Use of Office365 authentication with the WS-Trust security pr
 Regional Discovery Service is deprecated
 ----------------------------------------------------------------------------------------------
 
-Effective March 2, 2020, the *regional* [Discovery Service](/powerapps/developer/common-data-service/org-service/discovery-service) will be deprecated. Microsoft will continue to provide support, security, and other critical updates for the *regional* Discovery Service, but won't release any additional functionality beyond what has already been announced. After March 1, 2021, the *regional* Discovery Service is planned to be shut down. The final date for the shut down is to be determined.
+Effective March 2, 2020, the *regional* [Discovery Service](/powerapps/developer/common-data-service/org-service/discovery-service) will be deprecated. Microsoft will continue to provide support, security, and other critical updates for the *regional* Discovery Service, but won't release any additional functionality beyond what has already been announced. After April 21, 2021, the *regional* Discovery Service will be shut down.
 
-Customers must transition to using the [global OData V4 Discovery Service](/powerapps/developer/common-data-service/webapi/discover-url-organization-web-api#global-discovery-service) as soon as possible so their applications are not impacted. More information: [Modify your code to use global Discovery Service](/powerapps/developer/common-data-service/webapi/discovery-orgsdk-to-webapi).
+Customers must transition to using the [global OData V4 Discovery Service](/powerapps/developer/common-data-service/webapi/discover-url-organization-web-api#global-discovery-service) before April 21, 2021 so their applications are not impacted. More information: [Modify your code to use global Discovery Service](/powerapps/developer/common-data-service/webapi/discovery-orgsdk-to-webapi).
 
 Rules feature in canvas apps is deprecated
 ----------------------------------
@@ -395,7 +420,7 @@ Microsoft will continue to provide security and other critical updates to the Dy
 
 If you are currently using the Dynamics 365 for Blackberry App together with Mobile Application Management for Blackberry, plan to migrate to Dynamics 365 for phones by October 31, 2019. We encourage you to migrate as soon as possible to take advantage of Microsoft's ongoing investments in the reliability, performance, and functionality of the Dynamics 365 mobile app.
 
-Usage of Armature knowledgebase as the knowledge management solution is deprecated
+Usage of Parature knowledgebase as the knowledge management solution is deprecated
 -----------------------------------------------------------------------------------------------
 
 Usage of Parature knowledgebase as the knowledge

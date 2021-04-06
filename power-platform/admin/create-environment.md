@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 03/15/2021
+ms.date: 03/26/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin 
@@ -16,8 +16,6 @@ search.app:
   - Flow
 ---
 # Create and manage environments in the Power Platform admin center
-
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 An environment is a space to store, manage, and share your organization's business data, apps, and flows. It also serves as a container to separate apps that may have different roles, security requirements, or target audiences. Power Apps automatically creates a single default environment for each tenant, which is shared by all users in that tenant.
 
@@ -109,6 +107,7 @@ You have multiple options when creating an environment:
 - **Why create an environment without a database**: If you don't need Dynamics 365 apps or don't need to use Dataverse, and you are creating Power Apps or Power Automate using other data sources, create the environment without the Dataverse database.
 - **The Enable Dynamics 365 apps decision is not reversible**: Once you create an environment, if you don't select **Enable Dynamics 365 apps** at the time of database provisioning, you won't be able to make this change later nor be able to install Dynamics 365 apps on this environment. 
 - **Dynamics 365 apps and trial environments**: Currently, Dynamics 365 apps cannot be enabled for trial environments. To create a trial with Dynamics 365 apps, see [Start your digital transformation here](https://trials.dynamics.com).
+- The URL can't be that of an environment that's been [deleted](delete-environment.md) or [changed](edit-properties-environment.md) until at least 24 hours have passed since an environment deletion or change.
 
 ## Create an environment with a database
 You create a database to use Dataverse as a data store. The Dataverse is a cloud scale database used to securely store data for business applications built on Power Apps. Dataverse provides not just data storage, but a way to implement business logic that enforces business rules and automation against the data. For more information, see [Why use Dataverse?](/powerapps/maker/common-data-service/data-platform-intro#why-use-common-data-service)
@@ -233,3 +232,7 @@ Provisioning environments is based on database capacity. Previously, it was two 
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+
+
+
+“After a URL name change is saved, all users who access that environment must be notified of the change. Users will be able to access the environment for up to 24 hours by using the previous URL. After the 24-hour period has passed, the previous URL will not work.”
