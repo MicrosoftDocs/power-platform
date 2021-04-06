@@ -29,7 +29,7 @@ In this article, you'll learn how to:
 - Extend the starter kit.
 - Install updates to the starter kit.
 
-The CoE Starter Kit can be used in both Production environments and Dataverse for Teams environments. Where you install it will depend on your organization setup, your adoption of Microsoft Power Platform so far and what you want to achieve with the CoE Starter Kit. Before you decide, compare [Dataverse vs Dataverse for Teams](https://docs.microsoft.com/powerapps/teams/data-platform-compare).
+The CoE Starter Kit can be used in both Production environments and Dataverse for Teams environments. Where you install it will depend on your organization setup, your adoption of Microsoft Power Platform so far and what you want to achieve with the CoE Starter Kit. Before you decide, compare [Production vs Dataverse for Teams](https://docs.microsoft.com/powerapps/teams/data-platform-compare).
 
 ## Prerequisites
 
@@ -67,6 +67,23 @@ Set up the CoE Starter Kit by following these instructions:
 - [Set up nurture components](setup-nurture-components.md)
 - [Set up the CoE Power BI dashboard](setup-powerbi.md)
 - [Set up theming components](setup-theming.md)
+
+## Production vs Dataverse for Teams environment
+
+| | Dataverse for Teams environment | Production environment |
+| --- | --- | --- |
+| Syncing inventory to Dataverse tables | Yes, will require a Power Automate Per User/Per Flow license | Yes, will require a Power Automate Per User/Per Flow license |
+| Collecting telemetry information from the Audit Log | No | Yes
+| Power Platform Admin View to view and filter resources | Canvas App | Model Driven App |
+| Power BI Dashboard | Yes | Yes |
+| Canvas Apps part of Core Components (DLP Editor, Set App and Flow Permission Apps) | Yes | Yes |
+| Apps and Flows part of Governance Components | Yes | Yes |
+| Apps and Flows part of Nurture Components | Yes | Yes |
+| Sharing the Developer Compliance Center with makers | Share with colleagues who have a Microsoft 365 license in Teams | Sharing requires users to have a Power Apps Per User or Per App License |
+| Sharing the App Catalog app | Share with colleagues who have a Microsoft 365 license in Teams | Sharing requires users to have a Power Apps Per User or Per App License |
+| Sharing the Training in a day app | Share with colleagues who have a Microsoft 365 license in Teams | Sharing requires users to have a Power Apps Per User or Per App License |
+
+More information: [Dataverse vs Dataverse for Teams](https://docs.microsoft.com/powerapps/teams/data-platform-compare)
 
 ## Extending the starter kit
 
