@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/02/2020
+ms.date: 04/06/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -170,6 +170,10 @@ You use a different set of URLs to access Dynamics 365 US Government environment
 
 - GCC: *.crm9.dynamics.com
 - GCC High:  *.crm.microsoftdynamics.us
+
+### Dynamics 365 Customer Voice
+
+- GCC/GCC High: https://customervoice.microsoft.us
 
 ### Discovery Service (Deprecated)
 
