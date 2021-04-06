@@ -44,24 +44,25 @@ The Usage Overview report contains information such as the total number of apps,
 
 |Item  |Description  |
 |---------|---------|
-|Apps    |         |
+|Total apps    |         |
 |Unique users     |         |
 |Return users     |         |
-|Session count     |         |
+|Sessions     |         |
 
 ### Flows
 
 |Item  |Description  |
 |---------|---------|
-|Flows    |         |
-|Runs     |         |
-|Run count     |         |
+|Total flows    |         |
+|Flow runs     |         |
+|Successful runs     |         |
+|Failed runs     |         |
 
-### PVA bots
+### Power Virtual Agents and Chat bots
 
 |Item  |Description  |
 |---------|---------|
-|PVA bots    |         |
+|Total Power Virtual Agents <br />and Chat bots    |         |
 |Engaged sessions    |         |
 |Billed sessions     |         |
 
@@ -69,12 +70,12 @@ The Usage Overview report contains information such as the total number of apps,
 
 |Item  |Description  |
 |---------|---------|
-|Portals    |         |
+|Total Portals    |         |
 |Page views    |         |
 |Internal logins    |         |
 |External logins    |         |
 
-### AI models
+### AI Builder models
 
 |Item  |Description  |
 |---------|---------|
