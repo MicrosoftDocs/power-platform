@@ -29,7 +29,7 @@ In this article, you'll learn how to:
 - Extend the starter kit.
 - Install updates to the starter kit.
 
-The CoE Starter Kit can be used in both Production environments and Dataverse for Teams environments. Where you install it will depend on your organization setup, your adoption of Microsoft Power Platform so far and what you want to achieve with the CoE Starter Kit. Before you decide, compare [Production vs Dataverse for Teams](https://docs.microsoft.com/powerapps/teams/data-platform-compare).
+The CoE Starter Kit can be used in both Production environments and Dataverse for Teams environments. Where you install it will depend on your organization setup, your adoption of Microsoft Power Platform so far and what you want to achieve with the CoE Starter Kit. Before you decide, compare [Production vs Dataverse for Teams](#production-vs-dataverse-for-teams-environment).
 
 ## Prerequisites
 
