@@ -1,6 +1,6 @@
 ---
-title: "Manage support environments | MicrosoftDocs"
-description: Information on support environment
+title: "Manage non-production support environments in your tenant"
+description: "Learn about support environments created in your tenant by Microsoft to resolve customer issues. These non-production environments are managed by system admins."
 ms.custom: ""
 ms.date: 06/08/2020
 ms.reviewer: ""
