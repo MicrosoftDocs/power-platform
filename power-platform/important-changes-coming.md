@@ -1,7 +1,7 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps"
 description: Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps 
-ms.date: 03/30/2021
+ms.date: 04/06/2021
 ms.topic: "article"
 ms.assetid: 994cc854-17f6-45d6-bc20-fcf1a3f2d6d6
 searchScope:
@@ -420,7 +420,7 @@ Microsoft will continue to provide security and other critical updates to the Dy
 
 If you are currently using the Dynamics 365 for Blackberry App together with Mobile Application Management for Blackberry, plan to migrate to Dynamics 365 for phones by October 31, 2019. We encourage you to migrate as soon as possible to take advantage of Microsoft's ongoing investments in the reliability, performance, and functionality of the Dynamics 365 mobile app.
 
-Usage of Armature knowledgebase as the knowledge management solution is deprecated
+Usage of Parature knowledgebase as the knowledge management solution is deprecated
 -----------------------------------------------------------------------------------------------
 
 Usage of Parature knowledgebase as the knowledge
@@ -445,8 +445,8 @@ Relationship Roles are deprecated
 ---------------------------------
 
 Relationship Roles (**Settings \> Business Management \> Relationship Roles**) are
-deprecated and will be removed in a future major release. This
-feature is replaced by **Connection Roles**. More information: [Create connections to view relationships between
+being deprecated along with their user interface components. These will be removed in a future major release. 
+This feature is replaced by **Connection Roles**. More information: [Create connections to view relationships between
 records](/previous-versions/dynamicscrm-2016/admins-customizers-dynamics-365/mt826690(v=crm.8)).
 
 Mail Merge is deprecated

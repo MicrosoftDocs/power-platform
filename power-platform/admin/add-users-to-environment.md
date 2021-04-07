@@ -1,6 +1,6 @@
 ---
-title: "Add users to an environment | MicrosoftDocs"
-description: Add users to environment 
+title: "Add users to an environment automatically or manually"
+description: "Learn about adding users to an environment and how the process differs when it has a Dataverse database. Use security groups to restrict access or add specific users." 
 author: jimholtz
 ms.author: jimholtz
 ms.reviewer: jimholtz

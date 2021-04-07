@@ -362,6 +362,10 @@ $settings.powerPlatform.powerApps.disableShareWithEveryone = $True
 Set-TenantSettings -RequestBody $settings
 ```
 
+##### Surface your organization’s governance error message content 
+
+If you specify governance error message content to appear in error messages, it will be included in the error message displayed when makers observe they don’t have permission to share apps with 'Everyone'. See [PowerShell governance error message content commands.](powerapps-powershell.md#governance-error-message-content-commands).
+
 ### Power Automate commands
 
 Use these commands to view and modify data related to Power Automate.
