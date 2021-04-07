@@ -1,5 +1,5 @@
 ---
-title: Tenant-level analytics | Microsoft Docs
+title: "Preview: Tenant-level analytics" 
 description: View tenant-level analytics in a variety of reports
 author: jimholtz
 ms.service: power-platform
@@ -16,7 +16,9 @@ search.app:
   - Flow
 ---
 
-# Tenant-level analytics
+# Preview: Tenant-level analytics
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Tenant admins can view reports that apply to all environments in a tenant. 
 
@@ -40,11 +42,11 @@ The following tenant-level reports are available for tenant admins.
 
 Overview reports provide an overview of the tenant and environment of all power platform products and answer questions such as the following:
 
-- How many total environments exist and how many were created in the selected time period? 
-- What is the count of total apps and how many were created in the selected time period?
-- What is the total number of custom connectors in use my tenant across all apps and flows?
+- How many total environments exist and how many were created in a selected time period? 
+- What is the count of total apps and how many were created in a selected time period?
+- What is the total number of custom connectors in use in the tenant across all apps and flows?
 - What are the total number of environments of the various environment types?
-- How many environment makers in the tenant?
+- How many environment makers are in the tenant?
 
 
 > [!div class="mx-imgBorder"] 
@@ -59,7 +61,7 @@ Power Apps reports provide insights into tenant and environment usage and invent
 - How many apps exist in my tenant or environment?
 - How many of these apps are using premium or standard connectors?
 - Provide a list of all connectors for the specified environment and time period.
-- Allow me to filter above list based on connector type.
+- Allow me to filter the above list based on connector type.
 
 > [!div class="mx-imgBorder"] 
 > ![Power Apps usage report](media/power-apps-usage.png "Power Apps usage report")
