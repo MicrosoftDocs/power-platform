@@ -396,7 +396,7 @@
           href: analytics-flow.md
         - name: Analytics for UI flows
           href: analytics-ui-flow.md
-      - name: Tenant level analytics 
+      - name: Tenant-level analytics 
         href: tenant-level-analytics.md
       # - name: Analyze telemetry with Application Insights
       #   items:

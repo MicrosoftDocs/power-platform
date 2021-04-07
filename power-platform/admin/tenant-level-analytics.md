@@ -84,8 +84,6 @@ All the download reports, except "Active Dynamics 365 Customer Engagement Plan U
 - per the timeline in the filters for the out-of-box Dataverse analytics reports. If you select a certain date range for the out-of-box Dataverse reports, the same time filter applies to the downloads.  
 - The maximum duration for data availability is 30 days.
 
-The "Active Dynamics 365 Customer Engagement Plan Users by Application" report always shows the last 30 days of data at the tenant level. 
-
 > [!div class="mx-imgBorder"] 
 > ![Dataverse analytics Download Section](./media/organization-insights-download-section.png "Dataverse analytics Download Section")  
 
