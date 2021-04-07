@@ -15,7 +15,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# About the Microsoft Dataverse for Teams environment
+# About the Microsoft Dataverse for Teams environment 
 
 <!-- fwlink 2143567 -->
 
