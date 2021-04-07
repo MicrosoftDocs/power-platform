@@ -25,6 +25,14 @@ Version 2.0 for the CoE Starter Kit Core Components is now available. This artic
 
 Environment capacity and add-ons are now stored and can be reported on. New tables (Environment Capacity, Environment Add Ons) have been added to store this information. The Power Platform Admin View model-driven app has been updated to view this information. The Admin | Sync Template v3 flow has been updated to retrieve and save this information. The Admin | Capacity Alert flow has been added to alert the admin of capacities over or close to their approved capacity.
 
+## Power BI - Direct Query
+
+The Power BI dashboard has been updated to use Direct Query to connect to Microsoft Dataverse, therefore TDS Endpoint has to be enabled for the environment: [Manage feature settings](https://docs.microsoft.com/power-platform/admin/settings-features).
+
+Viewers of the Power BI Dashboard will need read access to the Dataverse tables to view data.
+
+You will no longer need a scheduled refresh to refresh the Power BI dataset, as the data in the dashboard will always be as up to date as the data in the Dataverse tables. 
+
 ## Moving components from Nurture
 
 Admin | Welcome email (flow) and App catalog (canvas app) have been moved from Nurture components to Core components in an effort to allow Nurture components to be used standalone.
