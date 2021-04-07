@@ -25,6 +25,13 @@ The Nurture Components can be used in both Production environments and Dataverse
 
 Learn more: [What is Dataverse for Teams](https://docs.microsoft.com/powerapps/teams/overview-data-platform)
 
+## Upload default data set for the Maker Assessment app
+
+If you are going to use the [Maker Assessment](nurture-components.md#maker-assessment) app, import an initial set of assessment questions first. You can add your own questions or customize the existing ones after this import.
+
+1. Extract the *MakerJourneyData.zip* file. You can find this file in the initial download.
+1. Upload the three files to the Documents library of a SharePoint site in your tenant and note down the site URL. These files are only needed once for import, and can be deleted after this flow runs.
+
 ## Import the solution
 
 The core components solution is required for the nurture components solution, or any other component in the starter kit, to work.
@@ -41,7 +48,15 @@ The core components solution is required for the nurture components solution, or
     | Training in a day - Feedback Form     | The Training in a Day package includes a flow that automatically sends a feedback request to attendees on the day of the event. Configure the form URL (<https://forms.office.com/>...) here.    |
     | Power User Site URL (SharePoint Site) | The site that your Microsoft Power Platform power users can use to communicate and share files. You'll use it here to house the template library for them. |
     | Innovation Backlog URL | (optional) URl to the [Innovation Backlog](use-innovationbacklog.md) canvas app, if you are using this app |
-    | Maker Journey Admin eMail | eMail of the admin or CoE team that will respond to queries from the Maker Assessment app |
+    | Maker Assessment Admin eMail | eMail of the admin or CoE team that will respond to queries from the Maker Assessment app. |
+    | Maker Assessment SharePoint Site | SharePoint site URL to which you have uploaded the Maker Assessment Excel documents for initial import. |
+
+## Import default data set for the Maker Assessment app
+
+> [!NOTE]
+> The [Excel Online (Business)](https://docs.microsoft.com/connectors/excelonlinebusiness/) must be in the business data&ndash;only bucket of your DLP policy for this flow to run successfully.
+
+Open the Center of Excellence - Nurture Components cloud flow and manually start the **Maker Assessment | Import starter data** flow once to populate the initial set of questions and answer options for the [Maker Assessment](nurture-components.md#maker-assessment) app.
 
 ## Create a SharePoint document library
 
@@ -122,7 +137,8 @@ All flows in this solution depend on all environment variables' being configured
 | Training in a day - Feedback Form     | The Training in a Day package includes a flow that automatically sends a feedback request to attendees on the day of the event. Configure the form URL (<https://forms.office.com/>...) here.    |
 | Power User Site URL (SharePoint Site) | The site that your Microsoft Power Platform power users can use to communicate and share files. You'll use it here to house the template library for them. |
 | Innovation Backlog URL | (optional) URl to the [Innovation Backlog](use-innovationbacklog.md) canvas app, if you are using this app |
-| Maker Journey Admin eMail | eMail of the admin or CoE team that will respond to queries from the Maker Assessment app |
+| Maker Assessment Admin eMail | eMail of the admin or CoE team that will respond to queries from the Maker Assessment app |
+| Maker Assessment SharePoint Site | SharePoint site URL to which you have uploaded the Maker Assessment Excel documents for initial import. |
 
 ## Activate the flows
 
@@ -140,23 +156,7 @@ The nurture components solution contains five flows:
 
 Follow the same instructions to configure the flows as explained in [Activate the sync template flows](setup-core-components.md#activate-the-sync-template-flows).
 
-## Set up data for the Maker Assessment app
 
-Get the Maker Assessment ready to use by importing an initial set of assessment questions. You can add your own questions or customize the existing ones after this import.
-
-1. Extract the *MakerJourneyData.zip* file. You can find this file in the initial download.
-1. Upload the three files to a SharePoint document library in your tenant. Note their location.
-1. Open the Center of Excellence - Nurture solution and edit the **Setup - starter data** flow.
-1. Update the Excel actions to point to the files you put in SharePoint document library in the steps above.
-    1. Select AssessmentCategory.xlsx for Categories
-        ![Select AssessmentCategory.xlsx for Categories.](media/MakerJourneyCategoryTable.png "Select AssessmentCategory.xlsx for Categories.")
-    1. Select Assessments.xlsx for Questions
-        ![Select Assessments.xlsx for Questions.](media/MakerJourneyQuestionTable.png "Select Assessments.xlsx for Questions.")
-    1. Select AnswerOptions.xlsx for Answers
-        ![Select AnswerOptions.xlsx for Answers.](media/MakerJourneyAnswerTable.png "Select AnswerOptions.xlsx for Answers.")
-    1. Save the flow, turn it on, and run it.
-
-1. You can now use the [Maker Assessment app](nurture-components.md), and should start with the Maker Assessment Admin app to ensure you are happy with the starter set of questions we have just uploaded.
 
 ## Set up a feedback form for your Training in a day
 

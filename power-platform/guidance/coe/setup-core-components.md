@@ -165,7 +165,7 @@ Before you begin:
 
 1. Select **Import**.
 
-The import can take up to 10 minutes to be completed.
+The import can take up to 60 minutes to be completed.
 
 ## Activate the sync template flows
 
