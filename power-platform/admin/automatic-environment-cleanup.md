@@ -1,6 +1,6 @@
 ---
-title: "Automatic environment cleanup  | MicrosoftDocs"
-description: Automatic environment cleanup
+title: "Automatic cleanup of inactive environments"
+description: "Learn about the automatic process to identify and disable environments with an inactive subscription, and the actions you can take to prevent deletion."
 author: jimholtz
 manager: kvivek
 ms.service: power-platform
