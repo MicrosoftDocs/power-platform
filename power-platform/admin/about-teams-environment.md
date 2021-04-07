@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/06/2021
+ms.date: 04/07/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -15,7 +15,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# About the Microsoft Dataverse for Teams environment
+# About the Microsoft Dataverse for Teams environment 
 
 <!-- fwlink 2143567 -->
 
@@ -44,7 +44,7 @@ Note the following regarding access to Microsoft Power Platform apps in Teams:
 
 - No direct API access to Dataverse for Teams will be provided, and only apps, bots, and flows embedded within the Microsoft Teams client will be able to access the Dataverse for Teams runtime.
 
-- Dataverse for Teams is not available in the following regions: South Korea, GCC, GCC High.
+- Dataverse for Teams is not available in GCC and GCC High.
 
 More information: [Dataverse for Teams licensing FAQ](powerapps-flow-licensing-faq.md#dataverse-for-teams)
 
