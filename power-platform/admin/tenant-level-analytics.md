@@ -16,7 +16,7 @@ search.app:
   - Flow
 ---
 
-# Preview: Tenant-level analytics
+# Preview: Tenant-level analytics 
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
