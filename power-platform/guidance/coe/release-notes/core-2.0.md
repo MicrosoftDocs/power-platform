@@ -1,5 +1,5 @@
 ---
-title: "Release notes and latest version of the CoE starter kit Core components 1.99 | MicrosoftDocs"
+title: "Release notes and latest version of the CoE starter kit Core components 2.0 | MicrosoftDocs"
 description: "Release notes and latest version of the CoE Starter Kit 1.99."
 author: manuelap-msft
 manager: devkeydet
@@ -17,9 +17,9 @@ search.app:
   - Powerplatform
 ---
 
-# Released version Core Components 1.99
+# Released version Core Components 2.0
 
-Version 1.99 for the CoE Starter Kit Core Components is now available. This article describes the updates, including the new features and the fixes to existing functionality, included in this release. This version was first made available on April 8, 2021.
+Version 2.0 for the CoE Starter Kit Core Components is now available. This article describes the updates, including the new features and the fixes to existing functionality, included in this release. This version was first made available on April 8, 2021.
 
 ## Capacity and Add Ons
 
