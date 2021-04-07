@@ -51,7 +51,7 @@ Follow these steps to see a list of all licensed applications for your tenant.
    Note the following under **Status**:
 
    - **Enabled**: This app is ready to be installed in your environments. 
-   - **Configured**: This app has been configured to an environment. It can be reconfigured to a different environment or configuration to current environment can be udpated.
+   - **Configured**: This app has been configured to an environment. It can be reconfigured to a different environment or configuration to current environment can be updated.
    - **Not configured**: This app is ready to be configured to an environment.
 
 3. From the top menu bar, depending on the status of the app, you can do the following:
