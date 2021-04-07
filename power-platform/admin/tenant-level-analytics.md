@@ -36,7 +36,9 @@ For more information on the different roles for managing your tenant across the 
 
 The following tenant-level reports are available for tenant admins. 
 
-**Overview reports** provide an overview of the tenant and environment of all power platform products and answer questions such as the following:
+### Overview reports
+
+Overview reports provide an overview of the tenant and environment of all power platform products and answer questions such as the following:
 
 - How many total environments exist and how many were created in the selected time period? 
 - What is the count of total apps and how many were created in the selected time period?
@@ -48,7 +50,9 @@ The following tenant-level reports are available for tenant admins.
 > [!div class="mx-imgBorder"] 
 > ![Overview usage report](media/overview-usage-report.png "Overview usage report")
 
-**Power Apps reports** provide insights into tenant and environment usage and inventory of all apps and connectors. Answer questions such as the following:
+### Power Apps reports
+
+Power Apps reports provide insights into tenant and environment usage and inventory of all apps and connectors. Answer questions such as the following:
 
 - What is the total unique canvas/model apps users across the tenant or environments? 
 - What is the count of first-time users across canvas and model apps?
@@ -60,7 +64,8 @@ The following tenant-level reports are available for tenant admins.
 > [!div class="mx-imgBorder"] 
 > ![Power Apps usage report](media/power-apps-usage.png "Power Apps usage report")
 
-**Power Automate reports**  provides insights into tenant usage and inventory of all flows and answer questions such as the following:
+### Power Automate reports
+Power Automate reports provide insights into tenant usage and inventory of all flows and answer questions such as the following:
 
 - How many total flow runs across the tenant or environments for the time period selected? 
 - What is the total number of flow actions within all flows?
