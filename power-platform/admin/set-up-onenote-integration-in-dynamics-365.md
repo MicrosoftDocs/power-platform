@@ -15,7 +15,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Set up OneNote integration
+# Set up OneNote integration 
 
 Gather your thoughts, ideas, plans and research in one single place with [!INCLUDE[pn_onenote](../includes/pn-onenote.md)] in model-driven Power Apps and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation).  
 
