@@ -16,8 +16,6 @@ search.app:
 
 # Preview: Create a daily capacity report
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
-
 The Power Platform API can be used to extract the various details and metadata from your Microsoft Power Platform environments, both those that use Microsoft Dataverse and those that don't.  
 
 In this tutorial, you will learn how to:
