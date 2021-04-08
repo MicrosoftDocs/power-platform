@@ -1,0 +1,1 @@
+APPLIES TO: :::image type="icon" source="../media/applies-to/yes.png" border="false":::SDK API :::image type="icon" source="../media/applies-to/no.png" border="false":::Web API

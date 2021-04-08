@@ -6,7 +6,7 @@ author: mikkelsen2000
 ms.author: pemikkel
 manager: kvivek
 ms.custom: ""
-ms.date: 01/20/2021
+ms.date: 04/08/2021
 ms.reviewer: "pehecke"
 ms.service: powerapps
 ms.topic: "article"
@@ -19,15 +19,17 @@ search.app:
 
 # Import, export, and staging of solutions
 
-Have you ever run into the situation during the import or export of a large solution where the operation times out? If so, you may be a candidate for performing the solution import/export using an asynchronous job. This topic describes how to initiate the asynchronous import or export job using the SDK and Web APIs.
+[!INCLUDE[applies-to-all](../includes/applies-to-all.md)]
+
+Have you ever run into the situation during the import or export of a large solution where the operation times out? If so, you may be a candidate for performing the solution import/export asynchronously. This topic describes how to initiate the asynchronous import or export using the SDK and Web APIs.
 
 ## Solution import
 
-`ImportSolution` is the action (or message) that performs the synchronous import operation. To execute the import operation as an asynchronous job use `ImportSolutionAsync`.
+`ImportSolution` is the action (or message) that performs the synchronous import operation. To execute the import operation asynchronously use `ImportSolutionAsync`.
 
 | Operation | Web API | SDK API |
 | --- | --- | --- |
-| Import a solution | [ImportSolutionAsync](/dynamics365/customer-engagement/web-api/importsolution) | [ImportSolutionAsyncRequest](/dotnet/api/microsoft.crm.sdk.messages.importsolutionrequest) |
+| Import a solution | [ImportSolutionAsync](/dynamics365/customer-engagement/web-api/importsolutionasync) | [ImportSolutionAsyncRequest](/dotnet/api/microsoft.crm.sdk.messages.importsolutionasyncrequest) |
 
 Now let's take a look at some example code that demonstrates `ImportSolutionAsync`.
 
@@ -41,7 +43,7 @@ private void ImportSolutionUsingJob(HttpClient httpClient, string filepath)
   try 
   { 
     byte[] fileBytes = File.ReadAllBytes(filepath); 
-    request = new HttpRequestMessage(HttpMethod.Post, "api/data/v9.0/ImportSolutionAsync"); 
+    request = new HttpRequestMessage(HttpMethod.Post, "api/data/v9.1/ImportSolutionAsync"); 
 
     var str = @"[ 
     { 
@@ -58,6 +60,8 @@ private void ImportSolutionUsingJob(HttpClient httpClient, string filepath)
 
   var inputs = new JObject(); 
   var solParams = new JObject(); 
+
+  // If you were using a staged solution, place its ID here.
   solParams["StageSolutionUploadId"] = Guid.Empty; 
 
   inputs["SolutionParameters"] = solParams; 
@@ -122,6 +126,8 @@ private void ImportSolutionUsingJob(IOrganizationService svc, string filepath)
   param.Entities.Add(e2); 
   param.Entities.Add(e3); 
 
+  // Demonstrating using a generic request and naming it. You could just use
+  // the ImportSolutionAsyncRequest class.
   var r = new OrganizationRequest(); 
   r.RequestName = "ImportSolutionAsync"; 
   r["SolutionParameters"] = new SolutionParameters(); 
@@ -136,31 +142,27 @@ private void ImportSolutionUsingJob(IOrganizationService svc, string filepath)
 
 ---
 
-`ImportSolutionAsync` shares many input parameters with `ImportSolution` but adds `ComponentParameters` and `SolutionParameters`. `ComponentParameters` can be used to overwrite the component data in the customization XML file. `SolutionParameters` can be used to pass the `StageSolutionUploadId` of a staged solution as was shown in the example code.
+`ImportSolutionAsync` shares many input parameters with `ImportSolution` but adds `ComponentParameters` and `SolutionParameters`. `ComponentParameters` can be used to overwrite the component data in the customization XML file. `SolutionParameters` can be used to pass the `StageSolutionUploadId` of a staged solution as was shown in the example Web API code.
 
 The response returned from `ImportSolutionAsync` contains `ImportJobKey` and `AsyncOperationId`. The `ImportJobKey` value can be used to obtain the import result and the `AsyncOperationId` value can be used to track the import job status.
 
 ## Solution export
 
-`ExportSolution` is the action (or message) that performs the synchronous export operation. To execute the export operation as an asynchronous job use `ExportSolutionAsync`.
+`ExportSolution` is the action (or message) that performs the synchronous export operation. To execute the export operation asynchronously use `ExportSolutionAsync`.
 
 | Operation | Web API | SDK API |
 | --- | --- | --- |
-| Export a solution | [ExportSolutionAsync](/dynamics365/customer-engagement/web-api/exportsolution) | use the generic [OrganizationRequest](/dotnet/api/microsoft.xrm.sdk.organizationrequest) and set the **RequestName** property to "ExportSolutionAsync" |
+| Export a solution | [ExportSolutionAsync](/dynamics365/customer-engagement/web-api/exportsolutionasync) | use the generic [OrganizationRequest](/dotnet/api/microsoft.xrm.sdk.organizationrequest) and set the **RequestName** property to "ExportSolutionAsync" |
 | Download an exported solution file | [DownloadSolutionExportData](/dynamics365/customer-engagement/web-api/downloadsolutionexportdata) | use the generic [OrganizationRequest](/dotnet/api/microsoft.xrm.sdk.organizationrequest) and set the **RequestName** property to "DownloadSolutionExportData"|
 
 Now let's take a look at some example code that demonstrates `ExportSolutionAsync`.
 
-### [Web API (C#)](#tab/webapi-csharp)
-
-```csharp
-// Coming soon
-```
-
 ### [SDK API (C#)](#tab/sdk-csharp)
 
 ```csharp
+// Where 'service' is a pre-configured Organization service instance.
 var service = (OrganizationServiceProxy)xsc.CreateOrganizationService();
+
 var req = new OrganizationRequest("ExportSolutionAsync");
 req.Parameters.Add("SolutionName", "ExportSolutionAsyncTest");
 req.Parameters.Add("Managed", false);
@@ -171,16 +173,12 @@ var response = service.Execute(req);
 
 In the response are the `AsyncOperationId` and `ExportJobId` parameter values. Use the `AsyncOperationId` in the response to verify the success of the asynchronous job (`statecode` == 3; `statuscode` == 30). Next, use the `DownloadSolutionExportData` action (or message) with the `ExportJobId` value from the response to download the exported solution file, which is returned in the `ExportSolutionFile` parameter.
 
-### [Web API (C#)](#tab/webapi-csharp)
-
-```csharp
-// COming soon
-```
-
 ### [SDK API (C#)](#tab/sdk-csharp)
 
 ```csharp
+// Where 'service' is a pre-configured Organization service instance.
 var service = (OrganizationServiceProxy)xsc.CreateOrganizationService();
+
 var req = new OrganizationRequest("DownloadSolutionExportData");
 req.Parameters.Add("ExportJobId", Guid.Parse("a9089b53-a1c7-ea11-a813-000d3a14420d");
 var response = service.Execute(req);
@@ -196,35 +194,3 @@ In comparison to importing a solution where the solution is imported and availab
 | Operation | Web API | SDK API |
 | --- | --- | --- |
 | Stage a solution | [StageSolution](/dynamics365/customer-engagement/web-api/stagesolution) | use the generic [OrganizationRequest](/dotnet/api/microsoft.xrm.sdk.organizationrequest) and set the **RequestName** property to "StageSolution" |
-
-Sample code that demonstrates staging is provided below.
-
-### [Web API (C#)](#tab/webapi-csharp)
-
-```csharp
-// Coming soon
-```
-
-### [SDK API (C#)](#tab/sdk-csharp)
-
-```csharp
-// Coming soon
-```
-
----
-
-Sample code that demonstrates staging with a solution upgrade is provided below.
-
-### [Web API (C#)](#tab/webapi-csharp)
-
-```csharp
-// Coming soon
-```
-
-### [SDK API (C#)](#tab/sdk-csharp)
-
-```csharp
-// Coming soon
-```
-
----
