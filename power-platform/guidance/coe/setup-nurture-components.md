@@ -56,7 +56,11 @@ The core components solution is required for the nurture components solution, or
 > [!NOTE]
 > The [Excel Online (Business)](https://docs.microsoft.com/connectors/excelonlinebusiness/) must be in the business data&ndash;only bucket of your DLP policy for this flow to run successfully.
 
-Open the Center of Excellence - Nurture Components cloud flow and manually start the **Maker Assessment | Import starter data** flow once to populate the initial set of questions and answer options for the [Maker Assessment](nurture-components.md#maker-assessment) app.
+1. Open the **Center of Excellence - Nurture Components**.
+1. Edit the **Maker Assessment | Import starter data cloud flow**.
+1. Update all three **List rows present in a table** actions, and set the value for Document library to **Documents** and the value for Table to **Table1**
+    ![Copy the feedback form URL to send and collect responses](media/MakerJourneyCategoryTable.png "Copy the feedback form URL to send and collect responses")
+1. Manually start the **Maker Assessment | Import starter data** flow once to populate the initial set of questions and answer options for the [Maker Assessment](nurture-components.md#maker-assessment) app.
 
 ## Create a SharePoint document library
 
