@@ -33,6 +33,56 @@ Have you ever run into the situation during the import or export of a large solu
 
 Now let's take a look at some example code that demonstrates `ImportSolutionAsync`.
 
+### [SDK API (C#)](#tab/sdk-csharp)
+
+```csharp
+private void ImportSolutionUsingJob(IOrganizationService svc, string filepath)  
+{ 
+  byte[] fileBytes = File.ReadAllBytes(filepath); 
+  var param = new EntityCollection();
+
+  var e1 = new Entity("connectionreference") 
+  { 
+    ["connectionreferencelogicalname"] = "cr485_sharedmsnweather_01b85", 
+    ["connectionreferencedisplayname"] = "MSN Weather", 
+    ["connectorid"] = "/providers/Microsoft.PowerApps/apis/shared_msnweather", 
+    ["connectionid"] = "bcb82cb72ed04d86b33407289cf458e0" 
+  }; 
+
+  var e2 = new Entity("connectionreference") 
+  { 
+    ["connectionreferencelogicalname"] = "cr485_sharedcommondataservice_eb48e", 
+    ["connectionreferencedisplayname"] = "Common Data Service", 
+    ["connectorid"] = "/providers/Microsoft.PowerApps/apis/shared_commondataservice", 
+    ["connectionid"] = "c0701bf51f934042bc78e6a961babada" 
+  }; 
+
+  var e3 = new Entity("connectionreference") 
+  { 
+    ["connectionreferencelogicalname"] = "cr485_sharedsendmail_53930", 
+    ["connectionreferencedisplayname"] = "Mail", 
+    ["connectorid"] = "/providers/Microsoft.PowerApps/apis/shared_sendmail", 
+    ["connectionid"] = "6c4b14bb6c66492786cdaf1f58f61d14" 
+  }; 
+
+  param.Entities.Add(e1); 
+  param.Entities.Add(e2); 
+  param.Entities.Add(e3); 
+
+  // Demonstrating using a generic request and naming it. You could just use
+  // the ImportSolutionAsyncRequest class.
+  var r = new OrganizationRequest(); 
+  r.RequestName = "ImportSolutionAsync"; 
+  r["SolutionParameters"] = new SolutionParameters(); 
+  r["OverwriteUnmanagedCustomizations"] = false; 
+  r["PublishWorkflows"] = true; 
+  r["CustomizationFile"] = fileBytes; 
+  r["ComponentParameters"] = param; 
+
+  var response = proxy.Execute(r);
+} 
+```
+
 ### [Web API (C#)](#tab/webapi-csharp)
 
 ```csharp
@@ -88,56 +138,6 @@ catch (Exception err)
 { 
   throw new Exception(err.Message); 
 }
-```
-
-### [SDK API (C#)](#tab/sdk-csharp)
-
-```csharp
-private void ImportSolutionUsingJob(IOrganizationService svc, string filepath)  
-{ 
-  byte[] fileBytes = File.ReadAllBytes(filepath); 
-  var param = new EntityCollection();
-
-  var e1 = new Entity("connectionreference") 
-  { 
-    ["connectionreferencelogicalname"] = "cr485_sharedmsnweather_01b85", 
-    ["connectionreferencedisplayname"] = "MSN Weather", 
-    ["connectorid"] = "/providers/Microsoft.PowerApps/apis/shared_msnweather", 
-    ["connectionid"] = "bcb82cb72ed04d86b33407289cf458e0" 
-  }; 
-
-  var e2 = new Entity("connectionreference") 
-  { 
-    ["connectionreferencelogicalname"] = "cr485_sharedcommondataservice_eb48e", 
-    ["connectionreferencedisplayname"] = "Common Data Service", 
-    ["connectorid"] = "/providers/Microsoft.PowerApps/apis/shared_commondataservice", 
-    ["connectionid"] = "c0701bf51f934042bc78e6a961babada" 
-  }; 
-
-  var e3 = new Entity("connectionreference") 
-  { 
-    ["connectionreferencelogicalname"] = "cr485_sharedsendmail_53930", 
-    ["connectionreferencedisplayname"] = "Mail", 
-    ["connectorid"] = "/providers/Microsoft.PowerApps/apis/shared_sendmail", 
-    ["connectionid"] = "6c4b14bb6c66492786cdaf1f58f61d14" 
-  }; 
-
-  param.Entities.Add(e1); 
-  param.Entities.Add(e2); 
-  param.Entities.Add(e3); 
-
-  // Demonstrating using a generic request and naming it. You could just use
-  // the ImportSolutionAsyncRequest class.
-  var r = new OrganizationRequest(); 
-  r.RequestName = "ImportSolutionAsync"; 
-  r["SolutionParameters"] = new SolutionParameters(); 
-  r["OverwriteUnmanagedCustomizations"] = false; 
-  r["PublishWorkflows"] = true; 
-  r["CustomizationFile"] = fileBytes; 
-  r["ComponentParameters"] = param; 
-
-  var response = proxy.Execute(r);
-} 
 ```
 
 ---
