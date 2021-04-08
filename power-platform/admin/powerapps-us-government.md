@@ -18,8 +18,6 @@ search.app:
 
 # Microsoft Power Apps US Government 
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 In response to the unique and evolving requirements of the United States public sector, Microsoft has created Power Apps US Government, which consists of several plans for US government organizations. This section provides an overview of features that are specific to Power Apps US Government. It is recommended that you read this supplementary section alongside the Power Apps [documentation](/powerapps/powerapps-overview), which covers information about the general Power Apps service description. For brevity, this service is commonly referred to as Power Apps Government Community Cloud (GCC) or Power Apps Government Community Cloud – High (GCC High).
 
 The Power Apps US Government service description is designed to serve as an overlay to the general Power Apps service description. It defines the unique commitments of this service and the differences from Power Apps offerings that have been available to our customers since October 2016.
@@ -41,9 +39,9 @@ Beginning September, 2019, eligible customers may now choose to deploy Power App
 
 ## Customer eligibility
 
-Power Apps US Government is available to (1) US federal, state, local, tribal, and territorial government entities and (2) other entities that handle data that is subject to government regulations and requirements and where use of Power Apps US Government is appropriate to meet these requirements, subject to validation of eligibility. Validation of eligibility by Microsoft will include confirmation of handling data subject to International Traffic in Arms Regulations (ITAR), law enforcement data subject to the FBI's Criminal Justice Information Services (CJIS) policy, or other government-regulated or controlled data. Validation might require sponsorship by a government entity with specific requirements for the handling of data. 
+Power Apps US Government is available to (1) US federal, state, local, tribal, and territorial government tables and (2) other tables that handle data that is subject to government regulations and requirements and where use of Power Apps US Government is appropriate to meet these requirements, subject to validation of eligibility. Validation of eligibility by Microsoft will include confirmation of handling data subject to International Traffic in Arms Regulations (ITAR), law enforcement data subject to the FBI's Criminal Justice Information Services (CJIS) policy, or other government-regulated or controlled data. Validation might require sponsorship by a government table with specific requirements for the handling of data. 
 
-Entities with questions about eligibility for Power Apps US Government should consult their account team. Upon renewal of a customer's contract for Power Apps US Government, revalidation of eligibility is required.
+Tables with questions about eligibility for Power Apps US Government should consult their account team. Upon renewal of a customer's contract for Power Apps US Government, revalidation of eligibility is required.
 
 ## Power Apps US Government plans
 
@@ -57,7 +55,7 @@ Additional information about the differences in functionality between these grou
 
 ## What is customer data and customer content?
 
-Customer data, as defined in the Online Services Terms, means all data, including all text, sound, video, or image files, and software, that are provided to Microsoft by, or on behalf of, customers through the use of the Online Service. Customer content refers to a specific subset of customer data that has been directly created by users, such as content stored in databases through entries in the [Microsoft Dataverse](/powerapps/maker/common-data-service/data-platform-intro) entities (for example, contact information). Content is generally considered confidential information and in normal service operation is not sent over the internet without encryption.
+Customer data, as defined in the Online Services Terms, means all data, including all text, sound, video, or image files, and software, that are provided to Microsoft by, or on behalf of, customers through the use of the Online Service. Customer content refers to a specific subset of customer data that has been directly created by users, such as content stored in databases through entries in the [Microsoft Dataverse](/powerapps/maker/common-data-service/data-platform-intro) tables (for example, contact information). Content is generally considered confidential information and in normal service operation is not sent over the internet without encryption.
 
 For more information on Power Apps protection of customer data, see the [Microsoft Online Services Trust Center](https://www.microsoft.com/trustcenter/cloudservices/business-application-platform/default.aspx).
 
@@ -85,8 +83,8 @@ Power Apps support and service engineering staff do not have standing access to 
 | Social Security Number (SSN) Search   | Verification that the provided SSN is valid      |
 | Criminal History Check  | A seven (7) year criminal record check for felony and misdemeanor offenses at the state, county, and local level and at the federal level  |
 | Office of Foreign Assets Control List (OFAC) | Validation against the Department of Treasury list of groups with whom U.S. persons are not allowed to engage in trade or financial transactions|
-| Bureau of Industry and Security List (BIS) | Validation against the Department of Commerce list of individuals and entities barred from engaging in export activities   |
-| Office of Defense Trade Controls Debarred Persons List (DDTC) | Validation against the Department of State list of individuals and entities barred from engaging in export activities related to the defense industry  |
+| Bureau of Industry and Security List (BIS) | Validation against the Department of Commerce list of individuals and tables barred from engaging in export activities   |
+| Office of Defense Trade Controls Debarred Persons List (DDTC) | Validation against the Department of State list of individuals and tables barred from engaging in export activities related to the defense industry  |
 | Fingerprinting Check | Fingerprint background check against FBI databases  |
 | CJIS Background Screening | State-adjudicated review of federal and state criminal history by state CSA appointed authority within each state that has signed up for the Microsoft CJIS IA program |
 
