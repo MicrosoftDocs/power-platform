@@ -584,7 +584,7 @@
           items: 
       - name: Configure
         items: 
-          - name: Enable SharePoint document management for specific  entities
+          - name: Enable SharePoint document management for specific entities
             href: enable-sharepoint-document-management-specific-entities.md
           - name: Edit existing SharePoint site records
             href: edit-existing-sharepoint-site-records.md
