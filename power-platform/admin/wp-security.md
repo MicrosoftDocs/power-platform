@@ -19,8 +19,6 @@ search.app:
 ---
 # Security in Microsoft Dataverse
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 This section provides information on how [**Microsoft Dataverse**](/powerapps/maker/common-data-service/data-platform-intro), the underlying data platform for Power Apps, handles security from user authentication to authorization that allows users to perform actions with data and services. Conceptually, security in Dataverse is there to ensure users can do the work they need to do with the least amount of friction, while still protecting the data and services. Security in Dataverse can be implemented as a simple security model with broad access all the way to highly complex security models where users have specific record and field level access. 
 
 The following is a high-level overview of how security model is implemented in Dataverse.

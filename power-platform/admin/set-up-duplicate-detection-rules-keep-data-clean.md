@@ -17,8 +17,6 @@ search.app:
 ---
 # Set up duplicate detection rules to keep your data clean
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 To maintain the integrity of your data, it's a good idea to have rules in place to reduce duplicate records in the system. The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), include default duplicate detection rules for accounts, contacts, and leads, but not for other types of records. If you want the system to detect duplicates for other record types, you'll need to create a new rule.  
   
  After you've created duplicate detection rules, you need to turn duplicate detection on.  
