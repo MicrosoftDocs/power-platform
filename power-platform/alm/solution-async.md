@@ -169,6 +169,12 @@ req.Parameters.Add("Managed", false);
 var response = service.Execute(req);
 ```
 
+### [Web API (C#)](#tab/webapi-csharp)
+
+```csharp
+// No sample code is available at this time
+```
+
 ---
 
 In the response are the `AsyncOperationId` and `ExportJobId` parameter values. Use the `AsyncOperationId` in the response to verify the success of the asynchronous job (`statecode` == 3; `statuscode` == 30). Next, use the `DownloadSolutionExportData` action (or message) with the `ExportJobId` value from the response to download the exported solution file, which is returned in the `ExportSolutionFile` parameter.
@@ -182,6 +188,12 @@ var service = (OrganizationServiceProxy)xsc.CreateOrganizationService();
 var req = new OrganizationRequest("DownloadSolutionExportData");
 req.Parameters.Add("ExportJobId", Guid.Parse("a9089b53-a1c7-ea11-a813-000d3a14420d");
 var response = service.Execute(req);
+```
+
+### [Web API (C#)](#tab/webapi-csharp)
+
+```csharp
+// No sample code is available at this time
 ```
 
 ---
