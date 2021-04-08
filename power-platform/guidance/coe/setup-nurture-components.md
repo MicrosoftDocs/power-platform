@@ -59,7 +59,7 @@ The core components solution is required for the nurture components solution, or
 1. Open the **Center of Excellence - Nurture Components**.
 1. Edit the **Maker Assessment | Import starter data cloud flow**.
 1. Update all three **List rows present in a table** actions, and set the value for Document library to **Documents** and the value for Table to **Table1**
-    ![Copy the feedback form URL to send and collect responses](media/MakerJourneyCategoryTable.png "Copy the feedback form URL to send and collect responses")
+    ![Update Excel actions in the cloud flow with the Document Library and Table value](media/MakerJourneyCategoryTable.png "Update Excel actions in the cloud flow with the Document Library and Table value")
 1. Manually start the **Maker Assessment | Import starter data** flow once to populate the initial set of questions and answer options for the [Maker Assessment](nurture-components.md#maker-assessment) app.
 
 ## Create a SharePoint document library
