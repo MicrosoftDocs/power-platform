@@ -17,8 +17,6 @@ search.app:
 ---
 # System Settings Reporting tab
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 Use the settings on this page to configure reporting settings for model-driven apps in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation). 
 
 <!-- legacy procedure -->
