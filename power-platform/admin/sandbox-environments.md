@@ -17,8 +17,6 @@ search.app:
 ---
 # Manage sandbox environments
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 A sandbox environment is any non-production environment of Microsoft Dataverse. Isolated from production, a sandbox environment is the place to safely develop and test application changes with low risk.
 
 ## View your sandbox environments  
