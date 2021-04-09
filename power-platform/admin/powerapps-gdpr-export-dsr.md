@@ -19,8 +19,6 @@ search.app:
 
 # Responding to Data Subject Rights (DSR) requests to export Power Apps customer data
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 The "right of data portability" allows a data subject to request a copy of his or her personal data in an electronic format (that is, a structured, commonly used, machine readable and interoperable format) that may be transmitted to another data controller:
 
 * Website access: [Power Apps portal](https://make.powerapps.com), [Microsoft Power Platform admin center](https://admin.powerplatform.microsoft.com/), and [Microsoft 365 Service Trust Portal](https://servicetrust.microsoft.com/)

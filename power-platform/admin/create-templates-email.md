@@ -17,8 +17,6 @@ search.app:
 ---
 # Create templates for email
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 Save time when creating multiple email messages by making email templates. Email templates contain prefilled data that you specify, so you don't have to re-enter the same information for each article.  
   
 An email template is attached to an email activity after the activity is created. Typically, each type of email activity has its own email template type; for example, an email activity created from a case record would use a case email template. You can also create global templates that are available for any record type, or personal templates available only to you, or organizational templates available to anyone in your organization.  

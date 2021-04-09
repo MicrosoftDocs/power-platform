@@ -2,7 +2,6 @@
 title: "Use Power BI  | MicrosoftDocs"
 description: Use Power BI
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
@@ -17,8 +16,6 @@ search.app:
   - Flow
 ---
 # Use Power BI
-
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 Power BI works with model-driven apps in Microsoft Dataverse to provide a self-service analytics solution. The Power BI service automatically refreshes the data displayed. With [!INCLUDE[pn_power_bi_desktop](../includes/pn-power-bi-desktop.md)] or [!INCLUDE[pn_MS_Excel_Full](../includes/pn-ms-excel-full.md)] Power Query for authoring reports and Power BI for sharing dashboards and refreshing data from model-driven apps or Dynamics 365 apps, such as Dynamics 365 Sales and Dynamics 365 Customer Service. Integrating Power BI with Dataverse provides the personnel in your organization a powerful way to work with data.  
   

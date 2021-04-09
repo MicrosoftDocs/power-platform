@@ -2,7 +2,6 @@
 title: "Manage email settings  | MicrosoftDocs"
 description: View and manage email settings for Microsoft Dataverse.
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
@@ -17,8 +16,6 @@ search.app:
   - Flow
 ---
 # Manage email settings
-
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 Use Email settings to adjust how model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, features appear and function.
 
