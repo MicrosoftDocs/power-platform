@@ -17,8 +17,6 @@ search.app:
 ---
 # Requirements/supported configurations  
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 [Model-driven Power Apps](/powerapps/maker/model-driven-apps/model-driven-app-overview) and customer engagement apps (such as [Dynamics 365 Sales](/dynamics365/sales-professional/help-hub), [Dynamics 365 Customer Service](/dynamics365/customer-service/help-hub), and [Dynamics 365 Marketing](/dynamics365/marketing/help-hub) and [Dynamics 365 Project Operations](/dynamics365/project-operations)), give you the following options to access data:  
   
 - Web browser. No need to install anything to run customer engagement apps from a computer running a supported web browser.  
