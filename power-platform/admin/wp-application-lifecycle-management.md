@@ -18,8 +18,6 @@ search.app:
 
 # Application lifecycle management
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 Application lifecycle management (ALM) is important as the applications your organization builds become more complex and as more of your company depends on their stability. In this topic we discuss using ALM to handle more complex scenarios.
 
 > [!NOTE]
@@ -58,7 +56,7 @@ Next, let's look at some of the things you should consider as an administrator t
 |Are there any flows?     | Any impact on existing Dataverse data?        |
 |What connectors are the apps using?     |Any changes in the required licenses?         |
 |Does anything require an on-premises gateway?     | Potentially any of the considerations from the New Application column, if it was not a consideration at the time.       |
-|Does the application use Dataverse entities?     | Is any ALM automation needed?    |
+|Does the application use Dataverse tables?     | Is any ALM automation needed?    |
 |Is the application dependent on any other existing applications or external services?     |         |
 |Are there different security roles for different types of users?     |         |
 |Is there any existing data that must be migrated into the new production system?     |         |
@@ -111,7 +109,7 @@ We also covered import, but let's look at a few more things to consider:
 - If you are importing a Dataverse solution that is dependent on other Dataverse solutions, make sure those are already imported into the Dataverse environment.
 - If you import an unmanaged Dataverse solution, make sure you publish all after import has completed.
 - Remember, when you import an update to a Power Apps canvas application, you must publish the new version before others can see it.
-- If you are importing Dataverse changes that remove any entities and data, consider a proactive on-demand backup prior to the import.
+- If you are importing Dataverse changes that remove any tables and data, consider a proactive on-demand backup prior to the import.
 
 ## Updating existing applications
 
@@ -145,12 +143,12 @@ As your organization evolves, it's likely one or more of the applications deploy
 
 Applications often have data that is configuration, or reference data. This could be, for example, a list of territories, product lists, or other data that configures and makes the app work. Often components in the application take dependencies on the IDs of this data. The Configuration Migration Tool is designed to move this type of data from one Dataverse environment to another. The key features of the tool allow you to:
 
-- Select only the entities and fields for which you want to move data.
-- Maintain unique IDs of the records as they are moved.
-- Avoid duplicate records by defining a uniqueness condition for each entity based on a combination of fields.
-- Support updating of existing records.
+- Select only the tables and columns for which you want to move data.
+- Maintain unique IDs of the rows as they are moved.
+- Avoid duplicate rows by defining a uniqueness condition for each table based on a combination of columns.
+- Support updating of existing rows.
 - Define a schema for what data is moved and use it over and over.
-- Filter only the records you want to move.
+- Filter only the rows you want to move.
 
 The following image outlines the basic process for using the tool.
 

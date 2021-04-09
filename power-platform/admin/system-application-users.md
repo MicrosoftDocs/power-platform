@@ -20,11 +20,9 @@ search.app:
 
 # System and application users 
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 There is a list of special system and application users that is created when the system is provisioned.  Special system users are created for integration and support scenarios. Application users are created during system provisioning for setup and configuration management.  [Application users](create-users-assign-online-security-roles.md#create-an-application-user) can also be used for performing back-end services and their data access is managed by the special security role that is assigned. These security roles are managed by the system and cannot be modified. See other system [predefined security roles](database-security.md#predefined-security-roles).  
 
-Most of these users are hidden from user views but they can be found by using the Advanced Find on the Users entity.  Do not delete or modify these users including changing or reassigning security role. 
+Most of these users are hidden from user views but they can be found by using the Advanced Find on the Users table.  Do not delete or modify these users including changing or reassigning security role. 
 
 |User type  |Full name  |User name  |Purpose  | Security role assigned |
 |-----------|-----------|-----------|---------|------------------------|
@@ -58,7 +56,7 @@ Most of these users are hidden from user views but they can be found by using th
 | | PowerVIrtualAgents  | PowerVirtualAgents@onmicrosoft.com | To manage the PVA capabilities within Dataverse environments | CCI Admin, System Customizer, and Environment Maker    |
 | | BizQA | BizQA@onmicrosoft.com | To access search telemetry to improve search experience | BizQAApp   |
 | | ProductInsights | ProductInsights@onmicrosoft.com | To export data from Customer Insights to Engagement Insights | DataLakeWorkspaceAppAccess    |
-| | Dynamics365 SalesForecasting | Dynamics365SalesForecasting@onmicrosoft.com | To fetch entity data and metadata for forecasting feature | ForecastAppUser    |
+| | Dynamics365 SalesForecasting | Dynamics365SalesForecasting@onmicrosoft.com | To fetch table data and metadata for forecasting feature | ForecastAppUser    |
 | | # Omnichannel | Ominichannel@onmicrosoft.com | To perform data integration between Omnichannel for Customer Service and Dataverse | System admin    |
 
 
