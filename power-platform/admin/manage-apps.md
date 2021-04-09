@@ -18,8 +18,6 @@ search.app:
 
 # Manage Dynamics 365 apps
 
-[!INCLUDE[cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 You can now use the Microsoft Power Platform admin center to install, configure, and manage Dynamics 365 apps that run on Microsoft Dataverse. Apps in this topic refer to Dynamics 365 apps such as Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, and Dynamics 365 Marketing as well as apps purchased from Microsoft AppSource requiring any of these Dynamics 365 licenses.
 
 > [!NOTE]

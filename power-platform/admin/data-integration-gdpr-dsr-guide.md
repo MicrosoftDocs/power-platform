@@ -17,8 +17,6 @@ search.app:
 ---
 # Responding to Data Subject Rights (DSR) requests for Data Integration for Microsoft Dataverse customer data
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 ## Introduction to DSR requests
 
 The European Union (EU) General Data Protection Regulation (GDPR) gives rights to people (known in the regulation as data subjects) to manage the personal data that's been collected by an employer or other type of agency or organization (known as the data controller or just controller). Personal data is defined very broadly under the GDPR as any data that relates to an identified or identifiable natural person. The GDPR gives data subjects the right to do the following, as it pertains to their personal data:

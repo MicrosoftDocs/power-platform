@@ -17,8 +17,6 @@ search.app:
 ---
 # Manage Microsoft Dataverse settings
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 You can view and manage the settings for your environments by signing in to the Microsoft [Power Platform admin center](https://admin.powerplatform.microsoft.com), going to the **Environments** page, selecting an environment, and then selecting **Settings**.
 
 ![Environment details](media/environment-details.png "Environment details")

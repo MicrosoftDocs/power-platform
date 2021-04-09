@@ -17,8 +17,6 @@ search.app:
 ---
 # Frequently asked questions about synchronizing records between customer engagement apps and Microsoft Outlook
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 ## What's the best way to use Outlook and customer engagement apps together?  
  There are three ways to use model-driven apps in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), and [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] together:  
   
