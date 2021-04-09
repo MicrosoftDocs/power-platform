@@ -19,8 +19,6 @@ search.app:
 ---
 # Add users to an environment 
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 Environments can have zero or one Microsoft Dataverse database. The process for adding users to environments that have no Dataverse database differs from the process for environments that have one Dataverse database. For an overview of environments, see [Environments overview](environments-overview.md). 
 
 ## Add users to an environment that has no Dataverse database 

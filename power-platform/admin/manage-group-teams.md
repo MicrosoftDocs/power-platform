@@ -17,8 +17,6 @@ search.app:
 ---
 # Manage group teams
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 <!-- legacy procedure -->
 
 ## About group teams

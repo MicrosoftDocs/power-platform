@@ -18,8 +18,6 @@ search.app:
 ---
 # Power Apps activity logging
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 Power Apps activities are now tracked from the [Microsoft 365 Security & Compliance Center](/microsoft-365/). 
 
 Follow these steps.
