@@ -146,11 +146,9 @@
       href: coe/release-notes.md
     - name: Feedback and support
       href: coe/feedback-support.md
-
-
   - name: Success Hub
     items: 
     - name: Overview
       href: successhub/overview.md
     - name: Digitalizing Business Application Group
-      href: digitalizing-bag.md
+      href: successhub/digitalizing-bag.md
