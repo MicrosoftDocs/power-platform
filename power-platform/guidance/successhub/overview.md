@@ -17,11 +17,12 @@ search.app:
 ---
 # Overview of Success Hub
 
-In larger organizations, traditionally there has been central IT teams to develop and manage business applications. These IT teams were maintaining an ever-growing backlog with no way for each of the requirements to be developed. With that, it used to lead to productivity loss across organization, hence it might become a necessity for sub organizations to have their own teams for their digitalization. Power Apps and Power Platform empower individuals in the organization to develop apps for their team’s business needs and not to be blocked on a central IT team. But, with every employee developing apps on their own, there arises problem of reusability – both for the data and apps, at the organization level, along with support and maintenance. For digitalization of a specific organization, we need to look beyond a specific team’s needs and implement things for the organization.
+Traditionally, in larger organizations, there have been central IT teams to develop and manage business applications. These IT teams were maintaining an ever-growing backlog with no way for each of the requirements to be developed. This lead to productivity loss across the organization making it necessary for sub organizations to have their own teams for their digitalization. Microsoft Power Apps and Power Platform empower individuals in the organization to develop apps for their team’s business needs and not to be blocked on a central IT team. But, with every employee developing apps on their own, there arises problems of reusability – both for the data and apps at the organization level along with support and maintenance. For organization digitalization, we need to look beyond a specific team’s needs and implement things for the organization.
 
-In Microsoft there are multiple sub-divisions/organizations focused on specific products/services, etc. One amongst them is Business Application Group (BAG) which is focused on product development of Dynamics 365 & Power Platform. Even this organization is more than 5K people and has custom needs of its own. Success hub is that platform, which is enabling this digitalization for BAG, whereas Microsoft IT (CSEO) plays the role of Center of Excellence for entire Microsoft i.e. enabling Power Platform governance and environment strategy in Microsoft. 
+In Microsoft there are multiple sub-divisions/organizations focused on specific products/services. One of them is the Business Application Group (BAG) which is focused on product development of Microsoft Dynamics 365 and Power Platform. BAG has more than 5,000 people with custom needs of its own. Success Hub is a platform enabling digitalization for BAG, whereas Microsoft IT (CSEO) plays the role of Center of Excellence enabling Power Platform governance and environment strategy for all of Microsoft. 
 
-image
+> [!div class="mx-imgBorder"] 
+> ![Success Hub at Microsoft](media/successhub-org-chart.png "Success Hub at Microsoft")
 
 ## What is Success Hub?
 
