@@ -43,38 +43,38 @@ The following are some advantages of using Success Hub when compared to developm
     <th colspan="2">Business Application Group</th>
   </tr>
   <tr>
-    <td>Central IT <br>(Center of Excellence)</td>
-    <td>Success Hub</td>
-    <td>Individual employees</td>
+    <td><strong>Central IT <br>(Center of Excellence)</strong></td>
+    <td><strong>Success Hub</strong></td>
+    <td><strong>Individual employees</strong></td>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td>**App development**</td>
+    <td><strong>App development</strong></td>
     <td>Central IT team<br>Bottlenecked on one team</td>
     <td>Individual employees/teams<br>Not bottlenecked on single team</td>
     <td>Individual employees/teams<br>Not bottlenecked on single team</td>
   </tr>
   <tr>
-    <td>**Data storage and governance**</td>
+    <td><strong>Data storage and governance</strong></td>
     <td>Central IT team</td>
     <td>Sucess Hub team</td>
     <td>Individual employees/teams<br>Data doesn't talk to each other</td>
   </tr>
   <tr>
-    <td>Integration</td>
+    <td><strong>Integration</strong></td>
     <td>Central IT team</td>
     <td>Success Hub team<br>No need to duplicate the efforts</td>
     <td>Individual employees/teams<br>Multiple efforts for the same thing</td>
   </tr>
   <tr>
-    <td>Compliance and security</td>
+    <td><strong>Compliance and security</strong></td>
     <td>Central IT team</td>
     <td>Success Hub team<br>No need to duplicate the efforts</td>
     <td>Individual employees/teams<br>Multiple efforts for the same thing</td>
   </tr>
   <tr>
-    <td>Support and maintenance</td>
+    <td><strong>Support and maintenance</strong></td>
     <td>Central IT team<br>Bottlenecked on one team</td>
     <td>Success Hub team + Individual teams<br>No need to duplicate the efforts</td>
     <td>Individual employees/teams<br>Not bottlenecked on single team</td>
