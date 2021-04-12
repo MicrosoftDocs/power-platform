@@ -19,7 +19,7 @@ Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
 > - [Power Virtual Agents web app](advanced-create-topics-from-web.md)
-> - [Power Virtual Agents app in Microsoft Teams](/teams/advanced-create-topics-from-web-teams.md)
+> - [Power Virtual Agents app in Microsoft Teams](teams/advanced-create-topics-from-web-teams.md)
 
 You can use content from existing webpages when creating a Power Virtual Agents bot. This is useful if you already have help or support content, such as FAQ pages or support sites. 
 
