@@ -18,8 +18,8 @@ ms.collection: virtual-agent
 Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
-> - [Power Virtual Agents web app](advanced-create-topics-from-web.md)
-> - [Power Virtual Agents app in Microsoft Teams](teams/advanced-create-topics-from-web-teams.md)
+> - [Power Virtual Agents web app](../advanced-create-topics-from-web.md)
+> - [Power Virtual Agents app in Microsoft Teams](advanced-create-topics-from-web-teams.md)
 
 
 
