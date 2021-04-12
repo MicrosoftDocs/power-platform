@@ -9,7 +9,7 @@ ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/12/2021
+ms.date: 03/10/2021
 search.audienceType: 
   - admin
 search.app:
@@ -35,7 +35,7 @@ In this example, four security groups provide controlled access to a specific en
   
  Note the following about security groups: 
   
-
+- Nested security groups are not supported. If there is a nested security group in an environment's security group, members of the nested security group will be ignored. 
 <!-- 
 - Nested security group.
 
