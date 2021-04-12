@@ -35,9 +35,53 @@ Success Hub is a platform based on Microsoft Dataverse, where teams within BAG c
 
 The following are some advantages of using Success Hub when compared to development by Central IT and individual employees:
 
+<table>
+<thead>
+  <tr>
+    <th rowspan="2"></th>
+    <th>Microsoft</th>
+    <th colspan="2">Business Application Group</th>
+  </tr>
+  <tr>
+    <td>Central IT <br>(Center of Excellence)</td>
+    <td>Success Hub</td>
+    <td>Individual employees</td>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>App development</td>
+    <td>Central IT team<br>Bottlenecked on one team</td>
+    <td>Individual employees/teams<br>Not bottlenecked on single team</td>
+    <td>Individual employees/teams<br>Not bottlenecked on single team</td>
+  </tr>
+  <tr>
+    <td>Data storage and governance</td>
+    <td>Central IT team</td>
+    <td>Sucess Hub team</td>
+    <td>Individual employees/teams<br>Data doesn't talk to each other</td>
+  </tr>
+  <tr>
+    <td>Integration</td>
+    <td>Central IT team</td>
+    <td>Success Hub team<br>No need to duplicate the efforts</td>
+    <td>Individual employees/teams<br>Multiple efforts for the same thing</td>
+  </tr>
+  <tr>
+    <td>Compliance and security</td>
+    <td>Central IT team</td>
+    <td>Success Hub team<br>No need to duplicate the efforts</td>
+    <td>Individual employees/teams<br>Multiple efforts for the same thing</td>
+  </tr>
+  <tr>
+    <td>Support and maintenance</td>
+    <td>Central IT team<br>Bottlenecked on one team</td>
+    <td>Success Hub team + Individual teams<br>No need to duplicate the efforts</td>
+    <td>Individual employees/teams<br>Not bottlenecked on single team</td>
+  </tr>
+</tbody>
+</table>
 
-
-image
 
 Success Hub provides the following:
 
