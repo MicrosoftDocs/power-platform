@@ -50,13 +50,13 @@ The following are some advantages of using Success Hub when compared to developm
 </thead>
 <tbody>
   <tr>
-    <td>App development</td>
+    <td>**App development**</td>
     <td>Central IT team<br>Bottlenecked on one team</td>
     <td>Individual employees/teams<br>Not bottlenecked on single team</td>
     <td>Individual employees/teams<br>Not bottlenecked on single team</td>
   </tr>
   <tr>
-    <td>Data storage and governance</td>
+    <td>**Data storage and governance**</td>
     <td>Central IT team</td>
     <td>Sucess Hub team</td>
     <td>Individual employees/teams<br>Data doesn't talk to each other</td>
