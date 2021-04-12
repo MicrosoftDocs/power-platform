@@ -26,11 +26,16 @@ In Microsoft there are multiple sub-divisions/organizations focused on specific 
 
 ## What is Success Hub?
 
-Success Hub is a platform based on CDS, where teams within BAG can develop their apps and share/reuse the data from other apps and systems. There are about 35+ business apps on the platform which are developed by 20+ teams. It has enabled us to achieve the balance between agility and governance.
+Success Hub is a platform based on Microsoft Dataverse, where teams within BAG can develop their apps and share/reuse the data from other apps and systems. There are about 35+ business apps on the platform which are developed by 20+ teams. It has enabled BAG to achieve the balance between agility and governance.
 
-image
+> [!div class="mx-imgBorder"] 
+> ![Success Hub integrations](media/successhub-integrations.png "Success Hub integrations")
 
 ## Advantages of using Success Hub
+
+The following are some advantages of using Success Hub when compared to development by Central IT and individual employees:
+
+
 
 image
 
