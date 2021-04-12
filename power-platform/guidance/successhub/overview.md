@@ -85,12 +85,12 @@ The following are some advantages of using Success Hub when compared to developm
 
 Success Hub provides the following:
 
-- Shared apps & data: Since, the data is stored in single CDS instance, many apps uses the same data for their apps. E.g., entities like Account, Contacts, Product are widely used across multiple apps. 
-- Integration with other data sources: Apps do need data from other systems within Microsoft e.g., Sales data, Support data, etc. These integrations are already enabled within Success hub, for any app to use it.
-- Governance for co-development: Governance model for multiple teams to co-develop at the same time on the platform.
-- ALM: ALM features provided (e.g. dev environments, deployments, etc.) for teams to get started quickly.
-- Compliance & Security: Success Hub platform takes care of the compliance, security, and privacy reviews on a regular basis.
-- Support & Maintenance: App teams can leverage designated support and live site team and channels.
+- **Shared apps and data**: Since the data is stored in a single Microsoft Dataverse instance, many apps uses the same data for their apps. For example, tables like Account, Contacts, and Product are widely used across multiple apps. 
+- **Integration with other data sources**: Apps do need data from other systems within Microsoft - for example, sales data, support data, etc. These integrations are already enabled within Success hub for any app to use it.
+- **[Governance for co-development](../adoption/admin-best-practices.md)**: Governance model for multiple teams to co-develop at the same time on the platform.
+- **[Application lifecycle management (ALM)](../../alm/overview-alm.md)**: ALM features provides (for example, dev environments, deployments, etc.) for teams to get started quickly.
+- **Compliance and security**: Success Hub platform takes care of the compliance, security, and privacy reviews on a regular basis.
+- **Support and maintenance**: App teams can leverage designated support and live site team and channels.
 
-These points are covered in detail in later sections.
-
+### See also
+[Digitalizing Business Application Group](digitalizing-business-application-group.md)
