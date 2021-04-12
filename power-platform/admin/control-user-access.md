@@ -33,7 +33,7 @@ Consider the following example scenario:
   
 In this example, four security groups provide controlled access to a specific environment.  
   
- Note the following about security groups: 
+Note the following about security groups: 
   
 - Nested security groups are not supported. If there is a nested security group in an environment's security group, members of the nested security group will be ignored. 
 <!-- 
