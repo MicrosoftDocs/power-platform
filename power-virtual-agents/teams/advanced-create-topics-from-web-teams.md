@@ -41,7 +41,7 @@ All you need is a secure link (one that starts with https://) to the file or web
 
 ## Get content from webpages and online files
 
-First you'll need a secure URL (starting with HTTPS) to your content, which must be a publicly available link. For example, you can use a publicly-shared OneDrive .xlsx file, but you can't use a file on a SharePoint site or somewhere where you need to log in.
+First you'll need a secure URL (starting with HTTPS) to your content, which must be a publicly available link. For example, you can't use a file on a SharePoint site or somewhere where you need to log in.
 
 After the extraction is complete, you'll be shown the suggested topics for further review. Suggested topics aren't automatically added to your bot, but you can [easily add them](#add-suggested-topics-to-an-existing-bot).
 
