@@ -1,6 +1,6 @@
 ---
-title: "Release notes and latest version of the CoE starter kit Governance components 1.46 | MicrosoftDocs"
-description: "Release notes and latest version of the CoE starter kit Governance components 1.46."
+title: "Release notes and latest version of the CoE starter kit Governance components 1.50 | MicrosoftDocs"
+description: "Release notes and latest version of the CoE starter kit Governance components 1.50."
 author: manuelap-msft
 manager: devkeydet
 ms.service: power-platform
@@ -17,9 +17,9 @@ search.app:
   - Powerplatform
 ---
 
-# Released version Governance Components 1.46
+# Released version Governance Components 1.50
 
-Version 1.46 for the CoE Starter Kit Governance Components is now available. This article describes the updates, including the new features and the fixes to existing functionality, included in this release. This version was first made available on April 8, 2021.
+Version 1.50 for the CoE Starter Kit Governance Components is now available. This article describes the updates, including the new features and the fixes to existing functionality, included in this release. This version was first made available on April 8, 2021.
 
 ## Developer Compliance Center
 

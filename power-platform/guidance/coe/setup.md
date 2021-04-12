@@ -76,7 +76,7 @@ The CoE Starter Kit can be used in both Production environments and Dataverse fo
 
 | Feature | Dataverse for Teams environment | Production environment |
 | --- | --- | --- |
-| Syncing inventory to Dataverse tables | Yes, will require a Power Automate Per User/Per Flow license | Yes, will require a Power Automate Per User/Per Flow license |
+| Syncing inventory to Dataverse tables | Yes, will require a Power Automate Per User/Per Flow license due to [action request limits and pagination settings](https://docs.microsoft.com/power-automate/limits-and-config) | Yes, will require a Power Automate Per User/Per Flow license due to [action request limits and pagination settings](https://docs.microsoft.com/power-automate/limits-and-config)|
 | Collecting telemetry information from the Audit Log | No | Yes
 | Power Platform Admin View to view and filter resources | Canvas App | Model Driven App |
 | Power BI Dashboard | Yes | Yes |
