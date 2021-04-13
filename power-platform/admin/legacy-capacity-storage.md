@@ -1,7 +1,7 @@
 ---
 title: "Legacy storage capacity  | MicrosoftDocs"
 description: About the legacy storage model.
-ms.date: 04/05/2021
+ms.date: 04/13/2021
 ms.reviewer: ""
 ms.service: "power-platform"
 ms.topic: "quickstart"
@@ -194,7 +194,7 @@ You'll see the report for the [new licensing model](capacity-storage.md).
 
 ### Do I get notified through email when my org is over capacity?
 
-When you sign in to the Power Platform admin center, you'll be notified if your capacity usage is more than the capacity you're entitled to. 
+Yes, tenant admins are notified through email on a weekly basis if their org is at or over capacity. Additionally, tenant admins will also be notified once their org reaches 15% of available capacity, and once more when their org reaches 5% of available capacity.
 
 ### What are tables ending in “- analytics” in my capacity report?
 
