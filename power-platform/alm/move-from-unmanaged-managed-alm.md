@@ -56,7 +56,6 @@ Larger, more complex projects require these tasks:<!--This would be better as a 
 
     -   Considerations when importing a managed solution to convert unmanaged
         components to managed: 
-
         -   If components are held in unmanaged solutions that still exist in the
             environment, all references will have to be removed before<!--Edit okay?--> the managed
             solution can be imported.
