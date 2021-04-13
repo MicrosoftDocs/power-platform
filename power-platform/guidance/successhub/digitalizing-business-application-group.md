@@ -33,8 +33,7 @@ To digitalize all the four aspects discussed above, we have divided our apps int
 
 This is how 35+ apps are modelled across these 5 workstreams. 
 
-> [!div class="mx-imgBorder"] 
-> ![Apps modelled across workstreams](media/successhub-apps-modelled-across-workstreams.png "Apps modelled across workstreams")
+:::image type="content" source="media/successhub-apps-modelled-across-workstreams.png" alt-text="Apps modelled across workstreams":::
 
 Apps are adding the data in Microsoft Dataverse utilizing the data shared by other apps to improve the app experience using automation and intelligence. Data can also be used to provide cost-cutting scenarios on how the data gets leveraged by various apps.
 
@@ -44,7 +43,7 @@ Apps are adding the data in Microsoft Dataverse utilizing the data shared by oth
 2. Microsoft gathers feedback from the customers. There are numerous apps in Customer & Partners, and Community work streams, for example, Ideas, Pulse, Heartbeat (for Fast Track). 
 3. Aggregate and prioritize feedback/asks using Fusion/One feedback app in the ProductOps workstream.
 4. Implement the feature feedback/asks using product planning with apps in the ProductOps workstream.
-5. Announce the plan to the customers using the release plan app in the ProductOps workstream exec reviews. This is automated using the bedrock portal which is part of BizOps workstream.
+5. Announce the plan to the customers using the release plan app in the ProductOps workstream exec reviews. This is automated using the bedrock portal which is part of the BizOps workstream.
 
 **Supportability scenarios**
 
@@ -70,8 +69,8 @@ Changes to the table can be of two types:
 1. **Creating a new table**: Many a times, app teams want to create their own table and be independent. But, if we let that happen, it will create multiple tables for the same work and will lead to confusion. Reconciling these tables will take significant time and effort compared to asking app teams to adopt the ones which are available or modifying the current tables to meet the needs of all the app teams.
 
 2. **Changes to a shared table**: There can be two type of changes in shared table.
-    1. **Changing the schema**: This needs alignment across the apps which are already using the table. 
-    2. **Changing the data (for example, Taxonomy)**: Since the apps are sharing the data in the table, it's necessary to have single team manage that or at least govern it. 
+   1. **Changing the schema**: This needs alignment across the apps which are already using the table. 
+   2. **Changing the data (for example, Taxonomy)**: Since the apps are sharing the data in the table, it's necessary to have single team manage that or at least govern it. 
 
 ## Deployment (ALM) and Live site 
 
