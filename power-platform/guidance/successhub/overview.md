@@ -35,6 +35,10 @@ Success Hub is a platform based on Microsoft Dataverse, where teams within BAG c
 
 The following are some advantages of using Success Hub when compared to development by Central IT and individual employees:
 
+> [!div class="mx-imgBorder"] 
+> ![Advantages of using Success Hub](media/successhub-advantage-of-using.png "Advantages of using Success Hub")
+
+<!--
 <table>
 <thead>
   <tr>
@@ -81,7 +85,7 @@ The following are some advantages of using Success Hub when compared to developm
   </tr>
 </tbody>
 </table>
-
+-->
 
 Success Hub provides the following:
 

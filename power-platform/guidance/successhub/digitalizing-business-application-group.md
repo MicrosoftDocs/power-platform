@@ -19,45 +19,40 @@ search.app:
 
 To holistically digitalize a large organization like Business Application Group (BAG), we need to automate all the four aspects of the digital feedback loop shown below.
 
-image
+> [!div class="mx-imgBorder"] 
+> ![Digital feedback loop](media/successhub-digital-feedback-loop.png "Digital feedback loop")
 
-1. Transforming products to enhance the offerings. E.g., publishing release notes on upcoming release wave deliveries
-2. Engaging with the customers and partners to boost the business growth. E.g., customer engagements OR taking feedback and ideas from the customers. 
-3. Empowering its own people to improve organization’s performance e.g. 
-4. Optimizing the business operations to achieve better efficiency e.g. automating business reviews
+1. Transforming products to enhance the offerings, for example, publishing release notes on upcoming release wave deliveries.
+2. Engaging with the customers and partners to boost the business growth, for example, customer engagements or taking feedback and ideas from the customers. 
+3. Empowering its own people to improve an organization’s performance.
+4. Optimizing the business operations to achieve better efficiency, for example, automating business reviews.
 
-To digitalize all the four aspects discussed above, we have divided our apps into various workstreams. Each workstream is focused on specific persona:
+To digitalize all the four aspects discussed above, we have divided our apps into various workstreams. Each workstream is focused on a specific persona:
 
-Digital feedback loop
-
-image
-
-Success Hub workstreams modeled around digital feedback loop and personas
-
-image
+:::image type="content" source="media/successhub-persona-focused-workstreams.png" alt-text="Persona focused workstreams":::
 
 This is how 35+ apps are modelled across these 5 workstreams. 
 
-image
+> [!div class="mx-imgBorder"] 
+> ![Apps modelled across workstreams](media/successhub-apps-modelled-across-workstreams.png "Apps modelled across workstreams")
 
-Apps are adding the data in CDS and utilizing the data shared by other apps to improve the automation and intelligence for their experiences. Listing down few cross- cutting scenarios on how the data gets leveraged by various apps.
+Apps are adding the data in Microsoft Dataverse utilizing the data shared by other apps to improve the app experience using automation and intelligence. Data can also be used to provide cost-cutting scenarios on how the data gets leveraged by various apps.
 
 **Product development scenario**
 
-- Microsoft engages and interacts w/ customer. There are numerous apps in Customer & Partner workstream e.g., customer engagement, exec engagement, Fast Track apps, Power CAT, etc. Each of these are focused on specific persona.
-- Microsoft gathers feedback from the customers. There are numerous apps in Customer & Partner, Community work streams e.g., Ideas, Pulse, Heartbeat (for Fast Track) to do so. 
-- Aggregate and Prioritizing the feedback / asks. Fusion/One feedback app in Product Ops workstream.
-- Implementing the feature ask/feedback: Do the product planning with apps in Product Ops workstream.
-- Announce the plan to the customers: Using release plan app in Product Ops workstream exec reviews. This is automated using bedrock portal which is part of BizOps workstream.
+1. Microsoft engages and interacts with the customer. There are numerous apps in customer and partner workstream, for example, customer engagement, exec engagement, Fast Track apps, Power CAT, etc. Each of these is focused on a specific persona.
+2. Microsoft gathers feedback from the customers. There are numerous apps in Customer & Partners, and Community work streams, for example, Ideas, Pulse, Heartbeat (for Fast Track). 
+3. Aggregate and prioritize feedback/asks using Fusion/One feedback app in the ProductOps workstream.
+4. Implement the feature feedback/asks using product planning with apps in the ProductOps workstream.
+5. Announce the plan to the customers using the release plan app in the ProductOps workstream exec reviews. This is automated using the bedrock portal which is part of BizOps workstream.
 
 **Supportability scenarios**
 
-- Customer creates a support request. This is done with D4M part of DevOps workstream.
-- Engineer reviews the case to avoid the cases for future. This is done with Case review app which is part of DevOps workstream.
-- Product team plans for the work to be done. This is done with product planning app in Product Ops workstream.
-- Closing the loop with the customers who faced the issue with apps in Customer & Partner workstream
-- Closing the loop with the customers who gave the feedback, with apps in Customer & Partner workstream.
-- Sharing the info in 
+1. Customer creates a support request. This is done with D4M part of the DevOps workstream.
+2. Engineer reviews the case to prevent future cases. This is done with the Case review app which is part of the DevOps workstream.
+3. Product team plans for the work to be done. This is done with product planning app in Product Ops workstream.
+4. Close the loop with customers who face the issue with apps in the Customer & Partner workstream.
+5. Close the loop with customers who gave the feedback with apps in the Customer & Partner workstream.
 
 ## Success Hub co-development model
 
