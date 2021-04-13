@@ -51,66 +51,71 @@ Apps are adding the data in Microsoft Dataverse utilizing the data shared by oth
 1. Customer creates a support request. This is done with D4M part of the DevOps workstream.
 2. Engineer reviews the case to prevent future cases. This is done with the Case review app which is part of the DevOps workstream.
 3. Product team plans for the work to be done. This is done with product planning app in Product Ops workstream.
-4. Close the loop with customers who face the issue with apps in the Customer & Partner workstream.
-5. Close the loop with customers who gave the feedback with apps in the Customer & Partner workstream.
+4. Close the loop with customers who face the issue with apps in the Customer and Partner workstream.
+5. Close the loop with customers who gave the feedback with apps in the Customer and Partner workstream.
 
 ## Success Hub co-development model
 
-Challenge of the co-development model is to enable everyone to co-develop (at scale) and yet don’t disturb other apps. To make it scalable, we have divided this problem per workstream. As discussed earlier, we have 5 workstreams focused on app development and appointed workstream leads to ensure all the apps in that workstream are honoring the governance process as well as getting the right support from the Success Hub team.
-Whenever any major changes are requested by an app, it needs to go through the following 5 steps, to get into production.
+The challenge of the co-development model is to enable everyone to co-develop (at scale) and not disturb other apps. To make it scalable, we have divided this problem per workstream. As mentioned earlier, we have five workstreams focused on app development and appointed workstream leads to ensure all the apps in that workstream are honoring the governance process as well as getting the right support from the Success Hub team.
 
-image
+Whenever any major changes are requested by an app, it needs to go through the following five steps to get into production.
 
-As we have 35+ apps working on the platform, it is not scalable to review all the changes e.g. changing a text box color in the app, might not impact any other app. Hence, we are focused more on the changes associated to any changes in the entity. Rest all the other changes are tagged as small scope, and its optional for the app teams to review them with the Success Hub team. 
+> [!div class="mx-imgBorder"] 
+> ![Five steps to get apps into production](media/successhub-steps-to-production.png "Five steps to get apps into production")
 
-Now, changes to the entity can be of two types:
+As we have 35+ apps working on the platform, it is not scalable to review all the changes. For example, changing a text box color in the app might not impact any other app. Therefore, we are focused more on any changes associated to the table. All other changes are tagged as small scope; it's optional for the app teams to review them with the Success Hub team. 
 
-1. Creating a new entity: Many a times, app teams want to create their own entity and be independent. But if we let that happen it will create multiple entities for the same work and will lead to confusions. Reconciling these entities in future will take enormous time and efforts, compared to asking app teams to adopt the ones which are available OR modifying the current entities to meet the needs of all the app teams.
-2. Changes to a Shared entity: There can be two type of changes in shared entity.
-    1. Changing the schema: This needs alignment across the apps which are already using the entity. 
-    2. Changing the data e.g. Taxonomy: Since the apps are sharing the data in the entity, its necessary to have single team manage that or at least govern it. 
+Changes to the table can be of two types:
 
-## Deployment (ALM) & Live site 
+1. **Creating a new table**: Many a times, app teams want to create their own table and be independent. But, if we let that happen, it will create multiple tables for the same work and will lead to confusion. Reconciling these tables will take significant time and effort compared to asking app teams to adopt the ones which are available or modifying the current tables to meet the needs of all the app teams.
 
-Success Hub follows a weekly deployment cycle where CDS components are reviewed in a PR review meeting and subsequently deployed to Test every Wednesday. Partner teams have two days to validate their apps and solution changes in the Test environment. Post validation we obtain a sign off from partner teams and deploy these components to Production environment on Monday. 
+2. **Changes to a shared table**: There can be two type of changes in shared table.
+    1. **Changing the schema**: This needs alignment across the apps which are already using the table. 
+    2. **Changing the data (for example, Taxonomy)**: Since the apps are sharing the data in the table, it's necessary to have single team manage that or at least govern it. 
 
-Power Platform also enable us to automate our support process, where emails to the support alias are tracked in a ticketing system. These items are reviewed in a “Live Site Review” every week to understand the health of the Success Hub and identify repair items/trends of user queries.
+## Deployment (ALM) and Live site 
+
+Success Hub follows a weekly deployment cycle where Microsoft Dataverse components are reviewed in a partner review meeting and subsequently deployed to a test environment every Wednesday. Partner teams have two days to validate their apps and solution changes in a test environment. Post validation, we obtain sign off from the partner teams and deploy these components to a production environment on Monday. 
+
+Microsoft Power Platform also enables us to automate our support process where emails to the support alias are tracked in a ticketing system. These items are reviewed in a “Live Site Review” every week to understand the health of the Success Hub and identify repair items/trends of user queries.
 
 To monitor the health of components, we have:
  
 - Dev-Test-UAT-Prod ALM model
   - Dev environment (per app)
-  - Test environment (Single instance)
-  - UAT environment (Single instance)
-  - PROD environment (Single instance)
-  - POC environment for teams to just try out!
-- Build and Release Pipeline are managed through Azure DevOps, using ‘Power Platform Build Tools’
-- Dev & Test environments are refreshed every week (automated fashion) with every weekly build.
-- Automated tests run in Test environments & UAT environments. This ensures smoother co-development.
-- Every app is a solution and is on the way of becoming Managed solution.
+  - Test environment (single environment)
+  - UAT environment (single environment)
+  - PROD environment (single environment)
+  - POC environment for teams to try out
+- Build and Release Pipeline are managed through Azure DevOps using ‘Power Platform Build Tools’.
+- Dev and test environments are refreshed every week (automated fashion) with every weekly build.
+- Automated tests are run in test environments and UAT environments. This ensures smoother co-development.
+- Every app is a solution and is in the process of becoming a managed solution.
 
-## Security & Compliance Integration 
+## Security and compliance integration 
 
-- High Volume of Read Only data -> There are instances in Success Hub where data is needed only for reference purposes. One such example is the DAU, WAU and MAU of Tenants. This data is used to understand usage but never modified within Success Hub. We use Virtual entities to render such data which can be high volume and read only in nature.  
-- High Volume of RW data -> While Flows meet most of our integration needs, there are scenarios where advanced Azure capabilities are needed, for e.g. invoking Azure Functions. For these, we use Logic Apps. 
-- Simple integration -> Flows are used extensively to build integrations as well as business logic within our org. 
+Security and compliance integration, once done, can be leveraged by any app in development.
+
+- High volume of read-only data: There are instances in the Success Hub where data is needed only for reference purposes. One such example is the DAU, WAU, and MAU of tenants. This data is used to understand usage but never modified within the Success Hub. We use virtual tables to render such data which can be high volume and read-only.  
+- High volume of read-write data: While Flows meet most of our integration needs, there are scenarios where advanced Azure capabilities are needed, for example, invoking Azure Functions. For these, we use Microsoft Azure Logic Apps. 
+- Simple integration: Flows are used extensively to build integrations as well as business logic within our org. 
 - Specific roles are created to honor security.
-- Regular compliance reviews at Success Hub level. 
+- Regular compliance reviews at the Success Hub level. 
 - Success Hub stores lot of sensitive information. 
-- App team doesn’t need to do compliance reviews if they are using existing data entities and integrations.
+- App team doesn’t need to do compliance reviews if they are using existing data tables and integrations.
 
 ## Integration with other data sources 
 
-For business apps, we often need data from various data sources and Dataverse provides a great way to integrate with other data sources using virtual entity, etc. For We have integration with following type of data sources
+For business apps, we often need data from various data sources and Dataverse provides a great way to integrate with other data sources using virtual table, etc. We integrate with the following type of data sources:
 
-1. Microsoft Customer, sales & partner data (MSX, LCS, Customer Service, etc.)
-2. DevOps & Serviceability (Azure DevOps, ICM, etc.)
-3. Organization hierarchy and user profiles (AAD & Graph)
+- Microsoft customer, sales, and partner data (MSX, LCS, Customer Service, etc.)
+- DevOps and Serviceability (Azure DevOps, ICM, etc.)
+- Organization hierarchy and user profiles (Azure Active Directory and Microsoft Graph)
 
-## Support & Maintenance Support channels 
+## Support and maintenance support channels 
 
-- Wiki/Guidance & Weekly Office hours to ask questions 
-- Maintenance (alerting and monitoring) done by single team (Platform workstream). 
-- Telemetry Dashboard to track performance and health metrics
+The following enable developing, supporting, and maintaining any app:
 
-All of these functionalities enable developing, supporting, and maintaining any app.
+- Wiki/guidance and weekly office hours to ask questions 
+- Maintenance (alerting and monitoring) done by a single team (Microsoft Power Platform workstream) 
+- Telemetry dashboard to track performance and health metrics
