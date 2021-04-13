@@ -28,15 +28,13 @@ You can take either of the approaches described here.
 
 For smaller, less complex projects, you can consolidate all your unmanaged solutions into a single unmanaged solution. Then, export the unmanaged solution as managed to import into your test and production environments. 
 
-<!-- Need more steps -->
-
 ## Second approach
 Larger, more complex projects require these tasks:<!--This would be better as a numbered list, so the substeps and commentary can be clearly distinguished. -->
--   Plan carefully, especially when the outcome you want is to use solution layering properly.
+1.   Plan carefully, especially when the outcome you want is to use solution layering properly.
 
--   Identify the base or common component layer. This solution will provide the
+2.   Identify the base or common component layer. This solution will provide the
     foundation for modular solution development.
--   Copy your dev environment to the sandbox environment.
+3.   Copy your dev environment to the sandbox environment.
     -   Isolate the components of the base solution by removing all components
         that won't be members from the active layer<!--Edit okay? -->.
 
@@ -44,9 +42,9 @@ Larger, more complex projects require these tasks:<!--This would be better as a 
         the base solutions.
 
         Plug-ins can reside in separate solutions, because the assemblies
-            themselves don't generate dependencies.<!--Do you want this to be indented extra? You wouldn't want it to be a single, stray bullet. -->
+            themselves don't generate dependencies.
 
--   Repeat the process<!--Should this say "the following process"? If this were a numbered list, you could identify which steps you mean.--> for any modular solutions that extend the common
+4.   Repeat the process for any modular solutions that extend the common
     components layer.
 
     -   Create a copy of the original development environment, and remove the
