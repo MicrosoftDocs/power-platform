@@ -125,7 +125,7 @@ You'll now configure the Power Apps visuals in the Power BI dashboard to point t
 
 **To configure the app on the Flow Detail page**
 
-1. Go to the **Flow Detail** tab.
+1. Go to the **Cloud flow detail** tab.
 1. Select the **Power Apps visual** from **Visualizations**.
    Select the fields from your dataset that you want to use in the app.
 1. With the visual selected, select the **admin_flowid** and **admin_flowenvironment** flows under **Fields**.

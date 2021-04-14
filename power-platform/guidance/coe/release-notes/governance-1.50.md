@@ -33,4 +33,8 @@ Previously a model driven app, this has now been replaced with a canvas app to e
 
 A new environment variable (Exclude Default from Compliance) has been added, to exclude the Default Environment from the Admin | Compliance Detail Request flows.
 
+## Moving components to Core
+
+Admin | Compliance detail request has been moved from Governance components to Core components to accommodate changes to make this flow compatible with Dataverse for Teams environments.
+
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

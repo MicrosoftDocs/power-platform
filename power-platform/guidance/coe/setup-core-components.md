@@ -65,8 +65,8 @@ This is the first step of the installation process and is required for every oth
      ![Select the Datavsere connector](media/msi-connection.png "Select the Dataverse connector")
     1. Select **Create**.
     1. Complete the same steps for the following connectors:
-        - Common Data Service
-        - Common Data Service (current environment)
+        - Microsoft Dataverse
+        - Microsoft Dataverse (current environment)
         - Power Apps for Admins
         - Power Apps for Makers
         - Power Platform for Admins
@@ -76,6 +76,7 @@ This is the first step of the installation process and is required for every oth
         - Office 365 Outlook
         - Office 365 Groups
         - SharePoint
+        - Microsoft Teams
 
 1. On the left pane, select **Solutions**.
 
@@ -99,6 +100,7 @@ This is the first step of the installation process and is required for every oth
     |Power Automate environment variable | For a US environment: <https://us.flow.microsoft.com/manage/environments/> <br>For an EMEA environment: <https://emea.flow.microsoft.com/manage/environments/> <br>For a GCC environment: <https://gov.flow.microsoft.us/manage/environments/> |
     |Admin eMail                         | Email address used in flows to send notifications to admins; this should be either your email address or a distribution list |
     | Power Platform Maker Office 365 Group | The Admin \| Welcome Email flow sends a welcome email to onboard new makers and adds them to an Office 365 group. You can use this group to send communications to your makers or invite them to a Yammer or Teams group. Configure the group ID here.|
+    | Approval Admin | Email address used in flows to send notifications regarding non compliant apps and flows to admins; this should be either your email address or a distribution list |
 
      ![Update environment variable values](media/msi-envvar.png "Update environment variable values")
 
@@ -160,6 +162,8 @@ Before you begin:
     |------|---------------|
     |Power Automate environment variable | For a US environment: <https://us.flow.microsoft.com/manage/environments/> <br>For an EMEA environment: <https://emea.flow.microsoft.com/manage/environments/> <br>For a GCC environment: <https://gov.flow.microsoft.us/manage/environments/> |
     |Admin eMail                         | Email address used in flows to send notifications to admins; this should be either your email address or a distribution list |
+    | Developer Compliance Center         | Leave this blank on import, and [update the enviornment variable](#update-environment-variables) after importing the [Governance components solution](setup-governance-components.md) by first navigating to the details page of the Developer Compliance Center (canvas app) included with this solution, and copy the web link (to launch the app) and paste it into this variable. This environment variable is not used until you adopt the Developer Compliance Center.  |
+    | Approval Admin | Email address used in flows to send notifications regarding non compliant apps and flows to admins; this should be either your email address or a distribution list |
 
      ![Set environment variable values](media/coreteams-2.png "Set environment variable values.")
 
@@ -279,6 +283,7 @@ Environment variables are used to store application and flow configuration data 
     |Also Delete from CoE | When the Admin \| Sync Template v3 (Check Deleted) flow is run, this denotes whether you want the items deleted from CoE (Yes, which is the default) or just marked as deleted (No). |
     | Full Inventory | Determines if you want to only update objects that have changed, or all objects. Defaults to No. Switching to Yes will cause the flows to inventory every single app, flow, and bot. |
     | Power Platform Maker Office 365 Group | The Admin \| Welcome Email flow sends a welcome email to onboard new makers and adds them to an Office 365 group. You can use this group to send communications to your makers or invite them to a Yammer or Teams group. Configure the group ID here.|
+   | Approval Admin | Email address used in flows to send notifications regarding non compliant apps and flows to admins; this should be either your email address or a distribution list |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
 

@@ -50,6 +50,7 @@ The core components solution is required for the nurture components solution, or
     | Innovation Backlog URL | (optional) URl to the [Innovation Backlog](use-innovationbacklog.md) canvas app, if you are using this app |
     | Maker Assessment Admin eMail | eMail of the admin or CoE team that will respond to queries from the Maker Assessment app. |
     | Maker Assessment SharePoint Site | SharePoint site URL to which you have uploaded the Maker Assessment Excel documents for initial import. |
+    | Community URL | Link to your internal Microsoft Power Platform community (for example, Yammer or Teams) |
 
 ## Import default data set for the Maker Assessment app
 
@@ -143,6 +144,7 @@ All flows in this solution depend on all environment variables' being configured
 | Innovation Backlog URL | (optional) URl to the [Innovation Backlog](use-innovationbacklog.md) canvas app, if you are using this app |
 | Maker Assessment Admin eMail | eMail of the admin or CoE team that will respond to queries from the Maker Assessment app |
 | Maker Assessment SharePoint Site | SharePoint site URL to which you have uploaded the Maker Assessment Excel documents for initial import. |
+| Community URL | Link to your internal Microsoft Power Platform community (for example, Yammer or Teams) |
 
 ## Activate the flows
 
