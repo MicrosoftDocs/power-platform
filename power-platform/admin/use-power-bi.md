@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/29/2020
+ms.date: 04/14/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -42,10 +42,13 @@ To learn more about how to add Power BI tiles to personal dashboards, see [Embed
   
 To learn more about how to add Power BI dashboards to personal dashboards, see [Add a Power BI dashboard on your personal dashboard](/powerapps/user/add-powerbi-dashboards).  
 
+## Get support for Power BI
+Though you administer Power BI from the [Power BI admin portal](https://app.powerbi.com/), you request support for Power BI through [Help + Support](get-help-support.md) in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+
   
 ### See also  
 [Use Power BI with Dataverse data](/powerapps/maker/common-data-service/use-powerbi-with-cds) 
-
+[Administer Power BI](about-powerbi-guide.md)
 
 
 
