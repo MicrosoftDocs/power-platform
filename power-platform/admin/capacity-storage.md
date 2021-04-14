@@ -1,7 +1,7 @@
 ---
 title: "New Microsoft Dataverse storage capacity  | MicrosoftDocs"
 description: Introducing a new storage model for Microsoft Dataverse.
-ms.date: 04/05/2021
+ms.date: 04/13/2021
 ms.reviewer: ""
 ms.service: "power-platform"
 ms.topic: "quickstart"
@@ -268,11 +268,11 @@ Yes. All environments will consume 1 GB, regardless of whether they have an asso
 
 ### Do I get notified through email when my org is over capacity?
 
-When you sign in to the Power Platform admin center, you'll be notified if your capacity usage is more than the capacity you're entitled to.
+Yes, tenant admins are notified through email on a weekly basis if their org is at or over capacity. Additionally, tenant admins will also be notified once their org reaches 15% of available capacity, and once more when their org reaches 5% of available capacity.
 
 ### Why am I no longer getting storage notifications?
 
-We've disabled email notifications with the move to the new storage model. Review the **[Capacity](https://admin.powerplatform.microsoft.com/resources/capacity)** page to monitor usage.
+Capacity email notifications are sent weekly to tenant admins based on three different thresholds. If you're no longer getting storage notifications, check to see your admin role. It could also be the case that your org is over the three pre-defined capacity thresholds. In that case, you will not receive an email notification.
 
 ### I'm an existing customer. Should I expect my file and log usage to change?
 
