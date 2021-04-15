@@ -2,7 +2,7 @@
 title: "Administer Power BI | MicrosoftDocs"
 description: Administer Power BI.
 ms.custom: ""
-ms.date: 04/14/2021
+ms.date: 04/15/2021
 ms.reviewer: ""
 ms.service: power-platform
 ms.suite: ""
