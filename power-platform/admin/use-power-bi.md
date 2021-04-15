@@ -23,8 +23,6 @@ Power BI works with model-driven apps in Microsoft Dataverse to provide a self-s
  Before users can embed Power BI visualizations on personal dashboards, the organization-wide setting must be enabled.  
   
 > [!NOTE]
->  This feature was first introduced in [!INCLUDE[pn_crm_8_1_0_online_subsequent](../includes/pn-crm-8-1-0-online-subsequent.md)].  
-> 
 >  By default, Power BI visualization embedding is disabled and must be enabled before users can embed them in personal dashboards.  
   
 ### Enable Power BI visualizations in an environment  
