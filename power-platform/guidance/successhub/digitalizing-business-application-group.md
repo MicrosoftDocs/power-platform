@@ -1,6 +1,6 @@
 ---
-title: "Digitalizing Business Application Group  | MicrosoftDocs"
-description: A review of digitalizing Business Application Group
+title: "Digitizing app development at Microsoft  | MicrosoftDocs"
+description: A review of digitizing Business Applications Group
 author: kathyos
 ms.service: power-platform
 ms.component: pa-admin
@@ -15,106 +15,115 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Digitalizing Business Application Group 
-
-To holistically digitalize a large organization like Business Application Group (BAG), we need to automate all the four aspects of the digital feedback loop shown below.
+# Digitizing the Business Applications Group 
+<!--note from editor: I suggest using "digitizing" because it's listed first in our primary dictionary, also the first definition of "digitalizing" is given as "administering digitalis."-->
+To holistically digitize a large organization like the Business Applications Group (BAG) at Microsoft, we need to automate all four aspects of the digital feedback loop.
 
 > [!div class="mx-imgBorder"] 
-> ![Digital feedback loop](media/successhub-digital-feedback-loop.png "Digital feedback loop")
+> ![Diagram showing cloud data and AI in the center, interacting with the four aspects of the feedback loop described in the following list](media/successhub-digital-feedback-loop.png "Digital feedback loop")
 
-1. Transforming products to enhance the offerings, for example, publishing release notes on upcoming release wave deliveries.
-2. Engaging with the customers and partners to boost the business growth, for example, customer engagements or taking feedback and ideas from the customers. 
-3. Empowering its own people to improve an organization’s performance.
-4. Optimizing the business operations to achieve better efficiency, for example, automating business reviews.
+- **Transforming** products to enhance our offerings&mdash;for example, publishing release notes about upcoming release wave deliverables.
+- **Engaging** with customers and partners to boost business growth&mdash;for example, customer engagements and taking feedback and ideas from customers. 
+- **Empowering** our own people to improve our organization's performance.
+- **Optimizing** business operations to achieve better efficiency&mdash;for example, by automating business reviews.
 
-To digitalize all the four aspects discussed above, we have divided our apps into various workstreams. Each workstream is focused on a specific persona:
+## Workstreams and personas
+<!--note from editor: I suggest adding an H2 here so you can promote the "scenario" headings to H3. What do you think?-->
+To digitize all four aspects of the feedback loop, we divide our apps into various workstreams. Each workstream is focused on a specific persona, as shown in the following image.<!--note from editor: The alt text I added is minimal - please flesh it out if it's important to describe where the workstreams are located relative to the four aspects of the feedback loop. The character limit for alt text is 150, so you'll want to make this a "complex" instead of "content" type of image. Also, in the alt text (and the image), should it be "ProductOps" and "BizOps" to match other references?-->
 
-:::image type="content" source="media/successhub-persona-focused-workstreams.png" alt-text="Persona focused workstreams":::
+:::image type="content" source="media/successhub-persona-focused-workstreams.png" alt-text="Diagram showing five persona-focused workstreams: DevOps, ProductOps, Customers & Partners, Community, and BizOps":::
 
-This is how 35+ apps are modelled across these 5 workstreams. 
+The following image shows how 35<!--note from editor: I think "35+" is too imprecise, since the image shows exactly 35.--> apps are modeled across these five workstreams.<!--note from editor: As noted in overview.md, we need to avoid images that contain text that could otherwise be formatted as real text. The "Apps" part of this image (which is what you've described in the introduction) could easily be formatted as a table. If you don't want to do that, then please describe the list of apps per workstream in the "<long description here>" field. -->
 
-:::image type="content" source="media/successhub-apps-modelled-across-workstreams.png" alt-text="Apps modelled across workstreams":::
+:::image type="complex" source="media/successhub-apps-modelled-across-workstreams.png" alt-text="Apps modeled across workstreams":::
+   <long description here>
+:::image-end:::
 
-Apps are adding the data in Microsoft Dataverse utilizing the data shared by other apps to improve the app experience using automation and intelligence. Data can also be used to provide cost-cutting scenarios on how the data gets leveraged by various apps.
+Apps add data in Microsoft Dataverse, using the data shared by other apps to improve the app experience with automation and intelligence. Data can also be used to provide cost-cutting scenarios for how the data gets used by various apps.
 
-**Product development scenario**
+### Product development scenario
 
-1. Microsoft engages and interacts with the customer. There are numerous apps in customer and partner workstream, for example, customer engagement, exec engagement, Fast Track apps, Power CAT, etc. Each of these is focused on a specific persona.
-2. Microsoft gathers feedback from the customers. There are numerous apps in Customer & Partners, and Community work streams, for example, Ideas, Pulse, Heartbeat (for Fast Track). 
-3. Aggregate and prioritize feedback/asks using Fusion/One feedback app in the ProductOps workstream.
-4. Implement the feature feedback/asks using product planning with apps in the ProductOps workstream.
-5. Announce the plan to the customers using the release plan app in the ProductOps workstream exec reviews. This is automated using the bedrock portal which is part of the BizOps workstream.
+1. Microsoft engages and interacts with the customer. There are numerous apps in the Customers & Partners workstream, for example, customer engagement, executive engagement, FastTrack apps, and Power CAT. Each of these is focused on a specific persona.
+2. Microsoft gathers feedback from customers. There are numerous apps in the Customers & Partners and Community workstreams, for example, Ideas, Pulse, and Heartbeat (for FastTrack). 
+3. Aggregate and prioritize feedback and asks by using the Fusion/One feedback app in the ProductOps workstream.
+4. Implement the feature feedback and asks by using product planning apps in the ProductOps workstream.
+5. Announce the plan to the customers by using the release plan app in the ProductOps workstream executive reviews. This is automated by using the bedrock portal, which is part of the BusinessOps workstream.
 
-**Supportability scenarios**
+### Supportability scenario
 
-1. Customer creates a support request. This is done with D4M part of the DevOps workstream.
-2. Engineer reviews the case to prevent future cases. This is done with the Case review app which is part of the DevOps workstream.
-3. Product team plans for the work to be done. This is done with product planning app in Product Ops workstream.
-4. Close the loop with customers who face the issue with apps in the Customer and Partner workstream.
-5. Close the loop with customers who gave the feedback with apps in the Customer and Partner workstream.
+1. A customer creates a support request. This is done with the D4M part<!--note from editor: What is this? Is there a more generic term for it?--> of the DevOps workstream.
+2. An engineer reviews the case to prevent future cases. This is done with the Case review app, which is part of the DevOps workstream.
+3. The product team plans for the work to be done. This is done with the product planning app in the Product Ops workstream.
+4. Close the loop with customers who face the issue by using apps in the Customers & Partners workstream.
+5. Close the loop with customers who gave the feedback by using apps in the Customers & Partners workstream.
 
 ## Success Hub co-development model
 
-The challenge of the co-development model is to enable everyone to co-develop (at scale) and not disturb other apps. To make it scalable, we have divided this problem per workstream. As mentioned earlier, we have five workstreams focused on app development and appointed workstream leads to ensure all the apps in that workstream are honoring the governance process as well as getting the right support from the Success Hub team.
+The challenge of the co-development model is to enable everyone to co-develop, at scale, and not disturb other apps. To make this scalable, we divide the problem by workstream. For each of the five workstreams that are focused on app development, we appoint workstream leads. Their job is to ensure that all the apps in that workstream honor the governance process and, in addition, get the right support from the Success Hub team.
 
-Whenever any major changes are requested by an app, it needs to go through the following five steps to get into production.
-
+Whenever any major changes are requested for an app, it needs to go through the following five steps to get into production.
+<!--
 > [!div class="mx-imgBorder"] 
 > ![Five steps to get apps into production](media/successhub-steps-to-production.png "Five steps to get apps into production")
+-->
+<!--note from editor: Please verify the alt text and make any changes back in the source image, or consider making this a simple numbered list instead of an image. There's really no any reason to keep this as an image. (It's certainly a nice-looking image, but that's more important for a presentation than an article on docs.)-->
+:::image type="complex" source="media/successhub-steps-to-production.png" alt-text="Diagram of the five steps to get apps into production":::
+   Diagram showing five steps of the process for moving apps into production. 1. Scope alignment: Review high-level user experience and schema changes. 2. Update ADO<!--note from editor: Is this "Azure DevOps"?-->: Add feature and user stories, and update them with schema changes. 3. Partner approval: Approval mail sent to affected stakeholders. 4. Workstream lead sign-off: Sign-off on the changes by the workstream leads. 5. Changes deployed: PR reviews verified to schema changes work items???<!--note from editor: What does this mean?-->
+:::image-end:::
 
-As we have 35+ apps working on the platform, it is not scalable to review all the changes. For example, changing a text box color in the app might not impact any other app. Therefore, we are focused more on any changes associated to the table. All other changes are tagged as small scope; it's optional for the app teams to review them with the Success Hub team. 
+Because we have about 35 apps working on the platform, it's not scalable for us to review all the changes. Some changes&mdash;for example, changing the color of a text box&mdash;might not affect any other app, and those are tagged as small scope; it's optional for the app teams to review them with the Success Hub team. Our main focus is to assess any changes associated with tables.
 
-Changes to the table can be of two types:
+We're interested in knowing when teams make the following types of changes around tables:
 
-1. **Creating a new table**: Many a times, app teams want to create their own table and be independent. But, if we let that happen, it will create multiple tables for the same work and will lead to confusion. Reconciling these tables will take significant time and effort compared to asking app teams to adopt the ones which are available or modifying the current tables to meet the needs of all the app teams.
+- **Creating a new table**: Many times, app teams want to create their own table and work independently with the data. But if we let that happen, multiple tables can be created for the same work, leading to confusion. Reconciling these tables takes significant time and effort, compared to asking app teams to adopt tables that are already available or modifying current tables to meet their&mdash;and all app teams'&mdash;needs.
 
-2. **Changes to a shared table**: There can be two type of changes in shared table.
-   1. **Changing the schema**: This needs alignment across the apps which are already using the table. 
-   2. **Changing the data (for example, Taxonomy)**: Since the apps are sharing the data in the table, it's necessary to have single team manage that or at least govern it. 
+- **Changes to a shared table**: These are of two types:
 
-## Deployment (ALM) and Live site 
+  - **Changing the schema**: This needs alignment across the apps that are already using the table. 
+  - **Changing the data (for example, Taxonomy)**: Because apps are sharing the data in the table, it's necessary to have a single team manage that data, or at least create governance rules for it.<!--note from editor: Edit okay?-->
 
-Success Hub follows a weekly deployment cycle where Microsoft Dataverse components are reviewed in a partner review meeting and subsequently deployed to a test environment every Wednesday. Partner teams have two days to validate their apps and solution changes in a test environment. Post validation, we obtain sign off from the partner teams and deploy these components to a production environment on Monday. 
+## Deployment and live site
 
-Microsoft Power Platform also enables us to automate our support process where emails to the support alias are tracked in a ticketing system. These items are reviewed in a “Live Site Review” every week to understand the health of the Success Hub and identify repair items/trends of user queries.
+Success Hub follows a weekly deployment cycle where Microsoft Dataverse components are reviewed in a partner meeting and subsequently deployed to a test environment every Wednesday. Partner teams have two days to validate their apps and solution changes in the test environment. After validation, we obtain sign-off from the partner teams and deploy these components to a production environment the next Monday. 
 
-To monitor the health of components, we have:
+Microsoft Power Platform also enables us to automate our support process, where emails to the support alias are tracked in a ticketing system. These items are reviewed in a live site review every week to understand the health of the Success Hub and identify repair items and the trends of user queries.
+
+To monitor the health of components, we use the following:
  
-- Dev-Test-UAT-Prod ALM model
-  - Dev environment (per app)
+- An application lifecycle management (ALM) model, which consists of the following:
+  - Development environment (per app)
   - Test environment (single environment)
-  - UAT environment (single environment)
-  - PROD environment (single environment)
-  - POC environment for teams to try out
-- Build and Release Pipeline are managed through Azure DevOps using ‘Power Platform Build Tools’.
-- Dev and test environments are refreshed every week (automated fashion) with every weekly build.
-- Automated tests are run in test environments and UAT environments. This ensures smoother co-development.
+  - User acceptance testing (UAT) environment (single environment)
+  - Production environment (single environment)
+  - Proof-of-concept environment for teams to try out their apps
+- The build and release pipelines are managed through Azure DevOps by using Power Platform Build Tools.
+- Dev and test environments are refreshed every week in an automated fashion through weekly builds.
+- Automated tests are run in test environments and UAT environments. This helps ensure smoother co-development.
 - Every app is a solution and is in the process of becoming a managed solution.
 
-## Security and compliance integration 
+## Security and compliance integration
 
-Security and compliance integration, once done, can be leveraged by any app in development.
+After security and compliance integration is finished, it can be used by any app in development. This integration has the following characteristics:
 
-- High volume of read-only data: There are instances in the Success Hub where data is needed only for reference purposes. One such example is the DAU, WAU, and MAU of tenants. This data is used to understand usage but never modified within the Success Hub. We use virtual tables to render such data which can be high volume and read-only.  
-- High volume of read-write data: While Flows meet most of our integration needs, there are scenarios where advanced Azure capabilities are needed, for example, invoking Azure Functions. For these, we use Microsoft Azure Logic Apps. 
-- Simple integration: Flows are used extensively to build integrations as well as business logic within our org. 
+- A high volume of read-only data: In some instances in Success Hub, we only need data for reference purposes&mdash;for example, the daily, monthly, and weekly active user metrics for a tenant. This data is used to understand usage, but never modified in Success Hub. We use virtual tables to render such data, which is often high-volume and read-only.  
+- A high volume of read-write data: While Power Automate flows meet most of our integration needs, advanced Azure capabilities are needed in some scenarios, for example invoking Azure Functions. For these, we use Azure Logic Apps. 
+- Simple integration: Flows are used extensively to build integrations in addition to business logic in our organization. 
 - Specific roles are created to honor security.
-- Regular compliance reviews at the Success Hub level. 
-- Success Hub stores lot of sensitive information. 
-- App team doesn’t need to do compliance reviews if they are using existing data tables and integrations.
+- We hold regular compliance reviews at the Success Hub level because Success Hub stores a lot of sensitive information.<!--note from editor: Edit okay? This seemed like a bit of a non sequitur when it stood on its own. -->
+- App teams don't need to do compliance reviews if they're using existing data tables and integrations.
 
-## Integration with other data sources 
+## Integration with other data sources
 
-For business apps, we often need data from various data sources and Dataverse provides a great way to integrate with other data sources using virtual table, etc. We integrate with the following type of data sources:
+For business apps, we often need data from various data sources. Microsoft Dataverse provides a great way to integrate with other data sources by using virtual tables. We integrate with the following types of data sources:<!--note from editor: Spelled-out versions okay? Got them from the corporate glossary. -->
 
-- Microsoft customer, sales, and partner data (MSX, LCS, Customer Service, etc.)
-- DevOps and Serviceability (Azure DevOps, ICM, etc.)
+- Microsoft customer, sales, and partner data (for example, Microsoft Sales Experience, Lifecycle Services, Customer Service)
+- DevOps and Serviceability (Azure DevOps and IcM Incident Management, for example)
 - Organization hierarchy and user profiles (Azure Active Directory and Microsoft Graph)
 
-## Support and maintenance support channels 
+## Support and maintenance channels
 
-The following enable developing, supporting, and maintaining any app:
+The following channels enable any app to be developed, supported, and maintained:
 
-- Wiki/guidance and weekly office hours to ask questions 
-- Maintenance (alerting and monitoring) done by a single team (Microsoft Power Platform workstream) 
+- Wiki, guidance, and weekly office hours for asking questions 
+- Maintenance (alerting and monitoring) done by a single team (Microsoft Power Platform workstream)<!--note from editor: This workstream hasn't been mentioned before.-->
 - Telemetry dashboard to track performance and health metrics
