@@ -1,6 +1,6 @@
 ---
-title: "Connect, assign licenses, and reset  | MicrosoftDocs"
-description: Connect, assign licenses, and reset
+title: "Connect to social engagement"
+description: "Microsoft Social Engagement discontinued for Dynamics 365 customers."
 author: m-hartmann
 manager: kvivek
 ms.service: power-platform
