@@ -107,6 +107,20 @@ If you have created your own environment and selected **Trial** as the environme
 
 When using a trial environment and you want to retain the bots for longer than 30 days, you must [convert the trial environment to a production environment](/power-platform/admin/trial-environments#convert-a-trial-environment-to-production).
 
+## Supported operations
+
+Power Virtual Agents supports the following operations when managing operations, as described in [Power Platform environments overview](/power-platform/admin/environments-overview.md):
+
+- [Back up and restore](/power-platform/admin/backup-restore-environments.md)
+- [Delete](/power-platform/admin/delete-environment.md)
+- [Recover](/power-platform/admin/recover-environment.md)
+- [Copy](/power-platform/admin/copy-environment.md)
+- [Reset](/power-platform/admin/reset-environment.md)
+
+The following operations are unsupported:
+
+- [Move](/power-platform/admin/move-environment-tenant.md)
+
 ## Known issues with creating a bot
 
 When you are creating your bot, you might encounter the following issues.
