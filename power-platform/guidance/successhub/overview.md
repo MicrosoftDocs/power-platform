@@ -5,7 +5,7 @@ author: kathyos
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/10/2020
+ms.date: 04/19/2021
 ms.author: kathyos
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -24,7 +24,7 @@ Power Apps and Microsoft Power Platform empower individuals in an organization t
 At Microsoft, multiple subdivisions focus on specific products and services. One of these is the Business Applications Group (BAG), which is focused on Dynamics 365 and Microsoft Power Platform. BAG has more than 5,000 people who have custom needs of their own. The Success Hub platform enables digitization for BAG, and Microsoft Central IT plays the role of a Center of Excellence, enabling the Microsoft Power Platform governance and environment strategy for all of Microsoft.
 
 :::image type="complex" source="media/successhub-org-chart.png" alt-text="Org chart showing Success Hub supports the BAG group.":::
-   "Org chart showing various groups reporting into Microsoft Corporation, which is supported by Central IT. Success Hub supports the BAG group."
+Org chart showing various groups reporting into Microsoft Corporation, which is supported by Central IT. Success Hub supports the BAG group.
 :::image-end:::
 
 ## What is Success Hub?
