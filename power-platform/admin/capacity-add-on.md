@@ -1,7 +1,7 @@
 ---
 title: "Capacity add-ons for Power Apps and Power Automate  | MicrosoftDocs"
 description: This topic covers the Per app, Power Automate per business process, AI builder, Portal logins, and Portal views. 
-ms.date: 03/31/2021
+ms.date: 04/19/2021
 ms.reviewer: 
 ms.service: "power-platform"
 ms.topic: "quickstart"
@@ -17,16 +17,7 @@ search.app:
 ---
 # Capacity add-ons
 
-If your organization has purchased capacity add-ons, you have to allocate that capacity to any environment where you want to use it. You also have to make sure that your users have access to those environments and have the correct permissions before they can use the products for which you've purchased a capacity add-on.
-
-There are three stages for using capacity add-ons:
-
-1. Purchase: you buy individual capacity add-ons. For purchasing information, see the [Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
-2. Allocate: assign the purchased add-ons to an environment.
-3. Consume: once allocated, you can consume the capacity add-ons.
-
-> [!TIP]
-> Consider purchasing Power Apps per app plans which allow individual users to run two applications and one portal. See [About Power Apps per app plans](about-powerapps-perapp.md).
+Capacity add-ons can be purchased for various business applications products.  The content below describes the process of allocating add-ons, where applicable.  Microsoft Dataverse storage capacity add-ons do not require allocation at an environment level because all storage capacity add-ons accrue to tenant-level storage entitlements.  See the [legacy model storage](legacy-capacity-storage.md) page or the [new model storage](capacity-storage.md) page for more info.
 
 ## View capacity add-ons in Power Platform admin center
 
