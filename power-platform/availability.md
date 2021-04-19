@@ -1,6 +1,6 @@
 ---
-title: International availability of Microsoft Power Platform
-description: This topic provides information about the international availability of Microsoft Power Platform.
+title: "International availability of Microsoft Power Platform"
+description: "Learn about product availability, customer data locations, and languages for the Microsoft Power Platform family of applications by downloading the linked PDF."
 author: kvivek 
 manager: annbe
 ms.date: 01/31/2020
