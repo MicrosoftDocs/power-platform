@@ -1,7 +1,7 @@
 ---
 title: "Review ISO, SOC, and HIPAA compliance"
 description: "Power Virtual Agents is compliant with a number of standards and is covered under HIPAA."
-ms.date: 4/13/2021
+ms.date: 4/20/2021
 ms.keywords: "PVA, ISO, SOC, certification, compliance"
 ms.service: power-virtual-agents
 ms.topic: article
@@ -20,6 +20,7 @@ Power Virtual Agents is a Core Online Service, as defined in the [Online Service
 - Various International Organization for Standardization (ISO) certifications
 - Outsourced Service Provider’s Audit Report (OSPAR)
 - Federal Risk and Authorization Management Program (FedRAMP)
+- Health Insurance Portability and Accountability Act (HIPAA) Business Associate Agreement (BAA)
 - Health Information Trust Alliance (HITRUST) Common Security Framework (CSF)
 - Payment Card Industry (PCI) Data Security Standard (DSS)
 - Korea-Information Security Management System (K-ISMS)
