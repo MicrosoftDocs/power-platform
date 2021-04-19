@@ -16,7 +16,7 @@ search.app:
   - Powerplatform
 ---
 # Digitizing the Business Applications Group 
-<!--note from editor: I suggest using "digitizing" because it's listed first in our primary dictionary, also the first definition of "digitalizing" is given as "administering digitalis."-->
+
 To holistically digitize a large organization like the Business Applications Group (BAG) at Microsoft, we need to automate all four aspects of the digital feedback loop.
 
 > [!div class="mx-imgBorder"] 

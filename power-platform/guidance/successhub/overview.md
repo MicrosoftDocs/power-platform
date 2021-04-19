@@ -36,12 +36,7 @@ Success Hub is a platform based on Microsoft Dataverse. Teams in BAG develop the
 
 ## Advantages of using Success Hub
 
-The following table summarizes the advantages of using Success Hub compared to development by central IT and individual employees.<!--note from editor: Because of the reasons described above, a table is a better choice here. If you still want to use the image, the alt text needs to be fleshed out (and the image will need to be a "complex" rather than "content" type). I was a bit confused by the column heading being repeated in each row, so I suggest something like the following, where the red/green dichotomy is highlighted in each cell. We do want to have text in addition the red and green icons because the reader might be colorblind.-->
-<!--
-> [!div class="mx-imgBorder"] 
-> ![Advantages of using Success Hub](media/successhub-advantage-of-using.png "Advantages of using Success Hub")
--->
-
+The following table summarizes the advantages of using Success Hub compared to development by central IT and individual employees.
 
 <table>
 <thead>
@@ -91,7 +86,7 @@ The following table summarizes the advantages of using Success Hub compared to d
 - **[Governance for co-development](../adoption/admin-best-practices.md)**: The governance model allows for multiple teams to co-develop at the same time on the platform.
 - **[Application lifecycle management (ALM)](../../alm/overview-alm.md)**: ALM features (such as dev environments and deployments) are provided to help teams get started quickly.
 - **Compliance and security**: Success Hub takes care of compliance, security, and privacy reviews on a regular basis.
-- **Support and maintenance**: App teams can take advantage of designated support and live site reviews.<!--note from editor: Edit okay? Not sure what "live site team and channels" are.-->
+- **Support and maintenance**: App teams can take advantage of designated support and live site reviews.
 
 ### See also
 
