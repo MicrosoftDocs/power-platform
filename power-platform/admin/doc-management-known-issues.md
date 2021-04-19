@@ -2,7 +2,7 @@
 title: "Known issues with document management | MicrosoftDocs"
 description: "Learn about known issues with document management"
 keywords: encrypt
-ms.date: 09/04/2020
+ms.date: 04/01/2021
 ms.service: power-platform
 ms.custom: 
 ms.topic: article
@@ -25,8 +25,6 @@ search.app:
 ---
 
 # Known issues with document management
-
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 The customizations and configurations described here can cause issues with the document management feature. 
 
@@ -94,6 +92,17 @@ Documents of a child entity only appear in the parent documents folder when the 
 
 ## Document folder location for multiple lookups
 If the entity selected for the Based on entity folder structure has two lookups, documents will not be stored inside the entity folder, but will be stored in the root folder. For example, if the Based on entity folder structure is set to Account, and you have an entity with two lookup accounts, such as Work Order, the documents related to Work Orders will not be stored inside any account document location, but will be stored in the root folder.
+
+## Known issues
+
+### Maximum number of rows not honored in the document associated grid
+
+Configuring the following in the **DocumentGrid** pane will be ignored.
+
+- **Maximum number of rows**: a value
+- **Use available space**: unchecked
+
+For Unified Interface and backward compatibility, the row limit in the document associated grid is set to 5000 and **Use available space** is disabled. This is a known limitation.
 
 ### See also
 [Troubleshooting server-based authentication](troubleshooting-server-based-authentication.md) <br />

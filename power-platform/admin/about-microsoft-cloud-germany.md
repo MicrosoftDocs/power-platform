@@ -1,6 +1,6 @@
 ---
-title: "About Microsoft Cloud Germany  | MicrosoftDocs"
-description: About Microsoft Cloud Germany
+title: "About Microsoft Cloud Germany datacenter"
+description: "Learn about Microsoft Cloud Germany datacenter, including residency and trustee for customer data, service delivery, compliance, privacy, and mapping functions."
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin

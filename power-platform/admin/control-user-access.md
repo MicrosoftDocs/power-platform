@@ -9,7 +9,7 @@ ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/11/2021
+ms.date: 03/10/2021
 search.audienceType: 
   - admin
 search.app:
@@ -19,8 +19,6 @@ search.app:
   - Flow
 ---
 # Control user access to environments: security groups and licenses
-
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 If your company has multiple Microsoft Dataverse environments, you can use security groups to control which licensed users can be a member of a particular environment.  
   
@@ -35,9 +33,16 @@ Consider the following example scenario:
   
 In this example, four security groups provide controlled access to a specific environment.  
   
- Note the following about security groups:  
+Note the following about security groups: 
   
 - Nested security groups are not supported. If there is a nested security group in an environment's security group, members of the nested security group will be ignored. 
+<!-- 
+- Nested security group.
+
+  Members of a nested security group in an environment security group are not pre-provisioned or automatically added to the Dataverse environment. However, they can be added into the environment if you create a [Dataverse group team](manage-group-teams.md#create-a-group-team) for the nested security group. 
+
+  An example of this scenario: you assigned a security group for the environment when the environment was created. During the lifecycle of the environment, you want to add members to the environment which are managed by security groups. You create a security group in Azure Active Directory, for example managers, and assigned all your managers to the group. You then add this security group as a child of the environment security group, create a [Dataverse group team](manage-group-teams.md#create-a-group-team), and assign a security role to the group team. Your managers can now access Dataverse immediately.    
+-->
 - When users are added to the security group, they are added to the Dataverse environment.  
 - When users are removed from the group, they are disabled in the Dataverse environment.  
 - When a security group is associated with an existing environment with users, all users in the environment that are not members of the group will be disabled. 

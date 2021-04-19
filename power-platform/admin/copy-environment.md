@@ -1,11 +1,11 @@
 ---
-title: "Copy an environment to a sandbox environment  | MicrosoftDocs"
-description: Learn how to copy a sandbox environment. 
+title: "Copy an environment to a sandbox environment"
+description: "Learn how to copy apps and data from an environment to a sandbox environment. Review next steps for administrators in the target environment." 
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/18/2020
+ms.date: 04/01/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -56,10 +56,10 @@ Isaac has a large development project starting next week for the sales departmen
   
 After modifying and enabling some of the plug-ins, the developer sandbox environment functions the same and is isolated from the production application.  The development team works on their modifications in this environment for several weeks.  They package their changes into a solution and export/import to deploy to the Everything copy sandbox environment.  After a successful round of testing and signoffs, the changes are manually deployed to production.  
   
-### Entities copied in a Customizations and schemas only copy  
- The following entities are copied when you do a Customizations and schemas only copy:  
+### Tables copied in a Customizations and schemas only copy  
+ The following tables are copied when you do a Customizations and schemas only copy:  
 
-| Entities |  
+| Tables |  
 |-----------|  
 |BusinessUnit|  
 |ConnectionRole|  
@@ -170,12 +170,6 @@ Once the copy process is complete, the target environment is placed in [Administ
 - **Client extensibility**. Review the following.  
     - **Client-side JavaScript**. Take a look at your JavaScript and HTML web resources for read/write operations that could impact external services.  
     - **IFRAMES**. Determine if the target of an IFRAME is a production environment.  
-
-## Known issues
-
-### Failures during a copy operation
-Power Virtual Agent resources were recently included as part of the copy operation. If you are getting consistent failures during a copy operation and you have Power Virtual Agent resources installed in the source environment, the problem might be that the Power Virtual Agent solutions are not installed in the target environment. If you explicitly uninstalled the Power Virtual Agent solutions from the target environment, you can work around this by re-installing the solutions. Otherwise, you should choose a different target environment.
-
 
 ### See also  
 [What's new about storage](whats-new-storage.md) <br />

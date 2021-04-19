@@ -1,6 +1,6 @@
 ---
-title: "Add users to an environment | MicrosoftDocs"
-description: Add users to environment 
+title: "Add users to an environment automatically or manually"
+description: "Learn about adding users to an environment and how the process differs when it has a Dataverse database. Use security groups to restrict access or add specific users." 
 author: jimholtz
 ms.author: jimholtz
 ms.reviewer: jimholtz
@@ -18,8 +18,6 @@ search.app:
   - Flow
 ---
 # Add users to an environment 
-
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 Environments can have zero or one Microsoft Dataverse database. The process for adding users to environments that have no Dataverse database differs from the process for environments that have one Dataverse database. For an overview of environments, see [Environments overview](environments-overview.md). 
 

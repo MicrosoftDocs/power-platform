@@ -6,7 +6,7 @@ author: mikkelsen2000
 ms.author: pemikkel
 manager: kvivek
 ms.custom: ""
-ms.date: 06/16/2020
+ms.date: 04/09/2021
 ms.reviewer: "pehecke"
 ms.service: power-platform
 ms.topic: "article"
@@ -30,7 +30,7 @@ The checker service provides the logic for the [solution checker feature](/powe
 > [!TIP]
 > **Tip #1**: Consider using the PowerShell module,
 > [Microsoft.PowerApps.Checker.PowerShell](https://www.powershellgallery.com/packages/Microsoft.PowerApps.Checker.PowerShell), instead of using the web API. The
-> module is a fully supported tool that's available in the
+> module is a community supported tool that's available in the
 > [PowerShell Gallery](https://www.powershellgallery.com/). The current restriction is
 > that it does require Windows PowerShell in your project pipeline. If you're
 > unable to meet this requirement, interacting with the web APIs directly

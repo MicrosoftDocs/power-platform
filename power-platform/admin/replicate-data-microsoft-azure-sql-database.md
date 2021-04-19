@@ -18,8 +18,6 @@ search.app:
 ---
 # Replicate data to Azure SQL Database using Data Export Service
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 The [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] is an add-on service made available on [!INCLUDE[pn_microsoft_appsource](../includes/pn-microsoft-appsource.md)] that adds the ability to replicate data from Microsoft Dataverse database to a [!INCLUDE[pn_ms_azure_sql_database](../includes/pn-ms-azure-sql-database.md)] store in a customer-owned [!INCLUDE[pn_Windows_Azure](../includes/pn-windows-azure.md)] subscription. The supported target destinations are [!INCLUDE[pn_ms_azure_sql_database](../includes/pn-ms-azure-sql-database.md)] and [!INCLUDE[pn_SQL_Server_short](../includes/pn-sql-server-short.md)] on [!INCLUDE[pn_Windows_Azure](../includes/pn-windows-azure.md)] virtual machines.  The [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] intelligently synchronizes the entire data initially and thereafter synchronizes on a continuous basis as changes occur (delta changes) in the system. This helps enable several analytics and reporting scenarios on top of data with [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] data and analytics services, and opens up new possibilities for customers and partners to build custom solutions.  
   
 > [!NOTE]
@@ -456,18 +454,18 @@ $tenantId = 'tenantId'
     # -------------------------------------------------------------------------------- #
 
 # Login to Azure account, select subscription and tenant Id
-connect-azaccount -Tenant $tenantId -Subscription $subscriptionId
+Connect-AzAccount -Tenant $tenantId -Subscription $subscriptionId
 
 # Create new resource group if not exists.
-$rgAvail = Get-AzureRmResourceGroup -Name $resourceGroupName -Location $location -ErrorAction SilentlyContinue
+$rgAvail = Get-AzResourceGroup -Name $resourceGroupName -Location $location -ErrorAction SilentlyContinue
 if(!$rgAvail){
-    New-AzureRmResourceGroup -Name $resourceGroupName -Location $location
+    New-AzResourceGroup -Name $resourceGroupName -Location $location
 }
 
 # Create new key vault if not exists.
-$kvAvail = Get-AzureRmKeyVault -VaultName $keyvaultName -ResourceGroupName $resourceGroupName -ErrorAction SilentlyContinue
+$kvAvail = Get-AzKeyVault -VaultName $keyvaultName -ResourceGroupName $resourceGroupName -ErrorAction SilentlyContinue
 if(!$kvAvail){
-    New-AzureRmKeyVault -VaultName $keyvaultName -ResourceGroupName $resourceGroupName -Location $location
+    New-AzKeyVault -VaultName $keyvaultName -ResourceGroupName $resourceGroupName -Location $location
     # Wait few seconds for DNS entry to propagate
     Start-Sleep -Seconds 15
 }
@@ -480,11 +478,11 @@ foreach ($orgId in $organizationIdList.Split(',')) {
 
 # Add or update a secret to key vault.
 $secretValue = ConvertTo-SecureString $connectionString -AsPlainText -Force
-$secret = Set-azKeyVaultSecret -VaultName $keyvaultName -Name $secretName -SecretValue $secretValue -Tags $secretTags
+$secret = Set-AzKeyVaultSecret -VaultName $keyvaultName -Name $secretName -SecretValue $secretValue -Tags $secretTags
 
 # Authorize application to access key vault.
 $servicePrincipal = 'b861dbcc-a7ef-4219-a005-0e4de4ea7dcf'
-set-azkeyvaultaccesspolicy -VaultName $keyvaultName -ServicePrincipalName $servicePrincipal -PermissionsToSecrets get
+Set-AzKeyVaultAccessPolicy -VaultName $keyvaultName -ServicePrincipalName $servicePrincipal -PermissionsToSecrets get
 
 # Display secret url.
 Write-Host "Connection key vault URL is "$secret.id.TrimEnd($secret.Version)""

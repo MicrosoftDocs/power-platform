@@ -21,11 +21,22 @@ search.app:
 
 Multiple nurture components are provided in the Center of Excellence (CoE) Starter Kit; each will require some configuration to install. The installation instructions in this article have been segmented based on the set of components that should be grouped and installed together, and dependencies on other segments are outlined in each section.
 
+The Nurture Components can be used in both Production environments and Dataverse for Teams environments. Where you install it will depend on your organization setup, your adoption of Microsoft Power Platform so far and what you want to achieve with the CoE Starter Kit. Before you decide, compare [Dataverse vs Dataverse for Teams](https://docs.microsoft.com/powerapps/teams/data-platform-compare)
+
+Learn more: [What is Dataverse for Teams](https://docs.microsoft.com/powerapps/teams/overview-data-platform)
+
+## Upload default data set for the Maker Assessment app
+
+If you are going to use the [Maker Assessment](nurture-components.md#maker-assessment) app, import an initial set of assessment questions first. You can add your own questions or customize the existing ones after this import.
+
+1. Extract the *MakerJourneyData.zip* file. You can find this file in the initial download.
+1. Upload the three files to the Documents library of a SharePoint site in your tenant and note down the site URL. These files are only needed once for import, and can be deleted after this flow runs.
+
 ## Import the solution
 
 The core components solution is required for the nurture components solution, or any other component in the starter kit, to work.
 
-1. Follow the instructions in [Set up core components](setup-core-components.md).
+1. Follow the instructions in [Set up core components](setup-core-components.md) to import the solution either into your Production or your Dataverse for Teams environment.
 
 1. Import the CenterOfExcellenceNurtureComponents_*x_x_x_xx*_managed.zip file.
 1. Create a new connection to the **RSS** connector, and set your Microsoft Dataverse connection.
@@ -34,9 +45,22 @@ The core components solution is required for the nurture components solution, or
 
     | Name | Default value |
     |------|---------------|
-    | Power Platform Maker Office 365 Group | The Admin \| Welcome Email flow sends a welcome email to onboard new makers and adds them to an Office 365 group. You can use this group to send communications to your makers or invite them to a Yammer or Teams group. Configure the group ID here.|
     | Training in a day - Feedback Form     | The Training in a Day package includes a flow that automatically sends a feedback request to attendees on the day of the event. Configure the form URL (<https://forms.office.com/>...) here.    |
     | Power User Site URL (SharePoint Site) | The site that your Microsoft Power Platform power users can use to communicate and share files. You'll use it here to house the template library for them. |
+    | Innovation Backlog URL | (optional) URl to the [Innovation Backlog](use-innovationbacklog.md) canvas app, if you are using this app |
+    | Maker Assessment Admin eMail | eMail of the admin or CoE team that will respond to queries from the Maker Assessment app. |
+    | Maker Assessment SharePoint Site | SharePoint site URL to which you have uploaded the Maker Assessment Excel documents for initial import. |
+
+## Import default data set for the Maker Assessment app
+
+> [!NOTE]
+> The [Excel Online (Business)](https://docs.microsoft.com/connectors/excelonlinebusiness/) must be in the business data&ndash;only bucket of your DLP policy for this flow to run successfully.
+
+1. Open the **Center of Excellence - Nurture Components**.
+1. Edit the **Maker Assessment | Import starter data cloud flow**.
+1. Update all three **List rows present in a table** actions, and set the value for Document library to **Documents** and the value for Table to **Table1**
+    ![Update Excel actions in the cloud flow with the Document Library and Table value](media/MakerJourneyCategoryTable.png "Update Excel actions in the cloud flow with the Document Library and Table value")
+1. Manually start the **Maker Assessment | Import starter data** flow once to populate the initial set of questions and answer options for the [Maker Assessment](nurture-components.md#maker-assessment) app.
 
 ## Create a SharePoint document library
 
@@ -114,9 +138,11 @@ All flows in this solution depend on all environment variables' being configured
 
 | Name | Default value |
 |------|---------------|
-| Power Platform Maker Microsoft 365 Group | The Admin \| Welcome Email flow sends a welcome email to onboard new makers and adds them to a Microsoft 365 group. You can use this group to send communications to your makers or invite them to a Yammer or Teams group. Configure the group ID here.|
 | Training in a day - Feedback Form     | The Training in a Day package includes a flow that automatically sends a feedback request to attendees on the day of the event. Configure the form URL (<https://forms.office.com/>...) here.    |
 | Power User Site URL (SharePoint Site) | The site that your Microsoft Power Platform power users can use to communicate and share files. You'll use it here to house the template library for them. |
+| Innovation Backlog URL | (optional) URl to the [Innovation Backlog](use-innovationbacklog.md) canvas app, if you are using this app |
+| Maker Assessment Admin eMail | eMail of the admin or CoE team that will respond to queries from the Maker Assessment app |
+| Maker Assessment SharePoint Site | SharePoint site URL to which you have uploaded the Maker Assessment Excel documents for initial import. |
 
 ## Activate the flows
 
@@ -133,6 +159,8 @@ The nurture components solution contains five flows:
 -  Training in a day \| Reminder 3 days prior to event
 
 Follow the same instructions to configure the flows as explained in [Activate the sync template flows](setup-core-components.md#activate-the-sync-template-flows).
+
+
 
 ## Set up a feedback form for your Training in a day
 
@@ -153,13 +181,12 @@ Follow the same instructions to configure the flows as explained in [Activate th
 
 The nurture components solution contains four apps. As soon as you're ready to adopt the CoE, share these apps as follows:
 
-- App Catalog; Share with your entire organization.
+- Maker Assessment: Share with your makers or your entire organization.
 
 - Template Catalog: Share with your makers or your entire organization.
 
-- Training in a day Management: Share with admins only.
+- Power Platform Training Management: Share with admins only.
 
-- Training in a day Registration: Share with your entire organization.
-
+- Power Platform Training Registration: Share with your entire organization.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
-title: "Set up SharePoint integration  | MicrosoftDocs"
-description: Set up SharePoint integration
+title: "Benefits of document management with SharePoint integration"
+description: "Learn about the benefits of using the document management capabilities of SharePoint in your apps."
 author: Mattp123
 ms.service: power-platform
 ms.component: pa-admin
@@ -16,8 +16,6 @@ search.app:
   - Flow
 ---
 # Set up SharePoint integration
-
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 You can use the document management capabilities of [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.md)] from within a Microsoft Dataverse model-driven app or a customer engagement app, such as Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation. 
 

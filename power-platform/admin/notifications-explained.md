@@ -19,8 +19,6 @@ search.app:
 ---
 # Notifications for Business Application Group services
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 Microsoft regularly sends communications regarding service incidents, service changes, maintenance, releases, and customer action needed. These communications come primarily in the form of a post to the Microsoft 365 Service health dashboard and the Message center.  From time-to-time we will also use direct email communications to provide status, updates, or information about the service.  
 
 ## Message Center

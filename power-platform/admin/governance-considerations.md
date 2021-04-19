@@ -20,8 +20,6 @@ search.app:
 
 # Governance considerations 
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 Many customers wonder: How can Power Apps and Power Automate be made available to their broader business and supported by IT? Governance is the answer. It aims to enable business groups to focus on solving business problems efficiently while complying with IT and business compliance standards. The following content is intended to structure themes often associated with governing software and bring awareness to capabilities available for each theme as it relates to governing Power Apps and Power Automate. 
 
 |Theme  |Common questions related to each theme for which this content answers  |
@@ -102,13 +100,13 @@ For customers with Azure AD Premium, conditional access policies can be defined 
 
 #### Creating a Conditional Access Policy
 
-1. Sign in to [https://portal.azure.com](https://portal.azure.com) 
-2. Select Azure Active Directory
-3. Select Conditional Access.
-4. Select + New Policy
-5. Select user and groups
-6. Select the cloud apps - select **Common Data Service** to control access to customer engagement apps
-7. Apply conditions (user/group, device, location) 
+1. Sign in to [https://portal.azure.com](https://portal.azure.com). 
+2. Select **Azure AD Conditional Access**.
+3. Select **+ New Policy**.
+4. Select**users and groups selected**.
+5. Select **All cloud apps** > **All cloud apps** > **Common Data Service** to control access to customer engagement apps.
+6. Apply conditions (user risk, device platforms, locations).
+7. Select **Create**.
 
 ### Prevent data leakage with data loss prevent policies
 

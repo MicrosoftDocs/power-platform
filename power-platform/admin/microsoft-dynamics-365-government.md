@@ -1,11 +1,11 @@
 ---
-title: "Dynamics 365 US Government | MicrosoftDocs"
-description: Dynamics 365 US Government 
+title: "Dynamics 365 US Government overview"
+description: "Learn about features that are specific to Microsoft Dynamics 365 US Government as public sector customers deploy into government community cloud (GCC)." 
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/02/2020
+ms.date: 04/06/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -18,9 +18,7 @@ search.app:
 
 # Dynamics 365 US Government 
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
-In response to the unique and evolving requirements of the United States public sector, Microsoft has created Microsoft Dynamics 365 US Government that is available to qualified government entities in the United States. On October 11, 2016, Microsoft announced the next generation of intelligent business applications in the cloud under the brand Microsoft Dynamics 365. To this end, Microsoft Dynamics 365 US Government entails a continuity of the protected environment that was originally branded Microsoft CRM Online Government where the protections afforded to the government community cloud under the new brand are now represented by four discrete functions: Sales, Customer Service, Field Service, and Project Service Automation. This section provides an overview of features that are specific to Microsoft Dynamics 365 US Government.  It is important to note that the following Microsoft Dynamics 365 apps do not provide the compliance commitments or acquisition regulations documented in this Service Description:
+In response to the unique and evolving requirements of the United States public sector, Microsoft has created Microsoft Dynamics 365 US Government that is available to qualified government tables in the United States. On October 11, 2016, Microsoft announced the next generation of intelligent business applications in the cloud under the brand Microsoft Dynamics 365. To this end, Microsoft Dynamics 365 US Government entails a continuity of the protected environment that was originally branded Microsoft CRM Online Government where the protections afforded to the government community cloud under the new brand are now represented by four discrete functions: Sales, Customer Service, Field Service, and Project Service Automation. This section provides an overview of features that are specific to Microsoft Dynamics 365 US Government.  It is important to note that the following Microsoft Dynamics 365 apps do not provide the compliance commitments or acquisition regulations documented in this Service Description:
 
 - Microsoft Dynamics 365 Business Central
 - Microsoft Dynamics 365 Marketing
@@ -37,7 +35,7 @@ Dynamics 365 US Government has been Generally Available to customers through dep
 
 Beginning April, 2019, eligible customers may now choose to deploy Dynamics 365 US Government to the “GCC High” environment, which enables single sign-on and seamless integration with Microsoft 365 GCC High deployments.  Microsoft has designed the platform and our operational procedures to meet the requirements aligning with the DISA SRG IL4 compliance framework.  We anticipate our US Department of Defense contractor customer base and other Federal agencies currently leveraging Microsoft 365 GCC High to use the Dynamics 365 US Government GCC High deployment option, which enables and requires the customer to leverage Azure AD Government for customer identities, in contrast to GCC which leverages Public Azure AD.  For our US Department of Defense contractor customer base, Microsoft operates the service in a manner that enables these customers to meet ITAR commitment and DFARS acquisition regulations, as documented and required by their contracts with the US Department of Defense.
 
-Dynamics 365 US Government plans are available to qualified government and private entities, limited to (i) United States (US) federal, state, local, tribal, and territorial government entities; (ii) private entities using Dynamics 365 US Government to provide solutions to a government entity or a qualified member of the cloud community; and (iii) private entities with customer data subject to government regulations for which the use of Dynamics 365 US Government is the appropriate service to meet the regulatory requirements. Access to Dynamics 365 US Government plans is restricted to the offerings described below, each plan is offered as a monthly subscription and can be licensed to an unlimited number of users:
+Dynamics 365 US Government plans are available to qualified government and private tables, limited to (i) United States (US) federal, state, local, tribal, and territorial government tables; (ii) private tables using Dynamics 365 US Government to provide solutions to a government table or a qualified member of the cloud community; and (iii) private tables with customer data subject to government regulations for which the use of Dynamics 365 US Government is the appropriate service to meet the regulatory requirements. Access to Dynamics 365 US Government plans is restricted to the offerings described below, each plan is offered as a monthly subscription and can be licensed to an unlimited number of users:
 
 ### Dynamics 365 US Government – GCC User Subscription Licenses
 
@@ -99,7 +97,7 @@ Orders placed for GCC High must be followed-up with a request to the Microsoft G
 ## What is “customer data” and “customer content?”  
  This section describes [!INCLUDE[pn_CRM_Online_Government_shortest](../includes/pn-crm-online-government-shortest.md)] commitments that apply to customer content and to customer data.  
   
- Customer data, as defined in the Online Service Terms, means all data, including all text, sound, video, or image files, and software, that are provided to Microsoft by, or on behalf of, Customer through use of the Online Service. Customer content refers to a specific subset of customer data that has been directly created by users, such as content stored in databases through entries in [!INCLUDE[pn_crm_shortest](../includes/pn-crm-shortest.md)] entities (e.g. contact information). Content is generally considered confidential information, and in normal service operation, is not sent over the Internet without encryption.  
+ Customer data, as defined in the Online Service Terms, means all data, including all text, sound, video, or image files, and software, that are provided to Microsoft by, or on behalf of, Customer through use of the Online Service. Customer content refers to a specific subset of customer data that has been directly created by users, such as content stored in databases through entries in [!INCLUDE[pn_crm_shortest](../includes/pn-crm-shortest.md)] tables (e.g. contact information). Content is generally considered confidential information, and in normal service operation, is not sent over the Internet without encryption.  
   
  For more information on the [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] protection of customer data, see the [Microsoft Online Services Trust Center](https://www.microsoft.com/trustcenter/cloudservices/dynamics365).  
   
@@ -125,8 +123,8 @@ Dynamics 365 support and service engineering staff do not have standing access t
 |Social Security Number (SSN) Search     |Verification that the provided SSN is valid         |
 |Criminal History Check     |A seven (7) year criminal record check for felony and misdemeanor offenses at the state, county, and local level and at the federal level         |
 |Office of Foreign Assets Control List (OFAC)     |Validation against the Department of Treasury list of groups with whom U.S. persons are not allowed to engage in trade or financial transactions         |
-|Bureau of Industry and Security List (BIS)     |Validation against the Department of Commerce list of individuals and entities barred from engaging in export activities         |
-|Office of Defense Trade Controls Debarred Persons List (DDTC)     |Validation against the Department of State list of individuals and entities barred from engaging in export activities related to the defense industry         |
+|Bureau of Industry and Security List (BIS)     |Validation against the Department of Commerce list of individuals and tables barred from engaging in export activities         |
+|Office of Defense Trade Controls Debarred Persons List (DDTC)     |Validation against the Department of State list of individuals and tables barred from engaging in export activities related to the defense industry         |
 |Fingerprinting Check     | Fingerprint background check against FBI databases        |
 |CJIS Background Screening<sup>2</sup>     |State-adjudicated review of federal and state criminal history by state CSA appointed authority within each state that has signed up for the Microsoft CJIS IA program         |
 
@@ -170,6 +168,10 @@ You use a different set of URLs to access Dynamics 365 US Government environment
 
 - GCC: *.crm9.dynamics.com
 - GCC High:  *.crm.microsoftdynamics.us
+
+### Dynamics 365 Customer Voice
+
+- GCC/GCC High: https://customervoice.microsoft.us
 
 ### Discovery Service (Deprecated)
 

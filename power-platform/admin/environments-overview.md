@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/03/2020
+ms.date: 04/06/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -18,12 +18,10 @@ search.app:
 
 # Environments overview
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+An *environment* is a space to store, manage, and share your organization's business data, apps, chatbots, and flows. It also serves as a container to separate apps that might have different roles, security requirements, or target audiences. How you choose to use environments depends on your organization and the apps you're trying to build. For example:
 
-An *environment* is a space to store, manage, and share your organization's business data, apps, and flows. It also serves as a container to separate apps that might have different roles, security requirements, or target audiences. How you choose to use environments depends on your organization and the apps you're trying to build. For example:
-
-* You can choose to only build your apps in a single environment.
-* You might create separate environments that group the test and production versions of your apps.
+* You can choose to only build your apps or chatbots in a single environment.
+* You might create separate environments that group the test and production versions of your apps or chatbots.
 * You might create separate environments that correspond to specific teams or departments in your company, each containing the relevant data and apps for each audience.
 * You might also create separate environments for different global branches of your company.  
 
@@ -31,9 +29,9 @@ An *environment* is a space to store, manage, and share your organization's busi
 > You can get early access to upcoming Power Apps functionality by joining the [Power Apps Preview program](preview-environments.md).
 
 ## Environment scope
-Each environment is created under an Azure Active Directory (Azure AD) tenant, and its resources can only be accessed by users within that tenant. An environment is also bound to a geographic location, like the United States. When you create an app in an environment, that app is routed only to datacenters in that geographic location. Any items that you create in that environment (including connections, gateways, flows using Microsoft Power Automate, and more) are also bound to their environment's location.
+Each environment is created under an Azure Active Directory (Azure AD) tenant, and its resources can only be accessed by users within that tenant. An environment is also bound to a geographic location, like the United States. When you create an app in an environment, that app is routed only to datacenters in that geographic location. Any items that you create in that environment (including chatbots, connections, gateways, flows using Microsoft Power Automate, and more) are also bound to their environment's location.
 
-Every environment can have zero or one Microsoft Dataverse database, which provides storage for your apps. Whether you can create a database for your environment depends on the license you purchase for Power Apps and your permissions within that environment. More information: [Pricing info](pricing-billing-skus.md)
+Every environment can have zero or one Microsoft Dataverse database, which provides storage for your apps and chatbots. Whether you can create a database for your environment depends on the license you purchase for Power Apps and your permissions within that environment. More information: [Pricing info](pricing-billing-skus.md)
 
 When you create an app in an environment, that app is only permitted to connect to the data sources that are also deployed in that same environment, including connections, gateways, flows, and Dataverse databases. For example, consider a scenario where you've created two environments named Test and Dev, and created a Dataverse database in each of the environments. If you create an app in the Test environment, it will only be permitted to connect to the Test database; it won't be able to connect to the 'Dev' database.
 

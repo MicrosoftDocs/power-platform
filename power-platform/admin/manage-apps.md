@@ -1,6 +1,6 @@
 ---
-title: "Manage Dynamics 365 apps  | MicrosoftDocs"
-description: Manage Dynamics 365 apps
+title: "Manage Dynamics 365 apps that run on Microsoft Dataverse"
+description: "Learn how to install, configure, and manage Dynamics 365 apps in Power Platform admin center. Manage apps from either the tenant or environment level."
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
@@ -17,8 +17,6 @@ search.app:
 ---
 
 # Manage Dynamics 365 apps
-
-[!INCLUDE[cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 You can now use the Microsoft Power Platform admin center to install, configure, and manage Dynamics 365 apps that run on Microsoft Dataverse. Apps in this topic refer to Dynamics 365 apps such as Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, and Dynamics 365 Marketing as well as apps purchased from Microsoft AppSource requiring any of these Dynamics 365 licenses.
 
@@ -51,7 +49,7 @@ Follow these steps to see a list of all licensed applications for your tenant.
    Note the following under **Status**:
 
    - **Enabled**: This app is ready to be installed in your environments. 
-   - **Configured**: This app has been configured to an environment. It can be reconfigured to a different environment or configuration to current environment can be udpated.
+   - **Configured**: This app has been configured to an environment. It can be reconfigured to a different environment or configuration to current environment can be updated.
    - **Not configured**: This app is ready to be configured to an environment.
 
 3. From the top menu bar, depending on the status of the app, you can do the following:

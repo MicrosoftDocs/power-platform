@@ -1,6 +1,6 @@
 ---
-title: "Performance tuning and optimization  | MicrosoftDocs"
-description: Performance tuning and optimization
+title: "Performance tuning and optimization for customer engagement apps"
+description: "Plan and optimize application performance with Dynamics 365 customer engagement apps; for example, avoid intensive database transactions."
 author: Mattp123
 ms.service: power-platform
 ms.component: pa-admin
@@ -16,8 +16,6 @@ search.app:
   - Flow
 ---
 # Performance tuning and optimization
-
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 Use this information to help you plan and optimize application performance with customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation).  
 

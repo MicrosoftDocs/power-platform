@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/08/2021
+ms.date: 04/07/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -15,11 +15,9 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# About the Microsoft Dataverse for Teams environment
+# About the Microsoft Dataverse for Teams environment 
 
 <!-- fwlink 2143567 -->
-
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 Introduced in September 2020, *Microsoft Dataverse for Teams* is a built-in, low-code data platform for Microsoft Teams that empowers users to build custom apps, bots, and flows in Microsoft Teams by using Power Apps, Power Virtual Agents, and Power Automate. Dataverse for Teams—built on Microsoft Dataverse—provides relational data storage, rich data types, enterprise-grade governance, and one-click solution deployment to the Microsoft Teams app store. More information: [Dataverse for Teams overview](/powerapps/teams/overview-data-platform)
 
@@ -46,7 +44,7 @@ Note the following regarding access to Microsoft Power Platform apps in Teams:
 
 - No direct API access to Dataverse for Teams will be provided, and only apps, bots, and flows embedded within the Microsoft Teams client will be able to access the Dataverse for Teams runtime.
 
-- Dataverse for Teams is not available in the following regions: South Korea, GCC, GCC High.
+- Dataverse for Teams is not available in GCC and GCC High.
 
 More information: [Dataverse for Teams licensing FAQ](powerapps-flow-licensing-faq.md#dataverse-for-teams)
 
@@ -224,7 +222,7 @@ When a Dataverse for Teams environment in a team approaches or reaches the 2 GB 
 > These tenant-level enforcement actions will take effect at general availability.
 
 When a tenant approaches or reaches their tenant-wide Microsoft Teams limits described earlier, the following actions will be taken: 
-- At 80 percent of the limit, a notification that capacity is reaching its limit will be sent to the Power Platform center admin. The admin will be encouraged to consider reducing storage usage or upgrading some of the Dataverse for Teams environments.
+- At 80 percent of the limit, a notification that capacity is reaching its limit will be sent to the tenant admin (Microsoft 365 Global admin, Power Platform admin, Dynamics 365 admin). The admin will be encouraged to consider reducing storage usage or upgrading some of the Dataverse for Teams environments.
 - At 100 percent of the limit, the creation of new Dataverse for Teams environments will be blocked. Any users attempting to create a new Dataverse for Teams environment will be prompted to contact the tenant admin as the result of the capacity limit being reached. Additionally, new apps, chatbots, flows, and tables won't be allowed to be created or installed in any existing Dataverse for Teams environment.  
 
 As mentioned for the environment-level enforcement, any existing apps will still be able to function as expected.  
@@ -256,7 +254,7 @@ After upgrade, the following applies to the newly upgraded environment:
 - The upgraded environment's lifecycle will no longer be tied to the lifecycle of that team. If the team is deleted, the upgraded environment remains. 
 - Any apps running on the environment will require Microsoft Power Platform (Power Apps, Power Automate) licenses to be accessed. 
 - The apps can run inside and outside of Microsoft Teams. 
-- All existing apps will be associated with the upgraded environment (Dataverse) and can take advantage of the extended set of entities. 
+- All existing apps will be associated with the upgraded environment (Dataverse) and can take advantage of the extended set of tables. 
 - The upgraded environment capacity will start counting against the tenant's Dataverse capacity. 
 - The Microsoft 365 Groups association will become editable. 
 - Team owners are assigned the System Admin roles on their environment and can access the environment by using the Power Platform admin center. 
@@ -319,7 +317,7 @@ Follow these steps to apply a DLP policy:
 [Power Apps and Teams](/powerapps/teams/overview) <br/>
 [Power Automate and Teams](/power-automate/teams/overview)<br/>
 [Power Virtual Agents and Teams](/power-virtual-agents/teams/fundamentals-what-is-power-virtual-agents-teams)<br />
-[Enable Microsoft Teams Integration for model-driven apps](enable-teams-integration.md)
-
+[Enable Microsoft Teams Integration for model-driven apps](enable-teams-integration.md) <br />
+[Microsoft Learn: Get started with Microsoft Dataverse for Teams](/learn/modules/get-started-dataverse-teams/)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

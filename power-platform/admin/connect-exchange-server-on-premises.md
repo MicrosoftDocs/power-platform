@@ -18,8 +18,6 @@ search.app:
 ---
 # Connect to Exchange Server (on-premises)
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 <!-- legacy procedure -->
 
 With version 9.0., you can connect your customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), with [!INCLUDE[pn_Exchange_Server_full](../includes/pn-exchange-server-full.md)] (on-premises).  
@@ -120,7 +118,7 @@ With version 9.0., you can connect your customer engagement apps (Dynamics 365 S
 ## Configure mailboxes  
  To set mailboxes to use the default profile, you must first set the Server Profile and the delivery method for email, appointments, contacts, and tasks.  
 
- In addition to administrator permissions, you must have Read and Write privileges on the Mailbox entity to set the delivery method for the mailbox.  
+ In addition to administrator permissions, you must have Read and Write privileges on the Mailbox table to set the delivery method for the mailbox.  
 
  Select **one** of the following methods:  
 

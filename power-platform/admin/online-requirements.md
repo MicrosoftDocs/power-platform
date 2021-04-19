@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/04/2021
+ms.date: 04/14/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -16,8 +16,6 @@ search.app:
   - Flow
 ---
 # Requirements/supported configurations  
-
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 [Model-driven Power Apps](/powerapps/maker/model-driven-apps/model-driven-app-overview) and customer engagement apps (such as [Dynamics 365 Sales](/dynamics365/sales-professional/help-hub), [Dynamics 365 Customer Service](/dynamics365/customer-service/help-hub), and [Dynamics 365 Marketing](/dynamics365/marketing/help-hub) and [Dynamics 365 Project Operations](/dynamics365/project-operations)), give you the following options to access data:  
   
@@ -57,10 +55,7 @@ If certain IP address ranges or individual IP addresses are blocked in the envir
 > [!div class="mx-imgBorder"] 
 > ![AzureCloud service tag for region IPs](media/example-azurecloud-tag.png "AzureCloud service tag for region IPs")
 
-Dynamics 365 apps use several Microsoft URLs to help provide security, services, and features. Blocking any of the required URLs will cause apps in Dynamics 365 to operate incorrectly or not at all. See:
-
-- [Troubleshooting: Unblock required URLs](troubleshooting-unblock-urls-required.md).
-- [Internet accessible URLs required for connectivity to Microsoft Dynamics 365](https://support.microsoft.com/help/2655102/internet-accessible-urls-required-for-connectivity-to-microsoft-dynami)
+Dynamics 365 apps use several Microsoft URLs to help provide security, services, and features. Blocking any of the required URLs will cause apps in Dynamics 365 to operate incorrectly or not at all. See: [Troubleshooting: Unblock required URLs](troubleshooting-unblock-urls-required.md).
   
 ## Internet accessible URLs required
 
