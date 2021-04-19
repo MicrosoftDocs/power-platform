@@ -95,4 +95,4 @@ The following table summarizes the advantages of using Success Hub compared to d
 
 ### See also
 
-[Digitizing the Business Applications Group](digitalizing-business-application-group.md)
+[Digitizing the Business Applications Group](digitizing-business-application-group.md)
