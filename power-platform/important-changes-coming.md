@@ -319,9 +319,8 @@ Task flows are deprecated
 -------------------------
 [Task flows](/flow/create-mobile-task-flow) are used to create a step-by-step data entry form for common tasks, such as after-meeting follow-ups. 
 
-Task flows are deprecated and will be removed by October 1, 2020. They will be
-replaced by the immersive experience for business process flows that is planned
-for release. More information: [Business process flow immersive
+Task flows are deprecated and will be removed by October 1, 2021. They will be
+replaced by the immersive experience for business process flows and Power Automate flows. More information: [Business process flow immersive
 experiences](/power-platform-release-plan/2019wave2/microsoft-flow/business-process-immersive-experiences)
 
 Process Dialogs are deprecated
