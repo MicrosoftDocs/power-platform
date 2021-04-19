@@ -44,7 +44,7 @@ conceptualContent:
       - url: /power-bi/
         itemType: overview
         text: Documentation
-      - url: /learn/browse/?products=power-bi
+      - url: /powerplatform/power-bi
         itemType: learn
         text: Training on Microsoft Learn
       - url: https://www.youtube.com/user/mspowerbi
@@ -55,7 +55,7 @@ conceptualContent:
       - url: /powerapps
         itemType: overview
         text: Documentation
-      - url: /learn/browse/?products=power-apps
+      - url: /learn/powerplatform/power-apps
         itemType: learn
         text: Training on Microsoft Learn
       - url: https://www.youtube.com/channel/UCGfWR2ekfRFckLjev6eQYLg/
@@ -66,7 +66,7 @@ conceptualContent:
       - url: /power-automate/
         itemType: overview
         text: Documentation
-      - url: /learn/browse/?products=power-automate
+      - url: /learn/powerplatform/power-automate
         itemType: learn
         text: Training on Microsoft Learn
       - url: https://www.youtube.com/channel/UCG98S4lL7nwlN8dxSF322bA
