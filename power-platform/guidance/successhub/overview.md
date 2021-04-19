@@ -21,25 +21,18 @@ Traditionally, larger organizations have relied on central IT teams to develop a
 
 Power Apps and Microsoft Power Platform empower individuals in an organization to develop apps for their team's business needs without being blocked by a central IT team. But, with employees developing apps on their own, the problem of reusability&mdash;both for data and for apps at the organization level&mdash;arises, along with the challenges of supporting and maintaining the apps. For organization digitization, we need to look beyond the needs of a specific team and implement a digitization strategy for the entire organization.
 
-At Microsoft, multiple subdivisions focus on specific products and services. One of these is the Business Applications Group (BAG), which is focused on Dynamics 365 and Microsoft Power Platform. BAG has more than 5,000 people who have custom needs of their own. The Success Hub platform enables digitization for BAG, and Microsoft Central IT plays the role of a Center of Excellence, enabling the Microsoft Power Platform governance and environment strategy for all of Microsoft.<!--note from editor: Please check the alt text for the following image. I don't think it's adequate. This image should probably be called as a "complex" image (I added the syntax below the art) so the alt text can exceed 150 characters.-->
+At Microsoft, multiple subdivisions focus on specific products and services. One of these is the Business Applications Group (BAG), which is focused on Dynamics 365 and Microsoft Power Platform. BAG has more than 5,000 people who have custom needs of their own. The Success Hub platform enables digitization for BAG, and Microsoft Central IT plays the role of a Center of Excellence, enabling the Microsoft Power Platform governance and environment strategy for all of Microsoft.
 
-> [!div class="mx-imgBorder"] 
-> ![Org chart showing various groups reporting into Microsoft Corporation, which is supported by Central IT. Success Hub supports the BAG group](media/successhub-org-chart.png)
-
-:::image type="complex" source="<folderPath>" alt-text="<alt text>":::
-   <long description here>
+:::image type="complex" source="media/successhub-org-chart.png" alt-text="Org chart showing Success Hub supports the BAG group.":::
+   "Org chart showing various groups reporting into Microsoft Corporation, which is supported by Central IT. Success Hub supports the BAG group."
 :::image-end:::
 
 ## What is Success Hub?
 
-Success Hub is a platform based on Microsoft Dataverse. Teams in BAG develop their apps on Success Hub, and share or reuse data from other apps and systems. About 35 business apps on the platform have been developed by 20 or so teams. This has enabled BAG to achieve a balance between agility and governance.<!--note from editor: Please note that any image like this that consists solely of text risks violating Microsoft accessibility guidelines, which are getting more emphatic: "An image MUST NOT include informative text if an equivalent visual presentation of the text can be rendered using real text." Using real text gives a better experience for people who are using screen readers and people who want to zoom in on the text (also, it makes it much easier for us to localize or update the content). I don't actually know what this image is trying to convey (or even whether it's worth keeping), so I'm not sure what to suggest here. At a minimum, the alt text needs to describe the image.-->
+Success Hub is a platform based on Microsoft Dataverse. Teams in BAG develop their apps on Success Hub, and share or reuse data from other apps and systems. About 35 business apps on the platform have been developed by 20 or so teams. This has enabled BAG to achieve a balance between agility and governance.
 
 > [!div class="mx-imgBorder"] 
-> ![Success Hub integrations](media/successhub-integrations.png "Success Hub integrations")
-
-:::image type="complex" source="<folderPath>" alt-text="<alt text>":::
-   <long description here>
-:::image-end:::
+> ![Various business apps integrated through Success Hub Platform data](media/successhub-integrations.png "Various business apps integrated through Success Hub Platform data")
 
 ## Advantages of using Success Hub
 
