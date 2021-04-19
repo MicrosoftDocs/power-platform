@@ -420,8 +420,6 @@
         href: legacy-capacity-storage.md
       - name: View self-service capacity
         href: view-self-service-capacity.md
-      - name: Add-on capacity management
-        href: capacity-add-on.md
       - name: Free up storage space
         href: free-storage-space.md       
     - name: Resources
@@ -434,6 +432,8 @@
         href: admin-manage-apps.md
       - name: Manage Power Automate flows
         href: manage-power-automate.md
+      - name: Add-on capacity management
+        href: capacity-add-on.md
       - name: Portal administration
         href: /powerapps/maker/portals/admin/power-platform-admin-center
     - name: Activity logging
