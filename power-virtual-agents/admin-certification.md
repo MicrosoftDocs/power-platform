@@ -28,14 +28,6 @@ Power Virtual Agents is a Core Online Service, as defined in the [Online Service
 - Spain Esquema Nacional de Seguridad (ENS) High-Level Security Measures
 - United Kingdom Government Cloud (G-Cloud)
 
-You should also [review the licensing requirements topic](requirements-licensing-subscriptions.md) for important information related to certification-related licensing restrictions.
-
-Power Virtual Agents is covered under the Health Insurance Portability and Accountability Act (HIPAA) Business Associate Agreement (BAA).
-
-You can create chatbots that handle protected health information when your organization is bound by HIPAA, as in the following scenarios where the chatbot can:
-
-- Ask individuals to provide their health information (blood pressure, weight, and so on).
-- Capture health information and personally identifying information, such as the customer's IP address or email address.
 
 >[!NOTE]
 >Although Power Virtual Agents is covered under HIPAA, it still isn't intended for use as a medical device. See the disclaimer on [the intended use of Power Virtual Agents and medical devices](fundamentals-what-is-power-virtual-agents.md#important-information).
@@ -92,6 +84,18 @@ By deploying protected services including Azure Government, Office 365 US Govern
 Power Virtual Agents availability in GCC and GCC High plans are estimated to be generally available by June 2021.
 
 [Learn more about FedRAMP](/compliance/regulatory/offering-fedramp).
+
+
+## HIPAA coverage
+
+[HIPAA](https://www.hhs.gov/hipaa/index.html) is a United States healthcare law that establishes requirements for the use, disclosure, and safeguarding of individually identifiable health information. It applies to covered entities&mdash;doctors' offices, hospitals, health insurers, and other healthcare companies&mdash;that have access to patients' protected health information (PHI), in addition to business associates&mdash;such as cloud service and IT providers&mdash;that process PHI on their behalf.
+
+[Learn more about HIPAA](/compliance/regulatory/offering-hipaa-hitech).
+
+Power Virtual Agents is covered under the Health Insurance Portability and Accountability Act (HIPAA) Business Associate Agreement (BAA). You can create chatbots that handle protected health information when your organization is bound by HIPAA, as in the following scenarios where the chatbot can:
+
+- Ask individuals to provide their health information (blood pressure, weight, and so on).
+- Capture health information and personally identifying information, such as the customer's IP address or email address.
 
 ## Health Information Trust Alliance (HITRUST)
 
@@ -152,11 +156,6 @@ Inclusion in the Digital Marketplace requires a self-attestation of compliance, 
 
 
 
-## HIPAA coverage
-
-[HIPAA](https://www.hhs.gov/hipaa/index.html) is a United States healthcare law that establishes requirements for the use, disclosure, and safeguarding of individually identifiable health information. It applies to covered entities&mdash;doctors' offices, hospitals, health insurers, and other healthcare companies&mdash;that have access to patients' protected health information (PHI), in addition to business associates&mdash;such as cloud service and IT providers&mdash;that process PHI on their behalf.
-
-[Learn more about HIPAA](/compliance/regulatory/offering-hipaa-hitech).
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
