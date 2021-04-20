@@ -89,7 +89,7 @@ With the exception of the model-driven app, form, and site map components, other
 
 #### Active layer introduced by a pending upgrade
 
-Here’s an example of a top wins component behavior introduced by a stage for upgrade update to a solution. More information: Upgrade or update a solution(https://docs.microsoft.com/en-us/powerapps/maker/data-platform/update-solutions)
+Here’s an example of a top wins component behavior introduced by a stage for upgrade update to a solution. More information: [Upgrade or update a solution](/powerapps/maker/data-platform/update-solutions)
 
 1. The current (active) layer has the Max length property with a custom field for the account table using the default setting of 100. 
 
