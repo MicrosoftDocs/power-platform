@@ -398,6 +398,7 @@
           href: analytics-ui-flow.md
  #     - name: "Preview: Tenant-level analytics" 
  #       href: tenant-level-analytics.md
+ # Comment out the following section before publishing to live
       - name: Analyze telemetry with Application Insights
         items:
         - name: Model-driven apps and Microsoft Dataverse telemetry
