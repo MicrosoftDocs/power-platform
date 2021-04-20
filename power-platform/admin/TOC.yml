@@ -688,72 +688,82 @@
         href: /dynamics365/customer-engagement/outlook-app/deploy-dynamics-365-app-for-outlook
       - name: Enable accessible email flow
         href: deploy-email-unified-interface.md 
-      - name: Server-side sync overview
+      - name: Server-side synchronization
         items:
         - name: About server-side sync
           href: server-side-synchronization.md
-        - name: Supported email service configurations
-          href: supported-email-service-configurations-server-side-synchronization.md
       - name: Set up server-side sync
         items:
         - name: Overview
           href: set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks.md
+        - name: Supported email service configurations
+          href: supported-email-service-configurations-server-side-synchronization.md
         - name: Connect to Exchange Online
           href: connect-exchange-online.md
         - name: Connect to Exchange Server (on-premises)
           href: connect-exchange-server-on-premises.md
-        - name: Connect to POP3 or SMTP servers
-          href: connect-to-pop3-or-smtp-servers.md
         - name: Connect to IMAP or SMTP servers
           href: connect-to-imap-servers.md 
-        - name: Connect Gmail accounts using OAuth 2.0
-          href: connect-gmail-oauth2.md
-        - name: Troubleshooting and monitoring server-side synchronization
-          href: troubleshooting-monitoring-server-side-synchronization.md
-        - name: When would I want to use this check box?
-          href: when-would-want-use-check-box.md
-        - name: Error logging for server-side synchronization
-          href: error-logging-server-side-synchronization.md 
-        - name: Best practices for server-side synchronization
+          items:
+          - name: Connect to Gmail
+          - name: Connect using OAuth 2.0
+            href: connect-gmail-oauth2.md
+          - name: Connect to POP3 or SMTP servers
+            href: connect-to-pop3-or-smtp-servers.md
+      - name: Server-side sync configuration
+        items: 
+        - name: Best practices
           href: best-practices-server-side-synchronization.md
-        - name: Create forward mailboxes or edit mailboxes
-          href: create-forward-mailboxes-edit-mailboxes.md
-        - name: Create queue items from synchronized email messages
+        - name: Personal options that affect synchronization
+          href: set-personal-options-affect-tracking-synchronization-between-dynamics-365-outlook-exchange.md
+        items: 
+        - name: Configure incoming and outgoing email synchronization
+          href: set-incoming-outgoing-email-synchronization.md
+        - name: Configure correlation settings for incoming email
+          href: email-message-filtering-correlation.md 
+        - name: Create queue items from incoming email
           href: create-queue-items-from-synchronized-email-messages.md
-      - name: Configure Outlook or Exchange folder-level tracking
-        href: configure-outlook-exchange-folder-level-tracking.md
-      - name: Use Outlook category to track appointments and emails
-        href: use-outlook-category-track-appointments-emails.md 
-      - name: Track Outlook email by moving it to a tracked Exchange folder
-        href: track-outlook-email-by-moving-it-tracked-exchange-folder.md
-      - name: Set incoming and outgoing email synchronization
-        href: set-incoming-outgoing-email-synchronization.md
-      - name: Choose records to synchronize with Exchange
-        href: choose-records-synchronize-dynamics-365-outlook-exchange.md
-      - name: Control field synchronization with Outlook
-        href: control-field-synchronization-outlook.md 
-      - name: How field security affects synchronization with Outlook
-        href: how-field-security-affects-synchronization-between-outlook.md 
-      - name: What fields can be synchronized with Outlook?
-        href: what-fields-synchronized-outlook.md
-      - name: View the fields that are synchronized with Outlook
-        href: view-fields-synchronized-dynamics-365-outlook.md
-      - name: Frequently asked questions about synchronizing records
-        href: frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook.md 
-      - name: Set personal options that affect tracking and synchronization
-        href: set-personal-options-affect-tracking-synchronization-between-dynamics-365-outlook-exchange.md
-     # - name: Send email on behalf of another user 
-     #   href: send-email-on-behalf.md
-      - name: Monitor email processing errors
-        href: monitor-email-processing-errors.md 
-      - name: Why does the email sent have a "Pending Send" status?
-        href: why-email-message-sent-have-pending-send-status.md 
-      - name: Email message filtering and correlation
-        href: email-message-filtering-correlation.md 
-      - name: Forward mailbox vs. individual mailboxes
-        href: forward-mailbox-vs-individual-mailboxes.md 
+        items: 
+        - name: Configure appointment, contact, and task synchronization
+          href: choose-records-synchronize-dynamics-365-outlook-exchange.md
+        - name: Synchronized fields per entity
+          href: what-fields-synchronized-outlook.md
+        - name: View the fields that are synchronized with Outlook
+          href: view-fields-synchronized-dynamics-365-outlook.md
+        - name: Control field synchronization
+          href: control-field-synchronization-outlook.md 
+        - name: Field security best practices
+          href: how-field-security-affects-synchronization-between-outlook.md 
+        - name: "Frequently asked questions: record synchronization"
+          href: frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook.md 
+        items:
+        - name: Configure folder-level tracking
+          href: configure-outlook-exchange-folder-level-tracking.md
+        - name: Best practices for folder-level tracking
+          href: track-outlook-email-by-moving-it-tracked-exchange-folder.md
+        items: 
+        - name: Use Outlook category to track appointments and emails
+          href: use-outlook-category-track-appointments-emails.md 
+        - name: Configure forward mailboxes
+          href: create-forward-mailboxes-edit-mailboxes.md
+        - name: Forward mailbox differences
+          href: forward-mailbox-vs-individual-mailboxes.md 
+     #  - name: Send email on behalf of another user 
+     #    href: send-email-on-behalf.md
+      items:
+      - name: Troubleshoot server-side synchronization
+        href: troubleshooting-monitoring-server-side-synchronization.md
+      - name: Error logging in server-side synchronization
+        href: error-logging-server-side-synchronization.md   
+        items:
+        - name: Monitor email processing errors
+          href: monitor-email-processing-errors.md 
+        - name: Email in "Pending Send" status?
+          href: why-email-message-sent-have-pending-send-status.md 
       - name: Recover from Exchange Server failure
         href: recover-from-exchange-server-failure.md 
+      - name: When would I want to use this check box?
+        href: when-would-want-use-check-box.md
     - name: Extend with integration and solutions
       items:
       - name: Manage Bing Maps
