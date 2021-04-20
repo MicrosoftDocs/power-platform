@@ -1,6 +1,6 @@
 ---
 title: "Understand conversation transcripts"
-description: ""
+description: "Review the fields associated with chat conversation transcripts, and see how to pull the data into Power BI."
 keywords: "PVA"
 ms.date: 4/20/2021
 ms.service: power-virtual-agents
@@ -13,161 +13,115 @@ ms.collection: virtual-agent
 ---
 
 
-# Analyze session information in Power Virtual Agents
+# Work with conversation transcripts
 
-> [!div class="op_single_selector"]
-> - [Power Virtual Agents web app](analytics-sessions.md)
-> - [Power Virtual Agents app in Microsoft Teams](teams/analytics-sessions-teams.md)
+Conversation transcripts exported from Microsoft Dataverse contain a number of fields. The following are the most relevant to chatbots created with Power Virtual Agents:
 
+| **Field**                     | **Description**                                                                                        |
+|-------------------------------|--------------------------------------------------------------------------------------------------------|
+| *Content*                     | The entire transcript in JSON format.                                                                  |
+| *ConversationStartTime*       | The start time of the conversation (not the time the transcript record was written to the data store). |
+| *Conversationtranscript*      | Unique identifier for entity instances.                                                                |
+| *Metadata*                    | JSON that includes the *Bot Id*, *Tenant Id*, and*Bot Name*.                                          |
+| *Name*                        | The name of the custom entity which is created from the *conversationid*, followed by*botid*.         |
+| *bot\_conversationtranscript* | Conversation transcripts related to customer interactions with a chatbot.                              |
+| *Created on*                  | Date and time when the transcript record was created.                                                  |
 
+## Content field
 
-By default, you can download up to seven days of bot conversation transcript sessions from the past 30 days directly from the Power Virtual Agents portal.
+The *Content* field is a raw log of all the activities users have with the bot. Common activity types include*message* and*event*:
 
-You can also download and view chat transcripts in the Power Apps portal.
+-   *Message* activities represent content shown within a conversation.*Message* activities may contain text, speech, interactive cards, and binary or unknown attachments.
 
-See [Working with and understanding conversation transcripts](analytics-sessions-transcripts.md) for more details and tips.
+-   *Event* activities communicate programmatic information from a client or channel to a bot.
 
-Lastly, you can manage the retention period for transcripts. This can be useful if you want to increase the date range from 30 days to something else.
+For more information on activity types, see the [Bot Framework Activity schema](https://github.com/Microsoft/botframework-sdk/blob/master/specs/botframework-activity/botframework-activity.md).
 
->[!NOTE]
->If you no longer have access to your environment, you'll need to [create a support request](https://admin.powerplatform.microsoft.com/support) in the Microsoft Power Platform admin center.
+The following are some of the key fields you will find within the *Content* JSON:
 
-## Prerequisites
-
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
-
-
-## Download session transcript information from the Power Virtual Agents portal
-
-1. Select **Analytics** on the side navigation pane. Go to the **Sessions** tab. 
-
-    If your bot had a high number of sessions, they'll be broken down into multiple rows. Each row contains 2500 sessions. 
-
-1. Click on each row to download the session transcripts for the specified timeframe.
-
-    ![Sessions page](media/analytics-sessions-billing.png)
-
-The downloaded file contains the following information: 
-
-- SessionID: A unique identifier per session. 
-
-- StartDateTime: Time at which the session started. Entries are sorted by this column in descending order. 
-
-- InitialUserMessage: First message typed by the user.
-
-- TopicName: Name of the last authored topic that was triggered in this session. 
-
-- ChatTranscript: Transcript of the session in the following format:
-    - ***User says:**" "; **Bot says:**" ";* structure
-    - Conversation turns are separated by semicolons
-    - **Bot says** doesn't include the options presented to the user.
-    
-    Example: 
-    ```
-    User says: store hours; Bot says: Which store are you asking about?; User says: Bellevue; Bot says: Bellevue store is open from 10am to 7pm every day.;
-    ```
-
-- SessionOutcome: Outcome of the session (Resolved, Escalated, Abandoned, Unengaged).
-
-- TopicId: A unique identifier of the last authored topic triggered in this session. 
-
->[!NOTE]
->The download will start when you select the time period. It will be downloaded into your default browser download's location.
+| **Key** | **Description** |
+|-------------------------|-------------------------|
+| <em>Id</em> | Unique GUID to identify the activity object. |
+| <em>valueType</em> | Indicator of the type of value stored in the activity. This indicator dictates what information is being provided by this activity.</br>See [Common activity value types](#common-activity-value-types). |
+| <em>timestamp</em> | Timestamp of when the activity was generated in Epoch format (number of seconds since midnight UTC Jan 1, 1970). |
+| <em>type</em> | The type of activity (for example, <em>message</em>, <em>event</em>, <em>trace</em>). |
+| <em>replyToId</em> | The ID of the activity that the current activity is responding to. |
+| <em>from</em> | Contains fields "id" and "role":</br><ul></br><li>"id" - the id of the invoker</li></br><li>"role" - holds 0 or 1</li></br></ul></br><ul></br><li>0 – activity is coming from bot</li></br><li>1 – activity is coming from the user interacting with the bot</li></br></ul></br>Notes:</br><blockquote></br>The "id" can be used to calculate the number of active users that are interacting with the bot, provided that the canvas is passing in a unique ID of the user. If the canvas does not pass an ID, a unique ID per conversation is passed.</br>The ID is hashed before being written to the transcript for security and privacy considerations.</br></blockquote> |
+| <em>channelId</em> | ID of where the activity is coming from (for example, <em>directline</em>, <em>msteams</em>, <em>facebook</em>). |
+| <em>textFormat</em> | Format of the text (for example, <em>plain</em>, <em>markdown</em>). |
+| <em>attachments</em> | Holds dynamic rich data associated with the activity</br>(for example, <em>AdaptiveCards</em>, <em>HeroCards</em>, <em>Carousal data</em>) |
+| <em>text</em> | The text for <em>message</em> activities. |
+| <em>value</em> | Fields specific to the activity based on the value type, this is where most of the useful information exists. |
+| <em>channeldata</em> | <ul></br><li>Contains channel data:<br /></br>for messages:</br><ul></br><li><em>DialogTraceDetail</em></li></br><li><em>DialogErrorDetail</em></li></br><li><em>VariableDetail</em></br><ul></br><li>Contains the value assigned to a variable.</li></br></ul></li></br><li><em>CurrentMessageDetail</em></li></br></ul></li></br><li>for events:</br><ul></br><li><em>cci_trace_id</em></li></br><li><em>traceHistory</em></li></br><li><em>enableDiagnostics</em></li></br><li><em>clientTimestamp</em></li></br><li><em>clientActivityId</em></li></br></ul></li></br></ul> |
+| <em>name</em> | Name of the event activity (for example, <em>SetPVAContext</em>) |
 
 
-## View and export bot conversation transcripts from the Power Apps portal
+### Common activity value types 
 
-You can also view and export bot conversation transcripts from the Power Apps portal.
+| **Activity value type** | **Description**                                                                                                                                                                 |
+|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| *ConversationInfo*      | Contains whether the conversation is from the Power Virtual Agents app's test pane (*isDesignMode*) and the locale of the conversation.                                         |
+| *CSATSurveyRequest*     | User is presented with a customer satisfaction (CSAT) survey.                                                                                                                   |
+| *CSATSurveyResponse*    | User responds to a CSAT survey.                                                                                                                                                 |
+| *DialogRedirect*        | User is redirected to another topic.                                                                                                                                            |
+| *ImpliedSuccess*        | User has reached a question node in the topic, where one of the conditions points to the "Confirmed Success" CSAT system topic or calls the "End of Conversation" system topic. |
+| *intentCandidates*      | A topic was triggered from a list of options because of ambiguity in the trigger phrases.                                                                                       |
+| *IntentRecognition*     | A topic was triggered directly by the user.                                                                                                                                     |
+| *PRRSurveyRequest*      | The user was asked whether the topic answered their question from the "End of Conversation" topic                                                                               |
+| *PRRSurveyResponse*     | The user's response to whether the topic answered their question from the "End of Conversation" topic                                                                           |
+| *SessionInfo*           | Contains the type (*unengaged* or*engaged*), outcome (*Escalated*, *Resolved*, *Abandon*) and the turn count of the session.                                                   |
+| *VariableAssignment*    | A value has been assigned to a variable.                                                                                                                                        |
 
-First, you'll need to sign in to [https://www.powerapps.com](https://www.powerapps.com) with your credentials.
+To convert the ID of the dialog being redirected to, a user can [use the bot's content](https://docs.microsoft.com/en-us/power-virtual-agents/gdpr-export#export-the-bot-content).
 
-### View conversation transcripts
+## Building custom reports from conversation transcripts
 
-1. In the side navigation pane, expand the **Data** node. Select **Entities**. On the top right, expand **Default** and select **All**.
+There are a few approaches one can take to build custom reports form conversation transcripts based on the number of messages that need to be processed.?
 
-    ![Screenshot of the Power Apps window with Data and Entities selected](media/powerapps-data-entities-view.png)
+### Lightweight approach
 
-1. Type **Conversation** in the **Search** textbox on the top right. Select **ConversationTranscript** under **Entities**.
+[Connect Power BI to Dataverse with a Power BI dataflow](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/CustomAnalytics). No additional infrastructure is required and with every refresh all records will be retrieved from Dataverse.
 
-    ![Screenshot showing Conversation Transcript selected](media/export-view-transcript.png)
- 
-1. Select **Data** tab. Expand **Active conversationtranscripts** and then select **All fields**.
+![Diagram showing flow of data from Dataverse to the Power BI model ](media/analytics-sessions-transcripts/transcripts-simple.png)
 
-    ![Screenshot showing Active conversation transcripts expanded](media/export-view-all-fields.png)
- 
-1. View the bot's conversation transcripts.
+| Pros | Cons |
+|-------------------------|-------------------------|
+| Easiest implementation. | Refresh time may increase as transcripts increase.</br>High cost for storage within Dataverse.? |
 
-    ![Screenshot showing sample bot transcript entries](media/export-view-sessions.png)
 
-### Export conversation transcripts
+### Standard Azure Data Lake Store approach
 
-1. In the side navigation pane, expand the **Data** node. Select **Entities** and then **Export data**.
+Export Dataverse data to Azure Data Lake Store.
 
-    ![Click path to export data](media/export-3.png)
+This requires an Azure Storage account, but no other azure infrastructure.
 
-1. On the Export data screen, select **ConversationTranscript** from the entity list. Select **Export data** at the top. Your data will take a couple of minutes to be compiled for export.
+Use a Power Platform dataflow to perform data prep on the transcripts and extract the data into a structured form.
 
-    ![Select entities for export](media/export-select-transcript.png)
+Power BI refreshes data from the Dataflow and all compute infrastructure is managed by Power Platform amd Power BI. During every refresh, records for a certain day will be retrieved from Dataverse.
 
-1. Select **Download exported data** to download the content.
+![Diagram showing the data flowing from Dataverse into Azure Data Lake and then being processed by Power Platform and Power BI ](media/analytics-sessions-transcripts/transcripts-adl.png)
 
-    ![Download exported data](media/powerapps-download-1.png)
- 
-## Change the default period of session transcript retention
+| Pros | Cons |
+|-------------------------|-------------------------|
+| Low storage cost in Azure Data Lake Store.</br>Moderately simple implementation.</br>No Azure Compute required. | Refresh time may increase as transcripts each day increase. |
 
-By default, a pre-configured bulk delete job will remove all conversation transcripts older than 30 days. 
 
-To keep the transcripts for longer, you need to disable the existing system job and create a new job.
+### Azure Data Lake Store (ADLS) + Synapse approach
 
-First, you'll need to sign in to [https://www.powerapps.com](https://www.powerapps.com) with your credentials.
+If data size in the Standard Azure Data Lake Store approach causes slow refreshes or other operational problems, you can use [Azure Synapse Analytics](https://azure.microsoft.com/en-us/services/synapse-analytics/) and integrate it [into Power BI](https://powerbi.microsoft.com/en-us/blog/announcing-azure-synapse-analytics-public-preview/).
 
-The following instructions describe how to set a job to delete transcripts that are older than 12 months.
+![Diagram of data flowing from Dataverse into Azure Data Lake and being processed by Azure Synapse and Power Platform ](media/analytics-sessions-transcripts/transcripts-asynapse.png)
 
-1. At the top right, open the **Settings** menu cog icon and select **Advanced settings**.
+| Pros | Cons |
+|-------------------------|-------------------------|
+| Refresh time is constant.</br>Moderately simple implementation.</br>Low storage cost in Azure Data Lake Store. | Compute cost for Azure Synapse. |
 
-    ![Select the cog icon to open the settings menu](media/sessions-advanced.png)
- 
-    This will take you to the Dynamics 365 portal.
- 
-    ![The Dynamics 365 portal](media/sessions-d365.png)
 
-2. Open the **Settings** menu and select **Data Management**.
+## Tips for getting the most out of your conversation transcripts
 
-    ![The settings link at the top shows a number of objects, including Data Management](media/sessions-d365-settings.png)
- 
-3. Select **Bulk Record Deletion**.
+[Variables can be used to store data relevant to your bot content](#A) or bot user. Parsing out the variable and its value from the conversation transcript lets you filter or slice the data by the variable
 
-    ![An icon showing a table with a red x, indicating the deletion of a bulk record](media/sessions-bulk-delete.png)
- 
-4. On the **Bulk Record Deletion** screen, expand the **View** dropdown and select **Recurring Bulk Deletion System Jobs**.
-
-    ![The dropdown opens to show options](media/sessions-recurring.png)
-
-5. Select the pre-configured bulk delete job called **Bulk Delete Conversation Transcript Records Older Than 1 Month**.
-
-    ![A list of bulk delete jobs, with the first one highlighted](media/sessions-pre-configured.png)
- 
-6. In the **More Actions** dropdown, select **Cancel** to disable future bulk deletion using this job.
-
-    ![The more actions dropdown opens to show a menu list, including Cancel](media/sessions-actions-cancel.png)
- 
-7. Create a new bulk record delete job by selecting **New** and set the following:
-
-    - Set **ConversationStartTime** as **Older Than X Months** to **12**.  
-    This will keep the transcripts for 12 months
-
-    - Set **SchemaType** as **equals** to **powervirtualagents**.
-
-        ![A popup window showing options to configure the job](media/sessions-schema.png)
- 
-8. Enter a name and change **Run this job after every** to **1**.
-
-    ![A popup window showing options to name and run the job](media/sessions-run-job.png)
- 
-    The bulk delete job is created and will delete bot conversation transcripts that are older than 12 months.
-
-    ![The list of bulk delete jobs, now showing the new job just created](media/sessions-job-ready.png)
- 
+In many places the conversation transcripts refer to content by its ID. For example, the ID of the topic that is being redirected to by the current topic is only referenced by its ID. To get the name of the topic, look up the name of the topic [from the bot content](https://docs.microsoft.com/en-us/power-virtual-agents/gdpr-export#export-the-bot-content).
 
 
 
