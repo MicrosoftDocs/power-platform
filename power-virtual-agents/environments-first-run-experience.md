@@ -107,17 +107,17 @@ When using a trial environment and you want to retain the bots for longer than 3
 
 ## Supported operations
 
-Power Virtual Agents supports the following environment lifecyrcle operations, as described in [Power Platform environments overview](/power-platform/admin/environments-overview.md):
+Power Virtual Agents supports the following environment lifecyrcle operations, as described in [Power Platform environments overview](/power-platform/admin/environments-overview):
 
-- [Back up and restore](/power-platform/admin/backup-restore-environments.md)
-- [Delete](/power-platform/admin/delete-environment.md)
-- [Recover](/power-platform/admin/recover-environment.md)
-- [Copy](/power-platform/admin/copy-environment.md)
-- [Reset](/power-platform/admin/reset-environment.md)
+- [Back up and restore](/power-platform/admin/backup-restore-environments)
+- [Delete](/power-platform/admin/delete-environment)
+- [Recover](/power-platform/admin/recover-environment)
+- [Copy](/power-platform/admin/copy-environment)
+- [Reset](/power-platform/admin/reset-environment)
 
 The following operation is unsupported:
 
-- [Move](/power-platform/admin/move-environment-tenant.md)
+- [Move](/power-platform/admin/move-environment-tenant)
 
 
 ## Known issues with creating a bot
