@@ -704,66 +704,72 @@
           href: connect-exchange-server-on-premises.md
         - name: Connect to IMAP or SMTP servers
           href: connect-to-imap-servers.md 
-          items:
-          - name: Connect to Gmail
-          - name: Connect using OAuth 2.0
-            href: connect-gmail-oauth2.md
-          - name: Connect to POP3 or SMTP servers
-            href: connect-to-pop3-or-smtp-servers.md
+       - name: Connect to Gmail
+         items:
+         - name: Connect using OAuth 2.0
+           href: connect-gmail-oauth2.md
+         - name: Connect to POP3 or SMTP servers
+           href: connect-to-pop3-or-smtp-servers.md
       - name: Server-side sync configuration
         items: 
         - name: Best practices
           href: best-practices-server-side-synchronization.md
         - name: Personal options that affect synchronization
           href: set-personal-options-affect-tracking-synchronization-between-dynamics-365-outlook-exchange.md
-        items: 
+        - name: Configure incoming and outgoing email synchronization
+          items: 
         - name: Configure incoming and outgoing email synchronization
           href: set-incoming-outgoing-email-synchronization.md
         - name: Configure correlation settings for incoming email
           href: email-message-filtering-correlation.md 
         - name: Create queue items from incoming email
           href: create-queue-items-from-synchronized-email-messages.md
-        items: 
         - name: Configure appointment, contact, and task synchronization
-          href: choose-records-synchronize-dynamics-365-outlook-exchange.md
-        - name: Synchronized fields per entity
-          href: what-fields-synchronized-outlook.md
-        - name: View the fields that are synchronized with Outlook
-          href: view-fields-synchronized-dynamics-365-outlook.md
-        - name: Control field synchronization
-          href: control-field-synchronization-outlook.md 
-        - name: Field security best practices
-          href: how-field-security-affects-synchronization-between-outlook.md 
-        - name: "Frequently asked questions: record synchronization"
-          href: frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook.md 
-        items:
+          items: 
+          - name: Configure appointment, contact, and task synchronization
+            href: choose-records-synchronize-dynamics-365-outlook-exchange.md
+          - name: Synchronized fields per entity
+            href: what-fields-synchronized-outlook.md
+          - name: View the fields that are synchronized with Outlook
+            href: view-fields-synchronized-dynamics-365-outlook.md
+          - name: Control field synchronization
+            href: control-field-synchronization-outlook.md 
+          - name: Field security best practices
+            href: how-field-security-affects-synchronization-between-outlook.md 
+          - name: "Frequently asked questions: record synchronization"
+            href: frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook.md 
         - name: Configure folder-level tracking
-          href: configure-outlook-exchange-folder-level-tracking.md
-        - name: Best practices for folder-level tracking
-          href: track-outlook-email-by-moving-it-tracked-exchange-folder.md
-        items: 
-        - name: Use Outlook category to track appointments and emails
-          href: use-outlook-category-track-appointments-emails.md 
-        - name: Configure forward mailboxes
-          href: create-forward-mailboxes-edit-mailboxes.md
-        - name: Forward mailbox differences
-          href: forward-mailbox-vs-individual-mailboxes.md 
-     #  - name: Send email on behalf of another user 
-     #    href: send-email-on-behalf.md
-      items:
+          items:
+          - name: Configure folder-level tracking
+            href: configure-outlook-exchange-folder-level-tracking.md
+          - name: Best practices for folder-level tracking
+            href: track-outlook-email-by-moving-it-tracked-exchange-folder.md
+        - name: Configure Outlook category tracking
+          items: 
+          - name: Use Outlook category to track appointments and emails
+            href: use-outlook-category-track-appointments-emails.md 
+          - name: Configure forward mailboxes
+            href: create-forward-mailboxes-edit-mailboxes.md
+          - name: Forward mailbox differences
+            href: forward-mailbox-vs-individual-mailboxes.md 
+     #    - name: Send email on behalf of another user 
+     #      href: send-email-on-behalf.md
       - name: Troubleshoot server-side synchronization
-        href: troubleshooting-monitoring-server-side-synchronization.md
-      - name: Error logging in server-side synchronization
-        href: error-logging-server-side-synchronization.md   
         items:
+        - name: Troubleshoot server-side synchronization
+          href: troubleshooting-monitoring-server-side-synchronization.md
+        - name: Error logging in server-side synchronization
+          href: error-logging-server-side-synchronization.md   
         - name: Monitor email processing errors
-          href: monitor-email-processing-errors.md 
-        - name: Email in "Pending Send" status?
-          href: why-email-message-sent-have-pending-send-status.md 
-      - name: Recover from Exchange Server failure
-        href: recover-from-exchange-server-failure.md 
-      - name: When would I want to use this check box?
-        href: when-would-want-use-check-box.md
+          items:
+          - name: Monitor email processing errors
+            href: monitor-email-processing-errors.md 
+          - name: Email in "Pending Send" status?
+            href: why-email-message-sent-have-pending-send-status.md 
+        - name: Recover from Exchange Server failure
+          href: recover-from-exchange-server-failure.md 
+        - name: When would I want to use this check box?
+          href: when-would-want-use-check-box.md
     - name: Extend with integration and solutions
       items:
       - name: Manage Bing Maps
