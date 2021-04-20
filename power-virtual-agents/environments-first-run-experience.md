@@ -15,9 +15,7 @@ ms.collection: virtual-agent
 
 With Power Virtual Agents, you can create bots in different environments and easily switch between them.
 
-An environment is a space to store, manage, and share your organization's business data. The bots you create are stored in an environment (apps and flows are also stored in environments). Environments may also have different roles, security requirements and target audiences, and each environment is created in a separate location. See the following topics for more information: 
-- [Supported data locations](data-location.md).
-- [Power Platform environments overview](/power-platform/admin/environments-overview.md)
+An environment is a space to store, manage, and share your organization's business data. The bots you create are stored in an environment (apps and flows are also stored in environments). Environments may also have different roles, security requirements and target audiences, and each environment is created in a separate location. More information: [Supported data locations](data-location.md).
 
 ## Prerequisites
 
@@ -106,20 +104,6 @@ If you have created your own environment and selected **Trial** as the environme
 ## Converting a trial environment to a production environment
 
 When using a trial environment and you want to retain the bots for longer than 30 days, you must [convert the trial environment to a production environment](/power-platform/admin/trial-environments#convert-a-trial-environment-to-production).
-
-## Supported operations
-
-Power Virtual Agents supports the following environment lifecycle operations, as described in [Power Platform environments overview](/power-platform/admin/environments-overview.md):
-
-- [Back up and restore](/power-platform/admin/backup-restore-environments.md)
-- [Delete](/power-platform/admin/delete-environment.md)
-- [Recover](/power-platform/admin/recover-environment.md)
-- [Copy](/power-platform/admin/copy-environment.md)
-- [Reset](/power-platform/admin/reset-environment.md)
-
-The following operation is unsupported:
-
-- [Move](/power-platform/admin/move-environment-tenant.md)
 
 ## Known issues with creating a bot
 
