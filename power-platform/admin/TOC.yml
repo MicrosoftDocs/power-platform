@@ -768,8 +768,8 @@
               href: why-email-message-sent-have-pending-send-status.md 
           - name: Recover from Exchange Server failure
             href: recover-from-exchange-server-failure.md 
-          - name: When would I want to use this check box?
-            href: when-would-want-use-check-box.md
+       #   - name: When would I want to use this check box?
+       #     href: when-would-want-use-check-box.md
     - name: Extend with integration and solutions
       items:
       - name: Manage Bing Maps
