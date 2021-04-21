@@ -24,15 +24,15 @@ Each of these fields includes information relevant to the bot conversation. This
 
 The following are the most relevant to chatbots created with Power Virtual Agents:
 
-| **Field** | **Description**|
-|-------------------------------|--------------------------------------------------------------------------------------------------------|
-| *Content* | The entire transcript in JSON format.|
-| *ConversationStartTime* | The start time of the conversation (not the time the transcript record was written to the data store). |
-| *Conversationtranscript*| Unique identifier for entity instances.|
-| *Metadata*| JSON that includes the *Bot Id*, *Tenant Id*, and *Bot Name*.|
-| *Name*| The name of the custom entity that is created from the *conversationid*, followed by *botid*. |
-| *bot\_conversationtranscript* | Conversation transcripts related to customer interactions with a chatbot.|
-| *Created on*| Date and time when the transcript record was created.|
+| Field | Description|Example
+|-|-|-|
+| *Content* | The entire transcript in JSON format.| See the [Content field](#content-field) section.
+| *ConversationStartTime* | The start time of the conversation (not the time the transcript record was written to the data store). | 2021-04-19T20:39:09Z
+| *Conversationtranscript*| Unique identifier for the data row in the Dataverse table.| 28eccb77-xxxx-4a63-985f-ffaaadd6f391
+| *Metadata*| JSON that includes the *Bot Id*, *Tenant Id*, and *Bot Name*.| ```{"BotId": "198eca5f-xxxx-4ae6-8c08-835d884a8688", "AADTenantId": "72f988bf-xxxx-41af-91ab-2d7cd011db47", "BotName": "Test Bot"}```
+| *Name*| The name of the custom row that is created from the *conversationid*, followed by *botid*. | 8YYe8iif49ZKkycZLe7HUO-o_198eca5f-xxxx-4ae6-8c08-835d884a8688
+| *bot\_conversationtranscript* | The bot's ID.| 198eca5f-xxxx-4ae6-8c08-835d884a8688
+| *Created on*| Date and time when the transcript record was created.|2021-04-20T02:40:13Z
 
 ### Content field
 
@@ -72,8 +72,7 @@ The following are some of the key fields you will find within the *Content* JSON
 | *CSATSurveyResponse*| User responds to a CSAT survey. |
 | *DialogRedirect*| User is redirected to another topic.|
 | *ImpliedSuccess*| User has reached a question node in the topic, where one of the conditions points to the "Confirmed Success" CSAT system topic or calls the "End of Conversation" system topic. |
-| *intentCandidates*| A topic was triggered from a list of options because of ambiguity in the trigger phrases. |
-| *IntentRecognition* | A topic was triggered directly by the user. |
+| *IntentRecognition* | A topic was triggered by the user. |
 | *PRRSurveyRequest*| The user was asked whether the topic answered their question from the "End of Conversation" topic |
 | *PRRSurveyResponse* | The user's response to whether the topic answered their question from the "End of Conversation" topic |
 | *SessionInfo* | Contains the type (*unengaged* or *engaged*), outcome (*Escalated*, *Resolved*, *Abandon*), and the turn count of the session. |
