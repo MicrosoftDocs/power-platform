@@ -29,12 +29,12 @@ The following are the most relevant to chatbots created with Power Virtual Agent
 | Field | Description|Example
 |-|-|-|
 | *Content* | The entire transcript in JSON format.| See the [Content field](#content-field) section.
-| *ConversationStartTime* | The start time of the conversation (not the time the transcript record was written to the data store). | 2021-04-19T20:39:09Z
-| *Conversationtranscript*| Unique identifier for the data row in the Dataverse table.| 28eccb77-xxxx-4a63-985f-ffaaadd6f391
-| *Metadata*| JSON that includes the *Bot Id*, *Tenant Id*, and *Bot Name*.| ```{"BotId": "198eca5f-xxxx-4ae6-8c08-835d884a8688", "AADTenantId": "72f988bf-xxxx-41af-91ab-2d7cd011db47", "BotName": "Test Bot"}```
-| *Name*| The name of the custom row that is created from the *conversationid*, followed by *botid*. | 8YYe8iif49ZKkycZLe7HUO-o_198eca5f-xxxx-4ae6-8c08-835d884a8688
-| *bot\_conversationtranscript* | The bot's ID.| 198eca5f-xxxx-4ae6-8c08-835d884a8688
-| *Created on*| Date and time when the transcript record was created.|2021-04-20T02:40:13Z
+| *ConversationStartTime* | The start time of the conversation (not the time the transcript record was written to the data store). | `2021-04-19T20:39:09Z`
+| *Conversationtranscript*| Unique identifier for the data row in the Dataverse table.| `28eccb77-xxxx-4a63-985f-ffaaadd6f391`
+| *Metadata*| JSON that includes the *Bot Id*, *Tenant Id*, and *Bot Name*.| `{"BotId": "198eca5f-xxxx-4ae6-8c08-835d884a8688", "AADTenantId": "72f988bf-xxxx-41af-91ab-2d7cd011db47", "BotName": "Test Bot"}`
+| *Name*| The name of the custom row that is created from the *conversationid*, followed by *botid*. | `8YYe8iif49ZKkycZLe7HUO-o_198eca5f-xxxx-4ae6-8c08-835d884a8688`
+| *bot\_conversationtranscript* | The bot's ID.| `198eca5f-xxxx-4ae6-8c08-835d884a8688`
+| *Created on*| Date and time when the transcript record was created.|`2021-04-20T02:40:13Z`
 
 ### Content field
 
