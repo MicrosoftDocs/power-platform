@@ -67,8 +67,7 @@ imported&mdash;can include the following layers:
 > [!IMPORTANT]
 > Using patches isn't recommended. More information: [Create solution patches](/powerapps/maker/common-data-service/solution-patches)
 
-The following image shows an example of solution layers for a custom field that displays the base
-solution, a patch, and a pending upgrade.<!--Edit okay? I didn't know how this fit into the flow of the article. -->
+The following image shows an example of solution layers for a custom column that displays the base solution, a patch, and a pending upgrade.
 
 > [!div class="mx-imgBorder"] 
 > ![Solution layers](media/solution-layers-example.png "Solution layers")
@@ -91,11 +90,11 @@ With the exception of the model-driven app, form, and site map components, other
 
 Here’s an example of a top wins component behavior introduced by a stage for upgrade update to a solution. More information: [Apply the upgrade or update in the target environment](/powerapps/maker/data-platform/update-solutions#apply-the-upgrade-or-update-in-the-target-environment)
 
-1. The current (active) layer has the Max length property with a custom field for the account table using the default value of 100.
+1. The current (active) layer has the Max length property with a custom column for the account table using the default value of 100.
 
    :::image type="content" source="media/component-merge-top-wins1.png" alt-text="Table component in the base solution":::
 
-1. A solution upgrade is imported that creates a new active (top) layer. The pending upgrade includes the custom field for the account table that has the **Max length** property value changed to 150.
+1. A solution upgrade is imported using the stage for upgrade option, which creates a new active (top) layer. The solution upgrade includes the custom column for the account table that has the **Max length** property value changed to 150.
 
    :::image type="content" source="media/component-merge-top-wins2.png" alt-text="Active layer introduced on top of the base layer":::
 
