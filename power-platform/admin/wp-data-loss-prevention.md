@@ -4,7 +4,7 @@ description: About data loss prevention (DLP) policies.
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/10/2020
+ms.date: 02/23/2021
 author: jimholtz
 ms.author: jimholtz
 ms.reviewer: jimholtz
@@ -74,9 +74,9 @@ The following connectors can't be blocked by using DLP policies.
 |Microsoft Enterprise Plan standard connectors | Core Power Platform connectors  |
 |---------|---------|
 |Excel Online (Business)      | Approvals        |
-|Microsoft Forms Pro      | Notifications        |
-|Microsoft Teams      | Dataverse         |
-|Microsoft To-Do (Business)      | Dataverse <br />(current environment)        |
+|Dynamics 365 Customer Voice      | Notifications        |
+|Microsoft Teams      | Common Data Service         |
+|Microsoft To-Do (Business)      | Common Data Service <br />(current environment)        |
 |Microsoft 365 Groups      | Power Apps Notifications (v1 and v2)        |
 |Microsoft 365 Outlook      |         |
 |Microsoft 365 Users      |         |
