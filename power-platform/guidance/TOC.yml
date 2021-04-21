@@ -13,13 +13,13 @@
         href: adoption/roles.md
       - name: Delivery models
         href: adoption/delivery-models.md
-        items:
-        - name: "Case study: Success Hub"
-          items: 
-          - name: Overview
-            href: successhub/overview.md
-          - name: Digitizing Business Application Group
-            href: successhub/digitizing-business-application-group.md
+      items:
+      - name: "Case study: Success Hub"
+        items: 
+        - name: Overview
+          href: successhub/overview.md
+        - name: Digitizing Business Application Group
+          href: successhub/digitizing-business-application-group.md
     - name: Admin and governance 
       items:
       - name: Best practices checklist
