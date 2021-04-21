@@ -15,9 +15,11 @@ ms.collection: virtual-agent
 
 # Work with conversation transcripts
 
-When you export conversation transcripts from Microsoft Dataverse, you will be presented with many fields. 
+When you export Power Virtual Agents chatbot conversation transcripts from Microsoft Dataverse, you will be presented with many fields. 
 
-Each of these fields includes information relevant to the bot conversation. This topic lists the most important fields found in conversation transcripts, and also provides guidance on bringing analytics information into Power BI with dataflows.
+Each of these fields includes information relevant to the chatbot conversation. 
+
+This topic lists the most important fields found in Power Virtual Agents conversation transcripts, and also provides guidance on bringing analytics information into Power BI with dataflows.
 
 
 ## Conversation transcripts fields
