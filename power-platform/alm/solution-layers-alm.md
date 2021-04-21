@@ -84,7 +84,7 @@ components use "top level wins" behavior.
 
 ### "Top wins" behavior
 
-With the exception of the model-driven app, form, and site map components, other solution components use a "top wins" behavior where the layer that resides at the top determines how the component works at app runtime. A top layer can be introduced by a staged (pending) upgrade. Also, remember that unmanaged customizations always reside at the top layer for a component. In most situations you don't want unmanaged customizations determining the behavior of your components. More information: [Remove an unmanaged layer](/powerapps/maker/data-platform/solution-layers#remove-an-unmanaged-layer)
+With the exception of the model-driven app, form, and site map components, other solution components use a "top wins" behavior where the layer that resides at the top determines how the component works at app runtime. A top layer can be introduced by a staged (pending) upgrade. The top layer is also known as the *active* layer. Also, remember that unmanaged customizations always reside at the top layer for a component. In most situations you don't want unmanaged customizations determining the behavior of your components. More information: [Remove an unmanaged layer](/powerapps/maker/data-platform/solution-layers#remove-an-unmanaged-layer)
 
 #### Active layer introduced by a pending upgrade
 
