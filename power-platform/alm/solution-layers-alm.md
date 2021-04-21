@@ -98,7 +98,7 @@ Here’s an example of a top wins component behavior introduced by a stage for u
 
    :::image type="content" source="media/component-merge-top-wins2.png" alt-text="Active layer introduced on top of the base layer":::
 
-In this situation, the custom column’s length can be changed up to a maximum of 150 characters during app run time.
+In this situation, app users can save up to 150 characters in the custom text column at app run time.
 
 ### Solution update and upgrade merge behavior
 
