@@ -9,7 +9,7 @@ ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/10/2021
+ms.date: 04/22/2021
 search.audienceType: 
   - admin
 search.app:
@@ -21,6 +21,9 @@ search.app:
 # Control user access to environments: security groups and licenses
 
 If your company has multiple Microsoft Dataverse environments, you can use security groups to control which licensed users can be a member of a particular environment.  
+
+> [!NOTE]
+> For information on how user access works for Microsoft Dataverse for Teams, see [User access to Dataverse for Teams environments](about-teams-environment.md#user-access-to-dataverse-for-teams-environments).
   
 Consider the following example scenario:  
   
@@ -35,14 +38,11 @@ In this example, four security groups provide controlled access to a specific en
   
 Note the following about security groups: 
   
-- Nested security groups are not supported. If there is a nested security group in an environment's security group, members of the nested security group will be ignored. 
-<!-- 
 - Nested security group.
 
   Members of a nested security group in an environment security group are not pre-provisioned or automatically added to the Dataverse environment. However, they can be added into the environment if you create a [Dataverse group team](manage-group-teams.md#create-a-group-team) for the nested security group. 
 
   An example of this scenario: you assigned a security group for the environment when the environment was created. During the lifecycle of the environment, you want to add members to the environment which are managed by security groups. You create a security group in Azure Active Directory, for example managers, and assigned all your managers to the group. You then add this security group as a child of the environment security group, create a [Dataverse group team](manage-group-teams.md#create-a-group-team), and assign a security role to the group team. Your managers can now access Dataverse immediately.    
--->
 - When users are added to the security group, they are added to the Dataverse environment.  
 - When users are removed from the group, they are disabled in the Dataverse environment.  
 - When a security group is associated with an existing environment with users, all users in the environment that are not members of the group will be disabled. 
@@ -64,19 +64,19 @@ Note the following about security groups:
   
 ## Create a security group and add members to the security group  
 
-1.  Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).  
+1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).  
   
-2.  Select **Groups** > **Groups**.  
+2. Select **Groups** > **Groups**.  
   
-3.  Select **+ Add a group**.  
+3. Select **+ Add a group**.  
   
-4.  Change the type to **Security group**, add the group **Name** and **Description**. Select **Add** > **Close**.  
+4. Change the type to **Security group**, add the group **Name** and **Description**. Select **Add** > **Close**.  
   
-5.  Select the group you created, and then next to **Members**, select **Edit**.  
+5. Select the group you created, and then next to **Members**, select **Edit**.  
   
-6.  Select **+ Add members**. Select the users to add to the security group, and then select **Save** > **Close** several times to return to the **Groups** list.  
+6. Select **+ Add members**. Select the users to add to the security group, and then select **Save** > **Close** several times to return to the **Groups** list.  
   
-7.  To remove a user from the security group, select the security group, next to **Members**, select **Edit**. Select **- Remove members**, and then select **X** for each member you want to remove.  
+7. To remove a user from the security group, select the security group, next to **Members**, select **Edit**. Select **- Remove members**, and then select **X** for each member you want to remove.  
   
 > [!NOTE]
 > If the users you want to add to the security group are not created, create the users and assign to them the Dataverse licenses.  
@@ -96,7 +96,7 @@ Or, purchase and assign per app passes: [About Power Apps per app plans](about-p
   
 ## Associate a security group with a Dataverse environment  
   
-1. Sign in to the Power Platform admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin, Global admin, or Microsoft Power Platform admin).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin, Global admin, or Microsoft Power Platform admin).
 
 2. In the navigation pane, select **Environments**, select an environment, and then select **Edit**.  
   
@@ -122,7 +122,7 @@ The security group is associated with the environment.
 
 ## Remove a security group's association with a Dataverse environment
 
-1. Sign in to the Power Platform admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin, Microsoft 365 Global admin, or Microsoft Power Platform admin).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin, Microsoft 365 Global admin, or Microsoft Power Platform admin).
 
 2. In the navigation pane, select **Environments**, select an environment, and then select **Edit**.
 
