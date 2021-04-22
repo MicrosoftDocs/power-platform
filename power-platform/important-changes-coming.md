@@ -27,7 +27,7 @@ notification can span a few months or years. After removal, the feature or capab
 
 ## Skype integration with customer engagement apps is deprecated
 
-Effective July 2019, skype integration feature in customer engagement apps has been deprecated and will no longer be supported after July 31 2021. This is because Skype will be retired on July 31, 2021; more information: [Skype for Business Online retirement - Microsoft Teams](./microsoftteams/skype-for-business-online-retirement.md)
+Effective July 2019, skype integration feature in customer engagement apps has been deprecated and will no longer be supported after July 31 2021. This is because Skype will be retired on July 31, 2021; more information: [Skype for Business Online retirement - Microsoft Teams](https://docs.microsoft.com/microsoftteams/skype-for-business-online-retirement)
 
 The presence indication backed by Skype for Business will cease to function. This includes presence indication in hover cards, lookup fields, and lookup columns in grids. There are currently plans to support these locations via Teams. In the meantime, presence indication can be found in Live Person Cards.
 
