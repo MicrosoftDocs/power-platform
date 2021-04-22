@@ -120,7 +120,7 @@ The security group is associated with the environment.
 
 ## Remove a security group's association with a Dataverse environment
 
-1. Sign in to the Power Platform admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin, Microsoft 365 Global admin, or Microsoft Power Platform admin).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin, Microsoft 365 Global admin, or Microsoft Power Platform admin).
 
 2. In the navigation pane, select **Environments**, select an environment, and then select **Edit**.
 
