@@ -94,7 +94,7 @@ Or, purchase and assign per app passes: [About Power Apps per app plans](about-p
   
 ## Associate a security group with a Dataverse environment  
   
-1. Sign in to the Power Platform admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin, Global admin, or Microsoft Power Platform admin).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin, Global admin, or Microsoft Power Platform admin).
 
 2. In the navigation pane, select **Environments**, select an environment, and then select **Edit**.  
   
