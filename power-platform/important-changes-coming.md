@@ -31,7 +31,7 @@ Effective July 2019, skype integration feature in Dynamics 365 customer engageme
 
 The presence indication backed by Skype for Business will cease to function. This includes presence indication in hover cards, lookup fields, and lookup columns in grids. There are currently plans to support these locations via Teams. In the meantime, presence indication can be found in Live Person Cards.
 
-You should plan to transition to Microsoft Teams because the Team’s capabilities go beyond those of Skype for Business Online, and is the next chapter in enterprise communication solution from Microsoft. For more details about Teams capabilities and how it’s better than Skype, see [The Total Economic Impact™ of Microsoft Teams[(../microsoft-365/blog/wp-content/uploads/sites/2/2019/04/Total-Economic-Impact-Microsoft-Teams.pdf?rtc=2).
+You should plan to transition to Microsoft Teams because the Team’s capabilities go beyond those of Skype for Business Online, and is the next chapter in enterprise communication solution from Microsoft. For more details about Teams capabilities and how it’s better than Skype, see [The Total Economic Impact™ of Microsoft Teams](https://www.microsoft.com/microsoft-365/blog/wp-content/uploads/sites/2/2019/04/Total-Economic-Impact-Microsoft-Teams.pdf?rtc=1).
 
 
 ## Low-density headers in model-driven apps won't be supported with the 2021 release wave 2
