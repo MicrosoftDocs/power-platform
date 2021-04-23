@@ -2,7 +2,7 @@
 title: "Understand conversation transcripts"
 description: "Review the fields associated with chat conversation transcripts, and see how to pull the data into Power BI."
 keywords: "PVA"
-ms.date: 4/20/2021
+ms.date: 4/23/2021
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -15,7 +15,7 @@ ms.collection: virtual-agent
 
 # Work with conversation transcripts
 
-When you export Power Virtual Agents chatbot conversation transcripts from Microsoft Dataverse, you will be presented with many fields. 
+When you [export Power Virtual Agents chatbot conversation transcripts from Microsoft Dataverse](analytics-sessions.md), you will be presented with many fields. 
 
 Each of these fields includes information relevant to the chatbot conversation. 
 
