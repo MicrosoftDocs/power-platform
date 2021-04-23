@@ -45,7 +45,7 @@ All the users of Microsoft Power Platform have limits on the number of requests 
 | Dynamics 365 Team Member | 5,000 |
 | Power Apps per user plan<sup>3</sup> | 5,000 |
 | Power Automate per user plan<sup>3</sup>  | 5,000 |
-| Office licenses (that include Power Apps/Power Automate)<sup>4</sup>  | 2,000 |
+| Office licenses (that include Power Apps, Power Automate, or Power Virtual Agents)<sup>4</sup>  | 2,000 |
 | Power Apps per app plan | 1,000 per app pass |
 | Non-licensed users | See [Requests limits not based on licensed users or flows](#requests-limits-not-based-on-licensed-users-or-flows) below |
 
