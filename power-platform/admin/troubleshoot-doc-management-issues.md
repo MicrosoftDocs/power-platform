@@ -1,6 +1,6 @@
 ---
-title: "Troubleshooting Document Management Issues | MicrosoftDocs"
-description: "Learn how to troubleshoot issues with document management"
+title: "Troubleshooting SharePoint document management issues"
+description: "Learn how to troubleshoot document management issues based on error messages, including missing folders and documentation libraries."
 keywords: encrypt
 ms.date: 06/15/2020
 ms.service: power-platform
