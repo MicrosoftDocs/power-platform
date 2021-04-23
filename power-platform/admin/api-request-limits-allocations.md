@@ -103,7 +103,7 @@ The Power Automate per flow plan allows capacity to be specifically reserved for
 
 When you purchase a Power Virtual Agents license, your tenant will get 30,000 API calls every 24 hours. These API calls are only consumed by Power Automate flows that are triggered from a Power Virtual Agents chatbot.
 
-You can purchase additional Power Virtual Agents capacity add-ons. Each add-on will increase the number of requests by 15,000. There is no limit on the number of add-ons you can purchase. 
+You can purchase multiple Power Virtual Agents capacity add-ons. Each add-on will increase the number of requests by 15,000. There is no limit on the number of add-ons you can purchase. 
 
 ## Other applicable limits
 
