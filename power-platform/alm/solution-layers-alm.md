@@ -84,21 +84,21 @@ components use "top level wins" behavior.
 
 ### "Top wins" behavior
 
-With the exception of the model-driven app, form, and site map components, other solution components use a "top wins" behavior where the layer that resides at the top determines how the component works at app runtime. A top layer can be introduced by a staged (pending) upgrade. The top layer is also known as the *active* layer. Also, remember that unmanaged customizations always reside at the top layer for a component. In most situations you don't want unmanaged customizations determining the behavior of your components. More information: [Remove an unmanaged layer](/powerapps/maker/data-platform/solution-layers#remove-an-unmanaged-layer)
+With the exception of the model-driven app, form, and site map components, other solution components use a "top wins" behavior where the layer that resides at the top determines how the component works at app runtime. A top layer can be introduced by a staged (pending) upgrade.
 
-#### Active layer introduced by a pending upgrade
+#### Top layer introduced by a pending upgrade
 
 Here’s an example of a top wins component behavior introduced by a stage for upgrade update to a solution. More information: [Apply the upgrade or update in the target environment](/powerapps/maker/data-platform/update-solutions#apply-the-upgrade-or-update-in-the-target-environment)
 
-1. The current (active) layer has the **Max length** property with a custom text column for the account table using the default value of 100.
+1. The current top (base) layer has the **Max length** property of the **Comments** text column for the account table using the default setting of 100.
 
    :::image type="content" source="media/component-merge-top-wins1.png" alt-text="Table component in the base solution":::
 
-1. A solution upgrade is imported using the stage for upgrade option, which creates a new active (top) layer. The solution upgrade includes the custom column for the account table that has the **Max length** property value changed to 150.
+1. A solution upgrade is imported using the stage for upgrade option, which creates a new top layer. The pending upgrade includes the **Comments** text column for the account table with the **Max length** property value changed to 150.
 
    :::image type="content" source="media/component-merge-top-wins2.png" alt-text="Active layer introduced on top of the base layer":::
 
-In this situation, app users can save up to 150 characters in the custom text column at app run time.
+In this situation, the **Comments** column for account records will allow up to a maximum of 150 characters during app run time.
 
 ### Solution update and upgrade merge behavior
 
