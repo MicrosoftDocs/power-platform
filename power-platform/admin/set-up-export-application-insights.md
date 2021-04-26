@@ -81,9 +81,9 @@ search.app:
 |UAE     | Yes | March 2021        |
 |Switzerland (CHE)     | Yes | Jan 2021       |
 |Mooncake     | No |  June 2021 |
-|Canada     | No |  May 2021 |
-|Canada     | No |  May 2021 |
-|Canada     | No |  TBD |
+|GCC     | No |  May 2021 |
+|GCC-Mod     | No |  May 2021 |
+|GCC-DOD     | No |  TBD |
 
 
 
