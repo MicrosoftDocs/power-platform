@@ -1,6 +1,6 @@
 ---
-title: "Troubleshooting: Unblock required URLs  | MicrosoftDocs"
-description: "Troubleshooting: Unblock required URLs"
+title: "Troubleshooting: Unblock required URLs"
+description: "Learn how to unblock URLs by adding to approved sites for a browser when Dynamics 365 servers are unavailable or not responding."
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin

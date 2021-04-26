@@ -1,6 +1,6 @@
 ---
-title: "Delete a business unit  | MicrosoftDocs"
-description: Delete a business unit
+title: "Delete a business unit from an environment"
+description: "Learn how to deactivate and delete a business unit from an environment. Learn about the considerations before taking this irreversible action."
 author: jimholtz
 manager: kvivek
 ms.service: power-platform
