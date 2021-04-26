@@ -90,7 +90,7 @@ There are a few approaches one can take to build custom reports form conversatio
 
 [Connect Power BI to Dataverse with a Power BI dataflow](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/CustomAnalytics). Other infrastructure isn't required and, with every refresh, all records will be retrieved from Dataverse.
 
-![Diagram showing flow of data from Dataverse to the Power BI model ](media/analytics-sessions-transcripts/transcripts-simple.png)
+:::image type="content" source="media/analytics-sessions-transcripts/transcripts-simple.png" alt-text="Diagram showing flow of data from Dataverse to the Power BI model.":::
 
 | Pros | Cons |
 |-------------------------|-------------------------|
