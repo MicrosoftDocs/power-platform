@@ -1,7 +1,7 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps"
 description: Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps 
-ms.date: 04/06/2021
+ms.date: 04/21/2021
 ms.topic: "article"
 ms.assetid: 994cc854-17f6-45d6-bc20-fcf1a3f2d6d6
 searchScope:
@@ -24,6 +24,15 @@ Administrators and IT professionals should use this information to prepare for f
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future major release. The feature or capability will continue to work and is fully supported until it is officially removed. This deprecation
 notification can span a few months or years. After removal, the feature or capability will no longer work. We are notifying you now so you have sufficient time to plan and update your code before the feature or capability is removed.
+
+## Skype integration with customer engagement apps is deprecated
+
+Effective July 2019, Skype integration feature with customer engagement apps has been deprecated and will no longer be supported after July 31 2021. This is because Skype will be retired on July 31, 2021; more information: [Skype for Business Online retirement - Microsoft Teams](https://docs.microsoft.com/microsoftteams/skype-for-business-online-retirement)
+
+The presence indication backed by Skype for Business will cease to function. This includes presence indication in hover cards, lookup fields, and lookup columns in grids. There are currently plans to support these locations via Teams. In the meantime, presence indication can be found in Live Person Cards.
+
+You should plan to transition to Microsoft Teams because the Team’s capabilities go beyond those of Skype for Business Online, and is the next chapter in enterprise communication solution from Microsoft. For more details about Teams capabilities and how it’s better than Skype, see [The Total Economic Impact™ of Microsoft Teams](https://www.microsoft.com/microsoft-365/blog/wp-content/uploads/sites/2/2019/04/Total-Economic-Impact-Microsoft-Teams.pdf?rtc=1).
+
 
 ## Low-density headers in model-driven apps won't be supported with the 2021 release wave 2
 
@@ -319,18 +328,12 @@ Task flows are deprecated
 -------------------------
 [Task flows](/flow/create-mobile-task-flow) are used to create a step-by-step data entry form for common tasks, such as after-meeting follow-ups. 
 
-Task flows are deprecated and will be removed by October 1, 2020. They will be
-replaced by the immersive experience for business process flows that is planned
-for release. More information: [Business process flow immersive
-experiences](/power-platform-release-plan/2019wave2/microsoft-flow/business-process-immersive-experiences)
+Task flows are deprecated and will be removed by October 1, 2021. They will be replaced by the immersive experience for business process flows that is planned for release. More information: [Business process flow immersive experiences](/power-platform-release-plan/2019wave2/microsoft-flow/business-process-immersive-experiences)
 
 Process Dialogs are deprecated
 ------------------------------
 
-You can use a process dialog to create an interactive step-by-step data entry
-form that requires user input to start and run to completion. When you start the
-dialog process, a wizard-like interface is presented; users make selections or
-enter data as they progress through each page of the wizard.
+You can use a process dialog to create an interactive step-by-step data entry form that requires user input to start and run to completion. When you start the dialog process, a wizard-like interface is presented; users make selections or enter data as they progress through each page of the wizard.
 
 Process dialogs are deprecated and will be removed by December 1, 2020. Suggested replacement options include Business Process Flows or Canvas Apps. More information: [Replace dialogs with business process flows or canvas apps](/flow/replace-dialogs)
 

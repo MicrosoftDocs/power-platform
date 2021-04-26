@@ -1,6 +1,6 @@
 ---
-title: "Troubleshooting: Common user access issues  | MicrosoftDocs"
-description: "Troubleshooting: Common user access issues"
+title: "Troubleshoot common user access issues for Dataverse environments"
+description: "Learn how to run and interpret diagnostics for user access to environments, including criteria for access."
 author: jimholtz
 ms.author: jimholtz
 ms.reviewer: jimholtz

@@ -27,10 +27,10 @@ Requests in Microsoft Power Platform consist of various actions that a user make
 - **Power Apps** – all API requests to connectors and Microsoft Dataverse.
 - **Power Automate** – all API requests to connectors, HTTP actions, and built-in actions from initializing variables to a simple compose action. Both succeeded and failed actions count towards these limits. Additionally, retries and additional requests from pagination count as action executions as well. 
 - **Power Virtual Agents** - API requests (or calls) to Power Automate flows from within a chatbot conversation.
-- **Common Data Service** – all create, read, update, and delete (CRUD), assign, and share operations including user-driven and internal system requests required to complete CRUD transactions, as well as special operations like share or assign. These can be from any client or application and using any endpoint (SOAP or REST). These include, but are not limited to, plug-ins, classic workflows, and custom controls making the earlier-mentioned operations.
+- **Dataverse (formerly Common Data Service)** – all create, read, update, and delete (CRUD), assign, and share operations including user-driven and internal system requests required to complete CRUD transactions, as well as special operations like share or assign. These can be from any client or application and using any endpoint (SOAP or REST). These include, but are not limited to, plug-ins, classic workflows, and custom controls making the earlier-mentioned operations.
 
 > [!NOTE]
-> For Dataverse, there is be a small set of system internal operations that are excluded from limits, such as login, logout, and system metadata operations.
+> For Dataverse, there is a small set of system internal operations that are excluded from limits, such as login, logout, and system metadata operations.
 
 The table below will describe the common requests limits as well as the allocation that a user gets based on the type of license assigned to the user.
 

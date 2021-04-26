@@ -1,6 +1,6 @@
 ---
-title: "Recover environment | MicrosoftDocs"
-description: Recover environment
+title: "Recover a recently deleted environment"
+description: "Learn how to restore a recently deleted environment by using Microsoft Power Platform admin center or Power Apps cmdlet."
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
