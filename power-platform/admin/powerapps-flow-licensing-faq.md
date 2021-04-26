@@ -150,7 +150,7 @@ Premium connectors list at October 2019 (will expand over time):
 - Azure SQL  
 - Azure SQL Data Warehouse  
 - Azure Table Storage  
-- Common Data Service
+- Dataverse (formerly Common Data Service)
 - Dynamics 365  
 - Dynamics 365 Customer Insights  
 - Dynamics 365 Finance & Operations  
