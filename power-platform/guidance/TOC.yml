@@ -17,8 +17,8 @@
         items: 
         - name: Overview
           href: successhub/overview.md
-        - name: Digitizing Business Application Group
-          href: successhub/digitizing-business-application-group.md
+        - name: Digitizing Digital Transformation Platform group
+          href: successhub/digitizing-digital-transformation-platform-group.md
     - name: Admin and governance 
       items:
       - name: Best practices checklist

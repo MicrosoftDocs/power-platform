@@ -17,7 +17,7 @@ search.app:
 ---
 # Digitizing the Business Applications Group 
 
-To holistically digitize a large organization like the Business Applications Group (BAG) at Microsoft, we need to automate all four aspects of the digital feedback loop.
+To holistically digitize a large organization like the Digital Transformation Platform (DTP) at Microsoft, we need to automate all four aspects of the digital feedback loop.
 
 > [!div class="mx-imgBorder"] 
 > ![Diagram showing cloud data and AI in the center, interacting with the four aspects of the feedback loop described in the following list](media/successhub-digital-feedback-loop.png "Digital feedback loop")

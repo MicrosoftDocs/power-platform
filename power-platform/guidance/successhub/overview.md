@@ -21,15 +21,15 @@ Traditionally, larger organizations have relied on central IT teams to develop a
 
 Power Apps and Microsoft Power Platform empower individuals in an organization to develop apps for their team's business needs without being blocked by a central IT team. But, with employees developing apps on their own, the problem of reusability&mdash;both for data and for apps at the organization level&mdash;arises, along with the challenges of supporting and maintaining the apps. For organization digitization, we need to look beyond the needs of a specific team and implement a digitization strategy for the entire organization.
 
-At Microsoft, multiple subdivisions focus on specific products and services. One of these is the Business Applications Group (BAG), which is focused on Dynamics 365 and Microsoft Power Platform. BAG has more than 5,000 people who have custom needs of their own. The Success Hub platform enables digitization for BAG, and Microsoft Central IT plays the role of a Center of Excellence, enabling the Microsoft Power Platform governance and environment strategy for all of Microsoft.
+At Microsoft, multiple subdivisions focus on specific products and services. One of these is the Digital Transformation Platform (DTP), which is focused on Dynamics 365 and Microsoft Power Platform. DTP has more than 5,000 people who have custom needs of their own. The Success Hub platform enables digitization for DTP, and Microsoft Central IT plays the role of a Center of Excellence, enabling the Microsoft Power Platform governance and environment strategy for all of Microsoft.
 
-:::image type="complex" source="media/successhub-org-chart.png" alt-text="Org chart showing Success Hub supports the BAG group.":::
-Org chart showing various groups reporting into Microsoft Corporation, which is supported by Central IT. Success Hub supports the BAG group.
+:::image type="complex" source="media/successhub-org-chart.png" alt-text="Org chart showing Success Hub supports the DTP group.":::
+Org chart showing various groups reporting into Microsoft Corporation, which is supported by Central IT. Success Hub supports the DTP group.
 :::image-end:::
 
 ## What is Success Hub?
 
-Success Hub is a platform based on Microsoft Dataverse. Teams in BAG develop their apps on Success Hub, and share or reuse data from other apps and systems. About 35 business apps on the platform have been developed by 20 or so teams. This has enabled BAG to achieve a balance between agility and governance.
+Success Hub is a platform based on Microsoft Dataverse. Teams in DTP develop their apps on Success Hub, and share or reuse data from other apps and systems. About 35 business apps on the platform have been developed by 20 or so teams. This has enabled DTP to achieve a balance between agility and governance.
 
 > [!div class="mx-imgBorder"] 
 > ![Various business apps integrated through Success Hub Platform data](media/successhub-integrations.png "Various business apps integrated through Success Hub Platform data")
@@ -90,4 +90,4 @@ The following table summarizes the advantages of using Success Hub compared to d
 
 ### See also
 
-[Digitizing the Business Applications Group](digitizing-business-application-group.md)
+[Digitizing the Digital Transformation Platform group](digitizing-digital-transformation-platform-group.md)
