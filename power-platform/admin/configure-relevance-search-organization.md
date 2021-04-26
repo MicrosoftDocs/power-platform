@@ -225,7 +225,7 @@ The new Relevance Search experience brings some of the most frequently used acti
 |Task     | Mark complete, Cancel, Set Regarding, Assign, Email a link        |
 |Phone call     | Mark complete, Cancel, Set Regarding, Assign, Email a link        |
 |Email     | Cancel, Set Regarding, Email a link        |
-|Any custom table     | Assign, Share, Email a link        |
+
 
 Quick actions are a subset of the table's homepage grid commands. For example, when you select an account in its homepage grid, the Account table's quick actions are derived from the set of commands at the top of the page. This is important to understand the customization options available to configure quick actions. You can use the ribbon’s **EnableRule** to hide or show quick actions for a table. To learn more about defining ribbon enable rules in Power Apps, see [Define ribbon enable rules](/powerapps/developer/model-driven-apps/define-ribbon-enable-rules).
 

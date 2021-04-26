@@ -1,6 +1,6 @@
 ---
-title: "System Settings dialog box (Microsoft Dataverse)  | MicrosoftDocs"
-description: System Settings dialog box (Microsoft Dataverse) 
+title: "Overview of the System Settings dialog box"
+description: "Use the System Settings dialog box to specify system-level settings for your Microsoft Dataverse environment and customer engagement apps." 
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
