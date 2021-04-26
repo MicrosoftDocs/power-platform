@@ -21,7 +21,7 @@ Traditionally, larger organizations have relied on central IT teams to develop a
 
 Power Apps and Microsoft Power Platform empower individuals in an organization to develop apps for their team's business needs without being blocked by a central IT team. But, with employees developing apps on their own, the problem of reusability&mdash;both for data and for apps at the organization level&mdash;arises, along with the challenges of supporting and maintaining the apps. For organization digitization, we need to look beyond the needs of a specific team and implement a digitization strategy for the entire organization.
 
-At Microsoft, multiple subdivisions focus on specific products and services. One of these is the Digital Transformation Platform (DTP), which is focused on Dynamics 365 and Microsoft Power Platform. DTP has more than 5,000 people who have custom needs of their own. The Success Hub platform enables digitization for DTP, and Microsoft Central IT plays the role of a Center of Excellence, enabling the Microsoft Power Platform governance and environment strategy for all of Microsoft.
+At Microsoft, multiple subdivisions focus on specific products and services. One of these is the Digital Transformation Platform (DTP), which is focused on Dynamics 365 and Microsoft Power Platform. DTP has more than 15,000 people who have custom needs of their own. The Success Hub platform enables digitization for DTP, and Microsoft Central IT plays the role of a Center of Excellence, enabling the Microsoft Power Platform governance and environment strategy for all of Microsoft.
 
 :::image type="complex" source="media/successhub-org-chart.png" alt-text="Org chart showing Success Hub supports the DTP group.":::
 Org chart showing various groups reporting into Microsoft Corporation, which is supported by Central IT. Success Hub supports the DTP group.
@@ -83,11 +83,10 @@ The following table summarizes the advantages of using Success Hub compared to d
 
 - **Shared apps and data**: Because data is stored in a single Microsoft Dataverse instance, the same data tables&mdash;for example, Account, Contact, and Product&mdash;can be widely shared across multiple apps. 
 - **Integration with other data sources**: Apps do need data from other systems in Microsoft&mdash;for example, sales and support data. These integrations are already enabled in Success Hub for any app to use.
-- **[Governance for co-development](../adoption/admin-best-practices.md)**: The governance model allows for multiple teams to co-develop at the same time on the platform.
-- **[Application lifecycle management (ALM)](../../alm/overview-alm.md)**: ALM features (such as dev environments and deployments) are provided to help teams get started quickly.
+- **Governance for co-development**: The governance model allows for multiple teams to co-develop at the same time on the platform.
+- **Application lifecycle management (ALM)**: ALM features (such as dev environments and deployments) are provided to help teams get started quickly.
 - **Compliance and security**: Success Hub takes care of compliance, security, and privacy reviews on a regular basis.
 - **Support and maintenance**: App teams can take advantage of designated support and live site reviews.
 
-### See also
-
-[Digitizing the Digital Transformation Platform group](digitizing-digital-transformation-platform-group.md)
+## Next step
+With an understanding of Success Hub at Microsoft, check out what was involved with [digitizing the Digital Transformation Platform group](digitizing-digital-transformation-platform-group.md)
