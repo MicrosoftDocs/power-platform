@@ -1,6 +1,6 @@
 ---
-title: "Online Management API (REST) to manage environments | Microsoft Docs"
-description: "Learn about the APIs that are available to manage Microsoft Dataverse environments."
+title: "Online Management API (REST) to manage environments"
+description: "Learn how to use the Online Management API to create and manage Microsoft Dataverse environment."
 keywords: 
 author: mikkelsen2000
 ms.author: pemikkel
