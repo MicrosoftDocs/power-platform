@@ -107,7 +107,7 @@ When using a trial environment and you want to retain the bots for longer than 3
 
 ## Supported operations
 
-Power Virtual Agents supports the following environment lifecyrcle operations, as described in [Power Platform environments overview](/power-platform/admin/environments-overview):
+Power Virtual Agents supports the following environment lifecycle operations, as described in [Power Platform environments overview](/power-platform/admin/environments-overview):
 
 - [Back up and restore](/power-platform/admin/backup-restore-environments)
 - [Delete](/power-platform/admin/delete-environment)
