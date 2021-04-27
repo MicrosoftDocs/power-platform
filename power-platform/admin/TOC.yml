@@ -753,8 +753,8 @@
               href: create-forward-mailboxes-edit-mailboxes.md
             - name: Forward mailbox differences
               href: forward-mailbox-vs-individual-mailboxes.md 
-        #    - name: Send email on behalf of another user 
-        #      href: send-email-on-behalf.md
+            - name: Send email on behalf of another user 
+              href: send-email-on-behalf.md
         - name: Troubleshoot server-side synchronization
           items:
           - name: Troubleshoot server-side synchronization
