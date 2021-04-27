@@ -398,6 +398,7 @@
           href: analytics-ui-flow.md
  #     - name: "Preview: Tenant-level analytics" 
  #       href: tenant-level-analytics.md
+ # Comment out the following section before publishing to live
       # - name: Analyze telemetry with Application Insights
       #   items:
       #   - name: Model-driven apps and Microsoft Dataverse telemetry
@@ -752,8 +753,8 @@
               href: create-forward-mailboxes-edit-mailboxes.md
             - name: Forward mailbox differences
               href: forward-mailbox-vs-individual-mailboxes.md 
-        #    - name: Send email on behalf of another user 
-        #      href: send-email-on-behalf.md
+            - name: Send email on behalf of another user 
+              href: send-email-on-behalf.md
         - name: Troubleshoot server-side synchronization
           items:
           - name: Troubleshoot server-side synchronization
