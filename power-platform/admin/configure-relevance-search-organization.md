@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/29/2021
+ms.date: 04/27/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -152,7 +152,7 @@ By default, some out-of-the-box system entities are included in Relevance Search
 
 3. Under **Components**, expand **Entities**, and then expand the entity you want.  
 
-4. In the navigation tree, click **View**. Double-click **Quick Find View**. The following illustration shows the **Quick Find** view for the `Account` entity.  
+4. In the navigation tree, click **View**. In the **Type** column, double-click **Quick Find View**. The following illustration shows the **Quick Find** view for the `Account` entity.  
 
    ![Quick Find view](../admin/media/relevance-search-quick-find-view-screen.png "Quick Find view")  
 
