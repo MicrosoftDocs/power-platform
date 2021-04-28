@@ -40,4 +40,4 @@ I agree to the above terms
 </div>
 
  > [!div class="button"]
- > [TODO: Download SVG icons]()
+ > [Download SVG icons](https://www.microsoft.com)
