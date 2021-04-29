@@ -23,7 +23,7 @@ After a release cycle has been made "generally available" to users, environments
 > [!TIP]
 > Check out [Dynamics 365 and Power Platform Release Plans](/dynamics365/release-plans/) to learn more about new features to be released in the release waves.   
 
-Throughout a release cycle, your environments are updated during one of the weekend [maintenance windows](policies-communications.md#maintenance-timeline). These windows are based on your environments' region. The specific dates when the updates occur are published to the [Message Center](/office365/admin/manage/message-center?view=o365-worldwide). 
+Throughout a release cycle, your environments are updated during one of the weekend [maintenance windows](policies-communications.md#maintenance-timeline). These windows are based on your environments' region. The specific dates when the updates occur are published to the [Message Center](/office365/admin/manage/message-center). 
 
 Each notification from the Message Center includes dates, the maintenance window, and the Release Plan reference. In addition, included is a list of optimizations, fixes, and enhancements. Each environment should see the new features and build numbers by Monday morning, local time. See [Policies and communications](policies-communications.md#scheduled-system-updates). 
 
