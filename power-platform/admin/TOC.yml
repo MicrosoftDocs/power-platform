@@ -719,12 +719,12 @@
             href: set-personal-options-affect-tracking-synchronization-between-dynamics-365-outlook-exchange.md
           - name: Configure incoming and outgoing email synchronization
             items: 
-          - name: Configure incoming and outgoing email synchronization
-            href: set-incoming-outgoing-email-synchronization.md
-          - name: Configure correlation settings for incoming email
-            href: email-message-filtering-correlation.md 
-          - name: Create queue items from incoming email
-            href: create-queue-items-from-synchronized-email-messages.md
+            - name: Configure incoming and outgoing email synchronization
+              href: set-incoming-outgoing-email-synchronization.md
+            - name: Configure correlation settings for incoming email
+              href: email-message-filtering-correlation.md 
+            - name: Create queue items from incoming email
+              href: create-queue-items-from-synchronized-email-messages.md
           - name: Configure appointment, contact, and task synchronization
             items: 
             - name: Configure appointment, contact, and task synchronization
