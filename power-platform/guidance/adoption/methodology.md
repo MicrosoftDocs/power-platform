@@ -30,7 +30,7 @@ Microsoft Power Platform adoption guidance includes a collection of documentatio
 
 This guidance aligns to the following buckets and responsibilities of your adoption.
 
-| | |
+|Icon |Description |
 |--|--|
 | ![Strategy icon](media/i_digital-art.png "Strategy icon") | [Strategy and vision](strategy-best-practices.md): Define roles, responsibilities, and expected outcomes of adoption. |
 ![Admin and governance icon](media/i_config-tools.png "Admin and governance icon") | [Admin and governance](admin-best-practices.md): Implement digital guardrails for your makers to create with confidence. |
