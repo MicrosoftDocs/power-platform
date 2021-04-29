@@ -399,18 +399,18 @@
  #     - name: "Preview: Tenant-level analytics" 
  #       href: tenant-level-analytics.md
  # Comment out the following section before publishing to live
-      - name: Analyze telemetry with Application Insights
-        items:
-        - name: Model-driven apps and Microsoft Dataverse telemetry
-          href: analyze-telemetry.md
-        - name: Overview of integration with Application Insights
-          href: overview-integration-application-insights.md
-        - name: Telemetry events for model-driven apps 
-          href: telemetry-events-model-driven-apps.md
-        - name: Telemetry events for Dataverse
-          href: telemetry-events-dataverse.md   
-        - name: Set up export to Application Insights
-          href: set-up-export-application-insights.md
+      # - name: Analyze telemetry with Application Insights
+      #   items:
+      #   - name: Model-driven apps and Microsoft Dataverse telemetry
+      #     href: analyze-telemetry.md
+      #   - name: Overview of integration with Application Insights
+      #     href: overview-integration-application-insights.md
+      #   - name: Telemetry events for model-driven apps 
+      #     href: telemetry-events-model-driven-apps.md
+      #   - name: Telemetry events for Dataverse
+      #     href: telemetry-events-dataverse.md   
+      #   - name: Set up export to Application Insights
+      #     href: set-up-export-application-insights.md
     - name: Storage
       items: 
       - name: What's new for storage
@@ -719,12 +719,12 @@
             href: set-personal-options-affect-tracking-synchronization-between-dynamics-365-outlook-exchange.md
           - name: Configure incoming and outgoing email synchronization
             items: 
-          - name: Configure incoming and outgoing email synchronization
-            href: set-incoming-outgoing-email-synchronization.md
-          - name: Configure correlation settings for incoming email
-            href: email-message-filtering-correlation.md 
-          - name: Create queue items from incoming email
-            href: create-queue-items-from-synchronized-email-messages.md
+            - name: Configure incoming and outgoing email synchronization
+              href: set-incoming-outgoing-email-synchronization.md
+            - name: Configure correlation settings for incoming email
+              href: email-message-filtering-correlation.md 
+            - name: Create queue items from incoming email
+              href: create-queue-items-from-synchronized-email-messages.md
           - name: Configure appointment, contact, and task synchronization
             items: 
             - name: Configure appointment, contact, and task synchronization
