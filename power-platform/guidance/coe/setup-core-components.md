@@ -138,8 +138,8 @@ Before you begin:
 1. When the compressed (.zip) file has been loaded, select **Next**.
 
 1. Establish connections to the
-    - Common Data Service
-    - Common Data Service (current environment)
+    - Microsoft Dataverse
+    - Microsoft Dataverse (current environment)
     - Power Apps for Admins
     - Power Apps for Makers
     - Power Platform for Admins
@@ -164,6 +164,7 @@ Before you begin:
     |Admin eMail                         | Email address used in flows to send notifications to admins; this should be either your email address or a distribution list |
     | Developer Compliance Center         | Leave this blank on import, and [update the environment variable](#update-environment-variables) after importing the [Governance components solution](setup-governance-components.md) by first navigating to the details page of the Developer Compliance Center (canvas app) included with this solution, and copy the web link (to launch the app) and paste it into this variable. This environment variable is not used until you adopt the Developer Compliance Center.  |
     | Approval Admin | Email address used in flows to send notifications regarding non compliant apps and flows to admins; this should be either your email address or a distribution list |
+    | Community URL | Link to your internal Microsoft Power Platform community (for example, Yammer or Teams) |
 
      ![Set environment variable values](media/coreteams-2.png "Set environment variable values.")
 
@@ -284,6 +285,6 @@ Environment variables are used to store application and flow configuration data 
     | Full Inventory | Determines if you want to only update objects that have changed, or all objects. Defaults to No. Switching to Yes will cause the flows to inventory every single app, flow, and bot. |
     | Power Platform Maker Office 365 Group | The Admin \| Welcome Email flow sends a welcome email to onboard new makers and adds them to an Office 365 group. You can use this group to send communications to your makers or invite them to a Yammer or Teams group. Configure the group ID here.|
    | Approval Admin | Email address used in flows to send notifications regarding non compliant apps and flows to admins; this should be either your email address or a distribution list |
+    | Community URL | Link to your internal Microsoft Power Platform community (for example, Yammer or Teams) |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
-
