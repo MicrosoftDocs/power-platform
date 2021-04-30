@@ -70,10 +70,6 @@ The Core Components solution is required for the Governance Components solution,
     ![Import the Center of Excellence - Governance components solution](media/msig-import.png "Import the Center of Excellence - Governance components solution")
 1. Update the Environment Variable values. Environment variables are used to store application and flow configuration data. This means that you only have to set the value once per environment and it will be used in all necessary flows and apps in that environment.
 
-    | Name | Current value |
-   |------|---------------|
-   | Approval Admin | Email address used in flows to send notifications regarding non compliant apps and flows to admins; this should be either your email address or a distribution list |
-
 1. Select **Import** without adding values to the Environment Variables, as we will update them later - see [update environment variables](#update-environment-variables)
 
 ## Update environment variables
@@ -90,10 +86,9 @@ All flows in this solution depend on all environment variables' being configured
    | Name | Current value |
    |------|---------------|
    | Auto Delete On Archive | Determines whether apps are deleted when they're archived in the following flow: Admin \| App Archive and Clean Up - Check Approvals and Archive. <br> Value must be Yes or No. A default value of No is provided. |
-   | Developer Compliance Center         | Navigate to the details page of the Developer Compliance Center (canvas app) included with this solution, and copy the web link (to launch the app) and paste it into this variable.  |
    | ProductionEnvironment | Determines if the environment is Production or Dev/Test. True (the default) will mean that the approvals are sent to app/flow owners. False will send those approvals to the admin email. |
    | Exclude Default environment from Compliance Request flows | Set to Yes if you want to Exclude the Default environment from the *Admin - Compliance Details* request flow. A default value of No is provided. |
-   | Approval Admin | Email address used in flows to send notifications regarding non compliant apps and flows to admins; this should be either your email address or a distribution list |
+   | Developer Compliance Center | Copy the URL of the Developer Compliance Center canvas app from the Details page |
 
 ## Activate the flows
 
@@ -103,9 +98,9 @@ This Governance Components solution contains flows that you'll need to manually 
 - Admin \| Archive and Clean Up v2 (Start Approval for Flows)
 - Admin \| Archive and Clean Up v2 (Check Approval)
 - Admin \| Archive and Clean Up v2 (Clean Up and Delete)
-- Admin \| Compliance detail request
 - Microsoft Teams Admin \| Ask for Business Justification when Microsoft Teams environment is created
 - Microsoft Teams Admin \| Weekly Clean Up of Microsoft Teams environments
+- Admin \| Compliance detail request (in Center of Excellence - Core Components)
 
 >[!IMPORTANT]
 > These flows will be turned off on solution import, and you can turn them on as soon as you're ready to use them. Only turn on the Weekly Clean Up of Microsoft Teams environments when you're ready to enforce the deletion of Teams environments.
