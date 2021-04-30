@@ -77,6 +77,7 @@ This is the first step of the installation process and is required for every oth
         - Office 365 Groups
         - SharePoint
         - Microsoft Teams
+        - HTTP with Azure AD: enter [https://graph.microsoft.com/](https://graph.microsoft.com/) as ase Resource URL and Azure AD Resource URI
 
 1. On the left pane, select **Solutions**.
 
@@ -101,6 +102,8 @@ This is the first step of the installation process and is required for every oth
     |Admin eMail                         | Email address used in flows to send notifications to admins; this should be either your email address or a distribution list |
     | Power Platform Maker Office 365 Group | The Admin \| Welcome Email flow sends a welcome email to onboard new makers and adds them to an Office 365 group. You can use this group to send communications to your makers or invite them to a Yammer or Teams group. Configure the group ID here.|
     | Approval Admin | Email address used in flows to send notifications regarding non compliant apps and flows to admins; this should be either your email address or a distribution list |
+    | Community URL | Link to your internal Microsoft Power Platform community (for example, Yammer or Teams).  |
+    | Developer Compliance Center         | Leave this blank on import, and [update the environment variable](#update-environment-variables) after importing the [Governance components solution](setup-governance-components.md) by first navigating to the details page of the Developer Compliance Center (canvas app) included with this solution, and copy the web link (to launch the app) and paste it into this variable. This environment variable is not used until you adopt the Developer Compliance Center.  |
 
      ![Update environment variable values](media/msi-envvar.png "Update environment variable values")
 
@@ -149,6 +152,8 @@ Before you begin:
     - Office 365 Outlook
     - Office 365 Groups
     - SharePoint
+    - Microsoft Teams
+    - HTTP with Azure AD: enter [https://graph.microsoft.com/](https://graph.microsoft.com/) as ase Resource URL and Azure AD Resource URI
 
     If you create a new connection, you must select **Refresh**. You won't lose your import progress.
 
@@ -177,15 +182,23 @@ The import can take up to 60 minutes to be completed.
 The flows with the prefix *Sync* are required for populating and cleaning up data in the Dataverse tables (Environment, Power Apps App, Flow, Flow Action Detail, Connector, and Maker). The sync flows are used to write or delete data from the admin connectors to the Dataverse tables. These flows run on a schedule.
 
 Note that the first run of these will be long running. See the [limitations information](limitations.md) for more details.
-We will avoid issues by enabling the flows in an explicit order. We recommend you repeat this order on each upgrade as well.
+
+We will more quickly resolve issues around dependencies between tables by enabling the flows in an explicit order. Enabling the flows in this order is not required, but it may cause errors or incorrect data during the first week until the inventory dependencies align.
 
 1) Turn on: CLEANUP - Admin \| Sync Template v3 (Check Deleted)
 1) Wait until it finishes before you turn on any other flows.
-1) Ensure the Sync Template flows are already turned on for the following object types:<br> Apps, Connectors, Custom Connectors, Flows, Model Driven Apps, PVA, RPA
-1) Turn on Admin \| Sync Template v3. When it completes, turn it back off.
-1) This will cause the flows for the objects listed in step 3 to run. Wait until all of these complete.
+1) Turn on: Admin | Sync Template V3 (Connectors)
+1) Wait until it finishes before you turn on any other flows.
+1) Turn on the Welcome mail flow: Admin | Welcome Email v3
+1) Turn on the Sync Template flows for the following object types: Apps, Custom Connectors, Desktop Flows, Flows, Model Driven Apps, and PVA
+1) Turn on Admin \| Sync Template v3.
+1) Wait for Admin \| Sync Template v3 to complete its run and then turn it back off. This will avoid write conflicts for large organizations.
+1) The above flow's run will cause the flows for the objects listed in step 6 to run. Wait until all of these complete.
 1) Turn back on Admin \| Sync Template v3.
 1) Turn on the rest of the flows listed in the solution
+
+>[!IMPORTANT]
+> Note that **Admin \| Compliance Detail Request v3** will not pass until you complete setup of the Governance component so you should leave it turned off until then.
 
 ## Configure the CoE Settings table
 
