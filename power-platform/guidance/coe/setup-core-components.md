@@ -58,27 +58,6 @@ This is the first step of the installation process and is required for every oth
 
      ![Power Apps maker portal environment selection](media/coe6.png "Power Apps maker portal environment selection")
 
-1. Create connections to all connectors used as part of the solution.
-    1. Go to **Data** > **Connections**.
-    1. Select **+ New Connection**.
-    1. Select **Dataverse**.
-     ![Select the Datavsere connector](media/msi-connection.png "Select the Dataverse connector")
-    1. Select **Create**.
-    1. Complete the same steps for the following connectors:
-        - Microsoft Dataverse
-        - Microsoft Dataverse (current environment)
-        - Power Apps for Admins
-        - Power Apps for Makers
-        - Power Platform for Admins
-        - Power Automate for Admins
-        - Power Automate Management
-        - Office 365 Users
-        - Office 365 Outlook
-        - Office 365 Groups
-        - SharePoint
-        - Microsoft Teams
-        - HTTP with Azure AD: enter [https://graph.microsoft.com/](https://graph.microsoft.com/) as ase Resource URL and Azure AD Resource URI
-
 1. On the left pane, select **Solutions**.
 
 1. Select **Import**, and then **Browse**.
@@ -92,18 +71,26 @@ This is the first step of the installation process and is required for every oth
 
      ![Establish connections to activate your solution](media/msi-import.png "Establish connections to activate your solution.")
 
+    When you create the connection for HTTP with Azure AD enter the following into the Base Resource URL and Azure AD Resource URI (Application ID URI): [https://graph.microsoft.com](https://graph.microsoft.com) 
+
+     ![Establish HTTP with Azure AD](media/httpazuread.png "Establish connections to activate your solution.")
+
+
 1. Update environment variable values. The environment variables are used to store application and flow configuration data with data specific to your organization or environment. This means that you only have to set the value once per environment and it will be used in all necessary flows and apps in that environment. All the flows in the solution depend on all environment variables' being configured.
 
     Configure the following variables for the core components solution, and then select **Save**. (If you need to change the value of an environment variable after you import the solution, go to [Update environment variables](#update-environment-variables).)
 
-    | Name | Current Value |
+    | Name | Description |
     |------|---------------|
-    |Power Automate environment variable | For a US environment: <https://us.flow.microsoft.com/manage/environments/> <br>For an EMEA environment: <https://emea.flow.microsoft.com/manage/environments/> <br>For a GCC environment: <https://gov.flow.microsoft.us/manage/environments/> |
-    |Admin eMail                         | Email address used in flows to send notifications to admins; this should be either your email address or a distribution list |
-    | Power Platform Maker Office 365 Group | The Admin \| Welcome Email flow sends a welcome email to onboard new makers and adds them to an Office 365 group. You can use this group to send communications to your makers or invite them to a Yammer or Teams group. Configure the group ID here.|
-    | Approval Admin | Email address used in flows to send notifications regarding non compliant apps and flows to admins; this should be either your email address or a distribution list |
-    | Community URL | Link to your internal Microsoft Power Platform community (for example, Yammer or Teams).  |
-    | Developer Compliance Center         | Leave this blank on import, and [update the environment variable](#update-environment-variables) after importing the [Governance components solution](setup-governance-components.md) by first navigating to the details page of the Developer Compliance Center (canvas app) included with this solution, and copy the web link (to launch the app) and paste it into this variable. This environment variable is not used until you adopt the Developer Compliance Center.  |
+    |Also Delete from CoE | Recommend Yes here to delete objects from the CoE inventory when they are deleted from the tenant. No will keep a record that an app or flow existed in the past |
+    |Approval Admin | Email address used in flows to send approvals to admins; this cannot be a distribution list |
+    | Power Platform Maker Microsoft 365 Group | The Admin \| Welcome Email flow sends a welcome email to onboard new makers and adds them to a Microsoft 365 group. You can use this group to send communications to your makers or invite them to a Yammer or Teams group. Configure the group ID here.|
+    |Power Automate environment variable | The URL used by flow for your region. Here are examples:<br> For a US environment: <https://us.flow.microsoft.com/manage/environments/> <br> For a Canadian environment: <https://canada.flow.microsoft.com/manage/environments/> <br>For an EMEA environment: <https://emea.flow.microsoft.com/manage/environments/> <br>For a GCC environment: <https://gov.flow.microsoft.us/manage/environments/> |
+    |Admin eMail |Admin eMailed with this solution, and copy the web link (to launch the app) and paste it into this variable. This environment variable is not used until you adopt the Developer Compliance Center.  |
+    | Developer Compliance Center         | Navigate to the details page of the Developer Compliance Center (canvas app) included with this solution, and copy the web link (to launch the app) and paste it into this variable.  |
+    | Community URL         | Link to your internal Microsoft Power Platform community (for example, Yammer or Teams).  |
+
+<br>
 
      ![Update environment variable values](media/msi-envvar.png "Update environment variable values")
 
@@ -140,7 +127,8 @@ Before you begin:
 
 1. When the compressed (.zip) file has been loaded, select **Next**.
 
-1. Establish connections to the
+1. Establish connections to the required connectors including:
+
     - Microsoft Dataverse
     - Microsoft Dataverse (current environment)
     - Power Apps for Admins
@@ -163,13 +151,15 @@ Before you begin:
 
     Configure the following variables for the core components solution, and then select **Save**. (If you need to change the value of an environment variable after you import the solution, go to [Update environment variables](#update-environment-variables).)
 
-    | Name | Current Value |
+    | Name | Description |
     |------|---------------|
-    |Power Automate environment variable | For a US environment: <https://us.flow.microsoft.com/manage/environments/> <br>For an EMEA environment: <https://emea.flow.microsoft.com/manage/environments/> <br>For a GCC environment: <https://gov.flow.microsoft.us/manage/environments/> |
-    |Admin eMail                         | Email address used in flows to send notifications to admins; this should be either your email address or a distribution list |
-    | Developer Compliance Center         | Leave this blank on import, and [update the environment variable](#update-environment-variables) after importing the [Governance components solution](setup-governance-components.md) by first navigating to the details page of the Developer Compliance Center (canvas app) included with this solution, and copy the web link (to launch the app) and paste it into this variable. This environment variable is not used until you adopt the Developer Compliance Center.  |
-    | Approval Admin | Email address used in flows to send notifications regarding non compliant apps and flows to admins; this should be either your email address or a distribution list |
-    | Community URL | Link to your internal Microsoft Power Platform community (for example, Yammer or Teams) |
+    |Also Delete from CoE | Recommend Yes here to delete objects from the CoE inventory when they are deleted from the tenant. No will keep a record that an app or flow existed in the past |
+    |Approval Admin | Email address used in flows to send approvals to admins; this cannot be a distribution list |
+    | Power Platform Maker Microsoft 365 Group | The Admin \| Welcome Email flow sends a welcome email to onboard new makers and adds them to a Microsoft 365 group. You can use this group to send communications to your makers or invite them to a Yammer or Teams group. Configure the group ID here.|
+    |Power Automate environment variable | The URL used by flow for your region. Here are examples:<br> For a US environment: <https://us.flow.microsoft.com/manage/environments/> <br> For a Canadian environment: <https://canada.flow.microsoft.com/manage/environments/> <br>For an EMEA environment: <https://emea.flow.microsoft.com/manage/environments/> <br>For a GCC environment: <https://gov.flow.microsoft.us/manage/environments/> |
+    |Admin eMail |Admin eMailed with this solution, and copy the web link (to launch the app) and paste it into this variable. This environment variable is not used until you adopt the Developer Compliance Center.  |
+    | Developer Compliance Center         | Navigate to the details page of the Developer Compliance Center (canvas app) included with this solution, and copy the web link (to launch the app) and paste it into this variable.  |
+    | Community URL         | Link to your internal Microsoft Power Platform community (for example, Yammer or Teams).  |
 
      ![Set environment variable values](media/coreteams-2.png "Set environment variable values.")
 
