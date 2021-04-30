@@ -6,7 +6,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 04/05/2021
+ms.date: 04/29/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -147,6 +147,7 @@ To perform the administration operations in the admin cmdlets, you'll need the f
 | Read and delete a user's Power Automate settings, which are not visible to user, but that support flow execution | Get-AdminFlowUserDetails <br> Remove-AdminFlowUserDetails |
 | Create, read, update and delete data loss prevention policies for your organization using a three-way classification - **Business**, **Non-Business**, and **Blocked**  |  Get-DlpPolicy *(previously Get-AdminDlpPolicy)* <br> New-DlpPolicy *(previously Add-AdminDlpPolicy)* <br>  Remove-DlpPolicy *(previously Remove-AdminDlpPolicy)* <br> Set-DlpPolicy *(previously Set-AdminDlpPolicy)*<br> <br> Learn more about the [Microsoft Power Platform data loss prevention (DLP) SDK](data-loss-prevention-sdk.md). |
 | Read, add, update, and remove data loss prevention tenant settings | Get-PowerAppDlpErrorSettings<br />New-PowerAppDlpErrorSettings<br />Remove-PowerAppDlpErrorSettings<br />Set-PowerAppDlpErrorSettings |
+| Read, add, update, and remove exempt resources for DLP policies    | Get-PowerAppDlpPolicyExemptResources<br />New-PowerAppDlpPolicyExemptResources<br />Set-PowerAppDlpPolicyExemptResources<br />Remove-PowerAppDlpPolicyExemptResources    |
 | Read, add, remove, and update tenant settings | Get-TenantSettings<br />Set-TenantSettings<br /> Get-PowerAppTenantUrlPatterns <br />New-PowerAppTenantUrlPatterns <br /> Remove-PowerAppTenantUrlPatterns <br />Get-AdminPowerAppTenantConsumedQuota|
 | Read, add, and remove allowed consent/trial plans within the tenant | Remove-AllowedConsentPlans <br>Add-AllowedConsentPlans<br /> Get-AllowedConsentPlans |
 | Read tenant assigned user licenses | Get-AdminPowerAppLicenses |
