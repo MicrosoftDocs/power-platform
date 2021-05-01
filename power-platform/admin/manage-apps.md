@@ -129,6 +129,9 @@ If it's necessary to [contact Support](support-overview.md), be sure to provide 
 > [!div class="mx-imgBorder"] 
 > ![Error details](media/app-management-error-details.png "Error details")
 
+## Delete an app
+For information on how to delete an app, see [Delete a model-driven app](/powerapps/maker/model-driven-apps/delete-model-driven-app). 
+
 ## FAQ
 
 ### Don't see your environment?
