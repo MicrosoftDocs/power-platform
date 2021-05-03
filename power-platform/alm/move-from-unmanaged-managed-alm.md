@@ -45,7 +45,7 @@ Larger, more complex projects require these tasks:
       - Tables with no new records created within in last 18 months.
       - Tables and components that have no dependencies. More information: [View dependencies for a component](/powerapps/maker/data-platform/view-component-dependencies)
       - Components, such as forms, views, and charts, that are associated with deleted or unused tables and don't have any data.
-   - Be aware that some [System tables that don’t support unmanaged layers](#system-tables-that-dont-support-unmanaged-layers).
+   - Be aware that some [System tables don’t support unmanaged layers](#system-tables-that-dont-support-unmanaged-layers).
    - Be aware that there are a few system tables that can lead to issues when you customize them and later import them as managed. More information: [Customization for deeply integrated system tables](#customization-for-deeply-integrated-system-tables)
 
 4. Copy your development environment to the sandbox environment.
@@ -64,11 +64,11 @@ Larger, more complex projects require these tasks:
 
 6. Test the managed solution.
    - The test environment should be as similar to the production environment as possible.
-   - If there's any app downtime during the unmanaged to managed conversion from the development environment to the test environment, make a note of it. This helps you determine how much time to a lot for when deploying to production: 
+   - If there's any app downtime during the unmanaged to managed conversion from the development environment to the test environment, make a note of it. This helps you determine how much time to a lot for when deploying to production:
       - App that's imported.
       - Other apps affected by the conversion.
       - Portals affected by the conversion.
-   - Integration scheduling
+   - Integration scheduling:
       - Schedule outside of unmanaged to managed conversion window.
       - Schedule outside hours for regular deployments as well.
 
@@ -106,7 +106,7 @@ If customized in unmanaged solutions, the managed component must be deleted for 
 
 ### Customization for deeply integrated system tables
 
-Some system tables have many relationships and dependencies with other tables that makes them difficult to import to other environments.
+Some system tables have many relationships and dependencies with other tables that makes them difficult to import to other environments:
 - User.
 - Contact. Similar to system user for Power Apps but can cause complication when you import  Portals apps.
 
