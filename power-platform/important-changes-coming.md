@@ -17,21 +17,21 @@ manager: annbe
 Important changes (deprecations) coming in Power Apps, Power Automate, and customer engagement apps
 ============================================================
 
-The announcements and deprecations described in this article apply to Power Apps, Power Automate, and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Marketing, Dynamics 365 Field Service, and Dynamics 365 Project Service Automation).
+The announcements and deprecations described in this article apply to Power Apps, Power Automate, and customer engagement apps. Engagement apps include Dynamics 365 Sales, Dynamics 365 Marketing, Dynamics 365 Field Service, and Dynamics 365 Project Service Automation.
 
-Administrators and IT professionals should use this information to prepare for future releases. This article was first published on June 27, 2017.
+Admins and IT professionals can use this information to prepare for future releases. This article was first published on June 27, 2017.
 
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future major release. The feature or capability will continue to work and is fully supported until it is officially removed. This deprecation
-notification can span a few months or years. After removal, the feature or capability will no longer work. We are notifying you now so you have sufficient time to plan and update your code before the feature or capability is removed.
+notification can span a few months or years. After removal, the feature or capability no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
 
 ## Skype integration with customer engagement apps is deprecated
 
-Effective July 2019, Skype integration feature with customer engagement apps has been deprecated and will no longer be supported after July 31 2021. This is because Skype will be retired on July 31, 2021; more information: [Skype for Business Online retirement - Microsoft Teams](https://docs.microsoft.com/microsoftteams/skype-for-business-online-retirement)
+Effective July 2019, Skype integration feature with customer engagement apps has been deprecated and is no longer supported after July 31, 2021. Skype is retired on July 31, 2021; more information: [Skype for Business Online retirement - Microsoft Teams](https://docs.microsoft.com/microsoftteams/skype-for-business-online-retirement)
 
-The presence indication backed by Skype for Business will cease to function. This includes presence indication in hover cards, lookup fields, and lookup columns in grids. There are currently plans to support these locations via Teams. In the meantime, presence indication can be found in Live Person Cards.
+The presence indication backed by Skype for Business will no longer function. This deprication includes presence indication in hover cards, lookup fields, and lookup columns in grids. There are currently plans to support these locations via Teams. In the meantime, presence indication can be found in Live Person Cards.
 
-You should plan to transition to Microsoft Teams because the Team’s capabilities go beyond those of Skype for Business Online, and is the next chapter in enterprise communication solution from Microsoft. For more details about Teams capabilities and how it’s better than Skype, see [The Total Economic Impact™ of Microsoft Teams](https://www.microsoft.com/microsoft-365/blog/wp-content/uploads/sites/2/2019/04/Total-Economic-Impact-Microsoft-Teams.pdf?rtc=1).
+You should plan to transition to Microsoft Teams, because the Team’s capabilities go beyond those of Skype for Business Online. Teams is the next chapter in enterprise communication solution from Microsoft. For more details about Teams capabilities, see [The Total Economic Impact™ of Microsoft Teams](https://www.microsoft.com/microsoft-365/blog/wp-content/uploads/sites/2/2019/04/Total-Economic-Impact-Microsoft-Teams.pdf?rtc=1).
 
 
 ## Low-density headers in model-driven apps won't be supported with the 2021 release wave 2
@@ -41,19 +41,19 @@ With the upcoming 2021 release wave 2 (public preview in August 2021 and GA in O
 #### Why is this needed?
 
 - Makers have moved away from low-density headers and usage is low. 
-- Low-density headers don't promote a highly dense experience and require users to always use the flyout for all controls across view-port sizes (small to very-wide) 
+- Low-density headers don't promote a highly dense experience and require users to always use the flyout for all controls across view-port sizes from small to very-wide.
 
 #### Impact
-Any current form that is configured to be “low-density” will be automatically updated to render in a [high-density with flyout](/powerapps/maker/model-driven-apps/form-designer-header-properties#high-density-header-flyout) mode in a model driven app. Here is an example of high-density header with flyout:
+Any current form that is configured to be “low-density” is automatically updated to render in a [high-density with flyout](https://docs.microsoft.com/powerapps/maker/model-driven-apps/form-designer-header-properties) mode in a model driven app. Below is an example of high-density header with flyout:
 
 > [!div class="mx-imgBorder"] 
 > ![Header flyout with high-density header](media/form-header-flyout-high-density.png "Header flyout with high-density header")
 
 #### Action required by you
 
-To meet the October 2021 deadline, you will need to update any of your forms from a low-density format to a high-density with flyout mode using the modern form designer. More information: [Configure header density](/powerapps/maker/model-driven-apps/form-designer-header-properties#configuring-header-density). 
+To meet the October 2021 deadline, be sure you update any of your forms from a low-density format to a high-density with flyout mode using the modern form designer. More information: [Configure header density](https://docs.microsoft.com/powerapps/maker/model-driven-apps/form-designer-header-properties). 
 
-If you don't make this change, the form will no longer honor this setting at runtime, and will default to high-density with flyout.
+If you don't make this change, the form no longer honors this setting at runtime. It also defaults to high-density with flyout.
 
 
 ## Form footers in model-driven app won't be supported with the 2021 release wave 2
@@ -62,7 +62,7 @@ With the upcoming 2021 release wave 2 (public preview in August 2021 and GA in O
 
 #### Why is this needed? 
 
-- The footer does not meet the Microsoft [Web Content Accessibility Guidelines (WCAG) 2.0](/compliance/regulatory/offering-WCAG-2-1) compliance for accessibility. 
+- The footer does not meet the Microsoft [Web Content Accessibility Guidelines (WCAG) 2.0](https://docs.microsoft.com/azure/compliance/offerings/offering-wcag) compliance for accessibility. 
 - Data density is highly impacted by the form footer and does not support a good customer experience. Controls are not discoverable and lead to many customer usability issues. 
 - Makers have moved away from adding controls into the footer and there is low usage of other controls, out of box or custom, in the current form footer experiences. 
 - Components created using Power Apps component framework aren't fully compatible with form footers, which cause usability issues when added to a form footer. 
@@ -70,15 +70,15 @@ With the upcoming 2021 release wave 2 (public preview in August 2021 and GA in O
 
 #### Impact
 
-Main forms will no longer include the footer when a record is opened. Any out of box or custom controls that have been added to the form footer will no longer be available and you'll need to remove the fields if they are no longer necessary or move the fields to the header and use the [high-density header with flyout](/powerapps/maker/model-driven-apps/form-designer-header-properties#high-density-header-flyout) or add them onto the main form. The recommended approach is to move fields that users need to access regardless of the form tab a user is on to the header and set it to use the [high-density header with flyout](/powerapps/maker/model-driven-apps/form-designer-header-properties#high-density-header-flyout).  If there is only one tab, the recommendation is to move them into a new section on the form. 
+Main forms will no longer include the footer when a record is opened. Any out of box or custom controls that have been added to the form footer will no longer be available and you'll need to remove the fields if they are no longer necessary or move the fields to the header and use the high-density header with flyout or add them onto the main form. The recommended approach is to move fields that users need to access regardless of the form tab a user is on to the header and set it to use the high-density header with flyout. If there is only one tab, the recommendation is to move them into a new section on the form. 
 
 #### Action required by you
-- To meet the October 2021 deadline, you will need to move fields or controls added to a form footer to either the header or a section on the form.
-- If you do nothing, the footer fields or controls that you have added will no longer render on the form and will not be available to your users. 
+- To meet the October 2021 deadline, be sure you move fields or controls added to a form footer to either the header or a section on the form.
+- If you do nothing, the footer fields or controls that you have added no longer render on the form and aren't available to users. 
 
-The out of box fields currently on the footer will be removed and included on the form as part of the 2021 release wave 2 updates. So, you will not lose status, unsaved changes or the option to open a form in a new window. The **Save** option is already available in the command bar and is always visible to the user. 
+The out of box fields currently on the footer is removed and included on the form as part of the 2021 release wave 2 updates. So, you don't lose status, unsaved changes, or the option to open a form in a new window. The **Save** option is already available in the command bar and is always visible to the user. 
 
-While we understand that these types of changes can be disruptive for makers that use the footer today, we always evaluate the experiences to ensure they provide a modern experience that improves usability, support accessibility requirements, and improves discoverability for highly used fields and controls on a page.
+While we understand that these types of changes can be disruptive for makers that use the footer today, we always evaluate the experiences. We do this to ensure they provide a modern experience that improves usability, support accessibility requirements, and improves discoverability for highly used fields and controls on a page.
 
 ## Model-driven app controls deprecation
 
@@ -103,14 +103,16 @@ We will not make other changes to forms or controls.  Makers are encouraged to m
 - Evaluate other deprecated controls to determine if they're still useful within existing forms.
 
 ## Microsoft Dynamics 365 Email Router is deprecated
-The Microsoft Dynamics 365 Email Router will no longer function on April 21, 2021. For information on migrating email routing functionality to use the server-side synchronization feature, see: [Migrate settings from the Email Router to server-side synchronization](/previous-versions/dynamicscrm-2016/administering-dynamics-365/dn832114(v=crm.8)).
+The Microsoft Dynamics 365 Email Router will no longer function on April 21, 2021. For information on migrating email routing functionality to use the server-side synchronization feature, see: [Migrate settings from the Email Router to server-side synchronization](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/admin/migrate-settings-email-router-server-side-synchronization).
 
 
 ## The Microsoft Dynamics 365 application for Windows is deprecated
 
-Effective April 2021, the [Microsoft Dynamics 365 app for Windows](https://go.microsoft.com/fwlink/?linkid=838618) that lets you run customer engagement apps (such as Dynamics 365 Sales, Dynamics 365 Customer Service, and Dynamics 365 Marketing) is deprecated. Microsoft will continue to provide security and other critical updates for the [Microsoft Dynamics 365 app for Windows](https://go.microsoft.com/fwlink/?linkid=838618) until January 29, 2021, but will not release any another features or functionalities for the app. After April 1, 2021, the app will be removed from the Microsoft Store, and it will not be supported. 
+Effective April 2021, the [Microsoft Dynamics 365 app for Windows](https://go.microsoft.com/fwlink/?linkid=838618) that lets you run customer engagement apps (such as Dynamics 365 Sales, Dynamics 365 Customer Service, and Dynamics 365 Marketing) has been deprecated. 
+
+Microsoft continues to provide security and other critical updates for the Microsoft Dynamics 365 app for Windows until January 29, 2021. We won't release any other features or functionalities for the app. After April 1, 2021, the app is removed from the Microsoft Store, and is no longer supported. 
  
-We recommend that you start using your web browser as soon as possible to run your customer engagement apps (such as Dynamics 365 Sales, Dynamics 365 Customer Service, and Dynamics 365 Marketing) on Windows to take advantage of the ongoing improvements for the web app.
+We recommend that you start using your web browser as soon as possible to run your customer engagement apps, such as Dynamics 365 Sales, Dynamics 365 Customer Service, and Dynamics 365 Marketing. Run them on Windows to take advantage of the ongoing improvements for the web app.
 
 ## Internet Explorer 11 support for Dynamics 365 and Microsoft Power Platform is deprecated
 
@@ -122,7 +124,7 @@ If you have more questions, contact your Microsoft Customer Service representati
 
 ## Organization data download filters for mobile offline are deprecated 
 
-Effective February 2021, **Organization data download filter** option that filters the data when you set up mobile offline are deprecated. We recommend that you start preparing your organization and move relevant data filters from **Organization data download filter** to the offline profile option, which lets you determine what data will be available when users work in offline mode. For more information, see [Create a mobile offline profile](/dynamics365/mobile-app/preview-setup-mobile-offline#step-2-create-a-mobile-offline-profile-to-determine-what-data-will-be-available-while-offline). Once the old filter criteria has been moved to offline profile, you can clear or delete the filters set in **Organization data download filter**. 
+Effective February 2021, **Organization data download filter** option that filters the data when you set up mobile offline are deprecated. We recommend that you start preparing your organization and move relevant data filters from **Organization data download filter** to the offline profile option, which lets you determine what data is available when users work in offline mode. For more information, see [Create a mobile offline synchronization](https://docs.microsoft.com/dynamics365/mobile-app/setup-mobile-offline). Once the old filter criteria has been moved to offline profile, you can clear or delete the filters set in **Organization data download filter**. 
 
 ## TLS RSA cipher suites are deprecated
 
@@ -136,7 +138,7 @@ Cipher suites are used to encrypt messages to secure a network connection betwee
 
 Beginning March 1, 2021, customers can only use our [standard cipher suites](/power-platform/admin/server-cipher-tls-requirements). This change impacts your clients and servers that communicate with our servers, for example, syncing emails from your Microsoft Exchange server, running outbound plug-ins, using native (local) clients to access our servers.
 
-Customers must upgrade their servers before March 1, 2021.  For more information about configuring TLS Cipher Suite order, see [Manage Transport Layer Security (TLS)](/windows-server/security/tls/manage-tls).
+Customers must upgrade their servers before March 1, 2021.  For more information about configuring TLS Cipher Suite order, see [Manage Transport Layer Security (TLS)](https://docs.microsoft.com/windows-server/security/tls/manage-tls).
 
 ## Document suggestions for all entities except case are deprecated
 
@@ -144,43 +146,43 @@ Effective October 20, 2020, the document suggestions feature has been deprecated
 
 ## Automatic record creation rules and SLA items in web client are deprecated
 
-Effective October 01, 2020, the automatic record creation and update rules and service-level agreements (SLAs) have been deprecated in the web client. For more information, see [Deprecations in Customer Service](/dynamics365/customer-service/deprecations-customer-service).
+Effective October 01, 2020, the automatic record creation and update rules and service-level agreements (SLAs) have been deprecated in the web client. For more information, see [Deprecations in Customer Service](https://docs.microsoft.com/dynamics365/customer-service/deprecations-customer-service).
 
 ## TimeZoneRule entity and some attributes of TimeZoneDefinition entity are deprecated
 
-Effective September 24, 2020, the **TimeZoneRule** entity and the **Bias** and **RetiredOrder** attributes of the **TimeZoneDefinition** entity are deprecated and will be removed in a future release. For all client-side time zone calculations, use the [LocalTimeFromUtcTime](/dynamics365/customer-engagement/web-api/localtimefromutctime) and [UtcTimeFromLocalTime](/dynamics365/customer-engagement/web-api/utctimefromlocaltime) functions in Web API or the [TimeZoneInfo](/dotnet/api/system.timezoneinfo) class in the .NET framework. More information: [Blog: Deprecation of time zone entities in Microsoft Dataverse](https://powerapps.microsoft.com/blog/deprecation-of-time-zone-entities-in-common-data-service/) 
+Effective September 24, 2020, the **TimeZoneRule** entity and the **Bias** and **RetiredOrder** attributes of the **TimeZoneDefinition** entity are deprecated and will be removed in a future release. For all client-side time zone calculations, use the [LocalTimeFromUtcTime](https://docs.microsoft.com/dynamics365/customer-engagement/web-api/localtimefromutctime) and [UtcTimeFromLocalTime](https://docs.microsoft.com/dynamics365/customer-engagement/web-api/utctimefromlocaltime) functions in Web API or the [TimeZoneInfo](https://docs.microsoft.com/dotnet/api/system.timezoneinfo) class in the .NET framework. More information: [Blog: Deprecation of time zone entities in Microsoft Dataverse](https://powerapps.microsoft.com/blog/deprecation-of-time-zone-entities-in-common-data-service/) 
 
 
 ## Online management API PowerShell module and REST API are deprecated
 
-Effective August 26, 2020, the online management API PowerShell module, and the underlying [Online Management REST API](/powerapps/developer/common-data-service/online-management-api/overview) are  deprecated. The [online management API PowerShell module](/powershell/powerapps/get-started-onlinemanagementapi?view=pa-ps-latest) will be updated in October, 2020 to point to newer underlying APIs and won’t receive further updates. We recommend that you use the Power Apps administration module. More information: [Get started using the Power Apps admin module](/powershell/powerapps/get-started-powerapps-admin?view=pa-ps-latest)
+Effective August 26, 2020, the online management API PowerShell module, and the underlying [Online Management REST API](https://docs.microsoft.com/powerapps/developer/data-platform/online-management-api/overview) are  deprecated. The [online management API PowerShell module](https://docs.microsoft.com/powershell/powerapps/get-started-onlinemanagementapi), updated in October, 2020 to point to newer underlying APIs and won’t receive further updates. We recommend that you use the Power Apps administration module. More information: [Get started using the Power Apps admin module](https://docs.microsoft.com/powershell/powerapps/get-started-powerapps-admin).
 
 ## Company News Timeline solution is deprecated
 
-Effective July 10, 2020, the [Company News Timeline](/dynamics365/company-news-timeline/get-company-news-timeline-dynamics-365-phones-tablets) solution, which delivers relevant news from Bing News about customers and categorizes it in inline when you're looking at customer accounts will be deprecated. Until September 10, 2020, Microsoft will continue to provide support for the feature, but won't release any other functionality beyond what is already present. Starting September 10, 2020, you will need to uninstall the solution, which will remove the news widget from the Account record pages. 
+Effective July 10, 2020, the [Company News Timeline](https://docs.microsoft.com/dynamics365/mobile-app/get-company-news-timeline-dynamics-365-phones-tab) solution, which delivers relevant news from Bing News about customers and categorizes it in inline when you're looking at customer accounts will be deprecated. Until September 10, 2020, Microsoft will continue to provide support for the feature, but won't release any other functionality beyond what is already present. Starting September 10, 2020, you will need to uninstall the solution, which will remove the news widget from the Account record pages. 
 
 1. To remove the solution, go to **Advanced settings** and select **Solutions**. 
 2. Select **CompanyNewsTimeline** and then select **Delete**. 
 
-As an alternative you can install news Power Apps component framework control. For more information, see [Set up and use the news control](/powerapps/maker/model-driven-apps/stay-current-with-news-control).
+As an alternative you can install news Power Apps component framework control. For more information, see [Set up and use the news control](https://docs.microsoft.com/powerapps/maker/model-driven-apps/stay-current-with-news-control).
 
 ## Dynamic 365 Sales bot is deprecated
 ----------------------------------------
-Effective June 2, 2020, the Dynamics 365 Sales bot, a feature that enables users to retrieve sales information through a bot within Dynamics 365 Sales app for Teams will be deprecated. Until July 31, 2020, Microsoft will continue to provide support for the feature, but won't release any additional functionality beyond what is already present.  After July 31, 2020, you will no longer be able to receive responses to conversations. The bot won’t be available for new customers; existing customers may still be able to access the bot from the Chat, however the bot will not respond to questions.
+Effective June 2, 2020, the [Dynamics 365 Sales bot](https://docs.microsoft.com/dynamics365/sales-enterprise/deprecations-sales), a feature that enables users to retrieve sales information through a bot within Dynamics 365 Sales app for Teams will be deprecated. Until July 31, 2020, Microsoft will continue to provide support for the feature, but won't release any additional functionality beyond what is already present.  After July 31, 2020, you will no longer be able to receive responses to conversations. The bot won’t be available for new customers; existing customers may still be able to access the bot from the Chat, however the bot will not respond to questions.
 
 It is our goal to deliver a powerful bot experience that allows users to retrieve and manage information. Based on usage data and feedback from our customers, we will be working on a powerful, extensible set of capabilities and features that will allow you to intuitively access and interact with sales information—among other entities—through a bot interface. We will keep you updated on timing for when this will be available.
 
 ## Dynamics 365 Connector is deprecated
 
-Effective May 5, 2020 the [Dynamics 365 connector](/connectors/dynamicscrmonline/) used for Flows, Logic Apps, and Canvas Apps is officially deprecated. We recommend that you do not create new connections using this connector.
+Effective May 5, 2020 the [Dynamics 365 connector](https://docs.microsoft.com/connectors/dynamicscrmonline/) used for Flows, Logic Apps, and Canvas Apps is officially deprecated. We recommend that you do not create new connections using this connector.
 
-Rather than use the Dynamics 365 connector, the [Common Data Service (Current Environment) connector](/connectors/commondataserviceforapps/) should be your first choice *if you can use it*. You may not be able to use the Common Data Service (Current Environment) connector in every situation today because of the following limitations:
+Rather than use the Dynamics 365 connector, the [Common Data Service (Current Environment) connector](https://docs.microsoft.com/power-automate/connection-cds-native) should be your first choice *if you can use it*. You may not be able to use the Common Data Service (Current Environment) connector in every situation today because of the following limitations:
 
 - It is not available in Logic Apps.
 - It does not enable cross-tenant or cross environment connections. 
 - It cannot be used for canvas apps that use the [Power Apps for Windows client](https://www.microsoft.com/p/power-apps/9nblggh5z8f3).
 
-If you cannot use the Common Data Service (Current Environment) connector, you should use the [Common Data Service connector](/connectors/commondataservice/). This connector has all the capabilities of the Dynamics 365 connector, and includes several improvements that increase reliability.
+If you cannot use the Common Data Service (Current Environment) connector, you should use the [Common Data Service connector](https://docs.microsoft.com/connectors/commondataserviceforapps). This connector has all the capabilities of the Dynamics 365 connector, and includes several improvements that increase reliability.
 
 The Common Data Service (Current Environment) connector represents the future for connections using Dataverse. This includes Dynamics 365 apps using Dataverse. Work is underway to make this connector the only connector you will need. But at the current time, the previously mentioned limitations mean that you can't use it in all places where the Dynamics 365 connector or Common Data Service connector can be used today.
 
@@ -190,7 +192,7 @@ At this time, there is no requirement to convert canvas apps, flows, or logic ap
 |---------|---------|
 |Flows|If you can convert existing flows to use the Common Data Service (Current Environment) connector, we recommend you do so.|
 |Logic Apps|We recommend you stop creating new connections using the Dynamics 365 connector and use the Common Data Service Connector instead.|
-|Canvas Apps|Canvas apps created after November 2019 should not have used the connector infrastructure by default. These apps should automatically connect to the Common Data Service instance within the same environment. <br /><br />If you have a canvas app that used the  Dynamics 365 connector, find information about how to convert them here: [Converting canvas apps with the Dynamics 365 connector](/powerapps/maker/canvas-apps/use-native-cds-connector#converting-canvas-apps-with-the-dynamics-365-connector).|
+|Canvas Apps|Canvas apps created after November 2019 should not have used the connector infrastructure by default. These apps should automatically connect to the Common Data Service instance within the same environment. <br /><br />If you have a canvas app that used the  Dynamics 365 connector, find information about how to convert them here: [Converting canvas apps with the Dynamics 365 connector](https://docs.microsoft.com/powerapps/maker/canvas-apps/use-native-cds-connector).|
 
 ### Forward looking guidance
 
@@ -211,9 +213,9 @@ After April 24, 2020, customers are encouraged to transition to the new model ve
 ## Dynamic 365 for Outlook is deprecated
 ----------------------------------------
 
-Effective March 2020, the legacy Dynamics 365 for Outlook (also referred to as Outlook COM add-in) is deprecated. Customers must transition to the modern [Dynamics 365 App for Outlook](/dynamics365/outlook-app/overview) before October 1, 2020. Microsoft will continue to provide support, security, and other critical updates to the Outlook COM Add-in until October 1, 2020.
+Effective March 2020, the legacy Dynamics 365 for Outlook (also referred to as Outlook COM add-in) is deprecated. Customers must transition to the modern [Dynamics 365 App for Outlook](https://appsource.microsoft.com/product/dynamics-365/mscrm.fa50aa98-e8bb-4757-83ce-6d607959b985) before October 1, 2020. Microsoft will continue to provide support, security, and other critical updates to the Outlook COM Add-in until October 1, 2020.
 
-For further information and steps to make a smooth transition, download [Dynamics 365 for Outlook (COM add-in) Playbook](https://aka.ms/OutlookCOMPlaybook)
+For further information and steps to make a smooth transition, download [Dynamics 365 for Outlook (COM add-in) Playbook](https://docs.microsoft.com/dynamics365/outlook-addin/user-guide/dynamics-365-outlook-user-s-guide)
 
 ## Dynamics 365 Home is deprecated 
 ------------------------------------------------------
@@ -234,8 +236,8 @@ Beginning March 5, 2020, customers will need to recreate their existing form pro
 After March 5, 2020, customers are encouraged to transition to the new model versions as soon as possible.
 
 More information: 
-- [Transition to use a new form processing model version](/ai-builder/form-processing-transition)
-- [Transition to use a new object detection model version](/ai-builder/object-detection-transition)
+- [Transition to use a new form processing model version](https://docs.microsoft.com/ai-builder/form-processing-transition)
+- [Transition to use a new object detection model version](https://docs.microsoft.com/ai-builder/object-detection-transition)
 
 Old Dataverse environment URL redirector service is deprecated
 -------------------------------------------------------------------------
@@ -251,9 +253,9 @@ Deprecation of Office365 authentication type and OrganizationServiceProxy class 
 Effective February 4, 2020, the **WS-Trust** authentication type that is used by
 custom clients to connect to Dataverse is deprecated. This change
 affects applications that utilize
-[Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy](/dotnet/api/microsoft.xrm.sdk.client.organizationserviceproxy)
+[Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.client.organizationserviceproxy)
 and
-[Microsoft.Xrm.Tooling.Connector.CrmServiceClient](/dotnet/api/microsoft.xrm.tooling.connector.crmserviceclient)
+[Microsoft.Xrm.Tooling.Connector.CrmServiceClient](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.client.organizationserviceproxy.sdkclientversion)
 classes for the authentication type of "Office365".
 
 We are making this change to remove a security protocol (WS-Trust) that is
@@ -283,19 +285,19 @@ To allow for transition of customers and partner applications:
 
 <sup>1</sup>The retirement of new environments starts April 1st, 2021 and rolls out gradually in all regions within a 6-week window.
 
-More information: [Use of Office365 authentication with the WS-Trust security protocol](/powerapps/developer/common-data-service/authenticate-office365-deprecation)
+More information: [Use of Office365 authentication with the WS-Trust security protocol](https://docs.microsoft.com/powerapps/developer/data-platform/authenticate-office365-deprecation)
 
 Regional Discovery Service is deprecated
 ----------------------------------------------------------------------------------------------
 
-Effective March 2, 2020, the *regional* [Discovery Service](/powerapps/developer/common-data-service/org-service/discovery-service) will be deprecated. Microsoft will continue to provide support, security, and other critical updates for the *regional* Discovery Service, but won't release any additional functionality beyond what has already been announced. After April 21, 2021, the *regional* Discovery Service will be shut down.
+Effective March 2, 2020, the *regional* [Discovery Service](https://powerapps.microsoft.com/blog/deprecation-of-the-regional-discovery-service/) is deprecated. Microsoft will continue to provide support, security, and other critical updates for the *regional* Discovery Service, but won't release any additional functionality beyond what has already been announced. After April 21, 2021, the *regional* Discovery Service will be shut down.
 
-Customers must transition to using the [global OData V4 Discovery Service](/powerapps/developer/common-data-service/webapi/discover-url-organization-web-api#global-discovery-service) before April 21, 2021 so their applications are not impacted. More information: [Modify your code to use global Discovery Service](/powerapps/developer/common-data-service/webapi/discovery-orgsdk-to-webapi).
+Customers must transition to using the [global OData V4 Discovery Service](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/discovery-orgsdk-to-webapi) before April 21, 2021 so their applications are not impacted. More information: [Discover the URL for your organization](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/discover-url-organization-web-api).
 
 Rules feature in canvas apps is deprecated
 ----------------------------------
 
-Effective October 14, 2019, the [rules](/powerapps/maker/canvas-apps/working-with-rules) feature in canvas apps in Power Apps is deprecated. Few people have made use of rules in their canvas apps. From feedback collected through research and discussions with makers of Power Apps, the rules feature was confusing, and expressions were easier to learn, use, and debug. For more information about the rules feature deprecation, see [Blog: Canvas Rules feature deprecation](https://powerapps.microsoft.com/blog/canvas-rules-feature-deprecation/).
+Effective October 14, 2019, the [rules](https://docs.microsoft.com/powerapps/maker/canvas-apps/working-with-rules) feature in canvas apps in Power Apps is deprecated. Few people have made use of rules in their canvas apps. From feedback collected through research and discussions with makers of Power Apps, the rules feature was confusing, and expressions were easier to learn, use, and debug. For more information about the rules feature deprecation, see [Blog: Canvas Rules feature deprecation](https://powerapps.microsoft.com/blog/canvas-rules-feature-deprecation/).
 
 
 Legacy web client is deprecated
@@ -306,41 +308,29 @@ On December 4, 2020, the legacy web client will no longer be available. Organiza
 
  
 In the coming months, for those that have not already made the transition, we will be sending reminders and scheduling updates to transition customers to Unified Interface prior to December 4, 2020. 
-For further information and steps to make a smooth transition, view our helpful resources and community site: 
+For further information and steps to make a smooth transition, see: 
 
 -   [Unified Interface Community
     Group](https://community.dynamics.com/365/unified-interface/) including a
     Blog and Forum
 
--   [Getting Started Unified Interface
-    Playbook](/powerapps/maker/model-driven-apps/unified-interface-playbook)
-
--   [User Experience and Unified Interface transition
-    whitepaper](/powerapps/maker/model-driven-apps/approaching-unified-interface)
-
--   [Quick Start Guide – add Unified Interface App to existing
-    environment](/powerapps/maker/model-driven-apps/transition-web-app-existing)
-
--   [Quick Start Guide – set an environment to Unified Interface as
-    default](/powerapps/maker/model-driven-apps/transition-web-app)
-
 Task flows are deprecated
 -------------------------
-[Task flows](/flow/create-mobile-task-flow) are used to create a step-by-step data entry form for common tasks, such as after-meeting follow-ups. 
+[Task flows](https://docs.microsoft.com/power-automate/create-mobile-task-flow) are used to create a step-by-step data entry form for common tasks, such as after-meeting follow-ups. 
 
-Task flows are deprecated and will be removed by October 1, 2021. They will be replaced by the immersive experience for business process flows that is planned for release. More information: [Business process flow immersive experiences](/power-platform-release-plan/2019wave2/microsoft-flow/business-process-immersive-experiences)
+Task flows are deprecated and will be removed by October 1, 2021. They will be replaced by the immersive experience for business process flows that is planned for release. More information: [Business process flow immersive experiences](https://docs.microsoft.com/learn/modules/create-immersive-flow/)
 
 Process Dialogs are deprecated
 ------------------------------
 
 You can use a process dialog to create an interactive step-by-step data entry form that requires user input to start and run to completion. When you start the dialog process, a wizard-like interface is presented; users make selections or enter data as they progress through each page of the wizard.
 
-Process dialogs are deprecated and will be removed by December 1, 2020. Suggested replacement options include Business Process Flows or Canvas Apps. More information: [Replace dialogs with business process flows or canvas apps](/flow/replace-dialogs)
+Process dialogs are deprecated and will be removed by December 1, 2020. Suggested replacement options include Business Process Flows or Canvas Apps. More information: [Replace dialogs with business process flows or canvas apps](https://docs.microsoft.com/power-automate/replace-dialogs)
 
 Legacy process-related attributes in entities are deprecated
 ------------------------------------------------------------
 
-The legacy process-related attributes (such as **StageId**, and **TraversedPath**) on entities enabled for business process flows are now deprecated. The **SetProcess** action for business process flows is also deprecated. Manipulating these legacy process-related attributes for target entity records does not guarantee consistency of the business process flow state, and is not a supported scenario. The recommended way is to use the attributes of the business process flow entity. More information: [Create, retrieve, update, and delete business process flow entity records](/dynamics365/customer-engagement/developer/model-business-process-flows#create-retrieve-update-and-delete-business-process-flow-entity-records-process-instances)
+The legacy process-related attributes (such as **StageId**, and **TraversedPath**) on entities enabled for business process flows are now deprecated. The **SetProcess** action for business process flows is also deprecated. Manipulating these legacy process-related attributes for target entity records does not guarantee consistency of the business process flow state, and is not a supported scenario. The recommended way is to use the attributes of the business process flow entity. More information: [Work with business process flows using code](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/developer/model-business-process-flows)
 
 Some client APIs are deprecated
 -------------------------------
@@ -349,60 +339,21 @@ The following client APIs are deprecated to reorganize the Xrm client API object
 client scripts without having to change them based on the context or the client
 (web client or the new Unified Interface) where they run. You should plan to use
 the new client APIs mentioned in the **Replacement Client API** column instead
-of the deprecated ones. The deprecated client APIs will continue to be available
-and supported until they are officially removed from a future major release. *A public announcement here in the documentation, on the Dynamics 365 blog, and in many other places will be made at least six months before removal.*
+of the deprecated ones. 
+
+The deprecated client APIs will continue to be available and supported until they are officially removed from a future major release. *A public announcement here in the documentation, on the Dynamics 365 blog, and in many other places will be made at least six months before removal.* More information: [Dynamics 365 v9 Deprecated Client API] (https://community.dynamics.com/365/b/dynamix-academy/posts/dynamics-365-v9-deprecated-client-api)
 
 
-|Deprecated Client API |Replacement Client API |Comments |
-|-----|-----|-----|
-|[Xrm.Page](/previous-versions/dynamicscrm-2015/developers-guide/gg328474(v%3dcrm.7))                                 | **Forms**: ExecutionContext.[getFormContext](/dynamics365/customer-engagement/developer/clientapi/reference/executioncontext/getformcontext)  <br/>**Commands**: Send it as the [PrimaryControl](/dynamics365/customer-engagement/developer/customize-dev/pass-dynamics-365-data-page-parameter-ribbon-actions#form-and-grid-context-in-ribbon-actions) parameter |                                               Use of the **Xrm.Page** object as a static access to the primary form context is still supported to maintain backward compatibility with the existing scripts. Based on the feedback, we understand that the usage of **Xrm.Page** is high, and it won't be removed as soon as some other client API methods listed in this section. We encourage you to use the new way of getting form content where possible. More information: [Client API form context](/dynamics365/customer-engagement/developer/clientapi/clientapi-form-context)<br/>Although **Xrm.Page** is deprecated, **parent.Xrm.Page** will continue to work in case of HTML web resources embedded in forms as this is the only way to access the form context from the HTML web resource.                                                |
-|[Xrm.Page.context](/previous-versions/dynamicscrm-2015/developers-guide/gg334511(v%3dcrm.7))                             |                                                                                                                    Xrm.Utility.[getGlobalContext](/dynamics365/customer-engagement/developer/clientapi/reference/xrm-utility/getglobalcontext)                                                                                                                    |                                                                                                                                                              Allows access to the global context without going through the form context.                                                                                                                                                               |
-| [Xrm.Page.context.getQueryStringParameters](/previous-versions/dynamicscrm-2015/developers-guide/gg334511(v%3dcrm.7)#getquerystringparameters) |                                                                                                                                                                    formContext.data.attributes                                                                                                                                                                    | The formContext.data.attributes API will make retrieval of non-entity bound data consistent across entity forms, metadata-driven dialogs, and task-based flows. The data will be a combination of custom values sent using the query string and what was specified in the parameters in the [openForm](/dynamics365/customer-engagement/developer/clientapi/reference/xrm-navigation/openform) method. |
-| [Xrm.Page.context.getTimeZoneOffsetMinutes](/previous-versions/dynamicscrm-2015/developers-guide/gg334511(v=crm.7)#gettimezoneoffsetminutes) |                                                                                                                                                        globalContext.userSettings.getTimeZoneOffsetMinutes                                                                                                                                                        |                                                                                                                                                                                  Moved to globalContext.userSettings                                                                                                                                                                                   |
-|                [Xrm.Page.context.getUserId](/previous-versions/dynamicscrm-2015/developers-guide/gg334511(v=crm.7)#getuserid)                |                                                                                                                                                                 globalContext.userSettings.userId                                                                                                                                                                 |                                                                                                                                                                                  Moved to globalContext.userSettings                                                                                                                                                                                   |
-|              [Xrm.Page.context.getUserLcid](/previous-versions/dynamicscrm-2015/developers-guide/gg334511(v=crm.7)#getuserlcid)              |                                                                                                                                                               globalContext.userSettings.languageId                                                                                                                                                                |                                                                                                                                                                                  Moved to globalContext.userSettings                                                                                                                                                                                   |
-|              [Xrm.Page.context.getUserName](/previous-versions/dynamicscrm-2015/developers-guide/gg334511(v=crm.7)#getusername)              |                                                                                                                                                                globalContext.userSettings.userName                                                                                                                                                                |                                                                                                                                                                                  Moved to globalContext.userSettings                                                                                                                                                                                   |
-|             [Xrm.Page.context.getUserRoles](/previous-versions/dynamicscrm-2015/developers-guide/gg334511(v=crm.7)#getuserroles)             |                                                                                                                                                             globalContext.userSettings.securityRoles                                                                                                                                                              |                                                                                                                                                                                  Moved to globalContext.userSettings                                                                                                                                                                                   |
-|     [Xrm.Page.context.getIsAutoSaveEnabled](/previous-versions/dynamicscrm-2015/developers-guide/gg334511(v=crm.7)#getisautosaveenabled)     |                                                                                                                                                       globalContext.organizationSettings.isAutoSaveEnabled                                                                                                                                                        |                                                                                                                                                                              Moved to globalContext.organizationSettings                                                                                                                                                                               |
-|               [Xrm.Page.context.getOrgLcid](/previous-versions/dynamicscrm-2015/developers-guide/gg334511(v=crm.7)#getorglcid)               |                                                                                                                                                           globalContext.organizationSettings.languageId                                                                                                                                                           |                                                                                                                                                                              Moved to globalContext.organizationSettings                                                                                                                                                                               |
-|         [Xrm.Page.context.getOrgUniqueName](/previous-versions/dynamicscrm-2015/developers-guide/gg334511(v=crm.7)#getorguniquename)         |                                                                                                                                                           globalContext.organizationSettings.uniqueName                                                                                                                                                           |                                                                                                                                                                              Moved to globalContext.organizationSettings                                                                                                                                                                               |
-|             [Xrm.Page.data.entity.getDataXml](/previous-versions/dynamicscrm-2015/developers-guide/gg334720(v%3dcrm.7)#getdataxml)             |                                                                                                                                        No change in the method, but use "typename" instead of type for lookup attributes.                                                                                                                                         |                                                                                                                                                                                                                                                                                                                                                                                                        |
-|                     [GridRow.getData](/previous-versions/dynamicscrm-2015/developers-guide/dn932126(v%3dcrm.7)#getdata)                      |                                                                                                                                                                           GridRow.data                                                                                                                                                                            |                                                                                                                                                 GridRow is essentially a form context. This change unifies the interface of GridRow with formContext.                                                                                                                                                  |
-|            [GridRowData.getEntity ](/previous-versions/dynamicscrm-2015/developers-guide/dn932126(v=crm.7)#getentity)             |                                                                                                                                                                        GridRowData.entity                                                                                                                                                                         |                                                                                                                                                    GridRowData is form data. This change unifies the interface of GridRowData with formContextData.                                                                                                                                                    |
-|                           [Xrm.Mobile.offline](/previous-versions/dynamicscrm-2016/developers-guide/mt787123(v=crm.8))                            |                                                                                                                              [Xrm.WebApi.offline](/dynamics365/customer-engagement/developer/clientapi/reference/xrm-webapi/offline)                                                                                                                              |                                                                                                                                                                     Moved the offline-related methods under **Xrm.WebApi.offline**                                                                                                                                                                     |
-|              [parent.Xrm](/previous-versions/dynamicscrm-2015/developers-guide/gg309536(v%3dcrm.7)#reference-other-web-resources-from-an-html-web-resource)               | Use one of the following: <br/><br/>a) Use a custom control created using [Power Apps component framework](/powerapps/developer/component-framework/overview) instead of HTML web resources.<br/><br/>b) On forms, use the [getContentWindow](/powerapps/developer/model-driven-apps/clientapi/reference/controls/getcontentwindow) method of the web resource control.<br/><br/>c) If the [getContentWindow](/powerapps/developer/model-driven-apps/clientapi/reference/controls/getcontentwindow) method doesn't work, you can use `parent.Xrm` to get to the `Xrm` object inside an HTML web resource. If the HTML web resource is opened in a new window, then you should use `opener.Xrm` instead.                                                                                                                                                                                                                                                                                                                                                                  |                 **Earlier**: An HTML web resource may interact with the **Xrm.Page** or **Xrm.Utility** objects within the form by using **parent.Xrm.Page** or **parent.Xrm.Utility**. <br/><br>**Now**: parent.Xrm.\* will work if the HTML web resource is loaded in a form container. It won't work for HTML web resources that are stand alone, or referenced from the site map or any other places.<br/><br/>**NOTE**: `parent.Xrm` will be removed after the removal of the `ClientGlobalContext.js.aspx` page; dates yet to be announced.                  |
-|                              [addOnKeyPress](/previous-versions/dynamicscrm-2016/developers-guide/gg334266(v=crm.8)#addonkeypress)                              |                                                                                                                                                                       Use a custom control created using [Power Apps component framework](/powerapps/developer/component-framework/overview)                                                                                                                                                                        |                                                                                                                                                                                                                                                                                                                                                                                                        |
-|                 [fireOnKeyPress](/previous-versions/dynamicscrm-2016/developers-guide/gg334266(v=crm.8)#fireonkeypress)                  |                                                                                                                                                                       Use a custom control created using [Power Apps component framework](/powerapps/developer/component-framework/overview)                                                                                                                                                                        |                                                                                                                                                                                                                                                                                                                                                                                                        |
-|                 [removeOnKeyPress](/previous-versions/dynamicscrm-2016/developers-guide/gg334266(v=crm.8)#removeonkeypress)                  |                                                                                                                                                                       Use a custom control created using [Power Apps component framework](/powerapps/developer/component-framework/overview)                                                                                                                                                                       |                                                                                                                                                                                                                                                                                                                                                                                                        |
-|                 [showAutoComplete](/previous-versions/dynamicscrm-2016/developers-guide/gg334266(v=crm.8)#showautocomplete)                  |                                                                                                                                                             Use a custom control created using [Power Apps component framework](/powerapps/developer/component-framework/overview)                                                                                                                                                             |                                                                                                                                                                                                                                                                                                                                                                                                        |
-|                 [hideAutoComplete](/previous-versions/dynamicscrm-2016/developers-guide/gg334266(v=crm.8)#hideautocomplete)                  |                                                                                                                                                             Use a custom control created using [Power Apps component framework](/powerapps/developer/component-framework/overview)                                                                                                                                                             |                                                                                                                                                                                                                                                                                                                                                                                                        |
-|                [Xrm.Utility.alertDialog ](/previous-versions/dynamicscrm-2015/developers-guide/jj602956(v%3dcrm.7)#alertdialog)                |                                                                                                                  Xrm.Navigation.[openAlertDialog](/dynamics365/customer-engagement/developer/clientapi/reference/xrm-navigation/openalertdialog)                                                                                                                  |                                                                                                                                             The new signature is consistent with other APIs (openForm) and takes a new set of parameters for flexibility.                                                                                                                                              |
-|              [Xrm.Utility.confirmDialog](/previous-versions/dynamicscrm-2015/developers-guide/jj602956(v%3dcrm.7)#confirmdialog)               |                                                                                                                Xrm.Navigation.[openConfirmDialog](/dynamics365/customer-engagement/developer/clientapi/reference/xrm-navigation/openconfirmdialog)                                                                                                                |                                                                                                                                             The new signature is consistent with other APIs (openForm) and takes a new set of parameters for flexibility.                                                                                                                                              |
-|                       [Xrm.Utility.getBarcodeValue](/previous-versions/dynamicscrm-2016/developers-guide/jj602956(v=crm.8)#getbarcodevalue)                        |                                                                                                                   Xrm.Device.[getBarcodeValue](/powerapps/developer/model-driven-apps/clientapi/reference/xrm-device/getbarcodevalue)                                                                                                                   |  Moving device-related actions to Xrm.Device                                                       |
-|                       [Xrm.Utility.getCurrentPosition](/previous-versions/dynamicscrm-2016/developers-guide/jj602956(v=crm.8)#getcurrentposition)                        |                                                                                                                   Xrm.Device.[getCurrentPosition](/powerapps/developer/model-driven-apps/clientapi/reference/xrm-device/getcurrentposition)                                                                                                                   | Moving device-related actions to Xrm.Device                                                        |
-|                       [Xrm.Utility.isActivityType](/previous-versions/dynamicscrm-2015/developers-guide/jj602956(v%3dcrm.7)#isactivitytype)                        |                                                                                                                   Xrm.Utility.[getEntityMetadata](/dynamics365/customer-engagement/developer/clientapi/reference/xrm-utility/getentitymetadata)                                                                                                                   |                                                        The isActivityType method is synchronous so it was suitable for ribbon rules. However, the replacement method, [getEntityMetadata](/dynamics365/customer-engagement/developer/clientapi/reference/xrm-utility/getentitymetadata), is asynchronous, and is not suitable for ribbon rules.                                                        |
-|             [Xrm.Utility.openEntityForm ](/previous-versions/dynamicscrm-2015/developers-guide/jj602956(v%3dcrm.7)#openentityform)             |                                                                                                                         Xrm.Navigation.[openForm](/dynamics365/customer-engagement/developer/clientapi/reference/xrm-navigation/openform)                                                                                                                         |                                                                                                                                                                              Moving navigation actions to Xrm.Navigation                                                                                                                                                                               |
-|                       [Xrm.Utility.openQuickCreate](/previous-versions/dynamicscrm-2015/developers-guide/jj602956(v%3dcrm.7)#openquickcreate)                       |                                                                                                                         Xrm.Navigation.[openForm](/dynamics365/customer-engagement/developer/clientapi/reference/xrm-navigation/openform)                                                                                                                         |                                                                                                                                                                              Moving navigation actions to Xrm.Navigation                                                                                                                                                                               |
-|                       [Xrm.Utility.openWebResource](/previous-versions/dynamicscrm-2015/developers-guide/jj602956(v%3dcrm.7)#openwebresource)                       |                                                                                                                  Xrm.Navigation.[openWebResource](/dynamics365/customer-engagement/developer/clientapi/reference/xrm-navigation/openwebresource)                                                                                                                  |                                                                                                                                                Moving navigation actions to Xrm.Navigation  <br/>**Note**: This API returns VOID in Unified Interface.                                                                                                                                                 |
-|                       [globalContext.organizationSettings.baseCurrencyId](/powerapps/developer/model-driven-apps/clientapi/reference/xrm-utility/getglobalcontext/organizationsettings#basecurrencyid)                       |                                                                                                                  [globalContext.organizationSettings.baseCurrency](/powerapps/developer/model-driven-apps/clientapi/reference/xrm-utility/getglobalcontext/organizationsettings#basecurrency)                                                                                                                  |                                                                                                                                                The replacement method lets you access the display name along with the ID of transaction currency.                                                                                                                                                 |
-|                       [globalContext.userSettings.securityRoles](/powerapps/developer/model-driven-apps/clientapi/reference/xrm-utility/getglobalcontext/usersettings#securityroles)                       |                                                                                                                  [globalContext.userSettings.Roles](/powerapps/developer/model-driven-apps/clientapi/reference/xrm-utility/getglobalcontext/usersettings#roles)                                                                                                                  |                                                                                                                                                The replacement method lets you access the display name along with the ID of the security roles.                                                                                                                                                 |
-|                       [globalContext.userSettings.transactionCurrencyId](/powerapps/developer/model-driven-apps/clientapi/reference/xrm-utility/getglobalcontext/usersettings#transactioncurrencyid)                       |                                                                                                                  [globalContext.userSettings.transactionCurrency](/powerapps/developer/model-driven-apps/clientapi/reference/xrm-utility/getglobalcontext/usersettings#transactioncurrency)                                                                                                                   |                                                                                                                                                The replacement method lets you access the display name along with the ID of transaction currency.                                                                                                                                                 |
-|                       [getData](/powerapps/developer/model-driven-apps/clientapi/reference/controls/getdata) and [setData](/powerapps/developer/model-driven-apps/clientapi/reference/controls/setdata) for Silverlight web resources                       |                                                                                                                  None                                                                                                                  |                                                                                                                                                Silverlight is no longer supported. These methods won't be available after October 2020.                                                                                                                                                  |
-|                       [formContext.data.entity.save](/powerapps/developer/model-driven-apps/clientapi/reference/formcontext-data-entity/save)                       |                                                                                                                  [formContext.data.save](/powerapps/developer/model-driven-apps/clientapi/reference/formcontext-data/save)                                                                                                                  |                                                                                                                   |
-|                       [ClientGlobalContext.js.aspx](/powerapps/developer/model-driven-apps/clientapi/reference/getglobalcontext-clientglobalcontext.js.aspx#clientglobalcontextjsaspx)                       |                                                                                                                  None                                                                                                                  |  The ClientGlobalContext.js.aspx page is deprecated and scheduled to be unavailable after April 1, 2022. Alternative methods to access global context information will be available by December, 2021.                                                                                                                 |
-|                       [getObject](/powerapps/developer/model-driven-apps/clientapi/reference/getglobalcontext-clientglobalcontext.js.aspx#clientglobalcontextjsaspx)                       |                                                                                                                  [getContentWindow](/powerapps/developer/model-driven-apps/clientapi/reference/controls/getcontentwindow)                                                                                                                  |                       |
-
-For information about the new client APIs, see [Apply business logic using client scripting in model-driven apps using JavaScript](/powerapps/developer/model-driven-apps/client-scripting)
+For information about the new client APIs, see [Apply business logic using client scripting in model-driven apps using JavaScript](https://docs.microsoft.com/powerapps/developer/model-driven-apps/client-scripting)
 
 EntityMetadata.IsInteractionCentricEnabled property is deprecated
 -----------------------------------------------------------------
 
 All entities supported in Unified Interface are now enabled for the interactive experience in the new Customer Service Hub app. This implies that
-the **EntityMetadata**.[IsInteractionCentricEnabled](/dotnet/api/microsoft.xrm.sdk.metadata.entitymetadata.isinteractioncentricenabled)
+the **EntityMetadata**.[IsInteractionCentricEnabled](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.metadata.entitymetadata.isinteractioncentricenabled)
 property, which indicates whether an entity can be enabled for interactive experience, is no longer relevant. The corresponding setting for this property
 in the Customization tool, **Enable for interactive experience**, is removed, and the
-**EntityMetadata**.[IsInteractionCentricEnabled](/dotnet/api/microsoft.xrm.sdk.metadata.entitymetadata.isinteractioncentricenabled)
-property will be removed from the future version.
+**EntityMetadata**.IsInteractionCentricEnabled property will be removed from the future version.
 
 
 Voice of the Customer is deprecated 
@@ -411,11 +362,11 @@ The Voice of the Customer solution is used to create and send surveys for collec
 
 As of July 1, 2019, the Voice of the Customer solution is deprecated. Users can create and distribute new surveys and collect responses from live surveys till July 1, 2020.  
 
-A new solution, Dynamics 365 Customer Voice, is generally available to capture customer feedback using surveys. Customers can learn more about Customer Voice [here](/dynamics365/customer-voice/help-hub).
+A new solution, Dynamics 365 Customer Voice, is generally available to capture customer feedback using surveys. Customers can learn more at [Understand your customers to build better experiences](https://dynamics.microsoft.com/customer-voice/overview/).
 
 Dynamics 365 for Blackberry is deprecated
 ------------------------------------------
-As of December 3, 2018, Microsoft Dynamics 365 for Blackberry App is deprecated and will be removed from the iOS App Store on October 31, 2019. The mobile app is currently available on the iOS App Store and is designed for Dynamics 365 customers that utilize Blackberry Mobile Application Management. See more details about the Dynamics 365 for Blackberry app here: [Secure your mobile data with Microsoft Dynamics 365 for Good](/dynamics365/customer-engagement/mobile-app/v8/go-mobile/admin-troubleshoot/secure-mobile-data-dynamics-365-good). After October 31, 2019, Microsoft Intune will be the only supported mobile application management solution for the [Dynamics 365 for phones application](/dynamics365/customer-engagement/mobile-app/install-dynamics-365-for-phones-and-tablets). 
+As of December 3, 2018, Microsoft Dynamics 365 for Blackberry App is deprecated and will be removed from the iOS App Store on October 31, 2019. The mobile app is currently available on the iOS App Store and is designed for Dynamics 365 customers that utilize Blackberry Mobile Application Management. See more details about the Dynamics 365 for Blackberry app here: [Secure your mobile data from loss or theft](https://docs.microsoft.com/dynamics365/mobile-app/secure-mobile-data-dynamics-365-good). After October 31, 2019, Microsoft Intune will be the only supported mobile application management solution for the [Dynamics 365 for phones application](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/basics/dynamics-365-phones-tablets-users-guide-onprem). 
 
 Microsoft will continue to provide security and other critical updates to the Dynamics 365 for Blackberry App until October 31, 2019, but will not release any additional features or functionalities within the app. After October 31, 2019, the Dynamics 365 for Blackberry App will be removed from the App Store, and support will end.
 
@@ -450,7 +401,7 @@ Relationship Roles are deprecated
 Relationship Roles (**Settings \> Business Management \> Relationship Roles**) are
 being deprecated along with their user interface components. These will be removed in a future major release. 
 This feature is replaced by **Connection Roles**. More information: [Create connections to view relationships between
-records](/previous-versions/dynamicscrm-2016/admins-customizers-dynamics-365/mt826690(v=crm.8)).
+records](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/basics/create-connections-view-relationships-between-records).
 
 Mail Merge is deprecated
 ------------------------
@@ -464,7 +415,7 @@ Mail merges from previous versions is deprecated. This includes the mail-merge
 Word add-in and mail-merge templates (**Settings \> Templates \> Mail Merge
 Templates**).
 
-More information: [Create Word and Excel templates](/previous-versions/dynamicscrm-2016/admins-customizers-dynamics-365/mt826692(v=crm.8))
+More information: [Create Word and Excel templates](https://docs.microsoft.com/dynamics365/sales-professional/manage-word-templates)
 
 Announcements are deprecated
 ----------------------------
@@ -491,16 +442,9 @@ controls created using the HTML web resources
 with HTML5 to create UI components to visualize and interact with data.
 
 
-## Past deprecations
+## Release plans
 
-For information on *past* deprecations, see:
-- [Important changes coming in future releases of Dynamics 365](/previous-versions/dynamicscrm-2016/administering-dynamics-365/dn265924(v=crm.8))
-
-- [Important changes coming in future releases of Dynamics 365 (Developers)](/previous-versions/dynamicscrm-2016/developers-guide/dn281891(v=crm.8))
-
-## Other deprecation articles
-
-[Removed or deprecated features in Finance and Operations apps](/dynamics365/fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page)
+For information on release plans, see: [Dynamics 365 2021 release wave 1 plan](https://docs.microsoft.com/dynamics365-release-plan/2021wave1)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
