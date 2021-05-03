@@ -17,7 +17,9 @@ search.app:
 ---
 # Use Email message filtering and correlation to specify which emails are tracked 
 
-Server-side synchronization, [!INCLUDE[pn_microsoft_dynamics_crm_for_outlook](../includes/pn-microsoft-dynamics-crm-for-outlook.md)], or the Email Router can automatically create email activities in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), which are based on received email messages. This type of automation is known as email message tracking. Users can select a filtering option that determines what email messages will be tracked. Filtering is set on the **Email** tab of the **Set Personal Options** dialog box in the client applications. Users can set the following options:  
+Server-side synchronization, [!INCLUDE[pn_microsoft_dynamics_crm_for_outlook](../includes/pn-microsoft-dynamics-crm-for-outlook.md)] or the Email Router can automatically create email activities in customer engagement apps. Example apps include Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation. These apps are based on received email messages. 
+
+This type of automation is known as email message tracking. Users can select a filtering option that determines what email messages will be tracked. You can set filtering on the **Email** tab of the **Set Personal Options** dialog box in client applications. Users can set the following options:  
 
 - **All email messages**. All email messages received by the user are tracked (will have activities created).  
 
@@ -28,17 +30,18 @@ Server-side synchronization, [!INCLUDE[pn_microsoft_dynamics_crm_for_outlook](..
 - **Email messages from records that are email enabled**. Email messages are tracked from any record type that contains an email address, including customized record types (tables).  
 
 - **No email messages**. No email messages received by the user are tracked (will have activities created). This option only affects auto tracked emails.
-Emails manually tracked by the end user in Outlook via [Dynamics 365 App for Outlook](/dynamics365/outlook-app/dynamics-365-app-outlook-user-s-guide), [folder-level tracking](configure-outlook-exchange-folder-level-tracking.md), or [Outlook category](use-outlook-category-track-appointments-emails.md) are still synchronized to Dynamics 365. 
 
-By default, the **Email messages in response to email** option is enabled. Correlation occurs after an email message is filtered. System administrators can turn off all message tracking for a particular user by setting **Incoming Email** under **Synchronization Method** to **None** on the Mailbox form.  
+Emails manually tracked by the end user in Outlook via [Dynamics 365 App for Outlook](/dynamics365/outlook-app/dynamics-365-app-outlook-user-s-guide), [folder-level tracking](configure-outlook-exchange-folder-level-tracking.md), or [Outlook category](use-outlook-category-track-appointments-emails.md) get synchronized to Dynamics 365. 
 
-Email correlation is set on the **Email** tab of the System Settings page and can be enabled or disabled for the entire organization. Customer engagement apps uses two kinds of correlation, tracking tokens and smart matching. By default, both correlation types are enabled.  
+By default Email messages sent in response to email options are set to enabled. Correlation occurs after an email message is filtered. System admins can turn off all message tracking for a particular user by setting **Incoming Email** under **Synchronization Method** to **None** on the Mailbox form.  
+
+Admins can set email correlation on the **Email** tab of the System Settings page by enabling or disabling them for the entire organization. Customer engagement apps use two kinds of correlation, tracking tokens and smart matching. By default, both correlation types get enabled.  
 
 > [!IMPORTANT]
 >  Tracking tokens are the only supported correlation method that can be used when you use [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)] connected to an SMTP server and send email to a non-Exchange recipient. In this situation, if tracking tokens are not enabled, then correlation events, such as the automatically creating records based on the regarding object, may not work.  
 
 ## How customer engagement apps uses conversations to track emails  
- Use [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] conversations to increase the probability for email identification and matching. [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] groups together related email and assigns them an id (conversation id), to identify emails that are part of one conversation.  
+ Use [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] conversations to increase the probability for email identification and matching. [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] groups related email and assigns them a 'conversation ID', to identify emails that are part of one conversation.  
 
 1. In the Microsoft Power Platform admin center, select an environment. 
 
@@ -46,11 +49,11 @@ Email correlation is set on the **Email** tab of the System Settings page and ca
 
 3. In the **Configure folder-level tracking and email correlation** area, turn on **Use correlation**.  
 
-   If enabled, this option uses the conversation id to identify all the emails that replied to a tracked email.  
+   If enabled, this option uses the conversation ID to identify all the emails that replied to a tracked email.  
 
 ## How customer engagement apps associates email addresses with records
 
-When customer engagement apps tracks an email, it associates the email address to a record within customer engagement apps. The contents of the email **From** field can only be associated with one record. If there are duplicate records within customer engagement apps with the same email address, the contents of the email **From** field will resolve to the first active record in the following order:
+When customer engagement apps track an email, it associates the email address to a record within customer engagement apps. The contents of the email **From** field can only be associated with one record. If there are duplicate records within customer engagement apps with the same email address, the contents of the email. From** field will resolve to the first active record in the following order:
 
 1. SystemUser
 2. Contact
