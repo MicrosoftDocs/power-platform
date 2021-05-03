@@ -18,20 +18,16 @@ ms.collection: virtual-agent
 > - [Power Virtual Agents app in Microsoft Teams](teams/gdpr-summary-teams.md)
 
 
-The EU Data Protection Regulation (GDPR) gives rights to people, known in the regulation as *data subjects*, to manage the personal data. This includes data collected by an employer or other type of agency or organization, known as the *data controller* or just *controller*. 
+The EU Data Protection Regulation (GDPR) gives rights to people (known in the regulation as *data subjects*) to manage the personal data that has been collected by an employer or other type of agency or organization (known as the *data controller* or just *controller*). Personal data is defined broadly under the GDPR as any data that relates to an identified or identifiable natural person. The GDPR gives data subjects specific rights to their personal data; these rights include obtaining copies of it, requesting changes to it, restricting the processing of it, deleting it, or receiving it in an electronic format so it can be moved to another controller. A formal request by a data subject to a controller to take an action on their personal data is called in this document a *Data Subject Rights Request* or DSR request.
 
-Personal data is defined broadly by GDPR as any data that relates to an identified or identifiable natural person. GDPR gives data subjects specific rights to their personal data.  These rights include obtaining copies of personal information, requesting changes, restricting the processing, deleting, and receiving it in an electronic format so that it can be moved to another controller. A formal request by a data subject to a controller to take an action on their personal data is called in this document a *Data Subject Rights Request* (DSR) request.
-
-This guide discusses how to use Microsoft's products, services, and administrative tools. This guide also helps our controller customers find and act on personal data to respond to DSR requests. Specifically, this guide includes how to find, access, and act on personal data that reside in Microsoft's cloud. 
-
-Below is a quick overview of the processes outlined in this guide:
-1.	**Discover**: Use search and discovery tools to more easily find customer- data that may be the subject of a DSR request. Once potentially responsive documents are collected, you can do one or more of the DSR actions described in the following. Or you may determine that the request doesn't meet your organizations guidelines for responding to DSR requests.
-2.	**Access**: Retrieve personal data that resides in the Microsoft cloud and, if requested, make a copy of it that can be available to the data subject.
-3.	**Rectify**: Make changes or implement other requested actions on the personal data, where applicable.
-4.	**Restrict**: Restrict the processing of personal data, either by removing licenses for various online services or turning off the desired services where possible. You can also remove data from the Microsoft cloud and retain it on-premises or at another location.
-5.	**Delete**: Permanently remove personal data stored in Microsoft's cloud.
-6.	**Export**: Provide an electronic copy (in a machine-readable format) of personal data to the data subject.
-Each section in this guide outlines the technical procedures that a data controller organization can take to respond to a DSR request for personal data in Microsoft's cloud.
+The guide discusses how to use Microsoft's products, services and administrative tools to help our controller customers find and act on personal data to respond to DSR requests. Specifically, this includes how to find, access, and act on personal data that reside in Microsoft's cloud. Here's a quick overview of the processes outlined in this guide:
+1.	**Discover** — Use search and discovery tools to more easily find customer- data that may be the subject of a DSR request. Once potentially responsive documents are collected, you can perform one or more of the DSR actions described in the following steps to respond to the request. Alternatively, you may determine that the request doesn't meet your organizations guidelines for responding to DSR requests.
+2.	**Access** — Retrieve personal data that resides in the Microsoft cloud and, if requested, make a copy of it that can be available to the data subject.
+3.	**Rectify** — Make changes or implement other requested actions on the personal data, where applicable.
+4.	**Restrict** — Restrict the processing of personal data, either by removing licenses for various online services or turning off the desired services where possible. You can also remove data from the Microsoft cloud and retain it on-premises or at another location.
+5.	**Delete** — Permanently remove personal data that resided in Microsoft's cloud.
+6.	**Export** — Provide an electronic copy (in a machine-readable format) of personal data to the data subject.
+Each section in this guide outlines the technical procedures that a data controller organization can take to respond to a DSR request for personal data in Microsoft's cloud
 
 ## Prerequisites
 
@@ -41,11 +37,11 @@ Each section in this guide outlines the technical procedures that a data control
 ## GDPR terminology
 
 The following provides definitions of terms that are relevant to this guide:
-- *Controller*: The natural or legal person, public authority, agency or other body which, alone or jointly with others, determines the purposes and means of the processing of personal data. Where the purposes and means of such processing are determined by Union or Member State law, the controller or the specific criteria for its nomination may be provided for by Union or Member State law.
-- *Personal data and data subject*: Any information relating to an identified or identifiable natural person ('data subject'). An identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier. These include a name, an identification number, location data, an online identifier or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person.
-- *Processor*: A natural or legal person, public authority, agency or other body which processes personal data on behalf of the controller.
-- *Customer data*: All data, including all text, sound, video, or image files, and software, that are provided to Microsoft by, or on behalf of, a customer through use of the enterprise service, as defined in the Microsoft Online Services Terms.
-- *System-generated logs*: Logs and related data generated by Microsoft that help Microsoft provide the enterprise services to users. System-generated logs contain primarily pseudonymized data, such as unique identifiers. Typically this is a number generated by the system that cannot on its own identify an individual person but is used to deliver the enterprise services to users. System-generated logs may also contain identifiable information about end users, such as a user name.
+- *Controller* — The natural or legal person, public authority, agency or other body which, alone or jointly with others, determines the purposes and means of the processing of personal data; where the purposes and means of such processing are determined by Union or Member State law, the controller or the specific criteria for its nomination may be provided for by Union or Member State law.
+- *Personal data and data subject* — Any information relating to an identified or identifiable natural person ('data subject'); an identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person.
+- *Processor* — A natural or legal person, public authority, agency or other body which processes personal data on behalf of the controller.
+- *Customer data* – All data, including all text, sound, video, or image files, and software, that are provided to Microsoft by, or on behalf of, a customer through use of the enterprise service, as defined in the Microsoft Online Services Terms.
+- *System-generated logs* – Logs and related data generated by Microsoft that help Microsoft provide the enterprise services to users. System-generated logs contain primarily pseudonymized data, such as unique identifiers – typically a number generated by the system that cannot on its own identify an individual person but is used to deliver the enterprise services to users. System-generated logs may also contain identifiable information about end users, such as a user name.
 
 ## How this guide can help you meet your controller responsibilities
 
@@ -59,7 +55,7 @@ The guide, divided into two parts, describes how to use Dynamics 365 products, s
 
 When data subjects exercise their rights and make requests, consider the following points:
 
-- Properly identify the person and role—such as employee, customer, vendor. By using information that the data subject gave you as part of his or her request. This information might be a name, an employee ID or customer number, or other identifier.
+- Properly identify the person and role—such as employee, customer, vendor—by using information that the data subject gave you as part of his or her request. This information might be a name, an employee ID or customer number, or other identifier.
 - Record the data and time of the request. (You have 30 days to complete the request.)
 - Affirm that the request meets your organization's requirements for honoring or declining a data subject's request. For example, you must make sure that executing the request doesn't conflict with any other legal, financial, or regulatory obligations that you have, or infringe on the rights and freedoms of others.
 - Verify that you have the information that is related to the request.
