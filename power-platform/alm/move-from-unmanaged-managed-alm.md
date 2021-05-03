@@ -104,9 +104,9 @@ If customized in unmanaged solutions, the managed component must be deleted for 
 - Attribute maps.
 - Access team templates.
 
-### Customization for deeply integrated system tables
+### Customization of deeply integrated system tables
 
-Some system tables have many relationships and dependencies with other tables that makes them difficult to import to other environments:
+Some system tables have many relationships and dependencies with other tables that make them difficult to import to other environments:
 - User.
 - Contact. Similar to system user for Power Apps but can cause complication when you import  Portals apps.
 
