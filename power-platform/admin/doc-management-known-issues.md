@@ -93,6 +93,12 @@ Documents of a child entity only appear in the parent documents folder when the 
 ## Document folder location for multiple lookups
 If the entity selected for the Based on entity folder structure has two lookups, documents will not be stored inside the entity folder, but will be stored in the root folder. For example, if the Based on entity folder structure is set to Account, and you have an entity with two lookup accounts, such as Work Order, the documents related to Work Orders will not be stored inside any account document location, but will be stored in the root folder.
 
+## Entering a date for OneNote documents
+
+In order to add a date to a OneNote document, you can open the OneNote document and double click on the field under the title line. This allows you to enter the date field and save the document. 
+
+   ![Enter date for OneNote documents](media/date_onenote_documents.png)
+
 ## Known issues
 
 ### Maximum number of rows not honored in the document associated grid
