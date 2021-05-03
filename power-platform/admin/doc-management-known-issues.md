@@ -95,6 +95,10 @@ If the entity selected for the Based on entity folder structure has two lookups,
 
 ## Known issues
 
+### SharePoint Integration does not support the Dynamics Editable Grid
+
+SharePoint Integration is not able to work with the Dynamics Editable Grid. Using the editable grid for SharePoint will have known side effects that prevent SharePoint Integration from working fully.
+
 ### Maximum number of rows not honored in the document associated grid
 
 Configuring the following in the **DocumentGrid** pane will be ignored.
