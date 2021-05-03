@@ -137,11 +137,12 @@ The core components solution is required for the nurture components solution, or
 > [!NOTE]
 > The [Excel Online (Business)](https://docs.microsoft.com/connectors/excelonlinebusiness/) must be in the business data&ndash;only bucket of your DLP policy for this flow to run successfully.
 
+1. Ensure that you have set the Environment Variable **Maker Assessment SharePoint Site** to the site where you put the Excel files
 1. Open the **Center of Excellence - Nurture Components**.
 1. Edit the **Maker Assessment | Import starter data cloud flow**.
 1. When you open the flow, the calls to Excel will look like this:
     ![Maker Journey Starter Data 1](media/MakerJourneyStarterData1.png "Maker Journey Starter Data 1")
-1. Ensure that you have set the Environment Variable **Maker Assessment SharePoint Site** to the site where you put the Excel files
+
 1. Hit the X next to the Document Library listed (b!USLF...) and chose the correct library where you put the files (Documents for me).
     ![Maker Journey Starter Data 2](media/MakerJourneyStarterData2.png "Maker Journey Starter Data 2")
 
@@ -158,7 +159,14 @@ The core components solution is required for the nurture components solution, or
 
 1. Do the above for all three calls to Excel
 
-1. Manually start the **Maker Assessment | Import starter data** flow once to populate the initial set of questions and answer options for the [Maker Assessment](nurture-components.md#maker-assessment) app.
+1. Save the flow and return to the flow details page
+
+1. Turn on the **Maker Assessment | Import starter data** flow and run it once to populate the initial set of questions and answer options for the [Maker Assessment](nurture-components.md#maker-assessment) app.
+
+>[!NOTE]
+>If you see this error trying to run the flow, you have hit a product bug but it's easy to overcome. <br>
+Hit Cancel on the run, close the browser window, reopen the flow, and try again. <br>
+> ![Maker Journey Starter Data Error](media/MakerJourneyStarterDataError.png "Maker Journey Starter Data Error")
 
 ## Update environment variables
 
