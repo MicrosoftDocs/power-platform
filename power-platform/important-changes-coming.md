@@ -255,7 +255,7 @@ custom clients to connect to Dataverse is deprecated. This change
 affects applications that utilize
 [Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.client.organizationserviceproxy)
 and
-[Microsoft.Xrm.Tooling.Connector.CrmServiceClient](cs.microsoft.com/dotnet/api/microsoft.xrm.sdk.client.organizationserviceproxy.sdkclientversion)
+[Microsoft.Xrm.Tooling.Connector.CrmServiceClient](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.client.organizationserviceproxy.sdkclientversion)
 classes for the authentication type of "Office365".
 
 We are making this change to remove a security protocol (WS-Trust) that is
@@ -444,7 +444,7 @@ with HTML5 to create UI components to visualize and interact with data.
 
 ## Release plans
 
-For information on release plans, see: [Dynamics 365 2021 release wave 1 plan](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave1)
+For information on release plans, see: [Dynamics 365 2021 release wave 1 plan](https://docs.microsoft.com/dynamics365-release-plan/2021wave1)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
