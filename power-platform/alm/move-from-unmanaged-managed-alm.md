@@ -48,7 +48,7 @@ Larger, more complex projects require these tasks:
    - Be aware that some [System tables that don’t support unmanaged layers](#system-tables-that-dont-support-unmanaged-layers).
    - Be aware that there are a few system tables that can lead to issues when you customize them and later import them as managed. More information: [Customization for deeply integrated system tables](#customization-for-deeply-integrated-system-tables)
 
-4. Copy your dev environment to the sandbox environment.
+4. Copy your development environment to the sandbox environment.
     
     - Isolate the components of the base solution by removing all components that won't be members from the active layer.
 
@@ -60,11 +60,11 @@ Larger, more complex projects require these tasks:
    - Move solutions with downtime requirements to the final wave so there’s only one wave with downtime.
    - Implement trial runs on production copies.
    - Integrations downtime impact.
-   - Dev environment refresh process should include the common solution imported as managed to all dev environments. This should be done after every wave deployment.
+   - Development environment refresh process should include the common solution imported as managed to all development environments. This should be done after every wave deployment.
 
 6. Test the managed solution.
    - The test environment should be as similar to the production environment as possible.
-   - If there's any app downtime during the unmanaged to managed conversion from the dev environment to the test environment, make a note of it. This helps you determine how much time to a lot for when deploying to production: 
+   - If there's any app downtime during the unmanaged to managed conversion from the development environment to the test environment, make a note of it. This helps you determine how much time to a lot for when deploying to production: 
       - App that's imported.
       - Other apps affected by the conversion.
       - Portals affected by the conversion.
