@@ -6,7 +6,7 @@ author: Mattp123
 ms.author: matp
 manager: kvivek
 ms.custom: ""
-ms.date: 05/05/2020
+ms.date: 05/03/2021
 ms.reviewer: ""
 ms.service: power-platform
 ms.topic: "article"
@@ -33,15 +33,44 @@ Larger, more complex projects require these tasks:
 
 1.   Plan carefully, especially when the outcome you want is to use solution layering properly.
 
-2. Identify the base or common component layer. This solution will provide the foundation for modular solution development.
+2. Identify the solution layers that should be structured as follows: 
+   - Base layer. This solution will provide the foundation for modular solution development. The base solution should contain just entity and entity metadata without entity components, such as columns and table relationships. The base solution can be used to deploy for multiple apps.
+   - Common layer. Components that are common and/or shared with other solutions are contained in the common solution. The common solution can be used to deploy for multiple apps.
+   - App layer. This solution includes just the components specific to the app. Each app should be structured so that this solution includes all app components in one solution. This solution will contain the tables and components for the app, such as columns, forms, views, and charts. We recommend that you don’t share these components across different apps.
 
-3. Copy your dev environment to the sandbox environment.
+3. Identify and remove unnecessary tables and components.
+   - Look for tables that can be deleted from the solution. Here's some examples:
+      - Tables with no new records created within in last 18 months.
+     - Tables and components that have no dependencies. More information: [View dependencies for a component](/powerapps/maker/data-platform/view-component-dependencies)
+      - Components, such as forms, views, and charts, that are associated with deleted or unused tables and don't have any data.
+      - Be aware that some [System tables that don’t support unmanaged layers](#system-tables-that-dont-support-unmanaged-layers).
+      - Be aware that there are a few system tables that can lead to issues when you customize them and later import them as managed. More information: [Customization for deeply integrated system tables](#customization-for-deeply-integrated-system-tables)
+
+4. Copy your dev environment to the sandbox environment.
     
     - Isolate the components of the base solution by removing all components that won't be members from the active layer.
 
     - After you complete this step, this environment can be used for isolated development of the base solutions.<br/>   Plug-ins can reside in separate solutions, because the assemblies themselves don't generate dependencies.
 
-4. Repeat the process for any modular solutions that extend the common components layer.
+5. Use a wave conversion model.
+   - Deploy solutions in waves to convert them into managed.
+   - Club solutions to avoid downtime.
+   - Move solutions with downtime requirements to the final wave so there’s only one wave with downtime.
+   - Implement trial runs on production copies.
+   - Integrations downtime impact.
+   - Dev environment refresh process should include the common solution imported as managed to all dev environments. This should be done after every wave deployment.
+
+6. Test the managed solution.
+   - The test environment should be as similar to the production environment as possible.
+   - If there's any app downtime during the unmanaged to managed conversion from the dev environment to the test environment, make a note of it. This helps you determine how much time to a lot for when deploying to production: 
+      - App that's imported.
+      - Other apps affected by the conversion.
+      - Portals affected by the conversion.
+   - Integration scheduling
+      - Schedule outside of unmanaged to managed conversion window.
+      - Schedule outside hours for regular deployments as well.
+
+7. Repeat the process for any modular solutions that extend the common components layer.
 
     -   Create a copy of the original development environment, and remove the unmanaged solutions that hold references to the common components.
 
@@ -66,7 +95,21 @@ Larger, more complex projects require these tasks:
 -   It's difficult to migrate to a managed solution and
     develop a final solution architecture at the same time. Consider breaking the migration into phases such as moving to managed solutions, then establishing a new solution architecture. Isolated development is needed first to effectively create layered solutions.
 
+### System tables that don’t support unmanaged layers
+
+If customized in unmanaged solutions, the managed component must be deleted for the following system tables:
+
+- Attribute maps.
+- Access team templates.
+
+### Customization for deeply integrated system tables
+
+Some system tables have many relationships and dependencies with other tables that makes them difficult to import to other environments.
+- User.
+- Contact. Similar to system user for Power Apps but can cause complication when you import  Portals apps.
+
 ###  See also
+
 [Scenario 4: Supporting team development](team-development-alm.md)
 
 
