@@ -33,9 +33,9 @@ Larger, more complex projects require these tasks:
 
 1.   Plan carefully, especially when the outcome you want is to use solution layering properly.
 
-2. Identify the solution layers that should be structured as follows: 
-   - Base layer. This solution will provide the foundation for modular solution development. The base solution should contain just entity and entity metadata without entity components, such as columns and table relationships. The base solution can be used to deploy for multiple apps.
-   - Common layer. Components that are common and/or shared with other solutions are contained in the common solution. The common solution can be used to deploy for multiple apps.
+2. Understand and identify the solution layers. Then, create solutions that adhere to the following structure:
+   - Base layer. This solution will provide the foundation for modular solution development. The base solution should contain just entity and entity metadata without entity components, such as columns and table relationships. The base solution can be used for the deployment of multiple apps.
+   - Common layer. Components that are common and/or shared with other solutions are contained in the common solution. The common solution can be used for the deployment of multiple apps.
    - App layer. This solution includes just the components specific to the app. Each app should be structured so that this solution includes all app components in one solution. This solution will contain the tables and components for the app, such as columns, forms, views, and charts. We recommend that you don’t share these components across different apps.
 
 3. Identify and remove unnecessary tables and components.
@@ -43,8 +43,8 @@ Larger, more complex projects require these tasks:
       - Tables with no new records created within in last 18 months.
      - Tables and components that have no dependencies. More information: [View dependencies for a component](/powerapps/maker/data-platform/view-component-dependencies)
       - Components, such as forms, views, and charts, that are associated with deleted or unused tables and don't have any data.
-      - Be aware that some [System tables that don’t support unmanaged layers](#system-tables-that-dont-support-unmanaged-layers).
-      - Be aware that there are a few system tables that can lead to issues when you customize them and later import them as managed. More information: [Customization for deeply integrated system tables](#customization-for-deeply-integrated-system-tables)
+   - Be aware that some [System tables that don’t support unmanaged layers](#system-tables-that-dont-support-unmanaged-layers).
+   - Be aware that there are a few system tables that can lead to issues when you customize them and later import them as managed. More information: [Customization for deeply integrated system tables](#customization-for-deeply-integrated-system-tables)
 
 4. Copy your dev environment to the sandbox environment.
     
