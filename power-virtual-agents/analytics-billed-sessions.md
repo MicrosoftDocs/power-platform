@@ -2,7 +2,7 @@
 title: "View billed sessions"
 description: "See Power Virtual Agents billed sessions for the last 30 or 7 days."
 keywords: "PVA"
-ms.date: 9/22/2020
+ms.date: 5/4/2021
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw

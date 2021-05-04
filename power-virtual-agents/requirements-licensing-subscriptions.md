@@ -2,7 +2,7 @@
 title: "Get access to Power Virtual Agents"
 description: "Compare the capabilities you can access in Power Virtual Agents depending on whether you have a Microsoft 365 subscription or standalone Power Virtual Agents subscription."
 keywords: "Administration, licensing, PVA, standalone, compare, comparison"
-ms.date: 1/21/2021
+ms.date: 5/4/2021
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
