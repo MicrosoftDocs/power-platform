@@ -97,7 +97,7 @@ If the entity selected for the Based on entity folder structure has two lookups,
 
 In order to add a date to a OneNote document, you can open the OneNote document and double click on the field under the title line. This allows you to enter the date field and save the document. 
 
-![Enter date for OneNote documents](media/date_onenote_documents.png)
+:::image type="content" source="media/date_onenote_documents.png" alt-text="Double click the date field.":::
 
 ## Known issues
 
