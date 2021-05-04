@@ -56,7 +56,7 @@ Larger, more complex projects require these tasks:
 
 5. Use a wave conversion model.
    - Deploy solutions in waves to convert them into managed.
-   - Club solutions to avoid downtime.
+   - When possible, group solutions together when deploying to avoid downtime. For example, import the base solution, followed by the common solution, and then the app solution.
    - Move solutions with downtime requirements to the final wave so there’s only one wave with downtime.
    - Implement trial runs on production copies.
    - Integrations downtime impact.
