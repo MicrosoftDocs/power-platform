@@ -65,11 +65,12 @@ Skills | 100 per bot | 100 per bot
 ### Power Virtual Agents subscription limits
 
 Feature | Standard subscription | Teams (select Microsoft 365 subscriptions)
+-- | -- | --
 Sessions | N/A | 10 per user every 24 hours across all bots in a tenant<sup>1</sup>
 Power Platform requests<sup>2</sup> | 30,000 every 24 hours<sup>3</sup> | 2,000 every 24 hours
 
-<sup>1</sup> Power Virtual Agents [sessions](analytics-sessions.md) that are included with [Microsoft 365 subscriptions](requirements-licensing-subscriptions.md#power-virtual-agents-for-microsoft-teams-plan) aren't pooled.
-<sup>2</sup> These requests are consumed by Power Automate flows that are triggering by Power Virtual Agents chatbots. Learn more about [Power Automate limits](/power-platform/admin/api-request-limits-allocations).
+<sup>1</sup> Power Virtual Agents [sessions](analytics-sessions.md) that are included with [Microsoft 365 subscriptions](requirements-licensing-subscriptions.md#power-virtual-agents-for-microsoft-teams-plan) aren't pooled.  
+<sup>2</sup> These requests are consumed by Power Automate flows that are triggering by Power Virtual Agents chatbots. Learn more about [Power Automate limits](/power-platform/admin/api-request-limits-allocations).  
 <sup>3</sup> You can contact your admin to increase the Power Virtual Agents Power Platform requests limits by purchasing the Power Virtual Agents Chat Session add-on. For more information, see the [Microsoft Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 
 
