@@ -35,7 +35,7 @@ Power Virtual Agents [sessions](analytics-sessions.md) that are included with [s
 
 License | Session limits every 24 hours
 --|--
-**Power Virtual Agents for Teams** | 10 per user
+**Power Virtual Agents for Teams** | 10 per user across all bots
 
 ## Error messages when quotas are met
 
@@ -43,20 +43,6 @@ If the quota for **messages to a chatbot** is met, the user chatting with the ch
 
 ![Error message in the chat bot window that says 'Send failed. Retry.'](media/requirements-quota-error.png "Error message in the chatbot window that says 'Send failed. Retry.'")
  
-
-## Power Automate Request limits
-As described in the [licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130), Power Automate usage rights are included with a Power Virtual Agents subscription. 
-
-Flows created from the [Power Virtual Agents authoring canvas](advanced-flow.md#create-a-new-flow-from-the-power-virtual-agents-authoring-canvas) have the following limits:
-
-License | Number of API requests every 24 hours
---|--
-**Power Virtual Agents** | 15,000 per flow 	
-
-Learn more about [Power Automate limits](/power-platform/admin/api-request-limits-allocations)
-
-> [!NOTE]
-> For flows created from the Power Virtual Agents authoring canvas you will see the plan used as "Per user plan". Regardless of what your per-user license is, the above limit will apply.
 
 
 
