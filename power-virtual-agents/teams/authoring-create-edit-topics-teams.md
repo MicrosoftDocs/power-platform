@@ -41,7 +41,7 @@ The bot then asks which store the customer is interested in, and displays the ho
 
 You can see how the bot conversation works in practice by testing it in the **Test bot** pane. This lets you fine-tune the topic until you're ready to share it.
 
-For bot and topic limits, see the [Quotas and request limit capacity considerations](../requirements-quotas.md) topic.
+For bot and topic limits, see the [Quotas, limits, and configuration values](../requirements-quotas.md) topic.
 
 
 ## Prerequisites

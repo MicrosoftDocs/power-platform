@@ -62,7 +62,7 @@ The following table helps illustrate which sessions are going to be billed and w
 
 | Scenario | Is session billed? | Topic type | Channel | Power Automate flow | Bot Framework extensibility | Bot stored in |
 |-|-|-|-|-|-|-|
-| User logs vacation days (in Dataverse for Teams) in a conversation with the bot in Microsoft Teams. | Included with select Microsoft 365 subscriptions | Any topic type | Teams | Yes (only standard connectors) | Not used | Dataverse for Teams |
+| User logs vacation days (in Dataverse for Teams) in a conversation with the bot in Microsoft Teams. | Included with select Microsoft 365 subscriptions | Any topic type | Teams | Yes (only standard connectors) | Not used | Dataverse for Teams |
 | Bot greets user on a website, customer escalates to human agent directly or doesn't interact with the bot. | Free - not a billed session | System | Any channel | Not used | Not used | Any environment type |
 | Greeting topic redirects to Bot composer or a skill topic for advanced operations. | Billed session | Any topic type | Any channel | Either used or not used | Yes | Any environment type |
 | Greeting topic pulls information about the user using Power Automate flow to present a customized experience. | Billed session | Any topic type | Any channel | Yes (any connector) | Either used or not used | Any environment type |

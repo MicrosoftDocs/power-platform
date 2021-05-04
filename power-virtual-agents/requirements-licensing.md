@@ -110,7 +110,7 @@ See [Quotas and rate limit capacity considerations for Power Virtual Agents](req
 
 ## Using Power Automate with a Power Virtual Agents license
 
-[See Quotas and request limit capacity considerations](requirements-quotas.md).
+[See Quotas, limits, and configuration values](requirements-quotas.md).
 
 [See how to use Power Automate with Power Virtual Agents](advanced-flow.md). 
 

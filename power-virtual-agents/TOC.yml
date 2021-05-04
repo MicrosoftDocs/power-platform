@@ -4,7 +4,7 @@
   href: requirements-licensing-subscriptions.md
 - name: Standards compliance and certification
   href: admin-certification.md
-- name: Quotas and request limit capacity considerations
+- name: Quotas, limits, and configuration values
   href: requirements-quotas.md
 - name: Community help and support
   href: fundamentals-support.md

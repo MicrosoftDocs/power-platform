@@ -29,7 +29,7 @@ Power Virtual Agents availability in GCC and GCC High plans are estimated to be 
 
 This table compares key capabilities in the Power Virtual Agents for Microsoft Teams plan, which is available in select Microsoft 365 subscriptions, against the standalone Power Virtual Agents subscription. For a full list of difference, see the [Microsoft Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 
-Also see the [Quotas and request limit capacity considerations](requirements-quotas.md) topic for other capacity considerations.
+Also see the [Quotas, limits, and configuration values](requirements-quotas.md) topic for other capacity considerations.
 
 
 Capability | Select Microsoft 365 subscriptions | Power Virtual Agents subscription

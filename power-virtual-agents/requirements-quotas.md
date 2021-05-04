@@ -12,7 +12,7 @@ ms.custom: quotas, admin, ceX
 ms.collection: virtual-agent
 ---
 
-# Quotas and request limit capacity considerations for Power Virtual Agents
+# Quotas, limits, and configuration values for Power Virtual Agents
 
 Quotas are default constraints applied to chatbots that limit how often messages can be sent to the chatbot. The purpose of quotas is to throttle the service load for a client, which protects a service from being overloaded and the client from unexpected resource usage.
 
