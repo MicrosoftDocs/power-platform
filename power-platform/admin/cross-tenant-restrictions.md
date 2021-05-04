@@ -63,7 +63,7 @@ Two-way tenant isolation restricts incoming connection attempts into your tenant
 
 ![Restrict outbound and inbound cross-tenant access](media/restrict-outbound-inbound-cross-tenant.png "Restrict outbound and inbound cross-tenant access")
 
-## Known issues
+## Known issue
 This feature does not protect your tenant from inbound cross-cloud connections. If a tenant has tenant isolation turned on, all outgoing connections are restricted. However, incoming connections that are established from other tenants in other clouds are not restricted. This issue is currently being investigated.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
