@@ -49,7 +49,7 @@ This issue occurs when document management has not been enabled for this entity.
 
 :::image type="content" source="media/doc-management-troubleshoot3.png" alt-text="Error message displayed for Account entity.":::
 
-The administrator will need to [Enable document management](enable-sharepoint-document-management-specific-entities.md) for the Account entity.
+The administrator will need to [enable document management](enable-sharepoint-document-management-specific-entities.md) for the Account entity.
 
 :::image type="content" source="media/doc-management-troubleshoot4.png" alt-text="Enable document management of Account entity.":::
 
