@@ -41,9 +41,17 @@ For example, if a custom column on Sharepoint.com is created with the name "new_
 
 If OneNote files are failing to automatically open when launched from Dynamics, it may be due to the record name having more than 128 characters. If OneNote files are failing to automatically open when launched from Dynamics, you may need to shorten the record name and rename the file to match from the document associated grid. Once the record name and file name are shortened, the file should correctly open from OneNote. 
 
+:::image type="content" source="media/doc-management-troubleshoot2.png" alt-text="Select OneNote to open a OneNote file from the timeline.":::
+
 ### Error message "Collaborate and share files easily–ask your admin to enable SharePoint"
 
 This issue occurs when document management has not been enabled for this entity. This can be fixed by having the CRM administrator enable document management for that entity using the “Document Management Settings” wizard. 
+
+:::image type="content" source="media/doc-management-troubleshoot3.png" alt-text="Error message displayed for Account entity.":::
+
+The administrator will need to enable document management for the Account entity.
+
+:::image type="content" source="media/doc-management-troubleshoot4.png" alt-text="Enable document management of Account entity.":::
 
 ## Error messages
 
