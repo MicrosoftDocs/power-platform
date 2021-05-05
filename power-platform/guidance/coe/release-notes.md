@@ -38,7 +38,7 @@ Select each version below to see release notes and updates for each component. Y
 
 |  Version | First available |
 | --------- | ---------------|
-| [2.1](release-notes/core-2.10.md) | May 5, 2021 |
+| [2.1](release-notes/core-2.1.md) | May 5, 2021 |
 | [2.0](release-notes/core-2.0.md) | April 8, 2021 |
 | [1.85](release-notes/core-1.85.md) | February 1, 2021 |
 | [1.72](release-notes/core-1.72.md) | January 6, 2021 |

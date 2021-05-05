@@ -1,6 +1,6 @@
 ---
-title: "Release notes and latest version of the CoE starter kit Theming Components | MicrosoftDocs"
-description: "Release notes and latest version of the CoE Starter Kit."
+title: "Release notes and latest version of the CoE starter kit Theming Components 1.2 | MicrosoftDocs"
+description: "Release notes and latest version of the CoE Starter Kit 1.2."
 author: manuelap-msft
 manager: devkeydet
 ms.service: power-platform
