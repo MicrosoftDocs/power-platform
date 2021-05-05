@@ -30,7 +30,7 @@ The following table shows what admin roles are required to do tasks for various 
 <tbody>
   <tr>
     <td></td>
-    <td>Role 1</td>
+    <td>Global admin<sup>1</sup></td>
     <td>Role 2</td>
     <td>Role 3</td>
     <td>Role 4</td>
@@ -181,6 +181,7 @@ The following table shows what admin roles are required to do tasks for various 
 </tbody>
 </table>
 
+<sup>1</sup> A Microsoft 365 security role
 
 
 
