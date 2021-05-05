@@ -17,14 +17,12 @@ search.app:
   - Powerplatform
 ---
 
-# Released version Theming Components 1.11
+# Released version Theming Components 1.2
 
-Version 1.1 for the CoE Starter Kit Theming Components is now available. This article describes the updates, including the new features and the fixes to existing functionality, included in this release. This version was first made available on July 16, 2020.
+Version 1.2 for the CoE Starter Kit Theming Components is now available. This article describes the updates, including the new features and the fixes to existing functionality, included in this release. This version was first made available on May 5, 2021.
 
-This is the first version of the Theming components:
+## Bug fixes
 
-- [Setup Theming components](../setup-theming.md)
-- [Use Theming components](../theming-components.md)
-
+Bug fixes have been made to the Theme Editor.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
