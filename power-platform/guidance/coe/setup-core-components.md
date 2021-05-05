@@ -165,27 +165,32 @@ Before you begin:
 
 1. Select **Import**.
 
-The import can take up to 60 minutes to be completed.
+The import can take up to 60 minutes to be completed. Learn more about the apps and flows in the Core components: [What's in the Core Components](core-components.md)
 
 ## Activate the sync template flows
 
-The flows with the prefix *Sync* are required for populating and cleaning up data in the Dataverse tables (Environment, Power Apps App, Flow, Flow Action Detail, Connector, and Maker). The sync flows are used to write or delete data from the admin connectors to the Dataverse tables. These flows run on a schedule.
+The Admin \| Sync Template flows part of this solution crawl through all the resources stored in Microsoft Power Platform and make a copy of details in each resource (for example, apps and flows) to Dataverse (table definitions are provided in this solution). All data displayed in most of the starter kit components must be in Dataverse, which means that the sync template must be configured for everything else to work. The sync flows run daily overnight.
 
-Note that the first run of these will be long running. See the [limitations information](limitations.md) for more details.
+When you first set up the CoE Starter Kit, enable these flows in a specific order which will start the process of crawling and storing the information in Dataverse. Depending on the size of your tenant, the first run of may take long to complete. See the [limitations information](limitations.md) for more details.
 
 We will more quickly resolve issues around dependencies between tables by enabling the flows in an explicit order. Enabling the flows in this order is not required, but it may cause errors or incorrect data during the first week until the inventory dependencies align.
 
-1) Turn on: CLEANUP - Admin \| Sync Template v3 (Check Deleted)
-1) Wait until it finishes before you turn on any other flows.
-1) Turn on: Admin | Sync Template V3 (Connectors)
-1) Wait until it finishes before you turn on any other flows.
-1) Turn on the Welcome mail flow: Admin | Welcome Email v3
-1) Turn on the Sync Template flows for the following object types: Apps, Custom Connectors, Desktop Flows, Flows, Model Driven Apps, and PVA
-1) Turn on Admin \| Sync Template v3.
-1) Wait for Admin \| Sync Template v3 to complete its run and then turn it back off. This will avoid write conflicts for large organizations.
-1) The above flow's run will cause the flows for the objects listed in step 6 to run. Wait until all of these complete.
-1) Turn back on Admin \| Sync Template v3.
-1) Turn on the rest of the flows listed in the solution
+1. For Option 1 (Core Components installed in Production environment):
+    1. Go to [make.powerapps.com](https://make.powerapps.com/), select **Solutions**, and then open the **Center of Excellence - Core Components** solution to view the flows.
+1. For Option 2 (Core Components installed in Dataverse for Teams environment)
+    1. Open to the Power Apps app in Teams, select **Build**, and select the Team you have added the solution to.
+    1. Select **Installed apps**.
+    1. Select **See all** for Center of Excellence - Core Components.
+    1. Select **Cloud flows**.
+1. Turn on: CLEANUP - Admin \| Sync Template v3 (Check Deleted)
+1. Wait until it finishes before you turn on any other flows.
+1. Turn on: Admin \| Sync Template V3 (Connectors)
+1. Wait until it finishes before you turn on any other flows.
+1. Turn on the Admin \| Sync Template flows for the following object types: Apps, Custom Connectors, Desktop Flows, Flows, Model Driven Apps, and PVA
+1. Turn on Admin \| Sync Template v3.
+1. Wait for Admin \| Sync Template v3 to complete its run and then turn it back off. This will avoid write conflicts for large organizations.
+1. Check the Admin \| Sync Template flows for apps, flows and other resources and wait until all of these complete.
+1. Turn back on Admin \| Sync Template v3.
 
 >[!IMPORTANT]
 > Note that **Admin \| Compliance Detail Request v3** will not pass until you complete setup of the Governance component so you should leave it turned off until then.
