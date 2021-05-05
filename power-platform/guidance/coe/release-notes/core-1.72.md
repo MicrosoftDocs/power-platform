@@ -23,6 +23,6 @@ Version 1.72 for the CoE Starter Kit Core Components is now available. This arti
 
 ## Sync Flows
 
-All Sync flows have been updated to use the Common Data Service (Current Environment) connector. This will improve reliability and performance.
+All Sync flows have been updated to use the Microsoft Dataverse (Current Environment) connector. This will improve reliability and performance.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
