@@ -68,7 +68,8 @@ The Core Components solution is required for the Governance Components solution,
 1. Import the *CenterOfExcellenceAuditComponents_x_x_x_xx_managed.zip* file.
 1. Create a new connection to the all connectors.
     ![Import the Center of Excellence - Governance components solution](media/msig-import.png "Import the Center of Excellence - Governance components solution")
-1. Update the Environment Variable values. Environment variables are used to store application and flow configuration data. This means that you only have to set the value once per environment and it will be used in all necessary flows and apps in that environment.
+
+1. Update the Environment Variable values. Environment variables are used to store application and flow configuration data. This means that you only have to set the value once per environment and it will be used in all necessary flows and apps in that environment. All environment variables in this solution have a default value and so can be updated later.
 
 1. Select **Import** without adding values to the Environment Variables, as we will update them later - see [update environment variables](#update-environment-variables)
 
@@ -83,12 +84,11 @@ All flows in this solution depend on all environment variables' being configured
 
 1. Select **See Environment Variables** to set the values as described in the following table.
 
-   | Name | Current value |
+   | Name | Description |
    |------|---------------|
-   | Auto Delete On Archive | Determines whether apps are deleted when they're archived in the following flow: Admin \| App Archive and Clean Up - Check Approvals and Archive. <br> Value must be Yes or No. A default value of No is provided. |
+   | Auto Delete On Archive | Determines whether apps andd flows are deleted when they're approved for deletion in the following flow: Admin \| App Archive and Clean Up - Check Approvals and Archive. <br> Value must be Yes or No. A default value of Yes is provided. |
+   | Exclude Default environment from Compliance Requests | Determines if the default environment is excluded in the Compliance Details request flow. <br> Value must be Yes or No. A default value of No is provided.  |
    | ProductionEnvironment | Determines if the environment is Production or Dev/Test. True (the default) will mean that the approvals are sent to app/flow owners. False will send those approvals to the admin email. |
-   | Exclude Default environment from Compliance Request flows | Set to Yes if you want to Exclude the Default environment from the *Admin - Compliance Details* request flow. A default value of No is provided. |
-   | Developer Compliance Center | Copy the URL of the Developer Compliance Center canvas app from the Details page |
 
 ## Activate the flows
 
@@ -104,6 +104,18 @@ This Governance Components solution contains flows that you'll need to manually 
 
 >[!IMPORTANT]
 > These flows will be turned off on solution import, and you can turn them on as soon as you're ready to use them. Only turn on the Weekly Clean Up of Microsoft Teams environments when you're ready to enforce the deletion of Teams environments.
+
+## Update the variables and flows back in Core
+
+1) Get the URL for the Developer Compliance Center <br>
+   Browse to Details page of the Developer Compliance Center and grab the Web link
+    ![Setup Compliance Components1](media/setupCompliance1.png "Setup Compliance Components1")
+
+1) Browse to Default Solution, filter to Environment Variables, edit the **Developer Compliance Center URL** variable and add the URL from step 1 as a current value
+![Setup Compliance Components2](media/setupCompliance2.png "Setup Compliance Components2")
+
+1) Return to the Core Solution and turn on **Admin \| Compliance detail request v3**
+![Setup Compliance Components3](media/setupCompliance3.png "Setup Compliance Components3")
 
 ## Share apps with makers
 

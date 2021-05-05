@@ -25,45 +25,16 @@ The Nurture Components can be used in both Production environments and Dataverse
 
 Learn more: [What is Dataverse for Teams](https://docs.microsoft.com/powerapps/teams/overview-data-platform)
 
-## Upload default data set for the Maker Assessment app
+## Prepare content for consumption by solution objects
+
+### Upload default data set for the Maker Assessment app
 
 If you are going to use the [Maker Assessment](nurture-components.md#maker-assessment) app, import an initial set of assessment questions first. You can add your own questions or customize the existing ones after this import.
 
 1. Extract the *MakerJourneyData.zip* file. You can find this file in the initial download.
 1. Upload the three files to the Documents library of a SharePoint site in your tenant and note down the site URL. These files are only needed once for import, and can be deleted after this flow runs.
 
-## Import the solution
-
-The core components solution is required for the nurture components solution, or any other component in the starter kit, to work.
-
-1. Follow the instructions in [Set up core components](setup-core-components.md) to import the solution either into your Production or your Dataverse for Teams environment.
-
-1. Import the CenterOfExcellenceNurtureComponents_*x_x_x_xx*_managed.zip file.
-1. Create a new connection to the **RSS** connector, and set your Microsoft Dataverse connection.
-    ![Import the CoE nurture components solution](media/msi-nurture.png "Import the CoE nurture components solution")
-1. Update the environment variable values. Note that if you choose, you can leave the values empty on import and [update them](#update-environment-variables) later after the import is completed.
-
-    | Name | Default value |
-    |------|---------------|
-    | Training in a day - Feedback Form     | The Training in a Day package includes a flow that automatically sends a feedback request to attendees on the day of the event. Configure the form URL (<https://forms.office.com/>...) here.    |
-    | Power User Site URL (SharePoint Site) | The site that your Microsoft Power Platform power users can use to communicate and share files. You'll use it here to house the template library for them. |
-    | Innovation Backlog URL | (optional) URl to the [Innovation Backlog](use-innovationbacklog.md) canvas app, if you are using this app |
-    | Maker Assessment Admin eMail | eMail of the admin or CoE team that will respond to queries from the Maker Assessment app. |
-    | Maker Assessment SharePoint Site | SharePoint site URL to which you have uploaded the Maker Assessment Excel documents for initial import. |
-    | Community URL | Link to your internal Microsoft Power Platform community (for example, Yammer or Teams) |
-
-## Import default data set for the Maker Assessment app
-
-> [!NOTE]
-> The [Excel Online (Business)](https://docs.microsoft.com/connectors/excelonlinebusiness/) must be in the business data&ndash;only bucket of your DLP policy for this flow to run successfully.
-
-1. Open the **Center of Excellence - Nurture Components**.
-1. Edit the **Maker Assessment | Import starter data cloud flow**.
-1. Update all three **List rows present in a table** actions, and set the value for Document library to **Documents** and the value for Table to **Table1**
-    ![Update Excel actions in the cloud flow with the Document Library and Table value](media/MakerJourneyCategoryTable.png "Update Excel actions in the cloud flow with the Document Library and Table value")
-1. Manually start the **Maker Assessment | Import starter data** flow once to populate the initial set of questions and answer options for the [Maker Assessment](nurture-components.md#maker-assessment) app.
-
-## Create a SharePoint document library
+### Create a SharePoint document library
 
 This library is used to store templates, components, and documents that you want to share with makers in your organization. In this section, you'll create and populate the library by using a set of starter materials.
 
@@ -126,6 +97,77 @@ We've created a starter set of templates for you. To access them, do the followi
 
 If you have existing templates that you'd like to share with your makers (for example, template apps, brand guidelines, or app and flow samples), upload them to the AppTemplates document library so they show up in the template catalog.
 
+### Set up a feedback form for your Training in a day
+
+1. Go to [forms.office.com](https://forms.office.com).
+1. Select **New Form**.
+1. Enter **Microsoft Power Platform Training Feedback** for the title.
+1. Select **+ Add New** to add the following questions:
+    1. Rating: **Please rate the training course**
+    1. Text: **What went well?**
+    1. Text: **What didn't go well?**
+1. Select **Share**, and copy the link for **Send and collect responses**.
+
+    ![Copy the feedback form URL to send and collect responses](media/nurture-feedback.png "Copy the feedback form URL to send and collect responses")
+
+1. Save the link to the form for the *Training in a day - Feedback Form* environment variable.
+
+## Import the solution
+
+The core components solution is required for the nurture components solution, or any other component in the starter kit, to work.
+
+1. Follow the instructions in [Set up core components](setup-core-components.md) to import the solution either into your Production or your Dataverse for Teams environment.
+
+1. Import the CenterOfExcellenceNurtureComponents_*x_x_x_xx*_managed.zip file.
+1. Create a new connection to the **RSS** connector, and set your Microsoft Dataverse connection.
+    ![Import the CoE nurture components solution](media/msi-nurture.png "Import the CoE nurture components solution")
+1. Update the environment variable values. Note that if you choose, you can leave the values empty on import and [update them](#update-environment-variables) later after the import is completed.
+
+    | Name | Description |
+    |------|---------------|
+    | Training in a day - Feedback Form     | The Training in a Day package includes a flow that automatically sends a feedback request to attendees on the day of the event. Configure the form URL (<https://forms.office.com/>...) here.    |
+    | Power User Site URL (SharePoint Site) | The site that your Microsoft Power Platform power users can use to communicate and share files. You'll use it here to house the template library for them. |
+    | Innovation Backlog URL | (optional) URl to the [Innovation Backlog](use-innovationbacklog.md) canvas app, if you are using this app |
+    | Maker Assessment Admin eMail | eMail of the admin or CoE team that will respond to queries from the Maker Assessment app. |
+    | Maker Assessment SharePoint Site | SharePoint site URL to which you have uploaded the Maker Assessment Excel documents for initial import. |
+    | Community URL | Link to your internal Microsoft Power Platform community (for example, Yammer or Teams) |
+
+## Import default data set for the Maker Assessment app
+
+> [!NOTE]
+> The [Excel Online (Business)](https://docs.microsoft.com/connectors/excelonlinebusiness/) must be in the business data&ndash;only bucket of your DLP policy for this flow to run successfully.
+
+1. Ensure that you have set the Environment Variable **Maker Assessment SharePoint Site** to the site where you put the Excel files
+1. Open the **Center of Excellence - Nurture Components**.
+1. Edit the **Maker Assessment | Import starter data cloud flow**.
+1. When you open the flow, the calls to Excel will look like this:
+    ![Maker Journey Starter Data 1](media/MakerJourneyStarterData1.png "Maker Journey Starter Data 1")
+
+1. Hit the X next to the Document Library listed (b!USLF...) and chose the correct library where you put the files (Documents for me).
+    ![Maker Journey Starter Data 2](media/MakerJourneyStarterData2.png "Maker Journey Starter Data 2")
+
+1. Hit the folder icon and chose the correct file
+    - Categories : asessmentcategories.xlsx
+    - Questions: assessments.xlsx
+    - Answers: answeroptions.xlsx
+
+1. Hit the drop down on Table and chose the correct Table (Table1 if you do not change the files)
+
+1. At this point, you call is resolved and will look like this
+
+    ![Maker Journey Starter Data 3](media/MakerJourneyStarterData3.png "Maker Journey Starter Data 3")
+
+1. Do the above for all three calls to Excel
+
+1. Save the flow and return to the flow details page
+
+1. Turn on the **Maker Assessment | Import starter data** flow and run it once to populate the initial set of questions and answer options for the [Maker Assessment](nurture-components.md#maker-assessment) app.
+
+>[!NOTE]
+>If you see this error trying to run the flow, you have hit a product bug but it's easy to overcome. <br>
+Hit Cancel on the run, close the browser window, reopen the flow, and try again. <br>
+> ![Maker Journey Starter Data Error](media/MakerJourneyStarterDataError.png "Maker Journey Starter Data Error")
+
 ## Update environment variables
 
 Environment variables are used to store application and flow configuration data. This means that you only have to set the value once per environment and it will be used in all necessary flows and apps in that environment.
@@ -135,9 +177,9 @@ All flows in this solution depend on all environment variables' being configured
 >[!TIP]
 >To view all environment variables in the environment, open the default solution for the environment, and set the **Type** filter to **Environment variable**.
 
-1. Select **See Environment Variables** to set the values as described in the following table.
+1. Select **See Environment Variables** to set the current values as described in the following table.
 
-| Name | Default value |
+| Name | Description |
 |------|---------------|
 | Training in a day - Feedback Form     | The Training in a Day package includes a flow that automatically sends a feedback request to attendees on the day of the event. Configure the form URL (<https://forms.office.com/>...) here.    |
 | Power User Site URL (SharePoint Site) | The site that your Microsoft Power Platform power users can use to communicate and share files. You'll use it here to house the template library for them. |
@@ -161,23 +203,6 @@ The nurture components solution contains five flows:
 -  Training in a day \| Reminder 3 days prior to event
 
 Follow the same instructions to configure the flows as explained in [Activate the sync template flows](setup-core-components.md#activate-the-sync-template-flows).
-
-
-
-## Set up a feedback form for your Training in a day
-
-1. Go to [forms.office.com](https://forms.office.com).
-1. Select **New Form**.
-1. Enter **Microsoft Power Platform Training Feedback** for the title.
-1. Select **+ Add New** to add the following questions:
-    1. Rating: **Please rate the training course**
-    1. Text: **What went well?**
-    1. Text: **What didn't go well?**
-1. Select **Share**, and copy the link for **Send and collect responses**.
-
-    ![Copy the feedback form URL to send and collect responses](media/nurture-feedback.png "Copy the feedback form URL to send and collect responses")
-
-1. Paste the link into the default value of your *Training in a day - Feedback Form* environment variable.
 
 ## Share apps with your organization
 
