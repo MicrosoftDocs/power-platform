@@ -24,14 +24,14 @@ With the exception of your development environment, the end result is to only ha
 
 You can take either of the approaches described here.
 
-## First approach
+## Small project conversions
 
 For smaller, less complex projects, you can consolidate all your unmanaged solutions into a single unmanaged solution. Then, export the unmanaged solution as managed to import into your test and production environments. 
 
-## Second approach
+## Large or complex conversions
 Larger, more complex projects require these tasks:
 
-1.   Plan carefully, especially when the outcome you want is to use solution layering properly.
+1. Plan carefully, especially when the outcome you want is to use solution layering properly.
 
 2. Understand and identify the base, common, and app solution layers. Then, create solutions that adhere to the following structure:
    - Base layer. This solution will provide the foundation for modular solution development. The base solution should contain just entity and entity metadata without entity components, such as columns and table relationships. The base solution can be used for the deployment of multiple apps.
