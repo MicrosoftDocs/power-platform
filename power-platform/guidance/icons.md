@@ -27,7 +27,9 @@ This article provides information about the official collection of icons for Mic
 
 ## Icon updates
 
-### April 2021
+|Month|Change description|
+|---|---|
+|May 2021|This article was created with the download location of the official icons.|
 
 This article was created with the download location of the official icons.
 
