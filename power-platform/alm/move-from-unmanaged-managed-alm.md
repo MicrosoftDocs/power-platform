@@ -22,13 +22,13 @@ contains several unmanaged solutions or your customizations were done in the def
 
 With the exception of your development environment, the end result is to only have managed solutions in your environments. More information: [Managed and unmanaged solutions](solution-concepts-alm.md#managed-and-unmanaged-solutions).
 
-You can take either of the approaches described here.
+You can take either of the unmanaged to managed conversion approaches described here.
 
 ## Small project conversions
 
 For smaller, less complex projects, you can consolidate all your unmanaged solutions into a single unmanaged solution. Then, export the unmanaged solution as managed to import into your test and production environments. 
 
-## Large or complex conversions
+## Large or complex project conversions
 
 Larger, more complex projects require the following tasks.
 
