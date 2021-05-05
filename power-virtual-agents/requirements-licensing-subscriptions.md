@@ -2,7 +2,7 @@
 title: "Get access to Power Virtual Agents"
 description: "Compare the capabilities you can access in Power Virtual Agents depending on whether you have a Microsoft 365 subscription or standalone Power Virtual Agents subscription."
 keywords: "Administration, licensing, PVA, standalone, compare, comparison"
-ms.date: 1/21/2021
+ms.date: 5/4/2021
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -25,9 +25,11 @@ Power Virtual Agents for Microsoft Teams enables customers to build conversation
 
 Capabilities available in the Power Virtual Agents app in Microsoft Teams are available as part of select Microsoft 365 subscriptions with Microsoft Power Platform and Microsoft Teams capabilities, excluding plans for US government environments (GCC, GCC High, and DoD) and EDU A1 and SUB SKUs.
 
-Power Virtual Agents availability in GCC and GCC High plans are estimated to be generally available by June 2021. See the [Power Virtual Agents Community](https://powerusers.microsoft.com/t5/Power-Virtual-Agents-Community/ct-p/PVACommunity) for more information and to request assistance. 
+Power Virtual Agents availability in GCC and GCC High plans are estimated to be generally available by June 2021. For more information and to request assistance, visit the [Power Virtual Agents Community](https://powerusers.microsoft.com/t5/Power-Virtual-Agents-Community/ct-p/PVACommunity). 
 
-This table compares capabilities in the Power Virtual Agents for Microsoft Teams plan, which is available in select Microsoft 365 subscriptions, against the standalone Power Virtual Agents subscription. 
+This table compares key capabilities in the Power Virtual Agents for Microsoft Teams plan, which is available in select Microsoft 365 subscriptions, against the standalone Power Virtual Agents subscription. For a full list of difference, see the [Microsoft Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
+
+Also see the [Quotas, limits, and configuration values](requirements-quotas.md) topic for other capacity considerations.
 
 
 Capability | Select Microsoft 365 subscriptions | Power Virtual Agents subscription
@@ -45,7 +47,9 @@ Similarly, use rights and functionality available as part of paid, standalone Po
 ### Upgrading your license
 To access the full range of Power Virtual Agents capabilities, you need to upgrade your plan to a standalone Power Virtual Agents subscription. 
 
-You can upgrade from within the Power Virtual Agents app for Microsoft Teams when prompted, as in the following example when publishing to additional channels:
+After you upgrade your license, you can continue using the same bot in the same environment. Capabilities that were previously only available in a standalone license will now be available. These capabilities may include those that result in [billed sessions that require Power Virtual Agents capacity](analytics-billed-sessions.md)).
+
+You can upgrade from within the Power Virtual Agents app for Microsoft Teams when prompted, as in the following example when publishing to other channels:
    
 :::image type="content" source="media/upgrade-channels.png" alt-text="You need an upgraded license to publish to channels other than Teams.":::
 

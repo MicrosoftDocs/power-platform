@@ -23,7 +23,7 @@ Version 1.4 for the CoE Starter Kit Audit Log Components is now available. This 
 
 ## Cloud flows
 
-Cloud flows have been updated to use the Common Data Service (current environment) connector to increase reliability and performance.
+Cloud flows have been updated to use the Microsoft Dataverse (current environment) connector to increase reliability and performance.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
