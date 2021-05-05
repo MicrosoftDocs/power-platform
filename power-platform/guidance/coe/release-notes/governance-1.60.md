@@ -1,6 +1,6 @@
 ---
-title: "Release notes and latest version of the CoE starter kit Governance components 1.50 | MicrosoftDocs"
-description: "Release notes and latest version of the CoE starter kit Governance components 1.50."
+title: "Release notes and latest version of the CoE starter kit Governance components 1.60 | MicrosoftDocs"
+description: "Release notes and latest version of the CoE starter kit Governance components 1.60."
 author: manuelap-msft
 manager: devkeydet
 ms.service: power-platform
@@ -17,21 +17,9 @@ search.app:
   - Powerplatform
 ---
 
-# Released version Governance Components 1.50
+# Released version Governance Components 1.60
 
-Version 1.50 for the CoE Starter Kit Governance Components is now available. This article describes the updates, including the new features and the fixes to existing functionality, included in this release. This version was first made available on April 8, 2021.
-
-## Developer Compliance Center
-
-The Developer Compliance Center canvas app has been updated to use responsive layout containers and a new theme.
-
-## App and Flow Archive and Clean Up view
-
-Previously a model driven app, this has now been replaced with a canvas app to enable solution import into Dataverse for Teams.
-
-## Exclude Default Environment from Compliance Flows
-
-A new environment variable (Exclude Default from Compliance) has been added, to exclude the Default Environment from the Admin | Compliance Detail Request flows.
+Version 1.50 for the CoE Starter Kit Governance Components is now available. This article describes the updates, including the new features and the fixes to existing functionality, included in this release. This version was first made available on May 5, 2021.
 
 ## Moving components to Core
 
