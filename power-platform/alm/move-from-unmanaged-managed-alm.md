@@ -29,17 +29,20 @@ You can take either of the approaches described here.
 For smaller, less complex projects, you can consolidate all your unmanaged solutions into a single unmanaged solution. Then, export the unmanaged solution as managed to import into your test and production environments. 
 
 ## Large or complex conversions
-Larger, more complex projects require these tasks:
+
+Larger, more complex projects require the following tasks.
 
 1. Plan carefully, especially when the outcome you want is to use solution layering properly.
 
-2. Understand and identify the base, common, and app solution layers. Then, create solutions that adhere to the following structure:
+2. Understand and identify the base, common, and app solution layers.
+
+    <img src = "media/solution-conversion-layers.png" alt = "Solution layers for deploying an app" width = "350" height = "125">
+
+   Then, create solutions that adhere to the following structure:
    - Base layer. This solution will provide the foundation for modular solution development. The base solution should contain just entity and entity metadata without entity components, such as columns and table relationships. The base solution can be used for the deployment of multiple apps.
    - Common layer. Components that are common and/or shared with other solutions are contained in the common solution. The common solution can be used for the deployment of multiple apps.
    - App layer. This solution includes just the components specific to the app. Each app should be structured so that this solution includes all app components in one solution. This solution will contain the tables and components for the app, such as columns, forms, views, and charts. We recommend that you don’t share these components across different apps.
    
-     <img src = "media/solution-conversion-layers.png" alt = "Solution layers for deploying an app" width = "350" height = "125">
-
 3. Identify and remove unnecessary tables and components.
    - Look for tables that can be deleted from the solution. Here's some examples:
       - Tables with no new records created within in last 18 months.
