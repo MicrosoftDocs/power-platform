@@ -31,11 +31,13 @@ The Power BI dashboard has been updated to use Direct Query to connect to Micros
 
 Viewers of the Power BI Dashboard will need read access to the Dataverse tables to view data.
 
-You will no longer need a scheduled refresh to refresh the Power BI dataset, as the data in the dashboard will always be as up to date as the data in the Dataverse tables. 
+You will no longer need a scheduled refresh to refresh the Power BI dataset, as the data in the dashboard will always be as up to date as the data in the Dataverse tables.
 
-## Moving components from Nurture
+## Moving components from Nurture and Governance
 
 Admin | Welcome email (flow) and App catalog (canvas app) have been moved from Nurture components to Core components in an effort to allow Nurture components to be used standalone.
+
+Admin | Compliance detail request has been moved from Governance components to Core components to accommodate changes to make this flow compatible with Dataverse for Teams environments.
 
 ## Bug fixes
 
