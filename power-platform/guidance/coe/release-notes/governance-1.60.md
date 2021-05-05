@@ -19,7 +19,7 @@ search.app:
 
 # Released version Governance Components 1.60
 
-Version 1.50 for the CoE Starter Kit Governance Components is now available. This article describes the updates, including the new features and the fixes to existing functionality, included in this release. This version was first made available on May 5, 2021.
+Version 1.60 for the CoE Starter Kit Governance Components is now available. This article describes the updates, including the new features and the fixes to existing functionality, included in this release. This version was first made available on May 5, 2021.
 
 ## Moving components to Core
 
