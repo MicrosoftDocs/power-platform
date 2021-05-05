@@ -90,9 +90,7 @@ This is the first step of the installation process and is required for every oth
     | Developer Compliance Center         | Navigate to the details page of the Developer Compliance Center (canvas app) included with this solution, and copy the web link (to launch the app) and paste it into this variable.  |
     | Community URL         | Link to your internal Microsoft Power Platform community (for example, Yammer or Teams).  |
 
-<br>
-
-     ![Update environment variable values](media/msi-envvar.png "Update environment variable values")
+    ![Update environment variable values](media/msi-envvar.png "Update environment variable values")
 
 1. Select **Import**.
 

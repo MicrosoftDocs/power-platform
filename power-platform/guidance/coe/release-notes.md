@@ -28,7 +28,7 @@ Select each version below to see release notes and updates for each component. Y
 | Core (Admin) Components |   [2.0](release-notes/core-2.0.md)    |
 | Core (Admin) for Teams Components |   [1.6](release-notes/coreteams-1.5.md)    |
 | Governance (Compliance and Reporting) Components |   [1.50](release-notes/governance-1.50.md)  |
-| Nurture Components |   [1.40](release-notes/nurture-1.30.md)  |
+| Nurture Components |   [1.40](release-notes/nurture-1.40.md)  |
 | Audit Log |   [1.5](release-notes/auditlog-1.5.md) |
 | Theming Components |   [1.1](release-notes/theming-1.1.md) |
 | ALM Accelerator for Makers |   [1.1](release-notes/almhelper-1.1.md) |
