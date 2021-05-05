@@ -234,7 +234,6 @@ The [sync flows](#flows) of the CoE Starter Kit sync your tenant resources to th
 
 ## Flows
 
-
 | Flow Name | Type | Interval | Description |
 | ---- | ---- | --- | ---- |
 | Admin \| Sync Template v3 | Schedule | Daily | This flow retrieves the environments in your tenant by using [List Environments as Admin](https://docs.microsoft.com/connectors/powerplatformforadmins/#list-environments-as-admin), and creates or updates a record for each environment in the Dataverse Environment table. Running this flow will also trigger the rest of the sync flows indirectly by updating the environment records in the Dataverse instance.

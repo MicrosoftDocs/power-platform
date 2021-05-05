@@ -45,9 +45,13 @@ The sync flows in the Core Component solution will only update resources that ha
 
 Model Driven Apps, Business Process Flows and Custom Connectors are not available in Dataverse for Teams. If you are installing the CoE Starter Kit in Dataverse for Teams, you will notice those components missing.
 
-## Flows that use the Common Data Service (Current Environment) connector
+## Flows that use the Microsoft Dataverse (Current Environment) connector
 
-The Admin | Sync Template v3 (Flows) and CLEANUP - Admin | Sync Template v3 (Connection Status) will fail to collect inventory information for flows that use the Common Data Service (Current Environment) connector. The [Get Flow as Admin](/connectors/flowmanagement/) currently has a limitation, where flows using that connector cannot be retrieved.
+The Admin | Sync Template v3 (Flows) and CLEANUP - Admin | Sync Template v3 (Connection Status) will fail to collect inventory information for flows that use the Microsoft Dataverse (Current Environment) connector. The [Get Flow as Admin](/connectors/flowmanagement/) currently has a limitation, where flows using that connector cannot be retrieved.
+
+## Flows that are imported or owned by a service principle
+
+The Admin | Sync Template v3 (Flows) flow will fail to collect inventory information for flows that were imported or are owned by a service principle.
 
 ## Timeouts in the Admin | Sync Template v3
 
