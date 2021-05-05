@@ -23,7 +23,7 @@ You can use the **Set Personal Options** dialog box in customer engagement apps 
   
 - Select the **Settings** button ![Options button](media/optionsbutton.png "Options button") in the upper-right corner of the screen, and then select **Options**.  
   
-  The following table summarizes the tracking and synchronization options available in the **Set Personal Options** dialog box. The **Available** column indicates whether the option is available in customer engagement apps. This column also indicates if the option is available for [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] synchronization, server-side synchronization (also known as "[!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] synchronization"), or both. More information: [Frequently asked questions about synchronizing records between customer engagement apps and Microsoft Outlook](frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook.md)  
+  The following table summarizes the tracking and synchronization options available in the **Set Personal Options** dialog box. The **Available** column indicates whether the option is available in customer engagement apps. This column also indicates if the option is available for [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] synchronization, server-side synchronization (also known as "[!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] synchronization"), or both. More information: [Frequently asked questions about synchronizing records between customer engagement apps and Microsoft Outlook](frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook.yml)  
   
 | To   | On this tab   | In this section  | See this option  | Available  |    
 |----|----|---|---|---|
@@ -50,7 +50,7 @@ You can use the **Set Personal Options** dialog box in customer engagement apps 
   
 ### See also  
  [Track Outlook email by moving it to a tracked Exchange folder](track-outlook-email-by-moving-it-tracked-exchange-folder.md)   
- [Frequently asked questions about synchronizing records between customer engagement apps and Microsoft Outlook](frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook.md)   
+ [Frequently asked questions about synchronizing records between customer engagement apps and Microsoft Outlook](frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook.yml)   
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
