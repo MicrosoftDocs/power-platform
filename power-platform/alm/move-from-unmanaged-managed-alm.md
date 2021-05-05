@@ -55,11 +55,9 @@ Larger, more complex projects require these tasks:
     - After you complete this step, this environment can be used for isolated development of the base solutions.<br/>   Plug-ins can reside in separate solutions, because the assemblies themselves don't generate dependencies.
 
 5. Use a wave conversion model.
-   - Deploy solutions in waves to convert them into managed.
-   - When possible, group solutions together when deploying to avoid downtime. For example, import the base solution, followed by the common solution, and then the app solution.
-   - Move solutions with downtime requirements to the final wave so there’s only one wave with downtime.
+   - If you have 10 or more solutions to convert from unmanaged to managed, group the solutions together and import them as a wave. The base followed by the common solution should be in the group for the first wave, so that they can be imported as managed solutions in all development environments before you convert your app solutions to managed. 
+   - Group any solutions that cause downtime during trials into the final wave. Then, you will only have a single downtime event for the entire conversion process.
    - Implement trial runs on production copies.
-   - Integrations downtime impact.
    - Development environment refresh process should include the common solution imported as managed to all development environments. This should be done after every wave deployment.
 
 6. Test the managed solution.
