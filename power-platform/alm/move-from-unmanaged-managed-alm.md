@@ -38,7 +38,7 @@ Larger, more complex projects require these tasks:
    - Common layer. Components that are common and/or shared with other solutions are contained in the common solution. The common solution can be used for the deployment of multiple apps.
    - App layer. This solution includes just the components specific to the app. Each app should be structured so that this solution includes all app components in one solution. This solution will contain the tables and components for the app, such as columns, forms, views, and charts. We recommend that you don’t share these components across different apps.
    
-   <img src = "media/solution-conversion-layers.png" alt = "Solution layers for deploying an app" width = "350" height = "125">
+     <img src = "media/solution-conversion-layers.png" alt = "Solution layers for deploying an app" width = "350" height = "125">
 
 3. Identify and remove unnecessary tables and components.
    - Look for tables that can be deleted from the solution. Here's some examples:
