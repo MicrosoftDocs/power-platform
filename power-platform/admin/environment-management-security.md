@@ -23,13 +23,13 @@ The following table shows what admin roles are required to do tasks for various 
 <table>
 <thead>
   <tr>
-    <th></th>
+    <th><strong>Tasks</strong></th>
     <th colspan="7">Security roles</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td>Tasks</td>
+    <td></td>
     <td>Role 1</td>
     <td>Role 2</td>
     <td>Role 3</td>
