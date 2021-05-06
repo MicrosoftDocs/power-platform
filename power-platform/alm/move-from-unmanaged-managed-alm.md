@@ -49,7 +49,9 @@ Larger, more complex projects require the following tasks.
       - Tables and components that have no dependencies. More information: [View dependencies for a component](/powerapps/maker/data-platform/view-component-dependencies)
       - Components, such as forms, views, and charts, that are associated with deleted or unused tables and don't have any data.
    - Be aware that some [System tables don’t support unmanaged layers](#system-tables-that-dont-support-unmanaged-layers).
-   - Be aware that there are a few system tables that can lead to issues when you customize them and later import them as managed. More information: [Customization for deeply integrated system tables](#customization-for-deeply-integrated-system-tables)
+   - Be aware that there are a few system tables that can lead to issues when you customize them and later import them as managed. More information: [Customization of deeply integrated system tables](#customization-of-deeply-integrated-system-tables)
+   - For Power Apps portals app conversions, consider building a tool to search for components to eliminate, such as components without dependencies.
+      - For example, the tool can be a console app that generates a .CSV output file, which displays table forms and views used by Portals apps. The output file can be used to determine dependencies between a portals app and table forms and views.
 
 4. Consider building a tool to generate the base solution.
    - The tool's purpose is to work around cross-component dependencies and is used temporarily while building the base solution.
