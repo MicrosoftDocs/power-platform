@@ -83,10 +83,6 @@ The Dataverse connector might experience some throttling limits if the tenant ha
 
 The app currently doesn't work for custom connectors that are installed as part of a managed solution. -->
 
-## Government Community Cloud (GCC) environments
-
-Embedding Power Apps canvas apps in Power BI dashboards isn't available for GCC environments yet.
-
 ## Developer environments from the Power Apps Community Plan
 
 Microsoft Power Platform protects developer-type SKUs from inquiry by non-authenticated users. This configuration means that the model-driven apps in developer SKUs will be skipped from our tally work in the sync flow Admin | Sync Template v3 (Model Driven Apps).
