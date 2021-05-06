@@ -399,18 +399,18 @@
  #     - name: "Preview: Tenant-level analytics" 
  #       href: tenant-level-analytics.md
  # Comment out the following section before publishing to live
-      # - name: Analyze telemetry with Application Insights
-      #   items:
-      #   - name: Model-driven apps and Microsoft Dataverse telemetry
-      #     href: analyze-telemetry.md
-      #   - name: Overview of integration with Application Insights
-      #     href: overview-integration-application-insights.md
-      #   - name: Telemetry events for model-driven apps 
-      #     href: telemetry-events-model-driven-apps.md
-      #   - name: Telemetry events for Dataverse
-      #     href: telemetry-events-dataverse.md   
-      #   - name: Set up export to Application Insights
-      #     href: set-up-export-application-insights.md
+      - name: Analyze telemetry with Application Insights
+        items:
+        - name: Model-driven apps and Microsoft Dataverse telemetry
+          href: analyze-telemetry.md
+        - name: Overview of integration with Application Insights
+          href: overview-integration-application-insights.md
+        - name: Telemetry events for model-driven apps 
+          href: telemetry-events-model-driven-apps.md
+        - name: Telemetry events for Dataverse
+          href: telemetry-events-dataverse.md   
+        - name: Set up export to Application Insights
+          href: set-up-export-application-insights.md
     - name: Storage
       items: 
       - name: What's new for storage
@@ -511,7 +511,7 @@
         href: web-application-requirements.md
       - name: Server cipher suites and TLS requirements
         href: server-cipher-tls-requirements.md
-    - name: Security
+    - name: Security and governance
       items:
       - name: Overview
         href: wp-security.md     

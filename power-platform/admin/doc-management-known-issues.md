@@ -93,7 +93,17 @@ Documents of a child entity only appear in the parent documents folder when the 
 ## Document folder location for multiple lookups
 If the entity selected for the Based on entity folder structure has two lookups, documents will not be stored inside the entity folder, but will be stored in the root folder. For example, if the Based on entity folder structure is set to Account, and you have an entity with two lookup accounts, such as Work Order, the documents related to Work Orders will not be stored inside any account document location, but will be stored in the root folder.
 
+## Entering a date for OneNote documents
+
+In order to add a date to a OneNote document, you can open the OneNote document and double click on the field under the title line. This allows you to enter the date field and save the document. 
+
+:::image type="content" source="media/date_onenote_documents.png" alt-text="Double click the date field.":::
+
 ## Known issues
+
+### SharePoint Integration does not support the Dynamics Editable Grid
+
+SharePoint Integration is not able to work with the Dynamics Editable Grid. Using the editable grid for SharePoint will have known side effects that prevent SharePoint Integration from working fully.
 
 ### Maximum number of rows not honored in the document associated grid
 
