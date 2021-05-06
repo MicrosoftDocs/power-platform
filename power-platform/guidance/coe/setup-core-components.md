@@ -83,11 +83,11 @@ This is the first step of the installation process and is required for every oth
     | Name | Description |
     |------|---------------|
     |Also Delete from CoE | Recommend Yes here to delete objects from the CoE inventory when they are deleted from the tenant. No will keep a record that an app or flow existed in the past |
-    |Approval Admin | Email address used in flows to send approvals to admins; this cannot be a distribution list |
+    |Approval Admin | The email address used in flows to send approvals to admins; this cannot be a distribution list. |
     | Power Platform Maker Microsoft 365 Group | The Admin \| Welcome Email flow sends a welcome email to onboard new makers and adds them to a Microsoft 365 group. You can use this group to send communications to your makers or invite them to a Yammer or Teams group. Configure the group ID here.|
     |Power Automate environment variable | The URL used by flow for your region. Here are examples:<br> For a US environment: <https://us.flow.microsoft.com/manage/environments/> <br> For a Canadian environment: <https://canada.flow.microsoft.com/manage/environments/> <br>For an EMEA environment: <https://emea.flow.microsoft.com/manage/environments/> <br>For a GCC environment: <https://gov.flow.microsoft.us/manage/environments/> |
     |Admin eMail |Admin eMailed with this solution, and copy the web link (to launch the app) and paste it into this variable. This environment variable is not used until you adopt the Developer Compliance Center.  |
-    | Developer Compliance Center         | Navigate to the details page of the Developer Compliance Center (canvas app) included with this solution, and copy the web link (to launch the app) and paste it into this variable.  |
+    | Developer Compliance Center         | Filled in after install of Governance solution. And described in those steps. <br> Navigate to the details page of the Developer Compliance Center (canvas app) included with this solution, and copy the web link (to launch the app) and paste it into this variable.  |
     | Community URL         | Link to your internal Microsoft Power Platform community (for example, Yammer or Teams).  |
 
     ![Update environment variable values](media/msi-envvar.png "Update environment variable values")
