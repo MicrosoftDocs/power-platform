@@ -44,3 +44,8 @@ I agree to the above terms
 
  > [!div class="button"]
  > [Download SVG icons](https://www.microsoft.com)
+
+### See also
+
+[Azure icons](https://docs.microsoft.com/azure/architecture/icons)<br/>
+[Dynamics 365 icons](https://docs.microsoft.com/dynamics365)
