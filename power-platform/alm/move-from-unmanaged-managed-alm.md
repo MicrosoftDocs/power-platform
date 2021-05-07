@@ -60,8 +60,8 @@ Larger, more complex projects require the following tasks.
 5. Copy your development environment to the sandbox environment.
     
     - Isolate the components of the base solution by removing all components that won't be members from the active layer.
-
     - After you complete this step, this environment can be used for isolated development of the base solutions.<br/>   Plug-ins can reside in separate solutions, because the assemblies themselves don't generate dependencies.
+    -  The development environment refresh process should include the common solution imported as managed to all development environments. This should be done after every wave deployment.
 
 6. Test the managed solution.
    - The test environment should be as similar to the production environment as possible.
@@ -77,7 +77,6 @@ Larger, more complex projects require the following tasks.
    - If you have 10 or more solutions to convert from unmanaged to managed, group the solutions together and import them as a wave. The base followed by the common solution should be in the group for the first wave, so that they can be imported as managed solutions in all development environments before you convert your app solutions to managed. 
    - Group any solutions that cause downtime during trials into the final wave. Then, you will only have a single downtime event for the entire conversion process.
    - Implement trial runs on production copies.
-   - The development environment refresh process should include the common solution imported as managed to all development environments. This should be done after every wave deployment.
 
 8. Repeat steps 5-7 for any modular solutions that extend the common components layer.
 
