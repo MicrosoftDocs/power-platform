@@ -39,17 +39,17 @@ To help diagnose the issue, let's determine if the problem is with the Dynamics 
    > [!NOTE]
    > Do not use test connection on the emailserver profile as in certain scenarios can misrepresent what the real issue is. Instead please configure a test mailbox associate it to the emailserver profile and test and enable it. Jim question: I need clarification on this as I don't understand text.
 
-  |Field/setting  |Value  |
-  |---------|---------|
-  |Target mailbox email address     | For example: aTestMailbox@contoso.com        |
-  |Authentication type     |  Select **Basic authentication**.        |
-  |Microsoft Account     | You'll need an [impersonation account](/exchange/client-developer/exchange-web-services/impersonation-and-ews-in-exchange) (imp_acc_1) configured on Microsoft Exchange on-premises with impersonation access for all the mailboxes you wish to test synchronization.        |
-  |Password     |         |
-  |Use Autodiscover to detect server settings <br /> Specify Exchange Web Services URL    | Use Autodiscover if you want to use the automatically discover service to determine the server location. Specify an EWS URL (for example, https://contoso.yourdomain.com/EWS/Exchange.asmx) to locate the email server manually.       |
-  |Test predefined folder      | Select this option.        |
-  |Use Exchange Impersonation     | Enable this to test synchronization for multiple mailboxes.        |
-  |Impersonated user     | Jim question: how is this different from Microsoft account?    |
-  |Impersonated user identifier     |  Select **SmtpAddress**.       |
+   |Field/setting  |Value  |
+   |---------|---------|
+   |Target mailbox email address     | For example: aTestMailbox@contoso.com        |
+   |Authentication type     |  Select **Basic authentication**.        |
+   |Microsoft Account     | You'll need an [impersonation account](/exchange/client-developer/exchange-web-services/impersonation-and-ews-in-exchange) (imp_acc_1) configured on Microsoft Exchange on-premises with impersonation access for all the mailboxes you wish to test synchronization.        |
+   |Password     |         |
+   |Use Autodiscover to detect server settings <br /> Specify Exchange Web Services URL    | Use Autodiscover if you want to use the automatically discover service to determine the server location. Specify an EWS URL (for example, https://contoso.yourdomain.com/EWS/Exchange.asmx) to locate the email server manually.       |
+   |Test predefined folder      | Select this option.        |
+   |Use Exchange Impersonation     | Enable this to test synchronization for multiple mailboxes.        |
+   |Impersonated user     | Jim question: how is this different from Microsoft account?    |
+   |Impersonated user identifier     |  Select **SmtpAddress**.       |
 
 3. Fill in remaining values as appropriate and select **Perform Test**.
 
