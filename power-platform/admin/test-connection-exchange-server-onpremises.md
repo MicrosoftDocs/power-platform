@@ -18,4 +18,13 @@ search.app:
 ---
 # Test connection to Exchange Server (on-premises)
 
-<!-- legacy procedure -->
+
+
+
+
+
+
+
+
+
+Please work on extracting info from internal doc what you think makes most sense. To get started  I could think of avoiding the scenario, some unify snapshots, response options could be simplified in an official language. As few of things could not be used by end customer and are relevant only to support folks. The intent is to make it usable for end users to test their end point and it may just mean running the test analyzer tool with the right information. 
