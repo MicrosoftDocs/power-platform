@@ -22,7 +22,7 @@ The following guidance is for those having issues with connecting Dynamics 365 O
 
 Dynamics 365 is hosted on Microsoft Azure. Server-side sync will try to initiate an HTTP connection to the Exchange Web Services (EWS) endpoint configured by the customer on the email server profile associated to the mailbox. The EWS endpoint is an internet-facing HTTP accessible resource which can be accessed from outside the customer network.
 
-> ![Scenario for troubleshooting connection issues](media/get-customer-insights720.png "Scenario for troubleshooting connection issues")
+![Scenario for troubleshooting connection issues](media/troubleshooting-scenario.png "Scenario for troubleshooting connection issues")
 
 Take Dynamics out of the picture
 Server side sync uses the EWS protocol to connect to Exchange onpremise and perform mailbox sync. Troubleshooting exchange onpremise issues can be really time consuming and not actionable for SSS team or even not actionable for Dynamics customer support as the issue usually is on customer side.
