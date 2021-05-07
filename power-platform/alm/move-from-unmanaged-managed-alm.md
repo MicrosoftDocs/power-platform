@@ -63,13 +63,7 @@ Larger, more complex projects require the following tasks.
 
     - After you complete this step, this environment can be used for isolated development of the base solutions.<br/>   Plug-ins can reside in separate solutions, because the assemblies themselves don't generate dependencies.
 
-6. Use a wave conversion model.
-   - If you have 10 or more solutions to convert from unmanaged to managed, group the solutions together and import them as a wave. The base followed by the common solution should be in the group for the first wave, so that they can be imported as managed solutions in all development environments before you convert your app solutions to managed. 
-   - Group any solutions that cause downtime during trials into the final wave. Then, you will only have a single downtime event for the entire conversion process.
-   - Implement trial runs on production copies.
-   - The development environment refresh process should include the common solution imported as managed to all development environments. This should be done after every wave deployment.
-
-7. Test the managed solution.
+6. Test the managed solution.
    - The test environment should be as similar to the production environment as possible.
    - If there's any app downtime during the unmanaged to managed conversion from the development environment to the test environment, make a note of it. This helps you determine how much time to a lot for when deploying to production:
       - App that's imported.
@@ -79,7 +73,13 @@ Larger, more complex projects require the following tasks.
       - Schedule outside of unmanaged to managed conversion window.
       - Schedule outside hours for regular deployments as well.
 
-8. Repeat the process for any modular solutions that extend the common components layer.
+7. Use a wave conversion model.
+   - If you have 10 or more solutions to convert from unmanaged to managed, group the solutions together and import them as a wave. The base followed by the common solution should be in the group for the first wave, so that they can be imported as managed solutions in all development environments before you convert your app solutions to managed. 
+   - Group any solutions that cause downtime during trials into the final wave. Then, you will only have a single downtime event for the entire conversion process.
+   - Implement trial runs on production copies.
+   - The development environment refresh process should include the common solution imported as managed to all development environments. This should be done after every wave deployment.
+
+8. Repeat steps 5-7 for any modular solutions that extend the common components layer.
 
     -   Create a copy of the original development environment, and remove the unmanaged solutions that hold references to the common components.
 
