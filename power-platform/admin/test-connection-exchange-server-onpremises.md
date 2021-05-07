@@ -18,21 +18,45 @@ search.app:
 ---
 # Test connection to Exchange Server (on-premises)
 
-The following guidance is for those having issues with connecting Dynamics 365 Online to a mailbox hosted on their Microsoft Exchange on-premise deployment using server-side synchronization.
+The following guidance is for those having issues with connecting customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation) to a mailbox hosted on their Microsoft Exchange on-premise deployment using server-side synchronization.
 
-Dynamics 365 is hosted on Microsoft Azure. Server-side sync will try to initiate an HTTP connection to the Exchange Web Services (EWS) endpoint configured by the customer on the email server profile associated to the mailbox. The EWS endpoint is an internet-facing HTTP accessible resource which can be accessed from outside the customer network.
+Dynamics 365 is hosted on Microsoft Azure. During configuration, server-side sync will try to initiate an HTTP connection to the Exchange Web Services (EWS) endpoint configured by the customer on the email server profile associated to the mailbox. The EWS endpoint is an internet-facing HTTP accessible resource which can be accessed from outside the customer network.
 
 ![Scenario for troubleshooting connection issues](media/troubleshooting-scenario.png "Scenario for troubleshooting connection issues")
 
-Take Dynamics out of the picture
-Server side sync uses the EWS protocol to connect to Exchange onpremise and perform mailbox sync. Troubleshooting exchange onpremise issues can be really time consuming and not actionable for SSS team or even not actionable for Dynamics customer support as the issue usually is on customer side.
+## Determine if the issue is with Dynamics 365
 
-Once we can show to the customer that even the connection/request from external testing tools is not working, Dynamics customer support should engage Exchange onpremise team for further troubleshooting.
+To help diagnose the issue, let's determine if the problem is with the Dynamics 365 Online connection.
 
+### Test connection with the Microsoft Remote Connectivity Analyzer
 
+1. Open https://testconnectivity.microsoft.com/tests/O365EwsAccess/input 
 
-> [!NOTE]
-> Do not use test connection on the emailserver profile as in certain scenarios can misrepresent what the real issue is. Instead please configure a test mailbox associate it to the emailserver profile and test and enable it.
+2. Fill in the following values:
 
+   To find these values, select an environment in the Power Platform admin center, go to **Settings** > **Email** > **Server profiles** > select the **Exchange Server (Hybrid)** profile.
 
-Please work on extracting info from internal doc what you think makes most sense. To get started  I could think of avoiding the scenario, some unify snapshots, response options could be simplified in an official language. As few of things could not be used by end customer and are relevant only to support folks. The intent is to make it usable for end users to test their end point and it may just mean running the test analyzer tool with the right information. 
+   > [!NOTE]
+   > Do not use test connection on the emailserver profile as in certain scenarios can misrepresent what the real issue is. Instead please configure a test mailbox associate it to the emailserver profile and test and enable it. Jim question: I need clarification on this as I don't understand text.
+
+  |Field/setting  |Value  |
+  |---------|---------|
+  |Target mailbox email address     | For example: aTestMailbox@contoso.com        |
+  |Authentication type     |  Select **Basic authentication**.        |
+  |Microsoft Account     | You'll need an [impersonation account](/exchange/client-developer/exchange-web-services/impersonation-and-ews-in-exchange) (imp_acc_1) configured on Microsoft Exchange on-premises with impersonation access for all the mailboxes you wish to test synchronization.        |
+  |Password     |         |
+  |Use Autodiscover to detect server settings <br /> Specify Exchange Web Services URL    | Use Autodiscover if you want to use the automatically discover service to determine the server location. Specify an EWS URL (for example, https://contoso.yourdomain.com/EWS/Exchange.asmx) to locate the email server manually.       |
+  |Test predefined folder      | Select this option.        |
+  |Use Exchange Impersonation     | Enable this to test synchronization for multiple mailboxes.        |
+  |Impersonated user     | Jim question: how is this different from Microsoft account?    |
+  |Impersonated user identifier     |  Select **SmtpAddress**.       |
+
+3. Fill in remaining values as appropriate and select **Perform Test**.
+
+   :::image type="content" source="media/remote-connectivity-analyzer.png" alt-text="Microsoft Remote Connectivity Analyzer":::
+
+### Test results
+
+If the connectivity test is **not** successful, the issue is not with Dynamics 365 Online but could be with Microsoft Exchange on-premises configuration. The next step is to revisit your Microsoft Exchange server configuration and if necessary contact Microsoft Exchange on-premises support.  <--- Jim question. How do customers do this?
+
+If the connectivity test is succcessful, contact [Support](get-help-support.md) to further analyze the source of the issue.
