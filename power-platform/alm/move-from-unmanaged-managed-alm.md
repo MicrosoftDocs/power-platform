@@ -66,7 +66,6 @@ Larger, more complex projects require the following tasks.
 6. Use a wave conversion model.
    - If you have 10 or more solutions to convert from unmanaged to managed, group the solutions together and import them as a wave. The base followed by the common solution should be in the group for the first wave, so that they can be imported as managed solutions in all development environments before you convert your app solutions to managed. 
    - Group any solutions that cause downtime during trials into the final wave. Then, you will only have a single downtime event for the entire conversion process.
-   - Implement trial runs on production copies.
 
 7. Test the managed solution.
    - The test environment should be as similar to the production environment as possible.
@@ -77,6 +76,7 @@ Larger, more complex projects require the following tasks.
    - Integration scheduling:
       - Schedule outside of unmanaged to managed conversion window.
       - Schedule outside hours for regular deployments as well.
+
 8. Repeat steps 5-7 for any modular solutions that extend the common components layer.
 
     -   Create a copy of the original development environment, and remove the unmanaged solutions that hold references to the common components.
