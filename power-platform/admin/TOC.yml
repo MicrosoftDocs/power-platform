@@ -703,6 +703,9 @@
             href: connect-exchange-online.md
           - name: Connect to Exchange Server (on-premises)
             href: connect-exchange-server-on-premises.md
+          # Comment out the following before going live
+          - name: Test connection to Exchange Server (on-premises)
+            href: test-connection-exchange-server-onpremises.md
           - name: Connect to IMAP or SMTP servers
             href: connect-to-imap-servers.md 
           - name: Connect to Gmail
