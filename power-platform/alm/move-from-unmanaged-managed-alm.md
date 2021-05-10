@@ -34,17 +34,8 @@ Larger, more complex projects require the following tasks.
 
 1. Plan carefully, especially when the outcome you want is to use solution layering properly.
 
-2. Understand and identify the base, common, and app solution layers.
-
-    <img src = "media/solution-conversion-layers.png" alt = "Solution layers for deploying an app" width = "350" height = "125">
-
-   Then, create solutions that adhere to the following structure:
-   - Base layer. This solution will provide the foundation for modular solution development. The base solution should contain just entity and entity metadata without entity components, such as columns and table relationships. The base solution can be used for the deployment of multiple apps.
-   - Common layer. Components that are common and/or shared with other solutions are contained in the common solution. The common solution can be used for the deployment of multiple apps.
-   - App layer. This solution includes just the components specific to the app. Each app should be structured so that this solution includes all app components in one solution. This solution will contain the tables and components for the app, such as columns, forms, views, and charts. We recommend that you don’t share these components across different apps.
-   
-3. Identify and remove unnecessary tables and components.
-   - Look for tables that can be deleted from the solution. Here's some examples:
+2. Identify and remove unnecessary tables and components.
+   - Look for tables that can be deleted from the environment. Here's some examples:
       - Tables with no new records created within in last 18 months.
       - Tables and components that have no dependencies. More information: [View dependencies for a component](/powerapps/maker/data-platform/view-component-dependencies)
       - Components, such as forms, views, and charts, that are associated with deleted or unused tables and don't have any data.
@@ -53,6 +44,15 @@ Larger, more complex projects require the following tasks.
    - For Power Apps portals app conversions, consider building a tool to search for components to eliminate, such as components without dependencies.
       - For example, the tool can be a console app that generates a .CSV output file, which displays table forms and views used by Portals apps. The output file can be used to determine dependencies between a portals app and table forms and views.
 
+3. Understand and identify the base, common, and app solution layers.
+
+    <img src = "media/solution-conversion-layers.png" alt = "Solution layers for deploying an app" width = "350" height = "125">
+
+   Then, create solutions that adhere to the following structure:
+   - Base layer. This temporary solution will provide the foundation for entities with lookup columns on other attributes. The base solution should contain just entity and entity metadata without entity components, such as columns and table relationships. The base solution can be used for the deployment of multiple apps.
+   - Common layer. Components that are common and/or shared across multiple apps are contained in the common solution.
+   - App layer. These solutions include just the components specific to the apps. Each app should be structured so that the solution includes all app components in one solution. This solution will contain the tables and components for the app, such as columns, forms, views, and charts. We recommend that you don’t share these components across different apps.
+   
 4. Copy your development environment to the sandbox environment.
     
     - Isolate the components of the base solution by removing all components that won't be members from the active layer.
@@ -64,7 +64,7 @@ Larger, more complex projects require the following tasks.
    - The tool  searches for tables and columns that were not owned by any development team but are still in use. The tool includes a master exclusion list of tables and columns that will be used to ignore tables owned by other teams. Tables with `AddRequiredComponents = False` and  `DoNotIncludeSubcomponents = True` will be added into the solution. The solution name and publisher will be predefined. <!-- link for more info to dev docs for this? -->
 
 6. Use a wave conversion model.
-   - If you have 10 or more solutions to convert from unmanaged to managed, group the solutions together and import them as a wave. The base followed by the common solution should be in the group for the first wave, so that they can be imported as managed solutions in all development environments before you convert your app solutions to managed. 
+   - If you have 10 or more solutions to convert from unmanaged to managed, group the solutions together and import them in waves. The base followed by the common solution should be in the group for the first wave, so that they can be imported as managed solutions in all development environments before you convert your app solutions to managed. 
    - Group any solutions that cause downtime during trials into the final wave. Then, you will only have a single downtime event for the entire conversion process.
 
 7. Test the managed solution.
