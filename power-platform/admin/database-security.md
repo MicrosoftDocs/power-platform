@@ -61,6 +61,7 @@ For users who make apps that connect to the database and need to create or updat
 | Service Writer | Create, Read, Write | Has full Create, Read, and Write to all entities including custom entities. This is primarily used by backend service that requires creating and updating records.    |
 | Delegate     | Act on behalf of another user        | Allows code to *impersonate*, or run as another user.  Typically used with another security role to allow access to records. More information: [Impersonate another user](/powerapps/developer/common-data-service/impersonate-another-user)        |
 | Support User | Read Customizations, Read Business Management settings      | Has full Read permission to customization and business management settings to allow Support staff to troubleshoot environment configuration issues. Does not have access to core records.      |
+| Global Reader  |   | The [Global Reader](/azure/active-directory/roles/permissions-reference) role is not yet supported in the Power Platform admin center.  |
 
 *The scope of these privileges is global, unless specified otherwise.
 
