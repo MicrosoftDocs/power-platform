@@ -37,6 +37,64 @@ There are some specific features that further improve how the AI in Power Virtua
 >[!NOTE]
 >The AI capabilities listed in this topic are in preview, available to bots created with English as the set language.
 
+
+### Topic overlap detection (preview)
+
+Topic overlap detection helps improve topic triggering accuracy by finding overlaps between topics. Resolving topic overlaps can help reduce the need for the bot to ask clarifying questions before triggering a topic.
+
+[Once enabled](#enable-or-disable-ai-capabilites), go to **Analytics** on the side navigation pane, then go to the **Topic triggering (preview)**, where a list of overlapped topics will be displayed.
+
+:::image type="content" source="media/overlapped-topics.png" alt-text="Screenshot showing the overlapping topics tile lists topics with their similarity score.":::
+
+The list shows each overlapping topic along with a similarity score, which represents the overall overlapped status for a topic, and the number of topics that overlap with the listed one.
+
+You can sort the list by its similarity score, topic name, or number of trigger phrase overlaps.
+
+If you click on an item in the list, the **Topic overlap details** pane will open.
+
+:::image type="content" source="media/topic-overlap-details.png" alt-text="Screenshot of the Topic overlap details pane showing overlaps related to Microsoft 365 language topics.":::
+
+In this example, there's one trigger phrase in the "Languages support in Microsoft 365?" topic (*For which languages is Microsoft 365 available?*) that semantically overlaps with a trigger phrase in the "Use Microsoft 365 in other languages?" topic (*Can I use Microsoft 365 in languages other than the one I originally purchased?*). Here, the AI has determined that both trigger phrases are semantically similar (they contain similar phrases, words, and grammar).
+
+Using semantically similar trigger phrases for two different topics can lead to confusion as the bot may not know which topic to open, and will need to ask additional questions to the bot user.
+
+Identifying semantically similar trigger phrases can also help you determine if you have topics that themselves are very similar and could be consolidated to simplify the bot authoring process, or edited to make the topics more distinct.
+
+On the **Topic overlap details** pane, you can select the link to go directly to the specific topic. You can also make changes to the trigger phrase (or delete it) directly on the **Topic overlap details** pane. Select **Save** to apply any changes.
+
+After you save the changes in the **Topic overlap details** pane, the overlapping status will automatically be refreshed. You can always manually refresh the topic overlap status by selecting the refresh button on the topic overlap UI.
+
+:::image type="content" source="media/refresh-overlays.png" alt-text="Screenshot of the refresh icon which looks like an arrow bent into a circle.":::
+
+### Topic suggestion from chat transcripts (preview)
+
+This feature analyzes sessions between your bot and users and surfaces suggestions for you based on unmatched user input.
+
+Once enabled, go to **Analytics** on the side navigation pane, then go to the **Topic triggering (preview)**. A list of potential topics will be shown, with the number of times a query about this topic was made by users of the bot.
+
+:::image type="content" source="media/topic-suggestions.png" alt-text="Screenshot of the Topic suggestions tile showing a list of suggestions.":::
+
+The topic suggestion analyzer automatically runs once every one to two hours. It scans through all new queries made since the analyzer last ran, groups together queries to which it couldn't match an existing topic, and presents them in the list. Your bot will need at least 100 new conversations (from the last time any suggestion was generated) to trigger the process, and only those suggestions with more than three user sessions will be shown.
+
+When you click on an item in the suggestion list, a topic suggestion window will appear, showing the topic with some suggested trigger phrases. The suggested trigger phrases are based on the queries made by the bot users that couldn't be matched to an existing topic.
+
+After reviewing the suggested trigger phrases, you can choose to delete the entire suggested topic (for example, if it's irrelevant to the bot) or add it to your list of topics by selecting **Add to topics**.
+
+:::image type="content" source="media/topic-editing.png" alt-text="Screenshot of the topic editing window.":::
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### Automatic triggering improvements (Preview)
 
 The automatic triggering feature improves intent triggering by using AI to automatically generate new trigger phrases by analyzing previous bot traffic. 
@@ -103,7 +161,7 @@ To use these advanced AI capabilities in Power Virtual Agents:
 
 4.  Select **Save** at the top of the tab.
 
-![Screenshot showing the new AI capabilities section under the Manage tab ](media/advanced-ai-features/enable-features.png)
+:::image type="content" source="media/advanced-ai-features/enable-features.png" alt-text="Screenshot showing the new AI capabilities section under the Manage tab.":::
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
