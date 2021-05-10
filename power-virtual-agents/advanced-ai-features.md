@@ -63,7 +63,7 @@ On the **Topic overlap details** pane, you can select the link to go directly to
 
 After you save the changes in the **Topic overlap details** pane, the overlapping status will automatically be refreshed. You can always manually refresh the topic overlap status by selecting the refresh button on the topic overlap UI.
 
-:::image type="content" source="media/advanced-ai-features/refresh-overlays.png" alt-text="Screenshot of the refresh icon, which looks like an arrow bent into a circle.":::
+:::image type="content" source="media/advanced-ai-features/refresh-overlaps.png" alt-text="Screenshot of the refresh icon, which looks like an arrow bent into a circle.":::
 
 ## Topic suggestion from chat transcripts (preview)
 
