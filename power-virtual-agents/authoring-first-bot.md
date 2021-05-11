@@ -24,12 +24,13 @@ Select the version of Power Virtual Agents you're using here:
 
 To help get you started and tailor the bot to your specific needs, Power Virtual Agents lets you create a bot using built-in content building blocks containing topics, trigger phrases, and pre-authored bot conversations.
 
+>[!WARNING]
+>New bots are configured with "No authentication" and without [web channel security](https://docs.microsoft.com/en-us/power-virtual-agents/configure-web-security),and can be accessed by anyone with a link to it. Ensure you have the right [authentication](https://docs.microsoft.com/en-us/power-virtual-agents/configuration-end-user-authentication), [access](https://docs.microsoft.com/en-us/power-virtual-agents/configuration-security), and [security](https://docs.microsoft.com/en-us/power-virtual-agents/configure-web-security) configurations set for your particular usage.
+
 >[!NOTE]
 >You can only see bots in the version of Power Virtual Agents where you created them.  
 >This means if you create a bot with the Power Virtual Agents app in Microsoft Teams, you will not see the bot in the web app of Power Virtual Agents at https://web.powerva.microsoft.com.
 
-
- 
 
 ## Prerequisites
 
