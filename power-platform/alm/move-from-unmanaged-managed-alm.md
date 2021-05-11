@@ -42,7 +42,7 @@ Larger, more complex projects require the following tasks.
    - Be aware that some [System tables don’t support unmanaged layers](#system-tables-that-dont-support-unmanaged-layers).
    - Be aware that there are a few system tables that can lead to issues when you customize them and later import them as managed. More information: [Customization of deeply integrated system tables](#customization-of-deeply-integrated-system-tables)
    - For Power Apps portals app conversions, consider building a tool to search for components to eliminate, such as components without dependencies.
-      - For example, the tool can be a console app that generates a .CSV output file, which displays table forms and views used by Portals apps. The output file can be used to determine dependencies between a portals app and table forms and views.
+      - For example, the tool can be a console app that generates a .CSV output file, which displays table forms and views used by Portals apps by checking the entity forms and entity lists tables. The output file can be used to determine dependencies between a portals app and table forms and views.
 
 3. Understand and identify the base, common, and app solution layers.
 
@@ -53,21 +53,37 @@ Larger, more complex projects require the following tasks.
    - Common layer. Components that are common and/or shared across multiple apps are contained in the common solution.
    - App layer. These solutions include just the components specific to the apps. Each app should be structured so that the solution includes all app components in one solution. This solution will contain the tables and components for the app, such as columns, forms, views, and charts. We recommend that you don’t share these components across different apps.
    
-4. Copy your development environment to the sandbox environment.
-    
-    - Isolate the components of the base solution by removing all components that won't be members from the active layer.
-    - After you complete this step, this environment can be used for isolated development of the base solutions.<br/>   Plug-ins can reside in separate solutions, because the assemblies themselves don't generate dependencies.
-    -  The development environment refresh process should include the common solution imported as managed to all development environments. This should be done after every wave deployment.
+4. Generate the base solution.
+   - The purpose of the base solution is to work around cross-component dependencies during an unmanaged to managed solution conversion.
+   - The base solution can also contain tables and columns that are not currently in use by any development team. The tool includes a master exclusion list of tables and columns that will be used to ignore tables owned by other teams. Tables with `AddRequiredComponents = False` and  `DoNotIncludeSubcomponents = True` must be added into the solution. The solution name and publisher should be predefined. <!-- link for more info to dev docs for this? -->
+   - Consider building a tool to generate the base solution. The tool can include a master exclusion list of tables and columns owned by current development teams.
+   - The base solution will be the first solution converted as managed on all environments except the base development environment. No other solutions will be added to the base development environment.
 
-5. Consider building a tool to generate the base solution.
-   - The tool's purpose is to work around cross-component dependencies and is used temporarily while building the base solution.
-   - The tool  searches for tables and columns that were not owned by any development team but are still in use. The tool includes a master exclusion list of tables and columns that will be used to ignore tables owned by other teams. Tables with `AddRequiredComponents = False` and  `DoNotIncludeSubcomponents = True` will be added into the solution. The solution name and publisher will be predefined. <!-- link for more info to dev docs for this? -->
+5. Build a Common solution
+   - This solution contains components that are shared across apps.
+   - Obtain sign-off from every solution owner that their components will not be included in the common solution. It is important to pay close attention to avoid layering complexities.
+   - The common solution will be the second solution converted to managed in all environments except the base and common development environments.
 
 6. Use a wave conversion model.
-   - If you have 10 or more solutions to convert from unmanaged to managed, group the solutions together and import them in waves. The base followed by the common solution should be in the group for the first wave, so that they can be imported as managed solutions in all development environments before you convert your app solutions to managed. 
+   - If you have 10 or more solutions to convert from unmanaged to managed, group the solutions together and import them in waves. 
+   - The base followed by the common solution should be in the group for the first wave, so that they can be imported as managed solutions in all development environments before you convert your app solutions to managed.
    - Group any solutions that cause downtime during trials into the final wave. Then, you will only have a single downtime event for the entire conversion process.
 
-7. Test the managed solution.
+7. Do one or more trial conversions of each solution prior to conversion in production.
+- If converting in waves, group the trial runs by wave.
+- The trial conversion environment should be as similar to the production environment as possible. Ideally, a copy of production along with Portals configured, if any.
+- Conversion integration scheduling:
+   - Plan to run your trial and production conversions outside of scheduled integration windows.
+   - Schedule the conversion outside normal business hours.
+- If there's any app downtime during the unmanaged to managed conversion from the development environment to the test environment, make a note of it. This helps you determine how much time to allot for when you deploy to production. Check the following for potential impact during conversion:
+   - App being converted to managed.
+   - Other apps affected by the conversion.
+   - Portals affected by the conversion.
+- Considerations when importing a managed solution to convert unmanaged components to managed:
+   - If components are held in unmanaged solutions that still exist in the environment, all references will have to be removed before the managed solution can be imported.
+   - Removing unmanaged solutions causes the loss of the reference container. Without a good understanding of what has been customized, you risk that components become orphaned in the default solution and possibly become hard to track.
+
+<!-- 7. Test the managed solution.
    - The test environment should be as similar to the production environment as possible.
    - If there's any app downtime during the unmanaged to managed conversion from the development environment to the test environment, make a note of it. This helps you determine how much time to a lot for when deploying to production:
       - App that's imported.
@@ -75,9 +91,15 @@ Larger, more complex projects require the following tasks.
       - Portals affected by the conversion.
    - Integration scheduling:
       - Schedule outside of unmanaged to managed conversion window.
-      - Schedule outside hours for regular deployments as well.
+      - Schedule outside hours for regular deployments as well.  -->
 
-8. Repeat steps 5-7 for any modular solutions that extend the common components layer.
+8. Create new dev environments after conversion of the base and common solutions as managed on production. 
+- For each app create a new dev environment with the following:
+   - Base and common as managed.
+   - Any other dependent managed solution required.
+   - The app solution as an unmanaged solution.
+
+<!-- 8. Repeat steps 5-7 for any modular solutions that extend the common components layer.
 
     -   Create a copy of the original development environment, and remove the unmanaged solutions that hold references to the common components.
 
@@ -92,7 +114,7 @@ Larger, more complex projects require the following tasks.
     -   Converting solutions to managed in a development environment that's completely unmanaged effectively creates a snapshot of the current
         behavior. To prune unnecessary components that were added when multiple unmanaged solutions were developed in one environment, you need to remove the unneeded components in an isolated development environment.
 
-        For example, assume the Customer entity is created in an unmanaged solution named *base*, then extended in another unmanaged solution. Any new components added to the Customer entity in the extension solution are automatically added to the *base* solution. This is the expected outcome, because when an entity is created the behavior is to include all assets and entity metadata.
+        For example, assume the Customer entity is created in an unmanaged solution named *base*, then extended in another unmanaged solution. Any new components added to the Customer entity in the extension solution are automatically added to the *base* solution. This is the expected outcome, because when an entity is created the behavior is to include all assets and entity metadata. -->
 
 ## Limitations
  
