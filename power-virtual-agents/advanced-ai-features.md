@@ -45,7 +45,7 @@ Topic overlap detection helps improve topic triggering accuracy by finding overl
 
 :::image type="content" source="media/advanced-ai-features/overlapped-topics.png" alt-text="Screenshot showing the overlapping topics tile lists topics with their similarity score.":::
 
-The list shows each overlapping topic along with a similarity score, which represents the overall overlapped status for a topic, and the number of topics that overlap with the listed one.
+The list shows each overlapping topic along with a similarity score, which represents the overall overlapped status for a topic, and the number of topics that overlap with the listed one. The similarity score is determined by the AI as it evaluates how semantically similar the overlapping trigger phrases are to each other. A higher score indicates that a particular topic has one or more trigger phrases that are close to another topic's trigger phrases.
 
 You can sort the list by its similarity score, topic name, or number of trigger phrase overlaps.
 
