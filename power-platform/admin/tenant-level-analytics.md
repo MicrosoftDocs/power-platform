@@ -22,7 +22,11 @@ search.app:
 
 Tenant admins can view reports that apply to all environments in a tenant. 
 
-To access these reports, sign in to the Power Platform admin center and select **Analytics** > **Power Apps**. Reports appear in a menu bar at the top of the page.
+To access these reports, sign in to the Power Platform admin center and select **Analytics** > **Power Apps**. In the upper-right corner, select **Tenant level analytics** from the dropdown list. 
+
+select-tenant-level-analytics.png
+
+:::image type="content" source="media/select-tenant-level-analytics.png" alt-text="Select tenant level analytics":::
 
 ## Who can view these reports?
 
@@ -37,20 +41,6 @@ For more information on the different roles for managing your tenant across the 
 ## What are the available reports? 
 
 The following tenant-level reports are available for tenant admins. 
-
-### Overview reports
-
-Overview reports provide an overview of the tenant and environment of all power platform products and answer questions such as the following:
-
-- How many total environments exist and how many were created in a selected time period? 
-- What is the count of total apps and how many were created in a selected time period?
-- What is the total number of custom connectors in use in the tenant across all apps and flows?
-- What are the total number of environments of the various environment types?
-- How many environment makers are in the tenant?
-
-
-> [!div class="mx-imgBorder"] 
-> ![Overview usage report](media/overview-usage-report.png "Overview usage report")
 
 ### Power Apps reports
 
@@ -87,7 +77,7 @@ All the download reports, except "Active Dynamics 365 Customer Engagement Plan U
 - The maximum duration for data availability is 30 days.
 
 > [!div class="mx-imgBorder"] 
-> ![Dataverse analytics Download Section](./media/organization-insights-download-section.png "Dataverse analytics Download Section")  
+> ![Dataverse analytics Download section](./media/tenant-download-reports.png "Dataverse analytics Download section")  
 
 ## View data for different environments and date-time ranges
 
