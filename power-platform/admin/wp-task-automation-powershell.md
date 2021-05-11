@@ -24,9 +24,9 @@ Using PowerShell cmdlets and management connectors, admins can build flows and a
 |PowerShell cmdlet library  |Common tasks  |
 |---------|---------|
 |Power Apps cmdlets <br/>[PowerShell support for Power Apps](powerapps-powershell.md)  |Designed for app makers and administrators to automate tasks with environments and associated apps, flows, and connectors.      |
-|Microsoft 365 cmdlets<br/> https://docs.microsoft.com/office365/enterprise/powershell/getting-started-with-office-365-powershell    |Use for Microsoft 365 related tasks to automate user-related actions and tasks. For example, the assignment of licenses.         |
-|Dynamics 365 cmdlets<br/> https://docs.microsoft.com/powershell/dynamics365/customer-engagement/overview     |Use for environments with Microsoft Dataverse databases. Modules include support for the Dataverse online admin API, and automating solution deployment to the Dataverse environments.         |
-|Microsoft Azure cmdlets <br/> https://docs.microsoft.com/powershell/azure/overview     |Use for including any Azure components in your overall solution. You can use for scripting setup of the on-prem application gateway.        |
+|Microsoft 365 cmdlets<br/> [Get started with PowerShell for Microsoft 365](/microsoft-365/enterprise/getting-started-with-microsoft-365-powershell?view=o365-worldwide)   |Use for Microsoft 365 related tasks to automate user-related actions and tasks. For example, the assignment of licenses.         |
+|Dynamics 365 cmdlets<br/> [Overview of Dynamics 365 Customer Engagement (on-premises) PowerShell](/powershell/dynamics365/customer-engagement/overview?view=dynamics365ce-ps)    |Use for environments with Microsoft Dataverse databases. Modules include support for the Dataverse online admin API, and automating solution deployment to the Dataverse environments.         |
+|Microsoft Azure cmdlets <br/> [Azure PowerShell documentation](/powershell/azure/?view=azps-4.8.0)    |Use for including any Azure components in your overall solution. You can use for scripting setup of the on-prem application gateway.        |
 
 You can use a combination of all the above cmdlets to build PowerShell scripts to do bulk operations on users, environments, or their resources.
 
