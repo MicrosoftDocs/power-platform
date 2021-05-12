@@ -53,6 +53,12 @@ The administrator will need to [enable document management](enable-sharepoint-do
 
 :::image type="content" source="media/doc-management-troubleshoot4.png" alt-text="Enable document management of Account entity.":::
 
+### Custom Sharepoint Grid Configuration
+
+If you create a custom grid for use with Sharepoint, the grid must adhere to the requirements for FetchXML and LayoutXML or you will get an error. 
+
+See [Troubleshoot SharePoint integration](troubleshoot-set-up-sharepoint-online#malformed-fetchxml-or-layoutxml---validate-and-fix)
+
 ## Error messages
 
 The following are error messages that are possible with document management.
