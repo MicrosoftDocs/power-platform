@@ -47,6 +47,14 @@ Follow the steps in this section: [Option 2: Create a new application secret](/a
 
 ## Dynamics 365 configuration
 
+Sign in to https://admin.powerplatform.microsoft.com and do the following steps.
+
+
+
+https://docs.microsoft.com/en-us/onedrive/find-your-office-365-tenant-id
+
+
+
 ### Step one: Create a new email server profile
 
 ### Step two: Configure a mailbox
