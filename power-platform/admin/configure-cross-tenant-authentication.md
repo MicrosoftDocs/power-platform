@@ -21,16 +21,29 @@ This topic covers how to connect your Dynamics 365 app in one tenant to Microsof
 
 ## Azure configuration
 
-
+Sign in to https://portal.azure.com and do the following steps.
 
 ### Step one: Register your Dynamics 365 app in Azure
 
+See [Quickstart: Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app).
+
+Follow the steps in the **Register an application** section. 
+
+- For step 6, select **Accounts in any organizational directory**.
 
 ### Step two: Add API permissions
 
+See [Quickstart: Configure a client application to access a web API](/azure/active-directory/develop/quickstart-configure-app-access-web-apis). 
+
+Follow the steps in the **Add permissions to access your web API** section. 
+
+- For step 4, select **APIs my organization uses** instead of **My APIs**.
+- For step 5, search for and select **Office 365 Exchange Online** > **Application permissions**. 
+- For step 6, under **Other permissions**, select **full_access_as_app**.
+
 ### Step three: Add client secret
 
-
+Follow the steps in this section: [Option 2: Create a new application secret](/azure/active-directory/develop/howto-create-service-principal-portal)
 
 ## Dynamics 365 configuration
 
