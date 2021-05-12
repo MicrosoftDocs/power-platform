@@ -213,9 +213,9 @@ After April 24, 2020, customers are encouraged to transition to the new model ve
 ## Dynamic 365 for Outlook is deprecated
 ----------------------------------------
 
-Effective March 2020, the legacy Dynamics 365 for Outlook (also referred to as Outlook COM add-in) is deprecated. Customers must transition to the modern [Dynamics 365 App for Outlook](/dynamics365/outlook-app/overview) before October 1, 2020. Microsoft will continue to provide support, security, and other critical updates to the Outlook COM Add-in until October 1, 2020.
+Effective March 2020, the legacy Dynamics 365 for Outlook (also referred to as Outlook COM add-in) was deprecated, and is no longer available for Power Apps and customer engagement apps (Dynamics 365 Sales, Customer Service, Marketing, and Field Service). Use the modern [Dynamics 365 App for Outlook](/dynamics365/outlook-app/overview) instead.
 
-For further information and steps to make a smooth transition, download [Dynamics 365 for Outlook (COM add-in) Playbook](https://aka.ms/OutlookCOMPlaybook)
+[Dynamics 365 Customer Engagement (on-premises)](/dynamics365/customerengagement/on-premises/overview) users can continue to use the legacy Dynamics 365 for Outlook. However, we recommend that you transition to the modern Dynamics 365 App for Outlook at the earliest. For information and steps to make a smooth transition, download [Dynamics 365 for Outlook (COM add-in) Playbook](https://aka.ms/OutlookCOMPlaybook).
 
 ## Dynamics 365 Home is deprecated 
 ------------------------------------------------------
