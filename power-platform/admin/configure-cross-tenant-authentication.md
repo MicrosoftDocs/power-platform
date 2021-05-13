@@ -41,6 +41,8 @@ Follow the steps in the **Add permissions to access your web API** section.
 - For step 5, search for and select **Office 365 Exchange Online** > **Application permissions**. 
 - For step 6, under **Other permissions**, select **full_access_as_app**.
 
+Make note of the **Application (client) ID** which you'll use when configuring Dynamics 365.
+
 ### Step three: Add client secret
 
 Follow the steps in this section: [Option 2: Create a new application secret](/azure/active-directory/develop/howto-create-service-principal-portal)
@@ -56,6 +58,13 @@ https://docs.microsoft.com/en-us/onedrive/find-your-office-365-tenant-id
 
 
 ### Step one: Create a new email server profile
+
+
+
+
+
+
+
 
 ### Step two: Configure a mailbox
 
