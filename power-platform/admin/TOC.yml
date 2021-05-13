@@ -701,9 +701,6 @@
             href: supported-email-service-configurations-server-side-synchronization.md
           - name: Connect to Exchange Online
             href: connect-exchange-online.md
-          # Comment out the following before going live
-          - name: Configure cross tenant authentication
-            href: configure-cross-tenant-authentication.md
           - name: Connect to Exchange Server (on-premises)
             href: connect-exchange-server-on-premises.md
           # Comment out the following before going live
