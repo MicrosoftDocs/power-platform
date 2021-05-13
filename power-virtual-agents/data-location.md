@@ -61,14 +61,15 @@ Data will be stored in the United States if a bot author's tenant location isn't
 |Azure geographic locations (geos) | Azure datacenters (regions) |
 |---|--- |
 |United States | East US (Blue Ridge, VA), South Central US (Des Moines, IA), West US (Quincy, WA) |
+|Canada | Canada Central (Toronto), Canada East (Quebec City) |
 |Europe | West Europe (Netherlands), North Europe (Ireland) |
-|Australia | Australia East (New South Wales), Australia Southeast (Victoria) |
 |United Kingdom | UK South (London), UK West (Cardiff, Durham) |
+|France | France Central (Paris), France South (Marseille) |
+|Switzerland | Switzerland North (Zurich), Switzerland west (Geneva) |
+|Australia | Australia East (New South Wales), Australia Southeast (Victoria) |
 |India | Central India (Pune), South India (Chennai) |
 |Asia Pacific | Southeast Asia (Singapore), East Asia (Hong Kong) |
 |Japan | Japan East (Tokyo, Saitama), Japan West (Osaka) |
-|Canada | Canada Central (Toronto), Canada East (Quebec City) |
-|France | France Central (Paris), France South (Marseille) |
 |South America | Brazil South (Sao Paulo State) &nbsp;(As there is only one region in Brazil, customer data in Brazil South may be replication to South Central US (Texas) for disaster recovery purposes)
 
 
