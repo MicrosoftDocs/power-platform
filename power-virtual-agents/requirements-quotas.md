@@ -54,7 +54,7 @@ These limits apply to the Power Virtual Agents web app and the Power Virtual Age
 Feature | Web app | Teams app
 --|-- | --
 Bots | N/A | 50 per team
-Topics | 1000 per bot in Dataverse environments | 250 bot in Dataverse for Teams environments<sup>1</sup> <br/>1000 per bot in Dataverse environments (after upgrade)
+Topics | 1000 per bot in Dataverse environments | 250 per bot in Dataverse for Teams environments<sup>1</sup> <br/>1000 per bot in Dataverse environments (after upgrade)
 Trigger phrases | 200 per topic | 200 per topic
 Skills | 100 per bot | 100 per bot
 
