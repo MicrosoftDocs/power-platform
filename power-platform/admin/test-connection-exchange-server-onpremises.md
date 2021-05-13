@@ -4,7 +4,7 @@ description: Learn how to test your app connection to  Exchange Server (on-premi
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/06/2021
+ms.date: 05/13/2021
 author: revachauhan
 ms.author: rechauha
 ms.reviewer: jimholtz
@@ -37,7 +37,7 @@ To help diagnose the issue, let's determine if the problem is with the Dynamics 
    To find these values, select an environment in the Power Platform admin center, go to **Settings** > **Email** > **Server profiles** > select the **Exchange Server (Hybrid)** profile.
 
    > [!NOTE]
-   > Do not use test connection on the emailserver profile as in certain scenarios can misrepresent what the real issue is. Instead please configure a test mailbox associate it to the emailserver profile and test and enable it. Jim question: I need clarification on this as I don't understand text.
+   > Do not use a test connection on the emailserver profile as in certain scenarios it can misrepresent what the real issue is. Instead, configure a test mailbox, associate it to the emailserver profile, test, and enable it. 
 
    |Field/setting  |Value  |
    |---------|---------|
@@ -48,7 +48,7 @@ To help diagnose the issue, let's determine if the problem is with the Dynamics 
    |Use Autodiscover to detect server settings <br /> Specify Exchange Web Services URL    | Use Autodiscover if you want to use the automatically discover service to determine the server location. Specify an EWS URL (for example, https://contoso.yourdomain.com/EWS/Exchange.asmx) to locate the email server manually.       |
    |Test predefined folder      | Select this option.        |
    |Use Exchange Impersonation     | Enable this to test synchronization for multiple mailboxes.        |
-   |Impersonated user     | Jim question: how is this different from Microsoft account?    |
+   |Impersonated user     | Enter the same Exchange email address you specified for the Target mailbox email address above.    |
    |Impersonated user identifier     |  Select **SmtpAddress**.       |
 
 3. Fill in remaining values as appropriate and select **Perform Test**.
@@ -57,6 +57,6 @@ To help diagnose the issue, let's determine if the problem is with the Dynamics 
 
 ### Test results
 
-If the connectivity test is **not** successful, the issue is not with Dynamics 365 Online but could be with Microsoft Exchange on-premises configuration. The next step is to revisit your Microsoft Exchange server configuration and if necessary contact Microsoft Exchange on-premises support.  <--- Jim question. How do customers do this?
+If the connectivity test is **not** successful, the issue is not with Dynamics 365 Online but could be with Microsoft Exchange on-premises configuration. The next step is to revisit your Microsoft Exchange server configuration and if necessary contact [Microsoft Exchange on-premises support](https://support.serviceshub.microsoft.com/supportforbusiness/onboarding?origin=%2Fsupportforbusiness%2Fmanage%3Fstate%3Dopen).  
 
 If the connectivity test is succcessful, contact [Support](get-help-support.md) to further analyze the source of the issue.
