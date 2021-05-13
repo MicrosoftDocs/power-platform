@@ -1,7 +1,7 @@
 ---
 title: "Review ISO, SOC, and HIPAA compliance"
 description: "Power Virtual Agents is compliant with a number of standards and is covered under HIPAA."
-ms.date: 4/13/2021
+ms.date: 5/13/2021
 ms.keywords: "PVA, ISO, SOC, certification, compliance"
 ms.service: power-virtual-agents
 ms.topic: article
@@ -18,7 +18,7 @@ Power Virtual Agents is a Core Online Service, as defined in the [Online Service
 - System and Organization Controls (SOC)
 - The Cloud Security Alliance (CSA) Security Trust Assurance and Risk (STAR)
 - Various International Organization for Standardization (ISO) certifications
-- Outsourced Service Provider’s Audit Report (OSPAR)
+- Outsourced Service Providerâ€™s Audit Report (OSPAR)
 - Federal Risk and Authorization Management Program (FedRAMP)
 - Health Information Trust Alliance (HITRUST) Common Security Framework (CSF)
 - Payment Card Industry (PCI) Data Security Standard (DSS)
@@ -74,8 +74,8 @@ Power Virtual Agents is compliant with the ISO standards listed in the following
 | ISO 27018:2019 | [Microsoft Azure, Dynamics 365, and Other Online Service - ISO27018 Certificate](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports) and [Microsoft Azure, Dynamics 365, and Other Online Service - ISO27001, 27018, 27017, 27701 Assessment Report](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports) | [ISO/IEC 27018:2019](https://www.iso.org/standard/76559.html) |
 | ISO 27701:2019 | [Microsoft Azure, Dynamics 365, and Other Online Service - ISO27701 Certificate](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports) and [Microsoft Azure, Dynamics 365, and Other Online Service - ISO27001, 27018, 27017, 27701 Assessment Report](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports) | [ISO/IEC 27701:2019](https://www.iso.org/standard/71670.html) |
 
-## Outsourced Service Provider’s Audit Report (OSPAR)
-The OSPAR framework was established by the Association of Banks in Singapore (ABS), which formulated IT security guidelines for outsourced service providers (OSPs) that seek to provide services to Singapore’s financial institutions. The ABS Guidelines are intended to assist financial institutions in understanding approaches to due diligence, vendor management, and key technical and organizational controls that should be implemented in cloud outsourcing arrangements, particularly for material workloads. 
+## Outsourced Service Providerâ€™s Audit Report (OSPAR)
+The OSPAR framework was established by the Association of Banks in Singapore (ABS), which formulated IT security guidelines for outsourced service providers (OSPs) that seek to provide services to Singaporeâ€™s financial institutions. The ABS Guidelines are intended to assist financial institutions in understanding approaches to due diligence, vendor management, and key technical and organizational controls that should be implemented in cloud outsourcing arrangements, particularly for material workloads. 
 
 Power Virtual Agents has OSPAR attestation. 
 
@@ -84,7 +84,7 @@ Power Virtual Agents has OSPAR attestation.
 ## Federal Risk and Authorization Management Program (FedRAMP)
 The US FedRAMP was established to provide a standardized approach for assessing, monitoring, and authorizing cloud computing products and services under the Federal Information Security Management Act (FISMA) and to accelerate the adoption of secure cloud solutions by federal agencies. 
 
-Microsoft’s government cloud services meet the requirements of the US FedRAMP. 
+Microsoftâ€™s government cloud services meet the requirements of the US FedRAMP. 
 
 By deploying protected services including Azure Government, Office 365 US Government, and Dynamics 365 Government, federal and defense agencies can leverage a rich array of compliant services. 
 
@@ -100,7 +100,7 @@ HITRUST created and maintains the Common Security Framework (CSF), a certifiable
 
 The CSF builds on HIPAA and the HITECH Act, which are US healthcare laws that have established requirements for the use, disclosure, and safeguarding of individually identifiable health information and enforce non-compliance. 
 
-HITRUST provides a benchmark — a standardized compliance framework, assessment, and certification process — against which cloud service providers and covered health entities can measure compliance.
+HITRUST provides a benchmark â€” a standardized compliance framework, assessment, and certification process â€” against which cloud service providers and covered health entities can measure compliance.
 
 [Learn more about HITRUST)](/compliance/regulatory/offering-hitrust.md).
 
