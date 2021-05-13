@@ -26,7 +26,7 @@ Dynamics 365 is hosted on Microsoft Azure. During configuration, server-side syn
 
 ## Determine if the issue is with Dynamics 365
 
-To help diagnose the issue, let's determine if the problem is with the Dynamics 365 Online connection.
+To help diagnose the problem, let's first eliminate the connection to Exchange Server (on-premises) as an issue.
 
 ### Test connection with the Microsoft Remote Connectivity Analyzer
 
@@ -35,9 +35,6 @@ To help diagnose the issue, let's determine if the problem is with the Dynamics 
 2. Fill in the following values:
 
    To find these values, select an environment in the Power Platform admin center, go to **Settings** > **Email** > **Server profiles** > select the **Exchange Server (Hybrid)** profile.
-
-   > [!NOTE]
-   > Do not use a test connection on the emailserver profile as in certain scenarios it can misrepresent what the real issue is. Instead, configure a test mailbox, associate it to the emailserver profile, test, and enable it. 
 
    |Field/setting  |Value  |
    |---------|---------|
@@ -59,4 +56,4 @@ To help diagnose the issue, let's determine if the problem is with the Dynamics 
 
 If the connectivity test is **not** successful, the issue might not be with Dynamics 365 Online but could be with Microsoft Exchange on-premises configuration. The next step is to revisit your Microsoft Exchange server configuration and if necessary contact [Microsoft Exchange on-premises support](https://support.serviceshub.microsoft.com/supportforbusiness/onboarding?origin=%2Fsupportforbusiness%2Fmanage%3Fstate%3Dopen).  
 
-If the connectivity test is succcessful, contact [Support](get-help-support.md) to further analyze the source of the issue.
+If the connectivity test is succcessful, contact [Dynamics 365 Support](get-help-support.md) to further analyze the source of the issue.

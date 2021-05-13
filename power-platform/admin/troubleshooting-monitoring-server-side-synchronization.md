@@ -174,9 +174,9 @@ If you create an email message in customer engagement apps (Dynamics 365 Sales, 
   
 ## Potential issues and resolutions  
 
-### Determine if the issue is with the connection to Microsoft Exchange Server on-premises
+### Determine if the issue is with the connection to Exchange Server (on-premises)
 
-If your organization connects to Microsoft Exchange Server on-premises, you can run the Microsoft Remote Connectivity Analyzer to determine if the issue is with that connection. See [Test connection to Exchange Server (on-premises)](test-connection-exchange-server-onpremises.md).
+If your organization connects to Exchange Server (on-premises), you can run the Microsoft Remote Connectivity Analyzer to determine if the issue is with that connection. See [Test connection to Exchange Server (on-premises)](test-connection-exchange-server-onpremises.md).
 
 <a name="BKMK_SSSGmail"></a>   
 
