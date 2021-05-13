@@ -63,7 +63,7 @@ Purchase licenses for your organization by going to the [Microsoft 365 admin cen
 3. Look for **Power Virtual Agent User License**. Select the number of licenses you need, and complete the checkout process.
 
 >[!IMPORTANT]
->If you purchased a Power Virtual Agents license through volume licensing or any channel other than the [Microsoft 365 admin center](https://admin.microsoft.com/admin/default.aspx), you need to acquire both a tenant licence and user licenses through that channel, preferably as part of a single transaction.
+>If you purchased a Power Virtual Agents license through volume licensing or any channel other than the [Microsoft 365 admin center](https://admin.microsoft.com/admin/default.aspx), you need to acquire both a tenant license and user licenses through that channel, preferably as part of a single transaction.
 
 ## Assign licenses to users
 

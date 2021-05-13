@@ -29,12 +29,21 @@ Action | Quota with the paid plan
 
 
 
+## Power Virtual Agents for Teams service limit 
+
+Power Virtual Agents [sessions](analytics-sessions.md) that are included with [select Microsoft 365 subscriptions](requirements-licensing-subscriptions.md#power-virtual-agents-for-microsoft-teams-plan) aren't pooled and have the following limits:
+
+License | Session limits every 24 hours
+--|--
+**Power Virtual Agents for Teams** | 10 per user across all bots
+
+## Error messages when quotas are met
+
+
 If the quota for **messages to a chatbot** is met, the user chatting with the chatbot will see a failure notice when they try to send a message. They'll be prompted to retry.
 
 ![Error message in the chat bot window that says 'Send failed. Retry.'](media/requirements-quota-error.png "Error message in the chatbot window that says 'Send failed. Retry.'")
  
-
-
 
 
 
@@ -54,7 +63,7 @@ These limits apply to the Power Virtual Agents web app and the Power Virtual Age
 Feature | Web app | Teams app
 --|-- | --
 Bots | N/A | 50 per team
-Topics | 1000 per bot in Dataverse environments | 250 bot in Dataverse for Teams environments<sup>1</sup> <br/>1000 per bot in Dataverse environments (after upgrade)
+Topics | 1000 per bot in Dataverse environments | 250 per bot in Dataverse for Teams environments<sup>1</sup> <br/>1000 per bot in Dataverse environments (after upgrade)
 Trigger phrases | 200 per topic | 200 per topic
 Skills | 100 per bot | 100 per bot
 
@@ -95,6 +104,7 @@ cci-prod-botdesigner.azureedge.net | Yes | HTTPS | Power Virtual Agents authorin
 ## IP addresses 
 
 Requests from Power Virtual Agents to Microsoft Bot Framework skills use the following IP addresses in their respective regions.
+
 
 Configure all [connectors for IP addresses](/power-automate/ip-address-configuration#connectors) for Power Automate, in addition to Power Virtual Agents, to use both together.
 
