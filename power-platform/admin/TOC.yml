@@ -397,20 +397,20 @@
         - name: Analytics for UI flows
           href: analytics-ui-flow.md
     # Comment out lines down to storage before publishing
-      - name: "Preview: Tenant-level analytics" 
-        href: tenant-level-analytics.md
-      - name: Analyze telemetry with Application Insights
-        items:
-        - name: Model-driven apps and Microsoft Dataverse telemetry
-          href: analyze-telemetry.md
-        - name: Overview of integration with Application Insights
-          href: overview-integration-application-insights.md
-        - name: Telemetry events for model-driven apps 
-          href: telemetry-events-model-driven-apps.md
-        - name: Telemetry events for Dataverse
-          href: telemetry-events-dataverse.md   
-        - name: Set up export to Application Insights
-          href: set-up-export-application-insights.md
+      # - name: "Preview: Tenant-level analytics" 
+      #   href: tenant-level-analytics.md
+      # - name: Analyze telemetry with Application Insights
+      #   items:
+      #   - name: Model-driven apps and Microsoft Dataverse telemetry
+      #     href: analyze-telemetry.md
+      #   - name: Overview of integration with Application Insights
+      #     href: overview-integration-application-insights.md
+      #   - name: Telemetry events for model-driven apps 
+      #     href: telemetry-events-model-driven-apps.md
+      #   - name: Telemetry events for Dataverse
+      #     href: telemetry-events-dataverse.md   
+      #   - name: Set up export to Application Insights
+      #     href: set-up-export-application-insights.md
     - name: Storage
       items: 
       - name: What's new for storage
@@ -703,7 +703,6 @@
             href: connect-exchange-online.md
           - name: Connect to Exchange Server (on-premises)
             href: connect-exchange-server-on-premises.md
-          # Comment out the following before going live
           - name: Test connection to Exchange Server (on-premises)
             href: test-connection-exchange-server-onpremises.md
           - name: Connect to IMAP or SMTP servers
