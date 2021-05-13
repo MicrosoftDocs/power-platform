@@ -32,17 +32,25 @@ You can get the CoE Power BI dashboard by downloading the Power BI file and conf
 
 You need the environment URL of the Microsoft Power Platform environment the CoE Starter Kit is installed in. Power BI will connect to the Microsoft Dataverse tables in that environment.
 
-1. Go to the [Power Platform admin center](https://aka.ms/ppac).
+- If you have installed the CoE Starter Kit in a Production environment:
+    1. Go to the [Power Platform admin center](https://aka.ms/ppac).
 
-1. Select **Environments**, and select the environment where the CoE solution is installed.
+    1. Select **Environments**, and select the environment where the CoE solution is installed.
 
-1. Copy the organization URL in the details window.
+    1. Copy the organization URL in the details window.
 
-   ![Power Platform admin center, with the environment URL highlighted](media/coe19.png "Power Platform admin center, with the environment URL highlighted")
+       ![Power Platform admin center, with the environment URL highlighted](media/coe19.png "Power Platform admin center, with the environment URL highlighted")
 
-   If the URL is truncated, you can see the full URL by selecting **See all** > **Environment URL**.
+       If the URL is truncated, you can see the full URL by selecting **See all** > **Environment URL**.
 
-   ![Environment settings available in the Power Platform admin center](media/coe20.png "Environment settings available in the Power Platform admin center")
+       ![Environment settings available in the Power Platform admin center](media/coe20.png "Environment settings available in the Power Platform admin center")
+
+- If you have installed the CoE Starter Kit in a Dataverse for Teams environment:
+    1. Open the Power Apps app in Teams
+    1. Select **Build** and select your CoE environment
+        ![Select your CoE environment in the Power Apps app in Teams](media/coe-dft-bi1.png "Select your CoE environment in the Power Apps app in Teams")
+    1. Select **About** > **Session Details** and copy the Instance URL from there.
+         ![Select the Instance URL of your environment](media/coe-dft-bi2.png "Select the Instance URL of your environment")
 
 > [!NOTE]
 > The Power BI dashboard uses Direct Query to connect to Microsoft Dataverse, therefore TDS Endpoint has to be enabled for the environment: [Manage feature settings](https://docs.microsoft.com/power-platform/admin/settings-features)
@@ -55,7 +63,7 @@ You can configure and modify the Power BI dashboard by working directly with the
 
 1. In Power BI Desktop, open the PowerPlatformAdminDashboard.pbit file, which can be found in the CoE Starter Kit you downloaded from [aka.ms/CoeStarterKitDownload](https://aka.ms/CoEStarterKitDownload).
 
-1. Enter the URL of your environment instance (do not include the https:// prefix) for **OrgUrl**, and&mdash;if prompted&mdash;sign in to Power BI Desktop with your organization account that has access to the environment you installed the CoE Starter Kit in.
+1. Enter the URL of your environment instance (do not include the https:// prefix or / postfix) for **OrgUrl**, and&mdash;if prompted&mdash;sign in to Power BI Desktop with your organization account that has access to the environment you installed the CoE Starter Kit in.
 
    ![Enter OrgUrl to configure Power BI dashboard](media/pbit.png "Enter OrgUrl to configure Power BI dashboard")
 
@@ -69,6 +77,9 @@ The dashboard can be configured to use embedded apps to enable you to drive acti
 
 #### Import embedded apps
 
+> [!NOTE]
+> If you have installed the Center of Excellence - Core Components in a Teams environment, the embedded apps are included in the solution and you will not have to import them. Skip to [Embed apps into the Power BI dashboard](#embed-apps-into-the-power-bi-dashboard).
+
 1. Go to **[make.powerapps.com](https://make.powerapps.com)** in the environment where you installed the CoE Starter Kit.
 1. On the left pane, select **Apps**.
 1. Select **Import canvas app**.
@@ -77,7 +88,7 @@ The dashboard can be configured to use embedded apps to enable you to drive acti
 
 1. Import the **Admin – Access this app** app (Admin-AccessthisApp.zip).
 1. Configure all the connections.
-1. Repeat the same steps for the **Admin – Access this flow** app (Admin-AccessthisFlow.zip). 
+1. Repeat the same steps for the **Admin – Access this flow** app (Admin-AccessthisFlow.zip).
 
 #### Embed apps into the Power BI dashboard
 
@@ -114,7 +125,7 @@ You'll now configure the Power Apps visuals in the Power BI dashboard to point t
 
 **To configure the app on the Flow Detail page**
 
-1. Go to the **Flow Detail** tab.
+1. Go to the **Cloud flow detail** tab.
 1. Select the **Power Apps visual** from **Visualizations**.
    Select the fields from your dataset that you want to use in the app.
 1. With the visual selected, select the **admin_flowid** and **admin_flowenvironment** flows under **Fields**.

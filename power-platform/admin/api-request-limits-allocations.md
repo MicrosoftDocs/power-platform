@@ -5,7 +5,7 @@ author: dileepsinghmicrosoft
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/26/2021
+ms.date: 05/11/2021
 ms.author: dileeps
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -49,7 +49,7 @@ All the users of Microsoft Power Platform have limits on the number of requests 
 | Power Apps per app plan | 1,000 per app pass |
 | Non-licensed users | See [Requests limits not based on licensed users or flows](#requests-limits-not-based-on-licensed-users-or-flows) below |
 
-<sup>1</sup> Dynamics 365 Enterprise applications include Dynamics 365 Sales Enterprise, Dynamics 365 Customer Service Enterprise, Dynamics 365 Field Service, Dynamics 365  Project Service Automation, Dynamics 365 Retail, Dynamics 365 Talent, Dynamics 365 Customer Engagement plan.
+<sup>1</sup> Dynamics 365 Enterprise applications include Dynamics 365 Sales Enterprise, Dynamics 365 Customer Service Enterprise, Dynamics 365 Field Service, Dynamics 365 Project Service Automation, Dynamics 365 Commerce, Dynamics 365 HR, Dynamics 365 Customer Engagement plan, Dynamics 365 Finance, Dynamics 365 Project Operations, and Dynamics 365 Supply Chain Management.
 
 <sup>2</sup> Dynamics 365 Professional includes Dynamics 365 Sales Professional, Dynamics 365 Customer Service Professional.
 

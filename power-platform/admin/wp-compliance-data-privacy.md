@@ -65,9 +65,9 @@ The following links point to detailed information to help you respond to DSR req
 |---------|---------|
 |Power Apps  |  [Responding to Data Subject Rights (DSR) requests to export Power Apps customer data](powerapps-gdpr-export-dsr.md)      |
 |Dataverse     |  [Responding to Data Subject Rights (DSR) requests for Dataverse customer data](common-data-service-gdpr-dsr-guide.md)     |
-|Power Automate    | https://docs.microsoft.com/flow/gdpr-dsr-summary        |
-|Microsoft Accounts (MSAs)     | https://docs.microsoft.com/flow/gdpr-dsr-summary-msa        |
-|Customer engagement apps     |https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-dynamics365         |
+|Power Automate    | [Responding to GDPR Data Subject Requests for Power Automate](/power-automate/gdpr-dsr-summary)       | 
+|Microsoft Accounts (MSAs)     | [Respond to GDPR Data Subject Rights (DSRs) requests](/power-automate/gdpr-dsr-summary-msa)       | 
+|Customer engagement apps     | [Dynamics 365 Data Subject Requests for the GDPR and CCPA](/compliance/regulatory/gdpr-dsr-Dynamics365?view=o365-worldwide)        | 
 
 ## Microsoft 365 Security and Compliance Center
 

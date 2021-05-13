@@ -738,7 +738,7 @@
             - name: Field security best practices
               href: how-field-security-affects-synchronization-between-outlook.md 
             - name: "Frequently asked questions: record synchronization"
-              href: frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook.md 
+              href: frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook.yml 
           - name: Configure folder-level tracking
             items:
             - name: Configure folder-level tracking
