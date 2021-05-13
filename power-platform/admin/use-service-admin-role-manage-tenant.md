@@ -8,7 +8,7 @@ ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/20/2020
+ms.date: 05/13/2021
 search.audienceType: 
   - admin
 search.app:
@@ -85,7 +85,7 @@ The following matrix shows what management is possible with the various service 
 |View and manage environment policies|Yes|Yes|Yes<sup>2</sup>|No|  
 ||||||
 |**POWER BI**|||||  
-|Manage the Power BI tenant|Yes|Yes|No|Yes|  
+|Manage the Power BI tenant|Yes|No|No|Yes|  
 |Acquire and assign Power BI licenses|Yes|No|No|No|  
 ||||||
 |**MICROSOFT 365**|||||  
