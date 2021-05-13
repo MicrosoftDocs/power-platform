@@ -78,7 +78,7 @@ Global administrators can create or update the lockbox policy in the Power Platf
 
 ## Review a lockbox request
 
-1. Sign in to the Power Platform admin center. 
+1. In the Power Platform admin center. 
 
 2. Select **Governance** > **Lockbox requests**.
 

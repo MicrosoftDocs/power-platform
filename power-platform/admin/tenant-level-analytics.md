@@ -22,7 +22,7 @@ search.app:
 
 Tenant admins can view reports that apply to all environments in a tenant. 
 
-To access these reports, sign in to the Power Platform admin center and select **Analytics** > **Power Apps**. Reports appear in a menu bar at the top of the page.
+To access these reports, In the Power Platform admin center and select **Analytics** > **Power Apps**. Reports appear in a menu bar at the top of the page.
 
 ## Who can view these reports?
 

@@ -70,7 +70,7 @@ To allocate capacity to an environment:
 
 As an admin, you can restrict who can allocate add-on capacity to environments.
 
-1. Sign in to the Power Platform admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com).
+1. In the Power Platform admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com).
 2. Select the **Gear** icon (![Gear icon](media/selection-rule-gear-button.png)) in the upper-right corner of the Power Platform site.
 3. Select **Power Platform settings**.
 4. Under **Who can allocated add-on capacity to environments**, select **Only specific admins**.
