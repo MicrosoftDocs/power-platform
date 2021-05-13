@@ -57,6 +57,6 @@ To help diagnose the issue, let's determine if the problem is with the Dynamics 
 
 ### Test results
 
-If the connectivity test is **not** successful, the issue is not with Dynamics 365 Online but could be with Microsoft Exchange on-premises configuration. The next step is to revisit your Microsoft Exchange server configuration and if necessary contact [Microsoft Exchange on-premises support](https://support.serviceshub.microsoft.com/supportforbusiness/onboarding?origin=%2Fsupportforbusiness%2Fmanage%3Fstate%3Dopen).  
+If the connectivity test is **not** successful, the issue might not be with Dynamics 365 Online but could be with Microsoft Exchange on-premises configuration. The next step is to revisit your Microsoft Exchange server configuration and if necessary contact [Microsoft Exchange on-premises support](https://support.serviceshub.microsoft.com/supportforbusiness/onboarding?origin=%2Fsupportforbusiness%2Fmanage%3Fstate%3Dopen).  
 
 If the connectivity test is succcessful, contact [Support](get-help-support.md) to further analyze the source of the issue.
