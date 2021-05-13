@@ -57,7 +57,7 @@ The administrator will need to [enable document management](enable-sharepoint-do
 
 If you create a custom grid for use with Sharepoint, the grid must adhere to the requirements for FetchXML and LayoutXML or you will get an error. 
 
-See [Troubleshoot SharePoint integration](troubleshoot-set-up-sharepoint-online#malformed-fetchxml-or-layoutxml---validate-and-fix)
+See [Troubleshoot SharePoint integration](troubleshoot-set-up-sharepoint-online.md#malformed-fetchxml-or-layoutxml---validate-and-fix).
 
 ## Error messages
 
