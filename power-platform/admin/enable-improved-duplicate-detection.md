@@ -19,7 +19,7 @@ search.app:
 # Enable the improved duplicate detection and merge experience 
 
 > [!IMPORTANT]
-> The improved duplicate detection experience in now enabled by default.
+> The improved duplicate detection experience is now enabled by default.
 
 ### See also
 [What happens when duplicates are found while qualifying leads?](/dynamics365/sales-enterprise/qualify-lead-convert-opportunity-sales#what-happens-when-duplicates-are-found-while-qualifying-leads)
