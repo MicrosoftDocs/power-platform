@@ -17,7 +17,7 @@ With Power Virtual Agents, you can create bots in different environments and eas
 
 An environment is a space to store, manage, and share your organization's business data. The bots you create are stored in an environment (apps and flows are also stored in environments). Environments may also have different roles, security requirements and target audiences, and each environment is created in a separate location. See the following topics for more information: 
 
-- [Supported data locations](data-location.md).
+- [Supported data locations](data-location.md)
 - [Power Platform environments overview](/power-platform/admin/environments-overview.md)
 
 ## Prerequisites
