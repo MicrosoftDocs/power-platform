@@ -396,9 +396,9 @@
           href: analytics-flow.md
         - name: Analytics for UI flows
           href: analytics-ui-flow.md
- #     - name: "Preview: Tenant-level analytics" 
- #       href: tenant-level-analytics.md
- # Comment out the following section before publishing to live
+    # Comment out lines down to storage before publishing
+      # - name: "Preview: Tenant-level analytics" 
+      #   href: tenant-level-analytics.md
       # - name: Analyze telemetry with Application Insights
       #   items:
       #   - name: Model-driven apps and Microsoft Dataverse telemetry
@@ -511,7 +511,7 @@
         href: web-application-requirements.md
       - name: Server cipher suites and TLS requirements
         href: server-cipher-tls-requirements.md
-    - name: Security
+    - name: Security and governance
       items:
       - name: Overview
         href: wp-security.md     
@@ -703,6 +703,8 @@
             href: connect-exchange-online.md
           - name: Connect to Exchange Server (on-premises)
             href: connect-exchange-server-on-premises.md
+          - name: Test connection to Exchange Server (on-premises)
+            href: test-connection-exchange-server-onpremises.md
           - name: Connect to IMAP or SMTP servers
             href: connect-to-imap-servers.md 
           - name: Connect to Gmail
