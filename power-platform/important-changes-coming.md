@@ -56,7 +56,7 @@ To meet the October 2021 deadline, be sure you update any of your forms from a l
 If you don't make this change, the form no longer honors this setting at runtime. It also defaults to high-density with flyout.
 
 
-## Form footers in model-driven app won't be supported with the 2021 release wave 2
+## Form footers in model-driven apps won't be supported with the 2021 release wave 2
 
 With the upcoming 2021 release wave 2 (public preview in August 2021 and GA in October 2021), form footers won't be supported in a model-driven app form. 
 
