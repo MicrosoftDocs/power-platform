@@ -85,7 +85,7 @@ The following matrix shows what management is possible with the various service 
 |View and manage environment policies|Yes|Yes|Yes<sup>2</sup>|No|  
 ||||||
 |**POWER BI**|||||  
-|Manage the Power BI tenant|Yes|No|No|Yes|  
+|Manage the Power BI tenant|Yes|Yes|No|Yes|  
 |Acquire and assign Power BI licenses|Yes|No|No|No|  
 ||||||
 |**MICROSOFT 365**|||||  
