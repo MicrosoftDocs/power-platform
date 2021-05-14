@@ -63,7 +63,7 @@ The Power Apps Maker Activity report provide insights into tenant and environmen
 - How many of these apps are using premium or standard connectors? 
 - Allow me to filter the above list based on connector type. 
 
-image
+:::image type="content" source="media/maker-activity-report.png" alt-text="Power Apps Maker Activity report":::
 
 ### Power Apps - Inventory report
 
@@ -74,7 +74,7 @@ The Power Apps Inventory report offers a complete catalog of Power Apps distribu
 - Who are the owners of the apps hosted in one or more environments? 
 - What is the distribution of canvas versus model-driven apps across the organization? 
 
-image
+:::image type="content" source="media/power-apps-inventory-report.png" alt-text="Power Apps Inventory report":::
 
 ## Download Inventory
 
