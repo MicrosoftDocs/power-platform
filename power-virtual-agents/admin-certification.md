@@ -43,7 +43,7 @@ You can create chatbots that handle protected health information when your organ
 >[!NOTE]
 >Although Power Virtual Agents is covered under HIPAA, it still isn't intended for use as a medical device. See the disclaimer on [the intended use of Power Virtual Agents and medical devices](fundamentals-what-is-power-virtual-agents.md#important-information).
 
-[Learn more about HIPAA)](/compliance/regulatory/offering-hipaa-hitech.md).
+[Learn more about HIPAA](/compliance/regulatory/offering-hipaa-hitech).
 
 ## Health Information Trust Alliance (HITRUST)
 
@@ -55,7 +55,7 @@ The CSF builds on HIPAA and the HITECH Act, which are US healthcare laws that ha
 
 HITRUST provides a benchmark — a standardized compliance framework, assessment, and certification process — against which cloud service providers and covered health entities can measure compliance.
 
-[Learn more about HITRUST)](/compliance/regulatory/offering-hitrust.md).
+[Learn more about HITRUST](/compliance/regulatory/offering-hitrust).
 
 ## Federal Risk and Authorization Management Program (FedRAMP)
 FedRAMP was established to provide a standardized approach for assessing, monitoring, and authorizing cloud computing products and services under the Federal Information Security Management Act (FISMA) and to accelerate the adoption of secure cloud solutions by federal agencies. 
@@ -66,7 +66,7 @@ By deploying protected services including Azure Government, Office 365 US Govern
 
 Power Virtual Agents availability in GCC and GCC High plans are estimated to be generally available by June 2021.
 
-[Learn more about FedRAMP](/compliance/regulatory/offering-fedramp.md).
+[Learn more about FedRAMP](/compliance/regulatory/offering-fedramp).
 
 ## SOC compliance
 
@@ -74,7 +74,7 @@ SOC is a method for assuring control regulation within a service. Power Virtual 
 
 SOC audit reports are available from the [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_SOC_/_SSAE_16_Reports).
 
-[Learn more about SOC)](/compliance/regulatory/offering-soc.md).
+[Learn more about SOC](/compliance/regulatory/offering-soc).
 
 ## ISO compliance
 
@@ -103,7 +103,7 @@ Organizations of all sizes must follow PCI DSS standards if they accept payment 
 
 Compliance with PCI DSS is required for any organization that stores, processes, or transmits payment and card-holder data.
 
-[Learn more about PCI DSS)](/compliance/regulatory/offering-pci-dss.md).
+[Learn more about PCI DSS](/compliance/regulatory/offering-pci-dss).
 
 ## The Cloud Security Alliance (CSA) Security Trust Assurance and Risk (STAR)
 
@@ -115,7 +115,7 @@ From the [CSA STAR website](https://cloudsecurityalliance.org/star/):
 
 Power Virtual Agents has been audited to be compliant with CSA STAR.
 
-[Learn more about CSA STAR)](/compliance/regulatory/offering-csa-star-attestation.md).
+[Learn more about CSA STAR](/compliance/regulatory/offering-csa-star-attestation).
 
 ## United Kingdom Government Cloud (G-Cloud)
 
@@ -125,7 +125,7 @@ G-Cloud comprises a series of framework agreements with cloud services suppliers
 
 Inclusion in the Digital Marketplace requires a self-attestation of compliance, followed by a verification performed by the Government Digital Service (GDS) branch at its discretion.
 
-[Learn more about G-Cloud)](/compliance/regulatory/offering-g-cloud-uk.md).
+[Learn more about G-Cloud](/compliance/regulatory/offering-g-cloud-uk).
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
 
@@ -134,13 +134,13 @@ The OSPAR framework was established by the Association of Banks in Singapore (AB
 
 Power Virtual Agents has OSPAR attestation. 
 
-[Learn more about the ABS OSPR](/compliance/regulatory/offering-abs-ospar.md).
+[Learn more about the ABS OSPR](/compliance/regulatory/offering-abs-ospar).
 
 
 ## Korea-Information Security Management System (K-ISMS)
 [K-ISMS](https://isms.kisa.or.kr/main/isms/intro/) is a country-specific ISMS framework that defines a stringent set of control requirements designed to help ensure that organizations in Korea consistently and securely protect their information assets.
 
-[Learn more about ISMS (Korea)](/compliance/regulatory/offering-ISMS-korea.md).
+[Learn more about ISMS (Korea)](/compliance/regulatory/offering-ISMS-korea).
 
 ## Singapore Multi-Tier Cloud Security (MTCS) Level 3
 
@@ -148,7 +148,7 @@ The MTCS Standard for Singapore was prepared under the direction of the Informat
 
 The ITSC promotes and facilitates national programs to standardize IT and communications, and Singapore's participation in international standardization activities.
 
-[Learn more about MTCS)](/compliance/regulatory/offering-mtcs-singapore.md).
+[Learn more about MTCS](/compliance/regulatory/offering-mtcs-singapore).
 
 ## Spain Esquema Nacional de Seguridad (ENS) High-Level Security Measures
 
@@ -156,7 +156,7 @@ In 2007, the Spanish government enacted Law 11/2007, which established a legal f
 
 The goal of the framework is to build trust in the provision of electronic services, and ensure the access, integrity, availability, authenticity, confidentiality, traceability, and preservation of data, information, and services.
 
-[Learn more about ENS)](/compliance/regulatory/offering-ens-spain.md).
+[Learn more about ENS](/compliance/regulatory/offering-ens-spain).
 
 
 
