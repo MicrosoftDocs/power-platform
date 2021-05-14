@@ -40,54 +40,75 @@ For more information on the different roles for managing your tenant across the 
 
 The following tenant-level reports are available for tenant admins. 
 
-### Power Apps reports
+### Power Apps - Usage reports
 
-Power Apps reports provide insights into tenant and environment usage and inventory of all apps and connectors. Answer questions such as the following:
+Power Apps reports provide insights into tenant and environment usage and inventory of all apps and connectors. The report answers questions such as:
 
-- What is the total unique canvas/model apps users across the tenant or environments? 
-- What is the count of first-time users across canvas and model apps?
+- What is the total unique canvas/model-driven apps users across the tenant or environments? 
+- What is the count of first-time users across canvas and model-driven apps?
 - How many apps exist in my tenant or environment?
-- How many of these apps are using premium or standard connectors?
-- Provide a list of all connectors for the specified environment and time period.
-- Allow me to filter the above list based on connector type.
+- Which of my environments had the most unique users? 
+- What were the top apps by unique users/app sessions? 
 
 > [!div class="mx-imgBorder"] 
 > ![Power Apps usage report](media/power-apps-usage.png "Power Apps usage report")
 
-### Power Automate reports
-Power Automate reports provide insights into tenant usage and inventory of all flows and answer questions such as the following:
+### Power Apps - Maker Activity report
 
-- How many total flow runs across the tenant or environments for the time period selected? 
-- What is the total number of flow actions within all flows?
-- What are the top flows? List flow name, flow type, maker, successful runs, failed run, total actions, shares with users, group shares, environment name. 
+The Power Apps Maker Activity report provide insights into tenant and environment usage and inventory of all apps and connectors. The report answers questions such as:
 
-> [!div class="mx-imgBorder"] 
-> ![Power Automate usage report](media/power-automate-usage.png "Power Automate usage report")
+- What is the total number of apps created/published/modified/deleted by app makers across the tenant or environments? 
+- What is the count of first-time makers across canvas and model-driven apps? 
+- Who are the top makers across the tenant or environments? 
+- How many of these apps are using premium or standard connectors? 
+- Allow me to filter the above list based on connector type. 
 
-## Download Reports
+image
 
-Select **Download** to view available downloads and then select any of the reports to download them into Microsoft Excel.
+### Power Apps - Inventory report
 
-All the download reports, except "Active Dynamics 365 Customer Engagement Plan Users by Application", show data:   
-- for an environment <br />
-  and <br />
-- per the timeline in the filters for the out-of-box Dataverse analytics reports. If you select a certain date range for the out-of-box Dataverse reports, the same time filter applies to the downloads.  
-- The maximum duration for data availability is 30 days.
+The Power Apps Inventory report offers a complete catalog of Power Apps distributed across the tenant. This view includes filters that allow admins to search for apps based on various criteria. The report answers questions such as:
+
+- What is the total number of model-driven and canvas apps across the tenant or environments? 
+- Which apps depend on specific connectors or connector types like Premium? 
+- Who are the owners of the apps hosted in one or more environments? 
+- What is the distribution of canvas versus model-driven apps across the organization? 
+
+image
+
+## Download Inventory
+
+Power Platform admin center reports can be downloaded directly from the report visuals.  Users have the option of choosing between Summarized and Underlying data. 
+
+- Summarized data: select this option to download the data underlying the current report visual  
+- Underlying data: select this option to download the full result set backing the report 
 
 > [!div class="mx-imgBorder"] 
 > ![Dataverse analytics Download section](./media/tenant-download-reports.png "Dataverse analytics Download section")  
 
-## View data for different environments and date-time ranges
+For more information on downloading data from the tenant level reports, see [Exporting data from Power BI visuals](/power-bi/consumer/end-user-export).
 
-Select **Change filters**.  
+## How do I enable the Preview feature?
 
-> [!div class="mx-imgBorder"] 
-> ![Dataverse analytics change filters](./media/organization-insights-change-filters.png "Dataverse analytics change filters")  
+To enable a Preview feature, you must be an administrator. 
 
-Select the environment and time-period from the drop-down lists, and then select **Apply** to save the changes. All the Dataverse analytics reports are available using this selection. 
+1. Select the **Gear** icon (![Gear icon](media/selection-rule-gear-button.png)) in the upper-right corner of the Microsoft Power Platform site, and then select **Power Platform settings**. 
 
-> [!div class="mx-imgBorder"] 
-> ![Dataverse analytics change filters apply](./media/organization-insights-change-filters-apply.png "Dataverse analytics change filters apply")  
+2. Turn on the option to **Enable tenant level analytics**.
+
+   :::image type="content" source="media/enable-tenant-level-analytics.png" alt-text="Enable tenant-level analytics":::
+
+3. The process of collecting information for tenant-level analytics includes copying service telemetry data from other GEO locations into a central location for reporting.  Customers must explicitly enable this Power Platform operation.  For more information, see [Manage environments in the Power Platform admin center](environments-overview.md#manage-environments-in-the-power-platform-admin-center). 
+
+   Select **Enable** to grant consent for the service to collocate service telemetry data in the location associated with the default environment. 
+
+   :::image type="content" source="media/enable-collocate-service-telemetry-data.png" alt-text="Grant consent for the service to collocate service telemetry data":::
+
+4. Select **Save** and then close the form. 
+
+5. Select **Environment level analytics**, and then select **Tenant level analytics** to switch viewing modes. 
+
+   image
 
 
 
