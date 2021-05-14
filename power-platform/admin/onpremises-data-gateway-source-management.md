@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/01/2020
+ms.date: 05/11/2021
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -37,26 +37,18 @@ This article describes managing data sources. For information on managing gatewa
 
 ## Data source settings
 
-Select a data source and then select **Settings** to see the following information. This view is currently read-only. 
-
-> [!div class="mx-imgBorder"] 
-> ![Data gateway settings tab](media/data-gateways-settings-tab.png "Data gateway settings tab")
+Select a data source and then select **Settings** from the top menu bar to see the data source properties. You can view and update applicable data source properties.  
 
 > [!div class="mx-imgBorder"] 
 > ![Data source settings](media/data-gateways-data-source-settings.png "Data source settings")
 
-- **Data Source Name**: The name of the data source.
-- **Data source type**: The type of the data source. For supported data sources, see [Power BI data sources](/power-bi/connect-data/power-bi-data-sources).
-- **Connection details**: Connection information. Check back for updated information.
-- **Authentication Method**: The authentication method chosen for this connection.
+## Add new data source
 
-## Manage users
+Select **+New** from the top menu bar to create a new gateway data source. This can either be an on-premises or a VNet data source.   
 
-Select a data source and then select **Manage users** to see the list of current data source users. These users can use this data source in published reports and data flows. 
+Select a gateway cluster, data source name, a data source type, and other data source properties to create the data source. For more information on data source properties, see [Add or remove a gateway data source](/power-bi/connect-data/service-gateway-data-sources).
 
-> [!div class="mx-imgBorder"] 
-> ![Manage users for data source](media/data-gateways-source-manage-users.png "Manage users for data source")
-
+:::image type="content" source="media/data-gateways-new-data-source.png" alt-text="New data source":::
 
 ## Remove a data source
 
@@ -64,6 +56,13 @@ Select a data source and then select **Remove** to remove the data source.
 
 > [!div class="mx-imgBorder"] 
 > ![Remove a data source](media/data-gateways-remove-data-source.png "Remove a data source")
+
+## Manage users
+
+Select a data source and then select **Manage users** to see the list of current data source users. These users can use this data source in published reports and data flows. 
+
+> [!div class="mx-imgBorder"] 
+> ![Manage users for data source](media/data-gateways-source-manage-users.png "Manage users for data source")
 
 ## Get help
 For faster troubleshooting and assistance, select **Get help** to open a Get help panel. Include the session ID in a customer support ticket for any issues on the Data Gateways feature in the Power Platform admin center.

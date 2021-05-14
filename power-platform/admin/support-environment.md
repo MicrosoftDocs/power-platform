@@ -66,8 +66,8 @@ Database (via SQL query tools):
 
 ## How long does a support environment stay in your tenant?
 
-1. Seven days or upon resolution of the problem.
-2. System admins can [delete](delete-environment.md) the support environment at any time.
+- Seven days or upon resolution of the problem.
+- System admins can [delete](delete-environment.md) the support environment at any time.
 
 ### Is access and usage of support environment audited?
 
