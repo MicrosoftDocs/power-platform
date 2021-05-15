@@ -83,8 +83,7 @@ Power Platform admin center reports can be downloaded directly from the report v
 - Summarized data: select this option to download the data underlying the current report visual  
 - Underlying data: select this option to download the full result set backing the report 
 
-> [!div class="mx-imgBorder"] 
-> ![Dataverse analytics Download section](./media/tenant-download-reports.png "Dataverse analytics Download section")  
+:::image type="content" source="media/download-inventory-report.png" alt-text="Download Inventory report":::
 
 For more information on downloading data from the tenant level reports, see [Exporting data from Power BI visuals](/power-bi/consumer/end-user-export).
 
