@@ -578,6 +578,8 @@ You can use Bot Framework Composer with Virtual Power Agents to send event data 
 
 To connect to your Application Insights service in Composer, you need to add your instrumentation key to the project. Go the **Configure** tab in Composer and switch to **Advanced Settings View (json)**.
 
+![Composer Configure tab - Advanced Settings View](media/Composer_AppInsights/Configure_AdvancedViews.png)
+
 Find the **applicationInsights** section, then add your Application Insights instrumentation key to the **instrumentationKey** setting.
 
 A subscription to Microsoft Azure.
