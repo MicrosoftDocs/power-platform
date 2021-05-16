@@ -350,7 +350,7 @@ Your Power Virtual Agents topic **Meal delivery options** will call the Bot Fram
 To test you changes in Power Virtual Agents, open **Test pane** and make sure **Track between topics** is set on. Type in the following text to start your conversation:
 - What meals do you deliver?
 
-![Power Virtual Agents Example 1 test](media/Composer_Example1/Example1_cropped.gif)
+![Power Virtual Agents Example 1 test](media/Composer_Example1/Example1_cropped.png)
 
 
 ## Example 2 – Display a multi-select options list in Power Virtual Agents 
