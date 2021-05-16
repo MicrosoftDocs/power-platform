@@ -169,13 +169,13 @@ Your Power Virtual Agents bot will open in a Bot Framework Composer project. You
 >[!TIP]
 >The **LUIS** service is not supported as a Recognizer for Power Virtual Agents in Composer. The **Default Recognizer** is set to **Power Virtual Agents NLU** instead. You do not need to have an additional subscription to use **Power Virtual Agents NLU** because it is included in your Power Virtual Agents license.
 
-Go to the **Design** tab in Composer and select **Add a dialog** in the dropdown menu:
+Go to the **Create** tab in Composer and select **Add a dialog** in the dropdown menu:
 
-![Composer Design tab](media/Composer_Example1/E1_Meals_creatNewDialog.png)
+![Composer Create tab](media/Composer_Example1/E1_Meals_creatNewDialog.png)
 
 Name your new dialog **Meals**. Select **OK** to create a new dialog **Meals** in Composer. You will use this **Bot Framework dialog** to display an Adaptive Card.
 
-![Composer Design tab new dialog](media/Composer_Example1/E1_Meals_newDialog.png)
+![Composer Create tab new dialog](media/Composer_Example1/E1_Meals_newDialog.png)
 
 Go to the **Bot Responses** tab in Composer and open the **Meals** section. Select **Show code**.
 
@@ -318,7 +318,7 @@ Add the **Activity** that will display this Adaptive Card in the Bot Framework d
 
 ![Composer Bot Responses tab - Activity](media/Composer_Example1/E1_Meals_BotResponse_Activity.png)
 
-Go back to **Design View** in Composer and select the **Meals** dialog. Select **BeginDialog** and add **Send a response** to your dialog. We'll use this node to display the Adaptive Card we have created in the **Bot Responses** tab.
+Go back to **Create** tab in Composer and select the **Meals** dialog. Select **BeginDialog** and add **Send a response** to your dialog. We'll use this node to display the Adaptive Card we have created in the **Bot Responses** tab.
 
 ![Composer Begin Dialog - add Send a response action](media/Composer_Example1/E1_Meals_AddResponse.png)
 
@@ -364,7 +364,7 @@ Using Composer, you can create a multi-select options list to be used in your ch
 
 Open the Power Virtual Agents bot used in the [Example 1](#example-1--show-an-adaptive-card-in-power-virtual-agents) and select **Open in Bot Framework Composer (Preview)** on the **Topics** page to open the bot in Composer. 
 
-While in **Design View** in Composer select **+ Add** and choose to add another Bot Framework dialog.
+While in **Create** tab in Composer select **+ Add** and choose to add another Bot Framework dialog.
 
 Name your new dialog **DailySpecials** in Composer.
 
@@ -423,26 +423,26 @@ Add the following template to the **Bot Responses** tab for **DailySpecials** to
 ```
 ![Composer Bot Responses tab - Language Generation code](media/Composer_Example2/E2_DailySpecials_BotResponse.png)
 
-Go back to the **Design View** in Composer and select **BeginDialog** under **DailySecials**. 
+Go back to the **Create** tab in Composer and select **BeginDialog** under **DailySecials**. 
 
 Add a new prompt for user input to this dialog by selecting **Multi-choice** under the **Ask a question** menu option.
 
-![Composer Design View - ask a multi choice questions](media/Composer_Example2/E2_DailySpecials_askaquestion.png)
+![Composer Create tab - ask a multi choice questions](media/Composer_Example2/E2_DailySpecials_askaquestion.png)
 
 Enter the following text for the prompt:
 `- Please select a day:`
 
-![Composer Design View - add prompt language generation](media/Composer_Example2/E2_DailySpecials_prompt.png)
+![Composer Create tab - add prompt language generation](media/Composer_Example2/E2_DailySpecials_prompt.png)
 
 Select the **User Input (Choice)** action. In the **Prompt with multi-choice** panel, under **User Input**, set **Property** to **conversation.day_choice**. 
 Set **Output format** to **index** to return the index of the selected option instead of a value.
 
-![Composer Design View - set up choice output property](media/Composer_Example2/E2_DailySpecials_input_variable.png)
+![Composer Create tab - set up choice output property](media/Composer_Example2/E2_DailySpecials_input_variable.png)
 
 Next, scroll down the **Prompt with multi-choice** panel and set **List style** to **heroCard** to display our options list vertically. 
 Select **Write an expression** for the **Array of choices** field and set it to use the **conversation.days_array** property we created.
 
-![Composer Design View - set up array of choices](media/Composer_Example2/E2_DailySpecials_array_multi_option.png)
+![Composer Create tab - set up array of choices](media/Composer_Example2/E2_DailySpecials_array_multi_option.png)
 
 You have created a multi-choice option list that is based on **conversation.days_array** and stores the user selection into the **conversation.day_choice** property.
 You can use this **conversation.day_choice** property to display the daily special for the selected day. Add a **Send a response** action to your **DailySpecials** dialog under the **User Input** action and add the following expression in the **Language Generation** panel on the right:
@@ -450,14 +450,14 @@ You can use this **conversation.day_choice** property to display the daily speci
 ```JSON
 - ${DailySpecials(conversation.day_choice)}
 ```
-![Composer Design View - display Daily Special for the selected day](media/Composer_Example2/E2_DailySpecials_addResponse.png)
+![Composer Create tab - display Daily Special for the selected day](media/Composer_Example2/E2_DailySpecials_addResponse.png)
 
-Go to **Design View** tab in Composer and navigate to the Power Virtual Agents **main (root) dialog**. This dialog is the top-level read-only dialog in Composer that you created when you opened your bot in Composer. Select **+ Add** and choose **Add new trigger** option.
+Go to **Create** tab in Composer and navigate to the Power Virtual Agents **main (root) dialog**. This dialog is the top-level read-only dialog in Composer that you created when you opened your bot in Composer. Select **+ Add** and choose **Add new trigger** option.
 
-![Composer Design View - add new trigger](media/Composer_Example2/E2_main_addNewTrigger.png)
+![Composer Create_tab - add new trigger](media/Composer_Example2/E2_main_addNewTrigger.png)
 
 Set the type of trigger to **Intent recognized** and name it **Specials**. Select **Submit**.
-![Composer Design View - add new Intent Recorgized trigger](media/Composer_Example2/E2_main_nameNewTrigger.png)
+![Composer Create_tab - add new Intent Recorgized trigger](media/Composer_Example2/E2_main_nameNewTrigger.png)
 
 A new Bot Framework **intent trigger** will be created in Composer. On the side panel **Trigger Phrases** add the following trigger phrases for your intent:
 
@@ -467,15 +467,15 @@ A new Bot Framework **intent trigger** will be created in Composer. On the side 
 -do you have discounts
 ```
 
-![Composer Design View - Trigger Phrases](media/Composer_Example2/E2_main_addTriggerPhrases.png)
+![Composer Create tab - Trigger Phrases](media/Composer_Example2/E2_main_addTriggerPhrases.png)
 
 Select **Begin a new dialog** under **Dialog management** to create a node that can call another dialog:
 
-![Composer Design View - begin new dialog](media/Composer_Example2/E2_main_DialogManagement.png)
+![Composer Create tab - begin new dialog](media/Composer_Example2/E2_main_DialogManagement.png)
 
 In the new action, select to call **DailySpecials** in the **Begin a new dialog** panel on the right:
 
-![Composer Design View - call a new dialog](media/Composer_Example2/E2_main_callDialog.png)
+![Composer Create tab - call a new dialog](media/Composer_Example2/E2_main_callDialog.png)
 
 You are now ready to add you Composer content to your Power Virtual Agents bot. Go to the **Publish** tab and publish it to your Power Virtual Agents bot.
 ![Composer Publish to Power Virtual Agents bot](media/Composer_Example2/E2_main_publishSuccess.png)
@@ -556,7 +556,7 @@ Add this **Activity** to the same **Bot Responses** window in Composer:
 ![Composer Bot Responses - add Activity](media/Composer_Example3/E3_BingSearch_BotResponses_Activity.png)
 
 
-Go to the **Design** tab in Composer and select **BeginDialog** under the **BingSearch** dialog. Add the **Send a response** action and add the following expression to the **Language Generation** panel:
+Go to the **Create** tab in Composer and select **BeginDialog** under the **BingSearch** dialog. Add the **Send a response** action and add the following expression to the **Language Generation** panel:
 
 ```JSON
 -${AdaptiveCardBingSearch(turn.activity.text)}
@@ -572,7 +572,7 @@ Make sure the type of trigger is set to **Unknown Intent** and select **Submit**
 
 ![Composer - unknown intent](media/Composer_Example3/E3_BingSearch_createUnknownIntent.png)
 
-After an **Unknown event trigger** is created and opened in the **Design** view, select **Begin a new dialog** under **Dialog management menu**.
+After an **Unknown event trigger** is created and opened in the **Create** view, select **Begin a new dialog** under **Dialog management menu**.
 
 ![Composer Unknown Intent triger - Dialog management](media/Composer_Example3/E3_BingSearch_callDialog.png)
 
