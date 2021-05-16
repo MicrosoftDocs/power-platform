@@ -429,7 +429,9 @@ Select **Write an expression** for the **Array of choices** field and set it to 
 ![Composer Create tab - set up array of choices](media/Composer_Example2/E2_DailySpecials_array_multi_option.png)
 
 You have created a multi-choice option list that is based on **conversation.days_array** and stores the user selection into the **conversation.day_choice** property.
-You can use this **conversation.day_choice** property to display the daily special for the selected day. Select **Show code** and dd a **Send a response** action to your **DailySpecials** dialog under the **User Input** action and add the following expression in the **Language Generation** panel on the right:
+You can use this **conversation.day_choice** property to display the daily special for the selected day. 
+
+Select **Show code** and dd a **Send a response** action to your **DailySpecials** dialog under the **User Input** action and add the following expression in the **Language Generation** panel on the right:
 
 ```JSON
 - ${DailySpecials(conversation.day_choice)}
