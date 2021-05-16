@@ -77,11 +77,9 @@ Your Power Virtual Agents bot is now open in Composer and you are ready to start
 
 ![Bot Framework Composer Project Initial View](media/ComposerUI_Open_initialView.png)
 
-In some cases, Power Virtual Agents might be unable to launch Composer automatically. However, you can always launch it manually from your browser.
+>[!NOTE]
+> In some cases, Power Virtual Agents might be unable to launch Composer automatically. However, you can always launch it manually from your browser.
 Use the **Copy Link** feature to copy the link to the Composer and paste it as the URL in your web browser.
-
-![Bot Framework Composer Copy Link](media/ComposerUI_CopyLinkComposer.png)
-
 
 ## Guidelines for creating bot content for Power Virtual Agents in Composer
 When opened from a Power Virtual Agents bot, Composer launches a **Composer project** on your PC and loads your bot content into it.
