@@ -636,8 +636,14 @@ Select **Add custom** option and add the following to the **Attachments** window
 ```
 ![Composer - add StartTrialForm attachment](media/Composer_Example4/E4_addAttachment_StartTrialForm.png)
 
-Select **User Input** node and save user input data. Set **Propety** to **user.name** and set **Vallue** to **=turn.activity.value,Name** to extract and save the value of the from field id **Name** into **user.name**.
+Select **User Input** node and save user input data. Set **Property** to **user.name** and set **Value** to **=turn.activity.value.Name** to extract and save the value of the from field **Name** from our Adaptive card **StartTrialForm** into **user.name**.
 ![Composer - save user input](media/Composer_Example4/E4_saveUserInput.png)
+
+Your Adaptive card **StartTrialForm** has two more fields, **Address** and **Weeks**. Use **Set properties** action to extract them from **turn.activity.value** and save them to **user.address** and **user.weeks**:
+
+![Composer - set properties](media/Composer_Example4/E4_setProperties.png)
+
+
 
 ## Use and update Power Virtual Agents variables in Bot Framework Composer
 
