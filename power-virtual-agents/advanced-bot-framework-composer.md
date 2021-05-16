@@ -455,8 +455,7 @@ A new trigger **Specials** will be created. Select **Begin a new dialog** under 
 
 ![Composer Create tab - call a new dialog](media/Composer_Example2/E2_main_callDialog.png)
 
-You are now ready to add you Composer content to your Power Virtual Agents bot. Go to the **Publish** tab and publish it to your Power Virtual Agents bot.
-![Composer Publish to Power Virtual Agents bot](media/Composer_Example2/E2_main_publishSuccess.png)
+You are now ready to add you Composer content to your Power Virtual Agents bot. Go to the **Publish** tab in Composer and publish it to your Power Virtual Agents bot.
 
 Once your new Composer content is successfully published, go to the Power Virtual Agents **Topics** page to verify that your new Composer content has been uploaded correctly. In your **Topics** list, you can see the new **Specials** and **DailySpecials** content that you have created in Bot Framework Composer.
 
