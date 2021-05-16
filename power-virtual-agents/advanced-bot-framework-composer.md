@@ -84,17 +84,20 @@ Use the **Copy Link** feature to copy the link to the Composer and paste it as t
 ## Guidelines for creating bot content for Power Virtual Agents in Composer
 When opened from a Power Virtual Agents bot, Composer launches a **Composer project** on your PC and loads your bot content into it.
 
-The **main (root) dialog** in your **Composer project** is the same as the project name you gave it. It corresponds to your Power Virtual Agents bot content. In this example below, your **main (root) dialog** is **PVA_Composer_Bot**: 
+The **main (root) dialog** in your **Composer project** is the same as the project name you gave it. It corresponds to your Power Virtual Agents bot content. In this example below, your **main (root) dialog** is **Contoso-Meal-Delivery-Service**: 
 ![Bot Framework Composer main (root) dialog](media/Composer_Guidelines/Gd_mainDialog_initial.png)
 
 There are few key guidelines to follow when using Composer to create your bot content for Power Virtual Agents.
 
-- You can't edit Power Virtual Agents topics in Composer; this content is read-only in Composer. However, you can create and add content to Power Virtual Agents in Composer.
+- The Power Virtual Agents topics from your bot will be displayed in Composer. You can't edit these Power Virtual Agents topics in Composer; cliking on them will open these topics in Power Virtual Agents for editing.
+![Bot Framework Composer - Power Virtual Agents topics](media/Composer_Guidelines/Gd_PVA_Topics.png)
+
+- You can call Power Virtual Agents topics in Composer by using **Begin a PVA Topic** option.
+![Bot Framework Composer - Power Virtual Agents topics](media/Composer_Guidelines/Gd_PVA_Topics.png)
 
 - You can add new **Bot Framework triggers** of any kind to your **main (root) dialog**. You can use **Send a response**, **Ask a question**, and **Language Generation** in the new **triggers** added to **main (root) dialog**.
 
 - You can't use the Regular expression recognizer (RegEx) in the **main (root) dialog**. Using the Regular expression recognizer in the **main (root) dialog** will prevent you from publishing your Composer content to Power Virtual Agents. However, you can use the Regular expression recognizer in any other Composer dialogs.
-
 
 - You can create new **Bot Framework dialogs** and add **events** and **triggers** of any kind to them. **Send a response**, **Ask a question**, and **Language Generation** can be used in **triggers** that belong to the new **dialogs**.
 
@@ -118,8 +121,9 @@ The following Bot Framework Composer features are not supported with Power Virtu
 - LUIS Recognizer  
 Default Recognizer in Composer is set to Power Virtual Agents NLU
 
-- Bot Framework Orchestrator
-Bot Framework Orchestrator is not supported in Composer for Power Virtual Agents
+
+- Bot Framework Orchestrator  
+Bot Framework Orchestrator is not suported in Composer for Power Virtual Agents
 
 - Custom recognizer  
 Custom recognizer is not supported in Composer for Power Virtual Agents
