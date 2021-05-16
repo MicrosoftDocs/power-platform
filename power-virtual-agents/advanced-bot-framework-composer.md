@@ -532,7 +532,7 @@ Add this **Activity** to the same **Bot Responses** window in Composer:
 ![Composer Bot Responses - add Activity](media/Composer_Example3/E3_BingSearch_BotResponses_Activity.png)
 
 
-Go to the **Create** tab in Composer and select **Unkown intent** trigger. Add the **Send a response** action and add the following expression to the **Language Generation** panel:
+Go to the **Create** tab in Composer and select **Unkown intent** trigger. Add the **Send a response** action and sleect **Show code**. Add the following expression to the **Language Generation** panel:
 
 ```JSON
 -${AdaptiveCardBingSearch(turn.activity.text)}
@@ -540,25 +540,7 @@ Go to the **Create** tab in Composer and select **Unkown intent** trigger. Add t
 
 ![Composer BeginDialog - Send a response](media/Composer_Example3/E3_BingSearch_addBotReponse_BingSearch.png)
 
-Go to the **main (root) dialog** in Composer. Select **+ Add** and choose **Add new trigger**.
-
-![Composer - Add new trigger](media/Composer_Example3/E3_BingSearch_addNewTrigger.png)
-
-Make sure the type of trigger is set to **Unknown Intent** and select **Submit**.
-
-![Composer - unknown intent](media/Composer_Example3/E3_BingSearch_createUnknownIntent.png)
-
-After an **Unknown event trigger** is created and opened in the **Create** view, select **Begin a new dialog** under **Dialog management menu**.
-
-![Composer Unknown Intent triger - Dialog management](media/Composer_Example3/E3_BingSearch_callDialog.png)
-
-In the **Begin a new dialog** panel on the right, select the dialog named **BingSearch**.
-
-![Composer Unknown Intent triger - call BingSearch dialog](media/Composer_Example3/E3_BingSearch_callBingSearch.png)
-
 You are now ready to add you Composer content to your Power Virtual Agents bot. Go to **Publish** tab in Composer and publish it to your Power Virtual Agents bot.
-
-![Screenshot of Composer Publish tab](media/Composer_Example3/E3_BingSearch_uploadSuccess.png)
 
 Once your new Composer content is successfully published, you can now see that **OnUnknownIntent** was added to the **Topics** page in Power Virtual Agents.
 
