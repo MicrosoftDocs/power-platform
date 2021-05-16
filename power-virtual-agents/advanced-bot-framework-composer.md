@@ -442,20 +442,16 @@ Go to **Create** tab in Composer and navigate to the Power Virtual Agents **main
 
 ![Composer Create_tab - add new trigger](media/Composer_Example2/E2_main_addNewTrigger.png)
 
-Set the type of trigger to **Intent recognized** and name it **Specials**. Select **Submit**.
-![Composer Create_tab - add new Intent Recorgized trigger](media/Composer_Example2/E2_main_nameNewTrigger.png)
-
-A new Bot Framework **intent trigger** will be created in Composer. On the side panel **Trigger Phrases** add the following trigger phrases for your intent:
+Set the type of trigger to **Intent recognized** and name it **Specials**. Add the following trigger phrases for your intent and select **Submit**.
 
 ```JSON
 -what specials do you have
 -any special deals
 -do you have discounts
 ```
+![Composer Create_tab - add new Intent Recorgized trigger](media/Composer_Example2/E2_main_nameNewTrigger.png)
 
-![Composer Create tab - Trigger Phrases](media/Composer_Example2/E2_main_addTriggerPhrases.png)
-
-Select **Begin a new dialog** under **Dialog management** to create a node that can call another dialog:
+A new trigger **Specials** will be created. Select **Begin a new dialog** under **Dialog management** to create a node that can call another dialog:
 
 ![Composer Create tab - begin new dialog](media/Composer_Example2/E2_main_DialogManagement.png)
 
