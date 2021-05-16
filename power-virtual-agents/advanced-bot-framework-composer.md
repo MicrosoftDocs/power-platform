@@ -63,7 +63,7 @@ During installation, make sure to unselect the **Run Bot Framework Composer** ch
 
 ![Bot Framework Composer Install Complete](media/Composer_InstallWizardFinish.png)
 
-Go back to Power Virtual Agents **Topics** page. Select **Open in Bot Framework Composer** and then **Open Composer** to open your bot in Composer.
+Go back to Power Virtual Agents **Topics** page and click on **+ New topic**. Select **Open in Bot Framework Composer** in the dropdown menu and then **Open Composer** to open your bot in Composer.
 
 
 >[!NOTE]
@@ -357,18 +357,11 @@ To test you changes in Power Virtual Agents, open **Test pane** and make sure **
 
 Using Composer, you can create a multi-select options list to be used in your chatbot.
 
-Open the Power Virtual Agents bot used in the [Example 1](#example-1--show-an-adaptive-card-in-power-virtual-agents) and select **Open in Bot Framework Composer (Preview)** on the **Topics** page to open the bot in Composer. 
+Open the Power Virtual Agents bot used in the [Example 1](#example-1--show-an-adaptive-card-in-power-virtual-agents) and select **Open in Bot Framework Composer** option on the **Topics** page under **+ New topic** to open the bot in Composer. 
 
-While in **Create** tab in Composer select **+ Add** and choose to add another Bot Framework dialog.
-
-Name your new dialog **DailySpecials** in Composer.
-
-![Composer Create new Bot Framework dialog](media/Composer_Example2/E2_DailySpecials_create.png)
+While in **Create** tab in Composer and add another Bot Framework dialog. Name your new dialog **DailySpecials** in Composer.
 
 In your new **DailySpecials** dialog in Composer, go to **Manage properties** and select **Set a property** to create a new Composer property in the dialog.
-
-![Composer Create new Bot Framework dialog set property](media/Composer_Example2/E2_DailySpecials_set_a_property.png)
-
 Give this property the following name in the **Set a property** panel on the right:
 
 ```JSON
