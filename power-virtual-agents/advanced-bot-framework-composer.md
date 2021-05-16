@@ -322,7 +322,7 @@ Go back to **Create** tab in Composer and select the **Meals** dialog. Select **
 
 ![Composer Begin Dialog - add Send a response action](media/Composer_Example1/E1_Meals_AddResponse.png)
 
-For the new **Send a response** action, the **Language Generation** panel will open on the side in Composer. Add the following expression to this window to show the Adaptive Card and pass a Power Virtual Agents global variable `user_city` as a parameter: 
+For the new **Send a response** action, the **Language Generation** panel will open on the side in Composer. Click on **Show code** button and add the following expression to this window to show the Adaptive Card and pass a Power Virtual Agents global variable `user_city` as a parameter: 
 
 ```JSON
 - ${AdaptiveCardMeals(virtualagent.user_city)}
