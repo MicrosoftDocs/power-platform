@@ -475,9 +475,12 @@ Open the Power Virtual Agents bot used in [Example 1](#example-1--show-an-adapti
 
 Go to the **Topics** page and select **Open in Bot Framework Composer** under **+ New topic** dropdown menu to open Composer. 
 
-Select **+ Add dialog** to add another Bot Framework dialog. Name your new dialog **BingSearch** in Composer.
+Select **+ Add new trigger** to add another Bot Framework trigger. Choose the type **Unknown intent** for your new trigger.
 
-After the **BingSearch** dialog is added, go to the **Bot Responses** tab for this dialog, switch to **Show code** view, and insert the following Adaptive Card JSON:
+![Composer - add Unknown Intent trigger](media/Composer_Example3/E3_BingSearch_UnknownIntent.png)
+
+
+After the **Unkown intent** trigger is added, go to the **Bot Responses** tab for this trigger, switch to **Show code** view, and insert the following Adaptive Card JSON:
 
 ````JSON
 
