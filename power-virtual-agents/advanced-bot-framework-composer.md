@@ -451,11 +451,7 @@ Set the type of trigger to **Intent recognized** and name it **Specials**. Add t
 ```
 ![Composer Create_tab - add new Intent Recorgized trigger](media/Composer_Example2/E2_main_nameNewTrigger.png)
 
-A new trigger **Specials** will be created. Select **Begin a new dialog** under **Dialog management** to create a node that can call another dialog:
-
-![Composer Create tab - begin new dialog](media/Composer_Example2/E2_main_DialogManagement.png)
-
-In the new action, select to call **DailySpecials** in the **Begin a new dialog** panel on the right:
+A new trigger **Specials** will be created. Select **Begin a new dialog** under **Dialog management** to create a node that can call another dialog. Select to call **DailySpecials** in the **Begin a new dialog** panel on the right:
 
 ![Composer Create tab - call a new dialog](media/Composer_Example2/E2_main_callDialog.png)
 
