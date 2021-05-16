@@ -568,7 +568,7 @@ Add the following trigger phrses and click **Submit**.
 - sign up to try
 - register to try service
 
-
+![Composer - create a new trigger](media/Composer_Example4/E4_createStartTrial_trigger.png)
 
 ## Use and update Power Virtual Agents variables in Bot Framework Composer
 
