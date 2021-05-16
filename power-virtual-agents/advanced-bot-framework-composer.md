@@ -573,7 +573,7 @@ ${virtualagent.user_city}
 
 ## Testing Bot Framework content with Power Virtual Agents
 You can test the content you have created in Bot Framework Composer by publishing it to Power Virtual Agents and using the **Test bot** pane in Power Virtual Agents.
-Publish your Bot Framework content to a Power Virtual Agents bot by selecting its **Publish profile** in the **Publish** tab in Composer.
+Publish your Bot Framework content to a Power Virtual Agents from the **Publish** tab in Composer.
 
 ![Composer Publish tab](media/Composer_Test/Test_Publish_Success.png)
 
