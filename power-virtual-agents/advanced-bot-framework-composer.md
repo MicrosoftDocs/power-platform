@@ -475,11 +475,7 @@ Open the Power Virtual Agents bot used in [Example 1](#example-1--show-an-adapti
 
 Go to the **Topics** page and select **Open in Bot Framework Composer** under **+ New topic** dropdown menu to open Composer. 
 
-Select **+ Add dialog** to add another Bot Framework dialog. 
-
-Name your new dialog **BingSearch** in Composer.
-
-![Composer add dialog](media/Composer_Example3/E3_BingSearch_addDialog.png)
+Select **+ Add dialog** to add another Bot Framework dialog. Name your new dialog **BingSearch** in Composer.
 
 After the **BingSearch** dialog is added, go to the **Bot Responses** tab for this dialog, switch to **Show code** view, and insert the following Adaptive Card JSON:
 
