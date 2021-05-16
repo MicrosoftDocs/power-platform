@@ -619,9 +619,11 @@ After the **StartTrial** trigger is added, go to the **Bot Responses** tab for t
 ```
 ````
 
-Note that every data field in this Adaptive card was given an id: **Name**, **Address**, **Weeks".
+Note that every data field in this Adaptive card was given an id: **Name**, **Address**, **Weeks**.
 
 ![Composer - create StartTrialForm](media/Composer_Example4/E4_createSubmitForm.png)
+
+Go to the **Create** tab in Composer and select **StartTrial** trigger. Add the **Send a response** action and select **Attachments** option. 
 
 ## Use and update Power Virtual Agents variables in Bot Framework Composer
 
