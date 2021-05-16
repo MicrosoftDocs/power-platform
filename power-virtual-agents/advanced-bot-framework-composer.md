@@ -45,7 +45,7 @@ Custom dialogs added with Bot Framework Composer are deployed, hosted, and execu
 
 2. Select **Open in Bot Framework Composer** from the dropdown menu. 
 
-    ![Open Composer from Topics page](media/Composer_OpeninBotFrameworkComposerButton_tooltip.png)
+    ![Open Composer from Topics page](media/Composer_OpeninBotFrameworkComposerButton_dropdown.png)
 
 If you already have Composer installed, Power Virtual Agents will try to open your bot in Composer. 
 
