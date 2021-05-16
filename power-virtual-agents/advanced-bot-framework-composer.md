@@ -413,8 +413,8 @@ Add a new prompt for user input to this dialog by selecting **Multi-choice** und
 
 ![Composer Create tab - ask a multi choice questions](media/Composer_Example2/E2_DailySpecials_askaquestion.png)
 
-Enter the following text for the prompt:
-`- Please select a day:`
+Enter the following for the **Text** prompt:
+`Please select a day:`
 
 ![Composer Create tab - add prompt language generation](media/Composer_Example2/E2_DailySpecials_prompt.png)
 
