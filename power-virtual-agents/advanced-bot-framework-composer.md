@@ -569,6 +569,23 @@ This setting makes the Power Virtual Agents variable **user_city** available in 
 ${virtualagent.user_city} 
 ```
 
+## Capture telemetry with Application Insights
+
+You can use Bot Framework Composer with Virtual Power Agents to send event data to a telemetry service [Application Inisghts](https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview). Telemetry offers insights into your bot by showing which features are used the most, detects unwanted behavior and provides data on availability, performance, and usage.
+
+>[!IMPORTANT]
+>Application Inisghts is a feature of [Azure Monitor](https://docs.microsoft.com/en-us/azure/azure-monitor/overview), an extensible Application Performance Management (APM) that allows you to monitor your live applications, and requires a subscription to [Microsoft Azure](https://azure.microsoft.com/en-us/).
+
+To connect to your Application Insights service in Composer, you need to add your instrumentation key to the project. Go the **Configure** tab in Composer and switch to **Advanced Settings View (json)**.
+
+Find the **applicationInsights** section, then add your Application Insights instrumentation key to the **instrumentationKey** setting.
+
+A subscription to Microsoft Azure.
+A basic bot built using Composer.
+Basic knowledge of Kusto queries.
+How to use Log Analytics in the Azure portal to write Azure Monitor log queries.
+The basic concepts of Log queries in Azure Monitor.
+Create an Application Insight
 
 
 ## Testing Bot Framework content with Power Virtual Agents
