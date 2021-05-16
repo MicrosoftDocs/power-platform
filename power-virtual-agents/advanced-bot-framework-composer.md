@@ -569,7 +569,7 @@ This setting makes the Power Virtual Agents variable **user_city** available in 
 ${virtualagent.user_city} 
 ```
 
-![Composer - refer to Power Virtual Agents variables](media/Composer_Example1/E1_Meals_ResponseAdded.png)
+
 
 ## Testing Bot Framework content with Power Virtual Agents
 You can test the content you have created in Bot Framework Composer by publishing it to Power Virtual Agents and using the **Test bot** pane in Power Virtual Agents.
