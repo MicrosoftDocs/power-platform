@@ -629,7 +629,7 @@ Go to the **Create** tab in Composer and select **StartTrial** trigger. Add the 
 Select **Attatchments** option in **Propmt for text**:
 ![Composer - select Attachement option](media/Composer_Example4/E4_selectAttachment_option.png)
 
-Select **Add custom** and add the following to the **Attachments** window:
+Select **Add custom** option and add the following to the **Attachments** window:
 
 ```JSON
 -${StartTrialForm()}
