@@ -616,7 +616,7 @@ Selecting the log will bring up the list of warnings and errors that were encoun
 
 ![Composer Publish - warnings and errors](media/Composer_Troubleshooting/Tl_PublishError.png)
 
-If a problem persists or you encounter issues developing in Bot Framework Composer, go to [Bot Framework Composer issues on GitHub](https://github.com/microsoft/BotFramework-Composer/issues) to see the list of known issues in Composer or to log a new issue. 
+If you encounter issues developing in Bot Framework Composer, go to [Bot Framework Composer issues on GitHub](https://github.com/microsoft/BotFramework-Composer/issues) to see the list of known issues in Composer or to [log a new Composer issue](https://github.com/microsoft/BotFramework-Composer/issues). 
 
 For troubleshooting your bot in Power Virtual Agents, refer to the [Troubleshoot your bot](advanced-flow.md#troubleshoot-your-bot) topic in Power Virtual Agents documentation.
 
