@@ -587,7 +587,7 @@ Find the **applicationInsights** section, then add your Application Insights ins
 To learn more on how to set up and use Application Insights and create quries for Composer's Adaprive dialogs, see these resources:
 
 - A subscription to [Microsoft Azure](https://azure.microsoft.com/en-us/).
-- Get started with [Application Insights](https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview#get-started)
+- Get started with [Application Insights](https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview#get-started).
 - The basic concepts of [Log queries](https://docs.microsoft.com/en-us/azure/azure-monitor/log-query/get-started-queries) in Azure Monitor.
 - [Example Kusto queries](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-telemetry-analytics-queries?view=azure-bot-service-4.0#adaptive-dialogs-started-and-completed) for Composer's Adaptive dialogs.
 
