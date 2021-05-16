@@ -643,12 +643,16 @@ Your Adaptive card **StartTrialForm** has two more fields, **Address** and **Wee
 
 ![Composer - set properties](media/Composer_Example4/E4_setProperties.png)
 
-Add a **Send a Response** action to provide a from submission confimrtaion:
+Add a **Send a Response** action to provide a from submission confirmation:
 
 ```JSON
 ${user.name} - thanks for starting a ${user.weeks} week trial with us! Your meals will be delivered to this address: ${user.address}.
 ```
 ![Composer - add form submission confirmation](media/Composer_Example4/E4_formSubmit_confirm.png)
+
+Tie it in with Power Virtual Agents by using **Begin a PVA Topic** action to call Power Virtual Agents bot's **End of Conversation** topic that would ask the end user to rate their experince with a survey:
+
+![Composer - call Power Virtual Agents topic](media/Composer_Example4/E4_call_PVA_End_of_Conversation.png)
 
 ## Use and update Power Virtual Agents variables in Bot Framework Composer
 
