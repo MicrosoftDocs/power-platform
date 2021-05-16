@@ -320,13 +320,12 @@ Add the **Activity** that will display this Adaptive Card in the Bot Framework d
 
 Go back to **Create** tab in Composer and select the **Meals** dialog. Select **BeginDialog** and add **Send a response** to your dialog. We'll use this node to display the Adaptive Card we have created in the **Bot Responses** tab.
 
-![Composer Begin Dialog - add Send a response action](media/Composer_Example1/E1_Meals_AddResponse.png)
-
 For the new **Send a response** action, the **Language Generation** panel will open on the side in Composer. Click on **Show code** button and add the following expression to this window to show the Adaptive Card and pass a Power Virtual Agents global variable `user_city` as a parameter: 
 
 ```JSON
 - ${AdaptiveCardMeals(virtualagent.user_city)}
 ```
+![Composer Begin Dialog - add Send a response action](media/Composer_Example1/E1_Meals_AddResponse.png)
 
 >[!TIP]
 >You can [access Power Virtual Agents global variables in Composer](#use-power-virtual-agents-variables-in-bot-framework-composer) by referencing the scope **virtualagent**. For example, **${virtualagent.user_city}** will refer to the value of a variable that was created in the Power Virtual Agents bot.
