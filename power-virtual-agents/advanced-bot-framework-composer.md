@@ -162,16 +162,12 @@ Rename the output variable **Var** to **user_city**. Set the variable **Usage** 
 
 ![Power Virtual Agents variable](media/Composer_Example1/E1_Dialog2.png)
 
-Next, you will enhance the topic **Meal delivery options** to show the images of the meal choices available in your user’s city by extending your bot with Bot Framework Composer content. Go back to **Topics** page and click on **Open in Bot Framework Composer (Preview)** button to download and launch Bot Framework Composer.
+Next, you will enhance the topic **Meal delivery options** to show the images of the meal choices available in your user’s city by extending your bot with Bot Framework Composer content. Go back to **Topics** page and click on **Open in Bot Framework Composer** in **+ New Topic** dropdown menu to launch Bot Framework Composer.
 
-![Power Virtual Agents Open Composer](media/Composer_Example1/E1_OpenComposer.png)
-
-Your Power Virtual Agents bot will open in a Bot Framework Composer project. You will see that Power Virtual Agents topics from your bot are uploaded into Composer but are not editable. The **Recognizer Type** field is set to **Default Recognizer**, which is **Power Virtual Agents NLU**.
+Your Power Virtual Agents bot will open in a Bot Framework Composer project. You will see the list of all Power Virtual Agents topics in your bot in Composer, but they are not editable. The **Recognizer Type** field is set to **Default Recognizer**, which is **Power Virtual Agents NLU**.
 
 >[!TIP]
 >The **LUIS** service is not supported as a Recognizer for Power Virtual Agents in Composer. The **Default Recognizer** is set to **Power Virtual Agents NLU** instead. You do not need to have an additional subscription to use **Power Virtual Agents NLU** because it is included in your Power Virtual Agents license.
-
-![Bot Framework Composer main (root) dialog recognizer type](media/Composer_Example1/E1_Contoso_meals_initial.png)
 
 Go to the **Design** tab in Composer and select **+ Add** and then **Add new dialog** in the dropdown list:
 
