@@ -337,8 +337,6 @@ You are now ready to upload the **Meals** dialog to your Power Virtual Agents bo
 
 The Composer content will be validated by Power Virtual Agents and a successful publish will be reported in Composer.
 
-![Composer Publish Example 1 publish success](media/Composer_Example1/E1_Meals_Publish_Success.png)
-
 Go to the Power Virtual Agents **Topics** page to see your new Bot Framework content. Your new **Meals** Bot Framework dialog is now shown on the **Topics** page as part of your Power Virtual Agents bot.
 
 ![Power Virtual Agents Topics page - new Bot Framework dialog](media/Composer_Example1/E1_Meals_in_PVA_Topics.png)
