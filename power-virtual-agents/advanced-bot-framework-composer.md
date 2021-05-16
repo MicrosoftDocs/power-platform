@@ -662,10 +662,12 @@ Once your new Composer content is successfully published, you can now see that *
 >You might need to refresh your **Topics** page to see the new bot content that has been added from Composer.
 >
 
+![Power Virtual Agents Topics page](media/Composer_Example4/E4_StartTrial_inTopicsList.png)
+
 Make sure **Track between topics** is turned on, and test your new bot content by entering the following text in the **Test bot** pane in Power Virtual Agents to start a bot conversation:
 - How do I sign up for a trial?
 
-![Power Virtual Agents test](media/Composer_Example3/Example3_cropped.png)
+![Power Virtual Agents test](media/Composer_Example4/Example4_cropped.png)
 
 
 ## Use and update Power Virtual Agents variables in Bot Framework Composer
