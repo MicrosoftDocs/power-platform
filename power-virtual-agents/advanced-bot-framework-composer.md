@@ -586,7 +586,7 @@ After you successfully publish your Bot Framework content, you can use Power Vir
 >The Bot Framework Emulator cannot be used to test Composer content created for Power Virtual Agents bots. 
 
 ## Troubleshooting
-If you're having trouble publishing your Bot Framework Composer content to Power Virtual Agents, you can use the **See Log** feature in the **Publish** tab in Composer. The log will provide a detailed description of the errors encountered during validation. Select the Publish attempt in the **Publish history** and click on **See Log** button.
+If you're having trouble publishing your Bot Framework Composer content to Power Virtual Agents, you can use the **See Log** feature in the **Publish** tab in Composer. The log will provide a detailed description of the errors encountered during validation. Select your bot and click to see the Publish history.
 
 ![Composer Publish - See Log](media/Composer_Troubleshooting/TL_PublishHistory.png)
 
