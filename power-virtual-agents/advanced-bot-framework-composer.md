@@ -623,8 +623,8 @@ Note that every data field in this Adaptive card was given an id: **Name**, **Ad
 
 ![Composer - create StartTrialForm](media/Composer_Example4/E4_createSubmitForm.png)
 
-Go to the **Create** tab in Composer and select **StartTrial** trigger. Add the **Send a response** action and select **Attachments** option.
-![Composer - create StartTrialForm](media/Composer_Example4/E4_selectAttachment_option.png)
+Go to the **Create** tab in Composer and select **StartTrial** trigger. Add the **Ask a question** action and select type **Text**.
+![Composer - create StartTrialForm](media/Composer_Example4/E4_ask_question.png)
 
 Add the following to the **Attatchments** window:
 
