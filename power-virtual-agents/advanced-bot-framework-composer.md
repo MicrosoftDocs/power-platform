@@ -63,7 +63,7 @@ During installation, make sure to unselect the **Run Bot Framework Composer** ch
 
 ![Bot Framework Composer Install Complete](media/Composer_InstallWizardFinish.png)
 
-Go back to Power Virtual Agents **Topics** page. Select **Open in Bot Framework Composer (Preview)** and then **Open Composer** to open your bot in Composer.
+Go back to Power Virtual Agents **Topics** page. Select **Open in Bot Framework Composer** and then **Open Composer** to open your bot in Composer.
 
 
 >[!NOTE]
@@ -93,7 +93,7 @@ There are few key guidelines to follow when using Composer to create your bot co
 ![Bot Framework Composer - Power Virtual Agents topics](media/Composer_Guidelines/Gd_PVA_Topics.png)
 
 - You can call Power Virtual Agents topics in Composer by using **Begin a PVA Topic** option.
-![Bot Framework Composer - Power Virtual Agents topics](media/Composer_Guidelines/Gd_PVA_Topics.png)
+![Bot Framework Composer - Power Virtual Agents topics](media/Composer_Guidelines/Gd_call_PVA_Topic.png)
 
 - You can add new **Bot Framework triggers** of any kind to your **main (root) dialog**. You can use **Send a response**, **Ask a question**, and **Language Generation** in the new **triggers** added to **main (root) dialog**.
 
