@@ -108,6 +108,8 @@ There are few key guidelines to follow when using Composer to create your bot co
 
 - The **main (root) dialog** in Composer should never be deleted, as it corresponds to your Power Virtual Agents bot. The **main (root) dialog** can have zero or more **triggers**.
 
+- You can capture telemetry in Composer dialogs and triggers with [Application Inisghts](https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview) and analyze it with [Kusto queries for Adaptive dialogs](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-telemetry-analytics-queries?view=azure-bot-service-4.0#adaptive-dialogs-started-and-completed). Refer to [Capture telemetry with Application Insights](#example-1--show-an-adaptive-card-in-power-virtual-agents) section for more information.
+
 For a deep-dive on Bot Framework Composer **dialogs**, **events**, **triggers** and how to create advanced bot content with Bot Framework, refer to the following resources:
 
 - [Bot Framework Composer dialogs](/composer/concept-dialog)
