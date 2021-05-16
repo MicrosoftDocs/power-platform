@@ -169,7 +169,7 @@ Your Power Virtual Agents bot will open in a Bot Framework Composer project. You
 >[!TIP]
 >The **LUIS** service is not supported as a Recognizer for Power Virtual Agents in Composer. The **Default Recognizer** is set to **Power Virtual Agents NLU** instead. You do not need to have an additional subscription to use **Power Virtual Agents NLU** because it is included in your Power Virtual Agents license.
 
-Go to the **Design** tab in Composer and select **+ Add** and then **Add new dialog** in the dropdown list:
+Go to the **Design** tab in Composer and select **Add a dialog** in the dropdown menu:
 
 ![Composer Design tab](media/Composer_Example1/E1_Meals_creatNewDialog.png)
 
