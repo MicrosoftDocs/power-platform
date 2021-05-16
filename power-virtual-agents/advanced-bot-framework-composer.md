@@ -475,7 +475,7 @@ Open the Power Virtual Agents bot used in [Example 1](#example-1--show-an-adapti
 
 Go to the **Topics** page and select **Open in Bot Framework Composer** under **+ New topic** dropdown menu to open Composer. 
 
-Select **+ Add new trigger** to add another Bot Framework trigger. Choose the type **Unknown intent** for your new trigger.
+Select **+ Add new trigger** to add another Bot Framework trigger to **Contoso Meal Delivery Service**. Choose the type **Unknown intent** for your new trigger.
 
 ![Composer - add Unknown Intent trigger](media/Composer_Example3/E3_BingSearch_UnknownIntent.png)
 
@@ -532,7 +532,7 @@ Add this **Activity** to the same **Bot Responses** window in Composer:
 ![Composer Bot Responses - add Activity](media/Composer_Example3/E3_BingSearch_BotResponses_Activity.png)
 
 
-Go to the **Create** tab in Composer and select **BeginDialog** under the **BingSearch** dialog. Add the **Send a response** action and add the following expression to the **Language Generation** panel:
+Go to the **Create** tab in Composer and select **Unkown intent** trigger. Add the **Send a response** action and add the following expression to the **Language Generation** panel:
 
 ```JSON
 -${AdaptiveCardBingSearch(turn.activity.text)}
