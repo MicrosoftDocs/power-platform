@@ -177,9 +177,7 @@ Name your new dialog **Meals**. Select **OK** to create a new dialog **Meals** i
 
 ![Composer Design tab new dialog](media/Composer_Example1/E1_Meals_newDialog.png)
 
-Go to the **Bot Responses** tab in Composer and open the **Meals** section. Select **Show code**:
-
-![Composer Bot Responses tab](media/Composer_Example1/E1_Meals_BotReponses_empty.png)
+Go to the **Bot Responses** tab in Composer and open the **Meals** section. Select **Show code**.
 
 In the code window, copy and paste the following LG templates that you will use in your Adaptive Card:
 ```JSON
