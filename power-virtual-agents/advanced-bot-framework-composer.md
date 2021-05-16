@@ -552,7 +552,7 @@ Once your new Composer content is successfully published, you can now see that *
 Make sure **Track between topics** is turned on, and test your new bot content by entering the following text in the **Test bot** pane in Power Virtual Agents to start a bot conversation:
 - Is tofu vegan?
 
-![Power Virtual Agents test](media/Composer_Example3/Example3_cropped.gif)
+![Power Virtual Agents test](media/Composer_Example3/Example3_cropped.png)
 
 ## Use and update Power Virtual Agents variables in Bot Framework Composer
 
