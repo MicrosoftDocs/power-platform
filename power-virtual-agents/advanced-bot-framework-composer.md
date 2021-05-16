@@ -92,7 +92,7 @@ There are few key guidelines to follow when using Composer to create your bot co
 - The Power Virtual Agents topics from your bot will be displayed in Composer. You can't edit these Power Virtual Agents topics in Composer; clicking on them will open these topics in Power Virtual Agents for editing.
 ![Bot Framework Composer - Power Virtual Agents topics](media/Composer_Guidelines/Gd_PVA_Topics.png)
 
-- You can call Power Virtual Agents topics in Composer by using **Begin a PVA Topic** option.
+- You can call Power Virtual Agents topics in Composer by using **Begin a PVA Topic** action.
 
 ![Bot Framework Composer - call Power Virtual Agents topics](media/Composer_Guidelines/Gd_call_PVA_Topic.png)
 
