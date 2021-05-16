@@ -575,7 +575,7 @@ After the **StartTrial** trigger is added, go to the **Bot Responses** tab for t
 
 ````JSON
 
-# adaptivecardjson_BingSearch(user_utterance)
+# StartTrialForm
 - ```
 {
     "type": "AdaptiveCard",
@@ -618,6 +618,10 @@ After the **StartTrial** trigger is added, go to the **Bot Responses** tab for t
 }
 ```
 ````
+
+Note that every data field in this Adaptive card was given an id: **Name**, **Address**, **Weeks".
+
+![Composer - create StartTrialForm](media/Composer_Example4/E4_createSubmitForm.png)
 
 ## Use and update Power Virtual Agents variables in Bot Framework Composer
 
