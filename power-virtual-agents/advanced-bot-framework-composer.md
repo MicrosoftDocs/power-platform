@@ -556,6 +556,20 @@ Make sure **Track between topics** is turned on, and test your new bot content b
 
 ![Power Virtual Agents test](media/Composer_Example3/Example3_cropped.png)
 
+## Example 4 – Display a form with Submit button in Power Virtual Agents 
+Open the Power Virtual Agents bot used in [Example 1](#example-1--show-an-adaptive-card-in-power-virtual-agents) and [Example 2](#example-2--display-a-multi-select-options-list-in-power-virtual-agents). 
+
+Go to the **Topics** page and select **Open in Bot Framework Composer** under **+ New topic** dropdown menu to open Composer. 
+
+Select **+ Add new trigger** to add another Bot Framework trigger of type **Intent recognized** to **Contoso Meal Delivery Service** dialog and call it **StartTrial**. 
+
+Add the following trigger phrses and click **Submit**.
+- start trial
+- sign up to try
+- register to try service
+
+
+
 ## Use and update Power Virtual Agents variables in Bot Framework Composer
 
 You can use and update the values in Power Virtual Agents global variables in Bot Framework Composer by referencing the following scope:
