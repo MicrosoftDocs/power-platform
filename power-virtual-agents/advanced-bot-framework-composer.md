@@ -65,8 +65,6 @@ During installation, make sure to unselect the **Run Bot Framework Composer** ch
 
 Go back to Power Virtual Agents **Topics** page. Select **Open in Bot Framework Composer (Preview)** and then **Open Composer** to open your bot in Composer.
 
-![Open Bot Framework Composer](media/Composer_AfterDownload.png)
-
 
 >[!NOTE]
 > In some cases, a firewall might be blocking some features in Composer and you might need to explicitly allow access. Check with your admin for details.
