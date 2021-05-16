@@ -15,8 +15,6 @@ ms.collection: virtualagent
 
 # Extend your bot with Bot Framework Composer
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
-
 You can enhance your bot by developing custom dialogs with [Bot Framework Composer](/composer/) and then adding them to your Power Virtual Agents bot. 
 
 Composer is integrated into Power Virtual Agents to allow developers and business users to build bots together. Composer lets you extend your bot with Bot Framework functionality, including:
@@ -43,9 +41,9 @@ Custom dialogs added with Bot Framework Composer are deployed, hosted, and execu
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 
 ## Access Bot Framework Composer from within Power Virtual Agents 
-1. Go to the **Topics** tab for the bot you want to edit.
+1. Go to the **Topics** tab for the bot you want to edit and click on **+ New topic** dropdown.
 
-2. Select **Open in Bot Framework Composer (Preview)**. 
+2. Select **Open in Bot Framework Composer** from the dropdown menu. 
 
     ![Open Composer from Topics page](media/Composer_OpeninBotFrameworkComposerButton_tooltip.png)
 
@@ -101,16 +99,10 @@ There are few key guidelines to follow when using Composer to create your bot co
 
 - You can't use the Regular expression recognizer (RegEx) in the **main (root) dialog**. Using the Regular expression recognizer in the **main (root) dialog** will prevent you from publishing your Composer content to Power Virtual Agents. However, you can use the Regular expression recognizer in any other Composer dialogs.
 
-![Bot Framework Composer main (root) dialog trigger phrases](media/Composer_Guidelines/Gd_mainDialog_trigger.png)
 
 - You can create new **Bot Framework dialogs** and add **events** and **triggers** of any kind to them. **Send a response**, **Ask a question**, and **Language Generation** can be used in **triggers** that belong to the new **dialogs**.
 
-
-![Bot Framework Composer main (root) dialog empty](media/Composer_Guidelines/Gd_BotReponses_main.png)
-
 - On the **Bot Responses** tab, the **All** section should be empty (that is, the **common.lg** file should be empty). Having any assets there will result in validation errors and prevent you from publishing your Composer content to Power Virtual Agents.
-
-![Bot Framework Composer main (root) dialog with no assets](media/Composer_Guidelines/Gd_BotReponses_all.png)
 
 - All **Language Generation** (.lg) and **Language Understanding** (.lu) files should have the corresponding **dialogs**. For example, if you have only one **dialog** with name **dialog1**, then you can have **dialog1.en-us.lg** and **dialog1.en-us.lu**, but you cannot have **extra.en-us.lg**.
 
@@ -129,6 +121,9 @@ The following Bot Framework Composer features are not supported with Power Virtu
 
 - LUIS Recognizer  
 Default Recognizer in Composer is set to Power Virtual Agents NLU
+
+- Bot Framework Orchestrator
+Bot Framework Orchestrator is not supported in Composer for Power Virtual Agents
 
 - Custom recognizer  
 Custom recognizer is not supported in Composer for Power Virtual Agents
