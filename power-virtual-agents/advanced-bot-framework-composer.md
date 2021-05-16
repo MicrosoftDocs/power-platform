@@ -563,12 +563,61 @@ Go to the **Topics** page and select **Open in Bot Framework Composer** under **
 
 Select **+ Add new trigger** to add another Bot Framework trigger of type **Intent recognized** to **Contoso Meal Delivery Service** dialog and call it **StartTrial**. 
 
-Add the following trigger phrses and click **Submit**.
+Add the following trigger phrases and click **Submit**.
 - start trial
 - sign up to try
 - register to try service
 
 ![Composer - create a new trigger](media/Composer_Example4/E4_createStartTrial_trigger.png)
+
+After the **StartTrial** trigger is added, go to the **Bot Responses** tab for this **Contoso Meal Delivery Service** dailog. Switch to **Show code** view, and insert the following Adaptive Card JSON:
+
+
+````JSON
+
+# adaptivecardjson_BingSearch(user_utterance)
+- ```
+{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "TextBlock",
+            "size": "Medium",
+            "weight": "Bolder",
+            "text": "Register for a meal plan trial:"
+        },
+        {
+            "type": "Input.Text",
+            "placeholder": "Please enter your Name",
+            "id": "Name"
+        },
+        {
+            "type": "Input.Text",
+            "placeholder": "Please enter your Address",
+            "id": "Address",
+            "isMultiline": true
+        },
+        {
+            "type": "Input.Number",
+            "placeholder": "How many weeks",
+            "id": "Weeks"
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "Submit",
+                    "style": "positive"
+                }
+            ]
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.2"
+}
+```
+````
 
 ## Use and update Power Virtual Agents variables in Bot Framework Composer
 
