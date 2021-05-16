@@ -584,12 +584,12 @@ Find the **applicationInsights** section, then add your Application Insights ins
 
 ![Composer Configure tab - Application Insights Instrumentation key](media/Composer_AppInisghts/Configure_AppInsights_Key.png)
 
-- A subscription to Microsoft Azure.
-- Basic knowledge of Kusto queries.
-- How to use Log Analytics in the Azure portal to write Azure Monitor log queries.
-- The basic concepts of Log queries in Azure Monitor.
-- Create an Application Insights service
+To learn more on how to set up and use Application Insights and create quries for Composer's Adaprive dialogs, see these resources:
 
+- A subscription to [Microsoft Azure](https://azure.microsoft.com/en-us/).
+- Get started with [Application Insights](https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview#get-started)
+- The basic concepts of [Log queries](https://docs.microsoft.com/en-us/azure/azure-monitor/log-query/get-started-queries) in Azure Monitor.
+- [Example Kusto queries](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-telemetry-analytics-queries?view=azure-bot-service-4.0#adaptive-dialogs-started-and-completed) for Composer's Adaptive dialogs.
 
 ## Testing Bot Framework content with Power Virtual Agents
 You can test the content you have created in Bot Framework Composer by publishing it to Power Virtual Agents and using the **Test bot** pane in Power Virtual Agents.
