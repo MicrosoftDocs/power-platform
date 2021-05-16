@@ -375,11 +375,7 @@ In the **Value** field in the **Set a property** panel, change the type to **\[\
 
 ![Composer Create property](media/Composer_Example2/E2_DailySpecials_setArray.png)
 
-Next, go to **Bot Responses** tab in Composer and select **DailySpecials**. Select **Show code**.
-
-![Composer Bot Responses tab show code](media/Composer_Example2/E2_DialySpecials_BotReponse_initial.png)
-
-Add the following template to the **Bot Responses** tab for **DailySpecials** to create daily offers for all the days of the week:
+Next, go to **Bot Responses** tab in Composer and select **DailySpecials**. Select **Show code** and add the following template to the **Bot Responses** tab for **DailySpecials** to create daily offers for all the days of the week:
 
 ```JSON
 # DailySpecials(day)
