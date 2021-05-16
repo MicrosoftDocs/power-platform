@@ -468,14 +468,14 @@ Make sure **Track between topics** is turned on, and test your new bot content b
 
 - Do you have any specials?
 
-![Power Virtual Agents Test pane](media/Composer_Example2/Example2._cropped.gif)
+![Power Virtual Agents Test pane](media/Composer_Example2/Example2._cropped.png)
 
 ## Example 3 – Use Bing Search as a fallback in Power Virtual Agents 
 Open the Power Virtual Agents bot used in [Example 1](#example-1--show-an-adaptive-card-in-power-virtual-agents) and [Example 2](#example-2--display-a-multi-select-options-list-in-power-virtual-agents). 
 
-Go to the **Topics** page and select **Open in Bot Framework Composer (Preview)** to open Composer. 
+Go to the **Topics** page and select **Open in Bot Framework Composer** under **+ New topic** dropdown menu to open Composer. 
 
-Select **+ Add** to add another Bot Framework dialog. 
+Select **+ Add dialog** to add another Bot Framework dialog. 
 
 Name your new dialog **BingSearch** in Composer.
 
