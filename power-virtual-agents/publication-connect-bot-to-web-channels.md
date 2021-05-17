@@ -12,7 +12,7 @@ ms.custom: "publication, authoring, ceX"
 ms.collection: virtual-agent
 ---
 
-# Configure the demo website amd add the bot to your live website or Power Apps portal
+# Configure the demo website and add the bot to your live website or Power Apps portal
 
 When publishing the bot to the web, you can publish to a prebuilt demo website (which you can use to share the bot with your teammates and stakeholders) and to your own live website.
   
@@ -101,7 +101,7 @@ You can also add the bot to your Power Platform admin center.
 
     ![Add bot IFrame to Power Apps](media/channel-custom-website-portal-pva-iframe.png)
     
-1. You can interact with your bot by clicking on **Browse website** at the top right corner.
+1. You can interact with your bot by clicking on **Browse website**.
 
     ![Browse website with IFrame added](media/channel-custom-website-portal-browse-website.png)
 
