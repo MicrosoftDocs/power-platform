@@ -2,7 +2,7 @@
 title: "Known issues with document management | MicrosoftDocs"
 description: "Learn about known issues with document management"
 keywords: encrypt
-ms.date: 04/01/2021
+ms.date: 05/17/2021
 ms.service: power-platform
 ms.custom: 
 ms.topic: article
@@ -93,7 +93,17 @@ Documents of a child entity only appear in the parent documents folder when the 
 ## Document folder location for multiple lookups
 If the entity selected for the Based on entity folder structure has two lookups, documents will not be stored inside the entity folder, but will be stored in the root folder. For example, if the Based on entity folder structure is set to Account, and you have an entity with two lookup accounts, such as Work Order, the documents related to Work Orders will not be stored inside any account document location, but will be stored in the root folder.
 
+## Entering a date for OneNote documents
+
+In order to add a date to a OneNote document, you can open the OneNote document and double click on the field under the title line. This allows you to enter the date field and save the document. 
+
+:::image type="content" source="media/date_onenote_documents.png" alt-text="Double click the date field.":::
+
 ## Known issues
+
+### SharePoint integration does not support the Dynamics 365 editable grid
+
+SharePoint integration does not work with the Dynamics 365 editable grid, due to known side effects that prevent SharePoint integration from working properly. Side effects include: the document failing to load in the grid, an inability to create or upload documents, and an inability to search in the grid.
 
 ### Maximum number of rows not honored in the document associated grid
 
