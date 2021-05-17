@@ -97,7 +97,7 @@ To enable a Preview feature, you must be an administrator.
 
    :::image type="content" source="media/enable-tenant-level-analytics.png" alt-text="Enable tenant-level analytics":::
 
-3. The process of collecting information for tenant-level analytics includes copying service telemetry data from other GEO locations into a central location for reporting.  Customers must explicitly enable this Power Platform operation.  For more information, see [Manage environments in the Power Platform admin center](environments-overview.md#manage-environments-in-the-power-platform-admin-center). 
+3. **Granting consent for tenant-level analytics:** The process of collecting information for tenant-level analytics includes copying service telemetry data from other GEO locations into a central location for reporting.  Customers must explicitly enable this Power Platform operation.  For more information, see [Manage environments in the Power Platform admin center](environments-overview.md#manage-environments-in-the-power-platform-admin-center). 
 
    Select **Enable** to grant consent for the service to collocate service telemetry data in the location associated with the default environment. 
 
@@ -107,8 +107,10 @@ To enable a Preview feature, you must be an administrator.
 
 5. Select **Environment level analytics**, and then select **Tenant level analytics** to switch viewing modes. 
 
-   image
+### Where is this feature available?
 
+The Power Platform admin center tenant-level views are available in all supported regions in the public cloud. This feature is not yet available in other sovereign clouds. 
 
+ 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
