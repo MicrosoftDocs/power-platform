@@ -2,7 +2,7 @@
 title: "Known issues with document management | MicrosoftDocs"
 description: "Learn about known issues with document management"
 keywords: encrypt
-ms.date: 04/01/2021
+ms.date: 05/17/2021
 ms.service: power-platform
 ms.custom: 
 ms.topic: article
@@ -101,9 +101,9 @@ In order to add a date to a OneNote document, you can open the OneNote document 
 
 ## Known issues
 
-### SharePoint Integration does not support the Dynamics Editable Grid
+### SharePoint integration does not support the Dynamics 365 editable grid
 
-SharePoint Integration is not able to work with the Dynamics Editable Grid. Using the editable grid for SharePoint will have known side effects that prevent SharePoint Integration from working fully.
+SharePoint integration does not work with the Dynamics editable grid, due to known side effects that prevent SharePoint integration from working properly. Side effects include: the document failing to load in the grid, an inability to create or upload documents, and an inability to search in the grid.
 
 ### Maximum number of rows not honored in the document associated grid
 
