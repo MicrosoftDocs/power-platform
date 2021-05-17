@@ -28,6 +28,9 @@
         href: wp-license-management.md            
       - name: Manage licenses in your org
         href: signup-question-and-answer.md
+     # Comment out next topic before going live
+      - name: Opt-out of automatic license-based user roles management
+        href: opt-out-automatic-license.md
       - name: Administer without a license
         href: global-service-administrators-can-administer-without-license.md      
       - name: Purchase Power Apps 
