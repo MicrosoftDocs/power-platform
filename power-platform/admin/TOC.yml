@@ -28,9 +28,6 @@
         href: wp-license-management.md            
       - name: Manage licenses in your org
         href: signup-question-and-answer.md
-     # Comment out next topic before going live
-      - name: Opt-out of automatic license-based user roles management
-        href: opt-out-automatic-license.md
       - name: Administer without a license
         href: global-service-administrators-can-administer-without-license.md      
       - name: Purchase Power Apps 
@@ -363,6 +360,9 @@
           href: security-roles-privileges.md
         - name: Create users and assign security roles
           href: create-users-assign-online-security-roles.md
+     # Comment out next topic before going live
+        - name: Opt-out of automatic license-based user roles management
+          href: opt-out-automatic-license.md
         - name: Use service admin roles to manage your tenant
           href: use-service-admin-role-manage-tenant.md
         - name: Miscellaneous privileges
