@@ -1,6 +1,6 @@
 ---
-title: "Administering a Power Apps enterprise deployment  | MicrosoftDocs"
-description: Check out the whitepaper on administering a Power Apps enterprise deployment.
+title: "Administering a Power Apps enterprise deployment"
+description: "Administrators can learn about planning, deploying, and managing an enterprise Power Apps deployment by downloading and reviewing the linked whitepaper."
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin

@@ -4,7 +4,7 @@ description: "FAQs for licensing Power Apps, Power Automate, Dataverse, Datavers
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/24/2021
+ms.date: 04/26/2021
 author: chrisgarty
 ms.author: cgarty
 ms.reviewer: jimholtz
@@ -150,7 +150,7 @@ Premium connectors list at October 2019 (will expand over time):
 - Azure SQL  
 - Azure SQL Data Warehouse  
 - Azure Table Storage  
-- Common Data Service
+- Dataverse (formerly Common Data Service)
 - Dynamics 365  
 - Dynamics 365 Customer Insights  
 - Dynamics 365 Finance & Operations  
@@ -260,7 +260,7 @@ Here is a list of Microsoft Dataverse for Teams licensing FAQs; for more informa
 To deliver a comprehensive low-code extensibility platform for Microsoft Teams, Microsoft Power Platform capabilities available as part of select Microsoft 365 subscriptions are expanding with the introduction of Dataverse for Teams.
 
 Dataverse for Teams is a built-in flexible datastore that provides data storage and a one-click solution for (app/chatbot) deployment in Teams. With the addition of Dataverse for Teams:
-- Power Apps capabilities seeded in Microsoft 365 licenses are expanding to enable building and deploying custom apps natively within Teams.
+- Power Apps capabilities seeded in Microsoft 365 licenses are expanding to enable building and deploying custom apps natively within Teams. This includes using custom [APIs built using Azure API Management](/azure/api-management/export-api-power-platform). 
 -	Additionally, Power Virtual Agents capabilities are being introduced to Teams. Customers will now be able to build and deploy custom chatbots directly within Teams.
 
 The existing Microsoft Power Platform functionality available for use in Microsoft 365 more broadly outside of Teams remains otherwise unchanged.

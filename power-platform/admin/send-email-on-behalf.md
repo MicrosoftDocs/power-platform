@@ -4,7 +4,7 @@ description: Set up users to send an outgoing email by updating the From field t
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/12/2021
+ms.date: 04/27/2021
 author: revachauhan
 ms.author: rechauha
 ms.reviewer: jimholtz

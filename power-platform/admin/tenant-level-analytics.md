@@ -22,7 +22,7 @@ search.app:
 
 Tenant admins can view reports that apply to all environments in a tenant. 
 
-To access these reports, In the Power Platform admin center and select **Analytics** > **Power Apps**. Reports appear in a menu bar at the top of the page.
+To access these reports, sign in to the Power Platform admin center and select **Analytics** > **Power Apps**. In the upper-right corner, select **Tenant level analytics** from the dropdown list. 
 
 ## Who can view these reports?
 
@@ -38,69 +38,77 @@ For more information on the different roles for managing your tenant across the 
 
 The following tenant-level reports are available for tenant admins. 
 
-### Overview reports
+### Power Apps - Usage reports
 
-Overview reports provide an overview of the tenant and environment of all power platform products and answer questions such as the following:
+Power Apps reports provide insights into tenant and environment usage and inventory of all apps and connectors. The report answers questions such as:
 
-- How many total environments exist and how many were created in a selected time period? 
-- What is the count of total apps and how many were created in a selected time period?
-- What is the total number of custom connectors in use in the tenant across all apps and flows?
-- What are the total number of environments of the various environment types?
-- How many environment makers are in the tenant?
-
-
-> [!div class="mx-imgBorder"] 
-> ![Overview usage report](media/overview-usage-report.png "Overview usage report")
-
-### Power Apps reports
-
-Power Apps reports provide insights into tenant and environment usage and inventory of all apps and connectors. Answer questions such as the following:
-
-- What is the total unique canvas/model apps users across the tenant or environments? 
-- What is the count of first-time users across canvas and model apps?
+- What is the total unique canvas/model-driven apps users across the tenant or environments? 
+- What is the count of first-time users across canvas and model-driven apps?
 - How many apps exist in my tenant or environment?
-- How many of these apps are using premium or standard connectors?
-- Provide a list of all connectors for the specified environment and time period.
-- Allow me to filter the above list based on connector type.
+- Which of my environments had the most unique users? 
+- What were the top apps by unique users/app sessions? 
 
 > [!div class="mx-imgBorder"] 
 > ![Power Apps usage report](media/power-apps-usage.png "Power Apps usage report")
 
-### Power Automate reports
-Power Automate reports provide insights into tenant usage and inventory of all flows and answer questions such as the following:
+### Power Apps - Maker Activity report
 
-- How many total flow runs across the tenant or environments for the time period selected? 
-- What is the total number of flow actions within all flows?
-- What are the top flows? List flow name, flow type, maker, successful runs, failed run, total actions, shares with users, group shares, environment name. 
+The Power Apps Maker Activity report provide insights into tenant and environment usage and inventory of all apps and connectors. The report answers questions such as:
 
-> [!div class="mx-imgBorder"] 
-> ![Power Automate usage report](media/power-automate-usage.png "Power Automate usage report")
+- What is the total number of apps created/published/modified/deleted by app makers across the tenant or environments? 
+- What is the count of first-time makers across canvas and model-driven apps? 
+- Who are the top makers across the tenant or environments? 
+- How many of these apps are using premium or standard connectors? 
+- Allow me to filter the above list based on connector type. 
 
-## Download Reports
+:::image type="content" source="media/maker-activity-report.png" alt-text="Power Apps Maker Activity report":::
 
-Select **Download** to view available downloads and then select any of the reports to download them into Microsoft Excel.
+### Power Apps - Inventory report
 
-All the download reports, except "Active Dynamics 365 Customer Engagement Plan Users by Application", show data:   
-- for an environment <br />
-  and <br />
-- per the timeline in the filters for the out-of-box Dataverse analytics reports. If you select a certain date range for the out-of-box Dataverse reports, the same time filter applies to the downloads.  
-- The maximum duration for data availability is 30 days.
+The Power Apps Inventory report offers a complete catalog of Power Apps distributed across the tenant. This view includes filters that allow admins to search for apps based on various criteria. The report answers questions such as:
 
-> [!div class="mx-imgBorder"] 
-> ![Dataverse analytics Download Section](./media/organization-insights-download-section.png "Dataverse analytics Download Section")  
+- What is the total number of model-driven and canvas apps across the tenant or environments? 
+- Which apps depend on specific connectors or connector types like Premium? 
+- Who are the owners of the apps hosted in one or more environments? 
+- What is the distribution of canvas versus model-driven apps across the organization? 
 
-## View data for different environments and date-time ranges
+:::image type="content" source="media/power-apps-inventory-report.png" alt-text="Power Apps Inventory report":::
 
-Select **Change filters**.  
+## Download Inventory
 
-> [!div class="mx-imgBorder"] 
-> ![Dataverse analytics change filters](./media/organization-insights-change-filters.png "Dataverse analytics change filters")  
+Power Platform admin center reports can be downloaded directly from the report visuals.  Users have the option of choosing between Summarized and Underlying data. 
 
-Select the environment and time-period from the drop-down lists, and then select **Apply** to save the changes. All the Dataverse analytics reports are available using this selection. 
+- Summarized data: select this option to download the data underlying the current report visual  
+- Underlying data: select this option to download the full result set backing the report 
 
-> [!div class="mx-imgBorder"] 
-> ![Dataverse analytics change filters apply](./media/organization-insights-change-filters-apply.png "Dataverse analytics change filters apply")  
+:::image type="content" source="media/download-inventory-report.png" alt-text="Download Inventory report":::
 
+For more information on downloading data from the tenant level reports, see [Exporting data from Power BI visuals](/power-bi/consumer/end-user-export).
 
+## How do I enable the Preview feature?
+
+To enable a Preview feature, you must be an administrator. 
+
+1. Select the **Gear** icon (![Gear icon](media/selection-rule-gear-button.png)) in the upper-right corner of the Microsoft Power Platform site, and then select **Power Platform settings**. 
+
+2. Turn on the option to **Enable tenant level analytics**.
+
+   :::image type="content" source="media/enable-tenant-level-analytics.png" alt-text="Enable tenant-level analytics":::
+
+3. **Granting consent for tenant-level analytics:** The process of collecting information for tenant-level analytics includes copying service telemetry data from other GEO locations into a central location for reporting.  Customers must explicitly enable this Power Platform operation.  For more information, see [Manage environments in the Power Platform admin center](environments-overview.md#manage-environments-in-the-power-platform-admin-center). 
+
+   Select **Enable** to grant consent for the service to collocate service telemetry data in the location associated with the default environment. 
+
+   :::image type="content" source="media/enable-collocate-service-telemetry-data.png" alt-text="Grant consent for the service to collocate service telemetry data":::
+
+4. Select **Save** and then close the form. 
+
+5. Select **Environment level analytics**, and then select **Tenant level analytics** to switch viewing modes. 
+
+## Where is this feature available?
+
+The Power Platform admin center tenant-level views are available in all supported regions in the public cloud. This feature is not yet available in other sovereign clouds. 
+
+ 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

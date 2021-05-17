@@ -15,7 +15,10 @@ ms.collection: virtual-agent
 
 With Power Virtual Agents, you can create bots in different environments and easily switch between them.
 
-An environment is a space to store, manage, and share your organization's business data. The bots you create are stored in an environment (apps and flows are also stored in environments). Environments may also have different roles, security requirements and target audiences, and each environment is created in a separate location. More information: [Supported data locations](data-location.md).
+An environment is a space to store, manage, and share your organization's business data. The bots you create are stored in an environment (apps and flows are also stored in environments). Environments may also have different roles, security requirements and target audiences, and each environment is created in a separate location. See the following topics for more information: 
+
+- [Supported data locations](data-location.md)
+- [Power Platform environments overview](/power-platform/admin/environments-overview.md)
 
 ## Prerequisites
 
@@ -107,7 +110,7 @@ When using a trial environment and you want to retain the bots for longer than 3
 
 ## Supported operations
 
-Power Virtual Agents supports the following environment lifecyrcle operations, as described in [Power Platform environments overview](/power-platform/admin/environments-overview):
+Power Virtual Agents supports the following environment lifecycle operations, as described in [Power Platform environments overview](/power-platform/admin/environments-overview):
 
 - [Back up and restore](/power-platform/admin/backup-restore-environments)
 - [Delete](/power-platform/admin/delete-environment)

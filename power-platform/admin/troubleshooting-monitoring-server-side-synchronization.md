@@ -173,7 +173,11 @@ If you create an email message in customer engagement apps (Dynamics 365 Sales, 
  For more information, see: [When would I want to use this check box?](when-would-want-use-check-box.md)  
   
 ## Potential issues and resolutions  
-  
+
+### Determine if the issue is with the connection to Exchange Server (on-premises)
+
+If your organization connects to Exchange Server (on-premises), you can run the Microsoft Remote Connectivity Analyzer to determine if the issue is with that connection. See [Test connection to Exchange Server (on-premises)](test-connection-exchange-server-onpremises.md).
+
 <a name="BKMK_SSSGmail"></a>   
 
 ### Email fails to be sent or received when server-side synchronization is configured with Gmail  
@@ -261,8 +265,9 @@ This is a known issue and is not supported. If the organizer is someone outside 
  For enterprise customers with a large mail flow, make sure you're not running up against Exchange Online receiving and sending limits. See [Exchange Online Limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits)  
   
 ### See also  
-[Server-side synchronization](../admin/server-side-synchronization.md) 
-[Best practices and things to know about server-side synchronization](../admin/best-practices-server-side-synchronization.md)   
+[Server-side synchronization](../admin/server-side-synchronization.md) <br />
+[Test connection to Exchange Server (on-premises)](test-connection-exchange-server-onpremises.md) <br />
+[Best practices and things to know about server-side synchronization](../admin/best-practices-server-side-synchronization.md)  <br /> 
 [{Hidden Gem}Understanding Server Side sync Performance Dashboard](https://dynamicsofdynamicscrm.wordpress.com/2015/07/27/hidden-gemunderstanding-server-side-sync-performance-dashboard/)   
 
 
