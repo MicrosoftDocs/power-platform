@@ -31,10 +31,10 @@ When publishing the bot to the web, you can publish to a prebuilt demo website (
 
 
 ## Demo website
-You can edit the welcome message and suggested trigger phrases for the demo website. This helps prompt your teammates for what they should ask the bot about. 
+You can edit the welcome message and suggested trigger phrases for the demo website. A welcome message helps prompt your teammates for what they should ask the bot about. 
 
 > [!TIP]
-> You can change the welcome message to explain the intent or purpose of the testing, and you can change this as often as you like. So you could create a welcome message asking to test out conversations related to store hours and then, after making updates to the bot, change the welcome message to ask testers to try conversations related to gift cards.
+> You can change the welcome message to explain the intent or purpose of the testing, and you can change it as often as you like. So you could create a welcome message asking to test out conversations related to store hours and then, after making updates to the bot, change the welcome message to ask testers to try conversations related to gift cards.
 
 **Update the demo website:**
 
@@ -44,11 +44,11 @@ You can edit the welcome message and suggested trigger phrases for the demo webs
 
 3. Enter the welcome message you'd like to see alongside the bot in the **Welcome message** text field.
 
-4. Enter a list of suggested trigger phrases in the **Conversation starters** text field. Trigger phrases are what initiate specific topics, so you could customize these to specific topics that you want your teammates to try out.
+4. Enter a list of suggested trigger phrases in the **Conversation starters** text field. Trigger phrases are what initiate specific topics, so you could customize your trigger phrases to specific topics that you want your teammates to try out.
 
     ![Share demo website](media/channel-share-demo-website.png)
 
-To share the demo website link, simply copy the demo website URL and share it with your teammates directly. 
+To share the demo website link, copy the demo website URL and share it with your teammates directly. 
 
 ## Custom website
 
@@ -89,7 +89,7 @@ You can also add the bot to your Power Platform admin center.
 
 1. In the Power Virtual Agents Portal, select **Manage** on the side navigation pane, and then go to the **Channels** tab.
 
-1. Select **Custom website** and then copy only the URL of the IFrame snippet: this is the URL defined by `src="<URL>"`.
+1. Select **Custom website** and then copy only the URL of the IFrame snippet: this URL is defined by `src="<URL>"`.
 
     ![Select only the src URL](media/channel-custom-website-url.png)
 
