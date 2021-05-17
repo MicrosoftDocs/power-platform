@@ -1,6 +1,6 @@
 ---
 title: "Enable improved duplicate detection  | MicrosoftDocs"
-description: About detecting and merging duplicate records.
+description: About how to enable improved duplicate detection.
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
