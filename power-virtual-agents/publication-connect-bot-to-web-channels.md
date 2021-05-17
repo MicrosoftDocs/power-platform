@@ -12,7 +12,7 @@ ms.custom: "publication, authoring, ceX"
 ms.collection: virtual-agent
 ---
 
-# Configure the demo website and add the bot to your live website
+# Configure the demo website amd add the bot to your live website or Power Apps portal
 
 When publishing the bot to the web, you can publish to a prebuilt demo website (which you can use to share the bot with your teammates and stakeholders) and to your own live website.
   
@@ -68,9 +68,11 @@ You can also add the bot to your Power Platform admin center.
 
 ## Power Apps
 
-**Add bot to Power Apps Portal (Preview):**
+You can add your bot to a Power Apps Portal either directly with the chatbot component, or with a URL snippet in an IFrame.
 
-You can add your bot to a Power Apps Portal in a few quick steps without any code. Power Apps Portals allows you to add a Power Virtual Agents chatbot on your portal page by adding a chatbot component with limited customization.
+**Add bot to a Power Apps portal (Preview):**
+
+You can add your bot to a Power Apps portal in a few quick steps without any code. Power Apps portals allow you to add a Power Virtual Agents chatbot on your portal page by adding a chatbot component with limited customization.
 
 [Follow the steps here](/powerapps/maker/portals/add-chatbot) to add the chatbot component and customize.
 
@@ -79,7 +81,7 @@ You can add your bot to a Power Apps Portal in a few quick steps without any cod
 >Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 
 
-**Add bot to Power Apps:**
+**Add bot to Power Apps with an IFrame:**
 
 You can also add your bot to Power Apps as an IFrame. Your live website can be a customer-facing external website or an internal site, like a SharePoint or Yammer site.
 
