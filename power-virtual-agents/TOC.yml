@@ -4,7 +4,7 @@
   href: requirements-licensing-subscriptions.md
 - name: Standards compliance and certification
   href: admin-certification.md
-- name: Quotas and rate limit considerations
+- name: Quotas, limits, and configuration values
   href: requirements-quotas.md
 - name: Community help and support
   href: fundamentals-support.md
@@ -100,6 +100,8 @@
          href: analytics-csat.md
        - name: Analyze session information
          href: analytics-sessions.md
+       - name: Work with conversation transcripts
+         href: analytics-sessions-transcripts.md
        - name: Analyze topic usage
          href: analytics-topic-details.md
        - name: Analyze billed session information

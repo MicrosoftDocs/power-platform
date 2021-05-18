@@ -5,7 +5,7 @@ author: dileepsinghmicrosoft
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/02/2021
+ms.date: 05/11/2021
 ms.author: dileeps
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -26,7 +26,8 @@ Requests in Microsoft Power Platform consist of various actions that a user make
 
 - **Power Apps** – all API requests to connectors and Microsoft Dataverse.
 - **Power Automate** – all API requests to connectors, HTTP actions, and built-in actions from initializing variables to a simple compose action. Both succeeded and failed actions count towards these limits. Additionally, retries and additional requests from pagination count as action executions as well. 
-- **Common Data Service** – all create, read, update, and delete (CRUD), assign, and share operations including user-driven and internal system requests required to complete CRUD transactions, as well as special operations like share or assign. These can be from any client or application and using any endpoint (SOAP or REST). These include, but are not limited to, plug-ins, classic workflows, and custom controls making the earlier-mentioned operations.
+- **Power Virtual Agents** - API requests (or calls) to Power Automate flows from within a chatbot conversation.
+- **Dataverse (formerly Common Data Service)** – all create, read, update, and delete (CRUD), assign, and share operations including user-driven and internal system requests required to complete CRUD transactions, as well as special operations like share or assign. These can be from any client or application and using any endpoint (SOAP or REST). These include, but are not limited to, plug-ins, classic workflows, and custom controls making the earlier-mentioned operations.
 
 > [!NOTE]
 > For Dataverse, there is a small set of system internal operations that are excluded from limits, such as login, logout, and system metadata operations.
@@ -44,11 +45,11 @@ All the users of Microsoft Power Platform have limits on the number of requests 
 | Dynamics 365 Team Member | 5,000 |
 | Power Apps per user plan<sup>3</sup> | 5,000 |
 | Power Automate per user plan<sup>3</sup>  | 5,000 |
-| Office licenses (that include Power Apps/Power Automate)<sup>4</sup>  | 2,000 |
+| Office licenses (that include Power Apps, Power Automate, or Power Virtual Agents)<sup>4</sup>  | 2,000 |
 | Power Apps per app plan | 1,000 per app pass |
 | Non-licensed users | See [Requests limits not based on licensed users or flows](#requests-limits-not-based-on-licensed-users-or-flows) below |
 
-<sup>1</sup> Dynamics 365 Enterprise applications include Dynamics 365 Sales Enterprise, Dynamics 365 Customer Service Enterprise, Dynamics 365 Field Service, Dynamics 365  Project Service Automation, Dynamics 365 Retail, Dynamics 365 Talent, Dynamics 365 Customer Engagement plan.
+<sup>1</sup> Dynamics 365 Enterprise applications include Dynamics 365 Sales Enterprise, Dynamics 365 Customer Service Enterprise, Dynamics 365 Field Service, Dynamics 365 Project Service Automation, Dynamics 365 Commerce, Dynamics 365 HR, Dynamics 365 Customer Engagement plan, Dynamics 365 Finance, Dynamics 365 Project Operations, and Dynamics 365 Supply Chain Management.
 
 <sup>2</sup> Dynamics 365 Professional includes Dynamics 365 Sales Professional, Dynamics 365 Customer Service Professional.
 
@@ -63,7 +64,7 @@ If a user has multiple licenses allocated within the same product line, for exam
 
 ## Power Apps and Power Automate capacity add-on
 
-Power Apps and Power Automate capacity add-on allows customers to increase the limits for a given user. These will be assignable to any user who has a Power Apps or Power Automate license as well as a Dynamics 365 license. 
+A Power Apps and Power Automate capacity add-on allows customers to increase the limits for a given user. These will be assignable to any user who has a Power Apps or Power Automate license as well as a Dynamics 365 license. 
 
 Each capacity add-on raises the request limits by an additional 10,000 per 24 hours. Multiple capacity add-ons can also be assigned to the same user.
 
@@ -97,6 +98,12 @@ Base request capacity is defined at the tenant level and can only be used by non
 After base request capacity is exhausted, customers can increase this capacity by purchasing a Power Apps and Power Automate capacity add-on.
 
 The Power Automate per flow plan allows capacity to be specifically reserved for a single flow, irrespective of the owner of the flow. Each flow assigned to the per flow plan gets 15,000 per 24 hours. This does not use the base request capacity at the tenant level.
+
+## Power Virtual Agents capacity and limits
+
+When you purchase a Power Virtual Agents license, your tenant will get 30,000 API calls every 24 hours. These API calls are only consumed by Power Automate flows that are triggered from a Power Virtual Agents chatbot.
+
+You can purchase multiple Power Virtual Agents capacity add-ons. Each add-on will increase the number of requests by 15,000. 
 
 ## Other applicable limits
 

@@ -1,6 +1,6 @@
 ---
-title: "Troubleshooting: Common user access issues  | MicrosoftDocs"
-description: "Troubleshooting: Common user access issues"
+title: "Troubleshoot common user access issues for Dataverse environments"
+description: "Learn how to run and interpret diagnostics for user access to environments, including criteria for access."
 author: jimholtz
 ms.author: jimholtz
 ms.reviewer: jimholtz
@@ -8,7 +8,7 @@ ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/10/2021
+ms.date: 05/04/2021
 search.audienceType: 
   - admin
 search.app:
@@ -54,6 +54,24 @@ Use the following steps to run user access diagnostics on a user in a Dataverse 
 > The action of running or rerunning diagnostics will force the user information in Azure AD to synchronize to the environment's Dataverse database to provide up-to-date status on the user's properties. If the diagnostic run doesn't eliminate the root cause of a user access issue, please provide the results of the diagnostic run in the support ticket you create; this will greatly help Microsoft Support engineers to resolve your issue faster.
 
 ## Access issues
+
+The following issues are documented below.
+
+|Issue  |
+|---------|
+| [User access diagnostic tool in the Power Platform admin center](#user-access-diagnostic-tool-in-the-power-platform-admin-center)     |
+| [User has no roles](#user-has-no-roles)     |
+| [User does not have a license / user does not belong to the organization](#user-does-not-have-a-license--user-does-not-belong-to-the-organization)    |
+| [User is not a member of the environment’s security group](#user-is-not-a-member-of-the-environments-security-group)     |
+| [User doesn’t have sufficient permissions](#user-doesnt-have-sufficient-permissions)     |
+| [User is missing from environment despite meeting all requirements](#user-is-missing-from-environment-despite-meeting-all-requirements)     |
+| [Adding or refreshing users on demand](#adding-or-refreshing-users-on-demand)    |
+| [Known issue](#known-issue)     |
+
+If you don't see your issue:
+
+- See if you can get your question answered here: https://powerusers.microsoft.com/t5/Power-Apps-Community/ct-p/PowerApps1.
+- Create a [support request](https://powerapps.microsoft.com/support/).
 
 ### User access diagnostic tool in the Power Platform admin center
 

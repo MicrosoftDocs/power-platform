@@ -64,22 +64,26 @@ search.app:
 
 ## Regional availability 
 
-|Zone  |Public Preview availability  |
-|---------|---------|
-|Canada     | Jan 2021        |
-|EMEA     | Jan 2021        |
-|North America     | Jan 2021        |
-|Germany  | TBD       |
-|France     | March 2021        |
-|South America     | Jan 2021        |
-|Asia Pacific     |  Jan 2021       |
-|Japan     |  Jan 2021       |
-|UK     | Jan 2021        |
-|OCE     | Jan 2021        |
-|India     | March 2021        |
-|South Africa (ZAF)     | TBD       |
-|UAE     | March 2021        |
-|Switzerland (CHE)     | TBD     |
+|Zone  | Available |Public Preview availability  |
+|---------|---------|---------|
+|Canada     | Yes |  Yes |
+|EMEA     | Yes |  Jan 2021        |
+|North America     | Yes |  Jan 2021        |
+|Germany  | Yes |  Jan 2021       |
+|France     | Yes | March 2021        |
+|South America     | Yes | Jan 2021        |
+|Asia Pacific     |  Yes | Jan 2021       |
+|Japan     |  Yes | Jan 2021       |
+|UK     | Yes | Jan 2021        |
+|OCE     | Yes | Jan 2021        |
+|India     | Yes | March 2021        |
+|South Africa (ZAF)     |  Yes | Jan 2021       |
+|UAE     | Yes | March 2021        |
+|Switzerland (CHE)     | Yes | Jan 2021       |
+|Mooncake     | No |  June 2021 |
+|GCC     | No |  May 2021 |
+|GCC-Mod     | No |  May 2021 |
+|GCC-DOD     | No |  TBD |
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "Legacy storage capacity  | MicrosoftDocs"
 description: About the legacy storage model.
-ms.date: 04/13/2021
+ms.date: 04/27/2021
 ms.reviewer: ""
 ms.service: "power-platform"
 ms.topic: "quickstart"
@@ -19,7 +19,7 @@ search.app:
 
 In April 2019, we introduced Microsoft Dataverse capacity storage that is optimized for relational data, attachments, and audit logs. If you purchased storage prior to April 2019, you are using the legacy licensing model for storage discussed in this topic.
 
-We're rolling out this feature now so check back if your user experience varies from the following content.
+For information on the new storage model, see [New Microsoft Dataverse storage capacity](capacity-storage.md).
 
 ## Licenses for the legacy storage model 
 

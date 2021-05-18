@@ -6,7 +6,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 04/05/2021
+ms.date: 05/13/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -124,9 +124,9 @@ Users with a valid Power Apps license can perform the operations in these cmdlet
 ### Prerequisite
 To perform the administration operations in the admin cmdlets, you'll need the following:
 
-- A user with any of these roles, Global admins, Azure Active Directory Global admins, or Dynamics 365 admin, can access the Power Apps admin PowerShell cmdlets. These roles no longer require a Power Apps plan for administrative access to the Power Apps admin PowerShell cmdlets. However, these administrators need to sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) at least once before using the PowerShell cmdlets. If this is not done, the cmdlets will fail with an authorization error.
+- A user with any of these roles, Global admins, Azure Active Directory Global admins, Dynamics 365 admin, or Power Platform Admin can access the Power Apps admin PowerShell cmdlets. These roles no longer require a Power Apps plan for administrative access to the Power Apps admin PowerShell cmdlets. However, these administrators need to sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) at least once before using the PowerShell cmdlets. If this is not done, the cmdlets will fail with an authorization error.
 
-- [Microsoft 365 Global admin](/microsoft-365/admin/add-users/about-admin-roles) or an [Azure Active Directory Global Administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal), or [Dynamics 365 admin](global-service-administrators-can-administer-without-license.md) permissions if you need to search through another user's resources. Note that Environment Admins only have access to those environments and environment resources for which they have permissions.
+- [Microsoft 365 Global admin](/microsoft-365/admin/add-users/about-admin-roles) or an [Azure Active Directory Global Administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal), [Dynamics 365 admin, or Power Platform Admin](global-service-administrators-can-administer-without-license.md) role is required if you need to search through another user's resources. Note that Environment Admins only have access to those environments and environment resources for which they have permissions.
 
 ### Cmdlet list - Admin Cmdlets
 
@@ -147,6 +147,7 @@ To perform the administration operations in the admin cmdlets, you'll need the f
 | Read and delete a user's Power Automate settings, which are not visible to user, but that support flow execution | Get-AdminFlowUserDetails <br> Remove-AdminFlowUserDetails |
 | Create, read, update and delete data loss prevention policies for your organization using a three-way classification - **Business**, **Non-Business**, and **Blocked**  |  Get-DlpPolicy *(previously Get-AdminDlpPolicy)* <br> New-DlpPolicy *(previously Add-AdminDlpPolicy)* <br>  Remove-DlpPolicy *(previously Remove-AdminDlpPolicy)* <br> Set-DlpPolicy *(previously Set-AdminDlpPolicy)*<br> <br> Learn more about the [Microsoft Power Platform data loss prevention (DLP) SDK](data-loss-prevention-sdk.md). |
 | Read, add, update, and remove data loss prevention tenant settings | Get-PowerAppDlpErrorSettings<br />New-PowerAppDlpErrorSettings<br />Remove-PowerAppDlpErrorSettings<br />Set-PowerAppDlpErrorSettings |
+| Read, add, update, and remove exempt resources for DLP policies    | Get-PowerAppDlpPolicyExemptResources<br />New-PowerAppDlpPolicyExemptResources<br />Set-PowerAppDlpPolicyExemptResources<br />Remove-PowerAppDlpPolicyExemptResources    |
 | Read, add, remove, and update tenant settings | Get-TenantSettings<br />Set-TenantSettings<br /> Get-PowerAppTenantUrlPatterns <br />New-PowerAppTenantUrlPatterns <br /> Remove-PowerAppTenantUrlPatterns <br />Get-AdminPowerAppTenantConsumedQuota|
 | Read, add, and remove allowed consent/trial plans within the tenant | Remove-AllowedConsentPlans <br>Add-AllowedConsentPlans<br /> Get-AllowedConsentPlans |
 | Read tenant assigned user licenses | Get-AdminPowerAppLicenses |

@@ -4,7 +4,7 @@ description: "Learn about the special system and application users created when 
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 04/06/2021
+ms.date: 04/30/2021
 author: paulliew
 ms.author: paulliew
 ms.reviewer: jimholtz
@@ -58,6 +58,7 @@ Most of these users are hidden from user views but they can be found by using th
 | | ProductInsights | ProductInsights@onmicrosoft.com | To export data from Customer Insights to Engagement Insights | DataLakeWorkspaceAppAccess    |
 | | Dynamics365 SalesForecasting | Dynamics365SalesForecasting@onmicrosoft.com | To fetch table data and metadata for forecasting feature | ForecastAppUser    |
 | | # Omnichannel | Ominichannel@onmicrosoft.com | To perform data integration between Omnichannel for Customer Service and Dataverse | System admin    |
+| | # Flow-RP | Flow-RP@onmicrosoft.com | To allow Power Automate to integrate with Dataverse | Flow-RP Role, Service Reader |
 
 
 **The purpose of the system account?** 

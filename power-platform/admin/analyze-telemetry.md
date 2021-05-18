@@ -6,7 +6,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/25/2021
+ms.date: 04/26/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -62,8 +62,6 @@ Note that Monitor can be used for [live detailed debugging for canvas apps and m
 If the standard telemetry doesn't provide some specific metric that you need, you can write code to supplement what's already being gathered.
 
 For client-side JavaScript in model-driven apps, you can use the same patterns you use today to write to your Application Insights resource.
-
-For server-side code using plug-ins, any trace logs you've written will appear in Application Insights without your having to write any code. But trace logs are intended for debugging and troubleshooting rather than telemetry.
 
 ## What is included and not included?
 
