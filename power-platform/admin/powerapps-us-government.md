@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/02/2021
+ms.date: 05/18/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -20,7 +20,7 @@ search.app:
 
 Microsoft created Power Apps US Government in response to the unique and evolving requirements of the government public sector. 
 
-This article provides an overview of features that are specific to Power Apps US Government. Be sure that you read the supplementary section in the Power Apps [documentation](/powerapps/powerapps-overview), as it covers information about the general Power Apps service description. Note this service is referred to as Power Apps Government Community Cloud (GCC) or Power Apps Government Community Cloud – High (GCC High).
+This article provides an overview of features that are specific to Power Apps US Government. Be sure that you read the supplementary section in the Power Apps [documentation](/powerapps/powerapps-overview), as it covers information about the general Power Apps service description. Note this service is referred to as Power Apps Government Community Cloud (GCC), Power Apps Government Community Cloud – High (GCC High), or Power Apps Department of Defense (DoD).
 
 The Power Apps US Government service description serves as an overlay to the general Power Apps service description. Microsoft defines the unique commitments of this service and the differences from Power Apps offerings from those available since October 2016.
 
@@ -41,7 +41,9 @@ Beginning in September 2019, eligible customers can deploy Power Apps US Governm
 
 Microsoft designed the platform and operational procedures to meet the requirements that align with the DISA SRG IL4 compliance framework. Microsoft expects U.S. Department of Defense contractor customers and other Federal agencies currently deploy Microsoft 365 GCC High to use the Power Apps US Government GCC High deployment option. This release enables and requires customers to deploy Azure AD Government for customer identities, in contrast to GCC that deploys public Azure AD. 
 
-For U.S. Department of Defense contractor customers, Microsoft operates a service to enable customers to meet ITAR commitment and DFARS acquisition regulations. This policy is documented and required by their contracts with the U.S. Department of Defense.
+For U.S. Department of Defense contractor customers, Microsoft operates a service to enable customers to meet ITAR commitment and DFARS acquisition regulations. This policy is documented and required by their contracts with the U.S. Department of Defense. A Provisional Authority to Operate has been granted by DISA.
+
+Beginning April 2021, eligible customers may now choose to deploy Power Apps US Government to the "DoD" environment, which enables single sign-on and seamless integration with Microsoft 365 DoD deployments. Microsoft has designed the platform and our operational procedures in accordance with the DISA SRG IL5 compliance framework. A Provisional Authority to Operate has been granted by DISA.
 
 ## Customer eligibility
 
@@ -58,7 +60,9 @@ Validation of eligibility by Microsoft includes confirmation of the handling of 
 
 Validation may require sponsorship by a government table with specific requirements for the handling of data. 
 
-Tables with questions about eligibility for Power Apps US Government should consult their account team. Upon renewal of a customer's contract for Power Apps US Government, revalidation of eligibility is required.
+Entities with questions about eligibility for Power Apps US Government should consult their account team. Upon renewal of a customer's contract for Power Apps US Government, revalidation of eligibility is required.
+
+Note that Power Apps US Government DoD is only available to DoD entities.
 
 ## Power Apps US Government plans
 
@@ -108,8 +112,9 @@ Power Apps support and service engineering staff don't have standing access to c
 | Office of Defense Trade Controls Debarred Persons List (DDTC) | Validation against the Department of State list of individuals and tables barred from engaging in export activities related to the defense industry  |
 | Fingerprinting Check | Fingerprint background check against FBI databases  |
 | CJIS Background Screening | State-adjudicated review of federal and state criminal history by state CSA appointed authority within each state that has signed up for the Microsoft CJIS IA program |
+| Department of Defense IT-2    | Staff requesting elevated permissions to customer data or privileged administrative access to Dept of Defense SRG L5 service capacities must pass Department of Defense IT-2 adjudication based on a successful OPM Tier 3 investigation.      |
 
-<sup>1</sup> Applies only to personnel with temporary or standing access to content hosted in Power Apps US Government (GCC).
+<sup>1</sup> Applies only to personnel with temporary or standing access to content hosted in Power Apps US Government environments (GCC, GCC High, and DoD).
 
 ## Certifications and accreditations
 
@@ -120,13 +125,13 @@ Power Apps US Government is designed to support the Federal Risk and Authorizati
 
 Power Apps US Government has features designed to support customer's CJIS Policy requirements for law enforcement agencies. Visit the Power Apps US Government products page in Trust Center for more detailed information related to certifications and accreditations.
 
-Microsoft designed the platform and operational procedures to meet the requirements aligning with the DISA SRG IL4 compliance framework. Anticipated is the US Department of Defense contractor customer base and other Federal agencies currently deploying Microsoft 365 GCC High to use the Power Apps US Government GCC High deployment option. This enables and requires customers to deploy Azure AD Government for customer identities, in contrast to GCC that implements public Azure AD. For the US Department of Defense contractor customers, Microsoft operates the service in a manner that enables these customers to meet ITAR commitment and DFARS acquisition regulations.
+Microsoft designed the platform and operational procedures to meet the requirements aligning with the DISA SRG IL4 and IL5 compliance frameworks and have received requisite DISA Provisional Authorities to Operate.  Anticipated is the US Department of Defense contractor customer base and other Federal agencies currently deploying Microsoft 365 GCC High to use the Power Apps US Government GCC High deployment option. This enables and requires customers to deploy Azure AD Government for customer identities, in contrast to GCC that implements public Azure AD. For the US Department of Defense contractor customers, Microsoft operates the service in a manner that enables these customers to meet ITAR commitment and DFARS acquisition regulations. Likewise, we expect our US Department of Defense customer base currently leveraging Microsoft 365 DoD to use the Power Apps US Government DoD deployment option.  
 
 ## Power Apps US Government and other Microsoft services
 
 Power Apps US Government includes several features that allow users to connect to and integrate with other Microsoft enterprise service offerings such as Microsoft 365 US Government, Dynamics 365 US Government, and Microsoft Power Automate US Government. Power Apps US Government is deployed within Microsoft datacenters in a manner consistent with a multi-tenant, public cloud deployment model; however, client applications including but not limited to the web-user client, Power Apps mobile applications any third-party client application that connects to Power Apps US Government are not part of Power Apps US Government's accreditation boundary and government customers are responsible for managing them.
 
-Power Apps US Government applies the Microsoft 365 customer admin UI for customer administration and billing—Power Apps US Government maintains the actual resources, information flow, and data management. This relyies on Microsoft 365 to provide the visual styles that are presented to the customer administrator through their management console. For purposes of FedRAMP ATO inheritance, Power Apps US Government applies Azure (including Azure Government) ATOs for infrastructure and platform services, respectively.
+Power Apps US Government applies the Microsoft 365 customer admin UI for customer administration and billing—Power Apps US Government maintains the actual resources, information flow, and data management. This relyies on Microsoft 365 to provide the visual styles that are presented to the customer administrator through their management console. For purposes of FedRAMP ATO inheritance, Power Apps US Government applies Azure (including Azure Government and Azure DoD) ATOs for infrastructure and platform services, respectively.
 
 If you adopt the use of Active Directory Federation Services (AD FS) 2.0 and set up policies to help ensure your users connect to the services through single sign-on (SSO), any content that is temporarily cached will be located in the United States.
 
@@ -157,12 +162,12 @@ You use a different set of URLs to access Power Apps US Government environments,
 
 | **Commercial version URL**     | **US Government version URL**         |
 |--------------------------------|---------------------------------------|
-| <https://make.powerapps.com>    | <https://make.gov.powerapps.us> (GCC)<br/><https://make.high.powerapps.us> (GCC High)   |
-| <https://create.powerapps.com> | <https://make.gov.powerapps.us> (GCC)<br /><https://make.high.powerapps.us> (GCC High)    |
-| <https://flow.microsoft.com/connectors> | <https://gov.flow.microsoft.us/connectors><br /><https://high.flow.microsoft.us/connectors> (GCC High)  |
-| <https://admin.powerplatform.microsoft.com> | <https://gcc.admin.powerplatform.microsoft.us><br /><https://high.admin.powerplatform.microsoft.us> (GCC High) |
+| <https://make.powerapps.com>    | <https://make.gov.powerapps.us> (GCC)<br/><https://make.high.powerapps.us> (GCC High) <br />https://make.apps.appsplatform.us (DoD)   |
+| <https://create.powerapps.com> | <https://make.gov.powerapps.us> (GCC)<br /><https://make.high.powerapps.us> (GCC High) <br /> https://make.apps.appsplatform.us (DoD)  |
+| <https://flow.microsoft.com/connectors> | <https://gov.flow.microsoft.us/connectors><br /><https://high.flow.microsoft.us/connectors> (GCC High) <br />https://flow.appsplatform.us (DoD)  |
+| <https://admin.powerplatform.microsoft.com> | <https://gcc.admin.powerplatform.microsoft.us><br /><https://high.admin.powerplatform.microsoft.us> (GCC High) <br />https://admin.appsplatform.us (DoD) |
 
-For those customers that implement network restrictions, please ensure access to the following domains are made available to your end-users' access points:
+For those customers that implement network restrictions, ensure access to the following domains are made available to your end-users' access points:
 
 **GCC Customers:**
 
@@ -179,11 +184,11 @@ For those customers that implement network restrictions, please ensure access to
 *.crm9.dynamics.com<br/>
 *.dynamics365portals.us
 
-Please also refer to the Required IP Ranges to enable access to Dataverse environments that users and administrators may create within your tenant:
+Also, refer to the Required IP Ranges to enable access to Dataverse environments that users and administrators may create within your tenant:
 
 [https://www.microsoft.com/download/confirmation.aspx?id=57063](https://www.microsoft.com/download/confirmation.aspx?id=57063)  (Focus on AzureCloud.usgovtexas and AzureCloud.usgovvirginia)
 
-**GCC High Customers:**
+**GCC High and DoD Customers:**
 
 *.microsoft.us<br/>
 *.powerapps.us<br/>
@@ -193,12 +198,15 @@ Please also refer to the Required IP Ranges to enable access to Dataverse enviro
 *.microsoftonline.us<br/>
 *. azureedge.net<br/>
 *. azure.net<br/>
-*.crm.microsoftdynamics.us<br/>
-*.high.dynamics365portals.us
+*.crm.microsoftdynamics.us (GCC High) <br/>
+*.high.dynamics365portals.us (GCC High) <br />
+*.crm.appsplatform.us (DoD) <br />
+*.appsplatformportals.us (DoD)
 
-Please also refer to the Required IP Ranges to enable access to Dataverse environments that users and administrators may create within your tenant:
+Also, refer to the [Required IP Ranges](https://www.microsoft.com/download/confirmation.aspx?id=57063) to enable access to Dataverse environments that users and administrators may create within your tenant as well as other Azure services leveraged by the platform:
 
-[https://www.microsoft.com/download/confirmation.aspx?id=57063](https://www.microsoft.com/download/confirmation.aspx?id=57063)  (Focus on AzureCloud.usgovtexas and AzureCloud.usgovvirginia)
+- GCC and GCC High: (Focus on AzureCloud.usgovtexas and AzureCloud.usgovvirginia)  (Focus on AzureCloud.usgovtexas and AzureCloud.usgovvirginia)
+- DoD: Focus on USDoD East and USDoD Central 
 
 ## Regional Discovery Service is deprecated
 
@@ -210,12 +218,12 @@ Azure is distributed among multiple clouds. By default, tenants are allowed to o
 
 - USGov Virginia
 - USGov Texas
+- US DoD East
+- US Dod Central
 
-Please refer to the Azure IP Ranges and [Service Tags – US Government Cloud document](https://www.microsoft.com/download/confirmation.aspx?id=57063), focusing attention on AzureCloud.usgovtexas and AzureCloud.usgovvirginia. Also note that these are the IP ranges required in order for your end users to have access to the service URLs.
+Refer to the Azure IP Ranges and [Service Tags – US Government Cloud document](https://www.microsoft.com/download/confirmation.aspx?id=57063), focusing attention on AzureCloud.usgovtexas and AzureCloud.usgovvirginia, and/or US DoD East, and US DoD Central as noted above. Also, note that these are the IP ranges required in order for your end users to have access to the service URLs.
 
 ## Configure mobile clients
-
-<!-- When GCC High is enabled, instructions need to be modified for drop down in the dialog -->
 
 To sign in with the Power Apps mobile client requires a few extra configuration steps. 
 
@@ -223,7 +231,8 @@ To sign in with the Power Apps mobile client requires a few extra configuration 
 2. Select **Region** settings.
 3. Select one of the following:
    - **GCC: US Government GCC**
-   - **GCC Hight: US Government GCC High**
+   - **GCC High: US Government GCC High**
+   -  **DoD: US Government DOD**
 4. Select **OK**.
 5. On the sign-in page, select **Sign in**.
 
@@ -233,7 +242,7 @@ The mobile application will now use the US Government Cloud domain.
 
 Install an [on-premises data gateway](/powerapps/maker/canvas-apps/gateway-management) to transfer data quickly and securely between a canvas app that's built in Power Apps and a data source that isn't in the cloud, such as an on-premises SQL Server database or an on-premises SharePoint site.
 
-If your organization (tenant) has already configured and successfully connected the on-premises data gateway for Power BI US Government, then the process and configuration your organization executed to enable that will also enable on-premises connectivity for Power Apps. However, if you are unable to connect to your tenant, you might need to go through a process to add your tenant to an approved list, which will enable this capability for your tenant. Should this occur, please open a support ticket to address your needs. The support team will follow an established process to address your request.
+If your organization (tenant) has already configured and successfully connected the on-premises data gateway for Power BI US Government, then the process and configuration your organization executed to enable that will also enable on-premises connectivity for Power Apps. However, if you are unable to connect to your tenant, you might need to go through a process to add your tenant to an approved list, which will enable this capability for your tenant. Should this occur, open a support ticket to address your needs. The support team will follow an established process to address your request.
 
 ## Power Apps US Government feature limitations
 
@@ -243,7 +252,7 @@ Some of the features available in the commercial version of Power Apps are not a
 
 - Ability to add apps to Teams using the [Add to Teams button](/powerapps/maker/canvas-apps/embed-teams-app).
 
-- [Connectors](https://gov.flow.microsoft.us/connectors/): The most popular connectors in use in our commercial service (based on usage telemetry) have been published; if there is a connector available in the commercial offering that you do not see deployed, please contact support, and we will review your request. Note that third-party connectors will not be added to GCC High.  Features are being investigated with the Digital Loss Prevention (DLP) administration functionality that will enable Connectors to be added “blocked by default.”  Until this is possible, third-party connectors pose a measurable threat to organizations relying on the GCC High environment to maintain requisite data exfiltration controls.
+- [Connectors](https://gov.flow.microsoft.us/connectors/): The most popular connectors in use in our commercial service (based on usage telemetry) have been published; if there is a connector available in the commercial offering that you do not see deployed, contact support, and we will review your request. Note that third-party connectors will not be added to GCC High or DoD.  Features are being investigated with the Digital Loss Prevention (DLP) administration functionality that will enable Connectors to be added “blocked by default.”  Until this is possible, third-party connectors pose a measurable threat to organizations relying on the GCC High environment to maintain requisite data exfiltration controls.
 
 - [AI Builder](/ai-builder/).
 - [Geospatial features](/powerapps/maker/canvas-apps/geospatial-overview) are not available in government environments.
