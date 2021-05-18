@@ -1,6 +1,6 @@
 ---
-title: "Policies and Communications for service incidents  | MicrosoftDocs"
-description: Policies and Communications for service incidents
+title: "Policies and Communications for Power Platform and Dynamics 365 Services | MicrosoftDocs"
+description: "Policies and Communications for incidents provided for Microsoft 365 services."
 author: astockli
 ms.reviewer: jimholtz
 ms.service: power-platform
@@ -19,6 +19,7 @@ search.app:
 # Policies and Communications for service incidents
 
 ## Introduction
+
 Microsoft regularly communicates work done to maintain and update Microsoft Power Platform (Power Apps, Power Automate, Power Virtual Agents, and other services), Microsoft Dynamics 365 apps (Sales, Customer Service, Supply Chain Management, and others) to ensure security, performance, availability, and to provide new features and functionality. Microsoft also communicates details of service incidents including the potential user experience, the start and end times of the incident, and any workaround that may be available. For each of these scenarios, communication is provided through the Microsoft 365 admin center in the [Message Center](/microsoft-365/admin/manage/message-center), and the [Service health dashboard](/microsoft-365/enterprise/view-service-health).
 
 **Please note**: From time-to-time, Microsoft may also send direct email to users with the System Administrator role in a specifically impacted Microsoft Dataverse environment, or Microsoft Lifecycle Services project or environment.  
@@ -73,7 +74,7 @@ Because the Service teams strive to apply risk mitigations in a way that doesnâ€
   
 For more information about security, see [Trust Center](https://www.microsoft.com/TrustCenter/CloudServices/Dynamics365).
 
-## System maintenance
+### System maintenance
 
 <a name="bkmk_PlannedMaintenance"></a>
 
@@ -169,7 +170,7 @@ Because of the critical nature of service notifications and communications, ther
 - Use PowerShell to [configure additional notification email addresses](manage-email-notifications) in Dataverse 
 - [Track your message center tasks](/office365/planner/track-message-center-tasks-planner) in Planner 
   
-### Notice about pnline policies
+### Notice about online policies
 Please review [Notice About Online Policies and Similar Documents](https://www.microsoft.com/legal/intellectualproperty/mtl/onlinedisclaimer.aspx).
 
 If you have any feedback, please fill out our [survey](https://forms.office.com/FormsPro/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxclc4NDdL5CqxoDKPhEMtxUQlNBTkhCWkZEQk1FM1JORU5XSTZFUFJNVyQlQCN0PWcu), and share your thoughts!
