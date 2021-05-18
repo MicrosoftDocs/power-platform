@@ -16,7 +16,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Policies and Communications for service incidents
+# Policies and Communications for Power Platform and Dynamics 365 Services
 
 ## Introduction
 
