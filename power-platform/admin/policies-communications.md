@@ -154,7 +154,7 @@ Because of the critical nature of service notifications and communications, ther
 
 - Download and install the [Microsoft 365 Admin mobile app](https://products.office.com/business/manage-office-365-admin-app) on your mobile device to view service updates and incident notifications 
 - Connect directly to our Service Communications using an externally accessible [Service Communication API](/office/office-365-management-api/office-365-service-communications-api-reference)
-- Use PowerShell to [configure additional notification email addresses](manage-email-notifications) in Dataverse 
+- Use PowerShell to [configure additional notification email addresses](manage-email-notifications.md) in Dataverse  
 - [Track your message center tasks](/office365/planner/track-message-center-tasks-planner) in Planner 
   
 ### Notice about online policies
