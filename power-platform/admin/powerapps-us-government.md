@@ -184,9 +184,10 @@ Also, refer to the [Required IP Ranges](https://www.microsoft.com/download/confi
 *.crm.appsplatform.us (DoD) <br />
 *.appsplatformportals.us (DoD) <br />
 
-Also, refer to the [Required IP Ranges](https://www.microsoft.com/download/confirmation.aspx?id=57063) to enable access to Dataverse environments that users and administrators may create within your tenant:
+Also, refer to the [Required IP Ranges](https://www.microsoft.com/download/confirmation.aspx?id=57063) to enable access to Dataverse environments that users and administrators may create within your tenant as well as other Azure services leveraged by the platform:
 
-[https://www.microsoft.com/download/confirmation.aspx?id=57063](https://www.microsoft.com/download/confirmation.aspx?id=57063)  (Focus on AzureCloud.usgovtexas and AzureCloud.usgovvirginia)
+-GCC and GCC High: (Focus on AzureCloud.usgovtexas and AzureCloud.usgovvirginia)
+- DoD:  Focus on USDoD East and USDoD Central 
 
 ## Regional Discovery Service is deprecated
 
