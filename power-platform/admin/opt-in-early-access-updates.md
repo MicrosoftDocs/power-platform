@@ -176,27 +176,7 @@ If you didn't opt in for the early access updates in your environments, after a 
  
 Throughout a release wave, your environments will be updated during one of the [maintenance windows](policies-communications.md#maintenance-timeline) over a weekend based on your environments' region. The specific dates when the updates will occur will be published to the [Message Center](/office365/admin/manage/message-center?view=o365-worldwide). Each notification will include the dates, the maintenance window, and the Release Plan reference for the list of optimizations, fixes, and enhancements. Each environment should see the new features and build numbers by Monday morning, local time.
 
-See [Policies and communications](policies-communications.md#scheduled-system-updates). 
-
-<!--
-#### Deployment schedule
-
-> [!IMPORTANT]
-> As announced in the [blog post](https://aka.ms/covid19Blog), Microsoft is making some changes to the update schedules in April in response to COVID-19. The 2020 release wave 1, April updates will be generally available as mentioned in the [Dynamics 365](/dynamics365-release-plan/2021wave1/) and Microsoft [Power Platform](/power-platform-release-plan/2021wave1/) release plans. However, we are making some changes to the release schedule as explained later in [this article](/dynamics365/get-started/release-schedule). Microsoft will continue to release critical updates for Dynamics 365 applications and Power Platform. Microsoft is also extending the deprecation timelines for some capabilities to provide customers and partners additional time to make the transition. Microsoft is committed to providing support to our customers and partners during this period.
-
-The following is the updated schedule for when the 2020 release wave 1 features will be enabled by regions. 
-
-|Regions  |Automatic update window  |
-|---------|---------|
-|South America<br />Canada<br />India<br />France<br />Emirates<br />South Africa<br />Germany  |  Friday, May 1st – Sunday, May 3rd     |
-|Japan<br />Asia Pacific<br />Great Britain<br />Australia   | Friday, May 8th – Sunday, May 10th        |
-|Europe     | Friday, May 15th – Sunday, May 17th         |
-|North America     |  Friday, May 22nd – Sunday, May 24th       |
-|China | Friday, May 29th – Sunday, May 31st   |
-|GCC<br />GCC High<br />DOD  |Friday, May 29th – Sunday, May 31st <br />See [Dynamics 365 US Government](microsoft-dynamics-365-government.md).          |
-
-During the general availability deployment, your environments will be updated with the latest features and functionality automatically applied to Dynamics 365 applications and Power Platform. It will not require any action from you.  
--->
+See [Policies and communications](power-platform\admin\general-availability-deployment.md). 
 
 ### See also
 [Dynamics 365 release schedule and early access ](/dynamics365/get-started/release-schedule)<br />
