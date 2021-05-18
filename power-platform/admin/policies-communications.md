@@ -74,11 +74,9 @@ Because the Service teams strive to apply risk mitigations in a way that doesnâ€
   
 For more information about security, see [Trust Center](https://www.microsoft.com/TrustCenter/CloudServices/Dynamics365).
 
-### System maintenance
+### Planned maintenance
 
 <a name="bkmk_PlannedMaintenance"></a>
-
-### Planned maintenance
 
 Planned maintenance includes updates and changes to the service to provide increased stability, reliability, and performance. 
 
