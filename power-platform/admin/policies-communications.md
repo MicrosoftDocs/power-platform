@@ -46,7 +46,7 @@ Minor service updates contain customization changes to support new features, pro
 
 **Please note**: The date the deployment is applied to the infrastructure is not the date the update will be applied to the environment. The Dataverse environment and any apps are updated by an asynchronous process that runs during subsequent Regional Maintenance Windows. Although there is no expected degradation to service performance or availability, during this maintenance window users may see short, intermittent impact such as transient SQL errors or a redirect to the login screen.  
 
-You can verify that the update was completed successfully by checking the version number on the About page of the Dataverse environment, or looking at the environment details on the Power Platform admin center. A list of service updates can be found on our [Released Versions](business-applications-release-notes/dynamics/released-versions/dynamics-365ce) page. 
+You can verify that the update was completed successfully by checking the version number on the About page of the Dataverse environment, or looking at the environment details on the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). A list of service updates can be found on our [Released Versions](/business-applications-release-notes/dynamics/released-versions/dynamics-365ce) page. 
 
 ### Major release events
 
@@ -154,7 +154,7 @@ Because of the critical nature of service notifications and communications, ther
 
 - Download and install the [Microsoft 365 Admin mobile app](https://products.office.com/business/manage-office-365-admin-app) on your mobile device to view service updates and incident notifications 
 - Connect directly to our Service Communications using an externally accessible [Service Communication API](/office/office-365-management-api/office-365-service-communications-api-reference)
-- Use PowerShell to [configure additional notification email addresses](manage-email-notifications) in Dataverse 
+- Use PowerShell to [configure additional notification email addresses](manage-email-notifications.md) in Dataverse  
 - [Track your message center tasks](/office365/planner/track-message-center-tasks-planner) in Planner 
   
 ### Notice about online policies
