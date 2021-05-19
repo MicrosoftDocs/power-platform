@@ -1,7 +1,7 @@
 ---
 title: "Regional settings and data locations"
 description: "Identify the geographic location where your data will be stored, and plan for globalization features, including currency and date and time formats."
-ms.date: 9/22/2020
+ms.date: 5/19/2021
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -60,17 +60,17 @@ Data will be stored in the United States if a bot author's tenant location isn't
 
 |Azure geographic locations (geos) | Azure datacenters (regions) |
 |---|--- |
-|United States | East US (Blue Ridge, VA), South Central US (Des Moines, IA), West US (Quincy, WA) |
+|Asia Pacific | Southeast Asia (Singapore), East Asia (Hong Kong) |
+|Australia | Australia East (New South Wales), Australia Southeast (Victoria) |
 |Canada | Canada Central (Toronto), Canada East (Quebec City) |
 |Europe | West Europe (Netherlands), North Europe (Ireland) |
-|United Kingdom | UK South (London), UK West (Cardiff, Durham) |
 |France | France Central (Paris), France South (Marseille) |
-|Switzerland | Switzerland North (Zurich), Switzerland west (Geneva) |
-|Australia | Australia East (New South Wales), Australia Southeast (Victoria) |
 |India | Central India (Pune), South India (Chennai) |
-|Asia Pacific | Southeast Asia (Singapore), East Asia (Hong Kong) |
 |Japan | Japan East (Tokyo, Saitama), Japan West (Osaka) |
 |South America | Brazil South (Sao Paulo State) &nbsp;(As there is only one region in Brazil, customer data in Brazil South may be replication to South Central US (Texas) for disaster recovery purposes)
+|Switzerland | Switzerland North (Zurich), Switzerland west (Geneva) |
+|United Kingdom | UK South (London), UK West (Cardiff, Durham) |
+|United States | East US (Blue Ridge, VA), South Central US (Des Moines, IA), West US (Quincy, WA) |
 
 
 ## Customer data  
