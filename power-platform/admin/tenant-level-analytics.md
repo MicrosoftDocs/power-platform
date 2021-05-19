@@ -99,9 +99,6 @@ The following admin roles are required:
 
 Environment admins are not able to do these steps. The admin doesn't need to be a licensed user. 
 
-> [!NOTE]
-> Enabling tenant-level analytics also enables creating Power Apps data export.
-
 1. Select the **Gear** icon (![Gear icon](media/selection-rule-gear-button.png)) in the upper-right corner of the Microsoft Power Platform site, and then select **Power Platform settings**. 
 
 2. Turn on the option to **Enable tenant level analytics**.
@@ -133,17 +130,13 @@ Environment admins are not able to do these steps. The admin doesn't need to be 
 > [!IMPORTANT]
 > When you disable the tenant-level analytics preview feature, note the following:
 > - All the tenant-level aggregation of data from different environments (aggregating metrics, user object IDs, and resource names like app and flow names) will be permanently deleted. 
-> - Power Apps data exports and tenant-level analytics reports will be disabled. 
+> - Tenant-level analytics reports will be disabled. 
 
 1. Select the **Gear** icon (![Gear icon](media/selection-rule-gear-button.png)) in the upper-right corner of the Microsoft Power Platform site, and then select **Power Platform settings**. 
 
 2. Turn off the option to **Enable tenant level analytics**.
 
    :::image type="content" source="media/enable-tenant-level-analytics.png" alt-text="Enable tenant-level analytics":::
-
-## Export Power Apps analytics
-
-Need info.
 
 ## Where is this feature available?
 
