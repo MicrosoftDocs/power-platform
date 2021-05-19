@@ -89,7 +89,15 @@ For more information on downloading data from the tenant level reports, see [Exp
 
 ## How do I enable tenant-level analytics?
 
-Follow these steps to enable the tenant-level analytics preview feature. You must be an administrator. 
+Follow these steps to enable the tenant-level analytics preview feature. 
+
+The following admin roles are required:
+
+- Global administrator
+- Service administrator
+- Delegated admin 
+
+Environment admins are not able to do these steps.
 
 > [!NOTE]
 > Enabling tenant-level analytics also enables creating Power Apps data export.
@@ -112,7 +120,15 @@ Follow these steps to enable the tenant-level analytics preview feature. You mus
 
 ## How do I disable tenant-level analytics?
 
-Follow these steps to disable the tenant-level analytics preview feature. You must be an administrator.
+Follow these steps to disable the tenant-level analytics preview feature. 
+
+The following admin roles are required:
+
+- Global administrator
+- Service administrator
+- Delegated admin 
+
+Environment admins are not able to do these steps.
 
 > [!IMPORTANT]
 > When you disable the tenant-level analytics preview feature, note the following:
