@@ -141,7 +141,7 @@ Environment admins are not able to do these steps. The admin doesn't need to be 
 
    :::image type="content" source="media/enable-tenant-level-analytics.png" alt-text="Enable tenant-level analytics":::
 
-## Export Power Apps data reports
+## Export Power Apps analytics
 
 Need info.
 
