@@ -2,7 +2,7 @@
 title: "Get access to Power Virtual Agents"
 description: "Compare the capabilities you can access in Power Virtual Agents depending on whether you have a Microsoft 365 subscription or standalone Power Virtual Agents subscription."
 keywords: "Administration, licensing, PVA, standalone, compare, comparison"
-ms.date: 5/4/2021
+ms.date: 5/19/2021
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -63,8 +63,10 @@ You can also [start a 60 day free trial of Power Virtual Agents](https://aka.ms/
 ## Standalone Power Virtual Agents subscription
 The standalone Power Virtual Agents subscription allows you to build chatbots on any supported channel and connect to any data using premium connectors. 
 
-
 You can obtain a standalone Power Virtual Agents subscription from the Microsoft 365 admin center. Learn more at the [Assign licenses and manage access to Power Virtual Agents](requirements-licensing.md) topic.
 
+
+## Other subscriptions that include Power Virtual Agents
+Entitlements for Power Virtual Agents are included in Digital Messaging and Chat add-ons for Dynamics 365 Customer Service. For more information, see the [Dynamics 365 Licensing Guide](http://go.microsoft.com/fwlink/?LinkId=866544&usg=AOvVaw31TJQMIji481LIHcfzy3Qw).
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
