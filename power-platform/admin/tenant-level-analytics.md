@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/6/2021
+ms.date: 05/19/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -87,9 +87,12 @@ Power Platform admin center reports can be downloaded directly from the report v
 
 For more information on downloading data from the tenant level reports, see [Exporting data from Power BI visuals](/power-bi/consumer/end-user-export).
 
-## How do I enable the Preview feature?
+## How do I enable tenant-level analytics?
 
-To enable a Preview feature, you must be an administrator. 
+Follow these steps to enable the tenant-level analytics preview feature. You must be an administrator. 
+
+> [!NOTE]
+> Enabling tenant-level analytics also enables creating Power Apps data export.
 
 1. Select the **Gear** icon (![Gear icon](media/selection-rule-gear-button.png)) in the upper-right corner of the Microsoft Power Platform site, and then select **Power Platform settings**. 
 
@@ -107,9 +110,29 @@ To enable a Preview feature, you must be an administrator.
 
 5. Select **Environment level analytics**, and then select **Tenant level analytics** to switch viewing modes. 
 
+## How do I disable tenant-level analytics?
+
+Follow these steps to disable the tenant-level analytics preview feature. You must be an administrator.
+
+> [!IMPORTANT]
+> When you disable the tenant-level analytics preview feature, note the following:
+> - All the tenant-level aggregation of data from different environments (aggregating metrics, user object IDs, and resource names like app and flow names) will be permanently deleted. 
+> - Power Apps data exports will be disabled. 
+
+1. Select the **Gear** icon (![Gear icon](media/selection-rule-gear-button.png)) in the upper-right corner of the Microsoft Power Platform site, and then select **Power Platform settings**. 
+
+2. Turn off the option to **Enable tenant level analytics**.
+
+   :::image type="content" source="media/enable-tenant-level-analytics.png" alt-text="Enable tenant-level analytics":::
+
+## Export Power Apps data reports
+
+Need info.
+
 ## Where is this feature available?
 
 The Power Platform admin center tenant-level views are available in all supported regions in the public cloud. This feature is not yet available in other sovereign clouds. 
+
 
  
 
