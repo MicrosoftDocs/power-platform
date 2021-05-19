@@ -67,6 +67,6 @@ You can obtain a standalone Power Virtual Agents subscription from the Microsoft
 
 
 ## Other subscriptions that include Power Virtual Agents
-Entitlements for Power Virtual Agents are included in Digital Messaging and Chat add-ons for Dynamics 365 Customer Service. For more information, see the [Dynamics 365 Licensing Guide](http://go.microsoft.com/fwlink/?LinkId=866544&usg=AOvVaw31TJQMIji481LIHcfzy3Qw).
+Entitlements for Power Virtual Agents are included in Digital Messaging and Chat add-ons for Dynamics 365 Customer Service. For more information, see the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&usg=AOvVaw31TJQMIji481LIHcfzy3Qw).
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
