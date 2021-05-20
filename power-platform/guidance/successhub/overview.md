@@ -23,9 +23,9 @@ Power Apps and Microsoft Power Platform empower individuals in an organization t
 
 At Microsoft, multiple subdivisions focus on specific products and services. One of these is the Digital Transformation Platform (DTP), which is focused on Dynamics 365 and Microsoft Power Platform. DTP has more than 15,000 people who have custom needs of their own. The Success Hub platform enables digitization for DTP, and Microsoft Central IT plays the role of a Center of Excellence, enabling the Microsoft Power Platform governance and environment strategy for all of Microsoft.
 
-:::image type="complex" source="media/successhub-org-chart.png" alt-text="Org chart showing Success Hub supports the DTP group.":::
+:::image type="complex" border="false" source="media/successhub-org-chart.png" alt-text="Org chart showing Success Hub supports the DTP group.":::
 Org chart showing various groups reporting into Microsoft Corporation, which is supported by Central IT. Success Hub supports the DTP group.
-border="false" :::image-end:::
+:::image-end:::
 
 ## What is Success Hub?
 
