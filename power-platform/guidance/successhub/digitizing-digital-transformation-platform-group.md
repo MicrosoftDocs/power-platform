@@ -5,7 +5,7 @@ author: kathyos
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/19/2021
+ms.date: 05/20/2021
 ms.author: kathyos
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -19,19 +19,22 @@ search.app:
 
 To holistically digitize a large organization like the Digital Transformation Platform (DTP) at Microsoft, we need to automate all four aspects of the digital feedback loop.
 
-> [!div class="mx-imgBorder"] 
-> ![Diagram showing cloud data and AI in the center, interacting with the four aspects of the feedback loop described in the following list](media/successhub-digital-feedback-loop.png "Digital feedback loop")
+![Digital feedback loop](media/successhub-digital-feedback-loop.png "Digital feedback loop")
 
 - **Transforming** products to enhance our offerings&mdash;for example, publishing release notes about upcoming release wave deliverables.
 - **Engaging** with customers and partners to boost business growth&mdash;for example, customer engagements and taking feedback and ideas from customers. 
 - **Empowering** our own people to improve our organization's performance.
 - **Optimizing** business operations to achieve better efficiency&mdash;for example, by automating business reviews.
 
+Here is an example of apps developed on Success Hub; bringing the digital feedback loop to reality in our organization.
+
+![Digitally transforming DTP](media/successhub-digitally-transforming-dtp.png "Digitally transforming DTP")  
+
 ## Workstreams and personas
 
 To digitize all four aspects of the feedback loop, we divide our apps into various workstreams. Each workstream is focused on a specific persona, as shown in the following image.
 
-:::image type="content" source="media/successhub-persona-focused-workstreams.png" alt-text="Diagram showing five persona-focused workstreams: DevOps, ProductOps, Customers & Partners, Community, and BizOps":::
+:::image type="content" source="media/successhub-persona-focused-workstreams.png" alt-text="Diagram showing five persona-focused workstreams: DevOps, ProductOps, Customers & Partners, Community, and BizOps" border="false":::
 
 The following image shows how 35 apps are modeled across these five workstreams.
 
@@ -64,12 +67,12 @@ The challenge of the co-development model is to enable everyone to co-develop, a
 Whenever any major changes are requested for an app, it needs to go through the following five steps to get into production.
 
 1. Scope alignment: Review high-level user experience and schema changes. 
-2. Update Microsoft ActiveX Data Objects (ADO): Add feature and user stories, and update them with schema changes. 
+2. Update Microsoft Azure DevOps: Add feature and user stories, and update them with schema changes. 
 3. Partner approval: Approval mail sent to affected stakeholders. 
 4. Workstream lead sign-off: Sign-off on the changes by the workstream leads. 
 5. Changes deployed: PR reviews and verifies schema changes and work items.
 
-Because we have about 35 apps working on the platform, it's not scalable for us to review all the changes. Some changes&mdash;for example, changing the color of a text box&mdash;might not affect any other app, and those are tagged as small scope; it's optional for the app teams to review them with the Success Hub team. Our main focus is to assess any changes associated with tables.
+Because we have about 35 apps working on the platform, it's not scalable for us to review all the changes. Some changes&mdash;for example, adding an icon for a custom table or changing the sorting in a custom view for a custom table&mdash;might not affect any other app, and those are tagged as small scope; it's optional for the app teams to review them with the Success Hub team. Our main focus is to assess any changes associated with tables.
 
 We're interested in knowing when teams make the following types of changes around tables:
 
