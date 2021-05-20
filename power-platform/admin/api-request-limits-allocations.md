@@ -27,12 +27,12 @@ Requests in Microsoft Power Platform consist of various actions that a user make
 - **Power Apps** – all API requests to connectors and Microsoft Dataverse.
 - **Power Automate** – all API requests to connectors, process advisor analyses, HTTP actions, and built-in actions from initializing variables to a simple compose action. Both succeeded and failed actions count towards these limits. Additionally, retries and other requests from pagination count as action executions as well. 
 - **Power Virtual Agents** - API requests (or calls) to Power Automate flows from within a chatbot conversation.
-- **Dataverse (formerly Common Data Service)** – all create, read, update, and delete (CRUD), assign, and share operations including user-driven and internal system requests required to complete CRUD transactions, as well as special operations like share or assign. These can be from any client or application and using any endpoint (SOAP or REST). These include, but are not limited to, plug-ins, classic workflows, and custom controls making the earlier-mentioned operations.
+- **Dataverse (formerly Common Data Service)** – all create, read, update, and delete (CRUD), assign, and share operations including user-driven and internal system requests required to complete CRUD transactions, and special operations like share or assign. These can be from any client or application and using any endpoint (SOAP or REST). These include, but are not limited to, plug-ins, classic workflows, and custom controls making the earlier-mentioned operations.
 
 > [!NOTE]
 > For Dataverse, there is a small set of system internal operations that are excluded from limits, such as login, logout, and system metadata operations.
 
-The table below will describe the common requests limits as well as the allocation that a user gets based on the type of license assigned to the user.
+The table below will describe the common requests limits, and the allocation that a user gets based on the type of license assigned to the user.
 
 ## Request limits based on user licenses
 
@@ -64,7 +64,7 @@ If a user has multiple licenses allocated within the same product line, for exam
 
 ## Power Apps and Power Automate capacity add-on
 
-A Power Apps and Power Automate capacity add-on allows customers to increase the limits for a given user. These will be assignable to any user who has a Power Apps or Power Automate license as well as a Dynamics 365 license. 
+A Power Apps and Power Automate capacity add-on allows customers to increase the limits for a given user. These will be assignable to any user who has a Power Apps or Power Automate license and a Dynamics 365 license. 
 
 Each capacity add-on raises the request limits by another 10,000 per 24 hours. Multiple capacity add-ons can also be assigned to the same user.
 
