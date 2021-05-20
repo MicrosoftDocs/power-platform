@@ -25,6 +25,13 @@ Admins and IT professionals can use this information to prepare for future relea
 > "Deprecated" means we intend to remove the feature or capability from a future major release. The feature or capability will continue to work and is fully supported until it is officially removed. This deprecation
 notification can span a few months or years. After removal, the feature or capability no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
 
+
+## The Analyze section, in mobile offline profiles is deprecated
+
+Effective September 2021, the **Analyze** action and the **Offline profile** report that is used to configure mobile offline profiles is deprecated. 
+The Analyze feature is being removed due to Cross-Site Scripts (XSS) vulnerabilities. The report is used to identify components that aren't available when your working in offline mode. The capabilities will be re-imagined as part of the ongoing enhancements of the mobile offline configuration experience. There is no action required by you.
+
+
 ## Skype integration with customer engagement apps is deprecated
 
 Effective July 2019, Skype integration feature with customer engagement apps has been deprecated and is no longer supported after July 31, 2021. Skype is retired on July 31, 2021; more information: [Skype for Business Online retirement - Microsoft Teams](https://docs.microsoft.com/microsoftteams/skype-for-business-online-retirement)
