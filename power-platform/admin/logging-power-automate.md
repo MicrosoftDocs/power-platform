@@ -43,7 +43,7 @@ Power Platform admins can search the **Audit** screen for details from the fol
 - Power Automate
 - Dataverse.
 
-Administrators can filter for specific activities via the **Activities** list. You will find the Power Automate activities within this list.
+Admins can filter for specific activities via the **Activities** list. You'll find the Power Automate activities in this list.
 
 ## See audited events
 
@@ -51,13 +51,13 @@ All logging is done at the SDK layer, so a single action can trigger multiple lo
 
 Event | Description
 -|-
-|Created flow | The time a flow was created|
+|Created flow | The time a flow is created|
 |Edited flow | Any updates made to the flow|
-|Deleted flow | When the flow was deleted|
+|Deleted flow | When the flow is deleted|
 |Edited permissions | Every time a user's permissions to the flow changes|
 |Deleted permissions | Every time a user's permissions to the flow is removed|
-|Started a paid trial | When the user starts a paid trial|
-|Renewed a paid trial | When the user renews a paid trial|
+|Started a paid trial | When a user starts a paid trial|
+|Renewed a paid trial | When a user renews a paid trial|
 
 
 ## Get details on base schema for logging
@@ -67,11 +67,11 @@ Schemas define the Power Automate fields that are sent to the Microsoft 365 comp
 Field display name | Logical name | Type | Mandatory | Description
 -|-|-|-|-
 Date | CreationTime | Edm.Date | No | Date and time when the log was generated in UTC
-Flow details | FlowDetailsUrl | Edm.String | No | Link to the flow’s details page
+Flow details | FlowDetailsUrl | Edm. String | No | Link to the flow’s details page
 IP address | ClientIP | Edm.String | No | IP address of the user’s device
-Id | Id | Edm.Guid | No | A unique GUID for every row logged
+ID | ID | Edm.Guid | No | A unique GUID for every row logged
 Result status | ResultStatus | Edm.String | No | Status of the row logged
-Organization Id | OrganizationId | Edm.Guid | Yes | A unique identifier of the organization from which the log was generated
+Organization ID | OrganizationId | Edm.Guid | Yes | A unique identifier of the organization from which the log was generated
 Operation | Operation | Edm.String | No | Name of an operation
 Workload | Workload | Edm.String | No | Workload of an operation
 User | UserKey | Edm.String | No | A unique identifier of the user in Azure AD
@@ -79,9 +79,9 @@ User type | UserType | Edm.String | No | The audit type (admin, regular, or syst
 Flow connector names | FlowConnectorNames | Edm.String | No | Connector names listed in the flow
 SharingPermission | SharingPermission | Edm.String | No | Type of permission shared with another user (3 = “Owner”) (CONFIRM)
 Recipient UPN | RecipientUPN | Edm.String | No | If permission was updated, shows the UPN of the permission recipient
-Additional info | Additional information if any, for example, the environment name)
+Additional info | More information, for example, the environment name)
 
 
 ## Limitations
 
-Only activity from cloud flows is recorded in the Microsoft Compliance Center. Activity for desktop flows is recorded in the Microsoft Dataverse audit logs.
+Only activity from cloud flows is recorded in the Microsoft Compliance Center. Recorded activity for desktop flows is in the Microsoft Dataverse audit logs.
