@@ -25,7 +25,7 @@ Effective October 2019, to help ensure service levels, availability, and quality
 Requests in Microsoft Power Platform consist of various actions that a user makes across various products. At a high level, below is what constitute an API request:
 
 - **Power Apps** – all API requests to connectors and Microsoft Dataverse.
-- **Power Automate** – all API requests to connectors, process advisor analyses, HTTP actions, and built-in actions from initializing variables to a simple compose action. Both succeeded and failed actions count towards these limits. Additionally, retries and additional requests from pagination count as action executions as well. 
+- **Power Automate** – all API requests to connectors, process advisor analyses, HTTP actions, and built-in actions from initializing variables to a simple compose action. Both succeeded and failed actions count towards these limits. Additionally, retries and other requests from pagination count as action executions as well. 
 - **Power Virtual Agents** - API requests (or calls) to Power Automate flows from within a chatbot conversation.
 - **Dataverse (formerly Common Data Service)** – all create, read, update, and delete (CRUD), assign, and share operations including user-driven and internal system requests required to complete CRUD transactions, as well as special operations like share or assign. These can be from any client or application and using any endpoint (SOAP or REST). These include, but are not limited to, plug-ins, classic workflows, and custom controls making the earlier-mentioned operations.
 
@@ -66,14 +66,14 @@ If a user has multiple licenses allocated within the same product line, for exam
 
 A Power Apps and Power Automate capacity add-on allows customers to increase the limits for a given user. These will be assignable to any user who has a Power Apps or Power Automate license as well as a Dynamics 365 license. 
 
-Each capacity add-on raises the request limits by an additional 10,000 per 24 hours. Multiple capacity add-ons can also be assigned to the same user.
+Each capacity add-on raises the request limits by another 10,000 per 24 hours. Multiple capacity add-ons can also be assigned to the same user.
 
 > [!NOTE] 
 > Currently, capacity add-ons cannot be assigned to users (including application, administrative, and non-interactive users), because of the transition period (see [FAQ](#will-there-be-a-transition-period-for-existing-customers)) below. Assignment will be supported once the transition period ends.
 
 ## Requests limits not based on licensed users or flows
 
-The Dataverse provides the ability to have identities that do not require any user license to interact with the service. There are four types of
+The Dataverse enables you to have identities that do not require any user license to interact with the service. There are four types of
 these users:
 
 -   [Application users](create-users-assign-online-security-roles.md#create-an-application-user)
@@ -81,7 +81,7 @@ these users:
 -   [Administrative users](create-users-assign-online-security-roles.md#create-an-administrative-user-account)
 -   [SYSTEM user](/dynamics365/customer-engagement/web-api/systemuser?view=dynamics-ce-odata-9#operations)
 
-Additionally there are special free (\$0) licenses which are used to interact with Dynamics 365 applications like Dynamics 365 Marketing. See [How Marketing is licensed](/dynamics365/customer-engagement/marketing/purchase-setup#how-marketing-is-licensed).
+Additionally there are special free (\$0) licenses, which are used to interact with Dynamics 365 applications like Dynamics 365 Marketing. See [How Marketing is licensed](/dynamics365/customer-engagement/marketing/purchase-setup#how-marketing-is-licensed).
 
 For these identities, every tenant will get base request capacity per tenant that can only be used by these users and not by users with standard licenses.
 
@@ -161,7 +161,7 @@ No. Tenant level limits are shared across all application users, non-interactive
 
 ### Do the requests generated from classic Dataverse workflows and plug-ins in Dataverse count against the request limits?
 
-Yes, if these requests are making CRUD, assign, or share&ndash;type requests, they will count. In the case of classic workflows, this includes actions such as checking conditions, starting child workflows or stopping workflows. However, requests generated internally from the platform aren't counted, such as: sdkmessagerequest, solutioncomponentdefinition, and ribbonclientmetadatareporting.
+Yes, if these requests are making CRUD, assign, or share&ndash;type requests, they will count. In the case of classic workflows, this includes actions such as checking conditions, starting child workflows, or stopping workflows. However, requests generated internally from the platform aren't counted, such as: sdkmessagerequest, solutioncomponentdefinition, and ribbonclientmetadatareporting.
 
 ### Should I use a third-party data integration tool instead of Power Automate to avoid hitting my limits?
 
