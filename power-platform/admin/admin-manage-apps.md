@@ -53,6 +53,9 @@ Admins can do the following from the Power Platform admin center:
 
 Power Apps respects the Canvas App ‘Share’ privilege in Dataverse. A user will not be able to share canvas apps in an environment if they do not have a security role with the Canvas App Share privilege set to a value other than ‘None selected’. This Dataverse Canvas App Share privilege is also respected in the default environment. [This article outlines how to edit a privileges in a security role](https://docs.microsoft.com/power-platform/admin/create-edit-security-role#edit-a-security-role).
 
+   > [!div class="mx-imgBorder"] 
+   > ![Dataverse Canvas App privileges](media/admin-manage-apps/dataverse_canvas_app_entity_share_privilege.png "Dataverse Canvas App entity privileges")
+
 > [!NOTE]
 > The ability to granularly control the Canvas App Share privilege in a security role requires Dataverse in the environment where the privilege is to be changed. Power Apps does not discretely recognize the other Dataverse Canvas app entity privileges set for the environment. 
 
