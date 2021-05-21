@@ -80,9 +80,6 @@ You can remove a bot from Omnichannel for Customer Service by disconnecting the 
 
     :::image type="content" source="media/configuration-hand-off-omnichannel/disconnect-omnichannel.png" alt-text="Screenshot of the Transfer to agent page in Power Virtual Agents where you can select the Disconnect button to remove the connection.":::
 
-## Content display issues
-Some content may not show, such as emojis and certain types of notes or variables. If you encounter problems with the display of content, see the [Omnichannel for Customer Service documentation library](/dynamics365/omnichannel/omnichannel-readme).
-
 
 ## Known limitations
 See [Known limitations when using Power Virtual Agents with Omnichannel for Customer Service](/dynamics365/omnichannel/administrator/configure-bot-virtual-agent#known-limitations) for more information.
