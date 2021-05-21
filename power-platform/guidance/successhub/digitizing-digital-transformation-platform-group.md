@@ -38,7 +38,7 @@ To digitize all four aspects of the feedback loop, we divide our apps into vario
 
 The following image shows how 35 apps are modeled across these five workstreams.
 
-:::image type="complex" source="media/successhub-apps-modelled-across-workstreams.png" alt-text="Apps modeled across workstreams":::
+:::image type="complex" border="false" source="media/successhub-apps-modelled-across-workstreams.png" alt-text="Apps modeled across workstreams":::
 Five workstreams listed, each with business apps. Platform and Fundamentals list - Data quality, Schema, Usability, etc. Livesite and Ops list - Monitoring and telemetry, Support, Deploy and test, Maintenance upgrades.
 :::image-end:::
 
