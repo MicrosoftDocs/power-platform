@@ -99,12 +99,12 @@ You then need to redirect the app registration to point to your custom canvas.
     ![Screenshot showing the registration form](media/sso-new-registration-details.png "Screenshot showing the registration form")
 
 
-
+1. After the registration is completed, it will open to the **Overview** page. Go to **Manifest**. Confirm that `accessTokenAcceptedVersion` is set to `2`. If it isn't, change it to `2` and then select **Save**.
 
 
 **Add the redirect URL**
 
-1. After the registration is completed, it will open to the **Overview** page. Go to **Authentication** and then select **Add a platform**.
+1. With the registration open, go to **Authentication** and then select **Add a platform**.
 
 
     ![Screenshot showing Add a platform under Authentication](media/sso-authentication.png "Screenshot showing Add a platform under Authentication")
