@@ -21,7 +21,7 @@ Power Virtual Agents supports single sign-on (SSO), which means chatbots can sig
 For example, the bot is hosted on the corporate intranet or in an app that the user is already signed in to.
 
 >[!IMPORTANT] 
->SSO is only supported for Azure Active Directory (Azure AD). Other account types such as Microsoft Account or other OAuth accounts are not supported for SSO in Power Virtual Agents.  
+>SSO is only supported for Azure Active Directory (Azure AD) V2. Other account types such as Microsoft Account or other OAuth accounts are not supported for SSO in Power Virtual Agents.  
 >You can suggest support for additional account types [at the Power Virtual Agents ideas forum](https://powerusers.microsoft.com/t5/Power-Virtual-Agents-Ideas/idb-p/pva_ideas).
 
 >[!IMPORTANT] 
@@ -90,6 +90,9 @@ You then need to redirect the app registration to point to your custom canvas.
   For example, if your bot is called "Contoso sales help", you might name the app registration as "ContosoSalesCanvas" or something similar. 
 
 1. Select **Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts (for example Skype, Xbox)**.
+
+  > [!IMPORTANT]
+  > You must select **Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts (for example Skype, Xbox)**. Any other option will cause single sign-on to fail.
 
 1. Leave the **Redirect URI** section blank for now, as you'll enter that information in the next steps. Select **Register**.
 
