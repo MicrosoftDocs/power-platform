@@ -4,7 +4,7 @@ description: "Icons for use in building architecture diagrams and illustrations 
 author: KumarVivek
 ms.service: power-platform
 ms.topic: conceptual
-ms.date: 04/28/2021
+ms.date: 05/21/2021
 ms.author: kvivek
 ms.reviewer: kvivek
 ---
@@ -16,14 +16,14 @@ This article provides information about the official collection of icons for Mic
 ### Do’s
 
 - Use the icon to illustrate how products can work together
-- In diagrams, we recommend to include the product name somewhere close to the icon
+- In diagrams, we recommend including the product name somewhere close to the icon
 - Use the icons as they would appear within Microsoft Power Platform or individual products (Power Apps, Power Automate, Power BI, and Power Virtual Agents)
 
 ### Don’ts
 
-* Don’t crop, flip or rotate icons
-* Don’t distort or change icon shape in any way
-* Don’t use Microsoft product icons to represent your product or service
+- Don’t crop, flip, or rotate icons
+- Don’t distort or change icon shape in any way
+- Don’t use Microsoft product icons to represent your product or service
 
 ## Icon updates
 
@@ -45,5 +45,5 @@ I agree to the above terms
 
 ### See also
 
-[Azure icons](https://docs.microsoft.com/azure/architecture/icons)<br/>
-[Dynamics 365 icons](https://docs.microsoft.com/dynamics365)
+[Azure icons](/azure/architecture/icons)<br/>
+[Dynamics 365 icons](/dynamics365/get-started/icons)
