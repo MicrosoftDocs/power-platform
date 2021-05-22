@@ -54,11 +54,11 @@ See [Create and manage environments in the Power Platform admin center](create-e
 
 ## Reset a sandbox environment  
 
-Reset a sandbox environment to delete and re-provision it. Consider a reset when you want to:  
+Reset a sandbox environment to delete and reprovision it. Consider a reset when you want to:  
   
 - Create a new project  
 - Free up storage space  
-- Remove an environment containing Personally Identifiable Information (PII) data  
+- Remove an environment containing personal data  
   
 > [!IMPORTANT]
 > - You can only reset sandbox environments. 
@@ -66,9 +66,9 @@ Reset a sandbox environment to delete and re-provision it. Consider a reset when
 
  **An example scenario**  
   
- Thomas is looking at the storage consumed by the various Contoso environments and is getting concerned that they'll run out of space in one of their production environments.  He'd like to free up some space so he can give the production environment some additional storage.  He's also been notified that the Legal department has set a retention policy on the use of production data in the test environment.  
+  Thomas is looking at the storage consumed by the various Contoso environments. He is getting concerned that they'll run out of space in one of their production environments.  Thomas also wants to free up some space so that he can give the production environment some extra storage.  He's also been notified that the Legal department has a retention policy regarding the use of production data in test environments.  
   
- After contacting Isaac, Thomas resets the Sales department's complete sandbox environment. The environment is re-provisioned to factory settings and ready for future use as a sandbox environment for a future project.  
+ After contacting Elisa, Thomas resets the Sales department's complete sandbox environment. The environment has been reprovisioned to factory settings. It's now ready for future use as a sandbox environment for a future project.  
  
 ### To reset an environment  
 
@@ -96,7 +96,9 @@ The reset process starts.
   
 ## Administration mode  
 
- When you place a sandbox environment in administration mode only users with System Administrator or System Customizer security roles will be able to sign in to that environment. Administration mode is useful when you want to make operational changes and not have regular users affect your work, and not have your work affect regular users.  
+ When you place a sandbox environment in administration mode, only users with System Administrator or System Customizer security roles are able to sign in to that environment.
+ 
+ Administration mode is useful when you want to make operational changes and not have regular users affect your work, and not have your work affect regular users.  
 
 See [Administration mode](admin-mode.md).
 

@@ -1,7 +1,7 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps"
 description: Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps 
-ms.date: 04/21/2021
+ms.date: 05/06/2021
 ms.topic: "article"
 ms.assetid: 994cc854-17f6-45d6-bc20-fcf1a3f2d6d6
 searchScope:
@@ -17,21 +17,28 @@ manager: annbe
 Important changes (deprecations) coming in Power Apps, Power Automate, and customer engagement apps
 ============================================================
 
-The announcements and deprecations described in this article apply to Power Apps, Power Automate, and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Marketing, Dynamics 365 Field Service, and Dynamics 365 Project Service Automation).
+The announcements and deprecations described in this article apply to Power Apps, Power Automate, and customer engagement apps. Engagement apps include Dynamics 365 Sales, Dynamics 365 Marketing, Dynamics 365 Field Service, and Dynamics 365 Project Service Automation.
 
-Administrators and IT professionals should use this information to prepare for future releases. This article was first published on June 27, 2017.
+Admins and IT professionals can use this information to prepare for future releases. This article was first published on June 27, 2017.
 
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future major release. The feature or capability will continue to work and is fully supported until it is officially removed. This deprecation
-notification can span a few months or years. After removal, the feature or capability will no longer work. We are notifying you now so you have sufficient time to plan and update your code before the feature or capability is removed.
+notification can span a few months or years. After removal, the feature or capability no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
+
+
+## The Analyze section, in mobile offline profiles is deprecated
+
+Effective September 2021, the **Analyze** action and the **Offline profile** report that is used to configure mobile offline profiles is deprecated. 
+The Analyze feature is being removed due to Cross-Site Scripts (XSS) vulnerabilities. The report is used to identify components that aren't available when your working in offline mode. The capabilities will be re-imagined as part of the ongoing enhancements of the mobile offline configuration experience. There is no action required by you.
+
 
 ## Skype integration with customer engagement apps is deprecated
 
-Effective July 2019, Skype integration feature with customer engagement apps has been deprecated and will no longer be supported after July 31 2021. This is because Skype will be retired on July 31, 2021; more information: [Skype for Business Online retirement - Microsoft Teams](https://docs.microsoft.com/microsoftteams/skype-for-business-online-retirement)
+Effective July 2019, Skype integration feature with customer engagement apps has been deprecated and is no longer supported after July 31, 2021. Skype is retired on July 31, 2021; more information: [Skype for Business Online retirement - Microsoft Teams](https://docs.microsoft.com/microsoftteams/skype-for-business-online-retirement)
 
-The presence indication backed by Skype for Business will cease to function. This includes presence indication in hover cards, lookup fields, and lookup columns in grids. There are currently plans to support these locations via Teams. In the meantime, presence indication can be found in Live Person Cards.
+The presence indication backed by Skype for Business will no longer function. This deprication includes presence indication in hover cards, lookup fields, and lookup columns in grids. There are currently plans to support these locations via Teams. In the meantime, presence indication can be found in Live Person Cards.
 
-You should plan to transition to Microsoft Teams because the Team’s capabilities go beyond those of Skype for Business Online, and is the next chapter in enterprise communication solution from Microsoft. For more details about Teams capabilities and how it’s better than Skype, see [The Total Economic Impact™ of Microsoft Teams](https://www.microsoft.com/microsoft-365/blog/wp-content/uploads/sites/2/2019/04/Total-Economic-Impact-Microsoft-Teams.pdf?rtc=1).
+You should plan to transition to Microsoft Teams, because the Team’s capabilities go beyond those of Skype for Business Online. Teams is the next chapter in enterprise communication solution from Microsoft. For more details about Teams capabilities, see [The Total Economic Impact™ of Microsoft Teams](https://www.microsoft.com/microsoft-365/blog/wp-content/uploads/sites/2/2019/04/Total-Economic-Impact-Microsoft-Teams.pdf?rtc=1).
 
 
 ## Low-density headers in model-driven apps won't be supported with the 2021 release wave 2
@@ -41,22 +48,22 @@ With the upcoming 2021 release wave 2 (public preview in August 2021 and GA in O
 #### Why is this needed?
 
 - Makers have moved away from low-density headers and usage is low. 
-- Low-density headers don't promote a highly dense experience and require users to always use the flyout for all controls across view-port sizes (small to very-wide) 
+- Low-density headers don't promote a highly dense experience and require users to always use the flyout for all controls across view-port sizes from small to very-wide.
 
 #### Impact
-Any current form that is configured to be “low-density” will be automatically updated to render in a [high-density with flyout](/powerapps/maker/model-driven-apps/form-designer-header-properties#high-density-header-flyout) mode in a model driven app. Here is an example of high-density header with flyout:
+Any current form that is configured to be “low-density” is automatically updated to render in a [high-density with flyout]((/powerapps/maker/model-driven-apps/form-designer-header-properties#high-density-header-flyout) mode in a model driven app. Below is an example of high-density header with flyout:
 
 > [!div class="mx-imgBorder"] 
 > ![Header flyout with high-density header](media/form-header-flyout-high-density.png "Header flyout with high-density header")
 
 #### Action required by you
 
-To meet the October 2021 deadline, you will need to update any of your forms from a low-density format to a high-density with flyout mode using the modern form designer. More information: [Configure header density](/powerapps/maker/model-driven-apps/form-designer-header-properties#configuring-header-density). 
+To meet the October 2021 deadline, be sure you update any of your forms from a low-density format to a high-density with flyout mode using the modern form designer. More information: [Configure header density](/powerapps/maker/model-driven-apps/form-designer-header-properties#configuring-header-density). 
 
-If you don't make this change, the form will no longer honor this setting at runtime, and will default to high-density with flyout.
+If you don't make this change, the form no longer honors this setting at runtime. It also defaults to high-density with flyout.
 
 
-## Form footers in model-driven app won't be supported with the 2021 release wave 2
+## Form footers in model-driven apps won't be supported with the 2021 release wave 2
 
 With the upcoming 2021 release wave 2 (public preview in August 2021 and GA in October 2021), form footers won't be supported in a model-driven app form. 
 
@@ -73,12 +80,12 @@ With the upcoming 2021 release wave 2 (public preview in August 2021 and GA in O
 Main forms will no longer include the footer when a record is opened. Any out of box or custom controls that have been added to the form footer will no longer be available and you'll need to remove the fields if they are no longer necessary or move the fields to the header and use the [high-density header with flyout](/powerapps/maker/model-driven-apps/form-designer-header-properties#high-density-header-flyout) or add them onto the main form. The recommended approach is to move fields that users need to access regardless of the form tab a user is on to the header and set it to use the [high-density header with flyout](/powerapps/maker/model-driven-apps/form-designer-header-properties#high-density-header-flyout).  If there is only one tab, the recommendation is to move them into a new section on the form. 
 
 #### Action required by you
-- To meet the October 2021 deadline, you will need to move fields or controls added to a form footer to either the header or a section on the form.
-- If you do nothing, the footer fields or controls that you have added will no longer render on the form and will not be available to your users. 
+- To meet the October 2021 deadline, be sure you move fields or controls added to a form footer to either the header or a section on the form.
+- If you do nothing, the footer fields or controls that you have added no longer render on the form and aren't available to users. 
 
-The out of box fields currently on the footer will be removed and included on the form as part of the 2021 release wave 2 updates. So, you will not lose status, unsaved changes or the option to open a form in a new window. The **Save** option is already available in the command bar and is always visible to the user. 
+The out of box fields currently on the footer is removed and included on the form as part of the 2021 release wave 2 updates. So, you don't lose status, unsaved changes, or the option to open a form in a new window. The **Save** option is already available in the command bar and is always visible to the user. 
 
-While we understand that these types of changes can be disruptive for makers that use the footer today, we always evaluate the experiences to ensure they provide a modern experience that improves usability, support accessibility requirements, and improves discoverability for highly used fields and controls on a page.
+While we understand that these types of changes can be disruptive for makers that use the footer today, we always evaluate the experiences. We do this to ensure they provide a modern experience that improves usability, support accessibility requirements, and improves discoverability for highly used fields and controls on a page.
 
 ## Model-driven app controls deprecation
 
@@ -108,9 +115,11 @@ The Microsoft Dynamics 365 Email Router will no longer function on April 21, 202
 
 ## The Microsoft Dynamics 365 application for Windows is deprecated
 
-Effective April 2021, the [Microsoft Dynamics 365 app for Windows](https://go.microsoft.com/fwlink/?linkid=838618) that lets you run customer engagement apps (such as Dynamics 365 Sales, Dynamics 365 Customer Service, and Dynamics 365 Marketing) is deprecated. Microsoft will continue to provide security and other critical updates for the [Microsoft Dynamics 365 app for Windows](https://go.microsoft.com/fwlink/?linkid=838618) until January 29, 2021, but will not release any another features or functionalities for the app. After April 1, 2021, the app will be removed from the Microsoft Store, and it will not be supported. 
+Effective April 2021, the [Microsoft Dynamics 365 app for Windows](https://go.microsoft.com/fwlink/?linkid=838618) that lets you run customer engagement apps (such as Dynamics 365 Sales, Dynamics 365 Customer Service, and Dynamics 365 Marketing) has been deprecated. 
+
+Microsoft continues to provide security and other critical updates for the Microsoft Dynamics 365 app for Windows until January 29, 2021. We won't release any other features or functionalities for the app. After April 1, 2021, the app is removed from the Microsoft Store, and is no longer supported. 
  
-We recommend that you start using your web browser as soon as possible to run your customer engagement apps (such as Dynamics 365 Sales, Dynamics 365 Customer Service, and Dynamics 365 Marketing) on Windows to take advantage of the ongoing improvements for the web app.
+We recommend that you start using your web browser as soon as possible to run your customer engagement apps, such as Dynamics 365 Sales, Dynamics 365 Customer Service, and Dynamics 365 Marketing. Run them on Windows to take advantage of the ongoing improvements for the web app.
 
 ## Internet Explorer 11 support for Dynamics 365 and Microsoft Power Platform is deprecated
 
@@ -122,7 +131,7 @@ If you have more questions, contact your Microsoft Customer Service representati
 
 ## Organization data download filters for mobile offline are deprecated 
 
-Effective February 2021, **Organization data download filter** option that filters the data when you set up mobile offline are deprecated. We recommend that you start preparing your organization and move relevant data filters from **Organization data download filter** to the offline profile option, which lets you determine what data will be available when users work in offline mode. For more information, see [Create a mobile offline profile](/dynamics365/mobile-app/preview-setup-mobile-offline#step-2-create-a-mobile-offline-profile-to-determine-what-data-will-be-available-while-offline). Once the old filter criteria has been moved to offline profile, you can clear or delete the filters set in **Organization data download filter**. 
+Effective February 2021, **Organization data download filter** option that filters the data when you set up mobile offline are deprecated. We recommend that you start preparing your organization and move relevant data filters from **Organization data download filter** to the offline profile option, which lets you determine what data is available when users work in offline mode. For more information, see [Create a mobile offline synchronization](/dynamics365/mobile-app/preview-setup-mobile-offline#step-2-create-a-mobile-offline-profile-to-determine-what-data-will-be-available-while-offline). Once the old filter criteria has been moved to offline profile, you can clear or delete the filters set in **Organization data download filter**. 
 
 ## TLS RSA cipher suites are deprecated
 
@@ -162,7 +171,7 @@ Effective July 10, 2020, the [Company News Timeline](/dynamics365/company-news-t
 1. To remove the solution, go to **Advanced settings** and select **Solutions**. 
 2. Select **CompanyNewsTimeline** and then select **Delete**. 
 
-As an alternative you can install news Power Apps component framework control. For more information, see [Set up and use the news control](/powerapps/maker/model-driven-apps/stay-current-with-news-control).
+As an alternative you can install news Power Apps component framework control. For more information, see [Set up and use the news control](Set up and use the news control](/powerapps/maker/model-driven-apps/stay-current-with-news-control).
 
 ## Dynamic 365 Sales bot is deprecated
 ----------------------------------------
@@ -211,16 +220,16 @@ After April 24, 2020, customers are encouraged to transition to the new model ve
 ## Dynamic 365 for Outlook is deprecated
 ----------------------------------------
 
-Effective March 2020, the legacy Dynamics 365 for Outlook (also referred to as Outlook COM add-in) is deprecated. Customers must transition to the modern [Dynamics 365 App for Outlook](/dynamics365/outlook-app/overview) before October 1, 2020. Microsoft will continue to provide support, security, and other critical updates to the Outlook COM Add-in until October 1, 2020.
+Effective March 2020, the legacy Dynamics 365 for Outlook (also referred to as Outlook COM add-in) was deprecated, and is no longer available for customer engagement apps (Dynamics 365 Sales, Customer Service, Marketing, and Field Service). Use the modern [Dynamics 365 App for Outlook](/dynamics365/outlook-app/overview) instead.
 
-For further information and steps to make a smooth transition, download [Dynamics 365 for Outlook (COM add-in) Playbook](https://aka.ms/OutlookCOMPlaybook)
+[Dynamics 365 Customer Engagement (on-premises)](/dynamics365/customerengagement/on-premises/overview) users can continue to use the legacy Dynamics 365 for Outlook. However, we recommend that you transition to the modern Dynamics 365 App for Outlook at the earliest. For information and steps to make a smooth transition, download [Dynamics 365 for Outlook (COM add-in) Playbook](https://aka.ms/OutlookCOMPlaybook).
 
 ## Dynamics 365 Home is deprecated 
 ------------------------------------------------------
 
-Effective March 2020, the home page for Dynamics 365 applications (https://home.dynamics.com) is deprecated and won't be available on or after May 2021. The Microsoft 365 apps page (https://www.office.com/apps) will replace it and provide users with a single page for productivity and business applications.  
+Effective March 2020, the home page for Dynamics 365 applications (https://home.dynamics.com) is deprecated and won't be available on or after June 30, 2021. The Microsoft 365 apps page (https://www.office.com/apps) will replace it and provide users with a single page for productivity and business applications.  
 
-Dynamics 365 Home users will see notification about the new location and recommendation to change browser bookmarks starting October 1, 2020. On or after April 1, 2021, users will no longer be able to navigate to <https://home.dynamics.com> from the Office 365 applications list or the Office 365 [application launcher](admin/quickly-navigate-office-365-app-launcher.md#quickly-move-between-apps-with-the-app-launcher). After May 2021, users who navigate to <https://home.dynamics.com> will automatically be redirected to <https://www.office.com/apps> with a business application filter applied.
+Dynamics 365 Home users will see notification about the new location and recommendation to change browser bookmarks starting October 1, 2020. On or after June 30, 2021, users will no longer be able to navigate to <https://home.dynamics.com> from the Office 365 applications list or the Office 365 [application launcher](admin/quickly-navigate-office-365-app-launcher.md#quickly-move-between-apps-with-the-app-launcher). After June 2021, users who navigate to <https://home.dynamics.com> will see an error page.
 
 More information: <https://aka.ms/business-apps-discovery-docs>  
 
@@ -288,7 +297,7 @@ More information: [Use of Office365 authentication with the WS-Trust security pr
 Regional Discovery Service is deprecated
 ----------------------------------------------------------------------------------------------
 
-Effective March 2, 2020, the *regional* [Discovery Service](/powerapps/developer/common-data-service/org-service/discovery-service) will be deprecated. Microsoft will continue to provide support, security, and other critical updates for the *regional* Discovery Service, but won't release any additional functionality beyond what has already been announced. After April 21, 2021, the *regional* Discovery Service will be shut down.
+Effective March 2, 2020, the *regional* [Discovery Service](/powerapps/developer/common-data-service/org-service/discovery-service) is deprecated. Microsoft will continue to provide support, security, and other critical updates for the *regional* Discovery Service, but won't release any additional functionality beyond what has already been announced. After April 21, 2021, the *regional* Discovery Service will be shut down.
 
 Customers must transition to using the [global OData V4 Discovery Service](/powerapps/developer/common-data-service/webapi/discover-url-organization-web-api#global-discovery-service) before April 21, 2021 so their applications are not impacted. More information: [Modify your code to use global Discovery Service](/powerapps/developer/common-data-service/webapi/discovery-orgsdk-to-webapi).
 
@@ -306,7 +315,7 @@ On December 4, 2020, the legacy web client will no longer be available. Organiza
 
  
 In the coming months, for those that have not already made the transition, we will be sending reminders and scheduling updates to transition customers to Unified Interface prior to December 4, 2020. 
-For further information and steps to make a smooth transition, view our helpful resources and community site: 
+For further information and steps to make a smooth transition, see: 
 
 -   [Unified Interface Community
     Group](https://community.dynamics.com/365/unified-interface/) including a
@@ -400,9 +409,8 @@ EntityMetadata.IsInteractionCentricEnabled property is deprecated
 All entities supported in Unified Interface are now enabled for the interactive experience in the new Customer Service Hub app. This implies that
 the **EntityMetadata**.[IsInteractionCentricEnabled](/dotnet/api/microsoft.xrm.sdk.metadata.entitymetadata.isinteractioncentricenabled)
 property, which indicates whether an entity can be enabled for interactive experience, is no longer relevant. The corresponding setting for this property
-in the Customization tool, **Enable for interactive experience**, is removed, and the
-**EntityMetadata**.[IsInteractionCentricEnabled](/dotnet/api/microsoft.xrm.sdk.metadata.entitymetadata.isinteractioncentricenabled)
-property will be removed from the future version.
+in the Customization tool, **Enable for interactive experience**, is removed, and the 
+**EntityMetadata**.[IsInteractionCentricEnabled](/dotnet/api/microsoft.xrm.sdk.metadata.entitymetadata.isinteractioncentricenabled) property will be removed from the future version.
 
 
 Voice of the Customer is deprecated 
@@ -491,14 +499,7 @@ controls created using the HTML web resources
 with HTML5 to create UI components to visualize and interact with data.
 
 
-## Past deprecations
-
-For information on *past* deprecations, see:
-- [Important changes coming in future releases of Dynamics 365](/previous-versions/dynamicscrm-2016/administering-dynamics-365/dn265924(v=crm.8))
-
-- [Important changes coming in future releases of Dynamics 365 (Developers)](/previous-versions/dynamicscrm-2016/developers-guide/dn281891(v=crm.8))
-
-## Other deprecation articles
+## Release plans
 
 [Removed or deprecated features in Finance and Operations apps](/dynamics365/fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page)
 

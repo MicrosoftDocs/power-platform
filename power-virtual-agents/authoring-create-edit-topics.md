@@ -2,7 +2,7 @@
 title: "Use topics to design a chatbot conversation"
 description: "The authoring canvas provides an intuitive, no-code way of creating a bot that can help answer user questions, perform actions, and solve issues."
 keywords: "PVA"
-ms.date: 9/22/2020
+ms.date: 5/4/2021
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -36,8 +36,7 @@ For example, a user might type "Open hours" into your bot—the AI will be able 
 
 You can see how the bot conversation works in practice by testing it in the **Test bot** pane. This lets you fine-tune the topic until you are ready to deploy it without having to exit the Power Virtual Agents portal.
 
-> [!Note]
-> You can have up to 1,000 topics in a bot.
+For bot and topic limits, see the [Quotas, limits, and configuration values](requirements-quotas.md) topic.
 
 
 ## Prerequisites

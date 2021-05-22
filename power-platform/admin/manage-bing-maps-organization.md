@@ -2,11 +2,10 @@
 title: "Manage Bing Maps for your organizations  | MicrosoftDocs"
 description: Manage Bing Maps for your organization
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date:  03/26/2020
+ms.date:  05/17/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -33,10 +32,14 @@ Learn how you can manage [!INCLUDE[pn_bing_maps](../includes/pn-bing-maps.md)] f
   
 4. Select **Save**.  
 
-## Languages supported for viewing Bing Maps  
+## Languages and regions supported for viewing Bing Maps  
 
- The following table contains a list of all languages supported for viewing [!INCLUDE[pn_bing](../includes/pn-bing.md)] maps. If the language is listed, the [!INCLUDE[pn_bing](../includes/pn-bing.md)] map is shown on the form, such as account, contact or lead, in your language. If the language is not listed, the map is not shown on the form. Instead, the link **Click here to view the map** is provided on the form. When you choose this link, you are taken directly to [!INCLUDE[pn_bing_maps](../includes/pn-bing-maps.md)]. [!INCLUDE[pn_bing_maps](../includes/pn-bing-maps.md)] are not available in all countries, regions, or languages. You may not be able to see the map in your language, if it is not supported by [!INCLUDE[pn_bing_maps](../includes/pn-bing-maps.md)]. For a list of supported languages, countries and regions, see [Bing Maps documentation](/bingmaps/).  
-  
+[!INCLUDE[pn_bing_maps](../includes/pn-bing-maps.md)] are not available in all countries, regions, or languages. When supported, the [!INCLUDE[pn_bing](../includes/pn-bing.md)] map is shown on the form, such as account, contact or lead, in your language. When unsupported, the map is not shown on the form. Instead, the link **Click here to view the map** is provided on the form. When you choose this link, you are taken directly to [!INCLUDE[pn_bing_maps](../includes/pn-bing-maps.md)].
+
+You can configure the language in [Languages tab options](/powerapps/user/set-personal-options#languages-tab-options) and region in [Formats tab options](/powerapps/user/set-personal-options#formats-tab-options).
+
+The following table contains a list of all languages supported for viewing [!INCLUDE[pn_bing](../includes/pn-bing.md)] maps. For a list of supported countries and regions, see [Bing Maps documentation](/bingmaps/).
+
 |Language|Culture code|  
 |--------------|------------------|  
 |Czech|cs-CZ|  
@@ -61,7 +64,7 @@ Learn how you can manage [!INCLUDE[pn_bing_maps](../includes/pn-bing-maps.md)] f
 |Spanish (United States)|es-US|  
 |Spanish (Mexico)|es-MX|  
 |Swedish (Sweden)|sv-SE|  
-  
+
 ## Privacy notice  
 [!INCLUDE[cc_privacy_crm_bing_maps](../includes/cc-privacy-crm-bing-maps.md)]
   

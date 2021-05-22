@@ -99,7 +99,6 @@ In the list of accounts, contacts, or leads, select two records of the same reco
 Follow the instructions from the [Resolve duplicates when creating or updating records](#resolve-duplicates-when-creating-or-updating-records) section of this topic.
 
 ### See also  
-[Enable the improved duplicate detection and merge experience](enable-improved-duplicate-detection.md) <br />
 [Detect duplicate data so you can fix or remove it](detect-duplicate-data.md) <br />
 [Import data (all record types)](../admin/import-data-all-record-types.md) <br />
 [Check for duplicates](set-up-duplicate-detection-rules-keep-data-clean.md)  

@@ -31,7 +31,7 @@ A new environment variable to specify an Approval Admin has been added.
 
 ## Cloud flows
 
-All flows have been updated to use the Common Data Service (current environment) connector for reliability and performance improvements.
+All flows have been updated to use the Microsoft Dataverse (current environment) connector for reliability and performance improvements.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
