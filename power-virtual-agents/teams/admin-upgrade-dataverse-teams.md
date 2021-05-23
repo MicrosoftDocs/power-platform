@@ -40,7 +40,7 @@ During the upgrade, users will experience issues if they try to chat with your b
 
 After an environment has been successfully upgraded, users can continue to edit bots in the Power Virtual Agents for Teams app.
 
-Users can also choose to edit the bot in the Power Virtual Agents web app at [https://web.powerva.microsoft.com](https://powerva.microsoft.com).
+Users can also choose to edit the bot in the Power Virtual Agents web app at [https://web.powerva.microsoft.com](https://web.powerva.microsoft.com).
 
 Upgraded environments are shown with a diamond icon next to their name in the list of environments in the **Chatbots** tab.
 
