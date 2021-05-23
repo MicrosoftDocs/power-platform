@@ -9,7 +9,7 @@ ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/22/2021
+ms.date: 05/23/2021
 search.audienceType: 
   - admin
 search.app:
@@ -40,9 +40,12 @@ Note the following about security groups:
   
 - Nested security group.
 
-  Members of a nested security group in an environment security group are not pre-provisioned or automatically added to the Dataverse environment. However, they can be added into the environment if you create a [Dataverse group team](manage-group-teams.md#create-a-group-team) for the nested security group. 
+  Members of a nested security group in an environment security group are not **pre-provisioned or automatically added to the Dataverse environment**. However, they can be added into the environment when you create a [Dataverse group team](manage-group-teams.md#create-a-group-team) for the nested security group. 
 
-  An example of this scenario: you assigned a security group for the environment when the environment was created. During the lifecycle of the environment, you want to add members to the environment which are managed by security groups. You create a security group in Azure Active Directory, for example managers, and assigned all your managers to the group. You then add this security group as a child of the environment security group, create a [Dataverse group team](manage-group-teams.md#create-a-group-team), and assign a security role to the group team. Your managers can now access Dataverse immediately.    
+  An example of this scenario: you assigned a security group for the environment when the environment was created. During the lifecycle of the environment, you want to add members to the environment which are managed by security groups. You create a security group in Azure Active Directory, for example managers, and assigned all your managers to the group. You then add this security group as a child of the environment security group, create a [Dataverse group team](manage-group-teams.md#create-a-group-team), and assign a security role to the group team. Your managers can now access Dataverse immediately.   
+  
+  A member of a nested security group is also added into the environment at run-time when the member accesses the environment the first time. But the member will not be able to run any application and access any data until a security role is assigned.   
+  
 - When users are added to the security group, they are added to the Dataverse environment.  
 - When users are removed from the group, they are disabled in the Dataverse environment.  
 - When a security group is associated with an existing environment with users, all users in the environment that are not members of the group will be disabled. 
