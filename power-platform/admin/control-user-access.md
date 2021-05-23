@@ -38,7 +38,7 @@ In this example, four security groups provide controlled access to a specific en
   
 Note the following about security groups: 
   
-- Nested security group.
+- About nested security groups
 
   Members of a nested security group in an environment security group are not **pre-provisioned or automatically added to the Dataverse environment**. However, they can be added into the environment when you create a [Dataverse group team](manage-group-teams.md#create-a-group-team) for the nested security group. 
 
