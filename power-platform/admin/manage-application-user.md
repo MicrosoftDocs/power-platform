@@ -50,11 +50,39 @@ In an environment, only one application user for each Azure AD registered applic
 
 4. Select **Users + permissions**, and then select **Users**.
 
-5. Select **+ New app user**.
+5. Select **+ New app user** to open the **Create a new app user** page.
 
    :::image type="content" source="media/create-new-app-user.png" alt-text="Create a new application user":::
 
-6. To select a registered Azure AD application which the application user is created for, on the panel, select + Add an app to open the panel which displays all the registered applications under your tenant in AAD and then select the application you want and select Add.  
+6. Select **+ add an app** to choose a registered Azure AD application that was created for the selected user, then select **Add**. 
+
+   :::image type="content" source="media/add-app-from-azure-ad.png" alt-text="Add an application from Azure AD":::
+
+7. The selected Azure AD app is displayed under **App**. You can select (![Edit](media/edit-button.png)) to choose another Azure AD application. Under **Business Unit** select a business unit from the dropdown.  
+
+   :::image type="content" source="media/create-new-app-user-business-unit.png" alt-text="Select a business unit":::
+
+8. After choosing a business unit, you can select (![Edit](media/edit-button.png)) for **Security roles** to choose security roles for the chosen business unit to add to the new application user. After adding security roles, select **Save**.
+
+   :::image type="content" source="media/create-new-app-user-security-roles.png" alt-text="Add security roles to the new application user":::
+
+9. For the final step, select **Create** to create the new application user.
+
+
+
+
+
+
+
+
+
+
+8. 
+
+
+
+
+
 
 
 
