@@ -294,6 +294,20 @@ You can customize the default **Application User** form to allow updates to the 
 > [!CAUTION]
 > Disabling an application user will break all the integration scenarios that use the application user.
 
+### Manage application users in the Power Platform admin center
+
+We are in the process of moving application user management from the legacy web client as documented in [Enable or disable application users](create-users-assign-online-security-roles.md#enable-or-disable-user-accounts). Follow these steps to manage application users from the Power Platform admin center.
+
+## View application users in an environment 
+
+1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com) as an admin. [Jim - what kind of admins?]
+
+2. Select **Environments**, and then select an environment from the list.
+
+2. Select **Open environment**.
+
+3. Go to **Settings** > **Security** > **Users**.
+
 ## How stub users are created
 A stub user is a user record that has been created as a placeholder. For example, records have been imported that refer to this user but the user doesn't exist in customer engagement apps. This user can't sign in, can't be enabled, and can't be synchronized to Microsoft 365. This type of user can only be created through data import. 
 
