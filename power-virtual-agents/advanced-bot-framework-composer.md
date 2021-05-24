@@ -178,10 +178,10 @@ ${virtualagent.user_city}
 
 ## Capture telemetry with Application Insights
 
-You can use Bot Framework Composer with Virtual Power Agents to send event data to a telemetry service in [Application Insights](https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview). Telemetry offers insights into your bot by showing which features are used the most, detects unwanted behavior, and provides data on availability, performance, and usage.
+You can use Bot Framework Composer with Virtual Power Agents to send event data to a telemetry service in [Application Insights](/azure/azure-monitor/app/app-insights-overview). Telemetry offers insights into your bot by showing which features are used the most, detects unwanted behavior, and provides data on availability, performance, and usage.
 
 >[!IMPORTANT]
->Application Insights is a feature of [Azure Monitor](/azure/azure-monitor/overview), an extensible Application Performance Management (APM) tool that allows you to monitor your live applications. It requires a subscription to [Microsoft Azure](https://azure.microsoft.com/en-us/).
+>Application Insights is a feature of [Azure Monitor](/azure/azure-monitor/overview), an extensible Application Performance Management (APM) tool that allows you to monitor your live applications. It requires a subscription to [Microsoft Azure](https://azure.microsoft.com/).
 
 To connect to your Application Insights service in Composer, you need to add your instrumentation key to the project. Go to the **Configure** tab in Composer and switch to **Advanced Settings View (json)**.
 
@@ -193,7 +193,7 @@ Find the **applicationInsights** section, then add your Application Insights ins
 
 To learn more on how to set up and use Application Insights and create queries for Composer's Adaptive dialogs, see these resources:
 
-- A subscription to [Microsoft Azure](https://azure.microsoft.com/en-us/).
+- A subscription to [Microsoft Azure](https://azure.microsoft.com/).
 - Get started with [Application Insights](/azure/azure-monitor/app/app-insights-overview#get-started).
 - The basic concepts of [Log queries](/azure/azure-monitor/log-query/get-started-queries) in Azure Monitor.
 - [Example Kusto queries](/azure/bot-service/bot-builder-telemetry-analytics-queries?view=azure-bot-service-4.0&preserve-view=true#adaptive-dialogs-started-and-completed) for Adaptive dialogs in Composer.
