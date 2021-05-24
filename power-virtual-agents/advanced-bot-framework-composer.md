@@ -45,7 +45,7 @@ Custom dialogs added with Bot Framework Composer are deployed, hosted, and execu
 
 2. Select **Open in Bot Framework Composer** from the dropdown menu. 
 
-    ![Open Composer from Topics page](media/Composer_OpeninBotFrameworkComposerButton_dropdown.png)
+    :::image type="content" source="media/Composer_OpeninBotFrameworkComposerButton_dropdown.png" alt-text="Open Composer from Topics page.":::
 
 If you already have Composer installed, Power Virtual Agents will try to open your bot in Composer. 
 
@@ -56,12 +56,12 @@ If you already have Composer installed, Power Virtual Agents will try to open yo
 
 If you don't have Composer installed, you can download it from the **download Composer** link. This link takes you to a **Download confirmation** window where you can also learn more about Composer.
     
-![Screenshot of the Power Virtual Agents Composer window indicating that Composer is not installed.](media/composer/composer-not-present.png)
+:::image type="content" source="media/composer/composer-not-present.png" alt-text="Screenshot of the Power Virtual Agents Composer window indicating that Composer is not installed.":::
     
    
 During installation, make sure to unselect the **Run Bot Framework Composer** checkbox, since you will need to open Composer application from within Power Virtual Agents to use it with your bot. 
 
-![Bot Framework Composer Install Complete](media/Composer_InstallWizardFinish.png)
+:::image type="content" source="media/Composer_InstallWizardFinish.png" alt-text="Bot Framework Composer Install Complete":::
 
 Go back to the  Power Virtual Agents **Topics** page and select **+ New topic**. Select **Open in Bot Framework Composer** in the dropdown menu and then **Open Composer** to open your bot in Composer.
 
@@ -71,29 +71,43 @@ Go back to the  Power Virtual Agents **Topics** page and select **+ New topic**.
 
 If you're opening Composer from this Power Virtual Agents bot for the first time, you need to specify the **Name** (alphanumeric, no spaces or special characters) for your **Composer project**. You can skip this step if you already have a bot project for this bot by selecting **Cancel** in this step.
 
-![Create Bot Framework Composer](media/ComposerUI_CreateProject.png)
+:::image type="content" source="media/ComposerUI_CreateProject.png" alt-text="Create Bot Framework Composer":::
 
 Your Power Virtual Agents bot is now open in Composer and you are ready to start developing.
 
-![Bot Framework Composer Project Initial View](media/ComposerUI_Open_initialView.png)
+:::image type="content" source="media/ComposerUI_Open_initialView.png" alt-text="Bot Framework Composer Project Initial View":::
 
 >[!NOTE]
 > In some cases, Power Virtual Agents might be unable to launch Composer automatically. However, you can launch it manually from your browser by selecting **Copy Link** to copy and paste the link to the Composer in your web browser.
+
+## Examples for integrating Composer into chatbots
+
+
+To help you get started using Composer, we've created four examples that detail different scenarios:
+
+- [Example 1 - Show an Adaptive Card in Power Virtual Agents](advanced-bot-framework-composer-example1.md)
+- [Example 2 - Display a multi-select options list in Power Virtual Agents](advanced-bot-framework-composer-example2.md)
+- [Example 3 - Use Bing Search as a fallback in Power Virtual Agents](advanced-bot-framework-composer-example3.md)
+- [Example 4 - Display a form with a Submit button in Power Virtual Agents](advanced-bot-framework-composer-example4.md)
+
+
 
 ## Guidelines for creating bot content for Power Virtual Agents in Composer
 When opened from a Power Virtual Agents bot, Composer launches a **Composer project** on your PC and loads your bot content into it.
 
 The **main (root) dialog** in your **Composer project** is the same as the project name you gave it. It corresponds to your Power Virtual Agents bot content. In this example, your **main (root) dialog** is **Contoso-Meal-Delivery-Service**: 
-![Bot Framework Composer main (root) dialog](media/Composer_Guidelines/Gd_mainDialog_initial.png)
+
+:::image type="content" source="media/Composer_Guidelines/Gd_mainDialog_initial.png" alt-text="Bot Framework Composer main (root) dialog":::
 
 There are few key guidelines to follow when using Composer to create your bot content for Power Virtual Agents.
 
 - The Power Virtual Agents topics from your bot will be displayed in Composer. You can't edit these Power Virtual Agents topics in Composer; selecting them will open these topics in Power Virtual Agents for editing.
-![Bot Framework Composer - Power Virtual Agents topics](media/Composer_Guidelines/Gd_PVA_Topics.png)
+
+:::image type="content" source="media/Composer_Guidelines/Gd_PVA_Topics.png" alt-text="Bot Framework Composer - Power Virtual Agents topics":::
 
 - You can call Power Virtual Agents topics in Composer by using the **Begin a PVA Topic** action.
 
-![Bot Framework Composer - call Power Virtual Agents topics](media/Composer_Guidelines/Gd_call_PVA_Topic.png)
+:::image type="content" source="media/Composer_Guidelines/Gd_call_PVA_Topic.png" alt-text="Bot Framework Composer - call Power Virtual Agents topics":::
 
 - You can add new **Bot Framework triggers** of any kind to your **main (root) dialog**. You can use **Send a response**, **Ask a question**, and **Language Generation** in the new **triggers** added to **main (root) dialog**.
 
@@ -149,16 +163,6 @@ Cannot use `# getUserName  - my name is {username=userName}` in Composer
 All Composer content should be published and then tested in Power Virtual Agents  
 
 
-## Examples
-
-
-To help you get started using Composer, we've created four examples that detail different scenarios:
-
-- [Example 1 - Show an Adaptive Card in Power Virtual Agents](advanced-bot-framework-composer-example1.md)
-- [Example 2 – Display a multi-select options list in Power Virtual Agents](advanced-bot-framework-composer-example2.md)
-- [Example 3 – Use Bing Search as a fallback in Power Virtual Agents](advanced-bot-framework-composer-example3.md)
-- [Example 4 – Display a form with a Submit button in Power Virtual Agents](advanced-bot-framework-composer-example4.md)
-
 
 
 ## Use and update Power Virtual Agents variables in Bot Framework Composer
@@ -168,7 +172,7 @@ You can use and update the values in Power Virtual Agents global variables in Bo
 
 For example, create a variable called **user_city** in your Power Virtual Agents bot. Make it a global variable by setting its **Usage** to **Bot (any topic can access)**.
 
-![Power Virtual Agents - variable](media/Composer_Example1/E1_Dialog2.png)
+:::image type="content" source="media/Composer_Example1/E1_Dialog2.png" alt-text="Power Virtual Agents - variable":::
 
 This setting makes the Power Virtual Agents variable **user_city** available in Bot Framework Composer within the **virtualagent** scope. Use the following notation to refer to it in Composer:
 
@@ -185,11 +189,11 @@ You can use Bot Framework Composer with Virtual Power Agents to send event data 
 
 To connect to your Application Insights service in Composer, you need to add your instrumentation key to the project. Go to the **Configure** tab in Composer and switch to **Advanced Settings View (json)**.
 
-![Composer Configure tab - Advanced Settings View](media/Composer_AppInisghts/Configure_AdvancedView.png)
+:::image type="content" source="media/Composer_AppInisghts/Configure_AdvancedView.png" alt-text="Composer Configure tab - Advanced Settings View":::
 
 Find the **applicationInsights** section, then add your Application Insights instrumentation key to the **instrumentationKey** setting.
 
-![Composer Configure tab - Application Insights Instrumentation key](media/Composer_AppInisghts/Configure_AppInsights_Key.png)
+:::image type="content" source="media/Composer_AppInisghts/Configure_AppInsights_Key.png" alt-text="Composer Configure tab - Application Insights Instrumentation key":::
 
 To learn more on how to set up and use Application Insights and create queries for Composer's Adaptive dialogs, see these resources:
 
@@ -203,11 +207,11 @@ You can test the content you have created in Bot Framework Composer by publishin
 
 Publish your Bot Framework content to Power Virtual Agents from the **Publish** tab in Composer.
 
-![Composer Publish tab](media/Composer_Test/Test_Publish_Success.png)
+:::image type="content" source="media/Composer_Test/Test_Publish_Success.png" alt-text="Composer Publish tab":::
 
 After you successfully publish your Bot Framework content, you can use the Power Virtual Agents **Test bot** pane to test it. Start a conversation with the bot by typing in a trigger phrase in the Power Virtual Agents **Test bot** pane:
 
-![Power Virtual Agents test bot](media/Composer_Test/Test_image.png)
+:::image type="content" source="media/Composer_Test/Test_image.png" alt-text="Power Virtual Agents test bot":::
 
 
 >[!NOTE]
@@ -216,11 +220,11 @@ After you successfully publish your Bot Framework content, you can use the Power
 ## Troubleshooting
 If you're having trouble publishing your Bot Framework Composer content to Power Virtual Agents, you can use the **See Log** feature in the **Publish** tab in Composer. The log will provide a detailed description of the errors encountered during validation. Select your bot and then select the caret icon to see the publication history.
 
-![Composer Publish - See Log](media/Composer_Troubleshooting/TL_PublishHistory.png)
+:::image type="content" source="media/Composer_Troubleshooting/TL_PublishHistory.png" alt-text="Composer Publish - See Log":::
 
 Selecting the log will bring up the list of warnings and errors that were encountered during the publication process in Composer, along with suggestions on how to fix the errors:
 
-![Composer Publish - warnings and errors](media/Composer_Troubleshooting/Tl_PublishError.png)
+:::image type="content" source="media/Composer_Troubleshooting/Tl_PublishError.png" alt-text="Composer Publish - warnings and errors":::
 
 If you encounter issues developing in Bot Framework Composer, go to [Bot Framework Composer issues on GitHub](https://github.com/microsoft/BotFramework-Composer/issues) to see the list of known issues in Composer or to [log a new Composer issue](https://github.com/microsoft/BotFramework-Composer/issues). 
 

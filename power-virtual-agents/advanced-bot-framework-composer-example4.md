@@ -13,7 +13,7 @@ ms.custom: "cex"
 ms.collection: virtualagent
 ---
 
-# Example 4 – Display a form with a Submit button in Power Virtual Agents 
+# Example 4 - Display a form with a Submit button in Power Virtual Agents 
 
 You can enhance your bot by developing custom dialogs with [Bot Framework Composer](/composer/) and then adding them to your Power Virtual Agents bot. 
 
@@ -32,8 +32,8 @@ Before you begin, ensure you read [Extend your bot with Bot Framework Composer](
 - See how to [Extend your bot with Bot Framework Composer](advanced-bot-framework-composer.md)
 - Follow the instructions described in: 
   - [Example 1 - Show an Adaptive Card in Power Virtual Agents](advanced-bot-framework-composer-example1.md)
-  - [Example 2 – Display a multi-select options list in Power Virtual Agents](advanced-bot-framework-composer-example2.md)
-  - [Example 3 – Use Bing Search as a fallback in Power Virtual Agents](advanced-bot-framework-composer-example3.md)
+  - [Example 2 - Display a multi-select options list in Power Virtual Agents](advanced-bot-framework-composer-example2.md)
+  - [Example 3 - Use Bing Search as a fallback in Power Virtual Agents](advanced-bot-framework-composer-example3.md)
 - [Introduction to Bot Framework Composer](/composer/introduction)
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 
@@ -52,7 +52,7 @@ Add the following trigger phrases and select **Submit**.
 - **sign up to try**
 - **register to try service**
 
-![Composer - create a new trigger](media/Composer_Example4/E4_createStartTrial_trigger.png)
+:::image type="content" source="media/Composer_Example4/E4_createStartTrial_trigger.png" alt-text="Composer - create a new trigger.":::
 
 After the **StartTrial** trigger is added, go to the **Bot Responses** tab for this **Contoso Meal Delivery Service** dialog. Switch to **Show code** view, and insert the following Adaptive Card JSON:
 
@@ -105,15 +105,15 @@ After the **StartTrial** trigger is added, go to the **Bot Responses** tab for t
 
 Note that every data field in this Adaptive card was given an ID: **Name**, **Address**, and **Weeks**.
 
-![Composer - create StartTrialForm](media/Composer_Example4/E4_createSubmitForm.png)
+:::image type="content" source="media/Composer_Example4/E4_createSubmitForm.png" alt-text="Composer - create StartTrialForm.":::
 
 Go to the **Create** tab in Composer and select the **StartTrial** trigger. Add the **Ask a question** action and select type **Text**.
 
-![Composer - ask a question](media/Composer_Example4/E4_ask_question.png)
+:::image type="content" source="media/Composer_Example4/E4_ask_question.png" alt-text="Composer - ask a question.":::
 
 Select the **Attachments** option in **Prompt for text**:
 
-![Composer - select Attachment option](media/Composer_Example4/E4_selectAttachment_option.png)
+:::image type="content" source="media/Composer_Example4/E4_selectAttachment_option.png" alt-text="Composer - select Attachment option.":::
 
 Select **Add custom** option and add the following to the **Attachments** window:
 
@@ -121,15 +121,15 @@ Select **Add custom** option and add the following to the **Attachments** window
 -${StartTrialForm()}
 ```
 
-![Composer - add StartTrialForm attachment](media/Composer_Example4/E4_addAttachment_StartTrialForm.png)
+:::image type="content" source="media/Composer_Example4/E4_addAttachment_StartTrialForm.png" alt-text="Composer - add StartTrialForm attachment.":::
 
 Select the **User Input** node and save user input data. Set **Property** to **user.name** and set **Value** to **=turn.activity.value.Name** to extract and save the value of the from field **Name** from our Adaptive card **StartTrialForm** into **user.name**.
 
-![Composer - save user input](media/Composer_Example4/E4_saveUserInput.png)
+:::image type="content" source="media/Composer_Example4/E4_saveUserInput.png" alt-text="Composer - save user input.":::
 
 Your Adaptive card **StartTrialForm** has two more fields, **Address** and **Weeks**. Use the **Set properties** action to extract them from **turn.activity.value** and save them to **user.address** and **user.weeks**:
 
-![Composer - set properties](media/Composer_Example4/E4_setProperties.png)
+:::image type="content" source="media/Composer_Example4/E4_setProperties.png" alt-text="Composer - set properties.":::
 
 Add a **Send a Response** action to provide a from submission confirmation:
 
@@ -137,11 +137,11 @@ Add a **Send a Response** action to provide a from submission confirmation:
 ${user.name} - thanks for starting a ${user.weeks} week trial with us! Your meals will be delivered to this address: ${user.address}.
 ```
 
-![Composer - add form submission confirmation](media/Composer_Example4/E4_formSubmit_confirm.png)
+:::image type="content" source="media/Composer_Example4/E4_formSubmit_confirm.png" alt-text="Composer - add form submission confirmation.":::
 
 Use the **Begin a PVA Topic** action to call the Power Virtual Agents bot's **End of Conversation** topic to ask the user to rate their experience with the bot:
 
-![Composer - call Power Virtual Agents topic](media/Composer_Example4/E4_call_PVA_End_of_Conversation.png)
+:::image type="content" source="media/Composer_Example4/E4_call_PVA_End_of_Conversation.png" alt-text="Composer - call Power Virtual Agents topic.":::
 
 You are now ready to add you Composer content to your Power Virtual Agents bot. Go to the **Publish** tab in Composer and publish it to your Power Virtual Agents bot.
 
@@ -151,12 +151,12 @@ Once your new Composer content is successfully published, you can now see that *
 >You might need to refresh your **Topics** page to see the new bot content that has been added from Composer.
 
 
-![Power Virtual Agents Topics page](media/Composer_Example4/E4_StartTrial_inTopicsList.png)
+:::image type="content" source="media/Composer_Example4/E4_StartTrial_inTopicsList.png" alt-text="Power Virtual Agents Topics page.":::
 
 Make sure **Track between topics** is turned on, and test your new bot content by entering the following text in the **Test bot** pane in Power Virtual Agents to start a bot conversation:
 - **How do I sign up for a trial?**
 
-![Power Virtual Agents test](media/Composer_Example4/Example4_cropped.png)
+:::image type="content" source="media/Composer_Example4/Example4_cropped.png" alt-text="Power Virtual Agents test.":::
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

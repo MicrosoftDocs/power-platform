@@ -13,7 +13,7 @@ ms.custom: "cex"
 ms.collection: virtualagent
 ---
 
-# Example 3 – Use Bing Search as a fallback in Power Virtual Agents 
+# Example 3 - Use Bing Search as a fallback in Power Virtual Agents 
 
 You can enhance your bot by developing custom dialogs with [Bot Framework Composer](/composer/) and then adding them to your Power Virtual Agents bot. 
 
@@ -32,7 +32,7 @@ Before you begin, ensure you read [Extend your bot with Bot Framework Composer](
 - See how to [Extend your bot with Bot Framework Composer](advanced-bot-framework-composer.md)
 - Follow the instructions described in: 
   - [Example 1 - Show an Adaptive Card in Power Virtual Agents](advanced-bot-framework-composer-example1.md)
-  - [Example 2 – Display a multi-select options list in Power Virtual Agents](advanced-bot-framework-composer-example2.md)
+  - [Example 2 - Display a multi-select options list in Power Virtual Agents](advanced-bot-framework-composer-example2.md)
 - [Introduction to Bot Framework Composer](/composer/introduction)
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 
@@ -48,7 +48,7 @@ Go to the **Topics** page and select **Open in Bot Framework Composer** under th
 
 Select **+ Add new trigger** to add another Bot Framework trigger to **Contoso Meal Delivery Service** dialog. Choose the type **Unknown intent** for your new trigger.
 
-![Composer - add Unknown Intent trigger](media/Composer_Example3/E3_BingSearch_UnknownIntent.png)
+:::image type="content" source="media/Composer_Example3/E3_BingSearch_UnknownIntent.png" alt-text="Composer - add Unknown Intent trigger.":::
 
 
 After the **Unknown intent** trigger is added, go to the **Bot Responses** tab for this **Contoso Meal Delivery Service** dialog. Switch to **Show code** view, and insert the following Adaptive Card JSON:
@@ -88,7 +88,7 @@ After the **Unknown intent** trigger is added, go to the **Bot Responses** tab f
 ```
 ````
 
-![Composer Bot Responses - add JSON](media/Composer_Example3/E3_BingSearch_BotResponses_AdaptiveCard.png)
+:::image type="content" source="media/Composer_Example3/E3_BingSearch_BotResponses_AdaptiveCard.png" alt-text="Composer Bot Responses - add JSON.":::
 
 
 Add this **Activity** to the same **Bot Responses** window in Composer:
@@ -100,7 +100,8 @@ Add this **Activity** to the same **Bot Responses** window in Composer:
 ]
 
 ```
-![Composer Bot Responses - add Activity](media/Composer_Example3/E3_BingSearch_BotResponses_Activity.png)
+
+:::image type="content" source="media/Composer_Example3/E3_BingSearch_BotResponses_Activity.png" alt-text="Composer Bot Responses - add Activity.":::
 
 
 Go to the **Create** tab in Composer and select the **Unknown intent** trigger. Add the **Send a response** action and select **Show code**. Add the following expression to the **Language Generation** panel:
@@ -109,7 +110,7 @@ Go to the **Create** tab in Composer and select the **Unknown intent** trigger. 
 -${AdaptiveCardBingSearch(turn.activity.text)}
 ```
 
-![Composer BeginDialog - Send a response](media/Composer_Example3/E3_BingSearch_addBotReponse_BingSearch.png)
+:::image type="content" source="media/Composer_Example3/E3_BingSearch_addBotReponse_BingSearch.png" alt-text="Composer BeginDialog - Send a response.":::
 
 You are now ready to add you Composer content to your Power Virtual Agents bot. Go to the **Publish** tab in Composer and publish it to your Power Virtual Agents bot.
 
@@ -118,13 +119,13 @@ Once your new Composer content is successfully published, you can now see that *
 >[!NOTE]
 >You might need to refresh your **Topics** page to see the new bot content that has been added from Composer.
 
-![Power Virtual Agents Topics page for example 3](media/Composer_Example3/E3_BingSearch_inTopicsList.png)
+:::image type="content" source="media/Composer_Example3/E3_BingSearch_inTopicsList.png" alt-text="Power Virtual Agents Topics page for example 3.":::
 
 Make sure **Track between topics** is turned on, and test your new bot content by entering the following text in the **Test bot** pane in Power Virtual Agents to start a bot conversation:
 
 - **Is tofu vegan?**
 
-![Power Virtual Agents testfor example 3](media/Composer_Example3/Example3_cropped.png)
+:::image type="content" source="media/Composer_Example3/Example3_cropped.png" alt-text="Power Virtual Agents test for example 3.":::
 
 
 

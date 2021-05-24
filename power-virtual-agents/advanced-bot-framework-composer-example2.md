@@ -13,7 +13,7 @@ ms.custom: "cex"
 ms.collection: virtualagent
 ---
 
-# Example 2 – Display a multi-select options list in Power Virtual Agents 
+# Example 2 - Display a multi-select options list in Power Virtual Agents 
 
 You can enhance your bot by developing custom dialogs with [Bot Framework Composer](/composer/) and then adding them to your Power Virtual Agents bot. 
 
@@ -56,7 +56,7 @@ In the **Value** field in the **Set a property** panel, change the type to **\[\
 ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
 ```
 
-![Composer Create property](media/Composer_Example2/E2_DailySpecials_setArray.png)
+:::image type="content" source="media/Composer_Example2/E2_DailySpecials_setArray.png" alt-text="Composer Create property.":::
 
 Next, go to the **Bot Responses** tab in Composer and select **DailySpecials**. Select **Show code** and add the following template to the **Bot Responses** tab for **DailySpecials** to create daily offers for all the days of the week:
 
@@ -88,30 +88,30 @@ Next, go to the **Bot Responses** tab in Composer and select **DailySpecials**. 
     - Holiday special - free delivery anywhere in Seattle, Bellevue and Redmond on orders over $70 today!
     - Holiday Delivery is on us if you are in Seattle, Bellevue and Redmond and your order is over $70 total!
 ```
-![Composer Bot Responses tab - Language Generation code](media/Composer_Example2/E2_DailySpecials_BotResponse.png)
+:::image type="content" source="media/Composer_Example2/E2_DailySpecials_BotResponse.png" alt-text="Composer Bot Responses tab - Language Generation code.":::
 
 Go back to the **Create** tab in Composer and select **BeginDialog** under **DailySecials**. 
 
 Add a new prompt for user input to this dialog by selecting **Multi-choice** under the **Ask a question** menu option.
 
-![Composer Create tab - ask a multi choice questions](media/Composer_Example2/E2_DailySpecials_askaquestion.png)
+:::image type="content" source="media/Composer_Example2/E2_DailySpecials_askaquestion.png" alt-text="Composer Create tab - ask a multi choice questions.":::
 
 Enter the following for the **Text** prompt:
 `Please select a day:`
 
-![Composer Create tab - add prompt language generation](media/Composer_Example2/E2_DailySpecials_prompt.png)
+:::image type="content" source="media/Composer_Example2/E2_DailySpecials_prompt.png" alt-text="Composer Create tab - add prompt language generation.":::
 
 Select the **User Input (Choice)** action. In the **Prompt with multi-choice** panel, under **User Input**, set **Property** to **conversation.day_choice**. 
 
 Set **Output format** to **index** to return the index of the selected option instead of a value.
 
-![Composer Create tab - set up choice output property](media/Composer_Example2/E2_DailySpecials_input_variable.png)
+:::image type="content" source="media/Composer_Example2/E2_DailySpecials_input_variable.png" alt-text="Composer Create tab - set up choice output property.":::
 
 Next, scroll down the **Prompt with multi-choice** panel and set **List style** to **heroCard** to display our options list vertically. 
 
 Select **Write an expression** for the **Array of choices** field and set it to use the **conversation.days_array** property we created.
 
-![Composer Create tab - set up array of choices](media/Composer_Example2/E2_DailySpecials_array_multi_option.png)
+:::image type="content" source="media/Composer_Example2/E2_DailySpecials_array_multi_option.png" alt-text="Composer Create tab - set up array of choices.":::
 
 You have created a multi-choice option list that is based on **conversation.days_array** and stores the user selection into the **conversation.day_choice** property.
 
@@ -122,11 +122,12 @@ Select **Show code** and add a **Send a response** action to your **DailySpecial
 ```JSON
 - ${DailySpecials(conversation.day_choice)}
 ```
-![Composer Create tab - display Daily Special for the selected day](media/Composer_Example2/E2_DailySpecials_addResponse.png)
+
+:::image type="content" source="media/Composer_Example2/E2_DailySpecials_addResponse.png" alt-text="Composer Create tab - display Daily Special for the selected day.":::
 
 Go to the **Create** tab in Composer and navigate to the Power Virtual Agents **main (root) dialog**. This dialog is the top-level read-only dialog in Composer that you created when you opened your bot in Composer. Choose the **Add new trigger** option on the actions menu.
 
-![Composer Create_tab - add new trigger](media/Composer_Example2/E2_main_addNewTrigger.png)
+:::image type="content" source="media/Composer_Example2/E2_main_addNewTrigger.png" alt-text="Composer Create_tab - add new trigger.":::
 
 Set the type of trigger to **Intent recognized** and name it **Specials**. Add the following trigger phrases for your intent and select **Submit**.
 
@@ -135,11 +136,12 @@ Set the type of trigger to **Intent recognized** and name it **Specials**. Add t
 -any special deals
 -do you have discounts
 ```
-![Composer Create_tab - add new Intent Recognized trigger](media/Composer_Example2/E2_main_nameNewTrigger.png)
+
+:::image type="content" source="media/Composer_Example2/E2_main_nameNewTrigger.png" alt-text="Composer Create_tab - add new Intent Recognized trigger.":::
 
 A new trigger **Specials** will be created. Select **Begin a new dialog** under **Dialog management** to create a node that can call another dialog. Select to call **DailySpecials** in the **Begin a new dialog** panel on the side:
 
-![Composer Create tab - call a new dialog](media/Composer_Example2/E2_main_callDialog.png)
+:::image type="content" source="media/Composer_Example2/E2_main_callDialog.png" alt-text="Composer Create tab - call a new dialog.":::
 
 You are now ready to add your Composer content to your Power Virtual Agents bot. Go to the **Publish** tab in Composer and publish it to your Power Virtual Agents bot.
 
@@ -148,13 +150,13 @@ Once your new Composer content is successfully published, go to the Power Virtua
 >[!NOTE]
 >You might need to refresh your **Topics** page in Power Virtual Agents to see the new content that has been uploaded from Composer. 
 
-![Power Virtual Agents Topics page refresh](media/Composer_Example2/E2_DailySpecials_inPVA.png)
+:::image type="content" source="media/Composer_Example2/E2_DailySpecials_inPVA.png" alt-text="Power Virtual Agents Topics page refresh.":::
 
 Make sure **Track between topics** is turned on, and test your new bot content by entering the following text in the **Test bot** pane in Power Virtual Agents to start a conversation:
 
 - **Do you have any specials?**
 
-![Power Virtual Agents Test pane](media/Composer_Example2/Example2._cropped.png)
+:::image type="content" source="media/Composer_Example2/Example2._cropped.png" alt-text="Power Virtual Agents Test pane.":::
 
 
 
