@@ -59,9 +59,9 @@ Larger, more complex projects require the following tasks.
    - Consider building a tool to generate the base solution. The tool can include a master exclusion list of tables and columns owned by current development teams.
    - The base solution will be the first solution converted as managed on all environments except the base development environment. No other solutions will be added to the base development environment.
 
-5. Build a Common solution
+5. Build a common solution
    - This solution contains components that are shared across apps.
-   - Obtain sign-off from every solution owner that their components will not be included in the common solution. It is important to pay close attention to avoid layering complexities.
+   - Obtain sign-off from every solution owner that no components exclusively owned by their app will be included in the common solution. This is an important clarification that can help you avoid layering complexities.
    - The common solution will be the second solution converted to managed in all environments except the base and common development environments.
 
 6. Use a wave conversion model.
