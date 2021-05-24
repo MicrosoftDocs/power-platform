@@ -35,7 +35,8 @@ Larger, more complex projects require the following tasks.
 1. Plan carefully, especially when the outcome you want is to use solution layering properly.
 
 2. Identify and remove unnecessary tables and components.
-   - Look for tables that can be deleted from the environment. Here's some examples:
+   - Look for tables that can be disabled in the environment. Tables can be disabled by removing all privileges for the table. More information: [Security roles and privileges](/power-platform/admin/security-roles-privileges)
+   - Here's some examples of tables that should be considered for removal:
       - Tables with no new records created within in last 18 months.
       - Tables and components that have no dependencies. More information: [View dependencies for a component](/powerapps/maker/data-platform/view-component-dependencies)
       - Components, such as forms, views, and charts, that are associated with deleted or unused tables and don't have any data.
@@ -60,17 +61,10 @@ Larger, more complex projects require the following tasks.
    - Consider building a tool to generate the base solution. The tool can include a master exclusion list of tables and columns owned by current development teams.
    - The base solution will be the first solution converted as managed in all environments except the base solution development environment. No other solutions will be added to the base solution development environment.
 
-<<<<<<< HEAD
 5. Build a common solution
    - This solution contains components that are shared across apps.
    - Obtain sign-off from every solution owner that no components exclusively owned by their app will be included in the common solution. This is an important clarification that can help you avoid layering complexities.
    - The common solution will be the second solution converted to managed in all environments except the base and common development environments.
-=======
-5. Build the common solution
-   - This solution contains components that are shared across apps.
-   - Obtain sign-off from every solution owner that their components will not be included in the common solution. It is important to pay close attention to avoid layering complexities.
-   - The common solution will be the second solution converted to managed in all environments except the base and common solution development environments.
->>>>>>> 5b00555edf71fa64b2abff53bf5e221aab8a438b
 
 6. Use a wave conversion model.
    - If you have 10 or more solutions to convert from unmanaged to managed, group the solutions together and import them in waves. 
