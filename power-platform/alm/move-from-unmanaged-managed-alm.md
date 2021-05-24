@@ -42,7 +42,7 @@ Larger, more complex projects require the following tasks.
    - Be aware that some [System tables don’t support unmanaged layers](#system-tables-that-dont-support-unmanaged-layers).
    - Be aware that there are a few system tables that can lead to issues when you customize them and later import them as managed. More information: [Customization of deeply integrated system tables](#customization-of-deeply-integrated-system-tables)
    - For Power Apps portals app conversions, consider building a tool to search for components to eliminate, such as components without dependencies.
-      - For example, the tool can be a console app that generates a .CSV output file, which displays table forms and views used by Portals apps by checking the entity forms and entity lists tables. The output file can be used to determine dependencies between a portals app and table forms and views.
+      - For example, the tool can be a console app that generates a .CSV output file, which displays table forms and views used by portals apps by checking the entity forms and entity lists tables. The output file can be used to determine dependencies between a portals app and table forms and views.
 
 3. Understand and identify the base, common, and app solution layers.
 
@@ -55,33 +55,42 @@ Larger, more complex projects require the following tasks.
    
 4. Generate the base solution.
    - The purpose of the base solution is to work around cross-component dependencies during an unmanaged to managed solution conversion.
-   - The base solution can also contain tables and columns that are not currently in use by any development team. The tool includes a master exclusion list of tables and columns that will be used to ignore tables owned by other teams. Tables with `AddRequiredComponents = False` and  `DoNotIncludeSubcomponents = True` must be added into the solution. The solution name and publisher should be predefined. <!-- link for more info to dev docs for this? -->
+   - The base solution can also contain tables and columns that are not currently in use by any development team. The tool includes a master exclusion list of tables and columns that will be used to ignore tables owned by other teams. 
+   - Tables with `AddRequiredComponents = False` and  `DoNotIncludeSubcomponents = True` must be added into the solution. The solution name and publisher should be predefined. <!-- link for more info to dev docs for this? -->
    - Consider building a tool to generate the base solution. The tool can include a master exclusion list of tables and columns owned by current development teams.
-   - The base solution will be the first solution converted as managed on all environments except the base development environment. No other solutions will be added to the base development environment.
+   - The base solution will be the first solution converted as managed in all environments except the base solution development environment. No other solutions will be added to the base solution development environment.
 
+<<<<<<< HEAD
 5. Build a common solution
    - This solution contains components that are shared across apps.
    - Obtain sign-off from every solution owner that no components exclusively owned by their app will be included in the common solution. This is an important clarification that can help you avoid layering complexities.
    - The common solution will be the second solution converted to managed in all environments except the base and common development environments.
+=======
+5. Build the common solution
+   - This solution contains components that are shared across apps.
+   - Obtain sign-off from every solution owner that their components will not be included in the common solution. It is important to pay close attention to avoid layering complexities.
+   - The common solution will be the second solution converted to managed in all environments except the base and common solution development environments.
+>>>>>>> 5b00555edf71fa64b2abff53bf5e221aab8a438b
 
 6. Use a wave conversion model.
    - If you have 10 or more solutions to convert from unmanaged to managed, group the solutions together and import them in waves. 
-   - The base followed by the common solution should be in the group for the first wave, so that they can be imported as managed solutions in all development environments before you convert your app solutions to managed.
+   - The base solution followed by the common solution should be in the group for the first wave, so that they can be imported as managed solutions in all development environments before you convert your app solutions to managed.
+   - The development environment refresh process should include the common solution imported as managed to all development environments. This should be done after every wave deployment. 
    - Group any solutions that cause downtime during trials into the final wave. Then, you will only have a single downtime event for the entire conversion process.
 
-7. Do one or more trial conversions of each solution prior to conversion in production.
-- If converting in waves, group the trial runs by wave.
-- The trial conversion environment should be as similar to the production environment as possible. Ideally, a copy of production along with Portals configured, if any.
-- Conversion integration scheduling:
-   - Plan to run your trial and production conversions outside of scheduled integration windows.
-   - Schedule the conversion outside normal business hours.
-- If there's any app downtime during the unmanaged to managed conversion from the development environment to the test environment, make a note of it. This helps you determine how much time to allot for when you deploy to production. Check the following for potential impact during conversion:
-   - App being converted to managed.
-   - Other apps affected by the conversion.
-   - Portals affected by the conversion.
-- Considerations when importing a managed solution to convert unmanaged components to managed:
-   - If components are held in unmanaged solutions that still exist in the environment, all references will have to be removed before the managed solution can be imported.
-   - Removing unmanaged solutions causes the loss of the reference container. Without a good understanding of what has been customized, you risk that components become orphaned in the default solution and possibly become hard to track.
+7. Complete one or more trial conversions of each solution prior to conversion in production.
+   - If converting in waves, group the trial runs by wave.
+   - The trial conversion environment should be as similar to the production environment as possible. Ideally, a copy of production along with portals configured, if any.
+   - Conversion integration scheduling:
+      - Plan to run your trial and production conversions outside of scheduled integration windows.
+      - Schedule the conversion outside normal business hours.
+   - If there's any app downtime during the unmanaged to managed conversion from the development environment to the test environment, make a note of it. This helps you determine how much time to allot for when you deploy to production. Check the following for potential impact during conversion:
+      - App being converted to managed.
+      - Other apps affected by the conversion.
+      - Portals affected by the conversion.
+   - Considerations when importing a managed solution to convert unmanaged components to managed:
+      - If components are held in unmanaged solutions that still exist in the environment, all references will have to be removed before the managed solution can be imported.
+      - Removing unmanaged solutions causes the loss of the reference container. Without a good understanding of what has been customized, you risk that components become orphaned in the default solution and possibly become hard to track.
 
 <!-- 7. Test the managed solution.
    - The test environment should be as similar to the production environment as possible.
@@ -93,11 +102,11 @@ Larger, more complex projects require the following tasks.
       - Schedule outside of unmanaged to managed conversion window.
       - Schedule outside hours for regular deployments as well.  -->
 
-8. Create new dev environments after conversion of the base and common solutions as managed on production. 
-- For each app create a new dev environment with the following:
-   - Base and common as managed.
-   - Any other dependent managed solution required.
-   - The app solution as an unmanaged solution.
+8. Create new development environments after the conversion of the base and common solutions as managed on production. 
+   - For each app create a new development environment with the following:
+      - Base and common solutions as managed.
+      - Any other dependent managed solution required.
+      - The app solution as an unmanaged solution.
 
 <!-- 8. Repeat steps 5-7 for any modular solutions that extend the common components layer.
 
@@ -135,7 +144,7 @@ If customized in unmanaged solutions, the managed component must be deleted for 
 
 Some system tables have many relationships and dependencies with other tables that make them difficult to import to other environments:
 - User.
-- Contact. Similar to system user for Power Apps but can cause complication when you import  Portals apps.
+- Contact. Similar to system user for Power Apps but can cause complication when you import  portals apps.
 
 ###  See also
 
