@@ -218,7 +218,7 @@ For the new **Send a response** action, the **Language Generation** panel will o
 :::image type="content" source="media/Composer_Example1/E1_Meals_AddResponse.png" alt-text="Composer Begin Dialog - add Send a response action.":::
 
 >[!TIP]
->You can [access Power Virtual Agents global variables in Composer](advanced-bot-framework-composer.md#use-power-virtual-agents-variables-in-bot-framework-composer) by referencing the scope **virtualagent**. For example, **${virtualagent.user_city}** will refer to the value of a variable that was created in the Power Virtual Agents bot.
+>You can [access Power Virtual Agents global variables in Composer](advanced-bot-framework-composer.md#use-and-update-power-virtual-agents-variables-in-bot-framework-composer) by referencing the scope **virtualagent**. For example, **${virtualagent.user_city}** will refer to the value of a variable that was created in the Power Virtual Agents bot.
 
 
 You are now ready to upload the **Meals** dialog to your Power Virtual Agents bot. Select the **Publish** tab and then the **Publish profile** of your bot, and choose **Publish to selected profile**. Add an optional comment and select **Okay** in the confirmation window to start uploading.
