@@ -70,8 +70,18 @@
          href: advanced-flow.md
        - name: Use Bot Framework Skills
          href: advanced-use-skills.md
-       - name: Extend your bot with Bot Framework Composer
-         href: advanced-bot-framework-composer.md
+       - name: Use Bot Framework Composer
+         items:
+          - name: Extend your bot with Bot Framework Composer
+            href: advanced-bot-framework-composer.md
+          - name: Example 1 - Show an Adaptive Card in Power Virtual Agents
+            href: advanced-bot-framework-composer-example1.md
+          - name: Example 2 – Display a multi-select options list in Power Virtual Agents
+            href: advanced-bot-framework-composer-example2.md
+          - name: Example 3 – Use Bing Search as a fallback in Power Virtual Agents
+            href: advanced-bot-framework-composer-example3.md
+          - name: Example 4 – Display a form with a Submit button in Power Virtual Agents
+            href: advanced-bot-framework-composer-example4.md
        - name: Trigger hand-off to a live agent
          href: advanced-hand-off.md
     - name: Publish and integrate
