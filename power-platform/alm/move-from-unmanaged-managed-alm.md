@@ -35,7 +35,7 @@ Larger, more complex projects require the following tasks.
 1. Plan carefully, especially when the outcome you want is to use solution layering properly.
 
 2. Identify and remove unnecessary tables and components.
-   - Look for tables that can be disabled in the environment. Tables can be disabled by removing all privileges for the table. More information: [Security roles and privileges](/power-platform/admin/security-roles-privileges)
+   - Look for tables that can be disabled in the environment. Tables can be disabled by removing all privileges on the table for all security roles except the system administrator security role. More information: [Security roles and privileges](/power-platform/admin/security-roles-privileges)
    - Here's some examples of tables that should be considered for removal:
       - Tables with no new records created within in last 18 months.
       - Tables and components that have no dependencies. More information: [View dependencies for a component](/powerapps/maker/data-platform/view-component-dependencies)
