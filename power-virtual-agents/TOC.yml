@@ -2,7 +2,7 @@
   href: fundamentals-what-is-power-virtual-agents.md
 - name: Licensing for Power Virtual Agents
   href: requirements-licensing-subscriptions.md
-- name: Standards compliance and certification
+- name: Power Virtual Agents compliance offerings
   href: admin-certification.md
 - name: Quotas, limits, and configuration values
   href: requirements-quotas.md
@@ -88,7 +88,7 @@
       items:
        - name: Key concepts - Publish your bot
          href: publication-fundamentals-publish-channels.md
-       - name: Configure the demo website and add the bot to your live website
+       - name: Add bot to your live website or Power Apps portal
          href: publication-connect-bot-to-web-channels.md
        - name: Add bot to Microsoft Teams
          href: publication-add-bot-to-microsoft-teams.md

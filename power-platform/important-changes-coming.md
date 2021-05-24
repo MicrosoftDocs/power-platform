@@ -25,6 +25,13 @@ Admins and IT professionals can use this information to prepare for future relea
 > "Deprecated" means we intend to remove the feature or capability from a future major release. The feature or capability will continue to work and is fully supported until it is officially removed. This deprecation
 notification can span a few months or years. After removal, the feature or capability no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
 
+
+## The Analyze section, in mobile offline profiles is deprecated
+
+Effective September 2021, the **Analyze** action and the **Offline profile** report that is used to configure mobile offline profiles is deprecated. 
+The Analyze feature is being removed due to Cross-Site Scripts (XSS) vulnerabilities. The report is used to identify components that aren't available when your working in offline mode. The capabilities will be re-imagined as part of the ongoing enhancements of the mobile offline configuration experience. There is no action required by you.
+
+
 ## Skype integration with customer engagement apps is deprecated
 
 Effective July 2019, Skype integration feature with customer engagement apps has been deprecated and is no longer supported after July 31, 2021. Skype is retired on July 31, 2021; more information: [Skype for Business Online retirement - Microsoft Teams](https://docs.microsoft.com/microsoftteams/skype-for-business-online-retirement)
@@ -56,7 +63,7 @@ To meet the October 2021 deadline, be sure you update any of your forms from a l
 If you don't make this change, the form no longer honors this setting at runtime. It also defaults to high-density with flyout.
 
 
-## Form footers in model-driven app won't be supported with the 2021 release wave 2
+## Form footers in model-driven apps won't be supported with the 2021 release wave 2
 
 With the upcoming 2021 release wave 2 (public preview in August 2021 and GA in October 2021), form footers won't be supported in a model-driven app form. 
 
@@ -213,7 +220,7 @@ After April 24, 2020, customers are encouraged to transition to the new model ve
 ## Dynamic 365 for Outlook is deprecated
 ----------------------------------------
 
-Effective March 2020, the legacy Dynamics 365 for Outlook (also referred to as Outlook COM add-in) was deprecated, and is no longer available for Power Apps and customer engagement apps (Dynamics 365 Sales, Customer Service, Marketing, and Field Service). Use the modern [Dynamics 365 App for Outlook](/dynamics365/outlook-app/overview) instead.
+Effective March 2020, the legacy Dynamics 365 for Outlook (also referred to as Outlook COM add-in) was deprecated, and is no longer available for customer engagement apps (Dynamics 365 Sales, Customer Service, Marketing, and Field Service). Use the modern [Dynamics 365 App for Outlook](/dynamics365/outlook-app/overview) instead.
 
 [Dynamics 365 Customer Engagement (on-premises)](/dynamics365/customerengagement/on-premises/overview) users can continue to use the legacy Dynamics 365 for Outlook. However, we recommend that you transition to the modern Dynamics 365 App for Outlook at the earliest. For information and steps to make a smooth transition, download [Dynamics 365 for Outlook (COM add-in) Playbook](https://aka.ms/OutlookCOMPlaybook).
 

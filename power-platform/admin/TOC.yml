@@ -360,6 +360,8 @@
           href: security-roles-privileges.md
         - name: Create users and assign security roles
           href: create-users-assign-online-security-roles.md
+        - name: Opt-out of automatic license-based user roles management
+          href: opt-out-automatic-license.md
         - name: Use service admin roles to manage your tenant
           href: use-service-admin-role-manage-tenant.md
         - name: Miscellaneous privileges
@@ -771,6 +773,7 @@
               href: why-email-message-sent-have-pending-send-status.md 
           - name: Recover from Exchange Server failure
             href: recover-from-exchange-server-failure.md 
+       # Leave this commented out as this topic should not appear in the TOC. For context-sensitive help link.
        #   - name: When would I want to use this check box?
        #     href: when-would-want-use-check-box.md
     - name: Extend with integration and solutions
@@ -910,7 +913,6 @@
       href: manage-product-catalog-configuration.md 
     - name: Rich text experience for appointment activities
       href: enable-rich-text-experience.md
-
   - name: "Reference: Videos and PowerPoint presentations"
     href: videos.md
   - name: Important changes (deprecations) coming

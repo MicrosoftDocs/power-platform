@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/10/2020
+ms.date: 05/19/2021
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -21,7 +21,7 @@ Use Behavior settings to adjust how model-driven apps in Dynamics 365, such as D
 
 These settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Product** >**Behavior**.
 
-Make sure you have the System Administrator or System Customizer security role or equivalent permissions to update the business closures.
+Make sure you have the System Administrator security role or equivalent permissions to update the business closures.
 
 **Check your security role**
 

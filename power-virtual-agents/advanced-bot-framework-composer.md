@@ -148,7 +148,9 @@ Cannot use `# getUserName  - my name is {username=userName}` in Composer
 - Testing in Bot Framework Emulator  
 All Composer content should be published and then tested in Power Virtual Agents  
 
+
 ## Examples
+
 
 To help you get started using Composer, we've created four examples that detail different scenarios:
 

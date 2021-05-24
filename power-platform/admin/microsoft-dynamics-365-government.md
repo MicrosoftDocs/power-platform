@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/06/2021
+ms.date: 05/19/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -27,7 +27,7 @@ In response to the unique and evolving requirements of the United States public 
 - Microsoft Dynamics 365 Talent
 - Microsoft Dynamics 365 Customer Service Insights
 - Microsoft Dynamics 365 Market Insights
-- Microsoft Dynamics 365 Sales
+- Microsoft Dynamics 365 Sales Insights
 
 ## About Dynamics 365 US Government environments and plans
 
