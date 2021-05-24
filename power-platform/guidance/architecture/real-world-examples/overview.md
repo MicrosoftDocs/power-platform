@@ -1,0 +1,7 @@
+- [Using Azure function to extend functionality to a canvas app ](azure-function-canvas.md)
+- [Using Business Process Flows, the Common Data Service, “Codeless” Custom Connectors and Power Automate with Canvas App](bpf-dataverse-powerautomate.md)
+- [Using Rest APIs via Custom Connectors with canvas apps](custom-connector-canvas.md)
+- [Using Microsoft Dataverse with a Power Apps canvas app ](dataverse-canvas-app.md)
+- [Using Azure function to extend functionality to a canvas app ](azure-function-canvas.md)
+- [Using Azure function to extend functionality to a canvas app ](azure-function-canvas.md)
+- [Using Azure function to extend functionality to a canvas app ](azure-function-canvas.md)
