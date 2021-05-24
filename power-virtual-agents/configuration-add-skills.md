@@ -47,9 +47,9 @@ First, [create a Power Virtual Agents bot](authoring-first-bot.md) and [create a
 >[!NOTE]
 >Power Virtual Agents only supports skills built using [Bot Framework SDK version 4.7](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0&preserve-view=true) or above.
 
-Before registering the skill, provide the bot's ID to your skills developer to authorize the bot to call actions in the skill. [Learn more about skill allow list](/azure/bot-service/skill-implement-skill).
+Before registering the skill, provide the bot's ID to your skills developer to authorize the bot to call actions in the skill. [Learn more about skill allowlist](/azure/bot-service/skill-implement-skill).
 
-**Add bot to skill's allow list:**
+**Add bot to skill's allowlist:**
 
 1. In the [Power Virtual Agents portal](https://web.powerva.microsoft.com), on the side navigation pane, expand the **Manage** menu and select **Skills**.
 
@@ -57,7 +57,7 @@ Before registering the skill, provide the bot's ID to your skills developer to a
 
 1. At the top of the skills page, select **Provide ID for allow list**.
  
-   ![Select Provide id for allow list button](media/skills-provide-id.png)
+   ![Select Provide ID for allow list button](media/skills-provide-id.png)
 
 1. A window will show with your unique ID. Copy this ID and provide it to your skills developer.
 
