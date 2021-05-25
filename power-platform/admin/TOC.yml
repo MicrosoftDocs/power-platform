@@ -338,6 +338,9 @@
         href: admin-view-user-licenses.md
       - name: Create users and assign security roles
         href: create-users-assign-online-security-roles.md
+        # comment out before publishing to live
+      - name: Manage application users
+        href: manage-application-users.md
       - name: Delete users
         href: delete-users.md
       - name: Reset a user's password

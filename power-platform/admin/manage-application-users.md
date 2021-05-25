@@ -1,5 +1,5 @@
 ---
-title: "Manage application user from the Power Platform admin center  | MicrosoftDocs"
+title: "Manage application users in the Power Platform admin center  | MicrosoftDocs"
 description: How to manage application users from the Power Platform admin center  
 author: paulliew
 ms.author: paulliew
@@ -16,9 +16,9 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Manage application user from the Power Platform admin center
+# Manage application users in the Power Platform admin center
 
-We are in the process of moving application user management from the legacy web client as documented in [Enable or disable application users](create-users-assign-online-security-roles.md#enable-or-disable-user-accounts). Follow these steps to manage application users from the Power Platform admin center.
+We are in the process of moving application user management from the legacy web client as documented in [Enable or disable application users](create-users-assign-online-security-roles.md#enable-or-disable-user-accounts). Follow these steps to manage application users in the Power Platform admin center.
 
 ## View application users in an environment 
 
@@ -30,7 +30,7 @@ We are in the process of moving application user management from the legacy web 
 
 4. Select **Users + permissions**, and then select **Users**.
 
-On the **Application Users** page you can view and manage application users.  
+On the **Application users** page you can view and manage application users.  
 
 :::image type="content" source="media/manage-application-user.png" alt-text="Manage application users":::
 
