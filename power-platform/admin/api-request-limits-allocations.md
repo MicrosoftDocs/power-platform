@@ -73,7 +73,7 @@ Each capacity add-on raises the request limits by another 10,000 per 24 hours. M
 
 ## Requests limits not based on licensed users or flows
 
-The Dataverse enables you to have identities that do not require any user license to interact with the service. There are four types of
+Dataverse enables you to have identities that do not require any user license to interact with the service. There are four types of
 these users:
 
 -   [Application users](create-users-assign-online-security-roles.md#create-an-application-user)
