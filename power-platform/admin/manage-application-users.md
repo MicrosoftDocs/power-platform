@@ -26,7 +26,7 @@ We are in the process of moving application user management from the legacy web 
 
 2. Select **Environments**, and then select an environment from the list.
 
-3. Select **Open environment**.
+3. Select **Settings**.
 
 4. Select **Users + permissions**, and then select **Users**.
 
@@ -46,7 +46,7 @@ In an environment, only one application user for each Azure AD registered applic
 
 2. Select **Environments**, and then select an environment from the list.
 
-3. Select **Open environment**.
+3. Select **Settings**.
 
 4. Select **Users + permissions**, and then select **Users**.
 
@@ -68,23 +68,52 @@ In an environment, only one application user for each Azure AD registered applic
 
 9. For the final step, select **Create** to create the new application user.
 
+## View/edit the details of an application user 
 
+1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com) as an admin. 
 
+2. Select **Environments**, and then select an environment from the list.
 
+3. Select **Settings**.
 
+4. Select **Users + permissions**, and then select **Application users**.
 
+5. Select an application user, and then select **Details**.
 
+   :::image type="content" source="media/application-user-details.png" alt-text="Select application user details":::
 
+The **Details** page shows the following properties for the application user: 
+- name 
+- Azure application ID
+- state
+- assigned security roles 
+- app type 
+- business unit
+- email address 
+ 
+The business unit, email address, and security roles can be edited.
 
+:::image type="content" source="media/application-user-details-page.png" alt-text="The application user details page":::
 
-8. 
+## Sync the application user name with the Azure AD application name  
 
+When an application user is first created, the user name is the same as the name of the registered Azure AD application. The two names can be out of sync when the name of Azure AD application gets changed. You can make the application user name sync with the Azure AD application by selecting **Refresh** on the **Details** page. 
 
+> [!NOTE]
+> **Refresh** and the Azure Active Directory app name are only shown when the two names are out of sync. 
 
+:::image type="content" source="media/sync-app-user-name-azure-ad-app-name.png" alt-text="Sync the application user name with the Azure AD application name":::
 
+## Manage roles for an application user 
 
+In addition to the entry point on “Detail” panel to manage role, you can also select **Edit security Roles** on the menu bar on the **Application users** page. If the application user has roles assigned already, those roles will appear as selected on the page. You can manage the roles by selecting or unselecting roles and then select **Save**.  After saving, all selected roles become the current assigned roles for the application users.  Unselected roles will not be assigned to the application users.  
 
+:::image type="content" source="media/application-user-edit-security-roles.png" alt-text="Editing security roles for an application user":::
 
+## Activate/deactivate application users 
 
+To activate an application user, on the **Application user** page, select **Activate** on the menu bar.  Then select **Activate** in the confirmation dialog.  
 
+:::image type="content" source="media/activate-application-user.png" alt-text="Activate an application user"::: 
 
+To deactivate an application user, on the **Application user** page, select **Deactivate** on the menu bar. Then select **Deactivate** in the confirmation dialog.  
