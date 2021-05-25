@@ -106,7 +106,7 @@ When an application user is first created, the user name is the same as the name
 
 ## Manage roles for an application user 
 
-In addition to the entry point on “Detail” panel to manage role, you can also select **Edit security Roles** on the menu bar on the **Application users** page. If the application user has roles assigned already, those roles will appear as selected on the page. You can manage the roles by selecting or unselecting roles and then select **Save**.  After saving, all selected roles become the current assigned roles for the application users.  Unselected roles will not be assigned to the application users.  
+In addition to the entry point on “Detail” panel to manage role, you can also select **Edit security Roles** on the menu bar on the **Application users** page. If the application user has roles assigned already, those roles will appear as selected on the page. You can manage the roles by selecting or deselecting roles and then select **Save**.  After saving, all selected roles become the current assigned roles for the application users.  Unselected roles will not be assigned to the application users.  
 
 :::image type="content" source="media/application-user-edit-security-roles.png" alt-text="Editing security roles for an application user":::
 
