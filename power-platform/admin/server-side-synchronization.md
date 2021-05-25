@@ -4,7 +4,7 @@ description: Server-side synchronization provides direct apps-to-email server sy
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/12/2021
+ms.date: 05/25/2021
 author: revachauhan
 ms.author: rechauha
 ms.reviewer: jimholtz
