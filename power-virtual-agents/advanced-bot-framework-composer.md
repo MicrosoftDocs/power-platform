@@ -80,20 +80,9 @@ Your Power Virtual Agents bot is now open in Composer and you are ready to start
 >[!NOTE]
 > In some cases, Power Virtual Agents might be unable to launch Composer automatically. However, you can launch it manually from your browser by selecting **Copy Link** to copy and paste the link to the Composer in your web browser.
 
-## Examples for integrating Composer into chatbots
-
-
-To help you get started using Composer, we've created four examples that detail different scenarios:
-
-- [Example 1 - Show an Adaptive Card in Power Virtual Agents](advanced-bot-framework-composer-example1.md)
-- [Example 2 - Display a multi-select options list in Power Virtual Agents](advanced-bot-framework-composer-example2.md)
-- [Example 3 - Use Bing Search as a fallback in Power Virtual Agents](advanced-bot-framework-composer-example3.md)
-- [Example 4 - Display a form with a Submit button in Power Virtual Agents](advanced-bot-framework-composer-example4.md)
-
-
 
 ## Guidelines for creating bot content for Power Virtual Agents in Composer
-When opened from a Power Virtual Agents bot, Composer launches a **Composer project** on your PC and loads your bot content into it.
+When opened from a Power Virtual Agents bot, Composer launches a **Composer project** and loads your bot content into it.
 
 The **main (root) dialog** in your **Composer project** is the same as the project name you gave it. It corresponds to your Power Virtual Agents bot content. In this example, your **main (root) dialog** is **Contoso-Meal-Delivery-Service**: 
 
@@ -164,7 +153,6 @@ All Composer content should be published and then tested in Power Virtual Agents
 
 
 
-
 ## Use and update Power Virtual Agents variables in Bot Framework Composer
 
 You can use and update the values in Power Virtual Agents global variables in Bot Framework Composer by referencing the following scope:
@@ -179,6 +167,16 @@ This setting makes the Power Virtual Agents variable **user_city** available in 
  ```JSON
 ${virtualagent.user_city} 
 ```
+
+## Examples for extending Power Virtual Agents chatbots with Composer
+
+
+To help you get started using Composer, we've created four examples that detail different scenarios:
+
+- [Example 1 - Show an Adaptive Card in Power Virtual Agents](advanced-bot-framework-composer-example1.md)
+- [Example 2 - Display a multi-select options list in Power Virtual Agents](advanced-bot-framework-composer-example2.md)
+- [Example 3 - Use Bing Search as a fallback in Power Virtual Agents](advanced-bot-framework-composer-example3.md)
+- [Example 4 - Display a form with a Submit button in Power Virtual Agents](advanced-bot-framework-composer-example4.md)
 
 ## Capture telemetry with Application Insights
 
@@ -218,11 +216,11 @@ After you successfully publish your Bot Framework content, you can use the Power
 >The Bot Framework Emulator cannot be used to test Composer content created for Power Virtual Agents bots. 
 
 ## Troubleshooting
-If you're having trouble publishing your Bot Framework Composer content to Power Virtual Agents, you can use the **See Log** feature in the **Publish** tab in Composer. The log will provide a detailed description of the errors encountered during validation. Select your bot and then select the caret icon to see the publication history.
+If you're having trouble publishing your Bot Framework Composer content to Power Virtual Agents, you can use the **See Log** feature in the **Publish** tab in Composer. The log will provide a detailed description of the errors encountered during validation. Select your bot and then select the caret icon to see the publish history.
 
 :::image type="content" source="media/Composer_Troubleshooting/TL_PublishHistory.png" alt-text="Composer Publish - See Log":::
 
-Selecting the log will bring up the list of warnings and errors that were encountered during the publication process in Composer, along with suggestions on how to fix the errors:
+Selecting the log will bring up the list of warnings and errors that were encountered during the publish history in Composer, along with suggestions on how to fix the errors:
 
 :::image type="content" source="media/Composer_Troubleshooting/Tl_PublishError.png" alt-text="Composer Publish - warnings and errors":::
 

@@ -143,7 +143,7 @@ Use the **Begin a PVA Topic** action to call the Power Virtual Agents bot's **En
 
 :::image type="content" source="media/Composer_Example4/E4_call_PVA_End_of_Conversation.png" alt-text="Composer - call Power Virtual Agents topic.":::
 
-You are now ready to add you Composer content to your Power Virtual Agents bot. Go to the **Publish** tab in Composer and publish it to your Power Virtual Agents bot.
+You are now ready to add your Composer content to your Power Virtual Agents bot. Go to the **Publish** tab in Composer and publish it to your Power Virtual Agents bot.
 
 Once your new Composer content is successfully published, you can now see that **StartTrial** was added to the **Topics** page in Power Virtual Agents.
 

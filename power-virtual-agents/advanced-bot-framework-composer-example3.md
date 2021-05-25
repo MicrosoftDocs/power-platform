@@ -112,7 +112,7 @@ Go to the **Create** tab in Composer and select the **Unknown intent** trigger. 
 
 :::image type="content" source="media/Composer_Example3/E3_BingSearch_addBotReponse_BingSearch.png" alt-text="Composer BeginDialog - Send a response.":::
 
-You are now ready to add you Composer content to your Power Virtual Agents bot. Go to the **Publish** tab in Composer and publish it to your Power Virtual Agents bot.
+You are now ready to add your Composer content to your Power Virtual Agents bot. Go to the **Publish** tab in Composer and publish it to your Power Virtual Agents bot.
 
 Once your new Composer content is successfully published, you can now see that **OnUnknownIntent** was added to the **Topics** page in Power Virtual Agents.
 
