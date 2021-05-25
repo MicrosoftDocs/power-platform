@@ -22,33 +22,33 @@ We are in the process of moving application user management from the legacy web 
 
 ## View application users in an environment 
 
-1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com) as an admin. 
+1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com) as a System Administrator. 
 
 2. Select **Environments**, and then select an environment from the list.
 
 3. Select **Settings**.
 
-4. Select **Users + permissions**, and then select **Users**.
+4. Select **Users + permissions**, and then select **Application users**.
 
 On the **Application users** page you can view and manage application users.  
 
 :::image type="content" source="media/manage-application-user.png" alt-text="Manage application users":::
 
-The Custom app type is a partner application in Microsoft Azure Active Directory.
+The Custom app type is your local app registration as created in your Microsoft Azure Active Directory.
 
-## Create a partner application user 
+## Create an application user 
 
 You can create an unlicensed application user in your environment. This application user will be given access to your environment's data on behalf of the end user who is using your application.  
 
 In an environment, only one application user for each Azure AD registered application is supported.   
 
-1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com) as an admin. 
+1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com) as a System Administrator. 
 
 2. Select **Environments**, and then select an environment from the list.
 
 3. Select **Settings**.
 
-4. Select **Users + permissions**, and then select **Users**.
+4. Select **Users + permissions**, and then select **Application users**.
 
 5. Select **+ New app user** to open the **Create a new app user** page.
 
@@ -70,7 +70,7 @@ In an environment, only one application user for each Azure AD registered applic
 
 ## View/edit the details of an application user 
 
-1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com) as an admin. 
+1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com) as a System Administrator. 
 
 2. Select **Environments**, and then select an environment from the list.
 
