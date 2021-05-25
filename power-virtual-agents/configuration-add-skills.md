@@ -47,9 +47,9 @@ First, [create a Power Virtual Agents bot](authoring-first-bot.md) and [create a
 >[!NOTE]
 >Power Virtual Agents only supports skills built using [Bot Framework SDK version 4.7](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0&preserve-view=true) or above.
 
-Before registering the skill, provide the bot's ID to your skills developer to authorize the bot to call actions in the skill. [Learn more about skill allow list](/azure/bot-service/skill-implement-skill).
+Before registering the skill, provide the bot's ID to your skills developer to authorize the bot to call actions in the skill. [Learn more about skill allowlist](/azure/bot-service/skill-implement-skill).
 
-**Add bot to skill's allow list:**
+**Add bot to skill's allowlist:**
 
 1. In the [Power Virtual Agents portal](https://web.powerva.microsoft.com), on the side navigation pane, expand the **Manage** menu and select **Skills**.
 
@@ -57,7 +57,7 @@ Before registering the skill, provide the bot's ID to your skills developer to a
 
 1. At the top of the skills page, select **Provide ID for allow list**.
  
-   ![Select Provide id for allow list button](media/skills-provide-id.png)
+   ![Select Provide ID for allow list button](media/skills-provide-id.png)
 
 1. A window will show with your unique ID. Copy this ID and provide it to your skills developer.
 
@@ -95,10 +95,10 @@ To add a skill, it must first be registered <br/>(`APPID_NOT_IN_TENANT`) | Check
 The link isn't valid; The link must begin with https:// <br/>(`URL_MALFORMED`, `URL_NOT_HTTPS`) | Re-enter the link as a secure URL. |
 The manifest is too large; <br/>(`MANIFEST_TOO_LARGE`)| Check size of the manifest. It must be less than or equal to 500KB. |
 This skill has already been added to your bot. <br/>(`MANIFEST_ALREADY_IMPORTED`)| Delete the skill and try registering again. |
-The skill is limited to 25 actions. <br/>(`LIMITS_TOO_MANY_ACTIONS`)|There are too many skill actions defined in skill manifest. Remove actions and try again. |
+The skill is limited to 100 actions. <br/>(`LIMITS_TOO_MANY_ACTIONS`)|There are too many skill actions defined in skill manifest. Remove actions and try again. |
 Actions are limited to 25 inputs. <br/>(`LIMITS_TOO_MANY_INPUTS`)|There are too many skill action input parameters. Remove parameters and try again. |
 Actions are limited to 25 outputs. <br/>(`LIMITS_TOO_MANY_OUTPUTS`)|There are too many skill action output parameters. Remove parameters and try again. |
-Your bot can have a maximum of 25 skills. <br/>(`LIMITS_TOO_MANY_SKILLS`)| There are too many skills added into a bot. Remove an existing skill and try again. |
+Your bot can have a maximum of 100 skills. <br/>(`LIMITS_TOO_MANY_SKILLS`)| There are too many skills added into a bot. Remove an existing skill and try again. |
 It looks like something went wrong.<br/>(`AADERROR_OTHER`)|There was a transient error while validating your skill. Retry.|
 Something went wrong while checking your skill. <br/>(`ENDPOINT_HEALTHCHECK_FAILED`, `HEALTH_PING_FAILED`) | Check if your skill endpoint is online and responding to messages.|
 This skill has not allow-listed your bot <br/>(`ENDPOINT_HEALTHCHECK_UNAUTHORIZED`) | Check if your bot has been added to the skills allowlist. [Learn more about adding a skill to the allowlist](#configure-a-skill-for-use-in-power-virtual-agents). |
