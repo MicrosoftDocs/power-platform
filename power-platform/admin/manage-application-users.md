@@ -20,6 +20,9 @@ search.app:
 
 We are in the process of moving application user management from the legacy web client as documented in [Enable or disable application users](create-users-assign-online-security-roles.md#enable-or-disable-user-accounts). Follow these steps to manage application users in the Power Platform admin center.
 
+> [!NOTE]
+> At present, deleting and application user is not supported.
+
 ## View application users in an environment 
 
 1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com) as a System Administrator. 
