@@ -18,7 +18,7 @@ Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
 > - [Power Virtual Agents web app](admin-share-bots.md)
-> - [Power Virtual Agents app in Microsoft Teams](/teams/admin-share-bots-teams.md)
+> - [Power Virtual Agents app in Microsoft Teams](teams/admin-share-bots-teams.md)
 
 Share your bot with other users so multiple users can edit, manage, and collaborate on a bot. 
 
