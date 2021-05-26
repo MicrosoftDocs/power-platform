@@ -117,7 +117,7 @@ To create an environment with a database, you need 1GB available database capaci
 
 ### Steps
 
-1. In the Power Platform admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin, Global admin, or Microsoft Power Platform admin).
+1. Sign in to the Power Platform admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin, Global admin, or Microsoft Power Platform admin).
 2. In the navigation pane, select **Environments**, and then select **New**.
 
    > [!div class="mx-imgBorder"] 
@@ -157,7 +157,7 @@ You can create an environment without a database and use your own data store.
 You need 1GB available database capacity.
 
 ### Steps
-1. In the Power Platform admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin, Global admin, or Power Platform admin).
+1. Sign in to the Power Platform admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin, Global admin, or Power Platform admin).
 
 2. In the navigation pane, select **Environments**, and then select **New**.
 
@@ -187,7 +187,7 @@ You can indicate how often you would prefer an environment to receive updates an
 
 To set refresh cadence:
 
-1. In the Power Platform admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin, Global admin, or Power Platform admin).
+1. Sign in to the Power Platform admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin, Global admin, or Power Platform admin).
 
 2. From the left-side menu, select **Environments**, and then select an environment.
 

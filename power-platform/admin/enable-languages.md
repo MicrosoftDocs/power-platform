@@ -39,7 +39,7 @@ Make sure you have the System Administrator or System Customizer security role o
 
  Before users can start using a Language Pack to display a language, the Language Pack must be enabled in your organization.  
 
-1. In the Power Platform admin center. 
+1. Sign in to the Power Platform admin center. 
 
 2. Select an environment and go to **Settings** > **Product** > **Languages**.
 

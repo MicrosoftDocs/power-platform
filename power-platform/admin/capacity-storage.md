@@ -46,7 +46,7 @@ To see whether you have any of these licenses, sign in to the Microsoft 365 admi
 
 ## Verifying your new storage model
 
-1. In the Power Platform admin center, and then select an environment. 
+1. Sign in to the Power Platform admin center, and then select an environment. 
 
 2. Select **Resources** > **Capacity** > **Summary** tab.
 
