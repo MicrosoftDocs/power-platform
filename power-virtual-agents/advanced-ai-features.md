@@ -69,7 +69,7 @@ After you save the changes in the **Topic overlap details** pane, the overlappin
 
 This feature analyzes sessions between your bot and users and surfaces suggestions for you based on unmatched user input.
 
-[Once enabled](#enable-or-disable-ai-capabilities), go to **Analytics** on the side navigation pane, then go to the **Topic triggering (preview)**. A list of potential topics will be shown, with the number of times a query about this topic was made by users of the bot. The tio 200 suggestions will be shown.
+[Once enabled](#enable-or-disable-ai-capabilities), go to **Analytics** on the side navigation pane, then go to the **Topic triggering (preview)**. A list of potential topics will be shown, with the number of times a query about this topic was made by users of the bot. The top 200 suggestions will be shown.
 
 :::image type="content" source="media/advanced-ai-features/topic-suggestions.png" alt-text="Screenshot of the Topic suggestions tile showing a list of suggestions.":::
 
