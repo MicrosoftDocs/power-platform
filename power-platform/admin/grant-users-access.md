@@ -4,11 +4,12 @@ description: "Learn to create users, assign licenses, and set administrative rol
 author: jimholtz
 ms.author: jimholtz
 ms.reviewer: jimholtz
-ms.custom: "admin-security"
+ms.custom: 
+  - "admin-security"
+  - "intro-internal"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.custom: intro-internal
 ms.date: 02/23/2021
 search.audienceType: 
   - admin

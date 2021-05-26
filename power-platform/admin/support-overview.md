@@ -1,14 +1,15 @@
 ---
 title: "Support for Microsoft Power Platform and customer engagement apps in Dynamics 365 | MicrosoftDocs"
 description: Information on support for Microsoft Power Platform and customer engagement apps in Dynamics 365
-ms.custom: ""
 ms.date: 03/17/2021
 ms.reviewer: ""
 ms.service: power-platform
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-ms.custom: intro-internal
+ms.custom: 
+  - "admin-security"
+  - "intro-internal"
 applies_to: 
   - "Dynamics 365 (online)"
 author: "jimholtz"
