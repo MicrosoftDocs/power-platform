@@ -62,7 +62,7 @@ Solutions are made of solution components. You’ll use the **Solutions** area i
   
   However, an internal dependency may lead to a published dependency and still require manual intervention. For example, if you include a lookup field on an entity form and then delete the primary entity in the relationship, you can’t complete that deletion until you remove the lookup field from the related entity form and then publish the form.  
   
-  When you perform actions programmatically with solutions, you can use messages related to the `Dependency` entity. See [Dependency Entity](powerapps/developer/data-platform/reference/entities/dependency.md) for messages you can use to identify dependencies that may exist before you delete a component or uninstall a solution.  
+  When you perform actions programmatically with solutions, you can use messages related to the `Dependency` entity. See [Dependency Entity](/powerapps/developer/data-platform/reference/entities/dependency.md) for messages you can use to identify dependencies that may exist before you delete a component or uninstall a solution.  
   
 <a name="BKMK_RootSolutionComponents"></a>   
 ## Common Solution components  
