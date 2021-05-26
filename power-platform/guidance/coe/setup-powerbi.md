@@ -22,7 +22,18 @@ The Power BI dashboard provides a holistic view with visualizations and insights
 
 ![CoE Starter Kit Power BI dashboard](media/pb-1.PNG "CoE Starter Kit Power BI dashboard")
 
-You can get the CoE Power BI dashboard by downloading the Power BI file and configuring it in Power BI Desktop. This will allow you to make changes to it. You are required you to get the environment URL in order to use the Dashboard.
+## Which dashboard to download?
+
+You can get the CoE Power BI dashboard by downloading the CoE Starter Kit compressed file ([aka.ms/CoeStarterKitDownload](https://aka.ms/CoeStarterKitDownload)). **Extract the zip file** after downloading - it contains two Power BI template files, one for connecting to Dataverse with **Import** and one for connecting to Dataverse with **DirectQuery**.
+
+- You can use the **Import_yyyyMMdd.pbit** file if you have installed the CoE Starter Kit in a Production environment. Data is cached in the Power BI service and imported on a scheduled interval.
+- You must use **DirectQuery_yyyyMMdd.pbit** if you have installed the CoE Starter Kit in a Dataverse for Teams environment (those don't support Import). You can use **DirectQuery** if you have installed the CoE Starter Kit in a Production Environment, if enforcing the Dataverse security model is important. The maximum size limit for query results is 80 MB, so depending on the size of your tenant you may hit limits.
+
+Learn more:
+
+- [Connect to Dataverse using the connector in Power BI](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-powerbi-connector#connect-to-dataverse-using-the-connector)
+- [Limitations us using SQL to query data](https://docs.microsoft.com/powerapps/developer/data-platform/dataverse-sql-query#limitations)
+- [Troubleshooting connection problems](https://docs.microsoft.com/powerapps/developer/data-platform/dataverse-sql-query#troubleshooting-connection-problems)
 
 > [!NOTE]
 > - Before setting up the Power BI dashboard, you must have installed the [CoE core components solution](setup-core-components.md).<br>
@@ -58,18 +69,6 @@ You need the environment URL of the Microsoft Power Platform environment the CoE
 ## Configure the Power BI dashboard
 
 You can configure and modify the Power BI dashboard by working directly with the Power BI (.pbit) file and Power BI Desktop. This gives you flexibility in terms of modifying the dashboard to your own branding, and including (or excluding) pages or visuals you want to see (or not see) in the dashboard.
-
->[!IMPORTANT]
-> The Power BI Dashboard is available for **Import** and **DirectQuery** connectivity mode. Two separate Power BI Template (.pbit) files are provided.
->
-> You can use **Import** if you have installed the CoE Starter Kit in a Production environment. Data is cached in the Power BI service and imported on a scheduled interval.
-> You must use **DirectQuery** if you have installed the CoE Starter Kit in a Dataverse for Teams environment (those don't support Import). You can use **DirectQuery** if you have installed the CoE Starter Kit in a Production Environment, if enforcing the Dataverse security model is important. The maximum size limit for query results is 80 MB, so depending on the size of your tenant you may hit limits.
->
-> Learn more:
->
-> - [Connect to Dataverse using the connector in Power BI](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-powerbi-connector#connect-to-dataverse-using-the-connector)
-> - [Limitations us using SQL to query data](https://docs.microsoft.com/powerapps/developer/data-platform/dataverse-sql-query#limitations)
-> - [Troubleshooting connection problems](https://docs.microsoft.com/powerapps/developer/data-platform/dataverse-sql-query#troubleshooting-connection-problems)
 
 1. Download and install [Microsoft Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=58494).
 
