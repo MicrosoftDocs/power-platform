@@ -53,7 +53,7 @@ Sign in to https://admin.powerplatform.microsoft.com and do the following steps.
 
 
 
-https://docs.microsoft.com/en-us/onedrive/find-your-office-365-tenant-id
+https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id
 
 
 

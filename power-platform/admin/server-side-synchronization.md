@@ -4,7 +4,7 @@ description: Server-side synchronization provides direct apps-to-email server sy
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/12/2021
+ms.date: 05/25/2021
 author: revachauhan
 ms.author: rechauha
 ms.reviewer: jimholtz
@@ -64,6 +64,8 @@ If the mailbox is enabled for appointments, contacts, and tasks and incoming ema
  Some features offered by server-side synchronization include the following:  
   
 - **Sent Items folder**: If your server version is 9.1.0000.16819 or later, email messages sent from Dynamics 365 apps by using a server-side synchronization&ndash;enabled Exchange mailbox will be visible in the **Sent Items** folder in the Exchange sender's mailbox. To determine your version, sign in, and in the upper-right corner of the screen, select **Settings** ![User profile Settings button](media/user-profile-settings-button.png) > **About**.  
+
+  **Note**: This functionality can be disabled by toggling the SSSSaveOutgoingEmailToExchangeSentFolder [OrgDbOrgSetting](https://support.microsoft.com/en-us/topic/orgdborgsettings-tool-for-microsoft-dynamics-crm-20a10f46-2a24-a156-7144-365d49b842ba) to false. 
 
 - **Email folder tracking**: You can simply drag email to a folder to track it. Folder tracking works on any mobile device that supports [!INCLUDE[pn_Microsoft_Exchange](../includes/pn-microsoft-exchange.md)], which means you can track email from just about any device.  
   

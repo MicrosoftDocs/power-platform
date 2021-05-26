@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/11/2021
+ms.date: 05/25/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -80,7 +80,7 @@ If a user was assigned a Power Apps license then you can take the following step
 
 5. Find the Power Apps license, uncheck the box and select **Save changes**.
 
-    ![Remove license](./media/signup-question-and-answer/remove-license.png)
+   ![Remove license](./media/signup-question-and-answer/remove-license.png)
 
 If a user has access to Power Apps through their Microsoft 365 and Dynamics 365 plan license, then you can disable their access to the Power Apps service by taking the following steps:
 

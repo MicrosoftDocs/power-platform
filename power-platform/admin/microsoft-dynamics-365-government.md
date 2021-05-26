@@ -1,11 +1,11 @@
 ---
 title: "Dynamics 365 US Government overview"
-description: "Learn about features that are specific to Microsoft Dynamics 365 US Government." 
+description: "Learn about features that are specific to Microsoft Dynamics 365 US Government as public sector customers deploy into government community cloud (GCC)." 
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/06/2021
+ms.date: 05/19/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -18,11 +18,7 @@ search.app:
 
 # Dynamics 365 US Government 
 
-Microsoft has responded to the unique and evolving requirements of the public sector by creating Microsoft Dynamics 365 US Government. This release is available to qualified United States government entities.
- 
-Dynamics 365 US Government includes a continuity of protected environments that were originally branded Microsoft CRM Online Government. This release includes protections available to the government community cloud, under the new brand. The brand represents four discrete functions: Sales, Customer Service, Field Service, and Project Service Automation. 
-
-This section provides an overview of features specific to Dynamics 365 US Government. Note that the apps listed below do not provide the compliance commitments or acquisition regulations documented in the Service Description.
+In response to the unique and evolving requirements of the United States public sector, Microsoft has created Microsoft Dynamics 365 US Government that is available to qualified government tables in the United States. On October 11, 2016, Microsoft announced the next generation of intelligent business applications in the cloud under the brand Microsoft Dynamics 365. To this end, Microsoft Dynamics 365 US Government entails a continuity of the protected environment that was originally branded Microsoft CRM Online Government where the protections afforded to the government community cloud under the new brand are now represented by four discrete functions: Sales, Customer Service, Field Service, and Project Service Automation. This section provides an overview of features that are specific to Microsoft Dynamics 365 US Government.  It is important to note that the following Microsoft Dynamics 365 apps do not provide the compliance commitments or acquisition regulations documented in this Service Description:
 
 - Microsoft Dynamics 365 Business Central
 - Microsoft Dynamics 365 Marketing
@@ -31,23 +27,15 @@ This section provides an overview of features specific to Dynamics 365 US Govern
 - Microsoft Dynamics 365 Talent
 - Microsoft Dynamics 365 Customer Service Insights
 - Microsoft Dynamics 365 Market Insights
-- Microsoft Dynamics 365 Sales
+- Microsoft Dynamics 365 Sales Insights
 
 ## About Dynamics 365 US Government environments and plans
 
-Dynamics 365 US Government has been generally available to customers through deployment into the Government Community Cloud (GCC) since January 2015. Including other compliance commitments and reviews as documented in the Microsoft Trust Center, the service received several agency Authorities to Operate (ATOs) since that time. It was the first Cloud Solution Provider (CSP) to achieve a FedRAMP Joint Application Board Provisional Authority to Operate (JAB P-ATO) through the JAB Accelerated Process. In March 2018, the service level was granted a FedRAMP JAB High P-ATO.  
+Dynamics 365 US Government has been Generally Available to customers through deployment into the Government Community Cloud (GCC) since January, 2015.  Among other compliance commitments and reviews as documented in the Microsoft Trust Center, the service has received several agency Authority to Operate (ATOs) since that time.  It was the first Cloud Solution Provider (CSP) to achieve a FedRAMP Joint Application Board Provisional Authority to Operate (JAB P-ATO) through the JAB Accelerated Process.  In March, 2018, the service impact level was granted a FedRAMP JAB High P-ATO.  
 
-Beginning in April 2019, eligible customers can choose to deploy Dynamics 365 US Government to the “GCC High” environment. This enables single sign-on (SSO) and seamless integration with Microsoft 365 GCC High deployments.  
+Beginning April, 2019, eligible customers may now choose to deploy Dynamics 365 US Government to the “GCC High” environment, which enables single sign-on and seamless integration with Microsoft 365 GCC High deployments.  Microsoft has designed the platform and our operational procedures to meet the requirements aligning with the DISA SRG IL4 compliance framework.  We anticipate our US Department of Defense contractor customer base and other Federal agencies currently leveraging Microsoft 365 GCC High to use the Dynamics 365 US Government GCC High deployment option, which enables and requires the customer to leverage Azure AD Government for customer identities, in contrast to GCC which leverages Public Azure AD.  For our US Department of Defense contractor customer base, Microsoft operates the service in a manner that enables these customers to meet ITAR commitment and DFARS acquisition regulations, as documented and required by their contracts with the US Department of Defense.
 
-Microsoft designed the platform and operational procedures to meet the requirements that align with the DISA SRG IL4 compliance framework. Anticipated U.S. Department of Defense contractor customer base and other Federal agencies currently leverage Microsoft 365 GCC High to use the Dynamics 365 US Government GCC High deployment option. This enables and requires customers to implement Azure AD Government for customer identities. Also this in contrast to GCC, which applies global Azure AD. For U.S. Department of Defense contractor customer base, Microsoft operates the service in a manner that enables customers to meet ITAR commitment and DFARS acquisition regulations. This is documented and required by most contracts with the US Department of Defense.
-
-Dynamics 365 US Government plans are available to qualified government and private entities and is limited to the following: 
-
-- U.S. federal, state, local, tribal, and territorial government tables
-- Private tables using Dynamics 365 US Government to provide solutions to a government table, or a qualified member of the cloud community
-- Private tables with customer data subject to government regulations that use of Dynamics 365 US Government, or an  appropriate service that meets the regulatory requirements
-
-Access to Dynamics 365 US Government plans is restricted to the offerings described below. Microsoft offers each of these releases as a monthly subscription, which can be licensed to an unlimited number of users.
+Dynamics 365 US Government plans are available to qualified government and private tables, limited to (i) United States (US) federal, state, local, tribal, and territorial government tables; (ii) private tables using Dynamics 365 US Government to provide solutions to a government table or a qualified member of the cloud community; and (iii) private tables with customer data subject to government regulations for which the use of Dynamics 365 US Government is the appropriate service to meet the regulatory requirements. Access to Dynamics 365 US Government plans is restricted to the offerings described below, each plan is offered as a monthly subscription and can be licensed to an unlimited number of users:
 
 ### Dynamics 365 US Government – GCC User Subscription Licenses
 
@@ -68,7 +56,7 @@ Access to Dynamics 365 US Government plans is restricted to the offerings descri
 ### Dynamics 365 US Government – GCC AddOns
 
 - Additional Portal for Government
-- Extra Portal Page Views for Government
+- Additional Portal Page Views for Government
 - Additional production Instance for Government
 - Additional Non-production Instance for Government
 - Additional Database Storage for Government
@@ -102,16 +90,14 @@ Eligible customers can purchase the above SKUs through the following purchasing 
 - GCC:  Volume Licensing (VL) and Cloud Solution Provider (CSP)
 - GCC High:  Volume Licensing (VL)
 
-GCC SKUs currently included in an Enterprise Agreement (EA) can also be obtained through a Reservation. Choose either a qualified reseller or through the Volume Licensing Service Center (VLSC). 
+GCC SKUs currently included in an Enterprise Agreement (EA) can also be obtained through Reservation either through a qualified reseller or through the Volume Licensing Service Center (VLSC). When a reservation is placed, the requested subscription is added to the established customer Tenant that same day, and the customer is billed a prorated amount based on the currently established Enterprise Agreement from the first of the month following activation of the reservation as part of the next anniversary or renewal payment cycle. Reservations are currently not available for GCC High subscriptions. For GCC High, please follow the standard addon ordering process with your reseller.
 
-When a customer places a reservation, Microsoft adds the requested subscription to the established customer Tenant on the same day. Then, the customer is billed a prorated amount based on the currently established Enterprise Agreement from the first of the month following activation of the reservation. This is part of the next anniversary or renewal payment cycle. Reservations are currently not available for GCC High subscriptions. For GCC High, follow the standard add on ordering process with your reseller.
-
-Orders placed for GCC High must be followed-up with a request to the Microsoft GCC High-order processing team using the following online form: https://aka.ms/m365usgovtenantrequest. Contact your reseller or Microsoft account manager for more information and guidance.   
+Orders placed for GCC High must be followed-up with a request to the Microsoft GCC High order processing team using the following online form: https://aka.ms/m365usgovtenantrequest. Please work with your reseller or Microsoft account manager for more information and guidance.   
 
 ## What is “customer data” and “customer content?”  
  This section describes [!INCLUDE[pn_CRM_Online_Government_shortest](../includes/pn-crm-online-government-shortest.md)] commitments that apply to customer content and to customer data.  
   
- Customer data, as defined in the Online Service Terms, means all data, including all text, sound, video, or image files, and software. These are provided to Microsoft by, or on behalf of, Customer through use of the Online Service. Customer content refers to a specific subset of customer data that has been directly created by users, such as content stored in databases through entries in [!INCLUDE[pn_crm_shortest](../includes/pn-crm-shortest.md)] tables (for example, contact information). Content is considered confidential information, and in normal service operation, is not sent over the Internet without encryption.  
+ Customer data, as defined in the Online Service Terms, means all data, including all text, sound, video, or image files, and software, that are provided to Microsoft by, or on behalf of, Customer through use of the Online Service. Customer content refers to a specific subset of customer data that has been directly created by users, such as content stored in databases through entries in [!INCLUDE[pn_crm_shortest](../includes/pn-crm-shortest.md)] tables (e.g. contact information). Content is generally considered confidential information, and in normal service operation, is not sent over the Internet without encryption.  
   
  For more information on the [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] protection of customer data, see the [Microsoft Online Services Trust Center](https://www.microsoft.com/trustcenter/cloudservices/dynamics365).  
   
@@ -154,7 +140,7 @@ Dynamics 365 US Government is designed to support the Federal Risk and Authoriza
   
 Dynamics 365 US Government has features designed to support customer’s CJIS Policy requirements for law enforcement agencies. Please visit the [Power Platform Trust Center](https://www.microsoft.com/trust-center/product-overview#office-CustomSpacingTemplate-pl2a7m4) for more detailed information related to certifications and accreditations. 
 
-Microsoft designed the platform and our operational procedures to meet the requirements aligning with the DISA SRG IL4 compliance framework. Anticipation of the US Department of Defense contractor customer base and other Federal agencies are currently deploying Microsoft 365 GCC High to use the Dynamics 365 US Government GCC High deployment option. This enables and requires customers to integrate Azure AD Government for customer identities. This is in contrast to GCC deploying Public Azure AD. For U.S. Department of Defense contractor customers, Microsoft operates the service to enable these customers to meet ITAR commitment and DFARS acquisition regulations.
+Microsoft has designed the platform and our operational procedures to meet the requirements aligning with the DISA SRG IL4 compliance framework.  We anticipate our US Department of Defense contractor customer base and other Federal agencies currently leveraging Microsoft 365 GCC High to use the Dynamics 365 US Government GCC High deployment option, which enables and requires the customer to leverage Azure AD Government for customer identities, in contrast to GCC which leverages Public Azure AD.  For our US Department of Defense contractor customer base, Microsoft operates the service in a manner that enables these customers to meet ITAR commitment and DFARS acquisition regulations
 
 ## Dynamics 365 US Government and other Microsoft services
 
@@ -168,9 +154,7 @@ Customer engagement apps provide the ability to integrate third-party applicatio
 ## Dynamics 365 US Government and Azure Services
 Azure Active Directory (Azure AD) and Azure Active Directory Government (Azure AD Government) are not part of the Dynamics 365 US Government accreditation boundary. Government customers are responsible for using ADFS to uniquely identify and authenticate their organizational users. Notwithstanding, it is important to note that Azure AD and Azure AD Government provide critical functionality to both Dynamics 365 US Government and ADFS, whose dependencies are described in detailed in the Dynamics 365 US Government SSP (Service Security Plan).
 
-When a user of an organization employing ADFS attempts to access Dynamics 365 for Customer Engagement, the user is redirected to a login page hosted on the organization’s ADFS server. The user provides his or her credentials to their organization's ADFS server, which attempts to authenticate the credentials using the organization’s existing Active Directory infrastructure. If the credentials are authenticated, the organization’s ADFS server issues a SAML (Security Assertion Markup Language) ticket containing information about the user’s identity and group membership. 
-
-The customer ADFS server signs this ticket using one half of an asymmetric key pair and it sends the ticket to Azure AD via encrypted TLS. Azure AD validates the signature using the other half of the asymmetric key pair and grants access based on the ticket. The user's identity and group membership information remain in an encrypted fashion in Azure AD; in other words, limited user-identifiable information is stored in Azure AD. Full details of the Azure AD security architecture and control implementation can be found in the Azure SSP and Azure Government SSP.  Users do not interact directly with Azure AD.
+When a user of an organization employing ADFS attempts to access Dynamics 365 for Customer Engagement, the user is redirected to a login page hosted on the organization’s ADFS server. The user provides his or her credentials to their organization's ADFS server, which attempts to authenticate the credentials using the organization’s existing Active Directory infrastructure. If the credentials are authenticated, the organization’s ADFS server issues a SAML (Security Assertion Markup Language) ticket containing information about the user’s identity and group membership. The customer ADFS server signs this ticket using one half of an asymmetric key pair and it sends the ticket to Azure AD via encrypted TLS. Azure AD validates the signature using the other half of the asymmetric key pair and grants access based on the ticket. The user's identity and group membership information remain in an encrypted fashion in Azure AD; in other words, limited user-identifiable information is stored in Azure AD. Full details of the Azure AD security architecture and control implementation can be found in the Azure SSP and Azure Government SSP.  Users do not interact directly with Azure AD.
 
 ## Dynamics 365 US Government URLs
 You use a different set of URLs to access Dynamics 365 US Government environments, as documented here:

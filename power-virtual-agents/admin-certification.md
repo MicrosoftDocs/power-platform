@@ -12,7 +12,7 @@ ms.collection: virtual-agent
 ms.cusom: "certification, ceX"
 ---
 
-# Standards compliance and certification
+# Power Virtual Agents compliance offerings
 
 Power Virtual Agents is a Core Online Service, as defined in the [Online Services Terms (OST)](https://www.microsoft.com/licensing/product-licensing/products?rtc=1#coreui-contentrichblock-4khwhqo), and is compliant with or covered by:
 - Health Insurance Portability and Accountability Act (HIPAA) coverage
