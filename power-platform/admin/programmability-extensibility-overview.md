@@ -6,6 +6,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: reference
+ms.custom: intro-internal
 ms.date: 03/19/2021
 ms.author: laswenka
 search.audienceType: 

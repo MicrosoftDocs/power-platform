@@ -8,6 +8,7 @@ ms.service: power-platform
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+ms.custom: intro-internal
 applies_to: 
   - "Dynamics 365 (online)"
 author: "jimholtz"

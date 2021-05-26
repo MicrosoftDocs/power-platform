@@ -5,6 +5,7 @@ author: dileepsinghmicrosoft
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
+ms.custom: intro-internal
 ms.date: 01/11/2021
 ms.author: dileeps
 ms.reviewer: jimholtz

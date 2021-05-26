@@ -4,7 +4,7 @@ description: Provides information about the security concepts in Microsoft Datav
 ms.date: 06/30/2020
 ms.service: power-platform
 ms.topic: "get-started-article"
-ms.assetid: 83200632-a36b-4401-ba41-952e5b43f939
+ms.custom: intro-internal
 author: jimholtz
 ms.author: jimholtz
 ms.reviewer: jimholtz
