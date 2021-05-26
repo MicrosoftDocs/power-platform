@@ -59,7 +59,9 @@ Additional information about the differences in functionality between these grou
 
 ## What is customer data and customer content?
 
-Customer data, as defined in the Online Services Terms, means all data, including all text, sound, video, or image files, and software, that are provided to Microsoft by, or on behalf of, customers through the use of the Online Service. Customer content refers to a specific subset of customer data that has been directly created by users, such as content stored in databases through entries in the [Microsoft Dataverse](/powerapps/maker/common-data-service/data-platform-intro) entities (for example, contact information). Content is generally considered confidential information and in normal service operation is not sent over the internet without encryption.
+## What is customer data and content?
+
+Customer data as defined in the Online Services Terms refers to all data, including text, alt text, sound, video, image files, and software. This includes date provided to Microsoft by or on for customers of the Online Service. 
 
 For more information on Power Apps protection of customer data, see the [Microsoft Online Services Trust Center](https://www.microsoft.com/trustcenter/cloudservices/business-application-platform/default.aspx).
 
@@ -162,7 +164,6 @@ For those customers that implement network restrictions, ensure access to the fo
 *. azure.net<br/>
 *.crm9.dynamics.com (DoD)<br/>
 *.dynamics365portals.us (DoD)
-
 
 Also, refer to the [Required IP Ranges](https://www.microsoft.com/download/confirmation.aspx?id=57063) to enable access to Dataverse environments that users and administrators may create within your tenantas well as other Azure services leveraged by the platform:
 

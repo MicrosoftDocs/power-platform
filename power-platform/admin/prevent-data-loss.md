@@ -26,7 +26,7 @@ To create, edit, or delete DLP policies, you must have either Environment Admin 
 
 ## Find and view DLP policies
 
-1. Sign in to the Power Platform admin center.
+1. In the Power Platform admin center.
 
 2. In the navigation pane, select **Data policies**. If you have a long list of policies, use the **Search** box to find specific DLP policies.
 
@@ -72,7 +72,7 @@ To create, edit, or delete DLP policies, you must have either Environment Admin 
 
 ## Edit a DLP policy
 
-1. Sign in to the Power Platform admin center.
+1. In the Power Platform admin center.
 
 2. From the list of DLP policies, select an environment, and then select **Edit Policy**. If you have a long list of policies, use the **Search** box to find specific environments.
 
@@ -92,7 +92,7 @@ To create, edit, or delete DLP policies, you must have either Environment Admin 
 
 ## Delete a DLP policy
 
-1. Sign in to the Power Platform admin center.
+1. In the Power Platform admin center.
 
 2. From the list of DLP policies, select an environment, and then select **Delete Policy**. If you have a long list of policies, use the **Search** box to find specific environments.
 
@@ -106,7 +106,7 @@ To create, edit, or delete DLP policies, you must have either Environment Admin 
 
 ## Change the default data group
 
-1. Sign in to the Power Platform admin center.
+1. In the Power Platform admin center.
 
 2. From the list of DLP policies, select an environment, and then select **Edit Policy**. If you have a long list of policies, use the **Search** box to find specific environments.
 

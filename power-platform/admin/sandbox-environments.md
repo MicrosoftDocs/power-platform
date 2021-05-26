@@ -36,7 +36,7 @@ See [Create and manage environments in the Power Platform admin center](create-e
 
 ## Change a production environment to sandbox
 
-1. Sign in to the Power Platform admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Service admin, Global admin, or Delegated admin).
+1. In the Power Platform admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Service admin, Global admin, or Delegated admin).
 
 2. From the left-side menu, select **Environments**, and then select a production environment.
 
