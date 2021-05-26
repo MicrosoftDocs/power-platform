@@ -37,7 +37,7 @@ Most solution components have a **Managed properties** menu item available in th
 contains the components, you can view&mdash;but not change&mdash;the managed properties.
 
 ## View and edit entity managed properties
-1.	Sign in to [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) (or Power Automate) and select **Solutions** from the left pane. 
+1.	Sign in to [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) or [Power Automate](https://flow.microsoft.com) and select **Solutions** from the left pane. 
 2.	Open the solution that you want. 
 3.	From the list of components in the solution, select **…** next to the entity that you want to view the managed properties, and then select **Managed properties**. 
 
