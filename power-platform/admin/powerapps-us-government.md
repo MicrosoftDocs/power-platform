@@ -163,6 +163,7 @@ For those customers that implement network restrictions, ensure access to the fo
 *.crm9.dynamics.com (DoD)<br/>
 *.dynamics365portals.us (DoD)
 
+
 Also, refer to the [Required IP Ranges](https://www.microsoft.com/download/confirmation.aspx?id=57063) to enable access to Dataverse environments that users and administrators may create within your tenantas well as other Azure services leveraged by the platform:
 
 - GCC and GCC High: (Focus on AzureCloud.usgovtexas and AzureCloud.usgovvirginia)
