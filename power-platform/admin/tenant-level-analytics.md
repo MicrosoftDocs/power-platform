@@ -24,6 +24,8 @@ Tenant admins can view reports that apply to all environments in a tenant.
 
 To access these reports, sign in to the Power Platform admin center and select **Analytics** > **Power Apps**. In the upper-right corner, select **Tenant level analytics** from the dropdown list. 
 
+:::image type="content" source="media/select-tenant-level-analytics.png" alt-text="Select tenant level analytics":::
+
 ## Who can view these reports?
 
 Admins with the following roles and a [license](pricing-billing-skus.md) can view the reports in Power Apps analytics:
