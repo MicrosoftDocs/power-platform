@@ -1,6 +1,6 @@
 ---
 title: "Package plug-ins and custom workflow activities in a solution"
-description: "Learn how to register plug-ins, steps, and custom workflow activities in a solution with Power Apps maker portal."
+description: "Learn how to register plug-ins, steps, and custom workflow activities in a solution with Power Apps."
 keywords: 
 author: mikkelsen2000
 ms.author: pemikkel
