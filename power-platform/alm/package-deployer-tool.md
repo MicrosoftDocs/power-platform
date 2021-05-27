@@ -34,7 +34,7 @@ A Visual Studio 2015 or later template (available for download) is used to creat
 
 - Ensure that you have all the solutions and files ready that you want to include in the package.  
 - Microsoft .NET Framework 4.6.2
-- [Visual Studio 2015 or later](https://visualstudio.microsoft.com/vs/older-downloads/)
+- [Visual Studio 2015 or later version](https://visualstudio.microsoft.com/vs/older-downloads/)
 - [NuGet Package Manager](https://visualstudiogallery.msdn.microsoft.com/5d345edc-2e2d-4a9c-b73b-d53956dc458d) for Visual Studio 2015
 - Microsoft Dynamics CRM SDK Templates for Visual Studio that contains the package template. You can get it by downloading the [Microsoft Dynamics CRM SDK Templates](https://go.microsoft.com/fwlink/p/?LinkId=400925) and double-click the `CRMSDKTemplates.vsix` file to install the template in Visual Studio.  
 
