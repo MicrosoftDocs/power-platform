@@ -225,7 +225,7 @@ Install an [on-premises data gateway](/powerapps/maker/canvas-apps/gateway-manag
 
 If your organization (tenant) has already configured and successfully connected the on-premises data gateway for Power BI US Government, then the process and configuration your organization executed to enable that will also enable on-premises connectivity for Power Apps. 
 
-Formerly, US Government customers had to contact support before configuring their first on-premises data gateway, as support would have to "whitelist" the tenant level for gateway use.  This is no longer necessary.  If you encounter any issues configuring or using the on-premises data gateway, you may contact support for assistance.
+Formerly, US Government customers needed to contact support before configuring their first on-premises data gateway, as support would need to "whitelist" the tenant for gateway use.  This is no longer necessary.  If you encounter any issues configuring or using the on-premises data gateway, you may contact support for assistance.
 
 ## Power Apps US Government feature limitations
 
