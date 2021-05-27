@@ -24,7 +24,7 @@ The Power Virtual Agents US Government Service Description serves as an overlay 
 
 ## Power Virtual Agents US Government plans and environments
 
-Licensing for Power Virtual Agents US Government plans are the same as for public cloud. They are available through the Volume Licensing and Cloud Solution Provider purchasing channels. For more information, see the [Assign user licenses and manage access](requirements-licensing.md) topic.
+Licensing for Power Virtual Agents US Government plans is the same as for public cloud. They are available through the Volume Licensing and Cloud Solution Provider purchasing channels. For more information, see the [Assign user licenses and manage access](requirements-licensing.md) topic.
 
 The Power Virtual Agents GCC environment is compliant with the Federal requirements for cloud services, including FedRAMP High.
 
@@ -48,14 +48,14 @@ Power Virtual Agents US Government plans are available to:
 
 Microsoft's validation of eligibility includes confirmation of handling data subject to International Traffic in Arms Regulations (ITAR), law enforcement data subject to the FBI's Criminal Justice Information Services (CJIS) Policy, or other government-regulated or controlled data. Validation may require sponsorship by a government entity with specific requirements for the handling of data.
 
-Entities with questions about eligibility for Power Virtual Agents US Government should consult their account team. Microsoft re-validates eligibility when it renews customer contracts for Power Virtual Agents US Government plans.
+Entities with questions about eligibility for Power Virtual Agents US Government should consult their account team. Microsoft revalidates eligibility when it renews customer contracts for Power Virtual Agents US Government plans.
 
 
 ## Differences between customer data and customer content
 
-Customer data, as defined in the [Online Service Terms](https://www.microsoft.com/licensing/product-licensing/products?rtc=2#coreui-contentrichblock-4khwhqo), means all data, including all text, sound, video, or image files, and software that are provided to Microsoft by, or on behalf of, customers using an Online Service.
+Customer data, as defined in the [Online Service Terms](https://www.microsoft.com/licensing/product-licensing/products?rtc=2#coreui-contentrichblock-4khwhqo), means all data, including all text, sound, video, image files, and software that is provided to Microsoft by, or on behalf of, customers using an Online Service.
 
-Customer content refers to a specific subset of customer data that has been directly created by users, such as content stored in databases through entries in the [Dataverse](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/data-platform-intro) entities (for example, contact information). Content is generally considered confidential information, and in normal service operations, is not sent through the Internet without encryption.
+Customer content refers to a specific subset of customer data that has been directly created by users, such as content stored in databases through entries in the [Dataverse](/powerapps/maker/common-data-service/data-platform-intro) entities (for example, contact information). Content is generally considered confidential information, and in normal service operations, is not sent through the Internet without encryption.
 
 For more information on how Power Virtual Agents protects customer data, see the [Microsoft Online Services Trust Center](https://www.microsoft.com/trustcenter/cloudservices/business-application-platform/default.aspx).
 
@@ -63,7 +63,7 @@ For more information on how Power Virtual Agents protects customer data, see the
 
 When provisioned as part of Power Virtual Agents US Government plans, the Power Virtual Agents service is offered in accordance with the National Institute of Standards and Technology (NIST).
 
-In addition to the logical separation of customer content at the application layer, the Power Virtual Agents US Government service provides your organization with a secondary layer of physical segregation for customer content by using infrastructure that is separate from the infrastructure used for commercial Power Virtual Agents customers. This includes using Azure services in Azure's Government Cloud. To learn more, see [Azure Government](https://azure.microsoft.com/global-infrastructure/government/).
+In addition to the logical separation of customer content at the application layer, the Power Virtual Agents US Government service provides your organization with a secondary layer of physical segregation for customer content by using infrastructure that is separate from the infrastructure used for commercial Power Virtual Agents customers. This type of usage includes using Azure services in Azure's Government Cloud. To learn more, see [Azure Government](https://azure.microsoft.com/global-infrastructure/government/).
 
 ## Customer content located within the United States
 
@@ -107,9 +107,9 @@ Power Virtual Agents US Government plans include several features that allow use
 
 Power Virtual Agents US Government services run within Microsoft datacenters in a manner consistent with a multi-tenant, public cloud deployment model; however, client applications are limited to the web-user client and are not available in Microsoft Teams. Government customers are responsible for managing client applications.
 
-Power Virtual Agents US Government plans leverage the Office 365 customer administrator UI for customer administration and billing.
+Power Virtual Agents US Government plans use the Office 365 customer administrator UI for customer administration and billing.
 
-The Power Virtual Agents US Government service maintains the actual resources, information flow, and data management, while relying on Office 365 to provide the visual styles that are presented to the customer administrator through their management console. For purposes of FedRAMP ATO inheritance, Power Virtual Agents US Government plans leverage Azure (including Azure for Government) ATOs for infrastructure and platform services, respectively.
+The Power Virtual Agents US Government service maintains the actual resources, information flow, and data management, while relying on Office 365 to provide the visual styles that are presented to the customer administrator through their management console. For purposes of FedRAMP ATO inheritance, Power Virtual Agents US Government plans use Azure (including Azure for Government) ATOs for infrastructure and platform services, respectively.
 
 If you adopt the use of Active Directory Federation Services (ADFS) 2.0 and set up policies to help ensure your users connect to the services through single sign-on, any customer content that is temporarily cached will be in the United States.
 
@@ -124,7 +124,7 @@ Power Virtual Agents US Government plans provide the ability to integrate third-
 
 ## Power Virtual Agents US Government and Azure Services
 
-The Power Virtual Agents US Government services are deployed to Microsoft Azure Government. Azure Active Directory (Azure AD) is not part of the Power Virtual Agents US Government accreditation boundary, but takes a reliance on a customer's [Azure AD](https://azure.microsoft.com/services/active-directory/) tenant for customer tenant and identity functions, including authentication, federated authentication, and licensing.
+The Power Virtual Agents US Government services are deployed to Microsoft Azure Government. Azure Active Directory (Azure AD) is not part of the Power Virtual Agents US Government accreditation boundary, but takes reliance on a customer's [Azure AD](https://azure.microsoft.com/services/active-directory/) tenant for customer tenant and identity functions, including authentication, federated authentication, and licensing.
 
 When a user of an organization employing ADFS attempts to access the Power Virtual Agents US Government service, the user is redirected to a login page hosted on the organization's ADFS server.
 
@@ -153,7 +153,7 @@ You use a different set of URLs to access Power Virtual Agents US Government env
 | [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com/) | [https://gcc.admin.powerplatform.microsoft.us](https://gcc.admin.powerplatform.microsoft.us/)<br /></br>[https://high.admin.powerplatform.microsoft.us](https://high.admin.powerplatform.microsoft.us/) (GCC High)<br /></br>[https://admin.appsplatform.us](https://admin.appsplatform.us/) (DoD) |
 
 
-For those customers that implement network restrictions, please ensure access to the following domains are made available to your end-users' access points:
+For those customers that implement network restrictions, please ensure access to the following domains is made available to your end users' access points:
 
 ### GCC customers:
 
@@ -187,7 +187,7 @@ Refer to the [IP ranges](https://www.microsoft.com/download/confirmation.aspx?id
 -   *.crm.microsoftdynamics.us* (GCC High) 
 
 
-Also, refer to the [IP ranges](https://www.microsoft.com/download/confirmation.aspx?id=57063) to enable you to access other Dataverse environments that users and administrators may create within your tenant and other Azure services that the platform leverages, including:
+Also, refer to the [IP ranges](https://www.microsoft.com/download/confirmation.aspx?id=57063) to enable you to access other Dataverse environments that users and administrators may create within your tenant and other Azure services that the platform uses, including:
 
 -   GCC and GCC High: Focus on *AzureCloud.usgovtexas* and *AzureCloud.usgovvirginia*.
 
@@ -202,7 +202,7 @@ Azure is distributed among multiple clouds. By default, tenants are allowed to o
 -   USGov Texas
 
 
-Refer to the [Azure IP Ranges and Service Tags – US Government Cloud](https://www.microsoft.com/download/confirmation.aspx?id=57063) document, focusing attention on *AzureCloud.usgovtexas*, and*AzureCloud.usgovvirginia*. Also note that these are the IP ranges required for your end-users to have access to the service URLs.
+Refer to the [Azure IP Ranges and Service Tags – US Government Cloud](https://www.microsoft.com/download/confirmation.aspx?id=57063) document, focusing attention on *AzureCloud.usgovtexas*, and*AzureCloud.usgovvirginia*. Also note that these are the IP ranges required for your end users to have access to the service URLs.
 
 
 
@@ -210,15 +210,15 @@ Refer to the [Azure IP Ranges and Service Tags – US Government Cloud](https://ww
 
 Some of the features available in the commercial version of Power Virtual Agents are not available to Power Virtual Agents US Government customers. The Power Virtual Agents team is actively working on making these features available to US Government customers and will update this article when these features become available.
 
--   [Power Virtual Agents Analytics](https://docs.microsoft.com/en-us/power-virtual-agents/analytics-overview). Alternatively, you can create [Custom Analytics (blog)](https://powervirtualagents.microsoft.com/en-us/blog/custom-analytics-solution-for-power-virtual-agents/) using Power BI dashboard.
+-   [Power Virtual Agents Analytics](analytics-overview.md). Alternatively, you can create [Custom Analytics (blog)](https://powervirtualagents.microsoft.com/blog/custom-analytics-solution-for-power-virtual-agents/) using Power BI dashboard.
 
--   [Power Virtual Agents Microsoft Teams app experience](https://docs.microsoft.com/en-us/power-virtual-agents/teams/fundamentals-what-is-power-virtual-agents-teams).
+-   [Power Virtual Agents Microsoft Teams app experience](teams/fundamentals-what-is-power-virtual-agents-teams.md).
 
 ## Requesting support
 
 Having a problem with your service? You can create a support request to get the issue resolved.
 
-More information: [Contact Technical Support](https://docs.microsoft.com/en-us/power-platform/admin/get-help-support)
+More information: [Contact Technical Support](/power-platform/admin/get-help-support)
 
 ## Resources 
 
