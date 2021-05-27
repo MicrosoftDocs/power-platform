@@ -26,8 +26,8 @@ The Power BI dashboard provides a holistic view with visualizations and insights
 
 You can get the CoE Power BI dashboard by downloading the CoE Starter Kit compressed file ([aka.ms/CoeStarterKitDownload](https://aka.ms/CoeStarterKitDownload)). **Extract the zip file** after downloading - it contains two Power BI template files, one for connecting to Dataverse with the **Dataverse** connector and one for connecting to Dataverse with **Common Data Service (Legacy**) connector.
 
-- You can use the **Legacy_CoEDashboard_yyyyMMdd.pbit** file if you have installed the CoE Starter Kit in a Production environment. This uses the earlier version of the Dataverse connector in Power BI. Use this connector for large datasets that are greater than 80 MB.
-- You must use **Dataverse_CoEDashboard_yyyyMMdd.pbit** if you have installed the CoE Starter Kit in a Dataverse for Teams environment (those don't support Import). You can use **Dataverse_yyyyMMdd.pbit** if you have installed the CoE Starter Kit in a Production Environment, if your dataset is smaller than 80 MB.
+- You can use the **Legacy_CoEDashboard_yyyyMM.pbit** file if you have installed the CoE Starter Kit in a Production environment. This uses the earlier version of the Dataverse connector in Power BI. Use this connector for large datasets that are greater than 80 MB.
+- You must use **Dataverse_CoEDashboard_yyyyMM.pbit** if you have installed the CoE Starter Kit in a Dataverse for Teams environment (those don't support Import). You can use **Dataverse_yyyyMMdd.pbit** if you have installed the CoE Starter Kit in a Production Environment, if your dataset is smaller than 80 MB.
 
 Learn more:
 
@@ -75,7 +75,7 @@ You can configure and modify the Power BI dashboard by working directly with the
 
 1. In Power BI Desktop, open the .pbit file, which can be found in the CoE Starter Kit you downloaded from [aka.ms/CoeStarterKitDownload](https://aka.ms/CoEStarterKitDownload).
 
-1. Enter the URL of your environment instance. If you are using the **Dataverse_CoEDashboard_yyyyMMdd.pbit**, do not include the https:// prefix or / postfix for **OrgUrl**. If you are using the **Legacy_CoEDashboard_yyyyMMdd.pbit**, include the https:// prefix for **OrgUrl**. If prompted, sign in to Power BI Desktop with your organization account that has access to the environment you installed the CoE Starter Kit in.
+1. Enter the URL of your environment instance. If you are using the **Dataverse_CoEDashboard_yyyyMM.pbit**, do not include the https:// prefix or / postfix for **OrgUrl**. If you are using the **Legacy_CoEDashboard_yyyyMM.pbit**, include the https:// prefix for **OrgUrl**. If prompted, sign in to Power BI Desktop with your organization account that has access to the environment you installed the CoE Starter Kit in.
 
    ![Enter OrgUrl to configure Power BI dashboard](media/pbit.png "Enter OrgUrl to configure Power BI dashboard")
 
