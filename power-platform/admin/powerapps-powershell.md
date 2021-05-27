@@ -6,7 +6,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 05/20/2021
+ms.date: 05/27/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -127,6 +127,9 @@ To perform the administration operations in the admin cmdlets, you'll need the f
 - A user with any of these roles, Global admins, Azure Active Directory Global admins, Dynamics 365 admin, or Power Platform Admin can access the Power Apps admin PowerShell cmdlets. These roles no longer require a Power Apps plan for administrative access to the Power Apps admin PowerShell cmdlets. However, these administrators need to sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) at least once before using the PowerShell cmdlets. If this is not done, the cmdlets will fail with an authorization error.
 
 - [Microsoft 365 Global admin](/microsoft-365/admin/add-users/about-admin-roles) or an [Azure Active Directory Global Administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal), [Dynamics 365 admin, or Power Platform Admin](global-service-administrators-can-administer-without-license.md) role is required if you need to search through another user's resources. Note that Environment Admins only have access to those environments and environment resources for which they have permissions.
+
+> [!NOTE]
+> To use a service principal, you must first register it as a management application. See [Creating a service principal application via PowerShell](powershell-create-service-principal.md).
 
 ### Cmdlet list - Admin Cmdlets
 
