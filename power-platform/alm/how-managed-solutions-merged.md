@@ -32,7 +32,7 @@ Form merge occurs on a section-by-section basis. When you add new elements to an
   
  Managed solutions that contain forms that use new security roles depend on those roles. You should include these security roles with your managed solution. 
  
- When importing managed or unmanaged solutions for entity forms, the Overwrite Customizations option, even if selected, does not apply. The solution being imported merges with any existing solution layers for a form.
+ When you import a solution that includes table forms, the **Overwrite Customizations** option, even if selected, does not apply. The form being imported merges with any existing solution layers for the form.
   
 > [!NOTE]
 >  When a managed solution entity contains multiple forms and the environment entity form also contains multiple forms, the new forms aren't appended to the bottom of the list of available forms&mdash;they're interleaved with the original entity forms.
