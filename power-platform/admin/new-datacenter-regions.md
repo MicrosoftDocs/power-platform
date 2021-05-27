@@ -5,6 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
+ms.custom: intro-internal
 ms.date: 03/09/2021
 ms.author: jimholtz
 search.audienceType: 

@@ -5,7 +5,7 @@ author: dileepsinghmicrosoft
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/26/2021
+ms.date: 05/25/2021
 ms.author: dileeps
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -25,14 +25,14 @@ Effective October 2019, to help ensure service levels, availability, and quality
 Requests in Microsoft Power Platform consist of various actions that a user makes across various products. At a high level, below is what constitute an API request:
 
 - **Power Apps** – all API requests to connectors and Microsoft Dataverse.
-- **Power Automate** – all API requests to connectors, HTTP actions, and built-in actions from initializing variables to a simple compose action. Both succeeded and failed actions count towards these limits. Additionally, retries and additional requests from pagination count as action executions as well. 
+- **Power Automate** – all API requests to connectors, process advisor analysis, HTTP actions, and built-in actions from initializing variables to a simple compose action. Both succeeded and failed actions count towards these limits. Additionally, retries and other requests from pagination count as action executions as well. 
 - **Power Virtual Agents** - API requests (or calls) to Power Automate flows from within a chatbot conversation.
-- **Dataverse (formerly Common Data Service)** – all create, read, update, and delete (CRUD), assign, and share operations including user-driven and internal system requests required to complete CRUD transactions, as well as special operations like share or assign. These can be from any client or application and using any endpoint (SOAP or REST). These include, but are not limited to, plug-ins, classic workflows, and custom controls making the earlier-mentioned operations.
+- **Dataverse (formerly Common Data Service)** – all create, read, update, and delete (CRUD), assign, and share operations including user-driven and internal system requests required to complete CRUD transactions, and special operations like share or assign. These can be from any client or application and using any endpoint (SOAP or REST). These include, but are not limited to, plug-ins, classic workflows, and custom controls making the earlier-mentioned operations.
 
 > [!NOTE]
 > For Dataverse, there is a small set of system internal operations that are excluded from limits, such as login, logout, and system metadata operations.
 
-The table below will describe the common requests limits as well as the allocation that a user gets based on the type of license assigned to the user.
+The table below will describe the common requests limits, and the allocation that a user gets based on the type of license assigned to the user.
 
 ## Request limits based on user licenses
 
@@ -49,7 +49,7 @@ All the users of Microsoft Power Platform have limits on the number of requests 
 | Power Apps per app plan | 1,000 per app pass |
 | Non-licensed users | See [Requests limits not based on licensed users or flows](#requests-limits-not-based-on-licensed-users-or-flows) below |
 
-<sup>1</sup> Dynamics 365 Enterprise applications include Dynamics 365 Sales Enterprise, Dynamics 365 Customer Service Enterprise, Dynamics 365 Field Service, Dynamics 365  Project Service Automation, Dynamics 365 Retail, Dynamics 365 Talent, Dynamics 365 Customer Engagement plan.
+<sup>1</sup> Dynamics 365 Enterprise applications include Dynamics 365 Sales Enterprise, Dynamics 365 Customer Service Enterprise, Dynamics 365 Field Service, Dynamics 365 Project Service Automation, Dynamics 365 Commerce, Dynamics 365 HR, Dynamics 365 Customer Engagement plan, Dynamics 365 Finance, Dynamics 365 Project Operations, and Dynamics 365 Supply Chain Management.
 
 <sup>2</sup> Dynamics 365 Professional includes Dynamics 365 Sales Professional, Dynamics 365 Customer Service Professional.
 
@@ -64,16 +64,16 @@ If a user has multiple licenses allocated within the same product line, for exam
 
 ## Power Apps and Power Automate capacity add-on
 
-A Power Apps and Power Automate capacity add-on allows customers to increase the limits for a given user. These will be assignable to any user who has a Power Apps or Power Automate license as well as a Dynamics 365 license. 
+A Power Apps and Power Automate capacity add-on allows customers to increase the limits for a given user. These will be assignable to any user who has a Power Apps or Power Automate license and a Dynamics 365 license. 
 
-Each capacity add-on raises the request limits by an additional 10,000 per 24 hours. Multiple capacity add-ons can also be assigned to the same user.
+Each capacity add-on raises the request limits by another 10,000 per 24 hours. Multiple capacity add-ons can also be assigned to the same user.
 
 > [!NOTE] 
 > Currently, capacity add-ons cannot be assigned to users (including application, administrative, and non-interactive users), because of the transition period (see [FAQ](#will-there-be-a-transition-period-for-existing-customers)) below. Assignment will be supported once the transition period ends.
 
 ## Requests limits not based on licensed users or flows
 
-The Dataverse provides the ability to have identities that do not require any user license to interact with the service. There are four types of
+Dataverse enables you to have identities that do not require any user license to interact with the service. There are four types of
 these users:
 
 -   [Application users](create-users-assign-online-security-roles.md#create-an-application-user)
@@ -81,7 +81,7 @@ these users:
 -   [Administrative users](create-users-assign-online-security-roles.md#create-an-administrative-user-account)
 -   [SYSTEM user](/dynamics365/customer-engagement/web-api/systemuser?view=dynamics-ce-odata-9#operations)
 
-Additionally there are special free (\$0) licenses which are used to interact with Dynamics 365 applications like Dynamics 365 Marketing. See [How Marketing is licensed](/dynamics365/customer-engagement/marketing/purchase-setup#how-marketing-is-licensed).
+Additionally there are special free (\$0) licenses, which are used to interact with Dynamics 365 applications like Dynamics 365 Marketing. See [How Marketing is licensed](/dynamics365/customer-engagement/marketing/purchase-setup#how-marketing-is-licensed).
 
 For these identities, every tenant will get base request capacity per tenant that can only be used by these users and not by users with standard licenses.
 
@@ -161,7 +161,7 @@ No. Tenant level limits are shared across all application users, non-interactive
 
 ### Do the requests generated from classic Dataverse workflows and plug-ins in Dataverse count against the request limits?
 
-Yes, if these requests are making CRUD, assign, or share&ndash;type requests, they will count. In the case of classic workflows, this includes actions such as checking conditions, starting child workflows or stopping workflows. However, requests generated internally from the platform aren't counted, such as: sdkmessagerequest, solutioncomponentdefinition, and ribbonclientmetadatareporting.
+Yes, if these requests are making CRUD, assign, or share&ndash;type requests, they will count. In the case of classic workflows, this includes actions such as checking conditions, starting child workflows, or stopping workflows. However, requests generated internally from the platform aren't counted, such as: sdkmessagerequest, solutioncomponentdefinition, and ribbonclientmetadatareporting.
 
 ### Should I use a third-party data integration tool instead of Power Automate to avoid hitting my limits?
 

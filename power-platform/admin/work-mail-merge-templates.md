@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/11/2020
+ms.date: 05/18/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -16,6 +16,9 @@ search.app:
   - Flow
 ---
 # Work with mail merge templates
+
+> [!IMPORTANT]
+> The mail merge template feature has been deprecated and is not supported. In Dynamics CRM 2016 (version 8.0), we introduced server-side document generation using Word and Excel templates. You can use these templates to provide standardized documents or customized data analysis for your organization.
 
 You can use mail merge templates with Office Word to create customer-ready letters, faxes, e-mail messages, and quotes.  
   

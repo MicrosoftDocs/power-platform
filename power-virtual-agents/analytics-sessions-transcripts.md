@@ -129,7 +129,7 @@ If data size in the Standard Azure Data Lake Store approach causes slow refreshe
 
 [Variables can be used to store data relevant to your bot content](authoring-variables.md) or bot user. Parsing out the variable and its value from the conversation transcript lets you filter or slice the data by the variable
 
-In many places. the conversation transcripts refer to content by its ID. For example, the ID of the topic that is being redirected to by the current topic is only referenced by its ID. To get the name of the topic, look up the name of the topic [from the bot content](gdpr-export.md#export-the-bot-content).
+In many places the conversation transcripts refer to content by its ID. For example, the ID of the topic that is being redirected to by the current topic is only referenced by its ID. To get the name of the topic, look up the name of the topic [from the bot content](gdpr-export.md#export-the-bot-content).
 
 
 

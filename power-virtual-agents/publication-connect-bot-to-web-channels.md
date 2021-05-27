@@ -2,7 +2,7 @@
 title: "Configure a chatbot for a live or demo website"
 description: "You can use a prebuilt demo website to try out your bot, or you can publish it directly to your own webpage using an IFrame code snippet."
 keywords: "Publish, channel, connector, sample code, developer, extensibility, PVA"
-ms.date: 9/22/2020
+ms.date: 5/17/2021
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -12,7 +12,7 @@ ms.custom: "publication, authoring, ceX"
 ms.collection: virtual-agent
 ---
 
-# Configure the demo website and add the bot to your live website
+# Configure the demo website and add the bot to your live website or Power Apps portal
 
 When publishing the bot to the web, you can publish to a prebuilt demo website (which you can use to share the bot with your teammates and stakeholders) and to your own live website.
   
@@ -31,10 +31,10 @@ When publishing the bot to the web, you can publish to a prebuilt demo website (
 
 
 ## Demo website
-You can edit the welcome message and suggested trigger phrases for the demo website. This helps prompt your teammates for what they should ask the bot about. 
+You can edit the welcome message and suggested trigger phrases for the demo website. A welcome message helps prompt your teammates for what they should ask the bot about. 
 
 > [!TIP]
-> You can change the welcome message to explain the intent or purpose of the testing, and you can change this as often as you like. So you could create a welcome message asking to test out conversations related to store hours and then, after making updates to the bot, change the welcome message to ask testers to try conversations related to gift cards.
+> You can change the welcome message to explain the intent or purpose of the testing, and you can change it as often as you like. So you could create a welcome message asking to test out conversations related to store hours and then, after making updates to the bot, change the welcome message to ask testers to try conversations related to gift cards.
 
 **Update the demo website:**
 
@@ -44,11 +44,11 @@ You can edit the welcome message and suggested trigger phrases for the demo webs
 
 3. Enter the welcome message you'd like to see alongside the bot in the **Welcome message** text field.
 
-4. Enter a list of suggested trigger phrases in the **Conversation starters** text field. Trigger phrases are what initiate specific topics, so you could customize these to specific topics that you want your teammates to try out.
+4. Enter a list of suggested trigger phrases in the **Conversation starters** text field. Trigger phrases are what initiate specific topics, so you could customize your trigger phrases to specific topics that you want your teammates to try out.
 
     ![Share demo website](media/channel-share-demo-website.png)
 
-To share the demo website link, simply copy the demo website URL and share it with your teammates directly. 
+To share the demo website link, copy the demo website URL and share it with your teammates directly. 
 
 ## Custom website
 
@@ -66,11 +66,30 @@ You can also add the bot to your Power Platform admin center.
 
 3. Provide the snippet to your web developer to add the bot to your website.
 
-**Add bot to Power Apps:**
+## Power Apps
+
+You can add your bot to a Power Apps Portal either directly with the chatbot component, or with a URL snippet in an IFrame.
+
+**Add bot to a Power Apps portal (Preview):**
+
+You can add your bot to a Power Apps portal in a few quick steps without any code. Power Apps portals allow you to add a Power Virtual Agents chatbot on your portal page by adding a chatbot component with limited customization.
+
+[Follow the steps here](/powerapps/maker/portals/add-chatbot) to add the chatbot component and customize.
+
+>[!IMPORTANT]
+>This is a preview feature.
+>Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+
+
+**Add bot to Power Apps with an IFrame:**
+
+You can also add your bot to Power Apps as an IFrame. Your live website can be a customer-facing external website or an internal site, like a SharePoint or Yammer site.
+
+You can also add the bot to your Power Platform admin center.
 
 1. In the Power Virtual Agents Portal, select **Manage** on the side navigation pane, and then go to the **Channels** tab.
 
-1. Select **Custom website** and then copy only the URL of the IFrame snippet: this is the URL defined by `src="<URL>"`.
+1. Select **Custom website** and then copy only the URL of the IFrame snippet: this URL is defined by `src="<URL>"`.
 
     ![Select only the src URL](media/channel-custom-website-url.png)
 
@@ -82,7 +101,7 @@ You can also add the bot to your Power Platform admin center.
 
     ![Add bot IFrame to Power Apps](media/channel-custom-website-portal-pva-iframe.png)
     
-1. You can interact with your bot by clicking on **Browse website** at the top right corner.
+1. You can interact with your bot by clicking on **Browse website**.
 
     ![Browse website with IFrame added](media/channel-custom-website-portal-browse-website.png)
 
