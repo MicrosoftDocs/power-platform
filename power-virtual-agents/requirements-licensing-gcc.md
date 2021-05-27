@@ -171,27 +171,6 @@ For those customers that implement network restrictions, please ensure access to
 
 Refer to the [IP ranges](https://www.microsoft.com/download/confirmation.aspx?id=57063) for *AzureCloud.usgovtexas* and*AzureCloud.usgovvirginia* to enable access to Dataverse instances that users and administrators may create within your tenant.
 
-### GCC High Customers:
-
-
--   *.azure.net* 
--   *.azure.us* 
--   *.azure-apihub.us*
--   *.azureedge.net* 
--   *.microsoft.us*
--   *.microsoftonline.us* 
--   *.usgovcloudapi.net*
--   *\*.appsplatformportals.us* (DoD)
--   *\*.crm.appsplatform.us* (DoD) 
--   *\*.high.dynamics365portals.us* (GCC High) 
--   *.crm.microsoftdynamics.us* (GCC High) 
-
-
-Also, refer to the [IP ranges](https://www.microsoft.com/download/confirmation.aspx?id=57063) to enable you to access other Dataverse environments that users and administrators may create within your tenant and other Azure services that the platform uses, including:
-
--   GCC and GCC High: Focus on *AzureCloud.usgovtexas* and *AzureCloud.usgovvirginia*.
-
--   DoD: Focus on USDoD East and USDoD Central.
 
 ## Connectivity between Power Virtual Agents US Government and Public Azure Cloud services
 
