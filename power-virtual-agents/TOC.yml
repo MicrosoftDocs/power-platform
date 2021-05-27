@@ -20,6 +20,8 @@
       items:
        - name: Assign licenses
          href: requirements-licensing.md
+       - name: Power Virtual Agents for US Government customers
+         href: requirements-licensing-gcc.md
        - name: Sign up for a trial account
          href: sign-up-individual.md
        - name: Working with environments
