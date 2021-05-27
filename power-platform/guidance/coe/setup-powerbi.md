@@ -83,17 +83,21 @@ You can configure and modify the Power BI dashboard by working directly with the
 
 You can find the report later by going to [app.powerbi.com](https://app.powerbi.com/).
 
-### Troubleshooting the Dataverse connector
+### Troubleshooting
 
-When you see this error message (*Unable to connect (provider Named Pipes Provider, error: 40 – Could not open a connection to SQL Server)*), the connector fails to connect to the TDS endpoint. This can occur when the URL used with the connector includes https:// and/or the ending /. Remove the https:// and ending forward slash so that the URL is in the form orgname.crm.dynamics.com.
+When you see *Unable to connect (provider Named Pipes Provider, error: 40 – Could not open a connection to SQL Server)* as an error message, the connector fails to connect to the TDS endpoint. This can occur when the URL used with the connector includes https:// and/or the ending /. Remove the https:// and ending forward slash so that the URL is in the form orgname.crm.dynamics.com.
 
 ![Error message: Unable to connect ](media/pbi_error.PNG "Error message: Unable to connect ")
 
-When you see this error message (*A connection was successfully established with the server, but then an error occurred during the pre-login handshake*), the connector fails to connect to the TDS endpoint. This can also occur if the ports the TDS endpoint uses are blocked. Learn more: [Ports required for using SQL to query data](https://docs.microsoft.com/powerapps/developer/data-platform/dataverse-sql-query#blocked-ports)
+When you see *A connection was successfully established with the server, but then an error occurred during the pre-login handshake* as an error message, the connector fails to connect to the TDS endpoint. This can also occur if the ports the TDS endpoint uses are blocked. Learn more: [Ports required for using SQL to query data](https://docs.microsoft.com/powerapps/developer/data-platform/dataverse-sql-query#blocked-ports)
 
-![Error message: Unable to connect ](media/pbi_error2.PNG "Error message: Unable to connect ")
+![Error message: A connection was successfully established with the server, but then an error occurred ](media/pbi_error2.PNG "Error message:A connection was successfully established with the server, but then an error occurred ")
 
-When you see this error message (*OLE DB or ODBC error: DataSource.Error Microsoft SQL: Return records size cannot exceed 83886080.*), you have reached the 80 MB maximum size limit for query results with the TDS endpoint. Consider using the **Legacy_CoEDashboard_yyyyMMdd.pbit** Power BI Template instead or modifying the query to return less data.  
+When you see *OLE DB or ODBC error: DataSource.Error Microsoft SQL: Return records size cannot exceed 83886080.* as an error message, you have reached the 80 MB maximum size limit for query results with the TDS endpoint. Consider using the **Legacy_CoEDashboard_yyyyMMdd.pbit** Power BI Template instead or modifying the query to return less data.  
+
+When you see *Unable to open document: The queries were authored with a newer version of Power BI Desktop and might not work with your version* as an error message and you are on the current version of Power BI Desktop, select **Close** to continue to setup as it will work.
+
+![Error message: Unable to open document ](media/pbi_error3.PNG "Error message: Unable to open document ")
 
 ### (Optional) Configure embedded apps in the CoE dashboard
 
