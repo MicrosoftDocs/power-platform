@@ -26,7 +26,7 @@ Package Deployer lets administrators deploy packages on Microsoft Dataverse inst
 - Custom code that can run before, while, or after the package is deployed to the Dataverse instance.  
 - HTML content specific to the package that can display at the beginning and end of the deployment process. This can be useful to provide a description of the solutions and files that are deployed in the package.  
 
-A Visual Studio 2015 template (available for download) is used to create packages. After creating a package, use the Package Deployer tool to deploy your package to a Dataverse instance.
+A Visual Studio 2015 or later template (available for download) is used to create packages. After creating a package, use the Package Deployer tool to deploy your package to a Dataverse instance.
 
 <a name="Prereq"></a>
  
@@ -34,7 +34,7 @@ A Visual Studio 2015 template (available for download) is used to create package
 
 - Ensure that you have all the solutions and files ready that you want to include in the package.  
 - Microsoft .NET Framework 4.6.2
-- [Visual Studio 2015](https://visualstudio.microsoft.com/vs/older-downloads/)
+- [Visual Studio 2015 or later version](https://visualstudio.microsoft.com/vs/older-downloads/)
 - [NuGet Package Manager](https://visualstudiogallery.msdn.microsoft.com/5d345edc-2e2d-4a9c-b73b-d53956dc458d) for Visual Studio 2015
 - Microsoft Dynamics CRM SDK Templates for Visual Studio that contains the package template. You can get it by downloading the [Microsoft Dynamics CRM SDK Templates](https://go.microsoft.com/fwlink/p/?LinkId=400925) and double-click the `CRMSDKTemplates.vsix` file to install the template in Visual Studio.  
 
