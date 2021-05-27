@@ -42,7 +42,7 @@ Here's a breakdown of the assets that form the governance components:
 
 - Archive unused apps
   - [App and Flow Archive and Clean Up – Start Approval and Check Approval (flows)](#admin--archive-and-clean-up-v2-start-approval-for-apps)
-  - [App Archive and Clean Up View (canvas app)](#app-archive-and-clean-up-view)
+  - [App Archive and Clean Up View (canvas app)](#app-and-flow-archive-and-clean-up-view)
 
 ## Tables
 
@@ -56,7 +56,7 @@ Represents archival approval tasks started during the App Archive and Clean Up f
 | --- | --- | --- |
 |[Microsoft Teams Admin \|  Ask for Business Justification when Microsoft Teams environment is created](#microsoft-teams-admin--ask-for-business-justification-when-microsoft-teams-environment-is-created) | Automated |  when *Admin \| Sync Template v3* flow adds or modifies a record in the Environment table |
 | [Microsoft Teams Admin \|  Weekly Clean Up of Microsoft Teams environments](#microsoft-teams-admin--weekly-clean-up-of-microsoft-teams-environments) | Schedule | Weekly |
-| [Admin \| Setup \| Ignored Archival Requests](#admin--setup--Ignored-Archival=Requests) | Button Click | Run Once |
+| [Admin \| Setup - Ignored Archival Requests](#admin--setup--ignored-archival-requests) | Instant | Run Once |
 | [Admin \| Archive and Clean Up v2 (Start Approval for Apps)](#admin--archive-and-clean-up-v2-start-approval-for-apps) | Schedule | Weekly |
 | [Admin \| Archive and Clean Up v2 (Start Approval for Flows)](#admin--archive-and-clean-up-v2-start-approval-for-flows) | Schedule | Weekly |
 | [Admin \| Archive and Clean Up v2 (Check Approval)](#admin--archive-and-clean-up-v2-check-approval) | Schedule | Daily |
@@ -98,9 +98,9 @@ Save a copy of this flow in case you want to make any changes to the criteria fo
 
 Learn more about the Microsoft Teams governance process in the CoE Starter Kit: [Microsoft Teams environment audit process](teams-governance.md)
 
-### Admin \| Setup \| Ignored Archival Requests
+### Admin \| Setup - Ignored Archival Requests
 
-This flow is run once in order to pre-populate the values for how long people have ignored requests for archival for apps and flows. It is optional and the values will eventually fill if you prefer. It is a long running flow touching all apps and flows i your inventory. 
+This flow is run once in order to pre-populate the values for how long people have ignored requests for archival for apps and flows. This flow is optional, values will eventually populate as part of the archive process. It is a long running flow updating all apps and flows in your inventory.
 
 ### Admin \| Archive and Clean Up v2 (Start Approval for Apps)
 

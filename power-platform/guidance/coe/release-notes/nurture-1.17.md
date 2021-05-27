@@ -1,6 +1,6 @@
 ---
-title: "Release notes and latest version of the CoE starter kit Nurture Components | MicrosoftDocs"
-description: "Release notes and latest version of the CoE Starter Kit."
+title: "Release notes and latest version of the CoE starter kit Nurture Components 1.17 | MicrosoftDocs"
+description: "Release notes and latest version of the CoE Starter Kit 1.17."
 author: manuelap-msft
 manager: devkeydet
 ms.service: power-platform
