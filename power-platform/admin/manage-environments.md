@@ -1,6 +1,6 @@
 ---
-title: "Manage environments | MicrosoftDocs"
-description: View and manage your environments on the Environments page. 
+title: "Access, manage, and edit environments"
+description: "Learn how to access and manage your Microsoft Power Platform environments. Sort through environments, review details, and make edits." 
 author: jimholtz
 manager: kvivek
 ms.service: power-platform
