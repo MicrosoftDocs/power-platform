@@ -6,7 +6,7 @@ manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/10/2020
+ms.date: 01/18/2021
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -19,7 +19,7 @@ search.app:
 
 # Released version ALM Accelerator for Makers 1.11
 
-Version 1.1 for the CoE Starter Kit ALM Accelerator for Makers is now available. This article describes the updates&mdash;including new features and fixes to existing functionality&mdash;included in this release. This version was first made available on January 18, 2020.
+Version 1.1 for the CoE Starter Kit ALM Accelerator for Makers is now available. This article describes the updates&mdash;including new features and fixes to existing functionality&mdash;included in this release. This version was first made available on January 18, 2021.
 
 This is the first version of the ALM Accelerator for Makers components:
 

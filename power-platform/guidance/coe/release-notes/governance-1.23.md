@@ -1,12 +1,12 @@
 ---
 title: "Release notes and latest version of the CoE starter kit Governance components 1.23 | MicrosoftDocs"
-description: "Release notes and latest version of the CoE Starter Kit."
+description: "Release notes and latest version of the CoE Starter Kit 1.23."
 author: manuelap-msft
 manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/10/2020
+ms.date: 09/18/2020
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
