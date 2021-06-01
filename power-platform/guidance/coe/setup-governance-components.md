@@ -6,7 +6,7 @@ manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/10/2020
+ms.date: 06/01/2021
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -68,8 +68,6 @@ The Core Components solution is required for the Governance Components solution,
 1. Import the *CenterOfExcellenceAuditComponents_x_x_x_xx_managed.zip* file.
 1. Create a new connection to the all connectors.
     ![Import the Center of Excellence - Governance components solution](media/msig-import.png "Import the Center of Excellence - Governance components solution")
-
-1. Update the Environment Variable values. Environment variables are used to store application and flow configuration data. This means that you only have to set the value once per environment and it will be used in all necessary flows and apps in that environment. All environment variables in this solution have a default value and so can be updated later.
 
 1. Select **Import** without adding values to the Environment Variables, as we will update them later - see [update environment variables](#update-environment-variables)
 

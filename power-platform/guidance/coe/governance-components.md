@@ -6,7 +6,7 @@ manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/10/2020
+ms.date: 06/01/2021
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -42,7 +42,7 @@ Here's a breakdown of the assets that form the governance components:
 
 - Archive unused apps
   - [App and Flow Archive and Clean Up – Start Approval and Check Approval (flows)](#admin--archive-and-clean-up-v2-start-approval-for-apps)
-  - [App Archive and Clean Up View (canvas app)](#app-archive-and-clean-up-view)
+  - [App Archive and Clean Up View (canvas app)](#app-and-flow-archive-and-clean-up-view)
 
 ## Tables
 
@@ -56,7 +56,7 @@ Represents archival approval tasks started during the App Archive and Clean Up f
 | --- | --- | --- |
 |[Microsoft Teams Admin \|  Ask for Business Justification when Microsoft Teams environment is created](#microsoft-teams-admin--ask-for-business-justification-when-microsoft-teams-environment-is-created) | Automated |  when *Admin \| Sync Template v3* flow adds or modifies a record in the Environment table |
 | [Microsoft Teams Admin \|  Weekly Clean Up of Microsoft Teams environments](#microsoft-teams-admin--weekly-clean-up-of-microsoft-teams-environments) | Schedule | Weekly |
-| [Admin \| Compliance Detail Request](#admin--compliance-detail-request) | Schedule | Weekly |
+| [Admin \| Setup - Ignored Archival Requests](#admin--setup--ignored-archival-requests) | Instant | Run Once |
 | [Admin \| Archive and Clean Up v2 (Start Approval for Apps)](#admin--archive-and-clean-up-v2-start-approval-for-apps) | Schedule | Weekly |
 | [Admin \| Archive and Clean Up v2 (Start Approval for Flows)](#admin--archive-and-clean-up-v2-start-approval-for-flows) | Schedule | Weekly |
 | [Admin \| Archive and Clean Up v2 (Check Approval)](#admin--archive-and-clean-up-v2-check-approval) | Schedule | Daily |
@@ -98,27 +98,9 @@ Save a copy of this flow in case you want to make any changes to the criteria fo
 
 Learn more about the Microsoft Teams governance process in the CoE Starter Kit: [Microsoft Teams environment audit process](teams-governance.md)
 
-### Admin \| Compliance Detail Request
+### Admin \| Setup - Ignored Archival Requests
 
-This flow works in conjunction with other apps and flows in the CoE Starter Kit to facilitate the process described in [App auditing process](example-processes.md). Compliance detail request emails are sent for apps and chatbots.
-
-This flow sends an email to users who have apps in the tenant that aren't compliant with the following thresholds:
-
-- The app is shared with more than 20 users or at least one group, and no business justification details have been provided for it.
-
-- The app does have business justification details, but hasn't been published in 60 days (so it's likely not on the latest version of Power Apps) or is missing a description.
-
-- The app has business justification details and an indication of high business impact, but no mitigation plan has been submitted to the attachments field.
-
-This flow sends an email to users who have chatbots in the tenant that aren't compliant with the following thresholds:
-
-- The chatbot has been launched more than 50 times, and no business justification details have been provided for it.
-
-- The chatbot has business justification details and an indication of high business impact, but no mitigation plan has been submitted to the attachments field.
-
-You can customize the email sent out by the flow; by default, it will look like the following image.
-
-![The compliance detail request email informs a maker that they own an app that is currently missing compliance details which means it needs to be audited by an administrator per the support policy. Makers are prompted to complete the business justification and mitigation plan details in the Developer Compliance Center app to document the intended use of the app.](media/coe55.png "The compliance detail request email informs a maker that they own an app that is currently missing compliance details which means it needs to be audited by an administrator per the support policy. Makers are prompted to complete the business justification and mitigation plan details in the Developer Compliance Center app to document the intended use of the app.")
+This flow is run once in order to pre-populate the values for how long people have ignored requests for archival for apps and flows. This flow is optional, values will eventually populate as part of the archive process. It is a long running flow updating all apps and flows in your inventory.
 
 ### Admin \| Archive and Clean Up v2 (Start Approval for Apps)
 
@@ -199,9 +181,9 @@ Makers can achieve compliance by providing additional information through the **
    :::column-end:::
 :::row-end:::
 
-### App Archive and Clean Up View
+### App and Flow Archive and Clean Up View
 
-An app that provides an interface to canvas apps that have been highlighted for archiving and their approval status. This app works in conjunction with other apps and flows in the CoE Starter Kit to facilitate the process described for the [app auditing process](example-processes.md).
+An app that provides an interface to canvas apps and cloud flows that have been highlighted for archiving and their approval status. This app works in conjunction with other apps and flows in the CoE Starter Kit to facilitate the process described for the [app auditing process](example-processes.md).
 
 ## Business process flows
 

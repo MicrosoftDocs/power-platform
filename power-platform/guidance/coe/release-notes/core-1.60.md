@@ -1,12 +1,12 @@
 ---
-title: "Release notes and latest version of the CoE starter kit Core components 1.55 | MicrosoftDocs"
-description: "Release notes and latest version of the CoE Starter Kit."
+title: "Release notes and latest version of the CoE starter kit Core components 1.60 | MicrosoftDocs"
+description: "Release notes and latest version of the CoE Starter Kit 1.60."
 author: manuelap-msft
 manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/10/2020
+ms.date: 08/14/2020
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
