@@ -1,6 +1,6 @@
 ---
-title: "Use a solution to customize Power Apps | MicrosoftDocs"
-description: "Learn how to customize Power Apps"
+title: "Default solution vs. custom solution"
+description: "Using a custom solution in Power Apps is highly recommended. Learn five reasons why it's better than using a default solution to manage your customizations."
 ms.custom: ""
 ms.date: 05/05/2020
 ms.reviewer: ""
