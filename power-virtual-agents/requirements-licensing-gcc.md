@@ -20,7 +20,7 @@ Government plans are designed for the unique needs of organizations that must me
 
 We recommend that you read this topic and the [Power Virtual Agents introduction topic](power-virtual-agents/fundamentals-what-is-power-virtual-agents.md).
 
-The Power Virtual Agents US Government Service Description serves as an overlay to the general Power Virtual Agents Service Description. It defines the unique commitments and differences compared to the general Power Virtual Agents offerings that are available to our customers since Dec 2019.
+The Power Virtual Agents US Government Service Description serves as an overlay to the general Power Virtual Agents Service Description. It defines the unique commitments and differences compared to the general Power Virtual Agents offerings that are available to our customers since December 2019.
 
 ## Power Virtual Agents US Government plans and environments
 
