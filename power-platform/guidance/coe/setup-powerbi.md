@@ -6,7 +6,7 @@ manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/10/2020
+ms.date: 06/01/2021
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -22,9 +22,21 @@ The Power BI dashboard provides a holistic view with visualizations and insights
 
 ![CoE Starter Kit Power BI dashboard](media/pb-1.PNG "CoE Starter Kit Power BI dashboard")
 
-You can get the CoE Power BI dashboard by downloading the Power BI file and configuring it in Power BI Desktop. This will allow you to make changes to it. You are required you to get the environment URL in order to use the Dashboard.
+## Which dashboard to use?
+
+You can get the CoE Power BI dashboard by downloading the CoE Starter Kit compressed file ([aka.ms/CoeStarterKitDownload](https://aka.ms/CoeStarterKitDownload)). **Extract the zip file** after downloading - it contains two Power BI template files, one for connecting to Dataverse with the **Dataverse** connector and one for connecting to Dataverse with **Common Data Service (Legacy**) connector.
+
+- You can use the **Legacy_CoEDashboard_yyyyMM.pbit** file if you have installed the CoE Starter Kit in a Production environment. This uses the earlier version of the Dataverse connector in Power BI. Use this connector for large datasets that are greater than 80 MB.
+- You must use **Dataverse_CoEDashboard_yyyyMM.pbit** if you have installed the CoE Starter Kit in a Dataverse for Teams environment (those don't support Import). You can use **Dataverse_yyyyMMdd.pbit** if you have installed the CoE Starter Kit in a Production Environment, if your dataset is smaller than 80 MB.
+
+Learn more:
+
+- [Connect to Dataverse using the connector in Power BI](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-powerbi-connector#connect-to-dataverse-using-the-connector)
+- [Limitations us using SQL to query data](https://docs.microsoft.com/powerapps/developer/data-platform/dataverse-sql-query#limitations)
+- [Troubleshooting connection problems](https://docs.microsoft.com/powerapps/developer/data-platform/dataverse-sql-query#troubleshooting-connection-problems)
 
 > [!NOTE]
+>
 > - Before setting up the Power BI dashboard, you must have installed the [CoE core components solution](setup-core-components.md).<br>
 > - Before you see data in the dashboard, the [core components solution sync flows](core-components.md#flows) will need to have completed their runs.
 
@@ -61,15 +73,31 @@ You can configure and modify the Power BI dashboard by working directly with the
 
 1. Download and install [Microsoft Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=58494).
 
-1. In Power BI Desktop, open the PowerPlatformAdminDashboard.pbit file, which can be found in the CoE Starter Kit you downloaded from [aka.ms/CoeStarterKitDownload](https://aka.ms/CoEStarterKitDownload).
+1. In Power BI Desktop, open the .pbit file, which can be found in the CoE Starter Kit you downloaded from [aka.ms/CoeStarterKitDownload](https://aka.ms/CoEStarterKitDownload).
 
-1. Enter the URL of your environment instance (do not include the https:// prefix or / postfix) for **OrgUrl**, and&mdash;if prompted&mdash;sign in to Power BI Desktop with your organization account that has access to the environment you installed the CoE Starter Kit in.
+1. Enter the URL of your environment instance. If you are using the **Dataverse_CoEDashboard_yyyyMM.pbit**, do not include the https:// prefix or / postfix for **OrgUrl**. If you are using the **Legacy_CoEDashboard_yyyyMM.pbit**, include the https:// prefix for **OrgUrl**. If prompted, sign in to Power BI Desktop with your organization account that has access to the environment you installed the CoE Starter Kit in.
 
    ![Enter OrgUrl to configure Power BI dashboard](media/pbit.png "Enter OrgUrl to configure Power BI dashboard")
 
 1. Save the dashboard locally, or select **Publish** and choose the workspace you want to publish the report to.
 
 You can find the report later by going to [app.powerbi.com](https://app.powerbi.com/).
+
+### Troubleshooting
+
+When you see *Unable to connect (provider Named Pipes Provider, error: 40 – Could not open a connection to SQL Server)* as an error message, the connector fails to connect to the TDS endpoint. This can occur when the URL used with the connector includes https:// and/or the ending /. Remove the https:// and ending forward slash so that the URL is in the form orgname.crm.dynamics.com.
+
+![Error message: Unable to connect ](media/pbi_error.PNG "Error message: Unable to connect ")
+
+When you see *A connection was successfully established with the server, but then an error occurred during the pre-login handshake* as an error message, the connector fails to connect to the TDS endpoint. This can also occur if the ports the TDS endpoint uses are blocked. Learn more: [Ports required for using SQL to query data](https://docs.microsoft.com/powerapps/developer/data-platform/dataverse-sql-query#blocked-ports)
+
+![Error message: A connection was successfully established with the server, but then an error occurred ](media/pbi_error2.PNG "Error message:A connection was successfully established with the server, but then an error occurred ")
+
+When you see *OLE DB or ODBC error: DataSource.Error Microsoft SQL: Return records size cannot exceed 83886080.* as an error message, you have reached the 80 MB maximum size limit for query results with the TDS endpoint. Consider using the **Legacy_CoEDashboard_yyyyMMdd.pbit** Power BI Template instead or modifying the query to return less data.  
+
+When you see *Unable to open document: The queries were authored with a newer version of Power BI Desktop and might not work with your version* as an error message and you are on the current version of Power BI Desktop, select **Close** to continue to setup as it will work.
+
+![Error message: Unable to open document ](media/pbi_error3.PNG "Error message: Unable to open document ")
 
 ### (Optional) Configure embedded apps in the CoE dashboard
 
@@ -141,6 +169,5 @@ You'll now configure the Power Apps visuals in the Power BI dashboard to point t
 1. Resize and move the visual to the location you want. Delete the placeholder from the template, and move your embedded app to the same place.
 
 Republish the dashboard, and view it under [app.powerbi.com](https://app.powerbi.com/).
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

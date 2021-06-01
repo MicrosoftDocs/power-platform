@@ -6,7 +6,7 @@ manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/10/2020
+ms.date: 06/01/2021
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -82,10 +82,6 @@ The Dataverse connector might experience some throttling limits if the tenant ha
 ## DLP Customizer
 
 The app currently doesn't work for custom connectors that are installed as part of a managed solution. -->
-
-## Government Community Cloud (GCC) environments
-
-Embedding Power Apps canvas apps in Power BI dashboards isn't available for GCC environments yet.
 
 ## Developer environments from the Power Apps Community Plan
 
