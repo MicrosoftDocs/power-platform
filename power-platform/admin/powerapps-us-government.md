@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/18/2021
+ms.date: 06/01/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -223,7 +223,9 @@ The mobile application will now use the US Government Cloud domain.
 
 Install an [on-premises data gateway](/powerapps/maker/canvas-apps/gateway-management) to transfer data quickly and securely between a canvas app that's built in Power Apps and a data source that isn't in the cloud, such as an on-premises SQL Server database or an on-premises SharePoint site.
 
-If your organization (tenant) has already configured and successfully connected the on-premises data gateway for Power BI US Government, then the process and configuration your organization executed to enable that will also enable on-premises connectivity for Power Apps. However, if you are unable to connect to your tenant, you might need to go through a process to add your tenant to an approved list, which will enable this capability for your tenant. Should this occur, open a support ticket to address your needs. The support team will follow an established process to address your request.
+If your organization (tenant) has already configured and successfully connected the on-premises data gateway for Power BI US Government, then the process and configuration your organization executed to enable that will also enable on-premises connectivity for Power Apps. 
+
+Previously, US Government customers needed to contact support before configuring their first on-premises data gateway, as support would need to "whitelist" the tenant for gateway use. This is no longer necessary. If you encounter any issues configuring or using the on-premises data gateway, contact support for assistance.
 
 ## Power Apps US Government feature limitations
 
