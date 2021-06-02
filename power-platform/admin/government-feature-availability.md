@@ -35,6 +35,7 @@ There are certain experiences that are currently not available with Dynamics 365
 - [Relevance Search (Available CY2020-Q4)](/powerapps/user/relevance-search)
 - [Versium Predict](/dynamics365/customer-engagement/versium-predict/versium-predict)
 - [Teams Integration](/dynamics365/teams-integration/teams-integration)
+- [Microsoft Power Platform Build Tools for Azure DevOps](https://docs.microsoft.com/en-us/power-platform/alm/devops-build-tools)
 
 There are a number of other business application apps and services that are not currently available as a service operating within the GCC or GCC High at this time. They include:
 
