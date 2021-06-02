@@ -76,6 +76,15 @@ You can edit both of these topic types in the same manner as for topics you crea
 
 1. Select **Save topic** to add the topic to the topics list.
 
+### Use subtopics to manage your bot's conversation path
+
+If you have a complex topic, it might be easier to split it into several smaller, "subtopics". These operate just like normal topics, except they run within the context of the originating topic. This means when the conversation path is finished in the subtopic, it returns to the place where it left from in the originating topic. 
+
+For example, say you had a topic that responded to when users ask for the best places to eat in a city. Within that topic, you might want to ask follow-up questions to determine the type of food they want, where abouts in the city (North, South, etc.), or the price range. You could design a conversation path that included all these follow-up questions in the one topic, but it could become long and convoluted and be hard to follow from an admin perspective.
+
+Instead, you can split each follow-up question to call a subtopic. Any variables you assign within the subtopic will be available within the parent topic, so you could branch off into a subtopic to determine what type of food they want, fill that as a variable, and then  return back to the original topic to continue asking the other follow up questions. You could then call the type of food variable either in the parent topic, or use it in the subtopic about where they want to eat so you only return restaurants that serve that type of food.
+
+To use subtopics, first enable xxxxx
 
 ## Design the topic's conversation path
 
@@ -175,6 +184,14 @@ You can [call Power Automate Flows](advanced-flow.md) and [insert authentication
 1. In the flyout menu, select the topic the bot should divert to. For example, you might want to send the user to a specific topic about the closure of a store if they ask about store hours for that store.
 
     :::image type="content" source="teams/media/topics-nodes-other-topic-flyout-teams.png" alt-text="Go to another topic node with options for other topics":::
+    
+You can also have the bot go to a "subtopic", which can be thought of as a mini topic. When the bot conversation reaches this point in the conversation, it will automatically go to the other topic, follow that topic's conversation path, and then return back to the same place it left the original topic's conversation path:
+
+1. [Create your subtopic as a normal topic](#).
+
+2. Open the the topic from where you want to redirect to the subtopic.
+
+3. Under the node where you want to redirect to the subtopic, select the **+** icon, and then **XXX**.
 
 #### End the conversation
 
