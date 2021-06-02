@@ -1,6 +1,6 @@
 ---
-title: "Analyze your data with Excel templates  | MicrosoftDocs"
-description: Analyze your data with Excel templates
+title: "Create and share data analysis Excel templates"
+description: "Excel templates provide powerful ways to analyze and present your data. Learn tips for creating new templates, exporting data, and following best practices."
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin

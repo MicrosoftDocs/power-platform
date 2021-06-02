@@ -1,6 +1,6 @@
 ---
-title: "Set up nurture components | MicrosoftDocs"
-description: "Setup instructions for how to set up the nurture components solution of the CoE Starter Kit"
+title: "How to set up nurture components"
+description: "Multiple nurture components are provided in the Center of Excellence (CoE) Starter Kit. Follow these instructions to install the components where you need them."
 author: manuelap-msft
 manager: devkeydet
 ms.service: power-platform
