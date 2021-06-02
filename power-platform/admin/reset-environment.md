@@ -1,5 +1,5 @@
 ---
-title: "Reset an environment to delete and re-provision"
+title: "Reset an environment to delete and reprovision"
 description: "This page explains how to reset a Power Platform environment if you want to create a new project, free up storage space, or delete personal information."
 author: jimholtz
 manager: kvivek
@@ -16,7 +16,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Reset environment
+# Reset environment 
 
 Reset a sandbox environment to delete and reprovision it. Consider a reset when you want to:  
   
