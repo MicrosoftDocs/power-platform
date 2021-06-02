@@ -6,7 +6,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 05/27/2021
+ms.date: 06/02/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -121,6 +121,8 @@ Users with a valid Power Apps license can perform the operations in these cmdlet
 
 ## Power Apps cmdlets for administrators
 
+For information on Power Apps cmdlets for admins, see [Get started with PowerShell for Power Platform Administrators](powershell-getting-started.md)
+<!--
 ### Prerequisite
 To perform the administration operations in the admin cmdlets, you'll need the following:
 
@@ -157,7 +159,7 @@ To perform the administration operations in the admin cmdlets, you'll need the f
 | Read, update, and reset the environment that Power Apps uses to save SharePoint form apps| [Get-AdminPowerAppSharepointFormEnvironment](/powershell/module/microsoft.powerapps.administration.powershell/get-adminpowerappsharepointformenvironment) <br /> [Get-AdminPowerAppSharepointFormEnvironment](/powershell/module/microsoft.powerapps.administration.powershell/get-adminpowerappsharepointformenvironment) <br /> [Reset-AdminPowerAppSharepointFormEnvironment](/powershell/module/microsoft.powerapps.administration.powershell/reset-adminpowerappsharepointformenvironment) |
 | Read operation status | [Get-AdminPowerAppOperationStatus](/powershell/module/microsoft.powerapps.administration.powershell/get-adminpowerappoperationstatus) |
 | Read and update tenant isolation status and policy | [Get-PowerAppTenantIsolationOperationStatus](/powershell/module/microsoft.powerapps.administration.powershell/get-powerapptenantisolationoperationstatus) <br />   [Get-PowerAppTenantIsolationPolicy](/powershell/module/microsoft.powerapps.administration.powershell/get-powerapptenantisolationpolicy) <br /> [Set-PowerAppTenantIsolationPolicy](/powershell/module/microsoft.powerapps.administration.powershell/set-powerapptenantisolationpolicy) |
-
+-->
 ## Tips
 
 - Use Get-Help 'CmdletName' to get a list of examples.
