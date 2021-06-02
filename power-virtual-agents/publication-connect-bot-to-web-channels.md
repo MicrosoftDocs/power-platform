@@ -66,15 +66,15 @@ You can also add the bot to your Power Platform admin center.
 
 3. Provide the snippet to your web developer to add the bot to your website.
 
-## Power Apps
+## Power Apps portals
 
-You can add your bot to a Power Apps Portal either directly with the chatbot component, or with a URL snippet in an IFrame.
+You can add your bot to a Power Apps portal either directly with the chatbot component, or with a URL snippet in an IFrame.
 
 **Add bot to a Power Apps portal (Preview):**
 
 You can add your bot to a Power Apps portal in a few quick steps without any code. Power Apps portals allow you to add a Power Virtual Agents chatbot on your portal page by adding a chatbot component with limited customization.
 
-[Follow the steps here](/powerapps/maker/portals/add-chatbot) to add the chatbot component and customize.
+See the [Add chatbot to a page](/powerapps/maker/portals/add-chatbot) topic in the Power Apps documentation library for details.
 
 >[!IMPORTANT]
 >This is a preview feature.
