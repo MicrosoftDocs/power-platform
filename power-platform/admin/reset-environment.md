@@ -1,6 +1,6 @@
 ---
-title: "Reset environment | MicrosoftDocs"
-description: Reset environment
+title: "Reset an environment to delete and re-provision"
+description: "This page explains how to reset a Power Platform environment if you want to create a new project, free up storage space, or delete personal information."
 author: jimholtz
 manager: kvivek
 ms.service: power-platform
