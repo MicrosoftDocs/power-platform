@@ -537,7 +537,7 @@ If you have any comments, suggestions, or questions, post them on the [Administe
 
 ### See also
 [Get started using the Power Apps admin module](/powershell/powerapps/get-started-powerapps-admin) <br />
-[Microsoft.PowerApps.Administration.PowerShell](/powershell/module/microsoft.powerapps.administration.powershell)
-
+[Microsoft.PowerApps.Administration.PowerShell](/powershell/module/microsoft.powerapps.administration.powershell) <br />
+[Preview: Programmability and extensibility overview](programmability-extensibility-overview.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
