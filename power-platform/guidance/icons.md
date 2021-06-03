@@ -4,7 +4,7 @@ description: "Icons for use in building architecture diagrams and illustrations 
 author: KumarVivek
 ms.service: power-platform
 ms.topic: conceptual
-ms.date: 05/21/2021
+ms.date: 06/03/2021
 ms.author: kvivek
 ms.reviewer: kvivek
 ---
@@ -29,7 +29,7 @@ This article provides information about the official collection of icons for Mic
 
 |Month|Change description|
 |---|---|
-|May 2021|This article was created with the download location of the official icons.|
+|June 2021|This article was created with the download location of the official icons.|
 
 ## Terms
 
