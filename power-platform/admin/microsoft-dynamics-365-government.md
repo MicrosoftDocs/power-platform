@@ -18,7 +18,7 @@ search.app:
 
 # Dynamics 365 US Government 
 
-In response to the unique and evolving requirements of the United States public sector, Microsoft has created Microsoft Dynamics 365 US Government that is available to qualified government tables in the United States. On October 11, 2016, Microsoft announced the next generation of intelligent business applications in the cloud under the brand Microsoft Dynamics 365. To this end, Microsoft Dynamics 365 US Government entails a continuity of the protected environment that was originally branded Microsoft CRM Online Government where the protections afforded to the government community cloud under the new brand are now represented by four discrete functions: Sales, Customer Service, Field Service, and Project Service Automation. This section provides an overview of features that are specific to Microsoft Dynamics 365 US Government.  It is important to note that the following Microsoft Dynamics 365 apps do not provide the compliance commitments or acquisition regulations documented in this Service Description:
+In response to the unique and evolving requirements of the United States public sector, Microsoft has created Microsoft Dynamics 365 US Government that is available to qualified government entities in the United States. On October 11, 2016, Microsoft announced the next generation of intelligent business applications in the cloud under the brand Microsoft Dynamics 365. To this end, Microsoft Dynamics 365 US Government entails a continuity of the protected environment that was originally branded Microsoft CRM Online Government where the protections afforded to the government community cloud under the new brand are now represented by four discrete functions: Sales, Customer Service, Field Service, and Project Service Automation. This section provides an overview of features that are specific to Microsoft Dynamics 365 US Government.  It is important to note that the following Microsoft Dynamics 365 apps do not provide the compliance commitments or acquisition regulations documented in this Service Description:
 
 - Microsoft Dynamics 365 Business Central
 - Microsoft Dynamics 365 Marketing
@@ -123,8 +123,8 @@ Dynamics 365 support and service engineering staff do not have standing access t
 |Social Security Number (SSN) Search     |Verification that the provided SSN is valid         |
 |Criminal History Check     |A seven (7) year criminal record check for felony and misdemeanor offenses at the state, county, and local level and at the federal level         |
 |Office of Foreign Assets Control List (OFAC)     |Validation against the Department of Treasury list of groups with whom U.S. persons are not allowed to engage in trade or financial transactions         |
-|Bureau of Industry and Security List (BIS)     |Validation against the Department of Commerce list of individuals and tables barred from engaging in export activities         |
-|Office of Defense Trade Controls Debarred Persons List (DDTC)     |Validation against the Department of State list of individuals and tables barred from engaging in export activities related to the defense industry         |
+|Bureau of Industry and Security List (BIS)     |Validation against the Department of Commerce list of individuals and entities barred from engaging in export activities         |
+|Office of Defense Trade Controls Debarred Persons List (DDTC)     |Validation against the Department of State list of individuals and entities barred from engaging in export activities related to the defense industry         |
 |Fingerprinting Check     | Fingerprint background check against FBI databases        |
 |CJIS Background Screening<sup>2</sup>     |State-adjudicated review of federal and state criminal history by state CSA appointed authority within each state that has signed up for the Microsoft CJIS IA program         |
 
