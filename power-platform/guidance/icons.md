@@ -41,7 +41,7 @@ I agree to the above terms
 </div>
 
  > [!div class="button"]
- > [Download SVG icons](https://download.microsoft.com/download/e/f/4/ef434e60-8cdc-4dd1-9d9f-e58670e57ec1/PowerPlatform_scalable.zip)
+ > [Download SVG icons](https://download.microsoft.com/download/e/f/4/ef434e60-8cdc-4dd1-9d9f-e58670e57ec1/Power_Platform_scalable.zip)
 
 ### See also
 
