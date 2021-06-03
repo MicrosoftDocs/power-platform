@@ -52,7 +52,7 @@ Make sure you have the System Administrator security role or equivalent permissi
 > |Show Microsoft Power Automate on forms and in the site map|Default: On. Select **On** to enable embedded Power Automate flows in your organization. More information: [Enable embedded Power Automate to automate processes](enable-embedded-flow-in-your-organization.md).|  
 > |Show dashboard cards in expanded state|Default: Off. Select **On** to see the detailed card form in a dashboard. If set to **Off**, only the header and minimal details are displayed in the card form.|  
 > |**Lookup behavior**||  
-> |Enable advanced lookup in model-driven apps|Default: Off. If **On**, to allow users to use the **Advanced lookup** feature in a lookup column. More information: [Advanced lookup](powerapps/user/lookup-field#advanced-lookup)|  
+> |Enable advanced lookup in model-driven apps|Default: Off. If **On**, it allow users to use the **Advanced lookup** feature in a lookup column. More information: [Advanced lookup](powerapps/user/lookup-field#advanced-lookup)|  
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
