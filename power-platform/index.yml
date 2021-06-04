@@ -44,7 +44,7 @@ conceptualContent:
       - url: /power-bi/
         itemType: overview
         text: Documentation
-      - url: /powerplatform/power-bi
+      - url: /learn/powerplatform/power-bi
         itemType: learn
         text: Training on Microsoft Learn
       - url: https://www.youtube.com/user/mspowerbi
