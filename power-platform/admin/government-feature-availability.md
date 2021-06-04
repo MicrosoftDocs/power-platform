@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/28/2020
+ms.date: 06/04/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -35,6 +35,7 @@ Certain experiences aren't available with Dynamics 365 GCC and GCC High. Microso
 - [Relevance Search (Available CY2020-Q4)](/powerapps/user/relevance-search)
 - [Versium Predict](/dynamics365/customer-engagement/versium-predict/versium-predict)
 - [Teams Integration](/dynamics365/teams-integration/teams-integration)
+- [Microsoft Power Platform Build Tools for Azure DevOps](../alm/devops-build-tools.md)
 
 A number of other business application apps and services aren't currently available as a service operating within the GCC or GCC High at this time. These include:
 
