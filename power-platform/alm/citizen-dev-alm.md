@@ -1,6 +1,6 @@
 ---
-title: "Citizen development ALM with Microsoft Power Platform | Microsoft Docs"
-description: "Learn how to implement ALM for citizen development with Microsoft Power Platform"
+title: "Citizen developer ALM implementation"
+description: "Learn how to implement application lifecycle management for Power Platform citizen development. Move legacy canvas apps and flows to a healthy ALM model."
 keywords: 
 author: shmcarth
 ms.author: shmcarth

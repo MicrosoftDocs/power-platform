@@ -1,6 +1,6 @@
 ---
-title: "Reset a user's password  | MicrosoftDocs"
-description: Reset a user's password 
+title: "How to reset a password"
+description: "If a user loses a Power Platform password, certain administrators can reset it. This page directs you to step-by-step instructions for resetting a password."
 author: jimholtz
 ms.author: jimholtz
 ms.reviewer: jimholtz
