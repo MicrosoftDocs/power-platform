@@ -4,8 +4,8 @@ description: Provides detailed information about the security model and concepts
 ms.date: 02/03/2021
 ms.service: power-platform
 ms.topic: "article"
-author: jimholtz
-ms.author: jimholtz
+author: mduelae
+ms.author: mkaur
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
