@@ -37,7 +37,7 @@ For smaller, less complex projects, you can consolidate all your unmanaged solut
 
 Larger, more complex projects require the following tasks. -->
 
-## Unmanaged to managed conversion tasks
+## Convert an unmanaged solution to managed
 
 1. Identify and remove unnecessary tables and components.
    - Look for tables that can be disabled in the environment. Tables can be disabled by removing all privileges on the table for all security roles except the system administrator security role. More information: [Security roles and privileges](/power-platform/admin/security-roles-privileges)
@@ -56,7 +56,7 @@ Larger, more complex projects require the following tasks. -->
    - Import the unmanaged solution into the development environment.
 
 4. Export the unmanaged solution(s) as managed. More information: [Export solutions](/powerapps/maker/data-platform/export-solutions)
-5. Delete the unmanaged solution in your test and production environments. To do this, go to [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) > **Solutions** > select the unmanaged solution, and then on the command bar, select **Delete**.
+5. Delete the unmanaged solution(s) in your test and production environments. To do this, go to [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) > **Solutions** > select the unmanaged solution, and then on the command bar, select **Delete**.
 6. Test the managed solution. 
     - The test environment should be as similar to the production environment as possible. A sandbox copy of the production environment is usually best. More information: [Copy an environment](/power-platform/admin/copy-environment)
    - Import the managed solution into your test environment. More information: [Import solutions](/powerapps/maker/data-platform/import-update-export-solutions)
