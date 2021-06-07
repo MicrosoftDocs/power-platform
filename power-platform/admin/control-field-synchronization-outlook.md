@@ -1,12 +1,12 @@
 ---
 title: "Control field synchronization with Outlook  | MicrosoftDocs"
 description: Control field synchronization with Outlook
-author: jimholtz
+author: mduelae
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/17/2021
-ms.author: jimholtz
+ms.author: mkaur
 search.audienceType: 
   - admin
 search.app:
