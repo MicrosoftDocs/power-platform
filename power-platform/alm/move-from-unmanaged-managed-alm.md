@@ -51,6 +51,9 @@ Larger, more complex projects require the following tasks.
 5. Test the managed solution in your test environment.
    - The test environment should be as similar to the production environment as possible.
  
+## Next steps
+
+Now that you’ve moved to managed solutions, we recommend that you understand solution and component layering. Moreover, with the exception of your development environments, there shouldn't be any unmanaged customizations or unmanaged solutions in your environments. More information: [Solution layers](solution-layers-alm.md)
 
 <!-- 8. Repeat steps 5-7 for any modular solutions that extend the common components layer.
 
