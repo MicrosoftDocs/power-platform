@@ -4,7 +4,7 @@ description: About data loss prevention (DLP) policies.
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/10/2020
+ms.date: 06/07/2021
 author: jimholtz
 ms.author: jimholtz
 ms.reviewer: jimholtz
@@ -66,7 +66,7 @@ All connectors driving core Microsoft Power Platform functionality (like Dataver
 However, these non-blockable connectors can be classified into Business or Non-Business data groups. These connectors broadly fall into the following categories:
 
 -	Microsoft Enterprise Plan standard connectors (with no additional licensing implications).
--	Microsoft Power Platform–specific connectors that are part of the base platform capabilities. Within this, Common Data Service connectors are the only premium connectors that can't be blocked, because Dataverse is an integral part of Microsoft Power Platform. 
+-	Microsoft Power Platform–specific connectors that are part of the base platform capabilities. Within this, Dataverse connectors are the only premium connectors that can't be blocked, because Dataverse is an integral part of Microsoft Power Platform. 
 
 The following connectors can't be blocked by using DLP policies.
 
@@ -74,8 +74,8 @@ The following connectors can't be blocked by using DLP policies.
 |Microsoft Enterprise Plan standard connectors | Core Power Platform connectors  |
 |---------|---------|
 |Excel Online (Business)      | Approvals        |
-|Microsoft Forms Pro      | Notifications        |
-|Microsoft Teams      | Dataverse         |
+|Dynamics 365 Customer Voice      | Notifications        |
+|Microsoft Teams      | Dataverse       |
 |Microsoft To-Do (Business)      | Dataverse <br />(current environment)        |
 |Microsoft 365 Groups      | Power Apps Notifications (v1 and v2)        |
 |Microsoft 365 Outlook      |         |
