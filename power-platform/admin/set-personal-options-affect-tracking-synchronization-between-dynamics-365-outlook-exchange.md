@@ -1,12 +1,12 @@
 ---
 title: "Set personal options that affect tracking and synchronization between customer engagement apps and Outlook or Exchange  | MicrosoftDocs"
 description: Set personal options that affect tracking and synchronization between customer engagement apps and Outlook or Exchange
-author: jimholtz
+author: mduelae
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/09/2020
-ms.author: jimholtz
+ms.author: mkaur
 search.audienceType: 
   - admin
 search.app:
