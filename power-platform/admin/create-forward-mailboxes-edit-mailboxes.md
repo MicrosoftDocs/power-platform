@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.date: 09/29/2020
 author: revachauhan
 ms.author: rechauha
-ms.reviewer: jimholtz
+ms.reviewer: mkaur
 search.audienceType: 
   - admin
 search.app:

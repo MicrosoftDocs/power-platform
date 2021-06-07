@@ -1,12 +1,12 @@
 ---
 title: "Why does the email message I sent have a Pending Send status? | MicrosoftDocs"
 description: Why does the email message I sent have a Pending Send status? 
-author: jimholtz
+author: mduelae
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/11/2020
-ms.author: jimholtz
+ms.author: mkaur
 search.audienceType: 
   - admin
 search.app:
