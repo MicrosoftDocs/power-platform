@@ -51,15 +51,17 @@ Larger, more complex projects require the following tasks. -->
    - If you have canvas apps or portals to convert, add them to a separate unmanaged solution.
 3. Add unmanaged and managed tables from production into the development environment.
    - If there are components in the production environment that aren't in the development environment, add the components into an unmanaged solution created in the production environment.
-   - Select **All components** when exporting custom tables that haven't don't exist in the development environment.
+   - Select **All components** when exporting custom tables that don't exist in the development environment.
    - For most other components, use the **Select components** option during export to select only those components that don't already exist in the development environment. More information: [Use segmented solutions](/power-platform/alm/segmented-solutions-alm)  <!-- not sure about this step -->
    - Import the unmanaged solution into the development environment.
 
 4. Export the unmanaged solution(s) as managed. More information: [Export solutions](/powerapps/maker/data-platform/export-solutions)
 5. Delete the unmanaged solution in your test and production environments. To do this, go to [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) > **Solutions** > select the unmanaged solution, and then on the command bar, select **Delete**.
 6. Test the managed solution. 
+    - The test environment should be as similar to the production environment as possible. A sandbox copy of the production environment is usually best. More information: [Copy an environment](/power-platform/admin/copy-environment)
    - Import the managed solution into your test environment. More information: [Import solutions](/powerapps/maker/data-platform/import-update-export-solutions)
-   - The test environment should be as similar to the production environment as possible A a sandbox copy of the production environment is usually best. More information: [Copy an environment](/power-platform/admin/copy-environment)
+   - There are various types of tests you can use to check whether specific functions or features of your app are working correctly. Some of these tests include unit tests, end-to-end, and user acceptance tests (UAT). For canvas apps, consider using [Test Studio](/powerapps/maker/canvas-apps/test-studio).
+
 7. After testing is completed and validated, import the managed solution into your production environment.
 
 ## Next steps
