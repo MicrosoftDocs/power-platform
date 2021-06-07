@@ -18,8 +18,7 @@ search.app:
 ---
 # Considerations
 
-   - Be aware that some [System tables don’t support unmanaged layers](#system-tables-that-dont-support-unmanaged-layers).
-   - Be aware that there are a few system tables that can lead to issues when you customize them and later import them as managed. More information: [Customization of deeply integrated system tables](#customization-of-deeply-integrated-system-tables)
+This article describes some of the considerations that may be involved with Power Platform application lifecycle management.
 
 ## Unmanaged methodology when you have several apps across multiple solutions
 
@@ -27,7 +26,7 @@ Understand and identify the base, common, and app solution layers.
 
     <img src = "media/solution-conversion-layers.png" alt = "Solution layers for deploying an app" width = "350" height = "125">
 
-   Then, create solutions that adhere to the following structure:
+Then, create solutions that adhere to the following structure:
    - Base layer. This temporary solution will provide the foundation for entities with lookup columns on other attributes. The base solution should contain just entity and entity metadata without entity components, such as columns and table relationships. The base solution can be used for the deployment of multiple apps.
    - Common layer. Components that are common and/or shared across multiple apps are contained in the common solution.
    - App layer. These solutions include just the components specific to the apps. Each app should be structured so that the solution includes all app components in one solution. This solution will contain the tables and components for the app, such as columns, forms, views, and charts. We recommend that you don’t share these components across different apps.
@@ -88,15 +87,12 @@ Create new development environments after the conversion of the base and common 
 
 - It can be very time-consuming to remove components to isolate the base solution or modular solutions. It can be a challenge to determine where dependencies reside and how best to remove them.
 
-- It's difficult to migrate to a managed solution and
-    develop a final solution architecture at the same time. Consider breaking the migration into phases such as moving to managed solutions, then establishing a new solution architecture. Isolated development is needed first to effectively create layered solutions.
+- It's difficult to migrate to a managed solution and develop a final solution architecture at the same time. Consider breaking the migration into phases such as moving to managed solutions, then establishing a new solution architecture. Isolated development is needed first to effectively create layered solutions.
 
 ## Portals specific considerations
 
 For Power Apps portals app unmanaged to managed conversions, consider building a tool to search for components to eliminate, such as components without dependencies.
     - For example, the tool can be a console app that generates a .CSV output file, which displays table forms and views used by portals apps by checking the entity forms and entity lists tables. The output file can be used to determine dependencies between a portals app and table forms and views.
-    - 
-
 
 <!-- these are considered bugs so remove
 ## System tables that don’t support unmanaged layers
