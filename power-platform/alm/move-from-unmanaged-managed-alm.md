@@ -24,6 +24,7 @@ contains several unmanaged solutions or your customizations were done in the def
 With the exception of your development environment, the end result is to only have managed solutions in your environments. More information: [Managed and unmanaged solutions](solution-concepts-alm.md#managed-and-unmanaged-solutions).
 
 ## Prerequisites
+- Separate development and production environments. Additionally, we recommend that you also maintain at least one test environment that's separate from your development and production environments.
 - Use a single publisher for all your solutions across all your environments. More information: [Solution publisher](solution-concepts-alm.md#solution-publisher)
 
 <!-- You can take either of the unmanaged to managed conversion approaches described here.
