@@ -50,7 +50,8 @@ Larger, more complex projects require the following tasks. -->
    - If you have canvas apps or portals to convert, add them to a separate unmanaged solution.
 3. Add unmanaged and managed tables from production into the development environment.
    - If there are components in the production environment that aren't in the development environment, add the components into an unmanaged solution created in the production environment.
-   - Use the **Select components** option during export to select only those components that don't already exist in the development environment. More information: [Use segmented solutions](/power-platform/alm/segmented-solutions-alm)  <!-- not sure about this step -->
+   - Select **All components** when exporting custom tables that haven't don't exist in the development environment.
+   - For most other components, use the **Select components** option during export to select only those components that don't already exist in the development environment. More information: [Use segmented solutions](/power-platform/alm/segmented-solutions-alm)  <!-- not sure about this step -->
    - Import the unmanaged solution into the development environment.
 
 4. Export the unmanaged solution(s) as managed. More information: [Export solutions](/powerapps/maker/data-platform/export-solutions)
