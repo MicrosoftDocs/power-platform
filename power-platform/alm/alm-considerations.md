@@ -84,6 +84,13 @@ Create new development environments after the conversion of the base and common 
       - Any other dependent managed solution required.
       - The app solution as an unmanaged solution.
 
+## Limitations
+
+- It can be very time-consuming to remove components to isolate the base solution or modular solutions. It can be a challenge to determine where dependencies reside and how best to remove them.
+
+- It's difficult to migrate to a managed solution and
+    develop a final solution architecture at the same time. Consider breaking the migration into phases such as moving to managed solutions, then establishing a new solution architecture. Isolated development is needed first to effectively create layered solutions.
+
 ## Portals specific considerations
 
 For Power Apps portals app unmanaged to managed conversions, consider building a tool to search for components to eliminate, such as components without dependencies.

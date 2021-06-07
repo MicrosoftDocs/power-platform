@@ -85,15 +85,6 @@ Now that you’ve moved to managed solutions, we recommend that you understand s
 
         For example, assume the Customer entity is created in an unmanaged solution named *base*, then extended in another unmanaged solution. Any new components added to the Customer entity in the extension solution are automatically added to the *base* solution. This is the expected outcome, because when an entity is created the behavior is to include all assets and entity metadata. -->
 
-## Limitations
- 
--   In the second approach, it can be very time-consuming to remove components
-    to isolate the base solution or modular solutions. It can be a challenge to determine where dependencies reside and how best to remove them.
-
--   It's difficult to migrate to a managed solution and
-    develop a final solution architecture at the same time. Consider breaking the migration into phases such as moving to managed solutions, then establishing a new solution architecture. Isolated development is needed first to effectively create layered solutions.
-
-
 ###  See also
 
 [Considerations](alm-considerations.md)
