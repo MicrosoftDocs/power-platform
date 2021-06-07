@@ -66,7 +66,7 @@ All connectors driving core Microsoft Power Platform functionality (like Dataver
 However, these non-blockable connectors can be classified into Business or Non-Business data groups. These connectors broadly fall into the following categories:
 
 -	Microsoft Enterprise Plan standard connectors (with no additional licensing implications).
--	Microsoft Power Platform–specific connectors that are part of the base platform capabilities. Within this, Common Data Service connectors are the only premium connectors that can't be blocked, because Dataverse is an integral part of Microsoft Power Platform. 
+-	Microsoft Power Platform–specific connectors that are part of the base platform capabilities. Within this, Dataverse connectors are the only premium connectors that can't be blocked, because Dataverse is an integral part of Microsoft Power Platform. 
 
 The following connectors can't be blocked by using DLP policies.
 
