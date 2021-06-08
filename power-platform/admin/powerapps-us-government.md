@@ -154,12 +154,12 @@ For those customers that implement network restrictions, ensure access to the fo
 *.powerapps.us<br/>
 *.azure-apihub.us<br/>
 *.azure.us<br/>
-*. usgovcloudapi.net<br/>
+*.usgovcloudapi.net<br/>
 *.microsoftonline.com<br/>
-*. microsoft.com<br/>
+*.microsoft.com<br/>
 *.windows.net<br/>
-*. azureedge.net<br/>
-*. azure.net<br/>
+*.azureedge.net<br/>
+*.azure.net<br/>
 *.crm9.dynamics.com<br/>
 *.dynamics365portals.us
 
