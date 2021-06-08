@@ -154,17 +154,17 @@ For those customers that implement network restrictions, ensure access to the fo
 *.powerapps.us<br/>
 *.azure-apihub.us<br/>
 *.azure.us<br/>
-*. usgovcloudapi.net<br/>
+*.usgovcloudapi.net<br/>
 *.microsoftonline.com<br/>
-*. microsoft.com<br/>
+*.microsoft.com<br/>
 *.windows.net<br/>
-*. azureedge.net<br/>
-*. azure.net<br/>
-*.crm9.dynamics.com (DoD)<br/>
-*.dynamics365portals.us (DoD)
+*.azureedge.net<br/>
+*.azure.net<br/>
+*.crm9.dynamics.com<br/>
+*.dynamics365portals.us
 
 
-Also, refer to the [Required IP Ranges](https://www.microsoft.com/download/confirmation.aspx?id=57063) to enable access to Dataverse environments that users and administrators may create within your tenantas well as other Azure services leveraged by the platform:
+Also, refer to the [Required IP Ranges](https://www.microsoft.com/download/confirmation.aspx?id=57063) to enable access to Dataverse environments that users and administrators may create within your tenants well as other Azure services leveraged by the platform:
 
 - GCC and GCC High: (Focus on AzureCloud.usgovtexas and AzureCloud.usgovvirginia)
 - DoD:  Focus on USDoD East and USDoD Central 
@@ -175,14 +175,17 @@ Also, refer to the [Required IP Ranges](https://www.microsoft.com/download/confi
 *.powerapps.us<br/>
 *.azure-apihub.us<br/>
 *.azure.us<br/>
-*. usgovcloudapi.net<br/>
+*.usgovcloudapi.net<br/>
 *.microsoftonline.us<br/>
-*. azureedge.net<br/>
-*. azure.net<br/>
+*.azureedge.net<br/>
+*.azure.net<br/>
+*.azureedge.us<br/>
+*.microsoftdynamics.us (GCC High)<br/>
 *.crm.microsoftdynamics.us (GCC High)<br/>
 *.high.dynamics365portals.us (GCC High)<br />
+*.appsplatform.us (DoD)<br/>
 *.crm.appsplatform.us (DoD) <br />
-*.appsplatformportals.us (DoD) <br />
+*.appsplatformportals.us (DoD) 
 
 Also, refer to the [Required IP Ranges](https://www.microsoft.com/download/confirmation.aspx?id=57063) to enable access to Dataverse environments that users and administrators may create within your tenant as well as other Azure services leveraged by the platform:
 
