@@ -47,8 +47,9 @@ Larger, more complex projects require the following tasks. -->
       - Components, such as forms, views, and charts, that are associated with deleted or unused tables and don't contain any data.
 
 2. Create a solution to use to convert components from unmanaged to managed.
-   - Use a single unmanaged solution that contains all Dataverse model-driven apps, tables, and dependant components, such as forms, views, fields, charts, and dashboards. More information: [Create a solution](/maker/data-platform/create-solution)
+   - Use a single unmanaged solution that will be used to contain all Dataverse model-driven apps, tables, and dependant components, such as forms, views, fields, charts, and dashboards. More information: [Create a solution](/maker/data-platform/create-solution)
    - If you have canvas apps or portals to convert, add them to a separate unmanaged solution.
+   - Remember to use a single publisher for all your solutions.
 3. Add unmanaged and managed tables from production into the development environment.
    - If there are components in the production environment that aren't in the development environment, add the components into an unmanaged solution created in the production environment.
    - Select **All components** when exporting custom tables that don't exist in the development environment.
@@ -56,7 +57,7 @@ Larger, more complex projects require the following tasks. -->
    - Import the unmanaged solution into the development environment.
 
 4. Export the unmanaged solution(s) as managed. More information: [Export solutions](/powerapps/maker/data-platform/export-solutions)
-5. Delete the unmanaged solution(s) in your test and production environments. To do this, go to [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), select the test or production environment, and then select > **Solutions** > select the unmanaged solution, and then on the command bar, select **Delete**.
+5. Delete the unmanaged solution(s) in your test and production environments. To do this, go to [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), select the test or production environment, select **Solutions**, select the unmanaged solution, and then on the command bar, select **Delete**.
 6. Test the managed solution. 
     - The test environment should be as similar to the production environment as possible. A sandbox copy of the production environment is usually best. More information: [Copy an environment](/power-platform/admin/copy-environment)
    - Import the managed solution into your test environment. More information: [Import solutions](/powerapps/maker/data-platform/import-update-export-solutions)
