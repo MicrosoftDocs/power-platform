@@ -24,7 +24,7 @@ This article describes some of the considerations that may be involved with Powe
 
 Understand and identify the base, common, and app solution layers.
 
-    <img src = "media/solution-conversion-layers.png" alt = "Solution layers for deploying an app" width = "350" height = "125">
+<img src = "media/solution-conversion-layers.png" alt = "Solution layers for deploying an app" width = "350" height = "125">
 
 Then, create solutions that adhere to the following structure:
    - Base layer. This temporary solution will provide the foundation for entities with lookup columns on other attributes. The base solution should contain just entity and entity metadata without entity components, such as columns and table relationships. The base solution can be used for the deployment of multiple apps.
