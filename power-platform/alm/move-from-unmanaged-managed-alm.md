@@ -56,7 +56,7 @@ Larger, more complex projects require the following tasks. -->
    - Import the unmanaged solution into the development environment.
 
 4. Export the unmanaged solution(s) as managed. More information: [Export solutions](/powerapps/maker/data-platform/export-solutions)
-5. Delete the unmanaged solution(s) in your test and production environments. To do this, go to [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) > **Solutions** > select the unmanaged solution, and then on the command bar, select **Delete**.
+5. Delete the unmanaged solution(s) in your test and production environments. To do this, go to [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), select the test or production environment, and then select > **Solutions** > select the unmanaged solution, and then on the command bar, select **Delete**.
 6. Test the managed solution. 
     - The test environment should be as similar to the production environment as possible. A sandbox copy of the production environment is usually best. More information: [Copy an environment](/power-platform/admin/copy-environment)
    - Import the managed solution into your test environment. More information: [Import solutions](/powerapps/maker/data-platform/import-update-export-solutions)
