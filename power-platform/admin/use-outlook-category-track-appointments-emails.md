@@ -5,7 +5,7 @@ author: mduelae
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/29/2020
+ms.date: 06/08/2021
 ms.author: mkaur
 search.audienceType: 
   - admin
@@ -88,7 +88,7 @@ No, category-based tracking is not supported for Outlook contacts.
 If you rename the category, server-side synchronization will continue to identify the category by its ID and it will be used to track and untrack Outlook items.
 
 > [!NOTE]
-> For Delegate scenarios category name difference between Delegate and primary Mailbox owner is not supported and may result in unexpected behavior. Recommendation is to match the Category name on Delegate and primary Mailbox owner.
+> For delegate scenarios, a category name difference between the delegate and primary mailbox owner is not supported and may result in unexpected behavior. We recommend matching the category name on the delegate and primary mailbox owner.
 
 **What happens if I delete the Tracked to Dynamics 365 category?**<br />
 If you delete the category, server-side synchronization will recreate it on the Exchange server in about 15 minutes.
