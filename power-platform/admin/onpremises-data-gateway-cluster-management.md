@@ -1,12 +1,13 @@
 ---
 title: "Preview: Gateway cluster management | MicrosoftDocs"
 description: View and manage on-premises gateway clusters.
-author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 10/06/2020
-ms.author: jimholtz 
+author: arthiriyer
+ms.author: arthii
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
