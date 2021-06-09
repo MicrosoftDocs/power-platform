@@ -1,12 +1,13 @@
 ---
 title: "Preview: Manage data sources | MicrosoftDocs"
 description: View and manage on-premises data sources.
-author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/11/2021
-ms.author: jimholtz 
+author: arthiriyer
+ms.author: arthii
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
