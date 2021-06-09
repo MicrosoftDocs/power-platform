@@ -1,12 +1,13 @@
 ---
 title: "Preview: Tenant-level analytics" 
 description: View tenant-level analytics in a variety of reports
-author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/19/2021
-ms.author: jimholtz
+ms.date: 06/09/2021
+author: tjvass
+ms.author: tjvass
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
@@ -26,13 +27,16 @@ To access these reports, sign in to the Power Platform admin center and select *
 
 :::image type="content" source="media/select-tenant-level-analytics.png" alt-text="Select tenant level analytics":::
 
+> [!IMPORTANT]
+> - This is a preview feature.
+> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+> - Expect significant changes to preview features and documentation.
+
 ## Who can view these reports?
 
 Admins with the following roles and a [license](pricing-billing-skus.md) can view the reports in Power Apps analytics:
-- Environment Admin - can view reports for the environments that the admin has access to.
-- Power Platform admin – can view reports for all environments.
-- Dynamics 365 admin - can view reports for all environments.
-- Microsoft 365 Global admin – can view reports for all environments.
+- Tenant-level administrator - has access to all environments
+- Environment-level admin - environment list is filtered to include only environments where the admin has Contributor or Environment Admin role
 
 For more information on the different roles for managing your tenant across the platform, see [Use service admin roles to manage your tenant](use-service-admin-role-manage-tenant.md).
 
@@ -61,6 +65,7 @@ The Power Apps Maker Activity report provide insights into tenant and environmen
 - What is the count of first-time makers across canvas and model-driven apps? 
 - Who are the top makers across the tenant or environments? 
 - How many of these apps are using premium or standard connectors? 
+- What are the total number of connections defined for apps to consume in one or more environments?
 - Allow me to filter the above list based on connector type. 
 
 :::image type="content" source="media/maker-activity-report.png" alt-text="Power Apps Maker Activity report":::
@@ -75,6 +80,8 @@ The Power Apps Inventory report offers a complete catalog of Power Apps distribu
 - What is the distribution of canvas versus model-driven apps across the organization? 
 
 :::image type="content" source="media/power-apps-inventory-report.png" alt-text="Power Apps Inventory report":::
+
+
 
 ## Download Inventory
 
