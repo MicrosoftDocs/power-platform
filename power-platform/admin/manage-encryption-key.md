@@ -38,7 +38,7 @@ All environments of Microsoft Dataverse use [!INCLUDE[pn_MS_SQL_Server](../inclu
 > Note the following: 
 > - The self-manage database encryption key feature must be turned on by Microsoft for your tenant before you can use the feature.  
 > - To use the data encryption management features for an environment, the environment must be created *after* the self-manage the database encryption key feature is turned on by Microsoft.  
-> - Encryption key management cannot be applied to environments that have data stored in [File](/powerapps/maker/common-data-service/types-of-fields#file-fields) and [Image](/powerapps/maker/common-data-service/types-of-fields#image-fields) fields. 
+> - Support of [File](https://docs.microsoft.com/powerapps/developer/data-platform/file-attributes) and [Image](https://docs.microsoft.com/powerapps/developer/data-platform/image-attributes) with size < 128MB can be enabled if your environment has version 9.2.21052.00103 or higher.
 > - A majority of existing environments have file and log stored in non-Azure SQL databases. These environments cannot be opted in to self-managed encryption key. Only new environments (once you signed up for this program) can be enabled with self-managed encryption key.
   
 <a name="KM_tasks"></a>   
