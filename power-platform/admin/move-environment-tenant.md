@@ -31,6 +31,8 @@ There are no user-interface changes or version changes as part of this move. You
 
 > [!IMPORTANT]
 > When moving individual environments from one tenant to another, if that requires a geographical region change, your tenant becomes a multiregional tenant. Regional features are enabled in the Power Platform admin center.
+>
+> Geographical region change are not supported into or out of US GCC, US GCC High, or China.
 > 
 > You might need to reconfigure some applications and settings after tenant to tenant migration such as Microsoft Dynamics 365 for Outlook, server-side sync, SharePoint integration, etc.
 >
