@@ -81,8 +81,6 @@ The Power Apps Inventory report offers a complete catalog of Power Apps distribu
 
 :::image type="content" source="media/power-apps-inventory-report.png" alt-text="Power Apps Inventory report":::
 
-
-
 ## Download Inventory
 
 Power Platform admin center reports can be downloaded directly from the report visuals.  Users have the option of choosing between Summarized and Underlying data. 
