@@ -5,7 +5,7 @@ author: Mattp123
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/17/2021
+ms.date: 06/10/2021
 ms.author: matp
 search.audienceType: 
   - admin
@@ -99,6 +99,7 @@ If FetchXML or LayoutXML are malformed, use the following to restore.
             <cell name="fullname" width="300" imageproviderfunctionname="DocumentManagement.FileTypeIcon.loadSharePointFileTypeIcon" imageproviderwebresource="$webresource:SharePoint_main_system_library.js" />
             <cell name="modified" width="150" />
             <cell name="sharepointmodifiedby" width="150" />
+            <cell name="locationname" width="150" /> 
             <cell name="relativelocation" width="200" />
             <cell name="servicetype" width="90" />
             <cell name="documentid" ishidden="1" />
@@ -143,6 +144,7 @@ If FetchXML or LayoutXML are malformed, use the following to restore.
         <attribute name="editurl" />
         <attribute name="locationid" />
         <attribute name="iconclassname" />
+        <attribute name="locationname" /> 
         <order attribute="relativelocation" descending="false" />
         <filter>
           <condition attribute="isrecursivefetch" operator="eq" value="0" />
