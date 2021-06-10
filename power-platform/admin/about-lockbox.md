@@ -16,7 +16,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# About Lockbox for Microsoft Power Platform 
+# About Lockbox for Microsoft Power Platform
 
 Lockbox for Microsoft Power Platform provides an interface to review&mdash;and approve or reject&mdash;data access requests. It's usually used in cases where a Microsoft engineer needs to access your data to resolve a support request.
 
