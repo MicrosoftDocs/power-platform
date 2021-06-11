@@ -6,7 +6,7 @@ manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/18/2020
+ms.date: 06/11/2020
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -22,7 +22,7 @@ Microsoft Dataverse for Teams empowers users to build custom apps, bots, and flo
 
 Dataverse for Teams honors the existing data governance paradigms of Microsoft Power Platform and enables access control in the Microsoft Teams admin center. The Power Platform admin center provides more detail, including monitoring dedicated capacity usage and [data loss prevention (DLP) policies](../../admin/wp-data-loss-prevention.md).  
 
-Dataverse for Teams greatly simplifies environment lifecycle management and user security role management by aligning to Microsoft Teams constructs. More information: [User access to Microsoft Teams environments](../../admin/about-teams-environment.md#user-access-to-project-oakdale-environments)
+Dataverse for Teams greatly simplifies environment lifecycle management and user security role management by aligning to Microsoft Teams constructs. More information: [User access to Dataverse for Teams environments](../../admin/about-teams-environment.md#user-access-to-dataverse-for-teams-environments) 
 
 Dataverse for Teams is a fully embedded experience. Governance controls specific to Microsoft Power Platform are also provided directly in the context of the Microsoft Teams admin center. More information: [Manage Microsoft Power Platform apps in the Microsoft Teams admin center](/microsoftteams/manage-power-platform-apps)
 
