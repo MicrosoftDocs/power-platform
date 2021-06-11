@@ -193,3 +193,6 @@ application processing that needs to be optimized.
 ExpressRoute therefore is rarely a direct contributor to higher throughput of
 data load into Power Platform. (However, ExpressRoute would make the traffic
 more predictable and ensure the data is not sent over the public Internet.)
+
+> [!div class="nextstepaction"]
+> [Next step: ExpressRoute Readiness Checklist](checklist.md)

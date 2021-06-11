@@ -334,3 +334,6 @@ service type, then make sure that the traffic comes from different public IP
 addresses. Because any traffic returning to a subnet would be handled at a
 network level, it would be dangerous to configure only some traffic from a
 subnet to utilize ExpressRoute, as this can lead to asymmetric routing.
+
+> [!div class="nextstepaction"]
+> [Next step: Understanding Power Platform architecture](understanding-architecture.md)

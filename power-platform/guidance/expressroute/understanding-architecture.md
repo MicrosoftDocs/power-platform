@@ -132,3 +132,6 @@ would be routed directly across the public Internet. However, these contents are
 common platform capabilities that contains no customer data and therefore should
 not need to be considered to be protected over private networks like
 ExpressRoute.
+
+> [!div class="nextstepaction"]
+> [Next step: Planning an ExpressRoute deployment](planning-expressroute.md)

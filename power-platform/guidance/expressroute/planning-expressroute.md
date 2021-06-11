@@ -344,3 +344,6 @@ The implications of this need to be considered in the ExpressRoute routing.
 
 There may be other public services in the future that also connect Internally to
 Data Center as other Azure capabilities are utilized.
+
+> [!div class="nextstepaction"]
+> [Next step: Setting up ExpressRoute for Power Platform](setup.md)

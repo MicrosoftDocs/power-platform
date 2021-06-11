@@ -60,4 +60,4 @@ what ExpressRoute does and does not do so that you can accurately judge the
 value for the situation.
 
 > [!div class="nextstepaction"]
-> [Next step: Understand the ExpressRoute peering types](expressroute-peerings.md)
+> [Next step: Understand how ExpressRoute works](how-expressroute-works.md)
