@@ -6,7 +6,7 @@ manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/10/2020
+ms.date: 06/11/2020
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -31,7 +31,7 @@ Out-of-the-box tooling around monitoring, alerts, and actions falls into the fol
 
 - The **[Power Platform admin center](https://aka.ms/ppac)** offers an interactive experience for performing administrative tasks. This is typically considered the primary path for completing administrative activities. From a monitoring point of view, this channel is used mostly for ad hoc interactive discovery. Additionally, some admin tasks would need access to [Microsoft 365 (formerly Office 365) admin center](https://admin.microsoft.com/), in addition to the [Office 365 Security and Compliance Center](https://protection.office.com/).
 
-- **[PowerShell cmdlets](../../admin/powerapps-powershell.md#powerapps-cmdlets-for-app-creators-preview)** offer a way to automate both management and monitoring tasks using PowerShell. These cmdlets can be used in a sequence to automate multiple-step administrative actions. Note that Microsoft typically provides capabilities as cmdlets first and then the same capabilities might be offered in the admin center UI or Management and Admin connectors in later releases.
+- **[PowerShell cmdlets](../../admin/powerapps-powershell.md#power-apps-cmdlets-for-app-creators)** offer a way to automate both management and monitoring tasks using PowerShell. These cmdlets can be used in a sequence to automate multiple-step administrative actions. Note that Microsoft typically provides capabilities as cmdlets first and then the same capabilities might be offered in the admin center UI or Management and Admin connectors in later releases.  
 
 - **Management and Admin connectors** offer the ability to use the platform’s own tools to manage and monitor itself. Part of the available 300-plus out-of-the-box connectors and approval process capabilities are five admin-specific connectors:
 
