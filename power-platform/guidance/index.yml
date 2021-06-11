@@ -64,7 +64,27 @@ landingContent:
             url: /power-virtual-agents
           - text: Power Platform admin guide
             url: ../admin/admin-documentation.md
-
+        
+  # Card
+  - title: ExpressRoute with Power Platform
+    linkLists:
+       - linkListType: overview
+         links:
+          - text: Overview
+            url: ./expressroute/overview.md
+          - text: Things to consider prior to using ExpressRoute
+            url: ./expressroute/planning-expressroute.md
+          - text: Understanding Power Platform architecture
+            url: ./expressroute/understanding-architecture.md
+       - linkListType: how-to-guide
+         links:
+          - text: How ExpressRoute works with Power Platform
+            url: ./expressroute/how-it-works.md
+          - text: Setting up ExpressRoute for Power Platform
+            url: ./expressroute/setup.md
+          - text: ExpressRoute Readiness Checklist
+            url: ./expressroute/checklist.md
+     
 
 
       
