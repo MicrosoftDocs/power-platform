@@ -82,3 +82,6 @@ connections without the need for ExpressRoute.
 These would in fact be pre-requisites to ExpressRoute anyway, so if the problem
 can be resolved directly through better Internet connections then ExpressRoute
 may not provide additional value.
+
+> [!div class="nextstepaction"]
+> [Next step: Understand how ExpressRoute works](how-expressroute-works.md)
