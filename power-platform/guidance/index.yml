@@ -55,7 +55,7 @@ landingContent:
        - linkListType: reference
          links:
           - text: Real World Architecture Examples
-            url: architecture/real-world-examples/overview
+            url: /power-platform/guidance/architecture/real-world-examples/overview
 
   # Card
   - title: Related resources
