@@ -48,7 +48,15 @@ landingContent:
             url: /power-platform/guidance/coe/setup
           - text: How to use the CoE Starter Kit?
             url: /power-platform/guidance/coe/power-bi
-     
+
+  # Card
+  - title: Architecture
+    linkLists:
+       - linkListType: reference
+         links:
+          - text: Real World Architecture Examples
+            url: architecture/real-world-examples/overview
+
   # Card
   - title: Related resources
     linkLists:
