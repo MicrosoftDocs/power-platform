@@ -149,25 +149,21 @@ with appropriate BGP community values for geographical locations and service
 types. These can then be configured in the customer’s routers to route traffic
 for those services through the ExpressRoute circuit.
 
-Different Microsoft 365 services’ tags can be used to decide to route traffic
+Different [Microsoft 365 services’ tags](https://docs.microsoft.com/microsoft-365/enterprise/bgp-communities-in-expressroute?view=o365-worldwide) can be used to decide to route traffic
 only for those services through the ExpressRoute circuit and the rest across
 either a different ExpressRoute circuit or the public Internet.
 
 Power Platform specific BGP community values are not available like they are for
-Microsoft 365 services. Instead, [regional BGP
-communities](https://docs.microsoft.com/azure/expressroute/expressroute-routing#bgp)
+Microsoft 365 services. Instead, [regional BGP communities](https://docs.microsoft.com/azure/expressroute/expressroute-routing#bgp)
 are used with corresponding Microsoft Azure regions that are used for each Power
 Platform environment. As Power Platform environments use two sets of
-datacenters, make sure to look at the [Regions
-overview](https://docs.microsoft.com/en-us/power-automate/regions-overview) to
+datacenters, make sure to look at the [Regions overview](https://docs.microsoft.com/power-automate/regions-overview) to
 check which two datacenters are used.
 
--   More information on [BGP
-    communities](https://docs.microsoft.com/azure/expressroute/expressroute-routing#bgp)
+-   More information on [BGP communities](https://docs.microsoft.com/azure/expressroute/expressroute-routing#bgp)
     for public clouds.
 
--   More information on [BGP communities for
-    GCC](https://docs.microsoft.com/en-us/azure/azure-government/compare-azure-government-global-azure#azure-expressroute).
+-   More information on [BGP communities for GCC](https://docs.microsoft.com/azure/azure-government/compare-azure-government-global-azure#azure-expressroute).
 
 ### Microsoft 365
 
@@ -192,17 +188,13 @@ is possible to use BGP Communities tags to control the routing so that only
 specific services such as Power Platform services, but not other Microsoft 365
 services, utilize the ExpressRoute connection. In particular, not all Microsoft
 365 services are designed to work with ExpressRoute. Currently, Power Platform
-services do not have a designated BGP communities like [those with Microsoft 365
-services](https://docs.microsoft.com/azure/expressroute/expressroute-routing#service-to-bgp-community-value).
-Instead, r[egional BPG
-communities](https://docs.microsoft.com/azure/expressroute/expressroute-routing#bgp)
-should be used to match with the region where [Power Platform
-environment](https://docs.microsoft.com/power-platform/admin/environments-overview)
+services do not have a designated BGP communities like [those with Microsoft 365 services](https://docs.microsoft.com/azure/expressroute/expressroute-routing#service-to-bgp-community-value).
+Instead, [regional BPG communities](https://docs.microsoft.com/azure/expressroute/expressroute-routing#bgp)
+should be used to match with the region where [Power Platform environment](https://docs.microsoft.com/power-platform/admin/environments-overview)
 was created.
 
 For further information on routing Microsoft 365, refer to the documentation on
-[selective routing with Microsoft
-365](https://docs.microsoft.com/microsoft-365/enterprise/azure-expressroute?view=o365-worldwide).As
+[selective routing with Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/azure-expressroute?view=o365-worldwide).As
 Power Platform services work partially as part of the Microsoft 365 service,
 many crossover services such as the admin portal and authentication are also
 required. Not all of these are possible to protect using ExpressRoute; the
@@ -246,7 +238,7 @@ cannot use Azure commercial cloud ExpressRoute.
 When estimating the costs for ExpressRoute, it is necessary to consider several
 elements:
 
--   Azure costs
+-   Azure Costs
 
 -   Connectivity provider costs
 
@@ -289,8 +281,7 @@ below.
             region than their end service, they will require ExpressRoute
             Premium for that ExpressRoute circuit.
 
-More information on [Azure ExpressRoute
-pricing](https://azure.microsoft.com/pricing/details/expressroute/)
+More information on [Azure ExpressRoute pricing](https://azure.microsoft.com/pricing/details/expressroute/)
 
 ### Connectivity provider costs
 
@@ -323,7 +314,7 @@ services.
 A single ExpressRoute connection can be used to access multiple online services
 e.g., Power Platform, Dynamics 365, Microsoft 365, and Microsoft Azure.
 
-![Diagram Description automatically generated](media/ee5f24bc3738db9aa3a958056bd04f44.png)
+![Diagram showing shared ExpressRoute connection with Microsoft public services and Microsoft Azure](media/reuse-network.png)
 
 Note that ExpressRoute itself does not separate different types of Microsoft
 services from a particular subnet. It is possible to utilize BGP Community tags

@@ -128,7 +128,7 @@ In the following example, a user in a branch location would have their
 connection routed via the WAN to the customer datacenter connection to
 ExpressRoute.
 
-![Graphical user interface, text Description automatically generated](media/4a76ef61ef833d2b5e9b27a4fbfcf65b.png)
+![Traffic from customer's branch is connected to customer's datacenter using WAN](media/routed-via-wan.png)
 
 Where a customer has a highly distributed network of users, such as a branch
 network of offices distributed around a country, the network traffic now needs
@@ -137,7 +137,7 @@ locations. The typical pattern for this then would be to route things through
 the WAN to the local network connected to ExpressRoute as the following diagram
 shows:
 
-![Graphical user interface, diagram Description automatically generated](media/e80cc4737d3dcc65039289e850dcc402.png)
+![WAN network is set up for each branch location to customer's datacenter](media/multiple-wan-config.png)
 
 If the connection between the client and ExpressRoute is too poor or is
 saturated or inefficient in some other way, ExpressRoute won’t solve this, as
@@ -145,7 +145,7 @@ the connection problems in getting to the ExpressRoute entry point would still
 impact the user experience. You should consider using ExpressRoute Direct, which
 gives you the ability to connect directly into Microsoft’s global network.
 
-![Diagram Description automatically generated](media/b1308de713f641a2e47b8bcddb3908d7.png)
+![One branch has a poor WAN network connectivity compared with other branches](media/poor-wan-network.png)
 
 When connecting to cloud services and being constrained by challenges in the WAN
 connections, establishing local Internet breakouts from local branches can often
@@ -153,7 +153,7 @@ be very beneficial to performance, avoiding the slower WAN connection and
 utilizing the reach of the connectivity provider to achieve a more direct
 connection to the cloud service.
 
-![Diagram Description automatically generated](media/70f48a4fc18c4cb0951b346a35123481.png)
+![One branch is connecting to Microsoft cloud without accessing via ExpressRoute](media/one-branch-connecting-to-internet.png)
 
 It’s possible to set up ExpressRoute circuits from multiple locations and even
 out to
@@ -161,7 +161,7 @@ out to
 individual branch locations through a local Internet breakout as shown in the
 following diagram:
 
-![Diagram Description automatically generated](media/3007b2abc178bc0269bd1d37062324e1.png)
+![One branch is connecting directly to partner edge](media/one-branch-connecting-directly-to-expressroute.png)
 
 The WAN approach from branch locations to a central datacenter and ExpressRoute
 circuits between the customer and Microsoft datacenters is typically preferable
@@ -185,7 +185,7 @@ user. In this case it’s important to ensure that unique public IPs are publish
 via each ExpressRoute circuit; each of these subnets must be distinct, which
 requires as many publicly-facing subnets as ExpressRoute connections.
 
-![Graphical user interface, application Description automatically generated](media/43472201b7fe0b4f07df5b1b5792c40b.png)
+![Separate ExpressRoute circuit is used for each country](media/two-separate-expressroute-circuit.png)
 
 This is particularly beneficial if the different operational areas are in vastly
 different geographic areas or if the network connectivity between the areas is
@@ -196,7 +196,7 @@ and it’s not necessary for every region to use ExpressRoute simply because one
 does. It may be possible for some connections to be routed directly through the
 Internet and others through ExpressRoute:
 
-![Graphical user interface, diagram, application Description automatically generated](media/ca16f0c17cdb224f59909af5693b17c0.png)
+![One operation connecting via ExpressRoute, and the other operation connecting directly via internet](media/one-location-via-expressroute-one-via-internet.png)
 
 ExpressRoute (standard) offers connectivity only within a specific geographic
 region; ExpressRoute Premium is required to offer multi-geo access from a single
@@ -216,7 +216,7 @@ should be routed via an ExpressRoute circuit. This can often trigger firewalls
 to reject the traffic, as it would receive response packets without having sent
 the request packets.
 
-![Diagram Description automatically generated](media/56c917d43a7c545b11c47e922e1e821f.png)
+![Incorrect routing is setup, resulting in asymmetric routing and response is rejected by customer's firewall](media/asymmetric-routing.png)
 
 This can happen if the local network for a client determines that the most
 efficient routing to Microsoft cloud services is across the public Internet
@@ -246,14 +246,12 @@ multiple traffic types to be considered. This may lead to both peering types,
 including Microsoft and Private Peering, but the same ExpressRoute circuit can
 be used including these different peering types:
 
-![Diagram Description automatically generated](media/8ed94abb0aa85cf477f21ea06b4a49b2.png)
-
-### External connectivity to/ from Power Platform services
+![Overview of external connectivity with Power Platform](media/external-connectivity-with-power-platform.png)
 
 The following different connection types exist between Power Platform services
 and an external network.
 
-![Diagram Description automatically generated](media/f672ba7cc49cbf8aa84f6bf51610d017.png)
+![Diagram showing different connection types that exist between Power Platform services and an external network](media/connection-types-used-in-power-platform.png)
 
 Description Traffic Type and
 

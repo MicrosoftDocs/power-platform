@@ -62,7 +62,7 @@ controlling the source of the requests and other customer services could attempt
 connections. Any connections should be controlled as if they are from an
 external gateway.
 
-![Diagram Description automatically generated](media/4b711e6361c08e609fe203a355c37d5b.png)
+![Diagram of outbound traffic. An outbound traffic will route back via ExpressRoute for Power Platform. For example, custom web service requests, server-side synchronization.](media/server-outbound-traffic.png)
 
 In order to be routed back through ExpressRoute, any service being connected to
 must:
@@ -129,7 +129,7 @@ Platform, it is important to realize that ExpressRoute:
 -   Does not prevent other connections (e.g., users on the Internet) from going
     directly to Power Platform.
 
-![Diagram Description automatically generated](media/e5e666431c7762e6bbe32f4766ec2b9b.png)
+![Diagram showing that Power Platform does not prevent direct access. Setting up ExpressRoute does not ensure direct access is disabled.](media/direct-access.png)
 
 The issue of external connectivity is particularly a concern where mobile users
 are involved, especially from mobile devices such as laptops, tablets, and
@@ -143,7 +143,7 @@ to manage this:
     devices and locations access is allowed and to control the device
     configuration such as proxies, VPN and routing.
 
-![Diagram Description automatically generated](media/73bc178ef10d1596348f04599dba5d5d.png)
+![Diagram of mobile workers directly connecting to Power Platform, where as office workers use corporate wifi or VPN and access via ExressRoute.](media/multiple-connectivity.png)
 
 ## Common questions and scenarios with ExpressRoute
 

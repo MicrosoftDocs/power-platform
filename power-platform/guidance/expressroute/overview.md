@@ -22,7 +22,7 @@ search.app:
 Microsoft Azure ExpressRoute provides a way to connect your on-premises network
 to Microsoft cloud services using private connectivity.
 
-![Diagram Description automatically generated](media/f87c46e631424925243a15528db489e6.png)
+![Overview diagram of the ExpressRoute enabled network configuration with Microsoft public services and Microosft Azure](media/expressroute-overview.png)
 
 Although the name of the service is Azure ExpressRoute, it also supports private
 connectivity to services built on top of Microsoft Azure, such as Microsoft 365,

@@ -152,8 +152,6 @@
       href: coe/release-notes.md
     - name: Feedback and support
       href: coe/feedback-support.md
-  - name: Icons
-    href: icons.md
   - name: ExpressRoute
     items: 
     - name: Overview     
@@ -172,3 +170,5 @@
       href: expressroute/setup.md
     - name: ExpressRoute Readiness Checklist
       href: expressroute/checklist.md
+  - name: Icons
+    href: icons.md

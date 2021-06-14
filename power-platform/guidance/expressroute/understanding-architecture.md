@@ -28,7 +28,7 @@ Microsoft Power Platform is built on top of Microsoft Azure infrastructure,
 deployed across various regions around the world. Each deployment is called an
 environment, where these environments are set with a particular region.
 
-![](media/7021378254df549556f6db18fbf6ee5e.png)
+![Diagram illustrating each Power Platform region with its corresponding data centers](media/region-and-data-centers.png)
 
 Each environment is contained inside a scale group – a shared infrastructure to
 provide maintainable and scalable infrastructure set. It hosts multiple customer
@@ -49,7 +49,7 @@ on-premises network and the “entrance” of the cloud service. Therefore, any
 network connections within the same cloud, in this case the Power Platform and
 Azure services, cannot be set up with ExpressRoute.
 
-![](media/3b19a2eb1484bd3646f6ff165ed9f333.emf)
+![Architectural diagram of Power Platform environments](media/environment-architecture.png)
 
 Because Power Platform does not have designated BGP communities like Microsoft
 365 does, you must instead set up with regional BGP communities from both scale
@@ -77,13 +77,13 @@ impacts your connectivity with ExpressRoute.
 Connectors utilize Azure API Management behind the scenes to manage the
 credentials and connections from each user.
 
-![](media/24066817746db11b056d444562fa4ec9.png)
+![Power Apps using API management to connect to various data sources.](media/apim-datasource.png)
 
 These connections are then directed to the various data sources. For Microsoft
 connectors, the connections would be within the Microsoft datacenter. Connectors
 that are non-Microsoft services will be accessed via public internet.
 
-![](media/cfdf44ed9ff9882f9e37bd2db433868b.png)
+![Overview of relations between Power Platform and connections to other services](media/public-internet-and-microsoft-network.png)
 
 ## On-premises Data Gateway
 
@@ -92,7 +92,7 @@ services with Microsoft Power Platform in a secure way using Microsoft Azure
 behind the scenes. Any data transmitted via on-premises data gateway is sent via
 Azure service bus as shown in the diagram below.
 
-![Graphical user interface, text, application, Word Description automatically generated](media/0da7ed40765c1932435b8982bcee8f9f.png)
+![Architectural diagram of on-premise data gateway. Gateway cloud service encrypts and stores data source credentials and on-premise data gatweay details. It routes queries and results between cloud services, on-premises data gateway, and data source. Azure Service Bus is used to transmit data between gateway cloud service and on-premise data gateway. On-premise data gateway decrypts data source credentials and connects to data source. It sends queries to data source, and returns the results to gateway cloud service.](media/data-gateway-architecture.png)
 
 The gateway uses Transport Layer Security (TLS) 1.2 to communicate between
 on-premises data gateway and Power Platform services.
@@ -111,7 +111,7 @@ This is because on-premises data gateway includes functionality that converts
 data. For example, with SQL server, the on-premises data gateway converts
 protocol from OData requests to SQL DML (data manipulation language) statement.
 
-![Timeline Description automatically generated](media/9d8b37c195e050da9a8fe9812becb9fb.png)
+![Diagram showing how connectors connect to data sources behind the scenes.](media/inside-connectors.png)
 
 Therefore, enabling ExpressRoute does not completely result in not needing to
 implement on-premises data gateway completely. Make sure to check each connector

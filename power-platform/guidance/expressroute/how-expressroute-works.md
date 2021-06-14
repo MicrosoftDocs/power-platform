@@ -73,7 +73,7 @@ public Internet. Microsoft also advertises the IP prefixes for the relevant
 services through the ExpressRoute BGP connection for the services specified in
 the peerings defined for that circuit.
 
-![Diagram of network traffic routed from Microsoft online services to an external service. Requests to external services are looked up against DNS. If the IP is registered against an ExpressRoute circuit, routes it internally. Traffic to IP registered against ExpressRoute routed over the BGP session through the customer private circuit goes to ExpressRoute connection. Router configration routes traffic internally as appropriately either using public IP or NAT IP. Lastly, connection is made to the internal service.](media/traffic-route-msol-external.png "Traffic routed from Microsoft online sevices to an external service.")
+![Diagram of network traffic routed from on-premise to Microsoft online services via ExpressRoute. Internal router configuration traffic for Microsoft online services to ExpressRoute connected subnet. Router configuration routes traffic via BGP session through the ExpressRoute. Once traffic reached to Microsoft's edge, internal routing configuration routes traffic to appropriate service.](media/traffic-route-onprem-to-cloud.png "Traffic routed from customer network to Microsoft online sevices.")
 
 For traffic to Microsoft, internal routing configuration within the customer
 network needs to set up and is responsible for:
@@ -90,7 +90,7 @@ appropriate service within the Microsoft datacenter.
 
 For traffic routed from Microsoft Online Services to an external service:
 
-![Timeline Description automatically generated](media/4b133b93681a880be28ecc4bcebf3e8c.png)
+![Diagram of network traffic routed from Microsoft online services to an external service. Requests to external services are looked up against DNS. If the IP is registered against an ExpressRoute circuit, routes it internally. Traffic to IP registered against ExpressRoute routed over the BGP session through the customer private circuit goes to ExpressRoute connection. Router configration routes traffic internally as appropriately either using public IP or NAT IP. Lastly, connection is made to the internal service.](media/traffic-route-msol-external.png "Traffic routed from Microsoft online sevices to an external service.")
 
 When the request is made:
 
