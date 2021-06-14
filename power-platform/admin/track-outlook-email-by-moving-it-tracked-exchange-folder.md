@@ -1,12 +1,12 @@
 ---
 title: "Track Outlook email by moving it to a tracked Exchange folder | MicrosoftDocs"
 description: Track Outlook email by moving it to a tracked Exchange folder
-author: jimholtz
+author: mduelae
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/11/2020
-ms.author: jimholtz
+ms.author: mkaur
 search.audienceType: 
   - admin
 search.app:
@@ -16,8 +16,6 @@ search.app:
   - Flow
 ---
 # Track Outlook email by moving it to a tracked Exchange folder
-
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
  Track customer interactions wherever you are, and from virtually any device by using folder tracking. After you set up a tracked folder, you can drag or move email to that folder to track it automatically in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation). Additionally, if you set a regarding record (such as a specific account or opportunity record) for the folder, customer engagement apps automatically link all email in that folder to that specific record. Tracked folders work in [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)], [!INCLUDE[pn_outlook_web_app](../includes/pn-outlook-web-app.md)], or any other mobile app that supports [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)].  
 
@@ -97,7 +95,7 @@ To see folder tracking in action, see the video [Folder Level Tracking in CRM On
 |                      Two users move the same email message to separate folders that have different regarding records                      |                                                                                                                                                                                                                                                               You can only set one regarding record for an email message. In this case, the record that's processed first is linked to the regarding record.                                                                                                                                                                                                                                                               |
 
 ### See also  
- [Frequently asked questions about synchronizing records between customer engagement apps and Microsoft Outlook](frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook.md)<br />
+ [Frequently asked questions about synchronizing records between customer engagement apps and Microsoft Outlook](frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook.yml)<br />
  [Configure folder-level tracking](../admin/configure-outlook-exchange-folder-level-tracking.md)
 
 

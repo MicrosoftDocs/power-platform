@@ -8,7 +8,7 @@ ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/20/2020
+ms.date: 05/14/2021
 search.audienceType: 
   - admin
 search.app:
@@ -18,8 +18,6 @@ search.app:
   - Flow
 ---
 # Use service admin roles to manage your tenant
-
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 To help you administer environments and settings for Microsoft Power Platform, you can assign users to manage at the tenant level without having to assign the more powerful Microsoft 365 global admin privilege.  
 
@@ -102,7 +100,7 @@ The following matrix shows what management is possible with the various service 
 
 ### See also  
 [Environments overview](environments-overview.md)<br />
-[What is Power BI administration?](https://docs.microsoft.com/power-bi/service-admin-administering-power-bi-in-your-organization)
+[What is Power BI administration?](/power-bi/service-admin-administering-power-bi-in-your-organization)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

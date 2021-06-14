@@ -1,6 +1,6 @@
 ---
-title: "Team development ALM with Power Apps | Microsoft Docs"
-description: "Learn how to support team development ALM with Power Apps"
+title: "Considerations for healthy ALM in a team development scenario"
+description: "Learn how to support healthy ALM when multiple developers and apps are part of a release management process."
 keywords: 
 author: Mattp123
 ms.author: matp
@@ -8,7 +8,7 @@ manager: kvivek
 ms.custom: ""
 ms.date: 05/05/2020
 ms.reviewer: ""
-ms.service: powerapps
+ms.service: power-platform
 ms.topic: "article"
 search.audienceType: 
   - maker

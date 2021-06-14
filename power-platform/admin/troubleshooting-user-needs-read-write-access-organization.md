@@ -1,6 +1,6 @@
 ---
-title: "Troubleshooting: Common user access issues  | MicrosoftDocs"
-description: "Troubleshooting: Common user access issues"
+title: "Troubleshoot common user access issues for Dataverse environments"
+description: "Learn how to run and interpret diagnostics for user access to environments, including criteria for access."
 author: jimholtz
 ms.author: jimholtz
 ms.reviewer: jimholtz
@@ -8,7 +8,7 @@ ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/04/2021
+ms.date: 05/04/2021
 search.audienceType: 
   - admin
 search.app:
@@ -18,8 +18,6 @@ search.app:
   - Flow
 ---
 # Troubleshooting: Common user access issues
-
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 Multiple factors affect user access to Microsoft Dataverse environments. Administrators can use the **Run diagnostics** command to assess user access to a Dataverse environment, and get details and mitigation suggestions as to why a user can or can't access the environment.
 
@@ -31,6 +29,8 @@ To access a Dataverse environment, a user must meet the following criteria:
 4. Have at least one Dataverse security role assigned directly to them or to a [group team](manage-group-teams.md) they're a member of.
 
 A user's level of access within the environment and to the resources (apps and data) in the environment is determined by the privileges defined in the security roles assigned to that user. Their access mode being [Administrative](create-users-assign-online-security-roles.md#create-an-administrative-user-account) or [Read-Write](create-users-assign-online-security-roles.md#create-a-read-write-user-account) also determines their level of access within an environment.
+
+## User diagnostics
 
 Use the following steps to run user access diagnostics on a user in a Dataverse environment.
 
@@ -55,14 +55,32 @@ Use the following steps to run user access diagnostics on a user in a Dataverse 
 
 ## Access issues
 
+The following issues are documented below.
+
+|Issue  |
+|---------|
+| [User access diagnostic tool in the Power Platform admin center](#user-access-diagnostic-tool-in-the-power-platform-admin-center)     |
+| [User has no roles](#user-has-no-roles)     |
+| [User does not have a license / user does not belong to the organization](#user-does-not-have-a-license--user-does-not-belong-to-the-organization)    |
+| [User is not a member of the environment’s security group](#user-is-not-a-member-of-the-environments-security-group)     |
+| [User doesn’t have sufficient permissions](#user-doesnt-have-sufficient-permissions)     |
+| [User is missing from environment despite meeting all requirements](#user-is-missing-from-environment-despite-meeting-all-requirements)     |
+| [Adding or refreshing users on demand](#adding-or-refreshing-users-on-demand)    |
+| [Known issue](#known-issue)     |
+
+If you don't see your issue:
+
+- See if you can get your question answered here: https://powerusers.microsoft.com/t5/Power-Apps-Community/ct-p/PowerApps1.
+- Create a [support request](https://powerapps.microsoft.com/support/).
+
 ### User access diagnostic tool in the Power Platform admin center
 
-Several factors influence user access in a Microsoft Dataverse environment. To help administrators with diagnosing user access to an environment and reasons for access or no access, the new “Run diagnostics” feature in the Power Platform admin center provides basic access diagnostics for individual users in the environment. The feature helps to detect potential causes to user sign-in and other issues and suggests potential mitigations. For more information, see: [Troubleshooting: Common user access issues](troubleshooting-user-needs-read-write-access-organization.md).
+Several factors influence user access in a Microsoft Dataverse environment. To help administrators with diagnosing user access to an environment and reasons for access or no access, the new “Run diagnostics” feature in the Power Platform admin center provides basic access diagnostics for individual users in the environment. The feature helps to detect potential causes to user sign-in and other issues and suggests potential mitigations. See [User diagnostics](#user-diagnostics).
 
 ### User has no roles 
 
 When an error screen stating the user has no roles is encountered, a system administrator will need to assign roles to the user. Roles can be assigned directly to the user, or to a group team that the user is a part of. For information on how to assign Dataverse security roles to a user, see: 
-[Assign a security role to a user](create-users-assign-online-security-roles.md#assign-a-security-role-to-a-user)
+[Assign a security role to a user](create-users-assign-online-security-roles.md#assign-a-security-role-to-a-user).
 
 ### User does not have a license / user does not belong to the organization 
 
@@ -125,13 +143,13 @@ There are multiple ways to do this:
 
 1. **Just-in-time (JIT) user provisioning**: When users access an environment URL, access requirements are checked at the time of sign-in and qualified users are added to the environment.
 
-2. **User impersonation call**: Impersonation call triggers a JIT sync for the user. See [How to impersonate a user](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/impersonate-another-user-web-api#how-to-impersonate-a-user).
+2. **User impersonation call**: Impersonation call triggers a JIT sync for the user. See [How to impersonate a user](/powerapps/developer/common-data-service/webapi/impersonate-another-user-web-api#how-to-impersonate-a-user).
 
 3. **Add users** in the Power Platform admin center: Admins can add or refresh users. See [Add users to an environment](add-users-to-environment.md).
 
-4. **Powershell cmdlets**: See [Powershell support for Power Apps](https://docs.microsoft.com/power-platform/admin/powerapps-powershell#power-apps-cmdlets-for-administrators).
+4. **Powershell cmdlets**: See [Powershell support for Power Apps](./powerapps-powershell.md#power-apps-cmdlets-for-administrators).
 
-5. **Connectors**: See [Power Platform for Admins](https://docs.microsoft.com/connectors/powerplatformforadmins/#force-sync-user).
+5. **Connectors**: See [Power Platform for Admins](/connectors/powerplatformforadmins/#force-sync-user).
 
 6. **Power Automate template**: See [Force Sync Azure Active Directory Group members to specified CDS instance](https://us.flow.microsoft.com/galleries/public/templates/6e4162ca7afc48479e3ad1caadc6c1e6/force-sync-azure-active-directory-group-members-to-specified-cds-instance/).
 

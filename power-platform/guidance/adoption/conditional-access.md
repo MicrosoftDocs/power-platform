@@ -18,7 +18,7 @@ search.app:
 ---
 # Set up Azure AD Conditional Access
 
-[Conditional Access policies](https://docs.microsoft.com/azure/active-directory/conditional-access/) in Azure Active Directory (Azure AD) at their simplest are if-then statements: *if* a user wants to access a resource, *then* they must complete an action.
+[Conditional Access policies](/azure/active-directory/conditional-access/) in Azure Active Directory (Azure AD) at their simplest are if-then statements: *if* a user wants to access a resource, *then* they must complete an action.
 
 **Example:** A payroll manager wants to access the payroll app that has been built with Power Apps and is required to perform multifactor authentication to access it.
 
@@ -33,12 +33,12 @@ Only *Global Admins* can configure Conditional Access policies. This isn't avail
 
 ![Conceptual Conditional Access process flow](media/conditional-access.png "Conceptual Conditional Access process flow")
 
-To learn how to set up Conditional Access policies, see [Plan a Conditional Access deployment](https://docs.microsoft.com/azure/active-directory/conditional-access/plan-conditional-access).
+To learn how to set up Conditional Access policies, see [Plan a Conditional Access deployment](/azure/active-directory/conditional-access/plan-conditional-access).
 
 ## Further resources
 
-[Best practices for Conditional Access in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/conditional-access/best-practices)<br>
-[License Requirements to enable Conditional Access](https://docs.microsoft.com//azure/active-directory/conditional-access/overview#license-requirements)
+[Best practices for Conditional Access in Azure Active Directory](/azure/active-directory/conditional-access/best-practices)<br>
+[License Requirements to enable Conditional Access](//azure/active-directory/conditional-access/overview#license-requirements)
 
 
 

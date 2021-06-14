@@ -1,11 +1,12 @@
 ---
-title: "Datacenter regions  | MicrosoftDocs"
-description: Datacenter regions
+title: "Dynamics 365 datacenter regions"
+description: "Dynamics 365 customer engagement apps are hosted in datacenters across many regions. Find a list of regions and URLs, plus how to migrate to a new datacenter."
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/14/2020
+ms.custom: intro-internal
+ms.date: 03/09/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -23,7 +24,7 @@ The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service,
   
 - For existing organizations, [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] will soon accommodate migrations to datacenters in the new region when requested by the customer as long as the organization meets certain business requirements.  
   
-The following table lists the newest datacenter regions. Checkout the interactive data map: [Where is my data?](https://go.microsoft.com/fwlink/p/?LinkID=401277)  
+The following table lists the newest datacenter regions. See [Where your data is located](https://www.microsoft.com/trust-center/privacy/data-location)  
   
 |Datacenter regions|Service area|Information|  
 |------------------------|------------------|-----------------|  

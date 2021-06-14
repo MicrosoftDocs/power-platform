@@ -17,8 +17,6 @@ search.app:
 ---
 # Free up storage space
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 These are ways to reduce the amount of storage space used by removing or deleting different types of information from customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation). Use one or more of these methods to control your total data storage usage. You can delete certain categories of data as the need arises, or you can set up bulk deletion jobs to reoccur at set intervals.  
   
 > [!WARNING]
@@ -68,7 +66,7 @@ Use the following methods to free up storage for each of the capacity types.
   
    **Attachments (Item)**  
   
-   **File Size (Bytes)** – **Is Greater Than** - In the text box, type a byte value, such as 1,048,576 (1MB in binary).  
+   **File Size (Bytes)** – **Is Greater Than** - In the text box, type a byte value, such as 1,048,576 (this is binary for 1MB).  
  
 > [!div class="mx-imgBorder"] 
 > ![Free up storage method 3](media/free-storage-method3a.png "Free up storage method 3")  
@@ -101,7 +99,7 @@ Use the following methods to free up storage for each of the capacity types.
   
    **Attachments (Item)**  
   
-   **File Size (Bytes)** – **Is Greater Than** – In the text box, type a byte value, such as 1,048,576 (1MB in binary).  
+   **File Size (Bytes)** – **Is Greater Than** – In the text box, type a byte value, such as 1,048,576 (this is binary for 1MB).  
   
 6. Group the first two criteria rows:  
   
@@ -420,7 +418,7 @@ Tables and tables fields enabled for Relevance Search have an impact on the data
 
 ## Free up storage used by flow approvals
 
-See [Delete approval history from Power Automate](https://docs.microsoft.com/power-automate/gdpr-dsr-delete#delete-approval-history-from-power-automate).
+See [Delete approval history from Power Automate](/power-automate/gdpr-dsr-delete#delete-approval-history-from-power-automate).
 
 ### See also
 [Dataverse storage capacity](capacity-storage.md)

@@ -17,8 +17,6 @@ search.app:
 ---
 # Rich text experience for appointment activities
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 When you enable the rich text experience, server-side synchronization and appointment activities support rich text. With the rich text editor, appointment descriptions can contain rich text. 
 
 ![Rich text appointment editor](media/appointment-rich-text.png)
@@ -68,7 +66,7 @@ Write-Host "Appointment RTE updated value: " $organizationEntity.appointmentrich
 
 
 ## See also
-[Create or edit an appointment](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/basics/create-edit-appointment)
+[Create or edit an appointment](/dynamics365/customerengagement/on-premises/basics/create-edit-appointment)
 
 
 

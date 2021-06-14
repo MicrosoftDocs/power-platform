@@ -22,7 +22,7 @@ search.app:
 
 Components are reusable building blocks for canvas apps so that app makers can create custom controls to use inside an app, or across apps using a component library. Components can use advanced features such as custom properties and enable complex capabilities.
 
-[Component libraries](https://docs.microsoft.com/powerapps/maker/canvas-apps/component-library) are containers of component definitions that make it easy to:
+[Component libraries](/powerapps/maker/canvas-apps/component-library) are containers of component definitions that make it easy to:
 
 - Discover and search components.
 - Publish updates.
@@ -56,7 +56,7 @@ As a starting point, you could upload the exported app with some metadata like c
 
 Once you have a few templates, you could build an app template catalog on top of your SharePoint document library to make it easier for makers to search for, filter, and find available templates.
 
-The [nurture components of the Center of Excellence Starter Kit](https://docs.microsoft.com/power-platform/guidance/coe/nurture-components) contain a starting point:
+The [nurture components of the Center of Excellence Starter Kit](../coe/nurture-components.md) contain a starting point:
 
 ![Template catalog](../coe/media/coe68.png "Template catalog")
 

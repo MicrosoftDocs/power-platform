@@ -34,7 +34,7 @@ These settings can be found in the Microsoft Power Platform admin center by goin
 
 Make sure you have the System Administrator or System Customizer security role or equivalent permissions to update the setting.
 
-- Follow the steps in [View your user profile](https://docs.microsoft.com/powerapps/user/view-your-user-profile).
+- Follow the steps in [View your user profile](/powerapps/user/view-your-user-profile).
 - Don’t have the correct permissions? Contact your system administrator.
 
  Before users can start using a Language Pack to display a language, the Language Pack must be enabled in your organization.  
@@ -58,7 +58,7 @@ Make sure you have the System Administrator or System Customizer security role o
 
 ## Select the language to display the user interface and Help  
 
- Each user selects the language to display in an app.  See [Languages tab options](https://docs.microsoft.com/powerapps/user/set-personal-options#languages-tab-options).
+ Each user selects the language to display in an app.  See [Languages tab options](/powerapps/user/set-personal-options#languages-tab-options).
 
 
 

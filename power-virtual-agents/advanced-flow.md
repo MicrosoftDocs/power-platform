@@ -2,7 +2,7 @@
 title: "Automate chatbot actions with flows"
 description: "Retrieve data and automate processes in your Power Virtual Agents bot with flows."
 keywords: "PVA, flow, automate"
-ms.date: 9/22/2020
+ms.date: 3/19/2020
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -289,6 +289,11 @@ These instructions use adding weather information to a flow as an example. If yo
 
 1. Select **Save** to save your topic. 
 
+## Pass literal values into action input fiels
+
+Alternatively, if you'd rather type in a literal value for an action input instead of using a variable as an action input, you can type the value directly into the field. 
+
+:::image type="content" source="media/LiteralActionInput.png" alt-text="Pass literal values into action inputs.":::
 
 ## Test your flow and topic
 

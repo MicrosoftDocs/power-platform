@@ -1,11 +1,11 @@
 ---
-title: Regions overview  Microsoft Docs
-description: Learn about regions in Power Apps
+title: "Choose the region when setting up an environment"
+description: "Learn about the factors in selecting a region when creating a new environment in Microsoft Power Platform admin center."
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/14/2021
+ms.date: 05/26/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -16,8 +16,6 @@ search.app:
   - Flow
 ---
 # Regions overview 
-
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 For multinational companies with employees and customers distributed around the world, you can create and manage environments specific to your global regions. You can create an environment in a different region than where your tenant resides. Local environments can provide quicker data access for users in that region. Be sure to read [A multi-environment deployment](multiple-online-environments-tenants.md#a-multi-environment-deployment) to understand the features of multiple environments.  
 
@@ -69,11 +67,6 @@ For optimal performance, if your users are in Europe, create and use the environ
 > On-premises data gateways aren't available in the India region.
 > 
 > Microsoft Dataverse for Teams is not available in the following regions:
-> - Germany
-> - South Africa
-> - South Korea
-> - Switzerland
-> - UAE
 > - GCC
 > - GCC High
 

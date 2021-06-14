@@ -1,6 +1,6 @@
 ---
-title: "Manage your documents using SharePoint  | MicrosoftDocs"
-description: Manage your documents using SharePoint 
+title: "Use SharePoint and Dynamics 365 apps to manage your documents"
+description: "Learn about document management with SharePoint and Microsoft Dynamics 365 customer engagement apps." 
 author: Mattp123
 ms.service: power-platform
 ms.component: pa-admin

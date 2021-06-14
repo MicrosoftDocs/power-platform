@@ -1,10 +1,11 @@
 ---
-title: Licensing overview | Microsoft Docs
-description: Overview of licensing in Power Apps.
+title: Licensing overview for Microsoft Power Platform | Microsoft Docs
+description: Overview of licensing in Microsoft Power Platform (Power Apps, Power Automate, Power Virtual Agents, Power BI, AI Builder, Dataverse, portals).
 author: dileepsinghmicrosoft
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
+ms.custom: intro-internal
 ms.date: 02/01/2021
 ms.author: dileeps
 ms.reviewer: jimholtz
@@ -25,11 +26,11 @@ For information about:
 
 - Power BI licensing, see [Power BI Pricing](https://powerbi.microsoft.com/pricing/).
 
-- Power Virtual Agents licensing, see [Licensing for Power Virtual Agents](/power-virtual-agents/requirements-licensing-subscriptions.md) and for information about pricing, see [Power Virtual Agents pricing plans](https://powervirtualagents.microsoft.com/pricing/).
+- Power Virtual Agents licensing, see [Licensing for Power Virtual Agents](/power-virtual-agents/requirements-licensing-subscriptions) and for information about pricing, see [Power Virtual Agents pricing plans](https://powervirtualagents.microsoft.com/pricing/).
 
 ## Power Apps and Power Automate Standalone plans
 
-Standalone Power Apps and Microsoft flow plans provide users the ability to create and run apps across data sources that extend beyond Microsoft 365, such as Salesforce, on-premises and custom data sources. These plans also include access to Dataverse to store and manage data. Learn more: [What is Dataverse?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
+Standalone Power Apps and Microsoft flow plans provide users the ability to create and run apps across data sources that extend beyond Microsoft 365, such as Salesforce, on-premises and custom data sources. These plans also include access to Dataverse to store and manage data. Learn more: [What is Dataverse?](/powerapps/maker/common-data-service/data-platform-intro)
 
 More details around pricing and capabilities of standalone plans can be found in [Microsoft Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 
@@ -69,7 +70,7 @@ These limited capabilities of Dataverse are only available through select Micros
 
 These limited capabilities aren't the common set included with every Office application. They can be different based on the Microsoft 365 applications that use these capabilities. For the complete list of various limited capabilities, customers should refer to the service description of these Microsoft 365 applications that contain these Dataverse plans. These limited capabilities of Dataverse don't entitle the licensed user to run standalone Power Apps or Power Automate, or any other Microsoft Power Platform applications that use Dataverse. 
 
-Review the [Microsoft Project Service description](https://docs.microsoft.com/office365/servicedescriptions/project-online-service-description/project-online-service-description) for more details on the limited use of Dataverse that comes with Project. 
+Review the [Microsoft Project Service description](/office365/servicedescriptions/project-online-service-description/project-online-service-description) for more details on the limited use of Dataverse that comes with Project. 
 
 ### Frequently asked questions
 

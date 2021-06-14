@@ -1,8 +1,7 @@
 ---
-title: "View and take action on bulk deletion jobs  | MicrosoftDocs"
-description: View and take action on bulk deletion jobs
+title: "Bulk deletion jobs: view, pause, postpone, resume, or cancel"
+description: "Learn how to use the Power Platform admin center to view and take your choice of actions on a Dynamics 365 bulk deletion job."
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
@@ -17,8 +16,6 @@ search.app:
   - Flow
 ---
 # View and take action on bulk deletion jobs
-
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 You can view the status of, pause, postpone, and resume a system job that you created using **Bulk Record Deletion**.  
   

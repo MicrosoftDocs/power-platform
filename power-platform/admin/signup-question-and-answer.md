@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/25/2021
+ms.date: 05/25/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -18,24 +18,22 @@ search.app:
 
 # Manage Power Apps licenses in your organization 
 
-This topic describes how users in your organization can get access to use Power Apps, and how you can control access to the Power Apps service. Visit the [Power Automate administration FAQs](https://docs.microsoft.com/power-automate/organization-q-and-a) to learn about admin controls.
+This topic describes how users in your organization can get access to use Power Apps, and how you can control access to the Power Apps service. Visit the [Power Automate administration FAQs](/power-automate/organization-q-and-a) to learn about admin controls.
 
 ## Sign up for Power Apps
-### What is Power Apps?
-Microsoft Power Apps enables users to create applications for Windows, iOS, and Android mobile devices. Using these apps, you can create connections to common SaaS services, including Twitter, Microsoft 365, Dropbox, and Excel.
 
 ### How do users sign up for Power Apps?
 If a user doesn’t have any Power Apps licenses, the only sign-up option for individual users in your organization is the Power Apps trial, for which they can sign up through the Power Apps website:
 
-##### Option 1
+#### Option 1
 Users can sign up by going to [powerapps.microsoft.com](https://powerapps.microsoft.com), selecting **Try free**, and then completing the sign-up process for Power Apps.
 
-##### Option 2
+#### Option 2
 Users can sign up by going to [powerapps.microsoft.com](https://powerapps.microsoft.com), selecting **Sign in**, signing in with their work or school accounts, and sign up for the Power Apps trial by accepting the Power Apps terms of use.    
 
 When a user in your organization signs up for Power Apps, that user is assigned a Power Apps license automatically.
 
-##### Option 3
+#### Option 3
 Users are prompted to begin a trial before they can use a shared app that requires additional licensing.
 
 > [!NOTE]
@@ -54,13 +52,16 @@ Users within your organization can gain access to Power Apps in four ways:
 ### Can I block users in my organization from signing up for Power Apps?
 Any individual can try out the features of Microsoft Power Apps for 30 days, and incur no costs as outlined in the [How do users sign up for Power Apps](#how-do-users-sign-up-for-power-apps) section.
 
-As a global admin, you can control your users' ability to sign up for Power Apps trial with option 1. You do this by enabling or disabling self-service signup. If you want to disable all self-service sign-ups, use Azure AD PowerShell commands to change the **AllowAdHocSubscriptions** setting. This option turns off self-service sign-up for all Microsoft cloud-based apps and services. Options 2 and 3 are available to any user in a tenant and cannot be disabled by an admin. After the user's trial expires, the user will need to renew the trial license to continue using Power Apps. 
+As a global admin, you can control your users' ability to sign up for Power Apps trial with option 1. You do this by enabling or disabling self-service sign-up. If you want to disable all self-service sign-ups, use Azure AD PowerShell commands to change the **AllowAdHocSubscriptions** setting. This option turns off self-service sign-up for all Microsoft cloud-based apps and services. 
+
+For blocking via options 2 and 3, see [Block trial licenses commands](powerapps-powershell.md#block-trial-licenses-commands). Note, blocking trial licenses does not block creating apps in the tenant. 
 
 If a person signs up for a 30 day trial of Microsoft Power Apps, and you choose to not support them inside of your organization, they cannot incur costs to your company. When an individual signs up for Microsoft Power Apps, that is a relationship between that individual and Microsoft directly, like any other public cloud services from Microsoft, such as Bing, Wunderlist, OneDrive or Outlook.com, and does not imply that the service is provided by your organization.
 
 Finally, if your company wants to restrict the use of its data in Microsoft Power Apps, use [data loss prevention (DLP) policies](prevent-data-loss.md).
 
 ## Administration of Power Apps
+
 ### Why has the Power Apps icon appeared in the Microsoft 365 app launcher?
 Microsoft Power Apps is a fundamental part of the Microsoft 365 suite and is enabled as a service as a part of existing Microsoft 365 SKU's. As users everywhere in the world can now use Microsoft Power Apps, it appears in 'All apps' in the app launcher screen. See [Licensing overview](pricing-billing-skus.md) to understand which Microsoft 365 SKUs now include Power Apps.
 
@@ -75,11 +76,11 @@ If a user was assigned a Power Apps license then you can take the following step
 
 3. Find the user you want to remove the license for, and then select their name.
 
-4. On the user details pane, in the **Product licenses** section select **Edit**.
+4. On the user details pane, select the **Licenses and apps** section.
 
-5. Find the Power Apps license, set the toggle to **Off**, and then select **Save**.
+5. Find the Power Apps license, uncheck the box and select **Save changes**.
 
-    ![Remove license](./media/signup-question-and-answer/remove-license.png)
+   ![Remove license](./media/signup-question-and-answer/remove-license.png)
 
 If a user has access to Power Apps through their Microsoft 365 and Dynamics 365 plan license, then you can disable their access to the Power Apps service by taking the following steps:
 
@@ -91,11 +92,11 @@ If a user has access to Power Apps through their Microsoft 365 and Dynamics 365 
 
 4. On the user details pane, in the **Product licenses** section select **Edit**.
 
-5. Expand the user's Microsoft 365 or Dynamics 365 license, disable access to the service, and then select **Save**.
+5. Expand the user's Microsoft 365 or Dynamics 365 license, uncheck the box to the service and select **Save changes**.
 
     ![Remove service plan](./media/signup-question-and-answer/remove-service-plan.png)
 
-Bulk removal of licenses is also possible through PowerShell. See [Remove Microsoft 365 licenses from user accounts with PowerShell](https://technet.microsoft.com/library/dn771774.aspx) for a detailed example.   Finally, further guidance about bulk removal of services within a license can be found at [Disable access to Microsoft 365 services with PowerShell](https://technet.microsoft.com/library/dn771769.aspx).
+Bulk removal of licenses is also possible through PowerShell. See [Remove Microsoft 365 licenses from user accounts with PowerShell](/microsoft-365/enterprise/remove-licenses-from-user-accounts-with-microsoft-365-powershell) for a detailed example.   Finally, further guidance about bulk removal of services within a license can be found at [Disable access to Microsoft 365 services with PowerShell](/microsoft-365/enterprise/disable-access-to-services-with-microsoft-365-powershell).
 
 Removing of the Power Apps license or service for a user in your organization will also result in the removal of the Power Apps and Dynamics 365 icons from the following locations for that user:
 

@@ -1,6 +1,6 @@
 ---
-title: "Edit properties of an environment  | MicrosoftDocs"
-description: Edit properties of an environment 
+title: "Edit properties of an environment"
+description: "Learn how to edit the properties of an environment in Power Platform admin center, including URL, friendly name, type, and security group."
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
@@ -16,8 +16,6 @@ search.app:
   - Flow
 ---
 # Edit properties of an environment 
-
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 Administrators can edit properties of an environment, such as the friendly name, URL, and the purpose. However, environments that are being provisioned cannot be edited, and disabled environments must be enabled before they can be edited.  
   

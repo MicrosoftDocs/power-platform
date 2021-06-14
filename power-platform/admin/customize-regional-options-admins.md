@@ -23,7 +23,7 @@ You can customize how numbers, currencies, times, and dates appear to everyone i
   
 Make sure you have the System Administrator or System Customizer security role or equivalent permissions to update the setting.
 
-- Follow the steps in [View your user profile](https://docs.microsoft.com/dynamics365/customer-engagement/basics/view-your-user-profile).
+- Follow the steps in [View your user profile](/dynamics365/customer-engagement/basics/view-your-user-profile).
 - Don't have the correct permissions? Contact your system administrator.
   
 1. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.

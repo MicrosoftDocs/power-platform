@@ -4,7 +4,7 @@ description: "To avoid multiple installed solutions from interfering with one an
 ms.custom: ""
 ms.date: 09/09/2020
 ms.reviewer: ""
-ms.service: powerapps
+ms.service: power-platform
 ms.topic: "article"
 author: "shmcarth" 
 ms.author: "matp" 

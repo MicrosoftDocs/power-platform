@@ -7,7 +7,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/21/2021
+ms.date: 06/07/2021
 search.audienceType: 
   - admin
 search.app:
@@ -18,12 +18,14 @@ search.app:
 ---
 # General availability deployment 
 
-After a release wave is generally available, all environments will be automatically turned on to receive mandatory updates which will enable the early access features and the general available features of a release.  
+After a release cycle has been made "generally available" to users, environments are typically automatically turned on. This is so users can receive ongoing mandatory updates. These updates enable early access features, as well as the current available features that are included in a release.  
 
 > [!TIP]
-> Check out [Dynamics 365 and Power Platform Release Plans](https://docs.microsoft.com/dynamics365/release-plans/) to learn more about new features to be released in the release waves.   
+> Check out [Dynamics 365 and Power Platform Release Plans](/dynamics365/release-plans/) to learn more about new features to be released in the release waves.   
 
-Throughout a release wave, your environments will be updated during one of the weekend [maintenance windows](policies-communications.md#maintenance-timeline) based on your environments' region. The specific dates when the updates will occur will be published to the [Message Center](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide). Each notification will include the dates, the maintenance window, and the Release Plan reference for the list of optimizations, fixes, and enhancements. Each environment should see the new features and build numbers by Monday morning, local time. See [Policies and communications](policies-communications.md#scheduled-system-updates). 
+Throughout a release cycle, your environments are updated during one of the weekend [maintenance windows](policies-communications.md#maintenance-timeline). These windows are based on your environments' region. The specific dates when the updates occur are published to the [Message Center](/office365/admin/manage/message-center). 
+
+Each notification from the Message Center includes dates, the maintenance window, and the Release Plan reference. In addition, included is a list of optimizations, fixes, and enhancements. Each environment should see the new features and build numbers by Monday morning, local time. See [Policies and communications](policies-communications.md#scheduled-system-updates-and-maintenance).  
 
 > [!NOTE]
 > If you have enabled the early access updates in your environments, you'll continue getting updates throughout the release wave.
@@ -34,18 +36,18 @@ Throughout a release wave, your environments will be updated during one of the w
 
 The general availability deployment is based on the regions where environments are created.
 
-|Regions  |Schedule for 2021 wave 1 general availability deployment|
+|Regions  |Schedule for 2021 wave 2 general availability deployment|
 |---------|---------|
-|South America<br />Canada<br />India<br />France<br />Emirates<br />South Africa<br />Germany  |  Friday, April 2nd – Sunday, April 4th     |
-|Japan<br />Asia Pacific<br />Great Britain<br />Australia   | Friday, April 9th – Sunday, April 11th      |
-|Europe     | Friday, April 16th – Sunday, April 18th       |
-|North America     |  Friday, April 23nd – Sunday, April 25th        |
-|China | Friday, April 30th – Sunday, May 2nd  |
-|GCC<br />GCC High<br />DOD  | Friday, April 30th – Sunday, May 2nd <br />See [Dynamics 365 US Government](microsoft-dynamics-365-government.md). |
+|South America<br />Canada<br />India<br />France<br />Emirates<br />South Africa<br />Germany  |  Friday, October 1st to Sunday, October 3rd     |
+|Japan<br />Asia Pacific<br />Great Britain<br />Australia   | Friday, October 8th to Sunday, October 10th       |
+|Europe     | Friday, October 15th to Sunday, October 17th      |
+|North America     |  Friday, October 22nd to Sunday, October 24th           |
+|China | Friday, October 29th to Sunday, October 31st      |
+|GCC<br />GCC High<br />DOD  | Friday, October 29th to Sunday, October 31st  <br />See [Dynamics 365 US Government](microsoft-dynamics-365-government.md). |
 
 ### See also
-[Dynamics 365 release schedule](https://docs.microsoft.com/dynamics365/get-started/release-schedule) <br />
-[Dynamics 365 and Power Platform Release Plans ](https://docs.microsoft.com/dynamics365/release-plans/) <br />
+[Dynamics 365 release schedule](/dynamics365/get-started/release-schedule) <br />
+[Dynamics 365 and Power Platform Release Plans ](/dynamics365/release-plans/) <br />
 [Policies and communications ](policies-communications.md)
 
 

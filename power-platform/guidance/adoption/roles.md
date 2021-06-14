@@ -34,7 +34,7 @@ The Microsoft Power Platform nurture team—and this can consist of your champio
 
 ## Automation and reusable components
 
-We recommend that you have a team or function that looks at automating tasks, such as archiving unused resources, identifying highly used resources to provide more formal support, and approving environment and license requests from end users. This team would also set up application lifecycle management using the [Microsoft Power Platform Build Tools for Azure DevOps](https://docs.microsoft.com/power-platform/alm/devops-build-tools), support architecture reviews with makers, and  share common templates and reusable components. Having these functions in place will ensure that your organization extracts benefits more quickly, by ensuring processes are consistent and best practices copied across the organization.
+We recommend that you have a team or function that looks at automating tasks, such as archiving unused resources, identifying highly used resources to provide more formal support, and approving environment and license requests from end users. This team would also set up application lifecycle management using the [Microsoft Power Platform Build Tools for Azure DevOps](../../alm/devops-build-tools.md), support architecture reviews with makers, and  share common templates and reusable components. Having these functions in place will ensure that your organization extracts benefits more quickly, by ensuring processes are consistent and best practices copied across the organization.
 
 ## User support
 

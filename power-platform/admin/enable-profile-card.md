@@ -32,7 +32,7 @@ Microsoft's people experience is centered around profile cards that have been ar
 > - lpcres.delve.office.com 
 > - Port: TCP:443 
 > 
-> To view the complete endpoint requirements for connectivity from a user's machine to Microsoft 365 for profile cards to be displayed in Unified Interface, see [Microsoft 365 URLs and IP address ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) ID 130.
+> To view the complete endpoint requirements for connectivity from a user's machine to Microsoft 365 for profile cards to be displayed in Unified Interface, see [Microsoft 365 URLs and IP address ranges](/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) ID 130.
 
 ## Prerequisites
 
@@ -49,7 +49,7 @@ The following settings/environment are required for profile cards to be enabled 
 > [!div class="mx-imgBorder"] 
 > ![Enable users to view contact cards](media/enable-users-view-contact-cards.png "Enable users to view contact cards")
 
-For information on how to use profile cards, see [View the profile card for a contact or user](https://docs.microsoft.com/powerapps/user/profile-cards).
+For information on how to use profile cards, see [View the profile card for a contact or user](/powerapps/user/profile-cards).
 
 
 

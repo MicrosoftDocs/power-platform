@@ -17,9 +17,7 @@ search.app:
 ---
 # Enable Unified Interface Only
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
-In 2018, we introduced [Unified Interface](https://docs.microsoft.com/powerapps/user/unified-interface), the latest generation of web app design for the Power Apps model-driven apps and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation). It brings the best in usability, accessibility, functionality, and speed to every user. Improve how your business applications run by using only Unified Interface. To learn how to enable it, see [How to enable Unified Interface Only](#how-to-enable-unified-interface-only-mode). For more information, see [What experiences are available in Unified Interface Only](#what-experiences-are-available-in-unified-interface-only-mode) and [FAQs](#faqs).
+In 2018, we introduced [Unified Interface](/powerapps/user/unified-interface), the latest generation of web app design for the Power Apps model-driven apps and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation). It brings the best in usability, accessibility, functionality, and speed to every user. Improve how your business applications run by using only Unified Interface. To learn how to enable it, see [How to enable Unified Interface Only](#how-to-enable-unified-interface-only-mode). For more information, see [What experiences are available in Unified Interface Only](#what-experiences-are-available-in-unified-interface-only-mode) and [FAQs](#faqs).
 
 ## When does the Unified Interface Only experience become available, and which environments are affected?
 
@@ -57,17 +55,17 @@ Users with multiple apps see the list of apps available to them, and can navigat
 > ![Unified interface apps](media/uci-apps-home-page.png "Unified interface apps")
 
 > [!NOTE]
-> This change applies to environment URL based sign-in (for example, https://contoso.crm.dynamics.com/) on the web. It doesn't affect users who sign in using home.dynamics.com or other portals. The sign-in and home page experience for [!INCLUDE[pn_dyn-365_phones](../includes/pn-dyn-365-phones.md)] and [!INCLUDE [pn-dyn-365-tablets](../includes/pn-dyn-365-tablets.md)] remains unchanged. You can learn more at [Sign in and sign out](https://docs.microsoft.com/dynamics365/mobile-app/dynamics-365-phones-tablets-users-guide#sign-in-and-sign-out).
+> This change applies to environment URL based sign-in (for example, https://contoso.crm.dynamics.com/) on the web. It doesn't affect users who sign in using home.dynamics.com or other portals. The sign-in and home page experience for [!INCLUDE[pn_dyn-365_phones](../includes/pn-dyn-365-phones.md)] and [!INCLUDE [pn-dyn-365-tablets](../includes/pn-dyn-365-tablets.md)] remains unchanged. You can learn more at [Sign in and sign out](/dynamics365/mobile-app/dynamics-365-phones-tablets-users-guide#sign-in-and-sign-out).
 
 ### Run all apps in Unified Interface Only mode
 
-Unified Interface is centered around the concept of modular applications known as [model-driven apps](https://docs.microsoft.com/powerapps/maker/model-driven-apps/model-driven-app-overview). These apps allow developers and admins to streamline the data and functionality to provide exactly what end users need. 
+Unified Interface is centered around the concept of modular applications known as [model-driven apps](/powerapps/maker/model-driven-apps/model-driven-app-overview). These apps allow developers and admins to streamline the data and functionality to provide exactly what end users need. 
 
 In Unified Interface Only mode, all model-driven apps, including those created for the legacy web client, run in Unified Interface to provide superior performance and usability. 
 
 ### Deep linking apps and pages
 
-With Unified Interface Only mode, all URLs (or deep links) open in Unified Interface in the context of the app being referenced. For more information on constructing links, see [Open forms, views, dialogs, and reports with a URL](https://docs.microsoft.com/powerapps/developer/model-driven-apps/open-forms-views-dialogs-reports-url).
+With Unified Interface Only mode, all URLs (or deep links) open in Unified Interface in the context of the app being referenced. For more information on constructing links, see [Open forms, views, dialogs, and reports with a URL](/powerapps/developer/model-driven-apps/open-forms-views-dialogs-reports-url).
 
 If no app is referenced in the URL, the record or page opens without any navigation elements on the page. Navigation elements like sitemap are defined using an app; URLs without apps don't have them. Users can use the app switcher to navigate to an app and continue their work.
 
@@ -121,7 +119,7 @@ This setting is preset to Off for your environment, and you are unaffected by th
 You can achieve this by [setting all apps to be Unified Interface apps](update-apps-to-unified-interface.md). Note that this won't change the home page experience to Unified Interface. Unified Interface Only mode is a prerequisite to get the [new home page experience](#new-immersive-home-page-experience-on-web).
 
 ### How do I resolve errors seen while using a *Dynamics 365 - custom* legacy app in Unified Interface?
-If there are issues with Unified Interface, [please let us know](https://docs.microsoft.com/power-platform/admin/get-help-support).
+If there are issues with Unified Interface, [please let us know](./get-help-support.md).
 
 ### How does it impact my Unified Service Desk deployment?
 

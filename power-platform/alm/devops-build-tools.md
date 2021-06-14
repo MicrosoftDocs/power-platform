@@ -6,9 +6,9 @@ author: mikkelsen2000
 ms.author: pemikkel
 manager: kvivek
 ms.custom: ""
-ms.date: 06/04/2020
+ms.date: 06/04/2021
 ms.reviewer: "pehecke"
-ms.service: powerapps
+ms.service: power-platform
 ms.topic: "article"
 search.audienceType: 
   - developer
@@ -40,7 +40,9 @@ that teams commonly put in place include Initiate, Export from Dev, Build, and R
 ![ALM powered by Azure DevOps](media/initiate-build-release.png "ALM powered by Azure DevOps")
 
 > [!NOTE] 
-> Microsoft Power Platform Build Tools are supported only for a Microsoft Dataverse environment with a database. More information: [Create an environment with a database](/power-platform/admin/create-environment#create-an-environment-with-a-database)
+> Microsoft Power Platform Build Tools are supported only for a Microsoft Dataverse environment with a database. More information: [Create an environment with a database](../admin/create-environment.md#create-an-environment-with-a-database)
+> 
+> Microsoft Power Platform Build Tools are currently not available for use in the **GCC** and **GCC High** regions. 
 
 ## What are Microsoft Power Platform Build Tools?
 
@@ -82,7 +84,7 @@ To interact with the Microsoft Power Platform environment, a connection must be 
 
 ## Configure service connections using a service principal
 
-To configure a connection using service principal, you must first create an application registration in Azure Active Directory (AAD) with the required permissions and then create the associated Application User in the Microsoft Power Platform environment you want to connect to. We have offered a script to facilitate some of the steps required in the section below, while detailed information with manual step-by-step instructions are available [here](https://docs.microsoft.com/powerapps/developer/common-data-service/use-single-tenant-server-server-authentication#azure-application-registration).
+To configure a connection using service principal, you must first create an application registration in Azure Active Directory (AAD) with the required permissions and then create the associated Application User in the Microsoft Power Platform environment you want to connect to. We have offered a script to facilitate some of the steps required in the section below, while detailed information with manual step-by-step instructions are available [here](/powerapps/developer/common-data-service/use-single-tenant-server-server-authentication#azure-application-registration).
 
 ### Create service principal and client secret using PowerShell
 
@@ -122,7 +124,7 @@ Use the information displayed to configure the Power Platform service connection
 
 
 ### Configure environment with the Application ID
-The Application ID must be added as an Application User in the Microsoft Power Platform environment you are connecting to. Information on how to add an application user is available [here](https://docs.microsoft.com/powerapps/developer/common-data-service/use-single-tenant-server-server-authentication#application-user-creation) 
+The Application ID must be added as an Application User in the Microsoft Power Platform environment you are connecting to. Information on how to add an application user is available [here](/powerapps/developer/common-data-service/use-single-tenant-server-server-authentication#application-user-creation) 
 
 Ensure that the added Application User has the system administrator role assigned (available from “Manage Roles” in the security settings for the application user).
 
@@ -146,7 +148,7 @@ Ensure that the added Application User has the system administrator role assigne
 
 **I can see the extension, but why don’t I have an option to install it?**
 
-*If you do not see the **install** option then you most likely lack the necessary install privileges in your Azure DevOps organization. More info available [Manage extension permissions](https://docs.microsoft.com/azure/devops/marketplace/how-to/grant-permissions?view=azure-devops).*
+*If you do not see the **install** option then you most likely lack the necessary install privileges in your Azure DevOps organization. More info available [Manage extension permissions](/azure/devops/marketplace/how-to/grant-permissions?view=azure-devops).*
 
 **How can developers use the results of the Checker task?**
 

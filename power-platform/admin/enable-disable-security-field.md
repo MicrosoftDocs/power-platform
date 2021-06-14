@@ -1,6 +1,6 @@
 ---
-title: "Enable or disable security for a field  | MicrosoftDocs"
-description: Enable or disable security for a field 
+title: "Enable or disable field-level security"
+description: "Power Platform's field-level security lets you set which fields users can see or edit. Follow these steps to enable or disable security for a field."
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
@@ -18,8 +18,6 @@ search.app:
   - Flow
 ---
 # Enable or disable security for a field to control access
-
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 <!-- legacy procedure -->
 

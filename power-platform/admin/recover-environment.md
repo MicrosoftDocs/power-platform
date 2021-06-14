@@ -1,6 +1,6 @@
 ---
-title: "Recover environment | MicrosoftDocs"
-description: Recover environment
+title: "Recover a recently deleted environment"
+description: "Learn how to restore a recently deleted environment by using Microsoft Power Platform admin center or Power Apps cmdlet."
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
@@ -72,7 +72,7 @@ To learn more on using PowerShell cmdlets for environments, see [Power Apps cmdl
 [Automatic environment cleanup](automatic-environment-cleanup.md) <br />
 [Manage sandbox environments](sandbox-environments.md) <br />
 [Environments overview](environments-overview.md) <br />
-[Cmdlet list - Admin Cmdlets](powerapps-powershell.md#cmdlet-list---admin-cmdlets) <br />
+[Microsoft.PowerApps.Administration.PowerShell](/powershell/module/microsoft.powerapps.administration.powershell/?view=pa-ps-latest) <br />
 [Licensing overview for Microsoft Power Platform](pricing-billing-skus.md)
 
 

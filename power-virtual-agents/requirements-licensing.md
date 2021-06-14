@@ -2,7 +2,7 @@
 title: "Assign user licenses and manage access"
 description: "Assign licenses and manage access to Power Virtual Agents for your organization"
 keywords: "Administration, licensing, PVA"
-ms.date: 9/22/2020
+ms.date: 5/4/2021
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -63,7 +63,7 @@ Purchase licenses for your organization by going to the [Microsoft 365 admin cen
 3. Look for **Power Virtual Agent User License**. Select the number of licenses you need, and complete the checkout process.
 
 >[!IMPORTANT]
->If you purchased a Power Virtual Agents license through volume licensing or any channel other than the [Microsoft 365 admin center](https://admin.microsoft.com/admin/default.aspx), you need to acquire both a tenant licence and user licenses through that channel, preferably as part of a single transaction.
+>If you purchased a Power Virtual Agents license through volume licensing or any channel other than the [Microsoft 365 admin center](https://admin.microsoft.com/admin/default.aspx), you need to acquire both a tenant license and user licenses through that channel, preferably as part of a single transaction.
 
 ## Assign licenses to users
 
@@ -110,7 +110,8 @@ See [Quotas and rate limit capacity considerations for Power Virtual Agents](req
 
 ## Using Power Automate with a Power Virtual Agents license
 
-[See Power Automate request limits for Power Virtual Agents](requirements-quotas.md#power-automate-request-limits)
+[See Quotas, limits, and configuration values](requirements-quotas.md).
+
 [See how to use Power Automate with Power Virtual Agents](advanced-flow.md). 
 
 

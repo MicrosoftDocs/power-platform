@@ -1,6 +1,6 @@
 ---
-title: "Plug-ins | Microsoft Docs"
-description: "Learn about including plug-in components in solutions."
+title: "Package plug-ins and custom workflow activities in a solution"
+description: "Learn how to register plug-ins, steps, and custom workflow activities in a solution with Power Apps."
 keywords: 
 author: mikkelsen2000
 ms.author: pemikkel
@@ -8,7 +8,7 @@ manager: kvivek
 ms.custom: ""
 ms.date: 06/05/2020
 ms.reviewer: "pehecke"
-ms.service: powerapps
+ms.service: power-platform
 ms.topic: "article"
 search.audienceType: 
   - developer

@@ -34,6 +34,8 @@ Power Virtual Agents is available as an app within Microsoft Teams, which means 
 
 You can add the Power Virtual Agents app from the Microsoft Teams app store and begin to create, author, test, and publish your bot directly into teams, all within the Microsoft Teams interface. You can also visit [https://aka.ms/PVAForTeams](https://aka.ms/PVAForTeams) to directly install or open the app.
 
+Because Power Virtual Agents is fully integrated as an app, you can apply Teams settings, such as high contrast and dark mode [under Teams **Settings**](https://support.microsoft.com/office/change-settings-in-teams-b506e8f1-1a96-4cf1-8c6b-b6ed4f424bc7#bkmk_howdoienablehighcontrastmode).
+
 Some of the scenarios where you might want to create a Power Virtual Agents chatbot in Microsoft Teams include:
 
 - Someone in the payroll department creates a chatbot that helps teammates get tax filing forms and information

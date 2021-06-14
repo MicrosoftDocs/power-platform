@@ -17,15 +17,13 @@ search.app:
 ---
 # Turn duplicate detection rules on or off for the whole organization
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 To maintain the integrity of your data, it’s a good idea to set up duplicate detection rules to reduce duplicate records in the system. Remember that after you create duplicate detection rules, you need to turn them on.  
   
 These settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Data management** > **Duplicate detection**.
 
 Make sure you have the System Administrator, System Customizer, Sales Manager, Vice President of Sales, Vice President of Marketing, or CEO-Business Manager security role or equivalent permissions to update the setting.
 
-- Follow the steps in [View your user profile](https://docs.microsoft.com/powerapps/user/view-your-user-profile).
+- Follow the steps in [View your user profile](/powerapps/user/view-your-user-profile).
 - Don’t have the correct permissions? Contact your system administrator.
 
   
@@ -57,9 +55,8 @@ Make sure you have the System Administrator, System Customizer, Sales Manager, V
   
 ### See also  
 [Set up duplicate detection rules to keep your data clean](set-up-duplicate-detection-rules-keep-data-clean.md) <br />
-[Enable the improved duplicate detection and merge experience](enable-improved-duplicate-detection.md) <br />
 [Run bulk system jobs to detect duplicate records](run-bulk-system-jobs-detect-duplicate-records.md) <br />
-[Frequently asked questions about synchronizing records between customer engagement apps and Microsoft Outlook](frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook.md) 
+[Frequently asked questions about synchronizing records between customer engagement apps and Microsoft Outlook](frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook.yml) 
 
 
 

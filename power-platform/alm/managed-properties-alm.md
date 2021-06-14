@@ -1,6 +1,6 @@
 ---
-title: "View and edit managed properties in Power Apps solutions"
-description: "Learn how to view and edit managed properties in Power Apps solutions when implementing application lifecycle management (ALM)."
+title: "View and edit managed properties in solutions"
+description: "Learn how to view and edit managed properties in solutions when implementing application lifecycle management (ALM)."
 keywords: 
 author: Mattp123
 ms.author: matp
@@ -8,7 +8,7 @@ manager: kvivek
 ms.custom: ""
 ms.date: 06/09/2020
 ms.reviewer: ""
-ms.service: powerapps
+ms.service: power-platform
 ms.topic: "article"
 search.audienceType: 
   - maker
@@ -34,10 +34,10 @@ environment. After the managed solution is imported, the managed properties
 can't be updated except by an update of the solution by the original publisher.
 
 Most solution components have a **Managed properties** menu item available in the list of solution components. When you import the managed solution that
-contains the components, you can view&mdash;but not change&mdash;their managed properties.
+contains the components, you can view&mdash;but not change&mdash;the managed properties.
 
 ## View and edit entity managed properties
-1.	Sign in to [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) and select **Solutions** from the left pane. 
+1.	Sign in to [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) or [Power Automate](https://flow.microsoft.com) and select **Solutions** from the left pane. 
 2.	Open the solution that you want. 
 3.	From the list of components in the solution, select **…** next to the entity that you want to view the managed properties, and then select **Managed properties**. 
 
@@ -61,7 +61,7 @@ Entities have more managed properties than any other type of solution component.
 |**New views can be created** |Whether new views can be created for the entity.|
 |**Can Change Hierarchical Relationship**|Whether Hierarchical Relationships settings can be changed. More information: [Define and query hierarchically related data](/powerapps/maker/common-data-service/define-query-hierarchical-data)|
 |**Can Change Tracking Be Enabled** |Whether the entity **Change Tracking** property can be changed.|
-|**Can Enable sync to external search index** |Whether the entity can be configured to enable relevance search. More information: [Configure Relevance Search to improve search results and performance](/power-platform/admin/configure-relevance-search-organization) |
+|**Can Enable sync to external search index** |Whether the entity can be configured to enable relevance search. More information: [Configure Relevance Search to improve search results and performance](../admin/configure-relevance-search-organization.md) |
 
 ## View and edit field managed properties
 Next to a custom field in a solution select **…** and then select **Managed properties**.
@@ -100,9 +100,7 @@ While viewing entity relationships in [solution explorer](/powerapps/maker/model
   
 With relationships, the only managed property is **Can Be Customized**. This single setting controls all changes that can be made to the entity relationship. 
 
-
 ### See also
 [Use segmented solutions](segmented-solutions-alm.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
-

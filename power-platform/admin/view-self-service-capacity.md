@@ -18,7 +18,7 @@ search.app:
 ---
 # View self-service storage capacity
 
-With the introduction of [self-service purchases](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq) for Microsoft Power Platform products, license purchases are no longer restricted to Power Platform admins. With this change comes the need to be able to view self-service capacity data. Use the steps below to view the storage capacity provided with purchased licenses. 
+With the introduction of [self-service purchases](/microsoft-365/commerce/subscriptions/self-service-purchase-faq) for Microsoft Power Platform products, license purchases are no longer restricted to Power Platform admins. With this change comes the need to be able to view self-service capacity data. Use the steps below to view the storage capacity provided with purchased licenses. 
 
 1. Sign in to the Power Platform admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) with admin or end-user credentials.
 

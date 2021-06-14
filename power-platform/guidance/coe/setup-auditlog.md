@@ -18,25 +18,24 @@ search.app:
 ---
 # Set up the audit log connector
 
+> [!NOTE]
+> This Audit Log solution is not available for Dataverse for Teams.
+
 The Audit Log Sync flow connects to the Microsoft 365 audit log to gather telemetry data (unique users, launches) for apps. The flow uses a custom connector to connect to the Audit Log. In the following instructions, you'll set up the custom connector and configure the flow.
 
 The Center of Excellence (CoE) Starter Kit will work without this flow, but the usage information (app launches, unique users) in the Power BI dashboard will be blank.
 
-There are two options for connecting to the audit log: one uses basic authentication (username and password) and one uses an Azure AD app registration to establish an identity for your app and allow access to the APIs. If your admin account is protected by multifactor authentication, you'll need to connect by using Azure App Registration.
-
 ## Before you use the audit log connector
 
-1. Microsoft 365 audit log search must be turned on for the audit log connector to work. More information: [Turn audit log search on or off](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off?view=o365-worldwide&preserve-view=true)
-1. You must have access to the audit log. The Microsoft Power Platform Service Admin role doesn't give you access to the audit log. More information: [Search the audit log in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?preserve-view=true&view=o365-worldwide#before-you-begin)
-1. Your tenant must have a subscription that supports unified audit logging. More information: [Security & Compliance Center availability for business and enterprise plans](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)
-
-## Option 1: Connect to the audit log by using an Azure AD app registration
+1. Microsoft 365 audit log search must be turned on for the audit log connector to work. More information: [Turn audit log search on or off](/microsoft-365/compliance/turn-audit-log-search-on-or-off?preserve-view=true&view=o365-worldwide)
+1. You must have access to the audit log. The Microsoft Power Platform Service Admin role doesn't give you access to the audit log. More information: [Search the audit log in the Security & Compliance Center](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?preserve-view=true&view=o365-worldwide#before-you-begin)
+1. Your tenant must have a subscription that supports unified audit logging. More information: [Security & Compliance Center availability for business and enterprise plans](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)
 
 The Office 365 Management APIs use Azure Active Directory (Azure AD) to provide authentication services that you can use to grant rights for your application to access them.
 
 ### Create an Azure AD app registration for the Office 365 Management API
 
-Using these steps, you'll set up an Azure AD app registration that will be used in a custom connector and Power Automate flow to connect to the audit log. More information: [Get started with Office 365 Management APIs](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis)
+Using these steps, you'll set up an Azure AD app registration that will be used in a custom connector and Power Automate flow to connect to the audit log. More information: [Get started with Office 365 Management APIs](/office/office-365-management-api/get-started-with-office-365-management-apis)
 
 1. Sign in to [portal.azure.com](https://portal.azure.com).
 
@@ -86,7 +85,7 @@ Leave the Azure portal open, because you'll need to make some configuration upda
 
 ### Set up the custom connector
 
-Now you'll configure and set up a custom connector that uses the [Office 365 Management APIs](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis).
+Now you'll configure and set up a custom connector that uses the [Office 365 Management APIs](/office/office-365-management-api/get-started-with-office-365-management-apis).
 
 1. Go to [make.powerapps.com](https://make.powerapps.com) > **Data** > **Custom Connectors**. The Office 365 Management API custom connector will be listed here; it has been imported with the core components solution.
 1. Select **Edit**.
@@ -98,7 +97,7 @@ Now you'll configure and set up a custom connector that uses the [Office 365 Man
    >[!IMPORTANT]
    > If your tenant is a GCC tenant, change the host to https://manage-gcc.office.com.
    > If your tenant is a GCC high tenant, change the host to https://manage.office365.us
-   > More information: [Activity API operations](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference?preserve-view=true&view=o365-worldwide#activity-api-operations)
+   > More information: [Activity API operations](/office/office-365-management-api/office-365-management-activity-api-reference?preserve-view=true&view=o365-worldwide#activity-api-operations)
 
 1. Select **Edit** at the bottom of the **OAuth 2.0** area to edit the authentication parameters.
 
@@ -117,7 +116,7 @@ Now you'll configure and set up a custom connector that uses the [Office 365 Man
 1. Select **Update Connector**.
 
 > [!NOTE]
-> If you have a [data loss prevention (DLP) policy](https://docs.microsoft.com/power-platform/admin/wp-data-loss-prevention) configured for your CoE Starter Kit environment, you'll need to add this connector to the business data&ndash;only group of this policy. 
+> If you have a [data loss prevention (DLP) policy](../../admin/wp-data-loss-prevention.md) configured for your CoE Starter Kit environment, you'll need to add this connector to the business data&ndash;only group of this policy. 
 
 ### Update Azure AD app registration with the redirect URL
 
@@ -133,7 +132,7 @@ Now you'll configure and set up a custom connector that uses the [Office 365 Man
 
 ### Start a subscription to audit log content
 
-Go back to the custom connector to set up a connection to the custom connector and [start a subscription to the audit log content](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference#start-a-subscription), as described in the following steps.
+Go back to the custom connector to set up a connection to the custom connector and [start a subscription to the audit log content](/office/office-365-management-api/office-365-management-activity-api-reference#start-a-subscription), as described in the following steps.
 
 > [!IMPORTANT]
 > You must complete these steps for subsequent steps to work. If you don't create a new connection and test the connector here, setting up the flow and child flow in later steps will fail.
@@ -158,7 +157,7 @@ You should see a (200) status returned, which means the query was successful.
 > If you don't see a (200) response, the request has failed. There's an error with your setup that's keeping the flow from working. Common issues to check are: 
 >
 > - Are audit logs enabled, and do you have permission to view the audit logs? Check [protection.office.com](https://protection.office.com) > **Search** > **Audit Log Search**.
-> - If you don't have permissions, see [Requirements to search the audit log](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?preserve-view=true&view=o365-worldwide#requirements-to-search-the-audit-log).
+> - If you don't have permissions, see [Requirements to search the audit log](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?preserve-view=true&view=o365-worldwide#requirements-to-search-the-audit-log).
 > -. Have you enabled the audit log very recently? If so, try again in a few minutes, to give the audit log time to activate.
 > - Have you pasted in the correct tenant ID from your Azure AD app registration?
 > - Have you pasted in the correct resource URL, with no added spaces or characters at the end?
@@ -200,75 +199,5 @@ A Power Automate flow uses the custom connector, queries the audit log daily, an
 1. Back in the solution, turn on both the \[Child\] Admin | Sync Logs flow and the Admin | Sync Audit Logs flow.
 
    ![Turn audit log flows on](media/coe-custom4.PNG "Turn audit log flows on")
-
-## Option 2: Connect to the audit log by using basic authentication
-
-Make sure the account that's used to configure this section has permission to access the audit logs and doesn't have multifactor authentication enabled. Global tenant admins have access to the audit logs by default, and can grant access to the audit logs for other user accounts or groups through the Exchange admin center.
-
-Keep in mind that after a user account has access to the audit logs, that user has access to all audit logs across every Microsoft service that reports telemetry to audit logs.
-
-### Install the custom connector
-
-1. Go to [flow.microsoft.com](https://flow.microsoft.com), and set the current environment to the same environment where the CoE solution is installed.
-
-1. On the left pane, expand **Data**, and then select **Custom Connectors**.
-
-1. Select **+ New custom connector – Import an Open API file**.
-
-   ![Create a custom connector page](media/coe27.png "Create a custom connector page")
-
-1. Enter a connector name (**Office 365 Audit Logs**), and then select the .swagger file that can be found in the CoE Starter Kit pack you downloaded.
-
-1. Select **Create Connector**. You don't need to change the security and definition information.
-
-1. Select **4. Test**.
-
-   ![Test your custom connector page](media/coe28.png "Test your custom connector page")
-
-1. Select **+ New Connection** to create a connection to your connector.
-
-1. Enter the email address and password of the user who has access to audit logs, and then select **Create connection**.
-
-   ![Create new connection option](media/coe29.png "Create new connection option")
-
-1. Select the refresh icon in the upper-right corner of the **Connections** area to ensure that the new connection is selected.
-
-1. Enter a **Start Date** and **End Date** for the **GetActivitiesByOperation**.
-
-1. Select **Test Operation**.
-
-   A (200) response indicates that the query has been successfully executed.
-   ![The Get Activities By Operation action of the custom connector](media/coe30.png "The Get Activities By Operation action of the custom connector]")
-
-> [!IMPORTANT]
-> If you're using DLP, you'll need to put this connector into the business group. 
-
-### Import the flow template compressed (.zip) package named SyncAuditLogs.zip
-
-1. Go to [flow.microsoft.com](https://flow.microsoft.com), and set the current environment to the same environment where the CoE solution is installed.
-
-1. On the left pane, go to the **My Flows** tab.
-
-1. Select **Import**.
-
-1. Select the **Flow-SyncAuditLogs.zip** package, and then select **Import**.
-
-1. Update the connections by following these steps:
-    1. For Admin \| Sync Audit Logs, select **Create as new**, and then select **Save**.
-
-    1. For the Office 365 Audit Logs connector, Dataverse connection, and Office 365 Audit Logs Connection, select **Select during import**, and then choose your connection.
-       ![Import options when importing a new flow](media/coe31.png "Import options when importing a new flow]")
-
-    1. After the connections are configured, select **Import**.
-
-    1. Open the flow, and make sure there are no errors for any of the actions.
-
-    1. Select the back arrow in the upper-left corner to go back to the flow details screen.
-
-    1. If the flow isn't on yet, turn it on.
-
-    1. Run the flow to start syncing audit log data to the Dataverse table.
-
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

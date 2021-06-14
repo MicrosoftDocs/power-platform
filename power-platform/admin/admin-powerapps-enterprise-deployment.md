@@ -1,8 +1,7 @@
 ---
-title: "Administering a Power Apps enterprise deployment  | MicrosoftDocs"
-description: Check out the whitepaper on administering a Power Apps enterprise deployment.
+title: "Administering a Power Apps enterprise deployment"
+description: "Administrators can learn about planning, deploying, and managing an enterprise Power Apps deployment by downloading and reviewing the linked whitepaper."
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
@@ -17,8 +16,6 @@ search.app:
   - Flow
 ---
 # Administering a Power Apps enterprise deployment
-
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 Power Apps is a high-productivity application development platform from Microsoft. The platform is used by Microsoft to build their own first-party applications Dynamics 365 Sales, Service, Field Service, Marketing, and Talent. This means these applications are built natively on the platform.   Enterprise customers can also build their own custom line-of-business applications using the same technology. Individual users and teams within your organization can also build personal or team productivity applications with no-code or low-code. 
 

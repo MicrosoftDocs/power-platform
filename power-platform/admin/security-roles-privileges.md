@@ -19,8 +19,6 @@ search.app:
 ---
 # Security roles and privileges
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 To control data access, you must set up an organizational structure that both protects sensitive data and enables collaboration. You do this by setting up business units, security roles, and field security profiles.  
 
 > [!TIP]
@@ -93,7 +91,7 @@ These settings can be found in the Power Platform admin center by going to **Env
 Make sure you have the System Administrator or System Customizer security role or equivalent permissions.
 
 Check your security role:
-- Follow the steps in [View your user profile](https://docs.microsoft.com/powerapps/user/view-your-user-profile).
+- Follow the steps in [View your user profile](/powerapps/user/view-your-user-profile).
 - Don't have the correct permissions? Contact your system administrator.<br />
 
 1. Select an environment and go to **Settings** > **User's + permissions** > **Security roles**.

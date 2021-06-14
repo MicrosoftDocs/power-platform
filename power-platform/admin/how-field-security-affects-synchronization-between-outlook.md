@@ -1,12 +1,12 @@
 ---
 title: "How field security affects synchronization between customer engagement apps and Outlook  | MicrosoftDocs"
 description: How field security affects synchronization between customer engagement apps and Outlook 
-author: jimholtz
+author: mduelae
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/17/2021
-ms.author: jimholtz
+ms.author: mkaur
 search.audienceType: 
   - admin
 search.app:
@@ -18,8 +18,6 @@ search.app:
 # How field security affects synchronization with Outlook
 
 <!-- legacy procedure -->
-
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 Securing a field with field-level security can impact synchronization between customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation) and [!INCLUDE[pn_microsoft_dynamics_crm_for_outlook](../includes/pn-microsoft-dynamics-crm-for-outlook.md)]. Consider the following scenario.  
   

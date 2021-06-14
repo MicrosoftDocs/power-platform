@@ -1,6 +1,6 @@
 ---
-title: View UI flows analytics in the Power Platform admin center | Microsoft Docs
-description: Learn about trends, usage patterns, and more analytics for UI flows in the Power Platform admin center.
+title: View desktop flows analytics in the Power Platform admin center | Microsoft Docs
+description: Learn about trends, usage patterns, and more analytics for desktop flows in the Power Platform admin center.
 services: ''
 suite: flow
 documentationcenter: na
@@ -8,12 +8,12 @@ author: msftman
 manager: kvivek
 editor: ''
 tags: ''
-ms.service: flow
+ms.service: power-platform
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/17/2020
+ms.date: 02/01/2021
 ms.author: DeonHe
 search.app: 
   - Flow
@@ -21,23 +21,23 @@ search.audienceType:
   - flowadmin
 ---
 
-# View analytics for UI flows
+# View analytics for desktop flows
 
-As an admin, you will need to view the overall status of automation that runs in your organization. There are two options to monitor the analytics for automation that's built with UI flows:
+As an admin, you will need to view the overall status of automation that runs in your organization. There are two options to monitor the analytics for automation that's built with desktop flows:
 
 1. The Power Platform admin center.
 1. The Center of Excellence (CoE) Starter Kit.
 
-This article discusses the viewing UI flows analytics reports in the Power Platform admin center.
+This article discusses the viewing desktop flows analytics reports in the Power Platform admin center.
 
 
-The easiest option for an admin to view analytics for the UI flows in their organization is to visit Power Platform admin center (PPAC). In the PPAC by default, you will find the following three reports:
+The easiest option for an admin to view analytics for the desktop flows in their organization is to visit Power Platform admin center (PPAC). In the PPAC by default, you will find the following three reports:
 
 Report | Description
 --- | ---
-Runs | This report gives you an overview of the daily, weekly, and monthly UI flows run statistics. This report also provides trend lines and run results (success/failure/cancel). This report gives insights on how actively UI flows are used in each environment.
-Usage | This report shows you the UI flows that are being used most, giving you insights into your automation inventory.
-Created | This report shows you analytics against recently created UI flows, giving you insights into your most active UI flows makers.
+Runs | This report gives you an overview of the daily, weekly, and monthly desktop flows run statistics. This report also provides trend lines and run results (success/failure/cancel). This report gives insights on how actively desktop flows are used in each environment.
+Usage | This report shows you the desktop flows that are being used most, giving you insights into your automation inventory.
+Created | This report shows you analytics against recently created desktop flows, giving you insights into your most active desktop flows makers.
 
 ## Prerequisites
 
@@ -58,9 +58,9 @@ To access the reports:
 
    ![A screenshot of the steps to view the Power Automate analytics](./media/analytics-ui-flow/analytics-pa.png)
 
-1. Select **UI flows**.
+1. Select **Desktop flows**.
 
-   ![A screenshot that shows the UI flows tab selected](./media/analytics-ui-flow/select-ui-flows.png)
+   ![A screenshot that shows the desktop flows tab selected](./media/analytics-ui-flow/select-ui-flows.png)
 
 1. View the reports.
 
@@ -87,23 +87,23 @@ You can filter your view to display reports from a specific **environment** or f
 
 1. Select **Runs**.
 
-   ![A screenshot of the UI flow runs reports tab](./media/analytics-ui-flow/select-runs.png)
+   ![A screenshot of the desktop flow runs reports tab](./media/analytics-ui-flow/select-runs.png)
 
 1. [Filter](#filter-your-view) the view to display the **Runs** reports from a specific environment and for a specific time period. 
 
 
-   ![A screenshot of the UI flow runs reports](./media/analytics-ui-flow/runs.png)
+   ![A screenshot of the desktop flow runs reports](./media/analytics-ui-flow/runs.png)
 
 ## View the usage report
 
 1. Select **Usage**.
 
-   ![A screenshot of the UI flow usage reports tab](./media/analytics-ui-flow/select-usage.png)
+   ![A screenshot of the desktop flow usage reports tab](./media/analytics-ui-flow/select-usage.png)
 
 
 1. [Filter](#filter-your-view) the view to display the **Usage** reports from a specific environment and for a specific time period. 
 
-   ![A screenshot of the UI flow usage reports](./media/analytics-ui-flow/usage-ppac.png)
+   ![A screenshot of the desktop flow usage reports](./media/analytics-ui-flow/usage-ppac.png)
 
 ## View the created report
 
@@ -112,18 +112,18 @@ You can filter your view to display reports from a specific **environment** or f
 
 1. Select **Created**.
 
-   ![A screenshot of the UI flow created reports tab](./media/analytics-ui-flow/select-created.png)
+   ![A screenshot of the desktop flow created reports tab](./media/analytics-ui-flow/select-created.png)
 
 1. [Filter](#filter-your-view) the view to display the **Created** reports from a specific environment and for a specific time period. 
 
-   ![A screenshot of the UI flow created reports](./media/analytics-ui-flow/created-ppac.png)
+   ![A screenshot of the desktop flow created reports](./media/analytics-ui-flow/created-ppac.png)
 
 
 ## Learn more
 
-- Analyze the [UI flows risk assessment](https://docs.microsoft.com/power-platform/guidance/coe/power-bi-govern#ui-flows-risk-assessment) in your environment.
-- [Create desktop UI flows](https://docs.microsoft.com/power-automate/ui-flows/create-desktop).
-- [Create Web UI flows](https://docs.microsoft.com/power-automate/ui-flows/create-web).
-- Run [UI flows](https://docs.microsoft.com/power-automate/ui-flows/run-ui-flow).
+- Analyze the [desktop flows risk assessment](../guidance/coe/power-bi-govern.md#desktop-flows-risk-assessment) in your environment.
+- [Create desktop flows](/power-automate/desktop-flows/create-desktop).
+- [Create Selenium IDE flows](/power-automate/ui-flows/create-web).
+- Run [desktop flows](/power-automate/desktop-flows/run-desktop-flow).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

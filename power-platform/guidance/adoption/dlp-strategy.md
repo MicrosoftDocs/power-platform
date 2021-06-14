@@ -18,13 +18,13 @@ search.app:
 ---
 # Establishing a DLP strategy
 
-Data loss prevention (DLP) policies act as guardrails to help prevent users from unintentionally exposing organizational data and to protect information security in the tenant. DLP policies enforce rules for which connectors are enabled for each environment, and which connectors can be used together. Connectors are classified as either **business data only**, **no business data allowed**, or **blocked**. A connector in the business data only group can only be used with other connectors from that group in the same app or flow. More information: [Administer Microsoft Power Platform: Data Loss Prevention Policies](https://docs.microsoft.com/power-platform/admin/wp-data-loss-prevention)
+Data loss prevention (DLP) policies act as guardrails to help prevent users from unintentionally exposing organizational data and to protect information security in the tenant. DLP policies enforce rules for which connectors are enabled for each environment, and which connectors can be used together. Connectors are classified as either **business data only**, **no business data allowed**, or **blocked**. A connector in the business data only group can only be used with other connectors from that group in the same app or flow. More information: [Administer Microsoft Power Platform: Data Loss Prevention Policies](../../admin/wp-data-loss-prevention.md)
 
 Establishing your DLP policies will go hand in hand with your [environment strategy](environment-strategy.md).
 
 ## Quick facts
 
-- [Data loss prevention (DLP)](https://docs.microsoft.com/power-platform/admin/wp-data-loss-prevention) policies act as guardrails to help prevent users from unintentionally exposing data.
+- [Data loss prevention (DLP)](../../admin/wp-data-loss-prevention.md) policies act as guardrails to help prevent users from unintentionally exposing data.
 -	DLP policies can be scoped at the environment level and tenant level, offering flexibility to craft policies that are sensible and don't block high productivity.
 -	Environment DLP policies cannot override tenant-wide DLP policies.
 -	If multiple policies are configured for one environment, the most restrictive policy applies to the combination of connectors.
@@ -44,7 +44,7 @@ Business and non-business classifications draw boundaries around what connectors
 
 The names "business" and "non-business" don't have any special meaning&mdash;they're simply labels. The grouping of the connectors themselves is of significance, not the name of the group they're placed in.
 
-More information: [Administer Microsoft Power Platform: Connector classification](https://docs.microsoft.com/power-platform/admin/wp-data-loss-prevention#connector-classification)
+More information: [Administer Microsoft Power Platform: Connector classification](../../admin/wp-data-loss-prevention.md#connector-classification)
 
 ## Strategies for creating DLP policies
 
@@ -63,7 +63,7 @@ We recommend the following starting point for DLP policies for **production (bus
 
 Additional to the above, we also recommend:
 
-- Creating a minimal number of policies per environment. There is no strict hierarchy between tenant and environment policies, and at design and runtime, all policies that are applicable to the environment in which the app or flow resides are evaluated together to decide whether the resource is in compliance or violation of DLP policies.  [Multiple DLP policies](https://docs.microsoft.com/power-platform/admin/wp-data-loss-prevention#combined-effect-of-multiple-dlp-policies) applied to one environment will fragment your connector space in complicated ways, and might make it difficult to understand issues your makers are facing.  
+- Creating a minimal number of policies per environment. There is no strict hierarchy between tenant and environment policies, and at design and runtime, all policies that are applicable to the environment in which the app or flow resides are evaluated together to decide whether the resource is in compliance or violation of DLP policies.  [Multiple DLP policies](../../admin/wp-data-loss-prevention.md#combined-effect-of-multiple-dlp-policies) applied to one environment will fragment your connector space in complicated ways, and might make it difficult to understand issues your makers are facing.  
 - Centrally managing DLP Policies using tenant level policies, and using environment policies only to categorize custom connectors or in exception cases.  
 
 With this in place, plan how to handle exceptions. You can:
@@ -98,9 +98,9 @@ This setup of tenant-centric DLP policies doesn't prevent environment admins fro
 
 ## Set up DLP policies
 
-1. Create your policy in the [Power Platform admin center](https://aka.ms/ppac). More information: [Create a DLP policy](https://docs.microsoft.com/power-platform/admin/create-dlp-policy)
+1. Create your policy in the [Power Platform admin center](https://aka.ms/ppac). More information: [Create a DLP policy](../../admin/create-dlp-policy.md)
 
-1. Use the [DLP SDK](https://docs.microsoft.com/power-platform/admin/data-loss-prevention-sdk) to add custom connectors to a DLP policy.
+1. Use the [DLP SDK](../../admin/data-loss-prevention-sdk.md) to add custom connectors to a DLP policy.
 
 ## Clearly communicate your organization’s DLP policies to makers
 

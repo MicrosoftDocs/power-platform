@@ -29,7 +29,7 @@ In this topic, you'll learn how to download a list of apps created in a single e
 
 ## Prerequisites
  To follow the steps, the following items are required:
- * Either a Power Apps plan or Power Automate plan. Alternatively, you can sign up for a [free Power Apps trial](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps).
+ * Either a Power Apps plan or Power Automate plan. Alternatively, you can sign up for a [free Power Apps trial](/powerapps/maker/signup-for-powerapps).
  * Power Apps Environment Admin, Global admin, or Power Platform admin permissions. For more information, see [Environments administration in Power Apps](environments-administration.md).
 
 ## Sign in to the Power Apps Admin center

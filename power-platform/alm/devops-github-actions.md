@@ -8,7 +8,7 @@ manager: kvivek
 ms.custom: ""
 ms.date: 09/22/2020
 ms.reviewer: "pehecke"
-ms.service: powerapps
+ms.service: power-platform
 ms.topic: "article"
 search.audienceType: 
   - developer
@@ -32,7 +32,7 @@ solutions) that contain various platform components such as customer engagement 
 You can use GitHub Actions for Microsoft Power Platform along with any other available GitHub Actions to compose your build and release workflows. Workflows that teams commonly put in place include provisioning development environments, exporting from a development environment to source control, generating builds, and releasing apps.
 
 > [!NOTE]
-> GitHub Actions for Microsoft Power Platform are supported only for a Microsoft Dataverse environment with a database. More information: [Create an environment with a database](/power-platform/admin/create-environment#create-an-environment-with-a-database)
+> GitHub Actions for Microsoft Power Platform are supported only for a Microsoft Dataverse environment with a database. More information: [Create an environment with a database](../admin/create-environment.md#create-an-environment-with-a-database)
 
 ## Key concepts
 

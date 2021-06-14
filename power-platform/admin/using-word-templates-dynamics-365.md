@@ -20,8 +20,6 @@ search.app:
 
 <!-- legacy procedure -->
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
  After you create and import [!INCLUDE[pn_MS_Word_Full](../includes/pn-ms-word-full.md)] templates into customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), with one click users can generate standardized documents automatically populated with data. This feature has some special considerations you should know about to successfully create [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] templates.  
 
 > [!TIP]
@@ -78,7 +76,7 @@ search.app:
  ![Select entities for the Word template](../admin/media/word-template-select-entities.png "Select entities for the Word template")  
 
 ### What are 1:N, N:1, and N:N relationships?  
- This screen requires an understanding of your customer engagement apps data structure. Your administrator or customizer can provide information about entity relationships. For admin content, see: [Entity relationships overview](https://docs.microsoft.com/powerapps/maker/common-data-service/relationships-overview).  
+ This screen requires an understanding of your customer engagement apps data structure. Your administrator or customizer can provide information about entity relationships. For admin content, see: [Entity relationships overview](/powerapps/maker/common-data-service/relationships-overview).  
 
  Here are some example relationships for the Account entity.  
 

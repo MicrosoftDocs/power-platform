@@ -17,8 +17,6 @@ search.app:
 ---
 # Create or edit business units 
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 A business unit is a logical grouping of related business activities.  
   
  If your organization is structured around departments or divisions that have separate products, customers, and marketing lists, you might want to create business units. Business units are mapped to an organization’s departments or divisions. Users can securely access data in their own business unit, but they can’t access data in other business units.  
@@ -27,7 +25,7 @@ A business unit is a logical grouping of related business activities.
   
  Keep the following in mind when creating business units:  
   
-- The organization (also known as the root business unit) is the top level of a business unit hierarchy. The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), automatically create the organization when you install or provision customer engagement apps. You can’t delete the organization name. The organization name is derived from the domain name when the environment was provisioned. You cannot change the organization name using the Business Unit form but it can be changed using the [Web API](https://docs.microsoft.com/dynamics365/customer-engagement/web-api/businessunit?view=dynamics-ce-odata-9).
+- The organization (also known as the root business unit) is the top level of a business unit hierarchy. The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), automatically create the organization when you install or provision customer engagement apps. You can’t delete the organization name. The organization name is derived from the domain name when the environment was provisioned. You cannot change the organization name using the Business Unit form but it can be changed using the [Web API](/dynamics365/customer-engagement/web-api/businessunit?view=dynamics-ce-odata-9).
   
 - Each business unit can have just one parent business unit.  
   
@@ -55,7 +53,7 @@ These settings can be found in the Microsoft Power Platform admin center by goin
 
 Make sure you have the System Administrator or System Customizer security role or equivalent permissions to update the setting.
 
-- Follow the steps in [View your user profile](https://docs.microsoft.com/powerapps/user/view-your-user-profile).
+- Follow the steps in [View your user profile](/powerapps/user/view-your-user-profile).
 - Don’t have the correct permissions? Contact your system administrator. 
  
 1. Select an environment and go to **Settings** > **Users + permissions** > **Business units**.

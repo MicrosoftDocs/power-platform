@@ -1,6 +1,6 @@
 ---
-title: "What are Preview features, and how do I enable them?  | MicrosoftDocs"
-description: What are Preview features, and how do I enable them? 
+title: "Enable Preview features to get early access"
+description: "Learn how to enable Preview features that have limited functionality to get early access and provide feedback."
 author: jimholtz
 manager: kvivek
 ms.service: power-platform
@@ -22,7 +22,7 @@ search.app:
 
 Preview features are features that aren't complete, but are made available on a "preview" basis so customers can get early access and provide feedback. Preview features:  
   
-- Are subject to separate [Supplemental Terms of Use](https://go.microsoft.com/fwlink/p/?LinkId=511446).  
+- Are subject to separate [Supplemental Terms of Use](/dynamics365/legal/supp-dynamics365-preview).  
   
 - **Are not supported by [!INCLUDE[pn_Microsoft_Support](../includes/pn-microsoft-support.md)]**.  
   
@@ -41,7 +41,7 @@ To enable a Preview feature, you must be an administrator.
   
 3. Select **System Settings**, and then select the **Previews** tab.  
   
-4. Read the [Supplemental Terms of Use](https://go.microsoft.com/fwlink/p/?LinkId=511446), and if you agree, select the **I've read and agree to the license terms** check box.  
+4. Read the [Supplemental Terms of Use](/dynamics365/legal/supp-dynamics365-preview), and if you agree, select the **I've read and agree to the license terms** check box.  
   
 5. For each Preview feature you want to enable, select **Yes**.  
   

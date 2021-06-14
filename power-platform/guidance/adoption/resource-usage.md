@@ -6,7 +6,7 @@ manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/10/2020
+ms.date: 06/11/2020
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -31,17 +31,17 @@ Out-of-the-box tooling around monitoring, alerts, and actions falls into the fol
 
 - The **[Power Platform admin center](https://aka.ms/ppac)** offers an interactive experience for performing administrative tasks. This is typically considered the primary path for completing administrative activities. From a monitoring point of view, this channel is used mostly for ad hoc interactive discovery. Additionally, some admin tasks would need access to [Microsoft 365 (formerly Office 365) admin center](https://admin.microsoft.com/), in addition to the [Office 365 Security and Compliance Center](https://protection.office.com/).
 
-- **[PowerShell cmdlets](https://docs.microsoft.com/power-platform/admin/powerapps-powershell#powerapps-cmdlets-for-app-creators-preview)** offer a way to automate both management and monitoring tasks using PowerShell. These cmdlets can be used in a sequence to automate multiple-step administrative actions. Note that Microsoft typically provides capabilities as cmdlets first and then the same capabilities might be offered in the admin center UI or Management and Admin connectors in later releases.
+- **[PowerShell cmdlets](../../admin/powerapps-powershell.md#power-apps-cmdlets-for-app-creators)** offer a way to automate both management and monitoring tasks using PowerShell. These cmdlets can be used in a sequence to automate multiple-step administrative actions. Note that Microsoft typically provides capabilities as cmdlets first and then the same capabilities might be offered in the admin center UI or Management and Admin connectors in later releases.  
 
 - **Management and Admin connectors** offer the ability to use the platform’s own tools to manage and monitor itself. Part of the available 300-plus out-of-the-box connectors and approval process capabilities are five admin-specific connectors:
 
-  - [Power Automate Management](https://docs.microsoft.com/connectors/flowmanagement/) is specifically designed to help with administrative management and monitoring.
-  - [Power Automate for Admins](https://docs.microsoft.com/connectors/microsoftflowforadmins/) allows you to perform typical admin actions, such as disabling or deleting a flow.
-  - [Power Apps for Admins](https://docs.microsoft.com/connectors/powerappsforadmins/) to set permissions on Power Apps or set permissions to a certain connector being used by this app.
-  - [Power Apps for Makers](https://docs.microsoft.com/connectors/powerappsforappmakers/), which can be used by the makers themselves, although some actions overlay administrational tasks, such as settings permissions to a Power Apps app as mentioned previously.
-  - [Power Platform for Admins](https://docs.microsoft.com/connectors/powerplatformforadmins) to perform tasks against platform components, such as creating an environment or provisioning a Microsoft Dataverse database or creating a data loss prevention (DLP) policy for a specific environment.
+  - [Power Automate Management](/connectors/flowmanagement/) is specifically designed to help with administrative management and monitoring.
+  - [Power Automate for Admins](/connectors/microsoftflowforadmins/) allows you to perform typical admin actions, such as disabling or deleting a flow.
+  - [Power Apps for Admins](/connectors/powerappsforadmins/) to set permissions on Power Apps or set permissions to a certain connector being used by this app.
+  - [Power Apps for Makers](/connectors/powerappsforappmakers/), which can be used by the makers themselves, although some actions overlay administrational tasks, such as settings permissions to a Power Apps app as mentioned previously.
+  - [Power Platform for Admins](/connectors/powerplatformforadmins) to perform tasks against platform components, such as creating an environment or provisioning a Microsoft Dataverse database or creating a data loss prevention (DLP) policy for a specific environment.
 
-The [Center of Excellence Starter Kit](https://aka.ms/coestarterkit) offers a template implementation using the management and admin connectors and comes with a Power BI dashboard that can be used to gain tenant-wide insights.
+The [Center of Excellence Starter Kit](../coe/starter-kit.md) offers a template implementation using the management and admin connectors and comes with a Power BI dashboard that can be used to gain tenant-wide insights.
 
 ## Monitoring storage capacity add-ons
 
@@ -60,7 +60,7 @@ As an administrator, you should:
 - Look for any unexpected spikes in usage using the database, file, and log charts for individual environments.
 - Review capacity add-ons such as Power Apps app passes, flow per business processes, portal page views, portal sign-ins, or AI Builder credits, and assign that capacity to specific environments.
 
-More information: [Monitoring new and legacy capacity storage](https://docs.microsoft.com/power-platform/admin/whats-new-storage)
+More information: [Monitoring new and legacy capacity storage](../../admin/whats-new-storage.md)
 
 ## Power Automate usage
 
@@ -70,7 +70,7 @@ As an administrator, you should:
 - Watch for errors by error type to look for common problems that might exist.
 - Spot data usage that isn't expected by drilling in to connector usage and adjust your data loss prevention policies for that environment to ensure the overall health of the platform.
 
-More information: [Admin Analytics for Power Automate](https://docs.microsoft.com/power-platform/admin/analytics-flow)
+More information: [Admin Analytics for Power Automate](../../admin/analytics-flow.md)
 
 ## Power Apps usage
 
@@ -80,7 +80,7 @@ As an administrator, you should:
 - Check out app launches in terms of being used in a browser or via a mobile player version and on which platforms. Following your device strategy, you could ensure users are using the latest player edition.
 - Regularly monitor overall service performance to ensure user run-time experience when interacting with the platform services.
 
-More information: [Admin Analytics for Power Apps](https://docs.microsoft.com/power-platform/admin/analytics-powerapps)
+More information: [Admin Analytics for Power Apps](../../admin/analytics-powerapps.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

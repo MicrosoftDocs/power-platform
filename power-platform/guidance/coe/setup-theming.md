@@ -28,7 +28,7 @@ The theming components solution contains assets that are relevant to makers in a
 
 Before you begin, review the [prerequisites](setup.md#prerequisites) for using the starter kit solution.
 
-- If you aren't already using the CoE Starter Kit, we recommend [creating a new environment](https://docs.microsoft.com/power-platform/admin/create-environment) for CoE solutions.
+- If you aren't already using the CoE Starter Kit, we recommend [creating a new environment](../../admin/create-environment.md) for CoE solutions.
 - If you are already using other CoE Starter Kit components, use the environment that you created as part of setting up the [core components](setup-core-components.md) for this solution.
 
 ## Prerequisites

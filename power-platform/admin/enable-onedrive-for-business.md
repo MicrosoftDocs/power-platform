@@ -1,6 +1,6 @@
 ---
-title: "Enable OneDrive for Business (online)  | MicrosoftDocs"
-description: Enable OneDrive for Business (online)
+title: "Enable and make available OneDrive for Business (online)"
+description: "Learn about licensing and other requirements for using OneDrive for Business, and how to enable it in your environment and control access in apps."
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin

@@ -4,7 +4,7 @@ description: Invite users with Azure Active Directory B2B collaboration
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/27/2021
+ms.date: 03/22/2021
 author: jimholtz
 ms.author: jimholtz
 ms.reviewer: jimholtz
@@ -47,6 +47,10 @@ You can invite other users to access your environment. The [!INCLUDE[pn_Office_3
 5. Dynamics 365 Customer Voice
    
    Invited users will not be able to use Dynamics 365 Customer Voice. You must create a new user in your tenant and then provide access to the new user.
+   
+6. Power Apps Maker experiences
+   
+   Invited users cannot sign in to https://make.powerapps.com or https://create.powerapps.com as a guest of a tenant. For the time being, users can only sign in to their home tenant in these maker experiences. 
 
 ## Invite a user  
  You can add users to through [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)] B2B user collaboration. Global admins and limited admins can use the [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] portal to invite B2B collaboration users to the directory, to any security group, or to any application.  
@@ -55,17 +59,17 @@ You can invite other users to access your environment. The [!INCLUDE[pn_Office_3
   
 1. Invite users to your environment that has a security group.  
   
-   - See [Admins adding guest users to a group](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-admin-add-users).  
+   - See [Admins adding guest users to a group](/azure/active-directory/active-directory-b2b-admin-add-users).  
   
    - See [Control user access to environments: security groups and licenses](control-user-access.md) on how to use security groups for your environments.  
 
 2. Invite users to your environment that does not have a security group.  
   
-   -   See [Admins adding guest users to the directory](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-admin-add-users).  
+   -   See [Admins adding guest users to the directory](/azure/active-directory/active-directory-b2b-admin-add-users).  
   
 3. Bulk-invite guest users using a .csv file.  
   
-   -   See [PowerShell example](https://docs.microsoft.com/azure/active-directory/b2b/code-samples).  
+   -   See [PowerShell example](/azure/active-directory/b2b/code-samples).  
   
    Your invited user will receive an email invitation to get started with B2B user collaboration.  
   
@@ -122,10 +126,11 @@ You can invite other users to access your environment. The [!INCLUDE[pn_Office_3
   
 ### See also  
  [Azure AD B2B Collaboration is Generally Available!](https://blogs.technet.microsoft.com/enterprisemobility/2017/04/12/azure-ad-b2b-collaboration-is-generally-available/)   
- [Azure Active Directory B2B collaboration code and PowerShell samples](https://docs.microsoft.com/azure/active-directory/b2b/code-samples)   
- [Azure Active Directory B2B collaboration frequently-asked questions (FAQ)](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-faq)   
- [Azure Active Directory B2B Collaboration](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)   
+ [Azure Active Directory B2B collaboration code and PowerShell samples](/azure/active-directory/b2b/code-samples)   
+ [Azure Active Directory B2B collaboration frequently-asked questions (FAQ)](/azure/active-directory/active-directory-b2b-faq)   
+ [Azure Active Directory B2B Collaboration](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)   
  [Azure AD B2B: New updates make cross-business collab easy](https://blogs.technet.microsoft.com/enterprisemobility/2017/02/01/azure-ad-b2b-new-updates-make-cross-business-collab-easy/)
 
+[Share a canvas app with guest users](/powerapps/maker/canvas-apps/share-app-guests)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

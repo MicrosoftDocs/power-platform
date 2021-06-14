@@ -13,7 +13,7 @@ metadata:
   ms.collection: collection
   author: jimholtz
   ms.author: jimholtz
-  ms.date: 08/07/2020
+  ms.date: 06/14/2021
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -25,13 +25,13 @@ landingContent:
        - linkListType: overview
          links:
           - text: Overview
-            url: /power-platform/guidance/adoption/methodology
+            url: ./adoption/methodology.md
           - text: Strategy and vision
-            url: /power-platform/guidance/adoption/strategy-best-practices
+            url: ./adoption/strategy-best-practices.md
           - text: Admin and governance
-            url: /power-platform/guidance/adoption/admin-best-practices 
+            url: ./adoption/admin-best-practices.md
           - text: Nurture and educate
-            url: /power-platform/guidance/adoption/nurture-best-practices                    
+            url: ./adoption/nurture-best-practices.md
         
   # Card
   - title: Center of Excellence (CoE) Kit
@@ -39,13 +39,13 @@ landingContent:
        - linkListType: overview
          links:
           - text: Overview
-            url: /power-platform/guidance/coe/overview
+            url: ./coe/overview.md
           - text: What's in the CoE Starter Kit?
-            url: /power-platform/guidance/coe/starter-kit-explained          
+            url: ./coe/starter-kit-explained.md
        - linkListType: how-to-guide
          links:
           - text: Set up the CoE Starter Kit
-            url: /power-platform/guidance/coe/setup
+            url: ./coe/setup.md
           - text: How to use the CoE Starter Kit?
             url: /power-platform/guidance/coe/power-bi
 
@@ -54,7 +54,7 @@ landingContent:
     linkLists:
        - linkListType: reference
          links:
-          - text: Real World Architecture Examples
+          - text: Real-world architecture examples
             url: /power-platform/guidance/architecture/real-world-examples/overview
 
   # Card
@@ -63,18 +63,17 @@ landingContent:
        - linkListType: reference
          links:
           - text: Power Apps guidance
-            url: https://docs.microsoft.com/powerapps/guidance
+            url: /powerapps/guidance
           - text: Power BI guidance
-            url: https://docs.microsoft.com/power-bi/guidance/         
+            url: /power-bi/guidance/
           - text: Power Automate guidance
-            url: https://docs.microsoft.com/power-automate/guidance/
+            url: /power-automate/guidance/
           - text: Power Virtual Agents docs
-            url: https://docs.microsoft.com/power-virtual-agents
+            url: /power-virtual-agents
           - text: Power Platform admin guide
-            url: https://docs.microsoft.com/power-platform/admin/admin-documentation
+            url: ../admin/admin-documentation.md
 
 
 
       
 
-  

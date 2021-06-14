@@ -18,8 +18,6 @@ search.app:
 ---
 # Security concepts in Microsoft Dataverse
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 One of the key features of [Dataverse](/powerapps/maker/common-data-service/data-platform-intro) is its rich security model that can adapt to many business usage scenarios. This security model is only in play when there is a Dataverse database in the environment. As an administrator, you likely won't be building the entire security model yourself, but will often be involved in the process of managing users and making sure they have the proper configuration and troubleshooting security access related issues.
 
 > [!TIP]
@@ -33,7 +31,7 @@ Dataverse uses role-based security to group together a collection of privileges.
 
 Business units work with security roles to determine the effective security that a user has. Business units are a security modeling building block that helps in managing users and the data they can access. Business units define a security boundary. Every Dataverse database has a single root business unit.
 
-You can [create child business units](https://docs.microsoft.com/power-platform/admin/create-edit-business-units) to help further segment your users and data. Every user assigned to a Dataverse environment will belong to a business unit. While business units could be used to model 1:1 a true organization hierarchy, more often they lean more towards just defined security boundaries to help achieve the security model needs.
+You can [create child business units](./create-edit-business-units.md) to help further segment your users and data. Every user assigned to a Dataverse environment will belong to a business unit. While business units could be used to model 1:1 a true organization hierarchy, more often they lean more towards just defined security boundaries to help achieve the security model needs.
 
 To better understand let’s look at the following example. We have three business units. Woodgrove is the root business unit and will always be at the top, that is unchangeable. We've created two other child business units A and B. Users in these business units have very different access needs. When we associate a user with this Dataverse environment, we can set the user to be in one of these three business units. Where the user is associated will determine which business unit owns the records that user is the owner of. By having that association allows us to tailor a security role to allow the user to see all records in that business unit.
 
@@ -62,7 +60,7 @@ In the above example, we have given organization level access to Contact which m
 
 ## Teams
 
-Teams are another important security building block. Teams are owned by a Business Unit. Every Business Unit has one default team that is automatically created when the Business Unit is created. The default team members are managed by Dataverse and always contain all users associated with that Business Unit. You can’t manually add or remove members from the default team, they're dynamically adjusted by the system as [new users are associated/disassociated with business units](https://docs.microsoft.com/power-platform/admin/create-edit-business-units). There are two types of teams, owning teams and access teams.
+Teams are another important security building block. Teams are owned by a Business Unit. Every Business Unit has one default team that is automatically created when the Business Unit is created. The default team members are managed by Dataverse and always contain all users associated with that Business Unit. You can’t manually add or remove members from the default team, they're dynamically adjusted by the system as [new users are associated/disassociated with business units](./create-edit-business-units.md). There are two types of teams, owning teams and access teams.
 - Owning Teams can own records, which give any team member direct access to that record. Users can be members of multiple teams. This will allow it to be a powerful way of granting permissions to users in a broad way without micromanaging access at the individual user level. 
 - Access teams are discussed in the next section as part of record sharing.
 

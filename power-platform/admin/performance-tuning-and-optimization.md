@@ -1,6 +1,6 @@
 ---
-title: "Performance tuning and optimization  | MicrosoftDocs"
-description: Performance tuning and optimization
+title: "Performance tuning and optimization for customer engagement apps"
+description: "Plan and optimize application performance with Dynamics 365 customer engagement apps."
 author: Mattp123
 ms.service: power-platform
 ms.component: pa-admin
@@ -17,18 +17,17 @@ search.app:
 ---
 # Performance tuning and optimization
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+This article helps you plan and optimize application performance with customer engagement apps, including Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation.  
 
-Use this information to help you plan and optimize application performance with customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation).  
+Microsoft recommends that you don't execute operations that require concurrent database transactions. Also, don’t execute operations that require intensive database transactions during normal business hours, when users are most likely to access the system. 
 
-We recommend that you not run operations that require intensive database transactions concurrently. Similarly, don’t run operations that require intensive database transactions during normal business hours when users are most likely to access the system. 
+Example operations that require intensive database transactions include:
 
-Operations that require intensive database transactions examples:
-- Enabling one or more language packs
+- Enable one or more language packs
 - Solution import, upgrade, delete, or export
 - Install or upgrade apps from [!INCLUDE [pn-microsoft-appsource](../includes/pn-microsoft-appsource.md)] or the [!INCLUDE [pn-dyn-365-admin-center](../includes/pn-dyn-365-admin-center.md)] 
-- Publishing customizations
-- Large bulk record operations, such as a business unit change when the business unit has a very large number of records associated
+- Publish customizations
+- Large bulk record operations, such as business unit changes. For example, when a business unit has a very large number of records associated with it
 
 ### See also
 [Verify network capacity and throughput for clients](verify-network-capacity-throughput-clients.md) <br />

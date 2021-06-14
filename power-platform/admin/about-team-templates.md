@@ -1,6 +1,6 @@
 ---
-title: "About team templates  | MicrosoftDocs"
-description: About team templates 
+title: "Use access and owner team templates for collaboration"
+description: "Learn how to use team templates in Microsoft Power Platform to allow users across business units to share information and collaborate."
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
@@ -19,7 +19,7 @@ search.app:
 ---
 # About collaborating with team templates
 
-Using teams is optional, however, teams give you an easy way to share information and collaborate with users across business units. A team is a group of users. As a group, you will be able to track information about the rows and perform assigned tasks in much more efficient and coordinated way. While a team belongs to only one business unit, it can include users from other business units. A user can be associated with more than one team.
+Using teams is optional, however, teams give you an easy way to share information and collaborate with users across business units. A team is a group of users. As a group, you will be able to track information about the rows and perform assigned tasks in a much more efficient and coordinated way. While a team belongs to only one business unit, it can include users from other business units. A user can be associated with more than one team.
   
  There are two types of teams that you can work with: *owner* and *access*.  
   

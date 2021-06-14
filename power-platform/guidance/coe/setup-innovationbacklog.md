@@ -23,7 +23,7 @@ Use the Innovation Backlog app to ask users to submit ideas for apps and flows t
 
 Pick the most impactful ideas to for your development team to build, or select them for an upcoming hackathon. Other users can vote on ideas, or add their own scenarios to an existing idea. Developers can additionally request feedback and testimonials to build their portfolio.
 
-The Innovation Backlog solution contains assets that are relevant to all users in your organization, and can be installed in [Production](https://docs.microsoft.com/power-platform/admin/environments-overview#types-of-environments) or [Dataverse for Teams](https://docs.microsoft.com/powerapps/teams/overview-data-platform) environments.
+The Innovation Backlog solution contains assets that are relevant to all users in your organization, and can be installed in [Production](../../admin/environments-overview.md#types-of-environments) or [Dataverse for Teams](/powerapps/teams/overview-data-platform) environments.
 
 > [!IMPORTANT]
 > The Innovation Backlog components solution doesn't have a dependency on other components of the CoE Starter Kit. It can be used independently.
@@ -32,7 +32,7 @@ The Innovation Backlog solution contains assets that are relevant to all users i
 
 Before you begin, review the [prerequisites](setup.md#prerequisites) for using the starter kit solution.
 
-- If you aren't already using the CoE Starter Kit, we recommend [creating a new environment](https://docs.microsoft.com/power-platform/admin/create-environment) for CoE solutions.
+- If you aren't already using the CoE Starter Kit, we recommend [creating a new environment](../../admin/create-environment.md) for CoE solutions.
 - If you are already using other CoE Starter Kit components, use the environment that you created as part of setting up the [core components](setup-core-components.md) for this solution.
 
 1. Download the CoE Starter Kit compressed file from [aka.ms/CoeStarterKitDownload](https://aka.ms/CoeStarterKitDownload).
@@ -55,7 +55,7 @@ Before you begin, review the [prerequisites](setup.md#prerequisites) for using t
 
 1. When the compressed (.zip) file has been loaded, select **Next**.
 
-1. Establish connections to the Common Data Service (Current Environment), Common Data Service, Power Apps for Makers and Power Platform for Admins connector. If you create a new connection, you must select **Refresh**. You won't lose your import progress.
+1. Establish connections to the Microsoft Dataverse (Current Environment), Microsoft Dataverse, Power Apps for Makers and Power Platform for Admins connector. If you create a new connection, you must select **Refresh**. You won't lose your import progress.
 
      ![Establish connections to activate your solution](media/ibteams-2.png "Establish connections to activate your solution.")
 
@@ -98,8 +98,8 @@ You can now [use the Innovation Backlog app](innovationbacklog-components.md).
 Before you begin:
 
 - decide which team to add the Innovation Backlog app to or create a new team.
-- [install the Power Apps app](https://docs.microsoft.com/powerapps/teams/install-personal-app) in Teams.
-- [create your first app](https://docs.microsoft.com/powerapps/teams/create-first-app) (at least one app is required in the environment to enable the solution import experience).
+- [install the Power Apps app](/powerapps/teams/install-personal-app) in Teams.
+- [create your first app](/powerapps/teams/create-first-app) (at least one app is required in the environment to enable the solution import experience).
 
 1. Download the CoE Starter Kit compressed file from [aka.ms/CoeStarterKitDownload](https://aka.ms/CoeStarterKitDownload).
 
@@ -119,7 +119,7 @@ Before you begin:
 
 1. When the compressed (.zip) file has been loaded, select **Next**.
 
-1. Establish connections to the Common Data Service (Current Environment), Common Data Service, Power Apps for Makers and Power Platform for Admins connector. If you create a new connection, you must select **Refresh**. You won't lose your import progress.
+1. Establish connections to the Microsoft Dataverse (Current Environment), Microsoft Dataverse, Power Apps for Makers and Power Platform for Admins connector. If you create a new connection, you must select **Refresh**. You won't lose your import progress.
 
      ![Establish connections to activate your solution](media/ibteams-2.png "Establish connections to activate your solution.")
 

@@ -2,7 +2,7 @@
 title: "Download chatbot sessions"
 description: "Download sessions from the last 30 days for your bot conversations."
 keywords: "PVA"
-ms.date: 9/22/2020
+ms.date: 4/20/2021
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -24,6 +24,8 @@ ms.collection: virtual-agent
 By default, you can download up to seven days of bot conversation transcript sessions from the past 30 days directly from the Power Virtual Agents portal.
 
 You can also download and view chat transcripts in the Power Apps portal.
+
+See [Work with conversation transcripts](analytics-sessions-transcripts.md) for more details and tips.
 
 Lastly, you can manage the retention period for transcripts. This can be useful if you want to increase the date range from 30 days to something else.
 

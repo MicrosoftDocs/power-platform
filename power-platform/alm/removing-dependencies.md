@@ -4,7 +4,7 @@ description: "Dependencies sometimes can block operations. This article describe
 ms.custom: ""
 ms.date: 06/17/2020
 ms.reviewer: ""
-ms.service: powerapps
+ms.service: power-platform
 ms.topic: "article"
 author: "ccdietrich" # GitHub ID
 ms.author: "cdietric" # MSFT alias of Microsoft employees only
@@ -243,8 +243,8 @@ Remove all references, and then save and publish both the app and the site map.
   
 ### See also
 
- [Solution concepts](/power-platform/alm/solution-concepts-alm)  
- [Solution layers](/power-platform/alm/solution-layers-alm)  
+ [Solution concepts](./solution-concepts-alm.md)  
+ [Solution layers](./solution-layers-alm.md)  
  [Dependency tracking for solution components](dependency-tracking-solution-components.md)]
 
 

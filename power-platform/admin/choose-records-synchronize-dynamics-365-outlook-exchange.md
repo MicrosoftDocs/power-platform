@@ -1,12 +1,12 @@
 ---
 title: "Choose the records to synchronize between customer engagement apps and Exchange   | MicrosoftDocs"
 description: Choose the records to synchronize between customer engagement apps and Exchange 
-author: jimholtz
+author: mduelae
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/04/2020
-ms.author: jimholtz
+ms.author: mkaur
 search.audienceType: 
   - admin
 search.app:
@@ -18,8 +18,6 @@ search.app:
 # Choose the records to synchronize between customer engagement apps and Exchange 
 
 <!-- legacy procedure --> 
-
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), use online synchronization filters to determine which records to synchronize between customer engagement apps and [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] (using [!INCLUDE[cc_server_side_synch](../includes/cc-server-side-synch.md)]). You can modify the existing online synchronization filters or create new filters to synchronize certain types of records. You can also delete, deactivate, or activate filters.  
   
@@ -38,7 +36,7 @@ The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service,
    ![Online synchronization filters](media/online-sync-filters-dialog-box2.png "Online synchronization filters")  
   
    > [!NOTE]
-   > If you're a system administrator, you can create or modify organization-wide filters (system filters) through the SDK. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Tell me more about system filters](https://docs.microsoft.com/powerapps/developer/common-data-service/outlook-client/offline-outlook-filters-templates) 
+   > If you're a system administrator, you can create or modify organization-wide filters (system filters) through the SDK. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Tell me more about system filters](/powerapps/developer/common-data-service/outlook-client/offline-outlook-filters-templates) 
   
 4. Do one of the following:  
   
@@ -74,7 +72,7 @@ The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service,
    ![Sync filters dialog box showing grouped criteria](media/sync-filters-group-criteria.png "Sync filters dialog box showing grouped criteria")  
   
 ### See also  
- [Frequently asked questions about synchronizing records between customer engagement apps and Microsoft Outlook](frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook.md) 
+ [Frequently asked questions about synchronizing records between customer engagement apps and Microsoft Outlook](frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook.yml) 
 
 
 

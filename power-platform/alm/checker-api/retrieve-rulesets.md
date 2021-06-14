@@ -3,7 +3,7 @@ title: "Retrieve the list of rulesets | Microsoft Docs"
 description: "Read how to form a GET request using the Power Apps checker web API to retrieve the list of rulesets available."
 ms.custom: ""
 ms.date: 06/09/2020
-ms.service: powerapps
+ms.service: power-platform
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"

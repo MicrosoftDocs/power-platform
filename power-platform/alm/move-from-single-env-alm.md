@@ -1,6 +1,6 @@
 ---
-title: "Move from single environment ALM with Power Apps | Microsoft Docs"
-description: "Learn how to move from a single environment to support ALM with Power Apps"
+title: "Move from a single environment for development and production"
+description: "Support healthy ALM by moving from a single environment to separate environments for development, testing, and production."
 keywords: 
 author: Mattp123
 ms.author: matp
@@ -8,7 +8,7 @@ manager: kvivek
 ms.custom: ""
 ms.date: 05/05/2020
 ms.reviewer: ""
-ms.service: powerapps
+ms.service: power-platform
 ms.topic: "article"
 search.audienceType: 
   - maker

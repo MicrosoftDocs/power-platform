@@ -7,7 +7,6 @@ ms.component: pa-admin
 ms.topic: overview
 ms.date: 05/01/2020
 ms.author: jimholtz
-manager: kvivek
 search.audienceType: 
   - admin
 search.app:
@@ -18,8 +17,6 @@ search.app:
 ---
 
 # What's the role of a Power Platform administrator?
-
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 Administration of Power Apps, Power Automate, and Microsoft Dataverse is done through the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 

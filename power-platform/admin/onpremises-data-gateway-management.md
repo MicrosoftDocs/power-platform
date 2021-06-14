@@ -1,12 +1,13 @@
 ---
 title: "Preview: View and manage on-premises data gateways   | MicrosoftDocs"
 description: View and manage on-premises gateways. 
-author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 10/14/2020
-ms.author: jimholtz 
+author: arthiriyer
+ms.author: arthii
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
@@ -20,7 +21,7 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-The on-premises data gateway acts as a bridge, providing quick and secure data transfer between on-premises data (data that is not in the cloud) and the Power BI, Power Automate, Logic Apps, and Power Apps services. More information: [What is an on-premises data gateway?](https://docs.microsoft.com/data-integration/gateway/service-gateway-onprem)
+The on-premises data gateway acts as a bridge, providing quick and secure data transfer between on-premises data (data that is not in the cloud) and the Power BI, Power Automate, Logic Apps, and Power Apps services. More information: [What is an on-premises data gateway?](/data-integration/gateway/service-gateway-onprem)
 
 On the **Data** page of the [Power Platform admin center](https://admin.powerplatform.microsoft.com), you can view and manage on-premises data gateways.
 
@@ -79,11 +80,11 @@ Select **Settings** to set on-premises data gateway settings such as the gateway
 > [!div class="mx-imgBorder"] 
 > ![Data gateway settings](media/data-gateways-settings.png "Data gateway settings")
 
-For more information on **Allow user's cloud datasources to refresh through this gateway cluster**, go to [Merge or append on-premises and cloud data sources](https://go.microsoft.com/fwlink/p/?linkid=2005525).
+For more information on **Allow user's cloud datasources to refresh through this gateway cluster**, go to [Merge or append on-premises and cloud data sources](/power-bi/connect-data/service-gateway-mashup-on-premises-cloud).
 
-For more information on **Allow user's custom data connectors to refresh through this gateway cluster**, go to [Use custom data connectors with the on-premises data gateway](https://docs.microsoft.com/power-bi/service-gateway-custom-connectors).
+For more information on **Allow user's custom data connectors to refresh through this gateway cluster**, go to [Use custom data connectors with the on-premises data gateway](/power-bi/service-gateway-custom-connectors).
 
-For more information on **Distribute requests across all active gateways in this cluster**, go to [Load balance across gateways in a cluster](https://docs.microsoft.com/data-integration/gateway/service-gateway-high-availability-clusters#load-balance-across-gateways-in-a-cluster).
+For more information on **Distribute requests across all active gateways in this cluster**, go to [Load balance across gateways in a cluster](/data-integration/gateway/service-gateway-high-availability-clusters#load-balance-across-gateways-in-a-cluster).
 
 ## Manage users
 
@@ -115,7 +116,7 @@ Use **Remove** to remove a gateway cluster. This operation is available for data
 > [!div class="mx-imgBorder"] 
 > ![Remove gateway cluster](media/data-gateways-remove.png "Remove gateway cluster")
 
-For more information, go to [Remove or delete an on-premises data gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-manage#remove-or-delete-an-on-premises-data-gateway).
+For more information, go to [Remove or delete an on-premises data gateway](/data-integration/gateway/service-gateway-manage#remove-or-delete-an-on-premises-data-gateway).
 
 ## Get help
 For faster troubleshooting and assistance, select **Get help** to open a Get Help panel. Include the session ID in a customer support ticket for any issues on the Data Gateways feature in the Power Platform admin center.
@@ -132,7 +133,7 @@ Select the region drop-down list to see the gateway regions. When you select one
 
 ## Filter by gateway type
 
-Select the gateway type drop-down list to filter by gateway type. By default, you'll see all data gateways running in standard mode. Use the filter to see data gateways in personal mode or all gateways. For more information, see [Types of gateways](https://docs.microsoft.com/power-bi/service-gateway-onprem#types-of-gateways).
+Select the gateway type drop-down list to filter by gateway type. By default, you'll see all data gateways running in standard mode. Use the filter to see data gateways in personal mode or all gateways. For more information, see [Types of gateways](/power-bi/service-gateway-onprem#types-of-gateways).
 
 > [!div class="mx-imgBorder"] 
 > ![Filter by type](media/filter-by-type.png "Filter by type")
@@ -194,8 +195,8 @@ If a person who doesn't have access to install gateways tries to install one, th
 > ![Error message](media/manage-gateway-error-message.png "Error message")
 
 ### See also
-[On-premises data gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-onprem)<br/>
-[Connecting to on-premises data sources with On-premises Data Gateway](https://docs.microsoft.com/azure/analysis-services/analysis-services-gateway)<br/>
+[On-premises data gateway](/data-integration/gateway/service-gateway-onprem)<br/>
+[Connecting to on-premises data sources with On-premises Data Gateway](/azure/analysis-services/analysis-services-gateway)<br/>
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

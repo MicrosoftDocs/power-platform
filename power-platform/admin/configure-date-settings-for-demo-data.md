@@ -2,7 +2,6 @@
 title: "Configure date settings for demo data  | MicrosoftDocs"
 description: Configure date settings for demo data 
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
@@ -18,13 +17,11 @@ search.app:
 ---
 # Configure date settings for demo data 
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 Use the information below to automatically keep your demo environment data current.
 
-**Before you begin** <br />
+**Before you begin** 
 
-Download the Configuration Migration Tool. The Configuration Migration tool is available as a [NuGet package](https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.ConfigurationMigration.Wpf). To download the tool, see [Download tools from NuGet](https://docs.microsoft.com/powerapps/developer/common-data-service/download-tools-nuget). Follow the steps on this page to extract the **DataMigrationUtility.exe** tool. 
+Download the Configuration Migration Tool. The Configuration Migration tool is available as a [NuGet package](https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.ConfigurationMigration.Wpf). To download the tool, see [Download tools from NuGet](/powerapps/developer/common-data-service/download-tools-nuget). Follow the steps on this page to extract the **DataMigrationUtility.exe** tool. 
 
 You can set the values of datetime fields to automatically move forward by a specified duration. This allows you to keep your demo data recent without the need to make manual updates. It will also work when using Configuration Migration Utility files with the Package Deployer tool. 
 
@@ -83,7 +80,7 @@ You can set the values of datetime fields to automatically move forward by a spe
 > **Example**: To move dates forward by 3 months, and import the data on 10/1/2017: change the **timestamp** in the data.xml file to 7/1/2017.
 
 ### See also  
-[Download tools from NuGet](https://docs.microsoft.com/powerapps/developer/common-data-service/download-tools-nuget) <br />
+[Download tools from NuGet](/powerapps/developer/common-data-service/download-tools-nuget) <br />
 [Modify a schema](modify-configuration-data-schema.md) <br />
 [Manage your configuration data](manage-configuration-data.md) <br />
 [Import configuration data](import-configuration-data.md)

@@ -52,7 +52,7 @@ Pick the most impactful ideas to for your development team to build, or select t
 
     ![Add as many measures as needed to describe your current pain points](media/ib-19.png "Add as many measures as needed to describe your current pain points")
 
-1. Share how the existing process works - this optional step will help developers understand your process better. You can upload a Visio diagram, use [Process Advisor](https://docs.microsoft.com/power-automate/process-advisor-overview), or describe your process inline in the tool. 
+1. Share how the existing process works - this optional step will help developers understand your process better. You can upload a Visio diagram, use [Process Advisor](/power-automate/process-advisor-overview), or describe your process inline in the tool. 
     ![Share how your existing process works.](media/ib-20.png "Share how your existing process works.")
 1. Lastly, help a developer understand how complex your process is. We are making some estimations here that you can update.
         ![Help a developer understand how complex your process is.](media/ib-21.png "Help a developer understand how complex your process is.")

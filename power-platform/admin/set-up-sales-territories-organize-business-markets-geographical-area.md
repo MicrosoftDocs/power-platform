@@ -27,7 +27,7 @@ Organizations can create a model and visualize their sales territories in a hier
 
 > [!IMPORTANT]
 > - For a new organization that provisions Dynamics 365 Sales, the territory hierarchical relationship will be available and enabled by default.
-> - For existing customers upgrading to the latest release, if the organization doesn't already have a hierarchical relationship created for the Territory entity, the hierarchical relationship will be available and enabled. If the organization has a hierarchical relationship created for territory, the new out-of-the-box territory hierarchical relationship will be available but not enabled.
+> - For existing customers upgrading to the latest release, if the organization doesn't already have a hierarchical relationship created for the Territory table, the hierarchical relationship will be available and enabled. If the organization has a hierarchical relationship created for territory, the new out-of-the-box territory hierarchical relationship will be available but not enabled.
 
 ## Create a sales territory (Sales Hub app)
 
@@ -107,11 +107,11 @@ Organizations can create a model and visualize their sales territories in a hier
 9. In the **Look Up Records** dialog box, select a user, and then choose **Add**.  
   
 > [!TIP]
->  To make your salesperson's job easier, you can also set a default price list for a territory. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Define product pricing with price lists and price list items](https://docs.microsoft.com/dynamics365/sales-enterprise/create-price-lists-price-list-items-define-pricing-products)  
+>  To make your salesperson's job easier, you can also set a default price list for a territory. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Define product pricing with price lists and price list items](/dynamics365/sales-enterprise/create-price-lists-price-list-items-define-pricing-products)  
   
 ### See also  
- [Administrator and sales manager guide](https://docs.microsoft.com/dynamics365/sales-enterprise/admin-guide)   
- [Nurture sales from lead to order (Sales)](https://docs.microsoft.com/dynamics365/sales-enterprise/nurture-sales-from-lead-order-sales)
+ [Administrator and sales manager guide](/dynamics365/sales-enterprise/admin-guide)   
+ [Nurture sales from lead to order (Sales)](/dynamics365/sales-enterprise/nurture-sales-from-lead-order-sales)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

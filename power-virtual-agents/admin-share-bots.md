@@ -18,7 +18,7 @@ Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
 > - [Power Virtual Agents web app](admin-share-bots.md)
-> - [Power Virtual Agents app in Microsoft Teams](/teams/admin-share-bots-teams.md)
+> - [Power Virtual Agents app in Microsoft Teams](teams/admin-share-bots-teams.md)
 
 Share your bot with other users so multiple users can edit, manage, and collaborate on a bot. 
 
@@ -139,7 +139,7 @@ Based on the content and target audience of the bot, you may want to give transc
 
 >[!IMPORTANT]
 >Conversation transcript access is managed by environment security roles. After assigning the **Bot transcript viewer** security role to a user, that user can access conversation transcripts for all bots that they create or are shared with in the environment.  
->In the default environment, every user has the **Bot transcript viewer** role assigned by default. We recommend you create an environment for bots that controls which user can view conversation transcripts. Learn more about how to [Create a new environment for your bots](https://docs.microsoft.com/power-virtual-agents/environments-first-run-experience#create-a-new-environment-for-your-bots)
+>In the default environment, every user has the **Bot transcript viewer** role assigned by default. We recommend you create an environment for bots that controls which user can view conversation transcripts. Learn more about how to [Create a new environment for your bots](./environments-first-run-experience.md#create-a-new-environment-for-your-bots)
 
 When [sharing the bot](#share-a-bot), you can assign the **Bot transcript viewer** role by selecting the check box.
  
