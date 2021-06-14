@@ -60,4 +60,4 @@ what ExpressRoute does and does not do so that you can accurately judge the
 value for the situation.
 
 > [!div class="nextstepaction"]
-> [Next step: Understand how ExpressRoute works](how-expressroute-works.md)
+> [Next step: Understand the benefits of using ExpressRoute](benefits.md)

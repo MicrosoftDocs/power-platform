@@ -239,7 +239,7 @@ As you can see, it is important to determine how the routing is managed within
 the customer’s WAN and ensure that the paths to and from Microsoft cloud
 services are carefully considered.
 
-### External connectivity to/from Power Platform
+## External connectivity to/from Power Platform
 
 When making connections to Power Platform from customer locations there are
 multiple traffic types to be considered. This may lead to both peering types,
@@ -290,12 +290,12 @@ customer network.
 | Web Services        | Https Inbound to Power Platform services | Microsoft Peering                                                                    | Requests to Power Platform services through the web service APIs (SOAP, Web API). Either from a standard or custom client application |
 | Connectors          | Https Inbound to Power Platform services | Microsoft Peering                                                                    | Responses back to Power Platform services through the APIMs via Connectors using On-premises data gateway                             |
 
-### Internal Cloud connectivity within Power Platform services
+## Internal Cloud connectivity within Power Platform services
 
 Power Platform services use and integrate with several other Microsoft online
 services hosted both in Microsoft 365 and Azure.
 
-![](media/c70303c7624a798035ee394b9b5335d8.png)
+![Diagram showing different connection types that exist between Power Platform services and an internal network](media/c70303c7624a798035ee394b9b5335d8.png)
 
 | Description            | Traffic Type and Direction                     | Purpose                                                                                                                                                                                             |
 |------------------------|------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -316,7 +316,7 @@ Platform services and Azure is handled internally. Separately the customer may
 make requests to the Service Bus to retrieve information, and this can be
 managed through public peering.
 
-### Customer Public/ Private Cloud connectivity to/ from Power Platform services 
+## Customer Public/ Private Cloud connectivity to/ from Power Platform services 
 
 Power Platform services also allow direct integration with public or private
 Azure resources:
