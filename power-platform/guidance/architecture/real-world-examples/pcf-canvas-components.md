@@ -13,7 +13,7 @@ search.audienceType:
 search.app: 
   
 ---
-# Using PCF and Canvas Components  
+# Building re-usable UI using PCF and Canvas Components  
 
 Power Apps offers two options to create re-usable components. The first one is Canvas components which is a low-code way of creating reusable controls within Power Apps Studio and the second is the Power Apps Component Framework (PCF) which is a pro-developer way of building reusable controls using HTML, Typescript and CSS. Canvas components are powerful and can be used to fulfill most UI requirements for your app. They should be considered first as the cost to build and maintain can lower in most cases than PCF.
 

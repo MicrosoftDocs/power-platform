@@ -13,7 +13,7 @@ search.audienceType:
 search.app: 
   
 ---
-# Using On-Premises SQL with Canvas app 
+# Using On-Premises SQL with a Canvas app through an on-premise data gateway 
 
 The on-premises data gateway acts as a bridge to provide secure data transfer between on-premises data and Power Apps.
 

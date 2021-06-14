@@ -15,7 +15,6 @@ search.app:
 ---
 # Using the SharePoint Online Connector with Canvas App 
 
-![Custom Connector architecture](./media/SharepointArch.png)
 
 SharePoint is a great data source for organization with strong Office365 practice and starting their journey with the Power Apps. The SharePoint connector allow app makers to quickly connect to SharePoint lists and perform CRUD operations in a simple and efficient way. SharePoint as a data source is well suited for apps with a simple object model and limited number of tables (lists) and relationships between those tables. The SharePoint Online Connector is also adequate for apps not requiring more complex security models such as row-level or field-level security. On the other hand, as data grows in size and complexity, app developers using SharePoint bases app makers need to be aware of some limitations when searching and filtering data due the delegation support offered by the SharePoint connector. These limitations are well documented here https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/delegation-overview and should be taken into account when choosing the right data source or backend for your app.
 
