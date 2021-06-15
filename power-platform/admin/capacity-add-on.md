@@ -32,6 +32,8 @@ There are three stages for using capacity add-ons:
 
 If your organization has purchased capacity add-ons, an **Add-ons** tile appears on the **Capacity** screen in the Microsoft [Power Platform admin center](https://admin.powerplatform.microsoft.com/). Sign into the admin center, and select **Resources** > **Capacity** > **Summary** tab.
 
+![Summary tab](media/add-on-tile1.png "Summary tab")
+
 The **Add-ons** tile shows summary information about the capacity add-ons that your organization has.
 
 ![Add-on tile](media/add-on-tile2.png "Add-on tile")
@@ -53,6 +55,8 @@ To allocate capacity to an environment:
    - Select the **Add-ons** tab. Select an environment, and then select **Manage add-ons** in the upper-left menu bar.
 
    You can also select **Download reports** to download usage reports for various capacities.
+   
+   ![Download reports](media/add-on-tile3.png "Download reports")
 
 4. Select the environment where you want to add capacity from the **Environment** drop-down menu, and then allocate from your available capacity.
 
@@ -86,6 +90,7 @@ The following admins will be able to allocate add-on capacity in the Power Platf
 
 ### See also
 [About Power Apps per app plans](about-powerapps-perapp.md)
+[AI Builder consumption report](/ai-builder/administer-consumption-report)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
