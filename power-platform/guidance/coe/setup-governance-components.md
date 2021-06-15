@@ -87,6 +87,8 @@ All flows in this solution depend on all environment variables' being configured
    | Auto Delete On Archive | Determines whether apps andd flows are deleted when they're approved for deletion in the following flow: Admin \| App Archive and Clean Up - Check Approvals and Archive. <br> Value must be Yes or No. A default value of Yes is provided. |
    | Exclude Default environment from Compliance Requests | Determines if the default environment is excluded in the Compliance Details request flow. <br> Value must be Yes or No. A default value of No is provided.  |
    | ProductionEnvironment | Determines if the environment is Production or Dev/Test. True (the default) will mean that the approvals are sent to app/flow owners. False will send those approvals to the admin email. |
+   | Cleanup Old Objects App URL | (Optional) Link to the Cleanup Old Objects canvas app included in this solution. <br> If included, communication about old objects which are considered no longer useful will include the link to make cleanup easier |
+   | Flow Approvals URL | (Optional) Link to Power Automate's Approval page for your CoE Environment <br> If included, communication about old objects which are considered no longer useful will include the link to make cleanup easier |
 
 ## Activate the flows
 
