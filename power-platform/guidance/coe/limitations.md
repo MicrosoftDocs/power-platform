@@ -93,6 +93,10 @@ To fix this, you must have your admin security role added to the security roles 
 
 It currently isn't possible to retrieve the model-driven apps, chatbots, and Desktop flows for developer environments (*My Name's* environment) and Microsoft Teams environments.
 
+## Supported languages
+
+The CoE Starter Kit solutions are not localized, and only support English. Add the English language pack to your environment to make sure all apps and flows work. More information: [Regional and language options for your environment](https://docs.microsoft.com/power-platform/admin/enable-languages)
+
 ## Security groups and approvals
 
 We recommend against using security groups to control access to the CoE environment, because it's likely that users who don't have access to this environment will be participating in approvals.
