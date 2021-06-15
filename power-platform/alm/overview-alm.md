@@ -1,6 +1,6 @@
 ---
 title: "Application lifecycle management (ALM) with Microsoft Power Platform"
-description: "Overview of how to implement application lifecycle management (ALM) using Power Apps, Power Automate, and Microsoft Dataverse."
+description: "Overview of how to implement application lifecycle management (ALM) using Power Apps, Power Automate, Power Virtual Agents, and Microsoft Dataverse."
 keywords: 
 author: shmcarth
 ms.author: shmcarth
@@ -18,7 +18,7 @@ search.app:
 ---
 
 # Overview of application lifecycle management with Microsoft Power Platform
-The articles in this section describe how you can implement application lifecycle management (ALM) using Power Apps, Power Automate, and Microsoft Dataverse. 
+The articles in this section describe how you can implement application lifecycle management (ALM) using Power Apps, Power Automate, Power Virtual Agents, and Microsoft Dataverse. 
 
 ## What is ALM? 
 ALM is the lifecycle management of applications, which includes governance, development, and maintenance. Moreover, it includes these disciplines: requirements management, software architecture, development, testing, maintenance, change management, continuous integration, project management, deployment, and release management. ALM tools provide a
@@ -45,13 +45,13 @@ The *application lifecycle* is the cyclical software development process that in
 
 ![The application lifecycle](media/application-lifecycle.png "The application lifecycle") 
 
-## ALM for Power Apps, Power Automate, and Dataverse
+## ALM for Power Apps, Power Automate, Power Virtual Agents, and Dataverse
 
 Dataverse in Microsoft Power Platform lets you securely store and manage data that's used by business applications. To use the features and tools available for ALM, all environments that participate in ALM must include a Dataverse database.
 
 The following concepts are important for understanding ALM using the Microsoft Power Platform.
 
--   *Solutions* are the mechanism for implementing ALM; you use them to distribute components across environments through export and import. A component represents something that you can potentially customize. Anything that can be included in a solution is a component, such as site maps, apps, entities, fields, charts, or plug-ins. 
+-   *Solutions* are the mechanism for implementing ALM; you use them to distribute components across environments through export and import. A component represents something that you can potentially customize. Anything that can be included in a solution is a component, such as site maps, apps, chatbots, entities, fields, charts, or plug-ins. 
 
 -   *Dataverse* stores all the artifacts, including solutions.
 
@@ -63,6 +63,7 @@ For more information about how ALM and Azure DevOps technologies&mdash;combined 
 [ALM basics with Microsoft Power Platform](basics-alm.md)<br/>
 [What is Dataverse?](/powerapps/maker/common-data-service/data-platform-intro) <br/>
 [Application lifecycle management for Finance and Operations apps](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/app-lifecycle-management)
+[ALM for chatbots](/power-virtual-agents/authoring-export-import-bots)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
