@@ -4,7 +4,7 @@ description: "FAQs for licensing Power Apps, Power Automate, Dataverse, Datavers
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/26/2021
+ms.date: 06/16/2021
 author: chrisgarty
 ms.author: cgarty
 ms.reviewer: jimholtz
@@ -77,7 +77,7 @@ Power Apps licenses will continue to include Power Automate capabilities. Howeve
 
 ### Is there a plan for developers?
 
-Yes, we have a free Community Plan to learn and build skills on Power Apps, Power Automate, and Microsoft Dataverse. [Learn more](https://powerapps.microsoft.com/communityplan/).
+Yes, we have a free Developer Plan to learn and build skills on Power Apps, Power Automate, and Microsoft Dataverse. [Learn more](https://powerapps.microsoft.com/communityplan/).
 
 ### What happens when I use all the data storage, file storage, and flow runs included in my per user licenses?
 
@@ -109,7 +109,7 @@ Free trials for Microsoft Power Apps last 30 days. For Power Automate, they are 
 
 ### Is there a way to develop my Microsoft Power Apps and Power Automate skills for more than 90 days?
 
-Yes, with the Power Apps Community Plan you get a free environment for individual use with functionality including the Dataverse. In this environment you can explore and learn everything about Power Automate and Power Apps for free, but the Power Apps Community Plan is not intended for production use.
+Yes, with the Power Apps Developer Plan you get a free environment for individual use with functionality including the Dataverse. In this environment you can explore and learn everything about Power Automate and Power Apps for free, but the Power Apps Developer Plan is not intended for production use.
 
 [Learn more](https://powerapps.microsoft.com/pricing/).
 

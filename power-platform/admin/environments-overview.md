@@ -6,7 +6,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.custom: intro-internal
-ms.date: 04/06/2021
+ms.date: 06/16/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -94,8 +94,8 @@ There are multiple types of environments. The type indicates the purpose of the 
 </tr>
 <tr>
 <td width="20%"> Developer</td>
-<td width="50%">  Developer environments are created by users who have the Community Plan license. They're special environments intended only for use by the owner, and they can't be shared with other users. Provisioning developer environments can't be restricted unless through a support ticket. </td>
-<td width="30%">  Only a single user account with the Community Plan has access.</td>
+<td width="50%">  Developer environments are created by users who have the Developer Plan license. They're special environments intended only for use by the owner, and they can't be shared with other users. Provisioning developer environments can't be restricted unless through a support ticket. </td>
+<td width="30%">  Only a single user account with the Developer Plan has access.</td>
 </tr>
 <tr>
 <td width="20%"> Microsoft Dataverse for Teams</td>
