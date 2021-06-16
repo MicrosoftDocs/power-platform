@@ -43,3 +43,134 @@ Review the following documents:
 You must provide a valid certificate to configure server-side sync for HMA. It can be generated directly in Key Vault or through your company's process for generating and uploading a certificate to Key Vault.
 
 ### You need a Key Vault location 
+
+You need a Key Vault location where the certificate can be stored securely. You will also need to configure App Registration with AppId and ClientSecret to allow Dynamics 365 access to the certificate. See [Key Vault](https://azure.microsoft.com/services/key-vault/).
+
+## Configuration 
+
+Follow the steps below to configure HMA for Exchange on-premises.
+
+### Make a certificate available on Key Vault
+
+1. In the [Azure portal](https://portal.azure.com/), open Key Vault and go to the certificates section. 
+
+2. Select **Generate/Import**.
+
+3. At this point, a certificate can be either generated or imported. Specify a certificate name and then select **Create**. 
+
+The certificate name will be used later to reference the certificate. For these steps, the certificate will be named “HMA-Cert”. 
+
+### Create a new App Registration for Key Vault access 
+
+Create a new app registration in the Azure portal on the tenant where the Key Vault resides. For these steps, the app will be named “KV-App” during the configuration process. See [Quickstart: Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app).
+
+### Add a client secret for KV-App 
+
+The client secret will be used by Dynamics 365 to authenticate the app and retrieve the certificate. See [Add a client secret](/azure/active-directory/develop/quickstart-register-app).
+
+### Add KV-App to the Key Vault access policies 
+
+1. In the [Azure portal](https://portal.azure.com/), <need steps>
+
+2. <step>
+
+3. <step>
+
+4. Add **Get permission** under **Secret permissions** and **Certificate Permissions**.  Both are required for the KV-App to be able to access the certificate. 
+
+:::image type="content" source="media/azure-key-vault-access-policies.png" alt-text="Azure Key Vault access policies":::
+
+## Create a new app registration for HMA access 
+
+Create a new app registration in Azure portal on the tenant where Microsoft Exchange is hybridized. 
+
+For these steps, the app will be named “HMA-App” during this configuration process and will represent the actual app which Dynamics 365 will use to interact with Exchange on-premise resources. See [Quickstart: Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app).
+
+## Add the certificate for the HMA-App 
+
+This will be used by Dynamics 365 to authenticate the HMA-App. HMA only supports certificate usage to authenticate an app, therefore, a certificate is needed for this authentication scheme. 
+
+Add the HMA-Cert previously provisioned in Key Vault. See [Add a client secret](/azure/active-directory/develop/quickstart-register-app).
+
+## Add API permission 
+
+In order to allow HMA-App to have access to Exchange on-premises, grant the “Office 365 Exchange Online” API permission.
+
+<what does this image contribute?>
+:::image type="content" source="media/azure-key-vault-api-permissions.png" alt-text="Azure Key Vault API permissions":::
+
+1. In the [Azure portal](https://portal.azure.com/), <need steps>
+
+2. <step>
+
+3. <step>
+
+4. Select **Add permission**.  
+
+5. Go to the section **APIs my organization uses**.
+
+6. Select **Office 365 Exchange Online**.
+
+   <image match?>
+   :::image type="content" source="media/azure-key-vault-request-api-permissions.png" alt-text="Azure Key Vault request API permissions":::
+
+7. Select **Application permissions**.
+
+8. Check **full_access_as_app** to allow the app to have full access to all the mailboxes. Select **Add permissions**.
+
+> [!NOTE]
+> If having an app with full access on all mailboxes doesn’t not align with your business requirements, the Exchange on-premises admin can scope the mailboxes the app can access configuring the *ApplicationImpersonation* role on Exchange. See [Configure impersonation](/exchange/client-developer/exchange-web-services/how-to-configure-impersonation).
+
+9. Select **Grant Admin consent**.
+
+image
+
+Now let’s collect all the information required from the Azure Portal before moving forward and configure the email server profile on Dynamics 365: 
+
+- EWS URL: The Exchange WebServices endpoint where the Exchange on-premise is located which must be publicly accessible from Dynamics 365 
+
+- AAD resource Id: This is the azure resource id for which the HMA app will request access to. It is usually the host part of the EWS endpoint URL 
+
+- TenantId: This is the tenantId of the tenant where the Exchange on-premise is configured with AAD passthrough authentication. 
+
+- HMA Application Id: App id for the HMA-App. Can be found on the main page for the Application registration of HMA-App 
+
+- Key Vault Uri: This is uri of the Azure Keyvault used for certificate storage 
+
+- Key Vault KeyName: This is the certificate name used in Keyvault 
+
+- KeyVault Application Id: This is the appId of the KV-App used by Dynamics to retrieve the certificate from Keyvault 
+
+- KeyVault Client Secret: This it the client secret for the KV-App used by Dynamics. 
+
+## Dynamics 365 Configuration 
+
+Create a new Exchange OnPremise email server profile using “Exchange Hybrid Modern Auth (HMA) authentication. 
+
+Note: This feature is not available for Legacy webclient and is only available in the Power Platform Admin center under emailServerProfiles flight in private preview. 
+
+Open Power Platform Admin Center and go to the Email section: 
+
+image
+
+Open “Server Profiles” 
+
+Click on “New server profile” 
+
+Fill in the required fields and click Save: 
+
+image
+
+## Configure a mailbox 
+
+Now that the email server profile is configured, you can configure a mailbox: 
+
+-Associate the mailbox with the email server profile 
+
+-Approve the email address 
+
+-Run test and enable 
+
+-Check the alert wall for alerts. 
+
+
