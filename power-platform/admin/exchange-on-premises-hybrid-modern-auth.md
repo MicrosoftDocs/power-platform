@@ -70,11 +70,11 @@ The client secret will be used by Dynamics 365 to authenticate the app and retri
 
 ### Add KV-App to the Key Vault access policies 
 
-1. In the [Azure portal](https://portal.azure.com/), <writer needs steps>
+1. In the [Azure portal](https://portal.azure.com/), [writer needs steps]
 
-2. <writer needs step>
+2. [writer needs step]
 
-3. <writer needs step>
+3. [writer needs step]
 
 4. Add **Get permission** under **Secret permissions** and **Certificate Permissions**.  Both are required for the KV-App to be able to access the certificate. 
 
@@ -96,14 +96,14 @@ Add the HMA-Cert previously provisioned in Key Vault. See [Add a client secret](
 
 In order to allow HMA-App to have access to Exchange on-premises, grant the “Office 365 Exchange Online” API permission.
 
-<writer needs what does this image contribute?>
+[writer needs what does this image contribute?]
 :::image type="content" source="media/azure-key-vault-api-permissions.png" alt-text="Azure Key Vault API permissions":::
 
-1. In the [Azure portal](https://portal.azure.com/), <writer needs steps>
+1. In the [Azure portal](https://portal.azure.com/), [writer needs steps]
 
-2. <writer needs step>
+2. [writer needs step]
 
-3. <writer needs step>
+3. [writer needs step]
 
 4. Select **Add permission**.  
 
@@ -111,7 +111,7 @@ In order to allow HMA-App to have access to Exchange on-premises, grant the “O
 
 6. Select **Office 365 Exchange Online**.
 
-   <writer needs image match?>
+   [writer needs image match?]
    :::image type="content" source="media/azure-key-vault-request-api-permissions.png" alt-text="Azure Key Vault request API permissions":::
 
 7. Select **Application permissions**.
