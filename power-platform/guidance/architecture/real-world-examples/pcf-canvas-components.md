@@ -2,33 +2,35 @@
 title: "Building reusable UI in Power Apps using PCF and canvas components  | MicrosoftDocs"
 description: "Power Apps offers two options to create reusable components: low-code canvas components in Power Apps Studio; and the Power Apps Component Framework (PCF), which is a pro-developer way of building reusable controls using HTML, Typescript, and CSS."
 author: slaouist
-manager: spant
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/20/2021
 ms.author: mehdis
-ms.reviewer: 
-search.audienceType: 
-search.app: 
+ms.reviewer: kvivek 
   
 ---
-# Building reusable UI using PCF and canvas components
+# Building reusable UI using Power Apps component framework and canvas apps components
 
-Power Apps offers two options to create reusable components. The first one is canvas components, which is a low-code way of creating reusable controls within Power Apps Studio. The second is the Power Apps Component Framework (PCF), which is a pro-developer way of building reusable controls using HTML, Typescript, and CSS. Canvas components are powerful and can be used to fulfill most UI requirements for your app. They should be considered first as the cost to build and maintain can lower in most cases than PCF.
+Power Apps offers two options to create reusable components:
+- [Canvas apps components](/powerapps/maker/canvas-apps/create-component), which is a low-code way of creating reusable controls within Power Apps Studio. 
+- [Power Apps component framework](/powerapps/developer/component-framework/overview), which is a pro-developer way of building reusable controls using HTML, Typescript, and CSS. 
 
-Here are some examples of canvas components
+Canvas apps components are powerful and can be used to fulfill most UI requirements for your app. They should be considered first as the cost to build and maintain can be lower in most cases than Power Apps component framework.
 
-![Components](./media/Components.png)
+Here are some examples of canvas apps components.
 
-Canvas components can be packaged within Component libraries, which are containers that makes it easy to reuse components across many apps. Component libraries make it easy to search and discover components, publish changes, and notify app makers when new components updates are available.
+![Components](./media/components.png)
+
+Canvas apps components can be packaged within component libraries, which are containers that makes it easy to reuse components across many apps. Component libraries make it easy to search and discover components, publish changes, and notify app makers when new components updates are available.
 
 
 ![Component Library](./media/ComponentLibrary.png)
 
-For more advanced scenarios, PCF offers access to a rich set of framework APIs that expose many capabilities like component lifecycle management, contextual data, and metadata. For scenarios that require access to device features like camera, microphone or advanced animation and transitions, building a PCF component will be the only option. PCF Components can be using in model-driven apps,canvas apps and Power Apps Portals.
+For more advanced scenarios, Power Apps component framework offers access to a rich set of framework APIs that expose many capabilities like component lifecycle management, contextual data, and metadata. For scenarios that require access to device features like camera, microphone, or advanced animation and transitions, building a code component using Power Apps component framework will be the only option. Code components created using Power Apps component framework can be using in canvas apps, model-driven apps, and Power Apps portals.
 
+To see real world use of Power Apps component framework, view this video on how Chevron built a digitally enhanced well planning tool to help with the design of a well that is 35000 feet deep (nearly 7 miles under the earth): [Video: Real World Stories: Global energy companies power digital transformation with Microsoft Power Platform](https://youtu.be/ABcRl-lErIY?t=2050).
 
-To see real world use of PCF, check-out how Chevron built a digitally enhanced well planning tool to help with the design of a well that is 35000 feet deep (, nearly 7 miles under the earth). This digital tool uses the Power Apps Component Framework to enhance the app experience. https://youtu.be/ABcRl-lErIY?t=2050  
+This digital tool uses Power Apps component framework to enhance the app experience.   
 
-![Azure function export](./media/Cheveron.png)
+![Azure function export](./media/Cheveron.png)  
