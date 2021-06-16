@@ -127,43 +127,33 @@ In order to allow HMA-App to have access to Exchange on-premises, grant the “O
 
 Now let’s collect all the information required from the Azure Portal before configuring the email server profile on Dynamics 365: 
 
-- EWS URL: The Exchange WebServices endpoint where the Exchange on-premise is located which must be publicly accessible from Dynamics 365 
-- AAD resource Id: This is the azure resource id for which the HMA app will request access to. It is usually the host part of the EWS endpoint URL 
+- EWS URL: The Exchange WebServices endpoint where the Exchange on-premise is located which must be publicly accessible from Dynamics 365. 
+- AAD resource Id: This is the azure resource id for which the HMA app will request access to. It is usually the host part of the EWS endpoint URL. 
 - TenantId: This is the tenantId of the tenant where the Exchange on-premise is configured with AAD passthrough authentication. 
 - HMA Application Id: App id for the HMA-App. Can be found on the main page for the Application registration of HMA-App 
-- Key Vault Uri: This is uri of the Azure Keyvault used for certificate storage 
-- Key Vault KeyName: This is the certificate name used in Keyvault 
-- KeyVault Application Id: This is the appId of the KV-App used by Dynamics to retrieve the certificate from Keyvault 
-- KeyVault Client Secret: This it the client secret for the KV-App used by Dynamics. 
+- Key Vault Uri: This is uri of the Azure Key Vault used for certificate storage. 
+- Key Vault KeyName: This is the certificate name used in Key Vault. 
+- KeyVault Application Id: This is the appId of the KV-App used by Dynamics to retrieve the certificate from Key Vault.
+- KeyVault Client Secret: This it the client secret for the KV-App used by Dynamics 365. 
 
 ## Dynamics 365 Configuration 
 
-Create a new Exchange OnPremise email server profile using “Exchange Hybrid Modern Auth (HMA) authentication. 
+Create a new Exchange on-premises email server profile using “Exchange Hybrid Modern Auth (HMA)" authentication. 
 
-Note: This feature is not available for Legacy webclient and is only available in the Power Platform Admin center under emailServerProfiles flight in private preview. 
+> [!NOTE]
+> This feature is not available for legacy web client and is only available in the Power Platform admin center under emailServerProfiles in private preview. 
 
-Open Power Platform Admin Center and go to the Email section: 
+1. In the Microsoft Power Platform admin center, select an environment. 
 
-image
+2. Select **Settings** > **Email** > **Server profiles**.  
 
-Open “Server Profiles” 
+3. Select **New server profile**.
 
-Click on “New server profile” 
-
-Fill in the required fields and click Save: 
-
-image
+4. Fill in the required fields, and then select **Save**.  
 
 ## Configure a mailbox 
 
-Now that the email server profile is configured, you can configure a mailbox: 
+Now that the email server profile is configured, you can configure a mailbox. See [Configure mailboxes](connect-exchange-server-on-premises.md#configure-mailboxes).
 
--Associate the mailbox with the email server profile 
-
--Approve the email address 
-
--Run test and enable 
-
--Check the alert wall for alerts. 
 
 
