@@ -123,24 +123,17 @@ In order to allow HMA-App to have access to Exchange on-premises, grant the “O
 
 9. Select **Grant Admin consent**.
 
-image
+:::image type="content" source="media/azure-key-vault-grant-admin-consent.png" alt-text="Grant admin consent":::
 
-Now let’s collect all the information required from the Azure Portal before moving forward and configure the email server profile on Dynamics 365: 
+Now let’s collect all the information required from the Azure Portal before configuring the email server profile on Dynamics 365: 
 
 - EWS URL: The Exchange WebServices endpoint where the Exchange on-premise is located which must be publicly accessible from Dynamics 365 
-
 - AAD resource Id: This is the azure resource id for which the HMA app will request access to. It is usually the host part of the EWS endpoint URL 
-
 - TenantId: This is the tenantId of the tenant where the Exchange on-premise is configured with AAD passthrough authentication. 
-
 - HMA Application Id: App id for the HMA-App. Can be found on the main page for the Application registration of HMA-App 
-
 - Key Vault Uri: This is uri of the Azure Keyvault used for certificate storage 
-
 - Key Vault KeyName: This is the certificate name used in Keyvault 
-
 - KeyVault Application Id: This is the appId of the KV-App used by Dynamics to retrieve the certificate from Keyvault 
-
 - KeyVault Client Secret: This it the client secret for the KV-App used by Dynamics. 
 
 ## Dynamics 365 Configuration 
