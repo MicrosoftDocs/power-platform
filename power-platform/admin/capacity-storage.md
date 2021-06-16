@@ -1,7 +1,7 @@
 ---
 title: "New Microsoft Dataverse storage capacity  | MicrosoftDocs"
 description: Introducing a new storage model for Microsoft Dataverse.
-ms.date: 06/08/2021
+ms.date: 06/16/2021
 ms.reviewer: ""
 ms.service: "power-platform"
 ms.topic: "quickstart"
@@ -297,7 +297,7 @@ Tables ending in “– Analytics” are tables used by one or more Insights app
 **More information:**
 - [Sales Insights ](/dynamics365/ai/sales/help-hub#get-started)
 - [Field Service and resource scheduling optimization (RSO)](/dynamics365/field-service/scheduling-analytics-reports)                                                                                             
-- [Customer Service Hub](/dynamics365/customer-service/customer-service-analytics-insights-csh) 
+- [Customer Service Insights](/dynamics365/customer-service/customer-service-analytics-insights-csh) 
 - [Field Service](/dynamics365/field-service/reports) 
 
 ### See also
