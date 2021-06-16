@@ -1,6 +1,6 @@
 ---
-title: "Building reusable UI in Power Apps using PCF and canvas components  | MicrosoftDocs"
-description: "Power Apps offers two options to create reusable components: low-code canvas components in Power Apps Studio; and the Power Apps Component Framework (PCF), which is a pro-developer way of building reusable controls using HTML, Typescript, and CSS."
+title: "Building reusable UI using Power Apps component framework and canvas apps components  | MicrosoftDocs"
+description: "Power Apps offers two options to create reusable components: low-code canvas components in Power Apps Studio and the Power Apps component framework."
 author: slaouist
 ms.service: power-platform
 ms.component: pa-admin
