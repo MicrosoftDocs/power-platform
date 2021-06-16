@@ -50,7 +50,7 @@ You need a Key Vault location where the certificate can be stored securely. You 
 
 Follow the steps below to configure HMA for Exchange on-premises.
 
-### Make a certificate available on Key Vault
+### 1. Make a certificate available on Key Vault
 
 1. In the [Azure portal](https://portal.azure.com/), open Key Vault and go to the certificates section. 
 
@@ -60,15 +60,15 @@ Follow the steps below to configure HMA for Exchange on-premises.
 
 The certificate name will be used later to reference the certificate. For these steps, the certificate will be named “HMA-Cert”. 
 
-### Create a new App Registration for Key Vault access 
+### 2. Create a new App Registration for Key Vault access 
 
 Create a new app registration in the Azure portal on the tenant where the Key Vault resides. For these steps, the app will be named “KV-App” during the configuration process. See [Quickstart: Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app).
 
-### Add a client secret for KV-App 
+### 3. Add a client secret for KV-App 
 
 The client secret will be used by Dynamics 365 to authenticate the app and retrieve the certificate. See [Add a client secret](/azure/active-directory/develop/quickstart-register-app).
 
-### Add KV-App to the Key Vault access policies 
+### 4. Add KV-App to the Key Vault access policies 
 
 1. In the [Azure portal](https://portal.azure.com/), [writer needs steps]
 
