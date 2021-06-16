@@ -6,7 +6,7 @@ ms.reviewer: paulliew
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/22/2020
+ms.date: 06/16/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -355,7 +355,7 @@ Power Apps licenses always include Power Automate capabilities. In addition to b
 > It is recommended that admins complete this step for a Power Apps user.
 
 ## Step 10: Delete the user's personal data in environments of Dataverse
-Certain Power Apps licenses, including the Power Apps Community Plan, give the ability for users within your organization to create environments of Dataverse and to create and build apps on Dataverse. The Power Apps Community Plan is a free license that allows users to try out Dataverse in an individual environment. See the Power Apps pricing page for which capabilities are included in each Power Apps license.
+Certain Power Apps licenses, including the Power Apps Developer Plan, give the ability for users within your organization to create environments of Dataverse and to create and build apps on Dataverse. The Power Apps Developer Plan is a free license that allows users to try out Dataverse in an individual environment. See the Power Apps pricing page for which capabilities are included in each Power Apps license.
 
 For guidance on how to respond to DSRs for users who use Dataverse, see [Responding to Data Subject Rights (DSR) requests for Dataverse customer data](common-data-service-gdpr-dsr-guide.md).
 
