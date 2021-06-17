@@ -132,7 +132,7 @@ Now let’s collect all the information required from the Azure Portal before co
 - Key Vault Uri: This is URI of the Azure Key Vault used for certificate storage. 
 - Key Vault KeyName: This is the certificate name used in Key Vault. 
 - KeyVault Application Id: This is the appId of the KV-App used by Dynamics to retrieve the certificate from Key Vault.
-- KeyVault Client Secret: This it the client secret for the KV-App used by Dynamics 365. 
+- KeyVault Client Secret: This is the client secret for the KV-App used by Dynamics 365. 
 
 ## Dynamics 365 Configuration 
 
