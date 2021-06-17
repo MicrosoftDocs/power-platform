@@ -19,12 +19,12 @@ Canvas apps components are powerful and can be used to fulfill most UI requireme
 
 Here are some examples of canvas apps components.
 
-![Components](./media/components.png)
+![Components in canvas apps](./media/components.png)
 
 Canvas apps components can be packaged within component libraries, which are containers that makes it easy to reuse components across many apps. Component libraries make it easy to search and discover components, publish changes, and notify app makers when new components updates are available.
 
 
-![Component Library](./media/ComponentLibrary.png)
+![Component library](./media/ComponentLibrary.png)
 
 For more advanced scenarios, Power Apps component framework offers access to a rich set of framework APIs that expose many capabilities like component lifecycle management, contextual data, and metadata. For scenarios that require access to device features like camera, microphone, or advanced animation and transitions, building a code component using Power Apps component framework will be the only option. Code components created using Power Apps component framework can be using in canvas apps, model-driven apps, and Power Apps portals.
 
