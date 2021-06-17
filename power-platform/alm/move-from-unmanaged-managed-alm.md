@@ -47,18 +47,12 @@ Larger, more complex projects require the following tasks. -->
       - Components, such as forms, views, and charts, that are associated with deleted or unused tables and don't contain any data.
 
 2. Create a solution to use to convert components from unmanaged to managed.
-   - In your development environment, create a *single* unmanaged solution that will be used to contain all Dataverse model-driven apps, tables, and dependant components, such as forms, views, fields, charts, and dashboards. Doing this can help reduce the chances of cross-solution layering issues that might occur later when you update or introduce new model-driven apps and customizations. More information: [Create a solution](/maker/data-platform/create-solution)
-   
-      > [!IMPORTANT]
-      > Use full segmentation when adding components to the unmanaged solution. To do this, leave the default setting, which is **No components selected** when adding components to the solution, such as custom tables.
+   - In your development environment, create a *single* unmanaged solution that will be used to contain *all* Dataverse model-driven apps, tables, and dependant components, such as forms, views, fields, charts, and dashboards. Doing this can help reduce the chances of cross-solution layering issues that might occur later when you update or introduce new model-driven apps and customizations. More information: [Create a solution](/maker/data-platform/create-solution)
+      - For unmanaged components, such as custom unmanaged tables, you won't use segmentation but will select **Include all components** when adding those components to the solution.
+      - For managed components, such as managed tables, use full segmentation when adding those components to the solution. To do this, leave the default setting, which is **No components selected** when adding the component to the solution.
+      - For more information about how to use segmentation when adding components to a solution, go to [Create a segmented solution with table assets](/powerapps/maker/data-platform/create-solution#create-a-segmented-solution).
    - If you have canvas apps, flows, portals apps, or plug-ins to convert, you can add them to a separate unmanaged solution now, or at a later time.
    - Remember to use a single publisher for all your solutions.
-<!-- 3. Add unmanaged and managed tables from production into the development environment.
-   - If there are components in the production environment that aren't in the development environment, add the components into an unmanaged solution created in the production environment.
-   - Use the default setting to select no components when exporting custom tables that don't exist in the development environment. More information: [Create a segmented solution](/powerapps/maker/data-platform/create-solution#create-a-segmented-solution)
-   - For most other components, use the **Select components** option during export to select only those components that don't already exist in the development environment. More information: [Use segmented solutions](/power-platform/alm/segmented-solutions-alm)  
-   - Import the unmanaged solution into the development environment. -->
-
 3. Test the solution. 
     - Export the unmanaged solution(s) as *managed*. More information: [Export solutions](/powerapps/maker/data-platform/export-solutions)
     - Delete the unmanaged solution(s) in your test environment. To do this, go to [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), select the test or production environment, select **Solutions**, select the unmanaged solution, and then on the command bar, select **Delete**.
