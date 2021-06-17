@@ -156,19 +156,19 @@
     items: 
     - name: Overview
       href: architecture/real-world-examples/overview.md
-    - name: Using the SharePoint Online Connector with Canvas App
+    - name: Using SharePoint Online connector with canvas app
       href: architecture/real-world-examples/sharepoint-canvas.md
-    - name: Using Microsoft Dataverse with a Power Apps canvas app
+    - name: Using Dataverse with canvas app
       href: architecture/real-world-examples/dataverse-canvas-app.md    
-    - name: Using Azure functions to extend functionality to a canvas app
+    - name: Using Azure functions to extend a canvas app
       href: architecture/real-world-examples/azure-function-canvas.md
-    - name: Using Rest APIs via Custom Connectors with canvas apps
+    - name: Using Rest APIs via custom connectors with canvas app
       href: architecture/real-world-examples/custom-connector-canvas.md
-    - name: Using Business Process Flows, Dataverse, “Codeless” Custom Connectors and Power Automate with a canvas app
+    - name: Using business process flows, Dataverse, custom connectors and Power Automate with canvas app
       href: architecture/real-world-examples/bpf-dataverse-powerautomate.md
-    - name: Using On-Premises SQL with a canvas app
+    - name: Using on-premises SQL Server with canvas app
       href: architecture/real-world-examples/sql-gateway-canvas.md
-    - name: Using Power Apps component framework with canvas apps
+    - name: Using Power Apps component framework with canvas app
       href: architecture/real-world-examples/pcf-canvas-components.md
   - name: Icons
     href: icons.md
