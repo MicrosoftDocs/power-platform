@@ -51,7 +51,7 @@ Larger, more complex projects require the following tasks. -->
    
       > [!IMPORTANT]
       > Use full segmentation when adding components to the unmanaged solution. To do this, leave the default setting, which is **No components selected** when adding components to the solution, such as custom tables.
-   - If you have canvas apps, flows, or portals to convert, add them to a separate unmanaged solution.
+   - If you have canvas apps, flows, portals apps, or plug-ins to convert, you can add them to a separate unmanaged solution now, or at a later time.
    - Remember to use a single publisher for all your solutions.
 <!-- 3. Add unmanaged and managed tables from production into the development environment.
    - If there are components in the production environment that aren't in the development environment, add the components into an unmanaged solution created in the production environment.
