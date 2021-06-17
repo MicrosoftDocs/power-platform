@@ -48,22 +48,29 @@ Larger, more complex projects require the following tasks. -->
 
 2. Create a solution to use to convert components from unmanaged to managed.
    - In your development environment, create a *single* unmanaged solution that will be used to contain all Dataverse model-driven apps, tables, and dependant components, such as forms, views, fields, charts, and dashboards. Doing this can help reduce the chances of cross-solution layering issues that might occur later when you update or introduce new model-driven apps and customizations. More information: [Create a solution](/maker/data-platform/create-solution)
-   - If you have canvas apps or portals to convert, add them to a separate unmanaged solution.
+   
+      > [!IMPORTANT]
+      > Use full segmentation when adding components to the unmanaged solution. To do this, leave the default setting, which is **No components selected** when adding components to the solution, such as custom tables.
+   - If you have canvas apps, flows, or portals to convert, add them to a separate unmanaged solution.
    - Remember to use a single publisher for all your solutions.
-3. Add unmanaged and managed tables from production into the development environment.
+<!-- 3. Add unmanaged and managed tables from production into the development environment.
    - If there are components in the production environment that aren't in the development environment, add the components into an unmanaged solution created in the production environment.
-   - Select **All components** when exporting custom tables that don't exist in the development environment.
-   - For most other components, use the **Select components** option during export to select only those components that don't already exist in the development environment. More information: [Use segmented solutions](/power-platform/alm/segmented-solutions-alm)  <!-- not sure about this step -->
-   - Import the unmanaged solution into the development environment.
+   - Use the default setting to select no components when exporting custom tables that don't exist in the development environment. More information: [Create a segmented solution](/powerapps/maker/data-platform/create-solution#create-a-segmented-solution)
+   - For most other components, use the **Select components** option during export to select only those components that don't already exist in the development environment. More information: [Use segmented solutions](/power-platform/alm/segmented-solutions-alm)  
+   - Import the unmanaged solution into the development environment. -->
 
-4. Export the unmanaged solution(s) as managed. More information: [Export solutions](/powerapps/maker/data-platform/export-solutions)
-5. Delete the unmanaged solution(s) in your test and production environments. To do this, go to [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), select the test or production environment, select **Solutions**, select the unmanaged solution, and then on the command bar, select **Delete**.
-6. Test the managed solution. 
-    - The test environment should be as similar to the production environment as possible. A sandbox copy of the production environment is usually best. More information: [Copy an environment](/power-platform/admin/copy-environment)
+3. Test the solution. 
+    - Export the unmanaged solution(s) as *managed*. More information: [Export solutions](/powerapps/maker/data-platform/export-solutions)
+    - Delete the unmanaged solution(s) in your test environment. To do this, go to [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), select the test or production environment, select **Solutions**, select the unmanaged solution, and then on the command bar, select **Delete**.
+    - Import the managed solution into your test environment.
+       - The test environment should be as similar to the production environment as possible. A sandbox copy of the production environment is usually best. More information: [Copy an environment](/power-platform/admin/copy-environment)
    - Import the managed solution into your test environment. More information: [Import solutions](/powerapps/maker/data-platform/import-update-export-solutions)
    - There are various types of tests you can use to check whether specific functions or features of your app are working correctly. Some of these tests include unit tests, end-to-end, and user acceptance tests (UAT). For canvas apps, consider using [Test Studio](/powerapps/maker/canvas-apps/test-studio).
 
-7. After testing is completed and validated, import the managed solution into your production environment.
+7. Deploy the managed solution to the production environment.
+   - After testing is completed and validated, delete the unmanaged solution(s) in your production environment.
+   - Import the managed solution into your production environment.
+   - If you have canvas apps, flows, or portals apps, import the managed solution(s) following the initial managed solution that contains the model-driven apps, tables, and dependant components.
 
 ## Next steps
 
