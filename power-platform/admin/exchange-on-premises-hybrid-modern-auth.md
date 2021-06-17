@@ -112,14 +112,14 @@ In order to allow HMA-App to have access to Exchange on-premises, grant the “O
 
 5. Select **Application permissions**.
 
-8. Check **full_access_as_app** to allow the app to have full access to all the mailboxes. Then, select **Add permissions**.
+6. Check **full_access_as_app** to allow the app to have full access to all the mailboxes. Then, select **Add permissions**.
 
    :::image type="content" source="media/azure-key-vault-api-permissions-full-access.png" alt-text="Assign full access API permissions to app":::
 
 > [!NOTE]
 > If having an app with full access on all mailboxes doesn’t not align with your business requirements, the Exchange on-premises admin can scope the mailboxes the app can access configuring the *ApplicationImpersonation* role on Exchange. See [Configure impersonation](https://docs.microsoft.com/exchange/client-developer/exchange-web-services/how-to-configure-impersonation).
 
-9. Select **Grant Admin consent**.
+7. Select **Grant Admin consent**.
 
    :::image type="content" source="media/azure-key-vault-api-permissions-grant-admin-access.png" alt-text="Grant admin access to API permission for app":::
 
