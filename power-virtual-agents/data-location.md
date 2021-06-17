@@ -76,7 +76,7 @@ Data will be stored in the United States if a bot author's tenant location isn't
 ## Customer data  
 Microsoft won't transfer customer data outside the selected Azure geographic location (geos) for Power Virtual Agents except when:
 
-- Teams chatbots are createdin Germany, the United Arab Emirates (UAE), or South Africa.
+- Teams chatbots are [created in Germany, the United Arab Emirates (UAE), or South Africa](teams/data-location-teams.md#data-locations).
 
 - The geo is South America.
 
