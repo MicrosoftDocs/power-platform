@@ -47,7 +47,7 @@ Larger, more complex projects require the following tasks. -->
       - Components, such as forms, views, and charts, that are associated with deleted or unused tables and don't contain any data.
 
 2. Create a solution to use to convert components from unmanaged to managed.
-   - In your development environment, create a single unmanaged solution that will be used to contain all Dataverse model-driven apps, tables, and dependant components, such as forms, views, fields, charts, and dashboards. More information: [Create a solution](/maker/data-platform/create-solution)
+   - In your development environment, create a *single* unmanaged solution that will be used to contain all Dataverse model-driven apps, tables, and dependant components, such as forms, views, fields, charts, and dashboards. Doing this can help reduce the chances of cross-solution layering issues that might occur later when you update or introduce new model-driven apps and customizations. More information: [Create a solution](/maker/data-platform/create-solution)
    - If you have canvas apps or portals to convert, add them to a separate unmanaged solution.
    - Remember to use a single publisher for all your solutions.
 3. Add unmanaged and managed tables from production into the development environment.
