@@ -13,7 +13,7 @@ metadata:
   ms.collection: collection
   author: jimholtz
   ms.author: jimholtz
-  ms.date: 06/14/2021
+  ms.date: 06/20/2021
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -52,10 +52,14 @@ landingContent:
   # Card
   - title: Architecture
     linkLists:
-       - linkListType: reference
+       - linkListType: overview
          links:
           - text: Real-world architecture examples
-            url: /power-platform/guidance/architecture/real-world-examples/overview
+            url: ./architecture/real-world-examples/overview.md
+       - linkListType: video
+         links:
+          - text: "Videos: Power Apps and Power Automate Architecture Series"
+            url: https://www.youtube.com/playlist?list=PLi9EhCY4z99W2QOTgbwhFZEjpqc8YZDVH
 
   # Card
   - title: Related resources
