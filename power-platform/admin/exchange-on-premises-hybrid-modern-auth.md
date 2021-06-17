@@ -18,7 +18,7 @@ search.app:
 
 # Preview: Hybrid Modern Authentication (HMA) for Exchange on-premises
 
-Dynamics 365 can now connect to mailboxes hosted on Exchange on-premises using Hybrid Modern Authentication (HMA). Server-side synchronization will authenticate against Azure Active Directory (Azure AD) using a certificate you provide and stored securely in Azure Key Vault. You will need to establish an application registration secured by a client secret to enable Dynamics 365 to access to the certificate in Key Vault. Once Dynamics 365 is able to retrieve the certificate, the certificate will be then used to authenticate as a specific app and access the Exchange on-premise resource. 
+Dynamics 365 can now connect to mailboxes hosted on Exchange on-premises using Hybrid Modern Authentication (HMA). Server-side synchronization will authenticate against Azure Active Directory (Azure AD) using a certificate you provide and stored securely in Azure Key Vault. You will need to establish an application registration secured by a client secret to enable Dynamics 365 to access to the certificate in Key Vault. Once Dynamics 365 is able to retrieve the certificate, the certificate will be then used to authenticate as a specific app and access the Exchange on-premises resource. 
 
 ## Supported Exchange versions
 
@@ -88,7 +88,7 @@ The client secret will be used by Dynamics 365 to authenticate the app and retri
 
 Create a new app registration in the Azure portal in the tenant where Microsoft Exchange is hybridized. 
 
-For these steps, the app will be named “HMA-App” during this configuration process and will represent the actual app which Dynamics 365 will use to interact with Exchange on-premise resources. See [Quickstart: Register an application with the Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
+For these steps, the app will be named “HMA-App” during this configuration process and will represent the actual app which Dynamics 365 will use to interact with Exchange on-premises resources. See [Quickstart: Register an application with the Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
 
 ## Add the certificate for the HMA-App 
 
@@ -125,9 +125,9 @@ In order to allow HMA-App to have access to Exchange on-premises, grant the “O
 
 Now let’s collect all the information required from the Azure Portal before configuring the email server profile on Dynamics 365: 
 
-- EWS URL: The Exchange WebServices endpoint where the Exchange on-premise is located which must be publicly accessible from Dynamics 365. 
+- EWS URL: The Exchange WebServices endpoint where the Exchange on-premises is located which must be publicly accessible from Dynamics 365. 
 - AAD resource Id: This is the Azure resource id for which the HMA app will request access to. It is usually the host part of the EWS endpoint URL. 
-- TenantId: This is the tenantId of the tenant where the Exchange on-premise is configured with AAD passthrough authentication. 
+- TenantId: This is the tenantId of the tenant where the Exchange on-premises is configured with AAD passthrough authentication. 
 - HMA Application Id: App id for the HMA-App. Can be found on the main page for the Application registration of HMA-App 
 - Key Vault Uri: This is URI of the Azure Key Vault used for certificate storage. 
 - Key Vault KeyName: This is the certificate name used in Key Vault. 
