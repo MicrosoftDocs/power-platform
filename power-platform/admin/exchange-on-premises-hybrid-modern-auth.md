@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/15/2021
+ms.date: 06/17/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -32,11 +32,11 @@ To deploy HMA with Dynamics 365, you'll need to meet the following requirements.
 
 Review the following documents:
 
-- [Exchange Server hybrid deployments](/exchange/exchange-hybrid)
-- [Hybrid Configuration wizard](/exchange/hybrid-configuration-wizard)
-- [What is Azure AD Connect?](/azure/active-directory/hybrid/whatis-azure-ad-connect)
-- [Deploy Azure AD Pass-through Authentication](/azure/active-directory/hybrid/how-to-connect-pta-quick-start)
-- [Enabling Hybrid Modern Authentication](/microsoft-365/enterprise/configure-exchange-server-for-hybrid-modern-authentication?view=o365-worldwide)
+- [Exchange Server hybrid deployments](https://docs.microsoft.com/exchange/exchange-hybrid)
+- [Hybrid Configuration wizard](https://docs.microsoft.com/exchange/hybrid-configuration-wizard)
+- [What is Azure AD Connect?](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-azure-ad-connect)
+- [Deploy Azure AD Pass-through Authentication](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-pta-quick-start)
+- [Enabling Hybrid Modern Authentication](https://docs.microsoft.com/microsoft-365/enterprise/configure-exchange-server-for-hybrid-modern-authentication?view=o365-worldwide)
  
 ### A certificate is required for this authentication scheme 
 
@@ -64,11 +64,11 @@ The certificate name will be used later to reference the certificate. For these 
 
 ### 2. Create a new App Registration for Key Vault access 
 
-Create a new app registration in the Azure portal in the tenant where the Key Vault resides. For these steps, the app will be named “KV-App” during the configuration process. See [Quickstart: Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app).
+Create a new app registration in the Azure portal in the tenant where the Key Vault resides. For these steps, the app will be named “KV-App” during the configuration process. See [Quickstart: Register an application with the Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
 
 ### 3. Add a client secret for KV-App 
 
-The client secret will be used by Dynamics 365 to authenticate the app and retrieve the certificate. See [Add a client secret](/azure/active-directory/develop/quickstart-register-app.md#add-a-client-secret). 
+The client secret will be used by Dynamics 365 to authenticate the app and retrieve the certificate. See [Add a client secret](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app#add-a-client-secret). 
 
 ### 4. Add KV-App to the Key Vault access policies 
 
@@ -88,13 +88,13 @@ The client secret will be used by Dynamics 365 to authenticate the app and retri
 
 Create a new app registration in the Azure portal in the tenant where Microsoft Exchange is hybridized. 
 
-For these steps, the app will be named “HMA-App” during this configuration process and will represent the actual app which Dynamics 365 will use to interact with Exchange on-premise resources. See [Quickstart: Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app).
+For these steps, the app will be named “HMA-App” during this configuration process and will represent the actual app which Dynamics 365 will use to interact with Exchange on-premise resources. See [Quickstart: Register an application with the Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
 
 ## Add the certificate for the HMA-App 
 
 This will be used by Dynamics 365 to authenticate the HMA-App. HMA only supports certificate usage to authenticate an app, therefore, a certificate is needed for this authentication scheme. 
 
-Add the HMA-Cert previously provisioned in Key Vault. See [Add a certificate](/azure/active-directory/develop/quickstart-register-app.md#add-a-certificate).
+Add the HMA-Cert previously provisioned in Key Vault. See [Add a certificate](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app#add-a-certificate).
 
 ## Add API permission 
 
@@ -117,7 +117,7 @@ In order to allow HMA-App to have access to Exchange on-premises, grant the “O
    :::image type="content" source="media/azure-key-vault-api-permissions-full-access.png" alt-text="Assign full access API permissions to app":::
 
 > [!NOTE]
-> If having an app with full access on all mailboxes doesn’t not align with your business requirements, the Exchange on-premises admin can scope the mailboxes the app can access configuring the *ApplicationImpersonation* role on Exchange. See [Configure impersonation](/exchange/client-developer/exchange-web-services/how-to-configure-impersonation).
+> If having an app with full access on all mailboxes doesn’t not align with your business requirements, the Exchange on-premises admin can scope the mailboxes the app can access configuring the *ApplicationImpersonation* role on Exchange. See [Configure impersonation](https://docs.microsoft.com/exchange/client-developer/exchange-web-services/how-to-configure-impersonation).
 
 9. Select **Grant Admin consent**.
 
@@ -151,7 +151,7 @@ Create a new Exchange on-premises email server profile using “Exchange Hybrid 
 
 ## Configure a mailbox 
 
-Now that the email server profile is configured, you can configure a mailbox. See [Configure mailboxes](connect-exchange-server-on-premises.md#configure-mailboxes).
+Now that the email server profile is configured, you can configure a mailbox. See [Configure mailboxes](https://docs.microsoft.com/en-us/power-platform/admin/connect-exchange-server-on-premises#configure-mailboxes).
 
 
 
