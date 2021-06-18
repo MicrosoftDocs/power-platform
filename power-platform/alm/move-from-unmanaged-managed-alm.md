@@ -56,8 +56,8 @@ Larger, more complex projects require the following tasks. -->
     1. Export the unmanaged solution(s) from your development environment as *managed*. More information: [Export solutions](/powerapps/maker/data-platform/export-solutions)
     1. Delete the unmanaged solution(s) in your test environment. To do this, go to [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), select the test or production environment, select **Solutions**, select the unmanaged solution, and then on the command bar, select **Delete**. Notice that deleting the unmanaged solution doesn't delete the solution's components.
     1. Import the managed solution into your test environment. More information: [Import solutions](/powerapps/maker/data-platform/import-update-export-solutions)
-    1. There are various types of tests you can use to check whether specific functions or features of your app are working correctly. Some of these tests include unit tests, end-to-end, and user acceptance tests (UAT). For canvas apps, consider using [Test Studio](/powerapps/maker/canvas-apps/test-studio).
-    1. After testing is completed and validated, repeat the steps c - e, but instead of performing the step in your test environment perform the step in your *production* environment.
+    1. There are various types of tests you can use to check whether specific functions or features of your app are working correctly. Some of these tests include unit tests, end-to-end, and user acceptance tests (UAT).
+    1. After testing is completed and validated, repeat steps c-e, but instead of performing the step in your test environment perform the step in your *production* environment.
     1. If you have canvas apps, flows, or portals apps, import the managed solution(s) first into your test and then into your production environments in a similar fashion.
 
 ## Next steps
