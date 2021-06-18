@@ -482,10 +482,7 @@ Ready-to-use business processes available through the Add Ready-to-Use Business
 Processes setting (<strong>Settings \> Data Management \> Add Ready-to-Use Business
 Processes</strong>) are deprecated and will be removed in a future major release. You can find ready-to-use business processes on Microsoft AppSource.
 
-
-
-
-## Silverlight (XAP) web resource is deprecated <a name="BKMK_Silverlight"></a> 
+## Silverlight (XAP) web resource is deprecated <a name="BKMK_Silverlight"></a>
 
 The Silverlight (XAP) web resource is deprecated on the web client, and isn't
 supported on Unified Interface. Instead of Silverlight web resources, you must use custom
