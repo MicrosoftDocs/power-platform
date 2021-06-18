@@ -36,7 +36,7 @@ The Analyze feature is being removed due to Cross-Site Scripts (XSS) vulnerabili
 
 Effective July 2019, Skype integration feature with customer engagement apps has been deprecated and is no longer supported after July 31, 2021. Skype is retired on July 31, 2021; more information: [Skype for Business Online retirement - Microsoft Teams](https://docs.microsoft.com/microsoftteams/skype-for-business-online-retirement)
 
-The presence indication backed by Skype for Business will no longer function. This deprication includes presence indication in hover cards, lookup fields, and lookup columns in grids. There are currently plans to support these locations via Teams. In the meantime, presence indication can be found in Live Person Cards.
+The presence indication backed by Skype for Business will no longer function. This deprecation includes presence indication in hover cards, lookup fields, and lookup columns in grids. There are currently plans to support these locations via Teams. In the meantime, presence indication can be found in Live Person Cards.
 
 You should plan to transition to Microsoft Teams, because the Team’s capabilities go beyond those of Skype for Business Online. Teams is the next chapter in enterprise communication solution from Microsoft. For more details about Teams capabilities, see [The Total Economic Impact™ of Microsoft Teams](https://www.microsoft.com/microsoft-365/blog/wp-content/uploads/sites/2/2019/04/Total-Economic-Impact-Microsoft-Teams.pdf?rtc=1).
 
