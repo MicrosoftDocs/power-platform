@@ -484,9 +484,8 @@ Processes</strong>) are deprecated and will be removed in a future major release
 
 
 
-<a name="BKMK_Silverlight"></a> 
-Silverlight (XAP) web resource is deprecated
---------------------------------------------
+
+## Silverlight (XAP) web resource is deprecated <a name="BKMK_Silverlight"></a> 
 
 The Silverlight (XAP) web resource is deprecated on the web client, and isn't
 supported on Unified Interface. Instead of Silverlight web resources, you must use custom
