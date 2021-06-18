@@ -1,7 +1,7 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps"
 description: Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps 
-ms.date: 05/06/2021
+ms.date: 06/18/2021
 ms.topic: "article"
 ms.assetid: 994cc854-17f6-45d6-bc20-fcf1a3f2d6d6
 searchScope:
@@ -498,6 +498,9 @@ supported on Unified Interface. Instead of Silverlight web resources, you must u
 controls created using the HTML web resources
 with HTML5 to create UI components to visualize and interact with data.
 
+## Power Apps portals
+
+See [Important changes coming in Power Apps portals](/powerapps/maker/portals/important-changes-deprecations)
 
 ## Release plans
 
