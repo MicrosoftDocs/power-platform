@@ -33,7 +33,7 @@ The Analyze feature is being removed because of Cross-Site Scripts (XSS) vulnera
 
 ## Skype integration with customer engagement apps is deprecated
 
-Effective July 2019, Skype integration feature with customer engagement apps has been deprecated and is no longer supported after July 31, 2021. Skype is retired on July 31, 2021; more information: [Skype for Business Online retirement - Microsoft Teams](https://docs.microsoft.com/microsoftteams/skype-for-business-online-retirement)
+Effective July 2019, Skype integration feature with customer engagement apps has been deprecated and is no longer supported after July 31, 2021. Skype is retired on July 31, 2021; more information: [Skype for Business Online retirement - Microsoft Teams](/microsoftteams/skype-for-business-online-retirement)
 
 The presence indication backed by Skype for Business will no longer function. This deprecation includes presence indication in hover cards, lookup fields, and lookup columns in grids. There are currently plans to support these locations via Teams. In the meantime, presence indication can be found in Live Person Cards.
 
@@ -161,7 +161,7 @@ Effective September 24, 2020, the **TimeZoneRule** entity and the **Bias** and *
 
 ## Online management API PowerShell module and REST API are deprecated
 
-Effective August 26, 2020, the online management API PowerShell module, and the underlying [Online Management REST API](/powerapps/developer/common-data-service/online-management-api/overview) are  deprecated. The [online management API PowerShell module](/powershell/powerapps/get-started-onlinemanagementapi?view=pa-ps-latest) will be updated in October  2020 to point to newer underlying APIs and won’t receive further updates. We recommend that you use the Power Apps administration module. More information: [Get started using the Power Apps admin module](/powershell/powerapps/get-started-powerapps-admin?view=pa-ps-latest)
+Effective August 26, 2020, the online management API PowerShell module, and the underlying [Online Management REST API](/powerapps/developer/common-data-service/online-management-api/overview) are  deprecated. The [online management API PowerShell module](/powershell/powerapps/get-started-onlinemanagementapi) will be updated in October  2020 to point to newer underlying APIs and won’t receive further updates. We recommend that you use the Power Apps administration module. More information: [Get started using the Power Apps admin module](/powershell/powerapps/get-started-powerapps-admin)
 
 ## Company News Timeline solution is deprecated
 
