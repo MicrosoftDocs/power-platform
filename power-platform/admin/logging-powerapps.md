@@ -1,12 +1,12 @@
 ---
 title: "Power Apps activity logging| MicrosoftDocs"
 description: Activity logging for Power Apps 
-author: pnghub
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 10/20/2020
-ms.author: gned 
+author: tjvass
+ms.author: tjvass 
 ms.reviewer: jimholtz 
 search.audienceType: 
   - admin
