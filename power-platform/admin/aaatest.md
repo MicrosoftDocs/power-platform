@@ -47,6 +47,19 @@ Use the following input and output parameters for the Search Resource Availabili
 
 ### Inputsettings
 
+
+|Column1  |Column2  |Column3  |Column4  | Column5 |
+|---------|---------|---------|---------|---------|
+|Row1     |         |         |         |         |
+|Row2     |         |         |         |         |
+|Row3     |         |         |         |         |
+|Row4     |         |         |         |         |
+|Row5     |         |         |         |         |
+|Row6     |         |         |         |         |
+|Row7     |         |         |         |         |
+
+
+
 | Name  | Type | Required  | Description  |
 |-------|---|---|---|
 | ConsiderSlotsWithLessThanRequiredDuration | Boolean | No | Specifies if a time slot with less than the required remaining duration should be considered when computing potential time slots. It is false`by default. |
@@ -58,3 +71,5 @@ Use the following input and output parameters for the Search Resource Availabili
 | PagingCookie | String | No | Paging cookie retrieved from previous searching result.|
 | OrganizationUnits |List&#60;Guid&#62; | No | A collection of organization unit IDs. A qualified resource must be a member of one of the specified organization units. |
 | RequiredResources |List&#60;Guid&#62; | No | Only the time slots of the passed list of resources will show in the resulted time slots. |
+
+
