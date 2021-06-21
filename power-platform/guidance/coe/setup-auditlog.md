@@ -177,24 +177,27 @@ A Power Automate flow uses the custom connector, queries the audit log daily, an
 1. Paste in the ID you copied for directory (tenant) ID for the *Tenant ID*.
     ![Set environment variables for the CoE audit log components solution](media/coe-custom3.png "Set environment variables for the CoE audit log components solution")
 
-
 1. Open the **Center of Excellence – Audit Log solution**, and select **Admin \| \[Child\] Admin | Sync Logs**. 
 
 1. Edit the **Run only users** settings.
-
+ree
    ![Child flow - run only users](media/coe49.png "Child flow - run only users")
 
-1. For both connections (the custom connector and Dataverse), change the value to **Use this connection (userPrincipalName\@company.com)**. If there is no connection for any of the connectors, go to **Data** > **Connections**, and create one for the connector.
+1. For all th connections (the custom connector, Dataverse and Office365 Outlook), change the value to **Use this connection (userPrincipalName\@company.com)**. If there is no connection for any of the connectors, go to **Data** > **Connections**, and create one for the connector.
 
    ![Configure run only users](media/coe50.png "Configure run only users")
 
 1. Select **Save**, and then close the **Flow details** tab.
 
-1. (Optional) Edit the Admin | Sync Audit Logs flow to update the time interval at which the log clusters should be retrieved. The default is set to one-day intervals (from the options of Month, Week, Day, Hour, Minute, or Second).
+1. (Optional) Edit the environment variables shown here to gather smaller chunks of time. The default value is to chunk 1 day into 1 hour segments. You will know you need to do this if you receive mail during the run instructing you to do so. 
 
-1. (Optional) Edit the Admin | Sync Audit Logs flow to update the start time and end time during which the logs will be read. The maximum is seven days in the past, and the end time must be after the start time. Use a positive number in the interval field.
+    | Name | Description |
+    |------|---------------|
+    |TimeInterval-Unit | Determines units for chunking the time since start. <br>Must be a value from accepted as an input parameter to [Add to Time](https://docs.microsoft.com/power-automate/desktop-flows/actions-reference/datetime#add). <br>Default value: Hour |
+    |TimeInterval-Interval | Must be a whole number to represent the number of chunks of type unit (above).<br> Default value: 1 (for 1 hour chunks) |
 
-   ![Update the start time and end time during which the logs will be read](media/coe48.png "Update the start time and end time during which the logs will be read")
+- To understand how to set environment variables please see  [Setting Environment Variables in a Managed Environment](limitations.md#Setting-Environment-Variables-in-a-Managed-Environment)
+
 
 1. Back in the solution, turn on both the \[Child\] Admin | Sync Logs flow and the Admin | Sync Audit Logs flow.
 
