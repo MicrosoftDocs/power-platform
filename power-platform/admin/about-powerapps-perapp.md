@@ -82,6 +82,8 @@ Follow these steps to turn off assigning per app plans for users when an app is 
    ![Pass assignment](media/pass-assignment2.png "Pass assignment")
 
 > [!IMPORTANT]
+> If per app plans are not allocated to the environment the app is located, the toggle is disabled. 
+> 
 > Turning off the per app plan is currently available only for canvas apps. Model-driven apps and portals will have this ability in the future.
 
 
