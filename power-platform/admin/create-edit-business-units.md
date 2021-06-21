@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/04/2020
+ms.date: 06/21/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -101,7 +101,7 @@ Make sure you have the System Administrator or System Customizer security role o
   
 2. Select a user name.  
   
-3. On the **More Commands** (**…**) menu, select **Change Business Unit**.  
+3. On the menu bar, select **Change Business Unit**.  
   
 4. In the **Change Business Unit** dialog box, use the **Lookup** button (![Lookup button](media/lookup-4.png)) to select a new business unit, and then select **OK**.  
   
