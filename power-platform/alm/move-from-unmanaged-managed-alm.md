@@ -57,7 +57,7 @@ Larger, more complex projects require the following tasks. -->
     1. Import the solution into your test environment using [Power Platform CLI](/powerapps/developer/data-platform/powerapps-cli#solution) solution import commanding with the *convert-to-managed* parameter or the [DevOps tooling](devops-build-tool-tasks.md#solution-tasks.md) solution import task. Currently, you can't successfully import the solution and convert all components to managed using the Power Apps portal.
     1. There are various types of tests you can use to check whether specific functions or features of your app are working correctly. Some of these tests include unit tests, end-to-end, and user acceptance tests (UAT).
     1. After testing is completed and validated, repeat steps c-e, but instead of performing the step in your test environment perform the step in your *production* environment.
-    1. If you have canvas apps, flows, or portals apps, import the managed solution(s) first into your test and then into your production environments in a similar fashion.
+    1. If you have canvas apps, flows, or portals apps, import the managed solution(s) first into your test and then into your production environments in a similar fashion as described above.
 
 ## Next steps
 
