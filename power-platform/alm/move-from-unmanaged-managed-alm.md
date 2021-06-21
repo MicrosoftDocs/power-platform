@@ -18,7 +18,7 @@ search.app:
 ---
 # Scenario 3: Moving from unmanaged to managed solutions in your organization
 
-This scenario addresses a situation where your production environment contains several unmanaged solutions or your customizations were made in the default solution. The tasks described here show you how to convert all of your unmanaged model-driven app components to managed using a single solution. Later, you may want create additional solutions to develop different layering strategies and dependencies between solutions.
+This scenario addresses a situation where your production environment contains several unmanaged solutions or your customizations were made in the default solution. The tasks described here show you how to convert all of your unmanaged model-driven app components to managed using a single solution that will be used create a single managed layer in your test and production environments. Later, you may want create additional solutions to develop different layering strategies and dependencies between solutions.
 
 With the exception of your development environment, the end result is to only have managed solutions in your environments. More information: [Managed and unmanaged solutions](solution-concepts-alm.md#managed-and-unmanaged-solutions).
 
