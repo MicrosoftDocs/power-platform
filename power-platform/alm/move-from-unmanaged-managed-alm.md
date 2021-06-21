@@ -26,16 +26,6 @@ With the exception of your development environment, the end result is to only ha
 - Separate development and production environments. Additionally, we recommend that you also maintain at least one test environment that's separate from your development and production environments.
 - Use a single publisher for all your solutions across all your environments. More information: [Solution publisher](solution-concepts-alm.md#solution-publisher)
 
-<!-- You can take either of the unmanaged to managed conversion approaches described here.
-
-## Small project conversions
-
-For smaller, less complex projects, you can consolidate all your unmanaged solutions into a single unmanaged solution. Then, export the unmanaged solution as managed to import into your test and production environments. 
-
-## Large or complex project conversions
-
-Larger, more complex projects require the following tasks. -->
-
 ## Convert an unmanaged solution to managed
 
 1. Identify and remove unnecessary tables and components.
@@ -62,23 +52,6 @@ Larger, more complex projects require the following tasks. -->
 ## Next steps
 
 Now that you’ve moved to managed solutions, we recommend that you understand solution and component layering. Moreover, with the exception of your development environments, there shouldn't be any unmanaged customizations or unmanaged solutions in your environments. More information: [Solution layers](solution-layers-alm.md)
-
-<!-- 8. Repeat steps 5-7 for any modular solutions that extend the common components layer.
-
-    -   Create a copy of the original development environment, and remove the unmanaged solutions that hold references to the common components.
-
-    -   Next, import a copy of a managed solution exported from the isolated base solution development environment to convert the unmanaged common
-        components to managed. Doing so prevents the creation of cyclical dependencies and prevents solutions from becoming bloated with duplicate references to components.
-
-    -   Considerations when importing a managed solution to convert unmanaged components to managed: 
-        -   If components are held in unmanaged solutions that still exist in the environment, all references will have to be removed before the managed solution can be imported.
-
-        -   Removing unmanaged solutions causes the loss of the reference container. Without a good understanding of what has been customized, you risk that components become orphaned in the default solution and possibly become hard to track.
-
-    -   Converting solutions to managed in a development environment that's completely unmanaged effectively creates a snapshot of the current
-        behavior. To prune unnecessary components that were added when multiple unmanaged solutions were developed in one environment, you need to remove the unneeded components in an isolated development environment.
-
-        For example, assume the Customer entity is created in an unmanaged solution named *base*, then extended in another unmanaged solution. Any new components added to the Customer entity in the extension solution are automatically added to the *base* solution. This is the expected outcome, because when an entity is created the behavior is to include all assets and entity metadata. -->
 
 ### See also
 
