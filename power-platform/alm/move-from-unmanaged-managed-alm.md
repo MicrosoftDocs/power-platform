@@ -54,7 +54,7 @@ Larger, more complex projects require the following tasks. -->
     1. If you have an existing test environment you can go to the next step. However, we recommend that you make a copy of your production environment to use as the test environment. More information: [Copy an environment](/power-platform/admin/copy-environment)
     1. Export the unmanaged solution(s) from your development environment as *managed*. More information: [Export solutions](/powerapps/maker/data-platform/export-solutions)
     1. If there's an unmanaged solution in your test environment that has the same name as the managed solution you want to import, delete the unmanaged solution record in the test environment. To delete the unmanaged solution record, go to [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), select the test or production environment, select **Solutions**, select the unmanaged solution, and then on the command bar, select **Delete**. Notice that deleting the managed unmanaged solution doesn't delete the solution's unmanaged components.
-    1. Import the solution into your test environment using [Power Platform CLI](/powerapps/developer/data-platform/powerapps-cli#solution) solution import commanding with the *convert-to-managed* parameter or the [DevOps tooling](devops-build-tool-tasks#solution-tasks.md) solution import task. Currently, you can't successfully import the solution and convert all components to managed using the Power Apps portal.
+    1. Import the solution into your test environment using [Power Platform CLI](/powerapps/developer/data-platform/powerapps-cli#solution) solution import commanding with the *convert-to-managed* parameter or the [DevOps tooling](devops-build-tool-tasks.md#solution-tasks.md) solution import task. Currently, you can't successfully import the solution and convert all components to managed using the Power Apps portal.
     1. There are various types of tests you can use to check whether specific functions or features of your app are working correctly. Some of these tests include unit tests, end-to-end, and user acceptance tests (UAT).
     1. After testing is completed and validated, repeat steps c-e, but instead of performing the step in your test environment perform the step in your *production* environment.
     1. If you have canvas apps, flows, or portals apps, import the managed solution(s) first into your test and then into your production environments in a similar fashion.
@@ -80,9 +80,7 @@ Now that you’ve moved to managed solutions, we recommend that you understand s
 
         For example, assume the Customer entity is created in an unmanaged solution named *base*, then extended in another unmanaged solution. Any new components added to the Customer entity in the extension solution are automatically added to the *base* solution. This is the expected outcome, because when an entity is created the behavior is to include all assets and entity metadata. -->
 
-###  See also
-
-[Considerations](alm-considerations.md)
+### See also
 
 [Scenario 4: Supporting team development](team-development-alm.md)
 
