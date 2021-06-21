@@ -7,7 +7,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/18/2021
+ms.date: 06/16/2021
 search.audienceType: 
   - admin
 search.app:
@@ -198,7 +198,7 @@ Administrative operations (copy, backup, restore, and reset) are not supported f
 
 ### How can I retain my data and resources if I don't have a way to convert the trial (standard) environment to a production environment?
 
-You can export your resources and data to another environment if you want to retain them longer than the trial period. We recommend that you create a production environment or an individual environment (with the [Power Apps Community Plan](https://powerapps.microsoft.com/communityplan/)) and export your resources to that environment. 
+You can export your resources and data to another environment if you want to retain them longer than the trial period. We recommend that you create a production environment or an individual environment (with the [Power Apps Developer Plan](https://powerapps.microsoft.com/communityplan/)) and export your resources to that environment. 
 
 Here are some guidelines for exporting resources.
 

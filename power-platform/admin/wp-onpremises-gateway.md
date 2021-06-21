@@ -1,12 +1,13 @@
 ---
 title: "About on-premises gateways  | Microsoft Docs"
 description: About on-premises gateway
-author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 10/22/2020
-ms.author: jimholtz
+author: arthiriyer
+ms.author: arthii
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:

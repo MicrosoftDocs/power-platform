@@ -901,6 +901,8 @@
     href: about-flow-guide.md
   - name: Administer Power BI
     href: about-powerbi-guide.md
+  - name: Administer Power Virtual Agents
+    href: about-power-virtual-agents.md
   - name: Administer customer engagement apps in Dynamics 365    
     items:
     - name: Overview

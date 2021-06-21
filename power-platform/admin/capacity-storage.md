@@ -1,7 +1,7 @@
 ---
 title: "New Microsoft Dataverse storage capacity  | MicrosoftDocs"
 description: Introducing a new storage model for Microsoft Dataverse.
-ms.date: 04/13/2021
+ms.date: 06/16/2021
 ms.reviewer: ""
 ms.service: "power-platform"
 ms.topic: "quickstart"
@@ -158,9 +158,13 @@ We're making changes for what happens when an organization's storage capacity is
 
 Notifications for capacity approaching storage limits will be triggered when any of the three storage capacities (database, file, or log) have less than 15% of space available.  Another warning notification that admin operations could be impacted will be sent when any of the three storage capacities have less than 5% of space available.  The final tier of notification will trigger when the tenant is ‘in overage’ (storage usage exceeds capacity entitlements), which will alert the admin that the operations below will no longer be available until the overage is resolved.
 
--	Create new environment (requires minimum 1GB capacity available)
--	Copy an environment (requires minimum 1GB capacity available)
--	Restore an environment (requires minimum 1GB capacity available)
+- Create a new environment (requires minimum 1GB capacity available)
+- Copy an environment
+- Restore an environment
+- Convert a trial environment to paid (requires minimum 1GB capacity available)
+- Recover an environment (requires minimum 1GB capacity available)
+- Add Dataverse database to an environment
+
 
 These notifications are sent out to tenant admins on a weekly basis. At this time, there is no option for the tenants to opt-out of these notifications or delegate these notifications to someone else. All tenant admins for a tenant will automatically receive these notifications.
 
@@ -293,7 +297,7 @@ Tables ending in “– Analytics” are tables used by one or more Insights app
 **More information:**
 - [Sales Insights ](/dynamics365/ai/sales/help-hub#get-started)
 - [Field Service and resource scheduling optimization (RSO)](/dynamics365/field-service/scheduling-analytics-reports)                                                                                             
-- [Customer Service Hub](/dynamics365/customer-service/customer-service-analytics-insights-csh) 
+- [Customer Service Insights](/dynamics365/customer-service/customer-service-analytics-insights-csh) 
 - [Field Service](/dynamics365/field-service/reports) 
 
 ### See also
