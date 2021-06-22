@@ -6,7 +6,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 06/02/2021
+ms.date: 06/22/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -465,11 +465,11 @@ The governance error message URL and email can be shown independently or togethe
 
 |     #    |     Experience                                                                                                     |     Availability           |
 |----------|--------------------------------------------------------------------------------------------------------------------|----------------------------|
-|     1    |     User launches a Power Apps app that’s not DLP compliant                                                        |     Generally Available    |
-|     2    |     Maker shares a Power Apps canvas app but doesn’t have   share privilege                                        |     Generally Available    |
-|     3    |     Maker shares a Power Apps canvas app with ‘Everyone’ but   doesn’t have privilege to share with ‘Everyone’.    |     Generally Available    |
-|     4    |     Maker saves a Power Apps app that’s not DLP compliant                                                          |     Not available yet.     |
-|     5    |     Maker saves a Flow that’s not DLP compliant                                                                    |     Not available yet.     |
+|     1    |     User launches a Power Apps app that’s not DLP compliant                                                        |     Generally available    |
+|     2    |     Maker shares a Power Apps canvas app but doesn’t have share privilege                                        |     Generally available    |
+|     3    |     Maker shares a Power Apps canvas app with ‘Everyone’ but doesn’t have privilege to share with ‘Everyone’    |     Generally available    |
+|     4    |     Maker saves a Power Apps app that’s not DLP compliant                                                          |     Not yet available     |
+|     5    |     Maker saves a Flow that’s not DLP compliant                                                                    |     Not yet available     |
 
 #### Display governance error message content 
 
