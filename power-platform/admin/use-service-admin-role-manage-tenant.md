@@ -8,7 +8,7 @@ ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/14/2021
+ms.date: 06/21/2021
 search.audienceType: 
   - admin
 search.app:
@@ -22,6 +22,9 @@ search.app:
 To help you administer environments and settings for Microsoft Power Platform, you can assign users to manage at the tenant level without having to assign the more powerful Microsoft 365 global admin privilege.  
 
 There are two Power Platform related service admin roles you can assign to provide a high level of admin management.
+
+> [!NOTE]
+> These ([and other](database-security.md#predefined-security-roles)) admin roles apply to [what you can do in the Power Platform admin center](admin-documentation.md#power-platform-admin-center-capabilities).
 
 ## Dynamics 365 administrator
 
