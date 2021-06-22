@@ -103,7 +103,9 @@ Make sure you have the System Administrator or System Customizer security role o
   
 1. Select an environment and go to **Settings** > **Users + permissions** > **Users**.
   
-2. Select a user name.  
+   For [Unified Interface](about-unified-interface.md), select Settings (![Gear button](../admin/media/selection-rule-gear.png "Gear button")) in the upper-right corner > **Advanced Settings** > **Settings** > **Security** > **Users**.
+
+2. Select the checkbox for a user name.  
   
 3. On the menu bar, select **Change Business Unit**.  
   
