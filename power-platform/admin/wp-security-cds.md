@@ -25,7 +25,7 @@ One of the key features of [Dataverse](/powerapps/maker/common-data-service/data
 
 ## Role-based security
 
-Dataverse uses role-based security to group together a collection of privileges. These security roles can be associated directly to users, or they can be associated with Dataverse teams and business units. Users can then be associated with the team, and therefore all users associated with the team will benefit from the role. A key concept of Dataverse security to understand is all privilege grants are accumulative with the greatest amount of access prevailing. If you gave broad organization level read access to all contact records, you can’t go back and hide a single record.
+Dataverse uses role-based security to group together a collection of privileges. These [security roles](security-roles-privileges.md) can be associated directly to users, or they can be associated with Dataverse teams and business units. Users can then be associated with the team, and therefore all users associated with the team will benefit from the role. A key concept of Dataverse security to understand is all privilege grants are accumulative with the greatest amount of access prevailing. If you gave broad organization level read access to all contact records, you can’t go back and hide a single record.
 
 ## Business units
 
@@ -94,6 +94,7 @@ Security is a complex article and is best accomplished as a joint effort between
 
 ### See also
 [Configure environment security](database-security.md)
+[Security roles and privileges](security-roles-privileges.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
