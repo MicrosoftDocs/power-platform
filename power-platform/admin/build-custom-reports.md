@@ -90,15 +90,15 @@ After the first time you generate a data export, Power Automate generates increm
 
 The main root folder for Power Apps has the following folder structure:
 
--   \\\Applications
+-   \Applications
 
--   \\\ConnectionReference
+-   \ConnectionReference
 
--   \\\Connections
+-   \Connections
 
--   \\\Environments
+-   \Environments
 
--   \\\Usage
+-   \Usage
 
 > [!NOTE] 
 > Data listed in the folders shown above can be viewed through your Azure portal. For information, go to [https://portal.azure.com](https://portal.azure.com/) and navigate to your storage account (Home &gt; Subscriptions &gt; Your Subscription Name &gt; Resource Groups &gt; Your Resource Group &gt; Your Storage Accounts &gt; Storage Account).
