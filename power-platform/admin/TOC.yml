@@ -399,8 +399,8 @@
         - name: Analytics for flows
           href: analytics-flow.md
         - name: Analytics for UI flows
-        
-          href: analytics-ui-flow.md
+
+          href: analytics-ui-flow.md 
  # Comment out reports node
       - name: Reports
         items:
