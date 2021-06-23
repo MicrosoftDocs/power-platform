@@ -404,9 +404,9 @@
  # Comment out reports node
       - name: Reports
         items:
-        - name: Build custom reports Dataverse
+        - name: Prepare Power Apps inventory and usage data
           href: build-custom-reports.md
-        - name: Export Power Apps inventory and usage data for consumption and displaying data insights
+        - name: Export Power Apps inventory and usage data
           href: self-service-analytics.md
     # Comment out lines down to storage before publishing
       - name: "Preview: Tenant-level analytics" 
