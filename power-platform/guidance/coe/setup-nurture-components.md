@@ -175,7 +175,7 @@ Environment variables are used to store application and flow configuration data.
 All flows in this solution depend on all environment variables' being configured.
 
 >[!TIP]
->To view all environment variables in the environment, open the default solution for the environment, and set the **Type** filter to **Environment variable**.
+>Learn how to update environment variables for Production and Dataverse for Teams environments: [Update Environment Variables](setup-core-components.md.#update-environment-variables).
 
 1. Select **See Environment Variables** to set the current values as described in the following table.
 

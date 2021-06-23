@@ -221,14 +221,14 @@ The following values are expected for these settings:
 
 **To configure CoE settings**
 
-1. For Option 1 (Core Components installed in Production environment)
+1. If you have installed the solution in a Production environment:
     1. Go to [make.powerapps.com](https://make.powerapps.com/), select **Apps**, and then open the **Power Platform Admin View** model-driven app in Play mode.
     1. On the left pane, select **Configure**.
     1. On the **Configure view** screen, select **+ New**.
     1. Provide values as listed in the above table.
     1. Select **Save**.
 
-1. For Option 2 (Core Components installed in Dataverse for Teams environment)
+1. If you have installed the solution in a Dataverse for Teams environment:
     1. Open to the Power Apps app in Teams, select **Build**, and select the Team you have added the solution to.
     1. Select **Installed apps**.
     1. Select **See all** for Center of Excellence - Core Components.
@@ -275,10 +275,20 @@ After the sync flows have finished running (depending on the number of environme
 
 Environment variables are used to store application and flow configuration data with data specific to your organization or environment.
 
-1. Go to [flow.microsoft.com](<https://flow.microsoft.com>).
-1. On the left pane, select **Solutions**.
-1. Select the **Default Solution**, and change the filter to show **Environment Variables**.
-1. Select a variable that you want to update, and then configure its **Current Value**.
+1. If you have installed the solution in a Production environment:
+   1. Go to [flow.microsoft.com](<https://flow.microsoft.com>).
+   1. On the left pane, select **Solutions**.
+   1. Select the **Default Solution**, and change the filter to show **Environment Variables**.
+   1. Select a variable that you want to update, and then configure its **Current Value**.
+
+1. If you have installed the solution in a Dataverse for Teams environment:
+   1. Go to [flow.microsoft.com](<https://flow.microsoft.com>).
+   1. On the left pane, select **Solutions**.
+   1. Select the **Common Data Service Default Solution**.
+   1. Select **+ Add > Environment Variables**.
+   1. Select the existing Environment Variables from the managed solution that you want to update.
+   1. Now, change the filter to show **Environment Variables**.
+   1. Select a variable that you want to update, and then configure its **Current Value**.
 
     Update one of the following variables for the core components solution, and then select **Save**.
 
