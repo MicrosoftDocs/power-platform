@@ -21,6 +21,9 @@ search.app:
 
 Multiple governance components are provided in the Center of Excellence (CoE) Starter Kit; each will require some configuration to install. The installation instructions in this article have been segmented based on the set of components that should be grouped and installed together, and dependencies on other segments are outlined in each section.
 
+> [!IMPORTANT]
+> You cannot use the archival solution if you have secured the environment with security groups. Please see  [Security groups and approvals](limitations.md#Security-groups-and-approvals)
+
 ## Initialize flow approval tables in your environment
 
 The archive approval flows use the built-in Approval actions of Power Automate.
