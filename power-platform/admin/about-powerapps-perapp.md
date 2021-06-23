@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/21/2021
+ms.date: 06/22/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -124,11 +124,7 @@ The per app license gives a user access to two Power Apps and one portal for a s
 
 ### Reducing per app capacity to zero
 If you allocate per app capacity to an environment and later reduce per app capacity to zero, users that were added to Dataverse while per app capacity was greater than zero will **not** get disabled in Dataverse. However, these users won’t be able to launch apps since there is no per app capacity allocated to the environment. Admins should remove the role of the user they do not intend to access the platform.
-
-### Disabled user account
-
-If a user account is disabled in an environment, adding per app capacity, sharing the app with the user, and the user launching the app will **not** enable the user. We are working to address this issue. 
-
+ 
 ### Trial prompt while making app with premium connection
 Users in organizations with only Power Apps per app plan may see a trial prompt when creating apps that use premium connections; for example, an app connects to SQL using a gateway. The app creator is entitled to add premium connections to their app. However, the app creator must sign up for the trial until the trial prompt is removed in the premium connection experience. 
 
@@ -167,5 +163,7 @@ This is an artifact of previous, but no longer required, licenses being assigned
 **Mitigation steps**:
 The maker should sign up for the trial to proceed with creating the connection that uses a gateway. 
 
+### Are users with a disabled account in an environment able to use per app plan? 
+Yes. If a user account is disabled in an environment, adding per app capacity, sharing the app with the user, and the user launching the app will enable the user. 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

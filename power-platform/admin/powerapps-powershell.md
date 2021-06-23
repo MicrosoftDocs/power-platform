@@ -6,7 +6,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 06/02/2021
+ms.date: 06/22/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -459,7 +459,17 @@ New-PowerAppDlpErrorSettings -TenantId 'TenantId' -ErrorSettings @{
 } 
 ``` 
 
-The governance error message URL and email can be shown independently or together. Each value’s presence in the governance error message is controlled by the ‘enabled’ field.  
+The governance error message URL and email can be shown independently or together. Each value’s presence in the governance error message is controlled by the ‘enabled’ field. 
+
+##### This governance error message content appears in the following experiences.
+
+|     #    |     Experience                                                                                                     |     Availability           |
+|----------|--------------------------------------------------------------------------------------------------------------------|----------------------------|
+|     1    |     User launches a Power Apps app that’s not DLP compliant                                                        |     Generally available    |
+|     2    |     Maker shares a Power Apps canvas app but doesn’t have share privilege                                        |     Generally available    |
+|     3    |     Maker shares a Power Apps canvas app with ‘Everyone’ but doesn’t have privilege to share with ‘Everyone’    |     Generally available    |
+|     4    |     Maker saves a Power Apps app that’s not DLP compliant                                                          |     Not yet available     |
+|     5    |     Maker saves a Flow that’s not DLP compliant                                                                    |     Not yet available     |
 
 #### Display governance error message content 
 
