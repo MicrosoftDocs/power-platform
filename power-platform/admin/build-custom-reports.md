@@ -37,13 +37,13 @@ Once data is available in your data lake, you can choose to move data to any rep
 
 You can store your dataflows in your organization's Azure Data Lake Storage Gen2 account. Before you can export data to a data lake service, you need to create an Azure storage account. Learn more: [Create a storage](/azure/storage/common/storage-account-create?tabs=azure-portal) account.
 
-1.  Use the ARM Template located at this [GitHub location](https://gist.github.com/dazfuller/0740f1640225dc8ea0eb29a8e6f88a6a) in your automation script.
+1. Use the ARM Template located at this [GitHub location](https://gist.github.com/dazfuller/0740f1640225dc8ea0eb29a8e6f88a6a) in your automation script.
 
-2.  Set your storage as Storagev2 (general purpose v2).
+2. Set your storage as Storagev2 (general purpose v2).
 
-3.  The storage account must have the **Hierarchical Name Space** feature enabled.
+3. The storage account must have the **Hierarchical Name Space** feature enabled.
 
-4.  The admin setting up the data export option in the [Power Platform Admin Center](https://aka.ms/ppac) (PPAC) must be granted an *Owner role* for the resources and have a subscription in a storage account.
+4. The admin setting up the data export option in the [Power Platform Admin Center](https://aka.ms/ppac) (PPAC) must be granted an *Owner role* for the resources and have a subscription in a storage account.
 
 For more information, see [Configuring dataflow storage to use Azure Data Lake Gen 2](/power-bi/transform-model/dataflows/dataflows-azure-data-lake-storage-integration).
 
@@ -54,25 +54,24 @@ For more information, see [Configuring dataflow storage to use Azure Data Lake 
 
 You can also view data using the Azure portal.
 
-1.  Go to [https://portal.azure.com](https://portal.azure.com/).
+1. Go to [https://portal.azure.com](https://portal.azure.com/).
 
-2.  Navigate to your storage account by going to Home &gt; Subscriptions &gt; Your Subscription Name &gt; Resource Groups &gt; Your Resource Group &gt; Your Storage Accounts &gt; Storage Account.
+2. Navigate to your storage account by going to Home &gt; Subscriptions &gt; Your Subscription Name &gt; Resource Groups &gt; Your Resource Group &gt; Your Storage Accounts &gt; Storage Account.
 
 ### Provision using Azure Data Lake Gen2
 
 To provision using a Azure Data Lake Gen2 storage location:
 
-1.  In the [Azure portal(https://portal.azure.com), select Storage accounts &gt; Access Control (IAM).
+1. In the [Azure portal(https://portal.azure.com), select Storage accounts &gt; Access Control (IAM).
 
-2.  Select the **Role Assignments** tab.
+2. Select the **Role Assignments** tab.
 
-3.  Search for "Power Platform Data Analytics".
+3. Search for "Power Platform Data Analytics".
 
-4.  Then you should see:
+4. Then you should see:
 
--   A new **Power Platform Data Analytics** service principal (app) that is created in Azure AD.
-
--   The principal assigned as the **Storage Blob Data Contributor**, who now should have access to your Azure Data Lake Gen 2 storage account.
+   - A new **Power Platform Data Analytics** service principal (app) that is created in Azure AD.
+   - The principal assigned as the **Storage Blob Data Contributor**, who now should have access to your Azure Data Lake Gen 2 storage account.
 
 ## Structure of data output
 
@@ -80,9 +79,8 @@ When you export Power Apps and usage data to your Azure Data Lake storage, self-
 
 The data export file includes:  
 
--   a full inventory for all apps, connectors and associated metadata that exist in the tenant
-
--   usage data comprised of data starting from the time that the export starts
+- a full inventory for all apps, connectors and associated metadata that exist in the tenant
+- usage data comprised of data starting from the time that the export starts
 
 After the first time you generate a data export, Power Automate generates incremental daily updates. Each daily update includes details of all new and existing apps, including connector information. The data export contains the Azure Active Directory (Azure AD) *principal object id (userid)*. Optionally, you can further leverage Azure AD to retrieve actual usernames and business units, such as marketing, sales, finance, and so on.
 
@@ -90,15 +88,11 @@ After the first time you generate a data export, Power Automate generates increm
 
 The main root folder for Power Apps has the following folder structure:
 
--   \Applications
-
--   \ConnectionReference
-
--   \Connections
-
--   \Environments
-
--   \Usage
+- \Applications
+- \ConnectionReference
+- \Connections
+- \Environments
+- \Usage
 
 > [!NOTE] 
 > Data listed in the folders shown above can be viewed through your Azure portal. For information, go to [https://portal.azure.com](https://portal.azure.com/) and navigate to your storage account (Home &gt; Subscriptions &gt; Your Subscription Name &gt; Resource Groups &gt; Your Resource Group &gt; Your Storage Accounts &gt; Storage Account).
@@ -113,11 +107,11 @@ Some organizations need to configure longer durations for data exports. For exam
 
 Follow these steps to build a Power BI dashboard:
 
-1.  Create a [Power BI data flow](/power-bi/transform-model/service-dataflows-create-usee).  
+1. Create a [Power BI data flow](/power-bi/transform-model/service-dataflows-create-usee).  
 
-2.  Connect to [Azure Data Lake Gen2 for dataflows](/power-bi/transform-model/service-dataflows-connect-azure-data-lake-storage-gen2).
+2. Connect to [Azure Data Lake Gen2 for dataflows](/power-bi/transform-model/service-dataflows-connect-azure-data-lake-storage-gen2).
 
-3.  Create a new [dashboard](/power-bi/transform-model/desktop-connect-dataflows).
+3. Create a new [dashboard](/power-bi/transform-model/desktop-connect-dataflows).
 
 ## Configuration options
 
@@ -127,7 +121,7 @@ After the admin has been granted these permissions, they should be able to set u
 
 ### Delete the data connection set up for data export
 
-To delete an existing connection that has been set up for data export to your data lake, use the [Power Platform Admin Center](https://aka.ms/ppac) (PPAC). Once you delete a connection, you can configure a new one using the PPAC.
+To delete an existing connection that has been set up for data export to your data lake, use the [Power Platform Admin Center](https://aka.ms/ppac). Once you delete a connection, you can configure a new one using the Power Platform admin center.
 
 > [!NOTE]
 > You can't edit an existing connection. Instead, you must delete it first and then set up a new connection.
@@ -152,29 +146,29 @@ The following tables detail the schema definitions of the data. Metadata are con
 | Description             | Longtext           | App description (not avail currently)         |
 | tenantId                | guid               | Customer TenantId                             |
 | Environmentid           | Longtext           | Environment ID                                |
-| Type                    | longtext           | Powerapp                                      |
-| Subtype                 | longtext           | Canvas \| Model \| Pages                      |
+| Type                    | Longtext           | Power App                                      |
+| Subtype                 | Longtext           | Canvas \| Model \| Pages                      |
 | DocumentVersion         | DateTime           | DateTimestamp is used as app version          |
 | Uri                     | Longtext           | App Uri                                       |
 | Lifecyclestate          | Longtext           | Draft \| Published                            |
 | DocumentUri             | Longtext           | App Information Uri                           |
 | IconUri                 | Longtext           | App Icon Uri                                  |
 | Owner                   | Longtext           | Name of the App owner                         |
-| createdPrincipalId      | Guid               | Azure AD Object id of App creator principal        |
+| createdPrincipalId      | Guid               | Azure AD Object ID of App creator principal        |
 | CreatedTime             | Datetime           | Date app was created                          |
-| lastModifiedPrincipalId | Guid               | Azure AD object id of last modified user           |
+| lastModifiedPrincipalId | Guid               | Azure AD object ID of last modified user           |
 | lastModifiedTime        | Datetime           | Datetime of the app was last updated          |
-| lastenabledprincipalid  | Guid               | Azure AD object id of last published user          |
+| lastenabledprincipalid  | Guid               | Azure AD object ID of last published user          |
 | lastEnabledTime         | Datetime           | Datetime of the app was last published        |
 | DeletedTime             | Datetime           | Date the app was last deleted                 |
-| Deletedprincipalid      | Longtext           | Azure AD object id of who deleted the app          |
+| Deletedprincipalid      | Longtext           | Azure AD object ID of who deleted the app          |
 | sharedUsers             | Int                | Number of users the app is shared with        |
 | sharedGroups            | Int                | Number of groups the app is shared with       |
 | Solution                | Longtext           | Solution Id the app is belongs to             |
 | Creationtype            | Longtext           | Generated \| Scratch development              |
-| embeddingHost           | Longtext           | Teams \| Powerapps \| power bi                |
+| embeddingHost           | Longtext           | Teams \| Power Apps \| Power BI                |
 | Settings                | Longtext           | Reserved                                      |
-| customExtensions        | Longtext           | reserved                                      |
+| customExtensions        | Longtext           | Reserved                                      |
 
 ### Connection Reference 
 
@@ -182,10 +176,10 @@ The following tables detail the schema definitions of the data. Metadata are con
 |-------------------------|-------------------------|-------------------------|
 | resourceId | Guid  | Unique App id (Can be used to join with Usage table) |
 | Display name | Longtext | User entered description Name – example Office 365 Outlook |
-| connectionrefId | Guid | Unique id - GUID for connection id |
+| connectionrefId | Guid | Unique ID - GUID for connection ID |
 | Environmentid | Longtext | Environment Id |
 | Tier | Longtext | Premium - Standard |
-| Type | Longtext | Connection Type</br>Example: Sql - Office 365 - Azure |
+| Type | Longtext | Connection Type</br>Example: SQL - Office 365 - Azure |
 
 
 ### Connections 
@@ -198,10 +192,10 @@ The following tables detail the schema definitions of the data. Metadata are con
 | Environmentid      | Longtext           | Environment Id                                             |
 | Displayname        | Longtext           | Uri of the connection                                      |
 | isCustomApI        | Longtext           | Yes \| No                                                  |
-| createdPrincipalId | Guid               | Azure AD Object id of App creator principal                     |
+| createdPrincipalId | Guid               | Azure AD Object ID of App creator principal                     |
 | CreatedTime        | Datetime           | Date app was created                                       |
 | Swaggerurl         | Longtext           | Swagger url for custom api                                 |
-| tenantId           | guid               | Customer TenantId                                          |
+| tenantId           | Guid               | Customer TenantId                                          |
 
 ### Environments 
 
@@ -209,32 +203,32 @@ The following tables detail the schema definitions of the data. Metadata are con
 |-------------------------|--------------------|--------------------------------------------------------------|
 | Environmentid           | Longtext           | Environment ID                                               |
 | name                    | Longtext           | Environment Name                                             |
-| Purpose                 | Longtext           | Intended details the environment container is created for..  |
-| tenantGuid              | guid               | Customer TenantId                                            |
+| Purpose                 | Longtext           | Intended details the environment container is created for  |
+| tenantGuid              | Guid               | Customer TenantId                                            |
 | Environmentstate        | Longtext           | Enabled \| Disabled                                          |
-| environmenttype         | longtext           | Sandbox \| Production \| trial \| teams                      |
-| Securitygroup           | longtext           | Owner Security group Id                                      |
+| environmenttype         | Longtext           | Sandbox \| Production \| trial \| teams                      |
+| Securitygroup           | Longtext           | Owner Security group Id                                      |
 | Environmentregion       | Longtext           | Environment Geo location                                     |
 | EnvironmentUrl          | Longtext           | Environment Url                                              |
 | isDefault               | Longtext           | Boolean value to indicate this environment is default or not |
 | CdsInstanceURL          | Longtext           | CDS environment Uri                                          |
-| CdsInstanceId           | Guid               | Cds Instance Identifier                                      |
-| createdPrincipalId      | Guid               | Azure AD Object id of App creator principal                       |
+| CdsInstanceId           | Guid               | CDS Instance Identifier                                      |
+| createdPrincipalId      | Guid               | Azure AD Object ID of App creator principal                       |
 | CreatedTime             | Datetime           | Date app was created                                         |
-| lastModifiedPrincipalId | Guid               | Azure AD object id of last modified user                          |
+| lastModifiedPrincipalId | Guid               | Azure AD object ID of last modified user                          |
 | lastModifiedTime        | Datetime           | Datetime of the app was last updated                         |
 | DeletedTime             | Datetime           | Date the app was last deleted                                |
-| Deletedprincipalid      | Longtext           | Azure AD object id of who deleted the app                         |
+| Deletedprincipalid      | Longtext           | Azure AD object ID of who deleted the app                         |
 
 ### Usage
 
 | **Property Name**  | **Property Type** |**Description**                                                |
 |--------------------|--------------------|--------------------------------------------------------------|
-| AppId              | guid               | Unique appid (Can be used to join tables                     |
-| environmentId      | guid               | Environment identifier                                       |
-| tenantid           | guid               | Customer TenantId                                            |
-| ObjectID           | guid               | Azure Active Directory User Object ID                        |
-| SessionId          | guid               | Session id GUID                                              |
+| AppId              | Guid              | Unique appid (Can be used to join tables)                     |
+| environmentId      | Guid              | Environment identifier                                       |
+| tenantid           | Guid               | Customer TenantId                                            |
+| ObjectID           | Guid              | Azure Active Directory User Object ID                        |
+| SessionId          | Guid              | Session ID GUID                                              |
 | timeaccessed       | Datetime           | Time user opened or accessed the app                         |
 | Country            | Longtext           | The country from where app is launched; is filter            |
 | platform           | Longtext           | Platform/OS from which the app is launched*                  |
