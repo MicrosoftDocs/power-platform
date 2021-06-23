@@ -399,7 +399,15 @@
         - name: Analytics for flows
           href: analytics-flow.md
         - name: Analytics for UI flows
+        
           href: analytics-ui-flow.md
+ # Comment out reports node
+      - name: Reports
+        items:
+        - name: Build custom reports Dataverse
+          href: build-custom-reports.md
+        - name: Export Power Apps inventory and usage data for consumption and displaying data insights
+          href: self-service-analytics.md
     # Comment out lines down to storage before publishing
       - name: "Preview: Tenant-level analytics" 
         href: tenant-level-analytics.md
