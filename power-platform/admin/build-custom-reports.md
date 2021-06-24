@@ -1,5 +1,5 @@
 ---
-title: Prepare Power Apps inventory and usage data for consumption and displaying data insights
+title: "Preview: Prepare Power Apps inventory and usage data for consumption and displaying data insights"
 description: Use Power Apps exported data with other line of business (LOB) scenarios and display data insights at tenant and environment levels across business units.
 author: jimholtz
 ms.service: power-platform
@@ -15,7 +15,9 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Prepare Power Apps inventory and usage data for consumption and displaying data insights
+# Preview: Creating custom dashboards using Power Apps inventory and usage data
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 This topic discusses how you can use Power Apps exported data with other line of business (LOB) scenarios and display data insights at tenant and environment levels across business units. For example, you can use exported Power Apps inventory and usage data for your existing enterprise dashboards and other custom solutions.
 
@@ -34,7 +36,7 @@ Need intro for this section.
 Exported data intended for use with Power BI is stored internally by default. When using Power BI to view exported data, make sure you select the same location for the data lake [storage account](/power-bi/transform-model/dataflows/dataflows-azure-data-lake-storage-integration) as your Power BI tenant. If you need to find the location of your Power BI tenant, see [Where is my Power BI tenant located](/power-bi/admin/service-admin-where-is-my-tenant-located)?
 
 Once data is available in your data lake, you can choose to move data to any reporting store; for example, a SQL data warehouse. For this you will need to build custom Power BI reports. You can also choose to build [Power BI reports off the Azure Data Lake](/power-bi/transform-model/service-dataflows-azure-data-lake-integration).
-
+<!-- 
 ### View data using Azure Data Lake Gen 2  
 
 You can store your dataflows in your organization's Azure Data Lake Storage Gen2 account. Before you can export data to a data lake service, you need to create an Azure storage account. Learn more: [Create a storage](/azure/storage/common/storage-account-create?tabs=azure-portal) account.
@@ -51,7 +53,7 @@ For more information, see [Configuring dataflow storage to use Azure Data Lake 
 
 > [!NOTE]
 > To view data in your own storage data lake, you first need to download the [Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer).
-
+-->
 ### View data in the Azure portal  
 
 You can also view data using the Azure portal.
@@ -59,7 +61,7 @@ You can also view data using the Azure portal.
 1. Go to [https://portal.azure.com](https://portal.azure.com/).
 
 2. Navigate to your storage account by going to Home &gt; Subscriptions &gt; Your Subscription Name &gt; Resource Groups &gt; Your Resource Group &gt; Your Storage Accounts &gt; Storage Account.
-
+<!--
 ### Provision using Azure Data Lake Gen2
 
 To provision using a Azure Data Lake Gen2 storage location:
@@ -74,6 +76,10 @@ To provision using a Azure Data Lake Gen2 storage location:
 
    - A new **Power Platform Data Analytics** service principal (app) that is created in Azure AD.
    - The principal assigned as the **Storage Blob Data Contributor**, who now should have access to your Azure Data Lake Gen 2 storage account.
+-->
+
+> [!NOTE]
+> To view data in your own storage data lake, you first need to download the [Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer).
 
 ## Structure of data output
 
@@ -98,7 +104,7 @@ The main root folder for Power Apps has the following folder structure:
 
 > [!NOTE] 
 > Data listed in the folders shown above can be viewed through your Azure portal. For information, go to [https://portal.azure.com](https://portal.azure.com/) and navigate to your storage account (Home &gt; Subscriptions &gt; Your Subscription Name &gt; Resource Groups &gt; Your Resource Group &gt; Your Storage Accounts &gt; Storage Account).
-
+<!--
 **Data export options**
 
 This section discusses options for establishing your organization's custom export requirements at the tenant and individual business unit level. After you set up the initial data export, data will continue to be exported to your tenant's data lake every 24 hours.
@@ -134,10 +140,11 @@ When configuring your firewall, we recommend that you select the **Isolate this
 
 > [!NOTE]
 > Microsoft plans to make this data export service part of Microsoft Trusted principals list over the course of maturing the data export process. With Dynamic IP allocation model, IP range restrictions are not an option for firewall setups.
-
+-->
 ## Schema definition tables
 
 The following tables detail the schema definitions of the data. Metadata are considered as inventory data.
+
 
 ### Apps 
 
@@ -241,6 +248,30 @@ The following tables detail the schema definitions of the data. Metadata are con
 
 > [!NOTE]
 > *Generally well known platform OS with latest versions should contain data, but in some cases the this data may not be available and is not always guaranteed. 
+
+## FAQ
+
+### After setup, what is provisioned in my Azure Data Lake Gen2?
+
+Using the [Azure portal](https://portal.azure.com), select **Storage accounts** > **Access Control(IAM)** > select **Role Assignments**
+tab and then search for “Power Platform Data Analytics”. You will see: 
+
+1. A new “Power Platform Data Analytics” service principal (app) is created in Azure AD.
+2. This principal has been assigned the “Storage Blob Data Contributor” access to your Azure Data Lake storage account.
+
+### What setting should I choose for the firewall configuration?
+
+The recommendation for this preview is to use the “Isolate this storage” option. We plan to make our service principal as part of Microsoft Trusted principals list over the course of maturing our data export process. However, this is not currently supported in the feature preview. With Dynamic IP allocation model, IP range restrictions are not an option for firewall setups.
+
+### Is the data model in a standard format?
+
+The data mode uses the extensible CDM (Common Data Model) schema to describe the entities in the data lake. This will allow easier consumption by different products across the Power Platform including Power BI and other systems like SAP, Adobe, etc.
+
+## What is the structure of the containers and folders inside the data lake?
+
+- The main root folder is in the yyyy-mm-dd date format – example 2020-02-28.
+- The root folder contains 2 folders named - Metadata and KPI.  Metadata contains the inventory data in a list of files, one for each region.
+- The KPI folder contains the usage data.
 
 ### See also
 [Create a storage account](/azure/storage/common/storage-account-create) <br />

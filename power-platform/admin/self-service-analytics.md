@@ -1,5 +1,5 @@
 ---
-title: Set up Power Platform self-service analytics to export Power Apps inventory and usage data
+title: "Preview: Set up Power Platform self-service analytics to export Power Apps inventory and usage data"
 description: Export Power Automate canvas apps inventory and usage data to use with your organization's line of business (LOB) scenarios.
 author: jimholtz
 ms.service: power-platform
@@ -16,7 +16,9 @@ search.app:
   - Flow
 ---
 
-# Set up Power Platform self-service analytics to export Power Apps inventory and usage data
+# Preview: Set up Power Platform self-service analytics to export Power Apps inventory and usage data
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Power Platform self-service analytics enables you to export Power Apps inventory and usage data to use with your organization's line of business (LOB) scenarios. You can then use the exported data to create [Power BI data flow](/power-bi/transform-model/dataflows/dataflows-azure-data-lake-storage-integration) that access [Azure Data Lake Gen2 storage locations](/power-bi/transform-model/dataflows/dataflows-azure-data-lake-storage-integration). You can also use the exported data to build custom reports as part of your existing enterprise dashboards.
 
