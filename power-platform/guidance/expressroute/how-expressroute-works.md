@@ -187,4 +187,4 @@ Microsoft network rather than via the public Internet.
 ![Network diagram showing that there are no direct link between Azure IaaS and Power Platform services. Within same data center, these traffic would route normally.](media/no-direct-link.png)
 
 > [!div class="nextstepaction"]
-> [Next step: Things to consider prior to using ExpressRoute](things-to-consider.md)
+> [Next step: Things to consider before using ExpressRoute](things-to-consider.md)
