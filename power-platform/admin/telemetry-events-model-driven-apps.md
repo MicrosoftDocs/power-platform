@@ -1,5 +1,5 @@
 ---
-title: Telemetry events for model-driven apps | Microsoft Docs
+title: "Preview: Telemetry events for model-driven apps | Microsoft Docs"
 description: About telemetry events for model-driven apps
 services: powerapps
 author: jimholtz
@@ -16,7 +16,9 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Telemetry events for model-driven apps 
+# Preview: Telemetry events for model-driven apps 
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 ## What data is available for model-driven apps?
 

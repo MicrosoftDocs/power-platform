@@ -399,29 +399,28 @@
         - name: Analytics for flows
           href: analytics-flow.md
         - name: Analytics for UI flows
-
           href: analytics-ui-flow.md 
  # Comment out reports node
       - name: Reports
         items:
-        - name: Prepare Power Apps inventory and usage data
+        - name: "Preview: Prepare Power Apps inventory and usage data"
           href: build-custom-reports.md
-        - name: Export Power Apps inventory and usage data
+        - name: "Preview: Export Power Apps inventory and usage data"
           href: self-service-analytics.md
     # Comment out lines down to storage before publishing
       - name: "Preview: Tenant-level analytics" 
         href: tenant-level-analytics.md
-      - name: Analyze telemetry with Application Insights
+      - name: "Preview: Analyze telemetry with Application Insights"
         items:
-        - name: Model-driven apps and Microsoft Dataverse telemetry
+        - name: "Preview: Model-driven apps and Microsoft Dataverse telemetry"
           href: analyze-telemetry.md
-        - name: Overview of integration with Application Insights
+        - name: "Preview: Overview of integration with Application Insights"
           href: overview-integration-application-insights.md
-        - name: Telemetry events for model-driven apps 
+        - name: "Preview: Telemetry events for model-driven apps" 
           href: telemetry-events-model-driven-apps.md
-        - name: Telemetry events for Dataverse
+        - name: "Preview: Telemetry events for Dataverse"
           href: telemetry-events-dataverse.md   
-        - name: Set up export to Application Insights
+        - name: "Preview:Set up export to Application Insights"
           href: set-up-export-application-insights.md
     - name: Storage
       items: 

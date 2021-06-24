@@ -1,5 +1,5 @@
 ---
-title: Telemetry events for Microsoft Dataverse  | Microsoft Docs
+title: "Preview: Telemetry events for Microsoft Dataverse  | Microsoft Docs"
 description: About telemetry events for Microsoft Dataverse 
 services: powerapps
 author: jimholtz
@@ -16,7 +16,9 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Telemetry events for Microsoft Dataverse
+# Preview: Telemetry events for Microsoft Dataverse
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 The data stream currently provides performance data related to Dataverse API incoming calls, Dataverse plug-in execution calls, and Dataverse SDK calls. It also provides data for failures in plug-in and Dataverse SDK operations.
 

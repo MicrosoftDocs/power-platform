@@ -1,5 +1,5 @@
 ---
-title: Overview of integration with Application Insights | Microsoft Docs
+title: "Preview: Overview of integration with Application Insights | Microsoft Docs"
 description: About integration with Application Insights
 services: powerapps
 author: jimholtz
@@ -16,7 +16,9 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Overview of integration with Application Insights
+# Preview: Overview of integration with Application Insights
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Application Insights, a feature of Azure Monitor, is widely used within the enterprise landscape for monitoring and diagnostics. Data that has already been collected from a specific tenant or environment is pushed to your own Application Insights environment. The data is stored in Azure Monitor logs by Application Insights, and visualized in [Performance](/azure/azure-monitor/learn/tutorial-performance) and [Failures](/azure/azure-monitor/learn/tutorial-runtime-exceptions) panels under **Investigate** on the left pane. The data is exported to your Application Insights environment in the standard schema defined by Application Insights. The support, developer, and admin personas can use this feature to triage and resolve issues.
 

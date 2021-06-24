@@ -1,5 +1,5 @@
 ---
-title: Analyze model-driven apps and Dataverse telemetry with Application Insights | Microsoft Docs
+title: "Preview: Analyze model-driven apps and Dataverse telemetry with Application Insights | Microsoft Docs"
 description: About analyzing model-driven apps and Microsoft Dataverse telemetry with Application Insights
 services: powerapps
 ms.service: power-platform
@@ -17,8 +17,10 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Analyze model-driven apps and Microsoft Dataverse telemetry with Application Insights
+# Preview: Analyze model-driven apps and Microsoft Dataverse telemetry with Application Insights
 <!-- fwlink: 2147020 2151390 -->
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 You can set up an Application Insights environment to receive telemetry on diagnostics and performance captured by the Dataverse platform.
 
