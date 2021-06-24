@@ -420,7 +420,7 @@
           href: telemetry-events-model-driven-apps.md
         - name: "Preview: Telemetry events for Dataverse"
           href: telemetry-events-dataverse.md   
-        - name: "Preview:Set up export to Application Insights"
+        - name: "Preview: Set up export to Application Insights"
           href: set-up-export-application-insights.md
     - name: Storage
       items: 
