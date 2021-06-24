@@ -43,7 +43,7 @@ Follow these steps to export Power Apps inventory and usage data.
 
 ## Simplify data with Azure Data Lake Store
 
-[Azure Data Lake Store](https://docs.microsoft.com/en-us/azure/architecture/data-guide/scenarios/data-lake) enables you to store captured data of any size, type, and ingestion speed in one single secure location for operational and exploratory analytics. You can use Power Platform self-service analytics to export Power Apps inventory and usage data directly to your [Azure Data Lake Gen2](https://docs.microsoft.com/en-us/power-bi/transform-model/dataflows/dataflows-azure-data-lake-storage-integration) storage locations.
+[Azure Data Lake Store](/azure/architecture/data-guide/scenarios/data-lake) enables you to store captured data of any size, type, and ingestion speed in one single secure location for operational and exploratory analytics. You can use Power Platform self-service analytics to export Power Apps inventory and usage data directly to your [Azure Data Lake Gen2](/power-bi/transform-model/dataflows/dataflows-azure-data-lake-storage-integration) storage locations.
 
 You can store exported data for extended durations, as well as move data to data warehouses. To learn more about building custom reports at tenant and environment levels across business units, see [Prepare Power Apps inventory and usage data for consumption and displaying data insights](build-custom-reports.md).
 
@@ -94,7 +94,7 @@ Follow these steps to set up the data lake.
 The first time you set up a data export to your organization's data lake, Microsoft requires that your Azure Active Directory (Azure AD) global admin be the person who sets up the connection.
 
 > [!IMPORTANT]
-> A connection with Microsoft's tenant service is required because your tenant must enable principal access to your organization's property; in this case, an [Azure Data Lake Gen2 storage account](https://docs.microsoft.com/en-us/power-bi/transform-model/dataflows/dataflows-azure-data-lake-storage-integration). This is a one-time set up which must be performed by your Azure AD admin.  When your AAD admin grants access permissions to your Azure AD tenant, the process temporarily allows the Microsoft service principal account to export and write data to your Azure Data Lake's specified storage account only. The Microsoft service principal account used for this will not be granted any permissions for other operations in your Azure Data Lake account.
+> A connection with Microsoft's tenant service is required because your tenant must enable principal access to your organization's property; in this case, an [Azure Data Lake Gen2 storage account](/power-bi/transform-model/dataflows/dataflows-azure-data-lake-storage-integration). This is a one-time set up which must be performed by your Azure AD admin.  When your AAD admin grants access permissions to your Azure AD tenant, the process temporarily allows the Microsoft service principal account to export and write data to your Azure Data Lake's specified storage account only. The Microsoft service principal account used for this will not be granted any permissions for other operations in your Azure Data Lake account.
 <!-- 
 **Set up using the Power Platform admin center portal**
 
