@@ -20,14 +20,32 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Power Platform self-service analytics enables you to export Power Apps inventory and usage data to use with your organization's line of business (LOB) scenarios. You can then use the exported data to create [Power BI data flow](/power-bi/transform-model/dataflows/dataflows-azure-data-lake-storage-integration) that access [Azure Data Lake Gen2 storage locations](/power-bi/transform-model/dataflows/dataflows-azure-data-lake-storage-integration). You can also use the exported data to build custom reports as part of your existing enterprise dashboards.
+Power Platform admin center enables you to export Power Apps inventory and usage data directly into your [Azure Data Lake](https://azure.microsoft.com/solutions/data-lake/) to use with your organization's line of business (LOB) scenarios. Using your own Azure Data Lake allows you to slice and dice the data based on your unique requirements. You can build custom reports with Power BI, including views at the individual business unit level and detailed app-level reports at the tenant and environment level. Having the data in your own data lake also means the data can be stored for durations as required by your organization's data retention policies.
+
+Data Lake is a key part of Cortana Intelligence, meaning that it works with Azure Synapse Analytics, Power BI, and Data Factory for a complete cloud big data and advanced analytics platform that helps you with everything from data preparation to doing interactive analytics on large-scale datasets. Architected from the ground up for cloud scale and performance, Azure Data Lake is a cost-effective solution to run big data workloads.  With Azure Data Lake Store your organization can analyze all of its data in a single place with no artificial constraints. 
+
+> [!NOTE]
+> At general availability, enablement of data export will be limited to customers with a paid/premium Microsoft Dataverse licenses available for the tenant. Details of these requirements will be provided in admin documentation and in general availability [release plans](/dynamics365/release-plans/). Additional details on minimum Dataverse capacity requirements to access the Data Export features will be announced in advance of general availability.
 
 ## Prerequisites
 
-To export Power Apps inventory and usage data, you need:
+Follow these steps to export Power Apps inventory and usage data.
 
-- tenant-level admin permission to access to all your organization's environments.
-- environment-level admin permission to access only those environments that you have a contributor or environment admin role for.
+1. To set up data export in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) you'll need one of these roles: Power Platform Service admin, Dynamics 365 admin, or Microsoft 365 Global admin.
+
+2. Create and configure an Azure Data Lake Gen 2 storage account.  Make sure you select the same location for the data lake storage account as your Power BI tenant. [Click here](https://docs.microsoft.com/en-us/power-bi/admin/service-admin-where-is-my-tenant-located) to learn more on how to determine the Power BI tenant location.
+
+3. The organization's Azure Active Directory global admin to be the one who sets up the connection.
+
+   > [!NOTE]
+   > This is required as your tenant has to allow the service to access the Azure Data Lake storage 
+   > account. This is a one-time set up only and will need to be performed by the Azure AD admin.   
+
+## Simplify data with Azure Data Lake Store
+
+[Azure Data Lake Store](https://docs.microsoft.com/en-us/azure/architecture/data-guide/scenarios/data-lake) enables you to store captured data of any size, type, and ingestion speed in one single secure location for operational and exploratory analytics. You can use Power Platform self-service analytics to export Power Apps inventory and usage data directly to your [Azure Data Lake Gen2](https://docs.microsoft.com/en-us/power-bi/transform-model/dataflows/dataflows-azure-data-lake-storage-integration) storage locations.
+
+You can store exported data for extended durations, as well as move data to data warehouses. To learn more about building custom reports at tenant and environment levels across business units, see [Prepare Power Apps inventory and usage data for consumption and displaying data insights](build-custom-reports.md).
 
 ## Export data based on your specific business needs
 
@@ -35,10 +53,10 @@ The amount of data that you can export depends upon your Power Apps usage. The i
 
 For example, an enterprise customer with two years of inventory data may have about 300MB of data to export. After the initial export, approximately 5-10 MB of that data would be pushed daily.
 
-## Behind the scenes 
+## Custom analytics with extensibility on Azure Data Lake
 
 [TBD architecture diagram]
-
+<!--
 ## Simplify data with Azure Data Lake Store
 
 [Azure Data Lake Store](/azure/architecture/data-guide/scenarios/data-lake) enables you to store captured data of any size, type, and ingestion speed in one single secure location for operational and exploratory analytics. You can use Power Platform self-service analytics to export Power Apps inventory and usage data directly to your [Azure Data Lake Gen2](/power-bi/transform-model/dataflows/dataflows-azure-data-lake-storage-integration) storage locations.
@@ -69,16 +87,16 @@ Follow these steps to set up the data lake.
 
 > [!NOTE]
 > Resource inventory and 30 days of historical usage data will be exported into the Azure storage account over the next several hours.
-
+-->
 ### First time setup of a data export
 
 The first time you set up a data export to your organization's data lake, Microsoft requires that your Azure Active Directory (Azure AD) global admin be the person who sets up the connection.
 
 > [!IMPORTANT]
-> A connection with Microsoft's tenant service is required because your tenant must enable principal access to your organization's property; in this case, an [Azure Data Lake Gen2 storage account](/power-bi/transform-model/dataflows/dataflows-azure-data-lake-storage-integration). This is a one-time set up and will need to be performed by your Azure AD admin.
+> A connection with Microsoft's tenant service is required because your tenant must enable principal access to your organization's property; in this case, an [Azure Data Lake Gen2 storage account](/power-bi/transform-model/dataflows/dataflows-azure-data-lake-storage-integration). This is a one-time set up which must be performed by your Azure AD admin.
 
 When your Azure AD admin grants access permissions to your Azure AD tenant, the process temporarily allows the Microsoft service principal account to export and write data to your Azure Data Lake Gen2's specified storage account only. The Microsoft service principal account used for this will not be granted any permissions for other operations in your Azure Data Lake Gen2 account.
-
+<!-- 
 **Set up using the Power Platform admin center portal**
 
 Follow the steps below for setting up your data lake using the [Power Platform Admin Center](https://aka.ms/ppac) portal, and for setting up an Azure Data Lake Gen 2 connection for the first time:
@@ -103,8 +121,14 @@ Follow the steps below for setting up your data lake using the [Power Platform A
 8. You will now be taken to a dashboard that displays the connection name.
 
 The setup process is now complete, and your data will be exported within 48 hours. The data will then be exported to your tenant's data lake every 24 hours.
+-->
+## Set up the data export process for your tenant
 
-## See also
+Admins should use the Power Platform admin center to set up the data export. Before you begin exporting data, ensure that your Data Lake Gen2 storage account has been set up as described in this section. Be certain that the admin who sets up the data export already has access to your storage account.
+
+Check back for the setup process.
+
+### See also
 [Prepare Power Apps inventory and usage data for consumption and displaying data insights](build-custom-reports.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
