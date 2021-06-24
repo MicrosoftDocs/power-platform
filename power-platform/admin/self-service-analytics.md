@@ -47,6 +47,27 @@ You can store exported data for extended durations, as well as move data to data
 
 Admins should use the Power Platform admin center to set up the data export. Before you begin exporting data, ensure that your Data Lake Gen2 storage account has been set up as described in this section. Be certain that the admin who sets up the data export already has access to your storage account.
 
+Follow these steps to set up the data lake.
+
+1. Sign in to the Power Platform admin center as an Azure AD global admin, select **Export to Azure Data Lake**, and then select **Power Apps**.
+
+   :::image type="content" source="media/export-data-lake-power-apps.png" alt-text="Export Power Apps to data lake":::
+
+2. Set **Enable tenant-level analytics** to **On**.
+
+   :::image type="content" source="media/enable-tenant-level-analytics-data-export.png" alt-text="Enable tenant-level analytics for data export":::
+
+3. Choose a subscription to associate with the Azure storage account.
+
+4. A list of resource groups under this subscription will be displayed. Select a resource group.
+
+5. A list of storage accounts under the selected resource group will be displayed. Select the Azure storage account.
+
+6. Select **Create** to set up the connection to your Azure Data Lake Gen2.
+
+> [!NOTE]
+> Resource inventory and 30 days of historical usage data will be exported into the Azure storage account over the next several hours.
+
 ### First time setup of a data export
 
 The first time you set up a data export to your organization's data lake, Microsoft requires that your Azure Active Directory (Azure AD) global admin be the person who sets up the connection.
