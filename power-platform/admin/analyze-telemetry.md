@@ -29,7 +29,7 @@ You don't need to write any code to enable this telemetry. You can enable or dis
 [Application Insights](/azure/azure-monitor/app/app-insights-overview) is part of the Azure Monitor ecosystem. It's widely used by enterprises for monitoring and diagnostics. Many customers have added code to their extensions to capture this data into their Application Insights environments. This additional code has a cost, however&mdash;not only the cost to write and maintain, but also a performance cost at runtime. These costs can be avoided by using Application Insights built-in integration.
 
 > [!NOTE]
-> At general availability, enablement of Application Insights will be limited to customers with a minimum paid/premium Dataverse licenses available for the tenant. Details of these requirements will be provided in admin documentation and in general availability [release plans](/dynamics365/release-plans/). Additional details on minimum Dataverse capacity requirements to access the Data Export features will be announced in advance of general availability.
+> At general availability, enablement of Application Insights will be limited to customers with a paid/premium Dataverse licenses available for the tenant. Details of these requirements will be provided in admin documentation and in general availability [release plans](/dynamics365/release-plans/). Additional details on minimum Dataverse capacity requirements to access the Data Export features will be announced in advance of general availability.
         
 
 ## Why do I need telemetry?
