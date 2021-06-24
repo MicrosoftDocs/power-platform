@@ -1,25 +1,21 @@
 ---
-title: "Things to consider prior to using ExpressRoute for Power Platform | MicrosoftDocs"
-description: "Points to consider before deciding to use ExpressRoute with Power Platform"
+title: "Things to consider before using ExpressRoute with Microsoft Power Platform | MicrosoftDocs"
+description: "Learn about things to consider before deciding to use ExpressRoute with Microsoft Power Platform"
 author: taiki-yoshida
-manager: devkeydet
 ms.service: power-platform
-ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/30/2021
 ms.author: tayoshi
 ms.reviewer: kathyos
-search.audienceType: 
-  - admin
 search.app: 
   - D365CE
   - PowerApps
   - Powerplatform
 ---
 
-# Things to consider prior to using ExpressRoute for Power Platform
+# Things to consider before using ExpressRoute with Microsoft Power Platform
 
-The complexity of setting up ExpressRoute is often underestimated; in particular
+The complexity of setting up ExpressRoute is often underestimated. In particular,
 several actions and implications for the customer are often missed either in
 planning or execution including:
 
@@ -41,7 +37,7 @@ planning or execution including:
 
 ### LAN connectivity
 
-One of the common issues a user may experience is:
+One of the common issues a user might experience is:
 
 -   The connectivity within the local network is already saturated before
     including a rich browser application into the mix.
@@ -85,7 +81,7 @@ connection:
     can vary
 
 -   Suffers from a mix of traffic which impacts the quality of the connection
-    (e.g. multiple Internet-based training, Microsoft Stream or YouTube videos
+    (for example, multiple Internet-based training, Microsoft Stream or YouTube videos
     with traffic to a business-critical application competing for the available
     bandwidth). This may be sufficient overall for the volume of traffic but
     potentially impacting performance through peaks of demand, which activity
@@ -98,14 +94,14 @@ predictability of the traffic.
 
 Also make sure to set up Quality of Service (QoS) correctly. If you are using
 Microsoft Teams and Microsoft Stream, refer to the [QoS requirements within
-ExpressRoute](https://docs.microsoft.com/en-us/azure/expressroute/expressroute-qos).
+ExpressRoute](/azure/expressroute/expressroute-qos).
 
 ## Security control
 
 The next configuration you need to consider is the security control.
 ExpressRoute itself does not encrypt or filter traffic natively (with exception
 of [ExpressRoute Direct with MACsec
-enabled](https://docs.microsoft.com/azure/expressroute/expressroute-about-encryption));
+enabled](/azure/expressroute/expressroute-about-encryption));
 it simply establishes a private, rather than shared, connection directly between
 the Microsoft and customer data centers through their connectivity provider.
 
@@ -149,21 +145,21 @@ with appropriate BGP community values for geographical locations and service
 types. These can then be configured in the customer’s routers to route traffic
 for those services through the ExpressRoute circuit.
 
-Different [Microsoft 365 services’ tags](https://docs.microsoft.com/microsoft-365/enterprise/bgp-communities-in-expressroute?view=o365-worldwide) can be used to decide to route traffic
+Different [Microsoft 365 services’ tags](/microsoft-365/enterprise/bgp-communities-in-expressroute?view=o365-worldwide) can be used to decide to route traffic
 only for those services through the ExpressRoute circuit and the rest across
 either a different ExpressRoute circuit or the public Internet.
 
 Power Platform specific BGP community values are not available like they are for
-Microsoft 365 services. Instead, [regional BGP communities](https://docs.microsoft.com/azure/expressroute/expressroute-routing#bgp)
+Microsoft 365 services. Instead, [regional BGP communities](/azure/expressroute/expressroute-routing#bgp)
 are used with corresponding Microsoft Azure regions that are used for each Power
 Platform environment. As Power Platform environments use two sets of
-datacenters, make sure to look at the [Regions overview](https://docs.microsoft.com/power-automate/regions-overview) to
+datacenters, make sure to look at the [Regions overview](/power-automate/regions-overview) to
 check which two datacenters are used.
 
--   More information on [BGP communities](https://docs.microsoft.com/azure/expressroute/expressroute-routing#bgp)
+-   More information on [BGP communities](/azure/expressroute/expressroute-routing#bgp)
     for public clouds.
 
--   More information on [BGP communities for GCC](https://docs.microsoft.com/azure/azure-government/compare-azure-government-global-azure#azure-expressroute).
+-   More information on [BGP communities for GCC](/azure/azure-government/compare-azure-government-global-azure#azure-expressroute).
 
 ### Microsoft 365
 
@@ -189,12 +185,12 @@ specific services such as Power Platform services, but not other Microsoft 365
 services, utilize the ExpressRoute connection. In particular, not all Microsoft
 365 services are designed to work with ExpressRoute. Currently, Power Platform
 services do not have a designated BGP communities like [those with Microsoft 365 services](https://docs.microsoft.com/azure/expressroute/expressroute-routing#service-to-bgp-community-value).
-Instead, [regional BPG communities](https://docs.microsoft.com/azure/expressroute/expressroute-routing#bgp)
-should be used to match with the region where [Power Platform environment](https://docs.microsoft.com/power-platform/admin/environments-overview)
+Instead, [regional BPG communities](/azure/expressroute/expressroute-routing#bgp)
+should be used to match with the region where [Microsoft Power Platform environment](/power-platform/admin/environments-overview)
 was created.
 
 For further information on routing Microsoft 365, refer to the documentation on
-[selective routing with Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/azure-expressroute?view=o365-worldwide).As
+[selective routing with Microsoft 365](/microsoft-365/enterprise/azure-expressroute?view=o365-worldwide).As
 Power Platform services work partially as part of the Microsoft 365 service,
 many crossover services such as the admin portal and authentication are also
 required. Not all of these are possible to protect using ExpressRoute; the
@@ -209,8 +205,7 @@ example, Power Apps for Government Community Cloud (GCC) is located in the
 United States, where it meets US Government specific regulations and
 certifications, as well as protocols to meet those requirements.
 
-A video describing how Power Platform is available with Sovereign clouds is
-available in the session “Sovereign Clouds with Marty Carreras”
+Watch this video describing how Microsoft Power Platform is available with Sovereign clouds: [Video: Sovereign Clouds with Marty Carreras](https://www.youtube.com/watch?v=DMg3uQ5EFLI).
 
 When you are considering using sovereign cloud environments, you must consider
 what limitations exist, as not all of the features are available when compared
@@ -219,18 +214,18 @@ of availability by each environment for Power Platform.
 
 | **Region**                                    | **ExpressRoute support** |
 |-----------------------------------------------|--------------------------|
-| US Government Community Cloud (GCC)           | Supported \*1            |
-| US Government Community Cloud High (GCC High) | Supported \*1            |
-| China                                         | Supported \*2            |
+| US Government Community Cloud (GCC)           | Supported <sup>\*1</sup>            |
+| US Government Community Cloud High (GCC High) | Supported <sup>\*1</sup>            |
+| China                                         | Supported <sup>\*2</sup>            |
 |                                               |                          |
 
 For other differences in availability, read through the documentation on data
 regions.
 
-\*1 Customer must use Azure Government ExpressRoute when using US GCC or GCC
+<sup>\*1</sup> Customer must use Azure Government ExpressRoute when using US GCC or GCC
 High regions and cannot be used with Azure commercial cloud ExpressRoute.
 
-\*2 Customer must use Azure China ExpressRoute when using China regions and
+<sup>\*2</sup> Customer must use Azure China ExpressRoute when using China regions and
 cannot use Azure commercial cloud ExpressRoute.
 
 ## Azure ExpressRoute costs
@@ -297,7 +292,7 @@ More information on [Azure ExpressRoute pricing](https://azure.microsoft.com/pri
     an external cost to an IT outsourcing provider, or at least opportunity cost
     for the effort of internal staff focusing on this.
 
-## Impacts to existing Power Platform services, Microsoft 365, and Azure that are in use
+## Impacts to existing Microsoft Power Platform services, Microsoft 365, and Azure that are in use
 
 When Microsoft peering is enabled, this will configure traffic for Power
 Platform services, Microsoft 365, and Azure to be routed via ExpressRoute.
@@ -312,7 +307,7 @@ services.
 ## Reusing ExpressRoute across multiple online services
 
 A single ExpressRoute connection can be used to access multiple online services
-e.g., Power Platform, Dynamics 365, Microsoft 365, and Microsoft Azure.
+for example, Microsoft Power Platform, Dynamics 365, Microsoft 365, and Microsoft Azure.
 
 ![Diagram showing shared ExpressRoute connection with Microsoft public services and Microsoft Azure](media/reuse-network.png)
 
