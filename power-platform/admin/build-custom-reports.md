@@ -60,7 +60,7 @@ You can also view data using the Azure portal.
 
 1. Go to [https://portal.azure.com](https://portal.azure.com/).
 
-2. Navigate to your storage account by going to Home &gt; Subscriptions &gt; Your Subscription Name &gt; Resource Groups &gt; Your Resource Group &gt; Your Storage Accounts &gt; Storage Account.
+2. Navigate to your storage account by going to **Home** > **Subscriptions** > your subscription name > **Resource Groups** > your resource group > your storage accounts > **Storage Account**.
 <!--
 ### Provision using Azure Data Lake Gen2
 
@@ -103,7 +103,7 @@ The main root folder for Power Apps has the following folder structure:
 - \Usage
 
 > [!NOTE] 
-> Data listed in the folders shown above can be viewed through your Azure portal. For information, go to [https://portal.azure.com](https://portal.azure.com/) and navigate to your storage account (Home &gt; Subscriptions &gt; Your Subscription Name &gt; Resource Groups &gt; Your Resource Group &gt; Your Storage Accounts &gt; Storage Account).
+> Data listed in the folders shown above can be viewed through your Azure portal. For information, go to [https://portal.azure.com](https://portal.azure.com/) and navigate to your storage account (**Home** > **Subscriptions** > your subscription name > **Resource Groups** > your resource group > your storage accounts > **Storage Account**).
 <!--
 **Data export options**
 
@@ -270,7 +270,8 @@ The data mode uses the extensible CDM (Common Data Model) schema to describe the
 ## What is the structure of the containers and folders inside the data lake?
 
 - The main root folder is in the yyyy-mm-dd date format – example 2020-02-28.
-- The root folder contains 2 folders named - Metadata and KPI.  Metadata contains the inventory data in a list of files, one for each region.
+- The root folder contains two folders named "Metadata" and "KPI".  
+- The Metadata contains the inventory data in a list of files, one for each region.
 - The KPI folder contains the usage data.
 
 ### See also
