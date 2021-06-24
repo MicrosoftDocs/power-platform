@@ -130,4 +130,4 @@ not need to be considered to be protected over private networks like
 ExpressRoute.
 
 > [!div class="nextstepaction"]
-> [Next step: Planning an ExpressRoute deployment](planning-expressroute.md)
+> [Next step: Plan an ExpressRoute deployment](planning-expressroute.md)
