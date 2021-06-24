@@ -56,13 +56,13 @@ landingContent:
          links:
           - text: Overview
             url: ./expressroute/overview.md
-          - text: Things to consider prior to using ExpressRoute
+          - text: Before using ExpressRoute
             url: ./expressroute/planning-expressroute.md
-          - text: Understand Microsoft Power Platform architecture
+          - text: Understand Power Platform architecture
             url: ./expressroute/understanding-architecture.md
        - linkListType: how-to-guide
          links:
-          - text: How ExpressRoute works with Microsoft Power Platform
+          - text: How ExpressRoute works with Power Platform
             url: ./expressroute/how-expressroute-works.md
           - text: Set up ExpressRoute for Microsoft Power Platform
             url: ./expressroute/setup.md
