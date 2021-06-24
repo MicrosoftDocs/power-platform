@@ -184,7 +184,7 @@ is possible to use BGP Communities tags to control the routing so that only
 specific services such as Power Platform services, but not other Microsoft 365
 services, utilize the ExpressRoute connection. In particular, not all Microsoft
 365 services are designed to work with ExpressRoute. Currently, Microsoft Power Platform
-services do not have a designated BGP community like [those with Microsoft 365 services](https://docs.microsoft.com/azure/expressroute/expressroute-routing#service-to-bgp-community-value).
+services do not have a designated BGP community like [those with Microsoft 365 services](/azure/expressroute/expressroute-routing#service-to-bgp-community-value).
 Instead, [regional BPG communities](/azure/expressroute/expressroute-routing#bgp)
 should be used to match with the region where [Microsoft Power Platform environment](/power-platform/admin/environments-overview)
 was created.
