@@ -57,7 +57,7 @@ Isaac has a large development project starting next week for the sales departmen
 After modifying and enabling some of the plug-ins, the developer sandbox environment functions the same and is isolated from the production application.  The development team works on their modifications in this environment for several weeks.  They package their changes into a solution and export/import to deploy to the Everything copy sandbox environment.  After a successful round of testing and signoffs, the changes are manually deployed to production.  
   
 ### Tables truncated in customizations and schemas only copy 
- The following tables are copied when you do a Customizations and schemas only copy:  
+ The following tables are copied when you do a customizations and schemas only copy:  
 
 | Tables |  |  |
 |-----------|-----------|-----------| 
