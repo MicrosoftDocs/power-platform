@@ -400,14 +400,12 @@
           href: analytics-flow.md
         - name: Analytics for UI flows
           href: analytics-ui-flow.md 
- # Comment out reports node
       - name: Reports
         items:
         - name: "Preview: Create custom dashboards using Power Apps inventory and usage data"
           href: build-custom-reports.md
         - name: "Preview: Export Power Apps inventory and usage data"
           href: self-service-analytics.md
-    # Comment out lines down to storage before publishing
       - name: "Preview: Tenant-level analytics" 
         href: tenant-level-analytics.md
       - name: "Preview: Analyze telemetry with Application Insights"
