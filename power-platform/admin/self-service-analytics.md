@@ -33,7 +33,7 @@ Follow these steps to export Power Apps inventory and usage data.
 
 1. To set up data export in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) you'll need one of these roles: Power Platform Service admin, Dynamics 365 admin, or Microsoft 365 Global admin.
 
-2. Create and configure an Azure Data Lake Gen 2 storage account.  Make sure you select the same location for the data lake storage account as your Power BI tenant. [Click here](https://docs.microsoft.com/en-us/power-bi/admin/service-admin-where-is-my-tenant-located) to learn more on how to determine the Power BI tenant location.
+2. [Create a storage account](/azure/storage/blobs/create-data-lake-storage-account) to use with Azure Data Lake Gen 2.  Make sure you select the same location for the data lake storage account as your Power BI tenant. To learn more on how to determine the Power BI tenant location, see [Where is my Power BI tenant located?](/power-bi/admin/service-admin-where-is-my-tenant-located).  In addition, they must have *owner* or *contributor* access to the Azure Data Lake storage account, as well as *owner* or *contributor* access to the Azure subscription. 
 
 3. The organization's Azure Active Directory global admin to be the one who sets up the connection.
 
@@ -47,15 +47,16 @@ Follow these steps to export Power Apps inventory and usage data.
 
 You can store exported data for extended durations, as well as move data to data warehouses. To learn more about building custom reports at tenant and environment levels across business units, see [Prepare Power Apps inventory and usage data for consumption and displaying data insights](build-custom-reports.md).
 
-## Export data based on your specific business needs
+## Extensible analytics with Azure Data Lake
 
-The amount of data that you can export depends upon your Power Apps usage. The initial [Common Data Model (CDM)](/common-data-model/) schema file contains inventory data of all the Power Apps in your related information. After the initial export, an incremental data push occurs daily.
+[TBD architecture diagram]
+
+## Data
+
+The amount of data that you can export depends upon your Power Apps usage. The initial [Common Data Model (CDM)](/common-data-model/) schema file contains inventory data of all the Power Apps in your related information. After the initial export, an incremental data push occurs daily.
 
 For example, an enterprise customer with two years of inventory data may have about 300MB of data to export. After the initial export, approximately 5-10 MB of that data would be pushed daily.
 
-## Custom analytics with extensibility on Azure Data Lake
-
-[TBD architecture diagram]
 <!--
 ## Simplify data with Azure Data Lake Store
 
@@ -93,9 +94,7 @@ Follow these steps to set up the data lake.
 The first time you set up a data export to your organization's data lake, Microsoft requires that your Azure Active Directory (Azure AD) global admin be the person who sets up the connection.
 
 > [!IMPORTANT]
-> A connection with Microsoft's tenant service is required because your tenant must enable principal access to your organization's property; in this case, an [Azure Data Lake Gen2 storage account](/power-bi/transform-model/dataflows/dataflows-azure-data-lake-storage-integration). This is a one-time set up which must be performed by your Azure AD admin.
-
-When your Azure AD admin grants access permissions to your Azure AD tenant, the process temporarily allows the Microsoft service principal account to export and write data to your Azure Data Lake Gen2's specified storage account only. The Microsoft service principal account used for this will not be granted any permissions for other operations in your Azure Data Lake Gen2 account.
+> A connection with Microsoft's tenant service is required because your tenant must enable principal access to your organization's property; in this case, an [Azure Data Lake Gen2 storage account](https://docs.microsoft.com/en-us/power-bi/transform-model/dataflows/dataflows-azure-data-lake-storage-integration). This is a one-time set up which must be performed by your Azure AD admin.  When your AAD admin grants access permissions to your Azure AD tenant, the process temporarily allows the Microsoft service principal account to export and write data to your Azure Data Lake's specified storage account only. The Microsoft service principal account used for this will not be granted any permissions for other operations in your Azure Data Lake account.
 <!-- 
 **Set up using the Power Platform admin center portal**
 
@@ -124,11 +123,14 @@ The setup process is now complete, and your data will be exported within 48 hour
 -->
 ## Set up the data export process for your tenant
 
-Admins should use the Power Platform admin center to set up the data export. Before you begin exporting data, ensure that your Data Lake Gen2 storage account has been set up as described in this section. Be certain that the admin who sets up the data export already has access to your storage account.
+[TBD add feature setup process]
 
 Check back for the setup process.
 
 ### See also
-[Prepare Power Apps inventory and usage data for consumption and displaying data insights](build-custom-reports.md)
+[Prepare Power Apps inventory and usage data for consumption and displaying data insights](build-custom-reports.md) </br>
+[Creating custom dashboards using Power Apps inventory and usage data](build-custom-reports.md)
+
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
