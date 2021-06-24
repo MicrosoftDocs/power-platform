@@ -80,9 +80,9 @@ Follow these steps to set up the data lake.
 
 3. Choose a subscription to associate with the Azure storage account.
 
-4. A list of resource groups under this subscription will be displayed. Select a resource group.
+4. A list of resource groups under this subscription is displayed. Select a resource group.
 
-5. A list of storage accounts under the selected resource group will be displayed. Select the Azure storage account.
+5. A list of storage accounts under the selected resource group is displayed. Select the Azure storage account.
 
 6. Select **Create** to set up the connection to your Azure Data Lake Gen2.
 
