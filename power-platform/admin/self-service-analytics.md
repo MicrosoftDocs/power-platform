@@ -33,7 +33,7 @@ Follow these steps to export Power Apps inventory and usage data.
 
 1. To set up data export in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) you'll need one of these roles: Power Platform Service admin, Dynamics 365 admin, or Microsoft 365 Global admin.
 
-2. [Create a storage account](/azure/storage/blobs/create-data-lake-storage-account) to use with Azure Data Lake Gen 2.  Make sure you select the same location for the data lake storage account as your Power BI tenant. To learn more on how to determine the Power BI tenant location, see [Where is my Power BI tenant located?](/power-bi/admin/service-admin-where-is-my-tenant-located).  In addition, they must have *owner* or *contributor* access to the Azure Data Lake storage account, as well as *owner* or *contributor* access to the Azure subscription. 
+2. [Create a storage account](/azure/storage/blobs/create-data-lake-storage-account) to use with Azure Data Lake Gen 2.  Make sure you select the same location for the data lake storage account as your Power BI tenant. To learn more on how to determine the Power BI tenant location, see [Where is my Power BI tenant located?](/power-bi/admin/service-admin-where-is-my-tenant-located)  In addition, they must have *owner* or *contributor* access to the Azure Data Lake storage account, as well as *owner* or *contributor* access to the Azure subscription. 
 
 3. The organization's Azure Active Directory global admin to be the one who sets up the connection.
 
