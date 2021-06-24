@@ -399,22 +399,27 @@
         - name: Analytics for flows
           href: analytics-flow.md
         - name: Analytics for UI flows
-          href: analytics-ui-flow.md
-    # Comment out lines down to storage before publishing
-      # - name: "Preview: Tenant-level analytics" 
-      #   href: tenant-level-analytics.md
-      # - name: Analyze telemetry with Application Insights
-      #   items:
-      #   - name: Model-driven apps and Microsoft Dataverse telemetry
-      #     href: analyze-telemetry.md
-      #   - name: Overview of integration with Application Insights
-      #     href: overview-integration-application-insights.md
-      #   - name: Telemetry events for model-driven apps 
-      #     href: telemetry-events-model-driven-apps.md
-      #   - name: Telemetry events for Dataverse
-      #     href: telemetry-events-dataverse.md   
-      #   - name: Set up export to Application Insights
-      #     href: set-up-export-application-insights.md
+          href: analytics-ui-flow.md 
+      - name: Reports
+        items:
+        - name: "Preview: Create custom dashboards using Power Apps inventory and usage data"
+          href: build-custom-reports.md
+        - name: "Preview: Export Power Apps inventory and usage data"
+          href: self-service-analytics.md
+      - name: "Preview: Tenant-level analytics" 
+        href: tenant-level-analytics.md
+      - name: "Preview: Analyze telemetry with Application Insights"
+        items:
+        - name: "Preview: Model-driven apps and Microsoft Dataverse telemetry"
+          href: analyze-telemetry.md
+        - name: "Preview: Overview of integration with Application Insights"
+          href: overview-integration-application-insights.md
+        - name: "Preview: Telemetry events for model-driven apps" 
+          href: telemetry-events-model-driven-apps.md
+        - name: "Preview: Telemetry events for Dataverse"
+          href: telemetry-events-dataverse.md   
+        - name: "Preview: Set up export to Application Insights"
+          href: set-up-export-application-insights.md
     - name: Storage
       items: 
       - name: What's new for storage
