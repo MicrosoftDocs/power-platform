@@ -63,7 +63,7 @@ For example, an enterprise customer with two years of inventory data may have ab
 [Azure Data Lake Store](/azure/architecture/data-guide/scenarios/data-lake) enables you to store captured data of any size, type, and ingestion speed in one single secure location for operational and exploratory analytics. You can use Power Platform self-service analytics to export Power Apps inventory and usage data directly to your [Azure Data Lake Gen2](/power-bi/transform-model/dataflows/dataflows-azure-data-lake-storage-integration) storage locations.
 
 You can store exported data for extended durations, as well as move data to data warehouses. To learn more about building custom reports at tenant and environment levels across business units, see [Prepare Power Apps inventory and usage data for consumption and displaying data insights](build-custom-reports.md).
-
+-->
 ## Set up the data export process for your tenant
 
 Admins should use the Power Platform admin center to set up the data export. Before you begin exporting data, ensure that your Data Lake Gen2 storage account has been set up as described in this section. Be certain that the admin who sets up the data export already has access to your storage account.
@@ -88,7 +88,7 @@ Follow these steps to set up the data lake.
 
 > [!NOTE]
 > Resource inventory and 30 days of historical usage data will be exported into the Azure storage account over the next several hours.
--->
+
 ### First time setup of a data export
 
 The first time you set up a data export to your organization's data lake, Microsoft requires that your Azure Active Directory (Azure AD) global admin be the person who sets up the connection.
