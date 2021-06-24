@@ -162,11 +162,11 @@
       href: expressroute/how-expressroute-works.md
     - name: Before you use ExpressRoute 
       href: expressroute/things-to-consider.md
-    - name: Understanding Microsoft Power Platform architecture 
+    - name: Understand Microsoft Power Platform architecture 
       href: expressroute/understanding-architecture.md
-    - name: Planning an ExpressRoute deployment
+    - name: Plan an ExpressRoute deployment
       href: expressroute/planning-expressroute.md
-    - name: Setting up ExpressRoute for Microsoft Power Platform
+    - name: Set up ExpressRoute for Microsoft Power Platform
       href: expressroute/setup.md
     - name: ExpressRoute readiness checklist
       href: expressroute/checklist.md
