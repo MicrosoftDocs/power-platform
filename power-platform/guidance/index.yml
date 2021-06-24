@@ -62,12 +62,10 @@ landingContent:
             url: ./expressroute/understanding-architecture.md
        - linkListType: how-to-guide
          links:
-          - text: How ExpressRoute works with Power Platform
+          - text: How ExpressRoute works with Power Platform?
             url: ./expressroute/how-expressroute-works.md
           - text: Set up ExpressRoute for Microsoft Power Platform
             url: ./expressroute/setup.md
-          - text: ExpressRoute readiness checklist
-            url: ./expressroute/checklist.md
 
   # Card
   - title: Related resources
