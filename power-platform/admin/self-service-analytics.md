@@ -121,11 +121,7 @@ Follow the steps below for setting up your data lake using the [Power Platform A
 
 The setup process is now complete, and your data will be exported within 48 hours. The data will then be exported to your tenant's data lake every 24 hours.
 -->
-## Set up the data export process for your tenant
 
-[TBD add feature setup process]
-
-Check back for the setup process.
 
 ### See also
 [Prepare Power Apps inventory and usage data for consumption and displaying data insights](build-custom-reports.md) </br>
