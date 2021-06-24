@@ -403,7 +403,7 @@
  # Comment out reports node
       - name: Reports
         items:
-        - name: "Preview: Prepare Power Apps inventory and usage data"
+        - name: "Preview: Create custom dashboards using Power Apps inventory and usage data"
           href: build-custom-reports.md
         - name: "Preview: Export Power Apps inventory and usage data"
           href: self-service-analytics.md

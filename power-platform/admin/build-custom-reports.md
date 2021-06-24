@@ -1,5 +1,5 @@
 ---
-title: "Preview: Prepare Power Apps inventory and usage data for consumption and displaying data insights"
+title: "Preview: Create custom dashboards using Power Apps inventory and usage data"
 description: Use Power Apps exported data with other line of business (LOB) scenarios and display data insights at tenant and environment levels across business units.
 author: jimholtz
 ms.service: power-platform
@@ -15,7 +15,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Preview: Creating custom dashboards using Power Apps inventory and usage data
+# Preview: Create custom dashboards using Power Apps inventory and usage data
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
