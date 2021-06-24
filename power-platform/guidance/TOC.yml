@@ -152,7 +152,7 @@
       href: coe/release-notes.md
     - name: Feedback and support
       href: coe/feedback-support.md
-  - name: ExpressRoute
+  - name: Use ExpressRoute
     items: 
     - name: Overview     
       href: expressroute/overview.md
@@ -160,15 +160,15 @@
       href: expressroute/benefits.md
     - name: How ExpressRoute works     
       href: expressroute/how-expressroute-works.md
-    - name: Things to consider prior to using ExpressRoute 
+    - name: Before you use ExpressRoute 
       href: expressroute/things-to-consider.md
-    - name: Understanding Power Platform architecture 
+    - name: Understanding Microsoft Power Platform architecture 
       href: expressroute/understanding-architecture.md
     - name: Planning an ExpressRoute deployment
       href: expressroute/planning-expressroute.md
-    - name: Setting up ExpressRoute for Power Platform
+    - name: Setting up ExpressRoute for Microsoft Power Platform
       href: expressroute/setup.md
-    - name: ExpressRoute Readiness Checklist
+    - name: ExpressRoute readiness checklist
       href: expressroute/checklist.md
   - name: Icons
     href: icons.md
