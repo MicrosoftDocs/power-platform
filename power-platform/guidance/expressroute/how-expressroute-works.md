@@ -2,22 +2,18 @@
 title: "How ExpressRoute works with Microsoft Power Platform | MicrosoftDocs"
 description: "How ExpressRoute works with Power Platform"
 author: taiki-yoshida
-manager: devkeydet
 ms.service: power-platform
-ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/30/2021
 ms.author: tayoshi
 ms.reviewer: kathyos
-search.audienceType: 
-  - admin
 search.app: 
   - D365CE
   - PowerApps
   - Powerplatform
 ---
 
-# How ExpressRoute works
+# How ExpressRoute works with Microsoft Power Platform?
 
 To understand how ExpressRoute works with Microsoft Power Platform, you need to
 know the basics of how ExpressRoute works first.
@@ -29,10 +25,8 @@ different regions and can be connected to your premises through different
 connectivity providers.
 
 Connectivity provider are set of partners who help you setup the ExpressRoute so
-that your on-premises infrastructure and Microsoft cloud can be connected. [The
-complete list of ExpressRoute connectivity partners is available
-here](https://docs.microsoft.com/azure/expressroute/expressroute-locations#partners),
-and the availability of these providers will depend on the location you choose
+that your on-premises infrastructure and Microsoft cloud can be connected. For the
+complete list of ExpressRoute connectivity partners, see [ExpressRoute connectivity providers](/azure/expressroute/expressroute-locations#partners). the availability of these providers will depend on the location you choose
 to connect from.
 
 An ExpressRoute circuit can offer performance advantages because a dedicated and
