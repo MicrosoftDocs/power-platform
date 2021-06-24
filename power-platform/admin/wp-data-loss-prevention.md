@@ -195,7 +195,10 @@ As an admin, you should have a process and plan in place to handle these types o
 Users who create or edit a resource affected by the DLP policy will see an appropriate error message about any DLP policy conflicts. For example, Power Apps makers will see the following error when they use connectors in an app that don't belong together or have been blocked by DLP policies. The app won't add the connection.
 
 > [!div class="mx-imgBorder"] 
-> ![Conflict error](media/dlp-conflict-error.png "Conflict error")
+> ![First example conflict error](media/dlp-conflict-error.png "First example conflict error")
+
+> [!div class="mx-imgBorder"] 
+> ![Second example conflict error](media/dlp-conflict-error2.png "Second example conflict error")
 
 Similarly, Power Automate makers will see the following error when they try to save a flow that uses connectors that don't belong together or have been blocked by DLP policies. The flow itself will be saved, but it will be marked as **Suspended** and won't be executed unless the maker resolves the DLP violation.
 
