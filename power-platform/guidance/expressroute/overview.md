@@ -13,7 +13,7 @@ search.app:
   - Powerplatform
 ---
 
-# Overview
+# Use Azure ExpressRoute with Microsoft Power Platform
 
 [Microsoft Azure ExpressRoute](https://azure.microsoft.com/services/expressroute/) provides a way to connect your on-premises network
 to Microsoft cloud services using private connectivity.
