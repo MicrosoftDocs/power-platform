@@ -55,16 +55,14 @@ landingContent:
        - linkListType: overview
          links:
           - text: Overview
-            url: ./expressroute/overview.md
-          - text: Before using ExpressRoute
-            url: ./expressroute/planning-expressroute.md
-          - text: Understand Power Platform architecture
-            url: ./expressroute/understanding-architecture.md
+            url: ./expressroute/overview.md          
+          - text: Benefits of using ExpressRoute
+            url: ./expressroute/benefits.md
        - linkListType: how-to-guide
          links:
           - text: How ExpressRoute works with Power Platform?
             url: ./expressroute/how-expressroute-works.md
-          - text: Set up ExpressRoute for Microsoft Power Platform
+          - text: Set up ExpressRoute for Power Platform
             url: ./expressroute/setup.md
 
   # Card
