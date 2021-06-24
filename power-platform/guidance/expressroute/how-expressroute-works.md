@@ -24,7 +24,7 @@ can order multiple ExpressRoute circuits. Each circuit can be in the same or
 different regions and can be connected to your premises through different
 connectivity providers.
 
-Connectivity provider are set of partners who help you setup the ExpressRoute so
+Connectivity providers are set of partners who help you set up the ExpressRoute so
 that your on-premises infrastructure and Microsoft cloud can be connected. For the
 complete list of ExpressRoute connectivity partners, see [ExpressRoute connectivity providers](/azure/expressroute/expressroute-locations#partners). the availability of these providers will depend on the location you choose
 to connect from.
@@ -34,7 +34,7 @@ optimized connection is set up directly through the ExpressRoute connectivity
 provider’s infrastructure to the edge of the Microsoft network. This connection
 could be optimized without ExpressRoute, but Internet connectivity is typically
 provided through a series of partnerships and relationships between
-telecommunications providers, which can lead to sub-optimal connectivity paths
+telecommunications providers, which can lead to suboptimal connectivity paths
 being taken to delivering a customer’s network traffic to a specific
 destination.
 
@@ -55,7 +55,7 @@ depending on which kind of service is being requested:
     Microsoft 365, Microsoft Dynamics 365 or Microsoft Power Platform services
 
 -   **Private peering**: routes requests to the customer’s private Azure
-    services, e.g. IaaS Virtual Machines
+    services, for example, IaaS Virtual Machines
 
 Each peering is a pair of independent Border Gateway Protocol (BGP) sessions,
 each configured redundantly for high availability. To ensure true resilience,
@@ -139,7 +139,7 @@ Platform services will be routed through the Microsoft peering. Microsoft
 assigns the URLs and IPs for Power Platform, Dynamics 365 Customer Engagement
 applications and Microsoft 365 services to the Microsoft Peering, so any traffic
 routed to them will be advertised and enabled through the Microsoft Peering.
-Note that unlike Microsoft 365, Power Platform does not have designated BGP
+Unlike Microsoft 365, Power Platform does not have designated BGP
 communities. (BGP communities are covered here).
 
 ![Traffic using Microsoft Peering. Once it reaches the Microsoft edge, it is no longer a designated connection within the Microsoft network.](media/traffic-using-microsoft-peering.png)

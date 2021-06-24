@@ -1,6 +1,6 @@
 ---
 title: "Benefits of using ExpressRoute with Microsoft Power Platform | MicrosoftDocs"
-description: "Benefits of using ExpressRoute with Microsoft Power Platform including GDPR, compliance and network traffic predicability."
+description: "Benefits of using ExpressRoute with Microsoft Power Platform including GDPR, compliance, and network traffic predicability."
 author: taiki-yoshida
 ms.service: power-platform
 ms.topic: conceptual
@@ -42,8 +42,7 @@ by Power Platform meets.
 
 One of the regulations that may make ExpressRoute the right choice for your
 organization is the General Data Protection Regulation (GDPR). GDPR is a
-complex regulation that might require significant changes in how you gather, use
-and manage data. Microsoft has a long history of helping our customers comply
+complex regulation that might require significant changes in how you gather, use, and manage data. Microsoft has a long history of helping our customers comply
 with complex regulations, and when it comes to preparing for the GDPR, we are
 your partner on this journey.
 
@@ -70,14 +69,14 @@ minimizes the chances of any contention with other traffic either from the same
 organization or any other organization.
 
 If the main issue is just within the bandwidth available, internal routing
-through the ExpressRoute connectivity provider or traffic in the connection
-between the customer and the connectivity provider, then this can be resolved
+through the ExpressRoute connectivity provider, or traffic in the connection
+between the customer and the connectivity provider, this can be resolved
 through either higher bandwidth and more reliable or better optimized
 connections without the need for ExpressRoute.
 
 These would in fact be prerequisites to ExpressRoute anyway, so if the problem
 can be resolved directly through better Internet connections then ExpressRoute
-may not provide additional value.
+may not provide more value.
 
 > [!div class="nextstepaction"]
 > [Next step: Understand how ExpressRoute works](how-expressroute-works.md)

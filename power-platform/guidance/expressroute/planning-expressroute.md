@@ -27,7 +27,7 @@ environment.
 
 Setting up ExpressRoute requires several pre-requisites to be considered and set
 up. These can lead to unexpected costs and activities, which if not pre-planned
-can impact the project as well as the continuing operation of other services.
+can impact the project and the continuing operation of other services.
 
 ### External pre-requisites
 
@@ -58,11 +58,11 @@ As part of planning, the following need to be allowed for:
 **Setup time**
 
 -   With the need in some cases for physical hardware setup, the setup time for
-    this needs to be planned into implementation schedules.
+    this need to be planned into implementation schedules.
 
 **Configuration skills / resources**
 
--   The majority of the configuration complexity will be in setting up the
+-   Most the configuration complexity will be in setting up the
     internal network routing within the customer network. Ensuring availability
     of skilled people to do this is essential.
 
@@ -116,7 +116,7 @@ and direct the traffic that way.
 
 #### Configuring ExpressRoute for distributed user bases
 
-ExpressRoute is designed to provide private, dedicated and therefore predictable
+ExpressRoute is designed to provide private, dedicated, and therefore predictable
 connections from a customer’s environment to the Microsoft network. Having a
 dedicated and direct connection through the connectivity provider to Microsoft
 will reduce the potential for contention from other traffic on shared
@@ -149,7 +149,7 @@ gives you the ability to connect directly into Microsoft’s global network.
 
 When connecting to cloud services and being constrained by challenges in the WAN
 connections, establishing local Internet breakouts from local branches can often
-be very beneficial to performance, avoiding the slower WAN connection and
+be beneficial to performance, avoiding the slower WAN connection and
 utilizing the reach of the connectivity provider to achieve a more direct
 connection to the cloud service.
 
@@ -181,9 +181,9 @@ location.
 For more-physically-distributed networks, it may be valuable to have several
 hubs connected to ExpressRoute to minimize the number of ExpressRoute
 connections needed while still offering a more local connection point for each
-user. In this case it’s important to ensure that unique public IPs are published
+user. In this case, it’s important to ensure that unique public IPs are published
 via each ExpressRoute circuit; each of these subnets must be distinct, which
-requires as many publicly-facing subnets as ExpressRoute connections.
+requires as many publicly facing subnets as ExpressRoute connections.
 
 ![Separate ExpressRoute circuit is used for each country](media/two-separate-expressroute-circuit.png)
 
@@ -201,7 +201,7 @@ Internet and others through ExpressRoute:
 ExpressRoute (standard) offers connectivity only within a specific geographic
 region; ExpressRoute Premium is required to offer multi-geo access from a single
 ExpressRoute connection point. This would be relevant if, for example, a
-customer had US-based offices as well as European offices, all using a single
+customer had US-based offices and European offices, all using a single
 Power Platform environment. If the customer’s Power Platform tenant is deployed
 in the US, their ExpressRoute circuit in Europe needs to be the Premium SKU. If
 their Power Platform tenant is in Europe, their US circuit would need to be
@@ -241,7 +241,7 @@ services are carefully considered.
 
 ## External connectivity to/from Power Platform
 
-When making connections to Power Platform from customer locations there are
+When making connections to Microsoft Power Platform from customer locations, there are
 multiple traffic types to be considered. This may lead to both peering types,
 including Microsoft and Private Peering, but the same ExpressRoute circuit can
 be used including these different peering types:
@@ -260,7 +260,7 @@ Description Traffic Type and
 The following types of outbound traffic can occur directly from Power Platform
 services to customer services.
 
-For each of these it is important to note that the customer service must be
+For each of these, it is important to note that the customer service must be
 publicly addressable with a public IP that can be resolved through public DNS by
 the Power Platform services.
 
@@ -276,7 +276,7 @@ Internet and secure them as such.
 | Description                       | Traffic Type and Direction                  | Peering Type                                                                                                                     | Purpose                                                                                                                                |
 |-----------------------------------|---------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
 | Web Services                      | Https Outbound from Power Platform services | Microsoft Peering  Publish web services on public IP addresses that are within ExpressRoute configured subnets                   | Custom plug ins/ workflow activities can make web service requests to external services                                                |
-| Exchange Integration: hybrid mode | Https Outbound from Power Platform services | Microsoft Peering Web services would need to be published on public IP addresses that are within ExpressRoute configured subnets | Exchange Web Services requests from Server Side Synchronization for Hybrid deployments (Power Platform services, Exchange On-Premises) |
+| Exchange Integration: hybrid mode | Https Outbound from Power Platform services | Microsoft Peering Web services would need to be published on public IP addresses that are within ExpressRoute configured subnets | Exchange Web Services requests from Server-Side Synchronization for Hybrid deployments (Power Platform services, Exchange On-Premises) |
 | Connectors                        | Https Inbound from Power Platform services  | Microsoft Peering                                                                                                                | Requests from Power Platform services through the APIMs via Connectors using On-premises data gateway                                  |
 
 *Inbound Traffic (Traffic to Power Platform services)*
@@ -332,12 +332,12 @@ The implications of this need to be considered in the ExpressRoute routing.
 | Description          | Traffic Type and Direction                       | Peering Type                                                                                                                                                                                    | Purpose                                                                                                                                                                                                                                                                       |
 |----------------------|--------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Portals              | Https Inbound to Azure                           | Internal to datacenter, with the exception of static content, which utilizes Azure CDN. (Azure CDN is not supported by ExpressRoute, so static content will travel across the public Internet.) | Host public facing services. There may be scenarios where internal employees may access these resources, so may wish traffic to travel across ExpressRoute rather than public Internet                                                                                        |
-| Learning Path        | Https Inbound to Azure                           | Utilizes Azure CDN which is not supported by ExpressRoute so will travel across public Internet                                                                                                 | This is hosted on a public facing service as it does not contain private customer data. For predictability purposes, there may be scenarios where it is desirable to route this via ExpressRoute                                                                              |
+| Learning Path        | Https Inbound to Azure                           | Utilizes Azure CDN that is not supported by ExpressRoute so will travel across public Internet                                                                                                 | This is hosted on a public facing service as it does not contain private customer data. For predictability purposes, there may be scenarios where it is desirable to route this via ExpressRoute                                                                              |
 | Service Bus          | Https Inbound to Azure Service Bus               | Internal to Data Center                                                                                                                                                                         | Pull events from Azure Service Bus that have been placed there either as standard event registration or from custom plug-ins/ workflow activities                                                                                                                             |
 | Web Service Requests | Inbound from Azure IaaS/PaaS                     | Internal to Data Center                                                                                                                                                                         | Customers can host custom applications in Azure and make requests of Power Platform web services                                                                                                                                                                              |
 | Web Service Requests | Outbound to Azure IaaS/PaaS                      | Internal to Data Center                                                                                                                                                                         | Customers can implement custom plug ins/workflow activities that make requests of Azure hosted services                                                                                                                                                                       |
 | Dataflows            | Data connections to Azure Data Lake Storage Gen2 | Internal to Data Center                                                                                                                                                                         | Providing analytics capabilities and allow access to big data solutions incorporating data from both Power Platform services and other sources as well as the resulting insight from the analytics.                                                                           |
-| Azure Data Lake      | Data connections to Azure Data Lake Storage Gen2 | Internal to Data Center                                                                                                                                                                         | Providing analytics capabilities will allow access to big data solutions incorporating data from both Power Platform services and other sources as well as the resulting insight from the analytics.                                                                          |
+| Azure Data Lake      | Data connections to Azure Data Lake Storage Gen2 | Internal to Data Center                                                                                                                                                                         | Providing analytics capabilities will allow access to big data solutions incorporating data from both Power Platform services and other sources and the resulting insight from the analytics.                                                                          |
 | Azure SQL            | Data connections to Azure SQL services           | Internal to Data Center                                                                                                                                                                         | With capabilities such as Export to Data Warehouse, the use of an Azure SQL instance to hold replicas of Microsoft Dataverse data either for reporting or replication purposes will increase. It may be valuable to protect connections to these resources over ExpressRoute. |
 
 There may be other public services in the future that also connect Internally to

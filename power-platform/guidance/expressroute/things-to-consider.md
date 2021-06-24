@@ -60,9 +60,9 @@ such as:
 
 -   Saturation of the WAN link
 
--   Proxy processing, incurring additional latency and overhead
+-   Proxy processing, incurring more latency and overhead
 
--   Inefficient internal routing (e.g. routing within the corporate network
+-   Inefficient internal routing (for example, routing within the corporate network
     rather than out to the Internet earlier)
 
 If Power Platform traffic suffers from those challenges, then performance at the
@@ -70,7 +70,7 @@ client may also suffer.
 
 ### Poor Internet connectivity
 
-Addition of cloud services may introduce additional consumption and load on the
+Addition of cloud services may introduce extra consumption and load on the
 corporate connection to the Internet. This can be caused if the Internet
 connection:
 
@@ -80,7 +80,7 @@ connection:
     Microsoft’s network is controlled by them; the efficiency of that routing
     can vary
 
--   Suffers from a mix of traffic which impacts the quality of the connection
+-   Suffers from a mix of traffic, which impacts the quality of the connection
     (for example, multiple Internet-based training, Microsoft Stream or YouTube videos
     with traffic to a business-critical application competing for the available
     bandwidth). This may be sufficient overall for the volume of traffic but
@@ -131,7 +131,7 @@ to enable routing only to Azure IaaS machines but not to Microsoft 365). It is
 possible, though, to use BGP communities to configure traffic for specific
 services only.
 
-This is particularly relevant for Power Platform services with Microsoft 365
+This is relevant for Power Platform services with Microsoft 365
 presence, where routing via ExpressRoute may be desirable for one service but
 not for both or only for certain individual services of Microsoft 365 such as
 Microsoft Teams.
@@ -178,32 +178,33 @@ challenges.
 
 ![Diagram showing that Microsoft peering does not allow only specific services to traffic.](media/microsoft-365-power-platform-network.png)
 
-While, by default, enabling ExpressRoute for Microsoft peering will route all
-Power Platform and Microsoft 365 traffic through the ExpressRoute connection, it
+While enabling ExpressRoute for Microsoft peering will route all
+Microsoft Power Platform and Microsoft 365 traffic through the ExpressRoute connection, it
 is possible to use BGP Communities tags to control the routing so that only
 specific services such as Power Platform services, but not other Microsoft 365
 services, utilize the ExpressRoute connection. In particular, not all Microsoft
-365 services are designed to work with ExpressRoute. Currently, Power Platform
-services do not have a designated BGP communities like [those with Microsoft 365 services](https://docs.microsoft.com/azure/expressroute/expressroute-routing#service-to-bgp-community-value).
+365 services are designed to work with ExpressRoute. Currently, Microsoft Power Platform
+services do not have a designated BGP community like [those with Microsoft 365 services](https://docs.microsoft.com/azure/expressroute/expressroute-routing#service-to-bgp-community-value).
 Instead, [regional BPG communities](/azure/expressroute/expressroute-routing#bgp)
 should be used to match with the region where [Microsoft Power Platform environment](/power-platform/admin/environments-overview)
 was created.
 
-For further information on routing Microsoft 365, refer to the documentation on
-[selective routing with Microsoft 365](/microsoft-365/enterprise/azure-expressroute?view=o365-worldwide).As
-Power Platform services work partially as part of the Microsoft 365 service,
+For more information on routing Microsoft 365, see the documentation on
+[selective routing with Microsoft 365](/microsoft-365/enterprise/azure-expressroute?view=o365-worldwide).
+
+As Microsoft Power Platform services work partially as part of the Microsoft 365 service,
 many crossover services such as the admin portal and authentication are also
 required. Not all of these are possible to protect using ExpressRoute; the
-Microsoft 365 Portal for example is not published across ExpressRoute.
+Microsoft 365 Portal, for example,  is not published across ExpressRoute.
 
 ## Support for sovereign cloud
 
-Customers required to meet government or country specific regulations can choose
+Customers required to meet government or country-specific regulations can choose
 to use the sovereign cloud. Sovereign clouds are physically located in a region
 to meet the requirements specific to that particular government or country. For
 example, Power Apps for Government Community Cloud (GCC) is located in the
-United States, where it meets US Government specific regulations and
-certifications, as well as protocols to meet those requirements.
+United States, where it meets US Government-specific regulations and
+certifications, and protocols to meet those requirements.
 
 Watch this video describing how Microsoft Power Platform is available with Sovereign clouds: [Video: Sovereign Clouds with Marty Carreras](https://www.youtube.com/watch?v=DMg3uQ5EFLI).
 
@@ -288,11 +289,11 @@ More information on [Azure ExpressRoute pricing](https://azure.microsoft.com/pri
 
 -   To enable ExpressRoute, the network routing must be set up internally.
 
--   For many customers there is an internal cross-charge to the network team or
+-   For many customers, there is an internal cross-charge to the network team or
     an external cost to an IT outsourcing provider, or at least opportunity cost
     for the effort of internal staff focusing on this.
 
-## Impacts to existing Microsoft Power Platform services, Microsoft 365, and Azure that are in use
+## Impacts to existing Microsoft Power Platform, Microsoft 365, and Azure services in use
 
 When Microsoft peering is enabled, this will configure traffic for Power
 Platform services, Microsoft 365, and Azure to be routed via ExpressRoute.
@@ -306,12 +307,11 @@ services.
 
 ## Reusing ExpressRoute across multiple online services
 
-A single ExpressRoute connection can be used to access multiple online services
-for example, Microsoft Power Platform, Dynamics 365, Microsoft 365, and Microsoft Azure.
+A single ExpressRoute connection can be used to access multiple online services, for example, Microsoft Power Platform, Dynamics 365, Microsoft 365, and Microsoft Azure.
 
 ![Diagram showing shared ExpressRoute connection with Microsoft public services and Microsoft Azure](media/reuse-network.png)
 
-Note that ExpressRoute itself does not separate different types of Microsoft
+ExpressRoute itself does not separate different types of Microsoft
 services from a particular subnet. It is possible to utilize BGP Community tags
 to control the routing of traffic to particular services across ExpressRoute.
 Microsoft does not route traffic back across ExpressRoute selectively based on

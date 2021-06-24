@@ -1,5 +1,5 @@
 ---
-title: "Setting up ExpressRoute for Microsoft Power Platform | MicrosoftDocs"
+title: "Set up ExpressRoute for Microsoft Power Platform | MicrosoftDocs"
 description: "Detailed explanation of the kinds of network setup required for enabling ExpressRoute with Microsoft Power Platform"
 author: taiki-yoshida
 manager: devkeydet
@@ -17,10 +17,10 @@ search.app:
   - Powerplatform
 ---
 
-# Setting up ExpressRoute for Power Platform
+# Set up ExpressRoute for Microsoft Power Platform
 
-Power Platform itself does not need to be configured specifically for
-ExpressRoute. Power Platform as a service uses Microsoft Azure behind the scenes
+Microsoft Power Platform itself does not need to be configured specifically for
+ExpressRoute. Microsoft Power Platform as a service uses Microsoft Azure behind the scenes
 and has been onboarded to support use with ExpressRoute. Therefore, there is no
 specific configuration of the Power Platform environments themselves that need
 to specify that ExpressRoute is being used.
@@ -39,13 +39,13 @@ interactions you wish to route via ExpressRoute.
 
 ## Server traffic
 
-#### Inbound traffic (Traffic to Power Platform services)
+#### Inbound traffic (Traffic to Microsoft Power Platform services)
 
 Configuring for inbound traffic will require establishing internal routing
 within the data center to prefer connections through the ExpressRoute circuit
 for traffic to Microsoft services.
 
-#### Outbound traffic (Traffic from Power Platform services)
+#### Outbound traffic (Traffic from Microsoft Power Platform services)
 
 Where traffic is routed back out through ExpressRoute, such as to an on-premises
 server, there are no controls within ExpressRoute to lock down the services that
@@ -55,9 +55,9 @@ traffic.
 
 Requests could be made from other services to a customer service. Particularly
 for Power Platform services, it is a shared service, so it is not possible to
-lock the requests down to a particular set of machines. It is necessary to
+lock down the requests to a particular set of machines. It is necessary to
 consider traffic back through ExpressRoute as coming from an external source,
-because although it is coming from a Microsoft datacenter, Microsoft is not
+because although it is coming from a Microsoft data center, Microsoft is not
 controlling the source of the requests and other customer services could attempt
 connections. Any connections should be controlled as if they are from an
 external gateway.
@@ -67,7 +67,7 @@ external gateway.
 In order to be routed back through ExpressRoute, any service being connected to
 must:
 
--   Have a publicly-discoverable URL
+-   Have a publicly discoverable URL
 
 -   Have a public IP address that matches a subnet configured for an
     ExpressRoute circuit peering definition
@@ -75,7 +75,7 @@ must:
 -   Be in the same region as the requesting service if ExpressRoute Standard is
     used, or in any region if ExpressRoute Premium is used
 
-This approach is particularly valuable for a number of common integration
+This approach is valuable for many common integration
 scenarios between online and on-premises services.
 
 Outbound traffic from a Power Platform resource will need the target IP address
@@ -87,14 +87,14 @@ gateway should be used to inspect and control inbound traffic from ExpressRoute.
 The IP subnets that are used can be found here:
 
 -   [System requirements, limits, and configuration values for Power
-    Apps](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/limits-and-config#ip-addresses)
+    Apps](/powerapps/maker/canvas-apps/limits-and-config#ip-addresses)
 
 -   [IP address configuration for Power
-    Automate](https://docs.microsoft.com/en-us/power-automate/ip-address-configuration#connectors)
+    Automate](/power-automate/ip-address-configuration#connectors)
 
 ## Client traffic
 
-Users may be on a variety of clients, such as PCs on the corporate network or
+Users may be on various clients, such as PCs on the corporate network or
 mobile devices on public connections. Client traffic would typically be inbound
 to the Microsoft services rather than outbound back to the client. You should
 note that ExpressRoute is not enforced as the ONLY route to Power Platform.
@@ -126,7 +126,7 @@ Platform, it is important to realize that ExpressRoute:
     utilize ExpressRoute, the proxy/routing rules within the corporate network
     determine this and must be set up by the customer.
 
--   Does not prevent other connections (e.g., users on the Internet) from going
+-   Does not prevent other connections (for example, users on the Internet) from going
     directly to Power Platform.
 
 ![Diagram showing that Power Platform does not prevent direct access. Setting up ExpressRoute does not ensure direct access is disabled.](media/direct-access.png)
@@ -141,14 +141,14 @@ to manage this:
 
 -   Azure AD conditional access and Intune can be used to control from which
     devices and locations access is allowed and to control the device
-    configuration such as proxies, VPN and routing.
+    configuration such as proxies, VPN, and routing.
 
 ![Diagram of mobile workers directly connecting to Power Platform, where as office workers use corporate wifi or VPN and access via ExressRoute.](media/multiple-connectivity.png)
 
 ## Common questions and scenarios with ExpressRoute
 
 When implementing ExpressRoute, it is as important to understand what it does
-not do as what it does. In this section we will explore some common questions
+not do as what it does. In this section, we will explore some common questions
 and scenarios to be considered.
 
 ### Configuration of customer network routing
