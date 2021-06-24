@@ -19,13 +19,13 @@ Now that you have decided to use ExpressRoute for Microsoft Power Platform, it i
 important to plan the deployment to allow for the customer’s needs and
 environment.
 
-## Pre-requisites for ExpressRoute
+## Prerequisites for ExpressRoute
 
 Setting up ExpressRoute requires several pre-requisites to be considered and set
 up. These can lead to unexpected costs and activities, which if not pre-planned
 can impact the project and the continuing operation of other services.
 
-### External pre-requisites
+### External prerequisites
 
 ExpressRoute does not provide the physical connection itself; it provides the
 private connectivity over an already established physical connection. The
@@ -33,7 +33,7 @@ physical connectivity must first be set up by a connectivity provider. There are
 several ways this connectivity can be established with existing ExpressRoute
 partners. The ExpressRoute documentation gives detailed explanations of the
 options and the [currently available
-partners](https://docs.microsoft.com/azure/expressroute/expressroute-locations#global-commercial-azure).
+partners](/azure/expressroute/expressroute-locations#global-commercial-azure).
 
 As part of planning, the following need to be allowed for:
 
@@ -79,7 +79,7 @@ When planning for routing Microsoft Power Platform traffic, there are various ty
 traffic depending on the use and configuration of Microsoft Power Platform for a given
 customer.
 
-To understand how to configure ExpressRoute for Power Platform, the different
+To understand how to configure ExpressRoute for Microsoft Power Platform, the different
 uses and connections to and from Microsoft Power Platform need to be considered. This will
 vary based on the Microsoft Power Platform services and the specific features or
 capabilities being used by that customer.
@@ -312,7 +312,7 @@ Platform services and Azure is handled internally. Separately the customer may
 make requests to the Service Bus to retrieve information, and this can be
 managed through public peering.
 
-## Customer Public/ Private Cloud connectivity to/ from Power Platform services 
+## Customer public/private cloud connectivity to/from Microsoft Power Platform services 
 
 Power Platform services also allow direct integration with public or private
 Azure resources:
