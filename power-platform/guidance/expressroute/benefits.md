@@ -2,35 +2,31 @@
 title: "Benefits of using ExpressRoute with Microsoft Power Platform | MicrosoftDocs"
 description: "Benefits of using ExpressRoute with Microsoft Power Platform including GDPR, compliance and network traffic predicability."
 author: taiki-yoshida
-manager: devkeydet
 ms.service: power-platform
-ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/30/2021
 ms.author: tayoshi
 ms.reviewer: kathyos
-search.audienceType: 
-  - admin
 search.app: 
   - D365CE
   - PowerApps
   - Powerplatform
 ---
 
-# Benefits of using ExpressRoute
+# Benefits of using ExpressRoute with Microsoft Power Platform
 
-The benefits of using ExpressRoute to help your organization are:
+The benefits of using ExpressRoute for your organization are:
 
--   Compliance: not routing customer information via the public Internet
+-   Compliance: Not routing customer information via the public Internet
 
--   Predictability: dedicated connection avoiding conflict with other Internet
+-   Predictability: Dedicated connection avoiding conflict with other Internet
     traffic
 
 ![Overview of network diagram using ExpressRoute](media/expressroute-network-overview.png)
 
 ## Compliance
 
-Routing the traffic to Power Platform via a private connection avoids routing of
+Routing the traffic to Microsoft Power Platform through a private connection avoids routing of
 sensitive data over the public Internet.
 
 Some customers need to show for regulatory purposes that data is never passed
@@ -45,8 +41,8 @@ by Power Platform meets.
 ### GDPR
 
 One of the regulations that may make ExpressRoute the right choice for your
-organization is the GDPR. The General Data Protection Regulation (GDPR) is a
-complex regulation that may require significant changes in how you gather, use
+organization is the General Data Protection Regulation (GDPR). GDPR is a
+complex regulation that might require significant changes in how you gather, use
 and manage data. Microsoft has a long history of helping our customers comply
 with complex regulations, and when it comes to preparing for the GDPR, we are
 your partner on this journey.
@@ -59,8 +55,8 @@ mean ExpressRoute is the only way to be compliant with GDPR, and using the
 public internet with correct security and protection measures will still make it
 compliant as well.
 
-You can find more information about GDPR here: [GDPR
-Overview](https://www.microsoft.com/en-us/trust-center/privacy/gdpr-overview)
+More information: [GDPR
+Overview](https://www.microsoft.com/trust-center/privacy/gdpr-overview)
 
 ## Network traffic predictability
 
@@ -79,7 +75,7 @@ between the customer and the connectivity provider, then this can be resolved
 through either higher bandwidth and more reliable or better optimized
 connections without the need for ExpressRoute.
 
-These would in fact be pre-requisites to ExpressRoute anyway, so if the problem
+These would in fact be prerequisites to ExpressRoute anyway, so if the problem
 can be resolved directly through better Internet connections then ExpressRoute
 may not provide additional value.
 
