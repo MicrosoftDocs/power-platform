@@ -291,7 +291,7 @@ customer network.
 Microsoft Power Platform services use and integrate with several other Microsoft online
 services hosted both in Microsoft 365 and Azure.
 
-![Diagram showing different connection types that exist between Microsoft Power Platform services and an internal network](media/c70303c7624a798035ee394b9b5335d8.png)
+![Diagram showing different connection types that exist between Microsoft Power Platform services and an internal network](media/internal-network-connection-types.png)
 
 | Description            | Traffic Type and Direction                     | Purpose                                                                                                                                                                                             |
 |------------------------|------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
