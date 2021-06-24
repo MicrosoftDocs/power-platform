@@ -1,25 +1,21 @@
 ---
-title: "Things to consider prior to using ExpressRoute for Power Platform | MicrosoftDocs"
+title: "Plan an ExpressRoute deployment for use with Microsoft Power Platform | MicrosoftDocs"
 description: "Points to consider before setting up ExpressRoute`"
 author: taiki-yoshida
-manager: devkeydet
 ms.service: power-platform
-ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/30/2021
 ms.author: tayoshi
 ms.reviewer: kathyos
-search.audienceType: 
-  - admin
 search.app: 
   - D365CE
   - PowerApps
   - Powerplatform
 ---
 
-# Planning an ExpressRoute deployment for use with Power Platform
+# Plan an ExpressRoute deployment for use with Microsoft Power Platform
 
-Now that you have decided to use ExpressRoute for Power Platform, it is
+Now that you have decided to use ExpressRoute for Microsoft Power Platform, it is
 important to plan the deployment to allow for the customer’s needs and
 environment.
 
@@ -77,15 +73,15 @@ Microsoft ExpressRoute connections themselves. This will require:
 -   Configuration within the Azure subscription of the ExpressRoute circuits,
     which is done through the Azure tools
 
-## Planning the routing configuration for Power Platform traffic across ExpressRoute
+## Planning the routing configuration for Microsoft Power Platform traffic across ExpressRoute
 
-When planning for routing Power Platform traffic, there are various types of
-traffic depending on the use and configuration of Power Platform for a given
+When planning for routing Microsoft Power Platform traffic, there are various types of
+traffic depending on the use and configuration of Microsoft Power Platform for a given
 customer.
 
 To understand how to configure ExpressRoute for Power Platform, the different
-uses and connections to and from Power Platform need to be considered. This will
-vary based on the Power Platform services and the specific features or
+uses and connections to and from Microsoft Power Platform need to be considered. This will
+vary based on the Microsoft Power Platform services and the specific features or
 capabilities being used by that customer.
 
 ### Routing configuration
@@ -103,11 +99,11 @@ configuration. The WAN must be set up in such a way that:
 1.  The route via the network subnet is configured for ExpressRoute,
 
 2.  Or the failover circuit must be chosen in preference to the public Internet
-    connection to Power Platform.
+    connection to Microsoft Power Platform.
 
 Therefore, identifying which subnets within the customer network should be the
 targets for the main and fallback BGP session connections are important to make
-sure that the Power Platform prefixes prefer that route. It is not necessary to
+sure that Microsoft Power Platform prefixes prefer that route. It is not necessary to
 specifically configure the services at each end, as this configuration is done
 by advertising the IP subnets/prefixes through this connection. When a request
 is initiated, the routing algorithm would see that direct BGP connection as the
@@ -202,9 +198,9 @@ ExpressRoute (standard) offers connectivity only within a specific geographic
 region; ExpressRoute Premium is required to offer multi-geo access from a single
 ExpressRoute connection point. This would be relevant if, for example, a
 customer had US-based offices and European offices, all using a single
-Power Platform environment. If the customer’s Power Platform tenant is deployed
+Microsoft Power Platform environment. If the customer’s Microsoft Power Platform tenant is deployed
 in the US, their ExpressRoute circuit in Europe needs to be the Premium SKU. If
-their Power Platform tenant is in Europe, their US circuit would need to be
+their Microsoft Power Platform tenant is in Europe, their US circuit would need to be
 Premium.
 
 #### Avoiding asymmetric routing
@@ -239,72 +235,72 @@ As you can see, it is important to determine how the routing is managed within
 the customer’s WAN and ensure that the paths to and from Microsoft cloud
 services are carefully considered.
 
-## External connectivity to/from Power Platform
+## External connectivity to/from Microsoft Power Platform
 
 When making connections to Microsoft Power Platform from customer locations, there are
 multiple traffic types to be considered. This may lead to both peering types,
 including Microsoft and Private Peering, but the same ExpressRoute circuit can
 be used including these different peering types:
 
-![Overview of external connectivity with Power Platform](media/external-connectivity-with-power-platform.png)
+![Overview of external connectivity with Microsoft Power Platform](media/external-connectivity-with-power-platform.png)
 
-The following different connection types exist between Power Platform services
+The following different connection types exist between Microsoft Power Platform services
 and an external network.
 
-![Diagram showing different connection types that exist between Power Platform services and an external network](media/connection-types-used-in-power-platform.png)
+![Diagram showing different connection types that exist between Microsoft Power Platform services and an external network](media/connection-types-used-in-power-platform.png)
 
 Description Traffic Type and
 
-*Outbound Traffic (Traffic from Power Platform services)*
+*Outbound Traffic (Traffic from Microsoft Power Platform services)*
 
-The following types of outbound traffic can occur directly from Power Platform
+The following types of outbound traffic can occur directly from Microsoft Power Platform
 services to customer services.
 
 For each of these, it is important to note that the customer service must be
 publicly addressable with a public IP that can be resolved through public DNS by
-the Power Platform services.
+the Microsoft Power Platform services.
 
 This IP address would also need to be advertised to Microsoft through
-ExpressRoute so that the internal network routing within Power Platform services
+ExpressRoute so that the internal network routing within Microsoft Power Platform services
 knows to route it via that ExpressRoute connection.
 
-Power Platform services can't specify which service instance or customer
+Microsoft Power Platform services can't specify which service instance or customer
 organization can make requests to which IP addresses. It is important therefore
 to treat requests inbound to the corporate network as if they were from the
 Internet and secure them as such.
 
 | Description                       | Traffic Type and Direction                  | Peering Type                                                                                                                     | Purpose                                                                                                                                |
 |-----------------------------------|---------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| Web Services                      | Https Outbound from Power Platform services | Microsoft Peering  Publish web services on public IP addresses that are within ExpressRoute configured subnets                   | Custom plug ins/ workflow activities can make web service requests to external services                                                |
-| Exchange Integration: hybrid mode | Https Outbound from Power Platform services | Microsoft Peering Web services would need to be published on public IP addresses that are within ExpressRoute configured subnets | Exchange Web Services requests from Server-Side Synchronization for Hybrid deployments (Power Platform services, Exchange On-Premises) |
-| Connectors                        | Https Inbound from Power Platform services  | Microsoft Peering                                                                                                                | Requests from Power Platform services through the APIMs via Connectors using On-premises data gateway                                  |
+| Web Services                      | Https Outbound from Microsoft Power Platform services | Microsoft Peering  Publish web services on public IP addresses that are within ExpressRoute configured subnets                   | Custom plug ins/ workflow activities can make web service requests to external services                                                |
+| Exchange Integration: hybrid mode | Https Outbound from Microsoft Power Platform services | Microsoft Peering Web services would need to be published on public IP addresses that are within ExpressRoute configured subnets | Exchange Web Services requests from Server-Side Synchronization for Hybrid deployments (Microsoft Power Platform services, Exchange On-Premises) |
+| Connectors                        | Https Inbound from Microsoft Power Platform services  | Microsoft Peering                                                                                                                | Requests from Microsoft Power Platform services through the APIMs via Connectors using On-premises data gateway                                  |
 
-*Inbound Traffic (Traffic to Power Platform services)*
+*Inbound Traffic (Traffic to Microsoft Power Platform services)*
 
-The following inbound traffic is possible to Power Platform services from the
+The following inbound traffic is possible to Microsoft Power Platform services from the
 customer network.
 
 | Description         | Traffic Type and Direction               | Peering Type                                                                         | Purpose                                                                                                                               |
 |---------------------|------------------------------------------|--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| Client Connectivity | Https Inbound to Power Platform services | Microsoft Peering  Direct Internet connection for static content served by Azure CDN | Client requests for Power Platform services UI                                                                                        |
-| Web Services        | Https Inbound to Power Platform services | Microsoft Peering                                                                    | Requests to Power Platform services through the web service APIs (SOAP, Web API). Either from a standard or custom client application |
-| Connectors          | Https Inbound to Power Platform services | Microsoft Peering                                                                    | Responses back to Power Platform services through the APIMs via Connectors using On-premises data gateway                             |
+| Client Connectivity | Https Inbound to Microsoft Power Platform services | Microsoft Peering  Direct Internet connection for static content served by Azure CDN | Client requests for Microsoft Power Platform services UI                                                                                        |
+| Web Services        | Https Inbound to Microsoft Power Platform services | Microsoft Peering                                                                    | Requests to Microsoft Power Platform services through the web service APIs (SOAP, Web API). Either from a standard or custom client application |
+| Connectors          | Https Inbound to Microsoft Power Platform services | Microsoft Peering                                                                    | Responses back to Microsoft Power Platform services through the APIMs via Connectors using On-premises data gateway                             |
 
-## Internal Cloud connectivity within Power Platform services
+## Internal Cloud connectivity within Microsoft Power Platform services
 
-Power Platform services use and integrate with several other Microsoft online
+Microsoft Power Platform services use and integrate with several other Microsoft online
 services hosted both in Microsoft 365 and Azure.
 
-![Diagram showing different connection types that exist between Power Platform services and an internal network](media/c70303c7624a798035ee394b9b5335d8.png)
+![Diagram showing different connection types that exist between Microsoft Power Platform services and an internal network](media/c70303c7624a798035ee394b9b5335d8.png)
 
 | Description            | Traffic Type and Direction                     | Purpose                                                                                                                                                                                             |
 |------------------------|------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Exchange Integration   | Https Outbound to Microsoft 365                | Exchange Web Service Requests to Exchange Online from Server-Side Synchronization                                                                                                                   |
-| SharePoint Integration | Https Outbound to Microsoft 365                | SharePoint Web Service Requests to SharePoint Online from Power Platform services                                                                                                                   |
+| SharePoint Integration | Https Outbound to Microsoft 365                | SharePoint Web Service Requests to SharePoint Online from Microsoft Power Platform services                                                                                                                   |
 | Service Bus            | Https Outbound to Azure Service Bus            | Push events onto Azure Service Bus either as standard event registration or from custom plug ins/ workflow activities                                                                               |
 | Data Sync              | Https Inbound from Azure PaaS                  | Inbound Change Tracking requests for synchronization of data services including Search/ Offline/Customer Insight                                                                                    |
 | Authentication         | Https Outbound to Azure AD                     | Most authentication done as passive redirects and claims tokens. But some synchronization of data from Azure AD directly                                                                            |
-| Dataflows              | Https Outbound to Azure Data Lake Storage Gen2 | Providing analytics capabilities and allow access to big data solutions incorporating data from both Power Platform services and other sources as well as the resulting insight from the analytics. |
+| Dataflows              | Https Outbound to Azure Data Lake Storage Gen2 | Providing analytics capabilities and allow access to big data solutions incorporating data from both Microsoft Power Platform services and other sources as well as the resulting insight from the analytics. |
 | Connectors             | Https Outbound to Azure PaaS services          | Connections to various Azure PaaS services                                                                                                                                                          |
 
 The actual connectivity between these services, hosted either in Microsoft or
