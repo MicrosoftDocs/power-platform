@@ -99,7 +99,7 @@ To manage team members:
 
 ![Delete team members](media/dataverseteam9.png "Delete team members")
 
-## See also
+### See also
 
 [Manage group teams](manage-group-teams.md)
 
