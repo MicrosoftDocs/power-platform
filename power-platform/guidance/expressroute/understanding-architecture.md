@@ -99,7 +99,7 @@ region](/data-integration/gateway/service-gateway-data-region)
 to the closest region to minimize latency.
 
 More information: [On-premises data gateway
-architecture](https://docs.microsoft.com/data-integration/gateway/service-gateway-onprem-indepth).
+architecture](/data-integration/gateway/service-gateway-onprem-indepth).
 
 Depending on the connector you use with the on-premises systems, implementing
 ExpressRoute does not mean that you can remove the on-premises data gateway.
