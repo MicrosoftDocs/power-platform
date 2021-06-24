@@ -25,7 +25,7 @@ Power Platform self-service analytics enables you to export Power Apps inventory
 
 ## Azure resources 
 
-TBD  
+:::image type="content" source="media/azure-resources.png" alt-text="Azure resources":::
 
 ## View exported data
 
