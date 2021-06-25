@@ -49,7 +49,9 @@ You can store exported data for extended durations, as well as move data to data
 
 ## Extensible analytics with Azure Data Lake
 
-[TBD architecture diagram]
+Power Platform admin center self-service options based on Azure Data Lake allow you to extend Power Apps telemetry with data from other sources. Use Cloud Analytics & AI to take advantage of predictive analytics within service monitoring solutions. The following diagram illustrates an example of how to derive intelligence from Power Apps telemetry data. 
+
+:::image type="content" source="media/azure-resources.png" alt-text="Azure resources":::
 
 ## Data
 
