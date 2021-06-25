@@ -451,7 +451,7 @@ These cmdlets allow you to exempt or unexempt a specific resource from a DLP pol
 Get-PowerAppDlpPolicyExemptResources -TenantId -PolicyName 
 ```
 
-#### Create a new exempt resource list for a DLP policy 
+#### Create a new exempt resource list for a DLP policy 
 
 ```powershell
 New-PowerAppDlpPolicyExemptResources -TenantId -PolicyName -NewDlpPolicyExemptResources 
