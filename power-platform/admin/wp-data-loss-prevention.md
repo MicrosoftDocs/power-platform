@@ -182,7 +182,7 @@ To summarize: an app or flow can only use connectors from these individual group
 
 ## DLP resource exemption
 
-You can now exempt apps and flows that you trust from DLP policies using DLP resource exemption PowerShell cmdlets. 
+You can now exempt apps and flows that you trust from DLP policies using [DLP resource exemption PowerShell cmdlets](powerapps-powershell.md#dlp-resource-exemption-cmdlets). 
 
 ## Impact of DLP policies on apps and flows
 
