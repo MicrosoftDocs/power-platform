@@ -25,9 +25,9 @@ This topic discusses how you can use Power Apps exported data with other line of
 
 Power Platform self-service analytics enables you to export Power Apps inventory and usage data to [<u>Azure Data Lake Gen2</u>](/power-bi/transform-model/dataflows/dataflows-azure-data-lake-storage-integration) storage locations. To learn more about exporting Power Apps inventory and usage data to a [Common Data Model (CDM)](/common-data-model/) schema file, see [Set up Power Platform self-service analytics to export Power Apps inventory and usage data](self-service-analytics.md).
 
-## Azure resources 
+## Extensible analytics with Azure Data Lake
 
-Need intro for this section.
+Power Platform admin center self-service options based on Azure Data Lake allow you to extend Power Apps telemetry with data from other sources. Use Cloud Analytics & AI to take advantage of predictive analytics within service monitoring solutions. The following diagram illustrates an example of how to derive intelligence from Power Apps telemetry data. 
 
 :::image type="content" source="media/azure-resources.png" alt-text="Azure resources":::
 
