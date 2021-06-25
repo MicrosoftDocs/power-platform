@@ -21,7 +21,7 @@ This article provides you with information about the various scenarios on how to
 
 The following sections describe how form merge works and how to maintain customizations. The basic development scenarios with recommendations for maintaining successful ALM for a model-driven app form are covered in detail within each section that follows. Every scenario includes steps to follow that can help you implement a proper ALM process when updating your solution or model-driven app.
 
-## Creating a new form and maintaining customizations using multiple managed solutions
+## Creating a new form and making customizations using multiple managed solutions
 
 Follow these steps to implement healthy form ALM for this scenario.
 
@@ -39,7 +39,7 @@ As seen in the below diagram, it is not a healthy ALM practice to create multipl
 
 :::image type="content" source="media/unhealthy-form-alm-scenario1.png" alt-text="Unhealthy form ALM example for this scenario":::
 
-## Creating a new form and maintaining customizations using patches and upgrades
+## Creating a new form and making customizations using patches and upgrades
 
 Follow these steps to implement healthy form ALM for this scenario.
 
@@ -57,7 +57,7 @@ Follow these steps to implement healthy form ALM for this scenario.
 
 :::image type="content" source="media/scenario2-form-alm-diagram.png" alt-text="Scenario 2 form ALM diagram":::
 
-## Customizing an existing managed form and maintaining customizations using multiple managed solutions
+## Customizing an existing managed form and making customizations using multiple managed solutions
 
 Follow these steps to implement healthy form ALM for this scenario.
 
@@ -76,6 +76,10 @@ As shown in the below diagram, it is not a healthy ALM practice to create multip
 For example, as seen in the diagram below, *Field3* is added to *FormB* in *Solution B*, but now if you create a new *Solution C* in this environment, with Solution B in unmanaged state, and remove *Field3*, *Field3* will be removed in the development environment. *Field3* will not be tracked in the diff FormXml when the solution is exported, since the change of adding and removing this field was made in the same active layer. That means when managed *Solution C* is imported in the test environment, the form will still render the *Field3* because the diff FormXml never records it as removed (like it was removed in step 5 in the healthy form ALM scenario above). Performing your form customizations this way will lead to the development environment being inconsistent with the test environment.
 
 :::image type="content" source="media/unhealthy-form-alm-scenario3.png" alt-text="Unhealthy form ALM example for this scenario":::
+
+## Customizing an existing managed form and making customizations using patches and upgrades
+
+Follow these steps to implement healthy form ALM for this scenario.
 
 ## Full and differential form XML
 
