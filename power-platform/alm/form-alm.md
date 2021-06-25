@@ -33,6 +33,10 @@ Below are the basic development scenarios with recommendations for maintaining s
 
 :::image type="content" source="media/scenario1-diagram.png" alt-text="Scenario 1 diagram":::
 
+### Unhealthy scenario 1
+
+As seen in the below diagram, it is not a healthy ALM practice to create multiple managed solutions from the development environment where the base solution (Solution A) is in an unmanaged state. This is because, when you create another unmanaged solution (solution B) for the unmanaged form, the FormXml is exported as a full FormXml, instead of a diff FormXml as shown in the valid scenario above. Subsequently, changes like removing a field won't take effect.
+
 ## Full and differential form XML
 
 Every exported solution package includes a customizations.xml file. Whenever a form is included in a solution, the related form definition exists within the FormXml sections of the customizations.xml file.
