@@ -45,6 +45,28 @@ The sync flows in the Core Component solution will only update resources that ha
 
 Model Driven Apps, Business Process Flows and Custom Connectors are not available in Dataverse for Teams. If you are installing the CoE Starter Kit in Dataverse for Teams, you will notice those components missing.
 
+## Setting Environment Variables in a Managed Environment
+
+Currently you cannot update the values for environment variables from within the solution. 
+
+To update these:
+
+1. Browse to the Default Solution
+1. Filter by Environment Variables
+1. Use the Current Value (note that default values will be overwritten when you install updates)
+       ![Set Env Variables1](media/envVars1.PNG "Set t
+he current value of the Environment Variables 1")<br>
+       ![Set Env Variables2](media/envVars2.PNG "Set the current value of the Environment Variables 2")
+
+If you are in a Dataverse for Teams Environment, you will not be able to see the default solution, so instead:
+1. Go to flow.microsoft.com
+1. Select your Dataverse for Teams environment
+1. Select Solution
+1. Select Common Data Service Default Solution
+1. Select + Add > Environment Variables
+1. Select the existing Environment Variables from the managed solution that you want to update
+1. After adding those, selected Environment Variables in the new menu navigation and you should then be able to add a default and current value
+
 ## Flows that use the Microsoft Dataverse (Current Environment) connector
 
 The Admin | Sync Template v3 (Flows) and CLEANUP - Admin | Sync Template v3 (Connection Status) will fail to collect inventory information for flows that use the Microsoft Dataverse (Current Environment) connector. The [Get Flow as Admin](/connectors/flowmanagement/) currently has a limitation, where flows using that connector cannot be retrieved.
