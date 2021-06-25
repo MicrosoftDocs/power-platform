@@ -440,6 +440,66 @@ Remove-DlpPolicy
 
 Deletes a DLP policy.
 
+### DLP resource exemption cmdlets 
+
+These cmdlets allow you to exempt or unexempt a specific resource from a DLP policy. 
+
+#### Retrieve existing exempt resource list for a DLP policy 
+
+```powershell
+Get-PowerAppDlpPolicyExemptResources -TenantId -PolicyName 
+```
+
+#### Create a new exempt resource list for a DLP policy 
+
+```powershell
+New-PowerAppDlpPolicyExemptResources -TenantId -PolicyName -NewDlpPolicyExemptResources 
+```
+
+#### Update the exempt resource list for a DLP policy 
+
+```powershell
+Set-PowerAppDlpPolicyExemptResources -TenantId -PolicyName -UpdatedExemptResources 
+```
+
+#### Remove the exempt resource list for a DLP policy 
+
+```powershell
+Remove-PowerAppDlpPolicyExemptResources -TenantId -PolicyName 
+```
+
+To exempt a resource from a DLP policy you need the following information: 
+
+- Tenant ID (GUID) 
+- DLP policy ID (GUID) 
+- Resource ID (ends with a GUID) 
+- Resource type 
+
+You can retrieve the resource ID and type using PowerShell cmdlets Get-PowerApp for apps and Get-Flow for flows. 
+
+**Example** 
+
+To exempt flow with ID f239652e-dd38-4826-a1de-90a2aea584d9 and app with ID 06002625-7154-4417-996e-21d7a60ad624 we can run the following cmdlets: 
+
+1. PS D:\> $flow = Get-Flow -FlowName f239652e-dd38-4826-a1de-90a2aea584d9 
+2. PS D:\> $app = Get-PowerApp -AppName 06002625-7154-4417-996e-21d7a60ad624 
+3. PS D:\> $exemptFlow = [pscustomobject]@{ 
+4. >>             id = $flow.Internal.id 
+5. >>             type = $flow.Internal.type 
+6. >>         } 
+7. PS D:\> $exemptApp = [pscustomobject]@{ 
+8. >>             id = $app.Internal.id 
+9. >>             type = $app.Internal.type 
+10. >>         } 
+11. PS D:\> $exemptResources = [pscustomobject]@{ 
+12. >>             exemptResources = @($exemptFlow, $exemptApp) 
+13. >>         } 
+14. PS D:\> New-PowerAppDlpPolicyExemptResources -TenantId b1c07da8-2ae2-47e7-91b8-d3418892f507 -PolicyName 65da474a-70aa-4a59-9ae1-65a2bebbf98a -NewDlpPolicyExemptResources $exemptResources 
+15. 
+16. exemptResources 
+17. --------------- 
+18. {@{id=/providers/Microsoft.ProcessSimple/environments/Default-b1c07da8-2ae2-47e7-91b8-d3418892f507/flows/f239652e-dd38-4826-a1de-90a2aea584d9; type=Microsoft.ProcessSimple/environments/flows}, @{id=/providers/Microsoft.PowerApps/apps/06002625-7154-4417-996e-21d7a60ad.. 
+
 ### Governance error message content commands
 
 The following cmdlets can be used to lead your end users to your organization’s governance reference material, including a link to governance documentation and a governance contact, when they are prompted by governance controls. For instance, when governance error message content is set it will appear in Power Apps Data Loss Prevention policy runtime enforcement messages. 
