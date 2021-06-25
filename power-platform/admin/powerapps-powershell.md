@@ -148,6 +148,7 @@ Below are some common scenarios that show how to use new and existing Power Apps
 - [Power Automate commands](#power-automate-commands)
 - [API connection commands](#api-connection-commands)
 - [Data Loss Prevention (DLP) policy commands](#data-loss-prevention-dlp-policy-commands)
+- [DLP resource exemption cmdlets](#dlp-resource-exemption-cmdlets)
 - [Block trial licenses commands](#block-trial-licenses-commands)
 
 ### Environments commands
