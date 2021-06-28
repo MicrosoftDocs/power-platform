@@ -74,8 +74,6 @@ You can read more about Power Virtual Agents, or get started creating bots now a
 
 6. **Better together.** Power Virtual Agents works hand-in-hand with [Dynamics 365 Customer Service Insights](https://dynamics.microsoft.com/ai/customer-service-insights) to provide a holistic view of your customer service operations. You can use Customer Service Insights and Power Virtual Agents together to determine which topics are trending or consuming support resources, and then easily automate them.
 
->[!NOTE]
-> Power Virtual Agents does not currently support US Government Cloud plans.
 
 
 ## Important information
