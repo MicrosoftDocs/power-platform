@@ -2,7 +2,7 @@
 title: "Export and import bots using solutions (preview)"
 description: "Transfer bots between environments by adding them to Power Apps solutions."
 keywords: "export, import, transfer, environment, PVA"
-ms.date: 9/24/2020
+ms.date: 6/28/2021
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -13,7 +13,7 @@ ms.custom: "customization, ceX"
 ms.collection: virtualagent
 ---
 
-# Export and import bots using solutions (preview)
+# Export and import bots using solutions
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -26,9 +26,6 @@ This can be useful if you use different environments for different purposes, or 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4CsHl]
 > 
 
->[!NOTE]
->You can only import and export bots with the Power Virtual Agents web app. The feature is not available in the Power Virtual Agents app in Microsoft Teams.
-
 ## Prerequisites
 
 
@@ -36,19 +33,10 @@ This can be useful if you use different environments for different purposes, or 
 
 - A maker will require the minimum System Customizer security roles to use this feature. Learn more about [configuring user security to resources in an environment](/power-platform/admin/database-security).
 
-- You must have at least one bot already in the new or existing environments where you are importing to. This ensures you have the correct configuration in your environment when you import a bot.
-
-
-> [!IMPORTANT]
-> These features are in preview, which means they are made available to you before general availability so you can test and evaluate them and provide feedback to Microsoft.  
->  
-> Previews may employ reduced or different privacy, security, or compliance commitments than commercial versions. As such, previews are not meant to be used with any "live" or production Customer Data, Personal Data, or other data that is subject to heightened compliance requirements. Any use of "live" data is at your sole risk and it is your sole responsibility to notify your end users that they should not include sensitive information with their use of the Preview.  
->  
-> These previews, and any support Microsoft may elect to provide, are provided "as-is," "with all faults," "as available," and without warranty.
 
 ## Add a bot to a solution
 
-You use solutions to export bots from one environment and import them into another. The solution acts as a "carrier" for the bots, and you can import multiple bots in one solution. You must have at least one bot in a solution to properly export and import it to another environment.
+You use solutions to export bots from one environment and import them into another. The solution acts as a "carrier" for the bots, and you can import multiple bots in one solution.
 
 **Create a solution to manage export and import**
 
@@ -73,26 +61,6 @@ You use solutions to export bots from one environment and import them into anoth
     Publisher | You can select the default publisher or create a new publisher. We recommend that you create a publisher that you can use consistently across the environments where you'll use the solution. For more information, go to [Solution publisher overview](/powerapps/maker/common-data-service/change-solution-publisher-prefix).
     Version | Enter a number for the version of your solution. This is only important if you export your solution. The version number will be included in the file name when you export the solution.
 
-
-If you don't see the **Export/import bot** section under **Settings**, you will need to upgrade your bot. Select **Upgrade bot**. This should take a few minutes.
-
-> [!IMPORTANT]
-> Only follow these steps if you don't see an option to **Export/import bot** on the Power Virtual Agents settings page.  
->
-> Newly created bots don’t require an upgrade, and won't show an option to upgrade them.
-
-![Screenshot highlighting the Upgrade bot button](media/export-upgrade-bot.png "Screenshot highlighting the Upgrade bot button")
-
-> [!NOTE]
-> A notice might appear that says, "The upgrade is taking longer than expected. No action is required." If the notice does not disappear after 10 minutes, try refreshing your browser. You can continue working on your bot without losing updates. 
->  
-> If you still see the warning after a few days, create a support request with your Bot ID. Admins can use [Help + support](/power-platform/admin/get-help-support) in the Power Platform admin center to create a support request.  
->  
-> ![Warning about time needed to finish the upgrade](media/export-warning.png "Warning about time needed to finish the upgrade")
-
-
-
-
 **Add your bot to the solution**
 
 
@@ -105,24 +73,6 @@ If you don't see the **Export/import bot** section under **Settings**, you will 
 2. On the **Add existing chatbots** panel, select the bot (or bots) you want to export. Select **Add**.
 
     ![Chatbot selected in the list of bots](media/export-add-chatbot-solution.png "Chatbot selected in the list of bots")
-
-3. On the filter on the top menu, select **Chatbot** to see the bot (or bots) you've added to the solution. Selecting the name of the bot will open it in the Power Virtual Agents portal.
-
-3. If your bot doesn’t have [skills](configuration-add-skills.md), you don't need to complete this step. 
-
-    If your bot does have skills, you need to add the respective environment variables in the solution. Each skill has two environment variables: `AppID` and `manifestURL`.
-
-    1. Select the solution you want to add your bot to.
-
-    1. Select **Add existing** and choose **Environment variables**.
-
-    1. On the **Add existing environment variables** panel, select the environment variables for your bot’s skills. Each skill has two environment variables. The environment variables **Display name** column will show the bot name in square brackets. For example, *[Bot name] Skill name*.
-
-        ![List of skills selected for export](media/export-skills.png "List of skills selected for export")
- 
-    1. Select the environment variables of the bot’s skills. 
-
-    1. Select **Next** to add them to the solution.
 
 
 > [!NOTE]
@@ -169,9 +119,6 @@ The export can take several minutes to complete. Once finished, a .zip file will
 
 **Import the solution with your bot**
 
-> [!NOTE]
-> You must have at least one bot already in the new or existing environments where you are importing to. This ensures you have the correct configuration in your environment when you import a bot.
-
 
 1. On the top menu, select the environment name and select the environment where you want to import your bot.
 
@@ -194,8 +141,6 @@ The export can take several minutes to complete. Once finished, a .zip file will
 
       
     The most common cause for an import to fail is that the solution didn't contain some required components. For example, you might not have any upgraded bots in the environment.
-
-1. After import, open the imported solution. Use the filter menu on the top menu to select **Environment variable**. Enter the values as described in the section **[Add a bot to a solution](#add-a-bot-to-a-solution)**.
 
 
 1. If your bot has any of the following, you need to configure them after importing for the first time:
