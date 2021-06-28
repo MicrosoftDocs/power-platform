@@ -1,14 +1,14 @@
 ### YamlMime:FAQ
 metadata:
   title: Frequently asked questions about model-driven app form ALM with Power Apps
-  description: Get answers to frequently asked questions about Power Apps Azure Synapse Link for Dataverse.
+  description: Get answers to frequently asked questions about model-driven app form ALM with Power Apps.
   author: Mattp123
   ms.service: powerapps
   ms.search.keywords: 
   ms.date: 06/28/2021
   ms.author: matp
   ms.reviewer: matp
-title: Azure Synapse Link for Dataverse FAQ
+title: Model-driven app form ALM FAQ
 summary: This article provides information on frequently asked questions about application lifecycle management with model-driven app forms.
 sections:
 - name: General
@@ -23,6 +23,6 @@ sections:
 additionalContent: |
 
   ## See also
-  
+
   [Maintaining healthy model-driven app form ALM](form-alm.md)
   [Recommendations for healthy form ALM](form-alm-recommendations.md)
