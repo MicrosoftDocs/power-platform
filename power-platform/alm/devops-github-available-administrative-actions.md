@@ -6,7 +6,7 @@ author: kkanakas
 ms.author: kartikka
 manager: kvivek
 ms.custom: ""
-ms.date: 09/21/2020
+ms.date: 06/28/2021
 ms.reviewer: "pehecke"
 ms.service: power-platform
 ms.topic: "article"
@@ -17,126 +17,123 @@ search.app:
   - D365CE
 ---
 
-# Available GitHub Adminstrative Actions for Microsoft Power Platform 
+# Available GitHub Administrative Actions for Microsoft Power Platform 
 
 [Available GitHub Actions for administrative functions for Microsoft Power Platform](https://github.com/marketplace/actions/powerplatform-actions) are described in the following sections. 
 
 ## Configure deployment credentials
 
-Many of the actions require you to connect to a Microsoft Dataverse environment. You can add service principal or user credentials as secrets in your the GitHub repository and then use them in the workflow.<br/>
-For details on how to setup secrets in GitHub please refer to [the following article on GitHub](https://docs.github.com/en/actions/reference/encrypted-secrets#using-encrypted-secrets-in-a-workflow) <br/>
-To learn how to setup service principal authentication for Power Platform please refer to [following document](https://docs.microsoft.com/en-us/power-platform/alm/devops-build-tools#configure-service-connections-using-a-service-principal)<br/>
+Many of the actions require you to connect to a Microsoft Dataverse environment. You can add service principal or user credentials as secrets in your GitHub repository and then use them in the workflow.
 
-Once configured properly you can call the Service Principal from with in your Action scripts <br/>
-Parameters to define within your GitHub Action Script as [Environment Variables](https://docs.github.com/en/actions/reference/environment-variables): <br/>
-Application Id such as: `WF_APPLICATION_ID:<your application id>` <br/>
-Tenant Id such as: `WF_TENANT_ID:<your tenant id>` <br/>
+- For details on how to set up secrets in GitHub, see [Encrypted secrets](https://docs.github.com/en/actions/reference/encrypted-secrets#using-encrypted-secrets-in-a-workflow)
 
-The Client Secret will be stored as a GitHub Secret, as described earlier and will be referenced from within the action script using a parameter like: <br/>
-`client secret: ${{secrets.CLIENT_SECRET_GITHUB_ACTIONS}}` <br/>
+- For details on how to set up service principal authentication for Microsoft Power Platform, see [DevOps Build tools](devops-build-tools#configure-service-connections-using-a-service-principal)
+
+Once configured properly you can call the Service Principal from with in your Action scripts.
+
+Parameters to define within your GitHub Action Script as [Environment Variables](https://docs.github.com/en/actions/reference/environment-variables):
+
+- Application ID: `WF_APPLICATION_ID:<your application id>`
+- Tenant ID: `WF_TENANT_ID:<your tenant id>`
+
+The client Secret will be stored as a GitHub secret, as described earlier and will be referenced from within the action script using a parameter like:
+`client secret: ${{secrets.CLIENT_SECRET_GITHUB_ACTIONS}}`
+
 ## Administrative tasks
 
 The available administrative tasks are explained below
 
 ### Microsoft Power Platform create environment
 
-[Creates an environment in the Power Platform tenant](https://docs.microsoft.com/en-us/power-platform/admin/create-environment)
+[Creates an environment in the Power Platform tenant](..admin/create-environment.md)
 
 | Parameter    | Description   |
 |---------------|---------------|
 | user-name | The username of the account you're using to connect with. |
-| password-secret | The password for *user-name*. GitHub passwords are defined in **Settings** under **Secrets**. Note that you can't retrieve a secret after it has been defined and saved. |
-|app-id| The application id to authenticate with. This parameter is **required** when authenticating with Service Principal credentials|
-|client-secret| The Client secret used to authenticate the GitHub pipeline. This parameter is **required** when authenticating with Service Principal Credentials|
-|tenant-id| The tenant-id when authenticating with app-id and client-secret|
-|name| name of the environment that you are going to create| 
-|region| name of the region of where your environment will be created <br/> default is `unitedstates`|
-|type| the type of environment (Trial,Sandbox,Production,SubscriptionBasedTrial) <br/> details about trial environments can be found at this [link](https://docs.microsoft.com/en-us/power-platform/admin/trial-environments)|
-|currency| The currency to use for the environment <br/> default is `USD`|
-|language| The language to use for the environment <br/> default is `English`|
-|templates| The Dynamics365 templates that needs to be deployed to the environment <br/> Passed as comma separated values|
-|domain| The domain name of the environment URL <br/> e.g.: `https://{contoso}0.crm.dynamics.com`|
+| password-secret | The password for *user-name*. GitHub passwords are defined in **Settings** under **Secrets**. You can't retrieve a secret after it has been defined and saved. |
+|app-id| The application ID to authenticate with. This parameter is **required** when authenticating with Service Principal credentials.|
+|client-secret| The client secret used to authenticate the GitHub pipeline. This parameter is **required** when authenticating with Service Principal credentials.|
+|tenant-id| The tenant ID when authenticating with `app-id` and `client-secret`.|
+|name| Name of the environment that you are going to create.| 
+|region| Name of the region of where your environment will be created. <br/> default is `unitedstates`|
+|type| The type of environment (Trial, Sandbox, Production, SubscriptionBasedTrial). <br/> More information: [Trial environments](trial-environments.md)|
+|currency| The currency to use for the environment. <br/> default is `USD`|
+|language| The language to use for the environment. <br/> default is `English`|
+|templates| The templates that need to be deployed to the environment. <br/> Passed as comma separated values.|
+|domain| The domain name of the environment URL. <br/> for example, `https://{contoso}0.crm.dynamics.com`|
 
 
-
-the output will be the URL of the new environment
-
-
+The output will be the URL of the new environment.
 
 ### Copy environment
 
-[Creates a copy of a given environment](https://docs.microsoft.com/en-us/power-platform/admin/copy-environment) 
+[Creates a copy of a given environment](../admin/copy-environment.md) 
 
 | Parameter           | Description        |
 |----------------------|--------------------------|
-|source-url| Source URL of the Power Platform environment to copy <br/> e.g. `https://source-env.crm.dynamics.com`|
-|target-url| Target URL of the Power Platofmr environment to copy <br/> e.g. `https://target-copy-env.crm.dynamics.com`|
+|source-url| Source URL of the environment to copy. <br/> For example, `https://source-env.crm.dynamics.com`|
+|target-url| Target URL of the environment to copy. <br/> For example, `https://target-copy-env.crm.dynamics.com`|
 |user-name | The username of the account you're using to connect with. |
-|password-secret | The password for *user-name*. GitHub passwords are defined in **Settings** under **Secrets**. Note that you can't retrieve a secret after it has been defined and saved. |
-|app-id| The application id to authenticate with. This parameter is **required** when authenticating with Service Principal credentials|
-|client-secret| The Client secret used to authenticate the GitHub pipeline. This parameter is **required** when authenticating with Service Principal Credentials|
-|tenant-id| The tenant-id when authenticating with app-id and client-secret|
-
+|password-secret | The password for *user-name*. GitHub passwords are defined in **Settings** under **Secrets**. You can't retrieve a secret after it has been defined and saved. |
+|app-id| The application ID to authenticate with. This parameter is **required** when authenticating with Service Principal credentials.|
+|client-secret| The client secret used to authenticate the GitHub pipeline. This parameter is **required** when authenticating with Service Principal credentials.|
+|tenant-id| The tenant ID when authenticating with `app-id` and `client-secret`.|
 
 ### Backup environment 
 
-[Creates a backup of a given environment](https://docs.microsoft.com/en-us/power-platform/admin/backup-restore-environments)
+[Creates a backup of a given environment](../admin/backup-restore-environments.md)
 
 | Parameter           | Description        |
 |----------------------|--------------------------|
-|environment-url| URL of the environment that needs to be backed up <br/> e.g. `https://env-to-backup.crm.dynamics.com`|
-|backup-label| Useful name to Label the backup of the environment|
+|environment-url| URL of the environment that needs to be backed up. <br/> For example, `https://env-to-backup.crm.dynamics.com`|
+|backup-label| Useful name to label the backup of the environment.|
 |user-name | The username of the account you're using to connect with. |
-|password-secret | The password for *user-name*. GitHub passwords are defined in **Settings** under **Secrets**. Note that you can't retrieve a secret after it has been defined and saved. |
-|app-id| The application id to authenticate with. This parameter is **required** when authenticating with Service Principal credentials|
-|client-secret| The Client secret used to authenticate the GitHub pipeline. This parameter is **required** when authenticating with Service Principal Credentials|
-|tenant-id| The tenant-id when authenticating with app-id and client-secret|
-
-
+|password-secret | The password for *user-name*. GitHub passwords are defined in **Settings** under **Secrets**. You can't retrieve a secret after it has been defined and saved. |
+|app-id| The application ID to authenticate with. This parameter is **required** when authenticating with Service Principal credentials.|
+|client-secret| The client secret used to authenticate the GitHub pipeline. This parameter is **required** when authenticating with Service Principal credentials.|
+|tenant-id| The tenant ID when authenticating with `app-id` and `client-secret`|
 
 ### Restore environment
 
-[Action to restore an environment from backup](https://docs.microsoft.com/en-us/power-platform/admin/backup-restore-environments)
+[Action to restore an environment from backup](../admin/backup-restore-environments.md)
 
 | Parameter           | Description        |
 |----------------------|--------------------------|
-|source-url| Source URL of the Power Platform environment to restore <br/> e.g. `https://env-backup-source.crm.dynamics.com`|
-|target-url| Target URL of the Power Platofmr environment to be restored to <br/> e.g. `https://env-target-restore.crm.dynamics.com`|
+|source-url| Source URL of the environment to restore. <br/> For example, `https://env-backup-source.crm.dynamics.com`|
+|target-url| Target URL of the environment to be restored to. <br/> For example, `https://env-target-restore.crm.dynamics.com`|
 |user-name | The username of the account you're using to connect with. |
-|password-secret | The password for *user-name*. GitHub passwords are defined in **Settings** under **Secrets**. Note that you can't retrieve a secret after it has been defined and saved. |
-|app-id| The application id to authenticate with. This parameter is **required** when authenticating with Service Principal credentials|
-|client-secret| The Client secret used to authenticate the GitHub pipeline. This parameter is **required** when authenticating with Service Principal Credentials|
-|tenant-id| The tenant-id when authenticating with app-id and client-secret|
+|password-secret | The password for *user-name*. GitHub passwords are defined in **Settings** under **Secrets**. You can't retrieve a secret after it has been defined and saved. |
+|app-id| The application ID to authenticate with. This parameter is **required** when authenticating with Service Principal credentials.|
+|client-secret| The client secret used to authenticate the GitHub pipeline. This parameter is **required** when authenticating with Service Principal credentials.|
+|tenant-id| The tenant ID when authenticating with `app-id` and `client-secret`.|
 
 
 
 ### Reset environment 
 
-[Action to reset environment to delete and reprovision the environment](https://docs.microsoft.com/en-us/power-platform/admin/reset-environment) 
+[Action to reset environment to delete and reprovision the environment](../admin/reset-environment.md) 
 
 | Parameter           | Description        |
 |----------------------|--------------------------|
-|environment-url| URL of the environment that needs to be reset <br/> e.g. `https://env-to-reset.crm.dynamics.com`|
+|environment-url| URL of the environment that needs to be reset. <br/> For Example, `https://env-to-reset.crm.dynamics.com`|
 |user-name | The username of the account you're using to connect with. |
-|password-secret | The password for *user-name*. GitHub passwords are defined in **Settings** under **Secrets**. Note that you can't retrieve a secret after it has been defined and saved. |
-|app-id| The application id to authenticate with. This parameter is **required** when authenticating with Service Principal credentials|
-|client-secret| The Client secret used to authenticate the GitHub pipeline. This parameter is **required** when authenticating with Service Principal Credentials|
-|tenant-id| The tenant-id when authenticating with app-id and client-secret|
-
-
+|password-secret | The password for *user-name*. GitHub passwords are defined in **Settings** under **Secrets**. You can't retrieve a secret after it has been defined and saved. |
+|app-id| The application ID to authenticate with. This parameter is **required** when authenticating with Service Principal credentials.|
+|client-secret| The client secret used to authenticate the GitHub pipeline. This parameter is **required** when authenticating with Service Principal credentials.|
+|tenant-id| The tenant ID when authenticating with `app-id` and `client-secret`.|
 
 ### Delete environment
 
-[Action to delete environment to recover storage space](https://docs.microsoft.com/en-us/power-platform/admin/delete-environment)
+[Action to delete environment to recover storage space](../admin/delete-environment.md)
 
 | Parameter           | Description        |
 |----------------------|--------------------------|
-|environment-url| URL of the environment that needs to be delete <br/> e.g. `https://env-to-delete.crm.dynamics.com`|
+|environment-url| URL of the environment that needs to be delete. <br/> For example, `https://env-to-delete.crm.dynamics.com`|
 |user-name | The username of the account you're using to connect with. |
-|password-secret | The password for *user-name*. GitHub passwords are defined in **Settings** under **Secrets**. Note that you can't retrieve a secret after it has been defined and saved. |
-|app-id| The application id to authenticate with. This parameter is **required** when authenticating with Service Principal credentials|
-|client-secret| The Client secret used to authenticate the GitHub pipeline. This parameter is **required** when authenticating with Service Principal Credentials|
-|tenant-id| The tenant-id when authenticating with app-id and client-secret|
+|password-secret | The password for *user-name*. GitHub passwords are defined in **Settings** under **Secrets**. You can't retrieve a secret after it has been defined and saved. |
+|app-id| The application ID to authenticate with. This parameter is **required** when authenticating with Service Principal credentials.|
+|client-secret| The client secret used to authenticate the GitHub pipeline. This parameter is **required** when authenticating with Service Principal credentials.|
+|tenant-id| The tenant ID when authenticating with `app-id` and `client-secret`.|
 
 
 
@@ -144,7 +141,7 @@ the output will be the URL of the new environment
 
 The available helper tasks are described below.
 
-###  WhoAmI
+### WhoAmI
 
 Verifies the service connection by connecting to the service and sending a `WhoAmI` [[SDK](/dotnet/api/microsoft.crm.sdk.messages.whoamirequest)/[Web API](/dynamics365/customer-engagement/web-api/whoami)] request. This task can be useful to include early in your DevOps pipeline, to verify connectivity before processing begins.
 
@@ -152,10 +149,10 @@ Verifies the service connection by connecting to the service and sending a `WhoA
 |---------------|---------------|
 | environment-url | The URL for the environment you're connecting to.|
 | user-name | The username of the account you're using to connect with. |
-| password-secret | The password for *user-name*. GitHub passwords are defined in **Settings** under **Secrets**. Note that you can't retrieve a secret after it has been defined and saved. |
-|app-id| The application id to authenticate with. This parameter is **required** when authenticating with Service Principal credentials|
-|client-secret| The Client secret used to authenticate the GitHub pipeline. This parameter is **required** when authenticating with Service Principal Credentials|
-|tenant-id| The tenant-id when authenticating with app-id and client-secret|
+| password-secret | The password for *user-name*. GitHub passwords are defined in **Settings** under **Secrets**. You can't retrieve a secret after it has been defined and saved. |
+|app-id| The application ID to authenticate with. This parameter is **required** when authenticating with Service Principal credentials.|
+|client-secret| The client secret used to authenticate the GitHub pipeline. This parameter is **required** when authenticating with Service Principal credentials.|
+|tenant-id| The tenant ID when authenticating with `app-id` and `client-secret`.|
 
 ## Build and release pipeline authoring
 
