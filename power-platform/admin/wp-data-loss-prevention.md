@@ -4,7 +4,7 @@ description: About data loss prevention (DLP) policies.
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/07/2021
+ms.date: 06/23/2021
 author: jimholtz
 ms.author: jimholtz
 ms.reviewer: jimholtz

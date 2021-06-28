@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/07/2021
+ms.date: 06/28/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -295,10 +295,12 @@ Follow these steps to apply a DLP policy:
    Install-Module -Name Microsoft.PowerApps.Administration.PowerShell -Force 
    ```
 
-3. Run the [ReplacePolicyEnvironmentsForOnlyEnvironmentType](https://github.com/microsoft/PowerApps-Samples/blob/83c77d157f4d3b3a5a54413d975159e5552bfb4f/powershell/admin-center/Microsoft.PowerApps.Administration.PowerShell.Samples.psm1#L1270-L1310) function (available in the [DLP SDK](data-loss-prevention-sdk.md)). This will identify the Teams environments in the tenant and add them to the given policy. 
+3. Run the [UpdatePolicyEnvironmentsForTeams](https://github.com/microsoft/PowerApps-Samples/blob/master/powershell/admin-center/Microsoft.PowerApps.Administration.PowerShell.Samples.psm1#L1270-L1401) function (available in the [DLP SDK](data-loss-prevention-sdk.md)). This will identify the Teams environments in the tenant and add them to the given policy. 
 
    > [!div class="mx-imgBorder"] 
-   > ![Teams environment policy](media/teams-environment-policy.png "Teams environment policy")
+   > ![UpdatePolicyEnvironmentsForTeams function](media/update-policy-environments-teams.png "UpdatePolicyEnvironmentsForTeams function")
+
+
 
 > [!NOTE]
 > Each time the function runs, it replaces the existing list of environments in the policy with all Teams environments in the tenant. Because the function immediately updates the policy, it requires both the policy name and the policy display name as parameters to ensure that you're targeting the correct policy. If the display name doesn't match the given policy name, the policy will not be modified. 
