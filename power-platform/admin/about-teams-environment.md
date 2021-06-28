@@ -300,8 +300,21 @@ Follow these steps to apply a DLP policy:
    > [!div class="mx-imgBorder"] 
    > ![UpdatePolicyEnvironmentsForTeams function](media/update-policy-environments-teams.png "UpdatePolicyEnvironmentsForTeams function")
 
-
+   1. Both the name and display name of the policy are required. If the policy name and display name don’t match, the policy will not be updated.   
+      1. OnlyEnvironmentsPolicyName – the name (guid) of the policy 
+      2. OnlyEnvironmentsPolicyDisplayName – the display name of the policy 
+   2. (Optional) Additionally, you can exclude these Teams environments from another policy. This policy must be scoped to apply to “Exclude certain environments”.  
+      1. ExceptEnvironmentsPolicyDisplayName – the display name of the policy 
+      2. ExceptEnvironmentsPolicyName - the name (guid) of the policy 
+      3. ExceptionEnvironmentIds - a list of environment Ids that should also be included in this ExceptEnvironments policy in addition to the Teams environments. We recommend generating this list from a text file. 
  
+   You can either use none of these parameters or iii) and iv) together or iii) iv) and v) together. 
+
+   For example, you can specify a default policy for all environments except Teams environments using parameters iii) and iv). This will replace all the environments in the exclusion list of the default policy with all the Teams environments. In addition to the Teams environments, if you want to exclude other environments from this default policy, you can use the v) parameter. If an environment is added to the exclusion list of this default policy (through the DLP UI or another PowerShell script), but not included in the environmentIds text file, it will be removed the next time the script is run. 
+
+   > [!div class="mx-imgBorder"] 
+   > ![Replace environments in exclusion list](media/get-content-teams-environments.png "Replace environments in exclusion list")
+
 > [!NOTE]
 > Each time the function runs, it replaces the existing list of environments in the policy with all Teams environments in the tenant. Because the function immediately updates the policy, it requires both the policy name and the policy display name as parameters to ensure that you're targeting the correct policy. If the display name doesn't match the given policy name, the policy will not be modified. 
 >
