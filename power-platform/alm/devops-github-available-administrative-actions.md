@@ -27,7 +27,7 @@ Many of the actions require you to connect to a Microsoft Dataverse environment.
 
 - For details on how to set up secrets in GitHub, see [Encrypted secrets](https://docs.github.com/en/actions/reference/encrypted-secrets#using-encrypted-secrets-in-a-workflow)
 
-- For details on how to set up service principal authentication for Microsoft Power Platform, see [DevOps Build tools](devops-build-tools#configure-service-connections-using-a-service-principal)
+- For details on how to set up service principal authentication for Microsoft Power Platform, see [DevOps Build tools](devops-build-tools.md#configure-service-connections-using-a-service-principal)
 
 Once configured properly you can call the Service Principal from with in your Action scripts.
 
@@ -45,7 +45,7 @@ The available administrative tasks are explained below
 
 ### Microsoft Power Platform create environment
 
-[Creates an environment in the Power Platform tenant](..admin/create-environment.md)
+[Creates an environment in the Power Platform tenant](../admin/create-environment.md)
 
 | Parameter    | Description   |
 |---------------|---------------|
@@ -56,7 +56,7 @@ The available administrative tasks are explained below
 |tenant-id| The tenant ID when authenticating with `app-id` and `client-secret`.|
 |name| Name of the environment that you are going to create.| 
 |region| Name of the region of where your environment will be created. <br/> default is `unitedstates`|
-|type| The type of environment (Trial, Sandbox, Production, SubscriptionBasedTrial). <br/> More information: [Trial environments](trial-environments.md)|
+|type| The type of environment (Trial, Sandbox, Production, SubscriptionBasedTrial). <br/> More information: [Trial environments](../admin/trial-environments.md)|
 |currency| The currency to use for the environment. <br/> default is `USD`|
 |language| The language to use for the environment. <br/> default is `English`|
 |templates| The templates that need to be deployed to the environment. <br/> Passed as comma separated values.|

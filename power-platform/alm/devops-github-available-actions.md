@@ -27,7 +27,7 @@ Many of the actions require you to connect to a Microsoft Dataverse environment.
 
 - For details on how to set up secrets in GitHub, see [Encrypted secrets](https://docs.github.com/en/actions/reference/encrypted-secrets#using-encrypted-secrets-in-a-workflow) 
 
-- For details how to set up service principal authentication for Microsoft Power Platform, see [DevOps Build tools](devops-build-tools#configure-service-connections-using-a-service-principal)
+- For details how to set up service principal authentication for Microsoft Power Platform, see [DevOps Build tools](devops-build-tools.md#configure-service-connections-using-a-service-principal)
 
 Once configured, you can call the Service Principal from with in your Action scripts. 
 
