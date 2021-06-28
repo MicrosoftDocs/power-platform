@@ -306,11 +306,11 @@ Follow these steps to apply a DLP policy:
    2. (Optional) Additionally, you can exclude these Teams environments from another policy. This policy must be scoped to apply to “Exclude certain environments”.  
       1. ExceptEnvironmentsPolicyDisplayName – the display name of the policy 
       2. ExceptEnvironmentsPolicyName - the name (guid) of the policy 
-      3. ExceptionEnvironmentIds - a list of environment Ids that should also be included in this ExceptEnvironments policy in addition to the Teams environments. We recommend generating this list from a text file. 
+      3. ExceptionEnvironmentIds - a list of environment IDs that should also be included in this ExceptEnvironments policy in addition to the Teams environments. We recommend generating this list from a text file. 
  
    You can either use none of these parameters or b.i and b.iii together or b.i, b.ii, and b.iii together. 
 
-   For example, you can specify a default policy for all environments except Teams environments using parameters b.i and b.ii. This will replace all the environments in the exclusion list of the default policy with all the Teams environments. In addition to the Teams environments, if you want to exclude other environments from this default policy, you can use the b.iii parameter. If an environment is added to the exclusion list of this default policy (through the DLP UI or another PowerShell script), but not included in the *environmentIds* text file, it will be removed the next time the script is run. 
+   For example, you can specify a default policy for all environments except Teams environments using parameters b.i and b.ii. This will replace all the environments in the exclusion list of the default policy with all the Teams environments. In addition to the Teams environments, if you want to exclude other environments from this default policy, you can use the b.iii parameter. If an environment is added to the exclusion list of this default policy (through the DLP UI or another PowerShell script), but not included in the "environmentIds" text file, it will be removed the next time the script is run. 
 
    > [!div class="mx-imgBorder"] 
    > ![Replace environments in exclusion list](media/get-content-teams-environments.png "Replace environments in exclusion list")
@@ -321,7 +321,7 @@ Follow these steps to apply a DLP policy:
 > [!div class="mx-imgBorder"] 
 > ![Display name mismatch](media/display-name-mismatch.png "Display name mismatch")
 >
-> We recommend that this script is run on a schedule to ensure that the DLP policy will always apply to the most recent list of Teams environments. If a Teams environment is created after this script is run, it will not be governed by the policy until the policy's environments are updated, either by rerunning the script or manually adding the new environment to the policy. If a non-Teams environment is added to the *OnlyEnvironments* policy, it will be removed next time the script is run. 
+> We recommend that this script is run on a schedule to ensure that the DLP policy will always apply to the most recent list of Teams environments. If a Teams environment is created after this script is run, it will not be governed by the policy until the policy's environments are updated, either by rerunning the script or manually adding the new environment to the policy. If a non-Teams environment is added to the "OnlyEnvironments" policy, it will be removed next time the script is run. 
 
 ## Known issues
 
