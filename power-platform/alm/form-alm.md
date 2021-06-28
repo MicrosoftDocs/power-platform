@@ -138,3 +138,5 @@ The FormXml you get when exporting a solution for a form in a managed state is c
 
 Diff FormXml ensures that your solution will only express the changes your app needs and will be impacted less by changes from other layers. Diff FormXml also makes the solution less bulky and helps it import faster.
 
+### See also
+[Recommendations for healthy form ALM](form-alm-recommendations.md)
