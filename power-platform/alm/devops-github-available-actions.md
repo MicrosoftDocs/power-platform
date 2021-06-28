@@ -2,8 +2,8 @@
 title: "Available GitHub Actions for Microsoft Power Platform | Microsoft Docs"
 description: "Learn about the available GitHub Actions to support continuous integration and delivery for Microsoft Power Platform development."
 keywords: 
-author: mikkelsen2000
-ms.author: pemikkel
+author: kkanakas
+ms.author: kartikka
 manager: kvivek
 ms.custom: ""
 ms.date: 09/21/2020
@@ -17,11 +17,11 @@ search.app:
   - D365CE
 ---
 
-# Available GitHub Actions for Microsoft Power Platform (Preview)
+# Available GitHub Actions for Microsoft Power Platform
 
-[This topic is pre-release documentation and is subject to change.]
 
-GitHub Actions for Microsoft Power Platform are described in the following sections. In addition, sample GitHub workflows shown as well. For more information about GitHub Actions and how to download them, go to [GitHub Actions for Microsoft Power Platform](devops-github-actions.md).
+
+[GitHub Actions for Microsoft Power Platform](https://github.com/marketplace/actions/powerplatform-actions) are described in the following sections. In addition, sample GitHub workflows shown as well. For more information about GitHub Actions and how to download them, go to [GitHub Actions for Microsoft Power Platform](devops-github-actions.md).
 
 ## Configure deployment credentials
 

@@ -17,11 +17,9 @@ search.app:
   - D365CE
 ---
 
-# Available GitHub Adminstrative Actions for Microsoft Power Platform (Preview)
+# Available GitHub Adminstrative Actions for Microsoft Power Platform 
 
-[This topic is pre-release documentation and is subject to change.]
-
-Available GitHub Actions for administrative functions for Microsoft Power Platform are described in the following sections. 
+[Available GitHub Actions for administrative functions for Microsoft Power Platform](https://github.com/marketplace/actions/powerplatform-actions) are described in the following sections. 
 
 ## Configure deployment credentials
 
