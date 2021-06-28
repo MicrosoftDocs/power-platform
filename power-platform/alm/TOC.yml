@@ -54,9 +54,8 @@
     items:
     - name: Maintaining healthy model-driven app form ALM
       href: form-alm.md
-      items: 
-      - name: Recommendations for healthy form ALM
-        href: form-alm-recommendations.md
+    - name: Recommendations for healthy form ALM
+      href: form-alm-recommendations.md
   - name: ALM for developers   
     href: alm-for-developers.md
     items:
