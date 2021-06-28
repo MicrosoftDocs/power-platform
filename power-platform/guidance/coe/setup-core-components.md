@@ -27,7 +27,7 @@ The core components solution contains assets that are only relevant to admins.
 
 Watch how to setup the core components solution.
 
-> [!VIDEO https://youtu.be/Z9Vp2IxFzpU]
+> [!VIDEO https://www.youtube.com/embed/Z9Vp2IxFzpU]
 
 ## Import the solution
 
@@ -38,7 +38,6 @@ Learn more: [What is Dataverse for Teams](https://docs.microsoft.com/powerapps/t
 ### Option 1: Import the solution into a Production environment
 
 This is the first step of the installation process and is required for every other component in the starter kit to work. You'll need to create an environment in which to set up the CoE. For more information about how to decide on the best strategy for your organization, go to [Establishing an Environment Strategy for Microsoft Power Platform](/power-platform/guidance/adoption/environment-strategy) and [Environment strategy for ALM](/power-platform/alm/environment-strategy-alm).
-
 
 1. Download the CoE Starter Kit compressed file ([aka.ms/CoeStarterKitDownload](https://aka.ms/CoeStarterKitDownload)).
 
