@@ -29,7 +29,7 @@ Follow these steps to implement healthy form ALM for this scenario.
 1. Create a new solution (named *Solution A* in the below diagram) in the development environment, which will be an unmanaged solution and add your new form. Export the solution as managed. Note that this step will export a [full FormXml](#full-formxml) for the form.
 1. In your test environment, import the managed solution from step 2, which creates *FormA* in the test environment. In the below diagram, *FormA* gets created in the test environment and the UI for the form shows *Field1* and *Field2* that *Solution A* added to the form.
 1. If you want to further customize the form you created in Step 1 using new managed solutions, then make sure the development instance has *FormA* in a managed state. As shown in the diagram below, managed *Solution A* is imported in the development environment and the form is customized creating active customizations.  Then, *FormA* can then be added to a new unmanaged solution (*Solution B* in the diagram) and exported as a managed solution from the development environment. Note that this step will export a [differential (diff) FormXml](#differential-diff-formxml) for the form.
-1. In your test environment, import the managed solution (*Solution B*) from step 4. As shown in the below diagram *Solution B* is adding a new *Field3* to *FormA* and removing *Field2*, which was added by *Solution A*. The UI for the form in the test environment will now show *Field3* and *Field1* on the form but not *Field2* after the merge.
+1. In your test environment, import the managed solution (*Solution B*) from step 4. As shown in the below diagram *Solution B* is adding a new *Field3* to *FormA* and removing *Field2*, which was added by *Solution A*. The UI for the form in the test environment now shows *Field3* and *Field1* on the form but not *Field2* after the merge.
 
 :::image type="content" source="media/scenario1-form-alm-diagram.png" alt-text="Scenario 1 form ALM diagram":::
 
@@ -50,10 +50,10 @@ Follow these steps to implement healthy form ALM for this scenario.
 1. In your test environment, import the managed patch solution from step 4. As shown in the below diagram, the *Solution A* patch is adding a new *Field3* to FormA and removing *Field2*, which was added by *Solution A*.
 
    > [!NOTE]
-   > Patches are additive in nature and can't remove fields from the form, so *Field2* will not be removed from the form. The UI for the form in the test environment will now show *Field3*, *Field2*, and *Field1*.
+   > Patches are additive in nature and can't remove fields from the form, so *Field2* will not be removed from the form. The UI for the form in the test environment now shows *Field3*, *Field2*, and *Field1*.
 
 1. If you want to further customize the form you created in Step 1 using upgrades, then using the same environment where *Solution A* is in an unmanaged state, clone *Solution A* to create the upgrade solution and customize the form. Then, export the *Solution A* upgrade as a managed solution. Note that this step will export a full FormXml for the form.
-1. In your test environment, import the managed *Solution A* upgrade from step 6. As shown in the below diagram, the *Solution A* upgrade is adding a new *Field4* to *FormA* and removing *Field2*, which was added by *Solution A*. The UI for the form in the test environment will now show *Field1*, *Field3*, and *Field4* on the form, but *Field2* will be removed after the merge.
+1. In your test environment, import the managed *Solution A* upgrade from step 6. As shown in the below diagram, the *Solution A* upgrade is adding a new *Field4* to *FormA* and removing *Field2*, which was added by *Solution A*. The UI for the form in the test environment now shows *Field1*, *Field3*, and *Field4* on the form, but *Field2* will be removed after the merge.
 
 :::image type="content" source="media/scenario2-form-alm-diagram.png" alt-text="Scenario 2 form ALM diagram":::
 
@@ -65,7 +65,7 @@ Follow these steps to implement healthy form ALM for this scenario.
 1. Create a new solution (*Solution B* in the below diagram), which is an unmanaged solution, and add *FormB*. Export the solution as managed. Note that this step will export a [differential (diff) FormXml](#differential-diff-formxml) for the form.
 1. In your test environment, import the managed solution from step 2, thus creating a second solution layer for the form. In the above diagram *FormB* gets the merged changes from *Solution A* and *Solution B* in the test environment and the UI for the form shows *Field1* and *Field3* on the form but not *Field2* which was removed by *Solution B*.
 1. If you want to further customize the form you customized in Step 1 using new managed solutions, then make sure the development environment has *FormB* in a managed state. As shown in the diagram below, *Solution A* and *Solution B* managed solutions are imported in the development environment. *FormB* is customized creating active customizations, which can then be added to a new solution (*Solution C* in the diagram) and exported as a managed solution. Note that this step will export a diff FormXml for the form.
-1. In your test environment, import the managed *Solution C* from step 4. As shown in the below diagram, *Solution C* is adding a new *Field4* to the *FormB* and removing *Field3*, which was added by *Solution B*. The UI for the form in the test environment will now show *Field1* and *Field4* on the form, but not *Field2* and *Field3*.
+1. In your test environment, import the managed *Solution C* from step 4. As shown in the below diagram, *Solution C* is adding a new *Field4* to the *FormB* and removing *Field3*, which was added by *Solution B*. The UI for the form in the test environment now shows *Field1* and *Field4* on the form, but not *Field2* and *Field3*.
 
 :::image type="content" source="media/scenario3-form-alm-diagram.png" alt-text="Scenario 3 form ALM diagram":::
 
@@ -82,20 +82,51 @@ For example, as seen in the diagram below, *Field3* is added to *FormB* in *Solu
 Follow these steps to implement healthy form ALM for this scenario.
 
 1. Customize an existing managed form, named *FormB* in this example, in your development environment and perform customizations on the form. Note that *Solution A* is the managed solution already installed for the form in the development environment.
-1. Create a solution (*Solution B*), which will be an unmanaged solution and add *FormB*. Export the solution as managed. Note that this step will export a diff FormXml for the form.
+1. Create a solution (*Solution B*), which will be an unmanaged solution and add *FormB*. Export the solution as managed. Note that this step will export a [diff FormXml](#differential-diff-formxml) for the form.
 1. In your test environment, import managed *Solution B* from step 2, thus creating a second solution layer for the form. In the below diagram, *FormB* gets the merged changes from *Solution A* and *Solution B* in the test environment. Additionally, the UI for the *FormB* shows *Field1* and *Field3* on the form but not Field2 which was removed by *Solution B*.
 1. If you want to further customize the form you customized in Step 1 using a patch solution, then you can use the same development environment as step 1 where *Solution B* exists in an unmanaged state. As shown in the diagram below, *Solution A* is in a managed state and *Solution B* is in an unmanaged state. The form is further customized and then you create a patch for *Solution B* adding your form to this solution and exporting it as 1. In your test environment, import managed patch *Solution B* from step 4. As shown in the below diagram, *Solution B Patch* is adding a new *Field4* to *FormB* and removing *Field3*, which was added by *Solution B*. 
 
     > [!NOTE]
-    > Patches are additive in nature and can't remove components, such as columns, from the form. So, *Field3* will not be removed from the form. The UI for the form in the test environment will now show *Field1*, *Field3*, and *Field4* on the form, but not *Field2*.
-1. If you want to further customize the form you created in Step 1 using Upgrades, then using the same environment where *Solution B* is in an unmanaged state, clone *Solution B* to create the upgrade solution and customize *FormB*. Export the upgrade as a managed solution. Note that this step will export a diff FormXml for the form.
-1. In your test environment, import the managed *Solution B* upgrade solution from step 6. As shown in the below diagram, *Solution B Upgrade* is adding a new *Field5* to *FormB* and removing *Field3*, which was added by *Solution B*. The UI for the form in the test environment will now show *Field1*, *Field4*, and *Field5* on the form, but *Field2* and *Field3* will be removed.
+    > Patches are additive in nature and can't remove components, such as columns, from the form. So, *Field3* will not be removed from the form. The UI for the form in the test environment now shows *Field1*, *Field3*, and *Field4* on the form, but not *Field2*.
+1. If you want to further customize the form you created in Step 1 using Upgrades, then using the same environment where *Solution B* is in an unmanaged state, clone *Solution B* to create the upgrade solution and customize *FormB*. Export the upgrade as a managed solution. Note that this step will export a [diff FormXml](#differential-diff-formxml) for the form.
+1. In your test environment, import the managed *Solution B* upgrade solution from step 6. As shown in the below diagram, *Solution B Upgrade* is adding a new *Field5* to *FormB* and removing *Field3*, which was added by *Solution B*. The UI for the form in the test environment now shows *Field1*, *Field4*, and *Field5* on the form, but *Field2* and *Field3* will be removed.
 
 ![Edit an existing managed form using patches and upgrades diagram](media/scenario4-form-alm-diagram.png)
 
+## Maintaining unmanaged solutions and customizations across multiple development environments
+
+Follow these steps to implement healthy form ALM for this scenario.
+
+1. In *Development Environment 1*, create a new *FormA* and perform customizations on the form.
+1. Create a solution (*Solution A* in the below diagram), which will be an unmanaged solution, and add your new form. Export the solution as unmanaged. Note that this step will export a [full FormXml](#full-formxml) for the form.
+1. In *Development Environment 2*, import the unmanaged solution from step 2, which creates the form in *Development Environment 2*. In the below diagram, *FormA* gets created and the UI for the form shows *Field1* and *Field2* that *Solution A* added to the form.
+1. You further customize the form in *Development Environment 2* making active customizations in the environment, such as adding a new colmun named *Field3*. *FormA* now shows *Field1*, *Field2*, and *Field3*.
+1. In your *Development Environment 1*, you further customize the form also by adding *Field4*. The UI for the form in the *Development Environment 1* now shows *Field1*, *Field2*, and *Field4*.
+1. Export unmanaged *Solution A* with the changes made in step 5. Note that this step will export a [full FormXml](#full-formxml) for the form.
+1. In *Development Environment 2*, import unmanaged *Solution A Upgrade* from step 6. Since the solution you are importing contains the full FormXml for *FormA* it overwrites the active customization made in *Development Environment 1*. So, the form now shows only *Field1*, *Field2*, and *Field4*, but not *Field3*, which was the additional active customization done in *Development Environment 1*. Note that, this behavior occurs with any unmanaged solution import that has the full FormXml for the form.
+
+![Unmanaged solutions in multiple environments](media/scenario5-form-alm-diagram.png)
+
+## Scenario 6
+
+Follow these steps to implement healthy form ALM for this scenario.
+
+1. In *Development Environment 1*, customize an existing form, named *FormB* in this example. Then perform customizations on the form.
+1. Create a solution (*Solution B* in the below diagram), which will be an unmanaged solution, and add *FormB*. Export the solution as unmanaged. Note that this step will export a [diff FormXml](#differential-diff-formxml) for the form.
+1. In *Development Environment 2*, import the unmanaged solution from step 2, thus creating a second solution layer for the form. The *FormB* UI shows *Field1*, *Field2*, and *Field3* after the form merge.
+1. You further customize the form in *Development Environment 2*, making active customizations in the environment, such as adding a new column named *Field4*. *FormB* now shows *Field1*, *Field2*, *Field3*, and *Field4*.
+1. In *Development Environment 1*, you further customize the form adding a new column named *Field5*. The UI for the form in *Development Environment 1* now shows *Field3* and *Field5*.
+1. Export unmanaged *Solution B* with the changes made in step 5. Note that this step will export a [diff FormXml](#differential-diff-formxml) for the form.
+1. In *Development Environment 2*, import unmanaged *Solution B Upgrade* from step 6. Since the solution you are importing contains the diff FormXml for *FormB* it will merge with the active customization made in *Development Environment 1*. So, the form now shows *Field1*, *Field2*, *Field3*, *Field4*, and *Field5*. Note that this behavior occurs for any unmanaged solution import that has the diff FormXml for the form.
+1. If the form merge in step 7 is not what you want even though you are importing a diff FormXml with the unmanaged solution and you want to be able to overwrite the active customizations made in *Development Environment 2*, then remove the active layer for *FormB*. More information: [Remove an unmanaged layer](/powerapps/maker/data-platform/solution-layers#remove-an-unmanaged-layer). 
+1. Export unmanaged *Solution B* with the changes made in step 5. Note that this step will export a diff FormXml for the form.
+1. In *Development Environment 2*, import unmanaged *Solution B Upgrade* from step 9. Since there is no active layer for the form in *Development Environment 2*, (see step 8), all the changes from unmanaged *Solution B* are imported even though you are importing diff FormXml for FormB. So, the form now shows only *Field1*, *Field2*, *Field3*, and *Field5*. Note that this behavior occurs for any unmanaged solution import that has the diff FormXml for the form. Note that this is the same result as step 7 in the [Maintaining unmanaged solutions and customizations across multiple development environments](#maintaining-unmanaged-solutions-and-customizations-across-multiple-development-environments) scenario. 
+
+![Scenario 6 form application lifecycle management diagram](media/scenario6-form-alm-diagram.png)
+
 ## Full and differential form XML
 
-Every exported solution package includes a customizations.xml file. Whenever a form is included in a solution, the related form definition exists within the FormXml sections of the customizations.xml file.
+Every exported solution package includes a customizations.xml file. Whenever a form is included in a solution, the related form definition exists within the FormXml sections of the customizations.xml file. FormXml can either be *full* or *differential (diff)*.
 
 ### Full FormXml
 
