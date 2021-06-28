@@ -301,7 +301,7 @@ Follow these steps to apply a DLP policy:
    > ![UpdatePolicyEnvironmentsForTeams function](media/update-policy-environments-teams.png "UpdatePolicyEnvironmentsForTeams function")
 
 
-
+ 
 > [!NOTE]
 > Each time the function runs, it replaces the existing list of environments in the policy with all Teams environments in the tenant. Because the function immediately updates the policy, it requires both the policy name and the policy display name as parameters to ensure that you're targeting the correct policy. If the display name doesn't match the given policy name, the policy will not be modified. 
 >
