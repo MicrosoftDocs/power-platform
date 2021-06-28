@@ -13,9 +13,9 @@ summary: This article provides information on frequently asked questions about a
 sections:
 - name: General
   questions:
-   - question: How to recognize a form is in managed state or unmanaged state? 
+   - question: How to recognize when a form is in a managed or unmanaged state? 
      answer: |
-          In the customization settings - check the state column next to the form to know if it is in a managed state (has managed solutions installed for the form, may or may not have active unmanaged customizations) or unmanaged state (has only a unmanaged layer for the form and no managed solutions)
+          In the customization settings, check the state column next to the form to know if it is in a managed state (has managed solutions installed for the form, may or may not have active unmanaged customizations) or unmanaged state (has only a unmanaged layer for the form and no managed solutions)
    - question: How to create a form? 
      answer: | 
           Use the modern form designer. More information: [Create and design model-driven app forms](/powerapps/maker/model-driven-apps/create-design-forms)
