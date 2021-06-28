@@ -1,12 +1,13 @@
 ---
 title: "Manage group teams  | MicrosoftDocs"
 description: About managing group teams 
-author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/28/2021
-ms.author: jimholtz
+author: paulliew
+ms.author: paulliew
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
