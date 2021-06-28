@@ -1,0 +1,21 @@
+### YamlMime:FAQ
+metadata:
+  title: Frequently asked questions about model-driven app form ALM with Power Apps
+  description: Get answers to frequently asked questions about Power Apps Azure Synapse Link for Dataverse.
+  author: Mattp123
+  ms.service: powerapps
+  ms.search.keywords: 
+  ms.date: 06/28/2021
+  ms.author: matp
+  ms.reviewer: matp
+title: Azure Synapse Link for Dataverse FAQ
+summary: This article provides information on frequently asked questions about application lifecycle management with model-driven app forms.
+sections:
+- name: General
+  questions:
+   - question: How to recognize a form is in managed state or unmanaged state? 
+     answer: |
+          In the customization settings - check the state column next to the form to know if it is in a managed state (has managed solutions installed for the form, may or may not have active unmanaged customizations) or unmanaged state (has only a unmanaged layer for the form and no managed solutions)
+   - question: How to create a form? 
+     answer: | 
+          Use the modern form designer. More information: [Create and design model-driven app forms](/powerapps/maker/model-driven-apps/create-design-forms)

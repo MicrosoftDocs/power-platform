@@ -1,6 +1,6 @@
 ---
-title: "General recommendations for healthy form ALM with Power Apps"
-description: "Learn about the recommendations for healthy form ALM."
+title: "General recommendations for healthy model-driven app form ALM with Power Apps"
+description: "Learn about the recommendations for healthy model-driven app form ALM."
 keywords: 
 author: Mattp123
 ms.author: matp
@@ -15,7 +15,7 @@ search.audienceType:
 search.app: 
   - PowerApps
 ---
-# Recommendations for healthy form ALM
+# Recommendations for healthy model-driven app form ALM
 Follow these recommendations when you customize forms:
 - To create a new form, don't make manual edits to the FormXml in the customizations.xml. Instead, use the form designer to create a new form or copy an existing form by doing a **Save as**. The form designer ensures that new forms have unique ids, which avoids conflicts with existing forms. More information: [Create, edit, or configure forms using the form designer](/powerapps/maker/model-driven-apps/create-and-edit-forms).
 - Don't import the same localized labels when there are existing translated labels that have translation text you want to keep. This reduces dependencies and improves solution import performance.
