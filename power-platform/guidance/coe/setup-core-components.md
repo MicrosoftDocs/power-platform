@@ -25,7 +25,9 @@ The Center of Excellence (CoE) core components solution provides components that
 
 The core components solution contains assets that are only relevant to admins.
 
-<!-- need to re-record due to new solution import experience Watch the [setup instructions video](https://youtu.be/L8gKjeE5GR4) to help you download and deploy the solution. -->
+Watch how to setup the core components solution.
+
+> [!VIDEO https://youtu.be/Z9Vp2IxFzpU]
 
 ## Import the solution
 
