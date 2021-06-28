@@ -308,7 +308,7 @@ Follow these steps to apply a DLP policy:
       2. ExceptEnvironmentsPolicyName - the name (guid) of the policy 
       3. ExceptionEnvironmentIds - a list of environment Ids that should also be included in this ExceptEnvironments policy in addition to the Teams environments. We recommend generating this list from a text file. 
  
-   You can either use none of these parameters or iii) and iv) together or iii) iv) and v) together. 
+   You can either use none of these parameters or 2i) and 2iii) together or 2i) 2ii) and 2iii) together. 
 
    For example, you can specify a default policy for all environments except Teams environments using parameters iii) and iv). This will replace all the environments in the exclusion list of the default policy with all the Teams environments. In addition to the Teams environments, if you want to exclude other environments from this default policy, you can use the v) parameter. If an environment is added to the exclusion list of this default policy (through the DLP UI or another PowerShell script), but not included in the environmentIds text file, it will be removed the next time the script is run. 
 
