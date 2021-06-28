@@ -316,7 +316,7 @@ Follow these steps to apply a DLP policy:
    > ![Replace environments in exclusion list](media/get-content-teams-environments.png "Replace environments in exclusion list")
 
 > [!NOTE]
-> Each time the function runs, it replaces the existing list of environments in each given policy with a new list of environments. Because the function immediately updates the policy, it requires both the policy name and the policy display name as parameters to ensure that you're targeting the correct policy. If the display name doesn't match the given policy name, the policy will not be modified. 
+> Each time the function runs, it replaces the existing list of environments in each given policy with a new list of environments. Because the function immediately updates the policy, it requires both the policy name and the policy display name as parameters to ensure that you're targeting the correct policy. If the display name doesn't match the given policy name, the policy will not be modified.  
 >
 > [!div class="mx-imgBorder"] 
 > ![Display name mismatch](media/display-name-mismatch.png "Display name mismatch")
