@@ -196,10 +196,10 @@ ree
     |TimeInterval-Unit | Determines units for chunking the time since start. <br>Must be a value from accepted as an input parameter to [Add to Time](https://docs.microsoft.com/power-automate/desktop-flows/actions-reference/datetime#add). <br>Default value: Hour |
     |TimeInterval-Interval | Must be a whole number to represent the number of chunks of type unit (above).<br> Default value: 1 (for 1 hour chunks) |
 
-- To understand how to set environment variables please see  [Setting Environment Variables in a Managed Environment](limitations.md#Setting-Environment-Variables-in-a-Managed-Environment)
+> [!IMPORTANT]
+> To understand how to set environment variables please see  [Setting Environment Variables in a Managed Environment](limitations.md#Setting-Environment-Variables-in-a-Managed-Environment)
 
-
-1. Back in the solution, turn on both the \[Child\] Admin | Sync Logs flow and the Admin | Sync Audit Logs flow.
+11. Back in the solution, turn on both the \[Child\] Admin | Sync Logs flow and the Admin | Sync Audit Logs flow.
 
    ![Turn audit log flows on](media/coe-custom4.PNG "Turn audit log flows on")
 
