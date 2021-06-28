@@ -34,7 +34,7 @@ To view or update the Maintenance Window for a specific environment based on you
 
 3. Select **Settings** > **Updates** > **Maintenance window settings**.
 
-4. On the **Maintenance window settings page**, choose the 7-hour window to receive updates from Microsoft.
+4. On the **Maintenance window settings** page, choose the window hours to receive updates from Microsoft.
 
    :::image type="content" source="media/maintenance-window.png" alt-text="Select a time for the maintenance window":::
 
