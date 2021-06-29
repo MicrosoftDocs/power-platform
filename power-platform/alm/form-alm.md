@@ -93,7 +93,7 @@ Follow these steps to implement healthy form ALM for this scenario.
 
 ![Edit an existing managed form using patches and upgrades diagram](media/scenario4-form-alm-diagram.png)
 
-## Maintaining unmanaged solutions and customizations across multiple development environments
+## Maintaining unmanaged solutions and customizations for a new form across multiple development environments
 
 Follow these steps to implement healthy form ALM for this scenario.
 
@@ -107,7 +107,7 @@ Follow these steps to implement healthy form ALM for this scenario.
 
 ![Unmanaged solutions in multiple environments](media/scenario5-form-alm-diagram.png)
 
-## Scenario 6
+## Maintaining unmanaged solutions and customizations for an existing form across multiple development environments
 
 Follow these steps to implement healthy form ALM for this scenario.
 
