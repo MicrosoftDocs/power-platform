@@ -143,6 +143,56 @@ Clones the solution for a given environment
 |target-folder | Target folder to place the extracted solution into. (for example, Git repository\target-solution-folder). |
 |Working-directory | Temporary folder for work in progress artifacts needed for cloning the solution <br/> default: `root of the repository`|
 
+### check-solution
+
+Checks the solution file to detect inconsistencies
+
+| Parameter    | Description       |
+|---------------|-------------------|
+| environment-url| (Required) The URL for the  environment that you want to clone the solution from (for example, https://YourOrg.crm.dynamics.com).|
+|user-name|(Required) If you're using username/password authentication, the username of the account you're using to connect with.|
+| password-secret | (Required) If you're using username/password authentication, the password for the account you're using to connect with. |
+|app-id| The application ID to authenticate with. This parameter is **required** when authenticating with Service Principal credentials.|
+|client-secret| The client secret used to authenticate the GitHub pipeline. This parameter is **required** when authenticating with Service Principal credentials.|
+|tenant-id| The tenant ID when authenticating with `app-id` and `client-secret`.|
+|path| (Required) The path and name of the solution file you want to check.|
+|geo| Which geo location of the Power Platform Checker service to use. Default Value is 'united states'|
+|rule-level-override | Path to file a containing a JSON array of rules and their levels. Accepted values are: Critical, High, Low, and Informational. Example: [{"Id":"meta-remove-dup-reg","OverrideLevel":"Medium"},{"Id":"il-avoid-specialized-update-ops","OverrideLevel":"Medium"}]| 
+|checker-logs-artifact-name | The name of the artifact folderof which the Power Platform checker logs will be uploaded. Default value is 'CheckSolutionLogs' |
+
+### upgrade-solution
+
+Provides the ability to upgrade the solution
+
+| Parameter    | Description       |
+|---------------|-------------------|
+| environment-url| (Required) The URL for the  environment that you want to clone the solution from (for example, https://YourOrg.crm.dynamics.com).|
+|user-name|(Required) If you're using username/password authentication, the username of the account you're using to connect with.|
+| password-secret | (Required) If you're using username/password authentication, the password for the account you're using to connect with. |
+| solution-file        | (Required) The path and name of the solution file you want to import.   |
+|app-id| The application ID to authenticate with. This parameter is **required** when authenticating with Service Principal credentials.|
+|client-secret| The client secret used to authenticate the GitHub pipeline. This parameter is **required** when authenticating with Service Principal credentials.|
+|tenant-id| The tenant ID when authenticating with `app-id` and `client-secret`.|
+|solution-name | (Required) name of the solution to upgrade|
+|async| Upgrades the solution asynchronously|
+|max-async-wait-time| Maximum asynchronous wait time in minutes. Default value is 60 minutes|
+
+## Package tasks
+
+These tasks perform actions against packages and include the following.
+### deploy-package
+
+Provides the ability to deploy a package dll or a zip file with a package. **note** this action is only supported on a Windows Runner
+
+| Parameter    | Description       |
+|---------------|-------------------|
+| environment-url| (Required) The URL for the  environment that you want to clone the solution from (for example, https://YourOrg.crm.dynamics.com).|
+|user-name|(Required) If you're using username/password authentication, the username of the account you're using to connect with.|
+| password-secret | (Required) If you're using username/password authentication, the password for the account you're using to connect with. |
+|app-id| The application ID to authenticate with. This parameter is **required** when authenticating with Service Principal credentials.|
+|client-secret| The client secret used to authenticate the GitHub pipeline. This parameter is **required** when authenticating with Service Principal credentials.|
+|tenant-id| The tenant ID when authenticating with `app-id` and `client-secret`.|
+|package| (Required) The path to the package dll or zip file with a package|
 
 ## GitHub workflow authoring
 
