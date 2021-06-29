@@ -29,13 +29,13 @@ sections:
    - question: Why does the form not appear in the target environment after importing a solution containing the form?
      answer: |
               During export of unmanaged solutions, some forms that aren't modified get exported with the attribute unmodified=1 in the form XML of the customizations.xml file located in the solution package. More information: [The form doesn't appear in target environment after importing the unmanaged solution](/powerapps/maker/data-platform/import-update-export-solutions#troubleshooting-solution-import)
-   - question: Why do recieve the message *Full formXml is expected to create a form* during solution import?
+   - question: Why do recieve the message Full formXml is expected to create a form during solution import?
      answer: |
               This error can occur when the form you are importing doesn’t exist in the target environment and the form is imported for the first time. More information: [Microsoft.Crm.CrmInvalidOperationException: full formXml is expected to create a form message during solution import](/powerapps/maker/data-platform/import-update-export-solutions#troubleshooting-solution-import)
-   - question: Why do I receive the message *You cannot delete this form because it is the only fallback form of type main for the 'table' table. Each table must have at least one fallback form for each form type* during solution upgrade or uninstall?
+   - question: Why do I receive the message You cannot delete this form because it is the only fallback form of type main for the 'table' table. Each table must have at least one fallback form for each form type during solution upgrade or uninstall?
      answer: |
               This error occurs when a solution upgrade or uninstall attempts to delete the last remaining form for a table. More information: [Microsoft.Crm.CrmException: You cannot delete this form because it is the only fallback form of type main for the 'table' table. Each table must have at least one fallback form for each form type message during solution upgrade or uninstall](/powerapps/maker/data-platform/import-update-export-solutions#troubleshooting-solution-import)
-   - question: Why do I receive the message *Solution cannot be deleted due to dependencies from other components in the system message* when uninstalling a solution?
+   - question: Why do I receive the message Solution cannot be deleted due to dependencies from other components in the system message when uninstalling a solution?
      answer: |
               This issue can occur when the solution contains components that are referenced by other solutions on top of it in the layer stack. More information: [Solution cannot be deleted due to dependencies from other components in the system message when uninstalling a solution](/powerapps/maker/data-platform/import-update-export-solutions#troubleshooting-solution-import)
 additionalContent: |
