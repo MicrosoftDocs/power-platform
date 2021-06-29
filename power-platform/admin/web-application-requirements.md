@@ -62,7 +62,7 @@ To find the latest release for these web browsers, visit the software manufactur
 
 ## Support for Microsoft Internet Explorer and Microsoft Edge Legacy 
 
-Internet Explorer support ends Aug 17th, 2021 and Microsoft Edge Legacy support ended March 2021.  We recommend that you use switch to Microsoft Edge (based on Chromium) instead. See [What is the Lifecycle policy for Internet Explorer?](/lifecycle/faq/internet-explorer-microsoft-edge) for more details on the support ending for Internet Explorer and Microsoft Edge Legacy with model-driven apps. 
+Internet Explorer support ends Aug 17th, 2021 and Microsoft Edge Legacy support ended March 2021.  We recommend that you switch to Microsoft Edge (based on Chromium) instead. See [Supported web browsers and mobile devices](supported-web-browsers-and-mobile-devices.md) for more details on the support ending for Internet Explorer and Microsoft Edge Legacy with model-driven apps. 
 
 Starting with 2021 Wave 2, users on older browser versions will see the following warning message.  This will be updated with each release to ensure user performance and allow the product to take advantage of newest browser capabilities for a better experience. 
 
@@ -82,8 +82,7 @@ To use model-driven apps and customer engagement apps (such as Dynamics 365 Sale
 - Office 2013
 - Office 2010
 
-
-
+[!INCLUDE[cc_Office365PlanRequirement](../includes/cc-office365planrequirement.md)]
 
 ## Printing reports  
 The Reporting Services[!INCLUDE[pn_ms_ActiveX_long](../includes/pn-ms-activex-long.md)] control is required to print reports. If you try to print a report and the control isn’t installed, you’ll be prompted to install it. The installer package is named RSClientPrint.cab and can found on the [!INCLUDE[pn_SQL_Server_Reporting](../includes/pn-sql-server-reporting.md)] server at \<drive>:\Program files\Microsoft SQL Server\\<MSSQL\>\Reporting Services\ReportServer\bin.  
