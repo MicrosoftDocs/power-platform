@@ -16,13 +16,19 @@ sections:
    - question: How to recognize when a form is in a managed or unmanaged state? 
      answer: |
           In the customization settings, check the state column next to the form to know if it is in a managed state (has managed solutions installed for the form, may or may not have active unmanaged customizations) or unmanaged state (has only a unmanaged layer for the form and no managed solutions)
+          ![Form state](media/form-state.png)
    - question: How to create a form? 
      answer: | 
           Use the modern form designer. More information: [Create and design model-driven app forms](/powerapps/maker/model-driven-apps/create-design-forms)
-
+   - question: Why do form label translations not appear for base language?
+     answer: |
+             On translation export, if no changes were made to the base language label, no translations will be exported in CrmTranslations.xml. On translation import, if translations for any label in the base language column were changed in CrmTranslations.xml, the changes won't take effect. More information: [Form label translations don't appear specifically for the base language](/powerapps/maker/data-platform/translate-entity-label-text#form-label-translations-dont-appear-specifically-for-the-base-language)
+   - question: Why is there an active unmanaged layer created after importing a managed solution?
+     answer: |
+              If during import there isn't a fallback form specified for a table, then the import creates an unmanaged active layer for one of the main forms and the unmanaged customization indicates the form as the fallback form. More information: [There's an active unmanaged layer created after importing a managed solution](/powerapps/maker/data-platform/import-update-export-solutions#troubleshooting-solution-import)
 additionalContent: |
 
-  ## See also
+  ### See also
 
   [Maintaining healthy model-driven app form ALM](form-alm.md)
   [Recommendations for healthy form ALM](form-alm-recommendations.md)
