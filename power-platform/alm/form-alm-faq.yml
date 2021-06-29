@@ -15,7 +15,7 @@ sections:
   questions:
    - question: How to recognize when a form is in a managed or unmanaged state? 
      answer: |
-          In the customization settings, check the state column next to the form to know if it is in a managed state (has managed solutions installed for the form, may or may not have active unmanaged customizations) or unmanaged state (has only a unmanaged layer for the form and no managed solutions)
+          In the customization settings, check the **State** column next to the form to know if it is in a managed state. A managed form has managed solutions installed for the form and may or may not have active unmanaged customizations. Or the form may be in an unmanaged state and has only a unmanaged layer for the form and no managed solutions.
           ![Form state](media/form-state.png)
    - question: How to create a form? 
      answer: | 
@@ -26,6 +26,9 @@ sections:
    - question: Why is there an active unmanaged layer created after importing a managed solution?
      answer: |
               If during import there isn't a fallback form specified for a table, then the import creates an unmanaged active layer for one of the main forms and the unmanaged customization indicates the form as the fallback form. More information: [There's an active unmanaged layer created after importing a managed solution](/powerapps/maker/data-platform/import-update-export-solutions#troubleshooting-solution-import)
+   - question: Why does the form not appear in the target environment after importing a solution containing the form?
+     answer: |
+              During export of unmanaged solutions, some forms that aren't modified get exported with the attribute unmodified=1 in the form XML of the customizations.xml file located in the solution package. More information: [The form doesn't appear in target environment after importing the unmanaged solution](/powerapps/maker/data-platform/import-update-export-solutions#troubleshooting-solution-import)
 additionalContent: |
 
   ### See also
