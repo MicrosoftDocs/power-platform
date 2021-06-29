@@ -208,7 +208,7 @@ with public cloud environments. The availability by each environment for Microso
 | US Government Community Cloud (GCC)           | Supported <sup>1</sup>            |
 | US Government Community Cloud High (GCC High) | Supported <sup>1</sup>            |
 | China                                         | Supported <sup>2</sup>            |
-|                                               |                          |
+
 <sup>1</sup> Customers must use Azure Government ExpressRoute when using US GCC or GCC High regions, and can't use Azure commercial cloud ExpressRoute.
 <sup>2</sup> Customers must use Azure China ExpressRoute when using China regions, and can't use Azure commercial cloud ExpressRoute.
 
