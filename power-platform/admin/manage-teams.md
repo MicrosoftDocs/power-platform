@@ -1,10 +1,10 @@
 ---
-title: "Manage teams  | MicrosoftDocs"
+title: "Dataverse teams management  | MicrosoftDocs"
 description: Manage teams 
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/17/2021
+ms.date: 06/30/2021
 author: jimholtz
 ms.author: jimholtz
 ms.reviewer: jimholtz
@@ -17,19 +17,49 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Manage teams
+# Dataverse teams management
 
 <!-- legacy procedure -->
 
 Using teams is optional. However, teams provide an easy way to share business objects and let you collaborate with other people across business units. While a team belongs to one business unit, it can include users from other business units. You can associate a user with more than one team.  
   
- You can use three types of teams:  
-  
-- An *owner* team owns records and has security roles assigned to the team. The team's privileges are defined by these security roles. In addition to privileges provided by the team, team members have the privileges defined by their individual security roles and team [member's privilege inheritance](security-roles-privileges.md#team-members-privilege-inheritance) roles, and by the roles from other teams in which they are members. A team has full access rights on the records that the team owns. Team members are added manually to the owner team.
+## Types of teams
 
-- An Azure Active Directory (Azure AD) *group* team. Similar to *owner* team, an Azure AD group team can own records and can have security roles assigned to the team. There are two *group* team types, and they correspond directly to the Azure AD group types – Security and Office. The *group* security role can be just for the team or for team member with User privileges [member's privilege inheritance](security-roles-privileges.md#team-members-privilege-inheritance). Team members are dynamically derived (added and removed) when they access the environment based on their Azure AD group membership. See [Manage group teams](manage-group-teams.md).
+There are three types of teams.
+
+### Owner team
   
-- An *access* team doesn't own records and doesn't have security roles assigned to the team. The team members have privileges defined by their individual security roles and by roles from the teams in which they are members. The records are shared with an access team, and the team is granted access rights on the records, such as Read, Write, or Append.  
+An *owner* team owns records and has security roles assigned to the team. The team's privileges are defined by these security roles. In addition to privileges provided by the team, team members have the privileges defined by their individual security roles and team [member's privilege inheritance](security-roles-privileges.md#team-members-privilege-inheritance) roles, and by the roles from other teams in which they are members. A team has full access rights on the records that the team owns. Team members are added manually to the owner team.
+
+### Azure AD group team
+
+Similar to *owner* team, an Azure Active Directory (Azure AD) group team can own records and can have security roles assigned to the team. There are two *group* team types, and they correspond directly to the Azure AD group types – Security and Office. The *group* security role can be just for the team or for team member with User privileges [member's privilege inheritance](security-roles-privileges.md#team-members-privilege-inheritance). Team members are dynamically derived (added and removed) when they access the environment based on their Azure AD group membership. See [Manage group teams](manage-group-teams.md).
+
+### Access team
+
+An *access* team doesn't own records and doesn't have security roles assigned to the team. The team members have privileges defined by their individual security roles and by roles from the teams in which they are members. The records are shared with an access team, and the team is granted access rights on the records, such as Read, Write, or Append.  
+
+## Team operations
+
+You can do the following to manage teams in the Power Platform admin center.
+
+### Accessing a team's page
+
+To access a team's page, select an environment and then select **Settings** > **Users + permissions** > **Teams**.
+
+image of teams page
+
+### List the teams 
+
+To list all the teams of an environment
+
+
+
+
+
+
+
+
   
 ## Owner/group team or access team? 
 
