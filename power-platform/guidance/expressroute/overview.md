@@ -15,24 +15,26 @@ search.app:
 
 # Use Azure ExpressRoute with Microsoft Power Platform
 <!--note from editor: Some edits in this article (and throughout this doc set) are aimed at clarifying that the primary audience for this guidance is the person at the company that's going to implement ExpressRoute, not the partner who will likely do the actual implementation for the reader. If this is wrong, please excuse!-->
+<!--tayoshi: makes sense. Thanks for the edits -->
 [Microsoft Azure ExpressRoute](https://azure.microsoft.com/services/expressroute/) provides a way to connect your on-premises network
 to Microsoft cloud services by using private connectivity.
 <!--note from editor: Here and throughout the images in this doc set: Please make the labels sentence case, to avoid branding confusion. I see you've done this for "Microsoft edge" (which is perfect), but it's also important to use "Microsoft cloud," "Microsoft peering," and "Azure private peering for virtual networks". Also, this alt text isn't very descriptive. I suggest using the :::image::: extension and describing it vividly enough that someone who can't see the image can understand what it illustrates.-->
-![Overview diagram of the ExpressRoute-enabled network configuration with Microsoft public services and Azure.](media/expressroute-overview.png)
+<!--tayoshi: fixed alt-text-->
+:::image type="complex" source="media/expressroute-overview.png" alt-text="Overview diagram of the ExpressRoute-enabled network configuration with Microsoft public services and Azure.":::
+   Overview diagram of the ExpressRoute-enabled network configuration with Microsoft public services and Azure. From customer's network, a direct connection to Microsoft public services is made using public internet traffic. Another network connection is setup to connect to network partner edge, which has Microsoft Azure ExpressRoute connection set up to Microsoft edge. Two connections are setup with one primary and one secondary. From Microsoft edge, Microsoft peering is used to connect to Microsoft public services, and Azure private peering is used to connect from Microsoft edge to Microsoft Azure services. 
+:::image-end:::
 
 Although the name of the service is Azure ExpressRoute, it also supports private
 connectivity to services built on top of Azure, such as Microsoft 365,
 Microsoft Power Platform, and Dynamics 365.
-<!--note from editor: The following alt text exceeds the 150-character limit, we need to use the :::image::: extension. Please verify my edits. "The entire Microsoft technology" seemed like too bold a claim, so I thought "ecosystem" might work.
-![Diagram of the Microsoft ecosystem. The foundation layer consists of identity, security, management, and compliance. Azure spans that foundation. GitHub and Microsoft Power Platform are built on Azure, and Microsoft 365, LinkedIn and Microsoft Dynamics 365 are at the top layer.](media/powerplatform-overview.png)
--->
+
 :::image type="complex" source="media/powerplatform-overview.png" alt-text="Diagram of the Microsoft technology ecosystem.":::
-   <!--NOTE FROM EDITOR: PLEASE FLESH OUT THE LONG DESCRIPTION FOR THIS IMAGE. IF MY EDITS ARE OKAY (see commented-out text above), MAYBE YOU CAN USE THEM.-->
+   Diagram of the Microsoft ecosystem. The foundation layer consists of identity, security, management, and compliance. Azure spans that foundation. GitHub and Microsoft Power Platform are built on Azure, and Microsoft 365, LinkedIn and Microsoft Dynamics 365 are at the top layer.
 :::image-end:::
 
 ExpressRoute is a valuable technology, particularly when used with Azure infrastructure as a service (IaaS),
 but its deployment shouldn't be undertaken lightly, particularly for use with
-Microsoft Power Platform and Microsoft 365 services. You should consider using these services for ExpressRoute only after you've comprehensively reviewed your business justification and carefully planned how you'll configure it in your organization<!--note from editor: Suggested. The passive voice was hard to follow here.-->.
+Microsoft Power Platform and Microsoft 365 services. You should consider using these services for ExpressRoute only after you've comprehensively reviewed your business justification and carefully planned how you'll configure it in your organization.
 
 This document focuses on planning and configuring ExpressRoute
 for use with Microsoft Power Platform. More information: [What is Azure ExpressRoute?](/azure/expressroute/expressroute-introduction)

@@ -23,7 +23,7 @@ Microsoft Power Platform itself doesn't need to be configured specifically for
 ExpressRoute. Microsoft Power Platform as a service uses Microsoft Azure behind the scenes
 and has been onboarded to support use with ExpressRoute. Therefore, you don't need to make any
 specific configurations of the Microsoft Power Platform environments themselves
-to specify that ExpressRoute is being used.<!--note from editor: Suggested.-->
+to specify that ExpressRoute is being used.
 
 Within the Microsoft network, ExpressRoute handles traffic by advertising
 routing for specific IP subnets to the specific ExpressRoute circuit against
@@ -55,13 +55,13 @@ traffic.
 
 Requests can be made from other services to a customer service. Particularly
 for Microsoft Power Platform, which is a shared service, it isn't possible to
-lock down the requests to a particular set of machines.<!--note from editor: Edit okay? I wasn't sure what "it" referred to.--> It's necessary to
+lock down the requests to a particular set of machines. It's necessary to
 consider traffic back through ExpressRoute as coming from an external source,
 because although it's coming from a Microsoft datacenter, Microsoft isn't
 controlling the source of the requests; other customer services might attempt to make
 connections. Any connections should be controlled as if they came from an
 external gateway.
-<!--note from editor: I edited alt text to be 150 characters, but maybe this would be better as a complex :::image::: with a long description? -->
+
 ![Outbound traffic will be routed back via ExpressRoute for Microsoft Power Platform, e.g., custom web service requests and server-side synchronization.](media/server-outbound-traffic.png)
 
 To be routed back through ExpressRoute, any service being connected to
@@ -95,7 +95,7 @@ note that ExpressRoute isn't enforced as the *only* route to Microsoft Power Pla
 If client traffic is to be routed across the ExpressRoute circuit, the challenge for your network team
 is to route the traffic internally first from the client through the
 LAN or WAN to the subnet connected to ExpressRoute. It's also your team's responsibility to ensure that this
-traffic doesn't accidentally "leak out" and connect via the public internet.<!--note from editor: Suggested, to avoid passive voice.-->
+traffic doesn't accidentally "leak out" and connect via the public internet.
 
 Microsoft Power Platform doesn't block traffic that's received directly from the
 internet. Neither will ExpressRoute block responses from traffic that was

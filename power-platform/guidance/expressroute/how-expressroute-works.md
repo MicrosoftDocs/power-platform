@@ -35,10 +35,10 @@ provider's infrastructure to the edge of the Microsoft network. This connection
 can be optimized without ExpressRoute, but because internet connectivity is typically
 provided through a series of partnerships and relationships among
 telecommunications providers, your network traffic might be routed through suboptimal connectivity paths
-to its destination.<!--note from editor: Edit okay? I wasn't sure who this was addressed to. -->
+to its destination.
 
 When you agree with a connectivity provider to set up a dedicated and private connection, it helps ensure that the provider will take direct responsibility to set up an optimized connection to the Microsoft network.
-This sense of ownership often leads to an optimized experience.<!--note from editor: Suggested.-->
+This sense of ownership often leads to an optimized experience.
 
 Each circuit has fixed bandwidth; the bandwidth limitation is dependent on
 [which plan you choose](https://azure.microsoft.com/pricing/details/expressroute/). This circuit
@@ -51,11 +51,11 @@ depending on which kind of service is being requested:
     Microsoft 365, Dynamics 365, or Microsoft Power Platform services.
 
 -   **Private peering** routes requests to the customer's private Azure
-    services, for example, Azure Virtual Machines.<!--note from editor: I assume this refers to the Virtual Machines service? If it refers to instances of VMs created with the service, it should be lowercase. -->
+    services, for example, Azure Virtual Machines.<!--note from editor: I assume this refers to the Virtual Machines service? If it refers to instances of VMs created with the service, it should be lowercase. --><!---tayoshi: Yes I mean the service in this case->
 
 Each peering is a pair of independent Border Gateway Protocol (BGP) sessions,
 each configured redundantly for high availability. To ensure true resilience,
-it's important to ensure that these sessions<!--note from editor: Edit okay?--> transit over physically different
+it's important to ensure that these sessions transit over physically different
 connections.
 
 Microsoft advertises the IP subnets or prefixes of the cloud services to the
@@ -68,9 +68,9 @@ the peerings defined for that circuit.
 :::image-end:::
 
 For traffic to Microsoft, the internal routing configuration within the customer
-network needs to set up&mdash;and is responsible for&mdash;the following:<!--note from editor: Edit okay?-->
+network needs to set up&mdash;and is responsible for&mdash;the following:
 
--   Prioritizing the route for Microsoft online services<!--note from editor: I think lowercase (which you use the majority of the time) is better here. The title case seems better in a licensing context, but not when referring to a collection of products.--> traffic via the subnet
+-   Prioritizing the route for Microsoft online services traffic via the subnet
     connected to ExpressRoute, as opposed to the public internet
     connection
 
@@ -95,7 +95,7 @@ When the request is made:
     will be routed internally to be sent via the appropriate ExpressRoute
     circuit.
 
--   If the IP address isn't registered<!--note from editor: Edit okay?-->, the routing configuration within the online service will route the
+-   If the IP address isn't registered, the routing configuration within the online service will route the
     traffic out to the public internet.
 
 -   After the traffic arrives at the customer network, internal routing within
@@ -114,7 +114,7 @@ network across shared network segments.
 
 One critical factor to consider is that ExpressRoute doesn't currently allow
 you to directly configure specific services to be transported across the
-ExpressRoute circuit; rather; it allows you to enable groups of services&mdash;called *peerings*&mdash;to be transported.<!--note from editor: Is this what you mean by enabling groups of services?-->
+ExpressRoute circuit; rather; it allows you to enable groups of services&mdash;called *peerings*&mdash;to be transported.
 
 There are two types of ExpressRoute peerings: Microsoft and private.
 
@@ -129,7 +129,7 @@ It's possible to use BGP communities to configure the
 network to route traffic only for certain services, such as only Microsoft Teams
 or only SharePoint Online services, through an ExpressRoute Microsoft peering
 circuit. This is currently not supported for Microsoft Power Platform; alternatives are
-explained here.<!--note from editor: Where is "here"? Should this be "in the following section"?-->
+explained in the following section.<!--note from editor: Where is "here"? Should this be "in the following section"?--><!--tayoshi: yes, have fixed it-->
 
 Connectivity to Microsoft online services&mdash;such as Microsoft 365 and Microsoft Power
 Platform services&mdash;will be routed through Microsoft peering. Microsoft
@@ -137,26 +137,33 @@ assigns the URLs and IP addresses for Microsoft Power Platform, Dynamics 365 cus
 applications, and Microsoft 365 services to the Microsoft peering, so any traffic
 routed to them will be advertised and enabled through the Microsoft peering.
 Unlike Microsoft 365, Microsoft Power Platform doesn't have designated BGP
-communities. (BGP communities are covered here<!--note from editor: It looks like this is a dropped link?-->.)
+communities. (BGP communities are [covered here](/power-platform/guidance/expressroute/things-to-consider#ability-to-restrict-expressroute-use-to-only-certain-microsoft-services)<!--note from editor: It looks like this is a dropped link?-->.)
 <!--note from editor: For notes about this image, please see the editor's note in overview.md, line 20. The alt text is good here.-->
-![Traffic using Microsoft peering. After a connection reaches the Microsoft edge, it's no longer a designated connection within the Microsoft network.](media/traffic-using-microsoft-peering.png)
+<!--tayoshi: fixed -->
+:::image type="complex" source="media/traffic-using-microsoft-peering.png" alt-text="Diagram showing the traffic using Microsoft peering.":::
+    Traffic using Microsoft peering. After a connection reaches the Microsoft edge, it's no longer a designated connection within the Microsoft network.
+:::image-end:::
 
 Using Microsoft peering, connections go to shared services at Microsoft. This means that
-after a connection arrives at the Microsoft datacenter, the ongoing connection traverses<!--note from editor: Edits okay? Microsoft Writing Style Guide discourages the use of a "weak" verbs like "is" and "are."  -->
+after a connection arrives at the Microsoft datacenter, the ongoing connection traverses
 an internal shared network; the private connection provided by ExpressRoute doesn't extend all the way to the destination service endpoint itself.
 
 ### Private peering
 <!--note from editor: Are the uses of "you" okay in this section? I got a bit confused about who was the audience.-->
+<!--tayoshi: this is correct thanks.-->
 Private peering is used for your private Azure infrastructure as a service (IaaS) services, and not
 directly used by Microsoft Power Platform services. This type of peering typically connects to private IP addresses in an Azure
 virtual network.
 <!--note from editor: For notes about this image, please see the editor's note in overview.md, line 20. Alt text could be better.-->
-![Diagram showing network overview with Microsoft peering and private peering.](media/microsoft-peering-private-peering-differences.png)
+<!--tayoshi: fixed-->
+:::image type="complex" source="media/microsoft-peering-private-peering-differences.png" alt-text="Diagram showing network overview with Microsoft peering and private peering.":::
+   Diagram showing network overview with Microsoft peering and private peering. Microsoft peering establishes a private connection from customer's network to Microsoft edge. Once reaching the edge, the traffic is routed as like ordinary traffic where the private connection provided by ExpressRoute doesn't extend all the way to the destination service endpoint itself. For Azure private peering, the traffic remains private up to the endpoint of Azure service you created.
+:::image-end:::
 
 For Microsoft Power Platform, Microsoft doesn't use private services that you can access directly, so it isn't necessary to configure private peering for ExpressRoute. If you
 separately uses Azure private services, configuring private peering won't be
 harmful unless the introduction of additional workloads causes the connection
-to be saturated.<!--note from editor: Edit okay?  -->
+to be saturated.
 
 ### ExpressRoute controls traffic to the Microsoft network, not within it
 
@@ -168,12 +175,15 @@ connection all the way to your specific Microsoft Power Platform environment. Af
 through the peering rules as targeting a public resource&mdash;either Azure or a
 Microsoft service like Microsoft 365 or Microsoft Power Platform&mdash;the end target is a
 shared service so the network connection to it is also shared within the
-Microsoft network.<!--note from editor: As above, edits assume the "customer" is actually the audience here.-->
+Microsoft network.
 
 Traffic between services in Microsoft datacenters is routed within the
 Microsoft network rather than via the public internet.
 <!--note from editor: For notes about this image, please see the editor's note in overview.md, line 20. The alt text here is good.-->
-![Network diagram showing there are no direct links between Azure IaaS and Microsoft Power Platform services. Within the same datacenter, this traffic will be routed normally.](media/no-direct-link.png)
+<!--tayoshi: fixed-->
+:::image type="complex" source="media/no-direct-link.png" alt-text="Network diagram showing there are no direct links between Azure IaaS and Microsoft Power Platform services.":::
+   Network diagram showing there are no direct links between Azure IaaS and Microsoft Power Platform services. Within the same datacenter, this traffic will be routed normally.
+:::image-end:::
 
 > [!div class="nextstepaction"]
 > [Next step: Things to consider before using ExpressRoute](things-to-consider.md)

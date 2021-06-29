@@ -67,8 +67,9 @@ Microsoft Power Platform uses Microsoft peering.
 <!--note from editor: The alt text for this image exceeds the 150-character limit, and actually it should be even longer to fully describe the image. Please verify my edits to alt text and flesh out the long description. Also, please change "ER" in the image to "ExpressRoute."
 ![Diagram a showing a network request sent via the internet to Microsoft services and a response routed back via ExpressRoute - asymmetric routing.](media/checklist-asymmetric-routing.png)
 -->
+<!--tayoshi: Fixed alt-text-->
 :::image type="complex" source="media/checklist-asymmetric-routing.png" alt-text="Diagram a showing a network request sent via the internet to Microsoft services and a response routed back via ExpressRoute - asymmetric routing.":::
-   <!--NOTE FROM EDITOR: PLEASE FLESH OUT THIS LONG DESCRIPTION SO USERS WHO CAN'T SEE THE IMAGE CAN KNOW WHAT IT'S CONVEYING.-->
+   The diagram is showing a network request to Microsoft is made where the traffic is routed to travel through via the public internet. Once the request reaches Microsoft and the response is generated, the responce is routed via ExpressRoute due to incorrect configuration of the routing. As the original request is via the internet, customer's firewall rejects the incoming response traffic, failing to complete the standard request and response. 
 :::image-end:::
 
 ## Geographical distribution
@@ -77,8 +78,7 @@ Microsoft Power Platform uses Microsoft peering.
     considered in the ExpressRoute circuit connectivity?
 
 -   Should multiple circuits be distributed geographically for different areas
-    or regions?<!--note from editor: Suggested. -->
-<!--note from editor: Please verify alt text.-->
+    or regions?
 ![Diagram showing two operations, one in the United States and one in the United Kingdom, with an individual ExpressRoute circuit set up for each.](media/checklist-geo-distribution.png)
 
 ## On-premises integration

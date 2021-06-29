@@ -41,7 +41,7 @@ As part of planning, you'll need to take the following into account:
 - **Cost**: The connectivity provider will charge for establishing the
     private connection. This can be a significant cost; it will vary depending on the type and number of connections needed.
 
-- **Setup time**: In some cases, physical hardware will need to be set up. This setup time will need to be incorporated into the implementation schedule.<!--note from editor: Suggested.-->
+- **Setup time**: In some cases, physical hardware will need to be set up. This setup time will need to be incorporated into the implementation schedule.
 
 - **Configuration skills and resources**: Most of the configuration complexity lies in setting up the internal routing within your network. It's essential that you ensure that skilled people are available to do this.
 
@@ -100,7 +100,7 @@ dedicated and direct connection through the connectivity provider to Microsoft, 
 reduce the potential for having to contend with other traffic on the
 connections you share through the connectivity provider's network. It shouldn't be
 necessary to use ExpressRoute to achieve this quality of connection through
-a connectivity provider, but it's a way to help ensure it.<!--note from editor: Suggested. -->
+a connectivity provider, but it's a way to help ensure it.
 
 In the following example, a user in a branch location has their
 connection routed via the WAN to the customer datacenter connection to
@@ -216,15 +216,19 @@ services are carefully considered.
 
 When making connections to Microsoft Power Platform from customer locations, there are
 multiple traffic types to be considered. This can lead to both peering types,
-Microsoft and private peering, but the same ExpressRoute circuit can
-be used including these different peering types:<!--note from editor: I don't know what this means.-->
+Microsoft and private peering, and the same ExpressRoute circuit can
+be used for these peering types as show in the diagram below.<!--tayoshi: fixed sentence--><!--note from editor: I don't know what this means.-->
 
-![Overview of external connectivity with Microsoft Power Platform.](media/external-connectivity-with-power-platform.png)
+![Overview of external connectivity with Microsoft Power Platform. A single ExpressRoute connection is used to allow both Microsoft peering and private peering network traffic.](media/external-connectivity-with-power-platform.png)
 
-The following different connection types exist between Microsoft Power Platform services
-and an external network.<!--note from editor: Can you enumerate these connection types in the alt text and in the regular text? I got a bit confused in here. -->
+There are different connection types which exist between Microsoft Power Platform services
+and an external network. For example, Exchange Web Services connectivity using Server-side synchronization uses ExpressRoute to pass network traffic from Microsoft network to customer network. Web services connectivity leverages ExpressRoute for both inbound and outbound traffic to Microsoft network. For Https client, ExpressRoute connection is used to access from customer network to Microsoft network. Diagram below illustrates these examples.
+<!--note from editor: Can you enumerate these connection types in the alt text and in the regular text? I got a bit confused in here. -->
+<!-- tayoshi: added more context in alt text-->
 
-![Diagram showing different connection types that exist between Microsoft Power Platform services and an external network.](media/connection-types-used-in-power-platform.png)
+![Diagram showing different connection types that exist between Microsoft Power Platform services and an external network. Exchange Web Services connectivity using Server-side synchronization uses ExpressRoute to pass network traffic from Microsoft network to customer network. Web services connectivity leverage ExpressRoute connection for both inbound and outbound traffic to Microsoft network. For Https client, ExpressRoute connection is used to access from customer network to Microsoft network.](media/connection-types-used-in-power-platform.png)
+
+
 
 ### Outbound traffic (traffic from Microsoft Power Platform services)
 
@@ -248,7 +252,7 @@ The following table describes outbound traffic from Microsoft Power Platform ser
 |-----------------------------------|---------------------------------------------|--------------------------|---------------|
 | Web services                      | HTTPS outbound from Microsoft Power Platform services | Microsoft peering<br>Publish web services on public IP addresses that are within ExpressRoute- configured subnets                   | Custom plug-ins and workflow activities can make web service requests to external services      |
 | Exchange Integration: hybrid mode | HTTPS outbound from Microsoft Power Platform services | Microsoft peering<br>Web services would need to be published on public IP addresses that are within ExpressRoute-configured subnets | Exchange Web Services requests from server-side synchronization for hybrid deployments (Microsoft Power Platform services, Exchange on-premises) |
-| Connectors                        | HTTPS inbound from Microsoft Power Platform services  | Microsoft peering     | Requests from Microsoft Power Platform services through the APIMs<!--note from editor: What is "APIMs"? --> via connectors using the on-premises data gateway                                  |
+| Connectors                        | HTTPS inbound from Microsoft Power Platform services  | Microsoft peering     | Requests from Microsoft Power Platform services through the Azure API Management service <!--note from editor: What is "APIMs"? --> <!-- tayoshi: Replaced acronym with full description> via connectors using the on-premises data gateway                                  |
 
 ### Inbound traffic (traffic to Microsoft Power Platform services)
 
@@ -273,9 +277,9 @@ services hosted both in Microsoft 365 and Azure.
 | Exchange integration   | HTTPS outbound to Microsoft 365                | Exchange web service requests to Exchange Online from Server-Side Synchronization        |
 | SharePoint integration | HTTPS outbound to Microsoft 365                | SharePoint web service requests to SharePoint Online from Microsoft Power Platform services      |
 | Service Bus            | HTTPS outbound to Azure Service Bus            | Push events to Azure Service Bus either as standard event registration or from custom plug-ins and workflow activities      |
-| Data sync              | HTTPS inbound from Azure PaaS<!--note from editor: I don't know what this is. The only mention I find in the Cloud Style Guide is "it’s OK to use *persistent* to differentiate the IaaS offer (which has persistent virtual machines) from the PaaS offer (which has stateless virtual machines or role instances)." Does this match your understanding? If so, can we use some other phrase here? (I don't know what)-->        | Inbound change tracking requests for synchronization of data services, including search/offline/customer insight      |
+| Data sync              | HTTPS inbound from Azure <!-- tayoshi: Removed "PaaS" as it is difficult to place all Azure services here.--><!--note from editor: I don't know what this is. The only mention I find in the Cloud Style Guide is "it’s OK to use *persistent* to differentiate the IaaS offer (which has persistent virtual machines) from the PaaS offer (which has stateless virtual machines or role instances)." Does this match your understanding? If so, can we use some other phrase here? (I don't know what)-->        | Inbound change tracking requests for synchronization of data services, including search/offline/customer insight      |
 | Authentication         | HTTPS outbound to Azure Active Directory (Azure AD)   | Most authentication is done through passive redirects and claims tokens, but some data is synchronized Azure AD directly        |
-| Dataflows              | HTTPS outbound to Azure Data Lake Storage<!--note from editor: This is the current name via Cloud Style Guide. --> | Provides analytics capabilities and allows access to big data solutions incorporating data from both Microsoft Power Platform services and other sources, in addition to the resulting insight from analytics. |
+| Dataflows              | HTTPS outbound to Azure Data Lake Storage | Provides analytics capabilities and allows access to big data solutions incorporating data from both Microsoft Power Platform services and other sources, in addition to the resulting insight from analytics. |
 | Connectors             | HTTPS outbound to Azure PaaS services                | Connections to various Azure PaaS services             |
 
 The actual connectivity between these services, hosted either in Microsoft or
@@ -285,7 +289,7 @@ applicable for connections with these services.
 Where events are pushed onto the service bus, the connectivity between Microsoft Power
 Platform services and Azure is handled internally. Separately, the customer can
 make requests to the Service Bus to retrieve information, and this can be
-managed through public peering.<!--note from editor: It looks like public peering is deprecated on new ExpressRoute circuits (https://docs.microsoft.com/en-us/azure/expressroute/about-public-peering), but if it's something the reader can do without ExpressRoute, can you give a link to more information? (Or is the reader already likely to know how to do this?) -->
+managed through Microsoft peering.<!--tayoshi: Fixed to Microsoft peering as you mentioned it is deprecated and all is now in public peering--><!--note from editor: It looks like public peering is deprecated on new ExpressRoute circuits (https://docs.microsoft.com/en-us/azure/expressroute/about-public-peering), but if it's something the reader can do without ExpressRoute, can you give a link to more information? (Or is the reader already likely to know how to do this?) -->
 
 ## Customer public and private cloud connectivity to/from Microsoft Power Platform services 
 

@@ -24,7 +24,7 @@ planning or execution:
 
 -   Avoiding asymmetric routing, where traffic goes directly to Microsoft Power Platform across the
     internet but is returned by ExpressRoute to the corporate network, triggering
-    rejection of the traffic by the firewall<!--note from editor: Edit okay? -->
+    rejection of the traffic by the firewall
 
 -   The overall costs of provisioning ExpressRoute, including Microsoft Azure
     services, connectivity provider provisioning, and ongoing service and
@@ -124,7 +124,7 @@ One of the challenges you might face is wanting to use ExpressRoute for a
 particular Microsoft cloud service but not for others. Although the different
 peering options provide some level of control here, the peering itself doesn't
 provide granular control within services of the same peering type (for example
-to enable routing only to Azure virtual machines<!--note from editor: Edit okay?--> but not to Microsoft 365). It's
+to enable routing only to Azure virtual machines but not to Microsoft 365). It's
 possible, however, to use Border Gateway Protocol (BGP) communities to configure traffic for specific
 services only.
 
@@ -151,23 +151,22 @@ Microsoft 365 services. Instead, [regional BGP communities](/azure/expressroute/
 are used with corresponding Microsoft Azure regions that are used for each Microsoft Power
 Platform environment. Because Microsoft Power Platform environments use two sets of
 datacenters, be sure to look at the [Regions overview](/power-automate/regions-overview) to
-check which two datacenters are used. <!--note from editor: I removed the link to more information for BGP because you link to it in the previous sentence.-->More information: [BGP communities for GCC](/azure/azure-government/compare-azure-government-global-azure#azure-expressroute)
+check which two datacenters are used. More information: [BGP communities for GCC](/azure/azure-government/compare-azure-government-global-azure#azure-expressroute)
 
 ### Microsoft 365
 
 Because Microsoft Power Platform services and Microsoft 365 services are both offered through
-Microsoft peering<!--note from editor: If you meant to use the service name, it would be "Azure Peering Service" -->, setting up Microsoft peering would by default advertise
+Microsoft peering, setting up Microsoft peering would by default advertise
 all Microsoft Power Platform services and Microsoft 365 services across the ExpressRoute
 circuit.
 
-The result of this is that enabling it<!--note from editor: What is "it" here? --> to route traffic for one service would
+The result of this is that enabling BGP communities<!--note from editor: What is "it" here? --><!--tayoshi: added context--> to route traffic for one service would
 lead to both<!--note from editor: "both" what? --> being routed across ExpressRoute. This might or might not be desirable, but it
 can have unfavorable results. For example, if you've determined the network
 bandwidth needed for Microsoft Power Platform and sized the ExpressRoute connection
 accordingly, but then inadvertently also route all your Microsoft 365 traffic
 via ExpressRoute, this might saturate your network and cause performance
 challenges.
-<!--note from editor: Please check my alt text. "Traffic" doesn't make a good verb in this context.-->
 ![Diagram showing that Microsoft peering doesn't allow you to keep specific services out of network traffic.](media/microsoft-365-power-platform-network.png)
 
 While enabling ExpressRoute for Microsoft peering will route all
@@ -186,7 +185,7 @@ For more information about routing Microsoft 365, go to the documentation on
 Because Microsoft Power Platform services work partially as part of the Microsoft 365 service,
 many crossover services such as the admin portal and authentication are also
 required. It's not possible to protect all of these services by using ExpressRoute; the
-Microsoft 365 admin center<!--note from editor: Edit okay? This is the name for https://admin.microsoft.com/AdminPortal -->, for example, isn't published across ExpressRoute.
+Microsoft 365 admin center, for example, isn't published across ExpressRoute.
 
 ## Support for sovereign clouds
 
@@ -201,7 +200,7 @@ Watch this video describing how Microsoft Power Platform is available with sover
 
 When you consider using a sovereign cloud environment, you must consider
 what limitations exist, because not all features are available when compared
-with public cloud environments. The availability by each environment for Microsoft Power Platform is listed in the following table. For other differences in availability, read through the documentation on data regions.<!--note from editor: Can you give a link? -->
+with public cloud environments. The availability by each environment for Microsoft Power Platform is listed in the following table. For other differences in availability, read through the documentation on [data center regions](/power-automate/regions-overview).
 
 | **Region**                                    | **ExpressRoute support** |
 |-----------------------------------------------|--------------------------|
@@ -289,7 +288,10 @@ services.
 
 A single ExpressRoute connection can be used to access multiple online services, for example, Microsoft Power Platform, Dynamics 365, Microsoft 365, and Azure.
 <!--note from editor: For notes about this image, please see the editor's note in overview.md, line 20. Note that "Microsoft Edge" needs to be fixed also. The alt text doesn't indicate the unique flavor of this image. Can you please flesh it out? Probably will need the :::image::: tag extension.-->
-![Diagram showing shared ExpressRoute connection with Microsoft public services and Azure.](media/reuse-network.png)
+<!--tayoshi: Fixed-->
+:::image type="complex" source="media/reuse-network.png" alt-text="Diagram showing shared ExpressRoute connection with Microsoft public services and Azure.":::
+   Diagram showing shared ExpressRoute connection with Microsoft public services and Azure. Microsoft peering for Microsoft 365, Power Platform Dynamics 365 and Azure public services are sharing the same ExpressRoute connection with Azure private peering for virtual networks.
+:::image-end:::
 
 ExpressRoute itself doesn't separate different types of Microsoft
 services from a particular subnet. It's possible to use BGP community tags

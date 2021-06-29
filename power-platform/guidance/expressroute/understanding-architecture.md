@@ -23,7 +23,12 @@ underlying architecture to understand what can be configured.
 Microsoft Power Platform is built on top of Microsoft Azure infrastructure,
 deployed across various regions around the world. Each deployment is called an
 [*environment*](/power-platform/admin/environments-overview), and these environments are associated with<!--note from editor: Edit okay? I don't know what "set with" means here. The article linked to in this sentence says an environment is "bound to a geographic location" - would that be a better way to put it? --> a particular region.
+<!-- tayoshi: This edit looks better now thanks.>
 <!--note from editor: The alt text could be more descriptive, I think, but maybe the point is simply that regions have datacenters. Is it okay that "Canary Group" appears in each region?-->
+<!--tayoshi: added a better alt-text-->
+:::image type="complex" source="media/region-and-data-centers.png" alt-text="Diagram illustrating each Microsoft Power Platform region with its corresponding datacenters.":::
+   Each Power Platform region has a pair of data centers. The diagram is showing four different regions: Oceania, Great Britain, North America and Europe. Each of these regions have a pair. For example, North America region has West US and East US data centers in this example. Within each data center, scale groups exist. There are several scale groups including canary group, sandbox group, and also production scale groups.
+:::image-end:::
 ![Diagram illustrating each Microsoft Power Platform region with its corresponding datacenters.](media/region-and-data-centers.png)
 
 Each environment is contained inside a *scale group*&mdash;a shared infrastructure that
@@ -43,10 +48,10 @@ on-premises network and the "entrance" to the cloud service. Therefore, any
 network connections within the same cloud&mdash;in this case, Microsoft Power Platform and
 Azure services&mdash;can't be set up with ExpressRoute.
 <!--note from editor: What is the crux of the point this diagram is making? I can't really read it so I can't suggest good alt text for it.-->
-![Architectural diagram of Microsoft Power Platform environments.](media/environment-architecture.png)
+<!--tayoshi: will remove image as it's clear enough with the description-->
 
 Because Microsoft Power Platform doesn't have designated Border Gateway Protocol (BGP) communities like Microsoft
-365 does, you must use two regional BGP communities for the region you've selected.<!--note from editor: Edit okay? These two paragraphs seemed to say the same thing.-->
+365 does, you must use two regional BGP communities for the region you've selected.
 
 For example, if you've selected Europe as the region you'd like to use for
 your Microsoft Power Platform environment, and you'd like to connect that environment
@@ -114,7 +119,7 @@ static content served by the Content Delivery Network can't be routed via Expres
 it will be routed directly across the public internet. However, this content uses
 common platform capabilities that contain no customer data; therefore, the content
 need not be considered a candidate for protection over private networks like
-ExpressRoute.<!--note from editor: Suggested.-->
+ExpressRoute.
 
 > [!div class="nextstepaction"]
 > [Next step: Plan an ExpressRoute deployment](planning-expressroute.md)
