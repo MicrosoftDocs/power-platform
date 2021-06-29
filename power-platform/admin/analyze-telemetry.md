@@ -5,7 +5,7 @@ services: powerapps
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/09/2021
+ms.date: 06/28/2021
 author: tjvass
 ms.author: tjvass
 ms.reviewer: jimholtz
@@ -63,6 +63,8 @@ Note that Monitor can be used for [live detailed debugging for canvas apps and m
 ## Custom telemetry
 
 If the standard telemetry doesn't provide some specific metric that you need, you can write code to supplement what's already being gathered.
+
+When you have enabled this Application Insights capability you can use the [Microsoft.Xrm.Sdk.PluginTelemetry.ILogger Interface](/dotnet/api/microsoft.xrm.sdk.plugintelemetry.ilogger) in your plug-in code to write telemetry data directly to your Application Insights resource. This telemetry is never sent to Microsoft. More information: [Write Telemetry to your Application Insights resource using ILogger (Preview)](/powerapps/developer/data-platform/application-insights-ilogger)
 
 For client-side JavaScript in model-driven apps, you can use the same patterns you use today to write to your Application Insights resource.
 
