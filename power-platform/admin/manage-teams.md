@@ -1,6 +1,6 @@
 ---
 title: "Dataverse teams management  | MicrosoftDocs"
-description: Manage teams 
+description: Understand the different types of teams and how to view and manage settings.
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
@@ -19,166 +19,103 @@ search.app:
 ---
 # Dataverse teams management
 
-<!-- legacy procedure -->
+Using teams is optional. However, teams provide an easy way to share business objects and let you collaborate with other people across business units. While a team belongs to one business unit, it can include users from other business units. You can associate a user with more than one team. This topic discusses the different types of teams and their various operations.
 
-Using teams is optional. However, teams provide an easy way to share business objects and let you collaborate with other people across business units. While a team belongs to one business unit, it can include users from other business units. You can associate a user with more than one team.  
-  
 ## Types of teams
 
-There are three types of teams.
+**Owner team:** An owner team owns records and has security roles assigned to the team.  A user's privileges can come from their individual security roles, those of the team(s) they are part of, and/or the ones they inherit. A team has full access rights on the records that the team owns.  Team members are added manually to the owner team. 
 
-### Owner team
-  
-An *owner* team owns records and has security roles assigned to the team. The team's privileges are defined by these security roles. In addition to privileges provided by the team, team members have the privileges defined by their individual security roles and team [member's privilege inheritance](security-roles-privileges.md#team-members-privilege-inheritance) roles, and by the roles from other teams in which they are members. A team has full access rights on the records that the team owns. Team members are added manually to the owner team.
+**Access team:** An access team doesn't own records and doesn't have security roles assigned to the team. The team members have privileges defined by their individual security roles and by roles from the teams for which they are members. They share records with an access team, and the team is granted access rights to the records. Access rights include Read, Write, and Append.
 
-### Azure AD group team
-
-Similar to *owner* team, an Azure Active Directory (Azure AD) group team can own records and can have security roles assigned to the team. There are two *group* team types, and they correspond directly to the Azure AD group types – Security and Office. The *group* security role can be just for the team or for team member with User privileges [member's privilege inheritance](security-roles-privileges.md#team-members-privilege-inheritance). Team members are dynamically derived (added and removed) when they access the environment based on their Azure AD group membership. See [Manage group teams](manage-group-teams.md).
-
-### Access team
-
-An *access* team doesn't own records and doesn't have security roles assigned to the team. The team members have privileges defined by their individual security roles and by roles from the teams in which they are members. The records are shared with an access team, and the team is granted access rights on the records, such as Read, Write, or Append.  
+**Azure AD group team:** Similar to owner teams, an Azure Active Directory (Azure AD) group team can own records and can have security roles assigned to the team. *Security* and *Office* are two group team types, and they correspond directly to Azure AD group types. Group security roles can be only for a specific team or for a team member with user privileges that include [members' privilege inheritance](security-roles-privileges.md#team-members-privilege-inheritance). Team members are dynamically derived (added and removed) when they access an environment based on their Azure AD group membership. See [Manage group teams](manage-group-teams.md).
 
 ## Team operations
 
-You can do the following to manage teams in the Power Platform admin center.
+### Access your team's page
 
-### Accessing a team's page
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
 
-To access a team's page, select an environment and then select **Settings** > **Users + permissions** > **Teams**.
+2. Select an environment and then select **Settings** > **Users + permissions** > **Teams**.
 
-image of teams page
+3. Select the **Environments** tab to display all of the teams in an environment.
 
-### List the teams 
+   ![Teams Settings](media/dataverseteam2.png "Teams Settings")
 
-To list all the teams of an environment
+The team page lists all of the teams in an environment.
 
+### Create a new team
 
+1. Specify the following fields:   
 
-
-
-
-
-
-  
-## Owner/group team or access team? 
-
-The type of team you choose depends on the goals, nature of the project, and even the size of your organization. There are a few guidelines that you can use when choosing the team type. 
-
-### When to use owner or group teams 
-
-- Your organization's policies require the ability for records to be owned by entities other than users, such as the team entity. 
-- The number of teams is known at the design time of your system. 
-- Daily reporting on progress by owning teams is required. 
-
-### When to use access teams 
-
-- The teams are dynamically formed and dissolved. This typically happens if clear criteria for defining the teams, such as established territory, product, or volume are not provided. 
-- The number of teams is not known at the design time of your system. 
-- The team members require different access rights on the records. You can share a record with several access teams, each team providing different access rights on the record. For example, one team is granted the Read access right on the account and another team, the Read, Write, and Share access rights on the same account. 
-- A unique set of users requires access to a single record without having ownership of the record. 
-
-## Common to all team types
-
-### Who can create teams?
-Anyone who has Create, Read, Update (Write), Delete (CRUD) privileges on the Team entity, can create any of the team types.
-
-> [!div class="mx-imgBorder"] 
-> ![Privileges for creating teams](media/create-teams-security-roles.png "Privileges for creating teams") 
-
-### Add a Team administrator
-When you create a team, you need to add a Team administrator with a security role that has Read privilege to the Team entity. In the web app, go to **Settings** > **Security** > **Teams** and select a team to enter the Team administrator.
-
-> [!div class="mx-imgBorder"] 
-> ![Adding Team administrator](media/add-team-administrator.png "Adding Team administrator")
-
-### What inherited privilege do Team administrators have?
-Team administrators have access to Team owned records. Team administrators do not need to be added to a team and do not show up as a member of the team.
-
-## About owner teams 
-An owner team can own one or more records. To make a team an owner of the record, you must assign a record to the team.
-
-While teams provide access to a group of users, you must still associate individual users with security roles that grant the privileges they need to create, update, or delete user-owned records. These privileges can't be applied by assigning security roles to a team and then adding the user to that team. If you need to provide your team members the team privileges directly without their own security role, you can assign the team a security role that has [member's privilege inheritance](security-roles-privileges.md#team-members-privilege-inheritance).
-
-If an owner team doesn't own records and doesn't have security roles assigned to the team, it can be converted to an access team. It is a one-way conversion. You can't convert the access team back to the owner team. During conversion, all queues and mailboxes associated with the team are deleted. When you create a team in the web application, you have to choose the team type **Owner**.
-
-For more information, see [Assign a record to a user or team](/powerapps/user/assign-or-share-records).
-
-## Create an owner team
-
-1. Make sure that you have the System Administrator, Sales Manager, Vice President of Sales, Vice President of Marketing, or CEO-Business Manager security role or equivalent permissions.
+   - **Team name:** Team name should be unique for a business unit.
+   - **Description:** Team description
+   - **Business unit:** Select the business unit in the drop down.
+   - **Administrator:** Search for users in the organization (Start typing characters)
+   - **Team type:** Select Team type from the drop down.
    
-   Check your security role:
-   - Follow the steps in [View your user profile](/powerapps/user/view-your-user-profile).
-   - Don't have the correct permissions? Contact your system administrator.
+   > [!NOTE]
+   > A team can be one of the following types: Owner, Access, Azure AD Security group, or Azure AD Office group. 
 
-2. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+   ![New team](media/dataverseteam3.png "New team")
 
-3. Select **Settings** > **Security**. In Microsoft Dynamics 365 for Outlook, go to **Settings** > **System** > **Security**.
+2. If the team type is Azure AD Security group or Azure AD Office group, you must also enter these fields:
 
-4. Select **Teams**.
+   - **Group name:** The Azure AD group name. Start typing for existing Azure AD group names). These groups are pre-created in Azure AD.
+   - **Membership type:** Select the membership type from the dropdown.
 
-5. On the Actions toolbar, select **New** button.
+   ![New team Azure AD](media/dataverseteam4.png "New team Azure AD")
 
-6. Enter a team name.
+Once you create the team, you can add team members and select corresponding security roles. This step is optional, but recommended.
 
-7. Select a business unit.
+### Edit a team
 
-8. Enter an administrator.
+1. Choose a team and then select **Edit team**. Only the Team name, Description, and Administrator are available for editing.
 
-9. Select **Owner** in **Team Type**.
+2. Update the fields as required, and then select **Update**.
 
-10. Complete other required fields, and then select **Save**.
+   ![Edit team](media/dataverseteam5.png "Edit team")
 
-   If you don't select the business unit to which the team will belong, by default, the root business unit is selected. The root business unit is the first business unit created for an organization.
+### Delete a team
 
-## Edit an owner team
+1. Choose a team and then select **Delete team**. 
 
-1. Make sure that you have the System Administrator, Sales Manager, Vice President of Sales, Vice President of Marketing, or CEO-Business Manager security role or equivalent permissions.
-   
-   Check your security role:
-   - Follow the steps in [View your user profile](/powerapps/user/view-your-user-profile).
-   - Don't have the correct permissions? Contact your system administrator.
+2. Select **Delete** to confirm. (Note that this action cannot be undone.)
 
-2. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+   ![Delete access](media/dataverseteam6.png "Delete access")
 
-3. Select **Settings** > **Security**. In Dynamics 365 for Outlook, go to **Settings** > **System** > **Security**.
+### Manage the security role(s) of a team
 
-4. Select **Teams**.
+1. Choose a team and then select **Manage security roles**. 
 
-5. In the **Teams** drop-down list, select **All Owner Teams** or another appropriate view.
+2. Select the role(s) required and then select **Save**.
 
-6. In the grid, select the team you want to edit.
+   ![Manage security roles](media/dataverseteam7.png "Manage security roles")
 
-7. On the Actions toolbar, select **Edit**, change the desired fields, and then select **Save**.
+### Manage team members
 
-## About access teams and team templates  
- You can create an access team manually by choosing the team type **Access**, or let the system create and manage an access team for you. When you create an access team, you can share multiple records with the team.  
-  
- A system-managed access team is created for a specific record, other records can't be shared with this team. You have to provide a team template that the system uses to create a team. In this template, you define the entity type and the access rights on the record that are granted to the team members when the team is created.  
-  
- A team template is displayed on all record forms for the specified entity as a list. When you add the first user to the list, the actual access team for this record is created. You can add and remove members in the team by using this list. The team template applies to the records of the specified entity type and the related entities, according to the cascading rules. To give team members different access on the record, you can provide several team templates, each template specifying different access rights. 
+You can add and delete members from a team.
 
-For example, you can create a team template for the Account entity with the Read access right, which allows the team members to view the specified account. For another team that requires more access to the same account, you can create a team template with Read, Write, Share and other access rights. To be added to the team, a minimum access level a user must have on the entity specified in the template is Basic (User) Read.  
-  
- Because of the parental relationship between the team template and system-managed access teams, when you delete a template, all teams associated with the template are deleted according to the cascading rules. If you change access rights for the team template, the changes are applied only to the new auto-created (system-managed) access teams. The existing teams are not affected.  
-  
 > [!NOTE]
-> A user must have sufficient privileges to join an access team. For example, if the access team has Delete access rights on an account, the user must have Delete privileges on the Account entity to join the team. If you're trying to add a user with insufficient privileges, you'll see this error message: "You can't add the user to the access team because the user doesn't have sufficient privileges on the entity."  
-  
- For step-by-step instructions on how to create a team template and add the entity form, see [Create a team template and add to an entity form](create-team-template-add-entity-form.md)  
- 
-## Maximum settings for system-managed access teams  
- The maximum number of team templates that you can create for an entity is specified in the `MaxAutoCreatedAccessTeamsPerEntity` deployment setting. The default value is 2. The maximum number of entities that you can enable for auto-created access teams is specified in the `MaxEntitiesEnabledForAutoCreatedAccessTeams` deployment setting. The default value is 100. You can use the `Set-CrmSetting`[!INCLUDE[pn_PowerShell](../includes/pn-powershell.md)] command to update this value.   
-  
+> Managing team members is allowed only for the *Owner* and *Access* team types. For Azure AD group teams, managing team members must be performed by an Azure AD admin.
+
+1. Choose a team and then select **Manage team members**. 
+
+2. Do one of the following:
+
+   - To add a new team member, select **Add team members** and specify the user.
+
+   ![Add team members](media/dataverseteam8.png "Add team members")
+
+   - To delete a team member, select the user and then select **Remove**.
+
+   ![Delete team members](media/dataverseteam9.png "Delete team members")
+
 ### See also  
  [Create a team template and add to an entity form](create-team-template-add-entity-form.md)   
  [Manage group teams](manage-group-teams.md)
  [About team templates](../admin/about-team-templates.md)   
- [Add teams or users to a field security profile](../admin/add-teams-users-field-security-profile.md)   
+ [Add teams or users to a field security profile](add-teams-users-field-security-profile.md)   
  [About team templates](about-team-templates.md)   
- [Download: Access Teams in Microsoft Dynamics CRM](https://download.microsoft.com/download/E/9/0/E9009308-CA01-4B37-B03C-435B8ACB49B4/Access%20Teams%20with%20Microsoft%20Dynamics%20CRM%202013.pdf)   
- [Download: Scalable security modeling with Microsoft Dynamics CRM](https://go.microsoft.com/fwlink/p/?LinkID=328757)   
  [Entity relationship behavior](/powerapps/maker/common-data-service/create-edit-entity-relationships#entity-relationship-behavior)
 
 

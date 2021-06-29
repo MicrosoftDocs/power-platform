@@ -18,7 +18,7 @@ search.app:
 
 # Dataverse teams management
 
-This article discusses the different types of teams and their associated Power Platform privileges for members based on their roles.
+Using teams is optional. However, teams provide an easy way to share business objects and let you collaborate with other people across business units. While a team belongs to one business unit, it can include users from other business units. You can associate a user with more than one team. This topic discusses the different types of teams and their associated Power Platform privileges for members based on their roles.
 
 ## Types of teams
 
@@ -28,15 +28,13 @@ This article discusses the different types of teams and their associated Power P
 
 **Azure AD group team:** Similar to owner teams, an Azure Active Directory (Azure AD) group team can own records and can have security roles assigned to the team. *Security* and *Office* are two group team types, and they correspond directly to Azure AD group types. Group security roles can be only for a specific team or for a team member with user privileges that include [members' privilege inheritance](security-roles-privileges.md#team-members-privilege-inheritance). Team members are dynamically derived (added and removed) when they access an environment based on their Azure AD group membership. See [Manage group teams](manage-group-teams.md).
 
-## Modify the team page settings
+## Team operations
 
 ### Access your team's page
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
 
-2. Select **Environment** > **Settings** > **Teams**.
-
-   ![Environments Settings](media/dataverseteam1.png "Environments Settings")
+2. Select an environment and then select **Settings** > **Users + permissions** > **Teams**.
 
 3. Select the **Environments** tab to display all of the teams in an environment.
 
@@ -55,22 +53,22 @@ The team page lists all of the teams in an environment.
    - **Team type:** Select Team type from the drop down.
    
    > [!NOTE]
-   > A team can be one of the following types: Owner, Access, AAD Security Group, or Azure AD Office Group. 
+   > A team can be one of the following types: Owner, Access, Azure AD Security group, or Azure AD Office group. 
 
    ![New team](media/dataverseteam3.png "New team")
 
-2. If the team type is Azure AD Security Group or Azure AD Office Group, you must also enter these fields:
+2. If the team type is Azure AD Security group or Azure AD Office group, you must also enter these fields:
 
-   - **Group name:** Azure AD Group Name (Start typing for existing AAD group names). These groups are pre-created in Azure AD.
-   - **Membership type:** Select membership type from the dropdown.
+   - **Group name:** The Azure AD group name. Start typing for existing Azure AD group names). These groups are pre-created in Azure AD.
+   - **Membership type:** Select the membership type from the dropdown.
 
-   ![New team AAD](media/dataverseteam4.png "New team AAD")
+   ![New team Azure AD](media/dataverseteam4.png "New team Azure AD")
 
 Once you create the team, you can add team members and select corresponding security roles. This step is optional, but recommended.
 
 ### Edit a team
 
-1. Select the team and then choose **Edit team**. Only the Team Name, Description, and Administrator are available for editing.
+1. Choose a team and then select **Edit team**. Only the Team name, Description, and Administrator are available for editing.
 
 2. Update the fields as required, and then select **Update**.
 
@@ -78,7 +76,7 @@ Once you create the team, you can add team members and select corresponding secu
 
 ### Delete a team
 
-1.  Select the team and then **Delete team**. 
+1. Choose a team and then select **Delete team**. 
 
 2. Select **Delete** to confirm. (Note that this action cannot be undone.)
 
@@ -86,9 +84,9 @@ Once you create the team, you can add team members and select corresponding secu
 
 ### Manage the security role(s) of a team
 
-1. Select the team and then **Manage security roles**. 
+1. Choose a team and then select **Manage security roles**. 
 
-2. Select the role(s) required and then **Save**.
+2. Select the role(s) required and then select **Save**.
 
    ![Manage security roles](media/dataverseteam7.png "Manage security roles")
 
@@ -99,7 +97,7 @@ You can add and delete members from a team.
 > [!NOTE]
 > Managing team members is allowed only for the *Owner* and *Access* team types. For Azure AD group teams, managing team members must be performed by an Azure AD admin.
 
-1. Select the team and then **Manage team members**. 
+1. Choose a team and then select **Manage team members**. 
 
 2. Do one of the following:
 
