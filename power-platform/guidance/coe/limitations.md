@@ -37,9 +37,11 @@ Larger tenants might require a per flow license in order for these flows to comp
 
 The sync flows in the Core Component solution will only update resources that have changed since the last run. After an upgrade, you will only see the benefits of bug fixes or changes when you run a full inventory sync: 
 
-1) Set the **Full inventory** environment variable to *Yes* (Learn more: [update environment variables](setup-core-components.md#update-environment-variables)).
+1) Set the value of the **Full inventory** environment variable to *Yes* (Learn more: [update environment variables](setup-core-components.md#update-environment-variables)).
+1) Turn all flows in Core off and back on (note this step is temporary while we await a fix to a caching bug in flow).
 1) Run the *Admin | Sync Template v3* flow.
 1) Set the **Full inventory** environment variable back to *No*.
+1) Turn all flows in Core off and back on
 
 ## Dataverse for Teams
 
@@ -137,5 +139,12 @@ For full list of license requirements see [Setup Prerequisite](setup.md#prerequi
 
 If your Power Platform admin role is managed via  **[PIM](/azure/active-directory/privileged-identity-management/pim-getting-started)** ensure the Sync Flows of the Core Components solution are set up to complete during the time whilst your user is granted admin permission. If your user loses admin access during the run of the sync flows, you may end up with incomplete or incorrect data if you use PIM and your Power Platform Admin Role.
 
+## Monitoring Flow Runs
+
+Currently there is no solution for pulling in Power Automate cloud flow runs.
+
+We do have limited ability to monitor desktop flows, and those are part of the normal Core solution and Power BI reports.
+
+If you want more details for desktop flows runs please see this solution from outside the Starter Kit: [Advanced Power Automate RPA Run Log Analytics with PowerBI and Dataverse](https://flow.microsoft.com/en-us/blog/advanced-power-automate-rpa-run-log-analytics-with-power-bi-and-dataverse/)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
