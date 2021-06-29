@@ -45,12 +45,18 @@ The team page lists all of the teams in an environment.
 
 ### Create a new team
 
-1. Specify the following fields:   
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
+
+2. Select an environment and then select **Settings** > **Users + permissions** > **Teams**.
+
+3. Select **+ Create team**.
+
+4. Specify the following fields:   
 
    - **Team name:** Team name should be unique for a business unit.
-   - **Description:** Team description
+   - **Description:** Team description.
    - **Business unit:** Select the business unit in the drop down.
-   - **Administrator:** Search for users in the organization (Start typing characters)
+   - **Administrator:** Search for users in the organization. Start typing characters.
    - **Team type:** Select Team type from the drop down.
    
    > [!NOTE]
@@ -69,19 +75,23 @@ Once you create the team, you can add team members and select corresponding secu
 
 ### Edit a team
 
-1. Choose a team and then select **Edit team**. Only the Team name, Description, and Administrator are available for editing.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
 
-2. Update the fields as required, and then select **Update**.
+2. Select an environment and then select **Settings** > **Users + permissions** > **Teams**.
 
-   ![Edit team](media/dataverseteam5.png "Edit team")
+3. Choose a team and then select **Edit team**. Only the Team name, Description, and Administrator are available for editing.
+
+4. Update the fields as required, and then select **Update**.
 
 ### Delete a team
 
-1. Choose a team and then select **Delete team**. 
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
 
-2. Select **Delete** to confirm. (Note that this action cannot be undone.)
+2. Select an environment and then select **Settings** > **Users + permissions** > **Teams**.
 
-   ![Delete access](media/dataverseteam6.png "Delete access")
+3. Choose a team and then select **Delete team**. 
+
+4. Select **Delete** to confirm. Note that this action cannot be undone.
 
 ### Manage the security role(s) of a team
 
@@ -98,9 +108,13 @@ You can add and delete members from a team.
 > [!NOTE]
 > Managing team members is allowed only for the *Owner* and *Access* team types. For Azure AD group teams, managing team members must be performed by an Azure AD admin.
 
-1. Choose a team and then select **Manage team members**. 
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
 
-2. Do one of the following:
+2. Select an environment and then select **Settings** > **Users + permissions** > **Teams**.
+
+3. Choose a team and then select **Manage team members**. 
+
+4. Do one of the following:
 
    - To add a new team member, select **Add team members** and specify the user.
 
