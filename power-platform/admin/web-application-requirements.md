@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/06/2021
+ms.date: 06/30/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -49,7 +49,7 @@ The web application can run in any of the following web browsers running on the 
 - Mozilla Firefox (latest publicly-released version) running on Windows 10, Windows 8.1, Windows 8, or Windows 7  
 
 - [!INCLUDE[tn_Google_Chrome](../includes/tn-google-chrome.md)]
-  - [!INCLUDE[tn_Google_Chrome](../includes/tn-google-chrome.md)] (latest publicly-released version) running on Windows 10, Windows 8.1, Windows 8, Windows 7, or [Google Nexus](/dynamics365/mobile-app/support-phones-tablets) tablet 
+  - [!INCLUDE[tn_Google_Chrome](../includes/tn-google-chrome.md)] (latest publicly-released version) running on Windows 10, Windows 8.1, Windows 8, Windows 7
   - Google Chrome (latest publicly-released version) running on the two latest publicly-release Mac OS versions 
 
 - [!INCLUDE[tn_Apple_Safari](../includes/tn-apple-safari.md)] (latest publicly-released version) running on the two latest publicly-release Mac OS versions, or [Apple iPad](/dynamics365/mobile-app/support-phones-tablets)  
@@ -62,7 +62,7 @@ To find the latest release for these web browsers, visit the software manufactur
 
 ## Support for Microsoft Internet Explorer and Microsoft Edge Legacy 
 
-Internet Explorer support ends Aug 17th, 2021 and Microsoft Edge Legacy support ended March 2021.  We recommend that you switch to Microsoft Edge (based on Chromium) instead. See [Support end for Internet Explorer](support-end-internet-explorer.md) for more details on the support ending for Internet Explorer and Microsoft Edge Legacy with model-driven apps. 
+Internet Explorer support ends Aug 17th, 2021 and Microsoft Edge Legacy support ended March 2021.  We recommend that you switch to Microsoft Edge (based on Chromium). See [Support end for Internet Explorer](support-end-internet-explorer.md) for more details on the support ending for Internet Explorer and Microsoft Edge Legacy with model-driven apps. 
 
 Starting with 2021 Wave 2, users on older browser versions will see the following warning message.  This will be updated with each release to ensure user performance and allow the product to take advantage of newest browser capabilities for a better experience. 
 

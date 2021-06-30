@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/21/2020
+ms.date: 06/30/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -16,7 +16,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Supported web browsers and mobile devices
+# Supported web browsers and mobile devices 
 
 Users can access the model-driven apps with the most recent versions of these popular browsers:  
   
@@ -39,8 +39,7 @@ For a mobile device, such as an iPad or smartphone, the following apps are avail
 - [Dynamics 365 for phones and Dynamics 365 for tablets](/dynamics365/mobile-app/install-dynamics-365-for-phones-and-tablets)
   
 > [!NOTE]
-> - Users who try to view model-driven apps on an unsupported browser are redirected to the Unified Interface experience. For more information, see [Unified Interface Overview](about-unified-interface.md).  
-> -  If you have added content to forms or dashboards in an iFrame, you might have implemented security restrictions around certain actions in that content, such as external links. Keep in mind that in [!INCLUDE[tn_Firefox](../includes/tn-firefox.md)], this security restriction code will likely be unsupported.  
+> If you have added content to forms or dashboards in an iFrame, you might have implemented security restrictions around certain actions in that content, such as external links. Keep in mind that in [!INCLUDE[tn_Firefox](../includes/tn-firefox.md)], this security restriction code will likely be unsupported.  
   
  
 ## Known issues when you run model-driven apps with certain web browsers  
