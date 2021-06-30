@@ -62,12 +62,12 @@ Using teams is optional. However, teams provide an easy way to share business ob
    > [!NOTE]
    > A team can be one of the following types: Owner, Access, Azure AD Security group, or Azure AD Office group. 
 
-2. If the team type is Azure AD Security group or Azure AD Office group, you must also enter these fields:
+5. If the team type is Azure AD Security group or Azure AD Office group, you must also enter these fields:
 
    - **Group name:** The Azure AD group name. Start typing for existing Azure AD group names). These groups are pre-created in Azure AD.
    - **Membership type:** Select the membership type from the dropdown.
 
-   :::image type="content" source="media/dataverse-team-manage-new-team.png" alt-text="New Azure AD team":::
+   :::image type="content" source="media/dataverse-team-manage-new-team-azuread.png" alt-text="New Azure AD team":::
 
 Once you create the team, you can add team members and select corresponding security roles. This step is optional, but recommended.
 
