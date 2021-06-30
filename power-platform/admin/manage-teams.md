@@ -37,9 +37,9 @@ Using teams is optional. However, teams provide an easy way to share business ob
 
 2. Select an environment and then select **Settings** > **Users + permissions** > **Teams**.
 
-3. Select the **Environments** tab to display all of the teams in an environment.
+A list of all of the teams in the environment is displayed.
 
-   ![List of teams in environment](media/dataverse-team-manage-list.png "List of teams in environment")
+![List of teams in environment](media/dataverse-team-manage-list.png "List of teams in environment")
 
 ### Create a new team
 
