@@ -21,7 +21,7 @@ search.app:
 
 [Available GitHub Actions for administrative functions for Microsoft Power Platform](https://github.com/marketplace/actions/powerplatform-actions) are described in the following sections. 
 
-## Configure deployment credentials
+## Configure credentials to use within your GitHub workflows
 
 Many of the actions require you to connect to a Microsoft Dataverse environment. You can add service principal or user credentials as secrets in your GitHub repository and then use them in the workflow.
 

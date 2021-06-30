@@ -21,7 +21,7 @@ search.app:
 
 [GitHub Actions for Microsoft Power Platform](https://github.com/marketplace/actions/powerplatform-actions) are described in the following sections. In addition, sample GitHub workflows shown as well. For more information about GitHub Actions and how to download them, go to [GitHub Actions for Microsoft Power Platform](devops-github-actions.md).
 
-## Configure deployment credentials
+## Configuring Credentials to use with GitHub Actions with Microsoft Power Platform
 
 Many of the actions require you to connect to a Microsoft Dataverse environment. You can add service principal or user credentials as secrets in your GitHub repository and then use them in your workflows.
 
