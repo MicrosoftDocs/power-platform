@@ -63,9 +63,9 @@
       items:
       - name: Use GitHub Actions for Microsoft Power Platform
         href: devops-github-actions.md
-      - name: Available GitHub Actions for Microsoft Power Platform
+      - name: Available GitHub Actions for Power Platform
         href: devops-github-available-actions.md
-      - name: Available GitHub Administrative Actions for Microsoft Power Platform
+      - name: Available GitHub Actions for Power Platform administration
         href: devops-github-available-administrative-actions.md
       - name: Tutorials
         items:
