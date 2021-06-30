@@ -16,6 +16,8 @@
          href: fundamentals-what-is-power-virtual-agents-portal.md
        - name: Get started quickly with Power Virtual Agents
          href: fundamentals-get-started.md
+       - name: Use pre-built chatbot templates
+         href: fundamentals-templates.md
     - name: Administer and manage
       items:
        - name: Assign licenses
