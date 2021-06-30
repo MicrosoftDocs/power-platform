@@ -11,6 +11,11 @@ search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+contributors:
+  - rogergilchrist
+  - rjmax
+  - carrema
+  - topness-msft
 ---
 
 # Things to consider before using ExpressRoute with Microsoft Power Platform

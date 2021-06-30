@@ -11,6 +11,9 @@ search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+contributors:
+  - rogergilchrist
+  - topness-msft
 ---
 
 # Understand Microsoft Power Platform architecture to use with ExpressRoute

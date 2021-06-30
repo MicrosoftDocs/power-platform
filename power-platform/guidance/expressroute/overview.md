@@ -11,6 +11,9 @@ search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+contributors:
+  - rogergilchrist
+  - topness-msft
 ---
 
 # Use Azure ExpressRoute with Microsoft Power Platform

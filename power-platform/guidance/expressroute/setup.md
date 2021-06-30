@@ -15,6 +15,9 @@ search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+contributors:
+  - rogergilchrist
+  - topness-msft
 ---
 
 # Set up ExpressRoute for Microsoft Power Platform

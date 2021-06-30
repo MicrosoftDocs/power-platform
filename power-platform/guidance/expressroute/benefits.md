@@ -11,6 +11,9 @@ search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+contributors:
+  - rogergilchrist
+  - topness-msft
 ---
 
 # Benefits of using ExpressRoute with Microsoft Power Platform
