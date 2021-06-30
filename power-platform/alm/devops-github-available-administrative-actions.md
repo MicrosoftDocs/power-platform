@@ -36,7 +36,7 @@ Parameters to define within your GitHub Action Script as [Environment Variables]
 - Application ID: `WF_APPLICATION_ID:<your application id>`
 - Tenant ID: `WF_TENANT_ID:<your tenant id>`
 
-The client Secret will be stored as a GitHub secret, as described earlier and will be referenced from within the action script using a parameter like:
+The client secret will be stored as a GitHub secret, as described earlier and will be referenced from within the action script using a parameter like:
 `client secret: ${{secrets.CLIENT_SECRET_GITHUB_ACTIONS}}`
 
 ## Administrative tasks
