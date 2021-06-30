@@ -215,18 +215,17 @@ services are carefully considered.
 ## External connectivity to/from Microsoft Power Platform
 
 When making connections to Microsoft Power Platform from customer locations, there are
-multiple traffic types to be considered. This can lead to both peering types,
+multiple traffic types to consider. This can lead to both peering types,
 Microsoft and private peering, and the same ExpressRoute circuit can
-be used for these peering types as show in the diagram below.<!--tayoshi: fixed sentence--><!--note from editor: I don't know what this means.-->
+be used for these peering types as show in the following image.
 
 ![Overview of external connectivity with Microsoft Power Platform. A single ExpressRoute connection is used to allow both Microsoft peering and private peering network traffic.](media/external-connectivity-with-power-platform.png)
 
-There are different connection types which exist between Microsoft Power Platform services
-and an external network. For example, Exchange Web Services connectivity using Server-side synchronization uses ExpressRoute to pass network traffic from Microsoft network to customer network. Web services connectivity leverages ExpressRoute for both inbound and outbound traffic to Microsoft network. For Https client, ExpressRoute connection is used to access from customer network to Microsoft network. Diagram below illustrates these examples.
-<!--note from editor: Can you enumerate these connection types in the alt text and in the regular text? I got a bit confused in here. -->
-<!-- tayoshi: added more context in alt text-->
+There are different connection types that exist between Microsoft Power Platform services
+and an external network. For example, Exchange Web Services connectivity using server-side synchronization uses ExpressRoute to pass network traffic from the Microsoft network to the customer network. Web services connectivity uses ExpressRoute for both inbound and outbound traffic to the Microsoft network. For the HTTPS client, the ExpressRoute connection is used for access from the customer network to the Microsoft network. The following image illustrates these examples.
 
-![Diagram showing different connection types that exist between Microsoft Power Platform services and an external network. Exchange Web Services connectivity using Server-side synchronization uses ExpressRoute to pass network traffic from Microsoft network to customer network. Web services connectivity leverage ExpressRoute connection for both inbound and outbound traffic to Microsoft network. For Https client, ExpressRoute connection is used to access from customer network to Microsoft network.](media/connection-types-used-in-power-platform.png)
+
+![Diagram showing different connection types that exist between Microsoft Power Platform services and an external network.](media/connection-types-used-in-power-platform.png)
 
 
 
@@ -252,7 +251,7 @@ The following table describes outbound traffic from Microsoft Power Platform ser
 |-----------------------------------|---------------------------------------------|--------------------------|---------------|
 | Web services                      | HTTPS outbound from Microsoft Power Platform services | Microsoft peering<br>Publish web services on public IP addresses that are within ExpressRoute- configured subnets                   | Custom plug-ins and workflow activities can make web service requests to external services      |
 | Exchange Integration: hybrid mode | HTTPS outbound from Microsoft Power Platform services | Microsoft peering<br>Web services would need to be published on public IP addresses that are within ExpressRoute-configured subnets | Exchange Web Services requests from server-side synchronization for hybrid deployments (Microsoft Power Platform services, Exchange on-premises) |
-| Connectors                        | HTTPS inbound from Microsoft Power Platform services  | Microsoft peering     | Requests from Microsoft Power Platform services through the Azure API Management service <!--note from editor: What is "APIMs"? --> <!-- tayoshi: Replaced acronym with full description> via connectors using the on-premises data gateway                                  |
+| Connectors                        | HTTPS inbound from Microsoft Power Platform services  | Microsoft peering     | Requests from Microsoft Power Platform services through the Azure API Management service via connectors using the on-premises data gateway                                  |
 
 ### Inbound traffic (traffic to Microsoft Power Platform services)
 
@@ -277,7 +276,7 @@ services hosted both in Microsoft 365 and Azure.
 | Exchange integration   | HTTPS outbound to Microsoft 365                | Exchange web service requests to Exchange Online from Server-Side Synchronization        |
 | SharePoint integration | HTTPS outbound to Microsoft 365                | SharePoint web service requests to SharePoint Online from Microsoft Power Platform services      |
 | Service Bus            | HTTPS outbound to Azure Service Bus            | Push events to Azure Service Bus either as standard event registration or from custom plug-ins and workflow activities      |
-| Data sync              | HTTPS inbound from Azure <!-- tayoshi: Removed "PaaS" as it is difficult to place all Azure services here.--><!--note from editor: I don't know what this is. The only mention I find in the Cloud Style Guide is "it’s OK to use *persistent* to differentiate the IaaS offer (which has persistent virtual machines) from the PaaS offer (which has stateless virtual machines or role instances)." Does this match your understanding? If so, can we use some other phrase here? (I don't know what)-->        | Inbound change tracking requests for synchronization of data services, including search/offline/customer insight      |
+| Data sync              | HTTPS inbound from Azure         | Inbound change tracking requests for synchronization of data services, including search/offline/customer insight      |
 | Authentication         | HTTPS outbound to Azure Active Directory (Azure AD)   | Most authentication is done through passive redirects and claims tokens, but some data is synchronized Azure AD directly        |
 | Dataflows              | HTTPS outbound to Azure Data Lake Storage | Provides analytics capabilities and allows access to big data solutions incorporating data from both Microsoft Power Platform services and other sources, in addition to the resulting insight from analytics. |
 | Connectors             | HTTPS outbound to Azure PaaS services                | Connections to various Azure PaaS services             |
@@ -289,7 +288,7 @@ applicable for connections with these services.
 Where events are pushed onto the service bus, the connectivity between Microsoft Power
 Platform services and Azure is handled internally. Separately, the customer can
 make requests to the Service Bus to retrieve information, and this can be
-managed through Microsoft peering.<!--tayoshi: Fixed to Microsoft peering as you mentioned it is deprecated and all is now in public peering--><!--note from editor: It looks like public peering is deprecated on new ExpressRoute circuits (https://docs.microsoft.com/en-us/azure/expressroute/about-public-peering), but if it's something the reader can do without ExpressRoute, can you give a link to more information? (Or is the reader already likely to know how to do this?) -->
+managed through Microsoft peering.
 
 ## Customer public and private cloud connectivity to/from Microsoft Power Platform services 
 
@@ -308,7 +307,7 @@ The implications of this need to be considered in the ExpressRoute routing.
 |----------------------|--------------------------------------------------|------------------|------------------|
 | Portals              | HTTPS inbound to Azure                           | Internal to datacenter, with the exception of static content, which uses Content Delivery Network. (Content Delivery Network isn't supported by ExpressRoute, so static content will travel across the public internet.) | Host public-facing services. There might be scenarios where internal employees can access these resources, so you might want traffic to travel across ExpressRoute rather than the public internet        |
 | Learning Path        | HTTPS inbound to Azure                           | Uses Content Delivery Network, which isn't supported by ExpressRoute, so content will travel across the public internet       | This is hosted on a public-facing service because it doesn't contain private customer data. For predictability purposes, there might be scenarios where you want to route this via ExpressRoute      |
-| Service Bus          | HTTPS inbound to Azure Service Bus               | Internal to datacenter        | Pull events from Azure Service Bus that have been placed there either as standard event registration or from custom plug-ins or workflow activities<!--note from editor: To be parallel. -->   |
+| Service Bus          | HTTPS inbound to Azure Service Bus               | Internal to datacenter        | Pull events from Azure Service Bus that have been placed there either as standard event registration or from custom plug-ins or workflow activities  |
 | Web service requests | Inbound from Azure IaaS/PaaS                     | Internal to datacenter       | Customers can host custom applications in Azure and make requests of Microsoft Power Platform web services           |
 | Web service requests | Outbound to Azure IaaS/PaaS                      | Internal to datacenter      | Customers can implement custom plug-ins and workflow activities that make requests of Azure hosted services                                                                                                                                                                       |
 | Dataflows            | Data connections to Azure Data Lake Storage | Internal to datacenter     | Provide analytics capabilities and allow access to big data solutions incorporating data from both Microsoft Power Platform services and other sources, in addition to the resulting insight from the analytics.                                                                           |

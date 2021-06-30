@@ -38,7 +38,7 @@ typically done through proxy setup. Verify the following:
     ExpressRoute subnet rather than across the internet?
 
 -   Are the clients connecting from a public IP address or are they hidden behind network address translation (NAT)?
-<!--note from editor: I deleted "and points to consider" because the points all seem to have been described in the preceding text (which is good!). -->
+
 ![Diagram showing a customer's company network, datacenter, and partner edge with client routing considerations.](media/checklist-client-routing.png)
 
 ## WAN performance
@@ -49,7 +49,7 @@ the ExpressRoute circuit via a wide-area network (WAN), the capacity and speed o
 is critical.
 
 -   Will the capacity and speed of the WAN connection be sufficient for the traffic you'll require?
-<!--note from editor: Please make sure the preceding text or the image alt text covers the "points to consider" that you refer to. (I think it does.)-->
+
 ![Diagram showing customer's company network, datacenter and partner edge, with WAN latency and bandwidth considerations.](media/checklist-wan-performance.png)
 
 ## Peering
@@ -57,19 +57,16 @@ is critical.
 Microsoft Power Platform uses Microsoft peering.
 
 -   Has the appropriate Microsoft peering been configured for your needs?
-<!--note from editor: Please make sure the preceding text of the image alt text covers the "points to consider" that you refer to. (I think it does.)-->
+
 ![Diagram showing a customer's company network, datacenter, and partner edge, with peering considerations.](media/checklist-microsoft-peering.png)
 
 ## Asymmetric routing
 
 -   Have you configured the network and ExpressRoute to ensure that you avoid
     asymmetric routing?
-<!--note from editor: The alt text for this image exceeds the 150-character limit, and actually it should be even longer to fully describe the image. Please verify my edits to alt text and flesh out the long description. Also, please change "ER" in the image to "ExpressRoute."
-![Diagram a showing a network request sent via the internet to Microsoft services and a response routed back via ExpressRoute - asymmetric routing.](media/checklist-asymmetric-routing.png)
--->
-<!--tayoshi: Fixed alt-text-->
-:::image type="complex" source="media/checklist-asymmetric-routing.png" alt-text="Diagram a showing a network request sent via the internet to Microsoft services and a response routed back via ExpressRoute - asymmetric routing.":::
-   The diagram is showing a network request to Microsoft is made where the traffic is routed to travel through via the public internet. Once the request reaches Microsoft and the response is generated, the responce is routed via ExpressRoute due to incorrect configuration of the routing. As the original request is via the internet, customer's firewall rejects the incoming response traffic, failing to complete the standard request and response. 
+
+:::image type="complex" source="media/checklist-asymmetric-routing.png" alt-text="Diagram showing a network request sent via the internet to Microsoft services and a response routed back via ExpressRoute - asymmetric routing.":::
+   The diagram shows that a network request to Microsoft is made where the traffic is routed to travel via the public internet. After the request reaches Microsoft and the response is generated, the response is routed via ExpressRoute due to the incorrect configuration of the routing. Because the original request comes via the internet, the customer's firewall rejects the incoming response traffic, failing to complete the standard request and response. 
 :::image-end:::
 
 ## Geographical distribution

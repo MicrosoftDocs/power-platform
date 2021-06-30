@@ -14,14 +14,12 @@ search.app:
 ---
 
 # Use Azure ExpressRoute with Microsoft Power Platform
-<!--note from editor: Some edits in this article (and throughout this doc set) are aimed at clarifying that the primary audience for this guidance is the person at the company that's going to implement ExpressRoute, not the partner who will likely do the actual implementation for the reader. If this is wrong, please excuse!-->
-<!--tayoshi: makes sense. Thanks for the edits -->
+
 [Microsoft Azure ExpressRoute](https://azure.microsoft.com/services/expressroute/) provides a way to connect your on-premises network
 to Microsoft cloud services by using private connectivity.
-<!--note from editor: Here and throughout the images in this doc set: Please make the labels sentence case, to avoid branding confusion. I see you've done this for "Microsoft edge" (which is perfect), but it's also important to use "Microsoft cloud," "Microsoft peering," and "Azure private peering for virtual networks". Also, this alt text isn't very descriptive. I suggest using the :::image::: extension and describing it vividly enough that someone who can't see the image can understand what it illustrates.-->
-<!--tayoshi: fixed alt-text-->
+
 :::image type="complex" source="media/expressroute-overview.png" alt-text="Overview diagram of the ExpressRoute-enabled network configuration with Microsoft public services and Azure.":::
-   Overview diagram of the ExpressRoute-enabled network configuration with Microsoft public services and Azure. From customer's network, a direct connection to Microsoft public services is made using public internet traffic. Another network connection is setup to connect to network partner edge, which has Microsoft Azure ExpressRoute connection set up to Microsoft edge. Two connections are setup with one primary and one secondary. From Microsoft edge, Microsoft peering is used to connect to Microsoft public services, and Azure private peering is used to connect from Microsoft edge to Microsoft Azure services. 
+   Overview diagram of the ExpressRoute-enabled network configuration with Microsoft public services and Azure. From the customer's network, a direct connection to Microsoft public services is made by using public internet traffic. Another network connection is set up to connect to the network partner edge, which has an ExpressRoute connection set up to the Microsoft edge. Two connections are set up, one primary and one secondary. From the Microsoft edge, Microsoft peering is used to connect to Microsoft public services, and Azure private peering is used to connect from the Microsoft edge to Azure services. 
 :::image-end:::
 
 Although the name of the service is Azure ExpressRoute, it also supports private

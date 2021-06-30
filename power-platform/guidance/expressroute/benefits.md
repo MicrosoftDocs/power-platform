@@ -20,10 +20,9 @@ The benefits of using ExpressRoute for your organization are:
 - **Compliance**: You won't route customer information via the public internet.
 
 - **Predictability**: Having a dedicated connection avoids conflict with other internet traffic
-<!--note from editor: For notes about this image, please see the editor's note in overview.md, line 20.-->
-<!--tayoshi: fixed-->
-:::image type="complex" source="media/expressroute-network-overview.png" alt-text="Overview of network diagram using ExpressRoute.":::
-   Overview diagram of the ExpressRoute-enabled network configuration with Microsoft public services and Azure. From customer's network there are two offices. One based in Texas, and the other based in Seattle. A direct connection to Microsoft public services is made using public internet traffic from Texas Office. For Seattle office, the network connection is setup to connect to network partner edge, which has Microsoft Azure ExpressRoute connection set up to Microsoft edge. Two connections are setup with one primary and one secondary. From Microsoft edge, Microsoft peering is used to connect to Microsoft public services, and Azure private peering is used to connect from Microsoft edge to Microsoft Azure services. 
+
+:::image type="complex" source="media/expressroute-network-overview.png" alt-text="Overview network diagram of using ExpressRoute.":::
+   Overview diagram of the ExpressRoute-enabled network configuration with Microsoft public services and Azure. In the customer's network there are two offices, one based in Texas and the other in Seattle. A direct connection to Microsoft public services is made by using public internet traffic from the Texas office. For the Seattle office, the network connection is set up to connect to the network partner edge, which has an ExpressRoute connection set up to the Microsoft edge. Two connections are set up - one primary and one secondary. From the Microsoft edge, Microsoft peering is used to connect to Microsoft public services, and Azure private peering is used to connect from the Microsoft edge to Azure services. 
 :::image-end:::
 
 ## Compliance
