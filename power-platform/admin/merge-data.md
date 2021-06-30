@@ -2,7 +2,6 @@
 title: "Merge data | MicrosoftDocs"
 description: Merge data
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
@@ -116,7 +115,7 @@ After merging records:
 - User Two is a member of auto-created access team Account Access Team
 - Test Account One (the master account) was merged with Test Account Two (the subordinate account)
 
-For information about access teams, see [About access teams and team templates](manage-teams.md#about-access-teams-and-team-templates). 
+For information about access teams, see [About access teams and team templates](manage-teams.md#types-of-teams). 
 
 #### Security-related results
 
@@ -144,7 +143,7 @@ After merging records:
 - User Two is a member of Owner Team Two 
 - Test Account One (the master account) was merged with Test Account Two (the subordinate account)
 
-For information about owner teams, see [About owner teams](manage-teams.md#about-owner-teams).
+For information about owner teams, see [About owner teams](manage-teams.md#types-of-teams).
 
 #### Security-related results
 
