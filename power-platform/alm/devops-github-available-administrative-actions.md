@@ -1,6 +1,6 @@
 ---
-title: "Available GitHub actions for Microsoft Power Platform adminsitration | Microsoft Docs"
-description: "Learn about the available GitHub actions for Microsoft Power Platform adminsitration to support continuous integration and delivery with Microsoft Power Platform."
+title: "Available GitHub Actions for Microsoft Power Platform administration | Microsoft Docs"
+description: "Learn about the available GitHub Actions for Microsoft Power Platform adminsitration to support continuous integration and delivery with Microsoft Power Platform."
 keywords: 
 author: kkanakas
 ms.author: kartikka
@@ -17,9 +17,9 @@ search.app:
   - D365CE
 ---
 
-# Available GitHub actions for Microsoft Power Platform adminsitration 
+# Available GitHub Actions for Microsoft Power Platform administration 
 
-This article provides information about GitHub actions available to administer Microsoft Power Platform.
+This article provides information about GitHub Actions available to administer Microsoft Power Platform.
 
 ## Configure deployment credentials
 
