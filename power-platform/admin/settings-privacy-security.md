@@ -26,7 +26,7 @@ Make sure you have the System Administrator or System Customizer security role o
 
 **Check your security role**
 
-- Follow the steps in [View your user profile](https://docs.microsoft.com/powerapps/user/view-your-user-profile).
+- Follow the steps in [View your user profile](/powerapps/user/view-your-user-profile).
 - Don’t have the correct permissions? Contact your system administrator.
 
 ## Settings

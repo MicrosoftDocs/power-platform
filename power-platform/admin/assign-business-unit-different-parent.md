@@ -1,8 +1,7 @@
 ---
-title: "Assign a business unit a different parent business | MicrosoftDocs"
-description: Assign a business unit to a different parent business.
+title: "Assign a business unit a different parent business"
+description: "Learn how to change the parent business for a business unit and its child business units."
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
@@ -17,8 +16,6 @@ search.app:
   - Flow
 ---
 # Assign a business unit to a different parent business
-
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 You can assign a different parent business to a business unit to accommodate changes in your business requirements. When you reassign a business unit, any child business units are also reassigned with it.  
   

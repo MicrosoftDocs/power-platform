@@ -18,7 +18,7 @@ search.app:
 ---
 # Data loss prevention activity logging
 
-Data Loss Protection (DLP) policy activities are now tracked from the [Microsoft 365 Security & Compliance Center](https://go.microsoft.com/fwlink/?LinkID=824876). 
+Data Loss Protection (DLP) policy activities are now tracked from the [Microsoft 365 Security & Compliance Center](/microsoft-365/). 
 
 Follow these steps.
 

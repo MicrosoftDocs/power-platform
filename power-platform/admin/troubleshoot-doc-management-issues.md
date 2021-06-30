@@ -1,6 +1,6 @@
 ---
-title: "Troubleshooting Document Management Issues | MicrosoftDocs"
-description: "Learn how to troubleshoot issues with document management"
+title: "Troubleshooting SharePoint document management issues"
+description: "Learn how to troubleshoot document management issues based on error messages, including missing folders and documentation libraries."
 keywords: encrypt
 ms.date: 06/15/2020
 ms.service: power-platform
@@ -25,8 +25,6 @@ search.app:
 ---
 
 # Troubleshooting document management issues
-
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 This topic explains how to use information provided in error messages to fix issues with the document management feature.
 Below is an [index](#index-of-errors) that will help you to reach the right solution. The link in each cell navigates to the reason and mitigation steps for the corresponding error message.

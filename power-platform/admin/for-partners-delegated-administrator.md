@@ -1,6 +1,6 @@
 ---
-title: "For partners: the Delegated Administrator | MicrosoftDocs"
-description: Use this role to delegate admins to manage users, licenses, permissions, and domains.
+title: "For partners: Delegated administrator role"
+description: "Learn how a partner can be authorized to take on administrative tasks as a delegated admin to manage users, licenses, permissions, and domains."
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin

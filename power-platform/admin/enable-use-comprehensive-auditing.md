@@ -1,12 +1,12 @@
 ---
 title: "Microsoft Dataverse and model-driven apps activity logging  | MicrosoftDocs"
 description: Learn how to enable auditing to be used for reports in the Microsoft 365 Security Compliance Center.
-author: pnghub
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 12/10/2020
-ms.author: gned
+author: tjvass
+ms.author: tjvass
 ms.reviewer: jimholtz 
 search.audienceType: 
   - admin
@@ -17,8 +17,6 @@ search.app:
   - Flow
 ---
 # Microsoft Dataverse and model-driven apps activity logging 
-
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 Protecting data, preserving privacy, and complying with regulations such as the [General Data Protection Regulation](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx) are certainly some of the highest priorities for your business. It's critical that you audit the entirety of data processing actions taking place to be able to analyze for possible security breaches. This information from Activity Logging can be used when you perform a Data Protection Impact Assessment (DPIA) addressing the use of Office, Power Apps, Microsoft Power Automate, and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation).  
 
@@ -128,7 +126,7 @@ The customer engagement apps schema contains fields specific to customer engagem
 
 ## Review your audit data using reports in Microsoft 365 Security and Compliance Center
 
-You can review your audit data in the Microsoft 365 Security and Compliance Center. See [Search the audit log in the compliance Center](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide).
+You can review your audit data in the Microsoft 365 Security and Compliance Center. See [Search the audit log in the compliance Center](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide).
 
 To use the preconfigured reports, go to https://protection.office.com > **Search & investigation** > **Audit log search** and select the **Dynamics 365 activities** tab.
 
@@ -139,7 +137,7 @@ You can create your own reports to review your audit data. See [Search the audit
 
 ## What's logged
 
-For a list of what's logged with Activity Logging, see [Microsoft.Crm.Sdk.Messages Namespace](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages?view=dynamics-general-ce-9).
+For a list of what's logged with Activity Logging, see [Microsoft.Crm.Sdk.Messages Namespace](/dotnet/api/microsoft.crm.sdk.messages?view=dynamics-general-ce-9).
 
 We log all SDK messages except the following:
 
@@ -243,8 +241,8 @@ When audit log search in the Microsoft 365 Security and Compliance Center is tur
 
 ### See also
 [Audit data and user activity for security and compliance](audit-data-user-activity.md)<br />
-[Search the audit log in the compliance Center](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide) <br />
-Search the audit log for user activity using [Office 365 Management APIs overview](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview)
+[Search the audit log in the compliance Center](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide) <br />
+Search the audit log for user activity using [Office 365 Management APIs overview](/office/office-365-management-api/office-365-management-apis-overview)
 
 
 

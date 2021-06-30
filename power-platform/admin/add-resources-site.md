@@ -1,6 +1,6 @@
 ---
-title: "Add resources to a site  | MicrosoftDocs"
-description: Add resources to a site
+title: "Add resources to a site record for your business"
+description: "Learn how to add users, equipment, and facilities to a site record to show what is available at a location."
 author: jimholtz
 manager: kvivek
 ms.service: power-platform

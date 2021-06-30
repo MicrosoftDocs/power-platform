@@ -1,6 +1,6 @@
 ---
-title: "Feedback and support | MicrosoftDocs"
-description: "Describes the process on how to provide feedback and raise issues with the CoE Starter Kit."
+title: "Feedback and support for Center of Excellence (CoE) Starter Kit"
+description: "Report issues and feedback for Center of Excellence (CoE) Starter Kit and get help on Microsoft Power Platform."
 author: manuelap-msft
 manager: devkeydet
 ms.service: power-platform
@@ -22,7 +22,7 @@ Although the underlying features and components used to build the Center of Exce
 
 If you face issues with:
 
-- **Using the kit**: Report your issue here: [aka.ms/coe-starter-kit-issues](https://github.com/microsoft/powerapps-tools/issues/new?assignees=JeneferM-MSFT&labels=coestarterkit&template=-coe-starter-kit-app--bug-report.md&title=%5BBUG%5D%3A+issue+title). (Microsoft Support won't help you with issues related to this kit, but they will help with related, underlying platform and feature issues.)
+- **Using the kit**: Report your issue here: [aka.ms/coe-starter-kit-issues](https://github.com/microsoft/coe-starter-kit/issues/new?assignees=JeneferM-MSFT&labels=coe-starter-kit&template=-coe-starter-kit-app--bug-report.md&title=%5BCoE+Starter+Kit+-+BUG%5D%3A+issue+title). (Microsoft Support won't help you with issues related to this kit, but they will help with related, underlying platform and feature issues.)
 - **The core features in Microsoft Power Platform**: Use your standard channel to contact Microsoft Support.
 
 

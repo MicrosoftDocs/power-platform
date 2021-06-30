@@ -18,7 +18,7 @@ search.app:
 ---
 # Microsoft Dataverse for Teams environment management
 
-You can take advantage of our philosophy of using Microsoft Power Platform to manage Microsoft Power Platform by building automation to send welcome emails to owners of new [Dataverse for Teams environments](/power-platform/admin/about-teams-environment) and requesting business justifications for newly created environments. This ensures that central IT teams can effectively engage with the new makers onboarding the platform, and ensure that Dataverse for Teams capacity is used effectively in your tenant and distributed to the most important business use cases. Similar workflows can be used to apply specific data loss prevention (DLP) policies to Dataverse for Teams environments as needed, and to invoke cleanup of unused assets to free up capacity for more compelling scenarios in the tenant.
+You can take advantage of our philosophy of using Microsoft Power Platform to manage Microsoft Power Platform by building automation to send welcome emails to owners of new [Dataverse for Teams environments](../../admin/about-teams-environment.md) and requesting business justifications for newly created environments. This ensures that central IT teams can effectively engage with the new makers onboarding the platform, and ensure that Dataverse for Teams capacity is used effectively in your tenant and distributed to the most important business use cases. Similar workflows can be used to apply specific data loss prevention (DLP) policies to Dataverse for Teams environments as needed, and to invoke cleanup of unused assets to free up capacity for more compelling scenarios in the tenant.
 
 ## Process description
 

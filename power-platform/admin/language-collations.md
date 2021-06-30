@@ -20,12 +20,10 @@ search.app:
 ---
 # Microsoft Dataverse language collations
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 When a Dataverse environment is created, admins are asked to select which default language they would like to use. This sets the dictionary, time and date
 format, number format, and indexing properties for the environment.
 
-Language selections for Dataverse also include collation settings that are applied to the SQL database, which stores entities and relational data. These collation settings affect things such as recognized characters, sorting, quick find, and filtering. The collations applied to Dataverse environments are chosen based on the default language selected at the time of environment creation and aren't user configurable. After a collation is in place, it can't be changed.
+Language selections for Dataverse also include collation settings that are applied to the SQL database, which stores tables and relational data. These collation settings affect things such as recognized characters, sorting, quick find, and filtering. The collations applied to Dataverse environments are chosen based on the default language selected at the time of environment creation and aren't user configurable. After a collation is in place, it can't be changed.
 
 Collations contain the following case-sensitivity and accent-sensitivity options that can vary from language to language.
 
@@ -98,7 +96,6 @@ A language includes the following information:
 
 
 ### See also
-
 [Environments overview](environments-overview.md)
 
 

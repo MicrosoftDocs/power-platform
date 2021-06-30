@@ -19,15 +19,13 @@ search.app:
 ---
 # Notifications for Business Application Group services
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 Microsoft regularly sends communications regarding service incidents, service changes, maintenance, releases, and customer action needed. These communications come primarily in the form of a post to the Microsoft 365 Service health dashboard and the Message center.  From time-to-time we will also use direct email communications to provide status, updates, or information about the service.  
 
 ## Message Center
-The [Microsoft 365 Message Center](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide) will display any maintenance notifications, service changes, release information, or customer action requests.
+The [Microsoft 365 Message Center](/office365/admin/manage/message-center?view=o365-worldwide) will display any maintenance notifications, service changes, release information, or customer action requests.
 
 ## Service health dashboard
-The [Service health dashboard](https://docs.microsoft.com/office365/enterprise/view-service-health) will show the latest status of updates and incidents regarding your service. To learn how to get to the Microsoft 365 Service health dashboard, see [Check your service health](check-online-service-health.md). 
+The [Service health dashboard](/office365/enterprise/view-service-health) will show the latest status of updates and incidents regarding your service. To learn how to get to the Microsoft 365 Service health dashboard, see [Check your service health](check-online-service-health.md). 
 
 ## Email notifications
 The notifications sent from the Business Application Group communications team will be for the following services and email addresses.  Be sure to check your spam folder for these messages.

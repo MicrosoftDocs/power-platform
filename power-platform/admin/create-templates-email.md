@@ -17,8 +17,6 @@ search.app:
 ---
 # Create templates for email
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 Save time when creating multiple email messages by making email templates. Email templates contain prefilled data that you specify, so you don't have to re-enter the same information for each article.  
   
 An email template is attached to an email activity after the activity is created. Typically, each type of email activity has its own email template type; for example, an email activity created from a case record would use a case email template. You can also create global templates that are available for any record type, or personal templates available only to you, or organizational templates available to anyone in your organization.  
@@ -80,7 +78,7 @@ An email template is attached to an email activity after the activity is created
 > [!NOTE]
 > - To change a shared template to a personal one or a personal template to a shared one, on the template form, on the **Actions**![action](../admin/media/action-button.png "action") menu, select **Revert to Personal Template**, or select **Make Template Available to Organization**.  
 > - If you use an email template as a signature in another template, insert the signature template first. Otherwise, the Subject line will be overwritten.  
-> - If you need to back up your templates, or export them for use in a different implementation, you can export them as part of exporting customizations. More information: [Export your customizations as a solution](https://docs.microsoft.com/powerapps/maker/model-driven-apps/distribute-model-driven-app).  
+> - If you need to back up your templates, or export them for use in a different implementation, you can export them as part of exporting customizations. More information: [Export your customizations as a solution](/powerapps/maker/model-driven-apps/distribute-model-driven-app).  
   
 ### See also  
 

@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/08/2021
+ms.date: 04/27/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -16,8 +16,6 @@ search.app:
   - Flow
 ---
 # Configure Relevance Search to improve search results and performance 
-
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 <!-- legacy procedure -->
 
@@ -41,11 +39,11 @@ Relevance Search brings the following benefits:
 
 - Includes the ability to search documents found in Notes and Attachments on Emails and Appointments 
 
-For more information about Relevance Search, see: [Using relevance search to search for records](https://docs.microsoft.com/powerapps/user/relevance-search).
+For more information about Relevance Search, see: [Using relevance search to search for records](/powerapps/user/relevance-search).
 
 Relevance Search is available in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation) that have installed version 9.0. It is not available for Customer Engagement (on-premises) organizations. Full-text Quick Find is available for Customer Engagement (on-premises) organizations, starting with Dynamics CRM 2015 Update Rollup 1. Quick Find is available for customer engagement apps organizations and Customer Engagement (on-premises) organizations.
 
-For more detailed comparison of the searches available in Microsoft Dataverse, see: [Compare search options in Dataverse](https://docs.microsoft.com/powerapps/user/search).
+For more detailed comparison of the searches available in Microsoft Dataverse, see: [Compare search options in Dataverse](/powerapps/user/search).
 
 ### Language support
 
@@ -87,7 +85,7 @@ To enable the new Relevance Search experience:
 
 4.	Select **Save**.
 
-For information on using the new Relevance Search experience, see [Use the new Relevance Search experience](https://docs.microsoft.com/powerapps/user/relevance-search#use-the-new-relevance-search-experience).
+For information on using the new Relevance Search experience, see [Use the new Relevance Search experience](/powerapps/user/relevance-search#use-the-new-relevance-search-experience).
 
 > [!TIP]
 > We are addressing an issue that makes the feature **Use new search experience** not show up in environments that were created from another environment as a copy. Please try the following steps to mitigate the issue.
@@ -96,7 +94,7 @@ For information on using the new Relevance Search experience, see [Use the new R
 > 2. Wait approximately 5 to 10 minutes.
 > 3. Turn **Relevance Search** on. 
 
-## Select entities for Relevance Search  
+## Select entities for Relevance Search 
  To configure Relevance Search, use the **Configure Relevance Search** selection on the task bar, as shown here.  
 
  ![Configure Relevance Search](../admin/media/relevance-search-configure-search.png "Configure Relevance Search")  
@@ -119,7 +117,7 @@ For information on using the new Relevance Search experience, see [Use the new R
 
 2. Select **Customize the System**.  
 
-3. Under **Components**, expand **Entities**, and then select **Configure Relevance Search**.  
+3. Under **Components**, select **Entities**, and then select **Configure Relevance Search**.  
 
 4. The **Select Entities** dialog box opens. Select **Add** to select the entities for the search results. When you're done, select **OK**.  
 
@@ -154,7 +152,7 @@ By default, some out-of-the-box system entities are included in Relevance Search
 
 3. Under **Components**, expand **Entities**, and then expand the entity you want.  
 
-4. In the navigation tree, click **View**. Double-click **Quick Find View**. The following illustration shows the **Quick Find** view for the `Account` entity.  
+4. In the navigation tree, click **View**. In the **Type** column, double-click **Quick Find View**. The following illustration shows the **Quick Find** view for the `Account` entity.  
 
    ![Quick Find view](../admin/media/relevance-search-quick-find-view-screen.png "Quick Find view")  
 
@@ -212,7 +210,53 @@ By default, some out-of-the-box system entities are included in Relevance Search
 
 5. Select **Publish** for your changes to take effect.  
 
-   If you want to change the **Can enable sync to external search index** property to **False**, you must first deselect the entity from Relevance search. If the entity is included in Relevance Search, you'll see the following message: "This entity is currently syncing to an external search index. You must remove the entity from the external search index before you can set the **Can Enable Sync to External Search Index** property to **False**." If **Can Enable Sync to External Search Index** is set to **False**, you'll see the following message when you try to include an entity in Relevance Search: "Entity can't be enabled for Relevance Search because of the configuration of its managed properties." For custom entities with particularly sensitive data, you may consider setting the **Can enable sync to external search index** property to **False**. Keep in mind, after you install the managed solution on the target system, you won't be able to change the value of the property because it's a managed property.  
+   If you want to change the **Can enable sync to external search index** property to **False**, you must first deselect the entity from Relevance Search. If the entity is included in Relevance Search, you'll see the following message: "This entity is currently syncing to an external search index. You must remove the entity from the external search index before you can set the **Can Enable Sync to External Search Index** property to **False**." If **Can Enable Sync to External Search Index** is set to **False**, you'll see the following message when you try to include an entity in Relevance Search: "Entity can't be enabled for Relevance Search because of the configuration of its managed properties." For custom entities with particularly sensitive data, you may consider setting the **Can enable sync to external search index** property to **False**. Keep in mind, after you install the managed solution on the target system, you won't be able to change the value of the property because it's a managed property.  
+
+## Configure quick actions
+
+The new Relevance Search experience brings some of the most frequently used actions closer to search results, to help end users complete their tasks without having to navigate to the record page in model-driven apps. Quick actions are a small set of commands specific to a table. End users can see quick actions when they are interacting with search in model-driven apps running on a web browser. Some of the commonly used tables are configured to show a set of commands to help them complete their task without losing context.
+
+
+|Table  |Quick actions  |
+|---------|---------|
+|Account     | Assign, Share, Email a link        |
+|Contact     | Assign, Share, Email a link        |
+|Appointment     | Mark complete, Cancel, Set Regarding, Assign, Email a link        |
+|Task     | Mark complete, Cancel, Set Regarding, Assign, Email a link        |
+|Phone call     | Mark complete, Cancel, Set Regarding, Assign, Email a link        |
+|Email     | Cancel, Set Regarding, Email a link        |
+
+
+Quick actions are a subset of the table's homepage grid commands. For example, when you select an account in its homepage grid, the Account table's quick actions are derived from the set of commands at the top of the page. This is important to understand the customization options available to configure quick actions. You can use the ribbon’s **EnableRule** to hide or show quick actions for a table. To learn more about defining ribbon enable rules in Power Apps, see [Define ribbon enable rules](/powerapps/developer/model-driven-apps/define-ribbon-enable-rules).
+
+The following three new enable rules give you the flexibility to optimize quick actions:
+
+- **ShowOnQuickAction rule**
+  Use this rule to make a command appear only as a quick action.
+
+  ```XML
+  <CommandDefinition Id="new.contact.Command.Call">
+    <EnableRules>
+      <EnableRule Id="Mscrm.SelectionCountExactlyOne" />
+      <EnableRule Id="Mscrm.ShowOnQuickAction" />
+    </EnableRules>
+    <DisplayRules />
+    <Actions>
+      <JavaScriptFunction FunctionName="simplealert" />
+    </Actions>
+  </CommandDefinition>
+  ```
+
+- **ShowOnGridAndQuickAction rule**
+  Use this rule to make a command appear on the homepage grid as well as a quick action.
+
+- **ShowOnGrid rule**
+  Use this rule to make a command appear on the homepage grid only. You can use this command to hide an existing quick action.
+
+  > [!NOTE]
+  > Each table can have up to five quick actions. 
+  > 
+  > Quick actions currently show up only in the context of search - alongside suggestions and in the results page on the primary column. The same set of quick actions appears alongside suggestions and in the results page.
 
 ## Help improve Relevance Search results
 
@@ -234,7 +278,7 @@ Your organization’s queries and results are reviewed by people using secured c
 4.	Select **Save**.
 
 ### See also  
- [Use relevance search to search for records](https://docs.microsoft.com/powerapps/user/relevance-search) <br />
- [Use the new Relevance Search experience](https://docs.microsoft.com/powerapps/user/relevance-search#use-the-new-relevance-search-experience)
+ [Use relevance search to search for records](/powerapps/user/relevance-search) <br />
+ [Use the new Relevance Search experience](/powerapps/user/relevance-search#use-the-new-relevance-search-experience)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

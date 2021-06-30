@@ -1,6 +1,6 @@
 ---
-title: "Online Management API (REST) to manage environments | Microsoft Docs"
-description: "Learn about the APIs that are available to manage Microsoft Dataverse environments."
+title: "Online Management API (REST) to manage environments"
+description: "Learn how to use the Online Management API to create and manage Microsoft Dataverse environment."
 keywords: 
 author: mikkelsen2000
 ms.author: pemikkel
@@ -20,7 +20,7 @@ search.app:
 # Online Management API (REST) to manage environments
 
 > [!NOTE]
-> Effective August 26, 2020, the Online Management API is [deprecated](/power-platform/important-changes-coming#online-management-api-powershell-module-and-rest-api-are-deprecated).
+> Effective August 26, 2020, the Online Management API is [deprecated](../important-changes-coming.md#online-management-api-powershell-module-and-rest-api-are-deprecated).
 
 The Online Management API is a REST API that lets you create and manage Microsoft Dataverse environments in your Microsoft 365 organization. As application publishers or ISVs, you can use the Online Management API to:
 

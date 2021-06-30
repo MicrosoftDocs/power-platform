@@ -18,9 +18,7 @@ search.app:
 ---
 # Merge data
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
-You can merge two records to combine the data or to [remove duplicates](https://docs.microsoft.com/powerapps/user/merge-duplicate-records). After doing a merge, check out the [Security considerations](#security-considerations) section to verify the changes meet your security requirements. You can merge Account, Contact, and Lead entities.
+You can merge two records to combine the data or to [remove duplicates](/powerapps/user/merge-duplicate-records). After doing a merge, check out the [Security considerations](#security-considerations) section to verify the changes meet your security requirements. You can merge Account, Contact, and Lead entities.
 
 Follow these steps to merge data.
 
@@ -37,7 +35,7 @@ Follow these steps to merge data.
    > [!NOTE]
    > The master record will inherit all of the subordinate record's child records. The subordinate record will be deactivated.
 
-For more information, see [Merge duplicate records for accounts, contacts, or leads](https://docs.microsoft.com/powerapps/user/merge-duplicate-records).
+For more information, see [Merge duplicate records for accounts, contacts, or leads](/powerapps/user/merge-duplicate-records).
 
 ## Security considerations
 

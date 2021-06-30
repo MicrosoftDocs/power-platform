@@ -99,7 +99,7 @@ For example, for the "hiking" product category, you can add "trekking" and "moun
 ## Use entities in a conversation
 Now that you've done the work of giving the bot the knowledge about outdoor gear by creating that product category entity and a few other custom entities, you can start to use them when constructing a bot conversation. 
 
-1. Go to the [**Topics page**](getting-started-create-topics.md) for the bot you want to edit.
+1. Go to the [**Topics page**](./authoring-create-edit-topics.md) for the bot you want to edit.
 
 1. Open the authoring canvas for the topic you want to add an entity to.
 

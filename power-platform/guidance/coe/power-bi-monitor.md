@@ -6,7 +6,7 @@ manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/10/2020
+ms.date: 06/01/2021
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -155,7 +155,7 @@ Filters on this page can help you narrow down this view by flow owner, flow disp
 
 ## Custom Connectors
 
-The **Custom Connectors** page helps you understand what [custom connectors](https://docs.microsoft.com/connectors/custom-connectors/) you have, what endpoints they're connecting to, and which resources are using the custom connector.
+The **Custom Connectors** page helps you understand what [custom connectors](/connectors/custom-connectors/) you have, what endpoints they're connecting to, and which resources are using the custom connector.
 
 Next to the total number of custom connectors and number of test connectors (those that have the word **Test** in the display name), you'll also see a connector creation trend, top connector makers, and the link between a connector and its consuming flow or app.
 
@@ -163,7 +163,7 @@ Filters help you narrow down the view by connector creator, environment, or crea
 
 ![Custom Connector overview](media/pb-14.png "Custom Connector overview")
 
-## Connections
+## App Connections
 
 The **Connections** page shows which resources and makers are using which connectors and&mdash;at a high level&mdash;which resources and makers are using premium features.
 
@@ -173,7 +173,7 @@ The filters on this page are:
 
 - Connector (Microsoft 365 Users, Dataverse, Azure AD)
 
-The visuals then show you a list of all apps, flows, and makers using the tier or connector specified, in addition to the number of connections for the filters specified.
+The visuals then show you a list of all apps and makers using the tier or connector specified, in addition to the number of connections for the filters specified.
 
 ![Connections](media/pb-11.png "Connections")
 

@@ -6,7 +6,7 @@ manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/10/2020
+ms.date: 11/16/2020
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -23,7 +23,7 @@ Version 1.25 for the CoE Starter Kit Governance Components is now available. Thi
 
 ## Microsoft Teams environment governance
 
-The [Microsoft Teams integration](https://docs.microsoft.com/power-platform/admin/about-teams-environment) enables users to build custom apps, bots, and flows in Teams. We are providing a sample implementation of best practices for reactive governance of Microsoft Dataverse for Teams environments with this release. Learn more about the new components: [Microsoft Teams environment management](../teams-governance.md)
+The [Microsoft Teams integration](../../../admin/about-teams-environment.md) enables users to build custom apps, bots, and flows in Teams. We are providing a sample implementation of best practices for reactive governance of Microsoft Dataverse for Teams environments with this release. Learn more about the new components: [Microsoft Teams environment management](../teams-governance.md)
 
 ## Archival flows
 

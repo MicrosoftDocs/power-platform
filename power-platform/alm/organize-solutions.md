@@ -53,7 +53,7 @@ Before you create solutions, take some time to plan ahead. For example, think ab
   
 ### See also  
 
-[Use segmented solutions](/power-platform/alm/segmented-solutions-alm)
+[Use segmented solutions](./segmented-solutions-alm.md)
 [Scenario 5: Supporting team development](team-development-alm.md)
 
 

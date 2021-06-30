@@ -21,8 +21,6 @@ search.app:
 
 <!-- legacy procedure -->
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 Using teams is optional. However, teams provide an easy way to share business objects and let you collaborate with other people across business units. While a team belongs to one business unit, it can include users from other business units. You can associate a user with more than one team.  
   
  You can use three types of teams:  
@@ -74,14 +72,14 @@ While teams provide access to a group of users, you must still associate individ
 
 If an owner team doesn't own records and doesn't have security roles assigned to the team, it can be converted to an access team. It is a one-way conversion. You can't convert the access team back to the owner team. During conversion, all queues and mailboxes associated with the team are deleted. When you create a team in the web application, you have to choose the team type **Owner**.
 
-For more information, see [Assign a record to a user or team](https://docs.microsoft.com/powerapps/user/assign-or-share-records).
+For more information, see [Assign a record to a user or team](/powerapps/user/assign-or-share-records).
 
 ## Create an owner team
 
 1. Make sure that you have the System Administrator, Sales Manager, Vice President of Sales, Vice President of Marketing, or CEO-Business Manager security role or equivalent permissions.
    
    Check your security role:
-   - Follow the steps in [View your user profile](https://docs.microsoft.com/powerapps/user/view-your-user-profile).
+   - Follow the steps in [View your user profile](/powerapps/user/view-your-user-profile).
    - Don't have the correct permissions? Contact your system administrator.
 
 2. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
@@ -109,7 +107,7 @@ For more information, see [Assign a record to a user or team](https://docs.micro
 1. Make sure that you have the System Administrator, Sales Manager, Vice President of Sales, Vice President of Marketing, or CEO-Business Manager security role or equivalent permissions.
    
    Check your security role:
-   - Follow the steps in [View your user profile](https://docs.microsoft.com/powerapps/user/view-your-user-profile).
+   - Follow the steps in [View your user profile](/powerapps/user/view-your-user-profile).
    - Don't have the correct permissions? Contact your system administrator.
 
 2. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
@@ -151,7 +149,7 @@ For example, you can create a team template for the Account entity with the Read
  [About team templates](about-team-templates.md)   
  [Download: Access Teams in Microsoft Dynamics CRM](https://download.microsoft.com/download/E/9/0/E9009308-CA01-4B37-B03C-435B8ACB49B4/Access%20Teams%20with%20Microsoft%20Dynamics%20CRM%202013.pdf)   
  [Download: Scalable security modeling with Microsoft Dynamics CRM](https://go.microsoft.com/fwlink/p/?LinkID=328757)   
- [Entity relationship behavior](https://docs.microsoft.com/powerapps/maker/common-data-service/create-edit-entity-relationships#entity-relationship-behavior)
+ [Entity relationship behavior](/powerapps/maker/common-data-service/create-edit-entity-relationships#entity-relationship-behavior)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

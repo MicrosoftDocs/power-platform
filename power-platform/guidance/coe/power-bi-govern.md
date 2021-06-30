@@ -6,7 +6,7 @@ manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/10/2020
+ms.date: 06/01/2021
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -68,7 +68,7 @@ Orphaned apps, where the app owner has left the organization, will still work fo
 
 ### Identify implicitly shared app connections
 
-- Some connectors, like the SQL Connector used with SQL Server Authentication, are [shared implicitly with users](https://docs.microsoft.com/powerapps/maker/canvas-apps/connections-list\#sql-user-name-and-password-authentication). This means that as soon as the app is published, the connection is also published and available to your users. Your users can then also create apps by using any connection that uses SQL Server authentication that's shared with them.
+- Some connectors, like the SQL Connector used with SQL Server Authentication, are [shared implicitly with users](/powerapps/maker/canvas-apps/connections-list\#sql-user-name-and-password-authentication). This means that as soon as the app is published, the connection is also published and available to your users. Your users can then also create apps by using any connection that uses SQL Server authentication that's shared with them.
 
 - Identify apps that use the SQL Server Connector. Ensure that users are aware of the risks, and help them mitigate it by enabling Azure AD authentication for SQL Server.
 
@@ -94,7 +94,7 @@ Some typical assessments an admin might perform are described in the following s
 
 ### Identify suspended flows
 
-- Flows will be suspended due to using a combination of connectors that conflict with the company [data loss prevention (DLP) policies](https://docs.microsoft.com/power-automate/prevent-data-loss) or billing restrictions.
+- Flows will be suspended due to using a combination of connectors that conflict with the company [data loss prevention (DLP) policies](/power-automate/prevent-data-loss) or billing restrictions.
 
 - Find those flows, and work with the maker to decide whether the flow is still needed, and if so, what policy violation they've encountered. Educate the maker or modify the DLP policy as needed.
 
@@ -110,7 +110,7 @@ Select **Blank** in the **Owner** drop-down list on the rightmost filter pane to
 
 ### Implicitly shared flow connections
 
-- Some connectors, like the SQL Connector used with SQL Server Authentication are [shared implicitly with users](https://docs.microsoft.com/powerapps/maker/canvas-apps/connections-list\#sql-user-name-and-password-authentication). This means that as soon as the flow is shared, the connection is also published and available to your users. Your users can also create flows by using any connection that uses SQL Server authentication that's shared with them.
+- Some connectors, like the SQL Connector used with SQL Server Authentication are [shared implicitly with users](/powerapps/maker/canvas-apps/connections-list\#sql-user-name-and-password-authentication). This means that as soon as the flow is shared, the connection is also published and available to your users. Your users can also create flows by using any connection that uses SQL Server authentication that's shared with them.
 
 - Identify flows that use the SQL Server Connector. Ensure that users are aware of the risk, and help them mitigate it by enabling Azure AD authentication for SQL Server.
 
@@ -175,7 +175,7 @@ The **Archive Score** is the sum of multiple criteria:
 
 - Is this app likely a template, or are there multiple apps with the same name? (+1)
 
-A [tooltip](https://docs.microsoft.com/power-bi/desktop-tooltips) shows additional details like the number of launches and last launched date.
+A [tooltip](/power-bi/desktop-tooltips) shows additional details like the number of launches and last launched date.
 
 ![App Archive](media/pb-33.png "App Archive")
 

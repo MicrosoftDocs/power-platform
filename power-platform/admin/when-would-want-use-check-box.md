@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.date: 09/11/2020
 author: revachauhan
 ms.author: rechauha
-ms.reviewer: jimholtz
+ms.reviewer: mkaur
 search.audienceType: 
   - admin
 search.app:
@@ -17,8 +17,6 @@ search.app:
   - Flow
 ---
 # When would I want to use this check box?
-
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
  A user can be a member of more than one Dynamics 365 organization, but an [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] mailbox (email address) can only synchronize emails, appointments, contacts, and tasks with one organization, and a user that belongs to that organization can only synchronize emails, appointments, contacts, and tasks with one Exchange mailbox. The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation) store the organization ID (`OrgID`) for the synchronizing organization and the last time the user synced in Exchange.  
   

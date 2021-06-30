@@ -1,6 +1,6 @@
 ---
-title: "Multiple environments or tenants   | MicrosoftDocs"
-description: Information on multiple environments or tenants 
+title: "Considerations for choosing multiple environments or tenants"
+description: "Learn about options and use cases for choosing multiple environments or tenants in your subscription, including a multi-tenant deployment." 
 ms.custom: ""
 ms.date: 09/08/2020
 ms.reviewer: ""

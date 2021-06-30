@@ -30,7 +30,7 @@ See the following topics:
 - [Manage Dynamics 365 apps](manage-apps.md)
 - [Manage Power Apps](admin-manage-apps.md)
 - [Manage Power Automate flows](manage-power-automate.md)
-- [Portal administration with Power Platform admin center](https://docs.microsoft.com/powerapps/maker/portals/admin/power-platform-admin-center) 
+- [Portal administration with Power Platform admin center](/powerapps/maker/portals/admin/power-platform-admin-center) 
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

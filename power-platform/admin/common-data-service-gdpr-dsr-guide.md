@@ -92,8 +92,8 @@ You can find personal data from Dataverse users within the following resources:
 
 |Resource | Purpose | Website access | Programmatic access  |
 | --- | --- | --- | ---  |
-| Table row | Known as the system User table, it stores a user's personal data. | [Power Platform admin center](https://admin.powerplatform.microsoft.com/) | Through the [Web API](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/update-delete-entities-using-web-api#basic-update)  |
-| Audit history | Allows customers to identify resources that users created, accessed, changed, or deleted at an table level. | [Power Platform admin center](https://admin.powerplatform.microsoft.com/) | Through the [Web API](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/update-delete-entities-using-web-api#basic-update)  |
+| Table row | Known as the system User table, it stores a user's personal data. | [Power Platform admin center](https://admin.powerplatform.microsoft.com/) | Through the [Web API](/powerapps/developer/common-data-service/webapi/update-delete-entities-using-web-api#basic-update)  |
+| Audit history | Allows customers to identify resources that users created, accessed, changed, or deleted at an table level. | [Power Platform admin center](https://admin.powerplatform.microsoft.com/) | Through the [Web API](/powerapps/developer/common-data-service/webapi/update-delete-entities-using-web-api#basic-update)  |
 
 #### User
 User personal data is stored in the Azure Active Directory and is automatically synced to all Dataverse environments. System administrators cannot update this personal data directly in Dataverse while the user is active&mdash;they must update the data from within the Microsoft 365 admin center. System administrators can add personal data (for example, custom attributes) directly to Dataverse, but they must manually manage this data.
@@ -224,7 +224,7 @@ Personal data can then be exported, rectified, or deleted in a table using the i
 ### Discover
 When Dataverse System Administrators receive a DSR request from an individual, they must identify which environments/Dataverse environments contain personal data for that individual. Personal data is typically stored in key tables (for example, Account, Contact, Lead, Opportunity, etc.), but it's your responsibility to develop policies and procedures for maintaining an inventory of where you store each individual's personal data so you're prepared to respond to DSR requests.
 
-Using an inventory, Dataverse System Administrators can configure the search tables and fields and then access the Dataverse environment to discover personal data. For more information, see [Configure Relevance Search](https://go.microsoft.com/fwlink/?linkid=872506).
+Using an inventory, Dataverse System Administrators can configure the search tables and fields and then access the Dataverse environment to discover personal data. For more information, see [Configure Relevance Search](/previous-versions/dynamicscrm-2016/administering-dynamics-365/mt723654(v=crm.8)).
 
 From the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), do the following:
 

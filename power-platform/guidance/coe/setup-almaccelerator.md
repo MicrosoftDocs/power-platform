@@ -18,7 +18,7 @@ search.app:
 ---
 
 # Set up ALM Accelerator for Makers components
-This solution uses [GitHub actions](https://docs.microsoft.com/power-platform/alm/devops-github-actions) for source control and deployments. The [GitHub connector](https://docs.microsoft.com/connectors/github/) is used in flows to interact with GitHub. More information: [Use the ALM Accelerator for Makers components](almaccelerator-components.md)
+This solution uses [GitHub actions](../../alm/devops-github-actions.md) for source control and deployments. The [GitHub connector](/connectors/github/) is used in flows to interact with GitHub. More information: [Use the ALM Accelerator for Makers components](almaccelerator-components.md)
 
 >[!IMPORTANT]
 >The ALM Accelerator for Makers components don't have a dependency on other components of the CoE Starter Kit. It can be used independently.
@@ -99,7 +99,7 @@ Leave the Azure portal open, because you'll need to copy some information when y
 1. Create connections to all connectors used as part of the solution.
     1. Go to **Data** > **Connections**.
     1. Select **+ New Connection**.
-    1. Search for and select **Common Data Service**.
+    1. Search for and select **Microsoft Dataverse**.
      ![Select the Dataverse connector](media/msi-connection.png "Select the Dataverse connector")
     1. Select **+** to create a connection.
     1. Complete the same steps for the following connectors:
@@ -169,7 +169,7 @@ The client ID is needed for flows to create an environment and perform other adm
 
 ### Update the language
 
-1. Change your preferred language, if you want. Power Apps uses the [IETF BCP-47 language tag format](https://docs.microsoft.com/powerapps/maker/canvas-apps/functions/function-language#language-tags), for example en_US, fr_FR, it_IT.
+1. Change your preferred language, if you want. Power Apps uses the [IETF BCP-47 language tag format](/powerapps/maker/canvas-apps/functions/function-language#language-tags), for example en_US, fr_FR, it_IT.
 1. Select **Update**.
 
 ### Update GitHub Plan Exists setting
@@ -178,7 +178,7 @@ If a paid GitHub org plan exists for your org, turn on the **GitHub Plan Exists*
 
 ## Secure admin credentials
 
-[Field-level security](https://docs.microsoft.com/power-platform/admin/field-level-security) is enabled to secure credentials for deployments. As an admin, you'll need to add users to the **FieldSecurityForPassword** field security profile; this enables those users to add their credentials for the deployment from development to test and production environments.
+[Field-level security](../../admin/field-level-security.md) is enabled to secure credentials for deployments. As an admin, you'll need to add users to the **FieldSecurityForPassword** field security profile; this enables those users to add their credentials for the deployment from development to test and production environments.
 <!--markdownlint-disable MD036-->
 **To add users to the field security profile**
 

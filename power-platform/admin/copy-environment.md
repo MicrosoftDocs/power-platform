@@ -1,11 +1,11 @@
 ---
-title: "Copy an environment to a sandbox environment  | MicrosoftDocs"
-description: Learn how to copy a sandbox environment. 
+title: "Copy an environment to a sandbox environment"
+description: "Learn how to copy apps and data from an environment to a sandbox environment. Review next steps for administrators in the target environment." 
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/18/2020
+ms.date: 06/23/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -56,40 +56,79 @@ Isaac has a large development project starting next week for the sales departmen
   
 After modifying and enabling some of the plug-ins, the developer sandbox environment functions the same and is isolated from the production application.  The development team works on their modifications in this environment for several weeks.  They package their changes into a solution and export/import to deploy to the Everything copy sandbox environment.  After a successful round of testing and signoffs, the changes are manually deployed to production.  
   
-### Entities copied in a Customizations and schemas only copy  
- The following entities are copied when you do a Customizations and schemas only copy:  
+### Tables truncated in customizations and schemas only copy 
+ The following tables will be truncated when you do a customizations and schemas only copy:  
 
-| Entities |  
-|-----------|  
-|BusinessUnit|  
-|ConnectionRole|  
-|Currency|  
-|DuplicateRule|  
-|DuplicateRuleCondition|  
-|EmailServerProfile|  
-|FieldPermission|  
-|FieldSecurityProfile|  
-|ImportMap|  
-|InternalAddress|  
-|Mailbox|  
-|Organization|  
-|Position|  
-|Queues|
-|QueueMembership|
-|Report|  
-|Resource|  
-|ResourceGroup|  
-|Role|  
-|RollupField|  
-|SavedQuery|  
-|Sites|
-|SLAKPIenvironment|  
-|Solution|  
-|Subject|  
-|Team|  
-|TeamTemplate|  
-|Template|  
-|SystemUser|  
+| Tables |  |  |
+|-----------|-----------|-----------| 
+| Account | InterProcessLock | SocialActivity |
+| AccountLeads | Invoice | SocialInsightsConfiguration |
+| ActivityMimeAttachment | InvoiceDetail | SocialProfile |
+| ActivityParty | KnowledgeArticle | SqlEncryptionAudit |
+| ActivityPointer | KnowledgeArticlesCategories | Subscription |
+| AdvancedSimilarityRule | KbArticle | SubscriptionClients |
+| Annotation | KbArticleComment | SubscriptionManuallyTrackedObject |
+| AnnualFiscalCalendar | KnowledgeSearchModel | SubscriptionStatisticsOffline |
+| Appointment | Lead | SubscriptionStatisticsOutlook |
+| Attachment | LeadAddress | SubscriptionSyncEntryOffline |
+| Audit | LeadCompetitors | SubscriptionSyncEntryOutlook |
+| AzureServiceConnection | LeadProduct | SubscriptionSyncInfo |
+| BulkDeleteFailure | Letter | SystemApplicationMetadata |
+| BulkOperation | License | SystemUserBusinessUnitEntityMap |
+| BulkOperationLog | List | SystemUserLicenses |
+| BusinessProcessFlowInstance | ListMember | Task |
+| BusinessUnitNewsArticle | MailboxStatistics | TeamProfiles |
+| Campaign | MonthlyFiscalCalendar | TeamRoles |
+| CampaignActivity | Notification | Territory
+| CampaignActivityItem | Opportunity | TimeZoneLocalizedName |
+| CampaignItem | OpportunityClose | Topic |
+| CampaignResponse | OpportunityCompetitors | TopicHistory |
+| Competitor | OpportunityProduct | TopicModel |
+| ChannelAccessProfile | OrderClose | TopicModelConfiguration |
+| CompetitorAddress | OrganizationUI | TopicModelExecutionHistory |
+| CompetitorProduct | OwnerMapping | TraceAssociation |
+| CompetitorSalesLiterature | PhoneCall | TraceLog |
+| Connection | PluginTypeStatistic | TraceRegarding |
+| Contact | PluginTraceLog | UnresolvedAddress |
+| ContactInvoices | Post | UntrackedEmail |
+| ContactLeads | PostComment | UserApplicationMetadata |
+| ContactOrders | PostFollow | UserEntityInstanceData |
+| ContactQuotes | PostLike | UserEntityUISettings |
+| Contract | PostRegarding | UserFiscalCalendar |
+| ContractDetail | PostRole | UserForm |
+| CustomerAddress | PriceLevel | UserQueryVisualization |
+| CustomerOpportunityRole | PrincipalObjectAccess | WizardAccessPrivilege |
+| CustomerRelationship | PrincipalObjectAttributeAccess | WorkflowLog |
+| DelveActionHub | ProcessSession | WorkflowWaitSubscription |
+| Discount | Product | BusinessDataLocalizedLabel |
+| DiscountType | ProductAssociation | DynamicProperty |
+| DocumentIndex | ProductPriceLevel | ChannelPropertyGroup |
+| DuplicateRecord | ProductSalesLiterature | DynamicPropertyAssociation |
+| Email | ProductSubstitute | DynamicPropertyInstance |
+| EmailHash | QuarterlyFiscalCalendar | DynamicPropertyOptionSetItem |
+| EmailSearch | QueueItem | Position |
+| Entitlement | Quote | ChannelProperty |
+| EntitlementChannel | QuoteClose | RollupJob |
+| EntitlementContacts | QuoteDetail | SLAKPIInstance |
+| EntitlementProducts | RecurrenceRule | SystemUserManagerMap |
+| EntitlementTemplate | TextAnalyticsEntityMapping | SystemUserSyncMappingProfiles |
+| EntitlementTemplateChannel | RecurringAppointmentMaster | OfficeGraphDocument |
+| EntitlementTemplateProducts | RelationshipRole | SimilarityRule |
+| ExchangeSyncIdMapping | RelationshipRoleMap | BookableResource |
+| BookableResourceBookingExchangeSyncIdMapping | ReplicationBacklog | BookableResourceGroup |
+| ExternalParty | SalesLiterature | BookableResourceBooking |
+| ExternalPartyItem | SalesLiteratureItem | BookableResourceBookingHeader |
+| Fax | SalesOrder | BookableResourceCategory |
+| FixedMonthlyFiscalCalendar | SalesOrderDetail | BookableResourceCharacteristic |
+| Goal | SdkMessageProcessingStepSecureConfig | BookableResourceCategoryAssn |
+| GoalRollupQuery | SemiAnnualFiscalCalendar | Characteristic |
+| Import | Service | RatingValue |
+| ImportData | ServiceAppointment | RatingModel |
+| ImportFile | ServiceContractContacts | BookingStatus |
+| ImportLog | SharePointData | RecommendedDocument |
+| Incident | SharePointDocument | EmailSignature |
+| IncidentResolution | SharePointDocumentLocation | UserSearchFacet |
+| IntegrationStatus | SharePointSite | GlobalSearchConfiguration |
 
 ## Copy an environment to a sandbox environment
   
@@ -170,12 +209,6 @@ Once the copy process is complete, the target environment is placed in [Administ
 - **Client extensibility**. Review the following.  
     - **Client-side JavaScript**. Take a look at your JavaScript and HTML web resources for read/write operations that could impact external services.  
     - **IFRAMES**. Determine if the target of an IFRAME is a production environment.  
-
-## Known issues
-
-### Failures during a copy operation
-Power Virtual Agent resources were recently included as part of the copy operation. If you are getting consistent failures during a copy operation and you have Power Virtual Agent resources installed in the source environment, the problem might be that the Power Virtual Agent solutions are not installed in the target environment. If you explicitly uninstalled the Power Virtual Agent solutions from the target environment, you can work around this by re-installing the solutions. Otherwise, you should choose a different target environment.
-
 
 ### See also  
 [What's new about storage](whats-new-storage.md) <br />

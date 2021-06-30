@@ -20,8 +20,6 @@ search.app:
 
 # Create a data loss prevention (DLP) policy 
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 To protect data in your organization, you can use Power Apps to create and enforce policies that define the consumer connectors that specific business data can be shared with. These policies are called *data loss prevention* (DLP) policies. DLP policies ensure that data is managed in a uniform manner across your organization, and they prevent important business data from being accidentally published to connectors such as social media sites.
 
 DLP policies can be created at the tenant level or at the environment level and are managed from the Power Platform admin center. 

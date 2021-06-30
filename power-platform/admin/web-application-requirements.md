@@ -54,8 +54,8 @@ Notice that these values are recommendations and don’t guarantee satisfactory 
 |             Windows 8           |  Not supported   |   Not supported<sup>1</sup>   |     Not supported     |
 |            Windows 7          |   Not supported   |    Not supported   |   Not supported  |
 
- <sup>1</sup> This version of [!INCLUDE[pn_ms_Windows_short](../includes/pn-ms-windows-short.md)] doesn’t support the version of [!INCLUDE[pn_Internet_Explorer](../includes/pn-internet-explorer.md)]. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Internet Explorer 11 – FAQ for IT Pros](https://technet.microsoft.com/library/dn268945.aspx)  <br/>
-<sup>2</sup> Check requirements for individual apps, such as [Customer Service Hub application requirements](https://docs.microsoft.com/dynamics365/customer-service/customer-service-hub-user-guide-basics). Microsoft Internet Explorer 11 support is deprecated. We recommend that you use Microsoft Edge. More information: [Deprecation announcement](../important-changes-coming.md#internet-explorer-11-support-for-dynamics-365-and-microsoft-power-platform-is-deprecated)<br/>
+ <sup>1</sup> This version of [!INCLUDE[pn_ms_Windows_short](../includes/pn-ms-windows-short.md)] doesn’t support the version of [!INCLUDE[pn_Internet_Explorer](../includes/pn-internet-explorer.md)]. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Internet Explorer 11 – FAQ for IT Pros](/internet-explorer/ie11-faq/faq-for-it-pros-ie11)  <br/>
+<sup>2</sup> Check requirements for individual apps, such as [Customer Service Hub application requirements](/dynamics365/customer-service/customer-service-hub-user-guide-basics). Microsoft Internet Explorer 11 support is deprecated. We recommend that you use Microsoft Edge. More information: [Deprecation announcement](../important-changes-coming.md#internet-explorer-11-support-for-dynamics-365-and-microsoft-power-platform-is-deprecated)<br/>
 
 > [!IMPORTANT]
 >  Although you may be able to use [!INCLUDE[pn_IE_8](../includes/pn-ie-8.md)], [!INCLUDE[pn_IE_9](../includes/pn-ie-9.md)], or an [!INCLUDE[pn_Internet_Explorer](../includes/pn-internet-explorer.md)] and [!INCLUDE[pn_ms_Windows_short](../includes/pn-ms-windows-short.md)] combination that is not supported in the previous table, those web browsers are not recommended and are not supported with model-driven apps.  
@@ -68,10 +68,10 @@ Notice that these values are recommendations and don’t guarantee satisfactory 
 - Mozilla Firefox (latest publicly-released version) running on Windows 10, Windows 8.1, Windows 8, or Windows 7  
 
 - [!INCLUDE[tn_Google_Chrome](../includes/tn-google-chrome.md)]
-  - [!INCLUDE[tn_Google_Chrome](../includes/tn-google-chrome.md)] (latest publicly-released version) running on Windows 10, Windows 8.1, Windows 8, Windows 7, or [Google Nexus](https://docs.microsoft.com/dynamics365/mobile-app/support-phones-tablets) tablet 
+  - [!INCLUDE[tn_Google_Chrome](../includes/tn-google-chrome.md)] (latest publicly-released version) running on Windows 10, Windows 8.1, Windows 8, Windows 7, or [Google Nexus](/dynamics365/mobile-app/support-phones-tablets) tablet 
   - Google Chrome (latest publicly-released version) running on the two latest publicly-release Mac OS versions 
 
-- [!INCLUDE[tn_Apple_Safari](../includes/tn-apple-safari.md)] (latest publicly-released version) running on the two latest publicly-release Mac OS versions, or [Apple iPad](https://docs.microsoft.com/dynamics365/mobile-app/support-phones-tablets)  
+- [!INCLUDE[tn_Apple_Safari](../includes/tn-apple-safari.md)] (latest publicly-released version) running on the two latest publicly-release Mac OS versions, or [Apple iPad](/dynamics365/mobile-app/support-phones-tablets)  
 
 To find the latest release for these web browsers, visit the software manufacturer’s website.  
 

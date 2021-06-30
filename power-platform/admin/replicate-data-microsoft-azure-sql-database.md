@@ -18,15 +18,13 @@ search.app:
 ---
 # Replicate data to Azure SQL Database using Data Export Service
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 The [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] is an add-on service made available on [!INCLUDE[pn_microsoft_appsource](../includes/pn-microsoft-appsource.md)] that adds the ability to replicate data from Microsoft Dataverse database to a [!INCLUDE[pn_ms_azure_sql_database](../includes/pn-ms-azure-sql-database.md)] store in a customer-owned [!INCLUDE[pn_Windows_Azure](../includes/pn-windows-azure.md)] subscription. The supported target destinations are [!INCLUDE[pn_ms_azure_sql_database](../includes/pn-ms-azure-sql-database.md)] and [!INCLUDE[pn_SQL_Server_short](../includes/pn-sql-server-short.md)] on [!INCLUDE[pn_Windows_Azure](../includes/pn-windows-azure.md)] virtual machines.  The [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] intelligently synchronizes the entire data initially and thereafter synchronizes on a continuous basis as changes occur (delta changes) in the system. This helps enable several analytics and reporting scenarios on top of data with [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] data and analytics services, and opens up new possibilities for customers and partners to build custom solutions.  
   
 > [!NOTE]
 > - You can use the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] with customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation). <br />
 > - Similarly, you can export your Dataverse data to Azure Data Lake Gen2. You can link your Dataverse environment to a data lake in your Azure subscription, select standard or custom entities, and then export data to the data lake. All data or metadata changes (initial and incremental) in Dataverse are automatically pushed to Azure Data Lake Gen2 without any additional action. More information: [Exporting Dataverse data to Azure Data Lake](https://powerapps.microsoft.com/blog/exporting-cds-data-to-azure-data-lake-preview/) 
   
-For information about the programmatic interface for managing configuration and administration of the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)], see [Data Export Service](https://docs.microsoft.com/powerapps/developer/common-data-service/data-export-service) in the developer guide.
+For information about the programmatic interface for managing configuration and administration of the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)], see [Data Export Service](/powerapps/developer/common-data-service/data-export-service) in the developer guide.
   
 <a name="Prereq_DES"></a>   
 ## Prerequisites for using [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)]  
@@ -40,7 +38,7 @@ For information about the programmatic interface for managing configuration and 
   
    Alternatively, you can turn on **Allow access to Azure services** to allow all Azure services access.  
   
-   For [!INCLUDE[pn_SQL_Server_short](../includes/pn-sql-server-short.md)] on [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] VM, the "Connect to SQL Server over the Internet" option should be enabled. More information: [Azure: Connect to a SQL Server Virtual Machine on Azure](https://docs.microsoft.com/azure/azure-sql/virtual-machines/windows/ways-to-connect-to-sql)  
+   For [!INCLUDE[pn_SQL_Server_short](../includes/pn-sql-server-short.md)] on [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] VM, the "Connect to SQL Server over the Internet" option should be enabled. More information: [Azure: Connect to a SQL Server Virtual Machine on Azure](/azure/azure-sql/virtual-machines/windows/ways-to-connect-to-sql)  
 
    Additionally, configure your firewall rules to allow communication between Data Export Service and SQL Server.
   
@@ -163,7 +161,7 @@ For information about the programmatic interface for managing configuration and 
   
 - The [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] solution is installed in your environment.  
   
-- Maintain the [!INCLUDE[pn-sql](../includes/pn-sql.md)] Database connection string in the Key Vault and copy the Key Vault URL to provide in the Export Profile. More information: [Azure: Get started with Azure Key Vault](https://azure.microsoft.com/documentation/articles/key-vault-get-started/)  
+- Maintain the [!INCLUDE[pn-sql](../includes/pn-sql.md)] Database connection string in the Key Vault and copy the Key Vault URL to provide in the Export Profile. More information: [Azure: Get started with Azure Key Vault](/azure/key-vault/general/overview)  
   
 - The entities to be added to the Export Profile are enabled for change tracking. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Enable change tracking to control data synchronization](../admin/enable-change-tracking-control-data-synchronization.md)  
   
@@ -202,7 +200,7 @@ For information about the programmatic interface for managing configuration and 
   
    ![Select Entities tab in Create Export Profile dialog box](../admin/media/data-export-profile-2.PNG "Select Entities tab in Create Export Profile dialog box")  
   
-6. In the **Select Relationships** step, you can synchronize  the M:N (many-to-many) [relationships](https://docs.microsoft.com/powerapps/maker/common-data-service/create-edit-entity-relationships) that exist with the entities you selected in the previous step. Click **Next**.  
+6. In the **Select Relationships** step, you can synchronize  the M:N (many-to-many) [relationships](/powerapps/maker/common-data-service/create-edit-entity-relationships) that exist with the entities you selected in the previous step. Click **Next**.  
   
    ![Create Export Profile - Manage Relationships - Select Relationships](../admin/media/data-export-profile-3.PNG "Create Export Profile - Manage Relationships - Select Relationships")  
   
@@ -386,17 +384,17 @@ The statement has been terminated.
 <a name="DES_best_practice"></a>   
 ## Best practices when using Azure SQL Database with Data Export  
   
-- To avoid synchronization errors due to resource throttling, we recommend that you have an [!INCLUDE[pn_Azure_SQL_Database_long](../includes/pn-azure-sql-database-long.md)] Premium P1 or better plan when you use the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)]. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Azure SQL Database resource limits](https://docs.microsoft.com/azure/sql-database/sql-database-resource-limits) and [SQL Database Pricing](https://azure.microsoft.com/pricing/details/sql-database/)  
+- To avoid synchronization errors due to resource throttling, we recommend that you have an [!INCLUDE[pn_Azure_SQL_Database_long](../includes/pn-azure-sql-database-long.md)] Premium P1 or better plan when you use the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)]. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Azure SQL Database resource limits](/azure/sql-database/sql-database-resource-limits) and [SQL Database Pricing](https://azure.microsoft.com/pricing/details/sql-database/)  
   
 - Set the [!INCLUDE[pn_Azure_SQL_Database_long](../includes/pn-azure-sql-database-long.md)] to use read committed snapshot isolation (RCSI) for workloads running concurrently on the destination database that execute long running read queries, such as reporting and ETL jobs. This reduces the occurrence of timeout errors that can occur with the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] due to read\write conflicts.  
 
-- To help improve query performance we recommend the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] database max degree of parallelism (MAXDOP) be set to 1. More information: [MSDN: Server Memory Options](https://msdn.microsoft.com/library/ms178067.aspx)
+- To help improve query performance we recommend the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] database max degree of parallelism (MAXDOP) be set to 1. More information: [MSDN: Server Memory Options](/sql/database-engine/configure-windows/server-memory-server-configuration-options)
 
-- Frequently assess the amount of fragmentation, and when necessary, rebuild the indexes in the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] database. More information: [Reorganize and Rebuild Indexes](https://docs.microsoft.com/sql/relational-databases/indexes/reorganize-and-rebuild-indexes?view=sql-server-2017)
+- Frequently assess the amount of fragmentation, and when necessary, rebuild the indexes in the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] database. More information: [Reorganize and Rebuild Indexes](/sql/relational-databases/indexes/reorganize-and-rebuild-indexes?view=sql-server-2017)
 
-- Periodically update database statistics on tables and indexed views in the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] database. More information: [Update Statistics](https://docs.microsoft.com/sql/relational-databases/statistics/update-statistics?view=sql-server-2017) 
+- Periodically update database statistics on tables and indexed views in the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] database. More information: [Update Statistics](/sql/relational-databases/statistics/update-statistics?view=sql-server-2017) 
 
-- Monitor the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] database's utilization. More information: [Perf monitoring](https://docs.microsoft.com/azure/sql-database/sql-database-single-database-monitor)
+- Monitor the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] database's utilization. More information: [Perf monitoring](/azure/sql-database/sql-database-single-database-monitor)
 
   
 ## About data synchronization latency
@@ -456,18 +454,18 @@ $tenantId = 'tenantId'
     # -------------------------------------------------------------------------------- #
 
 # Login to Azure account, select subscription and tenant Id
-connect-azaccount -Tenant $tenantId -Subscription $subscriptionId
+Connect-AzAccount -Tenant $tenantId -Subscription $subscriptionId
 
 # Create new resource group if not exists.
-$rgAvail = Get-AzureRmResourceGroup -Name $resourceGroupName -Location $location -ErrorAction SilentlyContinue
+$rgAvail = Get-AzResourceGroup -Name $resourceGroupName -Location $location -ErrorAction SilentlyContinue
 if(!$rgAvail){
-    New-AzureRmResourceGroup -Name $resourceGroupName -Location $location
+    New-AzResourceGroup -Name $resourceGroupName -Location $location
 }
 
 # Create new key vault if not exists.
-$kvAvail = Get-AzureRmKeyVault -VaultName $keyvaultName -ResourceGroupName $resourceGroupName -ErrorAction SilentlyContinue
+$kvAvail = Get-AzKeyVault -VaultName $keyvaultName -ResourceGroupName $resourceGroupName -ErrorAction SilentlyContinue
 if(!$kvAvail){
-    New-AzureRmKeyVault -VaultName $keyvaultName -ResourceGroupName $resourceGroupName -Location $location
+    New-AzKeyVault -VaultName $keyvaultName -ResourceGroupName $resourceGroupName -Location $location
     # Wait few seconds for DNS entry to propagate
     Start-Sleep -Seconds 15
 }
@@ -480,11 +478,11 @@ foreach ($orgId in $organizationIdList.Split(',')) {
 
 # Add or update a secret to key vault.
 $secretValue = ConvertTo-SecureString $connectionString -AsPlainText -Force
-$secret = Set-azKeyVaultSecret -VaultName $keyvaultName -Name $secretName -SecretValue $secretValue -Tags $secretTags
+$secret = Set-AzKeyVaultSecret -VaultName $keyvaultName -Name $secretName -SecretValue $secretValue -Tags $secretTags
 
 # Authorize application to access key vault.
 $servicePrincipal = 'b861dbcc-a7ef-4219-a005-0e4de4ea7dcf'
-set-azkeyvaultaccesspolicy -VaultName $keyvaultName -ServicePrincipalName $servicePrincipal -PermissionsToSecrets get
+Set-AzKeyVaultAccessPolicy -VaultName $keyvaultName -ServicePrincipalName $servicePrincipal -PermissionsToSecrets get
 
 # Display secret url.
 Write-Host "Connection key vault URL is "$secret.id.TrimEnd($secret.Version)""
@@ -583,7 +581,7 @@ EXEC SP_EXECUTESQL @sql;
 
 <a name="SQLDB_IP_addresses"></a>   
 ## Azure SQL database static IP addresses used by the Data Export Service  
- In [!INCLUDE[pn_Azure_SQL_Database_long](../includes/pn-azure-sql-database-long.md)], click **Set server firewall**, turn **Allow access to Azure services** to **OFF**, click **Add client IP**, and then add the IP addresses appropriate for the region of your Dynamics 365 environment. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Azure: Configure an Azure SQL Database server-level firewall rule using the Azure Porta](https://azure.microsoft.com/documentation/articles/sql-database-configure-firewall-settings/)l  
+ In [!INCLUDE[pn_Azure_SQL_Database_long](../includes/pn-azure-sql-database-long.md)], click **Set server firewall**, turn **Allow access to Azure services** to **OFF**, click **Add client IP**, and then add the IP addresses appropriate for the region of your Dynamics 365 environment. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Azure: Configure an Azure SQL Database server-level firewall rule using the Azure Porta](/azure/azure-sql/database/firewall-configure)l  
   
 |Region|IP address|  
 |------------|----------------|  
@@ -654,9 +652,9 @@ Exporting attachments such as documentbody on *Annotation* table is not supporte
 [!INCLUDE[cc_privacy_data_export](../includes/cc-privacy-data-export.md)]
   
 ### See also  
- [Entity relationships overview](https://docs.microsoft.com/powerapps/maker/common-data-service/create-edit-entity-relationships)<br />
+ [Entity relationships overview](/powerapps/maker/common-data-service/create-edit-entity-relationships)<br />
  [AppSource: Data Export Service](https://appsource.microsoft.com/product/dynamics-365/mscrm.44f192ec-e387-436c-886c-879923d8a448)   <br />
- [Data Export Service](https://docs.microsoft.com/powerapps/developer/common-data-service/data-export-service) <br />
+ [Data Export Service](/powerapps/developer/common-data-service/data-export-service) <br />
  [Team Blog: Introduction to Data Export Service](https://blogs.msdn.microsoft.com/crm/2017/04/11/introduction-to-dynamics-365-data-export-service/)
 
 

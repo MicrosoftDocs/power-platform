@@ -17,8 +17,6 @@ search.app:
 ---
 # Compliance and data privacy
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 Microsoft is committed to the highest levels of trust, transparency, standards conformance, and regulatory compliance. Microsoft’s broad suite of cloud products and services are all built from the ground up to address the most rigorous security and privacy demands of our customers.
 
 To help your organization comply with national, regional, and industry-specific requirements governing the collection and use of individuals’ data, Microsoft provides the most comprehensive set of compliance offerings (including certifications and attestations) of any cloud service provider. There are also tools for administrators to support your organization’s efforts. In this part of the document, we will cover in more detail the resources available to help you determine and achieve your own organization requirements.
@@ -48,7 +46,7 @@ By default, Microsoft stores and manages the database encryption keys for your e
 
 ## Resources to manage GDPR Compliance
 
-The European Union General Data Protection Regulation (GDPR) is one of the newest privacy regulations enacted that gives rights to people to manage their personal data. In this section, we will look at some of the tools and resources available for the Microsoft Power Platform to assist administrators in their efforts to comply with GDPR. Some of these resources and tools may also helpful to assist you in other data privacy-related tasks not directly related to GDPR. A complete discussion of GDPR is beyond the scope of this content, however in this section we will focus on the tools and resources to support your efforts. Additionally, Microsoft has a section on the trust center dedicated to GDPR resources and information that can be helpful. You can find that here https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx
+The European Union General Data Protection Regulation (GDPR) is one of the newest privacy regulations enacted that gives rights to people to manage their personal data. In this section, we will look at some of the tools and resources available for the Microsoft Power Platform to assist administrators in their efforts to comply with GDPR. Some of these resources and tools may also be helpful to assist you in other data privacy-related tasks not directly related to GDPR. A complete discussion of GDPR is beyond the scope of this content, however in this section we will focus on the tools and resources to support your efforts. Additionally, Microsoft has a section on the trust center dedicated to GDPR resources and information that can be helpful. You can find that here https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx
 
 First, let’s review at some of GDPR’s terminology that matters in this context:
 
@@ -67,9 +65,9 @@ The following links point to detailed information to help you respond to DSR req
 |---------|---------|
 |Power Apps  |  [Responding to Data Subject Rights (DSR) requests to export Power Apps customer data](powerapps-gdpr-export-dsr.md)      |
 |Dataverse     |  [Responding to Data Subject Rights (DSR) requests for Dataverse customer data](common-data-service-gdpr-dsr-guide.md)     |
-|Power Automate    | https://docs.microsoft.com/flow/gdpr-dsr-summary        |
-|Microsoft Accounts (MSAs)     | https://docs.microsoft.com/flow/gdpr-dsr-summary-msa        |
-|Customer engagement apps     |https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-dynamics365         |
+|Power Automate    | [Responding to GDPR Data Subject Requests for Power Automate](/power-automate/gdpr-dsr-summary)       | 
+|Microsoft Accounts (MSAs)     | [Respond to GDPR Data Subject Rights (DSRs) requests](/power-automate/gdpr-dsr-summary-msa)       | 
+|Customer engagement apps     | [Dynamics 365 Data Subject Requests for the GDPR and CCPA](/compliance/regulatory/gdpr-dsr-Dynamics365?view=o365-worldwide)        | 
 
 ## Microsoft 365 Security and Compliance Center
 

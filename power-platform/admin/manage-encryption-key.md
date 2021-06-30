@@ -4,7 +4,7 @@ description: "Learn how you can manage database encryption key for your environm
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/17/2021
+ms.date: 06/10/2021
 author: Mattp123
 ms.author: miferlan
 ms.reviewer: matp
@@ -19,8 +19,6 @@ search.app:
 ---
 # Manage the encryption key 
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 All environments of Microsoft Dataverse use [!INCLUDE[pn_MS_SQL_Server](../includes/pn-ms-sql-server.md)] Transparent Data Encryption (TDE) to perform real-time encryption of data when written to disk, also known as encryption at rest.  
   
  By default, [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] stores and manages the database encryption key for your environments so you don't have to. The manage keys feature in the Microsoft Power Platform admin center gives administrators the ability to self-manage the database encryption key that is associated with the Dataverse tenant. 
@@ -29,7 +27,7 @@ All environments of Microsoft Dataverse use [!INCLUDE[pn_MS_SQL_Server](../inclu
 >  Self-managed database encryption keys are only available in the [!INCLUDE[pn_CRM_Online](../includes/pn-crm-8-2-0-online.md)] and may not be made available for later versions. --> 
 
 > [!IMPORTANT]
-> Self-managed database encryption keys are only available for customers who have more than 1000 Power Apps per user licenses and/or Dynamics 365 Enterprise licenses (or a combination of these) and who have opted in to the feature.  To opt in to this program, submit a [support request](https://docs.microsoft.com/power-platform/admin/support-overview#using-support).
+> Self-managed database encryption keys are only available for customers who have more than 1000 Power Apps per user licenses and/or Dynamics 365 Enterprise licenses (or a combination of these) and who have opted in to the feature.  To opt in to this program, submit a [support request](./support-overview.md#using-support).
 >
 > Encryption key management is only applicable to Azure SQL environment databases. The following features and services use their own key to encrypt their data and can't be encrypted with the self-managed encryption key:
 > - Relevance Search
@@ -38,11 +36,11 @@ All environments of Microsoft Dataverse use [!INCLUDE[pn_MS_SQL_Server](../inclu
 > - Exchange (Server-side sync)
 > 
 > Note the following: 
-> - The self-manage the database encryption key feature must be turned on by Microsoft for your tenant before you can use the feature.  
+> - The self-manage database encryption key feature must be turned on by Microsoft for your tenant before you can use the feature.  
 > - To use the data encryption management features for an environment, the environment must be created *after* the self-manage the database encryption key feature is turned on by Microsoft.  
-> - Encryption key management cannot be applied to environments that have data stored in [File](https://docs.microsoft.com/powerapps/maker/common-data-service/types-of-fields#file-fields) and [Image](https://docs.microsoft.com/powerapps/maker/common-data-service/types-of-fields#image-fields) fields. 
+> - Support of [File](/powerapps/developer/data-platform/file-attributes) and [Image](/powerapps/developer/data-platform/image-attributes) with size < 128MB can be enabled if your environment has version 9.2.21052.00103 or higher.
 > - A majority of existing environments have file and log stored in non-Azure SQL databases. These environments cannot be opted in to self-managed encryption key. Only new environments (once you signed up for this program) can be enabled with self-managed encryption key.
-  
+
 <a name="KM_tasks"></a>   
 ## Introduction to key management  
  With key management, administrators can provide their own encryption key or have an encryption key generated for them, which is used to protect the database for an environment.  
@@ -87,7 +85,7 @@ These actions will result in disabling all the environments within the tenant fr
   
 -   PFX encryption key files must be password protected.  
   
-For more information about generating and transferring an HSM-protected key over the Internet see [How to generate and transfer HSM-protected keys for Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-hsm-protected-keys).  Only [nCipher Vendor HSM key](https://docs.microsoft.com/azure/key-vault/keys/hsm-protected-keys#supported-hsms) is supported. Before generating your HSM key, go to the Power Platform admin center **Manage encryption keys**/**Create New key** window to obtain the subscription ID for your environment region. You need to copy and paste this subscription ID into your HSM to create the key. This will ensure that only our Azure Key Vault can open your file.
+For more information about generating and transferring an HSM-protected key over the Internet see [How to generate and transfer HSM-protected keys for Azure Key Vault](/azure/key-vault/key-vault-hsm-protected-keys).  Only [nCipher Vendor HSM key](/azure/key-vault/keys/hsm-protected-keys#supported-hsms) is supported. Before generating your HSM key, go to the Power Platform admin center **Manage encryption keys**/**Create New key** window to obtain the subscription ID for your environment region. You need to copy and paste this subscription ID into your HSM to create the key. This will ensure that only our Azure Key Vault can open your file.
   
 <a name="keymgt_tasks"></a>   
 
@@ -98,7 +96,7 @@ For more information about generating and transferring an HSM-protected key over
 3.    [Manage encryption for an environment](#manage-encryption-for-an-environment) 
 
 
-Administrators can use the [Power Platform admin center](https://admin.powerplatform.microsoft.com/environments) or the [Microsoft.Xrm.OnlineManagementAPI PowerShell module](https://docs.microsoft.com/powershell/module/microsoft.xrm.onlinemanagementapi/?view=dynamics365ce-ps) cmdlets to perform the key management tasks described here.
+Administrators can use the [Power Platform admin center](https://admin.powerplatform.microsoft.com/environments) or the [Microsoft.Xrm.OnlineManagementAPI PowerShell module](/powershell/module/microsoft.xrm.onlinemanagementapi/?view=dynamics365ce-ps) cmdlets to perform the key management tasks described here.
   
 ### Generate or upload the encryption key for a tenant  
 All encryption keys are stored in the Azure Key Vault, and there can only be one active key at any time. Since the active key is used to encrypt all the environments in the tenant, managing the encryption is operated at the tenant level. Once the key is activated, each individual environment can then be selected to use the key for encryption. 
@@ -137,7 +135,7 @@ To perform this task using PowerShell, see [Get-CRMGenerateProtectionkey](/power
 1.    Select **Upload the Key**, select the .pfx or .byok<sup>1</sup> file, and then select **Open**. 
 2.    Enter the password for the key, and then select **Create**.
 
-<sup>1</sup> For .byok encryption key files, make sure you use the subscription ID as shown on the screen when you export the encryption key from your local HSM. More information: [How to generate and transfer HSM-protected keys for Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-hsm-protected-keys). 
+<sup>1</sup> For .byok encryption key files, make sure you use the subscription ID as shown on the screen when you export the encryption key from your local HSM. More information: [How to generate and transfer HSM-protected keys for Azure Key Vault](/azure/key-vault/key-vault-hsm-protected-keys). 
 
 To perform this task using PowerShell, see [New-CRMImportProtectionKey](/powershell/module/microsoft.xrm.onlinemanagementapi/new-crmimportprotectionkey?view=dynamics365ce-ps) and [Set-CrmTenantProtectionKey](/powershell/module/microsoft.xrm.onlinemanagementapi/set-crmtenantprotectionkey?view=dynamics365ce-ps).
 
@@ -215,7 +213,7 @@ Since there is only one active key per tenant, locking the encryption for the te
 4. On the right pane select **Upload active key**, browse to and select the key, enter the password, and then select **Lock**. 
 5. When prompted, enter the text that is displayed on your screen to confirm that you want to lock all environments in the region, and then select **Confirm**.
 
-To lock a tenant using the PowerShell cmdlet, see [Set-CrmLockTenantProtectedInstances](https://docs.microsoft.com/powershell/module/microsoft.xrm.onlinemanagementapi/set-crmlocktenantprotectedinstances?view=dynamics365ce-ps).
+To lock a tenant using the PowerShell cmdlet, see [Set-CrmLockTenantProtectedInstances](/powershell/module/microsoft.xrm.onlinemanagementapi/set-crmlocktenantprotectedinstances?view=dynamics365ce-ps).
   
 #### Unlock locked environments
 To unlock environments you must first [upload](#upload-a-key-pfx-or-byok) and then [activate](#activate-an-encryption-key-for-a-tenant) the tenant encryption key with the same key that was used to [lock the tenant](#lock-the-tenant). Please note that locked environments do not get unlocked automatically once the key has been activated. Each locked environment has to be unlocked individually. 
@@ -253,7 +251,7 @@ To unlock environments you must first [upload](#upload-a-key-pfx-or-byok) and th
 5. Select **Confirm** to confirm that you want to unlock the environment. 
 6. Repeat the previous steps to unlock additional environments. 
 
-To unlock an environment using the PowerShell cmdlet, see [Set-CrmUnlockTenantProtectedInstance](https://docs.microsoft.com/powershell/module/microsoft.xrm.onlinemanagementapi/set-crmunlocktenantprotectedinstance?view=dynamics365ce-ps).
+To unlock an environment using the PowerShell cmdlet, see [Set-CrmUnlockTenantProtectedInstance](/powershell/module/microsoft.xrm.onlinemanagementapi/set-crmunlocktenantprotectedinstance?view=dynamics365ce-ps).
 
 
 ## Environment database operations 

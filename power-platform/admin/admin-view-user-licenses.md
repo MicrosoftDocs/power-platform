@@ -1,6 +1,6 @@
 ---
-title: Download a list of active users in your tenant | Microsoft Docs
-description: In this quickstart, you learn how to download a list of active users in your tenant
+title: "Download a list of active users in your tenant"
+description: "Download a report for a list of active users in your tenant."
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart

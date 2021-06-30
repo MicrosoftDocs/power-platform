@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/18/2020
+ms.date: 06/01/2021
 ms.author: jimholtz
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -34,11 +34,11 @@ The **App Gurus** page gives you an overview of which makers are using which con
 
 ![App Gurus](media/pb-21.png "App Gurus")
 
-## Flow Gurus
+<!--## Flow Gurus
 
 The **Flow Gurus** page gives you an overview of how many actions and connectors your makers are using for each flow. Makers with complex flows that have multiple actions or use multiple connectors are likely more advanced and might turn into your champions; makers who use very few connectors or mostly template flows are likely at the beginning of their journey and might need a helping hand.
 
-![Flow Gurus](media/pb-28.png "Flow Gurus")
+![Flow Gurus](media/pb-28.png "Flow Gurus")-->
 
 ## App Shares
 

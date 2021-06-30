@@ -17,8 +17,6 @@ search.app:
 ---
 # About the Microsoft Cloud Japan datacenter
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
  If you’re an existing customer with a billing address mapping to a new data center region, review the information in this topic to understand the move process:  
   
 <a name="BKMK_Expansion"></a>   
@@ -76,7 +74,7 @@ A support engineer will assist you in verifying required prerequisites and provi
  You must be updated to [!INCLUDE[pn_crm_online_2015_update](../includes/pn-crm-online-2015-update.md)] or later before migrating to the Japan datacenter.  Customers can schedule their update.  
   
 ### If I have both Microsoft 365 services and customer engagement apps, how will migration be handled?  
- The move of each service will be handled separately and customers will be fully supported even if one service has been moved and the other has not. Customers will be able to choose their move date and time. [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] will work with the customer to schedule the move. For [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)], customers will be notified through the message center about the move timeline, but the large number of existing customers means that individual scheduling is not possible. For [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] scheduling and migration, see [Moving core data to new Microsoft 365 datacenter geos](https://technet.microsoft.com/library/dn878163.aspx).  
+ The move of each service will be handled separately and customers will be fully supported even if one service has been moved and the other has not. Customers will be able to choose their move date and time. [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] will work with the customer to schedule the move. For [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)], customers will be notified through the message center about the move timeline, but the large number of existing customers means that individual scheduling is not possible. For [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] scheduling and migration, see [Moving core data to new Microsoft 365 datacenter geos](/microsoft-365/enterprise/moving-data-to-new-datacenter-geos).  
   
 ### Can I move Microsoft 365 and customer engagement apps at the same time?  
  The move process for each service is handled separately, but the  move can be scheduled to coincide with the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] move if requested.  
@@ -84,7 +82,7 @@ A support engineer will assist you in verifying required prerequisites and provi
 ### Will multi-geo environments be available to customers in Japan?  
  Multi-geo environments will be supported for Japan. Availability of multi-geo environment support will be limited in the initial rollout to a fixed number of eligible customers upon request, and we’ll continue to expand over time.  
   
- For additional guidance regarding multiple tenants and multiple environments, see [Multiple online environments or tenants](https://docs.microsoft.com/dynamics365/admin/multiple-online-instances-tenants). This link will be updated with the [!INCLUDE[pn_crm_online_2015_update](../includes/pn-crm-online-2015-update.md)] launch.  
+ For additional guidance regarding multiple tenants and multiple environments, see [Multiple online environments or tenants](/dynamics365/admin/multiple-online-instances-tenants). This link will be updated with the [!INCLUDE[pn_crm_online_2015_update](../includes/pn-crm-online-2015-update.md)] launch.  
   
 ### How will this affect users or partners?  
  Regardless of where customer engagement apps are provisioned, you’ll have the ability to determine which of your users will have access to those services based on how you configure customer engagement apps.  

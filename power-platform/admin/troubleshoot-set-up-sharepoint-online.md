@@ -5,7 +5,7 @@ author: Mattp123
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/17/2021
+ms.date: 06/10/2021
 ms.author: matp
 search.audienceType: 
   - admin
@@ -19,8 +19,6 @@ search.app:
 
 <!-- legacy procedure -->
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 This topic explains how to fix common issues that may occur with SharePoint document management.
 
 ## Missing Documents button - validate and fix 
@@ -31,7 +29,7 @@ If **Documents** is missing from entities such as account, use the following to 
 
 1. Make sure you have the System Administrator security role or equivalent permissions.
     Check your security role:
-    a. Follow the steps in [View your user profile](https://docs.microsoft.com/powerapps/user/view-your-user-profile).
+    a. Follow the steps in [View your user profile](/powerapps/user/view-your-user-profile).
     b. Don't have the correct permissions? Contact your system administrator.
 
 2. Fix the missing **Documents** button. Follow these steps:
@@ -62,11 +60,11 @@ If FetchXML or LayoutXML are malformed, use the following to restore.
 
 1. Make sure you have the System Administrator security role or equivalent permissions.
     Check your security role:
-    1. Follow the steps in [View your user profile](https://docs.microsoft.com/powerapps/user/view-your-user-profile).
+    1. Follow the steps in [View your user profile](/powerapps/user/view-your-user-profile).
     2. Don't have the correct permissions? Contact your system administrator.
 
 2. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**, go to **Settings** > **Customizations** > **Solutions**. 
-3. Create a solution (named SharePointDocumentSolution). For more information, see [Create a solution](https://docs.microsoft.com/powerapps/maker/canvas-apps/add-app-solution).
+3. Create a solution (named SharePointDocumentSolution). For more information, see [Create a solution](/powerapps/maker/canvas-apps/add-app-solution).
 4. Choose **Entities** > **Add Existing** > **Entity** > find and add **SharePoint Document** entity  (select all fields, forms, views). 
 5. Select **Save** and **Close**.
 6. Publish all customizations.
@@ -101,6 +99,7 @@ If FetchXML or LayoutXML are malformed, use the following to restore.
             <cell name="fullname" width="300" imageproviderfunctionname="DocumentManagement.FileTypeIcon.loadSharePointFileTypeIcon" imageproviderwebresource="$webresource:SharePoint_main_system_library.js" />
             <cell name="modified" width="150" />
             <cell name="sharepointmodifiedby" width="150" />
+            <cell name="locationname" width="150" /> 
             <cell name="relativelocation" width="200" />
             <cell name="servicetype" width="90" />
             <cell name="documentid" ishidden="1" />
@@ -145,6 +144,7 @@ If FetchXML or LayoutXML are malformed, use the following to restore.
         <attribute name="editurl" />
         <attribute name="locationid" />
         <attribute name="iconclassname" />
+        <attribute name="locationname" /> 
         <order attribute="relativelocation" descending="false" />
         <filter>
           <condition attribute="isrecursivefetch" operator="eq" value="0" />

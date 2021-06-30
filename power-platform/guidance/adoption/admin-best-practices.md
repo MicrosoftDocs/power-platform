@@ -28,7 +28,7 @@ In this section, we'll explore some best practices to follow when establishing a
 
 > [!div class="checklist"]
 > * [Designate the Microsoft Power Platform admin role](pp-admin.md)
-> * [Manage users](https://docs.microsoft.com/power-platform/admin/create-users-assign-online-security-roles)
+> * [Manage users](../../admin/create-users-assign-online-security-roles.md)
 > * [Plan and manage license and capacity](capacity-and-licenses.md)
 > * [Establish an environment strategy](environment-strategy.md)
 > * [Manage Microsoft Dataverse for Teams environments](teams-environment-strategy.md)
@@ -39,7 +39,7 @@ In this section, we'll explore some best practices to follow when establishing a
 > [!div class="checklist"]
 > * [Establish tenant and environment level DLP Policies](dlp-strategy.md)
 > * [Set up Azure AD conditional access](conditional-access.md)
-> * [Enable cross-tenant isolation](https://docs.microsoft.com/power-platform/admin/cross-tenant-restrictions)
+> * [Enable cross-tenant isolation](../../admin/cross-tenant-restrictions.md)
    :::column-end:::
    :::column span="":::
       <img src="media/i_alert.svg" alt="Overview icon" width="80"/><br><br>**Monitor & Alert**
@@ -56,7 +56,7 @@ In this section, we'll explore some best practices to follow when establishing a
 
 ## Related resources
 
-[Microsoft Power Platform admin guide](/power-platform/admin/admin-documentation)<Br>
+[Microsoft Power Platform admin guide](../../admin/admin-documentation.md)<Br>
 [Microsoft Power Apps and Power Automate Admin Whitepaper](https://aka.ms/powerappsadminwhitepaper)
 
 

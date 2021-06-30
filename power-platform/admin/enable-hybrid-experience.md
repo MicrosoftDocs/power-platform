@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/17/2021
+ms.date: 05/20/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -19,17 +19,14 @@ search.app:
 
 <!-- legacy procedure -->
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 Most of the core functionalities of sales and customer service have moved to the [Unified Interface](about-unified-interface.md) experience. Some of the features that are not yet on Unified Interface can now be accessed in the Unified Interface client. 
 
 The following features are not yet present in Unified Interface but can be enabled for display as legacy dialogs in Unified Interface through the hybrid experience.
 
-- [Advanced Find](https://docs.microsoft.com/powerapps/user/advanced-find) 
+- [Advanced Find](/powerapps/user/advanced-find) 
 - Bulk edit
-- [Merge records](https://docs.microsoft.com/powerapps/user/merge-duplicate-records)
-- [Record sharing](https://docs.microsoft.com/powerapps/user/assign-or-share-records)
-- [Audit History](https://docs.microsoft.com/powerapps/developer/common-data-service/auditing-overview)
+- [Record sharing](/powerapps/user/assign-or-share-records)
+- [Audit History](/powerapps/developer/common-data-service/auditing-overview)
 - All options under **Set Personal Options** (![Settings gear](media/settings-gear-icon.png "Settings gear"))
 - Reports
 

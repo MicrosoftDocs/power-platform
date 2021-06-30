@@ -43,7 +43,7 @@ It can take from 30 minutes to 6 hours for a user's status to be updated in an e
 > ![Run diagnostics results](media/run-diagnostics.png "Run diagnostics results")
 
 > [!NOTE]
-> A user deleted from the Microsoft 365 admin center is put on the **Deleted user** list for 30 days and can be restored as directed in [Restore a user](https://docs.microsoft.com/microsoft-365/admin/add-users/restore-user?view=o365-worldwide).
+> A user deleted from the Microsoft 365 admin center is put on the **Deleted user** list for 30 days and can be restored as directed in [Restore a user](/microsoft-365/admin/add-users/restore-user?view=o365-worldwide).
 
 ## View the list of disabled users
 
@@ -68,6 +68,5 @@ It can take from 30 minutes to 6 hours for a user's status to be updated in an e
 
 ### See also
 
-[Delete a user from your organization](https://docs.microsoft.com/microsoft-365/admin/add-users/delete-a-user?view=o365-worldwide) <br />
+[Delete a user from your organization](/microsoft-365/admin/add-users/delete-a-user?view=o365-worldwide) <br />
 [Troubleshooting: Common user access issues](troubleshooting-user-needs-read-write-access-organization.md)
-

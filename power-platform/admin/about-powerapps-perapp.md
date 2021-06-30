@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/08/2021
+ms.date: 06/22/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -17,11 +17,9 @@ search.app:
 ---
 # About Power Apps per app plans
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 Power Apps per app plan allows individual users to run **two applications** and **one portal** for a specific business scenario in a **specific environment** based on the full capabilities of Power Apps. This plan provides an easy way for users to get started with Power Apps before broader scale adoption. These are available to purchase from the Office admin center and you can allocate add-ons in the [Capacity](https://admin.powerplatform.microsoft.com/resources/capacity) area in the Microsoft Power Platform admin center.<!-- Edit note: Should Office be changed to Microsoft 365. It is used elsewhere. --> More information: [Capacity add-ons](capacity-add-on.md).
 
-The following release plan topic announces the availability of this feature: [New licensing options for Power Automate standalone paid plans](https://docs.microsoft.com/power-platform-release-plan/2019wave2/power-automate/new-licensing-options-power-automate-standalone-paid-plans).
+The following release plan topic announces the availability of this feature: [New licensing options for Power Automate standalone paid plans](/power-platform-release-plan/2019wave2/power-automate/new-licensing-options-power-automate-standalone-paid-plans).
 
 > [!IMPORTANT]
 > - Although, Power Apps per app plans appear in the [Microsoft 365 admin center](https://admin.microsoft.com), you shouldn't attempt to assign them to users there. Power Apps per app plans must be allocated to an environment (and not to users) by an admin in the [Power Platform admin center](https://admin.powerplatform.microsoft.com). After per app plans are allocated to an environment, they are assigned when apps are shared with users in the environment.
@@ -84,6 +82,8 @@ Follow these steps to turn off assigning per app plans for users when an app is 
    ![Pass assignment](media/pass-assignment2.png "Pass assignment")
 
 > [!IMPORTANT]
+> If per app plans are not allocated to the environment the app is installed in, the toggle is disabled. 
+> 
 > Turning off the per app plan is currently available only for canvas apps. Model-driven apps and portals will have this ability in the future.
 
 
@@ -101,13 +101,13 @@ After completing the first three steps, you can now share apps.
 
 ### Sharing model-driven apps
 
-Share the model-driven app. See [Share a model-driven app with Power Apps](https://docs.microsoft.com/powerapps/maker/model-driven-apps/share-model-driven-app). 
+Share the model-driven app. See [Share a model-driven app with Power Apps](/powerapps/maker/model-driven-apps/share-model-driven-app). 
 
 > [!IMPORTANT]
 > When the user launches the app, we create the user in the required Microsoft Dataverse environment. Users will not get added at the time of app sharing.
 
 ### Sharing canvas apps
-To share canvas apps, see [Share a canvas app in Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/share-app).  
+To share canvas apps, see [Share a canvas app in Power Apps](/powerapps/maker/canvas-apps/share-app).  
 
 ## Consumption of per app licensing
 
@@ -124,21 +124,17 @@ The per app license gives a user access to two Power Apps and one portal for a s
 
 ### Reducing per app capacity to zero
 If you allocate per app capacity to an environment and later reduce per app capacity to zero, users that were added to Dataverse while per app capacity was greater than zero will **not** get disabled in Dataverse. However, these users won’t be able to launch apps since there is no per app capacity allocated to the environment. Admins should remove the role of the user they do not intend to access the platform.
-
-### Disabled user account
-
-If a user account is disabled in an environment, adding per app capacity, sharing the app with the user, and the user launching the app will **not** enable the user. We are working to address this issue. 
-
+ 
 ### Trial prompt while making app with premium connection
 Users in organizations with only Power Apps per app plan may see a trial prompt when creating apps that use premium connections; for example, an app connects to SQL using a gateway. The app creator is entitled to add premium connections to their app. However, the app creator must sign up for the trial until the trial prompt is removed in the premium connection experience. 
 
 ## FAQ
 
 ### I assigned the baseline access license to my users as a workaround suggested earlier. Now that this workaround is not needed, what should I do to ensure my users are setup correctly? 
-As of October, 2020, the baseline access license is no longer required. Ensure that the per app capacity is allocated to the environment. After this step, you can remove the baseline access license from the user using [these instructions](https://docs.microsoft.com/microsoft-365/admin/manage/remove-licenses-from-users?view=o365-worldwide). 
+As of October, 2020, the baseline access license is no longer required. Ensure that the per app capacity is allocated to the environment. After this step, you can remove the baseline access license from the user using [these instructions](/microsoft-365/admin/manage/remove-licenses-from-users?view=o365-worldwide). 
 
-### What happens if I assign a user the Power Apps per user license when earlier they were using apps by consuming the per app license? 
-Once the user is allocated a Power Apps per user license, when per app license consumption reports are available they will show per app licenses aren’t consumed by users that are assigned a per user plan.
+### What happens if I assign a user the Power Apps per user license when earlier they were using apps with the per app license? 
+Once the user is allocated a Power Apps per user license, per app license consumption reports will show per app licenses aren’t being consumed.
 
 ### When will I be able to see the list of users who are using the Power Apps per app license?
 We are currently working on this report. Please check back again for more details. This report will be available in the Power Platform admin center. 
@@ -167,5 +163,7 @@ This is an artifact of previous, but no longer required, licenses being assigned
 **Mitigation steps**:
 The maker should sign up for the trial to proceed with creating the connection that uses a gateway. 
 
+### Are users with a disabled account in an environment able to use per app plan? 
+Yes. If a user account is disabled in an environment, adding per app capacity, sharing the app with the user, and the user launching the app will enable the user. 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

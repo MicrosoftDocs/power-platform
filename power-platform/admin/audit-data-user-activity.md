@@ -70,7 +70,7 @@ This task requires the system administrator or customizer security role or equiv
    | Set the retention policy for these logs   | Default: 30 days.   |
    | Set a custom retention policy | Maximum: 100,000 days  |  
 
-   When new features are deployed, the audit retention period is set to **Forever** for all Dataverse environments with existing audit data. The default audit retention period is 30 days for new environments and existing environments without any audit data. You can also change the audit retention value using the [Dataverse Web API](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview). 
+   When new features are deployed, the audit retention period is set to **Forever** for all Dataverse environments with existing audit data. The default audit retention period is 30 days for new environments and existing environments without any audit data. You can also change the audit retention value using the [Dataverse Web API](/powerapps/developer/common-data-service/webapi/overview). 
 
    Each audit log is stamped with the currently active retention period. Changing the retention period will not change already existing audit logs and is only applied to newly created audit logs. 
 
@@ -108,7 +108,7 @@ System administrators can see activity for the entities that are enabled for aud
    - Select the **Refresh** button  ![Refresh button](media/html-viewer-grid-refresh.png "Refresh button") to view the most recent activity. 
 
 > [!IMPORTANT]
-> Large attribute values, such as [Email.description](https://docs.microsoft.com/powerapps/developer/common-data-service/reference/entities/email) or [Annotation](https://docs.microsoft.com/powerapps/developer/common-data-service/reference/entities/annotation), are limited (capped) at 5KB or ~5,000 characters. A capped attribute value can be recognized by three dots at the end of the text, for example, “lorem ipsum, lorem ip…”.
+> Large attribute values, such as [Email.description](/powerapps/developer/common-data-service/reference/entities/email) or [Annotation](/powerapps/developer/common-data-service/reference/entities/annotation), are limited (capped) at 5KB or ~5,000 characters. A capped attribute value can be recognized by three dots at the end of the text, for example, “lorem ipsum, lorem ip…”.
 
 ## Enable or disable entities and fields for auditing  
 System administrators or customizers can change the default audit settings for entities and for specific fields for an entity.  

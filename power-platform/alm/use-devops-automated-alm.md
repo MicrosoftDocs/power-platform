@@ -22,7 +22,7 @@ This scenario aims at a situation where you're shipping your solutions manually 
 
 For this scenario, you should:
 
-1. Consider adopting a source code control system like [Azure DevOps](https://docs.microsoft.com/azure/devops/?view=azure-devops). Azure DevOps provides developer services for support teams to plan work, collaborate on code development, and build and deploy applications.
+1. Consider adopting a source code control system like [Azure DevOps](/azure/devops/?view=azure-devops). Azure DevOps provides developer services for support teams to plan work, collaborate on code development, and build and deploy applications.
 
 2. Export a solution from your development environment containing your apps and customizations, unpack your solution, and store the components in your source control system. Use Azure Pipelines to manage your components, and then deploy them to the target environment for testing. Finally, deploy to the production environment for user consumption.
 

@@ -1,6 +1,6 @@
 ---
-title: "Environment strategy for ALM | Microsoft Docs"
-description: "Environment strategy considerations for application lifecycle management (ALM) with Microsoft Power Platform."
+title: "ALM environment strategy considerations"
+description: "To follow application lifecycle management principles in Power Platform, consider these factors when determining your ALM environment needs and strategy."
 keywords: 
 author: Mattp123
 ms.author: matp
@@ -53,7 +53,7 @@ should include using a test environment prior to deploying anything to the produ
 environment. This ensures that you have a place to test your app, but also
 ensures that the deployment itself can be tested. 
 
-More information: [Establishing an environment strategy for Microsoft Power Platform](/power-platform/guidance/adoption/environment-strategy)
+More information: [Establishing an environment strategy for Microsoft Power Platform](../guidance/adoption/environment-strategy.md)
 
 ### See also
 [Solution concepts](solution-concepts-alm.md)

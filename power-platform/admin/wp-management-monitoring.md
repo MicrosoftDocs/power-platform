@@ -18,21 +18,23 @@ search.app:
 ---
 # Management and monitoring
 
-This topic focuses on the tools you can use to manage and monitor what is going on in your environments. It is important to understand that each company has its own operational model and requirements around a citizen app development platform. Fulfilling those requirements using the platform capabilities in terms of custom apps or flows can be seen as a best practice.
+This article discusses the tools that you can use to manage and monitor what is going on in your environments. It's important for you to understand that each organization has its own operational model and requirements for creating an app development platform.
 
-Out-of-the-box tooling around monitoring, alert, and actions falls into the following three categories:
+Tooling services that provide features specific to monitoring, alert, and actions fall into the following categories:
 
-**Admin portals** offer an interactive experience for performing administrative tasks. This is typically considered the primary path for completing administrative activities. From a monitoring point of view, this channel is used mostly for ad-hoc interactive discovery. We're working toward a single admin interface ([https://aka.ms/ppac](https://aka.ms/ppac)) for Microsoft Power Platform. Currently, there are admin portals for Microsoft Power Platform components, such as Power BI, Power Automate, and Power Apps. Additionally, some admin tasks are done in the Microsoft 365 admin center ([https://admin.microsoft.com/](https://admin.microsoft.com/))
+- **Admin portals** offer an interactive experience for doing administrative tasks. 
 
-**PowerShell cmdlets** offer a way to automate both management and monitoring tasks using PowerShell. These cmdlets can be used in a sequence to automate multistep administrative actions. From a roadmap perspective, PowerShell cmdlets will be available first, before enabling administration capabilities, via the web app interface or via the management and admin connectors. Check out [https://www.powershellgallery.com/](https://www.powershellgallery.com/) to get the latest package.
+Portals are typically considered the primary path for completing administrative activities. For monitoring, this channel is used mostly for ad-hoc interactive discovery. Microsoft is working on providing a single admin interface ([https://aka.ms/ppac](https://aka.ms/ppac)) for the Power Platform. Currently, the Microsoft Power Platform components include Power BI, Power Automate, and Power Apps. Also, some admin tasks are completed in the Microsoft 365 admin center ([https://admin.microsoft.com/](https://admin.microsoft.com/)).
 
-**Management and Admin Connectors** offer the ability to use the platform's own tools to manage and monitor itself. Part of the out-of-the-box available 275+ connectors and approval process capabilities are five admin-specific connectors you should be familiar with.
+**PowerShell cmdlets** offer a way to automate both management and monitoring tasks using PowerShell. These cmdlets can be used in a sequence to automate multistep administrative actions. From a roadmap perspective, PowerShell cmdlets are available first, before enabling administration capabilities. These are typically released via the web app interface or via the management and admin connectors. Check out [https://www.powershellgallery.com/](https://www.powershellgallery.com/) to get the latest package.
 
-- **Power Automate Management connector** is specifically designed to help with administrative management and monitoring ([https://docs.microsoft.com/connectors/flowmanagement](https://docs.microsoft.com/connectors/flowmanagement/)).
-- **Microsoft Flow for Admins** allows you to perform typical admin actions, such as disabling a flow or deleting a flow ([https://docs.microsoft.com/connectors/microsoftflowforadmins/](https://docs.microsoft.com/connectors/microsoftflowforadmins/)).
-- **Power Apps for Admins connector** can be used to set permissions on Power Apps or set permissions to a certain connector being used by this app ([https://docs.microsoft.com/connectors/powerappsforadmins/](https://docs.microsoft.com/connectors/powerappsforadmins/)).
-- **PowerApps for App Makers** can be used by the makers themselves, though some actions being an overlay to administrational tasks, such as settings permissions to a Power Apps app as mentioned previously ([https://docs.microsoft.com/connectors/powerappsforappmakers/](https://docs.microsoft.com/connectors/powerappsforappmakers/)).
-- **Power Platform for Admins** can be used to perform tasks against platform components, such as creating an environment or provisioning a Microsoft Dataverse database or creating a DLP policy for a specific environment ([https://docs.microsoft.com/connectors/powerplatformforadmins/](https://docs.microsoft.com/connectors/powerplatformforadmins/)).
+**Management and Admin Connectors** offer the ability to use the platform's own tools to manage and monitor itself. Part of the released available 275+ connectors and approval process capabilities are five admin-specific connectors you should be familiar with.
+
+- **Power Automate Management connector** is designed to help with administrative management and monitoring ([https://docs.microsoft.com/connectors/flowmanagement](/connectors/flowmanagement/)).
+- **Microsoft Flow for Admins** allows you to complete typical admin actions, such as disabling a flow and deleting a flow ([https://docs.microsoft.com/connectors/microsoftflowforadmins/](/connectors/microsoftflowforadmins/)).
+- **Power Apps for Admins connector** can be used to set permissions on Power Apps or set permissions to a certain connector being used by this app ([https://docs.microsoft.com/connectors/powerappsforadmins/](/connectors/powerappsforadmins/)).
+- **PowerApps for App Makers** can be used by the makers themselves, though some actions being an overlay to administrational tasks, such as settings permissions to a Power Apps app as mentioned previously ([https://docs.microsoft.com/connectors/powerappsforappmakers/](/connectors/powerappsforappmakers/)).
+- **Power Platform for Admins** can be used to perform tasks against platform components, such as creating an environment or provisioning a Microsoft Dataverse database or creating a DLP policy for a specific environment ([https://docs.microsoft.com/connectors/powerplatformforadmins/](/connectors/powerplatformforadmins/)).
 
 Check out the Admin-in-a-day content that can be found in the GitHub repository ([https://aka.ms/powerapps/admininaday](https://aka.ms/powerapps/admininaday)) that walks you through examples via hands-on labs with step-by-step instructions. 
 

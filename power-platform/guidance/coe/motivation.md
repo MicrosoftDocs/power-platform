@@ -42,10 +42,10 @@ Admin and governance tools fall into three broad categories:
    :::column-end:::
    :::column span="":::
        **Platform extensions** <br>Four connectors provide access to the same APIs that the products and admin centers use. These have been exposed through the connectors library to give users the ability to create custom solutions to execute administrative or governance-related tasks.
-       - [Power Platform for Admins](https://docs.microsoft.com/connectors/powerplatformforadmins/)
-       - [Power Apps for Admins](https://docs.microsoft.com/connectors/powerappsforadmins/)
-       - [Power Automate Management](https://docs.microsoft.com/connectors/flowmanagement/)
-       - [Power Apps for Makers](https://docs.microsoft.com/connectors/powerappsforappmakers/)
+       - [Power Platform for Admins](/connectors/powerplatformforadmins/)
+       - [Power Apps for Admins](/connectors/powerappsforadmins/)
+       - [Power Automate Management](/connectors/flowmanagement/)
+       - [Power Apps for Makers](/connectors/powerappsforappmakers/)
    :::column-end:::
     :::column span="":::
       **Templates and customizations** <br>The [CoE Starter Kit](setup.md) falls into this category. The CoE templates use the admin connectors in combination with other connectors and formulas to achieve specific goals. The nature of a template is to provide a good solution for a specific task, but it might not have the exact functionality that you need. You might have to adjust it to achieve what you're looking for.

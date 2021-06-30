@@ -29,7 +29,7 @@ Enabling cross-tenant isolation for Power Apps and Power Automate requires raisi
 
 ## Azure AD tenant restrictions
 
-Tenant restrictions can also control access to all SaaS cloud applications, based on the Azure AD tenant the applications use for single sign-on. More information: [Use tenant restrictions to manage access to SaaS cloud applications](https://docs.microsoft.com/azure/active-directory/manage-apps/tenant-restrictions)
+Tenant restrictions can also control access to all SaaS cloud applications, based on the Azure AD tenant the applications use for single sign-on. More information: [Use tenant restrictions to manage access to SaaS cloud applications](/azure/active-directory/manage-apps/tenant-restrictions)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

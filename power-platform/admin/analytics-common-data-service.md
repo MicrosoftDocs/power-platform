@@ -1,11 +1,11 @@
 ---
-title: "Microsoft Dataverse analytics   | MicrosoftDocs"
-description: Microsoft Dataverse analytics 
+title: "View and download Dataverse analytics"
+description: "Access Dataverse analytics from the Power Platform admin center to view and download metrics such as active users, API calls, executions, and more."
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/29/2020
+ms.date: 03/29/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -15,17 +15,15 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Microsoft Dataverse analytics 
-
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+# Microsoft Dataverse analytics
 
 We've improved how you view metrics for your organization. You no longer need to install or update a solution. Instead, you can view Dataverse analytics right from the Microsoft Power Platform admin center to quickly view adoption and user metrics for your organization. 
 
-To access these reports:<!-- Edit note: Do you still select Common Data Service and not Dataverse. -->
+To access these reports:
 
 1. Go to the navigation bar on the left side.
 2. Select **Analytics**.
-3. Select **Common Data Service**.
+3. Select **Dataverse**.
 4. View the reports on the right side.
 
 ## Who can view these reports?

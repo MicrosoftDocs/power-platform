@@ -30,8 +30,8 @@ The app launcher is built in to all Dynamics 365 and [!INCLUDE[pn_Office_365](..
 
   
 For other navigation information, including the new app switcher, see:
-- [Improved model-driven app header, sitemap, and app switching](https://docs.microsoft.com/power-platform-release-plan/2020wave2/power-apps/improved-model-driven-app-header-sitemap-app-switching)
-- [Basic navigation in a model-driven app](https://docs.microsoft.com/powerapps/user/navigation)
+- [Improved model-driven app header, sitemap, and app switching](/power-platform-release-plan/2020wave2/power-apps/improved-model-driven-app-header-sitemap-app-switching)
+- [Basic navigation in a model-driven app](/powerapps/user/navigation)
 
 ## Your business apps have moved
 The home for all of your business applications across Dynamics and the Microsoft Power Platform has moved from [https://home.dynamics.com](https://home.dynamics.com) to [office.com](https://office.com/apps). 

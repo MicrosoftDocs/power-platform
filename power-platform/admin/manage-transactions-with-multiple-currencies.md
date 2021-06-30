@@ -17,12 +17,10 @@ search.app:
 ---
 # Manage transactions with multiple currencies
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 Currencies determine the prices for products in the product catalog and the cost of transactions, such as sales orders. If your customers are spread across geographies, add their currencies to manage your transactions. Add the currencies that are most appropriate for your current and future business needs.  
 
 > [!NOTE]
-> If your environment is a [Microsoft Dataverse environment](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro), you are in the Power Platform admin center, and you select the **Currencies** page (**Environments** > [select environment] > **Settings** > **Business** > **Currencies**), the page will be blank. This is because setting a currency is not supported in Dataverse environments.
+> If your environment is a [Microsoft Dataverse environment](/powerapps/maker/common-data-service/data-platform-intro), you are in the Power Platform admin center, and you select the **Currencies** page (**Environments** > [select environment] > **Settings** > **Business** > **Currencies**), the page will be blank. This is because setting a currency is not supported in Dataverse environments.
 
 ## Add a currency 
 

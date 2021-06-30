@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.date: 02/17/2021
 author: revachauhan
 ms.author: rechauha
-ms.reviewer: jimholtz
+ms.reviewer: mkaur
 search.audienceType: 
   - admin
 search.app:
@@ -17,8 +17,6 @@ search.app:
   - Flow
 ---
 # Connect to Exchange Server (on-premises)
-
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 <!-- legacy procedure -->
 
@@ -34,17 +32,17 @@ With version 9.0., you can connect your customer engagement apps (Dynamics 365 S
 
      For more information on authentication, see:  
 
-   - Exchange Server 2013: [Authentication and EWS in Exchange](https://docs.microsoft.com/exchange/client-developer/exchange-web-services/authentication-and-ews-in-exchange)  
+   - Exchange Server 2013: [Authentication and EWS in Exchange](/exchange/client-developer/exchange-web-services/authentication-and-ews-in-exchange)  
 
-   - Exchange Server 2013: [Default settings for Exchange virtual directories](https://docs.microsoft.com/exchange/default-settings-for-exchange-virtual-directories-exchange-2013-help) 
+   - Exchange Server 2013: [Default settings for Exchange virtual directories](/exchange/default-settings-for-exchange-virtual-directories-exchange-2013-help) 
 
-   - Exchange Server 2016: [Default settings for Exchange virtual directories](https://docs.microsoft.com/Exchange/clients/default-virtual-directory-settings?view=exchserver-2019)
+   - Exchange Server 2016: [Default settings for Exchange virtual directories](/Exchange/clients/default-virtual-directory-settings?view=exchserver-2019)
 
-   - Exchange Server 2019: [Default settings for Exchange virtual directories](https://docs.microsoft.com/Exchange/clients/default-virtual-directory-settings?view=exchserver-2019)
+   - Exchange Server 2019: [Default settings for Exchange virtual directories](/Exchange/clients/default-virtual-directory-settings?view=exchserver-2019)
 
 3. **ApplicationImpersonation role**. You need to create and configure a service account with the **ApplicationImpersonation** role in [!INCLUDE[pn_Microsoft_Exchange](../includes/pn-microsoft-exchange.md)]. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Impersonation and EWS in Exchange](https://msdn.microsoft.com/library/office/dn722377\(v=exchg.150\).aspx).  
 
-4. **Secured connection**. The connection between customer engagement apps and Exchange must be encrypted via [TLS/SSL](https://docs.microsoft.com/windows/win32/secauthn/cipher-suites-in-schannel) and current [cipher suites](server-cipher-tls-requirements.md). 
+4. **Secured connection**. The connection between customer engagement apps and Exchange must be encrypted via [TLS/SSL](/windows/win32/secauthn/cipher-suites-in-schannel) and current [cipher suites](server-cipher-tls-requirements.md). 
 
 5. **Exchange Web Services (EWS)**. Connections to EWS must be allowed through the firewall. Often a reverse proxy is used for the exterior facing connection.  
 
@@ -120,7 +118,7 @@ With version 9.0., you can connect your customer engagement apps (Dynamics 365 S
 ## Configure mailboxes  
  To set mailboxes to use the default profile, you must first set the Server Profile and the delivery method for email, appointments, contacts, and tasks.  
 
- In addition to administrator permissions, you must have Read and Write privileges on the Mailbox entity to set the delivery method for the mailbox.  
+ In addition to administrator permissions, you must have Read and Write privileges on the Mailbox table to set the delivery method for the mailbox.  
 
  Select **one** of the following methods:  
 
