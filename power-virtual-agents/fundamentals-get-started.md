@@ -32,11 +32,7 @@ This quickstart guide takes you through the end-to-end experience of creating a 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mLcX ]
 >
 
-If you want to build a bot from a template, you can use our Employee Frequently Asked Questions (FAQ) chatbot template. 
-
-The template helps you easily create a bot to handle your employee’s most common questions by adding content that matches your business’s needs. Whether it’s HR, IT or other internal employee functions, the Employee FAQ bot template is a great place to start on your bot-building journey. Download the bot template from:
-
-- [Link to GitHub repo](#)
+In addition to this guide, you can also [download and use templates to help you create, develop, and publish chatbots with Power Virtual Agents](fundamentals-templates.md).
 
 
 ## Prerequisites
