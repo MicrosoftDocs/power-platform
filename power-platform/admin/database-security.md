@@ -28,7 +28,7 @@ An environment can have zero or one Dataverse database. The process for assignin
 
 Environments include predefined security roles that reflect common user tasks with access levels defined to match the security best-practice goal of providing access to the minimum amount of business data required to use the app. 
 
-These security roles can be assigned to the user, [owner team](manage-teams.md#about-owner-teams) and [group team](manage-group-teams.md). 
+These security roles can be assigned to the user, [owner team](manage-teams.md#types-of-teams) and [group team](manage-group-teams.md). 
 
 There is another set of security roles that is assigned to [application users](system-application-users.md). Those security roles are installed by our services and cannot be updated.
 
@@ -123,7 +123,7 @@ For environments with no Dataverse database, security roles can be assigned to i
 
 ## Assign security roles to users in an environment that has a Dataverse database 
 
-Security roles can be assigned to [owner teams](manage-teams.md#create-an-owner-team) and [Azure AD group teams](manage-group-teams.md), in addition to individual users. Before assigning a role to a user, [verify that the user is present in the environment in Enabled status](troubleshooting-user-needs-read-write-access-organization.md). [Add the user to the environment](add-users-to-environment.md) or [fix their status to become Enabled](troubleshooting-user-needs-read-write-access-organization.md) before assigning a role to them. You'll be able to assign a role as part of the process of adding the user. 
+Security roles can be assigned to [owner teams](manage-teams.md#types-of-teams) and [Azure AD group teams](manage-group-teams.md), in addition to individual users. Before assigning a role to a user, [verify that the user is present in the environment in Enabled status](troubleshooting-user-needs-read-write-access-organization.md). [Add the user to the environment](add-users-to-environment.md) or [fix their status to become Enabled](troubleshooting-user-needs-read-write-access-organization.md) before assigning a role to them. You'll be able to assign a role as part of the process of adding the user. 
 
 In general, a security role can only be assigned to users who have Enabled status. But if you need to assign a security role to users in the Disabled state, you can do so by enabling **allowRoleAssignmentOnDisabledUsers** in OrgDBOrgSettings. 
 
