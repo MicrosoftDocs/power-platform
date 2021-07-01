@@ -72,9 +72,9 @@ You use solutions to export bots from one environment and import them into anoth
 
     ![Chatbot selected in the list of bots](media/export-add-chatbot-solution.png "Chatbot selected in the list of bots")
 
-3.  If you are using [Skills](advanced-use-skills.md), remove the Skills' Environment variables **Current Value** by selecting **Remove from this solution**. 
-          
-     ![RemoveEnvironmentVariableCurrentValue](media/EnvVariableRemoveCurrentValue.png "Remove Environment Variable Current Value")     
+3.  If you're using [skills](advanced-use-skills.md), remove the skill's environment variables **Current Value** by selecting **Remove from this solution**. 
+     
+     :::image type="content" source="media/EnvVariableRemoveCurrentValue.png" alt-text="Screenshot showing the Remove from this solution button.":::
 
 > [!NOTE]
 > Removing a bot from a solution doesn't remove its components from a solution. Removal of the components should be done separately.  
@@ -155,7 +155,7 @@ The export can take several minutes to complete. Once finished, a .zip file will
 
 1. Use the filter menu to select **Chatbot**. You can then select the bot's name to open the bot in the Power Virtual Agents portal. You can also navigate to the Power Virtual Agents web app directly and open the imported bot under the environment you imported to. You will also see the bot’s current solution name for easy access to solutions.  
 
-    ![List of bots and environments in Power Virtual Agents](media/BotPickerSolutionName.png "List of bots and environments in Power Virtual Agents")
+    :::image type="content" source="media/BotPickerSolutionName.png" alt-text="List of bots and environments in Power Virtual Agents.":::
 
 > [!IMPORTANT]
 > You must [publish your newly imported bot](publication-fundamentals-publish-channels.md) before it can be shared.
