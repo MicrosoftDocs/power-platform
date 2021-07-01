@@ -15,8 +15,6 @@ ms.collection: virtualagent
 
 # Export and import bots using solutions
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
-
 You can export and import bots using [solutions](/power-platform/alm/solution-concepts-alm) so you can move your bots across multiple [environments](/power-platform/admin/environments-overview).
 
 This can be useful if you use different environments for different purposes, or you employ ring-deployment methodologies. For example, you might have a specific environment where you internally test and validate bots, another environment where you test bots for only a subset of users, and a final production environment where you share bots with customers and end users.
@@ -74,6 +72,9 @@ You use solutions to export bots from one environment and import them into anoth
 
     ![Chatbot selected in the list of bots](media/export-add-chatbot-solution.png "Chatbot selected in the list of bots")
 
+3.  If you're using [skills](advanced-use-skills.md), remove the skill's environment variables **Current Value** by selecting **Remove from this solution**. 
+     
+     :::image type="content" source="media/EnvVariableRemoveCurrentValue.png" alt-text="Screenshot showing the Remove from this solution button.":::
 
 > [!NOTE]
 > Removing a bot from a solution doesn't remove its components from a solution. Removal of the components should be done separately.  
@@ -144,22 +145,17 @@ The export can take several minutes to complete. Once finished, a .zip file will
 
 
 1. If your bot has any of the following, you need to configure them after importing for the first time:
-
-    - [Power Automate flows](/power-automate/import-flow-solution): Configure any flow connections for the first time. You don't need to reconfigure the flow connections for subsequent imports of the bot when updating the flow.  
-    
-      If you import a solution containing a bot that leverages Power Automate, and any new flows are included in that import operation, you'll need to visit the Power Virtual Agents portal and select the bot. 
-      
-    - [Skills](advanced-use-skills.md): Add the values for the skills’ environment variables.
+     
     - [End-user authentication](configuration-end-user-authentication.md): Configure end-user authentication in the bot so it can take actions on the user’s behalf. The bot can be set up with any [OAuth2 identity provider](/azure/active-directory/develop/v2-oauth2-auth-code-flow), such as Azure Active Directory (Azure AD), a Microsoft account, or Facebook.
     - [Customer service hand-off](advanced-hand-off.md): Configure external services that hand off bot escalations to a human agent.
-    - Multichannel: Configure external channels, such as Facebook, and internal non-Power Virtual Agents services, such as Microsoft Teams:
+    - Multichannel: Configure external channels, such as Facebook and Microsoft Teams:
 
-        - [Facebook documentation](publication-add-bot-to-facebook.md)
         - [Microsoft Teams documentation](publication-add-bot-to-microsoft-teams.md)
+        - [Facebook documentation](publication-add-bot-to-facebook.md)
 
-1. Use the filter menu to select **Chatbot**. You can then select the bot's name to open the bot in the Power Virtual Agents portal. You can also navigate to the portal directly and open the imported bot under the environment you imported to.
+1. Use the filter menu to select **Chatbot**. You can then select the bot's name to open the bot in the Power Virtual Agents portal. You can also navigate to the Power Virtual Agents web app directly and open the imported bot under the environment you imported to. You will also see the bot’s current solution name for easy access to solutions.  
 
-    ![List of bots and environments in Power Virtual Agents](media/export-bot-picker.png "List of bots and environments in Power Virtual Agents")
+    :::image type="content" source="media/BotPickerSolutionName.png" alt-text="List of bots and environments in Power Virtual Agents.":::
 
 > [!IMPORTANT]
 > You must [publish your newly imported bot](publication-fundamentals-publish-channels.md) before it can be shared.
