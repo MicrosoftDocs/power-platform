@@ -15,7 +15,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Web application requirements
+# Web application requirements 
 
 This section lists the hardware and software requirements for model-driven apps and mobile device client applications.  
 
@@ -64,6 +64,8 @@ To find the latest release for these web browsers, visit the software manufactur
 
 Internet Explorer support ends Aug 17th, 2021 and Microsoft Edge Legacy support ended March 2021.  We recommend that you switch to Microsoft Edge (based on Chromium). See [Support end for Internet Explorer](support-end-internet-explorer.md) for more details on the support ending for Internet Explorer and Microsoft Edge Legacy with model-driven apps. 
 
+## Support for older browser versions
+
 Starting with 2021 Wave 2, users on older browser versions will see the following warning message.  This will be updated with each release to ensure user performance and allow the product to take advantage of newest browser capabilities for a better experience. 
 
 :::image type="content" source="media/run-modern-browser-error.png" alt-text="Run modern browser error message":::
@@ -72,7 +74,7 @@ You can avoid this by moving to a newer version browser:
 
 - Microsoft Edge (based on Chromium) version 83 or greater 
 - Chrome version 83 or greater 
-- Firefox version 67 or greater 
+- Firefox version 76 or greater 
 
 ## Supported versions of Office  
 To use model-driven apps and customer engagement apps (such as Dynamics 365 Sales and Customer Service) with [!INCLUDE[pn_MS_Office](../includes/pn-ms-office.md)] integration features, such as Export to Excel and Mail Merge, you must have one of the following [!INCLUDE[pn_MS_Office](../includes/pn-ms-office.md)] versions on the computer that is running the web application:  

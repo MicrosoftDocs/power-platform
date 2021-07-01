@@ -2,7 +2,6 @@
 title: "Supported web browsers and mobile devices  | MicrosoftDocs"
 description: Supported web browsers and mobile devices 
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
@@ -35,7 +34,7 @@ For more detailed information about supported browsers, see [Web application req
   
 For a mobile device, such as an iPad or smartphone, the following apps are available for model-driven apps and Dynamics 365 apps (such as Dynamics 365 Sales and Dynamics 365 Marketing):
 
-- [Power Apps mobile](/powerapps/user/run-canvas-and-model-apps-on-mobile) app  
+- [Power Apps mobile app](/powerapps/user/run-canvas-and-model-apps-on-mobile)   
 - [Dynamics 365 for phones and Dynamics 365 for tablets](/dynamics365/mobile-app/install-dynamics-365-for-phones-and-tablets)
   
 > [!NOTE]
