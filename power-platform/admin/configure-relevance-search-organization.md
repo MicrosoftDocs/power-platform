@@ -63,36 +63,6 @@ To enable Relevance Search, do the following:
 
 4.	Select **Save**.
 
-## Enable the new Relevance Search experience
-
-The new search experience is available as a feature setting in the Power Platform admin Center. It combines the strength of Relevance Search as a service, with a user interface that is intuitive, familiar, and easy to use. When the Use new search experience setting is turned on, it will enable the new experience to all the apps in the environment.
-
-> [!NOTE]
-> The **Use new search experience feature** setting is only available for environments where Relevance Search is already turned on. For environments where Relevance Search has never been not turned on, the setting **Use new search experience** will not be shown and the new experience is turned on by default.
-> 
-> If you opt in to early access for 2021 Release Wave 1 updates and Relevance Search is enabled then the new Relevance Search experience is turned on for all users. Users won't have the option to use categorized search anymore. For more information, see [Opt in to early access updates](opt-in-early-access-updates.md).
-
-To enable the new Relevance Search experience:
-
-1.	In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.
-
-2.	Select **Settings** > **Product** > **Features**.
-
-3.	Under **Search**, set **Use new search experience** to **On**.
-
-   > [!div class="mx-imgBorder"] 
-   > ![New Relevance Search experience](media/admin-enable-search.jpg "New Relevance Search experience")
-
-4.	Select **Save**.
-
-For information on using the new Relevance Search experience, see [Use the new Relevance Search experience](/powerapps/user/relevance-search#use-the-new-relevance-search-experience).
-
-> [!TIP]
-> We are addressing an issue that makes the feature **Use new search experience** not show up in environments that were created from another environment as a copy. Please try the following steps to mitigate the issue.
-> 
-> 1. Turn **Relevance Search** off.
-> 2. Wait approximately 5 to 10 minutes.
-> 3. Turn **Relevance Search** on. 
 
 ## Select entities for Relevance Search 
  To configure Relevance Search, use the **Configure Relevance Search** selection on the task bar, as shown here.  
@@ -279,6 +249,6 @@ Your organization’s queries and results are reviewed by people using secured c
 
 ### See also  
  [Use relevance search to search for records](/powerapps/user/relevance-search) <br />
- [Use the new Relevance Search experience](/powerapps/user/relevance-search#use-the-new-relevance-search-experience)
+ 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
