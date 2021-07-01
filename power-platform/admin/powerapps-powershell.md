@@ -261,7 +261,7 @@ Exports all the assigned user licenses (Power Apps and Power Automate) in your t
 The export can take a while for tenants with a large number of Microsoft Power Platform users.
 
 > [!NOTE]
-> Output of the Get-AdminPowerAppLicenses cmdlet will only include licenses for users that have accessed Power Platform services (for example, Power Apps, Power Automate, or Power Platform admin center). Users that have had licenses assigned in Azure AD (typically via the Microsoft 365 admin center) but have never accessed Power Platform services will not have their licenses included in the generated .csv output. Furthermore, since the Power Platform licensing services caches the licenses, updates made to license assignments in Azure AD can take up to seven days to reflect in the output for users that haven't accessed the service recently.
+> Output of the Get-AdminPowerAppLicenses cmdlet only includes licenses for users that have accessed Power Platform services (for example, Power Apps, Power Automate, or Power Platform admin center). Users that have had licenses assigned in Azure AD (typically via the Microsoft 365 admin center) but have never accessed Power Platform services will not have their licenses included in the generated .csv output. Furthermore, since the Power Platform licensing services caches the licenses, updates made to license assignments in Azure AD can take up to seven days to reflect in the output for users that haven't accessed the service recently.
 
 #### Set logged in user as the owner of a canvas app
 
