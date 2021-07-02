@@ -26,8 +26,9 @@ Users moving to Microsoft Edge (based on Chromium) or another supported modern b
 
 To prepare for Internet Explorer support ending, administrators in the Power Platform Admin center and in the model-driven apps Advanced Settings will see an informational message like the following *before* August 17th, 2021 and a warning message *starting* August 17th, 2021 if their tenant has Internet Explorer users.  These messages will appear regardless of the browser the administrator is using. 
 
-:::image type="content" source="media/admin-setting-message-on-internet-explorer-support-end.png" alt-text="Internet Explorer support ends on August 17th, 2021. Ensure users switch to a modern browser."::: <br />
-Internet Explorer support ends on August 17th, 2021. Ensure users switch to a modern browser.
+
+> :::image type="content" source="media/admin-setting-message-on-internet-explorer-support-end.png" alt-text="Internet Explorer support ends on August 17th, 2021. Ensure users switch to a modern browser."::: <br />
+> Internet Explorer support ends on August 17th, 2021. Ensure users switch to a modern browser.
 
 ## User experience 
 
