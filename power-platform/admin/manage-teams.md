@@ -4,7 +4,7 @@ description: Understand the different types of teams and how to view and manage 
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/30/2021
+ms.date: 07/02/2021
 author: jimholtz
 ms.author: jimholtz
 ms.reviewer: jimholtz
@@ -28,6 +28,9 @@ Using teams is optional. However, teams provide an easy way to share business ob
 **Access team:** An access team doesn't own records and doesn't have security roles assigned to the team. The team members have privileges defined by their individual security roles and by roles from the teams for which they are members. They share records with an access team, and the team is granted access rights to the records. Access rights include Read, Write, and Append.
 
 **Azure AD group team:** Similar to owner teams, an Azure Active Directory (Azure AD) group team can own records and can have security roles assigned to the team. *Security* and *Office* are two group team types, and they correspond directly to Azure AD group types. Group security roles can be only for a specific team or for a team member with user privileges that include [members' privilege inheritance](security-roles-privileges.md#team-members-privilege-inheritance). Team members are dynamically derived (added and removed) when they access an environment based on their Azure AD group membership. See [Manage group teams](manage-group-teams.md).
+
+> [!NOTE]
+> You can assign security roles to **Owner and Azure AD group teams** and users directly. The environment picker only recognizes users who are members of Azure AD group teams and users who have security roles assigned to them directly. 
 
 ## Team operations
 
