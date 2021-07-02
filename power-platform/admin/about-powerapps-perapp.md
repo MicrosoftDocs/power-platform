@@ -124,9 +124,6 @@ The per app license gives a user access to two Power Apps and one portal for a s
 
 ### Reducing per app capacity to zero
 If you allocate per app capacity to an environment and later reduce per app capacity to zero, users that were added to Dataverse while per app capacity was greater than zero will **not** get disabled in Dataverse. However, these users won’t be able to launch apps since there is no per app capacity allocated to the environment. Admins should remove the role of the user they do not intend to access the platform.
- 
-### Trial prompt while making app with premium connection
-Users in organizations with only Power Apps per app plan may see a trial prompt when creating apps that use premium connections; for example, an app connects to SQL using a gateway. The app creator is entitled to add premium connections to their app. However, the app creator must sign up for the trial until the trial prompt is removed in the premium connection experience. 
 
 ## FAQ
 
@@ -144,14 +141,6 @@ Power Apps per user plan is a user license assigned by admins from https://admin
 
 ### Can I assign Power Apps per app plans in the Microsoft 365 admin center (admin.microsoft.com)? 
 No. Although after purchasing Power Apps per app plans they appear in [https://admin.microsoft.com](https://admin.microsoft.com), they shouldn't be assigned to users in this website. Power Apps per app plans are to be allocated to an environment by an admin in [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com). After per app plans are allocated to an environment, the plans are assigned to users when apps are shared with users in the environment.
-
-### For users expected to use a Power Apps per app plan, why are they prompted to start a trial after signing in to <https://make.powerapps.com>?
-
-<https://make.powerapps.com> is being updated to not require a license to begin making an app. Licenses are required for users to run apps.
-
-### For users expected to use a Power Apps per app plan, why are they prompted to start a trial when attempting to create a premium connection?
-
-<https://make.powerapps.com> is being updated to not require a license to begin making an app. Licenses are required for users to run apps.
 
 ### For users expected to use a Power Apps per app plan, why are users that use an app shared with them prompted to start a Power Apps trial? 
 
