@@ -56,8 +56,8 @@ For environments that require different session timeout values, administrators c
 > 1. [!INCLUDE [pn-oc-online-short](../includes/pn-oc-online-short.md)]
 > 2. [!INCLUDE [pn-dyn-365-phones](../includes/pn-dyn-365-phones.md)] and [!INCLUDE [pn-dyn-365-tablets](../includes/pn-dyn-365-tablets.md)]
 > 3. [!INCLUDE [pn-unified-service-desk](../includes/pn-unified-service-desk.md)] client using [WPF](/dotnet/framework/wpf/) browser (Internet Explorer is supported)
-> 4. [Live Assist (Chat)](https://support.liveassistfor365.com/hc/en-us/articles/360006210033-What-is-Live-Assist-for-Microsoft-Dynamics-365-)
-> 5. [Power Apps canvas apps](/powerapps/maker/canvas-apps/getting-started)
+> 4. Live Assist (Chat)
+> 5. Power Apps canvas apps
 
 
 ## Configure session timeout 
