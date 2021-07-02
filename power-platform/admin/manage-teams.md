@@ -29,6 +29,9 @@ Using teams is optional. However, teams provide an easy way to share business ob
 
 **Azure AD group team:** Similar to owner teams, an Azure Active Directory (Azure AD) group team can own records and can have security roles assigned to the team. *Security* and *Office* are two group team types, and they correspond directly to Azure AD group types. Group security roles can be only for a specific team or for a team member with user privileges that include [members' privilege inheritance](security-roles-privileges.md#team-members-privilege-inheritance). Team members are dynamically derived (added and removed) when they access an environment based on their Azure AD group membership. See [Manage group teams](manage-group-teams.md).
 
+> [!NOTE]
+> You can assign security role to **Owner and Azure AD group teams** and the user directly. The Environment picker only recognizes users who are member of Azure AD group teams and users who have security role assigned to them directly. 
+
 ## Team operations
 
 ### Access your team's page
