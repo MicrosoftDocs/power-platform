@@ -4,7 +4,7 @@ description: "Security enhancements: User session and access management"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/02/2021
+ms.date: 09/11/2020
 author: jimholtz
 ms.author: jimholtz
 ms.reviewer: jimholtz
