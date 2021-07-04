@@ -18,7 +18,7 @@ search.app:
 #Customer intent: As a developer, I want to use GitHub Actions so that my solution builds and deployment will be automated.
 ---
 
-# Tutorial: Automate solution deployment using GitHub Actions for Microsoft Power Platform (Preview)
+# Tutorial: Automate solution deployment using GitHub Actions for Microsoft Power Platform
 [This topic is pre-release documentation and is subject to change.]
 
 In this tutorial, you will learn how to:
@@ -59,12 +59,25 @@ Related tutorials: [Get started](github-actions-start.md), and [Build a model-dr
 
     ![Create secret](../media/github-actions-tutorial/gh-lab-2.60.png "Create secret")
 
-    > [!NOTE]
-    > In the preview release, only username + password is supported. Support for service principals (application user) will be available later in Fall 2020.
+    
 
     The password is now securely stored as a GitHub secret.
 
     ![Stored secret](../media/github-actions-tutorial/gh-lab-2.70.png "Stored secret")
+
+### Creating a new secret for Service Principal Authentication
+1. Navigate to the repo from the link in the import wizard and select **Settings**, navigate to **Secrets**, and then click **New secret**.
+
+    ![New secret](../media/github-actions-tutorial/gh-lab-2.50.png "New secret")
+
+2. On the secrets page, name the secret ‘PowerPlatformSPN’. Use the client secret for the Application registration created in Azure Active Directory into **Value** field and select **Add secret**. The client secret will be referenced in the YML files used to define the GitHub workflows later in this lab
+
+    [Create secret](../media/github-actions-tutorial/spn-secret.png "Create secret")
+
+    The client secret is now securely stored as a GitHub secret.
+
+    ![Stored secret](../media/github-actions-tutorial/secret-saved.png "Stored secret")
+
 
 ## Create a workflow to export and unpack the solution file to a new branch
 
@@ -74,7 +87,7 @@ Related tutorials: [Get started](github-actions-start.md), and [Build a model-dr
 
     This will start a new YML file with a basic workflow to help you get started with GitHub Actions.
 
-    ![Sample YML file](../media/github-actions-tutorial/gh-lab-2.90.png "Sample YML file")
+    ![Sample YML file](../media/github-actions-tutorial/- "Sample YML file")
 
 2. Delete the pre-created content, paste the content from the [export-and-branch-solution.yml](https://github.com/microsoft/powerplatform-actions-lab/blob/main/sample-workflows/export-and-branch-solution.yml) file, and then rename the file to ‘export-and-branch-solution’.yml.
 
@@ -83,6 +96,10 @@ Related tutorials: [Get started](github-actions-start.md), and [Build a model-dr
 3. Update `<ENVIRONMENTURL>` with the URL for the development environment you want to export from (for example: https://poweractionsdev.crm.dynamics.com).
 
 4. Update `<USERNAME>` with the username you are using to connect to the environment.
+
+    * If you are using SPN authentication then along with the `<ENVIRONMENTURL>`, Please update the `<APPID>` and `<TENANT ID>`  
+
+        ![Rename and replace content](../media/github-actions-tutorial/gh-lab-2.100a.png "Rename and replace content")
 
 5. You are now ready to commit your changes. Select **Start commit**, type **Create export yml** in the title field, and then add a description (optional). Next, click **Commit new file**.
 
@@ -97,7 +114,7 @@ Congratulations, you have just created your first GitHub workflow using the foll
 
 ## Test the export and unpack workflow
 
-1. Next, test that the workflow runs. Navigate to **Actions**, **Run workflow**, and choose **Run workflow**.
+1. Next, test that the workflow runs. Navigate to **Actions**, **Run workflow**, and choose **Run workflow**. If you have a different solution name than 'ALMLab' then change the value here, leave the other values as is. 
 
     ![Run workflow](../media/github-actions-tutorial/gh-lab-2.150.png "Run workflow")
 
@@ -110,7 +127,7 @@ Congratulations, you have just created your first GitHub workflow using the foll
 3. After the workflow has completed, validate that a new branch has been created with the solution unpacked to the solutions/ALMLab folder. Select **Code** and then **Branches**.
 
     ![View branches](../media/github-actions-tutorial/gh-lab-2.170.png "View branches")
- 
+
 4. Select the branch that was created by the action.
 
     ![Select branch](../media/github-actions-tutorial/gh-lab-2.180.png "Select branch")
@@ -126,7 +143,7 @@ Congratulations, you have just created your first GitHub workflow using the foll
 7. You are then presented with the pull request summary. Confirm that the branch has no conflicts with the main branch and that the changes can be merged into the main branch automatically. Select **Squash and merge** and then **Confirm squash and merge**.
 
     ![Squash and merge](../media/github-actions-tutorial/gh-lab-2.210.png "Squash and merge")
- 
+
 8. Navigate back to the main branch and validate the solution is now available there as well.
 
 ## Create a workflow to generate a build artifact and import to production
@@ -151,6 +168,15 @@ In this section, we will create an additional workflow that:
     - Update `<BUILDENVIRONMENTURL>` with the URL for the build environment you are using to generate the managed solution. For example: https://poweractionsbuild.crm.dynamics.com.
     - Update `<PRODUCTIONENVIRONMENTURL>` with the URL for the production environment you are deploying to. For example: https://poweractionsbuild.crm.dynamics.com.
     - Update `<USERNAME>` with the username you are using to connect to the environments.
+
+
+    ![Rename and paste code](../media/github-actions-tutorial/gh-lab-2.250a.png "Rename and paste code")
+4a. If you are using SPN authentication then in the Workflow you need to update the following variables
+    - Update `<BUILDENVIRONMENTURL>` with the URL for the build environment you are using to generate the managed solution. For example: https://poweractionsbuild.crm.dynamics.com.
+    - Update `<PRODUCTIONENVIRONMENTURL>` with the URL for the production environment you are deploying to. For example: https://poweractionsbuild.crm.dynamics.com.
+    - Update `<APPID>` with the Application name you are using to connect to the environments.
+    - Updte `<TENANT ID>` with the tenant id for your environments. 
+
 
 5. Commit the changes. Choose **Start commit** and then add a title and description (optional). Next, select **Commit new file**.
 
