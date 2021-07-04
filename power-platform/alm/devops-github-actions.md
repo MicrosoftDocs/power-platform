@@ -82,6 +82,13 @@ GitHub Actions for Microsoft Power Platform can run on both Microsoft Windows ag
 
 [GitHub Actions Hands on Lab](./tutorials/github-actions-start.md) is available right now for you try out. The labs show how to use Service Principal authentication and standard username/password authentication.  
 
+**How do I get GitHub Actions for Microsoft Power Platform working in my repository?**
+
+Go to the [GitHub Marketplace for Actions](https://github.com/marketplace/actions/powerplatform-actions) and search for Power Platform, when you get on the page, select the green button to instatiate the actions into your repository 
+
+            ![GitHub Actions Install](../media/tutorial/../../alm/media/github-actions-tutorial/GHActionsinstall.png "GitHub Actions Install")
+
+
 **Do GitHub Actions only work for Power Apps?**  
 
 GitHub Actions work for both canvas and model-driven apps, Power Virtual Agents, UI flows and traditional flows, AI Builder, custom connectors, and dataflows, all of which can now be added to a solution. Also included are customer engagement apps.

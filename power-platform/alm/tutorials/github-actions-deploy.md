@@ -156,7 +156,7 @@ In this section, we will create an additional workflow that:
 
     ![Create new workflow](../media/github-actions-tutorial/gh-lab-2.230.png "Create new workflow")
 
-2. Chose **setup a workflow yourself**. 
+2. Chose **setup a workflow yourself**.
 
     ![Set up a workflow](../media/github-actions-tutorial/gh-lab-2.240.png "Set up a workflow")
 
