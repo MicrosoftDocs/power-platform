@@ -111,6 +111,11 @@ Periodically, the solution will receive updates with new features, bug fixes, or
 
 Install the updates by importing the latest version to the environment where you originally installed the solution. Select **Upgrade** to update the solution.
 
+Run the admin sync flow in the Core Component solution to do a full inventory sync and update all resources:
+1) Set the **Full inventory** environment variable to *Yes* (Learn more: [update environment variables](setup-core-components.md#update-environment-variables)).
+1) Run the *Admin | Sync Template v3* flow.
+1) Set the **Full inventory** environment variable back to *No* once all admin sync flows have completed.
+
 > [!NOTE]
 > If you have made any changes to the flows / apps in the solution they will not receive updates until you remove that unmanaged layer. <br>
 > For every flow/app that you changed, go to the solution layers and remove it.
