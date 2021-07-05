@@ -58,7 +58,7 @@
     },
     "fileMetadata": {
       "searchScope": {
-        "**.*": [ "Power Apps", "Power Automate", "Power BI", "Power Platform" ]
+        "**.*": [ "Power Apps", "Power Automate", "Power Platform" ]
       }
     },
     "template": [],
