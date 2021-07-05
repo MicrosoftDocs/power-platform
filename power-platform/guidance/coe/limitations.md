@@ -47,27 +47,26 @@ The sync flows in the Core Component solution will only update resources that ha
 
 Model Driven Apps, Business Process Flows and Custom Connectors are not available in Dataverse for Teams. If you are installing the CoE Starter Kit in Dataverse for Teams, you will notice those components missing.
 
-## Setting Environment Variables in a Managed Environment
+## Updating Environment Variables
 
-Currently you cannot update the values for environment variables from within the solution. 
+You cannot update the values for environment variables from within the solution.
 
-To update these:
+To update Environment Variables:
 
-1. Browse to the Default Solution
-1. Filter by Environment Variables
-1. Use the Current Value (note that default values will be overwritten when you install updates)
-       ![Set Env Variables1](media/envVars1.PNG "Set t
-he current value of the Environment Variables 1")<br>
-       ![Set Env Variables2](media/envVars2.PNG "Set the current value of the Environment Variables 2")
+1. If you have installed the solution in a Production environment:
+   1. Go to [flow.microsoft.com](<https://flow.microsoft.com>).
+   1. On the left pane, select **Solutions**.
+   1. Select the **Default Solution**, and change the filter to show **Environment Variables**.
+   1. Select a variable that you want to update, and then configure its **Current Value**.
 
-If you are in a Dataverse for Teams Environment, you will not be able to see the default solution, so instead:
-1. Go to flow.microsoft.com
-1. Select your Dataverse for Teams environment
-1. Select Solution
-1. Select Common Data Service Default Solution
-1. Select + Add > Environment Variables
-1. Select the existing Environment Variables from the managed solution that you want to update
-1. After adding those, selected Environment Variables in the new menu navigation and you should then be able to add a default and current value
+1. If you have installed the solution in a Dataverse for Teams environment:
+   1. Go to [flow.microsoft.com](<https://flow.microsoft.com>).
+   1. On the left pane, select **Solutions**.
+   1. Select the **Common Data Service Default Solution**.
+   1. Select **+ Add > Environment Variables**.
+   1. Select the existing Environment Variables from the managed solution that you want to update.
+   1. Now, change the filter to show **Environment Variables**.
+   1. Select a variable that you want to update, and then configure its **Current Value**.
 
 ## Flows that use the Microsoft Dataverse (Current Environment) connector
 
@@ -139,12 +138,10 @@ For full list of license requirements see [Setup Prerequisite](setup.md#prerequi
 
 If your Power Platform admin role is managed via  **[PIM](/azure/active-directory/privileged-identity-management/pim-getting-started)** ensure the Sync Flows of the Core Components solution are set up to complete during the time whilst your user is granted admin permission. If your user loses admin access during the run of the sync flows, you may end up with incomplete or incorrect data if you use PIM and your Power Platform Admin Role.
 
-## Monitoring Flow Runs
+## Monitoring Cloud flow runs
 
-Currently there is no solution for pulling in Power Automate cloud flow runs.
+Monitoring Cloud flow runs is currently not included in the CoE Starter Kit. Monitoring Desktop flow runs is included, although limited.
 
-We do have limited ability to monitor desktop flows, and those are part of the normal Core solution and Power BI reports.
-
-If you want more details for desktop flows runs please see this solution from outside the Starter Kit: [Advanced Power Automate RPA Run Log Analytics with PowerBI and Dataverse](https://flow.microsoft.com/en-us/blog/advanced-power-automate-rpa-run-log-analytics-with-power-bi-and-dataverse/)
+If you want more details for Desktop flows runs please see this solution available outside the CoE Starter Kit: [Advanced Power Automate RPA Run Log Analytics with PowerBI and Dataverse](https://flow.microsoft.com/blog/advanced-power-automate-rpa-run-log-analytics-with-power-bi-and-dataverse/)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

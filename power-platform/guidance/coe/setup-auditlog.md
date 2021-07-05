@@ -177,29 +177,29 @@ A Power Automate flow uses the custom connector, queries the audit log daily, an
 1. Paste in the ID you copied for directory (tenant) ID for the *Tenant ID*.
     ![Set environment variables for the CoE audit log components solution](media/coe-custom3.png "Set environment variables for the CoE audit log components solution")
 
-1. Open the **Center of Excellence – Audit Log solution**, and select **Admin \| \[Child\] Admin | Sync Logs**. 
+1. Open the **Center of Excellence – Audit Log solution**, and select **Admin \| \[Child\] Admin | Sync Logs**.
 
 1. Edit the **Run only users** settings.
-ree
+
    ![Child flow - run only users](media/coe49.png "Child flow - run only users")
 
-1. For all th connections (the custom connector, Dataverse and Office365 Outlook), change the value to **Use this connection (userPrincipalName\@company.com)**. If there is no connection for any of the connectors, go to **Data** > **Connections**, and create one for the connector.
+1. For the custom connector, Dataverse and Office 365 Outlook, change the value to **Use this connection (userPrincipalName\@company.com)**. If there is no connection for any of the connectors, go to **Data** > **Connections**, and create one for the connector.
 
    ![Configure run only users](media/coe50.png "Configure run only users")
 
 1. Select **Save**, and then close the **Flow details** tab.
 
-1. (Optional) Edit the environment variables shown here to gather smaller chunks of time. The default value is to chunk 1 day into 1 hour segments. You will know you need to do this if you receive mail during the run instructing you to do so. 
+1. (Optional) Edit the TimeInterval-Unit and TimeInterval-Interval environment variables to gather smaller chunks of time. The default value is to chunk 1 day into 1 hour segments. You will receive an alert from this solution if the Audit Log fails to collect all data with your configured time interval.
 
     | Name | Description |
     |------|---------------|
     |TimeInterval-Unit | Determines units for chunking the time since start. <br>Must be a value from accepted as an input parameter to [Add to Time](https://docs.microsoft.com/power-automate/desktop-flows/actions-reference/datetime#add). <br>Default value: Hour |
     |TimeInterval-Interval | Must be a whole number to represent the number of chunks of type unit (above).<br> Default value: 1 (for 1 hour chunks) |
 
-> [!IMPORTANT]
-> To understand how to set environment variables please see  [Setting Environment Variables in a Managed Environment](limitations.md#Setting-Environment-Variables-in-a-Managed-Environment)
+    > [!IMPORTANT]
+    > Learn how to about environment variables: [Update Environment Variables](limitations.md#Update-Environment-Variables)
 
-11. Back in the solution, turn on both the \[Child\] Admin | Sync Logs flow and the Admin | Sync Audit Logs flow.
+1. Back in the solution, turn on both the \[Child\] Admin | Sync Logs flow and the Admin | Sync Audit Logs flow.
 
    ![Turn audit log flows on](media/coe-custom4.PNG "Turn audit log flows on")
 

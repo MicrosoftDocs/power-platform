@@ -126,60 +126,54 @@ The core components solution is required for the nurture components solution, or
 
 ## Import starter data set for the Maker Assessment app
 
-If you are going to use the [Maker Assessment](nurture-components.md#maker-assessment) app, you will want to import an initial set of assessment questions first. You can add your own questions or customize the existing ones using the admin app for this solution.
+Important an initial set of assessment questions to get started using the [Maker Assessment](nurture-components.md#maker-assessment) app. You can add your own questions or customize the existing ones using the admin app for this solution.
 
-### Upload starter data to SPO
+### Upload starter data to SharePoint Online
 
-First we wil load the starter data into SPO so it is visible to connectors.
+The initial set of assessment questions is provided in an Excel spreadsheet.
 
-1. Look in the initial download of the starter kit for this Excel file: **MakerAssessmentStarterData.xlsx**
-
-1. Upload this file to the Documents library of a SharePoint site in your tenant.
+1. Upload the **MakerAssessmentStarterData.xlsx** file to the Documents library of a SharePoint site in your tenant. You will find this file in the initial download of the CoEStarterKit.zip. 
 
 1. Note down the document library URL in this format, including the prefix and the trailing slash: [https://mytenant.sharepoint.com/sites/TargetSite/Shared%20Documents/](https://mytenant.sharepoint.com/sites/TargetSite/Shared%20Documents/)
 
 This file is only needed once for import, and can be deleted after the dataflow runs.
 
-### Update and run the Dataflow to load into Dataverse
+### Update and run the Dataflow to load initial data into Dataverse
 
-Now we wil load the starter data from SPO into Dataverse using a Dataflow.
+Now we wil load the initial data from SharePoint Online into Dataverse using a Dataflow.
 
-1. In your CoE environment, browse to Data > Dataflows, and edit the Dataflow: **Maker Assessment Starter Dataflow**
+1. In your CoE environment, browse to **Data > Dataflows**, and edit the **Maker Assessment Starter Dataflow**
    ![Edit the Dataflow](media/MakerJourneyDataSetup1.png "Edit the Dataflow")
 
-1. Hit Manage parameters
-   ![Manage Parameters](media/MakerJourneyDataSetup2.png "Manage Parameters")
+1. Select **SPFolder** under Queries. Enter the document library you have uploaded the file to, including prefix and trailing slash.
+   ![Update the parameter with your SharePoint document library](media/MakerJourneyDataSetup2.png "Update the parameter with your SharePoint document library")
 
-1. Edit the **SPFolder** paremater's **Current value**. Enter the document library where you put the file, in the format specified above (including prefix and trailing slash), and hit OK
-   ![Enter Library Name](media/MakerJourneyDataSetup3.png "Enter Library Name")
+1. Select **assessmentCategoriesTable** under Queries and select **Configure connection**
+   ![Configure the connection for the dataflow](media/MakerJourneyDataSetup3.png "Configure the connection for the dataflow")
 
-1. You will see a button to **Configure Connection**. Hit that button
-   ![Configure Connection](media/MakerJourneyDataSetup4.png "Configure Connection")
+1. Choose an existing connection or create a new one and select **Connect**
 
-1. Choose an existing connection or create a new one and hit connect
+   ![Choose connection for the dataflow to connect to SharePoint](media/MakerJourneyDataSetup5.png "Choose connection for the dataflow to connect to SharePoint")
 
-   ![Choose Connection](media/MakerJourneyDataSetup5.png "Choose Connection")
+1. Data should now be loaded into the editor. If you see a connection error instead, make sure the **SPFolder** parameter is correct. Select **Next**.
 
-1. Wait for those to resolve. All data should now be loaded into the editor, hit next.
+   ![Initial data will be loaded into the table view](media/MakerJourneyDataSetup6.png "Initial data will be loaded into the table view")
 
-   ![Data Loaded](media/MakerJourneyDataSetup6.png "Data Loaded")
+1. Select **Next** without changing any default setting.
 
-1. No changes are needed in the next screen, just hit next again
+   ![Select Next without changing any default settings](media/MakerJourneyDataSetup7.png "Select Next without changing any default settings")
 
-   ![Next again](media/MakerJourneyDataSetup7.png "Next again")
+1. Select **Create** to create the Dataflow.
 
-1. No changes are needed, hit create
+   ![Create the dataflow](media/MakerJourneyDataSetup8.png "Create the dataflow")
 
-   ![Create](media/MakerJourneyDataSetup8.png "Create")
+1. Wait while the Dataflow refresh is in progress.
 
-1. Wait while the Dataflow refreshes
-
-   ![Wait](media/MakerJourneyDataSetup9.png "Wait")
+   ![Wait while the Dataflow refresh is in progress](media/MakerJourneyDataSetup9.png "Wait while the Dataflow refresh is in progress")
 
 >[!TIP]
->If you see an error like this after the steps above, please hit refresh (under the ...) as the relationships may hav enot resolved the first time it ran.
+>If you see connection error, please select **Refresh** as the connection may not have resolved in time for the initial load:
    ![Error](media/MakerJourneyDataSetup10.png "Error")
-
 
 ## Update environment variables
 
