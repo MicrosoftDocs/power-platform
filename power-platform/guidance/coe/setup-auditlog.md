@@ -145,7 +145,7 @@ Go back to the custom connector to set up a connection to the custom connector a
 
    ![Custom connector Start Subscription](media/coe43.png "Custom connector Start Subscription")
 
-1. Paste the **directory (tenant) ID**&mdash;copied earlier from the **App Registration** overview page in Azure AD&mdash;into the **Tenant** field, and then paste the **application (client) ID** into **PublisherIdentifier**. 
+1. Paste the **directory (tenant) ID**&mdash;copied earlier from the **App Registration** overview page in Azure AD&mdash;into the **Tenant** field, and then paste the **application (client) ID** into **PublisherIdentifier**.
 
 1. Select **Test Operation**.
 
@@ -197,7 +197,7 @@ A Power Automate flow uses the custom connector, queries the audit log daily, an
     |TimeInterval-Interval | Must be a whole number to represent the number of chunks of type unit (above).<br> Default value: 1 (for 1 hour chunks) |
 
     > [!IMPORTANT]
-    > Learn how to about environment variables: [Update Environment Variables](limitations.md#Update-Environment-Variables)
+    > Learn how to about environment variables: [Update Environment Variables](limitations.md#updating-environment-variables)
 
 1. Back in the solution, turn on both the \[Child\] Admin | Sync Logs flow and the Admin | Sync Audit Logs flow.
 
