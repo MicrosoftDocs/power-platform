@@ -4,7 +4,7 @@ description: About data loss prevention (DLP) policies.
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/07/2021
+ms.date: 06/23/2021
 author: jimholtz
 ms.author: jimholtz
 ms.reviewer: jimholtz
@@ -17,7 +17,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Data loss prevention policies
+# Data loss prevention policies 
 
 Your organization's data is likely one of the most important assets you're responsible for safeguarding as an administrator. The ability to build apps and automation to use that data is a large part of your company's success. You can use Power Apps and Power Automate for rapid build and rollout of these high-value apps so that users can measure and act on the data in real time. Apps and automation are becoming increasingly connected across multiple data sources and multiple services. Some of these might be external, third-party services and might even include some social networks. Users generally have good intentions, but they can easily overlook the potential for exposure from data leakage to services and audiences that shouldn't have access to the data.
 
@@ -180,6 +180,10 @@ When all three policies are applied together to the same environment, the net re
 
 To summarize: an app or flow can only use connectors from these individual groups at any given time, and not mix connectors across the eight different groups. From the examples above, note that multiple DLP policies applied to an environment will fragment your connector space in complicated ways. Therefore, we highly recommended that you apply a minimum number of DLP policies to any given environment. 
 
+## DLP resource exemption
+
+You can now exempt apps and flows that you trust from DLP policies using [DLP resource exemption PowerShell cmdlets](powerapps-powershell.md#dlp-resource-exemption-cmdlets). 
+
 ## Impact of DLP policies on apps and flows
 
 If admins have disallowed certain connectors to be used together in an environment by classifying them as **Business** or **Non-Business**&mdash;or marked certain connectors as **Blocked** by using tenant-level or environment-level DLP policies&mdash;these restrictions can negatively affect makers and users of Power Apps and Power Automate. The restrictions are enforced at both design time and at runtime.
@@ -191,7 +195,10 @@ As an admin, you should have a process and plan in place to handle these types o
 Users who create or edit a resource affected by the DLP policy will see an appropriate error message about any DLP policy conflicts. For example, Power Apps makers will see the following error when they use connectors in an app that don't belong together or have been blocked by DLP policies. The app won't add the connection.
 
 > [!div class="mx-imgBorder"] 
-> ![Conflict error](media/dlp-conflict-error.png "Conflict error")
+> ![First example conflict error](media/dlp-conflict-error.png "First example conflict error")
+
+> [!div class="mx-imgBorder"] 
+> ![Second example conflict error](media/dlp-conflict-error2.png "Second example conflict error")
 
 Similarly, Power Automate makers will see the following error when they try to save a flow that uses connectors that don't belong together or have been blocked by DLP policies. The flow itself will be saved, but it will be marked as **Suspended** and won't be executed unless the maker resolves the DLP violation.
 
@@ -206,6 +213,9 @@ Users who use a resource that's in violation of the latest DLP policy will see a
 
 > [!div class="mx-imgBorder"] 
 > ![App opening error](media/dlp-opening-error.png "App opening error")
+
+> [!NOTE]
+> Power Apps DLP runtime enforcement experiences include the admin contact and governance reference material, if set. To learn more about how to use this capability, see [Governance error message content commands](powerapps-powershell.md#governance-error-message-content-commands). 
 
 Similarly, Power Automate makers and users won't be able to start a flow that uses connectors that don't belong together or have been blocked by DLP policies. A background system process marks the flow as **Suspended**, and the flow won't be executed until the maker resolves the DLP policy violation.
 
