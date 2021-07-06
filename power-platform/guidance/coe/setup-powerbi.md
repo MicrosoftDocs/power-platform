@@ -100,26 +100,7 @@ When you see *Unable to open document: The queries were authored with a newer ve
 
 ### (Optional) Configure embedded apps in the CoE dashboard
 
-The dashboard can be configured to use embedded apps to enable you to drive action based on insights you find. With the embedded apps, you can grant yourself access to resources, delete apps and flows, and reach out to the maker via email. You'll have to import the apps first, and then configure them in the dashboard.
-
-#### Import embedded apps
-
-> [!NOTE]
-> If you have installed the Center of Excellence - Core Components in a Teams environment, the embedded apps are included in the solution and you will not have to import them. Skip to [Embed apps into the Power BI dashboard](#embed-apps-into-the-power-bi-dashboard).
-
-1. Go to **[make.powerapps.com](https://make.powerapps.com)** in the environment where you installed the CoE Starter Kit.
-1. On the left pane, select **Apps**.
-1. Select **Import canvas app**.
-
-   ![Import canvas app](media/coe83.png "Import canvas app")
-
-1. Import the **Admin – Access this app** app (Admin-AccessthisApp.zip).
-1. Configure all the connections.
-1. Repeat the same steps for the **Admin – Access this flow** app (Admin-AccessthisFlow.zip).
-
-#### Embed apps into the Power BI dashboard
-
-You'll now configure the Power Apps visuals in the Power BI dashboard to point to the apps you just imported.
+The dashboard can be configured to use embedded apps to enable you to drive action based on insights you find. With the embedded apps, you can grant yourself access to resources, delete apps and flows, and reach out to the maker via email. You'll have to configure the Power Apps visuals in the Power BI dashboard before you can use them.
 
 1. Open the CoE Power BI dashboard in **Power BI Desktop**.
 1. Go to the **App Detail** page.
@@ -149,10 +130,7 @@ You'll now configure the Power Apps visuals in the Power BI dashboard to point t
      ![Select Admin - Access this app to embed this app into Power BI](media/coe89.PNG "Select Admin - Access this app to embed this app into Power BI")
 
 1. Resize and move the visual to the location you want. Delete the placeholder from the template, and move your embedded app to the same place.
-
-**To configure the app on the Flow Detail page**
-
-1. Go to the **Cloud flow detail** tab.
+1. Next, go to the **Cloud flow detail** tab.
 1. Select the **Power Apps visual** from **Visualizations**.
    Select the fields from your dataset that you want to use in the app.
 1. With the visual selected, select the **admin_flowid** and **admin_flowenvironment** flows under **Fields**.
