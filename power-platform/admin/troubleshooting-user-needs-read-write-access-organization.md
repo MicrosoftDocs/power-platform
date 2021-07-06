@@ -8,7 +8,7 @@ ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/04/2021
+ms.date: 07/06/2021
 search.audienceType: 
   - admin
 search.app:
@@ -81,6 +81,10 @@ Several factors influence user access in a Microsoft Dataverse environment. To h
 
 When an error screen stating the user has no roles is encountered, a system administrator will need to assign roles to the user. Roles can be assigned directly to the user, or to a group team that the user is a part of. For information on how to assign Dataverse security roles to a user, see: 
 [Assign a security role to a user](create-users-assign-online-security-roles.md#assign-a-security-role-to-a-user).
+
+### User is not able to see a record / user doesn't know why they have access to a record
+
+See [How access to a record is determined](how-record-access-determined.md).
 
 ### User does not have a license / user does not belong to the organization 
 
