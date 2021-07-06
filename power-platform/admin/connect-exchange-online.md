@@ -52,19 +52,23 @@ With both customer engagement apps (such as [Dynamics 365 Sales](./../sales-prof
    > [!div class="mx-imgBorder"] 
    > ![Create new server profile](media/new-server-profile.png "Create a new server profile")
 
-4. For **Email Server Type** select **Exchage Online**
-5. For Exchange Online server profile, specify the following details:
-
-  |                                         Fields                                         |                                                                                                                                                                                                                                                                                                                                                       Description                                                                                                                                                                                                                                                                                                                                                       |
-   |----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-   |                                      **Name**                                     | Enter a name for the server profile|
-   |**Set as default profile for new mailboxes**| Move the toggle to **On** to enable all new mailboxs to connect using this server profile. |
-   | **Authentication Type** | Choose one of the following: <br> <li> **S2S auth (Same Tenant)** For more information, see [Build web applications using server-to-server (S2S) authentication](/powerapps/developer/data-platform/build-web-applications-server-server-s2s-authentication). <br><li> **Oauth (Cross Tenant)**. Fill in the required information. For more information on how to get tenant ID, app ID, and client secrect see, [Exchange Online Cross Tenant Authentication](link to doc TBD). <br>    > [!div class="mx-imgBorder"] <br> > ![Email server profile form](media/server-profile-form.png "Email server profile form") |
-  |dsfsdfs|
-  
+4. For **Email Server Type** select **Exchage Online**.
 
 
+   > [!div class="mx-imgBorder"] 
+   > ![Select Exchange Online server profile](media/exchange-online-server-profile.png "Select Exchange Online server profile]")
 
+5. Use the tool tips to fill in the required information.
+6. For **Authentication Type** choose one of the following:
+
+    - **S2S auth (Same Tenant)** For more information, see [Build web applications using server-to-server (S2S) authentication](/powerapps/developer/data-platform/build-web-applications-server-server-s2s-authentication). <br>
+    
+    - **Oauth (Cross Tenant)**. For more information on how to get the **Tenant ID**, **Application ID**, and **Client Sercret**, see [Exchange Online Cross Tenant Authentication](link tbd).
+    
+        > [!div class="mx-imgBorder"]
+        > ![Email server profile form](media/server-profile-form.png "Email server profile form") |
+
+7. When you're done select **Save**.
 
 ## Verify you have the profile: Microsoft Exchange Online  
  If you have an [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] subscription in the same tenant as your subscription, customer engagement apps create a default profile for the email connection: **Microsoft Exchange Online**. To verify this profile:  
