@@ -104,7 +104,7 @@ This feature is available for private preview in Power Platform Admin center und
 5. On the **Set up server profile** page, fill in the required information. Use the information that you noted down to fill in the tenant ID, application ID, and client secret details on the form. For more information see, [](connect-exchange-online.md#create-an-email-server-profile-for-exchnage-online).
   
    > [!div class="mx-imgBorder"] 
-   > ![Set up server profile](media/email-settings.png "Set up server profile")
+   > ![Set up server profile](media/server-profile-form.png "Set up server profile")
 
 6. When you're done, select **Save**.
 
