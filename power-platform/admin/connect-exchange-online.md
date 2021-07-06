@@ -40,7 +40,7 @@ With both customer engagement apps (such as [Dynamics 365 Sales](./../sales-prof
 
 ## Exchange Online cross tenant authentication
 
-Use Server-Side Sync to synchronize Exchange Online mailboxes that reside on different Exchange Online tenants. Follow the stesp in this section to complate the prerequistites to set up a server profile with Exchange Online using Oauth cross tenant authentication.
+Use Server-Side Sync to synchronize Exchange Online mailboxes that reside on different Exchange Online tenants. Follow the steps in this section to complete the prerequistites before you set up a Exchange Online server profile using Oauth cross tenant authentication.
 
 ### Configuration
 
@@ -131,7 +131,7 @@ To allow your app to have access to Exchange Online you need to grant **Office 3
 
     - **S2S auth (Same Tenant)** For more information, see [Build web applications using server-to-server (S2S) authentication](/powerapps/developer/data-platform/build-web-applications-server-server-s2s-authentication).
     
-    - **Oauth (Cross Tenant)**. Use the information that you noted in the section tp fill in the tenant ID, application ID, and client secret details on the form. 
+    - **Oauth (Cross Tenant)**. Use the information that you noted from the [previous section](connect-exchange-online.md#exchange-online-cross-tenant-authentication) and fill in the tenant ID, application ID, and client secret details on the form. 
     
         > [!div class="mx-imgBorder"]
         > ![Email server profile form](media/server-profile-form.png "Email server profile form") |
