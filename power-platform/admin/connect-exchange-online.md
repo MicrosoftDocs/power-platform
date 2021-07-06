@@ -38,7 +38,7 @@ With both customer engagement apps (such as [Dynamics 365 Sales](./../sales-prof
 >  To make sure you've got a good connection to [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)], run the [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/). For information on what tests to run, see [Test mail flow with the Remote Connectivity Analyzer](https://technet.microsoft.com/library/dn305950\(v=exchg.150\).aspx).  
 
 
-## Create an email server profile  
+## Create an email server profile for Exchnage Online
 
 1. In the  [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment. 
 
