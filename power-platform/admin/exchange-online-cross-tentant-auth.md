@@ -101,7 +101,7 @@ This feature is available for private preview in Power Platform Admin center und
 
 4. On the command bar, select **New server profile.**
 
-5. On the **Set up server profile** page, fill in the required information. Use the information that you noted down to fill in the tenant ID, application ID, and client secret details on the form. For more information see, [](connect-exchange-online.md#create-an-email-server-profile-for-exchnage-online).
+5. On the **Set up server profile** page, fill in the required information. Use the information that you noted down to fill in the tenant ID, application ID, and client secret details on the form. For more information see, [Create an email server profile for Exchnage Online](connect-exchange-online.md#create-an-email-server-profile-for-exchnage-online).
   
    > [!div class="mx-imgBorder"] 
    > ![Set up server profile](media/server-profile-form.png "Set up server profile")
