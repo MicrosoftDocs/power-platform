@@ -30,6 +30,8 @@ To prepare for Internet Explorer support ending, administrators in the Power Pla
 :::image type="content" source="media/admin-setting-message-on-internet-explorer-support-end.png" alt-text="Internet Explorer support ends on August 17th, 2021. Ensure users switch to a modern browser."::: <br />
 Internet Explorer support ends on August 17th, 2021. Ensure users switch to a modern browser.
 
+
+
 ## User experience 
 
 **Starting August 17th, 2021,** all users using model-driven apps in Internet Explorer will see a warning message at the top of the app.  By switching to Microsoft Edge Chromium or another modern browser, the user will not see this message.  
@@ -39,7 +41,7 @@ Internet Explorer support has ended. Please switch to Microsoft Edge or another 
 
 **Before August 17, 2021,** some users using model-driven apps in Internet Explorer might see an informational message like the following at the top of the app if their administrators have enabled it. 
 
-> **Alert**<br />
+:::image type="content" source="media/user-internet-explorer-support-will-end-info.png" alt-text="Internet Explorer support has ended. Please switch to Microsoft Edge or another modern browser."::: <br />
 > Internet Explorer support ends August 17th, 2021. Please switch to a modern browser.
 
 **Prior to the 2022 Wave 1 release blocking Internet Explorer,** users using model-driven apps in Internet Explorer will see an error message at the top of the app like the following.  
