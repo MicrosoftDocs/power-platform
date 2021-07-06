@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/29/2021
+ms.date: 07/02/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -251,6 +251,7 @@ A tenant admin will be allowed to upgrade a Dataverse for Teams environment to a
 5. If the admin confirms, the upgrade will go forward. As the upgrade progresses, various notifications will be provided as the operation transitions through the various states.  
 
 After upgrade, the following applies to the newly upgraded environment:  
+- To find and edit apps and flows, app makers will need to go to the [Power Apps](https://make.powerapps.com) portal.
 - The upgraded environment's lifecycle will no longer be tied to the lifecycle of that team. If the team is deleted, the upgraded environment remains. 
 - Any apps running on the environment will require Microsoft Power Platform (Power Apps, Power Automate) licenses to be accessed. 
 - The apps can run inside and outside of Microsoft Teams. 
