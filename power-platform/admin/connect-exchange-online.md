@@ -63,7 +63,7 @@ With both customer engagement apps (such as [Dynamics 365 Sales](./../sales-prof
 
     - **S2S auth (Same Tenant)** For more information, see [Build web applications using server-to-server (S2S) authentication](/powerapps/developer/data-platform/build-web-applications-server-server-s2s-authentication). <br>
     
-    - **Oauth (Cross Tenant)**. For more information on how to get the **Tenant ID**, **Application ID**, and **Client Sercret**, see [Exchange Online Cross Tenant Authentication](exchange-online-cross-tentant-auth.mdd).
+    - **Oauth (Cross Tenant)**. For more information on how to get the **Tenant ID**, **Application ID**, and **Client Sercret**, see [Exchange Online Cross Tenant Authentication](exchange-online-cross-tentant-auth.md).
     
         > [!div class="mx-imgBorder"]
         > ![Email server profile form](media/server-profile-form.png "Email server profile form") |
