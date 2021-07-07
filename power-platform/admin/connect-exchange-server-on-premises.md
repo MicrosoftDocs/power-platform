@@ -65,12 +65,12 @@ With version 9.0., you can connect your customer engagement apps (Dynamics 365 S
    > [!div class="mx-imgBorder"] 
    > ![Create new server profile](media/new-server-profile.png "Create a new server profile")
 
-4. Select **New** > **Exchange Server (On Prem)**.  
+4. Select **New** > **Exchange Server (On Prem)** and then specify a meaningful **Name** for the profile.
 
    > [!div class="mx-imgBorder"] 
    > ![Select Exchange On Prem server profile](media/exchange-onprem-server-profile.png "Select Exchange On Prem server profile]")
-
-5. Use the tool tips to fill in the required information.
+   
+5. For **Set as default profile for new mailboxes** choose wheater you want this server profile as the default profile for new mailboxes. 
 
 6. For **Authentication Type** choose one of the following:
 
@@ -82,11 +82,9 @@ With version 9.0., you can connect your customer engagement apps (Dynamics 365 S
         > [!div class="mx-imgBorder"] 
         > ![Exchange Hybrid Modern Auth (HMA)](media/hma-auth.png "Exchange Hybrid Modern Auth (HMA)")
 
+7. Expand the **Locations and ports** section and then select whether **Auto-disver location** is active or inactvie. If you shoose **Inactive** then fill in the incoming and outgoing location along with port and type of authentication protocol.
 
-7. In the **Locations and ports** section, select whether **Auto-disver location** is active or inactvie. If you shoose **Inactive** then fill in the incoming and outgoing location along with port and type of authentication protocol.
-
-
-8. In the **Advanced** section, use the tooltips to choose your email processing options. 
+8. Expand the **Advanced** section and then use the tooltips to choose your email processing options. 
 
 9. When you're done, select **Save**.
 
