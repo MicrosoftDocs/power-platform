@@ -1,7 +1,7 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps"
 description: Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps 
-ms.date: 06/18/2021
+ms.date: 06/27/2021
 ms.topic: "article"
 ms.assetid: 994cc854-17f6-45d6-bc20-fcf1a3f2d6d6
 searchScope:
@@ -182,27 +182,27 @@ It is our goal to deliver a powerful bot experience that allows users to retriev
 
 Effective May 5, 2020 the [Dynamics 365 connector](/connectors/dynamicscrmonline/) used for Flows, Logic Apps, and Canvas Apps is officially deprecated. We recommend that you don't create new connections using this connector.
 
-Rather than use the Dynamics 365 connector, the [Common Data Service (current environment) connector](/connectors/commondataserviceforapps/) should be your first choice *if you can use it*. You may not be able to use the Common Data Service (current environment) connector in every situation today because of the following limitations:
+Rather than use the Dynamics 365 connector, the [Microsoft Dataverse connector](/connectors/commondataserviceforapps/) should be your first choice *if you can use it*. You may not be able to use the Microsoft Dataverse connector in every situation today because of the following limitations:
 
 - It isn't available in Logic Apps.
 - It doesn't enable cross-tenant or cross environment connections. 
 - It cannot be used for canvas apps that use the [Power Apps for Windows client](https://www.microsoft.com/p/power-apps/9nblggh5z8f3).
 
-If you cannot use the Common Data Service (current environment) connector, you should use the [Common Data Service connector](/connectors/commondataservice/). This connector has all the capabilities of the Dynamics 365 connector, and includes several improvements that increase reliability.
+If you cannot use the Microsoft Dataverse connector, you should use the [Microsoft Dataverse (legacy)](/connectors/commondataservice/). This connector has all the capabilities of the Dynamics 365 connector, and includes several improvements that increase reliability.
 
-The Common Data Service (current environment) connector represents the future for connections using Dataverse. This includes Dynamics 365 apps using Dataverse. Work is underway to make this connector the only connector you will need. But at the current time, the previously mentioned limitations mean that you can't use it in all places where the Dynamics 365 connector or Common Data Service connector can be used today.
+The Microsoft Dataverse connector represents the future for connections using Dataverse. This includes Dynamics 365 apps using Dataverse. Work is underway to make this connector the only connector you will need. But at the current time, the previously mentioned limitations mean that you can't use it in all places where the Dynamics 365 connector or Microsoft Dataverse (legacy) connector can be used today.
 
 At this time, there's no requirement to convert canvas apps, flows, or logic apps to stop using the Dynamics 365 connector because of the known blocking limitations. But you should stop creating new connections with the Dynamics 365 connector and convert them if you can.
 
 |Type|Guidance|
 |---------|---------|
-|Flows|If you can convert existing flows to use the Common Data Service (current environment) connector, we recommend you do so.|
-|Logic Apps|We recommend you stop creating new connections using the Dynamics 365 connector and use the Common Data Service Connector instead.|
-|Canvas Apps|Canvas apps created after November 2019 should not have used the connector infrastructure by default. These apps should automatically connect to the Common Data Service instance within the same environment. <br /><br />If you have a canvas app that used the  Dynamics 365 connector, find information about how to convert them here: [Converting canvas apps with the Dynamics 365 connector](/powerapps/maker/canvas-apps/use-native-cds-connector#converting-canvas-apps-with-the-dynamics-365-connector).|
+|Flows|If you can convert existing flows to use the Microsoft Dataverse connector, we recommend you do so.|
+|Logic Apps|We recommend you stop creating new connections using the Dynamics 365 connector and use the Microsoft Dataverse (legacy) instead.|
+|Canvas Apps|Canvas apps created after November 2019 should not have used the connector infrastructure by default. These apps should automatically connect to the Dataverse instance within the same environment. <br /><br />If you have a canvas app that used the  Dynamics 365 connector, find information about how to convert them here: [Converting canvas apps with the Dynamics 365 connector](/powerapps/maker/canvas-apps/use-native-cds-connector#converting-canvas-apps-with-the-dynamics-365-connector).|
 
 ### Forward looking guidance
 
-When the Common Data Service (current environment) connector represents a viable replacement for all situations where the Dynamics 365 and Common Data Service connectors are used today, we intend to remove both the current Dynamics 365 and Common Data Service connectors so that a single connector based on the Common Data Service (current environment) connector will remain. At that time it will be required to convert any Flows, Logic Apps, and Canvas Apps still using the Dynamics 365 and Common Data Service connectors.
+When the Microsoft Dataverse connector represents a viable replacement for all situations where the Dynamics 365 and Microsoft Dataverse (legacy) connectors are used today, we intend to remove both the current Dynamics 365 and Microsoft Dataverse (legacy) connectors so that a single connector based on the Microsoft Dataverse connector will remain. At that time it will be required to convert any Flows, Logic Apps, and Canvas Apps still using the Dynamics 365 and Microsoft Dataverse (legacy) connectors.
 
 We will announce timelines as they are determined.
 

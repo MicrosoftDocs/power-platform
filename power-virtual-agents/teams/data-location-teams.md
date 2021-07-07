@@ -54,6 +54,8 @@ For example, if the user's browser locale setting is *en-GB*, the bot knows that
 
 Power Virtual Agents in Teams can be created in the [supported data locations](../data-location.md). You can create a bot if your tenant's location is supported, or you can use the Power Virtual Agents web app by choosing the datacenter you want to use when [setting up your environment](../environments-first-run-experience.md).
 
+If you create bots in Teams from an unsupported location (Germany, United Arab Emirates (UAE), or South Africa), your bot will be created in Europe.
+
 ## See also
 
 - [Language support](authoring-language-support-teams.md)

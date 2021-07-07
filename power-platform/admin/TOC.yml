@@ -518,6 +518,8 @@
         href: supported-web-browsers-and-mobile-devices.md
       - name: Web application requirements
         href: web-application-requirements.md
+      - name: Support end for Internet Explorer
+        href: support-end-internet-explorer.md
       - name: Server cipher suites and TLS requirements
         href: server-cipher-tls-requirements.md
     - name: Security and governance

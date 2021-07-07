@@ -64,8 +64,6 @@ Microsoft’s government cloud services meet the requirements of FedRAMP.
 
 By deploying protected services including Azure Government, Office 365 US Government, and Dynamics 365 Government, federal and defense agencies can leverage a rich array of compliant services. 
 
-Power Virtual Agents availability in GCC and GCC High plans are estimated to be generally available by June 2021.
-
 [Learn more about FedRAMP](/compliance/regulatory/offering-fedramp).
 
 ## SOC compliance

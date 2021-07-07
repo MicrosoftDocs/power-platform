@@ -40,7 +40,7 @@ The following are prerequisites for installing the CoE Starter Kit as it's inclu
     -  This solution will work for environment admins, but the view will be restricted to only the environments an environment admin has access to.
     - This account must be email enabled.
 
--  Environment with a Dataverse or Dataverse for Teams instance, where the user installing the solution has the System Administrator security role.
+-  Environment with a Dataverse or Dataverse for Teams instance, where the user installing the solution has the System Administrator security role. We recommend against using security groups to control access to this environment, because it's likely that users who don't have access to this environment will be participating in approvals. If you choose to use a security group to control access, users will have to be a part of that group to work with the archival solutions.
 
 - Licenses
     - A Microsoft 365 license is required to use Office 365 connectors like Outlook, SharePoint and Groups.
@@ -107,9 +107,9 @@ When you're ready to extend the CoE Starter Kit with your own ideas, you'll do s
 
 ## Installing updates
 
-Periodically, the solution will receive updates with new features, bug fixes, or optimizations. These updates will be announced on the [GitHub repo](https://aka.ms/CoEStarterKitRepo), and can be downloaded from there or by direct download at [aka.ms/CoEStarterKitDownload](https://aka.ms/CoEStarterKitDownload).
+Periodically, the solution will receive updates with new features, bug fixes, or optimizations. These updates will be announced on the [GitHub repo](https://aka.ms/CoEStarterKitRepo), and can be downloaded from there or by direct download at [aka.ms/CoEStarterKitDownload](https://aka.ms/CoEStarterKitDownload). We target releasing monthly during the first full week of each month.  
 
-Install the updates by importing the latest version to the environment where you originally installed the solution. Select **Upgrade** to update the solution.
+Install the updates by importing the latest version to the environment where you originally installed the solution. Select **Upgrade** (the default) to update the solution.
 
 > [!NOTE]
 > If you have made any changes to the flows / apps in the solution they will not receive updates until you remove that unmanaged layer. <br>
