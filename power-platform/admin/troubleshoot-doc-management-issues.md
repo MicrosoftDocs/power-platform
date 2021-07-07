@@ -2,7 +2,7 @@
 title: "Troubleshooting SharePoint document management issues"
 description: "Learn how to troubleshoot document management issues based on error messages, including missing folders and documentation libraries."
 keywords: encrypt
-ms.date: 06/15/2020
+ms.date: 06/08/2021
 ms.service: power-platform
 ms.custom: 
 ms.topic: article
@@ -26,8 +26,38 @@ search.app:
 
 # Troubleshooting document management issues
 
-This topic explains how to use information provided in error messages to fix issues with the document management feature.
+This section explains how to use information provided in error messages to fix issues with the document management feature.
 Below is an [index](#index-of-errors) that will help you to reach the right solution. The link in each cell navigates to the reason and mitigation steps for the corresponding error message.
+
+## Common errors
+
+### Language mapping and localization of custom columns in SharePoint
+
+You can create custom columns in SharePoint with support for multiple languages, but it must follow the correct rules for language mapping. The custom column in Dynamics must have the "name" field set to an exact match of the column name on Sharepoint.com. 
+
+For example, if a custom column on Sharepoint.com is created with the name "new_language", then the "name" field of the column in Dynamics must also be named "new_language". The "display name" field in dynamics can be customized, but the "name" field must match the Sharepoint.com column name. 
+
+### OneNote files don't open when launched from Dynamics
+
+If OneNote files are failing to automatically open when launched from Dynamics, it may be due to the record name having more than 128 characters. If OneNote files are failing to automatically open when launched from Dynamics, you may need to shorten the record name and rename the file to match from the document associated grid. Once the record name and file name are shortened, the file should correctly open from OneNote. 
+
+:::image type="content" source="media/doc-management-troubleshoot2.png" alt-text="Select OneNote to open a OneNote file from the timeline.":::
+
+### Error message "Collaborate and share files easily–ask your admin to enable SharePoint"
+
+This issue occurs when document management has not been enabled for this entity. This can be fixed by having the CRM administrator enable document management for that entity using the “Document Management Settings” wizard. 
+
+:::image type="content" source="media/doc-management-troubleshoot3.png" alt-text="Error message displayed for Account entity.":::
+
+The administrator will need to [enable document management](enable-sharepoint-document-management-specific-entities.md) for the Account entity.
+
+:::image type="content" source="media/doc-management-troubleshoot4.png" alt-text="Enable document management of Account entity.":::
+
+### Custom Sharepoint Grid Configuration
+
+If you create a custom grid for use with Sharepoint, the grid must adhere to the requirements for FetchXML and LayoutXML or you will get an error. 
+
+See [Troubleshoot SharePoint integration](troubleshoot-set-up-sharepoint-online.md#malformed-fetchxml-or-layoutxml---validate-and-fix).
 
 ## Error messages
 
