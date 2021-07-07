@@ -12,7 +12,7 @@ metadata:
   ms.topic: hub-page # Required
   author: KumarVivek #Required; your GitHub user alias, with correct capitalization.
   ms.author: kvivek #Required; microsoft alias of author; optional team alias.
-  ms.date: 09/11/2020 #Required; mm/dd/yyyy format.
+  ms.date: 07/06/2021 #Required; mm/dd/yyyy format.
   hide_bc: false
 
 highlightedContent:
@@ -35,6 +35,11 @@ highlightedContent:
     - title: Microsoft Power Platform training on Microsoft Learn
       itemType: learn
       url: /learn/powerplatform/
+      
+    # Card
+    - title: Microsoft Power Platform In a Day workshops
+      itemType: get-started
+      url: https://aka.ms/PowerPlatformILT
 
 conceptualContent:
   # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
