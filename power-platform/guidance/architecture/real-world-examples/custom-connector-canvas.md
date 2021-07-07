@@ -16,7 +16,7 @@ With custom connectors, developers can capitalize on existing organization inves
 To enable Logic Apps, Power Automate, or Power Apps to communicate with the REST or SOAP API, use a custom connector, which is a wrapper around a REST API (Logic Apps also supports SOAP APIs). A high-level architecture of how custom connectors work is shown in the following image.
 
 <!--![Diagram of custom connector architecture.](./media/CustomConnectorArchitecture.png)-->
-:::image type="complex" source="./media/CustomConnectorArchitecture.png" alt-text="Diagram of custom connector architecture.:::
+:::image type="complex" source="./media/CustomConnectorArchitecture.png" alt-text="Diagram of custom connector architecture.":::
    <!--NOTE FROM EDITOR: NEED DETAILED ALT TEXT HERE-->
 :::image-end:::
 
