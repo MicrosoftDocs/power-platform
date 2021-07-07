@@ -129,9 +129,9 @@ To allow your app to have access to Exchange Online you need to grant **Office 3
 5. Use the tool tips to fill in the required information.
 6. For **Authentication Type** choose one of the following:
 
-    - **S2S auth (Same Tenant)** For more information, see [Build web applications using server-to-server (S2S) authentication](/powerapps/developer/data-platform/build-web-applications-server-server-s2s-authentication).
+    - **S2S auth (Same Tenant)**: For more information, see [Build web applications using server-to-server (S2S) authentication](/powerapps/developer/data-platform/build-web-applications-server-server-s2s-authentication).
     
-    - **Oauth (Cross Tenant)**. Use the information that you noted from the [previous section](connect-exchange-online.md#exchange-online-cross-tenant-authentication) and fill in the tenant ID, application ID, and client secret details on the form. 
+    - **Oauth (Cross Tenant)**: Use the information that you noted from the [previous section](connect-exchange-online.md#exchange-online-cross-tenant-authentication) and fill in the tenant ID, application ID, and client secret details on the form. 
     
         > [!div class="mx-imgBorder"]
         > ![Email server profile form](media/server-profile-form.png "Email server profile form") |
