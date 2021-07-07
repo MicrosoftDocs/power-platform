@@ -8,7 +8,7 @@ ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/06/2021
+ms.date: 07/07/2021
 search.audienceType: 
   - admin
 search.app:
