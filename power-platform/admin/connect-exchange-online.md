@@ -53,11 +53,10 @@ With both customer engagement apps (such as [Dynamics 365 Sales](./../sales-prof
 
 4. For **Email Server Type** select **Exchage Online**.
 
-
    > [!div class="mx-imgBorder"] 
    > ![Select Exchange Online server profile](media/exchange-online-server-profile.png "Select Exchange Online server profile]")
 
-5. Use the tool tips to fill in the required information.
+5. For **Set as default profile for new mailboxes** choose wheater you want this server profile as the default profile for new mailboxes. 
 6. For **Authentication Type** choose one of the following:
 
     - **S2S auth (Same Tenant)**: For more information, see [Build web applications using server-to-server (S2S) authentication](/powerapps/developer/data-platform/build-web-applications-server-server-s2s-authentication).
@@ -66,8 +65,10 @@ With both customer engagement apps (such as [Dynamics 365 Sales](./../sales-prof
     
         > [!div class="mx-imgBorder"]
         > ![Email server profile form](media/server-profile-form.png "Email server profile form") 
+        
+7. Expand the **Advanced** section and then use the tooltips to choose your email processing options. 
 
-7. When you're done select **Save**.
+8. When you're done select **Save**.
 
 ## Verify you have the profile: Microsoft Exchange Online  
  If you have an [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] subscription in the same tenant as your subscription, customer engagement apps create a default profile for the email connection: **Microsoft Exchange Online**. To verify this profile:  
