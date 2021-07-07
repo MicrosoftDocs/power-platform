@@ -710,17 +710,19 @@
             href: supported-email-service-configurations-server-side-synchronization.md
           - name: Connect to Exchange Online
             href: connect-exchange-online.md
+          - name: Cross tenant authentication  
             items:
             - name: Exchange Online cross tenant authentication
               href: connect-exchange-online-server-profile-oauth.md
           - name: Connect to Exchange Server (on-premises)
             href: connect-exchange-server-on-premises.md
+          - name: Hybrid Modern Authentication 
             items:
             - name: Hybrid Modern Authentication (HMA) for Exchange on-premises
               href: connect-exchange-server-onprem-hma.md
           - name: Test connection to Exchange Server (on-premises)
             href: test-connection-exchange-server-onpremises.md
-          - name: Connect to IMAP or SMTP servers
+          - name: Connect to IMAP or POP servers
             href: connect-to-imap-servers.md 
           - name: Connect to Gmail
             items:
