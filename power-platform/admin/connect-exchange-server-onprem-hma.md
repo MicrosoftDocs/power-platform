@@ -146,3 +146,6 @@ Before you [create an email server profile](connect-exchange-server-on-premises.
 - Key Vault KeyName: This is the certificate name used in Key Vault. 
 - KeyVault Application Id: This is the appId of the KV-App used by Dynamics to retrieve the certificate from Key Vault.
 - KeyVault Client Secret: This is the client secret for the KV-App used by Dynamics 365. 
+
+  > [!div class="mx-imgBorder"] 
+  > ![Exchange Hybrid Modern Auth (HMA)](media/hma-auth.png "Exchange Hybrid Modern Auth (HMA)")
