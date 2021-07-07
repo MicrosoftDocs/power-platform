@@ -18,7 +18,6 @@ search.app:
 ---
 # Connect to Exchange Online
 
-
 With both customer engagement apps (such as [Dynamics 365 Sales](./../sales-professional/help-hub.md), [Dynamics 365 Customer Service](dynamics365/customer-service/help-hub.md), [Dynamics 365 Marketing](dynamics365/marketing/help-hub.md), [Dynamics 365 Field Service](dynamics365/field-service/overview.md), and [Dynamics 365 Project Service Automation](dynamics365/project-operations/psa/overview.md), and [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] hosted as online services, connecting the two is a simpler, more straightforward configuration.  
   
   
@@ -66,7 +65,7 @@ With both customer engagement apps (such as [Dynamics 365 Sales](./../sales-prof
     - **Oauth (Cross Tenant)**: To get the information for this option, follow the steps in this topic: [Exchange Online cross tenant authentication](connect-exchange-online-server-profile-oauth.md).
     
         > [!div class="mx-imgBorder"]
-        > ![Email server profile form](media/server-profile-form.png "Email server profile form") |
+        > ![Email server profile form](media/server-profile-form.png "Email server profile form") 
 
 7. When you're done select **Save**.
 
