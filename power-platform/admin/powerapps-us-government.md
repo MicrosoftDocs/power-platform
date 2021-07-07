@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/01/2021
+ms.date: 07/07/2021
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -240,7 +240,7 @@ Some of the features available in the commercial version of Power Apps are not a
 
 - [Connectors](https://gov.flow.microsoft.us/connectors/): The most popular connectors in use in our commercial service (based on usage telemetry) have been published; if there is a connector available in the commercial offering that you do not see deployed, contact support, and we will review your request. Note that third-party connectors will not be added to GCC High or DoD.  Features are being investigated with the Digital Loss Prevention (DLP) administration functionality that will enable Connectors to be added “blocked by default.”  Until this is possible, third-party connectors pose a measurable threat to organizations relying on the GCC High environment to maintain requisite data exfiltration controls.
 
-- [AI Builder](/ai-builder/).
+- [AI Builder](/ai-builder/) is not available in DoD.
 - [Geospatial features](/powerapps/maker/canvas-apps/geospatial-overview) are not available in government environments.
 
 ## Requesting support
