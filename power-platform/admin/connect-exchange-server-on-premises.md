@@ -92,7 +92,7 @@ Follow the steps below to configure HMA for Exchange on-premises.
 
 2. Select **Generate/Import**.
 
-   :::image type="content" source="media/azure-key-vault-generate-import.png" alt-text="Select Generate/Import":::
+   :::image type="content" source="media/azure-key-vault-generate-import.png" alt-text="Select Generate/Import"
 
 3. At this point, a certificate can be either generated or imported. Specify a certificate name and then select **Create**. 
 
@@ -112,7 +112,8 @@ The client secret will be used by Dynamics 365 to authenticate the app and retri
 
 2. Select **Add Access Policy**.
 
-   :::image type="content" source="media/azure-key-vault-access-policies2.png" alt-text="Azure Key Vault add access policy":::
+  > [!div class="mx-imgBorder"] 
+  > ![Azure Key Vault add access policy](media/azure-key-vault-access-policies2.png "Azure Key Vault add access policy")
 
 3. For **Select principal**, select a principal. For these steps, we'll select “KV-App”. 
 
