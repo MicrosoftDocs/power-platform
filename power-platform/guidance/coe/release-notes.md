@@ -6,7 +6,7 @@ manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/01/2021
+ms.date: 07/06/2021
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -19,9 +19,11 @@ search.app:
 
 # Released versions for the CoE Starter Kit
 
-Select each version below to see release notes and updates for each component. You can download the most recently updated assets from the [GitHub repository](https://aka.ms/coestarterkitrepo).
+The CoE Starter Kit is published via GitHub. Feature requests and bug fixes are worked on in [Issues](https://github.com/microsoft/coe-starter-kit/issues) and releases are managed with [Milestones](https://github.com/microsoft/coe-starter-kit/milestones).
 
-## Latest version availability
+View the [Latest Releases](https://github.com/microsoft/coe-starter-kit/releases/latest) to learn what bugs have been fixed and what new features have been introduced.
+
+<!--## Latest version availability
 
 |  Component     | Latest version |
 |--------|-------------|
@@ -79,6 +81,6 @@ Select each version below to see release notes and updates for each component. Y
 | [1.5](release-notes/auditlog-1.5.md) | April 8, 2021 |
 | [1.4](release-notes/auditlog-1.4.md) | February 1, 2021 |
 | [1.1](release-notes/auditlog-1.1.md) | September 18, 2020 |
-| [1.0](release-notes/auditlog-1.0.md) | July 8, 2020 |
+| [1.0](release-notes/auditlog-1.0.md) | July 8, 2020 |-->
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -6,7 +6,7 @@ manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/01/2021
+ms.date: 07/06/2021
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -20,6 +20,9 @@ search.app:
 # Set up governance components
 
 Multiple governance components are provided in the Center of Excellence (CoE) Starter Kit; each will require some configuration to install. The installation instructions in this article have been segmented based on the set of components that should be grouped and installed together, and dependencies on other segments are outlined in each section.
+
+> [!IMPORTANT]
+> You cannot use the archival solution if you have secured the environment with security groups. Please see  [Security groups and approvals](limitations.md#security-groups-and-approvals)
 
 ## Initialize flow approval tables in your environment
 
@@ -78,7 +81,7 @@ This step should be completed after you import the solution. Environment variabl
 All flows in this solution depend on all environment variables' being configured.
 
 >[!TIP]
->To view all environment variables in the environment, open the default solution for the environment, and set the **Type** filter to **Environment variable**.
+>Learn how to update environment variables for Production and Dataverse for Teams environments: [Update Environment Variables](setup-core-components.md#update-environment-variables).
 
 1. Select **See Environment Variables** to set the values as described in the following table.
 
@@ -87,6 +90,8 @@ All flows in this solution depend on all environment variables' being configured
    | Auto Delete On Archive | Determines whether apps andd flows are deleted when they're approved for deletion in the following flow: Admin \| App Archive and Clean Up - Check Approvals and Archive. <br> Value must be Yes or No. A default value of Yes is provided. |
    | Exclude Default environment from Compliance Requests | Determines if the default environment is excluded in the Compliance Details request flow. <br> Value must be Yes or No. A default value of No is provided.  |
    | ProductionEnvironment | Determines if the environment is Production or Dev/Test. True (the default) will mean that the approvals are sent to app/flow owners. False will send those approvals to the admin email. |
+   | Cleanup Old Objects App URL | (Optional) Link to the Cleanup Old Objects canvas app included in this solution. <br> If included, communication about old objects which are considered no longer useful will include the link to make cleanup easier |
+   | Flow Approvals URL | (Optional) Link to Power Automate's Approval page for your CoE Environment <br> If included, communication about old objects which are considered no longer useful will include the link to make cleanup easier |
 
 ## Activate the flows
 
