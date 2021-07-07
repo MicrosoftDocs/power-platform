@@ -27,7 +27,7 @@ Users moving to Microsoft Edge (based on Chromium) or another supported modern b
 To prepare for Internet Explorer support ending, administrators in the Power Platform Admin center and in the model-driven apps Advanced Settings will see an informational message like the following *before* August 17th, 2021 and a warning message *starting* August 17th, 2021 if their tenant has Internet Explorer users.  These messages will appear regardless of the browser the administrator is using. 
 
 :::image type="content" source="media/admin-setting-message-on-internet-explorer-support-end.png" alt-text="Internet Explorer support ends on August 17th, 2021. Ensure users switch to a modern browser."::: <br />
-Internet Explorer support ends on August 17th, 2021. Ensure users switch to Microsoft Edge or another modern browser.
+Internet Explorer support ends on August 17th, 2021. Ensure users switch to a modern browser.
 
 ## User experience 
 
@@ -38,13 +38,13 @@ Internet Explorer support has ended. Please switch to Microsoft Edge or another 
 
 **Before August 17, 2021,** some users using model-driven apps in Internet Explorer might see an informational message like the following at the top of the app if their administrators have enabled it. 
 
-:::image type="content" source="media/user-internet-explorer-support-will-end-info.png" alt-text="Internet Explorer support has ended. Please switch to Microsoft Edge or another modern browser."::: <br />
-Internet Explorer support ends August 17th, 2021. Consider using Microsoft Edge or another modern browser instead.
+> **Alert**<br />
+> Internet Explorer support ends August 17th, 2021. Please switch to a modern browser.
 
 **Prior to the 2022 Wave 1 release blocking Internet Explorer,** users using model-driven apps in Internet Explorer will see an error message at the top of the app like the following.  
 
 > **Alert**<br />
-> Internet Explorer support has ended and will be blocked. Please switch to Microsoft Edge or another modern browser instead.
+> Internet Explorer support has ended and will be blocked. Please switch to a modern browser.
 
 **With the 2022 Wave 1 release,** users opening model-driven apps in Internet Explorer will be blocked and see a message like this. 
 

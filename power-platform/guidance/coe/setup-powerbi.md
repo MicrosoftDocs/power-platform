@@ -6,7 +6,7 @@ manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/01/2021
+ms.date: 07/06/2021
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -27,7 +27,7 @@ The Power BI dashboard provides a holistic view with visualizations and insights
 You can get the CoE Power BI dashboard by downloading the CoE Starter Kit compressed file ([aka.ms/CoeStarterKitDownload](https://aka.ms/CoeStarterKitDownload)). **Extract the zip file** after downloading - it contains two Power BI template files, one for connecting to Dataverse with the **Dataverse** connector and one for connecting to Dataverse with **Common Data Service (Legacy**) connector.
 
 - You can use the **Legacy_CoEDashboard_yyyyMM.pbit** file if you have installed the CoE Starter Kit in a Production environment. This uses the earlier version of the Dataverse connector in Power BI. Use this connector for large datasets that are greater than 80 MB.
-- You must use **Dataverse_CoEDashboard_yyyyMM.pbit** if you have installed the CoE Starter Kit in a Dataverse for Teams environment (those don't support Import). You can use **Dataverse_yyyyMMdd.pbit** if you have installed the CoE Starter Kit in a Production Environment, if your dataset is smaller than 80 MB.
+- You must use **Dataverse_CoEDashboard_yyyyMM.pbit** if you have installed the CoE Starter Kit in a Dataverse for Teams environment (those don't support Import). You can use **Dataverse_yyyyMMdd.pbit** if you have installed the CoE Starter Kit in a Production Environment, if your dataset is smaller than 80 MB. This version connects to Microsoft Dataverse using the TDS endpoint, therefore the TDS Endpoint has to be enabled for the environment: [Manage feature settings](https://docs.microsoft.com/power-platform/admin/settings-features).
 
 Learn more:
 
@@ -64,9 +64,6 @@ You need the environment URL of the Microsoft Power Platform environment the CoE
     1. Select **About** > **Session Details** and copy the Instance URL from there.
          ![Select the Instance URL of your environment](media/coe-dft-bi2.png "Select the Instance URL of your environment")
 
-> [!NOTE]
-> The Power BI dashboard uses Direct Query to connect to Microsoft Dataverse, therefore TDS Endpoint has to be enabled for the environment: [Manage feature settings](https://docs.microsoft.com/power-platform/admin/settings-features)
-
 ## Configure the Power BI dashboard
 
 You can configure and modify the Power BI dashboard by working directly with the Power BI (.pbit) file and Power BI Desktop. This gives you flexibility in terms of modifying the dashboard to your own branding, and including (or excluding) pages or visuals you want to see (or not see) in the dashboard.
@@ -80,6 +77,8 @@ You can configure and modify the Power BI dashboard by working directly with the
    ![Enter OrgUrl to configure Power BI dashboard](media/pbit.png "Enter OrgUrl to configure Power BI dashboard")
 
 1. Save the dashboard locally, or select **Publish** and choose the workspace you want to publish the report to.
+
+1. [Configure scheduled refresh](https://docs.microsoft.com/power-bi/connect-data/refresh-data#configure-scheduled-refresh) for your Power BI Dataset to update the report daily.
 
 You can find the report later by going to [app.powerbi.com](https://app.powerbi.com/).
 
@@ -101,26 +100,7 @@ When you see *Unable to open document: The queries were authored with a newer ve
 
 ### (Optional) Configure embedded apps in the CoE dashboard
 
-The dashboard can be configured to use embedded apps to enable you to drive action based on insights you find. With the embedded apps, you can grant yourself access to resources, delete apps and flows, and reach out to the maker via email. You'll have to import the apps first, and then configure them in the dashboard.
-
-#### Import embedded apps
-
-> [!NOTE]
-> If you have installed the Center of Excellence - Core Components in a Teams environment, the embedded apps are included in the solution and you will not have to import them. Skip to [Embed apps into the Power BI dashboard](#embed-apps-into-the-power-bi-dashboard).
-
-1. Go to **[make.powerapps.com](https://make.powerapps.com)** in the environment where you installed the CoE Starter Kit.
-1. On the left pane, select **Apps**.
-1. Select **Import canvas app**.
-
-   ![Import canvas app](media/coe83.png "Import canvas app")
-
-1. Import the **Admin – Access this app** app (Admin-AccessthisApp.zip).
-1. Configure all the connections.
-1. Repeat the same steps for the **Admin – Access this flow** app (Admin-AccessthisFlow.zip).
-
-#### Embed apps into the Power BI dashboard
-
-You'll now configure the Power Apps visuals in the Power BI dashboard to point to the apps you just imported.
+The dashboard can be configured to use embedded apps to enable you to drive action based on insights you find. With the embedded apps, you can grant yourself access to resources, delete apps and flows, and reach out to the maker via email. You'll have to configure the Power Apps visuals in the Power BI dashboard before you can use them.
 
 1. Open the CoE Power BI dashboard in **Power BI Desktop**.
 1. Go to the **App Detail** page.
@@ -150,10 +130,7 @@ You'll now configure the Power Apps visuals in the Power BI dashboard to point t
      ![Select Admin - Access this app to embed this app into Power BI](media/coe89.PNG "Select Admin - Access this app to embed this app into Power BI")
 
 1. Resize and move the visual to the location you want. Delete the placeholder from the template, and move your embedded app to the same place.
-
-**To configure the app on the Flow Detail page**
-
-1. Go to the **Cloud flow detail** tab.
+1. Next, go to the **Cloud flow detail** tab.
 1. Select the **Power Apps visual** from **Visualizations**.
    Select the fields from your dataset that you want to use in the app.
 1. With the visual selected, select the **admin_flowid** and **admin_flowenvironment** flows under **Fields**.

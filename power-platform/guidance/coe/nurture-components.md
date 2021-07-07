@@ -44,6 +44,10 @@ Here's a breakdown of the assets that form the nurture components solution:
 
 **Maker Journey Maker SR** Gives a user read access to the Maker Assessment tables. When you share the Maker Assessment app with your organization, make sure to assign them the **Maker Journey Maker SR** security role.
 
+## Dataflows
+
+**Maker Assessment Starter Dataflow** Used to install starter data for the Maker Assessment app. Used once at setup and not needed after that.
+
 ## Tables
 
 ### InADayAttendees
@@ -85,7 +89,6 @@ Potential answers to questions in the Maker Assessment app.
 | Training in a Day \| Feedback Reminder | Schedule | Daily | Sends an email to attendees of a training event on the day, and requests feedback. |
 | Training in a Day \| Registration Confirmation Automated | Automated | when a user registers for an event using the [Training in a day](#training-in-a-day--registration) app | Sends an email to attendees of a training event on the day, and requests feedback. |
 | Training in a Day \| Reminder 3 days prior to event | Schedule | Daily | Sends a reminder email to an attendee of a Training in a Day event three days before the event. |
-| Maker Assessment \| Import starter data | Instant | Manual (once) | This instant cloud flow runs once during setup to add some starter questions, answers, and categories into your dataverse tables. |
 
 ## Apps
 
