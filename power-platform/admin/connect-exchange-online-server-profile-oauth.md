@@ -76,10 +76,10 @@ To allow your app to have access to Exchange Online you need to grant **Office 3
 
 5. On the consent confirmation dialog, select **Yes**.
 
-   Now let's collect all the information required from the Azure Portal before configuring the email server profile using Oauth (Cross Tenant) authentication Dynamics 365:
+## Email server profile for Exchange Online with authentication type: Oauth (Cross Tenant)
 
-   - TenantId: This is the tenantId of the tenant where the Exchange online is configured.
+To [Create an email server profile for Exchnage Online using Oauth (Cross Tenant)](connect-exchange-online.md#create-an-email-server-profile-for-exchnage-online), you need to collect the following informaion from the Azure Portal:
 
-   - Application Id: This is the appId used by Dynamics to connect to Exchange Online.
-
-   - Client Secret: This is the client secret used by Dynamics 365 to authenticate as the app.
+- TenantId: This is the tenantId of the tenant where the Exchange online is configured.
+- Application Id: This is the appId used by Dynamics to connect to Exchange Online.
+- Client Secret: This is the client secret used by Dynamics 365 to authenticate as the app.
