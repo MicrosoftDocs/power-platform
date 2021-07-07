@@ -1,5 +1,5 @@
 ---
-title: "Connect to IMAP, POP, or SMTP servers  | MicrosoftDocs"
+title: "Connect to IMAP or POP servers  | MicrosoftDocs"
 description: Connect to IMAP, POP, or SMTP servers 
 ms.service: power-platform
 ms.component: pa-admin
@@ -16,7 +16,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Connect to IMAP, POP, or SMTP servers
+# Connect to IMAP or POP servers
 
 Follow these steps to connect customer engagement apps (such as [Dynamics 365 Sales](./../sales-professional/help-hub.md), [Dynamics 365 Customer Service](dynamics365/customer-service/help-hub.md), [Dynamics 365 Marketing](dynamics365/marketing/help-hub.md), with IMAP or POP email servers such as used for Gmail and Yahoo! Mail.  
 
