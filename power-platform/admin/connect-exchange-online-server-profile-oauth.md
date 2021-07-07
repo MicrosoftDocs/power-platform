@@ -19,7 +19,7 @@ search.app:
 
 # Exchange Online cross tenant authentication
 
-Use Server-Side Sync to synchronize Exchange Online mailboxes that reside on different Exchange Online tenants. Follow the steps in this section to complete the prerequistites before you set up a Exchange Online server profile using Oauth cross tenant authentication.
+Use Server-Side Sync to synchronize Exchange Online mailboxes that reside on different Exchange Online tenants. Follow the steps in this topic to complete the prerequistites before you set up a Exchange Online server profile using Oauth cross tenant authentication. For more information, see [Create an email server profile for Exchnage Online] (connect-exchange-online.md#create-an-email-server-profile-for-exchnage-online).
 
 ## Configuration
 
