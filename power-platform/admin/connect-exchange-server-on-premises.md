@@ -182,11 +182,46 @@ Now let’s collect all the information required from the Azure Portal before co
 
 ## Create an email server profile  
 
-1. In the Microsoft Power Platform admin center, select an environment. 
 
-2. Select **Settings** > **Email** > **Server profiles**.  
+1. In the  [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment. 
 
-3. Select **New** > **Exchange Server (Hybrid)**.  
+2. On the command bar select **Settings** > **Email** > **Server profiles**.  
+    
+   > [!div class="mx-imgBorder"] 
+   > ![Email server profile setting](media/server-profile-settings.png "Email server profile setting")
+
+3. On the command bar, select **New server profile**.
+
+   > [!div class="mx-imgBorder"] 
+   > ![Create new server profile](media/new-server-profile.png "Create a new server profile")
+
+4. Select **New** > **Exchange Server (On Prem)**.  
+
+   > [!div class="mx-imgBorder"] 
+   > ![Select Exchange On Prem server profile](media/exchange-onprem-server-profile.png "Select Exchange On Prem server profile]")
+
+5. Use the tool tips to fill in the required information.
+
+6. For **Authentication Type** choose one of the following:
+
+    - **Credential specified in email server profile**: 
+         - **User name and password**: Enter the credentials for the [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] inpersonation account.
+         - **Locations and ports**: Select whether **Auto-disver location** is active or inactvie. If you shoose **Inactive** then fill in the incoming and outgoing location along with port and type of authentication protocol.
+
+           > [!div class="mx-imgBorder"] 
+           > ![Credential specified in email server profile](media/server-profile-onprem-cred-server.png "Credential specified in email server profile")
+
+    - **Exchange Hybrid Modern Auth (HMA): 
+
+
+
+
+
+
+
+
+
+
 
 4. **For an Exchange email server profile, specify the following details:**  
 
