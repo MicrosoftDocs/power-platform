@@ -1,12 +1,13 @@
 ---
 title: Preview: Hybrid Modern Authentication for Exchange on-premises | Microsoft Docs
 description: Learn about connecting mailboxes hosted on Exchange on-premises Hybrid Modern Authentication to Dynamics 365.
-author: mduelae
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/7/2021
-ms.author: jimholtz
+ms.date: 02/17/2021
+author: revachauhan
+ms.author: rechauha
+ms.reviewer: mkaur
 search.audienceType: 
   - admin
 search.app:
