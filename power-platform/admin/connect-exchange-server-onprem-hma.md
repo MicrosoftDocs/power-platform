@@ -63,7 +63,7 @@ Follow the steps below to configure HMA for Exchange on-premises.
 
 3. At this point, a certificate can be either generated or imported. Specify a certificate name and then select **Create**. 
 
-The certificate name will be used later to reference the certificate. For these steps, the certificate will be named “HMA-Cert”. 
+The certificate name will be used later to reference the certificate. For these steps, the certificate will be named **HMA-Cert**. 
 
 ### Create a new App Registration for Key Vault access 
 
@@ -134,7 +134,9 @@ In order to allow HMA-App to have access to Exchange on-premises, grant the “O
    > ![Grant admin access to API permission for app](media/azure-key-vault-api-permissions-grant-admin-access[1].png "Grant admin access to API permission for app")
 
 
-Now let’s collect all the information required from the Azure Portal before configuring the email server profile on Dynamics 365: 
+## Email server profile with authentication type: Exchange Hybrid Modern Auth (HMA)
+
+Before you [create an email server profile](connect-exchange-server-on-premises.md) on Dynamics 365 using Exchange Hybrid Modern Auth (HMA), you need to collect the following information from the Azure Portal:
 
 - EWS URL: The Exchange WebServices endpoint where the Exchange on-premises is located which must be publicly accessible from Dynamics 365. 
 - AAD resource Id: This is the Azure resource id for which the HMA app will request access to. It is usually the host part of the EWS endpoint URL. 
