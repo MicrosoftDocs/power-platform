@@ -6,7 +6,7 @@ manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/01/2021
+ms.date: 07/06/2021
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -114,6 +114,8 @@ This flow starts the approval process and writes the approval task to the Archiv
 
 **Customize**: By default, this flow will assign approvals to the app owner. In order to test in a debug environment, in which you do not want to involve users, you can update the [*ProductionEnvironment* environment variable](setup-governance-components.md#update-environment-variables) to **No**, and the approvals will be sent to the admin account instead.
 
+![Archive and Clean Up v2 - workflow for Apps](media/archivalFlow-Apps.png)
+
 ### Admin \| Archive and Clean Up v2 (Start Approval for Flows)
 
 Similar to the previous flow, but for flows rather than apps. This flow checks for flows that haven't been modified in the last six months (this time span is configurable) and asks the flow owner (via flow approvals) whether the flow can be deleted.
@@ -123,6 +125,8 @@ It recommends that the flow owner take a backup of the app in the event that the
 This flow starts the approval process and writes the approval task to the Archive Approval Dataverse table.
 
 **Customize**: By default, this flow will assign approvals to the flow owner. In order to test in a debug environment, in which you do not want to involve users, you can update the [*ProductionEnvironment* environment variable](setup-governance-components.md#update-environment-variables) to **No**, and the approvals will be sent to the admin account instead.
+
+![Archive and Clean Up v2 - workflow for Flows](media/archivalFlow-Flows.png)
 
 ### Admin \| Archive and Clean Up v2 (Check Approval)
 
