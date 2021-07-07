@@ -92,7 +92,8 @@ Follow the steps below to configure HMA for Exchange on-premises.
 
 2. Select **Generate/Import**.
 
-   :::image type="content" source="media/azure-key-vault-generate-import.png" alt-text="Select Generate/Import"
+   > [!div class="mx-imgBorder"] 
+   > ![Select Generate/Import](media/azure-key-vault-generate-import[1].png "Select Generate/Import")
 
 3. At this point, a certificate can be either generated or imported. Specify a certificate name and then select **Create**. 
 
@@ -112,14 +113,16 @@ The client secret will be used by Dynamics 365 to authenticate the app and retri
 
 2. Select **Add Access Policy**.
 
-  > [!div class="mx-imgBorder"] 
-  > ![Azure Key Vault add access policy](media/azure-key-vault-access-policies2.png "Azure Key Vault add access policy")
+   > [!div class="mx-imgBorder"] 
+   > ![Azure Key Vault add access policy](media/azure-key-vault-access-policies2[1].png "Azure Key Vault add access policy")
 
 3. For **Select principal**, select a principal. For these steps, we'll select “KV-App”. 
 
 4. Select permissions. Be sure to add **Get permission** under **Secret permissions** and **Certificate permissions**.  Both are required for the KV-App to be able to access the certificate. Then, select **Add**.
 
-   :::image type="content" source="media/azure-key-vault-add-access-policy.png" alt-text="Azure Key Vault set permissions for access policy":::
+   > [!div class="mx-imgBorder"] 
+   > ![Azure Key Vault set permissions for access policy](media/azure-key-vault-add-access-policy[1].png "Azure Key Vault set permissions for access policy")
+
 
 ### Create a new app registration for HMA access 
 
@@ -141,7 +144,8 @@ In order to allow HMA-App to have access to Exchange on-premises, grant the “O
 
 2. Select **API Permissions** > **Add a permission**.
 
-   :::image type="content" source="media/azure-key-vault-api-permissions.png" alt-text="Add API permissions to app":::
+   > [!div class="mx-imgBorder"] 
+   > ![Add API permissions to app](media/azure-key-vault-api-permissions[1].png "Add API permissions to app")
 
 3. Select **APIs my organization uses**.
 
@@ -151,14 +155,18 @@ In order to allow HMA-App to have access to Exchange on-premises, grant the “O
 
 6. Check **full_access_as_app** to allow the app to have full access to all the mailboxes. Then, select **Add permissions**.
 
-   :::image type="content" source="media/azure-key-vault-api-permissions-full-access.png" alt-text="Assign full access API permissions to app":::
+   > [!div class="mx-imgBorder"] 
+   > ![Assign full access API permissions to app](media/azure-key-vault-api-permissions-full-access[1].png "Assign full access API permissions to app")
 
-> [!NOTE]
-> If having an app with full access on all mailboxes doesn’t not align with your business requirements, the Exchange on-premises admin can scope the mailboxes the app can access configuring the *ApplicationImpersonation* role on Exchange. See [Configure impersonation](https://docs.microsoft.com/exchange/client-developer/exchange-web-services/how-to-configure-impersonation).
+
+   > [!NOTE]
+   > If having an app with full access on all mailboxes doesn’t not align with your business requirements, the Exchange on-premises admin can scope the mailboxes the app can access configuring the *ApplicationImpersonation* role on Exchange. See [Configure impersonation](https://docs.microsoft.com/exchange/client-developer/exchange-web-services/how-to-configure-impersonation).
 
 7. Select **Grant Admin consent**.
 
-   :::image type="content" source="media/azure-key-vault-api-permissions-grant-admin-access.png" alt-text="Grant admin access to API permission for app":::
+   > [!div class="mx-imgBorder"] 
+   > ![Grant admin access to API permission for app](media/azure-key-vault-api-permissions-grant-admin-access[1].png "Grant admin access to API permission for app")
+
 
 Now let’s collect all the information required from the Azure Portal before configuring the email server profile on Dynamics 365: 
 
