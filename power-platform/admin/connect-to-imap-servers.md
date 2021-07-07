@@ -1,6 +1,6 @@
 ---
-title: "Connect to IMAP or SMTP servers  | MicrosoftDocs"
-description: Connect to IMAP or SMTP servers 
+title: "Connect to IMAP, POP, or SMTP servers  | MicrosoftDocs"
+description: Connect to IMAP, POP, or SMTP servers 
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
@@ -16,9 +16,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Connect to IMAP or SMTP servers
-
-<!-- legacy procedure -->
+# Connect to IMAP, POP, or SMTP servers
 
 Follow these steps to connect customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), with IMAP email servers such as used for Gmail and Yahoo! Mail.  
 
@@ -31,14 +29,37 @@ Follow these steps to connect customer engagement apps (Dynamics 365 Sales, Dyna
 
 ## Create an email server profile  
 
-1. In the Microsoft Power Platform admin center, select an environment. 
+1. In the  [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment. 
 
-2. Select **Settings** > **Email** > **Server profiles**.  
+2. On the command bar select **Settings** > **Email** > **Server profiles**.  
+    
+   > [!div class="mx-imgBorder"] 
+   > ![Email server profile setting](media/server-profile-settings.png "Email server profile setting")
 
-3. Choose **New** > **IMAP/SMTP Server**.  
+3. On the command bar, select **New server profile** and then specify a meaningful **Name** for the profile.
 
-4. **For an Exchange email server profile, specify the following details:**  
+   > [!div class="mx-imgBorder"] 
+   > ![Create new server profile](media/new-server-profile.png "Create a new server profile")
 
+4. Choose **Other(IMAP/POP,SMTP)**.  
+
+   > [!div class="mx-imgBorder"] 
+   > ![Choose Other profile](media/pop-smtp-profile.png "Choose Other profile")
+
+5. For **Set as default profile for new mailboxes** choose wheater you want this server profile as the default profile for new mailboxes. 
+
+6. For **Authentication Type** select **Credential specififed by user or queue**. When you select this option, the credentials specified in the mailbox record of a user or queue are used for sending or receiving email for the respective user or queue. Note: To ensure the credentials are secured, SQL encryption is used to encrypt the credentials stored in the mailbox.
+
+7. Expand the **Locations and ports** and select the following:
+    <ol> 
+      <li> Incoming communication protocol: Select a protocol that will be used for authentication for incoming email.</li>
+      <li> Incoming and Ougoing location: Enter the incoming and outgoing email location. </li>
+      <li> Incoming and Outgoing port: Enter the port on the email server for accessing the incoming email. This field is automatically populated when you save the record. </li>
+      <li> dfdf </li>
+    </ol>
+  
+
+8. Expand the **Advanced** section and use the tooltips to choose your email processing options. 
 
    |  Fields  |     Description      |
    |-----------|----------|   
