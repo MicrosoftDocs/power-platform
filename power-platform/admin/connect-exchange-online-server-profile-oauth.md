@@ -83,3 +83,6 @@ To [create an email server profile for Exchnage Online using Oauth (Cross Tenant
 - TenantId: This is the tenantId of the tenant where the Exchange online is configured.
 - Application Id: This is the appId used by Dynamics to connect to Exchange Online.
 - Client Secret: This is the client secret used by Dynamics 365 to authenticate as the app.
+
+  > [!div class="mx-imgBorder"]
+  > ![Email server profile form](media/server-profile-form.png "Email server profile form") 
