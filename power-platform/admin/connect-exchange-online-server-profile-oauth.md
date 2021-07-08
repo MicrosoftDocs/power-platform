@@ -27,7 +27,7 @@ Sign in to the [Azure portal](https://portal.azure.com/), create the App regist
 
 ## Register your app
 
-Register your app on Azure portal on the tenant where Microsoft Exchange Online resides. Follow the steps in this topic to create the app registration: [Register an application](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app#register-an-application).
+Register your app on Azure portal on the tenant where Microsoft Exchange Online resides. Follow the steps in this topic to create the app registration: [Register an application](/azure/active-directory/develop/quickstart-register-app#register-an-application).
 
 > [!NOTE]
 > You don't need to enter anything for **Redirect URI** since it's not needed.
@@ -41,7 +41,7 @@ When you register your app, note the **Application (client) ID** and **Directory
 
 A client secret is a string value your app uses to identity itself. It's used by Dynamics 365 to authenticate to your app.
 
-To create a client secret, follow the steps in this topic, [Add a client secret](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app#add-a-client-secret). Remember to note the **Secret Value**, as you will need this information later to configure the email server profile.
+To create a client secret, follow the steps in this topic, [Add a client secret](/azure/active-directory/develop/quickstart-register-app#add-a-client-secret). Remember to note the **Secret Value**, as you will need this information later to configure the email server profile.
 
 > [!div class="mx-imgBorder"] 
 > ![Create new client secret](media/client-sercret.png "Create new client secret")
@@ -67,8 +67,8 @@ To allow your app to have access to Exchange Online, you need to grant **Office 
 
    > [!NOTE]
    > if having an app with full access on all mailboxes that doesn't not align with your business requirements, then the Exchange online admin can scope the mailboxes the App can access using Application Access Policy or configuring the Application Impersonation role on Exchange. More information:
-   > - [Scoping application permissions to specific Exchange Online mailboxes](https://docs.microsoft.com/graph/auth-limit-mailbox-access)
-   > - [Configure impersonation](https://docs.microsoft.com/exchange/client-developer/exchange-web-services/how-to-configure-impersonation)
+   > - [Scoping application permissions to specific Exchange Online mailboxes](/graph/auth-limit-mailbox-access)
+   > - [Configure impersonation](/exchange/client-developer/exchange-web-services/how-to-configure-impersonation)
 
 4. On the **Configured permissions** screen, select **Grand admin content for (tenant name)**.
 
