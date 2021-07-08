@@ -89,7 +89,7 @@ With version 9.0., you can connect your customer engagement apps (such as [Dynam
       > [!div class="mx-imgBorder"] 
       > ![Enter email server information](media/auto-discover-server-location.png "Enter email server information")
    
-   - **Credential specified in email server profile** is set to **Exchange Hybrid Modern Auth (HMA)** then enter the location and port for the email server.
+   -  If **Authentication Type** is set to **Exchange Hybrid Modern Auth (HMA)** then enter the location and port for the email server.
 
 8. Expand the **Advanced** section and then use the tooltips to choose your email processing options. 
 
