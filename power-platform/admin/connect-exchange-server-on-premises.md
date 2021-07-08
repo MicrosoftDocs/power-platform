@@ -55,7 +55,7 @@ With version 9.0., you can connect your customer engagement apps (such as [Dynam
 
 1. In the  [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment. 
 
-2. On the command bar select **Settings** > **Email** > **Server profiles**.  
+2. On the command bar, select **Settings** > **Email** > **Server profiles**.  
     
    > [!div class="mx-imgBorder"] 
    > ![Email server profile setting](media/server-profile-settings.png "Email server profile setting")
@@ -65,12 +65,12 @@ With version 9.0., you can connect your customer engagement apps (such as [Dynam
    > [!div class="mx-imgBorder"] 
    > ![Create new server profile](media/new-server-profile.png "Create a new server profile")
 
-4. For **Email Server Type** select **Exchange Server (On Prem)** and then specify a meaningful **Name** for the profile.
+4. For **Email Server Type**, select **Exchange Server (On Prem)** and then specify a meaningful **Name** for the profile.
 
    > [!div class="mx-imgBorder"] 
    > ![Select Exchange On Prem server profile](media/exchange-onprem-server-profile.png "Select Exchange On Prem server profile]")
    
-5. For **Set as default profile for new mailboxes** choose wheater you want this server profile as the default profile for new mailboxes. 
+5. For **Set as default profile for new mailboxes** choose whether you want this server profile as the default profile for new mailboxes. 
 
 6. For **Authentication Type** choose one of the following:
 
@@ -85,12 +85,12 @@ With version 9.0., you can connect your customer engagement apps (such as [Dynam
 
 7. Expand the **Locations and ports** and follow these steps:
 
-   - If **Authentication Type** is set to **Credential specified in email server profile** then select whether **Auto-disver location** is **Active** or **Inactvie**. <br> If you choose **Inactive** then fill in the incoming and outgoing email server information. Enter the port on the email server for accessing incoming and outgoing email. Select the protocol that will be used for authentication for incoming and outgoing email. 
+   - If **Authentication Type** is set to **Credential specified in email server profile**, then select whether **Auto-disver location** is **Active** or **Inactvie**. <br> If you choose **Inactive** then fill in the incoming and outgoing email server information. Enter the port on the email server for accessing incoming and outgoing email. Select the protocol that will be used for authentication for incoming and outgoing email. 
    
       > [!div class="mx-imgBorder"] 
       > ![Enter email server information](media/auto-discover-server-location.png "Enter email server information")
    
-   -  If **Authentication Type** is set to **Exchange Hybrid Modern Auth (HMA)** then enter the location and port for the email server.
+   -  If **Authentication Type** is set to **Exchange Hybrid Modern Auth (HMA)**, then enter the location and port for the email server.
 
 8. Expand the **Advanced** section and then use the tooltips to choose your email processing options. 
 
