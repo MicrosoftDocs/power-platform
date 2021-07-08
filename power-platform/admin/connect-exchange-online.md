@@ -38,11 +38,11 @@ With both customer engagement apps (such as [Dynamics 365 Sales](dynamics365/sal
 >  To make sure you've got a good connection to [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)], run the [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/). For information on what tests to run, see [Test mail flow with the Remote Connectivity Analyzer](https://technet.microsoft.com/library/dn305950\(v=exchg.150\).aspx).  
 
 
-## Create an email server profile for Exchnage Online
+## Create an email server profile for Exchange Online
 
 1. In the  [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment. 
 
-2. On the command bar select **Settings** > **Email** > **Server profiles**.  
+2. On the command bar, select **Settings** > **Email** > **Server profiles**.  
     
    > [!div class="mx-imgBorder"] 
    > ![Email server profile setting](media/server-profile-settings.png "Email server profile setting")
@@ -52,12 +52,12 @@ With both customer engagement apps (such as [Dynamics 365 Sales](dynamics365/sal
    > [!div class="mx-imgBorder"] 
    > ![Create new server profile](media/new-server-profile.png "Create a new server profile")
 
-4. For **Email Server Type** select **Exchage Online** and then specify a meaningful **Name** for the profile.
+4. For **Email Server Type**, select **Exchange Online** and then specify a meaningful **Name** for the profile.
 
    > [!div class="mx-imgBorder"] 
    > ![Select Exchange Online server profile](media/exchange-online-server-profile.png "Select Exchange Online server profile]")
 
-5. For **Set as default profile for new mailboxes** choose wheater you want this server profile as the default profile for new mailboxes.
+5. For **Set as default profile for new mailboxes** choose whether you want this server profile as the default profile for new mailboxes.
 
 6. For **Authentication Type** choose one of the following:
 
