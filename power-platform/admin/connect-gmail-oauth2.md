@@ -120,8 +120,11 @@ Follow the steps for **Create a project** in: [Create, shut down, and restore pr
 
 7. To get the **Client id** and **Client Secret** see, [Register your app](connect-exchange-online-server-profile-oauth.md#register-your-app).
 
-8. Expand the **Locations and ports** section. This field shows the protocol, location port on the email server for accessing the incoming email. This field is automatically populated.
+8. Expand **Locations and ports**. These fields are automatically populated.
 
+10. Expand **Advanced** and then use the tooltips to choose your email processing options.
+
+12. When you're done select **Save**.
 
 
 ## Step 5: Configure the mailbox
