@@ -100,7 +100,7 @@ Follow the steps for **Create a project** in: [Create, shut down, and restore pr
 
 1. In the  [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment. 
 
-2. On the command bar select **Settings** > **Email** > **Server profiles**.  
+2. On the command bar, select **Settings** > **Email** > **Server profiles**.  
     
    > [!div class="mx-imgBorder"] 
    > ![Email server profile setting](media/server-profile-settings.png "Email server profile setting")
@@ -110,12 +110,12 @@ Follow the steps for **Create a project** in: [Create, shut down, and restore pr
    > [!div class="mx-imgBorder"] 
    > ![Create new server profile](media/new-server-profile.png "Create a new server profile")
 
-4. For **Email Server Type** select **Gmail** and then specify a meaningful **Name** for the profile.
+4. For **Email Server Type**, select **Gmail** and then specify a meaningful **Name** for the profile.
 
    > [!div class="mx-imgBorder"] 
    > ![Create new server profile for Gmail](media/gmail-profile.png "Create a new server profile for Gmail")
 
-5. For **Set as default profile for new mailboxes** choose wheater you want this server profile as the default profile for new mailboxes.
+5. For **Set as default profile for new mailboxes** choose whether you want this server profile as the default profile for new mailboxes.
 
 6. For **Authentication Type** select **Gmail OAuth**.
 
