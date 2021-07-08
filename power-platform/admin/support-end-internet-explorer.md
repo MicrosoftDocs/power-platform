@@ -29,34 +29,34 @@ The warning message will appear at the top of the Power Platform admin center pa
 
 To prepare for Internet Explorer support ending, administrators in the Power Platform Admin center and in the model-driven apps Advanced Settings will see an informational message like the following *before* August 17th, 2021 and a warning message *starting* August 17th, 2021 if their tenant has Internet Explorer users.  These messages will appear regardless of the browser the administrator is using. 
 
-> **Alert**<br />
 > **Before August 17th, 2021** <br />
+> **Alert** <br />
 > Internet Explorer support will end on August 17, 2021. Ensure users switch to Microsoft Edge or another modern browser.
 
-> **Alert**<br />
 > **Starting August 17th, 2021** <br />
+> **Alert** <br />
 > Internet Explorer support has ended. Ensure users have switched to Microsoft Edge or another modern browser. 
 
 ## User experience 
 
 **Before August 17, 2021,** some users using model-driven apps in Internet Explorer might see an informational message like the following at the top of the app if their administrators have enabled it. 
 
-> **Alert**<br />
+> **Alert** <br />
 > Internet Explorer support will end on August 17, 2021. Consider using Microsoft Edge or another modern browser instead. 
 
 **Starting August 17th, 2021,** all users using model-driven apps in Internet Explorer will see a warning message at the top of the app.  By switching to Microsoft Edge Chromium or another modern browser, the user will not see this message.  
 
-> **Alert**<br />
+> **Alert** <br />
 > Internet Explorer support has ended. Please switch to Microsoft Edge or another modern browser. 
 
 **Prior to the 2022 Wave 1 release blocking Internet Explorer,** users using model-driven apps in Internet Explorer will see an error message at the top of the app like the following.  
 
-> **Alert**<br />
+> **Alert** <br />
 > Internet Explorer support will end on August 17, 2021. Ensure users switch to Microsoft Edge or another modern browser. 
 
 **With the 2022 Wave 1 release,** users opening model-driven apps in Internet Explorer will be blocked and see a message like this. 
 
-> **Alert**<br />
+> **Alert** <br />
 > Model-driven apps require Microsoft Edge or a supported browser. Please switch to a modern browser.
 
 Administrators wanting to block Internet Explorer for users earlier can request this through support. 
