@@ -5,6 +5,7 @@ ms.date: 02/11/2021
 ms.service: power-platform
 ms.topic: "article"
 author: jimholtz
+ms.subservice: admin
 ms.author: jimholtz
 ms.reviewer: jimholtz
 ms.custom: "admin-security"

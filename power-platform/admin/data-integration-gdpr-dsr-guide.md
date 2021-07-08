@@ -6,6 +6,7 @@ ms.service: power-platform
 ms.topic: how-to
 ms.component: cds
 ms.date: 05/20/2018
+ms.subservice: admin
 ms.author: sabinn
 search.audienceType: 
   - admin

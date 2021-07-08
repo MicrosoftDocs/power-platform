@@ -11,6 +11,7 @@ ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.collection: virtual-agent
 author: iaanw
+ms.subservice: admin
 ms.author: iawilt
 manager: shellyha
 search.audienceType: 

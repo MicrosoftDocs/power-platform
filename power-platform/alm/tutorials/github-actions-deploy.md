@@ -3,6 +3,7 @@ title: "Tutorial: Automate solution deployment using GitHub Actions for Microsof
 description: "In this tutorial, learn how to automate solution export and deployment using GitHub Actions for Microsoft Power Platform."
 keywords: 
 author: mikkelsen2000
+ms.subservice: alm
 ms.author: pemikkel
 manager: jstrauss
 ms.custom: ""
@@ -18,8 +19,7 @@ search.app:
 #Customer intent: As a developer, I want to use GitHub Actions so that my solution builds and deployment will be automated.
 ---
 
-# Tutorial: Automate solution deployment using GitHub Actions for Microsoft Power Platform (Preview)
-[This topic is pre-release documentation and is subject to change.]
+# Tutorial: Automate solution deployment using GitHub Actions for Microsoft Power Platform
 
 In this tutorial, you will learn how to:
 

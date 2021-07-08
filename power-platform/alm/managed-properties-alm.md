@@ -3,6 +3,7 @@ title: "View and edit managed properties in solutions"
 description: "Learn how to view and edit managed properties in solutions when implementing application lifecycle management (ALM)."
 keywords: 
 author: Mattp123
+ms.subservice: alm
 ms.author: matp
 manager: kvivek
 ms.custom: ""

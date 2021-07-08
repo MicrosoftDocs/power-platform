@@ -6,6 +6,7 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/17/2021
 author: tjvass
+ms.subservice: admin
 ms.author: tjvass
 ms.reviewer: jimholtz 
 search.audienceType: 

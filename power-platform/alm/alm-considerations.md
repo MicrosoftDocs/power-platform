@@ -3,6 +3,7 @@ title: "ALM with Power Apps considerations"
 description: "Understand the more detailed considerations that may be involved with application lifecycle management in Power Apps."
 keywords: 
 author: Mattp123
+ms.subservice: alm
 ms.author: matp
 manager: kvivek
 ms.custom: ""

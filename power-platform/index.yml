@@ -39,7 +39,7 @@ highlightedContent:
     # Card
     - title: Microsoft Power Platform In a Day workshops
       itemType: get-started
-      url: https://aka.ms/PowerPlatformILT
+      url: https://aka.ms/PowerPlatformIAD
 
 conceptualContent:
   # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
