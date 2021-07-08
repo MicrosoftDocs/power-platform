@@ -1,8 +1,9 @@
 ---
-title: "Environment strategy for ALM | Microsoft Docs"
-description: "Environment strategy considerations for application lifecycle management (ALM) with Microsoft Power Platform."
+title: "ALM environment strategy considerations"
+description: "To follow application lifecycle management principles in Power Platform, consider these factors when determining your ALM environment needs and strategy."
 keywords: 
 author: Mattp123
+ms.subservice: alm
 ms.author: matp
 manager: kvivek
 ms.custom: ""

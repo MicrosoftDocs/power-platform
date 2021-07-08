@@ -21,7 +21,7 @@ Power Virtual Agents supports single sign-on (SSO), which means chatbots can sig
 For example, the bot is hosted on the corporate intranet or in an app that the user is already signed in to.
 
 >[!IMPORTANT] 
->SSO is only supported for Azure Active Directory (Azure AD). Other account types such as Microsoft Account or other OAuth accounts are not supported for SSO in Power Virtual Agents.  
+>SSO is only supported for Azure Active Directory (Azure AD) V2. Other account types such as Microsoft Account or other OAuth accounts are not supported for SSO in Power Virtual Agents.  
 >You can suggest support for additional account types [at the Power Virtual Agents ideas forum](https://powerusers.microsoft.com/t5/Power-Virtual-Agents-Ideas/idb-p/pva_ideas).
 
 >[!IMPORTANT] 
@@ -89,19 +89,19 @@ You then need to redirect the app registration to point to your custom canvas.
 1. Enter a name for the registration. It can be helpful to use the name of the bot whose canvas you're registering and include "canvas" to help separate it from the app registration for authentication.  
   For example, if your bot is called "Contoso sales help", you might name the app registration as "ContosoSalesCanvas" or something similar. 
 
-1. Select **Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts (for example Skype, Xbox)**.
+1. Select the account type under **Supported account types**. We recommend you select **Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts (for example Skype, Xbox)**.
 
 1. Leave the **Redirect URI** section blank for now, as you'll enter that information in the next steps. Select **Register**.
 
     ![Screenshot showing the registration form](media/sso-new-registration-details.png "Screenshot showing the registration form")
 
 
-
+1. After the registration is completed, it will open to the **Overview** page. Go to **Manifest**. Confirm that `accessTokenAcceptedVersion` is set to `2`. If it isn't, change it to `2` and then select **Save**.
 
 
 **Add the redirect URL**
 
-1. After the registration is completed, it will open to the **Overview** page. Go to **Authentication** and then select **Add a platform**.
+1. With the registration open, go to **Authentication** and then select **Add a platform**.
 
 
     ![Screenshot showing Add a platform under Authentication](media/sso-authentication.png "Screenshot showing Add a platform under Authentication")

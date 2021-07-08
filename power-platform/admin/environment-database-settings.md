@@ -1,12 +1,13 @@
 ---
-title: "Environment database settings | MicrosoftDocs"
-description: Changing environment database settings
+title: "How to change default environment database settings"
+description: "Power Platform environments provide default database settings, but you can override them. Use the OrgDBOrgSettings tool to update your database settings."
 author: jimholtz
 manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 11/04/2019
+ms.subservice: admin
 ms.author: jimholtz 
 search.audienceType: 
   - admin

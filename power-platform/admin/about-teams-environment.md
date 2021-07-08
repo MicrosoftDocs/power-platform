@@ -5,7 +5,8 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/07/2021
+ms.date: 07/02/2021
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -251,6 +252,7 @@ A tenant admin will be allowed to upgrade a Dataverse for Teams environment to a
 5. If the admin confirms, the upgrade will go forward. As the upgrade progresses, various notifications will be provided as the operation transitions through the various states.  
 
 After upgrade, the following applies to the newly upgraded environment:  
+- To find and edit apps and flows, app makers will need to go to the [Power Apps](https://make.powerapps.com) portal.
 - The upgraded environment's lifecycle will no longer be tied to the lifecycle of that team. If the team is deleted, the upgraded environment remains. 
 - Any apps running on the environment will require Microsoft Power Platform (Power Apps, Power Automate) licenses to be accessed. 
 - The apps can run inside and outside of Microsoft Teams. 
@@ -295,18 +297,33 @@ Follow these steps to apply a DLP policy:
    Install-Module -Name Microsoft.PowerApps.Administration.PowerShell -Force 
    ```
 
-3. Run the [ReplacePolicyEnvironmentsForOnlyEnvironmentType](https://github.com/microsoft/PowerApps-Samples/blob/83c77d157f4d3b3a5a54413d975159e5552bfb4f/powershell/admin-center/Microsoft.PowerApps.Administration.PowerShell.Samples.psm1#L1270-L1310) function (available in the [DLP SDK](data-loss-prevention-sdk.md)). This will identify the Teams environments in the tenant and add them to the given policy. 
+3. Run the [UpdatePolicyEnvironmentsForTeams](https://github.com/microsoft/PowerApps-Samples/blob/master/powershell/admin-center/Microsoft.PowerApps.Administration.PowerShell.Samples.psm1#L1270-L1401) function (available in the [DLP SDK](data-loss-prevention-sdk.md)). This will identify the Teams environments in the tenant and add them to the given policy. 
 
    > [!div class="mx-imgBorder"] 
-   > ![Teams environment policy](media/teams-environment-policy.png "Teams environment policy")
+   > ![UpdatePolicyEnvironmentsForTeams function](media/update-policy-environments-teams.png "UpdatePolicyEnvironmentsForTeams function")
+
+   1. Both the name and display name of the policy are required. If the policy name and display name don’t match, the policy will not be updated.   
+      1. OnlyEnvironmentsPolicyName – the name (guid) of the policy 
+      2. OnlyEnvironmentsPolicyDisplayName – the display name of the policy 
+   2. (Optional) Additionally, you can exclude these Teams environments from another policy. This policy must be scoped to apply to “Exclude certain environments”.  
+      1. ExceptEnvironmentsPolicyDisplayName – the display name of the policy 
+      2. ExceptEnvironmentsPolicyName - the name (guid) of the policy 
+      3. ExceptionEnvironmentIds - a list of environment IDs that should also be included in this ExceptEnvironments policy in addition to the Teams environments. We recommend generating this list from a text file. 
+ 
+   You can either use none of these parameters or b.i. and b.iii. together or b.i., b.ii., and b.iii. together. 
+
+   For example, you can specify a default policy for all environments except Teams environments using parameters b.i. and b.ii. This will replace all the environments in the exclusion list of the default policy with all the Teams environments. In addition to the Teams environments, if you want to exclude other environments from this default policy, you can use the b.iii. parameter. If an environment is added to the exclusion list of this default policy (through the DLP UI or another PowerShell script), but not included in the "environmentIds" text file, it will be removed the next time the script is run. 
+
+   > [!div class="mx-imgBorder"] 
+   > ![Replace environments in exclusion list](media/get-content-teams-environments.png "Replace environments in exclusion list")
 
 > [!NOTE]
-> Each time the function runs, it replaces the existing list of environments in the policy with all Teams environments in the tenant. Because the function immediately updates the policy, it requires both the policy name and the policy display name as parameters to ensure that you're targeting the correct policy. If the display name doesn't match the given policy name, the policy will not be modified. 
+> Each time the function runs, it replaces the existing list of environments in each given policy with a new list of environments. Because the function immediately updates the policy, it requires both the policy name and the policy display name as parameters to ensure that you're targeting the correct policy. If the display name doesn't match the given policy name, the policy will not be modified.  
 >
-> > [!div class="mx-imgBorder"] 
-> > ![Display name mismatch](media/display-name-mismatch.png "Display name mismatch")
+> [!div class="mx-imgBorder"] 
+> ![Display name mismatch](media/display-name-mismatch.png "Display name mismatch")
 >
-> We recommend that this script is run on a schedule to ensure that the DLP policy will always apply to the most recent list of Teams environments. If a Teams environment is created after this script is run, it will not be governed by the policy until the policy's environments are updated, either by rerunning the script or manually adding the new environment to the policy. If a non-Teams environment is added to the policy, it will be removed next time the script is run. 
+> We recommend that this script is run on a schedule to ensure that the DLP policy will always apply to the most recent list of Teams environments. If a Teams environment is created after this script is run, it will not be governed by the policy until the policy's environments are updated, either by rerunning the script or manually adding the new environment to the policy. If a non-Teams environment is added to the "OnlyEnvironments" policy, it will be removed next time the script is run. 
 
 ## Known issues
 

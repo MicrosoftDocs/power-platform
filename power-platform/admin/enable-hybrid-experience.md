@@ -5,7 +5,8 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/17/2021
+ms.date: 05/20/2021
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -25,7 +26,6 @@ The following features are not yet present in Unified Interface but can be enabl
 
 - [Advanced Find](/powerapps/user/advanced-find) 
 - Bulk edit
-- [Merge records](/powerapps/user/merge-duplicate-records)
 - [Record sharing](/powerapps/user/assign-or-share-records)
 - [Audit History](/powerapps/developer/common-data-service/auditing-overview)
 - All options under **Set Personal Options** (![Settings gear](media/settings-gear-icon.png "Settings gear"))

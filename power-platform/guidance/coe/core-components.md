@@ -6,7 +6,8 @@ manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/10/2020
+ms.date: 06/01/2021
+ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -234,7 +235,6 @@ The [sync flows](#flows) of the CoE Starter Kit sync your tenant resources to th
 
 ## Flows
 
-
 | Flow Name | Type | Interval | Description |
 | ---- | ---- | --- | ---- |
 | Admin \| Sync Template v3 | Schedule | Daily | This flow retrieves the environments in your tenant by using [List Environments as Admin](https://docs.microsoft.com/connectors/powerplatformforadmins/#list-environments-as-admin), and creates or updates a record for each environment in the Dataverse Environment table. Running this flow will also trigger the rest of the sync flows indirectly by updating the environment records in the Dataverse instance.
@@ -254,6 +254,30 @@ The [sync flows](#flows) of the CoE Starter Kit sync your tenant resources to th
 | CLEANUP - Admin \| Sync Template v3 (Connection Status) | Scheduled | Weekly | This flow runs weekly, and checks if any apps or flows have unresolved connections. |
 | Admin \| Capacity Alerts | Scheduled | Daily | This flow checks actual capacity consumption and compares it with approved capacity, that an admin sets. The flow will send an alert to the admin for environments that exceed the approved capacity, or are at 80% of approved capacity.
 | Admin \| Welcome Email | Automated | when any sync flow adds a new maker to the Maker table | This flow sends an email to a user who created an app, flow, custom connector, or environment. This flow gets triggered when a new record is created in the maker table. You can customize the email sent out by the flow. |
+
+### Admin \| Compliance Detail request v3
+
+This flow works in conjunction with other apps and flows in the CoE Starter Kit to facilitate the process described in [App auditing process](example-processes.md). Compliance detail request emails are sent for apps and chatbots.
+
+This flow is in Core even though most of its functionality is in Governance in order to facilitate easier shipping for DfT. It should be left turned off until instructed to turn on in Gov setup.
+
+This flow sends an email to users who have apps in the tenant that aren't compliant with the following thresholds:
+
+- The app is shared with more than 20 users or at least one group, and no business justification details have been provided for it.
+
+- The app does have business justification details, but hasn't been published in 60 days (so it's likely not on the latest version of Power Apps) or is missing a description.
+
+- The app has business justification details and an indication of high business impact, but no mitigation plan has been submitted to the attachments field.
+
+This flow sends an email to users who have chatbots in the tenant that aren't compliant with the following thresholds:
+
+- The chatbot has been launched more than 50 times, and no business justification details have been provided for it.
+
+- The chatbot has business justification details and an indication of high business impact, but no mitigation plan has been submitted to the attachments field.
+
+You can customize the email sent out by the flow; by default, it will look like the following image.
+
+![The compliance detail request email informs a maker that they own an app that is currently missing compliance details which means it needs to be audited by an administrator per the support policy. Makers are prompted to complete the business justification and mitigation plan details in the Developer Compliance Center app to document the intended use of the app.](media/coe55.png "The compliance detail request email informs a maker that they own an app that is currently missing compliance details which means it needs to be audited by an administrator per the support policy. Makers are prompted to complete the business justification and mitigation plan details in the Developer Compliance Center app to document the intended use of the app.")
 
 ## Apps
 

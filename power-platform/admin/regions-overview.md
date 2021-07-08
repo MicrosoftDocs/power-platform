@@ -5,7 +5,8 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/14/2021
+ms.date: 05/26/2021
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -67,11 +68,6 @@ For optimal performance, if your users are in Europe, create and use the environ
 > On-premises data gateways aren't available in the India region.
 > 
 > Microsoft Dataverse for Teams is not available in the following regions:
-> - Germany
-> - South Africa
-> - South Korea
-> - Switzerland
-> - UAE
 > - GCC
 > - GCC High
 

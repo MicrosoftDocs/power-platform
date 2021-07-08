@@ -6,7 +6,8 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 04/05/2021
+ms.date: 07/01/2021
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -105,54 +106,23 @@ Users with a valid Power Apps license can perform the operations in these cmdlet
 | --- | --- |
 | Add a canvas app to a Microsoft Dataverse solution | Set-PowerAppAsSolutionAware |
 | Read environments | Get-PowerAppEnvironment *(previously Get-PowerAppsEnvironment)* <br> Get-FlowEnvironment |
-| Read, update, and delete a canvas app | Get-PowerApp *(previously Get-App)* <br> Remove-PowerApp *(previously Remove-App)* <br> Publish-PowerApp *(previously Publish-App)* <br> Set-AppDisplayName *(previously Set-PowerAppDisplayName)*<br> Get-PowerAppVersion *(previously Get-AppVersion)* <br> Restore-PowerAppVersion *(previously Restore-AppVersion)* |
-| Read, update, and delete canvas app permissions | Get-PowerAppRoleAssignment *(previously Get-AppRoleAssignment)* <br> Set-PowerAppRoleAssignment *(previously Set-AppRoleAssignment)* <br> Remove-PowerAppRoleAssignment *(previously Remove-AppRoleAssignment)* |
-| Read, update, and delete a flow | Get-Flow <br> Get-FlowRun <br> Enable-Flow <br> Disable-Flow <br> Remove-Flow |
-| Read, update, and delete flow permissions | Get-FlowOwnerRole <br> Set-FlowOwnerRole <br> Remove-FlowOwnerRole |
-| Read and respond to flow approvals | Get-FlowApprovalRequest <br> Get-FlowApproval <br> RespondTo-FlowApprovalRequest |
-| Read and delete connections | Get-PowerAppConnection *(previously Get-Connection)* <br> Remove-PowerAppConnection *(previously Remove-Connection)* |
-| Read, update, and delete connection permissions | Get-PowerAppConnectionRoleAssignment *(previously Get-ConnectionRoleAssignment)* <br> Set-PowerAppConnectionRoleAssignment *(previously Set-ConnectionRoleAssignment)* <br> Remove-PowerAppConnectionRoleAssignment *(previously Remove-ConnectionRoleAssignment)* |
-| Read, and delete connectors | Get-PowerAppConnector *(previously Get-Connector)* <br> Remove-PowerAppConnector *(previously Remove-Connector)* |
-| Add, read, update, and delete custom connector permissions | Get-PowerAppConnectorRoleAssignment *(previously Get-ConnectorRoleAssignment)* <br> Set-PowerAppConnectorRoleAssignment *(previously Set-ConnectorRoleAssignment)* <br> Remove-PowerAppConnectorRoleAssignment *(previously Remove-ConnectorRoleAssignment)*  |
-| Read, add, and remove policy URL patterns | Get-PowerAppPolicyUrlPatterns<br />New-PowerAppPolicyUrlPatterns<br />Remove-PowerAppPolicyUrlPatterns |
-| Read, register, and remove management apps | Get-PowerAppManagementApp<br /> Get-PowerAppManagementApps <br /> New-PowerAppManagementApp <br /> Remove-PowerAppManagementApp|
-| Read, create, update, and import protection keys | Get-PowerAppRetrieveAvailableTenantProtectionKeys<br />Get-PowerAppGenerateProtectionKey<br /> Get-PowerAppRetrieveTenantProtectionKey<br />New-PowerAppImportProtectionKey <br /> Set-PowerAppTenantProtectionKey |
+| Read, update, and delete a canvas app | Get-PowerApp *(previously Get-App)* <br> Remove-PowerApp *(previously Remove-App)* <br> Publish-PowerApp *(previously Publish-App)*<br />Set-AppDisplayName *(previously Set-PowerAppDisplayName)*<br> Get-PowerAppVersion *(previously Get-AppVersion)* <br> [Restore-PowerAppEnvironment](/powershell/module/microsoft.powerapps.administration.powershell/restore-powerappenvironment) *(previously Restore-AppVersion)* |
+| Read, update, and delete canvas app permissions | [Get-AdminPowerAppRoleAssignment](/powershell/module/microsoft.powerapps.administration.powershell/get-adminpowerapproleassignment) *(previously Get-AppRoleAssignment)* <br>  [Remove-AdminPowerAppRoleAssignment](/powershell/module/microsoft.powerapps.administration.powershell/remove-adminpowerapproleassignment) *(previously Remove-AppRoleAssignment)* |
+| Read, update, and delete a flow | [Get-AdminFlow](/powershell/module/microsoft.powerapps.administration.powershell/get-adminflow) <br> [Enable-AdminFlow](/powershell/module/microsoft.powerapps.administration.powershell/enable-adminflow) <br> [Disable-AdminFlow](/powershell/module/microsoft.powerapps.administration.powershell/disable-adminflow) <br> [Remove-AdminFlow](/powershell/module/microsoft.powerapps.administration.powershell/remove-adminflow) |
+| Read, update, and delete flow permissions | [Get-AdminFlowOwnerRole](/powershell/module/microsoft.powerapps.administration.powershell/get-adminflowownerrole) <br> [Set-AdminFlowOwnerRole](/powershell/module/microsoft.powerapps.administration.powershell/set-adminflowownerrole) <br> [Remove-AdminFlowOwnerRole](/powershell/module/microsoft.powerapps.administration.powershell/remove-adminflowownerrole) |
+| Read and respond to flow approvals | [Get-AdminFlowApprovalRequest](/powershell/module/microsoft.powerapps.administration.powershell/get-adminpowerappconnection) <br> [Remove-AdminFlowApprovals](/powershell/module/microsoft.powerapps.administration.powershell/remove-adminflowapprovals) <br>  |
+| Read and delete connections | [Get-AdminPowerAppConnection](/powershell/module/microsoft.powerapps.administration.powershell/get-adminpowerappconnection) *(previously Get-Connection)* <br> [Remove-AdminPowerAppConnection](/powershell/module/microsoft.powerapps.administration.powershell/remove-adminpowerappconnection) *(previously Remove-Connection)* |
+| Read, update, and delete connection permissions | [Get-AdminPowerAppConnectionRoleAssignment](/powershell/module/microsoft.powerapps.administration.powershell/get-adminpowerappconnectionroleassignment) *(previously Get-ConnectionRoleAssignment)* <br> [Set-AdminPowerAppConnectionRoleAssignment](/powershell/module/microsoft.powerapps.administration.powershell/set-adminpowerappconnectionroleassignment) *(previously Set-ConnectionRoleAssignment)* <br> [Remove-AdminPowerAppConnectionRoleAssignment](/powershell/module/microsoft.powerapps.administration.powershell/remove-adminpowerappconnectionroleassignment) *(previously Remove-ConnectionRoleAssignment)* |
+| Read, and delete connectors | [Get-AdminPowerAppConnector](/powershell/module/microsoft.powerapps.administration.powershell/get-adminpowerappconnector) *(previously Get-Connector)* <br> [Remove-AdminPowerAppConnector](/powershell/module/microsoft.powerapps.administration.powershell/remove-adminpowerappconnector) *(previously Remove-Connector)* |
+| Add, read, update, and delete custom connector permissions | [Get-AdminPowerAppConnectorRoleAssignment](/powershell/module/microsoft.powerapps.administration.powershell/get-adminpowerappconnectorroleassignment) *(previously Get-ConnectorRoleAssignment)* <br> [Get-PowerAppConnectorRoleAssignment](/powershell/module/microsoft.powerapps.administration.powershell/get-adminpowerappconnectorroleassignment) *(previously Set-ConnectorRoleAssignment)* <br> [Remove-PowerAppConnectorRoleAssignment](/powershell/module/microsoft.powerapps.administration.powershell/remove-adminpowerappconnectorroleassignment) *(previously Remove-ConnectorRoleAssignment)*  |
+| Read, add, and remove policy URL patterns | [Get-PowerAppPolicyUrlPatterns](/powershell/module/microsoft.powerapps.administration.powershell/get-powerapppolicyurlpatterns)<br />[New-PowerAppPolicyUrlPatterns](/powershell/module/microsoft.powerapps.administration.powershell/new-powerapppolicyurlpatterns)<br />[Remove-PowerAppPolicyUrlPatterns](/powershell/module/microsoft.powerapps.administration.powershell/remove-powerapppolicyurlpatterns) |
+| Read, register, and remove management apps | [Get-PowerAppManagementApp](/powershell/module/microsoft.powerapps.administration.powershell/get-powerappmanagementapp)<br /> [Get-PowerAppManagementApps](/powershell/module/microsoft.powerapps.administration.powershell/get-powerappmanagementapps) <br /> [New-PowerAppManagementApp](/powershell/module/microsoft.powerapps.administration.powershell/new-powerappmanagementapp) <br /> [Remove-PowerAppManagementApp](/powershell/module/microsoft.powerapps.administration.powershell/remove-powerappmanagementapp)|
+| Read, create, update, and import protection keys | [Get-PowerAppRetrieveAvailableTenantProtectionKeys](/powershell/module/microsoft.powerapps.administration.powershell/get-powerappretrieveavailabletenantprotectionkeys)<br />[Get-PowerAppGenerateProtectionKey](/powershell/module/microsoft.powerapps.administration.powershell/get-powerappgenerateprotectionkey)<br /> [Get-PowerAppRetrieveTenantProtectionKey](/powershell/module/microsoft.powerapps.administration.powershell/get-powerappretrievetenantprotectionkey)<br />[New-PowerAppImportProtectionKey](/powershell/module/microsoft.powerapps.administration.powershell/new-powerappimportprotectionkey) <br /> [Set-PowerAppTenantProtectionKey](/powershell/module/microsoft.powerapps.administration.powershell/set-powerapptenantprotectionkey) |
 
 
 ## Power Apps cmdlets for administrators
 
-### Prerequisite
-To perform the administration operations in the admin cmdlets, you'll need the following:
-
-- A user with any of these roles, Global admins, Azure Active Directory Global admins, or Dynamics 365 admin, can access the Power Apps admin PowerShell cmdlets. These roles no longer require a Power Apps plan for administrative access to the Power Apps admin PowerShell cmdlets. However, these administrators need to sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) at least once before using the PowerShell cmdlets. If this is not done, the cmdlets will fail with an authorization error.
-
-- [Microsoft 365 Global admin](/microsoft-365/admin/add-users/about-admin-roles) or an [Azure Active Directory Global Administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal), or [Dynamics 365 admin](global-service-administrators-can-administer-without-license.md) permissions if you need to search through another user's resources. Note that Environment Admins only have access to those environments and environment resources for which they have permissions.
-
-### Cmdlet list - Admin Cmdlets
-
-| Purpose | Cmdlets |
-| --- | --- |
-| Read, update, delete, lock, unlock, and recover environments and Dataverse databases | New-AdminPowerAppEnvironment <br> Set-AdminPowerAppEnvironmentDisplayName <br> Get-AdminPowerAppEnvironment *(previously Get-AdminEnvironment)* <br> Remove-AdminPowerAppEnvironment *(previously Remove-AdminEnvironment)* <br>Get-AdminPowerAppSoftDeletedEnvironment</br>Recover-AdminPowerAppEnvironment<br> Copy-PowerAppEnvironment<br />Backup-PowerAppEnvironment<br /> Get-PowerAppEnvironmentBackups<br /> Restore-PowerAppEnvironment<br /> Remove-PowerAppEnvironmentBackup<br />Reset-PowerAppEnvironment<br />New-AdminPowerAppCdsDatabase <br> Get-AdminPowerAppCdsDatabaseLanguages <br> Get-AdminPowerAppCdsDatabaseCurrencies <br> Get-AdminPowerAppEnvironmentLocations <br /> Set-PowerAppLockAllEnvironments <br /> Set-PowerAppUnlockEnvironment <br /> Set-PowerAppProtectionStatus |
-| Delete legacy Common Data Service v1 database  | Remove-LegacyCDSDatabase | 
-| Read, update, and delete environment permissions <br><br> *These cmdlets only work today for environments that do not have a Dataverse database.* | Get-AdminPowerAppEnvironmentRoleAssignment *(previously Get-AdminEnvironmentRoleAssignment)* <br> Set-AdminPowerAppEnvironmentRoleAssignment *(previously Set-AdminEnvironmentRoleAssignment)* <br> Remove-AdminPowerAppEnvironmentRoleAssignment *(previously Remove-AdminEnvironmentRoleAssignment)* <br /> Set-AdminPowerAppEnvironmentRuntimeStat |
-| Read, update, remove, and recover canvas apps | Get-AdminPowerApp *(previously Get-AdminApp)* <br> Remove-AdminPowerApp *(previously Remove-AdminApp)* <br> Get-AdminPowerAppConnectionReferences <br> Set-AdminPowerAppAsFeatured <br> Clear-AdminPowerAppAsFeatured <br> Set-AdminPowerAppAsHero <br> Clear-AdminPowerAppAsHero <br> Set-AdminPowerAppApisToBypassConsent <br> Clear-AdminPowerAppApisToBypassConsent <br> Get-AdminDeletedPowerAppsList <br> Get-AdminRecoverDeletedPowerApp |
-| Read, update, and delete canvas app permissions | Get-AdminPowerAppRoleAssignment *(previously Get-AdminAppRoleAssignment)* <br> Remove-AdminPowerAppRoleAssignment *(previously Remove-AdminAppRoleAssignment)* <br> Set-AdminPowerAppRoleAssignment *(previously Set-AdminAppRoleAssignment)* <br> Set-AdminPowerAppOwner *(previously Set-AdminAppOwner)* |
-| Read, update, and delete flows | Get-AdminFlow <br> Enable-AdminFlow <br> Disable-AdminFlow <br> Remove-AdminFlow <br> Remove-AdminFlowApprovals |
-| Read, update, and delete flow permissions | Get-AdminFlowOwnerRole <br> Set-AdminFlowOwnerRole <br> Remove-AdminFlowOwnerRole |
-| Read and delete connections | Get-AdminPowerAppConnection *(previously Get-AdminConnection)* <br> Remove-AdminPowerAppConnection *(previously Remove-AdminConnection)* |
-| Read, update, and delete connection permissions | Get-AdminPowerAppConnectionRoleAssignment *(previously Get-AdminConnectionRoleAssignment)* <br> Set-AdminPowerAppEnvironmentConnectionRoleAssignment *(previously Set-AdminConnectionRoleAssignment)* <br> Remove-AdminPowerAppConnectionRoleAssignment *(previously Remove-AdminConnectionRoleAssignment)* |
-| Read and delete custom connectors | Get-AdminPowerAppConnector *(previously Get-AdminConnector)* <br> Remove-AdminPowerAppConnector *(previously Remove-AdminConnector)* |
-| Read, update, and delete custom connector permissions | Get-AdminPowerAppConnectorRoleAssignment *(previously Get-AdminConnectorRoleAssignment)*<br> Set-AdminPowerAppConnectorRoleAssignment *(previously Set-AdminConnectorRoleAssignment)* <br> Remove-AdminPowerAppConnectorRoleAssignment *(previously Remove-AdminConnectorRoleAssignment)* |
-| Read a user's Power Apps user settings, user-app settings, and notifications | Get-AdminPowerAppsUserDetails |
-| Read and delete a user's Power Automate settings, which are not visible to user, but that support flow execution | Get-AdminFlowUserDetails <br> Remove-AdminFlowUserDetails |
-| Create, read, update and delete data loss prevention policies for your organization using a three-way classification - **Business**, **Non-Business**, and **Blocked**  |  Get-DlpPolicy *(previously Get-AdminDlpPolicy)* <br> New-DlpPolicy *(previously Add-AdminDlpPolicy)* <br>  Remove-DlpPolicy *(previously Remove-AdminDlpPolicy)* <br> Set-DlpPolicy *(previously Set-AdminDlpPolicy)*<br> <br> Learn more about the [Microsoft Power Platform data loss prevention (DLP) SDK](data-loss-prevention-sdk.md). |
-| Read, add, update, and remove data loss prevention tenant settings | Get-PowerAppDlpErrorSettings<br />New-PowerAppDlpErrorSettings<br />Remove-PowerAppDlpErrorSettings<br />Set-PowerAppDlpErrorSettings |
-| Read, add, remove, and update tenant settings | Get-TenantSettings<br />Set-TenantSettings<br /> Get-PowerAppTenantUrlPatterns <br />New-PowerAppTenantUrlPatterns <br /> Remove-PowerAppTenantUrlPatterns <br />Get-AdminPowerAppTenantConsumedQuota|
-| Read, add, and remove allowed consent/trial plans within the tenant | Remove-AllowedConsentPlans <br>Add-AllowedConsentPlans<br /> Get-AllowedConsentPlans |
-| Read tenant assigned user licenses | Get-AdminPowerAppLicenses |
-| Read, update, and reset the environment that Power Apps uses to save SharePoint form apps| Get-AdminPowerAppSharepointFormEnvironment <br />       Set-AdminPowerAppSharepointFormEnvironment <br /> Reset-AdminPowerAppSharepointFormEnvironment|
-| Read operation status | Get-AdminPowerAppOperationStatus  |
-| Read and update tenant isolation status and policy | Get-PowerAppTenantIsolationOperationStatus <br />   Get-PowerAppTenantIsolationPolicy <br /> Set-PowerAppTenantIsolationPolicy |
+For information on Power Apps cmdlets for admins, see [Get started with PowerShell for Power Platform Administrators](powershell-getting-started.md)
 
 ## Tips
 
@@ -179,6 +149,7 @@ Below are some common scenarios that show how to use new and existing Power Apps
 - [Power Automate commands](#power-automate-commands)
 - [API connection commands](#api-connection-commands)
 - [Data Loss Prevention (DLP) policy commands](#data-loss-prevention-dlp-policy-commands)
+- [DLP resource exemption cmdlets](#dlp-resource-exemption-cmdlets)
 - [Block trial licenses commands](#block-trial-licenses-commands)
 
 ### Environments commands
@@ -286,10 +257,12 @@ The above command will store the Power Apps user details (basic usage informatio
 ```powershell
 Get-AdminPowerAppLicenses -OutputFilePath '<licenses.csv>'
 ```
-
 Exports all the assigned user licenses (Power Apps and Power Automate) in your tenant into a tabular view .csv file. The exported file contains both self-service sign up internal trial plans as well as plans that are sourced from Azure Active Directory. The internal trial plans are not visible to admins in the Microsoft 365 admin center.
 
 The export can take a while for tenants with a large number of Microsoft Power Platform users.
+
+> [!NOTE]
+> Output of the Get-AdminPowerAppLicenses cmdlet only includes licenses for users that have accessed Power Platform services (for example, Power Apps, Power Automate, or Power Platform admin center). Users that have had licenses assigned in Azure AD (typically via the Microsoft 365 admin center) but have never accessed Power Platform services will not have their licenses included in the generated .csv output. Furthermore, since the Power Platform licensing services caches the licenses, updates made to license assignments in Azure AD can take up to seven days to reflect in the output for users that haven't accessed the service recently.
 
 #### Set logged in user as the owner of a canvas app
 
@@ -471,6 +444,68 @@ Remove-DlpPolicy
 
 Deletes a DLP policy.
 
+### DLP resource exemption cmdlets 
+
+These cmdlets allow you to exempt or unexempt a specific resource from a DLP policy. 
+
+#### Retrieve existing exempt resource list for a DLP policy 
+
+```powershell
+Get-PowerAppDlpPolicyExemptResources -TenantId -PolicyName 
+```
+
+#### Create a new exempt resource list for a DLP policy 
+
+```powershell
+New-PowerAppDlpPolicyExemptResources -TenantId -PolicyName -NewDlpPolicyExemptResources 
+```
+
+#### Update the exempt resource list for a DLP policy 
+
+```powershell
+Set-PowerAppDlpPolicyExemptResources -TenantId -PolicyName -UpdatedExemptResources 
+```
+
+#### Remove the exempt resource list for a DLP policy 
+
+```powershell
+Remove-PowerAppDlpPolicyExemptResources -TenantId -PolicyName 
+```
+
+To exempt a resource from a DLP policy you need the following information: 
+
+- Tenant ID (GUID) 
+- DLP policy ID (GUID) 
+- Resource ID (ends with a GUID) 
+- Resource type 
+
+You can retrieve the resource ID and type using PowerShell cmdlets Get-PowerApp for apps and Get-Flow for flows. 
+
+**Example** 
+
+To exempt flow with ID f239652e-dd38-4826-a1de-90a2aea584d9 and app with ID 06002625-7154-4417-996e-21d7a60ad624 we can run the following cmdlets: 
+
+```
+1. PS D:\> $flow = Get-Flow -FlowName f239652e-dd38-4826-a1de-90a2aea584d9 
+2. PS D:\> $app = Get-PowerApp -AppName 06002625-7154-4417-996e-21d7a60ad624 
+3. PS D:\> $exemptFlow = [pscustomobject]@{ 
+4. >>             id = $flow.Internal.id 
+5. >>             type = $flow.Internal.type 
+6. >>         } 
+7. PS D:\> $exemptApp = [pscustomobject]@{ 
+8. >>             id = $app.Internal.id 
+9. >>             type = $app.Internal.type 
+10. >>         } 
+11. PS D:\> $exemptResources = [pscustomobject]@{ 
+12. >>             exemptResources = @($exemptFlow, $exemptApp) 
+13. >>         } 
+14. PS D:\> New-PowerAppDlpPolicyExemptResources -TenantId b1c07da8-2ae2-47e7-91b8-d3418892f507 -PolicyName 65da474a-70aa-4a59-9ae1-65a2bebbf98a -NewDlpPolicyExemptResources $exemptResources 
+15. 
+16. exemptResources 
+17. --------------- 
+18. {@{id=/providers/Microsoft.ProcessSimple/environments/Default-b1c07da8-2ae2-47e7-91b8-d3418892f507/flows/f239652e-dd38-4826-a1de-90a2aea584d9; type=Microsoft.ProcessSimple/environments/flows}, @{id=/providers/Microsoft.PowerApps/apps/06002625-7154-4417-996e-21d7a60ad.. 
+```
+
 ### Governance error message content commands
 
 The following cmdlets can be used to lead your end users to your organization’s governance reference material, including a link to governance documentation and a governance contact, when they are prompted by governance controls. For instance, when governance error message content is set it will appear in Power Apps Data Loss Prevention policy runtime enforcement messages. 
@@ -490,7 +525,17 @@ New-PowerAppDlpErrorSettings -TenantId 'TenantId' -ErrorSettings @{
 } 
 ``` 
 
-The governance error message URL and email can be shown independently or together. Each value’s presence in the governance error message is controlled by the ‘enabled’ field.  
+The governance error message URL and email can be shown independently or together. Each value’s presence in the governance error message is controlled by the ‘enabled’ field. 
+
+##### This governance error message content appears in the following experiences.
+
+|     #    |     Experience                                                                                                     |     Availability           |
+|----------|--------------------------------------------------------------------------------------------------------------------|----------------------------|
+|     1    |     User launches a Power Apps app that’s not DLP compliant                                                        |     Generally available    |
+|     2    |     Maker shares a Power Apps canvas app but doesn’t have share privilege                                        |     Generally available    |
+|     3    |     Maker shares a Power Apps canvas app with ‘Everyone’ but doesn’t have privilege to share with ‘Everyone’    |     Generally available    |
+|     4    |     Maker saves a Power Apps app that’s not DLP compliant                                                          |     Not yet available     |
+|     5    |     Maker saves a Flow that’s not DLP compliant                                                                    |     Not yet available     |
 
 #### Display governance error message content 
 
@@ -523,7 +568,11 @@ Add-AllowedConsentPlans
 Get-AllowedConsentPlans
 ```
 
-The allowed consent plans cmdlets can be used to add or remove access to a particular type of consent plan from a tenant. "Internal" consent plans are either trial licenses or community plans that users can sign themselves up for via Power Apps/Power Automate portals. "Ad-hoc subscription" consent plans are trial licenses that users can sign themselves up for via https://signup.microsoft.com or admins can assign to users via Azure Active Directory (Azure AD) or the Microsoft 365 admin portal. By default all types of consent plans are allowed in a tenant. A common use case for these cmdlets is if a Power Platform admin wants to block users within their tenant from the ability to assign themselves trial licenses but retain the ability to assign trial licenses on behalf of users. This can be accomplished by using the *Remove-AllowedConsentPlans -Types "Internal"* command as well as disabling the setting *AllowAdHocSubscriptions* in Azure AD. It is important to note that when using *Remove-AllowedConsentPlans* all existing plans of the specified type will be removed from all users in the tenant and will not be recoverable. In addition, it will block all further assignment of plans of that type. If, at a later time, the Power Platform admin wishes to re-enable plans of that type they can use *Add-AllowedConsentPlans*. If they want to view the current state of allowed consent plans they can use *Get-AllowedConsentPlans*.
+The allowed consent plans cmdlets can be used to add or remove access to a particular type of consent plan from a tenant. "Internal" consent plans are either trial licenses or developer plans that users can sign themselves up for via Power Apps/Power Automate portals. "Ad-hoc subscription" or "Viral" consent plans are trial licenses that users can sign themselves up for via https://signup.microsoft.com or admins can assign to users via Azure Active Directory (Azure AD) or the Microsoft 365 admin portal. 
+
+By default all types of consent plans are allowed in a tenant. A common use case for these cmdlets is if a Power Platform admin wants to block users within their tenant from the ability to assign themselves trial licenses but retain the ability to assign trial licenses on behalf of users. This can be accomplished by using the *Remove-AllowedConsentPlans -Types "Internal"* command as well as disabling the setting *AllowAdHocSubscriptions* in Azure AD. 
+
+It is important to note that when using *Remove-AllowedConsentPlans* all existing plans of the specified type will be removed from all users in the tenant and will not be recoverable. In addition, it will block all further assignment of plans of that type. If, at a later time, the Power Platform admin wishes to re-enable plans of that type they can use *Add-AllowedConsentPlans*. If they want to view the current state of allowed consent plans they can use *Get-AllowedConsentPlans*.
 
 ## Questions?
 
@@ -531,7 +580,7 @@ If you have any comments, suggestions, or questions, post them on the [Administe
 
 ### See also
 [Get started using the Power Apps admin module](/powershell/powerapps/get-started-powerapps-admin) <br />
-[Microsoft.PowerApps.Administration.PowerShell](/powershell/module/microsoft.powerapps.administration.powershell)
-
+[Microsoft.PowerApps.Administration.PowerShell](/powershell/module/microsoft.powerapps.administration.powershell) <br />
+[Preview: Programmability and extensibility overview](programmability-extensibility-overview.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

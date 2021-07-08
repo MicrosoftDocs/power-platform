@@ -6,8 +6,9 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/30/2017
 author: revachauhan
+ms.subservice: admin
 ms.author: rechauha
-ms.reviewer: jimholtz
+ms.reviewer: mkaur
 search.audienceType: 
   - admin
 search.app:

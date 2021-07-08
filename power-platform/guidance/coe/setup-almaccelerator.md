@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 11/20/2020
+ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -99,7 +100,7 @@ Leave the Azure portal open, because you'll need to copy some information when y
 1. Create connections to all connectors used as part of the solution.
     1. Go to **Data** > **Connections**.
     1. Select **+ New Connection**.
-    1. Search for and select **Common Data Service**.
+    1. Search for and select **Microsoft Dataverse**.
      ![Select the Dataverse connector](media/msi-connection.png "Select the Dataverse connector")
     1. Select **+** to create a connection.
     1. Complete the same steps for the following connectors:

@@ -40,9 +40,6 @@ Web app at https://web.powerva.microsoft.com | <ul><li>You're an IT admin and wa
 Microsoft Teams app |<ul><li>You're an employee or member of an organization or team and want to create chatbots to answer common questions posed by other employees or teammates</li><li>You want to use advanced concepts, such as entities and variables, but have the chatbot available only internally</li><li>You want to create and distribute a chatbot in the shortest time possible</li></ul> |  <div class="nextstepaction">[Get started with Power Virtual Agents in Teams](teams/fundamentals-what-is-power-virtual-agents-teams.md)</div>
 
 
->[!NOTE]
-> Power Virtual Agents does not currently support US Government Cloud plans.
-
 
 ## Important information
 <!-- CELA required disclosure, do not modify -->

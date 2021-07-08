@@ -1,11 +1,12 @@
 ---
-title: "Microsoft Dataverse analytics   | MicrosoftDocs"
-description: Microsoft Dataverse analytics 
+title: "View and download Dataverse analytics"
+description: "Access Dataverse analytics from the Power Platform admin center to view and download metrics such as active users, API calls, executions, and more."
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/29/2021
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin

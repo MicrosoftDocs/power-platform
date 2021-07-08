@@ -4,10 +4,11 @@ description: Server-side synchronization provides direct apps-to-email server sy
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/12/2021
+ms.date: 05/25/2021
 author: revachauhan
+ms.subservice: admin
 ms.author: rechauha
-ms.reviewer: jimholtz
+ms.reviewer: mkaur
 search.audienceType: 
   - admin
 search.app:
@@ -65,6 +66,8 @@ If the mailbox is enabled for appointments, contacts, and tasks and incoming ema
   
 - **Sent Items folder**: If your server version is 9.1.0000.16819 or later, email messages sent from Dynamics 365 apps by using a server-side synchronization&ndash;enabled Exchange mailbox will be visible in the **Sent Items** folder in the Exchange sender's mailbox. To determine your version, sign in, and in the upper-right corner of the screen, select **Settings** ![User profile Settings button](media/user-profile-settings-button.png) > **About**.  
 
+  **Note**: This functionality can be disabled by toggling the SSSSaveOutgoingEmailToExchangeSentFolder [OrgDbOrgSetting](https://support.microsoft.com/en-us/topic/orgdborgsettings-tool-for-microsoft-dynamics-crm-20a10f46-2a24-a156-7144-365d49b842ba) to false. 
+
 - **Email folder tracking**: You can simply drag email to a folder to track it. Folder tracking works on any mobile device that supports [!INCLUDE[pn_Microsoft_Exchange](../includes/pn-microsoft-exchange.md)], which means you can track email from just about any device.  
   
 - **Doesn't require Outlook**: You don't have to have the [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)] add-in open to synchronize records. You can still use [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)] to track records manually even if you do server-side synchronization. This also helps to boost the performance of the Outlook add-in.  
@@ -91,7 +94,7 @@ If the mailbox is enabled for appointments, contacts, and tasks and incoming ema
 ### See also
 
  [Set up server-side synchronization of email, appointments, contacts, and tasks](../admin/set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks.md)   
- [Synchronizing data with Outlook or Exchange FAQ](frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook.md)
+ [Synchronizing data with Outlook or Exchange FAQ](frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook.yml)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

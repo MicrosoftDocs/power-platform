@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 12/14/2020
+ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -55,7 +56,7 @@ Before you begin, review the [prerequisites](setup.md#prerequisites) for using t
 
 1. When the compressed (.zip) file has been loaded, select **Next**.
 
-1. Establish connections to the Common Data Service (Current Environment), Common Data Service, Power Apps for Makers and Power Platform for Admins connector. If you create a new connection, you must select **Refresh**. You won't lose your import progress.
+1. Establish connections to the Microsoft Dataverse (Current Environment), Microsoft Dataverse, Power Apps for Makers and Power Platform for Admins connector. If you create a new connection, you must select **Refresh**. You won't lose your import progress.
 
      ![Establish connections to activate your solution](media/ibteams-2.png "Establish connections to activate your solution.")
 
@@ -119,7 +120,7 @@ Before you begin:
 
 1. When the compressed (.zip) file has been loaded, select **Next**.
 
-1. Establish connections to the Common Data Service (Current Environment), Common Data Service, Power Apps for Makers and Power Platform for Admins connector. If you create a new connection, you must select **Refresh**. You won't lose your import progress.
+1. Establish connections to the Microsoft Dataverse (Current Environment), Microsoft Dataverse, Power Apps for Makers and Power Platform for Admins connector. If you create a new connection, you must select **Refresh**. You won't lose your import progress.
 
      ![Establish connections to activate your solution](media/ibteams-2.png "Establish connections to activate your solution.")
 

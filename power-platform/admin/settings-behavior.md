@@ -5,7 +5,8 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/10/2020
+ms.date: 06/03/2021
+ms.subservice: admin
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -21,7 +22,7 @@ Use Behavior settings to adjust how model-driven apps in Dynamics 365, such as D
 
 These settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Product** >**Behavior**.
 
-Make sure you have the System Administrator or System Customizer security role or equivalent permissions to update the business closures.
+Make sure you have the System Administrator security role or equivalent permissions to update the business closures.
 
 **Check your security role**
 
@@ -51,7 +52,8 @@ Make sure you have the System Administrator or System Customizer security role o
 > |Show welcome screen on sign in|Default: On.|  
 > |Show Microsoft Power Automate on forms and in the site map|Default: On. Select **On** to enable embedded Power Automate flows in your organization. More information: [Enable embedded Power Automate to automate processes](enable-embedded-flow-in-your-organization.md).|  
 > |Show dashboard cards in expanded state|Default: Off. Select **On** to see the detailed card form in a dashboard. If set to **Off**, only the header and minimal details are displayed in the card form.|  
-
+> |**Lookup behavior**||  
+> |Enable advanced lookup in model-driven apps|Default: Off. If **On**, it allow users to use the **Advanced lookup** feature in a lookup column. More information: [Advanced lookup](/powerapps/user/lookup-field#advanced-lookup)|  
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

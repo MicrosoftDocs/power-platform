@@ -2,6 +2,7 @@
 title: "Hierarchy security  | MicrosoftDocs"
 description: Learn how to use hierarchy security to control access
 author: paulliew
+ms.subservice: admin
 ms.author: paulliew
 ms.reviewer: jimholtz
 ms.custom: "admin-security"

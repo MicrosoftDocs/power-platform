@@ -1,16 +1,19 @@
 ---
 title: "Support for Microsoft Power Platform and customer engagement apps in Dynamics 365 | MicrosoftDocs"
 description: Information on support for Microsoft Power Platform and customer engagement apps in Dynamics 365
-ms.custom: ""
-ms.date: 03/17/2021
+ms.date: 06/08/2021
 ms.reviewer: ""
 ms.service: power-platform
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+ms.custom: 
+  - "admin-security"
+  - "intro-internal"
 applies_to: 
   - "Dynamics 365 (online)"
 author: "jimholtz"
+ms.subservice: admin
 ms.author: "jimholtz"
 search.audienceType: 
   - admin
@@ -91,6 +94,10 @@ The following table outlines the best way to submit a new support request based 
     <td>Customer Engagement (on-premises) </td>
     <td colspan="2"><a href="https://support.microsoft.com/supportforbusiness/productselection">Support for Business</a></td>
     <td colspan="2"><a href="https://serviceshub.microsoft.com/">Services Hub</a></td>
+  </tr>
+  <tr>
+    <td width="30%">Dynamics 365 Finance <br />Dynamics 365 Supply Chain Management<br />Dynamics 365 Commerce</td>
+    <td width="70%" colspan="4"><a href="https://lcs.dynamics.com/Logon/Index">Lifecycle Services</a></td>
   </tr>
 </table>
 

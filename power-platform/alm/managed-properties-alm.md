@@ -1,8 +1,9 @@
 ---
-title: "View and edit managed properties in Power Apps solutions"
-description: "Learn how to view and edit managed properties in Power Apps solutions when implementing application lifecycle management (ALM)."
+title: "View and edit managed properties in solutions"
+description: "Learn how to view and edit managed properties in solutions when implementing application lifecycle management (ALM)."
 keywords: 
 author: Mattp123
+ms.subservice: alm
 ms.author: matp
 manager: kvivek
 ms.custom: ""
@@ -34,10 +35,10 @@ environment. After the managed solution is imported, the managed properties
 can't be updated except by an update of the solution by the original publisher.
 
 Most solution components have a **Managed properties** menu item available in the list of solution components. When you import the managed solution that
-contains the components, you can view&mdash;but not change&mdash;their managed properties.
+contains the components, you can view&mdash;but not change&mdash;the managed properties.
 
 ## View and edit entity managed properties
-1.	Sign in to [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) and select **Solutions** from the left pane. 
+1.	Sign in to [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) or [Power Automate](https://flow.microsoft.com) and select **Solutions** from the left pane. 
 2.	Open the solution that you want. 
 3.	From the list of components in the solution, select **…** next to the entity that you want to view the managed properties, and then select **Managed properties**. 
 
@@ -99,7 +100,6 @@ You can view and edit managed properties for many other solution components, suc
 While viewing entity relationships in [solution explorer](/powerapps/maker/model-driven-apps/advanced-navigation#solution-explorer), select a relationship from an unmanaged solution and then choose **More Actions** > **Managed Properties** on the menu bar.
   
 With relationships, the only managed property is **Can Be Customized**. This single setting controls all changes that can be made to the entity relationship. 
-
 
 ### See also
 [Use segmented solutions](segmented-solutions-alm.md)

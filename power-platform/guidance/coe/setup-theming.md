@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/10/2020
+ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -64,7 +65,7 @@ Before you begin, review the [prerequisites](setup.md#prerequisites) for using t
 
 1. In the pop-up window, select **Choose File**.
 
-1. Select the Center Of Excellence theming solution from File Explorer (CenterOfExcellenceThemingComponents_*x_x_x_xx*_managed.zip).
+1. Select the Center Of Excellence theming solution from File Explorer (Theming_x_x_managed.zip).
 
 1. When the compressed (.zip) file has been loaded, select **Next**.
 

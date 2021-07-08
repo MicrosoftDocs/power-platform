@@ -1,11 +1,13 @@
 ---
-title: "Sign in to Dynamics 365 and Office apps  | MicrosoftDocs"
-description: Sign in to Dynamics 365 and Office apps 
+title: "Access Dynamics 365 login and Office apps"
+description: "There are two main ways to log in and access your Microsoft Dynamics 365 and Office apps. Troubleshoot issues using the Support and Recovery Assistant."
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
+ms.custom: intro-internal
 ms.date: 11/12/2020
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin

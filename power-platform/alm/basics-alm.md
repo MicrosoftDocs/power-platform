@@ -3,10 +3,11 @@ title: "Application lifecycle management (ALM) basics with Microsoft Power Platf
 description: "Learn the basics of application lifecycle management with Microsoft Power Platform"
 keywords: 
 author: shmcarth
+ms.subservice: alm
 ms.author: shmcarth
 manager: kvivek
 ms.custom: ""
-ms.date: 05/05/2020
+ms.date: 06/11/2020
 ms.reviewer: "matp"
 ms.service: power-platform
 ms.suite: ""
@@ -80,7 +81,7 @@ Dataverse.
 
 More information: 
 - [Environments overview](../admin/environments-overview.md)
-- [Manage environment roles](../admin/environments-administration.md#manage-security-for-your-environments)
+- [Control user access to environments: security groups and licenses](../admin/control-user-access.md)
 - [Create users and assign security roles](../admin/create-users-assign-online-security-roles.md) 
 - [Create environments](../admin/create-environment.md)
 

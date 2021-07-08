@@ -7,6 +7,7 @@ ms.reviewer: ""
 ms.service: power-platform
 ms.topic: "article"
 author: "shmcarth" 
+ms.subservice: alm
 ms.author: "matp" 
 manager: "kvivek" 
 search.audienceType: 
@@ -31,6 +32,8 @@ The processes that Microsoft Dataverse uses to merge customizations emphasize ma
 Form merge occurs on a section-by-section basis. When you add new elements to an existing tab or section, your changes can affect or conceal the elements from the managed layers, including when the managed element is updated. This behavior occurs because the managed layers are underneath the unmanaged layer you're introducing with your customization. If you don't want to affect or conceal managed elements on the form, we recommend that you include your new elements within new container elements, such as a section or tab. This isolates your elements and reduces the possibility of affecting or concealing the elements from the managed layers. More information: [Solution layers](solution-layers-alm.md) 
   
  Managed solutions that contain forms that use new security roles depend on those roles. You should include these security roles with your managed solution. 
+ 
+ When you import a solution that includes table forms, the **Overwrite Customizations** option, even if selected, does not apply. The form being imported merges with any existing solution layers for the form.
   
 > [!NOTE]
 >  When a managed solution entity contains multiple forms and the environment entity form also contains multiple forms, the new forms aren't appended to the bottom of the list of available forms&mdash;they're interleaved with the original entity forms.

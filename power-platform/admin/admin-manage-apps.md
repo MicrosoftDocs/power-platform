@@ -5,7 +5,8 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/05/2021
+ms.date: 05/23/2021
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -48,6 +49,19 @@ Admins can do the following from the Power Platform admin center:
 
    > [!div class="mx-imgBorder"] 
    > ![Share or delete app](media/resources-edit-power-app.png "Share or delete app") 
+
+## Manage who can share canvas apps
+
+Power Apps respects the Canvas App ‘Share’ privilege in Dataverse. A user will not be able to share canvas apps in an environment if they do not have a security role with the Canvas App Share privilege set to a value other than ‘None selected’. This Dataverse Canvas App Share privilege is also respected in the default environment. This article outlines how to edit a privileges in a security role: [Edit a security role](create-edit-security-role.md#edit-a-security-role).
+
+   > [!div class="mx-imgBorder"] 
+   > ![Dataverse Canvas App privileges](media/admin-manage-apps/dataverse_canvas_app_entity_share_privilege.png "Dataverse Canvas App entity privileges")
+
+> [!NOTE]
+> The ability to granularly control the Canvas App Share privilege in a security role requires Dataverse in the environment where the privilege is to be changed. Power Apps does not discretely recognize the other Dataverse Canvas app entity privileges set for the environment. 
+
+### Surface your organization’s governance error content 
+If you specify governance error message content to appear in error messages, it will be included in the error message displayed when users observe they don’t have permission to share apps in an environment. See: [PowerShell governance error message content commands](powerapps-powershell.md#governance-error-message-content-commands).
 
 ### See also
 [Power Apps admin PowerShell support](powerapps-powershell.md#power-apps-commands)

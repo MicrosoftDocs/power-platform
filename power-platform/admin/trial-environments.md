@@ -1,13 +1,14 @@
 ---
-title: About trial environments | Microsoft Docs
-description: About trial (standard) and trial (subscription-based) environments
-author: imadyanni
-ms.author: iyanni
+title: "About trial environments: standard and subscription-based"
+description: "There are two types of Power Platform trial environments. Decide which one is right for you and learn how to create it in the Power Platform admin center."
+author: meeramahabala
+ms.subservice: admin
+ms.author: meeram
 ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/18/2021
+ms.date: 06/16/2021
 search.audienceType: 
   - admin
 search.app:
@@ -164,7 +165,7 @@ The expiration of subscription-based trial (also know as an admin trial) environ
 
 **To extend a subscription-based (admin) trial:**
 
-Admins can request a single extension in the Microsoft 365 admin center. See https://docs.microsoft.com/microsoft-365/commerce/extend-your-trial?view=o365-worldwide
+Admins can request a single extension in the Microsoft 365 admin center. See [Try or buy a Microsoft 365 for business subscription](/microsoft-365/commerce/extend-your-trial?view=o365-worldwide).
 
 There is only one self-service extension allowed per offer-based trial environment. To further retain the environment, it must be [converted to production](#convert-either-type-of-trial-environment-to-a-production-environment).
 
@@ -198,7 +199,7 @@ Administrative operations (copy, backup, restore, and reset) are not supported f
 
 ### How can I retain my data and resources if I don't have a way to convert the trial (standard) environment to a production environment?
 
-You can export your resources and data to another environment if you want to retain them longer than the trial period. We recommend that you create a production environment or an individual environment (with the [Power Apps Community Plan](https://powerapps.microsoft.com/communityplan/)) and export your resources to that environment. 
+You can export your resources and data to another environment if you want to retain them longer than the trial period. We recommend that you create a production environment or an individual environment (with the [Power Apps Developer Plan](https://powerapps.microsoft.com/communityplan/)) and export your resources to that environment. 
 
 Here are some guidelines for exporting resources.
 

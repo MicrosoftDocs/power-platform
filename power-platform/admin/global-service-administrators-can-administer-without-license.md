@@ -2,6 +2,7 @@
 title: "Administrator access for unlicensed Power Platform and Global admins"
 description: "Learn about the levels of permission in customer engagement apps available for Global admins and Microsoft Power Platform admins who don't have a license."
 author: paulliew
+ms.subservice: admin
 ms.author: paulliew
 ms.reviewer: jimholtz
 ms.service: power-platform

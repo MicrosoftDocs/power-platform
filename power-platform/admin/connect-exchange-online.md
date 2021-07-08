@@ -4,10 +4,11 @@ description: Connect to Exchange Online
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/17/2021
+ms.date: 05/12/2021
 author: revachauhan
+ms.subservice: admin
 ms.author: rechauha
-ms.reviewer: jimholtz
+ms.reviewer: mkaur
 search.audienceType: 
   - admin
 search.app:
@@ -123,6 +124,9 @@ To approve emails for customer engagement apps, a user requires:
 Decide which approach you want your organization to follow for mailbox approval.
 
 ![Decide on mailbox approval approach](media/approval-flow-chart.png "Decide on mailbox approval approach")
+
+> [!NOTE]
+> We are planning to revise the mailbox approval process with scenarios not requiring global admin approval. We'll update this documentation when that becomes available.
 
 ### Permission model
 The following table describes the permissions required to approve emails.

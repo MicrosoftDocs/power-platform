@@ -2,6 +2,7 @@
 title: "Copy a security role  | MicrosoftDocs"
 description: Copy a security role
 author: paulliew
+ms.subservice: admin
 ms.author: paulliew
 ms.reviewer: jimholtz
 ms.service: power-platform

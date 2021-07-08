@@ -10,6 +10,7 @@ applies_to:
   - PowerApps
 ms.assetid: 
 author: Mattp123
+ms.subservice: admin
 ms.author: matp
 ms.reviewer: v-iapr
 ms.suite: 

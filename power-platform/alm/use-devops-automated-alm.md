@@ -3,6 +3,7 @@ title: "Using DevOps to move from manual to automated ALM with Power Apps | Micr
 description: "Learn how to use Power Apps DevOps to move from manual to automated ALM"
 keywords: 
 author: Mattp123
+ms.subservice: alm
 ms.author: matp
 manager: kvivek
 ms.custom: ""

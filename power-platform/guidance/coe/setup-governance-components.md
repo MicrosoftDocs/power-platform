@@ -6,7 +6,8 @@ manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/10/2020
+ms.date: 07/06/2021
+ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -21,14 +22,17 @@ search.app:
 
 Multiple governance components are provided in the Center of Excellence (CoE) Starter Kit; each will require some configuration to install. The installation instructions in this article have been segmented based on the set of components that should be grouped and installed together, and dependencies on other segments are outlined in each section.
 
+> [!IMPORTANT]
+> You cannot use the archival solution if you have secured the environment with security groups. Please see  [Security groups and approvals](limitations.md#security-groups-and-approvals)
+
 ## Initialize flow approval tables in your environment
 
 The archive approval flows use the built-in Approval actions of Power Automate.
 
 - *Admin \| Archive and Clean Up v2 (Start Approval for Apps)*
 - *Admin \| Archive and Clean Up v2 (Start Approval for Flows)*
-- *Admin \| App Archive and Clean Up – Check Approval*
-- *Admin \| Flow Archive and Clean Up – Check Approval*)
+- *Admin \| Archive and Clean Up v2 (Check Approval)*
+- *Admin \| Archive and Clean Up v2 (Clean Up and Delete)*
 
  In the background, the built-in Approval actions use Dataverse. If you've installed the solution in a new environment, the Approval tables must be initialized. The easiest way to do this is to create a "dummy" approval flow.
 
@@ -68,14 +72,6 @@ The Core Components solution is required for the Governance Components solution,
 1. Import the *CenterOfExcellenceAuditComponents_x_x_x_xx_managed.zip* file.
 1. Create a new connection to the all connectors.
     ![Import the Center of Excellence - Governance components solution](media/msig-import.png "Import the Center of Excellence - Governance components solution")
-1. Update the Environment Variable values. Environment variables are used to store application and flow configuration data. This means that you only have to set the value once per environment and it will be used in all necessary flows and apps in that environment.
-
-    | Name | Current value |
-   |------|---------------|
-   | Auto Delete On Archive | Determines whether apps are deleted when they're archived in the following flow: Admin \| App Archive and Clean Up - Check Approvals and Archive. <br> Value must be Yes or No. A default value of No is provided. |
-   | Developer Compliance Center         | Leave this blank on import, and [update the enviornment variable](#update-environment-variables) after the import has finished by first navigating to the details page of the Developer Compliance Center (canvas app) included with this solution, and copy the web link (to launch the app) and paste it into this variable.  |
-   | ProductionEnvironment | Determines if the environment is Production or Dev/Test. True (the default) will mean that the approvals are sent to app/flow owners. False will send those approvals to the admin email. |
-   | Exclude Default environment from Compliance Request flows | Set to Yes if you want to Exclude the Default environment from the *Admin - Compliance Details* request flow. A default value of No is provided. |
 
 1. Select **Import** without adding values to the Environment Variables, as we will update them later - see [update environment variables](#update-environment-variables)
 
@@ -86,17 +82,17 @@ This step should be completed after you import the solution. Environment variabl
 All flows in this solution depend on all environment variables' being configured.
 
 >[!TIP]
->To view all environment variables in the environment, open the default solution for the environment, and set the **Type** filter to **Environment variable**.
+>Learn how to update environment variables for Production and Dataverse for Teams environments: [Update Environment Variables](setup-core-components.md#update-environment-variables).
 
 1. Select **See Environment Variables** to set the values as described in the following table.
 
-   | Name | Current value |
+   | Name | Description |
    |------|---------------|
-   | Auto Delete On Archive | Determines whether apps are deleted when they're archived in the following flow: Admin \| App Archive and Clean Up - Check Approvals and Archive. <br> Value must be Yes or No. A default value of No is provided. |
-   | Developer Compliance Center         | Navigate to the details page of the Developer Compliance Center (canvas app) included with this solution, and copy the web link (to launch the app) and paste it into this variable.  |
+   | Auto Delete On Archive | Determines whether apps andd flows are deleted when they're approved for deletion in the following flow: Admin \| App Archive and Clean Up - Check Approvals and Archive. <br> Value must be Yes or No. A default value of Yes is provided. |
+   | Exclude Default environment from Compliance Requests | Determines if the default environment is excluded in the Compliance Details request flow. <br> Value must be Yes or No. A default value of No is provided.  |
    | ProductionEnvironment | Determines if the environment is Production or Dev/Test. True (the default) will mean that the approvals are sent to app/flow owners. False will send those approvals to the admin email. |
-   | Approval Admin | Optional variable for users that have a distribution list for the Admin Email env var. Since you cannot use a distribution list for approvals, this variable will allow you to specify a secondary email that is a person for Approvals |
-   | Exclude Default environment from Compliance Request flows | Set to Yes if you want to Exclude the Default environment from the *Admin - Compliance Details* request flow. A default value of No is provided. |
+   | Cleanup Old Objects App URL | (Optional) Link to the Cleanup Old Objects canvas app included in this solution. <br> If included, communication about old objects which are considered no longer useful will include the link to make cleanup easier |
+   | Flow Approvals URL | (Optional) Link to Power Automate's Approval page for your CoE Environment <br> If included, communication about old objects which are considered no longer useful will include the link to make cleanup easier |
 
 ## Activate the flows
 
@@ -106,12 +102,24 @@ This Governance Components solution contains flows that you'll need to manually 
 - Admin \| Archive and Clean Up v2 (Start Approval for Flows)
 - Admin \| Archive and Clean Up v2 (Check Approval)
 - Admin \| Archive and Clean Up v2 (Clean Up and Delete)
-- Admin \| Compliance detail request
 - Microsoft Teams Admin \| Ask for Business Justification when Microsoft Teams environment is created
 - Microsoft Teams Admin \| Weekly Clean Up of Microsoft Teams environments
+- Admin \| Compliance detail request (in Center of Excellence - Core Components)
 
 >[!IMPORTANT]
 > These flows will be turned off on solution import, and you can turn them on as soon as you're ready to use them. Only turn on the Weekly Clean Up of Microsoft Teams environments when you're ready to enforce the deletion of Teams environments.
+
+## Update the variables and flows back in Core
+
+1) Get the URL for the Developer Compliance Center <br>
+   Browse to Details page of the Developer Compliance Center and grab the Web link
+    ![Setup Compliance Components1](media/setupCompliance1.png "Setup Compliance Components1")
+
+1) Browse to Default Solution, filter to Environment Variables, edit the **Developer Compliance Center URL** variable and add the URL from step 1 as a current value
+![Setup Compliance Components2](media/setupCompliance2.png "Setup Compliance Components2")
+
+1) Return to the Core Solution and turn on **Admin \| Compliance detail request v3**
+![Setup Compliance Components3](media/setupCompliance3.png "Setup Compliance Components3")
 
 ## Share apps with makers
 

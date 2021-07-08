@@ -1,12 +1,14 @@
 ---
 title: "Preview: View and manage on-premises data gateways   | MicrosoftDocs"
 description: View and manage on-premises gateways. 
-author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 10/14/2020
-ms.author: jimholtz 
+author: arthiriyer
+ms.subservice: admin
+ms.author: arthii
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:

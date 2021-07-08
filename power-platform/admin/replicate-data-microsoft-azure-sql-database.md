@@ -5,6 +5,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/11/2021
+ms.subservice: admin
 ms.author: sabinn
 author: sabinn-msft
 ms.reviewer: jimholtz

@@ -5,7 +5,8 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/01/2021
+ms.date: 05/27/2021
+ms.subservice: admin
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -55,11 +56,11 @@ An example of solutions provided for Dynamics 365 App for Outlook issues:
 > [!NOTE]
 > In the following cases, you might not be able to create a support request or we can't provide relevant solutions:
 > 
-> - There is an issue with your Premier Support contract. Please contact your Technical Account Manager (TAM).
+> - There is an issue with your Unified or Premier Support contract. Please contact your Incident Manager or Customer Success Account Manager (CSAM).
 > - Your Support subscription has expired. Please renew.
 > - We couldn't find your Support plan. 
->   - If you have a Premier Support plan, please contact your Technical Account Manager (TAM).
->   - If you have a non-Premier Support plan, please verify the plan is active. For support information, see [Community Forums](https://community.dynamics.com/f).
+>   - If you have a Unified or Premier Support plan, please contact your Incident Manager or Customer Success Account Manager (CSAM).
+>   - If you have a non-Unified/Premier Support plan, please verify the plan is active. For support information, see [Community Forums](https://community.dynamics.com/f).
 
 
 ### View solutions or enter a support request through the new support center
@@ -88,14 +89,14 @@ An example of solutions provided for Dynamics 365 App for Outlook issues:
    > [!div class="mx-imgBorder"] 
    > ![Create a new support request](media/support-request-page2.png "Create a new support request")
 
-5. If you have a **Premier** support plan that is not listed, select **Add new contract** and fill in the fields. If you don't know your access or contract ID, please contact your service admin or Technical Account Manager (TAM).
+5. If you have a **Unified or Premier** support plan that is not listed, select **Add new contract** and fill in the fields. If you don't know your access or contract ID, please contact your service admin or Incident Manager or Customer Success Account Manager (CSAM).
 
    > [!div class="mx-imgBorder"] 
    > ![Premier support info](media/premier-support.png "Premier support info")
 
 > [!NOTE]
-> - For **Contract ID/Password**, please enter your Premier contract ID. 
-> - The **Contract ID/Password** defaults to the Premier contract ID. If you have changed the password when registering online in the Premier portal, you should use the updated password instead of the contract ID.
+> - For **Contract ID/Password**, please enter your Unified or Premier contract ID. 
+> - The **Contract ID/Password** defaults to the Unified or Premier contract ID. If you have changed the password when registering online in the Unified/Premier portal, you should use the updated password instead of the contract ID.
 
 Once you submit your request it will appear in the list of support requests.
 
@@ -105,7 +106,7 @@ You can check the status and edit your request on this page.
 
 ## Advisory services and premium support plan
 
-A [premium support plan](https://dynamics.microsoft.com/support/plans/) includes advisory services. You can submit a request to get answers relative to recommendations, best practices, general advice or guidance on the usage of the products.
+A [premium support plan](https://dynamics.microsoft.com/support) includes advisory services. You can submit a request to get answers relative to recommendations, best practices, general advice or guidance on the usage of the products.
 
 Without a premium support plan, you can only submit request on technical issues. Progressively, such restriction will be enforced and you won't be able to create a support request for advisory services unless you have a premium support plan.
 

@@ -3,6 +3,7 @@ title: "Power Apps component framework | Microsoft Docs"
 description: "Learn about including Power Apps component framework components in solutions."
 keywords: 
 author: mikkelsen2000
+ms.subservice: alm
 ms.author: pemikkel
 manager: kvivek
 ms.custom: ""
@@ -28,7 +29,7 @@ Data Service. The following sections describe how to do this.
 This section describes how to import code components into Microsoft Dataverse so
 that the components are available to Power Apps makers.
 
-After implementing the code components by using the Power Apps CLI, the next step
+After implementing the code components by using the Power Platform CLI, the next step
 is to pack all the code component elements into a solution file and import the
 solution file into Dataverse so that you can see the code components
 in the maker runtime experience.

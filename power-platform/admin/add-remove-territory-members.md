@@ -1,11 +1,12 @@
 ---
-title: "Add or remove sales territory members  | MicrosoftDocs"
-description: Add or remove sales territory members
+title: "Manage a sales territory by adding or removing members"
+description: "Learn how to manage your Power Platform users by adding or removing members assigned to a sales territory."
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/30/2017
 author: jimholtz
+ms.subservice: admin
 ms.author: jimholtz
 ms.reviewer: jimholtz
 ms.custom: "admin-security"

@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/09/2020
+ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -82,7 +83,7 @@ To reduce risk to data, the types of connectors used in your apps and flows shou
 
 While the default environment covers many use cases, some power users will have more advanced needs for their apps and flows, like integrating with Microsoft Teams, Azure Active Directory (Azure AD), or Azure DevOps.
 
-For this purpose, we recommend creating a power user environment. This shared environment should use mre permissive DLP policies and admins should control the maker list to this environment.
+For this purpose, we recommend creating a power user environment. This shared environment should use more permissive DLP policies and admins should control the maker list to this environment.
 
 Some considerations for the power user environment:
 

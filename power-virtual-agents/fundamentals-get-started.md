@@ -30,7 +30,9 @@ This quickstart guide takes you through the end-to-end experience of creating a 
 
 > 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mLcX ]
-> 
+>
+
+In addition to this guide, you can also [download and use templates to help you create, develop, and publish chatbots with Power Virtual Agents](fundamentals-templates.md).
 
 
 ## Prerequisites

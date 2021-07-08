@@ -2,9 +2,12 @@
 title: "Grant users access in customer engagement apps and Power Apps"
 description: "Learn to create users, assign licenses, and set administrative roles in Microsoft 365 admin center. Assign security roles in Dynamics 365 apps."
 author: jimholtz
+ms.subservice: admin
 ms.author: jimholtz
 ms.reviewer: jimholtz
-ms.custom: "admin-security"
+ms.custom: 
+  - "admin-security"
+  - "intro-internal"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
