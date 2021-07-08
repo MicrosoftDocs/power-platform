@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.topic: conceptual
 ms.custom: canvas
 ms.date: 06/30/2020
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - maker

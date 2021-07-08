@@ -3,6 +3,7 @@ title: "Available GitHub Actions for Microsoft Power Platform | Microsoft Docs"
 description: "Learn about the available GitHub Actions to support continuous integration and delivery for Microsoft Power Platform development."
 keywords: 
 author: kkanakas
+ms.subservice: alm
 ms.author: kartikka
 manager: kvivek
 ms.custom: ""

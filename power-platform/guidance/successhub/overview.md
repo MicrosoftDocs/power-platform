@@ -6,6 +6,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/20/2021
+ms.subservice: guidance
 ms.author: kathyos
 ms.reviewer: jimholtz
 search.audienceType: 

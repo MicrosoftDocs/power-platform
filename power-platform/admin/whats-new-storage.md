@@ -7,6 +7,7 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.custom: intro-internal
 ms.date: 06/02/2021
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin

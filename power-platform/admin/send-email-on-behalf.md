@@ -6,6 +6,7 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/27/2021
 author: revachauhan
+ms.subservice: admin
 ms.author: rechauha
 ms.reviewer: mkaur
 search.audienceType: 
