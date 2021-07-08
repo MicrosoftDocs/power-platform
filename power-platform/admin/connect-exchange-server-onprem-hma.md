@@ -136,7 +136,7 @@ In order to allow HMA-App to have access to Exchange on-premises, grant the “O
 
 ## Email server profile with authentication type: Exchange Hybrid Modern Auth (HMA)
 
-Before you [create an email server profile](connect-exchange-server-on-premises.md) on Dynamics 365 using Exchange Hybrid Modern Auth (HMA), you need to collect the following information from the Azure Portal:
+Before you [create an email server profile](connect-exchange-server-on-premises.md) on Dynamics 365 using Exchange Hybrid Modern Auth (HMA), you need to collect the following information from the Azure portal:
 
 - EWS URL: The Exchange WebServices endpoint where the Exchange on-premises is located which must be publicly accessible from Dynamics 365. 
 - AAD resource Id: This is the Azure resource id for which the HMA app will request access to. It is usually the host part of the EWS endpoint URL. 
