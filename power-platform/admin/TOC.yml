@@ -712,10 +712,10 @@
             href: supported-email-service-configurations-server-side-synchronization.md
           - name: Connect to Exchange Online
             href: connect-exchange-online.md
-          - name: Server profile with cross tenant authentication
-            items:
-            - name: Exchange Online cross tenant authentication
-              href: connect-exchange-online-server-profile-oauth.md
+           - name: Server profile with cross tenant authentication
+             items:
+             - name: Exchange Online cross tenant authentication
+               href: connect-exchange-online-server-profile-oauth.md
           - name: Connect to Exchange Server (on-premises)
             href: connect-exchange-server-on-premises.md
             items: 
