@@ -18,8 +18,7 @@ search.app:
 #Customer intent: As a developer, I want to use GitHub Actions so that my solution builds and deployment will be automated.
 ---
 
-# Tutorial: Automate solution deployment using GitHub Actions for Microsoft Power Platform (Preview)
-[This topic is pre-release documentation and is subject to change.]
+# Tutorial: Automate solution deployment using GitHub Actions for Microsoft Power Platform
 
 In this tutorial, you will learn how to:
 
