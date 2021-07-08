@@ -1,13 +1,13 @@
 ---
 title: "Data loss prevention activity logging  | MicrosoftDocs"
 description: Data loss prevention activity logging
-author: pnghub
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/04/2020
 ms.subservice: admin
-ms.author: gned
+author: tjvass
+ms.author: tjvass
 ms.reviewer: jimholtz 
 search.audienceType: 
   - admin

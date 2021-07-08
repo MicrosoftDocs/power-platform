@@ -125,6 +125,7 @@ Imagine the following events:
 1. User A opens the note in the timeline on a form. For example, **Sales** > **Contacts** > *contact* > **Summary** > **Timeline** section > **+** > **OneNote**.
 
 When this occurs, user A sees the error message "Folder *contact* has been renamed or deleted from SharePoint. It was expected inside *SharePoint folder* path."
+
 :::image type="content" source="media/one-note-error.png" alt-text="Error message due to renamed OneNote file in document grid":::
 
 <!-- ## Error message: File cannot be found
