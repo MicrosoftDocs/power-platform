@@ -36,12 +36,12 @@ Follow these steps to connect customer engagement apps (such as [Dynamics 365 Sa
    > [!div class="mx-imgBorder"] 
    > ![Email server profile setting](media/server-profile-settings.png "Email server profile setting")
 
-3. On the command bar, select **New server profile** and then specify a meaningful **Name** for the profile.
+3. On the command bar, select **New server profile**.
 
    > [!div class="mx-imgBorder"] 
    > ![Create new server profile](media/new-server-profile.png "Create a new server profile")
 
-4. Choose **Other(IMAP/POP,SMTP)**.  
+4. For **Email Server Type** select **Other(IMAP/POP,SMTP)** and then specify a meaningful **Name** for the profile.
 
    > [!div class="mx-imgBorder"] 
    > ![Choose Other profile](media/pop-smtp-profile.png "Choose Other profile")
@@ -50,11 +50,11 @@ Follow these steps to connect customer engagement apps (such as [Dynamics 365 Sa
 
 6. For **Authentication Type** select **Credential specififed by user or queue**. When you select this option, the credentials specified in the mailbox record of a user or queue are used for sending or receiving email for the respective user or queue. Note: To ensure the credentials are secured, SQL encryption is used to encrypt the credentials stored in the mailbox.
 
-7. Expand the **Locations and ports** and select the following:
+7. Expand the **Locations and ports** and enter the following:
     <ol> 
-      <li> Incoming communication protocol: Select which protocol that will be used for authentication for incoming email, IMAP or POP..</li>
+      <li> Incoming communication protocol: Enter the protocol that will be used for authentication for incoming email, IMAP or POP.</li>
       <li> Incoming and Ougoing location: Enter the incoming and outgoing email location. </li>
-      <li> Incoming and Outgoing port: Enter the port on the email server for accessing the incoming email. </li>
+      <li> Incoming and Outgoing port: Enter the incoming and outgoing port for the email server. </li>
     </ol>  
 
 8. Expand the **Advanced** section and use the tooltips to choose your email processing options. 
