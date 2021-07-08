@@ -19,7 +19,7 @@ search.app:
 ---
 # Connect Gmail accounts using credentials specified by a user or queue 
 
-Follow the steps in this article to set up server-side synchronization to send and receive email in customer engagement apps (such as [Dynamics 365 Sales](/dynamics365/sales-professional/help-hub.md), [Dynamics 365 Customer Service](dynamics365/customer-service/help-hub.md), [Dynamics 365 Marketing](dynamics365/marketing/help-hub.md), [Dynamics 365 Field Service](dynamics365/field-service/overview.md), and [Dynamics 365 Project Service Automation](dynamics365/project-operations/psa/overview.md), from Gmail accounts using credentials specified by a user or queue as the authorization mechanism.
+Follow the steps in this article to set up server-side synchronization to send and receive email in customer engagement apps (such as [Dynamics 365 Sales](/dynamics365/sales-professional/help-hub), [Dynamics 365 Customer Service](/dynamics365/customer-service/help-hub), [Dynamics 365 Marketing](/dynamics365/marketing/help-hub), [Dynamics 365 Field Service](/dynamics365/field-service/overview), and [Dynamics 365 Project Service Automation](/dynamics365/project-operations/psa/overview), from Gmail accounts using credentials specified by a user or queue as the authorization mechanism.
 
 
 ## Create an email server profile  
