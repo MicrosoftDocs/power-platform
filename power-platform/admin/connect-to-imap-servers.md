@@ -42,19 +42,19 @@ Follow these steps to connect customer engagement apps (such as [Dynamics 365 Sa
    > [!div class="mx-imgBorder"] 
    > ![Create new server profile](media/new-server-profile.png "Create a new server profile")
 
-4. For **Email Server Type** select **Other(IMAP/POP,SMTP)** and then specify a meaningful **Name** for the profile.
+4. For **Email Server Type**, select **Other(IMAP/POP,SMTP)** and then specify a meaningful **Name** for the profile.
 
    > [!div class="mx-imgBorder"] 
    > ![Choose Other profile](media/pop-smtp-profile.png "Choose Other profile")
 
-5. For **Set as default profile for new mailboxes** choose wheater you want this server profile as the default profile for new mailboxes. 
+5. For **Set as default profile for new mailboxes** choose whether you want this server profile as the default profile for new mailboxes. 
 
-6. For **Authentication Type** select **Credential specififed by user or queue**. When you select this option, the credentials specified in the mailbox record of a user or queue are used for sending or receiving email for the respective user or queue. Note: To ensure the credentials are secured, SQL encryption is used to encrypt the credentials stored in the mailbox.
+6. For **Authentication Type**, select **Credential Specified by user or queue**. When you select this option, the credentials specified in the mailbox record of a user or queue are used for sending or receiving email for the respective user or queue. Note: To ensure the credentials are secured, SQL encryption is used to encrypt the credentials stored in the mailbox.
 
 7. Expand the **Locations and ports** and enter the following:
     <ol> 
-      <li> Incoming communication protocol: Enter the protocol that will be used for authentication for incoming email, IMAP or POP.</li>
-      <li> Incoming and Ougoing location: Enter the incoming and outgoing email location. </li>
+      <li> Incoming communication protocol: Enter the protocol that will be used for authentication for incoming email.</li>
+      <li> Incoming and Outgoing location: Enter the incoming and outgoing email location. </li>
       <li> Incoming and Outgoing port: Enter the incoming and outgoing port for the email server. </li>
     </ol>  
 
