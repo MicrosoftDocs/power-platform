@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/04/2020
+ms.date: 07/08/2021
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -38,6 +38,8 @@ Administrators can edit properties of an environment, such as the friendly name,
    - **URL**. The URL is used to construct the URL for users to sign in to customer engagement apps. We recommend that you limit the length of the URL name to reduce the overall length of the URL.  
   
      > [!WARNING]
+     > For up to 24 - 48hrs after you have updated the URL, you will not be able to open or edit Power Automate flows in the environment that have connections to Dataverse. You will see the error "It looks like something went wrong." while the edit flow page is pointing to the old environment URL. The flows will still run in the background and can be turned on or off via Solutions.
+     > 
      >  There are important tasks that you must communicate to your users immediately following a URL name change.  
      > 
      > - For users of the web application, send information that includes the new URL with instructions about how to bookmark it.  
