@@ -55,7 +55,6 @@ Follow these steps to connect customer engagement apps (such as [Dynamics 365 Sa
       <li> Incoming communication protocol: Select which protocol that will be used for authentication for incoming email, IMAP or POP..</li>
       <li> Incoming and Ougoing location: Enter the incoming and outgoing email location. </li>
       <li> Incoming and Outgoing port: Enter the port on the email server for accessing the incoming email. </li>
-      <li> dfdf </li>
     </ol>  
 
 8. Expand the **Advanced** section and use the tooltips to choose your email processing options. 
