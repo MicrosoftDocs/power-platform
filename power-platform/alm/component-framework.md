@@ -21,8 +21,10 @@ search.app:
 # Power Apps component framework
 
 To be accessible by Power Apps makers, components in the Power Apps component framework must be packaged in a
-solution, exported, and then imported into a Power Apps environment with Common
-Data Service. The following sections describe how to do this.
+solution, exported, and then imported into a Power Apps environment with Dataverse. The following sections describe how to do this.
+
+For more information about using ALM techniques with code component see
+[Code components application lifecycle management (ALM)](/powerapps/developer/component-framework/code-components-alm).
 
 ## Package and deploy a code component
 
