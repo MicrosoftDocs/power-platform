@@ -109,7 +109,7 @@ Follow the steps for **Create a project** in: [Create, shut down, and restore pr
    > [!div class="mx-imgBorder"] 
    > ![Create new server profile](media/new-server-profile.png "Create a new server profile")
 
-4. For **Email Server Type** select **Gmail** and then specify a meaningful Name for the profile.
+4. For **Email Server Type** select **Gmail** and then specify a meaningful **Name** for the profile.
 
    > [!div class="mx-imgBorder"] 
    > ![Create new server profile for Gmail](media/gmail-profile.png "Create a new server profile for Gmail")
@@ -118,9 +118,9 @@ Follow the steps for **Create a project** in: [Create, shut down, and restore pr
 
 6. For **Authentication Type** select **Gmail OAuth**.
 
-7. To get the **Client id** and **Client Secret** see the previous step.
+7. To get the **Client id** and **Client Secret** information see the previous step.
 
-8. Expand **Locations and ports**. These fields are automatically populated.
+8. The **Locations and ports** fields are automatically populated.
    
    > [!div class="mx-imgBorder"] 
    > ![Create new server profile for Gmail using Oauth](media/gmail-oauth-profile.png "Create a new server profile for Gmail using Oauth")
