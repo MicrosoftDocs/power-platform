@@ -30,11 +30,11 @@ The warning message will appear at the top of the Power Platform admin center pa
 To prepare for Internet Explorer support ending, administrators in the Power Platform Admin center and in the model-driven apps Advanced Settings will see an informational message like the following *before* August 17th, 2021 and a warning message *starting* August 17th, 2021 if their tenant has Internet Explorer users.  These messages will appear regardless of the browser the administrator is using. 
 
 > **Alert**<br />
-> **Before August 17th, 2021**
+> **Before August 17th, 2021** <br />
 > Internet Explorer support will end on August 17, 2021. Ensure users switch to Microsoft Edge or another modern browser.
 
 > **Alert**<br />
-> **Starting August 17th, 2021**
+> **Starting August 17th, 2021** <br />
 > Internet Explorer support has ended. Ensure users have switched to Microsoft Edge or another modern browser. 
 
 ## User experience 
