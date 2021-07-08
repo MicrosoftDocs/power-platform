@@ -18,7 +18,7 @@ search.app:
 ---
 # Connect Gmail accounts using credentials specified by a user or queue 
 
-Follow the steps in this article to set up server-side synchronization to send and receive email in customer engagement apps (such as [Dynamics 365 Sales](./../sales-professional/help-hub.md), [Dynamics 365 Customer Service](dynamics365/customer-service/help-hub.md), [Dynamics 365 Marketing](dynamics365/marketing/help-hub.md), [Dynamics 365 Field Service](dynamics365/field-service/overview.md), and [Dynamics 365 Project Service Automation](dynamics365/project-operations/psa/overview.md), from Gmail accounts using credentials specified by a user or queue as the authorization mechanism.
+Follow the steps in this article to set up server-side synchronization to send and receive email in customer engagement apps (such as [Dynamics 365 Sales](/dynamics365/sales-professional/help-hub.md), [Dynamics 365 Customer Service](dynamics365/customer-service/help-hub.md), [Dynamics 365 Marketing](dynamics365/marketing/help-hub.md), [Dynamics 365 Field Service](dynamics365/field-service/overview.md), and [Dynamics 365 Project Service Automation](dynamics365/project-operations/psa/overview.md), from Gmail accounts using credentials specified by a user or queue as the authorization mechanism.
 
 
 ## Create an email server profile  
@@ -42,7 +42,7 @@ Follow the steps in this article to set up server-side synchronization to send a
 
 5. For **Set as default profile for new mailboxes** choose wheater you want this server profile as the default profile for new mailboxes.
 
-6. For **Authentication Type** select **Credential specified by user or queue (Using less secure apps)**.
+6. For **Authentication Type** select **Credential specified by user or queue (Using less secure apps)**. The credentials specified in the mailbox row of a user or queue are used for sending or receiving email for the respective user or queue. **Note**: To ensure the credentials are secured, SQL encryption is used to encrypt the credentials stored in the mailbox.
 
    > [!div class="mx-imgBorder"] 
    > ![Create a new server profile for Gmail using credential specified by user or queue](media/gmail-profile-user-queue.png "Create a new server profile for Gmail using credential specified by user or queue")
