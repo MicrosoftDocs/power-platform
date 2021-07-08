@@ -19,7 +19,7 @@ search.app:
 
 # Exchange Online cross tenant authentication
 
-Use Server-Side Sync to synchronize Exchange Online mailboxes that reside on different Exchange Online tenants. Follow the steps in this topic to complete the prerequistites before you set up a Exchange Online server profile using Oauth cross tenant authentication. For more information, see [Create an email server profile for Exchnage Online](connect-exchange-online.md#create-an-email-server-profile-for-exchnage-online).
+Use Server-Side Sync to synchronize Exchange Online mailboxes that reside on different Exchange Online tenants. Follow the steps in this topic to complete the prerequisites before you set up an Exchange Online server profile using Oauth cross tenant authentication. For more information, see [Create an email server profile for Exchange Online](connect-exchange-online.md#create-an-email-server-profile-for-exchange-online).
 
 ## Configuration
 
@@ -29,7 +29,8 @@ Sign in to the [Azure portal](https://portal.azure.com/), create the App regist
 
 Register your app on Azure portal on the tenant where Microsoft Exchange Online resides. Follow the steps in this topic to create the app registration: [Register an application](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app#register-an-application).
 
-You don't need to enter anything for **Redirect URI** as this is not needed.
+> [!NOTE]
+> You don't need to enter anything for **Redirect URI** since it's not needed.
 
 When you register your app, note the **Application (client) ID** and **Directory (tenant) ID** because you will need this information later to configure the email server profile.
 
@@ -38,7 +39,7 @@ When you register your app, note the **Application (client) ID** and **Directory
 
 ## Add a Client Secret
 
-A client secret is a string value your app uses to identity itself. This will be used by Dynamics 365 to authenticate to your app.
+A client secret is a string value your app uses to identity itself. It's used by Dynamics 365 to authenticate to your app.
 
 To create a client secret, follow the steps in this topic, [Add a client secret](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app#add-a-client-secret). Remember to note the **Secret Value**, as you will need this information later to configure the email server profile.
 
@@ -47,7 +48,7 @@ To create a client secret, follow the steps in this topic, [Add a client secret]
 
 ## Add API permissions 
 
-To allow your app to have access to Exchange Online you need to grant **Office 365 Exchange Online** API permission. To do this, follow these steps:
+To allow your app to have access to Exchange Online, you need to grant **Office 365 Exchange Online** API permission. 
 
 1. Select **API permissions** &gt; **Add a permission**.
     
@@ -78,11 +79,11 @@ To allow your app to have access to Exchange Online you need to grant **Office 3
 
 ## Email server profile for Exchange Online with authentication type: Oauth (Cross Tenant)
 
-To [create an email server profile for Exchnage Online using Oauth (Cross Tenant)](connect-exchange-online.md#create-an-email-server-profile-for-exchnage-online), you need to collect the following informaion from the Azure Portal:
+To [create an email server profile for Exchange Online using Oauth (Cross Tenant)](connect-exchange-online.md#create-an-email-server-profile-for-exchange-online), you need to collect the following information from the Azure portal:
 
-- TenantId: This is the tenantId of the tenant where the Exchange online is configured.
-- Application Id: This is the appId used by Dynamics to connect to Exchange Online.
-- Client Secret: This is the client secret used by Dynamics 365 to authenticate as the app.
+- TenantId: It's the tenantId of the tenant where the Exchange online is configured.
+- Application ID: It's the appId used by Dynamics to connect to Exchange Online.
+- Client Secret: It's the client secret used by Dynamics 365 to authenticate as the app.
 
   > [!div class="mx-imgBorder"]
   > ![Email server profile form](media/server-profile-form.png "Email server profile form") 
