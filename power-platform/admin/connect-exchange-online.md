@@ -18,7 +18,7 @@ search.app:
 ---
 # Connect to Exchange Online
 
-With both customer engagement apps (such as [Dynamics 365 Sales](./../sales-professional/help-hub.md), [Dynamics 365 Customer Service](dynamics365/customer-service/help-hub.md), [Dynamics 365 Marketing](dynamics365/marketing/help-hub.md), [Dynamics 365 Field Service](dynamics365/field-service/overview.md), and [Dynamics 365 Project Service Automation](dynamics365/project-operations/psa/overview.md), and [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] hosted as online services, connecting the two is a simpler, more straightforward configuration.  
+With both customer engagement apps (such as [Dynamics 365 Sales](dynamics365/sales-professional/help-hub.md), [Dynamics 365 Customer Service](dynamics365/customer-service/help-hub.md), [Dynamics 365 Marketing](dynamics365/marketing/help-hub.md), [Dynamics 365 Field Service](dynamics365/field-service/overview.md), and [Dynamics 365 Project Service Automation](dynamics365/project-operations/psa/overview.md), and [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] hosted as online services, connecting the two is a simpler, more straightforward configuration.  
   
   
 > [!IMPORTANT]
@@ -51,17 +51,18 @@ With both customer engagement apps (such as [Dynamics 365 Sales](./../sales-prof
    > [!div class="mx-imgBorder"] 
    > ![Create new server profile](media/new-server-profile.png "Create a new server profile")
 
-4. For **Email Server Type** select **Exchage Online**.
+4. For **Email Server Type** select **Exchage Online** and then specify a meaningful **Name** for the profile.
 
    > [!div class="mx-imgBorder"] 
    > ![Select Exchange Online server profile](media/exchange-online-server-profile.png "Select Exchange Online server profile]")
 
-5. For **Set as default profile for new mailboxes** choose wheater you want this server profile as the default profile for new mailboxes. 
+5. For **Set as default profile for new mailboxes** choose wheater you want this server profile as the default profile for new mailboxes.
+
 6. For **Authentication Type** choose one of the following:
 
     - **S2S auth (Same Tenant)**: For more information, see [Build web applications using server-to-server (S2S) authentication](/powerapps/developer/data-platform/build-web-applications-server-server-s2s-authentication).
     
-    - **Oauth (Cross Tenant)**: To get the information for this option, follow the steps in this topic: [Exchange Online cross tenant authentication](connect-exchange-online-server-profile-oauth.md).
+    - **Oauth (Cross Tenant)**: To get the information for this option, follow the steps in this topic: [Exchange Online cross tenant authentication](connect-exchange-online-server-profile-oauth.md). **Note**: The **Locations and ports** fields are automatically populated.
     
         > [!div class="mx-imgBorder"]
         > ![Email server profile form](media/server-profile-form.png "Email server profile form") 
