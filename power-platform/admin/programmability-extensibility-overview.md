@@ -8,6 +8,7 @@ ms.component: pa-admin
 ms.topic: reference
 ms.custom: intro-internal
 ms.date: 03/19/2021
+ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
   - admin

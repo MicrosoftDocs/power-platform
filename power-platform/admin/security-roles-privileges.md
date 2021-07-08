@@ -2,6 +2,7 @@
 title: "Security roles and privileges | MicrosoftDocs"
 description: Overview of security roles and privileges
 author: paulliew
+ms.subservice: admin
 ms.author: paulliew
 ms.reviewer: jimholtz
 ms.custom: "admin-security"

@@ -6,6 +6,7 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 10/22/2020
 author: arthiriyer
+ms.subservice: admin
 ms.author: arthii
 ms.reviewer: jimholtz
 search.audienceType: 

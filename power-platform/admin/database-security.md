@@ -1,6 +1,7 @@
 ---
 title: Configure user security in an environment | Microsoft Docs
 description: Configure user security in environment
+ms.subservice: admin
 ms.author: jimholtz
 author: jimholtz
 ms.reviewer: jimholtz

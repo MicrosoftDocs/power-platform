@@ -3,6 +3,7 @@ title: "Solution layers and merge behavior"
 description: "Learn about unmanaged and managed solution layers at the component level. Understand merge behavior when a solution is updated or multiple solutions are installed."
 keywords: 
 author: Mattp123
+ms.subservice: alm
 ms.author: matp
 manager: kvivek
 ms.custom: ""

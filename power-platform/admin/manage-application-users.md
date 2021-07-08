@@ -2,6 +2,7 @@
 title: "Manage application users in the Power Platform admin center  | MicrosoftDocs"
 description: How to manage application users from the Power Platform admin center  
 author: paulliew
+ms.subservice: admin
 ms.author: paulliew
 ms.reviewer: jimholtz
 ms.service: power-platform

@@ -5,6 +5,7 @@ ms.service: power-platform
 ms.topic: how-to
 ms.component: cds
 ms.date: 02/01/2021
+ms.subservice: admin
 ms.author: sabinn
 author: sabinn-msft
 ms.reviewer: jimholtz

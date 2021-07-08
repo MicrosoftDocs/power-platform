@@ -3,6 +3,7 @@ title: "Work with solutions using the SDK APIs | Microsoft Docs"
 description: "Learn about the APIs that are available to manage Microsoft Dataverse solutions."
 keywords: 
 author: mikkelsen2000
+ms.subservice: alm
 ms.author: pemikkel
 manager: kvivek
 ms.custom: ""

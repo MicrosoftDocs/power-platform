@@ -6,6 +6,7 @@ ms.topic: how-to
 ms.component: cds
 ms.date: 02/04/2021
 author: sabinn-msft
+ms.subservice: admin
 ms.author: sabinn
 ms.reviewer: jimholtz
 search.audienceType: 

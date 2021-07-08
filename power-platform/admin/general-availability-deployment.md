@@ -2,6 +2,7 @@
 title: "General availability deployment  | MicrosoftDocs"
 description: About general availability deployment
 author: jimholtz
+ms.subservice: admin
 ms.author: jimholtz
 ms.reviewer: jimholtz
 ms.service: power-platform

@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 08/04/2020
+ms.subservice: admin
 ms.author: deonhe
 search.audienceType: 
   - admin

@@ -3,6 +3,7 @@ title: "Power Apps component framework | Microsoft Docs"
 description: "Learn about including Power Apps component framework components in solutions."
 keywords: 
 author: mikkelsen2000
+ms.subservice: alm
 ms.author: pemikkel
 manager: kvivek
 ms.custom: ""

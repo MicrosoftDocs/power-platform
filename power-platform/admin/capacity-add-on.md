@@ -6,6 +6,7 @@ ms.reviewer:
 ms.service: "power-platform"
 ms.topic: "quickstart"
 author: jimholtz
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin

@@ -3,6 +3,7 @@ title: "Tutorial: Automate solution deployment using GitHub Actions for Microsof
 description: "In this tutorial, learn how to automate solution export and deployment using GitHub Actions for Microsoft Power Platform."
 keywords: 
 author: mikkelsen2000
+ms.subservice: alm
 ms.author: pemikkel
 manager: jstrauss
 ms.custom: ""
