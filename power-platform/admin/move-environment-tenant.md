@@ -10,6 +10,7 @@ ms.topic: "article"
 applies_to: 
   - "Dynamics 365 (online)"
 author: jimholtz
+ms.subservice: admin
 ms.author: jimholtz
 ms.reviewer: ""
 ms.assetid: 

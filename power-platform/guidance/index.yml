@@ -8,7 +8,7 @@ metadata:
   description: Provides access to Microsoft Power Platform guidance documentation
   services: service
   ms.service: power-platform 
-  ms.subservice: subservice
+  ms.subservice: guidance
   ms.topic: landing-page 
   ms.collection: collection
   author: jimholtz

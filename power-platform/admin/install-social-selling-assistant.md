@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/20/2020
+ms.subservice: admin
 ms.author: mhart
 search.audienceType: 
   - admin

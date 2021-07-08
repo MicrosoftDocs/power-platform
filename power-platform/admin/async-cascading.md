@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/12/2021
+ms.subservice: admin
 ms.author: matp
 search.audienceType: 
   - admin

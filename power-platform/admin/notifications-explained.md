@@ -5,6 +5,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/01/2021
+ms.subservice: admin
 ms.author: astockli
 author: astockli
 manager: timrob

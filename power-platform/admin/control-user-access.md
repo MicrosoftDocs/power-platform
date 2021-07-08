@@ -3,6 +3,7 @@ title: "Control user access to environments: security groups and licenses | Micr
 description: Learn how to control user access to environments using security groups and licenses
 services: powerapps
 author: paulliew
+ms.subservice: admin
 ms.author: paulliew
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
