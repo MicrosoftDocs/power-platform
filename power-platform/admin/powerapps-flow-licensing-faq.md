@@ -4,7 +4,7 @@ description: "FAQs for licensing Power Apps, Power Automate, Dataverse, Datavers
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/16/2021
+ms.date: 07/08/2021
 author: chrisgarty
 ms.subservice: admin
 ms.author: cgarty
