@@ -64,7 +64,7 @@ With version 9.0., you can connect your customer engagement apps (such as [Dynam
    > [!div class="mx-imgBorder"] 
    > ![Create new server profile](media/new-server-profile.png "Create a new server profile")
 
-4. Select **New** > **Exchange Server (On Prem)** and then specify a meaningful **Name** for the profile.
+4. For **Email Server Type** select **Exchange Server (On Prem)** and then specify a meaningful **Name** for the profile.
 
    > [!div class="mx-imgBorder"] 
    > ![Select Exchange On Prem server profile](media/exchange-onprem-server-profile.png "Select Exchange On Prem server profile]")
@@ -73,7 +73,8 @@ With version 9.0., you can connect your customer engagement apps (such as [Dynam
 
 6. For **Authentication Type** choose one of the following:
 
-    - **Credential specified in email server profile**: Enter the credentials for the [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] inpersonation account.
+    - **Credential specified in email server profile**: The credentials specified in the email server profile are used for sending or receiving email for the mailboxes of all users and queues associated with this profile. The credentials must have impersonation or delegation permissions on the mailboxes associated with profile. This option requires some configuration on the email server, for example, configuring impersonation rights on Exchange for the mailboxes associated with the profile. **Note**: To ensure the credentials are secured, SQL encryption is used to encrypt the credentials stored in the email server profile if you're processing email by using server-side synchronization.
+    
         > [!div class="mx-imgBorder"] 
         > ![Credential specified in email server profile](media/server-profile-onprem-cred-server.png "Credential specified in email server profile")
 
@@ -81,7 +82,14 @@ With version 9.0., you can connect your customer engagement apps (such as [Dynam
         > [!div class="mx-imgBorder"] 
         > ![Exchange Hybrid Modern Auth (HMA)](media/hma-auth.png "Exchange Hybrid Modern Auth (HMA)")
 
-7. Expand the **Locations and ports** section and then select whether **Auto-disver location** is active or inactvie. If you shoose **Inactive** then fill in the incoming and outgoing location along with port and type of authentication protocol.
+7. Expand the **Locations and ports** and follow these steps:
+
+   - If **Authentication Type** is set to **Credential specified in email server profile** then select whether **Auto-disver location** is **Active** or **Inactvie**. <br> If you choose **Inactive** then fill in the incoming and outgoing email server information. Enter the port on the email server for accessing incoming and outgoing email. Select the protocol that will be used for authentication for incoming and outgoing email. 
+   
+      > [!div class="mx-imgBorder"] 
+      > ![Enter email server information](media/auto-discover-server-location.png "Enter email server information")
+   
+   - **Credential specified in email server profile** is set to **Exchange Hybrid Modern Auth (HMA)** then enter the location and port for the email server.
 
 8. Expand the **Advanced** section and then use the tooltips to choose your email processing options. 
 
