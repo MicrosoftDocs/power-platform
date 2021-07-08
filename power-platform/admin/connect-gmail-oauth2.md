@@ -111,16 +111,19 @@ Follow the steps for **Create a project** in: [Create, shut down, and restore pr
 
 4. For **Email Server Type** select **Gmail** and then specify a meaningful Name for the profile.
 
+   > [!div class="mx-imgBorder"] 
+   > ![Create new server profile for Gmail](media/gmail-profile.png "Create a new server profile for Gmail")
+
 5. For **Set as default profile for new mailboxes** choose wheater you want this server profile as the default profile for new mailboxes.
 
 6. For **Authentication Type** select **Gmail OAuth**.
 
 7. To get the **Client id** and **Client Secret** see the previous step.
 
-   > [!div class="mx-imgBorder"] 
-   > ![Create new server profile for Gmail using Oauth](media/email-oauth-profile.png "Create a new server profile for Gmail using Oauth")
-
 8. Expand **Locations and ports**. These fields are automatically populated.
+   
+   > [!div class="mx-imgBorder"] 
+   > ![Create new server profile for Gmail using Oauth](media/gmail-oauth-profile.png "Create a new server profile for Gmail using Oauth")
 
 9. Expand **Advanced** and then use the tooltips to choose your email processing options.
 
