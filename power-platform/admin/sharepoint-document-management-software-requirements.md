@@ -5,6 +5,7 @@ author: Mattp123
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
+ms.subservice: admin
 ms.date: 09/10/2020
 ms.author: matp
 search.audienceType: 

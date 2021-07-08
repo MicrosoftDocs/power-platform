@@ -3,6 +3,7 @@ title: "Application lifecycle management (ALM) basics with Microsoft Power Platf
 description: "Learn the basics of application lifecycle management with Microsoft Power Platform"
 keywords: 
 author: shmcarth
+ms.subservice: alm
 ms.author: shmcarth
 manager: kvivek
 ms.custom: ""

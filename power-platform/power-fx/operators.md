@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.topic: reference
 ms.reviewer: nabuthuk
 ms.date: 07/17/2020
+ms.subservice: power-fx
 ms.author: gregli
 search.audienceType: 
   - maker

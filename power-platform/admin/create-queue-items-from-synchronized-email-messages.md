@@ -5,6 +5,7 @@ ms.date: 02/03/2021
 ms.service: power-platform
 ms.topic: "article"
 author: mduelae
+ms.subservice: admin
 ms.author: mkaur
 ms.custom: "admin-security"
 search.audienceType: 

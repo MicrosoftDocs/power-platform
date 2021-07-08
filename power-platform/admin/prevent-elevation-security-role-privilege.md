@@ -2,6 +2,7 @@
 title: "Create an administrative user and prevent elevation of security role privilege  | MicrosoftDocs"
 description: Create an administrative user and prevent elevation of security role privilege
 author: paulliew
+ms.subservice: admin
 ms.author: paulliew
 ms.reviewer: jimholtz
 ms.custom: "admin-security"

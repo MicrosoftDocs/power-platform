@@ -3,6 +3,7 @@ title: "Build tool tasks | Microsoft Docs"
 description: "Learn about what build tool tasks are available plus some examples of tasks in DevOps pipelines."
 keywords: 
 author: mikkelsen2000
+ms.subservice: alm
 ms.author: pemikkel
 manager: kvivek
 ms.custom: ""

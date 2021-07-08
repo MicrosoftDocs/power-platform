@@ -6,6 +6,7 @@ ms.component: pa-admin
 ms.topic: quickstart
 ms.date: 06/15/2021
 author: paulliew
+ms.subservice: admin
 ms.author: paulliew
 ms.reviewer: jimholtz
 ms.custom: "admin-security"

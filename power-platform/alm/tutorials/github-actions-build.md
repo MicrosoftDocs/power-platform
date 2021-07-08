@@ -3,6 +3,7 @@ title: "Tutorial: Build a model-driven app for deployment using GitHub Actions f
 description: "In this tutorial, build a Microsoft Dataverse model-driven app for later deployment using GitHub Actions for Microsoft Power Platform."
 keywords: 
 author: mikkelsen2000
+ms.subservice: alm
 ms.author: pemikkel
 manager: jstrauss
 ms.custom: ""

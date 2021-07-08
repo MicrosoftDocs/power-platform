@@ -6,6 +6,7 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/16/2021
 author: chrisgarty
+ms.subservice: admin
 ms.author: cgarty
 ms.reviewer: jimholtz
 search.audienceType: 

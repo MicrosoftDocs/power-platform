@@ -6,6 +6,7 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/29/2021
 author: paulliew
+ms.subservice: admin
 ms.author: paulliew
 ms.reviewer: jimholtz
 ms.custom: "admin-security"

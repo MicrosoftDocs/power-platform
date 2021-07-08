@@ -8,6 +8,7 @@ ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: nabuthuk
 ms.date: 02/25/2021
+ms.subservice: power-fx
 ms.author: gregli
 search.audienceType: 
   - maker

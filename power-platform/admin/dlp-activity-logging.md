@@ -5,6 +5,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/04/2020
+ms.subservice: admin
 author: tjvass
 ms.author: tjvass
 ms.reviewer: jimholtz 
