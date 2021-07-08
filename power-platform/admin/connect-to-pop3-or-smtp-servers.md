@@ -36,14 +36,14 @@ Follow the steps in this article to set up server-side synchronization to send a
    > [!div class="mx-imgBorder"] 
    > ![Create new server profile](media/new-server-profile.png "Create a new server profile")
 
-4. For **Email Server Type** select **Gmail** and then specify a meaningful **Name** for the profile.
+4. For **Email Server Type**, select **Gmail** and then specify a meaningful **Name** for the profile.
 
    > [!div class="mx-imgBorder"] 
    > ![Create new server profile for Gmail](media/gmail-profile.png "Create a new server profile for Gmail")
 
-5. For **Set as default profile for new mailboxes** select wheater you want this server profile as the default profile for new mailboxes.
+5. For **Set as default profile for new mailboxes**, select whether you want this server profile as the default profile for new mailboxes.
 
-6. For **Authentication Type** select **Credential specified by user or queue (Using less secure apps)**. The credentials specified in the mailbox row of a user or queue are used for sending or receiving email for the respective user or queue. **Note**: To ensure the credentials are secured, SQL encryption is used to encrypt the credentials stored in the mailbox.
+6. For **Authentication Type**, select **Credential specified by user or queue (Using less secure apps)**. The credentials specified in the mailbox row of a user or queue are used for sending or receiving email for the respective user or queue. **Note**: To ensure the credentials are secured, SQL encryption is used to encrypt the credentials stored in the mailbox.
 
    > [!div class="mx-imgBorder"] 
    > ![Create a new server profile for Gmail using credential specified by user or queue](media/gmail-profile-user-queue.png "Create a new server profile for Gmail using credential specified by user or queue")
