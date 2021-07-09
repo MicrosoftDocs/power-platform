@@ -78,7 +78,7 @@ Do the following to limit maker privileges to only be able to create and edit Sh
 
 2.	Have an admin, install the [SharePoint custom form maker solution from AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.sharepointcustomformmaker) to your environment designated for SharePoint custom forms.
 
-3.	In the Power Platform admin center, select the environment you designated for SharePoint custom forms in step one and assign the “SharePoint custom form maker” security role to users expected to create SharePoint custom forms. See [Assign security roles to users in an environment that has a Dataverse database](database-security.md#assign-security-roles-to-users-in-an-environment-that-has-a-dataverse-database). 
+3.	In the Power Platform admin center, select the environment you designated for SharePoint custom forms in step one and assign the SharePoint custom form maker security role to users expected to create SharePoint custom forms. See [Assign security roles to users in an environment that has a Dataverse database](database-security.md#assign-security-roles-to-users-in-an-environment-that-has-a-dataverse-database). 
 
 ### Frequently asked questions
 
@@ -88,7 +88,7 @@ No, the SharePoint custom form maker security role is added to an environment by
 
 #### Will a user with only the SharePoint custom form maker role see an environment in the make.powerapps.com environment picker? 
 
-No, a maker that doesn’t have a security role called out in the [Choose environments documentation](/powerapps/maker/canvas-apps/intro-maker-portal.md#choose-an-environment) will not see a the environment in the environment picker in https://make.powerapps.com. A user with the SharePoint custom form maker role may attempt to navigate to the environment by manipulating the URI. If the user attempts to create a standalone app they’ll see a permission error. 
+No, a maker that doesn’t have a security role called out in the [Choose environments documentation](/powerapps/maker/canvas-apps/intro-maker-portal.md#choose-an-environment) will not see a the environment in the environment picker in https://make.powerapps.com. A user with the SharePoint custom form maker role might attempt to navigate to the environment by manipulating the URI. If the user attempts to create a standalone app they’ll see a permission error. 
 
    > [!div class="mx-imgBorder"] 
    > ![Power Apps missing permission dialog](media/admin-manage-apps/power_apps_missing_permission_to_create.png "Power Apps missing permission dialog")
