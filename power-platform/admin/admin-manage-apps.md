@@ -88,7 +88,7 @@ No, the SharePoint custom form maker security role is added to an environment by
 
 #### Will a user with only the SharePoint custom form maker role see an environment in the make.powerapps.com environment picker? 
 
-No, a maker that doesn’t have a security role called out in the [Choose environments documentation](/powerapps/maker/canvas-apps/intro-maker-portal.md#choose-an-environment) will not see a the environment in the environment picker in https://make.powerapps.com. A user with the SharePoint custom form maker role might attempt to navigate to the environment by manipulating the URI. If the user attempts to create a standalone app they’ll see a permission error. 
+No, a maker that doesn’t have a security role called out in the [Choose environments documentation](/powerapps/maker/canvas-apps/intro-maker-portal#choose-an-environment) will not see a the environment in the environment picker in https://make.powerapps.com. A user with the SharePoint custom form maker role might attempt to navigate to the environment by manipulating the URI. If the user attempts to create a standalone app they’ll see a permission error. 
 
    > [!div class="mx-imgBorder"] 
    > ![Power Apps missing permission dialog](media/admin-manage-apps/power_apps_missing_permission_to_create.png "Power Apps missing permission dialog")
