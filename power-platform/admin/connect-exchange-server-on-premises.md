@@ -85,7 +85,7 @@ With version 9.0., you can connect your customer engagement apps (such as [Dynam
 
 7. Expand the **Locations and ports** and follow these steps:
 
-   - If **Authentication Type** is set to **Credential specified in email server profile**, then select whether **Auto-disver location** is **Active** or **Inactvie**. <br> If you choose **Inactive** then fill in the incoming and outgoing email server information. Enter the port on the email server for accessing incoming and outgoing email. Select the protocol that will be used for authentication for incoming and outgoing email. 
+   - If **Authentication Type** is set to **Credential specified in email server profile**, then select whether **Auto-disver location** is **Active** or **Inactvie**. <br> If you choose **Inactive** then fill in the incoming and outgoing email server information. Enter the port for the email server to accessing incoming and outgoing email. Select the protocol that will be used for authentication for incoming and outgoing email. 
    
       > [!div class="mx-imgBorder"] 
       > ![Enter email server information](media/auto-discover-server-location.png "Enter email server information")
