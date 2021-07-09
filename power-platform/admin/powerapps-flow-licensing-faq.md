@@ -4,7 +4,7 @@ description: "FAQs for licensing Power Apps, Power Automate, Dataverse, Datavers
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/16/2021
+ms.date: 07/08/2021
 author: chrisgarty
 ms.subservice: admin
 ms.author: cgarty
@@ -151,7 +151,6 @@ Premium connectors list at October 2019 (will expand over time):
 - Azure SQL  
 - Azure SQL Data Warehouse  
 - Azure Table Storage  
-- Dataverse (formerly Common Data Service)
 - Dynamics 365  
 - Dynamics 365 Customer Insights  
 - Dynamics 365 Finance & Operations  
