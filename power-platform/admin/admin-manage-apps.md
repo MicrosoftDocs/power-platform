@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/23/2021
+ms.date: 07/09/2021
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -62,6 +62,36 @@ Power Apps respects the Canvas App ‘Share’ privilege in Dataverse. A user wi
 
 ### Surface your organization’s governance error content 
 If you specify governance error message content to appear in error messages, it will be included in the error message displayed when users observe they don’t have permission to share apps in an environment. See: [PowerShell governance error message content commands](powerapps-powershell.md#governance-error-message-content-commands).
+
+## Distinguish Microsoft SharePoint custom form makers from general Environment Makers
+
+In addition to the ability to save SharePoint custom form resources to a non-default environment, it is also possible to limit maker privileges to only be able to create and edit SharePoint custom forms in a non-default environment. Outside of the default environment, an admin can un-assign the Environment Maker security role from users and assign the SharePoint custom form maker security role. 
+
+> [!NOTE]
+> The ability to distinguish SharePoint custom form makers from general Environment Makers requires Dataverse in the environment where the privilege is to be changed.
+>
+> A user with only the SharePoint custom form maker role in an environment will not see the environment in the environment list in https://make.powerapps.com or https://flow.microsoft.com.
+
+Do the following to limit maker privileges to only be able to create and edit SharePoint custom forms in a non-default environment. 
+
+1.	Have an admin, [designate an environment for SharePoint custom forms](powerapps-powershell.md#designate-sharepoint-custom-form-environment) that is different from the default environment. 
+
+2.	Have an admin, install the [SharePoint custom form maker solution from AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.sharepointcustomformmaker) to your environment designated for SharePoint custom forms.
+
+3.	In the Power Platform admin center, select the environment you designated for SharePoint custom forms in step one and assign the SharePoint custom form maker security role to users expected to create SharePoint custom forms. See [Assign security roles to users in an environment that has a Dataverse database](database-security.md#assign-security-roles-to-users-in-an-environment-that-has-a-dataverse-database). 
+
+### Frequently asked questions
+
+#### Can I edit privileges in the SharePoint custom form maker security role? 
+
+No, the SharePoint custom form maker security role is added to an environment by importing a non-customizable solution. Note, SharePoint custom form creation requires a user to have permissions in SharePoint and Power Platform. The platform verifies a user has write permissions for the targeted SharePoint list and the user has permission in Power Platform to create or update the SharePoint custom form. For a SharePoint custom form maker to satisfy the Power Platform check, the user must have the SharePoint custom form security role or the Environment Maker security role.
+
+#### Will a user with only the SharePoint custom form maker role see an environment in the make.powerapps.com environment picker? 
+
+No, a maker that doesn’t have a security role called out in the [Choose environments documentation](/powerapps/maker/canvas-apps/intro-maker-portal#choose-an-environment) will not see a the environment in the environment picker in https://make.powerapps.com. A user with the SharePoint custom form maker role might attempt to navigate to the environment by manipulating the URI. If the user attempts to create a standalone app they’ll see a permission error. 
+
+   > [!div class="mx-imgBorder"] 
+   > ![Power Apps missing permission dialog](media/admin-manage-apps/power_apps_missing_permission_to_create.png "Power Apps missing permission dialog")
 
 ### See also
 [Power Apps admin PowerShell support](powerapps-powershell.md#power-apps-commands)
