@@ -31,8 +31,8 @@ The archive approval flows use the built-in Approval actions of Power Automate.
 
 - *Admin \| Archive and Clean Up v2 (Start Approval for Apps)*
 - *Admin \| Archive and Clean Up v2 (Start Approval for Flows)*
-- *Admin \| App Archive and Clean Up – Check Approval*
-- *Admin \| Flow Archive and Clean Up – Check Approval*)
+- *Admin \| Archive and Clean Up v2 (Check Approval)*
+- *Admin \| Archive and Clean Up v2 (Clean Up and Delete)*
 
  In the background, the built-in Approval actions use Dataverse. If you've installed the solution in a new environment, the Approval tables must be initialized. The easiest way to do this is to create a "dummy" approval flow.
 

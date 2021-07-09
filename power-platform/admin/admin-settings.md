@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/04/2020
+ms.date: 07/09/2021
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -38,6 +38,17 @@ Many of these settings...
 ![Environment settings mini](media/environment-settings-mini.png)
 
 Use the links on this page to manage organization-wide settings. App-specific settings will remain in customer engagement apps and accessed through the app settings. 
+
+## New location for admin settings
+The following web client admin settings have moved.
+
+### Security settings
+
+These security settings are now managed in the Power Platform admin center.
+
+- [Manage application users in the Power Platform admin center](manage-application-users.md)
+- [Dataverse teams management](manage-teams.md)
+- [Assign security roles to users in an environment that has a Dataverse database](database-security.md#assign-security-roles-to-users-in-an-environment-that-has-a-dataverse-database)
 
 ## App settings 
 
