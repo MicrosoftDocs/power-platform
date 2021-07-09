@@ -61,9 +61,9 @@ With both customer engagement apps (such as [Dynamics 365 Sales](/dynamics365/sa
 
 6. For **Authentication Type** choose one of the following:
 
-    - **S2S auth (Same Tenant)**: For more information, see [Build web applications using server-to-server (S2S) authentication](/powerapps/developer/data-platform/build-web-applications-server-server-s2s-authentication).
+    - **S2S auth (Same Tenant)**: This option should be used when Exchange resides on the same tenant as Dynamics 365. For more information, see [Build web applications using server-to-server (S2S) authentication](/powerapps/developer/data-platform/build-web-applications-server-server-s2s-authentication).
     
-    - **Oauth (Cross Tenant)**: To get the information for this option, follow the steps in this topic: [Exchange Online cross tenant authentication](connect-exchange-online-server-profile-oauth.md). **Note**: The **Locations and ports** fields are automatically populated.
+    - **Oauth (Cross Tenant)**: This option should be used when Exchange resides in a different tenant than Dynamics 365. To get the information for this option, follow the steps in this topic: [Exchange Online cross tenant authentication](connect-exchange-online-server-profile-oauth.md). **Note**: The **Locations and ports** fields are automatically populated.
     
         > [!div class="mx-imgBorder"]
         > ![Email server profile form](media/server-profile-form.png "Email server profile form") 
