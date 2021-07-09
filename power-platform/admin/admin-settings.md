@@ -39,10 +39,6 @@ Many of these settings...
 
 Use the links on this page to manage organization-wide settings. App-specific settings will remain in customer engagement apps and accessed through the app settings. 
 
-## App settings 
-
-Getting to app feature settings can vary based on the type of app you're using.
-
 ## New location for admin settings
 The following web client admin settings have moved.
 
@@ -53,6 +49,10 @@ These security settings are now managed in the Power Platform admin center.
 - [Manage application users in the Power Platform admin center](manage-application-users.md)
 - [Dataverse teams management](manage-teams.md)
 - [Assign security roles to users in an environment that has a Dataverse database](database-security.md#assign-security-roles-to-users-in-an-environment-that-has-a-dataverse-database)
+
+## App settings 
+
+Getting to app feature settings can vary based on the type of app you're using.
 
 ### Settings in Unified Interface apps
 
