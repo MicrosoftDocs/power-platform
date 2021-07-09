@@ -63,9 +63,9 @@ Power Apps respects the Canvas App ‘Share’ privilege in Dataverse. A user wi
 ### Surface your organization’s governance error content 
 If you specify governance error message content to appear in error messages, it will be included in the error message displayed when users observe they don’t have permission to share apps in an environment. See: [PowerShell governance error message content commands](powerapps-powershell.md#governance-error-message-content-commands).
 
-## Distinguish SharePoint custom form Makers from general Environment Makers
+## Distinguish Microsoft SharePoint custom form makers from general Environment makers
 
-In addition to the ability to save SharePoint custom form resources to a non-default environment, it is also possible to limit Maker privileges to only be able to create and edit SharePoint custom forms in a non-default environment. Outside of the default environment, an admin can un-assign the Environment Maker security role from users and assign the SharePoint custom form maker security role. 
+In addition to the ability to save SharePoint custom form resources to a non-default environment, it is also possible to limit maker privileges to only be able to create and edit SharePoint custom forms in a non-default environment. Outside of the default environment, an admin can un-assign the Environment Maker security role from users and assign the SharePoint custom form maker security role. 
 
 > [!NOTE]
 > The ability to distinguish SharePoint custom form makers from general Environment Makers requires Dataverse in the environment where the privilege is to be changed.
