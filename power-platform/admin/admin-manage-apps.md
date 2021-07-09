@@ -98,7 +98,3 @@ No, a maker that doesn’t have a security role called out in the [Choose enviro
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
-
-[alt](/powerapps/maker/canvas-apps/intro-maker-portal.md#choose-an-environment)
-
-[Choose environments documentation](https://docs.microsoft.com/powerapps/maker/canvas-apps/intro-maker-portal#choose-an-environment)
