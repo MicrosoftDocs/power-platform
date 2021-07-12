@@ -2,7 +2,7 @@
 title: "Known issues with document management | MicrosoftDocs"
 description: "Learn about known issues with document management"
 keywords: encrypt
-ms.date: 05/17/2021
+ms.date: 06/08/2021
 ms.service: power-platform
 ms.custom: 
 ms.topic: article

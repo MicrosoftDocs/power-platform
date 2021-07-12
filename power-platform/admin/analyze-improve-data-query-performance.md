@@ -1,13 +1,13 @@
 ---
 title: "Automatic tuning of data query performance with index management"
 description: "Learn how index management is automatically tuned with Azure SQL Database for better data query performance in Dynamics 365 apps"
-author: Mattp123
+author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/04/2020
 ms.subservice: admin
-ms.author: matp
+ms.author: jimholtz
 search.audienceType: 
   - admin
 search.app:

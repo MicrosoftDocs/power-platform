@@ -16,7 +16,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Videos and PowerPoint presentations
+# Videos and PowerPoint presentations 
 
 |Topic  |Video  |PowerPoint  |
 |---------|---------|---------|
