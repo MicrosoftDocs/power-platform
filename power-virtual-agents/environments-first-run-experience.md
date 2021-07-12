@@ -52,7 +52,7 @@ You can, however, create additional environments by using the [Power Platform Ad
 
 2. Go to the **Environments** tab and select **+ New** to open the **New environment** panel.
 
-   ![Create environment](media/environments-create-1.png)
+   ![Create environment.](media/environments-create-1.png)
   
 - For **Name**, specify a unique name for the environment.
 - For **Environment** select the environment type. 
@@ -63,7 +63,7 @@ You can, however, create additional environments by using the [Power Platform Ad
 - Set **Create a database for this environment?** to **Yes**
 - Select **Next**.
    
-   ![Enter the environment details](media/environments-create-2.png)
+   ![Enter the environment details.](media/environments-create-2.png)
    
    > [!NOTE]
    > The environment needs to be created in a supported region, otherwise you won't be able to use it when creating a bot.
@@ -78,7 +78,7 @@ You can, however, create additional environments by using the [Power Platform Ad
 ## Create a bot in an existing environment
 To create a bot in an existing environment, select the environment in the [bot creation window](authoring-first-bot.md).
 
-![Select environment](media/select_environment_onboarding.png)
+![Select environment.](media/select_environment_onboarding.png)
 
 ### Create a bot in an existing environment where you don't have access
 
@@ -99,7 +99,7 @@ When you trial Power Virtual Agents, you can create trial environments that expi
 
 If you have created your own environment and selected **Trial** as the environment type, you'll receive email messages shortly before it expires. In the Power Virtual Agents portal, you'll also see a notification if you have bots created in a trial environment that is going to expire in less than two weeks.
 
-> ![Environment expiration notification](media/ennvironemnt_expiration_notification.png)
+> ![Environment expiration notification.](media/ennvironemnt_expiration_notification.png)
 
 > [!NOTE]
 > Note that there is a difference between an expiring environment and an expiring license. If your license is expiring, you will be able to extend it without losing any data. More information: [Sign up for a Power Virtual Agents trial](sign-up-individual.md#trial-expiration).

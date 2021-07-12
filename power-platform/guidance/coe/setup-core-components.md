@@ -58,7 +58,7 @@ This is the first step of the installation process and is required for every oth
     1. Go to [make.powerapps.com](<https://make.powerapps.com>).
     1. Go to the environment you just created, in which the CoE solution will be hosted. In the example in the following screenshot, we're importing to the environment named **Contoso CoE**.
 
-     ![Power Apps maker portal environment selection](media/coe6.png "Power Apps maker portal environment selection")
+     ![Power Apps maker portal environment selection.](media/coe6.png "Power Apps maker portal environment selection")
 
 1. On the left pane, select **Solutions**.
 
@@ -71,11 +71,11 @@ This is the first step of the installation process and is required for every oth
 1. Review the information, and then select **Next**.
 1. Establish connections to activate your solution. If you create a new connection, you must select **Refresh**. You won't lose your import progress.
 
-     ![Establish connections to activate your solution](media/msi-import.png "Establish connections to activate your solution.")
+     ![Establish connections to activate your solution.](media/msi-import.png "Establish connections to activate your solution.")
 
     When you create the connection for HTTP with Azure AD enter the following into the Base Resource URL and Azure AD Resource URI (Application ID URI): [https://graph.microsoft.com](https://graph.microsoft.com).
 
-     ![Establish HTTP with Azure AD](media/httpazuread.png "Establish connections to activate your solution.")
+     ![Establish HTTP with Azure AD.](media/httpazuread.png "Establish connections to activate your solution.")
 
 1. Update environment variable values. The environment variables are used to store application and flow configuration data with data specific to your organization or environment. This means that you only have to set the value once per environment and it will be used in all necessary flows and apps in that environment. All the flows in the solution depend on all environment variables' being configured.
 
@@ -91,7 +91,7 @@ This is the first step of the installation process and is required for every oth
     | Developer Compliance Center         | Leave empty on Import. Populated after set up of the [Governance components](setup-governance-components.md). Navigate to the details page of the Developer Compliance Center (canvas app) included with this solution, and copy the web link (to launch the app) and paste it into this variable.  |
     | Community URL         | Link to your internal Microsoft Power Platform community (for example, Yammer or Teams).  |
 
-    ![Update environment variable values](media/msi-envvar.png "Update environment variable values")
+    ![Update environment variable values.](media/msi-envvar.png "Update environment variable values")
 
 1. Select **Import**.
 
@@ -144,7 +144,7 @@ Before you begin:
 
     If you create a new connection, you must select **Refresh**. You won't lose your import progress.
 
-     ![Establish connections to all connectors used in the solution](media/coreteams-1.png "Establish connections to all connectors used in the solution.")
+     ![Establish connections to all connectors used in the solution.](media/coreteams-1.png "Establish connections to all connectors used in the solution.")
 
 1. Update environment variable values. The environment variables are used to store application and flow configuration data with data specific to your organization or environment. This means that you only have to set the value once per environment and it will be used in all necessary flows and apps in that environment. All the flows in the solution depend on all environment variables' being configured.
 
@@ -160,7 +160,7 @@ Before you begin:
     | Developer Compliance Center         | Leave empty on Import. Populated after set up of the [Governance components](setup-governance-components.md). Navigate to the details page of the Developer Compliance Center (canvas app) included with this solution, and copy the web link (to launch the app) and paste it into this variable. |
     | Community URL         | Link to your internal Microsoft Power Platform community (for example, Yammer or Teams).  |
 
-     ![Set environment variable values](media/coreteams-2.png "Set environment variable values.")
+     ![Set environment variable values.](media/coreteams-2.png "Set environment variable values.")
 
 1. Select **Import**.
 

@@ -22,7 +22,7 @@ search.app:
 This topic provides a mapping of the security role user interface to the privilege names. Each section in this topic corresponds to a tab in the user interface (Power Platform admin center > **Environments** > [select an environment] > **Settings** > **Users + permissions** > **Security Roles** > select a role). A blank cell means that there is no privilege for that combination of entity and action.
 
 > [!div class="mx-imgBorder"] 
-> ![Miscellaneous privileges](media/miscellaneous-privileges.png "Miscellaneous privileges")
+> ![Miscellaneous privileges.](media/miscellaneous-privileges.png "Miscellaneous privileges")
 
 ## Core Records tab
 

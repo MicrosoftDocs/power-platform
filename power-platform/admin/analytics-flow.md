@@ -54,46 +54,46 @@ The preview contains 6 reports with multiple KPIs in each report. By default, yo
 By default, you see the **Runs** report. It provides a view into the daily, weekly, and monthly run data of all flows in an environment.
 
 
-![Daily runs](media/analytics-flow/daily-runs.png)
+![Daily runs.](media/analytics-flow/daily-runs.png)
 
 
 ## Usage report
 
 This report provides insights into the different types of flows in use, the trends, and the flow creator's names.
 
-![Usage report](media/analytics-flow/usage-report.png)
+![Usage report.](media/analytics-flow/usage-report.png)
 
 ## Created report
 
 This report provides insights into the types of flows created, trends, and details like the created date and the creator's email address.
 
-![Created report](media/analytics-flow/created-report.png)
+![Created report.](media/analytics-flow/created-report.png)
 
 
 ## Error report
 
 This report provides insights into recurring error types and details like the error count, creator's email address, last occurred time, and the creator's email address for each flow.
 
-![Error report](media/analytics-flow/error-report.png)
+![Error report.](media/analytics-flow/error-report.png)
 
 ## Shared report
 
 This report provides details on the flows shared and trends in the environment.
 
-![Shared report](media/analytics-flow/shared-report.png)
+![Shared report.](media/analytics-flow/shared-report.png)
 
 ## Connectors report
 
 This report provides details on connectors and their associated flows. Metrics like the number of calls from each flow per connector, flow runs, and the flow creator's email address are available for both standard and custom connectors.
 
 
-![Connector report](media/analytics-flow/connectors-report.png)
+![Connector report.](media/analytics-flow/connectors-report.png)
 
 ## Download reports
 
 The reports are built with Power BI. Users can select the ellipsis (…) for a KPI and then select **Export data**.
 
-![Export report](media/analytics-flow/export-report.png)
+![Export report.](media/analytics-flow/export-report.png)
 
 ## View reports in other environments
 
@@ -104,7 +104,7 @@ To view reports in another environment:
 1. Select **Apply**.
 
 
-![View reports from another environment](media/analytics-flow/new-environment.png)
+![View reports from another environment.](media/analytics-flow/new-environment.png)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

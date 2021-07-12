@@ -68,7 +68,7 @@ Administrators can export all environments created by a specific user from the [
 2. If the environment was created by the user from the DSR request, select **See all**, copy the details, and then paste them into a document editor, such as Microsoft Word.
 
    > [!div class="mx-imgBorder"] 
-   > ![Environment details](media/environment-details.png "Environment details")
+   > ![Environment details.](media/environment-details.png "Environment details")
 
 ### PowerShell cmdlets for app creators
 Users can export the environments they have access to in Power Apps by using the **Get-PowerAppsEnvironment** function in the [Power Apps App creator PowerShell cmdlets](./powerapps-powershell.md):
@@ -100,10 +100,10 @@ Administrators can export a user's environment permissions from the [Power Platf
 2. Select both **Environment Admin** and **Environment Maker** separately, and then using the search bar, search for the user's name.
 
    > [!div class="mx-imgBorder"] 
-   > ![Environment roles](media/admin-environment-role-share-page1.png "Environment roles") 
+   > ![Environment roles.](media/admin-environment-role-share-page1.png "Environment roles") 
 
    > [!div class="mx-imgBorder"] 
-   > ![Environment maker user](media/admin-environment-role-share-page2.png "Environment maker user")
+   > ![Environment maker user.](media/admin-environment-role-share-page2.png "Environment maker user")
 
 3. If the user has access to either role, go to the **Users** page, copy the details, and then paste them into a document editor, such as Microsoft Word.
 
@@ -137,15 +137,15 @@ An administrator can export apps created by a user starting from the [Power Plat
 3. Using the search bar, search for the user's name, which brings up any apps that user created within this environment:
 
    > [!div class="mx-imgBorder"] 
-   > ![Search apps](media/search-apps.png "Search apps")
+   > ![Search apps.](media/search-apps.png "Search apps")
 
 4. Select **Share** for each of the apps created by that user and give yourself **Co-owner** access to the app:
 
    > [!div class="mx-imgBorder"] 
-   > ![Select app share](media/share-canvas-app.png "Select app share")
+   > ![Select app share.](media/share-canvas-app.png "Select app share")
 
    > [!div class="mx-imgBorder"] 
-   > ![Give a user access](media/grant-access.png "Give a user access")
+   > ![Give a user access.](media/grant-access.png "Give a user access")
 
 5. Once you have access to each of the user's apps you can export a canvas app from the [Power Apps portal](https://make.powerapps.com). For step-by-step instructions on how to export an app, see [Exporting a canvas app](/powerapps/maker/data-platform/export-solutions#exporting-a-canvas-app).
 
@@ -179,12 +179,12 @@ Administrators can export app roles assignments for a user from the [Power Platf
 3. Select **Share** for each of the apps in the environment.
 
    > [!div class="mx-imgBorder"] 
-   > ![Select app share](media/share-canvas-app.png "Select app share")  
+   > ![Select app share.](media/share-canvas-app.png "Select app share")  
 
 4. If the user has access to the app, go to the app's **Share** page, copy the details, and then paste them into a document editor, such as Microsoft Word.
 
    > [!div class="mx-imgBorder"] 
-   > ![Admin app share page](media/admin-share-page.png "Admin app share page")
+   > ![Admin app share page.](media/admin-share-page.png "Admin app share page")
 
 ### PowerShell cmdlets for admins
 Administrators can export all app role assignments for a user across all apps in their tenant by using the **Get-AdminAppRoleAssignment** function in the [Power Apps Admin PowerShell cdmlets](./powerapps-powershell.md):
@@ -302,15 +302,15 @@ Users can export the personal data stored within the gateway service from the [P
 
 1. From the [Power Apps portal](https://make.powerapps.com), within the default environment for your tenant, select **Gateways**, and then select **Details** for each gateway to which you have access.
 
-    ![Gateway landing page](./media/powerapps-gdpr-export-dsr/gateway-select-details.png)
+    ![Gateway landing page.](./media/powerapps-gdpr-export-dsr/gateway-select-details.png)
 
 2. On the **Details** page, if the gateway details contain any personal data, copy the details, and then paste them into a document editor, such as Microsoft Word.
 
-    ![Gateway details](./media/powerapps-gdpr-export-dsr/gateway-details-drillin.png)
+    ![Gateway details.](./media/powerapps-gdpr-export-dsr/gateway-details-drillin.png)
 
 3. Select **Share**, copy the contents of the page, and then paste it into a document editor, such as Microsoft Word.
 
-    ![Select Share](./media/powerapps-gdpr-export-dsr/gateway-details-share.png)
+    ![Select Share.](./media/powerapps-gdpr-export-dsr/gateway-details-share.png)
 
 ### Gateway PowerShell cmdlets
 There are also PowerShell cmdlets that allow you to retrieve, manage, and delete your personal gateways. For more information, see [On-premises gateway cmdlets](/data-integration/gateway/service-gateway-high-availability-clusters).

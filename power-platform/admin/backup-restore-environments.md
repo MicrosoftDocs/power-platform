@@ -25,7 +25,7 @@ Protecting your data in customer engagement apps (Dynamics 365 Sales, Dynamics 3
 Some backups take place without you having to do anything.  
 
 > [!div class="mx-imgBorder"] 
-> ![System backups](media/system-backup.png "System backups")
+> ![System backups.](media/system-backup.png "System backups")
 
 About **system backups**:  
   
@@ -41,7 +41,7 @@ About **system backups**:
 2. Go to **Environments** > [select an environment] > **Backups** > **Restore or manage**.
   
    > [!div class="mx-imgBorder"] 
-   > ![Select Restore or manage](media/restore-backup-menu.png "Select Restore or manage")
+   > ![Select Restore or manage.](media/restore-backup-menu.png "Select Restore or manage")
 
 3. Select the **System** tab.  
   
@@ -50,12 +50,12 @@ About **system backups**:
 5. You'll be provided with a list of available backups at or close to the date and time you chose if the selected time is not available. Pick the desired backup, and then select **Confirm**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Select available backup](media/select-available-backup.png "Select available backup")
+   > ![Select available backup.](media/select-available-backup.png "Select available backup")
 
 6. Select an environment to restore to (overwrite), enter other settings as desired, and then select **Restore**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Enter backup details](media/restore-backup.png "Enter backup details")
+   > ![Enter backup details.](media/restore-backup.png "Enter backup details")
 
    > [!NOTE]
    > - Only sandbox environments can be restored to.
@@ -76,7 +76,7 @@ About **manual backups**:
 - Check your expiration date.  
   
   > [!div class="mx-imgBorder"] 
-  > ![Backup expiration date](media/restore-backup-manual-expiration.png "Backup expiration date")
+  > ![Backup expiration date.](media/restore-backup-manual-expiration.png "Backup expiration date")
   
 - You are not limited in the number of manual backups you can make.
 - Manual backups do not count against your storage limits.  
@@ -89,7 +89,7 @@ About **manual backups**:
 2. Go to **Environments** > [select an environment] > **Backups** > **Create**.
   
    > [!div class="mx-imgBorder"] 
-   > ![Select Create](media/create-backup.png "Select Create")
+   > ![Select Create.](media/create-backup.png "Select Create")
 
 3. Fill in the information, and then select **Create**.
 

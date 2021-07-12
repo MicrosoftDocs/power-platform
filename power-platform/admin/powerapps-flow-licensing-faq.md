@@ -482,11 +482,11 @@ Follow these steps to apply unattended RPA licenses to your flows.
 
 1. The tenant admin must purchase or get trial a version of the unattended RPA add-on capacity for the tenant. The tenant admin can do this from the [Microsoft 365 admin portal](https://admin.microsoft.com/AdminPortal/Home#/catalog). Just search the purchase services page for the add-on.
   
-   ![get unattended license](./media/RPA-license/unattended-license-M365.JPG)
+   ![get unattended license.](./media/RPA-license/unattended-license-M365.JPG)
   
 1. The environment admin must assign the available (paid or trial) unattended add-on capacities to a specific environment.
   
-   ![manage unattended license](./media/RPA-license/unattended-license-manage.png)
+   ![manage unattended license.](./media/RPA-license/unattended-license-manage.png)
   
 1. Makers can now run unattended desktop flows within the environment that has the unattended capacity. 
 

@@ -23,7 +23,7 @@ search.app:
 
 Enabling Document Suggestions helps your Dynamics 365 apps web browser and mobile users be aware of important documents related to what they're working on in Dynamics 365 apps such as a big sales opportunity. You, as the admin, define relevant fields. A recommendation engine using Azure text analytics uses keyword matching to associate related records to find similar documents. You create similarity rules in Dynamics 365 apps to provide your own similarity logic. Dynamics 365 apps then presents a list of suggested documents to the user while the user works in the current record.  
   
- <!-- Removed diagram because it uses an opportunity entity example that is no longer supported. ![Document recommendations feature diagram](media/document-recommendations.png "Document recommendations feature diagram")   -->
+ <!-- Removed diagram because it uses an opportunity entity example that is no longer supported. ![Document recommendations feature diagram.](media/document-recommendations.png "Document recommendations feature diagram")   -->
   
 > [!NOTE]
 >  The Document Suggestions feature doesn't require a connection to the Azure Text Analytics service. If you choose not to use Azure Text Analytics, Document Suggestions will use the built-in keyword matching  logic available in Dynamics 365 apps. However, we recommend that you use Azure Text Analytics service for more advanced keyword matching.  

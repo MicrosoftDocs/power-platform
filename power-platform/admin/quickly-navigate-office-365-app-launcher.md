@@ -23,7 +23,7 @@ search.app:
 The app launcher is built in to all Dynamics 365 and [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] apps. Use the app launcher in the upper-left corner to quickly navigate to your Dynamics 365 application of choice.  
  
  > [!div class="mx-imgBorder"]
- > ![Microsoft 365 app launcher](../admin/media/new-office-365-app-launcher.png "Microsoft 365 app launcher")  
+ > ![Microsoft 365 app launcher.](../admin/media/new-office-365-app-launcher.png "Microsoft 365 app launcher")  
 
   
 > [!NOTE]

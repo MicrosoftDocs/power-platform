@@ -87,7 +87,7 @@ identify the conditions under which the plug-in should be executed by Microsoft 
 
 To begin, follow these instructions to [register a plug-in and step](/powerapps/developer/common-data-service/register-plug-in) by using the Plug-in Registration tool. Next, we'll create a solution and then add the plug-in assembly and step to the solution by using the modern maker interface. The example "Followup" plug-in and step registration we'll use is shown in the following illustration.
 
-  ![Registered plug-in and step](media/plugin-registration-summary.PNG "Registered plug-in and step")
+  ![Registered plug-in and step.](media/plugin-registration-summary.PNG "Registered plug-in and step")
 
 Let's get started adding those components to our solution.
 
@@ -99,7 +99,7 @@ Let's get started adding those components to our solution.
 
 4.  Select the plug-in assembly, and then select **Add**.
 
-    ![Add a plug-in to a solution](media/solution-plugin-add.PNG "Add a plug-in to a solution")
+    ![Add a plug-in to a solution.](media/solution-plugin-add.PNG "Add a plug-in to a solution")
 
 5. Add a step to the solution by selecting **Add existing** \> **Other** \> **Plug-in step**.
 
@@ -108,11 +108,11 @@ Let's get started adding those components to our solution.
 
 6. Search for the registered step, select it, and then select **Add**.
 
-    ![Add a step to a solution](media/solution-plugin-add-step.PNG "Add a step to a solution")
+    ![Add a step to a solution.](media/solution-plugin-add-step.PNG "Add a step to a solution")
 
 The resulting solution with the two components is shown in the following illustration.
 
-![Solution summary](media/solution-plugin-add-summary.PNG "Solution summary")
+![Solution summary.](media/solution-plugin-add-summary.PNG "Solution summary")
 
 It's possible to add the step to the solution before (or without) adding the related plug-in assembly. To add the assembly, select the option (...) menu next to the plug-in step name, select **Add required components**, and then select **OK**. This automatically adds the related plug-in assembly. Don't add the plug-in assembly to the solution if you intend to provide that assembly in another solution that the current solution will be dependent on.
 

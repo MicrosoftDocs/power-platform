@@ -62,7 +62,7 @@ The following is a list of regions and their URL.
 ## Migration process  
  This is the overall process for migrating to a new datacenter.  
   
- ![Migration Process](media/migration-process.png "Migration Process")  
+ ![Migration Process.](media/migration-process.png "Migration Process")  
   
  Depending on the type of transition, you may be required to go through more steps.  
   

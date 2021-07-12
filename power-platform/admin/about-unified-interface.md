@@ -37,15 +37,15 @@ You can access Unified Interface apps from the following locations in a browser:
 
 1. In [https://home.dynamics.com/](https://home.dynamics.com/):
 
-   ![Dynamics 365 Home page](media/uci-home-dynamics.png "Dynamics 365 Home page")
+   ![Dynamics 365 Home page.](media/uci-home-dynamics.png "Dynamics 365 Home page")
 
 2. In app navigation:
 
-   ![In app navigation](media/uci-in-app-navigation.png "In app navigation")
+   ![In app navigation.](media/uci-in-app-navigation.png "In app navigation")
 
 3. In **My Apps** page under **Settings**:
 
-   ![Unified Interface apps on My Apps page](media/uci-my-apps-page.png "Unified Interface apps on My Apps page")
+   ![Unified Interface apps on My Apps page.](media/uci-my-apps-page.png "Unified Interface apps on My Apps page")
 
 ## Accessing Unified Interface apps on phone and tablets
 The Unified Interface apps are the only apps supported on phones and tablets. When users sign in to their environment, they will see the Unified Interface apps only on their apps landing page. 
@@ -96,13 +96,13 @@ Follow these steps to make all the out-of-the-box actions available and entities
 
 1. On the navigation bar in your app, select the **Settings** icon and then select **Advanced Settings**.
 
-   :::image type="content" source="media/advanced-settings-option.png" alt-text="Advanced Settings option on the Settings menu":::
+   :::image type="content" source="media/advanced-settings-option.png" alt-text="Advanced Settings option on the Settings menu.":::
 
    The **Business Management** page opens in a new browser tab.
 
 2. On the navigation bar, select Settings and then select Customizations.
 
-   :::image type="content" source="media/customization-in-sitemap.png" alt-text="Select Customizations":::
+   :::image type="content" source="media/customization-in-sitemap.png" alt-text="Select Customizations.":::
 
 3. On the **Customization** page, select **Customize the System**.
 
@@ -110,7 +110,7 @@ Follow these steps to make all the out-of-the-box actions available and entities
 
 5. On the **General** tab, under **Outlook & Mobile**, clear the **Read-only in Unified Client** check box.
 
-   :::image type="content" source="media/read-only-in-unified-client-setting.png" alt-text="Setting to make an entity read-only in the Unified Client":::
+   :::image type="content" source="media/read-only-in-unified-client-setting.png" alt-text="Setting to make an entity read-only in the Unified Client.":::
 
 6. Save and publish the customizations.
 

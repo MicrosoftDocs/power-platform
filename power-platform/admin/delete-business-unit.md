@@ -43,7 +43,7 @@ You can delete a business unit to completely remove it.
   
 6. Change the view to **Inactive Business Units**.
 
-7. Select the business unit to delete, and then choose the **Delete** icon ![Delete button](../admin/media/delete.png "Delete button").  
+7. Select the business unit to delete, and then choose the **Delete** icon ![Delete button.](../admin/media/delete.png "Delete button").  
   
 8. In the **Confirm Deletion** dialog box, choose **Delete**.  
   

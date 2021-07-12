@@ -156,7 +156,7 @@ There are two main paths you can use when working with solutions in a source con
 - Export the unmanaged solution and place it as unpacked in the source control system. The build process imports the packed solution as unmanaged into a temporary build environment (sandbox environment). Then, export the solution as managed and store it as a build artifact in your source control system. 
 - Export the solution as unmanaged and also export the solution as managed, and place both in the source control system. Although this method doesn't require a build environment, it does require maintaining two copies of all components (one copy of all unmanaged components from the unmanaged solution and one copy of all managed components from the managed solution).
 
-![Source control by using a solution](media/build-pipeline-alm.png "Source control by using a solution")
+![Source control by using a solution.](media/build-pipeline-alm.png "Source control by using a solution")
 
 More information: [Build tool tasks](devops-build-tool-tasks.md#build-and-release-pipelines)
 

@@ -32,7 +32,7 @@ You can control how customer engagement apps (Dynamics 365 Sales, Dynamics 365 C
   
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
   
-2. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+2. In the web app, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
 
 3. Select **Settings** > **Administration**.
   

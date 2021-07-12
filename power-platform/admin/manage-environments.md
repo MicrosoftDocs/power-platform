@@ -21,7 +21,7 @@ search.app:
 
 You can view and manage your environments on the **Environments** page. 
 
-![Environment list](media/environment-list.png "Environment list")
+![Environment list.](media/environment-list.png "Environment list")
 
 You can sort and search the list of environments - useful for those of you with a large number of environments to manage.
 
@@ -29,11 +29,11 @@ You can sort and search the list of environments - useful for those of you with 
 
 You can see some the details of your environments by selecting an environment. Select **See all** to see more environment details.
 
-![Environment details](media/environment-details-see-all.png "Environment details")
+![Environment details.](media/environment-details-see-all.png "Environment details")
 
 Select **Edit** to review and edit all your environment details.
 
-![More environment details](media/environment-details-more.png "More environment details")
+![More environment details.](media/environment-details-more.png "More environment details")
 
 ### See also
 [Environments Overview](environments-overview.md)
