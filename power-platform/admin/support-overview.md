@@ -13,6 +13,7 @@ ms.custom:
 applies_to: 
   - "Dynamics 365 (online)"
 author: "jimholtz"
+ms.subservice: admin
 ms.author: "jimholtz"
 search.audienceType: 
   - admin

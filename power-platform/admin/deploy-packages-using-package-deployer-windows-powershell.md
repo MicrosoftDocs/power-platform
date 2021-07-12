@@ -8,6 +8,7 @@ ms.topic: article
 ms.assetid: 27676d3a-d35c-4452-9ff3-bcdadd943bef
 caps.latest.revision: 36
 author: Mattp123
+ms.subservice: admin
 ms.author: matp
 search.audienceType: 
   - admin
@@ -82,7 +83,7 @@ A “package” can consist of any or all of the following:
   
 8. Select the package to be deployed, and click **Next**.  
   
-   ![Select your package in the Package Deployer Tool](../admin/media/package-deployer-4.png "Select your package in the Package Deployer Tool")  
+   ![Select your package in the Package Deployer Tool.](../admin/media/package-deployer-4.png "Select your package in the Package Deployer Tool")  
   
 9. Follow the instructions on the subsequent screens to complete the deployment of your package.  
   

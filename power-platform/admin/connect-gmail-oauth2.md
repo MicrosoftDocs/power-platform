@@ -6,6 +6,7 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/17/2021
 author: revachauhan
+ms.subservice: admin
 ms.author: rechauha
 ms.reviewer: mkaur
 search.audienceType: 
@@ -30,12 +31,12 @@ We're in the process of rolling out this feature. To determine if your environme
 
 1. In the Power Platform admin center, select an environment. 
 
-2. Select **Settings** > **Email** > **Mailboxes**. To open settings for apps that use [Unified Interface](about-unified-interface.md), look in the upper-right corner and select the **Gear** icon (![Gear icon](media/selection-rule-gear-button.png)). Then select **Advanced settings**. 
+2. Select **Settings** > **Email** > **Mailboxes**. To open settings for apps that use [Unified Interface](about-unified-interface.md), look in the upper-right corner and select the **Gear** icon (![Gear icon.](media/selection-rule-gear-button.png)). Then select **Advanced settings**. 
 
 3. Select a mailbox and check the top menu bar for the **Signin To Gmail** icon. If present, the feature is enabled for this environment.
 
    > [!div class="mx-imgBorder"] 
-   > ![Determine feature availability](media/gmail-how-to-know.png "Determine feature availability")
+   > ![Determine feature availability.](media/gmail-how-to-know.png "Determine feature availability")
 
 ## Step 1: Enable IMAP or POP in Gmail
 
@@ -63,19 +64,19 @@ Follow the steps for **Create a project** in: [Create, shut down, and restore pr
 1. Select **OAuth consent screen** and then select the user type. Select **Internal** if you're using a GSuite admin tenant and will be creating the app exclusively for your organization. Select **External** if you’re testing with a stand-alone Gmail account. 
 
    > [!div class="mx-imgBorder"] 
-   > ![OAuth consent screen](media/gmail-oauth-consent-screen.png "OAuth consent screen")
+   > ![OAuth consent screen.](media/gmail-oauth-consent-screen.png "OAuth consent screen")
 
 2. Select **Create**.
 
 3. Enter an application name and your environment’s top private domain name (for example: dynamics.com) for **Authorized domains**. Then, select **Save**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Enter application name and domain](media/gmail-oauth-consent-domain-name.png "Enter application name and domain")
+   > ![Enter application name and domain.](media/gmail-oauth-consent-domain-name.png "Enter application name and domain")
 
 4. Select **Credentials** > **Create credentials**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Create credentials](media/gmail-oauth-consent-create-credentials.png "Create credentials")
+   > ![Create credentials.](media/gmail-oauth-consent-create-credentials.png "Create credentials")
 
 5. Select **OAuth client ID**.
 
@@ -91,7 +92,7 @@ Follow the steps for **Create a project** in: [Create, shut down, and restore pr
    |Authorized redirect URIs     | Your environment's URL with "/_grid/cmds/dlg_gmailoauth.aspx" appended to it (for example, https://contoso.crm.dynamics.com/_grid/cmds/dlg_gmailoauth.aspx)        |
 
    > [!div class="mx-imgBorder"] 
-   > ![Create OAuth client ID](media/gmail-oauth-consent-create-clientid.png "Create OAuth client ID")
+   > ![Create OAuth client ID.](media/gmail-oauth-consent-create-clientid.png "Create OAuth client ID")
 
 8. Select **Create**. In the screen that appears, make note of the client ID and client secret. You'll use this data in the next step.
 
@@ -118,14 +119,14 @@ Use the following settings:
 | Client secret | From the previous step  |
 
 > [!div class="mx-imgBorder"] 
-> ![IMAP server profile](media/gmail-oauth-imap-server-profile.png "IMAP server profile")
+> ![IMAP server profile.](media/gmail-oauth-imap-server-profile.png "IMAP server profile")
 
 ## Step 5: Configure the mailbox
 
 > [!NOTE]
 > These steps should be done by the mailbox user.
 
-1. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+1. In the web app, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
 
 2. Select **Settings** > **Administration**.
 
@@ -142,7 +143,7 @@ Use the following settings:
    |Outgoing email | Server-Side Synchronization or Email Router   |
 
    > [!div class="mx-imgBorder"] 
-   > ![OAuth mailbox information](media/gmail-oauth-mailbox-information.png "OAuth mailbox information")
+   > ![OAuth mailbox information.](media/gmail-oauth-mailbox-information.png "OAuth mailbox information")
 
 6. Select **Save**.
 
@@ -155,7 +156,7 @@ Use the following settings:
 In the Google Cloud Platform (Developer Console), add users in the Test Users section when publishing the app. See [Google Cloud Platform Console Help](https://support.google.com/cloud/answer/7454865).
 
 > [!div class="mx-imgBorder"] 
-> ![Add test users](media/gmail-oauth-add-users.png "Add test users")
+> ![Add test users.](media/gmail-oauth-add-users.png "Add test users")
 
 ## Step 7: Test and enable
 
@@ -165,7 +166,7 @@ In the Google Cloud Platform (Developer Console), add users in the Test Users se
 Select **Test & Enable Mailbox** to test the mailbox configured in step 6.
 
    > [!div class="mx-imgBorder"] 
-   > ![Test and enable mailbox](media/gmail-oauth-test-enable-mailbox.png "Test and enable mailbox")
+   > ![Test and enable mailbox.](media/gmail-oauth-test-enable-mailbox.png "Test and enable mailbox")
 
 
 

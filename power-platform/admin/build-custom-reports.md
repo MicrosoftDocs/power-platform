@@ -6,6 +6,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/25/2021
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -33,7 +34,7 @@ You can use Power Platform admin center self-service options based on Data Lake 
 :::image type="complex" source="media/azure-resources.png" alt-text="Diagram showing Azure resources.":::
 NEED A LONG DESCRIPTION HERE
 :::image-end:::
--->
+
 
 ## View exported data
 

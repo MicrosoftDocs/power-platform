@@ -6,6 +6,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/20/2021
+ms.subservice: guidance
 ms.author: kathyos
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -31,7 +32,7 @@ Org chart showing various groups reporting into Microsoft Corporation, which is 
 
 Success Hub is an internal Microsoft implementation of Dynamics 365 and the Power Platform. Teams in DTP develop their apps on Success Hub, and share or reuse data from other apps and systems. About 35 business apps on the platform have been developed by 20 or so teams. This has enabled DTP to achieve a balance between agility and governance. This shared environment enables teams to share common data sources and administrative processes, and establishes a single source of truth while giving teams the freedom to build applications to suit their unique needs. 
 
-![Various business apps integrated through Success Hub Platform data](media/successhub-integrations.png "Various business apps integrated through Success Hub Platform data")
+![Various business apps integrated through Success Hub Platform data.](media/successhub-integrations.png "Various business apps integrated through Success Hub Platform data")
 
 ## Advantages of the Success Hub co-development model
 

@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/25/2021
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -64,7 +65,7 @@ pageView
 ```
 
 > [!div class="mx-imgBorder"] 
-> ![Application Insights pageView table](media/application-insights-pageview-table.png "Application Insights pageView table")
+> ![Application Insights pageView table.](media/application-insights-pageview-table.png "Application Insights pageView table")
 
 The **pageView** table attributes include:
 
@@ -107,7 +108,7 @@ The UCI Request dependency table has the following fields:
 - **customDimensions**: Contains the following attributes:
 
   > [!div class="mx-imgBorder"] 
-  > ![Application Insights UCI REQUEST](media/application-insights-uci-request.png "Application Insights UCI REQUEST")
+  > ![Application Insights UCI REQUEST.](media/application-insights-uci-request.png "Application Insights UCI REQUEST")
 
   - **appModule**: The appModule making the call.
   - **bodySize**: The size of the response, encoded and decoded.
@@ -128,7 +129,7 @@ One scenario where discovery and analysis can be very valuable is when a user fr
 You can use the **warmLatency**, **warmThroughput**, and **coldLatency** attributes to understand the breakdown of where time is spent on page loads and other Unified Interface requests, as shown in the following image.
 
 > [!div class="mx-imgBorder"] 
-> ![Application Insights UCI slowness](media/application-insights-uci-slowness.png "Application Insights UCI slowness")
+> ![Application Insights UCI slowness.](media/application-insights-uci-slowness.png "Application Insights UCI slowness")
 
 In the above request, the Unified Interface request takes longer than the actual Dataverse API (Web API) request. The breakdown in this case is the duration of the Dataverse API call (56 ms) plus the value of **CustomDimensions.warmLatency** (89 ms), which adds up to nearly the duration of the entire operation (144 ms). The **warmLatency** value is indicative of slowness for that particular client and might be an issue you can analyze at the user level by using the following query:
 
@@ -188,7 +189,7 @@ pageView
 The following image shows an example set of results from this query.
 
 > [!div class="mx-imgBorder"] 
-> ![Application Insights sample result set](media/application-insights-sample-result-set.png "Application Insights sample result set")
+> ![Application Insights sample result set.](media/application-insights-sample-result-set.png "Application Insights sample result set")
 
 ### How do I narrow down to a specific user?
 
@@ -213,10 +214,10 @@ Note that Monitor is a real-time debugging tool; however, data might not be avai
 The user can share their session ID from the **About** section in Unified Interface for the specific organization.
 
 > [!div class="mx-imgBorder"] 
-> ![Settings > About](media/settings-about.png "Settings > About")
+> ![Settings > About.](media/settings-about.png "Settings > About")
 
 > [!div class="mx-imgBorder"] 
-> ![Settings > About Session ID](media/settings-about-session-id.png "Settings > About Session ID")
+> ![Settings > About Session ID.](media/settings-about-session-id.png "Settings > About Session ID")
 
 You can then use this ID to find issues by looking at all the activities in that session. Use the following query:
 
@@ -237,7 +238,7 @@ pageView
 The **Browser** view of the **Failures** panel contains Unified Interface outgoing requests. The requests going to Dataverse or the organization contain the organization URL. There might be other requests going to other URLs (for instance, in the following image, the organization has a customization calling out to dc.services.visualstudio.com). You can look at the end-to-end transaction to further examine the failures for these external outgoing calls.
 
 > [!div class="mx-imgBorder"] 
-> ![Browse vew of the Failures panel](media/application-insights-external-api-call.png "Browse vew of the Failures panel")
+> ![Browse vew of the Failures panel.](media/application-insights-external-api-call.png "Browse vew of the Failures panel")
 
 ### Can I set an alert on the performance threshold for certain form actions? When the alert is received, will it allow a maker to diagnose and troubleshoot the issue?
 

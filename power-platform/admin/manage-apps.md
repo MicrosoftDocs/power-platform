@@ -6,6 +6,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 11/13/2020
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -44,7 +45,7 @@ Follow these steps to see a list of all licensed applications for your tenant.
    Duplicate items will appear under **Name** if you have the same app license applied to multiple environments.
 
    > [!div class="mx-imgBorder"] 
-   > ![Manage apps tenant view](media/app-management-install-app4.png "Manage apps tenant view")
+   > ![Manage apps tenant view.](media/app-management-install-app4.png "Manage apps tenant view")
 
    Note the following under **Status**:
 
@@ -61,7 +62,7 @@ Follow these steps to see a list of all licensed applications for your tenant.
 4. If your tenant is multigeo, you can change the locale with the region selector.
 
    > [!div class="mx-imgBorder"] 
-   > ![Select region](media/app-management-region-select.png "Select region")
+   > ![Select region.](media/app-management-region-select.png "Select region")
 
 ## Environment-level view of apps
 
@@ -82,7 +83,7 @@ Follow these steps to see a list of all the licensed applications you installed 
    You'll see a list of Dynamics 365 apps installed **by you** in the selected environment.
 
    > [!div class="mx-imgBorder"] 
-   > ![Environment view](media/app-management-environment-view.png "Environment view")
+   > ![Environment view.](media/app-management-environment-view.png "Environment view")
 
 4. Select an app. From the top menu bar, depending on the status of the app, you can do the following:
 
@@ -103,12 +104,12 @@ The process to install an app depends on your view.
 2. Select an environment, review the packages to be installed, agree to the terms of service, and then select **Install**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Install app](media/app-management-install-app2.png "Install app")
+   > ![Install app.](media/app-management-install-app2.png "Install app")
 
    You'll navigate to the environment-level view where you can see the installation status.
 
    > [!div class="mx-imgBorder"] 
-   > ![Environment view3](media/app-management-environment-view3.png "Environment view3")
+   > ![Environment view3.](media/app-management-environment-view3.png "Environment view3")
 
 ### Install an app in the environment view
 
@@ -117,7 +118,7 @@ The process to install an app depends on your view.
 2. Select an **Enabled** app, and then select **Next**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Select enabled app](media/app-management-install-app-env-view.png "Select enabled app")
+   > ![Select enabled app.](media/app-management-install-app-env-view.png "Select enabled app")
 
 3. Agree to the terms of service, and then select **Install**.
 
@@ -127,7 +128,7 @@ If the app installation has failed, select **Installation failed** from the envi
 If it's necessary to [contact Support](support-overview.md), be sure to provide the details listed on the **Error details** page.
 
 > [!div class="mx-imgBorder"] 
-> ![Error details](media/app-management-error-details.png "Error details")
+> ![Error details.](media/app-management-error-details.png "Error details")
 
 ## Delete an app
 For information on how to delete an app, see [Delete a model-driven app](/powerapps/maker/model-driven-apps/delete-model-driven-app). 

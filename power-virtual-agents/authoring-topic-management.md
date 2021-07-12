@@ -93,7 +93,7 @@ Once you have created a few topics, you may want to use a previous topic as a ba
 
 On the Topics page, select the menu icon on a topic's name and then **Make a copy**. 
 
-![Make a copy from the menu icon](media/topics-menu-icon.png)
+![Make a copy from the menu icon.](media/topics-menu-icon.png)
 
 This option creates a duplicate of the selected topic with *(Copy)* added to the name. All of the topic content - such as the description, trigger phrases, and the entire conversation - is copied over to the new topic.
 

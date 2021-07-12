@@ -6,6 +6,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/27/2021
+ms.subservice: admin
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -22,7 +23,7 @@ Admins can use the **Help + support** experience in the [Power Platform admin ce
 An example of solutions provided for Dynamics 365 App for Outlook issues:
 
 > [!div class="mx-imgBorder"] 
-> ![List of possible solutions](media/support-solutions-list.png "List of possible solutions")
+> ![List of possible solutions.](media/support-solutions-list.png "List of possible solutions")
 
 ### Prerequisites
 
@@ -68,15 +69,15 @@ An example of solutions provided for Dynamics 365 App for Outlook issues:
 
 2. Select **Help + support** > **New support request**.
 
-   ![New support request](media/new-support-request.png "New support request")
+   ![New support request.](media/new-support-request.png "New support request")
 
 3. Select the product with the issue. Fill in the problem type, a description of the issue, and then select **See solutions**.
 
    > [!div class="mx-imgBorder"] 
-   > ![See solutions](media/create-support-ticket.png "See solutions")
+   > ![See solutions.](media/create-support-ticket.png "See solutions")
 
    > [!div class="mx-imgBorder"] 
-   > ![New support request screen](media/create-support-ticket2.png "Solutions")
+   > ![New support request screen.](media/create-support-ticket2.png "Solutions")
 
    Based on the information you provided, you'll see a list of possible solutions to your issue. Select the relevant solution and see if the content can successfully guide you to a fix. 
 
@@ -86,12 +87,12 @@ An example of solutions provided for Dynamics 365 App for Outlook issues:
    > If you have one of the plans listed in [Prerequisites](#prerequisites), you can set the severity to a higher level than **Minimal**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Create a new support request](media/support-request-page2.png "Create a new support request")
+   > ![Create a new support request.](media/support-request-page2.png "Create a new support request")
 
 5. If you have a **Unified or Premier** support plan that is not listed, select **Add new contract** and fill in the fields. If you don't know your access or contract ID, please contact your service admin or Incident Manager or Customer Success Account Manager (CSAM).
 
    > [!div class="mx-imgBorder"] 
-   > ![Premier support info](media/premier-support.png "Premier support info")
+   > ![Premier support info.](media/premier-support.png "Premier support info")
 
 > [!NOTE]
 > - For **Contract ID/Password**, please enter your Unified or Premier contract ID. 
@@ -99,7 +100,7 @@ An example of solutions provided for Dynamics 365 App for Outlook issues:
 
 Once you submit your request it will appear in the list of support requests.
 
-![List of support requests](media/support-ticket-list.png "List of support requests")
+![List of support requests.](media/support-ticket-list.png "List of support requests")
 
 You can check the status and edit your request on this page.
 
@@ -112,11 +113,11 @@ Without a premium support plan, you can only submit request on technical issues.
 ## Limited Preview: Report outage
 We're rolling out a new Preview feature to a limited set of customers to try out. If you're experiencing a service outage, we want your support request to get more timely review and action. Select the **Report outage** link to report the outage. If you don't see this link, don't worry! We'll be bringing this feature to all customers in the future.
 
-![Report outage](media/new-report-outage.png "Report outage")
+![Report outage.](media/new-report-outage.png "Report outage")
 
 Fill out the pages and then submit to have your support request receive an expedited review.
 
-![Fill in outage info](media/report-outage-page-one.png "Fill in outage info")
+![Fill in outage info.](media/report-outage-page-one.png "Fill in outage info")
 
 We'd love to know your thoughts on the new outage reporting process. Or, if you'd like to be considered for this limited Preview, please fill out this [form](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR-5Axi2KMXdNi_1eF9P36tZUN1FUQkJLNVBZVVlOSVk0T0tIQTBIMk9VOC4u).
 
@@ -124,18 +125,18 @@ We'd love to know your thoughts on the new outage reporting process. Or, if you'
 To get the fastest response time for issues you encounter with a preview or production release of a specific customer engagement app or add-on, create a support request for the specific application from the **Application and Add-ons** menu.   
 
 > [!div class="mx-imgBorder"] 
-> ![Select from this list for app issues](media/support-use-applications-addons.png "Select from this list for app issues")
+> ![Select from this list for app issues.](media/support-use-applications-addons.png "Select from this list for app issues")
 
 Do **not** select topics from **Administration Center** as this can result in lost time in routing your support request properly. 
 
 > [!div class="mx-imgBorder"] 
-> ![Don't select from this list for app issues](media/support-dont-use-administration-center.png "Don't select from this list for app issues")
+> ![Don't select from this list for app issues.](media/support-dont-use-administration-center.png "Don't select from this list for app issues")
 
 ## Model driven apps and support environments
 For some support requests, you’ll be asked to request a support environment. Currently, support environments can’t be created for the Power Apps or Power Automate product options in the **What product where you using when the issue occurred?** field. To create a support request which includes a support environment for Power Platform issues, select the **Dynamics 365 Customer Engagement** product for that field.
 
 > [!div class="mx-imgBorder"] 
-> ![Select Dynamics 365 Customer Engagement](media/new-support-request-ce-product.png "Select Dynamics 365 Customer Engagement")
+> ![Select Dynamics 365 Customer Engagement.](media/new-support-request-ce-product.png "Select Dynamics 365 Customer Engagement")
 
 ### See also
 [Support overview](support-overview.md)<br />

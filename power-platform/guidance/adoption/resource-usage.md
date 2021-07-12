@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/11/2020
+ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -47,11 +48,11 @@ The [Center of Excellence Starter Kit](../coe/starter-kit.md) offers a template 
 
 The capacity section of analytics allows you to monitor storage capacity use and availability in your tenant. From the all-up view across all the environments, you can drill down into the individual environments for details such as top entity using storage on a timeline view. Sign in to the [Power Platform admin center](https://aka.ms/ppac) and select **Analytics** > **Capacity** in the left-side navigation pane.
 
-![Microsoft Power Platform Capacity Analytics](media/resource-usage1.png "Microsoft Power Platform Capacity Analytics")
+![Microsoft Power Platform Capacity Analytics.](media/resource-usage1.png "Microsoft Power Platform Capacity Analytics")
 
 If your organization has purchased capacity add-ons, an Add-ons tile appears on the Capacity screen in the Power Platform admin center. Sign in to the admin center and select **Analytics** > **Capacity** in the left-side navigation pane. The Add-ons tile shows summary information about the capacity add-ons that your organization has.
 
-![Microsoft Power Platform add-on capacity](media/resource-usage6.png "Microsoft Power Platform add-on capacity")
+![Microsoft Power Platform add-on capacity.](media/resource-usage6.png "Microsoft Power Platform add-on capacity")
 
 As an administrator, you should:
 

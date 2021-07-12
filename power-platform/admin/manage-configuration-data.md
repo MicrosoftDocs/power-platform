@@ -6,6 +6,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/08/2020
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -45,7 +46,7 @@ For information on downloading the Configuration Migration tool, see [Download t
 ## How does the Configuration Migration tool work? 
  The following diagram illustrates how the Configuration Migration tool is used for migrating configuration data.  
   
- ![Configuration migration process flow diagram](../admin/media/config-migration-process-flow.png "Configuration migration process flow diagram")  
+ ![Configuration migration process flow diagram.](../admin/media/config-migration-process-flow.png "Configuration migration process flow diagram")  
   
  ![Step 1 symbol](../admin/media/config-migration-step-icon.png "Step 1 symbol") **Define the schema of the source data to be exported**: The schema file (.xml) contains information about the data that you want to export such as the entities, attributes, relationships, definition of uniqueness of the data, and whether the plug-ins should be disabled before exporting the data. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Create a schema to export configuration data](create-schema-export-configuration-data.md)  
   

@@ -6,6 +6,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/30/2017
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -25,7 +26,7 @@ Large organizations that synchronize their data with external data sources can n
   
 2. Select an entity, and under **Data Services**, select the **Change Tracking** check box.  
   
-   ![Select Change Tracking for an entity](../admin/media/change-tracking.PNG "Select Change Tracking for an entity")  
+   ![Select Change Tracking for an entity.](../admin/media/change-tracking.PNG "Select Change Tracking for an entity")  
   
 
 

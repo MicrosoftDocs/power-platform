@@ -2,6 +2,7 @@
 title: "Assign security roles to a form  | MicrosoftDocs"
 description: Assign security roles to a form
 author: paulliew
+ms.subservice: admin
 ms.author: paulliew
 ms.reviewer: jimholtz
 ms.custom: "admin-security"

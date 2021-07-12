@@ -6,6 +6,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/14/2021
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -53,7 +54,7 @@ If certain IP address ranges or individual IP addresses are blocked in the envir
 > You can search the Azure IP Ranges json file for the AzureCloud service tag for your region. For example, for Japan you'd search for "azurecloud.japaneast" and "azurecloud.japanwest" to find the list of IP addresses to allow.
 >
 > [!div class="mx-imgBorder"] 
-> ![AzureCloud service tag for region IPs](media/example-azurecloud-tag.png "AzureCloud service tag for region IPs")
+> ![AzureCloud service tag for region IPs.](media/example-azurecloud-tag.png "AzureCloud service tag for region IPs")
 
 Dynamics 365 apps use several Microsoft URLs to help provide security, services, and features. Blocking any of the required URLs will cause apps in Dynamics 365 to operate incorrectly or not at all. See: [Troubleshooting: Unblock required URLs](troubleshooting-unblock-urls-required.md).
   

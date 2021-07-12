@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 07/06/2021
+ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -21,9 +22,9 @@ search.app:
 
 Multiple nurture components are provided in the Center of Excellence (CoE) Starter Kit; each will require some configuration to install. The installation instructions in this article have been segmented based on the set of components that should be grouped and installed together, and dependencies on other segments are outlined in each section.
 
-The Nurture Components can be used in both Production environments and Dataverse for Teams environments. Where you install it will depend on your organization setup, your adoption of Microsoft Power Platform so far and what you want to achieve with the CoE Starter Kit. Before you decide, compare [Dataverse vs Dataverse for Teams](https://docs.microsoft.com/powerapps/teams/data-platform-compare)
+The Nurture Components can be used in both Production environments and Dataverse for Teams environments. Where you install it will depend on your organization setup, your adoption of Microsoft Power Platform so far and what you want to achieve with the CoE Starter Kit. Before you decide, compare [Dataverse vs Dataverse for Teams](/powerapps/teams/data-platform-compare)
 
-Learn more: [What is Dataverse for Teams](https://docs.microsoft.com/powerapps/teams/overview-data-platform)
+Learn more: [What is Dataverse for Teams](/powerapps/teams/overview-data-platform)
 
 ## Prepare content for consumption by solution objects
 
@@ -65,13 +66,13 @@ We've created a starter set of templates for you. To access them, do the followi
 
 1. Download the CoE Starter Components zip file from the [GitHub repository](https://github.com/microsoft/powerapps-tools/tree/master/Administration/CoEStarterKit) and extract: CoE Components.zip
 2. Browse to the newly created document library.
-![BrowseToLib](media\sp-upload-1.png)
+![BrowseToLib.](media\sp-upload-1.png)
 3. Choose to upload files.
-![BrowseToLib](media\sp-upload-2.png)
+![BrowseToLib.](media\sp-upload-2.png)
 4. Select all files in the library downloaded in the preceding step.
-![BrowseToLib](media\sp-upload-3.png)
+![BrowseToLib.](media\sp-upload-3.png)
 5. In the document library, select **Quick edit**.
-![BrowseToLib](media\sp-upload-4.png)
+![BrowseToLib.](media\sp-upload-4.png)
 6. Select the first row under **DisplayName**, and paste the data from the following into the table.
 
     | DisplayName | ItemDescription |Featured|TemplateType|
@@ -83,7 +84,7 @@ We've created a starter set of templates for you. To access them, do the followi
     |Admin White Paper|An example document, to show how they'll appear in the Template Library. This document is also useful to you as an admin. | No |Document|
 
 7. You now have a starter set of components for your power user usage.
-![BrowseToLib](media\sp-upload-5.png)
+![BrowseToLib.](media\sp-upload-5.png)
 -->
 
 ### Add your own templates
@@ -101,7 +102,7 @@ If you have existing templates that you'd like to share with your makers (for ex
     1. Text: **What didn't go well?**
 1. Select **Share**, and copy the link for **Send and collect responses**.
 
-    ![Copy the feedback form URL to send and collect responses](media/nurture-feedback.png "Copy the feedback form URL to send and collect responses")
+    ![Copy the feedback form URL to send and collect responses.](media/nurture-feedback.png "Copy the feedback form URL to send and collect responses")
 
 1. Save the link to the form for the *Training in a day - Feedback Form* environment variable.
 
@@ -113,7 +114,7 @@ The core components solution is required for the nurture components solution, or
 
 1. Import the CenterOfExcellenceNurtureComponents_*x_x_x_xx*_managed.zip file.
 1. Create a new connection to the **RSS** connector, and set your Microsoft Dataverse connection.
-    ![Import the CoE nurture components solution](media/msi-nurture.png "Import the CoE nurture components solution")
+    ![Import the CoE nurture components solution.](media/msi-nurture.png "Import the CoE nurture components solution")
 1. Update the environment variable values. Note that if you choose, you can leave the values empty on import and [update them](#update-environment-variables) later after the import is completed.
 
     | Name | Description |
@@ -143,37 +144,37 @@ This file is only needed once for import, and can be deleted after the dataflow 
 Now we wil load the initial data from SharePoint Online into Dataverse using a Dataflow.
 
 1. In your CoE environment, browse to **Data > Dataflows**, and edit the **Maker Assessment Starter Dataflow**
-   ![Edit the Dataflow](media/MakerJourneyDataSetup1.png "Edit the Dataflow")
+   ![Edit the Dataflow.](media/MakerJourneyDataSetup1.png "Edit the Dataflow")
 
 1. Select **SPFolder** under Queries. Enter the document library you have uploaded the file to, including prefix and trailing slash.
-   ![Update the parameter with your SharePoint document library](media/MakerJourneyDataSetup2.png "Update the parameter with your SharePoint document library")
+   ![Update the parameter with your SharePoint document library.](media/MakerJourneyDataSetup2.png "Update the parameter with your SharePoint document library")
 
 1. Select **assessmentCategoriesTable** under Queries and select **Configure connection**
-   ![Configure the connection for the dataflow](media/MakerJourneyDataSetup3.png "Configure the connection for the dataflow")
+   ![Configure the connection for the dataflow.](media/MakerJourneyDataSetup3.png "Configure the connection for the dataflow")
 
 1. Choose an existing connection or create a new one and select **Connect**
 
-   ![Choose connection for the dataflow to connect to SharePoint](media/MakerJourneyDataSetup5.png "Choose connection for the dataflow to connect to SharePoint")
+   ![Choose connection for the dataflow to connect to SharePoint.](media/MakerJourneyDataSetup5.png "Choose connection for the dataflow to connect to SharePoint")
 
 1. Data should now be loaded into the editor. If you see a connection error instead, make sure the **SPFolder** parameter is correct. Select **Next**.
 
-   ![Initial data will be loaded into the table view](media/MakerJourneyDataSetup6.png "Initial data will be loaded into the table view")
+   ![Initial data will be loaded into the table view.](media/MakerJourneyDataSetup6.png "Initial data will be loaded into the table view")
 
 1. Select **Next** without changing any default setting.
 
-   ![Select Next without changing any default settings](media/MakerJourneyDataSetup7.png "Select Next without changing any default settings")
+   ![Select Next without changing any default settings.](media/MakerJourneyDataSetup7.png "Select Next without changing any default settings")
 
 1. Select **Create** to create the Dataflow.
 
-   ![Create the dataflow](media/MakerJourneyDataSetup8.png "Create the dataflow")
+   ![Create the dataflow.](media/MakerJourneyDataSetup8.png "Create the dataflow")
 
 1. Wait while the Dataflow refresh is in progress.
 
-   ![Wait while the Dataflow refresh is in progress](media/MakerJourneyDataSetup9.png "Wait while the Dataflow refresh is in progress")
+   ![Wait while the Dataflow refresh is in progress.](media/MakerJourneyDataSetup9.png "Wait while the Dataflow refresh is in progress")
 
 >[!TIP]
 >If you see connection error, please select **Refresh** as the connection may not have resolved in time for the initial load:
-   ![Error](media/MakerJourneyDataSetup10.png "Error")
+   ![Error.](media/MakerJourneyDataSetup10.png "Error")
 
 ## Update environment variables
 

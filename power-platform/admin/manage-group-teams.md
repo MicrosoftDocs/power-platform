@@ -6,6 +6,7 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/28/2021
 author: paulliew
+ms.subservice: admin
 ms.author: paulliew
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -83,7 +84,7 @@ For more information, see [Assign a record to a user or team](/powerapps/user/as
    2. Obtain the Azure AD Group's **ObjectID** from your https://portal.azure.com site.
    3. Create a custom security role that contains privileges per your team's collaboration requirement. Please see the discussion of [member's inherited privileges](security-roles-privileges.md#team-members-privilege-inheritance) if you need to extend the team member's privileges directly to a user.
 
-2. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+2. In the web app, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
 
 3. Select **Settings** > **Security**. In Microsoft Dynamics 365 for Outlook, go to **Settings** > **System** > **Security**.
 
@@ -124,7 +125,7 @@ For more information, see [Assign a record to a user or team](/powerapps/user/as
    - Follow the steps in [View your user profile](/powerapps/user/view-your-user-profile).
    - Don't have the correct permissions? Contact your system administrator.
 
-2. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+2. In the web app, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
 
 3. Select **Settings** > **Security**. In Dynamics 365 for Outlook, go to **Settings** > **System** > **Security**.
 

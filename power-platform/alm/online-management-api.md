@@ -3,6 +3,7 @@ title: "Online Management API (REST) to manage environments"
 description: "Learn how to use the Online Management API to create and manage Microsoft Dataverse environment."
 keywords: 
 author: mikkelsen2000
+ms.subservice: alm
 ms.author: pemikkel
 manager: kvivek
 ms.custom: ""

@@ -3,6 +3,7 @@ title: "Build tool tasks | Microsoft Docs"
 description: "Learn about what build tool tasks are available plus some examples of tasks in DevOps pipelines."
 keywords: 
 author: mikkelsen2000
+ms.subservice: alm
 ms.author: pemikkel
 manager: kvivek
 ms.custom: ""
@@ -218,7 +219,7 @@ More information about Azure DevOps pipelines: [Use Azure Pipelines](/azure/devo
 
 The following figure shows the build tool tasks that you might add to a pipeline that exports a solution from a development environment.
 
-![Export a solution from a development environment (DEV)](media/export-pipeline.png "Export a solution from a development environment (DEV)")
+![Export a solution from a development environment (DEV).](media/export-pipeline.png "Export a solution from a development environment (DEV)")
 
 <a name="build-pipeline-build-managed-solution"></a>
 
@@ -226,7 +227,7 @@ The following figure shows the build tool tasks that you might add to a pipeline
 
 The following figure shows the build tool tasks that you might add to a pipeline that builds a managed solution.
 
-![Build a managed solution](media/build-pipeline.png "Build a managed solution")
+![Build a managed solution.](media/build-pipeline.png "Build a managed solution")
 
 <a name="release-pipeline-deploy-to-production"></a>
 
@@ -234,7 +235,7 @@ The following figure shows the build tool tasks that you might add to a pipeline
 
 The following figure shows the build tool tasks that you might add to a pipeline that deploys to a production environment.
 
-![Deploy to a production environment (PROD)](media/deploy-pipeline.png "Deploy to a production environment (PROD)")
+![Deploy to a production environment (PROD).](media/deploy-pipeline.png "Deploy to a production environment (PROD)")
 
 ### See Also
 

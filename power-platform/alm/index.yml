@@ -6,6 +6,7 @@ summary: Learn how to implement application lifecycle management (ALM) using Mic
 metadata:
   title: Application lifecycle management (ALM) with Microsoft Power Platform
   description: "Learn how to implement application lifecycle management (ALM), including governance, development, and maintenance, using Microsoft Power Platform."
+  ms.subservice: alm
   ms.service: power-platform 
   ms.topic: landing-page
   author: Mattp123

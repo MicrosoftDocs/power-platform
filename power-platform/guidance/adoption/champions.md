@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/09/2020
+ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -28,11 +29,11 @@ The out-of-the-box [Power Automate](../../admin/analytics-flow.md) and [Power Ap
 
 In addition to that, the dashboard part of the [CoE Starter Kit](../coe/starter-kit.md) can give you a tenant-wide overview of makers in your environment, and what connectors they're using to create apps. You can see your top app and flow makers, what departments they are from, and identify trends over time.
 
-![CoE Starter Kit maker dashboard](../coe/media/pb-10.png "CoE Starter Kit Maker Dashboard")
+![CoE Starter Kit maker dashboard.](../coe/media/pb-10.png "CoE Starter Kit Maker Dashboard")
 
 You can see how many different connectors your makers are using and learn who is exploring different connectors. A great way to identify mature makers is looking at those who try out different connectors.
 
-![CoE Starter Kit app maker insights](media/coe-pb1.png "CoE Starter Kit app maker insights")
+![CoE Starter Kit app maker insights.](media/coe-pb1.png "CoE Starter Kit app maker insights")
 
 ## How will champions support you?
 

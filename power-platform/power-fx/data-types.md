@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.topic: reference
 ms.reviewer: nabuthuk
 ms.date: 02/26/2021
+ms.subservice: power-fx
 ms.author: gregli
 search.audienceType: 
   - maker
@@ -68,7 +69,7 @@ Notify( "Jane said ""Hello, World!""" )
 
 results in a banner when the button is pressed, where the first and last double quotes are omitted (as they delimit the text string) and the repeated double quotes around **Hello, World!** are replaced with a single double quote:
 
-![pop up notification with the message Jane said "Hello, World"](media/data-types/literal-string.png)
+![pop up notification with the message Jane said "Hello, World."](media/data-types/literal-string.png)
 
 Single quotation marks are not used for [identifier names](operators.md#identifier-names) that contain special characters and have no significance within a text string.  
 
@@ -76,17 +77,17 @@ Single quotation marks are not used for [identifier names](operators.md#identifi
 
 Through the **File** menu, you can add image, video, and audio files as app resources. The name of the imported file becomes the resource name in the app. In this graphic, the Northwind Traders logo, which is named **nwindlogo**, has been added to an app:
 
-![Northwind resource](media/data-types/nwind-resource.png "Northwind resource")
+![Northwind resource.](media/data-types/nwind-resource.png "Northwind resource")
 
 To use this resource in an app, specify it in the **Image** property of an [**Image**](/powerapps/maker/canvas-apps/controls/control-image) control:
 
-![Northwind image](media/data-types/nwind-image.png "Northwind image")
+![Northwind image.](media/data-types/nwind-image.png "Northwind image")
 
 ### URIs for images and other media
 
 You can dig a little deeper into that last example by setting the **Text** property of a [**Label**](/powerapps/maker/canvas-apps/controls/control-text-box) control to **nwindlogo**. The label shows a text string:
 
-![Northwind text](media/data-types/nwind-text.png "Northwind text")
+![Northwind text.](media/data-types/nwind-text.png "Northwind text")
 
 Power Fx references each image or other media file, whether it's in the cloud or added as an app resource, by a URI text string.
 
@@ -98,7 +99,7 @@ For example, the **Image** property of an image control accepts not only app res
 
 That URI displays a scaled-up version of two purple diamonds:
 
-![Double diamonds](media/data-types/double-diamonds.png "Double diamonds")
+![Double diamonds.](media/data-types/double-diamonds.png "Double diamonds")
 
 You can show the most recent image captured in a [**Camera**](/powerapps/maker/canvas-apps/controls/control-camera) control if you set the **Image** property of an image control to the **Photo** property of the camera control. The app holds the image in memory, and the **Photo** property of the camera control returns a URI reference to the image. For example, you might take a picture, and the camera's **Photo** property could return **"appres://blobmanager/7b12ffa2ea4547e5b3812cb1c7b0a2a0/1"**.
 

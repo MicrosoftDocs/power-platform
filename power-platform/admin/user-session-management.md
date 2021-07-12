@@ -6,6 +6,7 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 07/02/2021
 author: jimholtz
+ms.subservice: admin
 ms.author: jimholtz
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
@@ -38,7 +39,7 @@ This Azure AD ID token refresh cycle continues in the background based on the Az
 >   - In the same browser session, open a version 9.1.0.3647 or higher environment and then open a version earlier 9.1.0.3647. <br/>
 >     **To workaround** the policy bypass and user duration change, open the second environment in a separate browser session.
 >
-> To determine your version, sign in to customer engagement apps, and in the upper-right side of the screen, select the **Settings** button (![User profile Settings button](media/user-profile-settings-button.png)) > **About**. 
+> To determine your version, sign in to customer engagement apps, and in the upper-right side of the screen, select the **Settings** button (![User profile Settings button.](media/user-profile-settings-button.png)) > **About**. 
 
 
 ### Resilience to Azure AD outages 

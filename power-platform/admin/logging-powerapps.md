@@ -6,6 +6,7 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 10/20/2020
 author: tjvass
+ms.subservice: admin
 ms.author: tjvass 
 ms.reviewer: jimholtz 
 search.audienceType: 
@@ -27,7 +28,7 @@ Follow these steps.
 2. Select **Search** > **Audit log search**. 
 
    > [!div class="mx-imgBorder"] 
-   > ![Audit log search](media/audit-log-search.png "Audit log search")
+   > ![Audit log search.](media/audit-log-search.png "Audit log search")
 
 Within the **Audit log search** screen, Power Platform admins can search audit logs across many popular services including eDiscovery, Exchange, Power BI, Azure AD, Microsoft Teams, customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), and Microsoft Power Apps.
 
@@ -72,7 +73,7 @@ You can review your audit data in the Microsoft 365 Security and Compliance Cent
 To use the preconfigured Power Apps reports, go to https://protection.office.com > **Search & investigation** > **Audit log search** and select the **Power Apps app activities** tab.
 
 > [!div class="mx-imgBorder"] 
-> ![Audit log search Power Apps](media/audit-log-search-pa.png "Audit log search Power Apps")
+> ![Audit log search Power Apps.](media/audit-log-search-pa.png "Audit log search Power Apps")
 
 ### See also
  [Search the audit log in the compliance Center](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide)<br/>

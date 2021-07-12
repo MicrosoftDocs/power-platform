@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/25/2021
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -53,7 +54,7 @@ pageView
 Application Insights provides different views. The **Overview** panel shows a summary of the key diagnostic metrics of your app and is a gateway to the other features of the portal. You can drill into metrics for more details. See the following sample.
 
 > [!div class="mx-imgBorder"] 
-> ![Application Insights Overview panel](media/application-insights-overview.png "Application Insights Overview panel")
+> ![Application Insights Overview panel.](media/application-insights-overview.png "Application Insights Overview panel")
 
 ## Performance panel in Application Insights
 
@@ -64,7 +65,7 @@ The **Performance** panel shows the count and average duration of each operation
 The **Server** view shows the most frequently called APIs and what the latency looks like.
 
 > [!div class="mx-imgBorder"] 
-> ![Application Insights Performance panel](media/application-insights-performance.png "Application Insights Performance panel")
+> ![Application Insights Performance panel.](media/application-insights-performance.png "Application Insights Performance panel")
 
 Operations with a higher number of calls and higher duration are potential items for investigation. In the above example, `POST /XRMServices/2011/Organization.svc/web` has a high number of calls and a high duration. Similarly, `GET /api/data/v9.0/accounts` has a relatively high duration.
 
@@ -73,12 +74,12 @@ Selecting one of the operations will also show you details about the top three d
 If you switch to the **Browser** view, you'll see data about which pages are being viewed most frequently in the environment and the latency for each of them. You'll see metrics including session counts and the dependencies associated with different operations. For example, selecting the **Accounts** operation shows requests made to the account entity.
 
 > [!div class="mx-imgBorder"] 
-> ![Application Insights Performance panel for account](media/application-insights-performance-account.png "Application Insights Performance panel for account")
+> ![Application Insights Performance panel for account.](media/application-insights-performance-account.png "Application Insights Performance panel for account")
 
 You can drill into a specific sample to see where time is spent on the particular operation.
 
 > [!div class="mx-imgBorder"] 
-> ![Application Insights Performance end-to-end transaction details](media/application-insights-performance-transaction-details.png "Application Insights Performance end-to-end transaction details")
+> ![Application Insights Performance end-to-end transaction details.](media/application-insights-performance-transaction-details.png "Application Insights Performance end-to-end transaction details")
 
 More information: [Find and diagnose performance issues with Azure Application Insights](/azure/azure-monitor/learn/tutorial-performance)
 
@@ -87,22 +88,22 @@ More information: [Find and diagnose performance issues with Azure Application I
 To open the **Failures** panel, either select **Failures** under **Investigate** on the left pane or select the **Failed requests** graph.
 
 > [!div class="mx-imgBorder"] 
-> ![Application Insights failures](media/application-insights-failures.png "Application Insights failures")
+> ![Application Insights failures.](media/application-insights-failures.png "Application Insights failures")
 
 The exceptions table in Application Insights powers the **Failures** panel. It shows the count of failed requests and the number of users affected for each operation for the application. You can see error details for the operations and dependencies, for both server and browser. Failures related to create/read/update/delete (CRUD)&ndash;specific HTTP methods (GET, POST, PUT, and DELETE) used in the API operations are available here. This can be used to identify those failures that most affect users. For example, in the following sample you can see that the `GET/api/data/v9.0/GetClientMetaData` operation has a high number of failures and users. Selecting this operation shows more information about it in the right panel.  
 
 > [!div class="mx-imgBorder"] 
-> ![Application Insights failure dependencies](media/application-insights-failures-dependencies.png "Application Insights failure dependencies")
+> ![Application Insights failure dependencies.](media/application-insights-failures-dependencies.png "Application Insights failure dependencies")
 
 You can also see the failures related to the dependencies, including a summary view of the common response codes mapped to failures.
 
 > [!div class="mx-imgBorder"] 
-> ![Application Insights failures details](media/application-insights-failures-details.png "Application Insights failures details")
+> ![Application Insights failures details.](media/application-insights-failures-details.png "Application Insights failures details")
 
 You can drill into the details of the step where the bottleneck occurred.
 
 > [!div class="mx-imgBorder"] 
-> ![Application Insights logs query](media/application-insights-logs-query.png "Application Insights log query")
+> ![Application Insights logs query.](media/application-insights-logs-query.png "Application Insights log query")
 
 More information: [Find and diagnose run-time exceptions with Azure Application Insights](/azure/azure-monitor/learn/tutorial-runtime-exceptions)
 
@@ -111,7 +112,7 @@ More information: [Find and diagnose run-time exceptions with Azure Application 
 In Application Insights, go to the **Logs** panel under **Monitoring** on the left pane.
 
 > [!div class="mx-imgBorder"] 
-> ![Application Insights logs query](media/application-insights-logs-query.png "Application Insights log query")
+> ![Application Insights logs query.](media/application-insights-logs-query.png "Application Insights log query")
 
 ## Common fields
 

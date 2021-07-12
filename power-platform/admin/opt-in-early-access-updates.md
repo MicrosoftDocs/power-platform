@@ -2,6 +2,7 @@
 title: "Opt in to early access updates  | MicrosoftDocs"
 description: Opt in to early access updates in Microsoft Power Platform and Dynamics 365. 
 author: angelmarshall
+ms.subservice: admin
 ms.author: tsmarsha
 ms.reviewer: jimholtz
 ms.service: power-platform
@@ -32,7 +33,7 @@ For example, for a wave 1 major release that's planned to be automatically enabl
 
 The following is an example of an early update availability timeline.
 
-![Opt-in timeline for 2020](media/opt-in-2020-timeline.png "Opt-in timeline for 2020")
+![Opt-in timeline for 2020.](media/opt-in-2020-timeline.png "Opt-in timeline for 2020")
 
 > [!NOTE]
 > Once a release wave is generally available, the updates status in your environments will be set to **On** to automatically receive all planned features and updates throughout the release.  
@@ -61,13 +62,13 @@ The early access updates are available for all types of environments, including 
 3. Under **Updates**, you'll see that the new release wave is available. Select **Manage**. 
 
    > [!div class="mx-imgBorder"] 
-   > ![Manage opt-in update](media/update-manage.png "Manage opt-in update")
+   > ![Manage opt-in update.](media/update-manage.png "Manage opt-in update")
    > <br />An example screenshot. May not be current wave. 
 
 4. Select **Update now**, and then proceed through the confirmation dialog boxes to enable the new features and capabilities of the release wave.  
  
    > [!div class="mx-imgBorder"] 
-   > ![Opt-in update now](media/new-update.png "Opt-in update now")
+   > ![Opt-in update now.](media/new-update.png "Opt-in update now")
    > <br />An example screenshot. May not be current wave. 
 
 5. After the update is complete, all early access features will be enabled for your model-driven apps in your environment.  
@@ -106,7 +107,7 @@ The updates might take a few hours. If multiple retry attempts fail after 24 hou
 > The retry experience is only available for the early access opt-in updates. After a release wave is generally available, the updates of the release wave will be automatically enabled for all environments; thus, no manual action is required.   
 
 ### Confirm update complete  
-To verify that a release wave is enabled, open the environment, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **About** to see the release wave that's enabled.
+To verify that a release wave is enabled, open the environment, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **About** to see the release wave that's enabled.
 
 |In Unified Interface  |In the web client interface  | 
 |---------|-------|

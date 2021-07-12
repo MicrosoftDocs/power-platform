@@ -2,6 +2,7 @@
 title: "Select a data map | MicrosoftDocs"
 description: Select a data map
 author: jimholtz
+ms.subservice: admin
 ms.author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
