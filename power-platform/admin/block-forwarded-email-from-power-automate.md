@@ -53,7 +53,7 @@ Exchange admins can use these headers to set up exfiltration blocking rules in t
 
 This is equivalent to the Exchange ‘mail flow’ rule set up for the message type equal to ‘auto-forward’.  This rules uses Outlook and Outlook for web clients. 
 
-:::image type="content" source="media/block-outbound-forwards80.png" alt-text="Block outbound forwards":::
+:::image type="content" source="media/block-outbound-forwards80.png" alt-text="Block outbound forwards.":::
 
 ## Exempt specific flows from exfiltration blocking
 
@@ -68,12 +68,12 @@ azure-logic-apps/1.0 (workflow afa0fb167803450aa650267e95d43287; version
 
 As an admin, if you want to exempt flows (or apps) from the exfiltration due to a legitimate business scenario, use the workflow ID as part of the user-agent header. All other exception conditions offered by Exchange rules, such as sender address, remain available to exempt the legitimate business use cases from the blocking enforcement. For example:
 
-:::image type="content" source="media/block-outbound-forwards-exception85.png" alt-text="Block outbound forwards exceptions":::
+:::image type="content" source="media/block-outbound-forwards-exception85.png" alt-text="Block outbound forwards exceptions.":::
 
 Admins can also use other exception capabilities in Exchange mail rules to exempt flows from the exfiltration blocking rules, For example, a unique sender address allows legitimate business use cases to bypass the control. 
 
 > [!div class="mx-imgBorder"] 
-> ![Block outbound forwards exception list](media/block-outbound-forwards-exception-list85.png "Block outbound forwards exception list")
+> ![Block outbound forwards exception list.](media/block-outbound-forwards-exception-list85.png "Block outbound forwards exception list")
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

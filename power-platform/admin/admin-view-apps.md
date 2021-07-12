@@ -39,17 +39,17 @@ Sign in to the Admin center at [https://admin.powerapps.com](https://admin.power
 ## Download the list of apps
 1. In the navigation pane, click or tap **Environments**, and then click or tap the environment for which you want to download the list of apps.
 
-    ![Select environment](./media/admin-view-apps/environment.png)
+    ![Select environment.](./media/admin-view-apps/environment.png)
 2. On the **Resources** tab, click or tap **Apps**, and then click or tap **Download the list of apps**.
 
-    ![Select Download the list of apps](./media/admin-view-apps/resources-app.png)
+    ![Select Download the list of apps.](./media/admin-view-apps/resources-app.png)
 
     The list of apps is downloaded into a .csv file. This process could take several minutes. Make sure that you don't close the window before the list completely downloads or you may have to restart the process.
 
 ## View the list
 After the .csv file is created, open it in Excel. The list contains the app display name, the owner of the app, any connectors that the app uses to connect to data sources, and other information.
 
-![View list](./media/admin-view-apps/excel-view.png)
+![View list.](./media/admin-view-apps/excel-view.png)
 
 ## Next steps
 In this topic, you learned how to download and view a list of apps created in an environment within your organization. Next, learn how to manage the apps created in your organization.

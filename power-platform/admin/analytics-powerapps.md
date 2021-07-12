@@ -23,7 +23,7 @@ Analytics for the environment admin is available at the Microsoft Power Platform
 To access these reports, sign in to the Power Platform admin center and select **Analytics** > **Power Apps**. Reports appear in a menu bar at the top of the page.
 
 > [!div class="mx-imgBorder"] 
-> ![Power Apps analytics menu](media/powerapps-analytics-menu.png "Power Apps analytics menu")
+> ![Power Apps analytics menu.](media/powerapps-analytics-menu.png "Power Apps analytics menu")
 
 ## Who can view these reports?
 
@@ -46,17 +46,17 @@ There are six reports available for Power Apps admins. The last viewed environme
 **Usage** report is the default reports seen by the logged in environment admin. It provides total app launches and daily active users across all apps in the environment. Admins can filter the view with attributes like device platform, player version, country, state, and city.
 
 > [!div class="mx-imgBorder"] 
-> ![Power Apps analytics usage report](media/powerapps-analytics-usage.png "Power Apps analytics usage report")
+> ![Power Apps analytics usage report.](media/powerapps-analytics-usage.png "Power Apps analytics usage report")
 
 **Location** report provides a map-based view of usage. It gives an insight into regional adoption and usage trends.  
 
 > [!div class="mx-imgBorder"] 
-> ![Power Apps analytics location report](media/powerapps-analytics-location.png "Power Apps analytics location report")
+> ![Power Apps analytics location report.](media/powerapps-analytics-location.png "Power Apps analytics location report")
 
 **Toast Errors** report provides insights into the toast error trends, types, and counts per app to help drive improvements in app quality. The toast errors are errors displayed to the end users of the app. 
 
 > [!div class="mx-imgBorder"] 
-> ![Power Apps analytics error report](media/powerapps-analytics-toast-errors.png "Power Apps analytics error report")
+> ![Power Apps analytics error report.](media/powerapps-analytics-toast-errors.png "Power Apps analytics error report")
 
 **Service Performance** report provides details of all standard and custom connectors to understand performance bottlenecks and client versus service API issues. An environment admin will get insights into:  
 
@@ -70,7 +70,7 @@ There are six reports available for Power Apps admins. The last viewed environme
 All the service performance KPI's can be filtered with attributes like a specific service or connector, device platform, player version, and country, state, or city to drill down into the specific API. 
 
 > [!div class="mx-imgBorder"] 
-> ![Power Apps analytics service performance report](media/powerapps-analytics-service-performance.png "Power Apps analytics service performance report")
+> ![Power Apps analytics service performance report.](media/powerapps-analytics-service-performance.png "Power Apps analytics service performance report")
 
 **Connectors report** provides visibility into the standard and custom connectors being used by canvas apps. The last 28 days of data is visible at the environment level.  
 
@@ -81,26 +81,26 @@ Admins can gain insights into the number of connectors associated with each app,
 Note that the current iteration of this specific report does not have a download report feature. 
 
 > [!div class="mx-imgBorder"] 
-> ![Power Apps analytics connector report](media/powerapps-analytics-connector.png "Power Apps analytics connector report")
+> ![Power Apps analytics connector report.](media/powerapps-analytics-connector.png "Power Apps analytics connector report")
 
 ## How can I download the reports? 
 
 The reports are built on Power BI. To download a report, select the ellipsis (…) of the specific KPI and select **Export data**. 
 
 > [!div class="mx-imgBorder"] 
-> ![Power Apps analytics export data](media/powerapps-analytics-export-data.png "Power Apps analytics export data")
+> ![Power Apps analytics export data.](media/powerapps-analytics-export-data.png "Power Apps analytics export data")
 
 ## How do I change environments? 
 
-Select **Change Filter** or the **Filter** button (![Filter button](media/filters-button.png "Filter button")) in the upper-right corner of the page.
+Select **Change Filter** or the **Filter** button (![Filter button.](media/filters-button.png "Filter button")) in the upper-right corner of the page.
 
 > [!div class="mx-imgBorder"] 
-> ![Select Change Filter or Filter](media/powerapps-analytics-filter.png "Select Change Filter or Filter")
+> ![Select Change Filter or Filter.](media/powerapps-analytics-filter.png "Select Change Filter or Filter")
 
 Select the environment and time period from the drop-down lists, and then select **Apply** to save the changes. All the Power Apps analytics reports will now use this selection.
 
 > [!div class="mx-imgBorder"] 
-> ![Power Apps analytics change environments](media/powerapps-analytics-change-environments.png "Power Apps analytics change environments")
+> ![Power Apps analytics change environments.](media/powerapps-analytics-change-environments.png "Power Apps analytics change environments")
 
 ## FAQ
 

@@ -48,16 +48,16 @@ You can set the values of datetime fields to automatically move forward by a spe
    > [!NOTE]
    > You can still select individual fields to move forward at import. In the below example, only fields marked as **Relative** will be automatically moved.
 
-   ![Default date mode absolute](media/default-date-mode-absolute.png)
+   ![Default date mode absolute.](media/default-date-mode-absolute.png)
 
    - Alternatively, select **Relative. Dates are renewed during import** if you want all date values to auto-move by default.
 
-   ![Default date mode relative](media/default-date-mode-relative.png)
+   ![Default date mode relative.](media/default-date-mode-relative.png)
 
    > [!NOTE]
    > This option will set dates to auto-move for all datetime fields on all entities. You may change this at the field level by selecting **Absolute**.  
 
-   ![Default date mode absolute field](media/default-date-mode-absolute-field.png)
+   ![Default date mode absolute field.](media/default-date-mode-absolute-field.png)
 
    8.  Verify your selections for all fields on all entities in your schema.
 

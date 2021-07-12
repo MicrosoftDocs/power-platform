@@ -101,7 +101,7 @@ A canvas app that the Maker Assessment admin uses to enter or update the questio
 
 **Prerequisite**: This app uses Dataverse; a Premium license is therefore required for every app user unless installed in Dataverse for Teams.
 
-![Maker Journey Admin app](media/MakerJourneyAdminApp.png "Maker Journey Admin app")
+![Maker Journey Admin app.](media/MakerJourneyAdminApp.png "Maker Journey Admin app")
 
 ### Maker Assessment
 
@@ -111,7 +111,7 @@ The Maker Assessment app can be used to ask users a series of questions regardin
 
 **Prerequisite**: This app uses Dataverse; a Premium license is therefore required for every app user unless installed in Dataverse for Teams.
 
-![Maker Assessment app, screen 1](media/MakerJourneyAssessmentApp_1.png "Maker Assessment app, screen 1")
+![Maker Assessment app, screen 1.](media/MakerJourneyAssessmentApp_1.png "Maker Assessment app, screen 1")
 
 ### Template Catalog
 
@@ -132,7 +132,7 @@ If you're planning to run an internal Training in a Day event (such as App in a 
 
 **Prerequisite**: This app uses Dataverse; a Premium license is therefore required for the admins who are using it.
 
-![Training in a Day Management app](media/coe69.png "Training in a Day Management app")
+![Training in a Day Management app.](media/coe69.png "Training in a Day Management app")
 
 #### Training in a Day – Registration
 
@@ -142,7 +142,7 @@ If you're planning to run a Training in a Day event, use this canvas app to enab
 
 **Prerequisite**: This app uses Dataverse; a Premium license is therefore required for everyone in your org.
 
-![Training in a Day Registration app](media/coe70.png "Training in a Day Registration app")
+![Training in a Day Registration app.](media/coe70.png "Training in a Day Registration app")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

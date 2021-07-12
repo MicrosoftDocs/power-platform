@@ -33,11 +33,11 @@ The Developer Compliance Center has been updated to now include a compliance pro
 - Custom Connectors
 - Chatbots
 
-![Developer Compliance Center - Flows](../media/compliancecenter-1.png "Developer Compliance Center - Flows")
+![Developer Compliance Center - Flows.](../media/compliancecenter-1.png "Developer Compliance Center - Flows")
 
 Makers can now provide compliance and support details for all app types, flows, chatbots and custom connectors
 
-![Developer Compliance Center - Provide Maker Requirements](../media/compliancecenter-3.png "Developer Compliance Center - Provide Maker Requirements")
+![Developer Compliance Center - Provide Maker Requirements.](../media/compliancecenter-3.png "Developer Compliance Center - Provide Maker Requirements")
 
 Additionally, if the Archival process of the Governance components is used, apps and flows flagged for archiving are highlighted to makers in the Developer Compliance Center.
 

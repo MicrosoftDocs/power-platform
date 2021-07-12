@@ -295,7 +295,7 @@ More information: [Data Loss Prevention policies](/power-platform/admin/wp-data-
 
 **Permission**: Intended to be used only by admins. Power Platform Service Admin or Global Admin permission is required. Share this app with your CoE admins.
 
-![DLP Editor](media/dlp_new1.png "DLP Editor")
+![DLP Editor.](media/dlp_new1.png "DLP Editor")
 
 ### App Catalog
 
@@ -307,7 +307,7 @@ When you first open the app catalog, you won't see any apps there. There's a fie
 
 **Prerequisite**: This app uses Microsoft Dataverse; a Premium license is therefore required for every app user.
 
-![App Catalog](media/coe67.png "App Catalog")
+![App Catalog.](media/coe67.png "App Catalog")
 
 ### Set App Permissions
 
@@ -324,7 +324,7 @@ You can also use this app to find apps that have been orphaned by the owner's ha
 
 **Permission**: This app is intended to be used only by admins. Microsoft Power Platform Service Admin or Global Admin permission is required. Share this app with your CoE admins.
 
-![Set App Permissions](media/SetAppPerms.png "Set App Permissions")
+![Set App Permissions.](media/SetAppPerms.png "Set App Permissions")
 
 ### Set Flow Permissions
 
@@ -341,7 +341,7 @@ You can also use this app to find flows that have been orphaned by the owner's h
 
 **Permission**: This app is intended to be used only by admins. Microsoft Power Platform Service Admin or Global Admin permission is required. Share this app with your CoE admins.
 
-![Set Flow Permissions](media/SetFlowPerms.png "Set Flow Permissions")
+![Set Flow Permissions.](media/SetFlowPerms.png "Set Flow Permissions")
 
 ### Power Platform Admin View
 
@@ -361,11 +361,11 @@ Use this app to:
 
 **Permission**: This app is intended to be used only by admins. Power Platform Service Admin or Global Admin permission is required. Share this app with your CoE admins.
 
-![Power Platform Admin View model-driven app](media/coe-mda1.png "Power Platform Admin View model-driven app")
+![Power Platform Admin View model-driven app.](media/coe-mda1.png "Power Platform Admin View model-driven app")
 
 You can use this app to see who an app is shared with, what roles (editor or viewer) the users have, and&mdash;for groups&mdash;what the size of the group is, all in a quick glance.
 
-![Use Power Platform Admin View to see who an app is shared with](media/coe-mda2.png "Use Power Platform Admin View to see who an app is shared with")
+![Use Power Platform Admin View to see who an app is shared with.](media/coe-mda2.png "Use Power Platform Admin View to see who an app is shared with")
 
 You can use this app to see Microsoft Teams environments.
 
@@ -375,6 +375,6 @@ With Power BI reports, you can get a holistic view of Dataverse data with visual
 
 Follow the [setup instructions](setup-powerbi.md) to set up the Power BI dashboard. More information: [Gain deep insights into your Microsoft Power Platform adoption with the CoE Power BI dashboard](power-bi.md)
 
-![CoE Power BI dashboard](media/pb-2.png "CoE Power BI dashboard")
+![CoE Power BI dashboard.](media/pb-2.png "CoE Power BI dashboard")
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -26,7 +26,7 @@ Enabling cross-tenant isolation for Power Apps and Power Automate requires raisi
 - Restricting outbound connections means a user in your tenant is blocked from connecting to a third-party tenant. Restricting outbound cross-tenant connections can be done using tenant restrictions that apply to all Azure Active Directory (Azure AD) software as a service (SaaS) cloud apps, or at the connector level, which would block outbound connections just for canvas apps and flows.
 - Restricting inbound connections means a user in a third-party tenant is blocked from creating a connection to your tenant. Restricting inbound cross-tenant connections requires a support ticket—this restriction then only applies to Power Apps and Power Automate.
 
-    ![Restricting outbound cross-tenant connections](media/restrict-outbound-cross-tenant.png "Restricting outbound cross-tenant connections")
+    ![Restricting outbound cross-tenant connections.](media/restrict-outbound-cross-tenant.png "Restricting outbound cross-tenant connections")
 
 ## Azure AD tenant restrictions
 

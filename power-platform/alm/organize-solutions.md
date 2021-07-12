@@ -55,7 +55,7 @@ When you manage your projects this way, we recommend that you use a separate env
 1. You set up a second environment for the extension or "app" layer that will later reside on top of the base layer.  
 1. You import the managed base layer into the app layer environment and create an unmanaged solution for the app layer.  
 
-   :::image type="content" source="media/proper-solution-layering.png" alt-text="Proper solution layering using multiple solutions with multiple environments":::
+   :::image type="content" source="media/proper-solution-layering.png" alt-text="Proper solution layering using multiple solutions with multiple environments.":::
 
 You can now extend the data model by adding additional tables, columns, table relationships, and so on, into the app solution. Then, export the app solution as managed. Notice that the app solution will have dependencies on the base layer solution.
 

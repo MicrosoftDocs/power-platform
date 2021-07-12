@@ -34,11 +34,11 @@ Securing a field with field-level security can impact synchronization between cu
 ### Set field-level security  
  John, the admin for Contoso, sets security on several fields.  
   
- ![Job Title field](../admin/media/job-title-field.png "Job Title field")  
+ ![Job Title field.](../admin/media/job-title-field.png "Job Title field")  
   
  He did the following steps:  
 
-1. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+1. In the web app, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
 
 2. Select **Settings** > **Customizations**.
   
@@ -59,11 +59,11 @@ Securing a field with field-level security can impact synchronization between cu
 ### Create and configure a field security profile  
  John creates a field security profile and assigns sales team members to the profile.  
   
- ![Field Security Profile](../admin/media/field-security-profile.png "Field Security Profile")  
+ ![Field Security Profile.](../admin/media/field-security-profile.png "Field Security Profile")  
   
  He did the following to create the field security profile:  
 
-1. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+1. In the web app, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
 
 2. Select **Settings** > **Security**.
   
@@ -80,9 +80,9 @@ Securing a field with field-level security can impact synchronization between cu
 ### Set field permissions  
  With a field security profile created and users added to the profile, John can now set permissions on the fields to match his organization's requirements.  
   
- ![Edit Field Security form](../admin/media/edit-field-security.png "Edit Field Security form")  
+ ![Edit Field Security form.](../admin/media/edit-field-security.png "Edit Field Security form")  
   
-1. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+1. In the web app, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
 
 2. Select **Settings** > **Security**.
   
@@ -95,17 +95,17 @@ Securing a field with field-level security can impact synchronization between cu
 ### What the user sees  
  Nancy, a salesperson at Contoso, uses [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)] and creates a new contact and tracks it in Dynamics 365 apps.  
   
- ![Contact Rene Valdes form](../admin/media/contact-form-example.png "Contact Rene Valdes form")  
+ ![Contact Rene Valdes form.](../admin/media/contact-form-example.png "Contact Rene Valdes form")  
   
  When Nancy synchronizes with customer engagement apps, she notices that the Job Title field is gone from the contact. This is because Nancy doesn't have update rights for the Job Title field.  
   
- ![Rene contact with no Job Title](../admin/media/contact-no-job-title.png "Rene contact with no Job Title")  
+ ![Rene contact with no Job Title.](../admin/media/contact-no-job-title.png "Rene contact with no Job Title")  
   
  Nancy's manager, with update rights to the Job Title field, fills in the field with the correct job title: Construction Manager.  
   
  Nancy synchronizes again with customer engagement apps and now the Job Title field is in the contact with the correct title.  
   
- ![Contact with Job Title form](../admin/media/contact-job-title.png "Contact with Job Title form")  
+ ![Contact with Job Title form.](../admin/media/contact-job-title.png "Contact with Job Title form")  
   
 ### See also  
  [Field-level security](../admin/field-level-security.md)

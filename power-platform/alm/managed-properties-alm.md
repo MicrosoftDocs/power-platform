@@ -43,7 +43,7 @@ contains the components, you can view&mdash;but not change&mdash;the managed pro
 3.	From the list of components in the solution, select **…** next to the entity that you want to view the managed properties, and then select **Managed properties**. 
 
     > [!div class="mx-imgBorder"] 
-    > ![Entity managed properties command](media/entity-managed-properties.png "Entity managed properties command")
+    > ![Entity managed properties command.](media/entity-managed-properties.png "Entity managed properties command")
 
     The managed properties page is displayed. 
 

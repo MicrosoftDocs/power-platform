@@ -39,7 +39,7 @@ environment. In Dataverse, there are two distinct layers:
     system layer. The system layer contains the entities and components that are
     required for the platform to function.<!--Very nice explanation! -->
 
-![Example solution layering for a component, such as a form or view](media/solution-layers-alm.png "Example solution layering for a component, such as a form or view")
+![Example solution layering for a component, such as a form or view.](media/solution-layers-alm.png "Example solution layering for a component, such as a form or view")
 
 
 ## Layering within a managed solution 
@@ -71,7 +71,7 @@ imported&mdash;can include the following layers:
 The following image shows an example of solution layers for a custom column that displays the base solution, a patch, and a pending upgrade.
 
 > [!div class="mx-imgBorder"] 
-> ![Solution layers](media/solution-layers-example.png "Solution layers")
+> ![Solution layers.](media/solution-layers-example.png "Solution layers")
 
 For information about how to view layers for a component within a solution, see
 [Solution layers](/powerapps/maker/common-data-service/solution-layers).
@@ -93,11 +93,11 @@ Here’s an example of a top wins component behavior introduced by a stage for u
 
 1. The current top (base) layer has the **Max length** property of the **Comments** text column for the account table using the default setting of 100.
 
-   :::image type="content" source="media/component-merge-top-wins1.png" alt-text="Table component in the base solution":::
+   :::image type="content" source="media/component-merge-top-wins1.png" alt-text="Table component in the base solution.":::
 
 1. A solution upgrade is imported using the stage for upgrade option, which creates a new top layer. The pending upgrade includes the **Comments** text column for the account table with the **Max length** property value changed to 150.
 
-   :::image type="content" source="media/component-merge-top-wins2.png" alt-text="Active layer introduced on top of the base layer":::
+   :::image type="content" source="media/component-merge-top-wins2.png" alt-text="Active layer introduced on top of the base layer.":::
 
 In this situation, the **Comments** column for account records will allow up to a maximum of 150 characters during app run time.
 

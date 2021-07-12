@@ -27,7 +27,7 @@ The Dataverse for Teams environment is automatically created for the selected te
 You can identify a Dataverse for Teams environment in the [Power Platform admin center](https://admin.powerplatform.microsoft.com) by using the **Type** column in the list of environments.
 
 > [!div class="mx-imgBorder"] 
-> ![A Dataverse for Teams environment in the environment list](media/teams-environment-list.png "A Dataverse for Teams environment in the environment list")
+> ![A Dataverse for Teams environment in the environment list.](media/teams-environment-list.png "A Dataverse for Teams environment in the environment list")
 
 ## Licensing and restrictions
 
@@ -146,7 +146,7 @@ There's a difference in the models for adding users to Dataverse environments an
 To change settings for a Dataverse for Teams environment, go to **Environments** > [select a Dataverse for Teams environment] > **Settings**.
 
 > [!div class="mx-imgBorder"] 
-> ![Dataverse for Teams environment settings](media/teams-environment-settings.png "Dataverse for Teams environment settings")
+> ![Dataverse for Teams environment settings.](media/teams-environment-settings.png "Dataverse for Teams environment settings")
 
 ### Users + permissions
 <!-- fwlink 2123134 2127762 -->
@@ -162,17 +162,17 @@ You can specify users in an environment to provide access to Dataverse for Teams
 4. You'll see a list of enabled and disabled users who are members of the Dataverse for Teams environment. You can select a user from the list to run diagnostics and view their access details and status.
 
    > [!div class="mx-imgBorder"] 
-   > ![List of users in a Dataverse for Teams environment](media/teams-environment-user-list.png "List of users in a Dataverse for Teams environment") 
+   > ![List of users in a Dataverse for Teams environment.](media/teams-environment-user-list.png "List of users in a Dataverse for Teams environment") 
 
 5. Select **+ Add user** to add a tenant user to the selected Dataverse for Teams environment. 
 
    > [!div class="mx-imgBorder"] 
-   > ![Add a user to a Dataverse for Teams environment](media/teams-environment-user-list-add.png "Add a user to a Dataverse for Teams environment") 
+   > ![Add a user to a Dataverse for Teams environment.](media/teams-environment-user-list-add.png "Add a user to a Dataverse for Teams environment") 
 
 6. Enter a name or email address of a user who meets the user access requirements to add the user to the Dataverse for Teams environment, and then select **Add**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Add a user settings](media/teams-environment-add-user.png "Add a user settings") 
+   > ![Add a user settings.](media/teams-environment-add-user.png "Add a user settings") 
 
 7. Select **Refresh** to see the added user in the list.
 
@@ -181,7 +181,7 @@ You can specify users in an environment to provide access to Dataverse for Teams
 To delete a Dataverse for Teams environment, select it from the list of environments and then select **Delete**.
 
 > [!div class="mx-imgBorder"] 
-> ![Delete a Dataverse for Teams environment](media/teams-environment-manage-delete.png "Delete a Dataverse for teams environment")
+> ![Delete a Dataverse for Teams environment.](media/teams-environment-manage-delete.png "Delete a Dataverse for teams environment")
 
 ### Upgrade a Dataverse for Teams environment to production
 
@@ -194,7 +194,7 @@ The consumption of capacity by Dataverse for Teams environments won't count towa
 **Per-environment limits on Dataverse for Teams environments**: Each Dataverse for Teams environment provides 2 GB of combined database and file storage, with a portion of this amount reserved for system use. To see the consumption of each Dataverse for Teams environment in a tenant, go to the Power Platform admin center (https://aka.ms/ppac), then to **Resources** > **Capacity** > **Microsoft Teams Capacity**.
 
 > [!div class="mx-imgBorder"] 
-> ![Dataverse for Teams environment capacity](media/teams-environment-capacity.png "Dataverse for Teams environment capacity")
+> ![Dataverse for Teams environment capacity.](media/teams-environment-capacity.png "Dataverse for Teams environment capacity")
 
 **Tenant-wide limits on Dataverse for Teams environments**: Each tenant will also have limits related to Dataverse for Teams environments defined in the following table. 
 
@@ -236,7 +236,7 @@ The high-level flow and business rules for upgrading a Dataverse for Teams envir
 
 A tenant admin will be allowed to upgrade a Dataverse for Teams environment to a Dataverse database environment. A typical flow is as follows:  
 
-:::image type="content" source="media/teams-environment-promotion-process.png" alt-text="Dataverse for Teams environment upgrade process":::
+:::image type="content" source="media/teams-environment-promotion-process.png" alt-text="Dataverse for Teams environment upgrade process.":::
 
 1. Within a team, the Microsoft Teams user chooses to create an app by using the new integrated Power Apps app creation experience in Microsoft Teams, or by installing an existing Dataverse for Teams environment&ndash;based app. At this point, a Dataverse for Teams environment is provisioned for that team.  
 
@@ -300,7 +300,7 @@ Follow these steps to apply a DLP policy:
 3. Run the [UpdatePolicyEnvironmentsForTeams](https://github.com/microsoft/PowerApps-Samples/blob/master/powershell/admin-center/Microsoft.PowerApps.Administration.PowerShell.Samples.psm1#L1270-L1401) function (available in the [DLP SDK](data-loss-prevention-sdk.md)). This will identify the Teams environments in the tenant and add them to the given policy. 
 
    > [!div class="mx-imgBorder"] 
-   > ![UpdatePolicyEnvironmentsForTeams function](media/update-policy-environments-teams.png "UpdatePolicyEnvironmentsForTeams function")
+   > ![UpdatePolicyEnvironmentsForTeams function.](media/update-policy-environments-teams.png "UpdatePolicyEnvironmentsForTeams function")
 
    1. Both the name and display name of the policy are required. If the policy name and display name don’t match, the policy will not be updated.   
       1. OnlyEnvironmentsPolicyName – the name (guid) of the policy 
@@ -315,13 +315,13 @@ Follow these steps to apply a DLP policy:
    For example, you can specify a default policy for all environments except Teams environments using parameters b.i. and b.ii. This will replace all the environments in the exclusion list of the default policy with all the Teams environments. In addition to the Teams environments, if you want to exclude other environments from this default policy, you can use the b.iii. parameter. If an environment is added to the exclusion list of this default policy (through the DLP UI or another PowerShell script), but not included in the "environmentIds" text file, it will be removed the next time the script is run. 
 
    > [!div class="mx-imgBorder"] 
-   > ![Replace environments in exclusion list](media/get-content-teams-environments.png "Replace environments in exclusion list")
+   > ![Replace environments in exclusion list.](media/get-content-teams-environments.png "Replace environments in exclusion list")
 
 > [!NOTE]
 > Each time the function runs, it replaces the existing list of environments in each given policy with a new list of environments. Because the function immediately updates the policy, it requires both the policy name and the policy display name as parameters to ensure that you're targeting the correct policy. If the display name doesn't match the given policy name, the policy will not be modified.  
 >
 > [!div class="mx-imgBorder"] 
-> ![Display name mismatch](media/display-name-mismatch.png "Display name mismatch")
+> ![Display name mismatch.](media/display-name-mismatch.png "Display name mismatch")
 >
 > We recommend that this script is run on a schedule to ensure that the DLP policy will always apply to the most recent list of Teams environments. If a Teams environment is created after this script is run, it will not be governed by the policy until the policy's environments are updated, either by rerunning the script or manually adding the new environment to the policy. If a non-Teams environment is added to the "OnlyEnvironments" policy, it will be removed next time the script is run. 
 
