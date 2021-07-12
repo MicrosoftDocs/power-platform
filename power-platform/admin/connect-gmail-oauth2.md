@@ -1,10 +1,10 @@
 ---
-title: "Connect Gmail accounts using OAuth 2.0  | MicrosoftDocs"
-description: "Connect Gmail accounts using OAuth 2.0"
+title: "Connect Gmail accounts using OAuth 2.0| MicrosoftDocs"
+description: "Connect Gmail accounts using OAuth 2.0 "
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/17/2021
+ms.date: 07/12/2021
 author: revachauhan
 ms.subservice: admin
 ms.author: rechauha
@@ -20,7 +20,7 @@ search.app:
 
 # Connect Gmail accounts using OAuth 2.0 
 
-Follow the steps in this article to set up server-side synchronization to send and receive email in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation) from Gmail accounts using OAuth 2.0 as the authorization mechanism.
+Follow the steps in this article to set up server-side synchronization to send and receive email in customer engagement apps (such as [Dynamics 365 Sales](/dynamics365/sales-professional/help-hub), [Dynamics 365 Customer Service](/dynamics365/customer-service/help-hub), [Dynamics 365 Marketing](/dynamics365/marketing/help-hub), [Dynamics 365 Field Service](/dynamics365/field-service/overview), and [Dynamics 365 Project Service Automation](/dynamics365/project-operations/psa/overview) from Gmail accounts using OAuth 2.0 as the authorization mechanism.
 
 > [!NOTE]
 > The Gmail OAuth email server profile works for up to 100 users. Create multiple OAuth profiles (steps 1-4) if you want to associate the same profile with multiple users.
@@ -29,7 +29,7 @@ Follow the steps in this article to set up server-side synchronization to send a
 
 We're in the process of rolling out this feature. To determine if your environment can connect Gmail accounts using OAuth 2.0, do the following:
 
-1. In the Power Platform admin center, select an environment. 
+1.  In the  [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment. 
 
 2. Select **Settings** > **Email** > **Mailboxes**. To open settings for apps that use [Unified Interface](about-unified-interface.md), look in the upper-right corner and select the **Gear** icon (![Gear icon.](media/selection-rule-gear-button.png)). Then select **Advanced settings**. 
 
@@ -98,28 +98,38 @@ Follow the steps for **Create a project** in: [Create, shut down, and restore pr
 
 ## Step 4: Create an email server profile
 
-> [!NOTE]
-> These steps should be done by the system administrator.
+1. In the  [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment. 
 
-Create a new IMAP or POP3 email server profile.
+2. On the command bar, select **Settings** > **Email** > **Server profiles**.  
+    
+   > [!div class="mx-imgBorder"] 
+   > ![Email server profile setting](media/server-profile-settings.png "Email server profile setting")
 
-- To create an IMAP email server profile, follow the steps in: [Connect to IMAP or SMTP servers](connect-to-imap-servers.md)
-  
-- To create a POP3 email server profile, follow the steps in: [Connect to POP3 or SMTP servers](connect-to-pop3-or-smtp-servers.md)
+3. On the command bar, select **New server profile**.
 
-Use the following settings:
+   > [!div class="mx-imgBorder"] 
+   > ![Create new server profile](media/new-server-profile.png "Create a new server profile")
 
-|Setting  |Use  |
-|---------|---------|
-| IMAP incoming server location    | imap.gmail.com        |
-| POP3 incoming server location    | pop.gmail.com        |
-| IMAP and POP3 outgoing server location | smtp.gmail.com |
-| Authenticate using  |  Gmail OAuth  |
-| Client ID  | From the previous step    |
-| Client secret | From the previous step  |
+4. For **Email Server Type**, select **Gmail** and then specify a meaningful **Name** for the profile.
 
-> [!div class="mx-imgBorder"] 
-> ![IMAP server profile.](media/gmail-oauth-imap-server-profile.png "IMAP server profile")
+   > [!div class="mx-imgBorder"] 
+   > ![Create new server profile for Gmail](media/gmail-profile.png "Create a new server profile for Gmail")
+
+5. For **Set as default profile for new mailboxes** choose whether you want this server profile as the default profile for new mailboxes.
+
+6. For **Authentication Type** select **Gmail OAuth**.
+
+7. To get the **Client id** and **Client Secret** information see the previous step.
+
+8. The **Locations and ports** fields are automatically populated.
+   
+   > [!div class="mx-imgBorder"] 
+   > ![Create new server profile for Gmail using Oauth](media/gmail-oauth-profile.png "Create a new server profile for Gmail using Oauth")
+
+9. Expand **Advanced** and then use the tooltips to choose your email processing options.
+
+10. When you're done select **Save**.
+
 
 ## Step 5: Configure the mailbox
 

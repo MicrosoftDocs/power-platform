@@ -4,7 +4,7 @@ description: Connect to Exchange Online
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/12/2021
+ms.date: 07/12/2021
 author: revachauhan
 ms.subservice: admin
 ms.author: rechauha
@@ -19,13 +19,9 @@ search.app:
 ---
 # Connect to Exchange Online
 
-<!-- legacy procedure -->
-
-With both customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), and [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] hosted as online services, connecting the two is a simpler, more straightforward configuration.  
+With both customer engagement apps (such as [Dynamics 365 Sales](/dynamics365/sales-professional/help-hub), [Dynamics 365 Customer Service](/dynamics365/customer-service/help-hub), [Dynamics 365 Marketing](/dynamics365/marketing/help-hub), [Dynamics 365 Field Service](/dynamics365/field-service/overview), and [Dynamics 365 Project Service Automation](/dynamics365/project-operations/psa/overview), and [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] hosted as online services, connecting the two is a simpler, more straightforward configuration.  
   
-> [!TIP]
-> ![Video symbol](../admin/media/video-thumbnail-4.png "Video symbol") Check out the following video: [Connect to Exchange Online using server-side sync](https://go.microsoft.com/fwlink/p/?linkid=836831).  
-> 
+  
 > [!IMPORTANT]
 > [!INCLUDE[cc_feature_requires_office_365](../includes/cc-feature-requires-office-365.md)]  
 
@@ -41,10 +37,45 @@ With both customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Se
 > [!TIP]
 >  To make sure you've got a good connection to [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)], run the [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/). For information on what tests to run, see [Test mail flow with the Remote Connectivity Analyzer](https://technet.microsoft.com/library/dn305950\(v=exchg.150\).aspx).  
 
+
+## Create an email server profile for Exchange Online
+
+1. In the  [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment. 
+
+2. On the command bar, select **Settings** > **Email** > **Server profiles**.  
+    
+   > [!div class="mx-imgBorder"] 
+   > ![Email server profile setting](media/server-profile-settings.png "Email server profile setting")
+
+3. On the command bar, select **New server profile**.
+
+   > [!div class="mx-imgBorder"] 
+   > ![Create new server profile](media/new-server-profile.png "Create a new server profile")
+
+4. For **Email Server Type**, select **Exchange Online** and then specify a meaningful **Name** for the profile.
+
+   > [!div class="mx-imgBorder"] 
+   > ![Select Exchange Online server profile](media/exchange-online-server-profile.png "Select Exchange Online server profile]")
+
+5. For **Set as default profile for new mailboxes** choose whether you want this server profile as the default profile for new mailboxes.
+
+6. For **Authentication Type** choose one of the following:
+
+    - **S2S auth (Same Tenant)**: This option should be used when Exchange resides on the same tenant as Dynamics 365. For more information, see [Build web applications using server-to-server (S2S) authentication](/powerapps/developer/data-platform/build-web-applications-server-server-s2s-authentication).
+    
+    - **Oauth (Cross Tenant)**: This option should be used when Exchange resides in a different tenant than Dynamics 365. To get the information for this option, follow the steps in this topic: [Exchange Online cross tenant authentication](connect-exchange-online-server-profile-oauth.md). **Note**: The **Locations and ports** fields are automatically populated.
+    
+        > [!div class="mx-imgBorder"]
+        > ![Email server profile form](media/server-profile-form.png "Email server profile form") 
+        
+7. Expand the **Advanced** section and then use the tooltips to choose your email processing options. 
+
+8. When you're done select **Save**.
+
 ## Verify you have the profile: Microsoft Exchange Online  
  If you have an [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] subscription in the same tenant as your subscription, customer engagement apps create a default profile for the email connection: **Microsoft Exchange Online**. To verify this profile:  
   
-1. In the Microsoft Power Platform admin center, select an environment. 
+1. In the Microsoft [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment. 
 
 2. Select **Settings** > **Email** > **Server profiles**.  
   
@@ -55,7 +86,7 @@ With both customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Se
 ## Configure default email processing and synchronization  
  Set server-side synchronization to be the default configuration method for newly created users.  
   
-1. In the Power Platform admin center, select an environment. 
+1. In the  [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment. 
 
 2. Select **Settings** > **Email** > **Email settings**.  
   

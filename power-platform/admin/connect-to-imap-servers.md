@@ -1,6 +1,6 @@
 ---
-title: "Connect to IMAP or SMTP servers  | MicrosoftDocs"
-description: Connect to IMAP or SMTP servers 
+title: "Connect to IMAP or POP servers  | MicrosoftDocs"
+description: Connect to IMAP, POP, or SMTP servers 
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
@@ -17,11 +17,9 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Connect to IMAP or SMTP servers
+# Connect to IMAP, POP, or SMTP servers
 
-<!-- legacy procedure -->
-
-Follow these steps to connect customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), with IMAP email servers such as used for Gmail and Yahoo! Mail.  
+Follow these steps to connect customer engagement apps (such as [Dynamics 365 Sales](/dynamics365/sales-professional/help-hub), [Dynamics 365 Customer Service](/dynamics365/customer-service/help-hub), [Dynamics 365 Marketing](/dynamics365/marketing/help-hub), [Dynamics 365 Field Service](/dynamics365/field-service/overview), and [Dynamics 365 Project Service Automation](/dynamics365/project-operations/psa/overview), with IMAP or POP email servers such as used for Gmail and Yahoo! Mail.  
 
 > [!NOTE]
 > - Only emails in the Inbox folder are synchronized.
@@ -32,38 +30,36 @@ Follow these steps to connect customer engagement apps (Dynamics 365 Sales, Dyna
 
 ## Create an email server profile  
 
-1. In the Microsoft Power Platform admin center, select an environment. 
+1. In the  [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment. 
 
-2. Select **Settings** > **Email** > **Server profiles**.  
+2. On the command bar select **Settings** > **Email** > **Server profiles**.  
+    
+   > [!div class="mx-imgBorder"] 
+   > ![Email server profile setting](media/server-profile-settings.png "Email server profile setting")
 
-3. Choose **New** > **IMAP/SMTP Server**.  
+3. On the command bar, select **New server profile**.
 
-4. **For an Exchange email server profile, specify the following details:**  
+   > [!div class="mx-imgBorder"] 
+   > ![Create new server profile](media/new-server-profile.png "Create a new server profile")
 
+4. For **Email Server Type**, select **Other(IMAP/POP,SMTP)** and then specify a meaningful **Name** for the profile.
 
-   |  Fields  |     Description      |
-   |-----------|----------|   
-   |   **General**      |     |   
-   | Name     |  Specify a meaningful name for the profile.   |   
-   |   Description   |  Type a short description about the objective of the email server profile.       |
-   | Incoming Server Location and Outgoing Server Location  |  Enter the **Incoming Server Location** and **Outgoing Server Location**<br /><br /> For example, Incoming: outlook.office365.com and Outgoing: smtp.office365.com  |
-   |  **Credentials**  |    |
-   |  Authenticate Using  | Select a method to authenticate while connecting to the specified email server.<br /><br /> <ul><li> **Credentials Specified by a User or Queue**. If you select this option, the credentials specified in the mailbox record of a user or queue are used for sending or receiving email for the respective user or queue. **Note:**      To ensure the credentials are secured, SQL encryption is used to encrypt the credentials stored in the mailbox.</li><br /><li> **Credentials Specified in Email Server Profile**. If you select this option, the credentials specified in the email server profile are used for sending or receiving email for the mailboxes of all users and queues associated with this profile. The credentials must have impersonation or delegation permissions on the mailboxes associated with profile. This option requires some configuration on the email server, for example, configuring impersonation rights on [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] for the mailboxes associated with the profile. **Note:**      To ensure the credentials are secured, SQL encryption is used to encrypt the credentials stored in the email server profile if you're processing email by using server-side synchronization.</li><br /><li> **Windows Integrated Authentication**. This option applies only to [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] and SMTP email server types. If you select this option, the credentials with which the Asynchronous Service has been configured will be used.</li><br /><li> **Without Credentials (Anonymous)**. Not a valid setting. </li></ul>|
-   | User Name   | Type the user name used to connect to the email server for sending or receiving email for the mailboxes of all users and queues associated with this profile. This field is enabled and valid only if **Authenticate Using** is set to **Credentials Specified in Email Server Profile**. The user name that you specify must have permission to send and receive email from the mailboxes of users and queues associated with this profile. **Note:**  If you're using HTTP for customer engagement apps, the **User Name** and **Password** fields will be disabled. To enable the option, change the value of the deployment property AllowCredentialsEntryViaNonSecureChannels to 1.  |
-   |  Password   |  Specify the password of the user that will be used together with the user name to connect to the email server for sending or receiving email for the mailboxes of users and queues associated with this profile. The password is stored securely. **Note:**  If you're using HTTP for customer engagement apps, the **User Name** and **Password** fields will be disabled. To enable the option, change the value of the deployment property AllowCredentialsEntryViaNonSecureChannels to 1.  | Use same settings for Outgoing |  If you want to use the same credential settings for the incoming and outgoing connections, choose **Yes**.  |
-   | **Advanced**    |  |
-   |  Incoming Port  | This field shows the port on the email server for accessing the incoming email. This field is automatically populated when you save the record.   |
-   |  Outgoing Port  | This field shows the port on the email server for accessing the outgoing email. This field is automatically populated when you save the record.   |
-   | Use SSL for Incoming Connection    |  Choose **Yes** if the email channel is on a secure channel and [!INCLUDE[pn_ssl_short](../includes/pn-ssl-short.md)] must be used for receiving email.   |
-   | Use SSL for Outgoing Connection |  Choose **Yes** if the email channel is on a secure channel and [!INCLUDE[pn_ssl_short](../includes/pn-ssl-short.md)] must be used for sending email.  |
-   | Incoming Authentication Protocol and Outgoing Authentication Protocol |  Select a protocol that will be used for authentication for incoming and outgoing email.  |
-   |   **Additional Settings**  |  |
-   |  Process Email From |  Select a date and time. Email received after the date and time will be processed by server-side synchronization for all mailboxes associated with this profile. If you set a value less than the current date, the change will be applied to all newly associated mailboxes and their earlier processed emails will be pulled.  |
-   | Minimum Polling Intervals in Minutes  |  Type the minimum polling interval, in minutes, for mailboxes that are associated with this email server profile. The polling interval determines how often server-side synchronization polls your mailboxes for new email messages.  |
-   |  Maximum Concurrent Connections   | Type the maximum number of simultaneous connections that can be made to the corresponding email server per mailbox. Increase the value to allow more parallel calls to [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] to improve performance or reduce the value if there are errors on [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] due to large number of calls from customer engagement apps. The default value of this field is 10. The maximum number is considered per mailbox or per email server profile depending on whether the credentials are specified in a mailbox or email server profile.   |
+   > [!div class="mx-imgBorder"] 
+   > ![Choose Other profile](media/pop-smtp-profile.png "Choose Other profile")
 
+5. For **Set as default profile for new mailboxes** choose whether you want this server profile as the default profile for new mailboxes. 
 
-5. Choose **Save**.  
+6. For **Authentication Type**, select **Credential Specified by user or queue**. When you select this option, the credentials specified in the mailbox record of a user or queue are used for sending or receiving email for the respective user or queue. Note: To ensure the credentials are secured, SQL encryption is used to encrypt the credentials stored in the mailbox.
+
+7. Expand the **Locations and ports** and enter the following:
+    <ol> 
+      <li> Incoming communication protocol: Enter the protocol that will be used for authentication for incoming email.</li>
+      <li> Incoming and Outgoing location: Enter the incoming and outgoing email location. </li>
+      <li> Incoming and Outgoing port: Enter the incoming and outgoing port for the email server. </li>
+    </ol>  
+
+8. Expand the **Advanced** section and use the tooltips to choose your email processing options. 
+9. When you're done, select **Save**.
 
 <a name="BKMK_ConfigureDefault"></a>   
 
