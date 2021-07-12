@@ -38,7 +38,7 @@ We're in the process of rolling out this feature. To determine if your environme
    > [!div class="mx-imgBorder"] 
    > ![Determine feature availability.](media/gmail-how-to-know.png "Determine feature availability")
 
-## Step 1: Enable IMAP or POP in Gmail
+## Enable IMAP or POP in Gmail
 
 > [!NOTE]
 > These steps should be done by the system administrator.
@@ -47,7 +47,7 @@ For IMAP, follow the steps in: [Check Gmail through other email platforms](https
 
 For POP, follow the steps in: [Read Gmail messages on other email clients using POP](https://support.google.com/mail/answer/7104828)
 
-## Step 2: Create a project
+## Create a project
 
 > [!NOTE]
 > These steps should be done by the system administrator.
@@ -56,7 +56,7 @@ Using a Google account (could be the same one you’ll use to send and retrieve 
 
 Follow the steps for **Create a project** in: [Create, shut down, and restore projects](https://support.google.com/googleapi/answer/6251787)
 
-## Step 3: Configure OAuth consent 
+## Configure OAuth consent 
 
 > [!NOTE]
 > These steps should be done by the system administrator.
@@ -96,7 +96,7 @@ Follow the steps for **Create a project** in: [Create, shut down, and restore pr
 
 8. Select **Create**. In the screen that appears, make note of the client ID and client secret. You'll use this data in the next step.
 
-## Step 4: Create an email server profile
+## Create an email server profile
 
 1. In the  [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment. 
 
@@ -131,7 +131,7 @@ Follow the steps for **Create a project** in: [Create, shut down, and restore pr
 10. When you're done select **Save**.
 
 
-## Step 5: Configure the mailbox
+## Configure the mailbox
 
 > [!NOTE]
 > These steps should be done by the mailbox user.
@@ -161,14 +161,14 @@ Follow the steps for **Create a project** in: [Create, shut down, and restore pr
 
 8. Proceed through the Gmail sign-in and authorization pages.
 
-## Step 6: Add test users
+## Add test users
 
 In the Google Cloud Platform (Developer Console), add users in the Test Users section when publishing the app. See [Google Cloud Platform Console Help](https://support.google.com/cloud/answer/7454865).
 
 > [!div class="mx-imgBorder"] 
 > ![Add test users.](media/gmail-oauth-add-users.png "Add test users")
 
-## Step 7: Test and enable
+## Test and enable
 
 > [!NOTE]
 > These steps should be done by the mailbox user.
