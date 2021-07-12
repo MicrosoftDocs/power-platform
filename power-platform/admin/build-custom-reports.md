@@ -97,7 +97,7 @@ The data export file includes:
 - A full inventory for all apps, connectors, and associated metadata that exist in the tenant.
 - Usage data comprising data starting from the time that the export starts.
 
-After the first time you generate a data export, Power Automate generates incremental daily updates. Each daily update includes details about all new and existing apps, including connector information. The data export contains the Azure Active Directory (Azure AD) *principal object id (userid)*. Optionally, you can further use Azure AD to retrieve actual usernames and business units, such as marketing, sales, or finance.
+After the first time you generate a data export, Power Automate generates incremental daily updates. Each daily update includes details about all new and existing apps, including connector information. The data export contains the Azure Active Directory (Azure AD) *principal object ID (userid)*. Optionally, you can further use Azure AD to retrieve actual usernames and business units, such as marketing, sales, or finance.
 
 The main root folder for Power Apps has the following folder structure:
 
