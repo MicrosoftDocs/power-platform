@@ -30,7 +30,7 @@ In [!INCLUDE[pn_crm_2015_outlook](../includes/pn-crm-2015-outlook.md)] or later,
 
 ## View the synchronized fields  
 
-1. In the web app, in the upper-right corner of the screen, click the **Settings** button ![User profile Settings button](media/privileges-user.png "User profile Settings button") > **Options**.  
+1. In the web app, in the upper-right corner of the screen, click the **Settings** button ![User profile Settings button.](media/privileges-user.png "User profile Settings button") > **Options**.  
 
 2. In the **Set Personal Options** dialog box, choose the **Synchronization** tab.    
 
@@ -38,7 +38,7 @@ In [!INCLUDE[pn_crm_2015_outlook](../includes/pn-crm-2015-outlook.md)] or later,
 
 4. In the **Synchronization Settings for [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] or [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)]** dialog box, click the **Synchronization Fields** tab.  
 
-   ![Field-level Sync tab](media/field-level-sync-tab.png "Field-level Sync tab")  
+   ![Field-level Sync tab.](media/field-level-sync-tab.png "Field-level Sync tab")  
 
 5. In the **Entity Type** list, select the record type you want to view.  
 
@@ -47,10 +47,10 @@ In [!INCLUDE[pn_crm_2015_outlook](../includes/pn-crm-2015-outlook.md)] or later,
 
    |This indicator  |Shows that the fields   |
    |----|---|
-      | ![One-way sync arrow (right)](media/one-way-sync-arrow-right.png "One-way sync arrow (right)") | Are synced one way from [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] to customer engagement apps |
-   |  ![One-way sync arrow (left)](media/one-way-sync-arrow-left.png "One-way sync arrow (left)")   | Are synced one way from customer engagement apps to [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] |
-   |            ![Two-way sync arrow](media/two-way-sync-arrow.png "Two-way sync arrow")            |                                                                  Are synced two way                                                                  |
-   |       ![No synchronization arrow](media/no-sync-arrow.png "No synchronization arrow")        |                                                                    Aren't synced                                                                     |
+      | ![One-way sync arrow (right).](media/one-way-sync-arrow-right.png "One-way sync arrow (right)") | Are synced one way from [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] to customer engagement apps |
+   |  ![One-way sync arrow (left).](media/one-way-sync-arrow-left.png "One-way sync arrow (left)")   | Are synced one way from customer engagement apps to [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] |
+   |            ![Two-way sync arrow.](media/two-way-sync-arrow.png "Two-way sync arrow")            |                                                                  Are synced two way                                                                  |
+   |       ![No synchronization arrow.](media/no-sync-arrow.png "No synchronization arrow")        |                                                                    Aren't synced                                                                     |
 
    > [!NOTE]
    >  Field synchronization direction can be impacted by security settings configured by your system administrator. For example, if you don't have read privileges for a field, it won't be synchronized in [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] even if the field is configured for two-way synchronization. To determine whether you have read privileges for a field, click the **View in Dynamics 365 apps** button to open the record. If you see the **Lock** icon, you can't access the field.  

@@ -26,7 +26,7 @@ Large organizations that synchronize their data with external data sources can n
   
 2. Select an entity, and under **Data Services**, select the **Change Tracking** check box.  
   
-   ![Select Change Tracking for an entity](../admin/media/change-tracking.PNG "Select Change Tracking for an entity")  
+   ![Select Change Tracking for an entity.](../admin/media/change-tracking.PNG "Select Change Tracking for an entity")  
   
 
 

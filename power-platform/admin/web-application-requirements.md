@@ -69,7 +69,7 @@ Internet Explorer support ends Aug 17th, 2021 and Microsoft Edge Legacy support 
 
 Starting with 2021 Wave 2, users on older browser versions will see the following warning message.  This will be updated with each release to ensure user performance and allow the product to take advantage of newest browser capabilities for a better experience. 
 
-:::image type="content" source="media/run-modern-browser-error.png" alt-text="Run modern browser error message":::
+:::image type="content" source="media/run-modern-browser-error.png" alt-text="Run modern browser error message.":::
 
 You can avoid this by moving to a newer version browser: 
 

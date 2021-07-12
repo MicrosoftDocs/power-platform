@@ -27,7 +27,7 @@ In this whitepaper, we will cover key concepts, platform architecture, and decis
 
 The Power Apps platform is part of the larger Microsoft Power Platform that also includes Power BI and Power Automate, leveraging the common infrastructure of the Microsoft Dataverse and Data Connectors.<!-- Edit note: Style is to avoid "the Microsoft Power Platform." A possible rewrite would be "part of Microsoft Power Platform, which also includes". --> These capabilities are built on and leverage Microsoft Azure cloud services.  Applications built on the Power Apps platform can also include Azure cloud services to scale from individual productivity to enterprise mission critical line-of-business applications.
 
-![Microsoft Power Platform](media/ms-power-platform.png "Microsoft Power Platform")
+![Microsoft Power Platform.](media/ms-power-platform.png "Microsoft Power Platform")
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

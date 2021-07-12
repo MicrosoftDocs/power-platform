@@ -25,7 +25,7 @@ If you use a POP3 email server, the data that is synchronized includes email onl
   
 Using server-side synchronization makes messaging data available to a web browser, tablet, or smartphone that's running customer engagement apps. More information: [Server-side synchronization of email, appointments, contacts, and tasks](../admin/set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks.md)
   
-![Diagram showing email, appointments, contacts, and tasks being synced between a Dynamics CRM org and Exchange Server, and various devices sharing this same data in the cloud](../admin/media/server-side-sync-diagram.png "Server-side synchronization")  
+![Diagram showing email, appointments, contacts, and tasks being synced between a Dynamics CRM org and Exchange Server, and various devices sharing this same data in the cloud.](../admin/media/server-side-sync-diagram.png "Server-side synchronization")  
   
 > [!NOTE]
 > A user can only map to a single [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] or POP3 mailbox. Similarly, an [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] or POP3 mailbox can only be mapped to a single user. When customer engagement apps detect that an [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] or POP3 mailbox has already been mapped to a user, a dialog box is displayed to present a choice to the user whether to map the user to the [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] mailbox. When the user selects **Yes**, it breaks the previous user-to-[!INCLUDE[pn_Exchange](../includes/pn-exchange.md)]-mailbox mapping and, subsequently, the synchronization that would occur between the user and the [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] mailbox.
@@ -64,7 +64,7 @@ If the mailbox is enabled for appointments, contacts, and tasks and incoming ema
 
  Some features offered by server-side synchronization include the following:  
   
-- **Sent Items folder**: If your server version is 9.1.0000.16819 or later, email messages sent from Dynamics 365 apps by using a server-side synchronization&ndash;enabled Exchange mailbox will be visible in the **Sent Items** folder in the Exchange sender's mailbox. To determine your version, sign in, and in the upper-right corner of the screen, select **Settings** ![User profile Settings button](media/user-profile-settings-button.png) > **About**.  
+- **Sent Items folder**: If your server version is 9.1.0000.16819 or later, email messages sent from Dynamics 365 apps by using a server-side synchronization&ndash;enabled Exchange mailbox will be visible in the **Sent Items** folder in the Exchange sender's mailbox. To determine your version, sign in, and in the upper-right corner of the screen, select **Settings** ![User profile Settings button.](media/user-profile-settings-button.png) > **About**.  
 
   **Note**: This functionality can be disabled by toggling the SSSSaveOutgoingEmailToExchangeSentFolder [OrgDbOrgSetting](https://support.microsoft.com/en-us/topic/orgdborgsettings-tool-for-microsoft-dynamics-crm-20a10f46-2a24-a156-7144-365d49b842ba) to false. 
 

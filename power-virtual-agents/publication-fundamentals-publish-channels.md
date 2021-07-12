@@ -47,15 +47,15 @@ After the first publish, you can do subsequent publishes whenever you would like
 
 2. Select **Publish** to make the latest bot content available to your customers.
 
-    ![Publish latest bot content](media/channel-publish-latest-content.png)
+    ![Publish latest bot content.](media/channel-publish-latest-content.png)
 
 The publishing process will check for errors in the latest bot content.
 
-![Validate latest bot content for publish](media/channel-publish-validation.png)
+![Validate latest bot content for publish.](media/channel-publish-validation.png)
 
 Publication should take less than a few minutes and, when successful, you can view the bot in action and share it with your team by selecting the **demo website** link. This is useful to gather feedback from stakeholders involved in the bot. The link will open a new tab and display a prebuilt demo website where you and your team can interact with the bot.
 
-![Go to demo website](media/channel-go-to-demo-website.png)
+![Go to demo website.](media/channel-go-to-demo-website.png)
 
 Go to the [Configure the demo website and add the bot to your live website](publication-connect-bot-to-web-channels.md) topic for details on updating the welcome message and help text on the demo website.
 
@@ -68,7 +68,7 @@ Go to the [Configure the demo website and add the bot to your live website](publ
 
 After publishing your bot at least once, you can add channels to make the bot reachable by your customers. You can see what channels we currently support by selecting **Manage** and going to the **Channels** tab in the side navigation pane.
 
-![Channel settings](media/channel-channels-menu.png)
+![Channel settings.](media/channel-channels-menu.png)
 
 Each channel requires different steps and configurations, which can be found in the following topics:
 

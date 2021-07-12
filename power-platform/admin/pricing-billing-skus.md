@@ -59,7 +59,7 @@ Here is a brief overview of capabilities included with Power Apps for Microsoft 
 As Dataverse continues to grow, more Microsoft applications like Microsoft Project are using Dataverse. To enable these Microsoft applications, limited Dataverse functionality is added to select Microsoft 365 licenses. This is achieved by adding a new service plan named "Dataverse" to the Microsoft 365 licenses. To see the new service plan in the Microsoft 365 admin center, select a user, select the **Licenses and Apps** tab, and then scroll down and expand the **Apps** section. 
 
 > [!div class="mx-imgBorder"] 
-> ![Dataverse license](./media/common-data-service-license.png "Dataverse license")
+> ![Dataverse license.](./media/common-data-service-license.png "Dataverse license")
 
 ### Capabilities included 
 

@@ -40,12 +40,12 @@ There are three steps to follow to use a per app plan:
 You can purchase per app plans from your sales channel or in the [Microsoft 365 admin center](https://admin.microsoft.com).
 
 > [!div class="mx-imgBorder"] 
-> ![Power Apps per app plan](media/per-app-plan-tile.png "Power Apps per app plan")
+> ![Power Apps per app plan.](media/per-app-plan-tile.png "Power Apps per app plan")
 
 You can see your purchased plan in the Microsoft 365 admin center (**Billing** > **Your products**).
 
 > [!div class="mx-imgBorder"] 
-> ![Power Apps per app plan purchased](media/per-app-plan-purchased.png "Power Apps per app plan purchased")
+> ![Power Apps per app plan purchased.](media/per-app-plan-purchased.png "Power Apps per app plan purchased")
 
 Once you've made your purchase, there are no further actions needed in the Microsoft 365 admin center such as license assignment since this license is not assigned to users but rather to environments.
 
@@ -55,7 +55,7 @@ After purchase, you allocate per app plans to environments. If you have multiple
 
 In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select **Resources** > **Capacity** in the left-side navigation pane. If your organization has purchased add-ons that includes per app plans, an **Add-ons** tile appears on the **Capacity** screen displaying summary information about the capacity add-ons that your organization has.
 
-![Example of purchased capacity in the admin center](media/manage-add-on.png "Example of purchased capacity in the admin center")
+![Example of purchased capacity in the admin center.](media/manage-add-on.png "Example of purchased capacity in the admin center")
 
 To allocate add-ons, select **Manage**. For detailed information, see [Allocate or change capacity in an environment](capacity-add-on.md#allocate-or-change-capacity-in-an-environment).
 
@@ -76,11 +76,11 @@ Follow these steps to turn off assigning per app plans for users when an app is 
 
 2. Select **...** > **Settings**.
 
-   ![App settings](media/app-settings2.png "App settings")
+   ![App settings.](media/app-settings2.png "App settings")
 
 3. Under **Pass assignment**, change the **Auto assign per app passes** toggle to **Yes**. The **Auto assign per app passes** toggle appears in all app setting.
 
-   ![Pass assignment](media/pass-assignment2.png "Pass assignment")
+   ![Pass assignment.](media/pass-assignment2.png "Pass assignment")
 
 > [!IMPORTANT]
 > If per app plans are not allocated to the environment the app is installed in, the toggle is disabled. 
@@ -94,7 +94,7 @@ Check the **App passes** capacity for the environment with the app you're sharin
 Go to **Resources** > **Capacity** > **Add-ons** tab.
 
 > [!div class="mx-imgBorder"] 
-> ![Add-on capacity assignment](media/add-on-assignment.png "Add-on capacity assignment")
+> ![Add-on capacity assignment.](media/add-on-assignment.png "Add-on capacity assignment")
 
 ## Step four: Share the app
 
@@ -114,7 +114,7 @@ To share canvas apps, see [Share a canvas app in Power Apps](/powerapps/maker/ca
 
 The per app license gives a user access to two Power Apps and one portal for a single environment. See the table below for an example of the consumption of licenses by the number of applications and the environments used. 
 
-:::image type="content" source="media/per-app-license-consumption.png" alt-text="Per app license consumption example":::
+:::image type="content" source="media/per-app-license-consumption.png" alt-text="Per app license consumption example.":::
 
 > [!NOTE]
 > Sharing an app with a user consumes the per app capacity. 

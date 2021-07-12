@@ -43,7 +43,7 @@ Next, [register a skill in Power Virtual Agents](configuration-add-skills.md).
 
 1. Select the plus (**+**) icon underneath an existing node to add a new node. 
 
-    ![Screenshot of adding a node](media/handoff-add-node.png)
+    ![Screenshot of adding a node.](media/handoff-add-node.png)
 
 1. In the node selection window, select **Call an action**, and then select the skill you want to add. 
 

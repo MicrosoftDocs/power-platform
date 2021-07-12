@@ -99,7 +99,7 @@ With version 9.0., you can connect your customer engagement apps (such as [Dynam
 ### Troubleshooting the Exchange Server (Hybrid) profile connection  
  If you've run **Test Connection** and have issues with the Exchange Server (Hybrid) profile connection, use the information in the **Test Connection** dialog box to diagnose and fix the connection.  
 
- ![Review the error messages](../admin/media/server-side-sync-exchange-hybrid-troubleshoot.png "Review the error messages")  
+ ![Review the error messages.](../admin/media/server-side-sync-exchange-hybrid-troubleshoot.png "Review the error messages")  
 
  In this case, there's a problem with Auto Discover. The admin should review the user name and password used for **Authentication Using Impersonation** for the Exchange Server (Hybrid) profile.  
 
@@ -143,7 +143,7 @@ With version 9.0., you can connect your customer engagement apps (such as [Dynam
 
 4. Select all the mailboxes that you want to associate with the [!INCLUDE[pn_Exchange_Server_short](../includes/pn-exchange-server-short.md)] profile you created, select **Apply Default Email Settings**, verify the settings, and then select **OK**.  
 
-   ![Apply default email settings](../admin/media/apply-default-email-settings.png "Apply default email settings")  
+   ![Apply default email settings.](../admin/media/apply-default-email-settings.png "Apply default email settings")  
 
     By default, the mailbox configuration is tested and the mailboxes are enabled when you select **OK**.  
 

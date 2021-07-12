@@ -65,19 +65,19 @@ After this policy is saved, any Power Apps or Power Automate maker who is part o
 1. In Power Platform admin center, select **Data policies** > **New policy**.
 
    > [!div class="mx-imgBorder"] 
-   > ![New data policy](media/dlp-new-policy.png "New data policy")
+   > ![New data policy.](media/dlp-new-policy.png "New data policy")
 
    If no policies exist in the tenant, you'll see the following page.
 
    > [!div class="mx-imgBorder"] 
-   > ![No policies view](media/dlp-view-no-policies.png "No policies view")
+   > ![No policies view.](media/dlp-view-no-policies.png "No policies view")
 
 2. Enter a policy name, and then select **Next**.
 
 3. Review the various attributes and settings you can make on the **Assign Connectors** page. 
 
    > [!div class="mx-imgBorder"] 
-   > ![Assign connectors](media/dlp-assign-connectors.png "Assign connectors") 
+   > ![Assign connectors.](media/dlp-assign-connectors.png "Assign connectors") 
 
    **Attributes** <br /><br />
 
@@ -150,7 +150,7 @@ After this policy is saved, any Power Apps or Power Automate maker who is part o
    You can take the following actions:
 
    > [!div class="mx-imgBorder"] 
-   > ![Assign connectors actions](media/dlp-assign-connectors-actions.png "Assign connectors actions") 
+   > ![Assign connectors actions.](media/dlp-assign-connectors-actions.png "Assign connectors actions") 
 
    |         |   |Description  |
    |---------|---------|---------|
@@ -163,15 +163,15 @@ After this policy is saved, any Power Apps or Power Automate maker who is part o
    |**7**  |   |  Action buttons to assign individual connectors across connector classification groups        |
 
 
-4. Select one or more connectors. For this walkthrough, select the SalesForce and SharePoint connectors, and then select **Move to Business** from the top menu bar. You can also use the ellipsis (![ellipses](./media/vertical-ellipses.png)) to the right of the connector name. 
+4. Select one or more connectors. For this walkthrough, select the SalesForce and SharePoint connectors, and then select **Move to Business** from the top menu bar. You can also use the ellipsis (![ellipses.](./media/vertical-ellipses.png)) to the right of the connector name. 
 
    > [!div class="mx-imgBorder"] 
-   > ![Assign multiple connectors](media/dlp-assign-connectors-multiple.png "Assign multiple connectors")
+   > ![Assign multiple connectors.](media/dlp-assign-connectors-multiple.png "Assign multiple connectors")
 
    The connectors will appear in the **Business** data group.
 
    > [!div class="mx-imgBorder"] 
-   > ![Business data group](media/dlp-business-data-group.png "Business data group")
+   > ![Business data group.](media/dlp-business-data-group.png "Business data group")
 
    Connectors can reside in only one data group at a time. By moving the SharePoint and Salesforce connectors to the **Business** data group, you're preventing users from creating flows and apps that combine these two connectors with any of the connectors in the **Non-Business** or **Blocked** groups.
 
@@ -182,21 +182,21 @@ After this policy is saved, any Power Apps or Power Automate maker who is part o
    In the upper-right corner, select **Set default group**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Set default group](media/dlp-edit-default-group.png "Set default group")
+   > ![Set default group.](media/dlp-edit-default-group.png "Set default group")
 
    After you've completed all the connector assignments across the **Business**/**Non-Business**/**Blocked** groups and set the default group for new connectors, select **Next**.
 
 6. Choose the scope of the DLP policy. This step isn't available for environment-level policies, because they're always meant for a single environment.
 
    > [!div class="mx-imgBorder"] 
-   > ![Define scope](media/dlp-define-scope.png "Define scope")
+   > ![Define scope.](media/dlp-define-scope.png "Define scope")
 
    For the purpose of this walkthrough, you will exclude test environments from this policy. Select **Exclude certain environments**, and on the **Add Environments** page, select **Next**.
   
 7. Review the various attributes and settings on the **Add Environments** page. For tenant-level policies, this list will show the tenant-level admin all the environments in the tenant. For environment-level policies, this list will only show the subset of environments in the tenant that are managed by the user who has signed in as an environment admin. 
 
    > [!div class="mx-imgBorder"] 
-   > ![Add environments](media/dlp-add-environments2.png "Add environments")
+   > ![Add environments.](media/dlp-add-environments2.png "Add environments")
 
    **Attributes** <br /><br />
 
@@ -264,7 +264,7 @@ After this policy is saved, any Power Apps or Power Automate maker who is part o
 8. Select one or more environments. You can use the search bar to quickly find the environments of interest. For this walkthrough, we'll search for test environments - type sandbox. After we select the sandbox environments, we assign them to the policy scope by using **Add to policy** from the top menu bar. 
 
    > [!div class="mx-imgBorder"] 
-   > ![Assign policy](media/dlp-assign-policy-environments.png "Assign policy")
+   > ![Assign policy.](media/dlp-assign-policy-environments.png "Assign policy")
 
    Because the policy scope was initially selected as **Exclude certain environments**, these test environments will now be excluded from the policy scope and the DLP policy settings will be applied to all the remaining (**Available**) environments. For environment-level policy, you can only select a single environment from the list of available environments.
 
@@ -273,7 +273,7 @@ After this policy is saved, any Power Apps or Power Automate maker who is part o
 9. Review the policy settings, and then select **Create Policy**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Review new policy](media/dlp-new-policy-review.png "Review new policy")
+   > ![Review new policy.](media/dlp-new-policy-review.png "Review new policy")
 
 The policy is created and appears in the list of DLP policies. As a result of this policy, SharePoint and Salesforce apps can share data in non-test environments&mdash;such as production environments&mdash;because they're both part of the same **Business** data group. However, any connector that resides in the **Non-Business** data group&mdash;such as Outlook.com&mdash;won't share data with apps and flows by using SharePoint or Salesforce connectors. Facebook and Twitter connectors are altogether blocked from being used in any app or flow in non-test environments such as production or default environments. 
 

@@ -20,7 +20,7 @@ search.app:
 
 To holistically digitize a large organization like the Digital Transformation Platform (DTP) at Microsoft, we need to automate all four aspects of the digital feedback loop.
 
-![Digital feedback loop](media/successhub-digital-feedback-loop.png "Digital feedback loop")
+![Digital feedback loop.](media/successhub-digital-feedback-loop.png "Digital feedback loop")
 
 - **Transforming** products to enhance our offerings&mdash;for example, publishing release notes about upcoming release wave deliverables.
 - **Engaging** with customers and partners to boost business growth&mdash;for example, customer engagements and taking feedback and ideas from customers. 
@@ -29,7 +29,7 @@ To holistically digitize a large organization like the Digital Transformation Pl
 
 Here is an example of apps developed on Success Hub; bringing the digital feedback loop to reality in our organization.
 
-![Digitally transforming DTP](media/successhub-digitally-transforming-dtp.png "Digitally transforming DTP")  
+![Digitally transforming DTP.](media/successhub-digitally-transforming-dtp.png "Digitally transforming DTP")  
 
 ## Workstreams and personas
 
@@ -39,7 +39,7 @@ To digitize all four aspects of the feedback loop, we divide our apps into vario
 
 The following image shows how 35 apps are modeled across these five workstreams.
 
-:::image type="complex" border="false" source="media/successhub-apps-modelled-across-workstreams.png" alt-text="Apps modeled across workstreams":::
+:::image type="complex" border="false" source="media/successhub-apps-modelled-across-workstreams.png" alt-text="Apps modeled across workstreams.":::
 Five workstreams listed, each with business apps. Platform and Fundamentals list - Data quality, Schema, Usability, etc. Livesite and Ops list - Monitoring and telemetry, Support, Deploy and test, Maintenance upgrades.
 :::image-end:::
 

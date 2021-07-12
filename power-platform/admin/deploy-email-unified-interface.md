@@ -32,13 +32,13 @@ Follow these steps to deploy the solution and enable users to use the accessible
   
 2. Select **Admin centers** > **Dynamics 365**.  
 
-3. Select the **environments** tab, select the environment to add the app to, and then select **Manage your solutions** ![Manage your solutions](media/manage-solution.png "Manage your solutions").
+3. Select the **environments** tab, select the environment to add the app to, and then select **Manage your solutions** ![Manage your solutions.](media/manage-solution.png "Manage your solutions").
 
 4. Select the **Email in Unified Interface** app, and then select **Install**.  
 
 You can now see the app in the list of published apps. Go to **Settings** > **My Apps** to see it.
 
-![Email Unified Interface app published](media/email-unified-interface-app-published.png "Email Unified Interface app published")
+![Email Unified Interface app published.](media/email-unified-interface-app-published.png "Email Unified Interface app published")
 
 **Provide users with permissions for the accessible email access flow**
 
@@ -66,11 +66,11 @@ Users with the **Email app access role**, go to **Sales**, **Service**, or **Mar
 > - If you don't see **Sales**, **Service**, or **Marketing**, your customer engagement app has been customized. Talk to your administrator or customizer.
 > - **Email Messages** will not appear if **Activities** has been customized to not be included in the sitemap.
 
-![Select Email Messages](media/select-email-messages75.png "Select Email Messages")
+![Select Email Messages.](media/select-email-messages75.png "Select Email Messages")
 
 Here, you can read and manage your emails in the Email in Unified Interface app.
 
-![Email for Unified Interface](media/email-for-unified-interface.png "Email for Unified Interface")
+![Email for Unified Interface.](media/email-for-unified-interface.png "Email for Unified Interface")
 
 ### See also
 

@@ -73,7 +73,7 @@ A combination of these three permissions can be configured to determine the user
   
  Secure the field.  
 
-1. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+1. In the web app, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
 
 2. Select **Settings** > **Customizations**.
 
@@ -91,7 +91,7 @@ Configure the security profiles.
   
 1. Create the field security profile for sales managers.  
 
-   1. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+   1. In the web app, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
 
    2. Select **Settings** > **Security**.
   
@@ -116,14 +116,14 @@ Configure the security profiles.
   
 3. Select **Save and Close**.  
   
-Any users not defined in the previously created field security profiles won't have access to the mobile phone field on contact forms or views. The field value displays ![Lock icon](../admin/media/admin-field-level-security-lock.png "Lock icon") ********, indicating that the field is secured.  
+Any users not defined in the previously created field security profiles won't have access to the mobile phone field on contact forms or views. The field value displays ![Lock icon.](../admin/media/admin-field-level-security-lock.png "Lock icon") ********, indicating that the field is secured.  
   
 <a name="BKMK_FLS_fields"></a>   
 ## Which fields can be secured?  
  Every field in the system contains a setting for whether field security is allowed. You can view this in the field definition from Solution Explorer. In Solution Explorer expand **Entities**, expand the entity that you want, select **Fields**, and then open the field that you want. If **Enable** can be selected, the field can be enabled for field security. 
 
 > [!div class="mx-imgBorder"] 
-> ![Field security enabled](media/field-security-enabled.png "Field security enabled")
+> ![Field security enabled.](media/field-security-enabled.png "Field security enabled")
  
 Although most attributes can be secured, there are system attributes, such as IDs, timestamps, and record tracking attributes, that can't. Below are a few examples of attributes that can't be enabled for field security. 
 -    ownerid, processid, stageid, accountid, contactid

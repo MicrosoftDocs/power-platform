@@ -25,7 +25,7 @@ The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service,
 ## Configure product catalog  
  To configure the product catalog:  
   
-1. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+1. In the web app, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
 
 2. Select **Settings** > **Administration**.
 

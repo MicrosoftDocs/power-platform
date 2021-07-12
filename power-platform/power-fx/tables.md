@@ -31,7 +31,7 @@ You can build a variety of formulas that take the name of a table as an argument
 
 ## Elements of a table
 
-![Elements of table](media/tables/elements-of-a-table.png "Elements of table")
+![Elements of table.](media/tables/elements-of-a-table.png "Elements of table")
 
 ### Records
 Each record contains at least one category of information for a person, a place, or a thing. The example above shows a record for each product (**Chocolate**, **Bread**, and **Water**) and a column for each category of information (**Price**, **Quantity on Hand**, and **Quantity on Order**).
@@ -115,7 +115,7 @@ Inside these formulas, you can reference the fields of the record being processe
 
 For example, take a table of **Products** placed in a global variable:
 
-![Tables requested](media/tables/requested.png "Tables requested")
+![Tables requested.](media/tables/requested.png "Tables requested")
 
 ```powerapps-dot
 Set( Products,
@@ -134,7 +134,7 @@ To determine whether any of any of these products had more requested than is ava
 
 The first argument to **Filter** is the table of records to operate on, and the second argument is a formula.  **Filter** creates a record scope for evaluating this formula in which the fields of each record are available, in this case **Product**, **Quantity Requested**, and **Quantity Available**.  The result of the comparison determines if each record should be included in the result of the function:
 
-![Tables needed](media/tables/needed.png "Tabled needed")
+![Tables needed.](media/tables/needed.png "Tabled needed")
 
 Adding to this example, we can calculate how much of each product to order:
 
@@ -147,7 +147,7 @@ AddColumns(
 
 Here we are adding a calculated column to the result. **AddColumns** has its own record scope that it uses to calculate the difference between what has been requested and what is available.
 
-![Add columns](media/tables/toorder.png "Add columns")
+![Add columns.](media/tables/toorder.png "Add columns")
 
 Finally, we can reduce the result table to just the columns that we want:
 
@@ -162,7 +162,7 @@ ShowColumns(
 )
 ```
 
-![To order only](media/tables/toorderonly.png "To order only")
+![To order only.](media/tables/toorderonly.png "To order only")
 
 Note that in the above, we used double quotes (") in some places and single quotes (') in other places.  Single quotes are required when referencing the value of an object, such as a field or table, in which the name of the object contains a space.  Double quotes are used when we are not referencing the value of an object but instead talking about it, especially in situations in which the object does not yet exist, as in the case of **AddColumns**.
 
@@ -177,13 +177,13 @@ If the table being operated upon is an expression, such as **Filter(** _Table_**
 
 For example, imagine having a collection **X**:
 
-![X value](media/tables/X.png "X value")
+![X value.](media/tables/X.png "X value")
 
 You can create this collection with **ClearCollect( X, \[1, 2\] )**.
 
 And another collection **Y**:
 
-![Y value](media/tables/Y.png "Y value")
+![Y value.](media/tables/Y.png "Y value")
 
 You can create this collection with **ClearCollect( Y, ["A", "B"] )**.
 
@@ -204,7 +204,7 @@ Ungroup(
 
 produces this table:
 
-![XY value](media/tables/XY.png "XY value")
+![XY value.](media/tables/XY.png "XY value")
 
 What is going on here?  The outermost **ForAll** function defines a record scope for **X**, allowing access to the **Value** field of each record as it is processed.  It can be accessed by simply using the word **Value** or by using **X[@Value]**.
 
@@ -237,7 +237,7 @@ ShowColumns( Products, "Product" )
 
 This formula produces this single-column table:
 
-![Single column](media/tables/single-column.png "Single column")
+![Single column.](media/tables/single-column.png "Single column")
 
 For a shorter alternative, specify *Table.Column*, which extracts the single-column table of just *Column* from *Table*. For example, this formula produces exactly the same result as using **ShowColumns**.
 
@@ -290,5 +290,5 @@ You can create single-column tables by specifying values in square brackets. The
 
 For example, `[ 1, 2, 3, 4 ]` is equivalent to `Table( { Value: 1 }, { Value: 2 }, { Value: 3 }, { Value: 4 } )` and returns this table:
 
-![Inline table](media/tables/inline-table.png "Inline table")
+![Inline table.](media/tables/inline-table.png "Inline table")
 

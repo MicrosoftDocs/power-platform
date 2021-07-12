@@ -147,7 +147,7 @@ As an HR employee, you know that the most common time-off questions that employe
 
 3. Add in two options for paid time-off and national holidays: under **Options for user**, add *Paid vacation* and *National Holidays*.
 
-    :::image type="content" source="media/get-started-save.png" alt-text="Add options for paid vacation and national holidays":::
+    :::image type="content" source="media/get-started-save.png" alt-text="Add options for paid vacation and national holidays.":::
 
 As you can see, user choices are stored in a variable and the topic will be branched off, based on the option the user chooses. Let's rename the variable to track it better in the topic.
 
@@ -203,7 +203,7 @@ Power Virtual Agents comes with a built-in test bot that lets you test the bot i
     As you can see, the bot is able to bypass the question on vacation type and directly provide information on national holidays. This is because Power Virtual Agents supports [entity extraction](advanced-entities-slot-filling-teams.md) and was able to determine the user is asking about national holidays.
 
 
-    :::image type="content" source="media/get-started-test-bot.png" alt-text="The test bot shows how the AI knew what the user was asking":::
+    :::image type="content" source="media/get-started-test-bot.png" alt-text="The test bot shows how the AI knew what the user was asking.":::
 
 ### Enhance topic to handle more complex queries by escalating to HR experts
 
@@ -224,7 +224,7 @@ First, let's create the flow to send a message to a Teams channel and then call 
 
 1. Add a question node asking for a description for the issue with the text *How would you describe the issue?* Save the description in a variable named *Description*.
 
-    :::image type="content" source="media/get-started-variable-description.png" alt-text="Add a question node with the answer as a variable called Description":::
+    :::image type="content" source="media/get-started-variable-description.png" alt-text="Add a question node with the answer as a variable called Description.":::
 
 2. Add a node under the question and select **Call an action**.
 3. Select **Create a flow**. This launches Power Automate within the Power Virtual Agents app in Teams. We will use a built-in template to send a message to a channel, which makes it very easy to get started.
@@ -364,7 +364,7 @@ The bot then informs Melissa that an expert has been notified, who will be reach
 
 Here we see that the bot ran the flow you added earlier and posted Melissa's request to the channel. HR experts in the channel can now reach out to Melissa to understand more on her extended leave request.
 
-:::image type="content" source="media/get-started-channel.png" alt-text="The bot output a message into the Teams channel about Extended leave":::
+:::image type="content" source="media/get-started-channel.png" alt-text="The bot output a message into the Teams channel about Extended leave.":::
 
 ## Conclusion
 

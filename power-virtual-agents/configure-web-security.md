@@ -81,7 +81,7 @@ You'll need the secret so you can specify it in your app's authorization header 
 
 1. On the side navigation pane, select **Manage**, **Security**, and then select **Web channel security**.
 
-2. Select **Copy** for either **Secret 1** or **Secret 2** to copy it to the clipboard. Select the visibility icon ![Visibility icon](media/configure-web-security/visibility-icon.png "Visibility icon") to reveal the secret. A warning prompt will appear before you can reveal it.
+2. Select **Copy** for either **Secret 1** or **Secret 2** to copy it to the clipboard. Select the visibility icon ![Visibility icon.](media/configure-web-security/visibility-icon.png "Visibility icon") to reveal the secret. A warning prompt will appear before you can reveal it.
 
 
 ### Swapping secrets

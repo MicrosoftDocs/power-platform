@@ -68,7 +68,7 @@ To enable Relevance Search, do the following:
 ## Select entities for Relevance Search 
  To configure Relevance Search, use the **Configure Relevance Search** selection on the task bar, as shown here.  
 
- ![Configure Relevance Search](../admin/media/relevance-search-configure-search.png "Configure Relevance Search")  
+ ![Configure Relevance Search.](../admin/media/relevance-search-configure-search.png "Configure Relevance Search")  
 
  There is no limit on how many entities you can include in the Relevance Search results. However, there is a limit on the total number of fields that can be enabled in Relevance Search. The maximum is 1000 searchable fields for an organization. Out of these 1000 fields, up to 50 fields are required by the Relevance Search system, so you can configure up to 950 searchable fields in Relevance Search. When you select an entity to include in the search results, you'll notice a number in parentheses next to the entity name. The number indicates how many fields each entity uses in the Relevance Search index. Some fields, such as **Primary Name** and **ID**, are shared by multiple entities and don't count toward the total. Additionally, some field types use more than one field in the Relevance Search index as indicated in this table.  
 
@@ -92,7 +92,7 @@ To enable Relevance Search, do the following:
 
 4. The **Select Entities** dialog box opens. Select **Add** to select the entities for the search results. When you're done, select **OK**.  
 
-   ![Relevance Search entity selection](../admin/media/relevance-search-select-entities.png "Relevance Search entity selection")  
+   ![Relevance Search entity selection.](../admin/media/relevance-search-select-entities.png "Relevance Search entity selection")  
 
 5. Select **Publish All Customizations** for your changes to take effect.  
 
@@ -125,11 +125,11 @@ By default, some out-of-the-box system entities are included in Relevance Search
 
 4. In the navigation tree, click **View**. In the **Type** column, double-click **Quick Find View**. The following illustration shows the **Quick Find** view for the `Account` entity.  
 
-   ![Quick Find view](../admin/media/relevance-search-quick-find-view-screen.png "Quick Find view")  
+   ![Quick Find view.](../admin/media/relevance-search-quick-find-view-screen.png "Quick Find view")  
 
 5. Select **Add Find Columns**. In the dialog box, select the fields you want to add to the search index. When done, select **OK**. In the following illustration, you see the                  `Account` entity fields added to the Relevance Search index.  
 
-   ![Quick Find field selection](../admin/media/relevance-search-quick-find-add-find-fields.png "Quick Find field selection")  
+   ![Quick Find field selection.](../admin/media/relevance-search-quick-find-add-find-fields.png "Quick Find field selection")  
 
 6. Repeat the steps for the **View Columns**.  
 
@@ -177,7 +177,7 @@ By default, some out-of-the-box system entities are included in Relevance Search
 
 4. On the menu bar, select **Managed Properties**. For **Can enable sync to external search index**, select **True** or **False** to set the property to the desired state. Select **Set** to exit, as shown here.  
 
-   ![Entity managed properties](../admin/media/relevance-search-managed-properties.PNG "Entity managed properties")  
+   ![Entity managed properties.](../admin/media/relevance-search-managed-properties.PNG "Entity managed properties")  
 
 5. Select **Publish** for your changes to take effect.  
 
@@ -244,7 +244,7 @@ Your organization’s queries and results are reviewed by people using secured c
 3. Under **Search**, set **Improve Relevance Search results** to **On**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Improve Relevance Search results](media/improve-relevance-search-results.png "Improve Relevance Search results")
+   > ![Improve Relevance Search results.](media/improve-relevance-search-results.png "Improve Relevance Search results")
 
 4.	Select **Save**.
 

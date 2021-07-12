@@ -43,7 +43,7 @@ To remove personal data:
 
 ## Remove user personal data via Excel Import/Export
 
-1. From a customer engagement app, select **Settings** (![Gear button](media/selection-rule-gear-button.png "Gear button")) on the navigation bar. 
+1. From a customer engagement app, select **Settings** (![Gear button.](media/selection-rule-gear-button.png "Gear button")) on the navigation bar. 
 2. Select **Advanced Settings**.
 3. Select **Settings** > **Security** > **Users**.
 4. Create an [Excel template](analyze-your-data-with-excel-templates.md#create-a-new-excel-template) with all the user personal data columns that you want to update.  

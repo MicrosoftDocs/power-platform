@@ -32,7 +32,7 @@ If you're an administrator, you can determine the region of each environment in 
   From the left-side menu, select **Environments**.
   
   > [!div class="mx-imgBorder"] 
-  > ![Environments page](media/environment-list-region.png "Environments page")
+  > ![Environments page.](media/environment-list-region.png "Environments page")
 
 ## What regions are available?
 

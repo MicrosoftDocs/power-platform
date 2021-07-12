@@ -20,10 +20,10 @@ search.app:
 
 To find your organization ID and name: 
 
-1. Go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+1. Go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Select Advanced Settings](media/advanced-settings.png "Select Advanced Settings")
+   > ![Select Advanced Settings.](media/advanced-settings.png "Select Advanced Settings")
 
 2. Go to **Settings** > **Customizations** > **Developer Resources**.
 
