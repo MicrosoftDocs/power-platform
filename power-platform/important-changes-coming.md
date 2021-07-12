@@ -53,7 +53,7 @@ With the upcoming 2021 release wave 2 (public preview in August 2021 and GA in O
 Any current form that is configured to be “low-density” is automatically updated to render in a [high density with flyout](/powerapps/maker/model-driven-apps/form-designer-header-properties#high-density-header-flyout) mode in a model driven app. Below is an example of high-density header with flyout:
 
 > [!div class="mx-imgBorder"] 
-> ![Header flyout with high-density header](media/form-header-flyout-high-density.png "Header flyout with high-density header")
+> ![Header flyout with high-density header.](media/form-header-flyout-high-density.png "Header flyout with high-density header")
 
 ### Action required by you
 
@@ -436,7 +436,7 @@ Management features in Dynamics 365 Customer Service.
 The **Knowledge Solution** setting in the **Knowledge Base Management Settings**
 dialog box, which provides a connection to Pasture will be removed in a future major release.
 
-![Knowledge Base Management Settings dialog ](media/deprecated-knowledge-management-settings.png "Knowledge Base Management Settings dialog")
+![Knowledge Base Management Settings dialog .](media/deprecated-knowledge-management-settings.png "Knowledge Base Management Settings dialog")
 
 ## Project Service Finder app is deprecated
 

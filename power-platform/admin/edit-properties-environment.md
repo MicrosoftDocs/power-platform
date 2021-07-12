@@ -29,7 +29,7 @@ Administrators can edit properties of an environment, such as the friendly name,
 3. Select **Edit**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Select Edit](media/select-edit.png "Select Edit")
+   > ![Select Edit.](media/select-edit.png "Select Edit")
 
 4. Select any of the following field values that you want to change.  
   

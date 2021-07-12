@@ -24,9 +24,9 @@ Learning Path (guided help) is turned on by default.
 ## Turn Learning Path on or off for an individual user  
  This setting affects only the person who makes this change.  
   
--   To turn Learning Path off: On the nav bar, click the **Options**  icon ![Options button](../admin/media/optionsbutton.png "Options button") > **Opt out of Learning Path**.  
+-   To turn Learning Path off: On the nav bar, click the **Options**  icon ![Options button.](../admin/media/optionsbutton.png "Options button") > **Opt out of Learning Path**.  
   
--   To turn Learning Path on: On the nav bar, click the **Options**  icon ![Options button](../admin/media/optionsbutton.png "Options button") > **Opt in for Learning Path**.  
+-   To turn Learning Path on: On the nav bar, click the **Options**  icon ![Options button.](../admin/media/optionsbutton.png "Options button") > **Opt in for Learning Path**.  
   
 ## Turn Learning Path on or off for an entire organization  
 This setting changes access to Learning Path for an entire organization. 

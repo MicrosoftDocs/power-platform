@@ -38,24 +38,24 @@ Admins can do the following from the Power Platform admin center:
 2. In the navigation pane, select **Environments**, select an environment with resources, and then select the **Power Apps** resource.
 
    > [!div class="mx-imgBorder"] 
-   > ![Select Power Apps resource](media/resources-select-power-apps.png "Select Power Apps resource")
+   > ![Select Power Apps resource.](media/resources-select-power-apps.png "Select Power Apps resource")
 
 3. Select an app to manage.
 
    > [!div class="mx-imgBorder"] 
-   > ![Select an app](media/resources-manage-power-apps-list.png "Select an app") 
+   > ![Select an app.](media/resources-manage-power-apps-list.png "Select an app") 
 
 4. Select your desired action.
 
    > [!div class="mx-imgBorder"] 
-   > ![Share or delete app](media/resources-edit-power-app.png "Share or delete app") 
+   > ![Share or delete app.](media/resources-edit-power-app.png "Share or delete app") 
 
 ## Manage who can share canvas apps
 
 Power Apps respects the Canvas App ‘Share’ privilege in Dataverse. A user will not be able to share canvas apps in an environment if they do not have a security role with the Canvas App Share privilege set to a value other than ‘None selected’. This Dataverse Canvas App Share privilege is also respected in the default environment. This article outlines how to edit a privileges in a security role: [Edit a security role](create-edit-security-role.md#edit-a-security-role).
 
    > [!div class="mx-imgBorder"] 
-   > ![Dataverse Canvas App privileges](media/admin-manage-apps/dataverse_canvas_app_entity_share_privilege.png "Dataverse Canvas App entity privileges")
+   > ![Dataverse Canvas App privileges.](media/admin-manage-apps/dataverse_canvas_app_entity_share_privilege.png "Dataverse Canvas App entity privileges")
 
 > [!NOTE]
 > The ability to granularly control the Canvas App Share privilege in a security role requires Dataverse in the environment where the privilege is to be changed. Power Apps does not discretely recognize the other Dataverse Canvas app entity privileges set for the environment. 
@@ -91,7 +91,7 @@ No, the SharePoint custom form maker security role is added to an environment by
 No, a maker that doesn’t have a security role called out in the [Choose environments documentation](/powerapps/maker/canvas-apps/intro-maker-portal#choose-an-environment) will not see a the environment in the environment picker in https://make.powerapps.com. A user with the SharePoint custom form maker role might attempt to navigate to the environment by manipulating the URI. If the user attempts to create a standalone app they’ll see a permission error. 
 
    > [!div class="mx-imgBorder"] 
-   > ![Power Apps missing permission dialog](media/admin-manage-apps/power_apps_missing_permission_to_create.png "Power Apps missing permission dialog")
+   > ![Power Apps missing permission dialog.](media/admin-manage-apps/power_apps_missing_permission_to_create.png "Power Apps missing permission dialog")
 
 ### See also
 [Power Apps admin PowerShell support](powerapps-powershell.md#power-apps-commands)

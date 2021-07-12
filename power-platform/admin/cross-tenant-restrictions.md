@@ -47,7 +47,7 @@ One-way tenant isolation restricts incoming connection attempts into your tenant
 |B     | A (one-way data loss prevention policy enforced)         | No (inbound)        |
 |B     | B        | Yes        |
 
-![Restrict inbound cross-tenant access](media/restrict-inbound-cross-tenant.png "Restrict inbound cross-tenant access")
+![Restrict inbound cross-tenant access.](media/restrict-inbound-cross-tenant.png "Restrict inbound cross-tenant access")
 
 ## Two-way tenant isolation (inbound and outbound connection restriction) 
 
@@ -62,7 +62,7 @@ Two-way tenant isolation restricts incoming connection attempts into your tenant
 |B     | A (two-way data loss prevention policy enforced)         | No (inbound)        |
 |B     | B        | Yes        |
 
-![Restrict outbound and inbound cross-tenant access](media/restrict-outbound-inbound-cross-tenant.png "Restrict outbound and inbound cross-tenant access")
+![Restrict outbound and inbound cross-tenant access.](media/restrict-outbound-inbound-cross-tenant.png "Restrict outbound and inbound cross-tenant access")
 
 ## Known issue
 This feature does not protect your tenant from inbound cross-cloud connections. If a tenant has tenant isolation turned on, all outgoing connections are restricted. However, incoming connections that are established from other tenants in other clouds are not restricted. This issue is currently being investigated.

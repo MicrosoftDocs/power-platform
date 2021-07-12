@@ -23,12 +23,12 @@ search.app:
 With the new provisioning model, those with the correct licenses can create an environment as long as 1GB of capacity is available. To restrict environment creation and management to admins, do the following:
 
 1. Sign in to the Microsoft Power Platform admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com).
-2. Select the **Gear** icon (![Gear icon](media/selection-rule-gear-button.png)) in the upper-right corner of the Microsoft Power Platform site.
+2. Select the **Gear** icon (![Gear icon.](media/selection-rule-gear-button.png)) in the upper-right corner of the Microsoft Power Platform site.
 3. Select **Power Platform settings**. 
 4. Select **Only specific admins**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Specify Global admins](./media/governance-setting.png "Specify Global admins")
+   > ![Specify Global admins.](./media/governance-setting.png "Specify Global admins")
 
 The following admins will be able to create new environments in the Power Platform admin center:
 

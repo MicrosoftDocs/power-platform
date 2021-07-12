@@ -37,7 +37,7 @@ You can [create child business units](./create-edit-business-units.md) to help f
 To better understand let’s look at the following example. We have three business units. Woodgrove is the root business unit and will always be at the top, that is unchangeable. We've created two other child business units A and B. Users in these business units have very different access needs. When we associate a user with this Dataverse environment, we can set the user to be in one of these three business units. Where the user is associated will determine which business unit owns the records that user is the owner of. By having that association allows us to tailor a security role to allow the user to see all records in that business unit.
 
 > [!div class="mx-imgBorder"] 
-> ![Example business units](media/example-business-unit.png "Example business units")
+> ![Example business units.](media/example-business-unit.png "Example business units")
 
 ## Entity/record ownership
 
@@ -48,13 +48,13 @@ To give another example, let’s say User A is associated with Division A, and w
 When you configure or edit security role privileges, you're setting the access level for each option. The following is an example of the Security Role privilege editor.
 
 > [!div class="mx-imgBorder"] 
-> ![Security role privileges](media/security-role-privileges.png "Security role privileges")
+> ![Security role privileges.](media/security-role-privileges.png "Security role privileges")
 
 
 In the above you can see the standard privilege types for each entity Create, Read, Write, Delete, Append, Append To, Assign and Share. You can edit each of these individually. The visual display of each will match the key below as to what level of access you've granted.
 
 > [!div class="mx-imgBorder"] 
-> ![Security role privileges key](media/security-role-privileges-key.png "Security role privileges key")
+> ![Security role privileges key.](media/security-role-privileges-key.png "Security role privileges key")
 
 
 In the above example, we have given organization level access to Contact which means that the user in Division A could see and update contacts owned by anyone. In fact, one of the most common administrative mistakes is getting frustrated with permissions and just over granting access. Very quickly a well-crafted security model starts looking like swiss cheese (full of holes!).

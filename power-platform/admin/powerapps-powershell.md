@@ -58,7 +58,7 @@ To run the PowerShell cmdlets for app creators, do the following:
 1. Run PowerShell as an administrator.
 
    > [!div class="mx-imgBorder"] 
-   > ![Run PowerShell as an administrator](media/open-powershell-as-admin75.png "Run PowerShell as an administrator")
+   > ![Run PowerShell as an administrator.](media/open-powershell-as-admin75.png "Run PowerShell as an administrator")
 
 2. Import the necessary modules using the following commands:
 
@@ -78,7 +78,7 @@ To run the PowerShell cmdlets for app creators, do the following:
 
 3. If you are prompted to accept the change to *InstallationPolicy* value of the repository, accept [A] Yes to all modules by typing 'A' and pressing **Enter** for each module.
 
-   ![Accept InstallationPolicy value](media/accept-installationpolicy-value75.png "Accept InstallationPolicy value")
+   ![Accept InstallationPolicy value.](media/accept-installationpolicy-value75.png "Accept InstallationPolicy value")
 
 4. Before accessing any of the commands, you have the option to provide your credentials using the following command. These credentials are refreshed for up to ~8 hours before you're required to sign in again to continue using the cmdlets.
 
@@ -128,7 +128,7 @@ For information on Power Apps cmdlets for admins, see [Get started with PowerShe
 
 - Use Get-Help 'CmdletName' to get a list of examples.
 
-     ![Get-Help command](media/get-help-cmdlet.png "Get-Help command")
+     ![Get-Help command.](media/get-help-cmdlet.png "Get-Help command")
 
 - To cycle through the possible options for input tags, click on the tab key after typing out the dash (-) character, after the cmdlet name.
 
@@ -180,7 +180,7 @@ Get-AdminPowerAppEnvironment –EnvironmentName 'EnvironmentName'
 
 **Note**: The *EnvironmentName* field is a unique identifier, which is different from the *DisplayName* (see first and second fields in the output in the following image).
 
-![Get-AdminEnvironment command](media/get-adminenvironment.png "Get-AdminEnvironment command")
+![Get-AdminEnvironment command.](media/get-adminenvironment.png "Get-AdminEnvironment command")
 
 ### Power Apps commands
 
@@ -234,7 +234,7 @@ Get-AdminPowerApp | Select –ExpandProperty Owner | Select –ExpandProperty di
 
 You can combine native PowerShell functions with the Power Apps cmdlets to manipulate data even further. Here we use the Select function to isolate the Owner attribute (an object) from the Get-AdminApp object. We then isolate the name of the owner object by pipelining that output into another Select function. Finally, passing the second Select function output into the Group function returns a nice table that includes a count of each owner's number of apps.
 
-![Get-AdminPowerApp command](media/get-adminpowerapp.png "Get-AdminPowerApp command")
+![Get-AdminPowerApp command.](media/get-adminpowerapp.png "Get-AdminPowerApp command")
 
 #### Display the number of apps in each environment
 
@@ -242,7 +242,7 @@ You can combine native PowerShell functions with the Power Apps cmdlets to manip
 Get-AdminPowerApp | Select -ExpandProperty EnvironmentName | Group | %{ New-Object -TypeName PSObject -Property @{ DisplayName = (Get-AdminPowerAppEnvironment -EnvironmentName $_.Name | Select -ExpandProperty displayName); Count = $_.Count } }
 ```
 
-![Get-AdminPowerApp environment](media/get-adminpowerapp-environment.png "Get-AdminPowerApp environment")
+![Get-AdminPowerApp environment.](media/get-adminpowerapp-environment.png "Get-AdminPowerApp environment")
 
 #### Download Power Apps user details
 

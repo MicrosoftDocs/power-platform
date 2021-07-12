@@ -38,7 +38,7 @@ Microsoft Power Platform Build Tools tasks can be used along with any other avai
 Azure DevOps tasks to compose your build and release pipelines. Pipelines
 that teams commonly put in place include Initiate, Export from Dev, Build, and Release.
 
-![ALM powered by Azure DevOps](media/initiate-build-release.png "ALM powered by Azure DevOps")
+![ALM powered by Azure DevOps.](media/initiate-build-release.png "ALM powered by Azure DevOps")
 
 > [!NOTE] 
 > Microsoft Power Platform Build Tools are supported only for a Microsoft Dataverse environment with a database. More information: [Create an environment with a database](../admin/create-environment.md#create-an-environment-with-a-database)
@@ -74,7 +74,7 @@ After installation, all tasks included in the Microsoft Power Platform Build Too
 available to add into any new or existing pipeline. You can find them by
 searching for "Power Platform".
 
-![Get the Microsoft Power Platform Build Tools](media/get-build-tools.png "Get the Microsoft Power Platform Build Tools")
+![Get the Microsoft Power Platform Build Tools.](media/get-build-tools.png "Get the Microsoft Power Platform Build Tools")
 
 ## Connection to environments
 

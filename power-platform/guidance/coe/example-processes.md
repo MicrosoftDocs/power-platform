@@ -49,21 +49,21 @@ Three items are tracked in the system, and the user might have to do all three:
 
 - Add supporting details, such as the business justification.
 
-![Maker point of view in the audit process](media/coe55.png "Maker point of view in the audit process")
+![Maker point of view in the audit process.](media/coe55.png "Maker point of view in the audit process")
 
 **Admin:** After an app meets all three of these requirements, it appears in the **Admin Review** filter view on the **Power Platform Admin View** model driven app.
 
-![Admin point of view in the audit process](media/coe71.png "Admin point of view in the audit process")
+![Admin point of view in the audit process.](media/coe71.png "Admin point of view in the audit process")
 
 An admin opens **Power Platform Admin View** > **Admin Review** and assesses all the apps due for review by looking at the **Audit** tab within the app, investigating the work done by the maker, and then marking their assessment in the **Admin Review** section.
 
 The admin can decide to put an app in the app catalog and mark it as featured or not, depending on whether the app should be highlighted for users.
 
-![Validate maker requirements](media/coe54.png "Validate maker requirements")
+![Validate maker requirements.](media/coe54.png "Validate maker requirements")
 
 **Users:** The maker and users can now see the app in the app catalog.
 
-![App catalog](media/coe67.png "App catalog")
+![App catalog.](media/coe67.png "App catalog")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

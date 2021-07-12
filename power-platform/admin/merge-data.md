@@ -25,12 +25,12 @@ Follow these steps to merge data.
 1. Select the records to merge (for example account records), and then select **Merge**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Select and merge accounts](media/select-merge-accounts.png "Select and merge accounts")
+   > ![Select and merge accounts.](media/select-merge-accounts.png "Select and merge accounts")
 
 2. Select the master record and the fields to merge into the master record, and then select **OK**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Select records to merge](media/select-records-to-merge.png "Select records to merge")
+   > ![Select records to merge.](media/select-records-to-merge.png "Select records to merge")
 
    > [!NOTE]
    > The master record will inherit all of the subordinate record's child records. The subordinate record will be deactivated.
@@ -56,7 +56,7 @@ The following example settings are used in the scenarios below:
 - **Security role privileges**: Both User One and User Two have Read privilege at the User level for the account entity.
   
   > [!div class="mx-imgBorder"] 
-  > ![Security role account privilege](media/security-role-account-privileges.png "Security role account privilege")
+  > ![Security role account privilege.](media/security-role-account-privileges.png "Security role account privilege")
 
 - **Test Account One**: master account to merge. User One is assigned to this account.
 - **Test Account Two**: subordinate account which is merged into. User Two is assigned to this account.
@@ -83,7 +83,7 @@ After merging records:
   - The merged master Account record - Test Account One
   - The inactive account (read-only) - Test Account Two  
   > [!div class="mx-imgBorder"] 
-  > ![Access to accounts](media/user-two-account-after-merge.png "Access to accounts")
+  > ![Access to accounts.](media/user-two-account-after-merge.png "Access to accounts")
 
 ### Scenario #2: Merge records that are shared to users
 
@@ -131,10 +131,10 @@ After merging records:
   - The merged master Account record - Test Account One
   - The inactive account (read-only) - Test Account Two  
   > [!div class="mx-imgBorder"] 
-  > ![Access to accounts](media/user-two-account-after-merge.png "Access to accounts")
+  > ![Access to accounts.](media/user-two-account-after-merge.png "Access to accounts")
 - User Two is not added as a member of the Account Access Team (sub-grid) on Test Account One
   > [!div class="mx-imgBorder"] 
-  > ![Sub-grid in account form](media/sub-grid-account-form.png "Sub-grid in account form")
+  > ![Sub-grid in account form.](media/sub-grid-account-form.png "Sub-grid in account form")
 
 ### Scenario #4: Merge records that are owned by teams
 
@@ -159,10 +159,10 @@ After merging records:
   - The merged master Account record - Test Account One
   - The inactive account (read-only) - Test Account Two  
     > [!div class="mx-imgBorder"] 
-    > ![Access to accounts](media/user-two-account-after-merge.png "Access to accounts")
+    > ![Access to accounts.](media/user-two-account-after-merge.png "Access to accounts")
 - User Two is not added to Owner Team One
   > [!div class="mx-imgBorder"] 
-  > ![Owner team members](media/user-one-owner-team-after-merge.png "Owner team members")
+  > ![Owner team members.](media/user-one-owner-team-after-merge.png "Owner team members")
 
 
 ## Change merge behavior

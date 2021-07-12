@@ -40,7 +40,7 @@ To change the time period to the last 30 days, select **Last 30 days** from the 
 
 ## Summary charts
 
-![Summary charts](media/summary-charts-teams.png)
+![Summary charts.](media/summary-charts-teams.png)
 
 The Summary charts summarize the how well your bot is doing based on different measurements, described in this table:
 

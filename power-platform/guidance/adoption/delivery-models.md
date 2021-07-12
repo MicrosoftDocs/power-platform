@@ -25,7 +25,7 @@ Microsoft Power Platform has four delivery models, but each of these is just a m
 
 These models can help you consider what your current software delivery model is and how Microsoft Power Platform might overlay into it, or how your current model might evolve to accommodate the rapid development capability enabled by Microsoft Power Platform.
 
-![Delivery models](media/delivery-models.png "Delivery models")
+![Delivery models.](media/delivery-models.png "Delivery models")
 
 ## Decentralized
 

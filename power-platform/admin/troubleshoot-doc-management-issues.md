@@ -92,27 +92,27 @@ Error message displayed for missing document library:
 - Error message in Unified Interface:
 
   > [!div class="mx-imgBorder"]
-  > ![Error message in Unified Interface](media/error-in-unified-interface.png)
+  > ![Error message in Unified Interface.](media/error-in-unified-interface.png)
 
   *or*
 
   > [!div class="mx-imgBorder"]
-  > ![Error message in Unified Interface dialog](media/error-in-unified-interface-dialog.png)
+  > ![Error message in Unified Interface dialog.](media/error-in-unified-interface-dialog.png)
 
 - Error message in the web client:
 
   > [!div class="mx-imgBorder"]
-  > ![Error message in web client](media/error-in-web-client.png)
+  > ![Error message in web client.](media/error-in-web-client.png)
 
   *or*
 
   > [!div class="mx-imgBorder"]
-  > ![Error message in web client dialog](media/error-in-web-client-dialog.png)
+  > ![Error message in web client dialog.](media/error-in-web-client-dialog.png)
 
   Log file:
 
   > [!div class="mx-imgBorder"]
-  > ![Error message in web client log file](media/error-in-web-client-logfile.png)
+  > ![Error message in web client log file.](media/error-in-web-client-logfile.png)
 
 ### Reason
 
@@ -131,7 +131,7 @@ This error typically occurs when the SharePoint document library was created for
 5.  The last step of wizard should have the status of document library as succeeded.
 
       > [!div class="mx-imgBorder"]
-      > ![Error message in web client](media/doc-library-create-succeed.png)
+      > ![Error message in web client.](media/doc-library-create-succeed.png)
 
 6.  Once complete, verify that document library is now present on the SharePoint site in the path shown in the error message.
 
@@ -151,27 +151,27 @@ Error message displayed for missing folder:
   - Error message in Unified Interface:
 
     > [!div class="mx-imgBorder"]
-    > ![Folder error in Unified Interface](media/folder-error1-in-unified-interface.png)
+    > ![Folder error in Unified Interface.](media/folder-error1-in-unified-interface.png)
 
     *or*
 
     > [!div class="mx-imgBorder"]
-    > ![Error message in Unified Interface dialog](media/folder-error1-in-unified-interface-dialog.png)
+    > ![Error message in Unified Interface dialog.](media/folder-error1-in-unified-interface-dialog.png)
 
   - Error message in the web client:
 
     > [!div class="mx-imgBorder"]
-    > ![Folder error in web client](media/folder-error1-in-web-client.png)
+    > ![Folder error in web client.](media/folder-error1-in-web-client.png)
 
     *or*
 
     > [!div class="mx-imgBorder"]
-    > ![Error message in Unified Interface dialog](media/missing-folder-error1-uic-dialog.png)
+    > ![Error message in Unified Interface dialog.](media/missing-folder-error1-uic-dialog.png)
 
     Log file:
 
     > [!div class="mx-imgBorder"]
-    > ![Error message in web client log file](media/folder-error1-in-web-client-logfile.png)
+    > ![Error message in web client log file.](media/folder-error1-in-web-client-logfile.png)
 
 - Error message when the entity-based folder structure is enabled.
 
@@ -180,27 +180,27 @@ Error message displayed for missing folder:
   - Error message in Unified Interface:
 
     > [!div class="mx-imgBorder"]
-    > ![Error message in Unified Interface](media/folder-error2-in-unified-interface.png)
+    > ![Error message in Unified Interface.](media/folder-error2-in-unified-interface.png)
 
     *or*
 
     > [!div class="mx-imgBorder"]
-    > ![Error message in Unified Interface](media/folder-error2-in-unified-interface-dialog.png)
+    > ![Error message in Unified Interface.](media/folder-error2-in-unified-interface-dialog.png)
 
   - Error message in the web client:
 
     > [!div class="mx-imgBorder"]
-    > ![Error message in web client](media/folder-error2-in-web-client.png)
+    > ![Error message in web client.](media/folder-error2-in-web-client.png)
 
     *or*
 
     > [!div class="mx-imgBorder"]
-    > ![Error message in web client](media/missing-folder-error1-uic-dialog.png)
+    > ![Error message in web client.](media/missing-folder-error1-uic-dialog.png)
 
     Log file:
 
     > [!div class="mx-imgBorder"]
-    > ![Error message in web client log file](media/folder-error2-in-web-client-dialog-logfile.png)
+    > ![Error message in web client log file.](media/folder-error2-in-web-client-dialog-logfile.png)
 
 ### Reason
 

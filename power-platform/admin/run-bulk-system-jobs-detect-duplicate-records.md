@@ -44,7 +44,7 @@ To maintain the integrity of system data, you should check for duplicates regula
   
 7. To further limit the records searched, select **Select** and then enter the criteria you want.  
   
-   ![Screenshot of duplicate detection wizard, page 1](../admin/media/duplicate-detection-wizard.png "Screenshot of duplicate detection wizard, page 1")  
+   ![Screenshot of duplicate detection wizard, page 1.](../admin/media/duplicate-detection-wizard.png "Screenshot of duplicate detection wizard, page 1")  
   
 8. Select **Next**.  
   

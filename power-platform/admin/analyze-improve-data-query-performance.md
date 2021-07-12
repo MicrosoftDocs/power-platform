@@ -43,7 +43,7 @@ You can analyze and optimize query performance using the Data Performance view. 
 2. In the **All Data Performance Logs** view, if one or more long running entity queries are detected, log items are displayed in the view. 
 3. If several items appear in the view, sort by the **Count** or **Optimization Impact** columns to easily identify the most used queries that do not already have an optimization. Out-of-box and custom-entity queries that complete within three seconds aren't displayed in the view.  
   
-   ![All Data Performance Logs view](../admin/media/data-performance-logs-view.png "All Data Performance Logs view")  
+   ![All Data Performance Logs view.](../admin/media/data-performance-logs-view.png "All Data Performance Logs view")  
   
     The columns displayed in the view provide information that can help you determine whether for you to add an optimization or not.  
   

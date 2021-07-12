@@ -20,7 +20,7 @@ search.app:
 
 When you enable the rich text experience, server-side synchronization and appointment activities support rich text. With the rich text editor, appointment descriptions can contain rich text. 
 
-![Rich text appointment editor](media/appointment-rich-text.png)
+![Rich text appointment editor.](media/appointment-rich-text.png)
 
 With rich text enabled you get the following benefits:
 

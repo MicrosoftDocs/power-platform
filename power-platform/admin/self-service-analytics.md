@@ -52,7 +52,7 @@ You can store exported data for extended durations, as well as move data to data
 
 Power Platform admin center self-service options based on Azure Data Lake allow you to extend Power Apps telemetry with data from other sources. Use Cloud Analytics & AI to take advantage of predictive analytics within service monitoring solutions. The following diagram illustrates an example of how to derive intelligence from Power Apps telemetry data. 
 
-:::image type="content" source="media/azure-resources.png" alt-text="Azure resources":::
+:::image type="content" source="media/azure-resources.png" alt-text="Azure resources.":::
 
 ## Data
 
@@ -75,11 +75,11 @@ Follow these steps to set up the data lake.
 
 1. Sign in to the Power Platform admin center as an Azure AD global admin, select **Export to Azure Data Lake**, and then select **Power Apps**.
 
-   :::image type="content" source="media/export-data-lake-power-apps.png" alt-text="Export Power Apps to data lake":::
+   :::image type="content" source="media/export-data-lake-power-apps.png" alt-text="Export Power Apps to data lake.":::
 
 2. Set **Enable tenant-level analytics** to **On**.
 
-   :::image type="content" source="media/enable-tenant-level-analytics-data-export.png" alt-text="Enable tenant-level analytics for data export":::
+   :::image type="content" source="media/enable-tenant-level-analytics-data-export.png" alt-text="Enable tenant-level analytics for data export.":::
 
 3. Choose a subscription to associate with the Azure storage account.
 

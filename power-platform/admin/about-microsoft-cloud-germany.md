@@ -39,7 +39,7 @@ search.app:
   
 - All security and compliance capabilities of customer engagement apps (such as Dynamics 365 Sales and Customer Service), are included.  
   
-  ![Germany data residence](media/germany-data-residence.png "Germany data residence")  
+  ![Germany data residence.](media/germany-data-residence.png "Germany data residence")  
   <a name="BKMK_DataTrustee"></a>   
 
 ## German Data Trustee  
@@ -47,7 +47,7 @@ search.app:
   
  The German Data Trustee may also perform non-data specific tasks related to day-to-day datacenter operations.  
   
- ![Germany data trustee](media/germany-data-trustee.png "Germany data trustee")  
+ ![Germany data trustee.](media/germany-data-trustee.png "Germany data trustee")  
   
 <a name="BKMK_ServiceDelivery"></a>   
 ## Germany Service Delivery  
