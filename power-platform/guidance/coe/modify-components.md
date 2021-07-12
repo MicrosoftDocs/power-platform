@@ -83,6 +83,7 @@ Open Template Catalog (canvas app), and edit the SharePoint connection to point 
 1. Select the **AppTemplates** library, and then select **Connect**.
 
 1. In the tree view on the left, select **Screen1**, and then select **HomeScreen** to repopulate the gallery.
+1. Save and publish the changes.
 
 Your template catalog is now ready.
 
