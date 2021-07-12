@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: Get started with GitHub Actions for Microsoft Power Platform | Microsoft Docs"
-description: "In this first part of a 3-part tutorial, get started with GitHub Actions for Microsoft Power Platform by creating three environments for use in the other tutorials."
+description: "In this first part of a three part tutorial, get started with GitHub Actions for Microsoft Power Platform by creating three environments for use in the other tutorials."
 keywords: 
 author: mikkelsen2000
 ms.subservice: alm
@@ -38,7 +38,7 @@ Let's get started with tutorial #1 and create three Dataverse environments.
 
 You will need to create, or have access to, three Dataverse environments in your demo or customer tenant. To create these environments, follow the instructions below. Otherwise, proceed to the end of this tutorial for the next steps.
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) with credentials that provide access to a tenant with a minimum 3 GB available capacity (required to create the three environments).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) with credentials that provide access to a tenant with a minimum 3-GB available capacity (required to create the three environments).
 
 2. Select **Environments** in the navigation area.
 
@@ -56,7 +56,7 @@ You will need to create, or have access to, three Dataverse environments in your
 
     ![Set currency.](../media/github-actions-tutorial/gh-lab-0.80.png "Set currency")
 
-7. Your development environment has been created, follow steps 4 – 8 above to create a second environment called “Your Name – build” , and then create a third environment called “Your Name – prod”. Note that the third environment can be a trial environment type.
+7. Your development environment has been created, follow steps 4 – 8 above to create a second environment called “Your Name – build” , and then create a third environment called “Your Name – prod”. The third environment can be a trial environment type.
 
 You now have the development, build, and production environments needed in the following modules of this tutorial.
 
@@ -96,9 +96,9 @@ You now have the development, build, and production environments needed in the f
   3. select the link app users list
     ![Application user list](../media/github-actions-tutorial/App-user-link.png "Application User List link")
   
-  4. Select **+ new app user**, this will open a panel on the right hand side of the screen
+  4. Select **+ new app user**. A panel will open on the right hand side of the screen.
 
-  5. Select **+ Add an app**, this will list out all the app registrations in your Azure AD tenant, proceed to select the Application Name that your registered
+  5. Select **+ Add an app**. A list of all the app registrations in your Azure AD tenant is shown. Proceed to select the Application Name that your registered.
 
   6. Under business unit, in the drop down box, select your environment as the business unit
 
