@@ -291,7 +291,7 @@ Use this app to:
 - See what impact each change will have.
 - Mitigate the risk by contacting makers.
 
-More information: [Data Loss Prevention policies](../../admin/wp-data-loss-prevention)
+More information: [Data Loss Prevention policies](/power-platform/admin/wp-data-loss-prevention)
 
 **Permission**: Intended to be used only by admins. Power Platform Service Admin or Global Admin permission is required. Share this app with your CoE admins.
 

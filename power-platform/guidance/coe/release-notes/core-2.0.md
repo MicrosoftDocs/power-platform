@@ -28,7 +28,7 @@ Environment capacity and add-ons are now stored and can be reported on. New tabl
 
 ## Power BI - Direct Query
 
-The Power BI dashboard has been updated to use Direct Query to connect to Microsoft Dataverse, therefore TDS Endpoint has to be enabled for the environment: [Manage feature settings](../../admin/settings-features).
+The Power BI dashboard has been updated to use Direct Query to connect to Microsoft Dataverse, therefore TDS Endpoint has to be enabled for the environment: [Manage feature settings](/power-platform/admin/settings-features).
 
 Viewers of the Power BI Dashboard will need read access to the Dataverse tables to view data.
 
