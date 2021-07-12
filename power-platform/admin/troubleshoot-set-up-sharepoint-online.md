@@ -26,7 +26,7 @@ This topic explains how to fix common issues that may occur with SharePoint docu
 
 If **Documents** is missing from entities such as account, use the following to restore.
 
-![Documents](media/crm-itpro-crmo365tg-seldoc.png "Documents")
+![Documents.](media/crm-itpro-crmo365tg-seldoc.png "Documents")
 
 1. Make sure you have the System Administrator security role or equivalent permissions.
     Check your security role:
@@ -64,7 +64,7 @@ If FetchXML or LayoutXML are malformed, use the following to restore.
     1. Follow the steps in [View your user profile](/powerapps/user/view-your-user-profile).
     2. Don't have the correct permissions? Contact your system administrator.
 
-2. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**, go to **Settings** > **Customizations** > **Solutions**. 
+2. In the web app, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**, go to **Settings** > **Customizations** > **Solutions**. 
 3. Create a solution (named SharePointDocumentSolution). For more information, see [Create a solution](/powerapps/maker/canvas-apps/add-app-solution).
 4. Choose **Entities** > **Add Existing** > **Entity** > find and add **SharePoint Document** entity  (select all fields, forms, views). 
 5. Select **Save** and **Close**.
@@ -76,7 +76,7 @@ If FetchXML or LayoutXML are malformed, use the following to restore.
 11. Search LayoutXml of Document associated grid (search for *Document Associated*).
     
     > [!div class="mx-imgBorder"] 
-    > ![Search for Document Associated](media/sharepoint-document-associated-grid.png "Search for Document Associated")  -->
+    > ![Search for Document Associated.](media/sharepoint-document-associated-grid.png "Search for Document Associated")  -->
 
 10. Extract the exported solution zip file (downloaded file from Step 8).  
 11. In the solution contents folder, locate and then open **Solution.xml**.
@@ -89,7 +89,7 @@ If FetchXML or LayoutXML are malformed, use the following to restore.
 16. Search layoutxml of Document associated grid (search for *Document Associated*).
     
     > [!div class="mx-imgBorder"] 
-    > ![Search for Document Associated](media/sharepoint-document-associated-grid.png "Search for Document Associated")
+    > ![Search for Document Associated.](media/sharepoint-document-associated-grid.png "Search for Document Associated")
 
 17. Make the changes as indicated below for the layoutxml section:
 
@@ -161,7 +161,7 @@ If FetchXML or LayoutXML are malformed, use the following to restore.
 21. Search layoutxml of All SharePoint Document (search for *All SharePoint Document*).
 
     > [!div class="mx-imgBorder"] 
-    > ![Search layoutxml for All SharePoint Document](media/search-layoutxml-sharepoint.png "Search layoutxml for All SharePoint Document")
+    > ![Search layoutxml for All SharePoint Document.](media/search-layoutxml-sharepoint.png "Search layoutxml for All SharePoint Document")
 
 22. Make the changes as indicated below for the layoutxml section:
 
@@ -226,7 +226,7 @@ If FetchXML or LayoutXML are malformed, use the following to restore.
 26. Search layoutxml of OneNote SharePoint Document (search for *OneNote SharePoint Document*).
 
     > [!div class="mx-imgBorder"] 
-    > ![Search layoutxml for OneNote SharePoint Document](media/search-layoutxml-onenote.png "Search layoutxml for OneNote SharePoint Document")
+    > ![Search layoutxml for OneNote SharePoint Document.](media/search-layoutxml-onenote.png "Search layoutxml for OneNote SharePoint Document")
 
 27. Make the changes as indicated below for the layoutxml section:
 
@@ -330,7 +330,7 @@ This error message can occur when the SharePoint site that is configured with do
 2. Open the **SharePoint Site** record that has been renamed and enter the **Absolute URL** with new URL.
 
     > [!div class="mx-imgBorder"] 
-    > ![Enter SharePoint relative URL](media/fix-renamed-sp-site.png "Enter SharePoint relative URL")
+    > ![Enter SharePoint relative URL.](media/fix-renamed-sp-site.png "Enter SharePoint relative URL")
 
 3. Select **Save & Close**.
 

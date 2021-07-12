@@ -49,11 +49,11 @@ When you use [!INCLUDE[pn_microsoft_sharepoint_online](../includes/pn-microsoft-
   
 4. On the Home page, select **SHARE** (upper-right corner).  
   
-   ![SharePoint Share Settings](../admin/media/sharepoint-share-settings.png "SharePoint Share Settings")  
+   ![SharePoint Share Settings.](../admin/media/sharepoint-share-settings.png "SharePoint Share Settings")  
   
 5. To view the default permissions for your team site, select **lots of people**.  
   
-   ![Share Team site](../admin/media/crm-itpro-crmo365tg2-shareteamsite.png "Share Team site")  
+   ![Share Team site.](../admin/media/crm-itpro-crmo365tg2-shareteamsite.png "Share Team site")  
   
 6. By default, all users in your [!INCLUDE[pn_MS_Office_365](../includes/pn-ms-office-365.md)] organization are able to add and edit documents on the Team [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site. To invite others, choose **Invite people** and add people external to your organization to share documents.  
   
@@ -69,7 +69,7 @@ For more information about [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepo
 > [!IMPORTANT]
 >  Server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration uses the entity display name to build the SharePoint library. When you upgrade to server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration, be sure to check that the display names in your document library on [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] match the entity display names. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] ["Validation Error" when you try to configure server-based SharePoint integration for Microsoft Dynamics CRM Online and SharePoint Online](https://go.microsoft.com/fwlink/p/?LinkID=402112).  
   
- ![SharePoint library name and entity display name](../admin/media/crm-itpro-crmo365tg-sharepointname.png "SharePoint library name and entity display name")  
+ ![SharePoint library name and entity display name.](../admin/media/crm-itpro-crmo365tg-sharepointname.png "SharePoint library name and entity display name")  
   
  These names should match.  
   
@@ -78,7 +78,7 @@ For more information about [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepo
 ### Configure a new organization  
  If your organization has not deployed document management, when a System Administrator logs in an alert message will be displayed to enable server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration.  
   
- ![Enable Server-Based SharePoint Integration alert](../admin/media/crm-and-sharepoint-online-enable-now.png "Enable Server-Based SharePoint Integration alert")  
+ ![Enable Server-Based SharePoint Integration alert.](../admin/media/crm-and-sharepoint-online-enable-now.png "Enable Server-Based SharePoint Integration alert")  
   
 > [!NOTE]
 >  If you don't see the alert and have not previously enabled server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration, clear your browser cache or open customer engagement apps using [!INCLUDE[pn_Internet_Explorer](../includes/pn-internet-explorer.md)] with InPrivate browsing to have the alert display again. Once you configure server-based integration, the alert will no longer appear.  
@@ -91,14 +91,14 @@ For more information about [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepo
   
 4. Choose **Online** for where your [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] sites are located, and then choose **Next**.  
   
-   ![Select Online as the SharePoint sites location](../admin/media/crmandsharepointonlineenablestep2.png "Select Online as the SharePoint sites location")  
+   ![Select Online as the SharePoint sites location.](../admin/media/crmandsharepointonlineenablestep2.png "Select Online as the SharePoint sites location")  
   
 5. If your customer engagement apps are not connected to a [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] online site, enter the URL (for example <https://contoso.sharepoint.com>) of your [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site that you will use for auto folder creation, and then choose **Next**.  
   
    > [!TIP]
    >  To see your [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site collections, in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], select **Admin centers** > **SharePoint**, and then select **site collections**.  
   
-   ![Enter the URL of the SharePoint site](../admin/media/crmandsharepointonlineenablestep3.png "Enter the URL of the SharePoint site")  
+   ![Enter the URL of the SharePoint site.](../admin/media/crmandsharepointonlineenablestep3.png "Enter the URL of the SharePoint site")  
   
 6. The URL will be checked for being a valid [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] online site and for existing in the same [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] tenant as your organization. After enabling server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration you can't go back to the previous client-side integration. Choose **Enable**.  
 
@@ -118,23 +118,23 @@ Once server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short
   
 3. On the nav bar, select the down arrow next to the account name, and then select **Documents**.  
   
-   ![Select Documents for an account](../admin/media/crm-itpro-crmo365tg-seldoc.png "Select Documents for an account")  
+   ![Select Documents for an account.](../admin/media/crm-itpro-crmo365tg-seldoc.png "Select Documents for an account")  
   
 4. Select **Upload**, and then browse to a document to upload to the new folder in your [!INCLUDE[pn_MS_Office_365](../includes/pn-ms-office-365.md)][!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)] Team site.  
   
-   ![Add a document](../admin/media/crm-itpro-crmo365tg-crmadddoc.png "Add a document")  
+   ![Add a document.](../admin/media/crm-itpro-crmo365tg-crmadddoc.png "Add a document")  
   
 5. Select a folder location, and then select **Ok**.  
   
 6. To see the document in your [!INCLUDE[pn_MS_Office_365](../includes/pn-ms-office-365.md)][!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)] Team site, select to the left of the document name (you'll see a check mark), and then select **Open Location**.  
   
-![Microsoft 365 Team Site shared document](../admin/media/crm-itpro-crmo365tg-teamdocshare.png "Microsoft 365 Team Site shared document")  
+![Microsoft 365 Team Site shared document.](../admin/media/crm-itpro-crmo365tg-teamdocshare.png "Microsoft 365 Team Site shared document")  
   
 7. Select **Site Contents** to see all the document libraries created for the managed entities you selected.  
   
     The entities you selected to be managed by Document Management appear as document libraries (for example: Account, Article, Case, Lead, Opportunity, Product, Quote, and Sales Literature).  
   
-   ![Microsoft 365 Team Site all libraries](../admin/media/crm-itpro-crmo365tg-teamalllib.png "Microsoft 365 Team Site all libraries")  
+   ![Microsoft 365 Team Site all libraries.](../admin/media/crm-itpro-crmo365tg-teamalllib.png "Microsoft 365 Team Site all libraries")  
  
 ## Known issue
 
@@ -160,12 +160,12 @@ As a workaround, you can set the unmanaged devices policy to "Allow full access 
 3. In the SharePoint admin center, select **access control** in the left pane.
 
    > [!div class="mx-imgBorder"] 
-   > ![SharePoint access control](media/sharepoint-admin-center-access-control.png "SharePoint access control")
+   > ![SharePoint access control.](media/sharepoint-admin-center-access-control.png "SharePoint access control")
 
 4. Under **Unmanaged devices**, select **Allow full access from desktop apps, mobile apps, and the web**.
 
    > [!div class="mx-imgBorder"] 
-   > ![SharePoint unmanaged devices allow full accessl](media/sharepoint-unmanaged-devices-allow-full-access.png "SharePoint unmanaged devices allow full access")
+   > ![SharePoint unmanaged devices allow full accessl.](media/sharepoint-unmanaged-devices-allow-full-access.png "SharePoint unmanaged devices allow full access")
 
 5. Select **Ok**.
 

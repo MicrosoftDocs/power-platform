@@ -28,7 +28,7 @@ To see the status of your environments:
 3. Look for environments with **Inactive** status.
 
 > [!div class="mx-imgBorder"] 
-> ![Inactive environment](media/inactive-environment.png "Inactive environment")
+> ![Inactive environment.](media/inactive-environment.png "Inactive environment")
 
 ## Scope
 

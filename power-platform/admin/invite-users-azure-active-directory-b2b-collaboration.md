@@ -74,11 +74,11 @@ You can invite other users to access your environment. The [!INCLUDE[pn_Office_3
   
    Your invited user will receive an email invitation to get started with B2B user collaboration.  
   
-   ![Email invitation sent to new user](../admin/media/email-invitation-sent-new-user.png "Email invitation sent to new user")  
+   ![Email invitation sent to new user.](../admin/media/email-invitation-sent-new-user.png "Email invitation sent to new user")  
   
    When your user accepts the invitation by clicking on the **Get Started** link on the invitation email, they will be prompted to accept the invitation.  
   
-   ![Accept the invitation](../admin/media/accept-invitation-dynamics-365.png "Accept the invitation")  
+   ![Accept the invitation.](../admin/media/accept-invitation-dynamics-365.png "Accept the invitation")  
   
 > [!NOTE]
 >  Until you add a license to the user account, the user will not have access to customer engagement apps. Follow the steps below to add a license through the [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] portal.  
@@ -90,11 +90,11 @@ You can invite other users to access your environment. The [!INCLUDE[pn_Office_3
   
 2. Click on the invited user, and then click **Profile**.  
   
-   ![User Profile button in Azure Active Directory](../admin/media/user-profile-button-azure-active-directory.png "User Profile button in Azure Active Directory")  
+   ![User Profile button in Azure Active Directory.](../admin/media/user-profile-button-azure-active-directory.png "User Profile button in Azure Active Directory")  
   
 3. Update **First name**, **Last name**, and **Usage location**.  
   
-   ![Update Azure Active Directory user profile](../admin/media/update-azure-active-directory-user-profile.png "Update Azure Active Directory user profile")  
+   ![Update Azure Active Directory user profile.](../admin/media/update-azure-active-directory-user-profile.png "Update Azure Active Directory user profile")  
   
 4. Click **Save**, and then close the Profile blade.  
   
@@ -105,15 +105,15 @@ You can invite other users to access your environment. The [!INCLUDE[pn_Office_3
   
 2. Click on the invited user, and then click **Licenses**.  
   
-   ![Assign a license with the Azure portal](../admin/media/assign-license-azure-portal.png "Assign a license with the Azure portal")  
+   ![Assign a license with the Azure portal.](../admin/media/assign-license-azure-portal.png "Assign a license with the Azure portal")  
   
-3. Click ![New or Add button](../admin/media/plus-2.png "New or Add button")**Assign**.  
+3. Click ![New or Add button.](../admin/media/plus-2.png "New or Add button")**Assign**.  
   
 4. Click **Configure required settings**.  
   
 5. Select the product to license.  
   
-   ![Click Assign to see the list of licenses](../admin/media/click-assign-list-licenses.png "Click Assign to see the list of licenses")  
+   ![Click Assign to see the list of licenses.](../admin/media/click-assign-list-licenses.png "Click Assign to see the list of licenses")  
   
 6. Click **Select**, and then click **Assign**.  
   

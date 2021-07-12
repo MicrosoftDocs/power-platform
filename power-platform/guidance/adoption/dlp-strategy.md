@@ -95,7 +95,7 @@ As expected, any new environments that are created in Contoso will map to the or
 
 This setup of tenant-centric DLP policies doesn't prevent environment admins from coming up with their own environment-level DLP policies, if they want to introduce additional restrictions or to classify custom connectors.
 
-![How Contoso set up their DLP policy](media/dlp-strategy_.png "How Contoso set up their DLP policy")
+![How Contoso set up their DLP policy.](media/dlp-strategy_.png "How Contoso set up their DLP policy")
 
 ## Set up DLP policies
 

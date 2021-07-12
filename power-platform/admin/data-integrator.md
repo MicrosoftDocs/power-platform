@@ -32,7 +32,7 @@ The Data Integrator (for Admins) is a point-to-point integration service used to
 The Data Integrator (for Admins) also supports process-based integration scenarios like Prospect to Cash that provide direct synchronization between Finance and Operations apps and Dynamics 365 Sales. The Prospect to Cash templates that are available with the data integration feature enable the flow of data for accounts, contacts, products, sales quotations, sales orders, and sales invoices between Finance and Operations and Sales. While data is flowing between Finance and Operations and Sales, you can perform sales and marketing activities in Sales, and you can handle order fulfillment by using inventory management in Finance and Operations. 
 
 > [!div class="mx-imgBorder"]
-> ![Prospect to Cash](media/data-integrator/ProspectToCash631.png "Prospect to Cash")
+> ![Prospect to Cash.](media/data-integrator/ProspectToCash631.png "Prospect to Cash")
 
 The Prospect to Cash integration enables sellers to handle and monitor their sales processes with the strengths from Dynamics 365 Sales, while all aspects of fulfillment and invoicing happen using the rich functionality in Finance and Operations. With Microsoft Dynamics 365 Prospect to Cash integration, you get the combined power from both systems. 
 
@@ -50,7 +50,7 @@ The Data Integrator (for Admins) consists of the Data Integration platform, out-
 Integration templates serve as a blueprint with predefined entities and field mappings to enable flow of data from source to destination. It also provides the ability to transform the data before importing it. Many times, the schema between the source and destinations apps can be very different and a template with predefined entities and field mappings serves as a great starting point for an integration project.  
 
 > [!div class="mx-imgBorder"]
-> ![Data Integration platform](media/data-integrator/DIPlatform.PNG "Data Integration platform")
+> ![Data Integration platform.](media/data-integrator/DIPlatform.PNG "Data Integration platform")
 
 ## How to set up a data integration project
 
@@ -77,14 +77,14 @@ Before you can create a data integration project, you must provision a connectio
 3. You can either select a connection from the list of connections or search for your connection.
 
     > [!div class="mx-imgBorder"] 
-    > ![Create connection](media/data-integrator/CreateConnection780.png "Create connection")
+    > ![Create connection.](media/data-integrator/CreateConnection780.png "Create connection")
 
 4. Once you select your connection, select **Create**. Then you will be prompted for credentials.
 
 5. After you provide your credentials, the connection will be listed under your connections.
 
     > [!div class="mx-imgBorder"] 
-    > ![Connection list](media/data-integrator/CreateConnection1780.png "Connection list")
+    > ![Connection list.](media/data-integrator/CreateConnection1780.png "Connection list")
 
 > [!NOTE]
 > Please make sure that the account you specify for each connection has access to entities for the corresponding applications. Additionally, the account for each connection can be in a different tenant. 
@@ -104,7 +104,7 @@ Connection sets are a collection of two connections, environments for the connec
 4. Provide a name for your connection set.
   
     > [!div class="mx-imgBorder"] 
-    > ![Create connection set](media/data-integrator/CreateConnectionSet1780.png "Create connection set")
+    > ![Create connection set.](media/data-integrator/CreateConnectionSet1780.png "Create connection set")
   
 5. Choose the connections you created earlier and select the appropriate environment.
 
@@ -120,7 +120,7 @@ Connection sets are a collection of two connections, environments for the connec
 9. You will see the new connection set you just created under the Connection sets list page.
     
     > [!div class="mx-imgBorder"] 
-    > ![Connection set list](media/data-integrator/CreateConnectionSet2780.png "Connection set list")
+    > ![Connection set list.](media/data-integrator/CreateConnectionSet2780.png "Connection set list")
 
 Your connection set is ready to be used across various integration projects.
 
@@ -139,33 +139,33 @@ Projects enable the flow of data between systems. A project contains mappings fo
 3. While in the **Projects** tab, select **New Project** in the top right corner.
 
     > [!div class="mx-imgBorder"] 
-    > ![Create project](media/data-integrator/CreateNewProject780.png "Create project")
+    > ![Create project.](media/data-integrator/CreateNewProject780.png "Create project")
 
 4. Provide a name for your integration project.
 
 5. Select one of the available templates (or [create your own template](#how-to-create-your-own-template)). In this case, we are moving the Products entity from Finance and Operations to Sales.
 
     > [!div class="mx-imgBorder"] 
-    > ![Select template to create new project](media/data-integrator/CreateNewProjectSelectTemplate780.png "Select template to create new project")
+    > ![Select template to create new project.](media/data-integrator/CreateNewProjectSelectTemplate780.png "Select template to create new project")
 
 6. Select **Next** and choose a connection set you created earlier (or [create a new connection set](#how-to-create-a-connection-set)).
 
 7. Make sure you have chosen the right one by confirming the connection and environment names.
 
     > [!div class="mx-imgBorder"] 
-    > ![Create a new connection set](media/data-integrator/CreateNewProjectSelectConnectionSet780.png "Create a new connection set")
+    > ![Create a new connection set.](media/data-integrator/CreateNewProjectSelectConnectionSet780.png "Create a new connection set")
 
 8. Select **Next** and then choose the legal entity to business unit mappings.
 
     > [!div class="mx-imgBorder"] 
-    > ![Create new legal entity mapping](media/data-integrator/CreateNewProjectLegalEntityMapping780.png "Create new legal entity mapping")
+    > ![Create new legal entity mapping.](media/data-integrator/CreateNewProjectLegalEntityMapping780.png "Create new legal entity mapping")
 
 9. Review and accept the privacy notice and consent on the next screen.
 
 10. Proceed to create the project and then run the project which in turn executes the project.
 
     > [!div class="mx-imgBorder"] 
-    > ![Run project](media/data-integrator/RunProject780.png "Run project")
+    > ![Run project.](media/data-integrator/RunProject780.png "Run project")
 
     On this screen, you will notice several tabs—**Scheduling** and **Execution history**—along with some buttons—**Add task**, **Refresh entities**, and **Advanced Query**—that will be described later in this article.
 
@@ -176,19 +176,19 @@ Execution history shows the history of all project executions with project name,
 -   Example of project execution history.
 
     > [!div class="mx-imgBorder"] 
-    > ![Project execution history](media/data-integrator/ExecutionHistorySuccessFailures4780.png "Project execution history")
+    > ![Project execution history.](media/data-integrator/ExecutionHistorySuccessFailures4780.png "Project execution history")
 
 -   Example of successful execution, showing status as completed with \# of upserts. (Update Insert is a logic to either update the record, if it already exists, or to insert new record.)
 
     > [!div class="mx-imgBorder"] 
-    > ![Execution success](media/data-integrator/ExecutionHistorySuccess2780.png "Execution success")
+    > ![Execution success.](media/data-integrator/ExecutionHistorySuccess2780.png "Execution success")
 
 -   For execution failures, you can drill down to see the root cause.
 
     Here is an example of a failure with project validation errors. In this case, the project validation error is due to missing source fields in the entity mappings.
 
     > [!div class="mx-imgBorder"] 
-    > ![Execution history failure](media/data-integrator/ExecutionHistoryFailures3780.png "Execution history failure")
+    > ![Execution history failure.](media/data-integrator/ExecutionHistoryFailures3780.png "Execution history failure")
 
 -   If the project execution is in 'ERROR' state, then it will retry execution at the next scheduled run.
 
@@ -218,19 +218,19 @@ After you create an integration project, you get the option to run it manually o
     Either select the project and select the **Scheduling** tab or launch the scheduler from the project list page by clicking the ellipsis next to the project name.
 
     > [!div class="mx-imgBorder"] 
-    > ![Schedule-based writes](media/data-integrator/Schedulebasedwrites780.png "Schedule-based writes")
+    > ![Schedule-based writes.](media/data-integrator/Schedulebasedwrites780.png "Schedule-based writes")
 
 3. Select **Recur every** and once you have completed all the fields, select **Save schedule**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Save schedule](media/data-integrator/Schedulebasedwrites1780.png "Save schedule")
+    > ![Save schedule.](media/data-integrator/Schedulebasedwrites1780.png "Save schedule")
 
 You can set a frequency as often as 1 minute or have it recur a certain number of hours, days, weeks, or months. Note that the next refresh won't start until the previous project task completes its run.
 
 Also note that under Notifications, you can opt in for email-based alert notifications, which would alert you on job executions that either completed with warnings and/or failed due to errors. You can provide multiple recipients, including groups separated by commas.
 
 > [!div class="mx-imgBorder"] 
-> ![Email notification](media/data-integrator/EmailNotification780.png "Email notification")
+> ![Email notification.](media/data-integrator/EmailNotification780.png "Email notification")
 
 > [!NOTE]
 > - Currently, we support scheduling 50 integration projects at any given time per paid tenant. However you can create more projects and run them interactively.
@@ -261,12 +261,12 @@ You can customize projects and templates in these ways:
 2. Select the project for which you want to customize field mappings and then select the arrow between source and destination fields.
 
     > [!div class="mx-imgBorder"] 
-    > ![Field mapping](media/data-integrator/FieldMapping780.png "Field mapping")
+    > ![Field mapping.](media/data-integrator/FieldMapping780.png "Field mapping")
 
 3. This takes you to the mapping screen where you can add a new mapping by selecting **Add mapping** at the top right corner or **Customize existing mappings** from the dropdown list.
 
     > [!div class="mx-imgBorder"] 
-    > ![Field mapping customize](media/data-integrator/FieldMappingCustomize780.png "Field mapping customize")
+    > ![Field mapping customize.](media/data-integrator/FieldMappingCustomize780.png "Field mapping customize")
 
 4. Once you have customized your field mappings, select **Save**.
 
@@ -285,41 +285,41 @@ You can customize projects and templates in these ways:
 5. Before you save and/or run the project, at the top right corner, select **Add task**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Customize template](media/data-integrator/CustomizeTemplate780.png "Customize template")
+    > ![Customize template.](media/data-integrator/CustomizeTemplate780.png "Customize template")
 
     This will launch the **Add task** dialog.
 
 6. Provide a meaningful task name and add source and destination entities of your choice.
 
     > [!div class="mx-imgBorder"] 
-    > ![Customize template add task](media/data-integrator/CustomizeTemplateAddtask75.png "Customize template add task")
+    > ![Customize template add task.](media/data-integrator/CustomizeTemplateAddtask75.png "Customize template add task")
 
 7. The dropdown list shows you all your source and destination entities.
 
     > [!div class="mx-imgBorder"] 
-    > ![Customize template add task2](media/data-integrator/CustomizeTemplateAddtask175.png "Customize template add task2")
+    > ![Customize template add task2.](media/data-integrator/CustomizeTemplateAddtask175.png "Customize template add task2")
 
     In this case, a new task was created to sync User entity from SalesForce to Users entity in Dataverse.
 
     > [!div class="mx-imgBorder"] 
-    > ![Customize template add task3](media/data-integrator/CustomizeTemplateAddtask275.png "Customize template add task3")
+    > ![Customize template add task3.](media/data-integrator/CustomizeTemplateAddtask275.png "Customize template add task3")
 
 8. Once you create the task, you will see your new task listed and you can delete the original task.
 
     > [!div class="mx-imgBorder"] 
-    > ![Customize template add task4](media/data-integrator/CustomizeTemplateAddtask3780.png "Customize template add task4")
+    > ![Customize template add task4.](media/data-integrator/CustomizeTemplateAddtask3780.png "Customize template add task4")
 
 9. You just created a new template—in this case, a template to pull User entity data from SalesForce to Dataverse. Select **Save** to save your customization.
 
 10. Follow the steps to customize field mappings for this new template. You could run this project and/or save the project as a template from the **Project list** page.
 
     > [!div class="mx-imgBorder"] 
-    > ![Project list](media/data-integrator/CustomizeTemplateSaveAsTemplate780.png "Project list")
+    > ![Project list.](media/data-integrator/CustomizeTemplateSaveAsTemplate780.png "Project list")
 
 11. Provide a name and description and/or share with others in your organization.
 
     > [!div class="mx-imgBorder"] 
-    > ![Name and description](media/data-integrator/CustomizeTemplateSaveAsTemplate175.png "Name and description")
+    > ![Name and description.](media/data-integrator/CustomizeTemplateSaveAsTemplate175.png "Name and description")
 
 **To create your own template from blank templates**
 
@@ -330,7 +330,7 @@ You can customize projects and templates in these ways:
    For this example, choose the **Sales to Fin and Ops** template since we want to move data from Finance and Operations apps to Dynamics 365 Sales.
     
     > [!div class="mx-imgBorder"] 
-    > ![Create data integration project](media/create-data-integration-project.png "Create data integration project")
+    > ![Create data integration project.](media/create-data-integration-project.png "Create data integration project")
 
 4. Follow the steps 6 through 9 <a href="#CreateProject">here</a> to finish creating a data integration project. Select **Save**.
 
@@ -338,32 +338,32 @@ You can customize projects and templates in these ways:
    In this case, for demo purposes, we will create an **Activities Sales to Fin and Ops** task by picking **Activities** entity for Finance and Operations apps and Dynamics 365 Sales. Select **Create**.
 
     > [!div class="mx-imgBorder"] 
-    > ![ActivitiesSales to Fin and Ops task](media/activities-sales-fin-opps-task.png "ActivitiesSales to Fin and Ops task")
+    > ![ActivitiesSales to Fin and Ops task.](media/activities-sales-fin-opps-task.png "ActivitiesSales to Fin and Ops task")
 
 6. You'll see a new task has been added **Activities Sales to Fin and Ops**. Select **Save** to save your changes.
 
     > [!div class="mx-imgBorder"] 
-    > ![New task added](media/new-task-added.png "New task added")
+    > ![New task added.](media/new-task-added.png "New task added")
 
 7. The project is created. Select **Save as template** from the **Projects** list page.
 
     > [!div class="mx-imgBorder"] 
-    > ![Save as template](media/save-as-template.png "Save as template")
+    > ![Save as template.](media/save-as-template.png "Save as template")
 
 8. Provide and name and description, then select **Save**. Additionally, select **Share with everyone in my organization** to share this template.
 
     > [!div class="mx-imgBorder"] 
-    > ![Save project as template](media/save-describe-share.png "Save project as template")
+    > ![Save project as template.](media/save-describe-share.png "Save project as template")
 
 You'll see the newly created template listed on the **Templates** list page.
 
 > [!div class="mx-imgBorder"] 
-> ![Newly created template](media/newly-created-template.png "Newly created template")
+> ![Newly created template.](media/newly-created-template.png "Newly created template")
 
 Additionally, after creating a new integration project, when you choose **Select a template** you'll see your newly created template as part of the **Select a template** list.
 
 > [!div class="mx-imgBorder"] 
-> ![New data integration project](media/new-data-integration-project.png "New data integration project")
+> ![New data integration project.](media/new-data-integration-project.png "New data integration project")
 
 
 ## Advanced data transformation and filtering 
@@ -379,62 +379,62 @@ With Power Query support, we now provide advanced filtering and data transformat
 2. Select the project where you want to enable advanced query and then select **Advanced Query**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Select Advanced Query](media/data-integrator/EnablePQ1780.png "Select Advanced Query")
+    > ![Select Advanced Query.](media/data-integrator/EnablePQ1780.png "Select Advanced Query")
 
 3. You will get a warning that enabling advanced query is a one-way operation and cannot be undone. Select **OK** to proceed and then select the source and destination mapping arrow.
 
     > [!div class="mx-imgBorder"] 
-    > ![Warning](media/data-integrator/EnablePQ275.png "Warning")
+    > ![Warning.](media/data-integrator/EnablePQ275.png "Warning")
 
 4. You are now presented with the familiar entity mapping page with a link to launch Advanced Query and Filtering.
 
     > [!div class="mx-imgBorder"] 
-    > ![Advanced Query and Filtering](media/data-integrator/EnablePQ3780.png "Advanced Query and Filtering")
+    > ![Advanced Query and Filtering.](media/data-integrator/EnablePQ3780.png "Advanced Query and Filtering")
 
 5. Select **to link** to launch the Advanced Query and Filtering user interface, which gives you source field data in Microsoft Excel-type columns.
 
     > [!div class="mx-imgBorder"] 
-    > ![Select to link](media/data-integrator/EnablePQ4780.png "Select to link")
+    > ![Select to link.](media/data-integrator/EnablePQ4780.png "Select to link")
 
 6. From the top menu, you get several options for transforming data such as **Add conditional column**, **Duplicate column**, and **Extract**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Add column](media/data-integrator/EnablePQAddColumn75.png "Add column")
+    > ![Add column.](media/data-integrator/EnablePQAddColumn75.png "Add column")
 
 7. You can also right-click any column for more options such as **Remove columns**, **Remove duplicates**, and **Split column**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Right-click column](media/data-integrator/EnablePQAddColumn180.png "Right-click column")
+    > ![Right-click column.](media/data-integrator/EnablePQAddColumn180.png "Right-click column")
 
 8. You also can filter by clicking each column and using Excel-type filters.
 
     > [!div class="mx-imgBorder"] 
-    > ![Enable filtering](media/data-integrator/EnablePQFiltering80.png "Enable filtering")
+    > ![Enable filtering.](media/data-integrator/EnablePQFiltering80.png "Enable filtering")
 
 9. Default value transforms can be achieved using the conditional column. To do this, from the **Add Column** dropdown list, select **Add Conditional Column** and enter the name of the new column. Fill in both **Then** and **Else** with what should be the default value, using any field and value for **If** and **equal to**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Add conditional column](media/data-integrator/EnablePQDefaultValueTransforms2780.png "Add conditional column")
+    > ![Add conditional column.](media/data-integrator/EnablePQDefaultValueTransforms2780.png "Add conditional column")
 
 10. Notice the **each** clause in the *fx* editor, at the top.
 
     > [!div class="mx-imgBorder"] 
-    > ![fx editor](media/data-integrator/EnablePQDefaultValueTransforms2780.png "fx editor")
+    > ![fx editor.](media/data-integrator/EnablePQDefaultValueTransforms2780.png "fx editor")
 
 11. Fix the **each** clause in the *fx* editor and select **OK**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Fix the each clause](media/data-integrator/EnablePQDefaultValueTransforms5780.png "Fix the each clause")
+    > ![Fix the each clause.](media/data-integrator/EnablePQDefaultValueTransforms5780.png "Fix the each clause")
 
 12. Each time you make a change, you apply a step. You can see the applied steps on the right-hand pane (scroll to the bottom to see the latest step). You can undo a step in case you need to edit. Additionally, you can go to the Advanced editor by right-clicking the **QrySourceData** on the left pane, at the top to view the M language that gets executed behind the scenes, with the same steps.
 
     > [!div class="mx-imgBorder"] 
-    > ![Advanced editor](media/data-integrator/EnablePQDefaultValueTransforms4780.png "Advanced editor")
+    > ![Advanced editor.](media/data-integrator/EnablePQDefaultValueTransforms4780.png "Advanced editor")
 
 13. Select **OK** to close the Advanced Query and Filtering interface and then, on the mapping task page, pick the newly created column as the source to create the mapping accordingly.
 
     > [!div class="mx-imgBorder"] 
-    > ![Pick new column](media/data-integrator/EnablePQDefaultValueTransforms6780.png "Pick new column")
+    > ![Pick new column.](media/data-integrator/EnablePQDefaultValueTransforms6780.png "Pick new column")
 
 For more information on Power Query, see [Power Query documentation](/power-query/).
 

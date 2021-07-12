@@ -51,7 +51,7 @@ Some of your makers will create apps that you might want to reuse in other parts
 
 Power Apps out of the box doesn't support sharing organizational templates; however, you can export apps and upload them to a shared library.
 
-![Export an app](media/export-app.png "Export an app")
+![Export an app.](media/export-app.png "Export an app")
 
 As a starting point, you could upload the exported app with some metadata like category, description, connectors used, or a short manual of how to customize it to a SharePoint document library.
 
@@ -59,7 +59,7 @@ Once you have a few templates, you could build an app template catalog on top of
 
 The [nurture components of the Center of Excellence Starter Kit](../coe/nurture-components.md) contain a starting point:
 
-![Template catalog](../coe/media/coe68.png "Template catalog")
+![Template catalog.](../coe/media/coe68.png "Template catalog")
 
 ## Organization gallery for flows
 
@@ -67,11 +67,11 @@ Templates are a popular feature in Power Automate. They are a great learning too
 
 A feature called **Send a copy** allows you to send a copy of your flow to another recipient.
 
-![Send a copy of a flow](media/flow-template1.png "Send a copy of a flow")
+![Send a copy of a flow.](media/flow-template1.png "Send a copy of a flow")
 
 It works by sending them a link that they can click that will allow them to provision a copy of your flow. Once the flow is shared with them, the flow will also appear in a new tab within the templates feature called **Shared with me**.
 
-![Shared with me flow templates](media/flow-template.png "Shared with me flow templates")
+![Shared with me flow templates.](media/flow-template.png "Shared with me flow templates")
 
 When you use the **Send a copy** feature, it also allows you to provide an Office 365 group as the destination recipient. By sharing with this group, everyone in that group will now have access to implement that flow. Naturally, you can include as many people in that group as required. This allows you to create an organizational template gallery of flows.
 

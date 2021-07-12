@@ -65,7 +65,7 @@ A Visual Studio 2015 or later template (available for download) is used to creat
    3. Select **Dynamics 365 Package**.  
    4. Specify the name and location of the project, and click **OK**.  
 
-    ![New project for creating a custom package](./media/crm-sdkv6-packagedeployer-01.png)
+    ![New project for creating a custom package.](./media/crm-sdkv6-packagedeployer-01.png)
 
 <a name="Step2"></a>   
 

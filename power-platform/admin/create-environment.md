@@ -122,7 +122,7 @@ To create an environment with a database, you need 1GB available database capaci
 2. In the navigation pane, select **Environments**, and then select **New**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Create new environment](./media/new-environment.png "Create new environment")
+   > ![Create new environment.](./media/new-environment.png "Create new environment")
 
 3. Enter the following, and then select **Next**.
 
@@ -135,7 +135,7 @@ To create an environment with a database, you need 1GB available database capaci
    |Create a database for this environment? | Select **Yes**. |
 
    > [!div class="mx-imgBorder"] 
-   > ![Create new environment settings](./media/new-environment-page1.png "Create new environment settings")
+   > ![Create new environment settings.](./media/new-environment-page1.png "Create new environment settings")
 
 4. Enter the following, and then select **Save**.
 
@@ -149,7 +149,7 @@ To create an environment with a database, you need 1GB available database capaci
    |Security group | Select a security group to restrict access to this environment. |
 
    > [!div class="mx-imgBorder"] 
-   > ![Create new environment settings](./media/new-environment-page2-enable-apps.png "Create new environment settings")
+   > ![Create new environment settings.](./media/new-environment-page2-enable-apps.png "Create new environment settings")
    
 ## Create an environment without a database 
 You can create an environment without a database and use your own data store.
@@ -163,7 +163,7 @@ You need 1GB available database capacity.
 2. In the navigation pane, select **Environments**, and then select **New**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Create new environment](./media/new-environment.png "Create new environment")
+   > ![Create new environment.](./media/new-environment.png "Create new environment")
 
 3. Enter the following, and then select **Save**.
    
@@ -176,7 +176,7 @@ You need 1GB available database capacity.
    |Create a database for this environment? | Select **No**. |
 
    > [!div class="mx-imgBorder"] 
-   > ![Create new environment settings](./media/new-environment-page1-nodb.png "Create new environment settings")
+   > ![Create new environment settings.](./media/new-environment-page1-nodb.png "Create new environment settings")
 
 ## Setting an environment refresh cadence
 You can indicate how often you would prefer an environment to receive updates and features to certain Microsoft Power Platform services. You have two options to choose from after creating an environment.
@@ -195,7 +195,7 @@ To set refresh cadence:
 3. Select **Edit**
 
    > [!div class="mx-imgBorder"] 
-   > ![Select Edit](media/select-edit.png "Select Edit")
+   > ![Select Edit.](media/select-edit.png "Select Edit")
 
 4. Under **Refresh cadence**, choose the cadence type. 
 

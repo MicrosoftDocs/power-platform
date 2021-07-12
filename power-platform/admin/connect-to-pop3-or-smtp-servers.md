@@ -89,7 +89,7 @@ Follow these steps to connect customer engagement apps (Dynamics 365 Sales, Dyna
 
      If you leave the **Email processing form unapproved user and queues** at the default values (checked), you will need to approve emails and queues for user mailboxes as directed below in **Approve Email**.  
 
-     ![System Settings for server-side synchronization](../admin/media/crm-itpro-exchangeonlinessssettingspop.png "System Settings for server-side synchronization")  
+     ![System Settings for server-side synchronization.](../admin/media/crm-itpro-exchangeonlinessssettingspop.png "System Settings for server-side synchronization")  
 
 4.  Select **Save**.  
 
@@ -112,7 +112,7 @@ Follow these steps to connect customer engagement apps (Dynamics 365 Sales, Dyna
 
 4. Select all the mailboxes that you want to associate with the POP3-SMTP profile you created, select **Apply Default Email Settings**, verify the settings, and then select **OK**.  
 
-   ![Apply default email settings](../admin/media/apply-default-email-settings.png "Apply default email settings")  
+   ![Apply default email settings.](../admin/media/apply-default-email-settings.png "Apply default email settings")  
 
     By default, the mailbox configuration is tested and the mailboxes are enabled when you select **OK**.  
 

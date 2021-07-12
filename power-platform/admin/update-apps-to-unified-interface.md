@@ -24,14 +24,14 @@ When you enable Unified Interface Only, all your apps, including those designed 
 "You are using apps designed for the legacy web client. For best results, update your apps to Unified Interface."
 
 > [!div class="mx-imgBorder"] 
-> ![Message: using apps for legacy web client](media/message-using-app-legacy-web-client.png "Message: using apps for legacy web client")
+> ![Message: using apps for legacy web client.](media/message-using-app-legacy-web-client.png "Message: using apps for legacy web client")
 
 A similar notification will be visible to System Administrators whenever they use an app designed for the legacy web client, as shown below:
 
 "This app is designed for the legacy web client and might have features or customizations that aren't supported in Unified Interface. For best results, update it to Unified Interface."
 
 > [!div class="mx-imgBorder"] 
-> ![Message: using apps designed for legacy web client](media/message-app-designed-legacy-web-client.png "Message: using apps designed for legacy web client")
+> ![Message: using apps designed for legacy web client.](media/message-app-designed-legacy-web-client.png "Message: using apps designed for legacy web client")
 
 > [!TIP]
 > For information on enabling Unified Interface only mode, see [Enable Unified Interface Only](enable-unified-interface-only.md).

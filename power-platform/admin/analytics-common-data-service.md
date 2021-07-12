@@ -54,7 +54,7 @@ For more information on the different roles for managing your tenant across the 
 ## Home (default)  
 
 > [!div class="mx-imgBorder"] 
-> ![Dataverse analytics Home Section](./media/organization-insights-home-section.png "Dataverse analytics Home Section")  
+> ![Dataverse analytics Home Section.](./media/organization-insights-home-section.png "Dataverse analytics Home Section")  
 
 ### About this dashboard  
  This is the default dashboard that provides information on the number of active Dataverse users, storage usage, the most active workflows, and more.  
@@ -77,7 +77,7 @@ For more information on the different roles for managing your tenant across the 
 ## Active Users  
 
 > [!div class="mx-imgBorder"] 
-> ![Dataverse analytics Active Usage Section](./media/organization-insights-active-usage-section.png "Dataverse analytics Active Usage Section")  
+> ![Dataverse analytics Active Usage Section.](./media/organization-insights-active-usage-section.png "Dataverse analytics Active Usage Section")  
  
 ### About this dashboard  
  Use this dashboard to find out how many [!INCLUDE[pn_dyn_365](../includes/pn-dyn-365.md)] users there are, how many licenses are in use, what custom entities are used most frequently, and more.  
@@ -137,7 +137,7 @@ For more information on the different roles for managing your tenant across the 
 ## System Jobs  
 
 > [!div class="mx-imgBorder"] 
-> ![Dataverse analytics System Jobs Section](./media/organization-insights-system-jobs-section.png "Dataverse analytics System Jobs Section")
+> ![Dataverse analytics System Jobs Section.](./media/organization-insights-system-jobs-section.png "Dataverse analytics System Jobs Section")
    
 ### About this dashboard  
  Use this dashboard to monitor and troubleshoot workflows.  
@@ -171,7 +171,7 @@ For more information on the different roles for managing your tenant across the 
 ## Plug-ins  
 
 > [!div class="mx-imgBorder"] 
-> ![Dataverse analytics Plugins Section](./media/organization-insights-plugins-section.png "Dataverse analytics Plugins Section")  
+> ![Dataverse analytics Plugins Section.](./media/organization-insights-plugins-section.png "Dataverse analytics Plugins Section")  
 
 ### About this dashboard  
  Use this dashboard to monitor and troubleshoot plug-ins.  
@@ -203,7 +203,7 @@ For more information on the different roles for managing your tenant across the 
 ## API Call Statistics  
 
 > [!div class="mx-imgBorder"] 
-> ![Dataverse analytics API Call Statistics Section](./media/organization-insights-api-call-statistics-section.png "Dataverse analytics API Call Statistics Section")  
+> ![Dataverse analytics API Call Statistics Section.](./media/organization-insights-api-call-statistics-section.png "Dataverse analytics API Call Statistics Section")  
 
 ### About this dashboard  
  Use this dashboard to monitor and troubleshoot API calls.  
@@ -235,7 +235,7 @@ For more information on the different roles for managing your tenant across the 
 ## Mailbox Usage  
 
 > [!div class="mx-imgBorder"] 
-> ![Dataverse analytics Mailbox Usage Section](./media/organization-insights-mailbox-usage-section.png "Dataverse analytics Mailbox Usage Section")  
+> ![Dataverse analytics Mailbox Usage Section.](./media/organization-insights-mailbox-usage-section.png "Dataverse analytics Mailbox Usage Section")  
  
 ### About this dashboard  
 
@@ -282,7 +282,7 @@ All the download reports, except "Active Dynamics 365 Customer Engagement Plan U
 The "Active Dynamics 365 Customer Engagement Plan Users by Application" report always shows the last 30 days of data at the tenant level. 
 
 > [!div class="mx-imgBorder"] 
-> ![Dataverse analytics Download Section](./media/organization-insights-download-section.png "Dataverse analytics Download Section")  
+> ![Dataverse analytics Download Section.](./media/organization-insights-download-section.png "Dataverse analytics Download Section")  
 
 ### What's included  
 
@@ -310,12 +310,12 @@ The "Active Dynamics 365 Customer Engagement Plan Users by Application" report a
 Select **Change filters**.  
 
 > [!div class="mx-imgBorder"] 
-> ![Dataverse analytics change filters](./media/organization-insights-change-filters.png "Dataverse analytics change filters")  
+> ![Dataverse analytics change filters.](./media/organization-insights-change-filters.png "Dataverse analytics change filters")  
 
 Select the environment and time-period from the drop-down lists, and then select **Apply** to save the changes. All the Dataverse analytics reports are available using this selection. 
 
 > [!div class="mx-imgBorder"] 
-> ![Dataverse analytics change filters apply](./media/organization-insights-change-filters-apply.png "Dataverse analytics change filters apply")  
+> ![Dataverse analytics change filters apply.](./media/organization-insights-change-filters-apply.png "Dataverse analytics change filters apply")  
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -32,7 +32,7 @@ Action | Quota with the paid plan
 
 If the quota for **messages to a chatbot** is met, the user chatting with the chatbot will see a failure notice when they try to send a message. They'll be prompted to retry.
 
-![Error message in the chat bot window that says 'Send failed. Retry.'](media/requirements-quota-error.png "Error message in the chatbot window that says 'Send failed. Retry.'")
+![Error message in the chat bot window that says 'Send failed. Retry.'.](media/requirements-quota-error.png "Error message in the chatbot window that says 'Send failed. Retry.'")
  
 
 

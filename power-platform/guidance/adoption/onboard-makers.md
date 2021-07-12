@@ -31,7 +31,7 @@ The [core components](../coe/nurture-components.md) of the Center of Excellence 
 
 Even though we recommend that you use the CoE Starter Kit, alternatively the [hands-on lab](https://github.com/microsoft/powerapps-tools/blob/master/Administration/AdminInADay/LabMaterials/M03_Automation.docx) part of our admin-in-a-day training includes step-by-step instructions on how to set up a welcome email flow.
 
-![Sample welcome email to new makers](/power-platform/guidance/coe/media/coe5.png "Sample welcome email to new makers")
+![Sample welcome email to new makers.](/power-platform/guidance/coe/media/coe5.png "Sample welcome email to new makers")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

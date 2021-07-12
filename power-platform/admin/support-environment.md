@@ -79,7 +79,7 @@ Yes.
 To assist with diagnosing and resolving a support issue, you must consent to the creation of a [Minimal](copy-environment.md#copy-over-everything) or a [Full](copy-environment.md#copy-over-customizations-and-schemas-only) copy of the environment with the issue. The consent form shown below records your instructions to Microsoft for the creation of a support environment. 
 
 > [!div class="mx-imgBorder"] 
-> ![Consent for support environment](./media/consent-support-environment.png "Consent for support environment")
+> ![Consent for support environment.](./media/consent-support-environment.png "Consent for support environment")
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

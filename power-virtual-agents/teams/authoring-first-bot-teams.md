@@ -40,7 +40,7 @@ The very first step is to add the Power Virtual Agents app. Then you can create 
 
 1. Select **Apps** at the bottom of the navigation pane in Microsoft Teams
 
-    :::image type="content" source="media/first-bot-teams-apps.png" alt-text="The apps icon is at the bottom of the Teams side navigating bar":::
+    :::image type="content" source="media/first-bot-teams-apps.png" alt-text="The apps icon is at the bottom of the Teams side navigating bar.":::
 
 2. In the search box, type *power virtual agents* and then select the tile that appears. Select **Add for me** in the description window that pops up. This adds the app to the navigation panel.
 
@@ -83,7 +83,7 @@ The first time you create a bot in a team, it will take 1 to 10 minutes to build
 
 1. After the building process is finished, you can create a bot in your team. In the list of teams, select your team and then **New chatbot** to make your bot.
 
-   :::image type="content" source="media/first-bot-name.png" alt-text="The create a new bot window lets you enter a name and choose a language for the bot":::
+   :::image type="content" source="media/first-bot-name.png" alt-text="The create a new bot window lets you enter a name and choose a language for the bot.":::
 
 
 
@@ -94,7 +94,7 @@ You can delete bots to remove them from your team.
 
 1. Click the settings cog icon at the bottom of the Power Virtual Agents side navigation pane.
 
-    :::image type="content" source="media/settings-cog.png" alt-text="The settings icon is at the bottom of the side navigation pane and looks like a cog or gear":::
+    :::image type="content" source="media/settings-cog.png" alt-text="The settings icon is at the bottom of the side navigation pane and looks like a cog or gear.":::
 
 2. On the **General** tab, select **Delete bot**.
 

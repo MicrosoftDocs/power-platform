@@ -32,7 +32,7 @@ There are multiple ways to sign in and access your Dynamics 365 and Office apps.
 For admins and end users, when you sign in to https://office.com, you will see a page with Office tiles. The tiles that appear depend on what licenses you have. For example, if you have licenses for Office and Dynamics 365 apps, you'll see tiles for Office apps like [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)], [!INCLUDE[pn_onedrive](../includes/pn-onedrive.md)], and [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)], as well as a tile for Dynamics 365 apps.  
 
 > [!div class="mx-imgBorder"] 
-> ![Office tile page](../admin/media/office-365-welcome-page.png "Office tile page")  
+> ![Office tile page.](../admin/media/office-365-welcome-page.png "Office tile page")  
   
 Select the Dynamics 365 apps tile to go to the Dynamics 365 home page.   
   

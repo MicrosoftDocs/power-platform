@@ -26,7 +26,7 @@ Then, when you import a managed solution that was previously imported, the
 import logic detects the solution as an update and displays the following screen of options.
 
 > [!div class="mx-imgBorder"] 
-> ![Solution update detected upon import](media/solution-update-alm.png "Solution update detected upon import")
+> ![Solution update detected upon import.](media/solution-update-alm.png "Solution update detected upon import")
 
 More information: [Apply an update or upgrade for a solution](/powerapps/maker/common-data-service/update-solutions) 
 
@@ -107,7 +107,7 @@ For more information about version numbers, see [Clone solution and clone patch 
 ### Clone a solution  
  When you clone an unmanaged solution, the original solution and all patches related to the solution are rolled up into a newly created version of the original solution. After cloning, the new solution version contains the original entities plus any components or entities that are added in a patch. 
 
-![Clone a solution](media/cloned-solution.png)
+![Clone a solution.](media/cloned-solution.png)
 
 > [!IMPORTANT]
 > Cloning a solution merges the original solution and associated patches into a new base solution and removes the original solution and patches. 
