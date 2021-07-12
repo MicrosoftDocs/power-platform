@@ -6,6 +6,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/03/2020
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -39,7 +40,7 @@ search.app:
   
 2. In the upper-right corner of the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] admin center menu bar, click your organization.  
   
-   ![Choose your organization](media/data-center-choose-organization.png "Choose your organization")  
+   ![Choose your organization.](media/data-center-choose-organization.png "Choose your organization")  
   
 3. On the **Company profile** page, your account country/region is listed under **Country or region**.  
   
@@ -49,7 +50,7 @@ search.app:
 ### Will multi-geo environments be available to customers in India?  
  Yes, multi-geo environments will be supported for India as long as the tenant is provisioned in India. For customers not located in India who want to provision an environment within the India datacenter, they must first purchase a tenant for an organization located in India and then the tenant can be provisioned in India.  
   
- Availability of multi-geo environment support will be limited in the initial rollout to a fixed number of eligible customers. We'll continue to expand this capacity over time.  [Read more on how to create and edit multi-geo environments](https://docs.microsoft.com/dynamics365/admin/add-edit-multiregional-instances).  
+ Availability of multi-geo environment support will be limited in the initial rollout to a fixed number of eligible customers. We'll continue to expand this capacity over time.  [Read more on how to create and edit multi-geo environments](/dynamics365/admin/add-edit-multiregional-instances).  
   
 ### Will the standard service level agreements be offered?  
  Yes, the standard service level agreements (SLAs) will apply to the India regions, just as they do in our other regions around the world.  
@@ -64,7 +65,7 @@ search.app:
  The customer experience will be unchanged, the workloads for the other services will simply be provisioned from other regions.  
   
 ### When will ExpressRoute be available in India for customers, and through which partners?  
- [!INCLUDE[pn_expressroute](../includes/pn-expressroute.md)] is currently available in India. [View a current list of ExpressRoute locations and partners](https://azure.microsoft.com/documentation/articles/expressroute-locations/). [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] is currently working to enable customers to use [!INCLUDE[pn_expressroute](../includes/pn-expressroute.md)] with customer engagement apps from the India regions.  
+ [!INCLUDE[pn_expressroute](../includes/pn-expressroute.md)] is currently available in India. [View a current list of ExpressRoute locations and partners](/azure/expressroute/expressroute-locations). [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] is currently working to enable customers to use [!INCLUDE[pn_expressroute](../includes/pn-expressroute.md)] with customer engagement apps from the India regions.  
   
 ### Where can I find more about security, data privacy, and compliance?  
  You can find more information at the  [Microsoft Trust Center](https://go.microsoft.com/fwlink/p/?LinkID=393409).  
@@ -82,7 +83,7 @@ search.app:
 ### How do I request my environment to be moved to India?  
  You can request a move to the new India datacenter by submitting a technical support request through the [!INCLUDE[pn_dyn_365_admin_center](../includes/pn-dyn-365-admin-center.md)] or by calling [!INCLUDE[pn_Microsoft_Support](../includes/pn-microsoft-support.md)]. Please select the Data Management topic and Data Center Migration Request sub-topic to ensure your request receives the best possible routing.  A support engineer will assist you in verifying required prerequisites and provide guidance throughout the move process.  
   
- ![Migration Process](media/migration-process.png "Migration Process")  
+ ![Migration Process.](media/migration-process.png "Migration Process")  
   
  *Customers will be required to go through more steps depending on the type of transition.  
   
@@ -93,7 +94,7 @@ search.app:
  You must be updated to [!INCLUDE[pn_crm_online_2015_update](../includes/pn-crm-online-2015-update.md)] or later prior to migrating to the India datacenter.  Customers can schedule their update.  
   
 ### If I have both Microsoft 365 services and customer engagement apps, how will migration be handled?  
- The migration of each service will be handled separately. For customer engagement apps, you’ll be able to choose their migration date and time. [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] will work with you to schedule the migration. For [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] scheduling and migration, see [Moving core data to new Microsoft 365 datacenter geos](https://technet.microsoft.com/library/dn878163.aspx).  
+ The migration of each service will be handled separately. For customer engagement apps, you’ll be able to choose their migration date and time. [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] will work with you to schedule the migration. For [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] scheduling and migration, see [Moving core data to new Microsoft 365 datacenter geos](/microsoft-365/enterprise/moving-data-to-new-datacenter-geos).  
   
 ### Can I move Microsoft 365 and customer engagement apps at the same time?  
  The move process for each service is handled separately. The move can be requested to coincide with the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] move.  

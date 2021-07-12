@@ -1,10 +1,13 @@
 ---
-title: "Grant users access  | MicrosoftDocs"
-description: Grant users access
+title: "Grant users access in customer engagement apps and Power Apps"
+description: "Learn to create users, assign licenses, and set administrative roles in Microsoft 365 admin center. Assign security roles in Dynamics 365 apps."
 author: jimholtz
+ms.subservice: admin
 ms.author: jimholtz
 ms.reviewer: jimholtz
-ms.custom: "admin-security"
+ms.custom: 
+  - "admin-security"
+  - "intro-internal"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
@@ -18,8 +21,6 @@ search.app:
   - Flow
 ---
 # Grant users access
-
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 To have users up and running in Power Apps and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), you complete some administrative tasks in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)]—which you generally do only once—followed by administrative tasks.  
 
@@ -46,9 +47,9 @@ In Power Apps, populate the service with your organization’s data, including u
 ## Step One: Provision users, and assign licenses and administrative roles in the Microsoft 365 admin center  
  Your organization’s subscription to Power Apps provides access to the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] through a global administrator account. The global administrator manages every aspect of the subscription and may add subscriptions to other [!INCLUDE[pn_MS_Online_Services](../includes/pn-ms-online-services.md)].  
   
- As the global administrator for your organization, one of your first tasks is to create users in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)]. This registers users in the system and enables users to be licensed to use services available within the online service environment. You decide which service you want your users to have by assigning a license for that service to a user. For instructions about creating users in the [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)], see [Add users and assign licenses at the same time](https://go.microsoft.com/fwlink/p/?LinkId=251998). For instructions about assigning a license to a user, see [Assign or remove licenses](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide).  
+ As the global administrator for your organization, one of your first tasks is to create users in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)]. This registers users in the system and enables users to be licensed to use services available within the online service environment. You decide which service you want your users to have by assigning a license for that service to a user. For instructions about creating users in the [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)], see [Add users and assign licenses at the same time](/microsoft-365/admin/add-users/add-users). For instructions about assigning a license to a user, see [Assign or remove licenses](/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide).  
   
- During your planning phase, you might have identified a set of key administrative roles that you want to fill. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Plan for deployment and administration](../admin/plan-for-deployment-and-administration.md). Because the administrative roles provide coverage for administrative tasks when the global administrator is not available, it’s a best practice to assign these roles to users, including assigning the global administrator role to a second user. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Assigning admin roles](https://go.microsoft.com/fwlink/p/?LinkId=255444) and [Permissions in Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=255464).  
+ During your planning phase, you might have identified a set of key administrative roles that you want to fill. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Plan for deployment and administration](../admin/plan-for-deployment-and-administration.md). Because the administrative roles provide coverage for administrative tasks when the global administrator is not available, it’s a best practice to assign these roles to users, including assigning the global administrator role to a second user. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Assigning admin roles](/microsoft-365/admin/add-users/assign-admin-roles) and [Permissions in Microsoft 365](/microsoft-365/admin/add-users/about-admin-roles).  
   
 ### The online service sends an invitation to each user  
  After you set up a user in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], that user receives an email invitation with a link and a password for the [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)]. The credentials in the invitation provide access to the portal and to documentation. However, the users who receive these invitations can’t access customer engagement apps until you complete step two in this process.  

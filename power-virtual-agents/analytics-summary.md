@@ -26,7 +26,7 @@ Select the version of Power Virtual Agents you're using here:
 
 The Summary page gives you a broad overview of your bot's performance. It uses artificial intelligence (AI) technology to show you which topics are having the greatest impact on escalation rate, abandon rate, and resolution rate (see the table under [Summary charts](#summary-charts) for more information on these metrics).
 
-![The Analytics summary page](media/overview-analytics.png)
+![The Analytics summary page.](media/overview-analytics.png)
 
 The Summary page includes a variety of charts with graphical views of your bot's key performance indicators. For information about each chart, see:
 
@@ -48,7 +48,7 @@ By default, the page shows you key performance indicators for the last seven day
 
 ## Summary charts
 
-![Summary charts](media/summary-charts.png)
+![Summary charts.](media/summary-charts.png)
 
 The Summary charts summarize the key performance indicators for the specified time period and the percent change over the period.
 
@@ -59,7 +59,7 @@ Engagement rate | The percentage of total sessions that are engaged sessions. An
 Resolution rate | The percentage of engaged sessions that are resolved. A resolved session is an engaged session in which the user receives an end-of-conversation survey that asks the question *"Did that answer your question?"* and the user either does not respond or responds *Yes*.
 Escalation rate | The percentage of engaged sessions that are escalated. An escalated session is an engaged session that is escalated to a human agent.
 Abandon rate | The percentage of engaged sessions that are abandoned. An abandoned session is an engaged session that is neither resolved nor escalated after one hour from the beginning of the session.
-CSAT | The graphical view of the average of CSAT scores for sessions in which customers respond to an end-of-session request to take the survey.
+CSAT | The graphical view of the average of customer satisfaction (CSAT) scores for sessions in which customers respond to an end-of-session request to take the survey.
 
 A blue up-and-down indicator next to the value indicates the percent change in a positive direction. A red indicator indicates the percent change in a negative direction.
 

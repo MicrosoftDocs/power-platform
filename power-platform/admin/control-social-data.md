@@ -1,12 +1,13 @@
 ---
-title: "Control receiving social data  | MicrosoftDocs"
-description: Control receiving social data
+title: "Control receiving social data"
+description: "Microsoft Social Engagement discontinued for Dynamics 365 customers."
 author: jimholtz
 manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/08/2020
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin

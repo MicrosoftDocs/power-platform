@@ -4,8 +4,9 @@ description: About data loss prevention (DLP) policies.
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/10/2020
+ms.date: 06/23/2021
 author: jimholtz
+ms.subservice: admin
 ms.author: jimholtz
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
@@ -17,9 +18,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Data loss prevention policies
-
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+# Data loss prevention policies 
 
 Your organization's data is likely one of the most important assets you're responsible for safeguarding as an administrator. The ability to build apps and automation to use that data is a large part of your company's success. You can use Power Apps and Power Automate for rapid build and rollout of these high-value apps so that users can measure and act on the data in real time. Apps and automation are becoming increasingly connected across multiple data sources and multiple services. Some of these might be external, third-party services and might even include some social networks. Users generally have good intentions, but they can easily overlook the potential for exposure from data leakage to services and audiences that shouldn't have access to the data.
 
@@ -30,7 +29,7 @@ DLP policies enforce rules for which connectors can be used together by classify
 DLP policies are created in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). They affect Power Platform canvas apps and Power Automate flows. To create a DLP policy, you need to be a [tenant admin](use-service-admin-role-manage-tenant.md) or have the [Environment Admin role](environments-overview.md#environment-permissions). 
 
 > [!NOTE]
-> The ability to block connectors by using a three-way classification&mdash;**Business**, **Non-Business**, and **Blocked**&mdash;in addition to DLP policy UI support in the Power Platform admin center is now generally available. There is new DLP policy PowerShell support for three-way DLP policy classification, which is also generally available. Legacy DLP policy support for two-way classification (**Business** and **Non-Business**), along with admin center UI and PowerShell support for two-way classification, is currently generally available and will continue to be available for the foreseeable future. More information: [Connectors documentation](https://docs.microsoft.com/connectors/)
+> The ability to block connectors by using a three-way classification&mdash;**Business**, **Non-Business**, and **Blocked**&mdash;in addition to DLP policy UI support in the Power Platform admin center is now generally available. There is new DLP policy PowerShell support for three-way DLP policy classification, which is also generally available. Legacy DLP policy support for two-way classification (**Business** and **Non-Business**), along with admin center UI and PowerShell support for two-way classification, is currently generally available and will continue to be available for the foreseeable future. More information: [Connectors documentation](/connectors/)
 
 ## Connector classification
 
@@ -68,7 +67,7 @@ All connectors driving core Microsoft Power Platform functionality (like Dataver
 However, these non-blockable connectors can be classified into Business or Non-Business data groups. These connectors broadly fall into the following categories:
 
 -	Microsoft Enterprise Plan standard connectors (with no additional licensing implications).
--	Microsoft Power Platform–specific connectors that are part of the base platform capabilities. Within this, Common Data Service connectors are the only premium connectors that can't be blocked, because Dataverse is an integral part of Microsoft Power Platform. 
+-	Microsoft Power Platform–specific connectors that are part of the base platform capabilities. Within this, Dataverse connectors are the only premium connectors that can't be blocked, because Dataverse is an integral part of Microsoft Power Platform. 
 
 The following connectors can't be blocked by using DLP policies.
 
@@ -76,8 +75,8 @@ The following connectors can't be blocked by using DLP policies.
 |Microsoft Enterprise Plan standard connectors | Core Power Platform connectors  |
 |---------|---------|
 |Excel Online (Business)      | Approvals        |
-|Microsoft Forms Pro      | Notifications        |
-|Microsoft Teams      | Dataverse         |
+|Dynamics 365 Customer Voice      | Notifications        |
+|Microsoft Teams      | Dataverse       |
 |Microsoft To-Do (Business)      | Dataverse <br />(current environment)        |
 |Microsoft 365 Groups      | Power Apps Notifications (v1 and v2)        |
 |Microsoft 365 Outlook      |         |
@@ -140,7 +139,7 @@ Even though environment admins might manage more than one environment, they can'
 
 Using the view policy feature, environment admins can view tenant-level policies and policies within environments that the admin has access to, at an individual policy level. Non-admins can also view tenant-level policies using this feature.
 
-:::image type="content" source="media/dlp-view-policies2.png" alt-text="View DLP policies list":::
+:::image type="content" source="media/dlp-view-policies2.png" alt-text="View DLP policies list.":::
 
 ## Combined effect of multiple DLP policies
 
@@ -182,6 +181,10 @@ When all three policies are applied together to the same environment, the net re
 
 To summarize: an app or flow can only use connectors from these individual groups at any given time, and not mix connectors across the eight different groups. From the examples above, note that multiple DLP policies applied to an environment will fragment your connector space in complicated ways. Therefore, we highly recommended that you apply a minimum number of DLP policies to any given environment. 
 
+## DLP resource exemption
+
+You can now exempt apps and flows that you trust from DLP policies using [DLP resource exemption PowerShell cmdlets](powerapps-powershell.md#dlp-resource-exemption-cmdlets). 
+
 ## Impact of DLP policies on apps and flows
 
 If admins have disallowed certain connectors to be used together in an environment by classifying them as **Business** or **Non-Business**&mdash;or marked certain connectors as **Blocked** by using tenant-level or environment-level DLP policies&mdash;these restrictions can negatively affect makers and users of Power Apps and Power Automate. The restrictions are enforced at both design time and at runtime.
@@ -193,12 +196,15 @@ As an admin, you should have a process and plan in place to handle these types o
 Users who create or edit a resource affected by the DLP policy will see an appropriate error message about any DLP policy conflicts. For example, Power Apps makers will see the following error when they use connectors in an app that don't belong together or have been blocked by DLP policies. The app won't add the connection.
 
 > [!div class="mx-imgBorder"] 
-> ![Conflict error](media/dlp-conflict-error.png "Conflict error")
+> ![First example conflict error.](media/dlp-conflict-error.png "First example conflict error")
+
+> [!div class="mx-imgBorder"] 
+> ![Second example conflict error.](media/dlp-conflict-error2.png "Second example conflict error")
 
 Similarly, Power Automate makers will see the following error when they try to save a flow that uses connectors that don't belong together or have been blocked by DLP policies. The flow itself will be saved, but it will be marked as **Suspended** and won't be executed unless the maker resolves the DLP violation.
 
 > [!div class="mx-imgBorder"] 
-> ![Flow error](media/dlp-suspended-flow-error2.png "Flow error")
+> ![Flow error.](media/dlp-suspended-flow-error2.png "Flow error")
 
 ### Runtime impact on apps and flows
 
@@ -207,7 +213,10 @@ As an admin, you can decide to modify the DLP policies for your tenant or for sp
 Users who use a resource that's in violation of the latest DLP policy will see an error message about the DLP policy conflict. For example, Power Apps makers and users will see the following error when they try to open an app that uses connectors that don't belong together or have been blocked by DLP policies. 
 
 > [!div class="mx-imgBorder"] 
-> ![App opening error](media/dlp-opening-error.png "App opening error")
+> ![App opening error.](media/dlp-opening-error.png "App opening error")
+
+> [!NOTE]
+> Power Apps DLP runtime enforcement experiences include the admin contact and governance reference material, if set. To learn more about how to use this capability, see [Governance error message content commands](powerapps-powershell.md#governance-error-message-content-commands). 
 
 Similarly, Power Automate makers and users won't be able to start a flow that uses connectors that don't belong together or have been blocked by DLP policies. A background system process marks the flow as **Suspended**, and the flow won't be executed until the maker resolves the DLP policy violation.
 
@@ -215,7 +224,7 @@ Similarly, Power Automate makers and users won't be able to start a flow that us
 > The flow suspension process works in a polling mode. It takes about five minutes for the latest DLP policy changes to be assessed against active flows to mark them as suspended due to DLP policy violations. This change isn't instantaneous.
 
 > [!div class="mx-imgBorder"] 
-> ![Flow suspension](media/dlp-flow-suspension.png "Flow suspension")
+> ![Flow suspension.](media/dlp-flow-suspension.png "Flow suspension")
 
 ## Known issues
 

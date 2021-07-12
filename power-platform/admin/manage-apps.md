@@ -1,11 +1,12 @@
 ---
-title: "Manage Dynamics 365 apps  | MicrosoftDocs"
-description: Manage Dynamics 365 apps
+title: "Manage Dynamics 365 apps that run on Microsoft Dataverse"
+description: "Learn how to install, configure, and manage Dynamics 365 apps in Power Platform admin center. Manage apps from either the tenant or environment level."
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 11/13/2020
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -18,12 +19,10 @@ search.app:
 
 # Manage Dynamics 365 apps
 
-[!INCLUDE[cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 You can now use the Microsoft Power Platform admin center to install, configure, and manage Dynamics 365 apps that run on Microsoft Dataverse. Apps in this topic refer to Dynamics 365 apps such as Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, and Dynamics 365 Marketing as well as apps purchased from Microsoft AppSource requiring any of these Dynamics 365 licenses.
 
 > [!NOTE]
-> You can install and manage Dynamics 365 apps only in an environment that was created with a database and with Dynamics 365 apps enabled during the environment creation. A valid Dynamics 365 license is required to enable Dynamics 365 apps during the environment creation. More information: [Create an environment with a database](/power-platform/admin/create-environment#create-an-environment-with-a-database)
+> You can install and manage Dynamics 365 apps only in an environment that was created with a database and with Dynamics 365 apps enabled during the environment creation. A valid Dynamics 365 license is required to enable Dynamics 365 apps during the environment creation. More information: [Create an environment with a database](./create-environment.md#create-an-environment-with-a-database)
 
 You can manage apps from either the [tenant level](#tenant-level-view-of-apps) or the [environment level](#environment-level-view-of-apps).
 
@@ -46,12 +45,12 @@ Follow these steps to see a list of all licensed applications for your tenant.
    Duplicate items will appear under **Name** if you have the same app license applied to multiple environments.
 
    > [!div class="mx-imgBorder"] 
-   > ![Manage apps tenant view](media/app-management-install-app4.png "Manage apps tenant view")
+   > ![Manage apps tenant view.](media/app-management-install-app4.png "Manage apps tenant view")
 
    Note the following under **Status**:
 
    - **Enabled**: This app is ready to be installed in your environments. 
-   - **Configured**: This app has been configured to an environment. It can be reconfigured to a different environment or configuration to current environment can be udpated.
+   - **Configured**: This app has been configured to an environment. It can be reconfigured to a different environment or configuration to current environment can be updated.
    - **Not configured**: This app is ready to be configured to an environment.
 
 3. From the top menu bar, depending on the status of the app, you can do the following:
@@ -63,7 +62,7 @@ Follow these steps to see a list of all licensed applications for your tenant.
 4. If your tenant is multigeo, you can change the locale with the region selector.
 
    > [!div class="mx-imgBorder"] 
-   > ![Select region](media/app-management-region-select.png "Select region")
+   > ![Select region.](media/app-management-region-select.png "Select region")
 
 ## Environment-level view of apps
 
@@ -84,7 +83,7 @@ Follow these steps to see a list of all the licensed applications you installed 
    You'll see a list of Dynamics 365 apps installed **by you** in the selected environment.
 
    > [!div class="mx-imgBorder"] 
-   > ![Environment view](media/app-management-environment-view.png "Environment view")
+   > ![Environment view.](media/app-management-environment-view.png "Environment view")
 
 4. Select an app. From the top menu bar, depending on the status of the app, you can do the following:
 
@@ -105,12 +104,12 @@ The process to install an app depends on your view.
 2. Select an environment, review the packages to be installed, agree to the terms of service, and then select **Install**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Install app](media/app-management-install-app2.png "Install app")
+   > ![Install app.](media/app-management-install-app2.png "Install app")
 
    You'll navigate to the environment-level view where you can see the installation status.
 
    > [!div class="mx-imgBorder"] 
-   > ![Environment view3](media/app-management-environment-view3.png "Environment view3")
+   > ![Environment view3.](media/app-management-environment-view3.png "Environment view3")
 
 ### Install an app in the environment view
 
@@ -119,7 +118,7 @@ The process to install an app depends on your view.
 2. Select an **Enabled** app, and then select **Next**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Select enabled app](media/app-management-install-app-env-view.png "Select enabled app")
+   > ![Select enabled app.](media/app-management-install-app-env-view.png "Select enabled app")
 
 3. Agree to the terms of service, and then select **Install**.
 
@@ -129,7 +128,10 @@ If the app installation has failed, select **Installation failed** from the envi
 If it's necessary to [contact Support](support-overview.md), be sure to provide the details listed on the **Error details** page.
 
 > [!div class="mx-imgBorder"] 
-> ![Error details](media/app-management-error-details.png "Error details")
+> ![Error details.](media/app-management-error-details.png "Error details")
+
+## Delete an app
+For information on how to delete an app, see [Delete a model-driven app](/powerapps/maker/model-driven-apps/delete-model-driven-app). 
 
 ## FAQ
 
@@ -144,7 +146,7 @@ Filters are applied to the **Select an environment** drop-down list as follows:
 
 <!-- 
 ### See also
-[Portal administration with Power Platform admin center](https://docs.microsoft.com/powerapps/maker/portals/admin/power-platform-admin-center) 
+[Portal administration with Power Platform admin center](/powerapps/maker/portals/admin/power-platform-admin-center) 
 -->
 
 

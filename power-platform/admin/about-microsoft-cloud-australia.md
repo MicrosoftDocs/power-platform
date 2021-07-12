@@ -6,6 +6,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/03/2020
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -16,8 +17,6 @@ search.app:
   - Flow
 ---
 # About the Microsoft Cloud Australia datacenter
-
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
  If you’re an existing Power Apps customer with a billing address mapping to a new data center region, review the information in this topic to understand the move process.  
   
@@ -80,7 +79,7 @@ Services deployed in the Australia East Region will replicate data to the Austra
   
 2. In the upper-right corner of [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], choose your organization.  
   
-   ![Choose your organization](media/data-center-choose-organization.png "Choose your organization")  
+   ![Choose your organization.](media/data-center-choose-organization.png "Choose your organization")  
   
 3. On the **Company profile** page, your account country/region is listed under **Country or region**.  
   
@@ -133,7 +132,7 @@ Services deployed in the Australia East Region will replicate data to the Austra
   
   2. In the upper-right corner of [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], choose your organization.  
   
-  ![Choose your organization](media/data-center-choose-organization.png "Choose your organization")  
+  ![Choose your organization.](media/data-center-choose-organization.png "Choose your organization")  
   
   3.  On the **Company profile** page, your account country/region is listed under **Country or region**.  
   
@@ -147,7 +146,7 @@ Services deployed in the Australia East Region will replicate data to the Austra
   
 - To move your tenants, environments, and data to the Australia regions, you should contact Support for additional information regarding migrating your environments. For more information, see [How do I request my environment to be moved to the Australia datacenter?](about-microsoft-cloud-australia.md#BKMK_RequestMove) [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] reserves the right to make a unilateral decision to migrate accounts based on multiple conditions.  
   
-  For additional guidance regarding multiple tenants and multiple environments, see [Multiple online environments or tenants](https://docs.microsoft.com/dynamics365/admin/multiple-online-instances-tenants). 
+  For additional guidance regarding multiple tenants and multiple environments, see [Multiple online environments or tenants](/dynamics365/admin/multiple-online-instances-tenants). 
   
 <a name="BKMK_RequestMove"></a> 
   
@@ -170,7 +169,7 @@ Services deployed in the Australia East Region will replicate data to the Austra
  Once you have been scheduled for migration, a member of the [!INCLUDE[pn_Microsoft_Support](../includes/pn-microsoft-support.md)] team will work directly with you to discuss scheduling and any other issues that may come up during the migration.  
   
 ### If I have both Microsoft 365 services and customer engagement apps, how will migration be handled?  
- The migration of each service will be handled separately. For customer engagement apps, you’ll be able to choose their migration date and time. [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] will work with you to schedule the migration. For [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] scheduling and migration, see [Moving core data to new Microsoft 365 datacenter geos](https://technet.microsoft.com/library/dn878163.aspx).  
+ The migration of each service will be handled separately. For customer engagement apps, you’ll be able to choose their migration date and time. [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] will work with you to schedule the migration. For [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] scheduling and migration, see [Moving core data to new Microsoft 365 datacenter geos](/microsoft-365/enterprise/moving-data-to-new-datacenter-geos).  
   
 ### Can I move Microsoft 365 and customer engagement apps at the same time?  
  The move process for each service is handled separately but the move can be scheduled to coincide with the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] move if requested.  

@@ -6,6 +6,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/11/2020
+ms.subservice: admin
 ms.author: matp
 search.audienceType: 
   - admin
@@ -42,7 +43,7 @@ The report displays a table with test and benchmark information. Of particular i
   
 ## Best practices for improving application performance  
   
-- Maximize how quickly your forms load. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Optimize form performance](https://docs.microsoft.com/powerapps/maker/model-driven-apps/optimize-form-performance)  
+- Maximize how quickly your forms load. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Optimize form performance](/powerapps/maker/model-driven-apps/optimize-form-performance)  
   
 - Make sure you aren't using legacy form rendering, which can make forms take significantly longer to load. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [System Settings dialog box - General tab](system-settings-dialog-box-general-tab.md)  
   

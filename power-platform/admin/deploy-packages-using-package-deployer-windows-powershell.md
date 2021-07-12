@@ -8,8 +8,8 @@ ms.topic: article
 ms.assetid: 27676d3a-d35c-4452-9ff3-bcdadd943bef
 caps.latest.revision: 36
 author: Mattp123
+ms.subservice: admin
 ms.author: matp
-manager: brycho
 search.audienceType: 
   - admin
 search.app:
@@ -19,8 +19,6 @@ search.app:
   - Flow
 ---
 # Deploy packages using Package Deployer and Windows PowerShell
-
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 [!INCLUDE[pn_package_deployer_long](../includes/pn-package-deployer-long.md)] enables administrators to deploy packages to a Microsoft Dataverse environment. 
 
@@ -37,7 +35,7 @@ A “package” can consist of any or all of the following:
   
 - HTML content specific to the package that can display at the beginning and end of the package deployment process. This can be useful to provide a description of the solutions and files that are deployed in the package.  
   
-  Developers create packages by using the package deployment template in [!INCLUDE[pn_Visual_Studio](../includes/pn-visual-studio.md)]. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Create packages for Package Deployer](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/developer/create-packages-package-deployer)
+  Developers create packages by using the package deployment template in [!INCLUDE[pn_Visual_Studio](../includes/pn-visual-studio.md)]. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Create packages for Package Deployer](/dynamics365/customerengagement/on-premises/developer/create-packages-package-deployer)
   
   After a package is created, you can deploy it either by running [!INCLUDE[pn_package_deployer_short](../includes/pn-package-deployer-short.md)] or by using [!INCLUDE[pn_PowerShell](../includes/pn-powershell.md)] cmdlets for the tool.  
   
@@ -67,7 +65,7 @@ A “package” can consist of any or all of the following:
   
    - **\<PackageName>.dll**: The assembly contains the code for your package. By default, the name of the assembly is the same as your [!INCLUDE[pn_Visual_Studio_short](../includes/pn-visual-studio-short.md)] project name.  
   
-     For detailed information about creating a package by using [!INCLUDE[pn_Visual_Studio_short](../includes/pn-visual-studio-short.md)], see [Create a package for the Package Deployer tool](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/developer/create-packages-package-deployer). 
+     For detailed information about creating a package by using [!INCLUDE[pn_Visual_Studio_short](../includes/pn-visual-studio-short.md)], see [Create a package for the Package Deployer tool](/dynamics365/customerengagement/on-premises/developer/create-packages-package-deployer). 
   
      For this topic, let us assume that the package folder and assembly from the [!INCLUDE[pn_Visual_Studio_short](../includes/pn-visual-studio-short.md)] project debug folder (*\<Project>*\Bin\Debug) are copied to the `c:\DeployPackage` folder.  
   
@@ -85,7 +83,7 @@ A “package” can consist of any or all of the following:
   
 8. Select the package to be deployed, and click **Next**.  
   
-   ![Select your package in the Package Deployer Tool](../admin/media/package-deployer-4.png "Select your package in the Package Deployer Tool")  
+   ![Select your package in the Package Deployer Tool.](../admin/media/package-deployer-4.png "Select your package in the Package Deployer Tool")  
   
 9. Follow the instructions on the subsequent screens to complete the deployment of your package.  
   
@@ -116,7 +114,7 @@ packagedeployer.exe /Settings:"SkipChecks=true|lcid=1045"
 > [!NOTE]
 >  Use the pipe character &#124; to separate parameters when you run packagedeployer.exe at the command line with multiple parameters.  
   
- For more information about the parameters and values that can be passed to packagedeployer.exe, see [Create packages for the CRM Package Deployer](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/developer/create-packages-package-deployer).
+ For more information about the parameters and values that can be passed to packagedeployer.exe, see [Create packages for the CRM Package Deployer](/dynamics365/customerengagement/on-premises/developer/create-packages-package-deployer).
   
 <a name="PowerShell"></a>   
 
@@ -176,7 +174,7 @@ packagedeployer.exe /Settings:"SkipChecks=true|lcid=1045"
 <a name="retrieve"></a>   
 
 ### Use the cmdlet to retrieve packages  
- Before you can use the cmdlet, ensure that you have copied your package to the **PackageDeployer** folder (in this case, `[ExtractedLocation]\tools`). A package is a collection of files and folders that is created in your [!INCLUDE[pn_Visual_Studio_short](../includes/pn-visual-studio-short.md)] project folder (*\<Project>*\Bin\Debug) when you build your project in [!INCLUDE[pn_Visual_Studio_short](../includes/pn-visual-studio-short.md)]. Copy the entire contents of your project debug folder to the **PackageDeployer** folder. For detailed information about building a package using [!INCLUDE[pn_Visual_Studio_short](../includes/pn-visual-studio-short.md)], see [Create packages for the CRM Package Deployer](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/developer/create-packages-package-deployer). 
+ Before you can use the cmdlet, ensure that you have copied your package to the **PackageDeployer** folder (in this case, `[ExtractedLocation]\tools`). A package is a collection of files and folders that is created in your [!INCLUDE[pn_Visual_Studio_short](../includes/pn-visual-studio-short.md)] project folder (*\<Project>*\Bin\Debug) when you build your project in [!INCLUDE[pn_Visual_Studio_short](../includes/pn-visual-studio-short.md)]. Copy the entire contents of your project debug folder to the **PackageDeployer** folder. For detailed information about building a package using [!INCLUDE[pn_Visual_Studio_short](../includes/pn-visual-studio-short.md)], see [Create packages for the CRM Package Deployer](/dynamics365/customerengagement/on-premises/developer/create-packages-package-deployer). 
   
 1. In the [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] window, use the following cmdlet to return a list of packages available for import in the specified folder (in this case, c:\CRM\SDK\Tools\PackageDeployer):  
   
@@ -257,7 +255,7 @@ Import-CrmPackage –CrmConnection $CRMConn –PackageDirectory c:\CRM\SDK\Tools
 > - `CrmConnection`, `PackageDirectory`, and `PackageName` parameters are mandatory.  
 > - Instead of manually specifying the package folder, you can use a variable with the PackageDirectory parameter. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Use the cmdlet to retrieve packages](#retrieve)  
 > - For the `PackageName` parameter, you have to specify the name of the assembly that contains the package definition.  
-> - You do not need to specify the `UnpackFilesDirectory` parameter if your package does not unpack files during package deployment. While defining a package in [!INCLUDE[pn_Visual_Studio_short](../includes/pn-visual-studio-short.md)], you specify whether to unpack files using the **agentdesktopzipfile** parameter in the ImportConfig.xml file. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Create packages for the CRM Package Deployer](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/developer/create-packages-package-deployer)
+> - You do not need to specify the `UnpackFilesDirectory` parameter if your package does not unpack files during package deployment. While defining a package in [!INCLUDE[pn_Visual_Studio_short](../includes/pn-visual-studio-short.md)], you specify whether to unpack files using the **agentdesktopzipfile** parameter in the ImportConfig.xml file. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Create packages for the CRM Package Deployer](/dynamics365/customerengagement/on-premises/developer/create-packages-package-deployer)
 > - The `Verbose` parameter is optional, and is used to display a detailed log of the activities performed during the package deployment process.  
 > - The optional `RuntimePackageSettings` parameter can be used together with the following parameters:  
 > 
@@ -266,7 +264,7 @@ Import-CrmPackage –CrmConnection $CRMConn –PackageDirectory c:\CRM\SDK\Tools
 > - The folder that you specify when you use the `LogWriteDirectory` parameter must already exist, and the user who is running the Import-CrmPackage cmdlet must have write permission to the folder. Additionally, the -Verbose parameter is required  when you use the LogWriteDirectory parameter.  
 > 
 >    The LogWriteDirectory parameter was first introduced with [!INCLUDE[pn_crm_9_0_0_online](../includes/pn-crm-9-0-0-online.md)]. 
->   [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Dynamics 365 for Customer Engagement apps Developer Guide](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/developer/overview)  
+>   [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Dynamics 365 for Customer Engagement apps Developer Guide](/dynamics365/customerengagement/on-premises/developer/overview)  
 
  The following example command imports a package named *SampleCRMPackage* and specifies English-United States (1033) as the language to import the package.  
   
@@ -283,7 +281,7 @@ Import-CrmPackage –CrmConnection $CRMConn –PackageDirectory c:\CRM\SDK\Tools
 Get-Help Import-CrmPackage -full  
 ```  
   
- To view the online help for the cmdlets, see [Dynamics 365 for Customer Engagement apps PowerShell Reference](https://technet.microsoft.com/library/dn756318.aspx).  
+ To view the online help for the cmdlets, see [Dynamics 365 for Customer Engagement apps PowerShell Reference](/previous-versions/dynamicscrm-2016/deployment-administrators-guide/dn756318(v=crm.8)).  
   
 <a name="Logfiles"></a>   
 
@@ -308,7 +306,7 @@ Get-Help Import-CrmPackage -full
 -   Back up the Production instance before deploying a package.  
  
 ### See also  
- [Create packages for the CRM Package Deployer](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/developer/create-packages-package-deployer)
+ [Create packages for the CRM Package Deployer](/dynamics365/customerengagement/on-premises/developer/create-packages-package-deployer)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

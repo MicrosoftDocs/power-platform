@@ -43,7 +43,7 @@ After the first publish, you can do subsequent publishes whenever you would like
 
 2. Select **Publish** to make the latest bot content available to your customers.
 
-    :::image type="content" source="media/channel-publish-latest-content-teams.png" alt-text="Publish latest bot content":::
+    :::image type="content" source="media/channel-publish-latest-content-teams.png" alt-text="Publish latest bot content.":::
 
 The publishing process will check for errors in the latest bot content.
 
@@ -51,7 +51,7 @@ Publication should take less than a few minutes and, when successful, you can vi
 
 You can also share the bot with your teammates by selecting **Share the bot** and then **Copy link**. The link will launch Microsoft Teams to prompt the user to install the bot so they can chat with it in Microsoft Teams. Learn more about [installing your bot in Microsoft Teams](publication-add-bot-to-microsoft-teams-teams.md).
 
-:::image type="content" source="media/publish-teams-copy-link.png" alt-text="The Copy link option creates a shareable link to the bot":::
+:::image type="content" source="media/publish-teams-copy-link.png" alt-text="The Copy link option creates a shareable link to the bot.":::
 
 > [!TIP]
 >To prevent disrupting users who are having an existing conversation with the bot, they will not receive the latest published content until a new conversation has started. A new conversation starts after it has been idle for more than 30 minutes.  

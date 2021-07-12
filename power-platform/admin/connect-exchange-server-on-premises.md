@@ -6,8 +6,9 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/17/2021
 author: revachauhan
+ms.subservice: admin
 ms.author: rechauha
-ms.reviewer: jimholtz
+ms.reviewer: mkaur
 search.audienceType: 
   - admin
 search.app:
@@ -17,8 +18,6 @@ search.app:
   - Flow
 ---
 # Connect to Exchange Server (on-premises)
-
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 <!-- legacy procedure -->
 
@@ -34,17 +33,17 @@ With version 9.0., you can connect your customer engagement apps (Dynamics 365 S
 
      For more information on authentication, see:  
 
-   - Exchange Server 2013: [Authentication and EWS in Exchange](https://docs.microsoft.com/exchange/client-developer/exchange-web-services/authentication-and-ews-in-exchange)  
+   - Exchange Server 2013: [Authentication and EWS in Exchange](/exchange/client-developer/exchange-web-services/authentication-and-ews-in-exchange)  
 
-   - Exchange Server 2013: [Default settings for Exchange virtual directories](https://docs.microsoft.com/exchange/default-settings-for-exchange-virtual-directories-exchange-2013-help) 
+   - Exchange Server 2013: [Default settings for Exchange virtual directories](/exchange/default-settings-for-exchange-virtual-directories-exchange-2013-help) 
 
-   - Exchange Server 2016: [Default settings for Exchange virtual directories](https://docs.microsoft.com/Exchange/clients/default-virtual-directory-settings?view=exchserver-2019)
+   - Exchange Server 2016: [Default settings for Exchange virtual directories](/Exchange/clients/default-virtual-directory-settings?view=exchserver-2019)
 
-   - Exchange Server 2019: [Default settings for Exchange virtual directories](https://docs.microsoft.com/Exchange/clients/default-virtual-directory-settings?view=exchserver-2019)
+   - Exchange Server 2019: [Default settings for Exchange virtual directories](/Exchange/clients/default-virtual-directory-settings?view=exchserver-2019)
 
 3. **ApplicationImpersonation role**. You need to create and configure a service account with the **ApplicationImpersonation** role in [!INCLUDE[pn_Microsoft_Exchange](../includes/pn-microsoft-exchange.md)]. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Impersonation and EWS in Exchange](https://msdn.microsoft.com/library/office/dn722377\(v=exchg.150\).aspx).  
 
-4. **Secured connection**. The connection between customer engagement apps and Exchange must be encrypted via [TLS/SSL](https://docs.microsoft.com/windows/win32/secauthn/cipher-suites-in-schannel) and current [cipher suites](server-cipher-tls-requirements.md). 
+4. **Secured connection**. The connection between customer engagement apps and Exchange must be encrypted via [TLS/SSL](/windows/win32/secauthn/cipher-suites-in-schannel) and current [cipher suites](server-cipher-tls-requirements.md). 
 
 5. **Exchange Web Services (EWS)**. Connections to EWS must be allowed through the firewall. Often a reverse proxy is used for the exterior facing connection.  
 
@@ -90,7 +89,7 @@ With version 9.0., you can connect your customer engagement apps (Dynamics 365 S
 ### Troubleshooting the Exchange Server (Hybrid) profile connection  
  If you've run **Test Connection** and have issues with the Exchange Server (Hybrid) profile connection, use the information in the **Test Connection** dialog box to diagnose and fix the connection.  
 
- ![Review the error messages](../admin/media/server-side-sync-exchange-hybrid-troubleshoot.png "Review the error messages")  
+ ![Review the error messages.](../admin/media/server-side-sync-exchange-hybrid-troubleshoot.png "Review the error messages")  
 
  In this case, there's a problem with Auto Discover. The admin should review the user name and password used for **Authentication Using Impersonation** for the Exchange Server (Hybrid) profile.  
 
@@ -120,7 +119,7 @@ With version 9.0., you can connect your customer engagement apps (Dynamics 365 S
 ## Configure mailboxes  
  To set mailboxes to use the default profile, you must first set the Server Profile and the delivery method for email, appointments, contacts, and tasks.  
 
- In addition to administrator permissions, you must have Read and Write privileges on the Mailbox entity to set the delivery method for the mailbox.  
+ In addition to administrator permissions, you must have Read and Write privileges on the Mailbox table to set the delivery method for the mailbox.  
 
  Select **one** of the following methods:  
 
@@ -134,7 +133,7 @@ With version 9.0., you can connect your customer engagement apps (Dynamics 365 S
 
 4. Select all the mailboxes that you want to associate with the [!INCLUDE[pn_Exchange_Server_short](../includes/pn-exchange-server-short.md)] profile you created, select **Apply Default Email Settings**, verify the settings, and then select **OK**.  
 
-   ![Apply default email settings](../admin/media/apply-default-email-settings.png "Apply default email settings")  
+   ![Apply default email settings.](../admin/media/apply-default-email-settings.png "Apply default email settings")  
 
     By default, the mailbox configuration is tested and the mailboxes are enabled when you select **OK**.  
 

@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/08/2020
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -44,8 +45,8 @@ Set the duration and frequency of the automatic rollup of goals. These settings 
 |                  Roll-up recurrence frequency                  |                                                      Default: 24 hours. Set the number of hours between each goal rollup.                                                      |
   
 ### See also  
- [Administrator and Sales Manager Guide](https://docs.microsoft.com/dynamics365/sales-enterprise/admin-guide)  
- [Progress Against Goals report](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/basics/sales-insights-reports#progress-against-goals-report)
+ [Administrator and Sales Manager Guide](/dynamics365/sales-enterprise/admin-guide)  
+ [Progress Against Goals report](/dynamics365/customerengagement/on-premises/basics/sales-insights-reports#progress-against-goals-report)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

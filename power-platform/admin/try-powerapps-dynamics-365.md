@@ -5,7 +5,8 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/11/2020
+ms.date: 06/15/2021
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -21,16 +22,16 @@ You can explore all Power Apps and model-driven apps capabilities in Dynamics 36
 
 ## Power Apps trial 
 
-You can try Power Apps for free by signing up either for a 30 day trial or community plan. 
-- [Sign up for 30 day trial](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps)
-- [Sign up for Community Plan](https://docs.microsoft.com/powerapps/maker/dev-community-plan)
+You can try Power Apps for free by signing up either for a 30 day trial or developer plan. 
+- [Sign up for 30 day trial](/powerapps/maker/signup-for-powerapps)
+- [Sign up for Developer Plan](/powerapps/maker/dev-community-plan)
 - Sign up for trial while [purchasing Power Apps](signup-for-powerapps-admin.md) 
 
 ## Customer engagement apps trial
 
 Visit <https://trials.dynamics.com> and select the required app to sign up for a 30-day trial.
 
-For detailed information about signing up, purchasing or using individual customer engagement apps, see the respective app's documentation at [Dynamics 365 documentation](https://docs.microsoft.com/dynamics365/). 
+For detailed information about signing up, purchasing or using individual customer engagement apps, see the respective app's documentation at [Dynamics 365 documentation](/dynamics365/). 
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

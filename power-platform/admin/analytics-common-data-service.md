@@ -1,11 +1,12 @@
 ---
-title: "Microsoft Dataverse analytics   | MicrosoftDocs"
-description: Microsoft Dataverse analytics 
+title: "View and download Dataverse analytics"
+description: "Access Dataverse analytics from the Power Platform admin center to view and download metrics such as active users, API calls, executions, and more."
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/29/2020
+ms.date: 03/29/2021
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -15,17 +16,15 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Microsoft Dataverse analytics 
-
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+# Microsoft Dataverse analytics
 
 We've improved how you view metrics for your organization. You no longer need to install or update a solution. Instead, you can view Dataverse analytics right from the Microsoft Power Platform admin center to quickly view adoption and user metrics for your organization. 
 
-To access these reports:<!-- Edit note: Do you still select Common Data Service and not Dataverse. -->
+To access these reports:
 
 1. Go to the navigation bar on the left side.
 2. Select **Analytics**.
-3. Select **Common Data Service**.
+3. Select **Dataverse**.
 4. View the reports on the right side.
 
 ## Who can view these reports?
@@ -55,7 +54,7 @@ For more information on the different roles for managing your tenant across the 
 ## Home (default)  
 
 > [!div class="mx-imgBorder"] 
-> ![Dataverse analytics Home Section](./media/organization-insights-home-section.png "Dataverse analytics Home Section")  
+> ![Dataverse analytics Home Section.](./media/organization-insights-home-section.png "Dataverse analytics Home Section")  
 
 ### About this dashboard  
  This is the default dashboard that provides information on the number of active Dataverse users, storage usage, the most active workflows, and more.  
@@ -78,7 +77,7 @@ For more information on the different roles for managing your tenant across the 
 ## Active Users  
 
 > [!div class="mx-imgBorder"] 
-> ![Dataverse analytics Active Usage Section](./media/organization-insights-active-usage-section.png "Dataverse analytics Active Usage Section")  
+> ![Dataverse analytics Active Usage Section.](./media/organization-insights-active-usage-section.png "Dataverse analytics Active Usage Section")  
  
 ### About this dashboard  
  Use this dashboard to find out how many [!INCLUDE[pn_dyn_365](../includes/pn-dyn-365.md)] users there are, how many licenses are in use, what custom entities are used most frequently, and more.  
@@ -138,7 +137,7 @@ For more information on the different roles for managing your tenant across the 
 ## System Jobs  
 
 > [!div class="mx-imgBorder"] 
-> ![Dataverse analytics System Jobs Section](./media/organization-insights-system-jobs-section.png "Dataverse analytics System Jobs Section")
+> ![Dataverse analytics System Jobs Section.](./media/organization-insights-system-jobs-section.png "Dataverse analytics System Jobs Section")
    
 ### About this dashboard  
  Use this dashboard to monitor and troubleshoot workflows.  
@@ -172,7 +171,7 @@ For more information on the different roles for managing your tenant across the 
 ## Plug-ins  
 
 > [!div class="mx-imgBorder"] 
-> ![Dataverse analytics Plugins Section](./media/organization-insights-plugins-section.png "Dataverse analytics Plugins Section")  
+> ![Dataverse analytics Plugins Section.](./media/organization-insights-plugins-section.png "Dataverse analytics Plugins Section")  
 
 ### About this dashboard  
  Use this dashboard to monitor and troubleshoot plug-ins.  
@@ -204,7 +203,7 @@ For more information on the different roles for managing your tenant across the 
 ## API Call Statistics  
 
 > [!div class="mx-imgBorder"] 
-> ![Dataverse analytics API Call Statistics Section](./media/organization-insights-api-call-statistics-section.png "Dataverse analytics API Call Statistics Section")  
+> ![Dataverse analytics API Call Statistics Section.](./media/organization-insights-api-call-statistics-section.png "Dataverse analytics API Call Statistics Section")  
 
 ### About this dashboard  
  Use this dashboard to monitor and troubleshoot API calls.  
@@ -236,7 +235,7 @@ For more information on the different roles for managing your tenant across the 
 ## Mailbox Usage  
 
 > [!div class="mx-imgBorder"] 
-> ![Dataverse analytics Mailbox Usage Section](./media/organization-insights-mailbox-usage-section.png "Dataverse analytics Mailbox Usage Section")  
+> ![Dataverse analytics Mailbox Usage Section.](./media/organization-insights-mailbox-usage-section.png "Dataverse analytics Mailbox Usage Section")  
  
 ### About this dashboard  
 
@@ -283,7 +282,7 @@ All the download reports, except "Active Dynamics 365 Customer Engagement Plan U
 The "Active Dynamics 365 Customer Engagement Plan Users by Application" report always shows the last 30 days of data at the tenant level. 
 
 > [!div class="mx-imgBorder"] 
-> ![Dataverse analytics Download Section](./media/organization-insights-download-section.png "Dataverse analytics Download Section")  
+> ![Dataverse analytics Download Section.](./media/organization-insights-download-section.png "Dataverse analytics Download Section")  
 
 ### What's included  
 
@@ -311,12 +310,12 @@ The "Active Dynamics 365 Customer Engagement Plan Users by Application" report a
 Select **Change filters**.  
 
 > [!div class="mx-imgBorder"] 
-> ![Dataverse analytics change filters](./media/organization-insights-change-filters.png "Dataverse analytics change filters")  
+> ![Dataverse analytics change filters.](./media/organization-insights-change-filters.png "Dataverse analytics change filters")  
 
 Select the environment and time-period from the drop-down lists, and then select **Apply** to save the changes. All the Dataverse analytics reports are available using this selection. 
 
 > [!div class="mx-imgBorder"] 
-> ![Dataverse analytics change filters apply](./media/organization-insights-change-filters-apply.png "Dataverse analytics change filters apply")  
+> ![Dataverse analytics change filters apply.](./media/organization-insights-change-filters-apply.png "Dataverse analytics change filters apply")  
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -58,24 +58,22 @@ You can read more about Power Virtual Agents, or get started creating bots now a
 
 2. **Empower your subject matter experts**. Using Power Virtual Agents, you are in the driver's seat. Your SMEs can create bots quickly and easily using a **novel, intuitive, code-free graphical interface**, eliminating the need for AI expertise or teams of developers.
 
-    ![No-code interface](media/overview-no-code.png)
+    ![No-code interface.](media/overview-no-code.png)
 
 3. **Enable rich, natural conversations.** Microsoft's powerful conversational AI capabilities enable your end users to have rich multi-turn conversations that quickly guide them to the right solution. And, unlike most products on the market, there's no need to retrain AI models. Simply provide a few short examples of the topic you want the bot to handle, build the conversation using our graphical editor and your bot is ready to handle customer requests about it. You can even try out your changes in real-time in the test pane!
 
-   ![Natural conversation with a bot](media/overview-conversation.png)
+   ![Natural conversation with a bot.](media/overview-conversation.png)
  
 4. **Enable bots to take action.** Bots that can chat with your users are great, but bots that can act on their behalf are even better. With Power Virtual Agents, you can easily integrate with services and back-end systems out-of-the-box or through hundreds of easy-to-add custom connectors using Power Automate. This makes it simple to create a bot that not only responds to the user, but also takes action on their behalf.
  
-    ![Bot actions](media/overview-actions.png)
+    ![Bot actions.](media/overview-actions.png)
 
 5. **Monitor and improve bot performance.** Power Virtual Agents lets you keep an eye on how your bots are performing using powerful metrics and AI-driven dashboards. Easily see which topics are doing well and where the bot can improve, and quickly make adjustments to improve performance.  
 
-    ![Analytics page](media/overview-analytics.png)
+    ![Analytics page.](media/overview-analytics.png)
 
 6. **Better together.** Power Virtual Agents works hand-in-hand with [Dynamics 365 Customer Service Insights](https://dynamics.microsoft.com/ai/customer-service-insights) to provide a holistic view of your customer service operations. You can use Customer Service Insights and Power Virtual Agents together to determine which topics are trending or consuming support resources, and then easily automate them.
 
->[!NOTE]
-> Power Virtual Agents does not currently support US Government Cloud plans.
 
 
 ## Important information

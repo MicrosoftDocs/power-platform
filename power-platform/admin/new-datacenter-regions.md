@@ -1,11 +1,13 @@
 ---
-title: "Datacenter regions  | MicrosoftDocs"
-description: Datacenter regions
+title: "Dynamics 365 datacenter regions"
+description: "Dynamics 365 customer engagement apps are hosted in datacenters across many regions. Find a list of regions and URLs, plus how to migrate to a new datacenter."
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
+ms.custom: intro-internal
 ms.date: 03/09/2021
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -60,7 +62,7 @@ The following is a list of regions and their URL.
 ## Migration process  
  This is the overall process for migrating to a new datacenter.  
   
- ![Migration Process](media/migration-process.png "Migration Process")  
+ ![Migration Process.](media/migration-process.png "Migration Process")  
   
  Depending on the type of transition, you may be required to go through more steps.  
   

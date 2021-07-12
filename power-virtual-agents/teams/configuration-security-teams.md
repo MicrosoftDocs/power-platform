@@ -36,7 +36,7 @@ You can determine whether users need to sign in to access your bot, and whether 
 
 2. Select **Access**.
 
-    :::image type="content" source="media/security-access-teams.png" alt-text="The Access pane has options to grant access and require sign in":::
+    :::image type="content" source="media/security-access-teams.png" alt-text="The Access pane has options to grant access and require sign in.":::
 
 The **Access** pane gives you control of two aspects for user access.
 

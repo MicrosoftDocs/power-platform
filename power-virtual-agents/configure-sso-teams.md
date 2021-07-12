@@ -67,7 +67,7 @@ You will need to update your Azure AD app registration by doing the following ta
 
 You will need to get your Teams app ID:
 
-1. Log in to the Power Virtual Agents web app at [https://web.powerva.microsoft.com](https://powerva.microsoft.com) and open the bot that you want to configure SSO for.
+1. Log in to the Power Virtual Agents web app at [https://web.powerva.microsoft.com](https://web.powerva.microsoft.com) and open the bot that you want to configure SSO for.
  
 1. Expand **Manage** on the side navigation pane, and then select **Channels**. Select the **Microsoft Teams** tile.
  
@@ -140,7 +140,7 @@ Now you'll need to add the Teams client app IDs, which are:
  
 3. Select **Add application**.
 
-    :::image type="content" source="media/TeamsSSO/image7.png" alt-text="Screenshot showing Add Client Application":::
+    :::image type="content" source="media/TeamsSSO/image7.png" alt-text="Screenshot showing Add Client Application.":::
 
 4. Repeat from Step 1, this time using ```5e3ce6c0-2b1f-4285-8d4b-75ee78787346``` as the second client app ID and make sure to select the scope checkbox.
  
@@ -160,11 +160,11 @@ To add the token exchange url:
  
 1. Add the Token Exchange URL as described in the [Configure SSO with Azure AD](configure-sso.md#configure-authentication-in-power-virtual-agents-to-enable-single-sign-on) topic, under the **Configure authentication in Power Virtual Agents to Enable SSO** heading.
 
-    :::image type="content" source="media/TeamsSSO/image9.png" alt-text="Screenshot displaying correct Token Exchange URL configuration":::
+    :::image type="content" source="media/TeamsSSO/image9.png" alt-text="Screenshot displaying correct Token Exchange URL configuration.":::
 
 To add Teams SSO configuration information in the Power Virtual Agents bot:
  
-1. Log in to the Power Virtual Agents web app at [https://web.powerva.microsoft.com](https://powerva.microsoft.com) and open the bot that you want to configure SSO for.
+1. Log in to the Power Virtual Agents web app at [https://web.powerva.microsoft.com](https://web.powerva.microsoft.com) and open the bot that you want to configure SSO for.
  
 1. Expand **Manage** on the side navigation pane, and then select **Channels**. Select the **Microsoft Teams** tile.
  
@@ -185,7 +185,7 @@ These steps update the manifest file for the bot. Now you can download the manif
 
 1. Select **Download manifest** to get the new manifest.
 
-    :::image type="content" source="media/TeamsSSO/image11.png" alt-text="Screenshot displaying Download manifest button highlighted":::
+    :::image type="content" source="media/TeamsSSO/image11.png" alt-text="Screenshot displaying Download manifest button highlighted.":::
 
 >[!IMPORTANT] 
 > If your users have used the manifest to install the bot, they will need to get a new manifest after this configuration is complete and install the bot again for the Teams SSO to work. The Teams manifest does not refresh automatically. Alternatively, if you submit for Admin approval, the manifest is updated automatically.

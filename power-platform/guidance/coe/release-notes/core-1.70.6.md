@@ -6,7 +6,8 @@ manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/10/2020
+ms.date: 10/16/2020
+ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -23,7 +24,7 @@ Version 1.70.6 for the CoE Starter Kit Core Components is now available. This ar
 
 ## Sync Flows
 
-Some of our Sync flows were impacted by [throughput limits](https://docs.microsoft.com/power-automate/limits-and-config#throughput-limits), we have therefore re-designed them to run less frequently or only run when information has been modified.
+Some of our Sync flows were impacted by [throughput limits](/power-automate/limits-and-config#throughput-limits), we have therefore re-designed them to run less frequently or only run when information has been modified.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

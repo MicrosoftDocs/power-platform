@@ -38,7 +38,7 @@ Entities in the Power Virtual Agents app on Teams have the same functionality as
 
 
 
-:::image type="content" source="media/entities-teams-menu.png" alt-text="The entities menu on Teams has a box icon and is labelled as Entities":::
+:::image type="content" source="media/entities-teams-menu.png" alt-text="The entities menu on Teams has a box icon and is labelled as Entities.":::
 
 
 

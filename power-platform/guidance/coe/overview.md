@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/10/2020
+ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -50,29 +51,29 @@ After you've [installed the CoE Starter Kit solution](setup.md), get familiar wi
 
 1. Open the Power BI dashboard, and familiarize yourself with resources and makers that are already in your environments.
 
-    ![CoE Power BI dashboard](media/coe1.PNG "CoE Power BI dashboard")
+    ![CoE Power BI dashboard.](media/coe1.PNG "CoE Power BI dashboard")
 
 1. Identify orphaned apps, and assign them to new owners by using the embedded app in the Power BI dashboard.
 
-    ![Set App Permissions canvas app](media/SetAppPerms.PNG "Set App Permission canvas app")
+    ![Set App Permissions canvas app.](media/SetAppPerms.PNG "Set App Permission canvas app")
 
 1. Start planning your governance strategy by identifying your requirements for what makes a compliant app or maker, what information you'll need per app or per maker, what happens to noncompliant apps and makers, how you'll support your maker community in building compliant apps that follow best practices, what audits you want to run, and what actions you'll drive based on those audits.
 
-    ![Developer Compliance Center canvas app](media/coe4.PNG "Developer Compliance Center canvas app")
+    ![Developer Compliance Center canvas app.](media/coe4.PNG "Developer Compliance Center canvas app")
 
 1. Embrace your maker community and develop a nurture and adoption strategy. Think about how to onboard new makers; organize internal events such as show-and-tell sessions, training workshops, and hackathons; and put together templates and best practices for your makers to use.
 
-    ![Email to welcome new makers](media/coe5.PNG "Email to welcome new makers")
+    ![Email to welcome new makers.](media/coe5.PNG "Email to welcome new makers")
 
 ## Further resources
 
-- Explore the [Power Apps admin documentation](https://docs.microsoft.com/power-platform/admin/admin-documentation).
+- Explore the [Power Apps admin documentation](../../admin/admin-documentation.md).
 
 - Find training resources, including guided learning and step-by-step guides, at [aka.ms/PowerPlatformLabs](https://aka.ms/powerplatformlabs).
 
 - Read up on customer success stories and find resources relevant to your experience, technical background, and skill level at [aka.ms/PowerPlatformResources](https://aka.ms/powerplatformresources).
 
-- Get started with the Microsoft Power Platform path on Microsoft Learn, a free online and interactive training platform [aka.ms/PowerUp](https://aka.ms/PowerUp).
+- Get started with the Microsoft Power Platform path on Microsoft Learn, a free online and interactive training platform [aka.ms/PowerUp](/learn/paths/create-powerapps/?WT.mc_id=twitter-social-donasa).
 
 - As an admin looking after the CoE, you should be familiar with the administration and governance of Microsoft Power Platform. We recommend the following white paper as a resource: [aka.ms/PowerAppsAdminWhitepaper](https://aka.ms/powerappsadminwhitepaper).
 

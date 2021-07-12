@@ -1,12 +1,13 @@
 ---
-title: "Release notes and latest version of the CoE starter kit Governance components | MicrosoftDocs"
-description: "Release notes and latest version of the CoE Starter Kit."
+title: "Release notes and latest version of the CoE starter kit Governance components 1.21 | MicrosoftDocs"
+description: "Release notes and latest version of the CoE Starter Kit 1.21."
 author: manuelap-msft
 manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/10/2020
+ms.date: 08/14/2020
+ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -32,11 +33,11 @@ The Developer Compliance Center has been updated to now include a compliance pro
 - Custom Connectors
 - Chatbots
 
-![Developer Compliance Center - Flows](../media/compliancecenter-1.png "Developer Compliance Center - Flows")
+![Developer Compliance Center - Flows.](../media/compliancecenter-1.png "Developer Compliance Center - Flows")
 
 Makers can now provide compliance and support details for all app types, flows, chatbots and custom connectors
 
-![Developer Compliance Center - Provide Maker Requirements](../media/compliancecenter-3.png "Developer Compliance Center - Provide Maker Requirements")
+![Developer Compliance Center - Provide Maker Requirements.](../media/compliancecenter-3.png "Developer Compliance Center - Provide Maker Requirements")
 
 Additionally, if the Archival process of the Governance components is used, apps and flows flagged for archiving are highlighted to makers in the Developer Compliance Center.
 

@@ -6,6 +6,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/04/2020
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -29,7 +30,7 @@ Users can create and manage private documents with [!INCLUDE[pn_onedrive_for_bus
   
 - Set up permission on the root [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] team site for all users who will use [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)] in customer engagement apps. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Plan sites and manage users](https://support.office.com/article/Plan-sites-and-manage-users-95F9EB7A-4AC8-4DD5-A883-17686CBF8FFF)  
   
-- For SharePoint on-premises, enable the Search service to access shared documents from other users. It is enabled by default on [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)] but not on [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Create and configure a Search service application in SharePoint Server 2013](https://technet.microsoft.com/library/gg502597.aspx)  
+- For SharePoint on-premises, enable the Search service to access shared documents from other users. It is enabled by default on [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)] but not on [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Create and configure a Search service application in SharePoint Server 2013](/SharePoint/search/create-and-configure-a-search-service-application)  
   
 ## Enable OneDrive for Business  
  You enable [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)] as follows:  
@@ -74,11 +75,11 @@ $wellKnownApp.Update()
    > [!NOTE]
    >  This privilege is visible in the Security Roles dialog only after [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)] is enabled.  
   
-   ![Toggle availability of OneDrive for Business](../admin/media/onedrive-business-privileges.png "Toggle availability of OneDrive for Business")  
+   ![Toggle availability of OneDrive for Business.](../admin/media/onedrive-business-privileges.png "Toggle availability of OneDrive for Business")  
   
 ### See also  
  [Set up SharePoint integration](../admin/set-up-sharepoint-integration.md)   
- [Use OneDrive for Business to manage your private documents](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/basics/use-onedrive-business-manage-private-documents)   
+ [Use OneDrive for Business to manage your private documents](/dynamics365/customerengagement/on-premises/basics/use-onedrive-business-manage-private-documents)   
  [What is OneDrive for Business?](https://support.office.com/article/What-is-OneDrive-for-Business-187f90af-056f-47c0-9656-cc0ddca7fdc2)   
  [SharePoint Online and OneDrive for Business: software boundaries and limits](https://support.office.com/article/SharePoint-Online-and-OneDrive-for-Business-software-boundaries-and-limits-8F34FF47-B749-408B-ABC0-B605E1F6D498)   
 

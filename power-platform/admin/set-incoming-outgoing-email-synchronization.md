@@ -1,12 +1,13 @@
 ---
 title: "Set incoming and outgoing email synchronization | MicrosoftDocs"
 description: Set incoming and outgoing email synchronization
-author: jimholtz
+author: mduelae
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/09/2020
-ms.author: jimholtz
+ms.subservice: admin
+ms.author: mkaur
 search.audienceType: 
   - admin
 search.app:

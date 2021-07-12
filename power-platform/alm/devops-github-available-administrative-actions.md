@@ -1,12 +1,13 @@
 ---
-title: "Available GitHub Administration Actions for Microsoft Power Platform | Microsoft Docs"
-description: "Learn about the available GitHub Administration Actions supporting continuous integration and delivery with Microsoft Power Platform."
+title: "Available GitHub Actions for Microsoft Power Platform administration | Microsoft Docs"
+description: "Learn about the available GitHub Actions for Microsoft Power Platform adminsitration to support continuous integration and delivery with Microsoft Power Platform."
 keywords: 
 author: kkanakas
+ms.subservice: alm
 ms.author: kartikka
 manager: kvivek
 ms.custom: ""
-ms.date: 06/28/2021
+ms.date: 06/30/2021
 ms.reviewer: "pehecke"
 ms.service: power-platform
 ms.topic: "article"
@@ -17,9 +18,9 @@ search.app:
   - D365CE
 ---
 
-# Available GitHub Administrative Actions for Microsoft Power Platform 
+# Available GitHub Actions for Microsoft Power Platform administration 
 
-[Available GitHub Actions for administrative functions for Microsoft Power Platform](https://github.com/marketplace/actions/powerplatform-actions) are described in the following sections. 
+This article provides information about GitHub Actions available to administer Microsoft Power Platform.
 
 ## Configure credentials to use within your GitHub workflows
 
@@ -36,12 +37,12 @@ Parameters to define within your GitHub Action Script as [Environment Variables]
 - Application ID: `WF_APPLICATION_ID:<your application id>`
 - Tenant ID: `WF_TENANT_ID:<your tenant id>`
 
-The client Secret will be stored as a GitHub secret, as described earlier and will be referenced from within the action script using a parameter like:
+The client secret will be stored as a GitHub secret, as described earlier and will be referenced from within the action script using a parameter like:
 `client secret: ${{secrets.CLIENT_SECRET_GITHUB_ACTIONS}}`
 
 ## Administrative tasks
 
-The available administrative tasks are explained below
+The available administrative tasks are explained below.
 
 ### Microsoft Power Platform create environment
 

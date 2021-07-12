@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/09/2020
+ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -20,7 +21,7 @@ search.app:
 
 [!INCLUDE[cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
 
-Environments are containers that administrators can use to manage apps, flows, connections, and other assets, along with permissions to allow organization members to use the resources. This article walks you through important details about environments in Microsoft Power Platform and discusses recommended ways to benefit from proactively managing them. More information: [Microsoft Power Platform environments overview](https://docs.microsoft.com/power-platform/admin/environments-overview)
+Environments are containers that administrators can use to manage apps, flows, connections, and other assets, along with permissions to allow organization members to use the resources. This article walks you through important details about environments in Microsoft Power Platform and discusses recommended ways to benefit from proactively managing them. More information: [Microsoft Power Platform environments overview](../../admin/environments-overview.md)
 
 Developing an environment strategy means configuring environments and other layers of data security in a way that supports productive development in your organization, while securing and organizing resources. A strategy to manage environment provisioning and access, and controlling resources within them, is important to:
 
@@ -37,28 +38,28 @@ Developing an environment strategy means configuring environments and other laye
 
 Before we get started, let’s look at some environment and security key facts:
 
-- Environments are tied to a [geographic location](https://docs.microsoft.com/power-platform/admin/regions-overview) that is configured at the time the environment is created.
+- Environments are tied to a [geographic location](../../admin/regions-overview.md) that is configured at the time the environment is created.
 - Environments can be used to target different audiences or for different purposes such as dev, test, and production.
-- [Data loss prevention (DLP) policies](https://docs.microsoft.com/power-platform/admin/wp-data-loss-prevention) can be applied to individual environments or the tenant.
-- Every tenant has a [default environment](https://docs.microsoft.com/power-platform/admin/environments-overview#the-default-environment).
-- [Non-default environments](https://docs.microsoft.com/power-platform/admin/environments-overview#types-of-environments) can be created by licensed Power Apps, Power Automate, and Dynamics 365 users. Creation can be restricted to only global and service admins via a tenant setting.
-- Non-default environments offer more control around [permissions](https://docs.microsoft.com/power-platform/admin/environments-overview#environment-permissions).
-- An environment can have one or zero [Microsoft Dataverse instances](https://docs.microsoft.com/power-platform/admin/create-database).
-- Environments include [predefined security roles](https://docs.microsoft.com/power-platform/admin/database-security) that reflect common user tasks with access levels defined to match the security best-practice goal of providing access to the minimum amount of business data required to use the app.
+- [Data loss prevention (DLP) policies](../../admin/wp-data-loss-prevention.md) can be applied to individual environments or the tenant.
+- Every tenant has a [default environment](../../admin/environments-overview.md#the-default-environment).
+- [Non-default environments](../../admin/environments-overview.md#types-of-environments) can be created by licensed Power Apps, Power Automate, and Dynamics 365 users. Creation can be restricted to only global and service admins via a tenant setting.
+- Non-default environments offer more control around [permissions](../../admin/environments-overview.md#environment-permissions).
+- An environment can have one or zero [Microsoft Dataverse instances](../../admin/create-database.md).
+- Environments include [predefined security roles](../../admin/database-security.md) that reflect common user tasks with access levels defined to match the security best-practice goal of providing access to the minimum amount of business data required to use the app.
 
 ### Types of environments
 
-Before you get started developing an environment strategy, ensure you understand the different [types of environments](https://docs.microsoft.com/power-platform/admin/environments-overview#types-of-environments).
+Before you get started developing an environment strategy, ensure you understand the different [types of environments](../../admin/environments-overview.md#types-of-environments).
 
 ## Developing a strategy
 
 Here is a **starting point** to consider for your environment strategy.
 
-- **Assign your admins the [Microsoft Power Platform service admin](https://docs.microsoft.com/power-platform/admin/use-service-admin-role-manage-tenant#power-platform-administrator) or Dynamics 365 service admin role.**<br>These roles provide administrative access to Power Apps canvas apps, flows, model-driven apps, environments, custom connectors, connections, gateways, Power Apps portals, AI Builder models, and all Dataverse instances. This role should be assigned to admins who don't need global tenant admin access and are dedicated to managing Microsoft Power Platform.
+- **Assign your admins the [Microsoft Power Platform service admin](../../admin/use-service-admin-role-manage-tenant.md#power-platform-administrator) or Dynamics 365 service admin role.**<br>These roles provide administrative access to Power Apps canvas apps, flows, model-driven apps, environments, custom connectors, connections, gateways, Power Apps portals, AI Builder models, and all Dataverse instances. This role should be assigned to admins who don't need global tenant admin access and are dedicated to managing Microsoft Power Platform.
   
-- **Restrict the creation of net-new production environments to admins.**<br>[Limiting environment creation](https://docs.microsoft.com/power-platform/admin/control-environment-creation) is beneficial to maintain control in general: both to prevent unaccounted capacity consumption and to reduce the number of environments to manage. If users have to request environments from central IT, it’s easier to see what people are working on if admins are the gatekeeper.
+- **Restrict the creation of net-new production environments to admins.**<br>[Limiting environment creation](../../admin/control-environment-creation.md) is beneficial to maintain control in general: both to prevent unaccounted capacity consumption and to reduce the number of environments to manage. If users have to request environments from central IT, it’s easier to see what people are working on if admins are the gatekeeper.
 
-- **Treat the [default environment](https://docs.microsoft.com/power-platform/admin/environments-overview#the-default-environment) as a user and team productivity environment for your business groups.**<br>Renaming the environment through the admin center is recommended to make the purpose of that environment self-explanatory. Clearly communicate that Default is used for user and team productivity scenarios, but not business-important or mission-critical apps. This environment can't be disabled or deleted because it hosts integration with products like SharePoint and Project. We recommend a [tiered approach to user and team productivity environments](#tiered-approach-to-team-and-user-productivity-environments).
+- **Treat the [default environment](../../admin/environments-overview.md#the-default-environment) as a user and team productivity environment for your business groups.**<br>Renaming the environment through the admin center is recommended to make the purpose of that environment self-explanatory. Clearly communicate that Default is used for user and team productivity scenarios, but not business-important or mission-critical apps. This environment can't be disabled or deleted because it hosts integration with products like SharePoint and Project. We recommend a [tiered approach to user and team productivity environments](#tiered-approach-to-team-and-user-productivity-environments).
 
 - **Establish a process for requesting access to or creation of environments.**<br>With environment creation locked down and default reserved for first-party integration apps, make it clear to your organization that a proper development project should be started by requesting a new dedicated environment where there is clear communication of intent and support between developers and admins. The next section has more detail about automated environment creation, which is just one way to implement an easy formal request process.
 
@@ -74,7 +75,7 @@ To support integrations, reduce the number of environments needed, and accelerat
 
 #### Default environment
 
-Everyone in your tenant has permissions to create apps and flows here. There currently is no way to block the Environment Maker role assignment in this environment. This is also the environment that is used for first-party integrations, like creating an app from a SharePoint list. Learn more: [The default environment](https://docs.microsoft.com/power-platform/admin/environments-overview#the-default-environment)
+Everyone in your tenant has permissions to create apps and flows here. There currently is no way to block the Environment Maker role assignment in this environment. This is also the environment that is used for first-party integrations, like creating an app from a SharePoint list. Learn more: [The default environment](../../admin/environments-overview.md#the-default-environment)
 
 To reduce risk to data, the types of connectors used in your apps and flows should be limited to a less permissive data loss prevention (DLP) policy. This policy should cover common individual and small team productivity use cases, like working with SharePoint data, sending emails, and having an approval workflow.
 
@@ -82,7 +83,7 @@ To reduce risk to data, the types of connectors used in your apps and flows shou
 
 While the default environment covers many use cases, some power users will have more advanced needs for their apps and flows, like integrating with Microsoft Teams, Azure Active Directory (Azure AD), or Azure DevOps.
 
-For this purpose, we recommend creating a power user environment. This shared environment should use mre permissive DLP policies and admins should control the maker list to this environment.
+For this purpose, we recommend creating a power user environment. This shared environment should use more permissive DLP policies and admins should control the maker list to this environment.
 
 Some considerations for the power user environment:
 
@@ -107,11 +108,11 @@ In addition to the above recommendations, establishing your environment strategy
 
 | | |
 |---|---|
-| Everyone is a maker. Communicate with everyone that **Default** isn't for development of critical apps | ![Default environment](media/env-default.png "Default environment") |
-| Only one user has access. **Developer** environments are completely locked for any other user except the user who subscribed to the community plan. Applications can be moved out of the environment if needed.| ![Developer environment](media/env-dev.png "Default Developer") |  |
-| Approved users have access. **Shared** environments for user and team productivity scenarios, with an approved maker list. | ![Power User and Power Dev environment](media/env-power.png "Power User and Power Dev Developer") |
-| **Dedicated** environments for critical projects and workloads. Developers have environment maker access in the development environment, but only user access in the test and production environments. End users only have end user access to the production solution so no one can modify the production applications. | ![Critical Project Development, Test and Production environments](media/env-critical.png "Critical Project Development, Test and Production environments") |
-| **Shared** test and production environments for important but medium complex apps. Individual projects and business units have their own development environment to protect data, but solutions are deployed to shared test and production environments. Developers are end users in the test environment, and end users only have basic user access to solutions and data in the production environment. | ![Business Unit and Project Development environments, with shared test and production environments](media/env-important.png "Business Unit and Project Development environments, with shared test and production environments") |
+| Everyone is a maker. Communicate with everyone that **Default** isn't for development of critical apps | ![Default environment.](media/env-default.png "Default environment") |
+| Only one user has access. **Developer** environments are completely locked for any other user except the user who subscribed to the community plan. Applications can be moved out of the environment if needed.| ![Developer environment.](media/env-dev.png "Default Developer") |  |
+| Approved users have access. **Shared** environments for user and team productivity scenarios, with an approved maker list. | ![Power User and Power Dev environment.](media/env-power.png "Power User and Power Dev Developer") |
+| **Dedicated** environments for critical projects and workloads. Developers have environment maker access in the development environment, but only user access in the test and production environments. End users only have end user access to the production solution so no one can modify the production applications. | ![Critical Project Development, Test and Production environments.](media/env-critical.png "Critical Project Development, Test and Production environments") |
+| **Shared** test and production environments for important but medium complex apps. Individual projects and business units have their own development environment to protect data, but solutions are deployed to shared test and production environments. Developers are end users in the test environment, and end users only have basic user access to solutions and data in the production environment. | ![Business Unit and Project Development environments, with shared test and production environments.](media/env-important.png "Business Unit and Project Development environments, with shared test and production environments") |
 
 <font color="#ffc000">&#9679;</font> Critical Project<br>
 <font color="#92D050">&#9679;</font> Important Project<br>
@@ -162,9 +163,9 @@ Some factors influence when to provision which types of environments:
 
     | | |
     |:---:|---|
-    | ![Critical apps](media/env-l1.png "Critical apps") | Mission-critical scenarios and/or high-complexity and/or org-wide usage. Support owned by IT. Robust ALM process (dev/test/prod). Longer development cycle, often greater than 3 months to minimum viable product.
-     | ![Important apps](media/env-l2.png "Important apps") | Important but not critical and/or medium complexity and/or scoped to business unit. Support owned by app owner or business unit, blessed by IT. ALM-using environments are advised but might not be necessary. Development typically less than three months to Minimum Viable Product.
-    | ![Productivity apps](media/env-l3.png "Productivity apps") | Productivity app that doesn't need high level of governance. Support by app developer. Typically, application lifecycle management isn't necessary. Less than two weeks to minimum viable product.
+    | ![Critical apps.](media/env-l1.png "Critical apps") | Mission-critical scenarios and/or high-complexity and/or org-wide usage. Support owned by IT. Robust ALM process (dev/test/prod). Longer development cycle, often greater than 3 months to minimum viable product.
+     | ![Important apps.](media/env-l2.png "Important apps") | Important but not critical and/or medium complexity and/or scoped to business unit. Support owned by app owner or business unit, blessed by IT. ALM-using environments are advised but might not be necessary. Development typically less than three months to Minimum Viable Product.
+    | ![Productivity apps.](media/env-l3.png "Productivity apps") | Productivity app that doesn't need high level of governance. Support by app developer. Typically, application lifecycle management isn't necessary. Less than two weeks to minimum viable product.
 
 - **Capacity**
 

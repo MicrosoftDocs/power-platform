@@ -3,6 +3,7 @@ title: "Available GitHub Actions for Microsoft Power Platform | Microsoft Docs"
 description: "Learn about the available GitHub Actions to support continuous integration and delivery for Microsoft Power Platform development."
 keywords: 
 author: kkanakas
+ms.subservice: alm
 ms.author: kartikka
 manager: kvivek
 ms.custom: ""
@@ -21,7 +22,7 @@ search.app:
 
 [GitHub Actions for Microsoft Power Platform](https://github.com/marketplace/actions/powerplatform-actions) are described in the following sections. In addition, sample GitHub workflows shown as well. For more information about GitHub Actions and how to download them, go to [GitHub Actions for Microsoft Power Platform](devops-github-actions.md).
 
-## Configuring Credentials to use with GitHub Actions with Microsoft Power Platform
+## Configure credentials to use with GitHub Actions with Microsoft Power Platform
 
 Many of the actions require you to connect to a Microsoft Dataverse environment. You can add service principal or user credentials as secrets in your GitHub repository and then use them in your workflows.
 
@@ -124,10 +125,9 @@ Publishes the solution customizations.
 |client-secret| The client secret used to authenticate the GitHub pipeline. This parameter is **required** when authenticating with Service Principal credentials.|
 |tenant-id| The tenant ID when authenticating with `app-id` and `client-secret`.|
 
-
 ### clone-solution
 
-Clones the solution for a given environment
+Clones the solution for a given environment.
 
 | Parameter    | Description       |
 |---------------|-------------------|
@@ -141,11 +141,11 @@ Clones the solution for a given environment
 |solution-name | (Required) The path and name of the solution.zip file needed to clone (for example, out/CI/ALMLab.zip).|
 |solution-version | Version of the solution to clone.| 
 |target-folder | Target folder to place the extracted solution into. (for example, Git repository\target-solution-folder). |
-|Working-directory | Temporary folder for work in progress artifacts needed for cloning the solution <br/> default: `root of the repository`|
+|Working-directory | Temporary folder for work in progress artifacts needed for cloning the solution. <br/> default: `root of the repository`|
 
 ### check-solution
 
-Checks the solution file to detect inconsistencies
+Checks the solution file to detect inconsistencies.
 
 | Parameter    | Description       |
 |---------------|-------------------|
@@ -156,13 +156,13 @@ Checks the solution file to detect inconsistencies
 |client-secret| The client secret used to authenticate the GitHub pipeline. This parameter is **required** when authenticating with Service Principal credentials.|
 |tenant-id| The tenant ID when authenticating with `app-id` and `client-secret`.|
 |path| (Required) The path and name of the solution file you want to check.|
-|geo| Which geo location of the Power Platform Checker service to use. Default Value is 'united states'|
+|geo| Which geo location of the Microsoft Power Platform Checker service to use. Default value is 'united states'.|
 |rule-level-override | Path to file a containing a JSON array of rules and their levels. Accepted values are: Critical, High, Low, and Informational. Example: [{"Id":"meta-remove-dup-reg","OverrideLevel":"Medium"},{"Id":"il-avoid-specialized-update-ops","OverrideLevel":"Medium"}]| 
-|checker-logs-artifact-name | The name of the artifact folderof which the Power Platform checker logs will be uploaded. Default value is 'CheckSolutionLogs' |
+|checker-logs-artifact-name | The name of the artifact folder for which Microsoft Power Platform checker logs will be uploaded. Default value is 'CheckSolutionLogs'. |
 
 ### upgrade-solution
 
-Provides the ability to upgrade the solution
+Provides the ability to upgrade the solution.
 
 | Parameter    | Description       |
 |---------------|-------------------|
@@ -173,16 +173,20 @@ Provides the ability to upgrade the solution
 |app-id| The application ID to authenticate with. This parameter is **required** when authenticating with Service Principal credentials.|
 |client-secret| The client secret used to authenticate the GitHub pipeline. This parameter is **required** when authenticating with Service Principal credentials.|
 |tenant-id| The tenant ID when authenticating with `app-id` and `client-secret`.|
-|solution-name | (Required) name of the solution to upgrade|
-|async| Upgrades the solution asynchronously|
-|max-async-wait-time| Maximum asynchronous wait time in minutes. Default value is 60 minutes|
+|solution-name | (Required) Name of the solution to upgrade.|
+|async| Upgrades the solution asynchronously.|
+|max-async-wait-time| Maximum asynchronous wait time in minutes. Default value is 60 minutes.|
 
 ## Package tasks
 
 These tasks perform actions against packages and include the following.
+
 ### deploy-package
 
-Provides the ability to deploy a package dll or a zip file with a package. **note** this action is only supported on a Windows Runner
+Provides the ability to deploy a package dll or a zip file with a package. 
+
+> [!NOTE]
+> This action is only supported on a Windows.
 
 | Parameter    | Description       |
 |---------------|-------------------|
@@ -192,7 +196,7 @@ Provides the ability to deploy a package dll or a zip file with a package. **not
 |app-id| The application ID to authenticate with. This parameter is **required** when authenticating with Service Principal credentials.|
 |client-secret| The client secret used to authenticate the GitHub pipeline. This parameter is **required** when authenticating with Service Principal credentials.|
 |tenant-id| The tenant ID when authenticating with `app-id` and `client-secret`.|
-|package| (Required) The path to the package dll or zip file with a package|
+|package| (Required) The path to the package dll or zip file with a package.|
 
 ## GitHub workflow authoring
 

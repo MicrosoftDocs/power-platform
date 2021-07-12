@@ -1,12 +1,13 @@
 ---
 title: "Control field synchronization with Outlook  | MicrosoftDocs"
 description: Control field synchronization with Outlook
-author: jimholtz
+author: mduelae
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/17/2021
-ms.author: jimholtz
+ms.subservice: admin
+ms.author: mkaur
 search.audienceType: 
   - admin
 search.app:
@@ -16,8 +17,6 @@ search.app:
   - Flow
 ---
 # Control field synchronization with Outlook
-
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 <!-- legacy procedure -->
 
@@ -30,19 +29,19 @@ With field synchronization, admins can set the sync direction between customer e
   
 ## Set field synchronization between customer engagement apps and Outlook  
   
-1. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+1. In the web app, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
 
 2. Select **Settings** > **Administration**.
 
 3. Select **System Settings**, and then choose the **Synchronization** tab. 
   
-   For [Unified Interface](about-unified-interface.md), select Settings (![Gear button](../admin/media/selection-rule-gear.png "Gear button")) in the upper-right corner > **Advanced Settings** > **Settings** > **Administration** > **System Settings** > **Synchronization** tab.
+   For [Unified Interface](about-unified-interface.md), select Settings (![Gear button.](../admin/media/selection-rule-gear.png "Gear button")) in the upper-right corner > **Advanced Settings** > **Settings** > **Administration** > **System Settings** > **Synchronization** tab.
   
 4. Under **Synchronize items with Outlook or Exchange**, select **synchronized fields**.  
   
 5. For the fields you want to change synchronization, choose the arrows in the Sync Direction column. Each choice will change the direction.  
   
-   ![Appointment fields for synchronization](../admin/media/appointment-field-sync.png "Appointment fields for synchronization")  
+   ![Appointment fields for synchronization.](../admin/media/appointment-field-sync.png "Appointment fields for synchronization")  
   
    > [!TIP]
    >  Hover over a field name to see the fields mapped to it.  

@@ -6,8 +6,9 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/17/2021
 author: revachauhan
+ms.subservice: admin
 ms.author: rechauha
-ms.reviewer: jimholtz
+ms.reviewer: mkaur
 search.audienceType: 
   - admin
 search.app:
@@ -17,8 +18,6 @@ search.app:
   - Flow
 ---
 # Connect to IMAP or SMTP servers
-
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 <!-- legacy procedure -->
 
@@ -90,14 +89,14 @@ Set server-side synchronization to be the default configuration method.
 
      If you leave the **Email processing form unapproved user and queues** at the default values (checked), you will need to approve emails and queues for user mailboxes as directed below in **Approve Email**.  
 
-     ![System Settings for server-side synchronization](../admin/media/imap-profile.png "System Settings for server-side synchronization")  
+     ![System Settings for server-side synchronization.](../admin/media/imap-profile.png "System Settings for server-side synchronization")  
 
 4. Select **OK**.  
  
 ## Configure mailboxes  
  To set mailboxes to use the default profile, you must first set the Server Profile and the delivery method for email, appointments, contacts, and tasks.  
 
- In addition to administrator permissions, you must have Read and Write privileges on the Mailbox entity to set the delivery method for the mailbox.  
+ In addition to administrator permissions, you must have Read and Write privileges on the Mailbox table to set the delivery method for the mailbox.  
 
  Select **one** of the following methods:  
 
@@ -111,7 +110,7 @@ Set server-side synchronization to be the default configuration method.
 
 4. Select all the mailboxes that you want to associate with the IMAP profile you created, select **Apply Default Email Settings**, verify the settings, and then select **OK**.  
 
-   ![Apply default email settings](../admin/media/apply-default-email-settings.png "Apply default email settings")  
+   ![Apply default email settings.](../admin/media/apply-default-email-settings.png "Apply default email settings")  
 
     By default, the mailbox configuration is tested and the mailboxes are enabled when you select **OK**.  
 

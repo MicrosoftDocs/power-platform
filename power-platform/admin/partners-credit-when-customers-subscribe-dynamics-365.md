@@ -2,11 +2,11 @@
 title: "Partners: Get credit when your customers subscribe to Dynamics 365"
 description: "As a Microsoft Dynamics 365 partner, learn how to help your customers sign up for a trial subscription, customize it, and set yourself as the partner of record."
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/30/2017
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -17,8 +17,6 @@ search.app:
   - Flow
 ---
 # For partners: Get the credit when your customers subscribe
-
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 As a Dynamics 365 partner, you can help your customer sign up for a [!INCLUDE[pn_Online_Subscription](../includes/pn-online-subscription.md)]. You can customize and set up their organization for them, and reduce their effort to get started. After signing up, you can designate your company as the customer’s partner of record. As the partner of record, you can help to ensure that your customer has a great trial experience and start them down the path toward success with Dynamics 365 apps.  
   

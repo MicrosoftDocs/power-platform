@@ -2,6 +2,7 @@
 title: "Create or edit a security role  | MicrosoftDocs"
 description: Create or edit a security role
 author: paulliew
+ms.subservice: admin
 ms.author: paulliew
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
@@ -19,11 +20,9 @@ search.app:
 ---
 # Create or edit a security role to manage access
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 You can create new security roles to accommodate changes in your business requirements or you can edit the privileges associated with an existing security role.
   
- If you need to back up your security role changes, or export security roles for use in a different implementation, you can export them as part of exporting customizations. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Export your customizations as a solution](https://docs.microsoft.com/powerapps/maker/common-data-service/use-solutions-for-your-customizations)  
+ If you need to back up your security role changes, or export security roles for use in a different implementation, you can export them as part of exporting customizations. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Export your customizations as a solution](/powerapps/maker/common-data-service/use-solutions-for-your-customizations)  
 
 For information on predefined security roles, see [Predefined security roles](database-security.md#predefined-security-roles).
   
@@ -120,7 +119,7 @@ For information on predefined security roles, see [Predefined security roles](da
 
 Start by downloading the solution from the Download Center: [Microsoft Dataverse minimum privilege security role](https://download.microsoft.com/download/6/5/5/6552A30E-05F4-45F0-AEE3-9BB01E13118A/MinprivilegeSecRole_1_0_0_0.zip).
 
-Then, follow the directions to import the solution: [Import, update, and export solutions](https://docs.microsoft.com/powerapps/maker/common-data-service/import-update-export-solutions).
+Then, follow the directions to import the solution: [Import, update, and export solutions](/powerapps/maker/common-data-service/import-update-export-solutions).
 
 When you import the solution, it creates the **min prv apps use** role which you can copy (see: [Create a security role by Copy Role](#create-a-security-role-by-copy-role)). When Copying Role is complete, navigate to each tab - Core Records, Business Management, Customization, etc - and set the appropriate privileges. 
 

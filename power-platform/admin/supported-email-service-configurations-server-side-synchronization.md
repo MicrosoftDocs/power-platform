@@ -4,10 +4,11 @@ description: "Learn about the email service configurations supported by server-s
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/11/2021
+ms.date: 03/17/2021
 author: revachauhan
+ms.subservice: admin
 ms.author: rechauha
-ms.reviewer: jimholtz
+ms.reviewer: mkaur
 search.audienceType: 
   - admin
 search.app:
@@ -25,7 +26,7 @@ Depending on your customer engagement apps (Dynamics 365 Sales, Dynamics 365 Cus
 > - [!INCLUDE[pn-outlook-short](../includes/pn-outlook-short.md)] on the web is not supported in a hybrid deployment: Customer Engagement (on-premises) with [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)].  
 > - You can create two different email server profiles: one for online mailboxes, and another for on-premises mailboxes. Associate the mailboxes with the correct email server profile.  
 > - Manual tracking in [!INCLUDE[proc_crm_for_outlook](../includes/proc-crm-for-outlook.md)] is not supported when a user's mailbox is configured to use server-side synchronization with the POP/SMTP protocol.  
-> - For [!INCLUDE[pn_crm_8_1_0_online](../includes/pn-crm-8-1-0-online.md)] and [!INCLUDE[pn_crm_8_2_0_online](../includes/pn-crm-8-2-0-online.md)], we support [service encryption](https://technet.microsoft.com/library/dn569286.aspx) in [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] with server-side sync.  
+> - For [!INCLUDE[pn_crm_8_1_0_online](../includes/pn-crm-8-1-0-online.md)] and [!INCLUDE[pn_crm_8_2_0_online](../includes/pn-crm-8-2-0-online.md)], we support [service encryption](/microsoft-365/compliance/encryption) in [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] with server-side sync.  
   
 
 | Customer engagement apps deployment |  Email system  | Email synchronization | Appointments, contacts, and tasks synchronization |  Protocol  
@@ -53,7 +54,7 @@ Customers can use an Exchange Server (Hybrid) profile configured with the Exchan
 > [!NOTE]
 > The following limitations apply to connecting cross-tenant:
 > - Dynamics 365 App for Outlook is currently not supported.
-> - Approval of Dynamics 365 mailbox records must be performed by a system administrator. 
+> - Approval of Dynamics 365 mailbox records must be performed by a Global tenant admin or an Exchange admin of the primary tenant. 
 > - We are aware of the Exchange Basic authentication deprecation schedule and are working on an alternate implementation.
 
 ## Unsupported email service configurations  

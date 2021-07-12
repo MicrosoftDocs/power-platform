@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/31/2020
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -40,7 +41,7 @@ Use the settings on this page to configure calendar settings for model-driven ap
 | Maximum duration of an appointment in days | Users can create appointments to meet or talk to customers. Users create these appointments on the Service Calendar or in the Activities area.<br /><br /> You can use this setting to control the maximum number of days that your users can schedule an appointment for. The default is 10 days. |
   
 ### See also  
- [Create or edit an appointment](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/basics/create-edit-appointment)
+ [Create or edit an appointment](/dynamics365/customerengagement/on-premises/basics/create-edit-appointment)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -6,6 +6,7 @@ ms.component: pa-admin
 ms.topic: quickstart
 ms.date: 09/11/2020
 author: jimholtz
+ms.subservice: admin
 ms.author: jimholtz
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
@@ -19,8 +20,6 @@ search.app:
 ---
 
 # How access to a record is determined
-
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 There are different ways to obtain access to a particular record in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation). To be able to do a certain action with an entity (Create, Read, Write, Delete, Append, Append to, Assign, Share), two major checks are done: privilege and access checks. The access check only takes place once the privilege check passes.
  

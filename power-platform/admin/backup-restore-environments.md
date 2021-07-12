@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/19/2021
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -24,12 +25,12 @@ Protecting your data in customer engagement apps (Dynamics 365 Sales, Dynamics 3
 Some backups take place without you having to do anything.  
 
 > [!div class="mx-imgBorder"] 
-> ![System backups](media/system-backup.png "System backups")
+> ![System backups.](media/system-backup.png "System backups")
 
 About **system backups**:  
   
 - All your environments, except Trial environments (standard and subscription-based), are backed up.  
-- System backups occur continuously. The underlying technology used is Azure SQL Database. See SQL Database documentation [Automated backups](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups) for details.
+- System backups occur continuously. The underlying technology used is Azure SQL Database. See SQL Database documentation [Automated backups](/azure/sql-database/sql-database-automated-backups) for details.
 - System backups for production environments that have been created with a database and have one or more Dynamics 365 applications installed are retained up to 28 days. System backups for production environments which do not have Dynamics 365 applications deployed in them will be retained for 7 days. System backups for sandbox environments will be retained for 7 days.
 - You must restore an environment to the same region in which it was backed up.
   
@@ -40,7 +41,7 @@ About **system backups**:
 2. Go to **Environments** > [select an environment] > **Backups** > **Restore or manage**.
   
    > [!div class="mx-imgBorder"] 
-   > ![Select Restore or manage](media/restore-backup-menu.png "Select Restore or manage")
+   > ![Select Restore or manage.](media/restore-backup-menu.png "Select Restore or manage")
 
 3. Select the **System** tab.  
   
@@ -49,12 +50,12 @@ About **system backups**:
 5. You'll be provided with a list of available backups at or close to the date and time you chose if the selected time is not available. Pick the desired backup, and then select **Confirm**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Select available backup](media/select-available-backup.png "Select available backup")
+   > ![Select available backup.](media/select-available-backup.png "Select available backup")
 
 6. Select an environment to restore to (overwrite), enter other settings as desired, and then select **Restore**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Enter backup details](media/restore-backup.png "Enter backup details")
+   > ![Enter backup details.](media/restore-backup.png "Enter backup details")
 
    > [!NOTE]
    > - Only sandbox environments can be restored to.
@@ -75,7 +76,7 @@ About **manual backups**:
 - Check your expiration date.  
   
   > [!div class="mx-imgBorder"] 
-  > ![Backup expiration date](media/restore-backup-manual-expiration.png "Backup expiration date")
+  > ![Backup expiration date.](media/restore-backup-manual-expiration.png "Backup expiration date")
   
 - You are not limited in the number of manual backups you can make.
 - Manual backups do not count against your storage limits.  
@@ -88,7 +89,7 @@ About **manual backups**:
 2. Go to **Environments** > [select an environment] > **Backups** > **Create**.
   
    > [!div class="mx-imgBorder"] 
-   > ![Select Create](media/create-backup.png "Select Create")
+   > ![Select Create.](media/create-backup.png "Select Create")
 
 3. Fill in the information, and then select **Create**.
 
@@ -147,10 +148,10 @@ Edit a backup to change its label and your notes about the backup.
 
 ### How are system backups taken?
 
-In the current version of the product, system backups occur continuously; this is different from previous versions where backups were once a day. Because the underlying technology used is Azure SQL Database, see [Automated backups](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups) for details.
+In the current version of the product, system backups occur continuously; this is different from previous versions where backups were once a day. Because the underlying technology used is Azure SQL Database, see [Automated backups](/azure/sql-database/sql-database-automated-backups) for details.
 
 ### How are manual/on-demand backups taken?
-In the current version of the product, system backups occur continuously; this is different from previous versions where backups were once a day. Because the underlying technology used is Azure SQL Database, see [Automated backups](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups) for details.
+In the current version of the product, system backups occur continuously; this is different from previous versions where backups were once a day. Because the underlying technology used is Azure SQL Database, see [Automated backups](/azure/sql-database/sql-database-automated-backups) for details.
 
 Because Azure SQL Database takes backups continuously, there is no need to take additional backups or specify Azure SQL Database to take additional backups or an on-demand full backup. That means our on-demand backup is just a label and a time stamp that we store in our system and use during restore requests. This is different from previous versions that took a full backup during an on-demand backup. 
 
@@ -158,7 +159,7 @@ Because Azure SQL Database takes backups continuously, there is no need to take 
 There is no status as the backup is processing. When the backup is completed, you'll see the following message: "*The [backup name] backup was successfully created.*" 
 
 ### Should I open a support ticket for taking a full backup?
-No. In the current version of the product, system backups occur continuously; this is different from previous versions where backups were once a day. Because the underlying technology used is Azure SQL Database, see [Automated backups](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups) for details.
+No. In the current version of the product, system backups occur continuously; this is different from previous versions where backups were once a day. Because the underlying technology used is Azure SQL Database, see [Automated backups](/azure/sql-database/sql-database-automated-backups) for details.
 
 Because Azure SQL Database takes backups continuously and there is no specific way to take additional on-demand backups, we recommend you use our on-demand backup feature to label your backups. 
 
@@ -173,10 +174,10 @@ Production environments that have been created with a database will give you the
 You can't extend your system backups or manual/on-demand backups. However, if you want to keep the data for longer than the standard retention period, we recommend you copy your environment to an additional environment and do not modify that additional environment. 
 
 ### Can I move my data from an online environment to an on-premises version?
-Obtaining a copy of your database backup isn't available. If you want to move your online data to Dynamics 365 Customer Engagement (on-premises), this requires data migration. For smaller data sets, consider [exporting data to Excel](https://docs.microsoft.com/powerapps/user/export-data-excel). For larger data sets, find a third-party data migration solution on [Microsoft AppSource](https://appsource.microsoft.com/).  
+Obtaining a copy of your database backup isn't available. If you want to move your online data to Dynamics 365 Customer Engagement (on-premises), this requires data migration. For smaller data sets, consider [exporting data to Excel](/powerapps/user/export-data-excel). For larger data sets, find a third-party data migration solution on [Microsoft AppSource](https://appsource.microsoft.com/).  
 
 ### How can I download a copy of my backup?
-Obtaining a copy of your database backup isn't available. Moving your online data requires data migration. For smaller data sets, consider [exporting data to Excel](https://docs.microsoft.com/powerapps/user/export-data-excel). For larger data sets, find a third-party data migration solution on [Microsoft AppSource](https://appsource.microsoft.com/).  
+Obtaining a copy of your database backup isn't available. Moving your online data requires data migration. For smaller data sets, consider [exporting data to Excel](/powerapps/user/export-data-excel). For larger data sets, find a third-party data migration solution on [Microsoft AppSource](https://appsource.microsoft.com/).  
 
 ### Do we have any database size restriction to take a backup or restore an organization through user interface (UI) or API?
 We don't have any restriction on database size (or storage capacity/entitlement) to take a backup through UI or API. However, when an organization’s storage capacity usage is greater than the entitled capacity, the following admin operations will be blocked:

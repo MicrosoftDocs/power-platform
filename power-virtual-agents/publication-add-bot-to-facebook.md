@@ -55,7 +55,7 @@ You will then need to submit your app for Facebook review before you can publish
 
 3. Copy the *App ID* and *App Secret*. You will need these when you [configure the Facebook channel in Power Virtual Agents](#configure-the-facebook-channel-in-power-virtual-agents).
 
-   ![Get Facebook App ID and secret](media/channel-fb-get-app-id-secret.png)
+   ![Get Facebook App ID and secret.](media/channel-fb-get-app-id-secret.png)
 
 **Enable API access for your Facebook app:**
 
@@ -67,7 +67,7 @@ You will then need to submit your app for Facebook review before you can publish
 
 4. Select **Save Changes** to confirm your changes.
 
-   ![Allow API Access to App Settings](media/channel-fb-allow-api-access.png)
+   ![Allow API Access to App Settings.](media/channel-fb-allow-api-access.png)
 
 **Add Facebook Messenger to your app:**
 
@@ -75,7 +75,7 @@ You will then need to submit your app for Facebook review before you can publish
 
 2. Go to the **Dashboard**. Under the **Add a Product** section, select **Set Up** on the **Messenger** tile.
 
-   ![Add Messenger product](media/channel-fb-add-messenger.png)
+   ![Add Messenger product.](media/channel-fb-add-messenger.png)
 
 **Configure Facebook pages:**
 
@@ -85,15 +85,15 @@ You will then need to submit your app for Facebook review before you can publish
 
 3. Add the pages you want to add the bot to by selecting **Add or Remove Pages** under the **Access Tokens** section. You can also create a new page by selecting **Create New Page**.
 
-   ![Add Facebook page to Facebook app](media/channel-fb-add-page-to-fb-app.png)
+   ![Add Facebook page to Facebook app.](media/channel-fb-add-page-to-fb-app.png)
 
 4. When adding pages, make sure **Manage and access Page conversations in Messenger** is set to **Yes**.
 
-   ![Messenger permission for page](media/channel-fb-page-messenger-capability.png)
+   ![Messenger permission for page.](media/channel-fb-page-messenger-capability.png)
 
 5. Copy the *Page ID* and *Token* for each of the pages that you want to add the bot to. You'll need to select **Generate Token** for each page. You'll need these when you [configure the Facebook channel in Power Virtual Agents](#configure-the-facebook-channel-in-power-virtual-agents).
 
-   ![Get page ID and token](media/channel-fb-get-page-id-token.png)
+   ![Get page ID and token.](media/channel-fb-get-page-id-token.png)
 
 ### Configure the Facebook channel in Power Virtual Agents
 
@@ -101,19 +101,19 @@ You will then need to submit your app for Facebook review before you can publish
 
 2. Select the **Facebook** tile to open the configuration window.
 
-   ![Facebook channel](media/channel-fb.png)
+   ![Facebook channel.](media/channel-fb.png)
 
 3. Paste the *App ID*, *App Secret*, *Page ID*, and *Token* you retrieved earlier into their corresponding fields.
 
-   ![Provide Facebook app and page information](media/channel-fb-add-channel.png)
+   ![Provide Facebook app and page information.](media/channel-fb-add-channel.png)
 
 4. At least one page is required, but you can select **Add Page** to add additional pages.
 
-   ![Provide multiple Facebook pages' information](media/channel-fb-add-pages.png)
+   ![Provide multiple Facebook pages' information.](media/channel-fb-add-pages.png)
 
 5. Select **Add** and wait for the success confirmation message. Once successful, copy the *Callback URL* and *Verify token*. You'll need these when you [connect your Facebook app to Power Virtual Agents](#connect-your-facebook-app-to-power-virtual-agents).
 
-   ![Get callback information for Facebook](media/channel-fb-get-callback-info.png)
+   ![Get callback information for Facebook.](media/channel-fb-get-callback-info.png)
 
 ### Connect your Facebook app to Power Virtual Agents 
 
@@ -123,15 +123,15 @@ You will then need to submit your app for Facebook review before you can publish
 
 1. Under the **Webhooks** section, select **Add Callback URL**.
 
-   ![Set up webhooks for Facebook app](media/channel-fb-add-callbackurl.png)
+   ![Set up webhooks for Facebook app.](media/channel-fb-add-callbackurl.png)
 
 1. Provide the *Callback URL* and *Verify token* from the [Configure the Facebook channel in Power Virtual Agents](#configure-the-facebook-channel-in-power-virtual-agents) section and select **Verify and Save**.
 
-   ![Add Callback URL and Verify Token](media/channel-fb-webhook-setting.png)
+   ![Add Callback URL and Verify Token.](media/channel-fb-webhook-setting.png)
 
 1. Select **Add Subscriptions** for each page that you want to add the bot to.  
 
-   ![Add webhook subscription](media/channel-fb-add-webhooks-subscription.png)
+   ![Add webhook subscription.](media/channel-fb-add-webhooks-subscription.png)
 
 1. Select the following fields:
     - **messages**
@@ -141,7 +141,7 @@ You will then need to submit your app for Facebook review before you can publish
 
 1. Select **Save**.
 
-   ![Add webhook subscription fields](media/channel-fb-subscription-fields.png)
+   ![Add webhook subscription fields.](media/channel-fb-subscription-fields.png)
 
 
 ### Submit for Facebook review
@@ -165,7 +165,7 @@ When you do not want the bot to be reachable in Facebook Messenger, you can remo
 
 1. Select the **Facebook** tile and then **Delete**.
 
-   ![Delete Facebook channel](media/channel-fb-delete-channel.png)
+   ![Delete Facebook channel.](media/channel-fb-delete-channel.png)
 
 ## Updating bot content for existing conversations on Facebook
 

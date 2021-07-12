@@ -4,10 +4,11 @@ description: Connect to Exchange Online
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/17/2021
+ms.date: 05/12/2021
 author: revachauhan
+ms.subservice: admin
 ms.author: rechauha
-ms.reviewer: jimholtz
+ms.reviewer: mkaur
 search.audienceType: 
   - admin
 search.app:
@@ -17,8 +18,6 @@ search.app:
   - Flow
 ---
 # Connect to Exchange Online
-
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 <!-- legacy procedure -->
 
@@ -35,9 +34,9 @@ With both customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Se
   
 -   [Exchange Online](https://technet.microsoft.com/library/jj200580\(v=exchg.150\).aspx)  
   
--   [Exchange Online Service Description](https://technet.microsoft.com/library/jj819276.aspx)  
+-   [Exchange Online Service Description](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description)  
   
--   [Microsoft 365 and Office 365 service descriptions](https://technet.microsoft.com/office/dn788955)  
+-   [Microsoft 365 and Office 365 service descriptions](/office365/servicedescriptions/office-365-service-descriptions-technet-library)  
   
 > [!TIP]
 >  To make sure you've got a good connection to [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)], run the [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/). For information on what tests to run, see [Test mail flow with the Remote Connectivity Analyzer](https://technet.microsoft.com/library/dn305950\(v=exchg.150\).aspx).  
@@ -60,7 +59,7 @@ With both customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Se
 
 2. Select **Settings** > **Email** > **Email settings**.  
   
-3. Set the processing and synchronization fields as follows:  
+3. Set the processing and synchronization columns as follows:  
   
    - **Server Profile**: [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)]  
   
@@ -77,7 +76,7 @@ All new users will have these settings applied to their mailbox.
 ## Configure mailboxes  
  New users will have their mailboxes configured automatically with the settings you made in the prior section. For existing users added prior to the above settings, you must set the Server Profile and the delivery method for email, appointments, contacts, and tasks.  
   
- In addition to administrator permissions, you must have Read and Write privileges on the Mailbox entity to set the delivery method for the mailbox.  
+ In addition to administrator permissions, you must have Read and Write privileges on the Mailbox table to set the delivery method for the mailbox.  
   
  Choose **one** of the following methods:  
   
@@ -91,7 +90,7 @@ All new users will have these settings applied to their mailbox.
   
 4. Select all the mailboxes that you want to associate with the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] profile, select **Apply Default Email Settings**, verify the settings, and then select **OK**.  
   
-   ![Apply default email settings](../admin/media/apply-default-email-settings.png "Apply default email settings")  
+   ![Apply default email settings.](../admin/media/apply-default-email-settings.png "Apply default email settings")  
   
     By default, the mailbox configuration is tested and the mailboxes are enabled when you select **OK**.  
   
@@ -124,7 +123,10 @@ To approve emails for customer engagement apps, a user requires:
 
 Decide which approach you want your organization to follow for mailbox approval.
 
-![Decide on mailbox approval approach](media/approval-flow-chart.png "Decide on mailbox approval approach")
+![Decide on mailbox approval approach.](media/approval-flow-chart.png "Decide on mailbox approval approach")
+
+> [!NOTE]
+> We are planning to revise the mailbox approval process with scenarios not requiring global admin approval. We'll update this documentation when that becomes available.
 
 ### Permission model
 The following table describes the permissions required to approve emails.
@@ -192,7 +194,7 @@ The following table describes the permissions required to approve emails.
 <sup>2</sup> We are updating for customer engagement apps/Exchange Online, for version 9.1.0.5805 or later.  <br />
 <sup>3</sup> We will be updating for customer engagement apps/Exchange On-premises. Check back for version information.
 
- To determine your version, sign in and in the upper-right corner of the screen, select the **Settings** button (![User profile Settings button](media/user-profile-settings-button.png)) > **About**.  
+ To determine your version, sign in and in the upper-right corner of the screen, select the **Settings** button (![User profile Settings button.](media/user-profile-settings-button.png)) > **About**.  
 
 ### Require and configure mailbox approval 
 
@@ -213,7 +215,7 @@ To manually assign the **Approve Email Addresses for Users or Queues** privilege
 4. Under **Miscellaneous Privileges**, set the privilege level for **Approve Email Addresses for Users or Queues**.
   
 > [!div class="mx-imgBorder"] 
-> ![Approve Email Address for User or Queues](media/approve-email-address-for-user-queues.png "Approve Email Address for User or Queues")
+> ![Approve Email Address for User or Queues.](media/approve-email-address-for-user-queues.png "Approve Email Address for User or Queues")
 
 #### Approve mailboxes
 
@@ -250,13 +252,13 @@ Admins, as described in the Permission model table, can change the settings so m
 4. Select the mailboxes you want to test, and then select **Test & Enable Mailbox**.  
 
    > [!div class="mx-imgBorder"] 
-   > ![Test and enable mailboxes](media/test-enable-mailbox85.png "Test and enable mailboxes")
+   > ![Test and enable mailboxes.](media/test-enable-mailbox85.png "Test and enable mailboxes")
   
    This tests the incoming and outgoing email configuration of the selected mailboxes and enables them for email processing. If an error occurs in a mailbox, an alert is shown on the Alerts wall of the mailbox and the profile owner. Depending on the nature of the error, customer engagement apps try to process the email again after some time or disables the mailbox for email processing.  
   
    To see alerts for an individual mailbox, open the mailbox and then under **Common**, select **Alerts**.  
   
-   The result of the email configuration test is displayed in the **Incoming Email Status**, **Outgoing Email Status**, and **Appointments, Contacts, and Tasks Status** fields of a mailbox record. An alert is also generated when the configuration is successfully completed for a mailbox. This alert is shown to the mailbox owner.  
+   The result of the email configuration test is displayed in the **Incoming Email Status**, **Outgoing Email Status**, and **Appointments, Contacts, and Tasks Status** columns of a mailbox record. An alert is also generated when the configuration is successfully completed for a mailbox. This alert is shown to the mailbox owner.  
   
    You can find information on recurring issues and other troubleshooting information in [Blog: Test and Enable Mailboxes in Microsoft Dynamics CRM 2015](https://blogs.msdn.com/b/crm/archive/2015/08/31/test-and-enable-mailboxes-in-microsoft-dynamics-crm-2015.aspx) and [Troubleshooting and monitoring server-side synchronization](../admin/troubleshooting-monitoring-server-side-synchronization.md).  
   
@@ -304,7 +306,7 @@ Set-CrmRecord -conn $conn -CrmRecord $emailserverprofile
 
 ### See also  
 [Troubleshooting and monitoring server-side synchronization](../admin/troubleshooting-monitoring-server-side-synchronization.md)   
-[Test mail flow by validating your connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/test-mail-flow)   
+[Test mail flow by validating your connectors](/exchange/mail-flow-best-practices/test-mail-flow)   
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

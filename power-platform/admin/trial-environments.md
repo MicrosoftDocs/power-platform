@@ -1,13 +1,14 @@
 ---
-title: About trial environments | Microsoft Docs
-description: About trial (standard) and trial (subscription-based) environments
-author: imadyanni
-ms.author: iyanni
+title: "About trial environments: standard and subscription-based"
+description: "There are two types of Power Platform trial environments. Decide which one is right for you and learn how to create it in the Power Platform admin center."
+author: meeramahabala
+ms.subservice: admin
+ms.author: meeram
 ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/19/2021
+ms.date: 06/16/2021
 search.audienceType: 
   - admin
 search.app:
@@ -17,8 +18,6 @@ search.app:
   - Flow
 ---
 # About trial environments
-
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 Using the Microsoft Power Platform admin center, you can create environments of multiple types. Using trial environments, companies and customers can try out new features and solutions. There are two types of trial environments: trial (standard) and trial (subscription-based). 
 
@@ -50,7 +49,7 @@ The type of trial environment you create depends on where you start and your ten
 2. Go to **Environments**, and then select **+ New**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Create a new trial (standard) environment](media/new-environment.png "Create a new trial (standard) environment")
+   > ![Create a new trial (standard) environment.](media/new-environment.png "Create a new trial (standard) environment")
 
 3. Enter the following, and then select **Next**.
    
@@ -63,7 +62,7 @@ The type of trial environment you create depends on where you start and your ten
    |Create a database for this environment? | Select **Yes** to add a Microsoft Dataverse database to the trial (standard) environment. |
 
    > [!div class="mx-imgBorder"] 
-   > ![Create a new trial (standard) environment, page two](./media/trial-subscription-standard.png "Create a new trial (standard) environment, page two")
+   > ![Create a new trial (standard) environment, page two.](./media/trial-subscription-standard.png "Create a new trial (standard) environment, page two")
 
 4. Enter the following, and then select **Save**.
 
@@ -76,7 +75,7 @@ The type of trial environment you create depends on where you start and your ten
    |Security group | Select a security group to restrict access to this environment. |
 
    > [!div class="mx-imgBorder"] 
-   > ![Create a new environment settings, page two](./media/trial-subscription-standard-page2.png "Create a new environment settings, page two")
+   > ![Create a new environment settings, page two.](./media/trial-subscription-standard-page2.png "Create a new environment settings, page two")
 
 ## Create a trial (subscription-based) environment in the Power Platform admin center
 
@@ -85,7 +84,7 @@ The type of trial environment you create depends on where you start and your ten
 2. Go to **Environments**, and then select **New**. 
 
    > [!div class="mx-imgBorder"] 
-   > ![Create a new trial (subscription-based) environment](media/new-environment.png "Create a new trial (subscription-based) environment")
+   > ![Create a new trial (subscription-based) environment.](media/new-environment.png "Create a new trial (subscription-based) environment")
 
 3. For **Type**, select **Trial (subscription-based)**, and then fill in and select other settings. Select **Next**.
 
@@ -98,7 +97,7 @@ The type of trial environment you create depends on where you start and your ten
    |Create a database for this environment | This setting is preset to **Yes** and can't be changed, because a Dataverse database must be created for a trial (subscription-based) environment.
 
    > [!div class="mx-imgBorder"] 
-   > ![Create a new trial (subscription-based) environment, page two](media/trial-subscription-based.png "Create a new trial (subscription-based) environment, page two")
+   > ![Create a new trial (subscription-based) environment, page two.](media/trial-subscription-based.png "Create a new trial (subscription-based) environment, page two")
 
 4. Specify the following settings, and then select **Save**. 
 
@@ -113,7 +112,7 @@ The type of trial environment you create depends on where you start and your ten
    |Deploy sample apps and data  | This setting appears if you set **Enable Dynamics 365 apps** to **No**.<br>Select **Yes** to include sample apps and data. Sample data gives you something to experiment with as you learn. |
 
    > [!div class="mx-imgBorder"] 
-   > ![Create new environment database settings](media/new-environment-add-database.png "Create new environment database settings")
+   > ![Create new environment database settings.](media/new-environment-add-database.png "Create new environment database settings")
 
 ## Check the expiration date for a trial (standard) environment
 
@@ -122,7 +121,7 @@ The type of trial environment you create depends on where you start and your ten
 2. Go to **Environments** > [select a trial environment] > **See all**. Check out **Day(s) remain**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Trial days remaining](media/trial-expiration.png "Trial days remaining")
+   > ![Trial days remaining.](media/trial-expiration.png "Trial days remaining")
 
 ## Check the expiration date for a trial (subscription-based) environment
 
@@ -135,7 +134,41 @@ A trial (subscription-based) environment lasts as long as the subscription is ac
 3. Select your Dynamics 365 subscription, and review the date in the **Billing** section.
 
    > [!div class="mx-imgBorder"] 
-   > ![Check trial (subscription-based) expiration](media/subscription-expiration-date.png "Check trial (subscription-based) expiration")
+   > ![Check trial (subscription-based) expiration.](media/subscription-expiration-date.png "Check trial (subscription-based) expiration")
+
+## Extend a trial (standard) environment
+
+Note the following:
+
+- Within the last 7 days before the standard trial environment is set to expire, the trial environment admin can do a self-service extension of the expiring environment. This adds an additional 30 days from the original expiration date.
+- There is only one self-service extension allowed per standard trial environment. To further retain the environment, it must be [converted to production](#convert-either-type-of-trial-environment-to-a-production-environment).
+
+
+**To extend a standard trial:**
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) with admin credentials.
+
+2. Go to **Environments**, and then select an expiring environment that has the **Extend trial** option. The **Extend trial** option appears when there are 7 days or less remaining before the environment expires.
+
+   > [!div class="mx-imgBorder"] 
+   > ![Extend a trial.](media/extend-trial.png "Extend a trial")
+
+3. Select **Extend trial**
+
+4. Read the notification and then select **Extend trial**. 
+
+Your trial will be extended 30 days from the original expiration date.
+
+## Extend a trial (subscription-based) environment
+
+The expiration of subscription-based trial (also know as an admin trial) environments is tied to the expiration of the subscription. Therefore, subscription-based trial environments cannot be independently extended. There are limited options for extending admin trial subscriptions which affects extending the expiration of any associated trial environments.
+
+**To extend a subscription-based (admin) trial:**
+
+Admins can request a single extension in the Microsoft 365 admin center. See [Try or buy a Microsoft 365 for business subscription](/microsoft-365/commerce/extend-your-trial?view=o365-worldwide).
+
+There is only one self-service extension allowed per offer-based trial environment. To further retain the environment, it must be [converted to production](#convert-either-type-of-trial-environment-to-a-production-environment).
+
 
 ## Convert either type of trial environment to a production environment
 
@@ -144,7 +177,7 @@ A trial (subscription-based) environment lasts as long as the subscription is ac
 2. Go to **Environments** > [select a trial environment] > **Convert to production**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Select Convert to production](media/trial-convert.png "Select Convert to production")
+    > ![Select Convert to production.](media/trial-convert.png "Select Convert to production")
 
 3. Select **Continue**.
 
@@ -166,13 +199,13 @@ Administrative operations (copy, backup, restore, and reset) are not supported f
 
 ### How can I retain my data and resources if I don't have a way to convert the trial (standard) environment to a production environment?
 
-You can export your resources and data to another environment if you want to retain them longer than the trial period. We recommend that you create a production environment or an individual environment (with the [Power Apps Community Plan](https://powerapps.microsoft.com/communityplan/)) and export your resources to that environment. 
+You can export your resources and data to another environment if you want to retain them longer than the trial period. We recommend that you create a production environment or an individual environment (with the [Power Apps Developer Plan](https://powerapps.microsoft.com/communityplan/)) and export your resources to that environment. 
 
 Here are some guidelines for exporting resources.
 
 |Type of resource in the environment  |How do I export it?  |
 |---------|---------|
-|Apps (canvas and model-driven) and flows     |You can use [packaging](../alm/environment-and-tenant-migration.md) to export apps and flows from one environment.         |
+|Apps (canvas and model-driven) and flows     |You can use [packaging](/powerapps/maker/data-platform/export-solutions) to export apps and flows from one environment.         |
 |Data in the database (Dataverse environment)     |<ul><li>[Export to Excel](/powerapps/user/export-data-excel) and save the data. You can then [import the data](/powerapps/user/import-data) into another environment.</li><li>Use [Data Integrator services](data-integrator.md) and APIs to export data into another environment.</li></ul> |
 
 We delete trial (standard) environments that haven't had any activity in the environment databases for 30 days.

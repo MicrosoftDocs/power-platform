@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 11/18/2020
+ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -18,7 +19,7 @@ search.app:
 ---
 # Microsoft Dataverse for Teams environment management
 
-You can take advantage of our philosophy of using Microsoft Power Platform to manage Microsoft Power Platform by building automation to send welcome emails to owners of new [Dataverse for Teams environments](/power-platform/admin/about-teams-environment) and requesting business justifications for newly created environments. This ensures that central IT teams can effectively engage with the new makers onboarding the platform, and ensure that Dataverse for Teams capacity is used effectively in your tenant and distributed to the most important business use cases. Similar workflows can be used to apply specific data loss prevention (DLP) policies to Dataverse for Teams environments as needed, and to invoke cleanup of unused assets to free up capacity for more compelling scenarios in the tenant.
+You can take advantage of our philosophy of using Microsoft Power Platform to manage Microsoft Power Platform by building automation to send welcome emails to owners of new [Dataverse for Teams environments](../../admin/about-teams-environment.md) and requesting business justifications for newly created environments. This ensures that central IT teams can effectively engage with the new makers onboarding the platform, and ensure that Dataverse for Teams capacity is used effectively in your tenant and distributed to the most important business use cases. Similar workflows can be used to apply specific data loss prevention (DLP) policies to Dataverse for Teams environments as needed, and to invoke cleanup of unused assets to free up capacity for more compelling scenarios in the tenant.
 
 ## Process description
 
@@ -32,23 +33,23 @@ The following process is described from the point of view of the people involved
 
 **Team owner:** The team owner gets a notification in Microsoft Teams to provide a business justification for the environment they've just created. Team owners have seven days to submit a business justification.
 
-![Team owner receives a prompt to provide a business justification](media/teams-1.png "Team owner receives a prompt to provide a business justification")
+![Team owner receives a prompt to provide a business justification.](media/teams-1.png "Team owner receives a prompt to provide a business justification")
 
 Team owners also receive a Welcome note via email to provide them with further information about their environment and the conditions for using it.
 
-![Team owner receives welcome email](media/teams-3.png "Team owner receives welcome email")
+![Team owner receives welcome email.](media/teams-3.png "Team owner receives welcome email")
 
 **Admin:** Microsoft Teams environments can be reviewed by using the **Microsoft Teams environment review** filter view in the **Power Platform Admin View** model-driven app.
 
-![Admin point of view in the audit process](media/teams-4.png "Admin point of view in the audit process")
+![Admin point of view in the audit process.](media/teams-4.png "Admin point of view in the audit process")
 
 An admin opens **Power Platform Admin View** > **Environments** > **Microsoft Teams environment review** and assesses all the environments due for review by looking at the **Audit** tab within the environment, investigating the justification submitted by the team owner, and then approving or rejecting the justification in the **Admin Review** section.
 
-![An admin reviews the business justification and approves or rejects it](media/teams-5.png "An admin reviews the business justification and approves or rejects it")
+![An admin reviews the business justification and approves or rejects it.](media/teams-5.png "An admin reviews the business justification and approves or rejects it")
 
 The admin can further decide to approve a business justification, but highlight it for later review by providing a review date.
 
-![The admin can highlight the business justification for later review](media/teams-6.png "The admin can highlight the business justification for later review")
+![The admin can highlight the business justification for later review.](media/teams-6.png "The admin can highlight the business justification for later review")
 
 ## Monitoring and weekly cleanup process
 
@@ -70,7 +71,7 @@ An admin can customize the conditions for deletion by creating a copy of the flo
 
 Team owners will receive a notification that their environment has been deleted.
 
-![Team owner receives notification](media/teams-2.png "Team owner receives notification")
+![Team owner receives notification.](media/teams-2.png "Team owner receives notification")
 
 In addition to the automatic cleanup, admins can also monitor how Microsoft Teams environments are used through a [Microsoft Teams environments](power-bi-monitor.md) report in the CoE Starter Kit dashboard.
 
@@ -83,7 +84,7 @@ The page visualizes:
 - The list of environments, including the last launched date for an app in the environment.
 - The list of apps in Microsoft Teams environments, including their last launched date.
 
-![Microsoft Teams environment dashboard](media/pb-6.png "Microsoft Teams environment dashboard")
+![Microsoft Teams environment dashboard.](media/pb-6.png "Microsoft Teams environment dashboard")
 
 ### See also
 

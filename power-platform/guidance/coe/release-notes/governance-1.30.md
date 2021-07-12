@@ -6,7 +6,8 @@ manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/10/2020
+ms.date: 02/01/2021
+ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -31,7 +32,7 @@ A new environment variable to specify an Approval Admin has been added.
 
 ## Cloud flows
 
-All flows have been updated to use the Common Data Service (current environment) connector for reliability and performance improvements.
+All flows have been updated to use the Microsoft Dataverse (current environment) connector for reliability and performance improvements.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

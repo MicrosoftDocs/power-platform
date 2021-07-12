@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/11/2020
+ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -76,7 +77,7 @@ Share your success stories in a regular Microsoft Power Platform newsletter, hig
 
 Here's an example of how you could share the solution architecture:
 
-![Sample solution architecture](https://docs.microsoft.com/power-platform/guidance/adoption/media/story-architecture.png "Sample solution architecture")
+![Sample solution architecture.](/power-platform/guidance/adoption/media/story-architecture.png "Sample solution architecture")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

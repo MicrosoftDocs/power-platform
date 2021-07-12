@@ -41,8 +41,7 @@ The bot then asks which store the customer is interested in, and displays the ho
 
 You can see how the bot conversation works in practice by testing it in the **Test bot** pane. This lets you fine-tune the topic until you're ready to share it.
 
-> [!Note]
-> You can have up to 1,000 topics in a bot.
+For bot and topic limits, see the [Quotas, limits, and configuration values](../requirements-quotas.md) topic.
 
 
 ## Prerequisites
@@ -55,7 +54,7 @@ You can see how the bot conversation works in practice by testing it in the **Te
 When you create a bot, a number of topics are automatically created.
 
 
-:::image type="content" source="media/topics-system-teams.png" alt-text="Four lesson topics and a number of system topics are in the Topics list":::
+:::image type="content" source="media/topics-system-teams.png" alt-text="Four lesson topics and a number of system topics are in the Topics list.":::
 
   
   - Four **User Topics** that can be used as [lesson topics](authoring-template-topics-teams.md) can to help understand how to make a bot conversation.
@@ -71,12 +70,12 @@ You can edit both of these topic types in the same manner as for topics you crea
 
    
 
-   :::image type="content" source="media/topics-menu-teams.png" alt-text="Select Topics on the side navigation menu":::
+   :::image type="content" source="media/topics-menu-teams.png" alt-text="Select Topics on the side navigation menu.":::
 
 1. On the topics page, select **New topic**.
 
 
-   :::image type="content" source="media/topics-new-teams.png" alt-text="Select New topic at the top of the Topics page":::
+   :::image type="content" source="media/topics-new-teams.png" alt-text="Select New topic at the top of the Topics page.":::
 
 1. Specify a name, description, and one or more trigger phrases for the topic.
 
@@ -95,7 +94,7 @@ A topic's conversation path is how the bot will respond to a person's questions 
 
 1. In the topic details for the topic you want to edit, select **Go to authoring canvas**.
 
-   :::image type="content" source="media/topics-details-canvas-teams.png" alt-text="The Go to authoring canvas is to the side of the trigger phrases":::
+   :::image type="content" source="media/topics-details-canvas-teams.png" alt-text="The Go to authoring canvas is to the side of the trigger phrases.":::
 
 1. Power Virtual Agents opens the topic in the authoring canvas and displays the topic's trigger phrases. The authoring canvas is where you define the conversation path between a customer and the bot.
 
@@ -106,7 +105,7 @@ A topic's conversation path is how the bot will respond to a person's questions 
 
 1. You can add additional nodes by selecting the **Plus** (**+**) icon on the line or branch between or after a node.
 
-   ![Screenshot of adding a node](media/handoff-add-node-teams.png "Screenshot of adding a node")
+   ![Screenshot of adding a node.](media/handoff-add-node-teams.png "Screenshot of adding a node")
 
 ### Insert nodes
 
@@ -125,13 +124,13 @@ You can:
  
 If the node you are adding is the last in a topic, you can also add a **Go to another topic** node.
 
-:::image type="content" source="media/topics-nodes-other-topic-teams.png" alt-text="Go to another topic":::
+:::image type="content" source="media/topics-nodes-other-topic-teams.png" alt-text="Go to another topic.":::
 
 #### Ask a question:
 
 1. To have the bot ask a question and get a response from the user, select **+** to add a node, and then **Ask a question** to add a new **Question** node.
 
-    ![Add a new question mode](media/topics-question-teams.png "Add a new question mode")
+    ![Add a new question mode.](media/topics-question-teams.png "Add a new question mode")
 
 1. Enter the question phrase in the first text box, **Ask a question**.
 
@@ -155,11 +154,11 @@ If the node you are adding is the last in a topic, you can also add a **Go to an
 > You can define synonyms for each option. This can help the bot to determine the correct option in case it isn't clear what the user's response should be mapped to.
 > 1. Select the menu icon on the top of the **Question** node, and then select **Options for user**.
 >
->    ![Select options for users](media/topics-question-options-teams.png "Select options for users")
+>    ![Select options for users.](media/topics-question-options-teams.png "Select options for users")
 >
 > 1. Select the **Synonyms** icon for the option you want to add additional keywords to. 
 >
->    ![Select the synonyms icon](media/topics-question-synonyms-teams.png "Select the synonyms icon")
+>    ![Select the synonyms icon.](media/topics-question-synonyms-teams.png "Select the synonyms icon")
 >
 > 1. Add the keywords individually, and then once you're done, select **Done** to return to the **Authoring canvas**.
 
@@ -169,7 +168,7 @@ If the node you are adding is the last in a topic, you can also add a **Go to an
 
 1. Choose the variable you want to use to determine if the bot conversation should branch at this point. 
 
-    ![Choose a variable](media/topics-branch-teams.png "Choose a variable")
+    ![Choose a variable.](media/topics-branch-teams.png "Choose a variable")
 
 #### Call an action
 
@@ -194,7 +193,7 @@ When you end the conversation, you can have a survey appear that asks the user i
 
 1. At the end of a response that resolves the user's issue or answers the question, select **End with survey**.
     
-    ![End with survey](media/topics-nodes-survey-teams.png "End with survey")
+    ![End with survey.](media/topics-nodes-survey-teams.png "End with survey")
 
 #### Go to another topic
 
@@ -202,7 +201,7 @@ When you end the conversation, you can have a survey appear that asks the user i
 
 1. In the flyout menu, select the topic the bot should divert to. For example, you might want to send the user to a specific topic about the closure of a store if they ask about store hours for that store.
 
-    :::image type="content" source="media/topics-nodes-other-topic-flyout-teams.png" alt-text="Go to another topic node with options for other topics":::
+    :::image type="content" source="media/topics-nodes-other-topic-flyout-teams.png" alt-text="Go to another topic node with options for other topics.":::
 
 
 ### Delete nodes
@@ -211,7 +210,7 @@ When you end the conversation, you can have a survey appear that asks the user i
 
 1. Select **Delete**.
 
-    ![Select the menu icon and then the delete button](media/topics-delete-teams.png "Select the menu icon and then the delete button")
+    ![Select the menu icon and then the delete button.](media/topics-delete-teams.png "Select the menu icon and then the delete button")
 
 ## Test and publish your bot
 

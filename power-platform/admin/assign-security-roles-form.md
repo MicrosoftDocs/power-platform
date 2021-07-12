@@ -2,6 +2,7 @@
 title: "Assign security roles to a form  | MicrosoftDocs"
 description: Assign security roles to a form
 author: paulliew
+ms.subservice: admin
 ms.author: paulliew
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
@@ -18,8 +19,6 @@ search.app:
   - Flow
 ---
 # Assign security roles to a model-driven app form
-
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 Control form access by assigning different security roles to the model-driven app forms you create.  
 

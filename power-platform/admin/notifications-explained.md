@@ -5,6 +5,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/01/2021
+ms.subservice: admin
 ms.author: astockli
 author: astockli
 manager: timrob
@@ -19,15 +20,13 @@ search.app:
 ---
 # Notifications for Business Application Group services
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 Microsoft regularly sends communications regarding service incidents, service changes, maintenance, releases, and customer action needed. These communications come primarily in the form of a post to the Microsoft 365 Service health dashboard and the Message center.  From time-to-time we will also use direct email communications to provide status, updates, or information about the service.  
 
 ## Message Center
-The [Microsoft 365 Message Center](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide) will display any maintenance notifications, service changes, release information, or customer action requests.
+The [Microsoft 365 Message Center](/office365/admin/manage/message-center?view=o365-worldwide) will display any maintenance notifications, service changes, release information, or customer action requests.
 
 ## Service health dashboard
-The [Service health dashboard](https://docs.microsoft.com/office365/enterprise/view-service-health) will show the latest status of updates and incidents regarding your service. To learn how to get to the Microsoft 365 Service health dashboard, see [Check your service health](check-online-service-health.md). 
+The [Service health dashboard](/office365/enterprise/view-service-health) will show the latest status of updates and incidents regarding your service. To learn how to get to the Microsoft 365 Service health dashboard, see [Check your service health](check-online-service-health.md). 
 
 ## Email notifications
 The notifications sent from the Business Application Group communications team will be for the following services and email addresses.  Be sure to check your spam folder for these messages.
@@ -49,21 +48,21 @@ Email notifications are sent to Microsoft Dataverse users who have the System Ad
 ## Incident Communications
 Major service incident emails can easily be identified by the red banner.
 
-![Service incident email banner](../admin/media/Interruption-Notification-Banner.png "Interruption Notification Banner")  
+![Service incident email banner.](../admin/media/Interruption-Notification-Banner.png "Interruption Notification Banner")  
  
 Microsoft will send you an email when normal system services have been restored. You can easily identify these emails by the green banner.
 
-![Service restored email banner](../admin/media/Restored-Notification-Banner.png "Restored Notification Banner")  
+![Service restored email banner.](../admin/media/Restored-Notification-Banner.png "Restored Notification Banner")  
  
 ## Maintenance communications 
 Planned maintenance includes updates and changes to the service to provide increased stability, reliability, and performance. Planned and unplanned maintenance emails can be identified by the light-orange banner.
 
-![Planned and unplanned maintenance banner](../admin/media/Maintenance-Notification-Banner.png "Maintenance Notification Banner")
+![Planned and unplanned maintenance banner.](../admin/media/Maintenance-Notification-Banner.png "Maintenance Notification Banner")
 
 ## Communications for releases, package deployments, and awareness
 Communications can be informational in nature, drive specific actions, or both. The target audience for these communications is System Administrators or individuals designated to run the service. You can easily identify these by the light-blue banner.
 
-![General awareness email banner](../admin/media/Proactive-Banner.jpg "Proactive Banner") 
+![General awareness email banner.](../admin/media/Proactive-Banner.jpg "Proactive Banner") 
 
 ## Action requested communications 
 Action requested notifications are sent when we detect that a configuration or a setting for your environment is causing the service to perform below expectations. The notification will include details on the situation as well as guidance on how to return performance to normal.
@@ -73,7 +72,7 @@ Once a customer has purchased customer engagement apps (Dynamics 365 Sales, Dyna
 
 You can easily identify these communications by the dark-blue banner.
 
-![Post-purchase email banner](../admin/media/post-purchase-banner.png "Post-purchase email banner")  
+![Post-purchase email banner.](../admin/media/post-purchase-banner.png "Post-purchase email banner")  
  
 
 

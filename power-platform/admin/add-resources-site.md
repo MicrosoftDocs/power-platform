@@ -1,12 +1,13 @@
 ---
-title: "Add resources to a site  | MicrosoftDocs"
-description: Add resources to a site
+title: "Add resources to a site record for your business"
+description: "Learn how to add users, equipment, and facilities to a site record to show what is available at a location."
 author: jimholtz
 manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/30/2017
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -32,7 +33,7 @@ After you create a site, you can add resources such as users, equipment, or faci
   
 5. On the Actions toolbar, click or tap **Add Resources**.  
   
-6. In the **Look Up Records** dialog box, in the **Search** text box, type in a part of the name of the resource you want to add to the site, and then click or tap the **Start search** icon ![54934](../admin/media/search-button.png "54934").  
+6. In the **Look Up Records** dialog box, in the **Search** text box, type in a part of the name of the resource you want to add to the site, and then click or tap the **Start search** icon ![54934.](../admin/media/search-button.png "54934").  
   
 7. In the list of records, under **Full Name**, click or tap the entry for the resource you want to add to the site, and then click or tap **Add**.  
   

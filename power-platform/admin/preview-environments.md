@@ -6,6 +6,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/04/2021
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -17,8 +18,6 @@ search.app:
 ---
 
 # Power Apps Preview Program
-
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 Power Apps updates the platform and its capabilities every few days or weeks. The Power Apps Preview program is a way to get early access to those upcoming functionalities and updates prior to availability in other regions (where customer production apps are deployed). 
 
@@ -37,7 +36,7 @@ Currently we will be rolling out preview for the following scenarios across Powe
 For Power Platform, all the apps, flows, and related resources are stored in an environment. Early access to all preview functionalities are also available with an environment created in a region where the vNext (preview) is deployed. For now, there is only one region, **Preview (United States)**, as shown in the image below:
 
 > [!div class="mx-imgBorder"] 
-> ![Preview environment](./media/preview-environment/env3-preview.png "Preview environment")
+> ![Preview environment.](./media/preview-environment/env3-preview.png "Preview environment")
 
 Select the region for the environment as **Preview (United States)** and accept the consent for joining the Preview Program to create the environment to get access to the next version (vNext) of Power Apps.
 All the apps and other resources created in this environment are on the vNext version of the platform (SAAS).
@@ -48,7 +47,7 @@ You can get aware of the new functionalities which are available for preview at 
 ## Key scenarios to test with the preview program
 1. **Validate your production apps with the upcoming Power Apps updates (vNext)**
 
-   You might like to verify your production apps, to be working fine with the next upcoming updates on Power Apps. You can [copy](../alm/environment-and-tenant-migration.md) the apps from a production environment to an environment in First Release and play the apps to test out the scenarios. Please note, all the other necessary resources like CustomAPI, Power Automate, etc., will also need to be moved along with it. This should just create another copy of these apps and required resources. You can start testing out the newer updates not just for playing an app, but also while editing and managing the apps.
+   You might like to verify your production apps, to be working fine with the next upcoming updates on Power Apps. You can [copy](/powerapps/maker/data-platform/export-solutions) the apps from a production environment to an environment in First Release and play the apps to test out the scenarios. Please note, all the other necessary resources like CustomAPI, Power Automate, etc., will also need to be moved along with it. This should just create another copy of these apps and required resources. You can start testing out the newer updates not just for playing an app, but also while editing and managing the apps.
    
 2. **Trying out the new functionalities available in preview**
 
@@ -62,7 +61,7 @@ You can provide feedback on the [Power Apps forum][8] and/or contact [support][9
 
    There are certain functionalities, services and portals which are available in preview:
    
-   ![Available in preview](./media/preview-environment/table.png)
+   ![Available in preview.](./media/preview-environment/table.png)
 
 2. **Using apps created in preview environments in production environments**
 
@@ -76,8 +75,8 @@ You can provide feedback on the [Power Apps forum][8] and/or contact [support][9
 <!--Reference links in article-->
 [2]: https://make.powerapps.com
 [3]: https://preview.web.powerapps.com
-[4]: https://docs.microsoft.com/powerapps/maker/canvas-apps/working-with-experimental-preview
-[5]: https://docs.microsoft.com/powerapps/whats-new
+[4]: /powerapps/maker/canvas-apps/working-with-experimental-preview
+[5]: /powerapps/whats-new
 [7]: https://preview.create.powerapps.com
 [8]: https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1
 [9]: https://powerapps.microsoft.com/support/

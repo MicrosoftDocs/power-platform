@@ -1,16 +1,19 @@
 ---
 title: "Support for Microsoft Power Platform and customer engagement apps in Dynamics 365 | MicrosoftDocs"
 description: Information on support for Microsoft Power Platform and customer engagement apps in Dynamics 365
-ms.custom: ""
-ms.date: 03/17/2021
+ms.date: 06/08/2021
 ms.reviewer: ""
 ms.service: power-platform
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+ms.custom: 
+  - "admin-security"
+  - "intro-internal"
 applies_to: 
   - "Dynamics 365 (online)"
 author: "jimholtz"
+ms.subservice: admin
 ms.author: "jimholtz"
 search.audienceType: 
   - admin
@@ -92,6 +95,10 @@ The following table outlines the best way to submit a new support request based 
     <td colspan="2"><a href="https://support.microsoft.com/supportforbusiness/productselection">Support for Business</a></td>
     <td colspan="2"><a href="https://serviceshub.microsoft.com/">Services Hub</a></td>
   </tr>
+  <tr>
+    <td width="30%">Dynamics 365 Finance <br />Dynamics 365 Supply Chain Management<br />Dynamics 365 Commerce</td>
+    <td width="70%" colspan="4"><a href="https://lcs.dynamics.com/Logon/Index">Lifecycle Services</a></td>
+  </tr>
 </table>
 
 ### What support is included with a support plan?
@@ -155,7 +162,7 @@ Submitting support requests online allows us to deliver fast and deep technical 
 
 ### Is there a phone number I can call to contact Support?
 
-Contacting Support over the phone will not speed up the processing of your request, and you will get a much better and faster experience by contacting support via the correct support portals listed earlier in this topic. If you cannot submit a request online, you can find a local support number from our list of regional [Global Customer Service Centers](https://go.microsoft.com/fwlink/p/?LinkID=616794).
+Contacting Support over the phone will not speed up the processing of your request, and you will get a much better and faster experience by contacting support via the correct support portals listed earlier in this topic. If you cannot submit a request online, you can find a local support number from our list of regional [Global Customer Service Centers](/microsoft-365/admin/contact-support-for-business-products).
 
 ### How do I submit a request for technical support or advisory services?
 
@@ -168,7 +175,7 @@ Contacting Support over the phone will not speed up the processing of your reque
 
 ### How do I submit a support request if I cannot sign in to the support portal for my product or service?
  
-If you cannot submit a support request online, you can find a local support phone number from our list of regional [Global Customer Service Centers](https://go.microsoft.com/fwlink/p/?LinkID=616794).
+If you cannot submit a support request online, you can find a local support phone number from our list of regional [Global Customer Service Centers](/microsoft-365/admin/contact-support-for-business-products).
 
 ### How do I get support if I don't have a subscription yet, and I get an error message while creating one?
 
@@ -180,14 +187,14 @@ Any users with the Power Platform admin roles on the tenant containing the subsc
 
 ### How do I authorize another person to submit support requests for a particular subscription in the Power Platform admin center?
 
-To grant permission, you must have a Power Platform admin role on the tenant that contains the subscription. Assign the Service Administrator role to all users who want to create and manage support requests for that given tenant but do not require other permissions. [Learn more](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles?view=o365-worldwide) about role assignments in the portal.
+To grant permission, you must have a Power Platform admin role on the tenant that contains the subscription. Assign the Service Administrator role to all users who want to create and manage support requests for that given tenant but do not require other permissions. [Learn more](/office365/admin/add-users/about-admin-roles?view=o365-worldwide) about role assignments in the portal.
 
 ### I am developing applications on behalf of my client or assisting my client who is running customer engagement apps. How do I get support in the Power Platform admin center?
 
 You can get support in two ways:
 
 - Being an administrator of your customer's tenant, you can use or purchase a Support plan for that account, as any subscription you own under the same account is covered by the same support plan. You can also use your Partner benefits (for example, Advanced Support for Partners or Microsoft Partner Network Support) to submit a support request.
-- Get support using your customer's account. To do so, the Partner (you) must have administrator or owner privileges to the customer's subscription, most often through being a [Delegated Administrator](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/partners#provide-delegated-administration) on the tenant. The Partner can then use the customer's subscription, or the Partner can use their Support Benefits (for example, Advanced Support for Partners or Microsoft Partner Network Support) to submit a support request.
+- Get support using your customer's account. To do so, the Partner (you) must have administrator or owner privileges to the customer's subscription, most often through being a [Delegated Administrator](/office365/servicedescriptions/office-365-platform-service-description/partners#provide-delegated-administration) on the tenant. The Partner can then use the customer's subscription, or the Partner can use their Support Benefits (for example, Advanced Support for Partners or Microsoft Partner Network Support) to submit a support request.
 
 ### What is Initial Response Time, and how quickly can I expect to hear back from someone after submitting my support request? 
 
@@ -254,7 +261,7 @@ At the end of your term, your plan will automatically renew to the same Support 
 Manage your support plan subscriptions through the [Microsoft 365 admin center](https://admin.microsoft.com/).
 
 - To change your support plan, first cancel your existing support plan, and then purchase a new support plan.
-- To cancel your support plan, select the support plan subscription that you want to cancel, and then select **Cancel subscription**.   [Learn more](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/cancel-your-subscription?view=o365-worldwide) by reviewing this article.
+- To cancel your support plan, select the support plan subscription that you want to cancel, and then select **Cancel subscription**.   [Learn more](/office365/admin/subscriptions-and-billing/cancel-your-subscription?view=o365-worldwide) by reviewing this article.
 
 If you still have questions, open a new support request with the Billing team in the [Microsoft 365 admin center](https://admin.microsoft.com/). 
 

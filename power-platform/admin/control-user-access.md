@@ -3,13 +3,14 @@ title: "Control user access to environments: security groups and licenses | Micr
 description: Learn how to control user access to environments using security groups and licenses
 services: powerapps
 author: paulliew
+ms.subservice: admin
 ms.author: paulliew
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/11/2021
+ms.date: 05/23/2021
 search.audienceType: 
   - admin
 search.app:
@@ -20,9 +21,10 @@ search.app:
 ---
 # Control user access to environments: security groups and licenses
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 If your company has multiple Microsoft Dataverse environments, you can use security groups to control which licensed users can be a member of a particular environment.  
+
+> [!NOTE]
+> For information on how user access works for Microsoft Dataverse for Teams, see [User access to Dataverse for Teams environments](about-teams-environment.md#user-access-to-dataverse-for-teams-environments).
   
 Consider the following example scenario:  
   
@@ -35,9 +37,16 @@ Consider the following example scenario:
   
 In this example, four security groups provide controlled access to a specific environment.  
   
- Note the following about security groups:  
+Note the following about security groups: 
   
-- Nested security groups are not supported. If there is a nested security group in an environment's security group, members of the nested security group will be ignored. 
+- About nested security groups
+
+  Members of a nested security group in an environment security group are not **pre-provisioned or automatically added to the Dataverse environment**. However, they can be added into the environment when you create a [Dataverse group team](manage-group-teams.md#create-a-group-team) for the nested security group. 
+
+  An example of this scenario: you assigned a security group for the environment when the environment was created. During the lifecycle of the environment, you want to add members to the environment which are managed by security groups. You create a security group in Azure Active Directory, for example managers, and assigned all your managers to the group. You then add this security group as a child of the environment security group, create a [Dataverse group team](manage-group-teams.md#create-a-group-team), and assign a security role to the group team. Your managers can now access Dataverse immediately.   
+  
+  A member of a nested security group is also added into the environment at run-time when the member accesses the environment the first time. But the member will not be able to run any application and access any data until a security role is assigned.   
+  
 - When users are added to the security group, they are added to the Dataverse environment.  
 - When users are removed from the group, they are disabled in the Dataverse environment.  
 - When a security group is associated with an existing environment with users, all users in the environment that are not members of the group will be disabled. 
@@ -47,7 +56,7 @@ In this example, four security groups provide controlled access to a specific en
 - If you do not assign a security group to an environment, the environment will show up in [home.dynamics.com](https://home.dynamics.com) even for those who have not been assigned a security role in that Dataverse environment.  
 - If you do not specify a security group, all users who have a Dataverse license (customer engagement apps (such as Dynamics 365 Sales and Customer Service)) or per app plan will be added to the new environment.
 - **New**: Security groups cannot be assigned to default and developer environment types. If you've already assigned a security group to your default or developer environment, we recommend removing it since the default environment is intended to be shared with all users in the tenant and the developer environment is intended for use by only the owner of the environment.
-- Dataverse environments support associating the following group types: Security and Microsoft 365. Associating [other group types](https://docs.microsoft.com/microsoft-365/admin/create-groups/compare-groups?WT.mc_id=365AdminCSH&view=o365-worldwide) is not supported.
+- Dataverse environments support associating the following group types: Security and Microsoft 365. Associating [other group types](/microsoft-365/admin/create-groups/compare-groups?view=o365-worldwide&WT.mc_id=365AdminCSH) is not supported.
 
 <!-- 
 - When you remove a security group that is associated with a Dataverse environment, either by editing the environment and removing the security group or by deleting the security group, Dataverse licensed users who were members of the security group will have the same access to Dynamics 365 apps. 
@@ -59,30 +68,30 @@ In this example, four security groups provide controlled access to a specific en
   
 ## Create a security group and add members to the security group  
 
-1.  Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).  
+1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).  
   
-2.  Select **Groups** > **Groups**.  
+2. Select **Groups** > **Groups**.  
   
-3.  Select **+ Add a group**.  
+3. Select **+ Add a group**.  
   
-4.  Change the type to **Security group**, add the group **Name** and **Description**. Select **Add** > **Close**.  
+4. Change the type to **Security group**, add the group **Name** and **Description**. Select **Add** > **Close**.  
   
-5.  Select the group you created, and then next to **Members**, select **Edit**.  
+5. Select the group you created, and then next to **Members**, select **Edit**.  
   
-6.  Select **+ Add members**. Select the users to add to the security group, and then select **Save** > **Close** several times to return to the **Groups** list.  
+6. Select **+ Add members**. Select the users to add to the security group, and then select **Save** > **Close** several times to return to the **Groups** list.  
   
-7.  To remove a user from the security group, select the security group, next to **Members**, select **Edit**. Select **- Remove members**, and then select **X** for each member you want to remove.  
+7. To remove a user from the security group, select the security group, next to **Members**, select **Edit**. Select **- Remove members**, and then select **X** for each member you want to remove.  
   
 > [!NOTE]
 > If the users you want to add to the security group are not created, create the users and assign to them the Dataverse licenses.  
 > 
-> To add multiple users, see: [bulk add users to Office365 groups](https://go.microsoft.com/fwlink/p/?LinkID=615203).  
+> To add multiple users, see: [bulk add users to Office365 groups](/microsoft-365/enterprise/add-several-users-at-the-same-time).  
   
 ### Create a user and assign license  
   
 1. In the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], select **Users** > **Active users** > **+ Add a user**. Enter the user information, select licenses, and then select **Add**.  
   
-   [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Add users and assign licenses at the same time](https://go.microsoft.com/fwlink/p/?LinkID=615205)  
+   [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Add users and assign licenses at the same time](/microsoft-365/admin/add-users/add-users)  
 
 Or, purchase and assign per app passes: [About Power Apps per app plans](about-powerapps-perapp.md)
 
@@ -91,43 +100,43 @@ Or, purchase and assign per app passes: [About Power Apps per app plans](about-p
   
 ## Associate a security group with a Dataverse environment  
   
-1. Sign in to the Power Platform admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin, Global admin, or Microsoft Power Platform admin).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin, Global admin, or Microsoft Power Platform admin).
 
 2. In the navigation pane, select **Environments**, select an environment, and then select **Edit**.  
   
    > [!div class="mx-imgBorder"] 
-   > ![Select Edit](media/edit-environment.png "Select Edit")
+   > ![Select Edit.](media/edit-environment.png "Select Edit")
 
-3. In the **Edit details** page, select **Edit** (![Edit](media/edit-button.png)).
+3. In the **Edit details** page, select **Edit** (![Edit.](media/edit-button.png)).
   
    > [!div class="mx-imgBorder"] 
-   > ![Edit security group](media/edit-security-group.png "Edit security group")
+   > ![Edit security group.](media/edit-security-group.png "Edit security group")
 
    Only the first 200 security groups will be returned and selectable by default. To select additional security groups, use **Search** to look for a specific security group.
 
 4. Select a security group, select **Done**, and then select **Save**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Select a security group](media/edit-security-group-select.png "Select a security group")
+   > ![Select a security group.](media/edit-security-group-select.png "Select a security group")
 
 The security group is associated with the environment.
 
    > [!div class="mx-imgBorder"] 
-   > ![Security group added](media/security-group-added.png "Security group added")
+   > ![Security group added.](media/security-group-added.png "Security group added")
 
 ## Remove a security group's association with a Dataverse environment
 
-1. Sign in to the Power Platform admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin, Microsoft 365 Global admin, or Microsoft Power Platform admin).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin, Microsoft 365 Global admin, or Microsoft Power Platform admin).
 
 2. In the navigation pane, select **Environments**, select an environment, and then select **Edit**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Edit environment](media/edit-environment.png "Edit environment")
+   > ![Edit environment.](media/edit-environment.png "Edit environment")
 
-3. In the **Settings** page, select **Delete** (![Delete](media/nb-ua-r1-trashbin.png)).  
+3. In the **Settings** page, select **Delete** (![Delete.](media/nb-ua-r1-trashbin.png)).  
 
    > [!div class="mx-imgBorder"] 
-   > ![Select Delete](media/delete-security-group.png "Select Delete")
+   > ![Select Delete.](media/delete-security-group.png "Select Delete")
 
 4. Confirm removal, select **Remove**, and then select **Save**.
 

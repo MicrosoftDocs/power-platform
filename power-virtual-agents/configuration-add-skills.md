@@ -47,32 +47,32 @@ First, [create a Power Virtual Agents bot](authoring-first-bot.md) and [create a
 >[!NOTE]
 >Power Virtual Agents only supports skills built using [Bot Framework SDK version 4.7](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0&preserve-view=true) or above.
 
-Before registering the skill, provide the bot's ID to your skills developer to authorize the bot to call actions in the skill. [Learn more about skill allow list](https://go.microsoft.com/fwlink/?linkid=2123148).
+Before registering the skill, provide the bot's ID to your skills developer to authorize the bot to call actions in the skill. [Learn more about skill allowlist](/azure/bot-service/skill-implement-skill).
 
-**Add bot to skill's allow list:**
+**Add bot to skill's allowlist:**
 
 1. In the [Power Virtual Agents portal](https://web.powerva.microsoft.com), on the side navigation pane, expand the **Manage** menu and select **Skills**.
 
-   ![Select Manage, then Skills](media/skills-menu.png)
+   ![Select Manage, then Skills.](media/skills-menu.png)
 
 1. At the top of the skills page, select **Provide ID for allow list**.
  
-   ![Select Provide id for allow list button](media/skills-provide-id.png)
+   ![Select Provide ID for allow list button.](media/skills-provide-id.png)
 
 1. A window will show with your unique ID. Copy this ID and provide it to your skills developer.
 
-   ![Windows showing unique ID](media/skills-provide-id-modal.png)
+   ![Windows showing unique ID.](media/skills-provide-id-modal.png)
 
 
 **Enter the skill manifest URL to add a skill to your bot:**
 
 1. In the [Power Virtual Agents portal](https://web.powerva.microsoft.com), on the side navigation pane, expand the **Manage** menu and select **skills**.
 
-   ![Select Manage, then skills](media/skills-menu.png)
+   ![Select Manage, then skills.](media/skills-menu.png)
 
 1. At the top of the skills page, select **Add skill**.
  
-   ![Select Add skill button](media/skills-add-skill.png)
+   ![Select Add skill button.](media/skills-add-skill.png)
 
 1. Enter the URL to the skill manifest. A skill's manifest contains the information that your bot will need to trigger actions within a skill.
 
@@ -90,18 +90,18 @@ Error message | Troubleshoot / Mitigation
 ---|---
 We ran into problems getting the skill manifest.<br/>(`MANIFEST_FETCH_FAILED`)| Try opening your manifest URL in a web browser. If the URL renders the page within 10 seconds, re-register your skill.
 The manifest is incompatible. <br/>(`MANIFEST_MALFORMED`) | (a) Check if the manifest is a valid JSON file.<br/>(b) Check if the manifest contains required properties <br/>For example, (`name`, `msaAppId`, single `endpoint`, `activities`/`id`, `activities`/`description`, `activities`/`type` (only `event` or `message` supported)).
-There is a mismatch in your endpoints <br/>(`MANIFEST_ENDPOINT_ORIGIN_MISMATCH`) | Check if your skill endpoint matches your Azure AD application registration's `Publisher domain` (preferred) or `Home page URL` field. [Learn more about setting the home page for endpoints](https://go.microsoft.com/fwlink/?linkid=2123145).
+There is a mismatch in your endpoints <br/>(`MANIFEST_ENDPOINT_ORIGIN_MISMATCH`) | Check if your skill endpoint matches your Azure AD application registration's `Publisher domain` (preferred) or `Home page URL` field. [Learn more about setting the home page for endpoints](/azure/active-directory/manage-apps/application-proxy-configure-custom-home-page).
 To add a skill, it must first be registered <br/>(`APPID_NOT_IN_TENANT`) | Check if your skill's application ID is registered in your organization's Azure AD tenant. |
 The link isn't valid; The link must begin with https:// <br/>(`URL_MALFORMED`, `URL_NOT_HTTPS`) | Re-enter the link as a secure URL. |
 The manifest is too large; <br/>(`MANIFEST_TOO_LARGE`)| Check size of the manifest. It must be less than or equal to 500KB. |
 This skill has already been added to your bot. <br/>(`MANIFEST_ALREADY_IMPORTED`)| Delete the skill and try registering again. |
-The skill is limited to 25 actions. <br/>(`LIMITS_TOO_MANY_ACTIONS`)|There are too many skill actions defined in skill manifest. Remove actions and try again. |
+The skill is limited to 100 actions. <br/>(`LIMITS_TOO_MANY_ACTIONS`)|There are too many skill actions defined in skill manifest. Remove actions and try again. |
 Actions are limited to 25 inputs. <br/>(`LIMITS_TOO_MANY_INPUTS`)|There are too many skill action input parameters. Remove parameters and try again. |
 Actions are limited to 25 outputs. <br/>(`LIMITS_TOO_MANY_OUTPUTS`)|There are too many skill action output parameters. Remove parameters and try again. |
-Your bot can have a maximum of 25 skills. <br/>(`LIMITS_TOO_MANY_SKILLS`)| There are too many skills added into a bot. Remove an existing skill and try again. |
+Your bot can have a maximum of 100 skills. <br/>(`LIMITS_TOO_MANY_SKILLS`)| There are too many skills added into a bot. Remove an existing skill and try again. |
 It looks like something went wrong.<br/>(`AADERROR_OTHER`)|There was a transient error while validating your skill. Retry.|
 Something went wrong while checking your skill. <br/>(`ENDPOINT_HEALTHCHECK_FAILED`, `HEALTH_PING_FAILED`) | Check if your skill endpoint is online and responding to messages.|
-This skill has not allow-listed your bot <br/>(`ENDPOINT_HEALTHCHECK_UNAUTHORIZED`) | Check if your bot has been added to the skills allowlist. [Learn more about adding a skill to the allowlist](https://go.microsoft.com/fwlink/?linkid=2123431). |
+This skill has not allow-listed your bot <br/>(`ENDPOINT_HEALTHCHECK_UNAUTHORIZED`) | Check if your bot has been added to the skills allowlist. [Learn more about adding a skill to the allowlist](#configure-a-skill-for-use-in-power-virtual-agents). |
 
 
 

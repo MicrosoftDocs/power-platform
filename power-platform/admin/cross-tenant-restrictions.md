@@ -1,7 +1,7 @@
 ---
-title: "Restrict cross-tenant access   | MicrosoftDocs"
-description: Restrict cross-tenant access  
-ms.date: 11/18/2020
+title: "Restrict cross-tenant inbound and outbound access"
+description: "Use tenant restrictions to control access to SaaS cloud applications based on the Azure AD tenant. You can also enforce tenant isolation for Power Platform connections."  
+ms.date: 05/04/2021
 ms.service: power-platform
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -11,6 +11,7 @@ applies_to:
 ms.assetid: 
 caps.latest.revision: 63
 author: jimholtz
+ms.subservice: admin
 ms.author: jimholtz
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
@@ -46,7 +47,7 @@ One-way tenant isolation restricts incoming connection attempts into your tenant
 |B     | A (one-way data loss prevention policy enforced)         | No (inbound)        |
 |B     | B        | Yes        |
 
-![Restrict inbound cross-tenant access](media/restrict-inbound-cross-tenant.png "Restrict inbound cross-tenant access")
+![Restrict inbound cross-tenant access.](media/restrict-inbound-cross-tenant.png "Restrict inbound cross-tenant access")
 
 ## Two-way tenant isolation (inbound and outbound connection restriction) 
 
@@ -61,7 +62,9 @@ Two-way tenant isolation restricts incoming connection attempts into your tenant
 |B     | A (two-way data loss prevention policy enforced)         | No (inbound)        |
 |B     | B        | Yes        |
 
-![Restrict outbound and inbound cross-tenant access](media/restrict-outbound-inbound-cross-tenant.png "Restrict outbound and inbound cross-tenant access")
+![Restrict outbound and inbound cross-tenant access.](media/restrict-outbound-inbound-cross-tenant.png "Restrict outbound and inbound cross-tenant access")
 
+## Known issue
+This feature does not protect your tenant from inbound cross-cloud connections. If a tenant has tenant isolation turned on, all outgoing connections are restricted. However, incoming connections that are established from other tenants in other clouds are not restricted. This issue is currently being investigated.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

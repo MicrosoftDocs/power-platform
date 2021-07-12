@@ -1,11 +1,12 @@
 ---
-title: "Dynamics 365 US Government | MicrosoftDocs"
-description: Dynamics 365 US Government 
+title: "Dynamics 365 US Government overview"
+description: "Learn about features that are specific to Microsoft Dynamics 365 US Government as public sector customers deploy into government community cloud (GCC)." 
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/02/2020
+ms.date: 05/19/2021
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -18,8 +19,6 @@ search.app:
 
 # Dynamics 365 US Government 
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 In response to the unique and evolving requirements of the United States public sector, Microsoft has created Microsoft Dynamics 365 US Government that is available to qualified government entities in the United States. On October 11, 2016, Microsoft announced the next generation of intelligent business applications in the cloud under the brand Microsoft Dynamics 365. To this end, Microsoft Dynamics 365 US Government entails a continuity of the protected environment that was originally branded Microsoft CRM Online Government where the protections afforded to the government community cloud under the new brand are now represented by four discrete functions: Sales, Customer Service, Field Service, and Project Service Automation. This section provides an overview of features that are specific to Microsoft Dynamics 365 US Government.  It is important to note that the following Microsoft Dynamics 365 apps do not provide the compliance commitments or acquisition regulations documented in this Service Description:
 
 - Microsoft Dynamics 365 Business Central
@@ -29,7 +28,7 @@ In response to the unique and evolving requirements of the United States public 
 - Microsoft Dynamics 365 Talent
 - Microsoft Dynamics 365 Customer Service Insights
 - Microsoft Dynamics 365 Market Insights
-- Microsoft Dynamics 365 Sales
+- Microsoft Dynamics 365 Sales Insights
 
 ## About Dynamics 365 US Government environments and plans
 
@@ -99,7 +98,7 @@ Orders placed for GCC High must be followed-up with a request to the Microsoft G
 ## What is “customer data” and “customer content?”  
  This section describes [!INCLUDE[pn_CRM_Online_Government_shortest](../includes/pn-crm-online-government-shortest.md)] commitments that apply to customer content and to customer data.  
   
- Customer data, as defined in the Online Service Terms, means all data, including all text, sound, video, or image files, and software, that are provided to Microsoft by, or on behalf of, Customer through use of the Online Service. Customer content refers to a specific subset of customer data that has been directly created by users, such as content stored in databases through entries in [!INCLUDE[pn_crm_shortest](../includes/pn-crm-shortest.md)] entities (e.g. contact information). Content is generally considered confidential information, and in normal service operation, is not sent over the Internet without encryption.  
+ Customer data, as defined in the Online Service Terms, means all data, including all text, sound, video, or image files, and software, that are provided to Microsoft by, or on behalf of, Customer through use of the Online Service. Customer content refers to a specific subset of customer data that has been directly created by users, such as content stored in databases through entries in [!INCLUDE[pn_crm_shortest](../includes/pn-crm-shortest.md)] tables (e.g. contact information). Content is generally considered confidential information, and in normal service operation, is not sent over the Internet without encryption.  
   
  For more information on the [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] protection of customer data, see the [Microsoft Online Services Trust Center](https://www.microsoft.com/trustcenter/cloudservices/dynamics365).  
   
@@ -171,6 +170,10 @@ You use a different set of URLs to access Dynamics 365 US Government environment
 - GCC: *.crm9.dynamics.com
 - GCC High:  *.crm.microsoftdynamics.us
 
+### Dynamics 365 Customer Voice
+
+- GCC/GCC High: https://customervoice.microsoft.us
+
 ### Discovery Service (Deprecated)
 
 - GCC: https://disco.crm9.dynamics.com/XRMServices/2011/Discovery.svc
@@ -201,13 +204,13 @@ You use a different set of URLs to access Dynamics 365 US Government environment
   
 ## Regional Discovery Service is deprecated
 
-Effective March 2, 2020, the *regional* [Discovery Service](/powerapps/developer/common-data-service/org-service/discovery-service) will be deprecated. More information: [Regional Discovery Service is deprecated](/power-platform/important-changes-coming#regional-discovery-service-is-deprecated).
+Effective March 2, 2020, the *regional* [Discovery Service](/powerapps/developer/common-data-service/org-service/discovery-service) will be deprecated. More information: [Regional Discovery Service is deprecated](../important-changes-coming.md#regional-discovery-service-is-deprecated).
 
 ### See also  
 [Dynamics 365 US Government - Feature availability](government-feature-availability.md)<br/>
 [IP addresses and URLs](online-requirements.md#ip-addresses-and-urls)<br />
-[Power Apps US Government](https://docs.microsoft.com/power-platform/admin/powerapps-us-government)<br />
-[Power Automate US Government](https://docs.microsoft.com/power-automate/us-govt)
+[Power Apps US Government](./powerapps-us-government.md)<br />
+[Power Automate US Government](/power-automate/us-govt)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

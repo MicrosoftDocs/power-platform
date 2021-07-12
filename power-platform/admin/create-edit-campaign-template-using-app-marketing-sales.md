@@ -6,6 +6,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/04/2020
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -45,13 +46,13 @@ Save time when creating multiple campaigns by creating a campaign template. Camp
 > [!INCLUDE[cc_CRM_Marketing_and_MDM](../includes/cc-crm-marketing-and-mdm.md)] 
   
 ### See also  
- [Get started with in-app marketing (Sales)](https://docs.microsoft.com/dynamics365/sales-enterprise/get-started-app-marketing-sales)   
- [Create a marketing list using in-app marketing (Sales)](https://docs.microsoft.com/dynamics365/sales-enterprise/create-marketing-list-using-app-marketing-sales)   
- [Create or edit a campaign using in-app marketing (Sales)](https://docs.microsoft.com/dynamics365/sales-enterprise/create-edit-campaign-using-app-marketing-sales)   
- [Create a quick campaign using in-app marketing (Sales)](https://docs.microsoft.com/dynamics365/sales-enterprise/create-quick-campaign-using-app-marketing-sales)   
- [Add an activity to a campaign using in-app marketing (Sales)](https://docs.microsoft.com/dynamics365/sales-enterprise/add-activity-campaign-using-app-marketing-sales)   
- [Add a marketing list, sales literature, or product to a campaign using in-app marketing (Sales)](https://docs.microsoft.com/dynamics365/sales-enterprise/add-marketing-list-sales-literature-product-campaign-using-app-marketing-sales)   
- [Track a marketing campaign response using in-app marketing (Sales)](https://docs.microsoft.com/dynamics365/sales-enterprise/track-marketing-campaign-response-using-app-marketing-sales)   
+ [Get started with in-app marketing (Sales)](/dynamics365/sales-enterprise/get-started-app-marketing-sales)   
+ [Create a marketing list using in-app marketing (Sales)](/dynamics365/sales-enterprise/create-marketing-list-using-app-marketing-sales)   
+ [Create or edit a campaign using in-app marketing (Sales)](/dynamics365/sales-enterprise/create-edit-campaign-using-app-marketing-sales)   
+ [Create a quick campaign using in-app marketing (Sales)](/dynamics365/sales-enterprise/create-quick-campaign-using-app-marketing-sales)   
+ [Add an activity to a campaign using in-app marketing (Sales)](/dynamics365/sales-enterprise/add-activity-campaign-using-app-marketing-sales)   
+ [Add a marketing list, sales literature, or product to a campaign using in-app marketing (Sales)](/dynamics365/sales-enterprise/add-marketing-list-sales-literature-product-campaign-using-app-marketing-sales)   
+ [Track a marketing campaign response using in-app marketing (Sales)](/dynamics365/sales-enterprise/track-marketing-campaign-response-using-app-marketing-sales)   
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

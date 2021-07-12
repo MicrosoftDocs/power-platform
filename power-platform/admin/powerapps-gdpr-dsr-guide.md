@@ -6,7 +6,8 @@ ms.reviewer: paulliew
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/20/2020
+ms.date: 06/16/2021
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -18,8 +19,6 @@ search.app:
 ---
 
 # Responding to Data Subject Rights (DSR) requests for Power Apps customer data
-
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 ## Introduction to DSR Requests
 The European Union (EU) General Data Protection Regulation (GDPR) gives rights to people (known in the regulation as *data subjects*) to manage the personal data that's been collected by an employer or other type of agency or organization (known as the *data controller* or just *controller*). Personal data is defined very broadly under the GDPR as any data that relates to an identified or identifiable natural person. The GDPR gives data subjects the right to do the following, as it pertains to their personal data:
@@ -56,24 +55,24 @@ Below is a summary of the types of Power Apps resources that contain personal da
 
 Resources containing personal data |    Purpose
 --- | ---
-Environment |    An environment is a space to store, manage, and share your organization's business data, apps, and flows. [Learn more](https://go.microsoft.com/fwlink/?linkid=872239)
-Environment permissions    | Users are assigned to environments roles to be granted maker and administrative privileges within an environment. [Learn more](https://go.microsoft.com/fwlink/?linkid=872240)
-Canvas app    | Cross-platform business apps that can be built from a power of a blank canvas and connected to over 200 data sources. [Learn more](https://go.microsoft.com/fwlink/?linkid=872241)
-Canvas-app permissions    | Canvas apps can be shared with users within an organization. [Learn more](https://go.microsoft.com/fwlink/?linkid=872242)
-Connection    | Used by connectors and allow for connectivity to APIs, systems, databases, etc. [Learn more](https://go.microsoft.com/fwlink/?linkid=872243)
-Connection permissions    | Certain types of connections can be shared with users within an organization. [Learn more](https://go.microsoft.com/fwlink/?linkid=872244)
-Custom connector    | Custom connectors that a user has created to provide access to a data source not offered through one of the Power Apps standard connectors. [Learn more](https://go.microsoft.com/fwlink/?linkid=872245)
-Custom-connector permissions    | Custom connectors can be shared with users within an organization. [Learn more](https://go.microsoft.com/fwlink/?linkid=872246)
+Environment |    An environment is a space to store, manage, and share your organization's business data, apps, and flows. [Learn more](./environments-overview.md)
+Environment permissions    | Users are assigned to environments roles to be granted maker and administrative privileges within an environment. [Learn more](./environments-overview.md)
+Canvas app    | Cross-platform business apps that can be built from a power of a blank canvas and connected to over 200 data sources. [Learn more](/powerapps/maker/)
+Canvas-app permissions    | Canvas apps can be shared with users within an organization. [Learn more](/powerapps/maker/canvas-apps/share-app)
+Connection    | Used by connectors and allow for connectivity to APIs, systems, databases, etc. [Learn more](/powerapps/maker/canvas-apps/add-manage-connections)
+Connection permissions    | Certain types of connections can be shared with users within an organization. [Learn more](/powerapps/maker/canvas-apps/share-app-resources)
+Custom connector    | Custom connectors that a user has created to provide access to a data source not offered through one of the Power Apps standard connectors. [Learn more](/powerapps/maker/canvas-apps/register-custom-api)
+Custom-connector permissions    | Custom connectors can be shared with users within an organization. [Learn more](/powerapps/maker/canvas-apps/share-app-resources)
 Power Apps user and user-app settings    | Power Apps stores several user preferences and settings that are used to deliver the Power Apps runtime and portal experiences.
 Power Apps notifications    | Power Apps sends several types of notifications to users including when an app is shared with them and when a Dataverse export operation has completed.
-Gateway    | Gateways are on-premises data gateways that can be installed by a user to transfer data quickly and securely between Power Apps and a data source that isn't in the cloud. [Learn more](https://go.microsoft.com/fwlink/?linkid=872247)
-Gateway permissions    | Gateways can be shared with users within an organization. [Learn more](https://go.microsoft.com/fwlink/?linkid=872249)
-Model-driven apps and model-driven app permissions    | Model-driven app design is a component-focused approach to app development. Model-driven apps and their user access permissions are stored as data within the Dataverse database.  [Learn more](https://go.microsoft.com/fwlink/?linkid=872248)
+Gateway    | Gateways are on-premises data gateways that can be installed by a user to transfer data quickly and securely between Power Apps and a data source that isn't in the cloud. [Learn more](/powerapps/maker/canvas-apps/gateway-reference)
+Gateway permissions    | Gateways can be shared with users within an organization. [Learn more](/powerapps/maker/canvas-apps/share-app-resources)
+Model-driven apps and model-driven app permissions    | Model-driven app design is a component-focused approach to app development. Model-driven apps and their user access permissions are stored as data within the Dataverse database.  [Learn more](/powerapps/maker/model-driven-apps/model-driven-app-overview)
 
 Power Apps offers the following experiences to find personal data for a specific user:
 
 - **Website access**: [Power Apps site](https://make.powerapps.com) and [Microsoft 365 Service Trust Portal](https://servicetrust.microsoft.com/)
-- **PowerShell access**: Power Apps cmdlets (for [app creators](https://go.microsoft.com/fwlink/?linkid=871448) and [administrators](https://go.microsoft.com/fwlink/?linkid=871804)) and [On-premises gateway cmdlets](https://go.microsoft.com/fwlink/?linkid=872238)
+- **PowerShell access**: Power Apps cmdlets (for [app creators](./powerapps-powershell.md) and [administrators](./powerapps-powershell.md)) and [On-premises gateway cmdlets](/data-integration/gateway/service-gateway-high-availability-clusters)
 
 For detailed steps on how you can use these experiences to find personal data for a specific user for each of these types of resources, see [Responding to Data Subject Rights (DSR) requests to export Power Apps customer data](powerapps-gdpr-export-dsr.md).
 
@@ -82,13 +81,13 @@ After you find the data, you can then perform the specific action to satisfy the
 ### Step 2: Find personal data for the user in Power Automate
 Power Apps licenses always include Power Automate capabilities. In addition to being included in Power Apps licenses, Power Automate is also available as a standalone service.
 
-For guidance on how to discover personal data stored by the Power Automate service, see [Responding to GDPR Data Subject Requests for Power Automate](https://go.microsoft.com/fwlink/?linkid=872250).
+For guidance on how to discover personal data stored by the Power Automate service, see [Responding to GDPR Data Subject Requests for Power Automate](/power-automate/gdpr-dsr-summary).
 
 > [!IMPORTANT]
 > It is recommended that admins complete this step for a Power Apps user
 
 ### Step 3: Find personal data for the user in environments of Dataverse
-Certain Power Apps licenses, including the Power Apps Community Plan, give the ability for users within your organization to create environments of Dataverse and to create and build apps on Dataverse. The Power Apps Community Plan is a free license that allows users to try out Dataverse in an individual environment. See the [Power Apps Pricing](https://powerapps.microsoft.com/pricing/) page for which capabilities are included in each Power Apps license.
+Certain Power Apps licenses, including the Power Apps Developer Plan, give the ability for users within your organization to create environments of Dataverse and to create and build apps on Dataverse. The Power Apps Developer Plan is a free license that allows users to try out Dataverse in an individual environment. See the [Power Apps Pricing](https://powerapps.microsoft.com/pricing/) page for which capabilities are included in each Power Apps license.
 
 For guidance on how to discover personal data stored by Dataverse, see [Responding to Data Subject Rights (DSR) requests for customer data in Dataverse](common-data-service-gdpr-dsr-guide.md).
 

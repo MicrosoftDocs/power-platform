@@ -6,6 +6,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/17/2021
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -18,8 +19,6 @@ search.app:
 # Deploy Microsoft 365 groups 
 
 [!INCLUDE [pn-dynamics-crm-online](../includes/pn-dynamics-crm-online.md)]
-
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 Microsoft 365 Groups, available with Dynamics 365 apps, provides a new environment for collaboration with Microsoft 365 users who don't use customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), such as Dynamics 365 Sales and Customer Service. For example, use Microsoft 365 Groups when a sales team has a major opportunity requiring input from several people who don't have access to customer engagement apps. Microsoft 365 Groups provides a single location to share documents, conversations, meetings, and notes. You can enable Microsoft 365 Groups for any entity.  
   
@@ -81,11 +80,11 @@ Once installation of the solution has completed, you can configure Microsoft 365
 ## Configure Microsoft 365 groups  
  Once you provision Microsoft 365 Groups, you can enable them for any entity. Security group membership is associated with the entity. You configure Microsoft 365 Groups in customer engagement apps.  
 
-1. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+1. In the web app, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
 
 2. Select **Settings** > **Office 365 Groups**.
 
-3. On the **Microsoft 365 Groups Integration Settings** page, select ![Add properties button](../admin/media/add-properties-button.png "Add properties button")**Add entity** and choose an entity from the drop-down list. Repeat this step for each entity you want to enable, including custom entities.  
+3. On the **Microsoft 365 Groups Integration Settings** page, select ![Add properties button.](../admin/media/add-properties-button.png "Add properties button")**Add entity** and choose an entity from the drop-down list. Repeat this step for each entity you want to enable, including custom entities.  
   
 4. Optionally, you can select **Auto-create** for an entity to have a new group automatically created when a new record for that entity is created. However, we recommend you choose this option only for entities that typically require large groups to collaborate.  
   
@@ -93,7 +92,7 @@ Once installation of the solution has completed, you can configure Microsoft 365
   
 All of your pending system customizations will be published, including those you may have saved but not published in another area.  
   
-You're now ready to use Microsoft 365 Groups. See [Collaborate with your colleagues using Microsoft 365 groups](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/basics/collaborate-with-colleagues-using-office-365-groups).  
+You're now ready to use Microsoft 365 Groups. See [Collaborate with your colleagues using Microsoft 365 groups](/dynamics365/customerengagement/on-premises/basics/collaborate-with-colleagues-using-office-365-groups).  
   
 ## Use the Microsoft 365 Connectors for Groups  
  Use the Microsoft 365 Connectors for Groups to connect new or existing Microsoft 365 Groups with customer engagement apps so the group is notified when new activities are posted. To set it up, follow these steps:  
@@ -108,7 +107,7 @@ You're now ready to use Microsoft 365 Groups. See [Collaborate with your colleag
 3. Select **Connect your apps**.  
   
    > [!div class="mx-imgBorder"] 
-   > ![Select Microsoft 365 groups Connectors](media/office-365-groups-connectors.png "Select Microsoft 365 groups Connectors")
+   > ![Select Microsoft 365 groups Connectors.](media/office-365-groups-connectors.png "Select Microsoft 365 groups Connectors")
   
 4. Scroll down to **Dynamics 365**, and then select **Add**.  
   
@@ -116,15 +115,15 @@ You're now ready to use Microsoft 365 Groups. See [Collaborate with your colleag
   
 6. Choose the record you want to connect this Microsoft 365 Group to, and then select **Save**.  
   
-   ![Add Microsoft 365 groups records to connect](../admin/media/add-office-365-groups-records-to-connect.png "Add Microsoft 365 groups records to connect")  
+   ![Add Microsoft 365 groups records to connect.](../admin/media/add-office-365-groups-records-to-connect.png "Add Microsoft 365 groups records to connect")  
   
    Once connected, the connector shows up at the top of the connection list with a summary of connected records.  
   
-   ![Microsoft 365 groups records in connector](../admin/media/office-365-groups-records-in-connector.png "Microsoft 365 groups records in connector")  
+   ![Microsoft 365 groups records in connector.](../admin/media/office-365-groups-records-in-connector.png "Microsoft 365 groups records in connector")  
   
    To delete a connected record, select **View**, and then select **Remove**.  
   
-   ![Delete Microsoft 365 groups records from connect](../admin/media/delete-office-365-groups-records-from-connect.png "Delete Microsoft 365 groups records from connect")  
+   ![Delete Microsoft 365 groups records from connect.](../admin/media/delete-office-365-groups-records-from-connect.png "Delete Microsoft 365 groups records from connect")  
   
 > [!NOTE]
 >  Note the following about the Microsoft 365 Connectors for Groups:  
@@ -141,7 +140,7 @@ You're now ready to use Microsoft 365 Groups. See [Collaborate with your colleag
  When a user leverages the Microsoft 365 groups feature to connect an Office Group to customer engagement apps, data (including new conversations and documents) will be stored on the Exchange and/or SharePoint system and shared with the members of that Office Group, even if they are not licensed or authorized users. Users will only be able to share the data that they have access to, and Administrators can limit the data that is shared by limiting the access privileges of their users.  
   
 ### See also  
- [Collaborate with your colleagues using Microsoft 365 groups](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/basics/collaborate-with-colleagues-using-office-365-groups)   
+ [Collaborate with your colleagues using Microsoft 365 groups](/dynamics365/customerengagement/on-premises/basics/collaborate-with-colleagues-using-office-365-groups)   
  [CRM Blog: Dynamics CRM Online connector for Microsoft 365 groups](https://blogs.msdn.microsoft.com/crm/2016/04/01/dynamics-crm-online-connector-for-office-365-groups/)   
  [Set up customer engagement apps to use Exchange Online](connect-exchange-online.md)   
 

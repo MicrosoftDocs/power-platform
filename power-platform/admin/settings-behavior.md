@@ -5,7 +5,8 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/10/2020
+ms.date: 06/03/2021
+ms.subservice: admin
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -17,17 +18,15 @@ search.app:
 ---
 # Manage behavior settings 
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 Use Behavior settings to adjust how model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, appear and functions.
 
 These settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Product** >**Behavior**.
 
-Make sure you have the System Administrator or System Customizer security role or equivalent permissions to update the business closures.
+Make sure you have the System Administrator security role or equivalent permissions to update the business closures.
 
 **Check your security role**
 
-- Follow the steps in [View your user profile](https://docs.microsoft.com/powerapps/user/view-your-user-profile).
+- Follow the steps in [View your user profile](/powerapps/user/view-your-user-profile).
 - Don’t have the correct permissions? Contact your system administrator.
 
 ## Settings
@@ -36,7 +35,7 @@ Make sure you have the System Administrator or System Customizer security role o
 > |Settings|Description|  
 > |--------------|-----------------|  
 > |**Basic behavior**||  
-> |Auto save|Default: On. If **On**, after a record is created (initially saved), any changes made to a form will automatically be saved thirty seconds after the change is made. The 30-second period starts again after a change is made. If no changes are made, the automatic save doesn’t happen. More information: [Manage auto-save](https://docs.microsoft.com/dynamics365/customer-engagement/customize/manage-auto-save)|  
+> |Auto save|Default: On. If **On**, after a record is created (initially saved), any changes made to a form will automatically be saved thirty seconds after the change is made. The 30-second period starts again after a change is made. If no changes are made, the automatic save doesn’t happen. More information: [Manage auto-save](/dynamics365/customer-engagement/customize/manage-auto-save)|  
 > |Load default static content from Content Delivery Network|Default: On. Customer engagement apps will load out-of-the-box static content from the Azure Content Delivery Network (CDN) service. For firewall restrictions and IP approved list related issues, system administrators can select **Off** to disable the Azure Azure Content Delivery Network feature.|  
 > |Share reassigned records with original owner|Default: Off. Select whether a record is shared with the original owner of the record, or completely reassigned to another user.| 
 > |Open in application mode|Default: Off. Select **On** to enable application mode. When this mode is enabled, customer engagement apps can be opened in a browser without menus, navigation, or toolbars. Hiding these parts of the browser causes customer engagement apps to appear like a separate application rather than a website. |  
@@ -53,7 +52,8 @@ Make sure you have the System Administrator or System Customizer security role o
 > |Show welcome screen on sign in|Default: On.|  
 > |Show Microsoft Power Automate on forms and in the site map|Default: On. Select **On** to enable embedded Power Automate flows in your organization. More information: [Enable embedded Power Automate to automate processes](enable-embedded-flow-in-your-organization.md).|  
 > |Show dashboard cards in expanded state|Default: Off. Select **On** to see the detailed card form in a dashboard. If set to **Off**, only the header and minimal details are displayed in the card form.|  
-
+> |**Lookup behavior**||  
+> |Enable advanced lookup in model-driven apps|Default: Off. If **On**, it allow users to use the **Advanced lookup** feature in a lookup column. More information: [Advanced lookup](/powerapps/user/lookup-field#advanced-lookup)|  
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

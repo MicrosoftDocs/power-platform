@@ -1,12 +1,13 @@
 ---
 title: "Recover from Exchange Server failure  | MicrosoftDocs"
 description: Recover from Exchange Server failure
-author: jimholtz
+author: mduelae
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/09/2020
-ms.author: jimholtz
+ms.subservice: admin
+ms.author: mkaur
 search.audienceType: 
   - admin
 search.app:
@@ -30,7 +31,7 @@ The process to restore a [!INCLUDE[pn_Exchange_Server_full](../includes/pn-excha
   
 3. Restore the Microsoft.Crm.Tools.EmailAgent.xml file. By default, this file is located in the C:\Program Files\Microsoft Customer Engagement Email\Service folder on the computer where the Email Router is installed. If this file isn’t available, you must reconfigure the profiles, settings, users, queue, and forward-mailbox information by running the Email Router Configuration Manager.  
   
-For more information about [!INCLUDE[pn_Exchange_Server_2016](../includes/pn-exchange-server-2016-short.md)] backup and recovery, see [Backup, restore, and disaster recovery](https://technet.microsoft.com/library/mt697598(v=exchg.160).aspx).  
+For more information about [!INCLUDE[pn_Exchange_Server_2016](../includes/pn-exchange-server-2016-short.md)] backup and recovery, see [Backup, restore, and disaster recovery](/Exchange/high-availability/disaster-recovery/disaster-recovery).  
 
 For more information about [!INCLUDE[pn_Exchange_Server_2013_full](../includes/pn-exchange-server-2013-full.md)] backup and recovery, see [Backup, restore, and disaster recovery](https://technet.microsoft.com/library/dd876874\(v=exchg.150\).aspx).  
   

@@ -94,6 +94,8 @@
           href: move-environment-tenant.md
         - name: Back up and restore environment
           href: backup-restore-environments.md
+        - name: Edit environment properties
+          href: edit-properties-environment.md
         - name: Administration mode
           href: admin-mode.md
         - name: Customer managed encryption key
@@ -137,19 +139,19 @@
         - name: Business 
           items:
           - name: Business closures 
-            href: https://docs.microsoft.com/dynamics365/customer-service/set-when-business-closed-csh
+            href: /dynamics365/customer-service/set-when-business-closed-csh
           - name: Fiscal year
             href: work-fiscal-year-settings.md
           - name: Connection roles
-            href: https://docs.microsoft.com/dynamics365/customerengagement/on-premises/basics/create-connections-view-relationships-between-records
+            href: /dynamics365/customerengagement/on-premises/basics/create-connections-view-relationships-between-records
           - name: Manage transactions with multiple currencies
             href: manage-transactions-with-multiple-currencies.md 
           - name: Queues
-            href: https://docs.microsoft.com/dynamics365/customer-service/set-up-queues-manage-activities-cases
+            href: /dynamics365/customer-service/set-up-queues-manage-activities-cases
           - name: Customize regional options
             href: customize-regional-options-admins.md 
           - name: Relationship roles
-            href: https://docs.microsoft.com/dynamics365/customerengagement/on-premises/basics/create-connections-view-relationships-between-records
+            href: /dynamics365/customerengagement/on-premises/basics/create-connections-view-relationships-between-records
           - name: Create or edit a site
             href: create-edit-site.md
           - name: Add resources to a site
@@ -165,7 +167,7 @@
           - name: Hierarchy security
             href: hierarchy-security.md
           - name: Mobile configuration
-            href: https://docs.microsoft.com/dynamics365/mobile-app/setup-mobile-offline-for-admin
+            href: /dynamics365/mobile-app/setup-mobile-offline-for-admin
           - name: Positions
             href: hierarchy-security.md#position-hierarchy
           - name: Security roles
@@ -189,17 +191,17 @@
         - name: Templates
           items:
           - name: Access team templates
-            href: https://docs.microsoft.com/dynamics365/customerengagement/on-premises/admin/about-team-templates
+            href: /dynamics365/customerengagement/on-premises/admin/about-team-templates
           - name: Article templates
             href: create-templates-articles.md
           - name: Contract templates
-            href: https://docs.microsoft.com/dynamics365/customer-service/create-entitlement-define-support-terms-customer
+            href: /dynamics365/customer-service/create-entitlement-define-support-terms-customer
           - name: Data import templates
             href: download-template-data-import.md
           - name: Document templates
-            href: https://docs.microsoft.com/dynamics365/customerengagement/on-premises/admin/work-with-templates
+            href: /dynamics365/customerengagement/on-premises/admin/work-with-templates
           - name: Email signatures
-            href: https://docs.microsoft.com/dynamics365/customerengagement/on-premises/basics/create-signature-dynamics-365-email-queue
+            href: /dynamics365/customerengagement/on-premises/basics/create-signature-dynamics-365-email-queue
           - name: Email templates
             href: create-templates-email.md
           - name: Mail merge templates
@@ -229,7 +231,7 @@
           - name: OneNote
             href: set-up-onenote-integration-in-dynamics-365.md
           - name: Outlook
-            href: https://docs.microsoft.com/dynamics365/outlook-app/deploy-dynamics-365-app-for-outlook
+            href: /dynamics365/outlook-app/deploy-dynamics-365-app-for-outlook
           - name: SharePoint document locations
             href: create-edit-document-location-records.md
           - name: SharePoint sites
@@ -241,13 +243,13 @@
         - name: Data management 
           items:
           - name: Add ready-to-use business process
-            href: https://docs.microsoft.com/dynamics365/customerengagement/on-premises/customize/add-ready-use-business-processes
+            href: /dynamics365/customerengagement/on-premises/customize/add-ready-use-business-processes
           - name: Announcements
             href: settings-announcements.md
           - name: Auto-numbering prefixes
             href: change-auto-number-prefix-contract-case-article-quote-order-invoice-campaign-category-knowledge-articles.md 
           - name: Automatic record creation policies
-            href: https://docs.microsoft.com/dynamics365/customer-engagement/customer-service/set-up-rules-to-automatically-create-or-update-records
+            href: /dynamics365/customer-engagement/customer-service/set-up-rules-to-automatically-create-or-update-records
           - name: Bulk deletion
             href: delete-bulk-records.md
           - name: Data import wizard
@@ -263,7 +265,7 @@
           - name: Asynchronous processing of cascading transactions
             href: async-cascading.md
           - name: Imports
-            href: https://docs.microsoft.com/dynamics365/customerengagement/on-premises/basics/import-accounts-leads-other-data 
+            href: /dynamics365/customerengagement/on-premises/basics/import-accounts-leads-other-data
           - name: Sample data
             href: add-remove-sample-data.md
         - name: Encryption
@@ -275,7 +277,7 @@
           - name: All legacy settings
             href: set-up-business-management-options.md
           - name: Dynamics 365 for Outlook
-            href: https://docs.microsoft.com/dynamics365/outlook-app/deploy-dynamics-365-app-for-outlook
+            href: /dynamics365/outlook-app/deploy-dynamics-365-app-for-outlook
         - name: System 
           items: 
           - name: Overview
@@ -336,6 +338,8 @@
         href: admin-view-user-licenses.md
       - name: Create users and assign security roles
         href: create-users-assign-online-security-roles.md
+      - name: Manage application users
+        href: manage-application-users.md
       - name: Delete users
         href: delete-users.md
       - name: Reset a user's password
@@ -351,13 +355,15 @@
       - name: Configure user access to an environment
         href: control-user-access.md  
       - name: View user profile
-        href: https://docs.microsoft.com/powerapps/user/view-your-user-profile
+        href: /powerapps/user/view-your-user-profile
       - name: Assign security roles
         items:  
         - name: About security roles and privileges
           href: security-roles-privileges.md
         - name: Create users and assign security roles
           href: create-users-assign-online-security-roles.md
+        - name: Opt-out of automatic license-based user roles management
+          href: opt-out-automatic-license.md
         - name: Use service admin roles to manage your tenant
           href: use-service-admin-role-manage-tenant.md
         - name: Miscellaneous privileges
@@ -393,19 +399,27 @@
         - name: Analytics for flows
           href: analytics-flow.md
         - name: Analytics for UI flows
-          href: analytics-ui-flow.md
-      # - name: Analyze telemetry with Application Insights
-      #   items:
-      #   - name: Model-driven apps and Microsoft Dataverse telemetry
-      #     href: analyze-telemetry.md
-      #   - name: Overview of integration with Application Insights
-      #     href: overview-integration-application-insights.md
-      #   - name: Telemetry events for model-driven apps 
-      #     href: telemetry-events-model-driven-apps.md
-      #   - name: Telemetry events for Dataverse
-      #     href: telemetry-events-dataverse.md   
-      #   - name: Set up export to Application Insights
-      #     href: set-up-export-application-insights.md
+          href: analytics-ui-flow.md 
+      - name: Reports
+        items:
+        - name: "Preview: Create custom dashboards using Power Apps inventory and usage data"
+          href: build-custom-reports.md
+        - name: "Preview: Export Power Apps inventory and usage data"
+          href: self-service-analytics.md
+      - name: "Preview: Tenant-level analytics" 
+        href: tenant-level-analytics.md
+      - name: "Preview: Analyze telemetry with Application Insights"
+        items:
+        - name: "Preview: Model-driven apps and Microsoft Dataverse telemetry"
+          href: analyze-telemetry.md
+        - name: "Preview: Overview of integration with Application Insights"
+          href: overview-integration-application-insights.md
+        - name: "Preview: Telemetry events for model-driven apps" 
+          href: telemetry-events-model-driven-apps.md
+        - name: "Preview: Telemetry events for Dataverse"
+          href: telemetry-events-dataverse.md   
+        - name: "Preview: Set up export to Application Insights"
+          href: set-up-export-application-insights.md
     - name: Storage
       items: 
       - name: What's new for storage
@@ -416,8 +430,6 @@
         href: legacy-capacity-storage.md
       - name: View self-service capacity
         href: view-self-service-capacity.md
-      - name: Add-on capacity management
-        href: capacity-add-on.md
       - name: Free up storage space
         href: free-storage-space.md       
     - name: Resources
@@ -430,12 +442,16 @@
         href: admin-manage-apps.md
       - name: Manage Power Automate flows
         href: manage-power-automate.md
+      - name: Add-on capacity management
+        href: capacity-add-on.md
       - name: Portal administration
-        href: https://docs.microsoft.com/powerapps/maker/portals/admin/power-platform-admin-center
+        href: /powerapps/maker/portals/admin/power-platform-admin-center
     - name: Activity logging
       items: 
       - name: Power Apps activity logging
-        href: logging-powerapps.md 
+        href: logging-powerapps.md
+      - name: Power Automate activity logging
+        href: logging-power-automate.md 
       - name: Data loss prevention activity logging
         href: dlp-activity-logging.md
       - name: Audit data and user activity for Dynamics 365 entities
@@ -463,13 +479,13 @@
         - name: Creating a service principal
           href: powershell-create-service-principal.md
         - name: Cmdlet Reference
-          href: https://docs.microsoft.com/powershell/module/microsoft.powerapps.administration.powershell/?view=pa-ps-latest
+          href: /powershell/module/microsoft.powerapps.administration.powershell/?view=pa-ps-latest
       - name: Connectors
         items:
         - name: Getting started
           href: connectors-getting-started.md
         - name: Connector reference
-          href: https://docs.microsoft.com/connectors/powerplatformforadmins/
+          href: /connectors/powerplatformforadmins/
       - name: Power Platform API
         items:
         - name: Getting started
@@ -502,9 +518,11 @@
         href: supported-web-browsers-and-mobile-devices.md
       - name: Web application requirements
         href: web-application-requirements.md
+      - name: Support end for Internet Explorer
+        href: support-end-internet-explorer.md
       - name: Server cipher suites and TLS requirements
         href: server-cipher-tls-requirements.md
-    - name: Security
+    - name: Security and governance
       items:
       - name: Overview
         href: wp-security.md     
@@ -578,7 +596,7 @@
           items: 
       - name: Configure
         items: 
-          - name: Enable SharePoint document management for specific  entities
+          - name: Enable SharePoint document management for specific entities
             href: enable-sharepoint-document-management-specific-entities.md
           - name: Edit existing SharePoint site records
             href: edit-existing-sharepoint-site-records.md
@@ -596,9 +614,6 @@
             href: troubleshoot-doc-management-issues.md
           - name: Known issues with document management
             href: doc-management-known-issues.md
-    - name: Application lifecycle management 
-      href: wp-application-lifecycle-management.md
-      items:
     - name: Data integration
       items:
       - name: Integrate data into Dataverse 
@@ -682,75 +697,94 @@
       - name: Overview
         href: integrate-synchronize-your-email-system.md 
       - name: Deploy Dynamics 365 App for Outlook
-        href: https://docs.microsoft.com/dynamics365/customer-engagement/outlook-app/deploy-dynamics-365-app-for-outlook
+        href: /dynamics365/customer-engagement/outlook-app/deploy-dynamics-365-app-for-outlook
       - name: Enable accessible email flow
         href: deploy-email-unified-interface.md 
-      - name: Server-side sync overview
+      - name: Server-side synchronization
         items:
         - name: About server-side sync
           href: server-side-synchronization.md
-        - name: Supported email service configurations
-          href: supported-email-service-configurations-server-side-synchronization.md
-      - name: Set up server-side sync
-        items:
-        - name: Overview
-          href: set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks.md
-        - name: Connect to Exchange Online
-          href: connect-exchange-online.md
-        - name: Connect to Exchange Server (on-premises)
-          href: connect-exchange-server-on-premises.md
-        - name: Connect to POP3 or SMTP servers
-          href: connect-to-pop3-or-smtp-servers.md
-        - name: Connect to IMAP or SMTP servers
-          href: connect-to-imap-servers.md 
-        - name: Connect Gmail accounts using OAuth 2.0
-          href: connect-gmail-oauth2.md
-        - name: Troubleshooting and monitoring server-side synchronization
-          href: troubleshooting-monitoring-server-side-synchronization.md
-        - name: When would I want to use this check box?
-          href: when-would-want-use-check-box.md
-        - name: Error logging for server-side synchronization
-          href: error-logging-server-side-synchronization.md 
-        - name: Best practices for server-side synchronization
-          href: best-practices-server-side-synchronization.md
-        - name: Create forward mailboxes or edit mailboxes
-          href: create-forward-mailboxes-edit-mailboxes.md
-        - name: Create queue items from synchronized email messages
-          href: create-queue-items-from-synchronized-email-messages.md
-      - name: Configure Outlook or Exchange folder-level tracking
-        href: configure-outlook-exchange-folder-level-tracking.md
-      - name: Use Outlook category to track appointments and emails
-        href: use-outlook-category-track-appointments-emails.md 
-      - name: Track Outlook email by moving it to a tracked Exchange folder
-        href: track-outlook-email-by-moving-it-tracked-exchange-folder.md
-      - name: Set incoming and outgoing email synchronization
-        href: set-incoming-outgoing-email-synchronization.md
-      - name: Choose records to synchronize with Exchange
-        href: choose-records-synchronize-dynamics-365-outlook-exchange.md
-      - name: Control field synchronization with Outlook
-        href: control-field-synchronization-outlook.md 
-      - name: How field security affects synchronization with Outlook
-        href: how-field-security-affects-synchronization-between-outlook.md 
-      - name: What fields can be synchronized with Outlook?
-        href: what-fields-synchronized-outlook.md
-      - name: View the fields that are synchronized with Outlook
-        href: view-fields-synchronized-dynamics-365-outlook.md
-      - name: Frequently asked questions about synchronizing records
-        href: frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook.md 
-      - name: Set personal options that affect tracking and synchronization
-        href: set-personal-options-affect-tracking-synchronization-between-dynamics-365-outlook-exchange.md
-     # - name: Send email on behalf of another user 
-     #   href: send-email-on-behalf.md
-      - name: Monitor email processing errors
-        href: monitor-email-processing-errors.md 
-      - name: Why does the email sent have a "Pending Send" status?
-        href: why-email-message-sent-have-pending-send-status.md 
-      - name: Email message filtering and correlation
-        href: email-message-filtering-correlation.md 
-      - name: Forward mailbox vs. individual mailboxes
-        href: forward-mailbox-vs-individual-mailboxes.md 
-      - name: Recover from Exchange Server failure
-        href: recover-from-exchange-server-failure.md 
+        - name: Set up server-side sync
+          items:
+          - name: Overview
+            href: set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks.md
+          - name: Supported email service configurations
+            href: supported-email-service-configurations-server-side-synchronization.md
+          - name: Connect to Exchange Online
+            href: connect-exchange-online.md
+          - name: Connect to Exchange Server (on-premises)
+            href: connect-exchange-server-on-premises.md
+          - name: Test connection to Exchange Server (on-premises)
+            href: test-connection-exchange-server-onpremises.md
+          - name: Connect to IMAP or SMTP servers
+            href: connect-to-imap-servers.md 
+          - name: Connect to Gmail
+            items:
+            - name: Connect using OAuth 2.0
+              href: connect-gmail-oauth2.md
+            - name: Connect to POP3 or SMTP servers
+              href: connect-to-pop3-or-smtp-servers.md
+        - name: Server-side sync configuration
+          items: 
+          - name: Best practices
+            href: best-practices-server-side-synchronization.md
+          - name: Personal options that affect synchronization
+            href: set-personal-options-affect-tracking-synchronization-between-dynamics-365-outlook-exchange.md
+          - name: Configure incoming and outgoing email synchronization
+            items: 
+            - name: Configure incoming and outgoing email synchronization
+              href: set-incoming-outgoing-email-synchronization.md
+            - name: Configure correlation settings for incoming email
+              href: email-message-filtering-correlation.md 
+            - name: Create queue items from incoming email
+              href: create-queue-items-from-synchronized-email-messages.md
+          - name: Configure appointment, contact, and task synchronization
+            items: 
+            - name: Configure appointment, contact, and task synchronization
+              href: choose-records-synchronize-dynamics-365-outlook-exchange.md
+            - name: Synchronized fields per entity
+              href: what-fields-synchronized-outlook.md
+            - name: View the fields that are synchronized with Outlook
+              href: view-fields-synchronized-dynamics-365-outlook.md
+            - name: Control field synchronization
+              href: control-field-synchronization-outlook.md 
+            - name: Field security best practices
+              href: how-field-security-affects-synchronization-between-outlook.md 
+            - name: "Frequently asked questions: record synchronization"
+              href: frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook.yml 
+          - name: Configure folder-level tracking
+            items:
+            - name: Configure folder-level tracking
+              href: configure-outlook-exchange-folder-level-tracking.md
+            - name: Best practices for folder-level tracking
+              href: track-outlook-email-by-moving-it-tracked-exchange-folder.md
+          - name: Configure Outlook category tracking
+            items: 
+            - name: Use Outlook category to track appointments and emails
+              href: use-outlook-category-track-appointments-emails.md 
+            - name: Configure forward mailboxes
+              href: create-forward-mailboxes-edit-mailboxes.md
+            - name: Forward mailbox differences
+              href: forward-mailbox-vs-individual-mailboxes.md 
+            - name: Send email on behalf of another user 
+              href: send-email-on-behalf.md
+        - name: Troubleshoot server-side synchronization
+          items:
+          - name: Troubleshoot server-side synchronization
+            href: troubleshooting-monitoring-server-side-synchronization.md
+          - name: Error logging in server-side synchronization
+            href: error-logging-server-side-synchronization.md   
+          - name: Monitor email processing errors
+            items:
+            - name: Monitor email processing errors
+              href: monitor-email-processing-errors.md 
+            - name: Email in "Pending Send" status?
+              href: why-email-message-sent-have-pending-send-status.md 
+          - name: Recover from Exchange Server failure
+            href: recover-from-exchange-server-failure.md 
+       # Leave this commented out as this topic should not appear in the TOC. For context-sensitive help link.
+       #   - name: When would I want to use this check box?
+       #     href: when-would-want-use-check-box.md
     - name: Extend with integration and solutions
       items:
       - name: Manage Bing Maps
@@ -758,7 +792,7 @@
       - name: Enable Power Automate integration
         href: enable-embedded-flow-in-your-organization.md 
       - name: "Preview feature: Live Assist powered by Café X"
-        href: https://docs.microsoft.com/dynamics365/customer-engagement/live-assist/live-assist-microsoft-dynamics-365-powered-by-cafe-x
+        href: /dynamics365/customer-engagement/live-assist/live-assist-microsoft-dynamics-365-powered-by-cafe-x
       - name: Use Power BI
         href: use-power-bi.md 
       - name: Install, update, or remove a preferred solution
@@ -772,7 +806,7 @@
         - name: Connect to SharePoint Online
           href: set-up-dynamics-365-online-to-use-sharepoint-online.md 
         - name: Set up Microsoft Teams integration
-          href: https://docs.microsoft.com/dynamics365/teams-integration/teams-install-app
+          href: /dynamics365/teams-integration/teams-install-app
         - name: Skype for Business and Skype integration
           href: skype-business-integration.md 
         - name: Set up Skype or Skype for Business
@@ -860,8 +894,6 @@
     items:
     - name: Environments 
       items:
-      - name: Edit environment properties
-        href: edit-properties-environment.md
       - name: Create an environment in Power Apps
         href: create-environment-powerapps.md
       - name: Working with environments and Power Apps
@@ -876,6 +908,8 @@
     href: about-flow-guide.md
   - name: Administer Power BI
     href: about-powerbi-guide.md
+  - name: Administer Power Virtual Agents
+    href: about-power-virtual-agents.md
   - name: Administer customer engagement apps in Dynamics 365    
     items:
     - name: Overview
@@ -890,7 +924,6 @@
       href: manage-product-catalog-configuration.md 
     - name: Rich text experience for appointment activities
       href: enable-rich-text-experience.md
-
   - name: "Reference: Videos and PowerPoint presentations"
     href: videos.md
   - name: Important changes (deprecations) coming
@@ -898,7 +931,6 @@
   - name: International availability
     href: ../availability.md
   - name: Adoption best practices
-    href: /power-platform/guidance/adoption/methodology
+    href: ../guidance/adoption/methodology.md
   - name: Center of Excellence (CoE) Kit
-    href: /power-platform/guidance/coe/starter-kit
-    
+    href: ../guidance/coe/starter-kit.md

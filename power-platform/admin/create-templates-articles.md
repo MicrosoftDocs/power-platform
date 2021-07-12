@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/17/2021
+ms.subservice: admin
 ms.author: shujoshi
 search.audienceType: 
   - admin
@@ -17,8 +18,6 @@ search.app:
   - Flow
 ---
 # Create templates for articles
-
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 <!-- legacy procedure -->
 
@@ -35,7 +34,7 @@ Article templates help you create new articles for your organization's knowledge
   
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
   
-2. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+2. In the web app, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
 
 3. Select **Settings** > **Service Management**.
 
@@ -68,7 +67,7 @@ Article templates help you create new articles for your organization's knowledge
      After you save the template, it is immediately available for use. If the template is not complete and you want to finish it later, you can save the template, deactivate it (make it ready-only), and then complete it later. When the template is complete, you can reactivate it.  
   
 > [!NOTE]
->  If you need to back up your templates, or export them for use in a different implementation, you can export them as part of exporting customizations. More information: [Export your customizations as a solution](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/customize/export-solution).  
+>  If you need to back up your templates, or export them for use in a different implementation, you can export them as part of exporting customizations. More information: [Export your customizations as a solution](/dynamics365/customerengagement/on-premises/customize/export-solution).  
   
 ### See also  
  [eBook: Use KB articles to help your customers](https://go.microsoft.com/fwlink/p/?LinkId=394983)

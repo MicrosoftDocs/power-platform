@@ -2,9 +2,9 @@
   href: fundamentals-what-is-power-virtual-agents.md
 - name: Licensing for Power Virtual Agents
   href: requirements-licensing-subscriptions.md
-- name: Standards compliance and certification
+- name: Power Virtual Agents compliance offerings
   href: admin-certification.md
-- name: Quotas and rate limit considerations
+- name: Quotas, limits, and configuration values
   href: requirements-quotas.md
 - name: Community help and support
   href: fundamentals-support.md
@@ -16,10 +16,14 @@
          href: fundamentals-what-is-power-virtual-agents-portal.md
        - name: Get started quickly with Power Virtual Agents
          href: fundamentals-get-started.md
+       - name: Use pre-built chatbot templates
+         href: fundamentals-templates.md
     - name: Administer and manage
       items:
        - name: Assign licenses
          href: requirements-licensing.md
+       - name: Power Virtual Agents for US Government customers
+         href: requirements-licensing-gcc.md
        - name: Sign up for a trial account
          href: sign-up-individual.md
        - name: Working with environments
@@ -70,15 +74,25 @@
          href: advanced-flow.md
        - name: Use Bot Framework Skills
          href: advanced-use-skills.md
-       - name: Extend your bot with Bot Framework Composer
-         href: advanced-bot-framework-composer.md
+       - name: Use Bot Framework Composer
+         items:
+          - name: Extend your bot with Bot Framework Composer
+            href: advanced-bot-framework-composer.md
+          - name: Example 1 - Show an Adaptive Card in Power Virtual Agents
+            href: advanced-bot-framework-composer-example1.md
+          - name: Example 2 - Display a multi-select options list in Power Virtual Agents
+            href: advanced-bot-framework-composer-example2.md
+          - name: Example 3 - Use Bing Search as a fallback in Power Virtual Agents
+            href: advanced-bot-framework-composer-example3.md
+          - name: Example 4 - Display a form with a Submit button in Power Virtual Agents
+            href: advanced-bot-framework-composer-example4.md
        - name: Trigger hand-off to a live agent
          href: advanced-hand-off.md
     - name: Publish and integrate
       items:
        - name: Key concepts - Publish your bot
          href: publication-fundamentals-publish-channels.md
-       - name: Configure the demo website and add the bot to your live website
+       - name: Add bot to your live website or Power Apps portal
          href: publication-connect-bot-to-web-channels.md
        - name: Add bot to Microsoft Teams
          href: publication-add-bot-to-microsoft-teams.md
@@ -100,6 +114,8 @@
          href: analytics-csat.md
        - name: Analyze session information
          href: analytics-sessions.md
+       - name: Work with conversation transcripts
+         href: analytics-sessions-transcripts.md
        - name: Analyze topic usage
          href: analytics-topic-details.md
        - name: Analyze billed session information

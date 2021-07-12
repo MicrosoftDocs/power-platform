@@ -3,6 +3,7 @@ title: "ALM for developers | Microsoft Docs"
 description: "Learn what ALM tools, APIs, and services are available to developers when creating and publishing solutions for Microsoft Dataverse."
 keywords: 
 author: mikkelsen2000
+ms.subservice: alm
 ms.author: pemikkel
 manager: kvivek
 ms.custom: ""
@@ -58,7 +59,7 @@ to avoid conflict.
 ### See also
 
 [Microsoft Power Platform Build Tools for Azure DevOps](devops-build-tools.md)  
-[Power Apps for developers](https://docs.microsoft.com/powerapps/#pivot=home&panel=developer)
+[Power Apps for developers](/powerapps/?panel=developer#pivot=home)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

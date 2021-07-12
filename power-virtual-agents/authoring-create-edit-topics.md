@@ -2,7 +2,7 @@
 title: "Use topics to design a chatbot conversation"
 description: "The authoring canvas provides an intuitive, no-code way of creating a bot that can help answer user questions, perform actions, and solve issues."
 keywords: "PVA"
-ms.date: 9/22/2020
+ms.date: 5/4/2021
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -36,8 +36,7 @@ For example, a user might type "Open hours" into your bot—the AI will be able 
 
 You can see how the bot conversation works in practice by testing it in the **Test bot** pane. This lets you fine-tune the topic until you are ready to deploy it without having to exit the Power Virtual Agents portal.
 
-> [!Note]
-> You can have up to 1,000 topics in a bot.
+For bot and topic limits, see the [Quotas, limits, and configuration values](requirements-quotas.md) topic.
 
 
 ## Prerequisites
@@ -49,7 +48,7 @@ You can see how the bot conversation works in practice by testing it in the **Te
 
 When you create a bot, a number of topics will be automatically created for you.
 
-:::image type="content" source="media/topics-system.png" alt-text="Four lesson topics and a number of system topics are in the Topics list":::
+:::image type="content" source="media/topics-system.png" alt-text="Four lesson topics and a number of system topics are in the Topics list.":::
 
 These are:
   
@@ -63,17 +62,17 @@ You can edit both of these topic types in the same manner as for topics you crea
 
 1. Go to the **Topics** tab on the side navigation pane to open the topics page.
 
-   ![Select Topics on the side navigation menu](media/topics-menu.png "Select Topics on the side navigation menu")
+   ![Select Topics on the side navigation menu.](media/topics-menu.png "Select Topics on the side navigation menu")
 
 1. On the topics page, select **New topic**.
 
-   ![Select New topic at the top of the Topics page](media/topics-new.png "Select New topic at the top of the Topics page")
+   ![Select New topic at the top of the Topics page.](media/topics-new.png "Select New topic at the top of the Topics page")
 
 1. Specify a name, description, and one or more trigger phrases for the topic.
 
    A trigger phrase is a phrase that a customer enters in the chat window to start a conversation with the bot. Once the conversation is started, the conversation follows the path you define. You can specify more than one trigger phrase for a topic. You can include punctuation in a trigger phrase, but it is best to use short phrases rather than long sentences.
 
-   ![The Topic details page contains a name, description, and trigger phrases](media/topics-details-triggers.png "The Topic details page contains a name, description, and trigger phrases")
+   ![The Topic details page contains a name, description, and trigger phrases.](media/topics-details-triggers.png "The Topic details page contains a name, description, and trigger phrases")
 
 1. Select **Save topic** to add the topic to the topics list.
 
@@ -109,7 +108,7 @@ When adding a node after the **Trigger Phrases** node, or between **Message node
 - **Call an action**
 - **Show a message**
 
-:::image type="content" source="media/topics-node-after-triggers.png" alt-text="Add nodes between existing nodes from the options":::
+:::image type="content" source="media/topics-node-after-triggers.png" alt-text="Add nodes between existing nodes from the options.":::
 
 After the last node, you can also:
 
@@ -123,7 +122,7 @@ Additionally, you can **Add a condition** when inserting a node after a **Questi
 
 1. To have the bot ask a question and get a response from the user, select **+** to add a node, and then **Ask a question** to add a new **Question** node.
 
-   ![Add a new question mode](media/topics-question.png "Add a new question mode")
+   ![Add a new question mode.](media/topics-question.png "Add a new question mode")
 
 1. Enter the question phrase in the first text box, **Ask a question**.
 
@@ -147,11 +146,11 @@ Additionally, you can **Add a condition** when inserting a node after a **Questi
 > You can define synonyms for each option. This can help the bot to determine the correct option in case it isn't clear what the user's response should be mapped to.
 > 1. Select the menu icon on the top of the **Question** node, and then select **Options for user**.
 >
->    ![Select options for users](media/topics-question-options.png "Select options for users")
+>    ![Select options for users.](media/topics-question-options.png "Select options for users")
 >
 > 1. Select the **Synonyms** icon for the option you want to add additional keywords to. 
 >
->    ![Select the synonyms icon](media/topics-question-synonyms.png "Select the synonyms icon")
+>    ![Select the synonyms icon.](media/topics-question-synonyms.png "Select the synonyms icon")
 >
 > 1. Add the keywords individually, and then once you're done, select **Done** to return to the **Authoring canvas**.
 
@@ -175,7 +174,7 @@ You can [call Power Automate Flows](advanced-flow.md) and [insert authentication
 
 1. In the flyout menu, select the topic the bot should divert to. For example, you might want to send the user to a specific topic about the closure of a store if they ask about store hours for that store.
 
-    :::image type="content" source="teams/media/topics-nodes-other-topic-flyout-teams.png" alt-text="Go to another topic node with options for other topics":::
+    :::image type="content" source="teams/media/topics-nodes-other-topic-flyout-teams.png" alt-text="Go to another topic node with options for other topics.":::
 
 #### End the conversation
 
@@ -185,15 +184,15 @@ You can also have the conversation [handed over to a live agent](advanced-hand-o
 
 1. At the end of a response that resolves the user's issue or answers the question, select **End the conversation**.
 
-    ![End the conversation](media/topics-nodes-end.png "End the conversation")
+    ![End the conversation.](media/topics-nodes-end.png "End the conversation")
 
 1. To end with a customer satisfaction survey, select **End with survey**.
     
-    ![End with survey](media/topics-nodes-survey.png "End with survey")
+    ![End with survey.](media/topics-nodes-survey.png "End with survey")
 
 1. Select **Transfer To Agent** to insert a hand-off node that will link with your [configured hand-off product](configuration-hand-off-omnichannel.md). You can also enter a private message to the agent.
 
-    ![Transfer To Agent](media/topics-nodes-handoff.png "Transfer To Agent")
+    ![Transfer To Agent.](media/topics-nodes-handoff.png "Transfer To Agent")
 
 
 #### Add a condition
@@ -202,7 +201,7 @@ You can also have the conversation [handed over to a live agent](advanced-hand-o
 
 1. Choose the variable you want to use to determine if the bot conversation should branch at this point. For example, if you have set up [end-user authentication](advanced-end-user-authentication.md), then you might want to specify a different message if the user is signed on (which may have happened earlier in the conversation).
 
-    ![Choose a variable](media/topics-branch.png "Choose a variable")
+    ![Choose a variable.](media/topics-branch.png "Choose a variable")
 
 ### Delete nodes
 
@@ -210,7 +209,7 @@ You can also have the conversation [handed over to a live agent](advanced-hand-o
 
 1. Select **Delete**.
 
-    ![Select the menu icon and then the delete button](media/topics-delete.png "Select the menu icon and then the delete button")
+    ![Select the menu icon and then the delete button.](media/topics-delete.png "Select the menu icon and then the delete button")
 
 ## Test and publish your bot
 

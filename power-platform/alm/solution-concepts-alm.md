@@ -3,6 +3,7 @@ title: "Solution concepts | Microsoft Docs"
 description: "Learn about solutions in Power Apps, Power Automate, and Power Virtual Agents"
 keywords: 
 author: Mattp123
+ms.subservice: alm
 ms.author: matp
 manager: kvivek
 ms.custom: ""
@@ -51,7 +52,7 @@ Makers and developers work in development environments using unmanaged
 solutions, then import them to other downstream environments&mdash;such as test&mdash;as
 managed solutions.
 
-![Distribute a solution from dev to test environments](media/dev-to-test-alm.png "Distribute a solution from dev to test environments")
+![Distribute a solution from dev to test environments.](media/dev-to-test-alm.png "Distribute a solution from dev to test environments")
 
 > [!NOTE]
 > When you customize in the development environment, you're working in
@@ -65,7 +66,7 @@ managed solutions.
 A component represents something that you can potentially customize. Anything that can be included in a solution is a component. To view the components included in a solution, open the solution you want. The components are listed in the **Components** list.
 
 > [!div class="mx-imgBorder"] 
-> ![Components in solution](media/components-in-solution.png "Components in solution") 
+> ![Components in solution.](media/components-in-solution.png "Components in solution") 
 
 > [!NOTE]
 > You can't edit components directly within a managed solution.
@@ -117,7 +118,7 @@ should create a solution publisher name that's meaningful.
 A solution publisher includes a prefix. The publisher prefix is a mechanism to help avoid naming collisions. This allows for solutions from different publishers to be installed in an environment with few conflicts. For example, the Contoso solution displayed here includes a solution publisher prefix of *contoso*.
 
 > [!div class="mx-imgBorder"]
-> ![Solution publisher prefix example](media/solution-publisher-prefix.png "Solution publisher prefix example")
+> ![Solution publisher prefix example.](media/solution-publisher-prefix.png "Solution publisher prefix example")
 
 > [!NOTE]
 > When you change a solution publisher prefix, you should do it before
@@ -139,7 +140,7 @@ A solution component represents something that you can potentially customize. An
 
 ### See also
 [Solution layers](solution-layers-alm.md) <br />
-[Create and manage environments in the Power Platform admin center](https://docs.microsoft.com/power-platform/admin/create-environment) <br />
+[Create and manage environments in the Power Platform admin center](../admin/create-environment.md) <br />
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

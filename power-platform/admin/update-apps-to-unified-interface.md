@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 10/09/2019
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -23,14 +24,14 @@ When you enable Unified Interface Only, all your apps, including those designed 
 "You are using apps designed for the legacy web client. For best results, update your apps to Unified Interface."
 
 > [!div class="mx-imgBorder"] 
-> ![Message: using apps for legacy web client](media/message-using-app-legacy-web-client.png "Message: using apps for legacy web client")
+> ![Message: using apps for legacy web client.](media/message-using-app-legacy-web-client.png "Message: using apps for legacy web client")
 
 A similar notification will be visible to System Administrators whenever they use an app designed for the legacy web client, as shown below:
 
 "This app is designed for the legacy web client and might have features or customizations that aren't supported in Unified Interface. For best results, update it to Unified Interface."
 
 > [!div class="mx-imgBorder"] 
-> ![Message: using apps designed for legacy web client](media/message-app-designed-legacy-web-client.png "Message: using apps designed for legacy web client")
+> ![Message: using apps designed for legacy web client.](media/message-app-designed-legacy-web-client.png "Message: using apps designed for legacy web client")
 
 > [!TIP]
 > For information on enabling Unified Interface only mode, see [Enable Unified Interface Only](enable-unified-interface-only.md).
@@ -39,8 +40,8 @@ The following are recommended ways to update to Unified Interface based on how t
 
 ## Apps created in your sandbox environment
 
-- Be sure to import the changes in your target environment via a managed solution only. See [Import, update, and export solutions](https://docs.microsoft.com/powerapps/maker/common-data-service/import-update-export-solutions) for guidance on installing an update to an existing managed solution.
-- Modify the app properties by following the steps detailed in [Manage app properties](https://docs.microsoft.com/powerapps/maker/model-driven-apps/manage-app-properties), and set the **Client** type to **Unified Interface**
+- Be sure to import the changes in your target environment via a managed solution only. See [Import, update, and export solutions](/powerapps/maker/common-data-service/import-update-export-solutions) for guidance on installing an update to an existing managed solution.
+- Modify the app properties by following the steps detailed in [Manage app properties](/powerapps/maker/model-driven-apps/manage-app-properties), and set the **Client** type to **Unified Interface**
 - Import the changes to your target environment via a managed solution update.
 
 ## Apps installed from AppSource
