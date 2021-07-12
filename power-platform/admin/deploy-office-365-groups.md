@@ -80,11 +80,11 @@ Once installation of the solution has completed, you can configure Microsoft 365
 ## Configure Microsoft 365 groups  
  Once you provision Microsoft 365 Groups, you can enable them for any entity. Security group membership is associated with the entity. You configure Microsoft 365 Groups in customer engagement apps.  
 
-1. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+1. In the web app, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
 
 2. Select **Settings** > **Office 365 Groups**.
 
-3. On the **Microsoft 365 Groups Integration Settings** page, select ![Add properties button](../admin/media/add-properties-button.png "Add properties button")**Add entity** and choose an entity from the drop-down list. Repeat this step for each entity you want to enable, including custom entities.  
+3. On the **Microsoft 365 Groups Integration Settings** page, select ![Add properties button.](../admin/media/add-properties-button.png "Add properties button")**Add entity** and choose an entity from the drop-down list. Repeat this step for each entity you want to enable, including custom entities.  
   
 4. Optionally, you can select **Auto-create** for an entity to have a new group automatically created when a new record for that entity is created. However, we recommend you choose this option only for entities that typically require large groups to collaborate.  
   
@@ -107,7 +107,7 @@ You're now ready to use Microsoft 365 Groups. See [Collaborate with your colleag
 3. Select **Connect your apps**.  
   
    > [!div class="mx-imgBorder"] 
-   > ![Select Microsoft 365 groups Connectors](media/office-365-groups-connectors.png "Select Microsoft 365 groups Connectors")
+   > ![Select Microsoft 365 groups Connectors.](media/office-365-groups-connectors.png "Select Microsoft 365 groups Connectors")
   
 4. Scroll down to **Dynamics 365**, and then select **Add**.  
   
@@ -115,15 +115,15 @@ You're now ready to use Microsoft 365 Groups. See [Collaborate with your colleag
   
 6. Choose the record you want to connect this Microsoft 365 Group to, and then select **Save**.  
   
-   ![Add Microsoft 365 groups records to connect](../admin/media/add-office-365-groups-records-to-connect.png "Add Microsoft 365 groups records to connect")  
+   ![Add Microsoft 365 groups records to connect.](../admin/media/add-office-365-groups-records-to-connect.png "Add Microsoft 365 groups records to connect")  
   
    Once connected, the connector shows up at the top of the connection list with a summary of connected records.  
   
-   ![Microsoft 365 groups records in connector](../admin/media/office-365-groups-records-in-connector.png "Microsoft 365 groups records in connector")  
+   ![Microsoft 365 groups records in connector.](../admin/media/office-365-groups-records-in-connector.png "Microsoft 365 groups records in connector")  
   
    To delete a connected record, select **View**, and then select **Remove**.  
   
-   ![Delete Microsoft 365 groups records from connect](../admin/media/delete-office-365-groups-records-from-connect.png "Delete Microsoft 365 groups records from connect")  
+   ![Delete Microsoft 365 groups records from connect.](../admin/media/delete-office-365-groups-records-from-connect.png "Delete Microsoft 365 groups records from connect")  
   
 > [!NOTE]
 >  Note the following about the Microsoft 365 Connectors for Groups:  

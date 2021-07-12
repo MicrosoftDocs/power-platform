@@ -40,7 +40,7 @@ search.app:
   
 2. In the upper-right corner of the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] admin center menu bar, click your organization.  
   
-   ![Choose your organization](media/data-center-choose-organization.png "Choose your organization")  
+   ![Choose your organization.](media/data-center-choose-organization.png "Choose your organization")  
   
 3. On the **Company profile** page, your account country/region is listed under **Country or region**.  
   
@@ -81,7 +81,7 @@ search.app:
 ### How do I request my environment to be moved to Canada?  
  You can request a move to the new Canada datacenter by submitting a technical support request through the [!INCLUDE[pn_dyn_365_admin_center](../includes/pn-dyn-365-admin-center.md)] or by calling [!INCLUDE[pn_Microsoft_Support](../includes/pn-microsoft-support.md)]. Please select the Data Management topic and Data Center Migration Request sub-topic to ensure your request receives the best possible routing.  A support engineer will assist you in verifying required prerequisites and provide guidance throughout the move process.  
   
- ![Migration Process](media/migration-process.png "Migration Process")  
+ ![Migration Process.](media/migration-process.png "Migration Process")  
   
  *Customers will be required to go through more steps depending on the type of transition.  
   

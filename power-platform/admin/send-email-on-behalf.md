@@ -25,10 +25,10 @@ Dynamics 365 users can send an outgoing email on behalf of another user by updat
 
 - An admin should verify that the user has a role in Dynamics 365 that includes the Send Email as Another User privilege (**Settings** > **Advanced settings** > **Settings** > **Security** > **Security Roles** > select a role > **Business Management** tab > **Miscellaneous Privileges**).
   > [!div class="mx-imgBorder"] 
-  > ![Send Email as Another User](media/send-email-another-user.png "Send Email as Another User")
+  > ![Send Email as Another User.](media/send-email-another-user.png "Send Email as Another User")
 -	The other user being set as the sender on the email needs to select the **Allow other Microsoft Dynamics CRM users to send e-mail on your behalf** check box in their personal options (**Settings** > **Personalization Settings** > **Email** tab).
   > [!div class="mx-imgBorder"] 
-  > ![Allow another to send email on your behalf](media/allow-others-send-email-your-behalf.png "Allow another to send email on your behalf")
+  > ![Allow another to send email on your behalf.](media/allow-others-send-email-your-behalf.png "Allow another to send email on your behalf")
 -	The user sending the email needs to have read access to the queue. Note that this requirement only applies to the Send on Behalf permission for the queue. 
 
 ## Optional: Send outgoing email as another user with Exchange mailbox delegation

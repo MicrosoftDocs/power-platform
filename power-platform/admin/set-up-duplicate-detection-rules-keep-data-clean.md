@@ -73,7 +73,7 @@ To maintain the integrity of your data, it's a good idea to have rules in place 
   
     The number of criteria that you can select is limited by the number of characters that can be stored in the matchcode for the record. As you add criteria, watch the **Current matchcode length** value shown at the bottom of the criteria list.  
   
-   ![Example duplicate detection rule](../admin/media/cc-duplicate-detection-rule-cc-duplicate-detection-rule.PNG "Example duplicate detection rule")  
+   ![Example duplicate detection rule.](../admin/media/cc-duplicate-detection-rule-cc-duplicate-detection-rule.PNG "Example duplicate detection rule")  
   
 6. When you're finished adding criteria, choose **Save and Close**.  
   

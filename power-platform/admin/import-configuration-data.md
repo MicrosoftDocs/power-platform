@@ -39,7 +39,7 @@ Download the Configuration Migration Tool. The Configuration Migration tool is a
   
 6. **This step is applicable only if the data that you are importing contains the user information of the source system**. Enter mapping user information on the target system. You can either map all of them to the user who is running the import process or map to individual users by using a user map file (.xml). If you choose the latter, you will have to either specify an existing user map file or the tool can generate it for you. If you generate a new file, fill in the mapping user name in the **New** parameter for every user on the source server. Select the user map file in the tool when you are done, and click **OK**.  
   
-   ![Import file users to Mapper](../admin/media/config-migration-import-data-1.PNG "Import file users to Mapper")  
+   ![Import file users to Mapper.](../admin/media/config-migration-import-data-1.PNG "Import file users to Mapper")  
   
      The next screen displays the import status of your records. The data import is done in multiple passes to first import the foundation data while queuing up the dependent data, and then import the dependent data in the subsequent passes to handle any data dependencies or linkages. This ensures clean and consistent data import.  
   

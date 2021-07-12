@@ -31,7 +31,7 @@ With some custom development, you can configure your bot to hand off conversatio
 
 ## Overview
 
-  ![ILLUSTRATION SHOWING GENERIC ADAPTER DATAFLOW](media/generic-adapter-illustration.png "ILLUSTRATION SHOWING GENERIC ADAPTER DATAFLOW")
+  ![ILLUSTRATION SHOWING GENERIC ADAPTER DATAFLOW.](media/generic-adapter-illustration.png "ILLUSTRATION SHOWING GENERIC ADAPTER DATAFLOW")
 
 A full hand-off to an engagement hub follows this pattern:
 

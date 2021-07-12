@@ -115,8 +115,8 @@ Install the updates by importing the latest version to the environment where you
 > [!NOTE]
 > If you have made any changes to the flows / apps in the solution they will not receive updates until you remove that unmanaged layer. <br>
 > For every flow/app that you changed, go to the solution layers and remove it.
-> ![Upgrade 1](media/Upgrade1.png "Upgrade 1")
-> ![Upgrade 2](media/Upgrade2.png "Upgrade 2")
+> ![Upgrade 1.](media/Upgrade1.png "Upgrade 1")
+> ![Upgrade 2.](media/Upgrade2.png "Upgrade 2")
 
 ## It looks like I found a bug with the app; where should I go?
 

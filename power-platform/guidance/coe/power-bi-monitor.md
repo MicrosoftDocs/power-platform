@@ -40,13 +40,13 @@ The visualizations highlight environments and makers that have the most resource
 
 :::row:::
    :::column span="":::
-      ![Overview Power Apps](media/pb-2.png "Overview Power Apps")
+      ![Overview Power Apps.](media/pb-2.png "Overview Power Apps")
    :::column-end:::
    :::column span="":::
-      ![Overview Power Automate](media/pb-3.png "Overview Power Automate")
+      ![Overview Power Automate.](media/pb-3.png "Overview Power Automate")
    :::column-end:::
    :::column span="":::
-      ![Overview Chatbots](media/pb-4.png "Overview Chatbots")
+      ![Overview Chatbots.](media/pb-4.png "Overview Chatbots")
    :::column-end:::
 :::row-end:::
 
@@ -66,7 +66,7 @@ The graphs visualize:
 
 The filters allow you to drill down and analyze specific environment types, maker trends, and changes over time through a filter on the **Environment Created** date.
 
-![Environments overview](media/pb-5.png "Environments overview")
+![Environments overview.](media/pb-5.png "Environments overview")
 
 ## Microsoft Teams Environments
 
@@ -104,7 +104,7 @@ The table of apps shows:
 
 The filters allow you to filter by Owner as well as Created date.
 
-![Microsoft Teams Environments overview](media/pb-6.png "Microsoft Teams Environments overview")
+![Microsoft Teams Environments overview.](media/pb-6.png "Microsoft Teams Environments overview")
 
 ## Apps
 
@@ -124,7 +124,7 @@ On the graphs, you can see your app creation trend, your top active departments,
 
 Filters on this page can help you narrow down this view by app owner, app display name, environment, maker department, or connector used.
 
-![Apps overview](media/pb-7.png "Apps overview")
+![Apps overview.](media/pb-7.png "Apps overview")
 
 The hamburger menu on this page helps you navigate to other reports relevant to Power Apps.
 
@@ -134,7 +134,7 @@ The **SharePoint integration** page provides an overview of apps created to cust
 
 Navigate directly to the SharePoint site and view how many connectors are being used in a customized form.
 
-![SharePoint integration](media/pb-23.png "SharePoint integration")
+![SharePoint integration.](media/pb-23.png "SharePoint integration")
 
 ## Flows
 
@@ -152,7 +152,7 @@ Through visuals, you can see your flow creation trend, your top active departmen
 
 Filters on this page can help you narrow down this view by flow owner, flow display name, environment, maker department, or connector used.
 
-![Flow overview](media/pb-9.png "Flow overview")
+![Flow overview.](media/pb-9.png "Flow overview")
 
 ## Custom Connectors
 
@@ -162,7 +162,7 @@ Next to the total number of custom connectors and number of test connectors (tho
 
 Filters help you narrow down the view by connector creator, environment, or created date.
 
-![Custom Connector overview](media/pb-14.png "Custom Connector overview")
+![Custom Connector overview.](media/pb-14.png "Custom Connector overview")
 
 ## App Connections
 
@@ -176,7 +176,7 @@ The filters on this page are:
 
 The visuals then show you a list of all apps and makers using the tier or connector specified, in addition to the number of connections for the filters specified.
 
-![Connections](media/pb-11.png "Connections")
+![Connections.](media/pb-11.png "Connections")
 
 ## Virtual Agents
 
@@ -194,7 +194,7 @@ Through visuals, you can see your bot creation trend, your top active department
 
 Filters on this page can help you narrow down this view by environment and by maker.
 
-![Power Virtual Agents](media/pb-13.png "Power Virtual Agents")
+![Power Virtual Agents.](media/pb-13.png "Power Virtual Agents")
 
 ## Desktop flows
 
@@ -210,7 +210,7 @@ Through visuals, you can see your flow creation trend, your top active departmen
 
 Filters on this page can help you narrow down this view by flow owner, flow display name, environment, maker department, or desktop flow type.
 
-![Desktop flow overview](media/pb-12.png "Desktop flow overview")
+![Desktop flow overview.](media/pb-12.png "Desktop flow overview")
 
 ### Desktop flows usage
 
@@ -222,7 +222,7 @@ The **desktop flow usage** page provides an overview of UI=based RPA flow runs i
 
 Filters on this page can help you narrow down this view by desktop flow type, run status, maker, and environment.
 
-![Desktop flow usage](media/pb-17.png "Desktop flow usage")
+![Desktop flow usage.](media/pb-17.png "Desktop flow usage")
 
 ### Desktop flows errors
 
@@ -234,7 +234,7 @@ The **desktop flow errors** page provides an overview of UI-based RPA flow runs 
 
 Filters on this page can help you narrow down this view by desktop flow type, run status, maker, and environment.
 
-![Desktop flow errors](media/pb-18.png "Desktop flow errors")
+![Desktop flow errors.](media/pb-18.png "Desktop flow errors")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -70,7 +70,7 @@ The following table shows the fields that are managed in the **Users** section o
 
 The following image shows Microsoft 365 user contact fields.
 
-![Job title, Department, Office, Office phone, Mobile phone, Fax number, Street address, City, State or province, ZIP or postal code, Country or region](media/office-365-contact-info.png "Job title, Department, Office, Office phone, Mobile phone, Fax number, Street address, City, State or province, ZIP or postal code, Country or region")
+![Job title, Department, Office, Office phone, Mobile phone, Fax number, Street address, City, State or province, ZIP or postal code, Country or region.](media/office-365-contact-info.png "Job title, Department, Office, Office phone, Mobile phone, Fax number, Street address, City, State or province, ZIP or postal code, Country or region")
 
 ## Add a license to a user account  
 You can license the user when you create the user account, or you can license the user later. You must assign a license to every user account that you want to access the online service. 
@@ -121,11 +121,11 @@ Follow these steps to assign a security role.
 
 5. On the **Users** page select a user, and then select **Manage security roles**.
 
-   :::image type="content" source="media/manage-security-roles.png" alt-text="Manage security roles":::
+   :::image type="content" source="media/manage-security-roles.png" alt-text="Manage security roles.":::
 
 6. Select or deselect security roles. If the user has roles already assigned. When finished, select **Save**.  After saving, all selected roles become the current assigned roles for the user.  Unselected roles will not be assigned. 
 
-   :::image type="content" source="media/manage-security-roles-page.png" alt-text="Manage security roles page":::
+   :::image type="content" source="media/manage-security-roles-page.png" alt-text="Manage security roles page.":::
 
 > [!IMPORTANT] 
 > You must assign at least one security role to every user either directly or indirectly as a member of a [group team](manage-group-teams.md). The service doesn't allow access to users who don't have at least one security role.

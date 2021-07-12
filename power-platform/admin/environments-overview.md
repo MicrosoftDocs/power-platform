@@ -39,7 +39,7 @@ When you create an app in an environment, that app is only permitted to connect 
 
 You can also move resources between environments. More information: [Migrate resources](/powerapps/maker/data-platform/export-solutions)
 
-![The Contoso Corporation tenant encompasses three environments, each of which has its own apps, flows, and Dataverse database](./media/environments-overview/Environments.png "The Contoso Corporation tenant encompasses three environments, each of which has its own apps, flows, and Dataverse database")
+![The Contoso Corporation tenant encompasses three environments, each of which has its own apps, flows, and Dataverse database.](./media/environments-overview/Environments.png "The Contoso Corporation tenant encompasses three environments, each of which has its own apps, flows, and Dataverse database")
 
 ## Environment permissions
 Environments have two built-in roles that provide access to permissions within an environment:
@@ -127,7 +127,7 @@ You can create environments for different purposes. A trial environment is for t
 You can view and manage your environments on the **Environments** page. 
 
 > [!div class="mx-imgBorder"] 
-> ![Environment list](media/environment-list.png "Environment list")
+> ![Environment list.](media/environment-list.png "Environment list")
 
 You can sort and search the list of environments; this is useful if you have a large number of environments to manage.
 
@@ -136,12 +136,12 @@ You can sort and search the list of environments; this is useful if you have a l
 You can see some the details of your environments by selecting an environment. Select **See all** to see more environment details.
 
 > [!div class="mx-imgBorder"] 
-> ![Environment details](media/environment-details-see-all.png "Environment details")
+> ![Environment details.](media/environment-details-see-all.png "Environment details")
 
 Select **Edit** to review and edit environment details.
 
 > [!div class="mx-imgBorder"] 
-> ![More environment details](media/environment-details-more.png "More environment details")
+> ![More environment details.](media/environment-details-more.png "More environment details")
 
 ### See also
 [Microsoft Learn: Create and manage environments in Dataverse](/learn/modules/create-manage-environments/)<br />

@@ -44,7 +44,7 @@ If you'd prefer to use an Azure Active Directory (Azure AD) security group inste
 
 1. Set the **Group ID** to the _office365GroupID_ variable from dynamic content.
 
-    ![Get group members](media/coe74.png "Get group members")
+    ![Get group members.](media/coe74.png "Get group members")
 
 1. Select the **condition**, and then on the string expression, update **List_group_members** to **Get_group_members** in the body of the expression.
 
@@ -54,7 +54,7 @@ If you'd prefer to use an Azure Active Directory (Azure AD) security group inste
 
 1. Set the **Group ID** to the *office365GroupID* variable and the **User Id** to the *Maker* variable from dynamic content.
 
-    ![Add user to group action](media/coe75.png "Add user to group action")
+    ![Add user to group action.](media/coe75.png "Add user to group action")
 
 1. Select **Save**.
 
@@ -72,11 +72,11 @@ Open Template Catalog (canvas app), and edit the SharePoint connection to point 
 
 1. On the left pane, select the **Data** icon, and remove the reference to the SharePoint document library.
 
-    ![Template Catalog setup - modify SharePoint connection](media/coe76.png "Template Catalog setup - modify SharePoint connection")
+    ![Template Catalog setup - modify SharePoint connection.](media/coe76.png "Template Catalog setup - modify SharePoint connection")
 
 1. In the search bar under **Data sources**, enter **SharePoint**, select the SharePoint data source, and then select **Add a connection**.
 
-    ![Template Catalog setup - add a SharePoint connection](media/coe77.png "Template Catalog setup - add a SharePoint connection")
+    ![Template Catalog setup - add a SharePoint connection.](media/coe77.png "Template Catalog setup - add a SharePoint connection")
 
 1. Choose to connect directly, enter the URL of the library, and then select **Connect**.
 
@@ -87,7 +87,7 @@ Open Template Catalog (canvas app), and edit the SharePoint connection to point 
 
 Your template catalog is now ready.
 
-![Template catalog](media/coe78.png "Template catalog")
+![Template catalog.](media/coe78.png "Template catalog")
 
 <!--- Commenting this out until version 3.20041.19 is live so that these msapp files will work in production
 ### Controls provided in the Template Catalog app
@@ -112,10 +112,10 @@ Table(
 ```
 :::row:::
    :::column span="":::
-      ![Header with navigation control component](media/coe79.png "Header with navigation control component")
+      ![Header with navigation control component.](media/coe79.png "Header with navigation control component")
    :::column-end:::
    :::column span="":::
-      ![Dual range slider component](media/coe80.jpg "Dual range slider component")
+      ![Dual range slider component.](media/coe80.jpg "Dual range slider component")
    :::column-end:::
 :::row-end:::
 --->

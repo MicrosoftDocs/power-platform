@@ -87,14 +87,14 @@ The Dataverse connector might experience some throttling limits if the tenant ha
   1. Expand the step **Apply to each Environment**
   1. Go to the **Settings** pane for each call to Dataverse, and configure the timeout/retry settings. The default count is set to **10** and the default interval is set to **PT10S** - increase the values incrementally here.
 
-     ![Configure retry policy](media/coe72.PNG "Configure the retry policy")
+     ![Configure retry policy.](media/coe72.PNG "Configure the retry policy")
 
 - **Configure (reduce) concurrency in Foreach loops to reduce simultaneous calls**
   1. Open **Admin \| Sync Template v3**, and then select **Edit**.
   1. Expand the step **Get Environments and store them in the CoE Table**.
   1. Go to **Settings** for the **Apply to each Environment** step.
 
-     ![Configure concurrency in Foreach](media/coe73.PNG "Configure concurrency in Foreach")
+     ![Configure concurrency in Foreach.](media/coe73.PNG "Configure concurrency in Foreach")
 
   1. Use the slider to reduce the value of **Degree of Parallelism**. The default value is 50; reducing the parallelism here will increase the runtime of the flow, so we suggest gradually lowering the number.
 

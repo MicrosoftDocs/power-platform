@@ -61,7 +61,7 @@ Make sure you have the System Administrator or System Customizer security role o
 3. In the **Privacy statement URL** box, type the link of the webpage you want to show.  
   
    > [!div class="mx-imgBorder"] 
-   > ![Replace privacy statement for the organization](media/privacy-preference-statement75.png "Replace privacy statement for the organization")
+   > ![Replace privacy statement for the organization.](media/privacy-preference-statement75.png "Replace privacy statement for the organization")
   
 4. Select **Save**.  
   
@@ -79,7 +79,7 @@ Make sure you have the System Administrator or System Customizer security role o
 2. Under **Privacy Preferences**, **Default action to take when an error occurs**, select an action to take. 
   
    > [!div class="mx-imgBorder"] 
-   > ![Select error notification preferences for users](media/privacy-preference-error-notifications75.png "Select error notification preferences for users")
+   > ![Select error notification preferences for users.](media/privacy-preference-error-notifications75.png "Select error notification preferences for users")
  
 3. Select **Save**. 
 

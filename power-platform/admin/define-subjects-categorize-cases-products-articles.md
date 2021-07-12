@@ -34,12 +34,12 @@ The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service,
    - Select a subject from the tree and select **Edit subject** to edit a subject
    - Select a subject from the tree and select **Remove subject** to delete a subject
 
-   ![Quick create](media/subjects-csh.png)
+   ![Quick create.](media/subjects-csh.png)
 
 
 ## Create or edit a subject  (Customer Service app) 
 
-1. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+1. In the web app, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
   
 2. Select **Subjects**. 
   

@@ -44,12 +44,12 @@ Use the following steps to run user access diagnostics on a user in a Dataverse 
 4. Select **Run diagnostics**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Select Run diagnostics](media/teams-environment-user-list.png "Select Run diagnostics") 
+   > ![Select Run diagnostics.](media/teams-environment-user-list.png "Select Run diagnostics") 
 
 5. Review the details for the user, and take any needed corrective actions.
 
    > [!div class="mx-imgBorder"] 
-   > ![Run diagnostics results](media/run-diagnostics-results.png "Run diagnostics results")
+   > ![Run diagnostics results.](media/run-diagnostics-results.png "Run diagnostics results")
 
 > [!NOTE]
 > The action of running or rerunning diagnostics will force the user information in Azure AD to synchronize to the environment's Dataverse database to provide up-to-date status on the user's properties. If the diagnostic run doesn't eliminate the root cause of a user access issue, please provide the results of the diagnostic run in the support ticket you create; this will greatly help Microsoft Support engineers to resolve your issue faster.
@@ -108,7 +108,7 @@ You don't have sufficient permissions to access customer engagement apps (Dynami
   
 3. Open the user record.  
   
-4. Select **More Commands** (![More commands button](../admin/media/not-available.png "More commands button")) > **Manage Roles**.  
+4. Select **More Commands** (![More commands button.](../admin/media/not-available.png "More commands button")) > **Manage Roles**.  
   
 5. Make note of the role assigned to the user. If appropriate, select a different security role. Close the Manage User Roles dialog box.  
   
@@ -122,7 +122,7 @@ You don't have sufficient permissions to access customer engagement apps (Dynami
   
      If the security role is missing this permission, the system administrator will need to change this setting by clicking or tapping on it.  
   
-   ![User Entity UI settings](../admin/media/user-entity.png "User Entity UI settings")  
+   ![User Entity UI settings.](../admin/media/user-entity.png "User Entity UI settings")  
    
 ### User is missing from environment despite meeting all requirements 
 

@@ -31,7 +31,7 @@ We're rolling out these features now so check back if your user experience varie
 
 In April 2019, we introduced Microsoft Dataverse capacity storage that's optimized for relational data (database), attachments (file), and audit logs (log). New customers of Power Apps, Power Automate, and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation) receive a tenant-wide default entitlement for each of these three storage types and additional per user subscription license entitlements. Additional storage can be purchased in 1-GB increments. Existing customers won't be affected by this change until the end of their current Power Apps or Dynamics 365 subscription, when renewal is required.
 
-![Evolution of data management](media/storage-model-evolution.png "Evolution of data management")
+![Evolution of data management.](media/storage-model-evolution.png "Evolution of data management")
 
 Some of the benefits of this change include:
 
@@ -71,7 +71,7 @@ Please review:
 If your database storage is over capacity, admins will be unable to do a copy or restore any of their environments. 
 
 > [!div class="mx-imgBorder"] 
-> ![Capacity overage](media/capacity-overage.png "Overage")
+> ![Capacity overage.](media/capacity-overage.png "Overage")
    
 
 You can request a temporary (30-day) extension that allows copy and restore operations for the duration of the extension. To do so, follow these steps.
@@ -85,7 +85,7 @@ You can request a temporary (30-day) extension that allows copy and restore oper
 5. The **Copy environment** page appears where you can select **Request an extension**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Request extension](media/capacity-request-extension.png "Request extension")
+   > ![Request extension.](media/capacity-request-extension.png "Request extension")
 
 #### Extension request for Restore
 

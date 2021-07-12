@@ -31,11 +31,11 @@ To help you find and fix unexpected behavior, you can enable tracking between to
 
 1. If the **Test bot** pane is hidden, open it by selecting **Test your bot**.
 
-   ![The Test your bot button is at the bottom of the side navigation pane](media/test-bot-menu.png)
+   ![The Test your bot button is at the bottom of the side navigation pane.](media/test-bot-menu.png)
 
 1. It's a good idea to select **Reset** at the top of the **Test bot** pane to clear previous conversations. Clearing previous conversations makes it easier to see the flow of the topic you want to see without getting confused by previous conversations.
 
-   ![Click Reset at the top of the Test bot pane to clear conversation history](media/test-bot-reset.png)
+   ![Click Reset at the top of the Test bot pane to clear conversation history.](media/test-bot-reset.png)
 
 1. At the **Type your message** prompt at the bottom of the **Test bot** pane, enter a trigger phrase for the topic.
 
@@ -45,7 +45,7 @@ To help you find and fix unexpected behavior, you can enable tracking between to
 
 1. Select a response in the **Test bot** pane, which will take you to the response in the conversation editor for that topic. The authoring canvas displays highlighted nodes in green.
 
-  ![Select any response in the conversation to see the authoring canvas highlighted to that response](media/test-bot-response.png)
+  ![Select any response in the conversation to see the authoring canvas highlighted to that response.](media/test-bot-response.png)
 
 You can return to the authoring canvas for the topic  at any time to revise it's conversation path. The **Test chat** pane will automatically refresh itself when you save changes to a topic.
 
@@ -58,7 +58,7 @@ As you fine-tune your bot, it can be useful to enable tracking between topics so
 
 1. At the top of the **Test bot** pane, set **Track between topics** to **On**.
 
-   ![Switch the track bettern topics toggle at the top of th test bot pan](media/test-bot-track.png)
+   ![Switch the track bettern topics toggle at the top of th test bot pan.](media/test-bot-track.png)
 
 1. Enter a trigger phrase for the topic you want to check, and then continue testing the conversation.
 

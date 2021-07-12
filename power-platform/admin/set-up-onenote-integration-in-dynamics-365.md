@@ -37,7 +37,7 @@ Gather your thoughts, ideas, plans and research in one single place with [!INCLU
   
 - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
   
-  ![Enable SharePoint Integration](../admin/media/enable-sharepoint-integration.png "Enable SharePoint Integration")  
+  ![Enable SharePoint Integration.](../admin/media/enable-sharepoint-integration.png "Enable SharePoint Integration")  
   
 <a name="BKMK_EnableOneNote"></a>   
 ## Step 2: Turn on OneNote integration  
@@ -50,15 +50,15 @@ Gather your thoughts, ideas, plans and research in one single place with [!INCLU
   
 3. Select **OneNote Integration**.  
   
-   ![Choose OneNote Integration](../admin/media/onenote-integration.png "Select OneNote Integration")  
+   ![Choose OneNote Integration.](../admin/media/onenote-integration.png "Select OneNote Integration")  
   
 4. Follow the instructions in the wizard to turn on [!INCLUDE[pn_onenote](../includes/pn-onenote.md)] integration for selected entities. Choose entities that need a full notebook per record. Only entities that are already enabled for document management are listed. Select **Finish**.  
   
-   ![Follow instructions in wizard](../admin/media/onenote-integration-wizard.png "Follow instructions in the wizard")  
+   ![Follow instructions in wizard.](../admin/media/onenote-integration-wizard.png "Follow instructions in the wizard")  
   
 5. You can also enable [!INCLUDE[pn_onenote](../includes/pn-onenote.md)] integration for an entity from the customization form, as long as document management has been enabled for that entity.  
   
-   ![Select OneNote integration for an entity](../admin/media/onenote-select-entity.png "Select OneNote integration for an entity")  
+   ![Select OneNote integration for an entity.](../admin/media/onenote-select-entity.png "Select OneNote integration for an entity")  
   
 6. A [!INCLUDE[pn_onenote](../includes/pn-onenote.md)] notebook is automatically created for a record the first time you select the **OneNote** tab in the activities area in model-driven and customer engagement apps. After the dedicated [!INCLUDE[pn_onenote](../includes/pn-onenote.md)] notebook is created for that record, you can view and navigate to that notebook from any Dynamics 365 apps client.  
   
@@ -72,7 +72,7 @@ Gather your thoughts, ideas, plans and research in one single place with [!INCLU
   
 3. Select **OneNote Integration**.  
   
-   ![Choose OneNote Integration](../admin/media/onenote-integration.png "Select OneNote Integration")  
+   ![Choose OneNote Integration.](../admin/media/onenote-integration.png "Select OneNote Integration")  
   
 4. In the **OneNote Integration Setting** dialog box, clear the check boxes for all entities, and then select **Finish**.  
 
@@ -125,7 +125,7 @@ Imagine the following events:
 1. User A opens the note in the timeline on a form. For example, **Sales** > **Contacts** > *contact* > **Summary** > **Timeline** section > **+** > **OneNote**.
 
 When this occurs, user A sees the error message "Folder *contact* has been renamed or deleted from SharePoint. It was expected inside *SharePoint folder* path."
-:::image type="content" source="media/one-note-error.png" alt-text="Error message due to renamed OneNote file in document grid":::
+:::image type="content" source="media/one-note-error.png" alt-text="Error message due to renamed OneNote file in document grid.":::
 
 <!-- ## Error message: File cannot be found
 I get this error message: 

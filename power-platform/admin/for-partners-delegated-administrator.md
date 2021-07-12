@@ -29,21 +29,21 @@ The Delegated Admin user won't appear in standard provided views. You must creat
   
 To create a simple custom view to see the delegated admin user:  
   
-1. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+1. In the web app, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
 
 2. Select **Settings** > **Security** > **Users**.
   
-3. Choose **Select a view** (![Drop-down button](../admin/media/dropdown-button.png "Drop-down button")) and then choose **Create Personal View**.  
+3. Choose **Select a view** (![Drop-down button.](../admin/media/dropdown-button.png "Drop-down button")) and then choose **Create Personal View**.  
   
 4. Verify **Users** is selected in **Look for**.  
   
 5. Choose **User** > **Contains Data**, and then choose **Results**.  
   
-   ![Create a custom user view](../admin/media/user-custom-view.png "Create a custom user view")  
+   ![Create a custom user view.](../admin/media/user-custom-view.png "Create a custom user view")  
   
    Delegated Admin will appear in the list of users.  
   
-   ![Delegated admin appears in user list](../admin/media/delegated-admin-user.png "Delegated admin appears in user list")  
+   ![Delegated admin appears in user list.](../admin/media/delegated-admin-user.png "Delegated admin appears in user list")  
   
 ## How to get authorized as a delegated admin  
  Partners can be authorized to be delegated admins for a company in several ways:  

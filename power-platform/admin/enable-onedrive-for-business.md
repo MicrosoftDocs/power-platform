@@ -59,7 +59,7 @@ This feature was introduced in [!INCLUDE[pn_crm_online_2016_update_shortest](../
   
 4. Under **Miscellaneous Privileges**, toggle the **OneDrive for Business** privilege to the desired availability.  
   
-   ![Toggle availability of OneDrive for Business](../admin/media/crm-itpro-onedriveforbusn-priv.png "Toggle availability of OneDrive for Business")  
+   ![Toggle availability of OneDrive for Business.](../admin/media/crm-itpro-onedriveforbusn-priv.png "Toggle availability of OneDrive for Business")  
   
 ### See also  
  [Enable OneDrive for Business (on-premises)](connect-onedrive-business.md)   
