@@ -39,7 +39,7 @@ Follow these steps to delete a bot:
 1. Open Power Virtual Agents in your browser.
 2. On the **Settings** menu, select **General settings** to display the **General** tab of the **Settings** screen.
 
-   ![General settings](media/general-settings.png)
+   ![General settings.](media/general-settings.png)
 
 3. In the **Delete bot** section, select **Delete bot**.
 

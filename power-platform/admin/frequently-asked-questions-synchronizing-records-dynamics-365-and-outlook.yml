@@ -2,6 +2,7 @@
 metadata:
   title: "Frequently asked questions about synchronizing records between customer engagement apps and Outlook  | MicrosoftDocs"
   description: Frequently asked questions about synchronizing records between customer engagement apps and Outlook 
+  ms.subservice: admin
   author: mduelae
   ms.service: power-platform
   ms.component: pa-admin

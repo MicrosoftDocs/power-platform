@@ -6,6 +6,7 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/12/2021
 author: revachauhan
+ms.subservice: admin
 ms.author: rechauha
 ms.reviewer: mkaur
 search.audienceType: 
@@ -89,7 +90,7 @@ All new users will have these settings applied to their mailbox.
   
 4. Select all the mailboxes that you want to associate with the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] profile, select **Apply Default Email Settings**, verify the settings, and then select **OK**.  
   
-   ![Apply default email settings](../admin/media/apply-default-email-settings.png "Apply default email settings")  
+   ![Apply default email settings.](../admin/media/apply-default-email-settings.png "Apply default email settings")  
   
     By default, the mailbox configuration is tested and the mailboxes are enabled when you select **OK**.  
   
@@ -122,7 +123,7 @@ To approve emails for customer engagement apps, a user requires:
 
 Decide which approach you want your organization to follow for mailbox approval.
 
-![Decide on mailbox approval approach](media/approval-flow-chart.png "Decide on mailbox approval approach")
+![Decide on mailbox approval approach.](media/approval-flow-chart.png "Decide on mailbox approval approach")
 
 > [!NOTE]
 > We are planning to revise the mailbox approval process with scenarios not requiring global admin approval. We'll update this documentation when that becomes available.
@@ -193,7 +194,7 @@ The following table describes the permissions required to approve emails.
 <sup>2</sup> We are updating for customer engagement apps/Exchange Online, for version 9.1.0.5805 or later.  <br />
 <sup>3</sup> We will be updating for customer engagement apps/Exchange On-premises. Check back for version information.
 
- To determine your version, sign in and in the upper-right corner of the screen, select the **Settings** button (![User profile Settings button](media/user-profile-settings-button.png)) > **About**.  
+ To determine your version, sign in and in the upper-right corner of the screen, select the **Settings** button (![User profile Settings button.](media/user-profile-settings-button.png)) > **About**.  
 
 ### Require and configure mailbox approval 
 
@@ -214,7 +215,7 @@ To manually assign the **Approve Email Addresses for Users or Queues** privilege
 4. Under **Miscellaneous Privileges**, set the privilege level for **Approve Email Addresses for Users or Queues**.
   
 > [!div class="mx-imgBorder"] 
-> ![Approve Email Address for User or Queues](media/approve-email-address-for-user-queues.png "Approve Email Address for User or Queues")
+> ![Approve Email Address for User or Queues.](media/approve-email-address-for-user-queues.png "Approve Email Address for User or Queues")
 
 #### Approve mailboxes
 
@@ -251,7 +252,7 @@ Admins, as described in the Permission model table, can change the settings so m
 4. Select the mailboxes you want to test, and then select **Test & Enable Mailbox**.  
 
    > [!div class="mx-imgBorder"] 
-   > ![Test and enable mailboxes](media/test-enable-mailbox85.png "Test and enable mailboxes")
+   > ![Test and enable mailboxes.](media/test-enable-mailbox85.png "Test and enable mailboxes")
   
    This tests the incoming and outgoing email configuration of the selected mailboxes and enables them for email processing. If an error occurs in a mailbox, an alert is shown on the Alerts wall of the mailbox and the profile owner. Depending on the nature of the error, customer engagement apps try to process the email again after some time or disables the mailbox for email processing.  
   

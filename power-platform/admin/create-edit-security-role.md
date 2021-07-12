@@ -2,6 +2,7 @@
 title: "Create or edit a security role  | MicrosoftDocs"
 description: Create or edit a security role
 author: paulliew
+ms.subservice: admin
 ms.author: paulliew
 ms.reviewer: jimholtz
 ms.custom: "admin-security"

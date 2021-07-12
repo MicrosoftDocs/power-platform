@@ -6,6 +6,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/26/2021
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -27,7 +28,7 @@ You can delete an environment to recover storage space and to remove Personally 
 2. Select an environment and then select **Delete**.
 
    > [!div class="mx-imgBorder"]
-   > ![Delete environment](media/delete-environment.png "Delete environment")
+   > ![Delete environment.](media/delete-environment.png "Delete environment")
 
 3. Provide the confirmation data and then select **Confirm**.
 

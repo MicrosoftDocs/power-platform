@@ -6,6 +6,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/04/2020
+ms.subservice: admin
 ms.author: gned
 ms.reviewer: jimholtz 
 search.audienceType: 
@@ -29,7 +30,7 @@ Follow these steps.
 3. Under **Search** > **Activities**, enter "dlp". You'll see a list of activities for Power Platform DLP.
 
    > [!div class="mx-imgBorder"] 
-   > ![Audit log search DLP policies](media/audit-log-search-dlp.png "Audit log search DLP policies")
+   > ![Audit log search DLP policies.](media/audit-log-search-dlp.png "Audit log search DLP policies")
 
 4. Select an activity, click outside the search window to close it, and then select **Search**.
 

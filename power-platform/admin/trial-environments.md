@@ -2,6 +2,7 @@
 title: "About trial environments: standard and subscription-based"
 description: "There are two types of Power Platform trial environments. Decide which one is right for you and learn how to create it in the Power Platform admin center."
 author: meeramahabala
+ms.subservice: admin
 ms.author: meeram
 ms.reviewer: jimholtz
 ms.service: power-platform
@@ -48,7 +49,7 @@ The type of trial environment you create depends on where you start and your ten
 2. Go to **Environments**, and then select **+ New**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Create a new trial (standard) environment](media/new-environment.png "Create a new trial (standard) environment")
+   > ![Create a new trial (standard) environment.](media/new-environment.png "Create a new trial (standard) environment")
 
 3. Enter the following, and then select **Next**.
    
@@ -61,7 +62,7 @@ The type of trial environment you create depends on where you start and your ten
    |Create a database for this environment? | Select **Yes** to add a Microsoft Dataverse database to the trial (standard) environment. |
 
    > [!div class="mx-imgBorder"] 
-   > ![Create a new trial (standard) environment, page two](./media/trial-subscription-standard.png "Create a new trial (standard) environment, page two")
+   > ![Create a new trial (standard) environment, page two.](./media/trial-subscription-standard.png "Create a new trial (standard) environment, page two")
 
 4. Enter the following, and then select **Save**.
 
@@ -74,7 +75,7 @@ The type of trial environment you create depends on where you start and your ten
    |Security group | Select a security group to restrict access to this environment. |
 
    > [!div class="mx-imgBorder"] 
-   > ![Create a new environment settings, page two](./media/trial-subscription-standard-page2.png "Create a new environment settings, page two")
+   > ![Create a new environment settings, page two.](./media/trial-subscription-standard-page2.png "Create a new environment settings, page two")
 
 ## Create a trial (subscription-based) environment in the Power Platform admin center
 
@@ -83,7 +84,7 @@ The type of trial environment you create depends on where you start and your ten
 2. Go to **Environments**, and then select **New**. 
 
    > [!div class="mx-imgBorder"] 
-   > ![Create a new trial (subscription-based) environment](media/new-environment.png "Create a new trial (subscription-based) environment")
+   > ![Create a new trial (subscription-based) environment.](media/new-environment.png "Create a new trial (subscription-based) environment")
 
 3. For **Type**, select **Trial (subscription-based)**, and then fill in and select other settings. Select **Next**.
 
@@ -96,7 +97,7 @@ The type of trial environment you create depends on where you start and your ten
    |Create a database for this environment | This setting is preset to **Yes** and can't be changed, because a Dataverse database must be created for a trial (subscription-based) environment.
 
    > [!div class="mx-imgBorder"] 
-   > ![Create a new trial (subscription-based) environment, page two](media/trial-subscription-based.png "Create a new trial (subscription-based) environment, page two")
+   > ![Create a new trial (subscription-based) environment, page two.](media/trial-subscription-based.png "Create a new trial (subscription-based) environment, page two")
 
 4. Specify the following settings, and then select **Save**. 
 
@@ -111,7 +112,7 @@ The type of trial environment you create depends on where you start and your ten
    |Deploy sample apps and data  | This setting appears if you set **Enable Dynamics 365 apps** to **No**.<br>Select **Yes** to include sample apps and data. Sample data gives you something to experiment with as you learn. |
 
    > [!div class="mx-imgBorder"] 
-   > ![Create new environment database settings](media/new-environment-add-database.png "Create new environment database settings")
+   > ![Create new environment database settings.](media/new-environment-add-database.png "Create new environment database settings")
 
 ## Check the expiration date for a trial (standard) environment
 
@@ -120,7 +121,7 @@ The type of trial environment you create depends on where you start and your ten
 2. Go to **Environments** > [select a trial environment] > **See all**. Check out **Day(s) remain**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Trial days remaining](media/trial-expiration.png "Trial days remaining")
+   > ![Trial days remaining.](media/trial-expiration.png "Trial days remaining")
 
 ## Check the expiration date for a trial (subscription-based) environment
 
@@ -133,7 +134,7 @@ A trial (subscription-based) environment lasts as long as the subscription is ac
 3. Select your Dynamics 365 subscription, and review the date in the **Billing** section.
 
    > [!div class="mx-imgBorder"] 
-   > ![Check trial (subscription-based) expiration](media/subscription-expiration-date.png "Check trial (subscription-based) expiration")
+   > ![Check trial (subscription-based) expiration.](media/subscription-expiration-date.png "Check trial (subscription-based) expiration")
 
 ## Extend a trial (standard) environment
 
@@ -150,7 +151,7 @@ Note the following:
 2. Go to **Environments**, and then select an expiring environment that has the **Extend trial** option. The **Extend trial** option appears when there are 7 days or less remaining before the environment expires.
 
    > [!div class="mx-imgBorder"] 
-   > ![Extend a trial](media/extend-trial.png "Extend a trial")
+   > ![Extend a trial.](media/extend-trial.png "Extend a trial")
 
 3. Select **Extend trial**
 
@@ -176,7 +177,7 @@ There is only one self-service extension allowed per offer-based trial environme
 2. Go to **Environments** > [select a trial environment] > **Convert to production**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Select Convert to production](media/trial-convert.png "Select Convert to production")
+    > ![Select Convert to production.](media/trial-convert.png "Select Convert to production")
 
 3. Select **Continue**.
 

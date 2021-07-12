@@ -6,6 +6,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/08/2021
+ms.subservice: admin
 ms.author: mkaur
 search.audienceType: 
   - admin
@@ -26,7 +27,7 @@ You can also select multiple items and assign the **Tracked to Dynamics 365** Ou
 As of version 9.1.0.4039 or higher, category tracking is on by default.
 
 > [!TIP]
-> To determine your version, sign in to customer engagement apps, and in the upper-right side of the screen, select the **Settings** button ![User profile Settings button](media/user-profile-settings-button.png) > **About**.  
+> To determine your version, sign in to customer engagement apps, and in the upper-right side of the screen, select the **Settings** button ![User profile Settings button.](media/user-profile-settings-button.png) > **About**.  
 
 ## Use category to track Outlook items
 Once the **Tracked to Dynamics 365** category is available in Outlook, you can use it to track the following Outlook items.

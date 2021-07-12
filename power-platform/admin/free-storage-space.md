@@ -6,6 +6,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/06/2021
+ms.subservice: admin
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -58,7 +59,7 @@ Use the following methods to free up storage for each of the capacity types.
 > [!WARNING]
 >  If you delete this data, the attachments will no longer be available in customer engagement apps. However, if you have them saved in [!INCLUDE[pn_MS_Outlook_Full](../includes/pn-ms-outlook-full.md)], they will still be there.  
   
-1. Choose **Advanced Find** (![Advanced find button](media/advanced-find-button2.png)).  
+1. Choose **Advanced Find** (![Advanced find button.](media/advanced-find-button2.png)).  
   
 2. In the **Look for** list, select **Email Messages**.  
   
@@ -69,14 +70,14 @@ Use the following methods to free up storage for each of the capacity types.
    **File Size (Bytes)** – **Is Greater Than** - In the text box, type a byte value, such as 1,048,576 (this is binary for 1MB).  
  
 > [!div class="mx-imgBorder"] 
-> ![Free up storage method 3](media/free-storage-method3a.png "Free up storage method 3")  
+> ![Free up storage method 3.](media/free-storage-method3a.png "Free up storage method 3")  
  
 4. Choose **Results**.  
   
 5. You will now have a list of email messages that have attachments that are larger than 'X' bytes. Review the emails and delete the attachments as needed.  
   
 > [!div class="mx-imgBorder"] 
-> ![Free up storage method 3](media/free-storage-method3b.png "Free up storage method 3")  
+> ![Free up storage method 3.](media/free-storage-method3b.png "Free up storage method 3")  
 
 ### Method 4: Remove email messages with attachments using a bulk deletion job  
   
@@ -108,7 +109,7 @@ Use the following methods to free up storage for each of the capacity types.
    2.  With both rows selected, choose **Group AND**.  
   
    > [!div class="mx-imgBorder"] 
-   > ![Free up storage method 4](media/free-storage-method4a.png "Free up storage method 4")  
+   > ![Free up storage method 4.](media/free-storage-method4a.png "Free up storage method 4")  
 
 7. Choose **Next**.  
   
@@ -121,7 +122,7 @@ Use the following methods to free up storage for each of the capacity types.
 11. If you want a notification e-mail sent, select the **Send an email to me (email@domain.com) when this job is finished** check box.  
   
 > [!div class="mx-imgBorder"] 
-> ![Free up storage method 4](media/free-storage-method6b.png "Free up storage method 4")  
+> ![Free up storage method 4.](media/free-storage-method6b.png "Free up storage method 4")  
 
 12. Choose **Next**, review the bulk deletion job, and then choose **Submit** to create the recurring job.  
   
@@ -139,19 +140,19 @@ Use the following methods to free up storage for each of the capacity types.
    **File Size (Bytes)** – **Is Greater Than** – In the text box, type a byte value, such as 1048576.  
 
 > [!div class="mx-imgBorder"] 
-> ![Free up storage method 5](media/free-storage-method5a.png "Free up storage method 5")
+> ![Free up storage method 5.](media/free-storage-method5a.png "Free up storage method 5")
   
 4. Choose **Results**.  
   
 5. You will now have a list of attachments that are larger than the size you specified.  
   
 > [!div class="mx-imgBorder"] 
-> ![Free up storage method 5](media/free-storage-method5b.png "Free up storage method 5")
+> ![Free up storage method 5.](media/free-storage-method5b.png "Free up storage method 5")
 
 6. Select individual or a multiple attachments, and then choose **Delete** (X).  
   
 > [!div class="mx-imgBorder"] 
-> ![Free up storage method 5](media/free-storage-method5c.png "Free up storage method 5")
+> ![Free up storage method 5.](media/free-storage-method5c.png "Free up storage method 5")
 
 ### Method 6: Remove notes with attachments using a bulk deletion job  
   
@@ -179,7 +180,7 @@ Use the following methods to free up storage for each of the capacity types.
    2.  With all three rows selected, choose **Group AND**.  
 
    > [!div class="mx-imgBorder"] 
-   > ![Free up storage method 6](media/free-storage-method6a.png "Free up storage method 6")  
+   > ![Free up storage method 6.](media/free-storage-method6a.png "Free up storage method 6")  
   
 7. Choose **Next**.  
   
@@ -192,7 +193,7 @@ Use the following methods to free up storage for each of the capacity types.
 11. If you want a notification e-mail sent, select the **Send an email to me (email@domain.com) when this job is finished** check box.  
   
 > [!div class="mx-imgBorder"] 
-> ![Free up storage method 6](media/free-storage-method6b.png "Free up storage method 6")  
+> ![Free up storage method 6.](media/free-storage-method6b.png "Free up storage method 6")  
   
 12. Choose **Next**, review the bulk deletion job, and then choose **Submit** to create the recurring job.  
 
@@ -212,7 +213,7 @@ Use the following methods to free up storage for each of the capacity types.
 3. Select the oldest audit log, then choose **Delete Logs**.  
  
 > [!div class="mx-imgBorder"] 
-> ![Free up storage method 10](media/free-storage-method10a.png "Free up storage method 10")  
+> ![Free up storage method 10.](media/free-storage-method10a.png "Free up storage method 10")  
  
 4. In the confirmation message choose **OK**.  
   
@@ -250,7 +251,7 @@ Use the following methods to free up storage for each of the capacity types.
    2.  With all three rows selected, choose **Group AND**.  
 
    > [!div class="mx-imgBorder"] 
-   > ![Free up storage method 10](media/free-storage-method1b.png "Free up storage method 10")  
+   > ![Free up storage method 10.](media/free-storage-method1b.png "Free up storage method 10")  
   
 7. Choose **Next**.  
   
@@ -263,7 +264,7 @@ Use the following methods to free up storage for each of the capacity types.
 11. If you want a notification e-mail sent, select the **Send an e-mail to me (email@domain.com) when this job is finished** check box.  
  
 > [!div class="mx-imgBorder"] 
-> ![Free up storage method 10](media/free-storage-method6b.png "Free up storage method 10")  
+> ![Free up storage method 10.](media/free-storage-method6b.png "Free up storage method 10")  
  
 12. Choose **Next**, review the bulk deletion job, and then choose **Submit** to create the recurring job.  
   
@@ -291,7 +292,7 @@ Use the following methods to free up storage for each of the capacity types.
    2.  With both rows selected, choose **Group AND**.  
   
    > [!div class="mx-imgBorder"] 
-   > ![Free up storage method 2](media/free-storage-method2b.png "Free up storage method 2")  
+   > ![Free up storage method 2.](media/free-storage-method2b.png "Free up storage method 2")  
 
 5. Choose **Results**.  
   
@@ -310,7 +311,7 @@ Use the following methods to free up storage for each of the capacity types.
    To avoid wasting storage space, make sure duplicates are resolved promptly so that they are not reported in multiple duplicate detection jobs.  
 
 > [!div class="mx-imgBorder"] 
-> ![Free up storage method 7](media/free-storage-method7a.png "Free up storage method 7")  
+> ![Free up storage method 7.](media/free-storage-method7a.png "Free up storage method 7")  
   
 ### Method 8: Delete bulk import instances using a bulk deletion job  
 
@@ -342,7 +343,7 @@ Use the following methods to free up storage for each of the capacity types.
    2.  With all three rows selected, choose **Group AND**.  
  
    > [!div class="mx-imgBorder"] 
-   > ![Free up storage method 8](media/free-storage-method8a.png "Free up storage method 8")  
+   > ![Free up storage method 8.](media/free-storage-method8a.png "Free up storage method 8")  
  
 7. Choose **Next**.  
   
@@ -355,7 +356,7 @@ Use the following methods to free up storage for each of the capacity types.
 11. If you want a notification e-mail sent, select the **Send an email to me (email@domain.com) when this job is finished** check box.  
   
 > [!div class="mx-imgBorder"] 
-> ![Free up storage method 8](media/free-storage-method6b.png "Free up storage method 8")  
+> ![Free up storage method 8.](media/free-storage-method6b.png "Free up storage method 8")  
 
 12. Choose **Next**, review the bulk deletion job, and then choose **Submit** to create the recurring job.  
   
@@ -392,7 +393,7 @@ Use the following methods to free up storage for each of the capacity types.
    2.  With all three rows selected, choose **Group AND**.  
 
    > [!div class="mx-imgBorder"] 
-   > ![Free up storage method 9](media/free-storage-method9a.png "Free up storage method 9")  
+   > ![Free up storage method 9.](media/free-storage-method9a.png "Free up storage method 9")  
   
 7. Choose **Next**.  
   
@@ -405,7 +406,7 @@ Use the following methods to free up storage for each of the capacity types.
 11. If you want a notification e-mail sent, select the **Send an email to me (email@domain.com) when this job is finished** check box.  
   
 > [!div class="mx-imgBorder"] 
-> ![Free up storage method 9](media/free-storage-method6b.png "Free up storage method 9")  
+> ![Free up storage method 9.](media/free-storage-method6b.png "Free up storage method 9")  
 
 12. Choose **Next**, review the bulk deletion job, and then choose **Submit** to create the recurring job.  
 

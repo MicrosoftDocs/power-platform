@@ -6,6 +6,7 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 07/02/2021
 author: jimholtz
+ms.subservice: admin
 ms.author: jimholtz
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
@@ -42,7 +43,7 @@ Using teams is optional. However, teams provide an easy way to share business ob
 
 A list of all of the teams in the environment is displayed.
 
-![List of teams in environment](media/dataverse-team-manage-list.png "List of teams in environment")
+![List of teams in environment.](media/dataverse-team-manage-list.png "List of teams in environment")
 
 ### Create a new team
 
@@ -60,7 +61,7 @@ A list of all of the teams in the environment is displayed.
    - **Administrator:** Search for users in the organization. Start typing characters.
    - **Team type:** Select Team type from the drop down.
 
-   :::image type="content" source="media/dataverse-team-manage-new-team.png" alt-text="New Dataverse team settings":::
+   :::image type="content" source="media/dataverse-team-manage-new-team.png" alt-text="New Dataverse team settings.":::
    
    > [!NOTE]
    > A team can be one of the following types: Owner, Access, Azure AD Security group, or Azure AD Office group. 
@@ -70,7 +71,7 @@ A list of all of the teams in the environment is displayed.
    - **Group name:** The Azure AD group name. Start typing for existing Azure AD group names). These groups are pre-created in Azure AD.
    - **Membership type:** Select the membership type from the dropdown.
 
-   :::image type="content" source="media/dataverse-team-manage-new-team-azuread.png" alt-text="New Azure AD team":::
+   :::image type="content" source="media/dataverse-team-manage-new-team-azuread.png" alt-text="New Azure AD team.":::
 
 Once you create the team, you can add team members and select corresponding security roles. This step is optional, but recommended.
 
@@ -84,7 +85,7 @@ Once you create the team, you can add team members and select corresponding secu
 
 4. Update the fields as required, and then select **Update**.
 
-   :::image type="content" source="media/dataverse-team-manage-edit.png" alt-text="Edit a team":::
+   :::image type="content" source="media/dataverse-team-manage-edit.png" alt-text="Edit a team.":::
 
 ### Delete a team
 
@@ -113,7 +114,7 @@ You can add and delete members from a team.
 
    - To add a new team member, select **+ Add team members** and then specify users.
 
-   :::image type="content" source="media/dataverse-team-manage-add-members.png" alt-text="Add team members":::
+   :::image type="content" source="media/dataverse-team-manage-add-members.png" alt-text="Add team members.":::
 
    - To delete a team member, select the user and then select **Remove**.
 
@@ -123,7 +124,7 @@ You can add and delete members from a team.
 
 2. Select the role(s) required and then select **Save**.
 
-   :::image type="content" source="media/dataverse-team-manage-security-roles.png" alt-text="Manage security roles":::
+   :::image type="content" source="media/dataverse-team-manage-security-roles.png" alt-text="Manage security roles.":::
 
 
 ### See also  

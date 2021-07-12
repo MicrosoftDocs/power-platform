@@ -2,6 +2,7 @@
 title: "Create an administrative user and prevent elevation of security role privilege  | MicrosoftDocs"
 description: Create an administrative user and prevent elevation of security role privilege
 author: paulliew
+ms.subservice: admin
 ms.author: paulliew
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
@@ -49,7 +50,7 @@ The following steps describe a method to create a new custom security role with 
    |Append To     |Business Unit         |
    |Assign     |Business Unit         |
 
-   ![Security Role](media/security-role.png)
+   ![Security Role.](media/security-role.png)
 
 6. Select **Save and Close**.
 

@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 07/06/2021
+ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -30,8 +31,8 @@ The archive approval flows use the built-in Approval actions of Power Automate.
 
 - *Admin \| Archive and Clean Up v2 (Start Approval for Apps)*
 - *Admin \| Archive and Clean Up v2 (Start Approval for Flows)*
-- *Admin \| App Archive and Clean Up – Check Approval*
-- *Admin \| Flow Archive and Clean Up – Check Approval*)
+- *Admin \| Archive and Clean Up v2 (Check Approval)*
+- *Admin \| Archive and Clean Up v2 (Clean Up and Delete)*
 
  In the background, the built-in Approval actions use Dataverse. If you've installed the solution in a new environment, the Approval tables must be initialized. The easiest way to do this is to create a "dummy" approval flow.
 
@@ -41,13 +42,13 @@ The archive approval flows use the built-in Approval actions of Power Automate.
 
 1. Pick **manually trigger a flow** as the trigger, and enter *Admin \| Dummy Approval Flow* as the name.
    
-   ![Build an instant flow](media/coe14.png "Build an instant flow")
+   ![Build an instant flow.](media/coe14.png "Build an instant flow")
 
 1. Select **+ New Step** to add an approval action to the flow, and then search for and select **Create an approval**.
 
 1. Select a dummy title, and enter your email address under **Assigned To**.
 
-   ![Approval flow](media/coe16.png "Approval flow")
+   ![Approval flow.](media/coe16.png "Approval flow")
 
 1. In the upper-right corner, select **Test**, and then select **I'll perform the trigger action**.
 
@@ -60,7 +61,7 @@ The archive approval flows use the built-in Approval actions of Power Automate.
 
 1. Select **Solutions** on the left side panel, and you should now see two new Flow Approvals solutions. Note that the presence of these solutions was the point of this step, and the way you know it succeeded.
 
-   ![Flow Approval solutions](media/coe17.png "Flow Approval solutions")
+   ![Flow Approval solutions.](media/coe17.png "Flow Approval solutions")
 
 ## Import the solution
 
@@ -70,7 +71,7 @@ The Core Components solution is required for the Governance Components solution,
 
 1. Import the *CenterOfExcellenceAuditComponents_x_x_x_xx_managed.zip* file.
 1. Create a new connection to the all connectors.
-    ![Import the Center of Excellence - Governance components solution](media/msig-import.png "Import the Center of Excellence - Governance components solution")
+    ![Import the Center of Excellence - Governance components solution.](media/msig-import.png "Import the Center of Excellence - Governance components solution")
 
 1. Select **Import** without adding values to the Environment Variables, as we will update them later - see [update environment variables](#update-environment-variables)
 
@@ -112,13 +113,13 @@ This Governance Components solution contains flows that you'll need to manually 
 
 1) Get the URL for the Developer Compliance Center <br>
    Browse to Details page of the Developer Compliance Center and grab the Web link
-    ![Setup Compliance Components1](media/setupCompliance1.png "Setup Compliance Components1")
+    ![Setup Compliance Components1.](media/setupCompliance1.png "Setup Compliance Components1")
 
 1) Browse to Default Solution, filter to Environment Variables, edit the **Developer Compliance Center URL** variable and add the URL from step 1 as a current value
-![Setup Compliance Components2](media/setupCompliance2.png "Setup Compliance Components2")
+![Setup Compliance Components2.](media/setupCompliance2.png "Setup Compliance Components2")
 
 1) Return to the Core Solution and turn on **Admin \| Compliance detail request v3**
-![Setup Compliance Components3](media/setupCompliance3.png "Setup Compliance Components3")
+![Setup Compliance Components3.](media/setupCompliance3.png "Setup Compliance Components3")
 
 ## Share apps with makers
 
@@ -138,11 +139,11 @@ In addition to sharing the app, you'll also need to share the data by providing 
 
 1. Select the Dataverse data permissions.
 
-    ![Sharing Data 1](media/SharingData1.png "Sharing Data 1")
+    ![Sharing Data 1.](media/SharingData1.png "Sharing Data 1")
 
 1. Select the Power Platform Maker Security Role.
 
-    ![Sharing Data 2](media/SharingData2.png "Sharing Data 2")
+    ![Sharing Data 2.](media/SharingData2.png "Sharing Data 2")
 
 1. Select **Share**.
 
@@ -150,25 +151,25 @@ In addition to sharing the app, you'll also need to share the data by providing 
 
 You will share the app with your colleagues that don't belong to your CoE team.
 
-More information: [Sharing for broad distribution apps](https://docs.microsoft.com/powerapps/teams/publish-and-share-apps#share-broad-distribution-apps-with-colleagues)
+More information: [Sharing for broad distribution apps](/powerapps/teams/publish-and-share-apps#share-broad-distribution-apps-with-colleagues)
 
 1. Open to the Power Apps app in Teams, select **Build**, and select the Team you have added the solution to.
 1. Select **Installed apps**.
-1. [Assign table persmissions](https://docs.microsoft.com/powerapps/teams/publish-and-share-apps#assign-table-permissions) to share the data with your colleagues.
+1. [Assign table persmissions](/powerapps/teams/publish-and-share-apps#assign-table-permissions) to share the data with your colleagues.
     1. Select **See all** for Center of Excellence - Core Components.
     1. Select Tables from the left pane.
     1. Select **PowerApps App** > **Manage Permissions**.
     1. Select **Colleagues with access**.
     1. Set the permission to **Collaborate**.
-        ![Sharing data with colleagues](media/govteams-3.png "Sharing data with colleagues")
+        ![Sharing data with colleagues.](media/govteams-3.png "Sharing data with colleagues")
     1. Repeat these steps for the Environment, Flow, PVA, Desktop flow tables.
     1. Repeat these steps for the COE Settings table, but grant **Reference** permission only.
 1. Select **Build** and select **Share with colleagues** to share the app with your colleagues. You must be a Team Owner to see this option.
 
-   ![Sharing with colleagues](media/govteams-1.png "Sharing with colleagues")
+   ![Sharing with colleagues.](media/govteams-1.png "Sharing with colleagues")
 1. Search for, and select the security group you want to share the apps and tables with. Select the **Developer Compliance Center** app.
 
-   ![Search for a security group](media/govteams-2.png "Search for a security group")
+   ![Search for a security group.](media/govteams-2.png "Search for a security group")
 1. Select **Save**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

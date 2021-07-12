@@ -35,7 +35,7 @@ You can determine whether users need to sign in to access your bot, and whether 
 
 2. Select **Access**.
 
-    :::image type="content" source="media/security-access.png" alt-text="The Access pane has options to grant access and require sign in":::
+    :::image type="content" source="media/security-access.png" alt-text="The Access pane has options to grant access and require sign in.":::
 
 The **Access** pane gives you control of two aspects for user access.
 
@@ -69,7 +69,7 @@ The **Authentication** setting impacts how you can manage access to the bot.
 
 2. Select **Authentication**.
 
-    :::image type="content" source="media/security-authentication-pane.png" alt-text="The Authentication pane has options to determine access settings":::
+    :::image type="content" source="media/security-authentication-pane.png" alt-text="The Authentication pane has options to determine access settings.":::
 
 
 There are three options for authentication:

@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/28/2021
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -40,7 +41,7 @@ These are calls made to the Dataverse API. They can be from Unified Interface (U
      ```
 
     > [!div class="mx-imgBorder"] 
-    > ![Application Insights CustomDimensions UserAgent](media/application-insights-customdimensions-useragent.png "Application Insights CustomDimensions UserAgent")
+    > ![Application Insights CustomDimensions UserAgent.](media/application-insights-customdimensions-useragent.png "Application Insights CustomDimensions UserAgent")
 
 - **Operation_Name**: The readable name of the operation to display on views, such as the end-to-end transaction view.
 
@@ -55,7 +56,7 @@ dependencies
 ```
 
 > [!div class="mx-imgBorder"] 
-> ![Application Insights Dataverse plug-in execution logs](media/application-insights-dataverse-execution-logs.png "Application Insights Dataverse plug-in execution logs")
+> ![Application Insights Dataverse plug-in execution logs.](media/application-insights-dataverse-execution-logs.png "Application Insights Dataverse plug-in execution logs")
 
 - **Name/Target**: The fully qualified type name for the plug-in being executed.
 - **Duration**: The amount of time it took for the plug-in to be executed.
@@ -97,7 +98,7 @@ dependencies
 ```
 
 > [!div class="mx-imgBorder"] 
-> ![Application Insights query SDK](media/application-insights-query-sdk.png "Application Insights query SDK")
+> ![Application Insights query SDK.](media/application-insights-query-sdk.png "Application Insights query SDK")
 
 - **Type**: The type of SDK request triggered. Examples include Retrieve, RetrieveMultiple, FetchXmlToQueryExpression, and WhoAmI.
 - **Name/Target**: This is the name of the entity being targeted by the SDK operation.
@@ -114,7 +115,7 @@ These failure details correlate with the rest of the events in the plug-in and S
 You'll notice that some of the fields in the **exceptions** table aren't populated. This is because these fields can only be set if the Application Insights SDK is used to emit logs from the source. This feature collects platform telemetry and then pushes it into Application Insights in accordance with the Application Insights schema. 
 
 > [!div class="mx-imgBorder"] 
-> ![Application Insights exceptions table](media/application-insights-exceptions-table.png "Application Insights exceptions table")
+> ![Application Insights exceptions table.](media/application-insights-exceptions-table.png "Application Insights exceptions table")
 
 ```kusto
 exceptions
@@ -132,7 +133,7 @@ This query will return all the attribute details from the **exception** table.
   - **pluginName**: The name of the plug-in where the exception was thrown.
 
 > [!div class="mx-imgBorder"] 
-> ![Application Insights exceptions table attribute details](media/application-insights-exceptions-table-attribute-details.png "Application Insights exceptions table attribute details")
+> ![Application Insights exceptions table attribute details.](media/application-insights-exceptions-table-attribute-details.png "Application Insights exceptions table attribute details")
 
 If a user reports an error, you can use the user ID (Azure Active Directory ID) to understand details from the **exception** table.
 
@@ -149,7 +150,7 @@ dependencies<br />
 ```
 
 > [!div class="mx-imgBorder"] 
-> ![Application Insights SDK retrieve query](media/application-insights-query-sdk-retrieve.png "Application Insights SDK retrieve query")
+> ![Application Insights SDK retrieve query.](media/application-insights-query-sdk-retrieve.png "Application Insights SDK retrieve query")
 
 ## Frequently Asked Questions (FAQs)
 
@@ -177,7 +178,7 @@ requests
 ```
 
 > [!div class="mx-imgBorder"] 
-> ![Application Insights API performance time chart](media/application-insights-api-performance-timechart.png "Application Insights API performance time chart")
+> ![Application Insights API performance time chart.](media/application-insights-api-performance-timechart.png "Application Insights API performance time chart")
 
 In this chart, we can see the performance of the API endpoint over a period of time against the number of requests being made.
 
@@ -188,7 +189,7 @@ You can also [set up an alert](/azure/azure-monitor/learn/tutorial-alert) based 
 Looking at the **Failures** panel gives an overview of the failures in a given time period. You can then narrow down to a specific failure based on the API call or dependency type to see the end-to-end view.
 
 > [!div class="mx-imgBorder"] 
-> ![Application Insights failures details](media/application-insights-failures-details.png "Application Insights failures details")
+> ![Application Insights failures details.](media/application-insights-failures-details.png "Application Insights failures details")
 
 ### Can I create custom dashboards? 
 
@@ -207,14 +208,14 @@ dependencies
 ```
 
 > [!div class="mx-imgBorder"] 
-> ![Plug-in usage performance](media/application-insights-plugin-usage-performance.png "Plug-in usage performance")
+> ![Plug-in usage performance.](media/application-insights-plugin-usage-performance.png "Plug-in usage performance")
 
 ### Will this telemetry have throttling? 
 
 Yes. Basic 429 error details are currently provided.
 
 > [!div class="mx-imgBorder"] 
-> ![Basic 429 error](media/application-insights-basic-429-error.png "Basic 429 error")
+> ![Basic 429 error.](media/application-insights-basic-429-error.png "Basic 429 error")
 
 ### Can I understand execution paths? Are calls made by the plug-in slowing the plug-in?  
 
@@ -225,7 +226,7 @@ The duration of all message and plug-in execution is logged. If any plug-in is t
 Any outbound call made by the plug-in will automatically be logged as a dependency. 
 
 > [!div class="mx-imgBorder"] 
-> ![End-to-end transaction](media/application-insights-end-to-end-transaction.png "End-to-end transaction")
+> ![End-to-end transaction.](media/application-insights-end-to-end-transaction.png "End-to-end transaction")
 
 ### Can I view telemetry for a specific request? 
 

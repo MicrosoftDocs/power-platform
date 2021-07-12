@@ -2,6 +2,7 @@
 title: "Opt-out of automatic license-based user roles management  | MicrosoftDocs"
 description: Turn off automatically adding and removing user security roles based on the licenses the user has. 
 author: paulliew
+ms.subservice: admin
 ms.author: paulliew
 ms.reviewer: jimholtz
 ms.service: power-platform

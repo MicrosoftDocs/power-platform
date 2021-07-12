@@ -6,6 +6,7 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/24/2020
 author: jimholtz
+ms.subservice: admin
 ms.author: jimholtz
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
@@ -31,7 +32,7 @@ To create, edit, or delete DLP policies, you must have either Environment Admin 
 2. In the navigation pane, select **Data policies**. If you have a long list of policies, use the **Search** box to find specific DLP policies.
 
    > [!div class="mx-imgBorder"] 
-   > ![DLP policy list](media/dlp-policy-list-view.png "DLP policy list")
+   > ![DLP policy list.](media/dlp-policy-list-view.png "DLP policy list")
 
    The list view shows the following attributes:
 
@@ -77,7 +78,7 @@ To create, edit, or delete DLP policies, you must have either Environment Admin 
 2. From the list of DLP policies, select an environment, and then select **Edit Policy**. If you have a long list of policies, use the **Search** box to find specific environments.
 
    > [!div class="mx-imgBorder"] 
-   > ![Edit a DLP policy](media/dlp-edit-policy.png "Edit a DLP policy")
+   > ![Edit a DLP policy.](media/dlp-edit-policy.png "Edit a DLP policy")
 
    > [!NOTE]
    > Environment admins can't edit policies that were created by the tenant admin.
@@ -88,7 +89,7 @@ To create, edit, or delete DLP policies, you must have either Environment Admin 
    > Environment-level DLP policies can't override tenant-wide DLP policies.
 
    > [!div class="mx-imgBorder"] 
-   > ![Edit DLP policy review](media/dlp-edit-policy-review.png "Edit DLP policy review")
+   > ![Edit DLP policy review.](media/dlp-edit-policy-review.png "Edit DLP policy review")
 
 ## Delete a DLP policy
 
@@ -97,7 +98,7 @@ To create, edit, or delete DLP policies, you must have either Environment Admin 
 2. From the list of DLP policies, select an environment, and then select **Delete Policy**. If you have a long list of policies, use the **Search** box to find specific environments.
 
    > [!div class="mx-imgBorder"] 
-   > ![Delete a DLP policy](media/dlp-delete-policy.png "Delete a DLP policy")
+   > ![Delete a DLP policy.](media/dlp-delete-policy.png "Delete a DLP policy")
 
    > [!NOTE]
    > Environment admins can't delete policies that were created by the tenant admin.
@@ -111,7 +112,7 @@ To create, edit, or delete DLP policies, you must have either Environment Admin 
 2. From the list of DLP policies, select an environment, and then select **Edit Policy**. If you have a long list of policies, use the **Search** box to find specific environments.
 
    > [!div class="mx-imgBorder"] 
-   > ![Edit a DLP policy](media/dlp-edit-policy.png "Edit a DLP policy")
+   > ![Edit a DLP policy.](media/dlp-edit-policy.png "Edit a DLP policy")
 
    > [!NOTE]
    > Environment admins can't edit policies created by the tenant admin.
@@ -121,7 +122,7 @@ To create, edit, or delete DLP policies, you must have either Environment Admin 
 4. In the upper-right corner, select **Set default group**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Set default group](media/dlp-edit-default-group.png "Set default group")
+   > ![Set default group.](media/dlp-edit-default-group.png "Set default group")
 
 5. Choose a default group, and then select **Apply**. More information: [Connector classification](wp-data-loss-prevention.md#connector-classification) and [Default data group for new connectors](wp-data-loss-prevention.md#default-data-group-for-new-connectors)
 

@@ -3,6 +3,7 @@ title: "Tutorial: Get started with GitHub Actions for Microsoft Power Platform |
 description: "In this first part of a 3-part tutorial, get started with GitHub Actions for Microsoft Power Platform by creating three environments for use in the other tutorials."
 keywords: 
 author: mikkelsen2000
+ms.subservice: alm
 ms.author: pemikkel
 manager: jstrauss
 ms.custom: ""
@@ -42,17 +43,17 @@ You will need to create, or have access to, three Dataverse environments in your
 
 3. Select **+ New** to create your first new environment.
 
-    ![New environment](../media/github-actions-tutorial/gh-lab-0.10.png "New environment")
+    ![New environment.](../media/github-actions-tutorial/gh-lab-0.10.png "New environment")
 
 4. The first environment should be named “Your Name – dev”, set the region to **United States (default)**, set the environment type to *Production* (if available),  if not use **Trial**.
 
-    ![Create environment](../media/github-actions-tutorial/gh-lab-0.50.png "Create environment")
+    ![Create environment.](../media/github-actions-tutorial/gh-lab-0.50.png "Create environment")
 
 5. Select **Yes** to create a database and then **Next**.
 
 6. Set the currency to **USD** and language to **English**. Include the sample apps and data, provide a URL for your business organization, and then select **Save**.
 
-    ![Set currency](../media/github-actions-tutorial/gh-lab-0.80.png "Set currency")
+    ![Set currency.](../media/github-actions-tutorial/gh-lab-0.80.png "Set currency")
 
 7. Your development environment has been created, follow steps 4 – 8 above to create a second environment called “Your Name – build” , and then create a third environment called “Your Name – prod”. Note that the third environment can be a trial environment type.
 

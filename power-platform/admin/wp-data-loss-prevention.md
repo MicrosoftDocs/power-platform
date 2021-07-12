@@ -6,6 +6,7 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/23/2021
 author: jimholtz
+ms.subservice: admin
 ms.author: jimholtz
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
@@ -138,7 +139,7 @@ Even though environment admins might manage more than one environment, they can'
 
 Using the view policy feature, environment admins can view tenant-level policies and policies within environments that the admin has access to, at an individual policy level. Non-admins can also view tenant-level policies using this feature.
 
-:::image type="content" source="media/dlp-view-policies2.png" alt-text="View DLP policies list":::
+:::image type="content" source="media/dlp-view-policies2.png" alt-text="View DLP policies list.":::
 
 ## Combined effect of multiple DLP policies
 
@@ -195,15 +196,15 @@ As an admin, you should have a process and plan in place to handle these types o
 Users who create or edit a resource affected by the DLP policy will see an appropriate error message about any DLP policy conflicts. For example, Power Apps makers will see the following error when they use connectors in an app that don't belong together or have been blocked by DLP policies. The app won't add the connection.
 
 > [!div class="mx-imgBorder"] 
-> ![First example conflict error](media/dlp-conflict-error.png "First example conflict error")
+> ![First example conflict error.](media/dlp-conflict-error.png "First example conflict error")
 
 > [!div class="mx-imgBorder"] 
-> ![Second example conflict error](media/dlp-conflict-error2.png "Second example conflict error")
+> ![Second example conflict error.](media/dlp-conflict-error2.png "Second example conflict error")
 
 Similarly, Power Automate makers will see the following error when they try to save a flow that uses connectors that don't belong together or have been blocked by DLP policies. The flow itself will be saved, but it will be marked as **Suspended** and won't be executed unless the maker resolves the DLP violation.
 
 > [!div class="mx-imgBorder"] 
-> ![Flow error](media/dlp-suspended-flow-error2.png "Flow error")
+> ![Flow error.](media/dlp-suspended-flow-error2.png "Flow error")
 
 ### Runtime impact on apps and flows
 
@@ -212,7 +213,7 @@ As an admin, you can decide to modify the DLP policies for your tenant or for sp
 Users who use a resource that's in violation of the latest DLP policy will see an error message about the DLP policy conflict. For example, Power Apps makers and users will see the following error when they try to open an app that uses connectors that don't belong together or have been blocked by DLP policies. 
 
 > [!div class="mx-imgBorder"] 
-> ![App opening error](media/dlp-opening-error.png "App opening error")
+> ![App opening error.](media/dlp-opening-error.png "App opening error")
 
 > [!NOTE]
 > Power Apps DLP runtime enforcement experiences include the admin contact and governance reference material, if set. To learn more about how to use this capability, see [Governance error message content commands](powerapps-powershell.md#governance-error-message-content-commands). 
@@ -223,7 +224,7 @@ Similarly, Power Automate makers and users won't be able to start a flow that us
 > The flow suspension process works in a polling mode. It takes about five minutes for the latest DLP policy changes to be assessed against active flows to mark them as suspended due to DLP policy violations. This change isn't instantaneous.
 
 > [!div class="mx-imgBorder"] 
-> ![Flow suspension](media/dlp-flow-suspension.png "Flow suspension")
+> ![Flow suspension.](media/dlp-flow-suspension.png "Flow suspension")
 
 ## Known issues
 

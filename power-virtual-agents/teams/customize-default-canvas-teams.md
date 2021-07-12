@@ -36,7 +36,7 @@ and the bot name at any time, and add a long and short description when you publ
 
 1. On the side navigation pane, select **Manage** and then **Details**.
 
-    :::image type="content" source="media/custom-canvas-details-teams.png" alt-text="The Details tab is found in the Manage section on the side navigation pane":::
+    :::image type="content" source="media/custom-canvas-details-teams.png" alt-text="The Details tab is found in the Manage section on the side navigation pane.":::
 
 2. Make changes to the **Bot name** and bot avatar icon.  
     The avatar icon needs to be an image type and can be any size - it will be automatically resized and positioned so it is in the middle of the colored square. 
@@ -49,7 +49,7 @@ and the bot name at any time, and add a long and short description when you publ
 
 3. When you're finished, select **Save** on the top menu bar.
     
-    :::image type="content" source="media/custom-canvas-save-teams.png" alt-text="Save is at the top of the window":::
+    :::image type="content" source="media/custom-canvas-save-teams.png" alt-text="Save is at the top of the window.":::
 
 4. Select **Reset** to revert your changes to the previously saved version.
 

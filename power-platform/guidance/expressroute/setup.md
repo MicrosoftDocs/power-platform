@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/30/2021
+ms.subservice: guidance
 ms.author: tayoshi
 ms.reviewer: kathyos
 search.audienceType: 

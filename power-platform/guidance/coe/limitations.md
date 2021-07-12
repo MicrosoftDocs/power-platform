@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 07/06/2021
+ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -86,14 +87,14 @@ The Dataverse connector might experience some throttling limits if the tenant ha
   1. Expand the step **Apply to each Environment**
   1. Go to the **Settings** pane for each call to Dataverse, and configure the timeout/retry settings. The default count is set to **10** and the default interval is set to **PT10S** - increase the values incrementally here.
 
-     ![Configure retry policy](media/coe72.PNG "Configure the retry policy")
+     ![Configure retry policy.](media/coe72.PNG "Configure the retry policy")
 
 - **Configure (reduce) concurrency in Foreach loops to reduce simultaneous calls**
   1. Open **Admin \| Sync Template v3**, and then select **Edit**.
   1. Expand the step **Get Environments and store them in the CoE Table**.
   1. Go to **Settings** for the **Apply to each Environment** step.
 
-     ![Configure concurrency in Foreach](media/coe73.PNG "Configure concurrency in Foreach")
+     ![Configure concurrency in Foreach.](media/coe73.PNG "Configure concurrency in Foreach")
 
   1. Use the slider to reduce the value of **Degree of Parallelism**. The default value is 50; reducing the parallelism here will increase the runtime of the flow, so we suggest gradually lowering the number.
 
@@ -118,7 +119,7 @@ It currently isn't possible to retrieve the model-driven apps, chatbots, and Des
 
 ## Supported languages
 
-The CoE Starter Kit solutions are not localized, and only support English. Add the English language pack to your environment to make sure all apps and flows work. More information: [Regional and language options for your environment](https://docs.microsoft.com/power-platform/admin/enable-languages)
+The CoE Starter Kit solutions are not localized, and only support English. Add the English language pack to your environment to make sure all apps and flows work. More information: [Regional and language options for your environment](/power-platform/admin/enable-languages)
 
 ## Security groups and approvals
 

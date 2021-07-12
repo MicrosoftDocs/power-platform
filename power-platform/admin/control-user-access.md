@@ -3,6 +3,7 @@ title: "Control user access to environments: security groups and licenses | Micr
 description: Learn how to control user access to environments using security groups and licenses
 services: powerapps
 author: paulliew
+ms.subservice: admin
 ms.author: paulliew
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
@@ -104,24 +105,24 @@ Or, purchase and assign per app passes: [About Power Apps per app plans](about-p
 2. In the navigation pane, select **Environments**, select an environment, and then select **Edit**.  
   
    > [!div class="mx-imgBorder"] 
-   > ![Select Edit](media/edit-environment.png "Select Edit")
+   > ![Select Edit.](media/edit-environment.png "Select Edit")
 
-3. In the **Edit details** page, select **Edit** (![Edit](media/edit-button.png)).
+3. In the **Edit details** page, select **Edit** (![Edit.](media/edit-button.png)).
   
    > [!div class="mx-imgBorder"] 
-   > ![Edit security group](media/edit-security-group.png "Edit security group")
+   > ![Edit security group.](media/edit-security-group.png "Edit security group")
 
    Only the first 200 security groups will be returned and selectable by default. To select additional security groups, use **Search** to look for a specific security group.
 
 4. Select a security group, select **Done**, and then select **Save**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Select a security group](media/edit-security-group-select.png "Select a security group")
+   > ![Select a security group.](media/edit-security-group-select.png "Select a security group")
 
 The security group is associated with the environment.
 
    > [!div class="mx-imgBorder"] 
-   > ![Security group added](media/security-group-added.png "Security group added")
+   > ![Security group added.](media/security-group-added.png "Security group added")
 
 ## Remove a security group's association with a Dataverse environment
 
@@ -130,12 +131,12 @@ The security group is associated with the environment.
 2. In the navigation pane, select **Environments**, select an environment, and then select **Edit**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Edit environment](media/edit-environment.png "Edit environment")
+   > ![Edit environment.](media/edit-environment.png "Edit environment")
 
-3. In the **Settings** page, select **Delete** (![Delete](media/nb-ua-r1-trashbin.png)).  
+3. In the **Settings** page, select **Delete** (![Delete.](media/nb-ua-r1-trashbin.png)).  
 
    > [!div class="mx-imgBorder"] 
-   > ![Select Delete](media/delete-security-group.png "Select Delete")
+   > ![Select Delete.](media/delete-security-group.png "Select Delete")
 
 4. Confirm removal, select **Remove**, and then select **Save**.
 

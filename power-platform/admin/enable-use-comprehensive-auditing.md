@@ -6,6 +6,7 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 12/10/2020
 author: tjvass
+ms.subservice: admin
 ms.author: tjvass
 ms.reviewer: jimholtz 
 search.audienceType: 
@@ -99,7 +100,7 @@ The customer engagement apps schema contains fields specific to customer engagem
 
 3. Under **Enable Auditing in the following areas**, enable the check boxes for the areas you want to audit and then select **OK**.
    
-   ![System Settings Auditing](media/system-settings-auditing.png "System Settings Auditing")
+   ![System Settings Auditing.](media/system-settings-auditing.png "System Settings Auditing")
 
 4. To set table and field-level auditing, select **Settings** > **Customizations** > **Customize the System**.
 	- Or, from the System Settings page (above), select **Entity and Field Audit Settings**.
@@ -113,7 +114,7 @@ The customer engagement apps schema contains fields specific to customer engagem
    - **Single record auditing. Log a record when opened.**
    - **Multiple record auditing. Log all records displayed on an opened page.**
 
-   ![Retrieve Auditing](media/retrieve-auditing.png "Retrieve Auditing")
+   ![Retrieve Auditing.](media/retrieve-auditing.png "Retrieve Auditing")
 
 8. Choose **Save**.
 
@@ -130,7 +131,7 @@ You can review your audit data in the Microsoft 365 Security and Compliance Cent
 
 To use the preconfigured reports, go to https://protection.office.com > **Search & investigation** > **Audit log search** and select the **Dynamics 365 activities** tab.
 
-![Audit log reports](media/D365-audit-log-reports.png "Audit log reports")
+![Audit log reports.](media/D365-audit-log-reports.png "Audit log reports")
 
 ## Create reports
 You can create your own reports to review your audit data. See [Search the audit log in the Security & Compliance Center](https://support.office.com/article/search-the-audit-log-in-the-office-365-security-compliance-center-0d4d0f35-390b-4518-800e-0c7ec95e946c).

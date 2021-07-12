@@ -6,6 +6,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/23/2021
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -20,7 +21,7 @@ search.app:
 You can use Copy environment in the Microsoft Power Platform admin center to copy the customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), and all data from any environment to a sandbox environment. You can select two levels of copy: **Everything** or **Customizations and schemas only**.  
 
 > [!div class="mx-imgBorder"] 
-> ![Copy menu](media/copy-menu.png "Copy menu")
+> ![Copy menu.](media/copy-menu.png "Copy menu")
 
 > [!NOTE]
 > - You can only copy an environment to a sandbox environment.
@@ -144,7 +145,7 @@ After modifying and enabling some of the plug-ins, the developer sandbox environ
 4. Select the desired copy over level.
   
    > [!div class="mx-imgBorder"] 
-   > ![Copy environment](media/copy-environment1.png "Copy environment")
+   > ![Copy environment.](media/copy-environment1.png "Copy environment")
 
 5. Select a sandbox environment.
   
@@ -153,19 +154,19 @@ After modifying and enabling some of the plug-ins, the developer sandbox environ
    > [!WARNING]
    >  The target environment will be deleted and replaced with a copy of the data and customizations from the source environment. You won’t be able to recover any deleted data.  
 
-6. To restrict environment access to people in a security group select **Edit** (![Edit](media/edit-button.png)).
+6. To restrict environment access to people in a security group select **Edit** (![Edit.](media/edit-button.png)).
 
 7. Edit the details for the copied environment, and then select **Copy**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Copy environment](media/copy-environment2.png "Copy environment")
+   > ![Copy environment.](media/copy-environment2.png "Copy environment")
 
 8. Select **Confirm** to overwrite the target environment.
 
 The overwrite process starts.
 
 > [!div class="mx-imgBorder"] 
-> ![Copy environment status](media/copy-environment-status.png "Copy environment status")
+> ![Copy environment status.](media/copy-environment-status.png "Copy environment status")
   
 Once the copy process is complete, the target environment is placed in [Administration mode](sandbox-environments.md#administration-mode) and background operations are disabled. The next section describes recommended Administrator actions for the newly created copy (target) environment.  
  

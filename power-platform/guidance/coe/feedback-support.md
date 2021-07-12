@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/10/2020
+ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -22,7 +23,7 @@ Although the underlying features and components used to build the Center of Exce
 
 If you face issues with:
 
-- **Using the kit**: Report your issue here: [aka.ms/coe-starter-kit-issues](https://github.com/microsoft/coe-starter-kit/issues/new?assignees=JeneferM-MSFT&labels=coe-starter-kit&template=-coe-starter-kit-app--bug-report.md&title=%5BCoE+Starter+Kit+-+BUG%5D%3A+issue+title). (Microsoft Support won't help you with issues related to this kit, but they will help with related, underlying platform and feature issues.)
+- **Using the kit**: Report your issue here: [aka.ms/coe-starter-kit-issues](https://aka.ms/coe-starter-kit-issues). (Microsoft Support won't help you with issues related to this kit, but they will help with related, underlying platform and feature issues.)
 - **The core features in Microsoft Power Platform**: Use your standard channel to contact Microsoft Support.
 
 

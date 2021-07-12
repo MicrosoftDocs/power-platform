@@ -6,6 +6,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/25/2021
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -50,6 +51,7 @@ You can use Power Platform admin center self-service options based on Data Lake 
   <!--note from editor: I don't think the current alt text adequately describes this image. I've added a suggested long description - please make it better! (Note that I changed the image type to "complex", so if you don't want a more detailed description, you'll want to change the image type back to "content".) -->A diagram of limitless extensibility options through using cloud analytics and AI is divided into three areas. Microsoft Power Platform apps - Power BI, Power Apps, and Power Automate - are shown collectively supplying governance, monitoring, and management to the middle area, the customer's Data Lake Storage. The data lake includes Power Platform admin center analytics and organizational datasets, all informed by cloud intelligence. On the right, the customer's dashboard is the core of an app workspace where data lake data is analyzed and acted on.
 :::image-end:::
 
+:::image type="content" source="media/azure-resources.png" alt-text="Azure resources.":::
 
 
 ## Data
