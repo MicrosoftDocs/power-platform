@@ -32,9 +32,9 @@ Watch how to setup the core components solution.
 
 ## Import the solution
 
-The Core Components can be used in both Production environments and Dataverse for Teams environments. Where you install it will depend on your organization setup, your adoption of Microsoft Power Platform so far and what you want to achieve with the CoE Starter Kit. Before you decide, compare [Dataverse vs Dataverse for Teams](https://docs.microsoft.com/powerapps/teams/data-platform-compare)
+The Core Components can be used in both Production environments and Dataverse for Teams environments. Where you install it will depend on your organization setup, your adoption of Microsoft Power Platform so far and what you want to achieve with the CoE Starter Kit. Before you decide, compare [Dataverse vs Dataverse for Teams](/powerapps/teams/data-platform-compare)
 
-Learn more: [What is Dataverse for Teams](https://docs.microsoft.com/powerapps/teams/overview-data-platform)
+Learn more: [What is Dataverse for Teams](/powerapps/teams/overview-data-platform)
 
 ### Option 1: Import the solution into a Production environment
 
@@ -104,8 +104,8 @@ This is the first step of the installation process and is required for every oth
 Before you begin:
 
 - decide which team to add the Core Components solution to or create a new team.
-- [install the Power Apps app](https://docs.microsoft.com/powerapps/teams/install-personal-app) in Teams.
-- [create your first app](https://docs.microsoft.com/powerapps/teams/create-first-app) (at least one app is required in the environment to enable the solution import experience).
+- [install the Power Apps app](/powerapps/teams/install-personal-app) in Teams.
+- [create your first app](/powerapps/teams/create-first-app) (at least one app is required in the environment to enable the solution import experience).
 
 1. Download the CoE Starter Kit compressed file ([aka.ms/CoeStarterKitDownload](https://aka.ms/CoeStarterKitDownload)).
 
@@ -254,8 +254,8 @@ The core components solution doesn't contain any apps for makers or users, only 
 
 More information:
 <br>
-[Share a canvas app in Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/share-app)<br>
-[Publish and add an app to Teams](https://docs.microsoft.com/powerapps/teams/publish-and-share-apps#publish-and-add-an-app-to-teams)
+[Share a canvas app in Power Apps](/powerapps/maker/canvas-apps/share-app)<br>
+[Publish and add an app to Teams](/powerapps/teams/publish-and-share-apps#publish-and-add-an-app-to-teams)
 
 ## Wait for flows to finish
 

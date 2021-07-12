@@ -22,9 +22,9 @@ search.app:
 
 Multiple nurture components are provided in the Center of Excellence (CoE) Starter Kit; each will require some configuration to install. The installation instructions in this article have been segmented based on the set of components that should be grouped and installed together, and dependencies on other segments are outlined in each section.
 
-The Nurture Components can be used in both Production environments and Dataverse for Teams environments. Where you install it will depend on your organization setup, your adoption of Microsoft Power Platform so far and what you want to achieve with the CoE Starter Kit. Before you decide, compare [Dataverse vs Dataverse for Teams](https://docs.microsoft.com/powerapps/teams/data-platform-compare)
+The Nurture Components can be used in both Production environments and Dataverse for Teams environments. Where you install it will depend on your organization setup, your adoption of Microsoft Power Platform so far and what you want to achieve with the CoE Starter Kit. Before you decide, compare [Dataverse vs Dataverse for Teams](/powerapps/teams/data-platform-compare)
 
-Learn more: [What is Dataverse for Teams](https://docs.microsoft.com/powerapps/teams/overview-data-platform)
+Learn more: [What is Dataverse for Teams](/powerapps/teams/overview-data-platform)
 
 ## Prepare content for consumption by solution objects
 

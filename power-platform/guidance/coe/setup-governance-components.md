@@ -151,11 +151,11 @@ In addition to sharing the app, you'll also need to share the data by providing 
 
 You will share the app with your colleagues that don't belong to your CoE team.
 
-More information: [Sharing for broad distribution apps](https://docs.microsoft.com/powerapps/teams/publish-and-share-apps#share-broad-distribution-apps-with-colleagues)
+More information: [Sharing for broad distribution apps](/powerapps/teams/publish-and-share-apps#share-broad-distribution-apps-with-colleagues)
 
 1. Open to the Power Apps app in Teams, select **Build**, and select the Team you have added the solution to.
 1. Select **Installed apps**.
-1. [Assign table persmissions](https://docs.microsoft.com/powerapps/teams/publish-and-share-apps#assign-table-permissions) to share the data with your colleagues.
+1. [Assign table persmissions](/powerapps/teams/publish-and-share-apps#assign-table-permissions) to share the data with your colleagues.
     1. Select **See all** for Center of Excellence - Core Components.
     1. Select Tables from the left pane.
     1. Select **PowerApps App** > **Manage Permissions**.

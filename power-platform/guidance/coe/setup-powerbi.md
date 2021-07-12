@@ -28,13 +28,13 @@ The Power BI dashboard provides a holistic view with visualizations and insights
 You can get the CoE Power BI dashboard by downloading the CoE Starter Kit compressed file ([aka.ms/CoeStarterKitDownload](https://aka.ms/CoeStarterKitDownload)). **Extract the zip file** after downloading - it contains two Power BI template files, one for connecting to Dataverse with the **Dataverse** connector and one for connecting to Dataverse with **Common Data Service (Legacy**) connector.
 
 - You can use the **Legacy_CoEDashboard_yyyyMM.pbit** file if you have installed the CoE Starter Kit in a Production environment. This uses the earlier version of the Dataverse connector in Power BI. Use this connector for large datasets that are greater than 80 MB.
-- You must use **Dataverse_CoEDashboard_yyyyMM.pbit** if you have installed the CoE Starter Kit in a Dataverse for Teams environment (those don't support Import). You can use **Dataverse_yyyyMMdd.pbit** if you have installed the CoE Starter Kit in a Production Environment, if your dataset is smaller than 80 MB. This version connects to Microsoft Dataverse using the TDS endpoint, therefore the TDS Endpoint has to be enabled for the environment: [Manage feature settings](https://docs.microsoft.com/power-platform/admin/settings-features).
+- You must use **Dataverse_CoEDashboard_yyyyMM.pbit** if you have installed the CoE Starter Kit in a Dataverse for Teams environment (those don't support Import). You can use **Dataverse_yyyyMMdd.pbit** if you have installed the CoE Starter Kit in a Production Environment, if your dataset is smaller than 80 MB. This version connects to Microsoft Dataverse using the TDS endpoint, therefore the TDS Endpoint has to be enabled for the environment: [Manage feature settings](/power-platform/admin/settings-features).
 
 Learn more:
 
-- [Connect to Dataverse using the connector in Power BI](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-powerbi-connector#connect-to-dataverse-using-the-connector)
-- [Limitations us using SQL to query data](https://docs.microsoft.com/powerapps/developer/data-platform/dataverse-sql-query#limitations)
-- [Troubleshooting connection problems](https://docs.microsoft.com/powerapps/developer/data-platform/dataverse-sql-query#troubleshooting-connection-problems)
+- [Connect to Dataverse using the connector in Power BI](/powerapps/maker/data-platform/data-platform-powerbi-connector#connect-to-dataverse-using-the-connector)
+- [Limitations us using SQL to query data](/powerapps/developer/data-platform/dataverse-sql-query#limitations)
+- [Troubleshooting connection problems](/powerapps/developer/data-platform/dataverse-sql-query#troubleshooting-connection-problems)
 
 > [!NOTE]
 >
@@ -79,7 +79,7 @@ You can configure and modify the Power BI dashboard by working directly with the
 
 1. Save the dashboard locally, or select **Publish** and choose the workspace you want to publish the report to.
 
-1. [Configure scheduled refresh](https://docs.microsoft.com/power-bi/connect-data/refresh-data#configure-scheduled-refresh) for your Power BI Dataset to update the report daily.
+1. [Configure scheduled refresh](/power-bi/connect-data/refresh-data#configure-scheduled-refresh) for your Power BI Dataset to update the report daily.
 
 You can find the report later by going to [app.powerbi.com](https://app.powerbi.com/).
 
@@ -89,7 +89,7 @@ When you see *Unable to connect (provider Named Pipes Provider, error: 40 – Co
 
 ![Error message: Unable to connect ](media/pbi_error.PNG "Error message: Unable to connect ")
 
-When you see *A connection was successfully established with the server, but then an error occurred during the pre-login handshake* as an error message, the connector fails to connect to the TDS endpoint. This can also occur if the ports the TDS endpoint uses are blocked. Learn more: [Ports required for using SQL to query data](https://docs.microsoft.com/powerapps/developer/data-platform/dataverse-sql-query#blocked-ports)
+When you see *A connection was successfully established with the server, but then an error occurred during the pre-login handshake* as an error message, the connector fails to connect to the TDS endpoint. This can also occur if the ports the TDS endpoint uses are blocked. Learn more: [Ports required for using SQL to query data](/powerapps/developer/data-platform/dataverse-sql-query#blocked-ports)
 
 ![Error message: A connection was successfully established with the server, but then an error occurred ](media/pbi_error2.PNG "Error message:A connection was successfully established with the server, but then an error occurred ")
 
