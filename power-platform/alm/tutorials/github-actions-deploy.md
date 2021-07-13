@@ -85,7 +85,7 @@ Related tutorials: [Get started](github-actions-start.md), and [Build a model-dr
 
     This will start a new YML file with a basic workflow to help you get started with GitHub Actions.
 
-    ![Sample YML file](../media/github-actions-tutorial/- "Sample YML file")
+    ![Sample YML file](../media/github-actions-tutorial/gh-lab-2.90.png "Sample YML file")
 
 2. Delete the pre-created content, paste the content from the [export-and-branch-solution.yml](https://github.com/microsoft/powerplatform-actions-lab/blob/main/sample-workflows/export-and-branch-solution.yml) file, and then rename the file to ‘export-and-branch-solution’.yml.
 
