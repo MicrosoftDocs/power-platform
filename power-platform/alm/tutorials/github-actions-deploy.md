@@ -177,7 +177,7 @@ In this section, we will create an additional workflow that:
 
 5. Commit the changes. Choose **Start commit** and then add a title and description (optional). Next, select **Commit new file**.
 
-![Commit changes.](../media/github-actions-tutorial/gh-lab-2.270.png "Commit changes")
+    ![Commit changes.](../media/github-actions-tutorial/gh-lab-2.270.png "Commit changes")
 
 ## Test the release to production workflow
 
