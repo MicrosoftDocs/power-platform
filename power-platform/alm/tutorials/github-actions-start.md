@@ -60,57 +60,60 @@ You will need to create, or have access to, three Dataverse environments in your
 
 You now have the development, build, and production environments needed in the following modules of this tutorial.
 
-## Create the Service Principal account and give it rights to the environments created
+## Create the service principal account and give it rights to the environments created
 
-1. You will need to create an Application registration within Azure Active Directory 
+1. You will need to create an application registration within Azure Active Directory. More information: [Tutorial: Register an app with Azure Active Directory](/powerapps/developer/data-platform/walkthrough-register-app-azure-active-directory)
 
-2. Upon creation of the Application Registration, Please note and save the tenant id and of the application and client id(app id) of the application
+2. Upon creation of the application registration, please note and save the Directory (tenant) ID and the Application (client) ID of the application.
 
-    ![Application Registration](../media/github-actions-tutorial/App-registration.png "Application Registration")
+    ![Application registration](../media/github-actions-tutorial/App-registration.png "Application registration")
 
-3. Back on the navigation panel, of the overview page, select API permissions
+3. On the navigation panel of the overview page, select API permissions.
 
-4. Choose **+ Add a Permission**, and in the Microsoft APIs tabs, Choose **Dynamics CRM**
+4. Choose **+ Add a permission**, and in the Microsoft APIs tabs, Choose **Dynamics CRM**.
 
-5.  In the Request API permission form, select Delegated permissions, check **user_impersonation**, and **Add permissions**
+5.  In the **Request API permissions** form, select **Delegated permissions**, check **user_impersonation**, and then choose **Add permissions**.
 
-6.  Similarly, select **PowerApps Runtime Service** and select **user_impersonation**, and select **PowerApps-Advisor** with **Analysis.All** rights 
+6.  From the **Request API permissions** form, choose **PowerApps Runtime Service**, check **user_impersonation**, and then choose **Add permissions**.
 
-  ![API Permissions](../media/github-actions-tutorial/API-Permissions.png "API Permissions")
+7.  From the **Request API permissions** form, choose **APIs my organization uses**, search for "PowerApps-Advisor", select **PowerApps-Advisor** and **Application permissions** with **Analysis.All** rights.
 
-7. Then proceed to create a client secret, in the navigation panel, select **Certificates & secrets**
+  ![API permissions](../media/github-actions-tutorial/API-Permissions.png "API permissions")
 
-8. Below **Client Secrets**, select **+ New client secret**
+8. Next, proceed to create a client secret, in the navigation panel, select **Certificates & secrets**.
 
-9.  In the form, enter a description and select **Add.** Record the secret string, you will not be able view the secret again once you leave the screen
+9. Below **Client secrets**, select **+ New client secret**.
 
-  ![Client and Secrets](../media/github-actions-tutorial/clients-and-secrets.png "Client and Secrets")
+10.  In the form, enter a description and select **Add.** Record the secret string, you will not be able view the secret again once you leave the form.
+
+  ![Client and secrets](../media/github-actions-tutorial/clients-and-secrets.png "Client and secrets")
 
  ###  Application user creation
- In order for the GitHub workflow to deploy solutions as part of a CI/CD pipeline and "Application User" needs to be given access to the environment. "Application user" is the App Registration done in Azure Active Directory just prior
+ 
+ In order for the GitHub workflow to deploy solutions as part of a CI/CD pipeline an "Application user" needs to be given access to the environment. An "Application user" represents an unlicensed user that is authenticated using the application registration completed in the prior steps.
 
-  1. Navigate to your Dataverse environment (https://*[org]*.crm.dynamics.com)
+  1. Navigate to your Dataverse environment (https://*[org]*.crm.dynamics.com).
 
-  2. Navigate to **Settings > Security > Users.**
+  2. Navigate to **Settings > Security > Users**.
 
-  3. select the link app users list
-    ![Application user list](../media/github-actions-tutorial/App-user-link.png "Application User List link")
+  3. Select the link **app users list**.
+  
+    ![Application user list](../media/github-actions-tutorial/App-user-link.png "Application user list")
   
   4. Select **+ new app user**. A panel will open on the right hand side of the screen.
 
-  5. Select **+ Add an app**. A list of all the app registrations in your Azure AD tenant is shown. Proceed to select the Application Name that your registered.
+  5. Select **+ Add an app**. A list of all the application registrations in your Azure AD tenant is shown. Proceed to select the application name from the list that you registered.
 
-  6. Under business unit, in the drop down box, select your environment as the business unit
+  6. Under **Business unit**, in the drop down box, select your environment as the business unit.
 
-  7. Under Security Roles, select System administrator, and select create, this will allow the service principal access to the environment
+  7. Under **Security roles**, select **System administrator**, and then select **create**. This will allow the service principal access to the environment.
 
-    ![New Application user creation](../media/github-actions-tutorial/new-app-user.png "New Application User")
+    ![New application user creation](../media/github-actions-tutorial/new-app-user.png "New application user")
 
+Now that you have created the service principal, you can use either the service principal or the standard username and password for your GitHub Workflow. 
 
-Now that you have created the service principal, you can now use either the service principal or the standard username and password for your GitHub Workflow. **Note** if you have MFA enabled, then service principal authentication is the method you want to implement
-
-
-
+> [!IMPORTANT]
+> If you have multi-factor authentication (MFA) enabled, service principal authentication is the authentication method you want to use.
 
 > [!div class="nextstepaction"]
 > [Next steps](./github-actions-build.md)
