@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/27/2021
+ms.date: 07/13/2021
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -25,6 +25,9 @@ Relevance Search delivers fast and comprehensive search results in a single list
 Relevance Search is available in addition to single-entity Quick Find on the entity grid, and as an alternative to multi-entity Quick Find (also called Categorized Search), which is accessible from the navigation bar.
 
 Changes made to the Relevance Search configuration or to the searchable data may take up to 15 minutes to appear in the search service. It may take up to an hour or more to complete a full sync for average size organizations, and a couple of days for very large size organizations.
+
+> [!NOTE]
+> We're updating some terminology in Dataverse to be more intuitive and make its usage more productive. The terminology updates are listed in [Terminology Updates](/powerapps/maker/data-platform/data-platform-intro#terminology-updates). We will make these changes as we update the user interface.
 
 ## What is Relevance Search?
 
@@ -114,6 +117,8 @@ By default, some out-of-the-box system entities are included in Relevance Search
 > 4. statuscode (Label of optionset)
 > 5. name (Primary name field of any entity. This may or may not be the same as the logical name (fullname, subject etc.) of the entity)
 > If a common field is added to any entity for Relevance Search, search will be performed for that common field across all entities. However, once you choose a specific entity through the Record Type facet, Relevance Search will follow the settings you have defined for that specific entity through Quick Find View.
+>
+> Updates to calculated fields and lookups are not automatically synced in Relevance Search. Data is refreshed whenever a field that is configured for Relevance Search is updated in a record.
 
  You can use the **Quick Find** view to define which fields appear as facets when users search by using Relevance Search.  All **View Columns** with data types other than Single Line of Text and Multiple Lines of Text are marked as facetable and filterable in the index. By default, the first four facetable fields in the **Quick Find** view for the selected entity are displayed as facets when users search by using Relevance Search. At any time, you can only have four fields selected as facets.  
 
