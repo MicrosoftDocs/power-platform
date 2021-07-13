@@ -70,7 +70,7 @@ Related tutorials: [Get started](github-actions-start.md), and [Build a model-dr
 
     ![New secret](../media/github-actions-tutorial/gh-lab-2.50.png "New secret")
 
-2. On the secrets page, name the secret ‘PowerPlatformSPN’. Use the client secret for the Application registration created in Azure Active Directory into **Value** field and select **Add secret**. The client secret will be referenced in the YML files used to define the GitHub workflows later in this lab
+2. On the *Secrets* page, name the secret ‘PowerPlatformSPN’. Use the client secret from the application registration created in Azure Active Directory and enter it into the **Value** field, and then select **Add secret**. The client secret will be referenced in the YML files used to define the GitHub workflows later in this lab.
 
     [Create secret](../media/github-actions-tutorial/spn-secret.png "Create secret")
 
