@@ -112,7 +112,7 @@ Congratulations, you have just created your first GitHub workflow using the foll
 
 ## Test the export and unpack workflow
 
-1. Next, test that the workflow runs. Navigate to **Actions**, **Run workflow**, and choose **Run workflow**. If you have a different solution name than 'ALMLab' then change the value here, leave the other values as is. 
+1. Next, test that the workflow runs. Navigate to **Actions**, **Run workflow**, and choose **Run workflow**. If you have a different solution name than 'ALMLab' then change the value here but leave the other values as is. 
 
     ![Run workflow.](../media/github-actions-tutorial/gh-lab-2.150.png "Run workflow")
 
@@ -167,9 +167,8 @@ In this section, we will create an additional workflow that:
     - Update `<PRODUCTIONENVIRONMENTURL>` with the URL for the production environment you are deploying to. For example: https://poweractionsbuild.crm.dynamics.com.
     - Update `<USERNAME>` with the username you are using to connect to the environments.
 
-
     ![Rename and paste code](../media/github-actions-tutorial/gh-lab-2.250a.png "Rename and paste code")
-4a. If you are using SPN authentication then in the Workflow you need to update the following variables
+4a. If you are using SPN authentication then in the workflow you need to update the following variables:
     - Update `<BUILDENVIRONMENTURL>` with the URL for the build environment you are using to generate the managed solution. For example: https://poweractionsbuild.crm.dynamics.com.
     - Update `<PRODUCTIONENVIRONMENTURL>` with the URL for the production environment you are deploying to. For example: https://poweractionsbuild.crm.dynamics.com.
     - Update `<APPID>` with the Application name you are using to connect to the environments.
