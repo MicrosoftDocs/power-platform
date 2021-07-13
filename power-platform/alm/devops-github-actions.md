@@ -80,28 +80,27 @@ GitHub Actions for Microsoft Power Platform can run on both Microsoft Windows ag
 
 ## Frequently asked questions
 
-#### How do I get started with GitHub actions?
+***How do I get started with GitHub actions?***
 
-[GitHub Actions Hands on Lab](./tutorials/github-actions-start.md) is available right now for you try out. The labs show how to use Service Principal authentication and standard username/password authentication.  
+*[GitHub Actions Hands on Lab](./tutorials/github-actions-start.md) is available right now for you try out. The labs show how to use Service Principal authentication and standard username/password authentication.*
 
-#### How do I get GitHub Actions for Microsoft Power Platform working in my repository?
+***How do I get GitHub Actions for Microsoft Power Platform working in my repository?***
 
-Go to the [GitHub Marketplace for Actions](https://github.com/marketplace/actions/powerplatform-actions) and search for Power Platform. When you arrive on the page, select the green button to instatiate the actions into your repository.
+*Go to the [GitHub Marketplace for Actions](https://github.com/marketplace/actions/powerplatform-actions) and search for Power Platform. When you arrive on the page, select the green button to instatiate the actions into your repository.*
 
-            ![GitHub Actions Install](../media/tutorial/../../alm/media/github-actions-tutorial/GHActionsinstall.png "GitHub Actions Install")
+![GitHub Actions Install](media/github-actions-tutorial/GHActionsinstall.png "GitHub Actions Install")
 
+***Do GitHub Actions only work for Power Apps?***
 
-#### Do GitHub Actions only work for Power Apps?  
+*GitHub Actions work for both canvas and model-driven apps, Power Virtual Agents, UI flows and traditional flows, AI Builder, custom connectors, and dataflows, all of which can now be added to a solution. Also included are customer engagement apps.*
 
-GitHub Actions work for both canvas and model-driven apps, Power Virtual Agents, UI flows and traditional flows, AI Builder, custom connectors, and dataflows, all of which can now be added to a solution. Also included are customer engagement apps.
+***Can I include flow and canvas apps?***
 
-#### Can I include flow and canvas apps?
+*Yes, flows and canvas apps are solution-aware, so if these components are added to your solution they can participate in the lifecycle of your app. However, some steps still require manual configuration, which will be addressed later this year when we introduce environment variables and connectors. For a list of current limitations, go to [Known limitations](/powerapps/maker/common-data-service/use-solution-explorer#known-limitations).*
 
-Yes, flows and canvas apps are solution-aware, so if these components are added to your solution they can participate in the lifecycle of your app. However, some steps still require manual configuration, which will be addressed later this year when we introduce environment variables and connectors. For a list of current limitations, go to [Known limitations](/powerapps/maker/common-data-service/use-solution-explorer#known-limitations).
+***How much does GitHub Actions for Microsoft Power Platform cost?***
 
-#### How much does GitHub Actions for Microsoft Power Platform cost?
-
-GitHub Actions are available at no cost. However, a valid GitHub subscription is required to use the actions on GitHub. To get started, 2,000 action minutes/month are available for free. More information: [GitHub pricing](https://github.com/pricing/)
+*GitHub Actions are available at no cost. However, a valid GitHub subscription is required to use the actions on GitHub. To get started, 2,000 action minutes/month are available for free. More information: [GitHub pricing](https://github.com/pricing/)*
 
 ### See also
 
