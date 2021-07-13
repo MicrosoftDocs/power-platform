@@ -1,4 +1,26 @@
-﻿| Name | Default value | Description |
+---
+title: "Defulat OrgDBOrgSettings  | MicrosoftDocs"
+description: This topic covers the default options available in OrgDBOrgSettings.
+author: mduelae
+ms.service: power-platform
+ms.component: pa-admin
+ms.topic: conceptual
+ms.date: 07/13/2021
+ms.subservice: admin
+ms.author: mkaur
+search.audienceType: 
+  - admin
+search.app:
+  - D365CE
+  - PowerApps
+  - Powerplatform
+  - Flow
+---
+# D365 Org DB Settings 
+
+This topic covers the default value of OrgDBOrgSettings. For information on how to edit these settings, see [Environment database settings](environment-database-settings.md).
+
+| Name | Default value | Description |
 |-------------------------|-------------------------|-------------------------|
 | AutoCreateContactOnPromote | true | Disables the automatic creation of contacts or leads for unresolved senders on promote of email for all the users in the organization. |
 | SSSUpdatePastMeetingsInNonDraftMode | false | Allows updates for past meetings in Dynamics to propagate to Exchange when critical properties have changed (start, end, subject, body, attendees, location). Note: Enabling this setting may lead to meeting requests being sent out for past meetings. |
