@@ -35,15 +35,15 @@ Related tutorials: [Get started](github-actions-start.md), and [Build a model-dr
 
 1. Go to https://github.com and click **Sign up** or **Start a free trial** (or sign in if you have an existing account).
 
-    ![Create account.](../media/github-actions-tutorial/gh-lab-2.20.png "Create account")
+    ![Create account](../media/github-actions-tutorial/gh-lab-2.20.png "Create account")
 
 2. After you have created your account, create a repository by selecting **Create repository** or **New**.
 
-    ![Create a repository.](../media/github-actions-tutorial/gh-lab-2.30.png "Create a repository")
+    ![Create a repository](../media/github-actions-tutorial/gh-lab-2.30.png "Create a repository")
 
     You might see the following alternative landing screen:
 
-    ![Create a new repository.](../media/github-actions-tutorial/gh-lab-2.35.png "Create a new repository")
+    ![Create a new repository](../media/github-actions-tutorial/gh-lab-2.35.png "Create a new repository")
 
 3. Create your new repository and name it ‘poweractionslab’. Make sure you select **Add a README file** to initiate the repo and choose **Create repository**.
 
@@ -53,30 +53,28 @@ Related tutorials: [Get started](github-actions-start.md), and [Build a model-dr
 
 1. Navigate to the repo from the link in the import wizard and select **Settings**, navigate to **Secrets**, and then click **New secret**.
 
-    ![New secret.](../media/github-actions-tutorial/gh-lab-2.50.png "New secret")
+    ![New secret](../media/github-actions-tutorial/gh-lab-2.50.png "New secret")
 
 2. On the secrets page, name the secret ‘password’. Type the password for the username you are using to connect to Microsoft Power Platform into the **Value** field and select **Add secret**. The password will be referenced in the YML files used to define the GitHub workflows later in this lab.
 
-    ![Create secret.](../media/github-actions-tutorial/gh-lab-2.60.png "Create secret")
-
-    
+    ![Create secret](../media/github-actions-tutorial/gh-lab-2.60.png "Create secret")
 
     The password is now securely stored as a GitHub secret.
 
-    ![Stored secret.](../media/github-actions-tutorial/gh-lab-2.70.png "Stored secret")
+    ![Stored secret](../media/github-actions-tutorial/gh-lab-2.70.png "Stored secret")
 
 ### Creating a new secret for Service Principal Authentication
 1. Navigate to the repo from the link in the import wizard and select **Settings**, navigate to **Secrets**, and then click **New secret**.
 
-    ![New secret](../media/github-actions-tutorial/gh-lab-2.50.png "New secret")
+    ![New service principal secret](../media/github-actions-tutorial/gh-lab-2.50.png "New service principal secret")
 
 2. On the *Secrets* page, name the secret ‘PowerPlatformSPN’. Use the client secret from the application registration created in Azure Active Directory and enter it into the **Value** field, and then select **Add secret**. The client secret will be referenced in the YML files used to define the GitHub workflows later in this lab.
 
-    [Create secret](../media/github-actions-tutorial/spn-secret.png "Create secret")
+    ![Create the service principal secret](../media/github-actions-tutorial/spn-secret.png "Create the service principal secret")
 
     The client secret is now securely stored as a GitHub secret.
 
-    ![Stored secret](../media/github-actions-tutorial/secret-saved.png "Stored secret")
+    ![Stored service principal secret](../media/github-actions-tutorial/secret-saved.png "Stored service principal secret")
 
 
 ## Create a workflow to export and unpack the solution file to a new branch
