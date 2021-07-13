@@ -68,15 +68,15 @@ You now have the development, build, and production environments needed in the f
 
     ![Application registration](../media/github-actions-tutorial/App-registration.png "Application registration")
 
-3. On the navigation panel of the overview page, select API permissions.
+3. On the navigation panel of the **Overview** page, select **API permissions**.
 
-4. Choose **+ Add a permission**, and in the Microsoft APIs tabs, Choose **Dynamics CRM**.
+4. Choose **+ Add a permission**, and in the **Microsoft APIs** tab, Choose **Dynamics CRM**.
 
 5.  In the **Request API permissions** form, select **Delegated permissions**, check **user_impersonation**, and then choose **Add permissions**.
 
-6.  From the **Request API permissions** form, choose **PowerApps Runtime Service**, check **user_impersonation**, and then choose **Add permissions**.
+6.  From the **Request API permissions** form, choose **PowerApps Runtime Service**, select **Delegated permissions**, check **user_impersonation**, and then choose **Add permissions**.
 
-7.  From the **Request API permissions** form, choose **APIs my organization uses**, search for "PowerApps-Advisor", select **PowerApps-Advisor** and **Application permissions** with **Analysis.All** rights.
+7.  From the **Request API permissions** form, choose **APIs my organization uses**, search for "PowerApps-Advisor" using the search field, select **PowerApps-Advisor** in the results list, select **Delegated permissions**, check **Analysis.All** rights, and then choose **Add permissions**.
 
   ![API permissions](../media/github-actions-tutorial/API-Permissions.png "API permissions")
 
@@ -92,23 +92,23 @@ You now have the development, build, and production environments needed in the f
  
  In order for the GitHub workflow to deploy solutions as part of a CI/CD pipeline an "Application user" needs to be given access to the environment. An "Application user" represents an unlicensed user that is authenticated using the application registration completed in the prior steps.
 
-  1. Navigate to your Dataverse environment (https://*[org]*.crm.dynamics.com).
+1. Navigate to your Dataverse environment (https://*[org]*.crm.dynamics.com).
 
-  2. Navigate to **Settings > Security > Users**.
+2. Navigate to **Settings > Security > Users**.
 
-  3. Select the link **app users list**.
+3. Select the link **app users list**.
   
-    ![Application user list](../media/github-actions-tutorial/App-user-link.png "Application user list")
+  ![Application user list](../media/github-actions-tutorial/App-user-link.png "Application user list")
   
-  4. Select **+ new app user**. A panel will open on the right hand side of the screen.
+4. Select **+ new app user**. A panel will open on the right hand side of the screen.
 
-  5. Select **+ Add an app**. A list of all the application registrations in your Azure AD tenant is shown. Proceed to select the application name from the list that you registered.
+5. Select **+ Add an app**. A list of all the application registrations in your Azure AD tenant is shown. Proceed to select the application name from the list of registered apps.
 
   6. Under **Business unit**, in the drop down box, select your environment as the business unit.
 
   7. Under **Security roles**, select **System administrator**, and then select **create**. This will allow the service principal access to the environment.
 
-    ![New application user creation](../media/github-actions-tutorial/new-app-user.png "New application user")
+  ![New application user creation](../media/github-actions-tutorial/new-app-user.png "New application user")
 
 Now that you have created the service principal, you can use either the service principal or the standard username and password for your GitHub Workflow. 
 
