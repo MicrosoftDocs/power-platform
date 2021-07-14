@@ -124,8 +124,6 @@
           href: admin-settings.md      
         - name: Environment database settings
           href: environment-database-settings.md   
-        - name: D365 Org DB Settings
-          href: orgdborgsettings.md
         - name: Product 
           items:
           - name: Behavior 
@@ -705,7 +703,9 @@
       - name: Server-side synchronization
         items:
         - name: About server-side sync
-          href: server-side-synchronization.md
+          href: server-side-synchronization.
+        - name: D365 OrgDB settings for server-side sync
+          href: orgdborgsettings.md
         - name: Set up server-side sync
           items:
           - name: Overview
