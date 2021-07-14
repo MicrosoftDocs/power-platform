@@ -24,10 +24,10 @@ search.app:
 This three part tutorial will give you an opportunity to get hands on with best practices to automate building and deploying your app using GitHub Actions for Power Platform. The first two tutorials are all about setting up required environments and creating a solution to later use with GitHub Actions. If you are experienced with creating environments and solutions, you can follow the Tip below and skip to the third tutorial to begin using GitHub Actions for Power Platform.
 
 > [!div class="checklist"]
-> * (1) Create three Microsoft Dataverse environments in your tenant
->   (2) **Highly Recommended** Create a Service Principal and provide the appropriate permissions 
-> * (3) Create a model-driven app
-> * (4) Export and deploy your app using application lifecycle management (ALM) automation
+> * Create three Microsoft Dataverse environments in your tenant
+> * (**Highly recommended**) Create a service principal and provide the appropriate permissions 
+> * Create a model-driven app
+> * Export and deploy your app using application lifecycle management (ALM) automation
 
 > [!TIP]
 > If you are already familiar with the concept of multiple Dataverse environments as well as how to use solutions to package your app, simply download and use the sample [ALMLab solution](https://github.com/microsoft/powerplatform-actions-lab/blob/main/solutions/ALMLab_1_0_0_1.zip) and then skip to the [last tutorial](github-actions-deploy.md) of this series.
