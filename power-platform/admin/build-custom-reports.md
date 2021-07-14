@@ -24,15 +24,15 @@ This topic discusses how you can use data exported from Power Apps with other li
 
 ## Background
 
-Microsoft Power Platform self-service analytics enables you to export Power Apps inventory and usage data to [Azure Data Lake Storage Gen2](/power-bi/transform-model/dataflows/dataflows-azure-data-lake-storage-integration)<!--note from editor: The target topic doesn't follow the Cloud Style Guide, and in fact the style guide would say that "Gen2" isn't required in this topic either because it doesn't mention Gen1, but you probably had your reasons. --> storage locations. To learn more about exporting Power Apps inventory and usage data to a [Common Data Model](/common-data-model/) schema file, go to [Set up Microsoft Power Platform self-service analytics to export Power Apps inventory and usage data](self-service-analytics.md).
+Microsoft Power Platform self-service analytics enables you to export Power Apps inventory and usage data to [Azure Data Lake Storage Gen2](/power-bi/transform-model/dataflows/dataflows-azure-data-lake-storage-integration) storage locations. To learn more about exporting Power Apps inventory and usage data to a [Common Data Model](/common-data-model/) schema file, go to [Set up Microsoft Power Platform self-service analytics to export Power Apps inventory and usage data](self-service-analytics.md).
 
-<!--note from editor: It's not a good user experience to repeat this section wholesale. Recommend removing it from this topic.-->
+
 ## Extensible analytics with Data Lake Storage
 
 You can use Power Platform admin center self-service options based on Data Lake Storage to extend Power Apps telemetry by using data from other sources. Use cloud analytics and AI to take advantage of predictive analytics within service monitoring solutions. The following diagram illustrates an example of how to derive intelligence from Power Apps telemetry data. 
 
 :::image type="complex" source="media/azure-resources.png" alt-text="Diagram showing Azure resources.":::
-NEED A LONG DESCRIPTION HERE
+A diagram of limitless extensibility options through using cloud analytics and AI is divided into three areas. Microsoft Power Platform apps - Power BI, Power Apps, and Power Automate - are shown collectively supplying governance, monitoring, and management to the middle area, the customer's Data Lake Storage. The data lake includes Power Platform admin center analytics and organizational datasets, all informed by cloud intelligence. On the right, the customer's dashboard is the core of an app workspace where data lake data is analyzed and acted on.
 :::image-end:::
 
 
@@ -161,7 +161,7 @@ The following tables detail the schema definitions of the data. Metadata are con
 | Description             | Longtext           | App description (not available currently)         |
 | tenantId                | Guid               | Customer tenant ID                             |
 | Environmentid           | Longtext           | Environment ID                                |
-| Type                    | Longtext           | Power Apps app<!--note from editor: Edit okay? -->                                     |
+| Type                    | Longtext           | Power Apps app  |
 | Subtype                 | Longtext           | Canvas \| Model \| Pages                      |
 | DocumentVersion         | Datetime           | The date-and-time stamp is used as the app version          |
 | Uri                     | Longtext           | App URI                                       |
@@ -226,8 +226,8 @@ The following tables detail the schema definitions of the data. Metadata are con
 | Environmentregion       | Longtext           | Environment geo location                                     |
 | EnvironmentUrl          | Longtext           | Environment URL                                              |
 | isDefault               | Longtext           | Boolean value to indicate whether this is the default environment  |
-| CdsInstanceURL          | Longtext           | Common Data Service<!--note from editor: Should this be Dataverse?--> environment URI                                          |
-| CdsInstanceId           | Guid               | Common Data Service<!--note from editor: Should this be Dataverse?--> instance identifier                                      |
+| CdsInstanceURL          | Longtext           | Dataverse environment URI                                          |
+| CdsInstanceId           | Guid               | Dataverse environment identifier                                      |
 | createdPrincipalId      | Guid               | Azure AD object ID of the app creator principal                       |
 | CreatedTime             | Datetime           | Date the app was created                                         |
 | lastModifiedPrincipalId | Guid               | Azure AD object ID of the user who last modified the app          |
@@ -253,7 +253,7 @@ The following tables detail the schema definitions of the data. Metadata are con
 | DataVersion        | Int(11)            | Table data, not user-related                                 |
 
 > [!NOTE]
-> The latest versions of generally well-known platform operating systems should contain data, but in some cases this data might not be available and isn't always guaranteed to be valid.<!--note from editor: Edit okay? I wasn't sure what "isn't always guaranteed" referred to.---> 
+> The latest versions of generally well-known platform operating systems should contain data, but in some cases this data might not be available. 
 
 ## FAQ
 

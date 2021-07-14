@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/25/2021
+ms.date: 07/14/2021
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -26,16 +26,16 @@ With the Power Platform admin center, you can export Power Apps inventory and us
 Data Lake Storage is a key part of Cortana Intelligence, meaning that it works with Azure Synapse Analytics, Power BI, and Azure Data Factory for a complete cloud big-data and advanced analytics platform that helps you with everything from data preparation to doing interactive analytics on large-scale datasets. Architected from the ground up for cloud scale and performance, Data Lake Storage is a cost-effective solution to run big data workloads. With Data Lake Storage, your organization can analyze all its data in a single place with no artificial constraints. 
 
 > [!NOTE]
-> At general availability, enablement of data export will be limited to customers with a paid, premium Microsoft Dataverse license<!--note from editor: Note singular license. If it should be plural, please delete "a".--> available for the tenant. Details of these requirements will be provided in admin documentation and in general availability [release plans](/dynamics365/release-plans/). Additional details about minimum Dataverse capacity requirements to access the data export features will be announced in advance of general availability.
+> At general availability, enablement of data export will be limited to customers with a paid, premium Microsoft Dataverse license available for the tenant. Details of these requirements will be provided in admin documentation and in general availability [release plans](/dynamics365/release-plans/). Additional details about minimum Dataverse capacity requirements to access the data export features will be announced in advance of general availability.
 
 ## Prerequisites
 
 - To set up data export in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), you'll need one of these roles: Power Platform Service admin, Dynamics 365 admin, or Microsoft 365 Global admin.
 
-- [Create a storage account](/azure/storage/blobs/create-data-lake-storage-account) to use with Azure Data Lake Storage Gen2.<!--note from editor: Is this use of "Gen2" intentional and necessary? The Cloud Style Guide suggests that unless Gen1 is mentioned in an article, we don't have to specify any version.--> Make sure you select the same location for the data lake storage account as your Power BI tenant. To learn more about how to determine your Power BI tenant location, see [Where is my Power BI tenant located?](/power-bi/admin/service-admin-where-is-my-tenant-located). In addition, you must have *owner* or *contributor* access to the Data Lake Storage account, in addition to *owner* or *contributor* access to the Azure subscription. 
+- [Create a storage account](/azure/storage/blobs/create-data-lake-storage-account) to use with Azure Data Lake Storage Gen2. Make sure you select the same location for the data lake storage account as your Power BI tenant. To learn more about how to determine your Power BI tenant location, see [Where is my Power BI tenant located?](/power-bi/admin/service-admin-where-is-my-tenant-located). In addition, you must have *owner* or *contributor* access to the Data Lake Storage account, in addition to *owner* or *contributor* access to the Azure subscription. 
 
   > [!NOTE]
-  > Your organization's Azure Active Directory (Azure AD) global admin must be the one who sets up the connection. This is required because your tenant has to allow the service to access the Data Lake Storage account. This is a one-time setup only, and will need to be performed by the Azure AD admin.<!--note from editor: I moved step 3 to this note because it isn't a step. (Step 1 wasn't either, so I changed to bullets.-->
+  > Your organization's Azure Active Directory (Azure AD) global admin must be the one who sets up the connection. This is required because your tenant has to allow the service to access the Data Lake Storage account. This is a one-time setup only, and will need to be performed by the Azure AD admin.
 
 ## Simplify data with Data Lake Storage
 
@@ -48,15 +48,12 @@ You can store exported data for extended durations, and you can move data to dat
 You can use Power Platform admin center self-service options based on Data Lake Storage to extend Power Apps telemetry by using data from other sources. Use cloud analytics and AI to take advantage of predictive analytics within service monitoring solutions. The following diagram illustrates an example of how to derive intelligence from Power Apps telemetry data. 
 
 :::image type="complex" source="media/azure-resources.png" alt-text="Diagram showing Azure resources.":::
-  <!--note from editor: I don't think the current alt text adequately describes this image. I've added a suggested long description - please make it better! (Note that I changed the image type to "complex", so if you don't want a more detailed description, you'll want to change the image type back to "content".) -->A diagram of limitless extensibility options through using cloud analytics and AI is divided into three areas. Microsoft Power Platform apps - Power BI, Power Apps, and Power Automate - are shown collectively supplying governance, monitoring, and management to the middle area, the customer's Data Lake Storage. The data lake includes Power Platform admin center analytics and organizational datasets, all informed by cloud intelligence. On the right, the customer's dashboard is the core of an app workspace where data lake data is analyzed and acted on.
+A diagram of limitless extensibility options through using cloud analytics and AI is divided into three areas. Microsoft Power Platform apps - Power BI, Power Apps, and Power Automate - are shown collectively supplying governance, monitoring, and management to the middle area, the customer's Data Lake Storage. The data lake includes Power Platform admin center analytics and organizational datasets, all informed by cloud intelligence. On the right, the customer's dashboard is the core of an app workspace where data lake data is analyzed and acted on.
 :::image-end:::
-
-:::image type="content" source="media/azure-resources.png" alt-text="Azure resources.":::
-
 
 ## Data
 
-The amount of data that you can export depends on your Power Apps usage. The initial [Common Data Model](/common-data-model/) schema file contains inventory data of all the Power Apps in your related information.<!--note from editor:: This use of "Power Apps" doesn't look right (it looks like a reference to Power Apps apps), but I can't suggest an alternative because I'm not sure what this all means.--> After the initial export, an incremental data push occurs daily.
+The amount of data that you can export depends on your Power Apps app usage. The initial [Common Data Model](/common-data-model/) schema file contains inventory data of all the Power Apps in your related information. After the initial export, an incremental data push occurs daily.
 
 For example, an enterprise customer with two years' worth of inventory data might have 300 MB of data to export. After the initial export, approximately 5 to 10 MB of that data would be pushed daily.
 
