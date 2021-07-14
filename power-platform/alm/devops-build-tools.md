@@ -157,7 +157,7 @@ Ensure that the added Application User has the system administrator role assigne
 
 ### See Also
 
-[Build tool tasks](devops-build-tool-tasks.md)
-
+[Build tool tasks](devops-build-tool-tasks.md)  
+[Microsoft Power Platform Build Tools labs](https://github.com/microsoft/PowerApps-Samples/tree/master/build-tools)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
