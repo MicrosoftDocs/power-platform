@@ -145,4 +145,12 @@ Monitoring Cloud flow runs is currently not included in the CoE Starter Kit. Mon
 
 If you want more details for Desktop flows runs please see this solution available outside the CoE Starter Kit: [Advanced Power Automate RPA Run Log Analytics with PowerBI and Dataverse](https://flow.microsoft.com/blog/advanced-power-automate-rpa-run-log-analytics-with-power-bi-and-dataverse/)
 
+## Unpublished Model Driven Apps
+
+Model Driven Apps that are not published are not surfaced in the inventory because the are not returned to us from the storage table. This is a product limitation and will not be fixed in the sync flows.  
+
+## Large Desktop Flows
+
+Desktop Flows that are large are not surfaced in the inventory because one of the fields returned is too big for the flows.  This is a product limitation that will be fixed when the new Dataverse connector allows us to select environments. 
+
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
