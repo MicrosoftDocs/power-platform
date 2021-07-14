@@ -18,7 +18,7 @@ search.app:
 ---
 # D365 Org DB Settings 
 
-This topic covers the default value of OrgDBOrgSettings. For information on how to edit these settings, see [Environment database settings](environment-database-settings.md).
+This topic covers the default values of OrgDBOrgSettings. For information on how to edit these settings, see [Environment database settings](environment-database-settings.md).
 
 | Name | Default value | Description |
 |-------------------------|-------------------------|-------------------------|
