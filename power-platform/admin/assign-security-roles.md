@@ -53,6 +53,14 @@ Follow these steps to assign a security role.
 
 To assign security roles to users in an environment that has zero or one Microsoft Dataverse database, see [Configure user security to resources in an environment](database-security.md). 
 
+## (Optional) Assign an administrator role  
+ You can share [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)] administration tasks among several people by assigning [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)] administrator roles to users you select to fill each role. You might decide to assign the global administrator role to a second person in your organization for times when you're not available.  
+  
+ There are five [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)] administrator roles with varying levels of permissions. For example, the password reset administrator role can reset user passwords only; the user management administrator role can reset user passwords in addition to adding, editing, or deleting user accounts; and the global administrator role can add online service subscriptions for the organization and manage all aspects of subscriptions. For detailed information about [!INCLUDE[pn_MS_Online_Services](../includes/pn-ms-online-services.md)] administrator roles, see [Assigning Admin Roles](/microsoft-365/admin/add-users/assign-admin-roles).  
+  
+> [!NOTE]
+> [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)] administrator roles are valid only for managing aspects of the online service subscription. These roles don't affect permissions within the service.
+
 ### See also
 [Get started with security roles in Dataverse](/learn/modules/get-started-security-roles/)
 [Create security roles](create-users.md)
