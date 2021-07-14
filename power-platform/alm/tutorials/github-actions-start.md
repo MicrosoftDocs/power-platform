@@ -25,7 +25,7 @@ This three part tutorial will give you an opportunity to get hands on with best 
 
 > [!div class="checklist"]
 > * Create three Microsoft Dataverse environments in your tenant
-> * **Highly Recommended** Create a Service Principal and provide the appropriate permissions 
+> * (**Highly Recommended**) Create a Service Principal and provide the appropriate permissions 
 > * Create a model-driven app
 > * Export and deploy your app using application lifecycle management (ALM) automation
 
