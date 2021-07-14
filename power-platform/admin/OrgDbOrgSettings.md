@@ -1,6 +1,6 @@
 ---
-title: "Defulat OrgDBOrgSettings  | MicrosoftDocs"
-description: This topic covers the default options available in OrgDBOrgSettings.
+title: "Defulat OrgDBOrgSettings server-side sync  | MicrosoftDocs"
+description: This topic covers the default options available in OrgDBOrgSettings related to server-side sync.
 author: mduelae
 ms.service: power-platform
 ms.component: pa-admin
@@ -16,9 +16,9 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# D365 Org DB Settings 
+# D365 OrgDBSettings for server-side sync
 
-This topic covers the default values of OrgDBOrgSettings. For information on how to edit these settings, see [Environment database settings](environment-database-settings.md).
+This topic covers the default values of OrgDBOrgSettings that are specific to server-side sync. For information on how to edit these settings, see [Environment database settings](environment-database-settings.md).
 
 | Name | Default value | Description |
 |-------------------------|-------------------------|-------------------------|
