@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/25/2021
+ms.date: 07/14/2021
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -17,7 +17,7 @@ search.app:
   - Flow
 ---
 # Preview: Create custom dashboards by using Power Apps inventory and usage data
-<!--note from editor: The title of this topic makes me expect to see some guidance about actually creating dashboards. Will the reader understand how to use the information here to accomplish this task, or might the title be adjusted to reflect what's in this topic? Something like "Understand Power Apps inventory and usage data to power data insights." But better.-->
+
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 This topic discusses how you can use data exported from Power Apps with other line-of-business scenarios, and display data insights at tenant and environment levels across business units. For example, you can use exported Power Apps inventory and usage data for your existing enterprise dashboards and other custom solutions.
@@ -26,7 +26,7 @@ This topic discusses how you can use data exported from Power Apps with other li
 
 Microsoft Power Platform self-service analytics enables you to export Power Apps inventory and usage data to [Azure Data Lake Storage Gen2](/power-bi/transform-model/dataflows/dataflows-azure-data-lake-storage-integration)<!--note from editor: The target topic doesn't follow the Cloud Style Guide, and in fact the style guide would say that "Gen2" isn't required in this topic either because it doesn't mention Gen1, but you probably had your reasons. --> storage locations. To learn more about exporting Power Apps inventory and usage data to a [Common Data Model](/common-data-model/) schema file, go to [Set up Microsoft Power Platform self-service analytics to export Power Apps inventory and usage data](self-service-analytics.md).
 
-<!--note from editor: It's not a good user experience to repeat this section wholesale. Recommend removing it from this topic.
+<!--note from editor: It's not a good user experience to repeat this section wholesale. Recommend removing it from this topic.-->
 ## Extensible analytics with Data Lake Storage
 
 You can use Power Platform admin center self-service options based on Data Lake Storage to extend Power Apps telemetry by using data from other sources. Use cloud analytics and AI to take advantage of predictive analytics within service monitoring solutions. The following diagram illustrates an example of how to derive intelligence from Power Apps telemetry data. 
