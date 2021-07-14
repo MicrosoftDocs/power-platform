@@ -123,7 +123,9 @@
         - name: Microsoft Dataverse settings
           href: admin-settings.md      
         - name: Environment database settings
-          href: environment-database-settings.md     
+          href: environment-database-settings.md   
+        - name: D365 Org DB Settings
+          href: orgdborgsettings.md
         - name: Product 
           items:
           - name: Behavior 
