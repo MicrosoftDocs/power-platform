@@ -23,7 +23,7 @@ Microsoft provides business continuity and disaster recovery for production inst
 
 For production environments, a replica of the different storage services (Azure SQL and file storage) is established in the secondary region for each environment at the time of deployment. For more information, see [Environments](environments-overview.md). These replicas are referred to as geo-secondary replicas. The geo-secondary replicas are kept synchronized with the primary instance through continuous data replication. There is a small replication latency or lag, typically less than a few minutes, between the primary data sources and their corresponding geo-secondary replicas. For more information, see [Ensure business continuity amd disaster recovery (BCDR): Azure Paired Regions](/azure/best-practices-availability-paired-regions).
 
-![For production environments, a replica of the different storage services (Azure SQL and File storage) is established in the secondary region for each environment.](media/dataverse-customer-engagement-apps.png)
+:::image type="content" source="media/dataverse-customer-engagement-apps.png" alt-text="For production environments, a replica of the different storage services (Azure SQL and File storage) is established in the secondary region for each environment.":::
 
 As seen in the preceding diagram, similar to data storage services, compute infrastructure is also provisioned in both regions in such a way that it can handle the traffic volume in case of an environment or region-level failover. See the following sections on the different types of failovers that are possible and how Microsoft manages service continuity in either of these situations.
 
