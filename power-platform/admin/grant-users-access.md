@@ -57,7 +57,7 @@ In Power Apps, populate the service with your organization’s data, including u
 <a name="BKMK_StepTwo"></a>   
 
 ## Step Two: Assign security roles in Dynamics 365 apps  
- Sign in to customer engagement apps and add business units (if your organization needs more than one business unit), and assign security roles and business units to users. The users you registered with the online service in step one are automatically added to customer engagement apps. After you assign at least one security role to a user, that user can click the link in the email invitation, enter credentials, and begin using customer engagement apps. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Assign a security role to a user](create-users-assign-online-security-roles.md#assign-a-security-role-to-a-user).  
+ Sign in to customer engagement apps and add business units (if your organization needs more than one business unit), and assign security roles and business units to users. The users you registered with the online service in step one are automatically added to customer engagement apps. After you assign at least one security role to a user, that user can click the link in the email invitation, enter credentials, and begin using customer engagement apps. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Assign a security role to a user](create-users.md#assign-a-security-role-to-a-user).  
   
 > [!IMPORTANT]
 > Before you start adding information to customer engagement apps, we recommend that you turn off or disable your browser’s pop-up blocker. Pop-up blockers can block data-entry dialog boxes. 
