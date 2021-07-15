@@ -33,7 +33,7 @@ Follow these steps to connect customer engagement apps (such as [Dynamics 365 Sa
 1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.   
    
 > [!NOTE]
-> If you're using the web app, see [Create an email server profile using the legecy web app]().
+> If you're using the web app, see [Create an email server profile using the legecy web app](connect-to-imap-servers.md#create-an-email-server-profile-using-the-legecy-web-app).
 
 2. On the command bar select **Settings** > **Email** > **Server profiles**.  
     
