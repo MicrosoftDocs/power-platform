@@ -77,6 +77,8 @@ landingContent:
             url: alm-for-developers.md
           - text: Microsoft Power Platform Build Tools for Azure DevOps
             url: devops-build-tools.md
+          - text: GitHub Actions for Microsoft Power Platform
+            url: devops-github-actions.md
           - text: Work with solution components
             url: component-framework.md
           - text: Solution and packaging tools
