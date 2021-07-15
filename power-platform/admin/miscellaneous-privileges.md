@@ -319,7 +319,7 @@ The following table lists the privileges shown in the security role editor misce
 <tr class="even">
 <td><p>Enable or Disable User</p></td>
 <td><p>prvDisableUser</p></td>
-<td><p><a href="/power-platform/admin/create-users-assign-online-security-roles#enable-or-disable-user-accounts">Enable or disable user accounts</a></p></td>
+<td><p><a href="/power-platform/admin/create-users#enable-or-disable-user-accounts">Enable or disable user accounts</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Language Settings</p></td>
@@ -359,7 +359,7 @@ The following table lists the privileges shown in the security role editor misce
 <tr class="even">
 <td><p>Reparent user</p></td>
 <td><p>prvReparentUser</p></td>
-<td><p><a href="/power-platform/admin/create-users-assign-online-security-roles">Create users and assign security roles</a></p></td>
+<td><p><a href="/power-platform/admin/create-users">Create users</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Send Email as Another User</p></td>
