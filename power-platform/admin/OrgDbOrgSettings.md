@@ -16,7 +16,8 @@ search.app:
   - Powerplatform
   - Flow
 ---
-OrgDBSettings for server-side sync
+
+# OrgDBSettings for server-side sync
 
 This topic covers the default values of OrgDBOrgSettings that are specific to server-side sync. For information on how to edit these settings, see [Environment database settings](environment-database-settings.md).
 
