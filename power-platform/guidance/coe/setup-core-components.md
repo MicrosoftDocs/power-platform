@@ -92,7 +92,7 @@ This is the first step of the installation process and is required for every oth
     | Developer Compliance Center         | Leave empty on Import and do the following to populated after set up of the [Governance components](setup-governance-components.md).<br> Navigate to the details page of the Developer Compliance Center (canvas app) included with this solution, and copy the web link (to launch the app) and paste it into this variable.  |
     |PowerApp Maker environment variable | The maker URL used by PowerApps for your cloud, including trailing slash. Here are examples:<br> For a US environment: <https://make.powerapps.com/> <br> For a GCC environment: <https://make.gov.powerapps.us/> <br>For a GCC High environment: <https://make.high.powerapps.us/> |
     |PowerApp Player environment variable | The player URL used by PowerApps for your cloud, including trailing slash. Here are examples:<br> For a US environment: <https://apps.powerapps.com/> <br> For a GCC environment: <https://apps.gov.powerapps.us/> <br>For a GCC High environment: <https://apps.gov.powerapps.us/> |
-    |Power Automate environment variable | The URL used by flow for your region. Here are examples:<br> For a US environment: <https://us.flow.microsoft.com/manage/environments/> <br> For a Canadian environment: <https://canada.flow.microsoft.com/manage/environments/> <br>For an EMEA environment: <https://emea.flow.microsoft.com/manage/environments/> <br>For a GCC environment: <https://gov.flow.microsoft.us/manage/environments/> |
+    |Power Automate environment variable | The URL used by flow for your region. Here are examples:<br> For a US environment: <https://us.flow.microsoft.com/manage/environments/> <br> For a Canadian environment: <https://canada.flow.microsoft.com/manage/environments/> <br>For an EMEA environment: <https://emea.flow.microsoft.com/manage/environments/> <br>For a GCC environment: <https://gov.flow.microsoft.us/manage/environments/> <br> For a GCC High environment: <https://high.flow.microsoft.us/manage/environments><br>If your region is not listed here, navigate to [flow.microsoft.com](https://flow.microsoft.com) and copy the URL the page directs to from the browser.|
     | Power Platform Maker Microsoft 365 Group | The Admin \| Welcome Email flow sends a welcome email to onboard new makers and adds them to a Microsoft 365 group. You can use this group to send communications to your makers or invite them to a Yammer or Teams group. Configure the group ID here.|
     | TenantID | Your Azure Tenant ID.|
 
@@ -143,7 +143,7 @@ Before you begin:
     - Office 365 Groups
     - SharePoint
     - Microsoft Teams
-    - HTTP with Azure AD: enter [https://graph.microsoft.com/](https://graph.microsoft.com/) as ase Resource URL and Azure AD Resource URI
+    - HTTP with Azure AD: set the Resource URL and Azure AD Resource URI to [https://graph.microsoft.com/](https://graph.microsoft.com/) for a commercial tenant, and [https://graph.microsoft.us/](https://graph.microsoft.us/) for a GCC High tenant.
 
     If you create a new connection, you must select **Refresh**. You won't lose your import progress.
 
