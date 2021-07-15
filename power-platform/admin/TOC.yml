@@ -123,7 +123,7 @@
         - name: Microsoft Dataverse settings
           href: admin-settings.md      
         - name: Environment database settings
-          href: environment-database-settings.md     
+          href: environment-database-settings.md   
         - name: Product 
           items:
           - name: Behavior 
@@ -336,32 +336,17 @@
         href: grant-users-access.md
       - name: View active users  
         href: admin-view-user-licenses.md
-      - name: Create users and assign security roles
-        href: create-users-assign-online-security-roles.md
-      - name: Manage application users
-        href: manage-application-users.md
-      - name: Delete users
-        href: delete-users.md
-      - name: Reset a user's password
-        href: reset-users-password.md          
-      - name: Assign licenses to users
-        href: create-users-assign-online-security-roles.md#add-a-license-to-a-user-account
-      - name: Assign service admin role to users
-        href: use-service-admin-role-manage-tenant.md#assign-a-service-admin-role-to-a-user
-      - name: Add users to an environment
-        href: add-users-to-environment.md
-      - name: Configure user security to resources
-        href: database-security.md
-      - name: Configure user access to an environment
-        href: control-user-access.md  
-      - name: View user profile
-        href: /powerapps/user/view-your-user-profile
+      - name: Create users
+        href: create-users.md
+      - name: Assign licenses
+        href: assign-licenses.md
+
       - name: Assign security roles
         items:  
         - name: About security roles and privileges
           href: security-roles-privileges.md
-        - name: Create users and assign security roles
-          href: create-users-assign-online-security-roles.md
+        - name: Assign security roles
+          href: assign-security-roles.md
         - name: Opt-out of automatic license-based user roles management
           href: opt-out-automatic-license.md
         - name: Use service admin roles to manage your tenant
@@ -372,6 +357,23 @@
           href: create-edit-security-role.md
         - name: Copy a security role
           href: copy-security-role.md
+
+      - name: Manage application users
+        href: manage-application-users.md
+      - name: Delete users
+        href: delete-users.md
+      - name: Reset a user's password
+        href: reset-users-password.md          
+      - name: Assign service admin role to users
+        href: use-service-admin-role-manage-tenant.md#assign-a-service-admin-role-to-a-user
+      - name: Add users to an environment
+        href: add-users-to-environment.md
+      - name: Configure user security to resources
+        href: database-security.md
+      - name: Configure user access to an environment
+        href: control-user-access.md  
+      - name: View user profile
+        href: /powerapps/user/view-your-user-profile
       - name: Create an administrative user
         href: prevent-elevation-security-role-privilege.md
       - name: Troubleshoot common user access issues 
@@ -704,6 +706,8 @@
         items:
         - name: About server-side sync
           href: server-side-synchronization.md
+        - name: OrgDBSettings for server-side sync
+          href: orgdborgsettings.md
         - name: Set up server-side sync
           items:
           - name: Overview

@@ -80,9 +80,9 @@ GitHub Actions for Microsoft Power Platform can run on both Microsoft Windows ag
 
 ## Frequently asked questions
 
-***How do I get started with GitHub actions?***
+***How do I get started with GitHub Actions?***
 
-*[GitHub Actions Hands on Lab](./tutorials/github-actions-start.md) is available right now for you try out. The labs show how to use Service Principal authentication and standard username/password authentication.*
+*[Tutorial: Get started with GitHub Actions](./tutorials/github-actions-start.md) is available right now for you try out. The tutorials show how to use service principal authentication and standard username/password authentication.*
 
 ***How do I get GitHub Actions for Microsoft Power Platform working in my repository?***
 
@@ -104,7 +104,7 @@ GitHub Actions for Microsoft Power Platform can run on both Microsoft Windows ag
 
 ### See also
 
-[Available GitHub Actions Hands on Lab](./tutorials/github-actions-start.md)
+[Available GitHub Actions Hands on Lab](https://github.com/microsoft/powerplatform-actions-lab)
 
 
 [Available GitHub Actions](devops-github-available-actions.md)
