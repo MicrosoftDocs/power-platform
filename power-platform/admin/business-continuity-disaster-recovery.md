@@ -29,20 +29,26 @@ As seen in the preceding diagram, similar to data storage services, compute infr
 
 To learn more about data protection in non-production environments, see [Back up and restore environments](backup-restore-environments.md).
 
-### Unplanned failover
+## Unplanned failover
 Dataverse is built for high availability and reliability, which ensures that in the event of underlying Azure platform issues, the platform automatically leverages resources in other zones within the same regions to ensure availability isn’t impacted. For more information about Azure availability zones, see [Regions and Availability Zones in Azure](/azure/availability-zones/az-overview).
 
 In the event of an unanticipated region wide outage, such as a natural disaster which affects the entire Azure region, and Microsoft determines that the region will not become available within a reasonable amount of time, Microsoft will notify customers and switch over the traffic to route to the secondary instances. In this case, it possible that customers may experience a data loss of up to 15 minutes, depending on the nature and timing of the outage. 
 
-### Planned failover
+## Planned failover
 In the event that Microsoft determines there is a risk to the availability of the primary Azure region, for example if there is an impending hurricane, Microsoft will notify customers and switch over the traffic to route to the secondary replica instances. Users connected to customer engagement and Dataverse apps at the time of the failover will experience a brief disruption. There will be no data loss as both Azure regions are online and data is replicated fast enough on the secondary replica.
 
-> ![Important]
+> [!IMPORTANT]
 > During the time the environment is operating out of the secondary region, there may be service degradation of non-production instances. It is possible that deployments of new non-production environments will also be affected.
 
-### Failback
+## Failback
 Microsoft will notify customers and switch back the environments to operate out of the primary region, when it determines the primary region is back online and is fully operational. Users connected to the systems will experience a brief interruption of up to one minute. The service is fully restored including all non-production instances. There is no data loss.
 
 Dataverse for Teams environments do not support secondary replicas and hence this feature of providing business continuity is not available until such Dataverse for Teams environments are converted to Dataverse production instances using the upgrade process described in [Upgrade process](about-teams-environment.md#upgrade-process).
 
 For more information about Dataverse for Teams environments, see [About the Microsoft Dataverse for Teams environment](about-teams-environment.md).
+
+### See also
+[Finance and Operations application documentation](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
