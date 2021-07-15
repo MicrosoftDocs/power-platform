@@ -336,14 +336,28 @@
         href: grant-users-access.md
       - name: View active users  
         href: admin-view-user-licenses.md
-      - name: Create users and assign security roles
-        href: create-users-assign-online-security-roles.md
       - name: Create users
         href: create-users.md
-      - name: Assign security roles
-        href: assign-security-roles.md
       - name: Assign licenses
         href: assign-licenses.md
+
+      - name: Assign security roles
+        items:  
+        - name: About security roles and privileges
+          href: security-roles-privileges.md
+        - name: Assign security roles
+          href: assign-security-roles.md
+        - name: Opt-out of automatic license-based user roles management
+          href: opt-out-automatic-license.md
+        - name: Use service admin roles to manage your tenant
+          href: use-service-admin-role-manage-tenant.md
+        - name: Miscellaneous privileges
+          href: miscellaneous-privileges.md
+        - name: Create or edit a security role
+          href: create-edit-security-role.md
+        - name: Copy a security role
+          href: copy-security-role.md
+
       - name: Manage application users
         href: manage-application-users.md
       - name: Delete users
@@ -360,22 +374,6 @@
         href: control-user-access.md  
       - name: View user profile
         href: /powerapps/user/view-your-user-profile
-      - name: Assign security roles
-        items:  
-        - name: About security roles and privileges
-          href: security-roles-privileges.md
-        - name: Create users and assign security roles
-          href: create-users-assign-online-security-roles.md
-        - name: Opt-out of automatic license-based user roles management
-          href: opt-out-automatic-license.md
-        - name: Use service admin roles to manage your tenant
-          href: use-service-admin-role-manage-tenant.md
-        - name: Miscellaneous privileges
-          href: miscellaneous-privileges.md
-        - name: Create or edit a security role
-          href: create-edit-security-role.md
-        - name: Copy a security role
-          href: copy-security-role.md
       - name: Create an administrative user
         href: prevent-elevation-security-role-privilege.md
       - name: Troubleshoot common user access issues 
