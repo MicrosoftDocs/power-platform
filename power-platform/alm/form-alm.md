@@ -126,7 +126,6 @@ Follow these steps to implement healthy form ALM for this scenario.
 
 <!-- ![Scenario 6 form application lifecycle management diagram.](media/scenario6-form-alm-diagram.png) -->
 
-:::image type="content" source="media/scenario6-form-alm-diagram.png" alt-text="Scenario 6 form application lifecycle management diagram.":::
 :::image type="content" source="media/scenario6-form-alm-diagram.png" alt-text="Scenario 6 form application lifecycle management diagram." lightbox="media/scenario6-form-alm-diagram.png":::
 
 ## Full and differential form XML
