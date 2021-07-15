@@ -44,7 +44,7 @@ The available incoming email configurations that you can use when a user or a qu
   
 - **Server-Side Synchronization or Email Router**. When you select this option, the server-side synchronization or email router will process email messages directly from the user's or queue's inbox, without using a forward or a sink mailbox. 
   
-- **Forward Mailbox**. This option requires a sink mailbox, which is a dedicated mailbox that collects email messages transferred from each user's mailbox by a server-side rule. Although, this option doeen't require users to run Outlook, it does require that the rule be deployed for each user. You use the **Rule Deployment Wizard** to deploy rules to each user mailbox. This option was provided for initial migration to server-side synchronization from previous versions of Dynamics 365. It isn't a recommended option as a long-term solution due to performance reasons. More information: [Forward mailbox vs. individual mailboxes](forward-mailbox-vs-individual-mailboxes.md) 
+- **Forward Mailbox**. This option requires a sink mailbox, which is a dedicated mailbox that collects email messages transferred from each user's mailbox by a server-side rule. Although, this option doesn't require users to run Outlook, it does require that the rule be deployed for each user. You use the **Rule Deployment Wizard** to deploy rules to each user mailbox. This option was provided for initial migration to server-side synchronization from previous versions of Dynamics 365. It isn't a recommended option as a long-term solution due to performance reasons. More information: [Forward mailbox vs. individual mailboxes](forward-mailbox-vs-individual-mailboxes.md) 
   
 ## Outgoing email messaging options  
 The available outgoing email configurations that you can use when users or queues send email messages are as follows:
@@ -56,11 +56,11 @@ The available outgoing email configurations that you can use when users or queue
 - **Server-Side Synchronization or Email Router**. This option delivers email messages by using the server-side synchronization or email router component. The email system must be SMTP-compliant. The server-side synchronization or email router can be installed on the SMTP server or on a different computer that has a connection to the SMTP server.
 
 
-## Find the right combitation of settings 
+## Find the right combination of settings 
 
 Email auto tracking behavior for a given user or queue is a combination of personal options and system settings. In addition to synchronization methods described above, server-side sync honors a user's [personal email options](/powerapps/user/set-personal-options#email-tab-options) and environment level [system settings](system-settings-dialog-box-email-tab.md). 
 
-To help you find the right combitation of settings for your organization, see [Community forum: Dynamics 365 Customer Engagement – How to choose System Settings and Personal Options for automatic Email tracking](https://community.dynamics.com/crm/b/crminthefield/posts/dynamics-365-customer-engagement-how-to-choose-system-settings-and-personal-options-for-automatic-email-tracking).
+To help you find the right combination of settings for your organization, see [Community forum: Dynamics 365 Customer Engagement – How to choose System Settings and Personal Options for automatic Email tracking](https://community.dynamics.com/crm/b/crminthefield/posts/dynamics-365-customer-engagement-how-to-choose-system-settings-and-personal-options-for-automatic-email-tracking).
 
 
   
