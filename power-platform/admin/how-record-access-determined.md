@@ -121,7 +121,7 @@ In this case, the user would have access to the record if both of the following 
 
 ### See also
 [Security roles and privileges](security-roles-privileges.md) <br />
-[Create users and assign security roles](create-users-assign-online-security-roles.md) <br />
+[Create users](create-users.md) <br />
 [Create or edit a security role to manage access](create-edit-security-role.md)
 
 
