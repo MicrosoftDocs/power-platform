@@ -30,9 +30,10 @@ Follow these steps to connect customer engagement apps (such as [Dynamics 365 Sa
 
 ## Create an email server profile 
 
-### In Power Platform admin center 
-
-1. In the  [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment. 
+1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.   
+   
+> [!NOTE]
+> If you're using the web app, see [Create an email server profile using the legecy web app]().
 
 2. On the command bar select **Settings** > **Email** > **Server profiles**.  
     
@@ -64,7 +65,7 @@ Follow these steps to connect customer engagement apps (such as [Dynamics 365 Sa
 9. When you're done, select **Save**.
 
 
-### Legacy web client
+### Create an email server profile using the legecy web app
 
 1.  From the upper-right corner select the **Gear** icon (![Gear icon.](media/selection-rule-gear-button.png)). Then select **Advanced settings**. 
 
