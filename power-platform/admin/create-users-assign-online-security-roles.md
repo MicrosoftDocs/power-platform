@@ -155,7 +155,7 @@ To disable a user account, remove a license from the user or remove the user fro
 >
 > You can [assign records](/powerapps/user/assign-or-share-records) to a disabled user account and also [share reports](/dynamics365/customer-engagement/basics/share-report-users-teams) and accounts with them. This can be useful when migrating on-premises versions to online. If you need to assign a security role to users who have a Disabled status, you can do so by enabling the allowRoleAssignmentOnDisabledUsers in [OrgDBOrgSettings](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm).
 > 
-> A Global admin, Power Platform admin, or a Dynamics 365 admin does not need a license to be enabled in a Dataverse environment. See: [Global admins and Power Platform admins can administer without a license](global-service-administrators-can-administer-without-license.md). But since they are unlicensed, they will be set in the [Administrative access mode](create-users-assign-online-security-roles.md#create-a-read-write-user-account).  
+> A Global admin, Power Platform admin, or a Dynamics 365 admin does not need a license to be enabled in a Dataverse environment. See: [Global admins and Power Platform admins can administer without a license](global-service-administrators-can-administer-without-license.md). But since they are unlicensed, they will be set in the [Administrative access mode](create-users.md#create-a-read-write-user-account).  
 
 You must be a member of an appropriate administrator role to do these tasks. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Assign admin roles](/microsoft-365/admin/add-users/assign-admin-roles)  
 
@@ -312,7 +312,7 @@ You can customize the default **Application User** form to allow updates to the 
 
 ### Manage application users in the Power Platform admin center
 
-We are in the process of moving application user management from the legacy web client as documented in [Enable or disable application users](create-users-assign-online-security-roles.md#enable-or-disable-user-accounts). See the following topic for managing application users from the Power Platform admin center: [Manage application users in the Power Platform admin center](manage-application-users.md).
+We are in the process of moving application user management from the legacy web client as documented in [Enable or disable application users](create-users.md#enable-or-disable-user-accounts). See the following topic for managing application users from the Power Platform admin center: [Manage application users in the Power Platform admin center](manage-application-users.md).
 
 ## How stub users are created
 A stub user is a user record that has been created as a placeholder. For example, records have been imported that refer to this user but the user doesn't exist in customer engagement apps. This user can't sign in, can't be enabled, and can't be synchronized to Microsoft 365. This type of user can only be created through data import. 

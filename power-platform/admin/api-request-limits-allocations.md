@@ -77,9 +77,9 @@ Each capacity add-on raises the request limits by another 10,000 per 24 hours. M
 Dataverse enables you to have identities that do not require any user license to interact with the service. There are four types of
 these users:
 
--   [Application users](create-users-assign-online-security-roles.md#create-an-application-user)
--   [Non-interactive users](create-users-assign-online-security-roles.md#create-a-non-interactive-user-account)
--   [Administrative users](create-users-assign-online-security-roles.md#create-an-administrative-user-account)
+-   [Application users](create-users.md#create-an-application-user)
+-   [Non-interactive users](create-users.md#create-a-non-interactive-user-account)
+-   [Administrative users](create-users.md#create-an-administrative-user-account)
 -   [SYSTEM user](/dynamics365/customer-engagement/web-api/systemuser?view=dynamics-ce-odata-9#operations)
 
 Additionally there are special free (\$0) licenses, which are used to interact with Dynamics 365 applications like Dynamics 365 Marketing. See [How Marketing is licensed](/dynamics365/customer-engagement/marketing/purchase-setup#how-marketing-is-licensed).

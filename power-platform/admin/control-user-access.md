@@ -143,7 +143,7 @@ The security group is associated with the environment.
 The security group associated with the environment will be removed and the environment's access will no longer be restricted to only users that are members of that group.
 
 ### See also
-[Create users and assign security roles](create-users-assign-online-security-roles.md)
+[Create users](create-users.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
