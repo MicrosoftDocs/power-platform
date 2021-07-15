@@ -29,7 +29,7 @@ You can set the default synchronization method applied to all newly created user
   
 You can set the synchronization method for individual mailboxes:  
 
-1. In the Power Platform admin center, select an environment. 
+1.  In the  [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment. 
 
 2. Select **Settings** > **Mailboxes**, and then select a mailbox.
   
