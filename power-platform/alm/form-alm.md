@@ -124,7 +124,10 @@ Follow these steps to implement healthy form ALM for this scenario.
 1. Export unmanaged *Solution B* with the changes made in step 5. This step exports a diff FormXml for the form.
 1. In *Development Environment 2*, import unmanaged *Solution B Upgrade* from step 9. Since there is no active layer for the form in *Development Environment 2*, (see step 8), all the changes from unmanaged *Solution B* are imported even though you are importing diff FormXml for *FormB*. So, the form now shows only *Field1*, *Field2*, *Field3*, and *Field5*. This behavior occurs for any unmanaged solution import that has the diff FormXml for the form. This is the same result as step 7 in the [Maintaining unmanaged solutions and customizations for an existing form across multiple development environments](#maintaining-unmanaged-solutions-and-customizations-for-an-existing-form-across-multiple-development-environments) scenario.
 
-![Scenario 6 form application lifecycle management diagram.](media/scenario6-form-alm-diagram.png)
+<!-- ![Scenario 6 form application lifecycle management diagram.](media/scenario6-form-alm-diagram.png) -->
+
+:::image type="content" source="media/scenario6-form-alm-diagram.png" alt-text="Scenario 6 form application lifecycle management diagram.":::
+:::image type="content" source="media/scenario6-form-alm-diagram.png" alt-text="Scenario 6 form application lifecycle management diagram." lightbox="media/scenario6-form-alm-diagram.png":::
 
 ## Full and differential form XML
 
