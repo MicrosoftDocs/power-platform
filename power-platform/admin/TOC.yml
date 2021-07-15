@@ -704,7 +704,7 @@
         items:
         - name: About server-side sync
           href: server-side-synchronization.
-        - name: D365 OrgDB settings for server-side sync
+        - name: OrgDBSettings for server-side sync
           href: orgdborgsettings.md
         - name: Set up server-side sync
           items:
