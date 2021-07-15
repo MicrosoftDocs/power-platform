@@ -19,8 +19,6 @@ search.app:
 
 # Business continuity and disaster recovery
 
-[!include[banner](../includes/banner.md)]
-
 Microsoft provides business continuity and disaster recovery for production instances of Dynamics 365 software-as-a-service (SaaS) applications, in the event of an Azure region wide outage. Customer engagement apps like  Dynamics 365 Sales, Customer Service, Field Service, Marketing and  Project Service Automation run on the Dataverse platform. Tenant admins can deploy a production instance of a Dynamics 365 customer engagement app and/or Dataverse with the purchase of appropriate licenses. For more information, see [Create and manage environments in the Power Platform admin center](create-environment.md).
 
 For production environments, a replica of the different storage services (Azure SQL and file storage) is established in the secondary region for each environment at the time of deployment. For more information, see [Environments](environments-overview.md). These replicas are referred to as geo-secondary replicas. The geo-secondary replicas are kept synchronized with the primary instance through continuous data replication. There is a small replication latency or lag, typically less than a few minutes, between the primary data sources and their corresponding geo-secondary replicas. For more information, see [Ensure business continuity amd disaster recovery (BCDR): Azure Paired Regions](/azure/best-practices-availability-paired-regions).
