@@ -703,7 +703,7 @@
       - name: Server-side synchronization
         items:
         - name: About server-side sync
-          href: server-side-synchronization.
+          href: server-side-synchronization.md
         - name: OrgDBSettings for server-side sync
           href: orgdborgsettings.md
         - name: Set up server-side sync
