@@ -1,5 +1,5 @@
 ---
-title: "Defulat OrgDBOrgSettings server-side sync  | MicrosoftDocs"
+title: "Default OrgDBOrgSettings server-side sync  | MicrosoftDocs"
 description: This topic covers the default options available in OrgDBOrgSettings related to server-side sync.
 author: mduelae
 ms.service: power-platform
