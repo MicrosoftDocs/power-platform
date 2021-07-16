@@ -46,8 +46,6 @@ We continue to open new datacenter regions for business services, and to add dat
 - United Kingdom (UK) = *.crm11.dynamics.com  
 - United Arab Emirates (UAE) = *.crm15.dynamics.com 
 
- [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Direct sign in](sign-in-office-365-apps.md#BKMK_directsignin)
-
  For example, if your existing organization URL is https://myorg.crm<strong>5</strong>.dynamics.com and you request it to be moved to Australia, the new organization URL will be https://myorg.crm<strong>6</strong>.dynamics.com.  
 
  You'll need to update any direct references to your organization URL.  
