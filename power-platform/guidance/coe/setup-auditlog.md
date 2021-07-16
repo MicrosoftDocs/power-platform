@@ -110,6 +110,8 @@ Now you'll configure and set up a custom connector that uses the [Office 365 Man
 
 1. Don't change the **Tenant ID**.
 
+1. Leave the **Login URL** as is  for commercial and GCC tenants, and change it to https://login.microsoftonline.us/ for a GCC High tenant.
+
 1. Set the **Resource URL** to https://manage.office.com for a commercial tenant, https://manage-gcc.office.com for a GCC tenant, and https://manage.office365.us for a GCC high tenant.
 
 1. Copy the **Redirect URL** into your text document in Notepad.
