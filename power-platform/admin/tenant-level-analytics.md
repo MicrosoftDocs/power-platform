@@ -4,7 +4,7 @@ description: View tenant-level analytics in a variety of reports
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/09/2021
+ms.date: 07/16/2021
 author: tjvass
 ms.subservice: admin
 ms.author: tjvass
@@ -58,6 +58,9 @@ Power Apps reports provide insights into tenant and environment usage and invent
 > [!div class="mx-imgBorder"] 
 > ![Power Apps usage report.](media/power-apps-usage.png "Power Apps usage report")
 
+> [!NOTE]
+> The service only starts collecting the data visualized in the Usage report when the feature is enabled. It can take up to 12 hours to reflect service activities from the previous day.
+
 ### Power Apps - Maker Activity report
 
 The Power Apps Maker Activity report provide insights into tenant and environment usage and inventory of all apps and connectors. The report answers questions such as:
@@ -71,6 +74,9 @@ The Power Apps Maker Activity report provide insights into tenant and environmen
 
 :::image type="content" source="media/maker-activity-report.png" alt-text="Power Apps Maker Activity report.":::
 
+> [!NOTE]
+> The service only starts collecting the data visualized in the Maker Activity report when the feature is enabled. It can take up to 12 hours to reflect service activities from the previous day.
+
 ### Power Apps - Inventory report
 
 The Power Apps Inventory report offers a complete catalog of Power Apps distributed across the tenant. This view includes filters that allow admins to search for apps based on various criteria. The report answers questions such as:
@@ -81,6 +87,9 @@ The Power Apps Inventory report offers a complete catalog of Power Apps distribu
 - What is the distribution of canvas versus model-driven apps across the organization? 
 
 :::image type="content" source="media/power-apps-inventory-report.png" alt-text="Power Apps Inventory report.":::
+
+> [!NOTE]
+> Depending on the size of the organization, it can take up to 2 hours to initially populate the data sets backing the Inventory report. 
 
 ## Download Inventory
 
