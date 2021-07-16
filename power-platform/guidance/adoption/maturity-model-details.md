@@ -18,7 +18,11 @@ search.app:
 ---
 # Power Platform Adoption Maturity Model: Detailed capabilities
 
-The goal of the Adoption Maturity Model is to help organizations and their partners to think through how they can improve their capabilities and decide which capabilities matter most to them. Each stage describes the states of individual disciplines such as Strategy & Vision, Administration, Governance, etc. The purpose of the model is to help organizations understand their capabilities along multiple dimensions on a clearly defined scale, decide which level they would like to achieve for each dimension and in what time frame, and improve their capabilities in tangible ways by progressing to the next level.
+The goal of the Adoption Maturity Model is to help define a roadmap for Power Platform adoption. The roadmap presents a series of strategic and tactical considerations and action items that directly lead to successful Power Platform adoption.
+
+Advancing adoption and cultivating a low-code culture is about more than implementing technology features. Technology can assist an organization in making the greatest impact, but a healthy low-code culture involves a lot of considerations across the spectrum of people, processes, and technology.
+
+The aim of the Adoption Maturity Model is to provide organizations and their partners with a way to think through how they can improve their capabilities and decide which capabilities matter most to them. Each stage describes the states of individual disciplines such as Strategy & Vision, Administration, Governance, etc. The purpose of the model is to help organizations understand their capabilities along multiple dimensions on a clearly defined scale, decide which level they would like to achieve for each dimension and in what time frame, and improve their capabilities in tangible ways by progressing to the next level.
 
 Find below detailed characteristics and capabilities of an organization in each stage:
 
@@ -33,3 +37,43 @@ Find below detailed characteristics and capabilities of an organization in each 
 |**Nurture and Citizen Makers**|<ul><li>Some staff may have attended App in a Day events (Partner or Microsoft delivered)</li><li>Team-based initiatives for nurturing makers</li></ul> |<ul><li>[On-boarding strategy](https://docs.microsoft.com/power-platform/guidance/adoption/onboard-makers) for new makers</li><li>Some staff have participated in a [hackathon](https://docs.microsoft.com/power-platform/guidance/adoption/hackathons)</li><li>Makers become ambassadors across their departments and evangelize the capabilities</li></ul>| <ul><li>Makers provide insights into business pain points</li><li>[Training and upskilling](https://docs.microsoft.com/power-platform/guidance/adoption/training-strategy) strategy for makers</li><li>Internal [Champions](https://docs.microsoft.com/power-platform/guidance/adoption/champions) community</li><li>[CoE Starter Kit - Nurture Module](https://docs.microsoft.com/power-platform/guidance/coe/nurture-components) adopted</li></ul> | <ul><li>Regular events for Champions</li><li>Regular hackathons</li><li>Maker assessments and certificates</li><li>Sharing and celebrating [success stories](https://docs.microsoft.com/power-platform/guidance/adoption/show-and-tell)</li><li>Show &amp; Tell sessions</li><li>Adoption campaign</li></ul> | <ul><li>Large internal community with proven value</li><li>Career path for makers</li><li>Community of mentors</li><li>Common development strategy and goals for Citizen and Pro developers</li></ul> | 
 |**Automation**|<ul><li>Processes are largely manual and one-off</li></ul>   |<ul><li>Processes are standardized, but implemented manually</li></ul>| <ul><li>Environment and DLP connector policy requests are automated</li><li>Apps are deployed manually, but using solutions</li><li>Communication about processes and compliance between Admin and Makers is automated</li></ul> | <ul><li>ALM processes are defined and implemented centrally</li><li>Admin tasks to identify overshared, unused and orphaned resources are largely automated</li><li>Governance tasks to gather compliance and support information are automated</li></ul> | <ul><li>ALM processes are owned by each Fusion team</li><li>Environment Lifecycle Management is automated</li><li>[CoE Starter Kit – ALM Accelerator](https://docs.microsoft.com/power-platform/guidance/coe/almaccelerator-components) is adopted</li></ul> | 
 |**Fusion Teams**|<ul><li>Teams work independently</li><li>No pro dev use of Power Platform</li></ul>   |<ul><li>Teams review and ratify each other’s work</li><li>Pro Devs pilot high-value use cases</li></ul>| <ul><li>Teams plan work as a team, but operate independently</li><li>Teams manage source control and app lifecycles</li><li>[Standard libraries, custom connectors and components](https://docs.microsoft.com/power-platform/guidance/adoption/reusable) to be consumed by makers</li></ul> | <ul><li>Cross-functional teams plan and execute work jointly, including makers, testers and operational teams.</li><li>Collaborative planning for infrastructure and change enablement</li><li>Use of Common Data Models to aid data reuse</li></ul> | <ul><li>Teams form seamlessly to accommodate cross functional skills</li><li>Common development strategy and goals for Citizen and Pro developers needed for new projects</li></ul> | 
+
+## Target audience
+
+The intended audience of the Adoption Maturity Model is interested in one or more of the following outcomes:
+
+- Improving their organization's ability to effectively use Power Platform.
+- Increasing their organization's maturity level related to Power Platform delivery.
+- Understanding and overcoming adoption-related challenges faced when scaling Power Platform.
+- Increasing their organization's return on investment (ROI) in Power Platform.
+
+Primarily, this series of articles will be helpful to those who work in an organization with one or more of the following characteristics:
+
+- Power Platform is deployed with some successes.
+- Power Platform has pockets of viral adoption, but is not purposefully governed across the entire organization.
+- Power Platform is deployed with some meaningful scale, but there remains a need to determine:
+  - What is effective and what should be maintained.
+  - What should be improved.
+  - How future deployments could be more strategic.
+- Expanded adoption of Power Platform is under consideration or is planned.
+
+Secondarily, this series of articles will be helpful for:
+
+- Organizations that are in the early stages of a Power Platform adoption.
+- Organizations that have had success with adoption and now want to evaluate their current maturity level.
+
+## Assumptions and scope
+
+The primary focus of this series of articles is on the Power Platform technology platform, with an emphasis on the Power Apps, Power Automate, Power Virtual Agents and Dataverse.
+
+For information about Power BI adoption, see the [Power BI Adoption Roamdap](https://docs.microsoft.com/power-bi/guidance/powerbi-adoption-roadmap-overview).
+
+## Next steps
+
+In the articles in this series, learn about the Power Platform adoption maturity levels. The maturity levels are referenced throughout the entire series of articles. Also, see the conclusion article for additional adoption-related resources.
+
+Other helpful resources include:
+
+- [Administering a Power Apps enterprise deployment](https://docs.microsoft.com/power-platform/admin/admin-powerapps-enterprise-deployment)
+- Upskilling? See [Power Platform In a day workshops](https://powerplatform.microsoft.com/instructor-led-training/) and [Power Platform on Microsoft Learn](https://docs.microsoft.com/learn/powerplatform/)
+- Experienced Power Platform partners are available to help your organization succeed with adoption of Power Platform. To engage a Power Platform partner, visit the [Power Apps partner portal](https://powerapps.microsoft.com/partners/).
