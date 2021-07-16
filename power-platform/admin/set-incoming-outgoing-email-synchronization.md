@@ -18,7 +18,7 @@ search.app:
 ---
 # Set incoming and outgoing email synchronization 
 
-You have several options for synchronizing email messages with Microsoft Dataverse or customer engagement apps (such as Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation). Use the following information to deploy the best option for your company.
+You have several options for synchronizing email messages with Microsoft Dataverse or customer engagement apps (such as Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation). Use the information in this topic to deploy the best option for your company.
   
 ## Set the synchronization method  
 You can set the default synchronization method applied to all newly created user mailboxes:  
@@ -60,7 +60,7 @@ The available outgoing email configurations that you can use when users or queue
 
 Email auto tracking behavior for a given user or queue is a combination of personal options and system settings. In addition to synchronization methods described above, server-side sync honors a user's [personal email options](/powerapps/user/set-personal-options#email-tab-options) and environment level [system settings](system-settings-dialog-box-email-tab.md). 
 
-To help you find the right combination of settings for your organization, see [Community forum: Dynamics 365 Customer Engagement – How to choose System Settings and Personal Options for automatic Email tracking](https://community.dynamics.com/crm/b/crminthefield/posts/dynamics-365-customer-engagement-how-to-choose-system-settings-and-personal-options-for-automatic-email-tracking).
+To help you find the right combination of settings for your organization, see [Community forum: How to choose System Settings and Personal Options for automatic Email tracking](https://community.dynamics.com/crm/b/crminthefield/posts/dynamics-365-customer-engagement-how-to-choose-system-settings-and-personal-options-for-automatic-email-tracking).
 
 
   
