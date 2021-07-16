@@ -6,7 +6,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/25/2021
+ms.date: 07/16/2021
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -27,7 +27,7 @@ Application Insights, a feature of Azure Monitor, is widely used within the ente
 
 |Telemetry type  |Application Insights table name  |
 |---------|---------|
-|Unified Interface page loads      | pageView        |
+|Unified Interface page loads      | pageViews        |
 |Unified Interface outbound network requests     | Dependency        |
 |Dataverse API incoming calls     | Request        |
 |Plug-in executions     | Dependency        |
@@ -42,10 +42,10 @@ Application Insights has a wide range of features to help you use this data:
 - Visualize and track common [navigation patterns](/azure/azure-monitor/app/usage-flows) from a usage perspective. This will help you understand, for example, whether a user always selects a specific tab first before navigating back to the main tab and closing the form. If so, this might indicate that a field should be positioned on the first tab, instead of another tab, to save the user time every time they open this record.
 - Create custom queries to troubleshoot performance and errors by using the [**Logs**](/azure/azure-monitor/log-query/log-query-overview) panel under **Monitoring** on the left pane.
 
-Example: List the top 10 records for form loads in the **pageView** table:
+Example: List the top 10 records for form loads in the **pageViews** table:
 
 ```kusto
-pageView
+pageViews
 | take 100
 ```
 
@@ -121,7 +121,7 @@ All the [tables](#what-telemetry-and-which-tables-are-being-populated-in-applica
 - **cloud_RoleInstance**: For events emitted as a part of this effort, this field will be set to **CDS Data Export** to ensure that they can be distinguished from other events in the same Application Insights environment.
 - **operation_Id**: This links together all the operations in a single interaction&mdash;which is one way to get all related events to a failing event.<br/>
   ```kusto
-  pageView
+  pageViews
   | where operation_Id == "[insert id here]"
   ```
 - **session_Id** : This uniquely identifies all activities in a single user session. The session value is reset when a user opens a new tab, selects F5/refresh, or closes and reopens the mobile app.
