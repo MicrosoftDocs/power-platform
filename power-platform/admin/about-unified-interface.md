@@ -4,7 +4,7 @@ description: About Unified Interface
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/27/2020
+ms.date: 07/16/2021
 author: jimholtz
 ms.subservice: admin
 ms.author: jimholtz
@@ -35,15 +35,11 @@ Once provisioned, you can access the installed Unified Interface and legacy web 
 
 You can access Unified Interface apps from the following locations in a browser: 
 
-1. In [https://home.dynamics.com/](https://home.dynamics.com/):
-
-   ![Dynamics 365 Home page.](media/uci-home-dynamics.png "Dynamics 365 Home page")
-
-2. In app navigation:
+1. In app navigation:
 
    ![In app navigation.](media/uci-in-app-navigation.png "In app navigation")
 
-3. In **My Apps** page under **Settings**:
+2. In **My Apps** page under **Settings**:
 
    ![Unified Interface apps on My Apps page.](media/uci-my-apps-page.png "Unified Interface apps on My Apps page")
 

@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/14/2021
+ms.date: 07/16/2021
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -97,9 +97,6 @@ Add the following URLs to the approved list to allow traffic to proceed to these
   </tr>
   <tr>
     <td>https://*.crm#.dynamics.com </td>
-  </tr>
-  <tr>
-    <td>https://home.dynamics.com </td>
   </tr>
   <tr>
     <td>https://www.crmdynint.com  </td>
