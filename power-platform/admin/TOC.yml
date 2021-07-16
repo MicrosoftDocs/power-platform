@@ -125,7 +125,7 @@
         - name: Microsoft Dataverse settings
           href: admin-settings.md      
         - name: Environment database settings
-          href: environment-database-settings.md     
+          href: environment-database-settings.md   
         - name: Product 
           items:
           - name: Behavior 
@@ -708,6 +708,8 @@
         items:
         - name: About server-side sync
           href: server-side-synchronization.md
+        - name: OrgDBSettings for server-side sync
+          href: orgdborgsettings.md
         - name: Set up server-side sync
           items:
           - name: Overview
