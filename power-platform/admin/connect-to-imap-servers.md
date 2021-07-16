@@ -23,8 +23,8 @@ Follow these steps to connect customer engagement apps (such as [Dynamics 365 Sa
 
 > [!NOTE]
 > - Only emails in the Inbox folder are synchronized.
-> - Existing POP3 email profiles will not be automatically converted to IMAP. There is no support for migrating from POP3 to IMAP.
-> - For IMAP/SMTP systems supported by Microsoft, check out the following topic: [Supported email service configurations for server-side synchronization](supported-email-service-configurations-server-side-synchronization.md).  
+> - Existing POP3 email profiles will not be automatically converted to IMAP. There is no support for migrating from POP3 to IMAP. You can create a new IMAP email server profile and move your mailboxes to the new server profile.
+> - For IMAP/SMTP systems supported by Microsoft, see: [Supported email service configurations for server-side synchronization](supported-email-service-configurations-server-side-synchronization.md).  
 
 <a name="BKMK_CreateProfile"></a>   
 
@@ -109,7 +109,10 @@ Follow these steps to connect customer engagement apps (such as [Dynamics 365 Sa
 ## Configure default email processing and synchronization  
 Set server-side synchronization to be the default configuration method. 
 
-1. In the Power Platform admin center, select an environment. 
+1. Do one of the following: 
+
+   - In [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.    
+   - In the legecy web client, from the upper-right corner select the **Gear** icon (![Gear icon.](media/selection-rule-gear-button.png)). Then select **Advanced settings**. 
 
 2. Select **Settings** > **Email** > **Email settings**.  
  
@@ -141,7 +144,10 @@ Set server-side synchronization to be the default configuration method.
 
 ### Set mailboxes to the default profile  
 
-1. In the Power Platform admin center, select an environment. 
+1. Do one of the following: 
+
+   - In [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.    
+   - In the legecy web client, from the upper-right corner select the **Gear** icon (![Gear icon.](media/selection-rule-gear-button.png)). Then select **Advanced settings**. 
 
 2. Select **Settings** > **Email** > **Mailboxes**.  
 
@@ -155,7 +161,10 @@ Set server-side synchronization to be the default configuration method.
 
 ### Edit mailboxes to set the profile and delivery methods  
 
-1. In the Power Platform admin center, select an environment. 
+1. Do one of the following: 
+
+   - In [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.    
+   - In the legecy web client, from the upper-right corner select the **Gear** icon (![Gear icon.](media/selection-rule-gear-button.png)). Then select **Advanced settings**. 
 
 2. Select **Settings** > **Email** > **Mailboxes**.  
 
@@ -174,9 +183,12 @@ Set server-side synchronization to be the default configuration method.
 <a name="BKMK_ApproveEmail"></a> 
   
 ## Approve email  
-You need to approve each user mailbox or queue before that mailbox can process email.  
+You need to approve each user mailbox or queue before that mailbox can process email. For more information, see [Approve email](connect-exchange-online.md#approve-email).
 
-1. In the Power Platform admin center, select an environment. 
+1. Do one of the following: 
+
+   - In [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.    
+   - In the legecy web client, from the upper-right corner select the **Gear** icon (![Gear icon.](media/selection-rule-gear-button.png)). Then select **Advanced settings**. 
 
 2. Select **Settings** > **Email** > **Mailboxes**.  
 
@@ -190,7 +202,10 @@ You need to approve each user mailbox or queue before that mailbox can process e
 
 ## Test configuration of mailboxes  
 
-1. In the Power Platform admin center, select an environment. 
+1. Do one of the following: 
+
+   - In [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.    
+   - In the legecy web client, from the upper-right corner select the **Gear** icon (![Gear icon.](media/selection-rule-gear-button.png)). Then select **Advanced settings**. 
 
 2. Select **Settings** > **Email** > **Mailboxes**.  
 
@@ -198,20 +213,23 @@ You need to approve each user mailbox or queue before that mailbox can process e
 
 4. Select the mailboxes you want to test, and then select **Test & Enable Mailboxes**.  
 
-    This tests the incoming and outgoing email configuration of the selected mailboxes and enables them for email processing. If an error occurs in a mailbox, an alert is shown on the Alerts wall of the mailbox and the profile owner. Depending on the nature of the error, customer engagement apps try to process the email again after some time or disables the mailbox for email processing.  
+    This tests the incoming and outgoing email configuration of the selected mailboxes and enables them for email processing. If an error occurs in a mailbox, an alert is shown on the Alerts wall of the mailbox and the profile owner. Depending on the nature of the error, Server-side sync try to process the email again after some time or disables the mailbox for email processing.
 
-    The result of the email configuration test is displayed in the **Incoming Email Status**, **Outgoing Email Status**, and **Appointments, Contacts, and Tasks Status** fields of a mailbox record. An alert is also generated when the configuration is successfully completed for a mailbox. This alert is shown to the mailbox owner.  
+    The result of the email configuration test is displayed in the **Incoming Email Status** and **Outgoing Email Status** of a mailbox row. An alert is also generated when the configuration is successfully completed for a mailbox. This alert is shown to the mailbox owner
 
-    You can find information on recurring issues and other troubleshooting information in [Blog: Test and Enable Mailboxes in Microsoft Dynamics CRM 2015](https://blogs.msdn.com/b/crm/archive/2015/08/31/test-and-enable-mailboxes-in-microsoft-dynamics-crm-2015.aspx) and [Troubleshooting and monitoring server-side synchronization](troubleshooting-monitoring-server-side-synchronization.md).  
+    You can find information on recurring issues and other troubleshooting information in the following topics:
+    - [Test configuration of mailboxes](connect-exchange-online.md#test-configuration-of-mailboxes)
+    - [Troubleshooting and monitoring server-side synchronization](troubleshooting-monitoring-server-side-synchronization.md).  
 
-> [!TIP]
->  If you're unable to synchronize contacts, appointments, and tasks for a mailbox, you may want to select the **Sync items with Exchange from this org only, even if Exchange was set to sync with a different org** check box. [Read more about this check box](when-would-want-use-check-box.md).  
 
 <a name="BKMK_TestEmailConfig"></a>   
 
 ## Test email configuration for all mailboxes associated with an email server profile  
 
-1. In the Power Platform admin center, select an environment. 
+1. Do one of the following: 
+
+   - In [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.    
+   - In the legecy web client, from the upper-right corner select the **Gear** icon (![Gear icon.](media/selection-rule-gear-button.png)). Then select **Advanced settings**. 
 
 2. Select **Settings** > **Email** > **Server profiles**.  
 
@@ -224,8 +242,8 @@ You need to approve each user mailbox or queue before that mailbox can process e
 
 <a name="BKMK_NetworkPorts"></a>   
 
-## Network ports for Power Apps US Government  
- The following ports are open for outbound connections between Power Apps US Government and internet services.  
+## Network ports for Power Apps 
+ The following ports are open for outbound connections between Power Apps and internet services.  
 
 - 80 HTTP  
 - 443 HTTPS 
@@ -233,7 +251,7 @@ You need to approve each user mailbox or queue before that mailbox can process e
 - 587 Secure SMTP  
 - 993 Secure IMAP  
 
-Customizations or email configurations in Power Apps US Government can only use these ports.  
+Customizations or email configurations in Power Apps can only use these ports.  
 
 ### See also  
  [Troubleshooting and monitoring server-side synchronization](troubleshooting-monitoring-server-side-synchronization.md) <br />
