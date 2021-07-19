@@ -45,12 +45,7 @@ For other ways to access Dynamics 365 and Office apps, see [Quickly navigate wit
 ## Direct sign in to the Dynamics 365 home page  
 **Your business apps are moving**
 
-In the future, the home for all of your business applications across Dynamics and Microsoft Power Platform will move to the apps page on [office.com](https://office.com/apps). This will help ensure that your end-users have a single spot to find all of their apps across the Microsoft ecosystem. Once the apps on the Dynamics home page have
-moved to [office.com](https://office.com/apps), we will provide a banner redirecting users to their new home.
-
-After April 1, 2021, when users navigate to https://home.dynamics.com, they will be redirected to https://www.office.com/apps with a deep link to their business applications.
-
-<a name="BKMK_directsignin"></a>   
+In the future, the home for all of your business applications across Dynamics and Microsoft Power Platform will move to the apps page on [office.com](https://office.com/apps). This will help ensure that your end-users have a single spot to find all of their apps across the Microsoft ecosystem. Once the apps on the Dynamics home page have moved to [office.com](https://office.com/apps), we will provide a banner redirecting users to their new home.
 
 ### See also  
  [Quickly navigate with the Office app launcher and the Dynamics 365 home page](../admin/quickly-navigate-office-365-app-launcher.md)   
