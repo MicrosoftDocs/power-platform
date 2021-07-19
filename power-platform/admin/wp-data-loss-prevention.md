@@ -4,7 +4,7 @@ description: About data loss prevention (DLP) policies.
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/23/2021
+ms.date: 07/19/2021
 author: jimholtz
 ms.subservice: admin
 ms.author: jimholtz
@@ -110,7 +110,7 @@ Environment admins can also use DLP policy PowerShell commands to set custom con
 
 The Power Platform admin center also has support for tenant admins to classify custom connectors by their Host URL endpoints using a pattern matching construct for tenant-level DLP policies. Since the scope of custom connectors is environment specific, these connectors won’t show up in the **Connectors** tab for tenant admins to classify. Instead, tenant admins will see a new tab in the Data Policies wizard called "Custom connectors", which will allow them to specify an ordered list of Allow and Deny URL patterns for custom connectors.  
 
-The rule for " * " will always be the last entry in the list which applies to all custom connectors.  Admins can tag the " * " pattern to **Blocked**/**Business**/**Non-business**/**Ignore**. By default, the pattern is set up as **Ignore** for new DLP policies. 
+The rule for "`*`" will always be the last entry in the list which applies to all custom connectors.  Admins can tag the "`*`" pattern to **Blocked**/**Business**/**Non-business**/**Ignore**. By default, the pattern is set up as **Ignore** for new DLP policies. 
 
 **Ignore** essentially means ignore DLP classification for all connectors in this tenant level policy and defer evaluation of a pattern to other environments or tenant-level policies to attribute them into **Business**/**Non-Business**/**Blocked** grouping as appropriate. If no specific rule exists for the custom connectors, then an **“Ignore** *” rule will allow custom connectors to be used with both **Business** and **Non-Business** connector groupings. Ignore as an action is not supported for any other URL pattern added to the custom connector pattern rules except the last entry in the list. 
 
@@ -120,7 +120,7 @@ Admins can further add new rules by using the "Add connector pattern" on the **C
 
 image
 
-This would launch a side panel where admins can add custom connector URL patterns and classify them. New rules are added to the end of the pattern list (second to the last rule since " * " will always be the last entry in the list). However, admins can update the order while adding a new pattern. 
+This would launch a side panel where admins can add custom connector URL patterns and classify them. New rules are added to the end of the pattern list (second to the last rule since "`*`" will always be the last entry in the list). However, admins can update the order while adding a new pattern. 
 
 image
 
@@ -171,11 +171,11 @@ Admins can then use this capability by selecting the new **Configure connector**
 
 image
 
-This opens up a side panel which will allow them to specify an ordered list of Allow or Deny URL patterns for custom connectors. The last row in the list will always be a rule for " * " which applies to all endpoints in that connector. By default, the " * " pattern is set up as Allow for new DLP policies, but admins can tag this as Allow or Deny. 
+This opens up a side panel which will allow them to specify an ordered list of Allow or Deny URL patterns for custom connectors. The last row in the list will always be a rule for "`*`" which applies to all endpoints in that connector. By default, the "`*`" pattern is set up as Allow for new DLP policies, but admins can tag this as Allow or Deny. 
 
 image
 
-New rules can be added by selecting **Add endpoint**. New rules are added to the end of the pattern list (second to the last rule since " * " will always be the last entry in the list). However, admins can also update the order of the patterns by using the **Order** dropdown or selecting **Move up** or **Move down**. 
+New rules can be added by selecting **Add endpoint**. New rules are added to the end of the pattern list (second to the last rule since "`*`" will always be the last entry in the list). However, admins can also update the order of the patterns by using the **Order** dropdown or selecting **Move up** or **Move down**. 
 
 image
 
@@ -183,7 +183,7 @@ Once a pattern has been added, admins can edit or delete these patterns by selec
 
 ## Endpoint input formats and examples 
 
-Each connector has a different notion of what an endpoint means. Further, some endpoints can be defined in multiple formats. Therefore, endpoints have to be entered in all possible formats in order to block makers from using them while creating apps and flows. Admins can either enter the full endpoint name or use pattern matching with " * " when creating an endpoint filtering rule. These rules are entered and presented in an ordered list of endpoint patterns, meaning that they will be evaluated in ascending order of the Order #. Note that the last rule for any given connector is always " * " Allow or Deny (Allow by default, which can be changed to “Deny”). Below is guidance on how to enter connector endpoints while creating rules to allow or deny them. 
+Each connector has a different notion of what an endpoint means. Further, some endpoints can be defined in multiple formats. Therefore, endpoints have to be entered in all possible formats in order to block makers from using them while creating apps and flows. Admins can either enter the full endpoint name or use pattern matching with "`*`" when creating an endpoint filtering rule. These rules are entered and presented in an ordered list of endpoint patterns, meaning that they will be evaluated in ascending order of the Order #. Note that the last rule for any given connector is always "`*`" Allow or Deny (Allow by default, which can be changed to “Deny”). Below is guidance on how to enter connector endpoints while creating rules to allow or deny them. 
 
 ### SQL Server 
 
