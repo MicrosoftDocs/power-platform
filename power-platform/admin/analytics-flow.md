@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/04/2020
+ms.date: 07/15/2021
 ms.subservice: admin
 ms.author: deonhe
 search.audienceType: 
@@ -46,7 +46,7 @@ The data refresh cycle is about 3 hours and you can find the last refresh time a
 
 ## Available reports
 
-The preview contains 6 reports with multiple KPIs in each report. By default, you see reports for the last viewed environment. 
+The preview contains 6 reports with multiple KPIs in each report.  The reports within the **Runs**, **Usage**, **Created**, and **Errors** tabs provide insights for both Cloud flows and Desktop flows.  By default, you see reports for the last viewed environment.
 
 
 ## Runs report

@@ -29,7 +29,7 @@ To access a Dataverse environment, a user must meet the following criteria:
 3. Be a member of the environment's Azure AD group (if one has been associated with the environment).
 4. Have at least one Dataverse security role assigned directly to them or to a [group team](manage-group-teams.md) they're a member of.
 
-A user's level of access within the environment and to the resources (apps and data) in the environment is determined by the privileges defined in the security roles assigned to that user. Their access mode being [Administrative](create-users-assign-online-security-roles.md#create-an-administrative-user-account) or [Read-Write](create-users-assign-online-security-roles.md#create-a-read-write-user-account) also determines their level of access within an environment.
+A user's level of access within the environment and to the resources (apps and data) in the environment is determined by the privileges defined in the security roles assigned to that user. Their access mode being [Administrative](create-users.md#create-an-administrative-user-account) or [Read-Write](create-users.md#create-a-read-write-user-account) also determines their level of access within an environment.
 
 ## User diagnostics
 
@@ -81,7 +81,7 @@ Several factors influence user access in a Microsoft Dataverse environment. To h
 ### User has no roles 
 
 When an error screen stating the user has no roles is encountered, a system administrator will need to assign roles to the user. Roles can be assigned directly to the user, or to a group team that the user is a part of. For information on how to assign Dataverse security roles to a user, see: 
-[Assign a security role to a user](create-users-assign-online-security-roles.md#assign-a-security-role-to-a-user).
+[Assign a security role to a user](assign-security-roles.md).
 
 ### User isn't able to see a record / user doesn't know why they have access to a record
 
@@ -89,7 +89,7 @@ See [How access to a record is determined](how-record-access-determined.md).
 
 ### User doesn't have a license / user doesn't belong to the organization 
 
-1. Verify if a license has been assigned to the user and assign one if not already. See: [Add a license to a user account](create-users-assign-online-security-roles.md#add-a-license-to-a-user-account).
+1. Verify if a license has been assigned to the user and assign one if not already. See: [Add a license to a user account](assign-licenses.md).
 2. Once a license is assigned, it may take some time for the license change to sync to the Dataverse environment. To trigger a sync for this user, the system administrator for the environment can re-add the user to the environment. See: [Add users to an environment that has a Dataverse database](add-users-to-environment.md#add-users-to-an-environment-that-has-a-dataverse-database). 
 
 ### User isn't a member of the environment’s security group 

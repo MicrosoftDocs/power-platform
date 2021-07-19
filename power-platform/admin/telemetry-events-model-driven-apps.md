@@ -1,6 +1,6 @@
 ---
 title: "Preview: Telemetry events for model-driven apps | Microsoft Docs"
-description: About telemetry events for model-driven apps
+description: About telemetry events for model-driven apps.
 services: powerapps
 author: jimholtz
 ms.service: power-platform
@@ -55,19 +55,19 @@ Performance data related to page loads and Unified Interface (UCI) outbound netw
 
 ## Where is the page load data available?
 
-This data goes into the **pageView** table in Application Insights. An entry is logged every time a user loads a page in Unified Interface. The data logged will only include "clean" loads. Loads whose duration can't accurately be measured&mdash;fast navigation, switching away from the app, an alert message&mdash;won't be included. Because of this, we recommend against using this data for accurate numbers related to usage analytics.
+This data goes into the **pageViews** table in Application Insights. An entry is logged every time a user loads a page in Unified Interface. The data logged will only include "clean" loads. Loads whose duration can't accurately be measured&mdash;fast navigation, switching away from the app, an alert message&mdash;won't be included. Because of this, we recommend against using this data for accurate numbers related to usage analytics.
 
-There are additional properties in **customDimensions** that provide more details for Unified Interface page loads. For example, this query will return the values for all the attributes in the **pageView** table.
+There are additional properties in **customDimensions** that provide more details for Unified Interface page loads. For example, this query will return the values for all the attributes in the **pageViews** table.
 
 ```kusto
-pageView
+pageViews
 | take 1
 ```
 
 > [!div class="mx-imgBorder"] 
-> ![Application Insights pageView table.](media/application-insights-pageview-table.png "Application Insights pageView table")
+> ![Application Insights pageViews table.](media/application-insights-pageview-table.png "Application Insights pageViews table")
 
-The **pageView** table attributes include:
+The **pageViews** table attributes include:
 
 - **appModule**: The app module name.
 - **entityName**: This attribute is present when relevant. It's available on page types like EditForm, EntityList, and Dashboards when they're [bound to an entity](/powerapps/maker/model-driven-apps/configure-interactive-experience-dashboards#create-an-entity-specific-dashboard). In some scenarios, the form isn't bound to an entity and the value appears as undefined.
@@ -138,7 +138,7 @@ dependencies
 | where ['type'] == "UCI REQUEST"
 | summarize avg(toint(customDimensions.warmLatency)), avg(toint(customDimensions.coldLatency)), avg(toint(customDimensions.warmThroughput)) by user_Id
 
-pageView
+pageViews
 | summarize avg(toint(customDimensions.warmLatency)), avg(toint(customDimensions.coldLatency)), avg(toint(customDimensions.warmThroughput)) by user_Id
 ```
 
@@ -147,7 +147,7 @@ pageView
 The **userAgent** attribute in the **customDimensions** field in the Application Insights **requests** table has this data. You can use the following query to get an overview of the different sources from where users are accessing the system:
 
 ```kusto
-pageView
+pageViews
 | summarize count() by tostring(customDimensions.userAgent), user_Id
 
 dependencies
@@ -182,7 +182,7 @@ dependencies
 ### How do I get a count of users accessing from browser, mobile, or embedded applications?
 
 ```kusto
-pageView
+pageViews
 | summarize count() by tostring(customDimensions.hostType)
 ```
 
@@ -194,7 +194,7 @@ The following image shows an example set of results from this query.
 ### How do I narrow down to a specific user?
 
 ```kusto
-pageView
+pageViews
 | where user_Id == "[userid]"
 | summarize count() by tostring(customDimensions.hostType)
 ```
@@ -229,7 +229,7 @@ union *
 ### Which forms are being used in different locations, and what are the load performance of the forms in these locations?
 
 ```kusto
-pageView
+pageViews
 | summarize avg(duration) by name, client_City, client_CountryOrRegion
 ```
 

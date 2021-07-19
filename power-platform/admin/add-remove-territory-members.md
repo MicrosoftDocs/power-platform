@@ -52,7 +52,7 @@ To accommodate changes in sales territories or the representatives that are assi
        >  When you remove someone from a sales territory, the updated list of members isn't displayed until you refresh the page.  
   
 ### See also  
- [Manage users](../admin/create-users-assign-online-security-roles.md)   
+[Create users](create-users.md)
 
 
 
