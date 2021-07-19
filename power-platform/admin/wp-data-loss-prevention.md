@@ -116,7 +116,7 @@ The rule for "`*`" will always be the last entry in the list which applies to al
 
 image
 
-Admins can further add new rules by using the "Add connector pattern" on the **Custom Connectors** tab.  
+Admins can further add new rules by using the **Add connector pattern** on the **Custom Connectors** tab.  
 
 image
 
@@ -140,10 +140,6 @@ Any new services that are added to Power Apps will be placed in the designated d
 
 > [!NOTE]
 > Microsoft 365 enterprise license connectors and a few core Microsoft Power Platform connectors are exempt from being marked as **Blocked** and can only be classified as **Business** or **Non-Business**. If Microsoft adds any new connectors that can't be blocked and if you've set the default group for the DLP policy as **Blocked**, these connectors will be automatically marked as **Non-Business** instead of **Blocked**.
-
-
-
-
 
 ## Granular DLP controls
 
@@ -187,9 +183,9 @@ Each connector has a different notion of what an endpoint means. Further, some e
 
 ### SQL Server 
 
-SQL Server connection endpoints have to be listed in < Server_name, database_name > format. A few things to keep in mind: 
+SQL Server connection endpoints have to be listed in `<Server_name, database_name>` format. A few things to keep in mind: 
 
-- Server name can be entered in various formats by makers. Therefore, in order to truly address an endpoint, it has to be entered in all possible formats. For example, on-prem instances can be in < machine_name\named_instance, database_name > or < IP address, custom port, database_name > format. In this case, you will have to apply allow or block rules in both formats for an endpoint. For example,
+- Server name can be entered in various formats by makers. Therefore, in order to truly address an endpoint, it has to be entered in all possible formats. For example, on-prem instances can be in `<machine_name\named_instance, database_name>` or `<IP address, custom port, database_name>` format. In this case, you will have to apply allow or block rules in both formats for an endpoint. For example,
   - “Block” “WS12875676\Servername1,MktingDB” 
   - “Block” “11.22.33.444,1401,MktingDB” 
 
@@ -201,7 +197,7 @@ Below are examples of a few scenarios:
   1. “Allow” “`*`.database.windows.net`*`” 
   2. “Deny” “`*`” 
 
-- Allow only specific IP range (note that the IP addresses that are not allowed can still be entered by maker using < machine_name\named_instance > format): 
+- Allow only specific IP range (note that the IP addresses that are not allowed can still be entered by maker using `<machine_name\named_instance>` format): 
   1. “Allow” “11.22.33`*`” 
   2. “Deny” “`*`” 
 
@@ -236,7 +232,7 @@ Azure Blob Storage endpoints are represented by the Azure storage account name.
 
 #### SMTP 
 
-SMTP endpoints are represented in < SMTP server address, port number > format. 
+SMTP endpoints are represented in `<SMTP server address, port number>` format. 
 
 Below is an example scenario: 
 
@@ -251,16 +247,9 @@ Below is an example scenario:
 
 Allow access to only Azure subscriptions page within https://management.azure.com/ 
 
-1. “Allow” https://management.azure.com/subscriptions`*` 
-2. “Deny” https://management.azure.com/`*` 
+1. “Allow” https://management.azure.com/subscriptions* 
+2. “Deny” https://management.azure.com/* 
 3. “Deny” “`*`” 
-
-
-
-
-
-
-
 
 ## Policy scope
 
