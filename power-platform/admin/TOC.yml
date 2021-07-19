@@ -94,6 +94,8 @@
           href: move-environment-tenant.md
         - name: Back up and restore environment
           href: backup-restore-environments.md
+        - name: Business continuity and disaster recovery
+          href: business-continuity-disaster-recovery.md
         - name: Edit environment properties
           href: edit-properties-environment.md
         - name: Administration mode
