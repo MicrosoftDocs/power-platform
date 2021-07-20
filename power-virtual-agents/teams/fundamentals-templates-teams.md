@@ -23,7 +23,11 @@ Sometimes, however, it’s hard to know where to start. You can use templates cr
 
 ## Employee frequently asked questions (FAQ) template
 
-The Employee FAQ chatbot template helps you easily create a bot to handle your employee’s most common questions by adding content that matches your business’s needs. 
+The Employee FAQ chatbot template helps you easily create a bot to handle your employee’s most common questions by adding content that matches your business’s needs.
+
+>
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWFMe0]
+>
 
 The template comes with a built-in capability to log an employee’s escalation request, notify a human expert, and allow them to quickly respond to the employee - all within Microsoft Teams. 
 
