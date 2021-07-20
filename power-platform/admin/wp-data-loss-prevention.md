@@ -98,39 +98,40 @@ The following connectors can't be blocked by using DLP policies.
 
 ### Custom connector classification
 
-#### Environment level DLP policies 
+#### Environment-level DLP policies 
 
 Environment admins can now see all custom connectors in their environments alongside of pre-built connectors in the **Connectors** tab of the Data Policies wizard. Similar to pre-built connectors, admins can classify custom connectors into **Blocked**/**Business**/**Non-Business** categories. Custom connectors that are not explicitly classified will be put under the default group (or **Non-Business** if no default group setting is explicitly chosen by admins). 
 
-image
+:::image type="content" source="media/dlp-environment-level-connector.png" alt-text="Environment admins can now see all custom connectors in their environments alongside of pre-built connectors in the **Connectors** tab of the Data Policies wizard.":::
 
 Environment admins can also use DLP policy PowerShell commands to set custom connectors into **Business**, **Non-Business**, and **Blocked** groups. See [Data Loss Prevention (DLP) policy commands](powerapps-powershell.md#data-loss-prevention-dlp-policy-commands). 
 
-#### Tenant level DLP policies 
+#### Tenant-level DLP policies 
 
 The Power Platform admin center also has support for tenant admins to classify custom connectors by their Host URL endpoints using a pattern matching construct for tenant-level DLP policies. Since the scope of custom connectors is environment specific, these connectors won’t show up in the **Connectors** tab for tenant admins to classify. Instead, tenant admins will see a new tab in the Data Policies wizard called "Custom connectors", which will allow them to specify an ordered list of Allow and Deny URL patterns for custom connectors.  
 
 The rule for "`*`" will always be the last entry in the list which applies to all custom connectors.  Admins can tag the "`*`" pattern to **Blocked**/**Business**/**Non-business**/**Ignore**. By default, the pattern is set up as **Ignore** for new DLP policies. 
 
-**Ignore** essentially means ignore DLP classification for all connectors in this tenant level policy and defer evaluation of a pattern to other environments or tenant-level policies to attribute them into **Business**/**Non-Business**/**Blocked** grouping as appropriate. If no specific rule exists for the custom connectors, then an **“Ignore** *” rule will allow custom connectors to be used with both **Business** and **Non-Business** connector groupings. Ignore as an action is not supported for any other URL pattern added to the custom connector pattern rules except the last entry in the list. 
+**Ignore** ignores DLP classification for all connectors in this tenant level policy and defer evaluation of a pattern to other environments or tenant-level policies to attribute them into **Business**/**Non-Business**/**Blocked** grouping as appropriate. If no specific rule exists for the custom connectors, then an "**Ignore** *" rule will allow custom connectors to be used with both **Business** and **Non-Business** connector groupings. Ignore as an action is not supported for any other URL pattern added to the custom connector pattern rules except the last entry in the list. 
 
-image
+:::image type="content" source="media/dlp-tenant-level-connector-ignore-rule.png" alt-text="The Ignore rule in a list of rules.":::
+
 
 Admins can further add new rules by using the **Add connector pattern** on the **Custom Connectors** tab.  
 
-image
+:::image type="content" source="media/dlp-select-add-connector-pattern.png" alt-text="Select Add connector pattern.":::
 
 This would launch a side panel where admins can add custom connector URL patterns and classify them. New rules are added to the end of the pattern list (second to the last rule since "`*`" will always be the last entry in the list). However, admins can update the order while adding a new pattern. 
 
-image
+:::image type="content" source="media/dlp-add-custom-connector-url-patterns.png" alt-text="Add custom connector URL patterns and classify them.":::
 
 Admins can also update the order of the patterns by using the order dropdown or selecting **Move up** or **Move down**. 
 
-image
+:::image type="content" source="media/dlp-update-pattern-order.png" alt-text="Update the order of the patterns by using the order dropdown or Move up and Move down.:::
 
 Once a pattern has been added, admins can edit or delete these patterns by selecting a specific row and selecting **Edit** or **Delete**. 
 
-image
+:::image type="content" source="media/dlp-edit-delete-pattern.png" alt-text="Edit or delete custom patterns.":::
 
 ### Default data group for new connectors
 
@@ -149,11 +150,11 @@ While connector classification capability is very helpful in governing Power Pla
 
 Connector action control gives admins the ability to allow and block individual actions within a given connector. Admins can use this capability by selecting the new **Configure connector** dropdown in the **Connectors** tab and selecting **Connector actions**.  
 
-image
+:::image type="content" source="media/dlp-connector-actions.png" alt-text="Select Configure connector > Connector actions.":::
 
 This opens up a side panel which enables admins to allow or deny specific actions. Admins can also set default value (Allow/Deny) for any new connector actions that will be added to the connector in future. 
 
-image
+:::image type="content" source="media/dlp-allow-deny-connector-actions.png" alt-text="Set Allow or Deny for connector actions.":::
 
 ### Endpoint filtering 
 
@@ -161,21 +162,23 @@ Endpoint filtering allows admins to govern at a fine grain which specific endpoi
 
 Admins will see a new column “Endpoint configurable” in the **Prebuilt Connectors** tab in the Data Policies wizard, which indicates if endpoint filtering capability is supported for the connector.  
 
-image
+:::image type="content" source="media/dlp-endpoint-configurable-prebuilt-connectors.png" alt-text="Endpoint configurable in the Prebuilt Connectors tab.":::
 
 Admins can then use this capability by selecting the new **Configure connector** dropdown and selecting **Connector endpoints**.  
 
-image
+:::image type="content" source="media/dlp-configure-connector-connector-endpoints.png" alt-text="Configure connector > Connector endpoints.":::
 
 This opens up a side panel which will allow them to specify an ordered list of Allow or Deny URL patterns for custom connectors. The last row in the list will always be a rule for "`*`" which applies to all endpoints in that connector. By default, the "`*`" pattern is set up as Allow for new DLP policies, but admins can tag this as Allow or Deny. 
 
-image
+:::image type="content" source="media/dlp-specify-ordered-list-allow-deny-url-patterns.png" alt-text="Specify an ordered list of Allow and Deny URL patterns for custom connectors.":::
 
 New rules can be added by selecting **Add endpoint**. New rules are added to the end of the pattern list (second to the last rule since "`*`" will always be the last entry in the list). However, admins can also update the order of the patterns by using the **Order** dropdown or selecting **Move up** or **Move down**. 
 
-image
+:::image type="content" source="media/dlp-add-endpoint-new-rules.png" alt-text="Select Add endpoint to add new rules.":::
 
 Once a pattern has been added, admins can edit or delete these patterns by selecting a specific row and then selecting **Delete**. 
+
+:::image type="content" source="media/dlp-delete-pattern.png" alt-text="Delete a pattern.":::
 
 ## Endpoint input formats and examples 
 
