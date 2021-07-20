@@ -161,7 +161,7 @@
        - name: Build a sample HR bot
          href: teams/fundamentals-get-started-teams.md
        - name: Use pre-built chatbot templates
-         href: fundamentals-templates.md
+         href: teams/fundamentals-templates-teams.md
     - name: Administer and manage
       items:
        - name: Licensing for Virtual Power Agents in Teams
