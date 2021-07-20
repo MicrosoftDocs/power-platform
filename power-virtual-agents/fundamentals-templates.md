@@ -1,6 +1,6 @@
 ---
-title: "Chatbot templates"
-description: "Use templates to quickly get up and running with Power Virtual Agents chatbots."
+title: "Chatbot templates for Teams"
+description: "Use templates to quickly get up and running with Power Virtual Agents chatbots in Microsoft Teams."
 keywords: "PVA, teams, templates"
 ms.date: 6/30/2021
 ms.service: power-virtual-agents
@@ -14,7 +14,10 @@ searchScope:
   - "Power Virtual Agents"
 ---
 
-# Power Virtual Agents chatbot templates
+# Power Virtual Agents chatbot templates in Microsoft Teams
+
+>[!IMPORTANT]
+>This topic applies to chatbots created in the Power Virtual Agents app in Microsoft Teams. Templates are not currently supported for the Power Virtual Agents web app.
 
 Bots are great at helping your employees to self-serve human resources (HR), IT, and other internal employee functions by providing automated responses and taking meaningful actions. This increases an employee's efficiency and saves your organization money and time.
 
@@ -39,4 +42,4 @@ Download the bot template from GitHub:
 
 
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](includes/footer-banner.md)]
