@@ -46,7 +46,7 @@ Dataverse for Teams environments do not support secondary replicas and hence thi
 For more information about Dataverse for Teams environments, see [About the Microsoft Dataverse for Teams environment](about-teams-environment.md).
 
 ### See also
-[Finance and Operations application documentation](/dynamics365/fin-ops-core/fin-ops/)
+[Finance and Operations business continuity and disaster recovery](/dynamics365/fin-ops-core/dev-itpro/sysadmin/business-continuity-disaster-recovery)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
