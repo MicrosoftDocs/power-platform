@@ -158,10 +158,11 @@
       items:
        - name: Power Virtual Agents in Teams overview
          href: teams/fundamentals-what-is-power-virtual-agents-teams.md
-       - name: Build a sample HR bot
-         href: teams/fundamentals-get-started-teams.md
        - name: Use pre-built chatbot templates
          href: teams/fundamentals-templates-teams.md
+       - name: Build a sample HR bot
+         href: teams/fundamentals-get-started-teams.md
+
     - name: Administer and manage
       items:
        - name: Licensing for Virtual Power Agents in Teams
