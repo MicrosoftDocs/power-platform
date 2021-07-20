@@ -8,7 +8,7 @@ ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: fundamentals, ceX, teams
+ms.custom: fundamentals, ceX, teams, intro-internal
 ms.collection: virtual-agent
 ---
 
