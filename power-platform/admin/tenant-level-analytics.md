@@ -4,7 +4,7 @@ description: View tenant-level analytics in a variety of reports
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/16/2021
+ms.date: 07/20/2021
 author: tjvass
 ms.subservice: admin
 ms.author: tjvass
@@ -156,7 +156,6 @@ Environment admins are not able to do these steps. The admin doesn't need to be 
 ## Where is this feature available?
 
 The Power Platform admin center tenant-level views are available in all supported regions in the public cloud. This feature is not yet available in other sovereign clouds. 
-
 
  
 
