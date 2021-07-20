@@ -127,7 +127,7 @@ This would launch a side panel where admins can add custom connector URL pattern
 
 Admins can also update the order of the patterns by using the order dropdown or selecting **Move up** or **Move down**. 
 
-:::image type="content" source="media/dlp-update-pattern-order.png" alt-text="Update the order of the patterns by using the order dropdown or Move up and Move down.:::
+:::image type="content" source="media/dlp-update-pattern-order.png" alt-text="Update the order of the patterns by using the order dropdown or Move up and Move down.":::
 
 Once a pattern has been added, admins can edit or delete these patterns by selecting a specific row and selecting **Edit** or **Delete**. 
 
