@@ -8,7 +8,7 @@ ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: fundamentals, teams
+ms.custom: fundamentals, teams, intro-inernal
 ms.collection: virtual-agent
 ---
 

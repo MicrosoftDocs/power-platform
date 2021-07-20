@@ -8,7 +8,7 @@ ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: fundamentals, ceX
+ms.custom: fundamentals, ceX, intro-internal
 ms.collection: virtual-agent
 searchScope:
   - "Power Virtual Agents"
