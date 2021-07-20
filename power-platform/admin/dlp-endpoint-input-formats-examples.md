@@ -27,16 +27,16 @@ Each connector has a different notion of what an endpoint means. Further, some e
 
 SQL Server connection endpoints have to be listed in `<Server_name, database_name>` format. A few things to keep in mind: 
 
-- Server name can be entered in various formats by makers. Therefore, in order to truly address an endpoint, it has to be entered in all possible formats. For example, on-prem instances can be in `<machine_name\named_instance, database_name>` or `<IP address, custom port, database_name>` format. In this case, you will have to apply allow or block rules in both formats for an endpoint. For example,
+- Server name can be entered in various formats by makers. Therefore, in order to truly address an endpoint, it has to be entered in all possible formats. For example, on-prem instances can be in "\<machine_name\named_instance, database_name>" or `<IP address, custom port, database_name>` format. In this case, you will have to apply allow or block rules in both formats for an endpoint. For example,
   - “Block” “WS12875676\Servername1,MktingDB” 
   - “Block” “11.22.33.444,1401,MktingDB” 
 
-- There is no special logic to handle relative addresses such as localhost. Therefore, if you block " `*localhost*` ", it will block makers from using any endpoints by using localhost as part of the SQL Server endpoint. However, it won’t stop them from accessing the endpoint using the absolute address unless the absolute address has also been blocked by the admin. 
+- There is no special logic to handle relative addresses such as localhost. Therefore, if you block "\*"localhost"\*", it will block makers from using any endpoints by using localhost as part of the SQL Server endpoint. However, it won’t stop them from accessing the endpoint using the absolute address unless the absolute address has also been blocked by the admin. 
 
 Below are examples of a few scenarios: 
 
 - Allow only Azure SQL Server instances: 
-  1. “Allow” “`*`.database.windows.net`*`” 
+  1. “Allow” "\*".database.windows.net"\*" 
   2. “Deny” “`*`” 
 
 - Allow only specific IP range (note that the IP addresses that are not allowed can still be entered by maker using `<machine_name\named_instance>` format): 
