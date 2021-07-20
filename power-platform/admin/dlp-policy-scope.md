@@ -21,9 +21,7 @@ search.app:
 
 # View policy
 
-Using the view policy feature, environment admins can view tenant-level policies and policies within environments that the admin has access to, at an individual policy level. Non-admins can also view tenant-level policies using this feature.
-
-Jim - add steps.
+Using the view policy feature (select **Data policies** tab), environment admins can view tenant-level policies and policies within environments that the admin has access to, at an individual policy level. Non-admins can also view tenant-level policies using this feature.
 
 :::image type="content" source="media/dlp-view-policies2.png" alt-text="View DLP policies list.":::
 

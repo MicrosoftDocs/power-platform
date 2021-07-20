@@ -21,7 +21,7 @@ search.app:
 
 # Impact of DLP policies on apps and flows
 
-If admins have disallowed certain connectors to be used together in an environment by classifying them as **Business** or **Non-Business**&mdash;or marked certain connectors as **Blocked** by using tenant-level or environment-level DLP policies&mdash;these restrictions can negatively affect makers and users of Power Apps and Power Automate. The restrictions are enforced at both design time and at runtime.
+If admins have disallowed certain connectors to be used together in an environment by classifying them as **Business** or **Non-Business** or marked certain connectors as **Blocked** by using tenant-level or environment-level DLP policies, these restrictions can negatively affect makers and users of Power Apps and Power Automate. The restrictions are enforced at both design time and at runtime.
 
 As an admin, you should have a process and plan in place to handle these types of support needs if you're using DLP policies.
 
