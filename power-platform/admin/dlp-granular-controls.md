@@ -19,11 +19,11 @@ search.app:
   - Flow
 ---
 
-## Granular DLP controls
+# Granular DLP controls
 
 While connector classification capability is very helpful in governing Power Platform connectors, fine-grained controls such as the ability to block specific connector actions or connection endpoints help admins strike a fine balance between productivity and protection. 
 
-### Connector action control 
+## Connector action control 
 
 Connector action control gives admins the ability to allow and block individual actions within a given connector. Admins can use this capability by selecting the new **Configure connector** dropdown in the **Connectors** tab and selecting **Connector actions**.  
 
@@ -33,7 +33,7 @@ This opens up a side panel which enables admins to allow or deny specific action
 
 :::image type="content" source="media/dlp-allow-deny-connector-actions.png" alt-text="Set Allow or Deny for connector actions.":::
 
-### Endpoint filtering 
+## Endpoint filtering 
 
 Endpoint filtering allows admins to govern at a fine grain which specific endpoints will be allowed versus blocked at a tenant or environment level. This facility is available for HTTP, HTTP with Azure AD, HTTP Webhook, SQL Server, Dataverse (legacy), Azure Blob Storage, and SMTP connection endpoints. 
 
