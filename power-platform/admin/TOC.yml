@@ -559,10 +559,8 @@
             href: dlp-granular-controls.md
           - name: Endpoint input
             href: dlp-endpoint-input-formats-examples.md
-          - name: Policy scope
+          - name: View policies and policy scope
             href: dlp-policy-scope.md
-          - name: View policy
-            href: dlp-view-policy.md
           - name: Effect of multiple policies
             href: dlp-combined-effect-multiple-policies.md
           - name: Resource exemption
