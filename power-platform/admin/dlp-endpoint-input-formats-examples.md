@@ -40,7 +40,7 @@ Below are examples of a few scenarios:
   2. “Deny” "\*"
 
 - Allow only specific IP range (note that the IP addresses that are not allowed can still be entered by maker using <machine_name\named_instance> format): 
-  1. “Allow” “11.22.33`*`” 
+  1. “Allow” “11.22.33\*” 
   2. “Deny” "\*"
 
 ## Dataverse 
