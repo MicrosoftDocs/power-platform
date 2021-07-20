@@ -16,8 +16,6 @@
          href: fundamentals-what-is-power-virtual-agents-portal.md
        - name: Get started quickly with Power Virtual Agents
          href: fundamentals-get-started.md
-       - name: Use pre-built chatbot templates
-         href: fundamentals-templates.md
     - name: Administer and manage
       items:
        - name: Assign licenses
@@ -162,6 +160,8 @@
          href: teams/fundamentals-what-is-power-virtual-agents-teams.md
        - name: Build a sample HR bot
          href: teams/fundamentals-get-started-teams.md
+       - name: Use pre-built chatbot templates
+         href: fundamentals-templates.md
     - name: Administer and manage
       items:
        - name: Licensing for Virtual Power Agents in Teams
