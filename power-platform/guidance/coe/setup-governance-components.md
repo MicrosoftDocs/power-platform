@@ -115,7 +115,7 @@ This Governance Components solution contains flows that you'll need to manually 
    Browse to Details page of the Developer Compliance Center and grab the Web link
     ![Setup Compliance Components1.](media/setupCompliance1.png "Setup Compliance Components1")
 
-1) Browse to Default Solution, filter to Environment Variables, edit the **Developer Compliance Center URL** variable and add the URL from step 1 as a current value
+1) Browse to Core Solution, filter to Environment Variables, edit the **Developer Compliance Center URL** variable and add the URL from step 1 as a current value
 ![Setup Compliance Components2.](media/setupCompliance2.png "Setup Compliance Components2")
 
 1) Return to the Core Solution and turn on **Admin \| Compliance detail request v3**
