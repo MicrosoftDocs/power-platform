@@ -549,8 +549,28 @@
         - name: Restrict cross-tenant access 
           href: cross-tenant-restrictions.md
       - name: Data loss prevention policies 
-        href: wp-data-loss-prevention.md
         items: 
+        - name: DLP policies
+          href: wp-data-loss-prevention.md
+          items: 
+          - name: Connector classification
+            href: dlp-connector-classification.md
+          - name: Granular controls
+            href: dlp-granular-controls.md
+          - name: Endpoint input
+            href: dlp-endpoint-input-formats-examples.md
+          - name: Policy scope
+            href: dlp-policy-scope.md
+          - name: View policy
+            href: dlp-view-policy.md
+          - name: Effect of multiple policies
+            href: dlp-combined-effect-multiple-policies.md
+          - name: Resource exemption
+            href: dlp-resource-exemption.md
+          - name: Impact on apps and flows
+            href: dlp-impact-policies-apps-flows.md
+          - name: Known issues
+            href: dlp-known-issues.md
         - name: Create a DLP policy
           href: create-dlp-policy.md
         - name: Manage DLP policies
