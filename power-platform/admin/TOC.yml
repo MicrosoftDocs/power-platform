@@ -550,7 +550,7 @@
           href: cross-tenant-restrictions.md
       - name: Data loss prevention policies 
         items: 
-        - name: DLP policies
+        - name: Overview
           href: wp-data-loss-prevention.md
           items: 
           - name: Connector classification
