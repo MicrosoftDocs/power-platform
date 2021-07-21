@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/02/2021
+ms.date: 07/20/2021
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -117,9 +117,9 @@ The per app license gives a user access to two Power Apps and one portal for a s
 :::image type="content" source="media/per-app-license-consumption.png" alt-text="Per app license consumption example.":::
 
 > [!NOTE]
-> Sharing an app with a user consumes the per app capacity. 
-> 
-> The consumption reporting for the per app license is a work in progress. Please check back for more details once the reporting is launched. 
+> - Each user is requred to have a license. 
+> - Sharing an app with a user consumes the per app capacity. 
+> - The consumption reporting for the per app license is a work in progress. Please check back for more details once the reporting is launched. 
 
 ## Known issues
 
