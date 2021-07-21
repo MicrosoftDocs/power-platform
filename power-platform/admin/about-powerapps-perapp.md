@@ -117,7 +117,7 @@ The per app license gives a user access to two Power Apps and one portal for a s
 :::image type="content" source="media/per-app-license-consumption.png" alt-text="Per app license consumption example.":::
 
 > [!NOTE]
-> - Each user is requred to have a license. 
+> - Each user is required to have a license. 
 > - Sharing an app with a user consumes the per app capacity. 
 > - The consumption reporting for the per app license is a work in progress. Please check back for more details once the reporting is launched. 
 
