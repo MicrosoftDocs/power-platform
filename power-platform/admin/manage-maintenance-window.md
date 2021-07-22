@@ -28,7 +28,7 @@ Microsoft regularly performs updates and maintenance on customer engagement apps
 
 To view or update the Maintenance Window for a specific environment based on your business preferences, follow these steps.
 
-1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
 2. Select **Environments**, and then select a production environment from the list.
 
