@@ -7,7 +7,7 @@ ms.reviewer: samathur
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/29/2021
+ms.date: 07/21/2021
 search.audienceType: 
   - admin
 search.app:
@@ -22,7 +22,7 @@ Microsoft regularly performs updates and maintenance on customer engagement apps
 
 > [!NOTE]
 > - Managing your maintenance window is only available for production environments. 
-> - Maintenance can be conducted any weekday so the maintenance window is a time within the day when these updates could be delivered. 
+> - Maintenance can be conducted any day so the maintenance window is a time within the day when these updates could be delivered. 
 > - Only database and application updates will be delivered in this maintenance window. Platform updates will continue to execute based on [region-specific times](policies-communications.md#maintenance-timeline). 
 > - There is no down time or performance degradation during the maintenance window. 
 
