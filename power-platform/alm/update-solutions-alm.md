@@ -30,6 +30,9 @@ import logic detects the solution as an update and displays the following screen
 
 More information: [Apply an update or upgrade for a solution](/powerapps/maker/common-data-service/update-solutions) 
 
+> [!NOTE]
+> In most cases, importing a solution update doesn’t require downtime. However, administrators have the option to enable administration mode on the environment where only users with System Administrator or System Customizer security roles will be able to sign into that environment. This can facilitate larger updates where a service delay may be needed before letting users access the app. More information: [Administration mode](../admin/admin-mode.md)
+
 ## Create solution patches  
 You can create a patch for a parent solution and export it as a minor update to the base solution. When you clone a solution, the system rolls up all related patches into the base solution and creates a new version.
 
