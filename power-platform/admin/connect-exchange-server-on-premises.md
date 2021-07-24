@@ -121,7 +121,7 @@ Set server-side synchronization to be the default configuration method.
 
    - **Appointments, Contacts, and Tasks**: Server-Side Synchronization or Email Router  
 
-     If you leave **Email processing for unapproved user and queues**<!--note from editor: Edit okay?--> at the default values (selected), you'll need to approve emails and queues for user mailboxes as directed in [**Approve email**](approve-email), later in this topic.  
+     If you leave **Email processing for unapproved user and queues**<!--note from editor: Edit okay?--> at the default values (selected), you'll need to approve emails and queues for user mailboxes as directed in [**Approve email**](#approve-email), later in this topic.  
 
 4. Select **Save**.  
 

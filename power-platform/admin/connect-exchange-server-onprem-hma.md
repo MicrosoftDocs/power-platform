@@ -121,7 +121,7 @@ To allow HMA-App to have access to Exchange (on-premises), grant the **Office 36
 
 
    > [!NOTE]
-   > If it doesn't align with your business requirements to have an app with full access on all mailboxes, the Exchange (on-premises) admin can scope the mailboxes that the app can access by configuring the ApplicationImpersonation role on Exchange. More information: [Configure impersonation](https://docs.microsoft.com/exchange/client-developer/exchange-web-services/how-to-configure-impersonation)
+   > If it doesn't align with your business requirements to have an app with full access on all mailboxes, the Exchange (on-premises) admin can scope the mailboxes that the app can access by configuring the ApplicationImpersonation role on Exchange. More information: [Configure impersonation](/exchange/client-developer/exchange-web-services/how-to-configure-impersonation)
 
 7. Select **Grant admin consent**.
 
