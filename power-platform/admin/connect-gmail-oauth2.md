@@ -145,7 +145,7 @@ Follow the steps for **Create a project** in [Create, shut down, and restore pro
 
 3. Select **Settings** > **Email configuration** > **Mailboxes**.
 
-4. Select the mailbox for the user configured in previous steps.<!--note from editor: I'm not sure what this refers to. Should it be "steps 1 through 4", or ...?-->
+4. Select the mailbox for the user configured in previous steps.
 
 5. Use the following settings:
 
