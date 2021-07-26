@@ -14,7 +14,7 @@
   
  [Azure Service Bus](https://azure.microsoft.com/services/service-bus/)  
   
- This provides the message bus into which [!INCLUDE[pn_crm_shortest](pn-crm-shortest.md)] inserts the synchronization notification messages that are processed by compute nodes in [!INCLUDE[pn_azure_service_fabric](pn_azure_service_fabric.md)]. Each message stores information, such as the org id and record, for which for which to sync data. Data in the Azure Service Bus is not encrypted at rest, but is only accessible by the Data Export Service.  
+ This provides the message bus into which [!INCLUDE[pn_crm_shortest](pn-crm-shortest.md)] inserts the synchronization notification messages that are processed by compute nodes in [!INCLUDE[pn_azure_service_fabric](pn_azure_service_fabric.md)]. Each message stores information, such as the org id and record, for which for which to sync data. Data in the Azure Service Bus is encrypted at rest and is only accessible by the Data Export Service.  
   
  [Azure Blob Storage](https://azure.microsoft.com/services/storage/)  
   
