@@ -75,12 +75,12 @@ Set server-side synchronization to be the default configuration method.
 
    - **Outgoing Email**: Server-Side Synchronization or Email Router  
 
-   - **Appointments, Contacts, and Tasks**: Server-Side Synchronization or Email Router<!--note from editor: If this setting isn't available, how can they select it? -->  
+   - **Appointments, Contacts, and Tasks**: Server-Side Synchronization or Email Router 
 
      > [!NOTE]
      >  The **Server-Side Synchronization or Email Router** setting for Appointments, Contacts, and Tasks isn't supported for the POP3-SMTP profile.  
 
-     If you leave **Email processing for unapproved user and queues**<!--note from editor: Edit okay?--> at the default values (selected), you'll need to approve emails and queues for user mailboxes as directed in [**Approve email**](#approve-email), later in this topic.  
+     If you leave **Email processing for unapproved user and queues** at the default values (selected), you'll need to approve emails and queues for user mailboxes as directed in [**Approve email**](#approve-email), later in this topic.  
 
      ![Screenshot showing System Settings for server-side synchronization.](../admin/media/crm-itpro-exchangeonlinessssettingspop.png "System Settings for server-side synchronization")  
 
