@@ -19,11 +19,11 @@ search.app:
 ---
 
 # Connect Gmail accounts by using OAuth 2.0 
-<!--note from editor: As Microsoft Writing Style Guide notes, "using" is a bit ambiguous. Is "by using" the best substitute here, or should it be "that use"? -->
+
 Follow the steps in this article to set up server-side synchronization to send and receive email in customer engagement apps (such as [Dynamics 365 Sales](/dynamics365/sales-professional/help-hub), [Dynamics 365 Customer Service](/dynamics365/customer-service/help-hub), [Dynamics 365 Marketing](/dynamics365/marketing/help-hub), [Dynamics 365 Field Service](/dynamics365/field-service/overview), and [Dynamics 365 Project Service Automation](/dynamics365/project-operations/psa/overview)) from Gmail accounts by using OAuth 2.0 as the authorization mechanism.
 
 > [!NOTE]
-> The Gmail OAuth email server profile works for up to 100 users. Create multiple OAuth profiles (steps 1 through 4)<!--note from editor:  I think this refers to the sections in this topic? So I labeled them as steps. --> if you want to associate the same profile with multiple users.
+> The Gmail OAuth email server profile works for up to 100 users. Create multiple OAuth profiles (steps 1 through 4) if you want to associate the same profile with multiple users.
 
 ## Availability
 
@@ -151,7 +151,7 @@ Follow the steps for **Create a project** in [Create, shut down, and restore pro
 
    |Setting  |Use  |
    |---------|---------|
-   |Server profile    | The profile created in step 4<!--note from editor: I think this works with the step 4, above, but maybe not. -->       |
+   |Server profile    | The profile created in step 4     |
    |Incoming email    | Server-Side Synchronization or Email Router       |
    |Outgoing email | Server-Side Synchronization or Email Router   |
 
@@ -176,7 +176,7 @@ In the Google Cloud Platform (Developer Console), add users in the **Test Users*
 > [!NOTE]
 > These steps should be done by the mailbox user.
 
-Select **Test & Enable Mailbox** to test the mailbox configured in step 6.<!--note from editor: I'm not sure where step 6 is.-->
+Select **Test & Enable Mailbox** to test the mailbox configured in step 6.
 
 > [!div class="mx-imgBorder"] 
 > ![Screenshot of the Test & Enable Mailbox command.](media/gmail-oauth-test-enable-mailbox.png "Test and enable mailbox")
