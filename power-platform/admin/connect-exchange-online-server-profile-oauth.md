@@ -60,13 +60,13 @@ To allow your app to have access to Exchange Online, you need to grant **Office 
    > [!div class="mx-imgBorder"] 
    > ![Screenshot of the Office 365 Exchange Online API.](media/office365-exchange-online.png "Office 365 Exchange Online")
 
-3. For type of permissions, select **Application permissions**, and then select the checkbox for **full\_access\_to\_app**<!--note from editor: Should they search for this, or will it be obvious where to find it?-->. When you're done, select **Add permissions**.
+3. For type of permissions, select **Application permissions**, and then select the checkbox for **full\_access\_to\_app**. When you're done, select **Add permissions**.
 
    > [!div class="mx-imgBorder"] 
    > ![Screenshot of Request API permissions.](media/type-of-permission.png "Select a permission type")
 
    > [!NOTE]
-   > If it doesn't align with your business requirements to have an app with full access on all mailboxes<!--note from editor: Edit suggested.-->, the Exchange Online admin can scope the mailboxes that the app can access by using Application Access Policy or configuring the Application Impersonation role on Exchange. More information:
+   > If it doesn't align with your business requirements to have an app with full access on all mailboxes, the Exchange Online admin can scope the mailboxes that the app can access by using Application Access Policy or configuring the Application Impersonation role on Exchange. More information:
    > - [Scoping application permissions to specific Exchange Online mailboxes](/graph/auth-limit-mailbox-access)
    > - [Configure impersonation](/exchange/client-developer/exchange-web-services/how-to-configure-impersonation)
 
