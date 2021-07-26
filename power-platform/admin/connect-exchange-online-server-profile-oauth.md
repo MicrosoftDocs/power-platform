@@ -1,5 +1,5 @@
 ---
-title: "Exchange Online cross tenant authentication | MicrosoftDocs"
+title: "Exchange Online cross-tenant authentication | MicrosoftDocs"
 description: Exchange Online cross tenant authentication
 ms.service: power-platform
 ms.component: pa-admin
@@ -17,34 +17,34 @@ search.app:
   - Flow
 ---
 
-# Exchange Online cross tenant authentication
+# Exchange Online cross-tenant authentication
 
-Use Server-Side Sync to synchronize Exchange Online mailboxes that reside on different Exchange Online tenants. Follow the steps in this topic to complete the prerequisites before you set up an Exchange Online server profile using Oauth cross tenant authentication. For more information, see [Create an email server profile for Exchange Online](connect-exchange-online.md#create-an-email-server-profile-for-exchange-online).
+Use server-side synchronization to synchronize Exchange Online mailboxes that reside on different Exchange Online tenants. Follow the steps in this topic to complete the prerequisites before you set up an Exchange Online server profile that uses Oauth cross-tenant authentication. More information: [Create an email server profile for Exchange Online](connect-exchange-online.md#create-an-email-server-profile-for-exchange-online)
 
 ## Configuration
 
-Sign in to the [Azure portal](https://portal.azure.com/), create the App registration and then configure the email server profile.
+Sign in to the [Azure portal](https://portal.azure.com/), create the app registration, and then configure the email server profile.
 
 ## Register your app
 
-Register your app on Azure portal on the tenant where Microsoft Exchange Online resides. Follow the steps in this topic to create the app registration: [Register an application](/azure/active-directory/develop/quickstart-register-app#register-an-application).
+Register your app on the Azure portal on the tenant where Exchange Online resides. To create the app registration, follow the steps in [Register an application](/azure/active-directory/develop/quickstart-register-app#register-an-application).
 
 > [!NOTE]
-> You don't need to enter anything for **Redirect URI** since it's not needed.
+> You don't need to enter anything for **Redirect URI** because it's not needed.
 
-When you register your app, note the **Application (client) ID** and **Directory (tenant) ID** because you will need this information later to configure the email server profile.
+When you register your app, note the **Application (client) ID** and **Directory (tenant) ID**; you'll need this information later to configure the email server profile.
 
 > [!div class="mx-imgBorder"] 
-> ![New registration](media/register-app.png "New app registration")
+> ![Screenshot of a new app registration.](media/register-app.png "New app registration")
 
-## Add a Client Secret
+## Add a client Secret
 
 A client secret is a string value your app uses to identity itself. It's used by Dynamics 365 to authenticate to your app.
 
-To create a client secret, follow the steps in this topic, [Add a client secret](/azure/active-directory/develop/quickstart-register-app#add-a-client-secret). Remember to note the **Secret Value**, as you will need this information later to configure the email server profile.
+To create a client secret, follow the steps in [Add a client secret](/azure/active-directory/develop/quickstart-register-app#add-a-client-secret). Remember to note the **Secret Value**, because you'll need this information later to configure the email server profile.
 
 > [!div class="mx-imgBorder"] 
-> ![Create new client secret](media/client-sercret.png "Create new client secret")
+> ![Screenshot of creating a new client secret.](media/client-sercret.png "Create new client secret")
 
 ## Add API permissions 
 
@@ -53,37 +53,37 @@ To allow your app to have access to Exchange Online, you need to grant **Office 
 1. Select **API permissions** &gt; **Add a permission**.
     
    > [!div class="mx-imgBorder"] 
-   > ![Add permission](media/add-permission.png "Add permission")
+   > ![Screenshot of adding a permission.](media/add-permission.png "Add permission")
 
-2. Select the **APIs my organization uses** tab and then look for and select **Office 365 Exchange Online.**
+2. Select the **APIs my organization uses** tab, and then select **Office 365 Exchange Online**.
    
    > [!div class="mx-imgBorder"] 
-   > ![Office 365 Exchange Online](media/office365-exchange-online.png "Office 365 Exchange Online")
+   > ![Screenshot of the Office 365 Exchange Online API.](media/office365-exchange-online.png "Office 365 Exchange Online")
 
-3. For type of permissions, select **Application permissions** and then select the checkbox for **full\_access\_to\_app**. When you're done, select **Add permissions**.
+3. For type of permissions, select **Application permissions**, and then select the checkbox for **full\_access\_to\_app**. When you're done, select **Add permissions**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Select the permission type](media/type-of-permission.png "Select permission type")
+   > ![Screenshot of Request API permissions.](media/type-of-permission.png "Select a permission type")
 
    > [!NOTE]
-   > if having an app with full access on all mailboxes that doesn't not align with your business requirements, then the Exchange online admin can scope the mailboxes the App can access using Application Access Policy or configuring the Application Impersonation role on Exchange. More information:
+   > If it doesn't align with your business requirements to have an app with full access on all mailboxes, the Exchange Online admin can scope the mailboxes that the app can access by using Application Access Policy or configuring the Application Impersonation role on Exchange. More information:
    > - [Scoping application permissions to specific Exchange Online mailboxes](/graph/auth-limit-mailbox-access)
    > - [Configure impersonation](/exchange/client-developer/exchange-web-services/how-to-configure-impersonation)
 
-4. On the **Configured permissions** screen, select **Grand admin content for (tenant name)**.
+4. On the **Configured permissions** screen, select **Grant admin consent for *tenant name***.
 
     > [!div class="mx-imgBorder"] 
-    > ![Select Grand admin content](media/grant-admin-consent.png "Select Grand admin content")
+    > ![Screenshot of selecting Grant admin consent.](media/grant-admin-consent.png "Select Grant admin consent")
 
-5. On the consent confirmation dialog, select **Yes**.
+5. In the confirmation dialog, select **Yes**.
 
-## Email server profile for Exchange Online with authentication type: Oauth (Cross Tenant)
+## Email server profile for Exchange Online with authentication type Oauth (Cross Tenant)
 
-To [create an email server profile for Exchange Online using Oauth (Cross Tenant)](connect-exchange-online.md#create-an-email-server-profile-for-exchange-online), you need to collect the following information from the Azure portal:
+To [create an email server profile for Exchange Online that uses Oauth (Cross Tenant) authentication](connect-exchange-online.md#create-an-email-server-profile-for-exchange-online), you need to collect the following information from the Azure portal:
 
-- TenantId: It's the tenantId of the tenant where the Exchange online is configured.
-- Application ID: It's the appId used by Dynamics to connect to Exchange Online.
-- Client Secret: It's the client secret used by Dynamics 365 to authenticate as the app.
+- TenantId: The tenant ID of the tenant where Exchange Online is configured
+- Application ID: The app ID used by Dynamics 365 to connect to Exchange Online
+- Client secret: The client secret used by Dynamics 365 to authenticate as the app
 
-  > [!div class="mx-imgBorder"]
-  > ![Email server profile form](media/server-profile-form.png "Email server profile form") 
+> [!div class="mx-imgBorder"]
+> ![Screenshot of the email server profile form.](media/server-profile-form.png "Email server profile form") 
