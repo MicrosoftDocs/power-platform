@@ -24,7 +24,7 @@ Dynamics 365 can now connect to mailboxes hosted on Exchange Server (on-premises
 
 ## Supported Exchange versions
 
-HMA will only be available from Exchange 2013 (CU19+) or Exchange 2016 (CU8+)<!--note from editor: Is it okay that in the post, these CU versions are given for Exchange Server? I'll stop asking now.-->. More information: [Announcing Hybrid Modern Authentication for Exchange On-Premises](https://techcommunity.microsoft.com/t5/exchange-team-blog/announcing-hybrid-modern-authentication-for-exchange-on-premises/ba-p/607476) (blog)
+HMA will only be available from Exchange 2013 (CU19+) or Exchange 2016 (CU8+). More information: [Announcing Hybrid Modern Authentication for Exchange On-Premises](https://techcommunity.microsoft.com/t5/exchange-team-blog/announcing-hybrid-modern-authentication-for-exchange-on-premises/ba-p/607476) (blog)
 
 ## Prerequisites
 
