@@ -39,8 +39,10 @@ Currently, the admin center provides the following capabilities.
 |Data policies     | More information: [Create and manage data loss prevention policies](create-dlp-policy.md).       |
 
 ### See also
-[Working with the admin portals](wp-work-with-admin-portals.md)<br />
-[Reference: Videos and PowerPoint presentations](videos.md)
+[Working with the admin portals](wp-work-with-admin-portals.md) <br />
+[Reference: Videos and PowerPoint presentations](videos.md) <br />
+[Introduction to Microsoft Power Platform](/learn/modules/introduction-power-platform/)
+
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
