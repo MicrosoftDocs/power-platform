@@ -22,7 +22,7 @@ Admins and IT professionals can use this information to prepare for future relea
 
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future major release. The feature or capability will continue to work and is fully supported until it is officially removed. This deprecation
-notification can span a few months or years. After removal, the feature or capability no longer work. Thisn'tice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
+notification can span a few months or years. After removal, the feature or capability no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
 
 
 ## The Analyze section, in mobile offline profiles is deprecated

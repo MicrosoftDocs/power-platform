@@ -129,8 +129,6 @@
       items:
         - name: Use PowerShell
           href: powershell-api.md
-        - name: Manage environments (REST API) 
-          href: online-management-api.md
         - name: Work with solutions (SDK API) 
           href: solution-api.md
         - name: Create patches 
