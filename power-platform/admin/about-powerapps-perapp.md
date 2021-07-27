@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/02/2021
+ms.date: 07/27/2021
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -18,7 +18,7 @@ search.app:
 ---
 # About Power Apps per app plans
 
-Power Apps per app plan allows individual users to run **two applications** and **one portal** for a specific business scenario in a **specific environment** based on the full capabilities of Power Apps. This plan provides an easy way for users to get started with Power Apps before broader scale adoption. These are available to purchase from the Office admin center and you can allocate add-ons in the [Capacity](https://admin.powerplatform.microsoft.com/resources/capacity) area in the Microsoft Power Platform admin center.<!-- Edit note: Should Office be changed to Microsoft 365. It is used elsewhere. --> More information: [Capacity add-ons](capacity-add-on.md).
+Power Apps per app plan allows individual users to run **two applications** and **one portal** for a specific business scenario in a **specific environment** based on the full capabilities of Power Apps. This plan provides an easy way for users to get started with Power Apps before broader scale adoption. These are available to purchase from the Office admin center and you can allocate add-ons in the [Capacity](https://admin.powerplatform.microsoft.com/resources/capacity) area in the Microsoft Power Platform admin center.More information: [Capacity add-ons](capacity-add-on.md).
 
 The following release plan topic announces the availability of this feature: [New licensing options for Power Automate standalone paid plans](/power-platform-release-plan/2019wave2/power-automate/new-licensing-options-power-automate-standalone-paid-plans).
 
@@ -117,9 +117,9 @@ The per app license gives a user access to two Power Apps and one portal for a s
 :::image type="content" source="media/per-app-license-consumption.png" alt-text="Per app license consumption example.":::
 
 > [!NOTE]
-> Sharing an app with a user consumes the per app capacity. 
-> 
-> The consumption reporting for the per app license is a work in progress. Please check back for more details once the reporting is launched. 
+> - Sharing an app with a user consumes the per app capacity. 
+> - Each user is required to have a license. 
+> - The consumption reporting for the per app license is a work in progress. Please check back for more details once the reporting is launched. 
 
 ## Known issues
 
