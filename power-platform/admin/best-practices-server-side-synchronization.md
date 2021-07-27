@@ -4,7 +4,7 @@ description: Best practices for server-side synchronization
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/04/2020
+ms.date: 07/28/2021
 author: revachauhan
 ms.subservice: admin
 ms.author: rechauha
@@ -19,8 +19,6 @@ search.app:
 ---
 # Best practices for server-side synchronization 
 
-<!-- legacy procedure -->
-
 Consider the following when planning and deploying server-side synchronization.  
   
 ## Best practices for configuring server-side synchronization  
@@ -32,11 +30,10 @@ Consider the following when planning and deploying server-side synchronization.
   
 |Settings|Recommendation|  
 |--------------|--------------------|  
-|Auto Discover Server Location|Yes|  
-|**Incoming Connection**||  
-|Authenticate Using|Server to Server Authentication|  
-|Use Impersonation|No|  
-|Use same settings for Outgoing|Yes|  
+|Name|Provide name for new Email server profile |  
+|**Advanced Settings** ||  
+|Process Emails from|Specify date and time you want new Email Server profile to process emails from. |  
+ 
   
 <a name="BKMK_OneAccount"></a>   
 ### If you want to use one set of credentials to process emails with Outlook or Exchange  
