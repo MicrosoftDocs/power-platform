@@ -22,6 +22,32 @@ search.app:
 
 You use the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] to create user accounts for every user who needs access to apps created using Power Apps and customer engagement apps in Dynamics 365 (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation). The user account registers the user with [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)]. 
 
+## User types
+
+### Full (regular) users
+These are the regular synchronized users from the Directory. [Jim, what's the Directory? Azure AD?]
+
+### Application users
+Identified by the presence of ApplicationId attribute in the system user record.
+
+### Non-interactive users
+- License specific provisioning business rules does not apply to these users after they are marked as non-interactive. Note: security group specific rules still apply. 
+- Cannot access Dataverse web interface or admin portals.
+- Can only access Dataverse via SDK/API calls.
+- There is a maximum limit of seven non-interactive users per instance.
+
+### Support user
+See [System and application users](system-application-users.md).
+
+- Not synchronized with AAD, and created by CDS out of the box.
+- Placeholder user record for all of the internal Microsoft support users. 
+- Key identifiers: 
+  - UPN value is crmoln@microsoft.com.
+  - Access mode value is 3.
+- All Microsoft support users will be mapped to this well-known record at runtime.
+
+
+
 ## Create a user account  
  When you create a user account in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], the system generates a user ID and temporary password for the user. You have the option to let the service send an email message to the user as clear text. Although the password is temporary, you might consider copying the information to send to the user through a more secure channel, such as from an email service that can digitally encrypt the contents. 
 
