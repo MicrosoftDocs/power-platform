@@ -24,13 +24,11 @@ Select the version of Power Virtual Agents you're using here:
 
 
 
-In Microsoft Teams, you can export and import chatbots between individual teams. 
+In Microsoft Teams, you can export and import chatbots between individual teams using the Power Apps Teams app. 
 
 You might want to do this to copy a working chatbot into a new team so you don't have to build it from scratch.
 
 ## Export your bot in Teams
-
-First, [publish your bot](publication-fundamentals-publish-channels-teams.md) to ensure the latest updates are included in your export.
 
 
 Follow the instructions in the section titled **Export customizations from Dataverse for Teams** in the [Move customizations between environments](/powerapps/teams/import-solution-in-teams.md#export-customizations-from-dataverse-for-teams) topic. 
