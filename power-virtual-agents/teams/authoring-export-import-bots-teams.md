@@ -41,8 +41,6 @@ The chatbot will be saved into the **Downloads** folder on your PC.
 
 ## Import your bot in Teams
 
-You can only import a chatbot in Teams if it's one that was originally exported from Teams. In other words, you can't import a chatbot into Teams if it was built and exported from the Power Virtual Agents web app.
-
 
 Follow the instructions in the section titled **Import customizations into Dataverse for Teams** in the [Move customizations between environments](/powerapps/teams/import-solution-in-teams.md#import-customizations-into-dataverse-for-teams) topic. 
 
