@@ -16,10 +16,10 @@ search.app:
   - Powerplatform
   - Flow
 ---
-<!--note from editor: The title needs to be different from the H1. Not sure my edit is the best take.-->
+
 # Business continuity and disaster recovery
 
-Microsoft provides business continuity and disaster recovery for production instances of Dynamics 365 software as a service (SaaS) applications, to provide continuity<!--note from editor: We need a phrase like this here to avoid the misplaced modifier situation. --> in the event of an Azure region&ndash;wide outage. Customer engagement apps like  Dynamics 365 Sales, Customer Service, Field Service, Marketing, and  Project Service Automation run on the Microsoft Dataverse platform. Tenant admins can deploy a production instance of a customer engagement app or Dataverse with the purchase of appropriate licenses. For more information, go to [Create and manage environments in the Power Platform admin center](create-environment.md).
+Microsoft provides business continuity and disaster recovery for production instances of Dynamics 365 software as a service (SaaS) applications, to provide continuity in the event of an Azure region&ndash;wide outage. Customer engagement apps like  Dynamics 365 Sales, Customer Service, Field Service, Marketing, and  Project Service Automation run on the Microsoft Dataverse platform. Tenant admins can deploy a production instance of a customer engagement app or Dataverse with the purchase of appropriate licenses. For more information, go to [Create and manage environments in the Power Platform admin center](create-environment.md).
 
 For production environments, a replica of the different storage services (Azure SQL and file storage) is established in the secondary region for each environment at the time of deployment. For more information, go to [Environments](environments-overview.md). These replicas are referred to as geo-secondary replicas. The geo-secondary replicas are kept synchronized with the primary instance through continuous data replication. There is a small replication latency, or lag&mdash;typically less than a few minutes&mdash;between the primary data sources and their corresponding geo-secondary replicas. More information: [Ensure business continuity and disaster recovery (BCDR): Azure Paired Regions](/azure/best-practices-availability-paired-regions)
 
@@ -42,14 +42,13 @@ In the event that Microsoft determines there's a risk to the availability of the
 
 ## Failback
 
-Microsoft will notify customers and switch back the environments to operate out of the primary region when it determines that the primary region is back online and is fully operational. Users connected to the systems will experience a brief interruption of up to one minute. The service, including all non-production instances, will be fully restored.<!--note from editor: Suggested.--> There will be no data loss.
+Microsoft will notify customers and switch back the environments to operate out of the primary region when it determines that the primary region is back online and is fully operational. Users connected to the systems will experience a brief interruption of up to one minute. The service, including all non-production instances, will be fully restored. There will be no data loss.
 
 Dataverse for Teams environments don't support secondary replicas, hence this feature of providing business continuity won't be available until such Dataverse for Teams environments are converted to Dataverse production instances by using the upgrade process described in [Upgrade process](about-teams-environment.md#upgrade-process).
 
 For more information about Dataverse for Teams environments, go to [About the Microsoft Dataverse for Teams environment](about-teams-environment.md).
 
 ### See also
-
 [Finance and Operations business continuity and disaster recovery](/dynamics365/fin-ops-core/dev-itpro/sysadmin/business-continuity-disaster-recovery)
 
 
