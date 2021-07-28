@@ -410,8 +410,8 @@
           href: build-custom-reports.md
         - name: "Preview: Export Power Apps inventory and usage data"
           href: self-service-analytics.md
-      - name: "Preview: Tenant-level analytics" 
-        href: tenant-level-analytics.md
+        - name: "Preview: Tenant-level analytics" 
+          href: tenant-level-analytics.md
       - name: "Preview: Analyze telemetry with Application Insights"
         items:
         - name: "Preview: Model-driven apps and Microsoft Dataverse telemetry"
