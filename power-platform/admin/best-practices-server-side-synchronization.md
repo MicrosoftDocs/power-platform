@@ -19,8 +19,8 @@ search.app:
 ---
 # Best practices for server-side synchronization 
 
-Consider the best practices outlined in this topic when planning and deploying server-side synchronization.  
-  
+Consider the best practices outlined in this topic, when plan and deploy server-side synchronization.  
+ 
 ## Configure server-side synchronization for customer engagement apps and Exchange Online  
 
  By default, the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] email server profile is created for customer engagement apps (such as [Dynamics 365 Sales](/dynamics365/sales-professional/help-hub), [Dynamics 365 Customer Service](/dynamics365/customer-service/help-hub), [Dynamics 365 Marketing](/dynamics365/marketing/help-hub), [Dynamics 365 Field Service](/dynamics365/field-service/overview), and [Dynamics 365 Project Service Automation](/dynamics365/project-operations/psa/overview)), and should be your first choice. If you want to use your own profile, you use customer engagement apps, and [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)], and both services are on the same tenant, use the following settings in your email server profile (**Settings** > **Email Configuration** > **Email Server Profiles**).  
