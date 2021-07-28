@@ -27,14 +27,15 @@ You can set the default synchronization method applied to all newly created user
 
 2. On the command bar, select **Settings** > **Email** > **Email settings**.  
   
-   > [!NOTE] 
-   > In the legacy web app, in the upper-right corner, select **Settings** ![Gear icon.](media/selection-rule-gear-button.png), and then select **Advanced settings**. Then go to   **Settings** > **Email Configuration** > **Email Configuration Settings.**.  
+> [!NOTE]
+> In the legacy web app, in the upper-right corner, select **Settings** ![Gear icon.](media/selection-rule-gear-button.png), and then select **Advanced settings**. Then go to   **Settings** > **Email Configuration** > **Email Configuration Settings.**.  
   
 You can set the synchronization method for individual mailboxes:  
 
 1.  In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment. 
-    > [!NOTE] 
-    > In the legacy web app, in the upper-right corner, select **Settings** ![Gear icon.](media/selection-rule-gear-button.png), and then select **Advanced settings**. 
+
+> [!NOTE]
+> In the legacy web app, in the upper-right corner, select **Settings** ![Gear icon.](media/selection-rule-gear-button.png), and then select **Advanced settings**. 
 
 2. Select **Settings** > **Mailboxes**, and then select a mailbox.
   
