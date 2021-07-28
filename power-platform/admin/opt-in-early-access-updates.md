@@ -1,9 +1,9 @@
 ---
 title: "Opt in to early access updates  | MicrosoftDocs"
 description: Opt in to early access updates in Microsoft Power Platform and Dynamics 365. 
-author: angelmarshall
+author: samathur
 ms.subservice: admin
-ms.author: tsmarsha
+ms.author: samathur
 ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
@@ -124,7 +124,7 @@ The following checklist provides the general guidelines to help you prepare for 
    > [!NOTE]
    > If you don't have a sandbox copy of your production environment, you can [create a copy](copy-environment.md) in the Power Platform admin center. 
 
-3. Opt in to the early access updates from the Power Platform admin center to enable the new release wave in the sandbox environment. Check [Additional requirements to enable early access updates](#additional-requirements-to-enable-early-access-updates) if your apps require manual steps.   
+3. Opt in to the early access updates from the Power Platform admin center to enable the new release wave in the sandbox environment.    
 
 4. Validate that key scenarios work as expected in the sandbox environment after the update is completed. 
    - Update the customizations in your applications, if any, to leverage or respond to the new capabilities as needed. 
