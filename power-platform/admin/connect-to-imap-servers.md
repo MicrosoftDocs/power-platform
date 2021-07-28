@@ -76,7 +76,7 @@ Follow these steps to connect customer engagement apps (such as [Dynamics 365 Sa
     > [!div class="mx-imgBorder"] 
     > ![Screenshot showing advanced settings.](media/advanced-settings.png "Advanced settings")
 
-2. Select **Settings** > **Email** > **Server profiles**.  
+2. Select **Settings** > **Email Configuration** > **Email Server Profiles**.  
 
 3. Select **New** > **IMAP/SMTP Server**.  
 
