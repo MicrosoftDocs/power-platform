@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/06/2021
+ms.date: 07/28/2021
 ms.subservice: admin
 ms.author: jimholtz 
 search.audienceType: 
@@ -202,25 +202,37 @@ Use the following methods to free up storage for each of the capacity types.
 ### Method 10: Delete audit logs  
 
  When you enable auditing, customer engagement apps create audit logs to store the audit history of the records. You can delete these audit logs to free space when they are no longer needed.  
+
+> [!NOTE]
+> Microsoft is migrating audit logs to a new storage location. Environments whose data migration is complete can use the new audit delete monitoring experience.
   
 > [!WARNING]
 >  When you delete an audit log, you can no longer view the audit history for the period covered by that audit log.  
-  
-1. [!INCLUDE[proc_settings_auditing](../includes/proc-settings-auditing.md)]  
-  
-2. In the **Audit** area choose **Audit Log Management**.  
-  
-3. Select the oldest audit log, then choose **Delete Logs**.  
- 
-> [!div class="mx-imgBorder"] 
-> ![Free up storage method 10.](media/free-storage-method10a.png "Free up storage method 10")  
- 
-4. In the confirmation message choose **OK**.  
-  
-> [!NOTE]
->  You can only delete the oldest audit log in the system. To delete more than one audit log repeat deleting the oldest available audit log until you have deleted enough logs.  
-  
 
+
+1. Sign in to the Power Platform admin center, and then select an environment. 
+
+2. Under **Auditing**, select **Delete logs**.
+
+:::image type="content" source="media/audit-log-delete.png" alt-text="Select Delete to delete audit logs.":::
+
+3. Delete audit logs to free up log storage capacity for the selected environment.
+ 
+   :::image type="content" source="media/audit-log-delete-select.png" alt-text="Select audit logs to delete.":::
+
+   **Delete logs by table**: Select one or more tables for which you want to delete audit logs. By default all tables in the environment will be shown, whether they contain audit data or not.
+
+   **Delete access logs by people and systems**: Delete all access logs. This will delete all logs for all users and systems.
+
+   **Delete all logs up to and including the selected date**: Delete logs including the date selected. 
+
+4. Select **Delete**.
+
+5. Select **Confirm**.
+
+All data will be deleted in an asynchronous background system job. You can see the status from **Settings** > **Data management** > **Bulk deletion**.
+
+  
 ## Reduce database storage
 
 ### Method 1: Delete bulk email and workflow instances using a bulk deletion job  
