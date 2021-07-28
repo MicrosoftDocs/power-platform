@@ -226,13 +226,19 @@ Use the following methods to free up storage for each of the capacity types.
 
    **Delete all logs up to and including the selected date**: Delete logs including the date selected. 
 
-4. Select **Delete**.
+4. Select **Delete**, and then confirm the deletions.
 
-5. Select **Confirm**.
+All data will be deleted in an asynchronous background system job. 
 
-All data will be deleted in an asynchronous background system job. You can see the status from **Settings** > **Data management** > **Bulk deletion**.
+#### Monitor the status of audit delete jobs
 
-  
+1.	In the Power Platform admin center, select an environment.
+
+2.	Select **Settings** > **Data management** > **Bulk deletion**.
+
+3.	Select the system job name to open details about your delete job.
+
+
 ## Reduce database storage
 
 ### Method 1: Delete bulk email and workflow instances using a bulk deletion job  
