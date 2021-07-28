@@ -92,11 +92,11 @@ Different channels have different end-user experiences. The following table show
 
 
 >[!IMPORTANT]
->Users can't send attachments to Power Virtual Agents chatbots. If they try to upload a file (including media, such as images), the bot will say:
+>Users can't send or upload attachments to Power Virtual Agents chatbots. If they try to send a file (including media, such as images), the bot will say:
 >
 >*Looks like you tried to send an attachment. Currently, I can only process text. Please try sending your message again without the attachment.*
 >
->This applies to all channels, even if the channel itself supports attachments (such as with the Direct Line API).
+>This applies to all channels, even if the channel itself supports attachments (for example, if you're using the Direct Line API).
 
 
  ## In this section
