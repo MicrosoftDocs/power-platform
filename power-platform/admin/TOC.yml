@@ -406,12 +406,14 @@
           href: analytics-ui-flow.md 
       - name: Reports
         items:
-        - name: "Preview: Create custom dashboards using Power Apps inventory and usage data"
-          href: build-custom-reports.md
+        - name: "Preview: Tenant-level analytics" 
+          href: tenant-level-analytics.md
+      - name: Data export
+        items:
         - name: "Preview: Export Power Apps inventory and usage data"
           href: self-service-analytics.md
-      - name: "Preview: Tenant-level analytics" 
-        href: tenant-level-analytics.md
+        - name: "Preview: Create custom dashboards using Power Apps inventory and usage data"
+          href: build-custom-reports.md
       - name: "Preview: Analyze telemetry with Application Insights"
         items:
         - name: "Preview: Model-driven apps and Microsoft Dataverse telemetry"
@@ -549,8 +551,27 @@
         - name: Restrict cross-tenant access 
           href: cross-tenant-restrictions.md
       - name: Data loss prevention policies 
-        href: wp-data-loss-prevention.md
         items: 
+        - name: DLP policies
+          items: 
+          - name: Overview
+            href: wp-data-loss-prevention.md
+          - name: Connector classification
+            href: dlp-connector-classification.md
+          - name: Granular controls
+            href: dlp-granular-controls.md
+          - name: Endpoint input
+            href: dlp-endpoint-input-formats-examples.md
+          - name: View policies and policy scope
+            href: dlp-policy-scope.md
+          - name: Effect of multiple policies
+            href: dlp-combined-effect-multiple-policies.md
+          - name: Resource exemption
+            href: dlp-resource-exemption.md
+          - name: Impact on apps and flows
+            href: dlp-impact-policies-apps-flows.md
+          - name: Known issues
+            href: dlp-known-issues.md
         - name: Create a DLP policy
           href: create-dlp-policy.md
         - name: Manage DLP policies
