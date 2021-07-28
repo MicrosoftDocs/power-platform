@@ -21,11 +21,8 @@ search.app:
 
 Consider the following when planning and deploying server-side synchronization.  
   
-## Best practices for configuring server-side synchronization  
-  
-<a name="BKMK_CRMEXOnline"></a>   
+## Best practices for configuring server-side synchronization for customer engagement apps and Exchange Online  
 
-### If you use customer engagement apps and Exchange Online  
  By default, the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] email server profile is created for customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), and should be your first choice. If you want to use your own profile, you use customer engagement apps, and [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)], and both services are on the same tenant, use the following settings in your email server profile (**Settings** > **Email Configuration** > **Email Server Profiles**).  
   
 |Settings|Recommendation|  
@@ -36,7 +33,7 @@ Consider the following when planning and deploying server-side synchronization.
  
   
 <a name="BKMK_OneAccount"></a>   
-### If you want to use one set of credentials to process emails with Outlook or Exchange  
+## If you want to use one set of credentials to process emails with Outlook or Exchange  
  Using one account to process email to all mailboxes is easier to maintain but requires using an account that has access to all mailboxes in [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] or [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)]. The account must have impersonation rights on [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)]. If that single account is compromised, all mailboxes using that account are compromised. Exchange impersonation scope can be configured to limit which mailboxes an account can impersonate. For more information, see [Configure impersonation](/exchange/client-developer/exchange-web-services/how-to-configure-impersonation).
  
  Use the following settings in your email server profile (**Settings** > **Email Configuration** > **Email Server Profiles**) to use a single account for email processing.  
@@ -55,7 +52,7 @@ Consider the following when planning and deploying server-side synchronization.
 Delegation (Use Impersonation = No) is not supported for syncing Appointments, Contacts, and Tasks.  
   
 <a name="BKMK_EachUser"></a>   
-### If you want to use individual credentials to process emails with Outlook or Exchange  
+## If you want to use individual credentials to process emails with Outlook or Exchange  
  An alternative to a single account to process emails is using individual accounts. This method requires more maintenance effort but does not focus security on a single account. If you want each user account to synchronize with [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] or [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] and you're not using the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] email server profile, use the following settings (**Settings** > **Email Configuration** > **Email Server Profiles**).  
   
 |Settings|Recommendation|  
