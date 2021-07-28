@@ -18,7 +18,7 @@ search.app:
 ---
 # Set incoming and outgoing email synchronization 
 
-You have several options for synchronizing email messages with Microsoft Dataverse or customer engagement apps (such as Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation). Use the information in this topic to deploy the best option for your company.
+You have several options for synchronizing email messages with Microsoft Dataverse or customer engagement apps (such as [Dynamics 365 Sales](/dynamics365/sales-professional/help-hub), [Dynamics 365 Customer Service](/dynamics365/customer-service/help-hub), [Dynamics 365 Marketing](/dynamics365/marketing/help-hub), [Dynamics 365 Field Service](/dynamics365/field-service/overview), and [Dynamics 365 Project Service Automation](/dynamics365/project-operations/psa/overview)). Use the information in this topic to deploy the best option for your company.
   
 ## Set the synchronization method  
 You can set the default synchronization method applied to all newly created user mailboxes:  
