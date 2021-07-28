@@ -1,5 +1,5 @@
 ---
-title: "Export and import bots using solutions (preview)"
+title: "Export and import bots using solutions"
 description: "Transfer bots between environments by adding them to Power Apps solutions."
 keywords: "export, import, transfer, environment, PVA"
 ms.date: 6/28/2021
@@ -14,6 +14,15 @@ ms.collection: virtualagent
 ---
 
 # Export and import bots using solutions
+
+
+
+Select the version of Power Virtual Agents you're using here:
+
+> [!div class="op_single_selector"]
+> - [Power Virtual Agents web app](authoring-export-import-bots.md)
+> - [Power Virtual Agents app in Microsoft Teams](teams/authoring-export-import-bots-teams.md)
+
 
 You can export and import bots using [solutions](/power-platform/alm/solution-concepts-alm) so you can move your bots across multiple [environments](/power-platform/admin/environments-overview).
 
@@ -48,7 +57,7 @@ You use solutions to export bots from one environment and import them into anoth
  
     ![Link to the Power Platform admin center from Power Virtual Agents.](media/export-settings-powerapps.png "Link to the Power Platform admin center from Power Virtual Agents")
 
-3. Sign in to Power Apps and select **New solution**. Enter the information for each of the fields as described in this table, then select **Create**.
+3. Sign in to Power Apps, go to the **Solutions** tab, and select **New solution**. Enter the information for each of the fields as described in this table, then select **Create**.
 
     ![New solution button highlighted.](media/export-new-solution.png "New solution button highlighted")
 
@@ -62,7 +71,7 @@ You use solutions to export bots from one environment and import them into anoth
 **Add your bot to the solution**
 
 
-1. Select the solution you want to add your bot to.
+1. Select the solution you just created.
 
 1. Select **Add existing** and choose **Chatbot**.
 
