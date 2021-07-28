@@ -91,6 +91,14 @@ Different channels have different end-user experiences. The following table show
  [Welcome message](authoring-create-edit-topics.md#insert-nodes) | Supported | Supported | Not supported | Supported for [Microsoft Teams](/dynamics365/customer-service/configure-microsoft-teams) and [Chat](/dynamics365/customer-service/set-up-chat-widget). Not supported for other channels.
 
 
+>[!IMPORTANT]
+>Users can't send attachments to Power Virtual Agents chatbots. If they try to upload a file (including media, such as images), the bot will say:
+>
+>*Looks like you tried to send an attachment. Currently, I can only process text. Please try sending your message again without the attachment.*
+>
+>This applies to all channels, even if the channel itself supports attachments (such as with the Direct Line API).
+
+
  ## In this section
 
 
