@@ -19,7 +19,7 @@ search.app:
 ---
 # Best practices for server-side synchronization 
 
-Consider the best practices outlined in this topic, when plan and deploy server-side synchronization.  
+Consider the best practices outlined in this topic, when you plan and deploy server-side synchronization.  
  
 ## Configure server-side synchronization for customer engagement apps and Exchange Online  
 
