@@ -199,22 +199,41 @@ Use the following methods to free up storage for each of the capacity types.
 
 ## Reduce log storage
 
-### Method 10: Delete audit logs  
+### Method 10: Delete audit logs - legacy process
 
  When you enable auditing, customer engagement apps create audit logs to store the audit history of the records. You can delete these audit logs to free space when they are no longer needed.  
-
-> [!NOTE]
-> Microsoft is migrating audit logs to a new storage location. Environments whose data migration is complete can use the new audit delete monitoring experience.
   
 > [!WARNING]
 >  When you delete an audit log, you can no longer view the audit history for the period covered by that audit log.  
+  
+1. [!INCLUDE[proc_settings_auditing](../includes/proc-settings-auditing.md)]  
+  
+2. In the **Audit** area choose **Audit Log Management**.  
+  
+3. Select the oldest audit log, then choose **Delete Logs**.  
+ 
+> [!div class="mx-imgBorder"] 
+> ![Free up storage method 10.](media/free-storage-method10a.png "Free up storage method 10")  
+ 
+4. In the confirmation message choose **OK**.  
+  
+> [!NOTE]
+>  You can only delete the oldest audit log in the system. To delete more than one audit log repeat deleting the oldest available audit log until you have deleted enough logs.  
+  
+### Method 10: Delete audit logs - new process
 
+Microsoft is migrating audit logs to a new storage location. Environments whose data migration is complete can use the new audit delete monitoring experience.
+
+When you enable auditing, customer engagement apps create audit logs to store the audit history of the records. You can delete these audit logs to free space when they are no longer needed.  
+
+> [!WARNING]
+> When you delete an audit log, you can no longer view the audit history for the period covered by that audit log.  
 
 1. Sign in to the Power Platform admin center, and then select an environment. 
 
 2. Under **Auditing**, select **Delete logs**.
 
-:::image type="content" source="media/audit-log-delete.png" alt-text="Select Delete to delete audit logs.":::
+   :::image type="content" source="media/audit-log-delete.png" alt-text="Select Delete to delete audit logs.":::
 
 3. Delete audit logs to free up log storage capacity for the selected environment.
  
