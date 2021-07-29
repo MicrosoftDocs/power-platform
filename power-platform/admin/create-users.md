@@ -172,7 +172,7 @@ Identified by the presence of ApplicationId attribute in the system user record.
 ### Support user
 See [System and application users](system-application-users.md).
 
-- Not synchronized with Azure AD, and created by CDS out of the box.
+- Not synchronized with Azure AD, and created by Dataverse out of the box.
 - Placeholder user record for all of the internal Microsoft support users. 
 - Key identifiers: 
   - UPN value is crmoln@microsoft.com.
@@ -182,10 +182,10 @@ See [System and application users](system-application-users.md).
 ### Delegated administrator
 
 See the following:
-- [For partners: the Delegated Administrator](for-partners-delegated-administrator.md)
-- [System and application users](system-application-users.md)
+[For partners: the Delegated Administrator](for-partners-delegated-administrator.md)
+[System and application users](system-application-users.md)
 
-- Not synchronized with AAD, and created by CDS out of the box. 
+- Not synchronized with Azure AD, and created by Dataverse out of the box. 
 - Placeholder user record for all of customer’s delegated admin partner users to access CDS as delegated administrators. 
 - Key identifiers: 
   - UPN value is crmoln2@microsoft.com. 
