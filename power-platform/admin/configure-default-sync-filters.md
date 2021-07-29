@@ -19,24 +19,21 @@ search.app:
 ---
 # Configure default sync filters for appointments, contacts, and tasks
 
-Server-side synchronization uses filter criteria that’s set in synchronization filters to determine which app rows are synchronized with Exchange for each user. Sync filters are first initialized for a user when server-side synchronization is configured by a user for rows such as appointments, contacts, and tasks. For more information, see Create or modify online synchronization filters.
-
-> [!IMPORTANT]
-> [!INCLUDE[cc_feature_requires_office_365](../includes/cc-feature-requires-office-365.md)]  
-
-## Get Exchange ready
-
- To use [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] with customer engagement apps, you must have an [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] subscription that either comes as part of a [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] subscription or can be subscribed to separately. For information about [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)], go to:  
-  
--   [Exchange Online](/exchange/exchange-online)
--   [Exchange Online service description](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description)
--   [Microsoft 365 and Office 365 service descriptions](/office365/servicedescriptions/office-365-service-descriptions-technet-library)  
-  
-> [!TIP]
->  To make sure you've got a good connection to [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)], run the [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/). For information about which tests to run, see [Test mail flow with the Remote Connectivity Analyzer](https://technet.microsoft.com/library/dn305950\(v=exchg.150\).aspx).
+Server-side synchronization uses filter criteria that’s set in synchronization filters to determine which app rows are synchronized with Exchange for each user. Sync filters are first initialized for a user when server-side synchronization is configured by a user for rows such as appointments, contacts, and tasks. For more information, see [Create or modify online synchronization filters](choose-records-synchronize-dynamics-365-outlook-exchange.md#create-or-modify-online-synchronization-filters).
+ 
+When a user mailbox is set up to use server-side synchronization for appointments, contacts, and tasks, their personal option filters list will have default logic for each table applied immediately. When the next sync cycle happens server-side sync will use this logic to synchronize existing rows that meet the fetchXML logic provided in each filter.
 
 
-## Create an email server profile for Exchange Online
+
+There are times when the default logic might synchronize rows which an organization doesn’t want to push to Exchange, such as the default **My Outlook Contacts** filter.
+As an example, an organization might not want to synchronize every active contact that is owned by the synchronizing user and wants to put additional restrictions in the filter logic distributed by default. This logic could be changed one by one for every user, but this is time consuming and it would need to be changed each time a user is setup with server-side sync.mAnother way to modify this logic is to change the default logic distributed to users when they’re set up with server-side synchronization for the first time. 
+
+> [!NOTE]
+> Default synchronization templates can’t be edited within the Dynamics 365 organization solution editor. This needs to be done through calls to the Dynamics 365 API using the XrmToolBox. The [XrmToolBox](https://www.xrmtoolbox.com/) is a third-party application that has multiple different tools for interacting with Dynamics 365 data. For more information on the tool, see [Documentation for XrmToolBox](https://www.xrmtoolbox.com/documentation/). 
+
+
+## Check the current default Outlook template filters
+
 
 1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment. 
 
