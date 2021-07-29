@@ -32,7 +32,7 @@ Identified by the presence of ApplicationId attribute in the system user record.
 
 ### Non-interactive users
 - License specific provisioning business rules does not apply to these users after they are marked as non-interactive. Note: security group specific rules still apply. 
-- Cannot access Dataverse web interface or admin portals.
+- Cannot access Microsoft Dataverse web interface or admin portals.
 - Can only access Dataverse via SDK/API calls.
 - There is a maximum limit of seven non-interactive users per instance.
 
@@ -356,6 +356,58 @@ The following table shows the fields that are populated on the user form (user r
 <td colspan="3">* The Address field comprises the values from the City and State/province fields in Azure AD.</td></tr>
 </tbody>
 </table>
+
+## Add users to Dataverse 
+
+For users to have access to applications and data in a Dataverse environment, at a minimum the SystemUser table in Dataverse must have a record corresponding to the respective user identity. There are different mechanisms to add users in Dataverse, either automatic or on demand: 
+
+1. A system background process runs every 30 minutes to synchronize changes from Azure AD and updates the SystemUser records in Dataverse based on pre-determined set of requirements. The time taken to synchronize all changes into Dataverse is dependent on total number of users must be added or updated. For large organizations with thousands of users in AAD, we recommend creating security groups associated with each environment, so only the required subset of users is added into Dataverse. 
+
+   > [!NOTE]
+   > Not all users added in Azure AD will be pickup by the automatic synchronization process. This section [Jim, link to what?] details the eligibility criteria the system background process applies to pick up an user from AAD and add it into Dataverse.
+
+2. If users already exist in Azure AD, they are automatically added to SystemUsers table at first attempt to access the Dataverse environment. Note that if a user already exists in Dataverse, but in a disabled state, attempting to access the environment will result in the user’s state to be updated to “enabled”, assuming they are entitled at the time of access. 
+
+3. Users that have the necessary permissions, can use the [API](/powershell/module/microsoft.powerapps.administration.powershell/add-adminpowerappssyncuser?view=pa-ps-latest) to add or update users in Dataverse on demand. 
+
+4. Administrators can leverage the Power Platform admin center user management experience to [add users in Dataverse on demand](add-users-to-environment.md#add-users-to-an-environment-that-has-a-dataverse-database). 
+
+## Categories of users not added automatically in Dataverse 
+
+In certain conditions, the above-mentioned system background process is not adding users automatically into Dataverse. In these cases, users will be added on demand either when they first attempt to access the environment or by an administrator using the API or the Power Platform admin center. These conditions are: 
+
+1. Users are part of a Dataverse for Teams environment type. 
+2. Users are part of an environment with a Dataverse database and have a free Dataverse service plan from M365 licenses. 
+3. Users are part of an environment with a Dataverse database and environment level app-pass license type. 
+
+> [!NOTE]
+> Users cannot be added to SystemUser table either automatically or on demand in case of environments without Dataverse database.  
+
+## Requirements for successfully adding users in Dataverse 
+
+Below criteria must be met for successfully adding the user in the Dataverse table: 
+
+1. User must be enabled and not deleted or soft-deleted in AAD. User must be enabled in AAD to be enabled in a Dataverse database. If user is added to Dataverse and then deleted in AAD, the state in the Dataverse table will be updated to “disabled”.  
+
+2. User must have a valid license with these exceptions: 
+   1. Admin users do not require a license. Unlicensed AAD admins are enabled in the systems as “Setup user” and have administrative only access mode. 
+   2. Individual users do not need to have a license when the environment has app pass capacity. This only applies to adding users on demand (either at first attempt to access the environment or through API/Power Platform admin center). 
+   3. Individual users do not need to have a license when the tenant they are part of has a tenant level Marketing license. This only applies to adding users on demand (either at first attempt to access the environment or through API/Power Platform admin center). 
+   4. Non-interactive users do not need a license 
+   5. Free Dataverse plans from M365 license are honored when users added on-demand (either at first attempt to access the environment or through API/Power Platform admin center)  
+
+> [!NOTE]
+> Guest users should also have a license from the environment’s tenant. License from Guest user's tenant is NOT considered as valid license.
+
+3. If the environment has a security group defined, user must be part of the respective security group, unless the user is a Tenant or Power Platform Administrator. Non-admin users or D365 service admin must be in the security group to access the system. When the owner of the security group is added to Dataverse through an on-demand action, the user will be considered a valid member of the security group and will be added to Dataverse successfully.  
+
+Adding users to Dataverse has different implications depending on the environment type: 
+
+1. If users are part of a trial environment, then they will not need email approval for being added to Dataverse. Users will only be added to Dataverse on demand. The background sync process will still run to keep the users in the environment up-to-date, but will not add users automatically. 
+
+2. Only the initial user that created the developer environment type will be added to Dataverse 
+
+3. Users that are part of a Dataverse for Teams environment will only be added to Dataverse’s SystemUser table as result of the user’s first attempt to access the environment. 
 
 ### See also
 [Get started with security roles in Dataverse](/learn/modules/get-started-security-roles/) <br />
