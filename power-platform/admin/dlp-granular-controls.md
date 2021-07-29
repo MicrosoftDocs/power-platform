@@ -4,7 +4,7 @@ description: About fine-grained controls such as the ability to block specific c
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/19/2021
+ms.date: 07/29/2021
 author: jimholtz
 ms.subservice: admin
 ms.author: jimholtz
@@ -42,30 +42,13 @@ _Example_
 
 Get-AdminPowerAppConnectorAction -ConnectorName shared_msnweather
 
-
 |Id   |Type  |Properties  |
 |---------|---------|---------|
-|Row1     |         |         |
-|Row2     |         |         |
-|Row3     |         |         |
-|Row4     |         |         |
-|Row5     |         |         |
-|Row6     |         |         |
-|Row7     |         |         |
-|Row8     |         |         |
-|Row9     |         |         |
-|Row10     |         |         |
-
-
-
-
-Id                        Type                                       Properties
---                        ----                                       ----------
-TodaysForecast            Microsoft.ProcessSimple/apis/apiOperations @{summary=Get forecast for today; description=Get the forecast for the current day in the specified location.; visib...
-OnCurrentWeatherChange    Microsoft.ProcessSimple/apis/apiOperations @{summary=When the current weather changes; description=Triggers a new flow when the specified weather measure chang...
-CurrentWeather            Microsoft.ProcessSimple/apis/apiOperations @{summary=Get current weather; description=Get the current weather for a location.; visibility=advanced; pageable=Fa...
-TomorrowsForecast         Microsoft.ProcessSimple/apis/apiOperations @{summary=Get the forecast for tomorrow; description=Get the forecast for tomorrow in the specified location.; visib...
-OnCurrentConditionsChange Microsoft.ProcessSimple/apis/apiOperations @{summary=When the current conditions change; description=Triggers a new flow when the conditions change for a locat... 
+|TodaysForecast     |  Microsoft.ProcessSimple/apis/apiOperations       |  @{summary=Get forecast for today; description=Get the forecast for the current day in the specified location.; visib...        |
+|OnCurrentWeatherChange     | Microsoft.ProcessSimple/apis/apiOperations        | @{summary=When the current weather changes; description=Triggers a new flow when the specified weather measure chang...        |
+|CurrentWeather     | Microsoft.ProcessSimple/apis/apiOperations        | @{summary=Get current weather; description=Get the current weather for a location.; visibility=advanced; pageable=Fa...        |
+|TomorrowsForecast     |  Microsoft.ProcessSimple/apis/apiOperations       |  @{summary=Get the forecast for tomorrow; description=Get the forecast for tomorrow in the specified location.; visib...       |
+|OnCurrentConditionsChange     |  Microsoft.ProcessSimple/apis/apiOperations       |  @{summary=When the current conditions change; description=Triggers a new flow when the conditions change for a locat...       |
 
 **Configure connector action rules for a policy**
 The object that contains connector action rules for a policy is referred to below as the connector configurations.
