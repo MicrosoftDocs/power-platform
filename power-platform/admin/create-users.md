@@ -377,7 +377,7 @@ For users to have access to applications and data in a Dataverse environment, at
 In certain conditions, the above-mentioned system background process is not adding users automatically into Dataverse. In these cases, users will be added on demand either when they first attempt to access the environment or by an administrator using the API or the Power Platform admin center. These conditions are: 
 
 1. Users are part of a Dataverse for Teams environment type. 
-2. Users are part of an environment with a Dataverse database and have a free Dataverse service plan from M365 licenses. 
+2. Users are part of an environment with a Dataverse database and have a free Dataverse service plan from Microsoft 365 licenses. 
 3. Users are part of an environment with a Dataverse database and environment level app-pass license type. 
 
 > [!NOTE]
