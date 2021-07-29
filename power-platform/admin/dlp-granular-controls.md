@@ -38,7 +38,7 @@ This opens up a side panel which enables admins to allow or deny specific action
 **Retrieve a list of available actions for a connector**
 Get-AdminPowerAppConnectorAction
 
-_Example_
+**Example**
 
 Get-AdminPowerAppConnectorAction -ConnectorName shared_msnweather
 
