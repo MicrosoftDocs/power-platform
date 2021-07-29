@@ -9,7 +9,7 @@ ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/01/2021
+ms.date: 07/29/2021
 search.audienceType: 
   - admin
 search.app:
@@ -372,10 +372,10 @@ The following table shows the fields that are populated on the user form (user r
 
 For users to have access to applications and data in a Dataverse environment, at a minimum the SystemUser table in Dataverse must have a record corresponding to the respective user identity. There are different mechanisms to add users in Dataverse, either automatic or on demand: 
 
-1. A system background process runs every 30 minutes to synchronize changes from Azure AD and updates the SystemUser records in Dataverse based on pre-determined set of requirements. The time taken to synchronize all changes into Dataverse is dependent on total number of users must be added or updated. For large organizations with thousands of users in Azure AD, we recommend creating security groups associated with each environment, so only the required subset of users is added into Dataverse. 
+1. A system background process runs every 30 minutes to synchronize changes from Azure AD and updates the SystemUser records in Dataverse based on pre-determined set of [requirements](#requirements-for-successfully-adding-users-in-dataverse). The time taken to synchronize all changes into Dataverse is dependent on total number of users must be added or updated. For large organizations with thousands of users in Azure AD, we recommend creating security groups associated with each environment, so only the required subset of users is added into Dataverse. 
 
    > [!NOTE]
-   > Not all users added in Azure AD will be pickup by the automatic synchronization process. This section [Jim, link to what?] details the eligibility criteria the system background process applies to pick up an user from Azure AD and add it into Dataverse.
+   > Not all users added in Azure AD will be pickup by the automatic synchronization process. [This section](#user-types) details the eligibility criteria the system background process applies to add a user from Azure AD into Dataverse.
 
 2. If users already exist in Azure AD, they are automatically added to SystemUsers table at first attempt to access the Dataverse environment. Note that if a user already exists in Dataverse, but in a disabled state, attempting to access the environment will result in the user’s state to be updated to “enabled”, assuming they are entitled at the time of access. 
 
