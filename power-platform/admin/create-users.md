@@ -422,17 +422,14 @@ Adding users to Dataverse has different implications depending on the environmen
 
 ## FAQ
 
-Q: If a user that is added to Dataverse SystemUser table becomes disabled or unlicensed in AAD, how is that reflected in Dataverse?  
+### If a user that is added to Dataverse SystemUser table becomes disabled or unlicensed in AAD, how is that reflected in Dataverse?  
+User record is not deleted, but its state in Dataverse will be updated to “disabled”.  
 
-A: User record is not deleted, but its state in Dataverse will be updated to “disabled”.  
+### Are all users in AAD being added to Dataverse? 
+Users from AAD are added to Dataverse only if they meet the criteria. If already existing users do not meet the criteria, their state will be updated to “disabled”, 
 
-Q: Are all users in AAD being added to Dataverse? 
-
-A: Users from AAD are added to Dataverse only if they meet the criteria. If already existing users do not meet the criteria, their state will be updated to “disabled”, 
-
-Q: How can the admin increase the performance of adding users in Dataverse? 
-
-A: Assigning an AAD security group to the environment is a best practice in general, that can also result in a performance increase as regard to adding users that are part of the security group to Dataverse. 
+### How can the admin increase the performance of adding users in Dataverse? 
+Assigning an AAD security group to the environment is a best practice in general, that can also result in a performance increase as regard to adding users that are part of the security group to Dataverse. 
 
 
 
