@@ -200,7 +200,7 @@ Use the following methods to free up storage for each of the capacity types.
 ## Reduce log storage
 Microsoft is migrating audit logs to a new storage location. Environments whose data migration is complete can use the new audit delete method. An environment with completed migration can be easily identified by the Auditing card visible below the Environment details.
 
-image
+:::image type="content" source="media/audit-log-new-storage-sign.png" alt-text="Audit tile appears for new storage":::
 
 ### Method 10: Delete audit logs - current process
 
@@ -252,9 +252,9 @@ When you enable auditing, customer engagement apps create audit logs to store th
 
 All data will be deleted in an asynchronous background system job. 
 
-See the next section for how to monitor the status of audit delete jobs in the Power Platform admin center.
+To monitor the status of audit delete jobs, see the next section.
 
-#### Monitor the status of audit delete jobs
+#### Monitor the status of audit delete jobs in the Power Platform admin center
 
 1.	In the Power Platform admin center, select an environment.
 
