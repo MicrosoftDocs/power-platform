@@ -33,7 +33,7 @@ This opens up a side panel which enables admins to allow or deny specific action
 
 :::image type="content" source="media/dlp-allow-deny-connector-actions.png" alt-text="Set Allow or Deny for connector actions.":::
 
-### PowerShell Support
+### PowerShell support 1
 
 **Retrieve a list of available actions for a connector**
 Get-AdminPowerAppConnectorAction
@@ -144,7 +144,7 @@ Once a pattern has been added, admins can edit or delete these patterns by selec
 
 :::image type="content" source="media/dlp-delete-pattern.png" alt-text="Delete a pattern.":::
 
-### PowerShell Support
+### PowerShell support 2
 
 **Configure endpoint filtering rules for a policy**
 The object that contains endpoint filtering rules for a policy is referred to below as the connector configurations.
