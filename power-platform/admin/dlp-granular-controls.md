@@ -33,14 +33,17 @@ This opens up a side panel which enables admins to allow or deny specific action
 
 :::image type="content" source="media/dlp-allow-deny-connector-actions.png" alt-text="Set Allow or Deny for connector actions.":::
 
-### PowerShell support 1
+### PowerShell support for Connector action control
 
 **Retrieve a list of available actions for a connector**
+```powershell
 Get-AdminPowerAppConnectorAction
+```
 
 **Example**
-
+```powershell
 Get-AdminPowerAppConnectorAction -ConnectorName shared_msnweather
+```
 
 |Id   |Type  |Properties  |
 |---------|---------|---------|
@@ -50,7 +53,7 @@ Get-AdminPowerAppConnectorAction -ConnectorName shared_msnweather
 |TomorrowsForecast     |  Microsoft.ProcessSimple/apis/apiOperations       |  @{summary=Get the forecast for tomorrow; description=Get the forecast for tomorrow in the specified location.; visib...       |
 |OnCurrentConditionsChange     |  Microsoft.ProcessSimple/apis/apiOperations       |  @{summary=When the current conditions change; description=Triggers a new flow when the conditions change for a locat...       |
 
-**Configure connector action rules for a policy**
+#### Configure connector action rules for a policy
 The object that contains connector action rules for a policy is referred to below as the connector configurations.
 The connector configurations object has the following structure:
 
@@ -72,19 +75,25 @@ $ConnectorConfigurations = @{
 ``` 
 
 **Retrieve existing connector configurations for a DLP policy**
+```powershell
 Get-PowerAppDlpPolicyConnectorConfigurations 
+``` 
 
 **Create connector configurations for a DLP policy**
+```powershell
 New-PowerAppDlpPolicyConnectorConfigurations
+``` 
 
 **Update connector configurations for a DLP policy**
+```powershell
 Set-PowerAppDlpPolicyConnectorConfigurations
+``` 
 
 **Example**
 
 Goal:
--	Block actions TodaysForecast and CurrentWeather of connector MSN Weather; allow all other actions
--	Allow action GetRepositoryById of connector GitHub; block all other actions
+-	Block actions TodaysForecast and CurrentWeather of connector MSN Weather; allow all other actions.
+-	Allow action GetRepositoryById of connector GitHub; block all other actions.
 
 ```powershell
 $ConnectorConfigurations = @{ 
@@ -114,11 +123,9 @@ $ConnectorConfigurations = @{
       defaultConnectorActionRuleBehavior = "Block"
     } 
   ) 
+New-PowerAppDlpPolicyConnectorConfigurations -TenantId $TenantId -PolicyName $PolicyName -NewDlpPolicyConnectorConfigurations $ConnectorConfigurations
 }
 ``` 
-
-New-PowerAppDlpPolicyConnectorConfigurations -TenantId $TenantId -PolicyName $PolicyName -NewDlpPolicyConnectorConfigurations $ConnectorConfigurations
-
 
 ## Endpoint filtering 
 
@@ -144,9 +151,9 @@ Once a pattern has been added, admins can edit or delete these patterns by selec
 
 :::image type="content" source="media/dlp-delete-pattern.png" alt-text="Delete a pattern.":::
 
-### PowerShell support 2
+### PowerShell support for endpoint filtering
 
-**Configure endpoint filtering rules for a policy**
+#### Configure endpoint filtering rules for a policy
 The object that contains endpoint filtering rules for a policy is referred to below as the connector configurations.
 The connector configurations object has the following structure:
 
@@ -168,31 +175,37 @@ $ConnectorConfigurations = @{
 }
 ``` 
 
-**Notes_**
+**Notes**
 
 -	The last rule for each connector should always be applied to URL “*”, to ensure that all URLs are covered by the rules
 -	The order property of the rules for each connector should be populated with numbers 1 to N, where N is the number of rules for that connector
 
 **Retrieve existing connector configurations for a DLP policy**
+```powershell
 Get-PowerAppDlpPolicyConnectorConfigurations 
+``` 
 
 **Create connector configurations for a DLP policy**
+```powershell
 New-PowerAppDlpPolicyConnectorConfigurations
+``` 
 
 **Update connector configurations for a DLP policy**
+```powershell
 Set-PowerAppDlpPolicyConnectorConfigurations
+``` 
 
 **Example**
 
 Goal:
--	For the SQL Server connector:
+For the SQL Server connector:
   -	Deny database “testdatabase” of server “myservername.database.windows.net”
   -	Allow all other databases of server “myservername.database.windows.net”
   -	Deny all other servers
--	For the SMTP connector:
+For the SMTP connector:
   -	Allow Gmail (server address: smtp.gmail.com, port: 587)
   -	Deny all other addresses
--	For the HTTP connector:
+For the HTTP connector:
   -	Allow endpoints https://mywebsite.com/allowedPath1 and https://mywebsite.com/allowedPath2 
   -	Deny all other URLs
 
@@ -257,6 +270,9 @@ $ConnectorConfigurations = @{
   ) 
 }
 ``` 
+
+```powershell
 New-PowerAppDlpPolicyConnectorConfigurations -TenantId $TenantId -PolicyName $PolicyName -NewDlpPolicyConnectorConfigurations $ConnectorConfigurations
+``` 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
