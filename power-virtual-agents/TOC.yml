@@ -28,7 +28,7 @@
          href: environments-first-run-experience.md
        - name: Share bots with users in your organization
          href: admin-share-bots.md
-       - name: Export and import bots with solutions
+       - name: Export and import bots using solutions
          href: authoring-export-import-bots.md
        - name: Regional settings and data locations for organizations
          href: data-location.md
@@ -167,16 +167,20 @@
       items:
        - name: Licensing for Virtual Power Agents in Teams
          href: teams/requirements-licensing-teams.md
-       - name: Share bots with users in your organization
+       - name: Collaborate with others
          href: teams/admin-share-bots-teams.md
        - name: Upgrade a Dataverse for Teams environment
          href: teams/admin-upgrade-dataverse-teams.md
+       - name: Export and import chatbots made in Teams
+         href: teams/authoring-export-import-bots-teams.md
        - name: Regional settings and data locations for organizations
          href: teams/data-location-teams.md
     - name: Author and edit
       items:
        - name: Key concepts - Authoring
          href: teams/authoring-fundamentals-teams.md
+       - name: Enable advanced AI features
+         href: teams/advanced-ai-features-teams.md
        - name: Create and delete bots
          href: teams/authoring-first-bot-teams.md
        - name: Use lesson topics

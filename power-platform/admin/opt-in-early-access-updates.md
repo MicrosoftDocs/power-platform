@@ -1,14 +1,14 @@
 ---
 title: "Opt in to early access updates  | MicrosoftDocs"
 description: Opt in to early access updates in Microsoft Power Platform and Dynamics 365. 
-author: angelmarshall
+author: samathur
 ms.subservice: admin
-ms.author: tsmarsha
+ms.author: samathur
 ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/09/2021
+ms.date: 07/28/2021
 search.audienceType: 
   - admin
 search.app:
@@ -79,20 +79,6 @@ The early access updates are available for all types of environments, including 
 > - Only the apps that you currently have licenses for will be updated; no new apps will be installed. 
 > - It might take a few hours to complete the updates. All applications in the environment will still be available during the update, though you might experience slightly reduced performance.  
 
-## Additional requirements to enable early access updates  
-Some apps require additional steps to enable early access features. If you have any of the following apps, after enabling the early access updates on the Power Platform admin center, you'll need to take the following manual steps.
-
-|Early access apps  |Description of manual steps  |
-|---------|---------|
-|Dynamics 365 Marketing     | Run the Marketing setup wizard to update your environment. This will install both the new release for production updates and the early access features when you run it on an environment where early access is enabled. For instructions, see [Rerun the Dynamics 365 Marketing setup wizard](/dynamics365/customer-engagement/marketing/re-run-setup).          |
-|Dynamics 365 Field Service     | If you have Dynamics 365 Field Service version 8.8.6.0 or newer, you'll automatically receive the early access updates. If you're running on an older version of the Field Service app, you'll need to perform an upgrade. See [Upgrade Dynamics 365 Field Service](/dynamics365/field-service/upgrade-field-service).        |
-|Dynamics 365 Project Service Automation     | If you have Dynamics 365 Project Service Automation version 3.10.2.0 or newer, you'll automatically receive the early access updates. If you're running on an older version of the Project Service app, you'll need to perform an upgrade. See [Upgrade home page](/dynamics365/project-service/upgrade-psa-home-page).        |
-| Dynamics 365 Resource Scheduling Optimization | If you have Dynamics 365 Resource Scheduling Optimization, you will need to update or deploy Resource Scheduling Optimization in the Power Platform admin center. For instructions, see [Manage Dynamics 365 apps](manage-apps.md), [Update RSO](/dynamics365/field-service/upgrade-field-service#resource-scheduling-optimization), and [Deploy RSO](/dynamics365/field-service/rso-deployment). |
-
-
-> [!IMPORTANT]
-> Be sure to enable the early access updates in the Power Platform admin center first. If you run the Dynamics 365 Marketing setup wizard to update your Marketing app to a new release wave before activating the early access updates in the Power Platform admin center, you must [run the Dynamics 365 Marketing setup wizard again](/dynamics365/customer-engagement/marketing/re-run-setup) after opting in to install and enable the early access features. 
-
 ## Update status and Retry 
 
 To check the update status, sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com/) and select the environment. From **Updates**, you'll see the update process of each of the applications. 
@@ -138,7 +124,7 @@ The following checklist provides the general guidelines to help you prepare for 
    > [!NOTE]
    > If you don't have a sandbox copy of your production environment, you can [create a copy](copy-environment.md) in the Power Platform admin center. 
 
-3. Opt in to the early access updates from the Power Platform admin center to enable the new release wave in the sandbox environment. Check [Additional requirements to enable early access updates](#additional-requirements-to-enable-early-access-updates) if your apps require manual steps.   
+3. Opt in to the early access updates from the Power Platform admin center to enable the new release wave in the sandbox environment.    
 
 4. Validate that key scenarios work as expected in the sandbox environment after the update is completed. 
    - Update the customizations in your applications, if any, to leverage or respond to the new capabilities as needed. 
