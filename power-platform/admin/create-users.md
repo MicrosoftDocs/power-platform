@@ -39,7 +39,7 @@ Identified by the presence of ApplicationId attribute in the system user record.
 ### Support user
 See [System and application users](system-application-users.md).
 
-- Not synchronized with AAD, and created by CDS out of the box.
+- Not synchronized with Azure AD, and created by CDS out of the box.
 - Placeholder user record for all of the internal Microsoft support users. 
 - Key identifiers: 
   - UPN value is crmoln@microsoft.com.
@@ -361,10 +361,10 @@ The following table shows the fields that are populated on the user form (user r
 
 For users to have access to applications and data in a Dataverse environment, at a minimum the SystemUser table in Dataverse must have a record corresponding to the respective user identity. There are different mechanisms to add users in Dataverse, either automatic or on demand: 
 
-1. A system background process runs every 30 minutes to synchronize changes from Azure AD and updates the SystemUser records in Dataverse based on pre-determined set of requirements. The time taken to synchronize all changes into Dataverse is dependent on total number of users must be added or updated. For large organizations with thousands of users in AAD, we recommend creating security groups associated with each environment, so only the required subset of users is added into Dataverse. 
+1. A system background process runs every 30 minutes to synchronize changes from Azure AD and updates the SystemUser records in Dataverse based on pre-determined set of requirements. The time taken to synchronize all changes into Dataverse is dependent on total number of users must be added or updated. For large organizations with thousands of users in Azure AD, we recommend creating security groups associated with each environment, so only the required subset of users is added into Dataverse. 
 
    > [!NOTE]
-   > Not all users added in Azure AD will be pickup by the automatic synchronization process. This section [Jim, link to what?] details the eligibility criteria the system background process applies to pick up an user from AAD and add it into Dataverse.
+   > Not all users added in Azure AD will be pickup by the automatic synchronization process. This section [Jim, link to what?] details the eligibility criteria the system background process applies to pick up an user from Azure AD and add it into Dataverse.
 
 2. If users already exist in Azure AD, they are automatically added to SystemUsers table at first attempt to access the Dataverse environment. Note that if a user already exists in Dataverse, but in a disabled state, attempting to access the environment will result in the user’s state to be updated to “enabled”, assuming they are entitled at the time of access. 
 
@@ -387,10 +387,10 @@ In certain conditions, the above-mentioned system background process is not addi
 
 Below criteria must be met for successfully adding the user in the Dataverse table: 
 
-1. User must be enabled and not deleted or soft-deleted in AAD. User must be enabled in AAD to be enabled in a Dataverse database. If user is added to Dataverse and then deleted in AAD, the state in the Dataverse table will be updated to “disabled”.  
+1. User must be enabled and not deleted or soft-deleted in Azure AD. User must be enabled in Azure AD to be enabled in a Dataverse database. If user is added to Dataverse and then deleted in Azure AD, the state in the Dataverse table will be updated to “disabled”.  
 
 2. User must have a valid license with these exceptions: 
-   1. Admin users do not require a license. Unlicensed AAD admins are enabled in the systems as “Setup user” and have administrative only access mode. 
+   1. Admin users do not require a license. Unlicensed Azure AD admins are enabled in the systems as “Setup user” and have administrative only access mode. 
    2. Individual users do not need to have a license when the environment has app pass capacity. This only applies to adding users on demand (either at first attempt to access the environment or through API/Power Platform admin center). 
    3. Individual users do not need to have a license when the tenant they are part of has a tenant level Marketing license. This only applies to adding users on demand (either at first attempt to access the environment or through API/Power Platform admin center). 
    4. Non-interactive users do not need a license 
@@ -405,9 +405,25 @@ Adding users to Dataverse has different implications depending on the environmen
 
 1. If users are part of a trial environment, then they will not need email approval for being added to Dataverse. Users will only be added to Dataverse on demand. The background sync process will still run to keep the users in the environment up-to-date, but will not add users automatically. 
 
-2. Only the initial user that created the developer environment type will be added to Dataverse 
+2. Only the initial user that created the developer environment type will be added to Dataverse. 
 
 3. Users that are part of a Dataverse for Teams environment will only be added to Dataverse’s SystemUser table as result of the user’s first attempt to access the environment. 
+
+## FAQ
+
+Q: If a user that is added to Dataverse SystemUser table becomes disabled or unlicensed in AAD, how is that reflected in Dataverse?  
+
+A: User record is not deleted, but its state in Dataverse will be updated to “disabled”.  
+
+Q: Are all users in AAD being added to Dataverse? 
+
+A: Users from AAD are added to Dataverse only if they meet the criteria. If already existing users do not meet the criteria, their state will be updated to “disabled”, 
+
+Q: How can the admin increase the performance of adding users in Dataverse? 
+
+A: Assigning an AAD security group to the environment is a best practice in general, that can also result in a performance increase as regard to adding users that are part of the security group to Dataverse. 
+
+
 
 ### See also
 [Get started with security roles in Dataverse](/learn/modules/get-started-security-roles/) <br />
