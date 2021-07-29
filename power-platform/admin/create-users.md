@@ -181,8 +181,8 @@ See [System and application users](system-application-users.md).
 
 ### Delegated administrator
 
-See the following:
-[For partners: the Delegated Administrator](for-partners-delegated-administrator.md)
+See the following: <br />
+[For partners: the Delegated Administrator](for-partners-delegated-administrator.md) <br />
 [System and application users](system-application-users.md)
 
 - Not synchronized with Azure AD, and created by Dataverse out of the box. 
