@@ -33,7 +33,7 @@ For step-by-step instructions for creating a [!INCLUDE[pn_MS_Online_Services](..
 > By entering a user ID and password, a user can access the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] to view information about the service. However, the user won't have access to customer engagement apps until the user has a security role assigned either directly or indirectly as a member of a [group team](manage-group-teams.md). 
 
 > [!TIP] 
->  To force an immediate synchronization between the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] and customer engagement apps, do the following:  
+> To force an immediate synchronization between the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] and customer engagement apps, do the following:  
 > 
 > - Sign out of the customer engagement app and the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)].  
 > - Close all open browsers used for the customer engagement app and the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)].  
@@ -186,7 +186,7 @@ See the following: <br />
 [System and application users](system-application-users.md)
 
 - Not synchronized with Azure AD, and created by Dataverse out of the box. 
-- Placeholder user record for all of customer’s delegated admin partner users to access CDS as delegated administrators. 
+- Placeholder user record for all of customer’s delegated admin partner users to access Dataverse as delegated administrators. 
 - Key identifiers: 
   - UPN value is crmoln2@microsoft.com. 
   - Access mode value is 5. 
