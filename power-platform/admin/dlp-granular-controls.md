@@ -198,13 +198,16 @@ Set-PowerAppDlpPolicyConnectorConfigurations
 **Example**
 
 Goal:
+
 For the SQL Server connector:
   -	Deny database “testdatabase” of server “myservername.database.windows.net”
   -	Allow all other databases of server “myservername.database.windows.net”
   -	Deny all other servers
+
 For the SMTP connector:
   -	Allow Gmail (server address: smtp.gmail.com, port: 587)
   -	Deny all other addresses
+
 For the HTTP connector:
   -	Allow endpoints https://mywebsite.com/allowedPath1 and https://mywebsite.com/allowedPath2 
   -	Deny all other URLs
