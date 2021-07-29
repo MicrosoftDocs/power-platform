@@ -41,6 +41,24 @@ Get-AdminPowerAppConnectorAction
 _Example_
 
 Get-AdminPowerAppConnectorAction -ConnectorName shared_msnweather
+
+
+|Id   |Type  |Properties  |
+|---------|---------|---------|
+|Row1     |         |         |
+|Row2     |         |         |
+|Row3     |         |         |
+|Row4     |         |         |
+|Row5     |         |         |
+|Row6     |         |         |
+|Row7     |         |         |
+|Row8     |         |         |
+|Row9     |         |         |
+|Row10     |         |         |
+
+
+
+
 Id                        Type                                       Properties
 --                        ----                                       ----------
 TodaysForecast            Microsoft.ProcessSimple/apis/apiOperations @{summary=Get forecast for today; description=Get the forecast for the current day in the specified location.; visib...
@@ -53,6 +71,7 @@ OnCurrentConditionsChange Microsoft.ProcessSimple/apis/apiOperations @{summary=W
 The object that contains connector action rules for a policy is referred to below as the connector configurations.
 The connector configurations object has the following structure:
 
+```powershell
 $ConnectorConfigurations = @{ 
   connectorActionConfigurations = @( # array – one entry per connector
     @{  
@@ -67,6 +86,7 @@ $ConnectorConfigurations = @{
     } 
   ) 
 }
+``` 
 
 **Retrieve existing connector configurations for a DLP policy**
 Get-PowerAppDlpPolicyConnectorConfigurations 
@@ -77,11 +97,13 @@ New-PowerAppDlpPolicyConnectorConfigurations
 **Update connector configurations for a DLP policy**
 Set-PowerAppDlpPolicyConnectorConfigurations
 
-_Example_
+**Example**
+
 Goal:
 -	Block actions TodaysForecast and CurrentWeather of connector MSN Weather; allow all other actions
 -	Allow action GetRepositoryById of connector GitHub; block all other actions
 
+```powershell
 $ConnectorConfigurations = @{ 
   connectorActionConfigurations = @(
     @{  
@@ -110,8 +132,9 @@ $ConnectorConfigurations = @{
     } 
   ) 
 }
-New-PowerAppDlpPolicyConnectorConfigurations -TenantId $TenantId -PolicyName $PolicyName -NewDlpPolicyConnectorConfigurations $ConnectorConfigurations
+``` 
 
+New-PowerAppDlpPolicyConnectorConfigurations -TenantId $TenantId -PolicyName $PolicyName -NewDlpPolicyConnectorConfigurations $ConnectorConfigurations
 
 
 ## Endpoint filtering 
@@ -144,6 +167,7 @@ Once a pattern has been added, admins can edit or delete these patterns by selec
 The object that contains endpoint filtering rules for a policy is referred to below as the connector configurations.
 The connector configurations object has the following structure:
 
+```powershell
 $ConnectorConfigurations = @{ 
   connectorActionConfigurations = @() # used for connector action rules
   endpointConfigurations = @( # array – one entry per 
@@ -159,8 +183,10 @@ $ConnectorConfigurations = @{
     }
   ) 
 }
+``` 
 
-_Notes_
+**Notes_**
+
 -	The last rule for each connector should always be applied to URL “*”, to ensure that all URLs are covered by the rules
 -	The order property of the rules for each connector should be populated with numbers 1 to N, where N is the number of rules for that connector
 
@@ -173,7 +199,8 @@ New-PowerAppDlpPolicyConnectorConfigurations
 **Update connector configurations for a DLP policy**
 Set-PowerAppDlpPolicyConnectorConfigurations
 
-_Example_
+**Example**
+
 Goal:
 -	For the SQL Server connector:
   -	Deny database “testdatabase” of server “myservername.database.windows.net”
@@ -186,6 +213,7 @@ Goal:
   -	Allow endpoints https://mywebsite.com/allowedPath1 and https://mywebsite.com/allowedPath2 
   -	Deny all other URLs
 
+```powershell
 $ConnectorConfigurations = @{ 
   endpointConfigurations = @(
     @{  
@@ -245,6 +273,7 @@ $ConnectorConfigurations = @{
     } 
   ) 
 }
+``` 
 New-PowerAppDlpPolicyConnectorConfigurations -TenantId $TenantId -PolicyName $PolicyName -NewDlpPolicyConnectorConfigurations $ConnectorConfigurations
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
