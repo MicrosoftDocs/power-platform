@@ -198,8 +198,11 @@ Use the following methods to free up storage for each of the capacity types.
 12. Choose **Next**, review the bulk deletion job, and then choose **Submit** to create the recurring job.  
 
 ## Reduce log storage
+Microsoft is migrating audit logs to a new storage location. Environments whose data migration is complete can use the new audit delete method. An environment with completed migration can be easily identified by the Auditing card visible below the Environment details.
 
-### Method 10: Delete audit logs - legacy process
+image
+
+### Method 10: Delete audit logs - current process
 
  When you enable auditing, customer engagement apps create audit logs to store the audit history of the records. You can delete these audit logs to free space when they are no longer needed.  
   
@@ -222,7 +225,7 @@ Use the following methods to free up storage for each of the capacity types.
   
 ### Method 10: Delete audit logs - new process
 
-Microsoft is migrating audit logs to a new storage location. Environments whose data migration is complete can use the new audit delete monitoring experience.
+Microsoft is migrating audit logs to a new storage location. Environments whose data migration is complete can use the new audit delete experience.
 
 When you enable auditing, customer engagement apps create audit logs to store the audit history of the records. You can delete these audit logs to free space when they are no longer needed.  
 
@@ -239,15 +242,17 @@ When you enable auditing, customer engagement apps create audit logs to store th
  
    :::image type="content" source="media/audit-log-delete-select.png" alt-text="Select audit logs to delete.":::
 
-   **Delete logs by table**: Select one or more tables for which you want to delete audit logs. By default all tables in the environment will be shown, whether they contain audit data or not.
-
-   **Delete access logs by people and systems**: Delete all access logs. This will delete all logs for all users and systems.
-
-   **Delete all logs up to and including the selected date**: Delete logs including the date selected. 
+   |Setting  |Description  |
+   |---------|---------|
+   |**Delete logs by table**     |Select one or more tables for which you want to delete audit logs. By default all tables in the environment will be shown, whether they contain audit data or not.         |
+   |**Delete access logs by people and systems**     | Delete all access logs. This will delete all logs for all users and systems.        |
+   |**Delete all logs up to and including the selected date**     | Delete logs including the date selected.         |
 
 4. Select **Delete**, and then confirm the deletions.
 
 All data will be deleted in an asynchronous background system job. 
+
+See the next section for how to monitor the status of audit delete jobs in the Power Platform admin center.
 
 #### Monitor the status of audit delete jobs
 
