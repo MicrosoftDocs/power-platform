@@ -20,11 +20,6 @@ search.app:
 
 # Configure default sync filters for appointments, contacts, and tasks
 
-
-   > [!div class="mx-imgBorder"] 
-   > ![Screenshot showing ](media/default-sync-filter-.png "")
-
-
 Server-side synchronization uses filter criteria that’s set in a user's synchronization filters to determine which app rows are synchronized with Exchange for each user. Sync filters are first initialized when server-side synchronization is first configured by a user for rows such as appointments, contacts, and tasks. For more information, see [Create or modify online synchronization filters](choose-records-synchronize-dynamics-365-outlook-exchange.md#create-or-modify-online-synchronization-filters).
  
 When a user mailbox is set up to use server-side synchronization for appointments, contacts, and tasks, their personal option filters list will have default logic for each table applied immediately. When the next sync cycle happens server-side sync will use this logic to synchronize existing rows that meet the fetchXML logic provided in each filter.
