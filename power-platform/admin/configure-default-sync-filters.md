@@ -38,7 +38,7 @@ For example, an organization might not want to synchronize every active contact 
 > Default synchronization templates can’t be edited within the Dynamics 365 organization solution editor. This needs to be done through calls to the Dynamics 365 API using the XrmToolBox. The [XrmToolBox](https://www.xrmtoolbox.com/) is a third-party application that has many different tools for interacting with Dynamics 365 app data. For more information on the tool, see [Documentation for XrmToolBox](https://www.xrmtoolbox.com/documentation/). 
 
 
-## Check the current default Outlook template filters
+## Step 1. Check the current default Outlook filter template 
 
 After installing XrmToolBox and connecting to your organization, follow these steps to ensure the **Sync Filter Manager** tool is installed using the **Tools Library**.
 
@@ -79,10 +79,8 @@ After installing XrmToolBox and connecting to your organization, follow these st
    > [!div class="mx-imgBorder"] 
    > ![Screenshot of personal options user filter](media/default-sync-filter-9.png "User filters")
 
-  
 
-
-## Set a different filter as default
+## Step 2. Create a view for the table and set sync filters
 
 To set different default filter for a table, such as Contact row you'll need edit the default view.
 
@@ -107,7 +105,7 @@ To set different default filter for a table, such as Contact row you'll need edi
 6. Select ok **OK** to save the view.
 
 
-### Open the view using XrmToolBox
+## Step 3. Set the new view as the default filter tempalte
 
 After saving the view, load the view using the XrmToolBox.
 
@@ -134,20 +132,44 @@ After saving the view, load the view using the XrmToolBox.
 Only the filter templates where the **Is Default** value set to **True** will be distribute to new users. When new users are setup in your organization they will use the **My Outlook Contacts Updated** set as the filter criteria along with all of the other default views shown in the above screenshot. This won't change the filter set of any existing user already configured to use server-side sync for appointments, contacts and tasks. You can delete the old **My Outlook Contacts** filter if you're not going to use it anymore.
 
 
-## Replace current user's default filters with newly created templates (HERE)
+## Step 4. Delete the old filter template
 
-For users that have the old default filter, the first step is to remove this filter. To accomplish this, we first need to click on the "Users Synchronization Filters" tab and uncheck the "Display Offline Filters" checkbox:
+For users that have the old default filter, you'll need to remove old filter. 
 
 
-**Click the "Load Users Synchronization Filters" button and select "For all users". This might take some time to pull depending on the number of users in the organization context:
+1. Open the [XrmToolBox](https://www.xrmtoolbox.com/).
+2. From the default landing page, select the **Users Synchronization Filters** tab and unckeck **Display Offline Filters**.
 
-Once the list has completed, select the "Group By" button and choose "Returned Type". This will group the filters by the table so they can be deleted as a group:
+   > [!div class="mx-imgBorder"] 
+   > ![Uncheck display offline filters](media/default-sync-filter-16.png "Uncheck display Offline filters")
 
-Select the row(s) to be deleted and click the delete button in the ribbon. Multiple rows can be selected at once.
+3. On the command bar, select **Load Users Synchronization Filters** menu and then select **For all users**. It might take time to load the list, depending on the number of users in your organization.
 
-Once removed, the new Outlook filter template needs to be applied to users within the organization context. Select "Synchronization Filter Templates" tab, highlight the newly created Outlook template, and click "Apply to users" in the ribbon:
+   > [!div class="mx-imgBorder"] 
+   > ![From the load Users dynchronization filters menu select For all users](media/default-sync-filter-17.png "From the load isers synchronization filters menu select for all users")
 
-In the pop-up, users can be searched one at a time or the search button can just be clicked to pull all users. Once you have selected the users to apply this Outlook template to, click "Ok".
+4. When the list is fully loaded on the command bar, select **Group By** and select **Returned Type**. This will group the filters by the table so they can be deleted as a group.
+
+   > [!div class="mx-imgBorder"] 
+   > ![From the froup by menu select feturned type](media/default-sync-filter-18.png "From the froup by menu select feturned type")
+
+
+5. Select the rows that you want to delete and then on the command bar, select **Delete**. 
+
+
+## Step 5. Apply the new filter template
+
+Once the old filters are deleted, now you can apply the new Outlook filter template.
+
+
+1. Open the [XrmToolBox](https://www.xrmtoolbox.com/).
+2. From the default landing page, select the **Synchronization Filter Templates** tab and then the new template that was created in step 2. On the command bar, select **Apply to users**.
+
+   > [!div class="mx-imgBorder"] 
+   > ![Select the new tempalte](media/default-sync-filter-19.png "Select the new template")
+
+
+3. In the pop-up, users can be searched one at a time or the search button can just be clicked to pull all users. Once you have selected the users to apply this Outlook template to, click "Ok".
 
 The filter application can then be checked via the "User's Synchronization Filters" tab:
 
