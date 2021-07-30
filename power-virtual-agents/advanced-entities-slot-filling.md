@@ -71,7 +71,7 @@ To do this, you need to create a custom entity. In this case, you can create an 
 
    :::image type="content" source="media/advanced-entities-slot-filling/entities-new.png" alt-text="Select New entity.":::
 
-3. This opens a panel where you can choose the type of entity: either a [**Closed list** entity](#closed-list-entities) or a [**Regular expression (regex)** entity](#regular-expression-(regex)-entities). 
+3. This opens a panel where you can choose the type of entity: either a [**Closed list** entity](#closed-list-entities) or a [**Regular expression (regex)** entity](#regular-expression-regex-entities). 
 
 
 ### Closed list entities
@@ -101,7 +101,7 @@ Smart matching is part of the intelligence supported by the bot's language under
 
 In particular, the bot will autocorrect misspellings and expand its matching logic semantically. For example, the bot can automatically match "softball" to "baseball". 
 
-:::image type="content" source="media/advanced-entities-slot-filling/entities-smart-matching.png" alt-text="Screenshot of the smart matching option toggle.":::
+:::image type="content" source="media/advanced-entities-slot-filling/entities-smart-match.png" alt-text="Screenshot of the smart matching option toggle.":::
 
 
 When you're finished creating or editing your entity, select **Save** to save and return to the list of entities. Select **Close** to discard your changes (you will be given an option to go back to editing the entity in case you accidentally selected the wrong option).
@@ -120,9 +120,9 @@ Selecting this option when creating an entity will show a panel where you can sp
 :::image type="content" source="media/advanced-entities-slot-filling/edit-regex-list.png" alt-text="Screenshot of the regex entity panel.":::
  
 
-A Power Virtual Agents regex entity uses the [.NET regular expressions syntax](/dotnet/standard/base-types/regular-expressios). 
+A Power Virtual Agents regex entity uses the [.NET regular expressions syntax](/dotnet/standard/base-types/regular-expressions). 
 
-By default, pattern matching is case sensitive, to make it case insensitive, use the `(?i)` regular expression option in your pattern string. Some basic examples are included in the regex entity panel, and additional information on the syntax and more examples can be found in the [Regular Expression Language - Quick Reference topic](/dotnet/standard/base-types/regular-expression-language-quick-reference).
+By default, pattern matching is case sensitive, to make it case insensitive use the `(?i)` regular expression option in your pattern string. Some basic examples are included in the regex entity panel, and additional information on the syntax and more examples can be found in the [Regular Expression Language - Quick Reference](/dotnet/standard/base-types/regular-expression-language-quick-reference) topic.
 
 If you need to make the regular expression accommodate multiple patterns you can use the alternation operator `|` to concatenate regular expressions. For example, you could combine two regex patterns to look for both the old and new formats of a product ID code. 
 
