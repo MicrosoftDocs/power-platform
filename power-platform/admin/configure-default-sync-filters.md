@@ -103,29 +103,41 @@ To set different default filter for a table, such as Contact row you'll need edi
    > [!div class="mx-imgBorder"] 
    > ![Select edit fitler criteria](media/default-sync-filter-11.png "Edit filter criteria")
 
-5. In the **Edit Filter Critera** dialog, define the filter criteria for the view. For example, let's set the Contact table filter with changes made to only synchronize Contacts past a certain date. The other conditions are present in the existing **My Outlook Contacts** filter.
+5. In the **Edit Filter Critera** dialog, define the filter criteria for the view. For example, you can set the contact table filter with changes made to only synchronize contacts past a certain date. The other conditions that are in the existing **My Outlook Contacts** filter remain the same.
 
    > [!div class="mx-imgBorder"] 
    > ![Enter fitler criteria](media/default-sync-filter-12.png "Enter filter criteria")
 
+6. Select ok **OK** to save the view.
 
 
+### Open the view using XrmToolBox
+
+After saving the view, load the view using the XrmToolBox.
+
+1. Open the [XrmToolBox](https://www.xrmtoolbox.com/).
+2. From the default landing page, select the **System Views** tab.
+3. From the list of views, select the view that you created and then select **Create** > **Synchronization Filter Template from selected view(s)**.
+
+   > [!div class="mx-imgBorder"] 
+   > ![Screenshot of the XrmToolBox system views screen](media/default-sync-filter-13.png "System views in the XrmToolBox")
+
+4. On the **Select Rule Tempalte type** dialog, select **Outlook Template** and then select **OK**.
+
+   > [!div class="mx-imgBorder"] 
+   > ![Screenshot of the XrmToolBox system views screen](media/default-sync-filter-14.png "System views in the XrmToolBox")
+
+5. On the next screen, select **NO** when asked to apply to some users. Current users that are setup with server-side sync already the **My Outlook Contacts** filter applied, so adding will create an additional contact table filter.
+
+6. Select the **Synchronization Filters Templates** tab and find the new view that was created as a template. Select it and then select **Define as Default**.
+
+   > [!div class="mx-imgBorder"] 
+   > ![Define default fitler template](media/default-sync-filter-15.png "Define default filter template")
 
 
+Only the filter templates where the **Is Default** value set to **True** will be distribute to new users. When new users are setup in your organization they will use the **My Outlook Contacts Updated** set as the filter criteria along with all of the other default views shown in the above screenshot. This won't change the filter set of any existing user already configured to use server-side sync for appointments, contacts and tasks. You can delete the old **My Outlook Contacts** filter if you're not going to use it anymore.
 
-For this example, we are going to be setting a Contact table filter with changes made to only synchronize Contacts past a certain date. The other conditions are present in the existing "My Outlook Contacts" filter:
-
-After saving the view, we can then load it from within XrmToolBox via the "System Views" tab. Select the view created and then "Create" -&gt; "Synchronization Filter Template from selected view(s)":
-
-Select "Outlook Template" on the pop-up that displays:
-
-On the next pop-up, select "No" when asked to apply to some users (current users setup with Server-Side Sync already have a "My Outlook Contacts" filter, so adding it now will just create an additional Contact table filter).
-
-Click on the "Synchronization Filters Templates" tab and find the new view that was created as a template. Select it and click on "Define as Default":
-
-Only table filters in this list with the "Is Default" value set to true will distribute to new users. If needed, the old "My Outlook Contacts" filter can be deleted if it will never be used again. From this point onwards, any new user setup in this organization context will have "My Outlook Contacts Updated" applied to their filter criteria along with all of the other default views presented in the above screenshot. This will not change the filter set of any existing user already configured to use Server-Side Sync for Appointments, Contacts and Tasks.
-
-## Replace current user's default filters with newly created templates**
+## Replace current user's default filters with newly created templates
 
 For users that have the old default filter configuration, the first step is to remove this filter en masse. To accomplish this, we first need to click on the "Users Synchronization Filters" tab and uncheck the "Display Offline Filters" checkbox:
 
