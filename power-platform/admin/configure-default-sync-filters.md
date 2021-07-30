@@ -104,7 +104,7 @@ To modify the default filter for a table, such as Contact row you'll need to edi
    > [!div class="mx-imgBorder"] 
    > ![Enter fitler criteria](media/default-sync-filter-12.png "Enter filter criteria")
 
-6. Select ok **OK** to save the view.
+6. Select **OK** to save the view.
 
 
 ## Step 3. Set the new view as the default sync filter template
