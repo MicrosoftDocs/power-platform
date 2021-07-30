@@ -17,37 +17,97 @@ search.app:
   - Powerplatform
   - Flow
 ---
+
 # Configure default sync filters for appointments, contacts, and tasks
+
+
+   > [!div class="mx-imgBorder"] 
+   > ![Screenshot showing ](media/default-sync-filter-.png "")
+
 
 Server-side synchronization uses filter criteria that’s set in a user's synchronization filters to determine which app rows are synchronized with Exchange for each user. Sync filters are first initialized when server-side synchronization is first configured by a user for rows such as appointments, contacts, and tasks. For more information, see [Create or modify online synchronization filters](choose-records-synchronize-dynamics-365-outlook-exchange.md#create-or-modify-online-synchronization-filters).
  
 When a user mailbox is set up to use server-side synchronization for appointments, contacts, and tasks, their personal option filters list will have default logic for each table applied immediately. When the next sync cycle happens server-side sync will use this logic to synchronize existing rows that meet the fetchXML logic provided in each filter.
 
-   > [!div class="mx-imgBorder"] 
-   > ![Screenshot showing sync setting for Outlook or Exchange](media/default-sync-filter-1.png "Screenshot showing sync setting for Outlook or Exchange")
+> [!div class="mx-imgBorder"] 
+> ![Screenshot showing sync setting for Outlook or Exchange](media/default-sync-filter-1.png "Sync setting for Outlook or Exchange")
 
 There are times when the default logic might synchronize rows which an organization doesn’t want to push to Exchange, such as the default **My Outlook Contacts** filter.
+
+> [!div class="mx-imgBorder"] 
+> ![Screenshot showing My Outlook Contacts filter](media/default-sync-filter-2.png "My Outlook Contacts filter")
+
 As an example, an organization might not want to synchronize every active contact that is owned by the synchronizing user and wants to put additional restrictions in the filter logic distributed by default. This logic could be changed one by one for every user, but this is time consuming and it would need to be changed each time a user is setup with server-side sync.mAnother way to modify this logic is to change the default logic distributed to users when they’re set up with server-side synchronization for the first time. 
 
 > [!NOTE]
-> Default synchronization templates can’t be edited within the Dynamics 365 organization solution editor. This needs to be done through calls to the Dynamics 365 API using the XrmToolBox. The [XrmToolBox](https://www.xrmtoolbox.com/) is a third-party application that has multiple different tools for interacting with Dynamics 365 data. For more information on the tool, see [Documentation for XrmToolBox](https://www.xrmtoolbox.com/documentation/). 
+> Default synchronization templates can’t be edited within the Dynamics 365 organization solution editor. This needs to be done through calls to the Dynamics 365 API using the XrmToolBox. The [XrmToolBox](https://www.xrmtoolbox.com/) is a third-party application that has multiple different tools for interacting with Dynamics 365 app data. For more information on the tool, see [Documentation for XrmToolBox](https://www.xrmtoolbox.com/documentation/). 
 
 
 ## Check the current default Outlook template filters
 
-
 After installing XrmToolBox and connecting to your organization, follow these steps to ensure the **Sync Filter Manager** tool is installed using the **Tools Library**.
 
-1\. From the **Tools** menu, open the **Sync Filter Manager.** The default landing page for the tool will open and where you have access to change the default filters.
+> [!div class="mx-imgBorder"] 
+> ![Open the Tool Library menu](media/default-sync-filter-3.png "Tools Library")
 
-2\. To pull the default filters for your organization, on the **Synchronization Filters Templates** tab, select **Load Synchronization Filter Templates**.
 
-In the above screenshot there are two types of templates: "Outlook templates" and "Offline templates". Server-Side Synchronization uses "Outlook Templates", whereas "Offline Templates" are remnants for the Offline mode of the deprecated Dynamics 365 for Outlook Com-addin and can be ignored. As long as no changes have been made at a user level, the various Outlook Templates should match what a user has when accessing their filters via Dynamics 365 Personal Options:
+> [!div class="mx-imgBorder"] 
+> ![Search for Sync filter in the Tool Library](media/default-sync-filter-4.png "Search for Sync filter")
 
-**  
-How to set a different filter as default**
+1. From the **Tools** menu, open the **Sync Filter Manager.** 
 
-Setting a different filter as the default for an table (such as our Contact example) first requires a System View that contains the logic that needs to be set as default. This can be done by editing the default solution and creating a new view within the associated table.
+   > [!div class="mx-imgBorder"] 
+   > ![Open the sync filter manager ](media/default-sync-filter-5.png "Sync filter manager")
+
+    The default landing page for the tool will open and where you have access to change the default filters.
+
+
+   > [!div class="mx-imgBorder"] 
+   > ![Screenshot of the default landing page](media/default-sync-filter-6.png "Default landing page")
+
+2. To get the default filters for your organization, on the **Synchronization Filters Templates** tab, select **Load Synchronization Filter Templates**.
+   
+   > [!Note] 
+   >  There is two types of templates, **Outlook templates** and **Offline templates**. Server-side synchronization uses **Outlook Templates**. You can igore the **Offline Templates** which was used for offline mode with the [deprecated Dynamics 365 for Outlook (COM add-in)](../important-changes-coming.md#dynamic-365-for-outlook-is-deprecated). 
+  
+   > [!div class="mx-imgBorder"] 
+   > ![Screenshot of the Synchronization Filters Templates tab](media/default-sync-filter-7.png "Synchronization Filters Templates tab")
+
+
+    As long as no changes have been made at a user level, the Outlook templates should match what a user has when accessing their filters from their Dynamics 365 app **Set Personal Options** settings. 
+
+   > [!div class="mx-imgBorder"] 
+   > ![Screenshot of personal options](media/default-sync-filter-8.png "Personal options settings")
+
+
+   > [!div class="mx-imgBorder"] 
+   > ![Screenshot of personal options user filter](media/default-sync-filter-9.png "User filters")
+
+  
+
+
+## Set a different filter as default
+
+To set different default filter for a table, such as Contact row you'll need edit the default view.
+
+1. Open [solution explorer](/powerapps/maker/model-driven-apps/advanced-navigation.md#solution-explorer), expand **Entities**, select the table that you want, and then select **Views**. 
+
+2. Select **Create a new view**.
+
+   > [!div class="mx-imgBorder"] 
+   > ![Screenshot of personal options user filter](media/default-sync-filter-10.png "User filters")
+ 
+3. On the **View Properties** dialog enter a nmae and descriptin for the view and then select **OK**.
+4. Under **Common Tasks** select **Edit Filter Criteria**.
+
+   > [!div class="mx-imgBorder"] 
+   > ![Select edit fitler criteria](media/default-sync-filter-11.png "Edit filter criteria")
+
+5.
+
+
+
+
 
 Name the filter and select "Edit Filter Criteria":
 
@@ -63,11 +123,11 @@ Click on the "Synchronization Filters Templates" tab and find the new view that 
 
 Only table filters in this list with the "Is Default" value set to true will distribute to new users. If needed, the old "My Outlook Contacts" filter can be deleted if it will never be used again. From this point onwards, any new user setup in this organization context will have "My Outlook Contacts Updated" applied to their filter criteria along with all of the other default views presented in the above screenshot. This will not change the filter set of any existing user already configured to use Server-Side Sync for Appointments, Contacts and Tasks.
 
-**How to replace current user's default filters with newly created templates**
+## Replace current user's default filters with newly created templates**
 
 For users that have the old default filter configuration, the first step is to remove this filter en masse. To accomplish this, we first need to click on the "Users Synchronization Filters" tab and uncheck the "Display Offline Filters" checkbox:
 
-**  
+
 **Click the "Load Users Synchronization Filters" button and select "For all users". This might take some time to pull depending on the number of users in the organization context:
 
 Once the list has completed, select the "Group By" button and choose "Returned Type". This will group the filters by the table so they can be deleted as a group:
@@ -82,7 +142,7 @@ The filter application can then be checked via the "User's Synchronization Filte
 
 These users will also be able to see this filter appear within their personal options:
 
-**Best practices for Synchronization filter logic**
+## Best practices for Synchronization filter logic
 
 Changing default synchronization filter logic can change row synchronization significantly. Here are some best practices when making modifications:
 
