@@ -100,7 +100,7 @@ When Power Virtual Agents extracts your content, it automatically creates single
 A **single-turn topic** has a trigger phrase that contains a single answer. These topics are often created from simple content, such as FAQ pages.
 
 
-A **multi-turn topic** contains multiple bot responses and questions to the user. These topics are often created from troubleshooting pages or manual types of content. 
+A **multi-turn topic** contains multiple bot responses and questions to the user. These topics are often created from troubleshooting pages or reference pages and manuals. 
 
 :::image type="content" source="media/advanced-create-topics-from-web-teams/sample-multi-turn-topic-teams.png" alt-text="A screenshot of the preview for a multi-turn topic suggestion in Teams.":::
 
