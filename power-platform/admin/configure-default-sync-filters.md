@@ -123,7 +123,7 @@ After saving the view, load the view using the XrmToolBox.
    > [!div class="mx-imgBorder"] 
    > ![Screenshot selecting the Outlook template](media/default-sync-filter-14.png "Outlook template")
 
-5. On the next screen, select **NO** when asked to apply to some users. Current users that are set up with server-side sync already the **My Outlook Contacts** filter applied, so adding will create an additional contact table filter.
+5. On the next screen, select **NO** when asked to apply to some users. Note, current users set up with server-Side sync already have the **My Outlook Contacts** sync filter, so adding it now will just create an additional contact table filter.  
 
 6. Select the **Synchronization Filters Templates** tab and find the new view that was created as a template. Select it and then select **Define as Default**.
 
