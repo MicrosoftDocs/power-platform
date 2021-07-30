@@ -52,7 +52,7 @@ Open the XrmToolBox and connect to your organization. Make sure the **Sync Filte
 
 ## Step 1. Check the current default sync filter template 
 
-1. In the [XrmToolBox](https://www.xrmtoolbox.com/), from the **Tools** menu, open the **Sync Filter Manager.** 
+1. In the [XrmToolBox](https://www.xrmtoolbox.com/), go to the the **Tools** menu and open **Sync Filter Manager.** 
 
    > [!div class="mx-imgBorder"] 
    > ![Open the sync filter manager ](media/default-sync-filter-5.png "Sync filter manager")
