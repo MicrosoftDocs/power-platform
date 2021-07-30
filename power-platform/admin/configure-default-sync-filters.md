@@ -32,7 +32,7 @@ There might be scenarios where you don't want to use the defulat sync filter log
 > [!div class="mx-imgBorder"] 
 > ![Screenshot showing My Outlook Contacts filter](media/default-sync-filter-2.png "My Outlook Contacts filter")
 
-What if an organization doesn't want to synchronize every active contact that is owned by the synchronizing user and wants to put additional restrictions in the filter logic distributed by default. This logic can be changed one by one for every user, but this is time consuming and every time a user sets up server-side sync the default logic would need to to be changed. Another way to modify this logic is to change the default logic distributed to users when they’re initially set up to use server-side synchronization.
+What if an organization doesn't want to synchronize every active contact that is owned by the synchronizing user and wants to put additional restrictions in the filter logic distributed by default. This logic can be changed one by one for every user, but this is time consuming and every time a user sets up server-side sync the default logic would need to be changed. Another way to modify this logic is to change the default logic distributed to users when they’re initially set up to use server-side synchronization.
 
 This topic covers, how to find the current sync filter template and replace it will a new syce filter template for multiple users.
 
@@ -123,7 +123,7 @@ After saving the view, load the view using the XrmToolBox.
    > [!div class="mx-imgBorder"] 
    > ![Screenshot selecting the Outlook template](media/default-sync-filter-14.png "Outlook template")
 
-5. On the next screen, select **NO** when asked to apply to some users. Current users that are setup with server-side sync already the **My Outlook Contacts** filter applied, so adding will create an additional contact table filter.
+5. On the next screen, select **NO** when asked to apply to some users. Current users that are set up with server-side sync already the **My Outlook Contacts** filter applied, so adding will create an additional contact table filter.
 
 6. Select the **Synchronization Filters Templates** tab and find the new view that was created as a template. Select it and then select **Define as Default**.
 
