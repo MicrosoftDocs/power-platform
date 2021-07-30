@@ -91,7 +91,7 @@ To set different default filter for a table, such as Contact row you'll need edi
 2. Select **Create a new view**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Screenshot of personal options user filter](media/default-sync-filter-10.png "User filters")
+   > ![Create a new view](media/default-sync-filter-10.png "Create new view")
  
 3. On the **View Properties** dialog enter a nmae and descriptin for the view and then select **OK**.
 4. Under **Common Tasks** select **Edit Filter Criteria**.
@@ -121,7 +121,7 @@ After saving the view, load the view using the XrmToolBox.
 4. On the **Select Rule Tempalte type** dialog, select **Outlook Template** and then select **OK**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Screenshot of the XrmToolBox system views screen](media/default-sync-filter-14.png "System views in the XrmToolBox")
+   > ![Screenshot selecting the Outlook template](media/default-sync-filter-14.png "Outlook template")
 
 5. On the next screen, select **NO** when asked to apply to some users. Current users that are setup with server-side sync already the **My Outlook Contacts** filter applied, so adding will create an additional contact table filter.
 
