@@ -169,7 +169,7 @@ Changing default synchronization filter logic can change row synchronization sig
 
 ## Frequently asked questions
 
-1. What happens if there are two filters that exist for the same table?
+### 1. What happens if there are two filters that exist for the same table?
 
   When a synchronization occurs for that table, each filter is independently applied to a set of rows to synchronize, and any rows found in each of those filter sets is synchronized. This means that since each filter is applied independently, the different row sets will still synchronize in the event filters contain conflicting logic.
 
@@ -177,10 +177,10 @@ Changing default synchronization filter logic can change row synchronization sig
 
   It's important to note that due to this, row synchronization can't be further restricted by adding additional filters, only by modifying or removing existing ones.
 
-2. What happens if no enabled filters exist for a given table?
+### 2. What happens if no enabled filters exist for a given table?
 
   If every filter for an table is removed for a user context, that user will not synchronize anything from that table, but will continue to sync items for any other table that still has enabled filters.
 
-3. How can the list of rows that will be synchronized by a filter set be checked to ensure the right rows are being created in Exchange?
+### 3. How can the list of rows that will be synchronized by a filter set be checked to ensure the right rows are being created in Exchange?
 
   The filter logic present within the Synchronization Filters can be applied to an Advanced Find window verbatim. Any rows found in the results will be rows that are attempted to be created/synchronized with Exchange for user contexts employing that filter for the given table.
