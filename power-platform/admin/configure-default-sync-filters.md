@@ -206,4 +206,4 @@ Changing default synchronization filter logic can change row synchronization sig
   
 ### 3. How can the list of rows that will be synchronized by a filter set be checked to ensure the right rows are being created in Exchange?
 
-  Use advanced find and search for the exact name of the filters listed on the **Synchronization Filters** tab in the XrmToolBox. The rows listed in the search results are the rows that are synchronized with Exchange for user who have the filters applied for the specific table.
+  Use advanced find and search for the exact name of the filters listed on the **Synchronization Filters** tab in the XrmToolBox. The rows listed in the search results are the rows that are synchronized with Exchange for user who has the filters applied for the specific table.
