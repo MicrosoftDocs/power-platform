@@ -27,7 +27,7 @@ When a user's mailbox is setup with server-side synchronization the sync filters
 > [!div class="mx-imgBorder"] 
 > ![Screenshot showing sync setting for Outlook or Exchange](media/default-sync-filter-1.png "Sync setting for Outlook or Exchange")
 
-There might scenario where you don't want to use the defulat sync filter logic. In the screenshot below, an organization is using a sync filter template called **My Outlook Contacts** but the sync filter criteria in the template doesn't work for the organization. 
+There might be scenarios where you don't want to use the defulat sync filter logic. In the screenshot below, an organization is using a sync filter template called **My Outlook Contacts** but the sync filter criteria in the template doesn't work for the organization. 
 
 > [!div class="mx-imgBorder"] 
 > ![Screenshot showing My Outlook Contacts filter](media/default-sync-filter-2.png "My Outlook Contacts filter")
@@ -84,7 +84,7 @@ Open the XrmToolBox and connect to your organization. Make sure the **Sync Filte
 
 ## Step 2. Create a view for the table and set sync filters
 
-To set different default filter for a table, such as Contact row you'll need edit the default view.
+To set different default filter for a table, such as Contact row you'll need to edit the default view.
 
 1. Open [solution explorer](/powerapps/maker/model-driven-apps/advanced-navigation.md#solution-explorer), expand **Entities**, select the table that you want, and then select **Views**. 
 
