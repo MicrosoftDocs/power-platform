@@ -32,7 +32,7 @@ There might be scenarios where you don't want to use the defulat sync filter log
 > [!div class="mx-imgBorder"] 
 > ![Screenshot showing My Outlook Contacts filter](media/default-sync-filter-2.png "My Outlook Contacts filter")
 
-What if an organization doesn't want to synchronize every active contact that is owned by the synchronizing user and wants to put additional restrictions in the filter logic distributed by default. This logic can be changed one by one for every user, but this is time consuming and every time a user sets up server-side sync the default logic would need to be changed. Another way to modify this logic is to change the default logic distributed to users when they’re initially set up to use server-side synchronization.
+What if an organization doesn't want to synchronize every active contact that is owned by the synchronizing user and wants to put additional restrictions in the filter logic distributed by default. This logic can be changed one by one for each user, but this is time consuming and every time a user sets up server-side sync the default logic would need to be changed. Another way to modify this logic is to change the default logic distributed to users when they’re initially set up to use server-side synchronization.
 
 This topic covers, how to find the current sync filter template and replace it will a new syce filter template for multiple users.
 
