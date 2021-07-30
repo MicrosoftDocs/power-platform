@@ -27,7 +27,7 @@ When a user's mailbox is setup with server-side synchronization the sync filters
 > [!div class="mx-imgBorder"] 
 > ![Screenshot showing sync setting for Outlook or Exchange](media/default-sync-filter-1.png "Sync setting for Outlook or Exchange")
 
-There might scenario where you don't want to use the defulat tempalte. In the screenshot below, there is a template called **My Outlook Contacts** but the fitler criteria in the tempalte doesn't work for your organization. 
+There might scenario where you don't want to use the defulat filter tempalte. In the screenshot below, an organization is using a filter template called **My Outlook Contacts** but the fitler criteria in the tempalte doesn't work for the organization. 
 
 > [!div class="mx-imgBorder"] 
 > ![Screenshot showing My Outlook Contacts filter](media/default-sync-filter-2.png "My Outlook Contacts filter")
