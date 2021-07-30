@@ -20,9 +20,9 @@ search.app:
 
 # Set up default sync filters for multiple users for appointments, contacts, or tasks
 
-Server-side synchronization uses the filter criteria that's set up by a user to determine which app rows are synchronized with Exchange for each user. Sync filters are initialized when server-side synchronization is first configured by a user for rows such as appointments, contacts, and tasks. For more information, see [Create or modify online synchronization filters](choose-records-synchronize-dynamics-365-outlook-exchange.md#create-or-modify-online-synchronization-filters).
+Server-side synchronization uses the sync filter criteria that's set up by a user to determine which app rows are synchronized with Exchange for each user. Sync filters are initialized when server-side synchronization is first configured by a user for rows such as appointments, contacts, and tasks. For more information, see [Create or modify online synchronization filters](choose-records-synchronize-dynamics-365-outlook-exchange.md#create-or-modify-online-synchronization-filters).
 
-When a user's mailbox is setup with server-side synchronization the sync filters that are listed in **User Filters** in a user's [personal options](/powerapps/user/set-personal-options#email-tab-options) are the default sync filters that are applied for the rows listed in the **User Filters** tab. When filters are set up and the next sync cycle takes place, server-side sync uses the sync filters set by the user to synchronize existing rows which meet the *fetchXML* logic.
+When a user's mailbox is setup with server-side synchronization the sync filters that are listed in **User Filters** in a user's [personal options](/powerapps/user/set-personal-options#email-tab-options) are the default sync filters that are applied for the rows listed in the **User Filters** tab. When the next sync cycle takes place, server-side sync uses the sync filters set by the user to synchronize existing rows which meet the *fetchXML* logic.
  
 > [!div class="mx-imgBorder"] 
 > ![Screenshot showing sync setting for Outlook or Exchange](media/default-sync-filter-1.png "Sync setting for Outlook or Exchange")
