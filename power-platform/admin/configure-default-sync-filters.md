@@ -131,7 +131,7 @@ After saving the view, load the view using the XrmToolBox.
    > ![Define default fitler template](media/default-sync-filter-15.png "Define default filter template")
 
 
-Only the filter templates where the **Is Default** value set to **True** will be distribute to new users. When new users are setup in your organization they will use the **My Outlook Contacts Updated** set as the filter criteria along with all of the other default views shown in the above screenshot. This won't change the filter set of any existing user already configured to use server-side sync for appointments, contacts and tasks. You can delete the old **My Outlook Contacts** filter if you're not going to use it anymore.
+Only the filter templates where the **Is Default** value set to **True** will be distributed to new users. When new users are set up in your organization they will use the **My Outlook Contacts Updated** set as the filter criteria along with all of the other default views shown in the above screenshot. This won't change the filter set of any existing user already configured to use server-side sync for appointments, contacts and tasks. You can delete the old **My Outlook Contacts** filter if you're not going to use it anymore.
 
 
 ## Step 4. Delete the old sync filter template
@@ -170,7 +170,7 @@ Once the old filters are deleted, now you can apply the new Outlook filter templ
    > ![Select the new template](media/default-sync-filter-20.png "Select the new template")
 
 
-3. In the pop-up, use the search to find users. Select the users that you want to applied the template for and then select **OK**. <br> The filter application can be checked from the **User's Synchronization Filters** tab.
+3. In the pop-up, use the search to find users. Select the users that you want to apply the template for and then select **OK**. <br> The filter application can be checked from the **User's Synchronization Filters** tab.
 
   Once the new filter is applied a user will be able to see the applied template via **Set Personal Options** settings.
   
@@ -184,7 +184,7 @@ Changing default synchronization filter logic can change row synchronization sig
 
 - Validation of custom synchronization filters should be performed in a test environment before you apply it to a production environment.
 
-- Applying filter conditions to an advanced find filter will show the rows being synchronized within the for the current user. This is important to know when troubleshooting filter conditions that don't work correctly.
+- Applying filter conditions to an advanced find filter will show the rows being synchronized for the current user. This is important to know when troubleshooting filter conditions that don't work correctly.
 
 - Activity parties and their party types shouldn't be changed, as they tie to values in Exchange. A good example is the Owner participation type, which has nothing to do with row ownership. For a breakdown of Activity Party SDK values, see [ActivityParty TableType](/dynamics365/customer-engagement/web-api/activityparty?view=dynamics-ce-odata-9)
 
@@ -202,7 +202,7 @@ Changing default synchronization filter logic can change row synchronization sig
 
 ### 2. What happens if no enabled filters exist for a given table?
 
-  If all filters for a table is removed then no data will synchronized for that table. The system will still sync data for other tables that still has sync filters enabled.
+  If all filters for a table are removed then no data will be synchronized for that table. The system will still sync data for other tables that has sync filters enabled.
   
 ### 3. How can the list of rows that will be synchronized by a filter set be checked to ensure the right rows are being created in Exchange?
 
