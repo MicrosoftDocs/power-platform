@@ -27,12 +27,12 @@ When a user's mailbox is setup with server-side synchronization the sync filters
 > [!div class="mx-imgBorder"] 
 > ![Screenshot showing sync setting for Outlook or Exchange](media/default-sync-filter-1.png "Sync setting for Outlook or Exchange")
 
-There are times when the default logic might synchronize rows which an organization doesn’t want to push to Exchange, such as the default **My Outlook Contacts** filter. <br> This topic covers how to create a new sync filter and apply the filter for multiple users in your environment. 
+There might scenario where you don't want to use the defulat tempalte. In the screenshot below, there is a template called **My Outlook Contacts** but the fitler criteria in the tempalte doesn't work for your organization. 
 
 > [!div class="mx-imgBorder"] 
 > ![Screenshot showing My Outlook Contacts filter](media/default-sync-filter-2.png "My Outlook Contacts filter")
 
-For example, an organization might not want to synchronize every active contact that is owned by the synchronizing user and wants to put additional restrictions in the filter logic distributed by default. This logic can be changed one by one for every user, but this is time consumin and everytime a user with server-side sync the default would need to to be changed again. Another way to modify this logic is to change the default logic distributed to users when they’re initially set up to use server-side synchronization.
+What if an organization doesn't want to synchronize every active contact that is owned by the synchronizing user and wants to put additional restrictions in the filter logic distributed by default. This logic can be changed one by one for every user, but this is time consuming and everytime a user sets up server-side sync the default logic would need to to be changed. Another way to modify this logic is to change the default logic distributed to users when they’re initially set up to use server-side synchronization.
 
 
 > [!NOTE]
