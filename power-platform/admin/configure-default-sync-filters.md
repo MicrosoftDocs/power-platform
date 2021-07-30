@@ -103,13 +103,15 @@ To set different default filter for a table, such as Contact row you'll need edi
    > [!div class="mx-imgBorder"] 
    > ![Select edit fitler criteria](media/default-sync-filter-11.png "Edit filter criteria")
 
-5.
+5. In the **Edit Filter Critera** dialog, define the filter criteria for the view. For example, let's set the Contact table filter with changes made to only synchronize Contacts past a certain date. The other conditions are present in the existing **My Outlook Contacts** filter.
+
+   > [!div class="mx-imgBorder"] 
+   > ![Enter fitler criteria](media/default-sync-filter-12.png "Enter filter criteria")
 
 
 
 
 
-Name the filter and select "Edit Filter Criteria":
 
 For this example, we are going to be setting a Contact table filter with changes made to only synchronize Contacts past a certain date. The other conditions are present in the existing "My Outlook Contacts" filter:
 
