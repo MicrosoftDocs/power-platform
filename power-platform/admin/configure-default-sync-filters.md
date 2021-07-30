@@ -157,32 +157,30 @@ These users will also be able to see this filter appear within their personal op
 
 Changing default synchronization filter logic can change row synchronization significantly. Here are some best practices when making modifications:
 
--   Validation of custom synchronization filters should be performed within lower environments before being applied to production organization contexts.
+- Validation of custom synchronization filters should be performed within lower environments before being applied to production organization contexts.
 
--   Applying filter conditions to an advanced find filter will show the rows being synchronized within the current user context. This is important for troubleshooting filter conditions behaving in unintuitive/unexpected ways.
+- Applying filter conditions to an advanced find filter will show the rows being synchronized within the current user context. This is important for troubleshooting filter conditions behaving in unintuitive/unexpected ways.
 
--   Activity parties and their party types shouldn't be changed, as they tie to values in Exchange. A good example is the "Owner" participation type, which has nothing to do with row ownership. A full breakdown of Activity Party SDK values can be found here:
+- Activity parties and their party types shouldn't be changed, as they tie to values in Exchange. A good example is the "Owner" participation type, which has nothing to do with row ownership. For a breakdown of Activity Party SDK values, see [ActivityParty TableType](/dynamics365/customer-engagement/web-api/activityparty?view=dynamics-ce-odata-9)
 
-    -   [ActivityParty TableType](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/web-api/activityparty?view=dynamics-ce-odata-9)
+- The best approach to applying a more restrictive filter criteria is to add a custom field to the table being modified and add this field as a condition for synchronization.
 
--   The best approach to applying a more restrictive filter criteria is to add a custom field to the table being modified and add this field as a condition for synchronization.
-
-    -   A common modification is to add the **Sync This Record** boolean field to the Contact table and set the Contact table synchronization filter criteria to require this field be set to yes/true.
+    - A common modification is to add the **Sync This Record** boolean field to the Contact table and set the Contact table synchronization filter criteria to require this field be set to yes/true.
 
 ## Frequently asked questions
 
-*What happens if there are two filters that exist for the same table?*
+1. What happens if there are two filters that exist for the same table?
 
-When a synchronization occurs for that table, each filter is independently applied to a set of rows to synchronize, and any rows found in each of those filter sets is synchronized. This means that since each filter is applied independently, the different row sets will still synchronize in the event filters contain conflicting logic.
+  When a synchronization occurs for that table, each filter is independently applied to a set of rows to synchronize, and any rows found in each of those filter sets is synchronized. This means that since each filter is applied independently, the different row sets will still synchronize in the event filters contain conflicting logic.
 
-If filter A has "Synchronize everything" and filter B has "Synchronize this subset", the end result is everything will be synchronized, including that subset. The resulting sync filter is essentially a combination of all synchronization filter criteria specified for a certain table.
+  If filter A has **Synchronize everything** and filter B has "Synchronize this subset", the end result is everything will be synchronized, including that subset. The resulting sync filter is essentially a combination of all synchronization filter criteria specified for a certain table.
 
-It's important to note that due to this, row **synchronization** **cannot be** **further restricted** **by adding additional filters, only by modifying or removing existing ones**.
+  It's important to note that due to this, row synchronization can't be further restricted by adding additional filters, only by modifying or removing existing ones.
 
-*What happens if no enabled filters exist for a given table?*
+2. What happens if no enabled filters exist for a given table?
 
-If every filter for an table is removed for a user context, that user will not synchronize anything from that table, but will continue to sync items for any other table that still has enabled filters.
+  If every filter for an table is removed for a user context, that user will not synchronize anything from that table, but will continue to sync items for any other table that still has enabled filters.
 
-*How can the list of rows that will be synchronized by a filter set be checked to ensure the right rows are being created in Exchange?*
+3. How can the list of rows that will be synchronized by a filter set be checked to ensure the right rows are being created in Exchange?
 
-The filter logic present within the Synchronization Filters can be applied to an Advanced Find window verbatim. Any rows found in the results will be rows that are attempted to be created/synchronized with Exchange for user contexts employing that filter for the given table.
+  The filter logic present within the Synchronization Filters can be applied to an Advanced Find window verbatim. Any rows found in the results will be rows that are attempted to be created/synchronized with Exchange for user contexts employing that filter for the given table.
