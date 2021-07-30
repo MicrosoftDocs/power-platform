@@ -34,9 +34,9 @@ There might scenario where you don't want to use the defulat sync filter logic. 
 
 What if an organization doesn't want to synchronize every active contact that is owned by the synchronizing user and wants to put additional restrictions in the filter logic distributed by default. This logic can be changed one by one for every user, but this is time consuming and everytime a user sets up server-side sync the default logic would need to to be changed. Another way to modify this logic is to change the default logic distributed to users when they’re initially set up to use server-side synchronization.
 
+This topic covers, how to find the current sync filter template and replace it will a new syce filter template for multiple users.
 
-
-## Step 1. Use XrmToolBox
+## Use XrmToolBox
 
 Default synchronization templates can’t be edited within the Dynamics 365 organization solution editor. This needs to be done through calls to the Dynamics 365 API using the XrmToolBox. The [XrmToolBox](https://www.xrmtoolbox.com/) is a third-party application that has many different tools for interacting with Dynamics 365 app data. For more information on the tool, see [Documentation for XrmToolBox](https://www.xrmtoolbox.com/documentation/). 
 
@@ -50,8 +50,7 @@ Open the XrmToolBox and connect to your organization. Make sure the **Sync Filte
 > ![Search for Sync filter in the Tool Library](media/default-sync-filter-4.png "Search for Sync filter")
 
 
-## Step 2. Check the current default Outlook filter template 
-
+## Step 1. Check the current default sync filter template 
 
 1. In the [XrmToolBox](https://www.xrmtoolbox.com/), from the **Tools** menu, open the **Sync Filter Manager.** 
 
@@ -108,7 +107,7 @@ To set different default filter for a table, such as Contact row you'll need edi
 6. Select ok **OK** to save the view.
 
 
-## Step 3. Set the new view as the default filter tempalte
+## Step 3. Set the new view as the default sync filter tempalte
 
 After saving the view, load the view using the XrmToolBox.
 
@@ -135,7 +134,7 @@ After saving the view, load the view using the XrmToolBox.
 Only the filter templates where the **Is Default** value set to **True** will be distribute to new users. When new users are setup in your organization they will use the **My Outlook Contacts Updated** set as the filter criteria along with all of the other default views shown in the above screenshot. This won't change the filter set of any existing user already configured to use server-side sync for appointments, contacts and tasks. You can delete the old **My Outlook Contacts** filter if you're not going to use it anymore.
 
 
-## Step 4. Delete the old filter template
+## Step 4. Delete the old sync filter template
 
 For users that have the old default filter, you'll need to remove old filter. 
 
@@ -160,10 +159,9 @@ For users that have the old default filter, you'll need to remove old filter.
 5. Select the rows that you want to delete and then on the command bar, select **Delete**. 
 
 
-## Step 5. Apply the new filter template
+## Step 5. Apply the new sycn filter template
 
 Once the old filters are deleted, now you can apply the new Outlook filter template.
-
 
 1. Open the [XrmToolBox](https://www.xrmtoolbox.com/).
 2. From the default landing page, select the **Synchronization Filter Templates** tab and then the new template that was created in step 2. On the command bar, select **Apply to users**.
