@@ -57,7 +57,7 @@ Open the XrmToolBox and connect to your organization. Make sure the **Sync Filte
    > [!div class="mx-imgBorder"] 
    > ![Open the sync filter manager ](media/default-sync-filter-5.png "Sync filter manager")
 
-    The default landing page for the tool will open and where you can change the default filters.
+    The default landing page will open and this is where you can modify the default sync filters.
 
 
    > [!div class="mx-imgBorder"] 
