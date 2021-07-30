@@ -35,13 +35,12 @@ There might scenario where you don't want to use the defulat sync filter logic. 
 What if an organization doesn't want to synchronize every active contact that is owned by the synchronizing user and wants to put additional restrictions in the filter logic distributed by default. This logic can be changed one by one for every user, but this is time consuming and everytime a user sets up server-side sync the default logic would need to to be changed. Another way to modify this logic is to change the default logic distributed to users when they’re initially set up to use server-side synchronization.
 
 
-> [!NOTE]
-> Default synchronization templates can’t be edited within the Dynamics 365 organization solution editor. This needs to be done through calls to the Dynamics 365 API using the XrmToolBox. The [XrmToolBox](https://www.xrmtoolbox.com/) is a third-party application that has many different tools for interacting with Dynamics 365 app data. For more information on the tool, see [Documentation for XrmToolBox](https://www.xrmtoolbox.com/documentation/). 
 
+## Step 1. Use XrmToolBox
 
-## Step 1. Check the current default Outlook filter template 
+Default synchronization templates can’t be edited within the Dynamics 365 organization solution editor. This needs to be done through calls to the Dynamics 365 API using the XrmToolBox. The [XrmToolBox](https://www.xrmtoolbox.com/) is a third-party application that has many different tools for interacting with Dynamics 365 app data. For more information on the tool, see [Documentation for XrmToolBox](https://www.xrmtoolbox.com/documentation/). 
 
-After installing XrmToolBox and connecting to your organization, follow these steps to ensure the **Sync Filter Manager** tool is installed using the **Tools Library**.
+Open the XrmToolBox and connect to your organization. Make sure the **Sync Filter Manager** tool is installed using the **Tools Library**.
 
 > [!div class="mx-imgBorder"] 
 > ![Open the Tool Library menu](media/default-sync-filter-3.png "Tools Library")
@@ -50,7 +49,11 @@ After installing XrmToolBox and connecting to your organization, follow these st
 > [!div class="mx-imgBorder"] 
 > ![Search for Sync filter in the Tool Library](media/default-sync-filter-4.png "Search for Sync filter")
 
-1. From the **Tools** menu, open the **Sync Filter Manager.** 
+
+## Step 2. Check the current default Outlook filter template 
+
+
+1. In the [XrmToolBox](https://www.xrmtoolbox.com/), from the **Tools** menu, open the **Sync Filter Manager.** 
 
    > [!div class="mx-imgBorder"] 
    > ![Open the sync filter manager ](media/default-sync-filter-5.png "Sync filter manager")
@@ -70,8 +73,7 @@ After installing XrmToolBox and connecting to your organization, follow these st
    > ![Screenshot of the Synchronization Filters Templates tab](media/default-sync-filter-7.png "Synchronization Filters Templates tab")
 
 
-    As long as no changes have been made at a user level, the Outlook templates should match what a user has in their filter setting in their **Sst Personal Options** settings for their app. 
-
+    As long as no changes have been made at a user level, the Outlook templates should match what a user has in their filter settings in [personal options](/powerapps/user/set-personal-options#email-tab-options).
 
    > [!div class="mx-imgBorder"] 
    > ![Screenshot of personal options](media/default-sync-filter-8.png "Personal options settings")
