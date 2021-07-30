@@ -72,7 +72,7 @@ Open the XrmToolBox and connect to your organization. Make sure the **Sync Filte
    > ![Screenshot of the Synchronization Filters Templates tab](media/default-sync-filter-7.png "Synchronization Filters Templates tab")
 
 
-    As long as no changes have been made at a user level, the Outlook templates should match what a user has in their filter settings in [personal options](/powerapps/user/set-personal-options#email-tab-options).
+    If no changes were been made by a user, the Outlook templates should match what a user has in their sync filter settings in [personal options](/powerapps/user/set-personal-options#email-tab-options).
 
    > [!div class="mx-imgBorder"] 
    > ![Screenshot of personal options](media/default-sync-filter-8.png "Personal options settings")
