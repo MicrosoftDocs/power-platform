@@ -1,6 +1,6 @@
 ---
-title: "Set up default sync filters for multiple users for appointments, contacts, or taskss | MicrosoftDocs"
-description: Configure default sync filters for appointments, contacts, or tasks rows.
+title: "Set up default sync filters for multiple users for appointments, contacts, or task | MicrosoftDocs"
+description: Configure default sync filters for appointments, contacts, or task rows.
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
@@ -18,21 +18,21 @@ search.app:
   - Flow
 ---
 
-# Set up default sync filters for multiple users for appointments, contacts, or tasks
+# Set up default sync filters for multiple users for appointments, contacts, or task
 
-Server-side synchronization uses the sync filter criteria that's set up by a user to determine which app rows are synchronized with Exchange for each user. Sync filters are initialized when server-side synchronization is first configured by a user for rows such as appointments, contacts, and tasks. For more information, see [Create or modify online synchronization filters](choose-records-synchronize-dynamics-365-outlook-exchange.md#create-or-modify-online-synchronization-filters).
+Server-side synchronization uses the sync filter criteria that's set up by a user to determine which app rows are synchronized with Exchange for each user. Sync filters are initialized when server-side synchronization is first configured by a user for rows such as appointments, contacts, and task. For more information, see [Create or modify online synchronization filters](choose-records-synchronize-dynamics-365-outlook-exchange.md#create-or-modify-online-synchronization-filters).
 
 When a user's mailbox is setup with server-side synchronization the sync filters that are listed in **User Filters** in a user's [personal options](/powerapps/user/set-personal-options#email-tab-options) are the default sync filters that are applied for the rows listed in the **User Filters** tab. When the next sync cycle takes place, server-side sync uses the sync filters set by the user to synchronize existing rows which meet the *fetchXML* logic.
  
 > [!div class="mx-imgBorder"] 
 > ![Screenshot showing sync setting for Outlook or Exchange](media/default-sync-filter-1.png "Sync setting for Outlook or Exchange")
 
-There might scenario where you don't want to use the defulat sync filter logic. In the screenshot below, an organization is using a sync filter template called **My Outlook Contacts** but the sync fitler criteria in the tempalte doesn't work for the organization. 
+There might scenario where you don't want to use the defulat sync filter logic. In the screenshot below, an organization is using a sync filter template called **My Outlook Contacts** but the sync filter criteria in the template doesn't work for the organization. 
 
 > [!div class="mx-imgBorder"] 
 > ![Screenshot showing My Outlook Contacts filter](media/default-sync-filter-2.png "My Outlook Contacts filter")
 
-What if an organization doesn't want to synchronize every active contact that is owned by the synchronizing user and wants to put additional restrictions in the filter logic distributed by default. This logic can be changed one by one for every user, but this is time consuming and everytime a user sets up server-side sync the default logic would need to to be changed. Another way to modify this logic is to change the default logic distributed to users when they’re initially set up to use server-side synchronization.
+What if an organization doesn't want to synchronize every active contact that is owned by the synchronizing user and wants to put additional restrictions in the filter logic distributed by default. This logic can be changed one by one for every user, but this is time consuming and every time a user sets up server-side sync the default logic would need to to be changed. Another way to modify this logic is to change the default logic distributed to users when they’re initially set up to use server-side synchronization.
 
 This topic covers, how to find the current sync filter template and replace it will a new syce filter template for multiple users.
 
@@ -93,13 +93,13 @@ To set different default filter for a table, such as Contact row you'll need edi
    > [!div class="mx-imgBorder"] 
    > ![Create a new view](media/default-sync-filter-10.png "Create new view")
  
-3. On the **View Properties** dialog enter a nmae and descriptin for the view and then select **OK**.
+3. On the **View Properties** dialog enter a name and description for the view and then select **OK**.
 4. Under **Common Tasks** select **Edit Filter Criteria**.
 
    > [!div class="mx-imgBorder"] 
    > ![Select edit fitler criteria](media/default-sync-filter-11.png "Edit filter criteria")
 
-5. In the **Edit Filter Critera** dialog, define the filter criteria for the view. For example, you can set the contact table filter with changes made to only synchronize contacts past a certain date. The other conditions that are in the existing **My Outlook Contacts** filter remain the same.
+5. In the **Edit Filter Criteria** dialog, define the filter criteria for the view. For example, you can set the contact table filter with changes made to only synchronize contacts past a certain date. The other conditions that are in the existing **My Outlook Contacts** filter remain the same.
 
    > [!div class="mx-imgBorder"] 
    > ![Enter fitler criteria](media/default-sync-filter-12.png "Enter filter criteria")
@@ -107,7 +107,7 @@ To set different default filter for a table, such as Contact row you'll need edi
 6. Select ok **OK** to save the view.
 
 
-## Step 3. Set the new view as the default sync filter tempalte
+## Step 3. Set the new view as the default sync filter template
 
 After saving the view, load the view using the XrmToolBox.
 
@@ -118,7 +118,7 @@ After saving the view, load the view using the XrmToolBox.
    > [!div class="mx-imgBorder"] 
    > ![Screenshot of the XrmToolBox system views screen](media/default-sync-filter-13.png "System views in the XrmToolBox")
 
-4. On the **Select Rule Tempalte type** dialog, select **Outlook Template** and then select **OK**.
+4. On the **Select Rule Template type** dialog, select **Outlook Template** and then select **OK**.
 
    > [!div class="mx-imgBorder"] 
    > ![Screenshot selecting the Outlook template](media/default-sync-filter-14.png "Outlook template")
@@ -140,7 +140,7 @@ For users that have the old default filter, you'll need to remove old filter.
 
 
 1. Open the [XrmToolBox](https://www.xrmtoolbox.com/).
-2. From the default landing page, select the **Users Synchronization Filters** tab and unckeck **Display Offline Filters**.
+2. From the default landing page, select the **Users Synchronization Filters** tab and uncheck **Display Offline Filters**.
 
    > [!div class="mx-imgBorder"] 
    > ![Uncheck display offline filters](media/default-sync-filter-16.png "Uncheck display Offline filters")
@@ -159,7 +159,7 @@ For users that have the old default filter, you'll need to remove old filter.
 5. Select the rows that you want to delete and then on the command bar, select **Delete**. 
 
 
-## Step 5. Apply the new sycn filter template
+## Step 5. Apply the new sync filter template
 
 Once the old filters are deleted, now you can apply the new Outlook filter template.
 
@@ -167,7 +167,7 @@ Once the old filters are deleted, now you can apply the new Outlook filter templ
 2. From the default landing page, select the **Synchronization Filter Templates** tab and then the new template that was created in step 2. On the command bar, select **Apply to users**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Select the new tempalte](media/default-sync-filter-20.png "Select the new template")
+   > ![Select the new template](media/default-sync-filter-20.png "Select the new template")
 
 
 3. In the pop-up, use the search to find users. Select the users that you want to applied the template for and then select **OK**. <br> The filter application can be checked from the **User's Synchronization Filters** tab.
@@ -182,7 +182,7 @@ Once the old filters are deleted, now you can apply the new Outlook filter templ
 
 Changing default synchronization filter logic can change row synchronization significantly. Here are some best practices when making modifications:
 
-- Validation of custom synchronization filters should be performed in a test environment before you apply it to a production enviroment.
+- Validation of custom synchronization filters should be performed in a test environment before you apply it to a production environment.
 
 - Applying filter conditions to an advanced find filter will show the rows being synchronized within the for the current user. This is important to know when troubleshooting filter conditions that don't work correctly.
 
