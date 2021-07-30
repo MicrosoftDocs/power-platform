@@ -84,7 +84,7 @@ Open the XrmToolBox and connect to your organization. Make sure the **Sync Filte
 
 ## Step 2. Create a view for the table and set sync filters
 
-To set different default filter for a table, such as Contact row you'll need to edit the default view.
+To set a different default filter for a table, such as Contact row you'll need to edit the default view.
 
 1. Open [solution explorer](/powerapps/maker/model-driven-apps/advanced-navigation.md#solution-explorer), expand **Entities**, select the table that you want, and then select **Views**. 
 
