@@ -113,7 +113,7 @@ After saving the view, load the view using the XrmToolBox.
 
 1. Open the [XrmToolBox](https://www.xrmtoolbox.com/).
 2. From the default landing page, select the **System Views** tab.
-3. From the list of views, select the view that you created and then select **Create** > **Synchronization Filter Template from selected view(s)**.
+3. From the list of views, select the view that you created in step 2 and then select **Create** > **Synchronization Filter Template from selected view(s)**.
 
    > [!div class="mx-imgBorder"] 
    > ![Screenshot of the XrmToolBox system views screen](media/default-sync-filter-13.png "System views in the XrmToolBox")
