@@ -1,6 +1,6 @@
 ---
-title: "Configure default sync filters for appointments, contacts, and tasks | MicrosoftDocs"
-description: Configure default sync filters for appointments, contacts, and tasks.
+title: "Set up default sync filters for multiple users for appointments, contacts, or taskss | MicrosoftDocs"
+description: Configure default sync filters for appointments, contacts, or tasks rows.
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
@@ -18,11 +18,11 @@ search.app:
   - Flow
 ---
 
-# Configure default sync filters for appointments, contacts, and tasks
+# Set up default sync filters for multiple users for appointments, contacts, or tasks
 
-Server-side synchronization uses filter criteria that’s set in a user's synchronization filters to determine which app rows are synchronized with Exchange for each user. Sync filters are first initialized when server-side synchronization is first configured by a user for rows such as appointments, contacts, and tasks. For more information, see [Create or modify online synchronization filters](choose-records-synchronize-dynamics-365-outlook-exchange.md#create-or-modify-online-synchronization-filters).
+Server-side synchronization uses filter criteria that’s set in a user's synchronization filters list to determine which app rows are synchronized with Exchange for each user. Sync filters are initialized when server-side synchronization is first configured by a user for rows such as appointments, contacts, and tasks. For more information, see [Create or modify online synchronization filters](choose-records-synchronize-dynamics-365-outlook-exchange.md#create-or-modify-online-synchronization-filters).
  
-When a user mailbox is set up to use server-side synchronization for appointments, contacts, and tasks, their personal option filter list will have the defaultt logic for each table applied immediately. When the next sync cycle occurs server-side sync uses this logic to synchronize existing rows that meet the *fetchXML* logic provided in each filter.
+When a user mailbox is setup to use server-side synchronization for appointments, contacts, and tasks, their personal option filter list will have the defaultt logic for each table applied immediately. When the next sync cycle occurs server-side sync uses this logic to synchronize existing rows that meet the *fetchXML* logic provided in each filter.
 
 > [!div class="mx-imgBorder"] 
 > ![Screenshot showing sync setting for Outlook or Exchange](media/default-sync-filter-1.png "Sync setting for Outlook or Exchange")
@@ -32,7 +32,7 @@ There are times when the default logic might synchronize rows which an organizat
 > [!div class="mx-imgBorder"] 
 > ![Screenshot showing My Outlook Contacts filter](media/default-sync-filter-2.png "My Outlook Contacts filter")
 
-For example, an organization might not want to synchronize every active contact that is owned by the synchronizing user and wants to put additional restrictions in the filter logic distributed by default. This logic can be changed one by one for every user, but this is time consuming and it would need to be changed each time a user is setup with server-side sync. Another way to modify this logic is to change the default logic distributed to users when they’re initially setup to use server-side synchronization.
+For example, an organization might not want to synchronize every active contact that is owned by the synchronizing user and wants to put additional restrictions in the filter logic distributed by default. This logic can be changed one by one for every user, but this is time consuming and it would need to be changed each time a user is set up with server-side sync. Another way to modify this logic is to change the default logic distributed to users when they’re initially set up to use server-side synchronization.
 
 > [!NOTE]
 > Default synchronization templates can’t be edited within the Dynamics 365 organization solution editor. This needs to be done through calls to the Dynamics 365 API using the XrmToolBox. The [XrmToolBox](https://www.xrmtoolbox.com/) is a third-party application that has many different tools for interacting with Dynamics 365 app data. For more information on the tool, see [Documentation for XrmToolBox](https://www.xrmtoolbox.com/documentation/). 
