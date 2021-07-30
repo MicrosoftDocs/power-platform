@@ -113,7 +113,7 @@ After saving the view, load the view using the XrmToolBox.
 
 1. Open the [XrmToolBox](https://www.xrmtoolbox.com/).
 2. From the default landing page, select the **System Views** tab.
-3. From the list of views, select the view that you created in step 2 and then select **Create** > **Synchronization Filter Template from selected view(s)**.
+3. From the list of views, select the view that you created in step two and then select **Create** > **Synchronization Filter Template from selected view(s)**.
 
    > [!div class="mx-imgBorder"] 
    > ![Screenshot of the XrmToolBox system views screen](media/default-sync-filter-13.png "System views in the XrmToolBox")
@@ -125,13 +125,13 @@ After saving the view, load the view using the XrmToolBox.
 
 5. On the next screen, select **NO** when asked to apply to some users. Note, current users set up with server-Side sync already have the **My Outlook Contacts** sync filter, so adding it now will just create an additional contact table filter.  
 
-6. Select the **Synchronization Filters Templates** tab and find the new view that was created as a template. Select it and then select **Define as Default**.
+6. Select the **Synchronization Filters Templates** tab and then find the new view that you created. Select it and then select **Define as Default**.
 
    > [!div class="mx-imgBorder"] 
    > ![Define default fitler template](media/default-sync-filter-15.png "Define default filter template")
 
 
-Only the filter templates where the **Is Default** value set to **True** will be distributed to new users. When new users are set up in your organization they will use the **My Outlook Contacts Updated** set as the filter criteria along with all of the other default views shown in the above screenshot. This won't change the filter set of any existing user already configured to use server-side sync for appointments, contacts and tasks. You can delete the old **My Outlook Contacts** filter if you're not going to use it anymore.
+Only the filter templates where the **Is Default** value set to **True** will be distributed to new users. When new users are set up in your organization they'll have the **My Outlook Contacts Updated** set as the filter criteria along with all of the other default views shown in the above screenshot. This won't change the filter set of any existing user already configured to use server-side sync for appointments, contacts and tasks. You can delete the old **My Outlook Contacts** filter if you're not going to use it anymore.
 
 
 ## Step 4. Delete the old sync filter template
@@ -164,7 +164,7 @@ For users that have the old default filter, you'll need to remove old filter.
 Once the old filters are deleted, now you can apply the new Outlook filter template.
 
 1. Open the [XrmToolBox](https://www.xrmtoolbox.com/).
-2. From the default landing page, select the **Synchronization Filter Templates** tab and then the new template that was created in step 2. On the command bar, select **Apply to users**.
+2. From the default landing page, select the **Synchronization Filter Templates** tab and then the new filter template that was created in step two. On the command bar, select **Apply to users**.
 
    > [!div class="mx-imgBorder"] 
    > ![Select the new template](media/default-sync-filter-20.png "Select the new template")
@@ -172,7 +172,7 @@ Once the old filters are deleted, now you can apply the new Outlook filter templ
 
 3. In the pop-up, use the search to find users. Select the users that you want to apply the template for and then select **OK**. <br> The filter application can be checked from the **User's Synchronization Filters** tab.
 
-  Once the new filter is applied a user will be able to see the applied template via **Set Personal Options** settings.
+   Once the new filter is applied a user will be able to see the applied template via **Set Personal Options** settings.
   
   
    > [!div class="mx-imgBorder"] 
