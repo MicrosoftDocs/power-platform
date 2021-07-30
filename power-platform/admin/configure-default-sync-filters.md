@@ -172,7 +172,7 @@ Once the old filters are deleted, now you can apply the new Outlook filter templ
 
 3. In the pop-up, use the search to find users. Select the users that you want to apply the template for and then select **OK**. <br> The filter application can be checked from the **User's Synchronization Filters** tab.
 
-   Once the new filter is applied a user will be able to see the applied template via **Set Personal Options** settings.
+   Once the new filter is applied, a user will be able to see the applied template via **Set Personal Options** settings.
   
   
    > [!div class="mx-imgBorder"] 
