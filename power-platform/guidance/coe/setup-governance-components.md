@@ -27,7 +27,7 @@ Multiple governance components are provided in the Center of Excellence (CoE) St
 
 ## Initialize flow approval tables in your environment
 
-The archive approval flows use the built-in Approval actions of Power Automate.
+These archive approval flows use the built-in Approval actions of Power Automate.
 
 - *Admin \| Archive and Clean Up v2 (Start Approval for Apps)*
 - *Admin \| Archive and Clean Up v2 (Start Approval for Flows)*
@@ -98,13 +98,18 @@ All flows in this solution depend on all environment variables' being configured
 
 This Governance Components solution contains flows that you'll need to manually turn on as soon as you're ready to use them.
 
-- Admin \| Archive and Clean Up v2 (Start Approval for Apps)
-- Admin \| Archive and Clean Up v2 (Start Approval for Flows)
 - Admin \| Archive and Clean Up v2 (Check Approval)
 - Admin \| Archive and Clean Up v2 (Clean Up and Delete)
+- Admin \| Archive and Clean Up v2 (Start Approval for Apps)
+- Admin \| Archive and Clean Up v2 (Start Approval for Flows)
+- Admin \| Email Managers Ignored Approvals
+- Admin \| Setup \| Ignored Archival Requests
+- HELPER - CanvasAppOperations Gov
+- HELPER - CloudFlowOperations Gov
 - Microsoft Teams Admin \| Ask for Business Justification when Microsoft Teams environment is created
 - Microsoft Teams Admin \| Weekly Clean Up of Microsoft Teams environments
-- Admin \| Compliance detail request (in Center of Excellence - Core Components)
+- Request Orphaned Objects Reassigned (Child)
+- Request Orphaned Objects Reassigned (Parent)
 
 >[!IMPORTANT]
 > These flows will be turned off on solution import, and you can turn them on as soon as you're ready to use them. Only turn on the Weekly Clean Up of Microsoft Teams environments when you're ready to enforce the deletion of Teams environments.
