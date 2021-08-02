@@ -66,7 +66,8 @@ The following table shows the fields that are managed in the **Users** section o
 <tr><td>Address   </td><td>City   </td></tr>
 <tr><td>Address   </td><td>State or province    </td></tr>
 <tr><td>Address    </td><td>Country or region    </td></tr>
-<tr><td colspan="2">* To prevent data loss, the Primary Email field isn't automatically updated and synchronized with customer engagement apps.</td></tr>
+<tr><td>AzureActiveDirectoryObjectId**     </td><td>ObjectId   </td></tr>
+<tr><td colspan="2">* To prevent data loss, the Primary Email field isn't automatically updated and synchronized with customer engagement apps.<br />**object ID of a user or a service principal in Azure Active Directory</td></tr>
 </tbody>
 </table>
 
@@ -161,7 +162,7 @@ Note that removing a license from a user might not always result in disabling th
 These are the regular synchronized users from Azure AD.
 
 ### Application users
-Identified by the presence of ApplicationId attribute in the system user record.
+Identified by the presence of ApplicationId attribute in the system user record. To check the Azure AD application ID, see [View or edit the details of an application user](manage-application-users.md#view-or-edit-the-details-of-an-application-user).
 
 ### Non-interactive users
 - License specific provisioning business rules does not apply to these users after they are marked as non-interactive. Note: security group specific rules still apply. 
