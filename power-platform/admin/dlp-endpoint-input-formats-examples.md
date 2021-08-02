@@ -4,7 +4,7 @@ description: Endpoints have to be entered in all possible formats in order to bl
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/19/2021
+ms.date: 08/02/2021
 author: jimholtz
 ms.subservice: admin
 ms.author: jimholtz
@@ -45,28 +45,17 @@ Below are examples of a few scenarios:
 
 ## Dataverse 
 
-Dataverse endpoints are represented by the environment ID (also known as the org ID); for example, contoso.crm.dynamics.com. Please note that only the regular Dataverse connector is currently in scope for endpoint filtering. Dataverse dynamics and Dataverse current connectors are not in scope. Also, the local instance of Dataverse (also known as the current environment) can never be blocked for use within an environment. This means that within any given environment, makers can always access the Dataverse current environment. Therefore, a rule that says the following: 
+Dataverse endpoints are represented by the environment ID (also known as the org ID); for example, 7b97cd5c-ce38-4930-9497-eec2a95bf5f7. Please note that only the regular Dataverse connector is currently in scope for endpoint filtering. Dataverse dynamics and Dataverse current connectors are not in scope. Also, the local instance of Dataverse (also known as the current environment) can never be blocked for use within an environment. This means that within any given environment, makers can always access the Dataverse current environment. Therefore, a rule that says the following:
 
-1. “Allow” “contoso.crm.dynamics.com” 
-2. “Deny” "\*"
+1. “Allow” “7b97cd5c-ce38-4930-9497-eec2a95bf5f7”
+2. “Deny” "*"
 
-Actually means: 
+Actually means:
+1. “Allow” “Dataverse current environment”
+2. “Allow” “7b97cd5c-ce38-4930-9497-eec2a95bf5f7”
+3. “Deny” "*"
 
-1. “Allow” “Dataverse current environment” 
-2. “Allow” “contoso.crm.dynamics.com” 
-3. “Deny” "\*"
-
-“Allow” “Dataverse current environment” is always implicitly the first rule in the Dataverse endpoint filtering list for any given environment. 
-
-Below are examples of a few scenarios: 
-
-- Block Dataverse instances from a specific geography in a specific cloud : 
-  1. “Deny” “\*.crm2.dynamics.com” 
-  2. “Allow” "\*"
-
-- Allow only Dataverse instances that have “contoso” in the name: 
-  1. “Allow” “\*contoso\*” 
-  2. “Deny” "\*"
+“Allow” “Dataverse current environment” is always implicitly the first rule in the Dataverse endpoint filtering list for any given environment.
 
 ## Azure Blob Storage 
 

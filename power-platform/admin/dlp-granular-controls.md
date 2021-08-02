@@ -4,7 +4,7 @@ description: About fine-grained controls such as the ability to block specific c
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/29/2021
+ms.date: 08/02/2021
 author: jimholtz
 ms.subservice: admin
 ms.author: jimholtz
@@ -139,9 +139,9 @@ Admins can then use this capability by selecting the new **Configure connector**
 
 :::image type="content" source="media/dlp-configure-connector-connector-endpoints.png" alt-text="Configure connector > Connector endpoints.":::
 
-This opens up a side panel which will allow them to specify an ordered list of Allow or Deny URL patterns for custom connectors. The last row in the list will always be a rule for "`*`" which applies to all endpoints in that connector. By default, the "`*`" pattern is set up as Allow for new DLP policies, but admins can tag this as Allow or Deny. 
+This opens up a side panel which will allow them to specify an ordered list of Allow or Deny URL patterns for the new connector. The last row in the list will always be a rule for "`*`" which applies to all endpoints in that connector. By default, the "`*`" pattern is set up as Allow for new DLP policies, but admins can tag this as Allow or Deny. 
 
-:::image type="content" source="media/dlp-specify-ordered-list-allow-deny-url-patterns.png" alt-text="Specify an ordered list of Allow and Deny URL patterns for custom connectors.":::
+:::image type="content" source="media/dlp-specify-ordered-list-allow-deny-url-patterns.png" alt-text="Specify an ordered list of Allow and Deny URL patterns for new connectors.":::
 
 New rules can be added by selecting **Add endpoint**. New rules are added to the end of the pattern list (second to the last rule since "`*`" will always be the last entry in the list). However, admins can also update the order of the patterns by using the **Order** dropdown or selecting **Move up** or **Move down**. 
 
