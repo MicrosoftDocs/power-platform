@@ -179,8 +179,6 @@
       items:
        - name: Key concepts - Authoring
          href: teams/authoring-fundamentals-teams.md
-       - name: Enable advanced AI features
-         href: teams/advanced-ai-features-teams.md
        - name: Create and delete bots
          href: teams/authoring-first-bot-teams.md
        - name: Use lesson topics
@@ -199,6 +197,8 @@
       items:
        - name: Key concepts - Enhanced authoring
          href: teams/advanced-fundamentals-teams.md
+       - name: Enable advanced AI features
+         href: teams/advanced-ai-features-teams.md
        - name: Use entities and slot filling
          href: teams/advanced-entities-slot-filling-teams.md
        - name: Use variables
