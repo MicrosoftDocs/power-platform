@@ -31,10 +31,10 @@ An entity can be thought of as a unit of information that represents a certain t
 
 Using entities can help you expand what you can make chatbots do, and can increase how impactful your chatbot is for other people.
 
-If you're interested in using entities, you should read the [Power Virtual Agents online documentation for entities](../advanced-entities-slot-filling.md).
+If you're interested in using entities, you should read the [Power Virtual Agents web app documentation for entities](../advanced-entities-slot-filling.md).
 
 
-Entities in the Power Virtual Agents app on Teams have the same functionality as entities on the online app, and are located in the side navigation menu:
+Entities in the Power Virtual Agents app on Teams have the same functionality as entities in the web app, and are located in the side navigation menu:
 
 
 
