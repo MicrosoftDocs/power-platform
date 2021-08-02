@@ -123,8 +123,8 @@ $ConnectorConfigurations = @{
       defaultConnectorActionRuleBehavior = "Block"
     } 
   ) 
-New-PowerAppDlpPolicyConnectorConfigurations -TenantId $TenantId -PolicyName $PolicyName -NewDlpPolicyConnectorConfigurations $ConnectorConfigurations
 }
+New-PowerAppDlpPolicyConnectorConfigurations -TenantId $TenantId -PolicyName $PolicyName -NewDlpPolicyConnectorConfigurations $ConnectorConfigurations
 ``` 
 
 ## Endpoint filtering 
@@ -272,9 +272,6 @@ $ConnectorConfigurations = @{
     } 
   ) 
 }
-``` 
-
-```powershell
 New-PowerAppDlpPolicyConnectorConfigurations -TenantId $TenantId -PolicyName $PolicyName -NewDlpPolicyConnectorConfigurations $ConnectorConfigurations
 ``` 
 
