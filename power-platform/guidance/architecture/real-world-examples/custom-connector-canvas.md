@@ -16,8 +16,8 @@ With custom connectors, developers can capitalize on existing organization inves
 To enable Logic Apps, Power Automate, or Power Apps to communicate with the REST or SOAP API, use a custom connector, which is a wrapper around a REST API (Logic Apps also supports SOAP APIs). A high-level architecture of how custom connectors work is shown in the following image.
 
 <!--![Diagram of custom connector architecture.](./media/CustomConnectorArchitecture.png)-->
-:::image type="complex" source="./media/CustomConnectorArchitecture.png" alt-text="Diagram of custom connector architecture.":::
-   <!--NOTE FROM EDITOR: NEED DETAILED ALT TEXT HERE-->
+:::image type="complex" source="./media/CustomConnectorArchitecture.png" alt-text="connector architecture - runtime flow":::
+The diagram shows Power Automate, Power Apps and Logic apps performing request via the Azure API Management service which in turns relays the requests directly to the Restful API endpoint. The Azure App Service environment is used in case  additional request/response transformations are needed or in case the Restful API is hosted on premises.
 :::image-end:::
 
 
@@ -27,11 +27,8 @@ As an example, Microsoft built a suite of employee engagement mobile apps that h
 
 <!--![Diagram of Thrive apps architecture.](./media/Thrivearch.png)-->
 :::image type="complex" source="./media/Thrivearch.png" alt-text="Diagram of Thrive apps architecture.":::
-   <!--NOTE FROM EDITOR: NEED DETAILED ALT TEXT HERE-->
+ The diagram shows the suite of apps called the thrive apps. These apps are consuming data coming from many cloud based services: Power Apps RP, Flow Push Notification service, Enterprise Card System Stream, SharePoint Online, Application Insights, CRM Online, O365 Graph and MSIT Azure Subscription.
 :::image-end:::
-
-
-In particular, the Thrive home app (which is essentially an internal company news feed) shows various events and activities happening within the company and also shows various user-customized cards such as a vacation balance card. <!--note from editor: The following is repeated from earlier in the article: The IT team found that when multiple data sources are needed to build a single view, the use of an API layer was instrumental to delivering a performant experience, because the data response can be shaped server-side and delivered to the client more efficiently.--> 
 
 View the full story here: [Blog: Microsoft HR uses the Power Platform to transform employee experiences](https://powerapps.microsoft.com/blog/microsoft-thrive/)
 
