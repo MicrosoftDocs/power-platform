@@ -222,6 +222,34 @@ The [sync flows](#flows) of the CoE Starter Kit sync your tenant resources to th
   - Cost Code
   - Area Lead
 
+- **Environment Creation Request** represents a request submitted by non-admins to create a new Environment. This has a many-to-many relationship with the Maker and PowerApps Connector tables. The following is available for each request:
+  - Approval Date
+  - Approval Email
+  - Created By (used as Requestor) 
+  - Database Currency
+  - Database Language
+  - Database Security Group ID
+  - Duration Requested
+  - Environment
+  - Environment Display Name
+  - Environment Region
+  - Environment Type
+  - Expiration Date
+  - Has Database
+  - Has Expiration Date
+  - Justification
+  - Notes
+  - Request No
+  - Request Status (pending, approved, rejected, fulfilled, live, expired, cancelled, failed)
+
+- **DLP Policy Change Request** represents a request to change the definition of an existing DLP policy in the tenant. The following is available for each request:
+  - Action Requested (Add Environment to Policy, Remove Environment from Policy)
+  - Created By (used as Requestor)
+  - Environment Creation Request
+  - Policy ID
+  - Request No
+  - Request Status
+
 ## Security roles
 
 - **Power Platform Admin SR** Gives full access to create, read, write, and delete operations on the custom tables.
@@ -254,6 +282,11 @@ The [sync flows](#flows) of the CoE Starter Kit sync your tenant resources to th
 | CLEANUP - Admin \| Sync Template v3 (Connection Status) | Scheduled | Weekly | This flow runs weekly, and checks if any apps or flows have unresolved connections. |
 | Admin \| Capacity Alerts | Scheduled | Daily | This flow checks actual capacity consumption and compares it with approved capacity, that an admin sets. The flow will send an alert to the admin for environments that exceed the approved capacity, or are at 80% of approved capacity.
 | Admin \| Welcome Email | Automated | when any sync flow adds a new maker to the Maker table | This flow sends an email to a user who created an app, flow, custom connector, or environment. This flow gets triggered when a new record is created in the maker table. You can customize the email sent out by the flow. |
+| Env Request \| Notify admin when a new request is submitted | Automated | when a new Environment Creation Request record’s status is updated by a user to Pending state | Sends an email to the admin alias with instructions on how to review the request. |
+| Env Request \| Create approved environment | Automated | when an Environment Creation Request’s status is updated to Approved state | Provisions the Environment and other resources identified in the request. |
+| Env Request \| Notify requestor when rejected | Automated | when an Environment Creation Request’s status is updated to Rejected state | Sends an email notification to the requestor with the rejection status and reason, then changes the request to inactive. |
+| Env Request \| Cleanup expired environments | Schedule | Daily | Cleans up environments with expiration dates identified or sends weekly warning email notifications every Monday if the expiration date is coming up within the month. |
+| DLP Request \| Make approved policy change | Automated | when a DLP Policy Change Request record is updated to Approved state | Modifies the existing DLP Policies identified in the request depending on the action type.  |
 
 ### Admin \| Compliance Detail request v3
 
@@ -368,6 +401,32 @@ You can use this app to see who an app is shared with, what roles (editor or vie
 ![Use Power Platform Admin View to see who an app is shared with.](media/coe-mda2.png "Use Power Platform Admin View to see who an app is shared with")
 
 You can use this app to see Microsoft Teams environments.
+
+### Admin - Power Platform Resource RMS
+
+A canvas app used by admins to view and approve or deny requests. 
+
+Use this app to:
+- View all Environment Creation Requests in detail, including the 
+- Approve or reject Environment Creation Requests.
+- See what the impact of adding the new environment to existing DLP policies’ environment lists will have on the requested connectors.
+
+**Permission**: Intended to be used only by admins. Power Platform Service Admin or Global Admin permission is required. Share this app with your CoE Admins.
+
+![Power Platform Resource RMS canvas app.](media\dev-resources-admin-details.png "Power Platform Resource RMS canvas app") 
+
+
+### Power Platform Developer Resources
+
+A canvas app designed to easily submit requests for Power Platform resources (such as Environment Creation Requests).
+
+Use this app to:
+- Submit new Environment Creation Requests.
+- View existing requests in any state that was submitted by that user. Expiration timeline and link to the Live environments can be found here.
+
+**Permission**: As soon as you're using this process, you can share the app with all authorized Makers or the entire organization, depending on which users you want to allow Environment ownership. Requires the Power Platform Maker SR (security role) to use the Dataverse tables.
+
+![Power Platform Developer Resources canvas app.](media\dev-resources-maker-env.png "Power Platform Resource RMS canvas app") 
 
 ## Power BI report
 
