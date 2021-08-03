@@ -4,7 +4,7 @@ description: In this quickstart, you learn how to create a data loss prevention 
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 09/24/2020
+ms.date: 08/03/2021
 author: jimholtz
 ms.subservice: admin
 ms.author: jimholtz
