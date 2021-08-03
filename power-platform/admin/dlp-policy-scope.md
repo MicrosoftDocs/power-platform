@@ -4,7 +4,7 @@ description: View policies and policy scope.
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/19/2021
+ms.date: 08/03/2021
 author: jimholtz
 ms.subservice: admin
 ms.author: jimholtz
@@ -19,15 +19,15 @@ search.app:
   - Flow
 ---
 
-# View policy
+# View DLP policies
 
-Using the view policy feature (select **Data policies** tab), environment admins can view tenant-level policies and policies within environments that the admin has access to, at an individual policy level. Non-admins can also view tenant-level policies using this feature.
+Using the view policy feature (select **Data policies** on the left pane), environment admins can view tenant-level policies&mdash;and policies within environments that the admin has access to&mdash;at an individual policy level. Non-admins can also view tenant-level policies by using this feature.
 
 :::image type="content" source="media/dlp-view-policies2.png" alt-text="View DLP policies list.":::
 
 ## Policy scope
 
-DLP policies can be created at both the tenant and environment level. Tenant admins have the permissions to create tenant-level policies; environment admins have the permissions to create environment-level policies.
+Data loss prevention (DLP) policies can be created at both the tenant and environment level. Tenant admins have the permissions to create tenant-level policies; environment admins have the permissions to create environment-level policies.
 
 ### Tenant-level policies
 
@@ -48,6 +48,7 @@ Environment admins can define environment-level data policies for one environmen
 As is true of tenant admins with tenant-level policies, environment admins can define more than one environment-level policy for their environment.
 
 Even though environment admins might manage more than one environment, they can't include more than one environment in the environment-level policy. They must define individual environment-level policies for each environment that they manage. 
+
 
 
 

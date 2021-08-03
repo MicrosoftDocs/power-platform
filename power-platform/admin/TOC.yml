@@ -550,7 +550,6 @@
           href: control-user-access.md  
         - name: Restrict cross-tenant access 
           href: cross-tenant-restrictions.md
-      # take the content from temp or master and replace the below before publishing other toc changes
       - name: Data loss prevention policies 
         items: 
         - name: DLP policies
