@@ -91,6 +91,21 @@ Now the suggested topics will appear. These were all taken from the links you su
 
 ![The Suggested tab on the Topics page lists each topic by name, trigger phrase, source, and date it was received.](media/suggested-web-topics-teams.png "The Suggested tab on the Topics page lists each topic by name, trigger phrase, source, and date it was received")
 
+
+## Single-turn and multi-turn topic suggestions
+
+When Power Virtual Agents extracts your content, it automatically creates single-turn or multi-turn topic suggestions based on how your content is laid out and formatted (for example, its headings and subheadings).
+
+
+A **single-turn topic** has a trigger phrase that contains a single answer. These topics are often created from simple content, such as FAQ pages.
+
+
+A **multi-turn topic** contains multiple bot responses and questions to the user. These topics are often created from troubleshooting pages or reference pages and manuals. 
+
+:::image type="content" source="media/advanced-create-topics-from-web-teams/sample-multi-turn-topic-teams.png" alt-text="A screenshot of the preview for a multi-turn topic suggestion in Teams.":::
+
+See the [Power Virtual Agents web app version of this topic for more details on how topic suggestions are created](../advanced-create-topics-from-web.md#single-turn-and-multi-turn-topic-suggestions).
+
 ## Add suggested topics to an existing bot
 
 You can now review these suggestions to see what to add to your bot.
