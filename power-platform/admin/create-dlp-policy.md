@@ -138,7 +138,7 @@ After this policy is saved, any Power Apps or Power Automate maker who is part o
    </tr>
    <tr>
    <td width="20%"> Set default group </td>
-   <td width="80%"> The group that maps any new connectors added by Microsoft Power Platform <i>after</i> your DLP policy is created. More information: <a href="wp-data-loss-prevention.md#default-data-group-for-new-connectors">Default data group for new connectors</a>      </td>
+   <td width="80%"> The group that maps any new connectors added by Microsoft Power Platform <i>after</i> your DLP policy is created. More information: <a href="dlp-connector-classification.md#list-of-connectors-that-cant-be-blocked">Default data group for new connectors</a>      </td>
    </tr>
    <tr>
    <td width="20%"> Search Connectors </td>
