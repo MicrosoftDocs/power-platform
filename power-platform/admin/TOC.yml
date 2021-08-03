@@ -750,6 +750,8 @@
             items: 
             - name: Configure appointment, contact, and task synchronization
               href: choose-records-synchronize-dynamics-365-outlook-exchange.md
+            - name: Set up default sync filters for multiple users
+              href: configure-default-sync-filters.md
             - name: Synchronized fields per entity
               href: what-fields-synchronized-outlook.md
             - name: View the fields that are synchronized with Outlook
