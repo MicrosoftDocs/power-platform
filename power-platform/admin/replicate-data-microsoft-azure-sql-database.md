@@ -639,7 +639,7 @@ AND DL.VersionNumber > A.VersionNumber)
  
 ### Unable to create a row greater than the allowable maximum row size (8K)
 
-If your error logs show "Cannot create a row of size <size> which is greater than the allowable maximum row size of 8060", you are running into an issue where you are exceeding the maximum allowable row size limit. The Data Export Service does not support row size greater than maximum allowable row size of 8k. To mitigate this, you need to ensure that you honor the row size limits.
+If your error logs show "Cannot create a row of size (size) which is greater than the allowable maximum row size of 8060", you are running into an issue where you are exceeding the maximum allowable row size limit. The Data Export Service does not support row size greater than maximum allowable row size of 8k. To mitigate this, you need to ensure that you honor the row size limits.
 
 ### Length of string in source is longer than destination schema for ColumnName
 
