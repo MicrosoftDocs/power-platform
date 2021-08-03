@@ -81,7 +81,7 @@ After this policy is saved, any Power Apps or Power Automate maker who is part o
 
    **Attributes** <br /><br />
 
-   <table style="width:100%">
+   <table width="100%">
    <tr>
    <th>Attribute</th>
    <th>Description</th>
@@ -110,7 +110,7 @@ After this policy is saved, any Power Apps or Power Automate maker who is part o
 
    **Lists** <br /><br />
 
-   <table style="width:100%">
+   <table width="100%">
    <tr>
    <th>Pivot</th>
    <th>Description</th>
@@ -131,7 +131,7 @@ After this policy is saved, any Power Apps or Power Automate maker who is part o
 
    **Actions** <br /><br />  
 
-   <table style="width:100%">
+   <table width="100%">
    <tr>
    <th>Action</th>
    <th>Description</th>
@@ -200,7 +200,7 @@ After this policy is saved, any Power Apps or Power Automate maker who is part o
 
    **Attributes** <br /><br />
 
-   <table style="width:100%">
+   <table width="100%">
    <tr>
    <th>Attribute</th>
    <th>Description</th>
@@ -229,7 +229,7 @@ After this policy is saved, any Power Apps or Power Automate maker who is part o
 
    **Lists** <br /><br />
 
-   <table style="width:100%">
+   <table width="100%">
    <tr>
    <th>Pivot</th>
    <th>Description</th>
@@ -246,7 +246,7 @@ After this policy is saved, any Power Apps or Power Automate maker who is part o
 
    **Actions** <br /><br />
 
-   <table style="width:100%">
+   <table width="100%">
    <tr>
    <th>Action</th>
    <th>Description</th>
