@@ -172,6 +172,9 @@ There is only one self-service extension allowed per offer-based trial environme
 
 ## Convert either type of trial environment to a production environment
 
+> [!NOTE]
+> Dynamics 365 Marketing trial environments cannot be converted to production environments.
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) with admin credentials.
 
 2. Go to **Environments** > [select a trial environment] > **Convert to production**.
