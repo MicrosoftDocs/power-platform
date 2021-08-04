@@ -28,7 +28,6 @@ In response to the unique and evolving requirements of the United States public 
 - Finance
 - Supply Chain Management
 
-
 ## About Dynamics 365 US Government environments and products
 
 Select Dynamics 365 US Government products are Generally Available to customers through deployment into the Government Community Cloud (GCC).  Among other compliance commitments and reviews as documented in the Microsoft Trust Center, the service has received several agency Authority to Operate (ATOs) since it was originally launched in January, 2015. Microsoft is the first Cloud Solution Provider (CSP) to achieve a FedRAMP Joint Application Board Provisional Authority to Operate (JAB P-ATO) through the JAB Accelerated Process. In March, 2018, the service impact level was granted a FedRAMP JAB High P-ATO.
@@ -38,7 +37,6 @@ As of April, 2019, eligible customers may choose to deploy select Dynamics 365 U
 Beginning April, 2021, eligible customers may choose to deploy select Dynamics 365 US Government products to the “**DoD**” environment, which enables single sign-on and seamless integration with Microsoft 365 DoD deployments. Microsoft has designed the platform and our operational procedures to meet the requirements aligning with the DISA SRG IL5 compliance framework. We anticipate our US Department of Defense customer base and other Federal agencies currently leveraging Microsoft 365 DoD to use the Dynamics 365 US Government DOD deployment option, which enables and requires the customer to leverage Azure AD Government for customer identities.  Microsoft operates the service in a manner that enables these customers to meet ITAR commitment and DFARS acquisition regulations, as documented and required by their contracts with the US Department of Defense.
 
 Select Dynamics 365 US Government products are available to qualified government and private entities, limited to (i) United States (US) federal, state, local, tribal, and territorial government entities; (ii) private entities using Dynamics 365 US Government to provide solutions to a government entities or a qualified member of the cloud community; and (iii) private entities with customer data subject to government regulations for which the use of Dynamics 365 US Government is the appropriate service to meet the regulatory requirements.  The following Dynamics 365 US Government products are available:
-
 
 |GCC  |GCC High  |DoD  |
 |---------|---------|---------|
@@ -60,7 +58,7 @@ Eligible customers can purchase available User Subscription and AddOns through t
 
 Products currently included in an Enterprise Agreement (EA) can also be obtained through Reservation either through a qualified reseller or through the Volume Licensing Service Center (VLSC). When a reservation is placed, the requested subscription is added to the established customer Tenant that same day, and the customer is billed a prorated amount based on the currently established Enterprise Agreement from the first of the month following activation of the reservation as part of the next anniversary or renewal payment cycle. 
 
- Please work with your reseller or Microsoft account manager for more information and guidance.
+Please work with your reseller or Microsoft account manager for more information and guidance.
 
 ### What is “customer data” and “customer content?”
 
@@ -85,6 +83,7 @@ Dynamics 365 US Government services are provided from datacenters physically loc
 Access to Dynamics 365 US Government customer content by Microsoft administrators is restricted to personnel who are US citizens. These personnel undergo background investigations in accordance with relevant government standards.
 
 Dynamics 365 support and service engineering staff do not have standing access to customer content hosted in Dynamics 365 US Government. Any staff who request temporary permission elevation which would grant access to customer content must first have passed the following background checks.
+
 <table>
 <thead>
   <tr>
