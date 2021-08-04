@@ -31,6 +31,8 @@ To help ensure service levels, availability, and quality, there are entitlement 
 
 Larger tenants might require a per flow license in order for these flows to complete in a timely manner. More information: [Power Automate License Pricing](https://flow.microsoft.com/pricing/)
 
+You can also request a throttle limit raise while we work on a longer term product solution. Please see [this tracking issue](https://github.com/microsoft/coe-starter-kit/issues/917) for more information.
+
 >[!TIP]
 >The first run of the Sync flows in the Core Solution will run long as it will do an update for every flow/app/etc in the tenant. Subsequent runs  will only update apps/flows/etc that have changed since the last run and so these will not require a per flow license for most tenants.
 
@@ -106,6 +108,18 @@ The Dataverse connector might experience some throttling limits if the tenant ha
 ## DLP Customizer
 
 The app currently doesn't work for custom connectors that are installed as part of a managed solution. -->
+
+## Coauth and Connections
+
+If you have multiple identities managing the CoE Toolkit you may see this error when trying to use the flows:
+
+`The caller with object id '...GUID...' does not have permission for connection...`
+
+This is because the product does not yet support multiple people using connection references.
+
+If you see this you should either log in with the identity that installed the solution to run the flows, or update the flows to use your identity.
+
+To do the later, browse to the default solution, filter to connection references, and edit each connection to use your connection instead.
 
 ## Developer environments from the Power Apps Community Plan
 
