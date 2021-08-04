@@ -126,9 +126,6 @@ To create, edit, or delete DLP policies, you must have either Environment Admin 
 
 5. Choose a default group, and then select **Apply**. More information: [Connector classification](dlp-connector-classification.md) and [Default data group for new connectors](dlp-connector-classification.md#default-data-group-for-new-connectors)
 
-[Connector classification](dlp-connector-classification.md)
-[Default data group for new connectors](dlp-connector-classification.md#default-data-group-for-new-connectors)
-
 6. Select **Next** as needed to close the **Edit Policy** process.
 
 The data group you chose will be the default group to automatically classify any new connectors added to Microsoft Power Platform after your policy has been created. 
