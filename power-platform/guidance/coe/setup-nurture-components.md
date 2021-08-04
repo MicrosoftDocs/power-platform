@@ -36,7 +36,7 @@ The Template Catalog app depends on this library. If you don't intend to use the
 
 ### Create the site
 
-If you don't already have a SharePoint site for the Microsoft Power Platform power users in your tenant, create a new team now for them to access. This site is the one specified in the following environment variable: *Power User Site URL (SharePoint Site)*. More information: [Create a team site in SharePoint](https://support.office.com/article/create-a-team-site-in-sharepoint-ef10c1e7-15f3-42a3-98aa-b5972711777d)
+If you don't already have a SharePoint site for the Microsoft Power Platform power users in your tenant, create a new team now for them to access. This site is the one you will specify in the following environment variable once the solution is installed: *Power User Site URL (SharePoint Site)*. More information: [Create a team site in SharePoint](https://support.office.com/article/create-a-team-site-in-sharepoint-ef10c1e7-15f3-42a3-98aa-b5972711777d)
 
 ### Create the library
 
@@ -100,7 +100,7 @@ If you have existing templates that you'd like to share with your makers (for ex
 
     ![Copy the feedback form URL to send and collect responses.](media/nurture-feedback.png "Copy the feedback form URL to send and collect responses")
 
-1. Save the link to the form for the *Training in a day - Feedback Form* environment variable.
+1. Save the link to the form for the *Training in a day - Feedback Form* environment variable, which will be available once the solution is installed.
 
 ## Import the solution
 
