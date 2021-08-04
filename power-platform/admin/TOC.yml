@@ -551,8 +551,27 @@
         - name: Restrict cross-tenant access 
           href: cross-tenant-restrictions.md
       - name: Data loss prevention policies 
-        href: wp-data-loss-prevention.md
         items: 
+        - name: DLP policies
+          items: 
+          - name: Overview
+            href: wp-data-loss-prevention.md
+          - name: Connector classification
+            href: dlp-connector-classification.md
+          - name: Granular controls
+            href: dlp-granular-controls.md
+          - name: Endpoint input
+            href: dlp-endpoint-input-formats-examples.md
+          - name: View policies and policy scope
+            href: dlp-policy-scope.md
+          - name: Effect of multiple policies
+            href: dlp-combined-effect-multiple-policies.md
+          - name: Resource exemption
+            href: dlp-resource-exemption.md
+          - name: Impact on apps and flows
+            href: dlp-impact-policies-apps-flows.md
+          - name: Known issues
+            href: dlp-known-issues.md
         - name: Create a DLP policy
           href: create-dlp-policy.md
         - name: Manage DLP policies
@@ -754,6 +773,8 @@
             items: 
             - name: Configure appointment, contact, and task synchronization
               href: choose-records-synchronize-dynamics-365-outlook-exchange.md
+            - name: Set up default sync filters for multiple users
+              href: configure-default-sync-filters.md
             - name: Synchronized fields per entity
               href: what-fields-synchronized-outlook.md
             - name: View the fields that are synchronized with Outlook

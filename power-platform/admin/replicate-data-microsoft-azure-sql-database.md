@@ -4,7 +4,7 @@ description: Replicate data to Azure SQL Database using Data Export Service
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/11/2021
+ms.date: 08/03/2021
 ms.subservice: admin
 ms.author: sabinn
 author: sabinn-msft
@@ -23,7 +23,7 @@ The [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] is
   
 > [!NOTE]
 > - You can use the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] with customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation). <br />
-> - Similarly, you can export your Dataverse data to Azure Data Lake Gen2. You can link your Dataverse environment to a data lake in your Azure subscription, select standard or custom entities, and then export data to the data lake. All data or metadata changes (initial and incremental) in Dataverse are automatically pushed to Azure Data Lake Gen2 without any additional action. More information: [Exporting Dataverse data to Azure Data Lake](https://powerapps.microsoft.com/blog/exporting-cds-data-to-azure-data-lake-preview/) 
+> - Similarly, you can export your Dataverse data to Azure Synapse Analytics and/or Azure Data Lake Gen2 with Azure Synapse Link for Dataverse. You can link your Dataverse environment to a synapse workspace and/or data lake in your Azure subscription, select standard or custom entities, and then create a continuous pipeline between Dataverse and Azure. All data or metadata changes (initial and incremental) in Dataverse are automatically pushed to Azure Synapse Analytics and/or Azure Data Lake Gen2 without any additional action. More information: [Accelerate time to insight with Azure Synapse Link for Dataverse](https://cloudblogs.microsoft.com/powerplatform/2021/05/26/accelerate-time-to-insight-with-azure-synapse-link-for-dataverse/)
   
 For information about the programmatic interface for managing configuration and administration of the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)], see [Data Export Service](/powerapps/developer/common-data-service/data-export-service) in the developer guide.
   
@@ -639,7 +639,7 @@ AND DL.VersionNumber > A.VersionNumber)
  
 ### Unable to create a row greater than the allowable maximum row size (8K)
 
-If your error logs show "Cannot create a row of size <size> which is greater than the allowable maximum row size of 8060", you are running into an issue where you are exceeding the maximum allowable row size limit. The Data Export Service does not support row size greater than maximum allowable row size of 8k. To mitigate this, you need to ensure that you honor the row size limits.
+If your error logs show "Cannot create a row of size (size) which is greater than the allowable maximum row size of 8060", you are running into an issue where you are exceeding the maximum allowable row size limit. The Data Export Service does not support row size greater than maximum allowable row size of 8k. To mitigate this, you need to ensure that you honor the row size limits.
 
 ### Length of string in source is longer than destination schema for ColumnName
 

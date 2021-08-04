@@ -95,9 +95,45 @@ The tool provides explicit feedback about errors so that you can understand and 
 
 ![A pop-up window that describes the errors encountered when trying to get suggestions from a web page.](media/suggested-web-error-detail.png "A pop-up window that describes the errors encountered when trying to get suggestions from a web page.")
 
-After you've successfully extracted content, a number of suggestions will appear. You can now review these suggestions to see which ones you want to add to your bot.
+After you've successfully extracted content, a number of suggestions will appear. These may be either [single-turn or multi-turn topics](#single-turn-and-multi-turn-topic-suggestions). You can now review these suggestions to see which ones you want to add to your bot.
 
 ![The Suggested tab on the Topics page lists each topic by name, trigger phrase, source, and date it was received.](media/suggested-web-topics.png "The Suggested tab on the Topics page lists each topic by name, trigger phrase, source, and date it was received")
+
+
+## Single-turn and multi-turn topic suggestions
+
+When Power Virtual Agents extracts content, it generates single-turn or multi-turn topic suggestions, based on the structure of the document. 
+
+
+A **single-turn topic** has a trigger phrase that contains a single answer. Topics such as these are typically generated if your online content has simple "question-and-answer" pairs, such as an FAQ page. 
+
+A **multi-turn topic** contains multiple bot responses, and is often associated with multiple dialog branches.  
+It provides a guided experience for your bot's users to navigate through a problem and reach a solution. These topics are typically generated when your online content is similar to a troubleshooting page or a reference manual or guidebook. 
+
+
+The original content's structure or hierarchy (such as headings and subheadings) will [contribute to whether a multi-turn or single-turn topic is generated](#how-the-ai-creates-topic-suggestions). 
+
+:::image type="content" source="media/advanced-create-topics-from-web/sample-multi-turn-topic.png" alt-text="A screenshot of the preview for a multi-turn topic suggestion showing multiple branches from the original question.":::
+
+
+### How the AI creates topic suggestions
+
+The Power Virtual Agents AI engine applies a number of steps to the content when it extracts topics and generates suggestions. These steps utilize AI to identify and parse visual and semantic cues from the content. 
+
+
+1. *Document parsing:* the Power Virtual Agents engine identifies and extracts the basic components of the document, such as text and image blocks.
+
+2. *Layout understanding:* the document is segmented into different zones that consist of the blocks of content.
+
+3. *Structure understanding:* the logical structure of the content is analyzed by determining the "role" of each zone (for example, what is actual content and what are headings). Power Virtual Agents creates a hierarchical map or "heading tree" of the content, based on the headings and their associated content.
+
+4. *Augmentation:* the Power Virtual Agents AI engine adds context to the tree by analyzing how the headings relate to each other and their content. At this point, it generates single-turn topics from identified simple "question-and-answer" pairs of headings and content.
+
+5. *Dialog generation:* multi-turn topics are generated from the augmented knowledge tree, depending on whether the topic's intent is a simple answer from a group of many, or if the topic has multiple solutions that are equally different, and are chosen based on a user's input or choices.
+
+
+
+
 
 ## Add suggested topics to an existing bot
 
