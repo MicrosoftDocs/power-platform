@@ -124,7 +124,7 @@ To create, edit, or delete DLP policies, you must have either Environment Admin 
    > [!div class="mx-imgBorder"] 
    > ![Set default group.](media/dlp-edit-default-group.png "Set default group")
 
-5. Choose a default group, and then select **Apply**. More information: [Connector classification](wp-data-loss-prevention.md#connector-classification) and [Default data group for new connectors](wp-data-loss-prevention.md#default-data-group-for-new-connectors)
+5. Choose a default group, and then select **Apply**. More information: [Connector classification](dlp-connector-classification.md) and [Default data group for new connectors](dlp-connector-classification.md#default-data-group-for-new-connectors)
 
 6. Select **Next** as needed to close the **Edit Policy** process.
 
