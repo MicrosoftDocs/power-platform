@@ -47,12 +47,30 @@ The following are prerequisites for installing the CoE Starter Kit as it's inclu
     - A Microsoft 365 license is required to use Office 365 connectors like Outlook, SharePoint and Groups.
     - If you are using the CoE Starter Kit in **Production environment with a Dataverse**, premium licenses are required for all users interacting with the CoE Starter Kit. Depending on what components you will use, your organization size and the existing licenses available in your organization, you will require either a Power Apps per user or per app or Power Automate per user or per flow license or a combination of these licenses.
     - If you are using the CoE Starter Kit in a **Dataverse for Teams** environment, a Power Automate per user license will be required for the admin running the sync flows. No additional licenses will be required for users interacting with any of the canvas apps.
+    - If you want a DLP policy on the environment, it should allow the following to be used together in the business data&ndash;only bucket of the DLP policy for this environment.
+        - [Approvals](https://docs.microsoft.com/connectors/approvals/)
+        - [Azure AD](https://docs.microsoft.com/connectors/azuread/)
+        - HTTP
+        - [HTTP with Azure AD](https://docs.microsoft.com/connectors/webcontents/)
+        - [Microsoft Dataverse](https://docs.microsoft.com/connectors/commondataserviceforapps/)
+        - [Microsoft Dataverse (legacy)](https://docs.microsoft.com/connectors/commondataservice/)
+        - [Microsoft Teams](https://docs.microsoft.com/connectors/teams/)
+        - [Notifications](https://docs.microsoft.com/connectors/flowpush/)
+        - [Office 365 Groups](https://docs.microsoft.com/connectors/office365groups/)
+        - [Office 365 Outlook](https://docs.microsoft.com/connectors/office365/)
+        - [Office 365 Users](https://docs.microsoft.com/connectors/office365users/)
+        - [Power Apps for Admins](https://docs.microsoft.com/connectors/powerappsforadmins/)
+        - [Power Apps for Makers](https://docs.microsoft.com/connectors/powerappsforappmakers/)
+        - [Power Automate for Admins](https://docs.microsoft.com/connectors/microsoftflowforadmins/)
+        - [Power Automate Management](https://docs.microsoft.com/connectors/flowmanagement/)
+        - [Power Platform for Admins](https://docs.microsoft.com/connectors/powerplatformforadmins/)
+        - [RSS](https://docs.microsoft.com/connectors/rss/)
+        - [SharePoint](https://docs.microsoft.com/connectors/sharepointonline/)
 
-- If you want a DLP policy on the environment, it should allow [Dataverse](/connectors/commondataservice/), [Dataverse (current environment)](/connectors/commondataserviceforapps/), [Office 365 Users](/connectors/office365users/), [Power Platform for Admins](/connectors/powerplatformforadmins/), [Power Automate Management](/connectors/flowmanagement/), [Office 365 Outlook](/connectors/office365/), [Power Apps for Admins](/connectors/powerappsforadmins/), [Power Apps for Makers](/connectors/powerappsforappmakers/), [SharePoint](/connectors/sharepointonline/), [Azure Aciver Directory (Azure AD)](/connectors/azuread/), [Power Automate for Admins](/connectors/microsoftflowforadmins/), [RSS](/connectors/rss/), [Office 365 Groups](/connectors/office365groups/), [Approvals](/connectors/approvals/), HTTP, [HTTP with Azure AD](/connectors/webcontents/), [Microsoft Teams](/connectors/teams/) and [Notifications](/connectors/flowpush/) to be used together. Those connectors must be in the business data&ndash;only bucket of the DLP policy for this environment. 
     > [!NOTE]
-    > The CoE Starter Kit records who owns a resource, such as an app or a flow. If the resource is owned by an interactive users, the Office 365 Users connector is used to get those details. If the resource is owned a Service Principal (Application User), the HTTP with Azure AD connector is used to get the name of the Application User to correctly mark ownership of resources and avoid resources being marked as orphaned (without an owner).
+    > The CoE Starter Kit records who owns a resource, such as an app or a flow. If the resource is owned by an interactive users, the Office 365 Users connector is used to get those details. If the resource is owned a Ssservice Principal (Application User), the HTTP with Azure AD connector is used to get the name of the Application User to correctly mark ownership of resources and avoid resources being marked as orphaned (without an owner).
 
-- If you're using the [audit log](setup-auditlog.md) solution, the custom connector used to connect to the Microsoft 365 audit log also must be included in your business data&ndash;only bucket and the DLP policy must be of type Environment, not Tenant.
+- If you're using the [audit log](setup-auditlog.md) solution, the custom connector used to connect to the Microsoft 365 audit log also must be allowed in your business data&ndash;only bucket. Please see [Custom Connectors and DLP](https://docs.microsoft.com/-platform/admin/dlp-connector-classification#tenant-level-dlp-policies)
 
 - If you're using the [ALM Accelerator for Makers](almaccelerator-components.md) components, the environment must have a DLP policy that allows [Dataverse](/connectors/commondataservice/), [Office 365 Outlook](/connectors/office365/), [Power Apps for Makers](/connectors/powerappsforappmakers/), [Approvals](/connectors/approvals/), [GitHub](/connectors/github/) [Power Platform for Admins](/connectors/powerplatformforadmins/) to be used together. Those connectors must be in the business data&ndash;only bucket of the DLP policy for this environment.
 
