@@ -407,7 +407,7 @@ You can use this app to see Microsoft Teams environments.
 A canvas app used by admins as an interface to view and approve or reject requests to create or modify Power Platform development resources. Supports Environment Creation Requests and changes to DLP Policies are logged in the DLP Policy Change Request table.    
 
 Use this app to:
-- View all Environment Creation Requests in detail, including the 
+- View all Environment Creation Requestss in detail.
 - Approve or reject Environment Creation Requests.
 - View if connectors will be blocked or restricted by existing or modified DLP Policies. Modifications made in the app will update those Policies. 
 
