@@ -6,7 +6,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/25/2021
+ms.date: 08/04/2021
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -71,6 +71,7 @@ The **pageViews** table attributes include:
 
 - **appModule**: The app module name.
 - **entityName**: This attribute is present when relevant. It's available on page types like EditForm, EntityList, and Dashboards when they're [bound to an entity](/powerapps/maker/model-driven-apps/configure-interactive-experience-dashboards#create-an-entity-specific-dashboard). In some scenarios, the form isn't bound to an entity and the value appears as undefined.
+- **formId**: The [formId](/powerapps/developer/data-platform/reference/entities/systemform) uniquely identifies a form and can be used to correlate issues affecting that specific form. 
 - **hostType**: Browser/MobileApplication/Embedded
 - **isBoot**: Is this the first load of a session?
 - **loadType**
