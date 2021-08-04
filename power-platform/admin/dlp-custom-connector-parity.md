@@ -4,7 +4,7 @@ description: About allowing makers to create and share custom connectors.
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/03/2021
+ms.date: 08/04/2021
 author: jimholtz
 ms.subservice: admin
 ms.author: jimholtz
@@ -71,7 +71,7 @@ $UrlPatterns = @{
   rules = @(
     @{  
       order # integer (starting at 1)
-      customConnectorRuleClassification $ supported values: General | Confidential | Blocked | Ignore
+      customConnectorRuleClassification # supported values: General | Confidential | Blocked | Ignore
       pattern # string
     } 
   )
@@ -86,6 +86,11 @@ Get-PowerAppPolicyUrlPatterns -TenantId -PolicyName
 ### Create custom connector URL patterns for a policy
 ```powershell
 New-PowerAppPolicyUrlPatterns -TenantId -PolicyName -NewUrlPatterns
+```
+
+### Remove custom connector URL patterns from a policy
+```powershell
+Remove-PowerAppPolicyUrlPatterns -TenantId -PolicyName
 ```
 
 **Example**
