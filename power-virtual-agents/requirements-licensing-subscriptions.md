@@ -40,6 +40,7 @@ Power Automate connectors | [Standard connectors available for flows triggered f
 Web security | [Secure access enabled by default, no ability to generate secrets to enable secure access](teams/configure-web-security-teams.md) | [Ability to generate secrets and turn on or off secure access as wanted by the bot author](configure-web-security.md)
 Use Microsoft Bot Framework skills | Not available | [Ability to extend Power Virtual Agents bots with Microsoft Bot Framework skills](advanced-use-skills.md)
 Integrate Microsoft Bot Framework dialogs | Not available | [Develop custom dialogs with Bot Framework Composer](advanced-bot-framework-composer.md)
+Hand off bot conversation to a live agent | Not available | [Trigger hand-off to a live agent](advanced-hand-off.md)
 
 >[!NOTE]
 >A paid, standalone Power Virtual Agents subscription is required to run flows with premium connectors in the context of Power Virtual Agents chatbots.  
