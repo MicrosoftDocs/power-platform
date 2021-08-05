@@ -78,7 +78,7 @@ Add the following URLs to the approved list to allow traffic to proceed to these
   </tr>
   <tr>
     <td>https://*.powerbi.com </td>
-    <td>Required for administering Power BI from the [Power BI admin portal](https://app.powerbi.com/)</td>
+    <td>Required for administering Power BI from the Power BI admin portal.</td>
   </tr>
   <tr>
     <td>http://login.microsoftonline-p.com </td>
