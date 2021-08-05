@@ -73,6 +73,14 @@ Add the following URLs to the approved list to allow traffic to proceed to these
 </thead>
 <tbody>
   <tr>
+    <td>https://*.powerplatform.microsoft.com </td>
+    <td>Required for administering Dynamics 365 Power Platform features.</td>
+  </tr>
+  <tr>
+    <td>https://*.powerbi.com </td>
+    <td>Required for administering Power BI from the [Power BI admin portal](https://app.powerbi.com/)</td>
+  </tr>
+  <tr>
     <td>http://login.microsoftonline-p.com </td>
     <td rowspan="6">Required for Microsoft Cloud Authentication. Includes business-to-consumer (B2C) and guest scenarios. </td>
   </tr>
@@ -120,12 +128,8 @@ Add the following URLs to the approved list to allow traffic to proceed to these
     <td>http://crl.microsoft.com/pki/crl/products/microsoftrootcert.crl  </td>
     <td>Required for Certification Revocation List checks.    </td>
   </tr>
-  <tr>
-    <td>https://dynamics.microsoft.com  </td>
-    <td>  </td>
-  </tr>
 </tbody>
-</table>
+</table> 
 
 ## Ports
 Dataverse exposes ports *18085* and *8085* to perform maintenance operations for customer databases.  The maintenance operations are executed to ensure that Microsoft Dynamics 365 environments are performing at optimal performance standards.  These maintenance operations include but are not limited to: 
