@@ -178,7 +178,7 @@ You use a different set of URLs to access Dynamics 365 US Government environment
 -	DoD: *.crm.appsplatform.us
 
 ### Dynamics 365 Customer Voice
--	GCC/GCC High: https://customervoice.microsoft.us
+-	GCC: https://customervoice.microsoft.us
 
 ### Discovery (OData V4) RESTful API
 -	GCC:
