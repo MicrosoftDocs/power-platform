@@ -558,6 +558,8 @@
             href: wp-data-loss-prevention.md
           - name: Connector classification
             href: dlp-connector-classification.md
+          - name: Custom connector parity  
+            href: dlp-custom-connector-parity.md 
           - name: Granular controls
             href: dlp-granular-controls.md
           - name: Endpoint input
