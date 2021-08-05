@@ -4,7 +4,7 @@ description: About allowing makers to create and share custom connectors.
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/04/2021
+ms.date: 08/05/2021
 author: jimholtz
 ms.subservice: admin
 ms.author: jimholtz
@@ -38,7 +38,7 @@ Environment admins can now see all custom connectors in their environments along
 
 Tenant admins will see a new tab in the **Data Policies** wizard called **Custom connectors**, which will allow them to specify an ordered list of **Allow** and **Deny** URL patterns for custom connectors. 
 
-The rule for `*` will always be the last entry in the list which applies to all custom connectors. 
+The rule for `*` will always be the last entry in the list which applies to all custom connectors not matched by any previous rule.
 
 Admins can tag the `*` pattern to **Blocked**/**Business**/**Non-business**/**Ignore**. By default, the pattern is set up as **Ignore** for new DLP policies.
 
