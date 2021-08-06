@@ -6,7 +6,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 03/19/2021
+ms.date: 08/05/2021
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -46,3 +46,5 @@ To perform the administration operations in the cmdlets, you'll need the followi
 - Any of these roles—Global admins, Microsoft Azure Active Directory Global admins, or Dynamics 365 admin—can access the Power Apps admin PowerShell cmdlets. These roles no longer require a Power Apps plan for administrative access to the Power Apps admin PowerShell cmdlets. However, these administrators need to sign in to the Power Platform admin center at least once before using the PowerShell cmdlets. If this is not done, the cmdlets will fail with an authorization error.
 
 - Microsoft 365 Global admin, Azure Active Directory Global Administrator, or Dynamics 365 admin permissions are required if you need to search through another user's resources. Note that environment admins only have access to those environments and environment resources for which they have permissions.
+
+- For Dataverse for Teams environments, you must be either a Microsoft 365 Global Admin, Azure Active Directory Global Administrator, or Power Platform Administrator to manage environments from which you are not the owner of the team in Microsoft Teams.   
