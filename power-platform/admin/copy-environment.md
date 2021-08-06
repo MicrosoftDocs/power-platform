@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/23/2021
+ms.date: 08/06/2021
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -210,6 +210,8 @@ Once the copy process is complete, the target environment is placed in [Administ
 - **Client extensibility**. Review the following.  
     - **Client-side JavaScript**. Take a look at your JavaScript and HTML web resources for read/write operations that could impact external services.  
     - **IFRAMES**. Determine if the target of an IFRAME is a production environment.  
+
+-	**Relevance Search**. Confirm that search returns expected results. If results are not accurate, you can turn off Relevance Search for a period of 12 hours and then turn Relevance Search back on again to refresh the index. You may contact [Microsoft support](get-help-support.md) if you're still experiencing issues.
 
 ### See also  
 [What's new about storage](whats-new-storage.md) <br />
