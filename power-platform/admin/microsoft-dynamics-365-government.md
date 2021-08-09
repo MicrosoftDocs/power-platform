@@ -175,18 +175,22 @@ When a user of an organization employing ADFS attempts to access Dynamics 365, t
 You use a different set of URLs to access Dynamics 365 US Government environments, as documented here:
 
 ### Instances
+
 -	GCC: *.crm9.dynamics.com
 -	GCC High: *.crm.microsoftdynamics.us
 -	DoD: *.crm.appsplatform.us
 
 ### Dynamics 365 Customer Voice
+
 -	GCC: https://customervoice.microsoft.us
 
 ### Discovery (OData V4) RESTful API
 
 -	GCC:
-   - (Deprecated) Discovery URL: https://disco.crm9.dynamics.com/api/discovery/v9.1/
-   - Global discovery URL: https://globaldisco.crm9.dynamics.com/api/discovery/v2.0/
+
+  - (Deprecated) Discovery URL: https://disco.crm9.dynamics.com/api/discovery/v9.1/
+
+  - Global discovery URL: https://globaldisco.crm9.dynamics.com/api/discovery/v2.0/
 
 -	GCC High:
    - (Deprecated) Discovery URL: https://disco.crm.microsoftdynamics.us/api/discovery/v9.1/
