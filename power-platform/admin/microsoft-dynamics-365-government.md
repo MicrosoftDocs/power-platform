@@ -28,7 +28,7 @@ In response to the unique and evolving requirements of the United States public 
 - Finance
 - Supply Chain Management
 - Customer Voice
-- Omnichannel Engagement hub
+- Omnichannel Engagement Hub
 
 ## About Dynamics 365 US Government environments and products
 
