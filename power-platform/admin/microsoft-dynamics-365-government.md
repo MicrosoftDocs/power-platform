@@ -46,8 +46,8 @@ Select Dynamics 365 US Government products are available to qualified government
 |Dynamics 365 Customer Service Enterprise and Professional     | Dynamics 365 Customer Service Enterprise and Professional        |Dynamics 365 Customer Service Enterprise and Professional         |
 |Dynamics 365 Field Service      | Dynamics 365 Field Service         |Dynamics 365 Field Service          |
 |Dynamics 365 Project Service Automation     |Dynamics 365 Project Service Automation         | Dynamics 365 Project Service Automation        |
-|Dynamics 365 Finance     | Dynamics 365 Finance        |         |
-|Dynamics 365 Omnichannel for Customer Service     |Dynamics 365 Omnichannel for Customer Service        |         |
+|Dynamics 365 Finance     |      |         |
+|Dynamics 365 Omnichannel for Customer Service     |     |         |
 |Customer Voice   |     |         |
 
 ### Subscription Availability
