@@ -39,6 +39,43 @@ For step-by-step instructions for creating a [!INCLUDE[pn_MS_Online_Services](..
 > - Close all open browsers used for the customer engagement app and the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)].  
 > - Sign back in to the customer engagement app and the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)].  
   
+## User types
+
+### Regular users
+These are the regular synchronized users from Azure AD.
+
+### Application users
+Identified by the presence of ApplicationId attribute in the system user record. To check the Azure AD application ID, see [View or edit the details of an application user](manage-application-users.md#view-or-edit-the-details-of-an-application-user).
+
+### Non-interactive users
+- License specific provisioning business rules does not apply to these users after they are marked as non-interactive. Note: security group specific rules still apply. 
+- Cannot access Microsoft Dataverse web interface or admin portals.
+- Can only access Dataverse via SDK/API calls.
+- There is a maximum limit of 7 non-interactive users per instance.
+
+### Support user
+See [System and application users](system-application-users.md).
+
+- Not synchronized with Azure AD, and created by Dataverse out of the box.
+- Placeholder user record for all of the internal Microsoft support users. 
+- Key identifiers: 
+  - UPN value is crmoln@microsoft.com.
+  - Access mode value is 3.
+- All Microsoft support users will be mapped to this well-known record at runtime.
+
+### Delegated administrator
+
+See the following: <br />
+[For partners: the Delegated Administrator](for-partners-delegated-administrator.md) <br />
+[System and application users](system-application-users.md)
+
+- Not synchronized with Azure AD, and created by Dataverse out of the box. 
+- Placeholder user record for all of customer’s delegated admin partner users to access Dataverse as delegated administrators. 
+- Key identifiers: 
+  - UPN value is crmoln2@microsoft.com. 
+  - Access mode value is 5. 
+- All the delegated admin partner users will be mapped to this well-known record at runtime. 
+
 ## User profile information
 
 Some user profile information is maintained and managed in the [!INCLUDE [pn-office-365-admin-center](../includes/pn-office-365-admin-center.md)]. After you create or update a user, these user profile fields are automatically updated and synchronized in your Microsoft Power Platform environments.
@@ -156,42 +193,58 @@ Note that removing a license from a user might not always result in disabling th
 > - Close all open browsers used for the customer engagement app and the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)].  
 > - Sign back in to the customer engagement app and the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)].  
 
-## User types
+## Add users to Dataverse 
 
-### Regular users
-These are the regular synchronized users from Azure AD.
+For users to have access to applications and data in a Dataverse environment, at a minimum the SystemUser table in Dataverse must have a record corresponding to the respective user identity. There are different mechanisms to add users in Dataverse, either automatic or on demand: 
 
-### Application users
-Identified by the presence of ApplicationId attribute in the system user record. To check the Azure AD application ID, see [View or edit the details of an application user](manage-application-users.md#view-or-edit-the-details-of-an-application-user).
+1. A system background process runs every 30 minutes to synchronize changes from Azure AD and updates the SystemUser records in Dataverse based on pre-determined set of [requirements](#requirements-for-successfully-adding-users-in-dataverse). The time taken to synchronize all changes into Dataverse is dependent on total number of users must be added or updated. For large organizations with thousands of users in Azure AD, we recommend creating security groups associated with each environment, so only the required subset of users is added into Dataverse. 
 
-### Non-interactive users
-- License specific provisioning business rules does not apply to these users after they are marked as non-interactive. Note: security group specific rules still apply. 
-- Cannot access Microsoft Dataverse web interface or admin portals.
-- Can only access Dataverse via SDK/API calls.
-- There is a maximum limit of 7 non-interactive users per instance.
+   > [!NOTE]
+   > Not all users added in Azure AD will be pickup by the automatic synchronization process. [This section](#user-types) details the eligibility criteria the system background process applies to add a user from Azure AD into Dataverse.
 
-### Support user
-See [System and application users](system-application-users.md).
+2. If users already exist in Azure AD, they are automatically added to SystemUsers table at first attempt to access the Dataverse environment. Note that if a user already exists in Dataverse, but in a disabled state, attempting to access the environment will result in the user’s state to be updated to “enabled”, assuming they are entitled at the time of access. 
 
-- Not synchronized with Azure AD, and created by Dataverse out of the box.
-- Placeholder user record for all of the internal Microsoft support users. 
-- Key identifiers: 
-  - UPN value is crmoln@microsoft.com.
-  - Access mode value is 3.
-- All Microsoft support users will be mapped to this well-known record at runtime.
+3. Users that have the necessary permissions, can use the [API](/powershell/module/microsoft.powerapps.administration.powershell/add-adminpowerappssyncuser?view=pa-ps-latest) to add or update users in Dataverse on demand. 
 
-### Delegated administrator
+4. Administrators can leverage the Power Platform admin center user management experience to [add users in Dataverse on demand](add-users-to-environment.md#add-users-to-an-environment-that-has-a-dataverse-database). 
 
-See the following: <br />
-[For partners: the Delegated Administrator](for-partners-delegated-administrator.md) <br />
-[System and application users](system-application-users.md)
+## Categories of users not added automatically in Dataverse 
 
-- Not synchronized with Azure AD, and created by Dataverse out of the box. 
-- Placeholder user record for all of customer’s delegated admin partner users to access Dataverse as delegated administrators. 
-- Key identifiers: 
-  - UPN value is crmoln2@microsoft.com. 
-  - Access mode value is 5. 
-- All the delegated admin partner users will be mapped to this well-known record at runtime. 
+In certain conditions, the above-mentioned system background process is not adding users automatically into Dataverse. In these cases, users will be added on demand either when they first attempt to access the environment or by an administrator using the API or the Power Platform admin center. These conditions are: 
+
+1. Users are part of a Dataverse for Teams environment type. 
+2. Users are part of an environment with a Dataverse database and have a free Dataverse service plan from Microsoft 365 licenses. 
+3. Users are part of an environment with a Dataverse database and environment level app-pass license type. 
+
+> [!NOTE]
+> Users cannot be added to SystemUser table either automatically or on demand in case of environments without Dataverse database.  
+
+## Requirements for successfully adding users in Dataverse 
+
+Below criteria must be met for successfully adding the user in the Dataverse table: 
+
+1. User must be enabled and not deleted or soft-deleted in Azure AD. User must be enabled in Azure AD to be enabled in a Dataverse database. If user is added to Dataverse and then deleted in Azure AD, the state in the Dataverse table will be updated to “disabled”.  
+
+2. User must have a valid license with these exceptions: 
+   1. Admin users do not require a license. Unlicensed Azure AD admins are enabled in the systems as “Setup user” and have administrative only access mode. 
+   2. Individual users do not need to have a license when the environment has app pass capacity. This only applies to adding users on demand (either at first attempt to access the environment or through API/Power Platform admin center). 
+   3. Individual users do not need to have a license when the tenant they are part of has a tenant level Marketing license. This only applies to adding users on demand (either at first attempt to access the environment or through API/Power Platform admin center). 
+   4. Non-interactive users do not need a license 
+   5. Free Dataverse plans from M365 license are honored when users added on-demand (either at first attempt to access the environment or through API/Power Platform admin center)  
+
+> [!NOTE]
+> Guest users should also have a license from the environment’s tenant. License from Guest user's tenant is NOT considered as valid license.
+
+3. If the environment has a security group defined, user must be part of the respective security group, unless the user is a Tenant or Power Platform Administrator. Non-admin users or D365 service admin must be in the security group to access the system. When the owner of the security group is added to Dataverse through an on-demand action, the user will be considered a valid member of the security group and will be added to Dataverse successfully.  
+
+Adding users to Dataverse has different implications depending on the environment type: 
+
+1. If users are part of a trial environment, then they will not need email approval for being added to Dataverse. Users will only be added to Dataverse on demand. The background sync process will still run to keep the users in the environment up-to-date, but will not add users automatically. 
+
+2. Only the initial user that created the developer environment type will be added to Dataverse. 
+
+3. Users that are part of a Dataverse for Teams environment will only be added to Dataverse’s SystemUser table as result of the user’s first attempt to access the environment. 
+
 
 ## Create a Read-Write user account
 By default, all licensed users are created with an access mode of **Read-Write**. This access mode provides full access rights to the user based on the security privileges that are assigned.
@@ -369,57 +422,6 @@ The following table shows the fields that are populated on the user form (user r
 </tbody>
 </table>
 
-## Add users to Dataverse 
-
-For users to have access to applications and data in a Dataverse environment, at a minimum the SystemUser table in Dataverse must have a record corresponding to the respective user identity. There are different mechanisms to add users in Dataverse, either automatic or on demand: 
-
-1. A system background process runs every 30 minutes to synchronize changes from Azure AD and updates the SystemUser records in Dataverse based on pre-determined set of [requirements](#requirements-for-successfully-adding-users-in-dataverse). The time taken to synchronize all changes into Dataverse is dependent on total number of users must be added or updated. For large organizations with thousands of users in Azure AD, we recommend creating security groups associated with each environment, so only the required subset of users is added into Dataverse. 
-
-   > [!NOTE]
-   > Not all users added in Azure AD will be pickup by the automatic synchronization process. [This section](#user-types) details the eligibility criteria the system background process applies to add a user from Azure AD into Dataverse.
-
-2. If users already exist in Azure AD, they are automatically added to SystemUsers table at first attempt to access the Dataverse environment. Note that if a user already exists in Dataverse, but in a disabled state, attempting to access the environment will result in the user’s state to be updated to “enabled”, assuming they are entitled at the time of access. 
-
-3. Users that have the necessary permissions, can use the [API](/powershell/module/microsoft.powerapps.administration.powershell/add-adminpowerappssyncuser?view=pa-ps-latest) to add or update users in Dataverse on demand. 
-
-4. Administrators can leverage the Power Platform admin center user management experience to [add users in Dataverse on demand](add-users-to-environment.md#add-users-to-an-environment-that-has-a-dataverse-database). 
-
-## Categories of users not added automatically in Dataverse 
-
-In certain conditions, the above-mentioned system background process is not adding users automatically into Dataverse. In these cases, users will be added on demand either when they first attempt to access the environment or by an administrator using the API or the Power Platform admin center. These conditions are: 
-
-1. Users are part of a Dataverse for Teams environment type. 
-2. Users are part of an environment with a Dataverse database and have a free Dataverse service plan from Microsoft 365 licenses. 
-3. Users are part of an environment with a Dataverse database and environment level app-pass license type. 
-
-> [!NOTE]
-> Users cannot be added to SystemUser table either automatically or on demand in case of environments without Dataverse database.  
-
-## Requirements for successfully adding users in Dataverse 
-
-Below criteria must be met for successfully adding the user in the Dataverse table: 
-
-1. User must be enabled and not deleted or soft-deleted in Azure AD. User must be enabled in Azure AD to be enabled in a Dataverse database. If user is added to Dataverse and then deleted in Azure AD, the state in the Dataverse table will be updated to “disabled”.  
-
-2. User must have a valid license with these exceptions: 
-   1. Admin users do not require a license. Unlicensed Azure AD admins are enabled in the systems as “Setup user” and have administrative only access mode. 
-   2. Individual users do not need to have a license when the environment has app pass capacity. This only applies to adding users on demand (either at first attempt to access the environment or through API/Power Platform admin center). 
-   3. Individual users do not need to have a license when the tenant they are part of has a tenant level Marketing license. This only applies to adding users on demand (either at first attempt to access the environment or through API/Power Platform admin center). 
-   4. Non-interactive users do not need a license 
-   5. Free Dataverse plans from M365 license are honored when users added on-demand (either at first attempt to access the environment or through API/Power Platform admin center)  
-
-> [!NOTE]
-> Guest users should also have a license from the environment’s tenant. License from Guest user's tenant is NOT considered as valid license.
-
-3. If the environment has a security group defined, user must be part of the respective security group, unless the user is a Tenant or Power Platform Administrator. Non-admin users or D365 service admin must be in the security group to access the system. When the owner of the security group is added to Dataverse through an on-demand action, the user will be considered a valid member of the security group and will be added to Dataverse successfully.  
-
-Adding users to Dataverse has different implications depending on the environment type: 
-
-1. If users are part of a trial environment, then they will not need email approval for being added to Dataverse. Users will only be added to Dataverse on demand. The background sync process will still run to keep the users in the environment up-to-date, but will not add users automatically. 
-
-2. Only the initial user that created the developer environment type will be added to Dataverse. 
-
-3. Users that are part of a Dataverse for Teams environment will only be added to Dataverse’s SystemUser table as result of the user’s first attempt to access the environment. 
 
 ## FAQ
 
