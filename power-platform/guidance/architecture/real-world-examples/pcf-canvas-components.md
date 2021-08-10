@@ -31,6 +31,6 @@ For more advanced scenarios, Power Apps component framework offers access to a r
 
 To see real-world use of Power Apps component framework, view this video on how Chevron built a digitally enhanced well-planning tool to help with the design of a well that's 35,000 feet deep (nearly 7 miles under the earth): [Video: Real World Stories: Global energy companies power digital transformation with Microsoft Power Platform](https://youtu.be/ABcRl-lErIY?t=2050). This digital tool uses Power Apps component framework to enhance the app experience.
 
-:::image type="complex" source="./media/Cheveron.png" alt-text="Screenshot showing a Model Driven App built using Power Apps code components (PCF)":::
-   The PCF component shows an advanced input field with a dropdown containing additional information that helps users understand the formulas used to obtain the value of the input field.  
+:::image type="complex" source="./media/Cheveron.png" alt-text="Screenshot showing a model-driven app built using code components built using Power Apps component framework":::
+   The code component shows an advanced input field with a dropdown containing additional information that helps users understand the formulas used to obtain the value of the input field.  
 :::image-end:::
