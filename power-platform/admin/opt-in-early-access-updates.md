@@ -1,14 +1,14 @@
 ---
 title: "Opt in to early access updates  | MicrosoftDocs"
 description: Opt in to early access updates in Microsoft Power Platform and Dynamics 365. 
-author: angelmarshall
+author: samathur
 ms.subservice: admin
-ms.author: tsmarsha
+ms.author: samathur
 ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/09/2021
+ms.date: 07/28/2021
 search.audienceType: 
   - admin
 search.app:
@@ -92,6 +92,7 @@ Some apps require additional steps to enable early access features. If you have 
 > [!IMPORTANT]
 > Be sure to enable the early access updates in the Power Platform admin center first. If you run the Dynamics 365 Marketing setup wizard to update your Marketing app to a new release wave before activating the early access updates in the Power Platform admin center, you must [run the Dynamics 365 Marketing setup wizard again](/dynamics365/customer-engagement/marketing/re-run-setup) after opting in to install and enable the early access features. 
 
+
 ## Update status and Retry 
 
 To check the update status, sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com/) and select the environment. From **Updates**, you'll see the update process of each of the applications. 
@@ -137,7 +138,7 @@ The following checklist provides the general guidelines to help you prepare for 
    > [!NOTE]
    > If you don't have a sandbox copy of your production environment, you can [create a copy](copy-environment.md) in the Power Platform admin center. 
 
-3. Opt in to the early access updates from the Power Platform admin center to enable the new release wave in the sandbox environment. Check [Additional requirements to enable early access updates](#additional-requirements-to-enable-early-access-updates) if your apps require manual steps.   
+3. Opt in to the early access updates from the Power Platform admin center to enable the new release wave in the sandbox environment.    
 
 4. Validate that key scenarios work as expected in the sandbox environment after the update is completed. 
    - Update the customizations in your applications, if any, to leverage or respond to the new capabilities as needed. 
