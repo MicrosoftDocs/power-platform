@@ -95,7 +95,7 @@ Solutions have these features:
 
 -   They can contain many different Microsoft Power Platform components, such as model-driven
     apps, canvas apps, site maps, flows, entities, forms, custom connectors, web
-    resources, option sets, charts, and fields. Notice that not all entities can be included in a solution. For example, the account and contact entities aren't solution components.
+    resources, option sets, charts, and fields. Notice that not all entities can be included in a solution. For example, the Application User, Custom API, and Organization Setting system tables can't be added to a solution.
 
 -   They're packaged as a unit to be exported and imported to other environments, or
     deconstructed and checked into source control as source code for assets.
