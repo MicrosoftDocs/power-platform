@@ -16,13 +16,12 @@ With custom connectors, developers can capitalize on existing organization inves
 
 To enable Logic Apps, Power Automate, or Power Apps to communicate with the REST or SOAP API, use a custom connector, which is a wrapper around a REST API (Logic Apps also supports SOAP APIs). A high-level architecture of how custom connectors work is shown in the following image.
 
-<!--![Diagram of custom connector architecture.](./media/CustomConnectorArchitecture.png)-->
 :::image type="complex" source="./media/CustomConnectorArchitecture.png" alt-text="connector architecture - runtime flow":::
 The diagram shows Power Automate, Power Apps and Logic apps performing request via the Azure API Management service which in turns relays the requests directly to the Restful API endpoint. The Azure App Service environment is used in case  additional request/response transformations are needed or in case the Restful API is hosted on premises.
 :::image-end:::
 
 
-For detailed information, go to [Connectors overview](/connectors/connectors).
+For detailed information, see [Connectors overview](/connectors/connectors).
 
 As an example, Microsoft built a suite of employee engagement mobile apps that have been deployed worldwide to more than 100,000 employees. The apps are built on top of existing APIs deployed by IT.
 
