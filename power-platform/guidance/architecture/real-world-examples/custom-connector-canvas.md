@@ -3,8 +3,9 @@ title: "Using REST APIs via custom connectors with canvas apps in Power Apps  | 
 description: With custom connectors, developers can capitalize on existing investments in REST API services or create new APIs to expose complex server-side operations not available with out-of-the-box connectors.
 author: slaouist
 ms.service: power-platform
+ms.subservice: guidance
 ms.topic: conceptual
-ms.date: 06/20/2021
+ms.date: 08/10/2021
 ms.author: mehdis
 ms.reviewer: kvivek 
   

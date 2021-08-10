@@ -3,8 +3,9 @@ title: "Azure Functions extends canvas app functionality  | Microsoft Docs"
 description: Microsoft Power Platform enables you to extend the functionality of your app by using Azure Functions. Azure Functions are an ideal choice to move more complex functionality server-side.
 author: slaouist
 ms.service: power-platform
+ms.subservice: guidance
 ms.topic: conceptual
-ms.date: 06/20/2021
+ms.date: 08/10/2021
 ms.author: mehdis
 ms.reviewer: kvivek
   

@@ -3,6 +3,7 @@ title: "Using SQL Server with a canvas app through an on-premises data gateway |
 description: The on-premises data gateway acts as a bridge to provide secure data transfer between on-premises data and Power Apps. G&J Pepsi created a merchandise app that enables better mobility and flexibility for field personnel.
 author: slaouist
 ms.service: power-platform
+ms.subservice: guidance
 ms.topic: conceptual
 ms.date: 06/20/2021
 ms.author: mehdis

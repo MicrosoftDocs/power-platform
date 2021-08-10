@@ -3,8 +3,9 @@ title: "Power Apps real-world solution architectures  | Microsoft Docs"
 description: Several architectures implemented by real customers when building their Power Apps solutions. For each article, an overview of the features used in the solution is provided along with some advantages and gotchas.
 author: slaouist
 ms.service: power-platform
+ms.subservice: guidance
 ms.topic: conceptual
-ms.date: 06/20/2021
+ms.date: 08/10/2021
 ms.author: mehdis
 ms.reviewer: kvivek
   

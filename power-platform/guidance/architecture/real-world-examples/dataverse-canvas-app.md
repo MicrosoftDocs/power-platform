@@ -1,10 +1,11 @@
 ---
-title: "Using Microsoft Dataverse with a Power Apps canvas app  | Microsoft Docs"
-description: Overview of the CoE Starter Kit
+title: "Using Microsoft Dataverse with a canvas app in Power Apps  | Microsoft Docs"
+description: Information about using Dataverse with a canvas app in Power Apps
 author: slaouist
 ms.service: power-platform
+ms.subservice: guidance
 ms.topic: conceptual
-ms.date: 06/20/2021
+ms.date: 08/10/2021
 ms.author: mehdis
 ms.reviewer: kvivek 
   
