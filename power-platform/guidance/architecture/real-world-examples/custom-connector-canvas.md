@@ -25,7 +25,6 @@ For detailed information, see [Connectors overview](/connectors/connectors).
 
 As an example, Microsoft built a suite of employee engagement mobile apps that have been deployed worldwide to more than 100,000 employees. The apps are built on top of existing APIs deployed by IT.
 
-<!--![Diagram of Thrive apps architecture.](./media/Thrivearch.png)-->
 :::image type="complex" source="./media/Thrivearch.png" alt-text="Diagram of Thrive apps architecture.":::
  The diagram shows the suite of apps called the thrive apps. These apps are consuming data coming from many cloud based services: Power Apps RP, Flow Push Notification service, Enterprise Card System Stream, SharePoint Online, Application Insights, CRM Online, O365 Graph and MSIT Azure Subscription.
 :::image-end:::
