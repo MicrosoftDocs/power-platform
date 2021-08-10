@@ -6,7 +6,8 @@ manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/01/2021
+ms.date: 07/06/2021
+ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -56,7 +57,7 @@ Represents archival approval tasks started during the App Archive and Clean Up f
 | --- | --- | --- |
 |[Microsoft Teams Admin \|  Ask for Business Justification when Microsoft Teams environment is created](#microsoft-teams-admin--ask-for-business-justification-when-microsoft-teams-environment-is-created) | Automated |  when *Admin \| Sync Template v3* flow adds or modifies a record in the Environment table |
 | [Microsoft Teams Admin \|  Weekly Clean Up of Microsoft Teams environments](#microsoft-teams-admin--weekly-clean-up-of-microsoft-teams-environments) | Schedule | Weekly |
-| [Admin \| Setup - Ignored Archival Requests](#admin--setup--ignored-archival-requests) | Instant | Run Once |
+| [Admin \| Setup - Ignored Archival Requests](#admin--setup---ignored-archival-requests) | Instant | Run Once |
 | [Admin \| Archive and Clean Up v2 (Start Approval for Apps)](#admin--archive-and-clean-up-v2-start-approval-for-apps) | Schedule | Weekly |
 | [Admin \| Archive and Clean Up v2 (Start Approval for Flows)](#admin--archive-and-clean-up-v2-start-approval-for-flows) | Schedule | Weekly |
 | [Admin \| Archive and Clean Up v2 (Check Approval)](#admin--archive-and-clean-up-v2-check-approval) | Schedule | Daily |
@@ -66,11 +67,11 @@ Represents archival approval tasks started during the App Archive and Clean Up f
 
 This flow runs daily and checks whether new environments of type [Microsoft Teams](../../admin/about-teams-environment.md) have been created. Team owners who have created a Microsoft Teams environments receive an adaptive card via Teams that prompts them to provide a business justification.
 
-![Ask for Business Justification when Microsoft Teams environment is created](media/teams-1.png "Ask for Business Justification when Microsoft Teams environment is created")
+![Ask for Business Justification when Microsoft Teams environment is created.](media/teams-1.png "Ask for Business Justification when Microsoft Teams environment is created")
 
 Additionally, this flow also sends a welcome email to new team owners to provide them with further information about their environment. A link to the policy documentation you have set up as part of [configuring the CoE Settings](setup-core-components.md) is included in this email.
 
-![Welcome email](media/teams-3.png "Welcome email")
+![Welcome email.](media/teams-3.png "Welcome email")
 
 Save a copy of this flow if you want to change the wording in the emails or adaptive cards.
 
@@ -110,9 +111,11 @@ It recommends that the app owner take a backup of the app in the event that they
 
 This flow starts the approval process and writes the approval task to the Archive Approval Dataverse table.
 
-![Archive and Clean Up v2 (Start Approval for Apps) flow](media/coe58.png "Archive and Clean Up v2 (Start Approval for Apps) flow")
+![Archive and Clean Up v2 (Start Approval for Apps) flow.](media/coe58.png "Archive and Clean Up v2 (Start Approval for Apps) flow")
 
 **Customize**: By default, this flow will assign approvals to the app owner. In order to test in a debug environment, in which you do not want to involve users, you can update the [*ProductionEnvironment* environment variable](setup-governance-components.md#update-environment-variables) to **No**, and the approvals will be sent to the admin account instead.
+
+![Archive and Clean Up v2 - workflow for Apps.](media/archivalFlow-Apps.png)
 
 ### Admin \| Archive and Clean Up v2 (Start Approval for Flows)
 
@@ -123,6 +126,8 @@ It recommends that the flow owner take a backup of the app in the event that the
 This flow starts the approval process and writes the approval task to the Archive Approval Dataverse table.
 
 **Customize**: By default, this flow will assign approvals to the flow owner. In order to test in a debug environment, in which you do not want to involve users, you can update the [*ProductionEnvironment* environment variable](setup-governance-components.md#update-environment-variables) to **No**, and the approvals will be sent to the admin account instead.
+
+![Archive and Clean Up v2 - workflow for Flows.](media/archivalFlow-Flows.png)
 
 ### Admin \| Archive and Clean Up v2 (Check Approval)
 
@@ -174,10 +179,10 @@ Makers can achieve compliance by providing additional information through the **
 
 :::row:::
    :::column span="":::
-      ![Developer Compliance Center overview](media/coe56.png "Developer Compliance Center overview")
+      ![Developer Compliance Center overview.](media/coe56.png "Developer Compliance Center overview")
    :::column-end:::
    :::column span="":::
-      ![Developer Compliance Center app detail](media/coe57.png "Developer Compliance Center app detail")
+      ![Developer Compliance Center app detail.](media/coe57.png "Developer Compliance Center app detail")
    :::column-end:::
 :::row-end:::
 
@@ -200,10 +205,10 @@ This process helps the admin audit the app approval process by providing a visua
 
 :::row:::
    :::column span="":::
-      ![Power Apps App Approval BPF - Implementation](media/coe62.png "Power Apps App Approval BPF - Implementation")
+      ![Power Apps App Approval BPF - Implementation.](media/coe62.png "Power Apps App Approval BPF - Implementation")
    :::column-end:::
    :::column span="":::
-      ![Power Apps App Approval BPF - Validate Maker Requirements](media/coe63.png "Power Apps App Approval BPF - Validate Maker Requirements")
+      ![Power Apps App Approval BPF - Validate Maker Requirements.](media/coe63.png "Power Apps App Approval BPF - Validate Maker Requirements")
    :::column-end:::
 :::row-end:::
 
@@ -217,10 +222,10 @@ This process helps the admin audit the flow approval process by providing a visu
 
 :::row:::
    :::column span="":::
-      ![Flow Approval BPF - Implementation](media/bpf1.png "Flow Approval BPF - Implementation")
+      ![Flow Approval BPF - Implementation.](media/bpf1.png "Flow Approval BPF - Implementation")
    :::column-end:::
    :::column span="":::
-      ![Flow Approval BPF - Validate Maker Requirements](media/bpf2.png "Flow Approval BPF - Validate Maker Requirements")
+      ![Flow Approval BPF - Validate Maker Requirements.](media/bpf2.png "Flow Approval BPF - Validate Maker Requirements")
    :::column-end:::
 :::row-end:::
 
@@ -234,10 +239,10 @@ This process helps the admin audit the custom connector approval process by prov
 
 :::row:::
    :::column span="":::
-      ![Custom Connector Approval BPF - Implementation](media/bpf5.png "Custom Connector Approval BPF - Implementation")
+      ![Custom Connector Approval BPF - Implementation.](media/bpf5.png "Custom Connector Approval BPF - Implementation")
    :::column-end:::
    :::column span="":::
-      ![Custom Connector Approval BPF - Validate Maker Requirements](media/bpf4.png "Custom Connector Approval BPF - Validate Maker Requirements")
+      ![Custom Connector Approval BPF - Validate Maker Requirements.](media/bpf4.png "Custom Connector Approval BPF - Validate Maker Requirements")
    :::column-end:::
 :::row-end:::
 
@@ -251,10 +256,10 @@ This process helps the admin audit the chatbot approval process by providing a v
 
 :::row:::
    :::column span="":::
-      ![Chatbot Approval BPF - Implementation](media/bpf7.png "Chatbot Approval BPF - Implementation")
+      ![Chatbot Approval BPF - Implementation.](media/bpf7.png "Chatbot Approval BPF - Implementation")
    :::column-end:::
    :::column span="":::
-      ![Chatbot Approval BPF - Validate Maker Requirements](media/bpf6.png "Chatbot Approval BPF - Validate Maker Requirements")
+      ![Chatbot Approval BPF - Validate Maker Requirements.](media/bpf6.png "Chatbot Approval BPF - Validate Maker Requirements")
    :::column-end:::
 :::row-end:::
 

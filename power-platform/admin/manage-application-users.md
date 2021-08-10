@@ -2,6 +2,7 @@
 title: "Manage application users in the Power Platform admin center  | MicrosoftDocs"
 description: How to manage application users from the Power Platform admin center  
 author: paulliew
+ms.subservice: admin
 ms.author: paulliew
 ms.reviewer: jimholtz
 ms.service: power-platform
@@ -18,7 +19,7 @@ search.app:
 ---
 # Manage application users in the Power Platform admin center
 
-We're in the process of moving application user management from the legacy web client, as documented in [Enable or disable application users](create-users-assign-online-security-roles.md#enable-or-disable-user-accounts). Follow these steps to manage application users in the Power Platform admin center.
+We're in the process of moving application user management from the legacy web client, as documented in [Enable or disable application users](create-users.md#enable-or-disable-user-accounts). Follow these steps to manage application users in the Power Platform admin center.
 
 > [!NOTE]
 > At present, deleting an application user isn't supported.
@@ -35,7 +36,7 @@ On the **Application users** page, you can view and manage application users. Th
 
 4. Select **Users + permissions**, and then select **Application users**.
 
-:::image type="content" source="media/manage-application-user.png" alt-text="Manage application users":::
+:::image type="content" source="media/manage-application-user.png" alt-text="Manage application users.":::
 
 ## Create an application user 
 
@@ -53,19 +54,19 @@ In an environment, you can only have one application user for each Azure AD&ndas
 
 5. Select **+ New app user** to open the **Create a new app user** page.
 
-   :::image type="content" source="media/create-new-app-user.png" alt-text="Create a new application user":::
+   :::image type="content" source="media/create-new-app-user.png" alt-text="Create a new application user.":::
 
 6. Select **+ add an app** to choose the registered Azure AD application that was created for the selected user, and then select **Add**. 
 
-   :::image type="content" source="media/add-app-from-azure-ad.png" alt-text="Add an application from Azure AD":::
+   :::image type="content" source="media/add-app-from-azure-ad.png" alt-text="Add an application from Azure AD.":::
 
-7. The selected Azure AD app is displayed under **App**. You can select **Edit** (![Edit](media/edit-button.png)) to choose another Azure AD application. Under **Business Unit**, select a business unit from the dropdown list.  
+7. The selected Azure AD app is displayed under **App**. You can select **Edit** (![Edit.](media/edit-button.png)) to choose another Azure AD application. Under **Business Unit**, select a business unit from the dropdown list.  
 
-   :::image type="content" source="media/create-new-app-user-business-unit.png" alt-text="Select a business unit":::
+   :::image type="content" source="media/create-new-app-user-business-unit.png" alt-text="Select a business unit.":::
 
-8. After choosing a business unit, you can select ![Edit](media/edit-button.png) for **Security roles** to choose security roles for the chosen business unit to add to the new application user. After adding security roles, select **Save**.
+8. After choosing a business unit, you can select ![Edit.](media/edit-button.png) for **Security roles** to choose security roles for the chosen business unit to add to the new application user. After adding security roles, select **Save**.
 
-   :::image type="content" source="media/create-new-app-user-security-roles.png" alt-text="Add security roles to the new application user":::
+   :::image type="content" source="media/create-new-app-user-security-roles.png" alt-text="Add security roles to the new application user.":::
 
 9. Select **Create**.
 
@@ -81,7 +82,7 @@ In an environment, you can only have one application user for each Azure AD&ndas
 
 5. Select an application user, and then select **Details**.
 
-   :::image type="content" source="media/application-user-details.png" alt-text="Select application user details":::
+   :::image type="content" source="media/application-user-details.png" alt-text="Select application user details.":::
 
 The **Details** page shows the following properties for the application user: 
 
@@ -95,7 +96,7 @@ The **Details** page shows the following properties for the application user:
  
 The business unit, email address, and security roles can be edited.
 
-:::image type="content" source="media/application-user-details-page.png" alt-text="The application user details page":::
+:::image type="content" source="media/application-user-details-page.png" alt-text="The application user details page.":::
 
 ## Sync the application user name with the Azure AD application name  
 
@@ -104,7 +105,7 @@ When an application user is first created, the username is the same as the name 
 > [!NOTE]
 > **Refresh** and the Azure AD app name are only shown when the two names are out of sync. 
 
-:::image type="content" source="media/sync-app-user-name-azure-ad-app-name.png" alt-text="Sync the application user name with the Azure AD application name":::
+:::image type="content" source="media/sync-app-user-name-azure-ad-app-name.png" alt-text="Sync the application user name with the Azure AD application name.":::
 
 ## Manage roles for an application user 
 
@@ -112,7 +113,7 @@ In addition to using the entry point on the **Details** page<!--note from editor
 
 You can select or deselect roles, and then select **Save**.  All selected roles will become the current assigned roles for the application user. Any unselected roles won't be assigned.
 
-:::image type="content" source="media/application-user-edit-security-roles.png" alt-text="Editing security roles for an application user":::
+:::image type="content" source="media/application-user-edit-security-roles.png" alt-text="Editing security roles for an application user.":::
 
 ## Activate or deactivate an application user 
 
@@ -120,6 +121,6 @@ You can select or deselect roles, and then select **Save**.  All selected roles 
 
   - To activate an application user, select **Activate** on the menu bar, and then select **Activate** in the confirmation dialog.  
 
-   :::image type="content" source="media/activate-application-user.png" alt-text="Activate an application user"::: 
+   :::image type="content" source="media/activate-application-user.png" alt-text="Activate an application user."::: 
 
   - To deactivate an application user, select **Deactivate** on the menu bar, and then select **Deactivate** in the confirmation dialog.  

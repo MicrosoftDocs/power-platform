@@ -6,6 +6,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 08/26/2020
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -56,7 +57,7 @@ Get-AdminPowerAppEnvironment -Environment 'EnvironmentName'.
 This returns the following:
 
 > [!div class="mx-imgBorder"] 
-> ![User PowerShell to get environment details](media/powershell-get-environment-details.png "User PowerShell to get environment details")
+> ![User PowerShell to get environment details.](media/powershell-get-environment-details.png "User PowerShell to get environment details")
 
 
 This example returns a list of connections in an environment, including all the connections in a tenant's default environment.
@@ -74,7 +75,7 @@ This example pipes output from one cmdlet to another. It presents a list of numb
 That would produce the following detailed information:
 
 > [!div class="mx-imgBorder"] 
-> ![User PowerShell to get environment app number details](media/powershell-get-environment-details-number-apps.png "User PowerShell to get environment app number details")
+> ![User PowerShell to get environment app number details.](media/powershell-get-environment-details-number-apps.png "User PowerShell to get environment app number details")
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.custom: 
 ms.topic: article
 author: "NHelgren"
+ms.subservice: admin
 ms.author: nhelgren
 manager: kvivek
 ms.reviewer: matp

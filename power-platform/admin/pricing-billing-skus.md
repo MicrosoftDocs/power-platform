@@ -6,7 +6,8 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.custom: intro-internal
-ms.date: 02/01/2021
+ms.date: 06/16/2021
+ms.subservice: admin
 ms.author: dileeps
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -58,7 +59,7 @@ Here is a brief overview of capabilities included with Power Apps for Microsoft 
 As Dataverse continues to grow, more Microsoft applications like Microsoft Project are using Dataverse. To enable these Microsoft applications, limited Dataverse functionality is added to select Microsoft 365 licenses. This is achieved by adding a new service plan named "Dataverse" to the Microsoft 365 licenses. To see the new service plan in the Microsoft 365 admin center, select a user, select the **Licenses and Apps** tab, and then scroll down and expand the **Apps** section. 
 
 > [!div class="mx-imgBorder"] 
-> ![Dataverse license](./media/common-data-service-license.png "Dataverse license")
+> ![Dataverse license.](./media/common-data-service-license.png "Dataverse license")
 
 ### Capabilities included 
 
@@ -99,9 +100,9 @@ Users who have any Microsoft Power Platform or Dynamics 365 license are always s
 - If you're an existing customer and a user with this license who comes directly to Dataverse, you might get an error message that states "You are not a member of the organization." We're addressing this problem in the coming weeks.
 - We currently sync some of these Microsoft Dataverse licensed users to all Dataverse environments. We're addressing this right now. Currently, these users won't be able to open Power Apps for Microsoft 365 with this license.
 
-## Community Plan
+## Developer Plan
 
-If you want to build skills and learn more about Power Apps, Power Automate, and Dataverse, the Power Apps Community Plan is the right plan for you. The Power Apps Community Plan gives you a free development environment for individual use to learn with full functionality of Power Apps. More information: [Power Apps Community Plan](https://powerapps.microsoft.com/communityplan/).
+If you want to build skills and learn more about Power Apps, Power Automate, and Dataverse, the Power Apps Developer Plan is the right plan for you. The Power Apps Developer Plan gives you a free development environment for individual use to learn with full functionality of Power Apps. More information: [Power Apps Developer Plan](https://powerapps.microsoft.com/communityplan/).
 
 ## Power Apps and Power Automate for Dynamics 365
 

@@ -5,7 +5,8 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/27/2021
+ms.date: 07/13/2021
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -24,6 +25,9 @@ Relevance Search delivers fast and comprehensive search results in a single list
 Relevance Search is available in addition to single-entity Quick Find on the entity grid, and as an alternative to multi-entity Quick Find (also called Categorized Search), which is accessible from the navigation bar.
 
 Changes made to the Relevance Search configuration or to the searchable data may take up to 15 minutes to appear in the search service. It may take up to an hour or more to complete a full sync for average size organizations, and a couple of days for very large size organizations.
+
+> [!NOTE]
+> We're updating some terminology in Dataverse to be more intuitive and make its usage more productive. The terminology updates are listed in [Terminology Updates](/powerapps/maker/data-platform/data-platform-intro#terminology-updates). We will make these changes as we update the user interface.
 
 ## What is Relevance Search?
 
@@ -51,7 +55,9 @@ All searchable fields in Relevance Search  are processed in the language most cl
 
 ## Enable Relevance Search
 
-Relevance Search is an opt-in feature, set to off by default. Enabling Relevance Search makes this search option available to all members of your organization. Relevance Search does not support lifecycle operations (create, delete, backup, recover, copy, reset, and so on). In the event of such an operation, re-enable Relevance Search.
+Relevance Search is an opt-in feature, set to **Off** by default. Enabling Relevance Search makes this search option available to all members of your organization. All of your apps will have the global search experience with the search bar in the header for all model-driven apps in your environment. Individual users won't be able to switch to [categorized search](/powerapps-docs/user/quick-find.md).
+
+Relevance Search doesn't support lifecycle operations (create, delete, backup, recover, copy, reset, and so on). In the event of such an operation, re-enable Relevance Search.
 
 To enable Relevance Search, do the following:
 
@@ -63,41 +69,11 @@ To enable Relevance Search, do the following:
 
 4.	Select **Save**.
 
-## Enable the new Relevance Search experience
-
-The new search experience is available as a feature setting in the Power Platform admin Center. It combines the strength of Relevance Search as a service, with a user interface that is intuitive, familiar, and easy to use. When the Use new search experience setting is turned on, it will enable the new experience to all the apps in the environment.
-
-> [!NOTE]
-> The **Use new search experience feature** setting is only available for environments where Relevance Search is already turned on. For environments where Relevance Search has never been not turned on, the setting **Use new search experience** will not be shown and the new experience is turned on by default.
-> 
-> If you opt in to early access for 2021 Release Wave 1 updates and Relevance Search is enabled then the new Relevance Search experience is turned on for all users. Users won't have the option to use categorized search anymore. For more information, see [Opt in to early access updates](opt-in-early-access-updates.md).
-
-To enable the new Relevance Search experience:
-
-1.	In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.
-
-2.	Select **Settings** > **Product** > **Features**.
-
-3.	Under **Search**, set **Use new search experience** to **On**.
-
-   > [!div class="mx-imgBorder"] 
-   > ![New Relevance Search experience](media/admin-enable-search.jpg "New Relevance Search experience")
-
-4.	Select **Save**.
-
-For information on using the new Relevance Search experience, see [Use the new Relevance Search experience](/powerapps/user/relevance-search#use-the-new-relevance-search-experience).
-
-> [!TIP]
-> We are addressing an issue that makes the feature **Use new search experience** not show up in environments that were created from another environment as a copy. Please try the following steps to mitigate the issue.
-> 
-> 1. Turn **Relevance Search** off.
-> 2. Wait approximately 5 to 10 minutes.
-> 3. Turn **Relevance Search** on. 
 
 ## Select entities for Relevance Search 
  To configure Relevance Search, use the **Configure Relevance Search** selection on the task bar, as shown here.  
 
- ![Configure Relevance Search](../admin/media/relevance-search-configure-search.png "Configure Relevance Search")  
+ ![Configure Relevance Search.](../admin/media/relevance-search-configure-search.png "Configure Relevance Search")  
 
  There is no limit on how many entities you can include in the Relevance Search results. However, there is a limit on the total number of fields that can be enabled in Relevance Search. The maximum is 1000 searchable fields for an organization. Out of these 1000 fields, up to 50 fields are required by the Relevance Search system, so you can configure up to 950 searchable fields in Relevance Search. When you select an entity to include in the search results, you'll notice a number in parentheses next to the entity name. The number indicates how many fields each entity uses in the Relevance Search index. Some fields, such as **Primary Name** and **ID**, are shared by multiple entities and don't count toward the total. Additionally, some field types use more than one field in the Relevance Search index as indicated in this table.  
 
@@ -121,7 +97,7 @@ For information on using the new Relevance Search experience, see [Use the new R
 
 4. The **Select Entities** dialog box opens. Select **Add** to select the entities for the search results. When you're done, select **OK**.  
 
-   ![Relevance Search entity selection](../admin/media/relevance-search-select-entities.png "Relevance Search entity selection")  
+   ![Relevance Search entity selection.](../admin/media/relevance-search-select-entities.png "Relevance Search entity selection")  
 
 5. Select **Publish All Customizations** for your changes to take effect.  
 
@@ -143,6 +119,8 @@ By default, some out-of-the-box system entities are included in Relevance Search
 > 4. statuscode (Label of optionset)
 > 5. name (Primary name field of any entity. This may or may not be the same as the logical name (fullname, subject etc.) of the entity)
 > If a common field is added to any entity for Relevance Search, search will be performed for that common field across all entities. However, once you choose a specific entity through the Record Type facet, Relevance Search will follow the settings you have defined for that specific entity through Quick Find View.
+>
+> Updates to calculated fields and lookups are not automatically synced in Relevance Search. Data is refreshed whenever a field that is configured for Relevance Search is updated in a record.
 
  You can use the **Quick Find** view to define which fields appear as facets when users search by using Relevance Search.  All **View Columns** with data types other than Single Line of Text and Multiple Lines of Text are marked as facetable and filterable in the index. By default, the first four facetable fields in the **Quick Find** view for the selected entity are displayed as facets when users search by using Relevance Search. At any time, you can only have four fields selected as facets.  
 
@@ -154,11 +132,11 @@ By default, some out-of-the-box system entities are included in Relevance Search
 
 4. In the navigation tree, click **View**. In the **Type** column, double-click **Quick Find View**. The following illustration shows the **Quick Find** view for the `Account` entity.  
 
-   ![Quick Find view](../admin/media/relevance-search-quick-find-view-screen.png "Quick Find view")  
+   ![Quick Find view.](../admin/media/relevance-search-quick-find-view-screen.png "Quick Find view")  
 
 5. Select **Add Find Columns**. In the dialog box, select the fields you want to add to the search index. When done, select **OK**. In the following illustration, you see the                  `Account` entity fields added to the Relevance Search index.  
 
-   ![Quick Find field selection](../admin/media/relevance-search-quick-find-add-find-fields.png "Quick Find field selection")  
+   ![Quick Find field selection.](../admin/media/relevance-search-quick-find-add-find-fields.png "Quick Find field selection")  
 
 6. Repeat the steps for the **View Columns**.  
 
@@ -206,7 +184,7 @@ By default, some out-of-the-box system entities are included in Relevance Search
 
 4. On the menu bar, select **Managed Properties**. For **Can enable sync to external search index**, select **True** or **False** to set the property to the desired state. Select **Set** to exit, as shown here.  
 
-   ![Entity managed properties](../admin/media/relevance-search-managed-properties.PNG "Entity managed properties")  
+   ![Entity managed properties.](../admin/media/relevance-search-managed-properties.PNG "Entity managed properties")  
 
 5. Select **Publish** for your changes to take effect.  
 
@@ -273,12 +251,12 @@ Your organization’s queries and results are reviewed by people using secured c
 3. Under **Search**, set **Improve Relevance Search results** to **On**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Improve Relevance Search results](media/improve-relevance-search-results.png "Improve Relevance Search results")
+   > ![Improve Relevance Search results.](media/improve-relevance-search-results.png "Improve Relevance Search results")
 
 4.	Select **Save**.
 
 ### See also  
  [Use relevance search to search for records](/powerapps/user/relevance-search) <br />
- [Use the new Relevance Search experience](/powerapps/user/relevance-search#use-the-new-relevance-search-experience)
+ 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

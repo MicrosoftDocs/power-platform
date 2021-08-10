@@ -6,7 +6,8 @@ manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/10/2020
+ms.date: 07/06/2021
+ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -41,7 +42,7 @@ Using these steps, you'll set up an Azure AD app registration that will be used 
 
 1. Go to **Azure Active Directory** > **App registrations**.
 
-   ![Azure AD app registration](media/coe33.png "Azure AD app registration")
+   ![Azure AD app registration.](media/coe33.png "Azure AD app registration")
 
 1. Select **+ New Registration**.
 
@@ -49,17 +50,17 @@ Using these steps, you'll set up an Azure AD app registration that will be used 
 
 1. Select **API Permissions** > **+ Add a permission**.
 
-   ![API Permissions - Add a permission](media/coe34.png "Add a permission")
+   ![API Permissions - Add a permission.](media/coe34.png "Add a permission")
 
 1. Select **Office 365 Management API**, and configure permissions as follows:
 
    1. Select **Delegated permissions**, and then select **ActivityFeed.Read**.
 
-      ![Delegated permissions](media/coe36.png "Delegated permissions")
+      ![Delegated permissions.](media/coe36.png "Delegated permissions")
 
    1. Select **Application permissions**, and then select **ActivityFeed.Read** and **ServiceHealth.Read**.
 
-      ![Application permissions](media/coe37.png "Application permissions")
+      ![Application permissions.](media/coe37.png "Application permissions")
 
    1. Select **Add permissions**.
 
@@ -67,13 +68,13 @@ Using these steps, you'll set up an Azure AD app registration that will be used 
 
    The API permissions now reflect delegated **ActivityFeed.Read**, and application **ActivityFeed.Read** and **ServiceHealth.Read** permissions, with a status of **Granted for _(your organization)_**.
 
-   ![API permissions](media/coe38.png "API permissions")
+   ![API permissions.](media/coe38.png "API permissions")
 
 1. Select **Certificates and secrets**.
 
 1. Select **+ New client secret**.
 
-   ![New client secret](media/coe39.png "New client secret")
+   ![New client secret.](media/coe39.png "New client secret")
 
 1. Add a description and expiration (in line with your organization's policies), and then select **Add**.
 
@@ -90,7 +91,7 @@ Now you'll configure and set up a custom connector that uses the [Office 365 Man
 1. Go to [make.powerapps.com](https://make.powerapps.com) > **Data** > **Custom Connectors**. The Office 365 Management API custom connector will be listed here; it has been imported with the core components solution.
 1. Select **Edit**.
 
-  ![Custom connector setup](media/coe-custom1.png "Custom connector setup")
+  ![Custom connector setup.](media/coe-custom1.png "Custom connector setup")
 
 1. Leave the **1. General** page as-is, and then select **2. Security**.
     
@@ -101,7 +102,7 @@ Now you'll configure and set up a custom connector that uses the [Office 365 Man
 
 1. Select **Edit** at the bottom of the **OAuth 2.0** area to edit the authentication parameters.
 
-   ![Edit OAuth configuration](media/coe42.png "Edit OAuth configuration")
+   ![Edit OAuth configuration.](media/coe42.png "Edit OAuth configuration")
 
 1. Paste the application (client) ID you copied from the app registration into **Client Id**.
 
@@ -143,15 +144,15 @@ Go back to the custom connector to set up a connection to the custom connector a
 
 1. Under **Operations**, select **StartSubscription**.
 
-   ![Custom connector Start Subscription](media/coe43.png "Custom connector Start Subscription")
+   ![Custom connector Start Subscription.](media/coe43.png "Custom connector Start Subscription")
 
-1. Paste the **directory (tenant) ID**&mdash;copied earlier from the **App Registration** overview page in Azure AD&mdash;into the **Tenant** field, and then paste the **application (client) ID** into **PublisherIdentifier**. 
+1. Paste the **directory (tenant) ID**&mdash;copied earlier from the **App Registration** overview page in Azure AD&mdash;into the **Tenant** field, and then paste the **application (client) ID** into **PublisherIdentifier**.
 
 1. Select **Test Operation**.
 
 You should see a (200) status returned, which means the query was successful.
 
-![Successful status being returned from the StartSubscription activity](media/coe44.png "Successful status being returned from the StartSubscription activity")
+![Successful status being returned from the StartSubscription activity.](media/coe44.png "Successful status being returned from the StartSubscription activity")
 
 > [!IMPORTANT]
 > If you don't see a (200) response, the request has failed. There's an error with your setup that's keeping the flow from working. Common issues to check are: 
@@ -172,32 +173,35 @@ A Power Automate flow uses the custom connector, queries the audit log daily, an
 1. Go to [make.powerapps.com](https://make.powerapps.com).
 1. Import the Center of Excellence audit logs solution (CenterofExcellenceAuditLogs_*x_x_x_xxx*_managed.zip).
 1. Establish connections to activate your solution. If you create a new connection, you must select **Refresh**. You won't lose your import progress.
-    ![Import the CoE audit log components solution](media/coe-custom2.png "Import the CoE audit log components solution")
+    ![Import the CoE audit log components solution.](media/coe-custom2.png "Import the CoE audit log components solution")
 
 1. Paste in the ID you copied for directory (tenant) ID for the *Tenant ID*.
-    ![Set environment variables for the CoE audit log components solution](media/coe-custom3.png "Set environment variables for the CoE audit log components solution")
+    ![Set environment variables for the CoE audit log components solution.](media/coe-custom3.png "Set environment variables for the CoE audit log components solution")
 
-
-1. Open the **Center of Excellence – Audit Log solution**, and select **Admin \| \[Child\] Admin | Sync Logs**. 
+1. Open the **Center of Excellence – Audit Log solution**, and select **Admin \| \[Child\] Admin | Sync Logs**.
 
 1. Edit the **Run only users** settings.
 
-   ![Child flow - run only users](media/coe49.png "Child flow - run only users")
+   ![Child flow - run only users.](media/coe49.png "Child flow - run only users")
 
-1. For both connections (the custom connector and Dataverse), change the value to **Use this connection (userPrincipalName\@company.com)**. If there is no connection for any of the connectors, go to **Data** > **Connections**, and create one for the connector.
+1. For the custom connector, Dataverse and Office 365 Outlook, change the value to **Use this connection (userPrincipalName\@company.com)**. If there is no connection for any of the connectors, go to **Data** > **Connections**, and create one for the connector.
 
-   ![Configure run only users](media/coe50.png "Configure run only users")
+   ![Configure run only users.](media/coe50.png "Configure run only users")
 
 1. Select **Save**, and then close the **Flow details** tab.
 
-1. (Optional) Edit the Admin | Sync Audit Logs flow to update the time interval at which the log clusters should be retrieved. The default is set to one-day intervals (from the options of Month, Week, Day, Hour, Minute, or Second).
+1. (Optional) Edit the TimeInterval-Unit and TimeInterval-Interval environment variables to gather smaller chunks of time. The default value is to chunk 1 day into 1 hour segments. You will receive an alert from this solution if the Audit Log fails to collect all data with your configured time interval.
 
-1. (Optional) Edit the Admin | Sync Audit Logs flow to update the start time and end time during which the logs will be read. The maximum is seven days in the past, and the end time must be after the start time. Use a positive number in the interval field.
+    | Name | Description |
+    |------|---------------|
+    |TimeInterval-Unit | Determines units for chunking the time since start. <br>Must be a value from accepted as an input parameter to [Add to Time](/power-automate/desktop-flows/actions-reference/datetime#add). <br>Default value: Hour |
+    |TimeInterval-Interval | Must be a whole number to represent the number of chunks of type unit (above).<br> Default value: 1 (for 1 hour chunks) |
 
-   ![Update the start time and end time during which the logs will be read](media/coe48.png "Update the start time and end time during which the logs will be read")
+    > [!IMPORTANT]
+    > Learn how to about environment variables: [Update Environment Variables](limitations.md#updating-environment-variables)
 
 1. Back in the solution, turn on both the \[Child\] Admin | Sync Logs flow and the Admin | Sync Audit Logs flow.
 
-   ![Turn audit log flows on](media/coe-custom4.PNG "Turn audit log flows on")
+   ![Turn audit log flows on.](media/coe-custom4.PNG "Turn audit log flows on")
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

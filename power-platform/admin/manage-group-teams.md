@@ -1,12 +1,14 @@
 ---
 title: "Manage group teams  | MicrosoftDocs"
 description: About managing group teams 
-author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/17/2021
-ms.author: jimholtz
+ms.date: 06/28/2021
+author: paulliew
+ms.subservice: admin
+ms.author: paulliew
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
@@ -82,7 +84,7 @@ For more information, see [Assign a record to a user or team](/powerapps/user/as
    2. Obtain the Azure AD Group's **ObjectID** from your https://portal.azure.com site.
    3. Create a custom security role that contains privileges per your team's collaboration requirement. Please see the discussion of [member's inherited privileges](security-roles-privileges.md#team-members-privilege-inheritance) if you need to extend the team member's privileges directly to a user.
 
-2. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+2. In the web app, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
 
 3. Select **Settings** > **Security**. In Microsoft Dynamics 365 for Outlook, go to **Settings** > **System** > **Security**.
 
@@ -123,7 +125,7 @@ For more information, see [Assign a record to a user or team](/powerapps/user/as
    - Follow the steps in [View your user profile](/powerapps/user/view-your-user-profile).
    - Don't have the correct permissions? Contact your system administrator.
 
-2. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+2. In the web app, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
 
 3. Select **Settings** > **Security**. In Dynamics 365 for Outlook, go to **Settings** > **System** > **Security**.
 
@@ -140,7 +142,7 @@ For more information, see [Assign a record to a user or team](/powerapps/user/as
 > - Membership Type cannot be changed after the group team is created.  If you need to update this field, you will need to delete the group team and create a new one.
 > - All existing group teams created prior to the new **Membership Type** field being added are automatically updated as **Members and guests**. There is no loss in functionality with these group teams as the default group team is mapped to the Azure AD Group **Members and guests** membership type. 
 > - If your environment has a security group, you will need to add the group team's Azure AD group as a member of that security group in order for the group team's users to be able to access the environment.
-> - **The list of team members listed in each group team only displays the user members who have accessed the environment.** This list doesn't show all the group members of the Azure AD group. The team member's privileges are derived dynamically at run-time when the team member accesses the application. The security role of the team is not assigned directly to the team member. Since team member's privileges are derived dynamically at run-time, the team member's Azure AD group memberships are cached upon the team member's log-in.  This means that any Azure AD group membership maintenance done on the team member in Azure AD will not be reflected until the next time the team member logs in or when the system refreshes the cache (after 8 hours of continuous log-in).
+> - **The list of team members listed in each group team only displays the user members who have accessed the environment.** This list doesn't show all the group members of the Azure AD group. When an Azure AD group member accesses the environment, the group member is added to the group team. The team member's privileges are derived dynamically at run-time by inheriting the group team's security role. Since the security role is assigned to the group team and the group team member inherits the privileges, the security role is not assigned directly to the group team member. Due to the team member's privileges being derived dynamically at run-time, the team member's Azure AD group memberships are cached upon the team member's log-in.  This means that any Azure AD group membership maintenance done on the team member in Azure AD will not be reflected until the next time the team member logs in or when the system refreshes the cache (after 8 hours of continuous log-in).
 > - **Azure AD group members are also added to the group team with [impersonation calls](/powerapps/developer/common-data-service/impersonate-another-user)**. You can use create group members in the group team on behalf of another user using impersonation. 
 > - Team members are maintained in each group team at run-time and the operation is done at the database level; therefore, the update to group team event is not available for plugin.
 > - You do not need to assign team members with an individual security role if your group team's security role has a [member's privilege inheritance](security-roles-privileges.md#team-members-privilege-inheritance) and the security role contains at least one privilege that has User level permission.

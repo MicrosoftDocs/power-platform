@@ -13,6 +13,7 @@ applies_to:
 author: "jimholtz"
 ms.assetid: 
 caps.latest.revision: 63
+ms.subservice: admin
 ms.author: "jimholtz"
 search.audienceType: 
   - admin
@@ -30,14 +31,14 @@ The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service,
 ## Uses for multiple environments  
  Environments are similar in concept to a high-rise business complex with floors organized according to business functions. Consider each floor within the building as an application (Sales/Service/Marketing, Vendor management, Wealth management) and consider each unit within a floor as an environment for a specific purpose such as production, Training, Testing, and Development.  
   
- ![Multiple environments as units in a building](../admin/media/multi-tenant-3.png "Multiple environments as units in a building")  
+ ![Multiple environments as units in a building.](../admin/media/multi-tenant-3.png "Multiple environments as units in a building")  
   
  Multiple environments are needed when segregation is required of plugins, workflows, or admin resources that cannot be easily isolated by using business units.  
   
 ## A multi-environment deployment  
  A typical deployment includes one tenant only. A tenant can include one or more environments; however, an environment is always associated with a single tenant.  
   
- ![Single tenant deployment](../admin/media/multi-tenant-1b.png "Single tenant deployment")  
+ ![Single tenant deployment.](../admin/media/multi-tenant-1b.png "Single tenant deployment")  
   
  This example uses two environments for three teams: Sales, Marketing, and Services.  
   
@@ -90,7 +91,7 @@ The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service,
 ## A multi-tenant deployment  
  Global businesses with regional or country models that differ can use tenants to account for variations in approach, market size, or compliance with legal and regulatory constraints.  
   
- ![Multi-tenant deployment](../admin/media/multi-tenant-2.png "Multi-tenant deployment")  
+ ![Multi-tenant deployment.](../admin/media/multi-tenant-2.png "Multi-tenant deployment")  
   
  This example includes a second tenant for Contoso Japan.  
   

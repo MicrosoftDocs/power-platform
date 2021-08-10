@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/10/2020
+ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -55,15 +56,15 @@ The Theme Editor app allows designers to create and manage themes. A theme conta
 
 Theme Editor provides an overview of existing themes, and users can edit a theme or create a new one.
 
-![Theme Editor](media/theming-4.png "Theme Editor")
+![Theme Editor.](media/theming-4.png "Theme Editor")
 
 Use the styles (color picker, font picker) to create the style and see a real-time preview of the theme as you're editing various colors, fonts, and sizes.
 
-![Theme Editor - Create a theme](media/theming-5.png "Theme Editor - Create a theme")
+![Theme Editor - Create a theme.](media/theming-5.png "Theme Editor - Create a theme")
 
 After you've finished authoring the theme, select **Publish Theme**. Here, theme designers will need to update the AppTemplatePhone.msapp and AppTemplateTablet.msapp files, and upload them. This step ensures that the app template will be ready to be used by makers.
 
-![Theme Editor - Publish a theme](media/theming-6.png "Theme Editor - Publish a theme")
+![Theme Editor - Publish a theme.](media/theming-6.png "Theme Editor - Publish a theme")
 
 #### Update .msapp files
 
@@ -72,19 +73,19 @@ After you've finished authoring the theme, select **Publish Theme**. Here, theme
 1. On the left pane, select **Solutions**.
 1. Select the Center of Excellence theming solution.
 1. Edit the **AppTemplatePhone** canvas app.
-    ![Theme Editor - Edit App Template](media/theming-7.png "Theme Editor - Edit App Template")
+    ![Theme Editor - Edit App Template.](media/theming-7.png "Theme Editor - Edit App Template")
 1. Select **App** > **OnStart**, and replace the first line in the formula with the new formula you copied from Theme Editor. Make sure you don't replace any other formulas in the **OnStart** function and that the line ends with a semicolon.
-    ![Theme Editor - Insert OnStart formula](media/theming-8.png "Theme Editor - Insert OnStart formula")
+    ![Theme Editor - Insert OnStart formula.](media/theming-8.png "Theme Editor - Insert OnStart formula")
 1. Select **File** > **Save as** > **This Computer** to save the file locally.
-    ![Theme Editor - Save Template](media/theming-9.png "Theme Editor - Save Template")
+    ![Theme Editor - Save Template.](media/theming-9.png "Theme Editor - Save Template")
 1. Download the file.
-  ![Theme Editor - Download Template](media/theming-10.png "Theme Editor - Download Template")
+  ![Theme Editor - Download Template.](media/theming-10.png "Theme Editor - Download Template")
 
 Complete the same steps for the AppTemplateTablet canvas app.
 
 Go back to the Theme Editor app, and upload the template files you just downloaded.
 
-![Theme Editor - Publish App Theme](media/theming-11.png "Theme Editor - Publish App Theme")
+![Theme Editor - Publish App Theme.](media/theming-11.png "Theme Editor - Publish App Theme")
 
 Select **Complete** to publish the theme to the Theme Gallery app.
 
@@ -98,15 +99,15 @@ The Theme Gallery app can be used by app makers to browse existing themes and do
 
 Makers can get an overview and browse available themes
 
-![Theme Gallery - View Themes](media/theming-14.png "Theme Gallery - View Themes")
+![Theme Gallery - View Themes.](media/theming-14.png "Theme Gallery - View Themes")
 
 The detail view of the theme provides a preview with all styles applied to native controls and components.
 
-![Theme Gallery - Detail View](media/theming-12.png "Theme Gallery - Detail View")
+![Theme Gallery - Detail View.](media/theming-12.png "Theme Gallery - Detail View")
 
 App makers can download the template corresponding to the layout they choose.
 
-![Theme Gallery - Download](media/theming-13.png "Theme Gallery - Download")
+![Theme Gallery - Download.](media/theming-13.png "Theme Gallery - Download")
 
 #### Use the template
 
@@ -115,9 +116,9 @@ Create a new app based on the template.
 1. Go to [make.powerapps.com](<https://make.powerapps.com>).
 1. Select **New** > **Canvas App**.
 1. Select **Open** > **Browse Files**, and then select the template file downloaded from the theme gallery.
-    ![Create an app based on a theme](media/theming-15.png "Create an app based on a theme")
+    ![Create an app based on a theme.](media/theming-15.png "Create an app based on a theme")
 1. After it's opened, the theme will automatically be applied to controls or components that you add to the screen.
-    ![New app with theme](media/theming-16.png "New app with theme")
+    ![New app with theme.](media/theming-16.png "New app with theme")
 
 ## Components
 
@@ -131,7 +132,7 @@ The shared component library in the theming component solution contains a Header
 
 For a component to also use the theme, makers will need to update the **Style** property and set it to **ComponentStyles**. **ComponentStyles** is a collection of styles specially formatted for components and is initialized as part of the app start code.
 
-![Update the ComponentStyles property](media/theming-17.png "Update the ComponentStyles property")
+![Update the ComponentStyles property.](media/theming-17.png "Update the ComponentStyles property")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

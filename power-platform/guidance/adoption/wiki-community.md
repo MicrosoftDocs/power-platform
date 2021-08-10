@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/11/2020
+ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -44,7 +45,7 @@ Here are a few tips on what the wiki should include:
 
 - **UI/UX**: Discussion area on corporate standards/styles and overall best practices around UX.
 
-![Sample Microsoft Power Platform wiki page](media/wiki.png "Sample Microsoft Power Platform wiki page")
+![Sample Microsoft Power Platform wiki page.](media/wiki.png "Sample Microsoft Power Platform wiki page")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

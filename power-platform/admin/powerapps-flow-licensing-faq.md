@@ -4,8 +4,9 @@ description: "FAQs for licensing Power Apps, Power Automate, Dataverse, Datavers
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/26/2021
+ms.date: 07/28/2021
 author: chrisgarty
+ms.subservice: admin
 ms.author: cgarty
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -77,7 +78,7 @@ Power Apps licenses will continue to include Power Automate capabilities. Howeve
 
 ### Is there a plan for developers?
 
-Yes, we have a free Community Plan to learn and build skills on Power Apps, Power Automate, and Microsoft Dataverse. [Learn more](https://powerapps.microsoft.com/communityplan/).
+Yes, we have a free Developer Plan to learn and build skills on Power Apps, Power Automate, and Microsoft Dataverse. [Learn more](https://powerapps.microsoft.com/communityplan/).
 
 ### What happens when I use all the data storage, file storage, and flow runs included in my per user licenses?
 
@@ -109,7 +110,7 @@ Free trials for Microsoft Power Apps last 30 days. For Power Automate, they are 
 
 ### Is there a way to develop my Microsoft Power Apps and Power Automate skills for more than 90 days?
 
-Yes, with the Power Apps Community Plan you get a free environment for individual use with functionality including the Dataverse. In this environment you can explore and learn everything about Power Automate and Power Apps for free, but the Power Apps Community Plan is not intended for production use.
+Yes, with the Power Apps Developer Plan you get a free environment for individual use with functionality including the Dataverse. In this environment you can explore and learn everything about Power Automate and Power Apps for free, but the Power Apps Developer Plan is not intended for production use.
 
 [Learn more](https://powerapps.microsoft.com/pricing/).
 
@@ -150,7 +151,6 @@ Premium connectors list at October 2019 (will expand over time):
 - Azure SQL  
 - Azure SQL Data Warehouse  
 - Azure Table Storage  
-- Dataverse (formerly Common Data Service)
 - Dynamics 365  
 - Dynamics 365 Customer Insights  
 - Dynamics 365 Finance & Operations  
@@ -271,7 +271,7 @@ Yes. With Dataverse for Teams, users now can build flows using Power Automate ma
 
 ### Which Microsoft 365 subscriptions include Dataverse for Teams and Power Virtual Agents capabilities with Teams?
 
-Dataverse for Teams and Power Virtual Agents for Teams capabilities will be available as part of select Microsoft 365 subscriptions with Microsoft Power Platform and Teams capabilities, excluding plans for US government environments (GCC, GCC High and DoD) and EDU A1 and SUB SKUs. For more information, see the [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
+Dataverse for Teams and Power Virtual Agents for Teams capabilities will be available as part of select Microsoft 365 subscriptions with Microsoft Power Platform and Teams capabilities, excluding plans for US government environments (GCC High and DoD) and EDU A1 and SUB SKUs. For more information, see the [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 
 ### How is Dataverse for Teams environment created? 
 
@@ -482,11 +482,11 @@ Follow these steps to apply unattended RPA licenses to your flows.
 
 1. The tenant admin must purchase or get trial a version of the unattended RPA add-on capacity for the tenant. The tenant admin can do this from the [Microsoft 365 admin portal](https://admin.microsoft.com/AdminPortal/Home#/catalog). Just search the purchase services page for the add-on.
   
-   ![get unattended license](./media/RPA-license/unattended-license-M365.JPG)
+   ![get unattended license.](./media/RPA-license/unattended-license-M365.JPG)
   
 1. The environment admin must assign the available (paid or trial) unattended add-on capacities to a specific environment.
   
-   ![manage unattended license](./media/RPA-license/unattended-license-manage.png)
+   ![manage unattended license.](./media/RPA-license/unattended-license-manage.png)
   
 1. Makers can now run unattended desktop flows within the environment that has the unattended capacity. 
 

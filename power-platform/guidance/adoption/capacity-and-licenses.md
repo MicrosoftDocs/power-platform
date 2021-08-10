@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/09/2020
+ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -68,7 +69,7 @@ Every environment can have zero or one Dataverse database, which provides storag
 
 As an administrator, you can monitor your capacity usage in the admin portal.
 
-![Microsoft Power Platform storage capacity](media/resource-usage2.png "Microsoft Power Platform storage capacity")
+![Microsoft Power Platform storage capacity.](media/resource-usage2.png "Microsoft Power Platform storage capacity")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

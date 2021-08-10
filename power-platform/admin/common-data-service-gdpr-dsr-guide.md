@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/11/2021
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -60,11 +61,11 @@ You can identify which type of Dataverse environment you have by logging into [P
 
     Your environment is Dataverse if you see the following tables listed:
 
-    ![Power Apps tables list](./media/common-data-service-gdpr-dsr-guide/powerapps-entities-list.png)
+    ![Power Apps tables list.](./media/common-data-service-gdpr-dsr-guide/powerapps-entities-list.png)
 
     Your environment is the previous version of Dataverse if you see the following tables listed:
 
-    ![Power Apps Legacy tables list](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-entities-list.png)
+    ![Power Apps Legacy tables list.](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-entities-list.png)
 
 After you determine which type of Dataverse environment you have, follow the steps in the following sections to identify personal data.
 
@@ -110,7 +111,7 @@ To find a user and his or her personal data, go to the [Power Platform admin cen
 
 5. To view the user's personal data, double-click or double-tap the user's name.
 
-    ![Power Apps User Form](./media/common-data-service-gdpr-dsr-guide/powerapps-user-form.png)
+    ![Power Apps User Form.](./media/common-data-service-gdpr-dsr-guide/powerapps-user-form.png)
 
 #### Audit history
 When [audit tracking](audit-data-user-activity.md) is enabled for a table in Dataverse, a user's personal data is logged in the audit history along with the actions that the user performs.
@@ -148,11 +149,11 @@ From the [Power Platform admin center](https://admin.powerplatform.microsoft.com
 
 3. Go to **Settings** > **Audit and logs**, and then select **Audit Summary View**.
 
-    ![Power Apps Audit History Menu](./media/common-data-service-gdpr-dsr-guide/powerapps-audit-history-menu.png)
+    ![Power Apps Audit History Menu.](./media/common-data-service-gdpr-dsr-guide/powerapps-audit-history-menu.png)
 
 4. Locate the user audit record, and then press Alt+PrtScn to take the screenshot.
 
-    ![Power Apps Audit History Details](./media/common-data-service-gdpr-dsr-guide/powerapps-audit-history-details.png)
+    ![Power Apps Audit History Details.](./media/common-data-service-gdpr-dsr-guide/powerapps-audit-history-details.png)
 
 5. Save the screenshot to a file, which you can then send to the DSR requestor.
 
@@ -234,11 +235,11 @@ From the [Power Platform admin center](https://admin.powerplatform.microsoft.com
 
 3. Select **Relevance Search**.
 
-    ![Power Apps Relevance Search Menu](./media/common-data-service-gdpr-dsr-guide/powerapps-relevance-search-menu.png)
+    ![Power Apps Relevance Search Menu.](./media/common-data-service-gdpr-dsr-guide/powerapps-relevance-search-menu.png)
 
 4. Enter the individual's personal data in the search box, and then select **Search**.
 
-    ![Power Apps Relevance Search Results](./media/common-data-service-gdpr-dsr-guide/powerapps-relevance-search-results.png)
+    ![Power Apps Relevance Search Results.](./media/common-data-service-gdpr-dsr-guide/powerapps-relevance-search-results.png)
 
 ### Rectify
 Dataverse System Administrators can update an individual's personal data by using the list of results from the  Relevance Search. However, an individual's personal data may also be stored in other custom tables. Dataverse System Administrators are responsible for maintaining an inventory of these other custom tables and making the appropriate updates to an individual's personal data.
@@ -249,7 +250,7 @@ From the Relevance Search results, do the following:
 
 2. Update the individual's personal data where appropriate, and then select **Save**.
 
-    ![Power Apps Account details](./media/common-data-service-gdpr-dsr-guide/powerapps-account-details.png)
+    ![Power Apps Account details.](./media/common-data-service-gdpr-dsr-guide/powerapps-account-details.png)
 
 ### Export
 
@@ -263,11 +264,11 @@ From the [Power Platform admin center](https://admin.powerplatform.microsoft.com
 
 3. Select **Relevance Search**.
 
-    ![Power Apps Relevance Search Menu](./media/common-data-service-gdpr-dsr-guide/powerapps-relevance-search-menu.png)
+    ![Power Apps Relevance Search Menu.](./media/common-data-service-gdpr-dsr-guide/powerapps-relevance-search-menu.png)
 
 4. Enter the individual's personal data in the search box, and then select **Search**.
 
-    ![Power Apps Relevance Search Results](./media/common-data-service-gdpr-dsr-guide/powerapps-relevance-search-results.png)
+    ![Power Apps Relevance Search Results.](./media/common-data-service-gdpr-dsr-guide/powerapps-relevance-search-results.png)
 
 5. Double-click the item in the search results list.
 
@@ -288,7 +289,7 @@ From the Relevance Search results, to the following:
 
 2. In the ribbon, select **Delete**. (Note that **Delete** is disabled if the record cannot be deleted).
 
-    ![Power Apps Account delete](./media/common-data-service-gdpr-dsr-guide/powerapps-account-delete.png)
+    ![Power Apps Account delete.](./media/common-data-service-gdpr-dsr-guide/powerapps-account-delete.png)
 
 ## Personal data stored in databases of the previous version of Dataverse
 
@@ -319,15 +320,15 @@ To see a list of your tables, do the following:
 
 2. In the navigation pane, select **Data**, and then select **Tables**.
 
-    ![Power Apps Legacy tables](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-entities.png)
+    ![Power Apps Legacy tables.](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-entities.png)
 
 3. From the list of tables, select a table (for example, the Account table), as shown below.
 
-    ![Power Apps Legacy tables details list](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-entities-details-list.png)
+    ![Power Apps Legacy tables details list.](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-entities-details-list.png)
 
 4. Select the **Data** tab. A list of rows for the table displays.
 
-    ![Power Apps Legacy Account data](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-account-data.png)
+    ![Power Apps Legacy Account data.](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-account-data.png)
 
 5. Select **Export data**.
 
@@ -350,15 +351,15 @@ From [Power Apps](https://make.powerapps.com), do the following:
 
 1. In the navigation pane, select **Data**, and then select **Tables**.
 
-    ![Power Apps Legacy tables](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-entities.png)
+    ![Power Apps Legacy tables.](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-entities.png)
 
 2. From the list of tables, select an table (for example, the Account table), as shown below.
 
-    ![Power Apps Legacy tables details list](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-entities-details-list.png)
+    ![Power Apps Legacy tables details list.](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-entities-details-list.png)
 
 3. Select the **Data** tab. A list of rows for the table displays.
 
-    ![Power Apps Legacy Account data](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-account-data.png)
+    ![Power Apps Legacy Account data.](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-account-data.png)
 
 4. Select **Export data**.
 
@@ -381,15 +382,15 @@ From [Power Apps](https://make.powerapps.com), do the following:
 
 1. In the navigation pane, select **Data**, and then select **Tables**.
 
-    ![Power Apps Legacy tables](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-entities.png)
+    ![Power Apps Legacy tables.](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-entities.png)
 
 2. From the list of tables, select the table that you want to export and view (for example, the Account table), as shown below.
 
-    ![Power Apps Legacy tables details list](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-entities-details-list.png)
+    ![Power Apps Legacy tables details list.](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-entities-details-list.png)
 
 3. Select the **Data** tab. A list of rows for the table displays.
 
-    ![Power Apps Legacy Account data](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-account-data.png)
+    ![Power Apps Legacy Account data.](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-account-data.png)
 
 4. Select **Export data**.
 
@@ -406,15 +407,15 @@ From [Power Apps](https://make.powerapps.com), do the following:
 
 1. In the navigation pane, select **Data**, and then select **Tables**.
 
-    ![Power Apps Legacy tables](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-entities.png)
+    ![Power Apps Legacy tables.](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-entities.png)
 
 2. From the list of tables, select the table from which you want to remove personal data (for example, the Account table), as shown below.
 
-    ![Power Apps Legacy tables details list](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-entities-details-list.png)
+    ![Power Apps Legacy tables details list.](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-entities-details-list.png)
 
 3. Select the **Data** tab. A list of rows for the table displays.
 
-    ![Power Apps Legacy Account data](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-account-data.png)
+    ![Power Apps Legacy Account data.](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-account-data.png)
 
 4. Select **Export data**.
 

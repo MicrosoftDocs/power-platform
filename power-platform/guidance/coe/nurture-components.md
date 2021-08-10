@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/01/2021
+ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -43,6 +44,10 @@ Here's a breakdown of the assets that form the nurture components solution:
 **Maker Journey Admin SR** Gives a user full access (create, read, write, etc) to the Maker Assessment tables. When you share the Maker Assessment Admin app with your admin team, make sure to assign them the **Maker Journey Admin SR** security role.
 
 **Maker Journey Maker SR** Gives a user read access to the Maker Assessment tables. When you share the Maker Assessment app with your organization, make sure to assign them the **Maker Journey Maker SR** security role.
+
+## Dataflows
+
+**Maker Assessment Starter Dataflow** Used to install starter data for the Maker Assessment app. Used once at setup and not needed after that.
 
 ## Tables
 
@@ -85,7 +90,6 @@ Potential answers to questions in the Maker Assessment app.
 | Training in a Day \| Feedback Reminder | Schedule | Daily | Sends an email to attendees of a training event on the day, and requests feedback. |
 | Training in a Day \| Registration Confirmation Automated | Automated | when a user registers for an event using the [Training in a day](#training-in-a-day--registration) app | Sends an email to attendees of a training event on the day, and requests feedback. |
 | Training in a Day \| Reminder 3 days prior to event | Schedule | Daily | Sends a reminder email to an attendee of a Training in a Day event three days before the event. |
-| Maker Assessment \| Import starter data | Instant | Manual (once) | This instant cloud flow runs once during setup to add some starter questions, answers, and categories into your dataverse tables. |
 
 ## Apps
 
@@ -97,7 +101,7 @@ A canvas app that the Maker Assessment admin uses to enter or update the questio
 
 **Prerequisite**: This app uses Dataverse; a Premium license is therefore required for every app user unless installed in Dataverse for Teams.
 
-![Maker Journey Admin app](media/MakerJourneyAdminApp.png "Maker Journey Admin app")
+![Maker Journey Admin app.](media/MakerJourneyAdminApp.png "Maker Journey Admin app")
 
 ### Maker Assessment
 
@@ -107,7 +111,7 @@ The Maker Assessment app can be used to ask users a series of questions regardin
 
 **Prerequisite**: This app uses Dataverse; a Premium license is therefore required for every app user unless installed in Dataverse for Teams.
 
-![Maker Assessment app, screen 1](media/MakerJourneyAssessmentApp_1.png "Maker Assessment app, screen 1")
+![Maker Assessment app, screen 1.](media/MakerJourneyAssessmentApp_1.png "Maker Assessment app, screen 1")
 
 ### Template Catalog
 
@@ -128,7 +132,7 @@ If you're planning to run an internal Training in a Day event (such as App in a 
 
 **Prerequisite**: This app uses Dataverse; a Premium license is therefore required for the admins who are using it.
 
-![Training in a Day Management app](media/coe69.png "Training in a Day Management app")
+![Training in a Day Management app.](media/coe69.png "Training in a Day Management app")
 
 #### Training in a Day – Registration
 
@@ -138,7 +142,7 @@ If you're planning to run a Training in a Day event, use this canvas app to enab
 
 **Prerequisite**: This app uses Dataverse; a Premium license is therefore required for everyone in your org.
 
-![Training in a Day Registration app](media/coe70.png "Training in a Day Registration app")
+![Training in a Day Registration app.](media/coe70.png "Training in a Day Registration app")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

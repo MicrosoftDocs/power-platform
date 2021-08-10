@@ -5,7 +5,8 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/08/2020
+ms.date: 07/16/2021
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -52,10 +53,10 @@ Unified Interface Only mode provides easier and quicker access to apps, and give
 Users with multiple apps see the list of apps available to them, and can navigate to them by selecting the app tile. 
 
 > [!div class="mx-imgBorder"] 
-> ![Unified interface apps](media/uci-apps-home-page.png "Unified interface apps")
+> ![Unified interface apps.](media/uci-apps-home-page.png "Unified interface apps")
 
 > [!NOTE]
-> This change applies to environment URL based sign-in (for example, https://contoso.crm.dynamics.com/) on the web. It doesn't affect users who sign in using home.dynamics.com or other portals. The sign-in and home page experience for [!INCLUDE[pn_dyn-365_phones](../includes/pn-dyn-365-phones.md)] and [!INCLUDE [pn-dyn-365-tablets](../includes/pn-dyn-365-tablets.md)] remains unchanged. You can learn more at [Sign in and sign out](/dynamics365/mobile-app/dynamics-365-phones-tablets-users-guide#sign-in-and-sign-out).
+> This change applies to environment URL based sign-in (for example, https://contoso.crm.dynamics.com/) on the web. It doesn't affect users who sign in using other portals. The sign-in and home page experience for [!INCLUDE[pn_dyn-365_phones](../includes/pn-dyn-365-phones.md)] and [!INCLUDE [pn-dyn-365-tablets](../includes/pn-dyn-365-tablets.md)] remains unchanged. You can learn more at [Sign in and sign out](/dynamics365/mobile-app/dynamics-365-phones-tablets-users-guide#sign-in-and-sign-out).
 
 ### Run all apps in Unified Interface Only mode
 
@@ -74,24 +75,24 @@ If no app is referenced in the URL, the record or page opens without any navigat
 The legacy web client app, also known as *Dynamics 365 - custom*, is hidden from end users when a new environment is provisioned. It is always visible to those with System Administrator and System Customizer roles, and to other custom roles with similar privileges. The legacy web client app should only be used temporarily for backwards compatibility with custom and third-party legacy functionality that you have not migrated to Unified Interface. It is not designed for Unified Interface and can cause unexpected errors and experience. For the best user experience, port all custom and third-party functionality to model-driven apps for Unified Interface.
 
 > [!div class="mx-imgBorder"] 
-> ![Dynamics 365 - custom legacy app](media/dynamics-365-custom.png "Dynamics 365 - custom legacy app")
+> ![Dynamics 365 - custom legacy app.](media/dynamics-365-custom.png "Dynamics 365 - custom legacy app")
 
 When Unified Interface Only mode is enabled, *Dynamics 365 - custom* opens in Unified Interface and not in the legacy web client. If users only have access to the Dynamics 365 – custom app and no other model-driven apps, they won't be redirected automatically when signing in using the environment URL (for example, https://contoso.crm.dynamics.com/). Access to this app can be enabled in one of two ways:
 
 - In the Microsoft Power Platform admin center, go to **Environments** and select an environment. Go to **Settings** > **Product** > **Behavior** and then turn on **Show legacy app to everyone, not just admins**.
 
 > [!div class="mx-imgBorder"] 
-> ![Show legacy app to everyone](media/show-legacy-app-to-everyone.png "Show legacy app to everyone")
+> ![Show legacy app to everyone.](media/show-legacy-app-to-everyone.png "Show legacy app to everyone")
 
 ### Advanced settings
 
 When Unified Interface Only mode is enabled, environment settings can be accessed via a menu on the navigation bar. Follow these steps to navigate to **Advanced Settings**:
 
-1. Select **Settings** (![Gear button](media/selection-rule-gear-button.png "Gear button")) on the navigation bar. 
+1. Select **Settings** (![Gear button.](media/selection-rule-gear-button.png "Gear button")) on the navigation bar. 
 2. Select **Advanced Settings**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Advanced Settings](media/uci-advanced-settings.png "Advanced Settings")
+   > ![Advanced Settings.](media/uci-advanced-settings.png "Advanced Settings")
 
 > [!NOTE]
 > You need to select Advanced Settings from a customer engagement apps page that's displayed in Unified Interface such as Sales Hub or Customer Service Hub pages.

@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/09/2020
+ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -24,7 +25,7 @@ Many organizations find success straight away by attending App in a Day events, 
 
 ## Running App in a Day internally
 
-The App in a da training runs people through the core features and capability of the technology included in Microsoft Power Platform, and above all, can be used by everyone in the organization in every single role to get them thinking about how technology can make them more successful. Download the latest version of the [App in a Day material](https://aka.ms/appinaday) to get started.
+The App in a day training runs people through the core features and capability of the technology included in Microsoft Power Platform, and above all, can be used by everyone in the organization in every single role to get them thinking about how technology can make them more successful. Download the latest version of the [App in a Day material](https://aka.ms/appinaday) to get started.
 
 Here are a few tips for running this training internally:
 

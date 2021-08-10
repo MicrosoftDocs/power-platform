@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/18/2021
+ms.subservice: admin
 ms.author: astockli
 search.audienceType: 
   - admin

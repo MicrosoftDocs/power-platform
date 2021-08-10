@@ -6,6 +6,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/09/2020
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -25,7 +26,7 @@ When you use [!INCLUDE[pn_skype_for_business](../includes/pn-skype-for-business.
   
 - Get Presence information for members of the same email domain you are signed in with in [!INCLUDE[pn_skype_for_business](../includes/pn-skype-for-business.md)].  
   
-  ![Call a contact with Skype](../admin/media/crm-itpro-crmo365tg2-kimpresence.png "Call a contact with Skype")  
+  ![Call a contact with Skype.](../admin/media/crm-itpro-crmo365tg2-kimpresence.png "Call a contact with Skype")  
   
 ## Set up Skype in customer engagement apps
 
@@ -54,12 +55,12 @@ When you use [!INCLUDE[pn_skype_for_business](../includes/pn-skype-for-business.
   
 8. Choose the **external communications** tab. Review and set the **external access** and public **IM connectivity** settings.  
   
-   ![Lync admin center external communications settings](../admin/media/crm-itpro-crmo365tg2-lyncsettingsexternal.png "Lync admin center external communications settings")  
+   ![Lync admin center external communications settings.](../admin/media/crm-itpro-crmo365tg2-lyncsettingsexternal.png "Lync admin center external communications settings")  
   
 ## Tracking Skype  
  Now that [!INCLUDE[pn_skype](../includes/pn-skype.md)] is setup, your [!INCLUDE[pn_skype](../includes/pn-skype.md)] calls are tracked as activities.  
   
- ![Lync calls tracked as activities](../admin/media/crm-itpro-crmo365tg2-lynctrack.png "Lync calls tracked as activities")  
+ ![Lync calls tracked as activities.](../admin/media/crm-itpro-crmo365tg2-lynctrack.png "Lync calls tracked as activities")  
   
 ### See also 
  [Skype for Business and Skype integration](skype-business-integration.md)   

@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: reference
 ms.date: 03/19/2021
+ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
   - admin
@@ -36,12 +37,12 @@ To start off, in this tutorial we will use a Logic Apps workflow.  A Power Autom
 Visit the Azure portal, and then create a new logic app and give it a name:
 
 > [!div class="mx-imgBorder"] 
-> ![Create a logic app](media/capacity1.png "Create a logic app")
+> ![Create a logic app.](media/capacity1.png "Create a logic app")
 
 After that finishes provisioning, edit the workflow using the Designer and set up a Recurrence trigger to run daily:
 
 > [!div class="mx-imgBorder"] 
-> ![Set up a Recurrence trigger](media/capacity2.png "Set up a Recurrence trigger")
+> ![Set up a Recurrence trigger.](media/capacity2.png "Set up a Recurrence trigger")
 
 Next, we'll need to create five variables as detailed below:
 
@@ -52,14 +53,14 @@ Next, we'll need to create five variables as detailed below:
 - **SimplifiedEnvironmentArray-Init** – This is an Array variable that we will populate with a few environment properties.  This drastically simplifies the final HTML table report output.
 
 > [!div class="mx-imgBorder"] 
-> ![Create five variables](media/capacity3.png "Create five variables")
+> ![Create five variables.](media/capacity3.png "Create five variables")
 
 Next we will authenticate with Microsoft Azure Active Directory (Azure AD) and retrieve a token for calling the Power Platform API.  If you haven’t completed your Azure AD setup, see [Authentication](programmability-authentication.md).
 
 In this tutorial, we are using a key vault to store our service principal secret value.  In this way, an IT administrator can make this value securely available for your workflow.  This is then populated in the POST call to Azure AD to retrieve the token as shown:
 
 > [!div class="mx-imgBorder"] 
-> ![Authenticate with Azure AD and retrieve a token for calling the Power Platform API](media/capacity4.png "Authenticate with Azure AD and retrieve a token for calling the Power Platform API")
+> ![Authenticate with Azure AD and retrieve a token for calling the Power Platform API.](media/capacity4.png "Authenticate with Azure AD and retrieve a token for calling the Power Platform API")
 
 We then parse the Azure AD token response into a typed object using this JSON schema:
 
@@ -84,13 +85,13 @@ We then parse the Azure AD token response into a typed object using this JSON sc
 ```
 
 > [!div class="mx-imgBorder"] 
-> ![Parse the Azure AD token response into a strongly typed object](media/capacity5.png "Parse the Azure AD token response into a strongly typed object")
+> ![Parse the Azure AD token response into a strongly typed object.](media/capacity5.png "Parse the Azure AD token response into a strongly typed object")
 
 ## Call the List Environments endpoint
 Now is the time to call the Power Platform API.  We’ll use the List Environments endpoint to retrieve all of our environments and their metadata, specifically with the $expand parameter for capacity.  This also uses the Authorization header with the Bearer Token we received in the previous section from Azure AD.  If you used username/password context, you can also enter that Bearer Token at this step as well.
 
 > [!div class="mx-imgBorder"] 
-> ![Use the List Environments endpoint to retrieve all environments and their metadata](media/capacity6.png "Use the List Environments endpoint to retrieve all environments and their metadata")
+> ![Use the List Environments endpoint to retrieve all environments and their metadata.](media/capacity6.png "Use the List Environments endpoint to retrieve all environments and their metadata")
 
 We then parse the Power Platform API response into a strongly typed object using this JSON schema:
 ```json
@@ -351,7 +352,7 @@ We then parse the Power Platform API response into a strongly typed object using
 ```
 
 > [!div class="mx-imgBorder"] 
-> ![Parse the Power Platform API response into a strongly typed object](media/capacity7.png "Parse the Power Platform API response into a strongly typed object")
+> ![Parse the Power Platform API response into a strongly typed object.](media/capacity7.png "Parse the Power Platform API response into a strongly typed object")
 
 ## Iterate through the Capacity object
 This is the most complex part of the tutorial.  Here we'll use a loop inside of a loop to iterate each environment in the List Environment response, and each environment has an array of capacity details that we will iterate as well.  This will let us capture the necessary information for each environment row in our capacity report table.
@@ -359,7 +360,7 @@ This is the most complex part of the tutorial.  Here we'll use a loop inside of 
 Let’s take this step by step.  First, we will use a For Each control using the ‘value’ of the Parse-List-Response output:
 
 > [!div class="mx-imgBorder"] 
-> ![Use a For Each control using the value of the Parse-List-Response output](media/capacity8.png "Use a For Each control using the value of the Parse-List-Response output")
+> ![Use a For Each control using the value of the Parse-List-Response output.](media/capacity8.png "Use a For Each control using the value of the Parse-List-Response output")
 
 Then we parse this single environment into a strongly typed object using this JSON schema:
 
@@ -601,12 +602,12 @@ Then we parse this single environment into a strongly typed object using this JS
 Next, we will use another For Each control using the ‘capacity’ of the Parse-CurrentItem output. Then we parse this into a strongly typed object using this JSON schema:
 
 > [!div class="mx-imgBorder"] 
-> ![For Each control using the capacity of the Parse-CurrentItem output](media/capacity9.png "For Each control using the capacity of the Parse-CurrentItem output")
+> ![For Each control using the capacity of the Parse-CurrentItem output.](media/capacity9.png "For Each control using the capacity of the Parse-CurrentItem output")
 
 Now we can use the Switch control on the CapacityType property from the Parse-Capacity output.  This will either be a value of ‘Database’, ‘File’, or ‘Log’.  Under each switch case, capture the related ‘actualConsumption’ property into the related variable.  In the case below, you’ll see we are capturing Database capacity:
 
 > [!div class="mx-imgBorder"] 
-> ![Use the Switch control on the CapacityType property from the Parse-Capacity output](media/capacity10.png "Use the Switch control on the CapacityType property from the Parse-Capacity output")
+> ![Use the Switch control on the CapacityType property from the Parse-Capacity output.](media/capacity10.png "Use the Switch control on the CapacityType property from the Parse-Capacity output")
 
 As the last step in the ‘For each environment’ loop, we now can capture the environment details for this row in the report.  Using the Append to array variable control, use the following JSON schema:
 ```json
@@ -633,18 +634,18 @@ As the last step in the ‘For each environment’ loop, we now can capture the 
 ```
 
 > [!div class="mx-imgBorder"] 
-> ![Capture the environment details](media/capacity11.png "Capture the environment details")
+> ![Capture the environment details.](media/capacity11.png "Capture the environment details")
 
 ## Save to an HTML table
 Congratulations, you’ve now made it to the easy part!  Now that we have our fully populated and simplified environment array, we can pass this value to the Create HTML table connector:
 
 > [!div class="mx-imgBorder"] 
-> ![Pass value to the Create HTML table connector](media/capacity12.png "Pass value to the Create HTML table connector")
+> ![Pass value to the Create HTML table connector.](media/capacity12.png "Pass value to the Create HTML table connector")
 
 Running the logic app, we can now see the output of the HTML table report:
 
 > [!div class="mx-imgBorder"] 
-> ![Output of the HTML table report](media/capacity13.png "Output of the HTML table report")
+> ![Output of the HTML table report.](media/capacity13.png "Output of the HTML table report")
 
 The report could be optionally emailed to stakeholders in this example for Cost Accounting purposes, or the data could be saved into a database for further analysis and historical trending.  
 

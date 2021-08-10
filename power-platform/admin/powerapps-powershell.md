@@ -6,7 +6,8 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 06/02/2021
+ms.date: 07/01/2021
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -57,7 +58,7 @@ To run the PowerShell cmdlets for app creators, do the following:
 1. Run PowerShell as an administrator.
 
    > [!div class="mx-imgBorder"] 
-   > ![Run PowerShell as an administrator](media/open-powershell-as-admin75.png "Run PowerShell as an administrator")
+   > ![Run PowerShell as an administrator.](media/open-powershell-as-admin75.png "Run PowerShell as an administrator")
 
 2. Import the necessary modules using the following commands:
 
@@ -77,7 +78,7 @@ To run the PowerShell cmdlets for app creators, do the following:
 
 3. If you are prompted to accept the change to *InstallationPolicy* value of the repository, accept [A] Yes to all modules by typing 'A' and pressing **Enter** for each module.
 
-   ![Accept InstallationPolicy value](media/accept-installationpolicy-value75.png "Accept InstallationPolicy value")
+   ![Accept InstallationPolicy value.](media/accept-installationpolicy-value75.png "Accept InstallationPolicy value")
 
 4. Before accessing any of the commands, you have the option to provide your credentials using the following command. These credentials are refreshed for up to ~8 hours before you're required to sign in again to continue using the cmdlets.
 
@@ -127,7 +128,7 @@ For information on Power Apps cmdlets for admins, see [Get started with PowerShe
 
 - Use Get-Help 'CmdletName' to get a list of examples.
 
-     ![Get-Help command](media/get-help-cmdlet.png "Get-Help command")
+     ![Get-Help command.](media/get-help-cmdlet.png "Get-Help command")
 
 - To cycle through the possible options for input tags, click on the tab key after typing out the dash (-) character, after the cmdlet name.
 
@@ -148,6 +149,7 @@ Below are some common scenarios that show how to use new and existing Power Apps
 - [Power Automate commands](#power-automate-commands)
 - [API connection commands](#api-connection-commands)
 - [Data Loss Prevention (DLP) policy commands](#data-loss-prevention-dlp-policy-commands)
+- [DLP resource exemption cmdlets](#dlp-resource-exemption-cmdlets)
 - [Block trial licenses commands](#block-trial-licenses-commands)
 
 ### Environments commands
@@ -178,7 +180,7 @@ Get-AdminPowerAppEnvironment –EnvironmentName 'EnvironmentName'
 
 **Note**: The *EnvironmentName* field is a unique identifier, which is different from the *DisplayName* (see first and second fields in the output in the following image).
 
-![Get-AdminEnvironment command](media/get-adminenvironment.png "Get-AdminEnvironment command")
+![Get-AdminEnvironment command.](media/get-adminenvironment.png "Get-AdminEnvironment command")
 
 ### Power Apps commands
 
@@ -232,7 +234,7 @@ Get-AdminPowerApp | Select –ExpandProperty Owner | Select –ExpandProperty di
 
 You can combine native PowerShell functions with the Power Apps cmdlets to manipulate data even further. Here we use the Select function to isolate the Owner attribute (an object) from the Get-AdminApp object. We then isolate the name of the owner object by pipelining that output into another Select function. Finally, passing the second Select function output into the Group function returns a nice table that includes a count of each owner's number of apps.
 
-![Get-AdminPowerApp command](media/get-adminpowerapp.png "Get-AdminPowerApp command")
+![Get-AdminPowerApp command.](media/get-adminpowerapp.png "Get-AdminPowerApp command")
 
 #### Display the number of apps in each environment
 
@@ -240,7 +242,7 @@ You can combine native PowerShell functions with the Power Apps cmdlets to manip
 Get-AdminPowerApp | Select -ExpandProperty EnvironmentName | Group | %{ New-Object -TypeName PSObject -Property @{ DisplayName = (Get-AdminPowerAppEnvironment -EnvironmentName $_.Name | Select -ExpandProperty displayName); Count = $_.Count } }
 ```
 
-![Get-AdminPowerApp environment](media/get-adminpowerapp-environment.png "Get-AdminPowerApp environment")
+![Get-AdminPowerApp environment.](media/get-adminpowerapp-environment.png "Get-AdminPowerApp environment")
 
 #### Download Power Apps user details
 
@@ -255,10 +257,12 @@ The above command will store the Power Apps user details (basic usage informatio
 ```powershell
 Get-AdminPowerAppLicenses -OutputFilePath '<licenses.csv>'
 ```
-
 Exports all the assigned user licenses (Power Apps and Power Automate) in your tenant into a tabular view .csv file. The exported file contains both self-service sign up internal trial plans as well as plans that are sourced from Azure Active Directory. The internal trial plans are not visible to admins in the Microsoft 365 admin center.
 
 The export can take a while for tenants with a large number of Microsoft Power Platform users.
+
+> [!NOTE]
+> Output of the Get-AdminPowerAppLicenses cmdlet only includes licenses for users that have accessed Power Platform services (for example, Power Apps, Power Automate, or Power Platform admin center). Users that have had licenses assigned in Azure AD (typically via the Microsoft 365 admin center) but have never accessed Power Platform services will not have their licenses included in the generated .csv output. Furthermore, since the Power Platform licensing services caches the licenses, updates made to license assignments in Azure AD can take up to seven days to reflect in the output for users that haven't accessed the service recently.
 
 #### Set logged in user as the owner of a canvas app
 
@@ -440,6 +444,68 @@ Remove-DlpPolicy
 
 Deletes a DLP policy.
 
+### DLP resource exemption cmdlets 
+
+These cmdlets allow you to exempt or unexempt a specific resource from a DLP policy. 
+
+#### Retrieve existing exempt resource list for a DLP policy 
+
+```powershell
+Get-PowerAppDlpPolicyExemptResources -TenantId -PolicyName 
+```
+
+#### Create a new exempt resource list for a DLP policy 
+
+```powershell
+New-PowerAppDlpPolicyExemptResources -TenantId -PolicyName -NewDlpPolicyExemptResources 
+```
+
+#### Update the exempt resource list for a DLP policy 
+
+```powershell
+Set-PowerAppDlpPolicyExemptResources -TenantId -PolicyName -UpdatedExemptResources 
+```
+
+#### Remove the exempt resource list for a DLP policy 
+
+```powershell
+Remove-PowerAppDlpPolicyExemptResources -TenantId -PolicyName 
+```
+
+To exempt a resource from a DLP policy you need the following information: 
+
+- Tenant ID (GUID) 
+- DLP policy ID (GUID) 
+- Resource ID (ends with a GUID) 
+- Resource type 
+
+You can retrieve the resource ID and type using PowerShell cmdlets Get-PowerApp for apps and Get-Flow for flows. 
+
+**Example** 
+
+To exempt flow with ID f239652e-dd38-4826-a1de-90a2aea584d9 and app with ID 06002625-7154-4417-996e-21d7a60ad624 we can run the following cmdlets: 
+
+```
+1. PS D:\> $flow = Get-Flow -FlowName f239652e-dd38-4826-a1de-90a2aea584d9 
+2. PS D:\> $app = Get-PowerApp -AppName 06002625-7154-4417-996e-21d7a60ad624 
+3. PS D:\> $exemptFlow = [pscustomobject]@{ 
+4. >>             id = $flow.Internal.id 
+5. >>             type = $flow.Internal.type 
+6. >>         } 
+7. PS D:\> $exemptApp = [pscustomobject]@{ 
+8. >>             id = $app.Internal.id 
+9. >>             type = $app.Internal.type 
+10. >>         } 
+11. PS D:\> $exemptResources = [pscustomobject]@{ 
+12. >>             exemptResources = @($exemptFlow, $exemptApp) 
+13. >>         } 
+14. PS D:\> New-PowerAppDlpPolicyExemptResources -TenantId b1c07da8-2ae2-47e7-91b8-d3418892f507 -PolicyName 65da474a-70aa-4a59-9ae1-65a2bebbf98a -NewDlpPolicyExemptResources $exemptResources 
+15. 
+16. exemptResources 
+17. --------------- 
+18. {@{id=/providers/Microsoft.ProcessSimple/environments/Default-b1c07da8-2ae2-47e7-91b8-d3418892f507/flows/f239652e-dd38-4826-a1de-90a2aea584d9; type=Microsoft.ProcessSimple/environments/flows}, @{id=/providers/Microsoft.PowerApps/apps/06002625-7154-4417-996e-21d7a60ad.. 
+```
+
 ### Governance error message content commands
 
 The following cmdlets can be used to lead your end users to your organization’s governance reference material, including a link to governance documentation and a governance contact, when they are prompted by governance controls. For instance, when governance error message content is set it will appear in Power Apps Data Loss Prevention policy runtime enforcement messages. 
@@ -459,7 +525,17 @@ New-PowerAppDlpErrorSettings -TenantId 'TenantId' -ErrorSettings @{
 } 
 ``` 
 
-The governance error message URL and email can be shown independently or together. Each value’s presence in the governance error message is controlled by the ‘enabled’ field.  
+The governance error message URL and email can be shown independently or together. Each value’s presence in the governance error message is controlled by the ‘enabled’ field. 
+
+##### This governance error message content appears in the following experiences.
+
+|     #    |     Experience                                                                                                     |     Availability           |
+|----------|--------------------------------------------------------------------------------------------------------------------|----------------------------|
+|     1    |     User launches a Power Apps app that’s not DLP compliant                                                        |     Generally available    |
+|     2    |     Maker shares a Power Apps canvas app but doesn’t have share privilege                                        |     Generally available    |
+|     3    |     Maker shares a Power Apps canvas app with ‘Everyone’ but doesn’t have privilege to share with ‘Everyone’    |     Generally available    |
+|     4    |     Maker saves a Power Apps app that’s not DLP compliant                                                          |     Not yet available     |
+|     5    |     Maker saves a Flow that’s not DLP compliant                                                                    |     Not yet available     |
 
 #### Display governance error message content 
 
@@ -492,7 +568,7 @@ Add-AllowedConsentPlans
 Get-AllowedConsentPlans
 ```
 
-The allowed consent plans cmdlets can be used to add or remove access to a particular type of consent plan from a tenant. "Internal" consent plans are either trial licenses or community plans that users can sign themselves up for via Power Apps/Power Automate portals. "Ad-hoc subscription" or "Viral" consent plans are trial licenses that users can sign themselves up for via https://signup.microsoft.com or admins can assign to users via Azure Active Directory (Azure AD) or the Microsoft 365 admin portal. 
+The allowed consent plans cmdlets can be used to add or remove access to a particular type of consent plan from a tenant. "Internal" consent plans are either trial licenses or developer plans that users can sign themselves up for via Power Apps/Power Automate portals. "Ad-hoc subscription" or "Viral" consent plans are trial licenses that users can sign themselves up for via https://signup.microsoft.com or admins can assign to users via Azure Active Directory (Azure AD) or the Microsoft 365 admin portal. 
 
 By default all types of consent plans are allowed in a tenant. A common use case for these cmdlets is if a Power Platform admin wants to block users within their tenant from the ability to assign themselves trial licenses but retain the ability to assign trial licenses on behalf of users. This can be accomplished by using the *Remove-AllowedConsentPlans -Types "Internal"* command as well as disabling the setting *AllowAdHocSubscriptions* in Azure AD. 
 

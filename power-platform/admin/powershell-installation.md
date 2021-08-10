@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: reference
 ms.date: 03/19/2021
+ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
   - admin
@@ -32,7 +33,7 @@ To run the PowerShell cmdlets for app creators, do the following:
 1. Run PowerShell as an administrator.
 
    > [!div class="mx-imgBorder"] 
-   > ![Run PowerShell as an administrator](media/open-powershell-as-admin75.png "Run PowerShell as an administrator")
+   > ![Run PowerShell as an administrator.](media/open-powershell-as-admin75.png "Run PowerShell as an administrator")
 
 2. Import the necessary module using the following command:
 
@@ -49,4 +50,4 @@ To run the PowerShell cmdlets for app creators, do the following:
 
 3. If you are prompted to accept the change to the *InstallationPolicy* value of the repository, accept [A] Yes to All modules by typing **A** and pressing **Enter** for each module.
 
-   ![Accept InstallationPolicy value](media/accept-installationpolicy-value75.png "Accept InstallationPolicy value")
+   ![Accept InstallationPolicy value.](media/accept-installationpolicy-value75.png "Accept InstallationPolicy value")

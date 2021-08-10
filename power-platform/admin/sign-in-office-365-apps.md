@@ -7,6 +7,7 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.custom: intro-internal
 ms.date: 11/12/2020
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -31,7 +32,7 @@ There are multiple ways to sign in and access your Dynamics 365 and Office apps.
 For admins and end users, when you sign in to https://office.com, you will see a page with Office tiles. The tiles that appear depend on what licenses you have. For example, if you have licenses for Office and Dynamics 365 apps, you'll see tiles for Office apps like [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)], [!INCLUDE[pn_onedrive](../includes/pn-onedrive.md)], and [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)], as well as a tile for Dynamics 365 apps.  
 
 > [!div class="mx-imgBorder"] 
-> ![Office tile page](../admin/media/office-365-welcome-page.png "Office tile page")  
+> ![Office tile page.](../admin/media/office-365-welcome-page.png "Office tile page")  
   
 Select the Dynamics 365 apps tile to go to the Dynamics 365 home page.   
   
@@ -44,12 +45,7 @@ For other ways to access Dynamics 365 and Office apps, see [Quickly navigate wit
 ## Direct sign in to the Dynamics 365 home page  
 **Your business apps are moving**
 
-In the future, the home for all of your business applications across Dynamics and Microsoft Power Platform will move to the apps page on [office.com](https://office.com/apps). This will help ensure that your end-users have a single spot to find all of their apps across the Microsoft ecosystem. Once the apps on the Dynamics home page have
-moved to [office.com](https://office.com/apps), we will provide a banner redirecting users to their new home.
-
-After April 1, 2021, when users navigate to https://home.dynamics.com, they will be redirected to https://www.office.com/apps with a deep link to their business applications.
-
-<a name="BKMK_directsignin"></a>   
+In the future, the home for all of your business applications across Dynamics and Microsoft Power Platform will move to the apps page on [office.com](https://office.com/apps). This will help ensure that your end-users have a single spot to find all of their apps across the Microsoft ecosystem. Once the apps on the Dynamics home page have moved to [office.com](https://office.com/apps), we will provide a banner redirecting users to their new home.
 
 ### See also  
  [Quickly navigate with the Office app launcher and the Dynamics 365 home page](../admin/quickly-navigate-office-365-app-launcher.md)   

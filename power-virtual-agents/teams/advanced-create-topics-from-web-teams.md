@@ -59,23 +59,23 @@ After the extraction is complete, you'll be shown the suggested topics for furth
 
 
 
-    :::image type="content" source="media/topics-web-tab.png" alt-text="The Topics menu item on the navigation pane":::
+    :::image type="content" source="media/topics-web-tab.png" alt-text="The Topics menu item on the navigation pane.":::
 
 2. Go to the **Suggested** tab. 
 
 3. If it's the first time you're getting suggestions, the list of suggested topics will be blank. A link to **Get started** or **Learn more** appears instead.
 
-    ![An empty Topics page, with a link to Get started or Learn more](media/suggested-web-get-teams.png "An empty Topics page, with a link to Get started or Learn more")
+    ![An empty Topics page, with a link to Get started or Learn more.](media/suggested-web-get-teams.png "An empty Topics page, with a link to Get started or Learn more")
 
 4. Select **Get started** or **Suggest topics**. 
 
-5. Enter each webpage or file you want to extract content from, and then select **Add**. The URLs must be secure (they must start with *https://*). If you add a page by mistake, you can remove it by selecting **Delete** ![Delete](media/delete-suggested-topic-teams.png).
+5. Enter each webpage or file you want to extract content from, and then select **Add**. The URLs must be secure (they must start with *https://*). If you add a page by mistake, you can remove it by selecting **Delete** ![Delete.](media/delete-suggested-topic-teams.png).
 
-    ![The Suggest topics page, where you enter URLs to extract suggested topics from](media/suggested-web-wizard-teams.png "The Suggest topics page,where you enter URLs to extract suggested topics from")
+    ![The Suggest topics page, where you enter URLs to extract suggested topics from.](media/suggested-web-wizard-teams.png "The Suggest topics page,where you enter URLs to extract suggested topics from")
 
 7. When you're done adding pages, select **Start**. The message "Getting your suggestions. This may take several minutes" appears at the top of the screen while the extraction is in progress.
 
-    :::image type="content" source="media/suggested-web-wait-teams.png" alt-text="An alert that says Getting your suggestions. This may take several minutes appears at the top of the page":::
+    :::image type="content" source="media/suggested-web-wait-teams.png" alt-text="An alert that says Getting your suggestions. This may take several minutes appears at the top of the page.":::
 
 >[!TIP]
 >You can add multiple webpages, but we recommend that you include only a few at a time to keep the list of suggestions manageable.
@@ -89,7 +89,22 @@ Now the suggested topics will appear. These were all taken from the links you su
 
 
 
-![The Suggested tab on the Topics page lists each topic by name, trigger phrase, source, and date it was received](media/suggested-web-topics-teams.png "The Suggested tab on the Topics page lists each topic by name, trigger phrase, source, and date it was received")
+![The Suggested tab on the Topics page lists each topic by name, trigger phrase, source, and date it was received.](media/suggested-web-topics-teams.png "The Suggested tab on the Topics page lists each topic by name, trigger phrase, source, and date it was received")
+
+
+## Single-turn and multi-turn topic suggestions
+
+When Power Virtual Agents extracts your content, it automatically creates single-turn or multi-turn topic suggestions based on how your content is laid out and formatted (for example, its headings and subheadings).
+
+
+A **single-turn topic** has a trigger phrase that contains a single answer. These topics are often created from simple content, such as FAQ pages.
+
+
+A **multi-turn topic** contains multiple bot responses and questions to the user. These topics are often created from troubleshooting pages or reference pages and manuals. 
+
+:::image type="content" source="media/advanced-create-topics-from-web-teams/sample-multi-turn-topic-teams.png" alt-text="A screenshot of the preview for a multi-turn topic suggestion in Teams.":::
+
+See the [Power Virtual Agents web app version of this topic for more details on how topic suggestions are created](../advanced-create-topics-from-web.md#single-turn-and-multi-turn-topic-suggestions).
 
 ## Add suggested topics to an existing bot
 
@@ -115,14 +130,14 @@ You can also delete or add the suggestion without opening the preview:
 1. Hover over the name of the suggested topic you want to add or delete. 
 
 1. To delete, select the trashcan icon.
-1. To add the topic to your bot, select the **Add to topics** icon ![Add to topics](media/add-to-topics-teams.png). You won't see a preview of the topic, and the topic will be automatically moved to the list of "Existing" topics.
+1. To add the topic to your bot, select the **Add to topics** icon ![Add to topics.](media/add-to-topics-teams.png). You won't see a preview of the topic, and the topic will be automatically moved to the list of "Existing" topics.
 
 
-    ![An up arrow icon next to the title of a topic](media/suggested-web-quick-teams.png)
+    ![An up arrow icon next to the title of a topic.](media/suggested-web-quick-teams.png)
     
 2. You can also add or delete multiple topic suggestions at a time. If you select multiple rows, you'll see options to **Add to topic** or **Delete**.
 
-    ![The list has three items selected](media/suggested-web-multi-teams.png)
+    ![The list has three items selected.](media/suggested-web-multi-teams.png)
 
 
 ## Enable topics in your bot

@@ -14,6 +14,7 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/03/2021
+ms.subservice: admin
 ms.author: deonhe
 search.app: 
   - Flow
@@ -31,7 +32,7 @@ You can find logs of Power Automate activities in the [Microsoft 365 compliance
 1.  In the left hamburger menu, select **Show all**.
 1. Select **Audit** from the **Solutions** category. 
     
-    ![Select audit from the menu](./media/audit-logs/show-all.png)
+    ![Select audit from the menu.](./media/audit-logs/show-all.png)
 
 Power Platform admins can search the **Audit** screen for details from the following popular services.
 

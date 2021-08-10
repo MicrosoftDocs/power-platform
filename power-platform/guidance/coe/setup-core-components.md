@@ -6,7 +6,8 @@ manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/01/2021
+ms.date: 07/06/2021
+ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -25,18 +26,19 @@ The Center of Excellence (CoE) core components solution provides components that
 
 The core components solution contains assets that are only relevant to admins.
 
-<!-- need to re-record due to new solution import experience Watch the [setup instructions video](https://youtu.be/L8gKjeE5GR4) to help you download and deploy the solution. -->
+Watch how to setup the core components solution.
+
+> [!VIDEO https://www.youtube.com/embed/Z9Vp2IxFzpU]
 
 ## Import the solution
 
-The Core Components can be used in both Production environments and Dataverse for Teams environments. Where you install it will depend on your organization setup, your adoption of Microsoft Power Platform so far and what you want to achieve with the CoE Starter Kit. Before you decide, compare [Dataverse vs Dataverse for Teams](https://docs.microsoft.com/powerapps/teams/data-platform-compare)
+The Core Components can be used in both Production environments and Dataverse for Teams environments. Where you install it will depend on your organization setup, your adoption of Microsoft Power Platform so far and what you want to achieve with the CoE Starter Kit. Before you decide, compare [Dataverse vs Dataverse for Teams](/powerapps/teams/data-platform-compare)
 
-Learn more: [What is Dataverse for Teams](https://docs.microsoft.com/powerapps/teams/overview-data-platform)
+Learn more: [What is Dataverse for Teams](/powerapps/teams/overview-data-platform)
 
 ### Option 1: Import the solution into a Production environment
 
 This is the first step of the installation process and is required for every other component in the starter kit to work. You'll need to create an environment in which to set up the CoE. For more information about how to decide on the best strategy for your organization, go to [Establishing an Environment Strategy for Microsoft Power Platform](/power-platform/guidance/adoption/environment-strategy) and [Environment strategy for ALM](/power-platform/alm/environment-strategy-alm).
-
 
 1. Download the CoE Starter Kit compressed file ([aka.ms/CoeStarterKitDownload](https://aka.ms/CoeStarterKitDownload)).
 
@@ -56,7 +58,7 @@ This is the first step of the installation process and is required for every oth
     1. Go to [make.powerapps.com](<https://make.powerapps.com>).
     1. Go to the environment you just created, in which the CoE solution will be hosted. In the example in the following screenshot, we're importing to the environment named **Contoso CoE**.
 
-     ![Power Apps maker portal environment selection](media/coe6.png "Power Apps maker portal environment selection")
+     ![Power Apps maker portal environment selection.](media/coe6.png "Power Apps maker portal environment selection")
 
 1. On the left pane, select **Solutions**.
 
@@ -69,12 +71,11 @@ This is the first step of the installation process and is required for every oth
 1. Review the information, and then select **Next**.
 1. Establish connections to activate your solution. If you create a new connection, you must select **Refresh**. You won't lose your import progress.
 
-     ![Establish connections to activate your solution](media/msi-import.png "Establish connections to activate your solution.")
+     ![Establish connections to activate your solution.](media/msi-import.png "Establish connections to activate your solution.")
 
-    When you create the connection for HTTP with Azure AD enter the following into the Base Resource URL and Azure AD Resource URI (Application ID URI): [https://graph.microsoft.com](https://graph.microsoft.com) 
+    When you create the connection for HTTP with Azure AD enter the following into the Base Resource URL and Azure AD Resource URI (Application ID URI): [https://graph.microsoft.com](https://graph.microsoft.com).
 
-     ![Establish HTTP with Azure AD](media/httpazuread.png "Establish connections to activate your solution.")
-
+     ![Establish HTTP with Azure AD.](media/httpazuread.png "Establish connections to activate your solution.")
 
 1. Update environment variable values. The environment variables are used to store application and flow configuration data with data specific to your organization or environment. This means that you only have to set the value once per environment and it will be used in all necessary flows and apps in that environment. All the flows in the solution depend on all environment variables' being configured.
 
@@ -87,10 +88,10 @@ This is the first step of the installation process and is required for every oth
     | Power Platform Maker Microsoft 365 Group | The Admin \| Welcome Email flow sends a welcome email to onboard new makers and adds them to a Microsoft 365 group. You can use this group to send communications to your makers or invite them to a Yammer or Teams group. Configure the group ID here.|
     |Power Automate environment variable | The URL used by flow for your region. Here are examples:<br> For a US environment: <https://us.flow.microsoft.com/manage/environments/> <br> For a Canadian environment: <https://canada.flow.microsoft.com/manage/environments/> <br>For an EMEA environment: <https://emea.flow.microsoft.com/manage/environments/> <br>For a GCC environment: <https://gov.flow.microsoft.us/manage/environments/> |
     |Admin eMail |Admin eMailed with this solution, and copy the web link (to launch the app) and paste it into this variable. This environment variable is not used until you adopt the Developer Compliance Center.  |
-    | Developer Compliance Center         | Filled in after install of Governance solution. And described in those steps. <br> Navigate to the details page of the Developer Compliance Center (canvas app) included with this solution, and copy the web link (to launch the app) and paste it into this variable.  |
+    | Developer Compliance Center         | Leave empty on Import. Populated after set up of the [Governance components](setup-governance-components.md). Navigate to the details page of the Developer Compliance Center (canvas app) included with this solution, and copy the web link (to launch the app) and paste it into this variable.  |
     | Community URL         | Link to your internal Microsoft Power Platform community (for example, Yammer or Teams).  |
 
-    ![Update environment variable values](media/msi-envvar.png "Update environment variable values")
+    ![Update environment variable values.](media/msi-envvar.png "Update environment variable values")
 
 1. Select **Import**.
 
@@ -103,8 +104,8 @@ This is the first step of the installation process and is required for every oth
 Before you begin:
 
 - decide which team to add the Core Components solution to or create a new team.
-- [install the Power Apps app](https://docs.microsoft.com/powerapps/teams/install-personal-app) in Teams.
-- [create your first app](https://docs.microsoft.com/powerapps/teams/create-first-app) (at least one app is required in the environment to enable the solution import experience).
+- [install the Power Apps app](/powerapps/teams/install-personal-app) in Teams.
+- [create your first app](/powerapps/teams/create-first-app) (at least one app is required in the environment to enable the solution import experience).
 
 1. Download the CoE Starter Kit compressed file ([aka.ms/CoeStarterKitDownload](https://aka.ms/CoeStarterKitDownload)).
 
@@ -143,7 +144,7 @@ Before you begin:
 
     If you create a new connection, you must select **Refresh**. You won't lose your import progress.
 
-     ![Establish connections to all connectors used in the solution](media/coreteams-1.png "Establish connections to all connectors used in the solution.")
+     ![Establish connections to all connectors used in the solution.](media/coreteams-1.png "Establish connections to all connectors used in the solution.")
 
 1. Update environment variable values. The environment variables are used to store application and flow configuration data with data specific to your organization or environment. This means that you only have to set the value once per environment and it will be used in all necessary flows and apps in that environment. All the flows in the solution depend on all environment variables' being configured.
 
@@ -156,10 +157,10 @@ Before you begin:
     | Power Platform Maker Microsoft 365 Group | The Admin \| Welcome Email flow sends a welcome email to onboard new makers and adds them to a Microsoft 365 group. You can use this group to send communications to your makers or invite them to a Yammer or Teams group. Configure the group ID here.|
     |Power Automate environment variable | The URL used by flow for your region. Here are examples:<br> For a US environment: <https://us.flow.microsoft.com/manage/environments/> <br> For a Canadian environment: <https://canada.flow.microsoft.com/manage/environments/> <br>For an EMEA environment: <https://emea.flow.microsoft.com/manage/environments/> <br>For a GCC environment: <https://gov.flow.microsoft.us/manage/environments/> |
     |Admin eMail |Admin eMailed with this solution, and copy the web link (to launch the app) and paste it into this variable. This environment variable is not used until you adopt the Developer Compliance Center.  |
-    | Developer Compliance Center         | Navigate to the details page of the Developer Compliance Center (canvas app) included with this solution, and copy the web link (to launch the app) and paste it into this variable.  |
+    | Developer Compliance Center         | Leave empty on Import. Populated after set up of the [Governance components](setup-governance-components.md). Navigate to the details page of the Developer Compliance Center (canvas app) included with this solution, and copy the web link (to launch the app) and paste it into this variable. |
     | Community URL         | Link to your internal Microsoft Power Platform community (for example, Yammer or Teams).  |
 
-     ![Set environment variable values](media/coreteams-2.png "Set environment variable values.")
+     ![Set environment variable values.](media/coreteams-2.png "Set environment variable values.")
 
 1. Select **Import**.
 
@@ -221,14 +222,14 @@ The following values are expected for these settings:
 
 **To configure CoE settings**
 
-1. For Option 1 (Core Components installed in Production environment)
+1. If you have installed the solution in a Production environment:
     1. Go to [make.powerapps.com](https://make.powerapps.com/), select **Apps**, and then open the **Power Platform Admin View** model-driven app in Play mode.
     1. On the left pane, select **Configure**.
     1. On the **Configure view** screen, select **+ New**.
     1. Provide values as listed in the above table.
     1. Select **Save**.
 
-1. For Option 2 (Core Components installed in Dataverse for Teams environment)
+1. If you have installed the solution in a Dataverse for Teams environment:
     1. Open to the Power Apps app in Teams, select **Build**, and select the Team you have added the solution to.
     1. Select **Installed apps**.
     1. Select **See all** for Center of Excellence - Core Components.
@@ -253,8 +254,8 @@ The core components solution doesn't contain any apps for makers or users, only 
 
 More information:
 <br>
-[Share a canvas app in Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/share-app)<br>
-[Publish and add an app to Teams](https://docs.microsoft.com/powerapps/teams/publish-and-share-apps#publish-and-add-an-app-to-teams)
+[Share a canvas app in Power Apps](/powerapps/maker/canvas-apps/share-app)<br>
+[Publish and add an app to Teams](/powerapps/teams/publish-and-share-apps#publish-and-add-an-app-to-teams)
 
 ## Wait for flows to finish
 
@@ -275,10 +276,20 @@ After the sync flows have finished running (depending on the number of environme
 
 Environment variables are used to store application and flow configuration data with data specific to your organization or environment.
 
-1. Go to [flow.microsoft.com](<https://flow.microsoft.com>).
-1. On the left pane, select **Solutions**.
-1. Select the **Default Solution**, and change the filter to show **Environment Variables**.
-1. Select a variable that you want to update, and then configure its **Current Value**.
+1. If you have installed the solution in a Production environment:
+   1. Go to [flow.microsoft.com](<https://flow.microsoft.com>).
+   1. On the left pane, select **Solutions**.
+   1. Select the **Default Solution**, and change the filter to show **Environment Variables**.
+   1. Select a variable that you want to update, and then configure its **Current Value**.
+
+1. If you have installed the solution in a Dataverse for Teams environment:
+   1. Go to [flow.microsoft.com](<https://flow.microsoft.com>).
+   1. On the left pane, select **Solutions**.
+   1. Select the **Common Data Service Default Solution**.
+   1. Select **+ Add > Environment Variables**.
+   1. Select the existing Environment Variables from the managed solution that you want to update.
+   1. Now, change the filter to show **Environment Variables**.
+   1. Select a variable that you want to update, and then configure its **Current Value**.
 
     Update one of the following variables for the core components solution, and then select **Save**.
 

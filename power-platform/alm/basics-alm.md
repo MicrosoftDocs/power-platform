@@ -3,6 +3,7 @@ title: "Application lifecycle management (ALM) basics with Microsoft Power Platf
 description: "Learn the basics of application lifecycle management with Microsoft Power Platform"
 keywords: 
 author: shmcarth
+ms.subservice: alm
 ms.author: shmcarth
 manager: kvivek
 ms.custom: ""
@@ -94,7 +95,7 @@ Solutions have these features:
 
 -   They can contain many different Microsoft Power Platform components, such as model-driven
     apps, canvas apps, site maps, flows, entities, forms, custom connectors, web
-    resources, option sets, charts, and fields. Notice that not all entities can be included in a solution. For example, the account and contact entities aren't solution components.
+    resources, option sets, charts, and fields. Notice that not all entities can be included in a solution. For example, the Application User, Custom API, and Organization Setting system tables can't be added to a solution.
 
 -   They're packaged as a unit to be exported and imported to other environments, or
     deconstructed and checked into source control as source code for assets.
@@ -155,7 +156,7 @@ There are two main paths you can use when working with solutions in a source con
 - Export the unmanaged solution and place it as unpacked in the source control system. The build process imports the packed solution as unmanaged into a temporary build environment (sandbox environment). Then, export the solution as managed and store it as a build artifact in your source control system. 
 - Export the solution as unmanaged and also export the solution as managed, and place both in the source control system. Although this method doesn't require a build environment, it does require maintaining two copies of all components (one copy of all unmanaged components from the unmanaged solution and one copy of all managed components from the managed solution).
 
-![Source control by using a solution](media/build-pipeline-alm.png "Source control by using a solution")
+![Source control by using a solution.](media/build-pipeline-alm.png "Source control by using a solution")
 
 More information: [Build tool tasks](devops-build-tool-tasks.md#build-and-release-pipelines)
 

@@ -5,7 +5,8 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/04/2021
+ms.date: 07/16/2021
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -29,9 +30,9 @@ Certain experiences aren't available with Dynamics 365 GCC and GCC High. Microso
 - [Connected Field Service](/previous-versions/dynamicscrm-2016/developers-guide/mt744253(v=crm.8))
 - [Data Export Service](https://appsource.microsoft.com/product/dynamics-365/mscrm.44f192ec-e387-436c-886c-879923d8a448) - replaced by Microsoft Dataverse to [Azure Data Lake](/powerapps/maker/common-data-service/export-to-data-lake). Available CY2020 – Q4.
 - [Gamification](/dynamics365/customer-engagement/gamification/manage-gamification-in-dynamics-365-online)
-- [Home.Dynamics.com](https://home.dynamics.com/) and the app switcher
+- [The app launcher](quickly-navigate-office-365-app-launcher.md)  
 - [Insights, powered by InsideView](https://appsource.microsoft.com/product/dynamics-365/insideviewinc.b5386882-4312-4d69-879a-23081897c012)
-- [Power BI “embedded” user dashboard experience](/power-bi/service-connect-to-microsoft-dynamics-crm)
+- [Power BI “embedded” user dashboard experience](/power-bi/developer/embedded/embedded-analytics-power-bi)
 - [Relevance Search (Available CY2020-Q4)](/powerapps/user/relevance-search)
 - [Versium Predict](/dynamics365/customer-engagement/versium-predict/versium-predict)
 - [Teams Integration](/dynamics365/teams-integration/teams-integration)

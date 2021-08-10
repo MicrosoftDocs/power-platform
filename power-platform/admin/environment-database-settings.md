@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 11/04/2019
+ms.subservice: admin
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -35,17 +36,17 @@ There is a set of database settings for each environment that provides default o
 2. Locate the **OrganizationSettingsEditor** solution and double-click the **OrganizationSettingsEditor** row. 
 
    > [!div class="mx-imgBorder"] 
-   > ![Open organizationsettingseditor-solution](media/organizationsettingseditor-solution.png "Open organizationsettingseditor-solution")
+   > ![Open organizationsettingseditor-solution.](media/organizationsettingseditor-solution.png "Open organizationsettingseditor-solution")
 
 3. Select **Add** on a setting. The **Add** link changes to **Edit**. 
 
    > [!div class="mx-imgBorder"] 
-   > ![Add setting](media/organizationsettingseditor-add.png "Add setting")
+   > ![Add setting.](media/organizationsettingseditor-add.png "Add setting")
 
 4. Select **Edit** to change the values.
 
    > [!div class="mx-imgBorder"] 
-   > ![Edit setting](media/organizationsettingseditor-edit.png "Edit setting")
+   > ![Edit setting.](media/organizationsettingseditor-edit.png "Edit setting")
 
 5. Type in the value, for example true or false, or ‘0’ or ‘1’, based on the **Option** value as listed in the dialog box .
 6. Select **Update**. 
