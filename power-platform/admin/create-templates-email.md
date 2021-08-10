@@ -30,7 +30,7 @@ An email template is attached to an email activity after the activity is created
   
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
   
-2. In the Microosft Power Platform admin center, select an environment. 
+2. In the Microsoft Power Platform admin center, select an environment. 
 
 3. Select **Settings** > **Templates** > **Email templates**.  
   
