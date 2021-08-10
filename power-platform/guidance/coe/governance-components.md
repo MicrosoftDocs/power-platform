@@ -65,8 +65,8 @@ Represents archival approval tasks started during the App Archive and Clean Up f
 | [Admin \| Setup - Ignored Archival Requests](#admin--setup---ignored-archival-requests) | Instant | Run Once |
 | [Request Orphaned Objects Reassigned (Child)](#request-orphaned-objects-reassigned-child) | Instant | child |
 | [Request Orphaned Objects Reassigned (Parent)](#request-orphaned-objects-reassigned-parent) | Schedule | Daily |
-| [HELPER - CanvasAppOperations Gov](#helper---canvasappoperatons-gov) | Instant | helper |
-| [HELPER - CloudFlowOperations Gov](#helper---cloudflowoperatons-gov) | Instant | helper |
+| [HELPER - CanvasAppOperations Gov](#helper---canvasappoperations-gov) | Instant | helper |
+| [HELPER - CloudFlowOperations Gov](#helper---cloudflowoperations-gov) | Instant | helper |
 
 
 ### Microsoft Teams Admin | Ask for Business Justification when Microsoft Teams environment is created
@@ -180,13 +180,13 @@ If they chose to see the items individually then they can make these decisions g
 
 ![Orphaned object item](media/orphanedobjects3.png "Orphaned object item")
 
-### HELPER - CanvasAppOperatons Gov
+### HELPER - CanvasAppOperations Gov
 
 This flow takes in the environment, app, and operation to perform as well as the GUID for the new maker if the operation is to reassign ownership. <br>
 The operations supported are Delete and Assign (which reassigns owner) <br>
 It performs the action on the actual object in the tenant and also updates the inventory.
 
-### HELPER - CloudFlowOperatons Gov
+### HELPER - CloudFlowOperations Gov
 
 This flow takes in the environment, flow, and operation to perform as well as the GUID for the new maker if the operation is to reassign ownership. <br>
 The operations supported are Delete and Assign (which reassigns owner) <br>
