@@ -438,7 +438,8 @@ Assigning an AAD security group to the environment is a best practice in general
 
 ### See also
 [Get started with security roles in Dataverse](/learn/modules/get-started-security-roles/) <br />
-[Assign a security role to a user](assign-security-roles.md)
+[Assign a security role to a user](assign-security-roles.md) <br />
+[Opt-out of automatic license-based user roles management](opt-out-automatic-license.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
