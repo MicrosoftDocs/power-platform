@@ -425,7 +425,7 @@ The following table shows the fields that are populated on the user form (user r
 
 ## FAQ
 
-### If a user that is added to Dataverse SystemUser table becomes disabled or unlicensed in AAD, how is that reflected in Dataverse?  
+### If a user that is added to Dataverse SystemUser table becomes disabled or unlicensed in Azure AD, how is that reflected in Dataverse?  
 User record is not deleted, but its state in Dataverse will be updated to “disabled”.  
 
 ### Are all users in Azure AD being added to Dataverse? 
