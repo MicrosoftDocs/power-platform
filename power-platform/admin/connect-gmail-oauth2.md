@@ -31,9 +31,12 @@ Follow the steps in this article to set up server-side synchronization to send a
 
 We're in the process of rolling out this feature. To determine whether your environment can connect Gmail accounts using OAuth 2.0, do the following:
 
-1. In the  [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment. 
+1. Do one of the following: 
 
-2. Select **Settings** > **Email** > **Mailboxes**. To open settings for apps that use [Unified Interface](about-unified-interface.md), look in the upper-right corner and select **Settings** ![Gear icon.](media/selection-rule-gear-button.png), and then select **Advanced settings**. 
+   - In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.    
+   - In the legacy web client in the upper-right corner, select ![Gear icon.](media/selection-rule-gear-button.png), and then select **Advanced settings**. 
+
+2. Select **Settings** > **Email** > **Mailboxes**. 
 
 3. Select a mailbox and check the top menu bar for the **Signin To Gmail** icon. If it's present, the feature is enabled for this environment.
 
