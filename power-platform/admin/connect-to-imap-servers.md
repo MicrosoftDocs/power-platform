@@ -32,7 +32,7 @@ Follow these steps to connect customer engagement apps (such as [Dynamics 365 Sa
 
 ## Create an email server profile 
 
-1. In the Power Platform admin center, select an environment.
+1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.
 
    > [!NOTE]
    > If you're using the web app, go to [Create an email server profile using the legacy web app](#create-an-email-server-profile-by-using-the-legacy-web-app).
@@ -119,7 +119,7 @@ Set server-side synchronization to be the default configuration method.
 
 1. Do one of the following: 
 
-   - In the Power Platform admin center, select an environment.
+   - In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment. 
    - In the legacy web client in the upper-right corner, select ![Gear icon.](media/selection-rule-gear-button.png), and then select **Advanced settings**. 
 
 2. Select **Settings** > **Email** > **Email settings**.  
@@ -156,7 +156,7 @@ Choose *one* of the following methods: set mailboxes to the default profile, or 
 
 1. Do one of the following: 
 
-   - In the Power Platform admin center, select an environment.
+   - In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment. 
    - In the legacy web client in the upper-right corner, select ![Gear icon.](media/selection-rule-gear-button.png), and then select **Advanced settings**. 
 
 2. Select **Settings** > **Email** > **Mailboxes**.  
@@ -173,7 +173,7 @@ Choose *one* of the following methods: set mailboxes to the default profile, or 
 
 1. Do one of the following: 
 
-   - In the Power Platform admin center, select an environment.    
+   - In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.    
    - In the legacy web client in the upper-right corner, select ![Gear icon.](media/selection-rule-gear-button.png), and then select **Advanced settings**. 
 
 2. Select **Settings** > **Email** > **Mailboxes**.  
@@ -198,7 +198,7 @@ You need to approve each user mailbox or queue before that mailbox can process e
 
 1. Do one of the following: 
 
-   - In the Power Platform admin center, select an environment.
+   - In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment. 
    - In the legacy web client in the upper-right corner, select ![Gear icon.](media/selection-rule-gear-button.png), and then select **Advanced settings**. 
 
 2. Select **Settings** > **Email** > **Mailboxes**.  
@@ -215,7 +215,7 @@ You need to approve each user mailbox or queue before that mailbox can process e
 
 1. Do one of the following: 
 
-   - In the Power Platform admin center, select an environment.
+   - In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment. 
    - In the legacy web client in the upper-right corner, select ![Gear icon.](media/selection-rule-gear-button.png), and then select **Advanced settings**. 
 
 2. Select **Settings** > **Email** > **Mailboxes**.  
@@ -240,7 +240,7 @@ You can find information about recurring issues and other troubleshooting inform
 
 1. Do one of the following: 
 
-   - In the Power Platform admin center, select an environment.
+   - In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment. 
    - In the legacy web client in the upper-right corner, select ![Gear icon.](media/selection-rule-gear-button.png), and then select **Advanced settings**. 
 
 2. Select **Settings** > **Email** > **Server profiles**.  
