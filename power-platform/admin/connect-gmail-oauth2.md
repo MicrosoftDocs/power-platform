@@ -4,7 +4,7 @@ description: "Connect Gmail accounts using OAuth 2.0 "
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/12/2021
+ms.date: 08/11/2021
 author: revachauhan
 ms.subservice: admin
 ms.author: rechauha
@@ -19,6 +19,8 @@ search.app:
 ---
 
 # Connect Gmail accounts by using OAuth 2.0 
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Follow the steps in this article to set up server-side synchronization to send and receive email in customer engagement apps (such as [Dynamics 365 Sales](/dynamics365/sales-professional/help-hub), [Dynamics 365 Customer Service](/dynamics365/customer-service/help-hub), [Dynamics 365 Marketing](/dynamics365/marketing/help-hub), [Dynamics 365 Field Service](/dynamics365/field-service/overview), and [Dynamics 365 Project Service Automation](/dynamics365/project-operations/psa/overview)) from Gmail accounts by using OAuth 2.0 as the authorization mechanism.
 
