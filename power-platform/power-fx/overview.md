@@ -66,7 +66,6 @@ FIND("|",
 SUBSTITUTE(A1," ","|",
 LEN(A1)-LEN(SUBSTITUTE(A1," ",""))))
 Cell A1 contains the text "Hello, World! It is great to meet you!" Cell A2 contains the text "you!"
-:::image-end:::
 
 Power Fx works with this same formula, with the cell references replaced with control property references:
 
@@ -79,7 +78,6 @@ FIND("|",
 SUBSTITUTE(Input.text," ","|",
 Len(Input.Text)-Len(Substitute(Input.Text," ",""))))
 In the Input box below the formula, the text "Hello, World! It is great to meet you!" appears, letter by letter. At the same time in the Label box, the letters of the last word appear. When the full text appears in the Input box, the word "you!" appears in the Label box.
-:::image-end:::
 
 As the `Input` control value is changed, the `Label` control automatically recalculates the formula and shows the new value. There are no `OnChange` event handlers here, as would be common in other languages.
 
