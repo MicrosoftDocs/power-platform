@@ -4,7 +4,7 @@ description: About fine-grained controls such as the ability to block specific c
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/03/2021
+ms.date: 08/11/2021
 author: jimholtz
 ms.subservice: admin
 ms.author: jimholtz
@@ -129,7 +129,7 @@ New-PowerAppDlpPolicyConnectorConfigurations -TenantId $TenantId -PolicyName $Po
 
 ## Endpoint filtering 
 
-Endpoint filtering allows admins to govern at a fine grain which specific endpoints will be allowed versus blocked at a tenant or environment level. This facility is available for HTTP, HTTP with Azure AD, HTTP Webhook, SQL Server, Dataverse (legacy), Azure Blob Storage, and SMTP connection endpoints. For more information, see [Endpoint input formats and examples](dlp-endpoint-input-formats-examples.md).
+Endpoint filtering allows admins to govern at a fine grain which specific endpoints will be allowed versus blocked at a tenant or environment level. This facility is available for HTTP, HTTP with Azure AD, HTTP Webhook, SQL Server, Azure Blob Storage, and SMTP connection endpoints. The feature will soon be available for Dataverse (legacy). For more information, see [Endpoint input formats and examples](dlp-endpoint-input-formats-examples.md).
 
 The **Endpoint configurable** column on the **Prebuilt Connectors** page in **Data Policies** indicates whether the endpoint filtering capability is supported for the connector
 
