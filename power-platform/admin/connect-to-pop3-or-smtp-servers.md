@@ -19,12 +19,13 @@ search.app:
 ---
 # Connect Gmail accounts, POP3 email server, or SMTP email server by using credentials specified by a user or queue 
 
+ [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+
 Follow the steps in this article to set up server-side synchronization to send and receive email in customer engagement apps (such as [Dynamics 365 Sales](/dynamics365/sales-professional/help-hub), [Dynamics 365 Customer Service](/dynamics365/customer-service/help-hub), [Dynamics 365 Marketing](/dynamics365/marketing/help-hub), [Dynamics 365 Field Service](/dynamics365/field-service/overview), and [Dynamics 365 Project Service Automation](/dynamics365/project-operations/psa/overview)) from Gmail accounts, POP3 email server, or SMTP email server by using credentials specified by a user or queue as the authorization mechanism.
 
 
 ## Early access: Create an email server profile for Gmail accounts 
 
- [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
  
 The step is for customers on [early access](opt-in-early-access-updates.md).
 
