@@ -807,16 +807,12 @@
           items:
           - name: Troubleshoot server-side synchronization
             href: troubleshooting-monitoring-server-side-synchronization.md
-          - name: Error logging in server-side synchronization
-            href: error-logging-server-side-synchronization.md   
           - name: Monitor email processing errors
             items:
             - name: Monitor email processing errors
               href: monitor-email-processing-errors.md 
             - name: Email in "Pending Send" status?
               href: why-email-message-sent-have-pending-send-status.md 
-          - name: Recover from Exchange Server failure
-            href: recover-from-exchange-server-failure.md 
        # Leave this commented out as this topic should not appear in the TOC. For context-sensitive help link.
        #   - name: When would I want to use this check box?
        #     href: when-would-want-use-check-box.md
