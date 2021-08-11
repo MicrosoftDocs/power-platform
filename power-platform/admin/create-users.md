@@ -42,7 +42,7 @@ For step-by-step instructions for creating a [!INCLUDE[pn_MS_Online_Services](..
 ## User types
 
 ### Regular users
-These are the regular synchronized users from Azure AD.
+These are the regular synchronized users from Azure Active Directory (Azure AD).
 
 ### Application users
 Identified by the presence of ApplicationId attribute in the system user record. To check the Azure AD application ID, see [View or edit the details of an application user](manage-application-users.md#view-or-edit-the-details-of-an-application-user).
@@ -425,14 +425,14 @@ The following table shows the fields that are populated on the user form (user r
 
 ## FAQ
 
-### If a user that is added to Dataverse SystemUser table becomes disabled or unlicensed in AAD, how is that reflected in Dataverse?  
+### If a user that is added to Dataverse SystemUser table becomes disabled or unlicensed in Azure AD, how is that reflected in Dataverse?  
 User record is not deleted, but its state in Dataverse will be updated to “disabled”.  
 
-### Are all users in AAD being added to Dataverse? 
-Users from AAD are added to Dataverse only if they meet the criteria. If already existing users do not meet the criteria, their state will be updated to “disabled”, 
+### Are all users in Azure AD being added to Dataverse? 
+Users from Azure AD are added to Dataverse only if they meet the criteria. If already existing users do not meet the criteria, their state will be updated to “disabled”, 
 
 ### How can the admin increase the performance of adding users in Dataverse? 
-Assigning an AAD security group to the environment is a best practice in general, that can also result in a performance increase as regard to adding users that are part of the security group to Dataverse. 
+Assigning an Azure AD security group to the environment is a best practice in general, that can also result in a performance increase as regard to adding users that are part of the security group to Dataverse. 
 
 
 
