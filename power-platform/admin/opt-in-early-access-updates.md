@@ -19,7 +19,7 @@ search.app:
 ---
 # Opt in to early access updates 
 
-Microsoft Power Platform and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation) deliver two [major releases](policies-communications.md#major-release-events) per year (April and October) that offer new capabilities and functionality.
+Microsoft Power Platform and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Operations) deliver two [major releases](policies-communications.md#major-release-events) per year (April and October) that offer new capabilities and functionality.
 
 Because the major releases include features that affect the user experience, you can opt in for early access to self-update to the new release, and start testing and validating the new features before they're automatically enabled for your users.
 
@@ -78,6 +78,20 @@ The early access updates are available for all types of environments, including 
 > - After they're enabled, the updates can't be reverted. Be sure to update your sandbox or trial environment before updating the production environment.  
 > - Only the apps that you currently have licenses for will be updated; no new apps will be installed. 
 > - It might take a few hours to complete the updates. All applications in the environment will still be available during the update, though you might experience slightly reduced performance.  
+
+## Additional requirements to enable early access updates  
+Some apps require additional steps to enable early access features. If you have any of the following apps, after enabling the early access updates on the Power Platform admin center, you'll need to take the following manual steps.
+
+|Early access apps  |Description of manual steps  |
+|---------|---------|
+|Dynamics 365 Marketing     | Run the Marketing setup wizard to update your environment. This will install both the new release for production updates and the early access features when you run it on an environment where early access is enabled. For instructions, see [Rerun the Dynamics 365 Marketing setup wizard](/dynamics365/customer-engagement/marketing/re-run-setup).          |
+|Dynamics 365 Field Service     | If you have Dynamics 365 Field Service version 8.8.6.0 or newer, you'll automatically receive the early access updates. If you're running on an older version of the Field Service app, you'll need to perform an upgrade. See [Upgrade Dynamics 365 Field Service](/dynamics365/field-service/upgrade-field-service).        |
+| Dynamics 365 Resource Scheduling Optimization | If you have Dynamics 365 Resource Scheduling Optimization, you will need to update or deploy Resource Scheduling Optimization in the Power Platform admin center. For instructions, see [Manage Dynamics 365 apps](manage-apps.md), [Update RSO](/dynamics365/field-service/upgrade-field-service#resource-scheduling-optimization), and [Deploy RSO](/dynamics365/field-service/rso-deployment). |
+
+
+> [!IMPORTANT]
+> Be sure to enable the early access updates in the Power Platform admin center first. If you run the Dynamics 365 Marketing setup wizard to update your Marketing app to a new release wave before activating the early access updates in the Power Platform admin center, you must [run the Dynamics 365 Marketing setup wizard again](/dynamics365/customer-engagement/marketing/re-run-setup) after opting in to install and enable the early access features. 
+
 
 ## Update status and Retry 
 
