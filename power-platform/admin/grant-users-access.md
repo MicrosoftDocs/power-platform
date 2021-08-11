@@ -32,8 +32,6 @@ In Power Apps, populate the service with your organization’s data, including u
   
 > [!IMPORTANT]
 >  When you assigned any of the licenses or the Microsoft Power Automate license to a user,  the user is automatically added to all your environments, however users can’t access any apps until they’ve been assigned at least one security role. See [Step Two: Assign security roles](../admin/grant-users-access.md#BKMK_StepTwo).  
-  
-<a name="BKMK_O365CRMroles"></a>   
 
 ## Differences between the Microsoft Online services environment administrative roles and Microsoft Dataverse security roles  
  *Administrative roles* are available to assign to users in the [!INCLUDE[pn_MS_Online_Services_Portal](../includes/pn-ms-online-services-portal.md)]. The administrative roles cover a set of rights and permissions related to managing the service subscription, such as adding users and assigning licenses. The global administrator role has rights to control every aspect of the subscription and to add subscriptions to other online services. The password administrator role has rights to reset a user’s password, create service requests, and monitor the service.  
@@ -53,8 +51,6 @@ In Power Apps, populate the service with your organization’s data, including u
   
 ### The online service sends an invitation to each user  
  After you set up a user in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], that user receives an email invitation with a link and a password for the [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)]. The credentials in the invitation provide access to the portal and to documentation. However, the users who receive these invitations can’t access customer engagement apps until you complete step two in this process.  
-  
-<a name="BKMK_StepTwo"></a>   
 
 ## Step Two: Assign security roles in Dynamics 365 apps  
  Sign in to customer engagement apps and add business units (if your organization needs more than one business unit), and assign security roles and business units to users. The users you registered with the online service in step one are automatically added to customer engagement apps. After you assign at least one security role to a user, that user can click the link in the email invitation, enter credentials, and begin using customer engagement apps. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Assign a security role to a user](assign-security-roles.md).  
@@ -67,6 +63,6 @@ In Power Apps, populate the service with your organization’s data, including u
 ### See also  
  [Plan for deployment and administration](../admin/plan-for-deployment-and-administration.md)   
  [Import data (all record types)](../admin/import-data-all-record-types.md)   
-
+ [Video: Administer application users, security roles, teams, and users in the Power Platform admin center](https://youtu.be/1Iet2si8Ehw) 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

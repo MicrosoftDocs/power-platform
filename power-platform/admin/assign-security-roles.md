@@ -9,7 +9,7 @@ ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/27/2021
+ms.date: 08/11/2021
 search.audienceType: 
   - admin
 search.app:
@@ -30,6 +30,9 @@ search.app:
 - By default, the System Administrator security role has all the required privileges to assign security roles to any user including assigning the System Administrator security role. If you have a need to allow non-System Administrators to assign security roles, you should consider creating a custom security role. See [Create an administrative user and prevent elevation of security role privilege](prevent-elevation-security-role-privilege.md). 
 
  For more information about the difference between [!INCLUDE[pn_MS_Online_Services](../includes/pn-ms-online-services.md)] administrator roles and security roles, see [Grant users access](grant-users-access.md).  
+
+> [!TIP]
+> Check out the following [video: Assigning security roles in the Power Platform admin center](https://youtu.be/MJhIwVSpQNM).
   
 Follow these steps to assign a security role.
 
