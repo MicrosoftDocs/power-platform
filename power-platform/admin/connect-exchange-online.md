@@ -4,7 +4,7 @@ description: Connect to Exchange Online
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/12/2021
+ms.date: 08/11/2021
 author: revachauhan
 ms.subservice: admin
 ms.author: rechauha
@@ -18,6 +18,8 @@ search.app:
   - Flow
 ---
 # Connect to Exchange Online
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 With both [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] and customer engagement apps (such as [Dynamics 365 Sales](/dynamics365/sales-professional/help-hub), [Dynamics 365 Customer Service](/dynamics365/customer-service/help-hub), [Dynamics 365 Marketing](/dynamics365/marketing/help-hub), [Dynamics 365 Field Service](/dynamics365/field-service/overview), and [Dynamics 365 Project Service Automation](/dynamics365/project-operations/psa/overview)) hosted as online services, connecting the two is a simpler, more straightforward configuration.  
   
@@ -37,7 +39,7 @@ With both [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-excha
 >  To make sure you've got a good connection to [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)], run the [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/). For information about which tests to run, see [Test mail flow with the Remote Connectivity Analyzer](https://technet.microsoft.com/library/dn305950\(v=exchg.150\).aspx).
 
 
-## Create an email server profile for Exchange Online
+## Preview: Create an email server profile for Exchange Online
 
 1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment. 
 
@@ -75,7 +77,10 @@ With both [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-excha
 
  If you have an [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] subscription in the same tenant as your subscription, customer engagement apps create a default profile named **Microsoft Exchange Online** for the email connection. To verify that you have this profile, do the following:  
   
-1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment. 
+1. Do one of the following: 
+
+   - In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.    
+   - In the legacy web client in the upper-right corner, select ![Gear icon.](media/selection-rule-gear-button.png), and then select **Advanced settings**. 
 
 2. Select **Settings** > **Email** > **Server profiles**.  
   
@@ -87,7 +92,10 @@ With both [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-excha
 
 Set server-side synchronization to be the default configuration method for newly created users.  
   
-1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment. 
+1. Do one of the following: 
+
+   - In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.    
+   - In the legacy web client in the upper-right corner, select ![Gear icon.](media/selection-rule-gear-button.png), and then select **Advanced settings**. 
 
 2. Select **Settings** > **Email** > **Email settings**.  
   
@@ -116,7 +124,10 @@ Choose *one* of the following methods: set mailboxes to the default profile, or 
 <!--markdownlint-disable MD036--> 
 **To set mailboxes to the default profile**
 
-1. In the Power Platform admin center, select an environment. 
+1. Do one of the following: 
+
+   - In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.    
+   - In the legacy web client in the upper-right corner, select ![Gear icon.](media/selection-rule-gear-button.png), and then select **Advanced settings**.  
 
 2. Select **Settings** > **Email** > **Mailboxes**.  
   
@@ -130,7 +141,10 @@ Choose *one* of the following methods: set mailboxes to the default profile, or 
   
 **To edit mailboxes to set the profile and delivery methods**
   
-1. In the Power Platform admin center, select an environment. 
+1. Do one of the following: 
+
+   - In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.    
+   - In the legacy web client in the upper-right corner, select ![Gear icon.](media/selection-rule-gear-button.png), and then select **Advanced settings**. 
 
 2. Select **Settings** > **Email** > **Mailboxes**.  
   
@@ -246,7 +260,10 @@ To approve emails, a Dynamics 365 user requires the **Approve Email Addresses fo
 
 **To manually assign the Approve Email Addresses for Users or Queues privilege to a security role**
 
-1. In the Power Platform admin center, select an environment. 
+1. Do one of the following: 
+
+   - In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.    
+   - In the legacy web client in the upper-right corner, select ![Gear icon.](media/selection-rule-gear-button.png), and then select **Advanced settings**. 
 
 2. Select **Settings** > **Users + permissions** > **Security roles**.  
 
@@ -259,7 +276,10 @@ To approve emails, a Dynamics 365 user requires the **Approve Email Addresses fo
 
 #### Approve mailboxes
 
-1. In the Power Platform admin center, select an environment. 
+1. Do one of the following: 
+
+   - In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.    
+   - In the legacy web client in the upper-right corner, select ![Gear icon.](media/selection-rule-gear-button.png), and then select **Advanced settings**. 
 
 2. Select **Settings** > **Email** > **Mailboxes**.  
   
@@ -273,7 +293,10 @@ To approve emails, a Dynamics 365 user requires the **Approve Email Addresses fo
 
 Admins, as described in the preceding permissions model table, can change the settings so that mailbox approval isn't required.
 
-1. In the Power Platform admin center, select an environment. 
+1. Do one of the following: 
+
+   - In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.    
+   - In the legacy web client in the upper-right corner, select ![Gear icon.](media/selection-rule-gear-button.png), and then select **Advanced settings**. 
 
 2. Select **Settings** > **Email** > **Email settings**.  
 
@@ -283,7 +306,10 @@ Admins, as described in the preceding permissions model table, can change the se
 
 ## Test the configuration of mailboxes  
 
-1. In the Power Platform admin center, select an environment. 
+1. Do one of the following: 
+
+   - In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.    
+   - In the legacy web client in the upper-right corner, select ![Gear icon.](media/selection-rule-gear-button.png), and then select **Advanced settings**. 
 
 2. Select **Settings** > **Email** > **Mailboxes**.  
   
@@ -309,7 +335,10 @@ Make sure you've got a good connection to [!INCLUDE[pn_Exchange_Online](../inclu
   
 ## Test email configuration for all mailboxes associated with an email server profile 
 
-1. In the Power Platform admin center, select an environment. 
+1. Do one of the following: 
+
+   - In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.    
+   - In the legacy web client in the upper-right corner, select ![Gear icon.](media/selection-rule-gear-button.png), and then select **Advanced settings**. 
 
 2. Select **Settings** > **Email** > **Server profiles**.  
   
