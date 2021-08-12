@@ -105,6 +105,16 @@ The [sync flows](#flows) of the CoE Starter Kit sync your tenant resources to th
   - Publisher
   - Tier (standard/premium)
 
+- **Power Apps Portal** represents a Power Apps portal. The following information is available for each portal:
+  - Portal Website ID
+  - Portal Website Name
+  - Portal Website Record Status
+  - Environment
+  - Owner
+  - Created on
+  - Modified on
+  - Portal is orphaned
+
 - **Connection Reference** The linking table for the many-to-many relationships among connectors (PowerApps Connector) and cloud flows (Flows) or apps (PowerApps App).
 
 - **Maker** represents a user who has created an app, flow, custom connector, or environment. The following information is available for each maker (retrieved from Microsoft 365 Users profiles):
@@ -124,23 +134,6 @@ The [sync flows](#flows) of the CoE Starter Kit sync your tenant resources to th
   - App/cloud flow ID
   - User city, country, department, job title (from Microsoft 365)
   - Audit log event time
-
-- **CoE Settings** Configured settings live in a record in this table. This is an important table to populate data into during the setup process, because it contains details that are important for configuring the branding and support aspect of the solution. The following settings are available to configure:
-  - Brand logo
-  - Company name
-  - Primary color
-  - Secondary color
-  - End user support email
-  - Maker support email
-  - Link to community channel
-  - Link to learning material
-  - Link to policy documents
-  - Tenant type (public, GCC)
-
-- **Sync Flow Errors** represents the daily occurrence of sync flow errors to provide a summary email to an admin. The following information is available for each sync flow error:
-  - Flow instance URL
-  - Environment
-  - Created on
 
 - **Power Platform User** represents who an app is shared with. The following information is available for each user:
   - Display name
@@ -222,6 +215,13 @@ The [sync flows](#flows) of the CoE Starter Kit sync your tenant resources to th
   - Cost Code
   - Area Lead
 
+Additional to the above listed inventory tables, the following helper tables support application functionality:
+
+- **Sync Flow Errors** represents the daily occurrence of sync flow errors to provide a summary email to an admin. The following information is available for each sync flow error:
+  - Flow instance URL
+  - Environment
+  - Created on
+- **Archive Approval** stores information on archive requests that have been sent to makers for apps and flows.
 - **Environment Creation Request** represents a request submitted by non-admins to create a new Environment. This has a many-to-many relationship with the Maker and PowerApps Connector tables. The following is available for each request:
   - Approval Date
   - Approval Email
@@ -275,6 +275,7 @@ The [sync flows](#flows) of the CoE Starter Kit sync your tenant resources to th
 | Admin \| Sync Template v3 (PVA) | Automated | when *Admin \| Sync Template v3* flow adds or modifies a record in the Environment table | This flow retrieves Power Virtual Agents (bot) information. This information is retrieved from underlying Dataverse tables and requires the user running the flow to have system administrator privileges in the environment. Turning on this flow is optional, and we recommend that you do so only if you're using Power Virtual Agents in your tenant and are interested in getting a tenant-wide overview. |
 | Admin \| Sync Template v3 (Desktop Flow) | Automated | when *Admin \| Sync Template v3* flow adds or modifies a record in the Environment table | This flow retrieves desktop flow information. This information is retrieved from underlying Dataverse tables and requires the user running the flow to have system administrator privileges in the environment. Turning on this flow is optional, and we recommend that you do so only if you're using desktop flows in your tenant and are interested in getting a tenant-wide overview. |
 | Admin \| Sync Template v3 (Desktop flow runs) | Scheduled | Daily | This flow gets desktop flow run history and session details. Turning on this flow is optional, and we recommended that you do so only if you're using desktop flows in your tenant and are interested in getting a tenant-wide overview. |
+| Admin \| Sync Template v3 (Portals) | Automated | when *Admin \| Sync Template v3* flow adds or modifies a record in the Environment table | This flow retrieves Power Apps Portal information. This information is retrieved from underlying Dataverse tables and requires the user running the flow to have system administrator privileges in the environment. Turning on this flow is optional, and we recommend that you do so only if you're using portals in your tenant and are interested in getting a tenant-wide overview. |
 | Admin \| Sync Template v3 (Sync Flow Errors) | Scheduled | Daily | This flow sends an email to the admin about environments that failed to sync (with a link to the flow instance). |
 | CLEANUP - Admin \| Sync Template v3 (Power Apps User Shared With) | Scheduled | Every two weeks | This long running flow runs every other week, and gets who the app is shared with by using [Get App Role Assignments as Admin](/connectors/powerappsforadmins/#get-app-role-assignments-as-admin). |
 | CLEANUP - Admin \| Sync Template v3 (Check Deleted) | Scheduled | Every two weeks | This long running flow runs every other week, and compares CoE to the tenant to determine if any objects were deleted since last run. Either just marks them as deleted (if env var Also Delete from CoE = no) or deletes them from the CoE (if Also Delete from CoE = yes). The audit log solution is able to find this information in on a daily basis for apps and flows, but not for other resources such as environments, desktop flows and chatbots. Run this flow periodically to check for deleted resources. |
@@ -287,6 +288,8 @@ The [sync flows](#flows) of the CoE Starter Kit sync your tenant resources to th
 | Env Request \| Notify requestor when rejected | Automated | when an Environment Creation Request’s status is updated to Rejected state | Sends an email notification to the requestor with the rejection status and reason, then changes the request to inactive. |
 | Env Request \| Cleanup expired environments | Schedule | Daily | Cleans up environments with expiration dates identified or sends weekly warning email notifications every Monday if the expiration date is coming up within the month. |
 | DLP Request \| Make approved policy change | Automated | when a DLP Policy Change Request record is updated to Approved state | Modifies the existing DLP Policies identified in the request depending on the action type.  |
+| HELPER - CanvasAppOperatons | Child Flow | Instant | this flow takes in the environment, app, and operation to perform as well as the GUID for the new maker if the operation is to reassign ownership. The operations supported are Delete and Assign (which reassigns owner). It performs the action on the actual object in the tenant and also updates the inventory. |
+| HELPER - CloudFlowOperatons | Child Flow | Instant | this flow takes in the environment, flow, and operation to perform as well as the GUID for the new maker if the operation is to reassign ownership. The operations supported are Delete and Assign (which reassigns owner). It performs the action on the actual object in the tenant and also updates the inventory.
 
 ### Admin \| Compliance Detail request v3
 
@@ -329,6 +332,21 @@ More information: [Data Loss Prevention policies](/power-platform/admin/wp-data-
 **Permission**: Intended to be used only by admins. Power Platform Service Admin or Global Admin permission is required. Share this app with your CoE admins.
 
 ![DLP Editor.](media/dlp_new1.png "DLP Editor")
+
+### Power Platform Request Center
+
+Power Platform Request Center is a canvas app that allows makers to request new environments. 
+
+Makers provide 
+- Connectors needed to be used in this enviornment
+- Additional admins to be added to this enviornment
+- Enviornment name and purpose
+- How long the environment is needed for?
+- If a Dataverse instance is required for this enviornment?
+
+### Admin - Power Platform Resources RMS
+
+Power Platform Request Center is a canvas app that allows admins to approve and reject new environments requests. Admins are able to view the request details and view existing DLP policies impacting the requested environment, such as policies that apply to all environments or policies that exclude certain environments. 
 
 ### App Catalog
 
