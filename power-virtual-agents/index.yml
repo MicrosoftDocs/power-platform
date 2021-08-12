@@ -13,6 +13,7 @@ metadata:
   author: iaanw #Required; your GitHub user alias, with correct capitalization.
   ms.author: iawilt #Required; microsoft alias of author; optional team alias.
   ms.date: 09/22/2020 #Required; mm/dd/yyyy format.
+  ms.custom: intro-internal
   hide_bc: false
 
 

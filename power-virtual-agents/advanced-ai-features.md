@@ -2,7 +2,7 @@
 title: "Advanced AI features"
 description: "Use advanced AI features in Power Virtual Agents to improve how your bots interact with your bot users."
 keywords: "PVA, AI, advanced, topic intent, intent triggering"
-ms.date: 3/1/2021
+ms.date: 7/27/2021
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -11,7 +11,13 @@ manager: shellyha
 ms.custom: "advanced-authoring, ceX"
 ms.collection: virtual-agent
 ---
-# AI capabilities in Power Virtual Agents
+# Enable advanced AI features in Power Virtual Agents
+
+Select the version of Power Virtual Agents you're using here:
+
+> [!div class="op_single_selector"]
+> - [Power Virtual Agents web app](advanced-ai-features.md)
+> - [Power Virtual Agents app in Microsoft Teams](teams/advanced-ai-features-teams.md)
 
 ## AI models in Power Virtual Agents - background
 

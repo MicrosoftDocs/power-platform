@@ -1,7 +1,7 @@
 ---
 title: "Deploy packages using Package Deployer and Windows PowerShell | MicrosoftDocs"
 ms.custom: 
-ms.date: 06/10/2020
+ms.date: 08/12/2021
 ms.reviewer: 
 ms.service: power-platform
 ms.topic: article
@@ -47,7 +47,8 @@ A “package” can consist of any or all of the following:
 <a name="GUI"></a>   
 <a name="DeployerPackages"></a>   
 
-## Deploying packages using the Package Deployer tool  
+## Deploying packages using the Package Deployer tool
+
  You can use the Package Deployer tool (packagedeployer.exe) to deploy packages in the following ways.  
   
  [Use CRM Package Deployer tool to deploy packages](#PD_tool)  
@@ -56,7 +57,8 @@ A “package” can consist of any or all of the following:
   
 <a name="PD_tool"></a>   
 
-## Use Package Deployer tool to deploy packages  
+## Use Package Deployer tool to deploy packages
+
  The Package Deployer tool can only process one package at a time. However, it provides users with the ability to select a package to deploy from multiple packages available in the Package Deployer tool directory. Some of the screens and actions in the tool differ based on the package definition. You do not have to install the Package Deployer tool. Just download and run it.  
   
 1. Obtain the package to be deployed. A package is a collection of files and folders that is created in your Visual studio project folder *(\<Project>*\Bin\Debug) when you build your package project in Visual Studio. Copy the following from your project debug folder:  
@@ -91,7 +93,8 @@ A “package” can consist of any or all of the following:
   
 <a name="PD_command"></a>   
 
-## Use Package Deployer tool at the command line  
+## Use Package Deployer tool at the command line
+
  System administrators and customizers can pass parameters, such as a regional language code, to packagedeployer.exe from the command line.  These parameters may only be configured by running Package Deployer tool at the command line.  
   
 > [!NOTE]
@@ -118,14 +121,15 @@ packagedeployer.exe /Settings:"SkipChecks=true|lcid=1045"
   
 <a name="PowerShell"></a>   
 
-## Use Windows PowerShell to deploy packages  
+## Use Windows PowerShell to deploy packages
+
  The Package Deployer tool also provides [!INCLUDE[pn_PowerShell](../includes/pn-powershell.md)] support to deploy packages.  
   
  Perform the following steps to use the [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] cmdlets to deploy packages:  
   
  [Prerequisites](../admin/deploy-packages-using-package-deployer-windows-powershell.md#Prereq)  
   
- [Import the Package Deployer PowerShell module](../admin/deploy-packages-using-package-deployer-windows-powershell.md#import)  
+ [Install the Package Deployer PowerShell module](../admin/deploy-packages-using-package-deployer-windows-powershell.md#install-the-package-deployer-powershell-module)  
   
  [Use the cmdlet to retrieve packages](../admin/deploy-packages-using-package-deployer-windows-powershell.md#retrieve)  
   
@@ -137,35 +141,27 @@ packagedeployer.exe /Settings:"SkipChecks=true|lcid=1045"
   
 <a name="Prereq"></a>   
 
-### Prerequisites  
+### Prerequisites
+
  Here are the prerequisites for using the [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] cmdlets:  
   
 - [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] 3.0 or later is required to deploy a package by using [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)]. To check your [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] version, run a [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] window, and then run the following command: `$Host`  
   
 - Set the execution policy to run the signed [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] scripts. To do so, run a [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] window as an administrator, and then run the following command: `Set-ExecutionPolicy -ExecutionPolicy AllSigned`  
   
-<a name="import"></a>   
+### Install the Package Deployer PowerShell module
 
-### Import the Package Deployer PowerShell module  
- You must import the [!INCLUDE[pn_PowerShell](../includes/pn-powershell.md)] module for the Package Deployer tool before you can use it. To import:  
+ You must install the [!INCLUDE[pn_PowerShell](../includes/pn-powershell.md)] module for the Package Deployer tool before you can use it. To install:  
   
-1. Obtain the PowerShell files for the Package Deployer. [!INCLUDE[cc-use-package-deployer-powershell](../includes/cc-use-package-deployer-powershell.md)]  
+1. Start [!INCLUDE[pn_PowerShell](../includes/pn-powershell.md)] on your computer with elevated privileges (run as administrator).  
   
-2. Start [!INCLUDE[pn_PowerShell](../includes/pn-powershell.md)] on your computer with elevated privileges (run as administrator).  
-  
-3. At the prompt in the [!INCLUDE[pn_PowerShell](../includes/pn-powershell.md)] window, change your directory to the folder where you extracted the files. In this case:  
+1. At the prompt in the Windows PowerShell window, enter the following command to install the module:
   
    ```powershell
-   cd [ExtractedLocation]\tools\  
-   ```  
-  
-4. Run the `RegisterXRMPackageDeployment.ps1` script available at the `[ExtractedLocation]\tools` folder by running the following command:  
-  
-   ```powershell
-   .\RegisterXRMPackageDeployment.ps1  
+      Install-Module Microsoft.Xrm.Tooling.PackageDeployment.Powershell    
    ```
-  
-   You are now ready to use the [!INCLUDE[pn_PowerShell](../includes/pn-powershell.md)] cmdlets. To list the cmdlets that you registered, run the following command at the prompt in the [!INCLUDE[pn_PowerShell](../includes/pn-powershell.md)] window:  
+
+You're now ready to use the [!INCLUDE[pn_PowerShell](../includes/pn-powershell.md)] cmdlets. To list the cmdlets that you registered, run the following command at the prompt in the [!INCLUDE[pn_PowerShell](../includes/pn-powershell.md)] window:  
   
    ```powershell  
    Get-Help “Crm”  
@@ -173,8 +169,9 @@ packagedeployer.exe /Settings:"SkipChecks=true|lcid=1045"
   
 <a name="retrieve"></a>   
 
-### Use the cmdlet to retrieve packages  
- Before you can use the cmdlet, ensure that you have copied your package to the **PackageDeployer** folder (in this case, `[ExtractedLocation]\tools`). A package is a collection of files and folders that is created in your [!INCLUDE[pn_Visual_Studio_short](../includes/pn-visual-studio-short.md)] project folder (*\<Project>*\Bin\Debug) when you build your project in [!INCLUDE[pn_Visual_Studio_short](../includes/pn-visual-studio-short.md)]. Copy the entire contents of your project debug folder to the **PackageDeployer** folder. For detailed information about building a package using [!INCLUDE[pn_Visual_Studio_short](../includes/pn-visual-studio-short.md)], see [Create packages for the CRM Package Deployer](/dynamics365/customerengagement/on-premises/developer/create-packages-package-deployer). 
+### Use the cmdlet to retrieve packages
+
+Before you can use the cmdlet, ensure that you have copied your package to the **PackageDeployer** folder (in this case, `[ExtractedLocation]\tools`). A package is a collection of files and folders that is created in your [!INCLUDE[pn_Visual_Studio_short](../includes/pn-visual-studio-short.md)] project folder (*\<Project>*\Bin\Debug) when you build your project in [!INCLUDE[pn_Visual_Studio_short](../includes/pn-visual-studio-short.md)]. Copy the entire contents of your project debug folder to the **PackageDeployer** folder. For detailed information about building a package using [!INCLUDE[pn_Visual_Studio_short](../includes/pn-visual-studio-short.md)], see [Create packages for the CRM Package Deployer](/dynamics365/customerengagement/on-premises/developer/create-packages-package-deployer). 
   
 1. In the [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] window, use the following cmdlet to return a list of packages available for import in the specified folder (in this case, c:\CRM\SDK\Tools\PackageDeployer):  
   
@@ -184,7 +181,7 @@ packagedeployer.exe /Settings:"SkipChecks=true|lcid=1045"
   
 2. If you want information about a package in a folder, you can use the **Get-CrmPackages** cmdlet along with the **–PackageName** parameter to specify the name of the assembly in the folder that contains the package definition.  
   
-   ```powershell 
+   ```powershell
    Get-CrmPackages –PackageDirectory [ExtractedLocation]\tools –PackageName SampleCRMPackage.dll  
    ```  
   

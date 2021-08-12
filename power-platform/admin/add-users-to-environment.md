@@ -9,7 +9,7 @@ ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/13/2020
+ms.date: 08/11/2021
 search.audienceType: 
   - admin
 search.app:
@@ -37,6 +37,9 @@ When an environment is created with a Dataverse database or a Dataverse database
 - In most cases, adding users to an environment only gives users access to the environment itself, not to any resources (apps and data) in the environment. You need to configure access to resources by [assigning security roles to users](database-security.md). Users with certain Dynamics 365 app licenses will be assigned some security roles by default that only give them read access to the environment's resources. Users who have been assigned service admin roles or the Global admin role, assigned through the Microsoft 365 admin center, will get the [System Administrator role](database-security.md#predefined-security-roles) by default. They will have admin privileges to the environment's resources when they get added to the environment. 
 
 - Because it can take a long time to automatically add users to an environment, you can use the following procedure to add specific users to the environment sooner. 
+
+> [!TIP]
+> Check out the following video: [Adding users to Dataverse](https://youtu.be/TvPT5tn2GHo).
 
 **To add users to an environment that has a Dataverse database**
 

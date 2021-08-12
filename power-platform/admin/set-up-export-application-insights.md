@@ -6,7 +6,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/25/2021
+ms.date: 08/04/2021
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -83,9 +83,9 @@ search.app:
 |South Africa (ZAF)     |  Yes | Jan 2021       |
 |UAE     | Yes | March 2021        |
 |Switzerland (CHE)     | Yes | Jan 2021       |
-|Mooncake     | No |  June 2021 |
-|GCC     | No |  May 2021 |
-|GCC-Mod     | No |  May 2021 |
+|Mooncake     | No |  Fall 2021 |
+|GCC     | No |  Fall 2021 |
+|GCC-Mod     | No |  Fall 2021 |
 |GCC-DOD     | No |  TBD |
 
 

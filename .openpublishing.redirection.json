@@ -1,6 +1,21 @@
 {
   "redirections": [
     {
+      "source_path": "power-platform/admin/recover-from-exchange-server-failure.md",
+      "redirect_url": "monitor-email-processing-errors",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/error-logging-server-side-synchronization.md",
+      "redirect_url": "troubleshooting-monitoring-server-side-synchronization",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/alm/online-management-api.md",
+      "redirect_url": "/powerapps/developer/data-platform/online-management-api/overview",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "power-platform/admin/create-users-assign-online-security-roles.md",
       "redirect_url": "create-users",
       "redirect_document_id": "false"

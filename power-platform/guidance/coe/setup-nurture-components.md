@@ -36,16 +36,12 @@ The Template Catalog app depends on this library. If you don't intend to use the
 
 ### Create the site
 
-If you don't already have a SharePoint site for the Microsoft Power Platform power users in your tenant, create a new team now for them to access. This site is the one specified in the following environment variable: *Power User Site URL (SharePoint Site)*. More information: [Create a team site in SharePoint](https://support.office.com/article/create-a-team-site-in-sharepoint-ef10c1e7-15f3-42a3-98aa-b5972711777d)
+If you don't already have a SharePoint site for the Microsoft Power Platform power users in your tenant, create a new team now for them to access. This site is the one you will specify in the following environment variable once the solution is installed: *Power User Site URL (SharePoint Site)*. More information: [Create a team site in SharePoint](https://support.office.com/article/create-a-team-site-in-sharepoint-ef10c1e7-15f3-42a3-98aa-b5972711777d)
 
 ### Create the library
 
-We've created a helper flow to create the library for you. See the zip file CreateCoETemplateLibaryDocLibraryinSP.zip, which is part of your CoE Starter Kit download.
-
-1. Go to [flow.microsoft.com](https://flow.microsoft.com) > **My Flows** > **Import** and import the CreateCoETemplateLibaryDocLibraryinSP.zip cloud flow.
-
-2. Ensure that the flow is turned on, and run the flow.
-3. When the flow is completed, you'll have a doc library named AppTemplates, with the following columns in the default view:
+1. Create a new document library named AppTemplates
+1. Add the following columns in the default view:
 
    | Column name | Type |
    |----|----|
@@ -104,7 +100,7 @@ If you have existing templates that you'd like to share with your makers (for ex
 
     ![Copy the feedback form URL to send and collect responses.](media/nurture-feedback.png "Copy the feedback form URL to send and collect responses")
 
-1. Save the link to the form for the *Training in a day - Feedback Form* environment variable.
+1. Save the link to the form for the *Training in a day - Feedback Form* environment variable, which will be available once the solution is installed.
 
 ## Import the solution
 
@@ -127,7 +123,7 @@ The core components solution is required for the nurture components solution, or
 
 ## Import starter data set for the Maker Assessment app
 
-Important an initial set of assessment questions to get started using the [Maker Assessment](nurture-components.md#maker-assessment) app. You can add your own questions or customize the existing ones using the admin app for this solution.
+Import an initial set of assessment questions to get started using the [Maker Assessment](nurture-components.md#maker-assessment) app. You can add your own questions or customize the existing ones using the admin app for this solution.
 
 ### Upload starter data to SharePoint Online
 

@@ -9,7 +9,7 @@ ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/08/2021
+ms.date: 08/11/2021
 search.audienceType: 
   - admin
 search.app:
@@ -108,5 +108,9 @@ Check your security role:
 > You can also set this privilege inheritance property for all out-of-the-box security roles except the System Administrator role.  When a privilege inheritance security role is assigned to a user, the user gets all the privileges directly, just like a security role without privilege inheritance.
 >
 > You can only select Basic level privileges in the member's privilege inheritance. If you need to provide access to a child business unit, you will need to elevate the privilege to Deep; for example, you need to assign a security role to the Group team and you want the members of this group to be able to Append to Account.  You setup the security role with a Basic level member's privilege inheritance and in the Append to Account privilege, you set it to Deep.  This is because Basic privileges are only applicable to the user's business unit.
+
+### See also
+[Video: Administer application users, security roles, teams, and users in the Power Platform admin center](https://youtu.be/1Iet2si8Ehw)
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

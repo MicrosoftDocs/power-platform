@@ -4,7 +4,7 @@ description: In this quickstart, you learn how to create a data loss prevention 
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 09/24/2020
+ms.date: 08/03/2021
 author: jimholtz
 ms.subservice: admin
 ms.author: jimholtz
@@ -81,7 +81,7 @@ After this policy is saved, any Power Apps or Power Automate maker who is part o
 
    **Attributes** <br /><br />
 
-   <table style="width:100%">
+   <table width="100%">
    <tr>
    <th>Attribute</th>
    <th>Description</th>
@@ -92,7 +92,7 @@ After this policy is saved, any Power Apps or Power Automate maker who is part o
    </tr>
    <tr>
    <td width="20%"> Blockable</td>
-   <td width="80%"> Connectors that can be blocked. For a list of connectors that can't be blocked, see <a href="wp-data-loss-prevention.md#list-of-connectors-that-cant-be-blocked">List of connectors that can't be blocked</a>.  </td>
+   <td width="80%"> Connectors that can be blocked. For a list of connectors that can't be blocked, see <a href="dlp-connector-classification.md#list-of-connectors-that-cant-be-blocked">List of connectors that can't be blocked</a>.  </td> 
    </tr>
    <tr> 
    <td width="20%"> Type</td>
@@ -110,7 +110,7 @@ After this policy is saved, any Power Apps or Power Automate maker who is part o
 
    **Lists** <br /><br />
 
-   <table style="width:100%">
+   <table width="100%">
    <tr>
    <th>Pivot</th>
    <th>Description</th>
@@ -131,14 +131,14 @@ After this policy is saved, any Power Apps or Power Automate maker who is part o
 
    **Actions** <br /><br />  
 
-   <table style="width:100%">
+   <table width="100%">
    <tr>
    <th>Action</th>
    <th>Description</th>
    </tr>
    <tr>
    <td width="20%"> Set default group </td>
-   <td width="80%"> The group that maps any new connectors added by Microsoft Power Platform <i>after</i> your DLP policy is created. More information: <a href="wp-data-loss-prevention.md#default-data-group-for-new-connectors">Default data group for new connectors</a>      </td>
+   <td width="80%"> The group that maps any new connectors added by Microsoft Power Platform <i>after</i> your DLP policy is created. More information: <a href="dlp-connector-classification.md#list-of-connectors-that-cant-be-blocked">Default data group for new connectors</a>      </td>
    </tr>
    <tr>
    <td width="20%"> Search Connectors </td>
@@ -200,7 +200,7 @@ After this policy is saved, any Power Apps or Power Automate maker who is part o
 
    **Attributes** <br /><br />
 
-   <table style="width:100%">
+   <table width="100%">
    <tr>
    <th>Attribute</th>
    <th>Description</th>
@@ -229,7 +229,7 @@ After this policy is saved, any Power Apps or Power Automate maker who is part o
 
    **Lists** <br /><br />
 
-   <table style="width:100%">
+   <table width="100%">
    <tr>
    <th>Pivot</th>
    <th>Description</th>
@@ -246,7 +246,7 @@ After this policy is saved, any Power Apps or Power Automate maker who is part o
 
    **Actions** <br /><br />
 
-   <table style="width:100%">
+   <table width="100%">
    <tr>
    <th>Action</th>
    <th>Description</th>
