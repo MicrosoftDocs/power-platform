@@ -181,7 +181,7 @@ Before you can use the cmdlet, ensure that you have copied your package to the *
   
 2. If you want information about a package in a folder, you can use the **Get-CrmPackages** cmdlet along with the **–PackageName** parameter to specify the name of the assembly in the folder that contains the package definition.  
   
-   ```powershell 
+   ```powershell
    Get-CrmPackages –PackageDirectory [ExtractedLocation]\tools –PackageName SampleCRMPackage.dll  
    ```  
   
