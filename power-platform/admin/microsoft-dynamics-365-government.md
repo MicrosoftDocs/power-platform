@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/09/2021
+ms.date: 08/12/2021
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -49,6 +49,7 @@ Select Dynamics 365 US Government products are available to qualified government
 |Dynamics 365 Finance     |      |         |
 |Dynamics 365 Omnichannel for Customer Service     |     |         |
 |Dynamics 365 Customer Voice   |     |         |
+|Dynamics 365 Supply Chain Management |    |    |
 
 ### Subscription Availability
 
