@@ -129,7 +129,7 @@ packagedeployer.exe /Settings:"SkipChecks=true|lcid=1045"
   
  [Prerequisites](../admin/deploy-packages-using-package-deployer-windows-powershell.md#Prereq)  
   
- [Import the Package Deployer PowerShell module](../admin/deploy-packages-using-package-deployer-windows-powershell.md#import)  
+ [Install the Package Deployer PowerShell module](../admin/deploy-packages-using-package-deployer-windows-powershell.md#install-the-package-deployer-powershell-module)  
   
  [Use the cmdlet to retrieve packages](../admin/deploy-packages-using-package-deployer-windows-powershell.md#retrieve)  
   
