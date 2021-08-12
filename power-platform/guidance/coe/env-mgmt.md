@@ -53,7 +53,7 @@ Developers (non-admins) can request new environments for their admin to triage.
 ![Environment details](media\dev-resources-maker-env.png "Environment details")
 
 1. If a database is needed (toggle=yes), provide the required language and currency values. Optionally provide a security group to restrict access to the environment.
-![Choose connectors](media\dev-resources-maker-db.png "Choose connectors") 
+![Choose database settings](media\dev-resources-maker-db.png "Choose database settings") 
 
 1. Submit the form when done by clicking the **Save** button.
 
@@ -72,7 +72,7 @@ As the admin, you can view and triage requests for new environments.
 > [!NOTE] 
 > By default, pending requests are displayed first. Change the request state filter using the dropdown in the right side of the ribbon.
 1. Select a request in the table to view more detail.
-![View requests](media\dev-resources-admin.png "View requests")
+![Select request](media\dev-resources-admin.png "Select requests")
 
 1. Read details requested for the new environment:
     1. Environment information, justification
@@ -94,7 +94,7 @@ As the admin, you can view and triage requests for new environments.
     > Only certian types of policies can be added (Organization-level environments that are not "All Environments" type policies).
 
 1. Select "View and modify policies" to see all policies and their impact on the requested connectors. You can add or remove policies to the modify list that will be changed upon approval by selecting a policy and choosing the actions that appear in the ribbon.
-![Approve or reject](media\dev-resources-admin-policies.png "Approve or reject")
+![View or modify DLP policies](media\dev-resources-admin-policies.png "View or modify DLP policies")
 
 1. Select a policy and click on the **Details** action in the ribbon to view the impact on connectors.
 ![Policy impact](media\dev-resources-admin-policy-details.png "Policy impact")
@@ -115,6 +115,7 @@ The admin app uses the below logic to provide guidance on how to configure the D
 
 ### Decision matrix: Warning banner
 This is the banner displayed in the admin app when viewing the request's details page.
+
 | Condition | No policies apply to the environment | Existing policies apply to the environment without including it in any policy’s environment list | Environment will be added to policies upon approval |
 |-|-|-|-|
 | Unblocked |🟡 Connectors not blocked or restricted, but no policies will protect the environment. Add environment to at least one policy to prevent data loss.| 🟢 Connectors are not blocked or restricted and the environment is covered by at least one existing policy. | 🟢 Connectors are not blocked and environment will be added to selected policies on approval of request.|
