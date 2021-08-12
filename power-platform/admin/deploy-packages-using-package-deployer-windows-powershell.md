@@ -149,8 +149,6 @@ packagedeployer.exe /Settings:"SkipChecks=true|lcid=1045"
   
 - Set the execution policy to run the signed [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] scripts. To do so, run a [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] window as an administrator, and then run the following command: `Set-ExecutionPolicy -ExecutionPolicy AllSigned`  
   
-<a name="import"></a>   
-
 ### Install the Package Deployer PowerShell module
 
  You must install the [!INCLUDE[pn_PowerShell](../includes/pn-powershell.md)] module for the Package Deployer tool before you can use it. To install:  
