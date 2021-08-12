@@ -57,11 +57,17 @@ Represents archival approval tasks started during the App Archive and Clean Up f
 | --- | --- | --- |
 |[Microsoft Teams Admin \|  Ask for Business Justification when Microsoft Teams environment is created](#microsoft-teams-admin--ask-for-business-justification-when-microsoft-teams-environment-is-created) | Automated |  when *Admin \| Sync Template v3* flow adds or modifies a record in the Environment table |
 | [Microsoft Teams Admin \|  Weekly Clean Up of Microsoft Teams environments](#microsoft-teams-admin--weekly-clean-up-of-microsoft-teams-environments) | Schedule | Weekly |
-| [Admin \| Setup - Ignored Archival Requests](#admin--setup---ignored-archival-requests) | Instant | Run Once |
-| [Admin \| Archive and Clean Up v2 (Start Approval for Apps)](#admin--archive-and-clean-up-v2-start-approval-for-apps) | Schedule | Weekly |
-| [Admin \| Archive and Clean Up v2 (Start Approval for Flows)](#admin--archive-and-clean-up-v2-start-approval-for-flows) | Schedule | Weekly |
 | [Admin \| Archive and Clean Up v2 (Check Approval)](#admin--archive-and-clean-up-v2-check-approval) | Schedule | Daily |
 | [Admin \| Archive and Clean Up v2 (Clean Up and Delete)](#admin--archive-and-clean-up-v2-clean-up-and-delete) | Schedule | Daily |
+| [Admin \| Archive and Clean Up v2 (Start Approval for Apps)](#admin--archive-and-clean-up-v2-start-approval-for-apps) | Schedule | Weekly |
+| [Admin \| Archive and Clean Up v2 (Start Approval for Flows)](#admin--archive-and-clean-up-v2-start-approval-for-flows) | Schedule | Weekly |
+| [Admin \| Email Managers Ignored Approvals](#admin--email-managers-ignored-approvals) | Instant | Weekly |
+| [Admin \| Setup - Ignored Archival Requests](#admin--setup---ignored-archival-requests) | Instant | Run Once |
+| [Request Orphaned Objects Reassigned (Child)](#request-orphaned-objects-reassigned-child) | Instant | child |
+| [Request Orphaned Objects Reassigned (Parent)](#request-orphaned-objects-reassigned-parent) | Schedule | Daily |
+| [HELPER - CanvasAppOperations Gov](#helper---canvasappoperations-gov) | Instant | helper |
+| [HELPER - CloudFlowOperations Gov](#helper---cloudflowoperations-gov) | Instant | helper |
+
 
 ### Microsoft Teams Admin | Ask for Business Justification when Microsoft Teams environment is created
 
@@ -98,10 +104,6 @@ Environments are deleted from the tenant and marked as deleted in the Environmen
 Save a copy of this flow in case you want to make any changes to the criteria for when environments are deleted.
 
 Learn more about the Microsoft Teams governance process in the CoE Starter Kit: [Microsoft Teams environment audit process](teams-governance.md)
-
-### Admin \| Setup - Ignored Archival Requests
-
-This flow is run once in order to pre-populate the values for how long people have ignored requests for archival for apps and flows. This flow is optional, values will eventually populate as part of the archive process. It is a long running flow updating all apps and flows in your inventory.
 
 ### Admin \| Archive and Clean Up v2 (Start Approval for Apps)
 
@@ -145,7 +147,77 @@ Runs on a daily basis and does two clean up tasks for the workflow.
 
 **Customize**: By default, this flow will not delete the apps and flows. This is to ensure you explicitly are ready for that to occur. To begin deletion of flows and apps, update the [*Auto Delete On Archive* environment variable](setup-governance-components.md#update-environment-variables) to **Yes**.
 
+### Admin \| Setup - Ignored Archival Requests
+
+This flow is run once in order to pre-populate the values for how long people have ignored requests for archival for apps and flows. This flow is optional, values will eventually populate as part of the archive process. It is a long running flow updating all apps and flows in your inventory.
+
+### Admin \| Email Managers Ignored Approvals
+
+This flow works with the other Archive and Clean flows in that it looks for approvals from this system that have been ignored by makers for one month or more and sends their manager a list of these, asking they help by encouraging their employees to approve or reject the request.
+
+![Mail sent to managers](media/ArchiveApps1.png "Mail sent to managers")
+
+### Request Orphaned Objects Reassigned (Parent)
+
+On a daily basis, this collects all the orphaned objects in the tenant and attempts to associate them with the manager of the former owner. It then sends a teams bot note to each impacted manager and let's them know that there are objects to clean, and then concurrently calls the child flow for each manager. <br>
+For those orphaned objects which cannot resolve to a previous manager, it sends the list to the admin email so that admins know which orphaned objects will need cleaned manually.
+
+![Orphaned object count](media/orphanedobjects1.png "Orphaned object count")
+
+### Request Orphaned Objects Reassigned (Child)
+
+This flow is triggered daily for every manager that has objects owned by former employees that have left the company. It shows all the cloud flows and canvas apps owned by the employees that left the company and lets the manager decide what they want to do:
+
+1) Email themselves the list
+1) Take ownership of them all
+1) Delete them all
+1) Assign them all to someone else
+1) See each one individually 
+
+![Orphaned object list](media/orphanedobjects2.png "Orphaned object list")
+
+If they chose to see the items individually then they can make these decisions granularly. 
+
+![Orphaned object item](media/orphanedobjects3.png "Orphaned object item")
+
+### HELPER - CanvasAppOperations Gov
+
+This flow takes in the environment, app, and operation to perform as well as the GUID for the new maker if the operation is to reassign ownership. <br>
+The operations supported are Delete and Assign (which reassigns owner) <br>
+It performs the action on the actual object in the tenant and also updates the inventory.
+
+### HELPER - CloudFlowOperations Gov
+
+This flow takes in the environment, flow, and operation to perform as well as the GUID for the new maker if the operation is to reassign ownership. <br>
+The operations supported are Delete and Assign (which reassigns owner) <br>
+It performs the action on the actual object in the tenant and also updates the inventory.
+
 ## Apps
+
+### Cleanup Old Objects App
+
+As makers are asked to respond if objects are still useful with the Archival flows above, they will sometimes ignore these asks. In that case, a flow above will send their manager this email.
+![Mail sent to managers](media/ArchiveApps1.png "Mail sent to managers"
+
+The manager can click on the link in the mail and be brought to this app for cleaning.
+
+They can chose which employee to work on first
+![Select user screen](media/ArchiveApps2.png "Select user screen")
+
+And then for each employee go and either reject the deletion or send a reminder notification.
+![Cleanup screen](media/ArchiveApps3.png "Cleanup screen")
+
+They can send the person to the app do do the clean up as well, where they will be able to approve/reject deletion for all their objects.
+![Send reminder mail screen](media/ArchiveApps4.png "Send reminder mail screen")
+
+### App and Flow Archive and Clean Up View
+
+This app gives the admin a view of all objects currently being considered for archival and deletion. Admin can filter to the apps which have been rejected with a note for example to review:
+
+![View all objects in review](media/ArchiveApps5.png "View all objects in review")
+
+And if the reason is sound, they can chose to exempt the object from future runs and consideration for archival and deletion.
+![Excuse from archival flows](media/ArchiveApps6.png "Excuse from archival flows")
 
 ### Developer Compliance Center
 
