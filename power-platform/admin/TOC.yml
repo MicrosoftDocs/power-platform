@@ -741,17 +741,21 @@
             href: supported-email-service-configurations-server-side-synchronization.md
           - name: Connect to Exchange Online
             href: connect-exchange-online.md
+          - name: Exchange Online cross tenant authentication
+            href: connect-exchange-online-server-profile-oauth.md 
           - name: Connect to Exchange Server (on-premises)
-            href: connect-exchange-server-on-premises.md
+            href: connect-exchange-server-on-premises.md 
+          - name: Hybrid Modern Authentication (HMA) for Exchange on-premises
+            href: connect-exchange-server-onprem-hma.md
           - name: Test connection to Exchange Server (on-premises)
             href: test-connection-exchange-server-onpremises.md
-          - name: Connect to IMAP or SMTP servers
+          - name: Connect to IMAP, POP, or SMTP servers
             href: connect-to-imap-servers.md 
           - name: Connect to Gmail
             items:
             - name: Connect using OAuth 2.0
               href: connect-gmail-oauth2.md
-            - name: Connect to POP3 or SMTP servers
+            - name: Connect using credentials specified by a user or queue
               href: connect-to-pop3-or-smtp-servers.md
         - name: Server-side sync configuration
           items: 
@@ -803,16 +807,12 @@
           items:
           - name: Troubleshoot server-side synchronization
             href: troubleshooting-monitoring-server-side-synchronization.md
-          - name: Error logging in server-side synchronization
-            href: error-logging-server-side-synchronization.md   
           - name: Monitor email processing errors
             items:
             - name: Monitor email processing errors
               href: monitor-email-processing-errors.md 
             - name: Email in "Pending Send" status?
               href: why-email-message-sent-have-pending-send-status.md 
-          - name: Recover from Exchange Server failure
-            href: recover-from-exchange-server-failure.md 
        # Leave this commented out as this topic should not appear in the TOC. For context-sensitive help link.
        #   - name: When would I want to use this check box?
        #     href: when-would-want-use-check-box.md
