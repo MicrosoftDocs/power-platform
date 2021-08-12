@@ -442,7 +442,7 @@
       items:
       - name: Overview 
         href: view-manage-resources.md
-      - name: Manage Dynamic 365 apps
+      - name: Manage Dynamics 365 apps
         href: manage-apps.md
       - name: Manage Power Apps 
         href: admin-manage-apps.md
@@ -860,7 +860,7 @@
         href: performance-tuning-and-optimization.md 
       - name: Verify network capacity and throughput for clients
         href: verify-network-capacity-throughput-clients.md
-      - name: Data query performance
+      - name: Performance insights
         href: analyze-improve-data-query-performance.md
     - name: Compliance and data privacy 
       href: wp-compliance-data-privacy.md
