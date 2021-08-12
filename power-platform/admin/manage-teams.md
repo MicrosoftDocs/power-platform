@@ -4,7 +4,7 @@ description: Understand the different types of teams and how to view and manage 
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/02/2021
+ms.date: 08/11/2021
 author: jimholtz
 ms.subservice: admin
 ms.author: jimholtz
@@ -21,6 +21,9 @@ search.app:
 # Microsoft Dataverse teams management
 
 Using Microsoft Dataverse teams is optional. However, teams provide an easy way to share business objects and let you collaborate with other people across business units. Although a team belongs to one business unit, it can include users from other business units. You can associate a user with more than one team. This topic discusses the different types of teams and their various operations.
+
+> [!TIP]
+> Check out the video: [Administer application users, security roles, teams, and users in the Power Platform admin center](https://youtu.be/1Iet2si8Ehw).
 
 ## Types of teams
 
