@@ -35,7 +35,8 @@ If you have already built and deployed Bot Framework bots in your organization, 
 ## Allow a Bot Framework bot to call your Power Virtual Agents bot as a skill
 In order to sucessfully connect to your Power Vitual Agents bot and use it as a skill, Bot Framework bots must be explicitely added by their App ID to your bot's **Allowlist** in Power Virtual Agents first.
 To add a Bot Framework bot to your Power Virtual Agent's **Allowlist**, go to **Manage** tab on the left and choose **Skills** page. Then, click on **Manage allowlist**.
-![Select Manage Allowlist](/media/PVA as a skill/Skill_ManageAllowlistMenu.png)
+
+![Select Manage Allowlist](/media/PVA-as-a-skill/Skill_ManageAllowlistMenu.png)
 
 
 ## Download your Power Virtual Agents bot skill manifest
