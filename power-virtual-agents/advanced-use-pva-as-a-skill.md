@@ -41,7 +41,9 @@ To add a Bot Framework bot to your Power Virtual Agent's **Allowlist**, go to **
 Note that you can also get to your bot's **Allowlist** by using **Security** page under **Manage** tab.
 ![Select Manage Allowlist on Security page](media/PVA-as-a-skill/Skill_ManageAllowlistSecurity.png)
 
+By default, no bots are allowed to connect to your Power Virtual Agents bot and use it as a skill. To allow some bots to use your bot as a skill, you ust first add them to your bot's **Allowlist** by selecting **+ Add allowed caller** button on **Manage allowlist** page.
 
+![Add a bot to Alllowlist](media/PVA-as-a-skill/Skill_AddAllowedCallers.png)
 
 ## Download your Power Virtual Agents bot skill manifest
 
