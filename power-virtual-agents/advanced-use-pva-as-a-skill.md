@@ -38,6 +38,10 @@ To add a Bot Framework bot to your Power Virtual Agent's **Allowlist**, go to **
 
 ![Select Manage Allowlist](media/PVA-as-a-skill/Skill_ManageAllowlistMenu.png)
 
+Note that you can also get to your bot's **Allowlist** by using **Security** page under **Manage** tab.
+![Select Manage Allowlist on Security page](media/PVA-as-a-skill/Skill_ManageAllowlistSecurity.png)
+
+
 
 ## Download your Power Virtual Agents bot skill manifest
 
