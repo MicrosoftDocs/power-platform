@@ -46,10 +46,10 @@ By default, no bots are allowed to connect to your Power Virtual Agents bot and 
 ![Add a bot to Alllowlist](media/PVA-as-a-skill/Skill_AddAllowedCallers.png)
 '
 You can only add Bot Framework bots that are deployed in the same organization as the Power Virtual Agents bot that you want to use as a skill. Enter your Bot Frameworks bot's **App ID** and press **Next**.
-![Add a bot to Alllowlist](media/PVA-as-a-skill/Skill_AddBotAppID.png)
-
 >[!IMPORTANT]
 >Power Virtual Agents cannot act as a skill for other Power Virtual Agents bots. Only **App IDs** that belong to Bot Framework bots can be added to Power Virtual Agents **Allowlist**. Trying to add a **App ID** that belongs to a Power Vietual Agent bot will result in error.
+
+![Add a bot to Alllowlist](media/PVA-as-a-skill/Skill_AddBotAppID.png)
 
 Power Vitual Agents will validate that Bot Framework **App ID** you have entered belongs to bot deolyed in the same organization. Then, you will be able to add a **Display name** to use on the **Allowlist** for this bot (this is optional).
 ![Add Display name](media/PVA-as-a-skill/Skill_AllowedCallerDisplayName.png)
