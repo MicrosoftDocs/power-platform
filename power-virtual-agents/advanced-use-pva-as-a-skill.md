@@ -54,7 +54,7 @@ You can only add Bot Framework bots that are deployed in the same organization a
 Power Vitual Agents will validate that Bot Framework **App ID** you have entered belongs to bot deolyed in the same organization. Then, you will be able to add a **Display name** to use on the **Allowlist** for this bot (this is optional). Click **Save** to save this **App ID** to your **Allowlist**.
 ![Add Display name](media/PVA-as-a-skill/Skill_AllowedCallerDisplayName.png)
 
-The Bot Framework bot is now added to your **Allowlist**. It will be displayed by the **Dispaly name** (if you have chosen one) or by its **App ID**. You can always **Delete** or **Edit** the bot on your **Allowlist**.
+The Bot Framework bot is now added to your **Allowlist**. It will be displayed by the **Dispaly name** (if you have chosen one) or by its **App ID**. You can always **Delete** or **Edit** any bot on your **Allowlist**.
 ![Bots on Alllowlist](media/PVA-as-a-skill/Skill_AllowedCallerAdded.png)
 
 ## Download your Power Virtual Agents bot skill manifest
