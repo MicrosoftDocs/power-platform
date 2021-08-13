@@ -16,7 +16,7 @@ ms.collection: virtualagent
 # Use Power Virtual Agents bot as a skill
 
 You can use your Power Virtual Agents bot as a [skill](https://docs.microsoft.com/en-us/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0) with Bot Framewoek bots. 
-If you have already built and deployed Bot Framework bots in your organization, this feature will allow you to extend their functionality with Power Virtual Agennts bots.
+If you have already built and deployed Bot Framework bots in your organization, this feature will eenable you to extend their functionality by calling Power Virtual Agennts bots as skills.
 
 
 >[!IMPORTANT]
@@ -25,6 +25,12 @@ If you have already built and deployed Bot Framework bots in your organization, 
 
 ## Prerequisites
 
-- [Introduction to Bot Framework Composer](/composer/introduction)
 - [Skills overview](https://docs.microsoft.com/en-us/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0) 
+- [Introduction to Bot Framework Composer](/composer/introduction)
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+
+## Allow a Bot Framework bot to call your Power Virtual Agents bot as a skill
+
+## Download your Power Virtual Agents bot skill manifest
+
+## Connect to a Power Virtual Agents skill in Composer
