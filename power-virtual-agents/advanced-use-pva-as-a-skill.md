@@ -66,6 +66,13 @@ When a Bot Framework bot evaluates a user utterance and decides, based on the ma
 
 All Power Virtual Agents skill manifests are automaticaly generated and updated for every bot. A Virtual Agents bot has 2 different skill manifests, **Test manifest** and **Published manifest**.
 
+- **Test manifest**  
+The **Test manifest** allows a Bot Framework bot to connect to the test version of the Power Vitual Agents bot, where your chnages are **Saved** and would appear in the **Test your bot** panel, but not yet **Published**. 
+The **Test manifest** is immediatelly avalibe for every newly created Power Virtual Agents bot and is automatically updated to reflect the changes every time you **Save** bot content.
+
+- **Published manifest** 
+The **Published manifest** allows a Bot Framework bot to connect to the version of the Power Vitual Agents bot that has been **Publsihed** to any channel.
+The **Published manifest** is only avaliable for Power Virtual Agents bots that have been **Published** and is automatically updated to reflect the changes every time you **Publish** your bot.
 
 >[!NOTE]
 > **Published maniest** is not avaliable in Power Virtual Agents bots that have never been **Published**. To generate your bot's **Published manifest**, your need to [publish your Power Virtual Agents bot](https://docs.microsoft.com/en-us/power-virtual-agents/publication-fundamentals-publish-channels). 
