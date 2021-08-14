@@ -89,7 +89,7 @@ Click the buttons to dowload **Test manifest** or **Published manifest** as .zip
 
 ## Connect to a Power Virtual Agents skill in Composer
 
-You can use the Power Virtual Agents bot skill **Test manifest** or **Published manifest** that you have downloadad in a .zip archive to connect your Bot Framework bot to this Power Virtual Agents bot in Composer.
+You can use the Power Virtual Agents bot skill **Test manifest** or **Published manifest** that you have downloadad in a .zip archive to create a skill connection for your Bot Framework bot in Composer.
 
 >[!IMPORTANT]
 >Your Bot Framework bot must be added to the Power Virtual Agents bot's **Allowlist** for the skill connection to work!
