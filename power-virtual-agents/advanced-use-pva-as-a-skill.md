@@ -103,6 +103,10 @@ Select what Power Virtual Agents bot skill's Topics you want to add to your Bot 
 
 ![Composer - select a Power Virtual Agents Topics](media/PVA-as-a-skill/Composer_SelectTopics.png)
 
+Edit Power Virtual Agents bot skill's Trigger Phrases (optional) and press **Next**.
+
+![Composer - edit trigger phrases](media/PVA-as-a-skill/Composer_EditTriggerPhrases.png)
+
 >[!IMPORTANT]
 >Your Bot Framework bot must be added to the Power Virtual Agents bot's **Allowlist** for the skill connection to work!
 
