@@ -84,9 +84,15 @@ Click the buttons to dowload **Test manifest** or **Published manifest** as .zip
 ![Power Virtual Agents - Downloaded Test and Published Manifests](media/PVA-as-a-skill/Manifests_Zip.png)
 
 **Test manifest** and **Published manifest** follow [version 2.2](https://docs.microsoft.com/en-us/azure/bot-service/skills-write-manifest?view=azure-bot-service-4.0&tabs=v2-2) of Bot Framework skill manifest schema and consist of **intents.lu** and **manifest.json** files.
+
 ![Power Virtual Agents skill manifest files](media/PVA-as-a-skill/Manifests_Files.png)
 
 ## Connect to a Power Virtual Agents skill in Composer
 
-## Test Power Virtual Agents bot as a skill for Bot Framework bots
-(Test your skill)https://docs.microsoft.com/en-us/composer/how-to-connect-to-a-skill?tabs=v2x#test-in-the-emulator
+You can use the Power Virtual Agents bot skill **Test manifest** or **Published manifest** that you have downloadad in a .zip archive to connect your Bot Framework bot to this Power Virtual Agents bot in Composer.
+
+>[!IMPORTANT]
+>Your Bot Framework bot must be added to the Power Virtual Agents bot's **Allowlist** for the skill connection to work!
+
+## Test Power Virtual Agents bot as a skill with a Bot Framework bot
+You can test your Bot Framework bot calling a Power Virtual Agents bot as a skill by using [Emulator](https://docs.microsoft.com/en-us/composer/how-to-connect-to-a-skill?tabs=v2x#test-in-the-emulator)
