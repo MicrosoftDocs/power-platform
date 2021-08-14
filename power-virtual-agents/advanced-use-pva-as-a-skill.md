@@ -124,4 +124,17 @@ You can test your Bot Framework bot calling a Power Virtual Agents bot as a skil
 However, before your can test, make sure that your Bot Framework bot **App ID"" is added to the Power Virtual Agents bot's **Allowlist** of your Power Virtual Agents bot first. You can find your Bot Framework bot's **App ID** by going to **Conigure** tab and selecting **Develeopment Resources** section in Composer.
 ![Composer - Bot App ID](media/PVA-as-a-skill/Composer_BotAppID.png)
 
+## Learn More
 
+To learn more about developing in Bot Framework Composer and using skills, see these resources:
+- [Skills overview](https://docs.microsoft.com/en-us/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0)
+- [Skills manifest](https://docs.microsoft.com/en-us/azure/bot-service/skills-write-manifest?view=azure-bot-service-4.0&tabs=v2-2)
+- [Bot Framework Composer documentation](/composer/) 
+- [Tour of Composer](/composer/quickstart-tour-of-composer)
+- [Tutorial: Create a new bot](/composer/tutorial/tutorial-create-bot)
+- [Skills in Composer](https://docs.microsoft.com/en-us/composer/concept-skills)
+- [Connect to a remote skill in Composer](https://docs.microsoft.com/en-us/composer/how-to-connect-to-a-skill?tabs=v2x)
+
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]
