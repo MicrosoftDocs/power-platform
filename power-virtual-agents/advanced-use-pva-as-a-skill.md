@@ -88,7 +88,7 @@ Click the buttons to download **Test manifest** or **Published manifest** as .zi
 
 ## Connect to a Power Virtual Agents skill in Composer
 
-You can use the Power Virtual Agents bot skill **Test manifest** or **Published manifest** that you have downloadad in a .zip archive to create a skill connection for your Bot Framework bot in Composer.
+You can use the Power Virtual Agents bot skill **Test manifest** or **Published manifest** that you have downloaded in a .zip archive to create a skill connection in your Bot Framework bot in Composer.
 
 In Bot Framework Composer project, use **+ Add** button and choose **Connect to a skill** menu option.
 
@@ -110,7 +110,7 @@ Make sure the **Orchestrator** option is checked and press **Continue**.
 
 ![Composer - enable Orchestrator](media/PVA-as-a-skill/Composer_Orchestrator.png)
 
-Verify that Power Virtual Agents skill is added to your Bot Framewok bot correctly and a new **trigger** with your Power Virtual Agents bot's name is added to the project in Composer.
+Verify that Power Virtual Agents skill is added to your Bot Framework bot correctly and a new **trigger** with your Power Virtual Agents bot's name is added to the project in Composer.
 ![Composer - Power Virtual Agents skill added](media/PVA-as-a-skill/Composer_PVASkillAdded.png)
 
 
@@ -120,7 +120,8 @@ Verify that Power Virtual Agents skill is added to your Bot Framewok bot correct
 ## Test Power Virtual Agents bot as a skill with a Bot Framework bot
 You can test your Bot Framework bot calling a Power Virtual Agents bot as a skill by using [Emulator](https://docs.microsoft.com/en-us/composer/how-to-connect-to-a-skill?tabs=v2x#test-in-the-emulator).
 
-However, before your can test, make sure that your Bot Framework bot **App ID"" is added to the Power Virtual Agents bot's **Allowlist** of your Power Virtual Agents bot first. You can find your Bot Framework bot's **App ID** by going to **Conigure** tab and selecting **Develeopment Resources** section in Composer.
+Please make sure that your Bot Framework bot **App ID** is added to the Power Virtual Agents bot's **Allowlist** of your Power Virtual Agents bot first before testing. You can find your Bot Framework bot's **App ID** by going to **Configure** tab and selecting **Development Resources** section in Composer. 
+
 ![Composer - Bot App ID](media/PVA-as-a-skill/Composer_BotAppID.png)
 
 ## Learn More
