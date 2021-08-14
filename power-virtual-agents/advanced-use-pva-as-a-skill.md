@@ -121,5 +121,7 @@ Verify that Power Virtual Agents skill is added to your Bot Framewok bot correct
 ## Test Power Virtual Agents bot as a skill with a Bot Framework bot
 You can test your Bot Framework bot calling a Power Virtual Agents bot as a skill by using [Emulator](https://docs.microsoft.com/en-us/composer/how-to-connect-to-a-skill?tabs=v2x#test-in-the-emulator).
 
->[!IMPORTANT]
->Your Bot Framework bot must be added to the Power Virtual Agents bot's **Allowlist** for the skill connection to work correctly.
+However, before your can test, make sure that your Bot Framework bot **App ID"" is added to the Power Virtual Agents bot's **Allowlist** of your Power Virtual Agents bot first. You can find your Bot Framework bot's **App ID** by going to **Conigure** tab and selecting **Develeopment Resources** section in Composer.
+![Composer - Bot App ID](media/PVA-as-a-skill/Composer_BotAppID.png)
+
+
