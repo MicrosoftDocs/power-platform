@@ -54,10 +54,17 @@ You can only add Bot Framework bots that are deployed in the same organization a
 Power Vitual Agents will validate that Bot Framework **App ID** you have entered belongs to bot deolyed in the same organization. Then, you will be able to add a **Display name** to use on the **Allowlist** for this bot (this is optional). Click **Save** to save this **App ID** to your **Allowlist**.
 ![Add Display name](media/PVA-as-a-skill/Skill_AllowedCallerDisplayName.png)
 
-The Bot Framework bot is now added to your **Allowlist**. It will be displayed by the **Dispaly name** (if you have chosen one) or by its **App ID**. You can always **Delete** or **Edit** any bot on your **Allowlist**.
+The Bot Framework bot is now added to your **Allowlist** and it will be displayed by the **Dispaly name** (if you have enetered one) or by its **App ID**. You can **Delete** or **Edit** any bot on your **Allowlist** at any time.
 ![Bots on Alllowlist](media/PVA-as-a-skill/Skill_AllowedCallerAdded.png)
 
 ## Download your Power Virtual Agents bot skill manifest
+Every Power Virtual Agents bot can be used as a skill with Bot Framework bots, provided these Bot Framewoek bots have been added to **Allowlist** first. All Power Virtual Agents bots have a skill manifest, a JSON file that describes skill's name, interface and utterances (trigger phrases). The skill manifest is used by a Bot Framework bot to configure a connection to a Power Virtual Agents bot and leverage it as a skill at runtime.
+
+Power Virtual Agents bot skill manifest provides all of the metadata required for a calling Bot Framewok bot to know when to trigger a skill via user utterance. Bot Framework bot can use the data in skill's manifest to identify when it needs to trigger a skill in response to a user utterance.
+
+When a Bot Framework bot evaluates a user utterance and decides, based on the skill's manifest data, that it needs to be handled by a Power Virtual Agents skill bot, it will pass the entire user utterance to the Power virtual Agents bot to handle. Then, the Power Virtual Agents bot's NLU will match user uttrenace (trigger phrase) to a bot Topic and tigger this Power Virtual Agents Topic. Any Entities in the user utternace needed for slot-filling will also be extracted along the way.
+
+
 
 ## Connect to a Power Virtual Agents skill in Composer
 
