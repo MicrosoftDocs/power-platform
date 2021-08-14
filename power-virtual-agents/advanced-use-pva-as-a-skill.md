@@ -95,6 +95,9 @@ In Bot Framework Composer project, use **+ Add** button and choose **Connect to 
 
 ![Composer - connect Bot Framewok bot to a skill](media/PVA-as-a-skill/Composer_ConnectToSkill.png)
 
+On **Add a skill** screen, select a Power Virtual Agents manifest .zip archive and press **Next**.
+
+![Composer - select a Power Virtual Agents skill zip archive](media/PVA-as-a-skill/Composer_AddSkillZip.png)
 
 >[!IMPORTANT]
 >Your Bot Framework bot must be added to the Power Virtual Agents bot's **Allowlist** for the skill connection to work!
