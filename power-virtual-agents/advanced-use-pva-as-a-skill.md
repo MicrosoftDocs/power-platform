@@ -58,7 +58,7 @@ The Bot Framework bot is now added to your **Allowlist** and it will be displaye
 ![Bots on Alllowlist](media/PVA-as-a-skill/Skill_AllowedCallerAdded.png)
 
 ## Download your Power Virtual Agents bot skill manifest
-Every Power Virtual Agents bot can be used as a skill with Bot Framework bots (provided these Bot Framewoek bots have been added to **Allowlist**). All Power Virtual Agents bots have skill manifests, a JSON file that describes skill's name, interface and Skill's trigger phrases. Power Virtual Agents implement skill manifest in [version 2.2](https://docs.microsoft.com/en-us/azure/bot-service/skills-write-manifest?view=azure-bot-service-4.0&tabs=v2-2).
+Every Power Virtual Agents bot can be used as a skill with Bot Framework bots (provided these Bot Framewoek bots have been added to **Allowlist**). All Power Virtual Agents bots have skill manifests, a JSON file that describes skill's name, interface and Skill's trigger phrases. Power Virtual Agents are implemened according to skill manifest [version 2.2](https://docs.microsoft.com/en-us/azure/bot-service/skills-write-manifest?view=azure-bot-service-4.0&tabs=v2-2).
 
 Bot Framework bot can use Power Virtual Agents bot skill manifest to configure a connection to this Power Virtual Agents bot. At runtime, a Bot Framework bot can use the data in Power Virtual Aegnts bot skill's manifest to identify when it needs to trigger this skill in response to a user utterance.
 
@@ -79,9 +79,12 @@ Both Power Virtual Agents bot's skill manifests can be found on **Manage allowli
 Additonally, you can find Power Virtual Agents bot's skill manifests on **Details** page under **Manage** tab along other bot's metadata like **Environment ID**, **Tenant ID** and **Bot app ID**.
 ![Power Virtual Agents bot Manifests on Details page](media/PVA-as-a-skill/Skill_Manifest2.png)
 
-Click on the button to dowload **Test manifest** or **Published manifest** as .zip archives.
+Click the buttons to dowload **Test manifest** or **Published manifest** as .zip archives.
 
 ![Power Virtual Agents - Downloaded Test and Published Manifests](media/PVA-as-a-skill/Manifests_Zip.png)
+
+Power Virtual Agents bot skill manifests follow [version 2.2](https://docs.microsoft.com/en-us/azure/bot-service/skills-write-manifest?view=azure-bot-service-4.0&tabs=v2-2) and consists from **intents.lu** and **manifest.json** files.
+![Power Virtual Agents skill manifest files](media/PVA-as-a-skill/Manifests_Files.png)
 
 ## Connect to a Power Virtual Agents skill in Composer
 
