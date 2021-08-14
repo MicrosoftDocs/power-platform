@@ -58,13 +58,17 @@ The Bot Framework bot is now added to your **Allowlist** and it will be displaye
 ![Bots on Alllowlist](media/PVA-as-a-skill/Skill_AllowedCallerAdded.png)
 
 ## Download your Power Virtual Agents bot skill manifest
-Every Power Virtual Agents bot can be used as a skill with Bot Framework bots, provided these Bot Framewoek bots have been added to **Allowlist** first. All Power Virtual Agents bots have a skill manifest, a JSON file that describes skill's name, interface and Skill's trigger phrases. 
+Every Power Virtual Agents bot can be used as a skill with Bot Framework bots (provided these Bot Framewoek bots have been added to **Allowlist**). All Power Virtual Agents bots have a ready to be used skill manifest, a JSON file that describes skill's name, interface and Skill's trigger phrases. Power Virtual Agents implement skill manifest in [version 2.2](https://docs.microsoft.com/en-us/azure/bot-service/skills-write-manifest?view=azure-bot-service-4.0&tabs=v2-2).
 
 Bot Framework bot can use Power Virtual Agents bot skill manifest to configure a connection to this Power Virtual Agents bot. At runtime, a Bot Framework bot can use the data in Power Virtual Aegnts bot skill's manifest to identify when it needs to trigger this skill in response to a user utterance.
 
 When a Bot Framework bot evaluates a user utterance and decides, based on the manifest data, that it needs to be handled by a Power Virtual Agents skill bot, it will pass the entire user utterance to it. Then, the Power Virtual Agents skill bot's own NLU will match this user uttrenace to a Power Virtual Agents **Topic**, extact any Entities needed for slot-filling and trigger this **Topic**.
 
+Power Virtual Agents bot's skill manifests can be found on **Manage allowlist** panel.
+![Power Virtual Agents bot Manifests on Manage Allowlist panel](media/PVA-as-a-skill/Skill_Manifest1.png)
 
+Additonally, you can find Power Virtual Agents bot's skill manifests on **Details** page under **Manage** tab along other bot's metadata.
+![Power Virtual Agents bot Manifests on Details page](media/PVA-as-a-skill/Skill_Manifest2.png)
 
 ## Connect to a Power Virtual Agents skill in Composer
 
