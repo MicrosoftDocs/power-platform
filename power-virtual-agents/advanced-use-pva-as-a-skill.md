@@ -80,7 +80,8 @@ Additonally, you can find Power Virtual Agents bot's skill manifests on **Detail
 ![Power Virtual Agents bot Manifests on Details page](media/PVA-as-a-skill/Skill_Manifest2.png)
 
 Click on the button to dowload **Test manifest** or **Published manifest** as .zip archives.
-![Power Virtual Agents - Test and Published Manifest as .zip archives](media/PVA-as-a-skill/Manifests_Zip.png)
+
+![Power Virtual Agents - Downloaded Test and Published Manifests](media/PVA-as-a-skill/Manifests_Zip.png)
 
 ## Connect to a Power Virtual Agents skill in Composer
 
