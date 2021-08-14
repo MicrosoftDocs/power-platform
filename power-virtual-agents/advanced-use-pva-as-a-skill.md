@@ -56,28 +56,29 @@ The Bot Framework bot is now added to your **Allowlist** and it will be displaye
 ![Bots on Alllowlist](media/PVA-as-a-skill/Skill_AllowedCallerAdded.png)
 
 ## Download your Power Virtual Agents bot skill manifest
-Every Power Virtual Agents bot can be used as a skill with Bot Framework bots (provided these Bot Framewoek bots have been added to **Allowlist**). All Power Virtual Agents bots have skill manifests, a JSON file that describes skill's name, interface and Skill's trigger phrases. Power Virtual Agents are implemened according to skill manifest [version 2.2](https://docs.microsoft.com/en-us/azure/bot-service/skills-write-manifest?view=azure-bot-service-4.0&tabs=v2-2).
+Every Power Virtual Agents bot can be used as a skill with Bot Framework bots (provided these Bot Framework bots have been added to Allowlist). All Power Virtual Agents bots have skill manifests, a JSON file that describes skill's name, interface, and skill's trigger phrases.Power Virtual Agents bot skill manifests are implemented accroding to [version 2.2](https://docs.microsoft.com/en-us/azure/bot-service/skills-write-manifest?view=azure-bot-service-4.0&tabs=v2-2) skill manifest schema.
 
-Bot Framework bot can use Power Virtual Agents bot skill manifest to configure a connection to this Power Virtual Agents bot. At runtime, a Bot Framework bot can use the data in Power Virtual Aegnts bot skill's manifest to identify when it needs to trigger this skill in response to a user utterance.
+Bot Framework bots can use Power Virtual Agents bot skill manifest to configure a skill connection to the bot that produced this manifest. At runtime, a Bot Framework bot can use the data in Power Virtual Agents bot skill's manifest to identify when it needs to trigger this skill in response to a user utterance.
 
-When a Bot Framework bot evaluates a user utterance and decides, based on the manifest data, that it needs to be handled by a Power Virtual Agents skill bot, it will pass the entire user utterance to it. Then, the Power Virtual Agents skill bot's own NLU will match this user uttrenace to a Power Virtual Agents **Topic**, extact any Entities needed for slot-filling and trigger this **Topic**.
+When a Bot Framework bot decides, based on the manifest data, that a user utterance needs to be handled by a Power Virtual Agents skill bot, it will pass the entire user utterance to it. Then, the Power Virtual Agents skill bot's own NLU will match this user utterance to a Power Virtual Agents **Topic**, extract any **Entities** needed for slot-filling and trigger this Power Virtual Agents **Topic**.
 
-All Power Virtual Agents skill manifests are automaticaly generated and updated for every bot. A Virtual Agents bot has 2 different skill manifests, **Test manifest** and **Published manifest**.
 
-- **Test manifest**  -- allows a Bot Framework bot to connect to the test version of your Power Vitual Agents bot that would appear in the **Test your bot** panel in Power Virtual Agents. The **Test manifest** is immediatelly avaliable for every newly created Power Virtual Agents bot. It is automatically updated to reflect the changes every time you **Save** bot content. You can use the **Test manifest** to test out the changes in your Power Virtual Agents skill with a Bot Framework bot before **Publishing** them.
+All Power Virtual Agents skill manifests are automatically generated and updated. A Virtual Agents bot has 2 different skill manifests, **Test manifest** and **Published manifest**.
 
-- **Published manifest** -- allows a Bot Framework bot to connect to the **Publsihed** version of your Power Virtual Agents bot. The **Published manifest** is only avaliable for Power Virtual Agents bots that have been **Published** at least once. It is automatically updated to reflect the changes every time you **Publish** your bot.
+•	**Test manifest** -- allows to connect to the **Test** version of your Power Virtual Agents bot. The Test manifest is immediately available for every newly created Power Virtual Agents bot. It is automatically updated to reflect the changes every time you **Save** bot content. You can use the Test manifest to test out the changes in your skill with before **Publishing** them.
+•	**Published manifest** -- allows to connect to the **Published** version of your Power Virtual Agents bot. The **Published manifest** is only available for Power Virtual Agents bots that have been **Published** at least once. It is automatically updated to reflect the changes every time you **Publish** your bot.
+
 
 >[!NOTE]
-> **Published manifest** is not avaliable in Power Virtual Agents bots that have never been **Published**. To generate your bot's **Published manifest**, your need to [publish your Power Virtual Agents bot](https://docs.microsoft.com/en-us/power-virtual-agents/publication-fundamentals-publish-channels). 
+> The **Published manifest** is not available in Power Virtual Agents bots that have never been **Published**.  To generate your bot's **Published manifest**, your need to [publish your Power Virtual Agents bot](https://docs.microsoft.com/en-us/power-virtual-agents/publication-fundamentals-publish-channels). 
 
 Both Power Virtual Agents bot's skill manifests can be found on **Manage allowlist** panel.
 ![Power Virtual Agents bot Manifests on Manage Allowlist panel](media/PVA-as-a-skill/Skill_Manifest1.png)
 
-Additonally, you can find Power Virtual Agents bot's skill manifests on **Details** page under **Manage** tab along other bot's metadata like **Environment ID**, **Tenant ID** and **Bot app ID**.
+Additionally, you can find Power Virtual Agents bot's skill manifests on **Details** page under **Manage** tab along other bot's metadata like **Environment ID**, **Tenant ID** and **Bot app ID**.
 ![Power Virtual Agents bot Manifests on Details page](media/PVA-as-a-skill/Skill_Manifest2.png)
 
-Click the buttons to dowload **Test manifest** or **Published manifest** as .zip archives.
+Click the buttons to download **Test manifest** or **Published manifest** as .zip archives.
 
 ![Power Virtual Agents - Downloaded Test and Published Manifests](media/PVA-as-a-skill/Manifests_Zip.png)
 
