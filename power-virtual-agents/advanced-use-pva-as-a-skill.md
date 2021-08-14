@@ -91,6 +91,11 @@ Click the buttons to dowload **Test manifest** or **Published manifest** as .zip
 
 You can use the Power Virtual Agents bot skill **Test manifest** or **Published manifest** that you have downloadad in a .zip archive to create a skill connection for your Bot Framework bot in Composer.
 
+In Bot Framework Composer project, use **+ Add** button and choose **Connect to a skill** menu option.
+
+![Composer - connect Bot Framewok bot to a skill](media/PVA-as-a-skill/Composer_ConnectToSkill.png)
+
+
 >[!IMPORTANT]
 >Your Bot Framework bot must be added to the Power Virtual Agents bot's **Allowlist** for the skill connection to work!
 
