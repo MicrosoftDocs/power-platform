@@ -16,7 +16,7 @@ ms.collection: virtualagent
 # Use Power Virtual Agents bot as a skill
 
 You can use your Power Virtual Agents bot as a [skill](https://docs.microsoft.com/en-us/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0) with Bot Framewoek bots. 
-If you have already built and deployed Bot Framework bots in your organization, this feature will eenable you to extend their functionality by calling Power Virtual Agennts bots as skills.
+If you have already built and deployed Bot Framework bots in your organization, this feature will enable you to extend their functionality by calling Power Virtual Agennts bots as skills.
 
 >[!NOTE]
 >This article is intended for system administrators or IT professionals who are familiar with [Bot Framework skills](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0&preserve-view=true).
@@ -58,11 +58,17 @@ The Bot Framework bot is now added to your **Allowlist** and it will be displaye
 ![Bots on Alllowlist](media/PVA-as-a-skill/Skill_AllowedCallerAdded.png)
 
 ## Download your Power Virtual Agents bot skill manifest
-Every Power Virtual Agents bot can be used as a skill with Bot Framework bots (provided these Bot Framewoek bots have been added to **Allowlist**). All Power Virtual Agents bots have a ready to be used skill manifest, a JSON file that describes skill's name, interface and Skill's trigger phrases. Power Virtual Agents implement skill manifest in [version 2.2](https://docs.microsoft.com/en-us/azure/bot-service/skills-write-manifest?view=azure-bot-service-4.0&tabs=v2-2).
+Every Power Virtual Agents bot can be used as a skill with Bot Framework bots (provided these Bot Framewoek bots have been added to **Allowlist**). All Power Virtual Agents bots have skill manifests, a JSON file that describes skill's name, interface and Skill's trigger phrases. Power Virtual Agents implement skill manifest in [version 2.2](https://docs.microsoft.com/en-us/azure/bot-service/skills-write-manifest?view=azure-bot-service-4.0&tabs=v2-2).
 
 Bot Framework bot can use Power Virtual Agents bot skill manifest to configure a connection to this Power Virtual Agents bot. At runtime, a Bot Framework bot can use the data in Power Virtual Aegnts bot skill's manifest to identify when it needs to trigger this skill in response to a user utterance.
 
 When a Bot Framework bot evaluates a user utterance and decides, based on the manifest data, that it needs to be handled by a Power Virtual Agents skill bot, it will pass the entire user utterance to it. Then, the Power Virtual Agents skill bot's own NLU will match this user uttrenace to a Power Virtual Agents **Topic**, extact any Entities needed for slot-filling and trigger this **Topic**.
+
+All Power Virtual Agents skill manifests are automaticaly generated and updated for every bot. A Virtual Agents bot has 2 different skill manifests, **Test manifest** and **Published manifest**.
+
+
+>[!NOTE]
+> **Published maniest** is not avaliable in Power Virtual Agents bots that have never been **Published**. To generate your bot's **Published manifest**, your need to [publish your Power Virtual Agents bot](https://docs.microsoft.com/en-us/power-virtual-agents/publication-fundamentals-publish-channels). 
 
 Power Virtual Agents bot's skill manifests can be found on **Manage allowlist** panel.
 ![Power Virtual Agents bot Manifests on Manage Allowlist panel](media/PVA-as-a-skill/Skill_Manifest1.png)
