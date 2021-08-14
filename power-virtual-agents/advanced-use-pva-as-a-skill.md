@@ -99,6 +99,10 @@ On **Add a skill** screen, select a Power Virtual Agents manifest .zip archive a
 
 ![Composer - select a Power Virtual Agents skill zip archive](media/PVA-as-a-skill/Composer_AddSkillZip.png)
 
+Select what Power Virtual Agents bot skill's Topics you want to add to your Bot Framework bot and press **Next**.
+
+![Composer - select a Power Virtual Agents Topics](media/PVA-as-a-skill/Composer_SelectTopics.png)
+
 >[!IMPORTANT]
 >Your Bot Framework bot must be added to the Power Virtual Agents bot's **Allowlist** for the skill connection to work!
 
