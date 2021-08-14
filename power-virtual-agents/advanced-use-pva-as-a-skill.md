@@ -67,7 +67,7 @@ When a Bot Framework bot evaluates a user utterance and decides, based on the ma
 Power Virtual Agents bot's skill manifests can be found on **Manage allowlist** panel.
 ![Power Virtual Agents bot Manifests on Manage Allowlist panel](media/PVA-as-a-skill/Skill_Manifest1.png)
 
-Additonally, you can find Power Virtual Agents bot's skill manifests on **Details** page under **Manage** tab along other bot's metadata.
+Additonally, you can find Power Virtual Agents bot's skill manifests on **Details** page under **Manage** tab along other bot's metadata like **Environment ID**, **Tenant ID** and **Bot app ID**.
 ![Power Virtual Agents bot Manifests on Details page](media/PVA-as-a-skill/Skill_Manifest2.png)
 
 ## Connect to a Power Virtual Agents skill in Composer
