@@ -71,13 +71,16 @@ All Power Virtual Agents skill manifests are automaticaly generated and updated 
 - **Published manifest** -- allows a Bot Framework bot to connect to the **Publsihed** version of your Power Virtual Agents bot. The **Published manifest** is only avaliable for Power Virtual Agents bots that have been **Published** at least once. It is automatically updated to reflect the changes every time you **Publish** your bot.
 
 >[!NOTE]
-> **Published maniest** is not avaliable in Power Virtual Agents bots that have never been **Published**. To generate your bot's **Published manifest**, your need to [publish your Power Virtual Agents bot](https://docs.microsoft.com/en-us/power-virtual-agents/publication-fundamentals-publish-channels). 
+> **Published manifest** is not avaliable in Power Virtual Agents bots that have never been **Published**. To generate your bot's **Published manifest**, your need to [publish your Power Virtual Agents bot](https://docs.microsoft.com/en-us/power-virtual-agents/publication-fundamentals-publish-channels). 
 
-Power Virtual Agents bot's skill manifests can be found on **Manage allowlist** panel.
+Both Power Virtual Agents bot's skill manifests can be found on **Manage allowlist** panel.
 ![Power Virtual Agents bot Manifests on Manage Allowlist panel](media/PVA-as-a-skill/Skill_Manifest1.png)
 
 Additonally, you can find Power Virtual Agents bot's skill manifests on **Details** page under **Manage** tab along other bot's metadata like **Environment ID**, **Tenant ID** and **Bot app ID**.
 ![Power Virtual Agents bot Manifests on Details page](media/PVA-as-a-skill/Skill_Manifest2.png)
+
+Click on the button to dowload **Test manifest** or **Published manifest** as .zip archives.
+![Power Virtual Agents - Test and Published Manifest as .zip archives](media/PVA-as-a-skill/Manifests_Zip.png)
 
 ## Connect to a Power Virtual Agents skill in Composer
 
