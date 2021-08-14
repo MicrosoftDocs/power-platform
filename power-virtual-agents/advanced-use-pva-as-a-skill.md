@@ -107,12 +107,19 @@ Review and edit your Power Virtual Agents bot skill's Trigger Phrases and press 
 
 ![Composer - edit trigger phrases](media/PVA-as-a-skill/Composer_EditTriggerPhrases.png)
 
-Make sure the Orchestrator option is checked and press **Continue**.
+Make sure the **Orchestrator** option is checked and press **Continue**.
 
 ![Composer - enable Orchestrator](media/PVA-as-a-skill/Composer_Orchestrator.png)
+
+Verify that Power Virtual Agents skill is added to your Bot Framewok bot correctly and a new **trigger** with your Power Virtual Agents bot's name is added to the project in Composer.
+![Composer - Power Virtual Agents skill added](media/PVA-as-a-skill/Composer_PVASkillAdded.png)
+
 
 >[!IMPORTANT]
 >Your Bot Framework bot must be added to the Power Virtual Agents bot's **Allowlist** for the skill connection to work!
 
 ## Test Power Virtual Agents bot as a skill with a Bot Framework bot
-You can test your Bot Framework bot calling a Power Virtual Agents bot as a skill by using [Emulator](https://docs.microsoft.com/en-us/composer/how-to-connect-to-a-skill?tabs=v2x#test-in-the-emulator)
+You can test your Bot Framework bot calling a Power Virtual Agents bot as a skill by using [Emulator](https://docs.microsoft.com/en-us/composer/how-to-connect-to-a-skill?tabs=v2x#test-in-the-emulator).
+
+>[!IMPORTANT]
+>Your Bot Framework bot must be added to the Power Virtual Agents bot's **Allowlist** for the skill connection to work correctly.
