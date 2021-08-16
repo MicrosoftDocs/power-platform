@@ -87,6 +87,9 @@ Click the buttons to download **Test manifest** or **Published manifest** as .zi
 
 ![Power Virtual Agents skill manifest files](media/PVA-as-a-skill/Manifests_Files.png)
 
+>[!NOTE]
+> Power Virtual Agents bot's **System Topics** will not be included in skill manifest. Only user-created **Topic** will be added to Power Virtual Agents bot skill manifest.
+
 ## Connect to a Power Virtual Agents skill in Composer
 
 You can use the Power Virtual Agents bot skill **Test manifest** or **Published manifest** that you have downloaded in a .zip archive to create a skill connection in your Bot Framework bot in Composer.
