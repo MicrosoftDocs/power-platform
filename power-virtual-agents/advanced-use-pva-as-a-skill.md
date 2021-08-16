@@ -137,7 +137,7 @@ To learn more about developing in Bot Framework Composer and using skills, see t
 - [Bot Framework Composer documentation](/composer/) 
 - [Skills in Composer](https://docs.microsoft.com/en-us/composer/concept-skills)
 - [Connect to a remote skill in Composer](https://docs.microsoft.com/en-us/composer/how-to-connect-to-a-skill?tabs=v2x)
-
+- [Test your skill in Emulator](https://docs.microsoft.com/en-us/composer/how-to-connect-to-a-skill?tabs=v2x#test-in-the-emulator)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
