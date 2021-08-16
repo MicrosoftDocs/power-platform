@@ -74,7 +74,7 @@ After installation, all tasks included in the Microsoft Power Platform Build Too
 available to add into any new or existing pipeline. You can find them by
 searching for "Power Platform".
 
-![Get the Microsoft Power Platform Build Tools.](media/get-build-tools.png "Get the Microsoft Power Platform Build Tools")
+:::image type="content" source="media/get-build-tools.png" alt-text="Get the Microsoft Power Platform Build Tools":::
 
 ## Connection to environments
 
