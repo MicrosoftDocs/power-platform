@@ -106,6 +106,8 @@ Note the following features:
 >   - Support
 >   - Developer
 > - You can select an environment that's showing 0 GB, and then go to its environment capacity analytics page to see the actual consumption.
+> - For the default environment, the list view will only show the amount of capacity consumed beyond the free quota. Select the **Details** button (![Storage data details button.](media/storage-data-details-button.png "Storage data details button")) to see usage.
+
 
 #### Environment storage capacity details
 
