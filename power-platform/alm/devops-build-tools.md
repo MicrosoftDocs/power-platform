@@ -125,7 +125,7 @@ Use the information displayed to configure the Power Platform service connection
 
 
 ### Configure environment with the Application ID
-The Application ID must be added as an Application User in the Microsoft Power Platform environment you are connecting to. Information on how to add an application user is available in this article [Application user creation](/powerapps/developer/common-data-service/use-single-tenant-server-server-authentication#application-user-creation) 
+The Application ID must be added as an Application User in the Microsoft Power Platform environment you are connecting to. Information on how to add an application user is available in this article [Application user creation](/powerapps/developer/common-data-service/use-single-tenant-server-server-authentication#application-user-creation).
 
 Ensure that the added Application User has the system administrator role assigned (available from “Manage Roles” in the security settings for the application user).
 
