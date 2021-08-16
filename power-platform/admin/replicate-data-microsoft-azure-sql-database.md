@@ -4,7 +4,7 @@ description: Replicate data to Azure SQL Database using Data Export Service
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/11/2021
+ms.date: 08/16/2021
 ms.subservice: admin
 ms.author: sabinn
 author: sabinn-msft
