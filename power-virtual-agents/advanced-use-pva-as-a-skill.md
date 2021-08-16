@@ -135,8 +135,6 @@ To learn more about developing in Bot Framework Composer and using skills, see t
 - [Skills overview](https://docs.microsoft.com/en-us/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0)
 - [Skills manifest](https://docs.microsoft.com/en-us/azure/bot-service/skills-write-manifest?view=azure-bot-service-4.0&tabs=v2-2)
 - [Bot Framework Composer documentation](/composer/) 
-- [Tour of Composer](/composer/quickstart-tour-of-composer)
-- [Tutorial: Create a new bot](/composer/tutorial/tutorial-create-bot)
 - [Skills in Composer](https://docs.microsoft.com/en-us/composer/concept-skills)
 - [Connect to a remote skill in Composer](https://docs.microsoft.com/en-us/composer/how-to-connect-to-a-skill?tabs=v2x)
 
