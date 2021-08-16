@@ -259,7 +259,6 @@ If you use Visual Studio to edit resource files created by the solution packager
   
 ### See also  
  [Use Source Control with Solution Files](use-source-control-solution-files.md)<br/>   
- [Solution Component File Reference](/powerapps/developer/common-data-service/solution-component-file-reference-solutionpackager)<br/>   
  [Solution concepts](solution-concepts-alm.md)
 
 
