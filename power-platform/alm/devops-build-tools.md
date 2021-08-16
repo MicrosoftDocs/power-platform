@@ -85,7 +85,7 @@ To interact with the Microsoft Power Platform environment, a connection must be 
 
 ## Configure service connections using a service principal
 
-To configure a connection using service principal, you must first create an application registration in Azure Active Directory (AAD) with the required permissions and then create the associated Application User in the Microsoft Power Platform environment you want to connect to. We have offered a script to facilitate some of the steps required in the section below, while detailed information with manual step-by-step instructions are available [here](/powerapps/developer/common-data-service/use-single-tenant-server-server-authentication#azure-application-registration).
+To configure a connection using service principal, you must first create an application registration in Azure Active Directory (AAD) with the required permissions and then create the associated Application User in the Microsoft Power Platform environment you want to connect to. We have offered a script to facilitate some of the steps required in the section below, while detailed information with manual step-by-step instructions are available in this article [Azure application registration](/powerapps/developer/common-data-service/use-single-tenant-server-server-authentication#azure-application-registration).
 
 ### Create service principal and client secret using PowerShell
 
@@ -125,7 +125,7 @@ Use the information displayed to configure the Power Platform service connection
 
 
 ### Configure environment with the Application ID
-The Application ID must be added as an Application User in the Microsoft Power Platform environment you are connecting to. Information on how to add an application user is available [here](/powerapps/developer/common-data-service/use-single-tenant-server-server-authentication#application-user-creation) 
+The Application ID must be added as an Application User in the Microsoft Power Platform environment you are connecting to. Information on how to add an application user is available in this article [Application user creation](/powerapps/developer/common-data-service/use-single-tenant-server-server-authentication#application-user-creation).
 
 Ensure that the added Application User has the system administrator role assigned (available from “Manage Roles” in the security settings for the application user).
 
