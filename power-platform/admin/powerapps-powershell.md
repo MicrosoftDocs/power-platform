@@ -6,7 +6,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 07/01/2021
+ms.date: 08/12/2021
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -321,7 +321,7 @@ $settings = Get-TenantSettings
 $settings.PowerPlatform.PowerApps.disableShareWithEveryone 
 ```
 
-This setting controls whether users with the Environment Maker security role can share canvas apps with '[Everyone in an organization](/powerapps/maker/canvas-apps/share-app)'. When the setting is set to ‘false’, only users with an admin role (Dynamics 365 admin, Power Platform Service admin, Azure AD tenant admin) can share apps with ‘Everyone in an organization’.  
+This setting controls whether users with the Environment Maker security role can share canvas apps with '[Everyone in an organization](/powerapps/maker/canvas-apps/share-app)'. When the setting is set to ‘true’, only users with an admin role (Dynamics 365 admin, Power Platform Service admin, Azure AD tenant admin) can share apps with ‘Everyone in an organization’.  
 
 Note, regardless of this tenant settings value makers with the sharing privilege can share apps with security groups of any size. This control only determines whether the ‘Everyone’ shorthand may be used when sharing.  
 
