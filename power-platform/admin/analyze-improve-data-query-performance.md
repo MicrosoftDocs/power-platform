@@ -7,7 +7,7 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 08/12/2021
 ms.subservice: admin
-ms.author: matp
+ms.author: jimholtz
 search.audienceType: 
   - admin
 search.app:
