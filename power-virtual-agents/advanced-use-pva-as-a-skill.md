@@ -67,6 +67,7 @@ When a Bot Framework bot decides, based on the manifest data, that a user uttera
 All Power Virtual Agents skill manifests are automatically generated and updated. A Virtual Agents bot has 2 different skill manifests, **Test manifest** and **Published manifest**.
 
 •	**Test manifest** -- allows to connect to the **Test** version of your Power Virtual Agents bot. The Test manifest is immediately available for every newly created Power Virtual Agents bot. It is automatically updated to reflect the changes every time you **Save** bot content. You can use the Test manifest to test out the changes in your skill with before **Publishing** them.
+
 •	**Published manifest** -- allows to connect to the **Published** version of your Power Virtual Agents bot. The **Published manifest** is only available for Power Virtual Agents bots that have been **Published** at least once. It is automatically updated to reflect the changes every time you **Publish** your bot.
 
 
@@ -88,7 +89,7 @@ Click the buttons to download **Test manifest** or **Published manifest** as .zi
 ![Power Virtual Agents skill manifest files](media/PVA-as-a-skill/Manifests_Files.png)
 
 >[!NOTE]
-> Power Virtual Agents bot's **System Topics** will not be included in skill manifest. Only user-created **Topic** will be added to Power Virtual Agents bot skill manifest.
+> **System Topics** and Composer **dialogs** added to Power Virtual Agents bot will not be included in skill manifest. Only user-created **Topics** and Coposer **intent triggers** added to the bot will be added to Power Virtual Agents bot skill manifest.
 
 ## Connect to a Power Virtual Agents skill in Composer
 
@@ -119,7 +120,7 @@ Verify that Power Virtual Agents skill is added to your Bot Framework bot correc
 
 
 >[!IMPORTANT]
->Your Bot Framework bot must be added to the Power Virtual Agents bot's **Allowlist** for the skill connection to work!
+>Your Bot Framework bot must be added to the Power Virtual Agents bot's **Allowlist** for the skill connection to work.
 
 ## Test Power Virtual Agents bot as a skill with a Bot Framework bot
 You can test your Bot Framework bot calling a Power Virtual Agents bot as a skill by using [Emulator](https://docs.microsoft.com/en-us/composer/how-to-connect-to-a-skill?tabs=v2x#test-in-the-emulator).
