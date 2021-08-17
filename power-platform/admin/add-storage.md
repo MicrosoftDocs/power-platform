@@ -43,14 +43,18 @@ After you determine how much storage you're using, you can add or remove storage
 
 2. In the left pane, select **Billing** > **Purchase services**.
 
-3. In the search box, search for "capacity".
+3. Under **View by category**, select **Dynamics 365**. 
    
-   :::image type="content" source="media/storage-search-capacity-add-on-purchase.png" alt-text="Search for capacity add-on storage to purchase.":::
+   :::image type="content" source="media/storage-search-dynamics-365.png" alt-text="Search for Dynamics 365 apps for capacity add-on storage to purchase.":::
 
-4. Select your product, and then select **Details**.
+4. Select **See all Dynamics 365 products**.
 
-5. From the **Select license quantity** box, enter the number of licenses to purchase.
+   :::image type="content" source="media/storage-see-all-dynamics-365-products.png" alt-text="To see all Dynamics 365 products, select See all Dynamics 365 products.":::
 
-6. Select your billing frequency, and then select **Buy** to complete the purchase process.
+5. Select your product, and then select **Details**.
+
+6. From the **Select license quantity** box, enter the number of licenses to purchase.
+
+7. Select your billing frequency, and then select **Buy** to complete the purchase process.
 
 :::image type="content" source="media/storage-file-capacity-purchase.png" alt-text="Buy Dataverse File capacity storage add-on.":::
