@@ -27,11 +27,11 @@ You have options when you're running low on storage capacity. You can [free up s
 If you start to run out of storage, you can add storage to your subscription if your plan is eligible.  
 
 > [!NOTE]
-> If you bought your subscription through [Volume Licensing](/licensing/) or a Cloud Solution Provider (CSP), you can't buy additional storage capacity for your organization directly from Microsoft. Contact your representative or [partner](/microsoft-365/commerce/manage-partners?view=o365-worldwide) for help. 
+> If you bought your subscription through [Volume Licensing](/licensing/) or a Cloud Solution Provider (CSP), you can't buy additional storage capacity for your organization directly from Microsoft. Contact your representative or [partner](https://docs.microsoft.com//microsoft-365/commerce/manage-partners?view=o365-worldwide) for help. 
 
 ## Preliminary steps
 
-1. You must be an admin to do the tasks in this article. For more information, see [About admin roles](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide).
+1. You must be an admin to do the tasks in this article. For more information, see [About admin roles](https://docs.microsoft.com//microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide).
 2. Review your tenant properties: (**portal.azure.com** > under **Azure services** > **Tenant properties**).
 3. Determine your [current capacity storage usage](capacity-storage.md#verifying-your-new-storage-model). 
 
