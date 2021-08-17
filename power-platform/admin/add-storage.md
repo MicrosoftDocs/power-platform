@@ -32,10 +32,12 @@ If you start to run out of storage, you can add storage to your subscription if 
 ## Preliminary steps
 
 1. You must be an admin to do the tasks in this article. For more information, see [About admin roles](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide).
-2. Get your tenant ID (**portal.azure.com** > under **Azure services** > **Tenant properties**).
+2. Review your tenant properties: (**portal.azure.com** > under **Azure services** > **Tenant properties**).
 3. Determine your [current capacity storage usage](capacity-storage.md#verifying-your-new-storage-model). 
 
-## Purchase add-on storage
+## Purchase add-on storage capacity
+
+After you determine how much storage you're using, you can add or remove storage space for your subscription. Follow the steps below to review pricing and purchase more capacity.
 
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/).
 
