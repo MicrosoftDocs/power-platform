@@ -24,7 +24,7 @@ You have options when you're running low on storage capacity. You can [free up s
 
 ## Add storage space for your tenant
 
-If you start to run out of storage, you can add storage to your subscription if your plan is eligible. If you don't see **Add On Extra Storage Capacity** in the list of available add-ons, it means your plan is not eligible. 
+If you start to run out of storage, you can add storage to your subscription if your plan is eligible.  
 
 > [!NOTE]
 > If you bought your subscription through [Volume Licensing](/licensing/) or a Cloud Solution Provider (CSP), you can't buy additional storage capacity for your organization directly from Microsoft. Contact your representative or [partner](/microsoft-365/commerce/manage-partners?view=o365-worldwide) for help. 
@@ -52,6 +52,9 @@ After you determine how much storage you're using, you can add or remove storage
    :::image type="content" source="media/storage-see-all-dynamics-365-products.png" alt-text="To see all Dynamics 365 products, select See all Dynamics 365 products.":::
 
 5. Select your product, and then select **Details**.
+
+   > [!NOTE]
+   > If you don't see your plan, it is not eligible for additional capacity add-on storage.
 
 6. From the **Select license quantity** box, enter the number of licenses to purchase.
 
