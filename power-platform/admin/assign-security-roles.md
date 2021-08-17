@@ -9,7 +9,7 @@ ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/11/2021
+ms.date: 08/17/2021
 search.audienceType: 
   - admin
 search.app:
@@ -58,9 +58,10 @@ Follow these steps to assign a security role.
 To assign security roles to users in an environment that has zero or one Microsoft Dataverse database, see [Configure user security to resources in an environment](database-security.md). 
 
 ## (Optional) Assign an administrator role  
- You can share [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)] administration tasks among several people by assigning [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)] administrator roles to users you select to fill each role. You might decide to assign the global administrator role to a second person in your organization for times when you're not available.  
+
+You can share [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)] administration tasks among several people by assigning [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)] administrator roles to users you select to fill each role. You might decide to assign the global administrator role to a second person in your organization for times when you're not available.  
   
- There are five [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)] administrator roles with varying levels of permissions. For example, the password reset administrator role can reset user passwords only; the user management administrator role can reset user passwords in addition to adding, editing, or deleting user accounts; and the global administrator role can add online service subscriptions for the organization and manage all aspects of subscriptions. For detailed information about [!INCLUDE[pn_MS_Online_Services](../includes/pn-ms-online-services.md)] administrator roles, see [Assigning Admin Roles](/microsoft-365/admin/add-users/assign-admin-roles).  
+There are five [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)] administrator roles with varying levels of permissions. For example, the password reset administrator role can reset user passwords only; the user management administrator role can reset user passwords in addition to adding, editing, or deleting user accounts; and the global administrator role can add online service subscriptions for the organization and manage all aspects of subscriptions. For detailed information about [!INCLUDE[pn_MS_Online_Services](../includes/pn-ms-online-services.md)] administrator roles, see [Assigning Admin Roles](/microsoft-365/admin/add-users/assign-admin-roles).  
   
 > [!NOTE]
 > [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)] administrator roles are valid only for managing aspects of the online service subscription. These roles don't affect permissions within the service.
@@ -71,16 +72,14 @@ When users are added to Dataverse, they will get roles assigned automatically ba
 
 1. All Azure Active Directory (Azure AD) admins (tenant admin, Power Platform admin, Dynamics 365 service admin) get the System Administrator role in Dataverse. 
 
-   [Important!] The System Administrator role is not removed automatically if the Azure AD admin role is removed. Since there is no mechanism to track if the role was assigned by the system automatically or by an administrator, we recommend the administrator manually remove the System Administrator role once the Azure AD role is removed. 
+   > [!IMPORTANT]
+   > The System Administrator role is not removed automatically if the Azure AD admin role is removed. Since there is no mechanism to track if the role was assigned by the system automatically or by an administrator, we recommend the administrator manually remove the System Administrator role once the Azure AD role is removed. 
 
 2. Users with a valid license will get corresponding mapped roles assigned to them automatically. Removal of the respective license will result in automatic role removal. License-based default role management is not applicable for users in these types of environments: Dataverse for Teams, Trial, and Developer. 
 
-   > [!NOTE]
-   > For a full list of license-based roles, see [Role management](https://dev.azure.com/dynamicscrm/OneCRM/_wiki/wikis/OneCRM.wiki/16157/Role-management?anchor=license-based-roles).
+3. For the Default environment type, roles will be assigned automatically to all users added in Dataverse based on the value of “DefaultSecurityRoles” setting in the [OrgDBOrgSettings](https://support.microsoft.com/topic/orgdborgsettings-tool-for-microsoft-dynamics-crm-20a10f46-2a24-a156-7144-365d49b842ba). 
 
-4. For the Default environment type, roles will be assigned automatically to all users added in Dataverse based on the value of “DefaultSecurityRoles” setting in the [OrgDBOrgSettings](https://support.microsoft.com/topic/orgdborgsettings-tool-for-microsoft-dynamics-crm-20a10f46-2a24-a156-7144-365d49b842ba). 
-
-5. In the Finance and Operations linked Dataverse environment, Finance and Operations Basic User and Environment Maker security roles are automatically assigned to all active users in Dataverse. 
+4. In the Finance and Operations linked Dataverse environment, Finance and Operations Basic User and Environment Maker security roles are automatically assigned to all active users in Dataverse. 
 
 ### See also
 [Get started with security roles in Dataverse](/learn/modules/get-started-security-roles/)
