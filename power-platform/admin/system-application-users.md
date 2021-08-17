@@ -4,7 +4,7 @@ description: "Learn about the special system and application users created when 
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 07/26/2021
+ms.date: 08/16/2021
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
@@ -31,7 +31,7 @@ Most of these users are hidden from user views but they can be found by using th
 | | Support user |crmoln@microsoft.com |To allow Microsoft support staff to have restricted/limited access to any customer environment for customer support. |Support user (does not have privilege to customer data) |
 | | Delegated admin |crmoln2@microsoft.com |See [For partners: the Delegated admin](for-partners-delegated-administrator.md). |System admin |
 |Application | Business Application Platform Service account |bap_sa@microsoft.com |To setup Power Apps system and configurations. |System admin |
-| | Dataverse relevance search | RelevanceSearch@onmicrosoft.com | To fetch table data and metadata for Dataverse search feature | Service Reader |
+| | Dataverse relevance search | RelevanceSearch@onmicrosoft.com | To fetch table data and metadata for Dataverse search feature | System admin |
 | | Dynamics 365 Office Data Service | diofficedata@microsoft.com |Service Application to perform data integration between Microsoft Dataverse and Microsoft 365. | DataLakeWorkspaceAppAccess |
 | | Dynamics 365 Athena-CDStoAzuredatalake | Dynamics365Athena-CDStoAzuredatalake@onmicrosoft.com |Service application to perform data integration between Microsoft Dataverse to Azure Data Lake. |DataLakeWorkspaceAppAccess |
 | | Dynamics 365 Athena2-CDStoAzuredatalake | Dynamics365Athena2-CDStoAzuredatalake@onmicrosoft.com |Service application to perform data integration between Dataverse to Azure Data Lake. |DataLakeWorkspaceAppAccess |
