@@ -9,7 +9,7 @@ ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/11/2021
+ms.date: 08/17/2021
 search.audienceType: 
   - admin
 search.app:
@@ -78,7 +78,7 @@ When users are added to Dataverse, they will get roles assigned automatically ba
    > [!NOTE]
    > For a full list of license-based roles, see [Role management](https://dev.azure.com/dynamicscrm/OneCRM/_wiki/wikis/OneCRM.wiki/16157/Role-management?anchor=license-based-roles).
 
-4. For the Default environment type, roles will be assigned automatically to all users added in Dataverse based on the value of “DefaultSecurityRoles” setting in the [OrgDBOrgSettings](https://support.microsoft.com/topic/orgdborgsettings-tool-for-microsoft-dynamics-crm-20a10f46-2a24-a156-7144-365d49b842ba). 
+4. For the Default environment type, roles will be assigned automatically to all users added in Dataverse based on the value of “DefaultSecurityRoles” setting in the OrgDBOrgSettings table to be added. Check back for updates.
 
 5. In the Finance and Operations linked Dataverse environment, Finance and Operations Basic User and Environment Maker security roles are automatically assigned to all active users in Dataverse. 
 
