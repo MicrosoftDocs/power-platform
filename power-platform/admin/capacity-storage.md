@@ -261,10 +261,6 @@ You can provision environments through the Power Platform admin center. More inf
 
 Consider buying additional capacity by using the [Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544). Alternatively, you can [free up storage](free-storage-space.md).
 
-### Where can I read more about the new capacity offers?
-
-Download the [Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544) to learn more.
-
 ### I'm an existing customer, and my renewal is coming up. Will I be affected?
 
 Customers who renew existing subscriptions can choose to continue to transact by using the existing offers for a certain period of time. Please contact your Microsoft partner or Microsoft sales team for details.
