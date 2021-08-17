@@ -24,7 +24,7 @@ checks against customizations and extensions to the Microsoft Dataverse
 platform. It's available for makers and developers to perform rich static
 analysis checks on their solutions against a set of best practice rules to
 quickly identify problematic patterns. To begin using the Power Apps checker Web
-API, see [Getting started](/checker-api/overview#getting-started).
+API, see [Getting started](/power-platform/alm/checker-api/overview#getting-started).
 
 The checker service provides the logic for the [solution checker feature](/powerapps/maker/common-data-service/use-powerapps-checker) in the Power Apps maker [portal](https://make.powerapps.com/) and is included as part of the automation for [applications submitted to AppSource](/powerapps/developer/common-data-service/publish-app-appsource). In this section, we describe how to run a best practice solution analysis of your customizations and extensions in your DevOps pipeline to verify the quality of your solution component.
 
