@@ -105,6 +105,10 @@ The following table outlines how the quarantine state impacts experiences for ad
 | Maker    | Regardless of an app’s quarantine state, an app is visible in https://make.powerapps.com and can be opened for editing in Power Apps Studio. |
 | End User | A quarantined app will present end-users that launch the app a message indicating they’re unable to access the app.                          |
 
+End users will see the following message when they launch an app that has been quarantined. 
+> [!div class="mx-imgBorder"] 
+> ![Power Apps quarantine end user message.](media/admin-manage-apps/power_apps_quarantine_message.png "Power Apps quarantine end user message" )
+
 The following table reflects quarantine support:
 
 | Power Apps type  | Quarantine support   |
