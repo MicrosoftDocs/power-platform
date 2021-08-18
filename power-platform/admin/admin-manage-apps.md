@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/09/2021
+ms.date: 08/18/2021
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -95,19 +95,20 @@ No, a maker that doesn’t have a security role called out in the [Choose enviro
 
 ## Manage app quarantine state (preview)
 
-As a complement to [Power Platform’s data loss prevention policies](https://docs.microsoft.com/power-platform/admin/wp-data-loss-prevention), an admin’s mechanism for setting guardrails for low-code development, Power Platform enables admins to ‘quarantine’ a resource. A resource’s quarantine state is managed by admins and controls whether a resource is accessible to end-users. In Power Apps, this capability allows admins to directly limit availability of apps that may need attention to meet an organization’s compliance requirements. 
+As a complement to [Power Platform’s data loss prevention policies](wp-data-loss-prevention.md), Power platform enables admins to 'quarantine' a resource, setting guardrails for low-code development. A resource’s quarantine state is managed by admins and controls whether a resource is accessible to end-users. In Power Apps, this capability allows admins to directly limit availability of apps that may need attention to meet an organization’s compliance requirements. 
 
-The following table outlines how the quarantine state impacts experiences for admins, makers and end-users. 
+The following table outlines how the quarantine state impacts experiences for admins, makers, and end-users. 
 
 | Persona  | Experience                                                                                                                                   |
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Admin    | Regardless of an app’s quarantine state, an app is visible to admins in Power Platform Admin Center and PowerShell cmdlets.                  |
+| Admin    | Regardless of an app’s quarantine state, an app is visible to admins in the Power Platform Admin Center and PowerShell cmdlets.                  |
 | Maker    | Regardless of an app’s quarantine state, an app is visible in https://make.powerapps.com and can be opened for editing in Power Apps Studio. |
 | End User | A quarantined app will present end-users that launch the app a message indicating they’re unable to access the app.                          |
 
 End users will see the following message when they launch an app that has been quarantined. 
+
 > [!div class="mx-imgBorder"] 
-> ![Power Apps quarantine end user message.](media/admin-manage-apps/power_apps_quarantine_message.png "Power Apps quarantine end user message" )
+> ![Power Apps quarantine end-user message.](media/admin-manage-apps/power_apps_quarantine_message.png "Power Apps quarantine end-user message" )
 
 The following table reflects quarantine support:
 
