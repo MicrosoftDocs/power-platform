@@ -108,7 +108,7 @@ The following table outlines how the quarantine state impacts experiences for ad
 End users will see the following message when they launch an app that has been quarantined. 
 
 > [!div class="mx-imgBorder"] 
-> ![Power Apps quarantine end-user message.](media/admin-manage-apps/power_apps_quarantine_message.png "Power Apps quarantine end-user message" )
+> ![Power Apps quarantine end-user message: This app could not be launched because the app has be quarantined by the admin.](media/admin-manage-apps/power_apps_quarantine_message.png "Power Apps quarantine end-user message: This app could not be launched because the app has be quarantined by the admin." )
 
 The following table reflects quarantine support:
 
