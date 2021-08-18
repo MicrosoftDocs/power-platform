@@ -1,17 +1,16 @@
 ---
-title: "Use connection references and environment variables  | Microsoft Docs"
+title: "Use connection references and environment variables in Power Platform Build Tools  | Microsoft Docs"
 description: "Learn about adding connection references and environment variables to solutions in Microsoft Dataverse."
-keywords: 
 author: kkanakas
 ms.subservice: alm
 ms.author: kartikka
 manager: mayadu
 ms.custom: ""
-ms.date: 08/17/2021
+ms.date: 08/20/2021
 ms.reviewer: "pehecke"
 ms.service: power-platform
+ms.subservice: alm
 ms.topic: "article"
-ms.assetid: 
 search.audienceType: 
   - developer
 search.app: 
@@ -19,7 +18,7 @@ search.app:
   - D365CE
 ---
 
-# Use connection references and environment variables
+# Use connection references and environment variables in Power Platform Build Tools (preview)
 
 <!-- TODO Add intro -->
 
@@ -198,5 +197,3 @@ initiate the pipeline.
 
 ### See also
 
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
