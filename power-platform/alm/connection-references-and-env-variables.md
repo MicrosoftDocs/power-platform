@@ -49,9 +49,9 @@ connection. Now, in the context of the UI, this process is simple.
 As a user I can export a solution that includes different connection references
 each pointing to a different connection.
 
-![Graphical user interface, table Description automatically generated with medium confidence](media/392d5e380457492dd51a42fdc933f058.png)
+![Graphical user interface, table Description automatically generated with medium confidence](media/cref-evar-figure1a.png)
 
-![Graphical user interface, text, application Description automatically generated](media/a61e063fba57fa5cfa8508de31f831b0.png)
+![Graphical user interface, text, application Description automatically generated](media/cref-evar-figure1b.png)
 
 Figure 1: Interactive behavior for changing connection references upon solution
 import.
@@ -74,7 +74,7 @@ To assist in the process, for this public preview we provide the ability to
 provide a deployment settings file that you can check-in to source control and
 pass it as a parameter when importing the solution in your pipeline.
 
-![Text Description automatically generated](media/8c1f636bb0633a063cc9ab19a25d1b3f.png)
+![Text Description automatically generated](media/cref-evar-figure2.png)
 
 Figure 2: Example of a sample deployment setting files
 
@@ -88,7 +88,7 @@ line interface (pac cli)
 When using pac cli and you do a pac solution export, it will generate a zip file
 for you.
 
-![Text Description automatically generated](media/576a4a7d0cf33336468fdab20b00ce5d.png)
+![Text Description automatically generated](media/cref-evar-figure3.png)
 
 Figure 3: pac cli create-settings command with solution zip file
 
@@ -98,7 +98,7 @@ solutionzipfilelocation\> --settings-files \<name for the settings file\>
 This will generate json file as shown in Figure 1. If you notice in the json
 file that few values are empty in the connection references section
 
-![](media/c7d104fb2128cb5b9dc25619e9d01cee.png)
+![Missing connection ID](media/cref-evar-figure4.png)
 
 Figure 4: Missing connection id
 
@@ -110,7 +110,7 @@ the target environment.
 After you have done a pac solution clone you get the following directory
 structure created on your local filesystem
 
-![Text Description automatically generated](media/7959d74d1e9ba1ac68243f3515e63061.png)
+![Text Description automatically generated](media/cref-evar-figure5.png)
 
 Figure 5: pac solution clone result
 
