@@ -21,6 +21,8 @@ search.app:
 
 # Use connection references and environment variables
 
+<!-- TODO Add intro -->
+
 ## Connection details
 
 Not to be confused with the Connections entity in Dataverse, a **connection** is
@@ -83,6 +85,8 @@ line interface (pac cli)
 
 ## How to generate the deployment settings files
 
+<!-- TODO Add intro -->
+
 ### When the solution zip file is available
 
 When using pac cli and you do a pac solution export, it will generate a zip file
@@ -117,7 +121,7 @@ Figure 5: pac solution clone result
 Then you proceed to create the settings file in the context of the current
 folder and populate the value of the settings file as shown in Figure 4
 
-![Text Description automatically generated](media/c2bd0f9f6755267a728c003dc7e091e6.png)
+![Text Description automatically generated](media/cref-evar-figure5b.png)
 
 ### How to get the connection ID for the deployment settings file
 
@@ -128,23 +132,23 @@ To get the connection id you can either go into maker portal in your target
 environment -\> select connections-\> select the connection you want to get the
 connection id for and then look at the URL to get the connection id
 
-![Graphical user interface, text, application Description automatically generated](media/f1538c077c8acfca32ce513a9cbc9b85.png)
+![Graphical user interface, text, application Description automatically generated](media/cref-evar-figure6.png)
 
 Figure 6: Connection id captured in the URL
 
 Or you can go directly into the target environment and query the connection
 references entity:
 
-![Graphical user interface, text, application, chat or text message Description automatically generated](media/2ab895dcd6de116debf24fe714ef20d2.png)
+![Graphical user interface, text, application, chat or text message Description automatically generated](media/cref-evar-figure6b.png)
 
-![Graphical user interface, application, Word Description automatically generated](media/76760219eb70f55da0159686e9d5d343.png)
+![Graphical user interface, application, Word Description automatically generated](media/cref-evar-figure6c.png)
 
 In the query editor, select edit columns and add connection id and then click he
 results button.
 
-![Graphical user interface, application Description automatically generated](media/44361226640fa0c48d6c83c351f4cc24.png)
+![Graphical user interface, application Description automatically generated](media/cref-evar-figure6d.png)
 
-![Graphical user interface, text, application Description automatically generated](media/ea8396215dde47b6fc005b6b46f66050.png)
+![Graphical user interface, text, application Description automatically generated](media/cref-evar-figure6e.png)
 
 And now you have the connection id for the connection reference.
 
@@ -155,26 +159,27 @@ entity. The steps are as follows:
 1.  Go to the maker portal in your tenant and within your target environment
     select New App-\> Canvas App
 
-![Graphical user interface, application, Teams Description automatically generated](media/b3f16a5d42166cb47fd84ea31a45a08f.png)
+![Graphical user interface, application, Teams Description automatically generated](media/cref-evar-figure7.png)
 
 Figure 7: New Canvas App
 
 1.  Then in the Power Apps studio environment select data verse application.
 
-![Graphical user interface, application, website Description automatically generated](media/7e990a0b769313193f9264092950e857.png)
+![Graphical user interface, application, website Description automatically generated](media/cref-evar-figure8.png)
 
 Figure 8: Selecting a dataverse application.
 
 1.  Select the connection references Table and select connect
 
-    ![Graphical user interface, application Description automatically generated](media/d96f8e2cb9c39e3d3a5e9b71be4564ef.png)
+    ![Graphical user interface, application Description automatically generated](media/cref-evar-figure9.png)
 
 Figure 9: Select the Connection reference table
+
 
 1.  This will create a gallery application that will list out all the
     connections and their connection ids within the environment
 
-    ![Graphical user interface, application, Word Description automatically generated](media/996e8a740310626d6af2722cac2d2e96.png)
+    ![Graphical user interface, application, Word Description automatically generated](media/cref-evar-figure10.png)
 
 Figure 10: Connection id in a Power App
 
@@ -189,7 +194,7 @@ choose to edit. This will provide the information needed to populate the
 deployment settings file (the underlined values are the values needed for the
 file):
 
-![Graphical user interface, text, application, email Description automatically generated](media/2c20c93997018ca4a853d2a675777d4a.png)
+![Graphical user interface, text, application, email Description automatically generated](media/cref-evar-figure11.png)
 
 Figure 11: Values of the environment variables in the target environment
 
@@ -199,7 +204,7 @@ target environment and pass the settings file as parameter when importing the
 solution into the target environment. This process will create the environment
 variable and assign it value upon import.
 
-![](media/6f15b34ce9b5c4afbe027252e38508d3.png)
+![Figure 12](media/cref-evar-figure12.png)
 
 Figure 12: updating the deployment settings file with the environment variable
 values
@@ -210,12 +215,12 @@ DevOps
 ## Azure Devops tasks
 
 When creating your pipeline in Azure DevOps as document
-[here](https://docs.microsoft.com/en-us/power-platform/alm/devops-build-tools).
+[here](devops-build-tools.md).
 When creating the import task in your pipeline select the “Use deployment
 settings file” and provide the path to the deployment settings file. Once done,
 initiate the pipeline
 
-![](media/4cb5fe0a7d3d9a14d01d7a7408ae3ac4.png)
+![Figure 13](media/cref-evar-figure13.png)
 
 Figure 13: using the deployment settings file
 
