@@ -93,6 +93,44 @@ No, a maker that doesn’t have a security role called out in the [Choose enviro
    > [!div class="mx-imgBorder"] 
    > ![Power Apps missing permission dialog.](media/admin-manage-apps/power_apps_missing_permission_to_create.png "Power Apps missing permission dialog")
 
+## Manage app quarantine state (preview)
+
+As a complement to [Power Platform’s data loss prevention policies](https://docs.microsoft.com/power-platform/admin/wp-data-loss-prevention), an admin’s mechanism for setting guardrails for low-code development, Power Platform enables admins to ‘quarantine’ a resource. A resource’s quarantine state is managed by admins and controls whether a resource is accessible to end-users. In Power Apps, this capability allows admins to directly limit availability of apps that may need attention to meet an organization’s compliance requirements. 
+
+The following table outlines how the quarantine state impacts experiences for admins, makers and end-users. 
+
+| Persona  | Experience                                                                                                                                   |
+|----------|----------------------------------------------------------------------------------------------------------------------------------------------|
+| Admin    | Regardless of an app’s quarantine state, an app is visible to admins in Power Platform Admin Center and PowerShell cmdlets.                  |
+| Maker    | Regardless of an app’s quarantine state, an app is visible in https://make.powerapps.com and can be opened for editing in Power Apps Studio. |
+| End User | A quarantined app will present end-users that launch the app a message indicating they’re unable to access the app.                          |
+
+End users will see the following message when they launch an app that has been quarantined. 
+> [!div class="mx-imgBorder"] 
+> ![Power Apps quarantine end user message.](media/admin-manage-apps/power_apps_quarantine_message.png "Power Apps quarantine end user message" )
+
+The following table reflects quarantine support:
+
+| Power Apps type  | Quarantine support   |
+|------------------|----------------------|
+| Canvas app       | Preview availability |
+| Model driven app | Not supported yet    |
+
+### Quarantine an app
+```PowerShell
+Set-AppAsQuarantined -EnvironmentName <EnvironmentName> -AppName <AppName>
+```
+
+### Un-quarantine an app
+```PowerShell
+Set-AppAsUnquarantined -EnvironmentName <EnvironmentName> -AppName <AppName>
+```
+
+### Get an app's quarantine state
+```PowerShell
+Get-AppQuarantineState -EnvironmentName <EnvironmentName> -AppName <AppName>
+```
+
 ### See also
 [Power Apps admin PowerShell support](powerapps-powershell.md#power-apps-commands)
 
