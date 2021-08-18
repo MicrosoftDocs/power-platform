@@ -1,5 +1,5 @@
 ---
-title: "Use connection references and environment variables in Power Platform Build Tools  | Microsoft Docs"
+title: "Automate connection references and environment variables in Power Platform Build Tools  | Microsoft Docs"
 description: "Learn about adding connection references and environment variables to solutions in Microsoft Dataverse."
 author: kkanakas
 ms.subservice: alm
@@ -18,164 +18,100 @@ search.app:
   - D365CE
 ---
 
-# Use connection references and environment variables in Power Platform Build Tools (preview)
+# Automate connection references and environment variables in Power Platform Build Tools (preview)
 
-<!-- TODO Add intro -->
+*Connection references* and *environment variables* enable you to interactively specify the connection details and configuration settings for an application that is specific to the target environment where your app or solution is deployed.
 
-## Connection details
+More information:
+- [Connection reference overview](/powerapps/maker/data-platform/create-connection-reference)
+- [Environment variables overview](/powerapps/maker/data-platform/environmentvariables)
 
-Not to be confused with the Connections entity in Microsoft Dataverse, a *connection* is
-a wrapper around an API that allows the underlying service to talk to
-applications within Power Platform i.e. Power Apps, Power Automate and so on.
-This **connection** wrapper does not exist in the context of a solution.
+After importing a solution containing connection reference and environment variable information, you are prompted to provide information about the connection references and environment variables specific to your environment in the UI. However, this does not work well for fully automated Continuous Integration/ Continuous Delivery (CI/CD) scenarios.
 
-*Connection references* are a **new solution component** that add a layer of
-abstraction between the **connection** and component leveraging the
-**connection**.  Because **connections are unique per environment**, connection
-references ensure that connections can participate in ALM by removing hard-coded
-identifiers within components and allowing new connections to be associated as
-you migrate solutions across environments. Mapping a connection reference to a
-connection in a target environment, was recently introduced in the modern import
-experience and we are now enabling an option to create the mapping in an
-automated manner.
+To enable a fully automated deployment, you can now pre-populate the connection reference and environment variable information specific to the target environment in your deployment process by using Power Platform Build Tools so that you don't have to interactively provide it after importing a solution. 
 
-## Why are connection references important from a CI/CD perspective?
+## Use the deployment settings file
 
-When moving your solution across environments, each environment may have
-different connections to access a data source i.e. Development environment may
-reference a different Azure SQL data source than the test environment. In other
-words, they will both access an Azure SQL environment but with a different
-connection. Now, in the context of the UI, this process is simple.
+To pre-populate the connection reference and environment variable information and use with Power Platform Build Tools, you can use the deployment settings file (JSON) that you can check-in to source control, and
+pass it as a parameter when importing the solution using Power Platform Build Tools.
 
-As a user I can export a solution that includes different connection references
-each pointing to a different connection.
-
-![Changing connection references](media/cref-evar-figure1a.png)
-
-![Changing connection references on solution import](media/cref-evar-figure1b.png)
-
-When I import the solution into a different environment, the UI gives me an
-option to change the connection reference to another data source that is
-relevant to the target environment. As you can observe this is an interactive
-capability. When doing this over a Continuous Integration/ Continuous Delivery
-(CI/CD) pipeline, such interaction does not work for a fully automated CI/CD
-scenarios, since there is no user interaction.
-
-To enable a fully automated deployment, in this public preview, we provide a way
-to deploy such changes in the connection reference without needing to have user
-interaction. However, it does require a lot of pre-work with populated data to
-make it happen and we will improve this experience over time.
-
-## Deployment setting JSON file
-
-To assist in the process, for this public preview we provide the ability to
-provide a deployment settings file that you can check-in to source control and
-pass it as a parameter when importing the solution in your pipeline.
+Here is an example of the deployment settings file:
 
 ![Example of a sample deployment setting file](media/cref-evar-figure2.png)
 
-This deployment setting files, can be generated using the power platform command
-line interface (pac cli)
+## Step 1: Generate the deployment settings file
 
-## How to generate the deployment settings files
+The deployment setting file can be generated using the [Power Platform CLI](/powerapps/developer/data-platform/powerapps-cli). YOu can generate the file while exporting or cloning the solution
 
-<!-- TODO Add intro -->
 
-### When the solution zip file is available
+### Option 1: Generate deployment settings file using create-settings property
 
-When using pac cli and you do a pac solution export, it will generate a zip file
-for you.
+Use the `create-settings` property with Power Platform CLI:
 
-![PAC CLI create-settings command with solution zip file](media/cref-evar-figure3.png)
-
-```azurecli
+```
 C:\> pac solution create-settings –solution-zip <path to the
 solutionzipfilelocation> --settings-files <name for the settings file>
 ```
+This will generate json file as shown here. 
 
-This will generate json file as shown in Figure 1. If you notice in the json
-file that few values are empty in the connection references section
+![PAC CLI create-settings command with solution zip file](media/cref-evar-figure3.png)
+
+In the JSON file, few values are empty in the `ConnectionReferences` section. These values need to be gathered after creating them in the target environment.
 
 ![Missing connection ID](media/cref-evar-figure4.png)
 
-These values of the connection id need to be gathered, after creating them in
-the target environment.
+### Generate deployment settings file by cloning the folder
 
-### Using the solution clone folder to generate the settings file
-
-After you have done a pac solution clone you get the following directory
-structure created on your local filesystem
+After you have cloned a solution using Power Platform CLI, you get the following directory structure created on your computer:
 
 ![pac solution clone result](media/cref-evar-figure5.png)
 
-Then you proceed to create the settings file in the context of the current
-folder and populate the value of the settings file as shown in Figure 4
+Proceed to create the settings file in the context of the current
+folder and populate the value of the settings file as shown here.
 
 ![Populated settings file](media/cref-evar-figure5b.png)
 
-### How to get the connection ID for the deployment settings file
+## Step 2: Get the connection reference and environment variable information
 
-To get the connection id in the target environment, we can get such information
-via various means.
+To populate the deployment settings file, you will need to obtain the connection reference and environment variable information of the target solution.
 
-To get the connection id you can either go into maker portal in your target
-environment -\> select connections-\> select the connection you want to get the
-connection id for and then look at the URL to get the connection id
+### Get the connection reference information
 
-![Connection ID captured in the URL](media/cref-evar-figure6.png)
+To get the connection id of the target environment, use one of the following ways:
 
-Or you can go directly into the target environment and query the connection
-references entity:
+- Sign in to [Power Apps](https://make.powerapps.com) and select your target environment. In the left navigation pane, select **Data** > **Connections**, select the connection you want to get the connection id for and then look at the URL to get the connection id.
 
-![Query the connection references entity](media/cref-evar-figure6b.png)
+    ![Connection ID captured in the URL](media/cref-evar-figure6.png)
 
-![Query the connection references entity](media/cref-evar-figure6c.png)
+- Create a canvas app on the connection reference entity. The steps are as follows:
 
-In the query editor, select edit columns and add connection id and then click he
-results button.
+    1.  Sign in to [Power Apps](https://make.powerapps.com) and select your target environment.
 
-![Query editor](media/cref-evar-figure6d.png)
-s
-![Query results](media/cref-evar-figure6e.png)
+    1. In the left navigation pane, select Apps, and then select **New app** > **Canvas**.   
 
-And now you have the connection id for the connection reference.
+    1.  Select Dataverse as your data source.
 
-A simpler way to get this information, without needing to navigate a across the
-power platform environment is to a create a Canvas on the connection reference
-entity. The steps are as follows:
+        ![Selecting a dataverse application](media/cref-evar-figure8.png)
 
-1.  Go to the maker portal in your tenant and within your target environment
-    select New App-\> Canvas App
+    1.  Select the **Connection References** table and select connect.
 
-![New canvas app](media/cref-evar-figure7.png)
+        ![Select the Connection reference table](media/cref-evar-figure9.png)
 
-1.  Then in the Power Apps studio environment select data verse application.
-
-![Selecting a dataverse application](media/cref-evar-figure8.png)
-
-1.  Select the connection references Table and select connect
-
-    ![Select the Connection reference table](media/cref-evar-figure9.png)
-
-1.  This will create a gallery application that will list out all the
+    1.  This will create a gallery application that will list out all the
     connections and their connection ids within the environment
 
-    ![Connection ID in a Power App](media/cref-evar-figure10.png)
+        ![Connection ID in a Power App](media/cref-evar-figure10.png)
 
-As you can observe there are various ways to get the connection id information
-for the connections in various environments
+### Get the environment variable information
 
-### Environment variable information
-
-To get the values of the environment variable in the target environment, go to
-the maker portal in the target environment and right click on the ellipsis and
+To get the values of the environment variable in the target environment, sign in to [Power Apps](https://make.powerapps.com), select the target environment, and right click on the ellipsis and
 choose to edit. This will provide the information needed to populate the
 deployment settings file (the underlined values are the values needed for the
 file):
 
 ![Values of the environment variables in the target environment](media/cref-evar-figure11.png)
 
-Otherwise you can provide the value expect to have for the target environment,
+## Step 3: Update the values in teh deployment settings fileOtherwise, you can provide the value expected to have for the target environment,
 update the values of the environment variables based on your knowledge of the
 target environment and pass the settings file as parameter when importing the
 solution into the target environment. This process will create the environment
