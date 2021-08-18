@@ -60,7 +60,7 @@ In the JSON file, few values are empty in the `ConnectionReferences` section. Th
 
 ![Missing connection ID](media/cref-evar-figure4.png)
 
-### Generate deployment settings file by cloning the folder
+### Option 2: Generate deployment settings file by cloning the solution
 
 After you have cloned a solution using Power Platform CLI, you get the following directory structure created on your computer:
 
@@ -111,25 +111,24 @@ file):
 
 ![Values of the environment variables in the target environment](media/cref-evar-figure11.png)
 
-## Step 3: Update the values in teh deployment settings fileOtherwise, you can provide the value expected to have for the target environment,
-update the values of the environment variables based on your knowledge of the
-target environment and pass the settings file as parameter when importing the
-solution into the target environment. This process will create the environment
-variable and assign it value upon import.
+Otherwise, you can provide the value expected to have for the target environment, update the values of the environment variables based on your knowledge of the target environment
 
-![Updating the deployment settings file with the environment variable values](media/cref-evar-figure12.png)
+## Step 3: Update the values in the deployment settings file
 
-This completes the update of the deployment settings file. Now proceed to Azure
-DevOps
+Manually edit the deployment settings file (JSON) to add the connection and environment variable information appropriately. 
 
-## Azure DevOps tasks
+## Step 4: Use the deployment settings file  for deployment 
 
-Start by creating your pipeline in Azure DevOps as documented [here](devops-build-tools.md).
-When creating the import task in your pipeline, select **Use deployment
-settings file** and provide the path to the deployment settings file. Once done,
+Pass the deployment settings file as parameter when importing the
+solution into the target environment. This will create the required connection reference and environments with appropriate values upon import without having the user to interactively specify the value.
+
+When using the [Import Solution task](/power-platform/alm/devops-build-tool-tasks#power-platform-import-solution) in Power Platform Build Tools, select **Use deployment
+settings file** and provide the path to the deployment settings file. Next,
 initiate the pipeline.
 
 ![Using the deployment settings file](media/cref-evar-figure13.png)
 
 ### See also
+
+[Microsoft Power Platform Build Tools tasks](devops-build-tool-tasks.md)
 
