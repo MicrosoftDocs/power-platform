@@ -78,6 +78,10 @@ Imports a solution into a target environment.
  | Solution input file        | (Required) The path and file name of the solution.zip file to import into the target environment (e.g., $(Build.ArtifactStagingDirectory)\$(SolutionName).zip). <p/>Note: Variables give you a convenient way to get key bits of data into various parts of your pipeline. See [Use predefined variables](/azure/devops/pipelines/build/variables) for a comprehensive list.  |
  | Import solution as asynchronous operation | If selected, the import operation will be performed asynchronously. This is recommended for larger solutions as this task will automatically timeout after 4 minutes otherwise. |
 
+> [!IMPORTANT]
+> You can pre-populate connection reference and environment variables information for the target environment while importing a solution using a deployment settings file. Moe information: [Pre-populate connection references and environment variables for automated deployments](conn-ref-env-variables-build-tools.md) 
+
+
 ### Power Platform Export Solution
 
 Exports a solution from a source environment.
