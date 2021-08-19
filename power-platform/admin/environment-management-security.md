@@ -18,6 +18,8 @@ search.app:
 
 # Environment management and security roles
 
+<!-- Don't publish this content. Likely this will not get done and should be deleted. -->
+
 The following table shows what admin roles are required to do tasks for various environment types.
 
 <table>
