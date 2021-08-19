@@ -4,7 +4,7 @@ description: "Learn how to use auditing to log changes to records and user acces
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/17/2021
+ms.date: 08/19/2021
 author: tjvass
 ms.subservice: admin
 ms.author: tjvass
@@ -111,14 +111,49 @@ System administrators can see activity for the entities that are enabled for aud
 > [!IMPORTANT]
 > Large attribute values, such as [Email.description](/powerapps/developer/common-data-service/reference/entities/email) or [Annotation](/powerapps/developer/common-data-service/reference/entities/annotation), are limited (capped) at 5KB or ~5,000 characters. A capped attribute value can be recognized by three dots at the end of the text, for example, “lorem ipsum, lorem ip…”.
 
-## Enable or disable entities and fields for auditing  
+## Enable or disable entities and fields for auditing 
 System administrators or customizers can change the default audit settings for entities and for specific fields for an entity.  
+
+> [!NOTE]
+> We are migrating audit logs to new storage. Environments whose data migration is complete can use the new audit settings experience.
   
-### Enable or disable auditing for an entity  
+### Enable or disable auditing for an entity  (new experience)
+
+Follow these steps if you've been migrated to the new audit settings experience.
   
 1. Browse to the Power Platform admin center and sign in using administrator credentials. 
   
-2. Go to **Environments** > [select an environment] > **Settings** > expand **Audit and logs** > **Entity and Field Audit Settings**.
+2. Select an environment, and then go to **Settings** > expand **Audit and logs** > **Audit Settings**.
+ 
+   |Setting  |Description  |
+   |---------|---------|
+   |Start Auditing     | Start or stop auditing for the Dataverse environment.        |
+   |Audit user access     | Start or stop auditing user access.        |
+   |Start Read Auditing     | Start or stop comprehensive auditing. Logs will be sent to Microsoft 365 Security and Compliance Center.        |
+
+3. Set the retention policy for audit logs in Dataverse.
+
+   |Setting  |Description  |
+   |---------|---------|
+   |Set the retention policy for these logs    | Choose between **30 days** and **Forever**. Default: **Forever** (Logs will never be automatically deleted).      |
+   |Set a custom retention policy    | Enter a value between 30 (Minimum) and 100,000 days (Maximum).       |
+
+   :::image type="content" source="media/audit-log-retain-period.png" alt-text="Select how long to retain audit logs.":::
+
+   **Note**:
+   - The audit log retention policy allows you to configure how long your organization must retain audit logs to satisfy internal and/or external compliance requirements and relieves you from the burden of deleting unneeded audit logs manually.
+   - Each audit log is stamped with a future date corresponding to the currently active retention period. Logs older than the future data will be automatically deleted by a background system process.
+   - Changing the retention period will not change the future data of already existing audit logs. Only new audit logs will reflect the new future data based on the new retention period.
+
+4. Select **Save**.
+
+### Enable or disable auditing for an entity  (legacy web client)
+
+Follow these steps if you've not yet been migrated to the new audit settings experience.
+  
+1. Browse to the Power Platform admin center and sign in using administrator credentials. 
+  
+2. Select an environment, and then go to **Settings** > expand **Audit and logs** > **Entity and Field Audit Settings**.
 
 3. Under **Components**, expand **Entities**.  
   
