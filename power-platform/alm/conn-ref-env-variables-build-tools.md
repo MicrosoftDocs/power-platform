@@ -90,22 +90,20 @@ This command will generate a JSON file as shown below.
 
 :::image type="content" source="media/cref-evar-figure3.png" alt-text="PAC CLI create-settings command with solution zip file" lightbox="media/cref-evar-figure3.png":::
 
-<!-- ![PAC CLI create-settings command with solution zip file](media/cref-evar-figure3.png) -->
-
 In the JSON file, few values are empty in the `ConnectionReferences` section. These values need to be gathered after creating them in the target environment.
 
-![Missing connection ID](media/cref-evar-figure4.png)
+:::image type="content" source="media/cref-evar-figure4.png" alt-text="Missing connection ID" lightbox="media/cref-evar-figure4.png":::
 
 ### Option 2: Generate deployment settings file by cloning the solution
 
 A project solution clone is needed for this step because it renders the original solution into a buildable format. After you have cloned a solution using Power Platform CLI, you get the following directory structure created on your computer:
 
-![pac solution clone result](media/cref-evar-figure5.png)
+:::image type="content" source="media/cref-evar-figure5.png" alt-text="pac solution clone result" lightbox="media/cref-evar-figure5.png":::
 
 Proceed to create the settings file in the context of the current
 folder and populate the value of the settings file as shown below.
 
-![Populated settings file](media/cref-evar-figure5b.png)
+:::image type="content" source="media/cref-evar-figure5b.png" alt-text="Populated settings file" lightbox="media/cref-evar-figure5b.png":::
 
 ## Step 2: Get the connection reference and environment variable information
 
@@ -117,7 +115,7 @@ To get the connection ID of the target environment, use one of the following way
 
 - Sign in to [Power Apps](https://make.powerapps.com) and select your target environment. In the left navigation pane, select **Data** > **Connections**, select the connection you want to get the connection ID for and then look at the URL to get the connection ID.
 
-    ![Connection ID captured in the URL](media/cref-evar-figure6.png)
+    :::image type="content" source="media/cref-evar-figure6.png" alt-text="Connection ID captured in the URL" lightbox="media/cref-evar-figure6.png":::
 
 - Create a canvas app on the connection reference entity. The steps are as follows:
 
@@ -127,15 +125,15 @@ To get the connection ID of the target environment, use one of the following way
 
     1. Select Dataverse as your data source.
 
-        ![Selecting a Dataverse application](media/cref-evar-figure8.png)
+        :::image type="content" source="media/cref-evar-figure8.png" alt-text="Selecting a Dataverse application" lightbox="media/cref-evar-figure8.png":::
 
     1. Select the **Connection References** table and select **Connect**.
 
-        ![Select the Connection reference table](media/cref-evar-figure9.png)
+        :::image type="content" source="media/cref-evar-figure9.png" alt-text="Select the Connection reference table" lightbox="media/cref-evar-figure9.png":::
 
     1. This will create a gallery application that will list out all the connections and their connection IDs within the environment.
 
-        ![Connection ID in a Power App](media/cref-evar-figure10.png)
+        :::image type="content" source="media/cref-evar-figure10.png" alt-text="Connection ID in a Power App" lightbox="media/cref-evar-figure10.png":::
 
 ### Get the environment variable information
 
@@ -159,7 +157,7 @@ solution into the target environment. This will create the required connection r
 
 When using the [Import Solution task](/power-platform/alm/devops-build-tool-tasks#power-platform-import-solution) in Power Platform Build Tools, select **Use deployment settings file** and provide the path to the deployment settings file. Next, initiate the pipeline.
 
-![Using the deployment settings file](media/cref-evar-figure13.png)
+:::image type="content" source="media/cref-evar-figure13.png" alt-text="Using the deployment settings file" lightbox="media/cref-evar-figure13.png":::
 
 ### See also
 
