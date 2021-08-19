@@ -32,7 +32,7 @@ After importing a solution containing connection reference and environment varia
 
 To enable a fully automated deployment, you can now pre-populate the connection reference and environment variable information specific to the target environment so that you don't have to interactively provide it after importing a solution. 
 
-## Use the deployment settings file
+## Deployment settings file
 
 To pre-populate the connection reference and environment variable information for your deployment, you can use the deployment settings file (JSON) that you can check in to source control, and
 pass it as a parameter when importing the solution using Power Platform Build Tools.
