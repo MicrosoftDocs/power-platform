@@ -33,8 +33,8 @@ To enable a fully automated deployment, you can now pre-populate the connection 
 
 ## Deployment settings file
 
-To pre-populate the connection reference and environment variable information for your deployment, you can use the deployment settings file (JSON) that you can check in to source control, and
-pass it as a parameter when importing the solution using Power Platform Build Tools.
+To pre-populate the connection reference and environment variable information for your deployment, use the deployment settings file (JSON) to store the information, and
+pass it as a parameter when importing the solution using Power Platform Build Tools. You can sore the JSON file in your source control system to update and manage as required for your organization.
 
 Here is an example of the deployment settings file:
 
