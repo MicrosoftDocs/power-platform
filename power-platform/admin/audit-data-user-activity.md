@@ -115,7 +115,7 @@ System administrators can see activity for the entities that are enabled for aud
 System administrators or customizers can change the default audit settings for entities and for specific fields for an entity.  
 
 > [!NOTE]
-> We are migrating audit logs to new storage. Environments whose data migration is complete can use the new audit settings experience.
+> We are migrating audit logs to new storage. Environments whose data migration is complete can use the new audit settings experience. If you've migrated to the new experience, you'll see the new retention policy duration setting as in step 3 below.
   
 ### Enable or disable auditing for an entity  (new experience)
 
@@ -147,7 +147,7 @@ Follow these steps if you've been migrated to the new audit settings experience.
 
 4. Select **Save**.
 
-### Enable or disable auditing for an entity  (legacy web client)
+### Enable or disable auditing for an entity  (legacy experience)
 
 Follow these steps if you've not yet been migrated to the new audit settings experience.
   
