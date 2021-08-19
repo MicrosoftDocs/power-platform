@@ -37,7 +37,42 @@ pass it as a parameter when importing the solution using Power Platform Build To
 
 Below is an example of the deployment settings file:
 
-![Example of a sample deployment setting file](media/cref-evar-figure2.png)
+```json
+{
+  "EnvironmentVariables": [
+    {
+      "SchemaName": "tst_Deployment_env",
+      "Value": ""
+    },
+    {
+      "SchemaName": "tst_EnvironmentType",
+      "Value": ""
+    }
+  ],
+  "ConnectionReferences": [
+    {
+      "LogicalName": "tst_sharedtst5fcreateuserandjob5ffeb85c4c63870282_b4cc7",
+      "ConnectionId": "",
+      "ConnectorId": "/providers/Microsoft.PowerApps/apis/shared_tst-5fcreateuserandjob-5ff805fab2693f57dc"
+    },
+    {
+      "LogicalName": "tst_SharepointSiteURL",
+      "ConnectionId": "",
+      "ConnectorId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+    },
+    {
+      "LogicalName": "tyt_AzureDevopsConnRef",
+      "ConnectionId": "",
+      "ConnectorId": "/providers/Microsoft.PowerApps/apis/shared_visualstudioteamservices"
+    },
+    {
+      "LogicalName": "tyt_GHConn",
+      "ConnectionId": "",
+      "ConnectorId": "/providers/Microsoft.PowerApps/apis/shared_github"
+    }
+  ]
+}
+```
 
 ## Step 1: Generate the deployment settings file
 
@@ -62,7 +97,7 @@ In the JSON file, few values are empty in the `ConnectionReferences` section. Th
 
 ### Option 2: Generate deployment settings file by cloning the solution
 
-After you have cloned a solution using Power Platform CLI, you get the following directory structure created on your computer:
+A project solution clone is needed for this step because it renders the original solution into a buildable format. After you have cloned a solution using Power Platform CLI, you get the following directory structure created on your computer:
 
 ![pac solution clone result](media/cref-evar-figure5.png)
 
