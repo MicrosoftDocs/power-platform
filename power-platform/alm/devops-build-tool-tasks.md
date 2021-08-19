@@ -79,7 +79,7 @@ Imports a solution into a target environment.
  | Import solution as asynchronous operation | If selected, the import operation will be performed asynchronously. This is recommended for larger solutions as this task will automatically timeout after 4 minutes otherwise. |
 
 > [!IMPORTANT]
-> You can pre-populate connection reference and environment variables information for the target environment while importing a solution using a deployment settings file. Moe information: [Pre-populate connection references and environment variables for automated deployments](conn-ref-env-variables-build-tools.md) 
+> You can pre-populate connection reference and environment variables information for the target environment while importing a solution using a deployment settings file. More information: [Pre-populate connection references and environment variables for automated deployments](conn-ref-env-variables-build-tools.md) 
 
 
 ### Power Platform Export Solution

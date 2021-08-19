@@ -97,10 +97,9 @@ To get the connection ID of the target environment, use one of the following way
 
         ![Select the Connection reference table](media/cref-evar-figure9.png)
 
-    1. This will create a gallery application that will list out all the
-    connections and their connection IDs within the environment.
+    1. This will create a gallery application that will list out all the connections and their connection IDs within the environment.
 
-      ![Connection ID in a Power App](media/cref-evar-figure10.png)
+        ![Connection ID in a Power App](media/cref-evar-figure10.png)
 
 ### Get the environment variable information
 
