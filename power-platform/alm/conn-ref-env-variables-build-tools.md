@@ -2,7 +2,6 @@
 title: "Pre-populate connection references and environment variables for automated deployments using Power Platform Build Tools  | Microsoft Docs"
 description: "Learn about pre-populating connection references and environment variables to truly automate your deployments."
 author: kkanakas
-ms.subservice: alm
 ms.author: kartikka
 ms.custom: ""
 ms.date: 08/20/2021
@@ -36,14 +35,13 @@ To enable a fully automated deployment, you can now pre-populate the connection 
 To pre-populate the connection reference and environment variable information for your deployment, use the deployment settings file (JSON) to store the information, and
 pass it as a parameter when importing the solution using Power Platform Build Tools. You can store the JSON file in your source control system to update and manage as required for your organization.
 
-Here is an example of the deployment settings file:
+Below is an example of the deployment settings file:
 
 ![Example of a sample deployment setting file](media/cref-evar-figure2.png)
 
 ## Step 1: Generate the deployment settings file
 
 The deployment setting file can be generated using the [Power Platform CLI](/powerapps/developer/data-platform/powerapps-cli). You can generate the file while exporting or cloning the solution.
-
 
 ### Option 1: Generate deployment settings file using create-settings property
 
@@ -53,7 +51,8 @@ Use the `create-settings` property with Power Platform CLI:
 C:\> pac solution create-settings –solution-zip <path to the
 solutionzipfilelocation> --settings-files <name for the settings file>
 ```
-This command will generate a JSON file as shown here.
+
+This command will generate a JSON file as shown below.
 
 ![PAC CLI create-settings command with solution zip file](media/cref-evar-figure3.png)
 
@@ -68,7 +67,7 @@ After you have cloned a solution using Power Platform CLI, you get the following
 ![pac solution clone result](media/cref-evar-figure5.png)
 
 Proceed to create the settings file in the context of the current
-folder and populate the value of the settings file as shown here.
+folder and populate the value of the settings file as shown below.
 
 ![Populated settings file](media/cref-evar-figure5b.png)
 
@@ -86,22 +85,22 @@ To get the connection ID of the target environment, use one of the following way
 
 - Create a canvas app on the connection reference entity. The steps are as follows:
 
-    1.  Sign in to [Power Apps](https://make.powerapps.com) and select your target environment.
+    1. Sign in to [Power Apps](https://make.powerapps.com) and select your target environment.
 
-    1. In the left navigation pane, select Apps, and then select **New app** > **Canvas**.   
+    1. In the left navigation pane, select **Apps**, and then select **New app** > **Canvas**.
 
-    1.  Select Dataverse as your data source.
+    1. Select Dataverse as your data source.
 
-        ![Selecting a dataverse application](media/cref-evar-figure8.png)
+        ![Selecting a Dataverse application](media/cref-evar-figure8.png)
 
-    1.  Select the **Connection References** table and select connect.
+    1. Select the **Connection References** table and select **Connect**.
 
         ![Select the Connection reference table](media/cref-evar-figure9.png)
 
-    1.  This will create a gallery application that will list out all the
-    connections and their connection IDs within the environment
+    1. This will create a gallery application that will list out all the
+    connections and their connection IDs within the environment.
 
-        ![Connection ID in a Power App](media/cref-evar-figure10.png)
+      ![Connection ID in a Power App](media/cref-evar-figure10.png)
 
 ### Get the environment variable information
 
@@ -118,18 +117,18 @@ Otherwise, you can provide the appropriate value for the target environment base
 
 Manually edit the deployment settings file (JSON) to add the connection and environment variable information appropriately. 
 
-## Step 4: Use the deployment settings file for Build Tools tasks 
+## Step 4: Use the deployment settings file for Build Tools tasks
 
 Pass the deployment settings file as parameter when importing the
 solution into the target environment. This will create the required connection reference and environments with appropriate values upon import without having the user to interactively specify the value.
 
-When using the [Import Solution task](/power-platform/alm/devops-build-tool-tasks#power-platform-import-solution) in Power Platform Build Tools, select **Use deployment
-settings file** and provide the path to the deployment settings file. Next,
-initiate the pipeline.
+When using the [Import Solution task](/power-platform/alm/devops-build-tool-tasks#power-platform-import-solution) in Power Platform Build Tools, select **Use deployment settings file** and provide the path to the deployment settings file. Next, initiate the pipeline.
 
 ![Using the deployment settings file](media/cref-evar-figure13.png)
 
 ### See also
+
+[What is Microsoft Power Platform CLI?](/powerapps/developer/data-platform/powerapps-cli)
 
 [Microsoft Power Platform Build Tools tasks](devops-build-tool-tasks.md)
 
