@@ -1,5 +1,5 @@
 ---
-title: "Automate connection references and environment variables in Power Platform Build Tools  | Microsoft Docs"
+title: "Prepopulate connection references and environment variables in Power Platform Build Tools  | Microsoft Docs"
 description: "Learn about adding connection references and environment variables to solutions in Microsoft Dataverse."
 author: kkanakas
 ms.subservice: alm
@@ -18,21 +18,23 @@ search.app:
   - D365CE
 ---
 
-# Automate connection references and environment variables in Power Platform Build Tools (preview)
+# Pre-populate connection references and environment variables for automated deployments (preview)
 
-*Connection references* and *environment variables* enable you to interactively specify the connection details and configuration settings for an application that is specific to the target environment where your app or solution is deployed.
+[This topic is pre-release documentation and is subject to change.]
+
+*Connection references* and *environment variables* enable you to interactively specify the connection details and configuration settings specific to the target environment where your app or solution is deployed.
 
 More information:
 - [Connection reference overview](/powerapps/maker/data-platform/create-connection-reference)
 - [Environment variables overview](/powerapps/maker/data-platform/environmentvariables)
 
-After importing a solution containing connection reference and environment variable information, you are prompted to provide information about the connection references and environment variables specific to your environment in the UI. However, this does not work well for fully automated Continuous Integration/ Continuous Delivery (CI/CD) scenarios.
+After importing a solution containing connection reference and environment variable information, you are prompted to provide information specific to your environment in the UI. However, this does not work well for fully automated Continuous Integration/ Continuous Delivery (CI/CD) scenarios.
 
-To enable a fully automated deployment, you can now pre-populate the connection reference and environment variable information specific to the target environment in your deployment process by using Power Platform Build Tools so that you don't have to interactively provide it after importing a solution. 
+To enable a fully automated deployment, you can now pre-populate the connection reference and environment variable information specific to the target environment so that you don't have to interactively provide it after importing a solution. 
 
 ## Use the deployment settings file
 
-To pre-populate the connection reference and environment variable information and use with Power Platform Build Tools, you can use the deployment settings file (JSON) that you can check-in to source control, and
+To pre-populate the connection reference and environment variable information for your deployment, you can use the deployment settings file (JSON) that you can check in to source control, and
 pass it as a parameter when importing the solution using Power Platform Build Tools.
 
 Here is an example of the deployment settings file:
@@ -41,7 +43,7 @@ Here is an example of the deployment settings file:
 
 ## Step 1: Generate the deployment settings file
 
-The deployment setting file can be generated using the [Power Platform CLI](/powerapps/developer/data-platform/powerapps-cli). YOu can generate the file while exporting or cloning the solution
+The deployment setting file can be generated using the [Power Platform CLI](/powerapps/developer/data-platform/powerapps-cli). You can generate the file while exporting or cloning the solution.
 
 
 ### Option 1: Generate deployment settings file using create-settings property
@@ -104,7 +106,7 @@ To get the connection id of the target environment, use one of the following way
 
 ### Get the environment variable information
 
-To get the values of the environment variable in the target environment, sign in to [Power Apps](https://make.powerapps.com), select the target environment, and right click on the ellipsis and
+To get the values of the environment variable in the target environment, sign in to [Power Apps](https://make.powerapps.com), select the target environment, and right-click on the ellipsis and
 choose to edit. This will provide the information needed to populate the
 deployment settings file (the underlined values are the values needed for the
 file):
@@ -117,7 +119,7 @@ Otherwise, you can provide the value expected to have for the target environment
 
 Manually edit the deployment settings file (JSON) to add the connection and environment variable information appropriately. 
 
-## Step 4: Use the deployment settings file  for deployment 
+## Step 4: Use the deployment settings file for Build Tools tasks 
 
 Pass the deployment settings file as parameter when importing the
 solution into the target environment. This will create the required connection reference and environments with appropriate values upon import without having the user to interactively specify the value.

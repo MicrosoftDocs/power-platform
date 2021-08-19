@@ -67,7 +67,7 @@
         href: devops-build-tools.md
       - name: Microsoft Power Platform Build Tools tasks
         href: devops-build-tool-tasks.md
-      - name: Use connection references and environment variables (preview)
+      - name: Pre-populate connection references and environment variables (preview)
         href: conn-ref-env-variables-build-tools.md
     - name: GitHub Actions
       items:
