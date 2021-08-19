@@ -1,6 +1,6 @@
 ---
-title: "Prepopulate connection references and environment variables in Power Platform Build Tools  | Microsoft Docs"
-description: "Learn about adding connection references and environment variables to solutions in Microsoft Dataverse."
+title: "Pre-populate connection references and environment variables in Power Platform Build Tools  | Microsoft Docs"
+description: "Learn about pre-populating connection references and environment variables to truly automate your deployments."
 author: kkanakas
 ms.subservice: alm
 ms.author: kartikka
