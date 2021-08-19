@@ -437,7 +437,10 @@
       - name: View self-service capacity
         href: view-self-service-capacity.md
       - name: Free up storage space
-        href: free-storage-space.md       
+        href: free-storage-space.md 
+# the following should not go to live yet        
+      - name: Add storage
+        href: add-storage.md      
     - name: Resources
       items:
       - name: Overview 

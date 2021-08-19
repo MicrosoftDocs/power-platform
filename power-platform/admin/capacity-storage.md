@@ -106,6 +106,8 @@ Note the following features:
 >   - Support
 >   - Developer
 > - You can select an environment that's showing 0 GB, and then go to its environment capacity analytics page to see the actual consumption.
+> - For the default environment, the list view will only show the amount of capacity consumed beyond the free quota. Select the **Details** button (![Storage data details button.](media/storage-data-details-button.png "Storage data details button")) to see usage.
+
 
 #### Environment storage capacity details
 
@@ -258,10 +260,6 @@ You can provision environments through the Power Platform admin center. More inf
 ### I'm a new customer and I recently purchased the new offers. My usage of database/log/file is showing red. What should I do?
 
 Consider buying additional capacity by using the [Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544). Alternatively, you can [free up storage](free-storage-space.md).
-
-### Where can I read more about the new capacity offers?
-
-Download the [Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544) to learn more.
 
 ### I'm an existing customer, and my renewal is coming up. Will I be affected?
 
