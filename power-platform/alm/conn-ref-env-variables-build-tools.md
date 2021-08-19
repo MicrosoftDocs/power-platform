@@ -88,7 +88,9 @@ C:\> pac solution create-settings –solution-zip <solution_zip_file_path> --set
 
 This command will generate a JSON file as shown below.
 
-[![PAC CLI create-settings command with solution zip file](media/cref-evar-figure3.png)](media/cref-evar-figure3.png)
+:::image type="content" source="media/cref-evar-figure3.png" alt-text="PAC CLI create-settings command with solution zip file" lightbox="media/cref-evar-figure3.png":::
+
+<!-- ![PAC CLI create-settings command with solution zip file](media/cref-evar-figure3.png) -->
 
 In the JSON file, few values are empty in the `ConnectionReferences` section. These values need to be gathered after creating them in the target environment.
 
