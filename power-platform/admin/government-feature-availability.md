@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/16/2021
+ms.date: 08/19/2021
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -33,7 +33,6 @@ Certain experiences aren't available with Dynamics 365 GCC and GCC High. Microso
 - [The app launcher](quickly-navigate-office-365-app-launcher.md)  
 - [Insights, powered by InsideView](https://appsource.microsoft.com/product/dynamics-365/insideviewinc.b5386882-4312-4d69-879a-23081897c012)
 - [Power BI “embedded” user dashboard experience](/power-bi/developer/embedded/embedded-analytics-power-bi)
-- [Relevance Search (Available CY2020-Q4)](/powerapps/user/relevance-search)
 - [Versium Predict](/dynamics365/customer-engagement/versium-predict/versium-predict)
 - [Teams Integration](/dynamics365/teams-integration/teams-integration)
 - [Microsoft Power Platform Build Tools for Azure DevOps](../alm/devops-build-tools.md)
