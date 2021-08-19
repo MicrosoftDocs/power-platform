@@ -27,14 +27,14 @@ More information:
 - [Connection reference overview](/powerapps/maker/data-platform/create-connection-reference)
 - [Environment variables overview](/powerapps/maker/data-platform/environmentvariables)
 
-After importing a solution containing connection reference and environment variable information, you are prompted to provide information specific to your environment in the UI. However, this does not work well for fully automated Continuous Integration/ Continuous Delivery (CI/CD) scenarios.
+After importing a solution containing connection reference and environment variable information, you are prompted to provide information specific to your environment in the UI. However, entering this information does not work well for fully automated Continuous Integration/ Continuous Delivery (CI/CD) scenarios.
 
 To enable a fully automated deployment, you can now pre-populate the connection reference and environment variable information specific to the target environment so that you don't have to interactively provide it after importing a solution. 
 
 ## Deployment settings file
 
 To pre-populate the connection reference and environment variable information for your deployment, use the deployment settings file (JSON) to store the information, and
-pass it as a parameter when importing the solution using Power Platform Build Tools. You can sore the JSON file in your source control system to update and manage as required for your organization.
+pass it as a parameter when importing the solution using Power Platform Build Tools. You can store the JSON file in your source control system to update and manage as required for your organization.
 
 Here is an example of the deployment settings file:
 
@@ -53,7 +53,7 @@ Use the `create-settings` property with Power Platform CLI:
 C:\> pac solution create-settings –solution-zip <path to the
 solutionzipfilelocation> --settings-files <name for the settings file>
 ```
-This will generate json file as shown here. 
+This command will generate a JSON file as shown here.
 
 ![PAC CLI create-settings command with solution zip file](media/cref-evar-figure3.png)
 
@@ -78,9 +78,9 @@ To populate the deployment settings file, you will need to obtain the connection
 
 ### Get the connection reference information
 
-To get the connection id of the target environment, use one of the following ways:
+To get the connection ID of the target environment, use one of the following ways:
 
-- Sign in to [Power Apps](https://make.powerapps.com) and select your target environment. In the left navigation pane, select **Data** > **Connections**, select the connection you want to get the connection id for and then look at the URL to get the connection id.
+- Sign in to [Power Apps](https://make.powerapps.com) and select your target environment. In the left navigation pane, select **Data** > **Connections**, select the connection you want to get the connection ID for and then look at the URL to get the connection ID.
 
     ![Connection ID captured in the URL](media/cref-evar-figure6.png)
 
@@ -99,7 +99,7 @@ To get the connection id of the target environment, use one of the following way
         ![Select the Connection reference table](media/cref-evar-figure9.png)
 
     1.  This will create a gallery application that will list out all the
-    connections and their connection ids within the environment
+    connections and their connection IDs within the environment
 
         ![Connection ID in a Power App](media/cref-evar-figure10.png)
 
