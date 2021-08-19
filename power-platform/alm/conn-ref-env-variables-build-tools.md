@@ -4,7 +4,6 @@ description: "Learn about pre-populating connection references and environment v
 author: kkanakas
 ms.subservice: alm
 ms.author: kartikka
-manager: mayadu
 ms.custom: ""
 ms.date: 08/20/2021
 ms.reviewer: "pehecke"
@@ -113,7 +112,7 @@ file):
 
 ![Values of the environment variables in the target environment](media/cref-evar-figure11.png)
 
-Otherwise, you can provide the value expected to have for the target environment, update the values of the environment variables based on your knowledge of the target environment
+Otherwise, you can provide the appropriate value for the target environment based on your knowledge of the target environment.
 
 ## Step 3: Update the values in the deployment settings file
 
