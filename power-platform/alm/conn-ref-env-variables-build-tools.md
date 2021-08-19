@@ -74,6 +74,8 @@ Below is an example of the deployment settings file:
 }
 ```
 
+In the above example JSON file, the values shown as "" are missing and will need to be populated. We will address doing that later in this article.
+
 ## Step 1: Generate the deployment settings file
 
 The deployment setting file can be generated using the [Power Platform CLI](/powerapps/developer/data-platform/powerapps-cli). You can generate the file while exporting or cloning the solution.
@@ -83,7 +85,7 @@ The deployment setting file can be generated using the [Power Platform CLI](/pow
 Use the `create-settings` property with Power Platform CLI:
 
 ```powershell
-C:\> pac solution create-settings –solution-zip <solution_zip_file_path> --settings-file <settings_file_name>
+C:\> pac solution create-settings –solution -zip <solution_zip_file_path> --settings-file <settings_file_name>
 ```
 
 This command will generate a JSON file as shown below.
@@ -148,7 +150,44 @@ Otherwise, you can provide the appropriate value for the target environment base
 
 ## Step 3: Update the values in the deployment settings file
 
-Manually edit the deployment settings file (JSON) to add the connection and environment variable information appropriately. 
+Manually edit the deployment settings file (JSON) to add the connection and environment variable information appropriately. Below is an example settings file with the (previously) missing values added.
+
+```json
+{
+  "EnvironmentVariables": [
+    {
+      "SchemaName": "tst_Deployment_env",
+      "Value": "Test"
+    },
+    {
+      "SchemaName": "tst_EnvironmentType",
+      "Value": "UAT"
+    }
+  ],
+  "ConnectionReferences": [
+    {
+      "LogicalName": "tst_sharedtst5fcreateuserandjob5ffeb85c4c63870282_b4cc7",
+      "ConnectionId": "4445162937b84457a3465d2f0c2cab7e",
+      "ConnectorId": "/providers/Microsoft.PowerApps/apis/shared_tst-5fcreateuserandjob-5ff805fab2693f57dc"
+    },
+    {
+      "LogicalName": "tst_SharepointSiteURL",
+      "ConnectionId": "ef3d1cbb2c3b4e7987e02486584689d3",
+      "ConnectorId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+    },
+    {
+      "LogicalName": "tyt_AzureDevopsConnRef",
+      "ConnectionId": "74e578ccc24846729f32fcee83b630de",
+      "ConnectorId": "/providers/Microsoft.PowerApps/apis/shared_visualstudioteamservices"
+    },
+    {
+      "LogicalName": "tyt_GHConn",
+      "ConnectionId": "d8beb0fb533442c6aee5c18ae164f13d",
+      "ConnectorId": "/providers/Microsoft.PowerApps/apis/shared_github"
+    }
+  ]
+}
+```
 
 ## Step 4: Use the deployment settings file for Build Tools tasks
 
