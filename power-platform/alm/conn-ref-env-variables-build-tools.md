@@ -28,7 +28,7 @@ More information:
 
 After importing a solution containing connection reference and environment variable information, you are prompted to provide information specific to your environment in the UI. However, entering this information does not work well for fully automated Continuous Integration/ Continuous Delivery (CI/CD) scenarios.
 
-To enable a fully automated deployment, you can now pre-populate the connection reference and environment variable information specific to the target environment so that you don't have to interactively provide it after importing a solution. 
+To enable a fully automated deployment, you can now pre-populate the connection reference and environment variable information specific to the target environment so that you don't have to interactively provide it after importing a solution.
 
 ## Deployment settings file
 
@@ -82,14 +82,13 @@ The deployment setting file can be generated using the [Power Platform CLI](/pow
 
 Use the `create-settings` property with Power Platform CLI:
 
-```
-C:\> pac solution create-settings –solution-zip <path to the
-solutionzipfilelocation> --settings-files <name for the settings file>
+```powershell
+C:\> pac solution create-settings –solution-zip <solution_zip_file_path> --settings-file <settings_file_name>
 ```
 
 This command will generate a JSON file as shown below.
 
-![PAC CLI create-settings command with solution zip file](media/cref-evar-figure3.png)
+[![PAC CLI create-settings command with solution zip file](media/cref-evar-figure3.png)](media/cref-evar-figure3.png)
 
 In the JSON file, few values are empty in the `ConnectionReferences` section. These values need to be gathered after creating them in the target environment.
 
@@ -162,7 +161,6 @@ When using the [Import Solution task](/power-platform/alm/devops-build-tool-task
 
 ### See also
 
-[What is Microsoft Power Platform CLI?](/powerapps/developer/data-platform/powerapps-cli)
-
+[What is Microsoft Power Platform CLI?](/powerapps/developer/data-platform/powerapps-cli)  
 [Microsoft Power Platform Build Tools tasks](devops-build-tool-tasks.md)
 
