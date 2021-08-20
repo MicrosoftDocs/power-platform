@@ -61,12 +61,12 @@ Below is an example of the deployment settings file:
       "ConnectorId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
     },
     {
-      "LogicalName": "tyt_AzureDevopsConnRef",
+      "LogicalName": "tst_AzureDevopsConnRef",
       "ConnectionId": "",
       "ConnectorId": "/providers/Microsoft.PowerApps/apis/shared_visualstudioteamservices"
     },
     {
-      "LogicalName": "tyt_GHConn",
+      "LogicalName": "tst_GHConn",
       "ConnectionId": "",
       "ConnectorId": "/providers/Microsoft.PowerApps/apis/shared_github"
     }
@@ -84,7 +84,7 @@ The deployment setting file can be generated using the [Power Platform CLI](/pow
 
 Use the `create-settings` property with Power Platform CLI:
 
-```powershell
+```
 C:\> pac solution create-settings –solution -zip <solution_zip_file_path> --settings-file <settings_file_name>
 ```
 
@@ -176,12 +176,12 @@ Manually edit the deployment settings file (JSON) to add the connection and envi
       "ConnectorId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
     },
     {
-      "LogicalName": "tyt_AzureDevopsConnRef",
+      "LogicalName": "tst_AzureDevopsConnRef",
       "ConnectionId": "74e578ccc24846729f32fcee83b630de",
       "ConnectorId": "/providers/Microsoft.PowerApps/apis/shared_visualstudioteamservices"
     },
     {
-      "LogicalName": "tyt_GHConn",
+      "LogicalName": "tst_GHConn",
       "ConnectionId": "d8beb0fb533442c6aee5c18ae164f13d",
       "ConnectorId": "/providers/Microsoft.PowerApps/apis/shared_github"
     }
