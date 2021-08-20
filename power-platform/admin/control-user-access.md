@@ -10,7 +10,7 @@ ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/23/2021
+ms.date: 07/20/2021
 search.audienceType: 
   - admin
 search.app:
@@ -64,7 +64,7 @@ Note the following about security groups:
 -->
 
 > [!NOTE]
-> All licensed users, whether or not they are members of the security groups, must be assigned security roles to access environments. You assign the security roles in the web application. Users can't access environments until they are assigned at least one security role for that environment. For more information, see [Configure environment security](database-security.md).
+> All licensed users, whether or not they are members of the security groups, must be assigned security roles to access data in the environments. You assign the security roles in the web application.  If users don’t have a security role, they will get a data access denied error when trying to run an app. Users can't access environments until they are assigned at least one security role for that environment. For more information, see [Configure environment security](database-security.md).
   
 ## Create a security group and add members to the security group  
 
@@ -143,7 +143,7 @@ The security group is associated with the environment.
 The security group associated with the environment will be removed and the environment's access will no longer be restricted to only users that are members of that group.
 
 ### See also
-[Create users and assign security roles](create-users-assign-online-security-roles.md)
+[Create users](create-users.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

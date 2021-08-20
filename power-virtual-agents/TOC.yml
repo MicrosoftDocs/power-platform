@@ -16,8 +16,6 @@
          href: fundamentals-what-is-power-virtual-agents-portal.md
        - name: Get started quickly with Power Virtual Agents
          href: fundamentals-get-started.md
-       - name: Use pre-built chatbot templates
-         href: fundamentals-templates.md
     - name: Administer and manage
       items:
        - name: Assign licenses
@@ -30,7 +28,7 @@
          href: environments-first-run-experience.md
        - name: Share bots with users in your organization
          href: admin-share-bots.md
-       - name: Export and import bots with solutions
+       - name: Export and import bots using solutions
          href: authoring-export-import-bots.md
        - name: Regional settings and data locations for organizations
          href: data-location.md
@@ -160,16 +158,21 @@
       items:
        - name: Power Virtual Agents in Teams overview
          href: teams/fundamentals-what-is-power-virtual-agents-teams.md
+       - name: Use pre-built chatbot templates
+         href: teams/fundamentals-templates-teams.md
        - name: Build a sample HR bot
          href: teams/fundamentals-get-started-teams.md
+
     - name: Administer and manage
       items:
        - name: Licensing for Virtual Power Agents in Teams
          href: teams/requirements-licensing-teams.md
-       - name: Share bots with users in your organization
+       - name: Collaborate with others
          href: teams/admin-share-bots-teams.md
        - name: Upgrade a Dataverse for Teams environment
          href: teams/admin-upgrade-dataverse-teams.md
+       - name: Export and import chatbots made in Teams
+         href: teams/authoring-export-import-bots-teams.md
        - name: Regional settings and data locations for organizations
          href: teams/data-location-teams.md
     - name: Author and edit
@@ -194,6 +197,8 @@
       items:
        - name: Key concepts - Enhanced authoring
          href: teams/advanced-fundamentals-teams.md
+       - name: Enable advanced AI features
+         href: teams/advanced-ai-features-teams.md
        - name: Use entities and slot filling
          href: teams/advanced-entities-slot-filling-teams.md
        - name: Use variables

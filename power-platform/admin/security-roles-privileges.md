@@ -9,7 +9,7 @@ ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/08/2021
+ms.date: 08/11/2021
 search.audienceType: 
   - admin
 search.app:
@@ -109,11 +109,8 @@ Check your security role:
 >
 > You can only select Basic level privileges in the member's privilege inheritance. If you need to provide access to a child business unit, you will need to elevate the privilege to Deep; for example, you need to assign a security role to the Group team and you want the members of this group to be able to Append to Account.  You setup the security role with a Basic level member's privilege inheritance and in the Append to Account privilege, you set it to Deep.  This is because Basic privileges are only applicable to the user's business unit.
 
-## Assigning security roles
-In order to assign security roles to a user, you need to have the appropriate privileges (minimum privileges are 'Read' and 'Assign' on the Security Role entity). To prevent elevation of security role privileges, the person who is assigning the security role cannot assign someone else with a security role that has more privileges than the assignee, for example a CSR Manager cannot assign a System Administrator role to another user. 
-
-By default, the System Administrator security role has all the required privileges to assign security roles to any user including assigning the System Administrator security role. If you have a need to allow non-System Administrators to assign security roles, you should consider creating a custom security role. See [Create an administrative user and prevent elevation of security role privilege](prevent-elevation-security-role-privilege.md). 
-
+### See also
+[Video: Administer application users, security roles, teams, and users in the Power Platform admin center](https://youtu.be/1Iet2si8Ehw)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

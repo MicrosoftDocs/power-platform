@@ -27,21 +27,21 @@ Multiple governance components are provided in the Center of Excellence (CoE) St
 
 ## Initialize flow approval tables in your environment
 
-The archive approval flows use the built-in Approval actions of Power Automate.
+These flows in the solution use the built-in Approval actions of Power Automate and therefore require it having been installed on the environment.
 
 - *Admin \| Archive and Clean Up v2 (Start Approval for Apps)*
 - *Admin \| Archive and Clean Up v2 (Start Approval for Flows)*
 - *Admin \| Archive and Clean Up v2 (Check Approval)*
 - *Admin \| Archive and Clean Up v2 (Clean Up and Delete)*
 
- In the background, the built-in Approval actions use Dataverse. If you've installed the solution in a new environment, the Approval tables must be initialized. The easiest way to do this is to create a "dummy" approval flow.
+  If you are installing the solution in a new environment, or one in which Approvals have not been used in the past, then the Approval tables must be initialized before you can install the solution. The easiest way to do this is to create a "dummy" approval flow.
 
 1. Go to [flow.microsoft.com](https://flow.microsoft.com) and select your CoE environment.
 
 1. Select **+ New** > **Instant (From Blank)**.
 
 1. Pick **manually trigger a flow** as the trigger, and enter *Admin \| Dummy Approval Flow* as the name.
-   
+
    ![Build an instant flow.](media/coe14.png "Build an instant flow")
 
 1. Select **+ New Step** to add an approval action to the flow, and then search for and select **Create an approval**.
@@ -98,16 +98,33 @@ All flows in this solution depend on all environment variables' being configured
 
 This Governance Components solution contains flows that you'll need to manually turn on as soon as you're ready to use them.
 
-- Admin \| Archive and Clean Up v2 (Start Approval for Apps)
-- Admin \| Archive and Clean Up v2 (Start Approval for Flows)
 - Admin \| Archive and Clean Up v2 (Check Approval)
 - Admin \| Archive and Clean Up v2 (Clean Up and Delete)
+- Admin \| Archive and Clean Up v2 (Start Approval for Apps)
+- Admin \| Archive and Clean Up v2 (Start Approval for Flows)
+- Admin \| Email Managers Ignored Approvals
+- Admin \| Setup \| Ignored Archival Requests
+- HELPER - CanvasAppOperations Gov
+- HELPER - CloudFlowOperations Gov
 - Microsoft Teams Admin \| Ask for Business Justification when Microsoft Teams environment is created
 - Microsoft Teams Admin \| Weekly Clean Up of Microsoft Teams environments
-- Admin \| Compliance detail request (in Center of Excellence - Core Components)
+- Request Orphaned Objects Reassigned (Child)
+- Request Orphaned Objects Reassigned (Parent)
 
->[!IMPORTANT]
-> These flows will be turned off on solution import, and you can turn them on as soon as you're ready to use them. Only turn on the Weekly Clean Up of Microsoft Teams environments when you're ready to enforce the deletion of Teams environments.
+## Update Run only users
+
+There are three child flows which will need their **Run only users** properties updated.
+
+- HELPER - CanvasAppOperations Gov
+- HELPER - CloudFlowOperations Gov
+- Request Orphaned Objects Reassigned (Child)
+
+For all three of these flows, go to the details page and click the **Run only users** edit button.
+
+You will see all the connections in the child flow. For each one, change the value to **Use this connection (userPrincipalName\@company.com)**. If there is no connection for any of the connectors, go to **Data** > **Connections**, and create one for the connector.
+
+   ![Find setting for run only users.](media/runonlyusersgov1.png "Find setting for run only users")
+   ![Configure run only users.](media/runonlyusersgov2.png "Configure run only users")
 
 ## Update the variables and flows back in Core
 

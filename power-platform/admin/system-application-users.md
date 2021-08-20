@@ -4,7 +4,7 @@ description: "Learn about the special system and application users created when 
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 06/15/2021
+ms.date: 08/16/2021
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
@@ -21,7 +21,7 @@ search.app:
 
 # System and application users 
 
-There is a list of special system and application users that is created when the system is provisioned.  Special system users are created for integration and support scenarios. Application users are created during system provisioning for setup and configuration management.  [Application users](create-users-assign-online-security-roles.md#create-an-application-user) can also be used for performing back-end services and their data access is managed by the special security role that is assigned. These security roles are managed by the system and cannot be modified. See other system [predefined security roles](database-security.md#predefined-security-roles).  
+There is a list of special system and application users that is created when the system is provisioned.  Special system users are created for integration and support scenarios. Application users are created during system provisioning for setup and configuration management.  [Application users](create-users.md#create-an-application-user) can also be used for performing back-end services and their data access is managed by the special security role that is assigned. These security roles are managed by the system and cannot be modified. See other system [predefined security roles](database-security.md#predefined-security-roles).  
 
 Most of these users are hidden from user views but they can be found by using the Advanced Find on the Users table.  Do not delete or modify these users including changing or reassigning security role. 
 
@@ -31,7 +31,7 @@ Most of these users are hidden from user views but they can be found by using th
 | | Support user |crmoln@microsoft.com |To allow Microsoft support staff to have restricted/limited access to any customer environment for customer support. |Support user (does not have privilege to customer data) |
 | | Delegated admin |crmoln2@microsoft.com |See [For partners: the Delegated admin](for-partners-delegated-administrator.md). |System admin |
 |Application | Business Application Platform Service account |bap_sa@microsoft.com |To setup Power Apps system and configurations. |System admin |
-| | Dataverse relevance search | RelevanceSearch@onmicrosoft.com | To fetch table data and metadata for Dataverse search feature | Service Reader |
+| | Dataverse relevance search | RelevanceSearch@onmicrosoft.com | To fetch table data and metadata for Dataverse search feature | System admin |
 | | Dynamics 365 Office Data Service | diofficedata@microsoft.com |Service Application to perform data integration between Microsoft Dataverse and Microsoft 365. | DataLakeWorkspaceAppAccess |
 | | Dynamics 365 Athena-CDStoAzuredatalake | Dynamics365Athena-CDStoAzuredatalake@onmicrosoft.com |Service application to perform data integration between Microsoft Dataverse to Azure Data Lake. |DataLakeWorkspaceAppAccess |
 | | Dynamics 365 Athena2-CDStoAzuredatalake | Dynamics365Athena2-CDStoAzuredatalake@onmicrosoft.com |Service application to perform data integration between Dataverse to Azure Data Lake. |DataLakeWorkspaceAppAccess |
@@ -49,7 +49,7 @@ Most of these users are hidden from user views but they can be found by using th
 | | # CDSReportService | CDSReportService@onmicrosoft.com | To allow user to run reports. |N/A |
 | | Power Platform Dataflows | ppdfcdsclient@onmicrosoft.com | Power Platform Dataflows service application to perform data preparation and loading into Dataverse and Azure Data Lake. | System Administrator
 | | AIBuilderProd | aibuilderfpapp@onmicrosoft.com | To perform authentication for AI Builder. | System admin |
-| | PowerAutomate-ProcessMining | PowerAutomate-ProcessMining@onmicrosoft.com | To allow Process Advisor service to interact with Dataverse. | Environment Maker, Process Mining Application User |
+| | PowerAutomate-ProcessMining | PowerAutomate-ProcessMining@onmicrosoft.com | To allow Process Advisor service to interact with Dataverse. | Environment Maker, Process Advisor Application |
 | | AriaMdlExporter | AriaMdlExporter@onmicrosoft.com | To export data from Engagement Insights to Managed Data Lake. | DataLakeWorkspaceAppAccess |
 | | CDSFileStorage | CDSFileStorage@onmicrosoft.com | To perform background operations like Organization Lifecycle (OLC) operations, file reconciliation and migration. | FileStoreService App Access |
 | | CDSUserManagement | CDSUserManagement@onmicrosoft.com | To provision and synchronize users into Dataverse from Active Directory. | System Administrator |

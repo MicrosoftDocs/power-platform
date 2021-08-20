@@ -110,6 +110,8 @@ Now you'll configure and set up a custom connector that uses the [Office 365 Man
 
 1. Don't change the **Tenant ID**.
 
+1. Leave the **Login URL** as is  for commercial and GCC tenants, and change it to https://login.microsoftonline.us/ for a GCC High tenant.
+
 1. Set the **Resource URL** to https://manage.office.com for a commercial tenant, https://manage-gcc.office.com for a GCC tenant, and https://manage.office365.us for a GCC high tenant.
 
 1. Copy the **Redirect URL** into your text document in Notepad.
@@ -175,9 +177,6 @@ A Power Automate flow uses the custom connector, queries the audit log daily, an
 1. Establish connections to activate your solution. If you create a new connection, you must select **Refresh**. You won't lose your import progress.
     ![Import the CoE audit log components solution.](media/coe-custom2.png "Import the CoE audit log components solution")
 
-1. Paste in the ID you copied for directory (tenant) ID for the *Tenant ID*.
-    ![Set environment variables for the CoE audit log components solution.](media/coe-custom3.png "Set environment variables for the CoE audit log components solution")
-
 1. Open the **Center of Excellence – Audit Log solution**, and select **Admin \| \[Child\] Admin | Sync Logs**.
 
 1. Edit the **Run only users** settings.
@@ -194,7 +193,7 @@ A Power Automate flow uses the custom connector, queries the audit log daily, an
 
     | Name | Description |
     |------|---------------|
-    |TimeInterval-Unit | Determines units for chunking the time since start. <br>Must be a value from accepted as an input parameter to [Add to Time](/power-automate/desktop-flows/actions-reference/datetime#add). <br>Default value: Hour |
+    |TimeInterval-Unit | Determines units for chunking the time since start. <br>Must be a value from accepted as an input parameter to [Add to Time](/power-automate/desktop-flows/actions-reference/datetime#add). <br> Example legal values: Minute, Hour, Day <br>Default value: Hour |
     |TimeInterval-Interval | Must be a whole number to represent the number of chunks of type unit (above).<br> Default value: 1 (for 1 hour chunks) |
 
     > [!IMPORTANT]
