@@ -123,7 +123,7 @@ The core components solution is required for the nurture components solution, or
 
 ## Import starter data set for the Maker Assessment app
 
-Important an initial set of assessment questions to get started using the [Maker Assessment](nurture-components.md#maker-assessment) app. You can add your own questions or customize the existing ones using the admin app for this solution.
+Import an initial set of assessment questions to get started using the [Maker Assessment](nurture-components.md#maker-assessment) app. You can add your own questions or customize the existing ones using the admin app for this solution.
 
 ### Upload starter data to SharePoint Online
 
