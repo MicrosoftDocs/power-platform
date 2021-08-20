@@ -136,7 +136,7 @@ Updates the version of a solution.
 | Solution Version Number              | (Required) Version number you want to set.     |
 
 While version number can be hardcoded in the pipeline, it is recommended to use an Azure DevOps pipeline variable like [BuildId](/azure/devops/pipelines/build/variables#build-variables). 
-This provides options to define the exact shape of version number under the "Options" tab, for example: $(year:yyyy)-$(Date:MM)-$(Date:dd)-$(rev:rr)-3
+This provides options to define the exact shape of version number under the "Options" tab, for example: $(year:yyyy)-$(Month:MM)-$(Date:dd)-$(rev:rr)-3
 
 This definition can then be used in the Set Solution Version task by setting the Version Number property with: $(Build.BuildId) instead of hard coding 20200824.0.0.2.
 
