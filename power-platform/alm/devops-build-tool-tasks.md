@@ -77,6 +77,7 @@ Imports a solution into a target environment.
 | Service connection | (Required) The service connection to the target environment that you want to import the solution into (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)).  Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type .|
  | Solution input file        | (Required) The path and file name of the solution.zip file to import into the target environment (e.g., $(Build.ArtifactStagingDirectory)\$(SolutionName).zip). <p/>Note: Variables give you a convenient way to get key bits of data into various parts of your pipeline. See [Use predefined variables](/azure/devops/pipelines/build/variables) for a comprehensive list.  |
  | Import solution as asynchronous operation | If selected, the import operation will be performed asynchronously. This is recommended for larger solutions as this task will automatically timeout after 4 minutes otherwise. |
+ | Convert solution to managed| If selected, the import operation will convert the solution, if unmanaged, will be converted to managed|
 
 > [!IMPORTANT]
 > You can pre-populate connection reference and environment variables information for the target environment while importing a solution using a deployment settings file. More information: [Pre-populate connection references and environment variables for automated deployments](conn-ref-env-variables-build-tools.md) 
@@ -135,7 +136,7 @@ Updates the version of a solution.
 | Solution Version Number              | (Required) Version number you want to set.     |
 
 While version number can be hardcoded in the pipeline, it is recommended to use an Azure DevOps pipeline variable like [BuildId](/azure/devops/pipelines/build/variables#build-variables). 
-This provides options to define the exact shape of version number under the "Options" tab, for example: $(year:yyyy)-$(Date:MM)-$(Date:dd)-$(rev:rr)-3
+This provides options to define the exact shape of version number under the "Options" tab, for example: $(year:yyyy)-$(Month:MM)-$(Date:dd)-$(rev:rr)-3
 
 This definition can then be used in the Set Solution Version task by setting the Version Number property with: $(Build.BuildId) instead of hard coding 20200824.0.0.2.
 
