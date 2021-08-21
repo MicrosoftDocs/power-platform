@@ -62,9 +62,9 @@ Follow the steps below to build a model-driven app.
 
     ![Edit solution.](../media/github-actions-tutorial/gh-lab-1.60.png "Edit solution")
 
-7. Your new solution will be empty, and you need to add components to it. In this tutorial we will create a custom entity.  Click the **New** dropdown from the top navigation and then select **Entity**.
+7. Your new solution will be empty, and you need to add components to it. In this tutorial we will create a custom entity.  Click the **New** dropdown from the top navigation and then select **Table** (previously called **Entity**).
 
-    ![New entity.](../media/github-actions-tutorial/gh-lab-1.70.png "New entity")
+    ![New table.](../media/github-actions-tutorial/gh-lab-1.70.png "New table")
 
 8. Enter a display name and plural name for the entity. The system will fill out the entity name and other fields for you. Click **Create** to create the entity.
 
