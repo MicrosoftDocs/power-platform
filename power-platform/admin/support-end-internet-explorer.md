@@ -27,7 +27,7 @@ The warning message will appear at the top of the Power Platform admin center pa
 
 ## Administrator experience 
 
-To prepare for Internet Explorer support ending, administrators in the Power Platform Admin center and in the model-driven apps Advanced Settings will see a warning message if their tenant has Internet Explorer users.  These messages will appear regardless of the browser the administrator is using. 
+Administrators in the Power Platform Admin center and in the model-driven apps Advanced Settings will see a warning message if their tenant has Internet Explorer users.  These messages will appear regardless of the browser the administrator is using. 
 
 > **Alert** <br />
 > Internet Explorer support has ended. Ensure users have switched to Microsoft Edge or another modern browser. 
