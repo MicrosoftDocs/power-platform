@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/06/2021
+ms.date: 08/23/2021
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -26,7 +26,7 @@ Users can access the model-driven apps with the most recent versions of these po
 - Safari
 
 > [!NOTE]
-> Internet Explorer support is ending Aug 17th, 2021 and Microsoft Edge Legacy ended March 2021. 
+> Internet Explorer and Microsoft Edge Legacy support has ended. 
 
 > [!TIP]
 > For optimal performance and experience, we recommend you use the latest version of a modern browser. 

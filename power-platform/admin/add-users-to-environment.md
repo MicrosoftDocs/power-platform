@@ -39,7 +39,7 @@ When an environment is created with a Dataverse database or a Dataverse database
 - Because it can take a long time to automatically add users to an environment, you can use the following procedure to add specific users to the environment sooner. 
 
 > [!TIP]
-> Check out the following video: [Adding users to Dataverse](https://youtu.be/TvPT5tn2GHo).
+> Check out the following video: [Adding users to Dataverse](https://www.microsoft.com/videoplayer/embed/RWJBra).
 
 **To add users to an environment that has a Dataverse database**
 

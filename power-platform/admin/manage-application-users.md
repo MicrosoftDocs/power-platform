@@ -25,7 +25,7 @@ We're in the process of moving application user management from the legacy web c
 > At present, deleting an application user isn't supported.
 
 > [!TIP]
-> Check out the video: [Administer application users, security roles, teams, and users in the Power Platform admin center](https://youtu.be/1Iet2si8Ehw).
+> Check out the video: [Administer application users, security roles, teams, and users in the Power Platform admin center](https://www.microsoft.com/videoplayer/embed/RWJBr8).
 
 ## View application users in an environment 
 

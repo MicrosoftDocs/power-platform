@@ -20,9 +20,9 @@ search.app:
 
 |Topic  |Video  |PowerPoint  |
 |---------|---------|---------|
-| Administer application users, security roles, teams, and users in the Power Platform admin center | [Video](https://youtu.be/1Iet2si8Ehw) |   |
-| Adding users to Dataverse    | [Video](https://youtu.be/TvPT5tn2GHo)  |   |
-| Assigning security roles in the Power Platform admin center   | [Video](https://youtu.be/MJhIwVSpQNM)  |   |
+| Administer application users, security roles, teams, and users in the Power Platform admin center | [Video](https://www.microsoft.com/en-us/videoplayer/embed/RWJBr8) |   |
+| Adding users to Dataverse    | [Video](https://www.microsoft.com/videoplayer/embed/RWJBra)  |   |
+| Assigning security roles in the Power Platform admin center   | [Video](https://www.microsoft.com/videoplayer/embed/RWJBr6)  |   |
 | Azure Active Directory group membership  |  [Video](https://youtu.be/GW2Rz53BX6o)  | |
 | Check user's access to a record using the Check Access feature  |  [Video](https://youtu.be/rigZ1FvrgSY) |  |
 |Top 10 tips to securely roll out Microsoft Power Apps and Microsoft Power Automate |[Video](https://youtu.be/BnolkTK2Sng) | [Deck](https://medius.studios.ms/video/asset/PPT/MBAS19-BRK2005) |
