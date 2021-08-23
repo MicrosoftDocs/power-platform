@@ -32,7 +32,7 @@ search.app:
  For more information about the difference between [!INCLUDE[pn_MS_Online_Services](../includes/pn-ms-online-services.md)] administrator roles and security roles, see [Grant users access](grant-users-access.md).  
 
 > [!TIP]
-> Check out the following video: [Assigning security roles in the Power Platform admin center](https://youtu.be/MJhIwVSpQNM).
+> Check out the following video: [Assigning security roles in the Power Platform admin center](https://www.microsoft.com/videoplayer/embed/RWJBr6).
   
 Follow these steps to assign a security role.
 
