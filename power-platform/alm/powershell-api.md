@@ -36,7 +36,7 @@ The checker service provides the logic for the [solution checker feature](/powe
 > that it does require Windows PowerShell in your project pipeline. If you're
 > unable to meet this requirement, interacting with the web APIs directly
 > will likely be the best approach.<p/>
-> **Tip #2**: You can easily manage solutions using PowerShell as part of your custom automation. Refer to the [Microsoft.Xrm.Data.PowerShell](https://github.com/seanmcne/Microsoft.Xrm.Data.PowerShell) module and [sample code](https://github.com/seanmcne/Microsoft.Xrm.Data.PowerShell.Samples/tree/master/Solutions). For example:<br/>
+> **Tip #2**: You can easily manage solutions using PowerShell as part of your custom automation. Refer to the [Microsoft.Xrm.Data.PowerShell](https://github.com/seanmcne/Microsoft.Xrm.Data.PowerShell) module, which is also a community created and supported tool. See sample code [here](https://github.com/seanmcne/Microsoft.Xrm.Data.PowerShell.Samples/tree/master/Solutions). For example:<br/>
 > `Export-CrmSolution "MySolution"`<p/>
 > `Export-CrmSolution -conn $conn -SolutionName "MySolution" -Managed -SolutionFilePath "C:\temp" -SolutionZipFileName "MySolution_Managed.zip"`<p/>
 > `Import-CrmSolutionAsync -SolutionFilePath c:\temp\mysolution.zip -ActivateWorkflows -OverwriteUnManagedCustomizations -MaxWaitTimeInSeconds 600`
