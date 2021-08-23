@@ -63,7 +63,7 @@ To find the latest release for these web browsers, visit the software manufactur
 
 ## Support for Microsoft Internet Explorer and Microsoft Edge Legacy 
 
-Internet Explorer support ends Aug 17th, 2021 and Microsoft Edge Legacy support ended March 2021.  We recommend that you switch to Microsoft Edge (based on Chromium). See [Support end for Internet Explorer](support-end-internet-explorer.md) for more details on the support ending for Internet Explorer and Microsoft Edge Legacy with model-driven apps. 
+Internet Explorer and Microsoft Edge Legacy support has ended.  We recommend that you switch to Microsoft Edge (based on Chromium). See [Support end for Internet Explorer](support-end-internet-explorer.md) for more details on the support ending for Internet Explorer and Microsoft Edge Legacy with model-driven apps. 
 
 ## Support for older browser versions
 
