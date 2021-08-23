@@ -1,7 +1,7 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps"
 description: Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps 
-ms.date: 06/27/2021
+ms.date: 08/23/2021
 ms.topic: "article"
 ms.assetid: 994cc854-17f6-45d6-bc20-fcf1a3f2d6d6
 searchScope:
@@ -21,9 +21,13 @@ The announcements and deprecations described in this article apply to Power Apps
 Admins and IT professionals can use this information to prepare for future releases. This article was first published on June 27, 2017.
 
 > [!IMPORTANT]
-> "Deprecated" means we intend to remove the feature or capability from a future major release. The feature or capability will continue to work and is fully supported until it is officially removed. This deprecation
-notification can span a few months or years. After removal, the feature or capability no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
+> "Deprecated" means we intend to remove the feature or capability from a future major release. The feature or capability will continue to work and is fully supported until it is officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
 
+## Support for Microsoft 365 Groups and Yammer in Dynamics 365 is deprecated
+
+Effective February 2022, support for Microsoft 365 Groups (previously known as Office Groups) and Yammer in Dynamics 365 will be deprecated. This will impact customers who use Microsoft 365 Groups and/or Yammer for collaboration in Dynamics 365. We recommend that customers transition to Microsoft Teams for more advanced collaboration functionalities. For information about integrating Dynamics 365 with Teams, see [Integrate customer engagement apps in Dynamics 365 with Microsoft Teams](/dynamics365/teams-integration/teams-integration).
+
+If you've questions about the deprecation, contact your Microsoft Customer Service representative or Microsoft Partner.
 
 ## The Analyze section, in mobile offline profiles is deprecated
 
