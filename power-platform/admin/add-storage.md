@@ -51,7 +51,7 @@ After you determine how much storage you're using, you can add or remove storage
    
    :::image type="content" source="media/storage-search-capacity.png" alt-text="Search for capacity to list Dynamics 365 apps for capacity add-on storage to purchase.":::
 
-4. Select your product, and then select **Details**.
+4. Select your products as required: Common Data Service File Capacity, Common Data Service Log Capacity, or Common Data Service Database capacity. Then, select **Details**.
 
 5. From the **Select license quantity** box, enter the number of licenses to purchase.
 
