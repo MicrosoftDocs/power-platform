@@ -4,7 +4,7 @@ description: "FAQs for licensing Power Apps, Power Automate, Dataverse, Datavers
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/28/2021
+ms.date: 08/23/2021
 author: chrisgarty
 ms.subservice: admin
 ms.author: cgarty
@@ -82,7 +82,7 @@ Yes, we have a free Developer Plan to learn and build skills on Power Apps, Powe
 
 ### What happens when I use all the data storage, file storage, and flow runs included in my per user licenses?
 
-You can buy additional data storage, file storage and flow runs. See the Power Apps Licensing overview page for more information.
+You can buy additional data storage, file storage and flow runs. See [Licensing overview for Microsoft Power Platform](pricing-billing-skus.md).
 
 ### Who can buy Microsoft Power Apps and Power Automate plans?
 
