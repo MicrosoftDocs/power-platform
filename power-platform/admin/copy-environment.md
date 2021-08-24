@@ -1,6 +1,6 @@
 ---
-title: "Copy an environment to a sandbox environment"
-description: "Learn how to copy apps and data from an environment to a sandbox environment. Review next steps for administrators in the target environment." 
+title: "Copy an environment"
+description: "Learn how to copy apps and data from an environment. Review next steps for administrators in the target environment." 
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
@@ -130,7 +130,7 @@ After modifying and enabling some of the plug-ins, the developer sandbox environ
 | IncidentResolution | SharePointDocumentLocation | UserSearchFacet |
 | IntegrationStatus | SharePointSite | GlobalSearchConfiguration |
 
-## Copy an environment to a sandbox environment
+## Copy an environment
   
 1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) and sign in using Environment Admin or System Administrator role credentials.
   
