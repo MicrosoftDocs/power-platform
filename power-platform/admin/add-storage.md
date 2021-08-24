@@ -9,7 +9,7 @@ ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/17/2021
+ms.date: 08/24/2021
 search.audienceType: 
   - admin
 search.app:
@@ -27,7 +27,7 @@ You have options when you're running low on storage capacity. You can [free up s
 If you start to run out of storage, you can add storage to your subscription.  
 
 > [!NOTE]
-> The process described in this topic is to do a direct purchase using a credit card or invoice.
+> The process described in this topic applies to direct purchases using a credit card or invoice.
 >
 >If you bought your subscription through [Volume Licensing](/licensing/) or a Cloud Solution Provider (CSP), contact your representative or [partner](https://docs.microsoft.com/microsoft-365/commerce/manage-partners?view=o365-worldwide) for assistance. Customers with an Enterprise Agreement can [make a license reservation](/licensing/license-faq).
 
