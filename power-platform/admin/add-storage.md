@@ -33,7 +33,7 @@ If you start to run out of storage, you can add storage to your subscription.
 
 ## Preliminary steps
 
-1. You must be a Global or Billing admin to do the tasks in this article. For more information, see [About admin roles](https://docs.microsoft.com//microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide).
+1. You must be a Microsoft 365 Global or Billing admin to do the tasks in this article. For more information, see [About admin roles](https://docs.microsoft.com//microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide).
 2. Determine your [current capacity storage usage](capacity-storage.md#verifying-your-new-storage-model) to make sure you know how much additional storage capacity is needed.
 
 ## Purchase add-on storage capacity
@@ -57,7 +57,9 @@ After you determine how much storage you're using, you can add or remove storage
 
 6. Select your billing frequency, and then select **Buy** to complete the purchase process.
 
-:::image type="content" source="media/storage-file-capacity-purchase.png" alt-text="Buy Dataverse File capacity storage add-on.":::
+   :::image type="content" source="media/storage-file-capacity-purchase.png" alt-text="Buy Dataverse File capacity storage add-on.":::
 
 > [!NOTE]
 > Common Data Service capacity refers to Microsoft Dataverse capacity. The name will be changed in the Microsoft 365 Purchase Services page in the future.
+
+After completing the purchase process, the additional storage capacity will appear in the **Capacity** page (**Resources** > **Capacity** > **Summary**).
