@@ -26,8 +26,8 @@ You can use Copy environment in the Microsoft Power Platform admin center to cop
 > [!NOTE]
 > - The target environment will be listed in the **Select environment to overwrite** drop-down. If you do not see an environment, that means you cannot overwrite it. For example, you cannot overwrite production environments so you won't see any environments of type production.  
 > - You can only copy to an environment in the same tenant and region.
-> - Components that have not been added to a solution (including canvas apps, flows, custom connectors, and connections) may not be part of the copy. You should validate your apps post copy.
-> - You cannot copy from or to a default environment.
+> - Components that have not been added to a solution (including canvas apps, flows, custom connectors, and connections) might not be part of the copy. You should validate your apps post copy.
+> - You cannot copy from or to a default type environment.
   
 ## Copy over everything
  An **Everything** copy includes all application data, users, and customizations, and schemas from the source environment and is suitable for:  

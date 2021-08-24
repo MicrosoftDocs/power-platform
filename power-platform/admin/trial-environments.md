@@ -194,13 +194,13 @@ The organization (tenant) admin can determine who's allowed to create trial envi
 
 ### I can see a trial (subscription-based) environment type option, why can't I create this trial type?
 
-Only tenant admins can create an environment of this type. Also, make sure that you have an active Dynamics 365 Trial subscription.
+Only tenant admins can create a trial (subscription-based) environment. Also, make sure that you have an active Dynamics 365 Trial subscription.
 
 ### Can I copy a trial environment?
 Yes. Tenant admins can copy trial (subscription-based) environments to a target environment of the same type. 
 
-### What administrative operation are supported for trial environments?
-A 30-day trial can only be created and deleted; it cannot be reset, backed up, restored, or copied.
+### What administrative operations are supported for trial environments?
+A 30-day trial can only be created and deleted; it can't be reset, backed up, restored, or copied.
 
 ### Why can’t I backup my trial environment?
 
