@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/06/2021
+ms.date: 08/24/2021 
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -18,20 +18,19 @@ search.app:
 ---
 # Copy an environment
 
-You can use Copy environment in the Microsoft Power Platform admin center to copy the customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), and all data from any environment to a sandbox environment. You can select two levels of copy: **Everything** or **Customizations and schemas only**.  
+You can use Copy environment in the Microsoft Power Platform admin center to copy the customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), and all data between environments. You can select two levels of copy: **Everything** or **Customizations and schemas only**.  
 
 > [!div class="mx-imgBorder"] 
 > ![Copy menu.](media/copy-menu.png "Copy menu")
 
 > [!NOTE]
-> - You can only copy an environment to a sandbox environment.
-> - You can only copy to a sandbox environment in the same tenant and region.
-> - Currently, any components that have not been added to a solution (including canvas apps, flows, custom connectors, and connections) will not be copied to the target environment.
+> - The target environment will be listed in the **Select environment to overwrite** drop-down. If you do not see an environment, that means you cannot overwrite it. For example, you cannot overwrite production environments so you won't see any environments of type production.  
+> - You can only copy to an environment in the same tenant and region.
+> - Components that have not been added to a solution (including canvas apps, flows, custom connectors, and connections) may not be part of the copy. You should validate your apps post copy.
 > - You cannot copy from or to a default environment.
-> - You must have at least 1 GB of [storage capacity](whats-new-storage.md) to copy an environment.
   
 ## Copy over everything
- An Everything copy includes all application data, users, and customizations, and schemas from the source environment and is suitable for:  
+ An **Everything** copy includes all application data, users, and customizations, and schemas from the source environment and is suitable for:  
   
 - User acceptance testing  
 - Upgrade testing  
@@ -147,9 +146,9 @@ After modifying and enabling some of the plug-ins, the developer sandbox environ
    > [!div class="mx-imgBorder"] 
    > ![Copy environment.](media/copy-environment1.png "Copy environment")
 
-5. Select a sandbox environment.
+5. Select a target environment.
   
-    A target environment can be a sandbox or preview environment; not a production environment.  
+   A target environment can be a sandbox or preview environment, not a production environment. If you're copying an environment of type **Trial (subscription-based)**, you'll be able to see and select target environments of the same type, that is **Trial (subscription-based)**.
   
    > [!WARNING]
    >  The target environment will be deleted and replaced with a copy of the data and customizations from the source environment. You won’t be able to recover any deleted data.  
