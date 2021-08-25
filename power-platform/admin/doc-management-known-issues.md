@@ -121,7 +121,7 @@ This issue can occur when you are using the legacy list component for document m
 
 In 2015, [we announced the deprecation of the list component]( https://cloudblogs.microsoft.com/dynamics365/no-audience/2015/05/15/dynamics-crm-2015-update-1-list-component-deprecation/?source=crm). Notice that, a list component wasn’t released for Power Apps or the current versions of Dynamics 365 and previous versions of the list component aren’t supported with these versions.
 
-If you are using the list component, you must move your document management to use SharePoint to server-based authentication.
+If you are using the list component, you must move your document management to use server-based authentication.
 
 -	For Power Apps and Dynamics 365 apps, see [Switch from the list component or change the SharePoint deployment](switching-list-component-changing-deployment.md).
 -	For Dynamics 365 Customer Engagement (on-premises), see [Switching from the list component or changing the deployment](/dynamics365/customerengagement/on-premises/admin/switching-list-component-changing-deployment?view=op-9-0).

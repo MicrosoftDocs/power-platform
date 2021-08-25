@@ -641,6 +641,8 @@
             href: troubleshoot-doc-management-issues.md
           - name: Known issues with document management
             href: doc-management-known-issues.md
+          - name: Switch from the list component
+            href: switching-list-component-changing-deployment.md
     - name: Data integration
       items:
       - name: Integrate data into Dataverse 
