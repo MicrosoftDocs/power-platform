@@ -439,7 +439,7 @@
       - name: Free up storage space
         href: free-storage-space.md 
 # the following should not go to live yet        
-      - name: Add storage
+      - name: Add storage capacity
         href: add-storage.md      
     - name: Resources
       items:

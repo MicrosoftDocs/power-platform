@@ -22,9 +22,9 @@ search.app:
 
 You have options when you're running low on storage capacity. You can [free up storage](free-storage-space.md), [delete unwanted environments](delete-environment.md), or buy more storage capacity to be compliant with storage usage requirements. To learn more about storage capacity add-ons, see the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544) or the ["Add-ons" section of the Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130). You can work through your organization's standard procurement process to purchase [capacity add-ons](capacity-add-on.md).
 
-## Add storage space for your tenant
+## Add storage capacity for your tenant
 
-If you start to run out of storage, you can add storage to your subscription.  
+If your tenant is running low on available storage capacity, you can add storage to your subscription.  
 
 > [!NOTE]
 > The process described in this topic applies to direct purchases using a credit card or invoice.
@@ -34,7 +34,7 @@ If you start to run out of storage, you can add storage to your subscription.
 ## Preliminary steps
 
 1. You must be a Microsoft 365 Global or Billing admin to do the tasks in this article. For more information, see [About admin roles](https://docs.microsoft.com//microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide).
-2. Determine your [current capacity storage usage](capacity-storage.md#verifying-your-new-storage-model) to make sure you know how much additional storage capacity is needed.
+2. Determine your [current capacity storage usage](capacity-storage.md#verifying-your-new-storage-model) to make sure you know how much additional storage capacity is needed. Non-admins can also [view self-service storage capacity](view-self-service-capacity.md).
 
 ## Purchase add-on storage capacity
 
@@ -62,4 +62,4 @@ After you determine how much storage you're using, you can add or remove storage
 > [!NOTE]
 > Common Data Service capacity refers to Microsoft Dataverse capacity. The name will be changed in the Microsoft 365 Purchase Services page in the future.
 
-After completing the purchase process, the additional storage capacity will appear in the **Capacity** page (**Resources** > **Capacity** > **Summary**).
+After completing the purchase process, the additional storage capacity will appear in the Power Platform admin center **Capacity** page (**Resources** > **Capacity** > **Summary**).
