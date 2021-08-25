@@ -123,7 +123,7 @@ In 2015, [we announced the deprecation of the list component]( https://cloudblog
 
 If you are using the list component, you must move your document management to use SharePoint to server-based authentication.
 
--	For Power Apps and Dynamics 365 apps, see [Switch from the list component or change the SharePoint deployment](switching-list-component-changing-deployment).
+-	For Power Apps and Dynamics 365 apps, see [Switch from the list component or change the SharePoint deployment](switching-list-component-changing-deployment.md).
 -	For Dynamics 365 Customer Engagement (on-premises), see [Switching from the list component or changing the deployment](/dynamics365/customerengagement/on-premises/admin/switching-list-component-changing-deployment?view=op-9-0).
 
 ### See also
