@@ -99,7 +99,7 @@ There's a difference in the models for adding users to Dataverse environments an
 
 ### Role assignments 
 
-<table style="width:100%">
+<table width="100%">
 <tr>
 <th>Persona</th>
 <th>Description</th>
