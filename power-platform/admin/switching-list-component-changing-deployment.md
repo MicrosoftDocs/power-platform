@@ -5,8 +5,8 @@ author: Mattp123
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
+ms.date: 08/25/2021
 ms.subservice: admin
-ms.date: 09/10/2020
 ms.author: matp
 search.audienceType: 
   - admin
@@ -16,21 +16,23 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Switching from the list component or changing the SharePoint deployment
+# Switch from the list component or change the SharePoint deployment
 
-This topic provides an overview about how to switch from the list component to server-based authentication. This topic can also help if you change the [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.md)] deployment type, such as moving from [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises to [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)].  
+This article provides an overview about how to switch from the deprecated list component to server-based authentication. This article can also help if you change the [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.md)] deployment type, such as moving from [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises to [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)].
+
+> [!IMPORTANT]
+> In 2015, [we announced the deprecation of the list component]( https://cloudblogs.microsoft.com/dynamics365/no-audience/2015/05/15/dynamics-crm-2015-update-1-list-component-deprecation/?source=crm). Notice that, the list component wasn’t released for Power Apps or the current versions of Dynamics 365 and previous versions of the list component aren’t supported with these versions. If you are using the list component you must move your document management with SharePoint to server-based authentication.
   
 <a name="BKMK_switchlistcomp"></a> 
-## Switch from list component to server-based authentication  
- If your organization is already using the list component with [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.md)] for document management with customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), you can switch to server-based authentication by following these steps.  
-  
-1. Follow the steps to set up server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration that best fits your deployment type. For more information, see the appropriate topic for your [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] deployment below.  
+## Switch from list component to server-based authentication
+ If your organization is already using the list component with [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.md)] for document management with model-driven apps, such as Dynamics 365 Sales and Customer Service, you can switch to server-based authentication by following these steps.  
 
+1. Follow the steps to set up server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration that best fits your deployment type. For more information, see the appropriate article for your [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] deployment below.  
 
-|Environment  |Topic  |
+|Environment  |Article  |
 |---------|---------|
-|Customer engagement apps and SharePoint Online  |   [Set up customer engagement apps to use SharePoint Online](set-up-dynamics-365-online-to-use-sharepoint-online.md)        |
-|Customer engagement apps and SharePoint on-premises     |   [Configure server-based authentication with customer engagement apps and SharePoint on-premises](../admin/configure-server-based-authentication-sharepoint-on-premises.md)      |
+|Model-driven apps and SharePoint Online  |   [Set up model-driven apps in Dynamics 365 to use SharePoint Online](set-up-dynamics-365-online-to-use-sharepoint-online.md)        |
+|Model-driven apps in Dynamics 365 and SharePoint on-premises     |   [Configure server-based authentication with model-driven apps in Dynamics 365 and SharePoint on-premises](../admin/configure-server-based-authentication-sharepoint-on-premises.md)      |
   
    > [!NOTE]
    >  If you've made changes to [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)], such as new [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] servers, new site collections, or migrated from [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises to [!INCLUDE[pn_microsoft_sharepoint_online](../includes/pn-microsoft-sharepoint-online.md)], consider deactivating outdated [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site records. When you run the Enable Server-Based SharePoint Integration wizard, the wizard will attempt to validate all active [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] sites. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Deactivate a site](../admin/switching-list-component-changing-deployment.md#BKMK_deact_site)  
@@ -56,7 +58,7 @@ This topic provides an overview about how to switch from the list component to s
   
 3. Select the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site you want to remove, and then on the tool bar select **Deactivate**.  
   
-4. Repeat step three for all sites that you want to deactivate.  
+4. Repeat step 3 for all sites that you want to deactivate.  
 
 ### What to do when the Enable Server-Based SharePoint Integration wizard doesn't appear
 If the **Enable Server-Based SharePoint Integration** icon doesn't appear in the **Document Management** area after you deactivate all SharePoint sites, follow these steps.
