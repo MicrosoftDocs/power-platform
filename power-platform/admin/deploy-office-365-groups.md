@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/17/2021
+ms.date: 08/26/2021
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -18,7 +18,10 @@ search.app:
 ---
 # Deploy Microsoft 365 groups 
 
-[!INCLUDE [pn-dynamics-crm-online](../includes/pn-dynamics-crm-online.md)]
+> [!NOTE]
+> Effective February 2022, support for Microsoft 365 Groups (previously known as Office Groups) and Yammer in Dynamics 365 will be deprecated. This will impact customers who use Microsoft 365 Groups and/or Yammer for collaboration in Dynamics 365. We recommend that customers transition to Microsoft Teams for more advanced collaboration functionalities. For information about integrating Dynamics 365 with Teams, see [Integrate customer engagement apps in Dynamics 365 with Microsoft Teams](/dynamics365/teams-integration/teams-integration).
+> 
+> If you've questions about the deprecation, contact your Microsoft Customer Service representative or Microsoft Partner.
 
 Microsoft 365 Groups, available with Dynamics 365 apps, provides a new environment for collaboration with Microsoft 365 users who don't use customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), such as Dynamics 365 Sales and Customer Service. For example, use Microsoft 365 Groups when a sales team has a major opportunity requiring input from several people who don't have access to customer engagement apps. Microsoft 365 Groups provides a single location to share documents, conversations, meetings, and notes. You can enable Microsoft 365 Groups for any entity.  
   
