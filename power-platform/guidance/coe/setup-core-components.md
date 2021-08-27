@@ -174,6 +174,24 @@ Before you begin:
 
 The import can take up to 60 minutes to be completed. Learn more about the apps and flows in the Core components: [What's in the Core Components](core-components.md)
 
+## Update Run only users
+
+There are several child flows which will need their **Run only users** properties updated.
+
+- HELPER - CloudFlowOperatonsperforms
+- HELPER - CanvasAppOperatons
+- CLEANUP HELPER - Check Deleted (Canvas Apps)
+- CLEANUP HELPER - Check Deleted (Cloud Flows)
+- CLEANUP HELPER - Check Deleted (Model Driven Apps)
+- CLEANUP HELPER - Check Deleted (PVA)
+
+For all of these flows, go to the details page and click the **Run only users** edit button.
+
+You will see all the connections in the child flow. For each one, change the value to **Use this connection (userPrincipalName\@company.com)**. If there is no connection for any of the connectors, go to **Data** > **Connections**, and create one for the connector.
+
+   ![Find setting for run only users.](media/runonlyusersgov1.png "Find setting for run only users")
+   ![Configure run only users.](media/runonlyusersgov2.png "Configure run only users")
+
 ## Activate the sync template flows
 
 The Admin \| Sync Template flows part of this solution crawl through all the resources stored in Microsoft Power Platform and make a copy of details in each resource (for example, apps and flows) to Dataverse (table definitions are provided in this solution). All data displayed in most of the starter kit components must be in Dataverse, which means that the sync template must be configured for everything else to work. The sync flows run daily overnight.
