@@ -26,7 +26,7 @@ A team template can be used for the entities that are enabled for automatically 
     
 ## Enable an entity for access teams  
 
-These settings can be found in the Microsoft Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **User's + permissions** > **Teams**.
+These settings can be found in the Microsoft Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Users + permissions** > **Teams**.
 
 Make sure you have the System Administrator or System Customizer security role or equivalent permissions.
 
@@ -34,7 +34,7 @@ Check your security role:
 - Follow the steps in [View your user profile](/powerapps/user/view-your-user-profile).
 - Don’t have the correct permissions? Contact your system administrator.
 
-1. Select an environment and go to **Settings** > **User's + permissions** > **Teams**.
+1. Select an environment and go to **Settings** > **Users + permissions** > **Teams**.
 
 2. Select the check box for a team.
 
@@ -62,7 +62,7 @@ Check your security role:
 
 ## Add a team template to the entity form   
   
-1. Select an environment and go to **Settings** > **User's + permissions** > **Teams**.
+1. Select an environment and go to **Settings** > **Users + permissions** > **Teams**.
 
 2. On the command bar, select **More Commands** (...).
 
