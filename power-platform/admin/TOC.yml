@@ -20,6 +20,8 @@
         href: policies-communications.md
       - name: Notifications explained
         href: notifications-explained.md 
+      - name: Manage your maintenance window
+        href: manage-maintenance-window.md
     - name: Licensing
       items:
       - name: Overview
