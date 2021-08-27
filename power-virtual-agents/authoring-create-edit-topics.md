@@ -198,7 +198,7 @@ If you redirect to any of the following [system topics](#use-system-and-sample-t
 - Confirmed Failure
 - Goodbye
 - Escalate
-- Start over (this will also reset any [global variables](authoring-variables-bot.md)
+- Start over (this will also reset any [global variables](authoring-variables-bot.md))
 
 
 
