@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/03/2021
+ms.date: 08/27/2021
 ms.subservice: admin
 ms.author: jimholtz 
 search.audienceType: 
@@ -53,7 +53,8 @@ Make sure you have the System Administrator security role or equivalent permissi
 > |Show Microsoft Power Automate on forms and in the site map|Default: On. Select **On** to enable embedded Power Automate flows in your organization. More information: [Enable embedded Power Automate to automate processes](enable-embedded-flow-in-your-organization.md).|  
 > |Show dashboard cards in expanded state|Default: Off. Select **On** to see the detailed card form in a dashboard. If set to **Off**, only the header and minimal details are displayed in the card form.|  
 > |**Lookup behavior**||  
-> |Enable advanced lookup in model-driven apps|Default: Off. If enabled for [early access 2021 wave 2](opt-in-early-access-updates.md) then the default setting is **On**. For more information on how to use this feature, see [Advanced lookup](/powerapps/user/lookup-field#advanced-lookup)|  
-
+> |Enable advanced lookup in model-driven apps|Default: Off. If enabled for [early access 2021 wave 2](opt-in-early-access-updates.md) then the default setting is **On**. For more information on how to use this feature, see [Advanced lookup](/powerapps/user/lookup-field#advanced-lookup).|  
+> |Minimum number of characters to trigger typeahead search  | Enter the minimum number of characters that trigger an automatic typeahead search in a lookup field in model-driven apps. <br />This setting can be used to improve lookup performance, particularly when the underlying environment database has huge amounts of data. <br /> Default value: 2  |
+> | Delay between character inputs that will trigger a search | Enter the delay interval in milliseconds that will be introduced in lookups before a search is executed. <br /> This can be used to improve lookup performance, particularly when the underlying environment database has huge amounts of data. <br /> Default value: 250ms  |
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
