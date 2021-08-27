@@ -203,6 +203,12 @@ When you end the conversation, you can have a survey appear that asks the user i
 
     :::image type="content" source="media/topics-nodes-other-topic-flyout-teams.png" alt-text="Go to another topic node with options for other topics":::
 
+When the bot goes to another topic, the bot will go through the conversation path for that topic and then return to the original topic, at the place where it left.
+
+If you redirect to a system topic, however, the entire conversation will end.
+
+You can consider the redirected topic as a "subtopic". 
+
 
 ### Delete nodes
 
