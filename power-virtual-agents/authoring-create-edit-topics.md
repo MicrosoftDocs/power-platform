@@ -189,7 +189,7 @@ In the authoring canvas for the original topic, you can insert additional nodes 
 
 When the path for the subtopic is finished, the bot will return to the original topic. The bot will then follow the nodes that are under the subtopic's node.
 
-:::image type="content" source="/media/authoring-create-edit-topics/authoring-subtopic-redirect.png" alt-text="Screenshot of the authoring canvas showing nodes under a redirected topic node.":::
+:::image type="content" source="media/authoring-create-edit-topics/authoring-subtopic-redirect.png" alt-text="Screenshot of the authoring canvas showing nodes under a redirected topic node.":::
 
 If you redirect to any of the following [system topics](#use-system-and-sample-topics), however, the entire conversation will end:
 

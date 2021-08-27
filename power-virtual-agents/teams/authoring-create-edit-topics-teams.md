@@ -207,7 +207,7 @@ When the bot goes to another topic, the bot will go through the conversation pat
 
 You can consider the redirected topic as a "subtopic". 
 
-:::image type="content" source="/media/authoring-create-edit-topics/authoring-subtopic-redirect-teams.png" alt-text="Screenshot of the authoring canvas showing nodes under a redirected topic node.":::
+:::image type="content" source="media/authoring-create-edit-topics/authoring-subtopic-redirect-teams.png" alt-text="Screenshot of the authoring canvas showing nodes under a redirected topic node.":::
 
 If you redirect to any of the following [system topics](#use-system-and-sample-topics), however, the entire conversation will end:
 
