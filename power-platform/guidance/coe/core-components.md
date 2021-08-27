@@ -333,21 +333,6 @@ More information: [Data Loss Prevention policies](/power-platform/admin/wp-data-
 
 ![DLP Editor.](media/dlp_new1.png "DLP Editor")
 
-### Power Platform Request Center
-
-Power Platform Request Center is a canvas app that allows makers to request new environments. 
-
-Makers provide 
-- Connectors needed to be used in this enviornment
-- Additional admins to be added to this enviornment
-- Enviornment name and purpose
-- How long the environment is needed for?
-- If a Dataverse instance is required for this enviornment?
-
-### Admin - Power Platform Resources RMS
-
-Power Platform Request Center is a canvas app that allows admins to approve and reject new environments requests. Admins are able to view the request details and view existing DLP policies impacting the requested environment, such as policies that apply to all environments or policies that exclude certain environments. 
-
 ### App Catalog
 
 A canvas app that helps give visibility to certain apps in the organization. Admins can choose which apps to highlight in the app catalog if the app meets admin requirements and is meant to be shared broadly.
