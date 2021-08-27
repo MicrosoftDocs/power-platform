@@ -185,7 +185,7 @@ You can consider the redirected topic as a "subtopic".
 
  
 
-In the authoring canvas for the original topic, you can insert additional nodes under the subtopic's node. T
+In the authoring canvas for the original topic, you can insert additional nodes under the subtopic's node.
 
 When the path for the subtopic is finished, the bot will return to the original topic. The bot will then follow the nodes that are under the subtopic's node.
 
