@@ -193,8 +193,14 @@ A Power Automate flow uses the custom connector, queries the audit log daily, an
 
     | Name | Description |
     |------|---------------|
+    |StartTime-Interval | Must be a whole number to represent the start time for how far back to fetch. <br> Default value: 1 (for 1 day back) |
+    |StartTime-Unit | Determines units for how far back in time to go to fetch data. <br>Must be a value from accepted as an input parameter to [Add to Time](/power-automate/desktop-flows/actions-reference/datetime#add). <br> Example legal values: Minute, Hour, Day <br>Default value: Day |
     |TimeInterval-Unit | Determines units for chunking the time since start. <br>Must be a value from accepted as an input parameter to [Add to Time](/power-automate/desktop-flows/actions-reference/datetime#add). <br> Example legal values: Minute, Hour, Day <br>Default value: Hour |
     |TimeInterval-Interval | Must be a whole number to represent the number of chunks of type unit (above).<br> Default value: 1 (for 1 hour chunks) |
+    |TimeSegment-CountLimit | Must be a whole number to represent the limit on the number of chunks that can be created.<br> Default value: 60 |
+
+    > [!IMPORTANT]
+    > We cannot assist in your attempts to configure these, they have been added as a courtesy for you to test and find settings that work for you. The default values provided work in a medium sized tenant.
 
     > [!IMPORTANT]
     > Learn how to about environment variables: [Update Environment Variables](limitations.md#updating-environment-variables)
