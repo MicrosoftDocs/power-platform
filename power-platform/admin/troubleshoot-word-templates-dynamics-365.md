@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/11/2020
+ms.subservice: admin
 ms.author: udag
 search.audienceType: 
   - admin
@@ -38,24 +39,24 @@ To show an image for entities that don't have an **EntityImage** by default, you
   2.	In the solution explorer, under **Components**, expand **Entities**, and then select the entity. In this example, we're selecting the **Appointment** entity.
 
   > [!div class="mx-imgBorder"]
-  > ![Open the Appointment entity](media/ts-wordtemplate-select-appointment-entity.png "Open the Appointment entity")
+  > ![Open the Appointment entity.](media/ts-wordtemplate-select-appointment-entity.png "Open the Appointment entity")
 
   3.	In the **Appointment** entity, select **Fields**, and then select **New**.
 
   > [!div class="mx-imgBorder"]
-  > ![Add a new field](media/ts-wordtemplate-select-new-field.png "Add a new field")
+  > ![Add a new field.](media/ts-wordtemplate-select-new-field.png "Add a new field")
     
   4.	In the new field form, enter **Entity Image** for the **Display Name**, enter **EntityImage** for the **Name**, and for **Data Type**, select **Image**.
 
   > [!div class="mx-imgBorder"]
-  > ![Add EntityImage as a new field](media/ts-wordtemplate-add-image-entity.png "Add EntityImage as a new field") 
+  > ![Add EntityImage as a new field.](media/ts-wordtemplate-add-image-entity.png "Add EntityImage as a new field") 
 
   5.	Save and close the form. 
 
   6.	Verify that the new field has been added by selecting the entity name. In this example, we've added **Entity Image** as a value for the **Primary Image** field for the **Appointment** entity.
 
   > [!div class="mx-imgBorder"]
-  > ![Entity Image is added to the Primary Image field for the Appointment entity](media/ts-wordtemplate-primary-image-entity-added.png "Entity Image is added to the Primary Image field for the Appointment entity")
+  > ![Entity Image is added to the Primary Image field for the Appointment entity.](media/ts-wordtemplate-primary-image-entity-added.png "Entity Image is added to the Primary Image field for the Appointment entity")
 
   7.	Publish the customizations.
 
@@ -64,22 +65,22 @@ To show an image for entities that don't have an **EntityImage** by default, you
 1. Open the entity record. In this example, we're opening a **Discuss contract renewal** appointment.
 
    > [!div class="mx-imgBorder"]
-   > ![Open an appointment](media/ts-wordtemplate-open-appointment.png "Open an appointment")
+   > ![Open an appointment.](media/ts-wordtemplate-open-appointment.png "Open an appointment")
 
 2. Select the image, and in the **Choose Image** dialog box, select **Upload Image**.
 
    > [!div class="mx-imgBorder"]
-   > ![Select Upload Image](media/ts-wordtemplate-select-upload-image.png "Select Upload Image")
+   > ![Select Upload Image.](media/ts-wordtemplate-select-upload-image.png "Select Upload Image")
 
 3. Select the image, and then select **Change**.
 
    > [!div class="mx-imgBorder"]
-   > ![Select Change](media/ts-wordtemplate-select-change.png "Select Change")
+   > ![Select Change.](media/ts-wordtemplate-select-change.png "Select Change")
 
   The image appears beside the entity.
 
   > [!div class="mx-imgBorder"]
-  > ![Image updated in the record](media/ts-wordtemplate-image-updated.png "Image updated in the record")
+  > ![Image updated in the record.](media/ts-wordtemplate-image-updated.png "Image updated in the record")
 
 **To add the entity image to the Word template** 
 
@@ -90,7 +91,7 @@ To show an image for entities that don't have an **EntityImage** by default, you
 2. Open the **XML Mapping** pane, right-click to select **new_entityimage**, and then select **Insert Content Control** > **Picture**.
 
     > [!div class="mx-imgBorder"]
-    > ![Add an image control to a Word template](media/ts-wordtemplate-add-image-word-template.png "Add an image control to a Word template")
+    > ![Add an image control to a Word template.](media/ts-wordtemplate-add-image-word-template.png "Add an image control to a Word template")
 
     The entity image field with the image is added to the Word template.
 

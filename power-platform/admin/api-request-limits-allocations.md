@@ -1,12 +1,13 @@
 ---
 title: Requests limits and allocations | Microsoft Docs
 description: Requests limits and allocations
-author: dileepsinghmicrosoft
+author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/25/2021
-ms.author: dileeps
+ms.date: 06/30/2021
+ms.subservice: admin
+ms.author: jimholtz
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
@@ -64,7 +65,7 @@ If a user has multiple licenses allocated within the same product line, for exam
 
 ## Power Apps and Power Automate capacity add-on
 
-A Power Apps and Power Automate capacity add-on allows customers to increase the limits for a given user. These will be assignable to any user who has a Power Apps or Power Automate license and a Dynamics 365 license. 
+A Power Apps and Power Automate capacity add-on allows customers to increase the limits for a given user. These will be assignable to any user who has a Power Apps, Power Automate, or applicable Dynamics 365 license.
 
 Each capacity add-on raises the request limits by another 10,000 per 24 hours. Multiple capacity add-ons can also be assigned to the same user.
 
@@ -76,9 +77,9 @@ Each capacity add-on raises the request limits by another 10,000 per 24 hours. M
 Dataverse enables you to have identities that do not require any user license to interact with the service. There are four types of
 these users:
 
--   [Application users](create-users-assign-online-security-roles.md#create-an-application-user)
--   [Non-interactive users](create-users-assign-online-security-roles.md#create-a-non-interactive-user-account)
--   [Administrative users](create-users-assign-online-security-roles.md#create-an-administrative-user-account)
+-   [Application users](create-users.md#create-an-application-user)
+-   [Non-interactive users](create-users.md#create-a-non-interactive-user-account)
+-   [Administrative users](create-users.md#create-an-administrative-user-account)
 -   [SYSTEM user](/dynamics365/customer-engagement/web-api/systemuser?view=dynamics-ce-odata-9#operations)
 
 Additionally there are special free (\$0) licenses, which are used to interact with Dynamics 365 applications like Dynamics 365 Marketing. See [How Marketing is licensed](/dynamics365/customer-engagement/marketing/purchase-setup#how-marketing-is-licensed).

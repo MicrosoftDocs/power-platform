@@ -2,6 +2,7 @@
 title: "Delete users from Dynamics 365 environments | MicrosoftDocs"
 description: Information about deleting users
 author: jimholtz
+ms.subservice: admin
 ms.author: jimholtz
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
@@ -40,7 +41,7 @@ The following lists the scenarios when a user is deleted:
 It can take from 30 minutes to 6 hours for a user's status to be updated in an environment when the user is deleted from the Microsoft 365 admin center. If you need to update the user status immediately, you can follow the steps in [User diagnostics](troubleshooting-user-needs-read-write-access-organization.md#user-diagnostics) to see what needs to be done to restore the user.
 
 > [!div class="mx-imgBorder"] 
-> ![Run diagnostics results](media/run-diagnostics.png "Run diagnostics results")
+> ![Run diagnostics results.](media/run-diagnostics.png "Run diagnostics results")
 
 > [!NOTE]
 > A user deleted from the Microsoft 365 admin center is put on the **Deleted user** list for 30 days and can be restored as directed in [Restore a user](/microsoft-365/admin/add-users/restore-user?view=o365-worldwide).

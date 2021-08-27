@@ -1,11 +1,12 @@
 ---
-title: "Determine your environment's organization ID and name  | MicrosoftDocs"
-description: Determine your environment's organization ID and name
+title: "Find your environment's organization ID and name"
+description: "If you need to find your Power Platform environment's organization ID and name for any reason, this page explains how to find this information in your settings."
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/15/2021
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -19,10 +20,10 @@ search.app:
 
 To find your organization ID and name: 
 
-1. Go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+1. Go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Select Advanced Settings](media/advanced-settings.png "Select Advanced Settings")
+   > ![Select Advanced Settings.](media/advanced-settings.png "Select Advanced Settings")
 
 2. Go to **Settings** > **Customizations** > **Developer Resources**.
 

@@ -53,26 +53,26 @@ Before registering the skill, provide the bot's ID to your skills developer to a
 
 1. In the [Power Virtual Agents portal](https://web.powerva.microsoft.com), on the side navigation pane, expand the **Manage** menu and select **Skills**.
 
-   ![Select Manage, then Skills](media/skills-menu.png)
+   ![Select Manage, then Skills.](media/skills-menu.png)
 
 1. At the top of the skills page, select **Provide ID for allow list**.
  
-   ![Select Provide ID for allow list button](media/skills-provide-id.png)
+   ![Select Provide ID for allow list button.](media/skills-provide-id.png)
 
 1. A window will show with your unique ID. Copy this ID and provide it to your skills developer.
 
-   ![Windows showing unique ID](media/skills-provide-id-modal.png)
+   ![Windows showing unique ID.](media/skills-provide-id-modal.png)
 
 
 **Enter the skill manifest URL to add a skill to your bot:**
 
 1. In the [Power Virtual Agents portal](https://web.powerva.microsoft.com), on the side navigation pane, expand the **Manage** menu and select **skills**.
 
-   ![Select Manage, then skills](media/skills-menu.png)
+   ![Select Manage, then skills.](media/skills-menu.png)
 
 1. At the top of the skills page, select **Add skill**.
  
-   ![Select Add skill button](media/skills-add-skill.png)
+   ![Select Add skill button.](media/skills-add-skill.png)
 
 1. Enter the URL to the skill manifest. A skill's manifest contains the information that your bot will need to trigger actions within a skill.
 

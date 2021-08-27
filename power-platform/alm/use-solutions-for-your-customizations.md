@@ -1,12 +1,13 @@
 ---
-title: "Use a solution to customize Power Apps | MicrosoftDocs"
-description: "Learn how to customize Power Apps"
+title: "Default solution vs. custom solution"
+description: "Using a custom solution in Power Apps is highly recommended. Learn five reasons why it's better than using a default solution to manage your customizations."
 ms.custom: ""
-ms.date: 05/05/2020
+ms.date: 08/05/2021
 ms.reviewer: ""
 ms.service: power-platform
 ms.topic: "article"
 author: "Mattp123"
+ms.subservice: alm
 ms.author: "matp"
 manager: "kvivek"
 search.audienceType: 
@@ -26,7 +27,7 @@ If you don't use a custom solution, you'll be working in one of these default so
 ## Why you shouldn't use the default solutions to manage customizations
 There are a few reasons why you shouldn't create apps and make customizations in either of the default solutions:  
 - The default solution contains all components and customizations from all solutions in the environment. 
-- By default, all enabled users can create apps and customize components in the Common Data Services Default Solution. 
+- By default, all enabled users in the default environment can create apps and customize components in the Common Data Services Default Solution. More information: [The default environment](/power-platform/admin/environments-overview#the-default-environment)
 - It's difficult to locate or identify the customizations you've made in the environment by using either default solution. 
 - When you use either default solution to create components, you'll also use the default publisher assigned to the solution. This often results in the wrong publisher prefix being applied to some components. 
 - The default solution can't be exported; therefore, you can't distribute the default solution to another environment. 

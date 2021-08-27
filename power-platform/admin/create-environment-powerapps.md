@@ -6,6 +6,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
 ms.date: 07/31/2020
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin

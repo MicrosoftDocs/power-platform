@@ -2,6 +2,7 @@
 title: "Create an administrative user and prevent elevation of security role privilege  | MicrosoftDocs"
 description: Create an administrative user and prevent elevation of security role privilege
 author: paulliew
+ms.subservice: admin
 ms.author: paulliew
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
@@ -19,7 +20,7 @@ search.app:
 ---
 # Create an administrative user and prevent elevation of security role privilege
 
-The [copy security role method](copy-security-role.md) is a quick and easy way to create a new security role based on an existing set of privileges. However, security role privileges can change with product updates which could render the new security role out-of-date and might not function as expected. This is especially true in the case where you want to allow [a certain group of administrative users](create-users-assign-online-security-roles.md#create-an-administrative-user-account) to assign security roles to your users.  We recommend you not copy the System Administrator security role and assign it to users, since this would allow the users to elevate the assigned user to System Administrators.  In addition, newer privileges from product updates will not be automatically added to the copied System Administrator security role resulting in the role having insufficient privileges to continue to assign security roles.
+The [copy security role method](copy-security-role.md) is a quick and easy way to create a new security role based on an existing set of privileges. However, security role privileges can change with product updates which could render the new security role out-of-date and might not function as expected. This is especially true in the case where you want to allow [a certain group of administrative users](create-users.md#create-an-administrative-user-account) to assign security roles to your users.  We recommend you not copy the System Administrator security role and assign it to users, since this would allow the users to elevate the assigned user to System Administrators.  In addition, newer privileges from product updates will not be automatically added to the copied System Administrator security role resulting in the role having insufficient privileges to continue to assign security roles.
 
 The following steps describe a method to create a new custom security role with privileges that will change dynamically with updates and therefore can continue to be used for security role assignments.
 
@@ -49,7 +50,7 @@ The following steps describe a method to create a new custom security role with 
    |Append To     |Business Unit         |
    |Assign     |Business Unit         |
 
-   ![Security Role](media/security-role.png)
+   ![Security Role.](media/security-role.png)
 
 6. Select **Save and Close**.
 

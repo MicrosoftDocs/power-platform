@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/12/2021
+ms.subservice: admin
 ms.author: matp
 search.audienceType: 
   - admin
@@ -56,11 +57,11 @@ Administrators can monitor the processing of asynchronous operations in the **Se
 2. The cascading operations are displayed in the **All System Jobs** view. 
 
     > [!div class="mx-imgBorder"] 
-    > ![Cascade Operations view](media/cascade-operations-view.png "Cascade Operations view")
+    > ![Cascade Operations view.](media/cascade-operations-view.png "Cascade Operations view")
 
    To view only cascading operations, in the **View** selector select **Cascade Operations**. 
     > [!div class="mx-imgBorder"] 
-    > ![Cascade Operations view selector](media/cascade-operations.png "Cascade Operations view selector")
+    > ![Cascade Operations view selector.](media/cascade-operations.png "Cascade Operations view selector")
 
 Cascading operations have any one of the following statuses:
 - **Completed**. All batches of the cascading transaction have been completed successfully.
@@ -77,7 +78,7 @@ Opening a cascading operation displays:
 - Any messages associated with the job, such as failure reasons, or exceptions.
 
     > [!div class="mx-imgBorder"] 
-    > ![Cascade operation record](media/cascade-operation-record.png "Cascade operation record")
+    > ![Cascade operation record.](media/cascade-operation-record.png "Cascade operation record")
  
 ## Which cascading transactions can be processed asynchronously?
 Assign, Delete, and Merge cascading transactions can be processed asynchronously. 
@@ -111,7 +112,7 @@ For any other issues with failed jobs, contact Microsoft Support. More informati
 If you experience failures with cascade merge operations because files are deleted during the job run, you can skip the parenting check. This allows your merge to continue even if someone deletes a record from the set while the job is running in the background. To do this, when you choose to merge records, at the bottom of the merge window clear the option **Parenting check is enabled by default. Uncheck this to ignore the parenting check**.
 
 > [!div class="mx-imgBorder"] 
-> ![Merge records dialog box](media/merge-records-dialog.png "Merge records dialog box")
+> ![Merge records dialog box.](media/merge-records-dialog.png "Merge records dialog box")
 
 #### Merge record example
 

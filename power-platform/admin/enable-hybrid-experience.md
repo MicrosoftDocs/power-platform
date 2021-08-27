@@ -6,6 +6,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/20/2021
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -27,7 +28,7 @@ The following features are not yet present in Unified Interface but can be enabl
 - Bulk edit
 - [Record sharing](/powerapps/user/assign-or-share-records)
 - [Audit History](/powerapps/developer/common-data-service/auditing-overview)
-- All options under **Set Personal Options** (![Settings gear](media/settings-gear-icon.png "Settings gear"))
+- All options under **Set Personal Options** (![Settings gear.](media/settings-gear-icon.png "Settings gear"))
 - Reports
 
  > [!NOTE]
@@ -35,7 +36,7 @@ The following features are not yet present in Unified Interface but can be enabl
 
 These features are enabled through a setting in System Settings.
 
-1. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+1. In the web app, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
 
 2. Select **Settings** > **Administration**.
 
@@ -43,19 +44,19 @@ These features are enabled through a setting in System Settings.
 
 4. Set **Enable embedding of certain legacy dialogs in Unified Interface browser client** to **Yes**.
 
-![Enable hybrid experience](media/hybrid-system-settings.png "Enable hybrid experience")
+![Enable hybrid experience.](media/hybrid-system-settings.png "Enable hybrid experience")
 
 When you enable the hybrid experience, commands appear on the command bar. For example, when you select an account, **Edit**, **Merge**, and **Share** commands are available.
 
-![Commands on command bar](media/hybrid-edit-merge-share.png "Commands on command bar")
+![Commands on command bar.](media/hybrid-edit-merge-share.png "Commands on command bar")
 
 You can select **Share** to share this account with another user or team.
 
-![Share account](media/hybrid-share-account.png "Share account")
+![Share account.](media/hybrid-share-account.png "Share account")
 
 If you disable the hybrid experience, these commands are not available in the command bar.
 
-![Commands not on command bar](media/hybrid-no-edit-merge-share.png "Commands not on command bar")
+![Commands not on command bar.](media/hybrid-no-edit-merge-share.png "Commands not on command bar")
 
 ### See also  
  [Unified Interface](about-unified-interface.md)

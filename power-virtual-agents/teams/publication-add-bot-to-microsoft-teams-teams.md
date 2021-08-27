@@ -2,7 +2,7 @@
 title: "Publish your chatbot with the Power Virtual Agents app in Microsoft Teams"
 description: "Publish and share your bot with teammates in your teams and across your organization."
 keywords: "Publish, channel, Microsoft Teams, Teams"
-ms.date: 9/22/2020
+ms.date: 8/23/2021
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -37,8 +37,9 @@ You can:
 ## Prerequisites
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations-teams.md)]
-- Your organization's [Microsoft Teams app permission policies](/microsoftteams/manage-power-platform-apps) will need to allow Microsoft Power Platform apps to be added to Microsoft Teams before you or other users can directly install the bot in Microsoft Teams or find it in the Microsoft Teams app store **Built by your colleagues** section.  
-    Bots that are approved for the **Built by your organization** section (after submission to an admin) are managed separately by admins in the Microsoft Teams admin center's [Manage apps page](/microsoftteams/submit-approve-custom-apps#validate).
+- You'll need to be familiar with how to [Manage Microsoft Power Platform apps in the Microsoft Teams admin center](/microsoftteams/manage-power-platform-apps).
+  - In particular, you will need to allow Microsoft Power Platform apps to be added to Microsoft Teams before you or other users can directly install the bot in Teams or find it in the **Built by your colleagues** section in the Teams app store.  
+  - Bots that are approved for the **Built by your organization** section (after submission to an admin) are managed separately by admins in the Microsoft Teams admin center's [Manage apps page](/microsoftteams/submit-approve-custom-apps#validate).
 - Before installing the bot for yourself or sharing the bot with others, you should [publish the bot at least once](publication-fundamentals-publish-channels-teams.md).
 
 
@@ -94,7 +95,7 @@ You should add your bot to your own version of Teams before sharing it with othe
     >[!IMPORTANT]
     >Only users who can access the bot can use the installation link to install the bot. You can configure who access it in the [security settings](configuration-security-teams.md) for the bot.
 
-    1. Select **Edit details** to change the bot's icon, color, and descriptions. These will be shown in the search results in the Microsoft Teams app store. [Review the recommendations on Microsoft Teams icon formats](https://review.docs.microsoft.com/microsoftteams/platform/resources/schema/manifest-schema#icons).
+    1. Select **Edit details** to change the bot's icon, color, and descriptions. These will be shown in the search results in the Microsoft Teams app store. [Review the recommendations on Microsoft Teams icon formats](/microsoftteams/platform/resources/schema/manifest-schema#icons).
 
         :::image type="content" source="media/publish-share-to-store.png" alt-text="You can make changes to the icon, background color, and descriptions":::
 
@@ -124,7 +125,7 @@ Once you've published your bot, you can share it with other Microsoft Teams user
 
 You can share your bot with your team by adding it to the Microsoft Teams app store, **Built for *your-organization-name*** > **Built by your colleagues** section. Only your teammates will find the bot there.
 
-:::image type="content" source="media/publish-teams-your-colleagues.png" alt-text="The Built by your colleagues section as at the bottom of the Built for COMPANY NAME section in the Teams app store":::
+:::image type="content" source="media/publish-teams-your-colleagues.png" alt-text="The Built by your colleagues section as at the bottom of the Built for COMPANY NAME section in the Teams app store.":::
 
 1. Go to the **Chatbot** tab.
 
@@ -136,7 +137,7 @@ You can share your bot with your team by adding it to the Microsoft Teams app st
 
 5. Select **Add to Teams**. This will automatically add the bot to the **Built by your colleagues** section, and will show a green label **Added to Teams**.
 
-:::image type="content" source="media/publish-teams-share-flyout-added.png" alt-text="The flyout shows the bot has been added to Teams with a checkmark and green box":::
+:::image type="content" source="media/publish-teams-share-flyout-added.png" alt-text="The flyout shows the bot has been added to Teams with a checkmark and green box.":::
 
 
 >[!NOTE]
@@ -159,7 +160,7 @@ You can remove the bot from showing in the **Built by your colleagues** section.
 
 5. Select **Remove**. This option only appears if you've already added the bot to the **Built by your colleagues** section.
 
-:::image type="content" source="media/publish-teams-share-flyout-remove.png" alt-text="Next to the green box indicating the bot has been Added to Teams you can select Remove":::
+:::image type="content" source="media/publish-teams-share-flyout-remove.png" alt-text="Next to the green box indicating the bot has been Added to Teams you can select Remove.":::
 
 ## Share the bot with your organization
 
@@ -167,7 +168,7 @@ You can remove the bot from showing in the **Built by your colleagues** section.
 You can share the bot with your organization by submitting your bot for admin approval to be featured in the **Built for *your-organization-name*** > **Built by your org** section.
 
 
-:::image type="content" source="media/publish-teams-your-org.png" alt-text="The Built by your org section as at the top of the Built for COMPANY NAME section in the Teams app store":::
+:::image type="content" source="media/publish-teams-your-org.png" alt-text="The Built by your org section as at the top of the Built for COMPANY NAME section in the Teams app store.":::
 
 
 Admins can also [preinstall and pin the bot](/microsoftteams/teams-app-setup-policies) for users in the organization so they can access it directly from their left app bar in Microsoft Teams.  
@@ -254,7 +255,7 @@ You can remove the bot from your list of apps if you no longer want to use it. T
 
 2. Select **Uninstall** and then select **Delete**.
 
-   ![Uninstall the bot](media/channel-teams-delete-channel-teams.png)
+   ![Uninstall the bot.](media/channel-teams-delete-channel-teams.png)
 
 ## Disconnect your bot from Teams
 

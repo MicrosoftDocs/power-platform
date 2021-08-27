@@ -6,6 +6,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/04/2020
+ms.subservice: admin
 ms.author: matp
 search.audienceType: 
   - admin
@@ -43,7 +44,7 @@ search.app:
   
      - Select **Relative URL**. In **Relative URL**, to create a relative document location to the existing site or document location record, select the existing [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site or document location record. In the second box, enter the name of the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] folder.  
   
-   - **Regarding**. Choose the **Lookup** button ![Lookup button](../admin/media/lookup-button-4.png "Lookup button"). In the **Look Up Record** dialog box, in the **Look for** list, select the type of records you want to find. search and select the record for which you want to create the location record and choose **OK**.  
+   - **Regarding**. Choose the **Lookup** button ![Lookup button.](../admin/media/lookup-button-4.png "Lookup button"). In the **Look Up Record** dialog box, in the **Look for** list, select the type of records you want to find. search and select the record for which you want to create the location record and choose **OK**.  
   
 5. Choose **Save and Close**.  
   

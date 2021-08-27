@@ -6,7 +6,8 @@ manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/10/2020
+ms.date: 06/11/2020
+ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -31,7 +32,7 @@ Out-of-the-box tooling around monitoring, alerts, and actions falls into the fol
 
 - The **[Power Platform admin center](https://aka.ms/ppac)** offers an interactive experience for performing administrative tasks. This is typically considered the primary path for completing administrative activities. From a monitoring point of view, this channel is used mostly for ad hoc interactive discovery. Additionally, some admin tasks would need access to [Microsoft 365 (formerly Office 365) admin center](https://admin.microsoft.com/), in addition to the [Office 365 Security and Compliance Center](https://protection.office.com/).
 
-- **[PowerShell cmdlets](../../admin/powerapps-powershell.md#powerapps-cmdlets-for-app-creators-preview)** offer a way to automate both management and monitoring tasks using PowerShell. These cmdlets can be used in a sequence to automate multiple-step administrative actions. Note that Microsoft typically provides capabilities as cmdlets first and then the same capabilities might be offered in the admin center UI or Management and Admin connectors in later releases.
+- **[PowerShell cmdlets](../../admin/powerapps-powershell.md#power-apps-cmdlets-for-app-creators)** offer a way to automate both management and monitoring tasks using PowerShell. These cmdlets can be used in a sequence to automate multiple-step administrative actions. Note that Microsoft typically provides capabilities as cmdlets first and then the same capabilities might be offered in the admin center UI or Management and Admin connectors in later releases.  
 
 - **Management and Admin connectors** offer the ability to use the platform’s own tools to manage and monitor itself. Part of the available 300-plus out-of-the-box connectors and approval process capabilities are five admin-specific connectors:
 
@@ -47,11 +48,11 @@ The [Center of Excellence Starter Kit](../coe/starter-kit.md) offers a template 
 
 The capacity section of analytics allows you to monitor storage capacity use and availability in your tenant. From the all-up view across all the environments, you can drill down into the individual environments for details such as top entity using storage on a timeline view. Sign in to the [Power Platform admin center](https://aka.ms/ppac) and select **Analytics** > **Capacity** in the left-side navigation pane.
 
-![Microsoft Power Platform Capacity Analytics](media/resource-usage1.png "Microsoft Power Platform Capacity Analytics")
+![Microsoft Power Platform Capacity Analytics.](media/resource-usage1.png "Microsoft Power Platform Capacity Analytics")
 
 If your organization has purchased capacity add-ons, an Add-ons tile appears on the Capacity screen in the Power Platform admin center. Sign in to the admin center and select **Analytics** > **Capacity** in the left-side navigation pane. The Add-ons tile shows summary information about the capacity add-ons that your organization has.
 
-![Microsoft Power Platform add-on capacity](media/resource-usage6.png "Microsoft Power Platform add-on capacity")
+![Microsoft Power Platform add-on capacity.](media/resource-usage6.png "Microsoft Power Platform add-on capacity")
 
 As an administrator, you should:
 

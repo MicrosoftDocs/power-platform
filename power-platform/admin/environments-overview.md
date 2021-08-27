@@ -6,7 +6,8 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.custom: intro-internal
-ms.date: 04/06/2021
+ms.date: 06/24/2021
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -38,7 +39,7 @@ When you create an app in an environment, that app is only permitted to connect 
 
 You can also move resources between environments. More information: [Migrate resources](/powerapps/maker/data-platform/export-solutions)
 
-![The Contoso Corporation tenant encompasses three environments, each of which has its own apps, flows, and Dataverse database](./media/environments-overview/Environments.png "The Contoso Corporation tenant encompasses three environments, each of which has its own apps, flows, and Dataverse database")
+![The Contoso Corporation tenant encompasses three environments, each of which has its own apps, flows, and Dataverse database.](./media/environments-overview/Environments.png "The Contoso Corporation tenant encompasses three environments, each of which has its own apps, flows, and Dataverse database")
 
 ## Environment permissions
 Environments have two built-in roles that provide access to permissions within an environment:
@@ -94,8 +95,8 @@ There are multiple types of environments. The type indicates the purpose of the 
 </tr>
 <tr>
 <td width="20%"> Developer</td>
-<td width="50%">  Developer environments are created by users who have the Community Plan license. They're special environments intended only for use by the owner, and they can't be shared with other users. Provisioning developer environments can't be restricted unless through a support ticket. </td>
-<td width="30%">  Only a single user account with the Community Plan has access.</td>
+<td width="50%">  Developer environments are created by users who have the Developer Plan license. They're special environments intended only for use by the owner. Provisioning developer environments can't be restricted unless through a support ticket. Developer environment will be available as long as you actively use the Power Apps Developer Plan. More information: <a href="/powerapps/maker/developer-plan">Power Apps Developer Plan</a></td>
+<td width="30%">  The user with the Developer Plan can choose to add other users as makers. </td>
 </tr>
 <tr>
 <td width="20%"> Microsoft Dataverse for Teams</td>
@@ -126,7 +127,7 @@ You can create environments for different purposes. A trial environment is for t
 You can view and manage your environments on the **Environments** page. 
 
 > [!div class="mx-imgBorder"] 
-> ![Environment list](media/environment-list.png "Environment list")
+> ![Environment list.](media/environment-list.png "Environment list")
 
 You can sort and search the list of environments; this is useful if you have a large number of environments to manage.
 
@@ -135,12 +136,12 @@ You can sort and search the list of environments; this is useful if you have a l
 You can see some the details of your environments by selecting an environment. Select **See all** to see more environment details.
 
 > [!div class="mx-imgBorder"] 
-> ![Environment details](media/environment-details-see-all.png "Environment details")
+> ![Environment details.](media/environment-details-see-all.png "Environment details")
 
 Select **Edit** to review and edit environment details.
 
 > [!div class="mx-imgBorder"] 
-> ![More environment details](media/environment-details-more.png "More environment details")
+> ![More environment details.](media/environment-details-more.png "More environment details")
 
 ### See also
 [Microsoft Learn: Create and manage environments in Dataverse](/learn/modules/create-manage-environments/)<br />

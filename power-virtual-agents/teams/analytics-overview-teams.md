@@ -47,7 +47,7 @@ The analytics section is divided into a number of pages to give you multiple way
 
 * In Power Virtual Agents, select **Analytics** on the side navigation pane.
 
-  ![Opening the Analytics dashboard](media/analytics-nav.png "Opening the Analytics dashboard")
+  ![Opening the Analytics dashboard.](media/analytics-nav.png "Opening the Analytics dashboard")
 
 
 

@@ -1,12 +1,13 @@
 ---
 title: "Use email message filtering and correlation to specify which emails are tracked   | MicrosoftDocs"
 description: Use Email message filtering and correlation to specify which emails are tracked. 
-author: jimholtz
+author: mduelae
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/30/2021
-ms.author: jimholtz
+ms.subservice: admin
+ms.author: mkaur
 search.audienceType: 
   - admin
 search.app:
@@ -78,7 +79,7 @@ In the email **To** field, all of the records of email-enabled tables with the e
 ### Tracking token structure  
  By default, customer engagement apps uses the following token structure, that consists of a 4 character prefix and a 7 digit identifier.  
 
- ![Tracking token structure](../admin/media/tracking-token.png "Tracking token structure")  
+ ![Tracking token structure.](../admin/media/tracking-token.png "Tracking token structure")  
 
  The following table lists tracking token parts and descriptions.  
 
