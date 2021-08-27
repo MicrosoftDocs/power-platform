@@ -1,5 +1,5 @@
 ---
-title: "Manage your maintenance window  | MicrosoftDocs"
+title: "Preview: Manage your maintenance window  | MicrosoftDocs"
 description: How to manage when you'll receive service updates.
 author: jimholtz
 ms.author: jimholtz
@@ -16,7 +16,9 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Manage your maintenance window 
+# Preview: Manage your maintenance window 
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Microsoft regularly performs updates and maintenance on customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation) to ensure security, performance, availability, and to provide new features and functionality. This update process delivers security and minor service improvements on a weekly basis, with each update rolling out region-by-region according to a safe deployment schedule, arranged in [Stations](/dynamics365/released-versions/dynamics-365ce). For information about your default maintenance window for Dynamics 365 environments, see [Policies and Communications for service incidents](policies-communications.md).
 

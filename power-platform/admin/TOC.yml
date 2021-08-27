@@ -118,7 +118,7 @@
           href: opt-in-early-access-updates.md
         - name: General availability deployment
           href: general-availability-deployment.md
-        - name: Manage your maintenance window
+        - name: Preview: Manage your maintenance window
           href: manage-maintenance-window.md
       - name: Manage settings 
         items:
