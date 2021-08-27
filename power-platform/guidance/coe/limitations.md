@@ -167,4 +167,9 @@ Model Driven Apps that are not published are not surfaced in the inventory becau
 
 Desktop Flows that are large are not surfaced in the inventory because one of the fields returned is too big for the flows.  This is a product limitation that will be fixed when the new Dataverse connector allows us to select environments. 
 
+## Missing Custom Connectors
+
+We are able to collect only the intersect of all custom connectors outside of solutions, and all custom connectors to which you have access. <br>
+As a result, custom connectors in a solution, to which the identity running the sync flows do not have access, will not show up in the inventory.
+
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
