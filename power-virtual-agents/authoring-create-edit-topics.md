@@ -76,15 +76,7 @@ You can edit both of these topic types in the same manner as for topics you crea
 
 1. Select **Save topic** to add the topic to the topics list.
 
-### Use subtopics to manage your bot's conversation path
 
-If you have a complex topic, it might be easier to split it into several smaller, "subtopics". These operate just like normal topics, except they run within the context of the originating topic. This means when the conversation path is finished in the subtopic, it returns to the place where it left from in the originating topic. 
-
-For example, say you had a topic that responded to when users ask for the best places to eat in a city. Within that topic, you might want to ask follow-up questions to determine the type of food they want, where abouts in the city (North, South, etc.), or the price range. You could design a conversation path that included all these follow-up questions in the one topic, but it could become long and convoluted and be hard to follow from an admin perspective.
-
-Instead, you can split each follow-up question to call a subtopic. Any variables you assign within the subtopic will be available within the parent topic, so you could branch off into a subtopic to determine what type of food they want, fill that as a variable, and then  return back to the original topic to continue asking the other follow up questions. You could then call the type of food variable either in the parent topic, or use it in the subtopic about where they want to eat so you only return restaurants that serve that type of food.
-
-To use subtopics, first enable xxxxx
 
 ## Design the topic's conversation path
 
@@ -116,12 +108,13 @@ When adding a node after the **Trigger Phrases** node, or between **Message node
 - **Ask a question**
 - **Call an action**
 - **Show a message**
+- **Go to another topic**
 
 :::image type="content" source="media/topics-node-after-triggers.png" alt-text="Add nodes between existing nodes from the options":::
 
 After the last node, you can also:
 
-- **Go to another topic**
+
 - **End the conversation**
 
 
@@ -185,13 +178,23 @@ You can [call Power Automate Flows](advanced-flow.md) and [insert authentication
 
     :::image type="content" source="teams/media/topics-nodes-other-topic-flyout-teams.png" alt-text="Go to another topic node with options for other topics":::
     
-You can also have the bot go to a "subtopic", which can be thought of as a mini topic. When the bot conversation reaches this point in the conversation, it will automatically go to the other topic, follow that topic's conversation path, and then return back to the same place it left the original topic's conversation path:
+When you insert a link to go to another topic, the bot will go through the conversation path for that topic. 
 
-1. [Create your subtopic as a normal topic](#).
+You can consider the redirected topic as a "subtopic". 
 
-2. Open the the topic from where you want to redirect to the subtopic.
+When the path for the subtopic is finished, the bot will return to the original topic, at the place where it left. If you redirect to a system topic, however, the entire conversation will end.
 
-3. Under the node where you want to redirect to the subtopic, select the **+** icon, and then **XXX**.
+Subtopics are run within the context of the original topic, which means any variables that are filled in as part of the subtopic will be usable in the original topic.
+
+For example, say you had a topic that responded to when users ask for the best places to eat in a city. Within that topic, you might want to ask follow-up questions to determine the type of food they want, where in the city, or the price range. 
+
+You could design a conversation path in a single topic that included all these follow-up questions, but it could become long and convoluted and be hard to follow from an admin perspective.
+
+Instead, you can split each follow-up question to call a subtopic. Any variables you assign within the subtopic will be available within the parent topic, so you could branch off into a subtopic to determine what type of food they want, fill that as a variable, and then  return back to the original topic to continue asking the other follow-up questions. 
+
+You could then call the type of food variable either in the parent topic, or use it in the subtopic about where they want to eat so you only return restaurants that serve that type of food.
+
+
 
 #### End the conversation
 
