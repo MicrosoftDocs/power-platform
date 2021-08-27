@@ -2,7 +2,7 @@
 title: "Use topics to design a chatbot conversation in Microsoft Teams"
 description: "Use the authoring canvas in the Power Virtual Agents app in Microsoft Teams to create an end-to-end conversation."
 keywords: "PVA, authoring canvas, conversation"
-ms.date: 9/22/2020
+ms.date: 8/27/2021
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -216,7 +216,7 @@ If you redirect to any of the following [system topics](#use-system-and-sample-t
 - Confirmed Failure
 - Goodbye
 - Escalate
-- Start over (this will also reset any [global variables](authoring-variables-bot-teams.md)
+- Start over (this will also reset any [global variables](authoring-variables-bot-teams.md))
 
 
 
