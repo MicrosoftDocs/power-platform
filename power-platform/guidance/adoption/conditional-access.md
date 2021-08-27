@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/09/2020
+ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -31,7 +32,7 @@ By using Conditional Access policies, you can apply the right access controls wh
 
 Only *Global Admins* can configure Conditional Access policies. This isn't available for Microsoft Power Platform or Dynamics 365 admins.
 
-![Conceptual Conditional Access process flow](media/conditional-access.png "Conceptual Conditional Access process flow")
+![Conceptual Conditional Access process flow.](media/conditional-access.png "Conceptual Conditional Access process flow")
 
 To learn how to set up Conditional Access policies, see [Plan a Conditional Access deployment](/azure/active-directory/conditional-access/plan-conditional-access).
 

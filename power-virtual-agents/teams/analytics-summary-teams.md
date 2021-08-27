@@ -40,7 +40,7 @@ To change the time period to the last 30 days, select **Last 30 days** from the 
 
 ## Summary charts
 
-![Summary charts](media/summary-charts-teams.png)
+![Summary charts.](media/summary-charts-teams.png)
 
 The Summary charts summarize the how well your bot is doing based on different measurements, described in this table:
 
@@ -51,7 +51,7 @@ Engagement rate | The percentage of total sessions that are engaged sessions. An
 Resolution rate | The percentage of engaged sessions that are resolved. A resolved session is an engaged session in which the user receives an end-of-conversation survey that asks the question *"Did that answer your question?"* and the user either does not respond or responds *Yes*.
 Escalation rate | The percentage of engaged sessions that are escalated. An escalated session is an engaged session that is escalated to a human agent.
 Abandon rate | The percentage of engaged sessions that are abandoned. An abandoned session is an engaged session that is neither resolved nor escalated after one hour from the beginning of the session.
-CSAT | The graphical view of the average of CSAT scores for sessions in which customers respond to an end-of-session request to take the survey.
+CSAT | The graphical view of the average of customer satisfaction (CSAT) scores for sessions in which customers respond to an end-of-session request to take the survey.
 
 A blue up-and-down indicator next to the value indicates the percent change in a positive direction. A red indicator indicates the percent change in a negative direction.
 

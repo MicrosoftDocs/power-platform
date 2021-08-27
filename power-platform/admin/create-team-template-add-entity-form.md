@@ -2,6 +2,7 @@
 title: "Create a team template and add to an entity form  | MicrosoftDocs"
 description: Create a team template and add to an entity form
 author: paulliew
+ms.subservice: admin
 ms.author: paulliew
 ms.reviewer: jimholtz
 ms.custom: "admin-security"

@@ -1,11 +1,12 @@
 ---
-title: "Videos  | MicrosoftDocs"
-description: Videos and PowerPoint presentations 
+title: "Helpful videos and PowerPoint presentations"
+description: "For tips, best practices, and updates related to Microsoft Power Platform, this page provides links to videos and PowerPoint presentations on various topics."
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/18/2021
+ms.date: 08/11/2021
+ms.subservice: admin
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -15,10 +16,13 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Videos and PowerPoint presentations
+# Videos and PowerPoint presentations 
 
 |Topic  |Video  |PowerPoint  |
 |---------|---------|---------|
+| Administer application users, security roles, teams, and users in the Power Platform admin center | [Video](https://www.microsoft.com/en-us/videoplayer/embed/RWJBr8) |   |
+| Adding users to Dataverse    | [Video](https://www.microsoft.com/videoplayer/embed/RWJBra)  |   |
+| Assigning security roles in the Power Platform admin center   | [Video](https://www.microsoft.com/videoplayer/embed/RWJBr6)  |   |
 | Azure Active Directory group membership  |  [Video](https://youtu.be/GW2Rz53BX6o)  | |
 | Check user's access to a record using the Check Access feature  |  [Video](https://youtu.be/rigZ1FvrgSY) |  |
 |Top 10 tips to securely roll out Microsoft Power Apps and Microsoft Power Automate |[Video](https://youtu.be/BnolkTK2Sng) | [Deck](https://medius.studios.ms/video/asset/PPT/MBAS19-BRK2005) |

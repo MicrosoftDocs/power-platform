@@ -5,7 +5,8 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/04/2020
+ms.date: 06/21/2021
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -58,21 +59,23 @@ Make sure you have the System Administrator or System Customizer security role o
  
 1. Select an environment and go to **Settings** > **Users + permissions** > **Business units**.
  
+   For [Unified Interface](about-unified-interface.md), select Settings (![Gear button.](../admin/media/selection-rule-gear.png "Gear button")) in the upper-right corner > **Advanced Settings** > **Settings** > **Security** > **Business Units**.
+
 2. On the Actions bar, select **New**.  
   
 3. In the **Business Unit** dialog box, type a name for the new business unit. Customer engagement apps automatically fills in the **Parent Business** field with the name of the root business unit.  
   
-4. If you want to change the parent business unit, select the **Lookup** button (![Lookup button](media/lookup-4.png)), **Look Up More Records**, and then do one of the following:  
+4. If you want to change the parent business unit, select the **Lookup** button (![Lookup button.](media/lookup-4.png)), **Look Up More Records**, and then do one of the following:  
   
-   -   Select an existing business unit from the list. 
+   - Select an existing business unit from the list. 
   
-   -   Create a new parent business unit:  
+   - Create a new parent business unit:  
   
-       1.  Choose **New**, and then add the information for the new parent business unit in the **Business Unit** dialog box.  
+     1. Choose **New**, and then add the information for the new parent business unit in the **Business Unit** dialog box.  
   
-       2.  When you’re done adding information, select **Save and Close**.  
+     2. When you’re done adding information, select **Save and Close**.  
   
-       3.  In the **Look Up Record** dialog box, select **Add**.  
+     3. In the **Look Up Record** dialog box, select **Add**.  
   
 5. In the **Business Unit** dialog box, fill in any of the other optional fields, such as the Division, Website, contact information, or addresses.  
   
@@ -82,13 +85,15 @@ Make sure you have the System Administrator or System Customizer security role o
   
 1. Select an environment and go to **Settings** > **Users + permissions** > **Business units**.
   
+   For [Unified Interface](about-unified-interface.md), select Settings (![Gear button.](../admin/media/selection-rule-gear.png "Gear button")) in the upper-right corner > **Advanced Settings** > **Settings** > **Security** > **Business Units**.
+
 2. Select a business unit name.  
   
 3. In the **Business Unit** dialog box, do one or more of the following:  
   
-   -   Modify the data in one or more fields.  
+   - Modify the data in one or more fields.  
     
-   -   Select a record type under **Organization** to see a list of related records. For example, select **Users** to view a list of users in the selected business unit.  
+   - Select a record type under **Organization** to see a list of related records. For example, select **Users** to view a list of users in the selected business unit.  
   
 4. When you’re done making changes select **Save and Close**.  
 
@@ -99,11 +104,13 @@ Make sure you have the System Administrator or System Customizer security role o
   
 1. Select an environment and go to **Settings** > **Users + permissions** > **Users**.
   
-2. Select a user name.  
+   For [Unified Interface](about-unified-interface.md), select Settings (![Gear button.](../admin/media/selection-rule-gear.png "Gear button")) in the upper-right corner > **Advanced Settings** > **Settings** > **Security** > **Users**.
+
+2. Select the checkbox for a user name.  
   
-3. On the **More Commands** (**…**) menu, select **Change Business Unit**.  
+3. On the menu bar, select **Change Business Unit**.  
   
-4. In the **Change Business Unit** dialog box, use the **Lookup** button (![Lookup button](media/lookup-4.png)) to select a new business unit, and then select **OK**.  
+4. In the **Change Business Unit** dialog box, use the **Lookup** button (![Lookup button.](media/lookup-4.png)) to select a new business unit, and then select **OK**.  
   
 ### See also  
  [Delete a business unit](delete-business-unit.md)   

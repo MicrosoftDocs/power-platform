@@ -6,6 +6,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/08/2020
+ms.subservice: admin
 ms.author: matp
 search.audienceType: 
   - admin
@@ -20,7 +21,7 @@ search.app:
 Document management with SharePoint lets users manage common document types, such as Word, Excel, PowerPoint, OneNote, and create folders to save and manage those documents in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), that are seamlessly stored in [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)]. 
 
 > [!div class="mx-imgBorder"] 
-> ![Document management and SharePoint](media/sp-ce-doc-management.png "Document management and SharePoint")
+> ![Document management and SharePoint.](media/sp-ce-doc-management.png "Document management and SharePoint")
 
 > [!NOTE]
 > The document management feature isn't supported for users with Power Apps for Microsoft 365 licenses. These users should upgrade to the appropriate licensing. More information: [Compare Office 365 for Business Plans](https://www.microsoft.com/en-us/microsoft-365/business/compare-more-office-365-for-business-plans) 

@@ -6,6 +6,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
 ms.date: 04/28/2020
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin 
@@ -17,7 +18,7 @@ search.app:
 ---
 # User settings
 
-See [Create users and assign security roles](create-users-assign-online-security-roles.md).
+See [Create users](create-users.md).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
 

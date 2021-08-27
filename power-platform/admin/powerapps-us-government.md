@@ -5,7 +5,8 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/01/2021
+ms.date: 07/07/2021
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -154,17 +155,17 @@ For those customers that implement network restrictions, ensure access to the fo
 *.powerapps.us<br/>
 *.azure-apihub.us<br/>
 *.azure.us<br/>
-*. usgovcloudapi.net<br/>
+*.usgovcloudapi.net<br/>
 *.microsoftonline.com<br/>
-*. microsoft.com<br/>
+*.microsoft.com<br/>
 *.windows.net<br/>
-*. azureedge.net<br/>
-*. azure.net<br/>
-*.crm9.dynamics.com (DoD)<br/>
-*.dynamics365portals.us (DoD)
+*.azureedge.net<br/>
+*.azure.net<br/>
+*.crm9.dynamics.com<br/>
+*.dynamics365portals.us
 
 
-Also, refer to the [Required IP Ranges](https://www.microsoft.com/download/confirmation.aspx?id=57063) to enable access to Dataverse environments that users and administrators may create within your tenantas well as other Azure services leveraged by the platform:
+Also, refer to the [Required IP Ranges](https://www.microsoft.com/download/confirmation.aspx?id=57063) to enable access to Dataverse environments that users and administrators may create within your tenants well as other Azure services leveraged by the platform:
 
 - GCC and GCC High: (Focus on AzureCloud.usgovtexas and AzureCloud.usgovvirginia)
 - DoD:  Focus on USDoD East and USDoD Central 
@@ -175,14 +176,17 @@ Also, refer to the [Required IP Ranges](https://www.microsoft.com/download/confi
 *.powerapps.us<br/>
 *.azure-apihub.us<br/>
 *.azure.us<br/>
-*. usgovcloudapi.net<br/>
+*.usgovcloudapi.net<br/>
 *.microsoftonline.us<br/>
-*. azureedge.net<br/>
-*. azure.net<br/>
+*.azureedge.net<br/>
+*.azure.net<br/>
+*.azureedge.us<br/>
+*.microsoftdynamics.us (GCC High)<br/>
 *.crm.microsoftdynamics.us (GCC High)<br/>
 *.high.dynamics365portals.us (GCC High)<br />
+*.appsplatform.us (DoD)<br/>
 *.crm.appsplatform.us (DoD) <br />
-*.appsplatformportals.us (DoD) <br />
+*.appsplatformportals.us (DoD) 
 
 Also, refer to the [Required IP Ranges](https://www.microsoft.com/download/confirmation.aspx?id=57063) to enable access to Dataverse environments that users and administrators may create within your tenant as well as other Azure services leveraged by the platform:
 
@@ -237,7 +241,7 @@ Some of the features available in the commercial version of Power Apps are not a
 
 - [Connectors](https://gov.flow.microsoft.us/connectors/): The most popular connectors in use in our commercial service (based on usage telemetry) have been published; if there is a connector available in the commercial offering that you do not see deployed, contact support, and we will review your request. Note that third-party connectors will not be added to GCC High or DoD.  Features are being investigated with the Digital Loss Prevention (DLP) administration functionality that will enable Connectors to be added “blocked by default.”  Until this is possible, third-party connectors pose a measurable threat to organizations relying on the GCC High environment to maintain requisite data exfiltration controls.
 
-- [AI Builder](/ai-builder/).
+- [AI Builder](/ai-builder/) is not available in DoD.
 - [Geospatial features](/powerapps/maker/canvas-apps/geospatial-overview) are not available in government environments.
 
 ## Requesting support

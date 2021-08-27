@@ -3,13 +3,14 @@ title: "Control user access to environments: security groups and licenses | Micr
 description: Learn how to control user access to environments using security groups and licenses
 services: powerapps
 author: paulliew
+ms.subservice: admin
 ms.author: paulliew
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/23/2021
+ms.date: 07/20/2021
 search.audienceType: 
   - admin
 search.app:
@@ -63,7 +64,7 @@ Note the following about security groups:
 -->
 
 > [!NOTE]
-> All licensed users, whether or not they are members of the security groups, must be assigned security roles to access environments. You assign the security roles in the web application. Users can't access environments until they are assigned at least one security role for that environment. For more information, see [Configure environment security](database-security.md).
+> All licensed users, whether or not they are members of the security groups, must be assigned security roles to access data in the environments. You assign the security roles in the web application.  If users don’t have a security role, they will get a data access denied error when trying to run an app. Users can't access environments until they are assigned at least one security role for that environment. For more information, see [Configure environment security](database-security.md).
   
 ## Create a security group and add members to the security group  
 
@@ -104,24 +105,24 @@ Or, purchase and assign per app passes: [About Power Apps per app plans](about-p
 2. In the navigation pane, select **Environments**, select an environment, and then select **Edit**.  
   
    > [!div class="mx-imgBorder"] 
-   > ![Select Edit](media/edit-environment.png "Select Edit")
+   > ![Select Edit.](media/edit-environment.png "Select Edit")
 
-3. In the **Edit details** page, select **Edit** (![Edit](media/edit-button.png)).
+3. In the **Edit details** page, select **Edit** (![Edit.](media/edit-button.png)).
   
    > [!div class="mx-imgBorder"] 
-   > ![Edit security group](media/edit-security-group.png "Edit security group")
+   > ![Edit security group.](media/edit-security-group.png "Edit security group")
 
    Only the first 200 security groups will be returned and selectable by default. To select additional security groups, use **Search** to look for a specific security group.
 
 4. Select a security group, select **Done**, and then select **Save**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Select a security group](media/edit-security-group-select.png "Select a security group")
+   > ![Select a security group.](media/edit-security-group-select.png "Select a security group")
 
 The security group is associated with the environment.
 
    > [!div class="mx-imgBorder"] 
-   > ![Security group added](media/security-group-added.png "Security group added")
+   > ![Security group added.](media/security-group-added.png "Security group added")
 
 ## Remove a security group's association with a Dataverse environment
 
@@ -130,19 +131,19 @@ The security group is associated with the environment.
 2. In the navigation pane, select **Environments**, select an environment, and then select **Edit**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Edit environment](media/edit-environment.png "Edit environment")
+   > ![Edit environment.](media/edit-environment.png "Edit environment")
 
-3. In the **Settings** page, select **Delete** (![Delete](media/nb-ua-r1-trashbin.png)).  
+3. In the **Settings** page, select **Delete** (![Delete.](media/nb-ua-r1-trashbin.png)).  
 
    > [!div class="mx-imgBorder"] 
-   > ![Select Delete](media/delete-security-group.png "Select Delete")
+   > ![Select Delete.](media/delete-security-group.png "Select Delete")
 
 4. Confirm removal, select **Remove**, and then select **Save**.
 
 The security group associated with the environment will be removed and the environment's access will no longer be restricted to only users that are members of that group.
 
 ### See also
-[Create users and assign security roles](create-users-assign-online-security-roles.md)
+[Create users](create-users.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

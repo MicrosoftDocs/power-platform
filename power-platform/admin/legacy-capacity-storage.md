@@ -1,11 +1,12 @@
 ---
 title: "Legacy storage capacity  | MicrosoftDocs"
 description: About the legacy storage model.
-ms.date: 04/27/2021
+ms.date: 06/08/2021
 ms.reviewer: ""
 ms.service: "power-platform"
 ms.topic: "quickstart"
 author: "jimholtz"
+ms.subservice: admin
 ms.author: "jimholtz"
 search.audienceType: 
   - admin
@@ -48,7 +49,7 @@ To see whether you have any of these licenses, sign in to the Microsoft 365 admi
 The legacy licensing storage model looks like the following image.
 
 > [!div class="mx-imgBorder"] 
-> ![Legacy licensing storage model](media/capacity-old-license-model.png "Legacy licensing storage model")
+> ![Legacy licensing storage model.](media/capacity-old-license-model.png "Legacy licensing storage model")
 
 The report displays available storage capacity by source in addition to overall storage capacity usage. To help customers transition to the new licensing model, current usage is also shown by database, file, and log capacity.
 
@@ -64,7 +65,7 @@ This page provides a tenant-level view of where your organization is using stora
 To view the **Summary** page, select **Resources** > **Capacity** > **Summary** tab.
 
 > [!div class="mx-imgBorder"] 
-> ![Capacity storage details](media/capacity-old-license-model-explained.png "Capacity storage details")
+> ![Capacity storage details.](media/capacity-old-license-model-explained.png "Capacity storage details")
 
 All tables of Dataverse, including system tables, are included in the storage capacity reports.
 
@@ -87,10 +88,10 @@ Note the following features:
 |---------|---------|
 |Download     | Select **Download** above the list of environments to download an Excel .CSV file with high-level storage information for each environment that the signed-in admin has permission to see in the Power Platform admin center.        |
 |Search     | Use **Search** to search by the environment name and the environment type.         |
-|Details  | See the next section for using the **Details** button (![Storage data details button](media/storage-data-details-button.png "Storage data details button")) to see environment capacity analytics.   |
+|Details  | See the next section for using the **Details** button (![Storage data details button.](media/storage-data-details-button.png "Storage data details button")) to see environment capacity analytics.   |
 
 > [!div class="mx-imgBorder"] 
-> ![Dataverse capacity tab](media/capacity-old-license-model-storage-tab.png "Dataverse capacity tab")
+> ![Dataverse capacity tab.](media/capacity-old-license-model-storage-tab.png "Dataverse capacity tab")
 
 > [!NOTE]
 > - The following environments don't count against capacity and are shown as 0 GB:
@@ -103,10 +104,10 @@ Note the following features:
 
 #### Environment storage capacity details
 
-Select the **Details** button (![Storage data details button](media/storage-data-details-button.png "Storage data details button")) on the **Summary** tab view to see  an environment-level detailed view of where your organization is using capacity, in addition to the three types of capacity consumption. 
+Select the **Details** button (![Storage data details button.](media/storage-data-details-button.png "Storage data details button")) on the **Summary** tab view to see  an environment-level detailed view of where your organization is using capacity, in addition to the three types of capacity consumption. 
 
 > [!div class="mx-imgBorder"] 
-> ![Environment capacity analytics](media/capacity-old-license-model-storage-details.png "Environment capacity analytics")
+> ![Environment capacity analytics.](media/capacity-old-license-model-storage-details.png "Environment capacity analytics")
 
 The following details are provided:
 
@@ -162,9 +163,12 @@ We're making changes for what happens when an organization's storage capacity is
 
 Notifications for capacity approaching storage limits will be triggered when any of total legacy model storage has less than 15% of space available.  Another warning notification that admin operations could be impacted will be sent when total legacy model capacity has less than 5% of space available.  The final tier of notification will trigger when the tenant is ‘in overage’ (storage usage exceeds capacity entitlements), which will alert the admin that the operations below will no longer be available until the overage is resolved.
 
-- Create new environment (requires minimum 1GB capacity available)
-- Copy an environment (requires minimum 1GB capacity available)
-- Restore an environment (requires minimum 1GB capacity available)
+- Create a new environment (requires minimum 1GB capacity available)
+- Copy an environment
+- Restore an environment
+- Convert a trial environment to paid (requires minimum 1GB capacity available)
+- Recover an environment (requires minimum 1GB capacity available)
+- Add Dataverse database to an environment
 
 These notifications are sent out to tenant admins on a weekly basis. At this time, there is no option for the tenants to opt-out of these notifications or delegate these notifications to someone else. All tenant admins for a tenant will automatically receive these notifications.
 

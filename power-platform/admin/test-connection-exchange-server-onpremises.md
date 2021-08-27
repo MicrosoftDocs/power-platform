@@ -6,8 +6,9 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/13/2021
 author: revachauhan
+ms.subservice: admin
 ms.author: rechauha
-ms.reviewer: jimholtz
+ms.reviewer: mkaur
 search.audienceType: 
   - admin
 search.app:
@@ -22,7 +23,7 @@ The following guidance is for those having issues with connecting customer engag
 
 Dynamics 365 is hosted on Microsoft Azure. During configuration, server-side sync will try to initiate an HTTP connection to the Exchange Web Services (EWS) endpoint configured by the customer on the email server profile associated to the mailbox. The EWS endpoint is an internet-facing HTTP accessible resource which can be accessed from outside the customer network.
 
-![Scenario for troubleshooting connection issues](media/troubleshooting-scenario.png "Scenario for troubleshooting connection issues")
+![Scenario for troubleshooting connection issues.](media/troubleshooting-scenario.png "Scenario for troubleshooting connection issues")
 
 ## Determine if the issue is with Dynamics 365
 
@@ -50,7 +51,7 @@ To help diagnose the problem, let's first eliminate the connection to Exchange S
 
 3. Fill in remaining values as appropriate and select **Perform Test**.
 
-   :::image type="content" source="media/remote-connectivity-analyzer.png" alt-text="Microsoft Remote Connectivity Analyzer":::
+   :::image type="content" source="media/remote-connectivity-analyzer.png" alt-text="Microsoft Remote Connectivity Analyzer.":::
 
 ### Test results
 

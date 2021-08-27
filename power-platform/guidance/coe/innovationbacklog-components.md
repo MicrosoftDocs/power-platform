@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 12/14/2020
+ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -52,7 +53,7 @@ Ideas and information, such as pain points, personas, measures, and tools used, 
 
 View an entity relationship diagram of the tables used for the Innovation Backlog app:
 
-![Innovation Backlog entity relationship diagram](media/ib-27.png "Innovation Backlog entity relationship diagram")
+![Innovation Backlog entity relationship diagram.](media/ib-27.png "Innovation Backlog entity relationship diagram")
 
 ## Flows
 
@@ -74,7 +75,7 @@ A canvas app that the Innovation Backlog admin uses to update icons for non-soft
 
 **Prerequisite**: This app uses Dataverse; a Premium license is therefore required for every app user.
 
-![Innovation Backlog Admin app](media/ib-11.png "Innovation Backlog Admin app")
+![Innovation Backlog Admin app.](media/ib-11.png "Innovation Backlog Admin app")
 
 ### Innovation Backlog app
 
@@ -84,7 +85,7 @@ A canvas app that is used to share and vote on ideas, describe pain points and a
 
 **Prerequisite**: This app uses Dataverse; a Premium license is therefore required for every app user.
 
-![Innovation Backlog app](media/ib-12.png "Innovation Backlog app")
+![Innovation Backlog app.](media/ib-12.png "Innovation Backlog app")
 
 More information: [Use the Innovation Backlog app](use-innovationbacklog.md)
 
