@@ -254,7 +254,7 @@ By default, all licensed users are created with an access mode of **Read-Write**
 
 **To update the access mode of a user**
 
-1. In the Power Platform admin center, select an environment, and go to **Settings** > **User's + permissions** > **Users**.
+1. In the Power Platform admin center, select an environment, and go to **Settings** > **Users + permissions** > **Users**.
   
 2. Select **Enabled Users**, and then select a user's full name.  
   
@@ -285,7 +285,7 @@ You need to have the System Administrator security role or equivalent permission
   
   Wait for the user to sync to the environments.
 
-6. In the Power Platform admin center, select an environment, and go to **Settings** > **User's + permissions** > **Users**.
+6. In the Power Platform admin center, select an environment, and go to **Settings** > **Users + permissions** > **Users**.
   
 7. Select **Enabled Users**, and then select a user's full name.  
   
@@ -310,7 +310,7 @@ You need to have the System Administrator security role or equivalent permission
   
    Be sure to assign a license to the account.  
   
-2. In the Power Platform admin center, select an environment, and go to **Settings** > **User's + permissions** > **Users**.
+2. In the Power Platform admin center, select an environment, and go to **Settings** > **Users + permissions** > **Users**.
   
 3. Select **Enabled Users**, and then select a user's full name.  
   
@@ -360,7 +360,7 @@ A default security role is automatically assigned to these imported users. The *
 
 When you create a new user or update an existing user in Dynamics 365 Customer Engagement (on-premises), some fields in the user records, such as name and phone number, are populated with the information obtained from Active Directory Domain Services (AD DS). After the user record is created, no further synchronization occurs between Azure AD user accounts and customer engagement apps user records. If you make changes to the Azure AD user account, you must manually edit the user record to reflect the changes.
 
-1. In the Power Platform admin center, select an environment, and go to **Settings** > **User's + permissions** > **Users**.
+1. In the Power Platform admin center, select an environment, and go to **Settings** > **Users + permissions** > **Users**.
 
 2. In the list, select the user record you want to update, and then select **Edit**.
 
