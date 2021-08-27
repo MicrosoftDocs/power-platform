@@ -205,9 +205,20 @@ When you end the conversation, you can have a survey appear that asks the user i
 
 When the bot goes to another topic, the bot will go through the conversation path for that topic and then return to the original topic, at the place where it left.
 
-If you redirect to a system topic, however, the entire conversation will end.
-
 You can consider the redirected topic as a "subtopic". 
+
+:::image type="content" source="/media/authoring-create-edit-topics/authoring-subtopic-redirect-teams.png" alt-text="Screenshot of the authoring canvas showing nodes under a redirected topic node.":::
+
+If you redirect to any of the following [system topics](#use-system-and-sample-topics), however, the entire conversation will end:
+
+- End of Conversation
+- Confirmed Success
+- Confirmed Failure
+- Goodbye
+- Escalate
+- Start over (this will also reset any [global variables](authoring-variables-bot-teams.md)
+
+
 
 
 ### Delete nodes

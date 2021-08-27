@@ -183,17 +183,24 @@ When you insert a link to go to another topic, the bot will go through the conve
 
 You can consider the redirected topic as a "subtopic". 
 
-When the path for the subtopic is finished, the bot will return to the original topic, at the place where it left. If you redirect to a system topic, however, the entire conversation will end.
+ 
 
-Subtopics are run within the context of the original topic, which means any variables that are filled in as part of the subtopic will be usable in the original topic.
+In the authoring canvas for the original topic, you can insert additional nodes under the subtopic's node. T
 
-For example, say you had a topic that responded to when users ask for the best places to eat in a city. Within that topic, you might want to ask follow-up questions to determine the type of food they want, where in the city, or the price range. 
+When the path for the subtopic is finished, the bot will return to the original topic. The bot will then follow the nodes that are under the subtopic's node.
 
-You could design a conversation path in a single topic that included all these follow-up questions, but it could become long and convoluted and be hard to follow from an admin perspective.
+:::image type="content" source="/media/authoring-create-edit-topics/authoring-subtopic-redirect.png" alt-text="Screenshot of the authoring canvas showing nodes under a redirected topic node.":::
 
-Instead, you can split each follow-up question to call a subtopic. Any variables you assign within the subtopic will be available within the parent topic, so you could branch off into a subtopic to determine what type of food they want, fill that as a variable, and then  return back to the original topic to continue asking the other follow-up questions. 
+If you redirect to any of the following [system topics](#use-system-and-sample-topics), however, the entire conversation will end:
 
-You could then call the type of food variable either in the parent topic, or use it in the subtopic about where they want to eat so you only return restaurants that serve that type of food.
+- End of Conversation
+- Confirmed Success
+- Confirmed Failure
+- Goodbye
+- Escalate
+- Start over (this will also reset any [global variables](authoring-variables-bot.md)
+
+
 
 
 #### End the conversation
