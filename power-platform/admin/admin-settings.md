@@ -27,7 +27,7 @@ Settings for the selected environment can be managed here.
 ![Environment settings.](media/environment-settings.png)
 
 ## Environment settings are moving
-Across organization admin settings are gradually moving from the web client to the Power Platform admin center. Until the move to the Power Platform admin center is complete, you’ll still be able to manage settings in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), as usual.
+Across organization admin settings are gradually moving from the web client to the Power Platform admin center, Apps with unified interface, or Power Apps. Meanwhile, you’ll still be able to manage settings in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), as usual.
 
 Many of these settings...
 
@@ -50,9 +50,11 @@ These security settings are now managed in the Power Platform admin center.
 - [Dataverse teams management](manage-teams.md)
 - [Assign security roles to users in an environment that has a Dataverse database](database-security.md#assign-security-roles-to-users-in-an-environment-that-has-a-dataverse-database)
 
-## App settings 
+## App settings in unified interface
 
 Getting to app feature settings can vary based on the type of app you're using.
+
+
 
 ### Settings in Unified Interface apps
 
