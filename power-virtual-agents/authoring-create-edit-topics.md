@@ -2,7 +2,7 @@
 title: "Use topics to design a chatbot conversation"
 description: "The authoring canvas provides an intuitive, no-code way of creating a bot that can help answer user questions, perform actions, and solve issues."
 keywords: "PVA"
-ms.date: 5/4/2021
+ms.date: 8/27/2021
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -77,6 +77,7 @@ You can edit both of these topic types in the same manner as for topics you crea
 1. Select **Save topic** to add the topic to the topics list.
 
 
+
 ## Design the topic's conversation path
 
 1. In the topic details for the topic you want to edit, select **Go to authoring canvas**.
@@ -107,12 +108,13 @@ When adding a node after the **Trigger Phrases** node, or between **Message node
 - **Ask a question**
 - **Call an action**
 - **Show a message**
+- **Go to another topic**
 
 :::image type="content" source="media/topics-node-after-triggers.png" alt-text="Add nodes between existing nodes from the options.":::
 
 After the last node, you can also:
 
-- **Go to another topic**
+
 - **End the conversation**
 
 
@@ -174,7 +176,32 @@ You can [call Power Automate Flows](advanced-flow.md) and [insert authentication
 
 1. In the flyout menu, select the topic the bot should divert to. For example, you might want to send the user to a specific topic about the closure of a store if they ask about store hours for that store.
 
-    :::image type="content" source="teams/media/topics-nodes-other-topic-flyout-teams.png" alt-text="Go to another topic node with options for other topics.":::
+
+    :::image type="content" source="teams/media/topics-nodes-other-topic-flyout-teams.png" alt-text="Go to another topic node with options for other topics":::
+    
+When you insert a link to go to another topic, the bot will go through the conversation path for that topic. 
+
+You can consider the redirected topic as a "subtopic". 
+
+ 
+
+In the authoring canvas for the original topic, you can insert additional nodes under the subtopic's node.
+
+When the path for the subtopic is finished, the bot will return to the original topic. The bot will then follow the nodes that are under the subtopic's node.
+
+:::image type="content" source="media/authoring-create-edit-topics/authoring-subtopic-redirect.png" alt-text="Screenshot of the authoring canvas showing nodes under a redirected topic node.":::
+
+If you redirect to any of the following [system topics](#use-system-and-sample-topics), however, the entire conversation will end:
+
+- End of Conversation
+- Confirmed Success
+- Confirmed Failure
+- Goodbye
+- Escalate
+- Start over (this will also reset any [global variables](authoring-variables-bot.md))
+
+
+
 
 #### End the conversation
 
