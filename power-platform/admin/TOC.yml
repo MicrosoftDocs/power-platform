@@ -18,6 +18,8 @@
         href: manage-email-notifications.md
       - name: Policies and communications
         href: policies-communications.md
+      - name: "Preview: Manage maintenance window"
+        href: manage-maintenance-window.md
       - name: Notifications explained
         href: notifications-explained.md 
     - name: Licensing
