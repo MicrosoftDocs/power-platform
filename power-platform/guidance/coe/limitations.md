@@ -146,7 +146,7 @@ The shared component library in the [theming components solution](theming-compon
 
 ## Trial Licenses
 
-Trial licenses do not have sufficient [API call allowances](/power-automate/limits-and-config#looping-and-debatching-limits) to run the CoE Starter Kit flows.
+Trial licenses do not have sufficient [API call allowances](/power-automate/limits-and-config#concurrency-looping-and-debatching-limits) to run the CoE Starter Kit flows.
 For full list of license requirements see [Setup Prerequisite](setup.md#prerequisites).
 
 ## PIM (Privileged Identity Management)
