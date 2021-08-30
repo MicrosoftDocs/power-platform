@@ -39,9 +39,9 @@ To better understand let’s look at the following example. We have three busine
 > [!div class="mx-imgBorder"] 
 > ![Example business units.](media/example-business-unit.png "Example business units")
 
-## Entity/record ownership
+## Table/record ownership
 
-Dataverse supports two types of record ownership. Organization owned, and User or Team owned. This is a choice that happens at the time the entity is created and can’t be changed. For security purposes, records that are organization owned, the only access level choices is either the user can do the operation or can’t. For user and team owned records, the access level choices for most privileges are tiered Organization, Business Unit, Business Unit and Child Business Unit or only the user’s own records. That means for read privilege on contact, I could set user owned, and the user would only see their own records.
+Dataverse supports two types of record ownership. Organization owned, and User or Team owned. This is a choice that happens at the time the table is created and can’t be changed. For security purposes, records that are organization owned, the only access level choices is either the user can do the operation or can’t. For user and team owned records, the access level choices for most privileges are tiered Organization, Business Unit, Business Unit and Child Business Unit or only the user’s own records. That means for read privilege on contact, I could set user owned, and the user would only see their own records.
 
 To give another example, let’s say User A is associated with Division A, and we give them Business Unit level Read access on Contact. They'd be able to see Contact #1 and #2 but not Contact #3.
 
@@ -51,7 +51,7 @@ When you configure or edit security role privileges, you're setting the access l
 > ![Security role privileges.](media/security-role-privileges.png "Security role privileges")
 
 
-In the above you can see the standard privilege types for each entity Create, Read, Write, Delete, Append, Append To, Assign and Share. You can edit each of these individually. The visual display of each will match the key below as to what level of access you've granted.
+In the above you can see the standard privilege types for each table Create, Read, Write, Delete, Append, Append To, Assign and Share. You can edit each of these individually. The visual display of each will match the key below as to what level of access you've granted.
 
 > [!div class="mx-imgBorder"] 
 > ![Security role privileges key.](media/security-role-privileges-key.png "Security role privileges key")
