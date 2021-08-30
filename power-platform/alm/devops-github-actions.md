@@ -6,7 +6,7 @@ author: kkanakas
 ms.subservice: alm
 ms.author: kartikka
 ms.custom: ""
-ms.date: 06/30/2021
+ms.date: 08/30/2021
 ms.reviewer: "pehecke"
 ms.service: power-platform
 ms.topic: "article"
@@ -101,6 +101,10 @@ GitHub Actions for Microsoft Power Platform can run on both Microsoft Windows ag
 ***How much does GitHub Actions for Microsoft Power Platform cost?***
 
 *GitHub Actions are available at no cost. However, a valid GitHub subscription is required to use the actions on GitHub. To get started, 2,000 action minutes/month are available for free. More information: [GitHub pricing](https://github.com/pricing/)*
+
+***Can I use GitHub Actions for Microsoft Power Platform with Power Apps portals?***
+
+*Yes. You can upload portal data and use the deployment profile to customize the deployment parameters.*
 
 ### See also
 
