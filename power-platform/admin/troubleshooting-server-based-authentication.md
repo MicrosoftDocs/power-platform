@@ -108,9 +108,26 @@ search.app:
 ### “Something went wrong while interaction with SharePoint” error message received  
  Applies to: All versions when used with [!INCLUDE[pn_microsoft_sharepoint_online](../includes/pn-microsoft-sharepoint-online.md)]  
   
- This error can be returned to the user who doesn’t have site permissions or the user has had permissions removed from the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site where document management is enabled. Currently, this is a known issue with [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)] where the error message that is displayed to the user doesn’t indicate that the user’s permissions are not sufficient to access the site.  
+ This error can be returned to the user who doesn’t have site permissions or the user has had permissions removed from the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site where document management is enabled. Currently, this is a known issue with [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)] where the error message that is displayed to the user doesn’t indicate that the user’s permissions are not sufficient to access the site.
+
+## How to display the Enable Server-Based SharePoint Integration wizard
+
+After server-based integration is enabled, the Enable Server-Based SharePoint Integration wizard no longer appears in the Document Management area of advanced Settings. To display the Enable Server-Based SharePoint Integration wizard so that you can reconfigure it, you must deactivate all SharePoint sites and disable OneDrive document management. 
+
+### Disable document management SharePoint sites and OneDrive
+
+1. Sign into Power Apps, select **Settings** (gear) on the upper right, and then select **Advanced settings**.
+1. Go to **Settings** > **Document Management** > **SharePoint Sites**.
+1. In the view selector, select **Active SharePoint Sites**.
+1. Select the SharePoint site, on the command bar select **Deactivate**, and then select **Deactivate** at the message box prompt.
+1. Repeat the previous step for each SharePoint site.
+1. Go to **Settings** > **Document Management** > **Enable OneDrive for Business**.
+1. Clear the **Enable OneDrive for Business** option, and then select **OK**.
+
+After all SharePoint sites are deactivated and OneDrive integration is disabled, the Enable Server-Based SharePoint Integration wizard will appear in the Document Management area.
   
-### See also  
+### See also
+
 [Troubleshoot SharePoint Online integration](troubleshoot-set-up-sharepoint-online.md) <br />
  [Permissions required for document management tasks](../admin/permissions-required-document-management-tasks.md)
 
