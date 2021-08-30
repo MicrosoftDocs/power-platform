@@ -18,7 +18,7 @@ search.app:
 ---
 # Merge data
 
-You can merge two records to combine the data or to [remove duplicates](/powerapps/user/merge-duplicate-records). After doing a merge, check out the [Security considerations](#security-considerations) section to verify the changes meet your security requirements. You can merge Account, Contact, and Lead entities.
+You can merge two records to combine the data or to [remove duplicates](/powerapps/user/merge-duplicate-records). After doing a merge, check out the [Security considerations](#security-considerations) section to verify the changes meet your security requirements. You can merge Account, Contact, and Lead tables.
 
 Follow these steps to merge data.
 
@@ -50,10 +50,10 @@ Merging shared data may have unintended consequences. Check out the following sc
 ### Example settings used in the scenarios
 The following example settings are used in the scenarios below:
 
-- **Account entity**: used to demonstrate record merge.
+- **Account table**: used to demonstrate record merge.
 - **User One**: a sample user.
 - **User Two**: a sample user.
-- **Security role privileges**: Both User One and User Two have Read privilege at the User level for the account entity.
+- **Security role privileges**: Both User One and User Two have Read privilege at the User level for the account table.
   
   > [!div class="mx-imgBorder"] 
   > ![Security role account privilege.](media/security-role-account-privileges.png "Security role account privilege")
