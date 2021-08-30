@@ -130,7 +130,7 @@ When you import the solution, it creates the **min prv apps use** role which you
   
   -   Assign the min prv apps use security role or a copy of this security role to your user.
   
-  -   To render an table grid (that is, to view lists of records and other data), assign the following privileges on the Core Records tab: Read privilege on the table, Read Saved View, Create/Read/Write user table UI settings
+  -   To render an table grid (that is, to view lists of records and other data), assign the following privileges on the Core Records tab: Read privilege on the table, Read Saved View, Create/Read/Write User Entity UI Settings
       and assign the following privilege on the Business Management tab: Read User.   
 
 - When logging in to [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)]:
