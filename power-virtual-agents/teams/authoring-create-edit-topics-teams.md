@@ -2,7 +2,7 @@
 title: "Use topics to design a chatbot conversation in Microsoft Teams"
 description: "Use the authoring canvas in the Power Virtual Agents app in Microsoft Teams to create an end-to-end conversation."
 keywords: "PVA, authoring canvas, conversation"
-ms.date: 9/22/2020
+ms.date: 8/27/2021
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -202,6 +202,23 @@ When you end the conversation, you can have a survey appear that asks the user i
 1. In the flyout menu, select the topic the bot should divert to. For example, you might want to send the user to a specific topic about the closure of a store if they ask about store hours for that store.
 
     :::image type="content" source="media/topics-nodes-other-topic-flyout-teams.png" alt-text="Go to another topic node with options for other topics.":::
+
+When the bot goes to another topic, the bot will go through the conversation path for that topic and then return to the original topic, at the place where it left.
+
+You can consider the redirected topic as a "subtopic". 
+
+:::image type="content" source="media/authoring-create-edit-topics/authoring-subtopic-redirect-teams.png" alt-text="Screenshot of the authoring canvas showing nodes under a redirected topic node.":::
+
+If you redirect to any of the following [system topics](#use-system-and-sample-topics), however, the entire conversation will end:
+
+- End of Conversation
+- Confirmed Success
+- Confirmed Failure
+- Goodbye
+- Escalate
+- Start over (this will also reset any [global variables](authoring-variables-bot-teams.md))
+
+
 
 
 ### Delete nodes
