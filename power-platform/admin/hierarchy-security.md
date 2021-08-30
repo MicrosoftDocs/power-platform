@@ -9,7 +9,7 @@ ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/08/2020
+ms.date: 08/30/2021
 search.audienceType: 
   - admin
 search.app:
@@ -29,12 +29,12 @@ The hierarchy security model is an extension to the existing security models tha
 > While the hierarchy security model provides a certain level of access to data, additional access can be obtained by using other forms of security, such as security roles.  
   
 ## Manager hierarchy  
- The Manager hierarchy security model is based on the management chain or direct reporting structure, where the manager’s and the report’s relationship is established by using the Manager field on the system user entity. With this security model, the managers are able to access the data that their reports have access to. They are able to perform work on behalf of their direct reports or access information that needs approval.  
+ The Manager hierarchy security model is based on the management chain or direct reporting structure, where the manager’s and the report’s relationship is established by using the Manager field on the system user table. With this security model, the managers are able to access the data that their reports have access to. They are able to perform work on behalf of their direct reports or access information that needs approval.  
   
 > [!NOTE]
 > With the Manager hierarchy security model, a manager has access to the records owned by the user or by the team that a user is a member of, and to the records that are directly shared with the user or the team that a user is a member of.  When a record is shared by a user who is outside of the management chain to a direct report user with Read-only access, the direct report's manager only has Read-only access to the shared record. 
 >   
-> In addition to the Manager hierarchy security model, a manager must have at least the user level Read privilege on an entity, to see the reports’ data. For example, if a manager doesn’t have the Read access to the Case entity, the manager won’t be able to see the cases that their reports have access to.  
+> In addition to the Manager hierarchy security model, a manager must have at least the user level Read privilege on an table, to see the reports’ data. For example, if a manager doesn’t have the Read access to the Case table, the manager won’t be able to see the cases that their reports have access to.  
 > 
 > In order for the manager to see all the direct report's records, the direct report user must have an 'enabled' user status.  Manager will not be able to see 'disabled' user's records.
 
@@ -42,15 +42,15 @@ The hierarchy security model is an extension to the existing security models tha
   
  ![Manager hierarchy security.](../admin/media/manage-hierarchy-security.png "Manager hierarchy security")  
 
- It is important to note that if a direct report has deeper security access to an entity than their manager, the manager may not able to see all the records that the direct report has access to. The following example illustrates this point.  
+ It is important to note that if a direct report has deeper security access to an table than their manager, the manager may not able to see all the records that the direct report has access to. The following example illustrates this point.  
   
 -   A single business unit has three users: User 1, User 2 and User 3.  
   
 -   User 2 is a direct report of User 1.  
   
--   User 1 and User 3 have User level read access on the Account entity. This access level gives users access to records they own, the records that are shared with the user, and records that are shared with the team the user is a member of.  
+-   User 1 and User 3 have User level read access on the Account table. This access level gives users access to records they own, the records that are shared with the user, and records that are shared with the team the user is a member of.  
   
--   User 2 has Business Unit read access on the Account entity. This allows User 2 to view all of the accounts for the business unit, including all of the accounts owned by User 1 and User 3.  
+-   User 2 has Business Unit read access on the Account table. This allows User 2 to view all of the accounts for the business unit, including all of the accounts owned by User 1 and User 3.  
   
 -   User 1, as a direct manager of User 2, has access to the accounts owned by or shared with User 2, and any accounts that are shared with or owned by a team that User 2 is a member of. However, User 1 doesn’t have access to the accounts of User 3, even though his or her direct report may have access to User 3 accounts.  
   
@@ -64,7 +64,7 @@ The hierarchy security model is an extension to the existing security models tha
 > [!NOTE]
 > With the Position hierarchy security, a user at a higher position has access to the records owned by a lower position user or by the team that a user is a member of, and to the records that are directly shared to the user or the team that a user is a member of.  
 >  
-> In addition to the Position hierarchy security model, the users at a higher level must have at least the user level Read privilege on an entity to see the records that the users at the lower positions have access to. For example, if a user at a higher level doesn’t have the Read access to the Case entity, that user won’t be able to see the cases that the users at a lower positions have access to.  
+> In addition to the Position hierarchy security model, the users at a higher level must have at least the user level Read privilege on an table to see the records that the users at the lower positions have access to. For example, if a user at a higher level doesn’t have the Read access to the Case table, that user won’t be able to see the cases that the users at a lower positions have access to.  
 > 
 > In order for the user at the higher position to see all the lower position user's records, the lower position user must have an 'enabled' user status. The higher position user will not be able to see the 'disabled' lower position user's records.
   
@@ -85,7 +85,7 @@ Make sure you have the System Administrator or System Customizer security role o
 > [!IMPORTANT]
 >  To make any changes in **Hierarchy security**, you must have the **Change Hierarchy Security Settings** privilege.  
   
- After you have enabled the hierarchy modeling, choose the specific model by selecting the **Manager Hierarchy** or **Custom Position Hierarchy**. All system entities are enabled for hierarchy security out-of-the-box, but, you can exclude selective entities from the hierarchy. The **Hierarchy Security** window shown below:  
+ After you have enabled the hierarchy modeling, choose the specific model by selecting the **Manager Hierarchy** or **Custom Position Hierarchy**. All system tables are enabled for hierarchy security out-of-the-box, but, you can exclude selective tables from the hierarchy. The **Hierarchy Security** window shown below:  
   
 > [!div class="mx-imgBorder"] 
 > ![Set up hierarchy security.](../admin/media/hierarchy-security-setup2.png "Set up hierarchy security")

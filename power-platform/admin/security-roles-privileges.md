@@ -47,7 +47,7 @@ The colored circles on the security role settings page define the access level f
 |![Access level none.](../admin/media/access-level-none.png "Access level none")|**None**. No access is allowed.|  
   
 > [!IMPORTANT]
-> To ensure that users can view and access all areas of the web application, such as entity forms, the nav bar, or the command bar, all security roles in the organization must include the Read privilege on the `Web Resource` entity. For example, without read permissions, a user won't be able to open a form that contains a web resource and will see an error message similar to this: "Missing `prvReadWebResource` privilege." [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Create or edit a security role](create-edit-security-role.md)  
+> To ensure that users can view and access all areas of the web application, such as table forms, the nav bar, or the command bar, all security roles in the organization must include the Read privilege on the `Web Resource` table. For example, without read permissions, a user won't be able to open a form that contains a web resource and will see an error message similar to this: "Missing `prvReadWebResource` privilege." [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Create or edit a security role](create-edit-security-role.md)  
 
 ### Record-level privileges  
  [!INCLUDE [pn-powerapps](../includes/pn-powerapps.md)] and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), use eight different record-level privileges that determine the level of access a user has to a specific record or record type.  
@@ -58,7 +58,7 @@ The colored circles on the security role settings page define the access level f
 |**Read**|Required to open a record to view the contents. Which records can be read depends on the access level of the permission defined in your security role.|  
 |**Write**|Required to make changes to a record. Which records can be changed depends on the access level of the permission defined in your security role.|  
 |**Delete**|Required to permanently remove a record. Which records can be deleted depends on the access level of the permission defined in your security role.|  
-|**Append**|Required to associate the current record with another record. For example, a note can be attached to an opportunity if the user has Append rights on the note. The records that can be appended depend on the access level of the permission defined in your security role.<br /> In case of many-to-many relationships, you must have Append privilege for both entities being associated or disassociated.|  
+|**Append**|Required to associate the current record with another record. For example, a note can be attached to an opportunity if the user has Append rights on the note. The records that can be appended depend on the access level of the permission defined in your security role.<br /> In case of many-to-many relationships, you must have Append privilege for both tables being associated or disassociated.|  
 |**Append To**|Required to associate a record with the current record. For example, if a user has Append To rights on an opportunity, the user can add a note to the opportunity. The records that can be appended to depend on the access level of the permission defined in your security role.|  
 |**Assign**|Required to give ownership of a record to another user. Which records can be assigned depends on the access level of the permission defined in your security role.|  
 |**Share**|Required to give access to a record to another user while keeping your own access. Which records can be shared depends on the access level of the permission defined in your security role.|  
@@ -100,7 +100,7 @@ Check your security role:
 3. Enter a role name.
 4. Select the **Member's privilege inheritance** drop-down list.
 5. Select **Direct User/Basic access level and Team privileges**.
-6. Go to each tab and set the appropriate privileges on each entity.
+6. Go to each tab and set the appropriate privileges on each table.
 
    To change the access level for a privilege, select the access-level symbol until you see the symbol you want. The access levels available depend on whether the record type is organization-owned or user-owned.
 

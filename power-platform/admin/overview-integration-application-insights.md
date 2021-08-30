@@ -71,7 +71,7 @@ Operations with a higher number of calls and higher duration are potential items
 
 Selecting one of the operations will also show you details about the top three dependencies and time taken. You can see more details by selecting the **Dependencies** tab.
 
-If you switch to the **Browser** view, you'll see data about which pages are being viewed most frequently in the environment and the latency for each of them. You'll see metrics including session counts and the dependencies associated with different operations. For example, selecting the **Accounts** operation shows requests made to the account entity.
+If you switch to the **Browser** view, you'll see data about which pages are being viewed most frequently in the environment and the latency for each of them. You'll see metrics including session counts and the dependencies associated with different operations. For example, selecting the **Accounts** operation shows requests made to the account table.
 
 > [!div class="mx-imgBorder"] 
 > ![Application Insights Performance panel for account.](media/application-insights-performance-account.png "Application Insights Performance panel for account")
