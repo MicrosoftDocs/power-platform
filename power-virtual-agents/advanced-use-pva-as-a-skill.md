@@ -134,11 +134,11 @@ Both skill manifests can be found on **Manage allowlist** panel.
 
 :::image type="content" source="media/PVA-as-a-skill/Skill_Manifest1.png" alt-text="Power Virtual Agents bot Manifests on the Manage Allowlist panel.":::
 
-Additionally, you can find the skill manifests on the **Details** tab under the **Manage** section on the side navigation pane. The **Details** tab shows other metadata like **Environment ID**, **Tenant ID** and **Bot app ID**.
+Additionally, you can find the skill manifests on the **Details** tab under the **Manage** section on the side navigation pane. The **Details** tab shows other metadata like **Environment ID**, **Tenant ID**, and **Bot app ID**.
 
 :::image type="content" source="media/PVA-as-a-skill/Skill_Manifest2.png" alt-text="Power Virtual Agents bot Manifests on Details page":::
 
-Selecting either manifest will download them as a .zip file labelled *\<bot name\>_manifest* for the **Published manifest** or *\<bot name\>_test__manifest* for the **Test manifest**.
+Selecting either manifest will download them as a .zip file labeled *\<bot name\>_manifest* for the **Published manifest** or *\<bot name\>_test__manifest* for the **Test manifest**.
 
 :::image type="content" source="media/PVA-as-a-skill/Manifests_Zip.png" alt-text="Power Virtual Agents - Downloaded Test and Published Manifests":::
 
