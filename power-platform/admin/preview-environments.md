@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/04/2021
+ms.date: 08/31/2021
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -25,12 +25,30 @@ With the Power Apps Preview program, you can:
 - **Try out, learn, and dogfood upcoming functionalities**: Many functionalities will be rolled out first in the preview for a few days to get feedback. By participating in the Preview program, you can learn about new functionalities sooner and provide feedback. Also, you will be ready to quickly take advantage of new functionalities as soon as they reach regions where their production apps are created.
 - **Enable business continuity by ensuring current apps will continue to work** with the upcoming updates (vNext) of Power Apps.
 
-## What in Power Apps is available for preview?
-To access the preview functionalities across Power Apps, you need be in a preview environment. More details on the preview environment are given in the next section.
-Currently we will be rolling out preview for the following scenarios across Power Apps:
-1. **Creating apps**: You can create canvas-based apps using the next version of Power Apps. This can be done by creating apps in a preview environment. Current limitations include - model-driven apps can’t be built in the preview program - we're working on it.
-2. **Managing apps**: You can manage and share apps using [Power Apps web portal][2]. To access the preview functionalities, all you need to do is to be in a preview environment; it will take you to the preview version of [Power Apps web portal][3].
-3. **Playing apps**: You need to play the apps in a preview environment using the web player. When you do that, you will be automatically taken to [preview version of web player][4]. Apps will play with the vNext version of the Power Apps web player. Current limitations include - Power Apps Mobile for iOS, Android, and Windows are currently not available for preview. Playing the apps created in the First Release environment might not work - we're working on it.
+## What in Power Platform is available for preview?
+
+To access the preview functionalities, you need to be in a preview environment or or using a preview URL. More details on the preview environment are given in the next section. We have preview features for the following areas across Power Platform.
+
+### Canvas apps
+
+You can create canvas-based apps using the next version of Power Apps. This can be done by creating apps in a preview environment and managing the canvas app preview settings. More information: [Working with environments and Microsoft Power Apps](working-with-environments.md)
+
+Post your feedback in the [Power Apps Community Forum](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1).
+
+### Model-driven apps and app management
+
+You can create, manage, and share apps using [Power Apps web portal][2]. To use the preview functionalities, we recommend that you be in a preview or sandbox environment and not in a production environment. Then, go to the preview version of [Power Apps web portal][3] (make.preview.powerapps.com).
+
+Post your feedback in the [Power Apps Community Forum](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1).
+
+### Power Platform administration
+
+Admin experiences are available for preview using the preview version of [PowerApps admin center](https://preview.admin.powerapps.com/) (preview.admin.powerapps.com/).
+
+<!-- The link to the preview web player doesn't work
+### Playing apps with the Power Apps web player
+
+You need to play the apps in a preview environment using the web player. When you do that, you will be automatically taken to [preview version of web player][https://make.preview.powerapps.com/webplayer]. Apps will play with the vNext version of the Power Apps web player. Current limitations include - Power Apps Mobile for iOS, Android, and Windows are currently not available for preview. Playing the apps created in the First Release environment might not work - we're working on it. -->
 
 ## How to get early access to the upcoming updates?
 For Power Platform, all the apps, flows, and related resources are stored in an environment. Early access to all preview functionalities are also available with an environment created in a region where the vNext (preview) is deployed. For now, there is only one region, **Preview (United States)**, as shown in the image below:
@@ -74,7 +92,7 @@ You can provide feedback on the [Power Apps forum][8] and/or contact [support][9
 
 <!--Reference links in article-->
 [2]: https://make.powerapps.com
-[3]: https://preview.web.powerapps.com
+[3]: https://make.preview.powerapps.com
 [4]: /powerapps/maker/canvas-apps/working-with-experimental-preview
 [5]: /powerapps/whats-new
 [7]: https://preview.create.powerapps.com
