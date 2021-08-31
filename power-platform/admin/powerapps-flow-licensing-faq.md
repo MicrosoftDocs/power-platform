@@ -62,7 +62,7 @@ The guest user must have a Power Apps license assigned through one of the follow
 - The tenant hosting the app being shared
 - The home tenant of the guest user
 
-Also, the guest must have the same license that’s required for non-guests to run an app. A collection of examples is available [here](/powerapps/maker/canvas-apps/share-app#what-license-must-be-assigned-to-my-guest-so-they-can-run-an-app-shared-with-them). 
+Also, the guest must have the same license that’s required for non-guests to run an app. A collection of examples is available [here](/powerapps/maker/canvas-apps/share-app-guests#frequently-asked-questions). 
 
 ### Is non-profit, government, and academic pricing available?
 
@@ -457,7 +457,7 @@ Yes. AI Builder capacity can be added to the P1 and P2 plans for Power Apps and 
 
 ### What is a "service credit" and how does it work? 
 
-AI Builder includes several model types, including custom and prebuilt – a full list is available [here](/ai-builder/model-types#list-of-ai-model-types).
+AI Builder includes several model types, including custom and prebuilt – a full list is available [here](/ai-builder/model-types#model-types).
 
  AI models consume service credits when they are trained, used in an app or flow, or scheduled to periodically run. The amount of capacity consumed varies based the AI model, as well as the size and complexity of the data set.
 
@@ -469,7 +469,7 @@ Each user license grants you 5000 credits, allowing you to assess the capabiliti
 
 The release status for AI Builder features is available [here](/power-platform-release-plan/2020wave1/ai-builder/).
 
-AI models available in public preview do not require paid AI Builder capacity. A full list of all models can be found [here](/ai-builder/model-types#list-of-ai-model-types).
+AI models available in public preview do not require paid AI Builder capacity. A full list of all models can be found [here](/ai-builder/model-types#model-types).
 
 ### Is a trial available for AI Builder?
 Users without an existing Power Apps or Power Automate license can access AI Builder trial capacity for 30 days by signing up for either a Power Apps or Power Automate trial. Existing Power Apps and Power Automate users can access AI Builder trial capacity for 30-days by signing into the respective service and accessing AI Builder in the left navigation pane. 
