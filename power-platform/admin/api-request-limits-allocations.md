@@ -82,7 +82,7 @@ these users:
 -   [Administrative users](create-users.md#create-an-administrative-user-account)
 -   [SYSTEM user](/dynamics365/customer-engagement/web-api/systemuser?view=dynamics-ce-odata-9#operations)
 
-Additionally there are special free (\$0) licenses, which are used to interact with Dynamics 365 applications like Dynamics 365 Marketing. See [How Marketing is licensed](/dynamics365/customer-engagement/marketing/purchase-setup#how-marketing-is-licensed).
+Additionally there are special free (\$0) licenses, which are used to interact with Dynamics 365 applications like Dynamics 365 Marketing. See [How Marketing is licensed](/dynamics365/marketing/purchase-setup#user-and-portal-licensing).
 
 For these identities, every tenant will get base request capacity per tenant that can only be used by these users and not by users with standard licenses.
 
