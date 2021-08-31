@@ -13,7 +13,7 @@ ms.custom: "cex"
 ms.collection: virtualagent
 ---
 
-# Use Power Virtual Agents bot as a skill
+# Use a Power Virtual Agents bot as a skill
 
 You can use your Power Virtual Agents bot as a [skill](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0&preserve-view=true) with Bot Framework bots. 
 
@@ -49,7 +49,7 @@ To set up your Power Virtual Agents bot as a skill:
 ## Add your Bot Framework bot to the allowlist for your Power Virtual Agents bot
 
 
-You have to add the Bot Framework bot's app ID to the allowlist for the Power Virtual Agents bot that you want to use as a skill.
+Add the Bot Framework bot's app ID to the allowlist for the Power Virtual Agents bot that you want to use as a skill.
 
 The Bot Framework and Power Virtual Agents bots must be deployed in the same tenant.
 
@@ -95,7 +95,7 @@ The Bot Framework and Power Virtual Agents bots must be deployed in the same ten
 6. Select **Save** to add your bot to the allowlist.
 
 
-The Bot Framework bot will be displayed by the **Dispaly name** (if you entered one) or by its **App ID**. You can **Delete** or **Edit** it at any time from the **Manage allowlist for \<bot name\>** panel.
+The Bot Framework bot will be displayed by the **Display name** (if you entered one) or by its **App ID**. You can **Delete** or **Edit** it at any time from the **Manage allowlist for \<bot name\>** panel.
 
 :::image type="content" source="media/PVA-as-a-skill/Skill_AllowedCallerAdded.png" alt-text="The manage allowlist panel showing a list of allowed bot.":::
 
@@ -106,13 +106,13 @@ The Bot Framework bot will be displayed by the **Dispaly name** (if you entered 
 
 Bot Framework bots can use a Power Virtual Agents skill manifest to configure a connection to the bot that produced the manifest. 
 
-All Power Virtual Agents bots have skill manifests, which are JSON files that describes a skill's name, interface, and trigger phrases.
+All Power Virtual Agents bots have skill manifests, which are JSON files that describe a skill's name, interface, and trigger phrases.
 
 By using the manifest, the Bot Framework bot will know when to trigger the Power Virtual Agents bot (for example, in response to something a user says to the bot).
 
 Power Virtual Agents skill manifests are implemented according to [version 2.2 of the Bot Framework skill manifest schema](/azure/bot-service/skills-write-manifest#the-skill-manifest) and consist of *intents.lu* and *manifest.json* files.
 
-When a Bot Framework bot decides, based on the manifest data, that what the user said should be handled by a Power Virtual Agents bot, it will pass the entire user utterance to it. Then, the Power Virtual Agents bot's own NLU will match this user utterance [to a Power Virtual Agents topic](authoring-create-edit-topics.md), extract any [entities needed for slot-filling](advanced-entities-slot-filling.md) and trigger the Power Virtual Agents topic.
+When a Bot Framework bot decides, based on the manifest data, that what the user said should be handled by a Power Virtual Agents bot, it will pass the entire user utterance to it. Then, the Power Virtual Agents bot's own NLU will match this user utterance [to a Power Virtual Agents topic](authoring-create-edit-topics.md), extract any [entities needed for slot-filling](advanced-entities-slot-filling.md), and trigger the Power Virtual Agents topic.
 
 
 All Power Virtual Agents skill manifests are automatically generated and updated. A Power Virtual Agents bot has two skill manifests: 
