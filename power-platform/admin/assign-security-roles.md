@@ -9,7 +9,7 @@ ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/17/2021
+ms.date: 08/31/2021
 search.audienceType: 
   - admin
 search.app:
@@ -77,8 +77,7 @@ When users are added to Dataverse, they will get roles assigned automatically ba
 
 2. Users with a valid license will get corresponding mapped roles assigned to them automatically. Removal of the respective license will result in automatic role removal. License-based default role management is not applicable for users in these types of environments: Dataverse for Teams, Trial, and Developer. 
 
-3. For the Default environment type, roles will be assigned automatically to all users added in Dataverse based on the value of “DefaultSecurityRoles” setting in the [OrgDBOrgSettings](https://support.microsoft.com/topic/orgdborgsettings-tool-for-microsoft-dynamics-crm-20a10f46-2a24-a156-7144-365d49b842ba). 
-
+3. For the Default environment type, “BasicUser” and “EnvironmentMaker” roles will be assigned automatically to all users, depending on if the environment has Dataverse or not.
 4. In the Finance and Operations linked Dataverse environment, Finance and Operations Basic User and Environment Maker security roles are automatically assigned to all active users in Dataverse. 
 
 ### See also
