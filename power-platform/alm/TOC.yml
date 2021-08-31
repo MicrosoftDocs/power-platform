@@ -131,9 +131,9 @@
       items:
         - name: Use PowerShell
           href: powershell-api.md
-        - name: Work with solutions (SDK API) 
+        - name: Work with solutions (SDK API/C#) 
           href: solution-api.md
-        - name: Import, export, and staging
+        - name: Stage, import, and export (SDK API/C#)
           href: solution-async.md
         - name: Create patches 
           href: create-patches-simplify-solution-updates.md

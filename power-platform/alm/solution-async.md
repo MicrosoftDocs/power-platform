@@ -1,12 +1,12 @@
 ---
-title: "Import, export, and staging of solutions | Microsoft Docs"
-description: "Learn about staging solutions and using an asynchronous job for import and export of large solution files."
+title: "Solution staging, with asynchronous import and export | Microsoft Docs"
+description: "Learn about staging solutions, and using an asynchronous job for import and export of large solution files."
 keywords: 
 author: mikkelsen2000
 ms.author: pemikkel
 manager: kvivek
 ms.custom: ""
-ms.date: 04/08/2021
+ms.date: 08/30/2021
 ms.reviewer: "pehecke"
 ms.service: powerapps
 ms.topic: "article"
@@ -17,11 +17,34 @@ search.app:
   - D365CE
 ---
 
-# Import, export, and staging of solutions
+# Solution staging, with asynchronous import and export
 
-[!INCLUDE[applies-to-all](../includes/applies-to-all.md)]
+<!-- [!INCLUDE[applies-to-all](../includes/applies-to-all.md)] -->
 
 Have you ever run into the situation during the import or export of a large solution where the operation times out? If so, you may be a candidate for performing the solution import/export asynchronously. This topic describes how to initiate the asynchronous import or export using the SDK and Web APIs.
+
+## Staging a solution
+
+In comparison to importing a solution where the solution is imported and available in the environment right away, staging breaks the import process into more controllable phases. The staging process imports the solution as a "holding" solution where the administrator can decide when to make the staged solution available to users, or to perform an upgrade (in the case of a solution upgrade) in the target environment. Part of the staging process is validation of the staged solution. In this way you can stage the solution, know that the solution is valid, and schedule when to apply that solution or upgrade to the target environment.
+
+
+| Operation | Web API | SDK API |
+| --- | --- | --- |
+| Stage a solution | [StageSolution](/dynamics365/customer-engagement/web-api/stagesolution) | use the generic [OrganizationRequest](/dotnet/api/microsoft.xrm.sdk.organizationrequest) and set the **RequestName** property to "StageSolution" |
+
+The result of staging the solution will be a collection of validation results indicating success or failure and (if successful) a `StageSolutionUploadId` to be used in the `ImportSolutionAsync` call. See the import solution Web API sample code above for an example of how this is done.
+
+### [SDK API (C#)](#tab/sdk-csharp)
+
+:::code language="csharp" source="cds/orgsvc/c#/SolutionStageAndImport/Program.cs" id="snippet_stage-solution":::
+
+### [Web API (C#)](#tab/webapi-csharp)
+
+```csharp
+// No sample code is available at this time
+```
+
+---
 
 ## Solution import
 
@@ -35,53 +58,7 @@ Now let's take a look at some example code that demonstrates `ImportSolutionAsyn
 
 ### [SDK API (C#)](#tab/sdk-csharp)
 
-```csharp
-private void ImportSolutionUsingJob(IOrganizationService svc, string filepath)  
-{ 
-  byte[] fileBytes = File.ReadAllBytes(filepath); 
-  var param = new EntityCollection();
-
-  var e1 = new Entity("connectionreference") 
-  { 
-    ["connectionreferencelogicalname"] = "cr485_sharedmsnweather_01b85", 
-    ["connectionreferencedisplayname"] = "MSN Weather", 
-    ["connectorid"] = "/providers/Microsoft.PowerApps/apis/shared_msnweather", 
-    ["connectionid"] = "bcb82cb72ed04d86b33407289cf458e0" 
-  }; 
-
-  var e2 = new Entity("connectionreference") 
-  { 
-    ["connectionreferencelogicalname"] = "cr485_sharedcommondataservice_eb48e", 
-    ["connectionreferencedisplayname"] = "Common Data Service", 
-    ["connectorid"] = "/providers/Microsoft.PowerApps/apis/shared_commondataservice", 
-    ["connectionid"] = "c0701bf51f934042bc78e6a961babada" 
-  }; 
-
-  var e3 = new Entity("connectionreference") 
-  { 
-    ["connectionreferencelogicalname"] = "cr485_sharedsendmail_53930", 
-    ["connectionreferencedisplayname"] = "Mail", 
-    ["connectorid"] = "/providers/Microsoft.PowerApps/apis/shared_sendmail", 
-    ["connectionid"] = "6c4b14bb6c66492786cdaf1f58f61d14" 
-  }; 
-
-  param.Entities.Add(e1); 
-  param.Entities.Add(e2); 
-  param.Entities.Add(e3); 
-
-  // Demonstrating using a generic request and naming it. You could just use
-  // the ImportSolutionAsyncRequest class.
-  var r = new OrganizationRequest(); 
-  r.RequestName = "ImportSolutionAsync"; 
-  r["SolutionParameters"] = new SolutionParameters(); 
-  r["OverwriteUnmanagedCustomizations"] = false; 
-  r["PublishWorkflows"] = true; 
-  r["CustomizationFile"] = fileBytes; 
-  r["ComponentParameters"] = param; 
-
-  var response = proxy.Execute(r);
-} 
-```
+:::code language="csharp" source="cds/orgsvc/c#/SolutionStageAndImport/Program.cs" id="snippet_import-solution-async":::
 
 ### [Web API (C#)](#tab/webapi-csharp)
 
@@ -146,6 +123,18 @@ catch (Exception err)
 
 The response returned from `ImportSolutionAsync` contains `ImportJobKey` and `AsyncOperationId`. The `ImportJobKey` value can be used to obtain the import result and the `AsyncOperationId` value can be used to track the import job status.
 
+### [SDK API (C#)](#tab/sdk-csharp)
+
+:::code language="csharp" source="cds/orgsvc/c#/SolutionStageAndImport/Program.cs" id="snippet_check-import-status":::
+
+### [Web API (C#)](#tab/webapi-csharp)
+
+```csharp
+// No sample code is available at this time
+```
+
+---
+
 ## Solution export
 
 `ExportSolution` is the action (or message) that performs the synchronous export operation. To execute the export operation asynchronously use `ExportSolutionAsync`.
@@ -197,14 +186,3 @@ var response = service.Execute(req);
 ```
 
 ---
-
-## Staging a solution import
-
-In comparison to importing a solution where the solution is imported and available in the environment right away, staging breaks the import process into more controllable phases. The staging process imports the solution as a "holding" solution where the administrator can decide when to make the staged solution available to users, or to perform an upgrade (in the case of a solution upgrade) in the target environment. Part of the staging process is validation of the staged solution. This way you can stage the solution, know that the solution is valid, and schedule when to apply that solution or upgrade to the target environment.
-
-
-| Operation | Web API | SDK API |
-| --- | --- | --- |
-| Stage a solution | [StageSolution](/dynamics365/customer-engagement/web-api/stagesolution) | use the generic [OrganizationRequest](/dotnet/api/microsoft.xrm.sdk.organizationrequest) and set the **RequestName** property to "StageSolution" |
-
-The result of staging the solution will be a collection of validation results indicating success or failure and (if successful) a `StageSolutionUploadId` to be used in the `ImportSolutionAsync` call. See the import solution Web API sample code above for an example of how this is done.
