@@ -15,7 +15,7 @@ ms.collection: virtualagent
 
 # Use Power Virtual Agents bot as a skill
 
-You can use your Power Virtual Agents bot as a [skill](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0) with Bot Framework bots. 
+You can use your Power Virtual Agents bot as a [skill](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0&preserve-view=true) with Bot Framework bots. 
 
 If you already have Bot Framework bots in your organization, you can call a Power Virtual Agents bot as a skill from within your Bot Framework bots.
 
@@ -40,7 +40,7 @@ To set up your Power Virtual Agents bot as a skill:
 
 ## Prerequisites
 
-- [Understand how Bot Framework skills work](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0) 
+- [Understand how Bot Framework skills work](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0&preserve-view=true) 
 - [Learn how to use Bot Framework Composer](/composer/introduction)
 - [Learn how to use skills in Bot Framework Composer](/composer/concept-skills)
 - [Get your Bot Framework bot's app ID](/azure/bot-service/bot-service-manage-overview#get-azure-bot-resource-app-id)
@@ -184,8 +184,8 @@ You can test that your Bot Framework bot is properly calling a Power Virtual Age
 ## Learn More
 
 To learn more about developing in Bot Framework Composer and using skills, see these resources:
-- [Skills overview](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0)
-- [Skills manifest](/azure/bot-service/skills-write-manifest?view=azure-bot-service-4.0&tabs=v2-2)
+- [Skills overview](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0&preserve-view=true)
+- [Skills manifest](/azure/bot-service/skills-write-manifest?view=azure-bot-service-4.0&preserve-view=true&tabs=v2-2)
 - [Bot Framework Composer documentation](/composer/) 
 - [Skills in Composer](/composer/concept-skills)
 - [Connect to a remote skill in Composer](/composer/how-to-connect-to-a-skill?tabs=v2x)
