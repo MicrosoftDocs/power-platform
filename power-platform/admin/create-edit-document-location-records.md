@@ -30,7 +30,7 @@ search.app:
   
 4. Specify the following information as required:  
   
-   - **Name**. Type a name for the document location. This name displays in the location list in the entity record.  
+   - **Name**. Type a name for the document location. This name displays in the location list in the table record.  
   
    - **Owner**. By default, you are added as the owner of this location record.  
   

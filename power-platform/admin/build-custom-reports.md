@@ -271,7 +271,7 @@ The recommendation for this preview is to use the **Isolate this storage** optio
 
 ### Is the data model in a standard format?
 
-The data mode uses the extensible Common Data Model schema to describe the entities in the data lake. This will allow easier consumption by different products across Microsoft Power Platform, including Power BI and other systems like SAP or Adobe.
+The data mode uses the extensible Common Data Model schema to describe the tables in the data lake. This will allow easier consumption by different products across Microsoft Power Platform, including Power BI and other systems like SAP or Adobe.
 
 ## What is the structure of the containers and folders inside the data lake?
 

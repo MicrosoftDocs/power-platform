@@ -24,7 +24,7 @@ The [copy security role method](copy-security-role.md) is a quick and easy way t
 
 The following steps describe a method to create a new custom security role with privileges that will change dynamically with updates and therefore can continue to be used for security role assignments.
 
-### Create a new custom security role that only has access to "Security Role" entity
+### Create a new custom security role that only has access to "Security Role" table
 
 1. Make sure that you have the System Administrator permissions.
 
@@ -38,7 +38,7 @@ The following steps describe a method to create a new custom security role with 
 
 3. Select **Settings** > **Users + permissions** > **Security roles**, and then select **New**.
 4. Enter a role name, and then select the **Business Management** tab.
-5. Scroll down to the **Entity** list and set the **Security Role** entity privileges as follows:
+5. Scroll down to the **Table** list and set the **Security Role** table privileges as follows:
 
    |Privilege  |Setting  |
    |---------|---------|

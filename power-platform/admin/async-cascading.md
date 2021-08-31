@@ -20,7 +20,7 @@ search.app:
 
 # Asynchronous processing of cascading transactions
 
-Certain transactions can be configured to cascade across all related records. This means the change on a parent record will be transacted upon (cascade down through) all the child records. Cascading relationships are configured at the entity level. For more information about cascading relationships, see [Configure table relationship cascading behavior](/powerapps/developer/common-data-service/configure-entity-relationship-cascading-behavior).
+Certain transactions can be configured to cascade across all related records. This means the change on a parent record will be transacted upon (cascade down through) all the child records. Cascading relationships are configured at the table level. For more information about cascading relationships, see [Configure table relationship cascading behavior](/powerapps/developer/common-data-service/configure-entity-relationship-cascading-behavior).
 
 ## Synchronous versus asynchronous modes
  By default, cascading operations are performed as a synchronous transaction. For a synchronous cascading transaction, all impacted records are identified by the system. As the records are processed, they are locked by the system. Once all the changes have been completed, the records are unlocked and the transaction is completed.
@@ -124,7 +124,7 @@ If during the record merge process another user deletes a related contact record
 
 #### Merge causing locks that prevent other access changes
     
-The Cascade Merge operation grants access to the new owner of the subordinate entity. To do this, the Cascade Merge operation accesses and makes changes to the Principal Object Table which require a lock. If a merge operation contains many records (based on the cascade relationship), this lock could be in place for an extended amount of time. This could result in an error if an operation attempts to grant/revoke access of an unrelated record while the merge is running. If this occurs, try executing the merge in off hours so the blocking can be reduced.
+The Cascade Merge operation grants access to the new owner of the subordinate table. To do this, the Cascade Merge operation accesses and makes changes to the Principal Object Table which require a lock. If a merge operation contains many records (based on the cascade relationship), this lock could be in place for an extended amount of time. This could result in an error if an operation attempts to grant/revoke access of an unrelated record while the merge is running. If this occurs, try executing the merge in off hours so the blocking can be reduced.
 
 
 ### See also
