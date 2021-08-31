@@ -18,6 +18,8 @@
         href: manage-email-notifications.md
       - name: Policies and communications
         href: policies-communications.md
+      - name: "Preview: Manage maintenance window"
+        href: manage-maintenance-window.md
       - name: Notifications explained
         href: notifications-explained.md 
     - name: Licensing
@@ -118,6 +120,8 @@
           href: opt-in-early-access-updates.md
         - name: General availability deployment
           href: general-availability-deployment.md
+        - name: "Preview: Manage maintenance window"
+          href: manage-maintenance-window.md
       - name: Manage settings 
         items:
         - name: Power Platform 
