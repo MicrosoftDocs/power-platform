@@ -1,8 +1,8 @@
 ---
-title: "Use Power Virtual Agents bot as a skill"
-description: "Use Power Virtual Agents bot as a skill for Bot Framework bots."
+title: "Use a Power Virtual Agents bot as a skill in Bot Framework bots"
+description: "Call a Power Virtual Agents bot from within a Bot Framework bot's session when a user says something that matches the bot's trigger phrases."
 keywords: "composer, skills, bot framework"
-ms.date: 
+ms.date: 8/30/2021
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -73,6 +73,11 @@ The Bot Framework and Power Virtual Agents bots must be deployed in the same ten
 
     :::image type="content" source="media/PVA-as-a-skill/Skill_AddBotAppID.png" alt-text="Screenshot of the Add allowed caller dialog window.":::
 
+    >[!TIP]
+    >You can find your Bot Framework bot's app ID in Composer, in the **Development Resources** section under the **Configure** tab.  
+    >  
+    >:::image type="content" source="media/PVA-as-a-skill/Composer_BotAppID.png" alt-text="Composer - Bot App ID.":::
+
 
     >[!CAUTION]  
     >Power Virtual Agents cannot act as a skill for other Power Virtual Agents bots. 
@@ -105,7 +110,7 @@ All Power Virtual Agents bots have skill manifests, which are JSON files that de
 
 By using the manifest, the Bot Framework bot will know when to trigger the Power Virtual Agents bot (for example, in response to something a user says to the bot).
 
-Power Virtual Agents skill manifests are implemented according to [version 2.2 of the Bot Framework skill manifest schema](/azure/bot-service/skills-write-manifest#the-skill-manifest).
+Power Virtual Agents skill manifests are implemented according to [version 2.2 of the Bot Framework skill manifest schema](/azure/bot-service/skills-write-manifest#the-skill-manifest) and consist of *intents.lu* and *manifest.json* files.
 
 When a Bot Framework bot decides, based on the manifest data, that what the user said should be handled by a Power Virtual Agents bot, it will pass the entire user utterance to it. Then, the Power Virtual Agents bot's own NLU will match this user utterance [to a Power Virtual Agents topic](authoring-create-edit-topics.md), extract any [entities needed for slot-filling](advanced-entities-slot-filling.md) and trigger the Power Virtual Agents topic.
 
@@ -120,74 +125,71 @@ All Power Virtual Agents skill manifests are automatically generated and updated
     - The published manifest is only available for Power Virtual Agents bots that have been published at least once.  
     - It is automatically updated to reflect the changes every time you [**publish** your bot](publication-fundamentals-publish-channels.md#publish-the-latest-bot-content).
 
+>[!NOTE]
+> The **Published manifest** is not available in Power Virtual Agents bots that have never been published.  
+>  
+>To generate your bot's **Published manifest**, your need to [publish your Power Virtual Agents bot](publication-fundamentals-publish-channels.md). 
+
+Both skill manifests can be found on **Manage allowlist** panel.
+:::image type="content" source="media/PVA-as-a-skill/Skill_Manifest1.png" alt-text="Power Virtual Agents bot Manifests on the Manage Allowlist panel.":::
+
+Additionally, you can find the skill manifests on the **Details** tab under the **Manage** section on the side navigation pane. The **Details** tab shows other metadata like **Environment ID**, **Tenant ID** and **Bot app ID**.
+
+:::image type="content" source="media/PVA-as-a-skill/Skill_Manifest2.png" alt-text="Power Virtual Agents bot Manifests on Details page":::
+
+Selecting either manifest will download them as a .zip file labelled *\<bot name\>_manifest* for the **Published manifest** or *\<bot name\>_test__manifest* for the **Test manifest**.
+
+:::image type="content" source="media/PVA-as-a-skill/Manifests_Zip.png" alt-text="Power Virtual Agents - Downloaded Test and Published Manifests":::
 
 >[!NOTE]
-> The **Published manifest** is not available in Power Virtual Agents bots that have never been **Published**.  To generate your bot's **Published manifest**, your need to [publish your Power Virtual Agents bot](https://docs.microsoft.com/en-us/power-virtual-agents/publication-fundamentals-publish-channels). 
-
-Both Power Virtual Agents bot's skill manifests can be found on **Manage allowlist** panel.
-![Power Virtual Agents bot Manifests on Manage Allowlist panel](media/PVA-as-a-skill/Skill_Manifest1.png)
-
-Additionally, you can find Power Virtual Agents bot's skill manifests on **Details** page under **Manage** tab along other bot's metadata like **Environment ID**, **Tenant ID** and **Bot app ID**.
-![Power Virtual Agents bot Manifests on Details page](media/PVA-as-a-skill/Skill_Manifest2.png)
-
-Click the buttons to download **Test manifest** or **Published manifest** as .zip archives.
-
-![Power Virtual Agents - Downloaded Test and Published Manifests](media/PVA-as-a-skill/Manifests_Zip.png)
-
-**Test manifest** and **Published manifest** follow [version 2.2](https://docs.microsoft.com/en-us/azure/bot-service/skills-write-manifest?view=azure-bot-service-4.0&tabs=v2-2) of Bot Framework skill manifest schema and consist of **intents.lu** and **manifest.json** files.
-
-![Power Virtual Agents skill manifest files](media/PVA-as-a-skill/Manifests_Files.png)
-
->[!NOTE]
-> **System Topics** and Composer **dialogs** added to Power Virtual Agents bot will not be included in skill manifest. Only user-created **Topics** and Coposer **intent triggers** added to the bot will be added to Power Virtual Agents bot skill manifest.
+> System topics and Composer dialogs added to a Power Virtual Agents bot will not be included in the skill manifest. Only user-created topics and Composer intent triggers added to the bot will be added to the Power Virtual Agents bot skill manifest.
 
 ## Connect to a Power Virtual Agents skill in Composer
 
-You can use the Power Virtual Agents bot skill **Test manifest** or **Published manifest** that you have downloaded in a .zip archive to create a skill connection in your Bot Framework bot in Composer.
+You can use Power Virtual Agents bot skill manifests to create a skill connection in your Bot Framework bot in Composer:
 
-In Bot Framework Composer project, use **+ Add** button and choose **Connect to a skill** menu option.
+1. In a Bot Framework Composer project, select **+ Add** and then **Connect to a skill**.
 
-![Composer - connect Bot Framewok bot to a skill](media/PVA-as-a-skill/Composer_ConnectToSkill.png)
+    ![Composer - connect Bot Framewok bot to a skill](media/PVA-as-a-skill/Composer_ConnectToSkill.png)
 
-On **Add a skill** screen, select a Power Virtual Agents manifest .zip archive and press **Next**.
+2. On the **Add a skill** screen, select a Power Virtual Agents manifest .zip archive and then **Next**.
 
-![Composer - select a Power Virtual Agents skill zip archive](media/PVA-as-a-skill/Composer_AddSkillZip.png)
+    ![Composer - select a Power Virtual Agents skill zip archive](media/PVA-as-a-skill/Composer_AddSkillZip.png)
 
-Select what Power Virtual Agents bot skill's Topics you want to add to your Bot Framework bot and press **Next**.
+3. Select what Power Virtual Agents bot skill's topics you want to add to your Bot Framework bot and select **Next**.
 
-![Composer - select a Power Virtual Agents Topics](media/PVA-as-a-skill/Composer_SelectTopics.png)
+    ![Composer - select a Power Virtual Agents Topics](media/PVA-as-a-skill/Composer_SelectTopics.png)
 
-Review and edit your Power Virtual Agents bot skill's Trigger Phrases and press **Next**.
+4. Review and edit your Power Virtual Agents bot skill's trigger phrases and select **Next**.
 
-![Composer - edit trigger phrases](media/PVA-as-a-skill/Composer_EditTriggerPhrases.png)
+    ![Composer - edit trigger phrases](media/PVA-as-a-skill/Composer_EditTriggerPhrases.png)
 
-Make sure the **Orchestrator** option is checked and press **Continue**.
+5. Make sure the **Orchestrator** option is checked and select **Continue**.
 
-![Composer - enable Orchestrator](media/PVA-as-a-skill/Composer_Orchestrator.png)
+    ![Composer - enable Orchestrator](media/PVA-as-a-skill/Composer_Orchestrator.png)
 
-Verify that Power Virtual Agents skill is added to your Bot Framework bot correctly and a new **trigger** with your Power Virtual Agents bot's name is added to the project in Composer.
-![Composer - Power Virtual Agents skill added](media/PVA-as-a-skill/Composer_PVASkillAdded.png)
+6. Verify that the Power Virtual Agents skill is added to your Bot Framework bot correctly and a new trigger with your Power Virtual Agents bot's name is added to the project in Composer.
 
+    ![Composer - Power Virtual Agents skill added](media/PVA-as-a-skill/Composer_PVASkillAdded.png)
+
+## Test you Power Virtual Agents bot as a skill with a Bot Framework bot
+
+You can test that your Bot Framework bot is properly calling a Power Virtual Agents bot as a skill by using the [Bot Framework Emulator](/composer/how-to-connect-to-a-skill#test-in-the-emulator).
 
 >[!IMPORTANT]
->Your Bot Framework bot must be added to the Power Virtual Agents bot's **Allowlist** for the skill connection to work.
+>Your Bot Framework bot must be added to the Power Virtual Agents bot's allowlist for the skill connection to work.
 
-## Test Power Virtual Agents bot as a skill with a Bot Framework bot
-You can test your Bot Framework bot calling a Power Virtual Agents bot as a skill by using [Emulator](https://docs.microsoft.com/en-us/composer/how-to-connect-to-a-skill?tabs=v2x#test-in-the-emulator).
 
-Please make sure that your Bot Framework bot **App ID** is added to the Power Virtual Agents bot's **Allowlist** of your Power Virtual Agents bot first before testing. You can find your Bot Framework bot's **App ID** by going to **Configure** tab and selecting **Development Resources** section in Composer. 
-
-![Composer - Bot App ID](media/PVA-as-a-skill/Composer_BotAppID.png)
 
 ## Learn More
 
 To learn more about developing in Bot Framework Composer and using skills, see these resources:
-- [Skills overview](https://docs.microsoft.com/en-us/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0)
-- [Skills manifest](https://docs.microsoft.com/en-us/azure/bot-service/skills-write-manifest?view=azure-bot-service-4.0&tabs=v2-2)
+- [Skills overview](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0)
+- [Skills manifest](/azure/bot-service/skills-write-manifest?view=azure-bot-service-4.0&tabs=v2-2)
 - [Bot Framework Composer documentation](/composer/) 
-- [Skills in Composer](https://docs.microsoft.com/en-us/composer/concept-skills)
-- [Connect to a remote skill in Composer](https://docs.microsoft.com/en-us/composer/how-to-connect-to-a-skill?tabs=v2x)
-- [Test your skill in Emulator](https://docs.microsoft.com/en-us/composer/how-to-connect-to-a-skill?tabs=v2x#test-in-the-emulator)
+- [Skills in Composer](/composer/concept-skills)
+- [Connect to a remote skill in Composer](/composer/how-to-connect-to-a-skill?tabs=v2x)
+- [Test your skill in Emulator](/composer/how-to-connect-to-a-skill?tabs=v2x#test-in-the-emulator)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
