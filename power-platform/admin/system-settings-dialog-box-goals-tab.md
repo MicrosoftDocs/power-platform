@@ -41,8 +41,8 @@ Set the duration and frequency of the automatic rollup of goals. These settings 
 |                            Settings                            |                                                                                  Description                                                                                   |
 |----------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Set the roll-up expiration time and the roll-up frequency.** |                                                                                                                                                                                |
-|     Days after the goal end date when the rollup will stop     | Default: 30 days. Set the number of days after the ending date of a goal for model-driven apps in Dynamics 365 to stop including a goal in a rollup. |
-|                  Roll-up recurrence frequency                  |                                                      Default: 24 hours. Set the number of hours between each goal rollup.                                                      |
+|     Days after the goal end date when the rollup will stop     | Set the number of days after the ending date of a goal for model-driven apps in Dynamics 365 to stop including a goal in a rollup. <br>**Default**: 30 days.|
+|                  Roll-up recurrence frequency                  |                                                      Set the number of hours between each goal rollup. <br>**Default**: 24 <br>**Limits**: Must be greater than or equal to 24 hours                                                    |
   
 ### See also  
  [Administrator and Sales Manager Guide](/dynamics365/sales-enterprise/admin-guide)  
