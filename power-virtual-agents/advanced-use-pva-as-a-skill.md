@@ -119,7 +119,7 @@ All Power Virtual Agents skill manifests are automatically generated and updated
 
 - **Test manifest**: Allows the Bot Framework bot to connect to the test version of your Power Virtual Agents bot. You can use the test manifest to validate changes in your skill before publishing it.  
     - The test manifest is immediately available for every newly created Power Virtual Agents bot.  
-    It is automatically updated to reflect the changes every time you **save** bot content. 
+    - It is automatically updated to reflect the changes every time you **save** bot content. 
 
 - **Published manifest**: Allows the Bot Framework bot to connect to the published version of your Power Virtual Agents bot.  
     - The published manifest is only available for Power Virtual Agents bots that have been published at least once.  
@@ -131,6 +131,7 @@ All Power Virtual Agents skill manifests are automatically generated and updated
 >To generate your bot's **Published manifest**, your need to [publish your Power Virtual Agents bot](publication-fundamentals-publish-channels.md). 
 
 Both skill manifests can be found on **Manage allowlist** panel.
+
 :::image type="content" source="media/PVA-as-a-skill/Skill_Manifest1.png" alt-text="Power Virtual Agents bot Manifests on the Manage Allowlist panel.":::
 
 Additionally, you can find the skill manifests on the **Details** tab under the **Manage** section on the side navigation pane. The **Details** tab shows other metadata like **Environment ID**, **Tenant ID** and **Bot app ID**.
@@ -150,27 +151,27 @@ You can use Power Virtual Agents bot skill manifests to create a skill connectio
 
 1. In a Bot Framework Composer project, select **+ Add** and then **Connect to a skill**.
 
-    ![Composer - connect Bot Framewok bot to a skill](media/PVA-as-a-skill/Composer_ConnectToSkill.png)
+    :::image type="content" source="media/PVA-as-a-skill/Composer_ConnectToSkill.png" alt-text="Composer - connect Bot Framework bot to a skill":::
 
 2. On the **Add a skill** screen, select a Power Virtual Agents manifest .zip archive and then **Next**.
 
-    ![Composer - select a Power Virtual Agents skill zip archive](media/PVA-as-a-skill/Composer_AddSkillZip.png)
+    :::image type="content" source="media/PVA-as-a-skill/Composer_AddSkillZip.png" alt-text="Composer - select a Power Virtual Agents skill zip archive":::
 
 3. Select what Power Virtual Agents bot skill's topics you want to add to your Bot Framework bot and select **Next**.
 
-    ![Composer - select a Power Virtual Agents Topics](media/PVA-as-a-skill/Composer_SelectTopics.png)
+    :::image type="content" source="media/PVA-as-a-skill/Composer_SelectTopics.png" alt-text="Composer - select a Power Virtual Agents Topics":::
 
 4. Review and edit your Power Virtual Agents bot skill's trigger phrases and select **Next**.
 
-    ![Composer - edit trigger phrases](media/PVA-as-a-skill/Composer_EditTriggerPhrases.png)
+    :::image type="content" source="media/PVA-as-a-skill/Composer_EditTriggerPhrases.png" alt-text="Composer - edit trigger phrases":::
 
 5. Make sure the **Orchestrator** option is checked and select **Continue**.
 
-    ![Composer - enable Orchestrator](media/PVA-as-a-skill/Composer_Orchestrator.png)
+    :::image type="content" source="media/PVA-as-a-skill/Composer_Orchestrator.png" alt-text="Composer - enable Orchestrator":::
 
 6. Verify that the Power Virtual Agents skill is added to your Bot Framework bot correctly and a new trigger with your Power Virtual Agents bot's name is added to the project in Composer.
 
-    ![Composer - Power Virtual Agents skill added](media/PVA-as-a-skill/Composer_PVASkillAdded.png)
+    :::image type="content" source="media/PVA-as-a-skill/Composer_PVASkillAdded.png" alt-text="Composer - Power Virtual Agents skill added":::
 
 ## Test you Power Virtual Agents bot as a skill with a Bot Framework bot
 
