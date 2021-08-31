@@ -112,15 +112,15 @@ search.app:
 
 ## How to display the Enable Server-Based SharePoint Integration wizard
 
-After server-based integration is enabled, the Enable Server-Based SharePoint Integration wizard no longer appears in the Document Management area of advanced Settings. To display the Enable Server-Based SharePoint Integration wizard so that you can reconfigure it, you must deactivate all SharePoint sites and disable OneDrive document management. 
+After server-based integration is enabled, the Enable Server-Based SharePoint Integration wizard no longer appears in the Document Management area of Settings. To display the Enable Server-Based SharePoint Integration wizard so that you can reconfigure it, you must deactivate all SharePoint sites and disable OneDrive document management. 
 
 ### Disable document management SharePoint sites and OneDrive
 
 1. Sign into Power Apps, select **Settings** (gear) on the upper right, and then select **Advanced settings**.
 1. Go to **Settings** > **Document Management** > **SharePoint Sites**.
 1. In the view selector, select **Active SharePoint Sites**.
-1. Select the SharePoint site, on the command bar select **Deactivate**, and then select **Deactivate** at the message box prompt.
-1. Repeat the previous step for each SharePoint site.
+1. Select all SharePoint sites in the list, on the command bar select **Deactivate**, and then select **Deactivate** at the message box prompt.
+    :::image type="content" source="media/deactivate-all-sharepoint-sites.png" alt-text="Deactivate all SharePoint sites":::
 1. Go to **Settings** > **Document Management** > **Enable OneDrive for Business**.
 1. Clear the **Enable OneDrive for Business** option, and then select **OK**.
 
