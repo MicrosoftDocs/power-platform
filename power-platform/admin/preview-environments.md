@@ -19,7 +19,7 @@ search.app:
 
 # Power Apps Preview Program
 
-Power Apps updates the platform and its capabilities every few days or weeks. The Power Apps Preview program is a way to get early access to those upcoming functionalities and updates prior to availability in other regions (where customer production apps are deployed). 
+Microsoft Power Apps updates the platform and its capabilities every few days or weeks. The Power Apps Preview program is a way to get early access to those upcoming functionalities and updates prior to availability in other regions (where customer production apps are deployed). 
 
 With the Power Apps Preview program, you can:
 - **Try out, learn, and dogfood upcoming functionalities**: Many functionalities will be rolled out first in the preview for a few days to get feedback. By participating in the Preview program, you can learn about new functionalities sooner and provide feedback. Also, you will be ready to quickly take advantage of new functionalities as soon as they reach regions where their production apps are created.
@@ -37,7 +37,7 @@ Post your feedback in the [Power Apps Community Forum](https://powerusers.micros
 
 ### Model-driven apps and app management
 
-You can create, manage, and share apps using [Power Apps web portal][2]. To use the preview functionalities, we recommend that you are in a preview or sandbox environment and not in a production environment. Then, go to the preview version of [Power Apps web portal][3] (make.preview.powerapps.com).
+You can create, manage, and share apps using [Power Apps][2]. To use the preview functionalities, we recommend that you are in a preview or sandbox environment and not in a production environment. Then, go to the preview version of [Power Apps][3] (make.preview.powerapps.com).
 
 Post your feedback in the [Power Apps Community Forum](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1).
 
