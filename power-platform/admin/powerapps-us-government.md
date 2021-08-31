@@ -251,7 +251,7 @@ Having a problem with your service? You can create a support request to get the 
 More information: [Contact Technical Support](get-help-support.md)
 
 ### See also
-[Microsoft Power Automate US Government](/flow/us-govt) <br />
+[Microsoft Power Automate US Government](/power-automate/us-govt) <br />
 [UI Flows](/power-automate/ui-flows/overview) <br />
 [Dynamics 365 US Government](./microsoft-dynamics-365-government.md)
 
