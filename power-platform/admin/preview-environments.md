@@ -31,7 +31,7 @@ To access the preview functionalities, you need to be in a preview environment o
 
 ### Canvas apps
 
-You can create canvas-based apps using the next version of Power Apps. This can be done by creating apps in a preview environment and managing the canvas app preview settings. More information: [Working with environments and Microsoft Power Apps](working-with-environments.md)
+You can create canvas-based apps using the next version of Power Apps. This can be done by creating apps in a preview environment and managing the canvas app preview settings. More information: [Understand experimental, preview, and retired features in Power Apps](/powerapps/maker/canvas-apps/working-with-experimental-preview)
 
 Post your feedback in the [Power Apps Community Forum](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1).
 
