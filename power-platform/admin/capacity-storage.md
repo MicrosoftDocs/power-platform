@@ -300,7 +300,7 @@ Tables ending in “– Analytics” are tables used by one or more Insights app
 - [Field Service](/dynamics365/field-service/reports) 
 
 ### See also
-
+[Add Microsoft Dataverse storage capacity](add-storage.md) <br />
 [Capacity add-ons](capacity-add-on.md)<br />
 [Automatic tuning in Azure SQL Database](/azure/sql-database/sql-database-automatic-tuning) <br />
 [What's new in storage](whats-new-storage.md) <br />
