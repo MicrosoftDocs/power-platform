@@ -113,7 +113,7 @@ Apart from the daily API request limit, there are other service protection limit
 Review the following resources for information about *current* service protection limits for each service:
 
 - [Dataverse  limits](/powerapps/developer/common-data-service/api-limits): applicable for model-driven apps and customer engagement apps (such as Dynamics 365 Sales and Customer Service), Power Apps, and Power Automate connecting to Dataverse/customer engagement apps
-- [Power Automate limits](/flow/limits-and-config): applicable for automated, scheduled, and instant flows
+- [Power Automate limits](/power-automate/limits-and-config): applicable for automated, scheduled, and instant flows
 - [Limits in connectors](/connectors/): applicable for Power Automate and Power Apps
 
 ## Frequently asked questions
@@ -134,7 +134,7 @@ When users exceed their limits, administrators can see this in the admin center 
 
 Users won't be blocked from using an app or flow for occasional and reasonable overages at this point in time. However, if a user or flow exceeds the limits consistently for an extended period of time (more than 14 days), that user may be disabled or flow turned off.
 
-In addition, there are other applicable limits for [Dataverse](/powerapps/developer/common-data-service/api-limits), [Power Automate](/flow/limits-and-config), and [Connectors](/connectors/) that might directly impact your users, and those limits may not have any affordance for occasional or reasonable overages. Flow owners will be notified via email if their flow is failing or encountering such limits, so be sure to monitor email for notifications about such flows.
+In addition, there are other applicable limits for [Dataverse](/powerapps/developer/common-data-service/api-limits), [Power Automate](/power-automate/limits-and-config), and [Connectors](/connectors/) that might directly impact your users, and those limits may not have any affordance for occasional or reasonable overages. Flow owners will be notified via email if their flow is failing or encountering such limits, so be sure to monitor email for notifications about such flows.
 
 ### Will there be a transition period for existing customers?
 
