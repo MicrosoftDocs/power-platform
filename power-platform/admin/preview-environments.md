@@ -35,7 +35,7 @@ You can create canvas-based apps using the next version of Power Apps. This can 
 
 ### Power Apps portals, model-driven apps, and app management
 
-You can create, manage, and share apps using [Power Apps][2]. To use the preview functionalities, we recommend that you are in a preview or sandbox environment and not in a production environment. Then, go to the preview version of [Power Apps][3] (make.preview.powerapps.com).
+You can create, manage, and share apps using [Power Apps][2] (make.powerapps.com). To use the preview functionalities, we recommend that you are in a preview or sandbox environment and not in a production environment. Then, go to the preview version of [Power Apps][3] (make.preview.powerapps.com).
 
 <!-- The link to the preview web player doesn't work
 ### Playing apps with the Power Apps web player
