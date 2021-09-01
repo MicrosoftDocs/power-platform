@@ -77,7 +77,8 @@ When users are added to Dataverse, they will get roles assigned automatically ba
 
 2. Users with a valid license will get corresponding mapped roles assigned to them automatically. Removal of the respective license will result in automatic role removal. License-based default role management is not applicable for users in these types of environments: Dataverse for Teams, Trial, and Developer. 
 
-3. For the Default environment type, “BasicUser” and “EnvironmentMaker” roles will be assigned automatically to all users, depending on if the environment has Dataverse or not.
+3. For the Default environment type, “BasicUser” and “EnvironmentMaker” roles will be assigned automatically to all users added in Dataverse.
+
 4. In the Finance and Operations linked Dataverse environment, Finance and Operations Basic User and Environment Maker security roles are automatically assigned to all active users in Dataverse. 
 
 ### See also
