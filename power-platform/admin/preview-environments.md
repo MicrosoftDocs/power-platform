@@ -1,5 +1,5 @@
 ---
-title: Preview environments | Microsoft Docs
+title: Power Apps preview program | Microsoft Docs
 description: Get early access to functionalities with Power Apps Preview Program
 author: jimholtz
 ms.service: power-platform
@@ -17,12 +17,12 @@ search.app:
   - Flow
 ---
 
-# Power Apps Preview Program
+# Power Apps preview program
 
-Microsoft Power Apps updates the platform and its capabilities every few days or weeks. The Power Apps Preview program is a way to get early access to those upcoming functionalities and updates prior to availability in other regions (where customer production apps are deployed). 
+Microsoft Power Apps updates the platform and its capabilities every few days or weeks. The Power Apps preview program is a way to get early access to those upcoming functionalities and updates prior to availability in other regions (where customer production apps are deployed).
 
-With the Power Apps Preview program, you can:
-- **Try out, learn, and dogfood upcoming functionalities**: Many functionalities will be rolled out first in the preview for a few days to get feedback. By participating in the Preview program, you can learn about new functionalities sooner and provide feedback. Also, you will be ready to quickly take advantage of new functionalities as soon as they reach regions where their production apps are created.
+With the Power Apps preview program, you can:
+- **Try out, learn, and dogfood upcoming functionalities**: Many functionalities will be rolled out first in the preview for a few days to get feedback. By participating in the preview program, you can learn about new functionalities sooner and provide feedback. Also, you will be ready to quickly take advantage of new functionalities as soon as they reach regions where their production apps are created.
 - **Enable business continuity by ensuring current apps will continue to work** with the upcoming updates (vNext) of Power Apps.
 
 ## What in Power Apps is available for preview?
@@ -33,7 +33,7 @@ To access the preview functionalities, you need to be in a preview environment o
 
 You can create canvas-based apps using the next version of Power Apps. This can be done by creating apps in a preview environment and managing the canvas app preview settings. More information: [Understand experimental, preview, and retired features in Power Apps](/powerapps/maker/canvas-apps/working-with-experimental-preview)
 
-### Model-driven apps and app management
+### Power Apps portals, model-driven apps, and app management
 
 You can create, manage, and share apps using [Power Apps][2]. To use the preview functionalities, we recommend that you are in a preview or sandbox environment and not in a production environment. Then, go to the preview version of [Power Apps][3] (make.preview.powerapps.com).
 
@@ -49,7 +49,7 @@ For Power Platform, all the apps, flows, and related resources are stored in an 
 > [!div class="mx-imgBorder"] 
 > ![Preview environment.](./media/preview-environment/env3-preview.png "Preview environment")
 
-Select the region for the environment as **Preview (United States)** and accept the consent for joining the Preview Program to create the environment to get access to the next version (vNext) of Power Apps.
+Select the region for the environment as **Preview (United States)** and accept the consent for joining the preview program to create the environment to get access to the next version (vNext) of Power Apps.
 All the apps and other resources created in this environment are on the vNext version of the platform (SAAS).
 
 ## How to learn about the latest updates?
