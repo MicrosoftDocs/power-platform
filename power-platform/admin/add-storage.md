@@ -51,6 +51,9 @@ After you determine how much storage you're using, you can add or remove storage
    
    :::image type="content" source="media/storage-search-capacity.png" alt-text="Search for capacity to list Dynamics 365 apps for capacity add-on storage to purchase.":::
 
+   > [!NOTE]
+   > Common Data Service capacity refers to Microsoft Dataverse capacity. The name will be changed in the Microsoft 365 Purchase Services page in the future.
+
 4. Select your products as required: Common Data Service File Capacity, Common Data Service Log Capacity, or Common Data Service Database capacity. Then, select **Details**.
 
 5. From the **Select license quantity** box, enter the number of licenses to purchase.
@@ -58,8 +61,5 @@ After you determine how much storage you're using, you can add or remove storage
 6. Select your billing frequency, and then select **Buy** to complete the purchase process.
 
    :::image type="content" source="media/storage-file-capacity-purchase.png" alt-text="Buy Dataverse File capacity storage add-on.":::
-
-> [!NOTE]
-> Common Data Service capacity refers to Microsoft Dataverse capacity. The name will be changed in the Microsoft 365 Purchase Services page in the future.
 
 After completing the purchase process, the additional storage capacity will appear in the Power Platform admin center **Capacity** page (**Resources** > **Capacity** > **Summary**).
