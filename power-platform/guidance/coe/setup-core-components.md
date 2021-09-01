@@ -189,15 +189,16 @@ We will more quickly resolve issues around dependencies between tables by enabli
     1. Select **Installed apps**.
     1. Select **See all** for Center of Excellence - Core Components.
     1. Select **Cloud flows**.
-1. Turn on: CLEANUP - Admin \| Sync Template v3 (Check Deleted)
-1. Wait until it finishes before you turn on any other flows.
-1. Turn on: Admin \| Sync Template V3 (Connectors)
-1. Wait until it finishes before you turn on any other flows.
-1. Turn on the Admin \| Sync Template flows for the following object types: Apps, Custom Connectors, Desktop Flows, Flows, Model Driven Apps, and PVA
-1. Turn on Admin \| Sync Template v3.
-1. Wait for Admin \| Sync Template v3 to complete its run and then turn it back off. This will avoid write conflicts for large organizations.
-1. Check the Admin \| Sync Template flows for apps, flows and other resources and wait until all of these complete.
-1. Turn back on Admin \| Sync Template v3.
+1. Turn on: CLEANUP HELPER - Check Deleted (Cloud Flows), CLEANUP HELPER - Check Deleted (Model Driven Apps), CLEANUP HELPER - Check Deleted (Canvas Apps) and CLEANUP HELPER - Check Deleted (PVA).
+2. Turn on: CLEANUP - Admin \| Sync Template v3 (Check Deleted)
+3. Wait until it finishes before you turn on any other flows.
+4. Turn on: Admin \| Sync Template V3 (Connectors)
+5. Wait until it finishes before you turn on any other flows.
+6. Turn on the Admin \| Sync Template flows for the following object types: Apps, Custom Connectors, Desktop Flows, Flows, Model Driven Apps, and PVA
+7. Turn on Admin \| Sync Template v3.
+8. Wait for Admin \| Sync Template v3 to complete its run and then turn it back off. This will avoid write conflicts for large organizations.
+9. Check the Admin \| Sync Template flows for apps, flows and other resources and wait until all of these complete.
+10. Turn back on Admin \| Sync Template v3.
 
 >[!IMPORTANT]
 > Note that **Admin \| Compliance Detail Request v3** will not pass until you complete setup of the Governance component so you should leave it turned off until then.
