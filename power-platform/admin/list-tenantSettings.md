@@ -83,11 +83,11 @@ The response is always a **200 OK** response, unless you aren't correctly authen
 | Property | Type | Description |
 |----------|------|-------------|
 |walkMeOptOut| Boolean | Ability to opt out of guided experiences using WalkMe in Power Platform.  Default is false.|
-|disableNPSCommentsReachout| Boolean | Ability to disable NPS prompts in Power Platform.  Default is false.|
+|disableNPSCommentsReachout| Boolean | Ability to disable re-surveying users who left prior feedback via NPS prompts in Power Platform.  Default is false.|
 |disableNewsletterSendout | Boolean | XX|
 |disableEnvironmentCreationByNonAdminusers | Boolean | Restrict all environments to be created by Tenant Admins, Power Platform Admins, or Dynamics365 Service Admins.  Default is false.|
 |disablePortalsCreationByNonAdminusers | Boolean | Restrict all portals to be created by Tenant Admins, Power Platform Admins, or Dynamics365 Service Admins.  Default is false.|
-|disableSurveyFeedback | Boolean | Ability to disable survey feedback prompts in Power Platform.  Default is false.|
+|disableSurveyFeedback | Boolean | Ability to disable all NPS survey feedback prompts in Power Platform.  Default is false.|
 |disableTrialEnvironmentCreationByNonAdminusers | Boolean | Restrict all trial environments to be created by Tenant Admins, Power Platform Admins, or Dynamics365 Service Admins.  Default is false.|
 |disableCapacityAllocationByEnvironmentAdmins | Boolean | XX|
 |disableSupportTicketsVisibleByAllUsers | Boolean | XX|
