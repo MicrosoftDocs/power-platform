@@ -12,7 +12,7 @@ ms.custom: "azure, extend, ceX"
 ms.collection: virtual-agent
 ---
 
-# Extend your bot using Bot Framework skills
+# Configure a skill for use in Power Virtual Agents
 
 Select the version of Power Virtual Agents you're using here:
 
@@ -41,30 +41,18 @@ The following table will help determine when to use skills for a conversation.
 | **Actions** | Use Flows to trigger server-side single-turn actions. For example, call an HTTP API or trigger a custom connector. | Use skills to trigger server-side and client-side events and actions. For example, navigate to a page upon bot response. |
 
 
-## Configure a skill for use in Power Virtual Agents
+## Configure a skill
 First, [create a Power Virtual Agents bot](authoring-first-bot.md) and [create and deploy skill using pro-code tools](https://go.microsoft.com/fwlink/?linkid=2110533) into your organization.
 
 >[!NOTE]
 >Power Virtual Agents only supports skills built using [Bot Framework SDK version 4.7](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0&preserve-view=true) or above.
 
-Before registering the skill, provide the bot's ID to your skills developer to authorize the bot to call actions in the skill. [Learn more about skill allowlist](/azure/bot-service/skill-implement-skill).
+Before registering the skill, provide the bot's ID to your skills developer to authorize the bot to call actions in the skill. [Learn more about skill allowlist](/azure/bot-service/skill-implement-skill). 
 
-**Add bot to skill's allowlist:**
-
-1. In the [Power Virtual Agents portal](https://web.powerva.microsoft.com), on the side navigation pane, expand the **Manage** menu and select **Skills**.
-
-   ![Select Manage, then Skills.](media/skills-menu.png)
-
-1. At the top of the skills page, select **Provide ID for allow list**.
- 
-   ![Select Provide ID for allow list button.](media/skills-provide-id.png)
-
-1. A window will show with your unique ID. Copy this ID and provide it to your skills developer.
-
-   ![Windows showing unique ID.](media/skills-provide-id-modal.png)
+You can get your bot's ID from the **Add skill** window.
 
 
-**Enter the skill manifest URL to add a skill to your bot:**
+**Add a skill to your bot:**
 
 1. In the [Power Virtual Agents portal](https://web.powerva.microsoft.com), on the side navigation pane, expand the **Manage** menu and select **skills**.
 
@@ -74,7 +62,14 @@ Before registering the skill, provide the bot's ID to your skills developer to a
  
    ![Select Add skill button.](media/skills-add-skill.png)
 
+1. Copy your bot's ID and provide that to your skills developer.
+
+   ![Screenshot highlighting the bot ID on the side of the Add a skill window.](media/skills-get-bot-id.png)
+
 1. Enter the URL to the skill manifest. A skill's manifest contains the information that your bot will need to trigger actions within a skill.
+
+
+   ![Add URL to the skill manifest.](media/skills-add-url.png)
 
 1. Select **Next** to begin the [validation process](#troubleshooting-errors-during-skill-registration). When successful, your skill is added to your bot. You can now [use this skill in your topics](advanced-use-skills.md). 
 
