@@ -13,7 +13,9 @@ ms.custom: "cex"
 ms.collection: virtualagent
 ---
 
-# Use a Power Virtual Agents bot as a skill
+# Use a Power Virtual Agents bot as a skill (Preview)
+
+- [!INCLUDE [Preview documentation notice](includes/cc-beta-prerelease-disclaimer.md)]
 
 You can use your Power Virtual Agents bot as a [skill](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0&preserve-view=true) with Bot Framework bots. 
 
