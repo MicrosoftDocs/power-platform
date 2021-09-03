@@ -40,7 +40,7 @@ For early access to upcoming changes in canvas apps, use the following environme
 
 ### Portals, model-driven apps and app management
 
-You can create, manage, and share apps using [Power Apps][2] (make.powerapps.com). To use the preview functionalities, we recommend that you are in a preview or sandbox environment and not in a production environment. Then, go to the preview version of [Power Apps][3] (make.preview.powerapps.com).
+You can create, manage, and share apps using [Power Apps][2] (make.powerapps.com). To use the preview functionalities, we recommend that you are in a [preview](#how-to-get-early-access-to-the-upcoming-updates) or [sandbox](sandbox-environments.md) environment and not in a production environment. Then, go to the preview version of [Power Apps][3] (make.preview.powerapps.com).
 
 <!-- The link to the preview web player doesn't work
 ### Playing apps with the Power Apps web player
