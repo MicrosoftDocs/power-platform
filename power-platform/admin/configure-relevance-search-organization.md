@@ -55,7 +55,7 @@ All searchable fields in Relevance Search  are processed in the language most cl
 
 ## Enable Relevance Search
 
-Relevance Search is an opt-in feature, set to **Off** by default. Enabling Relevance Search makes this search option available to all members of your organization. All of your apps will have the global search experience with the search bar in the header for all model-driven apps in your environment. Individual users won't be able to switch to [categorized search](/powerapps-docs/user/quick-find.md).
+Relevance Search is an opt-in feature, set to **Off** by default. Enabling Relevance Search makes this search option available to all members of your organization. All of your apps will have the global search experience with the search bar in the header for all model-driven apps in your environment. Individual users won't be able to switch to [categorized search](/powerapps/user/quick-find).
 
 Relevance Search doesn't support lifecycle operations (create, delete, backup, recover, copy, reset, and so on). In the event of such an operation, re-enable Relevance Search.
 
