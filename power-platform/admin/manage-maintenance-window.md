@@ -1,9 +1,9 @@
 ---
 title: "Preview: Manage your maintenance window  | MicrosoftDocs"
 description: How to manage when you'll receive service updates.
-author: jimholtz
-ms.author: jimholtz
-ms.reviewer: samathur
+author: samathur
+ms.author: samathur
+ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
