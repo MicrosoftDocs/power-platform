@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/31/2021
+ms.date: 09/03/2021
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -31,9 +31,14 @@ To access the preview functionalities, you need to be in a preview environment o
 
 ### Canvas apps
 
-You can create canvas-based apps using the next version of Power Apps. This can be done by creating apps in a preview environment and managing the canvas app preview settings. More information: [Understand experimental, preview, and retired features in Power Apps](/powerapps/maker/canvas-apps/working-with-experimental-preview)
+For preview, experimental, and retired features in canvas apps, use [Power Apps Studio](/powerapps/maker/canvas-apps/working-with-experimental-preview) to turn the features On or Off while editing your app.
 
-### Model-driven apps and app management
+For early access to upcoming changes in canvas apps, use the following environments:
+
+- [Preview environments](#how-to-get-early-access-to-the-upcoming-updates) - Upcoming changes are typically rolled out to preview environments 1-2 weeks before they're available to all other regions.
+- [Sandbox environments](sandbox-environments.md) - To access preview version of Power Apps on sandbox environments, use make.preview.powerapps.com.
+
+### Portals, model-driven apps and app management
 
 You can create, manage, and share apps using [Power Apps][2] (make.powerapps.com). To use the preview functionalities, we recommend that you are in a preview or sandbox environment and not in a production environment. Then, go to the preview version of [Power Apps][3] (make.preview.powerapps.com).
 
