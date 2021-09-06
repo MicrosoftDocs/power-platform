@@ -323,6 +323,44 @@ You can customize the email sent out by the flow; by default, it will look like 
 
 ## Apps
 
+### Admin - Command Center
+
+A canvas app used by admins as a starting point to launch other apps in the CoE Starter Kit and review content relevant to admins.
+
+Use this app to:
+
+- Launch CoE Starter Kit apps and other bookmarks.
+- Review CoE Starter Kit service health by checking sync flows that have recently failed.
+- Update environment variables used in the CoE Starter Kit.
+- View Microsoft 365 Message Center news related to Microsoft Power Platform.
+- Download the latest CoE Starter Kit version and raise support tickets with the team.
+- Launch Microsoft Learn learning paths to learn more about Microsoft Power Platform.
+
+**Permission**: Intended to be used only by admins. Power Platform Service Admin or Global Admin permission is required. Share this app with your CoE Admins.
+
+**Prerequisite**: This app uses Microsoft Dataverse. If you have installed this solution in a Production environment, a Premium license is required for every app user. If you have installed this solution in a Dataverse for Teams environment, a Microsoft 365 license is required for every user.
+
+>[!NOTE]
+> When you first launch the app, bookmarks to all apps included in the CoE Starter Kit get created. Additionally add other relevant bookmarks such as links to the Power BI dashboard and your Power Platform wiki and community by selecting **Edit bookmarks**.
+
+![Admin - Command Center canvas app](media\commandcenter1.png "Admin - Command Center canvas app")
+
+### Maker - Command Center
+
+A canvas app used by makers as a starting point to launch other apps in the CoE Starter Kit and read Power Platform news.
+
+Use this app to:
+
+- Launch CoE Starter Kit apps and other bookmarks.
+- Launch the latest posts of the Power Apps, Power Automate, Power BI and Power Virtual Agent blogs.
+- Launch Microsoft Learn learning paths to learn more about Microsoft Power Platform.
+
+**Permission**: Intended to be used by makers. Share this app with the Power Platform Maker SR security role. 
+
+**Prerequisite**: This app uses Microsoft Dataverse. If you have installed this solution in a Production environment, a Premium license is required for every app user. If you have installed this solution in a Dataverse for Teams environment, a Microsoft 365 license is required for every user.
+
+![Maker - Command Center canvas app](media\commandcenter2.png "Maker - Command Center canvas app")
+
 ### DLP Editor v2
 
 DLP Editor v2 is a canvas app that reads and updates data loss prevention (DLP) policies while showing a list of apps and flows that are impacted by the policy configurations.
@@ -347,7 +385,7 @@ When you first open the app catalog, you won't see any apps there. There's a fie
 
 **Permission**: As soon as you're using this process, you can share the app catalog with the entire organization.
 
-**Prerequisite**: This app uses Microsoft Dataverse; a Premium license is therefore required for every app user.
+**Prerequisite**: This app uses Microsoft Dataverse. If you have installed this solution in a Production environment, a Premium license is required for every app user. If you have installed this solution in a Dataverse for Teams environment, a Microsoft 365 license is required for every user.
 
 ![App Catalog.](media/coe67.png "App Catalog")
 
@@ -413,29 +451,34 @@ You can use this app to see Microsoft Teams environments.
 
 ### Admin - Power Platform Resource RMS (Request Management System)
 
-A canvas app used by admins as an interface to view and approve or reject requests to create or modify Power Platform development resources. Supports Environment Creation Requests and changes to DLP Policies are logged in the DLP Policy Change Request table.    
+A canvas app used by admins as an interface to view and approve or reject requests to create or modify Power Platform development resources. Supports Environment Creation Requests and changes to DLP Policies are logged in the DLP Policy Change Request table.
 
 Use this app to:
-- View all Environment Creation Requestss in detail.
+
+- View all Environment Creation Requests in detail.
 - Approve or reject Environment Creation Requests.
-- View if connectors will be blocked or restricted by existing or modified DLP Policies. Modifications made in the app will update those Policies. 
+- View if connectors will be blocked or restricted by existing or modified DLP Policies. Modifications made in the app will update those Policies.
 
 **Permission**: Intended to be used only by admins. Power Platform Service Admin or Global Admin permission is required. Share this app with your CoE Admins.
 
-![Power Platform Resource RMS canvas app.](media\dev-resources-admin-details.png "Power Platform Resource RMS canvas app") 
+**Prerequisite**: This app uses Microsoft Dataverse. If you have installed this solution in a Production environment, a Premium license is required for every app user. If you have installed this solution in a Dataverse for Teams environment, a Microsoft 365 license is required for every user.
 
+![Power Platform Resource RMS canvas app.](media\dev-resources-admin-details.png "Power Platform Resource RMS canvas app")
 
 ### Power Platform Developer Resources
 
 A canvas app designed to easily submit requests for Power Platform resources (such as Environment Creation Requests).
 
 Use this app to:
+
 - Submit new Environment Creation Requests.
 - View existing requests in any state that was submitted by that user. Expiration timeline and link to the Live environments can be found here.
 
 **Permission**: As soon as you're using this process, you can share the app with all authorized Makers or the entire organization, depending on which users you want to allow Environment ownership. Requires the Power Platform Maker SR (security role) to use the Dataverse tables.
 
-![Power Platform Developer Resources canvas app.](media\dev-resources-maker-env.png "Power Platform Resource RMS canvas app") 
+**Prerequisite**: This app uses Microsoft Dataverse. If you have installed this solution in a Production environment, a Premium license is required for every app user. If you have installed this solution in a Dataverse for Teams environment, a Microsoft 365 license is required for every user.
+
+![Power Platform Developer Resources canvas app.](media\dev-resources-maker-env.png "Power Platform Resource RMS canvas app")
 
 ## Power BI report
 
