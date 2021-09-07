@@ -203,7 +203,7 @@ The nurture components solution contains five flows:
 
 -  Training in a day \| Reminder 3 days prior to event
 
-Follow the same instructions to configure the flows as explained in [Activate the sync template flows](setup-core-components.md#activate-the-sync-template-flows).
+Follow the same instructions to configure the flows as explained in [Activate the sync template flows](setup-core-components.md#activate-the-flows).
 
 ## Share apps with your organization
 

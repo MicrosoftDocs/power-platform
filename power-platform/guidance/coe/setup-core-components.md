@@ -229,11 +229,14 @@ We will more quickly resolve issues around dependencies between tables by enabli
 >[!IMPORTANT]
 > Note that **Admin \| Compliance Detail Request v3** will not pass until you complete setup of the Governance component so you should leave it turned off until then.
 
-### (Optional) Create an Azure AD app registration for the Graph API
+### (Optional) Create an Azure AD app registration to connect to Microsoft Graph
 
-The [Admin - Command Center](core-components.md#admin---command-center) 
+>[!NOTE]
+> Only complete this steps if you want to review Power Platform related [Microsoft 365 Message Center](/microsoft-365/admin/manage/message-center?view=o365-worldwide) updates in the [Admin - Command Center](core-components.md#admin---command-center) canvas app.
 
-Using these steps, you'll set up an Azure AD app registration that will be used in a custom connector and Power Automate flow to connect to the audit log. More information: [Get started with Office 365 Management APIs](/office/office-365-management-api/get-started-with-office-365-management-apis)
+The [Admin - Command Center](core-components.md#admin---command-center) connects to [Microsoft Graph API](/graph/api/serviceannouncement-list-messages) to get [Microsoft 365 Message Center](/microsoft-365/admin/manage/message-center?view=o365-worldwide) updates.
+
+Using these steps, you'll set up an Azure AD app registration that will be used in a cloud flow to connect to the Graph API. More information: [Use the Microsoft Graph API](/graph/use-the-api?context=graph%2Fapi%2F1.0&view=graph-rest-1.0)
 
 1. Sign in to [portal.azure.com](https://portal.azure.com).
 
@@ -243,29 +246,19 @@ Using these steps, you'll set up an Azure AD app registration that will be used 
 
 1. Select **+ New Registration**.
 
-1. Enter a name (for example, **Microsoft 365 Management**), don't change any other setting, and then select **Register**.
+1. Enter a name (for example, **CoE Command Center**), don't change any other setting, and then select **Register**.
 
 1. Select **API Permissions** > **+ Add a permission**.
 
    ![API Permissions - Add a permission.](media/coe34.png "Add a permission")
 
-1. Select **Office 365 Management API**, and configure permissions as follows:
+1. Select **Microsoft Graph**, and configure permissions as follows:
 
-   1. Select **Delegated permissions**, and then select **ActivityFeed.Read**.
-
-      ![Delegated permissions.](media/coe36.png "Delegated permissions")
-
-   1. Select **Application permissions**, and then select **ActivityFeed.Read** and **ServiceHealth.Read**.
-
-      ![Application permissions.](media/coe37.png "Application permissions")
-
+   1. Select **Delegated permissions**, and then select **ServiceMessage.Read.All**.
+   1. Select **Application permissions**, and then select **ServiceMessage.Read.All**.
    1. Select **Add permissions**.
 
 1. Select **Grant Admin Consent for (your organization)**.
-
-   The API permissions now reflect delegated **ActivityFeed.Read**, and application **ActivityFeed.Read** and **ServiceHealth.Read** permissions, with a status of **Granted for _(your organization)_**.
-
-   ![API permissions.](media/coe38.png "API permissions")
 
 1. Select **Certificates and secrets**.
 
@@ -277,9 +270,19 @@ Using these steps, you'll set up an Azure AD app registration that will be used 
 
 1. Copy and paste the **Secret** to a text document in Notepad for the time being.
 
-1. Select **Overview**, and copy and paste the application (client) ID and directory (tenant) ID values to the same text document; be sure to make a note of which GUID is for which value. You'll need these values in the next step as you configure the custom connector.
+1. Select **Overview**, and copy and paste the application (client) ID value to the same text document; be sure to make a note of which GUID is for which value. You'll need these values in the next step as you configure the custom connector.
 
-Leave the Azure portal open, because you'll need to make some configuration updates after you set up the custom connector.
+1. Go to [make.powerapps.com](https://make.powerapps.com/), select **Solutions**, and then open the **Center of Excellence - Core Components** solution to view the flows.
+
+1. Edit the **Command Center App >  Get M365 Service Messages** flow.
+
+1. Update the **List serviceAnnouncements from Graph** with your client ID and client secret.
+    ![Update HTTP action with client ID and secret](media/commandcenter3.png "Update HTTP action with client ID and secret")
+
+    >[!NOTE]
+    > We recommend storing the client ID and secret in Azure Key Vault and using the [Azure Key Vault connector](/connectors/keyvault/) to retrieve them in the flow.
+
+1. **Save** this flow.
 
 ## Set up Audit Logs solution
 
