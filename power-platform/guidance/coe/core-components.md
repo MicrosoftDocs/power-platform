@@ -265,7 +265,7 @@ Additional to the above listed inventory tables, the following helper tables sup
 
 | Flow Name | Type | Interval | Description |
 | ---- | ---- | --- | ---- |
-| Admin \| Capacity Alerts | Scheduled | Daily | This flow checks actual capacity consumption and compares it with approved capacity, that an admin sets. The flow will send an alert to the admin for environments that exceed the approved capacity, or are at 80% of approved capacity. |
+| Admin \| Capacity Alerts | Scheduled | Daily | This flow checks actual capacity consumption and compares it with approved capacity, that an admin sets. The flow will send an alert to the admin for environments that exceed the approved capacity, or are at 80% of approved capacity. The approved capacity can be set in the Power Platform Admin View model-driven app. |
 | Admin \| Sync Template v3 | Schedule | Daily | This flow retrieves the environments in your tenant by using [List Environments as Admin](/connectors/powerplatformforadmins/#list-environments-as-admin), and creates or updates a record for each environment in the Dataverse Environment table. Running this flow will also trigger the rest of the sync flows indirectly by updating the environment records in the Dataverse instance. |
 | Admin \| Sync Template v3 (Apps) | Automated | triggered by Admin \| Sync Template v3 | This flow gets app information by using [Get Apps as Admin](/connectors/powerappsforadmins/#get-apps-as-admin). This information is then created or updated in the PowerApps App table. |
 |Admin \| Sync Template v3 (Connectors) | Scheduled | Daily | This flow gets connector information by using [Get Connectors](/connectors/powerappsforappmakers/#get-connectors), and stores information such as the connector name, publisher, and tier. |
@@ -293,9 +293,11 @@ Additional to the above listed inventory tables, the following helper tables sup
 | Env Request \| Create approved environment | Automated | when an Environment Creation Request’s status is updated to Approved state | Provisions the Environment and other resources identified in the request. |
 | Env Request \| Notify admin when a new request is submitted | Automated | when a new Environment Creation Request record’s status is updated by a user to Pending state | Sends an email to the admin alias with instructions on how to review the request. |
 | Env Request \| Notify requestor when rejected | Automated | when an Environment Creation Request’s status is updated to Rejected state | Sends an email notification to the requestor with the rejection status and reason, then changes the request to inactive. |
-| HELPER - CanvasAppOperatons | Child Flow | Instant | this flow takes in the environment, app, and operation to perform as well as the GUID for the new maker if the operation is to reassign ownership. The operations supported are Delete and Assign (which reassigns owner). It performs the action on the actual object in the tenant and also updates the inventory. |
-| HELPER - CloudFlowOperatons | Child Flow | Instant | this flow takes in the environment, flow, and operation to perform as well as the GUID for the new maker if the operation is to reassign ownership. The operations supported are Delete and Assign (which reassigns owner). It performs the action on the actual object in the tenant and also updates the inventory. |
-| HELPER - ObjectOperatons | Child Flow | Instant | this flow takes in the environment, flow, and operation to perform as well as the GUID for the new maker if the operation is to reassign ownership. It calls either the The operations supported are Delete and Assign (which reassigns owner). It calls either the **HELPER - CloudFlowOperatonsperforms** or the **HELPER - CanvasAppOperatons** child flow depending on its last parameter, objectType. It is needed due to a product bug in which you cannot call child flows with the Dataverse Connector from Canvas Apps.
+| HELPER - CanvasAppOperations | Child Flow | Instant | This flow takes in the environment, app, and operation to perform as well as the GUID for the new maker if the operation is to reassign ownership. The operations supported are Delete and Assign (which reassigns owner). It performs the action on the actual object in the tenant and also updates the inventory. |
+| HELPER - CloudFlowOperations | Child Flow | Instant | This flow takes in the environment, flow, and operation to perform as well as the GUID for the new maker if the operation is to reassign ownership. The operations supported are Delete and Assign (which reassigns owner). It performs the action on the actual object in the tenant and also updates the inventory. |
+| HELPER - ObjectOperations | Child Flow | Instant | This flow takes in the environment, flow, and operation to perform as well as the GUID for the new maker if the operation is to reassign ownership. It calls either the The operations supported are Delete and Assign (which reassigns owner). It calls either the **HELPER - CloudFlowOperations** or the **HELPER - CanvasAppOperations** child flow depending on its last parameter, objectType. It is needed due to a product bug in which you cannot call child flows with the Dataverse Connector from Canvas Apps. |
+| Command Center > Get M365 Service Messages | Instant | from Admin - Command Center canvas apps | this flow connects to [Graph API](https://docs.microsoft.com/graph/api/serviceannouncement-list-messages?view=graph-rest-1.0&tabs=http) to list Power Platform Message Center service updates and returns them to the Admin - Command Center canvas app. |
+| Command Center > Initially Populate Bookmarks | Instant | from Admin - Command Center canvas app | this flow runs once to get all CoE Starter Kit apps in the environment and store them to the Command Center Config table as bookmarks used in both the Admin - Command Center and Maker - Command Center canvas apps. |
 
 ### Admin \| Compliance Detail request v3
 
@@ -335,6 +337,7 @@ Use this app to:
 - View Microsoft 365 Message Center news related to Microsoft Power Platform.
 - Download the latest CoE Starter Kit version and raise support tickets with the team.
 - Launch Microsoft Learn learning paths to learn more about Microsoft Power Platform.
+- Launch the latest posts of the Power Apps, Power Automate, Power BI and Power Virtual Agent blogs.
 
 **Permission**: Intended to be used only by admins. Power Platform Service Admin or Global Admin permission is required. Share this app with your CoE Admins.
 
@@ -344,22 +347,6 @@ Use this app to:
 > When you first launch the app, bookmarks to all apps included in the CoE Starter Kit get created. Additionally add other relevant bookmarks such as links to the Power BI dashboard and your Power Platform wiki and community by selecting **Edit bookmarks**.
 
 ![Admin - Command Center canvas app](media\commandcenter1.png "Admin - Command Center canvas app")
-
-### Maker - Command Center
-
-A canvas app used by makers as a starting point to launch other apps in the CoE Starter Kit and read Power Platform news.
-
-Use this app to:
-
-- Launch CoE Starter Kit apps and other bookmarks.
-- Launch the latest posts of the Power Apps, Power Automate, Power BI and Power Virtual Agent blogs.
-- Launch Microsoft Learn learning paths to learn more about Microsoft Power Platform.
-
-**Permission**: Intended to be used by makers. Share this app with the Power Platform Maker SR security role. 
-
-**Prerequisite**: This app uses Microsoft Dataverse. If you have installed this solution in a Production environment, a Premium license is required for every app user. If you have installed this solution in a Dataverse for Teams environment, a Microsoft 365 license is required for every user.
-
-![Maker - Command Center canvas app](media\commandcenter2.png "Maker - Command Center canvas app")
 
 ### DLP Editor v2
 
@@ -465,7 +452,7 @@ Use this app to:
 
 ![Power Platform Resource RMS canvas app.](media\dev-resources-admin-details.png "Power Platform Resource RMS canvas app")
 
-### Power Platform Developer Resources
+### Power Platform Request Center
 
 A canvas app designed to easily submit requests for Power Platform resources (such as Environment Creation Requests).
 

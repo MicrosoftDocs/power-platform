@@ -197,8 +197,6 @@ The nurture components solution contains five flows:
 
 -  Admin \| Newsletter with Product Updates
 
--  Admin \| Welcome Email
-
 -  Training in a day \| Feedback Reminder
 
 -  Training in a day \| Registration Confirmation

@@ -225,7 +225,7 @@ This app is used in the [auditing process](example-processes.md) as a tool for u
 
 **Permission**: As soon as you're using the app auditing process, this app needs to be shared with your app makers. If you intend to use this process, modify the [Welcome email](setup-nurture-components.md) flow to add users to a security group, and then share this app with the security group.
 
-**Prerequisite**: This app uses Dataverse; a Premium license is therefore required for each app user.
+**Prerequisite**: This app uses Microsoft Dataverse. If you have installed this solution in a Production environment, a Premium license is required for every app user. If you have installed this solution in a Dataverse for Teams environment, a Microsoft 365 license is required for every user.
 
 #### Compliance Status
 
