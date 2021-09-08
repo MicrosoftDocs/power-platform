@@ -1,5 +1,5 @@
 ---
-title: "Known issues | MicrosoftDocs"
+title: "Known issues for data loss prevention (DLP) policies | MicrosoftDocs"
 description:  DLP policies known issues.
 ms.service: power-platform
 ms.topic: conceptual
