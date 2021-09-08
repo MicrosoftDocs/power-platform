@@ -229,7 +229,7 @@ We will more quickly resolve issues around dependencies between tables by enabli
 >[!IMPORTANT]
 > Note that **Admin \| Compliance Detail Request v3** will not pass until you complete setup of the Governance component so you should leave it turned off until then.
 
-### (Optional) Create an Azure AD app registration to connect to Microsoft Graph
+## (Optional) Create an Azure AD app registration to connect to Microsoft Graph
 
 >[!NOTE]
 > Only complete this steps if you want to review Power Platform related [Microsoft 365 Message Center](/microsoft-365/admin/manage/message-center?view=o365-worldwide) updates in the [Admin - Command Center](core-components.md#admin---command-center) canvas app.
