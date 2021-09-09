@@ -76,7 +76,11 @@ This is the first step of the installation process and is required for every oth
     When you create the connection for HTTP with Azure AD enter the following into the Base Resource URL and Azure AD Resource URI (Application ID URI): [https://graph.microsoft.com](https://graph.microsoft.com).
 
      ![Establish HTTP with Azure AD.](media/httpazuread.png "Establish connections to activate your solution.")
-
+     
+   When creating a connection for CoE_Core - Power Automate Management, you may see a screen requesting an Authentication Type, be sure to select First Party.
+     
+     ![Power Automate Management authentication](media/pamconnect.png "Set Authentication type for Power Automate Management.")
+1. Once you've established all connections, select **Next** to enter values for your environment variables.
 1. Update environment variable values. The environment variables are used to store application and flow configuration data with data specific to your organization or environment. This means that you only have to set the value once per environment and it will be used in all necessary flows and apps in that environment. All the flows in the solution depend on all environment variables' being configured.
 
     ![Update environment variable values.](media/msi-envvar.png "Update environment variable values")
