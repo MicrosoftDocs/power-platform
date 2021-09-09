@@ -2,7 +2,7 @@
 title: "Use a Power Virtual Agents bot as a skill in Bot Framework bots"
 description: "Call a Power Virtual Agents bot from within a Bot Framework bot's session when a user says something that matches the bot's trigger phrases."
 keywords: "composer, skills, bot framework"
-ms.date: 9/2/2021
+ms.date: 9/9/2021
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
