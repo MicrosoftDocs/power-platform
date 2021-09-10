@@ -81,11 +81,11 @@ When users are added to Dataverse, they will get roles assigned automatically ba
 
 4. In the Finance and Operations linked Dataverse environment, Finance and Operations Basic User and Environment Maker security roles are automatically assigned to all active users in Dataverse. 
 
-## License to role Mapping
+## License to role mapping
 
-If defined in your environment, certain roles are automatically assigned to users when users are added to Dataverse based on the license the users are assigned. You can view the license to role mapping in an environment by navigating to the License to Role Mapping page in Power Platform Admin Center. You can directly navigate to this page by replacing the *<environment_id>* placeholder value in the following url with your own environment ID:
- 
-https://admin.powerplatform.microsoft.com/environments/<environment_id>/licenseToRoleMapping
+If defined in your environment, certain roles are automatically assigned to users when users are added to Dataverse based on the license the users are assigned. You can view the license to role mapping in an environment by navigating to the License to Role Mapping page in Power Platform Admin Center. 
+
+You can directly navigate to this page by replacing the *<environment_id>* placeholder value in the following url with your own environment ID: https://admin.powerplatform.microsoft.com/environments/<environment_id>/licenseToRoleMapping
 
 ### See also
 [Get started with security roles in Dataverse](/learn/modules/get-started-security-roles/)
