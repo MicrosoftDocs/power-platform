@@ -213,6 +213,8 @@ Once the copy process is complete, the target environment is placed in [Administ
 
 -	**Relevance Search**. Confirm that search returns expected results. If results are not accurate, you can turn off Relevance Search for a period of 12 hours and then turn Relevance Search back on again to refresh the index. You may contact [Microsoft support](get-help-support.md) if you're still experiencing issues.
 
+-	**Flows**. Review the flows in the freshly copied environment. Edit flows that need triggers and actions adjusted. Enable and disable flows as needed.
+
 ### See also  
 [What's new about storage](whats-new-storage.md) <br />
 [New Microsoft Dataverse storage capacity](capacity-storage.md) <br />
