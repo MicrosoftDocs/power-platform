@@ -194,6 +194,12 @@ In order to prevent accidental overwrites, we don't allow users to directly rest
 ### Why is my organization in administration mode after a restore and how do I disable it?
 The newly restored environment is placed in administration mode. To disable administration mode, see [Set administration mode](admin-mode.md#set-administration-mode). You can set administration mode in sandbox or production environments.  
 
+### What steps are needed after a restore to ensure flows are working as expected?
+
+- **Flows** - Review the flows in the environment. Edit flows that need triggers and actions adjusted. Enable and disable flows as needed.
+- **Connection References** - Connection References will require new connections. Create and set connections on Connection References.
+- **Custom Connectors** - Custom connectors should be reviewed and, if needed, deleted and reinstalled.
+
 ## Troubleshooting
 
 ### Don't see your environment to restore to? 
