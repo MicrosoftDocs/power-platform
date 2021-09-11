@@ -67,6 +67,9 @@ Recover-AdminPowerAppEnvironment -EnvironmentName $environmentName -WaitUntilFin
 
 To learn more on using PowerShell cmdlets for environments, see [Power Apps cmdlets for administrators](powerapps-powershell.md#power-apps-cmdlets-for-administrators).
 
+## Next steps after recovering an environment
+
+- **Flows** - Review the flows in the environment. Enable and disable flows as needed.
 
 ### See also 
 [Back up and restore environments](backup-restore-environments.md) <br />
