@@ -224,7 +224,4 @@ Once the copy process is complete, the target environment is placed in [Administ
 [New Microsoft Dataverse storage capacity](capacity-storage.md) <br />
 [Legacy storage capacity](legacy-capacity-storage.md)
 
-
-
-
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
