@@ -71,6 +71,9 @@ Now that you've published your bot and it's ready for others to use, you can [ad
 ## Known limitations
 - Customer satisfaction survey is a text-only version in Microsoft Teams instead of an adaptive card.
 - Microsoft Teams can only render up to six suggested actions for user in one question node.
-
+- A user can't send or upload attachments to the chat. If they try to send an attachment, the bot will reply with *Looks like you tried to send an attachment. Currently, I can only process text. Please try sending your message again without the attachment.* 
+  - This applies to all channels, even if the channel or end-user-facing experience supports attachments (for example, if you're using the Direct Line API or Microsoft Teams).  
+  - Attachments can be supported if the message is sent to a skill, where the skill bot supports the processing of attachments.  
+  - See the [Use Microsoft Bot Framework skills topic](advanced-use-skills-teams.md) for more details on skills.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

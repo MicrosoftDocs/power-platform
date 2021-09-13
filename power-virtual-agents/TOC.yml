@@ -70,20 +70,6 @@
          href: advanced-end-user-authentication.md
        - name: Add actions using Power Automate
          href: advanced-flow.md
-       - name: Use Bot Framework Skills
-         href: advanced-use-skills.md
-       - name: Use Bot Framework Composer
-         items:
-          - name: Extend your bot with Bot Framework Composer
-            href: advanced-bot-framework-composer.md
-          - name: Example 1 - Show an Adaptive Card in Power Virtual Agents
-            href: advanced-bot-framework-composer-example1.md
-          - name: Example 2 - Display a multi-select options list in Power Virtual Agents
-            href: advanced-bot-framework-composer-example2.md
-          - name: Example 3 - Use Bing Search as a fallback in Power Virtual Agents
-            href: advanced-bot-framework-composer-example3.md
-          - name: Example 4 - Display a form with a Submit button in Power Virtual Agents
-            href: advanced-bot-framework-composer-example4.md
        - name: Trigger hand-off to a live agent
          href: advanced-hand-off.md
     - name: Publish and integrate
@@ -102,6 +88,26 @@
          href: publication-connect-bot-to-azure-bot-service-channels.md
        - name: Use a Bot Framework bot with Power Virtual Agents
          href: advanced-use-dispatcher.md
+       - name: Integrate with Bot Framework
+         items:
+          - name: Configure a skill for use in Power Virtual Agents
+            href: configuration-add-skills.md
+          - name: Use Bot Framework Skills
+            href: advanced-use-skills.md
+          - name: Use a Power Virtual Agents bot as a skill (Preview)
+            href: advanced-use-pva-as-a-skill.md
+          - name: Use Bot Framework Composer
+            items:
+             - name: Extend your bot with Bot Framework Composer
+               href: advanced-bot-framework-composer.md
+             - name: Example 1 - Show an Adaptive Card in Power Virtual Agents
+               href: advanced-bot-framework-composer-example1.md
+             - name: Example 2 - Display a multi-select options list in Power Virtual Agents
+               href: advanced-bot-framework-composer-example2.md
+             - name: Example 3 - Use Bing Search as a fallback in Power Virtual Agents
+               href: advanced-bot-framework-composer-example3.md
+             - name: Example 4 - Display a form with a Submit button in Power Virtual Agents
+               href: advanced-bot-framework-composer-example4.md
     - name: Monitor and diagnose
       items:
        - name: Key concepts - Analytics
@@ -140,8 +146,6 @@
          href: configure-bot-greeting.md
        - name: Customize the look and feel of the bot
          href: customize-default-canvas.md
-       - name: Enable and configure Bot Framework Skills
-         href: configuration-add-skills.md
     - name: Respond to GDPR Data Subject Rights (DSR) requests
       items:
        - name: Key concepts - GDPR compliance

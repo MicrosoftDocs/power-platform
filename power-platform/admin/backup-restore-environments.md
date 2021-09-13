@@ -194,6 +194,9 @@ In order to prevent accidental overwrites, we don't allow users to directly rest
 ### Why is my organization in administration mode after a restore and how do I disable it?
 The newly restored environment is placed in administration mode. To disable administration mode, see [Set administration mode](admin-mode.md#set-administration-mode). You can set administration mode in sandbox or production environments.  
 
+### Are apps shared with Everyone still shared with Everyone in a restored environment? 
+No. Apps shared with Everyone in an environment that's backed up are not shared with Everyone in the restored environment. Alternatively, a canvas app can be shared with a security group and the app in the restored environment will be shared with that security group. 
+
 ## Troubleshooting
 
 ### Don't see your environment to restore to? 
