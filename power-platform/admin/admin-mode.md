@@ -1,13 +1,14 @@
 ---
 title: "Administration mode  | MicrosoftDocs"
 description: Administration mode
-author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/03/2021
+ms.date: 09/13/2021
 ms.subservice: admin
-ms.author: jimholtz
+author: ChrisGarty
+ms.author: cgarty
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app: 
@@ -44,5 +45,8 @@ You can set a sandbox, production, or trial (subscription-based) environment in 
 
 5. Optionally, you can set **Background operations** and **Custom message**, and then select **Save**.
 
+## Known issues
+
+- After taking the environment out of admin mode, flows may not trigger as expected until caches have been cleared; this can take up to 24 hours.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

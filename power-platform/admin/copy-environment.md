@@ -1,13 +1,14 @@
 ---
 title: "Copy an environment"
 description: "Learn how to copy apps and data from an environment. Review next steps for administrators in the target environment." 
-author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/24/2021 
+ms.date: 09/13/2021 
 ms.subservice: admin
-ms.author: jimholtz
+author: ChrisGarty
+ms.author: cgarty
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
@@ -177,7 +178,7 @@ Once the copy process is complete, the target environment is placed in [Administ
   
 2. Background operations are disabled in the copy environment. Disabled operations include workflows and synchronization with Microsoft Exchange.  
   
-**Review components**  
+#### Review components 
   
  You should review the status of application components in the copy environment with external connections such as Yammer, email, plug-ins, custom workflow activities, etc. Review these and consider what action to take:  
   
@@ -189,7 +190,7 @@ Once the copy process is complete, the target environment is placed in [Administ
   
    Here are some possible application components in the copy environment that could have external connections and therefore could impact services with the same connections in your production environment.  
   
-- **Email**. A mailbox cannot be synced with two different environments. For an Everything copy environment, the user mailboxes in the copy environment must be disabled so the mailboxes do not attempt to send or receive email, or track appointments, contacts, or tasks. Set synchronization for the following to None.  
+- **Email** - A mailbox cannot be synced with two different environments. For an Everything copy environment, the user mailboxes in the copy environment must be disabled so the mailboxes do not attempt to send or receive email, or track appointments, contacts, or tasks. Set synchronization for the following to None.  
   
     - Incoming Email  
     - Outgoing Email  
@@ -197,21 +198,27 @@ Once the copy process is complete, the target environment is placed in [Administ
   
   More information: [Set the delivery method for incoming and outgoing email](set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks.md)  
   
-- **SharePoint**. Deactivate or redirect SharePoint to a sandbox SharePoint environment to prevent impacting documents managed by SharePoint. Go to **Settings** > **Documentation Management** > **SharePoint Sites**. Select your site, and then click **Deactivate**.  
+- **SharePoint** - Deactivate or redirect SharePoint to a sandbox SharePoint environment to prevent impacting documents managed by SharePoint. Go to **Settings** > **Documentation Management** > **SharePoint Sites**. Select your site, and then click **Deactivate**.  
   
-- **Yammer**. Disable Yammer or redirect to a separate Yammer service to prevent posts made in the copy environment conflicting with posts made in the production environment. Go to **Settings** > **Administration** > **Yammer Configuration**.  
+- **Yammer** - Disable Yammer or redirect to a separate Yammer service to prevent posts made in the copy environment conflicting with posts made in the production environment. Go to **Settings** > **Administration** > **Yammer Configuration**.  
   
      After creating a new sandbox environment, workflows and system jobs might be pending execution. Apart from these jobs, if you have connected Yammer to customer engagement apps there will be Yammer activity streams posted from customer engagement apps to Yammer asynchronously. These activity streams are not visible through the system jobs. If there were any pending Yammer activity streams before the Disable Background Process is turned on, these activity steams will be posted to the current Yammer configuration once the Disable Background Process is turned back off. In the sandbox environment, if you have your current Yammer configuration connected to the same Yammer network as your production environment, you might see duplicate activity streams. To avoid duplicate Yammer activity streams, redirect your sandbox environment to another Yammer network (possibly a test network) before turning background processes back on.  
   
-- **Platform extensibility**. Consider disabling the following that could be running in the copy environment and impacting external service components.  
+- **Platform extensibility** - Consider disabling the following that could be running in the copy environment and impacting external service components.  
     - **Server-side plug-ins**.  
     - **Workflow custom activity**.  
 
-- **Client extensibility**. Review the following.  
+- **Client extensibility** - Review the following.  
     - **Client-side JavaScript**. Take a look at your JavaScript and HTML web resources for read/write operations that could impact external services.  
     - **IFRAMES**. Determine if the target of an IFRAME is a production environment.  
 
--	**Relevance Search**. Confirm that search returns expected results. If results are not accurate, you can turn off Relevance Search for a period of 12 hours and then turn Relevance Search back on again to refresh the index. You may contact [Microsoft support](get-help-support.md) if you're still experiencing issues.
+-	**Relevance Search** - Confirm that search returns expected results. If results are not accurate, you can turn off Relevance Search for a period of 12 hours and then turn Relevance Search back on again to refresh the index. You may contact [Microsoft support](get-help-support.md) if you're still experiencing issues.
+
+- **Flows** - Review the flows in the freshly copied environment. Edit flows that need triggers and actions adjusted. Enable and disable flows as needed.
+
+- **Connection References** - Connection References will require new connections. Create and set connections on Connection References.
+
+- **Custom Connectors** - Custom connectors should be reviewed and, if needed, deleted and reinstalled.
 
 ### See also  
 [What's new about storage](whats-new-storage.md) <br />
