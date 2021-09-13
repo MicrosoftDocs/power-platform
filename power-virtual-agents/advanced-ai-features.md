@@ -21,6 +21,10 @@ Select the version of Power Virtual Agents you're using here:
 
 ## AI models in Power Virtual Agents - background
 
+There are some specific features that further improve how the AI in Power Virtual Agents understands what your bot users are asking, and how the AI provides answers. The following video provides an overview of these features, each of which is described in further detail on this page.  
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWKo4a]
+
 ![In Power Virtual Agents conversational AI is infused in each step of the bot building journey wrapped in an experience friendly to business users.](media/advanced-ai-features/nlu-models.png)
 
 Power Virtual Agents hosts multiple AI models and AI capabilities on a single service, the core of which is a transformer-based natural language understanding (NLU) model.
@@ -35,10 +39,6 @@ Shorter trigger phrases are better, and you should aim for two to 10 words. You 
 These tips for creating tooltips are described in the tooltip associated with the **Trigger phrases** section on a topic's **Details** page.
 
 ![Screenshot of the trigger phrase section in the topic details page.](media/advanced-ai-features/trigger-phrase-tooltip.png)
-
-There are some specific features that further improve how the AI in Power Virtual Agents understands what your bot users are asking, and how the AI provides answers. The following video provides an overview of these features, each of which is described in further detail on this page.
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWKo4a]
 
 
 >[!NOTE]
