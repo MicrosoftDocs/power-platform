@@ -6,7 +6,7 @@ manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/06/2021
+ms.date: 09/13/2021
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
@@ -57,23 +57,23 @@ You cannot update the values for environment variables from within the solution.
 To update Environment Variables:
 
 1. If you have installed the solution in a Production environment:
-   1. Go to [flow.microsoft.com](<https://flow.microsoft.com>).
+   1. Go to [Power Automate](https://flow.microsoft.com).
    1. On the left pane, select **Solutions**.
    1. Select the **Default Solution**, and change the filter to show **Environment Variables**.
    1. Select a variable that you want to update, and then configure its **Current Value**.
 
 1. If you have installed the solution in a Dataverse for Teams environment:
-   1. Go to [flow.microsoft.com](<https://flow.microsoft.com>).
+   1. Go to [Power Automate](https://flow.microsoft.com).
    1. On the left pane, select **Solutions**.
-   1. Select the **Common Data Service Default Solution**.
+   1. Select the **Common Data Services Default Solution**.
    1. Select **+ Add > Environment Variables**.
    1. Select the existing Environment Variables from the managed solution that you want to update.
    1. Now, change the filter to show **Environment Variables**.
    1. Select a variable that you want to update, and then configure its **Current Value**.
 
-## Flows that use the Microsoft Dataverse (Current Environment) connector
+## Flows that use the Microsoft Dataverse connector
 
-The Admin | Sync Template v3 (Flows) and CLEANUP - Admin | Sync Template v3 (Connection Status) will fail to collect inventory information for flows that use the Microsoft Dataverse (Current Environment) connector. The [Get Flow as Admin](/connectors/flowmanagement/) currently has a limitation, where flows using that connector cannot be retrieved.
+The Admin | Sync Template v3 (Flows) and CLEANUP - Admin | Sync Template v3 (Connection Status) will fail to collect inventory information for flows that use the [Microsoft Dataverse](/connectors/commondataserviceforapps/) connector. The [Get Flow as Admin](/connectors/flowmanagement/) currently has a limitation, where flows using that connector cannot be retrieved.
 
 ## Flows that are imported or owned by a service principle
 
@@ -127,7 +127,7 @@ Microsoft Power Platform protects developer-type SKUs from inquiry by non-authen
 
 To fix this, you must have your admin security role added to the security roles for all developer environments, and then remove the selection from the sync flow. More information: [Power Apps Community Plan](/powerapps/maker/dev-community-plan)
 
-## Sync Flow limitations for Developer and Microsoft Team environments
+## Sync flow limitations for Developer and Microsoft Team environments
 
 It currently isn't possible to retrieve the model-driven apps, chatbots, and Desktop flows for developer environments (*My Name's* environment) and Microsoft Teams environments.
 
@@ -144,32 +144,31 @@ If you choose to use a security group to control access, users will have to be a
 
 The shared component library in the [theming components solution](theming-components.md) isn't editable. Make your own copy if you want to extend it.
 
-## Trial Licenses
+## Trial licenses
 
 Trial licenses do not have sufficient [API call allowances](/power-automate/limits-and-config#looping-and-debatching-limits) to run the CoE Starter Kit flows.
 For full list of license requirements see [Setup Prerequisite](setup.md#prerequisites).
 
 ## PIM (Privileged Identity Management)
 
-If your Power Platform admin role is managed via  **[PIM](/azure/active-directory/privileged-identity-management/pim-getting-started)** ensure the Sync Flows of the Core Components solution are set up to complete during the time whilst your user is granted admin permission. If your user loses admin access during the run of the sync flows, you may end up with incomplete or incorrect data if you use PIM and your Power Platform Admin Role.
+If your Power Platform admin role is managed via **[PIM](/azure/active-directory/privileged-identity-management/pim-getting-started)** ensure the Sync Flows of the Core Components solution are set up to complete during the time whilst your user is granted admin permission. If your user loses admin access during the run of the sync flows, you may end up with incomplete or incorrect data if you use PIM and your Power Platform Admin Role.
 
-## Monitoring Cloud flow runs
+## Monitoring cloud flow runs
 
 Monitoring Cloud flow runs is currently not included in the CoE Starter Kit. Monitoring Desktop flow runs is included, although limited.
 
 If you want more details for Desktop flows runs please see this solution available outside the CoE Starter Kit: [Advanced Power Automate RPA Run Log Analytics with PowerBI and Dataverse](https://flow.microsoft.com/blog/advanced-power-automate-rpa-run-log-analytics-with-power-bi-and-dataverse/)
 
-## Unpublished Model Driven Apps
+## Unpublished model-driven apps
 
-Model Driven Apps that are not published are not surfaced in the inventory because the are not returned to us from the storage table. This is a product limitation and will not be fixed in the sync flows.  
+Model-driven apps that are not published are not surfaced in the inventory because the are not returned to us from the storage table. This is a product limitation and will not be fixed in the sync flows.  
 
-## Large Desktop Flows
+## Large desktop flows
 
 Desktop Flows that are large are not surfaced in the inventory because one of the fields returned is too big for the flows.  This is a product limitation that will be fixed when the new Dataverse connector allows us to select environments. 
 
-## Missing Custom Connectors
+## Missing custom connectors
 
-We are able to collect only the intersect of all custom connectors outside of solutions, and all custom connectors to which you have access. <br>
-As a result, custom connectors in a solution, to which the identity running the sync flows do not have access, will not show up in the inventory.
+We are able to collect only the intersect of all custom connectors outside of solutions, and all custom connectors to which you have access. As a result, custom connectors in a solution, to which the identity running the sync flows do not have access, will not show up in the inventory.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
