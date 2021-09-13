@@ -48,9 +48,6 @@ The following are prerequisites for installing the CoE Starter Kit as it's inclu
     - If you are using the CoE Starter Kit in **Production environment with a Dataverse**, premium licenses are required for all users interacting with the CoE Starter Kit. Depending on what components you will use, your organization size and the existing licenses available in your organization, you will require either a Power Apps per user or per app or Power Automate per user or per flow license or a combination of these licenses.
     - If you are using the CoE Starter Kit in a **Dataverse for Teams** environment, a Power Automate per user license will be required for the admin running the sync flows. No additional licenses will be required for users interacting with any of the canvas apps.
 
-
-- If you're using the [audit log](setup-auditlog.md) solution, the custom connector used to connect to the Microsoft 365 audit log also must be included in your business data&ndash;only bucket and the DLP policy must be of type Environment, not Tenant.
-
 - If you want a DLP policy on the environment, it should allow the following to be used together in the business data&ndash;only bucket of the DLP policy for this environment.
     - [Approvals](/connectors/approvals/)
     - [Azure AD](/connectors/azuread/)
