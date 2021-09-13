@@ -1,13 +1,14 @@
 ---
 title: Manage Power Apps | Microsoft Docs
 description: How to manage Power Apps apps created in your organization.
-author: jimholtz
+author: alaug
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/13/2021
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: alaug
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
@@ -115,7 +116,7 @@ The following table reflects quarantine support:
 | Power Apps type  | Quarantine support   |
 |------------------|----------------------|
 | Canvas app       | Preview availability |
-| Model driven app | Not supported yet    |
+| Model-driven app | Not supported yet    |
 
 ### Quarantine an app
 ```PowerShell
@@ -133,7 +134,7 @@ Get-AppQuarantineState -EnvironmentName <EnvironmentName> -AppName <AppName>
 ```
 
 ## Conditional Access on granular apps (preview)
-In addition to respecting Conditional Access policies applied to the Power Apps service, it is possible to apply Azure AD Conditional Access policies to granular Power Apps apps. For example, an admin can apply a Conditional Access policy requiring Multi-factor authentication only on apps containing sensitive data. Power Apps leverages [Azure AD Conditional Access authentication context](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#authentication-context-preview) as the mechanism to target Conditional Access policies on granular apps. Admins are the persona allowed to add and remove authentication contexts on an app. Makers cannot edit authentication contexts on an app.
+In addition to respecting Conditional Access policies applied to the Power Apps service, it is possible to apply Azure AD Conditional Access policies to granular Power Apps apps. For example, an admin can apply a Conditional Access policy requiring Multi-factor authentication only on apps containing sensitive data. Power Apps leverages [Azure AD Conditional Access authentication context](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#authentication-context-preview) as the mechanism to target Conditional Access policies on granular apps. Admins are the persona allowed to add and remove authentication contexts on an app. Makers cannot edit authentication contexts on an app.   
 
 > [!NOTE]
 > 1. Authentication contexts set on an app are not moved with apps in solutions and moved across environments. This allows different authentication contexts to be applied to apps in different environments. Also, as an app moves across environments via solutions the authentication context set in an environment is preserved. For example, if an authentication context is set on an app in a UAT environment, that authentication context is preserved. 
@@ -162,7 +163,7 @@ The following table reflects conditional access on granular apps support:
 | Power Apps type  | Conditional Access on granular apps support |
 |------------------|---------------------------------------------|
 | Canvas app       | Preview availability                        |
-| Model driven app | Not supported                               |
+| Model-driven app | Not supported                               |
 
 ### Add Conditional Access authentication context ids to an app
 ```PowerShell
