@@ -1,13 +1,14 @@
 ---
 title: Manage Power Apps | Microsoft Docs
 description: How to manage Power Apps apps created in your organization.
-author: jimholtz
+author: alaug
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/13/2021
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: alaug
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
@@ -115,7 +116,7 @@ The following table reflects quarantine support:
 | Power Apps type  | Quarantine support   |
 |------------------|----------------------|
 | Canvas app       | Preview availability |
-| Model driven app | Not supported yet    |
+| Model-driven app | Not supported yet    |
 
 ### Quarantine an app
 ```PowerShell
@@ -162,7 +163,7 @@ The following table reflects conditional access on granular apps support:
 | Power Apps type  | Conditional Access on granular apps support |
 |------------------|---------------------------------------------|
 | Canvas app       | Preview availability                        |
-| Model driven app | Not supported                               |
+| Model-driven app | Not supported                               |
 
 ### Add Conditional Access authentication context ids to an app
 ```PowerShell
