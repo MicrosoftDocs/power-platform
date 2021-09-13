@@ -31,7 +31,10 @@ All of the features available in the Power Virtual Agents web app are also avail
 
 You can read more about the AI behind Power Virtual Agents in the [Enable advanced AI features in Power Virtual Agents](../advanced-ai-features.md) topic. The following video provides an overview of each of the features:  
 
+>  
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWKo4a]
+>  
+
 
 ## Enable or disable AI capabilities
 
