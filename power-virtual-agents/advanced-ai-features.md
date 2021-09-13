@@ -23,7 +23,9 @@ Select the version of Power Virtual Agents you're using here:
 
 There are some specific features that further improve how the AI in Power Virtual Agents understands what your bot users are asking, and how the AI provides answers. The following video provides an overview of these features, each of which is described in further detail on this page.  
 
+>  
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWKo4a]
+>   
 
 ![In Power Virtual Agents conversational AI is infused in each step of the bot building journey wrapped in an experience friendly to business users.](media/advanced-ai-features/nlu-models.png)
 
