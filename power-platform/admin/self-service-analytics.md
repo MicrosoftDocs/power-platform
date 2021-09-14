@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/14/2021
+ms.date: 09/14/2021
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -95,6 +95,9 @@ Microsoft requires that the first time you set up a data export to your organiza
 
 > [!IMPORTANT]
 > A connection with Microsoft's tenant service is required because your tenant must enable principal access to your organization's property; in this case, a [Data Lake Storage Gen2 account](/power-bi/transform-model/dataflows/dataflows-azure-data-lake-storage-integration). This is a one-time setup, which must be performed by your Azure AD admin. When your Azure AD admin grants access permissions to your Azure AD tenant, the process temporarily allows the Microsoft service principal account to export and write data to your Data Lake Storage Gen2 specified storage account only. The Microsoft service principal account used for this will not be granted any permissions for other operations in your Data Lake Storage account.
+
+Be sure to check out [Preview: Create custom dashboards by using Power Apps inventory and usage data](build-custom-reports.md) for more information such as exported data and firewall configuration.
+ 
 <!-- 
 **Set up using the Power Platform admin center portal**
 
@@ -124,7 +127,6 @@ The setup process is now complete, and your data will be exported within 48 hour
 
 
 ### See also
-
 [Create custom dashboards by using Power Apps inventory and usage data](build-custom-reports.md)
 
 
