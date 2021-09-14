@@ -36,13 +36,15 @@ Check your security role:
 
 2. Select an environment and go to **Settings** > **Templates** > **Access team templates**.
 
-3. Select **Customize Entity**. 
+3. On the command bar, select **More Commands** (...).
 
-4. In the navigation pane, expand **Entities**, and then choose the entity you want to use in the team template.  
+4. Select **Customize Entity**. 
 
-5. On the **Entity Definition** form, in the **Communication & Collaboration** section, select the **Access Teams** checkbox.  
+5. In the navigation pane, expand **Entities**, and then choose the entity you want to use in the team template.  
 
-6. On the **Actions** toolbar, select **Save**.  
+6. On the **Entity Definition** form, in the **Communication & Collaboration** section, select the **Access Teams** checkbox.  
+
+7. On the **Actions** toolbar, select **Save**.  
   
 
 ## Create a team template  
@@ -51,42 +53,44 @@ Check your security role:
 
 2. Select an environment and go to **Settings** > **Templates** > **Access team templates**.
   
-3. On the **Actions** toolbar, choose **New**, complete the required fields, and then choose **Save**.  
+3. On the **Actions** toolbar, choose **+New**, complete the required fields, and then choose **Save**.  
 
 > [!NOTE]
 > You can create two access team templates per entity.
 
 ## Add a team template to the entity form   
   
-1. Select an environment and go to **Settings** > **Users + permissions** > **Teams**.
+1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/).
 
-2. On the command bar, select **More Commands** (...).
+2. Select an environment and go to **Settings** > **Templates** > **Access team templates**.
 
-3. Select **Customize Entity**.  
+3. On the command bar, select **More Commands** (...).
 
-4. In the navigation pane, expand **Entities**, expand the entity you want to use in the team template, and then select **Forms**.  
+4. Select **Customize Entity**.  
 
-5. In **System Forms**, select **Active Forms** > **Main** form. 
+5. In the navigation pane, expand **Entities**, expand the entity you want to use in the team template, and then select **Forms**.  
 
-6. On the **Main** form, open the **Insert** tab.  
+6. In **System Forms**, select **Active Forms** > **Main** form. 
 
-7. On the ribbon, choose **Sub-Grid**.  
+7. On the **Main** form, open the **Insert** tab.  
+
+8. On the ribbon, choose **Sub-Grid**.  
   
     The **Set Properties** dialog box appears.  
   
-8. In **Set Properties**, complete the required fields, and then select the **Display label on the Form** check box. 
+9. In **Set Properties**, complete the required fields, and then select the **Display label on the Form** check box. 
 
-9. In the **Records** drop-down list, select **All Record Types**.  
+10. In the **Records** drop-down list, select **All Record Types**.  
 
-10. In the **Entity** drop-down list, select **Users**.  
+11. In the **Entity** drop-down list, select **Users**.  
 
-11. In the **Default View** drop-down list, select **Associated Record Team Members**.  
+12. In the **Default View** drop-down list, select **Associated Record Team Members**.  
 
-12. In the **Team Template** drop-down list, select the desired template and choose **Set**.  
+13. In the **Team Template** drop-down list, select the desired template and choose **Set**.  
   
      The team template you selected now appears on the **Main** form.  
   
-13. On the **Actions** toolbar, select **Save**, and then select **Publish**.  
+14. On the **Actions** toolbar, select **Save**, and then select **Publish**.  
   
 > [!NOTE]
 > The Access Team template does not get exported with its entity in a Solution.  Administrators will need to recreate the template when exporting the entity into another environment.
