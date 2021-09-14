@@ -3,7 +3,7 @@ title: "Known issues for data loss prevention (DLP) policies | MicrosoftDocs"
 description:  DLP policies known issues.
 ms.service: power-platform
 ms.topic: conceptual
-ms.date: 09/08/2021
+ms.date: 09/14/2021
 author: jimholtz
 ms.subservice: admin
 ms.author: jimholtz
