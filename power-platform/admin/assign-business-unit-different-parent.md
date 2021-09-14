@@ -1,6 +1,6 @@
 ---
-title: "Manage business units"
-description: "Learn how to change the parent business for a business unit and its child business units."
+title: "Assign business units"
+description: "Learn how to change the parent business for a business unit and its child business units or change a user's business unit."
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
@@ -17,7 +17,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Manage business units
+# Assign business units
 
 Use the settings below to assign a business unit to a different parent business or change a user's business unit.
 

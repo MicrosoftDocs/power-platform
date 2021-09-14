@@ -168,7 +168,7 @@
             href: create-edit-business-units.md
           - name: Delete business unit
             href: delete-business-unit.md 
-          - name: Assign business unit a different parent business
+          - name: Assign business units
             href: assign-business-unit-different-parent.md 
           - name: Hierarchy security
             href: hierarchy-security.md
