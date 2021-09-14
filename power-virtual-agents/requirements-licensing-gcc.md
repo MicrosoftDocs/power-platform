@@ -40,11 +40,11 @@ In addition to the features and capabilities of Power Virtual Agents, organizati
 
 ### GCC High environment
 
-Beginning September 2021, eligble customers can choose to deploy Power Virtual Agents US Government to the GCC High environment, which enables single sign-on and seamless integration with Office 365 GCC High deployments.  
+Beginning September 2021, eligible customers can choose to deploy Power Virtual Agents US Government to the GCC High environment, which enables single sign-on and seamless integration with Office 365 GCC High deployments.  
 
 Microsoft has designed the platform and our operational procedures to meet the requirements aligning with the DISA SRG IL4 compliance framework. We anticipate the US Department of Defense contractor customer base and other Federal agencies currently leveraging Office 365 GCC High to use the Power Virtual Agents US Government GCC High deployment option. 
 
-This option enables and requires the customer to leverage Azure AD Government for customer identities, in contrast to GCC, which leverages the public Azure AD. 
+This option enables and requires the customer to leverage Azure AD Government for pcustomer identities, in contrast to GCC, which leverages the public Azure AD. 
 
 For the US Department of Defense contractor customer base, Microsoft operates the service in a manner that enables these customers to meet ITAR commitment and DFARS acquisition regulations, as documented and required by their contracts with the US Department of Defense. A Provisional Authority to Operate has been granted by DISA.
 
@@ -200,7 +200,7 @@ Also, refer to the [IP ranges](https://www.microsoft.com/download/confirmation.a
 -    GCC and GCC High: Focus on *AzureCloud.usgovtexas* and *AzureCloud.usgovvirginia*.
 
 
-## Connectivity between Power Virtual Agents US Government and Public Azure Cloud services
+## Connectivity between Power Virtual Agents US Government and public Azure Cloud services
 
 Azure is distributed among multiple clouds. By default, tenants are allowed to open firewall rules to a cloud-specific instance, but cross-cloud networking is different and requires opening specific firewall rules to communicate between services. If you are a Power Virtual Agents customer and you have existing SQL instances in Azure public cloud which you need to access, you must open specific firewall ports in SQL to the Azure Government Cloud IP space for the following datacenters:
 
@@ -219,11 +219,11 @@ Some of the features available in the commercial version of Power Virtual Agents
 
 Feature or capability | Available in GCC | Available in GCC High
 |-|-|-|
-[Power Virtual Agents Analytics](analytics-overview.md)&nbsp;<a id="LimsRef1" href="#Limsfn1"><sup>1</sup></a>| &#X2716;</br>No | &#X2716;</br>No
+[Power Virtual Agents Analytics](analytics-overview.md)&nbsp;<a id="LimsRef1" href="#LimsFn1"><sup>1</sup></a>| &#X2716;</br>No | &#X2716;</br>No
 [Power Virtual Agents Microsoft Teams app experience](teams/fundamentals-what-is-power-virtual-agents-teams.md) | &#X2716;</br>No | &#X2716;</br>No
 [Teams channel in the Power Virtual Agents web app](publication-add-bot-to-microsoft-teams.md) | &#X2714;</br>Yes | &#X2716;</br>No
-[Skills](configuration-add-skills.md) | &#X271;</br>Yes | &#X2716;</br>No
-[Transfer to agents](configuration-hand-off-omnichannel.md) | &#X2713;</br>Yes | &#X2716;</br>No
+[Skills](configuration-add-skills.md) | &#X2714;</br>Yes | &#X2716;</br>No
+[Transfer to agents](configuration-hand-off-omnichannel.md) | &#X2714;</br>Yes | &#X2716;</br>No
 
 
 <a id="LimsFn1" href="#LimsRef1">1. </a>Alternatively, you can create [Custom Analytics using a Power BI dashboard (blog)](https://powervirtualagents.microsoft.com/blog/custom-analytics-solution-for-power-virtual-agents/).
