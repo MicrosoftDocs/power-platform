@@ -85,7 +85,7 @@ Access to Power Virtual Agents US Government customer content by Microsoft admin
 
 Power Virtual Agents support and service engineering staff do not have standing access to customer content hosted in the Power Virtual Agents US Government service. Any staff who requests temporary permission elevation which would grant access to customer content must first have passed the following background checks.
 
-| Microsoft Personnel Screening and Background Checks <sup>1</sup> | Description                                                                                                                                                                                                   |
+| Microsoft Personnel Screening and Background Checks&nbsp;<a href="#AccFn1" id="AccRef1"><sup>1</sup></a> | Description                                                                                                                                                                                                   |
 |------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | U.S. citizenship                                                 | Verification of U.S. citizenship                                                                                                                                                                              |
 | Employment history check                                         | Verification of seven (7) year employment history                                                                                                                                                             |
@@ -99,7 +99,7 @@ Power Virtual Agents support and service engineering staff do not have standing 
 | CJIS background screening                                        | State-adjudicated review of federal and state criminal history by state CSA appointed authority within each state that has signed up for the Microsoft CJIS IA program                                        |
 | Department of Defense IT-2                                       | Staff who request elevated permissions to customer data or privileged administrative access to DoD SRG L5 service capacities must pass DoD IT-2 adjudication, based on a successful OPM Tier 3 investigation. |
 
-<sup>1</sup> Applies only to personnel with temporary or standing access to customer content hosted in Power Virtual Agents US Government (GCC and GCC High)
+<a href="#AccRef1" id="AccFn1">1.</a> Applies only to personnel with temporary or standing access to customer content hosted in Power Virtual Agents US Government (GCC and GCC High)
 
 ## Certifications and accreditations
 
@@ -209,7 +209,7 @@ Azure is distributed among multiple clouds. By default, tenants are allowed to 
 -   USGov Texas
 
 
-Refer to the [Azure IP Ranges and Service Tags  US Government Cloud](https://www.microsoft.com/download/confirmation.aspx?id=57063) document, focusing attention on *AzureCloud.usgovtexas*, and*AzureCloud.usgovvirginia*. Also note that these are the IP ranges required for your end users to have access to the service URLs.
+Refer to the [Azure IP Ranges and Service Tags - US Government Cloud](https://www.microsoft.com/download/confirmation.aspx?id=57063) document, focusing attention on *AzureCloud.usgovtexas*, and*AzureCloud.usgovvirginia*. Also note that these are the IP ranges required for your end users to have access to the service URLs.
 
 
 
@@ -219,14 +219,16 @@ Some of the features available in the commercial version of Power Virtual Agents
 
 Feature or capability | Available in GCC | Available in GCC High
 |-|-|-|
-[Power Virtual Agents Analytics](analytics-overview.md)<a id="ref1" href="#fn1"><sup id="fn1">1</sup></a>| &#X2716; | &#X2716;
-[Power Virtual Agents Microsoft Teams app experience](teams/fundamentals-what-is-power-virtual-agents-teams.md) | &#X2716; | &#X2716;
-[Teams channel in the Power Virtual Agents web app](publication-add-bot-to-microsoft-teams.md) | &#X2713; | &#X2715;
-[Skills](configuration-add-skills.md) | &#X2713; | &#X2715;
-[Transfer to agents](configuration-hand-off-omnichannel.md) | &#X2713; | &#X2715;
+[Power Virtual Agents Analytics](analytics-overview.md)&nbsp;<a id="LimsRef1" href="#Limsfn1"><sup>1</sup></a>| &#X2716;</br>No | &#X2716;</br>No
+[Power Virtual Agents Microsoft Teams app experience](teams/fundamentals-what-is-power-virtual-agents-teams.md) | &#X2716;</br>No | &#X2716;</br>No
+[Teams channel in the Power Virtual Agents web app](publication-add-bot-to-microsoft-teams.md) | &#X2714;</br>Yes | &#X2716;</br>No
+[Skills](configuration-add-skills.md) | &#X271;</br>Yes | &#X2716;</br>No
+[Transfer to agents](configuration-hand-off-omnichannel.md) | &#X2713;</br>Yes | &#X2716;</br>No
 
 
-<a id="fn1" href="#ref1"><sup>1</sup></a>Alternatively, you can create [Custom Analytics (blog)](https://powervirtualagents.microsoft.com/blog/custom-analytics-solution-for-power-virtual-agents/) using a Power BI dashboard.
+<a id="LimsFn1" href="#LimsRef1">1. </a>Alternatively, you can create [Custom Analytics using a Power BI dashboard (blog)](https://powervirtualagents.microsoft.com/blog/custom-analytics-solution-for-power-virtual-agents/).
+
+
 ## Requesting support
 
 Having a problem with your service? You can create a support request to get the issue resolved.
