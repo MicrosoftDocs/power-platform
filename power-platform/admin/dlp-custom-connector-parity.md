@@ -4,10 +4,13 @@ description: About allowing makers to create and share custom connectors.
 ms.service: power-platform
 ms.topic: conceptual
 ms.date: 09/08/2021
-author: jimholtz
 ms.subservice: admin
-ms.author: jimholtz
+author: mikferland-msft
+ms.author: miferlan
 ms.reviewer: jimholtz
+contributors:
+  - mikferland-msft
+  - mihaelablendea
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
