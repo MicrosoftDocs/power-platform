@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/13/2021
+ms.date: 09/14/2021
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -22,7 +22,7 @@ search.app:
 
 Relevance Search delivers fast and comprehensive search results in a single list, sorted by relevance. As an administrator or customizer, you'll be able to enable and configure Relevance Search as described below. Many of the configuration steps use the same user interface as the Quick Find configuration.
 
-Relevance Search is available in addition to single-entity Quick Find on the entity grid, and as an alternative to multi-entity Quick Find (also called Categorized Search), which is accessible from the navigation bar.
+Relevance Search is available in addition to single-entity Quick Find on the entity grid, and as an alternative to multi-entity Quick Find (also called Categorized Search), which is accessible from the navigation bar. When relevance search is turned on, it becomes your default and only global search experience for all of your model-driven apps. Relevance search searches across all tables that your administrator has configured for Relevance search and that are included in your model-driven apps. You won't be able to switch to [quick find search also known as categorized search](/powerapps/user/quick-find). 
 
 Changes made to the Relevance Search configuration or to the searchable data may take up to 15 minutes to appear in the search service. It may take up to an hour or more to complete a full sync for average size organizations, and a couple of days for very large size organizations.
 
@@ -61,13 +61,13 @@ Relevance Search doesn't support lifecycle operations (create, delete, backup, r
 
 To enable Relevance Search, do the following:
 
-1.	In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.
+1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.
 
-2.	Select **Settings** > **Product** > **Features**.
+2. Select **Settings** > **Product** > **Features**.
 
-3.	Under **Search**, set **Relevance Search** to **On**.
+3. Under **Search**, set **Relevance Search** to **On**.
 
-4.	Select **Save**.
+4. Select **Save**.
 
 
 ## Select entities for Relevance Search 
