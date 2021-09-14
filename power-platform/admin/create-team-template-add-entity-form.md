@@ -9,7 +9,7 @@ ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/05/2020
+ms.date: 09/14/2021
 search.audienceType: 
   - admin
 search.app:
@@ -26,34 +26,30 @@ A team template can be used for the entities that are enabled for automatically 
     
 ## Enable an entity for access teams  
 
-These settings can be found in the Microsoft Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Users + permissions** > **Teams**.
-
 Make sure you have the System Administrator or System Customizer security role or equivalent permissions.
 
 Check your security role:
 - Follow the steps in [View your user profile](/powerapps/user/view-your-user-profile).
 - Don’t have the correct permissions? Contact your system administrator.
 
-1. Select an environment and go to **Settings** > **Users + permissions** > **Teams**.
+1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/).
 
-2. Select the check box for a team.
+2. Select an environment and go to **Settings** > **Templates** > **Access team templates**.
 
-3. On the command bar, select **More Commands** (...).
+3. Select **Customize Entity**. 
 
-4. Select **Customize Entity**. 
+4. In the navigation pane, expand **Entities**, and then choose the entity you want to use in the team template.  
 
-5. In the navigation pane, expand **Entities**, and then choose the entity you want to use in the team template.  
+5. On the **Entity Definition** form, in the **Communication & Collaboration** section, select the **Access Teams** checkbox.  
 
-6. On the **Entity Definition** form, in the **Communication & Collaboration** section, select the **Access Teams** checkbox.  
-
-7. On the **Actions** toolbar, select **Save**.  
+6. On the **Actions** toolbar, select **Save**.  
   
 
 ## Create a team template  
   
-1. Go to **Settings** > **Security**.
-  
-2. Choose **Access Team Templates**.  
+1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/).
+
+2. Select an environment and go to **Settings** > **Templates** > **Access team templates**.
   
 3. On the **Actions** toolbar, choose **New**, complete the required fields, and then choose **Save**.  
 
