@@ -3,7 +3,7 @@ title: "Known issues for data loss prevention (DLP) policies | MicrosoftDocs"
 description:  DLP policies known issues.
 ms.service: power-platform
 ms.topic: conceptual
-ms.date: 09/08/2021
+ms.date: 09/14/2021
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
@@ -26,7 +26,7 @@ search.app:
 We're working to address the following known issues and limitations: 
 
 - Sorting by **Created** and **Modified** fields in the **Data policies** list view doesn't work correctly.
-- Three-way DLP policy creation isn't available through admin connectors. Also, the Power Platform for Admins connector always blocks LBI/**Non-business** group.
+- Classifying connectors as "business", "non-business", and "blocked" is only permitted in the latest version (v2) of the Power Platform admin connectors. The v1 version only supports classifying connectors as "business" (i.e., HBI - High Business Impact) and "non-business" (i.e., LBI - Low Business Impact).
 - Blocking the HTTP Request connector via DLP currently will block child flows, because child flows are implemented by using the HTTP connector. Work is underway to separate DLP enforcement for child flows so they'll be treated no differently than other flows.
 - Existing apps that were last published before October 2020 won't see endpoint filtering enforcement for custom connectors. 
 - Endpoint filtering enforcement on environment variables and dynamically bound endpoints during runtime is currently out of scope. Only static endpoints defined during design time are in scope. For example, if a custom connector definition includes the Route Request policy template to route the request to an alternate URL pattern, DLP policies aren't applied to routed URLs and can only classify the original host URL pattern of the custom connector. 
