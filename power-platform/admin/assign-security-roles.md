@@ -85,7 +85,9 @@ When users are added to Dataverse, they will get roles assigned automatically ba
 
 If defined in your environment, certain roles are automatically assigned to users when users are added to Dataverse based on the license the users are assigned. You can view the license to role mapping in an environment by navigating to the License to Role Mapping page in the Power Platform admin center. 
 
-You can directly navigate to this page by replacing the *<environment_id>* placeholder value in the following url with your own environment ID: https://admin.powerplatform.microsoft.com/environments/<environment_id>/licenseToRoleMapping
+You can navigate to this page via Environment -> Settings -> License to Rolemapping, as shown in the image below.
+
+![License To Role Mapping](https://user-images.githubusercontent.com/53619591/133348816-beac4d40-f0a7-4362-8ce2-e94363d84f69.jpg)
 
 ### See also
 [Get started with security roles in Dataverse](/learn/modules/get-started-security-roles/)
