@@ -83,8 +83,8 @@ This feature is exclusively available in GCC High and DoD for all customers. Sig
 
    \[TODO: insert screenshots here\]
 
-  > [!NOTE]
-  > This new tenant-level setting is also enforced on existing apps/flows that were built using connectors that are now disabled.
+   > [!NOTE]
+   > This new tenant-level setting is also enforced on existing apps/flows that were built using connectors that are now disabled.
 
 ## PowerShell (owners: Mohit and Christina)
 
