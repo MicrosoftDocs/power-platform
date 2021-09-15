@@ -19,17 +19,17 @@ search.app:
 ---
 # Automatically track sent folder items with server-side synchronization 
 
-When server-side synchronization is enabled for an Exchange mailbox within Dynamics 365, items in the Microsoft Exchange **Inbox** are tracked automatically and created in Dynamics 365 based on acceptance and correlation logic. You can configure this options in **Set Personal Options**. 
+When server-side synchronization is enabled for an Microsoft Exchange mailbox within Dynamics 365, items in the Microsoft Exchange **Inbox** are tracked automatically and created in Dynamics 365 based on acceptance and correlation logic. You can configure this option in **Set Personal Options**. 
 
-Email messages that users send directly from an email client, such as Microsoft Office Outlook, are not tracked automatically. These will not be created in Dynamics 365.  
+Email messages that users send directly from an email client, such as Microsoft Office Outlook, are not tracked automatically. Emails from these email clients won't be created in Dynamics 365.  
  
 ## Enable Tracking for Sent Folder Items 
 
-An administrator can configure the OrgDbOrgSetting **AutoTrackSentFolderItems**, which will enable server-side synchronization to go through emails in the **Sent items** folder on Microsoft Exchange and automatically track emails to Dynamics 365 by honoring the following email acceptance options in **Set Personal Options**. 
+An administrator can configure the [OrgDbOrgSetting](OrgDbOrgSettings.md) **AutoTrackSentFolderItems**, which will enable server-side synchronization to go through emails in the **Sent items** folder on Microsoft Exchange and automatically track emails to Dynamics 365 by honoring the following email acceptance options in **[Set Personal Options](set-personal-options-affect-tracking-synchronization-between-dynamics-365-outlook-exchange.md)**. 
 
 > [!Important]
-> - This feature is disabled by default and it can be enabled with the orgdborgsettings **AutoTrackSentFolderItems** setting. 
-> - This setting is only supported with a Microsoft Exchange mailbox. 
+> - This feature is disabled by default and you can enabled with the orgdborgsettings **AutoTrackSentFolderItems** setting. 
+> - Thsetting is only supported with a Microsoft Exchange mailbox. 
 
 - **Accept all email messages**: Any email in the mailbox will be tracked to Dynamics 365.
 
