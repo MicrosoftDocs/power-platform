@@ -68,34 +68,29 @@ This feature is exclusively available in GCC High and DoD for all customers. Sig
 
 **Step three: View a disabled connector in a DLP policy**
 
-9.  Click on a data policy in the "Data policies" page.
+1. Select a data policy in the **Data policies** page.
 
-10. Consult the "Prebuilt connectors" tab. Connectors that are disabled have the status "Disabled".
-
-\[TODO: insert screenshots here\]
-
-Scenario \#4: Attempt to add a disabled connector in a Power App
-
-11. Open any Power App.
-
-12. Add a connector that has been disabled. An error message appears.
+2. Consult the **Prebuilt connectors** tab. Connectors that are disabled have the status "Disabled".
 
 \[TODO: insert screenshots here\]
 
-Note: This new tenant-level setting is also enforced on existing apps/flows that were built using connectors that are now disabled.
+**Step four: Attempt to add a disabled connector in a Power App**
 
-*PowerShell (owners: Mohit and Christina)*
+1. Open any Power App.
 
--   *TODO add PowerShell cmds for interacting with this feature*
+2. Add a connector that has been disabled. An error message appears.
 
-*Known limitations*
+\[TODO: insert screenshots here\]
 
--   Disabled connectors are not enforced in Power Virtual Agent.
+  > [!NOTE]
+  > This new tenant-level setting is also enforced on existing apps/flows that were built using connectors that are now disabled.
 
-*Screenshots*
+## PowerShell (owners: Mohit and Christina)
 
-![A screenshot of a computer Description automatically generated](media/image1.png)
+-  *TODO add PowerShell cmds for interacting with this feature*
 
-![A screenshot of a computer Description automatically generated](media/image2.png)
+## Known limitations
 
-![A screenshot of a computer Description automatically generated](media/image3.png)
+-  Disabled connectors are not enforced in Power Virtual Agent.
+
+
