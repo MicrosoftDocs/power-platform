@@ -20,50 +20,49 @@ search.app:
   - Powerplatform
   - Flow
 ---
-
 # Connector off by default
 
-**Disable new connectors by default**
+## Disable new connectors by default
 
-*Summary*
+### Summary
 
 Effective September 30<sup>th</sup>, 2021, new connectors that are introduced by Microsoft and other 3<sup>rd</sup> parties to the Power Platform will be disabled by default for customers operating in the following US government clouds: GCC High and DoD. Administrators will be able to review these new connectors before explicitly authorizing their use across the organization. Connectors that have been published before September 30<sup>th</sup>, 2021, will remain enabled by default, but admins can leverage the new tenant-level setting to disable them.
 
 Note: Custom connectors are excluded from this new configuration setting.
 
-*Value proposition*
+### Value proposition
 
 When new connectors are introduced to the Power Platform, they can be used immediately by all Makers. This requires admins to constantly monitor the Connector ecosystem and reactively update the organization's DLP policies to prevent Makers from inadvertently exfiltrating data. Such occurrences must be avoided at all costs in US government clouds where strict Federal compliance is mandated. Thankfully, administrators can now rely on this safeguard mechanism in GCC High and DoD to better control the use of connectors.
 
 Info bubble: When a connector is disabled in this new tenant-level setting, the admins can still classify and configure the connector in the DLP policies, but its use will be blocked in Power Apps and Power Automate either when creating an app/flow or when executing an app/flow.
 
-*Availability*
+### Availability
 
 This feature is exclusively available in GCC High and DoD for all customers. Sign-up is not required.
 
-*Workflow*
+### Workflow
 
-Step \#1: View the new connector
+**Step one: View the new connector**
 
-1.  Click the "Data policies" tab where all DLP policies are located.
+1. Select the **Data policies** tab where all DLP policies are located.
 
-2.  Click the new "Enable connectors" button in the toolbar.
+2. Click the new "Enable connectors" button in the toolbar.
 
-3.  New connectors (i.e., that have not been reviewed) have the status "Mark as reviewed".
+3. New connectors (i.e., that have not been reviewed) have the status "Mark as reviewed".
 
-4.  Connectors that have already been reviewed and authorized have the status "Reviewed".
+4. Connectors that have already been reviewed and authorized have the status "Reviewed".
 
 \[TODO: insert screenshots here\]
 
-Step \#2: Enable or disable the new connector
+**Step two: Enable or disable the new connector**
 
-5.  If you want to keep the connector disabled, click "Mark as reviewed".
+1. If you want to keep the connector disabled, click "Mark as reviewed".
 
-6.  If you want to enable the connector, click the enable toggle.
+2. If you want to enable the connector, click the enable toggle.
 
-7.  In both cases, the status is changed to "Reviewing".
+3. In both cases, the status is changed to "Reviewing".
 
-8.  Click "Save". The status of the connector is now set to "Reviewed".
+4. Click "Save". The status of the connector is now set to "Reviewed".
 
 \[TODO: insert screenshots here\]
 
