@@ -174,7 +174,7 @@ Effective July 10, 2020, the [Company News Timeline](/dynamics365/company-news-t
 1. To remove the solution, go to **Advanced settings** and select **Solutions**. 
 2. Select **CompanyNewsTimeline** and then select **Delete**. 
 
-As an alternative you can install news Power Apps component framework control. For more information, see [Set up and use the news control](Set up and use the news control](/powerapps/maker/model-driven-apps/stay-current-with-news-control).
+As an alternative you can install news Power Apps component framework control. For more information, see [Set up and use the news control](/powerapps/maker/model-driven-apps/stay-current-with-news-control).
 
 ## Dynamic 365 Sales bot is deprecated
 
