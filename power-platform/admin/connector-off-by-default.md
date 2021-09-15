@@ -31,7 +31,7 @@ Effective September 30<sup>th</sup>, 2021, new connectors that are introduced by
 
 ### Value proposition
 
-When new connectors are introduced to the Power Platform, they can be used immediately by all makers. This requires admins to constantly monitor the Connector ecosystem and reactively update the organization's Data Loss Prevention (DLP) policies to prevent makers from inadvertently exfiltrating data. Such occurrences must be avoided at all costs in US government clouds where strict Federal compliance is mandated. Administrators can now rely on this safeguard mechanism in GCC High and DoD to better control the use of connectors.
+When new connectors are introduced to the Power Platform, they can be used immediately by all makers. This requires admins to constantly monitor the connector ecosystem and reactively update the organization's Data Loss Prevention (DLP) policies to prevent makers from inadvertently exfiltrating data. Such occurrences must be avoided at all costs in US government clouds where strict Federal compliance is mandated. Administrators can now rely on this safeguard mechanism in GCC High and DoD to better control the use of connectors.
 
 > [!NOTE]
 > When a connector is disabled in this new tenant-level setting, the admins can still classify and configure the connector in the DLP policies, but its use will be blocked in Power Apps and Power Automate either when creating an app/flow or when executing an app/flow.
