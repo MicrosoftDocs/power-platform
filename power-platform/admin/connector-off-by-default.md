@@ -1,6 +1,6 @@
 ﻿---
-title: "Connector off by default | MicrosoftDocs"
-description: Describes how the connector is off by default.
+title: "Connectors off by default | MicrosoftDocs"
+description: Describes how the connectors are off by default.
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
@@ -20,22 +20,21 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Connector off by default
-
-## Disable new connectors by default
-
-### Summary
+# Connectors off by default
 
 Effective September 30<sup>th</sup>, 2021, new connectors that are introduced by Microsoft and other 3<sup>rd</sup> parties to the Power Platform will be disabled by default for customers operating in the following US government clouds: GCC High and DoD. Administrators will be able to review these new connectors before explicitly authorizing their use across the organization. Connectors that have been published before September 30<sup>th</sup>, 2021, will remain enabled by default, but admins can leverage the new tenant-level setting to disable them.
 
 > [!NOTE]
 > Custom connectors are excluded from this new configuration setting.
 
+## Disable new connectors by default
+
 ### Value proposition
 
-When new connectors are introduced to the Power Platform, they can be used immediately by all Makers. This requires admins to constantly monitor the Connector ecosystem and reactively update the organization's Data Loss Prevention (DLP) policies to prevent Makers from inadvertently exfiltrating data. Such occurrences must be avoided at all costs in US government clouds where strict Federal compliance is mandated. Thankfully, administrators can now rely on this safeguard mechanism in GCC High and DoD to better control the use of connectors.
+When new connectors are introduced to the Power Platform, they can be used immediately by all makers. This requires admins to constantly monitor the Connector ecosystem and reactively update the organization's Data Loss Prevention (DLP) policies to prevent makers from inadvertently exfiltrating data. Such occurrences must be avoided at all costs in US government clouds where strict Federal compliance is mandated. Administrators can now rely on this safeguard mechanism in GCC High and DoD to better control the use of connectors.
 
-Info bubble: When a connector is disabled in this new tenant-level setting, the admins can still classify and configure the connector in the DLP policies, but its use will be blocked in Power Apps and Power Automate either when creating an app/flow or when executing an app/flow.
+> [!NOTE]
+> When a connector is disabled in this new tenant-level setting, the admins can still classify and configure the connector in the DLP policies, but its use will be blocked in Power Apps and Power Automate either when creating an app/flow or when executing an app/flow.
 
 ### Availability
 
