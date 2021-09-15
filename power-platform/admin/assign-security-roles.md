@@ -9,7 +9,7 @@ ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/10/2021
+ms.date: 09/15/2021
 search.audienceType: 
   - admin
 search.app:
@@ -85,7 +85,7 @@ When users are added to Dataverse, they will get roles assigned automatically ba
 
 If defined in your environment, certain roles are automatically assigned to users when users are added to Dataverse based on the license the users are assigned. You can view the license to role mapping in an environment by navigating to the License to Role Mapping page in the Power Platform admin center. 
 
-You can directly navigate to this page by replacing the *<environment_id>* placeholder value in the following url with your own environment ID: https://admin.powerplatform.microsoft.com/environments/<environment_id>/licenseToRoleMapping
+Go to **Environments** > [select an environment] > **Settings** > **Users + Permissions** > **License To Role mapping**.
 
 ### See also
 [Get started with security roles in Dataverse](/learn/modules/get-started-security-roles/)
