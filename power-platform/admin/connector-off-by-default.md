@@ -28,7 +28,8 @@ search.app:
 
 Effective September 30<sup>th</sup>, 2021, new connectors that are introduced by Microsoft and other 3<sup>rd</sup> parties to the Power Platform will be disabled by default for customers operating in the following US government clouds: GCC High and DoD. Administrators will be able to review these new connectors before explicitly authorizing their use across the organization. Connectors that have been published before September 30<sup>th</sup>, 2021, will remain enabled by default, but admins can leverage the new tenant-level setting to disable them.
 
-Note: Custom connectors are excluded from this new configuration setting.
+> [!NOTE]
+> Custom connectors are excluded from this new configuration setting.
 
 ### Value proposition
 
@@ -52,19 +53,19 @@ This feature is exclusively available in GCC High and DoD for all customers. Sig
 
 4. Connectors that have already been reviewed and authorized have the status "Reviewed".
 
-\[TODO: insert screenshots here\]
+   \[TODO: insert screenshots here\]
 
 **Step two: Enable or disable the new connector**
 
 1. If you want to keep the connector disabled, select **Mark as reviewed**.
 
-2. If you want to enable the connector, select the enable toggle.
+2. If you want to enable the connector, select the **Enable** toggle.
 
 3. In both cases, the status is changed to "Reviewing".
 
 4. Select **Save**. The status of the connector is now set to "Reviewed".
 
-\[TODO: insert screenshots here\]
+   \[TODO: insert screenshots here\]
 
 **Step three: View a disabled connector in a DLP policy**
 
@@ -72,7 +73,7 @@ This feature is exclusively available in GCC High and DoD for all customers. Sig
 
 2. Consult the **Prebuilt connectors** tab. Connectors that are disabled have the status "Disabled".
 
-\[TODO: insert screenshots here\]
+   \[TODO: insert screenshots here\]
 
 **Step four: Attempt to add a disabled connector in a Power App**
 
@@ -80,7 +81,7 @@ This feature is exclusively available in GCC High and DoD for all customers. Sig
 
 2. Add a connector that has been disabled. An error message appears.
 
-\[TODO: insert screenshots here\]
+   \[TODO: insert screenshots here\]
 
   > [!NOTE]
   > This new tenant-level setting is also enforced on existing apps/flows that were built using connectors that are now disabled.
