@@ -32,7 +32,7 @@ Note: Custom connectors are excluded from this new configuration setting.
 
 ### Value proposition
 
-When new connectors are introduced to the Power Platform, they can be used immediately by all Makers. This requires admins to constantly monitor the Connector ecosystem and reactively update the organization's DLP policies to prevent Makers from inadvertently exfiltrating data. Such occurrences must be avoided at all costs in US government clouds where strict Federal compliance is mandated. Thankfully, administrators can now rely on this safeguard mechanism in GCC High and DoD to better control the use of connectors.
+When new connectors are introduced to the Power Platform, they can be used immediately by all Makers. This requires admins to constantly monitor the Connector ecosystem and reactively update the organization's Data Loss Prevention (DLP) policies to prevent Makers from inadvertently exfiltrating data. Such occurrences must be avoided at all costs in US government clouds where strict Federal compliance is mandated. Thankfully, administrators can now rely on this safeguard mechanism in GCC High and DoD to better control the use of connectors.
 
 Info bubble: When a connector is disabled in this new tenant-level setting, the admins can still classify and configure the connector in the DLP policies, but its use will be blocked in Power Apps and Power Automate either when creating an app/flow or when executing an app/flow.
 
@@ -46,9 +46,9 @@ This feature is exclusively available in GCC High and DoD for all customers. Sig
 
 1. Select the **Data policies** tab where all DLP policies are located.
 
-2. Click the new "Enable connectors" button in the toolbar.
+2. Select **Enable connectors** in the toolbar.
 
-3. New connectors (i.e., that have not been reviewed) have the status "Mark as reviewed".
+3. New connectors (those that have not been reviewed) have the status "Mark as reviewed".
 
 4. Connectors that have already been reviewed and authorized have the status "Reviewed".
 
@@ -56,17 +56,17 @@ This feature is exclusively available in GCC High and DoD for all customers. Sig
 
 **Step two: Enable or disable the new connector**
 
-1. If you want to keep the connector disabled, click "Mark as reviewed".
+1. If you want to keep the connector disabled, select **Mark as reviewed**.
 
-2. If you want to enable the connector, click the enable toggle.
+2. If you want to enable the connector, select the enable toggle.
 
 3. In both cases, the status is changed to "Reviewing".
 
-4. Click "Save". The status of the connector is now set to "Reviewed".
+4. Select **Save**. The status of the connector is now set to "Reviewed".
 
 \[TODO: insert screenshots here\]
 
-Step \#3: View a disabled connector in a DLP policy
+**Step three: View a disabled connector in a DLP policy**
 
 9.  Click on a data policy in the "Data policies" page.
 
