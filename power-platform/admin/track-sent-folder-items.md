@@ -25,11 +25,11 @@ Email messages that users send directly from an email client, such as Microsoft 
  
 ## Enable Tracking for Sent Folder Items 
 
-An administrator can configure the [OrgDbOrgSetting](OrgDbOrgSettings.md) **AutoTrackSentFolderItems**, which will enable server-side synchronization to go through emails in the **Sent items** folder on Microsoft Exchange and automatically track emails to Dynamics 365 by honoring the following email acceptance options in **[Set Personal Options](set-personal-options-affect-tracking-synchronization-between-dynamics-365-outlook-exchange.md)**. 
+An administrator can configure the [OrgDBOrgSettings](OrgDbOrgSettings.md) **AutoTrackSentFolderItems**, which will enable server-side synchronization to go through emails in the **Sent items** folder on Microsoft Exchange and automatically track emails to Dynamics 365 by honoring the following email acceptance options in **[Set Personal Options](set-personal-options-affect-tracking-synchronization-between-dynamics-365-outlook-exchange.md)**. 
 
 > [!Important]
-> - This feature is disabled by default and you can enabled with the orgdborgsettings **AutoTrackSentFolderItems** setting. 
-> - Thsetting is only supported with a Microsoft Exchange mailbox. 
+> - This feature is disabled by default and you can enabled with the OrgDBOrgSettings **AutoTrackSentFolderItems** setting. 
+> - Enable tracking for send items is only supported with a Microsoft Exchange mailbox. 
 
 - **Accept all email messages**: Any email in the mailbox will be tracked to Dynamics 365.
 
