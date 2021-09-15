@@ -1,6 +1,6 @@
 ﻿---
 title: "Connectors off by default | MicrosoftDocs"
-description: Describes how the connectors are off by default.
+description: Describes how the connectors are off by default for GCC High and DoD.
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
