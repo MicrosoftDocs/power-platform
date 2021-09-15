@@ -29,7 +29,7 @@ An administrator can configure the [OrgDBOrgSettings](OrgDbOrgSettings.md) **Aut
 
 > [!Important]
 > - This feature is disabled by default and you can enabled with the OrgDBOrgSettings **AutoTrackSentFolderItems** setting. 
-> - Enable tracking for send items is only supported with a Microsoft Exchange mailbox. 
+> - Enable tracking for sent items is only supported with a Microsoft Exchange mailbox. 
 
 - **Accept all email messages**: Any email in the mailbox will be tracked to Dynamics 365.
 
