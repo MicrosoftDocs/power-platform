@@ -6,7 +6,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.custom: intro-internal
-ms.date: 06/24/2021
+ms.date: 09/15/2021
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
