@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/10/2020
+ms.date: 09/16/2021
 ms.subservice: admin
 ms.author: jimholtz 
 search.audienceType: 
