@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "power-platform/admin/enable-teams-integration.md",
+      "redirect_url": "https://docs.microsoft.com/MicrosoftTeams/manage-apps",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "power-platform/admin/recover-from-exchange-server-failure.md",
       "redirect_url": "monitor-email-processing-errors",
       "redirect_document_id": "false"
