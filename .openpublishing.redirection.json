@@ -2,7 +2,7 @@
   "redirections": [
     {
       "source_path": "power-platform/admin/enable-teams-integration.md",
-      "redirect_url": "https://docs.microsoft.com/MicrosoftTeams/manage-apps",
+      "redirect_url": "/dynamics365/teams-integration/teams-install-app",
       "redirect_document_id": "false"
     },
     {
