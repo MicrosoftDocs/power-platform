@@ -115,7 +115,7 @@ For customers with Azure AD Premium, conditional access policies can be defined 
 
 #### FAQ
 
-Q: Can I control, on the tenant level, which connector is at all available, for example No to Dropbox or Twitter but Yes to SharePoint)?
+Q: Can I control, on the tenant level, which connector is at all available, for example No to Dropbox or Twitter but Yes to SharePoint?
 
 A: This is possible by utilizing the [connectors classification](dlp-connector-classification.md) capabilities and assigning the **Blocked** classifier to one or more connectors that you want to keep from being used. Note that there are a [set of connectors that can’t be blocked](dlp-connector-classification.md#list-of-connectors-that-cant-be-blocked). 
  
