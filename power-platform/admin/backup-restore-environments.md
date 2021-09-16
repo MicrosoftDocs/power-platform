@@ -5,7 +5,7 @@ services: powerapps
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/13/2021
+ms.date: 09/16/2021
 ms.subservice: admin
 author: ChrisGarty
 ms.author: cgarty
@@ -34,6 +34,7 @@ About **system backups**:
 - System backups occur continuously. The underlying technology used is Azure SQL Database. See SQL Database documentation [Automated backups](/azure/sql-database/sql-database-automated-backups) for details.
 - System backups for production environments that have been created with a database and have one or more Dynamics 365 applications installed are retained up to 28 days. System backups for production environments which do not have Dynamics 365 applications deployed in them will be retained for 7 days. System backups for sandbox environments will be retained for 7 days.
 - You must restore an environment to the same region in which it was backed up.
+- Currently, audit logs aren't restored. 
   
 ### Restore a system backup  
   
@@ -203,6 +204,9 @@ The newly restored environment is placed in administration mode. To disable admi
 
 ### Are apps shared with Everyone still shared with Everyone in a restored environment? 
 No. Apps shared with Everyone in an environment that's backed up are not shared with Everyone in the restored environment. Alternatively, a canvas app can be shared with a security group and the app in the restored environment will be shared with that security group. 
+
+### Are Power Apps app identifiers the same after backup and restore operations?
+No for canvas apps. The app id for a canvas app is different in a restored environment than the id value when an environment was backed up. 
 
 ## Troubleshooting
 
