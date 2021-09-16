@@ -204,6 +204,9 @@ The newly restored environment is placed in administration mode. To disable admi
 ### Are apps shared with Everyone still shared with Everyone in a restored environment? 
 No. Apps shared with Everyone in an environment that's backed up are not shared with Everyone in the restored environment. Alternatively, a canvas app can be shared with a security group and the app in the restored environment will be shared with that security group. 
 
+### Are Power Apps app identifiers the same after backup and restore operations?
+No for canvas apps. The app id for a canvas app is different in a restored environment than the id value when an environment was backed up. 
+
 ## Troubleshooting
 
 ### Don't see your environment to restore to? 
