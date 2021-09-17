@@ -42,8 +42,8 @@ An administrator can configure the [OrgDBOrgSettings](OrgDbOrgSettings.md) **Aut
 - **No Email messages**: No items will be automatically tracked. 
 
  
-> [!div class="mx-imgBorder"] 
-> ![Screenshot of Personal Options for tracking email](media/set-personal-options-track-email.png "Email tracking setting")
+  > [!div class="mx-imgBorder"] 
+  > ![Screenshot of Personal Options for tracking email](media/set-personal-options-track-email.png "Email tracking setting")
 
 
 
