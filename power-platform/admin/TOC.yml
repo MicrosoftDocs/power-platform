@@ -772,7 +772,7 @@
           - name: Personal options that affect synchronization
             href: set-personal-options-affect-tracking-synchronization-between-dynamics-365-outlook-exchange.md
           - name: Automatically track sent folder items
-            href: track-sent-folder-items
+            href: track-sent-folder-items.md
           - name: Configure incoming and outgoing email synchronization
             items: 
             - name: Configure incoming and outgoing email synchronization
