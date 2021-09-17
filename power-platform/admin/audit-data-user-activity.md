@@ -4,7 +4,7 @@ description: "Learn how to use auditing to log changes to records and user acces
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/19/2021
+ms.date: 09/17/2021
 author: tjvass
 ms.subservice: admin
 ms.author: tjvass
@@ -142,8 +142,8 @@ Follow these steps if you've been migrated to the new audit settings experience.
 
    **Note**:
    - The audit log retention policy allows you to configure how long your organization must retain audit logs to satisfy internal and/or external compliance requirements and relieves you from the burden of deleting unneeded audit logs manually.
-   - Each audit log is stamped with a future date corresponding to the currently active retention period. Logs older than the future data will be automatically deleted by a background system process.
-   - Changing the retention period will not change the future data of already existing audit logs. Only new audit logs will reflect the new future data based on the new retention period.
+   - Each audit log is stamped with a future date corresponding to the currently active retention period. Logs older than the future date will be automatically deleted by a background system process.
+   - Changing the retention period will not change the future date of already existing audit logs. Only new audit logs will reflect the new future date based on the new retention period.
 
 4. Select **Save**.
 
