@@ -5,7 +5,7 @@ author: sabinn-msft
 ms.service: power-platform
 ms.topic: how-to
 ms.component: cds
-ms.date: 05/20/2018
+ms.date: 09/17/2021
 ms.subservice: admin
 ms.author: sabinn
 search.audienceType: 
@@ -29,6 +29,10 @@ The European Union (EU) General Data Protection Regulation (GDPR) gives rights t
 - Receive it in electronic format so it can be moved to another controller
 
 A formal request by a data subject to a controller to take an action on his or her personal data is called a Data Subject Rights (DSR) request.
+
+Content for data integration has moved to: [Responding to Data Subject Rights (DSR) requests for Data Integration for Microsoft Dataverse customer data](data-integration-gdpr-dsr-guide.md).
+
+<!--
 
 This article describes how Microsoft is preparing for the GDPR, and also provides examples of steps you can take to support GDPR compliance when using Data Integration for Admins via the administrator portal in Dataverse . You'll learn how to use Microsoft products, services, and administrative tools to help controller customers find, access, and act on personal data in the Microsoft cloud in response to DSR requests.
 
@@ -87,6 +91,6 @@ To export templates, users can navigate to the templates tab and click on the el
 To export connection sets, users can navigate to the connection set tab and click on the ellipses next to the connection set, and then select the export option:
 
 ![Export connection sets by clicking on the ellipsis.](./media/data-integration-gdpr-dsr/connsets-exp.png)
-
+-->
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
