@@ -30,7 +30,7 @@ The European Union (EU) General Data Protection Regulation (GDPR) gives rights t
 
 A formal request by a data subject to a controller to take an action on his or her personal data is called a Data Subject Rights (DSR) request.
 
-Content for data integration has moved to: [Responding to Data Subject Rights (DSR) requests for Data Integration for Microsoft Dataverse customer data](data-integration-gdpr-dsr-guide.md).
+Content for data integration has moved to: [Integrate data into Microsoft Dataverse](data-integrator.md).
 
 <!--
 
