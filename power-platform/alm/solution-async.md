@@ -36,7 +36,7 @@ The result of staging the solution will be a collection of validation results in
 
 ### [SDK API (C#)](#tab/sdk-csharp)
 
-:::code language="csharp" source="cds/orgsvc/c#/SolutionStageAndImport/Program.cs" id="snippet_stage-solution":::
+:::code language="csharp" source="~/powerapps-samples/cds/orgsvc/c#/SolutionStageAndImport/Program.cs" id="snippet_stage-solution":::
 
 ### [Web API (C#)](#tab/webapi-csharp)
 
@@ -58,7 +58,7 @@ Now let's take a look at some example code that demonstrates `ImportSolutionAsyn
 
 ### [SDK API (C#)](#tab/sdk-csharp)
 
-:::code language="csharp" source="cds/orgsvc/c#/SolutionStageAndImport/Program.cs" id="snippet_import-solution-async":::
+:::code language="csharp" source="~/powerapps-samples/cds/orgsvc/c#/SolutionStageAndImport/Program.cs" id="snippet_import-solution-async":::
 
 ### [Web API (C#)](#tab/webapi-csharp)
 
@@ -125,7 +125,7 @@ The response returned from `ImportSolutionAsync` contains `ImportJobKey` and `As
 
 ### [SDK API (C#)](#tab/sdk-csharp)
 
-:::code language="csharp" source="cds/orgsvc/c#/SolutionStageAndImport/Program.cs" id="snippet_check-import-status":::
+:::code language="csharp" source="~/powerapps-samples/cds/orgsvc/c#/SolutionStageAndImport/Program.cs" id="snippet_check-import-status":::
 
 ### [Web API (C#)](#tab/webapi-csharp)
 
