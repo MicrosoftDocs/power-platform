@@ -1,4 +1,3 @@
-[!include[](./wp-data-loss-prevention.md)]
-[!include[](./create-dlp-policy.md)]
-[!include[](./prevent-data-loss.md)]
-[!include[](./data-loss-prevention-sdk.md)]
+[!include[](./data-integration-gdpr-dsr-guide.md)]
+[!include[](./data-integrator.md)]
+[!include[](./data-integrator-error-management.md)]
