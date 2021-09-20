@@ -30,13 +30,27 @@ In comparison to importing a solution where the solution is imported and availab
 
 | Operation | Web API | SDK API |
 | --- | --- | --- |
-| Stage a solution | [StageSolution](/dynamics365/customer-engagement/web-api/stagesolution) | use the generic [OrganizationRequest](/dotnet/api/microsoft.xrm.sdk.organizationrequest) and set the **RequestName** property to "StageSolution" |
+| Stage a solution | [StageSolution](/dynamics365/customer-engagement/web-api/stagesolution) | [StageSolutionRequest](/dotnet/api/microsoft.crm.sdk.messages.stagesolutionrequest) |
 
 The result of staging the solution will be a collection of validation results indicating success or failure and (if successful) a `StageSolutionUploadId` to be used in the `ImportSolutionAsync` call. See the import solution Web API sample code above for an example of how this is done.
 
 ### [SDK API (C#)](#tab/sdk-csharp)
 
 :::code language="csharp" source="~/powerapps-samples/cds/orgsvc/c#/SolutionStageAndImport/Program.cs" id="snippet_stage-solution":::
+
+```csharp
+public static StageSolutionResults StageSolution(IOrganizationService service, string solutionFilePath)
+{
+            // Stage the solution
+            var req = new StageSolutionRequest();
+
+            byte[] fileBytes = File.ReadAllBytes(solutionFilePath);
+            req["CustomizationFile"] = fileBytes;
+            var res = service.Execute(req);
+
+            return (res["StageSolutionResults"] as StageSolutionResults);
+}
+```
 
 ### [Web API (C#)](#tab/webapi-csharp)
 
@@ -59,6 +73,61 @@ Now let's take a look at some example code that demonstrates `ImportSolutionAsyn
 ### [SDK API (C#)](#tab/sdk-csharp)
 
 :::code language="csharp" source="~/powerapps-samples/cds/orgsvc/c#/SolutionStageAndImport/Program.cs" id="snippet_import-solution-async":::
+
+```csharp
+public static ImportSolutionAsyncResponse ImportSolution(IOrganizationService service, StageSolutionResults stagingResults)
+{
+            // Import the staged solution
+            var componentDetails = stagingResults.SolutionComponentsDetails;
+
+            // TODO These are not referenced in the code but are usefull to explore
+            var missingDependencies = stagingResults.MissingDependencies;   // Contains missing dependencies
+            var solutionDetails = stagingResults.SolutionDetails;           // Contains solution details
+
+            var connectionReferences = componentDetails.Where(x => string.Equals(x.ComponentTypeName, "connectionreference"));
+            var envVarDef = componentDetails.Where(x => string.Equals(x.ComponentTypeName, "environmentvariabledefinition"));
+            var envVarValue = componentDetails.Where(x => string.Equals(x.ComponentTypeName, "environmentvariablevalue"));
+
+            var componentParams = new EntityCollection();
+
+            // Add each connection reference to the component parmameters entity collection.
+            foreach (var conn in connectionReferences)
+            {
+                var e = new Entity("connectionreference")
+                {
+                    ["connectionreferencelogicalname"] = conn.Attributes["connectionreferencelogicalname"].ToString(),
+                    ["connectionreferencedisplayname"] = conn.Attributes["connectionreferencedisplayname"].ToString(),
+                    ["connectorid"] = conn.Attributes["connectorid"].ToString(),
+                    ["connectionid"] = "custom input"
+                };
+                componentParams.Entities.Add(e);
+            }
+            
+            // Add each environment variable to the component parmameters entity collection.
+            foreach (var value in envVarValue)
+            {
+                var e = new Entity("environmentvariablevalue")
+                {
+                    ["schemaname"] = value.Attributes["schemaname"].ToString(),
+                    ["value"] = "custom input"
+                };
+
+                if (value.Attributes.ContainsKey("environmentvariablevalueid"))
+                {
+                    e["environmentvariablevalueid"] = value.Attributes["environmentvariablevalueid"].ToString();
+                }
+                componentParams.Entities.Add(e);
+            }
+
+            // Import the solution
+            var importSolutionReq = new ImportSolutionAsyncRequest();
+            importSolutionReq.ComponentParameters = componentParams;
+            importSolutionReq.SolutionParameters = new SolutionParameters { StageSolutionUploadId = stagingResults.StageSolutionUploadId };
+            var response = service.Execute(importSolutionReq) as ImportSolutionAsyncResponse;
+
+            return (response);
+}
+```
 
 ### [Web API (C#)](#tab/webapi-csharp)
 
@@ -119,13 +188,54 @@ catch (Exception err)
 
 ---
 
-`ImportSolutionAsync` shares many input parameters with `ImportSolution` but adds `ComponentParameters` and `SolutionParameters`. `ComponentParameters` can be used to overwrite the component data in the customization XML file. `SolutionParameters` can be used to pass the `StageSolutionUploadId` of a staged solution as was shown in the example Web API code.
+`ImportSolutionAsync` shares many input parameters with `ImportSolution` but adds `ComponentParameters` and `SolutionParameters`. `ComponentParameters` can be used to overwrite the component data in the solution's customization XML file. `SolutionParameters` can be used to pass the `StageSolutionUploadId` of a staged solution as was shown in the example Web API code. More information: [Staging a solution](#staging-a-solution)
 
 The response returned from `ImportSolutionAsync` contains `ImportJobKey` and `AsyncOperationId`. The `ImportJobKey` value can be used to obtain the import result and the `AsyncOperationId` value can be used to track the import job status.
 
 ### [SDK API (C#)](#tab/sdk-csharp)
 
 :::code language="csharp" source="~/powerapps-samples/cds/orgsvc/c#/SolutionStageAndImport/Program.cs" id="snippet_check-import-status":::
+
+```csharp
+       public static void CheckImportStatus(IOrganizationService service, Guid asyncOperationId, Guid importJobKey)
+        {
+            // Get solution import status
+            var finished = false;
+            Entity asyncOperation = null;
+
+            // Wait until the async job is finished
+            while (!finished)
+            {
+                asyncOperation = service.Retrieve("asyncoperation", asyncOperationId, new ColumnSet("statecode", "statuscode"));
+                OptionSetValue statecode = (OptionSetValue)asyncOperation["statecode"];
+
+                if (statecode.Value == 3)
+                {
+                    finished = true;
+                }
+                else
+                {
+                    Thread.Sleep(10000);
+                }
+            }
+
+            // Solution import completed successfully
+            OptionSetValue statuscode = (OptionSetValue)asyncOperation["statuscode"];
+            if (statuscode.Value == 30)
+            {
+                Console.WriteLine("The solution import completed successfully.");
+            }
+
+            else if (asyncOperation["statuscode"].ToString() == "31")  // Solution import failed
+            {
+                Console.WriteLine("The solution import failed.");
+
+                var getLogReq = new RetrieveFormattedImportJobResultsRequest { ImportJobId = importJobKey };
+                var importJob = service.Execute(getLogReq) as RetrieveFormattedImportJobResultsResponse;
+                // TODO Do something with the import job results
+            }
+        }
+```
 
 ### [Web API (C#)](#tab/webapi-csharp)
 
@@ -141,8 +251,8 @@ The response returned from `ImportSolutionAsync` contains `ImportJobKey` and `As
 
 | Operation | Web API | SDK API |
 | --- | --- | --- |
-| Export a solution | [ExportSolutionAsync](/dynamics365/customer-engagement/web-api/exportsolutionasync) | use the generic [OrganizationRequest](/dotnet/api/microsoft.xrm.sdk.organizationrequest) and set the **RequestName** property to "ExportSolutionAsync" |
-| Download an exported solution file | [DownloadSolutionExportData](/dynamics365/customer-engagement/web-api/downloadsolutionexportdata) | use the generic [OrganizationRequest](/dotnet/api/microsoft.xrm.sdk.organizationrequest) and set the **RequestName** property to "DownloadSolutionExportData"|
+| Export a solution | [ExportSolutionAsync](/dynamics365/customer-engagement/web-api/exportsolutionasync) | [ExportSolutionAsyncRequest](/dotnet/api/microsoft.crm.sdk.messages.exportsolutionasyncrequest) |
+| Download an exported solution file | [DownloadSolutionExportData](/dynamics365/customer-engagement/web-api/downloadsolutionexportdata) | [DownloadSolutionExportDataRequest](/dotnet/api/microsoft.crm.sdk.messages.downloadsolutionexportdatarequest) |
 
 Now let's take a look at some example code that demonstrates `ExportSolutionAsync`.
 
@@ -166,7 +276,7 @@ var response = service.Execute(req);
 
 ---
 
-In the response are the `AsyncOperationId` and `ExportJobId` parameter values. Use the `AsyncOperationId` in the response to verify the success of the asynchronous job (`statecode` == 3; `statuscode` == 30). Next, use the `DownloadSolutionExportData` action (or message) with the `ExportJobId` value from the response to download the exported solution file, which is returned in the `ExportSolutionFile` parameter.
+In the response are the `AsyncOperationId` and `ExportJobId` parameter values. Use the `AsyncOperationId` in the response to verify the success (`statecode` == 3; `statuscode` == 30) of the asynchronous job. Next, use the `DownloadSolutionExportData` action (or message) with the `ExportJobId` value from the export response to download the exported solution file, which is returned in the `ExportSolutionFile` parameter.
 
 ### [SDK API (C#)](#tab/sdk-csharp)
 
