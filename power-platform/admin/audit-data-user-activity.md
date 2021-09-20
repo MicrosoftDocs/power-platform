@@ -4,7 +4,7 @@ description: "Learn how to use auditing to log changes to records and user acces
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/20/2021
+ms.date: 02/17/2021
 author: tjvass
 ms.subservice: admin
 ms.author: tjvass
@@ -43,78 +43,40 @@ The following operations can be audited:
 - Deletion of audit logs.  
 - For changes made to entity fields that can be localized, such as the Product entity name or description fields, the locale ID (LCID) appears in the audit record.  
   
-## Start/stop auditing and set retention policy  
-
 System administrators and customizers can start or stop auditing for an organization.  
   
 > [!IMPORTANT]
 > For Customer Engagement (on-premises), you may notice that auditing can significantly increase the size of the organization database over time. You can delete audit logs by going to **Settings** > **Auditing** > **Audit Log Management**. Additionally, you may want to stop auditing for maintenance purposes. Stopping auditing stops tracking for the organization during the period until auditing is started again. When you start auditing again, the same auditing selection is maintained that was previously used.  
-
-### Enable or disable auditing for an entity  (new experience)
-
-> [!NOTE]
-> We are migrating audit logs to new storage. Environments whose data migration is complete can use the new audit settings experience. If you've migrated to the new experience, you'll see the new retention policy duration setting as in step 3 below.
   
-1. Browse to the Power Platform admin center and sign in using administrator credentials. 
+## Start/stop auditing and set retention policy  
+This task requires the system administrator or customizer security role or equivalent permissions.  
   
-2. Select an environment, and then go to **Settings** > expand **Audit and logs** > **Audit Settings**.
- 
-   |Setting  |Description  |
-   |---------|---------|
-   |Start Auditing     | Start or stop auditing for the Dataverse environment.        |
-   |Audit user access     | Start or stop auditing user access.        |
-   |Start Read Auditing     | Start or stop comprehensive auditing. Logs will be sent to Microsoft 365 Security and Compliance Center.        |
+1. Browse to the Microsoft Power Platform admin center and sign in using administrator credentials. 
+  
+2. Go to **Environments** > [select an environment] > **Settings** > expand **Audit and logs** > **Audit settings**.
+  
+   |      Setting |     Description    |
+   |--------------------|---------------------|
+   | Start Auditing   | Start or stop auditing.    |
+   | Audit user access | Log whenever the system is accessed, generally by signing in  |  
+   | Start Read Auditing  | Logs will be sent to the [Microsoft 365 Security and Compliance Center](https://protection.office.com/homepage) |
 
-3. Set the retention policy for audit logs in Dataverse.
+3. You can set a retention period for how long audit logs are kept in a Microsoft Dataverse environment. Under **Retain these logs for**, choose the period of time you wish to retain the logs.
 
-   |Setting  |Description  |
-   |---------|---------|
-   |Set the retention policy for these logs    | Choose between **30 days** and **Forever**. Default: **Forever** (Logs will never be automatically deleted).      |
-   |Set a custom retention policy    | Enter a value between 30 (Minimum) and 100,000 days (Maximum).       |
+   > [!NOTE]
+   > The audit data retention policy will be visible once your environment has been upgraded. This will happen over time. 
 
-   :::image type="content" source="media/audit-log-retain-period.png" alt-text="Select how long to retain audit logs.":::
+   |      Setting |     Description    |
+   |--------------------|---------------------|
+   | Set the retention policy for these logs   | Default: 30 days.   |
+   | Set a custom retention policy | Maximum: 100,000 days  |  
 
-   **Note**:
-   - The audit log retention policy allows you to configure how long your organization must retain audit logs to satisfy internal and/or external compliance requirements and relieves you from the burden of deleting unneeded audit logs manually.
-   - Each audit log is stamped with a future date corresponding to the currently active retention period. Logs older than the future date will be automatically deleted by a background system process.
-   - Changing the retention period will not change the future date of already existing audit logs. Only new audit logs will reflect the new future date based on the new retention period.
+   When new features are deployed, the audit retention period is set to **Forever** for all Dataverse environments with existing audit data. The default audit retention period is 30 days for new environments and existing environments without any audit data. You can also change the audit retention value using the [Dataverse Web API](/powerapps/developer/common-data-service/webapi/overview). 
+
+   Each audit log is stamped with the currently active retention period. Changing the retention period will not change already existing audit logs and is only applied to newly created audit logs. 
 
 4. Select **Save**.
   
-### Enable or disable auditing for an entity 
-
-System administrators or customizers can change the default audit settings for entities and for specific fields for an entity.
-
-Follow these steps if you've not yet been migrated to the new audit settings experience.
-  
-1. Browse to the Power Platform admin center and sign in using administrator credentials. 
-  
-2. Select an environment, and then go to **Settings** > expand **Audit and logs** > **Entity and Field Audit Settings**.
-
-3. Under **Components**, expand **Entities**.  
-  
-4. Select the entity for which you want to enable or disable auditing.  
-  
-5. To start auditing, on the **General** tab, in the **Data Services** section, select the **Auditing** check box to enable auditing, or clear the **Auditing** check box to disable it.  
-  
-   By default, when you start or stop auditing for an entity, you also start or stop auditing for all the fields of this entity.  
-  
-6. Select **Save**.  
-  
-7. Publish the customization. To publish for a single entity, choose the entity, such as Account, and then select **Publish** on the toolbar.  
-  
-### Enable or disable auditing for specific fields on an entity 
-  
-1. Under the entity for which you want to enable or disable auditing with specific fields, select **Fields**.  
-  
-2. To enable or disable a single field, open the field and in the Auditing section, select **Enable** or **Disable**.  
-  
-   To enable or disable more than one field, select the fields you want, and then on the toolbar select **Edit**. In the **Edit Multiple Fields** dialog box, in the Auditing area, select **Enabled** or **Disabled**.  
-  
-3. Select **Save**.  
-  
-4. Publish the customization. To publish for a single entity, choose the entity, such as Account, and then select **Publish** on the Actions toolbar.  
-
 ## Set specific areas of the product to audit
 
 1. In the web app, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
@@ -149,8 +111,39 @@ System administrators can see activity for the entities that are enabled for aud
 > [!IMPORTANT]
 > Large attribute values, such as [Email.description](/powerapps/developer/common-data-service/reference/entities/email) or [Annotation](/powerapps/developer/common-data-service/reference/entities/annotation), are limited (capped) at 5KB or ~5,000 characters. A capped attribute value can be recognized by three dots at the end of the text, for example, “lorem ipsum, lorem ip…”.
 
-## Enable or disable entities and fields for auditing 
+## Enable or disable entities and fields for auditing  
+
 System administrators or customizers can change the default audit settings for entities and for specific fields for an entity.  
+  
+### Enable or disable auditing for an entity  
+  
+1. Browse to the Power Platform admin center and sign in using administrator credentials. 
+  
+2. Go to **Environments** > [select an environment] > **Settings** > expand **Audit and logs** > **Entity and Field Audit Settings**.
+
+3. Under **Components**, expand **Entities**.  
+  
+4. Select the entity for which you want to enable or disable auditing.  
+  
+5. To start auditing, on the **General** tab, in the **Data Services** section, select the **Auditing** check box to enable auditing, or clear the **Auditing** check box to disable it.  
+  
+   By default, when you start or stop auditing for an entity, you also start or stop auditing for all the fields of this entity.  
+  
+6. Select **Save**.  
+  
+7. Publish the customization. To publish for a single entity, choose the entity, such as Account, and then select **Publish** on the toolbar.  
+  
+### Enable or disable auditing for specific fields on an entity 
+  
+1. Under the entity for which you want to enable or disable auditing with specific fields, select **Fields**.  
+  
+2. To enable or disable a single field, open the field and in the Auditing section, select **Enable** or **Disable**.  
+  
+   To enable or disable more than one field, select the fields you want, and then on the toolbar select **Edit**. In the **Edit Multiple Fields** dialog box, in the Auditing area, select **Enabled** or **Disabled**.  
+  
+3. Select **Save**.  
+  
+4. Publish the customization. To publish for a single entity, choose the entity, such as Account, and then select **Publish** on the Actions toolbar.  
 
 
 
