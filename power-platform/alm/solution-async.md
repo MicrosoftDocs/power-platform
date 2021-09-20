@@ -39,16 +39,18 @@ The result of staging the solution will be a collection of validation results in
 :::code language="csharp" source="~/powerapps-samples/cds/orgsvc/c#/SolutionStageAndImport/Program.cs" id="snippet_stage-solution":::
 
 ```csharp
-public static StageSolutionResults StageSolution(IOrganizationService service, string solutionFilePath)
+public static StageSolutionResults StageSolution(
+    IOrganizationService service,
+    string solutionFilePath)
 {
-            // Stage the solution
-            var req = new StageSolutionRequest();
+  // Stage the solution
+  var req = new StageSolutionRequest();
 
-            byte[] fileBytes = File.ReadAllBytes(solutionFilePath);
-            req["CustomizationFile"] = fileBytes;
-            var res = service.Execute(req);
+  byte[] fileBytes = File.ReadAllBytes(solutionFilePath);
+  req["CustomizationFile"] = fileBytes;
+  var res = service.Execute(req);
 
-            return (res["StageSolutionResults"] as StageSolutionResults);
+  return (res["StageSolutionResults"] as StageSolutionResults);
 }
 ```
 
@@ -75,57 +77,59 @@ Now let's take a look at some example code that demonstrates `ImportSolutionAsyn
 :::code language="csharp" source="~/powerapps-samples/cds/orgsvc/c#/SolutionStageAndImport/Program.cs" id="snippet_import-solution-async":::
 
 ```csharp
-public static ImportSolutionAsyncResponse ImportSolution(IOrganizationService service, StageSolutionResults stagingResults)
+public static ImportSolutionAsyncResponse ImportSolution(
+    IOrganizationService service,
+    StageSolutionResults stagingResults)
 {
-            // Import the staged solution
-            var componentDetails = stagingResults.SolutionComponentsDetails;
+  // Import the staged solution
+  var componentDetails = stagingResults.SolutionComponentsDetails;
 
-            // TODO These are not referenced in the code but are usefull to explore
-            var missingDependencies = stagingResults.MissingDependencies;   // Contains missing dependencies
-            var solutionDetails = stagingResults.SolutionDetails;           // Contains solution details
+  // TODO These are not referenced in the code but are usefull to explore
+  var missingDependencies = stagingResults.MissingDependencies;   // Contains missing dependencies
+  var solutionDetails = stagingResults.SolutionDetails;           // Contains solution details
 
-            var connectionReferences = componentDetails.Where(x => string.Equals(x.ComponentTypeName, "connectionreference"));
-            var envVarDef = componentDetails.Where(x => string.Equals(x.ComponentTypeName, "environmentvariabledefinition"));
-            var envVarValue = componentDetails.Where(x => string.Equals(x.ComponentTypeName, "environmentvariablevalue"));
+  var connectionReferences = componentDetails.Where(x => string.Equals(x.ComponentTypeName,"connectionreference"));
+  var envVarDef = componentDetails.Where(x => string.Equals(x.ComponentTypeName,"environmentvariabledefinition"));
+  var envVarValue = componentDetails.Where(x => string.Equals(x.ComponentTypeName,"environmentvariablevalue"));
 
-            var componentParams = new EntityCollection();
+  var componentParams = new EntityCollection();
 
-            // Add each connection reference to the component parmameters entity collection.
-            foreach (var conn in connectionReferences)
-            {
-                var e = new Entity("connectionreference")
-                {
-                    ["connectionreferencelogicalname"] = conn.Attributes["connectionreferencelogicalname"].ToString(),
-                    ["connectionreferencedisplayname"] = conn.Attributes["connectionreferencedisplayname"].ToString(),
-                    ["connectorid"] = conn.Attributes["connectorid"].ToString(),
-                    ["connectionid"] = "custom input"
-                };
-                componentParams.Entities.Add(e);
-            }
-            
-            // Add each environment variable to the component parmameters entity collection.
-            foreach (var value in envVarValue)
-            {
-                var e = new Entity("environmentvariablevalue")
-                {
-                    ["schemaname"] = value.Attributes["schemaname"].ToString(),
-                    ["value"] = "custom input"
-                };
+  // Add each connection reference to the component parmameters entity collection.
+  foreach (var conn in connectionReferences)
+  {
+      var e = new Entity("connectionreference")
+      {
+          ["connectionreferencelogicalname"] = conn.Attributes["connectionreferencelogicalname"].ToString(),
+          ["connectionreferencedisplayname"] = conn.Attributes["connectionreferencedisplayname"].ToString(),
+          ["connectorid"] = conn.Attributes["connectorid"].ToString(),
+          ["connectionid"] = "custom input"
+      };
+      componentParams.Entities.Add(e);
+  }
+  
+  // Add each environment variable to the component parmameters entity collection.
+  foreach (var value in envVarValue)
+  {
+      var e = new Entity("environmentvariablevalue")
+      {
+          ["schemaname"] = value.Attributes["schemaname"].ToString(),
+          ["value"] = "custom input"
+      };
 
-                if (value.Attributes.ContainsKey("environmentvariablevalueid"))
-                {
-                    e["environmentvariablevalueid"] = value.Attributes["environmentvariablevalueid"].ToString();
-                }
-                componentParams.Entities.Add(e);
-            }
+      if (value.Attributes.ContainsKey("environmentvariablevalueid"))
+      {
+          e["environmentvariablevalueid"] = value.Attributes["environmentvariablevalueid"].ToString();
+      }
+      componentParams.Entities.Add(e);
+  }
 
-            // Import the solution
-            var importSolutionReq = new ImportSolutionAsyncRequest();
-            importSolutionReq.ComponentParameters = componentParams;
-            importSolutionReq.SolutionParameters = new SolutionParameters { StageSolutionUploadId = stagingResults.StageSolutionUploadId };
-            var response = service.Execute(importSolutionReq) as ImportSolutionAsyncResponse;
+  // Import the solution
+  var importSolutionReq = new ImportSolutionAsyncRequest();
+  importSolutionReq.ComponentParameters = componentParams;
+  importSolutionReq.SolutionParameters = new SolutionParameters { StageSolutionUploadId =stagingResults.StageSolutionUploadId };
+  var response = service.Execute(importSolutionReq) as ImportSolutionAsyncResponse;
 
-            return (response);
+  return (response);
 }
 ```
 
@@ -134,7 +138,7 @@ public static ImportSolutionAsyncResponse ImportSolution(IOrganizationService se
 ```csharp
 private void ImportSolutionUsingJob(HttpClient httpClient, string filepath) 
 { 
-   HttpRequestMessage request = null; 
+  HttpRequestMessage request = null; 
 
   try 
   { 
@@ -154,35 +158,36 @@ private void ImportSolutionUsingJob(HttpClient httpClient, string filepath)
       'value':'testvalue2' 
     }, ]"; 
 
-  var inputs = new JObject(); 
-  var solParams = new JObject(); 
+    var inputs = new JObject(); 
+    var solParams = new JObject(); 
 
-  // If you were using a staged solution, place its ID here.
-  solParams["StageSolutionUploadId"] = Guid.Empty; 
+    // If you were using a staged solution, place its ID here.
+    solParams["StageSolutionUploadId"] = Guid.Empty; 
 
-  inputs["SolutionParameters"] = solParams; 
-  inputs["OverwriteUnmanagedCustomizations"] = false; 
-  inputs["PublishWorkflows"] = true; 
-  inputs["CustomizationFile"] = Convert.ToBase64String(fileBytes); 
-  inputs["ComponentParameters"] = JArray.Parse(str); 
+    inputs["SolutionParameters"] = solParams; 
+    inputs["OverwriteUnmanagedCustomizations"] = false; 
+    inputs["PublishWorkflows"] = true; 
+    inputs["CustomizationFile"] = Convert.ToBase64String(fileBytes); 
+    inputs["ComponentParameters"] = JArray.Parse(str); 
 
-  var body = JsonConvert.SerializeObject(inputs); 
-  request.Content = new StringContent(body); 
-  request.Content.Headers.ContentType = MediaTypeHeaderValue.Parse("application/json"); 
+    var body = JsonConvert.SerializeObject(inputs); 
+    request.Content = new StringContent(body); 
+    request.Content.Headers.ContentType = MediaTypeHeaderValue.Parse("application/json"); 
 
-  //Send the HttpRequest 
-  var response = httpClient.SendAsync(request); 
-  response.Wait(); 
+    //Send the HttpRequest 
+    var response = httpClient.SendAsync(request); 
+    response.Wait(); 
 
-  var result = response.Result.Content.ReadAsStringAsync(); 
-  result.Wait(); 
+    var result = response.Result.Content.ReadAsStringAsync(); 
+    result.Wait(); 
 
-  var jsonRes = JsonConvert.DeserializeObject(result.Result).ToString(); 
-} 
+    var jsonRes = JsonConvert.DeserializeObject(result.Result).ToString(); 
+  }
 
-catch (Exception err) 
-{ 
-  throw new Exception(err.Message); 
+  catch (Exception err) 
+  { 
+    throw new Exception(err.Message); 
+  }
 }
 ```
 
@@ -197,44 +202,42 @@ The response returned from `ImportSolutionAsync` contains `ImportJobKey` and `As
 :::code language="csharp" source="~/powerapps-samples/cds/orgsvc/c#/SolutionStageAndImport/Program.cs" id="snippet_check-import-status":::
 
 ```csharp
-       public static void CheckImportStatus(IOrganizationService service, Guid asyncOperationId, Guid importJobKey)
+public static void CheckImportStatus(
+    IOrganizationService service,
+    Guid asyncOperationId,
+    Guid importJobKey)
+{
+    // Get solution import status
+    var finished = false;
+    Entity asyncOperation = null;
+    // Wait until the async job is finished
+    while (!finished)
+    {
+        asyncOperation = service.Retrieve("asyncoperation", asyncOperationId, new ColumnSet("statecode", "statuscode"));
+        OptionSetValue statecode = (OptionSetValue)asyncOperation["statecode"];
+        if (statecode.Value == 3)
         {
-            // Get solution import status
-            var finished = false;
-            Entity asyncOperation = null;
-
-            // Wait until the async job is finished
-            while (!finished)
-            {
-                asyncOperation = service.Retrieve("asyncoperation", asyncOperationId, new ColumnSet("statecode", "statuscode"));
-                OptionSetValue statecode = (OptionSetValue)asyncOperation["statecode"];
-
-                if (statecode.Value == 3)
-                {
-                    finished = true;
-                }
-                else
-                {
-                    Thread.Sleep(10000);
-                }
-            }
-
-            // Solution import completed successfully
-            OptionSetValue statuscode = (OptionSetValue)asyncOperation["statuscode"];
-            if (statuscode.Value == 30)
-            {
-                Console.WriteLine("The solution import completed successfully.");
-            }
-
-            else if (asyncOperation["statuscode"].ToString() == "31")  // Solution import failed
-            {
-                Console.WriteLine("The solution import failed.");
-
-                var getLogReq = new RetrieveFormattedImportJobResultsRequest { ImportJobId = importJobKey };
-                var importJob = service.Execute(getLogReq) as RetrieveFormattedImportJobResultsResponse;
-                // TODO Do something with the import job results
-            }
+            finished = true;
         }
+        else
+        {
+            Thread.Sleep(10000);
+        }
+    }
+    // Solution import completed successfully
+    OptionSetValue statuscode = (OptionSetValue)asyncOperation["statuscode"];
+    if (statuscode.Value == 30)
+    {
+        Console.WriteLine("The solution import completed successfully.");
+    }
+    else if (asyncOperation["statuscode"].ToString() == "31")  // Solution import failed
+    {
+        Console.WriteLine("The solution import failed.");
+        var getLogReq = new RetrieveFormattedImportJobResultsRequest { ImportJobId = importJobKey };
+        var importJob = service.Execute(getLogReq) as RetrieveFormattedImportJobResultsResponse;
+        // TODO Do something with the import job results
+    }
+}
 ```
 
 ### [Web API (C#)](#tab/webapi-csharp)
