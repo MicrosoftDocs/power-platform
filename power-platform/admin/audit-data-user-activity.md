@@ -115,12 +115,6 @@ Follow these steps if you've not yet been migrated to the new audit settings exp
   
 4. Publish the customization. To publish for a single entity, choose the entity, such as Account, and then select **Publish** on the Actions toolbar.  
 
-
-
-
-
-
-  
 ## Set specific areas of the product to audit
 
 1. In the web app, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
@@ -157,12 +151,6 @@ System administrators can see activity for the entities that are enabled for aud
 
 ## Enable or disable entities and fields for auditing 
 System administrators or customizers can change the default audit settings for entities and for specific fields for an entity.  
-
-
-  
-
-
-
 
 
 
