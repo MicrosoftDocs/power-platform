@@ -43,14 +43,12 @@ The following operations can be audited:
 - Deletion of audit logs.  
 - For changes made to entity fields that can be localized, such as the Product entity name or description fields, the locale ID (LCID) appears in the audit record.  
   
+## Start/stop auditing and set retention policy  
+
 System administrators and customizers can start or stop auditing for an organization.  
   
 > [!IMPORTANT]
 > For Customer Engagement (on-premises), you may notice that auditing can significantly increase the size of the organization database over time. You can delete audit logs by going to **Settings** > **Auditing** > **Audit Log Management**. Additionally, you may want to stop auditing for maintenance purposes. Stopping auditing stops tracking for the organization during the period until auditing is started again. When you start auditing again, the same auditing selection is maintained that was previously used.  
-
-## Start/stop auditing and set retention policy  
-
-System administrators or customizers can change the default audit settings for entities and for specific fields for an entity.
 
 ### Enable or disable auditing for an entity  (new experience)
 
@@ -84,6 +82,8 @@ System administrators or customizers can change the default audit settings for e
 4. Select **Save**.
   
 ### Enable or disable auditing for an entity 
+
+System administrators or customizers can change the default audit settings for entities and for specific fields for an entity.
 
 Follow these steps if you've not yet been migrated to the new audit settings experience.
   
