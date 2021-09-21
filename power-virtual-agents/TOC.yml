@@ -60,7 +60,7 @@
          href: advanced-ai-features.md
        - name: Use entities and slot filling
          href: advanced-entities-slot-filling.md
-       - name: Use variables
+       - name: Use variables (Preview)
          href: authoring-variables.md
        - name: Reuse variables across topics
          href: authoring-variables-bot.md
