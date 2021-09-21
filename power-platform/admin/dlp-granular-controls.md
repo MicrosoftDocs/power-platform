@@ -37,7 +37,7 @@ This opens a side panel where you can allow or deny specific actions. You can al
 :::image type="content" source="media/dlp-allow-deny-connector-actions.png" alt-text="Set Allow or Deny for connector actions.":::
 
 ### Availability
-Configuring a connector's actions is available for all _blockable_ connectors, but not for [unblockable connectors](dlp-connector-classification#list-of-connectors-that-cant-be-blocked).
+Configuring a connector's actions is available for all *blockable* connectors, but not for [unblockable connectors](dlp-connector-classification.md#list-of-connectors-that-cant-be-blocked). 
 
 ### PowerShell support for Connector action control
 
