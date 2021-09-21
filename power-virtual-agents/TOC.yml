@@ -46,6 +46,8 @@
          href: authoring-system-fallback-topic.md
        - name: Manage topics
          href: authoring-topic-management.md
+       - name: Add comments to bots
+         href: authoring-comments.md
        - name: Test your bot
          href: authoring-test-bot.md
        - name: Supported languages
