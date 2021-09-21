@@ -4,7 +4,7 @@ description: About fine-grained controls such as the ability to block specific c
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/11/2021
+ms.date: 09/21/2021
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
