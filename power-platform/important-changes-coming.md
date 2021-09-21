@@ -1,7 +1,7 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps"
 description: Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps 
-ms.date: 08/23/2021
+ms.date: 09/21/2021
 ms.topic: "article"
 ms.assetid: 994cc854-17f6-45d6-bc20-fcf1a3f2d6d6
 searchScope:
@@ -21,7 +21,7 @@ The announcements and deprecations described in this article apply to Power Apps
 Admins and IT professionals can use this information to prepare for future releases. This article was first published on June 27, 2017.
 
 > [!IMPORTANT]
-> "Deprecated" means we intend to remove the feature or capability from a future major release. The feature or capability will continue to work and is fully supported until it is officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
+> "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability will continue to work and is fully supported until it is officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
 
 ## Support for Microsoft 365 Groups and Yammer in Dynamics 365 is deprecated
 
@@ -89,6 +89,19 @@ Main forms will no longer include the footer when a record is opened. Any out of
 The out of box fields currently on the footer is removed and included on the form as part of the 2021 release wave 2 updates. So, you don't lose status, unsaved changes, or the option to open a form in a new window. The **Save** option is already available in the command bar and is always visible to the user. 
 
 While we understand that these types of changes can be disruptive for makers that use the footer today, we always evaluate the experiences. We do this to ensure they provide a modern experience that improves usability, support accessibility requirements, and improves discoverability for highly used fields and controls on a page.
+
+## Tooltips for column descriptions on model-driven forms
+
+With the upcoming 2021 release wave 2 (public preview in August 2021 and GA in October 2021), hover tooltips on column labels for full descriptions will be removed.
+
+#### Why is this needed? 
+
+-	These tooltips aren't an accessible way to access information about the column. 
+
+#### Impact
+
+- Starting October 2021, these descriptions will no longer be available on hover. 
+- We will be introducing a new fully accessible feature for April 2022.
 
 ## Model-driven app controls deprecation
 
@@ -162,7 +175,6 @@ Effective October 01, 2020, the automatic record creation and update rules and s
 
 Effective September 24, 2020, the **TimeZoneRule** entity and the **Bias** and **RetiredOrder** attributes of the **TimeZoneDefinition** entity are deprecated and will be removed in a future release. For all client-side time zone calculations, use the [LocalTimeFromUtcTime](/dynamics365/customer-engagement/web-api/localtimefromutctime) and [UtcTimeFromLocalTime](/dynamics365/customer-engagement/web-api/utctimefromlocaltime) functions in Web API or the [TimeZoneInfo](/dotnet/api/system.timezoneinfo) class in the .NET framework. More information: [Blog: Deprecation of time zone entities in Microsoft Dataverse](https://powerapps.microsoft.com/blog/deprecation-of-time-zone-entities-in-common-data-service/) 
 
-
 ## Online management API PowerShell module and REST API are deprecated
 
 Effective August 26, 2020, the online management API PowerShell module, and the underlying [Online Management REST API](/powerapps/developer/common-data-service/online-management-api/overview) are  deprecated. The [online management API PowerShell module](/powershell/powerapps/get-started-onlinemanagementapi) will be updated in October  2020 to point to newer underlying APIs and won’t receive further updates. We recommend that you use the Power Apps administration module. More information: [Get started using the Power Apps admin module](/powershell/powerapps/get-started-powerapps-admin)
@@ -174,7 +186,7 @@ Effective July 10, 2020, the [Company News Timeline](/dynamics365/company-news-t
 1. To remove the solution, go to **Advanced settings** and select **Solutions**. 
 2. Select **CompanyNewsTimeline** and then select **Delete**. 
 
-As an alternative you can install news Power Apps component framework control. For more information, see [Set up and use the news control](Set up and use the news control](/powerapps/maker/model-driven-apps/stay-current-with-news-control).
+As an alternative you can install news Power Apps component framework control. For more information, see [Set up and use the news control](/powerapps/maker/model-driven-apps/stay-current-with-news-control).
 
 ## Dynamic 365 Sales bot is deprecated
 
@@ -431,7 +443,6 @@ Microsoft will continue to provide security and other critical updates to the Dy
 If you are currently using the Dynamics 365 for Blackberry App together with Mobile Application Management for Blackberry, plan to migrate to Dynamics 365 for phones by October 31, 2019. We encourage you to migrate as soon as possible to take advantage of Microsoft's ongoing investments in the reliability, performance, and functionality of the Dynamics 365 mobile app.
 
 ## Usage of Parature knowledgebase as the knowledge management solution is deprecated
-
 
 Usage of Parature knowledgebase as the knowledge
 management solution is deprecated. This feature is replaced by Knowledge

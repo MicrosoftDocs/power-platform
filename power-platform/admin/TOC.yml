@@ -228,8 +228,6 @@
             href: configure-server-based-authentication-sharepoint-on-premises.md
           - name: Document management settings
             href: enable-sharepoint-document-management-specific-entities.md
-          - name: Enable Teams Integration for model-driven apps
-            href: enable-teams-integration.md
           - name: Manage document suggestions
             href: enable-document-suggestions.md
           - name: OneDrive for business
@@ -771,6 +769,8 @@
             href: best-practices-server-side-synchronization.md
           - name: Personal options that affect synchronization
             href: set-personal-options-affect-tracking-synchronization-between-dynamics-365-outlook-exchange.md
+          - name: Automatically track sent folder items
+            href: track-sent-folder-items.md
           - name: Configure incoming and outgoing email synchronization
             items: 
             - name: Configure incoming and outgoing email synchronization
