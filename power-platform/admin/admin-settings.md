@@ -52,8 +52,55 @@ These security settings are now managed in the Power Platform admin center.
 
 ## App settings in unified interface
 
-Getting to app feature settings can vary based on the type of app you're using.
+Getting to app feature settings can vary based on the type of app you're using. 
 
+The following app settings have modernized experience available in the unified interface - 
+
+Legacy settings | Modernized experience  |
+--- | --- | 
+|**Administration** ||
+| System Settings > Goals | Sales Hub|
+|**Business Management**  ||
+| Business Closures    | Customer Service Hub|
+| Connection Roles     | App-less unified interface|
+| Facilities/Equipment | Customer Service Hub|
+| Goal Metrics        | Customer Service Hub|
+| Queues              | Customer Service Hub|
+| Resource Groups     | Customer Service Hub|
+| Rollup Queries      | Sales Hub |
+| Sales Territories   | Sales Hub |
+| Services            | Customer Service Hub|
+| Sites               | Customer Service Hub|
+| Subjects            | Customer Service Hub|
+| LinkedIn Sales Navigator |  Sales Hub     |
+| **Data Management** | |
+| Similar Record Suggestion Settings | Customer Service Hub|
+| **Product Catalog** | |
+|  Discount Lists     | Sales Hub|
+|  Families & Products| Sales Hub|
+|  Price Lists        | Sales Hub|
+|  Unit Groups        | Sales Hub|
+| **Service Management** | |
+| Business Closures   | Customer Service Hub| 
+| Categories          | Customer Service Hub|
+| Customer Service Schedule | Customer Service Hub|
+| Email Templates     | Customer Service Hub|
+| Embedded Knowledge Search | Customer Service Hub|
+| Entitlement Templates | Customer Service Hub|
+| Entitlements         | Customer Service Hub|
+| Facilities/Equipment | Customer Service Hub|
+| Holiday Schedule     | Customer Service Hub|
+| Parent and Child case settings | Customer Service Hub|
+| Queues               | Customer Service Hub|
+| Resource Groups      | Customer Service Hub|
+| Routing Rule Sets    | Customer Service Hub|
+| Service Configuration Settings | Customer Service Hub|
+| Services             | Customer Service Hub|
+| Sites                | Customer Service Hub|
+|**Templates** | |
+| Document Templates   | App-less unified interface|
+| Email Signatures     | Customer Service Hub|
+| Email Templates      | Customer Service Hub|
 
 
 ### Settings in Unified Interface apps
