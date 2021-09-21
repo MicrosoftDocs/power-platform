@@ -5,10 +5,13 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 08/11/2021
-author: jimholtz
 ms.subservice: admin
-ms.author: jimholtz
+author: mikferland-msft
+ms.author: miferlan
 ms.reviewer: jimholtz
+contributors:
+  - mikferland-msft
+  - mihaelablendea
 ms.custom: "admin-security"
 search.audienceType: 
   - admin

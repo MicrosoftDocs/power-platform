@@ -2,13 +2,15 @@
 title: "Custom connector parity | MicrosoftDocs"
 description: About allowing makers to create and share custom connectors.
 ms.service: power-platform
-ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/05/2021
-author: jimholtz
+ms.date: 09/08/2021
 ms.subservice: admin
-ms.author: jimholtz
+author: mikferland-msft
+ms.author: miferlan
 ms.reviewer: jimholtz
+contributors:
+  - mikferland-msft
+  - mihaelablendea
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
@@ -123,7 +125,9 @@ $UrlPatterns = @{
 New-PowerAppPolicyUrlPatterns -TenantId $TenantId -PolicyName $PolicyId -NewUrlPatterns $UrlPatterns
 ```
 
+## Known limitation
 
+When an environment admin creates or updates an environment-level DLP policy, they can only view custom connectors for which they are an owner or that have been shared with them.
 
 
 

@@ -2,13 +2,14 @@
 title: Back up and restore environments | Microsoft Docs
 description: Covers how to back up and restore environments
 services: powerapps
-author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/19/2021
+ms.date: 09/16/2021
 ms.subservice: admin
-ms.author: jimholtz
+author: ChrisGarty
+ms.author: cgarty
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
@@ -33,6 +34,7 @@ About **system backups**:
 - System backups occur continuously. The underlying technology used is Azure SQL Database. See SQL Database documentation [Automated backups](/azure/sql-database/sql-database-automated-backups) for details.
 - System backups for production environments that have been created with a database and have one or more Dynamics 365 applications installed are retained up to 28 days. System backups for production environments which do not have Dynamics 365 applications deployed in them will be retained for 7 days. System backups for sandbox environments will be retained for 7 days.
 - You must restore an environment to the same region in which it was backed up.
+- Currently, audit logs aren't restored. 
   
 ### Restore a system backup  
   
@@ -193,6 +195,18 @@ In order to prevent accidental overwrites, we don't allow users to directly rest
 
 ### Why is my organization in administration mode after a restore and how do I disable it?
 The newly restored environment is placed in administration mode. To disable administration mode, see [Set administration mode](admin-mode.md#set-administration-mode). You can set administration mode in sandbox or production environments.  
+
+### What steps are needed after a restore to ensure flows are working as expected?
+
+- **Flows** - Review the flows in the environment. Edit flows that need triggers and actions adjusted. Enable and disable flows as needed.
+- **Connection References** - Connection References will require new connections. Create and set connections on Connection References.
+- **Custom Connectors** - Custom connectors should be reviewed and, if needed, deleted and reinstalled.
+
+### Are apps shared with Everyone still shared with Everyone in a restored environment? 
+No. Apps shared with Everyone in an environment that's backed up are not shared with Everyone in the restored environment. Alternatively, a canvas app can be shared with a security group and the app in the restored environment will be shared with that security group. 
+
+### Are Power Apps app identifiers the same after backup and restore operations?
+No for canvas apps. The app id for a canvas app is different in a restored environment than the id value when an environment was backed up. 
 
 ## Troubleshooting
 

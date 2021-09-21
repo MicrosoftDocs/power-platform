@@ -131,7 +131,7 @@ Your Adaptive card **StartTrialForm** has two more fields, **Address** and **Wee
 
 :::image type="content" source="media/Composer_Example4/E4_setProperties.png" alt-text="Composer - set properties.":::
 
-Add a **Send a Response** action to provide a from submission confirmation:
+Add a **Send a Response** action to provide a form submission confirmation:
 
 ```JSON
 ${user.name} - thanks for starting a ${user.weeks} week trial with us! Your meals will be delivered to this address: ${user.address}.

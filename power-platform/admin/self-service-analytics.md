@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/14/2021
+ms.date: 09/14/2021
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -124,7 +124,6 @@ The setup process is now complete, and your data will be exported within 48 hour
 
 
 ### See also
-
 [Create custom dashboards by using Power Apps inventory and usage data](build-custom-reports.md)
 
 
