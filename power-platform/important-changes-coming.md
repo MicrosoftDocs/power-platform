@@ -90,6 +90,19 @@ The out of box fields currently on the footer is removed and included on the for
 
 While we understand that these types of changes can be disruptive for makers that use the footer today, we always evaluate the experiences. We do this to ensure they provide a modern experience that improves usability, support accessibility requirements, and improves discoverability for highly used fields and controls on a page.
 
+## Tooltips for column descriptions on model-driven forms
+
+With the upcoming 2021 release wave 2 (public preview in August 2021 and GA in October 2021), hover tooltips on column labels for full descriptions will be removed.
+
+#### Why is this needed? 
+
+-	These tooltips aren't an accessible way to access information about the column. 
+
+#### Impact
+
+- Starting October 2021, these descriptions will no longer be available on hover. 
+- We will be introducing a new fully accessible feature for April 2022.
+
 ## Model-driven app controls deprecation
 
 With the upcoming 2021 release wave 1 (public preview in February 2021 and GA in April 2021), some older controls for model-driven apps will be deprecated. These controls include Flip Switch, Calendar Control (V1), Linear Slider, Radial Knob, Arc Knob, Linear Gauge; along with the Website Preview control, MultiSelectPicklistControl (V1), and the Flip Label.
@@ -161,7 +174,6 @@ Effective October 01, 2020, the automatic record creation and update rules and s
 ## TimeZoneRule entity and some attributes of TimeZoneDefinition entity are deprecated
 
 Effective September 24, 2020, the **TimeZoneRule** entity and the **Bias** and **RetiredOrder** attributes of the **TimeZoneDefinition** entity are deprecated and will be removed in a future release. For all client-side time zone calculations, use the [LocalTimeFromUtcTime](/dynamics365/customer-engagement/web-api/localtimefromutctime) and [UtcTimeFromLocalTime](/dynamics365/customer-engagement/web-api/utctimefromlocaltime) functions in Web API or the [TimeZoneInfo](/dotnet/api/system.timezoneinfo) class in the .NET framework. More information: [Blog: Deprecation of time zone entities in Microsoft Dataverse](https://powerapps.microsoft.com/blog/deprecation-of-time-zone-entities-in-common-data-service/) 
-
 
 ## Online management API PowerShell module and REST API are deprecated
 
@@ -431,7 +443,6 @@ Microsoft will continue to provide security and other critical updates to the Dy
 If you are currently using the Dynamics 365 for Blackberry App together with Mobile Application Management for Blackberry, plan to migrate to Dynamics 365 for phones by October 31, 2019. We encourage you to migrate as soon as possible to take advantage of Microsoft's ongoing investments in the reliability, performance, and functionality of the Dynamics 365 mobile app.
 
 ## Usage of Parature knowledgebase as the knowledge management solution is deprecated
-
 
 Usage of Parature knowledgebase as the knowledge
 management solution is deprecated. This feature is replaced by Knowledge
