@@ -16,6 +16,12 @@ searchScope:
 
 # Power Virtual Agents chatbot templates
 
+Select the version of Power Virtual Agents you're using here:
+
+> [!div class="op_single_selector"]
+> - [Power Virtual Agents web app](../fundamentals-templates.md)
+> - [Power Virtual Agents app in Microsoft Teams](fundamentals-templates-teams.md)
+
 Bots are great at helping your employees to self-serve human resources (HR), IT, and other internal employee functions by providing automated responses and taking meaningful actions. This increases an employee's efficiency and saves your organization money and time.
 
 Sometimes, however, it’s hard to know where to start. You can use templates created by the Power Virtual Agents team to help you create and customize bots to your needs.
