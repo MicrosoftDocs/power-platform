@@ -1,7 +1,7 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps"
 description: Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps 
-ms.date: 08/23/2021
+ms.date: 09/21/2021
 ms.topic: "article"
 ms.assetid: 994cc854-17f6-45d6-bc20-fcf1a3f2d6d6
 searchScope:
@@ -90,13 +90,13 @@ The out of box fields currently on the footer is removed and included on the for
 
 While we understand that these types of changes can be disruptive for makers that use the footer today, we always evaluate the experiences. We do this to ensure they provide a modern experience that improves usability, support accessibility requirements, and improves discoverability for highly used fields and controls on a page.
 
-## Tooltips for field descriptions on model-driven forms
+## Tooltips for column descriptions on model-driven forms
 
-With the upcoming 2021 release wave 2 (public preview in August 2021 and GA in October 2021), hover tooltips on field labels for full descriptions will be deprecated.
+With the upcoming 2021 release wave 2 (public preview in August 2021 and GA in October 2021), hover tooltips on column labels for full descriptions will be removed.
 
 #### Why is this needed? 
 
--	Tooltips were removed because they are not an accessible way to access this information. 
+-	These tooltips aren't an accessible way to access information about the column. 
 
 #### Impact
 
