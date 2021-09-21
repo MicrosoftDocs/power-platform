@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/13/2021
+ms.date: 09/21/2021
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -299,7 +299,7 @@ The following table lists the privileges shown in the security role editor misce
 <tr class="even">
 <td><p>Bulk Edit</p></td>
 <td><p>prvBulkEdit</p></td>
-<td><p></p></td>
+<td><p><a href="/powerapps/user/edit-rows">Edit multiple rows</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Change Hierarchy Security Settings</p></td>
