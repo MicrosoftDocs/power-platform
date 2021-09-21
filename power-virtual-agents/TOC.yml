@@ -16,7 +16,7 @@
          href: fundamentals-what-is-power-virtual-agents-portal.md
        - name: Use pre-built chatbot templates
          href: fundamentals-templates.md
-       - name: Quickstart: Create and deploy a chatbot
+       - name: Quickstart - Create and deploy a chatbot
          href: fundamentals-get-started.md
     - name: Administer and manage
       items:
@@ -166,9 +166,8 @@
          href: teams/fundamentals-what-is-power-virtual-agents-teams.md
        - name: Use pre-built chatbot templates
          href: teams/fundamentals-templates-teams.md
-       - name: Quickstart: Create and deploy a chatbot
+       - name: Quickstart - Create and deploy a chatbot
          href: teams/fundamentals-get-started-teams.md
-
     - name: Administer and manage
       items:
        - name: Licensing for Virtual Power Agents in Teams
