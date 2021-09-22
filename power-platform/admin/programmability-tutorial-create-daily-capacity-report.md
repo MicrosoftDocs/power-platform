@@ -17,20 +17,21 @@ search.app:
 
 # Preview: Create a daily capacity report
 
-The Power Platform API can be used to extract the various details and metadata from your Microsoft Power Platform environments, both those that use Microsoft Dataverse and those that don't.  
+The Power Platform API can be used to extract the various details and metadata from your Microsoft Power Platform environments, both those that use Microsoft Dataverse and those that don't.  The API is used internally by various clients available today such as PowerShell.
 
 In this tutorial, you will learn how to:
 
-- Create a Power Automate or Logic Apps workflow that authenticates with the Power Platform API.
+- Create a Power Automate or Logic Apps workflow (Azure) or PowerShell script that authenticates with the Power Platform API.
 - Call the List Environments endpoint to retrieve your Microsoft Power Platform environment details.
 - Iterate through the capacity object to retrieve the actual consumption.
-- Save the consumption data into an HTML table for display.
+- Save the consumption data into an table for display.
 
 As an example of this scenario, a customer is looking to get a handle on their capacity consumption so that they can better understand the allocation of their total tenant capacity by department.  This is so that the customer can perform some internal cost accounting functions and chargebacks based on how much each department is consuming of the total available capacity.  This customer is using the Environment Description to call out the department that owns each environment.  
 
 > [!IMPORTANT]
 > The Power Platform API is in preview. The host name and data contracts are subject to change by the time the endpoints become generally available.  At that time, this article will be updated with the final endpoint details.
 
+# [REST](#tab/Azure)
 ## Create the workflow and set up the variables
 To start off, in this tutorial we will use a Logic Apps workflow.  A Power Automate flow is also acceptable, as well as any other orchestration engine that your company prefers to use for automation.  All of the calls to retrieve the data will be using RESTful APIs so any tooling that supports REST will work with this tutorial.
 
@@ -44,7 +45,7 @@ After that finishes provisioning, edit the workflow using the Designer and set u
 > [!div class="mx-imgBorder"] 
 > ![Set up a Recurrence trigger.](media/capacity2.png "Set up a Recurrence trigger")
 
-Next, we'll need to create five variables as detailed below:
+Next, we'll need to initialize five variables as detailed below:
 
 - **SPN-Id** – This is your service principal ClientID.  It'll be used later to perform the authentication in a service principal context.  If you are using username/password context, you can skip this variable.
 - **DBCapacity** – This is a Float variable for the consumed database capacity in megabytes.
@@ -62,7 +63,7 @@ In this tutorial, we are using a key vault to store our service principal secret
 > [!div class="mx-imgBorder"] 
 > ![Authenticate with Azure AD and retrieve a token for calling the Power Platform API.](media/capacity4.png "Authenticate with Azure AD and retrieve a token for calling the Power Platform API")
 
-We then parse the Azure AD token response into a typed object using this JSON schema:
+We then parse the Azure AD token response into a typed object using this JSON schema in the 'Parse JSON' action:
 
 ```json
 {
@@ -86,6 +87,26 @@ We then parse the Azure AD token response into a typed object using this JSON sc
 
 > [!div class="mx-imgBorder"] 
 > ![Parse the Azure AD token response into a strongly typed object.](media/capacity5.png "Parse the Azure AD token response into a strongly typed object")
+
+[PowerShell](#nav/PowerShell)
+
+## Initialize the variables and connect to Power Platform API
+Use the below script to initialize some variables that we will use throughout the tutorial.  Optionally, you may use Username/Password authentication but it is not advised.
+
+```powershell
+# Set variables for your session
+$TenantId = New-Guid
+$SPNId = New-Guid
+$ClientSecret = "MySecretFromAzure"
+$DBCapacity = 0.00
+$FileCapacity = 0.00
+$LogCapacity = 0.00
+
+Write-Host "Creating a session against the Power Platform API"
+
+Add-PowerAppsAccount -Endpoint prod -TenantID $TenantId -ApplicationId $SPNId -ClientSecret
+```
+---
 
 ## Call the List Environments endpoint
 Now is the time to call the Power Platform API.  We’ll use the List Environments endpoint to retrieve all of our environments and their metadata, specifically with the $expand parameter for capacity.  This also uses the Authorization header with the Bearer Token we received in the previous section from Azure AD.  If you used username/password context, you can also enter that Bearer Token at this step as well.
