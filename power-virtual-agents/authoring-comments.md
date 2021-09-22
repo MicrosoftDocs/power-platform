@@ -15,7 +15,7 @@ searchScope:
   - "Power Virtual Agents"
 ---
 
-# Add comments to bots (Preview) 
+# Add comments to bots (Preview) 
 
 - [!INCLUDE [Preview documentation notice](includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -33,11 +33,11 @@ Select the version of Power Virtual Agents you're using here:
 
 
 
-Comments are notes that are associated with items in your bot. Use comments to help your team collaborate on the bot and provide feedback, or provide additional information on implementation details in your bot.  
+Comments are notes that are associated with items in your bot. Use comments to help your team collaborate on the bot and provide feedback, or provide additional information on implementation details in your bot.  
 
-In Power Virtual Agents comments can be attached to topics and individual nodes within topics. The comments are stored in a table in Dataverse in the default solution.  
+In Power Virtual Agents comments can be attached to topics and individual nodes within topics. The comments are stored in a table in Dataverse in the default solution.  
 
-Comments are commonly questions, feedback, or ideas that can provide important context for other makers who work on your bot's topics. 
+Comments are commonly questions, feedback, or ideas that can provide important context for other makers who work on your bot's topics. 
 
 You can create comment threads to track a single or multiple issues, and you can delete or resolve them if they're no longer relevant. 
 
