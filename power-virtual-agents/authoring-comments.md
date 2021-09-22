@@ -1,20 +1,21 @@
 ---
-title: "Create conversational chatbots"
-description: "You can easily create new bots using the bot-builder wizard in Power Virtual Agents."
+title: "Create and reply to comments in bot topics"
+description: "Add new comments, reply to existing comments, and resolve or delete comments and comment threads for topics within a Power Virtual Agents chatbot."
 keywords: "PVA"
-ms.date: 9/22/2020
+ms.date: 9/22/2021
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt
+ms.reviewer: gitikag
 manager: shellyha
-ms.custom: onboarding, ceX
+ms.custom: authoring, ceX
 ms.collection: virtual-agent
 searchScope:
   - "Power Virtual Agents"
 ---
 
-# Create and delete Power Virtual Agents bots
+# Add comments to bots (Preview) 
 
 - [!INCLUDE [Preview documentation notice](includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -32,113 +33,82 @@ Select the version of Power Virtual Agents you're using here:
 
 
 
-[intro]
+Comments are notes that are associated with items in your bot. Use comments to help your team collaborate on the bot and provide feedback, or provide additional information on implementation details in your bot.  
 
+In Power Virtual Agents comments can be attached to topics and individual nodes within topics. The comments are stored in a table in Dataverse in the default solution.  
+
+Comments are commonly questions, feedback, or ideas that can provide important context for other makers who work on your bot's topics. 
+
+You can create comment threads to track a single or multiple issues, and you can delete or resolve them if they're no longer relevant. 
+
+Comment threads are created when someone replies to an existing comment. Using threads means you can discuss a single issue without getting confused with lots of replies about different things.
+
+:::image type="content" source="media/authoring-comments/authoring-comments-window.png" alt-text="Screenshot of the Comments pane.":::
 
 ## Prerequisites
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 
+## Manage comments
 
-# Adding comments to a bot (preview) 
+The **Comments** pane lets you create new comment threads, resolve or delete comment threads, and add or delete individual comments.
 
- 
+You open the pane by selecting the **Comments** icon at the top of the authoring canvas for a topic.
 
-## Comments overview 
+:::image type="content" source="media/authoring-comments/authoring-comments-open.png" alt-text="Screenshot with the Open comments menu icon selected, the menu icon looks like a chat box.":::
 
-Comments are notes that are associated with items in your bot. Use comments to help your team collaborate on the bot and provide feedback, or provide additional information on implementation details in your bot.  
+Comment threads can be created at both the topic level and for individual nodes within the topic.
 
-In Power Virtual Agents, the anchors, which are what comments can attach to, are topics and nodes within topics. The comments are stored in a table in Dataverse in the default solution.  
+Both types of comment threads are shown in the **Comments** pane. Topic-level topics will show first, in order of when they were created, and node-level topics will show in the order of where the node appears in the topic.
 
- 
+Selecting a node-level comment thread will move the authoring canvas to the associated node and highlight it.
 
-Important Note:  
+Selecting a topic-level comment thread will move the authoring canvas to the last selected node.
 
-- This is a preview feature.
+### Create a topic-level comment thread
 
-- Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+To create a new topic-level comment thread, open the **Comments** pane and select **New**.
 
-•
+Enter your comment and select **Post comment** at the bottom of the comment entry field. You can also press **Ctrl+Enter** to post the comment. 
 
-## Add a comment to a topic 
+### Create a node-level comment thread
 
-1. Open a bot and select any topic within the bot.
+To create a new topic-level comment thread, select the menu icon (. . .) at the top of the node, and then **New comment**. 
 
-4. Open the topic in the authoring canvas and there will be a 'Comments' button on the command bar on the top right
+Enter your comment and select **Post comment** at the bottom of the comment entry field. You can also press **Ctrl+Enter** to post the comment. 
 
-5. Click 'Comments' to open the Comments pane.
+A comment icon will appear next to a node that has comments. You can select the icon to open the **Comments** pane and go to the first comment for that node.
 
-6. Click 'New' and type the comment message in the box, and then select Enter.
+### Edit, delete, and resolve comment threads
 
+Select the menu icon at the top of the comment thread to edit the initial comment, delete the entire thread, or resolve the entire thread.
 
+:::image type="content" source="media/authoring-comments/authoring-comments-thread.png" alt-text="Screenshot of the menu that appears with the items Edit comment, Delete thread, and Resolve thread.":::
 
-You can also reply to a comment in a thread in the same way, in the box below.
+- Editing the initial comment lets you change only that comment. Other comments in the thread won't be affected.
 
- 
+- Deleting a thread removes it completely. You can't restore deleted comments or threads.
 
-## Add a comment to a node 
-
-2. Open a bot and select any topic within the bot.
-
-7. Open the topic in the authoring canvas and select any node in the topic.
-
-8. Use the … menu on the node to select 'New comment'.
-
-9. This will open the comments pane with a new comment started up. Type the comment message in the box, and then select Enter.
+- Resolving a thread causes it to appear faded, and places the label **Resolved** at the top of the thread. Select the arrow icon at the top of the thread to unresolve a thread. Unresolving a thread lets you add more comments.
 
 
+### Edit and delete individual comments
 
-You can also reply to a comment in a thread in the same way, in the box below.
+Select the menu icon at the top of an individual comment, next to the your name, to edit or delete a comment.
 
+You can only edit or delete comments that you created.
 
+- Editing the comment lets you change that comment.
 
-Once a comment has been added to a node, a purple icon next to the node will indicate that it has one or more comments. Clicking on the purple icon, will scroll the comments pane to the first comment associated with the node. In the same way, clicking on a comment will scroll the authoring canvas to the node the comment is associated with.
+- Deleting the comment removes it completely from that thread. You can't restore deleted comments.
 
- 
+## Additional notes
 
-## Edit a comment 
+- Comments won't be exported when you [export a bot with a solution](authoring-export-import-bots.md).
 
-You can edit existing comments of your own.  
+- You can't @ mention other bot makers in a comment.
 
-1. In the comments pane, on a comment, select the "…" and select Edit comment
-
-2. In the message box, edit the text of your comment, and then select Enter.
-
-
-
-## Delete a comment 
-
-To remove comments from showing in the topic, you can delete them.  
-
-1. In the comments pane, on a comment, select the "…" and select Delete comment
-
-2. The comment will be removed.
-
- 
-
-You can only delete comments you have created.
-
-
-
-## Resolve a comment 
-
-Comments are commonly questions, feedback or ideas that are important context to live alongside your topic, but they may not be active discussions anymore. You can resolve or unresolve a thread to track the open comments.  
-
-1. In the comments pane, on a comment, select the "…" and select Resolve comment
-
-2. The comment thread will be resolved.
-
-
-
-## Known limitations 
-
-• Exporting and importing comments across environments is not supported yet. Accordingly, Comments will not be exported with solutions as they are moved across different environments.
-
-• Mentioning other people in comments will not tag them or send any notification.
-
-• This experience cannot be turned
-
-• Comments' polling / auto refresh is not supported yet. Makers who have the same app open concurrently won't see newly added comments until they refresh the page. On page refresh, a maker will see all new comments, even without an explicit save on the topic by the comment creator.
+- New comments will show for [other bot makers who are editing the same topic](admin-share-bots.md#collaborate-on-bots) when they refresh the page. The topic doesn't need to be saved for new comments to show.
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
