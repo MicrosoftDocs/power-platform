@@ -1,19 +1,19 @@
 ### YamlMime:Landing
 
 title: Power Apps portals documentation
-summary: Use Power Apps portals to create external-facing websites that allow users outside their organizations to sign in with a wide variety of identities, create and view data in Dataverse, or even browse content anonymously. 
+summary: Learn how to setup and maintain security for Power Platform.
+# brand: aspnet | azure | dotnet | dynamics | m365 | office | sql | windows | visual-studio | xamarin
+brand: dynamics
 
 metadata:
-  title: Power Apps portals documentation
-  description: Provides access to highlighted areas within the Power Apps portals documentation
-  services: service
-  ms.service: powerapps 
-  ms.subservice: subservice
-  ms.topic: landing-page 
-  ms.collection: collection
-  author: kumarvivek
-  ms.author: kvivek
-  ms.date: 06/01/2021 
+  title: Microsoft Power Platform security documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Learn how to setup and maintain security for Power Platform. # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: power-platform #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: landing-page  # Required
+  author: jimholtz #Required; your GitHub user alias, with correct capitalization.
+  ms.author: jimholtz #Required; microsoft alias of author; optional team alias.
+  ms.date: 07/06/2021 #Required; mm/dd/yyyy format.
+  hide_bc: false
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
