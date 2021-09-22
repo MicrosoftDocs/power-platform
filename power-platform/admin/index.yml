@@ -3,7 +3,6 @@
 title: Power Apps portals documentation
 summary: Learn how to setup and maintain security for Power Platform.
 # brand: aspnet | azure | dotnet | dynamics | m365 | office | sql | windows | visual-studio | xamarin
-brand: dynamics
 
 metadata:
   title: Microsoft Power Platform security documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
