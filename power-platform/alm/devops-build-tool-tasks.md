@@ -85,7 +85,7 @@ Upgrades a solution that has been imported as a holding solution.
 |----------------------|--------------------------|
 | Authentication type | (Required) Select whether to use username/password or service principal authentication. Note that username/password does not support multi-factor authentication. |
 | Service connection | (Required) The service connection to the target environment that you want to import the solution into (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)).  Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type .|
- | Solution Name     | (Required) Name of the Solution that needs to be upgraded. <p/>Note: Variables give you a convenient way to get key bits of data into various parts of your pipeline. See [Use predefined variables](https://docs.microsoft.com/azure/devops/pipelines/build/variables) for a comprehensive list.  |
+ | Solution name              | (Required) The name of the solution to export.<p/>Always use the solution *Name*, not its *Display Name*.    |. <p/>Note: Variables give you a convenient way to get key bits of data into various parts of your pipeline. See [Use predefined variables](https://docs.microsoft.com/azure/devops/pipelines/build/variables) for a comprehensive list.  |
  | Apply Solution upgrade as asynchronous operation | If selected, the import operation will be performed asynchronously. This is recommended for larger solutions as this task will automatically timeout after 4 minutes otherwise. |
  
 
@@ -119,6 +119,17 @@ Packs a solution represented in source control into a solution.zip file that can
 | Solution output file              | (Required) The path and file name of the solution.zip file to pack the solution into.     |
 | Source folder of solution to pack | (Required) The path and source folder of the solution to pack.      |
 | Type of solution                  | (Required) The type of solution you want to pack. Options include: **Unmanaged** (recommended), **Managed**, and **Both**. |
+
+
+### Power Platform Delete Solution
+
+Deletes a solution in the target environment
+
+| Parameters       | Description     |
+|------------------|-----------------|
+| Authentication type             | (Required) Select whether to use username/password or service principal authentication. Note that username/password does not support multi-factor authentication. |
+| Service connection | (Required) The service connection to the source environment that you want to export the solution from.  Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type.     |
+| Solution name              | (Required) The name of the solution to export.<p/>Always use the solution *Name*, not its *Display Name*.    |
 
 ### Power Platform Publish Customizations
 
