@@ -73,7 +73,7 @@ This is the first step of the installation process and is required for every oth
 
      ![Establish connections to activate your solution.](media/msi-import.png "Establish connections to activate your solution.")
 
-    When you create the connection for HTTP with Azure AD enter the following into the Base Resource URL and Azure AD Resource URI (Application ID URI): [https://graph.microsoft.com](https://graph.microsoft.com).
+    When you create the connection for HTTP with Azure AD enter the following into the Base Resource URL and Azure AD Resource URI (Application ID URI): [https://graph.microsoft.com](https://graph.microsoft.com) or [https://dod-graph.microsoft.us/](ttps://dod-graph.microsoft.us/) if you're in a DoD environment.
 
      ![Establish HTTP with Azure AD.](media/httpazuread.png "Establish connections to activate your solution.")
 
@@ -92,8 +92,9 @@ This is the first step of the installation process and is required for every oth
     | Developer Compliance Center URL        | Leave empty on Import and do the following to populated after set up of the [Governance components](setup-governance-components.md).<br> Navigate to the details page of the Developer Compliance Center (canvas app) included with this solution, and copy the web link (to launch the app) and paste it into this variable.  |
     | Environment Request Admin App Url | Link to the **Admin - Power Platform Resouce RMS** canvas app included in this solution. Leave empty on Import and fill it in once the app is installed. <br> To do that, navigate to the details page of the **Admin - Power Platform Resouce RMS** (canvas app) included with this solution, and use the wek link (to launch the app).  |
     |PowerApp Maker environment variable | The maker URL used by PowerApps for your cloud, including trailing slash. Here are examples:<br> For a US environment: <https://make.powerapps.com/> <br> For a GCC environment: <https://make.gov.powerapps.us/> <br>For a GCC High environment: <https://make.high.powerapps.us/> |
-    |PowerApp Player environment variable | The player URL used by PowerApps for your cloud, including trailing slash. Here are examples:<br> For a US environment: <https://apps.powerapps.com/> <br> For a GCC environment: <https://apps.gov.powerapps.us/> <br>For a GCC High environment: <https://apps.gov.powerapps.us/> |
-    |Power Automate environment variable | The URL used by flow for your region. Here are examples:<br> For a US environment: <https://us.flow.microsoft.com/manage/environments/> <br> For a Canadian environment: <https://canada.flow.microsoft.com/manage/environments/> <br>For an EMEA environment: <https://emea.flow.microsoft.com/manage/environments/> <br>For a GCC environment: <https://gov.flow.microsoft.us/manage/environments/> <br> For a GCC High environment: <https://high.flow.microsoft.us/manage/environments><br>If your region is not listed here, navigate to [flow.microsoft.com](https://flow.microsoft.com) and copy the URL the page directs to from the browser.|
+    |PowerApp Player environment variable<br>For a DoD environment: <https://make.apps.appsplatform.us/> |
+    |PowerApp Player environment variable | The player URL used by PowerApps for your cloud, including trailing slash. Here are examples:<br> For a US environment: <https://apps.powerapps.com/> <br> For a GCC environment: <https://apps.gov.powerapps.us/> <br>For a GCC High environment: <https://apps.gov.powerapps.us/> <br>For a DoD environment: <https://play.apps.appsplatform.us> |
+    |Power Automate environment variable | The URL used by flow for your region. Here are examples:<br> For a US environment: <https://us.flow.microsoft.com/manage/environments/> <br> For a Canadian environment: <https://canada.flow.microsoft.com/manage/environments/> <br>For an EMEA environment: <https://emea.flow.microsoft.com/manage/environments/> <br>For a GCC environment: <https://gov.flow.microsoft.us/manage/environments/> <br> For a GCC High environment: <https://high.flow.microsoft.us/manage/environments><br> For a DoD environment: <https://flow.appsplatform.us/manage/environments/><br>If your region is not listed here, navigate to [flow.microsoft.com](https://flow.microsoft.com) and copy the URL the page directs to from the browser.|
     | Power Platform Maker Microsoft 365 Group | The Admin \| Welcome Email flow sends a welcome email to onboard new makers and adds them to a Microsoft 365 group. You can use this group to send communications to your makers or invite them to a Yammer or Teams group. Configure the group ID here.|
     | TenantID | Your Azure Tenant ID.|
 
@@ -185,6 +186,7 @@ There are several child flows which will need their **Run only users** propertie
 - CLEANUP HELPER - Check Deleted (Cloud Flows)
 - CLEANUP HELPER - Check Deleted (Model Driven Apps)
 - CLEANUP HELPER - Check Deleted (PVA)
+- CLEANUP HELPER - Power Apps User Shared With
 
 For all of these flows, go to the details page and click the **Run only users** edit button.
 

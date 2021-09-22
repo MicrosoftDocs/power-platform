@@ -96,8 +96,10 @@ Now you'll configure and set up a custom connector that uses the [Office 365 Man
 1. Leave the **1. General** page as-is, and then select **2. Security**.
     
    >[!IMPORTANT]
-   > If your tenant is a GCC tenant, change the host to https://manage-gcc.office.com.
-   > If your tenant is a GCC high tenant, change the host to https://manage.office365.us
+   > - If your tenant is a GCC tenant, change the host to https://manage-gcc.office.com.
+   > - If your tenant is a GCC high tenant, change the host to https://manage.office365.us.
+   > - If your tenant is a DoD tenant, change the host to https://manage.protection.apps.mil.
+   >
    > More information: [Activity API operations](/office/office-365-management-api/office-365-management-activity-api-reference?preserve-view=true&view=o365-worldwide#activity-api-operations)
 
 1. Select **Edit** at the bottom of the **OAuth 2.0** area to edit the authentication parameters.
@@ -110,16 +112,16 @@ Now you'll configure and set up a custom connector that uses the [Office 365 Man
 
 1. Don't change the **Tenant ID**.
 
-1. Leave the **Login URL** as is  for commercial and GCC tenants, and change it to https://login.microsoftonline.us/ for a GCC High tenant.
+1. Leave the **Login URL** as is  for commercial and GCC tenants, and change it to https://login.microsoftonline.us/ for a GCC High or DoD tenant.
 
-1. Set the **Resource URL** to https://manage.office.com for a commercial tenant, https://manage-gcc.office.com for a GCC tenant, and https://manage.office365.us for a GCC high tenant.
+1. Set the **Resource URL** to https://manage.office.com for a commercial tenant, https://manage-gcc.office.com for a GCC tenant, https://manage.office365.us for a GCC high tenant and https://manage.protection.apps.mil for a DoD tenant.
 
 1. Copy the **Redirect URL** into your text document in Notepad.
 
 1. Select **Update Connector**.
 
 > [!NOTE]
-> If you have a [data loss prevention (DLP) policy](../../admin/wp-data-loss-prevention.md) configured for your CoE Starter Kit environment, you'll need to add this connector to the business data&ndash;only group of this policy. 
+> If you have a [data loss prevention (DLP) policy](../../admin/wp-data-loss-prevention.md) configured for your CoE Starter Kit environment, you'll need to add this connector to the business data&ndash;only group of this policy.
 
 ### Update Azure AD app registration with the redirect URL
 
