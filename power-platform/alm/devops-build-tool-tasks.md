@@ -113,7 +113,7 @@ you might have inadvertently introduced when building your solution.
 - task: microsoft-IsvExpTools.PowerPlatform-BuildTools.checker.PowerPlatformChecker@0
   displayName: 'Power Platform Checker '
   inputs:
-    PowerPlatformEnvironment: 'My service connection'
+    PowerPlatformSPN: 'Dataverse service connection'
     RuleSet: '0ad12346-e108-40b8-a956-9a8f95ea18c9'
 ```
 
