@@ -76,6 +76,18 @@ Imports a solution into a target environment.
 | Service connection | (Required) The service connection to the target environment that you want to import the solution into (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)).  Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type .|
  | Solution input file        | (Required) The path and file name of the solution.zip file to import into the target environment (e.g., $(Build.ArtifactStagingDirectory)\$(SolutionName).zip). <p/>Note: Variables give you a convenient way to get key bits of data into various parts of your pipeline. See [Use predefined variables](https://docs.microsoft.com/azure/devops/pipelines/build/variables) for a comprehensive list.  |
  | Import solution as asynchronous operation | If selected, the import operation will be performed asynchronously. This is recommended for larger solutions as this task will automatically timeout after 4 minutes otherwise. |
+ | Import as a holding solution| This is an advance parameter, it is used when a solution needs to be upgraded, this host the solution in Dataverse but does not upgrade the solution until the Apply Solution Upgrade task is run| 
+
+### Power Platform Apply Solution Upgrade
+Upgrades a solution that has been imported as a holding solution.
+
+| Parameters           | Description        |
+|----------------------|--------------------------|
+| Authentication type | (Required) Select whether to use username/password or service principal authentication. Note that username/password does not support multi-factor authentication. |
+| Service connection | (Required) The service connection to the target environment that you want to import the solution into (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)).  Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type .|
+ | Solution Name     | (Required) Name of the Solution that needs to be upgraded. <p/>Note: Variables give you a convenient way to get key bits of data into various parts of your pipeline. See [Use predefined variables](https://docs.microsoft.com/azure/devops/pipelines/build/variables) for a comprehensive list.  |
+ | Apply Solution upgrade as asynchronous operation | If selected, the import operation will be performed asynchronously. This is recommended for larger solutions as this task will automatically timeout after 4 minutes otherwise. |
+ 
 
 ### Power Platform Export Solution
 
