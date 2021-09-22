@@ -532,8 +532,11 @@
         href: support-end-internet-explorer.md
       - name: Server cipher suites and TLS requirements
         href: server-cipher-tls-requirements.md
+ # comment out the index.yml before going live
     - name: Security and governance
       items:
+      - name: Security and governance
+        href: index.yml
       - name: Overview
         href: wp-security.md     
       - name: Governance considerations
