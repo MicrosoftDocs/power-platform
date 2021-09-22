@@ -62,7 +62,7 @@ Legacy settings | Modernized experience  |
 | System Settings > Goals | Sales Hub|
 |**Business Management**  ||
 | Business Closures    | Customer Service Hub|
-| Connection Roles     | App-less unified interface|
+| Currencies           | App-less unified interface|
 | Facilities/Equipment | Customer Service Hub|
 | Goal Metrics        | Customer Service Hub|
 | Queues              | Customer Service Hub|
