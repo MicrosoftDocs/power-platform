@@ -19,38 +19,20 @@ metadata:
 landingContent:
 
   # Card 
-  - title: What's new
-    linkLists:
-       - linkListType: whats-new
-         links:
-          - text: Use the Visual Studio Code extension (Preview)
-            url: vs-code-extension.md
-          - text: Add chatbot to a page (Preview)
-            url: add-chatbot.md
-          - text: Table permissions using portals Studio (Preview)
-            url: configure/entity-permissions-studio.md
-          - text: "Tutorial: Configure table permissions using portals Studio (Preview)"
-            url: configure/entity-permissions-studio-walkthrough.md
-       - linkListType: reference
-         links:
-          - text: Portals version 9.3.6.x released
-            url: versions/version-9.3.6.x.md
-          - text: Starter Portal package version 9.2.2103.x released
-            url: versions/package-version-9.2.2103.md
-
-  # Card 
   - title: Get started
     linkLists:
        - linkListType: overview
          links:
-          - text: What is Power Apps portals?
-            url: overview.md
-          - text: Portals lifecycle
-            url: admin/portal-lifecycle.md
+          - text: Security in Microsoft Dataverse
+            url: wp-security.md
+          - text: Security concepts in Microsoft Dataverse
+            url: wp-security-cds.md
+          - text: Configure user security
+            url: database-security.md            
        - linkListType: learn
          links:
-          - text: Get started with Power Apps portals
-            url: /learn/paths/get-started-power-apps-portals/
+          - text: Get started with security roles in Dataverse
+            url: /learn/paths/get-started-security-roles/
 
   # Card
   - title: Create
