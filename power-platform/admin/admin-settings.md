@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/09/2021
+ms.date: 09/22/2021
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -27,7 +27,7 @@ Settings for the selected environment can be managed here.
 ![Environment settings.](media/environment-settings.png)
 
 ## Environment settings are moving
-Across organization admin settings are gradually moving from the web client to the Power Platform admin center, Apps with unified interface, or Power Apps. Meanwhile, you’ll still be able to manage settings in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), as usual.
+Across organization admin settings are gradually moving from the web client to the Power Platform admin center, apps with unified interface, or Power Apps. Meanwhile, you’ll still be able to manage settings in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), as usual.
 
 Many of these settings...
 
@@ -54,10 +54,10 @@ These security settings are now managed in the Power Platform admin center.
 
 Getting to app feature settings can vary based on the type of app you're using. 
 
-The following app settings have modernized experience available in the unified interface - 
+The following app settings have the modernized experience available in the unified interface. 
 
-Legacy settings | Modernized experience  |
---- | --- | 
+| Legacy settings | Modernized experience  |
+|--- | --- | 
 |**Administration** ||
 | System Settings > Goals | Sales Hub|
 |**Business Management**  ||
