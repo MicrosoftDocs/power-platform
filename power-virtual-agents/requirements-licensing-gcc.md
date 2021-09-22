@@ -2,7 +2,7 @@
 title: "Understand the US Government plans available"
 description: "This document lists the capabilities, requirements, and features for US Government plans for Power Virtual Agents."
 keywords: "Administration, licensing, PVA, standalone, compare, comparison"
-ms.date: 5/27/2021
+ms.date: 9/22/2021
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
