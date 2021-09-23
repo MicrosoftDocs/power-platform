@@ -55,7 +55,7 @@ landingContent:
     linkLists:
        - linkListType: concept
          links:
-          - text: Overview
+          - text: DLP policies
             url: wp-data-loss-prevention.md
           - text: Connector classification
             url: dlp-connector-classification.md
