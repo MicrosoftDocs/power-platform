@@ -35,123 +35,72 @@ landingContent:
             url: /learn/paths/get-started-security-roles/
 
   # Card
-  - title: Create
-    linkLists:
-       - linkListType: concept
-         links:
-          - text: Understand available templates
-            url: portal-templates.md
-       - linkListType: quickstart
-         links:  
-          - text: Create a starter portal
-            url: create-portal.md
-          - text: Create a portal in an environment with customer engagement apps
-            url: create-dynamics-portal.md
-          
-  # Card
-  - title: Customize
+  - title: Configure environment security
     linkLists:
        - linkListType: how-to-guide
          links:
-          - text: Portals Studio
-            url: portal-designer-anatomy.md
-          - text: Add components on a web page
-            url: compose-page.md
+          - text: Control user access
+            url: control-user-access.md
+          - text: Restrict cross-tenant access
+            url: cross-tenant-restrictions.md
+          
+  # Card
+  - title: Data loss prevention policies
+    linkLists:
+       - linkListType: concept
+         links:
+          - text: Overview
+            url: wp-data-loss-prevention.md
+          - text: Connector classification
+            url: dlp-connector-classification.md
+          - text: Create a DLP Policy
+            url: create-dlp-policy.md
+          - text: Manage DLP policies
+            url: prevent-data-loss.md
        - linkListType: learn
          links:
-          - text: Customize web pages using Studio
-            url: /learn/modules/explore-portals-studio/
+          - text: Manage environmental changes
+            url: /learn/modules/manage-environmental-changes/
 
   # Card
-  - title: Administer and Manage
+  - title: Configure field-level security
     linkLists:
-      - linkListType: concept
+      - linkListType: overview
         links:
-          - text: Portals admin center
-            url: admin/admin-overview.md
-          - text: Portal Management app
-            url: configure/configure-portal.md
-      - linkListType: learn
+          - text: What is field-level security?
+            url: field-level-security.md
+      - linkListType: how-to-guide
         links:
-          - text: Power Apps portals administration
-            url: /learn/modules/portals-administration/
+          - text: Set permissions for a field
+            url: set-up-security-permissions-field.md
+          - text: Enable or disable field security
+            url: enable-disable-security-field.md
+          - text: Add teams or users to field security
+            url: add-teams-users-field-security-profile.md
 
   # Card
-  - title: Integrate with Dataverse
-    linkLists:
-      - linkListType: concept
-        links:
-          - text: Basic forms
-            url: configure/entity-forms.md
-          - text: Lists
-            url: configure/entity-lists.md
-          - text: Advanced forms
-            url: configure/web-form-properties.md
-
-  # Card
-  - title: Manage users and security
+  - title: Configure teams and team templates
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Invite contacts
-            url: configure/invite-contacts.md
-          - text: Create web roles
-            url: configure/create-web-roles.md
-          - text: Assign table permissions
-            url: configure/assign-entity-permissions.md
-          - text: Control web page access
-            url: configure/webpage-access-control.md
+          - text: Manage teams
+            url: manage-teams.md
+          - text: Manage group teams
+            url: manage-group-teams.md
+          - text: Team templates
+            url: about-team-templates.md
+          - text: Team templates for access rights
+            url: create-team-template-add-entity-form.md
 
   # Card
-  - title: Configure
+  - title: Encryption
     linkLists:
-      - linkListType: tutorial
+      - linkListType: overview
         links:
-          - text: Authentication
-            url: configure/use-simplified-authentication-configuration.md
-          - text: Search
-            url: configure/search.md
-          - text: Document storage
-            url: configure-notes.md
-
-  # Card
-  - title: Advanced customization
-    linkLists:
-      - linkListType: concept
-        links:
-          - text: Liquid templates
-            url: liquid/liquid-overview.md
-          - text: Portals Web API
-            url: web-api-overview.md
-          - text: OAuth 2.0 implicit grant flow
-            url: oauth-implicit-grant-flow.md
-
-  # Card
-  - title: Troubleshoot and optimize
-    linkLists:
+          - text: Enhance security by encrypting your data
+            url: data-encryption.md
       - linkListType: how-to-guide
         links:
-          - text: Run portal checker
-            url: admin/portal-checker.md
-          - text: Clear server-side cache
-            url: admin/clear-server-side-cache.md      
-          - text: Enable header and footer output caching
-            url: configure/enable-header-footer-output-caching.md      
-          - text: Error logging and diagnostics
-            url: admin/view-portal-error-log.md
-
-  # Card
-  - title: Learn
-    linkLists:
-       - linkListType: learn
-         links:
-          - text: Get Started with Power Apps portals
-            url: /learn/paths/get-started-power-apps-portals/
-          - text: Work with Power Apps portals
-            url: /learn/paths/work-power-apps-portals/
-          - text: Administer Power Apps portals
-            url: /learn/paths/administer-portals/
-          - text: Extend Power Apps portals
-            url: /learn/paths/extend-power-apps-portals/
-          - text: Manage permissions and administration for Dataverse
-            url: https://docs.microsoft.com/learn/paths/manage-permissions-administration-common-data-service/
+          - text: Manage encryption key
+            url: manage-encryption-key.md
+ 
