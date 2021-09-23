@@ -65,14 +65,14 @@ you might have inadvertently introduced when building your solution.
 
 ## Solution tasks
 
-This set of tasks can automate solution actions. Note that the environment tasks outlined later in this section that create, copy or restore an environment will overwrite the service connections with the newly created environments. This makes it possible to perform solution tasks against environments that are created on demand. 
+This set of tasks can automate solution actions. The environment tasks outlined later in this section that create, copy or restore an environment will overwrite the service connections with the newly created environments. This makes it possible to perform solution tasks against environments that are created on demand. 
 
 ### Power Platform Import Solution
 Imports a solution into a target environment.
 
 | Parameters           | Description        |
 |----------------------|--------------------------|
-| Authentication type | (Required) Select whether to use username/password or service principal authentication. Note that username/password does not support multi-factor authentication. |
+| Authentication type | (Required) Select whether to use username/password or service principal authentication. Username/password does not support multi-factor authentication. |
 | Service connection | (Required) The service connection to the target environment that you want to import the solution into (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)).  Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type .|
  | Solution input file        | (Required) The path and file name of the solution.zip file to import into the target environment (e.g., $(Build.ArtifactStagingDirectory)\$(SolutionName).zip). <p/>Note: Variables give you a convenient way to get key bits of data into various parts of your pipeline. See [Use predefined variables](/azure/devops/pipelines/build/variables) for a comprehensive list.  |
  | Import solution as asynchronous operation | If selected, the import operation will be performed asynchronously. This is recommended for larger solutions as this task will automatically timeout after 4 minutes otherwise. |
@@ -83,7 +83,7 @@ Upgrades a solution that has been imported as a holding solution.
 
 | Parameters           | Description        |
 |----------------------|--------------------------|
-| Authentication type | (Required) Select whether to use username/password or service principal authentication. Note that username/password does not support multi-factor authentication (MFA). |
+| Authentication type | (Required) Select whether to use username/password or service principal authentication. Username/password does not support multi-factor authentication (MFA). |
 | Service connection | (Required) The service connection to the target environment that you want to import the solution into (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type. |
 | Solution name | (Required) The name of the solution to export. Always use the solution *Name* not its *Display Name*. |
 | Apply solution upgrade as asynchronous operation | If selected, the import operation will be performed asynchronously. This is recommended for larger solutions as this task will automatically timeout after 4 minutes otherwise. |
@@ -96,7 +96,7 @@ Exports a solution from a source environment.
 
 | Parameters      | Description     |
 |-----------------|---------------------|
-| Authentication type | (Required) Select whether to use username/password or service principal authentication. Note that username/password does not support multi-factor authentication. |
+| Authentication type | (Required) Select whether to use username/password or service principal authentication. Username/password does not support multi-factor authentication. |
 | Service connection | (Required) The service connection to the source environment that you want to export the solution from.  Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type.|
 | Solution name              | (Required) The name of the solution to export.<p/>Always use the solution *Name*, not its *Display Name*.    |
 | Solution output file       | (Required) The path and file name of the solution.zip file to export the source environment to (e.g., $(Build.ArtifactStagingDirectory)\$(SolutionName).zip ). <p/>Note: Variables give you a convenient way to get key bits of data into various parts of your pipeline. See [Use predefined variables](/azure/devops/pipelines/build/variables) for a comprehensive list.   |
@@ -128,7 +128,7 @@ Deletes a solution in the target environment.
 
 | Parameters       | Description     |
 |------------------|-----------------|
-| Authentication type | (Required) Select whether to use username/password or Service Principal authentication. Note that username/password does not support multi-factor authentication (MFA). |
+| Authentication type | (Required) Select whether to use username/password or Service Principal authentication. Username/password does not support multi-factor authentication (MFA). |
 | Service connection | (Required) The service connection to the source environment that you want to export the solution from.  Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type.     |
 | Solution name  | (Required) The name of the solution to export. Always use the solution *Name* not its *Display Name*. |
 
@@ -138,7 +138,7 @@ Publishes all customizations in an environment.
 
 | Parameters     | Description    |
 |----------------|----------------|
-| Authentication type | (Required) Select whether to use username/password or service principal authentication. Note that username/password does not support multi-factor authentication. |
+| Authentication type | (Required) Select whether to use username/password or service principal authentication. Username/password does not support multi-factor authentication. |
 | Service connection | (Required) The service connection to the environment in which you want to publish customizations. Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type. |
 
 
@@ -148,12 +148,12 @@ Updates the version of a solution.
 
 | Parameters    | Description   |
 |---------------|---------------|
-| Authentication type | (Required) Select whether to use username/password or service principal authentication. Note that username/password does not support multi-factor authentication. |
+| Authentication type | (Required) Select whether to use username/password or service principal authentication. Username/password does not support multi-factor authentication. |
 | Service connection | (Required) The service connection to the target environment that holds the solution you want to update.  Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type.|
 | Solution name              | (Required) The name of the solution you want to set the version number for.     |
 | Solution Version Number              | (Required) Version number you want to set.     |
 
-Note that while version number can be hardcoded in the pipeline, it is recommended to use an Azure DevOps pipeline variable like [BuildId](/azure/devops/pipelines/build/variables#build-variables). 
+While version number can be hardcoded in the pipeline, it is recommended to use an Azure DevOps pipeline variable like [BuildId](/azure/devops/pipelines/build/variables#build-variables). 
 This provides options to define the exact shape of version number under the "Options" tab, for example: $(year:yyyy)-$(Date:MM)-$(Date:dd)-$(rev:rr)-3
 
 This definition can then be used in the Set Solution Version task by setting the Version Number property with: $(Build.BuildId) instead of hard coding 20200824.0.0.2.
@@ -164,7 +164,7 @@ Deploys a package to an environment. Deploying a [package](/powerapps/developer/
 
 | Parameters      | Description    |
 |-----------------|----------------|
-| Authentication type | (Required) Select whether to use username/password or service principal authentication. Note that username/password does not support multi-factor authentication. |
+| Authentication type | (Required) Select whether to use username/password or service principal authentication. Username/password does not support multi-factor authentication. |
 | Service connection | (Required) The service connection to the target environment into which you want to deploy the package.  Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type.|
 | Package file | (Required) The path and file name of the path and file name of the package file assembly (.dll). |
 
@@ -182,13 +182,13 @@ Creates a new environment. Creating a new environment also automatically creates
 
 | Parameters        | Description     |
 |-------------------|-----------------|
-| Authentication type | (Required) Select whether to use username/password or service principal authentication. Note that username/password does not support multi-factor authentication. |
+| Authentication type | (Required) Select whether to use username/password or service principal authentication. Username/password does not support multi-factor authentication. |
 | Service connection | (Required) The service connection to the tenant for which you want to create the environment. Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type.|
 | Display name | (Required) The display name of the environment created. |
 | Deployment Region | (Required) The region that the environment should be deployed into.         |
 | Environment Type     | (Required) The type of instance to deploy. Options are **Sandbox** or **Production**.      |
 | Region | (Required) The region that the environment should be created in.  |
-| Currency | (Required) Base currency for the environment created. Note that the currency cannot be updated after the environment is created. |
+| Currency | (Required) Base currency for the environment created. The currency cannot be updated after the environment is created. |
 | Language     | (Required) The base language in the environment.      |
 | Domain Name       | (Required) This is the environment-specific string that forms part of the URL. For example, for an environment with the following URL: [https://powerappsbuildtasks.crm.dynamics.com](https://powerappsbuildtasks.crm.dynamics.com/), the domain name would be 'powerappsbuildtasks'. <p/>Note: If you enter a domain name that's already in use, the task appends a numeric value to the domain name, starting with 0. For the example above, the URL might become [https://powerappsbuildtasks0.crm.dynamics.com](https://powerappsbuildtasks0.crm.dynamics.com/). |
 
@@ -198,7 +198,7 @@ Deletes an environment.
 
 | Parameters       | Description         |
 |------------------|---------------------|
-| Authentication type | (Required) Select whether to use username/password or service principal authentication. Note that username/password does not support multi-factor authentication. |
+| Authentication type | (Required) Select whether to use username/password or service principal authentication. Username/password does not support multi-factor authentication. |
 | Service connection | (Required) The service connection to the tenant for which you want to delete the environment. Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type. |
 
 ### Power Platform Backup Environment
@@ -207,7 +207,7 @@ Backs up an environment.
 
 | Parameters   | Description   |
 |--------------|---------------|
-| Authentication type | (Required) Select whether to use username/password or service principal authentication. Note that username/password does not support multi-factor authentication.|
+| Authentication type | (Required) Select whether to use username/password or service principal authentication. Username/password does not support multi-factor authentication.|
 | Service connection | (Required) The service connection to the tenant for which you want to back up the environment. Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type. |
 | Backup label               | (Required) The label to be assigned to the backup.                                                                         |
 
@@ -220,7 +220,7 @@ metadata and not the actual data.
 
 | Parameters     | Description     |
 |----------------|-----------------|
-| Authentication type | (Required) Select whether to use username/password or service principal authentication. Note that username/password does not support multi-factor authentication. |
+| Authentication type | (Required) Select whether to use username/password or service principal authentication. Username/password does not support multi-factor authentication. |
 | Service connection | (Required) The service connection for the source environment that you want to copy from. Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type. |
 | Target environment URL | (Required) The URL for the target environment that you want to copy to.  | 
 
