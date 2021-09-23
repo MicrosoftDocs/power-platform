@@ -43,7 +43,13 @@ landingContent:
             url: control-user-access.md
           - text: Restrict cross-tenant access
             url: cross-tenant-restrictions.md
-          
+          - text: Administration mode
+            url: admin-mode.md
+       - linkListType: concept
+         links:
+          - text: Multiple online environments or tenants
+            url: multiple-online-environments-tenants.md
+
   # Card
   - title: Data loss prevention policies
     linkLists:
