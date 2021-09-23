@@ -4,8 +4,9 @@ description: "Security enhancements: User session and access management"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/11/2020
+ms.date: 07/02/2021
 author: jimholtz
+ms.subservice: admin
 ms.author: jimholtz
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
@@ -19,8 +20,6 @@ search.app:
 ---
 # Security enhancements: User session and access management 
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 You can use security enhancements to better secure the customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation). 
 
 ## User session timeout management
@@ -28,19 +27,19 @@ You can use security enhancements to better secure the customer engagement apps 
 The maximum user session timeout of 24 hours is removed.  This means that a user is not forced to sign in with their credentials to use the customer engagement apps and other Microsoft service apps like Outlook that were opened in the same browser session every 24 hours. 
 
 ### Honor Azure AD session policy 
-By default, the customer engagement apps leverage the Azure Active Directory (Azure AD) [session policy](https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes) to manage the user session timeout.  Customer engagement apps use the Azure AD ID Token with a Policy Check Interval (PCI) claims.  Every hour a new Azure AD ID Token is fetched silently in the background and the Azure AD instant policy is enforced (by Azure AD). For example, if an administrator disables or deletes a user account, blocks the user from signing in, and an administrator or user revokes the refresh token, the Azure AD session policy is enforced. 
+By default, the customer engagement apps leverage the Azure Active Directory (Azure AD) [session policy](/azure/active-directory/develop/active-directory-configurable-token-lifetimes) to manage the user session timeout.  Customer engagement apps use the Azure AD ID Token with a Policy Check Interval (PCI) claims.  Every hour a new Azure AD ID Token is fetched silently in the background and the Azure AD instant policy is enforced (by Azure AD). For example, if an administrator disables or deletes a user account, blocks the user from signing in, and an administrator or user revokes the refresh token, the Azure AD session policy is enforced. 
 
 This Azure AD ID token refresh cycle continues in the background based on the Azure AD token lifetime policy configurations.  Users continue to access the customer engagement apps/Microsoft Dataverse data without the needs to reauthenticate until the Azure AD token lifetime policy expires. 
 
 > [!NOTE]
-> - The default Azure AD refresh token expiration is 90 days.  This token lifetime properties can be configured. For detailed information, see [Configurable token lifetimes in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes#configurable-token-lifetime-properties).
+> - The default Azure AD refresh token expiration is 90 days.  This token lifetime properties can be configured. For detailed information, see [Configurable token lifetimes in Azure Active Directory](/azure/active-directory/develop/active-directory-configurable-token-lifetimes#configurable-token-lifetime-properties).
 > - The Azure AD session policy is bypassed and the maximum user session duration is reverted back to 24 hours in the following scenarios:
 >   - In a browser session, you went to the **Power Platform admin center** and opened an environment by manually keying in the environment URL (either on the same browser tab or a new browser tab).<br/> 
 >     **To workaround** the policy bypass and maximum 24 hour user session, open the environment from the Power Platform admin center **environments** tab by selecting the **Open** link.
 >   - In the same browser session, open a version 9.1.0.3647 or higher environment and then open a version earlier 9.1.0.3647. <br/>
 >     **To workaround** the policy bypass and user duration change, open the second environment in a separate browser session.
 >
-> To determine your version, sign in to customer engagement apps, and in the upper-right side of the screen, select the **Settings** button (![User profile Settings button](media/user-profile-settings-button.png)) > **About**. 
+> To determine your version, sign in to customer engagement apps, and in the upper-right side of the screen, select the **Settings** button (![User profile Settings button.](media/user-profile-settings-button.png)) > **About**. 
 
 
 ### Resilience to Azure AD outages 
@@ -57,8 +56,9 @@ For environments that require different session timeout values, administrators c
 > User session timeout is not enforced in the following:
 > 1. [!INCLUDE [pn-oc-online-short](../includes/pn-oc-online-short.md)]
 > 2. [!INCLUDE [pn-dyn-365-phones](../includes/pn-dyn-365-phones.md)] and [!INCLUDE [pn-dyn-365-tablets](../includes/pn-dyn-365-tablets.md)]
-> 3. [!INCLUDE [pn-unified-service-desk](../includes/pn-unified-service-desk.md)] client using [WPF](https://docs.microsoft.com/dotnet/framework/wpf/) browser (Internet Explorer is supported)
+> 3. [!INCLUDE [pn-unified-service-desk](../includes/pn-unified-service-desk.md)] client using [WPF](/dotnet/framework/wpf/) browser (Internet Explorer is supported)
 > 4. Live Assist (Chat)
+> 5. Power Apps canvas apps 
 
 ## Configure session timeout 
 
@@ -86,8 +86,9 @@ By default, customer engagement apps do not enforce an inactivity session timeou
 > Inactivity session timeout is not enforced in the following:
 > 1. [!INCLUDE [pn-oc-online-short](../includes/pn-oc-online-short.md)]
 > 2. [!INCLUDE [pn-dyn-365-phones](../includes/pn-dyn-365-phones.md)] and [!INCLUDE [pn-dyn-365-tablets](../includes/pn-dyn-365-tablets.md)]
-> 3. [!INCLUDE [pn-unified-service-desk](../includes/pn-unified-service-desk.md)] client using [WPF](https://docs.microsoft.com/dotnet/framework/wpf/) browser (Internet Explorer is supported)
+> 3. [!INCLUDE [pn-unified-service-desk](../includes/pn-unified-service-desk.md)] client using [WPF](/dotnet/framework/wpf/) browser (Internet Explorer is supported)
 > 4. Live Assist (Chat)
+> 5. Power Apps canvas apps 
 
 To enforce the inactivity session timeout for Web Resources, Web Resources need to include the ClientGlobalContext.js.aspx file in their solution.
 

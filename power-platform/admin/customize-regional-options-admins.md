@@ -6,6 +6,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/17/2021
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -23,16 +24,16 @@ You can customize how numbers, currencies, times, and dates appear to everyone i
   
 Make sure you have the System Administrator or System Customizer security role or equivalent permissions to update the setting.
 
-- Follow the steps in [View your user profile](https://docs.microsoft.com/dynamics365/customer-engagement/basics/view-your-user-profile).
+- Follow the steps in [View your user profile](/dynamics365/customer-engagement/basics/view-your-user-profile).
 - Don't have the correct permissions? Contact your system administrator.
   
-1. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+1. In the web app, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
 
 2. Select **Settings** > **Administration**.
 
 3. Select **System Settings**, and then select the **Formats** tab. 
   
-   For [Unified Interface](about-unified-interface.md), select Settings (![Gear button](../admin/media/selection-rule-gear.png "Gear button")) in the upper-right corner > **Advanced Settings** > **Settings** > **Administration** > **System Settings** > **Formats** tab.
+   For [Unified Interface](about-unified-interface.md), select Settings (![Gear button.](../admin/media/selection-rule-gear.png "Gear button")) in the upper-right corner > **Advanced Settings** > **Settings** > **Administration** > **System Settings** > **Formats** tab.
   
 4. Under **Synchronize items with Outlook or Exchange**, select **synchronized fields**.  
 

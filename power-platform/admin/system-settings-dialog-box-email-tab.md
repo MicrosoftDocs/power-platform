@@ -6,6 +6,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/17/2021
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -16,8 +17,6 @@ search.app:
   - Flow
 ---
 # System Settings Email tab
-
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 Use the settings on this page to set up email processing in model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service.  
 
@@ -36,7 +35,7 @@ Use the settings on this page to set up email processing in model-driven apps in
   
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
   
-2. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+2. In the web app, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
 
 3. Select **Settings** > **Email Configuration**.
   
@@ -76,7 +75,7 @@ Use the settings on this page to set up email processing in model-driven apps in
   
 ### See also  
  [Track Outlook email by moving it to a tracked Exchange folder](track-outlook-email-by-moving-it-tracked-exchange-folder.md)   
- [Frequently asked questions about synchronizing records between customer engagement apps and Outlook](frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook.md)   
+ [Frequently asked questions about synchronizing records between customer engagement apps and Outlook](frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook.yml)   
  [Set up email through server-side synchronization](set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks.md)   
 
 

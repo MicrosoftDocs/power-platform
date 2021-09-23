@@ -2,7 +2,7 @@
 title: "Known issues with document management | MicrosoftDocs"
 description: "Learn about known issues with document management"
 keywords: encrypt
-ms.date: 09/04/2020
+ms.date: 08/25/2021
 ms.service: power-platform
 ms.custom: 
 ms.topic: article
@@ -10,6 +10,7 @@ applies_to:
   - PowerApps
 ms.assetid: 
 author: Mattp123
+ms.subservice: admin
 ms.author: matp
 ms.reviewer: 
 ms.suite: 
@@ -26,8 +27,6 @@ search.app:
 
 # Known issues with document management
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 The customizations and configurations described here can cause issues with the document management feature. 
 
 ## Components from an Iframe
@@ -37,8 +36,8 @@ Opening a component from an Iframe in an entity form from a Unified Interface ap
 Deploying third-party solutions that modify the folders used with the Document Management feature can cause unexpected behavior. 
 Examples include the following: 
 - Creation of entity record level SharePoint folders. 
-- Renaming of previously auto-created entity record level SharePoint folders.
-- Moving previously auto-created entity record level SharePoint folders to another location.
+- Renaming of previously autocreated entity record level SharePoint folders.
+- Moving previously autocreated entity record level SharePoint folders to another location.
 
 If you experience unexpected behavior with the document management feature caused by a third-party solution, contact the third-party solution vendor. 
  
@@ -49,7 +48,7 @@ SharePoint document locations are records in model-driven apps, such as Dynamics
 
 To store documents for records, the document libraries or folders must be in place. If model-driven apps are unable to create the document libraries and folders automatically, you can manually create these in SharePoint. After you create the document libraries and folders in SharePoint, you must create document location records in model-driven apps to point to these SharePoint document libraries and folders.
 
-For more information, see [Create or edit document location records](https://docs.microsoft.com/power-platform/admin/create-edit-document-location-records).
+For more information, see [Create or edit document location records](./create-edit-document-location-records.md).
 
 ## "File not found" error when using multiple SharePoint sites
 
@@ -73,7 +72,7 @@ Points to consider:
 
 -  The SharePoint site for which the Document Management Settings wizard is last run becomes the default site. You can reset the default site if required by running the Document Management Settings wizard again for that particular site.
 
-For more information, see [Create or edit document location records](https://docs.microsoft.com/power-platform/admin/create-edit-document-location-records).
+For more information, see [Create or edit document location records](./create-edit-document-location-records.md).
 
 ## SharePoint enforces resource throttling with 5000 or more documents
 A document library with 5000 or more documents might experience resource throttling.
@@ -82,12 +81,12 @@ Users may experience the following behavior with document management and OneNote
 - A sort on columns other than the default sorted column, may return the error message "The throttling limit has been exceeded by this operation."
 - Microsoft OneNote integration will not work when the document library has 5000 or more documents.
 
-If you have more than 5000 documents in your document library, you can view the documents in the default grid view. For more details, see [Manage large lists and libraries in SharePoint](https://support.office.microsoft.com/article/manage-large-lists-and-libraries-in-sharepoint-b8588dae-9387-48c2-9248-c24122f07c59?ui=en-US&rs=en-US&ad=US).
+If you have more than 5000 documents in your document library, you can view the documents in the default grid view. For more information, see [Manage large lists and libraries in SharePoint](https://support.office.microsoft.com/article/manage-large-lists-and-libraries-in-sharepoint-b8588dae-9387-48c2-9248-c24122f07c59?ui=en-US&rs=en-US&ad=US).
 
 ## Relationship must be one-to-many (1:N) between an entity and a SharePoint document entity 
 Users cannot see documents when many entities are pointing to a SharePoint document location, a many-to-many relationship (N:N). The relationship must be one-to-many (1:N) between any entity and a SharePoint document entity.
 
-In Microsoft Dataverse you can create an entity and enable the Document management property for the entity. This allows for the entity to participate in integration with SharePoint. Power Apps and Dataverse support only a one-to-many relationship (1:N) between any entity and a SharePoint document related entity. A many-to-one or a many-to-many relationship between an entity and a SharePoint document entity results in the app not listing the documents that exist in the SharePoint document library.
+In Microsoft Dataverse, you can create an entity and enable the Document management property for the entity. This allows for the entity to participate in integration with SharePoint. Power Apps and Dataverse support only a one-to-many relationship (1:N) between any entity and a SharePoint document-related entity. A many-to-one or a many-to-many relationship between an entity and a SharePoint document entity results in the app not listing the documents that exist in the SharePoint document library.
 
 ## Document location for child entities
 Documents of a child entity only appear in the parent documents folder when the parent document location has been created. To create the location, navigate to the Documents tab of the parent record. If no such location is created, child documents will not appear in the parent entity folder. Once the location is created, child documents will begin to appear in the parent entity folder.
@@ -95,7 +94,40 @@ Documents of a child entity only appear in the parent documents folder when the 
 ## Document folder location for multiple lookups
 If the entity selected for the Based on entity folder structure has two lookups, documents will not be stored inside the entity folder, but will be stored in the root folder. For example, if the Based on entity folder structure is set to Account, and you have an entity with two lookup accounts, such as Work Order, the documents related to Work Orders will not be stored inside any account document location, but will be stored in the root folder.
 
+## Entering a date for OneNote documents
+
+In order to add a date to a OneNote document, you can open the OneNote document and double-click on the field under the title line. This allows you to enter the date field and save the document. 
+
+:::image type="content" source="media/date_onenote_documents.png" alt-text="Double-click the date field.":::
+
+## Known issues
+
+### SharePoint integration does not support the Dynamics 365 editable grid
+
+SharePoint integration does not work with the Dynamics 365 editable grid, due to known side effects that prevent SharePoint integration from working properly. Side effects include: the document failing to load in the grid, an inability to create or upload documents, and an inability to search in the grid.
+
+### Maximum number of rows not honored in the document associated grid
+
+Configuring the following in the **DocumentGrid** pane will be ignored.
+
+- **Maximum number of rows**: a value
+- **Use available space**: unchecked
+
+For Unified Interface and backward compatibility, the row limit in the document associated grid is set to 5000 and **Use available space** is disabled. This is a known limitation.
+
+### Error message when opening a record: "The record does not have a SharePoint location associated with it. Add a SharePoint location."
+
+This issue can occur when you are using the legacy list component for document management. The list component isn't supported with the current versions of Power Apps or Dynamics 365 apps.
+
+In 2015, [we announced the deprecation of the list component]( https://cloudblogs.microsoft.com/dynamics365/no-audience/2015/05/15/dynamics-crm-2015-update-1-list-component-deprecation/?source=crm). Notice that, a list component wasn’t released for Power Apps or the current versions of Dynamics 365 and previous versions of the list component aren’t supported with these versions.
+
+If you are using the list component, you must move your document management to use server-based authentication.
+
+-	For Power Apps and Dynamics 365 apps, see [Switch from the list component or change the SharePoint deployment](switching-list-component-changing-deployment.md).
+-	For Dynamics 365 Customer Engagement (on-premises), see [Switching from the list component or changing the deployment](/dynamics365/customerengagement/on-premises/admin/switching-list-component-changing-deployment?view=op-9-0).
+
 ### See also
+
 [Troubleshooting server-based authentication](troubleshooting-server-based-authentication.md) <br />
 [Troubleshoot SharePoint integration](troubleshoot-set-up-sharepoint-online.md)
 

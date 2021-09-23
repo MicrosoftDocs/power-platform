@@ -1,11 +1,12 @@
 ---
-title: "Create or edit a site to specify location  | MicrosoftDocs"
-description: Create or edit a site to specify location
+title: "Create or edit site entries to provide location details"
+description: "Learn how to create or edit the details about a site in Advanced Settings, including street address, phone number, and time zone."
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/17/2021
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -21,7 +22,7 @@ search.app:
 
 You can create a new site to add an office location or other facility where service operations take place. You can also edit the details, such as the street address or phone number, for an existing site.  
   
-1. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+1. In the web app, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
   
 2. Choose **Sites**.  
   

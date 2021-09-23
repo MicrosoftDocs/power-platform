@@ -1,11 +1,12 @@
 ---
-title: System and application users | Microsoft Docs
-description: About system and application users 
+title: "Special system users and application users"
+description: "Learn about the special system and application users created when the system is provisioned, including assigned security role, user name, and purpose." 
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 03/16/2021
+ms.date: 08/16/2021
 author: paulliew
+ms.subservice: admin
 ms.author: paulliew
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
@@ -20,11 +21,9 @@ search.app:
 
 # System and application users 
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+There is a list of special system and application users that is created when the system is provisioned.  Special system users are created for integration and support scenarios. Application users are created during system provisioning for setup and configuration management.  [Application users](create-users.md#create-an-application-user) can also be used for performing back-end services and their data access is managed by the special security role that is assigned. These security roles are managed by the system and cannot be modified. See other system [predefined security roles](database-security.md#predefined-security-roles).  
 
-There is a list of special system and application users that is created when the system is provisioned.  Special system users are created for integration and support scenarios. Application users are created during system provisioning for setup and configuration management.  [Application users](create-users-assign-online-security-roles.md#create-an-application-user) can also be used for performing back-end services and their data access is managed by the special security role that is assigned. These security roles are managed by the system and cannot be modified. See other system [predefined security roles](database-security.md#predefined-security-roles).  
-
-Most of these users are hidden from user views but they can be found by using the Advanced Find on the Users entity.  Do not delete or modify these users including changing or reassigning security role. 
+Most of these users are hidden from user views but they can be found by using the Advanced Find on the Users table.  Do not delete or modify these users including changing or reassigning security role. 
 
 |User type  |Full name  |User name  |Purpose  | Security role assigned |
 |-----------|-----------|-----------|---------|------------------------|
@@ -32,6 +31,8 @@ Most of these users are hidden from user views but they can be found by using th
 | | Support user |crmoln@microsoft.com |To allow Microsoft support staff to have restricted/limited access to any customer environment for customer support. |Support user (does not have privilege to customer data) |
 | | Delegated admin |crmoln2@microsoft.com |See [For partners: the Delegated admin](for-partners-delegated-administrator.md). |System admin |
 |Application | Business Application Platform Service account |bap_sa@microsoft.com |To setup Power Apps system and configurations. |System admin |
+| | Dataverse relevance search | RelevanceSearch@onmicrosoft.com | To fetch table data and metadata for Dataverse search feature | System admin |
+| | Dynamics 365 Office Data Service | diofficedata@microsoft.com |Service Application to perform data integration between Microsoft Dataverse and Microsoft 365. | DataLakeWorkspaceAppAccess |
 | | Dynamics 365 Athena-CDStoAzuredatalake | Dynamics365Athena-CDStoAzuredatalake@onmicrosoft.com |Service application to perform data integration between Microsoft Dataverse to Azure Data Lake. |DataLakeWorkspaceAppAccess |
 | | Dynamics 365 Athena2-CDStoAzuredatalake | Dynamics365Athena2-CDStoAzuredatalake@onmicrosoft.com |Service application to perform data integration between Dataverse to Azure Data Lake. |DataLakeWorkspaceAppAccess |
 | | EnterpriseSales | EnterpriseSales@onmicrosoft.com |Service application to perform data integration between Dataverse (Sales) to Azure Data Lake. |N/A |
@@ -46,8 +47,9 @@ Most of these users are hidden from user views but they can be found by using th
 | | JobServiceProd| JobServiceProd@onmicrosoft.com| Enable satellite services to schedule and dispatch messages to independently built workloads with guaranteed delivery of messages based on service-defined policies. | System admin |
 | | # CCADataAnalyticsML | CCADAAdmins@onmicrosoft.com | To allow AI insights in customer care apps like Customer Service, Field Service, etc. | System Customizer and System admin |
 | | # CDSReportService | CDSReportService@onmicrosoft.com | To allow user to run reports. |N/A |
-| | Power Platform Dataflows | ppdfcdsclient@onmicrosoft.com | Power Platform Dataflows service application to perform data preparation and loading into Dataverse and Azure Data Lake. | System Customizer and Delegate
+| | Power Platform Dataflows | ppdfcdsclient@onmicrosoft.com | Power Platform Dataflows service application to perform data preparation and loading into Dataverse and Azure Data Lake. | System Administrator
 | | AIBuilderProd | aibuilderfpapp@onmicrosoft.com | To perform authentication for AI Builder. | System admin |
+| | PowerAutomate-ProcessMining | PowerAutomate-ProcessMining@onmicrosoft.com | To allow Process Advisor service to interact with Dataverse. | Environment Maker, Process Advisor Application |
 | | AriaMdlExporter | AriaMdlExporter@onmicrosoft.com | To export data from Engagement Insights to Managed Data Lake. | DataLakeWorkspaceAppAccess |
 | | CDSFileStorage | CDSFileStorage@onmicrosoft.com | To perform background operations like Organization Lifecycle (OLC) operations, file reconciliation and migration. | FileStoreService App Access |
 | | CDSUserManagement | CDSUserManagement@onmicrosoft.com | To provision and synchronize users into Dataverse from Active Directory. | System Administrator |
@@ -57,8 +59,9 @@ Most of these users are hidden from user views but they can be found by using th
 | | PowerVIrtualAgents  | PowerVirtualAgents@onmicrosoft.com | To manage the PVA capabilities within Dataverse environments | CCI Admin, System Customizer, and Environment Maker    |
 | | BizQA | BizQA@onmicrosoft.com | To access search telemetry to improve search experience | BizQAApp   |
 | | ProductInsights | ProductInsights@onmicrosoft.com | To export data from Customer Insights to Engagement Insights | DataLakeWorkspaceAppAccess    |
-| | Dynamics365 SalesForecasting | Dynamics365SalesForecasting@onmicrosoft.com | To fetch entity data and metadata for forecasting feature | ForecastAppUser    |
+| | Dynamics365 SalesForecasting | Dynamics365SalesForecasting@onmicrosoft.com | To fetch table data and metadata for forecasting feature | ForecastAppUser    |
 | | # Omnichannel | Ominichannel@onmicrosoft.com | To perform data integration between Omnichannel for Customer Service and Dataverse | System admin    |
+| | # Flow-RP | Flow-RP@onmicrosoft.com | To allow Power Automate to integrate with Dataverse | Flow-RP Role, Service Reader |
 
 
 **The purpose of the system account?** 

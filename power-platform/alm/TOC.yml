@@ -32,7 +32,7 @@
         href: maintain-managed-solutions.md
   - name: Tools and apps used
     href: tools-apps-used-alm.md    
-  - name: Implementing healthy ALM
+  - name: Implementing healthy project and solution ALM
     items: 
     - name: Healthy ALM overview
       href: implement-healthy-alm.md
@@ -50,6 +50,14 @@
       href: team-development-alm.md
     - name: "Scenario 6: Embrace citizen developers"
       href: embrace-citizen-devs.md
+  - name: Implementing healthy component ALM
+    items:
+    - name: Maintaining healthy model-driven app form ALM
+      href: form-alm.md
+    - name: Recommendations for healthy form ALM
+      href: form-alm-recommendations.md
+    - name: Form ALM FAQ
+      href: form-alm-faq.yml  
   - name: ALM for developers   
     href: alm-for-developers.md
     items:
@@ -59,13 +67,15 @@
         href: devops-build-tools.md
       - name: Microsoft Power Platform Build Tools tasks
         href: devops-build-tool-tasks.md
+      - name: Pre-populate connection references and environment variables (preview)
+        href: conn-ref-env-variables-build-tools.md
     - name: GitHub Actions
       items:
       - name: Use GitHub Actions for Microsoft Power Platform
         href: devops-github-actions.md
-      - name: Available GitHub Actions for Microsoft Power Platform
+      - name: Available GitHub Actions for Power Platform development
         href: devops-github-available-actions.md
-      - name: Available GitHub Administrative Actions for Microsoft Power Platform
+      - name: Available GitHub Actions for Power Platform administration
         href: devops-github-available-administrative-actions.md
       - name: Tutorials
         items:
@@ -121,8 +131,6 @@
       items:
         - name: Use PowerShell
           href: powershell-api.md
-        - name: Manage environments (REST API) 
-          href: online-management-api.md
         - name: Work with solutions (SDK API) 
           href: solution-api.md
         - name: Create patches 

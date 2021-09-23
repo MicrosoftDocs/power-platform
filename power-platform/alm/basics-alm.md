@@ -3,10 +3,11 @@ title: "Application lifecycle management (ALM) basics with Microsoft Power Platf
 description: "Learn the basics of application lifecycle management with Microsoft Power Platform"
 keywords: 
 author: shmcarth
+ms.subservice: alm
 ms.author: shmcarth
 manager: kvivek
 ms.custom: ""
-ms.date: 05/05/2020
+ms.date: 06/11/2020
 ms.reviewer: "matp"
 ms.service: power-platform
 ms.suite: ""
@@ -45,7 +46,7 @@ Using the Power Platform admin center, you can create these types of Dataverse e
     to safely develop and test application changes with low risk. Sandbox
     environments include capabilities that would be harmful in a production
     environment, such as reset, delete, and copy operations. More information:
-    [Manage sandbox environments](/power-platform/admin/sandbox-environments)
+    [Manage sandbox environments](../admin/sandbox-environments.md)
 
 -   **Production**  The environment where apps and other software are put into
     operation for their intended use.
@@ -79,10 +80,10 @@ Dataverse.
 | Default              | By default, every user in your tenant can create and edit apps in a Dataverse default environment that has a database. | We strongly recommend that you create environments for a specific purpose, and grant the appropriate roles and privileges only to those people who need them. |
 
 More information: 
-- [Environments overview](/power-platform/admin/environments-overview)
-- [Manage environment roles](/power-platform/admin/environments-administration#manage-security-for-your-environments)
-- [Create users and assign security roles](/power-platform/admin/create-users-assign-online-security-roles) 
-- [Create environments](/power-platform/admin/create-environment)
+- [Environments overview](../admin/environments-overview.md)
+- [Control user access to environments: security groups and licenses](../admin/control-user-access.md)
+- [Create users and assign security roles](../admin/create-users-assign-online-security-roles.md) 
+- [Create environments](../admin/create-environment.md)
 
 ## Solutions
 Solutions are used to transport apps and components from one environment to
@@ -94,7 +95,7 @@ Solutions have these features:
 
 -   They can contain many different Microsoft Power Platform components, such as model-driven
     apps, canvas apps, site maps, flows, entities, forms, custom connectors, web
-    resources, option sets, charts, and fields. Notice that not all entities can be included in a solution. For example, the account and contact entities aren't solution components.
+    resources, option sets, charts, and fields. Notice that not all entities can be included in a solution. For example, the Application User, Custom API, and Organization Setting system tables can't be added to a solution.
 
 -   They're packaged as a unit to be exported and imported to other environments, or
     deconstructed and checked into source control as source code for assets.
@@ -147,7 +148,7 @@ support. Branching means you diverge from the main line of development and
 continue to do work without changing the main line. The process of merging
 consists of combining one branch into another, such as from a development branch
 into a main line branch. Some common branching strategies are trunk-based
-branching, release branching, and feature branching. More information: [Adopt a Git branching strategy](https://docs.microsoft.com/azure/devops/repos/git/git-branching-guidance?view=azure-devops)
+branching, release branching, and feature branching. More information: [Adopt a Git branching strategy](/azure/devops/repos/git/git-branching-guidance?view=azure-devops)
 
 ### Source control process using a solution
 
@@ -155,7 +156,7 @@ There are two main paths you can use when working with solutions in a source con
 - Export the unmanaged solution and place it as unpacked in the source control system. The build process imports the packed solution as unmanaged into a temporary build environment (sandbox environment). Then, export the solution as managed and store it as a build artifact in your source control system. 
 - Export the solution as unmanaged and also export the solution as managed, and place both in the source control system. Although this method doesn't require a build environment, it does require maintaining two copies of all components (one copy of all unmanaged components from the unmanaged solution and one copy of all managed components from the managed solution).
 
-![Source control by using a solution](media/build-pipeline-alm.png "Source control by using a solution")
+![Source control by using a solution.](media/build-pipeline-alm.png "Source control by using a solution")
 
 More information: [Build tool tasks](devops-build-tool-tasks.md#build-and-release-pipelines)
 
@@ -205,7 +206,7 @@ More information: [Create your first pipeline](/azure/devops/pipelines/create-fi
 To create or edit apps and flows by using Power Apps and Power Automate,
 respectively, users will be required to have a per-user license for Power Apps or
 Power Automate or an appropriate Dynamics 365 application license. For more
-information, see [Licensing overview for Microsoft Power Platform](/power-platform/admin/pricing-billing-skus). We also recommend contacting your Microsoft account representative to discuss your licensing needs. 
+information, see [Licensing overview for Microsoft Power Platform](../admin/pricing-billing-skus.md). We also recommend contacting your Microsoft account representative to discuss your licensing needs. 
 
 ## ALM considerations
 When you consider ALM as an integral part of building apps on Microsoft Power Platform, it can drastically improve speed, reliability, and user experience of

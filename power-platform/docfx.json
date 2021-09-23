@@ -24,7 +24,9 @@
           "**/*.png",
           "**/*.svg",
           "**/*.jpg",
-          "**/*.gif"
+          "**/*.gif",
+          "**/*.js",
+          "**/*.json"
         ],
         "exclude": [
           "**/obj/**",
@@ -56,7 +58,7 @@
     },
     "fileMetadata": {
       "searchScope": {
-        "**.*": [ "Power Apps", "Power Automate", "Power BI", "Power Platform" ]
+        "**.*": [ "Power Apps", "Power Automate", "Power Platform" ]
       }
     },
     "template": [],

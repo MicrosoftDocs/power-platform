@@ -6,6 +6,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 10/16/2020
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -16,8 +17,6 @@ search.app:
   - Flow
 ---
 # Detect duplicate data so you can fix or remove it
-
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 To determine whether a record is a potential duplicate, Power Apps uses duplicate detection rules. When publishing a duplicate detection rule, a matchcode is created for each existing record. A matchcode is also created when a record is created or updated. When a record is in the process of being created or updated, its matchcode can be checked automatically against the matchcodes of existing records. By default, customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), have simple duplicate detection rules for accounts, contacts, and leads. For example, you detect duplicates by matching the record fields, such as email address, first name, and last name.  
   
@@ -31,14 +30,14 @@ To determine whether a record is a potential duplicate, Power Apps uses duplicat
 > 
 >  After publishing a duplicate detection rule, increasing the length of fields that are included in the duplicate detection criteria goes undetected. The field length could exceed the matchcode length limit and not be verified. This may result in duplicates not being detected.  
 > 
->  You can create multiple detection rules for the same entity type. However, you can publish a maximum of five duplicate detection rules per entity type at one time.  
+>  You can create multiple detection rules for the same table type. However, you can publish a maximum of five duplicate detection rules per table type at one time.  
   
  You can detect duplicates:  
   
-- When you create or update records for entities that enabled for duplicate detection. This includes records created with [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)] and tracked in the web application. The duplicate detection dialog is only displayed for the records created or updated in the user interface (UI). For example, for records created by a workflow, the duplicate detection dialog is not displayed.  
+- When you create or update records for tables that enabled for duplicate detection. This includes records created with [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)] and tracked in the web application. The duplicate detection dialog is only displayed for the records created or updated in the user interface (UI). For example, for records created by a workflow, the duplicate detection dialog is not displayed.  
   
   > [!NOTE]
-  > Customer engagement apps have the ability to detect duplicates for the updated UI entities when you create or update records using entity forms or grid views in the web application.  
+  > Customer engagement apps have the ability to detect duplicates for the updated UI tables when you create or update records using table forms or grid views in the web application.  
   
 - When [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)] goes from offline to online.  
   

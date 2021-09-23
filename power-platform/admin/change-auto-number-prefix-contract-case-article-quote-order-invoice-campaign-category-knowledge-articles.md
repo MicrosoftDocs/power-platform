@@ -6,6 +6,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 08/13/2020
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -17,15 +18,13 @@ search.app:
 ---
 # Change auto-numbering prefixes for contracts, cases, articles, quotes, orders, invoices, campaigns, categories, and knowledge articles
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 Contracts, cases, articles, quotes, orders, invoices, marketing campaigns, categories, and knowledge articles are automatically numbered. If your organization has standard numbering formats, you can change the default three-character prefixes and number format to match your organization.  
 
 These settings can be found in the Microsoft Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Data management** > **Auto numbering**.
 
 Make sure you have the System Administrator or System Customizer security role or equivalent permissions to update the setting.
 
-- Follow the steps in [View your user profile](https://docs.microsoft.com/powerapps/user/view-your-user-profile).
+- Follow the steps in [View your user profile](/powerapps/user/view-your-user-profile).
 - Don’t have the correct permissions? Contact your system administrator.
   
 1.  Select an environment and go to **Settings** > **Data management** > **Auto numbering**.
@@ -49,7 +48,7 @@ Make sure you have the System Administrator or System Customizer security role o
 6.  Select **OK** to save your settings.  
   
 ### See also  
- [Use solutions for your customizations](https://docs.microsoft.com/dynamics365/customer-engagement/customize/use-solutions-for-your-customizations)
+ [Use solutions for your customizations](/dynamics365/customer-engagement/customize/use-solutions-for-your-customizations)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

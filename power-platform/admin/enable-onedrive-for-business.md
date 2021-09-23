@@ -1,11 +1,12 @@
 ---
-title: "Enable OneDrive for Business (online)  | MicrosoftDocs"
-description: Enable OneDrive for Business (online)
+title: "Enable and make available OneDrive for Business (online)"
+description: "Learn about licensing and other requirements for using OneDrive for Business, and how to enable it in your environment and control access in apps."
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/04/2020
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -58,7 +59,7 @@ This feature was introduced in [!INCLUDE[pn_crm_online_2016_update_shortest](../
   
 4. Under **Miscellaneous Privileges**, toggle the **OneDrive for Business** privilege to the desired availability.  
   
-   ![Toggle availability of OneDrive for Business](../admin/media/crm-itpro-onedriveforbusn-priv.png "Toggle availability of OneDrive for Business")  
+   ![Toggle availability of OneDrive for Business.](../admin/media/crm-itpro-onedriveforbusn-priv.png "Toggle availability of OneDrive for Business")  
   
 ### See also  
  [Enable OneDrive for Business (on-premises)](connect-onedrive-business.md)   

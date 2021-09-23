@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/09/2020
+ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -24,11 +25,11 @@ Many organizations find success straight away by attending App in a Day events, 
 
 ## Running App in a Day internally
 
-The App in a da training runs people through the core features and capability of the technology included in Microsoft Power Platform, and above all, can be used by everyone in the organization in every single role to get them thinking about how technology can make them more successful. Download the latest version of the [App in a Day material](https://aka.ms/appinaday) to get started.
+The App in a day training runs people through the core features and capability of the technology included in Microsoft Power Platform, and above all, can be used by everyone in the organization in every single role to get them thinking about how technology can make them more successful. Download the latest version of the [App in a Day material](https://aka.ms/appinaday) to get started.
 
 Here are a few tips for running this training internally:
 
-- Create a dedicated [environment](https://docs.microsoft.com/power-platform/admin/create-environment) for training purposes, and ensure attendees have the right license and access to the environment prior to the event. Ask attendees to sign up for a premium trial, or assign them a premium license in the Microsoft 365 Admin portal.
+- Create a dedicated [environment](../../admin/create-environment.md) for training purposes, and ensure attendees have the right license and access to the environment prior to the event. Ask attendees to sign up for a premium trial, or assign them a premium license in the Microsoft 365 Admin portal.
 - Get familiar with the course material, and make sure you have a few facilitators with you on the day who can help attendees 1:1 if they're stuck.
 - Prepare a short intro presentation, explaining the purpose of Microsoft Power Platform and the goals for Power Apps usage in your organization. If you have already created successful apps in your organization, it would be great to show them during the intro so attendees get an idea of what Power Apps can be used for.
 - Run a trial event for 10 to 12 people who you're familiar with, who will be able to provide feedback and test the logistics with you. This could be your inner circle of champions. They can also be your trial group for other events and activities you are planning.

@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/09/2020
+ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -18,21 +19,21 @@ search.app:
 ---
 # Identify Microsoft Power Platform champions in your organization
 
-If you have Office 365 in your organization, it’s likely some individuals already have discovered Power Apps through exploration and Power Apps popping up in Microsoft Teams, SharePoint, and OneDrive. Check analytics in the [Power Platform admin center](https://aka.ms/ppac) or make use of the [Center of Excellence Starter Kit](https://aka.ms/coestarterkit) dashboard to find your makers and learn about your app usage.
+If you have Office 365 in your organization, it’s likely some individuals already have discovered Power Apps through exploration and Power Apps popping up in Microsoft Teams, SharePoint, and OneDrive. Check analytics in the [Power Platform admin center](https://aka.ms/ppac) or make use of the [Center of Excellence Starter Kit](../coe/starter-kit.md) dashboard to find your makers and learn about your app usage.
 
 Even without organic adoption, it’s likely you already have a good idea of who your champions are. They are your Excel, Access, and SharePoint whizzes; or maybe they’re the troublemakers pushing the boundaries; or the ones who are first in line when there’s something new to learn. They question, they query, they encourage. Train those people. Make them champions and help them train others—champions aren't only passionate about what they do, but are also excited to evangelize and help their peers to learn more effective ways of working.
 
 ## Find your champions with the right tools
 
-The out-of-the-box [Power Automate](https://docs.microsoft.com/power-platform/admin/analytics-flow) and [Power Apps](https://docs.microsoft.com/power-platform/admin/analytics-powerapps) analytics can help you identify top makers in your organization.
+The out-of-the-box [Power Automate](../../admin/analytics-flow.md) and [Power Apps](../../admin/analytics-powerapps.md) analytics can help you identify top makers in your organization.
 
-In addition to that, the dashboard part of the [CoE Starter Kit](https://aka.ms/coestarterkit) can give you a tenant-wide overview of makers in your environment, and what connectors they're using to create apps. You can see your top app and flow makers, what departments they are from, and identify trends over time.
+In addition to that, the dashboard part of the [CoE Starter Kit](../coe/starter-kit.md) can give you a tenant-wide overview of makers in your environment, and what connectors they're using to create apps. You can see your top app and flow makers, what departments they are from, and identify trends over time.
 
-![CoE Starter Kit maker dashboard](../coe/media/pb-10.png "CoE Starter Kit Maker Dashboard")
+![CoE Starter Kit maker dashboard.](../coe/media/pb-10.png "CoE Starter Kit Maker Dashboard")
 
 You can see how many different connectors your makers are using and learn who is exploring different connectors. A great way to identify mature makers is looking at those who try out different connectors.
 
-![CoE Starter Kit app maker insights](media/coe-pb1.png "CoE Starter Kit app maker insights")
+![CoE Starter Kit app maker insights.](media/coe-pb1.png "CoE Starter Kit app maker insights")
 
 ## How will champions support you?
 

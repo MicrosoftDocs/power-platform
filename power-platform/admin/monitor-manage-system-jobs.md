@@ -1,12 +1,13 @@
 ---
-title: "Monitor and manage system jobs | MicrosoftDocs"
-description: Monitor and manage system jobs
+title: "Monitor and manage system jobs in Power Platform admin center"
+description: "Features in Dynamics 365 and other apps use system jobs to perform tasks automatically. Monitor and manage system jobs in Power Platform admin center."
 author: jimholtz
 manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/30/2020
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin

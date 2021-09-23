@@ -6,6 +6,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/11/2020
+ms.subservice: admin
 ms.author: matp
 search.audienceType: 
   - admin
@@ -25,7 +26,7 @@ search.app:
   
 <a name="BKMK_failConn"></a>   
 ### Failed Connection  
- This failure indicates that the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] server could not be accessed from where the validation check was run. Verify that the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] URL that you entered is correct and that you can access the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site and site collection by using a web browser from the computer where the Enable Server-Based SharePoint Integration wizard is running. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Troubleshooting hybrid environments (SharePoint)](https://technet.microsoft.com/library/dn518363.aspx)  
+ This failure indicates that the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] server could not be accessed from where the validation check was run. Verify that the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] URL that you entered is correct and that you can access the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site and site collection by using a web browser from the computer where the Enable Server-Based SharePoint Integration wizard is running. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Troubleshooting hybrid environments (SharePoint)](/SharePoint/hybrid/hybrid)  
   
 <a name="BKMK_failAuthen"></a>   
 ### Failed Authentication  
@@ -35,7 +36,7 @@ search.app:
   
 <a name="BKMK_fail_Author"></a>   
 ### Failed authorization or 401 unauthorized error
- This failure can occur when the claims-based authentication types do not match. For example, in a hybrid deployment such as customer engagement apps to [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises, when you use the default claims-based authentication mapping, the [!INCLUDE[pn_Windows_Live_ID](../includes/pn-windows-live-id.md)] email address used by the user must match the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] user’s **Work email**. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Define custom claim mapping for SharePoint server-based integration](https://docs.microsoft.com/power-platform/admin/configure-server-based-authentication-sharepoint-on-premises) 
+ This failure can occur when the claims-based authentication types do not match. For example, in a hybrid deployment such as customer engagement apps to [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises, when you use the default claims-based authentication mapping, the [!INCLUDE[pn_Windows_Live_ID](../includes/pn-windows-live-id.md)] email address used by the user must match the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] user’s **Work email**. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Define custom claim mapping for SharePoint server-based integration](./configure-server-based-authentication-sharepoint-on-premises.md) 
   
 <a name="BKMK_SP_nosupp"></a>   
 ### SharePoint Version Not Supported  
@@ -44,7 +45,7 @@ search.app:
  
 <a name="BKMK_TS_SP"></a>   
 ## Troubleshooting SharePoint  
- Issues that affect server-based authentication can also be recorded in [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] logs and reports. For more information about how to view and troubleshoot [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] monitoring, see the following topics. [View reports and logs in SharePoint 2013](https://technet.microsoft.com/library/ee748651.aspx) and [Configure diagnostic logging in SharePoint 2013](https://technet.microsoft.com/library/ee748656.aspx)  
+ Issues that affect server-based authentication can also be recorded in [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] logs and reports. For more information about how to view and troubleshoot [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] monitoring, see the following topics. [View reports and logs in SharePoint 2013](/SharePoint/administration/view-reports-and-logs) and [Configure diagnostic logging in SharePoint 2013](/SharePoint/administration/configure-diagnostic-logging)  
   
 <a name="BKMK_known_CRMOn_SPop"></a>   
 ## Known issues with server-based authentication  
@@ -102,14 +103,31 @@ search.app:
   
  The Register-SPAppPrincipal: The requested service, '<http://wgwitsp:32843/46fbdd1305a643379b47d761334f6134/AppMng.svc>' could not be activated error message can occur when you grant permission to access [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] by running the Register-SPAppPrincipal command.  
   
- To resolve both of these errors after they occur, restart the web server where the web application is installed. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Start or Stop the Web Server (IIS 8)](https://technet.microsoft.com/library/jj635851.aspx)  
+ To resolve both of these errors after they occur, restart the web server where the web application is installed. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Start or Stop the Web Server (IIS 8)](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj635851(v=ws.11))  
   
 ### “Something went wrong while interaction with SharePoint” error message received  
  Applies to: All versions when used with [!INCLUDE[pn_microsoft_sharepoint_online](../includes/pn-microsoft-sharepoint-online.md)]  
   
- This error can be returned to the user who doesn’t have site permissions or the user has had permissions removed from the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site where document management is enabled. Currently, this is a known issue with [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)] where the error message that is displayed to the user doesn’t indicate that the user’s permissions are not sufficient to access the site.  
+ This error can be returned to the user who doesn’t have site permissions or the user has had permissions removed from the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site where document management is enabled. Currently, this is a known issue with [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)] where the error message that is displayed to the user doesn’t indicate that the user’s permissions are not sufficient to access the site.
+
+## How to display the Enable Server-Based SharePoint Integration wizard
+
+After server-based integration is enabled, the Enable Server-Based SharePoint Integration wizard no longer appears in the Document Management area of Settings. To display the Enable Server-Based SharePoint Integration wizard so that you can reconfigure it, you must deactivate all SharePoint sites and disable OneDrive document management. 
+
+### Disable document management SharePoint sites and OneDrive
+
+1. Sign into Power Apps, select **Settings** (gear) on the upper right, and then select **Advanced settings**.
+1. Go to **Settings** > **Document Management** > **SharePoint Sites**.
+1. In the view selector, select **Active SharePoint Sites**.
+1. Select all SharePoint sites in the list, on the command bar select **Deactivate**, and then select **Deactivate** at the message box prompt.
+    :::image type="content" source="media/deactivate-all-sharepoint-sites.png" alt-text="Deactivate all SharePoint sites":::
+1. Go to **Settings** > **Document Management** > **Enable OneDrive for Business**.
+1. Clear the **Enable OneDrive for Business** option, and then select **OK**.
+
+After all SharePoint sites are deactivated and OneDrive integration is disabled, the Enable Server-Based SharePoint Integration wizard will appear in the Document Management area.
   
-### See also  
+### See also
+
 [Troubleshoot SharePoint Online integration](troubleshoot-set-up-sharepoint-online.md) <br />
  [Permissions required for document management tasks](../admin/permissions-required-document-management-tasks.md)
 

@@ -6,6 +6,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/04/2020
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -17,15 +18,13 @@ search.app:
 ---
 # Create a schema to export configuration data
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 The Configuration Migration tool lets you build a schema to describe your export data. It also enables you to check for any missing dependencies and relationships in the entities or fields to be exported to avoid an inconsistent data set.  
   
 <a name="Prereq"></a>   
 
 ## Before you begin 
 
-Download the Configuration Migration Tool. The Configuration Migration tool is available as a [NuGet package](https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.ConfigurationMigration.Wpf). To download the tool, see [Download tools from NuGet](https://docs.microsoft.com/powerapps/developer/common-data-service/download-tools-nuget). Follow the steps on this page to extract the **DataMigrationUtility.exe** tool. 
+Download the Configuration Migration Tool. The Configuration Migration tool is available as a [NuGet package](https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.ConfigurationMigration.Wpf). To download the tool, see [Download tools from NuGet](/powerapps/developer/common-data-service/download-tools-nuget). Follow the steps on this page to extract the **DataMigrationUtility.exe** tool. 
  
 <a name="CreateandExport"></a>  
 
@@ -51,7 +50,7 @@ Download the Configuration Migration Tool. The Configuration Migration tool is a
   
    2.  To export all the entities, click **Add All** next to the **Select Entity** list.  
   
-   ![Create schema of the data to be exported](../admin/media/configure-migration-create-schema.PNG "Create schema of the data to be exported")  
+   ![Create schema of the data to be exported.](../admin/media/configure-migration-create-schema.PNG "Create schema of the data to be exported")  
   
 7. You can select the **Show the relationships of the selected entity** to view the related entities for the selected entity so that you can export them as well.  
   
@@ -61,15 +60,15 @@ Download the Configuration Migration Tool. The Configuration Migration tool is a
   
    -   If you want to remove all the items in the **Selected Fields and Entities** and start over, click **Clear Selection**.  
   
-   ![Remove a relationship in a customer engagement apps schema](../admin/media/config-migration-create-schema-2.png "Remove a relationship in a customer engagement apps schema")  
+   ![Remove a relationship in a customer engagement apps schema.](../admin/media/config-migration-create-schema-2.png "Remove a relationship in a customer engagement apps schema")  
   
 9. To validate the selected data to be exported, click **Tools** > **Validate Schema**.  
   
-   ![Validate the schema](../admin/media/config-migration-create-schema-7.png "Validate the schema")  
+   ![Validate the schema.](../admin/media/config-migration-create-schema-7.png "Validate the schema")  
   
 10. A message is displayed if there are any missing dependencies. To close the message, click **OK**.  
   
-    ![Validation results message](../admin/media/config-migration-create-schema-3.PNG "Validation results message")  
+    ![Validation results message.](../admin/media/config-migration-create-schema-3.PNG "Validation results message")  
   
 11. Add the missing entities, and then perform step 9 again to validate the data. A confirmation message is displayed if there are no validation errors.  
   
@@ -78,7 +77,7 @@ Download the Configuration Migration Tool. The Configuration Migration tool is a
   
 12. Define the uniqueness condition for your data to be exported. To open a new screen, click **Tools** > **Configure Import Settings**. For each entity that you have selected to export, add the field or fields on which you want the records to be compared with existing records on the target system during the import. Select a field, and click **Add Field**.  
   
-    ![Configure import settings](../admin/media/config-migration-create-schema-4.PNG "Configure import settings")  
+    ![Configure import settings.](../admin/media/config-migration-create-schema-4.PNG "Configure import settings")  
   
 13. To disable plug-ins for all the entities before the data is imported on to the target system, select the **Disable plug-ins on all entities for import** check box. The tool will disable all the plug-ins while importing data on to the target server, and re-enable them after the import process.  
   
@@ -97,7 +96,7 @@ Download the Configuration Migration Tool. The Configuration Migration tool is a
   
 16. On the next screen, specify the location of the data file to be exported in the **Save to data file** box, and then click **Export Data**. The screen displays the export progress status and the location of the exported file at the bottom of the screen once the export is complete.  
   
-    ![Screenshot of export data](../admin/media/config-migration-create-schema-5.PNG "Screenshot of export data")  
+    ![Screenshot of export data.](../admin/media/config-migration-create-schema-5.PNG "Screenshot of export data")  
   
 17. Click **Exit** to close the tool.  
   
@@ -122,7 +121,7 @@ Download the Configuration Migration Tool. The Configuration Migration tool is a
 8. Click **Exit** to close the tool.  
 
 ### See also 
- [Download tools from NuGet](https://docs.microsoft.com/powerapps/developer/common-data-service/download-tools-nuget) <br />
+ [Download tools from NuGet](/powerapps/developer/common-data-service/download-tools-nuget) <br />
  [Modify a schema](modify-configuration-data-schema.md) <br />
  [Manage your configuration data](manage-configuration-data.md) <br /> 
  [Import configuration data](import-configuration-data.md)

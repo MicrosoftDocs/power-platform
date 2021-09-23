@@ -6,6 +6,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/17/2021
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -29,7 +30,7 @@ Enable auditing to track changes to your organization's data and maintain a log 
   
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
   
-2. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+2. In the web app, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
 
 3. Select **Settings** > **Administration**.
  
@@ -56,7 +57,7 @@ Specify to audit specific areas of the product, as described in the following ta
 |Customer Service Entities|Article, Case, Client Feedback, Contract, and Service|  
   
 ### See also  
- [Audit data and user activity](https://docs.microsoft.com/powerapps/developer/common-data-service/audit-user-access)
+ [Audit data and user activity](/powerapps/developer/common-data-service/audit-user-access)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

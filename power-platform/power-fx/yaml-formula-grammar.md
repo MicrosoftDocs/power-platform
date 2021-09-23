@@ -8,6 +8,7 @@ ms.service: power-platform
 ms.topic: reference
 ms.custom: canvas
 ms.date: 02/24/2021
+ms.subservice: power-fx
 ms.author: gregli
 search.audienceType: 
   - maker
@@ -67,7 +68,7 @@ The number sign `#` and colon `:` aren't allowed anywhere in single-line formula
 
 Using normal YAML escaping with single quotes and C-like backslashes isn't supported; use a multiline formula instead. This is for consistency and to facilitate cut/paste between the formula bar in Power Apps Studio and YAML source files.
 
-See the canvas apps [operators and identifiers](https://docs.microsoft.com/powerapps/maker/canvas-apps/functions/operators) documentation for details on allowed names and the structure of an expression.
+See the canvas apps [operators and identifiers](/powerapps/maker/canvas-apps/functions/operators) documentation for details on allowed names and the structure of an expression.
 
 ## Multiline formulas
 

@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 11/20/2020
+ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -18,7 +19,7 @@ search.app:
 ---
 
 # Set up ALM Accelerator for Makers components
-This solution uses [GitHub actions](https://docs.microsoft.com/power-platform/alm/devops-github-actions) for source control and deployments. The [GitHub connector](https://docs.microsoft.com/connectors/github/) is used in flows to interact with GitHub. More information: [Use the ALM Accelerator for Makers components](almaccelerator-components.md)
+This solution uses [GitHub actions](../../alm/devops-github-actions.md) for source control and deployments. The [GitHub connector](/connectors/github/) is used in flows to interact with GitHub. More information: [Use the ALM Accelerator for Makers components](almaccelerator-components.md)
 
 >[!IMPORTANT]
 >The ALM Accelerator for Makers components don't have a dependency on other components of the CoE Starter Kit. It can be used independently.
@@ -56,7 +57,7 @@ Set up an Azure AD app registration that will be used to create environments and
 
 1. Go to **Azure Active Directory** > **App registrations**.
 
-   ![Azure AD app registration](media/coe33.png "Azure AD app registration")
+   ![Azure AD app registration.](media/coe33.png "Azure AD app registration")
 
 1. Select **+ New Registration**.
 
@@ -68,7 +69,7 @@ Set up an Azure AD app registration that will be used to create environments and
 
 1. Select **Delegated permissions**, and then select **user_impersonation**.
 
-    ![Delegated permissions](media/crm-api-registration2.png "Delegated permissions")
+    ![Delegated permissions.](media/crm-api-registration2.png "Delegated permissions")
 
 1. Select **Add permissions**.
 
@@ -94,13 +95,13 @@ Leave the Azure portal open, because you'll need to copy some information when y
 
 1. Go to your target environment. In the example in the following image, we're importing to the environment named **Contoso CoE**.
 
-     ![Power Apps maker portal environment selection](media/coe6.png "Power Apps maker portal environment selection")
+     ![Power Apps maker portal environment selection.](media/coe6.png "Power Apps maker portal environment selection")
 
 1. Create connections to all connectors used as part of the solution.
     1. Go to **Data** > **Connections**.
     1. Select **+ New Connection**.
-    1. Search for and select **Common Data Service**.
-     ![Select the Dataverse connector](media/msi-connection.png "Select the Dataverse connector")
+    1. Search for and select **Microsoft Dataverse**.
+     ![Select the Dataverse connector.](media/msi-connection.png "Select the Dataverse connector")
     1. Select **+** to create a connection.
     1. Complete the same steps for the following connectors:
         - Office 365 Outlook
@@ -124,7 +125,7 @@ Leave the Azure portal open, because you'll need to copy some information when y
 
 1. Establish connections to activate your solution. If you create a new connection, you must select **Refresh**. You won't lose your import progress.
 
-    ![Establish connections to activate your solution](media/git-4.png "Establish connections to activate your solution.")
+    ![Establish connections to activate your solution.](media/git-4.png "Establish connections to activate your solution.")
 
 1. Select **Import**.
 
@@ -134,7 +135,7 @@ Leave the Azure portal open, because you'll need to copy some information when y
 1. On the left pane, select **Solutions**.
 1. Select the **Power Platform GitHub ALM** solution, and then open the **ALM Accelerator Admin Configuration** app.
 
-![Configure environment settings and deployment stages after import by using the ALM Accelerator Admin app](media/git-24.png "Configure environment settings and deployment stages after import by using the ALM Accelerator Admin app.")
+![Configure environment settings and deployment stages after import by using the ALM Accelerator Admin app.](media/git-24.png "Configure environment settings and deployment stages after import by using the ALM Accelerator Admin app.")
 
 ### Set up deployment stages
 
@@ -169,7 +170,7 @@ The client ID is needed for flows to create an environment and perform other adm
 
 ### Update the language
 
-1. Change your preferred language, if you want. Power Apps uses the [IETF BCP-47 language tag format](https://docs.microsoft.com/powerapps/maker/canvas-apps/functions/function-language#language-tags), for example en_US, fr_FR, it_IT.
+1. Change your preferred language, if you want. Power Apps uses the [IETF BCP-47 language tag format](/powerapps/maker/canvas-apps/functions/function-language#language-tags), for example en_US, fr_FR, it_IT.
 1. Select **Update**.
 
 ### Update GitHub Plan Exists setting
@@ -178,7 +179,7 @@ If a paid GitHub org plan exists for your org, turn on the **GitHub Plan Exists*
 
 ## Secure admin credentials
 
-[Field-level security](https://docs.microsoft.com/power-platform/admin/field-level-security) is enabled to secure credentials for deployments. As an admin, you'll need to add users to the **FieldSecurityForPassword** field security profile; this enables those users to add their credentials for the deployment from development to test and production environments.
+[Field-level security](../../admin/field-level-security.md) is enabled to secure credentials for deployments. As an admin, you'll need to add users to the **FieldSecurityForPassword** field security profile; this enables those users to add their credentials for the deployment from development to test and production environments.
 <!--markdownlint-disable MD036-->
 **To add users to the field security profile**
 
@@ -186,27 +187,27 @@ If a paid GitHub org plan exists for your org, turn on the **GitHub Plan Exists*
 
 1. Select **FieldSecurityForPassword** from the solution.
 
-    ![Select FieldSecurityForPassword from the solution](media/git-6.png "Select FieldSecurityForPassword from the solution")
+    ![Select FieldSecurityForPassword from the solution.](media/git-6.png "Select FieldSecurityForPassword from the solution")
 
 1. Select **Users**.
 
-    ![Select Users in the Field Security Profile](media/git-7.png "Select Users in the Field Security Profile")
+    ![Select Users in the Field Security Profile.](media/git-7.png "Select Users in the Field Security Profile")
 
 1. Select **Add**.
 
 1. Search for a user you want to add to the profile.
 
-    ![Search for users for the Field Security Profile](media/git-8.png "Search for Users for the Field Security Profile")
+    ![Search for users for the Field Security Profile.](media/git-8.png "Search for Users for the Field Security Profile")
 
 1. **Select** to add the user to the security profile.
 
-    ![Select a user to add them to the Field Security Profile](media/git-9.png "Select a user to add them to a Field Security Profile")
+    ![Select a user to add them to the Field Security Profile.](media/git-9.png "Select a user to add them to a Field Security Profile")
 
 1. Repeat this step for all users who will use the ALM Accelerator for Makers app.
 
 1. Select **Save and Close**.
 
-   ![Save the Field Security Profile](media/git-10.png "Save the Field Security Profile")
+   ![Save the Field Security Profile.](media/git-10.png "Save the Field Security Profile")
 
 ## Configure GitHub org secrets
 
@@ -225,10 +226,10 @@ If you have a paid GitHub org plan, configure org secrets by following these ste
 
 1. Go to your org in GitHub (https://github.com/yourorg).
 1. Select **Settings** > **Secret** > **New organization secret**
-    ![Select Secrets from your GitHub org settings](media/git-20.png "Select Secrets from your GitHub org settings")
+    ![Select Secrets from your GitHub org settings.](media/git-20.png "Select Secrets from your GitHub org settings")
 1. Enter **DEV_ENVIRONMENT_SECRET** as the name for your development deployment stage, and enter the value for your secret.
 1. In the **Repository access** list, select **Private Repositories**.
-         ![For the paid GitHub org plan, select Private Repositories for your secret](media/git-21.png "For the paid GitHub org plan, select Private Repositories for your Secret")
+         ![For the paid GitHub org plan, select Private Repositories for your secret.](media/git-21.png "For the paid GitHub org plan, select Private Repositories for your Secret")
 1. Select **Add Secret**.
 1. Repeat the preceding steps to add a **TEST_ENVIRONMENT_SECRET** and **PROD_ENVIRONMENT_SECRET**.
 
@@ -242,7 +243,7 @@ If you don't have a paid GitHub org plan, do the following for all projects crea
 1. Go to your org in GitHub (https://github.com/yourorg).
 1. Select **Settings** > **Secret** > **New organization secret**
 1. Enter **DEV_ENVIRONMENT_SECRET** as the name for your development deployment stage, and enter the value for your secret.
-    ![For the free GitHub org plan, select Private Repositories for your secret](media/git-22.png "For the free GitHub org plan, select Private Repositories for your secret")
+    ![For the free GitHub org plan, select Private Repositories for your secret.](media/git-22.png "For the free GitHub org plan, select Private Repositories for your secret")
 1. Select **Add Secret**.
 1. Repeat the preceding steps to add a **TEST_ENVIRONMENT_SECRET** and **PROD_ENVIRONMENT_SECRET**.
 

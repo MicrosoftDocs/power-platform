@@ -4,8 +4,9 @@ description: Explains how Power Apps and Power Automate be made widely available
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/16/2020
+ms.date: 09/16/2021
 author: jimholtz
+ms.subservice: admin
 ms.author: jimholtz
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
@@ -20,8 +21,6 @@ search.app:
 
 # Governance considerations 
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 Many customers wonder: How can Power Apps and Power Automate be made available to their broader business and supported by IT? Governance is the answer. It aims to enable business groups to focus on solving business problems efficiently while complying with IT and business compliance standards. The following content is intended to structure themes often associated with governing software and bring awareness to capabilities available for each theme as it relates to governing Power Apps and Power Automate. 
 
 |Theme  |Common questions related to each theme for which this content answers  |
@@ -32,7 +31,7 @@ Many customers wonder: How can Power Apps and Power Automate be made available t
 |Monitor     | <ul><li>How are we capturing compliance / auditing data?</li> <br /><li>How can I measure adoption and usage within my organization?</li></ul> |
 
 ## Architecture
-It's best to familiarize oneself with Environments as the first step to building the right governance story for your company. Environments are the containers for all resources used by a Power Apps, Power Automate and Dataverse. [Environments Overview](environments-overview.md) is a good primer which should be followed by [What is Dataverse?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro), [Types of Power Apps](https://docs.microsoft.com/powerapps/maker/), [Microsoft Power Automate](https://docs.microsoft.com/power-automate/getting-started), [Connectors](https://docs.microsoft.com/powerapps/maker/canvas-apps/connections-list),  and [On-premises Gateways](wp-onpremises-gateway.md). 
+It's best to familiarize oneself with Environments as the first step to building the right governance story for your company. Environments are the containers for all resources used by a Power Apps, Power Automate and Dataverse. [Environments Overview](environments-overview.md) is a good primer which should be followed by [What is Dataverse?](/powerapps/maker/common-data-service/data-platform-intro), [Types of Power Apps](/powerapps/maker/), [Microsoft Power Automate](/power-automate/getting-started), [Connectors](/powerapps/maker/canvas-apps/connections-list),  and [On-premises Gateways](wp-onpremises-gateway.md). 
 
 ## Security 
 This section outlines mechanisms that exist to control who can access Power Apps in an environment and access data: licenses, environments, environment roles, Azure Active Directory, Data Loss Prevention policies and admin connectors that can be used with Power Automate. 
@@ -102,13 +101,13 @@ For customers with Azure AD Premium, conditional access policies can be defined 
 
 #### Creating a Conditional Access Policy
 
-1. Sign in to [https://portal.azure.com](https://portal.azure.com) 
-2. Select Azure Active Directory
-3. Select Conditional Access.
-4. Select + New Policy
-5. Select user and groups
-6. Select the cloud apps - select **Common Data Service** to control access to customer engagement apps
-7. Apply conditions (user/group, device, location) 
+1. Sign in to [https://portal.azure.com](https://portal.azure.com). 
+2. Select **Azure AD Conditional Access**.
+3. Select **+ New Policy**.
+4. Select**users and groups selected**.
+5. Select **All cloud apps** > **All cloud apps** > **Common Data Service** to control access to customer engagement apps.
+6. Apply conditions (user risk, device platforms, locations).
+7. Select **Create**.
 
 ### Prevent data leakage with data loss prevent policies
 
@@ -116,9 +115,9 @@ For customers with Azure AD Premium, conditional access policies can be defined 
 
 #### FAQ
 
-Q: Can I control, on the tenant level, which connector is at all available, for example No to Dropbox or Twitter but Yes to SharePoint)?
+Q: Can I control, on the tenant level, which connector is at all available, for example No to Dropbox or Twitter but Yes to SharePoint?
 
-A: This is not possible. Customers can subscribe to Audit events to do corrective action if there are flows that have been built that create concerns for customers. In fact, a very large Power Apps customer has leveraged this approach to apply another level of governance.
+A: This is possible by utilizing the [connectors classification](dlp-connector-classification.md) capabilities and assigning the **Blocked** classifier to one or more connectors that you want to keep from being used. Note that there are a [set of connectors that can’t be blocked](dlp-connector-classification.md#list-of-connectors-that-cant-be-blocked). 
  
 Q: What about Sharing connectors between users? For example, the connector for Teams is a general one that can be shared?
 
@@ -130,8 +129,8 @@ In addition to monitoring, many customers want to subscribe to software creation
 
 ### Build Power Automate flows to alert on key audit events
 
-1.    An example of alerting that can be implemented is subscribing to Microsoft 365 Security and Compliance Audit Logs. 
-2.    This can be achieved through either a [webhook](https://preview.flow.microsoft.com/blog/automate-flow-governance/) subscription or [polling](https://preview.flow.microsoft.com/blog/accessing-office-365-security-compliance-center-logs-from-microsoft-flow/) approach. However, by attaching Power Automate to these alerts, we can provide administrators with more than just email alerts.
+1. An example of alerting that can be implemented is subscribing to Microsoft 365 Security and Compliance Audit Logs. 
+2. This can be achieved through either a [webhook](https://preview.flow.microsoft.com/blog/automate-flow-governance/) subscription or [polling](https://preview.flow.microsoft.com/blog/accessing-office-365-security-compliance-center-logs-from-microsoft-flow/) approach. However, by attaching Power Automate to these alerts, we can provide administrators with more than just email alerts.
 
 ### Build the policies you need with Power Apps, Power Automate, and PowerShell
 
@@ -201,7 +200,7 @@ The export can take a while for tenants with a large number of Power Platform us
 3. Optionally, the list of resources used in an Environment may be downloaded as a .csv.
 
 ### See also
-[Use best practices to secure and govern Power Automate environments](https://docs.microsoft.com/learn/paths/best-practices-environments/) <br />
+[Use best practices to secure and govern Power Automate environments](/learn/paths/best-practices-environments/) <br />
 [Microsoft Power Platform Center of Excellence (CoE) Starter Kit](../guidance/coe/starter-kit.md)
 
 

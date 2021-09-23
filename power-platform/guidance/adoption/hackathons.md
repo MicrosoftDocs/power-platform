@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/09/2020
+ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -38,7 +39,7 @@ Preparation is key for a successful hackathon, so make sure to consider the foll
 
 ## Readiness
 
--	Provide training sessions for participants—the more they know ahead of the event, the better the apps they’ll submit. Suggest they attend an [App in a Day](https://aka.ms/aiadevent) event, or complete a [Microsoft Power Platform Learning path](https://docs.microsoft.com/learn/modules/get-started-with-powerapps/).
+-	Provide training sessions for participants—the more they know ahead of the event, the better the apps they’ll submit. Suggest they attend an [App in a Day](https://aka.ms/aiadevent) event, or complete a [Microsoft Power Platform Learning path](/learn/modules/get-started-with-powerapps/).
 -	Set up a call before the hackathon where teams and individuals can bring their ideas and questions to discuss feasibility and unblock knowledge gaps.
 -	Find out what data sources teams want to connect to and make sure test data is available, and that teams have the right access. An alternative is providing dummy data as an Excel spreadsheet the teams could use to mock up their solutions.
 -	Building confidence is the key; it maximizes the productivity of the hackathon.

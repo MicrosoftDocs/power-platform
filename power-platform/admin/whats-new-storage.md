@@ -1,11 +1,13 @@
 ---
-title: What's new for storage | Microsoft Docs
-description: Learn what's new about storage for Microsoft Power Platform
+title: "What's new for storage administration in Microsoft Power Platform"
+description: "Learn about enhancements for storage that affect administrators, including reporting and reaching Dataverse database capacity limits."
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/29/2021
+ms.custom: intro-internal
+ms.date: 09/16/2021
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -18,8 +20,6 @@ search.app:
 
 # What's new about storage 
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 We've made some key enhancements to admin experiences for the Microsoft Power Platform admin center:
 
 - Storage reporting is based on customer licenses and capacity add-ons.
@@ -31,7 +31,7 @@ We're rolling out these features now so check back if your user experience varie
 
 In April 2019, we introduced Microsoft Dataverse capacity storage that's optimized for relational data (database), attachments (file), and audit logs (log). New customers of Power Apps, Power Automate, and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation) receive a tenant-wide default entitlement for each of these three storage types and additional per user subscription license entitlements. Additional storage can be purchased in 1-GB increments. Existing customers won't be affected by this change until the end of their current Power Apps or Dynamics 365 subscription, when renewal is required.
 
-![Evolution of data management](media/storage-model-evolution.png "Evolution of data management")
+![Evolution of data management.](media/storage-model-evolution.png "Evolution of data management")
 
 Some of the benefits of this change include:
 
@@ -54,7 +54,7 @@ There are two versions for storage capacity reporting:
 
 ## What happens when my organization exceeds storage entitlements?
 
-If you exceed your storage capacity, you'll receive notifications alerting you to the over-capacity usage. These notifications occur as alerts in the Power Platform admin center. The following admin operations won't be available when a tenant exceeds storage capacity entitlements: 
+If you exceed your storage capacity, you'll receive email notifications alerting you to the over-capacity usage.  For new model email notification details, see [Changes for exceeding storage capacity entitlements](capacity-storage.md#changes-for-exceeding-storage-capacity-entitlements). For legacy model email notification details, see [Changes for exceeding storage capacity entitlements](legacy-capacity-storage.md#changes-for-exceeding-storage-capacity-entitlements). There is also a notification banner in the Power Platform admin center when a tenant has exceeded storage capacity. The following admin operations won't be available when a tenant exceeds storage capacity entitlements:
 
 - Create new environment (requires minimum 1GB capacity available)
 - Copy an environment (requires minimum 1GB capacity available)
@@ -71,15 +71,10 @@ Please review:
 If your database storage is over capacity, admins will be unable to do a copy or restore any of their environments. 
 
 > [!div class="mx-imgBorder"] 
-> ![Capacity overage](media/capacity-overage.png "Overage")
+> ![Capacity overage.](media/capacity-overage.png "Overage")
    
 
 You can request a temporary (30-day) extension that allows copy and restore operations for the duration of the extension. To do so, follow these steps.
-
-<!-- 
-> [!NOTE]
-> The option to request a temporary exception is only available to tenant admins (Microsoft 365 Global admins). Other admins will not see the **Request an extension** option.
--->
 
 #### Extension request for Copy
 
@@ -90,7 +85,7 @@ You can request a temporary (30-day) extension that allows copy and restore oper
 5. The **Copy environment** page appears where you can select **Request an extension**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Request extension](media/capacity-request-extension.png "Request extension")
+   > ![Request extension.](media/capacity-request-extension.png "Request extension")
 
 #### Extension request for Restore
 
@@ -114,7 +109,9 @@ You can request a temporary (30-day) extension that allows copy and restore oper
 
 |Date  |Description  |
 |---------|---------|
-| January 2021 | We've added database, log, and file storage capacity that is included with the Project for the Web licenses. See [Project for the web and Microsoft Dataverse](https://docs.microsoft.com/office365/servicedescriptions/project-online-service-description/project-online-service-description?redirectedfrom=MSDN#project-roadmap-and-power-automate). |
+| September 2021 | We're providing free storage capacity for the default environment: 3GB Dataverse Database Capacity, 3GB Dataverse File Capacity, and 1GB Dataverse Log Capacity. Note that we're in the process of rolling out this feature. See [The default environment](environments-overview.md#the-default-environment).|
+| June 2021 | Storage capacity notification emails have been introduced and will be rolled out in phases.  Tenant admins now receive emails when their tenant’s entitled storage capacity is running out of, or exceeding available capacity.  For details for new model storage, see [Changes for exceeding storage capacity entitlements](capacity-storage.md#changes-for-exceeding-storage-capacity-entitlements). For legacy model details, see [Changes for exceeding storage capacity entitlements](legacy-capacity-storage.md#changes-for-exceeding-storage-capacity-entitlements). |
+| January 2021 | We've added database, log, and file storage capacity that is included with the Project for the Web licenses. See [Project for the web and Microsoft Dataverse](/office365/servicedescriptions/project-online-service-description/project-online-service-description#project-roadmap-and-power-automate). |
 | January 2021 |   The amount of default Dataverse database capacity entitled per tenant for both the per app and per flow licenses has been increased from **1GB** to **5GB**. The corresponding update to the ["Subscription Capacity" section of the Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130) is in progress and should be published soon. |
 |December 2020     |  As part of our storage optimization efforts, we continue to make improvements. In December 2020, we included most of the *WebResourceBase* table and *RibbonClientMetadataBase* table as part of file storage. Customers will see file storage consumption increase and database consumption reduced based on the amount of data in these tables. This effort will continue for other tables in the future. Check back here to see when additional tables go through a similar transition.    |
 
@@ -126,3 +123,4 @@ You can request a temporary (30-day) extension that allows copy and restore oper
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

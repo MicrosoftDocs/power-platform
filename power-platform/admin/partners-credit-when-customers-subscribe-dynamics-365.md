@@ -2,11 +2,11 @@
 title: "Partners: Get credit when your customers subscribe to Dynamics 365"
 description: "As a Microsoft Dynamics 365 partner, learn how to help your customers sign up for a trial subscription, customize it, and set yourself as the partner of record."
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/30/2017
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -17,8 +17,6 @@ search.app:
   - Flow
 ---
 # For partners: Get the credit when your customers subscribe
-
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 As a Dynamics 365 partner, you can help your customer sign up for a [!INCLUDE[pn_Online_Subscription](../includes/pn-online-subscription.md)]. You can customize and set up their organization for them, and reduce their effort to get started. After signing up, you can designate your company as the customer’s partner of record. As the partner of record, you can help to ensure that your customer has a great trial experience and start them down the path toward success with Dynamics 365 apps.  
   
@@ -94,7 +92,7 @@ Soon after you complete the sign up, you’ll be notified by email that the tria
   
 1. Sign in using the [!INCLUDE[pn_Windows_Live_ID](../includes/pn-windows-live-id.md)] that you used to sign up for the trial.  
   
-2. Follow the steps in [Create users and assign security roles](create-users-assign-online-security-roles.md) to create a user and assign the system administrator security role. This user will also function as the billing administrator.  
+2. Follow the steps in [Create users](create-users.md) to create a user and assign the system administrator security role. This user will also function as the billing administrator.  
   
 3. Make sure the new billing administrator has successfully signed in to your organization before transferring ownership.  
   
@@ -164,7 +162,7 @@ If your customer wants to disable your access to the subscription, they must com
   
 1. Sign in to the [!INCLUDE[pn_Online_Subscription](../includes/pn-online-subscription.md)] with the [!INCLUDE[pn_Windows_Live_ID](../includes/pn-windows-live-id.md)] you use for the billing administrator at your company.  
   
-2. Follow the steps in [Create users and assign security roles](create-users-assign-online-security-roles.md) to disable the user from the partner company.
+2. Follow the steps in [Create users](create-users.md) to disable the user from the partner company.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

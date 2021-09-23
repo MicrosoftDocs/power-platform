@@ -2,11 +2,11 @@
 title: "Manage email settings  | MicrosoftDocs"
 description: View and manage email settings for Microsoft Dataverse.
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/02/2020
+ms.subservice: admin
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -18,8 +18,6 @@ search.app:
 ---
 # Manage email settings
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 Use Email settings to adjust how model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, features appear and function.
 
 These settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Email** > **Email settings**.
@@ -28,7 +26,7 @@ Make sure you have the System Administrator or System Customizer security role o
 
 **Check your security role**
 
-- Follow the steps in [View your user profile](https://docs.microsoft.com/powerapps/user/view-your-user-profile).
+- Follow the steps in [View your user profile](/powerapps/user/view-your-user-profile).
 - Don’t have the correct permissions? Contact your system administrator.
 
 > [!div class="mx-tableFixed"]
@@ -64,7 +62,7 @@ Make sure you have the System Administrator or System Customizer security role o
   
 ### See also  
  [Track Outlook email by moving it to a tracked Exchange folder](track-outlook-email-by-moving-it-tracked-exchange-folder.md)   
- [Frequently asked questions about synchronizing records between model-driven apps in Dynamics 365 and Outlook](frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook.md)   
+ [Frequently asked questions about synchronizing records between model-driven apps in Dynamics 365 and Outlook](frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook.yml)   
  [Set up email through server-side synchronization](set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks.md)   
 
 

@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/10/2020
+ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -20,7 +21,7 @@ search.app:
 
 A Center of Excellence (CoE) in an organization drives innovation and improvement and brings together like-minded people with similar business goals to share knowledge and success, while at the same time providing standards, consistency, and governance to the organization.
 
-The Microsoft Power Platform CoE Starter Kit is a collection of components and tools that are designed to help you get started with developing a strategy for adopting and supporting Microsoft Power Platform, with a focus on Power Apps and Power Automate.
+The Microsoft Power Platform CoE Starter Kit is a collection of components and tools that are designed to help you get started with developing a strategy for adopting and supporting Microsoft Power Platform, with a focus on Power Apps, Power Automate, and Power Virtual Agents.
 
 :::row:::
    :::column span="":::
@@ -45,12 +46,12 @@ Watch a quick overview of the CoE Starter Kit.
 
 ## Related resources
 
-[Microsoft Power Platform admin guide](/power-platform/admin/admin-documentation)<br/>
-[Application lifecycle management (ALM) with Microsoft Power Platform](/power-platform/alm)<br/>
-[Power BI documentation](https://docs.microsoft.com/power-bi)<br/>
-[Power Apps documentation](https://docs.microsoft.com/powerapps)<br/>
-[Power Automate documentation](https://docs.microsoft.com/power-automate)<br/>
-[Power Virtual Agents documentation](https://docs.microsoft.com/power-virtual-agents)
+[Microsoft Power Platform admin guide](../../admin/admin-documentation.md)<br/>
+[Application lifecycle management (ALM) with Microsoft Power Platform](../../alm/index.yml)<br/>
+[Power BI documentation](/power-bi)<br/>
+[Power Apps documentation](/powerapps)<br/>
+[Power Automate documentation](/power-automate)<br/>
+[Power Virtual Agents documentation](/power-virtual-agents)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

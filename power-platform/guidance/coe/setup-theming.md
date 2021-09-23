@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/10/2020
+ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -28,7 +29,7 @@ The theming components solution contains assets that are relevant to makers in a
 
 Before you begin, review the [prerequisites](setup.md#prerequisites) for using the starter kit solution.
 
-- If you aren't already using the CoE Starter Kit, we recommend [creating a new environment](https://docs.microsoft.com/power-platform/admin/create-environment) for CoE solutions.
+- If you aren't already using the CoE Starter Kit, we recommend [creating a new environment](../../admin/create-environment.md) for CoE solutions.
 - If you are already using other CoE Starter Kit components, use the environment that you created as part of setting up the [core components](setup-core-components.md) for this solution.
 
 ## Prerequisites
@@ -39,12 +40,12 @@ Before you begin, review the [prerequisites](setup.md#prerequisites) for using t
     1. Go to your CoE environment, or the environment where you plan to import the solution.
     1. Select **Settings**.
 
-        ![Power Platform admin center - environments overview](media/theming-1.png "Power Platform admin center - environments overview")
+        ![Power Platform admin center - environments overview.](media/theming-1.png "Power Platform admin center - environments overview")
 
     1. Select **Product** > **Features**.
-        ![Power Platform admin center - Environment Product Settings](media/theming-2.png "Power Platform admin center - Environment Product Settings")
+        ![Power Platform admin center - Environment Product Settings.](media/theming-2.png "Power Platform admin center - Environment Product Settings")
     1. Make sure **Allow publishing of canvas apps with code components** is enabled.
-        ![Enable publishing of canvas apps with code components in the Power Platform admin center](media/theming-3.png "Enable publishing of canvas apps with code components in the Power Platform admin center")
+        ![Enable publishing of canvas apps with code components in the Power Platform admin center.](media/theming-3.png "Enable publishing of canvas apps with code components in the Power Platform admin center")
 
 ## Import the solution
 
@@ -56,7 +57,7 @@ Before you begin, review the [prerequisites](setup.md#prerequisites) for using t
 
 1. Go to your CoE environment. In the example in the following image, we're importing to the environment named **Contoso CoE**.
 
-     ![Power Apps maker portal environment selection](media/coe6.png "Power Apps maker portal environment selection")
+     ![Power Apps maker portal environment selection.](media/coe6.png "Power Apps maker portal environment selection")
 
 1. On the left pane, select **Solutions**.
 
@@ -64,7 +65,7 @@ Before you begin, review the [prerequisites](setup.md#prerequisites) for using t
 
 1. In the pop-up window, select **Choose File**.
 
-1. Select the Center Of Excellence theming solution from File Explorer (CenterOfExcellenceThemingComponents_*x_x_x_xx*_managed.zip).
+1. Select the Center Of Excellence theming solution from File Explorer (Theming_x_x_managed.zip).
 
 1. When the compressed (.zip) file has been loaded, select **Next**.
 

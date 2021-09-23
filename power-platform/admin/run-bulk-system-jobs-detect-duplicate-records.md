@@ -6,6 +6,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/09/2020
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -16,8 +17,6 @@ search.app:
   - Flow
 ---
 # Run bulk system jobs to detect duplicate records
-
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 To maintain the integrity of system data, you should check for duplicates regularly to make sure that users don't inadvertently create duplicate contacts, accounts, leads, or other types of records.  
   
@@ -45,7 +44,7 @@ To maintain the integrity of system data, you should check for duplicates regula
   
 7. To further limit the records searched, select **Select** and then enter the criteria you want.  
   
-   ![Screenshot of duplicate detection wizard, page 1](../admin/media/duplicate-detection-wizard.png "Screenshot of duplicate detection wizard, page 1")  
+   ![Screenshot of duplicate detection wizard, page 1.](../admin/media/duplicate-detection-wizard.png "Screenshot of duplicate detection wizard, page 1")  
   
 8. Select **Next**.  
   

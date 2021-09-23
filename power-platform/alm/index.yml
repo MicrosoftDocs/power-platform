@@ -6,6 +6,7 @@ summary: Learn how to implement application lifecycle management (ALM) using Mic
 metadata:
   title: Application lifecycle management (ALM) with Microsoft Power Platform
   description: "Learn how to implement application lifecycle management (ALM), including governance, development, and maintenance, using Microsoft Power Platform."
+  ms.subservice: alm
   ms.service: power-platform 
   ms.topic: landing-page
   author: Mattp123
@@ -76,6 +77,8 @@ landingContent:
             url: alm-for-developers.md
           - text: Microsoft Power Platform Build Tools for Azure DevOps
             url: devops-build-tools.md
+          - text: GitHub Actions for Microsoft Power Platform
+            url: devops-github-actions.md
           - text: Work with solution components
             url: component-framework.md
           - text: Solution and packaging tools
@@ -95,6 +98,6 @@ landingContent:
           - text: "Work with solutions"
             url: /powerapps/maker/common-data-service/solutions-overview
           - text: "Power Platform admin guide"
-            url: /power-platform/admin/admin-documentation
+            url: ../admin/admin-documentation.md
           - text: "Power Platform Center of Excellence (CoE) Kit"
-            url: /power-platform/guidance/coe/starter-kit-explained
+            url: ../guidance/coe/starter-kit-explained.md

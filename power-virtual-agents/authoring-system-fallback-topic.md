@@ -35,11 +35,11 @@ You customize these fallback behaviors by adding the system **Fallback** topic. 
 
 ## Add a system fallback topic
 
-1. On the top navigation pane, select **Settings** ![Settings icon](media/settings-icon.png "Settings icon"), and then go to the **System fallback** tab.
+1. On the top navigation pane, select **Settings** ![Settings icon.](media/settings-icon.png "Settings icon"), and then go to the **System fallback** tab.
 
 2. Select **"+Add"**.
 
-  ![Open System fallback settings](media/settings-system-fallback-pane.png "Open System fallback settings")
+  ![Open System fallback settings.](media/settings-system-fallback-pane.png "Open System fallback settings")
  
 A system fallback topic is added. The bot will go to this topic when it can't find an appropriate topic or doesn't understand the user's input. 
 
@@ -51,11 +51,11 @@ After you add the system fallback topic, you can open it by selecting **Go to fa
 
 You'll also see the **Fallback** topic listed under **System Topics** in the topic list. 
 
-![Fallback in the topic list](media/system-fallback-topic-list.png "Fallback in the topic list")
+![Fallback in the topic list.](media/system-fallback-topic-list.png "Fallback in the topic list")
 
 When you open this topic in the authoring canvas, you'll see that the default fallback topic contains two nodes: a **Message** node that rephrases the user input and an **Escalate** node that redirects to a live agent. 
 
-![Fallback topic default content](media/system-fallback-default-content.png "Fallback topic default content")
+![Fallback topic default content.](media/system-fallback-default-content.png "Fallback topic default content")
  
 You can customize this topic as with any other [system topic](authoring-create-edit-topics.md). You can also use the *UnrecognizedTriggerPhrase* variable that stores the user input the bot couldn't understand. For example, you can use the variable as an input and pass it to a [Power Automate flow](advanced-flow.md) or [Bot Framework Skill](advanced-use-skills.md).
 
@@ -66,7 +66,7 @@ You can customize this topic as with any other [system topic](authoring-create-e
 
 To reset the system fallback behavior and return it to its default behavior, go to **Settings** and then **System Fallback**. In the **System fallback** section, select **Delete** to remove the fallback topic. 
 
-![Delete the fallback topic](media/delete-system-fallback-topic.png "Delete the fallback topic")
+![Delete the fallback topic.](media/delete-system-fallback-topic.png "Delete the fallback topic")
  
 >[!WARNING]
 >This will remove the fallback topic and any changes you made to it. 

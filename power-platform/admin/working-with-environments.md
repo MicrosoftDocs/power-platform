@@ -1,12 +1,13 @@
 ---
-title: Working with environments | Microsoft Docs
-description: Switch environments and understand how the content on your pages change.
+title: "Working with environments in Microsoft Power Apps"
+description: "Learn how to change environments on powerapps.com, and how to create and view an app in the right environment. Power Apps opens in the default environment."
 author: jimholtz
 manager: kvivek
 ms.service: power-platform
 ms.topic: conceptual
 ms.custom: canvas
 ms.date: 06/30/2020
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - maker
@@ -27,12 +28,12 @@ With Power Apps, you can work in different environments and easily switch among 
 When you sign up and first sign in to Power Apps, it opens in a default environment, which you can identify in the upper-right corner of the page.
 
 > [!div class="mx-imgBorder"]
-> ![Default environment](media/env-dropdown.png)
+> ![Default environment.](media/env-dropdown.png)
 
 Everyone in your organization can access the default environment. You can create apps in this environment and share your apps with other users. You may also have access to other environments, whether [you create them](create-environment.md) or others do. You can switch environments by opening the environment list in the upper-right corner and then selecting a different environment. This example shows switching from **Microsoft** to **MyOwnEnv**.
 
 > [!div class="mx-imgBorder"]
-> ![Switch environment](media/switch-environment2.png)
+> ![Switch environment.](media/switch-environment2.png)
 
 After you switch environments, the new environment shows all the apps to which you have access in that environment.
 

@@ -2,13 +2,14 @@
 title: "Use service admin roles to manage your tenant   | MicrosoftDocs"
 description: Use service admin roles to manage your tenant 
 author: jimholtz
+ms.subservice: admin
 ms.author: jimholtz
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/20/2020
+ms.date: 07/26/2021
 search.audienceType: 
   - admin
 search.app:
@@ -19,31 +20,37 @@ search.app:
 ---
 # Use service admin roles to manage your tenant
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 To help you administer environments and settings for Microsoft Power Platform, you can assign users to manage at the tenant level without having to assign the more powerful Microsoft 365 global admin privilege.  
 
 There are two Power Platform related service admin roles you can assign to provide a high level of admin management.
+
+> [!NOTE]
+> These ([and other](database-security.md#predefined-security-roles)) admin roles only apply to [what you can do in the Power Platform admin center](admin-documentation.md#power-platform-admin-center-capabilities). For example, Dynamics 365 Finance and Dynamics 365 Supply Chain Management are currently not managed in the Power Platform admin center.
 
 ## Dynamics 365 administrator
 
 The Dynamics 365 admin can:
 
 - Sign in to and manage multiple environments. If an environment uses a security group, a service admin would need to be added to the security group in order to manage that environment. Not assigning to an in place security group essentially locks these admins out of any admin management. 
-- Perform admin functions in Microsoft Power Platform because they have the system admin role.  
+- Perform admin functions in Microsoft Power Platform because they have the System Administrator role.  
 
 ## Power Platform administrator 
   
  Users with the Power Platform admin role can:  
   
 - Sign in to and manage multiple environments. Power Platform admins **are not affected** by security group membership and can manage environments even if not added to an environment's security group.
-- Perform admin functions in Microsoft Power Platform because they have the system admin role.
+- Perform admin functions in Microsoft Power Platform because they have the System Administrator role.
   
 Both service admin roles cannot do functions restricted to the Microsoft 365 global admin such as manage user accounts, manage subscriptions, access settings for Microsoft 365 apps like Microsoft Exchange or Microsoft SharePoint.  
   
 ## Assign a service admin role to a user
 
 Follow these steps to assign a service admin role.
+
+> [!NOTE]
+> When the Dynamics 365 administrator role is granted to a user in Azure Active Directory (Azure AD), they will get the System Administrator role in environments as well. When the Dynamics 365 administrator role is removed in Azure AD, user synchronization doesn't remove the System Administrator role. So, even though this user is no longer a Dynamics 365 administrator in Azure AD, they still remain a system administrator in the tenant and will be able to see all environments. We recommend manually removing the System Administrator role in all environments as soon as the role is removed from Azure AD.
+>
+> To opt-out of automatic license-based user roles, see [Opt-out of automatic license-based user roles management](opt-out-automatic-license.md).
 
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/) as a global admin.
 
@@ -57,6 +64,8 @@ Follow these steps to assign a service admin role.
   
 6. Select **Save changes**.
 
+> [!NOTE]
+> If you are using the [Azure AD Privileged Identity Management (PIM)](/azure/active-directory/privileged-identity-management/pim-configure#what-does-it-do) time-based role activation to manage your service admin roles, the service administrator permission is NOT removed from the Dataverse environment when the time-based role activation expires.  
 ## Service administrator permission matrix
 
 The following matrix shows what management is possible with the various service admin roles compared to the Microsoft 365 global admin role.
@@ -102,7 +111,7 @@ The following matrix shows what management is possible with the various service 
 
 ### See also  
 [Environments overview](environments-overview.md)<br />
-[What is Power BI administration?](https://docs.microsoft.com/power-bi/service-admin-administering-power-bi-in-your-organization)
+[What is Power BI administration?](/power-bi/service-admin-administering-power-bi-in-your-organization)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

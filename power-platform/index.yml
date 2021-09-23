@@ -12,7 +12,7 @@ metadata:
   ms.topic: hub-page # Required
   author: KumarVivek #Required; your GitHub user alias, with correct capitalization.
   ms.author: kvivek #Required; microsoft alias of author; optional team alias.
-  ms.date: 09/11/2020 #Required; mm/dd/yyyy format.
+  ms.date: 07/06/2021 #Required; mm/dd/yyyy format.
   hide_bc: false
 
 highlightedContent:
@@ -24,7 +24,7 @@ highlightedContent:
     # Card
     - title: What's new in Microsoft Power Platform?
       itemType: whats-new
-      url: https://docs.microsoft.com/dynamics365/release-plans/
+      url: /dynamics365/release-plans/
 
     # Card
     - title: Microsoft Power Platform videos
@@ -34,17 +34,22 @@ highlightedContent:
     # Card
     - title: Microsoft Power Platform training on Microsoft Learn
       itemType: learn
-      url: https://docs.microsoft.com/learn/powerplatform/
+      url: /learn/powerplatform/
+      
+    # Card
+    - title: Microsoft Power Platform In a Day workshops
+      itemType: get-started
+      url: https://aka.ms/PowerPlatformIAD
 
 conceptualContent:
   # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
     - title: Power BI
       links:
-      - url: https://docs.microsoft.com/power-bi/
+      - url: /power-bi/
         itemType: overview
         text: Documentation
-      - url: https://docs.microsoft.com/learn/browse/?products=power-bi
+      - url: /learn/powerplatform/power-bi
         itemType: learn
         text: Training on Microsoft Learn
       - url: https://www.youtube.com/user/mspowerbi
@@ -52,10 +57,10 @@ conceptualContent:
         text: Videos            
     - title: Power Apps
       links:
-      - url: https://docs.microsoft.com/powerapps
+      - url: /powerapps
         itemType: overview
         text: Documentation
-      - url: https://docs.microsoft.com/learn/browse/?products=power-apps
+      - url: /learn/powerplatform/power-apps
         itemType: learn
         text: Training on Microsoft Learn
       - url: https://www.youtube.com/channel/UCGfWR2ekfRFckLjev6eQYLg/
@@ -63,10 +68,10 @@ conceptualContent:
         text: Videos
     - title: Power Automate
       links:
-      - url: https://docs.microsoft.com/power-automate/
+      - url: /power-automate/
         itemType: overview
         text: Documentation
-      - url: https://docs.microsoft.com/learn/browse/?products=power-automate
+      - url: /learn/powerplatform/power-automate
         itemType: learn
         text: Training on Microsoft Learn
       - url: https://www.youtube.com/channel/UCG98S4lL7nwlN8dxSF322bA
@@ -74,10 +79,10 @@ conceptualContent:
         text: Videos
     - title: Power Virtual Agents
       links:
-      - url: https://docs.microsoft.com/power-virtual-agents/
+      - url: /power-virtual-agents/
         itemType: overview
         text: Documentation
-      - url: https://docs.microsoft.com/learn/browse/?expanded=power-platform&products=power-virtual-agents
+      - url: /learn/browse/?expanded=power-platform&products=power-virtual-agents
         itemType: learn
         text: Training on Microsoft Learn
       - url: https://www.youtube.com/channel/UCn8PsBlVsGUt8J3tZCKsMPA
@@ -85,29 +90,29 @@ conceptualContent:
         text: Videos
     - title: Administer and manage Microsoft Power Platform
       links:
-      - url: /power-platform/admin/admin-documentation
+      - url: ./admin/admin-documentation.md
         itemType: overview
         text: Admin guide      
-      - url: /power-platform/admin/pricing-billing-skus
+      - url: ./admin/pricing-billing-skus.md
         itemType: overview
         text: Licensing
-      - url: /power-platform/alm
+      - url: ./alm/index.yml
         itemType: overview
         text: Application lifecycle management (ALM) guide
     - title: Best practices guidance
       links:
-      - url: /power-platform/guidance/adoption/methodology
+      - url: ./guidance/adoption/methodology.md
         itemType: overview
         text: Adoption best practices
-      - url: /power-platform/guidance/coe/starter-kit
+      - url: ./guidance/coe/starter-kit.md
         itemType: overview
         text: Center of Excellence (CoE) Starter kit
-      - url: https://www.youtube.com/playlist?list=PLi9EhCY4z99W2QOTgbwhFZEjpqc8YZDVH
-        itemType: video
-        text: "Videos: Power Apps and Power Automate Architecture Series"
+      - url: ./guidance/architecture/real-world-examples/overview.md
+        itemType: overview
+        text: Real-world architecture examples
     - title: Introducing Microsoft Power Fx
       links:      
-      - url: /power-platform/power-fx/overview
+      - url: ./power-fx/overview.md
         itemType: overview
         text: What is Microsoft Power Fx?
       - url: https://github.com/microsoft/power-fx
@@ -122,18 +127,18 @@ additionalContent:
       # Card
       - title: Microsoft Dataverse
         summary: "Powerful data service and app platform to quickly build enterprise-grade apps with automated business processes"
-        url: https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro
+        url: /powerapps/maker/common-data-service/data-platform-intro
       # Card
       - title: AI Builder
         summary: "Enhance your apps and business processes with AI that’s easy to build and configure"
-        url: https://docs.microsoft.com/ai-builder
+        url: /ai-builder
       # Card
       - title: Common Data Model
         summary: "Unify data across all your business processes and enable interoperability among apps"
-        url: https://docs.microsoft.com/common-data-model/
+        url: /common-data-model/
       - title: Connectors
         summary: "Connect to hundreds of data sources using a library of connectors"
-        url: https://docs.microsoft.com/connectors/
+        url: /connectors/
   - title: See also
     items:
       # Card
@@ -143,4 +148,4 @@ additionalContent:
       # Card
       - title: Microsoft Azure
         summary: "Ever-expanding set of cloud computing services to help your organization meet it's business challenges"
-        url: https://docs.microsoft.com/azure
+        url: /azure

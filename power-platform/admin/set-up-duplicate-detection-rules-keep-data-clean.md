@@ -6,6 +6,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/09/2020
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -16,8 +17,6 @@ search.app:
   - Flow
 ---
 # Set up duplicate detection rules to keep your data clean
-
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 To maintain the integrity of your data, it's a good idea to have rules in place to reduce duplicate records in the system. The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), include default duplicate detection rules for accounts, contacts, and leads, but not for other types of records. If you want the system to detect duplicates for other record types, you'll need to create a new rule.  
   
@@ -74,7 +73,7 @@ To maintain the integrity of your data, it's a good idea to have rules in place 
   
     The number of criteria that you can select is limited by the number of characters that can be stored in the matchcode for the record. As you add criteria, watch the **Current matchcode length** value shown at the bottom of the criteria list.  
   
-   ![Example duplicate detection rule](../admin/media/cc-duplicate-detection-rule-cc-duplicate-detection-rule.PNG "Example duplicate detection rule")  
+   ![Example duplicate detection rule.](../admin/media/cc-duplicate-detection-rule-cc-duplicate-detection-rule.PNG "Example duplicate detection rule")  
   
 6. When you're finished adding criteria, choose **Save and Close**.  
   
@@ -89,8 +88,8 @@ To maintain the integrity of your data, it's a good idea to have rules in place 
 ### See also  
  [Turn duplicate detection rules on or off for the whole organization](../admin/turn-duplicate-detection-rules-off-whole-organization.md)<br />
  [Run bulk system jobs to detect duplicate records](../admin/run-bulk-system-jobs-detect-duplicate-records.md)<br />
- [Merge duplicate records for accounts, contacts, or leads](https://docs.microsoft.com/powerapps/user/merge-duplicate-records)<br />
- [Developer's Guide: Duplicate Rule entities](https://docs.microsoft.com/powerapps/developer/common-data-service/duplicaterule-entities)
+ [Merge duplicate records for accounts, contacts, or leads](/powerapps/user/merge-duplicate-records)<br />
+ [Developer's Guide: Duplicate Rule entities](/powerapps/developer/common-data-service/duplicaterule-entities)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

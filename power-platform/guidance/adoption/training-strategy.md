@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/11/2020
+ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -24,9 +25,9 @@ Many training resources are available, from the [training days](in-a-day.md) alr
 
 Check out:
 
-- [Microsoft Learn content for Microsoft Power Platform](https://docs.microsoft.com/learn/powerplatform/)
-- [Microsoft Power Platform Fundamentals (Certification)](https://docs.microsoft.com/learn/certifications/power-platform-fundamentals)
-- [Microsoft Power Platform documentation](https://docs.microsoft.com/power-platform)
+- [Microsoft Learn content for Microsoft Power Platform](/learn/powerplatform/)
+- [Microsoft Power Platform Fundamentals (Certification)](/learn/certifications/power-platform-fundamentals)
+- [Microsoft Power Platform documentation](/power-platform)
 - [Business Applications communities](https://powerusers.microsoft.com)
 - [Find a local user group](https://www.powerappsug.com/home)
 

@@ -1,6 +1,36 @@
 {
   "redirections": [
     {
+      "source_path": "power-platform/admin/enable-teams-integration.md",
+      "redirect_url": "/dynamics365/teams-integration/teams-install-app",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/recover-from-exchange-server-failure.md",
+      "redirect_url": "monitor-email-processing-errors",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/error-logging-server-side-synchronization.md",
+      "redirect_url": "troubleshooting-monitoring-server-side-synchronization",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/alm/online-management-api.md",
+      "redirect_url": "/powerapps/developer/data-platform/online-management-api/overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/create-users-assign-online-security-roles.md",
+      "redirect_url": "create-users",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/wp-application-lifecycle-management.md",
+      "redirect_url": "../alm/index",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "power-platform/admin/internet-url-united-kingdom.md",
       "redirect_url": "online-requirements#internet-accessible-urls-required",
       "redirect_document_id": "false"
@@ -62,57 +92,57 @@
     },
     {
       "source_path": "power-platform/important-changes-coming.md#service-scheduling-in-dynamics-365-customer-service-is-deprecated",
-      "redirect_url": "https://docs.microsoft.com/dynamics365/customer-service/deprecations-customer-service#service-scheduling-in-dynamics-365-customer-service-is-deprecated",
+      "redirect_url": "/dynamics365/customer-service/deprecations-customer-service#service-scheduling-in-dynamics-365-customer-service-is-deprecated",
       "redirect_document_id": "false"
     },
     {
       "source_path": "power-platform/important-changes-coming.md#contracts-contract-line-items-and-contract-templates-entities-are-deprecated",
-      "redirect_url": "https://docs.microsoft.com/dynamics365/customer-service/deprecations-customer-service#contracts-contract-line-items-and-contract-templates-entities-are-deprecated",
+      "redirect_url": "/dynamics365/customer-service/deprecations-customer-service#contracts-contract-line-items-and-contract-templates-entities-are-deprecated",
       "redirect_document_id": "false"
     },
     {
       "source_path": "power-platform/important-changes-coming.md#standard-slas-in-dynamics-365-customer-service-are-deprecated",
-      "redirect_url": "https://docs.microsoft.com/dynamics365/customer-service/deprecations-customer-service#standard-slas-in-dynamics-365-customer-service-are-deprecated",
+      "redirect_url": "/dynamics365/customer-service/deprecations-customer-service#standard-slas-in-dynamics-365-customer-service-are-deprecated",
       "redirect_document_id": "false"
     },
     {
       "source_path": "power-platform/admin/embed-app-teams.md",
-      "redirect_url": "https://docs.microsoft.com/powerapps/teams/overview",
+      "redirect_url": "/powerapps/teams/overview",
       "redirect_document_id": "false"
     },
     {
       "source_path": "power-platform/admin/wp-connectors.md",
-      "redirect_url": "https://docs.microsoft.com/powerapps/maker/canvas-apps/connections-list",
+      "redirect_url": "/powerapps/maker/canvas-apps/connections-list",
       "redirect_document_id": "false"
     },
     {
       "source_path": "power-platform/admin/wp-cds-for-apps.md",
-      "redirect_url": "https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro",
+      "redirect_url": "/powerapps/maker/common-data-service/data-platform-intro",
       "redirect_document_id": "false"
     },
     {
       "source_path": "power-platform/admin/wp-types-powerapps.md",
-      "redirect_url": "https://docs.microsoft.com/powerapps/maker/",
+      "redirect_url": "/powerapps/maker/",
       "redirect_document_id": "false"
     },
     {
       "source_path": "power-platform/admin/wp-solution-packages.md",
-      "redirect_url": "https://docs.microsoft.com/powerapps/powerapps-overview",
+      "redirect_url": "/powerapps/powerapps-overview",
       "redirect_document_id": "false"
     },
     {
       "source_path": "power-platform/admin/wp-about-flows.md",
-      "redirect_url": "https://docs.microsoft.com/power-automate/getting-started",
+      "redirect_url": "/power-automate/getting-started",
       "redirect_document_id": "false"
     },
     {
       "source_path": "power-platform/admin/wp-environments.md",
-      "redirect_url": "https://docs.microsoft.com/power-platform/admin/environments-overview",
+      "redirect_url": "/power-platform/admin/environments-overview",
       "redirect_document_id": "false"
     },
     {
       "source_path": "power-platform/alm/environment-and-tenant-migration.md",
-      "redirect_url": "https://docs.microsoft.com/powerapps/maker/common-data-service/export-solutions",
+      "redirect_url": "/powerapps/maker/common-data-service/export-solutions",
       "redirect_document_id": "false"
     },
     {
@@ -122,7 +152,7 @@
     },
     {
       "source_path": "power-platform/admin/wp-powerapps-platform-overview.md",
-      "redirect_url": "https://docs.microsoft.com/powerapps/powerapps-overview",
+      "redirect_url": "/powerapps/powerapps-overview",
       "redirect_document_id": "false"
     },
     {
@@ -272,7 +302,7 @@
     },
     {
       "source_path": "power-platform/admin/synchronize-user-information-active-directory.md",
-      "redirect_url": "https://docs.microsoft.com/dynamics365/customerengagement/on-premises/admin/synchronize-user-information-active-directory",
+      "redirect_url": "/dynamics365/customerengagement/on-premises/admin/synchronize-user-information-active-directory",
       "redirect_document_id": false
     },
     {

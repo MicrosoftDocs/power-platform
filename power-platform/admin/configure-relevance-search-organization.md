@@ -5,7 +5,8 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/08/2021
+ms.date: 09/15/2021
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -17,15 +18,16 @@ search.app:
 ---
 # Configure Relevance Search to improve search results and performance 
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
 <!-- legacy procedure -->
 
 Relevance Search delivers fast and comprehensive search results in a single list, sorted by relevance. As an administrator or customizer, you'll be able to enable and configure Relevance Search as described below. Many of the configuration steps use the same user interface as the Quick Find configuration.
 
-Relevance Search is available in addition to single-entity Quick Find on the entity grid, and as an alternative to multi-entity Quick Find (also called Categorized Search), which is accessible from the navigation bar.
+Relevance Search is available in addition to single-entity Quick Find on the entity grid, and as an alternative to multi-entity Quick Find (also called Categorized Search), which is accessible from the navigation bar. When Relevance Search is turned on, it becomes your default and only global search experience for all of your model-driven apps. Relevance Search searches across all tables that your administrator has configured for Relevance Search and that are included in your model-driven apps. You won't be able to switch to [quick find search also known as categorized search](/powerapps/user/quick-find). 
 
 Changes made to the Relevance Search configuration or to the searchable data may take up to 15 minutes to appear in the search service. It may take up to an hour or more to complete a full sync for average size organizations, and a couple of days for very large size organizations.
+
+> [!NOTE]
+> We're updating some terminology in Dataverse to be more intuitive and make its usage more productive. The terminology updates are listed in [Terminology Updates](/powerapps/maker/data-platform/data-platform-intro#terminology-updates). We will make these changes as we update the user interface.
 
 ## What is Relevance Search?
 
@@ -41,11 +43,11 @@ Relevance Search brings the following benefits:
 
 - Includes the ability to search documents found in Notes and Attachments on Emails and Appointments 
 
-For more information about Relevance Search, see: [Using relevance search to search for records](https://docs.microsoft.com/powerapps/user/relevance-search).
+For more information about Relevance Search, see: [Using relevance search to search for records](/powerapps/user/relevance-search).
 
 Relevance Search is available in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation) that have installed version 9.0. It is not available for Customer Engagement (on-premises) organizations. Full-text Quick Find is available for Customer Engagement (on-premises) organizations, starting with Dynamics CRM 2015 Update Rollup 1. Quick Find is available for customer engagement apps organizations and Customer Engagement (on-premises) organizations.
 
-For more detailed comparison of the searches available in Microsoft Dataverse, see: [Compare search options in Dataverse](https://docs.microsoft.com/powerapps/user/search).
+For more detailed comparison of the searches available in Microsoft Dataverse, see: [Compare search options in Dataverse](/powerapps/user/search).
 
 ### Language support
 
@@ -53,53 +55,25 @@ All searchable fields in Relevance Search  are processed in the language most cl
 
 ## Enable Relevance Search
 
-Relevance Search is an opt-in feature, set to off by default. Enabling Relevance Search makes this search option available to all members of your organization. Relevance Search does not support lifecycle operations (create, delete, backup, recover, copy, reset, and so on). In the event of such an operation, re-enable Relevance Search.
+Relevance Search is an opt-in feature, set to **Off** by default. Enabling Relevance Search makes this search option available to all members of your organization. All of your apps will have the global search experience with the search bar in the header for all model-driven apps in your environment. Individual users won't be able to switch to [categorized search](/powerapps/user/quick-find).
+
+Relevance Search doesn't support lifecycle operations (create, delete, backup, recover, copy, reset, and so on). In the event of such an operation, re-enable Relevance Search.
 
 To enable Relevance Search, do the following:
 
-1.	In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.
+1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.
 
-2.	Select **Settings** > **Product** > **Features**.
+2. Select **Settings** > **Product** > **Features**.
 
-3.	Under **Search**, set **Relevance Search** to **On**.
+3. Under **Search**, set **Relevance Search** to **On**.
 
-4.	Select **Save**.
+4. Select **Save**.
 
-## Enable the new Relevance Search experience
 
-The new search experience is available as a feature setting in the Power Platform admin Center. It combines the strength of Relevance Search as a service, with a user interface that is intuitive, familiar, and easy to use. When the Use new search experience setting is turned on, it will enable the new experience to all the apps in the environment.
-
-> [!NOTE]
-> The **Use new search experience feature** setting is only available for environments where Relevance Search is already turned on. For environments where Relevance Search has never been not turned on, the setting **Use new search experience** will not be shown and the new experience is turned on by default.
-> 
-> If you opt in to early access for 2021 Release Wave 1 updates and Relevance Search is enabled then the new Relevance Search experience is turned on for all users. Users won't have the option to use categorized search anymore. For more information, see [Opt in to early access updates](opt-in-early-access-updates.md).
-
-To enable the new Relevance Search experience:
-
-1.	In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.
-
-2.	Select **Settings** > **Product** > **Features**.
-
-3.	Under **Search**, set **Use new search experience** to **On**.
-
-   > [!div class="mx-imgBorder"] 
-   > ![New Relevance Search experience](media/admin-enable-search.jpg "New Relevance Search experience")
-
-4.	Select **Save**.
-
-For information on using the new Relevance Search experience, see [Use the new Relevance Search experience](https://docs.microsoft.com/powerapps/user/relevance-search#use-the-new-relevance-search-experience).
-
-> [!TIP]
-> We are addressing an issue that makes the feature **Use new search experience** not show up in environments that were created from another environment as a copy. Please try the following steps to mitigate the issue.
-> 
-> 1. Turn **Relevance Search** off.
-> 2. Wait approximately 5 to 10 minutes.
-> 3. Turn **Relevance Search** on. 
-
-## Select entities for Relevance Search  
+## Select entities for Relevance Search 
  To configure Relevance Search, use the **Configure Relevance Search** selection on the task bar, as shown here.  
 
- ![Configure Relevance Search](../admin/media/relevance-search-configure-search.png "Configure Relevance Search")  
+ ![Configure Relevance Search.](../admin/media/relevance-search-configure-search.png "Configure Relevance Search")  
 
  There is no limit on how many entities you can include in the Relevance Search results. However, there is a limit on the total number of fields that can be enabled in Relevance Search. The maximum is 1000 searchable fields for an organization. Out of these 1000 fields, up to 50 fields are required by the Relevance Search system, so you can configure up to 950 searchable fields in Relevance Search. When you select an entity to include in the search results, you'll notice a number in parentheses next to the entity name. The number indicates how many fields each entity uses in the Relevance Search index. Some fields, such as **Primary Name** and **ID**, are shared by multiple entities and don't count toward the total. Additionally, some field types use more than one field in the Relevance Search index as indicated in this table.  
 
@@ -119,11 +93,11 @@ For information on using the new Relevance Search experience, see [Use the new R
 
 2. Select **Customize the System**.  
 
-3. Under **Components**, expand **Entities**, and then select **Configure Relevance Search**.  
+3. Under **Components**, select **Entities**, and then select **Configure Relevance Search**.  
 
 4. The **Select Entities** dialog box opens. Select **Add** to select the entities for the search results. When you're done, select **OK**.  
 
-   ![Relevance Search entity selection](../admin/media/relevance-search-select-entities.png "Relevance Search entity selection")  
+   ![Relevance Search entity selection.](../admin/media/relevance-search-select-entities.png "Relevance Search entity selection")  
 
 5. Select **Publish All Customizations** for your changes to take effect.  
 
@@ -145,6 +119,8 @@ By default, some out-of-the-box system entities are included in Relevance Search
 > 4. statuscode (Label of optionset)
 > 5. name (Primary name field of any entity. This may or may not be the same as the logical name (fullname, subject etc.) of the entity)
 > If a common field is added to any entity for Relevance Search, search will be performed for that common field across all entities. However, once you choose a specific entity through the Record Type facet, Relevance Search will follow the settings you have defined for that specific entity through Quick Find View.
+>
+> Updates to calculated fields and lookups are not automatically synced in Relevance Search. Data is refreshed whenever a field that is configured for Relevance Search is updated in a record.
 
  You can use the **Quick Find** view to define which fields appear as facets when users search by using Relevance Search.  All **View Columns** with data types other than Single Line of Text and Multiple Lines of Text are marked as facetable and filterable in the index. By default, the first four facetable fields in the **Quick Find** view for the selected entity are displayed as facets when users search by using Relevance Search. At any time, you can only have four fields selected as facets.  
 
@@ -154,13 +130,13 @@ By default, some out-of-the-box system entities are included in Relevance Search
 
 3. Under **Components**, expand **Entities**, and then expand the entity you want.  
 
-4. In the navigation tree, click **View**. Double-click **Quick Find View**. The following illustration shows the **Quick Find** view for the `Account` entity.  
+4. In the navigation tree, click **View**. In the **Type** column, double-click **Quick Find View**. The following illustration shows the **Quick Find** view for the `Account` entity.  
 
-   ![Quick Find view](../admin/media/relevance-search-quick-find-view-screen.png "Quick Find view")  
+   ![Quick Find view.](../admin/media/relevance-search-quick-find-view-screen.png "Quick Find view")  
 
 5. Select **Add Find Columns**. In the dialog box, select the fields you want to add to the search index. When done, select **OK**. In the following illustration, you see the                  `Account` entity fields added to the Relevance Search index.  
 
-   ![Quick Find field selection](../admin/media/relevance-search-quick-find-add-find-fields.png "Quick Find field selection")  
+   ![Quick Find field selection.](../admin/media/relevance-search-quick-find-add-find-fields.png "Quick Find field selection")  
 
 6. Repeat the steps for the **View Columns**.  
 
@@ -208,11 +184,57 @@ By default, some out-of-the-box system entities are included in Relevance Search
 
 4. On the menu bar, select **Managed Properties**. For **Can enable sync to external search index**, select **True** or **False** to set the property to the desired state. Select **Set** to exit, as shown here.  
 
-   ![Entity managed properties](../admin/media/relevance-search-managed-properties.PNG "Entity managed properties")  
+   ![Entity managed properties.](../admin/media/relevance-search-managed-properties.PNG "Entity managed properties")  
 
 5. Select **Publish** for your changes to take effect.  
 
-   If you want to change the **Can enable sync to external search index** property to **False**, you must first deselect the entity from Relevance search. If the entity is included in Relevance Search, you'll see the following message: "This entity is currently syncing to an external search index. You must remove the entity from the external search index before you can set the **Can Enable Sync to External Search Index** property to **False**." If **Can Enable Sync to External Search Index** is set to **False**, you'll see the following message when you try to include an entity in Relevance Search: "Entity can't be enabled for Relevance Search because of the configuration of its managed properties." For custom entities with particularly sensitive data, you may consider setting the **Can enable sync to external search index** property to **False**. Keep in mind, after you install the managed solution on the target system, you won't be able to change the value of the property because it's a managed property.  
+   If you want to change the **Can enable sync to external search index** property to **False**, you must first deselect the entity from Relevance Search. If the entity is included in Relevance Search, you'll see the following message: "This entity is currently syncing to an external search index. You must remove the entity from the external search index before you can set the **Can Enable Sync to External Search Index** property to **False**." If **Can Enable Sync to External Search Index** is set to **False**, you'll see the following message when you try to include an entity in Relevance Search: "Entity can't be enabled for Relevance Search because of the configuration of its managed properties." For custom entities with particularly sensitive data, you may consider setting the **Can enable sync to external search index** property to **False**. Keep in mind, after you install the managed solution on the target system, you won't be able to change the value of the property because it's a managed property.  
+
+## Configure quick actions
+
+The new Relevance Search experience brings some of the most frequently used actions closer to search results, to help end users complete their tasks without having to navigate to the record page in model-driven apps. Quick actions are a small set of commands specific to a table. End users can see quick actions when they are interacting with search in model-driven apps running on a web browser. Some of the commonly used tables are configured to show a set of commands to help them complete their task without losing context.
+
+
+|Table  |Quick actions  |
+|---------|---------|
+|Account     | Assign, Share, Email a link        |
+|Contact     | Assign, Share, Email a link        |
+|Appointment     | Mark complete, Cancel, Set Regarding, Assign, Email a link        |
+|Task     | Mark complete, Cancel, Set Regarding, Assign, Email a link        |
+|Phone call     | Mark complete, Cancel, Set Regarding, Assign, Email a link        |
+|Email     | Cancel, Set Regarding, Email a link        |
+
+
+Quick actions are a subset of the table's homepage grid commands. For example, when you select an account in its homepage grid, the Account table's quick actions are derived from the set of commands at the top of the page. This is important to understand the customization options available to configure quick actions. You can use the ribbon’s **EnableRule** to hide or show quick actions for a table. To learn more about defining ribbon enable rules in Power Apps, see [Define ribbon enable rules](/powerapps/developer/model-driven-apps/define-ribbon-enable-rules).
+
+The following three new enable rules give you the flexibility to optimize quick actions:
+
+- **ShowOnQuickAction rule**
+  Use this rule to make a command appear only as a quick action.
+
+  ```XML
+  <CommandDefinition Id="new.contact.Command.Call">
+    <EnableRules>
+      <EnableRule Id="Mscrm.SelectionCountExactlyOne" />
+      <EnableRule Id="Mscrm.ShowOnQuickAction" />
+    </EnableRules>
+    <DisplayRules />
+    <Actions>
+      <JavaScriptFunction FunctionName="simplealert" />
+    </Actions>
+  </CommandDefinition>
+  ```
+
+- **ShowOnGridAndQuickAction rule**
+  Use this rule to make a command appear on the homepage grid as well as a quick action.
+
+- **ShowOnGrid rule**
+  Use this rule to make a command appear on the homepage grid only. You can use this command to hide an existing quick action.
+
+  > [!NOTE]
+  > Each table can have up to five quick actions. 
+  > 
+  > Quick actions currently show up only in the context of search - alongside suggestions and in the results page on the primary column. The same set of quick actions appears alongside suggestions and in the results page.
 
 ## Help improve Relevance Search results
 
@@ -229,12 +251,12 @@ Your organization’s queries and results are reviewed by people using secured c
 3. Under **Search**, set **Improve Relevance Search results** to **On**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Improve Relevance Search results](media/improve-relevance-search-results.png "Improve Relevance Search results")
+   > ![Improve Relevance Search results.](media/improve-relevance-search-results.png "Improve Relevance Search results")
 
 4.	Select **Save**.
 
 ### See also  
- [Use relevance search to search for records](https://docs.microsoft.com/powerapps/user/relevance-search) <br />
- [Use the new Relevance Search experience](https://docs.microsoft.com/powerapps/user/relevance-search#use-the-new-relevance-search-experience)
+ [Use relevance search to search for records](/powerapps/user/relevance-search) <br />
+ 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

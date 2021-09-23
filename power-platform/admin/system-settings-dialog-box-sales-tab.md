@@ -6,6 +6,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/11/2020
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -62,12 +63,12 @@ Use the settings on this page to configure system-level settings for the sales a
 
   
 ### See also  
- [Set up a product catalog: Walkthrough](https://docs.microsoft.com/dynamics365/sales-enterprise/set-up-product-catalog-walkthrough)   
- [Define product pricing with price lists and price list items](https://docs.microsoft.com/dynamics365/sales-enterprise/create-price-lists-price-list-items-define-pricing-products)   
- [Set up a discount list](https://docs.microsoft.com/dynamics365/sales-enterprise/set-up-discount-list)   
- [Set up product bundles to sell multiple items together](https://docs.microsoft.com/dynamics365/sales-enterprise/create-product-bundles-sell-multiple-items-together)   
- [Use properties to describe a product](https://docs.microsoft.com/dynamics365/sales-enterprise/use-properties-describe-product)  
- [Administrator and Sales Manager Guide](https://docs.microsoft.com/dynamics365/sales-enterprise/admin-guide)  
+ [Set up a product catalog: Walkthrough](/dynamics365/sales-enterprise/set-up-product-catalog-walkthrough)   
+ [Define product pricing with price lists and price list items](/dynamics365/sales-enterprise/create-price-lists-price-list-items-define-pricing-products)   
+ [Set up a discount list](/dynamics365/sales-enterprise/set-up-discount-list)   
+ [Set up product bundles to sell multiple items together](/dynamics365/sales-enterprise/create-product-bundles-sell-multiple-items-together)   
+ [Use properties to describe a product](/dynamics365/sales-enterprise/use-properties-describe-product)  
+ [Administrator and Sales Manager Guide](/dynamics365/sales-enterprise/admin-guide)  
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

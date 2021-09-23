@@ -24,8 +24,8 @@ This article covers how to use the Microsoft Bot Framework dispatcher tool to in
 ## Prerequisites
 
   * Bot built using [Microsoft Bot Framework SDK v4](https://github.com/microsoft/botframework)
-  * Understanding of [Microsoft Bot Framework's dispatch tool](https://docs.microsoft.com/azure/bot-service/bot-builder-tutorial-dispatch?view=azure-bot-service-4.0&tabs=csaddref%2Ccsbotconfig&preserve-view=true)
-  * Understanding how to [test and debug bots using Bot Framework emulator](https://docs.microsoft.com/azure/bot-service/bot-service-debug-bot?view=azure-bot-service-4.0&preserve-view=true)
+  * Understanding of [Microsoft Bot Framework's dispatch tool](/azure/bot-service/bot-builder-tutorial-dispatch?preserve-view=true&tabs=csaddref%2ccsbotconfig&view=azure-bot-service-4.0)
+  * Understanding how to [test and debug bots using Bot Framework emulator](/azure/bot-service/bot-service-debug-bot?preserve-view=true&view=azure-bot-service-4.0)
   * [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 
 
@@ -52,7 +52,7 @@ You'll need to retrieve your Power Virtual Agents bot's content (topics and utte
 
 3.	Go to the **Network** tab.
     >[!div class="mx-imgBorder"]
-    >![DevTools in Microsoft Edge browser showing the Network tab](media/devtools-network-preview.png)
+    >![DevTools in Microsoft Edge browser showing the Network tab.](media/devtools-network-preview.png)
 
 4.	Filter and look for client requests.
 
@@ -66,7 +66,7 @@ You'll need to retrieve your Power Virtual Agents bot's content (topics and utte
 
 ### Retrieve topics and utterances from your bot
 
-  1.	Export `BotContent` and `Annotations` from Microsoft Dataverse. [Review how to export data](https://docs.microsoft.com/power-virtual-agents/gdpr-export).
+  1.	Export `BotContent` and `Annotations` from Microsoft Dataverse. [Review how to export data](./gdpr-export.md).
   
   2.  Download the zip file and unzip it to find two CSV files: `annotations.csv` and `msdynce_botcontents.csv`
   
@@ -91,7 +91,7 @@ You'll need to retrieve your Power Virtual Agents bot's content (topics and utte
 
 ## Train the dispatcher custom model with your Power Virtual Agents topics
 
-Train and recreate the dispatcher app and add your exported topics and utterances with your existing Cognitive Service intents (for example, LUIS and/or QnA maker) using the dispatch tool. For more information, [follow the guidance in the dispatch tool tutorial](https://docs.microsoft.com/azure/bot-service/bot-builder-tutorial-dispatch?view=azure-bot-service-4.0&tabs=cs&preserve-view=true).
+Train and recreate the dispatcher app and add your exported topics and utterances with your existing Cognitive Service intents (for example, LUIS and/or QnA maker) using the dispatch tool. For more information, [follow the guidance in the dispatch tool tutorial](/azure/bot-service/bot-builder-tutorial-dispatch?preserve-view=true&tabs=cs&view=azure-bot-service-4.0).
 
 1.  Install the dispatch tool using the NuGet package manager.
 
@@ -362,15 +362,15 @@ The following steps require you to add code that registers your new dispatch end
 
 You're ready to test your dispatcher to ensure seamless interaction between DynamicsBot and your other bots.
 
-1.  [Publish your bot to a demo website](https://docs.microsoft.com/power-virtual-agents/publication-connect-bot-to-web-channels).    
+1.  [Publish your bot to a demo website](./publication-connect-bot-to-web-channels.md).    
     >[!div class="mx-imgBorder"]
-    ![Deploy our bot](media/open-deploy.png)
+    ![Deploy our bot.](media/open-deploy.png)
   
 2.  Build (Ctrl + Shift + B) and run (F5) your dispatcher app.
   
 3.  Open the Bot Emulator where you add the name and endpoint to your bot.
     >[!div class="mx-imgBorder"]
-    ![Dialog to create new bot in the bot emulator](media/dispatch-bot-emulator.png)
+    ![Dialog to create new bot in the bot emulator.](media/dispatch-bot-emulator.png)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

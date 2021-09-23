@@ -4,7 +4,8 @@ description: Replicate data to Azure SQL Database using Data Export Service
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/11/2021
+ms.date: 08/16/2021
+ms.subservice: admin
 ms.author: sabinn
 author: sabinn-msft
 ms.reviewer: jimholtz
@@ -18,15 +19,15 @@ search.app:
 ---
 # Replicate data to Azure SQL Database using Data Export Service
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+> [!NOTE]
+> It is highly encouraged that you export your Dataverse data to Azure Synapse Analytics and/or Azure Data Lake Gen2 with **Azure Synapse Link for Dataverse**. More information: [Accelerate time to insight with Azure Synapse Link for Dataverse](https://cloudblogs.microsoft.com/powerplatform/2021/05/26/accelerate-time-to-insight-with-azure-synapse-link-for-dataverse/)
 
 The [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] is an add-on service made available on [!INCLUDE[pn_microsoft_appsource](../includes/pn-microsoft-appsource.md)] that adds the ability to replicate data from Microsoft Dataverse database to a [!INCLUDE[pn_ms_azure_sql_database](../includes/pn-ms-azure-sql-database.md)] store in a customer-owned [!INCLUDE[pn_Windows_Azure](../includes/pn-windows-azure.md)] subscription. The supported target destinations are [!INCLUDE[pn_ms_azure_sql_database](../includes/pn-ms-azure-sql-database.md)] and [!INCLUDE[pn_SQL_Server_short](../includes/pn-sql-server-short.md)] on [!INCLUDE[pn_Windows_Azure](../includes/pn-windows-azure.md)] virtual machines.  The [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] intelligently synchronizes the entire data initially and thereafter synchronizes on a continuous basis as changes occur (delta changes) in the system. This helps enable several analytics and reporting scenarios on top of data with [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] data and analytics services, and opens up new possibilities for customers and partners to build custom solutions.  
-  
+
 > [!NOTE]
-> - You can use the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] with customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation). <br />
-> - Similarly, you can export your Dataverse data to Azure Data Lake Gen2. You can link your Dataverse environment to a data lake in your Azure subscription, select standard or custom entities, and then export data to the data lake. All data or metadata changes (initial and incremental) in Dataverse are automatically pushed to Azure Data Lake Gen2 without any additional action. More information: [Exporting Dataverse data to Azure Data Lake](https://powerapps.microsoft.com/blog/exporting-cds-data-to-azure-data-lake-preview/) 
+> You can use the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] with customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation).
   
-For information about the programmatic interface for managing configuration and administration of the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)], see [Data Export Service](https://docs.microsoft.com/powerapps/developer/common-data-service/data-export-service) in the developer guide.
+For information about the programmatic interface for managing configuration and administration of the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)], see [Data Export Service](/powerapps/developer/common-data-service/data-export-service) in the developer guide.
   
 <a name="Prereq_DES"></a>   
 ## Prerequisites for using [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)]  
@@ -40,7 +41,7 @@ For information about the programmatic interface for managing configuration and 
   
    Alternatively, you can turn on **Allow access to Azure services** to allow all Azure services access.  
   
-   For [!INCLUDE[pn_SQL_Server_short](../includes/pn-sql-server-short.md)] on [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] VM, the "Connect to SQL Server over the Internet" option should be enabled. More information: [Azure: Connect to a SQL Server Virtual Machine on Azure](https://docs.microsoft.com/azure/azure-sql/virtual-machines/windows/ways-to-connect-to-sql)  
+   For [!INCLUDE[pn_SQL_Server_short](../includes/pn-sql-server-short.md)] on [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] VM, the "Connect to SQL Server over the Internet" option should be enabled. More information: [Azure: Connect to a SQL Server Virtual Machine on Azure](/azure/azure-sql/virtual-machines/windows/ways-to-connect-to-sql)  
 
    Additionally, configure your firewall rules to allow communication between Data Export Service and SQL Server.
   
@@ -163,7 +164,7 @@ For information about the programmatic interface for managing configuration and 
   
 - The [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] solution is installed in your environment.  
   
-- Maintain the [!INCLUDE[pn-sql](../includes/pn-sql.md)] Database connection string in the Key Vault and copy the Key Vault URL to provide in the Export Profile. More information: [Azure: Get started with Azure Key Vault](https://azure.microsoft.com/documentation/articles/key-vault-get-started/)  
+- Maintain the [!INCLUDE[pn-sql](../includes/pn-sql.md)] Database connection string in the Key Vault and copy the Key Vault URL to provide in the Export Profile. More information: [Azure: Get started with Azure Key Vault](/azure/key-vault/general/overview)  
   
 - The entities to be added to the Export Profile are enabled for change tracking. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Enable change tracking to control data synchronization](../admin/enable-change-tracking-control-data-synchronization.md)  
   
@@ -196,19 +197,19 @@ For information about the programmatic interface for managing configuration and 
   
    - **Write Delete Log**. Optional setting for logging deleted records.  
   
-   ![Properties tab in Create Export Profile dialog box](../admin/media/data-export-profile-1.PNG "Properties tab in Create Export Profile dialog box")  
+   ![Properties tab in Create Export Profile dialog box.](../admin/media/data-export-profile-1.PNG "Properties tab in Create Export Profile dialog box")  
   
 5. In the **Select Entities** step, select the entities that you want to export to the destination [!INCLUDE[pn-sql](../includes/pn-sql.md)] Database, and then click **Next**.  
   
-   ![Select Entities tab in Create Export Profile dialog box](../admin/media/data-export-profile-2.PNG "Select Entities tab in Create Export Profile dialog box")  
+   ![Select Entities tab in Create Export Profile dialog box.](../admin/media/data-export-profile-2.PNG "Select Entities tab in Create Export Profile dialog box")  
   
-6. In the **Select Relationships** step, you can synchronize  the M:N (many-to-many) [relationships](https://docs.microsoft.com/powerapps/maker/common-data-service/create-edit-entity-relationships) that exist with the entities you selected in the previous step. Click **Next**.  
+6. In the **Select Relationships** step, you can synchronize  the M:N (many-to-many) [relationships](/powerapps/maker/common-data-service/create-edit-entity-relationships) that exist with the entities you selected in the previous step. Click **Next**.  
   
-   ![Create Export Profile - Manage Relationships - Select Relationships](../admin/media/data-export-profile-3.PNG "Create Export Profile - Manage Relationships - Select Relationships")  
+   ![Create Export Profile - Manage Relationships - Select Relationships.](../admin/media/data-export-profile-3.PNG "Create Export Profile - Manage Relationships - Select Relationships")  
   
 7. In the **Summary** step, click **Create and Activate** to create the profile record and connect to the Key Vault, which begins the synchronization process. Otherwise, click **Create** to save the Export Profile and activate later.  
   
-   ![Summary tab in Create Export Profile dialog box](../admin/media/data-export-profile-4.PNG "Summary tab in Create Export Profile dialog box")  
+   ![Summary tab in Create Export Profile dialog box.](../admin/media/data-export-profile-4.PNG "Summary tab in Create Export Profile dialog box")  
   
 <a name="modify_export_profile"></a>   
 ## Modify an existing Export Profile  
@@ -218,15 +219,15 @@ For information about the programmatic interface for managing configuration and 
   
 2. In the All Data Export Profile view, select the Export Profile that you want to change.  
   
-   ![Select an Export Profile](../admin/media/data-export-select-profile.png "Select an Export Profile")  
+   ![Select an Export Profile.](../admin/media/data-export-select-profile.png "Select an Export Profile")  
   
 3. On the Actions toolbar, click **MANAGE ENTITIES** to add or remove entities for data export. To add or remove entity relationships, click **MANAGE RELATIONSHIPS**.  
   
-   ![Manage entities or entity relationships](../admin/media/dataexport-manage.PNG "Manage entities or entity relationships")  
+   ![Manage entities or entity relationships.](../admin/media/dataexport-manage.PNG "Manage entities or entity relationships")  
   
 4. Select the entities or entity relationships that you want to add or remove.  
   
-   ![Select the entities or entity relationships to add or remove](../admin/media/data-export-select-entities.PNG "Select the entities or entity relationships to add or remove")  
+   ![Select the entities or entity relationships to add or remove.](../admin/media/data-export-select-entities.PNG "Select the entities or entity relationships to add or remove")  
   
 5. Click **Update** to submit your changes to the Export Profile.  
   
@@ -255,7 +256,7 @@ For information about the programmatic interface for managing configuration and 
   
 1. View your export profiles to look for any that have record synchronization failures. You do this by viewing the data profiles in the Synchronization area or by opening a Export Profile , such as this profile that has a contact entity record synchronization failure.  
   
-   ![DataExport&#95;failed&#95;records&#95;exist](../admin/media/data-export-failed-records-exist.PNG "DataExport_failed_records_exist")  
+   ![DataExport&#95;failed&#95;records&#95;exist.](../admin/media/data-export-failed-records-exist.PNG "DataExport_failed_records_exist")  
   
 2. Examine the source of the synchronization failure and resolve it. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Error handling and monitoring](#error_handling)  
   
@@ -276,11 +277,11 @@ For information about the programmatic interface for managing configuration and 
   
    4. Click **Ok** upon successful resynchronization of the failed records on the confirmation dialog.  
   
-   ![Notification of a successful resynchronization](../admin/media/data-export-resync-success.PNG "Notification of a successful resynchronization")  
+   ![Notification of a successful resynchronization.](../admin/media/data-export-resync-success.PNG "Notification of a successful resynchronization")  
   
    5.  Verify that the Export Profile doesn't contain failed record notifications by opening the data export profile and viewing the **Failed Notifications** counter on the **PROPERTIES & OVERVIEW** tab, which should be **0**. Click **REFRESH** on the Export Profile toolbar to make sure the **Failed Notifications** value is current.  
   
-   ![Zero records failed  indication](../admin/media/data-export-failed-records-zero.PNG "Zero records failed  indication")  
+   ![Zero records failed  indication.](../admin/media/data-export-failed-records-zero.PNG "Zero records failed  indication")  
   
 4.  If the record synchronization failures persist after you've tried resynchronizing by following the previous steps, contact [Microsoft Customer Support Services](get-help-support.md).  
   
@@ -288,7 +289,7 @@ For information about the programmatic interface for managing configuration and 
 ## Error handling and monitoring  
  To view the synchronization status of an Export Profile, go to **Settings** > **Data Export** and open the Export Profile. On the **ENTITIES** tab, the synchronization status is displayed including a **Failed Records** column for records that could not be synchronized. For any failed records, a list of those records including the status reason can be downloaded by clicking **FAILED RECORDS** on the command bar.  
   
- ![Export Profile command bar - Failed Records button](../admin/media/data-export-command-bar.png "Export Profile command bar - Failed Records button")  
+ ![Export Profile command bar - Failed Records button.](../admin/media/data-export-command-bar.png "Export Profile command bar - Failed Records button")  
   
  In the Export Profile you can click **PROPERTIES & OVERVIEW** to display the properties of the profile. Click **RELATIONSHIPS** to view the relationships synchronization status.  
   
@@ -300,15 +301,15 @@ For information about the programmatic interface for managing configuration and 
   
 2. In the In the All Data Export Profile view, select the Export Profile that has failed notifications.  
   
-   ![Failed notifications](../admin/media/data-export-failed-notifications.PNG "Failed notifications")  
+   ![Failed notifications.](../admin/media/data-export-failed-notifications.PNG "Failed notifications")  
   
 3. On the Actions toolbar, click **FAILED RECORDS**.  
   
-   ![Failed records toolbar button](../admin/media/data-export-failed-records-toolbar.PNG "Failed records toolbar button")  
+   ![Failed records toolbar button.](../admin/media/data-export-failed-records-toolbar.PNG "Failed records toolbar button")  
   
 4. In the Download Failed Records dialog box, click **Copy Blob URL**, and then click **Ok**.  
   
-   ![Download failed records dialog box](../admin/media/dataexport-download-failed-records.PNG "Download failed records dialog box")  
+   ![Download failed records dialog box.](../admin/media/dataexport-download-failed-records.PNG "Download failed records dialog box")  
   
    > [!NOTE]
    >  The blob URL is valid for up to 24 hours. If the URL exceeds the 24 hour period, repeat the steps described earlier to generate a new blob URL.  
@@ -319,7 +320,7 @@ For information about the programmatic interface for managing configuration and 
   
 7. Paste the URL from your clipboard in to the **Connect to Azure Storage** box, and then click **Next**.  
   
-   ![Storage url](../admin/media/azure-store-url.png "Storage url")  
+   ![Storage url.](../admin/media/azure-store-url.png "Storage url")  
   
 8. On the Connection Summary page, click **Connect**.  
   
@@ -334,22 +335,22 @@ You can now download the failed records directly from within the Data Export Ser
 1. Identify the profile with failed records.
 
    > [!div class="mx-imgBorder"] 
-   > ![Data export profiles](media/des-profiles.png "Data export profiles")
+   > ![Data export profiles.](media/des-profiles.png "Data export profiles")
 
 2. Select the profile and select **Download Failed records (Preview)** from the top menu bar.
 
    > [!div class="mx-imgBorder"] 
-   > ![Download failed records (preview)](media/download-failed-records-preview.png "Download failed records (preview)")
+   > ![Download failed records (preview).](media/download-failed-records-preview.png "Download failed records (preview)")
 
 3. In the **Download Failed records** dialog box, you will see a sorted list of last 20 (max) blob files. Select the one you want to download, and then select **Ok**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Download failed records](media/download-failed-records.png "Download failed records")
+   > ![Download failed records.](media/download-failed-records.png "Download failed records")
 
 4. Once downloaded, open the file in a text editor of your choice (for example, Notepad) and view the details for failures.
 
    > [!div class="mx-imgBorder"] 
-   > ![Sample error log](media/sample-error-log.png "Sample error log")
+   > ![Sample error log.](media/sample-error-log.png "Sample error log")
 
 #### Failed record synchronization folder structure and log files  
  The Failed Records Azure Blob storage URL points to a location that has the following folder structure:  
@@ -386,17 +387,17 @@ The statement has been terminated.
 <a name="DES_best_practice"></a>   
 ## Best practices when using Azure SQL Database with Data Export  
   
-- To avoid synchronization errors due to resource throttling, we recommend that you have an [!INCLUDE[pn_Azure_SQL_Database_long](../includes/pn-azure-sql-database-long.md)] Premium P1 or better plan when you use the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)]. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Azure SQL Database resource limits](https://docs.microsoft.com/azure/sql-database/sql-database-resource-limits) and [SQL Database Pricing](https://azure.microsoft.com/pricing/details/sql-database/)  
+- To avoid synchronization errors due to resource throttling, we recommend that you have an [!INCLUDE[pn_Azure_SQL_Database_long](../includes/pn-azure-sql-database-long.md)] Premium P1 or better plan when you use the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)]. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Azure SQL Database resource limits](/azure/sql-database/sql-database-resource-limits) and [SQL Database Pricing](https://azure.microsoft.com/pricing/details/sql-database/)  
   
 - Set the [!INCLUDE[pn_Azure_SQL_Database_long](../includes/pn-azure-sql-database-long.md)] to use read committed snapshot isolation (RCSI) for workloads running concurrently on the destination database that execute long running read queries, such as reporting and ETL jobs. This reduces the occurrence of timeout errors that can occur with the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] due to read\write conflicts.  
 
-- To help improve query performance we recommend the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] database max degree of parallelism (MAXDOP) be set to 1. More information: [MSDN: Server Memory Options](https://msdn.microsoft.com/library/ms178067.aspx)
+- To help improve query performance we recommend the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] database max degree of parallelism (MAXDOP) be set to 1. More information: [MSDN: Server Memory Options](/sql/database-engine/configure-windows/server-memory-server-configuration-options)
 
-- Frequently assess the amount of fragmentation, and when necessary, rebuild the indexes in the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] database. More information: [Reorganize and Rebuild Indexes](https://docs.microsoft.com/sql/relational-databases/indexes/reorganize-and-rebuild-indexes?view=sql-server-2017)
+- Frequently assess the amount of fragmentation, and when necessary, rebuild the indexes in the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] database. More information: [Reorganize and Rebuild Indexes](/sql/relational-databases/indexes/reorganize-and-rebuild-indexes?view=sql-server-2017)
 
-- Periodically update database statistics on tables and indexed views in the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] database. More information: [Update Statistics](https://docs.microsoft.com/sql/relational-databases/statistics/update-statistics?view=sql-server-2017) 
+- Periodically update database statistics on tables and indexed views in the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] database. More information: [Update Statistics](/sql/relational-databases/statistics/update-statistics?view=sql-server-2017) 
 
-- Monitor the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] database's utilization. More information: [Perf monitoring](https://docs.microsoft.com/azure/sql-database/sql-database-single-database-monitor)
+- Monitor the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] database's utilization. More information: [Perf monitoring](/azure/sql-database/sql-database-single-database-monitor)
 
   
 ## About data synchronization latency
@@ -456,18 +457,18 @@ $tenantId = 'tenantId'
     # -------------------------------------------------------------------------------- #
 
 # Login to Azure account, select subscription and tenant Id
-connect-azaccount -Tenant $tenantId -Subscription $subscriptionId
+Connect-AzAccount -Tenant $tenantId -Subscription $subscriptionId
 
 # Create new resource group if not exists.
-$rgAvail = Get-AzureRmResourceGroup -Name $resourceGroupName -Location $location -ErrorAction SilentlyContinue
+$rgAvail = Get-AzResourceGroup -Name $resourceGroupName -Location $location -ErrorAction SilentlyContinue
 if(!$rgAvail){
-    New-AzureRmResourceGroup -Name $resourceGroupName -Location $location
+    New-AzResourceGroup -Name $resourceGroupName -Location $location
 }
 
 # Create new key vault if not exists.
-$kvAvail = Get-AzureRmKeyVault -VaultName $keyvaultName -ResourceGroupName $resourceGroupName -ErrorAction SilentlyContinue
+$kvAvail = Get-AzKeyVault -VaultName $keyvaultName -ResourceGroupName $resourceGroupName -ErrorAction SilentlyContinue
 if(!$kvAvail){
-    New-AzureRmKeyVault -VaultName $keyvaultName -ResourceGroupName $resourceGroupName -Location $location
+    New-AzKeyVault -VaultName $keyvaultName -ResourceGroupName $resourceGroupName -Location $location
     # Wait few seconds for DNS entry to propagate
     Start-Sleep -Seconds 15
 }
@@ -480,11 +481,11 @@ foreach ($orgId in $organizationIdList.Split(',')) {
 
 # Add or update a secret to key vault.
 $secretValue = ConvertTo-SecureString $connectionString -AsPlainText -Force
-$secret = Set-azKeyVaultSecret -VaultName $keyvaultName -Name $secretName -SecretValue $secretValue -Tags $secretTags
+$secret = Set-AzKeyVaultSecret -VaultName $keyvaultName -Name $secretName -SecretValue $secretValue -Tags $secretTags
 
 # Authorize application to access key vault.
 $servicePrincipal = 'b861dbcc-a7ef-4219-a005-0e4de4ea7dcf'
-set-azkeyvaultaccesspolicy -VaultName $keyvaultName -ServicePrincipalName $servicePrincipal -PermissionsToSecrets get
+Set-AzKeyVaultAccessPolicy -VaultName $keyvaultName -ServicePrincipalName $servicePrincipal -PermissionsToSecrets get
 
 # Display secret url.
 Write-Host "Connection key vault URL is "$secret.id.TrimEnd($secret.Version)""
@@ -583,7 +584,7 @@ EXEC SP_EXECUTESQL @sql;
 
 <a name="SQLDB_IP_addresses"></a>   
 ## Azure SQL database static IP addresses used by the Data Export Service  
- In [!INCLUDE[pn_Azure_SQL_Database_long](../includes/pn-azure-sql-database-long.md)], click **Set server firewall**, turn **Allow access to Azure services** to **OFF**, click **Add client IP**, and then add the IP addresses appropriate for the region of your Dynamics 365 environment. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Azure: Configure an Azure SQL Database server-level firewall rule using the Azure Porta](https://azure.microsoft.com/documentation/articles/sql-database-configure-firewall-settings/)l  
+ In [!INCLUDE[pn_Azure_SQL_Database_long](../includes/pn-azure-sql-database-long.md)], click **Set server firewall**, turn **Allow access to Azure services** to **OFF**, click **Add client IP**, and then add the IP addresses appropriate for the region of your Dynamics 365 environment. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Azure: Configure an Azure SQL Database server-level firewall rule using the Azure Porta](/azure/azure-sql/database/firewall-configure)l  
   
 |Region|IP address|  
 |------------|----------------|  
@@ -640,7 +641,7 @@ AND DL.VersionNumber > A.VersionNumber)
  
 ### Unable to create a row greater than the allowable maximum row size (8K)
 
-If your error logs show "Cannot create a row of size <size> which is greater than the allowable maximum row size of 8060", you are running into an issue where you are exceeding the maximum allowable row size limit. The Data Export Service does not support row size greater than maximum allowable row size of 8k. To mitigate this, you need to ensure that you honor the row size limits.
+If your error logs show "Cannot create a row of size (size) which is greater than the allowable maximum row size of 8060", you are running into an issue where you are exceeding the maximum allowable row size limit. The Data Export Service does not support row size greater than maximum allowable row size of 8k. To mitigate this, you need to ensure that you honor the row size limits.
 
 ### Length of string in source is longer than destination schema for ColumnName
 
@@ -654,9 +655,9 @@ Exporting attachments such as documentbody on *Annotation* table is not supporte
 [!INCLUDE[cc_privacy_data_export](../includes/cc-privacy-data-export.md)]
   
 ### See also  
- [Entity relationships overview](https://docs.microsoft.com/powerapps/maker/common-data-service/create-edit-entity-relationships)<br />
+ [Entity relationships overview](/powerapps/maker/common-data-service/create-edit-entity-relationships)<br />
  [AppSource: Data Export Service](https://appsource.microsoft.com/product/dynamics-365/mscrm.44f192ec-e387-436c-886c-879923d8a448)   <br />
- [Data Export Service](https://docs.microsoft.com/powerapps/developer/common-data-service/data-export-service) <br />
+ [Data Export Service](/powerapps/developer/common-data-service/data-export-service) <br />
  [Team Blog: Introduction to Data Export Service](https://blogs.msdn.microsoft.com/crm/2017/04/11/introduction-to-dynamics-365-data-export-service/)
 
 

@@ -3,6 +3,7 @@ title: "Package Deployer tool | Microsoft Docs"
 description: "Learn about migrating configuration data, solutions, and more from one environment to another."
 keywords: 
 author: mikkelsen2000
+ms.subservice: alm
 ms.author: pemikkel
 manager: kvivek
 ms.custom: ""
@@ -26,7 +27,7 @@ Package Deployer lets administrators deploy packages on Microsoft Dataverse inst
 - Custom code that can run before, while, or after the package is deployed to the Dataverse instance.  
 - HTML content specific to the package that can display at the beginning and end of the deployment process. This can be useful to provide a description of the solutions and files that are deployed in the package.  
 
-A Visual Studio 2015 template (available for download) is used to create packages. After creating a package, use the Package Deployer tool to deploy your package to a Dataverse instance.
+A Visual Studio 2015 or later template (available for download) is used to create packages. After creating a package, use the Package Deployer tool to deploy your package to a Dataverse instance.
 
 <a name="Prereq"></a>
  
@@ -34,7 +35,7 @@ A Visual Studio 2015 template (available for download) is used to create package
 
 - Ensure that you have all the solutions and files ready that you want to include in the package.  
 - Microsoft .NET Framework 4.6.2
-- [Visual Studio 2015](https://visualstudio.microsoft.com/vs/older-downloads/)
+- [Visual Studio 2015 or later version](https://visualstudio.microsoft.com/vs/older-downloads/)
 - [NuGet Package Manager](https://visualstudiogallery.msdn.microsoft.com/5d345edc-2e2d-4a9c-b73b-d53956dc458d) for Visual Studio 2015
 - Microsoft Dynamics CRM SDK Templates for Visual Studio that contains the package template. You can get it by downloading the [Microsoft Dynamics CRM SDK Templates](https://go.microsoft.com/fwlink/p/?LinkId=400925) and double-click the `CRMSDKTemplates.vsix` file to install the template in Visual Studio.  
 
@@ -64,7 +65,7 @@ A Visual Studio 2015 template (available for download) is used to create package
    3. Select **Dynamics 365 Package**.  
    4. Specify the name and location of the project, and click **OK**.  
 
-    ![New project for creating a custom package](./media/crm-sdkv6-packagedeployer-01.png)
+    ![New project for creating a custom package.](./media/crm-sdkv6-packagedeployer-01.png)
 
 <a name="Step2"></a>   
 
@@ -359,7 +360,7 @@ A Visual Studio 2015 template (available for download) is used to create package
       }  
       ```  
 
-       This lets the administrator use the command line or the [Import-CrmPackage](/powershell/module/microsoft.xrm.tooling.packagedeployment/import-crmpackage) cmdlet to specify whether to skip the safety checks while running the Package Deployer tool to import the package. More information: [Deploy packages using Package Deployer and Windows PowerShell](/power-platform/admin/deploy-packages-using-package-deployer-windows-powershell)  
+       This lets the administrator use the command line or the [Import-CrmPackage](/powershell/module/microsoft.xrm.tooling.packagedeployment/import-crmpackage) cmdlet to specify whether to skip the safety checks while running the Package Deployer tool to import the package. More information: [Deploy packages using Package Deployer and Windows PowerShell](../admin/deploy-packages-using-package-deployer-windows-powershell.md)  
 
    2. Enter custom code to execute before the solutions are imported in  the override method definition of `PreSolutionImport` to specify whether to maintain or overwrite customizations while updating the specified solution in a target Dataverse instance, and whether to automatically activate plug-ins and workflows.  
 
@@ -470,7 +471,7 @@ A Visual Studio 2015 template (available for download) is used to create package
 
  The package deployer tool is distributed as part of the [Microsoft.CrmSdk.XrmTooling.PackageDeployment](https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.PackageDeployment) NuGet package. To download the Package Deployer tool, see [Download tools from NuGet](/powerapps/developer/common-data-service/download-tools-nuget).
 
- For detailed information, see [Deploy packages using Package Deployer or Windows PowerShell](/power-platform/admin/deploy-packages-using-package-deployer-windows-powershell).  
+ For detailed information, see [Deploy packages using Package Deployer or Windows PowerShell](../admin/deploy-packages-using-package-deployer-windows-powershell.md).  
 
 <a name="BestPractices"></a>   
 

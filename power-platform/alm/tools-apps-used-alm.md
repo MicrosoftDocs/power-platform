@@ -3,6 +3,7 @@ title: "Overview of tools and apps used with application lifecycle management (A
 description: "Learn about the tools and apps used with application lifecycle management (ALM) in Microsoft Power Platform."
 keywords: 
 author: Mattp123
+ms.subservice: alm
 ms.author: matp
 manager: kvivek
 ms.custom: ""
@@ -31,8 +32,8 @@ and get key Microsoft Power Platform metrics through Microsoft Dataverse analyti
 
 More information:
 
--   [Power Platform admin center capabilities](https://docs.microsoft.com/power-platform/admin/admin-documentation#power-platform-admin-center-capabilities)
--   [Administer Power Apps](https://docs.microsoft.com/power-platform/admin/admin-guide)
+-   [Power Platform admin center capabilities](../admin/admin-documentation.md#power-platform-admin-center-capabilities)
+-   [Administer Power Apps](../admin/admin-guide.md)
 -   White paper: [Administering a low-code development platform](https://aka.ms/powerappsadminwhitepaper)
 
 ## Power Apps
@@ -66,17 +67,21 @@ to maintain a single "source of truth" and recall specific versions when needed.
 Git is a popular example of a version control system.
 
 > [!IMPORTANT]
-> Notice that *source control* applies both to [Dataverse solutions](https://docs.microsoft.com/powerapps/developer/common-data-service/introduction-solutions) and
+> Notice that *source control* applies both to [Dataverse solutions](/powerapps/developer/common-data-service/introduction-solutions) and
 > "traditional" source code. Dataverse solutions should always be part of the source code
 > and never stored solely in Microsoft Power Platform environments. More information:
 > [Getting started: What is Git?](https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F)
 
 ## Configuration Migration Tool
+
 The Configuration Migration Tool enables you to move configuration and/or reference data across
 environments. Configuration/reference data is different from user and transactional data and is used to
-define custom functionality in apps based on Dataverse. More information: [Move configuration data across environments and organizations with the Configuration Migration Tool](https://docs.microsoft.com/power-platform/admin/manage-configuration-data)
+define custom functionality in apps based on Dataverse. More information: [Move configuration data across environments and organizations with the Configuration Migration Tool](../admin/manage-configuration-data.md)
+>[!NOTE]
+>The Configuration Migration Tool is best suited for migrating relational configuration data. [Environment variables](/powerapps/maker/data-platform/environmentvariables) are recommended for storing and migrating non-relational configuration parameters. 
 
 ## Package Deployer
+
 Package Deployer lets administrators or developers deploy comprehensive packages of relevant
 assets to Dataverse instances. Packages can consist of not only
 solution files, but also flat files, custom code, and HTML files. Common Data
@@ -86,29 +91,33 @@ Service instance.  More information: [Create packages for the Package Deployer](
 
 
 ## Solution Packager
+
 Solution Packager is a tool that can unpack a compressed solution file into
 multiple XML files and other files, so they can be easily managed by
 a source control system. More information: [Use the Solution Packager tool to compress and extract a solution file](solution-packager-tool.md)
 
-## Power Apps CLI
-Microsoft Power Apps CLI is a simple, single-stop developer command-line
+## Power Platform CLI
+
+Microsoft Power Platform CLI is a simple, single-stop developer command-line
 interface that empowers developers and app makers to create code components.
-More information: [What is Microsoft Power Apps CLI?](/powerapps/developer/common-data-service/powerapps-cli)
+More information: [What is Microsoft Power Platform CLI?](/powerapps/developer/common-data-service/powerapps-cli)
 
 ## PowerShell modules
+
 With PowerShell cmdlets for administrators, app makers, and developers, you can
 automate many of the monitoring, management, and quality assurance tasks that
 are only possible manually today in Power Apps or the Power Apps admin center.
 
--   [Online management API module](https://docs.microsoft.com/powershell/powerapps/get-started-onlinemanagementapi?view=pa-ps-latest). The online management API PowerShell module is used to manage Dataverse environments.
+-   [Online management API module](/powershell/powerapps/get-started-onlinemanagementapi?view=pa-ps-latest&preserve-view=true). The online management API PowerShell module is used to manage Dataverse environments.
 
--   [Package deployment module](https://docs.microsoft.com/powershell/powerapps/get-started-packagedeployment?view=pa-ps-latest). The package deployment PowerShell module is used to deploy packages to Dataverse environments and Dynamics 365 Customer Engagement(on-premises) deployments.
+-   [Package deployment module](/powershell/powerapps/get-started-packagedeployment?view=pa-ps-latest&preserve-view=true). The package deployment PowerShell module is used to deploy packages to Dataverse environments and Dynamics 365 Customer Engagement(on-premises) deployments.
 
--   [Power Apps checker module](https://docs.microsoft.com/powershell/powerapps/get-started-powerapps-checker?view=pa-ps-latest). The Power Apps checker PowerShell module interacts with the Power Apps checker service so you can run static analysis jobs and download the results.
+-   [Power Apps checker module](/powershell/powerapps/get-started-powerapps-checker?view=pa-ps-latest&preserve-view=true). The Power Apps checker PowerShell module interacts with the Power Apps checker service so you can run static analysis jobs and download the results.
 
-More information: [Power Apps PowerShell overview](https://docs.microsoft.com/powershell/powerapps/overview?view=pa-ps-latest)
+More information: [Power Apps PowerShell overview](/powershell/powerapps/overview?view=pa-ps-latest&preserve-view=true)
 
 ### See also
+
 [Implementing healthy ALM](implement-healthy-alm.md)
 
 

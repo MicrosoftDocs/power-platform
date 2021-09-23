@@ -1,11 +1,12 @@
 ---
-title: "About Microsoft Cloud Germany  | MicrosoftDocs"
-description: About Microsoft Cloud Germany
+title: "About Microsoft Cloud Germany datacenter"
+description: "Learn about Microsoft Cloud Germany datacenter, including residency and trustee for customer data, service delivery, compliance, privacy, and mapping functions."
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/03/2020
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -38,7 +39,7 @@ search.app:
   
 - All security and compliance capabilities of customer engagement apps (such as Dynamics 365 Sales and Customer Service), are included.  
   
-  ![Germany data residence](media/germany-data-residence.png "Germany data residence")  
+  ![Germany data residence.](media/germany-data-residence.png "Germany data residence")  
   <a name="BKMK_DataTrustee"></a>   
 
 ## German Data Trustee  
@@ -46,7 +47,7 @@ search.app:
   
  The German Data Trustee may also perform non-data specific tasks related to day-to-day datacenter operations.  
   
- ![Germany data trustee](media/germany-data-trustee.png "Germany data trustee")  
+ ![Germany data trustee.](media/germany-data-trustee.png "Germany data trustee")  
   
 <a name="BKMK_ServiceDelivery"></a>   
 ## Germany Service Delivery  
@@ -118,6 +119,6 @@ Data centers undergo audits like any other expansion.
 ### See also  
 [Microsoft Azure Germany](https://azure.microsoft.com/overview/clouds/germany/)<br />
 [New datacenter regions](new-datacenter-regions.md)<br />
-[Migrate customer data to the new "Local" German regions](https://docs.microsoft.com/dynamics365/get-started/migrate-data-german-region)
+[Migrate customer data to the new "Local" German regions](/dynamics365/get-started/migrate-data-german-region)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

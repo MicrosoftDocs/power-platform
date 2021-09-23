@@ -4,8 +4,9 @@ description: How access to a record is determined
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 09/11/2020
+ms.date: 07/26/2021
 author: jimholtz
+ms.subservice: admin
 ms.author: jimholtz
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
@@ -20,13 +21,11 @@ search.app:
 
 # How access to a record is determined
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
-
-There are different ways to obtain access to a particular record in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation). To be able to do a certain action with an entity (Create, Read, Write, Delete, Append, Append to, Assign, Share), two major checks are done: privilege and access checks. The access check only takes place once the privilege check passes.
+There are different ways to obtain access to a particular record in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation). To be able to do a certain action with an table (Create, Read, Write, Delete, Append, Append to, Assign, Share), two major checks are done: privilege and access checks. 
  
 ## Privilege check
  
-The privilege check is the first barrier that needs to be passed in order to do a certain action with a record of an entity. The privilege checks validate that the user has the required privilege for that entity. For each entity, whether out of the box or custom, there exist different privileges to provide interaction capabilities with the records of that type. 
+The privilege check is the first barrier that needs to be passed in order to do a certain action with a record of an table. The privilege checks validate that the user has the required privilege for that table. For each table, whether out of the box or custom, there exist different privileges to provide interaction capabilities with the records of that type. 
 
 For example, for Account, the privileges are:
 
@@ -36,7 +35,7 @@ For example, for Account, the privileges are:
 |**Read**|Required to open a record to view the contents. Which records can be read depends on the access level of the permission defined in your security role.|  
 |**Write**|Required to make changes to a record. Which records can be changed depends on the access level of the permission defined in your security role.|  
 |**Delete**|Required to permanently remove a record. Which records can be deleted depends on the access level of the permission defined in your security role.|  
-|**Append**|Required to associate the current record with another record. For example, a note can be attached to an opportunity if the user has Append rights on the note. The records that can be appended depend on the access level of the permission defined in your security role.<br /> In the case of many-to-many relationships, you must have Append privileges for both entities being associated or disassociated.|  
+|**Append**|Required to associate the current record with another record. For example, a note can be attached to an opportunity if the user has Append rights on the note. The records that can be appended depend on the access level of the permission defined in your security role.<br /> In the case of many-to-many relationships, you must have Append privileges for both tables being associated or disassociated.|  
 |**Append To**|Required to associate a record with the current record. For example, if a user has Append To rights on an opportunity, the user can add a note to the opportunity. The records that can be appended to depend on the access level of the permission defined in your security role.|  
 |**Assign**|Required to give ownership of a record to another user. Which records can be assigned depends on the access level of the permission defined in your security role.|  
 |**Share**|Required to give access to a record to another user while keeping your own access. Which records can be shared depends on the access level of the permission defined in your security role.|  
@@ -110,7 +109,7 @@ If a record is shared with an organization to perform a set of actions, then all
 
 ### Hierarchy access
  
-The hierarchy access only takes place if [Hierarchy Security](hierarchy-security.md) management is enabled in that organization and for that entity, and if the user is a manager.
+The hierarchy access only takes place if [Hierarchy Security](hierarchy-security.md) management is enabled in that organization and for that table, and if the user is a manager.
 
 In this case, the user would have access to the record if both of the following are met:
 - The manager has a security role assigned directly or through a team that has the access level Business Unit or Parent:Child Business Units. 
@@ -122,7 +121,7 @@ In this case, the user would have access to the record if both of the following 
 
 ### See also
 [Security roles and privileges](security-roles-privileges.md) <br />
-[Create users and assign security roles](create-users-assign-online-security-roles.md) <br />
+[Create users](create-users.md) <br />
 [Create or edit a security role to manage access](create-edit-security-role.md)
 
 

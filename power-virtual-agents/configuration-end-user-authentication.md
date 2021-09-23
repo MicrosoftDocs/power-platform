@@ -47,14 +47,14 @@ Power Virtual Agents supports a set of different authentication options, each ta
 
 To change the authentication settings, go to **Manage** on the side navigation pane, and then go to the **Security** tab and select the **Authentication** card.
 
-:::image type="content" source="media/security-authentication.png" alt-text="Screenshot of the Security page under Manage menu highlighting the Authentication card":::
+:::image type="content" source="media/security-authentication.png" alt-text="Screenshot of the Security page under Manage menu highlighting the Authentication card.":::
 
 You will see the following three options to configure your authentication
 - No authentication
 - Only for Teams
 - Manual (for any channel including Teams)
 
-:::image type="content" source="media/security-authentication-pane.png" alt-text="Screenshot of the Authentication pane showing the three authentication options":::
+:::image type="content" source="media/security-authentication-pane.png" alt-text="Screenshot of the Authentication pane showing the three authentication options.":::
 
 ### No Authentication
 
@@ -134,7 +134,7 @@ This section shows an example of Azure AD being configured as an OAuth provider.
 1. Confirm you've selected the bot for which you want to enable authentication by selecting the bot icon on the top menu and choosing the bot. 
 1. Select **Manage** on the side navigation pane, and then go to the **Security** tab and select the **Authentication** card.
  
-    :::image type="content" source="media/auth-manage-sm.png" alt-text="Screenshot of the Authentication under Manage left bar menu":::
+    :::image type="content" source="media/auth-manage-sm.png" alt-text="Screenshot of the Authentication under Manage left bar menu.":::
 
 2. Enter the information as described for each of the fields in the following table. The information required depends on your setup and provider. If you have questions about the required information, contact your administrator or identity provider.
 

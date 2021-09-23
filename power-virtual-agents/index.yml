@@ -13,6 +13,7 @@ metadata:
   author: iaanw #Required; your GitHub user alias, with correct capitalization.
   ms.author: iawilt #Required; microsoft alias of author; optional team alias.
   ms.date: 09/22/2020 #Required; mm/dd/yyyy format.
+  ms.custom: intro-internal
   hide_bc: false
 
 
@@ -24,12 +25,12 @@ highlightedContent:
     # Card
     - title: What is Power Virtual Agents?
       itemType: overview
-      url: /power-virtual-agents/fundamentals-what-is-power-virtual-agents
+      url: ./fundamentals-what-is-power-virtual-agents.md
 
     # Card
     - title: What's new in Power Virtual Agents?
       itemType: whats-new
-      url: https://docs.microsoft.com/power-platform-release-plan/2020wave2/power-virtual-agents/planned-features
+      url: /power-platform-release-plan/2020wave2/power-virtual-agents/planned-features
 
     # Card
     - title: "Power Virtual Agents videos"
@@ -39,7 +40,7 @@ highlightedContent:
     # Card
     - title: Power Virtual Agents training on Microsoft Learn
       itemType: learn
-      url: https://docs.microsoft.com/learn/browse/?expanded=power-platform&products=power-virtual-agents
+      url: /learn/browse/?expanded=power-platform&products=power-virtual-agents
 
 # conceptualContent section
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -48,83 +49,83 @@ conceptualContent:
     - title: Get started
       links:
         - text: Sign up for free
-          url: /power-virtual-agents/sign-up-individual
+          url: ./sign-up-individual.md
           itemType: get-started        
         - text: Web app
-          url: /power-virtual-agents/fundamentals-what-is-power-virtual-agents-portal
+          url: ./fundamentals-what-is-power-virtual-agents-portal.md
           itemType: overview
         - text: App in Microsoft Teams
-          url: /power-virtual-agents/teams/fundamentals-what-is-power-virtual-agents-teams
+          url: ./teams/fundamentals-what-is-power-virtual-agents-teams.md
           itemType: overview      
     
     - title: Create intelligent bots
       links:
         - text: Create and delete bots
-          url: /power-virtual-agents/authoring-first-bot
+          url: ./authoring-first-bot.md
           itemType: how-to-guide
         - text: Create and edit topics
-          url: /power-virtual-agents/authoring-create-edit-topics
+          url: ./authoring-create-edit-topics.md
           itemType: how-to-guide
         - text: Test your bot
-          url: /power-virtual-agents/authoring-test-bot
+          url: ./authoring-test-bot.md
           itemType: how-to-guide             
     
     - title: Enhance and improve your bots
       links:
         - text: Use entities and slot filling
-          url: /power-virtual-agents/teams/advanced-entities-slot-filling-teams
+          url: ./teams/advanced-entities-slot-filling-teams.md
           itemType: overview
         - text: Use end-user authentication
-          url: /power-virtual-agents/advanced-end-user-authentication
+          url: ./advanced-end-user-authentication.md
           itemType: overview
         - text: Use Microsoft Bot Framework Skills
-          url: /power-virtual-agents/teams/advanced-use-skills-teams
+          url: ./teams/advanced-use-skills-teams.md
           itemType: concept
 
 
     - title: Publish and integrate
       links:
         - text: Configure demo and live sites
-          url: /power-virtual-agents/publication-connect-bot-to-web-channels
+          url: ./publication-connect-bot-to-web-channels.md
           itemType: overview
         - text: Publish to Microsoft Teams
-          url: /power-virtual-agents/publication-add-bot-to-microsoft-teams
+          url: ./publication-add-bot-to-microsoft-teams.md
           itemType: overview
         - text: Publish to Facebook
-          url: /power-virtual-agents/publication-add-bot-to-facebook
+          url: ./publication-add-bot-to-facebook.md
           itemType: overview
 
     - title: Monitor and diagnose
       links:
         - text: Use analytics to improve your bot
-          url: /power-virtual-agents/analytics-overview
+          url: ./analytics-overview.md
           itemType: overview
         - text: Analyze bot performance and usage
-          url: /power-virtual-agents/analytics-summary
+          url: ./analytics-summary.md
           itemType: overview
         - text: Analyze topic usage
-          url: /power-virtual-agents/analytics-topic-details
+          url: ./analytics-topic-details.md
           itemType: overview     
 
     - title: Administer and manage
       links:
         - text: Assign licenses
-          url: /power-virtual-agents/requirements-licensing
+          url: ./requirements-licensing.md
           itemType: overview
         - text: Working with environments
-          url: /power-virtual-agents/environments-first-run-experience
+          url: ./environments-first-run-experience.md
           itemType: overview
         - text: Export and import bots using solutions
-          url: /power-virtual-agents/authoring-export-import-bots
+          url: ./authoring-export-import-bots.md
           itemType: how-to-guide     
     
     - title: Support and licensing
       links:
         - text: Community help and support
-          url: /power-virtual-agents/fundamentals-support
+          url: ./fundamentals-support.md
           itemType: overview
         - text: Licensing
-          url: /power-virtual-agents/requirements-licensing-subscriptions
+          url: ./requirements-licensing-subscriptions.md
           itemType: overview 
     
     
@@ -139,21 +140,21 @@ additionalContent:
         # Card
         - title: Power Apps
           summary: Quickly build low-code apps that modernize processes and solve tough business challenges in your organization using Power Apps.
-          url: https://docs.microsoft.com/powerapps
+          url: /powerapps
         - title: Power Automate
           summary: Create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more.
-          url: https://docs.microsoft.com/power-automate        
+          url: /power-automate
         - title: Power BI
           summary: Turn your unrelated sources of data into coherent, visually immersive, and interactive insights.
-          url: https://docs.microsoft.com/power-bi
+          url: /power-bi
 
     - title: See also
       items:
       # Card
       - title: Dynamics 365
         summary: "The next generation of CRM and ERP applications"
-        url: https://docs.microsoft.com/dynamics365/
+        url: /dynamics365/
       # Card
       - title: Microsoft Azure
-        summary: "Ever-expanding set of cloud computing services to help your organization meet it's business challenges"
-        url: https://docs.microsoft.com/azure
+        summary: "Ever-expanding set of cloud computing services to help your organization meet its business challenges"
+        url: /azure

@@ -56,7 +56,7 @@ You can change the bot's name and icon. This will affect the icon in all channel
 
 3. Select **Save** to commit your changes.
 
-    :::image type="content" source="media/custom-canvas-name-icon.png" alt-text="The bot details pane lets you change the name and icon":::
+    :::image type="content" source="media/custom-canvas-name-icon.png" alt-text="The bot details pane lets you change the name and icon.":::
 
 ## Retrieve bot ID and tenant ID details
 
@@ -249,11 +249,11 @@ We recommend starting with one of these samples custom-built to work with Power 
 
 * [Full bundle](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/BuildYourOwnCanvasSamples/1.starter-full-bundle) is a custom canvas capable of showing all rich content from Power Virtual Agents. For example:
 
-  ![Full bundle custom canvas](media/custom-canvas-full-bundle.png)
+  ![Full bundle custom canvas.](media/custom-canvas-full-bundle.png)
 
 * [Location and file uploading](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/BuildYourOwnCanvasSamples/2.location-and-file-uploading) is a custom canvas capable of getting a user's location and sending it to a bot using Power Virtual Agents. For example:
 
-  ![Location and file uploading custom canvas](media/custom-canvas-location-file-upload.png)
+  ![Location and file uploading custom canvas.](media/custom-canvas-location-file-upload.png)
 
 Or you can pick from [other sample web chat canvases](https://github.com/microsoft/BotFramework-WebChat/#samples-list) provided by Bot Framework.
 
@@ -270,7 +270,7 @@ In order to host your custom canvas, deploy all files to a web app.
 ## See also
 
 -  [Bot Framework web chat](https://github.com/microsoft/BotFramework-WebChat)
--  [Generating a direct line token](https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0#generate-token&preserve-view=true)
+-  [Generating a direct line token](/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?preserve-view=true&view=azure-bot-service-4.0#generate-token)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

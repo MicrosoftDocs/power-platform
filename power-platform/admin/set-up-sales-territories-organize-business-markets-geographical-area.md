@@ -6,6 +6,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/17/2021
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -27,7 +28,7 @@ Organizations can create a model and visualize their sales territories in a hier
 
 > [!IMPORTANT]
 > - For a new organization that provisions Dynamics 365 Sales, the territory hierarchical relationship will be available and enabled by default.
-> - For existing customers upgrading to the latest release, if the organization doesn't already have a hierarchical relationship created for the Territory entity, the hierarchical relationship will be available and enabled. If the organization has a hierarchical relationship created for territory, the new out-of-the-box territory hierarchical relationship will be available but not enabled.
+> - For existing customers upgrading to the latest release, if the organization doesn't already have a hierarchical relationship created for the Territory table, the hierarchical relationship will be available and enabled. If the organization has a hierarchical relationship created for territory, the new out-of-the-box territory hierarchical relationship will be available but not enabled.
 
 ## Create a sales territory (Sales Hub app)
 
@@ -54,17 +55,17 @@ Organizations can create a model and visualize their sales territories in a hier
 
 6.    Select the **Related** tab, and then select **Members**.
 
-      ![Members option on Related tab of territory form](/dynamics365/customer-engagement/sales-enterprise/media/members-option-related-tab-territory-form.png "Members option on Related tab of territory form")
+      ![Members option on Related tab of territory form.](/dynamics365/customer-engagement/sales-enterprise/media/members-option-related-tab-territory-form.png "Members option on Related tab of territory form")
  
 7.    On the **Members** tab, select **Add members**.
 
 8.    In the **Lookup Records** pane, select the search icon, select a user record, and then select **Add**.
 
-      ![Lookup Records pane](/dynamics365/customer-engagement/sales-enterprise/media/lookup-records.png "Lookup Records pane")
+      ![Lookup Records pane.](/dynamics365/customer-engagement/sales-enterprise/media/lookup-records.png "Lookup Records pane")
 
 9. To add sub territories to this territory, select the **Sub-territories** tab, and select **Add New Territory**. 
  
-    ![Add sub-territory](media/sales-add-sub-territory.png "Add sub-territory")
+    ![Add sub-territory.](media/sales-add-sub-territory.png "Add sub-territory")
 
     Enter the necessary information and select **Save**. This territory will be added as a sub territory in the Sub-territories grid.
 
@@ -81,7 +82,7 @@ Organizations can create a model and visualize their sales territories in a hier
   
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
   
-2. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+2. In the web app, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
   
 3. Choose **Sales Territories**.  
   
@@ -107,11 +108,11 @@ Organizations can create a model and visualize their sales territories in a hier
 9. In the **Look Up Records** dialog box, select a user, and then choose **Add**.  
   
 > [!TIP]
->  To make your salesperson's job easier, you can also set a default price list for a territory. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Define product pricing with price lists and price list items](https://docs.microsoft.com/dynamics365/sales-enterprise/create-price-lists-price-list-items-define-pricing-products)  
+>  To make your salesperson's job easier, you can also set a default price list for a territory. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Define product pricing with price lists and price list items](/dynamics365/sales-enterprise/create-price-lists-price-list-items-define-pricing-products)  
   
 ### See also  
- [Administrator and sales manager guide](https://docs.microsoft.com/dynamics365/sales-enterprise/admin-guide)   
- [Nurture sales from lead to order (Sales)](https://docs.microsoft.com/dynamics365/sales-enterprise/nurture-sales-from-lead-order-sales)
+ [Administrator and sales manager guide](/dynamics365/sales-enterprise/admin-guide)   
+ [Nurture sales from lead to order (Sales)](/dynamics365/sales-enterprise/nurture-sales-from-lead-order-sales)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

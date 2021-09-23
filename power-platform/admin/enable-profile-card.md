@@ -6,6 +6,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/17/2021
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -32,7 +33,7 @@ Microsoft's people experience is centered around profile cards that have been ar
 > - lpcres.delve.office.com 
 > - Port: TCP:443 
 > 
-> To view the complete endpoint requirements for connectivity from a user's machine to Microsoft 365 for profile cards to be displayed in Unified Interface, see [Microsoft 365 URLs and IP address ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) ID 130.
+> To view the complete endpoint requirements for connectivity from a user's machine to Microsoft 365 for profile cards to be displayed in Unified Interface, see [Microsoft 365 URLs and IP address ranges](/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) ID 130.
 
 ## Prerequisites
 
@@ -41,15 +42,15 @@ The following settings/environment are required for profile cards to be enabled 
 1. Microsoft 365 (Exchange Online)
 2. Unified Interface Build 9.1.0.4626 or higher
 3. Enable Admin setting
-   1. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+   1. In the web app, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
    2. Select **Settings** > **Administration**.
    3. Select **System Settings**, and then select the **General** tab. 
    4. For **Enable users to view contact cards**, select **Yes**, and then **OK**.
 
 > [!div class="mx-imgBorder"] 
-> ![Enable users to view contact cards](media/enable-users-view-contact-cards.png "Enable users to view contact cards")
+> ![Enable users to view contact cards.](media/enable-users-view-contact-cards.png "Enable users to view contact cards")
 
-For information on how to use profile cards, see [View the profile card for a contact or user](https://docs.microsoft.com/powerapps/user/profile-cards).
+For information on how to use profile cards, see [View the profile card for a contact or user](/powerapps/user/profile-cards).
 
 
 
