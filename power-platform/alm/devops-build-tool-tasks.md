@@ -178,7 +178,7 @@ Creates a new environment. Creating a new environment also automatically creates
 
 > [!NOTE]
 > A new environment can only be provisioned if your license or capacity
-> allows for the creation of additional environments. For more information on how to view capacity see [Capacity page details](../admin/capacity-storage#capacity-page-details).
+> allows for the creation of additional environments. For more information on how to view capacity see [Capacity page details](../admin/capacity-storage.md#capacity-page-details).
 
 | Parameters        | Description     |
 |-------------------|-----------------|
