@@ -88,7 +88,7 @@ Upgrades a solution that has been imported as a holding solution.
 | Solution name | (Required) The name of the solution to export. Always use the solution *Name* not its *Display Name*. |
 | Apply solution upgrade as asynchronous operation | If selected, the import operation will be performed asynchronously. This is recommended for larger solutions as this task will automatically timeout after 4 minutes otherwise. |
 > [!NOTE]
-> Variables give you a convenient way to get key bits of data into various parts of your pipeline. See [Use predefined variables](/azure/devops/pipelines/build/variables) for a comprehensive list. |
+> Variables give you a convenient way to get key bits of data into various parts of your pipeline. See [Use predefined variables](/azure/devops/pipelines/build/variables) for a comprehensive list.
 
 ### Power Platform Export Solution
 
