@@ -6,7 +6,7 @@ author: mikkelsen2000
 ms.author: pemikkel
 manager: kvivek
 ms.custom: ""
-ms.date: 07/02/2020
+ms.date: 09/23/2021
 ms.reviewer: "pehecke"
 ms.service: power-platform
 ms.topic: "article"
@@ -76,18 +76,19 @@ Imports a solution into a target environment.
 | Service connection | (Required) The service connection to the target environment that you want to import the solution into (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)).  Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type .|
  | Solution input file        | (Required) The path and file name of the solution.zip file to import into the target environment (e.g., $(Build.ArtifactStagingDirectory)\$(SolutionName).zip). <p/>Note: Variables give you a convenient way to get key bits of data into various parts of your pipeline. See [Use predefined variables](https://docs.microsoft.com/azure/devops/pipelines/build/variables) for a comprehensive list.  |
  | Import solution as asynchronous operation | If selected, the import operation will be performed asynchronously. This is recommended for larger solutions as this task will automatically timeout after 4 minutes otherwise. |
- | Import as a holding solution| This is an advance parameter, it is used when a solution needs to be upgraded, this host the solution in Dataverse but does not upgrade the solution until the Apply Solution Upgrade task is run| 
+ | Import as a holding solution | An advance parameter used when a solution needs to be upgraded. This parameter hosts the solution in Dataverse but does not upgrade the solution until the Apply Solution Upgrade task is run. | 
 
 ### Power Platform Apply Solution Upgrade
 Upgrades a solution that has been imported as a holding solution.
 
 | Parameters           | Description        |
 |----------------------|--------------------------|
-| Authentication type | (Required) Select whether to use username/password or service principal authentication. Note that username/password does not support multi-factor authentication. |
-| Service connection | (Required) The service connection to the target environment that you want to import the solution into (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)).  Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type .|
- | Solution name              | (Required) The name of the solution to export.<p/>Always use the solution *Name*, not its *Display Name*.    |. <p/>Note: Variables give you a convenient way to get key bits of data into various parts of your pipeline. See [Use predefined variables](https://docs.microsoft.com/azure/devops/pipelines/build/variables) for a comprehensive list.  |
- | Apply Solution upgrade as asynchronous operation | If selected, the import operation will be performed asynchronously. This is recommended for larger solutions as this task will automatically timeout after 4 minutes otherwise. |
- 
+| Authentication type | (Required) Select whether to use username/password or service principal authentication. Note that username/password does not support multi-factor authentication (MFA). |
+| Service connection | (Required) The service connection to the target environment that you want to import the solution into (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type. |
+| Solution name | (Required) The name of the solution to export. Always use the solution *Name* not its *Display Name*. |
+| Apply solution upgrade as asynchronous operation | If selected, the import operation will be performed asynchronously. This is recommended for larger solutions as this task will automatically timeout after 4 minutes otherwise. |
+> [!NOTE]
+> Variables give you a convenient way to get key bits of data into various parts of your pipeline. See [Use predefined variables](/azure/devops/pipelines/build/variables) for a comprehensive list. |
 
 ### Power Platform Export Solution
 
@@ -123,13 +124,13 @@ Packs a solution represented in source control into a solution.zip file that can
 
 ### Power Platform Delete Solution
 
-Deletes a solution in the target environment
+Deletes a solution in the target environment.
 
 | Parameters       | Description     |
 |------------------|-----------------|
-| Authentication type             | (Required) Select whether to use username/password or service principal authentication. Note that username/password does not support multi-factor authentication. |
+| Authentication type | (Required) Select whether to use username/password or Service Principal authentication. Note that username/password does not support multi-factor authentication (MFA). |
 | Service connection | (Required) The service connection to the source environment that you want to export the solution from.  Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type.     |
-| Solution name              | (Required) The name of the solution to export.<p/>Always use the solution *Name*, not its *Display Name*.    |
+| Solution name  | (Required) The name of the solution to export. Always use the solution *Name* not its *Display Name*. |
 
 ### Power Platform Publish Customizations
 
