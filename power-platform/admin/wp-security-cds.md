@@ -47,7 +47,7 @@ When we associate a user with this Dataverse environment, we can set the user to
 User A is associated with Division A and assigned a security role Y from Division A. This allows user A to access the Contact #1 and Contact #2 records. While user B in Division B cannot access Division A’s Contact records but can access Contact #3 record. 
 
 > [!div class="mx-imgBorder"] 
-> ![Matrix data access structure example](media/example-business-unit.png "Matrix data access structure example")
+> ![Matrix data access structure example](media/example-business-unit0.png "Matrix data access structure example")
 
 ### Matrix data access structure (Modernize Business Units - Preview) 
 
@@ -58,15 +58,14 @@ When we associate a user with this Dataverse environment, we can set the user to
 User A can be associated with any of the business units, including the root business unit. A security role Y from Division A is assigned to user A which gives the user access to Contact #1 and Contact #2 records.  A security role Y from Division B is assigned to user A which gives the user access to Contact #3 record. 
 
 > [!div class="mx-imgBorder"] 
-> ![Hierarchical data access structure example](media/example-business-unit0.png "Hierarchical data access structure example")
+> ![Hierarchical data access structure example](media/example-business-unit.png "Hierarchical data access structure example")
 
 #### To enable this Matrix data access structure (preview): 
 
 1. Sign in to the Power Platform admin center, as an admin (Dynamics 365 admin, Global admin, or Microsoft Power Platform admin). 
 2. Select the **Environments** tab, and then choose the environment that you want to enable this feature for. 
-3. On the Environment Details page, select **Settings**. 
-4. Select **Product** > **Features**. 
-5. Turn **On** the **Record ownership across business units** switch. 
+3. Select **Settings** > **Product** > **Features**. 
+4. Turn **On** the **Record ownership across business units** switch. 
 
 Once this feature switch is turned ON, you can select Business unit when you [assign a security role to a user](assign-security-roles.md). This allows you to assign security from different business units to a user.
 
