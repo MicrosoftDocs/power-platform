@@ -34,7 +34,7 @@ Power Automate reports provide insights into tenant and environment usage and in
 - Which of my environments had the most unique users?
 - What were the top flows across my tenant or environments by runs?
 
-image
+:::image type="content" source="media/power-automate-usage-report.png" alt-text="Power Automate Usage report.":::
 
 > [!NOTE]
 > The service only starts collecting the data visualized in the Usage report when the feature is enabled. It can take up to 12 hours to reflect service activities from the previous day.
@@ -49,7 +49,7 @@ The Power Automate report provide insights into the activities of citizen author
 - How many of these flows are using premium or standard connectors?
 - Allow me to filter the above list based on connector dependency.
 
-image
+:::image type="content" source="media/power-automate-maker-activity.png" alt-text="Power Automate Maker Activity report.":::
 
 > [!NOTE]
 > The service only starts collecting the data visualized in the Maker Activity report when the feature is enabled. It can take up to 12 hours to reflect service activities from the previous day.
@@ -62,7 +62,7 @@ The Power Automate Inventory report offers a complete catalog of Cloud & Desktop
 - Who are the owners of the flows hosted in one or more environments?
 - What is the distribution of Cloud & Desktop flows apps across the organization?
 
-image
+:::image type="content" source="media/power-automate-inventory.png" alt-text="Power Automate Inventory report.":::
 
 > [!NOTE]
 > Depending on the size of the organization, it can take up to 2 hours to initially populate the data sets backing the Inventory report.
@@ -73,7 +73,7 @@ Power Platform admin center reports can be downloaded directly from the report v
 - Summarized data: select this option to download the data underlying the current report visual
 - Underlying data: select this option to download the full result set backing the report
 
-image
+:::image type="content" source="media/power-automate-download-inventory.png" alt-text="Download Inventory report.":::
 
 For more information on downloading data from the tenant level reports, see [Exporting data from Power BI visuals](/power-bi/consumer/end-user-export).
 
