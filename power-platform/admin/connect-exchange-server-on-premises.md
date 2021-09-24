@@ -4,7 +4,7 @@ description: Connect to Exchange Server (on-premises)
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/11/2021
+ms.date: 09/24/2021
 author: revachauhan
 ms.subservice: admin
 ms.author: rechauha
