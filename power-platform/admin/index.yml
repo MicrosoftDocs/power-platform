@@ -27,20 +27,36 @@ landingContent:
             url: wp-security.md
           - text: Security concepts in Microsoft Dataverse
             url: wp-security-cds.md
-          - text: Configure user security
-            url: database-security.md            
+          - text: Overview of user security
+            url: grant-users-access.md            
        - linkListType: learn
          links:
           - text: Get started with security roles in Dataverse
             url: /learn/paths/get-started-security-roles/
 
   # Card
-  - title: Configure environment security
+  - title: Configure user security
     linkLists:
+       - linkListType: concept
+         links:
+          - text: Security roles and privileges
+            url: security-roles-privilege.md                
        - linkListType: how-to-guide
          links:
           - text: Control user access
             url: control-user-access.md
+          - text: Assign security roles
+            url: assign-security-roles.md
+          - text: Add users to an environment
+            url: add-users-to-environment.md
+
+  # Card
+  - title: Configure environment security
+    linkLists:
+       - linkListType: how-to-guide
+         links:
+          - text: Control environment creation
+            url: control-environment-creation.md
           - text: Restrict cross-tenant access
             url: cross-tenant-restrictions.md
           - text: Administration mode
