@@ -67,7 +67,7 @@ User A can be associated with any of the business units, including the root busi
 3. Select **Settings** > **Product** > **Features**. 
 4. Turn **On** the **Record ownership across business units** switch. 
 
-Once this feature switch is turned ON, you can select Business unit when you [assign a security role to a user](assign-security-roles.md). This allows you to assign security from different business units to a user.
+Once this feature switch is turned on, you can select Business unit when you [assign a security role to a user](assign-security-roles.md). This allows you to assign security from different business units to a user.
 
 ### Owning Business Unit
 
