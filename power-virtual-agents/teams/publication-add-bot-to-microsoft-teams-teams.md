@@ -24,11 +24,12 @@ Select the version of Power Virtual Agents you're using here:
 
 After you've built a bot, you'll want people to use it.
 
-Now that you have published your bot, you can make your bot show up in Microsoft Teams so you, your teammates and the broader organization can interact with it. You need to [publish the bot at least once](publication-fundamentals-publish-channels-teams.md) before users can interact with the bot in Microsoft Teams. 
+Now that you have published your bot, you can make your bot available to users in Microsoft Teams so you, your teammates, and the broader organization can interact with it. You need to [publish the bot at least once](publication-fundamentals-publish-channels-teams.md) before users can interact with the bot in Microsoft Teams. 
 
 You can:
+- Customize your bot's apperance in Microsoft Teams
 - Install your bot in Microsoft Teams and share a direct installation link with others
-- Share the bot with your team by adding it to Microsoft Teams app store **Built by your colleagues** section
+- Share the bot with your teammates or security groups by adding it to Microsoft Teams app store **Built by your colleagues** section
 - Share the bot with the organization by submitting the bot for admin approval to be featured in the Microsoft Teams app store **Published by your org** section
 - Download the pre-generated Teams app manifest to distribute it within your Microsoft Teams tenant
 
@@ -37,11 +38,28 @@ You can:
 ## Prerequisites
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations-teams.md)]
-- You'll need to be familiar with how to [Manage Microsoft Power Platform apps in the Microsoft Teams admin center](/microsoftteams/manage-power-platform-apps).
-  - In particular, you will need to allow Microsoft Power Platform apps to be added to Microsoft Teams before you or other users can directly install the bot in Teams or find it in the **Built by your colleagues** section in the Teams app store.  
-  - Bots that are approved for the **Built by your organization** section (after submission to an admin) are managed separately by admins in the Microsoft Teams admin center's [Manage apps page](/microsoftteams/submit-approve-custom-apps#validate).
+- Your organization will need to allow Microsoft Power Platform apps to be added to Microsoft Teams before you or other users can directly install the bot in Teams or find it in the **Built by your colleagues** section in the Teams app store. Work with your admin to [Manage Microsoft Power Platform apps in the Microsoft Teams admin center](/microsoftteams/manage-power-platform-apps) if it has been disabled for your organization.
+- Bots that are approved for the **Built by your organization** section (after submission to an admin) are managed separately by admins in the Microsoft Teams admin center's [Manage apps page](/microsoftteams/submit-approve-custom-apps#validate).
 - Before installing the bot for yourself or sharing the bot with others, you should [publish the bot at least once](publication-fundamentals-publish-channels-teams.md).
 
+## Customize bot's appearance in Microsoft Teams
+
+1. Select **Edit details** to change the bot's icon, color, and descriptions. These will be shown in the search results in the Microsoft Teams app store. [Review the recommendations on Microsoft Teams icon formats](/microsoftteams/platform/resources/schema/manifest-schema#icons).
+
+        :::image type="content" source="media/publish-share-to-store.png" alt-text="You can make changes to the icon, background color, and descriptions":::
+
+        >[!IMPORTANT]
+        >Updates to the bot's icon and color will not apply to users who have already installed the bot via shared link or [built by your colleague section](#add-the-bot-to-the-built-by-your-colleagues-section). They will need to reinstall to the bot to receive the updates.
+
+2. Select **More** to add additional information:  
+    - Developer name
+    - Website
+    - Privacy Statement
+    - Terms of use
+
+       You should provide this information to keep your user informed about the bot. See the [Privacy statement and terms of use](publication-terms-of-use-teams.md) topic for more details and examples.
+
+    3. Select **Save** to return to the screen where you can make your bot available in Teams. You'll see your updates to the color, icon, and description are shown.
 
 ## Install a bot as an app in Microsoft Teams
 
@@ -72,7 +90,7 @@ You should add your bot to your own version of Teams before sharing it with othe
 
     :::image type="content" source="media/publish-option.png" alt-text="The publish button is in the Publish tab.":::
 
-1. Select **Open the bot** to have the installation prompt launch in Microsoft Teams. Select **Add for me** to have it added as an app in Teams. This only installs the bot for you.
+1. Select **Open the bot** to have the installation prompt launch in Microsoft Teams. Select **Add** to have it added as an app in Teams. This only installs the bot for you.
 
 
 **Share a link so others can add the bot:**
@@ -85,7 +103,7 @@ You should add your bot to your own version of Teams before sharing it with othe
 
 3. On the side navigation pane, select **Publish**.
 
-4. Select **Share the bot** 
+4. Select **Make bot available to others** 
 
     This pops up a new window where you can customize how the bot will be shown to people searching for it on the Microsoft Teams app store. 
 
