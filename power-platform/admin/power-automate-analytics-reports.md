@@ -28,8 +28,8 @@ The following tenant-level reports are available for Power Automate.
 
 Power Automate reports provide insights into tenant and environment usage and inventory of all flows and connectors. The report answers questions such as:
 
-- What is the total unique Cloud & Desktop Flow users across the tenant or environments?
-- What is the count of Successful vs Failed runs across Cloud & Desktop flows?
+- What is the total unique Cloud and Desktop Flow users across the tenant or environments?
+- What is the count of Successful vs Failed runs across Cloud and Desktop flows?
 - How many flows exist in my tenant or environment?
 - Which of my environments had the most unique users?
 - What were the top flows across my tenant or environments by runs?
@@ -41,10 +41,10 @@ Power Automate reports provide insights into tenant and environment usage and in
 
 ## Power Automate - Maker Activity report
 
-The Power Automate report provide insights into the activities of citizen authors of Cloud & Desktop flows across the tenant or environments. The report answers questions such as:
+The Power Automate report provide insights into the activities of citizen authors of Cloud and Desktop flows across the tenant or environments. The report answers questions such as:
 
-- What is the total number of flows created Makers across the tenant or environments?
-- What is the count of first-time makers across Cloud & Desktop flows?
+- What is the total number of flows created by makers across the tenant or environments?
+- What is the count of first-time makers across Cloud and Desktop flows?
 - Who are the top makers across the tenant or environments?
 - How many of these flows are using premium or standard connectors?
 - Allow me to filter the above list based on connector dependency.
@@ -56,11 +56,11 @@ The Power Automate report provide insights into the activities of citizen author
 
 ## Power Automate - Inventory report
 
-The Power Automate Inventory report offers a complete catalog of Cloud & Desktop flows distributed across the tenant. This view includes filters that allow admins to search for flows based on various criteria. The report answers questions such as:
-- What is the total number of Cloud & Desktop flows across the tenant or environments?
+The Power Automate Inventory report offers a complete catalog of Cloud and Desktop flows distributed across the tenant. This view includes filters that allow admins to search for flows based on various criteria. The report answers questions such as:
+- What is the total number of Cloud nad Desktop flows across the tenant or environments?
 - Which flows depend on specific connectors or connector types like Premium?
 - Who are the owners of the flows hosted in one or more environments?
-- What is the distribution of Cloud & Desktop flows apps across the organization?
+- What is the distribution of Cloud and Desktop flows apps across the organization?
 
 :::image type="content" source="media/power-automate-inventory.png" alt-text="Power Automate Inventory report.":::
 
