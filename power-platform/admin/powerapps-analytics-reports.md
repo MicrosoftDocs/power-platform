@@ -22,7 +22,7 @@ search.app:
 
 The following tenant-level reports are available for Power Apps. 
 
-### Power Apps - Usage reports
+## Power Apps - Usage reports
 
 Power Apps reports provide insights into tenant and environment usage and inventory of all apps and connectors. The report answers questions such as:
 
@@ -38,7 +38,7 @@ Power Apps reports provide insights into tenant and environment usage and invent
 > [!NOTE]
 > The service only starts collecting the data visualized in the Usage report when the feature is enabled. It can take up to 12 hours to reflect service activities from the previous day.
 
-### Power Apps - Maker Activity report
+## Power Apps - Maker Activity report
 
 The Power Apps Maker Activity report provide insights into tenant and environment usage and inventory of all apps and connectors. The report answers questions such as:
 
@@ -54,7 +54,7 @@ The Power Apps Maker Activity report provide insights into tenant and environmen
 > [!NOTE]
 > The service only starts collecting the data visualized in the Maker Activity report when the feature is enabled. It can take up to 12 hours to reflect service activities from the previous day.
 
-### Power Apps - Inventory report
+## Power Apps - Inventory report
 
 The Power Apps Inventory report offers a complete catalog of Power Apps distributed across the tenant. This view includes filters that allow admins to search for apps based on various criteria. The report answers questions such as:
 
