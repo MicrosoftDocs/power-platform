@@ -20,6 +20,8 @@ search.app:
 
 # Preview: Power Automate analytics reports
 
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+
 The following tenant-level reports are available for Power Automate. 
 
 ## Power Automate - Usage reports

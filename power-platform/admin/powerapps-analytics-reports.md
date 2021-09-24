@@ -20,6 +20,8 @@ search.app:
 
 # Preview: Power Apps analytics reports
 
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+
 The following tenant-level reports are available for Power Apps. 
 
 ## Power Apps - Usage reports
