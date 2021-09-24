@@ -27,7 +27,7 @@ Follow these steps to connect customer engagement apps (such as [Dynamics 365 Sa
 > - Only emails in the Inbox folder will be synchronized.
 > - Existing POP3 email profiles won't automatically be converted to IMAP. You can't migrate email profiles from POP3 to IMAP, but you can create a new IMAP email server profile and move your mailboxes to the new server profile.
 > - For information about IMAP or SMTP systems supported by Microsoft, go to [Supported email service configurations for server-side synchronization](supported-email-service-configurations-server-side-synchronization.md).  
-> - To encrypt messages between clients/servers and other servers, see [Server cipher suites and TLS requirements](server-cipher-tls-requirements.md).
+> - To learn more about the protocols and ciphers used to secure the connection between Dynamics 365 and external email services, see [Server cipher suites and TLS requirements](server-cipher-tls-requirements.md).
 
 <a name="BKMK_CreateProfile"></a>   
 
