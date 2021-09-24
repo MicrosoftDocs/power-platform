@@ -43,7 +43,9 @@ For more information about authentication, go to:
 5. **Exchange Web Services (EWS)**. Connections to EWS must be allowed through the firewall. Often a reverse proxy is used for the exterior-facing connection.  
 
 > [!TIP]
->  To make sure you've got a good connection to [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)]<!--note from editor: Should this be "Exchange Server"?--> (on-premises), run the [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/). For information about which tests to run, see [Test mail flow with the Remote Connectivity Analyzer](https://technet.microsoft.com/library/dn305950\(v=exchg.150\).aspx). 
+> To make sure you've got a good connection to [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)]<!--note from editor: Should this be "Exchange Server"?--> (on-premises), run the [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/). For information about which tests to run, see [Test mail flow with the Remote Connectivity Analyzer](https://technet.microsoft.com/library/dn305950\(v=exchg.150\).aspx). 
+> 
+> To learn more about the protocols and ciphers used to secure the connection between Dynamics 365 and external email services, see [Server cipher suites and TLS requirements](server-cipher-tls-requirements.md).
 
 
 ## Preview: Create an email server profile  
