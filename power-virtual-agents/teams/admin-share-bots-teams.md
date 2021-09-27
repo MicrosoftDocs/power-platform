@@ -33,14 +33,18 @@ You can share your bot with security groups so their members can chat with the b
 
 1. Select **Share** on the bot's homepage. 
 
-:::image type="content" source="TBD" alt-text="Sharing UI entry point in bot homepage":::
+  :::image type="content" source="TBD" alt-text="Sharing UI entry point in bot homepage":::
 
 2. Specify the security group name that you would like to share the bot with.
 
   >[!NOTE]
   >You can only share a bot with security groups. You cannot share with individual users directly. You can manage individual user access by adding or removing users from the security group.
 
+  :::image type="content" source="TBD" alt-text="Specify security group in Sharing UI":::
+
 3. Review the security group's permission
+
+  :::image type="content" source="TBD" alt-text="Review security group permission in Sharing UI":::
 
 4. If you want to let users know you've shared the bot with them, select the **Send an email invitation to new users** check box.
 
@@ -58,6 +62,8 @@ You can share your bot to allow everyone in the same organization as where the b
 
 3. Select **User - can use the bot** option.
 
+  :::image type="content" source="TBD" alt-text="Set user permission for everyone in the organization in Sharing UI":::
+
   >[!NOTE]
   >Power Virtual Agents will not send email invitation to everyone in the organization. You can directly **Copy link** and share it with users to install the bot in Microsoft Teams.
 
@@ -71,7 +77,7 @@ You can stop sharing the bot with a security group or everyone in your organizat
 
 2. Select **X** next to the security groups that you want to stop sharing the bot with.
 
-:::image type="content" source="TBD" alt-text="Unshare security group in Sharing UI":::
+  :::image type="content" source="TBD" alt-text="Unshare security group in Sharing UI":::
 
 3. Select **Share** to stop sharing the bot with the security groups.
 
@@ -83,7 +89,7 @@ You can stop sharing the bot with a security group or everyone in your organizat
 
 3. Select **None** option.
 
-:::image type="content" source="TBD" alt-text="Unshare everyone in the organization in Sharing UI":::
+  :::image type="content" source="TBD" alt-text="Unshare everyone in the organization in Sharing UI":::
 
 3. Select **Share** to stop sharing the bot with everyone in the organization.
 
