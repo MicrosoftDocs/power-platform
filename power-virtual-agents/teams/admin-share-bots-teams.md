@@ -36,7 +36,7 @@ You can share your bot with security groups so their members can chat with the b
 2. Specify the security group name that you would like to share the bot with.
 
   >[!NOTE]
-  >You can only share a bot with security groups outside of the team where the bot is created to chat with the bot. You cannot share with individual users directly. You can manage individual user access by adding or removing users from the security group.
+  >You can only share a bot with security groups. You cannot share with individual users directly. You can manage individual user access by adding or removing users from the security group.
 
 3. Review the security group's permission
 
