@@ -97,7 +97,7 @@ You should add your bot to your own version of Teams before sharing it with othe
 
 1. Go to the **Chatbot** tab.
 
-:::image type="content" source="media/publish-chatbot-tab-on-homepage.png" alt-text="The chatbot tab is in the top navigation pane.":::
+   :::image type="content" source="media/publish-chatbot-tab-on-homepage.png" alt-text="The chatbot tab is in the top navigation pane.":::
 
 2. Open the bot you want to share.
 
@@ -105,12 +105,12 @@ You should add your bot to your own version of Teams before sharing it with othe
 
 4. Select **Make the bot available to others** 
 
-:::image type="content" source="media/publish-teams-share-flyout.png" alt-text="Selecting Share the bot opens a new flyout window.":::
+   :::image type="content" source="media/publish-teams-share-flyout.png" alt-text="Selecting Share the bot opens a new flyout window.":::
 
 5. Select **Availability options** and select **Copy link**
 
->[!IMPORTANT]
->Only users who can access the bot can use the installation link to install the bot. You can [share bot to give user access to chat](admin-share-bots-teams.md) with the bot.
+   >[!IMPORTANT]
+   >Only users who can access the bot can use the installation link to install the bot. You can [share bot to give user access to chat](admin-share-bots-teams.md) with the bot.
 
 6. Share the copied link with users to install the bot in Microsoft Teams.
 
