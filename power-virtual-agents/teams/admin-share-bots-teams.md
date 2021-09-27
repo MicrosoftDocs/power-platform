@@ -31,7 +31,9 @@ User always has permission to chat with a bot when they are in the team where th
 ### Share bot with security groups
 You can share your bot with security groups so their members can chat with the bot.
 
-1. Select **Share** on the bot's homepage.
+1. Select **Share** on the bot's homepage. 
+
+:::image type="content" source="TBD" alt-text="Sharing UI entry point in bot homepage":::
 
 2. Specify the security group name that you would like to share the bot with.
 
@@ -69,6 +71,8 @@ You can stop sharing the bot with a security group or everyone in your organizat
 
 2. Select **X** next to the security groups that you want to stop sharing the bot with.
 
+:::image type="content" source="TBD" alt-text="Unshare security group in Sharing UI":::
+
 3. Select **Share** to stop sharing the bot with the security groups.
 
 **Stop sharing with everyone in the organization**
@@ -78,6 +82,8 @@ You can stop sharing the bot with a security group or everyone in your organizat
 2. Select **Everyone in _your organization's name_**.
 
 3. Select **None** option.
+
+:::image type="content" source="TBD" alt-text="Unshare everyone in the organization in Sharing UI":::
 
 3. Select **Share** to stop sharing the bot with everyone in the organization.
 
