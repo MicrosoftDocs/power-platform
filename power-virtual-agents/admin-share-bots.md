@@ -214,6 +214,9 @@ When [sharing the bot](#share-a-bot), you can assign the **Bot transcript viewer
 ### Manage security roles
 You can [manage environment security roles at the Power Platform admin center](/power-platform/admin/database-security#assign-security-roles-to-users-in-an-environment-that-has-a-common-data-service-database). 
 
+## Data permissions
+To make sure users who chat with your bot can run the [Power Automate](advanced-flow.md) flows correctly, you should test your bot to make sure thier permission with the integrated systems is configured correctly.
+
 ## Collaborate on bots
 
 After you've shared a bot, everyone can edit the bot's topics. 
