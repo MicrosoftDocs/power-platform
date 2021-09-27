@@ -20,7 +20,7 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](../admin-share-bots.md)
 > - [Power Virtual Agents app in Microsoft Teams](admin-share-bots-teams.md)
 
-Sharing bot with other users allows them to chat with your bot or collaborate together to author the bot. 
+Share bot with other users to chat with your bot or collaborate together to author the bot. 
 
 ## Share bots for user to chat with it
 User always has permission to chat with a bot when they are in the team where the bot is created. You can share bots with users outside of the team with the **Share** options available in Power Virtual Agents.
