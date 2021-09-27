@@ -20,11 +20,10 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](admin-share-bots.md)
 > - [Power Virtual Agents app in Microsoft Teams](teams/admin-share-bots-teams.md)
 
-Share bot with other users to chat with your bot or collaborate together to author the bot. 
+Share bot with other users to chat with your bot or collaborate together to author the bot. You can share bots with users via **Share** options available in Power Virtual Agents.
 
-
-## Share bots for user to chat with it
-User always has permission to chat with a bot when they are in the team where the bot is created. You can share bots with users outside of the team with the **Share** options available in Power Virtual Agents.
+## Share a bot for user to chat with it
+User always has permission to chat with a bot when they have permission to [collaborate on the bot](admin-share-bots.md#share-a-bot-for-collaoboration). You can share bots with additonal users to chat with it.
 
 ### Prerequisites
 - The bot's [end user authentication setting](advanced-end-user-authentication-teams.md) must be configured to **Only for Teams** or **Manual** with AAD as the provider and mandatory sign-in enabled to manage who can chat with the bot in your organization. 
@@ -32,7 +31,7 @@ User always has permission to chat with a bot when they are in the team where th
 ### Share bot with security groups
 You can share your bot with security groups so their members can chat with the bot.
 
-1. Select **Share** on the bot's homepage. 
+1. Select **Share** at the top of the bot's home page.
 
   :::image type="content" source="TBD" alt-text="Sharing UI entry point in bot homepage":::
 
@@ -57,7 +56,7 @@ You can share your bot with security groups so their members can chat with the b
 ### Share bot with everyone in the organization
 You can share your bot to allow everyone in the same organization as where the bot is to chat with it.
 
-1. Select **Share** on the bot's homepage.
+1. Select **Share** at the top of the bot's home page.
 
 2. Select **Everyone in _your organization's name_**.
 
@@ -74,7 +73,7 @@ You can share your bot to allow everyone in the same organization as where the b
 You can stop sharing the bot with a security group or everyone in your organization.
 
 **Stop sharing with a security group**
-1. Select **Share** on the bot's homepage.
+1. SSelect **Share** at the top of the bot's home page.
 
 2. Select **X** next to the security groups that you want to stop sharing the bot with.
 
