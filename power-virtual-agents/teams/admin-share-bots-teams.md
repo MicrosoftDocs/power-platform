@@ -12,7 +12,7 @@ ms.custom: "multi-author, admin, ceX, teams"
 ms.collection: virtual-agent
 ---
 
-# Collaborate with others 
+# Share your bot with other users
 
 Select the version of Power Virtual Agents you're using here:
 
@@ -20,7 +20,49 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](../admin-share-bots.md)
 > - [Power Virtual Agents app in Microsoft Teams](admin-share-bots-teams.md)
 
+Sharing bot with other users allows them to chat with your bot or collaborate together to author the bot. 
 
+## Share bots for user to chat with it
+User always has permission to chat with a bot when they are in the team where the bot is created. You can share bots with users outside of the team with the **Share** options available in Power Virtual Agents.
+
+### Prerequisites
+- The bot's [end user authentication setting](advanced-end-user-authentication-teams.md) must be configured to **Only for Teams** or **Manual** with AAD as the provider and mandatory sign-in enabled to manage who can chat with the bot in your organization. 
+
+### Share bot with security groups
+You can share your bot with security groups so their members can chat with the bot.
+
+1. Select **Share** on the bot's homepage.
+
+2. Specify the security group name that you would like to share the bot with.
+
+  >[!NOTE]
+  >You can only share a bot with security groups outside of the team where the bot is created to chat with the bot. You cannot share with individual users directly. You can manage individual user access by adding or removing users from the security group.
+
+3. Review the security group's permission
+
+4. If you want to let users know you've shared the bot with them, select the **Send an email invitation to new users** check box.
+
+  >[!NOTE]
+  >Only security groups with email enabled will recevie email invitation. You can directly **Copy link** and share it with users to install the bot in Microsoft Teams.
+
+5. Select **Share** to share the bot with the new security groups.
+
+### Share bot with everyone in the organization
+You can share your bot to allow everyone in the same organization as where the bot is to chat with it.
+
+1. Select **Share** on the bot's homepage.
+
+2. Select **Everyone in _your organization's name_**.
+
+3. Select **User - can use the bot** option.
+
+  >[!NOTE]
+  >Power Virtual Agents will not send email invitation to everyone in the organization. You can directly **Copy link** and share it with users to install the bot in Microsoft Teams.
+
+4. Select **Share** to share the bot with everyone in the organization.
+
+
+## Share bots to collaborate with others
 
 You can collaborate with others when building chatbots in Microsoft Teams. This means other members of your team can make edits and changes, and you can see who else is editing a topic.
 
@@ -33,11 +75,7 @@ Your permissions are determined by your [Microsoft Teams roles](/microsoftteams/
 >If you are an owner of an Azure Active Directory group associated with a team, but you are not also a member of that group, you might not see the team in the Power Apps and Power Virtual Agents apps in Microsoft Teams.  
 >You can add yourself as a member to the team and it will resolve the issue after a few minutes.
 
-## Share bots
-
-Everyone on your team has access to the bots you create. 
-
-To share your bot with other users, you need to [add them to your team](https://support.microsoft.com/office/add-members-to-a-team-in-teams-aff2249d-b456-4bc3-81e7-52327b6b38e9).
+To share your bot with other users for collaboration, you need to [add them to your team](https://support.microsoft.com/office/add-members-to-a-team-in-teams-aff2249d-b456-4bc3-81e7-52327b6b38e9).
 
 >[!NOTE]
 >It could take up to 15 minutes before the new team member sees the team in the Power Virtual Agents app.
