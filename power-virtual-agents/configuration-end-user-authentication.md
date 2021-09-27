@@ -21,7 +21,9 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents app in Microsoft Teams](teams/configuration-end-user-authentication-teams.md)
 
 
-You can configure a Power Virtual Agents bot to provide authentication capabilities, so users can sign in with an Azure Active Directory (AAD), or any [OAuth2 identity provider](/azure/active-directory/develop/v2-oauth2-auth-code-flow), such as a Microsoft account, or Facebook. You can [add user authentication to a Power Virtual Agents bot](advanced-end-user-authentication.md) when editing topic. 
+You can configure a Power Virtual Agents bot to provide authentication capabilities, so users can sign in with an Azure Active Directory (AAD), or any [OAuth2 identity provider](/azure/active-directory/develop/v2-oauth2-auth-code-flow), such as a Microsoft account, or Facebook. 
+
+You can [add user authentication to a Power Virtual Agents bot](advanced-end-user-authentication.md) when editing topic. 
 
 Power Virtual Agents supports the following authentication providers:
 * Azure Active Directory v1
