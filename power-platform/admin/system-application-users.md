@@ -4,7 +4,7 @@ description: "Learn about the special system and application users created when 
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 08/16/2021
+ms.date: 09/27/2021
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
@@ -83,6 +83,7 @@ Most of these users are hidden from user views but they can be found by using th
 **The purpose of the application users?** 
 - The application user is a built-in user account that is used to perform integration and system back-end service to support a particular feature.  
 - Since these are built-in user accounts, they cannot be updated. The security role that is assigned to these accounts cannot be updated either.  This is to prevent any service outages.  
+- These users do not consume any service licenses.
 
 
 
