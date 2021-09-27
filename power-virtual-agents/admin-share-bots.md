@@ -23,7 +23,7 @@ Select the version of Power Virtual Agents you're using here:
 Share bot with other users to chat with it or collaborate together to author the bot. You can share bots with users via **Share** options available in Power Virtual Agents.
 
 ## Share a bot for user to chat with it
-User always has permission to chat with a bot when they have permission to [collaborate on the bot](admin-share-bots.md#share-a-bot-for-collaoboration). You can share bots with additonal users to chat with it.
+User always has permission to chat with a bot when they have permission to [collaborate on the bot](admin-share-bots.md#share-a-bot-for-collaoboration). You can share bots with additonal users to only chat with it.
 
 ### Prerequisites
 - The bot's [end user authentication setting](advanced-end-user-authentication-teams.md) must be configured to **Only for Teams** or **Manual** with AAD as the provider and mandatory sign-in enabled to manage who can chat with the bot in your organization. 
