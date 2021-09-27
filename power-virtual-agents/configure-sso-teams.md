@@ -71,9 +71,9 @@ You will need to get your Teams app ID:
  
 1. Expand **Manage** on the side navigation pane, and then select **Channels**. Select the **Microsoft Teams** tile.
  
-2. In the panel that appears to the side, select **Submit for admin approval** and then copy the app ID by selecting **Copy**. 
+2. In the panel that appears to the side, select **Edit detail**, expand on **More** and then copy the app ID by selecting **Copy**. 
 
-    :::image type="content" source="media/TeamsSSO/image1.png" alt-text="Submit for admin approval screen showing App ID.":::
+    :::image type="content" source="media/teams-sso-app-id.PNG" alt-text="Edit bot detail showing App ID.":::
 
 >[!NOTE]
 >If you haven't already enabled the Teams channel, you will see instead see a notice that you need to enable Teams. Select **Turn on Teams** and then re-try Step 1 to get the app ID.  
