@@ -130,6 +130,9 @@ If you select the menu icon next the bot's name you can then select **Edit** to 
 
 If you rename, restore, or delete a team, it could take up to 2 hours for the changes to be reflected in the Power Virtual Agents app.
 
+## Data permissions
+To make sure users who chat with your bot can run the [Power Automate](advanced-flow.md) flows correctly, you should test your bot to make sure thier permission with the integrated systems is configured correctly.
+
 ## Collaborate on bots
 
 In the **Topics** list, you can see who's working on a topic under the **Currently editing** column. You can hover or click on the person's icon to quickly chat with them in Teams or send them an email. 
