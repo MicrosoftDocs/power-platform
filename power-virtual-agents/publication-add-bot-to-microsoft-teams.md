@@ -109,7 +109,7 @@ You should add your bot to your own version of Teams before sharing it with othe
 
 2. Select **Microsoft Teams**.
 
-1. Select **Open the bot** to have the installation prompt launch in Microsoft Teams. Select **Add** to have it added as an app in Teams. This only installs the bot for you.
+1. Select **Open bot** to have the installation prompt launch in Microsoft Teams. Select **Add** to have it added as an app in Teams. This only installs the bot for you.
 
 
 ## Share a link so others can install the bot
