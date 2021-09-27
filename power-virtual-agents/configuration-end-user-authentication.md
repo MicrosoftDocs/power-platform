@@ -183,10 +183,6 @@ Authorization URL Query String Template | Query template for authorization, prov
 
 After the setup steps are complete, save your configuration and test it by [creating a new topic using authentication](advanced-end-user-authentication.md).
 
-## Set the appropriate access control for your end users
-
-Once you have your authentication configured, make sure to go to **Manage** -> **Security** -> **Access** and configure the appropriate access control for your bot. You can learn more about access control in the [Assign access and change security options documentation](configuration-security.md) documentation topic.
-
 
 ## Remove the authentication configuration
 
