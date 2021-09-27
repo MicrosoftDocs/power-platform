@@ -29,9 +29,9 @@ Now that you have published your bot, you can make your bot available to users i
 You can:
 - Customize your bot's apperance in Microsoft Teams
 - Install your bot in Microsoft Teams
-- Share direct installation link with other users
+- Share the bot's installation link with other users
 - Show the bot in Microsoft Teams app store
-   - Show the bot to your teammates or security groups by adding it to Microsoft Teams app store **Built by your colleagues** section
+   - Show the bot to your teammates or security group members by adding it to Microsoft Teams app store **Built by your colleagues** section
    - Show the bot with the organization by submitting the bot for admin approval to be featured in the Microsoft Teams app store **Published by your org** section
 - Download the pre-generated Teams app manifest to distribute it within your Microsoft Teams tenant
 
@@ -39,7 +39,7 @@ You can:
 ## Prerequisites
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations-teams.md)]
-- [Share with end users]() so they can install and chat with the bot in Microsoft Teams.
+- [Share with users](configuration-security-teams.md) so they can install and chat with the bot in Microsoft Teams.
 - Your organization needs to allow Microsoft Power Platform apps to be added to Microsoft Teams before you or other users can directly install the bot in Teams or find it in the **Built by your colleagues** section in the Teams app store. Work with your admin to [Manage Microsoft Power Platform apps in the Microsoft Teams admin center](/microsoftteams/manage-power-platform-apps) if it has been disabled for your organization.
 - Bots that are approved for the **Built by your organization** section (after submission to an admin) are managed separately by admins in the Microsoft Teams admin center's [Manage apps page](/microsoftteams/submit-approve-custom-apps#validate).
 - Before installing the bot for yourself or sharing the bot with others, you should [publish the bot at least once](publication-fundamentals-publish-channels-teams.md).
@@ -97,7 +97,7 @@ You should add your bot to your own version of Teams before sharing it with othe
 
 1. Go to the **Chatbot** tab.
 
-    :::image type="content" source="media/publish-chatbot-tab-on-homepage.png" alt-text="The chatbot tab is in the top navigation pane.":::
+:::image type="content" source="media/publish-chatbot-tab-on-homepage.png" alt-text="The chatbot tab is in the top navigation pane.":::
 
 2. Open the bot you want to share.
 
@@ -105,42 +105,47 @@ You should add your bot to your own version of Teams before sharing it with othe
 
 4. Select **Make the bot available to others** 
 
-    This pops up a new window where you can customize how the bot will be shown to people searching for it on the Microsoft Teams app store. 
-
-    :::image type="content" source="media/publish-teams-share-flyout.png" alt-text="Selecting Share the bot opens a new flyout window.":::
-
+:::image type="content" source="media/publish-teams-share-flyout.png" alt-text="Selecting Share the bot opens a new flyout window.":::
 
 5. Select **Availability options** and select **Copy link**
 
-    >[!IMPORTANT]
-    >Only users who can access the bot can use the installation link to install the bot. You can [share bot to give user access to chat](configuration-security-teams.md) with the bot.
+>[!IMPORTANT]
+>Only users who can access the bot can use the installation link to install the bot. You can [share bot to give user access to chat](configuration-security-teams.md) with the bot.
 
 6. Share the copied link with users to install the bot in Microsoft Teams.
 
 
-## Share the bot with your Team
+## Show the bot in Microsoft Teams app store
 
-Once you've published your bot, you can share it with other Microsoft Teams users so they can find it in the Microsoft Teams app store. You can share it with your team directly.
+Once you've published your bot, you can show it in the Microsoft Teams app store so users can find and install it. 
 
 
-### Add the bot to the Built by your colleagues section
+### Show to teammates and shared security groups
 
-You can share your bot with your team by adding it to the Microsoft Teams app store, **Built for *your-organization-name*** > **Built by your colleagues** section. Only your teammates will find the bot there.
+You can share your bot with your team by adding it to the Microsoft Teams app store, **Built for your org > **Built by your colleagues** section. Only your teammates and [shared users](configuration-security-teams.md) will find the bot there.
 
 :::image type="content" source="media/publish-teams-your-colleagues.png" alt-text="The Built by your colleagues section as at the bottom of the Built for COMPANY NAME section in the Teams app store.":::
 
 1. Go to the **Chatbot** tab.
 
-2. Open the bot you want to share.
+2. Open the bot you want to show in Microsoft Teams app store.
 
 3. On the side navigation pane, select **Publish**.
 
-4. Select **Share the bot**.
+4. Select **Make the bot available to others**.
 
-5. Select **Add to Teams**. This will automatically add the bot to the **Built by your colleagues** section, and will show a green label **Added to Teams**.
+5. Select **Availability options**. 
+
+6. Select **Show to my teammates and shared users** and review who has access to the bot.
+
+7. Confirm **Visibile in Build by your colleagues** checkbox is selected and select **Share**.
+
+8. This will automatically add the bot to the **Built by your colleagues** section, and will show a green label **Added to Teams** in the availabilty options page.
 
 :::image type="content" source="media/publish-teams-share-flyout-added.png" alt-text="The flyout shows the bot has been added to Teams with a checkmark and green box.":::
 
+>[!IMPORTANT]
+>Only teammates or members of shared security groups can find and install the bot in Microsoft Teams app store Built by your colleague section. The bot will not show for everyone in the organization even if it is configured to allow everyone to use the bot. To show the bot to everyone in the organization, [submit the bot for admin's approval]() to show in Microsoft Teams app store Built by your org section.
 
 >[!NOTE]
 >If your app doesn't appear in the **Built by your colleagues** section, your Teams app might be caching information. 
@@ -158,14 +163,17 @@ You can remove the bot from showing in the **Built by your colleagues** section.
 
 3. On the side navigation pane, select **Publish**.
 
-4. Select **Share the bot**.
+4. Select **Make the bot available to others**.
 
-5. Select **Remove**. This option only appears if you've already added the bot to the **Built by your colleagues** section.
+5. Select **Availability options**. 
+
+6. Select **Show to my teammates and shared users** and remove **Visibile in Build by your colleagues** checkbox selection. 
+
+5. Select **Share**. Now the bot will no longer show in Microsoft Teams app store **Built by your colleague** section.
 
 :::image type="content" source="media/publish-teams-share-flyout-remove.png" alt-text="Next to the green box indicating the bot has been Added to Teams you can select Remove.":::
 
-## Share the bot with your organization
-
+## Show to the organization
 
 You can share the bot with your organization by submitting your bot for admin approval to be featured in the **Built for *your-organization-name*** > **Built by your org** section.
 
