@@ -120,17 +120,6 @@ Your bot's **authentication option** and **Require user to sign in** combination
 
 :::image type="content" source="TBD" alt-text="Everyone in the organization can chat with bot because of authentication setting.":::
 
-### Require users to sign in
-
-This setting controls if users need to sign in before talking to your bot. Bots that manage private or sensitive information should use this option. 
-
-If you want your bot to be publicly accessible (such as on a web channel), you can turn this option off. 
-
-Bots with this configuration turned **Off** won't ask users to sign in until they encounter a topic which requires them to do so.
-
-When the **Require users to sign in** option is turned **On**, a new system topic called **Require users to sign in** is created. This topic is only relevant for the "Manual" authentication setting, as users are always authenticated on Teams.
-
-This topic is automatically triggered for any user who talks to the bot without being authenticated. This topic is read-only and cannot be customized. If the user fails to sign in, this topic redirects the user to the **Escalate** system topic. You can see the topic by clicking **Go to the authoring canvas**.
 
 ## Register a new app with your identity provider when using Manual (for any channel including Teams)
 
