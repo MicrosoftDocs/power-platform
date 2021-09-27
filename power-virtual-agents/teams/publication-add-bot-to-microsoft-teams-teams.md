@@ -28,28 +28,34 @@ Now that you have published your bot, you can make your bot available to users i
 
 You can:
 - Customize your bot's apperance in Microsoft Teams
-- Install your bot in Microsoft Teams and share a direct installation link with others
-- Share the bot with your teammates or security groups by adding it to Microsoft Teams app store **Built by your colleagues** section
-- Share the bot with the organization by submitting the bot for admin approval to be featured in the Microsoft Teams app store **Published by your org** section
+- Install your bot in Microsoft Teams
+- Share direct installation link with other users
+- Show the bot in Microsoft Teams app store
+   - Show the bot to your teammates or security groups by adding it to Microsoft Teams app store **Built by your colleagues** section
+   - Show the bot with the organization by submitting the bot for admin approval to be featured in the Microsoft Teams app store **Published by your org** section
 - Download the pre-generated Teams app manifest to distribute it within your Microsoft Teams tenant
-
 
 
 ## Prerequisites
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations-teams.md)]
-- Your organization will need to allow Microsoft Power Platform apps to be added to Microsoft Teams before you or other users can directly install the bot in Teams or find it in the **Built by your colleagues** section in the Teams app store. Work with your admin to [Manage Microsoft Power Platform apps in the Microsoft Teams admin center](/microsoftteams/manage-power-platform-apps) if it has been disabled for your organization.
+- [Share with end users]() so they can install and chat with the bot in Microsoft Teams.
+- Your organization needs to allow Microsoft Power Platform apps to be added to Microsoft Teams before you or other users can directly install the bot in Teams or find it in the **Built by your colleagues** section in the Teams app store. Work with your admin to [Manage Microsoft Power Platform apps in the Microsoft Teams admin center](/microsoftteams/manage-power-platform-apps) if it has been disabled for your organization.
 - Bots that are approved for the **Built by your organization** section (after submission to an admin) are managed separately by admins in the Microsoft Teams admin center's [Manage apps page](/microsoftteams/submit-approve-custom-apps#validate).
 - Before installing the bot for yourself or sharing the bot with others, you should [publish the bot at least once](publication-fundamentals-publish-channels-teams.md).
 
 ## Customize bot's appearance in Microsoft Teams
+Providing the right description and appearance for the bot before making it available to other users is important as it educates them on what the bot's purpose is and its branding when applicable.
 
-1. Select **Edit details** to change the bot's icon, color, and descriptions. These will be shown in the search results in the Microsoft Teams app store. [Review the recommendations on Microsoft Teams icon formats](/microsoftteams/platform/resources/schema/manifest-schema#icons).
+1. Go to the **Publish** tab on the side navigation pane and select **Maker available to others**.
+
+1. Select **Edit details** to change the bot's icon, color, and descriptions. These will be shown in Microsoft Teams app store and the app's About tab after user installs it. [Review the recommendations on Microsoft Teams icon formats](/microsoftteams/platform/resources/schema/manifest-schema#icons).
 
         :::image type="content" source="media/publish-share-to-store.png" alt-text="You can make changes to the icon, background color, and descriptions":::
 
         >[!IMPORTANT]
-        >Updates to the bot's icon and color will not apply to users who have already installed the bot via shared link or [built by your colleague section](#add-the-bot-to-the-built-by-your-colleagues-section). They will need to reinstall to the bot to receive the updates.
+        >Updates to the bot's detail will not apply to users who have already installed the bot via shared link or [built by your colleague section](#add-the-bot-to-the-built-by-your-colleagues-section). They will need to reinstall to the bot to receive the updates.
+        >Updates to the bot's detail will not apply to bots that have been approved by admin. You will need to resubmit the bot for approval to have the latest detail updated for users.
 
 2. Select **More** to add additional information:  
     - Developer name
@@ -62,11 +68,7 @@ You can:
     3. Select **Save** to return to the screen where you can make your bot available in Teams. You'll see your updates to the color, icon, and description are shown.
 
 ## Install a bot as an app in Microsoft Teams
-
-
-After you have published a bot, you and people in your organization can install to chat with it in Microsoft Teams. Whenever you make updates to your bot and publish it, those updates will be reflected in everyone's copy of the bot.
-
-You can add the bot to your own version of Microsoft Teams directly from the Power Virtual Agents app, or you can get a link to share with other team members so they can add it to chat with it in Microsoft Teams.
+After you have published a bot, you can add the bot to your own version of Microsoft Teams directly from the Power Virtual Agents app.
 
 >[!IMPORTANT]
 >New content in a freshly published bot won't appear in conversations that are currently ongoing. After 30 minutes of idle time, the bot will be updated.  
@@ -77,8 +79,6 @@ You should add your bot to your own version of Teams before sharing it with othe
 >[!IMPORTANT]
 >Make sure to **Publish** your bot if you make changes - otherwise everyone that is using the bot won't see your updates.  
 >It typically takes a few minutes for published changes to be seen by everyone.
-
-**Add the bot for yourself:**
 
 1. Go to the **Chatbot** tab.
 
@@ -93,7 +93,7 @@ You should add your bot to your own version of Teams before sharing it with othe
 1. Select **Open the bot** to have the installation prompt launch in Microsoft Teams. Select **Add** to have it added as an app in Teams. This only installs the bot for you.
 
 
-**Share a link so others can add the bot:**
+## Share a link so others can add the bot
 
 1. Go to the **Chatbot** tab.
 
@@ -103,35 +103,19 @@ You should add your bot to your own version of Teams before sharing it with othe
 
 3. On the side navigation pane, select **Publish**.
 
-4. Select **Make bot available to others** 
+4. Select **Make the bot available to others** 
 
     This pops up a new window where you can customize how the bot will be shown to people searching for it on the Microsoft Teams app store. 
 
     :::image type="content" source="media/publish-teams-share-flyout.png" alt-text="Selecting Share the bot opens a new flyout window.":::
 
 
+5. Select **Availability options** and select **Copy link**
+
     >[!IMPORTANT]
-    >Only users who can access the bot can use the installation link to install the bot. You can configure who access it in the [security settings](configuration-security-teams.md) for the bot.
+    >Only users who can access the bot can use the installation link to install the bot. You can [share bot to give user access to chat](configuration-security-teams.md) with the bot.
 
-    1. Select **Edit details** to change the bot's icon, color, and descriptions. These will be shown in the search results in the Microsoft Teams app store. [Review the recommendations on Microsoft Teams icon formats](/microsoftteams/platform/resources/schema/manifest-schema#icons).
-
-        :::image type="content" source="media/publish-share-to-store.png" alt-text="You can make changes to the icon, background color, and descriptions":::
-
-        >[!IMPORTANT]
-        >Updates to the bot's icon and color will not apply to users who have already installed the bot via shared link or [built by your colleague section](#add-the-bot-to-the-built-by-your-colleagues-section). They will need to reinstall to the bot to receive the updates.
-
-    2. Select **More** to add additional information:  
-        - Developer name
-        - Website
-        - Privacy Statement
-        - Terms of use
-
-       You should provide this information to keep your user informed about the bot. See the [Privacy statement and terms of use](publication-terms-of-use-teams.md) topic for more details and examples.
-
-    3. Select **Save** to return to the screen where you can make your bot available in Teams. You'll see your updates to the color, icon, and description are shown.
-
-5. Select **Copy link** and send it to other people who want to use the bot.
-
+6. Share the copied link with users to install the bot in Microsoft Teams.
 
 
 ## Share the bot with your Team
