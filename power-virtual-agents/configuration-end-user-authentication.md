@@ -108,6 +108,7 @@ Your bot's authentication options and mandatory sign-in configuration determines
   - If your authentication provider is set as **Generic OAuth 2**, you can toggle the **Require users to sign in** option, but you cannot control which users can chat with the bot in your organization. 
 
 **Share** at the top of bot's homepage will show everyone in the organization is able to chat with the bot When the bot's authentication configuration cannot control who can chat with the bot in the organization.
+
 :::image type="content" source="TBD" alt-text="Everyone in the organization can chat with bot because of authentication setting.":::
 
 ## Register a new app with your identity provider when using Manual (for any channel including Teams)
