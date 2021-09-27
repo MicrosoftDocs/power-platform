@@ -98,15 +98,17 @@ Once the configuration is saved, make sure to publish your bot so the changes ta
 
 Your bot's authentication options and mandatory sign-in configuration determines whether you can [share the bot](admin-share-bots.md#share-a-bot-for-user-to-chat-with-it) to control who in your organization can chat with your bot or not. Sharing bot for collaboration is not impacted by the end user authentication setting.
 
-- **No authentication**. Any user who has a link to the bot (or can find it, for example, on your website) can chat with it.
+- **No authentication**. Any user who has a link to the bot (or can find it, for example, on your website) can chat with it. You cannot control which users can chat with the bot in your organization.
 
-    :::image type="content" source="media/security-access-no-auth.png" alt-text="The Access setting can't be changed.":::
 
 - **Only for Teams**. The bot will only work on [the Teams channel](publication-add-bot-to-microsoft-teams.md). This means the user will always be signed in, and therefore the **Require users to sign in** option will be enabled and can't be changed. You can control who can chat with the bot in your organization.
 
 - **Manual (for any channel including Teams)**. 
   - If your authentication setting is configured to **Manual**, and the service provider is either **Azure Active Directory** or **Azure Active Directory V2**, you can enable the **Require users to sign in** option to control who can chat with the bot in your organization.
   - If your authentication provider is set as **Generic OAuth 2**, you can toggle the **Require users to sign in** option, but you cannot control which users can chat with the bot in your organization. 
+
+**Share** at the top of bot's homepage will show everyone in the organization is able to chat with the bot When the bot's authentication configuration cannot control who can chat with the bot in the organization.
+:::image type="content" source="TBD" alt-text="Everyone in the organization can chat with bot because of authentication setting.":::
 
 ## Register a new app with your identity provider when using Manual (for any channel including Teams)
 
