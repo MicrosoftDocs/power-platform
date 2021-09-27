@@ -61,6 +61,25 @@ You can share your bot to allow everyone in the same organization as where the b
 
 4. Select **Share** to share the bot with everyone in the organization.
 
+### Stop sharing bot
+You can stop sharing the bot with a security group or everyone in your organization.
+
+**Stop sharing with a security group**
+1. Select **Share** on the bot's homepage.
+
+2. Select **X** next to the security groups that you want to stop sharing the bot with.
+
+3. Select **Share** to stop sharing the bot with the security groups.
+
+**Stop sharing with everyone in the organization**
+
+1. Select **Share** on the bot's homepage.
+
+2. Select **Everyone in _your organization's name_**.
+
+3. Select **None** option.
+
+3. Select **Share** to stop sharing the bot with everyone in the organization.
 
 ## Share bots to collaborate with others
 
