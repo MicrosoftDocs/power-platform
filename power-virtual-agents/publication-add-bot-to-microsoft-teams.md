@@ -118,14 +118,14 @@ You should add your bot to your own version of Teams before sharing it with othe
 
 2. Select **Microsoft Teams**.
 
-:::image type="content" source="media/publish-teams-share-flyout.png" alt-text="Selecting Share the bot opens a new flyout window.":::
+   :::image type="content" source="media/publish-teams-share-flyout.png" alt-text="Selecting Share the bot opens a new flyout window.":::
 
-5. Select **Availability options** and select **Copy link**
+3. Select **Availability options** and select **Copy link**
 
->[!IMPORTANT]
->Only users who can access the bot can use the installation link to install the bot. You can [share bot to give user access to chat](admin-share-bots.md) with the bot.
+   >[!IMPORTANT]
+   >Only users who can access the bot can use the installation link to install the bot. You can [share bot to give user access to chat](admin-share-bots.md) with the bot.
 
-6. Share the copied link with users to install the bot in Microsoft Teams.
+4. Share the copied link with users to install the bot in Microsoft Teams.
 
 
 ## Show the bot in Microsoft Teams app store
@@ -186,11 +186,9 @@ You can remove the bot from showing in the **Built by your colleagues** section.
 
 
 
+## Show to the organization
 
-## Share the bot with your organization
-
-
-You can share the bot with your organization by submitting your bot for admin approval to be featured in the **Built for *your-organization-name*** > **Built by your org** section.
+You can share the bot with your organization by submitting your bot for admin approval to be featured in the **Built for your org > **Built by your org** section. This is a great way to broadly distribute your bot by partnering with your admin to roll out the bot to everyone in the organization or a subset of users. 
 
 
 :::image type="content" source="media/publish-teams-your-org.png" alt-text="The Built by your org section as at the top of the Built for COMPANY NAME section in the Teams app store.":::
@@ -202,8 +200,8 @@ Admins can also [preinstall and pin the bot](/microsoftteams/teams-app-setup-pol
 Before submitting the bot to your organization, make sure:
 
 - Your bot is ready for release and in compliance with company standards, rules and policies.
-- You coordinate with your teammates: once the bot have been submitted it can't be re-submitted by a different user until the previous submission is approved or rejected by an admin.
-
+- You coordinate with other bot managers: once the bot has been submitted it can't be re-submitted by a different user until the previous submission is approved or rejected by an admin.
+- You have removed the bot, if applicable, from the **Built by your colleagues** section. Submitting your bot for admin approval could result in your bot showing up in two places. See the instructions on [removing your bot](#remove-the-bot-from-the-built-by-your-colleagues-section) for details. 
 
 >[!NOTE]
 >Once a bot is approved by an admin, the bot availability in the **Built by your org** section will be completely managed by your admin. Only an admin can remove the bot from the **Built by your org** section.
@@ -211,53 +209,58 @@ Before submitting the bot to your organization, make sure:
 
 ### Submit for the Built by your org section
 
-1.  Go to **Manage**, then **Channels** on the side navigation pane.
 
-1.  Select **Microsoft Teams**.
+1. Go to **Manage**, then **Channels** on the side navigation pane. 
 
-1. Select **Submit for admin approval**.
+2. Select **Microsoft Teams**.
 
-1. Review the requirements for submission, and select **Submit for admin approval**.
+5. Select **Availability options**. 
 
-1. You will be asked if you want to make any last [updates to your bot information](#install-a-bot-as-an-app-in-microsoft-teams). Once you've confirmed everything is correct, select **Submit for admin approval**
+5. Confirm the bot is not showed to teammates or shared users. [Remove](#remove-the-bot-from-the-built-by-your-colleagues-section) if it says **Added to Teams**.
+
+6. Select **Show to everyone in my org**.
+
+7. Review the requirements for submission, and select **Submit for admin approval**.
 
     >[!NOTE]
-    >Make sure you review the content and it's ready for an admin to review. You will need to submit new requests to the admin to update the icon and descriptions for bots that were previously approved.  
+    >Make sure you review the content and it's ready for an admin to review. You will need to submit new requests to the admin to [update the icon and descriptions](#customize-bots-appearance-in-microsoft-teams) for bots that were previously approved.  
     >Once approved, all new and existing users of the bot in Teams will receive the update.  
     >This only applies to the bot details. You can continue to make content updates to your bot by publishing the latest content without needing to re-submit to admin.
 
-1. A final confirmation prompt will appear. Select **Yes** to continue. The bot will be sent to your admin [for them to approve it](/microsoftteams/submit-approve-custom-apps#validate), and you will see a note indicating the status of your submission.
+9. A final confirmation prompt will appear. Select **Yes** to continue. The bot will be sent to your admin [for them to approve it](/microsoftteams/submit-approve-custom-apps#validate), and you will see a note indicating the status of your submission.
 
+    :::image type="content" source="media/publish-share-submit-status.png" alt-text="The status has an orange note with information about the status of the submission, including the name of the bot, the version number, and the current status Waiting for approval":::
 
     >[!NOTE]
-    >After submitting the bot for admin approval, you should not change the bot's access setting to be less than everyone in your organization.  
+    >After submitting the bot for admin approval, you should not change the bot's access setting to be less than everyone in your organization.
     >This will result in users in the organization unable to chat with the bot after installing it from the Microsoft Teams app store **Built by your org** section.
+    >Work with your admin via [Microsoft Teams app policy](https://docs.microsoft.com/MicrosoftTeams/teams-app-setup-policies) on who can find and install the bot.
 
-1. You will need to wait for your [admin's approval](/microsoftteams/submit-approve-custom-apps). You can check the latest status by selecting **Refresh**, or opening the **Share the bot** window from the **Publish** page.
+10. You will need to wait for your [admin's approval](/microsoftteams/submit-approve-custom-apps).  You can check the latest status by selecting **Refresh**, or opening the **Make the bot available to others** window from the **Publish** page.
 
-1. After your admin approves the bot, the status will be updated to **Approved**. You can directly open the bot and share the approved version's link with other users.
+11. After your admin approves the bot, the status will be updated to **Approved**. You can directly open the bot and share the approved version's link with other users.
+
+12. Optionally partner with your admin to pre-pin or install the app for users via [Microsoft Teams app policy](https://docs.microsoft.com/MicrosoftTeams/teams-app-setup-policies) so they can find the bot directly in their Microsoft Teams left app rail.
 
 >[!NOTE]
 >If your app doesn't appear in the **Built by your org** section even though it's marked as **Approved**, your Teams app might be caching information. 
->Try signing out and back in again (if you're using the desktop app) or refreshing your browser (if you're using the web app of Teams).
+>Try signing out and back in again (if you're using the desktop app) or refreshing your browser (if you're using the Teams web app).
 
-### Download the bot's Teams app manifest (advanced)
+
+## Download the bot's Teams app manifest (advanced)
 
 You can download the bot's Teams app manifest to make detail changes to the manifest directly and share with your admin or users in the tenant. You can also directly upload the app manifest into Microsoft Teams if your organization's policy allows you to [upload custom applications](/microsoftteams/platform/concepts/deploy-and-publish/apps-upload).
 
 
-1.  Go to **Manage**, then **Channels** on the side navigation pane.
+1. Go to **Manage**, then **Channels** on the side navigation pane. 
 
-1.  Select **Microsoft Teams**.
+2. Select **Microsoft Teams**.
 
-1. Select **Submit for admin approval**.
+5. Select **Availability options**. 
  
-1. Select **Download manifest**.
+7. Select **Download .zip**.
 
-1. You will be asked if you want to make any last [updates to your bot information](#install-a-bot-as-an-app-in-microsoft-teams). Once you've confirmed everything is correct, select **Download manifest**.
-
-1. The manifest will be generated as a .zip file, and will be saved according to your browser's save settings.
-
+9. The manifest will be generated as a .zip file, and will be saved according to your browser's save settings.
 
 
 
@@ -265,23 +268,25 @@ You can download the bot's Teams app manifest to make detail changes to the mani
 
 You can take your bot offline so users can no longer chat with the bot in Teams. This means the bot won't respond to anyone who tries to chat with it, and will disrupt anyone who is using the bot. You should thoroughly consider the need to disconnect your bot before you do so.
 
-For bots that are shared with the organization, the bots will continue to be shown in the Microsoft Teams app store **Built by your org** section. You will need to contact your admin to remove the bot.
+Bots no longer show in the Microsoft Teams app store **Built by your colleague** section or be able to install it from the shared link. Bots that are added by users in Microsoft Teams will continue to exist until the user [uninstalls the bot](#uninstall-the-bot-from-the-side-navigation-bar).
+
+For bots that are approved by admin, the bots will continue to be shown in the Microsoft Teams app store **Built by your org** section. You will need to contact your admin to remove the bot
 
 
-1.  Go to **Manage**, then **Channels** on the side navigation pane.
+1. Go to **Manage**, then **Channels** on the side navigation pane. 
 
-1.  Select **Microsoft Teams**.
+2. Select **Microsoft Teams**.
 
-1. Select **Disconnect bot from Teams**.
+1. Select **Disconnect from Teams**.
 
 1. Review the information about disconnecting your bot, and select **Disconnect** to continue.
 
-You can always reconnect your bot after disconnecting by selecting **Turn on Teams** in the **Share the bot** window on the **Publish** page.
+You can always reconnect your bot after disconnecting by selecting **Turn on Teams** in the **Make the bot available to others** window on the **Publish** page.
 
 
 ## Known limitations
 - Currently only **Personal** scope is supported for Microsoft Teams so users can only have private conversation with the bot
-- By setting bot avatar icon via **Manage -> Detail** will not show up for bots that are approved by admin. Bots approved by admin will use the app icon as the bot avatar.
+- [Setting the bot avatar icon](customize-default-canvas.md) from side navigation pane **Manage** > **Details** will not show up for bots that are approved by an admin. Bots approved by an admin will use the app icon as the bot avatar.
 - Teams has [rate limiting](/microsoftteams/platform/concepts/bots/rate-limit) on bots. Depending on your business needs, you might want to keep your bot content concise for bots that are added to Microsoft Teams.
 - Currently, if your bot supports [end-user authentication](advanced-end-user-authentication.md), the user will not be able to explicitly sign out. This will fail the Microsoft Teams AppSource certification if you are publishing your bot in the Seller Dashboard. This does not apply to personal or tenant usage of the bot. Learn more at [Publish your Microsoft Teams app](/microsoftteams/platform/publishing/apps-publish) and [AppSource Validation Policy](/office/dev/store/validation-policies).
 - Disconnecting your bot from Teams might take a few minutes before the bot becomes unreachable by users on Microsoft Teams.
