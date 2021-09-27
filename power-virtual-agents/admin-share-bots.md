@@ -161,7 +161,7 @@ To let other users edit or add flows you'll need to share them in Power Automate
 3. Enter the name or email address of the user you want to give editing permissions to.
 
 
-## Stop sharing a bot
+### Stop sharing a bot
 
 You can stop sharing a bot with a user, and any shared user can stop the bot from being shared with other users, except for the owner. The owner will always have access to the bot.
 
