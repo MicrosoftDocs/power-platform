@@ -219,7 +219,7 @@ Before submitting the bot to your organization, make sure:
 7. Review the requirements for submission, and select **Submit for admin approval**.
 
     >[!NOTE]
-    >Make sure you review the content and it's ready for an admin to review. You will need to submit new requests to the admin to [update the icon and descriptions](publication-add-bot-to-microsoft-teams-teams.md#customize-bots-appearance-in-microsoft-teams) for bots that were previously approved.  
+    >Make sure you review the content and it's ready for an admin to review. You will need to submit new requests to the admin to [update the icon and descriptions](#customize-bots-appearance-in-microsoft-teams) for bots that were previously approved.  
     >Once approved, all new and existing users of the bot in Teams will receive the update.  
     >This only applies to the bot details. You can continue to make content updates to your bot by publishing the latest content without needing to re-submit to admin.
 
