@@ -21,9 +21,7 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents app in Microsoft Teams](teams/configuration-end-user-authentication-teams.md)
 
 
-You can configure a Power Virtual Agents bot to provide authentication capabilities, so users can sign in with an Azure Active Directory (AAD), or any [OAuth2 identity provider](/azure/active-directory/develop/v2-oauth2-auth-code-flow), such as a Microsoft account, or Facebook. 
-
-To learn how to add authentication to a bot topic, see [Add user authentication to a Power Virtual Agents bot](advanced-end-user-authentication.md).
+You can configure a Power Virtual Agents bot to provide authentication capabilities, so users can sign in with an Azure Active Directory (AAD), or any [OAuth2 identity provider](/azure/active-directory/develop/v2-oauth2-auth-code-flow), such as a Microsoft account, or Facebook. You can [add user authentication to a Power Virtual Agents bot](advanced-end-user-authentication.md) when editing topic. 
 
 Power Virtual Agents supports the following authentication providers:
 * Azure Active Directory v1
@@ -94,22 +92,44 @@ Once the configuration is saved, make sure to publish your bot so the changes ta
 > [!NOTE]
 > Authentication changes only take effect after the bot is published.
 
-## End user access based on authentication configuration
+## Required user sign in and bot sharing
 
-Your bot's authentication options and mandatory sign-in configuration determines whether you can [share the bot](admin-share-bots.md#share-a-bot-for-user-to-chat-with-it) to control who in your organization can chat with your bot or not. Sharing bot for collaboration is not impacted by the end user authentication setting.
+**Required users to sign in** controls if user need to sign in before talking with the bot.  It is highly recommended to turn on this setting when the bot contains sensitive information.
+
+If you want your bot to be publicly accessible (such as on a web channel), you can turn this option off. 
+
+Bots with this configuration turned **Off** won't ask users to sign in until they encounter a topic which requires them to do so.
+
+When the **Require users to sign in** option is turned **On**, a new system topic called **Require users to sign in** is created. This topic is only relevant for the "Manual" authentication setting, as users are always authenticated on Teams.
+
+This topic is automatically triggered for any user who talks to the bot without being authenticated. This topic is read-only and cannot be customized. If the user fails to sign in, this topic redirects the user to the **Escalate** system topic. You can see the topic by clicking **Go to the authoring canvas**.
+
+Your bot's **authentication option** and **Require user to sign in** combination determines whether you can [share the bot](admin-share-bots.md#share-a-bot-for-user-to-chat-with-it) to control who in your organization can chat with your bot or not. Sharing bot for collaboration is not impacted by the end user authentication setting. 
 
 - **No authentication**. Any user who has a link to the bot (or can find it, for example, on your website) can chat with it. You cannot control which users can chat with the bot in your organization.
 
 
-- **Only for Teams**. The bot will only work on [the Teams channel](publication-add-bot-to-microsoft-teams.md). This means the user will always be signed in, and therefore the **Require users to sign in** option will be enabled and can't be changed. You can control who can chat with the bot in your organization.
+- **Only for Teams**. The bot will only work on [the Teams channel](publication-add-bot-to-microsoft-teams.md). This means the user will always be signed in, and therefore the **Require users to sign in** option will be enabled and can't be changed. You can control who can chat with the bot in your organization via bot sharing.
 
 - **Manual (for any channel including Teams)**. 
-  - If your authentication setting is configured to **Manual**, and the service provider is either **Azure Active Directory** or **Azure Active Directory V2**, you can enable the **Require users to sign in** option to control who can chat with the bot in your organization.
-  - If your authentication provider is set as **Generic OAuth 2**, you can toggle the **Require users to sign in** option, but you cannot control which users can chat with the bot in your organization. 
+  - If your authentication setting is configured to **Manual**, and the service provider is either **Azure Active Directory** or **Azure Active Directory V2**, you can enable the **Require users to sign in** option to control who can chat with the bot in your organization via bot sharing.
+  - If your authentication provider is set as **Generic OAuth 2**, you can toggle the **Require users to sign in** option. When turned on, user who signs in can chat with the bot but you cannot control which specific users are allowed to chat with the bot in your organization via bot sharing. 
 
 **Share** at the top of bot's homepage will show everyone in the organization is able to chat with the bot When the bot's authentication configuration cannot control who can chat with the bot in the organization.
 
 :::image type="content" source="TBD" alt-text="Everyone in the organization can chat with bot because of authentication setting.":::
+
+### Require users to sign in
+
+This setting controls if users need to sign in before talking to your bot. Bots that manage private or sensitive information should use this option. 
+
+If you want your bot to be publicly accessible (such as on a web channel), you can turn this option off. 
+
+Bots with this configuration turned **Off** won't ask users to sign in until they encounter a topic which requires them to do so.
+
+When the **Require users to sign in** option is turned **On**, a new system topic called **Require users to sign in** is created. This topic is only relevant for the "Manual" authentication setting, as users are always authenticated on Teams.
+
+This topic is automatically triggered for any user who talks to the bot without being authenticated. This topic is read-only and cannot be customized. If the user fails to sign in, this topic redirects the user to the **Escalate** system topic. You can see the topic by clicking **Go to the authoring canvas**.
 
 ## Register a new app with your identity provider when using Manual (for any channel including Teams)
 
