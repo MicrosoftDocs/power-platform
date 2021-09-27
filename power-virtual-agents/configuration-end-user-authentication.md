@@ -96,9 +96,7 @@ Once the configuration is saved, make sure to publish your bot so the changes ta
 
 ## Required user sign in and bot sharing
 
-**Required users to sign in** controls if user need to sign in before talking with the bot.  It is highly recommended to turn on this setting when the bot contains sensitive information.
-
-If you want your bot to be publicly accessible (such as on a web channel), you can turn this option off. 
+**Required users to sign in** controls if user need to sign in before talking with the bot.  It is highly recommended to turn on this setting when the bot contains sensitive information. If you want your bot to be publicly accessible (such as on a web channel), you can turn this option off. 
 
 Bots with this configuration turned **Off** won't ask users to sign in until they encounter a topic which requires them to do so.
 
@@ -106,7 +104,9 @@ When the **Require users to sign in** option is turned **On**, a new system topi
 
 This topic is automatically triggered for any user who talks to the bot without being authenticated. This topic is read-only and cannot be customized. If the user fails to sign in, this topic redirects the user to the **Escalate** system topic. You can see the topic by clicking **Go to the authoring canvas**.
 
-Your bot's **authentication option** and **Require user to sign in** combination determines whether you can [share the bot](admin-share-bots.md#share-a-bot-for-user-to-chat-with-it) to control who in your organization can chat with your bot or not. Sharing bot for collaboration is not impacted by the end user authentication setting. 
+### Share bot with user to chat with it
+
+Your bot's **authentication option** and **Require user to sign in** combination determines whether you can [share the bot](admin-share-bots.md#share-a-bot-for-user-to-chat-with-it) to control who in your organization can chat with your bot or not.  Sharing bot for collaboration is not impacted by the end user authentication setting. 
 
 - **No authentication**. Any user who has a link to the bot (or can find it, for example, on your website) can chat with it. You cannot control which users can chat with the bot in your organization.
 
