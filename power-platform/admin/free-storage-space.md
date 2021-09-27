@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/05/2021
+ms.date: 09/27/2021
 ms.subservice: admin
 ms.author: jimholtz 
 search.audienceType: 
@@ -94,7 +94,7 @@ Use the following methods to free up storage for each of the capacity types.
   
 5. In the search criteria area, add criteria similar to the following:  
   
-   **Status Reason** – **Equals** – **Completed**  
+   **Status Reason** – **Equals** – **Sent** or **Received**
   
    **Actual End** – **Older Than X Months** – 1  
   
