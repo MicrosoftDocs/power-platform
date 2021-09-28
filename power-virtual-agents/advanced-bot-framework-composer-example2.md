@@ -147,9 +147,6 @@ You are now ready to add your Composer content to your Power Virtual Agents bot.
 
 Once your new Composer content is successfully published, go to the Power Virtual Agents **Topics** page to verify that your new Composer content has been uploaded correctly. In your **Topics** list, you can see the new **Specials** and **DailySpecials** content that you have created in Bot Framework Composer.
 
->[!Note]
->Using Publish button in Composer does not automativally publish your Publish your Virtual Agents bot to the channels. Use [Publish](publication-fundamentals-publish-channels.md) feature in Power Virtual agents to publish your bot changes to the channels.
-
 >[!NOTE]
 >You might need to refresh your **Topics** page in Power Virtual Agents to see the new content that has been uploaded from Composer. 
 
@@ -162,6 +159,8 @@ Make sure **Track between topics** is turned on, and test your new bot content b
 :::image type="content" source="media/Composer_Example2/Example2._cropped.png" alt-text="Power Virtual Agents Test pane.":::
 
 
-
+>[!Note]
+>Using Publish button in Composer makes the changes avaliavble for testing, but does not automatically Publish your Power Virtual Agehts bot. Use [Publish](publication-fundamentals-publish-channels.md) feature in Power Virtual Agents to publish your bot changes to the channels.
+>
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
