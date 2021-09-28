@@ -172,8 +172,6 @@ ${virtualagent.user_city}
 ```
 
 ## Examples for extending Power Virtual Agents chatbots with Composer
->[!Note]
->Using Publish button in Composer does not automativally publish your Publish your Virtual Agents bot to the channels. Use [Publish](publication-fundamentals-publish-channels.md) feature in Power Virtual agents to publish your bot changes to the channels.
 
 To help you get started using Composer, we've created four examples that detail different scenarios:
 
