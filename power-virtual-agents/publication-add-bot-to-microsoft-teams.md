@@ -134,7 +134,7 @@ You should add your bot to your own version of Teams before sharing it with othe
 Once you've published your bot, you can show it in the Microsoft Teams app store so users can find and install it. 
 
 
-### Show to shared users
+### Show to shared users in Built by your colleague section
 
 You can share your bot by adding it to the Microsoft Teams app store, **Built for your org > **Built by your colleagues** section. Only [shared users](admin-share-bots.md) will find the bot there.
 
