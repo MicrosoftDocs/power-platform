@@ -51,7 +51,7 @@ Providing the right description and appearance for the bot before making it avai
 
 1. Select **Edit details** to change the bot's icon, color, and descriptions. These will be shown in Microsoft Teams app store and the app's About tab after user installs it. [Review the recommendations on Microsoft Teams icon formats](/microsoftteams/platform/resources/schema/manifest-schema#icons).
 
-   :::image type="content" source="media/publish-share-to-store.png" alt-text="You can make changes to the icon, background color, and descriptions":::
+   :::image type="content" source="media/add-bot-to-teams-edit-details.PNG" alt-text="You can make changes to the icon, background color, and descriptions":::
 
 
    >[!IMPORTANT]
