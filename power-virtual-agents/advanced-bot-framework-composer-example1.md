@@ -246,8 +246,9 @@ To test your changes in Power Virtual Agents, open the **Test pane** and make su
 
 :::image type="content" source="media/Composer_Example1/Example1_cropped.png" alt-text="Power Virtual Agents Example 1 test.":::
 
-
-
+>[!Note]
+>Using Publish button in Composer makes the changes avaliavble for testing, but does not automatically Publish your Power Virtual Agehts bot. Use [Publish](publication-fundamentals-publish-channels.md) feature in Power Virtual Agents to publish your bot changes to the channels.
+>
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
