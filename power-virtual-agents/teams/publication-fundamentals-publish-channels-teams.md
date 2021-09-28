@@ -47,7 +47,7 @@ After the first publish, you can do subsequent publishes whenever you would like
 
 The publishing process will check for errors in the latest bot content.
 
-When publication is successful, you can [make the bot available to end users in Microsoft Teams](publication-add-bot-to-microsoft-teams-teams.md). You can do it later by selecting **Make bot available to others** from the Publish page.
+When publication is successful, you can [make the bot available to users in Microsoft Teams] via installation link or show in diferent sections of Microsoft Teams app store (publication-add-bot-to-microsoft-teams-teams.md). You can do it later by selecting **Make bot available to others** from the Publish page.
 
 You can also install the bot fot your own use in Microsoft Teams by selecting **Open the bot**.
 
@@ -56,8 +56,6 @@ You can also install the bot fot your own use in Microsoft Teams by selecting **
 >You may want to try out the latest published content in Microsoft Teams right away.  
 >You can do so by typing *start over* in an existing conversation.  
 >This will restart the conversation with the latest content you have published.
-
-Now that you've published your bot and it's ready for others to use, you can [add your bot to different sections of the Microsoft Teams app store](publication-add-bot-to-microsoft-teams-teams.md).
 
 
  ## In this section
