@@ -111,6 +111,7 @@ You should add your bot to your own version of Teams before sharing it with othe
 
 1. Select **Open bot** to have the installation prompt launch in Microsoft Teams. Select **Add** to have it added as an app in Teams. This only installs the bot for you.
 
+:::image type="content" source="media/add-bot-to-teams-open-bot-teams-panel.PNG" alt-text="Install bot for yourself in Teams panel":::
 
 ## Share a link so others can install the bot
 
@@ -118,12 +119,12 @@ You should add your bot to your own version of Teams before sharing it with othe
 
 2. Select **Microsoft Teams**.
 
-   :::image type="content" source="media/publish-teams-share-flyout.png" alt-text="Selecting Share the bot opens a new flyout window.":::
-
 3. Select **Availability options** and select **Copy link**
 
    >[!IMPORTANT]
    >Only users who can access the bot can use the installation link to install the bot. You can [share bot to give user access to chat](admin-share-bots.md) with the bot.
+
+   :::image type="content" source="media/add-bot-to-teams-copy-link-teams.PNG" alt-text="Copy link from Teams availability options.":::
 
 4. Share the copied link with users to install the bot in Microsoft Teams.
 
@@ -141,7 +142,7 @@ You can share your bot by adding it to the Microsoft Teams app store, **Built fo
 >Only shared users can find and install the bot in Microsoft Teams app store Built by your colleague section. The bot will not show for everyone in the organization even if it is configured to allow everyone to use the bot. To [show the bot to organization](#show-to-the-organization), submit the bot for admin's approval to show in Microsoft Teams app store Built by your org section.
 >The bot can only be shown in Microsoft Teams app store **Built by your colleague** section when the total number of shared users do not excceed the [tenant's Teams app store discovery policy](). To show the bot beyond your organizations policy limit, partner with your admin to [show the bot to organization](#show-to-the-organization).
 
-:::image type="content" source="media/publish-teams-your-colleagues.png" alt-text="The Built by your colleagues section as at the bottom of the Built for COMPANY NAME section in the Teams app store.":::
+:::image type="content" source="media/add-bot-to-teams-bbyc-teams.PNG" alt-text="The Built by your colleagues section as at the bottom of the Built for your org section in the Teams app store.":::
 
 1. Go to **Manage**, then **Channels** on the side navigation pane. 
 
@@ -151,11 +152,15 @@ You can share your bot by adding it to the Microsoft Teams app store, **Built fo
 
 6. Select **Show to my teammates and shared users** and review who has access to the bot.
 
+   :::image type="content" source="media/add-bot-to-teams-bbyc-teams.PNG" alt-text="Show bot in Teams app store Built by your colleague section.":::
+
 7. Confirm **Visibile in Build by your colleagues** checkbox is selected and select **Share**.
+
+   :::image type="content" source="media/add-bot-to-teams-visible-in-bbyc.PNG" alt-text="Select visible in Built by your colleagues checkbox in sharing UI.":::
 
 8. This will automatically add the bot to the **Built by your colleagues** section, and will show a green label **Added to Teams** in the availabilty options page.
 
-:::image type="content" source="media/publish-teams-share-flyout-added.png" alt-text="The flyout shows the bot has been added to Teams with a checkmark and green box.":::
+:::image type="content" source="media/add-bot-to-teams-added-to-teams-teams.PNG" alt-text="The flyout shows the bot has been added to Teams.":::
 
 
 
@@ -180,9 +185,11 @@ You can remove the bot from showing in the **Built by your colleagues** section.
 
 6. Select **Show to my teammates and shared users** and remove **Visibile in Build by your colleagues** checkbox selection. 
 
+   :::image type="content" source="media/add-bot-to-teams-remove-bbyc.PNG" alt-text="Uncheck visible in Built by your colleagues checkbox in sharing UI.":::
+
 5. Select **Share**. Now the bot will no longer show in Microsoft Teams app store **Built by your colleague** section.
 
-:::image type="content" source="media/publish-teams-share-flyout-remove.png" alt-text="Next to the green box indicating the bot has been Added to Teams you can select Remove.":::
+
 
 
 
@@ -191,8 +198,7 @@ You can remove the bot from showing in the **Built by your colleagues** section.
 You can share the bot with your organization by submitting your bot for admin approval to be featured in the **Built for your org > **Built by your org** section. This is a great way to broadly distribute your bot by partnering with your admin to roll out the bot to everyone in the organization or a subset of users. 
 
 
-:::image type="content" source="media/publish-teams-your-org.png" alt-text="The Built by your org section as at the top of the Built for COMPANY NAME section in the Teams app store.":::
-
+:::image type="content" source="media/add-bot-to-teams-bbyo-teams.PNG" alt-text="The Built by your org section is at the top of the Built for Org section in the Teams app store.":::
 
 Admins can also [preinstall and pin the bot](/microsoftteams/teams-app-setup-policies) for users in the organization so they can access it directly from their left app bar in Microsoft Teams.  
 
@@ -219,6 +225,8 @@ Before submitting the bot to your organization, make sure:
 5. Confirm the bot is not showed to teammates or shared users. [Remove](#remove-the-bot-from-the-built-by-your-colleagues-section) if it says **Added to Teams**.
 
 6. Select **Show to everyone in my org**.
+
+   :::image type="content" source="media/add-bot-to-teams-show-bbyo.PNG" alt-text="Show bot to organization in Teams panel availability options.":::
 
 7. Review the requirements for submission, and select **Submit for admin approval**.
 
@@ -260,6 +268,8 @@ You can download the bot's Teams app manifest to make detail changes to the mani
  
 7. Select **Download .zip**.
 
+   :::image type="content" source="media/add-bot-to-teams-download-zip.png" alt-text="Download Teams app manifest zip file from Teams panel availability options.":::
+
 9. The manifest will be generated as a .zip file, and will be saved according to your browser's save settings.
 
 
@@ -278,6 +288,8 @@ For bots that are approved by admin, the bots will continue to be shown in the M
 2. Select **Microsoft Teams**.
 
 1. Select **Disconnect from Teams**.
+
+   :::image type="content" source="media/add-bot-to-teams-disconnect-teams.PNG" alt-text="Disconnect Teams channel in Teams channel panel.":::
 
 1. Review the information about disconnecting your bot, and select **Disconnect** to continue.
 
