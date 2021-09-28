@@ -52,7 +52,7 @@ You can:
 After publishing your bot at least once, you can connect your bot to the Microsoft Teams channel to allow users to chat with the bot in Microsoft Teams.
 
 >[!NOTE]
->We recommend you [turn on security settings](advanced-end-user-authentication.md) for bots built for Microsoft Teams or internal employee use so you can ensure the bot will not be accessible by individuals outside of your organization.
+>We recommend you [turn on security settings](configuration-end-user-authentication.md) for bots built for Microsoft Teams or internal employee use so you can ensure the bot will not be accessible by individuals outside of your organization.
 
 **Connect to Microsoft Teams:**
 
