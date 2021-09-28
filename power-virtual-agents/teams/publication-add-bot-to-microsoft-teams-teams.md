@@ -69,8 +69,8 @@ Providing the right description and appearance for the bot before making it avai
 3. Select **Save** to return to the screen where you can make your bot available in Teams. You'll see your updates to the color, icon, and description are shown.
 
 >[!NOTE]
->Icon customization in this section only applies to bot avatar for bots that are [approved by admin](publication-add-bot-to-microsoft-teams-teams.md#show-to-the-organization) and does not apply for users who install the bot via direct [installation link](publication-add-bot-to-microsoft-teams-teams.md#share-a-link-so-others-can-install-the-bot) or Microsoft Teams app store [Built by your colleague section](publication-add-bot-to-microsoft-teams-teams.md#show-to-teammates-and-shared-users). You can customize bot avatar at [Customize the look and feel of the bot](customize-default-canvas-teams.md). 
->:::image type="content" source="media/bot-avatar.PNG" alt-text="The Built by your colleagues section as at the bottom of the Built for your org section in the Teams app store.":::
+>Icon customization in this section only applies to bot avatar for bots that are [approved by admin](publication-add-bot-to-microsoft-teams-teams.md#show-to-the-organization) and does not apply for users who install the bot via direct [installation link](publication-add-bot-to-microsoft-teams-teams.md#share-a-link-so-others-can-install-the-bot) or Microsoft Teams app store [Built by your colleague section](publication-add-bot-to-microsoft-teams-teams.md#show-to-teammates-and-shared-users). You can customize bot avatar at [Customize the look and feel of the bot](customize-default-canvas-teams.md).
+>:::image type="content" source="media/bot-avatar.PNG" alt-text="Bot avatar icon in Teams chat.":::
 
 ## Install a bot as an app in Microsoft Teams
 After you have published a bot, you can add the bot to your own version of Microsoft Teams directly from the Power Virtual Agents app.
