@@ -93,7 +93,7 @@ Providing the right description and appearance for the bot before making it avai
 3. Select **Save** to return to the screen where you can make your bot available in Teams. You'll see your updates to the color, icon, and description are shown.
 
 >[!NOTE]
->Icon customization in this section only applies to bot avatar for bots that are [approved by admin](#show-to-the-organization) and does not apply for users who install the bot via direct [installation link](#share-a-link-so-others-can-install-the-bot) or Microsoft Teams app store [Built by your colleague section](#show-to-shared-users). You can customize bot avatar at [Customize the look and feel of the bot](customize-default-canvas-teams.md). 
+>Icon customization in this section only applies to bot avatar for bots that are [approved by admin](#show-to-the-organization) and does not apply for users who install the bot via direct [installation link](#share-a-link-so-others-can-install-the-bot) or Microsoft Teams app store [Built by your colleague section](#show-to-shared-users). You can customize bot avatar at [Customize the look and feel of the bot](customize-default-canvas.md). 
 
 
 ## Install a bot as an app in Microsoft Teams
