@@ -79,7 +79,7 @@ Providing the right description and appearance for the bot before making it avai
     :::image type="content" source="media/publish-share-to-store.png" alt-text="You can make changes to the icon, background color, and descriptions":::
 
     >[!IMPORTANT]
-    >Updates to the bot's detail will not apply to users who have already installed the bot via shared link or [built by your colleague section](#add-the-bot-to-the-built-by-your-colleagues-section). They will need to reinstall to the bot to receive the updates.
+    >Updates to the bot's detail will not apply to users who have already installed the bot via shared link or [built by your colleague section](#show-to-shared-users-in-built-by-your-colleague-section). They will need to reinstall to the bot to receive the updates.
     >Updates to the bot's detail will not apply to bots that have been approved by admin. You will need to resubmit the bot for approval to have the latest detail updated for users.
 
 2. Select **More** to add additional information:  
