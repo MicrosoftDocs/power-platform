@@ -120,7 +120,7 @@ For a deep-dive on Bot Framework Composer **dialogs**, **events**, **triggers** 
 - [Conversation flow and memory](/composer/concept-memory)
 
 >[!Note]
->Using Composer Publish button to add Composer content to your Power Virtual Agents bot makes them avalivle for testing, but does not automativally your Publish your Virtual Agents bot to your channels. To get your bot changes Published to any channels, use [Publish](publication-fundamentals-publish-channels.md) feature in Power Virtual Agents.
+>Using Publish button in Composer does not automativally publish your Publish your Virtual Agents bot to the channels. Use [Publish](publication-fundamentals-publish-channels.md) feature in Power Virtual agents to publish your bot changes to the channels.
 
 
 ## Composer features not supported with Power Virtual Agents
@@ -172,7 +172,8 @@ ${virtualagent.user_city}
 ```
 
 ## Examples for extending Power Virtual Agents chatbots with Composer
-
+>[!Note]
+>Using Publish button in Composer does not automativally publish your Publish your Virtual Agents bot to the channels. Use [Publish](publication-fundamentals-publish-channels.md) feature in Power Virtual agents to publish your bot changes to the channels.
 
 To help you get started using Composer, we've created four examples that detail different scenarios:
 
@@ -181,8 +182,6 @@ To help you get started using Composer, we've created four examples that detail 
 - [Example 3 - Use Bing Search as a fallback in Power Virtual Agents](advanced-bot-framework-composer-example3.md)
 - [Example 4 - Display a form with a Submit button in Power Virtual Agents](advanced-bot-framework-composer-example4.md)
 
->[!Note]
->Using Composer Publish button to add Composer content to your Power Virtual Agents bot makes them avalivle for testing, but does not automativally your Publish your Virtual Agents bot to your channels. To get your bot changes Published to any channels, use [Publish](publication-fundamentals-publish-channels.md) feature in Power Virtual Agents.
 
 ## Capture telemetry with Application Insights
 
@@ -207,6 +206,9 @@ To learn more on how to set up and use Application Insights and create queries f
 - [Example Kusto queries](/azure/bot-service/bot-builder-telemetry-analytics-queries?view=azure-bot-service-4.0&preserve-view=true#adaptive-dialogs-started-and-completed) for Adaptive dialogs in Composer.
 
 ## Testing Bot Framework content with Power Virtual Agents
+>[!Note]
+>Using Publish button in Composer does not automativally publish your Publish your Virtual Agents bot to the channels. Use [Publish](publication-fundamentals-publish-channels.md) feature in Power Virtual agents to publish your bot changes to the channels.
+
 You can test the content you have created in Bot Framework Composer by publishing it to Power Virtual Agents and using the **Test bot** pane in Power Virtual Agents.
 
 Publish your Bot Framework content to Power Virtual Agents from the **Publish** tab in Composer.
@@ -217,14 +219,11 @@ After you successfully publish your Bot Framework content, you can use the Power
 
 :::image type="content" source="media/Composer_Test/Test_image.png" alt-text="Power Virtual Agents test bot.":::
 
->[!Note]
->Using Composer Publish button to add Composer content to your Power Virtual Agents bot makes them avalivle for testing, but does not automativally your Publish your Virtual Agents bot to your channels. To get your bot changes Published to any channels, use [Publish](publication-fundamentals-publish-channels.md) feature in Power Virtual Agents.
-
-
 >[!NOTE]
 >The Bot Framework Emulator cannot be used to test Composer content created for Power Virtual Agents bots. 
 
 ## Troubleshooting
+
 If you're having trouble publishing your Bot Framework Composer content to Power Virtual Agents, you can use the **See Log** feature in the **Publish** tab in Composer. The log will provide a detailed description of the errors encountered during validation. Select your bot and then select the caret icon to see the publish history.
 
 :::image type="content" source="media/Composer_Troubleshooting/TL_PublishHistory.png" alt-text="Composer Publish - See Log.":::
