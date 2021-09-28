@@ -40,7 +40,7 @@ landingContent:
        - linkListType: concept
          links:
           - text: Security roles and privileges
-            url: security-roles-privilege.md                
+            url: security-roles-privileges.md                
        - linkListType: how-to-guide
          links:
           - text: Control user access
