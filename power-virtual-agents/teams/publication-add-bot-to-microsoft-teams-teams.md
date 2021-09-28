@@ -127,7 +127,7 @@ You can share your bot by adding it to the Microsoft Teams app store, **Built fo
 
 >[!IMPORTANT]
 >Only teammates or shared users can find and install the bot in Microsoft Teams app store Built by your colleague section. The bot will not show for everyone in the organization even if it is configured to allow everyone to use the bot. To [show the bot to organization](publication-add-bot-to-microsoft-teams-teams.md#show-to-the-organization), submit the bot for admin's approval to show in Microsoft Teams app store Built by your org section.
->The bot can only be shown in Microsoft Teams app store **Built by your colleague** section when the total number of shared users do not excceed the tenant's Teams app store discovery policy. To show the bot beyond your organizations policy limit, partner with your admin to [show the bot to organization](publication-add-bot-to-microsoft-teams-teams.md#show-to-the-organization).
+>The bot can only be shown in Microsoft Teams app store **Built by your colleague** section when the total number of shared users do not excceed the tenant's Teams app store discovery policy. To show the bot beyond your organizations policy limit, partner with your admin to [show the bot to organization](#show-to-the-organization).
 
 :::image type="content" source="media/add-bot-to-teams-bbyc-teams.PNG" alt-text="The Built by your colleagues section as at the bottom of the Built for your org section in the Teams app store.":::
 
