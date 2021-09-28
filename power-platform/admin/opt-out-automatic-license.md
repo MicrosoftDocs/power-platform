@@ -36,3 +36,6 @@ Submit a [support ticket](get-help-support.md) requesting to turn off the automa
 
 Administrators can add and remove the appropriate roles to users through the Power Platform admin center.
 
+## Does this impact the "Default" environment too?
+For the "Default" environment, EnvironmentMaker and BasicUser roles will continue to work even after opt-out.
+
