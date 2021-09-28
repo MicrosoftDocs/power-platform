@@ -11,7 +11,7 @@ metadata:
   ms.topic: landing-page  # Required
   author: jimholtz #Required; your GitHub user alias, with correct capitalization.
   ms.author: jimholtz #Required; microsoft alias of author; optional team alias.
-  ms.date: 07/06/2021 #Required; mm/dd/yyyy format.
+  ms.date: 09/28/2021 #Required; mm/dd/yyyy format.
   hide_bc: false
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -126,3 +126,14 @@ landingContent:
           - text: Manage encryption key
             url: manage-encryption-key.md
  
+   # Card
+  - title: Analytics
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Dataverse analytics
+            url: analyze-telemetry.md
+          - text: Power Apps analytics
+            url: analytics-powerapps.md
+          - text: Reports
+            url: tenant-level-analytics.md
