@@ -119,6 +119,8 @@ For a deep-dive on Bot Framework Composer **dialogs**, **events**, **triggers** 
 - [Language Generation](/composer/concept-language-generation)
 - [Conversation flow and memory](/composer/concept-memory)
 
+>[!Note]
+>Using Composer Publish button to add Composer content to your Power Virtual Agents bot makes them avalivle for testing, but does not automativally your Publish your Virtual Agents bot to your channels. To get your bot changes Published to any Power Virtusal Agents channels, use Publish feature.
 
 ## Composer features not supported with Power Virtual Agents
 The following Bot Framework Composer features are not supported with Power Virtual Agents:
