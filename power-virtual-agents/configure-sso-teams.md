@@ -183,9 +183,11 @@ To add Teams SSO configuration information in the Power Virtual Agents bot:
  
 These steps update the manifest file for the bot. Now you can download the manifest file (as a .zip file) and upload to Teams for test or distribution, or submit for your admin approval. For more information, see the [Add bot to Microsoft Teams in Teams](publication-add-bot-to-microsoft-teams.md) topic.
 
-1. Select **Download manifest** to get the new manifest.
+1. Select **Availability options**.
 
-    :::image type="content" source="media/TeamsSSO/image11.png" alt-text="Screenshot displaying Download manifest button highlighted.":::
+1. Select **Download .zip** to get the new manifest.
+
+    :::image type="content" source="media/add-bot-to-teams-download-zip.png" alt-text="Screenshot displaying Download .zip button highlighted.":::
 
 >[!IMPORTANT] 
 > If your users have used the manifest to install the bot, they will need to get a new manifest after this configuration is complete and install the bot again for the Teams SSO to work. The Teams manifest does not refresh automatically. Alternatively, if you submit for Admin approval, the manifest is updated automatically.
