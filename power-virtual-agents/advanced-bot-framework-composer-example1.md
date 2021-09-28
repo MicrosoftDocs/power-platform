@@ -227,6 +227,9 @@ You are now ready to upload the **Meals** dialog to your Power Virtual Agents bo
 
 The Composer content will be validated by Power Virtual Agents and a successful publish will be reported in Composer.
 
+>[!Note]
+>Using Publish button in Composer does not automativally publish your Publish your Virtual Agents bot to the channels. Use [Publish](publication-fundamentals-publish-channels.md) feature in Power Virtual agents to publish your bot changes to the channels.
+
 Go to the Power Virtual Agents **Topics** page to see your new Bot Framework content. Your new **Meals** Bot Framework dialog is now shown on the **Topics** page as part of your Power Virtual Agents bot.
 
 :::image type="content" source="media/Composer_Example1/E1_Meals_in_PVA_Topics.png" alt-text="Power Virtual Agents Topics page - new Bot Framework dialog.":::
