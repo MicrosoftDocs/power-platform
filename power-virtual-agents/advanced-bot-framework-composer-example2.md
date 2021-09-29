@@ -160,7 +160,7 @@ Make sure **Track between topics** is turned on, and test your new bot content b
 
 
 >[!Note]
->Using Publish button in Composer makes the changes avaliavble for testing, but does not automatically Publish your Power Virtual Agehts bot. Use [Publish](publication-fundamentals-publish-channels.md) feature in Power Virtual Agents to publish your bot changes to the channels.
+>Using Publish button in Composer makes the changes avaliavble for testing, but does not automatically Publish your Power Virtual Agents bot. Use [Publish](publication-fundamentals-publish-channels.md) feature in Power Virtual Agents to publish your bot changes to the channels.
 >
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
