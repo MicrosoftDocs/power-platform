@@ -101,7 +101,6 @@ After the **StartTrial** trigger is added, go to the **Bot Responses** tab for t
     "version": "1.2"
 }
 ```
-```
 ````
 
 Note that every data field in this Adaptive card was given an ID: **Name**, **Address**, and **Weeks**.
