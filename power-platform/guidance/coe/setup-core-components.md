@@ -186,14 +186,16 @@ There are several child flows which will need their **Run only users** propertie
 - CLEANUP HELPER - Check Deleted (Cloud Flows)
 - CLEANUP HELPER - Check Deleted (Model Driven Apps)
 - CLEANUP HELPER - Check Deleted (PVA)
+- CLEANUP HELPER - Check Deleted (Custom Connectors)
 - CLEANUP HELPER - Power Apps User Shared With
 
-For all of these flows, go to the details page and click the **Run only users** edit button.
+First, [remove the unmanaged layer](setup.md#installing-updates) for all flows. Then, go to the details page and click the **Run only users** edit button.
+
+ ![Find setting for run only users.](media/runonlyusersgov1.png "Find setting for run only users")
 
 You will see all the connections in the child flow. For each one, change the value to **Use this connection (userPrincipalName\@company.com)**. If there is no connection for any of the connectors, go to **Data** > **Connections**, and create one for the connector.
-
-   ![Find setting for run only users.](media/runonlyusersgov1.png "Find setting for run only users")
-   ![Configure run only users.](media/runonlyusersgov2.png "Configure run only users")
+  
+![Configure run only users.](media/runonlyusersgov2.png "Configure run only users")
 
 Once you have updated the run only users, turn on all the child flows.
 
@@ -225,7 +227,7 @@ We will more quickly resolve issues around dependencies between tables by enabli
     1. Turn on all the flows starting with CLEANUP.
     1. Turn on the [Admin | Capacity Alerts](core-components.md#flows) if you would like to receive alerts when environments get close to approved capacity.
     1. Turn on the [Admin | Welcome Email v3](core-components.md#flows) if you would like to send welcome emails to new makers.
-    1. Turn on the flows starting with Env Request and DLP Request if you are using the [Power Platform Request Center](core-components.md#power-platform-request-center)
+    1. Turn on the flows starting with Env Request and DLP Request if you are using the [Power Platform Request Center](core-components.md#power-platform-request-center). Make sure the Admin eMail and Environment Request Admin App Url [environment variables](#update-environment-variables) are configured before turning on those flows.
     1. Turn on the flows starting with Command Center App if you are using the [Admin - Command Center](core-components.md#admin---command-center)
 
 >[!IMPORTANT]
@@ -318,7 +320,7 @@ After the sync flows have finished running (depending on the number of environme
 ## Update environment variables
 
 >[!IMPORTANT]
-> You don't have to complete this step during setup, just when you need to change the value of an environment variable that you configured during import.
+> You don't have to complete this step during setup, just when you need to change the value of an environment variable that you configured during import. Re-start all flows after you change environment variables, to make sure the latest value is picked up.
 
 Environment variables are used to store application and flow configuration data with data specific to your organization or environment.
 

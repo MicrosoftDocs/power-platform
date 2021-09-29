@@ -287,7 +287,9 @@ Additional to the above listed inventory tables, the following helper tables sup
 | CLEANUP HELPER - Check Deleted (Canvas Apps) | Child Flow | called from Check Deleted | Does the check deleted work for a given environment for canvas apps  |
 | CLEANUP HELPER - Check Deleted (Cloud Flows) | Child Flow | called from Check Deleted | Does the check deleted work for a given environment for cloud flows  |
 | CLEANUP HELPER - Check Deleted (Model Driven Apps) | Child Flow | called from Check Deleted | Does the check deleted work for a given environment for model driven apps  |
-| CLEANUP HELPER - Check Deleted (PVA) | Child Flow | called from Check Deleted | Does the check deleted work for a given environment for power virtual agents  |
+| CLEANUP HELPER - Check Deleted (PVA) | Child Flow | called from Check Deleted | Does the check deleted work for a given environment for chatbots  |
+| CLEANUP HELPER - Check Deleted (Custom Connectors) | Child Flow | called from Check Deleted | Does the check deleted work for a given environment for custom connectors  |
+|  CLEANUP HELPER - Power Apps User Shared With | Child Flow | called from CLEANUP - Admin | Sync Template v3 (Power Apps User Shared With) | runs once per environment to check |
 | DLP Request \| Make approved policy change | Automated | when a DLP Policy Change Request record is updated to Approved state | Modifies the existing DLP Policies identified in the request depending on the action type.  |
 | Env Request \| Cleanup expired environments | Schedule | Daily | Cleans up environments with expiration dates identified or sends weekly warning email notifications every Monday if the expiration date is coming up within the month. |
 | Env Request \| Create approved environment | Automated | when an Environment Creation Request’s status is updated to Approved state | Provisions the Environment and other resources identified in the request. |
