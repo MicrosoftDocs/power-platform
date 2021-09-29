@@ -32,7 +32,7 @@ landingContent:
        - linkListType: learn
          links:
           - text: Get started with security roles in Dataverse
-            url: /learn/paths/get-started-security-roles/
+            url: /learn/modules/get-started-security-roles/
 
   # Card
   - title: Configure user security
