@@ -116,6 +116,7 @@ Next, add the following Activity below the Adaptive Card JSON
     Attachments = ${json(adaptivecardjson_StartTrialForm())}
 ]
 ````
+:::image type="content" source="media/Composer_Example4/E4_createSubmitFormActivity.png" alt-text="Composer - create Activity.":::
 
 Go to the **Create** tab in Composer and select the **StartTrial** trigger. Add the **Ask a question** action and select type **Text**.
 
@@ -128,7 +129,7 @@ Select the **Attachments** option in **Prompt for text**:
 Select **Add custom** option and add the following to the **Attachments** window:
 
 ```JSON
--${StartTrialForm()}
+- ${AdaptiveCard_StartTrialForm()}
 ```
 
 :::image type="content" source="media/Composer_Example4/E4_addAttachment_StartTrialForm.png" alt-text="Composer - add StartTrialForm attachment.":::
