@@ -59,7 +59,7 @@ After the **StartTrial** trigger is added, go to the **Bot Responses** tab for t
 
 ````JSON
 
-# StartTrialForm
+# adaptivecardjson_StartTrialForm()
 - ```
 {
     "type": "AdaptiveCard",
@@ -100,6 +100,7 @@ After the **StartTrial** trigger is added, go to the **Bot Responses** tab for t
     "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
     "version": "1.2"
 }
+```
 ```
 ````
 
