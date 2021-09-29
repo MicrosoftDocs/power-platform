@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/27/2021
+ms.date: 09/29/2021
 ms.subservice: admin
 ms.author: jimholtz 
 search.audienceType: 
@@ -47,7 +47,6 @@ Make sure you have the System Administrator security role or equivalent permissi
 > |Pricing decimal precision|Default: 0. Select how many decimal points to use for a currency.|  
 > |**Display behavior**||  
 > |Use updated experience for classic settings where possible.| Default: Off for existing environment, On for new environment created after Oct 2021. If **On**, user will be redirected to the modern experience when accessing some settings from the legacy experience.  More information: [New location for admin settings](admin-settings.md#new-location-for-admin-settings).|
-
 > |Show app download message|Default: On. If **On**, users will see a message regarding downloading the Dynamics 365 for tablets app.|  
 > |Show legacy app to everyone, not just admin|Default: On. The legacy web app, also known as *Dynamics 365 - custom*, is hidden from end users when a new environment is provisioned. It is always visible to those with System Administrator and System Customizer roles, and to other custom roles with similar privileges.  More information: [Dynamics 365 - custom](enable-unified-interface-only.md#dynamics-365---custom).|  
 > |Legacy app name|Enter the label to use for the legacy app. This appears on the Dynamics 365 home page. The legacy label is *Dynamics 365 - custom*. More information: [Dynamics 365 - custom](enable-unified-interface-only.md#dynamics-365---custom).|
