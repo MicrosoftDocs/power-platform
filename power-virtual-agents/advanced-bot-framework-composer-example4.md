@@ -122,11 +122,7 @@ Go to the **Create** tab in Composer and select the **StartTrial** trigger. Add 
 
 :::image type="content" source="media/Composer_Example4/E4_ask_question.png" alt-text="Composer - ask a question.":::
 
-Select the **Attachments** option in **Prompt for text**:
-
-:::image type="content" source="media/Composer_Example4/E4_selectAttachment_option.png" alt-text="Composer - select Attachment option.":::
-
-Select **Add custom** option and add the following to the **Attachments** window:
+Switch to **Snow code** view add the following to the code window:
 
 ```JSON
 - ${AdaptiveCard_StartTrialForm()}
