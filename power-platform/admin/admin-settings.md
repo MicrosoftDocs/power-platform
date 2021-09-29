@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/22/2021
+ms.date: 09/29/2021
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -54,7 +54,7 @@ These security settings are now managed in the Power Platform admin center.
 
 Getting to app feature settings can vary based on the type of app you're using. 
 
-The following app settings have the modernized experience available in the unified interface. 
+When the **[Display behavior -> Use updated experience for classic settings where possible](settings-behavior.md#settings)** toggle is **On** , the following app settings have the modernized experience available in the unified interface. 
 
 | Legacy settings | Modernized experience  |
 |--- | --- | 
