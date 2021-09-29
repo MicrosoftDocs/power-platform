@@ -48,17 +48,15 @@ Administrators can edit properties of an environment, such as the friendly name,
      >   1. **Synchronize offline data**. Dynamics 365 for Outlook users connected to this environment who work offline must synchronize by using the previous URL. If you run the Configuration Wizard and change the URL before completing this step, offline data may be lost.  
      >   2. **Run the Configuration Wizard**. After a URL name change is saved and any offline data is synchronized, users of Dynamics 365 for Outlook must run the Configuration Wizard to update the URL.  
   
-        After a URL name change is saved, all users who access that environment must be notified of the change. Users will be able to access the environment for up to 24 hours by using the previous URL. After the 24-hour period has passed, the previous URL will not work.  
+    After a URL name change is saved, all users who access that environment must be notified of the change. Users will be able to access the environment for up to 24 hours by using the previous URL. After the 24-hour period has passed, the previous URL will not work.  
   
-        Notice that interim URL names are discarded when there are multiple changes within 24 hours. For example, consider the following situation:  
+    Notice that interim URL names are discarded when there are multiple changes within 24 hours. For example, consider the following situation:  
   
-     - The original URL of your environment is *fourthcoffeesales.crm.dynamics.com*.  
+    - The original URL of your environment is *fourthcoffeesales.crm.dynamics.com*.  
+    - Using the environment picker, you change the URL name from *fourthcoffeesales.crm.dynamics.com* to *fourthcoffeemktg.crm.dynamics.com*.  
+    - Within 24 hours of the URL name change, you change the URL name again, this time from *fourthcoffeemktg.crm.dynamics.com* to *fourthcoffeesalesandmktg.crm.dynamics.com*.  
   
-     - Using the environment picker, you change the URL name from *fourthcoffeesales.crm.dynamics.com* to *fourthcoffeemktg.crm.dynamics.com*.  
-  
-     - Within 24 hours of the URL name change, you change the URL name again, this time from *fourthcoffeemktg.crm.dynamics.com* to *fourthcoffeesalesandmktg.crm.dynamics.com*.  
-  
-       In this situation, the first URL name change to *fourthcoffeemktg.crm.dynamics.com* will be immediately removed from the system. The new URL, *fourthcoffeesalesandmktg.crm.dynamics.com*, will become active. Additionally, the original URL, *fourthcoffeesales.crm.dynamics.com*, will be active for up to 24 hours.  
+    In this situation, the first URL name change to *fourthcoffeemktg.crm.dynamics.com* will be immediately removed from the system. The new URL, *fourthcoffeesalesandmktg.crm.dynamics.com*, will become active. Additionally, the original URL, *fourthcoffeesales.crm.dynamics.com*, will be active for up to 24 hours.  
   
    - **Type**. Change the environment type from production to sandbox or sandbox to production.
 
