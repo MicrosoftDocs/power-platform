@@ -107,6 +107,16 @@ Note that every data field in this Adaptive card was given an ID: **Name**, **Ad
 
 :::image type="content" source="media/Composer_Example4/E4_createSubmitForm.png" alt-text="Composer - create StartTrialForm.":::
 
+Next, add the following Activity below the Adaptive Card JSON
+
+
+````JSON
+ # AdaptiveCard_StartTrialForm()
+[Activity
+    Attachments = ${json(adaptivecardjson_StartTrialForm())}
+]
+````
+
 Go to the **Create** tab in Composer and select the **StartTrial** trigger. Add the **Ask a question** action and select type **Text**.
 
 :::image type="content" source="media/Composer_Example4/E4_ask_question.png" alt-text="Composer - ask a question.":::
