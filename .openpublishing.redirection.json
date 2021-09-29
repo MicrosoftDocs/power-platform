@@ -291,11 +291,6 @@
       "redirect_document_id": "false"
     },
     {
-      "source_path": "power-platform/admin/index.md",
-      "redirect_url": "/power-platform/admin/admin-documentation",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "power-platform/admin/preview-april-2019-updates.md",
       "redirect_url": "preview-october-2019-updates",
       "redirect_document_id": false
