@@ -168,7 +168,7 @@
             href: create-edit-business-units.md
           - name: Delete business unit
             href: delete-business-unit.md 
-          - name: Assign business unit a different parent business
+          - name: Assign business units
             href: assign-business-unit-different-parent.md 
           - name: Hierarchy security
             href: hierarchy-security.md
@@ -408,8 +408,13 @@
           href: analytics-ui-flow.md 
       - name: Reports
         items:
-        - name: "Preview: Tenant-level analytics" 
+        - name: "Preview: Tenant-level analytics (default)" 
           href: tenant-level-analytics.md
+        # Comment out the next two topics before 10/1 publish
+        # - name: "Preview: Power Apps analytics report"
+        #   href: powerapps-analytics-reports.md
+        # - name: "Preview: Power Automate analytics report"
+        #   href: power-automate-analytics-reports.md
       - name: Data export
         items:
         - name: "Preview: Export Power Apps inventory and usage data"
@@ -534,6 +539,8 @@
         href: server-cipher-tls-requirements.md
     - name: Security and governance
       items:
+      - name: Security and governance
+        href: index.yml
       - name: Overview
         href: wp-security.md     
       - name: Governance considerations
