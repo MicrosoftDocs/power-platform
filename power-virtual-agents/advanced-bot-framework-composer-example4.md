@@ -128,7 +128,7 @@ Switch to **Snow code** view add the following to the code window:
 - ${AdaptiveCard_StartTrialForm()}
 ```
 
-:::image type="content" source="media/Composer_Example4/E4_addAttachment_StartTrialForm.png" alt-text="Composer - add StartTrialForm attachment.":::
+:::image type="content" source="media/Composer_Example4/e4_call_starttrialform_activity.png" alt-text="Composer - call StartTrialForm activity.":::
 
 Select the **User Input** node and save user input data. Set **Property** to **user.name** and set **Value** to **=turn.activity.value.Name** to extract and save the value of the from field **Name** from our Adaptive card **StartTrialForm** into **user.name**.
 
