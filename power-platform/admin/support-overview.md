@@ -338,4 +338,7 @@ Support depends on how you purchased your licenses.
 Yes, if you are eligible for these benefits and have activated your support access on the [Visual Studio subscription](https://my.visualstudio.com/) portal. If you have these benefits, then from [New support request](https://support.microsoft.com/supportforbusiness/productselection), select **Add contract** under the **Support Plan – Add or purchase a support plan** step, and enter your access ID and contract ID information to proceed.
 
 
+### See also
+[Video: How to get the best support for Power Apps, Power Automate, and Dynamics 365](https://youtu.be/An3IfFdZlT8)
+
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

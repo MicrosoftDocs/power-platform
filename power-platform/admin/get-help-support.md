@@ -140,7 +140,8 @@ For some support requests, you’ll be asked to request a support environment. C
 
 ### See also
 [Support overview](support-overview.md)<br />
-[How do I check my online service health?](check-online-service-health.md)
+[How do I check my online service health?](check-online-service-health.md) <br />
+[Video: How to get the best support for Power Apps, Power Automate, and Dynamics 365](https://youtu.be/An3IfFdZlT8)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
