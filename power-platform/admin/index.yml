@@ -24,12 +24,14 @@ landingContent:
     linkLists:
        - linkListType: overview
          links:
-          - text: Role of an admin
-            url: overview-role-powerapps-admin.md
-          - text: Try Power Platform
-            url: try-powerapps-dynamics-365.md
+          - text: Overview
+            url: admin-documentation.md
           - text: Power Platform licensing
             url: pricing-billing-skus.md
+          - text: New storage model
+            url: capacity-storage.md
+          - text: Sign in to your apps
+            url: sign-in-office-365-apps.md
        
 
   # Card
