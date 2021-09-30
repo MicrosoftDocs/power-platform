@@ -2,6 +2,8 @@
   items: 
   - name: Administer Power Platform
     items:    
+    - name: Administer Power Platform
+      href: index.yml
     - name: Overview
       href: admin-documentation.md
     - name: Working with the Admin Portals 
