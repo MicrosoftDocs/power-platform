@@ -103,6 +103,19 @@ With the upcoming 2021 release wave 2 (public preview in August 2021 and GA in O
 - Starting October 2021, these descriptions will no longer be available on hover. 
 - We will be introducing a new fully accessible feature for April 2022.
 
+## Business recommended icon on model-driven forms
+
+With the upcoming 2021 release wave 2 (public preview in August 2021 and GA in October 2021), business recommended icon on model forms will be removed.
+
+#### Why is this needed? 
+
+-	The icon is nor presented in an accessible way to identify itself. 
+
+#### Impact
+
+- Starting October 2021, these icons will no longer be available on the form. 
+- We will be introducing a new fully accessible feature for April 2022.
+
 ## Model-driven app controls deprecation
 
 With the upcoming 2021 release wave 1 (public preview in February 2021 and GA in April 2021), some older controls for model-driven apps will be deprecated. These controls include Flip Switch, Calendar Control (V1), Linear Slider, Radial Knob, Arc Knob, Linear Gauge; along with the Website Preview control, MultiSelectPicklistControl (V1), and the Flip Label.
