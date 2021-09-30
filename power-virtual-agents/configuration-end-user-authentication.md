@@ -94,6 +94,13 @@ Once the configuration is saved, make sure to publish your bot so the changes ta
 > [!NOTE]
 > Authentication changes only take effect after the bot is published.
 
+#### Require users to sign in
+Under the "Manual" option, you get a check bot to require users to sign in. When this check-box is selected, users talking to the bot will need to sign in before they can continue to talk to the bot.
+
+When this check bot is selected, a new system topic called "Require user to sign in" is added to the bot. This topic is automatically triggered when the user needs starts talking to the bot without being signed in, and the configuration is enabled.
+
+The "Require user to sign in" system topic is not cusomizable, and its save button is disabled. 
+
 ## Register a new app with your identity provider when using Manual (for any channel including Teams)
 
 You need to register a new app with your identity provider and get a Client ID and Client Secret before you can configure a manual authentication in Power Virtual Agents. This section describes how to do that with the [Azure portal](https://portal.azure.com) for Azure AD. If you have a different identity provider, you should consult its setup instructions.
