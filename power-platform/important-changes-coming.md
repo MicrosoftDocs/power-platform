@@ -1,7 +1,7 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps"
 description: Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps 
-ms.date: 09/21/2021
+ms.date: 09/30/2021
 ms.topic: "article"
 ms.assetid: 994cc854-17f6-45d6-bc20-fcf1a3f2d6d6
 searchScope:
@@ -109,7 +109,7 @@ With the upcoming 2021 release wave 2 (public preview in August 2021 and GA in O
 
 #### Why is this needed? 
 
--	The icon is nor presented in an accessible way to identify itself. 
+-	The icon is not presented in an accessible way to identify itself. 
 
 #### Impact
 
