@@ -1,0 +1,89 @@
+### YamlMime:Landing
+
+title: Microsoft Power Platform admin documentation
+summary: Use Power Platform admin center to manage environments and settings for Power Apps, Power Automate, Power Virtual agents, and customer engagement apps. 
+
+metadata:
+  title: Microsoft Power Platform admin documentation
+  description: Provides access to highlighted areas Microsoft Power Platform admin documentation
+  services: service
+  ms.service: power-platform 
+  ms.subservice: admin
+  ms.topic: landing-page 
+  ms.collection: collection
+  author: jimholtz
+  ms.author: jimholtz
+  ms.date: 10/01/2021 
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+
+  # Card 
+  - title: Get started
+    linkLists:
+       - linkListType: overview
+         links:
+          - text: Role of an admin
+            url: overview-role-powerapps-admin.md
+          - text: Try Power Platform
+            url: try-powerapps-dynamics-365.md
+          - text: Power Platform licensing
+            url: pricing-billing-skus.md
+       
+
+  # Card
+  - title: Create and manage environments
+    linkLists:
+       - linkListType: concept
+         links:
+          - text: Understand environments
+            url: environments-overview.md
+       - linkListType: how-to-guide
+         links:  
+          - text: Create an environment
+            url: create-environment.md
+          - text: Manage environment settings
+            url: power-platform-settings.md
+          - text: Manage environment updates
+            url: opt-in-early-access-updates.md
+          
+  # Card
+  - title: Manage security and users
+    linkLists:
+       - linkListType: overview
+         links:
+          - text: Security overview
+            url: wp-security.md
+          - text: Security roles and privileges
+            url: security-roles-privileges.md
+       - linkListType: how-to-guide
+         links:
+          - text: Create and manage users
+            url: create-users.md
+          - text: Create and manage security roles
+            url: create-edit-security-role.md
+  
+
+  # Card
+  - title: Troubleshoot
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Get help & support
+            url: get-help-support.md
+          - text: Check online service health
+            url: check-online-service-health.md
+          - text: Common user access issues
+            url: troubleshooting-user-needs-read-write-access-organization.md      
+
+
+  # Card
+  - title: Learn
+    linkLists:
+       - linkListType: learn
+         links:
+          - text: Work with Microsoft Power Platform tenants, environments, subscriptions, and Dynamics 365 apps
+            url: /learn/paths/implementing-customer-engagement-apps
+          - text: Use best practices to secure and govern Microsoft Power Platform environments
+            url: /learn/paths/best-practices-environments/       
