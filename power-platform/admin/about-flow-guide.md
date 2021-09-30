@@ -22,7 +22,7 @@ Microsoft Power Automate administrators can use the Microsoft Power Platform adm
 
 ### See also
 [Working with the admin portals](wp-work-with-admin-portals.md) <br />
-Top 10 tips to securely roll out Microsoft Power Apps and Microsoft Power Automate |[Video: Top 10 tips to securely roll out Microsoft Power Apps and Microsoft Power Automate](https://youtu.be/BnolkTK2Sng) <br />
+[Video: Top 10 tips to securely roll out Microsoft Power Apps and Microsoft Power Automate](https://youtu.be/BnolkTK2Sng) <br />
 [Deck: Top 10 tips to securely roll out Microsoft Power Apps and Microsoft Power Automate](https://medius.studios.ms/video/asset/PPT/MBAS19-BRK2005) 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
