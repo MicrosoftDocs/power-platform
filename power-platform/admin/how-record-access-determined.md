@@ -122,7 +122,8 @@ In this case, the user would have access to the record if both of the following 
 ### See also
 [Security roles and privileges](security-roles-privileges.md) <br />
 [Create users](create-users.md) <br />
-[Create or edit a security role to manage access](create-edit-security-role.md)
+[Create or edit a security role to manage access](create-edit-security-role.md) <br />
+[Video: Check Access feature](https://youtu.be/rigZ1FvrgSY)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
