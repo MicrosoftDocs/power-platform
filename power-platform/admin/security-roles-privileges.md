@@ -110,7 +110,7 @@ Check your security role:
 > You can only select Basic level privileges in the member's privilege inheritance. If you need to provide access to a child business unit, you will need to elevate the privilege to Deep; for example, you need to assign a security role to the Group team and you want the members of this group to be able to Append to Account.  You setup the security role with a Basic level member's privilege inheritance and in the Append to Account privilege, you set it to Deep.  This is because Basic privileges are only applicable to the user's business unit.
 
 ### See also
-[Video: Administer application users, security roles, teams, and users in the Power Platform admin center](https://www.microsoft.com/en-us/videoplayer/embed/RWJBr8)
-
+[Video: Administer application users, security roles, teams, and users in the Power Platform admin center](https://www.microsoft.com/en-us/videoplayer/embed/RWJBr8) <br />
+[Video: Check Access feature](https://youtu.be/rigZ1FvrgSY)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
