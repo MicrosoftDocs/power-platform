@@ -540,7 +540,7 @@
     - name: Security and governance
       items:
       - name: Security and governance
-        href: index.yml
+        href: security.yml
       - name: Overview
         href: wp-security.md     
       - name: Governance considerations
