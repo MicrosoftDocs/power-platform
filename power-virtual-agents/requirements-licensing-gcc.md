@@ -2,7 +2,7 @@
 title: "Understand the US Government plans available"
 description: "This document lists the capabilities, requirements, and features for US Government plans for Power Virtual Agents."
 keywords: "Administration, licensing, PVA, standalone, compare, comparison"
-ms.date: 9/22/2021
+ms.date: 5/27/2021
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -14,7 +14,7 @@ ms.collection: virtual-agent
 
 # Power Virtual Agents for US Government customers
 
-This article is for US government customers who are deploying Power Virtual Agents as a part of a Power Virtual Agents Government Community Cloud (GCC) plan. It provides you with an overview of features that are specific to these plans.
+This article is for US government customers who are deploying Power Virtual Agents as a part of Power Virtual Agents Government Community Cloud (GCC) plan. It provides you with an overview of features that are specific to these plans.
 
 Government plans are designed for the unique needs of organizations that must meet US compliance and security standards.
 
@@ -37,16 +37,6 @@ In addition to the features and capabilities of Power Virtual Agents, organizati
 -   Access to your organization's customer content is restricted to screened Microsoft personnel.
 
 -   Power Virtual Agents US Government complies with all certifications and accreditations that US Public Sector customers require.
-
-### GCC High environment
-
-Beginning September 2021, eligible customers can choose to deploy Power Virtual Agents US Government to the GCC High environment, which enables single sign-on and seamless integration with Office 365 GCC High deployments.  
-
-Microsoft has designed the platform and our operational procedures to meet the requirements aligning with the DISA SRG IL4 compliance framework. We anticipate the US Department of Defense contractor customer base and other Federal agencies currently leveraging Office 365 GCC High to use the Power Virtual Agents US Government GCC High deployment option. 
-
-This option enables and requires the customer to leverage Azure AD Government for customer identities, in contrast to GCC, which leverages the public Azure AD. 
-
-For the US Department of Defense contractor customer base, Microsoft operates the service in a manner that enables these customers to meet ITAR commitment and DFARS acquisition regulations, as documented and required by their contracts with the US Department of Defense. A Provisional Authority to Operate has been granted by DISA.
 
 ## Customer eligibility
 
@@ -85,7 +75,7 @@ Access to Power Virtual Agents US Government customer content by Microsoft admin
 
 Power Virtual Agents support and service engineering staff do not have standing access to customer content hosted in the Power Virtual Agents US Government service. Any staff who requests temporary permission elevation which would grant access to customer content must first have passed the following background checks.
 
-| Microsoft Personnel Screening and Background Checks&nbsp;<a href="#AccFn1" id="AccRef1"><sup>1</sup></a> | Description                                                                                                                                                                                                   |
+| Microsoft Personnel Screening and Background Checks <sup>1</sup> | Description                                                                                                                                                                                                   |
 |------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | U.S. citizenship                                                 | Verification of U.S. citizenship                                                                                                                                                                              |
 | Employment history check                                         | Verification of seven (7) year employment history                                                                                                                                                             |
@@ -99,7 +89,7 @@ Power Virtual Agents support and service engineering staff do not have standing 
 | CJIS background screening                                        | State-adjudicated review of federal and state criminal history by state CSA appointed authority within each state that has signed up for the Microsoft CJIS IA program                                        |
 | Department of Defense IT-2                                       | Staff who request elevated permissions to customer data or privileged administrative access to DoD SRG L5 service capacities must pass DoD IT-2 adjudication, based on a successful OPM Tier 3 investigation. |
 
-<a href="#AccRef1" id="AccFn1">1.</a> Applies only to personnel with temporary or standing access to customer content hosted in Power Virtual Agents US Government (GCC and GCC High)
+<sup>1</sup> Applies only to personnel with temporary or standing access to customer content hosted in Power Virtual Agents US Governments (GCC).
 
 ## Certifications and accreditations
 
@@ -156,14 +146,14 @@ You use a different set of URLs to access Power Virtual Agents US Government env
 
 | Commercial version | US Government version |
 |-------------------------|-------------------------|
-| [https://web.powerva.microsoft.com](https://web.powerva.microsoft.com) | [https://gcc.powerva.microsoft.us](https://gcc.powerva.microsoft.us) (GCC) </br></br>[https://high.powerva.microsoft.us](https://high.powerva.microsoft.us) (GCC High)|
-| [https://flow.microsoft.com](https://flow.microsoft.com/) | [https://gov.flow.microsoft.us](https://gov.flow.microsoft.us/) (GCC)</br></br>[https://high.flow.microsoft.us](https://high.flow.microsoft.us/) (GCC High) </br></br>[https://flow.appsplatform.us](https://flow.appsplatform.us) (DoD) |
+| [https://web.powerva.microsoft.com](https://web.powerva.microsoft.com) | [https://gcc.powerva.microsoft.us](https://gcc.powerva.microsoft.us) (GCC) |
+| [https://flow.microsoft.com](https://flow.microsoft.com/) | [https://gov.flow.microsoft.us](https://gov.flow.microsoft.us/) (GCC)</br>[https://high.flow.microsoft.us](https://high.flow.microsoft.us/) (GCC High) </br>[https://flow.appsplatform.us](https://flow.appsplatform.us) (DoD) |
 | [https://make.powerapps.com](https://make.powerapps.com/) | [https://make.gov.powerapps.us](https://make.gov.powerapps.us/) (GCC)<br /></br>[https://make.high.powerapps.us](https://make.high.powerapps.us/) (GCC High)<br /></br>[https://make.apps.appsplatform.us](https://make.apps.appsplatform.us/) (DoD) |
 | [https://flow.microsoft.com/connectors](https://flow.microsoft.com/connectors) | [https://gov.flow.microsoft.us/connectors](https://gov.flow.microsoft.us/connectors)<br /></br>[https://high.flow.microsoft.us/connectors](https://high.flow.microsoft.us/connectors) (GCC High)<br /></br>[https://flow.appsplatform.us](https://flow.appsplatform.us/) (DoD) |
 | [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com/) | [https://gcc.admin.powerplatform.microsoft.us](https://gcc.admin.powerplatform.microsoft.us/)<br /></br>[https://high.admin.powerplatform.microsoft.us](https://high.admin.powerplatform.microsoft.us/) (GCC High)<br /></br>[https://admin.appsplatform.us](https://admin.appsplatform.us/) (DoD) |
 
 
-For those customers that implement network restrictions, ensure access to the following domains is made available to your end users' access points:
+For those customers that implement network restrictions, please ensure access to the following domains is made available to your end users' access points:
 
 ### GCC customers:
 
@@ -181,26 +171,8 @@ For those customers that implement network restrictions, ensure access to the fo
 
 Refer to the [IP ranges](https://www.microsoft.com/download/confirmation.aspx?id=57063) for *AzureCloud.usgovtexas* and*AzureCloud.usgovvirginia* to enable access to Dataverse instances that users and administrators may create within your tenant.
 
-### GCC High Customers:
 
--    *.microsoft.us*
--    *.azure-apihub.us*
--    *.azure.us*
--    *.usgovcloudapi.net*
--    *.microsoftonline.us*
--    *.azureedge.net*
--    *.azure.net*
--    *.crm.microsoftdynamics.us(GCC High)*
--    *\*.high.dynamics365portals.us (GCC High)*
--    *\*.crm.appsplatform.us (DoD)*
--    *\*.appsplatformportals.us (DoD)*  
-
-Also, refer to the [IP ranges](https://www.microsoft.com/download/confirmation.aspx?id=57063) to enable you to access other Dataverse environments that users and administrators may create within your tenant and other Azure services that the platform leverages, including:
-
--    GCC and GCC High: Focus on *AzureCloud.usgovtexas* and *AzureCloud.usgovvirginia*.
-
-
-## Connectivity between Power Virtual Agents US Government and public Azure Cloud services
+## Connectivity between Power Virtual Agents US Government and Public Azure Cloud services
 
 Azure is distributed among multiple clouds. By default, tenants are allowed to open firewall rules to a cloud-specific instance, but cross-cloud networking is different and requires opening specific firewall rules to communicate between services. If you are a Power Virtual Agents customer and you have existing SQL instances in Azure public cloud which you need to access, you must open specific firewall ports in SQL to the Azure Government Cloud IP space for the following datacenters:
 
@@ -209,7 +181,7 @@ Azure is distributed among multiple clouds. By default, tenants are allowed to 
 -   USGov Texas
 
 
-Refer to the [Azure IP Ranges and Service Tags - US Government Cloud](https://www.microsoft.com/download/confirmation.aspx?id=57063) document, focusing attention on *AzureCloud.usgovtexas*, and*AzureCloud.usgovvirginia*. Also note that these are the IP ranges required for your end users to have access to the service URLs.
+Refer to the [Azure IP Ranges and Service Tags  US Government Cloud](https://www.microsoft.com/download/confirmation.aspx?id=57063) document, focusing attention on *AzureCloud.usgovtexas*, and*AzureCloud.usgovvirginia*. Also note that these are the IP ranges required for your end users to have access to the service URLs.
 
 
 
@@ -217,17 +189,9 @@ Refer to the [Azure IP Ranges and Service Tags - US Government Cloud](https:/
 
 Some of the features available in the commercial version of Power Virtual Agents are not available to Power Virtual Agents US Government customers. The Power Virtual Agents team is actively working on making these features available to US Government customers and will update this article when these features become available.
 
-Feature or capability | Available in GCC | Available in GCC High
-|-|-|-|
-[Power Virtual Agents Analytics](analytics-overview.md)&nbsp;<a id="LimsRef1" href="#LimsFn1"><sup>1</sup></a>| &#X2716;</br>No | &#X2716;</br>No
-[Power Virtual Agents Microsoft Teams app experience](teams/fundamentals-what-is-power-virtual-agents-teams.md) | &#X2716;</br>No | &#X2716;</br>No
-[Teams channel in the Power Virtual Agents web app](publication-add-bot-to-microsoft-teams.md) | &#X2714;</br>Yes | &#X2716;</br>No
-[Skills](configuration-add-skills.md) | &#X2714;</br>Yes | &#X2716;</br>No
-[Transfer to agents](configuration-hand-off-omnichannel.md) | &#X2714;</br>Yes | &#X2716;</br>No
+-   [Power Virtual Agents Analytics](analytics-overview.md). Alternatively, you can create [Custom Analytics (blog)](https://powervirtualagents.microsoft.com/blog/custom-analytics-solution-for-power-virtual-agents/) using Power BI dashboard.
 
-
-<a id="LimsFn1" href="#LimsRef1">1. </a>Alternatively, you can create [Custom Analytics using a Power BI dashboard (blog)](https://powervirtualagents.microsoft.com/blog/custom-analytics-solution-for-power-virtual-agents/).
-
+-   [Power Virtual Agents Microsoft Teams app experience](teams/fundamentals-what-is-power-virtual-agents-teams.md).
 
 ## Requesting support
 
