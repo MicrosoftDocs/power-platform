@@ -116,8 +116,8 @@ The per app license gives a user access to one Power Apps or one portal for a si
 <thead>
   <tr>
     <th></th>
-    <th colspan="3">Environment 1</th>
-    <th colspan="3">Environment 2</th>
+    <th colspan="3">**Environment 1**</th>
+    <th colspan="3">**Environment 2**</th>
     <th>Per app licenses consumed</th>
   </tr>
 </thead>
