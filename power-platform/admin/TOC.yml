@@ -2,6 +2,8 @@
   items: 
   - name: Administer Power Platform
     items:    
+    - name: Administer Power Platform
+      href: index.yml
     - name: Overview
       href: admin-documentation.md
     - name: Working with the Admin Portals 
@@ -540,7 +542,7 @@
     - name: Security and governance
       items:
       - name: Security and governance
-        href: index.yml
+        href: security.yml
       - name: Overview
         href: wp-security.md     
       - name: Governance considerations
