@@ -73,7 +73,7 @@ This is the first step of the installation process and is required for every oth
 
      ![Establish connections to activate your solution.](media/msi-import.png "Establish connections to activate your solution.")
 
-    When you create the connection for HTTP with Azure AD enter the following into the Base Resource URL and Azure AD Resource URI (Application ID URI): [https://graph.microsoft.com](https://graph.microsoft.com) or [https://dod-graph.microsoft.us/](ttps://dod-graph.microsoft.us/) if you're in a DoD environment.
+    When you create the connection for HTTP with Azure AD enter the following into the Base Resource URL and Azure AD Resource URI (Application ID URI): [https://graph.microsoft.com](https://graph.microsoft.com) or [https://dod-graph.microsoft.us/](https://dod-graph.microsoft.us/) if you're in a DoD environment.
 
      ![Establish HTTP with Azure AD.](media/httpazuread.png "Establish connections to activate your solution.")
 
