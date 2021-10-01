@@ -36,11 +36,17 @@ These tips for creating tooltips are described in the tooltip associated with th
 
 ![Screenshot of the trigger phrase section in the topic details page.](media/advanced-ai-features/trigger-phrase-tooltip.png)
 
-There are some specific features that further improve how the AI in Power Virtual Agents understands what your bot users are asking, and how the AI provides answers.
-
 
 >[!NOTE]
 >The AI capabilities listed in this topic are in preview, available to bots created with English as the set language.
+
+## Advanced AI features overview
+
+There are some specific features that further improve how the AI in Power Virtual Agents understands what your bot users are asking, and how the AI provides answers. The following video provides an overview of these features, each of which is described in further detail on this page.  
+
+>  
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWKo4a]
+>   
 
 
 ## Topic overlap detection (preview)

@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/13/2020
+ms.date: 09/21/2021
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -19,7 +19,7 @@ search.app:
 
 # Manage Dynamics 365 apps
 
-You can now use the Microsoft Power Platform admin center to install, configure, and manage Dynamics 365 apps that run on Microsoft Dataverse. Apps in this topic refer to Dynamics 365 apps such as Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, and Dynamics 365 Marketing as well as apps purchased from Microsoft AppSource requiring any of these Dynamics 365 licenses.
+You can now use the Microsoft Power Platform admin center to install, configure, and manage Dynamics 365 apps that run on [Microsoft Dataverse](/powerapps/maker/common-data-service/data-platform-intro). Apps in this topic refer to Dynamics 365 apps such as Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, and Dynamics 365 Marketing as well as apps purchased from Microsoft AppSource requiring any of these Dynamics 365 licenses.
 
 > [!NOTE]
 > You can install and manage Dynamics 365 apps only in an environment that was created with a database and with Dynamics 365 apps enabled during the environment creation. A valid Dynamics 365 license is required to enable Dynamics 365 apps during the environment creation. More information: [Create an environment with a database](./create-environment.md#create-an-environment-with-a-database)
@@ -140,9 +140,9 @@ For information on how to delete an app, see [Delete a model-driven app](/powera
 The number of environments admins see in the **Select an environment** drop-down list will be less than or equal to the number of environments displayed on the **Environments** page in the Power Platform admin center. Check that no filter is applied on the **Environments** page.    
 
 Filters are applied to the **Select an environment** drop-down list as follows:
-1. Filtered based on the geographic region (Geo picker); selected by the admin in the tenant-level view.
-2. Filtered with environments that only have a database.
-3. Filtered with environments that are only in a ready state. 
+1. Displays environments based on the [geographic region](regions-overview.md); selected by the admin in the tenant-level view.
+2. Displays environments that only have a database.
+3. Displays environments that are only in a ready state. 
 
 <!-- 
 ### See also

@@ -148,7 +148,10 @@ For more information, see [Assign a record to a user or team](/powerapps/user/as
 > - You do not need to assign team members with an individual security role if your group team's security role has a [member's privilege inheritance](security-roles-privileges.md#team-members-privilege-inheritance) and the security role contains at least one privilege that has User level permission.
 
 ### See also
-[Manage teams](manage-teams.md)
+[Manage teams](manage-teams.md) <br />
+[Video: Azure Active Directory group membership](https://youtu.be/GW2Rz53BX6o) 
+
+
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

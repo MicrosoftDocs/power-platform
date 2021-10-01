@@ -6,7 +6,7 @@ manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/06/2021
+ms.date: 09/13/2021
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
@@ -174,7 +174,28 @@ Before you begin:
 
 The import can take up to 60 minutes to be completed. Learn more about the apps and flows in the Core components: [What's in the Core Components](core-components.md)
 
-## Activate the sync template flows
+## Update and turn on child flows
+
+There are several child flows which will need their **Run only users** properties updated.
+
+- HELPER - CloudFlowOperations
+- HELPER - CanvasAppOperations
+- HELPER - ObjectOperations
+- CLEANUP HELPER - Check Deleted (Canvas Apps)
+- CLEANUP HELPER - Check Deleted (Cloud Flows)
+- CLEANUP HELPER - Check Deleted (Model Driven Apps)
+- CLEANUP HELPER - Check Deleted (PVA)
+
+For all of these flows, go to the details page and click the **Run only users** edit button.
+
+You will see all the connections in the child flow. For each one, change the value to **Use this connection (userPrincipalName\@company.com)**. If there is no connection for any of the connectors, go to **Data** > **Connections**, and create one for the connector.
+
+   ![Find setting for run only users.](media/runonlyusersgov1.png "Find setting for run only users")
+   ![Configure run only users.](media/runonlyusersgov2.png "Configure run only users")
+
+Once you have updated the run only users, turn on all the child flows.
+
+## Activate the flows
 
 The Admin \| Sync Template flows part of this solution crawl through all the resources stored in Microsoft Power Platform and make a copy of details in each resource (for example, apps and flows) to Dataverse (table definitions are provided in this solution). All data displayed in most of the starter kit components must be in Dataverse, which means that the sync template must be configured for everything else to work. The sync flows run daily overnight.
 
@@ -189,7 +210,7 @@ We will more quickly resolve issues around dependencies between tables by enabli
     1. Select **Installed apps**.
     1. Select **See all** for Center of Excellence - Core Components.
     1. Select **Cloud flows**.
-1. Turn on: CLEANUP - Admin \| Sync Template v3 (Check Deleted)
+1. Turn on: CLEANUP - Admin \| Sync Template v3 (Check Deleted).
 1. Wait until it finishes before you turn on any other flows.
 1. Turn on: Admin \| Sync Template V3 (Connectors)
 1. Wait until it finishes before you turn on any other flows.
@@ -198,9 +219,70 @@ We will more quickly resolve issues around dependencies between tables by enabli
 1. Wait for Admin \| Sync Template v3 to complete its run and then turn it back off. This will avoid write conflicts for large organizations.
 1. Check the Admin \| Sync Template flows for apps, flows and other resources and wait until all of these complete.
 1. Turn back on Admin \| Sync Template v3.
+1. Now you're ready to turn on all the other flows
+    1. Turn on all the flows starting with CLEANUP.
+    1. Turn on the [Admin | Capacity Alerts](core-components.md#flows) if you would like to receive alerts when environments get close to approved capacity.
+    1. Turn on the [Admin | Welcome Email v3](core-components.md#flows) if you would like to send welcome emails to new makers.
+    1. Turn on the flows starting with Env Request and DLP Request if you are using the [Power Platform Request Center](core-components.md#power-platform-request-center)
+    1. Turn on the flows starting with Command Center App if you are using the [Admin - Command Center](core-components.md#admin---command-center)
 
 >[!IMPORTANT]
 > Note that **Admin \| Compliance Detail Request v3** will not pass until you complete setup of the Governance component so you should leave it turned off until then.
+
+## (Optional) Create an Azure AD app registration to connect to Microsoft Graph
+
+>[!NOTE]
+> Only complete this steps if you want to review Power Platform related [Microsoft 365 Message Center](/microsoft-365/admin/manage/message-center) updates in the [Admin - Command Center](core-components.md#admin---command-center) canvas app.
+
+The [Admin - Command Center](core-components.md#admin---command-center) connects to [Microsoft Graph API](/graph/api/serviceannouncement-list-messages) to get [Microsoft 365 Message Center](/microsoft-365/admin/manage/message-center) updates.
+
+Using these steps, you'll set up an Azure AD app registration that will be used in a cloud flow to connect to the Graph API. More information: [Use the Microsoft Graph API](/graph/use-the-api)
+
+1. Sign in to [portal.azure.com](https://portal.azure.com).
+
+1. Go to **Azure Active Directory** > **App registrations**.
+
+   ![Azure AD app registration.](media/coe33.png "Azure AD app registration")
+
+1. Select **+ New Registration**.
+
+1. Enter a name (for example, **CoE Command Center**), don't change any other setting, and then select **Register**.
+
+1. Select **API Permissions** > **+ Add a permission**.
+
+   ![API Permissions - Add a permission.](media/coe34.png "Add a permission")
+
+1. Select **Microsoft Graph**, and configure permissions as follows:
+
+   1. Select **Delegated permissions**, and then select **ServiceMessage.Read.All**.
+   1. Select **Application permissions**, and then select **ServiceMessage.Read.All**.
+   1. Select **Add permissions**.
+
+1. Select **Grant Admin Consent for (your organization)**.
+
+1. Select **Certificates and secrets**.
+
+1. Select **+ New client secret**.
+
+   ![New client secret.](media/coe39.png "New client secret")
+
+1. Add a description and expiration (in line with your organization's policies), and then select **Add**.
+
+1. Copy and paste the **Secret** to a text document in Notepad for the time being.
+
+1. Select **Overview**, and copy and paste the application (client) ID value to the same text document; be sure to make a note of which GUID is for which value. You'll need these values in the next step as you configure the custom connector.
+
+1. Go to [make.powerapps.com](https://make.powerapps.com/), select **Solutions**, and then open the **Center of Excellence - Core Components** solution to view the flows.
+
+1. Edit the **Command Center App >  Get M365 Service Messages** flow.
+
+1. Update the **List serviceAnnouncements from Graph** with your client ID and client secret.
+    ![Update HTTP action with client ID and secret](media/commandcenter3.png "Update HTTP action with client ID and secret")
+
+    >[!NOTE]
+    > We recommend storing the client ID and secret in Azure Key Vault and using the [Azure Key Vault connector](/connectors/keyvault/) to retrieve them in the flow.
+
+1. **Save** this flow.
 
 ## Set up Audit Logs solution
 
@@ -212,7 +294,7 @@ The CoE Power BI dashboard provides a holistic view with visualizations and insi
 
 ## Share apps with other admins
 
-The core components solution doesn't contain any apps for makers or users, only admin-specific apps. These components are designed to give admins better visibility and overview of resources and usage in their environments. None of the components are to be shared with makers or users.
+The core components solution contains apps designed to give admins better visibility and overview of resources and usage in their environments. Share those apps with other Power Platform admins. Take a look at the [Admin - Command Center](core-components.md#admin---command-center) app which is your central place to launch all CoE Starter Kit apps from.
 
 More information:
 <br>

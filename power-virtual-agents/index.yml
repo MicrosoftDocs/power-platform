@@ -156,5 +156,5 @@ additionalContent:
         url: /dynamics365/
       # Card
       - title: Microsoft Azure
-        summary: "Ever-expanding set of cloud computing services to help your organization meet it's business challenges"
+        summary: "Ever-expanding set of cloud computing services to help your organization meet its business challenges"
         url: /azure

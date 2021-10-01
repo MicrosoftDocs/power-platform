@@ -1,7 +1,7 @@
 ---
 title: "New Microsoft Dataverse storage capacity  | MicrosoftDocs"
 description: Introducing a new storage model for Microsoft Dataverse.
-ms.date: 06/16/2021
+ms.date: 09/16/2021
 ms.reviewer: ""
 ms.service: "power-platform"
 ms.topic: "quickstart"
