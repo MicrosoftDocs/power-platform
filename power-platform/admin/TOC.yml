@@ -142,7 +142,7 @@
             href: enable-languages.md
           - name: Privacy preferences
             href: settings-privacy-security.md
-          - name: Configure Relevance Search
+          - name: Configure Dataverse search
             href: configure-relevance-search-organization.md 
         - name: Business 
           items:

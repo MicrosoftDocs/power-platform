@@ -185,7 +185,7 @@ All flows in this solution depend on all environment variables' being configured
 
 | Name | Description |
 |------|---------------|
-| Training in a day - Feedback Form     | The Training in a Day package includes a flow that automatically sends a feedback request to attendees on the day of the event. Configure the form URL (<https://forms.office.com/>...) here.    |
+| Training in a day - Feedback Form     | The Training in a Day package includes a flow that automatically sends a feedback request to attendees on the day of the event. Configure the form URL (<https://forms.office.com/> or https://forms.osi.apps.mil/ for a DoD tenant) here.    |
 | Power User Site URL (SharePoint Site) | The site that your Microsoft Power Platform power users can use to communicate and share files. You'll use it here to house the template library for them. |
 | Innovation Backlog URL | (optional) URl to the [Innovation Backlog](use-innovationbacklog.md) canvas app, if you are using this app |
 | Maker Assessment Admin eMail | eMail of the admin or CoE team that will respond to queries from the Maker Assessment app |
@@ -195,13 +195,13 @@ All flows in this solution depend on all environment variables' being configured
 
 The nurture components solution contains five flows:
 
--  Admin \| Newsletter with Product Updates
+- Admin \| Newsletter with Product Updates
 
--  Training in a day \| Feedback Reminder
+- Training in a day \| Feedback Reminder
 
--  Training in a day \| Registration Confirmation
+- Training in a day \| Registration Confirmation
 
--  Training in a day \| Reminder 3 days prior to event
+- Training in a day \| Reminder 3 days prior to event
 
 Follow the same instructions to configure the flows as explained in [Activate the sync template flows](setup-core-components.md#activate-the-flows).
 
