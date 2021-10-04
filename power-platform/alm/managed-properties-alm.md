@@ -62,7 +62,7 @@ Entities have more managed properties than any other type of solution component.
 |**New views can be created** |Whether new views can be created for the entity.|
 |**Can Change Hierarchical Relationship**|Whether Hierarchical Relationships settings can be changed. More information: [Define and query hierarchically related data](/powerapps/maker/common-data-service/define-query-hierarchical-data)|
 |**Can Change Tracking Be Enabled** |Whether the entity **Change Tracking** property can be changed.|
-|**Can Enable sync to external search index** |Whether the entity can be configured to enable relevance search. More information: [Configure Relevance Search to improve search results and performance](../admin/configure-relevance-search-organization.md) |
+|**Can Enable sync to external search index** |Whether the entity can be configured to enable Dataverse search. More information: [Configure Dataverse search to improve search results and performance](../admin/configure-relevance-search-organization.md) |
 
 ## View and edit field managed properties
 Next to a custom field in a solution select **…** and then select **Managed properties**.
