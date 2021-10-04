@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/30/2021
+ms.date: 10/04/2021
 ms.subservice: admin
 ms.author: jimholtz 
 search.audienceType: 
@@ -18,7 +18,7 @@ search.app:
 ---
 # Manage behavior settings 
 
-Use Behavior settings to adjust how model-driven apps appear and function. These settings do not apply to customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation) or canvas apps, except where noted.
+Use Behavior settings to adjust how model-driven apps appear and function. These settings do not apply to canvas apps, except where noted.
 
 These settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Product** >**Behavior**.
 
@@ -36,7 +36,7 @@ Make sure you have the System Administrator security role or equivalent permissi
 > |--------------|-----------------|  
 > |**Basic behavior**||  
 > |Auto save|Default: On. If **On**, after a record is created (initially saved), any changes made to a form will automatically be saved thirty seconds after the change is made. The 30-second period starts again after a change is made. If no changes are made, the automatic save doesn’t happen. More information: [Manage auto-save](/dynamics365/customer-engagement/customize/manage-auto-save)|  
-> |Load default static content from Content Delivery Network|Default: On. Canvas apps will load out-of-the-box static content from the Azure Content Delivery Network (CDN) service. For firewall restrictions and IP approved list related issues, system administrators can select **Off** to disable the Azure Azure Content Delivery Network feature. **Note**: this setting does not apply to model-driven apps or customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation).|  
+> |Load default static content from Content Delivery Network|Default: On. Canvas apps will load out-of-the-box static content from the Azure Content Delivery Network (CDN) service. For firewall restrictions and IP approved list related issues, system administrators can select **Off** to disable the Azure Azure Content Delivery Network feature. **Note**: this setting does not apply to model-driven apps.|  
 > |Share reassigned records with original owner|Default: Off. Select whether a record is shared with the original owner of the record, or completely reassigned to another user.| 
 > |Open in application mode|Default: Off. Select **On** to enable application mode. When this mode is enabled, customer engagement apps can be opened in a browser without menus, navigation, or toolbars. Hiding these parts of the browser causes customer engagement apps to appear like a separate application rather than a website. |  
 > | Use Unified Interface only | Default: Off. When you enable Unified Interface Only, all your apps, including those designed for the legacy web client, run in Unified Interface all the time. Environments with legacy web client apps will show a notification on the home page, prompting System Administrators to update those apps to Unified Interface.|
