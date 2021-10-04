@@ -41,7 +41,7 @@ Enabling Document Suggestions helps your Dynamics 365 apps web browser and mobil
   
   - Document management must be set up in Dynamics 365 apps. See [Set up SharePoint integration](set-up-sharepoint-integration.md).  
   
-- Relevance Search must be enabled. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Configure Relevance Search for the organization](../admin/configure-relevance-search-organization.md)  
+- Dataverse search must be enabled. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Configure Dataverse search for the organization](../admin/configure-relevance-search-organization.md)  
   
 - Document Suggestions works with Web browser, Dynamics 365 for tablets and Dynamics 365 for phones.  
   
