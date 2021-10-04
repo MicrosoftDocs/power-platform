@@ -4,7 +4,7 @@ description: "FAQs for licensing Power Apps, Power Automate, Dataverse, Datavers
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/23/2021
+ms.date: 10/04/2021
 author: chrisgarty
 ms.subservice: admin
 ms.author: cgarty
@@ -28,9 +28,11 @@ We have found some common questions on licensing and plan options. We’ve inclu
 
 Power Apps plans:
 
-- **Power Apps per app plan** which allows individual users to run applications (2 apps and a single portal) for a specific business scenario based on the full capabilities of Power Apps for $10/user/app/month. This plan provides an easy way for customers to get started with the platform before broader scale adoption.
+- **Power Apps per app plan** which allows individual users to run applications (2 apps and a single portal) for a specific business scenario based on the full capabilities of Power Apps for $5/user/app/month. This plan provides an easy way for customers to get started with the platform before broader scale adoption.
 
-- **Power Apps per user plan** which equips a user to run unlimited applications (within service limits) based on the full capabilities of Power Apps for $40/user/month.
+- **Power Apps per user plan** which equips a user to run unlimited applications (within service limits) based on the full capabilities of Power Apps for $20/user/month.
+
+See [Power Apps pricing](https://powerapps.microsoft.com/pricing/).
 
 Power Automate Plans:
 
