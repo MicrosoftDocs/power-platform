@@ -49,7 +49,7 @@ Use the following methods to free up storage for each of the capacity types.
 |     | **Method 7**: Remove bulk duplicate detection jobs and associated copies of duplicate records        |
 |     | **Method 8**: Delete bulk import instances using a bulk deletion job        |
 |     | **Method 9**: Delete bulk deletion job instances using a bulk deletion job        |
-|     | **Method 11**: Remove unrequired tables and columns from Relevance Search        |
+|     | **Method 11**: Remove unrequired tables and columns from Dataverse search        |
 
 
 ## Reduce file storage
@@ -452,12 +452,12 @@ To monitor the status of audit delete jobs, see the next section.
 
 12. Choose **Next**, review the bulk deletion job, and then choose **Submit** to create the recurring job.  
 
-### Method 11: Remove unrequired tables and columns from Relevance Search
+### Method 11: Remove unrequired tables and columns from Dataverse search
 
-Tables and tables fields enabled for Relevance Search have an impact on the database storage capacity. 
+Tables and tables fields enabled for Dataverse search have an impact on the database storage capacity. 
 
-- To revise the list of tables selected for Relevance Search results, see [Select entities for Relevance Search](configure-relevance-search-organization.md#select-entities-for-relevance-search).
-- To revise the list of fields selected for each table for Relevance Search results, see [Configure searchable fields for Relevance Search](configure-relevance-search-organization.md#configure-searchable-fields-for-relevance-search). 
+- To revise the list of tables selected for Dataverse search results, see [Select entities for Dataverse search](configure-relevance-search-organization.md#select-entities-for-dataverse-search).
+- To revise the list of fields selected for each table for Dataverse search results, see [Configure searchable fields for Dataverse search](configure-relevance-search-organization.md#configure-searchable-fields-for-dataverse-search). 
 
 ## Free up storage used by flow approvals
 
