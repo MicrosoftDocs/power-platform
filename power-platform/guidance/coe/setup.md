@@ -56,7 +56,6 @@ The following are prerequisites for installing the CoE Starter Kit as it's inclu
     - [Microsoft Dataverse](/connectors/commondataserviceforapps/)
     - [Microsoft Dataverse (legacy)](/connectors/commondataservice/)
     - [Microsoft Teams](/connectors/teams/)
-    - [Notifications](/connectors/flowpush/)
     - [Office 365 Groups](/connectors/office365groups/)
     - [Office 365 Outlook](/connectors/office365/)
     - [Office 365 Users](/connectors/office365users/)
@@ -115,7 +114,7 @@ When you're ready to extend the CoE Starter Kit with your own ideas, you'll do s
 
 1. Read about solutions in our documentation, which will introduce you to the concepts in addition to notions like how to create your publisher. More information: [Introduction to solutions](/powerapps/developer/common-data-service/introduction-solutions)
 
-1. Create a new unmanaged solution.
+1. Create a new unmanaged solution. Environment variables that are part of the CoE Starter Kit can only be used from solutions. If you save a copy of apps or flows outside of a solution, environment variables will not get picked up.
 
 1. Choose components from the CoE Starter Kit to add to your new solution. You decide which ones you want to customize.
 
@@ -129,13 +128,13 @@ When you're ready to extend the CoE Starter Kit with your own ideas, you'll do s
 
 ## Installing updates
 
-Periodically, the solution will receive updates with new features, bug fixes, or optimizations. These updates will be announced on the [GitHub repo](https://aka.ms/CoEStarterKitRepo), and can be downloaded from there or by direct download at [aka.ms/CoEStarterKitDownload](https://aka.ms/CoEStarterKitDownload). We target releasing monthly during the first full week of each month.  
+Periodically, the solution will receive updates with new features, bug fixes, or optimizations. These updates will be announced as a [release](https://github.com/microsoft/coe-starter-kit/releases) on the [GitHub repo](https://aka.ms/CoEStarterKitRepo), and can be downloaded from there or by direct download at [aka.ms/CoEStarterKitDownload](https://aka.ms/CoEStarterKitDownload). We target releasing monthly during the first full week of each month.  
 
 Install the updates by importing the latest version to the environment where you originally installed the solution. Select **Upgrade** (the default) to update the solution.
 
 > [!NOTE]
 > If you have made any changes to the flows / apps in the solution they will not receive updates until you remove that unmanaged layer. <br>
-> For every flow/app that you changed, go to the solution layers and remove it.
+> For every flow/app that you changed and for every child flow, go to the solution layers and remove it.
 > ![Upgrade 1.](media/Upgrade1.png "Upgrade 1")
 > ![Upgrade 2.](media/Upgrade2.png "Upgrade 2")
 
