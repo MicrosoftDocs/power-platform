@@ -456,8 +456,8 @@ To monitor the status of audit delete jobs, see the next section.
 
 Tables and tables fields enabled for Dataverse search have an impact on the database storage capacity. 
 
-- To revise the list of tables selected for Dataverse search results, see [Select entities for Dataverse search](configure-relevance-search-organization.md#select-entities-for-relevance-search).
-- To revise the list of fields selected for each table for Dataverse search results, see [Configure searchable fields for Dataverse search](configure-relevance-search-organization.md#configure-searchable-fields-for-relevance-search). 
+- To revise the list of tables selected for Dataverse search results, see [Select entities for Dataverse search](configure-relevance-search-organization.md#select-entities-for-dataverse-search).
+- To revise the list of fields selected for each table for Dataverse search results, see [Configure searchable fields for Dataverse search](configure-relevance-search-organization.md#configure-searchable-fields-for-dataverse-search). 
 
 ## Free up storage used by flow approvals
 
