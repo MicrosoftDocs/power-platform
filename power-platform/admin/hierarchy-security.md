@@ -36,7 +36,7 @@ The hierarchy security model is an extension to the existing security models tha
 > 
 > When you enabled the [**Record ownership across business units**](wp-security-cds.md#matrix-data-access-structure-modernize-business-units---preview), manager can have direct reports from different business units. You can use the following [environment database settings](environment-database-settings.md) to remove the business unit restriction.
 > 
-> **ManagersMustBeInSameOrParentBusinessUnitAsReports**
+>    **ManagersMustBeInSameOrParentBusinessUnitAsReports**
 >    default = false   
 >    
 >    You can set it to true, and the manager's business unit does not need to be the same as the direct report's business unit.  
