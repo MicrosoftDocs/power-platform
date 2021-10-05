@@ -9,7 +9,7 @@ ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/30/2021
+ms.date: 10/05/2021
 search.audienceType: 
   - admin
 search.app:
@@ -33,10 +33,17 @@ The hierarchy security model is an extension to the existing security models tha
   
 > [!NOTE]
 > With the Manager hierarchy security model, a manager has access to the records owned by the user or by the team that a user is a member of, and to the records that are directly shared with the user or the team that a user is a member of.  When a record is shared by a user who is outside of the management chain to a direct report user with Read-only access, the direct report's manager only has Read-only access to the shared record. 
->   
-> In addition to the Manager hierarchy security model, a manager must have at least the user level Read privilege on an table, to see the reports’ data. For example, if a manager doesn’t have the Read access to the Case table, the manager won’t be able to see the cases that their reports have access to.  
 > 
-> In order for the manager to see all the direct report's records, the direct report user must have an 'enabled' user status.  Manager will not be able to see 'disabled' user's records.
+> When you enabled the [**Record ownership across business units**](wp-security-cds.md#matrix-data-access-structure-modernize-business-units---preview), manager can have direct reports from different business units. You can use the following [environment database settings](environment-database-settings.md) to remove the business unit restriction.
+> 
+> **ManagersMustBeInSameOrParentBusinessUnitAsReports**
+>    default = false   
+>    
+>    You can set it to true, and the manager's business unit does not need to be the same as the direct report's business unit.  
+>
+> In addition to the Manager hierarchy security model, a manager must have at least the user level Read privilege on a table, to see the reports’ data. For example, if a manager doesn’t have the Read access to the Case table, the manager won’t be able to see the cases that their reports have access to.  
+> 
+> In order for the manager to see all the direct report's records, the direct report user must have an 'enabled' user status.  The manager will not be able to see 'disabled' user's records.
 
  For a non-direct report in the same management chain of the manager, a manager has the Read-only access to the non-direct report’s data. For a direct report, the manager has the Read, Write, Update, Append, AppendTo access to the report’s data. To illustrate the Manager hierarchy security model, let’s take a look at the diagram below. The CEO can read or update the VP of Sales data and the VP of Service data. However, the CEO can only read the Sales Manager data and the Service Manager data, as well as the Sales and Support data. You can further limit the amount of data accessible by a manager with “Depth”. Depth is used to limit how many levels deep a manager has Read-only access to the data of their reports. For example, if the depth is set to 2, the CEO can see the data of the VP of Sales, VP of Service and Sales and Service Managers. However, the CEO doesn’t see the Sales data or the Support data.  
   

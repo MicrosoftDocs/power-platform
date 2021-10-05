@@ -1,7 +1,7 @@
 ---
 title: "Security concepts in Microsoft Dataverse | MicrosoftDocs"
 description: Provides detailed information about the security model and concepts in Microsoft Dataverse.
-ms.date: 09/27/2021
+ms.date: 10/05/2021
 ms.service: power-platform
 ms.topic: "article"
 author: jimholtz
@@ -69,11 +69,26 @@ User A can be associated with any of the business units, including the root busi
 
 Once this feature switch is turned on, you can select Business unit when you [assign a security role to a user](assign-security-roles.md). This allows you to assign security from different business units to a user.
 
+> [!NOTE]
+> This feature switch is stored in the **EnableOwnershipAcrossBusinessUnits** [environment database settings](environment-database-settings.md) and can also be set using the [OrgDBOrgSettings tool for Microsoft Dynamics CRM](
+https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm).
+
 ### Owning Business Unit
 
 Each record has an Owning Business Unit field which determines which business unit owns the record. This field defaults to the user’s business unit when the record is created and cannot be changed except when the feature switch is turned ON. 
 
 You can manage whether you want to allow your user to set the Owning Business Unit field when the feature switch is ON. To set the Owning Business Unit field, you need to grant the user’s security role the Business Unit table’s **Append** and **Append To** privileges with Business Unit permission.  
+
+To allow your user to set this field, you can enable this field in the following:
+1. Form - both the body and header.
+2. View.
+3. EntityMap in your Solution.
+
+> [!NOTE]
+> If you have a job/process to sync data between environments and the **Owning Business Unit** is included as part of the schema, your job will fail with a **Foreign KEY** constraint violation if the target environment does not have the same **Owning Business Unit** value. 
+> 
+> You can either remove the **Owning Business Unit** field from the source schema, or update the **Owning Business Units** field value of the Source to any of the business units of the target.
+
 
 ## Table/record ownership
 
