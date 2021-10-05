@@ -26,7 +26,7 @@ With Dataverse search enabled, a search box is always available at the top of ev
 
 Dataverse search helps you quickly find what you're looking for. It delivers fast and comprehensive results across multiple tables in a single list, sorted by relevance. In addition, Dataverse search has the following benefits:
 
-- **Fast and accurate search**: Provides a precise and quick search experience for model-driven apps, and performance that's superior to [quick find search, formerly known as categorized search](/powerapps/user/quick-find#multiple-table-quick-find-categorized-search).  [Check capacity](about-powerapps-perapp.md#check-capacity)
+- **Fast and accurate search**: Provides a precise and quick search experience for model-driven apps, and performance that's superior to [quick find search, formerly known as categorized search](/powerapps/user/quick-find#multiple-table-quick-find-categorized-search).  [Check the App passes capacity for your environment.](about-powerapps-perapp.md#check-capacity)
 
 - **Suggested results as you type**: Finds what you're looking for and shows you the top results, as you type.
 
