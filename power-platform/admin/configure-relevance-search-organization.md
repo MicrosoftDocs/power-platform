@@ -100,7 +100,7 @@ Your queries and results are reviewed by people using secured computers in the U
 
 4. Select **Save**
 
-   :::image type="content" source="media/ppac-dataverse-search2.png" alt-text="Set Share anonymized search analytics with Microsoft to On":::
+:::image type="content" source="media/ppac-dataverse-search2.png" alt-text="Set Share anonymized search analytics with Microsoft to On":::
 
 ## Set up Dataverse search
 
