@@ -110,7 +110,7 @@ Setting up Dataverse search after enabling it in **Power Platform Admin Center**
 
 2. Review the columns that will be searched over, the columns that will be displayed, and the filter conditions that will be applied in model-driven Power Apps - see below.
 
-3. Ensure the tables enabled for Dataverse search are included in the model-driven app. Use the Power Apps app designer to verify that the table is included in an app's components. For more information see, [Add or edit model-driven app components](/powerapps/maker/model-driven-apps/add-edit-app-components#add-a-component).
+3. Ensure the tables enabled for Dataverse search are included in the model-driven app. Use the Power Apps app designer to verify that the table is included in an app's components. For more information, see, [Add or edit model-driven app components](/powerapps/maker/model-driven-apps/add-edit-app-components#add-a-component).
 
 ### Select tables for Dataverse search
 
@@ -291,7 +291,7 @@ To set the managed property, do the following:
 
 If you want to change the **Can enable sync to external search index** property to **False**, you must first deselect the table from Dataverse search. If the table is included in Dataverse search, you'll see the following message: "This entity is currently syncing to an external search index. You must remove the entity from the external search index before you can set the **Can Enable Sync to External Search Index** property to **False**."
 
-If **Can Enable Sync to External Search Index** is set to **False**, you'll see the following message when you try to include a table in Dataverse search: "Entity can't be enabled for Dataverse search because of the configuration of its managed properties." For custom tables with particularly sensitive data, you may consider setting the **Can enable sync to external search index** property to **False**.
+If **Can Enable Sync to External Search Index** is set to **False**, you'll see the following message when you try to include a table in Dataverse search: "Entity can't be enabled for Dataverse search because of the configuration of its managed properties." For custom tables with sensitive data, you may consider setting the **Can enable sync to external search index** property to **False**.
 
 > [!IMPORTANT]
 > Keep in mind, after you install the managed solution on the target system, you won't be able to change the value of the property because it's a managed property.
