@@ -60,9 +60,10 @@ For more information about Dataverse search, see: [Using Dataverse search to se
 
 Dataverse search is an opt-out feature, set to **On** by default on all production environments, except those using their own encryption key. It is recommended to have Dataverse search enabled, so users have a superior search experience in model-driven apps, with the benefits listed above. All model-driven Power Apps will have the global search experience with the search bar in the header in the environment. Individual users won't be able to switch to [quick find search, formerly known as categorized search](/powerapps/user/quick-find).
 
-&lt;PIC of model app header with RS enabled: Model App 1.png&gt;
+:::image type="content" source="media/model-app1.png" alt-text="aaaa":::
 
-&lt;PIC of model app header with RS disabled: Model App 2.png&gt;
+:::image type="content" source="media/model-app2.png" alt-text="aaaa":::
+
 
 NOTE: Dataverse search doesn't support lifecycle operations (create, delete, backup, recover, copy, reset, and so on). In the event of such an operation, re-enable Dataverse search.
 
@@ -76,7 +77,7 @@ To enable Dataverse search, do the following:
 
 4. Select **Save**.
 
-&lt;PIC: PPAC 1.png&gt;
+:::image type="content" source="media/ppac-dataverse-search1.png" alt-text="aaaa":::
 
 If the Dataverse search index needs to be provisioned, you will see an indication that provisioning is in progress. Once the index is provisioned, it may take anywhere between an hour or more to complete a full sync for average size organizations, to a couple of days for very large size organizations.
 
@@ -99,7 +100,7 @@ Your queries and results are reviewed by people using secured computers in the U
 
 4. Select **Save**
 
-&lt;PIC: PPAC 1.png&gt;
+   :::image type="content" source="media/ppac-dataverse-search2.png" alt-text="aaaa":::
 
 ## Set up Dataverse search
 
@@ -121,11 +122,11 @@ Setting up search starts with reviewing the tables that are enabled for Datavers
 
 3. Select the solution you want to make the changes in and then select **Overview**.
 
-&lt;PIC: Maker portal 1.png&gt;
+   :::image type="content" source="media/maker-portal1.png" alt-text="aaaa":::
 
 4. Select **Manage search index**.
 
-&lt;GIF of Manage search index pane: Maker portal 2.gif&gt;
+:::image type="content" source="media/maker-portal2.gif" alt-text="aaa":::
 
 Although there is no limit on how many tables you can index for Dataverse search, there is a limit on the total number of **fields** that can be enabled for Dataverse search. The maximum is 1000 searchable fields for an organization. Out of these 1000 fields, up to 50 fields are required by the Dataverse search system, so you can configure up to **950 searchable fields**.
 
@@ -135,6 +136,8 @@ Although there is no limit on how many tables you can index for Dataverse search
 When you select a table to be indexed for Dataverse search, you can understand the number of fields that will be added to the index.
 
 &lt;PIC of Manage search index pane with number of fields highlighted: Maker portal 3.png&gt;
+
+:::image type="content" source="media/maker-portal3.png" alt-text="aaa":::
 
 The number of fields indexed for a table is dependent on the tables quick find view. Additionally, some field types are treated as multiple fields in the Dataverse search index as indicated in this table.
 
@@ -147,6 +150,8 @@ The number of fields indexed for a table is dependent on the tables quick find v
 The progress bar at the bottom shows the percentage of indexed fields as a fraction of the maximum allowed number of searchable fields.
 
 &lt;PIC of search pane with progress bar highlighted: Maker portal 3.png&gt;
+
+:::image type="content" source="media/maker-portal4.png" alt-text="aaa":::
 
 When you have reached the indexed field limit, you'll see a warning message. If you want to add more fields to the index, you'll have to free up space, either by removing some of the fields that are already in the index or removing entire tables from Dataverse search scope.
 
@@ -202,9 +207,9 @@ To edit the searchable fields of a table:
 
 5. Edit View columns and Find columns by adding, removing, or reordering columns. For a more detailed description of how to add or remove columns in a view, see [Choose and configure columns in model-driven app views in Power Apps](/powerapps/maker/model-driven-apps/choose-and-configure-columns)
 
-&lt;GIF of QFV: Maker portal 4.gif&gt;
+   :::image type="content" source="media/maker-portal5.gif" alt-text="aaa":::
 
-4. Select **Publish** to publish the changes to the view.
+6. Select **Publish** to publish the changes to the view.
 
 > [!IMPORTANT]
 > Changes to **Quick Find** **View** also apply to single-table and multi-table Quick Find configurations. Therefore, we don't prevent you from including fields that aren't supported for Dataverse search when you configure **Quick Find** **View**. However, unsupported fields aren't synced to the Dataverse search index and don't appear in the Dataverse search results.
