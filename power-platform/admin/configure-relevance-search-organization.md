@@ -64,8 +64,8 @@ Dataverse search is an opt-out feature, set to **On** by default on all produc
 
 :::image type="content" source="media/model-app2.png" alt-text="Second sample model-driven app":::
 
-
-NOTE: Dataverse search doesn't support lifecycle operations (create, delete, backup, recover, copy, reset, and so on). In the event of such an operation, re-enable Dataverse search.
+> [!NOTE]
+> Dataverse search doesn't support lifecycle operations (create, delete, backup, recover, copy, reset, and so on). In the event of such an operation, re-enable Dataverse search.
 
 To enable Dataverse search, do the following:
 
