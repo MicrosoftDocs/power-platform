@@ -140,7 +140,6 @@ The number of fields indexed for a table is dependent on the tables quick find v
 
 | Field type          |  Number of fields used in<br /> the Dataverse search index  |
 |----------------------------------------------------|----|
-|                                    |  |
 | Lookup (customer, owner, or Lookup type attribute) | 3   |
 | Option Set (state, or status type attribute)       | 2   |
 | All other types of fields                          | 1  |
@@ -153,7 +152,7 @@ When you have reached the indexed field limit, you'll see a warning message. If 
 
 By default, the following system tables are indexed for Dataverse search. However, custom tables aren't included. You must add them to Dataverse search for them to be searchable.
 
-| Tables enabled for Dataverse search without Dynamics 365 apps enabled | Tables enabled for Dataverse search with Dynamics 365 apps enabled |
+| Tables enabled for Dataverse search<br /> without Dynamics 365 apps enabled | Tables enabled for Dataverse search<br /> with Dynamics 365 apps enabled |
 |-------------------------|-------------------------|
 | Account (8)</br>Contact (11)</br>Goal (19)</br>Goal Metric (3)</br>Knowledge Article (56) | Campaign (2)</br>Campaign Activity (4)</br>Campaign Response (6)</br>Case (5)</br>Competitor (1)</br>Contract (7)</br>Invoice (4)</br>Lead (6)</br>Marketing List (5)</br>Opportunity (11)</br>Opportunity Product (8)</br>Order (4)</br>Product (5)</br>Quote (4)</br>Service (1)</br>Service Activity (9) |
 
