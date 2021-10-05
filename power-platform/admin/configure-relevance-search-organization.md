@@ -40,7 +40,7 @@ Dataverse search helps you quickly find what you're looking for. It delivers fas
 
 - **Operators for advanced search**: Lets you use simple Boolean operators in your search term and craft the query to get the results you want.
 
-- **Intelligence**: Applies AI technology to interpret natural language such as misspellings, common abbreviations, and synonyms to delivers quality results.
+- **Intelligence**: Applies AI technology to interpret natural language such as misspellings, common abbreviations, and synonyms to deliver quality results.
 
 For more information about Dataverse search, see: [Using Dataverse search to search for records](/powerapps/user/relevance-search).
 
@@ -82,7 +82,7 @@ To enable Dataverse search, do the following:
 If the Dataverse search index needs to be provisioned, you will see an indication that provisioning is in progress. Once the index is provisioned, it may take anywhere between an hour or more to complete a full sync for average size organizations, to a couple of days for very large size organizations.
 
 > [!IMPORTANT]
-> Disabling Dataverse search will deprovision and remove the index within a period of 12 hours. If you enable Dataverse search after about 12 hours of disabling it, a fresh index is provisioned, followed by a full sync which may take up to an hour or more for average size organizations, and a couple of days for very large size organizations. Consider this when you are disabling Dataverse search temporarily.
+> Disabling Dataverse search will deprovision and remove the index within a period of 12 hours. If you enable Dataverse search after about 12 hours of disabling it, a fresh index is provisioned, followed by a full sync which may take up to an hour or more for average size organizations, and a couple of days for very large size organizations. Consider this when you're disabling Dataverse search temporarily.
 
 ### Help improve Dataverse search
 
@@ -100,38 +100,38 @@ Your queries and results are reviewed by people using secured computers in the U
 
 4. Select **Save**
 
-:::image type="content" source="media/ppac-dataverse-search2.png" alt-text="Set Share anonymized search analytics with Microsoft to On":::
+   :::image type="content" source="media/ppac-dataverse-search2.png" alt-text="Set Share anonymized search analytics with Microsoft to On":::
 
 ## Set up Dataverse search
 
 Setting up Dataverse search after enabling it in **Power Platform Admin Center**, involves three steps:
 
-1. Select the searchable tables for Dataverse search (see below)
+1. Select the searchable tables for Dataverse search - see below.
 
-2. Review the columns that will be searched over, the columns that will be displayed and the filter conditions that will be applied, in model-driven Power Apps (see below)
+2. Review the columns that will be searched over, the columns that will be displayed, and the filter conditions that will be applied in model-driven Power Apps - see below.
 
 3. Ensure the tables enabled for Dataverse search are included in the model-driven app. Use the Power Apps app designer to verify that the table is included in an app's components. For more information see, [Add or edit model-driven app components](/powerapps/maker/model-driven-apps/add-edit-app-components#add-a-component).
 
 ### Select tables for Dataverse search
 
-Setting up search starts with reviewing the tables that are enabled for Dataverse search, in context of a solution. Using the new solution explorer, you can see a snapshot of Dataverse search index on the Overview page.
+Setting up search starts with reviewing the tables that are enabled for Dataverse search, in context of a solution. Using the new solution explorer, you can see a snapshot of Dataverse search index on the **Overview** page.
 
 1. Sign in to [Power Apps](https://make.powerapps.com/).
 
 2. Select **Solutions**.
 
-3. Select the solution you want to make the changes in and then select **Overview**.
+3. Select the solution you want to make the changes in, and then select **Overview**.
 
    :::image type="content" source="media/maker-portal1.png" alt-text="Select the solution and then select Overview":::
 
 4. Select **Manage search index**.
 
-:::image type="content" source="media/maker-portal2.gif" alt-text="Select Manage search index":::
+   :::image type="content" source="media/maker-portal2.gif" alt-text="Select Manage search index":::
 
 Although there is no limit on how many tables you can index for Dataverse search, there is a limit on the total number of **fields** that can be enabled for Dataverse search. The maximum is 1000 searchable fields for an organization. Out of these 1000 fields, up to 50 fields are required by the Dataverse search system, so you can configure up to **950 searchable fields**.
 
 > [!IMPORTANT]
-> Some columns that are common to all tables, like **Primary Name** and **ID** and are part of the 50 fields indexed by default for all tables and are not counted for every table.
+> Some columns are common to all tables, like **Primary Name** and **ID**, are part of the 50 fields indexed by default for all tables, and are not counted for every table.
 
 When you select a table to be indexed for Dataverse search, you can understand the number of fields that will be added to the index.
 
@@ -162,7 +162,7 @@ By default, the following system tables are indexed for Dataverse search. Howeve
 
 ### Select searchable fields and filters for each table
 
-The searchable fields and filters for a table enabled for Dataverse search are driven by the table's Quick Find View. The complete set of **View columns**, **Find columns** and **filter columns** in a table's Quick Find View become part of the Dataverse search index when that table is enabled for Dataverse search. There is no limit on how many searchable fields you can add for each table. However, there is a limit on the total number of indexed fields, as explained in the previous section. 
+The searchable fields and filters for a table enabled for Dataverse search are driven by the table's Quick Find View. The complete set of **View columns**, **Find columns**, and **filter columns** in a table's Quick Find View become part of the Dataverse search index when that table is enabled for Dataverse search. There is no limit on how many searchable fields you can add for each table. However, there is a limit on the total number of indexed fields, as explained in the previous section. 
 
 - The **Find Columns** on a **Quick Find View** define the searchable fields in the Dataverse search index. Text fields such as Single Line of Text and Multiple Lines of Text, Lookups, and Option Sets are searchable. **Find Columns** of all other data types are ignored.
 
@@ -197,7 +197,7 @@ To edit the searchable fields of a table:
 
 2. Select **Dataverse** &gt; **Tables**.
 
-3. Select the table you want to make the changes for and then select **Views** tab.
+3. Select the table you want to make the changes for and then select the **Views** tab.
 
 4. Select the view of type **Quick Find View** in the list of views.
 
@@ -214,8 +214,11 @@ To edit the searchable fields of a table:
 > You can use the **Quick Find View** to define which fields appear as facets in model-driven apps with Dataverse search enabled. All **View Columns** with data types other than Single Line of Text and Multiple Lines of Text are marked as facetable and filterable in the index. By default, the first four facetable fields in the **Quick Find View** for the selected table are displayed as facets when users search by using Dataverse search. At any time, you can only have four fields selected as facets.
 
 > [!NOTE]
+>
 > - Changes made to the Dataverse search configuration or to the searchable data may take up to 15 minutes to appear in the search service. It may take up to an hour or more to complete a full sync for average size organizations, and a couple of days for very large size organizations.
+>
 > - Although you can have related table fields as a **View column** or a **Find column** or a **filter column** in a table's Quick Find View, related table fields are not supported by Dataverse search and hence ignored.
+>
 > - Updates to calculated fields and lookups are not automatically synced in Dataverse search. Data is refreshed whenever a field that is configured for Dataverse search is updated in a record.
 > 
 > - There are some common fields, that are part of every table in Dataverse, which are part of the Dataverse search index by default. Some examples of common fields are:
@@ -223,7 +226,7 @@ To edit the searchable fields of a table:
 >   - owningbusinessunit (Name of lookup)
 >   - statecode (Label of optionset)
 >   - statuscode (Label of optionset)
->   - name (Primary name field of any table. This may or may not be the same as the logical name (fullname, subject, etc.) of the table)
+>   - name (Primary name field of any table. This may or may not be the same as the logical name (fullname, subject, etc.) of the table).
 > 
 > If a common field is added to any table for Dataverse search, search will be performed for that common field across all entities. However, once you choose a specific table through the Record Type facet, Dataverse search will follow the settings you have defined for that specific table through Quick Find View
 
@@ -270,7 +273,7 @@ The following three new enable rules give you the flexibility to optimize quick 
 
 ## Set managed properties for Dataverse search
 
-If you want to include a table for Dataverse search, the **Can enable sync to external search index** managed property must be set to True for the table. By default, the property is set to **True** for some of the out-of-the-box tables and all custom tables. Some of the system tables can't be enabled for Dataverse search.
+If you want to include a table for Dataverse search, the **Can enable sync to external search index** managed property must be set to **True** for the table. By default, the property is set to **True** for some of the out-of-the-box tables and all custom tables. Some of the system tables can't be enabled for Dataverse search.
 
 To set the managed property, do the following:
 
@@ -291,7 +294,7 @@ If you want to change the **Can enable sync to external search index** propert
 If **Can Enable Sync to External Search Index** is set to **False**, you'll see the following message when you try to include a table in Dataverse search: "Entity can't be enabled for Dataverse search because of the configuration of its managed properties." For custom tables with particularly sensitive data, you may consider setting the **Can enable sync to external search index** property to **False**.
 
 > [!IMPORTANT]
-> Keep in mind, after you install the managed solution on the target system, you won't be able to change the value of the property because it's a managed property.*
+> Keep in mind, after you install the managed solution on the target system, you won't be able to change the value of the property because it's a managed property.
 
 ### See also  
  [Use Dataverse search to search for records](/powerapps/user/relevance-search) <br />
