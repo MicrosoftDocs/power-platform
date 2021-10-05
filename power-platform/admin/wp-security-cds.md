@@ -1,7 +1,7 @@
 ---
 title: "Security concepts in Microsoft Dataverse | MicrosoftDocs"
 description: Provides detailed information about the security model and concepts in Microsoft Dataverse.
-ms.date: 09/27/2021
+ms.date: 10/05/2021
 ms.service: power-platform
 ms.topic: "article"
 author: jimholtz
@@ -85,9 +85,9 @@ To allow your user to set this field, you can enable this field in the following
 3. EntityMap in your Solution.
 
 > [!NOTE]
-> If you have a job/process to sync data between environments and the **Owning Business Unit** is included as part of the schema, your job would fail with a **Foreign KEY** constraint violation if the target environment does not have the same **Owning Business Unit** value. 
-> You will either remove the **Owning Business Unit** field from the source schema, or
-> Update the **Owning Business Units** field value of the Source to any of the business units of the target.
+> If you have a job/process to sync data between environments and the **Owning Business Unit** is included as part of the schema, your job will fail with a **Foreign KEY** constraint violation if the target environment does not have the same **Owning Business Unit** value. 
+> 
+> You can either remove the **Owning Business Unit** field from the source schema, or update the **Owning Business Units** field value of the Source to any of the business units of the target.
 
 
 ## Table/record ownership
