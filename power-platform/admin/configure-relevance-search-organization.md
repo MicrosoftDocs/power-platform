@@ -274,19 +274,17 @@ If you want to include a table for Dataverse search, the **Can enable sync to ex
 
 To set the managed property, do the following:
 
-1.  Go to **Advanced** **Settings** &gt; **Customizations**.
+1. Go to **Advanced** **Settings** &gt; **Customizations**.
 
-2.  Select **Customize the System**.
+2. Select **Customize the System**.
 
-3.  Under **Components**, expand **Entities**, and then select the table you want.
+3. Under **Components**, expand **Entities**, and then select the table you want.
 
-4.  On the menu bar, select **Managed Properties**. For **Can enable sync to external search index**, select **True** or **False** to set the property to the desired state. Select **Set** to exit, as shown here.
+4. On the menu bar, select **Managed Properties**. For **Can enable sync to external search index**, select **True** or **False** to set the property to the desired state. Select **Set** to exit, as shown here.
 
-*Include existing picture at <https://docs.microsoft.com/en-us/power-platform/admin/media/relevance-search-managed-properties.png>*  
+   :::image type="content" source="media/relevance-search-managed-properties.PNG" alt-text="Set the managed property":::
 
-:::image type="content" source="media/relevance-search-managed-properties.PNG" alt-text="alt alt alt":::
-
-5.  Select **Publish** for your changes to take effect.
+5. Select **Publish** for your changes to take effect.
 
 If you want to change the **Can enable sync to external search index** property to **False**, you must first deselect the table from Dataverse search. If the table is included in Dataverse search, you'll see the following message: "This entity is currently syncing to an external search index. You must remove the entity from the external search index before you can set the **Can Enable Sync to External Search Index** property to **False**."
 
