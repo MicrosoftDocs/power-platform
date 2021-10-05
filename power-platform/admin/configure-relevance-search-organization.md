@@ -77,7 +77,7 @@ To enable Dataverse search, do the following:
 
 4. Select **Save**.
 
-:::image type="content" source="media/ppac-dataverse-search1.png" alt-text="Set Dataverse search to On":::
+   :::image type="content" source="media/ppac-dataverse-search1.png" alt-text="Set Dataverse search to On":::
 
 If the Dataverse search index needs to be provisioned, you will see an indication that provisioning is in progress. Once the index is provisioned, it may take anywhere between an hour or more to complete a full sync for average size organizations, to a couple of days for very large size organizations.
 
