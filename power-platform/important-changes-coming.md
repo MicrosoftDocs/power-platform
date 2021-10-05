@@ -1,7 +1,7 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps"
 description: Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps 
-ms.date: 09/30/2021
+ms.date: 10/05/2021
 ms.topic: "article"
 ms.assetid: 994cc854-17f6-45d6-bc20-fcf1a3f2d6d6
 searchScope:
@@ -34,6 +34,9 @@ If you've questions about the deprecation, contact your Microsoft Customer Servi
 Effective September 2021, the **Analyze** action and the **Offline profile** report that is used to configure mobile offline profiles is deprecated. 
 The Analyze feature is being removed because of Cross-Site Scripts (XSS) vulnerabilities. The report is used to identify components that aren't available when you're working in offline mode. The capabilities will be reimagined as part of the ongoing enhancements of the mobile offline configuration experience. There's no action required by you.
 
+## Dynamics 365 - Gamification is deprecated
+
+Effective April 1, 2021, Dynamics 365 – Gamification is deprecated. Until September 30, 2021, Microsoft provided limited support for this solution. From October 1, 2021, the Dynamics 365 – Gamification solution won’t be functional. To uninstall Gamification, delete the **GamificationUpdater** and **Gamification** solutions from the Dynamics 365 organization. Note that you must first delete the **GamificationUpdater** solution followed by the** Gamification** solution. More information: [Delete a preferred solution](/previous-versions/dynamicscrm-2016/administering-dynamics-365/dn878909(v=crm.8)#Delete%20a%20preferred%20solution).
 
 ## Skype integration with customer engagement apps is deprecated
 
