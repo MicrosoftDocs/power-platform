@@ -60,9 +60,9 @@ For more information about Dataverse search, see: [Using Dataverse search to se
 
 Dataverse search is an opt-out feature, set to **On** by default on all production environments, except those using their own encryption key. It is recommended to have Dataverse search enabled, so users have a superior search experience in model-driven apps, with the benefits listed above. All model-driven Power Apps will have the global search experience with the search bar in the header in the environment. Individual users won't be able to switch to [quick find search, formerly known as categorized search](/powerapps/user/quick-find).
 
-:::image type="content" source="media/model-app1.png" alt-text="aaaa":::
+:::image type="content" source="media/model-app1.png" alt-text="First sample model-driven app":::
 
-:::image type="content" source="media/model-app2.png" alt-text="aaaa":::
+:::image type="content" source="media/model-app2.png" alt-text="Second sample model-driven app":::
 
 
 NOTE: Dataverse search doesn't support lifecycle operations (create, delete, backup, recover, copy, reset, and so on). In the event of such an operation, re-enable Dataverse search.
@@ -77,7 +77,7 @@ To enable Dataverse search, do the following:
 
 4. Select **Save**.
 
-:::image type="content" source="media/ppac-dataverse-search1.png" alt-text="aaaa":::
+:::image type="content" source="media/ppac-dataverse-search1.png" alt-text="Set Dataverse search to On":::
 
 If the Dataverse search index needs to be provisioned, you will see an indication that provisioning is in progress. Once the index is provisioned, it may take anywhere between an hour or more to complete a full sync for average size organizations, to a couple of days for very large size organizations.
 
@@ -100,7 +100,7 @@ Your queries and results are reviewed by people using secured computers in the U
 
 4. Select **Save**
 
-   :::image type="content" source="media/ppac-dataverse-search2.png" alt-text="aaaa":::
+   :::image type="content" source="media/ppac-dataverse-search2.png" alt-text="Set Share anonymized search analytics with Microsoft to On":::
 
 ## Set up Dataverse search
 
@@ -122,11 +122,11 @@ Setting up search starts with reviewing the tables that are enabled for Datavers
 
 3. Select the solution you want to make the changes in and then select **Overview**.
 
-   :::image type="content" source="media/maker-portal1.png" alt-text="aaaa":::
+   :::image type="content" source="media/maker-portal1.png" alt-text="Select the solution and then select Overview":::
 
 4. Select **Manage search index**.
 
-:::image type="content" source="media/maker-portal2.gif" alt-text="aaa":::
+:::image type="content" source="media/maker-portal2.gif" alt-text="Select Manage search index":::
 
 Although there is no limit on how many tables you can index for Dataverse search, there is a limit on the total number of **fields** that can be enabled for Dataverse search. The maximum is 1000 searchable fields for an organization. Out of these 1000 fields, up to 50 fields are required by the Dataverse search system, so you can configure up to **950 searchable fields**.
 
@@ -135,9 +135,7 @@ Although there is no limit on how many tables you can index for Dataverse search
 
 When you select a table to be indexed for Dataverse search, you can understand the number of fields that will be added to the index.
 
-&lt;PIC of Manage search index pane with number of fields highlighted: Maker portal 3.png&gt;
-
-:::image type="content" source="media/maker-portal3.png" alt-text="aaa":::
+:::image type="content" source="media/maker-portal3.png" alt-text="Manage search index pane with number of fields highlighted":::
 
 The number of fields indexed for a table is dependent on the tables quick find view. Additionally, some field types are treated as multiple fields in the Dataverse search index as indicated in this table.
 
@@ -149,9 +147,7 @@ The number of fields indexed for a table is dependent on the tables quick find v
 
 The progress bar at the bottom shows the percentage of indexed fields as a fraction of the maximum allowed number of searchable fields.
 
-&lt;PIC of search pane with progress bar highlighted: Maker portal 3.png&gt;
-
-:::image type="content" source="media/maker-portal4.png" alt-text="aaa":::
+:::image type="content" source="media/maker-portal4.png" alt-text="Search pane with progress bar highlighted":::
 
 When you have reached the indexed field limit, you'll see a warning message. If you want to add more fields to the index, you'll have to free up space, either by removing some of the fields that are already in the index or removing entire tables from Dataverse search scope.
 
@@ -162,7 +158,7 @@ By default, the following system tables are indexed for Dataverse search. Howeve
 | Account (8)</br>Contact (11)</br>Goal (19)</br>Goal Metric (3)</br>Knowledge Article (56) | Campaign (2)</br>Campaign Activity (4)</br>Campaign Response (6)</br>Case (5)</br>Competitor (1)</br>Contract (7)</br>Invoice (4)</br>Lead (6)</br>Marketing List (5)</br>Opportunity (11)</br>Opportunity Product (8)</br>Order (4)</br>Product (5)</br>Quote (4)</br>Service (1)</br>Service Activity (9) |
 
 > [!NOTE]
-> Changes made to the Dataverse search configuration or to the searchable data may take up to 15 minutes to appear in the search service. It* *may take up to an hour or more to complete a full sync for average size organizations, and a couple of days for very large size organizations.
+> Changes made to the Dataverse search configuration or to the searchable data may take up to 15 minutes to appear in the search service. It may take up to an hour or more to complete a full sync for average size organizations, and a couple of days for very large size organizations.
 
 ### Select searchable fields and filters for each table
 
@@ -177,7 +173,7 @@ The searchable fields and filters for a table enabled for Dataverse search are d
 | Operator          |
 |-----------------------|
 | Like             |
-| NotLike*          |
+| NotLike          |
 | BeginsWith       |
 | DoesNotBeginWith  |
 | EndWith           |
@@ -207,19 +203,19 @@ To edit the searchable fields of a table:
 
 5. Edit View columns and Find columns by adding, removing, or reordering columns. For a more detailed description of how to add or remove columns in a view, see [Choose and configure columns in model-driven app views in Power Apps](/powerapps/maker/model-driven-apps/choose-and-configure-columns)
 
-   :::image type="content" source="media/maker-portal5.gif" alt-text="aaa":::
+   :::image type="content" source="media/maker-portal5.gif" alt-text="Edit searchable fields of a table":::
 
 6. Select **Publish** to publish the changes to the view.
 
 > [!IMPORTANT]
-> Changes to **Quick Find** **View** also apply to single-table and multi-table Quick Find configurations. Therefore, we don't prevent you from including fields that aren't supported for Dataverse search when you configure **Quick Find** **View**. However, unsupported fields aren't synced to the Dataverse search index and don't appear in the Dataverse search results.
+> Changes to **Quick Find View** also apply to single-table and multi-table Quick Find configurations. Therefore, we don't prevent you from including fields that aren't supported for Dataverse search when you configure **Quick Find View**. However, unsupported fields aren't synced to the Dataverse search index and don't appear in the Dataverse search results.
 
 > [!TIP]
-> You can use the **Quick Find** **View** to define which fields appear as facets in model-driven apps with Dataverse search enabled. All **View Columns** with data types other than Single Line of Text and Multiple Lines of Text are marked as facetable and filterable in the index. By default, the first **<u>four</u>*** *facetable fields in the **Quick Find** **View** for the selected table are displayed as facets when users search by using Dataverse search. At any time, you can only have four fields selected as facets.
+> You can use the **Quick Find View** to define which fields appear as facets in model-driven apps with Dataverse search enabled. All **View Columns** with data types other than Single Line of Text and Multiple Lines of Text are marked as facetable and filterable in the index. By default, the first four facetable fields in the **Quick Find View** for the selected table are displayed as facets when users search by using Dataverse search. At any time, you can only have four fields selected as facets.
 
 > [!NOTE]
 > - Changes made to the Dataverse search configuration or to the searchable data may take up to 15 minutes to appear in the search service. It may take up to an hour or more to complete a full sync for average size organizations, and a couple of days for very large size organizations.
-> - Although you can have related table fields as a**View column** or a **Find column** or a **filter column** in a table's Quick Find View, related table fields are not supported by Dataverse search and hence ignored.
+> - Although you can have related table fields as a **View column** or a **Find column** or a **filter column** in a table's Quick Find View, related table fields are not supported by Dataverse search and hence ignored.
 > - Updates to calculated fields and lookups are not automatically synced in Dataverse search. Data is refreshed whenever a field that is configured for Dataverse search is updated in a record.
 > 
 > - There are some common fields, that are part of every table in Dataverse, which are part of the Dataverse search index by default. Some examples of common fields are:
@@ -227,7 +223,7 @@ To edit the searchable fields of a table:
 >   - owningbusinessunit (Name of lookup)
 >   - statecode (Label of optionset)
 >   - statuscode (Label of optionset)
->   - name (Primary name field of any table. This may or may not be the same as the logical name (fullname, subject etc.) of the table)
+>   - name (Primary name field of any table. This may or may not be the same as the logical name (fullname, subject, etc.) of the table)
 > 
 > If a common field is added to any table for Dataverse search, search will be performed for that common field across all entities. However, once you choose a specific table through the Record Type facet, Dataverse search will follow the settings you have defined for that specific table through Quick Find View
 
