@@ -34,7 +34,7 @@ If you've questions about the deprecation, contact your Microsoft Customer Servi
 Effective September 2021, the **Analyze** action and the **Offline profile** report that is used to configure mobile offline profiles is deprecated. 
 The Analyze feature is being removed because of Cross-Site Scripts (XSS) vulnerabilities. The report is used to identify components that aren't available when you're working in offline mode. The capabilities will be reimagined as part of the ongoing enhancements of the mobile offline configuration experience. There's no action required by you.
 
-## Gamification is deprecated in Dynamics 365
+## Dynamics 365 - Gamification is deprecated 
 
 Effective April 1, 2021, Dynamics 365 – Gamification is deprecated. Until September 30, 2021, Microsoft will continue to provide support for the product but won’t release any additional functionality beyond what’s already present. From October 1, 2021, the Dynamics 365 – Gamification solution won’t be functional. 
 
