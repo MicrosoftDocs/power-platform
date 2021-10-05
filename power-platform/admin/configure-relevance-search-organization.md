@@ -267,7 +267,7 @@ The following three new enable rules give you the flexibility to optimize quick 
 - **ShowOnGrid** **rule** Use this rule to make a command appear on the homepage grid only. You can use this command to hide an existing quick action.
 
 > [!NOTE]
-> Each table can have up to five quick actions.
+> Each table can have up to six quick actions.
 >
 > Quick actions currently show up only in the context of search - alongside suggestions and in the results page on the primary column. The same set of quick actions appears alongside suggestions and in the results page.
 
