@@ -82,12 +82,12 @@ You can manage whether you want to allow your user to set the Owning Business Un
 To allow your user to set this field, you can enable this field in the following:
 1. Form - both the body and header.
 2. View.
-3. EntityMap in your Solution.
+3. [Column mappings](https://docs.microsoft.com/powerapps/developer/data-platform/customize-entity-attribute-mappings). If you are using the [AutoMapEntity](https://docs.microsoft.com/powerapps/developer/data-platform/customize-entity-attribute-mappings#auto-mapping-columns-between-tables), you can specify the field in your column mapping.  
 
 > [!NOTE]
 > If you have a job/process to sync data between environments and the **Owning Business Unit** is included as part of the schema, your job will fail with a **Foreign KEY** constraint violation if the target environment does not have the same **Owning Business Unit** value. 
 > 
-> You can either remove the **Owning Business Unit** field from the source schema, or update the **Owning Business Units** field value of the Source to any of the business units of the target.
+> You can either remove the **Owning Business Unit** field from the source schema, or update the **Owning Business Unit** field value of the Source to any of the business units of the target.
 
 
 ## Table/record ownership
