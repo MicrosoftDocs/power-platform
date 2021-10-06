@@ -29,12 +29,18 @@
       - name: Manage licenses in your org
         href: signup-question-and-answer.md
       - name: Administer without a license
-        href: global-service-administrators-can-administer-without-license.md      
-      - name: Purchase Power Apps 
-        href: signup-for-powerapps-admin.md
-      - name: About Power Apps per app plans
-        href: about-powerapps-perapp.md
-      - name: Power Apps and Power Automate licensing FAQs
+        href: global-service-administrators-can-administer-without-license.md
+      - name: Power Apps
+        items:      
+        - name: Purchase Power Apps 
+          href: signup-for-powerapps-admin.md
+        - name: About Power Apps per app plans
+          href: about-powerapps-perapp.md
+      - name: Power Automate
+        items:
+        - name: Overview
+          href: power-automate-licensing/overview.md
+      - name: Power Platform licensing FAQs
         href: powerapps-flow-licensing-faq.md
       - name: Requests limits and allocations
         href: api-request-limits-allocations.md
