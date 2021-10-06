@@ -95,11 +95,11 @@ Once the configuration is saved, make sure to publish your bot so the changes ta
 > Authentication changes only take effect after the bot is published.
 
 #### Require users to sign in
-Under the "Manual" option, you get a check bot to require users to sign in. When this check-box is selected, users talking to the bot will need to sign in before they can continue to talk to the bot.
+When configuring manual authentication, you can select the option to require users to sign in. 
 
-When this check bot is selected, a new system topic called "Require user to sign in" is added to the bot. This topic is automatically triggered when the user starts talking to the bot without being signed in, and the configuration is enabled.
+When this check box is selected, a new system topic called **Require user to sign in** is added to the bot. This topic is automatically triggered when the user starts talking to the bot without being signed in, and will prompt the user to sign in so they can continue to talk to the bot.
 
-The "Require user to sign in" system topic is not customizable, and its save button is disabled. 
+The **Require user to sign in** system topic is not customizable, and its save button is disabled. 
 
 ## Register a new app with your identity provider when using Manual (for any channel including Teams)
 
