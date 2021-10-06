@@ -97,7 +97,7 @@ Once the configuration is saved, make sure to publish your bot so the changes ta
 #### Require users to sign in
 When configuring manual authentication, you can select the option to require users to sign in. 
 
-:::image type="content" source="/media/auth-manual-require-signin.png" alt-text="Screenshot of the the Require users to sign in check box that appears when you configure manual authentication.":::
+:::image type="content" source="media/auth-manual-require-signin.png" alt-text="Screenshot of the the Require users to sign in check box that appears when you configure manual authentication.":::
 
 When this check box is selected, a new system topic called **Require user to sign in** is added to the bot. This topic is automatically triggered when the user starts talking to the bot without being signed in, and will prompt the user to sign in so they can continue to talk to the bot.
 
