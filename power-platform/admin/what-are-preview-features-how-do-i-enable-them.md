@@ -36,7 +36,7 @@ Preview features are features that aren't complete, but are made available on a 
 ## How do I enable a Preview feature?  
 To enable a Preview feature, you must be an administrator.  
   
-1. Sign in to [Power Apps](make.powerapps.com).
+1. Sign in to [Power Apps](https://make.powerapps.com).
 
 2. Select your environment from the top-right corner, and select **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
 
