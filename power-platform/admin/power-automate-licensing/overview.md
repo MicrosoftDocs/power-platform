@@ -19,8 +19,8 @@ search.app:
 
 # Overview of Power Automate licensing
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+[!INCLUDE [cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
 
 This is draft content.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
