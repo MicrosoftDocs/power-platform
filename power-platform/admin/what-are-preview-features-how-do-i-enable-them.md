@@ -36,15 +36,17 @@ Preview features are features that aren't complete, but are made available on a 
 ## How do I enable a Preview feature?  
 To enable a Preview feature, you must be an administrator.  
   
-1. In the web app, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+1. Sign in to [Power Apps](make.powerapps.com).
 
-2. Select **Settings** > **Administration**.
+2. Select your environment from the top-right corner, and select **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+
+3. Select **Settings** > **Administration**.
   
-3. Select **System Settings**, and then select the **Previews** tab.  
+4. Select **System Settings**, and then select the **Previews** tab.  
   
-4. Read the [Supplemental Terms of Use](/dynamics365/legal/supp-dynamics365-preview), and if you agree, select the **I've read and agree to the license terms** check box.  
+5. Read the [Supplemental Terms of Use](/dynamics365/legal/supp-dynamics365-preview), and if you agree, select the **I've read and agree to the license terms** check box.  
   
-5. For each Preview feature you want to enable, select **Yes**.  
+6. For each Preview feature you want to enable, select **Yes**.  
   
 ![System settings preview.](media/system-settings-previews75.png "System settings preview")
 
