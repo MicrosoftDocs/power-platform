@@ -107,7 +107,7 @@ Note that every data field in this Adaptive card was given an ID: **Name**, **Ad
 
 :::image type="content" source="media/Composer_Example4/E4_createSubmitForm.png" alt-text="Composer - create StartTrialForm.":::
 
-Next, add the following Activity below the Adaptive Card JSON
+Next, add the following Activity below the Adaptive Card JSON:
 
 
 ````JSON
@@ -122,7 +122,7 @@ Go to the **Create** tab in Composer and select the **StartTrial** trigger. Add 
 
 :::image type="content" source="media/Composer_Example4/E4_ask_question.png" alt-text="Composer - ask a question.":::
 
-Switch to **Snow code** view add the following to the code window:
+Switch to **Show code** view and add the following to the code window:
 
 ```JSON
 - ${AdaptiveCard_StartTrialForm()}
@@ -166,7 +166,8 @@ Make sure **Track between topics** is turned on, and test your new bot content b
 :::image type="content" source="media/Composer_Example4/Example4_cropped.png" alt-text="Power Virtual Agents test.":::
 
 >[!Note]
->Using Publish button in Composer makes the changes avaliavble for testing, but does not automatically Publish your Power Virtual Agents bot. Use [Publish](publication-fundamentals-publish-channels.md) feature in Power Virtual Agents to publish your bot changes to the channels.
->
+>Selecting **Publish** in Composer makes the changes available for testing, but does not automatically Publish your Power Virtual Agents bot.  
+>Use the [Publish](publication-fundamentals-publish-channels.md) feature in Power Virtual Agents to publish your bot changes to channels.
+
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

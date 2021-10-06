@@ -128,6 +128,8 @@ Make sure **Track between topics** is turned on, and test your new bot content b
 :::image type="content" source="media/Composer_Example3/Example3_cropped.png" alt-text="Power Virtual Agents test for example 3.":::
 
 >[!Note]
->Using Publish button in Composer makes the changes avaliavble for testing, but does not automatically Publish your Power Virtual Agents bot. Use [Publish](publication-fundamentals-publish-channels.md) feature in Power Virtual Agents to publish your bot changes to the channels.
->
+>Selecting **Publish** in Composer makes the changes available for testing, but does not automatically Publish your Power Virtual Agents bot.  
+>Use the [Publish](publication-fundamentals-publish-channels.md) feature in Power Virtual Agents to publish your bot changes to channels.
+
+
 [!INCLUDE[footer-include](includes/footer-banner.md)]
