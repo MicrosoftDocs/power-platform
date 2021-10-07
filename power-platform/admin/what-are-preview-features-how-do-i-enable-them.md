@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/17/2021
+ms.date: 10/07/2021
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -34,6 +34,31 @@ Preview features are features that aren't complete, but are made available on a 
 - May be available only in selected geographic areas.  
   
 ## How do I enable a Preview feature?  
+
+### In the Power Platform admin center
+
+1. Make sure you have the System Administrator security role or equivalent permissions.
+  
+    Check your security role  
+  
+   - [!INCLUDE[proc_follow_steps_in_link](../includes/proc-follow-steps-in-link.md)]  
+  
+   - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
+  
+2. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com/)
+
+3. Select **Environments** in the left navigation pane, select your environment, and then select **Settings** on the top menu bar.
+
+4. Select **Features** to expand the category, then select **On** for the feature to enable. Preview features will be labeled as "preview".
+
+   :::image type="content" source="media/turn-on-preview.png" alt-text="Turn on preview features":::
+
+5. Select **Save**.
+
+### In a Unified Interface app
+
+Follow these steps for [Unified Interface](about-unified-interface.md) apps.
+
 To enable a Preview feature, you must be an administrator.  
   
 1. Sign in to [Power Apps](https://make.powerapps.com).
