@@ -112,13 +112,27 @@ Platform by using Azure Service Bus.
 
 ## Content Delivery Network
 
-Microsoft Power Platform uses Azure Content Delivery Network to optimize performance and
+Microsoft Power Platform uses Azure Content Delivery Network (CDN) to optimize performance and
 user experiences when using static content such as images and icons. This
 static content served by the Content Delivery Network can't be routed via ExpressRoute, so
 it will be routed directly across the public internet. However, this content uses
 common platform capabilities that contain no customer data; therefore, the content
 need not be considered a candidate for protection over private networks like
 ExpressRoute.
+
+[!NOTE] For canvas apps specifically, CDN can be turned off using a setting 
+**Load default static content from Content Delivery Network** by system administrators 
+in case of firewall restrictions and IP approved list related issues.
+This setting does not apply to model-driven apps as they do not use CDN currently.
+
+More information: [Manage behavior settings](/admin/settings-behavior)
+
+## Azure Relay
+
+Microsoft Power Automate uses Azure Relay for direct connectivity between Power Automate cloud flows and desktop flows in Power Automate for Desktop. 
+It uses HTTPS and data is encrypted when transmitted between the computer and the cloud. 
+However to make sure that the traffic is not transmitted through public internet you may use ExpressRoute Instead.
+For further information on network settings required, and also to understand the architecture in detail, read the section on [Power Automate architecture](/power-automate/desktop-flows/pad-architecture).
 
 > [!div class="nextstepaction"]
 > [Next step: Plan an ExpressRoute deployment](planning-expressroute.md)
