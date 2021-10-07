@@ -60,8 +60,10 @@ Follow these steps for [Unified Interface](about-unified-interface.md) apps.
    - [!INCLUDE[proc_follow_steps_in_link](../includes/proc-follow-steps-in-link.md)]  
   
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
-  
-2. Select Settings (![Gear button.](../admin/media/selection-rule-gear.png "Gear button")) in the upper-right corner > **Advanced Settings** > **Settings** > **Data Management** > **Sample Data**.
+
+2. Sign in to [Power Apps](https://make.powerapps.com).
+
+3. Select your environment from the top-right corner, and select **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings** > **Settings** > **Data Management** > **Sample Data**.
 
 3. A message appears that tells you whether the sample data is installed.  
   
