@@ -100,8 +100,9 @@ In order to add a date to a OneNote document, you can open the OneNote document 
 
 :::image type="content" source="media/date_onenote_documents.png" alt-text="Double-click the date field.":::
 
-## SharePoint Document table doesn’t display inputs when you create a Power Automate flow
-When you create a Power Automate flow trigger that acts on the Dataverse SharePoint Documents table (named Documents in Power Automate), no data from the table is passed to the flow editor and the flow inputs appear as an empty array.
+## SharePoint Document table doesn’t display inputs when you create a flow
+
+When you create a flow trigger in Power Automate that acts on the Dataverse SharePoint Documents table (named Documents in Power Automate), no data from the table is passed to the flow editor and the flow inputs appear as an empty array.
 
 This behavior occurs because the SharePoint Documents table is a virtual table and the SharePoint and OneDrive document table data is not stored in Dataverse. Below is an example of a flow trigger using the SharePoint Documents table.
 
