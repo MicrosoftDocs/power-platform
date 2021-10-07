@@ -119,6 +119,10 @@ For a deep-dive on Bot Framework Composer **dialogs**, **events**, **triggers** 
 - [Language Generation](/composer/concept-language-generation)
 - [Conversation flow and memory](/composer/concept-memory)
 
+>[!Note]
+>Selecting **Publish** in Composer makes the changes available for testing, but does not automatically Publish your Power Virtual Agents bot.  
+>Use the [Publish](publication-fundamentals-publish-channels.md) feature in Power Virtual Agents to publish your bot changes to channels.
+
 
 ## Composer features not supported with Power Virtual Agents
 The following Bot Framework Composer features are not supported with Power Virtual Agents:
@@ -170,13 +174,13 @@ ${virtualagent.user_city}
 
 ## Examples for extending Power Virtual Agents chatbots with Composer
 
-
 To help you get started using Composer, we've created four examples that detail different scenarios:
 
 - [Example 1 - Show an Adaptive Card in Power Virtual Agents](advanced-bot-framework-composer-example1.md)
 - [Example 2 - Display a multi-select options list in Power Virtual Agents](advanced-bot-framework-composer-example2.md)
 - [Example 3 - Use Bing Search as a fallback in Power Virtual Agents](advanced-bot-framework-composer-example3.md)
 - [Example 4 - Display a form with a Submit button in Power Virtual Agents](advanced-bot-framework-composer-example4.md)
+
 
 ## Capture telemetry with Application Insights
 
@@ -201,6 +205,10 @@ To learn more on how to set up and use Application Insights and create queries f
 - [Example Kusto queries](/azure/bot-service/bot-builder-telemetry-analytics-queries?view=azure-bot-service-4.0&preserve-view=true#adaptive-dialogs-started-and-completed) for Adaptive dialogs in Composer.
 
 ## Testing Bot Framework content with Power Virtual Agents
+>[!Note]
+>Selecting **Publish** in Composer makes the changes available for testing, but does not automatically Publish your Power Virtual Agents bot.  
+>Use the [Publish](publication-fundamentals-publish-channels.md) feature in Power Virtual Agents to publish your bot changes to channels.
+
 You can test the content you have created in Bot Framework Composer by publishing it to Power Virtual Agents and using the **Test bot** pane in Power Virtual Agents.
 
 Publish your Bot Framework content to Power Virtual Agents from the **Publish** tab in Composer.
@@ -211,11 +219,11 @@ After you successfully publish your Bot Framework content, you can use the Power
 
 :::image type="content" source="media/Composer_Test/Test_image.png" alt-text="Power Virtual Agents test bot.":::
 
-
 >[!NOTE]
 >The Bot Framework Emulator cannot be used to test Composer content created for Power Virtual Agents bots. 
 
 ## Troubleshooting
+
 If you're having trouble publishing your Bot Framework Composer content to Power Virtual Agents, you can use the **See Log** feature in the **Publish** tab in Composer. The log will provide a detailed description of the errors encountered during validation. Select your bot and then select the caret icon to see the publish history.
 
 :::image type="content" source="media/Composer_Troubleshooting/TL_PublishHistory.png" alt-text="Composer Publish - See Log.":::
