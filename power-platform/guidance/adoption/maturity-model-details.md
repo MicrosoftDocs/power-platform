@@ -38,6 +38,17 @@ Find below detailed characteristics and capabilities of an organization in each 
 |**Automation**|<ul><li>Processes are largely manual and one-off</li></ul>   |<ul><li>Processes are standardized, but implemented manually</li></ul>| <ul><li>Environment and DLP connector policy requests are automated</li><li>Apps are deployed manually, but using solutions</li><li>Communication about processes and compliance between Admin and Makers is automated</li></ul> | <ul><li>ALM processes are defined and implemented centrally</li><li>Admin tasks to identify overshared, unused and orphaned resources are largely automated</li><li>Governance tasks to gather compliance and support information are automated</li></ul> | <ul><li>ALM processes are owned by each Fusion team</li><li>Environment Lifecycle Management is automated</li><li>[CoE Starter Kit – ALM Accelerator](https://docs.microsoft.com/power-platform/guidance/coe/almaccelerator-components) is adopted</li></ul> | 
 |**Fusion Teams**|<ul><li>Teams work independently</li><li>No pro dev use of Power Platform</li></ul>   |<ul><li>Teams review and ratify each other’s work</li><li>Pro Devs pilot high-value use cases</li></ul>| <ul><li>Teams plan work as a team, but operate independently</li><li>Teams manage source control and app lifecycles</li><li>[Standard libraries, custom connectors and components](https://docs.microsoft.com/power-platform/guidance/adoption/reusable) to be consumed by makers</li></ul> | <ul><li>Cross-functional teams plan and execute work jointly, including makers, testers and operational teams.</li><li>Collaborative planning for infrastructure and change enablement</li><li>Use of Common Data Models to aid data reuse</li></ul> | <ul><li>Teams form seamlessly to accommodate cross functional skills</li><li>Common development strategy and goals for Citizen and Pro developers needed for new projects</li></ul> | 
 
+## Power Platform adoption
+
+Successful Power Platform adoption involves making effective processes, support, tools, and data available to makers and end users.
+
+A common misconception is that adoption relates primarily to usage or the number of users. There's no question that usage statistics are an important factor. However, usage is not the only factor. Adoption is not just about using the technology on a regular basis; it's about using it *effectively*. Effectiveness is much harder to define and measure.
+
+Whenever possible, adoption efforts should be aligned across low-code platforms, and other Power Platform products, such as Power BI.
+
+> [!NOTE]
+> Individuals—and the organization itself—are continually learning, changing, and improving. That means there's no formal end to adoption-related efforts.
+
 ## Target audience
 
 The intended audience of the Adoption Maturity Model is interested in one or more of the following outcomes:

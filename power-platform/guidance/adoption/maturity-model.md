@@ -26,6 +26,9 @@ We have identified consistent themes, patterns, practices and behaviors that und
 
 This model has broken this process down in five stages, based on the [Capability Maturity Model](https://en.wikipedia.org/wiki/Capability_Maturity_Model).
 
+> [!NOTE]
+> Organizational adoption maturity is a long journey. It takes time, effort, and planning to progress to the higher levels.
+
 |Level 100 - Initial  |Level 200 - Repeatable  |Level 300 - Defined|Level 400 - Capable | Level 500 - Efficient |
 |----------|-----------|------------|------------|------------|
 |<ul><li>Pockets of success and **experimentation** with Power Platform.</li><li>**No strategy** or governance approach.</li><li>Apps are **team-based** and supported by the makers.</li><li>Organisation sees the **potential** of a strategic investment, but there is no clear path forward.</li></ul> | <ul><li>Initial Power Platform controls implemented by a **central team**.</li><li>Start to identify applications that are becoming broadly used in the organization.</li><li>These organizations sometimes believe that the use of the Power Platform is running **“out of control”**.</li></ul> | <ul><li>Standardizing **repeatable** practices.</li><li>Achieving **measurable success** to digitally transform their organization.</li><li>Defined Power Platform Center of Excellence team.</li><li>Transformation may still reflect the organic growth.</li></ul> | <ul><li>Standard processes for managing and monitoring Power Platform.</li><li>Power Platform capabilities are being used to **transform the business** broadly and used for enterprise-critical apps and integrations.</li><li>Platform **Champions** have established channels.</li></ul> | <ul><li>Organization has proven the capabilities of Power Platform to transform mission critical capabilities.</li><li>Established **community of experts**.</li><li>**Fusion teams** enable legacy capabilities and modern cloud architecture to be used easily.</li></ul> |
