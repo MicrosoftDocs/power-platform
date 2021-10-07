@@ -61,6 +61,8 @@ Follow these steps for [Unified Interface](about-unified-interface.md) apps.
   
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
   
+
+
 2. Select Settings (![Gear button.](../admin/media/selection-rule-gear.png "Gear button")) in the upper-right corner > **Advanced Settings** > **Settings** > **Data Management** > **Sample Data**.
 
 3. A message appears that tells you whether the sample data is installed.  

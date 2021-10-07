@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/17/2021
+ms.date: 10/07/2021
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -38,7 +38,7 @@ To enable a Preview feature, you must be an administrator.
   
 1. Sign in to [Power Apps](https://make.powerapps.com).
 
-2. Select your environment from the top-right corner, and select **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+2. Select **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
 
 3. Select **Settings** > **Administration**.
   
