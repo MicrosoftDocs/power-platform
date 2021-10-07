@@ -35,11 +35,13 @@ Once provisioned, you can access the installed Unified Interface and legacy web 
 
 You can access Unified Interface apps from the following locations in a browser: 
 
-1. Sign in to [Power Apps](https://make.powerapps.com).
+1. Sign in to [Power Apps](https://make.powerapps.com) and select your environment.
+
+2. Select your app from the menu bar.
 
    ![In app navigation.](media/uci-in-app-navigation.png "In app navigation")
 
-2. Select an app.
+3. Select an app to open.
 
    ![Unified Interface apps](media/uci-my-apps-page.png "Unified Interface apps")
 

@@ -49,7 +49,7 @@ Sample data gives you something to experiment with as you learn customer engagem
    - **Install Sample Data**, and then select **Close**.  
    - To close the screen without making changes, just select **Close**.
   
-## In a Unified Interface apps
+## In a Unified Interface app
 
 Follow these steps for [Unified Interface](about-unified-interface.md) apps.
 
@@ -61,8 +61,6 @@ Follow these steps for [Unified Interface](about-unified-interface.md) apps.
   
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
   
-
-
 2. Select Settings (![Gear button.](../admin/media/selection-rule-gear.png "Gear button")) in the upper-right corner > **Advanced Settings** > **Settings** > **Data Management** > **Sample Data**.
 
 3. A message appears that tells you whether the sample data is installed.  
