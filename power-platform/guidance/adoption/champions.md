@@ -57,7 +57,7 @@ In addition to that, the dashboard part of the [CoE Starter Kit](../coe/starter-
 
 You can see how many different connectors your makers are using and learn who is exploring different connectors. A great way to identify mature makers is looking at those who try out different connectors.
 
-![CoE Starter Kit app maker insights.](../coe/media/coe-pb1.png "CoE Starter Kit app maker insights")
+![CoE Starter Kit app maker insights.](media/coe-pb1.png "CoE Starter Kit app maker insights")
 
  > [!TIP]
  > Even if your organization hasn't adopted Power Platform yet, it’s likely you already have a good idea of who your champions will be. They are your Excel, Access, and SharePoint whizzes; or maybe they’re the troublemakers pushing the boundaries; or the ones who are first in line when there’s something new to learn. They question, they query, they encourage. Train those people. Make them Power Platform champions and help them train others—champions aren't only passionate about what they do, but are also excited to evangelize and help their peers to learn more effective ways of working.
