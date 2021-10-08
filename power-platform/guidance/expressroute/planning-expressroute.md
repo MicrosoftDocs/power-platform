@@ -4,7 +4,7 @@ description: "Points to consider before setting up ExpressRoute`"
 author: taiki-yoshida
 ms.service: power-platform
 ms.topic: conceptual
-ms.date: 06/30/2021
+ms.date: 10/08/2021
 ms.subservice: guidance
 ms.author: tayoshi
 ms.reviewer: kathyos
