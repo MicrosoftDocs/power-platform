@@ -5,7 +5,7 @@ services: powerapps
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/16/2021
+ms.date: 10/08/2021
 ms.subservice: admin
 author: ChrisGarty
 ms.author: cgarty
@@ -32,9 +32,9 @@ About **system backups**:
   
 - All your environments, except Trial environments (standard and subscription-based), are backed up.  
 - System backups occur continuously. The underlying technology used is Azure SQL Database. See SQL Database documentation [Automated backups](/azure/sql-database/sql-database-automated-backups) for details.
-- System backups for production environments that have been created with a database and have one or more Dynamics 365 applications installed are retained up to 28 days. System backups for production environments which do not have Dynamics 365 applications deployed in them will be retained for 7 days. System backups for sandbox environments will be retained for 7 days.
+- System backups for production environments that have been created with a database and have one or more Dynamics 365 applications installed are retained up to 28 days. System backups for production environments which don't have Dynamics 365 applications deployed in them will be retained for 7 days. System backups for sandbox environments will be retained for 7 days.
 - You must restore an environment to the same region in which it was backed up.
-- Currently, audit logs aren't restored. 
+- When an environment is restored onto itself, audit logs aren't deleted. For example, when an environment is restored onto itself to a past time t1, full audit data for the environment will be available, including any audit logs that were generated after t1.
   
 ### Restore a system backup  
   
@@ -184,9 +184,9 @@ Obtaining a copy of your database backup isn't available. Moving your online dat
 ### Do we have any database size restriction to take a backup or restore an organization through user interface (UI) or API?
 We don't have any restriction on database size (or storage capacity/entitlement) to take a backup through UI or API. However, when an organization’s storage capacity usage is greater than the entitled capacity, the following admin operations will be blocked:
 
-- Restore an environment (requires minimum 1GB capacity available)
-- Create new environment (requires minimum 1GB capacity available)
-- Copy an environment (requires minimum 1GB capacity available)
+- Restore an environment (requires minimum 1 GB capacity available)
+- Create new environment (requires minimum 1 GB capacity available)
+- Copy an environment (requires minimum 1 GB capacity available)
  
 To be compliant with storage usage requirements, customers can always [free up storage](free-storage-space.md), [archive data](recover-database-space-deleting-audit-logs.md), [delete unwanted environments](delete-environment.md), or buy more capacity. To learn more about capacity add-ons, see the Add-ons section in the Dynamics 365 Licensing Guide or the Power Apps and Power Automate Licensing Guide. You can work through your organization’s standard procurement process to purchase capacity add-ons.
  
@@ -206,7 +206,7 @@ The newly restored environment is placed in administration mode. To disable admi
 No. Apps shared with Everyone in an environment that's backed up are not shared with Everyone in the restored environment. Alternatively, a canvas app can be shared with a security group and the app in the restored environment will be shared with that security group. 
 
 ### Are Power Apps app identifiers the same after backup and restore operations?
-No for canvas apps. The app id for a canvas app is different in a restored environment than the id value when an environment was backed up. 
+No for canvas apps. The app ID for a canvas app is different in a restored environment than the ID value when an environment was backed up. 
 
 ## Troubleshooting
 
