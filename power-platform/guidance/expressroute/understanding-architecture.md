@@ -124,7 +124,7 @@ ExpressRoute.
 > For canvas apps specifically, CDN can be turned off using a setting **Load default static content from Content Delivery Network** by system administrators 
 in case of firewall restrictions and IP approved list related issues.
 This setting does not apply to model-driven apps as they do not use CDN currently. 
-More information: [Manage behavior settings](power-platform/admin/settings-behavior)
+More information: [Manage behavior settings](/power-platform/admin/settings-behavior)
 
 ## Azure Relay
 
