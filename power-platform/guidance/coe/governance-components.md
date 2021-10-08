@@ -197,7 +197,8 @@ It performs the action on the actual object in the tenant and also updates the i
 ### Cleanup Old Objects App
 
 As makers are asked to respond if objects are still useful with the Archival flows above, they will sometimes ignore these asks. In that case, a flow above will send their manager this email.
-![Mail sent to managers](media/ArchiveApps1.png "Mail sent to managers"
+
+![Mail sent to managers](media/ArchiveApps1.png "Mail sent to managers")
 
 The manager can click on the link in the mail and be brought to this app for cleaning.
 

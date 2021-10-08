@@ -101,7 +101,8 @@ The Bot Framework bot will be displayed by the **Display name** (if you entered 
 
 :::image type="content" source="media/PVA-as-a-skill/Skill_AllowedCallerAdded.png" alt-text="The manage allowlist panel showing a list of allowed bot.":::
 
-
+>[!Note]
+>The Bot Framework bots added to the allowlist will not be [exported as part of the bot content](authoring-export-import-bots.md). 
 
 ## Download the bot skill manifest for your Power Virtual Agents bot
 

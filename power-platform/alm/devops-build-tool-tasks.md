@@ -7,7 +7,7 @@ ms.subservice: alm
 ms.author: pemikkel
 manager: kvivek
 ms.custom: ""
-ms.date: 09/21/2021
+ms.date: 09/23/2021
 ms.reviewer: "pehecke"
 ms.service: power-platform
 ms.topic: "article"
@@ -162,13 +162,23 @@ Imports a solution into a target environment.
 |----------------------|--------------------------|
 | Authentication type | (Required) Select whether to use username/password or service principal authentication. Username/password does not support multi-factor authentication. |
 | Service connection | (Required) The service connection to the target environment that you want to import the solution into (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)).  Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type .|
- | Solution input file        | (Required) The path and file name of the solution.zip file to import into the target environment (e.g., $(Build.ArtifactStagingDirectory)\$(SolutionName).zip). <p/>Note: Variables give you a convenient way to get key bits of data into various parts of your pipeline. See [Use predefined variables](/azure/devops/pipelines/build/variables) for a comprehensive list.  |
- | Import solution as asynchronous operation | If selected, the import operation will be performed asynchronously. This is recommended for larger solutions as this task will automatically timeout after 4 minutes otherwise. |
- | Convert solution to managed| If selected, the import operation will convert the solution, if unmanaged, will be converted to managed|
+| Solution input file        | (Required) The path and file name of the solution.zip file to import into the target environment (e.g., $(Build.ArtifactStagingDirectory)\$(SolutionName).zip). <p/>Note: Variables give you a convenient way to get key bits of data into various parts of your pipeline. See [Use predefined variables](/azure/devops/pipelines/build/variables) for a comprehensive list.  |
+| Import solution as asynchronous operation | If selected, the import operation will be performed asynchronously. This is recommended for larger solutions as this task will automatically timeout after 4 minutes otherwise. |
+| Import as a holding solution | An advance parameter used when a solution needs to be upgraded. This parameter hosts the solution in Dataverse but does not upgrade the solution until the Apply Solution Upgrade task is run. | 
 
-> [!IMPORTANT]
+### Power Platform Apply Solution Upgrade
+Upgrades a solution that has been imported as a holding solution.
+
+| Parameters           | Description        |
+|----------------------|--------------------------|
+| Authentication type | (Required) Select whether to use username/password or service principal authentication. Username/password does not support multi-factor authentication (MFA). |
+| Service connection | (Required) The service connection to the target environment that you want to import the solution into (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type. |
+| Solution name | (Required) The name of the solution to export. Always use the solution *Name* not its *Display Name*. |
+| Apply solution upgrade as asynchronous operation | If selected, the import operation will be performed asynchronously. This is recommended for larger solutions as this task will automatically timeout after 4 minutes otherwise. |
+| Convert solution to managed| If selected, the import operation will convert the solution, if unmanaged, will be converted to managed|
+> [!NOTE]
+> Variables give you a convenient way to get key bits of data into various parts of your pipeline. See [Use predefined variables](/azure/devops/pipelines/build/variables) for a comprehensive list.
 > You can pre-populate connection reference and environment variables information for the target environment while importing a solution using a deployment settings file. More information: [Pre-populate connection references and environment variables for automated deployments](conn-ref-env-variables-build-tools.md) 
-
 
 ### Power Platform Export Solution
 
@@ -201,6 +211,17 @@ Packs a solution represented in source control into a solution.zip file that can
 | Source folder of solution to pack | (Required) The path and source folder of the solution to pack.      |
 | Type of solution                  | (Required) The type of solution you want to pack. Options include: **Unmanaged** (recommended), **Managed**, and **Both**. |
 
+
+### Power Platform Delete Solution
+
+Deletes a solution in the target environment.
+
+| Parameters       | Description     |
+|------------------|-----------------|
+| Authentication type | (Required) Select whether to use username/password or Service Principal authentication. Username/password does not support multi-factor authentication (MFA). |
+| Service connection | (Required) The service connection to the source environment that you want to export the solution from.  Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type.     |
+| Solution name  | (Required) The name of the solution to export. Always use the solution *Name* not its *Display Name*. |
+
 ### Power Platform Publish Customizations
 
 Publishes all customizations in an environment.
@@ -223,7 +244,7 @@ Updates the version of a solution.
 | Solution Version Number              | (Required) Version number you want to set.     |
 
 While version number can be hardcoded in the pipeline, it is recommended to use an Azure DevOps pipeline variable like [BuildId](/azure/devops/pipelines/build/variables#build-variables). 
-This provides options to define the exact shape of version number under the "Options" tab, for example: $(year:yyyy)-$(Month:MM)-$(Date:dd)-$(rev:rr)-3
+This provides options to define the exact shape of version number under the "Options" tab, for example: $(Year:yyyy)-$(Month:MM)-$(Day:dd)-$(rev:rr)-3
 
 This definition can then be used in the Set Solution Version task by setting the Version Number property with: $(Build.BuildId) instead of hard coding 20200824.0.0.2.
 
@@ -247,7 +268,7 @@ Creates a new environment. Creating a new environment also automatically creates
 
 > [!NOTE]
 > A new environment can only be provisioned if your license or capacity
-> allows for the creation of additional environments. For more information on how to view capacity. see [Capacity page details](../admin/capacity-storage.md#capacity-page-details).
+> allows for the creation of additional environments. For more information on how to view capacity see [Capacity page details](../admin/capacity-storage.md#capacity-page-details).
 
 | Parameters        | Description     |
 |-------------------|-----------------|

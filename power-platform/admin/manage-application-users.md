@@ -8,7 +8,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/11/2021
+ms.date: 09/30/2021
 search.audienceType: 
   - admin
 search.app:
@@ -59,7 +59,7 @@ In an environment, you can only have one application user for each Azure AD&ndas
 
    :::image type="content" source="media/create-new-app-user.png" alt-text="Create a new application user.":::
 
-6. Select **+ add an app** to choose the registered Azure AD application that was created for the selected user, and then select **Add**. 
+6. Select **+ Add an app** to choose the registered Azure AD application that was created for the selected user, and then select **Add**. **Note**: You can also choose an Azure Managed Identity via this experience.
 
    :::image type="content" source="media/add-app-from-azure-ad.png" alt-text="Add an application from Azure AD.":::
 
