@@ -571,6 +571,8 @@
             href: wp-data-loss-prevention.md
           - name: Connector classification
             href: dlp-connector-classification.md
+          - name: Disable new connectors by default
+            href: connector-off-by-default.md
           - name: Custom connector parity  
             href: dlp-custom-connector-parity.md 
           - name: Granular controls
