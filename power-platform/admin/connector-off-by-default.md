@@ -48,7 +48,7 @@ This feature is exclusively available in GCC High and DoD for all customers. Sig
 
 4. Connectors that have already been reviewed and authorized have the status "Reviewed".
 
-![Slide1](https://user-images.githubusercontent.com/90638770/136602763-ff86a4d7-73bf-42bb-a465-cf64294f1c99.PNG)
+:::image type="content" source="media/enable-connector.png" alt-text="Enabled connector":::
 
 ### Step two: Enable or disable the new connector
 
@@ -60,7 +60,7 @@ This feature is exclusively available in GCC High and DoD for all customers. Sig
 
 4. Select **Save**. The status of the connector is now set to "Reviewed".
 
-![Slide2](https://user-images.githubusercontent.com/90638770/136602779-b4cf642b-51b9-43f0-b64c-ef90185e2bac.PNG)
+:::image type="content" source="media/connector-mark-as-reviewed.png" alt-text="Disabled connector Mark as reviewed":::
 
 ### Step three: View a disabled connector in a DLP policy
 
@@ -68,7 +68,7 @@ This feature is exclusively available in GCC High and DoD for all customers. Sig
 
 2. Consult the **Prebuilt connectors** tab. Connectors that are disabled have the status "Disabled".
 
-![Slide3](https://user-images.githubusercontent.com/90638770/136602796-430642ef-5842-4837-8b7f-166c9026f43d.PNG)
+:::image type="content" source="media/disabled-connector.png" alt-text="Disabled connector":::
 
 ### Step four: Attempt to add a disabled connector in a Power App
 
@@ -76,10 +76,10 @@ This feature is exclusively available in GCC High and DoD for all customers. Sig
 
 2. Add a connector that has been disabled. An error message appears.
 
-![Slide4](https://user-images.githubusercontent.com/90638770/136602820-caed9536-52a5-4930-add4-945647a08641.PNG)
+:::image type="content" source="media/disabled-connector-error-message.png" alt-text="Disabled connector error message":::
 
-   > [!NOTE]
-   > This new tenant-level setting is also enforced on existing apps/flows that were built using connectors that are now disabled.
+> [!NOTE]
+> This new tenant-level setting is also enforced on existing apps/flows that were built using connectors that are now disabled.
 
 ## PowerShell support
 
@@ -97,7 +97,8 @@ $connectorBlockingDefinition = [pscustomobject] @{
 } 
 ``` 
 
-Retrieve the existing connector blocking policy for the tenant
+**Retrieve the existing connector blocking policy for the tenant**
+
 ```powershell
 `Get-PowerAppDlpConnectorBlockingPolicies` 
 ``` 
