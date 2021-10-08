@@ -88,7 +88,8 @@ To allow your user to set this field, you can enable this field in the following
 > If you have a job/process to sync data between environments and the **Owning Business Unit** is included as part of the schema, your job will fail with a **Foreign KEY** constraint violation if the target environment does not have the same **Owning Business Unit** value. 
 > 
 > You can either remove the **Owning Business Unit** field from the source schema, or update the **Owning Business Unit** field value of the Source to any of the business units of the target.
-
+>
+> If you have a job/process to copy data from an environment to an external resource, eg PowerBI, you will need to select or deselect the **Owning Business Unit** field from your source - select it if your resource can receive it otherwise deselect it.
 
 ## Table/record ownership
 
