@@ -120,8 +120,8 @@ common platform capabilities that contain no customer data; therefore, the conte
 need not be considered a candidate for protection over private networks like
 ExpressRoute.
 
-> [!NOTE] For canvas apps specifically, CDN can be turned off using a setting 
-> **Load default static content from Content Delivery Network** by system administrators 
+> [!NOTE] 
+> For canvas apps specifically, CDN can be turned off using a setting **Load default static content from Content Delivery Network** by system administrators 
 in case of firewall restrictions and IP approved list related issues.
 This setting does not apply to model-driven apps as they do not use CDN currently. 
 More information: [Manage behavior settings](/admin/settings-behavior)
