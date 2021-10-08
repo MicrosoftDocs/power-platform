@@ -4,7 +4,7 @@ description: "Learn how to copy apps and data from an environment. Review next s
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/13/2021 
+ms.date: 10/08/2021 
 ms.subservice: admin
 author: ChrisGarty
 ms.author: cgarty
@@ -30,6 +30,7 @@ You can use Copy environment in the Microsoft Power Platform admin center to cop
 > - You can only copy to an environment in the same tenant and region.
 > - Components that have not been added to a solution (including canvas apps, flows, custom connectors, and connections) might not be part of the copy. You should validate your apps post copy.
 > - You cannot copy from or to a default type environment.
+> - Audit logs are not copied to the target environment.
   
 ## Copy over everything
  An **Everything** copy includes all application data, users, and customizations, and schemas from the source environment and is suitable for:  
