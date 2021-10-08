@@ -6,7 +6,7 @@ manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/09/2020
+ms.date: 10/09/2021
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
@@ -17,26 +17,23 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Identify Microsoft Power Platform champions in your organization
+# Support Microsoft Power Platform champions in your organization
 
-If you have Office 365 in your organization, it’s likely some individuals already have discovered Power Apps through exploration and Power Apps popping up in Microsoft Teams, SharePoint, and OneDrive. Check analytics in the [Power Platform admin center](https://aka.ms/ppac) or make use of the [Center of Excellence Starter Kit](../coe/starter-kit.md) dashboard to find your makers and learn about your app usage.
+A _champion_ is recognized by their peers as the _go-to_ Power Apps, Power Automate, or Power Virtual Agents expert. A champion continually builds and shares their knowledge even if it's not an official part of their job role. Power Platform champions influence and help their colleagues in many ways, including solution development, learning, skills improvement, troubleshooting, and keeping up to date.
 
-Even without organic adoption, it’s likely you already have a good idea of who your champions are. They are your Excel, Access, and SharePoint whizzes; or maybe they’re the troublemakers pushing the boundaries; or the ones who are first in line when there’s something new to learn. They question, they query, they encourage. Train those people. Make them champions and help them train others—champions aren't only passionate about what they do, but are also excited to evangelize and help their peers to learn more effective ways of working.
+Champions emerge as leaders of the community of practice who:
 
-## Find your champions with the right tools
+- Have a deep interest in Power Platform being used effectively and adopted successfully throughout the organization.
+- Possess strong Power Apps, Power Automate, or Power Virtual Agents skills as well as domain knowledge for their functional business unit.
+- Have an inherent interest in getting involved and helping others.
+- Are early adopters who are enthusiastic about experimenting and learning.
+- Can effectively translate business needs into solutions.
+- Communicate well with colleagues.
 
-The out-of-the-box [Power Automate](../../admin/analytics-flow.md) and [Power Apps](../../admin/analytics-powerapps.md) analytics can help you identify top makers in your organization.
-
-In addition to that, the dashboard part of the [CoE Starter Kit](../coe/starter-kit.md) can give you a tenant-wide overview of makers in your environment, and what connectors they're using to create apps. You can see your top app and flow makers, what departments they are from, and identify trends over time.
-
-![CoE Starter Kit maker dashboard.](../coe/media/pb-10.png "CoE Starter Kit Maker Dashboard")
-
-You can see how many different connectors your makers are using and learn who is exploring different connectors. A great way to identify mature makers is looking at those who try out different connectors.
-
-![CoE Starter Kit app maker insights.](media/coe-pb1.png "CoE Starter Kit app maker insights")
+> [!IMPORTANT]
+> Someone very well may be acting in the role of a champion without even knowing it, and without formal recognition. The COE should always be on the lookout for champions. COE members should actively monitor the discussion channel to see who is helpful. They should deliberately encourage and support potential champions, and when appropriate, invite them into a champions network to make the recognition formal.
 
 ## How will champions support you?
-
 Champions will evangelize and help train their teams on the new ways of working. They build awareness, understanding, and engagement throughout the community.
 
 They will:
@@ -47,19 +44,67 @@ They will:
 - Identify business challenges and possible solutions.
 - Provide feedback to the CoE team and sponsors.
 
+## Find your champions with the right tools
+<!--[Kathy says: Manuela, do we need this? It was at the start of the previous article but it's not in the "Find" section so I wasn't sure.] Check analytics in the [Power Platform admin center](https://aka.ms/ppac) or make use of the [Center of Excellence Starter Kit](../coe/starter-kit.md) dashboard to find your makers and learn about your app usage.-->
+
+If you have Microsoft 365 in your organization, it’s likely some individuals already have discovered Power Apps through exploration and Power Apps popping up in Microsoft Teams, SharePoint, and OneDrive.  
+
+The out-of-the-box [Power Automate](../../admin/analytics-flow.md) and [Power Apps](../../admin/analytics-powerapps.md) analytics can help you identify top makers in your organization.
+
+In addition to that, the dashboard part of the [CoE Starter Kit](../coe/starter-kit.md) can give you a tenant-wide overview of makers in your environment, and what connectors they're using to create apps. You can see your top app and flow makers, what departments they are from, and identify trends over time.
+
+![CoE Starter Kit maker dashboard.](../coe/media/pb-10.png "CoE Starter Kit Maker Dashboard")
+
+You can see how many different connectors your makers are using and learn who is exploring different connectors. A great way to identify mature makers is looking at those who try out different connectors.
+
+![CoE Starter Kit app maker insights.](../coe/media/coe-pb1.png "CoE Starter Kit app maker insights")
+
+ > [!TIP]
+ > Even if your organization hasn't adopted Power Platform yet, it’s likely you already have a good idea of who your champions will be. They are your Excel, Access, and SharePoint whizzes; or maybe they’re the troublemakers pushing the boundaries; or the ones who are first in line when there’s something new to learn. They question, they query, they encourage. Train those people. Make them Power Platform champions and help them train others—champions aren't only passionate about what they do, but are also excited to evangelize and help their peers to learn more effective ways of working.
+
 ## Create a champions program
+Considerations and key actions you can take to initiate, grow, and sustain your champions network include:
 
-- Find enthusiastic champions who can commit time and effort.
+### Plan your program
 - Design and align the champions community to organizational objectives and vision for Microsoft Power Platform in your organization. Attain sponsorship from key stakeholders and executives.
-- Focus on the people—how can you help them, how can you unblock challenges, how can you celebrate them?
-- Build a Yammer or Teams community for champions to share updates and successes, and to connect with each other.
-- Provide materials ready to support their work (for example, access to training material and templates).
-- Ensure a regular rhythm for discussions with the champions on what’s working and what’s not.
-- Design a program to engage and recognize their effort, such as providing privileged access to relevant events or speaking engagements.
-- Incorporate Microsoft Power Platform training resources into your own internal training site.
-- Create a contest (for example, scavenger hunts and giveaways) between departments to encourage people to interact with Microsoft Power Platform.
-- Encourage the sharing of stories, either through show-and-tell sessions or regular newsletters. You can lean on our [public case studies](https://powerapps.microsoft.com/blog/category/case-studies/) for ideas on how to structure those stories.
-- Recognize and reward the work champions are doing. Remember, they're not a support team but business representatives. Is there a company reward or benefit program that their work could tie into? Are there vouchers or other goodies they could receive? Could the benefit even be a premium license or their own environment to play in?
+- Create a plan to support the champions network. Although some aspects of a champions network will always be informally led, determine to what extent the COE will purposefully cultivate and support champion efforts throughout individual business units.
+- Decide what level of commitment and expected time investment will be required of Power Platform champions. (Note that the time investment can vary wildly from person to person, and team to team.) Plan to clearly communicate expectations to people who are interested to get involved. Obtain manager approval when appropriate.
+- Determine how you will respond to requests to become a champion, and how the COE will seek out champions. Decide if you will openly encourage interested employees to self-identify as a champion and ask to learn more (less common). Or, whether the COE will observe efforts and extend a private invitation (more common).
+- Determine how membership of the champions network will be managed. It could be implemented through membership in a security group. 
 
+### Consider how champions will communicate with you and each other
+- Decide how you will communicate with the champions network (for example, in a Teams channel, a Yammer group, and/or an email distribution list).
+- Determine how the champions network will communicate and collaborate with each other directly (across organizational boundaries), to share updates and successes, and to connect with each other.
+
+### Focus on the people
+- Find enthusiastic champions who can commit time and effort.
+- How can you help them, how can you unblock challenges, how can you celebrate them?
+  - Provide materials ready to support their work (for example, access to training material and templates).
+  - Ensure a regular rhythm for discussions with the champions on what’s working and what’s not.
+  - Encourage the sharing of stories, either through show-and-tell sessions or regular newsletters. You can lean on our [public case studies](https://powerapps.microsoft.com/blog/category/case-studies/) for ideas on how to structure those stories.
+  - Recognize and reward the work champions are doing. Remember, they're not a support team but business representatives. 
+
+## Rewarding champions
+Routinely provide recognition and incentives for champions. Not only is praise an effective motivator, but the act of sharing examples of successful efforts can motivate and inspire others.
+
+Incentives that champions find particularly rewarding can include:
+
+- **More direct access to the COE:** The ability to have _connections_ in the COE is valuable.
+- **Champion of the month:** Publicly thank one of your champions for something outstanding they did during the previous month. It could be a fun tradition at the beginning of a monthly lunch and learn.
+- **A private experts discussion area:** A private area for the champions to share ideas and learn from each other is usually highly valued.
+- **Specialized or deep dive information and training:** Access to additional information to help champions grow their skillsets (as well as help their colleagues) will be appreciated. It could include attending advanced training classes, privileged access to relevant events, or speaking engagements.
+- Is there a company reward or benefit program that their work could tie into? Are there vouchers or other goodies they could receive? Could the benefit even be a premium license or their own environment to play in?
+
+## Maturity levels
+
+The following maturity levels will help you assess the current state of your community of practice:
+
+| **Level** | **State of Power Platform community** |
+| --- | --- |
+| 100: Initial | Some content creators do great work, but their efforts are unrecognized.</br></br>Efforts to share knowledge are rare and unstructured.</br></br>Some staff may have attended App in a Day events (Partner or Microsoft delivered).</br></br>Team-based initiatives for nurturing makers.|
+| 200: Repeatable | [On-boarding strategy](onboard-makers.md) for new makers.</br></br>Makers become ambassadors across their departments and evangelize the capabilities.</br></br>Some staff have participated in a [hackathon](hackathons.md).</br></br>Makers become ambassadors across their departments and evangelize the capabilities.|
+| 300: Defined | Makers provide insights into business pain points.</br></br>Knowledge sharing in multiple forms is a normal and regularly scheduled occurrence.</br></br>[Training and upskilling](training-strategy.md) strategy for makers.</br></br>Internal Champions community.</br></br>[CoE Starter Kit – Nurture Module](../coe/nurture-components.md) adopted.|
+| 400: Capable | Regular events for Champions.</br></br>Regular hackathons.</br></br>Maker assessments and certificates.</br></br>Sharing and celebrating [success stories](show-and-tell.md).</br></br>Show & Tell sessions.</br></br>Adoption campaign. |
+| 500: Efficient | Large internal community with proven value.</br></br>Career path for makers.</br></br>Community of mentors.</br></br>Common development strategy and goals for Citizen and Pro developers. |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
