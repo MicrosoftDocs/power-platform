@@ -4,7 +4,7 @@ description: Describes how the connectors are off by default for GCC High and Do
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/15/2021
+ms.date: 10/08/2021
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
@@ -22,23 +22,23 @@ search.app:
 ---
 # Disable new connectors by default in GCC High and DoD
 
-Effective September 30<sup>th</sup>, 2021, new connectors that are introduced by Microsoft and other 3<sup>rd</sup> parties to the Power Platform will be disabled by default for customers operating in the following US government clouds: GCC High and DoD. Administrators will be able to review these new connectors before explicitly authorizing their use across the organization. Connectors that have been published before September 30<sup>th</sup>, 2021, will remain enabled by default, but admins can leverage the new tenant-level setting to disable them.
+Effective September 30, 2021, new connectors that are introduced by Microsoft and partners to the Power Platform will be disabled by default for customers operating in the following US government clouds: GCC High and DoD. Administrators will be able to review these new connectors before explicitly authorizing their use across the organization. Connectors that have been published before September 30, 2021, will remain enabled by default, but admins can leverage the new tenant-level setting to disable them.
 
 > [!NOTE]
 > Custom connectors are excluded from this new configuration setting.
 
-When new connectors are introduced to the Power Platform, they can be used immediately by all makers. This requires admins to constantly monitor the connector ecosystem and reactively update the organization's Data Loss Prevention (DLP) policies to prevent makers from inadvertently exfiltrating data. Such occurrences must be avoided at all costs in US government clouds where strict Federal compliance is mandated. Administrators can now rely on this safeguard mechanism in GCC High and DoD to better control the use of connectors.
+When new connectors are introduced to the Power Platform, they can be used immediately by all makers. This requires admins to constantly monitor the connector ecosystem and reactively update the organization's Data Loss Prevention (DLP) policies to prevent makers from inadvertently exfiltrating data. Such occurrences must be avoided in US government clouds where strict Federal compliance is mandated. Administrators can now rely on this safeguard mechanism in GCC High and DoD to better control the use of connectors.
 
 > [!NOTE]
 > When a connector is disabled in this new tenant-level setting, the admins can still classify and configure the connector in the DLP policies, but its use will be blocked in Power Apps and Power Automate either when creating an app/flow or when executing an app/flow.
 
-### Availability
+## Availability
 
 This feature is exclusively available in GCC High and DoD for all customers. Sign-up is not required.
 
-### Workflow
+## Workflow
 
-**Step one: View the new connector**
+### Step one: View the new connector
 
 1. Select the **Data policies** tab where all DLP policies are located.
 
@@ -50,7 +50,7 @@ This feature is exclusively available in GCC High and DoD for all customers. Sig
 
 ![Slide1](https://user-images.githubusercontent.com/90638770/136602763-ff86a4d7-73bf-42bb-a465-cf64294f1c99.PNG)
 
-**Step two: Enable or disable the new connector**
+### Step two: Enable or disable the new connector
 
 1. If you want to keep the connector disabled, select **Mark as reviewed**.
 
@@ -62,7 +62,7 @@ This feature is exclusively available in GCC High and DoD for all customers. Sig
 
 ![Slide2](https://user-images.githubusercontent.com/90638770/136602779-b4cf642b-51b9-43f0-b64c-ef90185e2bac.PNG)
 
-**Step three: View a disabled connector in a DLP policy**
+### Step three: View a disabled connector in a DLP policy
 
 1. Select a data policy in the **Data policies** page.
 
@@ -70,7 +70,7 @@ This feature is exclusively available in GCC High and DoD for all customers. Sig
 
 ![Slide3](https://user-images.githubusercontent.com/90638770/136602796-430642ef-5842-4837-8b7f-166c9026f43d.PNG)
 
-**Step four: Attempt to add a disabled connector in a Power App**
+### Step four: Attempt to add a disabled connector in a Power App
 
 1. Open any Power App.
 
@@ -83,7 +83,8 @@ This feature is exclusively available in GCC High and DoD for all customers. Sig
 
 ## PowerShell support
 
-The connector blocking policy has the following structure. The connectorSettings object is an array containing each connector with the behavior and whether it has been reviewed.
+The connector blocking policy has the following structure. The **connectorSettings** object is an array containing each connector with its behavior and whether its been reviewed.
+
 ```powershell
 $connectorBlockingDefinition = [pscustomobject] @{ 
   ConnectorSettings= @( 
@@ -109,6 +110,7 @@ Example:
 The above cmdlet outputs the connectors that are blocked/allowed for the evaluation and the policyId. 
 
 **Create a new connector blocking policy for the tenant**
+
 ```powershell
 `New-PowerAppDlpConnectorBlockingPolicy –TenantId “8dfd3b6e-2fd1-42ac-a874-b1edc2db1531” -ConnectorBlockingDefinition $connectorBlockingDefinition
   Where $connectorBlockingDefinition = [pscustomobject] @{
@@ -128,11 +130,18 @@ The above cmdlet outputs the connectors that are blocked/allowed for the evaluat
 ```
 
 **Update the connector blocking policy for the tenant**
+
 ```powershell
 `Set-PowerAppDlpConnectorBlockingPolicy -TenantId “8dfd3b6e-2fd1-42aC-a874-b1edc2db1531” -PolicyId “235d9cd9-edb1-4fe4-9a5a-e6eb2ba4ed80” -ConnectorBlockingDefinition $connectorBlockingDefinition` 
 ```
 
 **Fetch the connector blocking policy using the policyId**
+
 ```powershell
 `Get-PowerAppDlpConnectorBlockingPolicy -TenantId “8dfd3b6e-2fd1-42aC-a874-b1edc2db1531” -PolicyId “235d9cd9-edb1-4fe4-9a5a-e6eb2ba4ed80” ` 
 ```
+
+
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
