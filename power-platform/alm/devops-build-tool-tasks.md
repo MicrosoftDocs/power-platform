@@ -195,13 +195,13 @@ steps:
 | `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint that you want to import the solution into (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
 | `SolutionInputFile`<br/>Solution input file | (Required) The path and file name of the solution .zip file to import into the target environment (e.g., $(Build.ArtifactStagingDirectory)\$(SolutionName).zip). <p/>Note: Variables give you a convenient way to get key bits of data into various parts of your pipeline. See [Use predefined variables](/azure/devops/pipelines/build/variables) for a comprehensive list.  |
 | `AsyncOperation`<br/>Import solution as asynchronous operation | If selected (**true**), the import operation will be performed asynchronously. This is recommended for larger solutions as this task will automatically timeout after 4 minutes otherwise. |
-| `HoldingSolution`<br/>Import as a holding solution | An advance parameter (true|false) used when a solution needs to be upgraded. This parameter hosts the solution in Dataverse but does not upgrade the solution until the Apply Solution Upgrade task is run. |
-| `OverwriteUnmanagedCustomizations`<br/>Overwrite un-managed customizations | Specify whether to overwrite un-managed customizations (true|false). |
-| `SkipProductUpdateDependencies`<br/>Skip product update dependencies | Specify whether the enforcement of dependencies related to product updates should be skipped (true|false). |
-| `ConvertToManaged`<br/>Convert to managed | Specify whether to import as a managed solution (true|false). |
-| `AsyncOperation`<br/>Asynchronous import | Import solution as asynchronous batch job; selecting asynchronous will poll and wait until MaxAsyncWaitTime has been reached (true|false). |
-| `PublishWorkflows`<br/>Activate processes after import | Specify whether any processes (workflows) in the solution should be activated after import (true|false). |
-| `UseDeploymentSettingsFile`<br/>Use deployment settings file | Connection references and environment variable values can be set using a deployment settings file (true|false). |
+| `HoldingSolution`<br/>Import as a holding solution | An advance parameter (true\|false) used when a solution needs to be upgraded. This parameter hosts the solution in Dataverse but does not upgrade the solution until the Apply Solution Upgrade task is run. |
+| `OverwriteUnmanagedCustomizations`<br/>Overwrite un-managed customizations | Specify whether to overwrite un-managed customizations (true\|false). |
+| `SkipProductUpdateDependencies`<br/>Skip product update dependencies | Specify whether the enforcement of dependencies related to product updates should be skipped (true\|false). |
+| `ConvertToManaged`<br/>Convert to managed | Specify whether to import as a managed solution (true\|false). |
+| `AsyncOperation`<br/>Asynchronous import | Import solution as asynchronous batch job; selecting asynchronous will poll and wait until MaxAsyncWaitTime has been reached (true\|false). |
+| `PublishWorkflows`<br/>Activate processes after import | Specify whether any processes (workflows) in the solution should be activated after import (true\|false). |
+| `UseDeploymentSettingsFile`<br/>Use deployment settings file | Connection references and environment variable values can be set using a deployment settings file (true\|false). |
 | `DeploymentSettingsFile`<br/>Deployment settings file | (Required when `UseDeploymentSettingsFile`=**true**) The path and file name of the deployment settings file. |
 
 ### Power Platform Apply Solution Upgrade
