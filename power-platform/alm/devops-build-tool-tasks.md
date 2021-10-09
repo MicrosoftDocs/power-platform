@@ -7,7 +7,7 @@ ms.subservice: alm
 ms.author: pemikkel
 manager: kvivek
 ms.custom: ""
-ms.date: 09/23/2021
+ms.date: 10/08/2021
 ms.reviewer: "pehecke"
 ms.service: power-platform
 ms.topic: "article"
@@ -33,16 +33,68 @@ release pipelines. This task installs a set of Power Platform&ndash;specific too
 by the agent to run the Microsoft Power Platform build tasks. This task doesn't require any
 more configuration when added, but contains parameters for the specific versions
 of each of the tools that are being installed.
+
 To stay up to date with the tool versions over time, make sure these parameters correspond
 to the versions of the tools that are required for the pipeline to run properly.
+
+#### YAML snippet (Installer)
+
+```yml
+# Installs default Power Platform Build Tools
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.tool-installer.PowerPlatformToolInstaller@0
+  displayName: 'Power Platform Tool Installer '
+```
+
+```yml
+# Installs specific versions of the Power Platform Build Tools
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.tool-installer.PowerPlatformToolInstaller@0
+  displayName: 'Power Platform Tool Installer '
+  inputs:
+    DefaultVersion: false
+    XrmToolingPackageDeploymentVersion: 3.3.0.928
+```
+
+#### Parameters (Installer)
+
+| Parameters    | Description   |
+|---------------|---------------|
+| `DefaultVersion`<br/>Use default tool versions | Set to **true** to use the default version of all tools, otherwise **false**. Required (and **false**) when any tool versions are specified. |
+| `PowerAppsAdminVersion`<br/>`XrmToolingPackageDeploymentVersion`<br/>`MicrosoftPowerAppsCheckerVersion`<br/>`CrmSdkCoreToolsVersion`<br/>Tool version | The specific version of the tool to use. |
 
 ### Power Platform WhoAmI
 
 Verifies a Power Platform environment service connection by connecting and making a WhoAmI request. This task can be useful to include early in the pipeline, to verify connectivity before processing begins.
 
+#### YAML snippet (WhoAmI)
+
+```yml
+# Verifies an environment service connection
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.whoami.PowerPlatformWhoAmi@0
+  displayName: 'Power Platform WhoAmI'
+
+  inputs: 
+#   Service Principal/client secret (supports MFA)
+    authenticationType: PowerPlatformSPN
+    PowerPlatformSPN: 'My service connection'
+```
+
+```yml
+# Verifies an environment service connection
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.whoami.PowerPlatformWhoAmi@0
+  displayName: 'Power Platform WhoAmI'
+
+  inputs:
+#   Username/password (no MFA support)
+    PowerPlatformEnvironment: 'My service connection'
+```
+
+#### Parameters (WhoAmI)
+
 | Parameters    | Description   |
 |---------------|---------------|
-| Power Platform environment URL | The service endpoint for the environment to connect to. Defined under **Service Connections** in **Project Settings**. |
+| `authenticationType`<br/>Type of authentication | (Optional) Specify either **PowerPlatformEnvironment** for a username/password connection or **PowerPlatformSPN** for a Service Principal/client secret connection. |
+| `PowerPlatformEnvironment`<br/>Power Platform environment URL | The service endpoint for the environment to connect to. Defined under **Service Connections** in **Project Settings**. |
+| `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint for the environment to connect to. Defined under **Service Connections** in **Project Settings**. |
 
 ## Quality check
 
@@ -54,30 +106,103 @@ This task runs a static analysis check on your solutions
 against a set of best-practice rules to identify any problematic patterns that
 you might have inadvertently introduced when building your solution.
 
+#### YAML snippet (Checker)
+
+```yml
+# Static analysis check of your solution
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.checker.PowerPlatformChecker@0
+  displayName: 'Power Platform Checker '
+  inputs:
+    PowerPlatformSPN: 'Dataverse service connection'
+    RuleSet: '0ad12346-e108-40b8-a956-9a8f95ea18c9'
+```
+
+```yml
+# Static analysis check of your solution
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.checker.PowerPlatformChecker@0
+  displayName: 'Power Platform Checker '
+  inputs:
+    PowerPlatformSPN: 'Dataverse service connection'
+    UseDefaultPACheckerEndpoint: false
+    CustomPACheckerEndpoint: 'https://japan.api.advisor.powerapps.com/'
+    FileLocation: sasUriFile
+    FilesToAnalyzeSasUri: 'SAS URI'
+    FilesToAnalyze: '**\*.zip'
+    FilesToExclude: '**\*.tzip'
+    RulesToOverride: 'JSON array'
+    RuleSet: '0ad12346-e108-40b8-a956-9a8f95ea18c9'
+```
+
+#### Parameters (Checker)
+
 | Parameters         | Description      |
 |--------------------|------------------|
-| Service Connection                         | (Required) A connection to a licensed Microsoft Power Platform environment is required to use the Power Platform checker.  Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type.<p/>Note: Service Principal is the only authentication method available for the checker task so if you are using username/password for all other tasks, you will have to create a separate connection to use with the checker task. For more information on how to configure service principals to be used with this task see [Configure service principal connections for Power Platform environments](devops-build-tools.md#configure-service-connections-using-a-service-principal). |
-| User default Power Platform Checker endpoint       | By default, the geographic location of the checker service will use the same geography as the environment you connect to. By un-checking the default, you have an option to specify another geo to use, for example https://japan.api.advisor.powerapps.com. For a list of available geographies, see [Use the Power Platform Checker API](/powerapps/developer/common-data-service/checker/webapi/overview#determine-a-geography).|
-| Location of file(s) to analyze       | (Required) Specify whether to reference a local file or a reference file from a shared access signature (SAS) URL.<p/>Note: It is important to reference an exported solution file and not the unpacked source files in your repository. Both managed and unmanaged solution files can be analyzed. |
-| Local files to analyze/SAS URI for the file to analyze | (Required) Specify the path and file name of the zip files to analyze. Wildcards can be used. For example, enter \*\*\\*.zip for all zip files in all subfolders.<p/>If **File from SAS URI** was chosen as location of files to analyze, enter the SAS URI. You can add more than one SAS URI through a comma (,) or semi-colon (;) separated list.     |
-| Rule set                          | (Required) Specify which rule set to apply. The following two rule sets are available:<ul><li> Solution checker: This is the same rule set that is run from the Power Apps [maker portal](https://make.powerapps.com).</li><li>AppSource: This is the extended rule set that is used to certify an application before it can be published to [AppSource](https://appsource.microsoft.com/).</li></ul>    |
-| Error Level | Combined with the Error threshold parameter defines the severity of errors and warnings that are allowed. |
-| Error threshold | Defines the number of errors of specified level that are allowed for the checker to pass the solutions being checked. |
+| `PowerPlatformSPN`<br/>Service Connection | (Required) A connection to a licensed Microsoft Power Platform environment is required to use the Power Platform checker.  Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type.<p/>Note: Service Principal is the only authentication method available for the checker task so if you are using username/password for all other tasks, you will have to create a separate connection to use with the checker task. For more information on how to configure service principals to be used with this task, see [Configure service principal connections for Power Platform environments](devops-build-tools.md#configure-service-connections-using-a-service-principal). |
+| `UseDefaultPACheckerEndpoint`<br/>Use default Power Platform Checker endpoint | By default (**true**), the geographic location of the checker service will use the same geography as the environment you connect to. |
+| `CustomPACheckerEndpoint`<br/>Custom PAC checker endpoint | Required when `UseDefaultPACheckerEndpoint` is **false**. You have an option to specify another geo to use, for example https://japan.api.advisor.powerapps.com. For a list of available geographies, see [Use the Power Platform Checker API](/powerapps/developer/common-data-service/checker/webapi/overview#determine-a-geography). |
+| `FileLocation`<br/>Location of file(s) to analyze       | Required when referencing a file from a shared access signature (SAS) URL `sasUriFile`.<p/>Note: It is important to reference an exported solution file and not the unpacked source files in your repository. Both managed and unmanaged solution files can be analyzed. |
+| `FilesToAnalyzeSasUri`<br/>SAS files to analyze | Required when `FileLocation` is set to `sasUriFile`. Enter the SAS URI. You can add more than one SAS URI through a comma (,) or semi-colon (;) separated list. |
+| `FilesToAnalyze`<br/>Local files to analyze | Required when SAS files are not analyzed. Specify the path and file name of the zip files to analyze. Wildcards can be used. For example, enter \*\*\\*.zip for all zip files in all subfolders. |
+| `FilesToExclude`<br/>Local files to exclude | Specify the names of files to be excluded from the analysis. If more than one, provide through a comma (,) or semi-colon (;) separated list. This list can include a full file name or a name with leading or trailing wildcards, such as *jquery or form.js |
+| `RulesToOverride`<br/>Rules to override | A JSON array containing rules and levels to override. Accepted values for OverrideLevel are: Critical, High, Medium, Low, Informational. Example: [{"Id":"meta-remove-dup-reg","OverrideLevel":"Medium"},{"Id":"il-avoid-specialized-update-ops","OverrideLevel":"Medium"}] |
+| `RuleSet`<br/>Rule set | (Required) Specify which rule set to apply. The following two rule sets are available:<ul><li> Solution checker: This is the same rule set that is run from the Power Apps [maker portal](https://make.powerapps.com).</li><li>AppSource: This is the extended rule set that is used to certify an application before it can be published to [AppSource](https://appsource.microsoft.com/).</li></ul>    |
+| `ErrorLevel`<br/>Error Level | Combined with the error threshold parameter defines the severity of errors and warnings that are allowed. Supported threshold values are \<level>IssueCount where level=Critical, High, Medium, Low, and Informational. |
+| `ErrorThreshold`<br/>Error threshold | Defines the number of errors (>=0) of a specified level that are allowed for the checker to pass the solutions being checked. |
+| `FailOnPowerAppsCheckerAnalysisError`<br/>Fail on error | When **true**, fail if the Power Apps Checker analysis is returned as Failed or FinishedWithErrors. |
+| `ArtifactDestinationName`<br/>DevOps artifact name | Specify the Azure DevOps artifacts name for the checker .sarif file. |
 
 ## Solution tasks
 
 This set of tasks can automate solution actions. The environment tasks outlined later in this section that create, copy, or restore an environment will overwrite the service connections with the newly created environments. This makes it possible to perform solution tasks against environments that are created on demand. 
 
 ### Power Platform Import Solution
+
 Imports a solution into a target environment.
+
+#### YAML snippet (Import)
+
+```yml
+steps:
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.import-solution.PowerPlatformImportSolution@0
+  displayName: 'Power Platform Import Solution '
+  inputs:
+    PowerPlatformEnvironment: 'My service connection'
+    SolutionInputFile: 'C:\Public\Contoso_sample_1_0_0_1_managed.zip'
+    HoldingSolution: true
+    OverwriteUnmanagedCustomizations: true
+    SkipProductUpdateDependencies: true
+    ConvertToManaged: true
+```
+
+```yml
+steps:
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.import-solution.PowerPlatformImportSolution@0
+  displayName: 'Power Platform Import Solution '
+  inputs:
+    authenticationType: PowerPlatformSPN
+    PowerPlatformSPN: 'Dataverse service connection '
+    SolutionInputFile: 'C:\Public\Contoso_sample_1_0_0_1_managed.zip'
+    AsyncOperation: false
+    PublishWorkflows: false
+```
+
+#### Parameters (Import)
 
 | Parameters           | Description        |
 |----------------------|--------------------------|
-| Authentication type | (Required) Select whether to use username/password or service principal authentication. Username/password does not support multi-factor authentication. |
-| Service connection | (Required) The service connection to the target environment that you want to import the solution into (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)).  Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type .|
-| Solution input file        | (Required) The path and file name of the solution.zip file to import into the target environment (e.g., $(Build.ArtifactStagingDirectory)\$(SolutionName).zip). <p/>Note: Variables give you a convenient way to get key bits of data into various parts of your pipeline. See [Use predefined variables](/azure/devops/pipelines/build/variables) for a comprehensive list.  |
-| Import solution as asynchronous operation | If selected, the import operation will be performed asynchronously. This is recommended for larger solutions as this task will automatically timeout after 4 minutes otherwise. |
-| Import as a holding solution | An advance parameter used when a solution needs to be upgraded. This parameter hosts the solution in Dataverse but does not upgrade the solution until the Apply Solution Upgrade task is run. | 
+| `authenticationType`<br/>Type of authentication | (Required for SPN) Specify either **PowerPlatformEnvironment** for a username/password connection or **PowerPlatformSPN** for a Service Principal/client secret connection. |
+| `PowerPlatformEnvironment`<br/>Power Platform environment URL | The service endpoint that you want to import the solution into (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
+| `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint that you want to import the solution into (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
+| `SolutionInputFile`<br/>Solution input file | (Required) The path and file name of the solution .zip file to import into the target environment (e.g., $(Build.ArtifactStagingDirectory)\$(SolutionName).zip). <p/>Note: Variables give you a convenient way to get key bits of data into various parts of your pipeline. See [Use predefined variables](/azure/devops/pipelines/build/variables) for a comprehensive list.  |
+| `AsyncOperation`<br/>Import solution as asynchronous operation | If selected (**true**), the import operation will be performed asynchronously. This is recommended for larger solutions as this task will automatically timeout after 4 minutes otherwise. |
+| `HoldingSolution`<br/>Import as a holding solution | An advance parameter (true\|false) used when a solution needs to be upgraded. This parameter hosts the solution in Dataverse but does not upgrade the solution until the Apply Solution Upgrade task is run. |
+| `OverwriteUnmanagedCustomizations`<br/>Overwrite un-managed customizations | Specify whether to overwrite un-managed customizations (true\|false). |
+| `SkipProductUpdateDependencies`<br/>Skip product update dependencies | Specify whether the enforcement of dependencies related to product updates should be skipped (true\|false). |
+| `ConvertToManaged`<br/>Convert to managed | Specify whether to import as a managed solution (true\|false). |
+| `AsyncOperation`<br/>Asynchronous import | Import solution as asynchronous batch job; selecting asynchronous will poll and wait until MaxAsyncWaitTime has been reached (true\|false). |
+| `PublishWorkflows`<br/>Activate processes after import | Specify whether any processes (workflows) in the solution should be activated after import (true\|false). |
+| `UseDeploymentSettingsFile`<br/>Use deployment settings file | Connection references and environment variable values can be set using a deployment settings file (true\|false). |
+| `DeploymentSettingsFile`<br/>Deployment settings file | (Required when `UseDeploymentSettingsFile`=**true**) The path and file name of the deployment settings file. |
 
 ### Power Platform Apply Solution Upgrade
 Upgrades a solution that has been imported as a holding solution.
