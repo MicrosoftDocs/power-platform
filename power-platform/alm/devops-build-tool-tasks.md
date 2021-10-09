@@ -7,7 +7,7 @@ ms.subservice: alm
 ms.author: pemikkel
 manager: kvivek
 ms.custom: ""
-ms.date: 09/23/2021
+ms.date: 10/08/2021
 ms.reviewer: "pehecke"
 ms.service: power-platform
 ms.topic: "article"
@@ -156,15 +156,53 @@ you might have inadvertently introduced when building your solution.
 This set of tasks can automate solution actions. The environment tasks outlined later in this section that create, copy, or restore an environment will overwrite the service connections with the newly created environments. This makes it possible to perform solution tasks against environments that are created on demand. 
 
 ### Power Platform Import Solution
+
 Imports a solution into a target environment.
+
+#### YAML snippet (Import)
+
+```yml
+steps:
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.import-solution.PowerPlatformImportSolution@0
+  displayName: 'Power Platform Import Solution '
+  inputs:
+    PowerPlatformEnvironment: 'My service connection'
+    SolutionInputFile: 'C:\Public\Contoso_sample_1_0_0_1_managed.zip'
+    HoldingSolution: true
+    OverwriteUnmanagedCustomizations: true
+    SkipProductUpdateDependencies: true
+    ConvertToManaged: true
+```
+
+```yml
+steps:
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.import-solution.PowerPlatformImportSolution@0
+  displayName: 'Power Platform Import Solution '
+  inputs:
+    authenticationType: PowerPlatformSPN
+    PowerPlatformSPN: 'Dataverse service connection '
+    SolutionInputFile: 'C:\Public\Contoso_sample_1_0_0_1_managed.zip'
+    AsyncOperation: false
+    PublishWorkflows: false
+```
+
+#### Parameters (Import)
 
 | Parameters           | Description        |
 |----------------------|--------------------------|
-| Authentication type | (Required) Select whether to use username/password or service principal authentication. Username/password does not support multi-factor authentication. |
-| Service connection | (Required) The service connection to the target environment that you want to import the solution into (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)).  Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type .|
-| Solution input file        | (Required) The path and file name of the solution.zip file to import into the target environment (e.g., $(Build.ArtifactStagingDirectory)\$(SolutionName).zip). <p/>Note: Variables give you a convenient way to get key bits of data into various parts of your pipeline. See [Use predefined variables](/azure/devops/pipelines/build/variables) for a comprehensive list.  |
-| Import solution as asynchronous operation | If selected, the import operation will be performed asynchronously. This is recommended for larger solutions as this task will automatically timeout after 4 minutes otherwise. |
-| Import as a holding solution | An advance parameter used when a solution needs to be upgraded. This parameter hosts the solution in Dataverse but does not upgrade the solution until the Apply Solution Upgrade task is run. | 
+| `authenticationType`<br/>Type of authentication | (Required for SPN) Specify either **PowerPlatformEnvironment** for a username/password connection or **PowerPlatformSPN** for a Service Principal/client secret connection. |
+| `PowerPlatformEnvironment`<br/>Power Platform environment URL | The service endpoint that you want to import the solution into (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
+| `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint that you want to import the solution into (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
+| `SolutionInputFile`<br/>Solution input file | (Required) The path and file name of the solution .zip file to import into the target environment (e.g., $(Build.ArtifactStagingDirectory)\$(SolutionName).zip). <p/>Note: Variables give you a convenient way to get key bits of data into various parts of your pipeline. See [Use predefined variables](/azure/devops/pipelines/build/variables) for a comprehensive list.  |
+| `AsyncOperation`<br/>Import solution as asynchronous operation | If selected (**true**), the import operation will be performed asynchronously. This is recommended for larger solutions as this task will automatically timeout after 4 minutes otherwise. |
+| `HoldingSolution`<br/>Import as a holding solution | An advance parameter (true|false) used when a solution needs to be upgraded. This parameter hosts the solution in Dataverse but does not upgrade the solution until the Apply Solution Upgrade task is run. |
+| `OverwriteUnmanagedCustomizations`<br/>Overwrite un-managed customizations | Specify whether to overwrite un-managed customizations (true|false). |
+| `SkipProductUpdateDependencies`<br/>Skip product update dependencies | Specify whether the enforcement of dependencies related to product updates should be skipped (true|false). |
+| `ConvertToManaged`<br/>Convert to managed | Specify whether to import as a managed solution (true|false). |
+| `AsyncOperation`<br/>Asynchronous import | Import solution as asynchronous batch job; selecting asynchronous will poll and wait until MaxAsyncWaitTime has been reached (true|false). |
+| `PublishWorkflows`<br/>Activate processes after import | Specify whether any processes (workflows) in the solution should be activated after import (true|false). |
+| `UseDeploymentSettingsFile`<br/>Use deployment settings file | Connection references and environment variable values can be set using a deployment settings file (true|false). |
+| `DeploymentSettingsFile`<br/>Deployment settings file | (Required when `UseDeploymentSettingsFile`=**true**) The path and file name of the deployment settings file. |
 
 ### Power Platform Apply Solution Upgrade
 Upgrades a solution that has been imported as a holding solution.
