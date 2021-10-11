@@ -22,19 +22,17 @@ search.app:
 ---
 # Disable new connectors by default in GCC High and DoD
 
-Effective September 30, 2021, new connectors that are introduced by Microsoft and partners to the Power Platform will be disabled by default for customers operating in the following US government clouds: GCC High and DoD. Administrators will be able to review these new connectors before explicitly authorizing their use across the organization. Connectors that have been published before September 30, 2021, will remain enabled by default, but admins can leverage the new tenant-level setting to disable them.
+Effective September 30, 2021, new connectors that are introduced by Microsoft and partners to the Power Platform will be disabled by default for customers operating in the following US government clouds: GCC High and DoD. Administrators will be able to review these new connectors before  authorizing their use across the organization in the "Data policy" page of the Power Platform admin center. Connectors that have been already published in GCC High and DoD before September 30, 2021, will remain enabled, but admins can leverage this new Data Loss Prevention (DLP) control to disable them.
+
+When new connectors are introduced to the Power Platform, they can be used immediately by all makers. This requires administrators to constantly monitor the connector ecosystem and reactively update the organization's DLP policies to prevent makers from inadvertently exfiltrating data. Such occurrences must be avoided in US government clouds where strict compliance is mandated. Administrators can now rely on this safeguard mechanism in GCC High and DoD to better control the use of connectors.
 
 > [!NOTE]
-> Custom connectors are excluded from this new configuration setting.
-
-When new connectors are introduced to the Power Platform, they can be used immediately by all makers. This requires admins to constantly monitor the connector ecosystem and reactively update the organization's Data Loss Prevention (DLP) policies to prevent makers from inadvertently exfiltrating data. Such occurrences must be avoided in US government clouds where strict Federal compliance is mandated. Administrators can now rely on this safeguard mechanism in GCC High and DoD to better control the use of connectors.
-
-> [!NOTE]
-> When a connector is disabled in this new tenant-level setting, the admins can still classify and configure the connector in the DLP policies, but its use will be blocked in Power Apps and Power Automate either when creating an app/flow or when executing an app/flow.
+> - Custom connectors cannot be disabled via this new DLP control.
+> - When a connector is disabled, the administrators can still classify and configure the connector in the DLP policies, but its use will be blocked in Power Apps and Power Automate.
 
 ## Availability
 
-This feature is exclusively available in GCC High and DoD for all customers. Sign-up is not required.
+This feature is exclusively available for all customers operating in GCC High and DoD. Sign-up is not required.
 
 ## Workflow
 
@@ -79,11 +77,11 @@ This feature is exclusively available in GCC High and DoD for all customers. Sig
 :::image type="content" source="media/disabled-connector-error-message.png" alt-text="Disabled connector error message":::
 
 > [!NOTE]
-> This new tenant-level setting is also enforced on existing apps/flows that were built using connectors that are now disabled.
+> - This new tenant-level setting is also enforced on existing apps and flows that were built using connectors that are now disabled.
 
 ## PowerShell support
 
-The connector blocking policy has the following structure. The **connectorSettings** object is an array containing each connector with its behavior and whether its been reviewed.
+The new DLP control has the following structure in PowerShell. The **connectorSettings** object is an array of connectors specifying wether it is enabled or disabled ("behavior") and whether it has been reviewed or not ("isReviewed").
 
 ```powershell
 $connectorBlockingDefinition = [pscustomobject] @{ 
@@ -100,12 +98,12 @@ $connectorBlockingDefinition = [pscustomobject] @{
 **Retrieve the existing connector blocking policy for the tenant**
 
 ```powershell
-`Get-PowerAppDlpConnectorBlockingPolicies` 
+Get-PowerAppDlpConnectorBlockingPolicies
 ``` 
 
 Example: 
 ```powershell
-`Get-PowerAppDlpConnectorBlockingPolicies -TenantId “8dfd3b6e-2fd1-42aC-a874-b1edc2db1531” 
+Get-PowerAppDlpConnectorBlockingPolicies -TenantId “8dfd3b6e-2fd1-42aC-a874-b1edc2db1531”
 ```
 
 The above cmdlet outputs the connectors that are blocked/allowed for the evaluation and the policyId. 
@@ -113,7 +111,7 @@ The above cmdlet outputs the connectors that are blocked/allowed for the evaluat
 **Create a new connector blocking policy for the tenant**
 
 ```powershell
-`New-PowerAppDlpConnectorBlockingPolicy –TenantId “8dfd3b6e-2fd1-42ac-a874-b1edc2db1531” -ConnectorBlockingDefinition $connectorBlockingDefinition
+New-PowerAppDlpConnectorBlockingPolicy –TenantId “8dfd3b6e-2fd1-42ac-a874-b1edc2db1531” -ConnectorBlockingDefinition $connectorBlockingDefinition
   Where $connectorBlockingDefinition = [pscustomobject] @{
     ConnectorSettings= @
       [pscustomobject] @{
@@ -133,16 +131,13 @@ The above cmdlet outputs the connectors that are blocked/allowed for the evaluat
 **Update the connector blocking policy for the tenant**
 
 ```powershell
-`Set-PowerAppDlpConnectorBlockingPolicy -TenantId “8dfd3b6e-2fd1-42aC-a874-b1edc2db1531” -PolicyId “235d9cd9-edb1-4fe4-9a5a-e6eb2ba4ed80” -ConnectorBlockingDefinition $connectorBlockingDefinition` 
+Set-PowerAppDlpConnectorBlockingPolicy -TenantId “8dfd3b6e-2fd1-42aC-a874-b1edc2db1531” -PolicyId “235d9cd9-edb1-4fe4-9a5a-e6eb2ba4ed80” -ConnectorBlockingDefinition $connectorBlockingDefinition
 ```
 
 **Fetch the connector blocking policy using the policyId**
 
 ```powershell
-`Get-PowerAppDlpConnectorBlockingPolicy -TenantId “8dfd3b6e-2fd1-42aC-a874-b1edc2db1531” -PolicyId “235d9cd9-edb1-4fe4-9a5a-e6eb2ba4ed80” ` 
+Get-PowerAppDlpConnectorBlockingPolicy -TenantId “8dfd3b6e-2fd1-42aC-a874-b1edc2db1531” -PolicyId “235d9cd9-edb1-4fe4-9a5a-e6eb2ba4ed80”
 ```
-
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
