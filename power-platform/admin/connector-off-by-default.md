@@ -4,7 +4,7 @@ description: Describes how the connectors are off by default for GCC High and Do
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/08/2021
+ms.date: 10/11/2021
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
@@ -22,12 +22,12 @@ search.app:
 ---
 # Disable new connectors by default in GCC High and DoD
 
-Effective September 30, 2021, new connectors that are introduced by Microsoft and partners to the Power Platform will be disabled by default for customers operating in the following US government clouds: GCC High and DoD. Administrators will be able to review these new connectors before  authorizing their use across the organization in the "Data policy" page of the Power Platform admin center. Connectors that have been already published in GCC High and DoD before September 30, 2021, will remain enabled, but admins can leverage this new Data Loss Prevention (DLP) control to disable them.
+Effective September 30, 2021, new connectors that are introduced by Microsoft and partners to the Power Platform will be disabled by default for customers operating in the following US government clouds: GCC High and DoD. Administrators will be able to review these new connectors before  authorizing their use across the organization in the **Data policy** page of the Power Platform admin center. Connectors already published in GCC High and DoD before September 30, 2021, will remain enabled, but admins can leverage this new Data Loss Prevention (DLP) control to disable them.
 
 When new connectors are introduced to the Power Platform, they can be used immediately by all makers. This requires administrators to constantly monitor the connector ecosystem and reactively update the organization's DLP policies to prevent makers from inadvertently exfiltrating data. Such occurrences must be avoided in US government clouds where strict compliance is mandated. Administrators can now rely on this safeguard mechanism in GCC High and DoD to better control the use of connectors.
 
 > [!NOTE]
-> - Custom connectors cannot be disabled via this new DLP control.
+> - Custom connectors can't be disabled via this new DLP control.
 > - When a connector is disabled, the administrators can still classify and configure the connector in the DLP policies, but its use will be blocked in Power Apps and Power Automate.
 
 ## Availability
@@ -81,7 +81,7 @@ This feature is exclusively available for all customers operating in GCC High an
 
 ## PowerShell support
 
-The new DLP control has the following structure in PowerShell. The **connectorSettings** object is an array of connectors specifying wether it is enabled or disabled ("behavior") and whether it has been reviewed or not ("isReviewed").
+The new DLP control has the following structure in PowerShell. The **connectorSettings** object is an array of connectors specifying whether it is enabled or disabled ("behavior") and whether it has been reviewed or not ("isReviewed").
 
 ```powershell
 $connectorBlockingDefinition = [pscustomobject] @{ 
