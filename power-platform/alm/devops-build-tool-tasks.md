@@ -182,7 +182,8 @@ steps:
     authenticationType: PowerPlatformSPN
     PowerPlatformSPN: 'Dataverse service connection '
     SolutionInputFile: 'C:\Public\Contoso_sample_1_0_0_1_managed.zip'
-    AsyncOperation: false
+    AsyncOperation: true
+    MaxAsyncWaitTime: 60
     PublishWorkflows: false
 ```
 
@@ -200,23 +201,54 @@ steps:
 | `SkipProductUpdateDependencies`<br/>Skip product update dependencies | Specify whether the enforcement of dependencies related to product updates should be skipped (true\|false). |
 | `ConvertToManaged`<br/>Convert to managed | Specify whether to import as a managed solution (true\|false). |
 | `AsyncOperation`<br/>Asynchronous import | Import solution as asynchronous batch job; selecting asynchronous will poll and wait until MaxAsyncWaitTime has been reached (true\|false). |
+| `MaxAsyncWaitTime`<br/>Maximum wait time | Maximum wait time in minutes for the asynchronous operation; default is 60 min (1 hr), same as Azure DevOps default for tasks.|
 | `PublishWorkflows`<br/>Activate processes after import | Specify whether any processes (workflows) in the solution should be activated after import (true\|false). |
 | `UseDeploymentSettingsFile`<br/>Use deployment settings file | Connection references and environment variable values can be set using a deployment settings file (true\|false). |
 | `DeploymentSettingsFile`<br/>Deployment settings file | (Required when `UseDeploymentSettingsFile`=**true**) The path and file name of the deployment settings file. |
 
 ### Power Platform Apply Solution Upgrade
+
 Upgrades a solution that has been imported as a holding solution.
+
+#### YAML snippet (Upgrade)
+
+```yml
+steps:
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.apply-solution-upgrade.PowerPlatformApplySolutionUpgrade@0
+  displayName: 'Power Platform Apply Solution Upgrade '
+  inputs:
+    PowerPlatformEnvironment: 'My service connection'
+    SolutionName: 'Contoso_sample_1_0_0_1_managed.zip'
+    AsyncOperation: false
+```
+
+```yml
+steps:
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.apply-solution-upgrade.PowerPlatformApplySolutionUpgrade@0
+  displayName: 'Power Platform Apply Solution Upgrade '
+  inputs:
+    authenticationType: PowerPlatformSPN
+    PowerPlatformSPN: 'Dataverse service connection '
+    SolutionName: 'Contoso_sample_1_0_0_1_managed.zip'
+    AsyncOperation: true
+    MaxAsyncWaitTime: 45
+```
+
+#### Parameters (Upgrade)
 
 | Parameters           | Description        |
 |----------------------|--------------------------|
-| Authentication type | (Required) Select whether to use username/password or service principal authentication. Username/password does not support multi-factor authentication (MFA). |
-| Service connection | (Required) The service connection to the target environment that you want to import the solution into (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type. |
+| `authenticationType`<br/>Type of authentication | (Required for SPN) Specify either **PowerPlatformEnvironment** for a username/password connection or **PowerPlatformSPN** for a Service Principal/client secret connection. |
+| `PowerPlatformEnvironment`<br/>Power Platform environment URL | The service endpoint that you want to import the solution into (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
+| `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint that you want to import the solution into (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
 | Solution name | (Required) The name of the solution to export. Always use the solution *Name* not its *Display Name*. |
-| Apply solution upgrade as asynchronous operation | If selected, the import operation will be performed asynchronously. This is recommended for larger solutions as this task will automatically timeout after 4 minutes otherwise. |
-| Convert solution to managed| If selected, the import operation will convert the solution, if unmanaged, will be converted to managed|
+| `AsyncOperation`<br/>Asynchronous upgrade | If selected (**true**), the upgrade operation will be performed asynchronously. Selecting asynchronous will poll and wait until MaxAsyncWaitTime has been reached. |
+| `MaxAsyncWaitTime`<br/>Maximum wait time | Maximum wait time in minutes for the asynchronous operation; default is 60 min (1 hr), same as Azure DevOps default for tasks.|
+<!-- | Convert solution to managed| If selected, the import operation will convert the solution, if unmanaged, will be converted to managed| -->
+
 > [!NOTE]
 > Variables give you a convenient way to get key bits of data into various parts of your pipeline. See [Use predefined variables](/azure/devops/pipelines/build/variables) for a comprehensive list.
-> You can pre-populate connection reference and environment variables information for the target environment while importing a solution using a deployment settings file. More information: [Pre-populate connection references and environment variables for automated deployments](conn-ref-env-variables-build-tools.md) 
+> You can pre-populate connection reference and environment variables information for the target environment while importing a solution using a deployment settings file.<p/>More information: [Pre-populate connection references and environment variables for automated deployments](conn-ref-env-variables-build-tools.md) 
 
 ### Power Platform Export Solution
 
