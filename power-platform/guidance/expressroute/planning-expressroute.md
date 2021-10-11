@@ -4,7 +4,7 @@ description: "Points to consider before setting up ExpressRoute`"
 author: taiki-yoshida
 ms.service: power-platform
 ms.topic: conceptual
-ms.date: 06/30/2021
+ms.date: 10/08/2021
 ms.subservice: guidance
 ms.author: tayoshi
 ms.reviewer: kathyos
@@ -256,6 +256,7 @@ The following table describes outbound traffic from Microsoft Power Platform ser
 | Web services                      | HTTPS outbound from Microsoft Power Platform services | Microsoft peering<br>Publish web services on public IP addresses that are within ExpressRoute- configured subnets                   | Custom plug-ins and workflow activities can make web service requests to external services      |
 | Exchange Integration: hybrid mode | HTTPS outbound from Microsoft Power Platform services | Microsoft peering<br>Web services would need to be published on public IP addresses that are within ExpressRoute-configured subnets | Exchange Web Services requests from server-side synchronization for hybrid deployments (Microsoft Power Platform services, Exchange on-premises) |
 | Connectors                        | HTTPS inbound from Microsoft Power Platform services  | Microsoft peering     | Requests from Microsoft Power Platform services through the Azure API Management service via connectors using the on-premises data gateway                                  |
+| Azure Relay                       | HTTPS outbound from Microsoft Power Platform services | Microsoft peering<br>Publish web services on public IP addresses that are within ExpressRoute- configured subnets                   | Direct connectivity between Power Automate cloud flows and desktop flows |
 
 ### Inbound traffic (traffic to Microsoft Power Platform services)
 
@@ -284,6 +285,7 @@ services hosted both in Microsoft 365 and Azure.
 | Authentication         | HTTPS outbound to Azure Active Directory (Azure AD)   | Most authentication is done through passive redirects and claims tokens, but some data is synchronized Azure AD directly        |
 | Dataflows              | HTTPS outbound to Azure Data Lake Storage | Provides analytics capabilities and allows access to big data solutions incorporating data from both Microsoft Power Platform services and other sources, in addition to the resulting insight from analytics. |
 | Connectors             | HTTPS outbound to Azure PaaS services                | Connections to various Azure PaaS services             |
+| Desktop flows          | HTTPS outbound to Azure Relay                  | Direct connectivity between Power Automate cloud flows and desktop flows created in Power Automate for Desktop |
 
 The actual connectivity between these services, hosted either in Microsoft or
 customer Azure subscriptions, is handled by Microsoft. ExpressRoute isn't
