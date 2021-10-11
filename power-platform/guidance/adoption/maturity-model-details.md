@@ -26,7 +26,75 @@ The aim of the Adoption Maturity Model is to provide organizations and their par
 
 Find below detailed characteristics and capabilities of an organization in each stage:
 
-<!-- Can this be top vertical aligned? I don't know how to do this in markdown -->
+## Strategy and Vision
+
+| Level | State of Strategy and Vision |
+|----------|-----------|
+| 100: Initial | <ul><li>Innovation driven by Business Areas (bottom up)</li><li>Low-complexity scenarios</li><li>Limited re-use</li><li>Undefined strategy</li></ul> |
+| 200: Repeatable | <ul><li>Common vision between IT and Business</li><li>Demand-management process</li></ul> |
+| 300: Defined | <ul><li>Dedicated Power Platform product owner</li><li>Bottom up and top down innovation</li><li>Defined understanding of Power Platform’s role in your organization’s IT portfolio</li></ul> |
+| 400: Capable | <ul><li>Established [Center of Excellence](https://docs.microsoft.com/power-platform/guidance/adoption/coe) team</a></li><li>Increased delivery efficiency supports rapidly changing business needs</li><li>Business plans shared across departments</li></ul> |
+| 500: Leading | <ul><li>Power Platform is key part of the digital transformation strategy</li><li>Vision and strategy understood by all</li><li>Organization wide initiatives deliver larger scale apps</li><li>Enterprise Architecture decisions include Power Platform capabilities</li></ul> |
+
+## Business Value
+
+| Level | State of Business Value |
+|----------|-----------|
+| 100: Initial | <ul><li>No formal Business Value Assessment</li><li>Undefined targets</li></ul> |
+| 200: Repeatable | <ul><li>No formal Business Value Assessment</li><li>Business cases understood but lacking review</li></ul> |
+| 300: Defined | <ul><li>Key Performance Indicators (KPIs) understood, operationalised, reported on and reviewed against goals</li><li>Ideas with the highest business value are chosen for development</li><li>Business pain points are quantified before project start and compared after finish</li></ul> |
+| 400: Capable | <ul><li>Precise quantitative and qualitative measures used to effectively control, predict and improve business efficiency</li><li>[CoE Starter Kit and Innovation Backlog](https://docs.microsoft.com/power-platform/guidance/coe/use-innovationbacklog) or equivalent tooling for measuring business value adopted</li></ul> |
+| 500: Leading | <ul><li>“Big Picture” analytics visualize business value of Power Platform solutions all-up and per business area</li><li>Advanced dashboard and reporting provide decision-making capabilities and measure business value</li><li>Executive visibility of business value and impact of Power Platform solutions</li></ul> |
+
+## Admin and Governance
+
+| Level | State of Admin and Governance |
+|----------|-----------|
+| 100: Initial | <ul><li>Environments are creatable by all</li><li>No Data Loss Prevention policies (DLP)</li></ul> |
+| 200: Repeatable | <ul><li>[Power Platform Service Admin](https://docs.microsoft.com/power-platform/admin/overview-role-powerapps-admin) role assigned to specific administrators</li><li>Default environment covered by [DLP controls](https://docs.microsoft.com/power-platform/admin/wp-data-loss-prevention)</a></li><li>Tenant Isolation configured</li><li>[CoE Starter Kit - Core](https://docs.microsoft.com/power-platform/guidance/coe/core-components) Module adopted to gain tenant-wide insights of existing usage</li></ul> |
+| 300: Defined | <ul><li>[Defined environment, DLP, and request management strategies](https://docs.microsoft.com/power-platform/guidance/adoption/environment-strategy)</li><li>[Monitoring of app usage](https://docs.microsoft.com/power-platform/guidance/adoption/resource-usage) and adoption</li><li>[Monitoring of new connectors](https://docs.microsoft.com/power-platform/guidance/adoption/new-connectors), to update DLP policies</li><li>[License, capacity and consumption monitoring](https://docs.microsoft.com/power-platform/guidance/adoption/capacity-and-licenses) informs decision making</li><li>[Tiered approach to productivity environments](https://docs.microsoft.com/power-platform/guidance/adoption/environment-strategy) based on maker maturity</li><li>Custom environments are used for specific use cases and ALM scenarios</li></ul> |
+| 400: Capable | <ul><li>Overshared, unused and orphaned resources are identified and appropriate actions are taken</li><li>Reactive governance to automatically gather business and compliance information</li><li>[CoE Starter Kit - Governance Module](https://docs.microsoft.com/power-platform/guidance/coe/governance-components) adopted to gain compliance insights and archive resources</li><li>Telemetry helps identify business-critical apps</li><li>Power Platform Operations team looks after tenant hygiene</li><li>Maker responsibilities are clearly defined and understood and automatically communicated</li></ul> |
+| 500: Leading | <ul><li>Further automation takes place through chatbots embedded in Teams &#8211; through clear risk profiles, tasks are auto-approved or routed through multi-step approval processes (e.g. line manager, information security department, environment or tenant admin)</li><li>Practices that worked in their organization are shared externally at Microsoft or  community events</li></ul> |
+
+## Support
+
+| Level | State of Support |
+|----------|-----------|
+| 100: Initial | <ul><li>Makers support their own apps</li><li>No or limited rules on how processes should be supported by IT and Business stakeholders</li></ul> |
+| 200: Repeatable | <ul><li>Community support</li><li>Some degree of commitment and governance measures to manage solution lifecycle stages</li></ul>|
+| 300: Defined | <ul><li>Support strategy involves Helpdesk</li><li>Defined risk profile dictates the level of support a solution will receive (e.g. IT supported, IT blessed, Maker supported)</li></ul> |
+| 400: Capable | <ul><li>Dedicated Support team</li><li>Continuous improvement plans in line with business strategy</li><li>Clearly understood roles and responsibilities</li></ul>|
+| 500: Leading |<ul><li>Automation of support activities (e.g. change ownership, bot for FAQ)</li><li>Responsibilities and ownership to build and operate solutions are fully understood</li></ul> |
+
+## Nurture and Citizen Makers
+
+| Level | State of Nurture and Citizen Makers |
+|----------|-----------|
+| 100: Initial | <ul><li>Some staff may have attended App in a Day events (Partner or Microsoft delivered)</li><li>Team-based initiatives for nurturing makers</li></ul> |
+| 200: Repeatable | <ul><li>[On-boarding strategy](https://docs.microsoft.com/power-platform/guidance/adoption/onboard-makers) for new makers</li><li>Some staff have participated in a [hackathon](https://docs.microsoft.com/power-platform/guidance/adoption/hackathons)</li><li>Makers become ambassadors across their departments and evangelize the capabilities</li></ul>|
+| 300: Defined |<ul><li>Makers provide insights into business pain points</li><li>[Training and upskilling](https://docs.microsoft.com/power-platform/guidance/adoption/training-strategy) strategy for makers</li><li>Internal [Champions](https://docs.microsoft.com/power-platform/guidance/adoption/champions) community</li><li>[CoE Starter Kit - Nurture Module](https://docs.microsoft.com/power-platform/guidance/coe/nurture-components) adopted</li></ul> |
+| 400: Capable |<ul><li>Regular events for Champions</li><li>Regular hackathons</li><li>Maker assessments and certificates</li><li>Sharing and celebrating [success stories](https://docs.microsoft.com/power-platform/guidance/adoption/show-and-tell)</li><li>Show &amp; Tell sessions</li><li>Adoption campaign</li></ul> |
+| 500: Leading |<ul><li>Large internal community with proven value</li><li>Career path for makers</li><li>Community of mentors</li><li>Common development strategy and goals for Citizen and Pro developers</li></ul> |
+
+## Automation
+
+| Level | State of Automation |
+|----------|-----------|
+| 100: Initial |<ul><li>Processes are largely manual and one-off</li></ul> |
+| 200: Repeatable | <ul><li>Processes are standardized, but implemented manually</li></ul>|
+| 300: Defined | <ul><li>Environment and DLP connector policy requests are automated</li><li>Apps are deployed manually, but using solutions</li><li>Communication about processes and compliance between Admin and Makers is automated</li></ul>|
+| 400: Capable | <ul><li>ALM processes are defined and implemented centrally</li><li>Admin tasks to identify overshared, unused and orphaned resources are largely automated</li><li>Governance tasks to gather compliance and support information are automated</li></ul>|
+| 500: Leading |<ul><li>ALM processes are owned by each Fusion team</li><li>Environment Lifecycle Management is automated</li><li>[CoE Starter Kit – ALM Accelerator](https://docs.microsoft.com/power-platform/guidance/coe/almaccelerator-components) is adopted</li></ul> |
+
+## Fusion Teams
+
+| Level | State of Fusion Teams |
+|----------|-----------|
+| 100: Initial | <ul><li>Teams work independently</li><li>No pro dev use of Power Platform</li></ul>  |
+| 200: Repeatable |
+| 300: Defined |<ul><li>Teams review and ratify each other’s work</li><li>Pro Devs pilot high-value use cases</li></ul>| <ul><li>Teams plan work as a team, but operate independently</li><li>Teams manage source control and app lifecycles</li><li>[Standard libraries, custom connectors and components](https://docs.microsoft.com/power-platform/guidance/adoption/reusable) to be consumed by makers</li></ul> |
+| 400: Capable | <ul><li>Cross-functional teams plan and execute work jointly, including makers, testers and operational teams.</li><li>Collaborative planning for infrastructure and change enablement</li><li>Use of Common Data Models to aid data reuse</li></ul>|
+| 500: Leading |<ul><li>Teams form seamlessly to accommodate cross functional skills</li><li>Common development strategy and goals for Citizen and Pro developers needed for new projects</li></ul>  |
 
 |  |LEVEL 100 - INITIAL   |LEVEL 200 - REPEATABLE|LEVEL 300 - DEFINED|LEVEL 400 - CAPABLE|LEVEL 500 - EFFICIENT|
 |----------|-----------|------------|------------|------------|------------|
