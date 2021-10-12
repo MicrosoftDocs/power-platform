@@ -31,9 +31,15 @@ Champions emerge as leaders of the community of practice who:
 - Communicate well with colleagues.
 
 > [!IMPORTANT]
-> Someone very well may be acting in the role of a champion without even knowing it, and without formal recognition. The COE should always be on the lookout for champions. COE members should actively monitor the discussion channel to see who is helpful. They should deliberately encourage and support potential champions, and when appropriate, invite them into a champions network to make the recognition formal.
+> To add an element of fun, some organizations refer to their champions network as special agents or rangers. Microsoft has an internal community called Power Platform Ninjas.
+
+Often, people aren't directly asked to become champions. Commonly, champions are identified by the Center of Excellence (CoE) and recognized for the activities they're already doing, such as frequently answering questions in an internal discussion channel or participating in lunch and learns.
+
+> [!IMPORTANT]
+> Someone very well may be acting in the role of a champion without even knowing it, and without formal recognition. The Center of Excellence should always be on the lookout for champions. CoE members should actively monitor the discussion channel to see who is helpful. They should deliberately encourage and support potential champions, and when appropriate, invite them into a champions network to make the recognition formal.
 
 ## How will champions support you?
+
 Champions will evangelize and help train their teams on the new ways of working. They build awareness, understanding, and engagement throughout the community.
 
 They will:
@@ -45,13 +51,12 @@ They will:
 - Provide feedback to the CoE team and sponsors.
 
 ## Find your champions with the right tools
-<!--[Kathy says: Manuela, do we need this? It was at the start of the previous article but it's not in the "Find" section so I wasn't sure.] Check analytics in the [Power Platform admin center](https://aka.ms/ppac) or make use of the [Center of Excellence Starter Kit](../coe/starter-kit.md) dashboard to find your makers and learn about your app usage.-->
 
 If you have Microsoft 365 in your organization, it’s likely some individuals already have discovered Power Apps through exploration and Power Apps popping up in Microsoft Teams, SharePoint, and OneDrive.  
 
-The out-of-the-box [Power Automate](../../admin/analytics-flow.md) and [Power Apps](../../admin/analytics-powerapps.md) analytics can help you identify top makers in your organization.
+Check the [tenant-level analytics](/power-platform/admin/tenant-level-analytics) in the [Power Platform admin center](https://aka.ms/ppac) or make use of the [Center of Excellence Starter Kit](../coe/starter-kit.md) dashboard to find your makers and learn about your app usage.
 
-In addition to that, the dashboard part of the [CoE Starter Kit](../coe/starter-kit.md) can give you a tenant-wide overview of makers in your environment, and what connectors they're using to create apps. You can see your top app and flow makers, what departments they are from, and identify trends over time.
+The dashboard part of the [CoE Starter Kit](../coe/starter-kit.md) can give you a tenant-wide overview of makers in your environment, and what connectors they're using to create apps and flows. You can see your top app and flow makers, what departments they are from, and identify trends over time.
 
 ![CoE Starter Kit maker dashboard.](../coe/media/pb-10.png "CoE Starter Kit Maker Dashboard")
 
@@ -63,6 +68,7 @@ You can see how many different connectors your makers are using and learn who is
  > Even if your organization hasn't adopted Power Platform yet, it’s likely you already have a good idea of who your champions will be. They are your Excel, Access, and SharePoint whizzes; or maybe they’re the troublemakers pushing the boundaries; or the ones who are first in line when there’s something new to learn. They question, they query, they encourage. Train those people. Make them Power Platform champions and help them train others—champions aren't only passionate about what they do, but are also excited to evangelize and help their peers to learn more effective ways of working.
 
 ## Create a champions program
+
 Considerations and key actions you can take to initiate, grow, and sustain your champions network include:
 
 ### Plan your program

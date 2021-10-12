@@ -37,7 +37,7 @@ In the end, nurture means connecting the dots and creating a whole that is bette
       <img src="media/i_share.svg" alt="Share icon" width="80"/><br><br>**Community** <br /> 
 
 > [!div class="checklist"]
-> * [Identify Champions](champions.md)
+> * [Find and support champions in your organization](champions.md)
 > * [On-boarding new makers](onboard-makers.md)
 > * [Create an internal wiki and community](wiki-community.md)
 > * [Share your own templates and reusable components](reusable.md)
