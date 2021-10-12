@@ -4,7 +4,7 @@ description: In this quickstart, you learn how to create a data loss prevention 
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 09/13/2021
+ms.date: 10/11/2021
 author: jimholtz
 ms.subservice: admin
 ms.author: jimholtz
@@ -39,6 +39,9 @@ We refer to these roles throughout this article as *tenant admins*. More informa
 ### Environment-level
 
 To follow the steps for environment-level policies, you need to have Power Apps Environment Admin permissions. For environments with a Dataverse database, you need to be assigned the System Administrator role instead. 
+
+> [!NOTE] 
+> If using the **SingleEnvironment** EnvironmentType parameter when using PowerShell to create a DLP policy, the user account used to create the policy **MUST** have **Environment-level** and **MUST NOT** have **Tenant-level** permissions as described above, or a Bad Request error will be returned and the policy will not be created.
 
 ## Find and view DLP policies
 
