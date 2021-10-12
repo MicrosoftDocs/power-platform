@@ -3,6 +3,7 @@ title: "View and edit managed properties in solutions"
 description: "Learn how to view and edit managed properties in solutions when implementing application lifecycle management (ALM)."
 keywords: 
 author: Mattp123
+ms.subservice: alm
 ms.author: matp
 manager: kvivek
 ms.custom: ""
@@ -42,7 +43,7 @@ contains the components, you can view&mdash;but not change&mdash;the managed pro
 3.	From the list of components in the solution, select **…** next to the entity that you want to view the managed properties, and then select **Managed properties**. 
 
     > [!div class="mx-imgBorder"] 
-    > ![Entity managed properties command](media/entity-managed-properties.png "Entity managed properties command")
+    > ![Entity managed properties command.](media/entity-managed-properties.png "Entity managed properties command")
 
     The managed properties page is displayed. 
 
@@ -61,7 +62,7 @@ Entities have more managed properties than any other type of solution component.
 |**New views can be created** |Whether new views can be created for the entity.|
 |**Can Change Hierarchical Relationship**|Whether Hierarchical Relationships settings can be changed. More information: [Define and query hierarchically related data](/powerapps/maker/common-data-service/define-query-hierarchical-data)|
 |**Can Change Tracking Be Enabled** |Whether the entity **Change Tracking** property can be changed.|
-|**Can Enable sync to external search index** |Whether the entity can be configured to enable relevance search. More information: [Configure Relevance Search to improve search results and performance](../admin/configure-relevance-search-organization.md) |
+|**Can Enable sync to external search index** |Whether the entity can be configured to enable Dataverse search. More information: [Configure Dataverse search to improve search results and performance](../admin/configure-relevance-search-organization.md) |
 
 ## View and edit field managed properties
 Next to a custom field in a solution select **…** and then select **Managed properties**.

@@ -6,6 +6,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/04/2020
+ms.subservice: admin
 ms.author: mkaur
 search.audienceType: 
   - admin
@@ -36,7 +37,7 @@ You can enable folder-level tracking for [!INCLUDE[pn_Microsoft_Exchange](../inc
   
 5. Configure other tracking options on this page, and then click **OK**.  
   
-Once you've enabled folder-level tracking, users will need to configure folder-tracking rules with Settings (![Gear button](../admin/media/selection-rule-gear.png "Gear button")) > **Options** > **Email** > **Configure Folder Tracking Rules**.  
+Once you've enabled folder-level tracking, users will need to configure folder-tracking rules with Settings (![Gear button.](../admin/media/selection-rule-gear.png "Gear button")) > **Options** > **Email** > **Configure Folder Tracking Rules**.  
   
 ## Some important points about folder-level tracking  
   

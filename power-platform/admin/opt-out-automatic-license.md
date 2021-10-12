@@ -2,12 +2,13 @@
 title: "Opt-out of automatic license-based user roles management  | MicrosoftDocs"
 description: Turn off automatically adding and removing user security roles based on the licenses the user has. 
 author: paulliew
+ms.subservice: admin
 ms.author: paulliew
 ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/23/2021
+ms.date: 09/28/2021
 search.audienceType: 
   - admin
 search.app:
@@ -34,4 +35,7 @@ Submit a [support ticket](get-help-support.md) requesting to turn off the automa
 ## How do users get these roles that used to be automatically added or removed once opted-out?
 
 Administrators can add and remove the appropriate roles to users through the Power Platform admin center.
+
+## Does this impact the "Default" environment too?
+For the "Default" environment, Environment Maker and Basic User roles will continue to be automatically assigned to users even after opt-out.
 

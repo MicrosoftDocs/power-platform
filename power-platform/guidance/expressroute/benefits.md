@@ -5,6 +5,7 @@ author: taiki-yoshida
 ms.service: power-platform
 ms.topic: conceptual
 ms.date: 06/30/2021
+ms.subservice: guidance
 ms.author: tayoshi
 ms.reviewer: kathyos
 search.app: 
@@ -37,7 +38,7 @@ via the public internet to cloud services might not be acceptable.
 
 This is rare, however. Most regulations don't specify that the internet can't
 be used, simply that data must be protected in transit&mdash;typically by
-encryption at the level of 256-bit Advanced Encryption Standard, which the SSL encryption used
+encryption at the level of 256-bit Advanced Encryption Standard, which the TLS encryption used
 by Microsoft Power Platform meets.
 
 ### GDPR

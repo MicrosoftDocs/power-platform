@@ -1,12 +1,13 @@
 ---
 title: Requests limits and allocations | Microsoft Docs
 description: Requests limits and allocations
-author: dileepsinghmicrosoft
+author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/25/2021
-ms.author: dileeps
+ms.date: 06/30/2021
+ms.subservice: admin
+ms.author: jimholtz
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
@@ -64,7 +65,7 @@ If a user has multiple licenses allocated within the same product line, for exam
 
 ## Power Apps and Power Automate capacity add-on
 
-A Power Apps and Power Automate capacity add-on allows customers to increase the limits for a given user. These will be assignable to any user who has a Power Apps or Power Automate license and a Dynamics 365 license. 
+A Power Apps and Power Automate capacity add-on allows customers to increase the limits for a given user. These will be assignable to any user who has a Power Apps, Power Automate, or applicable Dynamics 365 license.
 
 Each capacity add-on raises the request limits by another 10,000 per 24 hours. Multiple capacity add-ons can also be assigned to the same user.
 
@@ -76,12 +77,12 @@ Each capacity add-on raises the request limits by another 10,000 per 24 hours. M
 Dataverse enables you to have identities that do not require any user license to interact with the service. There are four types of
 these users:
 
--   [Application users](create-users-assign-online-security-roles.md#create-an-application-user)
--   [Non-interactive users](create-users-assign-online-security-roles.md#create-a-non-interactive-user-account)
--   [Administrative users](create-users-assign-online-security-roles.md#create-an-administrative-user-account)
+-   [Application users](create-users.md#create-an-application-user)
+-   [Non-interactive users](create-users.md#create-a-non-interactive-user-account)
+-   [Administrative users](create-users.md#create-an-administrative-user-account)
 -   [SYSTEM user](/dynamics365/customer-engagement/web-api/systemuser?view=dynamics-ce-odata-9#operations)
 
-Additionally there are special free (\$0) licenses, which are used to interact with Dynamics 365 applications like Dynamics 365 Marketing. See [How Marketing is licensed](/dynamics365/customer-engagement/marketing/purchase-setup#how-marketing-is-licensed).
+Additionally there are special free (\$0) licenses, which are used to interact with Dynamics 365 applications like Dynamics 365 Marketing. See [How Marketing is licensed](/dynamics365/customer-engagement/marketing/purchase-setup#user-and-portal-licensing).
 
 For these identities, every tenant will get base request capacity per tenant that can only be used by these users and not by users with standard licenses.
 
@@ -112,7 +113,7 @@ Apart from the daily API request limit, there are other service protection limit
 Review the following resources for information about *current* service protection limits for each service:
 
 - [Dataverse  limits](/powerapps/developer/common-data-service/api-limits): applicable for model-driven apps and customer engagement apps (such as Dynamics 365 Sales and Customer Service), Power Apps, and Power Automate connecting to Dataverse/customer engagement apps
-- [Power Automate limits](/flow/limits-and-config): applicable for automated, scheduled, and instant flows
+- [Power Automate limits](/power-automate/limits-and-config): applicable for automated, scheduled, and instant flows
 - [Limits in connectors](/connectors/): applicable for Power Automate and Power Apps
 
 ## Frequently asked questions
@@ -133,7 +134,7 @@ When users exceed their limits, administrators can see this in the admin center 
 
 Users won't be blocked from using an app or flow for occasional and reasonable overages at this point in time. However, if a user or flow exceeds the limits consistently for an extended period of time (more than 14 days), that user may be disabled or flow turned off.
 
-In addition, there are other applicable limits for [Dataverse](/powerapps/developer/common-data-service/api-limits), [Power Automate](/flow/limits-and-config), and [Connectors](/connectors/) that might directly impact your users, and those limits may not have any affordance for occasional or reasonable overages. Flow owners will be notified via email if their flow is failing or encountering such limits, so be sure to monitor email for notifications about such flows.
+In addition, there are other applicable limits for [Dataverse](/powerapps/developer/common-data-service/api-limits), [Power Automate](/power-automate/limits-and-config), and [Connectors](/connectors/) that might directly impact your users, and those limits may not have any affordance for occasional or reasonable overages. Flow owners will be notified via email if their flow is failing or encountering such limits, so be sure to monitor email for notifications about such flows.
 
 ### Will there be a transition period for existing customers?
 

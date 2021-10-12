@@ -8,6 +8,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/04/2020
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -53,7 +54,7 @@ You can purchase Power Apps subscriptions for your organization from the [Micros
 3. In the search box, enter *trial* and then select the magnifying glass.
 
    > [!div class="mx-imgBorder"] 
-   > ![Search for trial](media/purchase-services-search-trial.png "Search for trial")
+   > ![Search for trial.](media/purchase-services-search-trial.png "Search for trial")
 
 4. Choose a trial, and then select **Get free trial**. Proceed through the order confirmation.
 

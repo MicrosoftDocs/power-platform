@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.topic: conceptual
 ms.reviewer: nabuthuk
 ms.date: 02/26/2021
+ms.subservice: power-fx
 ms.author: gregli
 search.audienceType: 
   - maker
@@ -34,7 +35,7 @@ Let's review how Excel works. A cell can contain a value, such as a number or a 
 
 In the following example, cell **A3** is set to the formula **A1+A2**. If **A1** or **A2** changes, **A3** automatically recalculates to reflect the change. This behavior requires no coding outside of the formula itself.
 
-![Animation of recalculating the sum of two numbers in Excel](media/variables/excel-recalc.gif)
+![Animation of recalculating the sum of two numbers in Excel.](media/variables/excel-recalc.gif)
 
 Excel doesn't have variables. The value of a cell that contains a formula changes based on its input, but there's no way to remember the result of a formula and store it in a cell or anywhere else. If you change a cell's value, the entire spreadsheet may change, and any previously calculated values are lost. An Excel user can copy and paste cells, but that's under the user's manual control and isn't possible with formulas.
 
@@ -44,11 +45,11 @@ Logic that you create in Power Fx behaves very much like Excel. Instead of updat
 
 For example in Power Apps, you can replicate the Excel behavior in an app by adding a **[Label](/powerapps/maker/canvas-apps/controls/control-text-input)** control, named **Label1**, and two **[Text input](/powerapps/maker/canvas-apps/controls/control-text-input)** controls, named **TextInput1** and **TextInput2**. If you then set the **[Text](/powerapps/maker/canvas-apps/controls/control-text-input)** property of **Label1** to **TextInput1 + TextInput2**, it will always show the sum of whatever numbers are in **TextInput1** and **TextInput2** automatically.
 
-![Calculating the sum of two numbers in Power Fx](media/variables/recalc1.png)
+![Calculating the sum of two numbers in Power Fx.](media/variables/recalc1.png)
 
 Notice that the **Label1** control is selected, showing its **[Text](/powerapps/maker/canvas-apps/controls/properties-core)** formula in the formula bar at the top of the screen. Here we find the formula **TextInput1 + TextInput2**. This formula creates a dependency between these controls, just as dependencies are created between cells in an Excel workbook.  Let's change the value of **TextInput1**:
 
-![Animation of calculating the sum of two numbers in Power Fx](media/variables/recalc2.gif)
+![Animation of calculating the sum of two numbers in Power Fx.](media/variables/recalc2.gif)
 
 The formula for **Label1** has been automatically recalculated, showing the new value.
 
@@ -56,7 +57,7 @@ In Power Fx, you can use formulas to determine not only the primary value of a c
 
 `If( Value(Label1.Text) < 0, Red, Black )`
 
-![Animation of conditional formatting](media/variables/recalc-color.gif)
+![Animation of conditional formatting.](media/variables/recalc-color.gif)
 
 You can use formulas for a wide variety of scenarios:
 
@@ -80,9 +81,9 @@ Let's change our simple adder to act like an old-fashioned adding machine, with 
 
 | Display | Description |
 |----|----|
-|  ![App with a Text input control, a label, and two buttons](media/variables/button-changes-state-1.png) | When the app starts, the running total is 0.<br><br>The red dot represents the user's finger in the text-input box, where the user enters **77**. |
-| ![The Text input control contains 77, and the Add button is being pressed](media/variables/button-changes-state-2.png) | The user selects the **Add** button. |
-| ![The total is 77, and another 77 is being added to it](media/variables/button-changes-state-3.png) | 77 is added to the running total.<br><br>The user selects the **Add** button again. |
+|  ![App with a Text input control, a label, and two buttons.](media/variables/button-changes-state-1.png) | When the app starts, the running total is 0.<br><br>The red dot represents the user's finger in the text-input box, where the user enters **77**. |
+| ![The Text input control contains 77, and the Add button is being pressed.](media/variables/button-changes-state-2.png) | The user selects the **Add** button. |
+| ![The total is 77, and another 77 is being added to it.](media/variables/button-changes-state-3.png) | 77 is added to the running total.<br><br>The user selects the **Add** button again. |
 | ![The total is 154 before it's cleared.](media/variables/button-changes-state-4.png) | 77 is again added to the running total, resulting in 154.<br><br>The user selects the **Clear** button. |
 | ![The total is cleared.](media/variables/button-changes-state-5.png) | The running total is reset to 0. |
 
@@ -118,31 +119,31 @@ Let's rebuild our adding machine by using a global variable:
 
     The first time that a user selects the **Add** button and **[Set](/powerapps/maker/canvas-apps/functions/function-set)** runs, **RunningTotal** is set to the value **RunningTotal + TextInput1**.
 
-    ![OnSelect property of the Add button is set to Set function](media/variables/global-variable-1.png)
+    ![OnSelect property of the Add button is set to Set function.](media/variables/global-variable-1.png)
 
 4. To set the running total to **0** whenever the user selects the **Clear** button, set its **OnSelect** property to this formula:
 
     **Set( RunningTotal, 0 )**
 
-    ![OnSelect property of the Clear button is set to Set function](media/variables/global-variable-2.png)
+    ![OnSelect property of the Clear button is set to Set function.](media/variables/global-variable-2.png)
 
 5. Add a **Label** control, and set its **Text** property to **RunningTotal**.
 
     This formula will automatically be recalculated and show the user the value of **RunningTotal** as it changes based on the buttons that the user selects.
 
-    ![Text property of the label is set to the name of the variable](media/variables/global-variable-3.png)
+    ![Text property of the label is set to the name of the variable.](media/variables/global-variable-3.png)
 
 6. Preview the app, and we have our adding machine as described above. Enter a number in the text box and press the **Add** button a few times. When ready, return to the authoring experience using the Esc key.
 
-    ![Text-input control contains a value, and the label contains the running total](media/variables/global-variable-4.png)
+    ![Text-input control contains a value, and the label contains the running total.](media/variables/global-variable-4.png)
 
 7. To show the global variable's value, select the **File** menu, and select **Variables** in the left-hand pane.
 
-    ![Variables option in the File menu](media/variables/global-variable-file-1.png)
+    ![Variables option in the File menu.](media/variables/global-variable-file-1.png)
 
 8. To show all the places where the variable is defined and used, select it.
 
-    ![List of location where variable is used](media/variables/global-variable-file-2.png)
+    ![List of location where variable is used.](media/variables/global-variable-file-2.png)
 
 ## Types of variables
 
@@ -215,7 +216,7 @@ Let's rebuild our adding machine by using a context variable:
 
     The first time that the user selects the **Add** button and **[UpdateContext](/powerapps/maker/canvas-apps/functions/function-updatecontext)** runs, **RunningTotal** is set to the value **RunningTotal + TextInput1**.
 
-    ![OnSelect property of the Add button](media/variables/context-variable-1.png "OnSelect property of the Add button")
+    ![OnSelect property of the Add button.](media/variables/context-variable-1.png "OnSelect property of the Add button")
 
 4. To set the running total to **0** whenever the user selects the **Clear** button, set its **OnSelect** property to this formula:
 
@@ -223,35 +224,35 @@ Let's rebuild our adding machine by using a context variable:
 
     Again, **[UpdateContext](/powerapps/maker/canvas-apps/functions/function-updatecontext)** is used with the formula **UpdateContext( { RunningTotal: 0 } )**.
 
-    ![OnSelect property of the Clear button](media/variables/context-variable-2.png "OnSelect property of the Clear button")
+    ![OnSelect property of the Clear button.](media/variables/context-variable-2.png "OnSelect property of the Clear button")
 
 5. Add a **Label** control, and set its **Text** property to **RunningTotal**.
 
     This formula will automatically be recalculated and show the user the value of **RunningTotal** as it changes based on the buttons that the user selects.
 
-    ![Text property of label](media/variables/context-variable-3.png "Text property of label")
+    ![Text property of label.](media/variables/context-variable-3.png "Text property of label")
 
 6. Preview the app and we have our adding machine as described above. Enter a number in the text box and press the **Add** button a few times. When ready, return to the authoring experience using the Esc key.
 
-    ![Text-input control shows a value, and label shows running total](media/variables/context-variable-4.png "Text-input control shows a value, and label shows running total")
+    ![Text-input control shows a value, and label shows running total.](media/variables/context-variable-4.png "Text-input control shows a value, and label shows running total")
 
 7. You can set the value of a context variable while navigating to a screen. This is useful for passing "context" or "parameters" from one screen to another. To demonstrate this technique, insert a screen, insert a button, and set its **OnSelect** property to this formula:
 
     **Navigate( Screen1, None, { RunningTotal: -1000 } )**
 
-    ![OnSelect property of a button](media/variables/context-variable-5.png "OnSelect property of a button")
+    ![OnSelect property of a button.](media/variables/context-variable-5.png "OnSelect property of a button")
 
     Hold down the Alt key while you select this button to both show **Screen1** and set the context variable **RunningTotal** to -1000.
 
-    ![Screen1 is open](media/variables/context-variable-6.png "Screen1 is open")
+    ![Screen1 is open.](media/variables/context-variable-6.png "Screen1 is open")
 
 8. To show the value of the context variable, select the **File** menu, and then select **Variables** in the left-hand pane.
 
-    ![Variables option on the File menu](media/variables/context-variable-file-1.png "Variables option on the File menu")
+    ![Variables option on the File menu.](media/variables/context-variable-file-1.png "Variables option on the File menu")
 
 9. To show where the context variable is defined and used, select it.
 
-    ![List of where a variable is used](media/variables/context-variable-file-2.png "List of where a variable is used")
+    ![List of where a variable is used.](media/variables/context-variable-file-2.png "List of where a variable is used")
 
 ## Use a collection
 
@@ -277,23 +278,23 @@ Let's recreate our adding machine by using a collection:
 
     When this formula runs, it adds the new value to the end of the collection. Because we're adding a single value, **Collect** automatically places it in a single-column table, and the column's name is **Value**, which you'll use later.
 
-    ![OnSelect property Add button](media/variables/papertape-1.png "OnSelect property Add button")
+    ![OnSelect property Add button.](media/variables/papertape-1.png "OnSelect property Add button")
 
 4. To clear the paper tape when the user selects the **Clear** button, set its **[OnSelect](/powerapps/maker/canvas-apps/controls/properties-core)** property to this formula:
 
     **Clear( PaperTape )**
 
-    ![OnSelect property Clear button](media/variables/papertape-2.png "OnSelect property Clear button")
+    ![OnSelect property Clear button.](media/variables/papertape-2.png "OnSelect property Clear button")
 
 5. To display the running total, add a label, and set its **[Text](/powerapps/maker/canvas-apps/controls/properties-core)** property to this formula:
 
     **Sum( PaperTape, Value )**
 
-    ![Text property label](media/variables/papertape-3.png "Text property label")
+    ![Text property label.](media/variables/papertape-3.png "Text property label")
 
 6. To run the adding machine, press F5 to open Preview, enter numbers in the text-input control, and select buttons.
 
-    ![The Text input control shows a value, and the label show the running total](media/variables/papertape-run-1.png "The Text input control shows a value, and the label show the running total")
+    ![The Text input control shows a value, and the label show the running total.](media/variables/papertape-run-1.png "The Text input control shows a value, and the label show the running total")
 
 7. To return to the default workspace, press the Esc key.
 
@@ -303,11 +304,11 @@ Let's recreate our adding machine by using a collection:
 
     In the right-hand pane, select **Edit fields** and then select **Add field**, select **Value** column and then select **Add** to show it.
 
-    ![Data table that shows the values added to the collection](media/variables/papertape-4.png "Data table that shows the values added to the collection")
+    ![Data table that shows the values added to the collection.](media/variables/papertape-4.png "Data table that shows the values added to the collection")
 
 9. To see the values in your collection, select **Collections** on the **File** menu.
 
-    ![Preview of the PaperTape collection](media/variables/papertape-file.png "Preview of the PaperTape collection")
+    ![Preview of the PaperTape collection.](media/variables/papertape-file.png "Preview of the PaperTape collection")
 
 10. To store and retrieve your collection, add two additional button controls, and set their **Text** properties to **Load** and **Save**. Set the **OnSelect** property of the **Load** button to this formula:
 
@@ -315,13 +316,13 @@ Let's recreate our adding machine by using a collection:
 
      You need to clear the collection first because **LoadData** will append the stored values to the end of the collection.
 
-     ![OnSelect property  Load button](media/variables/papertape-5.png "OnSelect property Load button")
+     ![OnSelect property  Load button.](media/variables/papertape-5.png "OnSelect property Load button")
 
 11. Set the **OnSelect** property of the **Save** button to this formula:
 
      **SaveData( PaperTape, "StoredPaperTape" )**
 
-     ![OnSelect property Save button](media/variables/papertape-6.png "OnSelect property Save button")
+     ![OnSelect property Save button.](media/variables/papertape-6.png "OnSelect property Save button")
 
 12. Preview again by pressing the F5 key, enter numbers in the text-input control, and select buttons. Select the **Save** button. Close and reload the app, and select the **Load** button to reload your collection.
 

@@ -35,7 +35,7 @@ You can display the topic details page by selecting the **Detail** link in one o
 * [Resolution rate drivers (Summary page)](analytics-summary.md#resolution-rate-drivers-chart)
 * [Customer satisfaction drivers (Customer Satisfaction page)](analytics-CSAT.md#customer-satisfaction-drivers-chart)
 
-![Topic details link](media/topic-details-link.png)
+![Topic details link.](media/topic-details-link.png)
 
 >[!IMPORTANT]
 >You need a license for [Dynamics 365 Customer Service Insights](/dynamics365/ai/customer-service-insights/licensing-case-capacity) to access the topic details charts.
@@ -43,11 +43,11 @@ You can display the topic details page by selecting the **Detail** link in one o
 
 The topic details page can also be displayed by opening an individual topic from the Topics page and selecting **Analytics** at the top of the page.
 
-![From the Topic details page, select the Analytics tab](media/analytics-topics-details.png)
+![From the Topic details page, select the Analytics tab.](media/analytics-topics-details.png)
 
 You can also hover over each topic in the Topics page and select the **Go to analytics** icon. 
 
-![Hovering shows the Go to analytics icon](media/analytics-topics.png)
+![Hovering shows the Go to analytics icon.](media/analytics-topics.png)
 
 The topic details page includes a variety of charts with graphical views of a topic's key performance indicators. For information about each chart, see:
 
@@ -67,7 +67,7 @@ The Topic summary charts summarize the topic's performance indicators for the sp
 Description | Details
 ----------- | -------
 Total sessions | The total number of sessions within the specified time period.
-Average CSAT | The average CSAT survey score for the specified time period.
+Average CSAT | The average customer satisfaction (CSAT) survey score for the specified time period.
 Resolution rate | The percentage of engaged sessions that are resolved. A resolved session is an engaged session in which the user receives an end-of-session survey and either does not respond or responds *Yes*.
 Escalation rate | The percentage of engaged sessions that are escalated. An escalated session is an engaged session that is escalated to a human agent.
 Abandon rate | The percentage of engaged sessions that are abandoned. An abandoned session is an engaged session that is neither resolved nor escalated after one hour from the beginning of the session.

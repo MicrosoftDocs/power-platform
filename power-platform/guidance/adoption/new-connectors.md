@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/09/2020
+ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -31,7 +32,7 @@ Templates in Power Automate are available to help you get notifications when new
 
 Configure those flows in your environment to receive regular notifications about new connectors.
 
-Evaluate the impact of a new connector and choose to allow business data to be shared with the new service by moving the connector to the business data group in your DLP policies. Depending on the [default data group](../../admin/wp-data-loss-prevention.md#default-data-group-for-new-connectors) for new connectors set on each DLP policy, in addition to your Environment and DLP strategy in your tenant, you'll have to update multiple policies and consider the impact of use cases and makers in each environment.
+Evaluate the impact of a new connector and choose to allow business data to be shared with the new service by moving the connector to the business data group in your DLP policies. Depending on the [default data group](../../admin/dlp-connector-classification.md#default-data-group-for-new-connectors) for new connectors set on each DLP policy, in addition to your Environment and DLP strategy in your tenant, you'll have to update multiple policies and consider the impact of use cases and makers in each environment.  
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

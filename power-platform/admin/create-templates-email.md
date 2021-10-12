@@ -6,6 +6,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/04/2020
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -29,7 +30,7 @@ An email template is attached to an email activity after the activity is created
   
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
   
-2. In the Microosft Power Platform admin center, select an environment. 
+2. In the Microsoft Power Platform admin center, select an environment. 
 
 3. Select **Settings** > **Templates** > **Email templates**.  
   
@@ -48,13 +49,13 @@ An email template is attached to an email activity after the activity is created
   
    > [!TIP]
    > - Although you cannot insert images or HTML directly into email messages or email templates, you can use the copy feature in [!INCLUDE[pn_Internet_Explorer](../includes/pn-internet-explorer.md)] to copy an image from a website and paste it into the email message or email template.  The image is available as long as the website is accessible.  
-   > - To include a hyperlink in an email template, type the URL including the http://, for example, http://contoso.com. Do not include a period or comma or a space after the URL or the link will break. Select the link text and select **Make this a Hyperlink** (![Make this a Hyperlink](../admin/media/make-this-hyperlink.png "Make this a Hyperlink")).  
+   > - To include a hyperlink in an email template, type the URL including the http://, for example, http://contoso.com. Do not include a period or comma or a space after the URL or the link will break. Select the link text and select **Make this a Hyperlink** (![Make this a Hyperlink.](../admin/media/make-this-hyperlink.png "Make this a Hyperlink")).  
    > 
    >    A link is automatically added to the  URL and the text is underlined and changed to blue.  
    > - To  include data fields in a hyperlink:  
    > 
    >   1. Select the link text and data fields. For example: http://contoso.com/q?{!User : City;}  
-   >   2. Select **Make this a Hyperlink** (![Make this a Hyperlink](../admin/media/make-this-hyperlink.png "Make this a Hyperlink")).  
+   >   2. Select **Make this a Hyperlink** (![Make this a Hyperlink.](../admin/media/make-this-hyperlink.png "Make this a Hyperlink")).  
    > 
    >      The text and data fields will be converted to a hyperlink. For example: \<a href="https://contoso.com/q?{!User : City;}">http://contoso.com/q?{!User : City;}\</a>.  
    > 
@@ -76,7 +77,7 @@ An email template is attached to an email activity after the activity is created
 13. Select **Save** or **Save and Close**.  
   
 > [!NOTE]
-> - To change a shared template to a personal one or a personal template to a shared one, on the template form, on the **Actions**![action](../admin/media/action-button.png "action") menu, select **Revert to Personal Template**, or select **Make Template Available to Organization**.  
+> - To change a shared template to a personal one or a personal template to a shared one, on the template form, on the **Actions**![action.](../admin/media/action-button.png "action") menu, select **Revert to Personal Template**, or select **Make Template Available to Organization**.  
 > - If you use an email template as a signature in another template, insert the signature template first. Otherwise, the Subject line will be overwritten.  
 > - If you need to back up your templates, or export them for use in a different implementation, you can export them as part of exporting customizations. More information: [Export your customizations as a solution](/powerapps/maker/model-driven-apps/distribute-model-driven-app).  
   

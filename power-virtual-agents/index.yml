@@ -13,6 +13,7 @@ metadata:
   author: iaanw #Required; your GitHub user alias, with correct capitalization.
   ms.author: iawilt #Required; microsoft alias of author; optional team alias.
   ms.date: 09/22/2020 #Required; mm/dd/yyyy format.
+  ms.custom: intro-internal
   hide_bc: false
 
 
@@ -155,5 +156,5 @@ additionalContent:
         url: /dynamics365/
       # Card
       - title: Microsoft Azure
-        summary: "Ever-expanding set of cloud computing services to help your organization meet it's business challenges"
+        summary: "Ever-expanding set of cloud computing services to help your organization meet its business challenges"
         url: /azure

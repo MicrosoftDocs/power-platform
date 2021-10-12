@@ -2,6 +2,7 @@
 title: "How to reset a password"
 description: "If a user loses a Power Platform password, certain administrators can reset it. This page directs you to step-by-step instructions for resetting a password."
 author: jimholtz
+ms.subservice: admin
 ms.author: jimholtz
 ms.reviewer: jimholtz
 ms.custom: "admin-security"

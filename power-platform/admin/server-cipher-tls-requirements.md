@@ -2,6 +2,7 @@
 title: "Server cipher suites and TLS requirements  | MicrosoftDocs"
 description: Power Platform settings
 author: paulliew
+ms.subservice: admin
 ms.author: paulliew
 ms.reviewer: jimholtz
 ms.service: power-platform

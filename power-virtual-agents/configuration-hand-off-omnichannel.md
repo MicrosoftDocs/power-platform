@@ -38,12 +38,12 @@ Sign in to the Power Virtual Agents bot you want to connect to Omnichannel for C
 
 1. Select **Settings**, and then **Transfer to agent**.
     
-    ![IMAGE SHOWING SETTINGS PANEL OPENED](media/handoff-settings.png)
+    ![IMAGE SHOWING SETTINGS PANEL OPENED.](media/handoff-settings.png)
 
 
 1. Select the **Dynamics 365 Omnichannel for Customer Service** tile.
 
-    ![IMAGE SHOWING OC TILE IN SETTINGS](media/handoff-oc-tile.png)
+    ![IMAGE SHOWING OC TILE IN SETTINGS.](media/handoff-oc-tile.png)
 
 
 1. To acknowledge the privacy policy, select **Next**. 

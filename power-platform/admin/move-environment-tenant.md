@@ -2,7 +2,7 @@
 title: "Migrate an environment to a different tenant"
 description: "Learn about the impact of moving an environment from one tenant to another. Review the prerequisites and considerations before submitting a request." 
 ms.custom: ""
-ms.date: 02/04/2021
+ms.date: 06/16/2021
 ms.service: power-platform
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -10,6 +10,7 @@ ms.topic: "article"
 applies_to: 
   - "Dynamics 365 (online)"
 author: jimholtz
+ms.subservice: admin
 ms.author: jimholtz
 ms.reviewer: ""
 ms.assetid: 
@@ -34,6 +35,7 @@ There are no user-interface changes or version changes as part of this move. You
 > 
 > You might need to reconfigure some applications and settings after tenant to tenant migration such as Microsoft Dynamics 365 for Outlook, server-side sync, SharePoint integration, etc.
 >
+> Geographical region changes are not supported into or out of US GCC, US GCC High, US DoD, or China.
 
 ## Impact of migrating between tenants
 

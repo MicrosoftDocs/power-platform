@@ -52,7 +52,7 @@ You'll need to retrieve your Power Virtual Agents bot's content (topics and utte
 
 3.	Go to the **Network** tab.
     >[!div class="mx-imgBorder"]
-    >![DevTools in Microsoft Edge browser showing the Network tab](media/devtools-network-preview.png)
+    >![DevTools in Microsoft Edge browser showing the Network tab.](media/devtools-network-preview.png)
 
 4.	Filter and look for client requests.
 
@@ -364,13 +364,13 @@ You're ready to test your dispatcher to ensure seamless interaction between Dyna
 
 1.  [Publish your bot to a demo website](./publication-connect-bot-to-web-channels.md).    
     >[!div class="mx-imgBorder"]
-    ![Deploy our bot](media/open-deploy.png)
+    ![Deploy our bot.](media/open-deploy.png)
   
 2.  Build (Ctrl + Shift + B) and run (F5) your dispatcher app.
   
 3.  Open the Bot Emulator where you add the name and endpoint to your bot.
     >[!div class="mx-imgBorder"]
-    ![Dialog to create new bot in the bot emulator](media/dispatch-bot-emulator.png)
+    ![Dialog to create new bot in the bot emulator.](media/dispatch-bot-emulator.png)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

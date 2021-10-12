@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 08/13/2019
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -29,8 +30,8 @@ The *bulk deletion* feature helps you to maintain data quality and manage the co
   
 With bulk deletion you can perform the following operations:  
   
-- Delete data across multiple entities.   
-- Delete records for a specified entity.   
+- Delete data across multiple tables.   
+- Delete records for a specified table.   
 - Receive email notifications when a bulk deletion finishes.   
 - Delete data periodically.   
 - Schedule the start time of a recurring bulk delete.   

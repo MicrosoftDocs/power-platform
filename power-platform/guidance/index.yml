@@ -8,12 +8,12 @@ metadata:
   description: Provides access to Microsoft Power Platform guidance documentation
   services: service
   ms.service: power-platform 
-  ms.subservice: subservice
+  ms.subservice: guidance
   ms.topic: landing-page 
   ms.collection: collection
   author: jimholtz
   ms.author: jimholtz
-  ms.date: 08/07/2020
+  ms.date: 08/10/2021
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -48,6 +48,18 @@ landingContent:
             url: ./coe/setup.md
           - text: How to use the CoE Starter Kit?
             url: ./coe/power-bi.md
+
+  # Card
+  - title: Architecture
+    linkLists:
+       - linkListType: overview
+         links:
+          - text: Real-world architecture examples
+            url: ./architecture/real-world-examples/overview.md
+       - linkListType: video
+         links:
+          - text: "Videos: Power Apps and Power Automate Architecture Series"
+            url: https://www.youtube.com/playlist?list=PLi9EhCY4z99W2QOTgbwhFZEjpqc8YZDVH
 
   # Card
   - title: Use ExpressRoute

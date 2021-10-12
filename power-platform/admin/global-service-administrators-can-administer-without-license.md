@@ -2,6 +2,7 @@
 title: "Administrator access for unlicensed Power Platform and Global admins"
 description: "Learn about the levels of permission in customer engagement apps available for Global admins and Microsoft Power Platform admins who don't have a license."
 author: paulliew
+ms.subservice: admin
 ms.author: paulliew
 ms.reviewer: jimholtz
 ms.service: power-platform
@@ -53,7 +54,7 @@ To give these administrators access to additional areas, such as the Sales, Mark
 
 ### See also  
 [Assigning admin roles](https://support.office.com/article/Assign-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504) <br />
-[Create an Administrative user account](./create-users-assign-online-security-roles.md#create-an-administrative-user-account)
+[Create an Administrative user account](create-users.md#create-an-administrative-user-account)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

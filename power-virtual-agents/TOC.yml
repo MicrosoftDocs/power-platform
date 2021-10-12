@@ -14,7 +14,9 @@
       items:
        - name: Power Virtual Agents online overview
          href: fundamentals-what-is-power-virtual-agents-portal.md
-       - name: Get started quickly with Power Virtual Agents
+       - name: Use pre-built chatbot templates
+         href: fundamentals-templates.md
+       - name: Quickstart - Create and deploy a chatbot
          href: fundamentals-get-started.md
     - name: Administer and manage
       items:
@@ -28,7 +30,7 @@
          href: environments-first-run-experience.md
        - name: Share bots with users in your organization
          href: admin-share-bots.md
-       - name: Export and import bots with solutions
+       - name: Export and import bots using solutions
          href: authoring-export-import-bots.md
        - name: Regional settings and data locations for organizations
          href: data-location.md
@@ -70,20 +72,6 @@
          href: advanced-end-user-authentication.md
        - name: Add actions using Power Automate
          href: advanced-flow.md
-       - name: Use Bot Framework Skills
-         href: advanced-use-skills.md
-       - name: Use Bot Framework Composer
-         items:
-          - name: Extend your bot with Bot Framework Composer
-            href: advanced-bot-framework-composer.md
-          - name: Example 1 - Show an Adaptive Card in Power Virtual Agents
-            href: advanced-bot-framework-composer-example1.md
-          - name: Example 2 - Display a multi-select options list in Power Virtual Agents
-            href: advanced-bot-framework-composer-example2.md
-          - name: Example 3 - Use Bing Search as a fallback in Power Virtual Agents
-            href: advanced-bot-framework-composer-example3.md
-          - name: Example 4 - Display a form with a Submit button in Power Virtual Agents
-            href: advanced-bot-framework-composer-example4.md
        - name: Trigger hand-off to a live agent
          href: advanced-hand-off.md
     - name: Publish and integrate
@@ -102,6 +90,26 @@
          href: publication-connect-bot-to-azure-bot-service-channels.md
        - name: Use a Bot Framework bot with Power Virtual Agents
          href: advanced-use-dispatcher.md
+       - name: Integrate with Bot Framework
+         items:
+          - name: Configure a skill for use in Power Virtual Agents
+            href: configuration-add-skills.md
+          - name: Use Bot Framework Skills
+            href: advanced-use-skills.md
+          - name: Use a Power Virtual Agents bot as a skill (Preview)
+            href: advanced-use-pva-as-a-skill.md
+          - name: Use Bot Framework Composer
+            items:
+             - name: Extend your bot with Bot Framework Composer
+               href: advanced-bot-framework-composer.md
+             - name: Example 1 - Show an Adaptive Card in Power Virtual Agents
+               href: advanced-bot-framework-composer-example1.md
+             - name: Example 2 - Display a multi-select options list in Power Virtual Agents
+               href: advanced-bot-framework-composer-example2.md
+             - name: Example 3 - Use Bing Search as a fallback in Power Virtual Agents
+               href: advanced-bot-framework-composer-example3.md
+             - name: Example 4 - Display a form with a Submit button in Power Virtual Agents
+               href: advanced-bot-framework-composer-example4.md
     - name: Monitor and diagnose
       items:
        - name: Key concepts - Analytics
@@ -140,8 +148,6 @@
          href: configure-bot-greeting.md
        - name: Customize the look and feel of the bot
          href: customize-default-canvas.md
-       - name: Enable and configure Bot Framework Skills
-         href: configuration-add-skills.md
     - name: Respond to GDPR Data Subject Rights (DSR) requests
       items:
        - name: Key concepts - GDPR compliance
@@ -158,16 +164,20 @@
       items:
        - name: Power Virtual Agents in Teams overview
          href: teams/fundamentals-what-is-power-virtual-agents-teams.md
-       - name: Build a sample HR bot
+       - name: Use pre-built chatbot templates
+         href: teams/fundamentals-templates-teams.md
+       - name: Quickstart - Create and deploy a chatbot
          href: teams/fundamentals-get-started-teams.md
     - name: Administer and manage
       items:
        - name: Licensing for Virtual Power Agents in Teams
          href: teams/requirements-licensing-teams.md
-       - name: Share bots with users in your organization
+       - name: Collaborate with others
          href: teams/admin-share-bots-teams.md
        - name: Upgrade a Dataverse for Teams environment
          href: teams/admin-upgrade-dataverse-teams.md
+       - name: Export and import chatbots made in Teams
+         href: teams/authoring-export-import-bots-teams.md
        - name: Regional settings and data locations for organizations
          href: teams/data-location-teams.md
     - name: Author and edit
@@ -192,6 +202,8 @@
       items:
        - name: Key concepts - Enhanced authoring
          href: teams/advanced-fundamentals-teams.md
+       - name: Enable advanced AI features
+         href: teams/advanced-ai-features-teams.md
        - name: Use entities and slot filling
          href: teams/advanced-entities-slot-filling-teams.md
        - name: Use variables

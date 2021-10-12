@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/23/2020
+ms.subservice: admin
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -27,7 +28,7 @@ To see the status of your environments:
 3. Look for environments with **Inactive** status.
 
 > [!div class="mx-imgBorder"] 
-> ![Inactive environment](media/inactive-environment.png "Inactive environment")
+> ![Inactive environment.](media/inactive-environment.png "Inactive environment")
 
 ## Scope
 

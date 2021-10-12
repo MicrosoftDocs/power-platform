@@ -6,6 +6,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/03/2020
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -23,11 +24,11 @@ The content from the old admin guide is transitioning to the Power Platform admi
 
 For example, many of these admin settings in the legacy web client...
 
-![Dynamics 365 Settings](./media/old-settings.png)
+![Dynamics 365 Settings.](./media/old-settings.png)
 
 ...are moving here.
 
-![Environment settings](media/environment-settings-mini.png)
+![Environment settings.](media/environment-settings-mini.png)
 
 Use links on this page to manage organization-wide settings. App-specific settings will remain in the respective apps, and will be accessed through the respective app settings. More information about managing environment settings in the Power Platform admin center: [Manage environment settings](admin-settings.md) 
 

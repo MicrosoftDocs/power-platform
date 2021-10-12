@@ -1,13 +1,14 @@
 ---
 title: "Opt in to early access updates  | MicrosoftDocs"
 description: Opt in to early access updates in Microsoft Power Platform and Dynamics 365. 
-author: angelmarshall
-ms.author: tsmarsha
+author: samathur
+ms.subservice: admin
+ms.author: samathur
 ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/09/2021
+ms.date: 10/05/2021
 search.audienceType: 
   - admin
 search.app:
@@ -32,7 +33,7 @@ For example, for a wave 1 major release that's planned to be automatically enabl
 
 The following is an example of an early update availability timeline.
 
-![Opt-in timeline for 2020](media/opt-in-2020-timeline.png "Opt-in timeline for 2020")
+![Opt-in timeline for 2020.](media/opt-in-2020-timeline.png "Opt-in timeline for 2020")
 
 > [!NOTE]
 > Once a release wave is generally available, the updates status in your environments will be set to **On** to automatically receive all planned features and updates throughout the release.  
@@ -61,13 +62,13 @@ The early access updates are available for all types of environments, including 
 3. Under **Updates**, you'll see that the new release wave is available. Select **Manage**. 
 
    > [!div class="mx-imgBorder"] 
-   > ![Manage opt-in update](media/update-manage.png "Manage opt-in update")
+   > ![Manage opt-in update.](media/update-manage.png "Manage opt-in update")
    > <br />An example screenshot. May not be current wave. 
 
 4. Select **Update now**, and then proceed through the confirmation dialog boxes to enable the new features and capabilities of the release wave.  
  
    > [!div class="mx-imgBorder"] 
-   > ![Opt-in update now](media/new-update.png "Opt-in update now")
+   > ![Opt-in update now.](media/new-update.png "Opt-in update now")
    > <br />An example screenshot. May not be current wave. 
 
 5. After the update is complete, all early access features will be enabled for your model-driven apps in your environment.  
@@ -84,13 +85,14 @@ Some apps require additional steps to enable early access features. If you have 
 |Early access apps  |Description of manual steps  |
 |---------|---------|
 |Dynamics 365 Marketing     | Run the Marketing setup wizard to update your environment. This will install both the new release for production updates and the early access features when you run it on an environment where early access is enabled. For instructions, see [Rerun the Dynamics 365 Marketing setup wizard](/dynamics365/customer-engagement/marketing/re-run-setup).          |
-|Dynamics 365 Field Service     | If you have Dynamics 365 Field Service version 8.8.6.0 or newer, you'll automatically receive the early access updates. If you're running on an older version of the Field Service app, you'll need to perform an upgrade. See [Upgrade Dynamics 365 Field Service](/dynamics365/field-service/upgrade-field-service).        |
+|Dynamics 365 Field Service     | If you have Dynamics 365 Field Service version 8.8.6.0 or newer, you'll automatically receive the early access updates. If you're running an older version of the Field Service app, you'll need to perform an upgrade. See [Upgrade Dynamics 365 Field Service](/dynamics365/field-service/upgrade-field-service).        |
 |Dynamics 365 Project Service Automation     | If you have Dynamics 365 Project Service Automation version 3.10.2.0 or newer, you'll automatically receive the early access updates. If you're running on an older version of the Project Service app, you'll need to perform an upgrade. See [Upgrade home page](/dynamics365/project-service/upgrade-psa-home-page).        |
 | Dynamics 365 Resource Scheduling Optimization | If you have Dynamics 365 Resource Scheduling Optimization, you will need to update or deploy Resource Scheduling Optimization in the Power Platform admin center. For instructions, see [Manage Dynamics 365 apps](manage-apps.md), [Update RSO](/dynamics365/field-service/upgrade-field-service#resource-scheduling-optimization), and [Deploy RSO](/dynamics365/field-service/rso-deployment). |
 
 
 > [!IMPORTANT]
 > Be sure to enable the early access updates in the Power Platform admin center first. If you run the Dynamics 365 Marketing setup wizard to update your Marketing app to a new release wave before activating the early access updates in the Power Platform admin center, you must [run the Dynamics 365 Marketing setup wizard again](/dynamics365/customer-engagement/marketing/re-run-setup) after opting in to install and enable the early access features. 
+
 
 ## Update status and Retry 
 
@@ -106,7 +108,7 @@ The updates might take a few hours. If multiple retry attempts fail after 24 hou
 > The retry experience is only available for the early access opt-in updates. After a release wave is generally available, the updates of the release wave will be automatically enabled for all environments; thus, no manual action is required.   
 
 ### Confirm update complete  
-To verify that a release wave is enabled, open the environment, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **About** to see the release wave that's enabled.
+To verify that a release wave is enabled, open the environment, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **About** to see the release wave that's enabled.
 
 |In Unified Interface  |In the web client interface  | 
 |---------|-------|
@@ -137,7 +139,7 @@ The following checklist provides the general guidelines to help you prepare for 
    > [!NOTE]
    > If you don't have a sandbox copy of your production environment, you can [create a copy](copy-environment.md) in the Power Platform admin center. 
 
-3. Opt in to the early access updates from the Power Platform admin center to enable the new release wave in the sandbox environment. Check [Additional requirements to enable early access updates](#additional-requirements-to-enable-early-access-updates) if your apps require manual steps.   
+3. Opt in to the early access updates from the Power Platform admin center to enable the new release wave in the sandbox environment.    
 
 4. Validate that key scenarios work as expected in the sandbox environment after the update is completed. 
    - Update the customizations in your applications, if any, to leverage or respond to the new capabilities as needed. 

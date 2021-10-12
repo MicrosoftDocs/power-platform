@@ -1,11 +1,12 @@
 ---
 title: "New Microsoft Dataverse storage capacity  | MicrosoftDocs"
 description: Introducing a new storage model for Microsoft Dataverse.
-ms.date: 06/08/2021
+ms.date: 09/16/2021
 ms.reviewer: ""
 ms.service: "power-platform"
 ms.topic: "quickstart"
 author: "jimholtz"
+ms.subservice: admin
 ms.author: "jimholtz"
 search.audienceType: 
   - admin
@@ -55,7 +56,7 @@ To see whether you have any of these licenses, sign in to the Microsoft 365 admi
 The new licensing storage model looks like the following image. 
 
 > [!div class="mx-imgBorder"] 
-> ![New licensing storage model](media/capacity-new-license-model.png "New licensing storage model")
+> ![New licensing storage model.](media/capacity-new-license-model.png "New licensing storage model")
 
 ## Capacity page details
 
@@ -66,7 +67,7 @@ This page provides a tenant-level view of where your organization is using stora
 To view the **Summary** page, select **Resources** > **Capacity** > **Summary** tab.
 
 > [!div class="mx-imgBorder"] 
-> ![Capacity page Summary tab](media/storage-data-capacity-page-review.png "Capacity page Summary tab")
+> ![Capacity page Summary tab.](media/storage-data-capacity-page-review.png "Capacity page Summary tab")
 
 
 All tables of Dataverse, including system tables, are included in the storage capacity reports.
@@ -92,10 +93,10 @@ Note the following features:
 |---------|---------|
 |Download     | Select **Download** above the list of environments to download an Excel .CSV file with high-level storage information for each environment that the signed-in admin has permission to see in the Power Platform admin center.        |
 |Search     | Use **Search** to search by the environment name and the environment type.         |
-|Details  | See the next section for using the **Details** button (![Storage data details button](media/storage-data-details-button.png "Storage data details button")) to see environment capacity analytics.   |
+|Details  | See the next section for using the **Details** button (![Storage data details button.](media/storage-data-details-button.png "Storage data details button")) to see environment capacity analytics.   |
 
 > [!div class="mx-imgBorder"] 
-> ![Storage data per environment details button](media/storage-data-per-environment2.png "Storage data per environment details button")
+> ![Storage data per environment details button.](media/storage-data-per-environment2.png "Storage data per environment details button")
 
 > [!NOTE]
 > - The following environments don't count against capacity and are shown as 0 GB:
@@ -105,13 +106,15 @@ Note the following features:
 >   - Support
 >   - Developer
 > - You can select an environment that's showing 0 GB, and then go to its environment capacity analytics page to see the actual consumption.
+> - For the default environment, the list view will only show the amount of capacity consumed beyond the free quota. Select the **Details** button (![Storage data details button.](media/storage-data-details-button.png "Storage data details button")) to see usage.
+
 
 #### Environment storage capacity details
 
-Select the **Details** button (![Storage data details button](media/storage-data-details-button.png "Storage data details button")) on the **Summary** tab view to see  an environment-level detailed view of where your organization is using capacity, in addition to the three types of capacity consumption. 
+Select the **Details** button (![Storage data details button.](media/storage-data-details-button.png "Storage data details button")) on the **Summary** tab view to see  an environment-level detailed view of where your organization is using capacity, in addition to the three types of capacity consumption. 
 
 > [!div class="mx-imgBorder"] 
-> ![Environment capacity analytics](media/storage-data-capacity-details.png "Environment capacity analytics")
+> ![Environment capacity analytics.](media/storage-data-capacity-details.png "Environment capacity analytics")
 
 The following details are provided:
 
@@ -258,10 +261,6 @@ You can provision environments through the Power Platform admin center. More inf
 
 Consider buying additional capacity by using the [Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544). Alternatively, you can [free up storage](free-storage-space.md).
 
-### Where can I read more about the new capacity offers?
-
-Download the [Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544) to learn more.
-
 ### I'm an existing customer, and my renewal is coming up. Will I be affected?
 
 Customers who renew existing subscriptions can choose to continue to transact by using the existing offers for a certain period of time. Please contact your Microsoft partner or Microsoft sales team for details.
@@ -297,11 +296,11 @@ Tables ending in “– Analytics” are tables used by one or more Insights app
 **More information:**
 - [Sales Insights ](/dynamics365/ai/sales/help-hub#get-started)
 - [Field Service and resource scheduling optimization (RSO)](/dynamics365/field-service/scheduling-analytics-reports)                                                                                             
-- [Customer Service Hub](/dynamics365/customer-service/customer-service-analytics-insights-csh) 
+- [Customer Service Insights](/dynamics365/customer-service/customer-service-analytics-insights-csh) 
 - [Field Service](/dynamics365/field-service/reports) 
 
 ### See also
-
+[Add Microsoft Dataverse storage capacity](add-storage.md) <br />
 [Capacity add-ons](capacity-add-on.md)<br />
 [Automatic tuning in Azure SQL Database](/azure/sql-database/sql-database-automatic-tuning) <br />
 [What's new in storage](whats-new-storage.md) <br />

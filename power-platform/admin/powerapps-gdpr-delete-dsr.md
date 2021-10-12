@@ -6,7 +6,8 @@ ms.reviewer: paulliew
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/22/2020
+ms.date: 06/16/2021
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -112,7 +113,7 @@ An admin can grant administrative access to an environment by following these st
 2. If the environment was created by the user from the DSR request, under **Access**, **Environment admin**, select **See all**.
 
 > [!div class="mx-imgBorder"] 
-> ![Select Environment admin, See all](media/environment-admin-see-all.png "Select Environment admin, See all")
+> ![Select Environment admin, See all.](media/environment-admin-see-all.png "Select Environment admin, See all")
 
 ### Delete environments created by a user
 An admin can review and delete environments created by a specific user by following these steps:
@@ -122,7 +123,7 @@ An admin can review and delete environments created by a specific user by follow
 2. If the environment was created by the user from the DSR request, select **Delete** and then proceed with the steps to delete the environment.
 
 > [!div class="mx-imgBorder"] 
-> ![Delete environment](media/environment-delete.png "Delete environment")
+> ![Delete environment.](media/environment-delete.png "Delete environment")
 
 ### Give access to a user's environments using PowerShell
 An administrator can assign themselves (or another user within their organization) access to all environments created by a user by using the **Set-AdminEnvironmentRoleAssignment** function in the [PowerShell cmdlets for Power Apps administrators](./powerapps-powershell.md):
@@ -169,7 +170,7 @@ An administrator can delete a user's environment permissions starting from the [
 2. If your environment does not have a Dataverse database, you will see a section **Access**. Under **Access**, select either **Environment admin** or **Environment maker**, and then select **See all**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Select Environment admin, See all](media/environment-admin-see-all.png "Select Environment admin, See all")
+   > ![Select Environment admin, See all.](media/environment-admin-see-all.png "Select Environment admin, See all")
 
 3. Select a user, select **Remove** to remove their permission, and then select **Continue**.
 
@@ -355,7 +356,7 @@ Power Apps licenses always include Power Automate capabilities. In addition to b
 > It is recommended that admins complete this step for a Power Apps user.
 
 ## Step 10: Delete the user's personal data in environments of Dataverse
-Certain Power Apps licenses, including the Power Apps Community Plan, give the ability for users within your organization to create environments of Dataverse and to create and build apps on Dataverse. The Power Apps Community Plan is a free license that allows users to try out Dataverse in an individual environment. See the Power Apps pricing page for which capabilities are included in each Power Apps license.
+Certain Power Apps licenses, including the Power Apps Developer Plan, give the ability for users within your organization to create environments of Dataverse and to create and build apps on Dataverse. The Power Apps Developer Plan is a free license that allows users to try out Dataverse in an individual environment. See the Power Apps pricing page for which capabilities are included in each Power Apps license.
 
 For guidance on how to respond to DSRs for users who use Dataverse, see [Responding to Data Subject Rights (DSR) requests for Dataverse customer data](common-data-service-gdpr-dsr-guide.md).
 
@@ -378,7 +379,7 @@ If you are a member of an unmanaged tenant then you will need to follow these st
 
 2. Select **Close account** and follow the instructions to delete your account from your Azure AD tenant.
 
-    ![Select Close account](./media/powerapps-gdpr-delete-dsr/close-account.png)
+    ![Select Close account.](./media/powerapps-gdpr-delete-dsr/close-account.png)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
