@@ -218,7 +218,7 @@ steps:
   displayName: 'Power Platform Apply Solution Upgrade '
   inputs:
     PowerPlatformEnvironment: 'My service connection'
-    SolutionName: 'Contoso sample'
+    SolutionName: 'Contoso_sample'
     AsyncOperation: false
 ```
 
@@ -229,7 +229,7 @@ steps:
   inputs:
     authenticationType: PowerPlatformSPN
     PowerPlatformSPN: 'Dataverse service connection '
-    SolutionName: 'Contoso sample'
+    SolutionName: 'Contoso_sample'
     MaxAsyncWaitTime: 45
 ```
 
@@ -261,7 +261,7 @@ steps:
   displayName: 'Power Platform Export Solution '
   inputs:
     PowerPlatformEnvironment: 'My service connection'
-    SolutionName: 'Contoso sample'
+    SolutionName: 'Contoso_sample'
     SolutionOutputFile: 'C:\Public\Contoso_sample_1_0_0_1_managed.zip'
     Managed: true
     MaxAsyncWaitTime: 120
@@ -274,7 +274,7 @@ steps:
   inputs:
     authenticationType: PowerPlatformSPN
     PowerPlatformSPN: 'Dataverse service connection '
-    SolutionName: 'Contoso sample'
+    SolutionName: 'Contoso_sample'
     SolutionOutputFile: 'C:\Public\Contoso_sample_1_0_0_1_managed.zip'
     Managed: true
     MaxAsyncWaitTime: 120
@@ -374,7 +374,7 @@ steps:
   inputs:
     authenticationType: PowerPlatformSPN
     PowerPlatformSPN: 'Dataverse service connection '
-    SolutionName: 'Contoso sample'
+    SolutionName: 'Contoso_sample'
 ```
 
 #### Parameters (Delete)
@@ -422,8 +422,8 @@ steps:
   inputs:
     authenticationType: PowerPlatformSPN
     PowerPlatformSPN: 'Dataverse service connection '
-    SolutionName: 'Contoso sample'
-    SolutionVersionNumber: 1.0.0
+    SolutionName: 'Contoso_sample'
+    SolutionVersionNumber: 1.0.0.0
 ```
 
 #### Parameters (Version)
