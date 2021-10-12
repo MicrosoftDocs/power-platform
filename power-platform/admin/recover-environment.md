@@ -4,7 +4,7 @@ description: "Learn how to restore a recently deleted environment by using Micro
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/20/2021
+ms.date: 10/01/2021
 ms.subservice: admin
 author: ChrisGarty
 ms.author: cgarty
