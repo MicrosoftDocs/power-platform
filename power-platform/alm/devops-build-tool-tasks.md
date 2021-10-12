@@ -465,7 +465,7 @@ steps:
 | `authenticationType`<br/>Type of authentication | (Required for SPN) Specify either **PowerPlatformEnvironment** for a username/password connection or **PowerPlatformSPN** for a Service Principal/client secret connection. |
 | `PowerPlatformEnvironment`<br/>Power Platform environment URL | The service endpoint that you want to deploy the package into (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
 | `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint that you want to deploy the package into (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
-| `PackageFile`< r/>Package file | (Required) The path and file name of the package file assembly (.dll). |
+| `PackageFile`<br/>Package file | (Required) The path and file name of the package file assembly (.dll). |
 | `MaxAsyncWaitTime`<br/>Maximum wait time | Maximum wait time in minutes for the asynchronous operation; default is 60 min (1 hr), same as Azure DevOps default for tasks.|
 
 ## Environment management tasks
