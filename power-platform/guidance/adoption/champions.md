@@ -1,5 +1,5 @@
 ---
-title: "Identify champions in your organization - Microsoft Power Platform | MicrosoftDocs"
+title: "Find and support champions in your organization - Microsoft Power Platform | MicrosoftDocs"
 description: "Find your Microsoft Power Platform champions with the right tools, and learn how they can support you."
 author: manuelap-msft
 manager: devkeydet
