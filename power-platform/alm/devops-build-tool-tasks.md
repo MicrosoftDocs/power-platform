@@ -317,41 +317,97 @@ steps:
 
 Takes a compressed solution file and decomposes it into multiple XML files so that these files can be more easily read and managed by a source control system.
 
+#### YAML snippet (Unpack)
+
+```yml
+steps:
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.unpack-solution.PowerPlatformUnpackSolution@0
+  displayName: 'Power Platform Unpack Solution '
+  inputs:
+    SolutionInputFile: 'C:\Public\Contoso_sample_1_0_0_1_managed.zip'
+    SolutionTargetFolder: 'C:\Public'
+    SolutionType: Both
+```
+
+#### Parameters (Unpack)
+
 | Parameters    | Description       |
 |---------------|-------------------|
-| Solution input file              | (Required) The path and file name of the solution.zip file to unpack.     |
-| Target folder to unpack solution | (Required) The path and target folder you want to unpack the solution into.      |
-| Type of solution                 | (Required) The type of solution you want to unpack. Options include: **Unmanaged** (recommended), **Managed**, and **Both**. |
+| `SolutionInputFile`<br/>Solution input file | (Required) The path and file name of the solution.zip file to unpack. |
+| `SolutionTargetFolder`<br/>Target folder to unpack solution | (Required) The path and target folder you want to unpack the solution into. |
+| `SolutionType`<br/>Type of solution | (Required) The type of solution you want to unpack. Options include: **Unmanaged** (recommended), **Managed**, and **Both**. |
 
 ### Power Platform Pack Solution
 
 Packs a solution represented in source control into a solution.zip file that can be imported into another environment.
 
+#### YAML snippet (Pack)
+
+```yml
+steps:
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.pack-solution.PowerPlatformPackSolution@0
+  displayName: 'Power Platform Pack Solution '
+  inputs:
+    SolutionSourceFolder: 'C:\Public'
+    SolutionOutputFile: 'Contoso_sample_1_0_0_1_managed.zip'
+    SolutionType: Managed
+```
+
+#### Parameters (Pack)
+
 | Parameters       | Description     |
 |------------------|-----------------|
-| Solution output file              | (Required) The path and file name of the solution.zip file to pack the solution into.     |
-| Source folder of solution to pack | (Required) The path and source folder of the solution to pack.      |
-| Type of solution                  | (Required) The type of solution you want to pack. Options include: **Unmanaged** (recommended), **Managed**, and **Both**. |
-
+| `SolutionOutputFile`<br/>Solution output file | (Required) The path and file name of the solution.zip file to pack the solution into. |
+| `SolutionSourceFolder`<br/>sSource folder of solution to pack | (Required) The path and source folder of the solution to pack. |
+| `SolutionType`<br/>Type of solution | (Required) The type of solution you want to pack. Options include: **Unmanaged** (recommended), **Managed**, and **Both**. |
 
 ### Power Platform Delete Solution
 
 Deletes a solution in the target environment.
 
+#### YAML snippet (Delete)
+
+```yml
+steps:
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.delete-solution.PowerPlatformDeleteSolution@0
+  displayName: 'Power Platform Delete Solution '
+  inputs:
+    authenticationType: PowerPlatformSPN
+    PowerPlatformSPN: 'Dataverse service connection '
+    SolutionName: 'Contoso sample'
+```
+
+#### Parameters (Delete)
+
 | Parameters       | Description     |
 |------------------|-----------------|
-| Authentication type | (Required) Select whether to use username/password or Service Principal authentication. Username/password does not support multi-factor authentication (MFA). |
-| Service connection | (Required) The service connection to the source environment that you want to export the solution from.  Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type.     |
-| Solution name  | (Required) The name of the solution to export. Always use the solution *Name* not its *Display Name*. |
+| `authenticationType`<br/>Type of authentication | (Required for SPN) Specify either **PowerPlatformEnvironment** for a username/password connection or **PowerPlatformSPN** for a Service Principal/client secret connection. |
+| `PowerPlatformEnvironment`<br/>Power Platform environment URL | The service endpoint that you want to delete the solution (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
+| `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint that you want to delete the solution (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
+| `SolutionName`<br/>Solution name  | (Required) The name of the solution to delete. Always use the solution *Name* not its *Display Name*. |
 
 ### Power Platform Publish Customizations
 
 Publishes all customizations in an environment.
 
+#### YAML snippet (Publish)
+
+```yml
+steps:
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.publish-customizations.PowerPlatformPublishCustomizations@0
+  displayName: 'Power Platform Publish Customizations '
+  inputs:
+    authenticationType: PowerPlatformSPN
+    PowerPlatformSPN: 'Dataverse service connection '
+```
+
+#### Parameters (Publish)
+
 | Parameters     | Description    |
 |----------------|----------------|
-| Authentication type | (Required) Select whether to use username/password or service principal authentication. Username/password does not support multi-factor authentication. |
-| Service connection | (Required) The service connection to the environment in which you want to publish customizations. Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type. |
+| `authenticationType`<br/>Type of authentication | (Required for SPN) Specify either **PowerPlatformEnvironment** for a username/password connection or **PowerPlatformSPN** for a Service Principal/client secret connection. |
+| `PowerPlatformEnvironment`<br/>Power Platform environment URL | The service endpoint that you want to publish the customizations (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
+| `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint that you want to publish the customizations (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
 
 
 ### Power Platform Set Solution Version
