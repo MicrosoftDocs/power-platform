@@ -6,7 +6,7 @@ manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/09/2021
+ms.date: 10/14/2021
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
@@ -30,7 +30,7 @@ Champions emerge as leaders of the community of practice who:
 - Can effectively translate business needs into solutions.
 - Communicate well with colleagues.
 
-> [!IMPORTANT]
+> [!TIP]
 > To add an element of fun, some organizations refer to their champions network as special agents or rangers. Microsoft has an internal community called Power Platform Ninjas.
 
 Often, people aren't directly asked to become champions. Commonly, champions are identified by the Center of Excellence (CoE) and recognized for the activities they're already doing, such as frequently answering questions in an internal discussion channel or participating in lunch and learns.
@@ -85,23 +85,22 @@ Considerations and key actions you can take to initiate, grow, and sustain your 
 - Decide how you will communicate with the champions network (for example, in a Teams channel, a Yammer group, and/or an email distribution list).
 - Determine how the champions network will communicate and collaborate with each other directly (across organizational boundaries), to share updates and successes, and to connect with each other.
 - Hold regular meetings: Promote enthusiasm and cohesiveness of your community by holding regular monthly meetings. These can be a combination of in person and virtual meetings, but their consistency is key to having a thriving champions community.
-- Create a Champion team: Your champions should use the team you have setup for them for all program communications, feedback, and to find resources. In doing this they will become increasingly familiar with the product and its benefits. Get started with the [Adopt Office 365](/MicrosoftTeams/general-teams-templates-in-the-admin-console) teams template, which will create relevant channels and apps for your champions program.
+- Create a Champion team: Your champions should use the team you have setup for them for all program communications, feedback, and to find resources. In doing this they will become increasingly familiar with the product and its benefits. Get started with the [Adopt Office 365](../../../../MicrosoftTeams/general-teams-templates-in-the-admin-console) teams template, which will create relevant channels and apps for your champions program.
 
 ### Focus on the people
 
-- Find enthusiastic champions who can commit time and effort.
-- How can you help them, how can you unblock challenges, how can you celebrate them?
-  - Provide materials ready to support their work (for example, access to training material and templates).
-  - Ensure a regular rhythm for discussions with the champions on what’s working and what’s not.
-  - Encourage the sharing of stories, either through show-and-tell sessions or regular newsletters. You can lean on our [best practices to share success stories](show-and-tell.md) for ideas on how to structure those stories.
-  - Recognize and reward the work champions are doing. Remember, they're not a support team but business representatives.
+Find enthusiastic champions who can commit time and effort. How can you help them, how can you unblock challenges, how can you celebrate them?
+- Provide materials ready to support their work (for example, access to training material and templates).
+- Ensure a regular rhythm for discussions with the champions on what’s working and what’s not.
+- Encourage the sharing of stories, either through show-and-tell sessions or regular newsletters. You can lean on our [best practices to share success stories](show-and-tell.md) for ideas on how to structure those stories.
+- Recognize and reward the work champions are doing. Remember, they're not a support team but business representatives.
 
 ## Shape the future of your CoE with Champions
 
 - Ensure champions have the resources they need, including:
   - Direct access to CoE members.
   - Influence on environment and connector strategies being implemented (for example, requirements for a dataset certification policy).
-- Influence on the creation of best practices and guidance (for example, providing recommendations for which connectors should be available via [Data Loss Prevention (DLP)](/power-platform/admin/wp-data-loss-prevention) policies).
+  - Influence on the creation of best practices and guidance (for example, providing recommendations for which connectors should be available via [Data Loss Prevention (DLP)](/power-platform/admin/wp-data-loss-prevention) policies).
 - Actively involve certain champions as satellite members of the CoE. They can provide valuable input in what works and doesn't work when it comes to admin and governance policies, communication and training.
 - Create a feedback loop so champions can easily provide information or submit suggestions to the CoE.
 
@@ -116,17 +115,5 @@ Incentives that champions find particularly rewarding can include:
 - **A private experts discussion area:** A private area for the champions to share ideas and learn from each other is usually highly valued.
 - **Specialized or deep dive information and training:** Access to additional information to help champions grow their skillsets (as well as help their colleagues) will be appreciated. It could include attending advanced training classes, privileged access to relevant events, or speaking engagements.
 - Is there a company reward or benefit program that their work could tie into? Are there vouchers or other goodies they could receive? Could the benefit even be a premium license or their own environment to play in?
-
-<!--## Maturity levels
-
-The following maturity levels will help you assess the current state of your community of practice:
-
-| **Level** | **State of Power Platform community** |
-| --- | --- |
-| 100: Initial | Some content creators do great work, but their efforts are unrecognized.</br></br>Efforts to share knowledge are rare and unstructured.</br></br>Some staff may have attended App in a Day events (Partner or Microsoft delivered).</br></br>Team-based initiatives for nurturing makers.|
-| 200: Repeatable | [On-boarding strategy](onboard-makers.md) for new makers.</br></br>Makers become ambassadors across their departments and evangelize the capabilities.</br></br>Some staff have participated in a [hackathon](hackathons.md).</br></br>Makers become ambassadors across their departments and evangelize the capabilities.|
-| 300: Defined | Makers provide insights into business pain points.</br></br>Knowledge sharing in multiple forms is a normal and regularly scheduled occurrence.</br></br>[Training and upskilling](training-strategy.md) strategy for makers.</br></br>Internal Champions community.</br></br>[CoE Starter Kit – Nurture Module](../coe/nurture-components.md) adopted.|
-| 400: Capable | Regular events for Champions.</br></br>Regular hackathons.</br></br>Maker assessments and certificates.</br></br>Sharing and celebrating [success stories](show-and-tell.md).</br></br>Show & Tell sessions.</br></br>Adoption campaign. |
-| 500: Efficient | Large internal community with proven value.</br></br>Career path for makers.</br></br>Community of mentors.</br></br>Common development strategy and goals for Citizen and Pro developers. |-->
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
