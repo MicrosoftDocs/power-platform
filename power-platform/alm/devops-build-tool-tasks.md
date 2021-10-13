@@ -480,17 +480,48 @@ Creates a new environment. Creating a new environment also automatically creates
 > A new environment can only be provisioned if your license or capacity
 > allows for the creation of additional environments. For more information on how to view capacity see [Capacity page details](../admin/capacity-storage.md#capacity-page-details).
 
+#### YAML snippet (Create-env)
+
+```yml
+steps:
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.create-environment.PowerPlatformCreateEnvironment@0
+  displayName: 'Power Platform Create Environment '
+  inputs:
+    PowerPlatformEnvironment: 'My service connection'
+    DisplayName: 'First Coffee test'
+    DomainName: firstcoffee
+```
+
+```yml
+steps:
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.create-environment.PowerPlatformCreateEnvironment@0
+  displayName: 'Power Platform Create Environment '
+  inputs:
+    authenticationType: PowerPlatformSPN
+    PowerPlatformSPN: 'Dataverse service connection '
+    DisplayName: 'First Coffee prod'
+    EnvironmentSku: Production
+    AppsTemplate: 'D365_CustomerService,D365_FieldService'
+    LocationName: canada
+    LanguageName: 1036
+    CurrencyName: ALL
+    DomainName: firstcoffee
+```
+
+#### Parameters (Create-env)
+
 | Parameters        | Description     |
 |-------------------|-----------------|
-| Authentication type | (Required) Select whether to use username/password or service principal authentication. Username/password does not support multi-factor authentication. |
-| Service connection | (Required) The service connection to the tenant for which you want to create the environment. Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type.|
-| Display name | (Required) The display name of the environment created. |
-| Deployment Region | (Required) The region that the environment should be deployed into.         |
-| Environment Type     | (Required) The type of instance to deploy. Options are **Sandbox** or **Production**.      |
-| Region | (Required) The region that the environment should be created in.  |
-| Currency | (Required) Base currency for the environment created. The currency cannot be updated after the environment is created. |
-| Language     | (Required) The base language in the environment.      |
-| Domain Name       | (Required) This is the environment-specific string that forms part of the URL. For example, for an environment with the following URL: [https://powerappsbuildtasks.crm.dynamics.com](https://powerappsbuildtasks.crm.dynamics.com/), the domain name would be 'powerappsbuildtasks'. <p/>Note: If you enter a domain name that's already in use, the task appends a numeric value to the domain name, starting with 0. For the example above, the URL might become [https://powerappsbuildtasks0.crm.dynamics.com](https://powerappsbuildtasks0.crm.dynamics.com/). |
+| `authenticationType`<br/>Type of authentication | (Required for SPN) Specify either **PowerPlatformEnvironment** for a username/password connection or **PowerPlatformSPN** for a Service Principal/client secret connection. |
+| `PowerPlatformEnvironment`<br/>Power Platform environment URL | The service endpoint that you want to create the environment (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
+| `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint that you want to create the environment (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
+| `DisplayName`<br/>Display name | (Required) The display name of the environment created. |
+| `LocationName`<br/>Deployment region | (Required) The region that the environment should be created in. |
+| `EnvironmentSku`<br/>Environment type | (Required) The type of instance to deploy. Options are **Sandbox** or **Production**, **Trial**, and **SubscriptionBasedTrial**. |
+| `AppsTemplate`<br/>Apps | For a non-trial environment type, the supported apps are D365_CustomerService, D365_FieldService, D365_ProjectServiceAutomation, and D365_Sales. |
+| `CurrencyName`<br/>Currency | (Required) Base currency for the environment created. The currency cannot be updated after the environment is created. |
+| `LanguageName`<br/>Language     | (Required) The base language in the environment. |
+| `DomainName`<br/>Domain Name | (Required) This is the environment-specific string that forms part of the URL. For example, for an environment with the following URL: [https://powerappsbuildtasks.crm.dynamics.com](https://powerappsbuildtasks.crm.dynamics.com/), the domain name would be 'powerappsbuildtasks'. <p/>Note: If you enter a domain name that's already in use, the task appends a numeric value to the domain name, starting with 0. For the example above, the URL might become [https://powerappsbuildtasks0.crm.dynamics.com](https://powerappsbuildtasks0.crm.dynamics.com/). |
 
 ### Power Platform Delete Environment
 
