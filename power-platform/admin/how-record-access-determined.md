@@ -75,7 +75,7 @@ Users can have access to perform an action on a record because of the security r
 In this case, the user must either have or belong to a team that has a role assigned with at least User-level access privilege.
 
 > [!NOTE]
-> For roles assigned to teams with Basic-level access user privilege, the role's inheritance configuration also comes into play. If the team has the **Member's privilege inheritance** set to **Team privileges only**, then the user will only be able make use of that privilege for records owned by the team. For more information, go to [Team member's privilege inheritance](security-roles-privileges.md#team-members-privilege-inheritance).
+> For roles assigned to teams with Basic-level access user privilege, the role's inheritance configuration also comes into play. If the team has the **Member's privilege inheritance** set to **Team privileges only**, then the user will only be able to make use of that privilege for records owned by the team. For more information, go to [Team member's privilege inheritance](security-roles-privileges.md#team-members-privilege-inheritance).
 > 
 > :::image type="content" source="media/member-privilege-inheritance.png" alt-text="Member's privilege inheritance":::
  
