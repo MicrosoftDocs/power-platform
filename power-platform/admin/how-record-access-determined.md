@@ -4,7 +4,7 @@ description: How access to a record is determined
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 07/26/2021
+ms.date: 10/13/2021
 author: jimholtz
 ms.subservice: admin
 ms.author: jimholtz
