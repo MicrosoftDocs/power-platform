@@ -71,8 +71,8 @@ A user can have access to a particular record because either they own the record
  
 Users can have access to perform an action on a record because of the security roles they hold. In this case, the access level of the privilege a role has is taken into account. There are four major scenarios that correspond to the different access levels that are not User, which is covered in the ownership case.
 
-#### The record belongs to the user or a team the user belongs to
-In this case, the user must either have or belong to a team that has a role assigned that has the required privilege with at least User-level access.
+#### The record belongs to the user or to a team the user is a member of
+In this case, the user must either have or belong to a team that has a role assigned with at least User-level access privilege.
 
 > [!NOTE]
 > For roles assigned to teams with Basic-level access user privilege, the role's inheritance configuration also comes into play. If the team has the **Member's privilege inheritance** set to **Team privileges only**, then the user will only be able make use of that privilege for records owned by the team. For more information, go to [Team member's privilege inheritance](security-roles-privileges.md#team-members-privilege-inheritance).
@@ -80,13 +80,19 @@ In this case, the user must either have or belong to a team that has a role assi
 > :::image type="content" source="media/member-privilege-inheritance.png" alt-text="Member's privilege inheritance":::
  
 #### The record belongs to the same business unit as the user
-In this case, the user must either have or belong to a team that has a role assigned that has the required privilege with at least Business Unit-level access.
+In this case, the user must either have or belong to a team that has a role assigned with at least Business Unit-level access privilege.
  
+#### The record belongs to the same business unit as the team of which the user is a member of.
+In this case, the user must either have or belong to the team that has a role assigned with at least Business Unit-level access privilege.
+  
 #### The record belongs to a business unit that is a descendant of the user's business unit
-In this case, the user must either have or belong to a team that has a role assigned that has the required privilege with at least the access level Parent:Child Business Units.
+In this case, the user must either have or belong to a team that has a role assigned with at least Parent:Child business units access privilege.
+ 
+#### The record belongs to a business unit that is a descendant of the user's business unit or a descendant of the team's business unit of which the user is a member of.
+In this case, the user must either have or belong to a team that has a role assigned with at least Parent: Child Business Units access privilege. 
  
 #### The record belongs to a business unit that is not a descendant of the user's business unit
-In this case, the user must either have or belong to a team that has a role assigned that has the required privilege with Organization-level access.
+In this case, the user must either have or belong to a team that has a role assigned with Organization-level access privilege.
  
 ### Shared access
  
