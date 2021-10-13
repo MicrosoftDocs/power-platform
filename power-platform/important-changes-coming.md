@@ -1,7 +1,7 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps"
 description: Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps 
-ms.date: 10/05/2021
+ms.date: 10/13/2021
 ms.topic: "article"
 ms.assetid: 994cc854-17f6-45d6-bc20-fcf1a3f2d6d6
 searchScope:
@@ -22,6 +22,19 @@ Admins and IT professionals can use this information to prepare for future relea
 
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability will continue to work and is fully supported until it is officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
+
+## Internet Explorer 11 support for Dynamics 365 and Microsoft Power Platform is deprecated
+
+> [!IMPORTANT]
+> With 2022 release wave 2, Internet Explorer 11 will be blocked. Please switch to a modern browser.
+
+Effective December 2020, Microsoft Internet Explorer 11 support for Microsoft Dynamics 365 and Microsoft Power Platform is deprecated, and Internet Explorer 11 won’t be supported after August  2021. 
+
+This will impact customers who use Dynamics 365 and Microsoft Power Platform products that are designed to be used through an Internet Explorer 11 interface. After August 2021, Internet Explorer 11 won't be supported for such Dynamics 365 and Microsoft Power Platform products. We recommend that customers transition to Microsoft Edge. 
+
+More information: [Support end for Internet Explorer](admin/support-end-internet-explorer.md).
+
+If you have more questions, contact your Microsoft Customer Service representative or Microsoft Partner.
 
 ## Support for Microsoft 365 Groups and Yammer in Dynamics 365 is deprecated
 
@@ -152,14 +165,6 @@ Effective April 2021, the [Microsoft Dynamics 365 app for Windows](https://go.mi
 Microsoft continues to provide security and other critical updates for the Microsoft Dynamics 365 app for Windows until January 29, 2021. We won't release any other features or functionalities for the app. After April 1, 2021, the app is removed from the Microsoft Store, and is no longer supported. 
  
 We recommend that you start using your web browser as soon as possible to run your customer engagement apps, such as Dynamics 365 Sales, Dynamics 365 Customer Service, and Dynamics 365 Marketing. Run them on Windows to take advantage of the ongoing improvements for the web app.
-
-## Internet Explorer 11 support for Dynamics 365 and Microsoft Power Platform is deprecated
-
-Effective December 2020, Microsoft Internet Explorer 11 support for Microsoft Dynamics 365 and Microsoft Power Platform is deprecated, and Internet Explorer 11 won’t be supported after August  2021. 
-
-This will impact customers who use Dynamics 365 and Microsoft Power Platform products that are designed to be used through an Internet Explorer 11 interface. After August 2021, Internet Explorer 11 won't be supported for such Dynamics 365 and Microsoft Power Platform products. We recommend that customers transition to Microsoft Edge. 
-
-If you have more questions, contact your Microsoft Customer Service representative or Microsoft Partner.
 
 ## Organization data download filters for mobile offline are deprecated 
 
