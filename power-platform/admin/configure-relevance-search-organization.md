@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/5/2021
+ms.date: 10/13/2021
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -58,7 +58,10 @@ For more information about Dataverse search, see: [Using Dataverse search to se
 
 ## Enable Dataverse search
 
-Dataverse search is an opt-out feature, set to **On** by default on all production environments, except those using their own encryption key. It is recommended to have Dataverse search enabled, so users have a superior search experience in model-driven apps, with the benefits listed above. All model-driven Power Apps will have the global search experience with the search bar in the header in the environment. Individual users won't be able to switch to [quick find search, formerly known as categorized search](/powerapps/user/quick-find).
+Dataverse search is an opt-out feature, set to **On** by default with [2021 release wave 2](/power-platform-release-plan/2021wave2/power-apps/modern-search-all-end-users-model-driven-power-apps), on all production environments, except those using their own encryption key. We recommend enabling Dataverse search so users have a superior search experience in model-driven apps with the benefits listed above. All model-driven Power Apps will have the global search experience with the search bar in the header in the environment. Individual users won't be able to switch to [quick find search, formerly known as categorized search](/powerapps/user/quick-find).
+
+> [!IMPORTANT]
+> If you opt in to [early access of 2021 release wave 2](/power-platform/admin/opt-in-early-access-updates) on a production environment, Dataverse search is enabled automatically. If you are using your own encryption key, you can disable Dataverse search after enabling early access of 2021 release wave 2 in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). 
 
 :::image type="content" source="media/model-app1.png" alt-text="First sample model-driven app":::
 
