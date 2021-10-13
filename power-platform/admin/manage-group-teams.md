@@ -104,7 +104,7 @@ For more information, see [Assign a record to a user or team](/powerapps/user/as
 
 11. Enter the respective Azure AD **ObjectID** of the Azure AD Security or Office group.
 
-12. Open the **Membership Type** dropdown, and then one of the following:
+12. Open the **Membership Type** dropdown, and then select one of the following:
   
     - **Members and guests**
     - **Members**
