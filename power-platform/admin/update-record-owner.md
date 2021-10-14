@@ -36,5 +36,9 @@ Follow these steps.
 
    :::image type="content" source="media/change-owning-business-unit.png" alt-text="Change Owner or Owner Business Unit":::
 
+## Table relationship and cascading behavior 
+
+If there are related tables and the relationship behavior is set to parental, updating the record’s owner and/or owning business unit can have a cascading effect. See [About the assign action](https://review.docs.microsoft.com/powerapps/developer/data-platform/configure-entity-relationship-cascading-behavior?branch=jimholtztemp#about-the-assign-action).
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
