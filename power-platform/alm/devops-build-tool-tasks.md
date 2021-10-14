@@ -518,7 +518,7 @@ steps:
 | `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint that you want to create the environment (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
 | `DisplayName`<br/>Display name | (Required) The display name of the environment created. |
 | `LocationName`<br/>Deployment region | (Required) The region that the environment should be created in. |
-| `EnvironmentSku`<br/>Environment type | (Required) The type of instance to deploy. Options are **Sandbox** or **Production**, **Trial**, and **SubscriptionBasedTrial**. |
+| `EnvironmentSku`<br/>Environment type | (Required) The type of instance to deploy. Options are **Sandbox**, **Production**, **Trial**, and **SubscriptionBasedTrial**. |
 | `AppsTemplate`<br/>Apps | For a non-trial environment type, the supported apps are D365_CustomerService, D365_FieldService, D365_ProjectServiceAutomation, and D365_Sales. |
 | `CurrencyName`<br/>Currency | (Required) Base currency for the environment created. The currency cannot be updated after the environment is created. |
 | `LanguageName`<br/>Language     | (Required) The base language in the environment. |
