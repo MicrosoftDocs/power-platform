@@ -528,33 +528,90 @@ steps:
 
 Deletes an environment.
 
+#### YAML snippet (Delete-env)
+
+```yml
+steps:
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.delete-environment.PowerPlatformDeleteEnvironment@0
+  displayName: 'Power Platform Delete Environment '
+  inputs:
+    PowerPlatformEnvironment: 'My service connection'
+```
+
+#### Parameters (Delete-env)
+
 | Parameters       | Description         |
 |------------------|---------------------|
-| Authentication type | (Required) Select whether to use username/password or service principal authentication. Username/password does not support multi-factor authentication. |
-| Service connection | (Required) The service connection to the tenant for which you want to delete the environment. Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type. |
+| `authenticationType`<br/>Type of authentication | (Required for SPN) Specify either **PowerPlatformEnvironment** for a username/password connection or **PowerPlatformSPN** for a Service Principal/client secret connection. |
+| `PowerPlatformEnvironment`<br/>Power Platform environment URL | The service endpoint that you want to delete the environment (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
+| `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint that you want to delete the environment (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
 
 ### Power Platform Backup Environment
 
 Backs up an environment.
 
+#### YAML snippet (Backup-env)
+
+```yml
+steps:
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.backup-environment.PowerPlatformBackupEnvironment@0
+  displayName: 'Power Platform Backup Environment '
+  inputs:
+    PowerPlatformEnvironment: 'My service connection'
+    BackupLabel: 'Full backup - $(Build.BuildNumber)'
+```
+
+#### Parameters (Backup-env)
+
 | Parameters   | Description   |
 |--------------|---------------|
-| Authentication type | (Required) Select whether to use username/password or service principal authentication. Username/password does not support multi-factor authentication.|
-| Service connection | (Required) The service connection to the tenant for which you want to back up the environment. Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type. |
-| Backup label               | (Required) The label to be assigned to the backup.                                                                         |
+| `authenticationType`<br/>Type of authentication | (Required for SPN) Specify either **PowerPlatformEnvironment** for a username/password connection or **PowerPlatformSPN** for a Service Principal/client secret connection. |
+| `PowerPlatformEnvironment`<br/>Power Platform environment URL | The service endpoint that you want to back up the environment (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
+| `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint that you want to back up the environment (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
+| `BackupLabel`<br/>Backup label | (Required) The label to be assigned to the backup. |
 
 ### Power Platform Copy Environment
 
-Copies an environment to a target environment. Two
-types of copies are available: full and minimal. A *Full* copy includes both data and
-solution metadata (customizations), whereas a *minimal* copy only includes solution
-metadata and not the actual data. 
+Copies an environment to a target environment. Two types of copies are available: full and minimal. A *Full* copy includes both data and solution metadata (customizations), whereas a *minimal* copy only includes solution
+metadata and not the actual data.
+
+#### YAML snippet (Copy-env)
+
+```yml
+steps:
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.copy-environment.PowerPlatformCopyEnvironment@0
+  displayName: 'Power Platform Copy Environment '
+  inputs:
+    PowerPlatformEnvironment: 'My service connection'
+    TargetEnvironmentUrl: 'https://contoso-test.crm.dynamics.com'
+```
+
+```yml
+steps:
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.copy-environment.PowerPlatformCopyEnvironment@0
+  displayName: 'Power Platform Copy Environment '
+  inputs:
+    authenticationType: PowerPlatformSPN
+    PowerPlatformSPN: 'Dataverse service connection '
+    TargetEnvironmentUrl: 'https://contoso-test.crm.dynamics.com'
+    CopyType: MinimalCopy
+    OverrideFriendlyName: true
+    FriendlyName: 'Contoso Test'
+    DisableAdminMode: false
+```
+
+#### Parameters (Copy-env)
 
 | Parameters     | Description     |
 |----------------|-----------------|
-| Authentication type | (Required) Select whether to use username/password or service principal authentication. Username/password does not support multi-factor authentication. |
-| Service connection | (Required) The service connection for the source environment that you want to copy from. Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type. |
-| Target environment URL | (Required) The URL for the target environment that you want to copy to.  | 
+| `authenticationType`<br/>Type of authentication | (Required for SPN) Specify either **PowerPlatformEnvironment** for a username/password connection or **PowerPlatformSPN** for a Service Principal/client secret connection. |
+| `PowerPlatformEnvironment`<br/>Power Platform environment URL | The service endpoint for the source environment that you want to copy from (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
+| `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint for the source environment that you want to copy from (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
+| `TargetEnvironmentUrl`<br/>Target environment URL | (Required) The URL for the target environment that you want to copy to. |
+| `CopyType`<br/>Copy type | The type of copy to perform: FullCopy or MinimalCopy |
+| `OverrideFriendlyName`<br/>Override friendly name | Change the target environment's friendly name to another name (true\|false). |
+| `FriendlyName`<br/>Friendly name | The friendly name of the target environment. |
+| `DisableAdminMode`<br/>Disable admin mode | Whether to disable administration mode (true\|false). |
 
 ## Build and release pipelines
 
