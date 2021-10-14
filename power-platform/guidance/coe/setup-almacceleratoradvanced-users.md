@@ -50,3 +50,5 @@ In order for users to be able to use the service connection from the ALM Acceler
 1. Select the **Group or User** you want to provide User permissions to in the Dropdown.
 1. Select the **User** **Role** and Select **Add**
    ![image-20210401093313321](media/setup-almacceleratoradvanced/SetServiceConnectionPermissions.png)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

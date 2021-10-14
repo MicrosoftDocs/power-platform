@@ -25,10 +25,9 @@ The ALM Accelerator components enable makers to apply source control strategies 
 
 The ALM Accelerator components solution doesn't have a dependency on other components of the CoE Starter Kit. It can be used independently.
 
-## Before you start...
+## Before you start
 
 The following documentation is intended to be a step-by-step process for setting up AA4AM manually. However, **it is recommended that you use the [Center of Excellence Command Line Interface (coe-cli)](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli#readme) to assist in automating these steps**. This document will provide details and context for the actions that are performed by the coe-cli and act as a reference for those who want to know the specifics of each step in the process.
-
 
 ## Document structure
 
@@ -42,7 +41,6 @@ The Setup Guide is structured into 7 main sections
 - **Using the ALM Accelerator App** - A short introduction to using the AA4AM canvas app
 - **Troubleshooting** - A few pointers on some know issues and how to remediate these.
 
-
 ## Prerequisites
 
 ### Dataverse Environments
@@ -51,11 +49,11 @@ The application will manage deploying solutions from Development to Validation t
 
 > [!NOTE] Currently the ALM Accelerator is not compatible with Dataverse for Teams. Both the AA4AM App and the associated AzDO pipelines assume the full version of Dataverse is being used in all environments.
 
-You'll need to **create an environment in which to set up the AA4AM Solution**. It's recommended to install AA4AM in the same environment as other CoE Starter Kit Solutions. For more information about how to decide on the best strategy for your organization, go [Establishing an Environment Strategy for Microsoft Power Platform](https://docs.microsoft.com/en-us/power-platform/guidance/adoption/environment-strategy) and [Environment strategy for ALM](https://docs.microsoft.com/en-us/power-platform/alm/environment-strategy-alm).
+You'll need to **create an environment in which to set up the AA4AM Solution**. It's recommended to install AA4AM in the same environment as other CoE Starter Kit Solutions. For more information about how to decide on the best strategy for your organization, go [Establishing an Environment Strategy for Microsoft Power Platform](https://docs.microsoft.com/power-platform/guidance/adoption/environment-strategy) and [Environment strategy for ALM](https://docs.microsoft.com/power-platform/alm/environment-strategy-alm).
 
 ### Azure DevOps Environment
 
-This solution uses Azure DevOps for source control and deployments (pipelines). You can sign up for Azure DevOps for free for up to 5 users on the [Azure DevOps](https://azure.microsoft.com/en-us/services/DevOps/) site.
+This solution uses Azure DevOps for source control and deployments (pipelines). You can sign up for Azure DevOps for free for up to 5 users on the [Azure DevOps](https://azure.microsoft.com/services/DevOps/) site.
 
 ### Users and Permissions
 
@@ -70,9 +68,9 @@ In order to complete the steps below you will need the following users and permi
 
 For the AA4AM Canvas App to work as expected the following connectors must be available to be used together in the environment into which the ALM Accelerator solution is imported.
 
-- [Dataverse (Legacy)](https://docs.microsoft.com/en-us/connectors/commondataservice/)
-- [Power Apps for Makers](https://docs.microsoft.com/en-us/connectors/powerappsforappmakers/)
-- [HTTP with Azure AD](https://docs.microsoft.com/en-us/connectors/webcontents/) (with endpoint access to https://graph.microsoft.com)
+- [Dataverse (Legacy)](https://docs.microsoft.com/connectors/commondataservice/)
+- [Power Apps for Makers](https://docs.microsoft.com/connectors/powerappsforappmakers/)
+- [HTTP with Azure AD](https://docs.microsoft.com/connectors/webcontents/) (with endpoint access to <https://graph.microsoft.com>)
 - ALM Accelerator Custom Azure DevOps
 
 ## Foundational Setup
@@ -100,7 +98,7 @@ Sign in to [portal.azure.com](https://portal.azure.com).
 1. Select **Add permissions**.
 
 1. Repeat adding permissions steps above for the following:
-    - **PowerApps-Advisor (Analysis All)** (Required for running static analysis via App Checker https://docs.microsoft.com/en-us/power-platform/alm/checker-api/overview). This permission can be found under **APIs my organization uses**.
+    - **PowerApps-Advisor (Analysis All)** (Required for running static analysis via App Checker <https://docs.microsoft.com/power-platform/alm/checker-api/overview>). This permission can be found under **APIs my organization uses**.
       ![image-20210216135345784](media/almacceleratoradvanced-components/image-20210216135345784.png "Select PowerApps-Advisor (Analysis All) and Delegated permissions")
 
     - **Azure DevOps**. (Required for connecting to Azure DevOps via the custom connector in the ALM Accelerator App). This permission can be found under **APIs my organization uses**.
@@ -125,7 +123,7 @@ Sign in to [portal.azure.com](https://portal.azure.com).
 
 1. Select **Add a Redirect URI** > **Add a Platform** > **Web**
 
-1. <a name="appredirect"></a>Set the **Redirect URI** to https://global.consent.azure-apim.net/redirect 
+1. <a name="appredirect"></a>Set the **Redirect URI** to <https://global.consent.azure-apim.net/redirect>
 
     >[!NOTE] You may need to update this later when configuring your custom connector after installing the app if this URL is different than the Redirect URL populated in the Custom Connector
 
@@ -133,7 +131,7 @@ Sign in to [portal.azure.com](https://portal.azure.com).
 
 ### Give Power App Management Permission to your App
 
-In order for the pipelines to perform certain actions against the environments in your Power Platform tenant you will need to grant Power App Management permissions to your App registration. To do so you will need to run the following PowerShell commandlet as an interactive user that has Power Apps administrative privileges. You will need to run this command once, using an interactive user, in PowerShell after your app registration has been created. The command gives permissions to the Service Principal to be able to execute environment related functions including querying for environments and connections via Microsoft.PowerApps.Administration.PowerShell (https://docs.microsoft.com/en-us/powershell/module/microsoft.powerapps.administration.powershell/new-powerappmanagementapp?view=pa-ps-latest). For more information on the **New-PowerAppManagementApp** cmdlet see here https://docs.microsoft.com/en-us/powershell/module/microsoft.powerapps.administration.powershell/new-powerappmanagementapp?view=pa-ps-latest
+In order for the pipelines to perform certain actions against the environments in your Power Platform tenant you will need to grant Power App Management permissions to your App registration. To do so you will need to run the following PowerShell commandlet as an interactive user that has Power Apps administrative privileges. You will need to run this command once, using an interactive user, in PowerShell after your app registration has been created. The command gives permissions to the Service Principal to be able to execute environment related functions including querying for environments and connections via Microsoft.PowerApps.Administration.PowerShell (<https://docs.microsoft.com/powershell/module/microsoft.powerapps.administration.powershell/new-powerappmanagementapp?view=pa-ps-latest>). For more information on the **New-PowerAppManagementApp** cmdlet see here <https://docs.microsoft.com/powershell/module/microsoft.powerapps.administration.powershell/new-powerappmanagementapp?view=pa-ps-latest>
 
 > [IMPORTANT!] Currently this commandlet gives elevated permissions (e.g. Power Platform Admin) to the app registration. Your organization's security policies may not allow for these types of permissions. Ensure that these permissions are allowed before continuing. In the case that these elevated permissions are not allowed you will not be able to use the AA4AM pipelines.
 
@@ -145,43 +143,43 @@ New-PowerAppManagementApp -ApplicationId [the Application (client) ID you copied
 
 ### Install Azure DevOps Extensions
 
-The ALM Accelerator uses several Azure DevOps extensions, including some third-party Extensions that are available in the Azure DevOps marketplace. Under Organization Settings in Azure DevOps install the following extensions. For more information regarding Microsoft and third-party Azure DevOps extensions see here https://docs.microsoft.com/en-us/azure/devops/marketplace/trust?view=azure-devops. In addition, each of the thrid-party extensions web pages and the link to their source code are provided below.
+The ALM Accelerator uses several Azure DevOps extensions, including some third-party Extensions that are available in the Azure DevOps marketplace. Under Organization Settings in Azure DevOps install the following extensions. For more information regarding Microsoft and third-party Azure DevOps extensions see here <https://docs.microsoft.com/azure/devops/marketplace/trust?view=azure-devops>. In addition, each of the thrid-party extensions web pages and the link to their source code are provided below.
 
-1. Go to https://dev.azure.com and select **Organization settings**
+1. Go to <https://dev.azure.com> and select **Organization settings**
 1. Select **General** > **Extension**
 ![image.png](media/almacceleratoradvanced-components/image-3ccc9c10-4cd7-4188-9881-952bba2701dc.png "Navigate to Organization Settings and Select General > Extensions")
 1. Install the following Extensions
-   - **Power Platform Build Tools (required)**: This extension contains the first-party build tasks for Dataverse. (https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.PowerPlatform-BuildTools)
+   - **Power Platform Build Tools (required)**: This extension contains the first-party build tasks for Dataverse. (<https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.PowerPlatform-BuildTools>)
 
-   - **Replace Tokens (required)**: This extension is used by the pipelines to replace tokens in configuration files in order to be able to store secure values in private variables configured for a pipeline. (https://marketplace.visualstudio.com/items?itemName=qetza.replacetokens | https://github.com/qetza/vsts-replacetokens-task)
+   - **Replace Tokens (required)**: This extension is used by the pipelines to replace tokens in configuration files in order to be able to store secure values in private variables configured for a pipeline. (<https://marketplace.visualstudio.com/items?itemName=qetza.replacetokens> | <https://github.com/qetza/vsts-replacetokens-task>)
 
    - **SARIF SAST Scans Tab (optional)**: This extension can be used to visualize the .**sarif files** that get generated by the **Solution Checker** during a build. ([SARIF SAST Scans Tab - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=sariftools.scans))
-   
-      ![image-20210217102344719](media/almacceleratoradvanced-components/image-20210217102344719.png "Image of SARIF SAST Scans Tab in Azure DevOps")
-   
 
+      ![Image of SARIF SAST Scans Tab in Azure DevOps](media/almacceleratoradvanced-components/image-20210217102344719.png)
 
 ### Clone the YAML Pipelines from GitHub to your Azure DevOps instance
 
-1. Go to https://dev.azure.com/ and **sign in to Azure DevOps (AzDO)**.
+1. Go to <https://dev.azure.com/> and **sign in to Azure DevOps (AzDO)**.
 1. Create a **new project** or select an **existing project**.
 1. Go to **Repos** and select **Import repository** from the repository dropdown
 
-   ![clone-template-repository](media/setup-almacceleratoradvanced/clone-template-repository-1.png)
+   ![clone-template-repository](media/setup-almacceleratoradvanced/clone-template-repository-1.png  "Import a repository into Azure DevOps")
 
-1. Enter https://github.com/microsoft/coe-alm-accelerator-templates as the **Clone URL** and select **Import**
+1. Enter <https://github.com/microsoft/coe-alm-accelerator-templates> as the **Clone URL** and select **Import**
 1. Check that the default branch for this repo is `main`. Choose **Repos** and **Branches** and ensure that the `main` branch is tagged as the default:
-   ![Check default branch on imported repository](media/setup-almacceleratoradvanced/check-default-branch-imported-repository.png)
+   ![Check default branch on imported repository](media/setup-almacceleratoradvanced/check-default-branch-imported-repository.png "Verify that the Default Branch in the imported repository")
    If it is not, select the 3 vertical dots corresponding to the `main` branch and from the **More options** menu, choose **Set as default branch**
-   ![Set default branch on imported repository](media/setup-almacceleratoradvanced/set-default-branch-imported-repository.png)
+   ![Set default branch on imported repository](media/setup-almacceleratoradvanced/set-default-branch-imported-repository.png "If not the default branch select Set as default branch")
 
-   > [!NOTE] The AzDO repo you created above will be where the Solution Pipeline Templates and the Export / Import Pipelines will run. Later when you create the Pipelines for your solutions you may need to reference this specific Project/Repo if you choose to source control your solutions in another repo in AzDO.
+   > [!NOTE]
+The AzDO repo you created above will be where the Solution Pipeline Templates and the Export / Import Pipelines will run. Later when you create the Pipelines for your solutions you may need to reference this specific Project/Repo if you choose to source control your solutions in another repo in AzDO.
 
 ### Create Pipelines for Import, Delete and Export of Solutions
 
-Following the steps below to create the following pipelines based on the YAML in the DevOps Repo. These pipelines will run when you **Commit to Git**, **Import a Solution** or **Delete a Solution** from the App, respectively. 
+Following the steps below to create the following pipelines based on the YAML in the DevOps Repo. These pipelines will run when you **Commit to Git**, **Import a Solution** or **Delete a Solution** from the App, respectively.
 
-> [!NOTE] If all of your exports are expected to perform the same actions regardless of the solution for which the pipeline is running it's sufficient to create a single export pipeline as described below. However, there may be circumstances where you want to do things differently based on the specific solution when exporting. In that case you can append the Solution name to the export-solution-to-git pipeline to have the app execute your specific solution pipeline(s) when you perform the actions in the app (e.g. export-solution-to-git-SampleSolution).
+> [!NOTE]
+If all of your exports are expected to perform the same actions regardless of the solution for which the pipeline is running it's sufficient to create a single export pipeline as described below. However, there may be circumstances where you want to do things differently based on the specific solution when exporting. In that case you can append the Solution name to the export-solution-to-git pipeline to have the app execute your specific solution pipeline(s) when you perform the actions in the app (e.g. export-solution-to-git-SampleSolution).
 
 | YAML File                                    | Pipeline Name                            |
 | -------------------------------------------- | ---------------------------------------- |
@@ -191,26 +189,26 @@ Following the steps below to create the following pipelines based on the YAML in
 
 1. In Azure DevOps go to **Pipelines** and **Create a New Pipeline**
 1. Select **Azure Repos Git** for your code Repository and point to Azure DevOps repo you created and seeded with the pipeline templates in the steps above.
-    ![image.png](media/almacceleratoradvanced-components/image-b27c7dc5-7fe7-449f-99bc-73b9b351cc94.png)
+    ![image.png](media/almacceleratoradvanced-components/image-b27c7dc5-7fe7-449f-99bc-73b9b351cc94.png "Select Azure Repos Git to create a new pipeline")
 1. On the **Configure your pipeline** page select **Existing Azure Pipelines YAML file** and point to **/Pipelines/export-solution-to-git.yml**, **/Pipelines/import-unmanaged-to-dev-environment.yml** or **/Pipelines/delete-unmanaged-solution-and-components.yml**  and Select **Continue**.
-    ![image-20210309102040713](media/almacceleratoradvanced-components/image-20210309102040713.png)
+    ![image-20210309102040713](media/almacceleratoradvanced-components/image-20210309102040713.png "Select the path to the export / import or delete YAML file")
 1. On the next screen Select **Save** and then Select the **3 dots next to Run Pipeline** and Select **Rename/Move**.
-    ![image.png](media/almacceleratoradvanced-components/image-c4e3cc16-3abd-453b-a420-9366ef587e8c.png)
+    ![image.png](media/almacceleratoradvanced-components/image-c4e3cc16-3abd-453b-a420-9366ef587e8c.png  "Rename the newly created pipeline")
 1. Update the pipeline name to **export-solution-to-git**, **import-unmanaged-to-dev-environment** or **delete-unmanaged-solution-and-components** and select **Save**.
 
 ### Create Export Pipeline variables (Optional)
 
 There are a few optional pipeline variables that can be set on the export-solution-to-git pipeline to control what information is persisted to source control. If you want to **apply these settings globally** you can set the following variables on your export-solution-to-git pipeline or in the case that you want to **apply these to specific solutions on export** you can create a specific export pipeline for your solution as described above and setting the following variables on your solution specific export pipeline.
 
-The **DoNotExportCurrentEnvironmentVariableValues** variable can be used to ensure that the current value of environment variables are never committed to source control during the export process. 
+The **DoNotExportCurrentEnvironmentVariableValues** variable can be used to ensure that the current value of environment variables are never committed to source control during the export process.
 
->  [!IMPORTANT] This pipeline variable is recommended in order to use the deployment configuration functionality in the AA4AM App.
+> [!IMPORTANT] This pipeline variable is recommended in order to use the deployment configuration functionality in the AA4AM App.
 
-![image-20210723164226271](media/setup-almacceleratoradvanced/image-20210723164226271.png)
+![image-20210723164226271](media/setup-almacceleratoradvanced/image-20210723164226271.png "Create the DoNotExportCurrentEnvironmentVariableValues pipeline variable and set the value to true")
 
 The **VerifyDefaultEnvironmentVariableValues** can be used to ensure that specific default environment variable values are set during the export of a solution. The default environment variable values can be configured as part of the customDeploymentSettings.json configuration in the [Deployment Configuration Guide](setup-almacceleratoradvanced-deployment-config.md)
 
-![image-20210723164756178](media/setup-almacceleratoradvanced/image-20210723164756178.png)
+![image-20210723164756178](media/setup-almacceleratoradvanced/image-20210723164756178.png "Create the VerifyDefaultEnvironmentVariableValuespipeline variable and set the value to true")
 
 ### Create Pipeline global variables
 
@@ -246,14 +244,14 @@ The **VerifyDefaultEnvironmentVariableValues** can be used to ensure that specif
    | Contribute | Allow |
    | Contribute to pull requests | Allow |
    | Create branch | Allow |
-   
-   ![image.png](media/almacceleratoradvanced-components/image-8505cb38-0569-442b-aac0-cc9ceea3b5a5.png)
-   
+
+   ![image.png](media/almacceleratoradvanced-components/image-8505cb38-0569-442b-aac0-cc9ceea3b5a5.png "Set repository permissions to allow contributions, create pull requests and create branches")
+
 1. Find and select the user name **[Your Project Name] Build Service ([Your Organization Name])** under Users and set the **same values as above**.
 
 1. Select **Pipelines** and Select **Manage Security**
 
-   ![image-20210917105656888](media/setup-almacceleratoradvanced/image-20210917105656888.png)
+   ![image-20210917105656888](media/setup-almacceleratoradvanced/image-20210917105656888.png "Select Manage Security for Pipelines")
 
 1. Set the following permissions for the Build Service user.
 
@@ -267,7 +265,7 @@ The **VerifyDefaultEnvironmentVariableValues** can be used to ensure that specif
    | View build pipeline                   | Allow |
    | View builds                           | Allow |
 
-   ![image-20210917105904945](media/setup-almacceleratoradvanced/image-20210917105904945.png)
+   ![image-20210917105904945](media/setup-almacceleratoradvanced/image-20210917105904945.png "Set pipeline permissions")
 
 ## Development Project Setup
 
@@ -281,14 +279,14 @@ Each Dataverse environment (e.g Development, Validation, Test and Production) wi
 >
 >Validation, Test and Production environment service connections only need permissions granted to pipelines (e.g. Build Service)
 
-1. Go to https://dev.azure.com and select your **Project**
+1. Go to <https://dev.azure.com> and select your **Project**
 
 1. Under **Project Settings** in your Azure DevOps project select the **Service connections** menu item.
 
 1. Select **Create/New service connection** and Search for Power Platform and select the **Power Platform** Service connection type and Select **Next**.
     ![image.png](media/almacceleratoradvanced-components/image-79dc6002-cb1f-4533-95d5-753ef179c77e.png)
 
-1. In the **Server URL** put your environment URL (e.g. https://myorg.crm.dynamics.com/). **NOTE: You must include the trailing forward slash see below**
+1. In the **Server URL** put your environment URL (e.g. <https://myorg.crm.dynamics.com/>). **NOTE: You must include the trailing forward slash see below**
 
 1. Enter the same value as above for the **Service Connection Name**.  **NOTE: You must include the trailing forward slash**
 
@@ -344,13 +342,14 @@ Each Dataverse environment (e.g Development, Validation, Test and Production) wi
 
 When you create a solution in Dataverse you'll need to **create pipelines specifically for that solution**. Follow these steps for creating pipelines for your solution in Azure DevOps. There are sample pipelines included in the Pipeline directory in the CoE ALM Templates repo.
 
-- https://github.com/microsoft/coe-alm-accelerator-templates/blob/main/Pipelines/build-deploy-validation-SampleSolution.yml
-- https://github.com/microsoft/coe-alm-accelerator-templates/blob/main/Pipelines/build-deploy-test-SampleSolution.yml
-- https://github.com/microsoft/coe-alm-accelerator-templates/blob/main/Pipelines/build-deploy-prod-SampleSolution.yml
+- <https://github.com/microsoft/coe-alm-accelerator-templates/blob/main/Pipelines/build-deploy-validation-SampleSolution.yml>
+- <https://github.com/microsoft/coe-alm-accelerator-templates/blob/main/Pipelines/build-deploy-test-SampleSolution.yml>
+- <https://github.com/microsoft/coe-alm-accelerator-templates/blob/main/Pipelines/build-deploy-prod-SampleSolution.yml>
 
 The sample pipelines provides flexibility for organizations to store their pipeline templates in a separate project or repo from the specific solution pipeline YAML. Follow the steps below to configure your **solution pipeline**. Repeat the steps for each of the solutions you will be source controlling with the ALM Accelerator.
 
-> [!IMPORTANT] The pipeline YAML for your solution pipeline will always be stored in the same repo to which you will be source controlling your solution. However, the pipeline templates (i.e. the folder Pipeline\Templates) can exist in either the same repo as your solution pipeline YAML or in a separate repo and/or project. 
+> [!IMPORTANT] 
+The pipeline YAML for your solution pipeline will always be stored in the same repo to which you will be source controlling your solution. However, the pipeline templates (i.e. the folder Pipeline\Templates) can exist in either the same repo as your solution pipeline YAML or in a separate repo and/or project.
 
 ### Validate Your Setup Using the ALM Accelerator Sample Solution (Optional)
 
@@ -377,8 +376,8 @@ The following steps show how to **create a pipeline from the sample pipeline YAM
    ![image-20210408172106137](media/almacceleratoradvanced-components/image-20210408172106137.png)
 
 1. Navigate to the **Repo where you want to source control your solution**.
-   
-1. Create a new Branch based on **your default branch** in the Repo with the name of your solution (e.g. **MyNewSolution**) 
+
+1. Create a new Branch based on **your default branch** in the Repo with the name of your solution (e.g. **MyNewSolution**)
 
     > [!NOTE] This branch will be your next version (v-next) branch for your Solution in the repo. All development work should be branched from this branch to a developers personal working branch and then merged into the v-next branch in order to push to Validation and Testing. Later when a release is ready the v-next branch can be merged into the main or default branch.
 
@@ -387,9 +386,9 @@ The following steps show how to **create a pipeline from the sample pipeline YAM
     ![image-20210507110801961](media/setup-almacceleratoradvanced/image-20210507110801961.png)
 
 1. Select **New** from the top menu and then **Folder**
-   
+
    ![image-20210408144230561](media/almacceleratoradvanced-components/image-20210408144230561.png)
-   
+
 1. Give the new **Folder the same name as your solution** (e.g. MyNewSolution) and the new Pipeline YAML file a name (e.g. **build-deploy-validation-SampleSolution.yml**, **build-deploy-test-SampleSolution.yml** or **build-deploy-prod-SampleSolution.yml**). Select **Create**.
 
    ![image-20210408144634619](media/almacceleratoradvanced-components/image-20210408144634619.png)
@@ -429,9 +428,9 @@ The following steps show how to **create a pipeline from the sample pipeline YAM
 
    ![image-20210409083958467](media/almacceleratoradvanced-components/image-20210409083958467.png)
 
-1. Update the **Default branch for manual and scheduled builds** for more information see the documentation here 
+1. Update the **Default branch for manual and scheduled builds** for more information see the documentation here
 
-      > [!NOTE] If your new pipeline was not created in the default branch of the repo you may need to update the **Default branch for manual and scheduled builds**. See the following link for more information on **Default branch for manual and scheduled builds**. [Configure pipeline triggers - Azure Pipelines | Microsoft Docs](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/pipeline-triggers?view=azure-devops&tabs=YAML#branch-considerations-for-pipeline-completion-triggers)
+      > [!NOTE] If your new pipeline was not created in the default branch of the repo you may need to update the **Default branch for manual and scheduled builds**. See the following link for more information on **Default branch for manual and scheduled builds**. [Configure pipeline triggers - Azure Pipelines | Microsoft Docs](https://docs.microsoft.com/azure/devops/pipelines/process/pipeline-triggers?view=azure-devops&tabs=YAML#branch-considerations-for-pipeline-completion-triggers)
 
       - Select Edit on your new Pipeline
 
@@ -439,7 +438,7 @@ The following steps show how to **create a pipeline from the sample pipeline YAM
 
         ![image-20210510163520532](media/setup-almacceleratoradvanced/image-20210510163520532.png)
 
-      - **Select the YAML tab** and **Select Get Sources**. 
+      - **Select the YAML tab** and **Select Get Sources**.
 
       - Update the **Default branch for manual and scheduled builds** to point to your **Solution branch**
 
@@ -481,7 +480,7 @@ As mentioned in the note above, the previous section allows you to create pipeli
 
 8. Update the following values in your new Pipeline YAML.
 
-   - Update the **trigger -> branches -> include** to the branch(es) for which changes would trigger a deployment to production. 
+   - Update the **trigger -> branches -> include** to the branch(es) for which changes would trigger a deployment to production.
 
    - Change the **resources -> repositories -> name** to the repo name that contains your pipeline templates. If your template repository is in another AzDO project you can use the format **projectname/reponame** here. In this case the repo is called **coe-alm-accelerator-templates** and it exists in the same project as our MyNewSolution repo. Additionally, you can specify a branch for where your templates live using the **ref** parameter if required.
 
@@ -505,7 +504,7 @@ As mentioned in the note above, the previous section allows you to create pipeli
 
 These variables are required by every deployment pipeline. The Environment variable is **EnvironmentName** and the Service Connection variable is **ServiceConnection**.
 
-The **EnvironmentName** variable is used to specify the Azure DevOps environment being deployed to in order to enable tracking deployment history and set permissions and approvals for deployment to specific environments. Depending on the environment to which you're deploying set this value to **Validate, Test or Production** For more information on Environments in AzureDevOps see https://docs.microsoft.com/en-us/azure/devops/pipelines/process/environments.
+The **EnvironmentName** variable is used to specify the Azure DevOps environment being deployed to in order to enable tracking deployment history and set permissions and approvals for deployment to specific environments. Depending on the environment to which you're deploying set this value to **Validate, Test or Production** For more information on Environments in AzureDevOps see <https://docs.microsoft.com/azure/devops/pipelines/process/environments>.
 
 ![image-20210414170154479](media/almacceleratoradvanced-components/image-20210414170154479.png)
 
@@ -519,7 +518,7 @@ You can optionally set a pipeline variable on your deployment pipelines to turn 
 
 ### Setting Branch Policies for Pull Request Validation
 
-In order to leverage executing the build pipeline for your solution when a **Pull Request is created** you'll need to create a **Branch Policy** to execute the Pipeline you created in the previous step. Use the following steps to set your Branch Policy. For more information on Branch Policies see here https://docs.microsoft.com/en-us/azure/devops/repos/git/branch-policies?view=azure-devops
+In order to leverage executing the build pipeline for your solution when a **Pull Request is created** you'll need to create a **Branch Policy** to execute the Pipeline you created in the previous step. Use the following steps to set your Branch Policy. For more information on Branch Policies see here <https://docs.microsoft.com/azure/devops/repos/git/branch-policies?view=azure-devops>
 
 1. In Azure DevOps go to **Repos** and select the **Branches** folder
 
@@ -559,13 +558,13 @@ If your solution requires these additional configuration settings and / or data 
 
 ### Install ALM Accelerator Solution in Dataverse
 
-Download the **latest managed solution**(s) from GitHub (https://github.com/microsoft/coe-starter-kit/releases).
+Download the **latest managed solution**(s) from GitHub (<https://github.com/microsoft/coe-starter-kit/releases>).
 
 1. > [!NOTE] The screenshot below is for reference as to where the managed solution exists under a release. The actual version should be the most recent release.
 
    ![image-20210430150752479](media/setup-almacceleratoradvanced/image-20210430150752479.png)
 
-2. Go to https://make.powerapps.com and select the environment you want to use to host the ALM Accelerator App
+2. Go to <https://make.powerapps.com> and select the environment you want to use to host the ALM Accelerator App
 
 3. Select **Solutions** from the left navigation.
 
@@ -593,7 +592,7 @@ Download the **latest managed solution**(s) from GitHub (https://github.com/micr
 
 1. Select **Update Connector**
 
-1. Verify that the **Redirect URL** is populated on the Security page with the URL https://global.consent.azure-apim.net/redirect. If the **Redirect URL is other than https://global.consent.azure-apim.net/redirect** copy the URL and [return to the app registration your created](#create-an-app-registration-in-your-aad-environment) and update the [Redirect URI](#appredirect) you set earlier to the updated URL.
+1. Verify that the **Redirect URL** is populated on the Security page with the URL <https://global.consent.azure-apim.net/redirect>. If the **Redirect URL is other than <https://global.consent.azure-apim.net/redirect>** copy the URL and [return to the app registration your created](#create-an-app-registration-in-your-aad-environment) and update the [Redirect URI](#appredirect) you set earlier to the updated URL.
 
 1. Verify the connector from the **Test** menu once you've completed the steps above.
     - Navigate to the **Test** menu.
@@ -624,4 +623,4 @@ When you setup your pipelines such that the pipeline templates are stored in a d
 
 Alternatively, to disable this notification for all pipelines you can turn off Limit Job authorization scope to referenced Azure DevOps repositories in **Project -> Settings -> General**. This setting is turned on by default when you create a new project.  ![image-20210426143538533](media/almacceleratoradvanced-components/image-20210426143538533.png)
 
->  [!NOTE] that the project settings can be overridden at the Azure DevOps organization level, so if the option to change this is disabled in project settings, check in Organization Settings.
+> [!NOTE] that the project settings can be overridden at the Azure DevOps organization level, so if the option to change this is disabled in project settings, check in Organization Settings.

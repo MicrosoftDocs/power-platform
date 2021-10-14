@@ -20,20 +20,22 @@ search.app:
 
 # Configuration and Data Deployment in Pipelines (Preview)
 
-> [!NOTE] ALM Accelerator for Advanced Makers is currently in public preview. Please see Issues currently tagged as [vnext](https://github.com/microsoft/coe-starter-kit/issues?q=is%3Aopen+is%3Aissue+label%3Aalm-accelerator+label%3Avnext) for the Roadmap to be completed prior to general availability. While in Public Preview it can be expected that there will be breaking changes and frequent updates to address feedback from preview members. Additionally, the Public Preview is reliant on the experimental [Power Apps Source File Pack and Unpack Utility](https://github.com/microsoft/PowerApps-Language-Tooling) that is being developed separately from AA4AM.
+> [!NOTE]
+ALM Accelerator for Advanced Makers is currently in public preview. Please see Issues currently tagged as [vnext](https://github.com/microsoft/coe-starter-kit/issues?q=is%3Aopen+is%3Aissue+label%3Aalm-accelerator+label%3Avnext) for the Roadmap to be completed prior to general availability. While in Public Preview it can be expected that there will be breaking changes and frequent updates to address feedback from preview members. Additionally, the Public Preview is reliant on the experimental [Power Apps Source File Pack and Unpack Utility](https://github.com/microsoft/PowerApps-Language-Tooling) that is being developed separately from AA4AM.
 
 The ALM Accelerator uses json formatted files for updating **connection references, environment variables, setting permissions for AAD Groups and Dataverse teams** as well as **sharing Canvas Apps and updating ownership of solution components** such as Power Automate flows. The instructions below are **optional** and depend on what type of components your solution pipelines deploy. For instance, if your solutions only contain Dataverse Tables, Columns and Model Driven Apps with no per environment configuration or data needed then **some of these steps may not be necessary** and can be skipped. The following configuration file allow you to fully automate the deployment of your solutions and specify how to configure items that are specific to the environment to which the solution is being deployed.
 
-> [!NOTE] For an example of configuration and data deployment configuration see the ALMAcceleratorSampleSolution here  https://github.com/microsoft/coe-starter-kit/blob/ALMAcceleratorSampleSolution/ALMAcceleratorSampleSolution/config/deploymentSettings.json and https://github.com/microsoft/coe-starter-kit/blob/ALMAcceleratorSampleSolution/ALMAcceleratorSampleSolution/config/customDeploymentSettings.json
+> [!NOTE]
+For an example of configuration and data deployment configuration see the ALMAcceleratorSampleSolution here <https://github.com/microsoft/coe-starter-kit/blob/ALMAcceleratorSampleSolution/ALMAcceleratorSampleSolution/config/deploymentSettings.json> and <https://github.com/microsoft/coe-starter-kit/blob/ALMAcceleratorSampleSolution/ALMAcceleratorSampleSolution/config/customDeploymentSettings.json>
 
 ## Before you start...
 
 The following documentation is intended to be a step-by-step process for setting up deployment configuration files manually. However, it is recommended that you use the in app feature to generate this information on export of your solution. This document will provide details and context for the actions that are performed by the AA4AM app and pipelines and act as a reference for those who want to know the specifics of each step in the process.
 
 
-### Creating a Deployment Settings Json File
+## Creating a Deployment Settings Json File
 
-When storing the customDeploymentSettings.json in the root of the config directory the same configuration will apply to all envionments. Assuming that you are using File Transformation or Token Replacement to store all of the environment specific information, you can specify the environment specific values in your Pipeline Variables. However, **you can also create environment specific customDeploymentSettings.json files** by creating sub-directories in the config directory with the name of the Environment to allow for more flexibility. The directory name in this case **must match the EnvironmentName pipeline variable** you created when setting up your pipeline (e.g. Validate, Test, Production). If no environment specific deployment settings json / directory is found the pipelines will revert to the configuration in the root of the config directory.
+When storing the customDeploymentSettings.json in the root of the config directory the same configuration will apply to all environments. Assuming that you are using File Transformation or Token Replacement to store all of the environment specific information, you can specify the environment specific values in your Pipeline Variables. However, **you can also create environment specific customDeploymentSettings.json files** by creating sub-directories in the config directory with the name of the Environment to allow for more flexibility. The directory name in this case **must match the EnvironmentName pipeline variable** you created when setting up your pipeline (e.g. Validate, Test, Production). If no environment specific deployment settings json / directory is found the pipelines will revert to the configuration in the root of the config directory.
 
 Additionally, you can **create user specific configuration files** (e.g. the JohannaDev directory pictured above) for individual developers to use when importing unmanaged solutions from source control. When the user imports an unmanaged solution from source control they will be presented with the option to choose a specific configuration.
 
@@ -460,7 +462,7 @@ The solution component ownership property in the customDeploymentConfiguration.j
    ]
    ```
 
-   - The **solution component type code** is based on the component types specified in the following doc https://docs.microsoft.com/en-us/dynamics365/customer-engagement/web-api/solutioncomponent?view=dynamics-ce-odata-9 (e.g. a Power Automate Flow is component type 29). The component type should be specified as an integer value (i.e. with no quotes)
+   - The **solution component type code** is based on the component types specified in the following doc https://docs.microsoft.com/dynamics365/customer-engagement/web-api/solutioncomponent?view=dynamics-ce-odata-9 (e.g. a Power Automate Flow is component type 29). The component type should be specified as an integer value (i.e. with no quotes)
    - The **unique name of the solution component**, in the case of a Power Automate Flow, has to be taken from the unpacked solution. This is a limitation of flows currently not requiring unique names when they are created. As such the only true unique identifier for a Flow is the internal ID the system uses to identify it in a solution.
      ![Unpacked solution workflow xml file](media/setup-almacceleratoradvanced-deployment-config/flowuniquename.png)
       ![Unpacked solution workflow xml showing WorkflowId](media/setup-almacceleratoradvanced-deployment-config/flowuniquename2.png)
@@ -495,7 +497,7 @@ The solution component ownership property in the customDeploymentConfiguration.j
 
 ### Importing Data from your Pipeline
 
-In many cases there will be configuration or seed data that you will want to import into your Dataverse environment initially after deploying your solution to the target environment. The pipelines are configured to import data using the **Configuration Migration tool** available via nuget https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.ConfigurationMigration.Wpf. To add configuration data for your pipeline use the following steps. For more information on the **Configuration Migration tool** see here https://docs.microsoft.com/en-us/power-platform/admin/manage-configuration-data
+In many cases there will be configuration or seed data that you will want to import into your Dataverse environment initially after deploying your solution to the target environment. The pipelines are configured to import data using the **Configuration Migration tool** available via nuget https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.ConfigurationMigration.Wpf. To add configuration data for your pipeline use the following steps. For more information on the **Configuration Migration tool** see here https://docs.microsoft.com/power-platform/admin/manage-configuration-data
 
 1. Clone the AzDO Repo where your solution is to be source controlled and where you created your solution pipeline YAML to your local machine.
 
@@ -503,7 +505,7 @@ In many cases there will be configuration or seed data that you will want to imp
 
    ![config directory under solution directory in local repo](media/setup-almacceleratoradvanced-deployment-config/image-20210709094855626.png)
 
-1. Install the **Configuration Migration tool** per the instructions here https://docs.microsoft.com/en-us/dynamics365/customerengagement/on-premises/developer/download-tools-nuget
+1. Install the **Configuration Migration tool** per the instructions here https://docs.microsoft.com/dynamics365/customerengagement/on-premises/developer/download-tools-nuget
 
 1. Open the **Configuration Migration tool** select **Create schema** and select **Continue**
 
@@ -545,3 +547,5 @@ In many cases there will be configuration or seed data that you will want to imp
    ![Configuration Migration Data unzipped in ConfigurationMigrationData directory](media/setup-almacceleratoradvanced-deployment-config/image-20210309121221510.png)
 
 1. Finally, **Commit the changes** with your data to Azure DevOps.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

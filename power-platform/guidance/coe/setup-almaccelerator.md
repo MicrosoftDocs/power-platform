@@ -19,10 +19,10 @@ search.app:
 ---
 
 # Set up ALM Accelerator for Makers components
+
 This solution uses [GitHub actions](../../alm/devops-github-actions.md) for source control and deployments. The [GitHub connector](/connectors/github/) is used in flows to interact with GitHub. More information: [Use the ALM Accelerator for Makers components](almaccelerator-components.md)
 
->[!IMPORTANT]
->The ALM Accelerator for Makers components don't have a dependency on other components of the CoE Starter Kit. It can be used independently.
+> [!IMPORTANT] The ALM Accelerator for Makers components don't have a dependency on other components of the CoE Starter Kit. It can be used independently.
 
 ## Prerequisites
 
@@ -217,7 +217,7 @@ GitHub supports org secrets and repository-level secrets. If you have a paid pla
 
 Learn more: [GitHub Team offerings](https://docs.github.com/free-pro-team@latest/github/getting-started-with-github/githubs-products#github-team).
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > The environment admin must have GitHub repo admin permissions to complete the following steps.
 
 ## Paid GitHub org plan
@@ -248,6 +248,5 @@ If you don't have a paid GitHub org plan, do the following for all projects crea
 1. Repeat the preceding steps to add a **TEST_ENVIRONMENT_SECRET** and **PROD_ENVIRONMENT_SECRET**.
 
 You can now [use the ALM Accelerator for Makers components](almaccelerator-components.md).
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

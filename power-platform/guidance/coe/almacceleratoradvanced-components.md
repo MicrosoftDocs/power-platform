@@ -34,10 +34,10 @@ Underlying, the entire solution is the Dataverse Solution System. All Applicatio
 
 The target end user for AA4AM is the Power Platform Maker who is comfortable with Solutions as well as Git, Azure DevOps and ALM concepts (e.g. Source Control Pushes, Pull Requests, Merging and Pipelines). If you are not already familiar with these technologies and concepts, you should consider taking the following courses.
 
-1. [Introduction to version control with Git](https://docs.microsoft.com/en-us/learn/paths/intro-to-vc-git/)
-1. [Use Git version-control tools in Visual Studio Code](https://docs.microsoft.com/en-us/learn/modules/use-git-from-vs-code/)
-1. [Build applications with Azure DevOps](https://docs.microsoft.com/en-us/learn/paths/build-applications-with-azure-devops/)
-1. [Manage solutions in Power Apps and Power Automate](https://docs.microsoft.com/en-us/learn/modules/manage-solutions-power-automate/)
+1. [Introduction to version control with Git](https://docs.microsoft.com/learn/paths/intro-to-vc-git/)
+1. [Use Git version-control tools in Visual Studio Code](https://docs.microsoft.com/learn/modules/use-git-from-vs-code/)
+1. [Build applications with Azure DevOps](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops/)
+1. [Manage solutions in Power Apps and Power Automate](https://docs.microsoft.com/learn/modules/manage-solutions-power-automate/)
 
 The target user for setting up AA4AM would generally be an Administrator with a deeper understanding of Power Platform Environments and Solutions, Azure DevOps Pipelines and Administration as well as familiarity with Azure Active Directory and Dataverse Admininstration.
 
@@ -207,3 +207,5 @@ The AA4AM Canvas App provides a convenience layer on top of the AA4AM Pipelines 
    ![image-20210303085132733](media/almacceleratoradvanced-components/image-20210303085132733.png)
 
 1. For Production a Pull Request will need to be created in Azure DevOps that merges the changes into your Production release branch. The same approval process will be required depending on your branch policies and once the PR is completed your solution will be pushed to Production. Once the pipeline for deploying to Production is finished you will see the status of the deployment in the App.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
