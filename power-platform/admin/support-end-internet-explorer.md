@@ -4,7 +4,7 @@ description: Information about support end for Internet Explorer.
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/13/2021
+ms.date: 10/14/2021
 ms.subservice: admin
 ms.author: aorth 
 author: adrianorth
