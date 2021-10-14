@@ -99,12 +99,12 @@ With the upcoming 2021 release wave 2 (public preview in August 2021 and GA in O
 
 #### Why is this needed? 
 
--	These tooltips aren't an accessible way to access information about the column. 
+-	These tooltips are not discoverable in a way that is accessible for sighted, non-sighted and mobile users to access additional information about the column. 
 
 #### Impact
 
 - Starting October 2021, these descriptions will no longer be available on hover. 
-- We will be introducing a new fully accessible feature for April 2022.
+- We will be introducing a new fully accessible feature for sighted, non-sighted and mobile users in April 2022.
 
 ## Business recommended icon on model-driven forms
 
