@@ -4,7 +4,7 @@ description: Information about support end for Internet Explorer.
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/23/2021
+ms.date: 10/14/2021
 ms.subservice: admin
 ms.author: aorth 
 author: adrianorth
@@ -18,6 +18,9 @@ search.app:
   - Flow
 ---
 # Support end for Internet Explorer 
+
+> [!IMPORTANT]
+> With 2022 release wave 2, Internet Explorer 11 will be blocked. Please switch to a modern browser.
 
 Microsoft Internet Explorer and Microsoft Edge Legacy support has ended. This topic outlines the experience that administrators and end users will see related to the support end. 
 
