@@ -85,11 +85,12 @@ Considerations and key actions you can take to initiate, grow, and sustain your 
 - Decide how you will communicate with the champions network (for example, in a Teams channel, a Yammer group, and/or an email distribution list).
 - Determine how the champions network will communicate and collaborate with each other directly (across organizational boundaries), to share updates and successes, and to connect with each other.
 - Hold regular meetings: Promote enthusiasm and cohesiveness of your community by holding regular monthly meetings. These can be a combination of in person and virtual meetings, but their consistency is key to having a thriving champions community.
-- Create a Champion team: Your champions should use the team you have setup for them for all program communications, feedback, and to find resources. In doing this they will become increasingly familiar with the product and its benefits. Get started with the [Adopt Office 365](../../../../MicrosoftTeams/general-teams-templates-in-the-admin-console) teams template, which will create relevant channels and apps for your champions program.
+- Create a Champions team: Your champions should use the team you have setup for them for all program communications, feedback, and to find resources. In doing this they will become increasingly familiar with the product and its benefits. Get started with the [Adopt Office 365](https://docs.microsoft.com/microsoftteams/general-teams-templates-in-the-admin-console) teams template, which will create relevant channels and apps for your champions program.
 
 ### Focus on the people
 
 Find enthusiastic champions who can commit time and effort. How can you help them, how can you unblock challenges, how can you celebrate them?
+
 - Provide materials ready to support their work (for example, access to training material and templates).
 - Ensure a regular rhythm for discussions with the champions on what’s working and what’s not.
 - Encourage the sharing of stories, either through show-and-tell sessions or regular newsletters. You can lean on our [best practices to share success stories](show-and-tell.md) for ideas on how to structure those stories.

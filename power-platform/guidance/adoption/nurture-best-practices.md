@@ -34,7 +34,7 @@ In the end, nurture means connecting the dots and creating a whole that is bette
 
 :::row:::
    :::column span="":::
-      <img src="media/i_share.svg" alt="Share icon" width="80"/><br><br>**Community** <br /> 
+      <img src="media/i_share.svg" alt="Decorative Share icon" width="80"/><br><br>**Community** <br /> 
 
 > [!div class="checklist"]
 > * [Find and support champions in your organization](champions.md)
@@ -44,13 +44,13 @@ In the end, nurture means connecting the dots and creating a whole that is bette
 
    :::column-end:::
    :::column span="":::
-      <img src="media/i_best-practices.svg" alt="Overview icon" width="80"/><br><br>**Evangelism**
+      <img src="media/i_best-practices.svg" alt="Decorative Evangelize icon" width="80"/><br><br>**Evangelism**
 > [!div class="checklist"]
 > * [Share success stories](show-and-tell.md)
 > * [Organize hackathons](hackathons.md)
    :::column-end:::
    :::column span="":::
-      <img src="media/i_advanced.svg" alt="Overview icon" width="80"/><br><br>**Training** <br />  
+      <img src="media/i_advanced.svg" alt="Decorative Training icon" width="80"/><br><br>**Training** <br />  
 
 > [!div class="checklist"]
 > * [Set training and upskilling strategy for makers](training-strategy.md)
