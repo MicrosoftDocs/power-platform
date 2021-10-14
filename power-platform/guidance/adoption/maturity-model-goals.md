@@ -127,3 +127,6 @@ Create [shared component libraries](https://docs.microsoft.com/power-platform/gu
       [Tell your story](https://aka.ms/powerplatformstories). Influence our best practices and inspire other leaders to go on the same journey.
    :::column-end:::
 :::row-end:::
+
+> [!div class="nextstepaction"]
+> [Next step: Details capabilities and characteristics](maturity-model-details.md)

@@ -96,6 +96,9 @@ Find below detailed characteristics and capabilities of an organization in each 
 | 400: Capable | <ul><li>Cross-functional teams plan and execute work jointly, including makers, testers and operational teams.</li><li>Collaborative planning for infrastructure and change enablement</li><li>Use of Common Data Models to aid data reuse</li></ul>|
 | 500: Leading |<ul><li>Teams form seamlessly to accommodate cross functional skills</li><li>Common development strategy and goals for Citizen and Pro developers needed for new projects</li></ul>  |
 
+> [!NOTE]
+> You can download a printable version from [this link](https://go.microsoft.com/fwlink/?linkid=2174946).
+
 |  |LEVEL 100 - INITIAL   |LEVEL 200 - REPEATABLE|LEVEL 300 - DEFINED|LEVEL 400 - CAPABLE|LEVEL 500 - EFFICIENT|
 |----------|-----------|------------|------------|------------|------------|
 |**Strategy and Vision**     | <ul><li>Innovation driven by Business Areas (bottom up)</li><li>Low-complexity scenarios</li><li>Limited re-use</li><li>Undefined strategy</li></ul>  | <ul><li>Common vision between IT and Business</li><li>Demand-management process</li></ul> | <ul><li>Dedicated Power Platform product owner</li><li>Bottom up and top down innovation</li><li>Defined understanding of Power Platform’s role in your organization’s IT portfolio</li></ul> | <ul><li>Established [Center of Excellence](/power-platform/guidance/adoption/coe) team</a></li><li>Increased delivery efficiency supports rapidly changing business needs</li><li>Business plans shared across departments</li></ul> | <ul><li>Power Platform is key part of the digital transformation strategy</li><li>Vision and strategy understood by all</li><li>Organization wide initiatives deliver larger scale apps</li><li>Enterprise Architecture decisions include Power Platform capabilities</li></ul> |

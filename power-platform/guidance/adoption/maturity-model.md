@@ -35,7 +35,12 @@ This model has broken this process down in five stages, based on the [Capability
 
 Each stage describes the states of individual disciplines such as Strategy & Vision, Administration, Governance, etc. The purpose of the model is to help organizations understand their capabilities along multiple dimensions on a clearly defined scale, decide which level they would like to achieve for each dimension and in what time frame, and improve their capabilities in tangible ways by progressing to the next level. These stages are not a checklist, nor do these stages need to progress at the same pace along all disciplines, but can be used to sense-check the organisation’s progress and help to inform where it needs to focus in order to advance further.
 
-## Learn more
 <!-- I'm not sure how to best tie this page together with the details. In the blog we had it all in one page and it was very long. Splitting it up makes sense. -->
+<!--
+## Learn more
 - [Goals and Opportunities](maturity-model-goals.md)
 - [Details capabilities and characteristics](maturity-model-details.md)
+-->
+
+> [!div class="nextstepaction"]
+> [Next step: Goals and Opportunities](maturity-model-goals.md)
