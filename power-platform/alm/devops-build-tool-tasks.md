@@ -92,8 +92,8 @@ Verifies a Power Platform environment service connection by connecting and makin
 
 | Parameters    | Description   |
 |---------------|---------------|
-| `authenticationType`<br/>Type of authentication | (Optional) Specify either **PowerPlatformEnvironment** for a username/password connection or **PowerPlatformSPN** for a Service Principal/client secret connection. |
-| `PowerPlatformEnvironment`<br/>Power Platform environment URL | The service endpoint for the environment to connect to. Defined under **Service Connections** in **Project Settings**. |
+| `authenticationType`<br/>Type of authentication | (Optional) Specify either **PowerPlatformEnvironment** for a username/password connection or **PowerPlatformSPN** for a Service Principal/client secret connection. More information: see `BuildTools.EnvironmentUrl` under [Power Platform Create Environment](#power-platform-create-environment) |
+| `PowerPlatformEnvironment`<br/>Power Platform environment URL | The service endpoint for the environment to connect to. Defined under **Service Connections** in **Project Settings**. More information: see `BuildTools.EnvironmentUrl` under [Power Platform Create Environment](#power-platform-create-environment) |
 | `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint for the environment to connect to. Defined under **Service Connections** in **Project Settings**. |
 
 ## Quality check
@@ -137,7 +137,7 @@ you might have inadvertently introduced when building your solution.
 
 | Parameters         | Description      |
 |--------------------|------------------|
-| `PowerPlatformSPN`<br/>Service Connection | (Required) A connection to a licensed Microsoft Power Platform environment is required to use the Power Platform checker.  Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type.<p/>Note: Service Principal is the only authentication method available for the checker task so if you are using username/password for all other tasks, you will have to create a separate connection to use with the checker task. For more information on how to configure service principals to be used with this task, see [Configure service principal connections for Power Platform environments](devops-build-tools.md#configure-service-connections-using-a-service-principal). |
+| `PowerPlatformSPN`<br/>Service Connection | (Required) A connection to a licensed Microsoft Power Platform environment is required to use the Power Platform checker.  Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type. More information: see `BuildTools.EnvironmentUrl` under [Power Platform Create Environment](#power-platform-create-environment)<p/>Note: Service Principal is the only authentication method available for the checker task so if you are using username/password for all other tasks, you will have to create a separate connection to use with the checker task. For more information on how to configure service principals to be used with this task, see [Configure service principal connections for Power Platform environments](devops-build-tools.md#configure-service-connections-using-a-service-principal). |
 | `UseDefaultPACheckerEndpoint`<br/>Use default Power Platform Checker endpoint | By default (**true**), the geographic location of the checker service will use the same geography as the environment you connect to. |
 | `CustomPACheckerEndpoint`<br/>Custom PAC checker endpoint | Required when `UseDefaultPACheckerEndpoint` is **false**. You have an option to specify another geo to use, for example https://japan.api.advisor.powerapps.com. For a list of available geographies, see [Use the Power Platform Checker API](/powerapps/developer/common-data-service/checker/webapi/overview#determine-a-geography). |
 | `FileLocation`<br/>Location of file(s) to analyze       | Required when referencing a file from a shared access signature (SAS) URL `sasUriFile`.<p/>Note: It is important to reference an exported solution file and not the unpacked source files in your repository. Both managed and unmanaged solution files can be analyzed. |
@@ -192,8 +192,8 @@ steps:
 | Parameters           | Description        |
 |----------------------|--------------------------|
 | `authenticationType`<br/>Type of authentication | (Required for SPN) Specify either **PowerPlatformEnvironment** for a username/password connection or **PowerPlatformSPN** for a Service Principal/client secret connection. |
-| `PowerPlatformEnvironment`<br/>Power Platform environment URL | The service endpoint that you want to import the solution into (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
-| `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint that you want to import the solution into (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
+| `PowerPlatformEnvironment`<br/>Power Platform environment URL | The service endpoint that you want to import the solution into (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. More information: see `BuildTools.EnvironmentUrl` under [Power Platform Create Environment](#power-platform-create-environment) |
+| `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint that you want to import the solution into (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. More information: see `BuildTools.EnvironmentUrl` under [Power Platform Create Environment](#power-platform-create-environment) |
 | `SolutionInputFile`<br/>Solution input file | (Required) The path and file name of the solution .zip file to import into the target environment (e.g., $(Build.ArtifactStagingDirectory)\$(SolutionName).zip). <p/>Note: Variables give you a convenient way to get key bits of data into various parts of your pipeline. See [Use predefined variables](/azure/devops/pipelines/build/variables) for a comprehensive list.  |
 | `AsyncOperation`<br/>Import solution as asynchronous operation | If selected (**true**), the import operation will be performed asynchronously. This is recommended for larger solutions as this task will automatically timeout after 4 minutes otherwise. |
 | `HoldingSolution`<br/>Import as a holding solution | An advance parameter (true\|false) used when a solution needs to be upgraded. This parameter hosts the solution in Dataverse but does not upgrade the solution until the Apply Solution Upgrade task is run. |
@@ -238,8 +238,8 @@ steps:
 | Parameters           | Description        |
 |----------------------|--------------------------|
 | `authenticationType`<br/>Type of authentication | (Required for SPN) Specify either **PowerPlatformEnvironment** for a username/password connection or **PowerPlatformSPN** for a Service Principal/client secret connection. |
-| `PowerPlatformEnvironment`<br/>Power Platform environment URL | The service endpoint that you want to upgrade the solution into (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
-| `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint that you want to upgrade the solution into (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
+| `PowerPlatformEnvironment`<br/>Power Platform environment URL | The service endpoint that you want to upgrade the solution into (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. More information: see `BuildTools.EnvironmentUrl` under [Power Platform Create Environment](#power-platform-create-environment) |
+| `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint that you want to upgrade the solution into (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. More information: see `BuildTools.EnvironmentUrl` under [Power Platform Create Environment](#power-platform-create-environment) |
 | `SolutionName`<br/>Solution name | (Required) The name of the solution to apply the upgrade. Always use the solution *Name* not its *Display Name*. |
 | `AsyncOperation`<br/>Asynchronous upgrade | If selected (**true**), the upgrade operation will be performed as an asynchronous batch job. Selecting asynchronous will poll and wait until MaxAsyncWaitTime has been reached. |
 | `MaxAsyncWaitTime`<br/>Maximum wait time | Maximum wait time in minutes for the asynchronous operation; default is 60 min (1 hr), same as Azure DevOps default for tasks.|
@@ -295,8 +295,8 @@ steps:
 | Parameters      | Description     |
 |-----------------|---------------------|
 | `authenticationType`<br/>Type of authentication | (Required for SPN) Specify either **PowerPlatformEnvironment** for a username/password connection or **PowerPlatformSPN** for a Service Principal/client secret connection. |
-| `PowerPlatformEnvironment`<br/>Power Platform environment URL | The service endpoint that you want to upgrade the solution into (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
-| `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint that you want to upgrade the solution into (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
+| `PowerPlatformEnvironment`<br/>Power Platform environment URL | The service endpoint that you want to upgrade the solution into (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. More information: see `BuildTools.EnvironmentUrl` under [Power Platform Create Environment](#power-platform-create-environment) |
+| `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint that you want to upgrade the solution into (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. More information: see `BuildTools.EnvironmentUrl` under [Power Platform Create Environment](#power-platform-create-environment) |
 | `SolutionName`<br/>Solution name | (Required) The name of the solution to export. Always use the solution *Name* not its *Display Name*. |
 | `SolutionOutputFile`<br/>Solution output file | (Required) The path and file name of the solution.zip file to export the source environment to (e.g., $(Build.ArtifactStagingDirectory)\$(SolutionName).zip ). <p/>Note: Variables give you a convenient way to get key bits of data into various parts of your pipeline. See [Use predefined variables](/azure/devops/pipelines/build/variables) for a comprehensive list. |
 | `AsyncOperation`<br/>Asynchronous export | If selected (**true**), the export operation will be performed as an asynchronous batch job. Selecting asynchronous will poll and wait until MaxAsyncWaitTime has been reached. |
@@ -382,8 +382,8 @@ steps:
 | Parameters       | Description     |
 |------------------|-----------------|
 | `authenticationType`<br/>Type of authentication | (Required for SPN) Specify either **PowerPlatformEnvironment** for a username/password connection or **PowerPlatformSPN** for a Service Principal/client secret connection. |
-| `PowerPlatformEnvironment`<br/>Power Platform environment URL | The service endpoint that you want to delete the solution (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
-| `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint that you want to delete the solution (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
+| `PowerPlatformEnvironment`<br/>Power Platform environment URL | The service endpoint that you want to delete the solution (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. More information: see `BuildTools.EnvironmentUrl` under [Power Platform Create Environment](#power-platform-create-environment) |
+| `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint that you want to delete the solution (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. More information: see `BuildTools.EnvironmentUrl` under [Power Platform Create Environment](#power-platform-create-environment) |
 | `SolutionName`<br/>Solution name  | (Required) The name of the solution to delete. Always use the solution *Name* not its *Display Name*. |
 
 ### Power Platform Publish Customizations
@@ -406,8 +406,8 @@ steps:
 | Parameters     | Description    |
 |----------------|----------------|
 | `authenticationType`<br/>Type of authentication | (Required for SPN) Specify either **PowerPlatformEnvironment** for a username/password connection or **PowerPlatformSPN** for a Service Principal/client secret connection. |
-| `PowerPlatformEnvironment`<br/>Power Platform environment URL | The service endpoint that you want to publish the customizations (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
-| `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint that you want to publish the customizations (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
+| `PowerPlatformEnvironment`<br/>Power Platform environment URL | The service endpoint that you want to publish the customizations (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. More information: see `BuildTools.EnvironmentUrl` under [Power Platform Create Environment](#power-platform-create-environment) |
+| `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint that you want to publish the customizations (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. More information: see `BuildTools.EnvironmentUrl` under [Power Platform Create Environment](#power-platform-create-environment) |
 
 ### Power Platform Set Solution Version
 
@@ -431,8 +431,8 @@ steps:
 | Parameters    | Description   |
 |---------------|---------------|
 | `authenticationType`<br/>Type of authentication | (Required for SPN) Specify either **PowerPlatformEnvironment** for a username/password connection or **PowerPlatformSPN** for a Service Principal/client secret connection. |
-| `PowerPlatformEnvironment`<br/>Power Platform environment URL | The service endpoint that you want to set the solution version (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
-| `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint that you want to set the solution version (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
+| `PowerPlatformEnvironment`<br/>Power Platform environment URL | The service endpoint that you want to set the solution version (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. More information: see `BuildTools.EnvironmentUrl` under [Power Platform Create Environment](#power-platform-create-environment) |
+| `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint that you want to set the solution version (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. More information: see `BuildTools.EnvironmentUrl` under [Power Platform Create Environment](#power-platform-create-environment) |
 | `SolutionName`<br/>Solution name  | (Required) The name of the solution to set the version for. Always use the solution *Name* not its *Display Name*. |
 | `SolutionVersionNumber`<br/>Solution version number | (Required) Version number you want to set. |
 
@@ -463,8 +463,8 @@ steps:
 | Parameters      | Description    |
 |-----------------|----------------|
 | `authenticationType`<br/>Type of authentication | (Required for SPN) Specify either **PowerPlatformEnvironment** for a username/password connection or **PowerPlatformSPN** for a Service Principal/client secret connection. |
-| `PowerPlatformEnvironment`<br/>Power Platform environment URL | The service endpoint that you want to deploy the package into (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
-| `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint that you want to deploy the package into (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
+| `PowerPlatformEnvironment`<br/>Power Platform environment URL | The service endpoint that you want to deploy the package into (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. More information: see `BuildTools.EnvironmentUrl` under [Power Platform Create Environment](#power-platform-create-environment) |
+| `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint that you want to deploy the package into (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. More information: see `BuildTools.EnvironmentUrl` under [Power Platform Create Environment](#power-platform-create-environment) |
 | `PackageFile`<br/>Package file | (Required) The path and file name of the package file assembly (.dll). |
 | `MaxAsyncWaitTime`<br/>Maximum wait time | Maximum wait time in minutes for the asynchronous operation; default is 60 min (1 hr), same as Azure DevOps default for tasks.|
 
@@ -474,9 +474,10 @@ Automate common Environment Lifecycle Management (ELM) tasks.
 
 ### Power Platform Create Environment
 
-Creates a new environment. Creating a new environment also automatically creates the BuildTools.EnvironmentUrl which will be used as default service connection for subsequent tasks in the pipeline
+Creates a new environment. Creating a new environment also automatically creates `BuildTools.EnvironmentUrl`.
 
-> [!NOTE]
+> [!IMPORTANT]
+> When set, `BuildTools.EnvironmentUrl` will be used as the **default service connection** for subsequent tasks in the pipeline. Each task described in this article only uses the endpoint from the service connection when `BuildTools.EnvironmentUrl` is not set.<p/>
 > A new environment can only be provisioned if your license or capacity
 > allows for the creation of additional environments. For more information on how to view capacity see [Capacity page details](../admin/capacity-storage.md#capacity-page-details).
 
