@@ -4,7 +4,7 @@ description: Understand the different types of teams and how to view and manage 
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/11/2021
+ms.date: 10/14/2021
 author: jimholtz
 ms.subservice: admin
 ms.author: jimholtz
@@ -122,7 +122,7 @@ You can add and delete members from a team.
    - To delete a team member, select the user and then select **Remove**.
 
 > [!NOTE]
-> Privilege requirement: To add/remove a team member from an owner team, the user needs to have the more than or equal to the privileges that the team has, for example if the team is assigned with a System Customizer security role, the user will need a System Customizer or a System Administrator security role.
+> Privilege requirement: To add or remove a team member from an owner team, the user needs to have more than or equal to the privileges that the team has. For example, if the team is assigned with a System Customizer security role, the user will need a System Customizer or a System Administrator security role.
 
 
 ### Manage the security roles of a team
