@@ -1,7 +1,7 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps"
 description: Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps 
-ms.date: 10/05/2021
+ms.date: 10/14/2021
 ms.topic: "article"
 ms.assetid: 994cc854-17f6-45d6-bc20-fcf1a3f2d6d6
 searchScope:
@@ -99,12 +99,12 @@ With the upcoming 2021 release wave 2 (public preview in August 2021 and GA in O
 
 #### Why is this needed? 
 
--	These tooltips are not discoverable in a way that is accessible for sighted, non-sighted and mobile users to access additional information about the column. 
+-	These tooltips aren't discoverable in a way that is accessible for sighted, non-sighted, and mobile users to access additional information about the column. 
 
 #### Impact
 
 - Starting October 2021, these descriptions will no longer be available on hover. 
-- We will be introducing a new fully accessible feature for sighted, non-sighted and mobile users in April 2022.
+- We will be introducing a new fully accessible feature for sighted, non-sighted, and mobile users in April 2022.
 
 ## Business recommended icon on model-driven forms
 
