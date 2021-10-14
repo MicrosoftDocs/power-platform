@@ -280,7 +280,7 @@ To create the custom deployment settings json file follow the steps below
 
 2. Create a **new Directory called config** and save the new file **under the config folder** in git.
 
-   ![image-20210917153336262](media/setup-almacceleratoradvanced-deployment-config/image-20210917153336262.png)
+   ![Config Folder](media/setup-almacceleratoradvanced-deployment-config/image-20210917153336262.png)
 
 #### Create Default Environment Variable Json
 

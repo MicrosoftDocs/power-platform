@@ -263,12 +263,14 @@ When you first launch the app you may need to consent to the app using your conn
 1. Select the **Cog** in the top right to select your **Azure DevOps Environment**, **Project** and **Repo** to which you'll push your changes and submit your pull requests and select **Save**
    ![image-20210303085854533](media/almacceleratoradvanced-components/image-20210303085854533.png)
 
-   > [!NOTE] If you don't see your DevOps Organization / Project in the dropdown double check that the Custom connector is working correctly after updating it's Security settings.
+   > [!NOTE]
+If you don't see your DevOps Organization / Project in the dropdown double check that the Custom connector is working correctly after updating it's Security settings.
 
 1. From the Environment Drop Down **Select the Dataverse Environment** in which you will be doing your development work.
    ![image-20210506141321294](media/setup-almacceleratoradvanced-sample-solution/image-20210506141321294.png)
 
-   > [!NOTE] In order for your Environment to show up in this drop down a service connection in the Azure DevOps project you just selected is required (see [Create a Service Connection for DevOps to access Power Platform](setup-almacceleratoradvanced.md#create-service-connections-for-devops-to-access-power-platform). Additionally, verify that you've followed the steps to reconnect the flow above if you do not see any environments in the list.
+   > [!NOTE]
+In order for your Environment to show up in this drop down a service connection in the Azure DevOps project you just selected is required (see [Create a Service Connection for DevOps to access Power Platform](setup-almacceleratoradvanced.md#create-service-connections-for-devops-to-access-power-platform). Additionally, verify that you've followed the steps to reconnect the flow above if you do not see any environments in the list.
 
 1. By default the **unmanaged solutions**, including the **ALM Accelerator Sample Solution**, in your Environment should be displayed in the main window with buttons to **Push Changes** and **Create Pull Requests**.
 
@@ -276,7 +278,8 @@ When you first launch the app you may need to consent to the app using your conn
 
    - Select an **existing branch** or **create a new branch** based on an existing branch and enter a **comment**. Use the hashtag notation e.g. `#123` to link the changes to a specific work item in Azure DevOps and Select **Commit**.
    ![image-20210506145231393](media/setup-almacceleratoradvanced-sample-solution/image-20210506145231393.png)
-   >[!NOTE]: There is an option to specify if the latest changes contain Delete Components. This allows the user to specify whether to perform an **update** or an **upgrade** of the solution when it is deployed. The former will increase the performance of the pipelines and reduce the overall time to deploy.
+   >[!NOTE]:
+There is an option to specify if the latest changes contain Delete Components. This allows the user to specify whether to perform an **update** or an **upgrade** of the solution when it is deployed. The former will increase the performance of the pipelines and reduce the overall time to deploy.
    - When the push begins a waiting indicator will appear. If the push is successful a checkbox will appear otherwise a red x will appear. In order to see the progress of your push select the progress indicator which will take you to the running pipeline in Azure DevOps.
    - Note that the first time you run the pipeline, you may need to give it permission to run in the Azure DevOps interface (see the [Troubleshooting](./setup-almacceleratoradvanced.md#Troubleshooting) section of the Setup Guide for more information)
 

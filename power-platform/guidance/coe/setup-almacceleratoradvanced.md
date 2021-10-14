@@ -202,7 +202,8 @@ There are a few optional pipeline variables that can be set on the export-soluti
 
 The **DoNotExportCurrentEnvironmentVariableValues** variable can be used to ensure that the current value of environment variables are never committed to source control during the export process.
 
-> [!IMPORTANT] This pipeline variable is recommended in order to use the deployment configuration functionality in the AA4AM App.
+> [!IMPORTANT]
+This pipeline variable is recommended in order to use the deployment configuration functionality in the AA4AM App.
 
 ![image-20210723164226271](media/setup-almacceleratoradvanced/image-20210723164226271.png "Create the DoNotExportCurrentEnvironmentVariableValues pipeline variable and set the value to true")
 
@@ -227,7 +228,8 @@ The **VerifyDefaultEnvironmentVariableValues** can be used to ensure that specif
 
 ### Update Permissions for the Project Build Service
 
-> [!IMPORTANT] There are a number of "Build Service" accounts in Azure DevOps that may confuse the steps below. Pay close attention to the names / format specified in Step 3 and 5 below. You may need to search for the specific account if it doesn't show up in the initial list.
+> [!IMPORTANT]
+There are a number of "Build Service" accounts in Azure DevOps that may confuse the steps below. Pay close attention to the names / format specified in Step 3 and 5 below. You may need to search for the specific account if it doesn't show up in the initial list.
 
 1. In Azure DevOps Select **Project Settings** in the left hand navigation.
 
@@ -235,7 +237,8 @@ The **VerifyDefaultEnvironmentVariableValues** can be used to ensure that specif
 
 1. Find and select **Project Collection Build Service ([Your Organization Name])** under Users.
 
-   > [!NOTE: In some cases you may not see Your Organization Name after the Project Collection Build Service user. In some cases it may just be a unique identifier and you may need to use the search function to find this user. Select this user]
+   > [!NOTE]
+In some cases you may not see Your Organization Name after the Project Collection Build Service user. In some cases it may just be a unique identifier and you may need to use the search function to find this user. Select this user]
 
 1. Set the following permissions for the Build Service user.
 
@@ -367,7 +370,8 @@ The following steps show how to **create a pipeline from the sample pipeline YAM
 | build-deploy-test-MyNewSolution.yml       | deploy-test-MyNewSolution       | No                    | Yes                   |
 | build-deploy-prod-MyNewSolution.yml       | deploy-prod-MyNewSolution       | No                    | No (See next section) |
 
-> [!NOTE] The following steps will create pipelines that **build and deploy for each environment** (Validation, Test and Production). However, you may want to only build and deploy for Validation and Test and then deploy the artifacts from the Test build to Production. Included in [the section following this section](#create-the-solution-deployment-pipelines-optional) are instructions for doing the latter. If this is your preferred method of setting up the pipelines follow the steps below for **only the Validation and Test environment** and then skip to the next section to see how to configure your release pipeline.
+> [!NOTE]
+The following steps will create pipelines that **build and deploy for each environment** (Validation, Test and Production). However, you may want to only build and deploy for Validation and Test and then deploy the artifacts from the Test build to Production. Included in [the section following this section](#create-the-solution-deployment-pipelines-optional) are instructions for doing the latter. If this is your preferred method of setting up the pipelines follow the steps below for **only the Validation and Test environment** and then skip to the next section to see how to configure your release pipeline.
 
 1. In Azure DevOps go to the **Repo** that contains the [Pipelines folder you committed](#copy-the-YAML-pipelines-from-github-to-your-azure-devops-instance) and select the Pipelines folder
 
@@ -379,7 +383,8 @@ The following steps show how to **create a pipeline from the sample pipeline YAM
 
 1. Create a new Branch based on **your default branch** in the Repo with the name of your solution (e.g. **MyNewSolution**)
 
-    > [!NOTE] This branch will be your next version (v-next) branch for your Solution in the repo. All development work should be branched from this branch to a developers personal working branch and then merged into the v-next branch in order to push to Validation and Testing. Later when a release is ready the v-next branch can be merged into the main or default branch.
+    > [!NOTE]
+This branch will be your next version (v-next) branch for your Solution in the repo. All development work should be branched from this branch to a developers personal working branch and then merged into the v-next branch in order to push to Validation and Testing. Later when a release is ready the v-next branch can be merged into the main or default branch.
 
     ![image-20210507110620258](media/setup-almacceleratoradvanced/image-20210507110620258.png)
 
@@ -430,7 +435,8 @@ The following steps show how to **create a pipeline from the sample pipeline YAM
 
 1. Update the **Default branch for manual and scheduled builds** for more information see the documentation here
 
-      > [!NOTE] If your new pipeline was not created in the default branch of the repo you may need to update the **Default branch for manual and scheduled builds**. See the following link for more information on **Default branch for manual and scheduled builds**. [Configure pipeline triggers - Azure Pipelines | Microsoft Docs](https://docs.microsoft.com/azure/devops/pipelines/process/pipeline-triggers?view=azure-devops&tabs=YAML#branch-considerations-for-pipeline-completion-triggers)
+      > [!NOTE]
+If your new pipeline was not created in the default branch of the repo you may need to update the **Default branch for manual and scheduled builds**. See the following link for more information on **Default branch for manual and scheduled builds**. [Configure pipeline triggers - Azure Pipelines | Microsoft Docs](https://docs.microsoft.com/azure/devops/pipelines/process/pipeline-triggers?view=azure-devops&tabs=YAML#branch-considerations-for-pipeline-completion-triggers)
 
       - Select Edit on your new Pipeline
 
@@ -560,7 +566,8 @@ If your solution requires these additional configuration settings and / or data 
 
 Download the **latest managed solution**(s) from GitHub (<https://github.com/microsoft/coe-starter-kit/releases>).
 
-1. > [!NOTE] The screenshot below is for reference as to where the managed solution exists under a release. The actual version should be the most recent release.
+1. > [!NOTE]
+1. The screenshot below is for reference as to where the managed solution exists under a release. The actual version should be the most recent release.
 
    ![image-20210430150752479](media/setup-almacceleratoradvanced/image-20210430150752479.png)
 
@@ -623,4 +630,7 @@ When you setup your pipelines such that the pipeline templates are stored in a d
 
 Alternatively, to disable this notification for all pipelines you can turn off Limit Job authorization scope to referenced Azure DevOps repositories in **Project -> Settings -> General**. This setting is turned on by default when you create a new project.  ![image-20210426143538533](media/almacceleratoradvanced-components/image-20210426143538533.png)
 
-> [!NOTE] that the project settings can be overridden at the Azure DevOps organization level, so if the option to change this is disabled in project settings, check in Organization Settings.
+> [!NOTE]
+The project settings can be overridden at the Azure DevOps organization level, so if the option to change this is disabled in project settings, check in Organization Settings.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
