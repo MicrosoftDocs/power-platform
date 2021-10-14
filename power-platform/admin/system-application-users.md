@@ -77,7 +77,8 @@ Most of these users are hidden from user views but they can be found by using th
 **Technical details on the security?**
 - This user account cannot sign in to Dynamics 365 apps.  
 - Administrators have the option to use this user account when registering their plug-ins. 
-- This user account does not have a mailbox, so they cannot be used to send or receive emails. 
+- This user account does not have a mailbox, so they cannot be used to send or receive emails.
+- Since you cannot log into the apps using this user account, it does not have any related entities, eg user settings, queues, calendar, team membership, internal address, etc. 
 - The details of this user account cannot be modified from the User Form interface. 
 - This user account does not show up in any views.
 
