@@ -4,7 +4,7 @@ description: "Learn how to copy apps and data from an environment. Review next s
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/13/2021 
+ms.date: 10/14/2021 
 ms.subservice: admin
 author: ChrisGarty
 ms.author: cgarty
