@@ -1,4 +1,22 @@
-
+---
+title: "Configuration and Data Deployment in Pipelines | MicrosoftDocs"
+description: "The ALM Accelerator for Makers will help you follow ALM patterns and practices to source control and move your solutions from your development environment to test and production environments using Azure DevOps"
+author: manuelap-msft
+manager: devkeydet
+ms.service: power-platform
+ms.component: pa-admin
+ms.topic: conceptual
+ms.date: 10/14/2021
+ms.subservice: guidance
+ms.author: mapichle
+ms.reviewer: jimholtz
+search.audienceType: 
+  - admin
+search.app: 
+  - D365CE
+  - PowerApps
+  - Powerplatform
+---
 
 # Configuration and Data Deployment in Pipelines (Preview)
 

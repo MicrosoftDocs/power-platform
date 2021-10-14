@@ -1,3 +1,22 @@
+---
+title: "ALM Accelerator for Advanced Makers | MicrosoftDocs"
+description: "The ALM Accelerator for Makers will help you follow ALM patterns and practices to source control and move your solutions from your development environment to test and production environments using Azure DevOps"
+author: manuelap-msft
+manager: devkeydet
+ms.service: power-platform
+ms.component: pa-admin
+ms.topic: conceptual
+ms.date: 10/14/2021
+ms.subservice: guidance
+ms.author: mapichle
+ms.reviewer: jimholtz
+search.audienceType: 
+  - admin
+search.app: 
+  - D365CE
+  - PowerApps
+  - Powerplatform
+---
 # Set up ALM Accelerator for Advanced Makers (AA4AM) components (Preview)
 
 > [!NOTE] ALM Accelerator for Advanced Makers is currently in public preview. Please see Issues currently tagged as [vnext](https://github.com/microsoft/coe-starter-kit/issues?q=is%3Aopen+is%3Aissue+label%3Aalm-accelerator+label%3Avnext) for the Roadmap to be completed prior to general availability. While in Public Preview it can be expected that there will be breaking changes and frequent updates to address feedback from preview members. Additionally, the Public Preview is reliant on the experimental [Power Apps Source File Pack and Unpack Utility](https://github.com/microsoft/PowerApps-Language-Tooling) that is being developed separately from AA4AM.
@@ -34,7 +53,7 @@ The application will manage deploying solutions from Development to Validation t
 
 You'll need to **create an environment in which to set up the AA4AM Solution**. It's recommended to install AA4AM in the same environment as other CoE Starter Kit Solutions. For more information about how to decide on the best strategy for your organization, go [Establishing an Environment Strategy for Microsoft Power Platform](https://docs.microsoft.com/en-us/power-platform/guidance/adoption/environment-strategy) and [Environment strategy for ALM](https://docs.microsoft.com/en-us/power-platform/alm/environment-strategy-alm).
 
-## Azure DevOps Environment
+### Azure DevOps Environment
 
 This solution uses Azure DevOps for source control and deployments (pipelines). You can sign up for Azure DevOps for free for up to 5 users on the [Azure DevOps](https://azure.microsoft.com/en-us/services/DevOps/) site.
 
@@ -53,7 +72,7 @@ For the AA4AM Canvas App to work as expected the following connectors must be av
 
 - [Dataverse (Legacy)](https://docs.microsoft.com/en-us/connectors/commondataservice/)
 - [Power Apps for Makers](https://docs.microsoft.com/en-us/connectors/powerappsforappmakers/)
-- [HTTP with Azure AD](https://docs.microsoft.com/en-us/connectors/webcontents/)
+- [HTTP with Azure AD](https://docs.microsoft.com/en-us/connectors/webcontents/) (with endpoint access to https://graph.microsoft.com)
 - ALM Accelerator Custom Azure DevOps
 
 ## Foundational Setup
@@ -66,23 +85,23 @@ Creating an App Registration for the ALM Accelerator is a one time setup step to
 Sign in to [portal.azure.com](https://portal.azure.com).
 
 1. Go to **Azure Active Directory** > **App registrations**.
-    ![image.png](media/almacceleratoradvanced-components/image-eac55e6c-922b-4e9d-a82f-a331ff90b634.png)
+    ![image.png](media/almacceleratoradvanced-components/image-eac55e6c-922b-4e9d-a82f-a331ff90b634.png "Navigate to Azure Active Directory")
 
 1. Select **New Registration** and give the registration a name (e.g. ALMAcceleratorServicePrincipal) leave all other options as default and select **Register**.
 
 1. Select **API Permissions** > **+ Add a permission**.
 
 1. Select **Dynamics CRM**, and configure permissions as follows:
-    ![image.png](media/almacceleratoradvanced-components/image-f16b131d-9835-4427-bbc1-421b9d802ae6.png)
+    ![image.png](media/almacceleratoradvanced-components/image-f16b131d-9835-4427-bbc1-421b9d802ae6.png  "Select Dynamics CRM Permission")
 
 1. Select **Delegated permissions**, and then select **user_impersonation**.
-    ![image.png](media/almacceleratoradvanced-components/image-c5e11a72-f4c9-4f57-befe-8edcf0d57fbc.png)
+    ![image.png](media/almacceleratoradvanced-components/image-c5e11a72-f4c9-4f57-befe-8edcf0d57fbc.png "Select Delegated permissions")
 
 1. Select **Add permissions**.
 
-1. Repeat adding permissions steps above for
+1. Repeat adding permissions steps above for the following:
     - **PowerApps-Advisor (Analysis All)** (Required for running static analysis via App Checker https://docs.microsoft.com/en-us/power-platform/alm/checker-api/overview). This permission can be found under **APIs my organization uses**.
-      ![image-20210216135345784](media/almacceleratoradvanced-components/image-20210216135345784.png)
+      ![image-20210216135345784](media/almacceleratoradvanced-components/image-20210216135345784.png "Select PowerApps-Advisor (Analysis All) and Delegated permissions")
 
     - **Azure DevOps**. (Required for connecting to Azure DevOps via the custom connector in the ALM Accelerator App). This permission can be found under **APIs my organization uses**.
 
@@ -90,7 +109,7 @@ Sign in to [portal.azure.com](https://portal.azure.com).
 
       > [!IMPORTANT] Disambiguation: We'll use this value later and specifically call it out as the **Azure DevOps Application (client) ID** which is different from the **Application (client) ID** copied in Step 12 [below](#appid)
 
-    - ![image.png](media/almacceleratoradvanced-components/image-4c6d6244-004e-4ac9-9034-79274f9be4c8.png)
+    - ![image.png](media/almacceleratoradvanced-components/image-4c6d6244-004e-4ac9-9034-79274f9be4c8.png "Copy the Application client ID")
 
 1. After adding permissions in your App Registration select **Grant Admin consent for (your tenant)**
 
@@ -130,7 +149,7 @@ The ALM Accelerator uses several Azure DevOps extensions, including some third-p
 
 1. Go to https://dev.azure.com and select **Organization settings**
 1. Select **General** > **Extension**
-![image.png](media/almacceleratoradvanced-components/image-3ccc9c10-4cd7-4188-9881-952bba2701dc.png)
+![image.png](media/almacceleratoradvanced-components/image-3ccc9c10-4cd7-4188-9881-952bba2701dc.png "Navigate to Organization Settings and Select General > Extensions")
 1. Install the following Extensions
    - **Power Platform Build Tools (required)**: This extension contains the first-party build tasks for Dataverse. (https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.PowerPlatform-BuildTools)
 
@@ -138,7 +157,7 @@ The ALM Accelerator uses several Azure DevOps extensions, including some third-p
 
    - **SARIF SAST Scans Tab (optional)**: This extension can be used to visualize the .**sarif files** that get generated by the **Solution Checker** during a build. ([SARIF SAST Scans Tab - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=sariftools.scans))
    
-      ![image-20210217102344719](media/almacceleratoradvanced-components/image-20210217102344719.png)
+      ![image-20210217102344719](media/almacceleratoradvanced-components/image-20210217102344719.png "Image of SARIF SAST Scans Tab in Azure DevOps")
    
 
 
