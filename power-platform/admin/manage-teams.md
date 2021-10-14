@@ -121,6 +121,10 @@ You can add and delete members from a team.
 
    - To delete a team member, select the user and then select **Remove**.
 
+> [!NOTE]
+> Privilege requirement: To add/remove a team member from an owner team, the user needs to have the more than or equal to the privileges that the team has, for example if the team is assigned with a System Customizer security role, the user will need a System Customizer or a System Administrator security role.
+
+
 ### Manage the security roles of a team
 
 1. Select a team, and then select **Manage security roles**. 
