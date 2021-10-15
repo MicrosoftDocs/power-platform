@@ -113,7 +113,7 @@ You should add your bot to your own version of Teams before sharing it with othe
    >[!IMPORTANT]
    >Only users who can access the bot can use the installation link to install the bot. You can [share the bot to give user access to the chat](admin-share-bots-teams.md) with the bot.
 
-   :::image type="content" source="media/add-bot-to-teams-copy-link-teams.PNG" alt-text="Copy link from Teams availability options.":::
+   :::image type="content" source="media/sharing-security-groups/add-bot-to-teams-copy-link-teams.PNG" alt-text="Copy link from Teams availability options.":::
 
 6. Share the copied link with users to install the bot in Microsoft Teams.
 

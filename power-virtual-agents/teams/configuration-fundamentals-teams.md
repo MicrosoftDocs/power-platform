@@ -22,7 +22,7 @@ Select the version of Power Virtual Agents you're using here:
 
 
 
-Power Virtual Agents has a number of advanced features that let you create a personalized look and feel to your bot, as well as give you more flexibility in what you users can ask your bot to do. 
+Power Virtual Agents has advanced features that let you create a personalized look and feel to your bot, and give you more flexibility in what your users can ask your bot to do. 
 
 
 
