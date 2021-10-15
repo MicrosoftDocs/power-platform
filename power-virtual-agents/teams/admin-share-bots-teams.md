@@ -2,12 +2,13 @@
 title: "Share chatbots with other users in Microsoft Teams"
 description: "Work on Power Virtual Agents chatbots with other people in your team, and see who else has recently modified topics."
 keywords: "Administration, share, multi-author, PVA, teams"
-ms.date: 9/22/2020
+ms.date: 10/15/2021
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
+ms.reviewer: micchow
 ms.custom: "multi-author, admin, ceX, teams"
 ms.collection: virtual-agent
 ---
@@ -22,7 +23,7 @@ Select the version of Power Virtual Agents you're using here:
 
 Share your bot with other users so they can chat with the bot or collaborate together to author it. 
 
-## Share bots for user to chat with it
+## Share bots for users to chat with
 A user can always chat with a bot if it was created in the same team. You can share bots with users outside of the team with the **Share** options available in Power Virtual Agents.
 
 ### Prerequisites

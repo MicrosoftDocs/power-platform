@@ -2,12 +2,13 @@
 title: "Fundamentals - Publish a chatbot to various channels in Microsoft Teams"
 description: "Publish your bot to Microsoft Teams."
 keywords: "Publish; demo; demo website; channels, PVA"
-ms.date: 9/22/2020
+ms.date: 10/15/2021
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
+ms.reviewer: micchow
 ms.custom: "publication, fundamentals, ceX"
 ms.collection: virtual-agent
 ---

@@ -2,7 +2,7 @@
 title: "Configure single sign-on for the Power Virtual Agents app in Teams"
 description: "Enable your bot to authenticate an already-signed-in Teams user"
 keywords: "Single Sign-on, Teams SSO, User Authentication, Authentication, AAD, MSA, Identity Provider, PVA"
-ms.date: 12/7/2020
+ms.date: 10/15/2021
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -71,9 +71,9 @@ You will need to get your Teams app ID:
  
 1. Expand **Manage** on the side navigation pane, and then select **Channels**. Select the **Microsoft Teams** tile.
  
-2. In the panel that appears to the side, select **Edit detail**, expand on **More** and then copy the app ID by selecting **Copy**. 
+2. In the panel that appears to the side, select **Edit detail**, expand **More** and then copy the app ID by selecting **Copy**. 
 
-    :::image type="content" source="media/teams-sso-app-id.PNG" alt-text="Edit bot detail showing App ID.":::
+    :::image type="content" source="media/sharing-security-groups/teams-sso-app-id.PNG" alt-text="Edit bot detail showing App ID.":::
 
 >[!NOTE]
 >If you haven't already enabled the Teams channel, you will see instead see a notice that you need to enable Teams. Select **Turn on Teams** and then re-try Step 1 to get the app ID.  
@@ -187,7 +187,7 @@ These steps update the manifest file for the bot. Now you can download the manif
 
 1. Select **Download .zip** to get the new manifest.
 
-    :::image type="content" source="media/add-bot-to-teams-download-zip.png" alt-text="Screenshot displaying Download .zip button highlighted.":::
+    :::image type="content" source="media/sharing-security-groups/add-bot-to-teams-download-zip.png" alt-text="Screenshot displaying Download .zip button highlighted.":::
 
 >[!IMPORTANT] 
 > If your users have used the manifest to install the bot, they will need to get a new manifest after this configuration is complete and install the bot again for the Teams SSO to work. The Teams manifest does not refresh automatically. Alternatively, if you submit for Admin approval, the manifest is updated automatically.

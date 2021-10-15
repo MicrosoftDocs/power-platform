@@ -296,6 +296,16 @@
       "redirect_document_id": "false"
     },
     {
+      "source_path": "power-virtual-agents/configuration-security.md",
+      "redirect_url": "configuration-end-user-authentication.md",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "power-virtual-agents/teams/configuration-security-teams.md",
+      "redirect_url": "configuration-end-user-authentication-teams.md",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "power-platform/admin/preview-april-2019-updates.md",
       "redirect_url": "preview-october-2019-updates",
       "redirect_document_id": false
