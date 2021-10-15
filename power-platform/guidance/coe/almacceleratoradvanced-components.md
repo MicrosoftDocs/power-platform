@@ -41,7 +41,7 @@ The target end user for AA4AM is the Power Platform Maker who is comfortable wit
 
 The target user for setting up AA4AM would generally be an Administrator with a deeper understanding of Power Platform Environments and Solutions, Azure DevOps Pipelines and Administration as well as familiarity with Azure Active Directory and Dataverse Admininstration.
 
-![The Maker Team](.attachments/almacceleratoradvanced-components/TheMakerTeam.png)
+![The Maker Team](media/almacceleratoradvanced-components/TheMakerTeam.png)
 
 ## Pipelines
 
@@ -104,7 +104,7 @@ The AA4AM Canvas App provides a convenience layer on top of the AA4AM Pipelines 
 
 ## ALM Accelerator Flow and Maker Experience
 
-![ALM Accelerator Flow](.attachments/almacceleratoradvanced-components/AdvancedMakerExprerience.png)
+![ALM Accelerator Flow](media/almacceleratoradvanced-components/AdvancedMakerExprerience.png)
 
 1. Once the app is installed and configured launch it from your Environment under Apps.
 

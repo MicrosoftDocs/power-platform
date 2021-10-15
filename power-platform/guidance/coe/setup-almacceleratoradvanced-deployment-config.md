@@ -25,7 +25,6 @@ ALM Accelerator for Advanced Makers is currently in public preview. Please see I
 
 The ALM Accelerator uses json formatted files for updating **connection references, environment variables, setting permissions for AAD Groups and Dataverse teams** as well as **sharing Canvas Apps and updating ownership of solution components** such as Power Automate flows. The instructions below are **optional** and depend on what type of components your solution pipelines deploy. For instance, if your solutions only contain Dataverse Tables, Columns and Model Driven Apps with no per environment configuration or data needed then **some of these steps may not be necessary** and can be skipped. The following configuration file allow you to fully automate the deployment of your solutions and specify how to configure items that are specific to the environment to which the solution is being deployed.
 
-> [!NOTE]
 For an example of configuration and data deployment configuration see the ALMAcceleratorSampleSolution here <https://github.com/microsoft/coe-starter-kit/blob/ALMAcceleratorSampleSolution/ALMAcceleratorSampleSolution/config/deploymentSettings.json> and <https://github.com/microsoft/coe-starter-kit/blob/ALMAcceleratorSampleSolution/ALMAcceleratorSampleSolution/config/customDeploymentSettings.json>
 
 ## Before you start
@@ -93,9 +92,9 @@ To create the deployment settings json file follow the steps below
 
 1. Copy the above json to a new file called **deploymentSettings.json**
 
-1. Create a **new Directory called config** and save the new file **under the config folder** in git.
+1. Create a **new folder called config** and save the new file **under the config folder** in git.
 
-   ![image-20210917153532062](media/setup-almacceleratoradvanced-deployment-config/image-20210917153532062.png)
+   ![config folder](media/setup-almacceleratoradvanced-deployment-config/image-20210917153532062.png)
 
 ### Create Connection Reference Json
 
@@ -124,7 +123,7 @@ The connection reference property in the customDeploymentConfiguration.json is *
    - The **logical name** for the connection reference can be obtained from the **connection reference component** in your solution.
      ![Schema Name in the disabled text field below Name *](media/setup-almacceleratoradvanced-deployment-config/connrefschema.png)
 
-   - The **connection id** can be obtained via the URL of the connection after you create it. For example the id of the connection below is **9f66d1d455f3474ebf24e4fa2c04cea2** where the URL is <https://.../connections/shared_commondataservice/9f66d1d455f3474ebf24e4fa2c04cea2/details>#
+   - The **connection id** can be obtained via the URL of the connection after you create it. For example the id of the connection below is **9f66d1d455f3474ebf24e4fa2c04cea2** where the URL is 'https://.../connections/shared_commondataservice/9f66d1d455f3474ebf24e4fa2c04cea2/details'
      ![The connection id embedded in the connection url](media/setup-almacceleratoradvanced-deployment-config/connid.png)
 
 1. Once you've gathered the connection reference schema names and connection ids go to the **customDeploymentSettings.json** and paste the json in  the **ConnectionReferences property**.
@@ -323,7 +322,7 @@ The Default Environment variables settings only applies if the export pipeline i
 
 1. On the Pipeline Variables screen create a **pipeline variable** for each of the tokens in your configuration (e.g. **defaultvariable.cat_TextEnvironmentVariable**).
 
-   ![image-20210723173238713](media/setup-almacceleratoradvanced-deployment-config/image-20210723173238713.png)
+   ![cat_TextEnvironmentVariable pipeline variable](media/setup-almacceleratoradvanced-deployment-config/image-20210723173238713.png)
 
 1. Where applicable repeat the steps above for each solution / pipeline you create.
 
@@ -533,7 +532,7 @@ The pipeline will look for this specific folder to run the import after your sol
 
    ![ConfigurationMigrationData directory shown under config directory](media/setup-almacceleratoradvanced-deployment-config/image-20210217093914368.png)
 
-      - Similar to the note regarding specific configuration files per environment the steps above create configuration data that will be deployed to all environments. However, if you have specific configuration data per environment you can **create sub-directories in the config directory** with the name of the Environment to allow for more flexibility. The directory name in this case **must match the EnvironmentName pipeline variable** you created when setting up your pipeline (e.g. Validate, Test, Production). If no environment specific configuration data / directory is found the pipelines will revert to the configuration data in the root of the config directory.
+    - Similar to the note regarding specific configuration files per environment the steps above create configuration data that will be deployed to all environments. However, if you have specific configuration data per environment you can **create sub-directories in the config directory** with the name of the Environment to allow for more flexibility. The directory name in this case **must match the EnvironmentName pipeline variable** you created when setting up your pipeline (e.g. Validate, Test, Production). If no environment specific configuration data / directory is found the pipelines will revert to the configuration data in the root of the config directory.
       ![Configuration Migration Data unzipped in ConfigurationMigrationData directory](media/setup-almacceleratoradvanced-deployment-config/image-20210709103432542.png)
 
 1. When prompted to **export the data** select **Yes**
