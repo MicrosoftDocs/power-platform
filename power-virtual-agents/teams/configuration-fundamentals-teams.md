@@ -37,7 +37,7 @@ Power Virtual Agents has a number of advanced features that let you create a per
 
 Topic | Description
 - | -
-[Assign access and change security options](configuration-security-teams.md) | Determine who can use the bot in Microsoft Teams
+[Assign access and change security options](configuration-end-user-authentication-teams.md) | Determine who can use the bot in Microsoft Teams
 [Configure end-user authentication](configuration-end-user-authentication-teams.md) | Allow users to sign in with any OAuth2 identity provider directly in a bot conversation.
 [Configure how the bot starts the conversation](configure-bot-greeting-teams.md) | Change what the bot says when it starts a conversation.
 [Customize the look and feel of your bot](customize-default-canvas-teams.md) | Change the bot's icon, name, and description so it looks unique in the Microsoft Teams app store.

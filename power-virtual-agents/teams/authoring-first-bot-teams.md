@@ -71,7 +71,7 @@ The first time you create a bot in a team, it will take 1 to 10 minutes to build
 
     If this is the first time a bot is being created in your team, you'll see a notice explaining that it will take some time (this could take from 1 to 10 minutes):
    
-   :::image type="content" source="media/first-bot-delay.png" alt-text="A message says You're the first person to create a bot in this team. We'll ned to do some setting up, so loading time will be a little longer than usual.":::
+   :::image type="content" source="media/first-bot-delay.png" alt-text="A message says You're the first person to create a bot in this team. We'll need to do some setting up, so loading time will be a little longer than usual.":::
 
    >[!NOTE]
    >If you were just recently added to a team that already has a bot, you may still see this message as Microsoft Teams is still adding you to the team. You should wait 15 minutes and then create your bot. You should also wait for 15 minutes before finding the team in the **Chatbots** tab.
