@@ -12,7 +12,7 @@ ms.custom: "publication, authoring, ceX, teams"
 ms.collection: virtual-agent
 ---
 
-# Add bot to Microsoft Teams
+# Add a chatbot to Microsoft Teams
 
 Select the version of Power Virtual Agents you're using here:
 
@@ -112,7 +112,7 @@ You should add your bot to your own version of Teams before sharing it with othe
 
 1. Select **Open bot** to have the installation prompt launch in Microsoft Teams. Select **Add** to have it added as an app in Teams. This only installs the bot for you.
 
-:::image type="content" source="media/sharing-security-groups/add-bot-to-teams-open-bot-teams-panel.PNG" alt-text="Install bot for yourself in Teams panel":::
+:::image type="content" source="../media/sharing-security-groups/add-bot-to-teams-open-bot-teams-panel.PNG" alt-text="Install bot for yourself in Teams panel":::
 
 ## Share a link so others can install the bot
 
