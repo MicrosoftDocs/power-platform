@@ -54,7 +54,7 @@ The very first step is to add the Power Virtual Agents app. Then you can create 
 ## Create a bot
 
 
-When you create a bot, it has to go into a team - everyone in that team will be able to see and use the bot (but you can share it with people in other teams later on). If you want other people to have access to edit the bot, you need to [add them to your team](admin-share-bots-teams.md#share-bots).
+When you create a bot, it has to go into a team - everyone in that team will be able to see and use the bot (but you can share it with people in other teams later on). If you want other people to have access to edit the bot, you need to [add them to your team](admin-share-bots-teams.md).
 
 All bots have to belong to a team. You can [create a new team](/MicrosoftTeams/get-started-with-teams-create-your-first-teams-and-channels#create-a-team) if necessary, before you add a bot to it.
 

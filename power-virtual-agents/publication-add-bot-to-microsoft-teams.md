@@ -232,24 +232,24 @@ Before submitting the bot to your organization, make sure:
 7. Review the requirements for submission, and select **Submit for admin approval**.
 
     >[!NOTE]
-    >Make sure you review the content and it's ready for an admin to review. You will need to submit new requests to the admin to [update the icon and descriptions](#customize-bots-appearance-in-microsoft-teams) for bots that were previously approved.  
+    >Make sure you review the content and it's ready for an admin to review. You will need to submit new requests to the admin to [update the icon and descriptions](#customize-the-bots-appearance-in-microsoft-teams) for bots that were previously approved.  
     >Once approved, all new and existing users of the bot in Teams will receive the update.  
     >This only applies to the bot details. You can continue to make content updates to your bot by publishing the latest content without needing to re-submit to admin.
 
 9. A final confirmation prompt will appear. Select **Yes** to continue. The bot will be sent to your admin [for them to approve it](/microsoftteams/submit-approve-custom-apps#validate), and you will see a note indicating the status of your submission.
 
-    :::image type="content" source="media/publish-share-submit-status.png" alt-text="The status has an orange note with information about the status of the submission, including the name of the bot, the version number, and the current status Waiting for approval":::
+    :::image type="content" source="media/sharing-security-groups/publish-share-submit-status.png" alt-text="The status has an orange note with information about the status of the submission, including the name of the bot, the version number, and the current status Waiting for approval":::
 
     >[!NOTE]
     >After submitting the bot for admin approval, you should not change the bot's access setting to be less than everyone in your organization.  
     >This will result in users in the organization unable to chat with the bot after installing it from the Microsoft Teams app store **Built by your org** section.  
-    >Work with your admin on the [Microsoft Teams app policy](https://docs.microsoft.com/MicrosoftTeams/teams-app-setup-policies) on who can find and install the bot.
+    >Work with your admin on the [Microsoft Teams app policy](/microsoftteams/teams-app-setup-policies) on who can find and install the bot.
 
 10. You will need to wait for your [admin's approval](/microsoftteams/submit-approve-custom-apps). You can check the latest status by selecting **Refresh**, or opening the **Make the bot available to others** window from the **Publish** page.
 
 11. After your admin approves the bot, the status will be updated to **Approved**. You can directly open the bot and share the approved version's link with other users.
 
-12. Optionally partner with your admin to pre-pin or install the app for users in the [Microsoft Teams app policy](https://docs.microsoft.com/MicrosoftTeams/teams-app-setup-policies) so they can find the bot directly in their Microsoft Teams left app rail.
+12. Optionally partner with your admin to pre-pin or install the app for users in the [Microsoft Teams app policy](/microsoftteams/teams-app-setup-policies) so they can find the bot directly in their Microsoft Teams left app rail.
 
 >[!NOTE]
 >If your app doesn't appear in the **Built by your org** section even though it's marked as **Approved**, your Teams app might be caching information. 

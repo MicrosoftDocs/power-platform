@@ -13,7 +13,7 @@ ms.custom: "multi-author, admin, ceX, teams"
 ms.collection: virtual-agent
 ---
 
-# Share your bot with other users
+# Share your bot with other users in Microsoft Teams
 
 Select the version of Power Virtual Agents you're using here:
 
@@ -34,7 +34,7 @@ You can share your bot with security groups so their members can chat with the b
 
 1. Select **Share** at the top of the bot's home page.
 
-  :::image type="content" source="media/sharing-security-groups/sharing-bot-homepage-teams.PNG" alt-text="Sharing UI entry point in bot homepage.":::
+  :::image type="content" source="../media/sharing-security-groups/sharing-bot-homepage-teams.PNG" alt-text="Sharing UI entry point in bot homepage.":::
 
 2. Specify the security group name that you would like to share the bot with.
 
@@ -42,11 +42,11 @@ You can share your bot with security groups so their members can chat with the b
   >You can only share a bot with security groups. You cannot share with individual users directly.  
   >You can manage individual user access by adding or removing users from the security group.
 
-  :::image type="content" source="media/sharing-security-groups/sharing-bot-specify-security-group-teams.PNG" alt-text="Specify security group in Sharing UI.":::
+  :::image type="content" source="../media/sharing-security-groups/sharing-bot-specify-security-group-teams.PNG" alt-text="Specify security group in Sharing UI.":::
 
 3. Review the security group's permissions.
 
-  :::image type="content" source="media/sharing-security-groups/sharing-review-sg-permission-teams.PNG" alt-text="Review security group permission in Sharing UI.":::
+  :::image type="content" source="../media/sharing-security-groups/sharing-review-sg-permission-teams.PNG" alt-text="Review security group permission in Sharing UI.":::
 
 4. If you want to let users know you've shared the bot with them, select the **Send an email invitation to new users** check box.
 
@@ -64,7 +64,7 @@ You can share your bot to allow everyone in the same organization as the bot to 
 
 3. Select **User - can use the bot** option.
 
-  :::image type="content" source="media/sharing-security-groups/sharing-share-everyone-in-org-teams.PNG" alt-text="Set user permission for everyone in the organization in Sharing UI.":::
+  :::image type="content" source="../media/sharing-security-groups/sharing-share-everyone-in-org-teams.PNG" alt-text="Set user permission for everyone in the organization in Sharing UI.":::
 
   >[!NOTE]
   >Power Virtual Agents will not send an email invitation to everyone in the organization. You can directly **Copy link** and share it with users to install the bot in Microsoft Teams.
@@ -79,7 +79,7 @@ You can stop sharing the bot with a security group or everyone in your organizat
 
 2. Select **X** next to the security groups that you want to stop sharing the bot with.
 
-  :::image type="content" source="media/sharing-security-groups/sharing-unshare-sg-teams.PNG" alt-text="Unshare security group in Sharing UI.":::
+  :::image type="content" source="../media/sharing-security-groups/sharing-unshare-sg-teams.PNG" alt-text="Unshare security group in Sharing UI.":::
 
 3. Select **Share** to stop sharing the bot with the security groups.
 
@@ -91,7 +91,7 @@ You can stop sharing the bot with a security group or everyone in your organizat
 
 3. Select **None** option.
 
-  :::image type="content" source="media/sharing-security-groups/sharing-unshare-everyone-in-org-teams.PNG" alt-text="Unshare everyone in the organization in Sharing UI.":::
+  :::image type="content" source="../media/sharing-security-groups/sharing-unshare-everyone-in-org-teams.PNG" alt-text="Unshare everyone in the organization in Sharing UI.":::
 
 3. Select **Share** to stop sharing the bot with everyone in the organization.
 
@@ -113,7 +113,7 @@ To share your bot with other users for collaboration, you need to [add them to y
 >[!NOTE]
 >It could take up to 15 minutes before the new team member sees the team in the Power Virtual Agents app.
 
-You can see a list of the teams you belong to, and each bot within that team by going to the **Chatbots** tab on the top navigation bar. Teams are listed on the left, selecting a team shows the chatbots in that team. Whereever you are in the app, you can always get back to the list of chatbots by selecting **Chatbots** at the top.
+You can see a list of the teams you belong to, and each bot within that team by going to the **Chatbots** tab on the top navigation bar. Teams are listed on the left, selecting a team shows the chatbots in that team. Where ever you are in the app, you can always get back to the list of chatbots by selecting **Chatbots** at the top.
 
 >[!TIP]
 >**My chatbots** shows all the bots you created and is an easy way for you to find your bot across multiple teams. You can find bots created by other team members by selecting the team.
@@ -124,7 +124,7 @@ You can open bots for editing by selecting the bot's name.
 
 If you select the check mark next to the bot's name, you can go straight to the Topics or Analytics page for that bot. You can also select **Edit** to go to the bot's homepage.
 
-:::image type="content" source="media/admin-share-bots-edit.png" alt-text="The Topics and Analtyics buttons appear when a bot is selected.":::
+:::image type="content" source="media/admin-share-bots-edit.png" alt-text="The Topics and Analytics buttons appear when a bot is selected.":::
 
 If you select the menu icon next the bot's name you can then select **Edit** to go to the bot's homepage, or go to the Topics or Analytics pages.
 

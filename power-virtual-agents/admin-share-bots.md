@@ -23,7 +23,7 @@ Select the version of Power Virtual Agents you're using here:
 
 Share your bot with other users so they can chat with it or collaborate together to author the bot. You can share bots with users with the **Share** options available in Power Virtual Agents.
 
-## Share a bot for users to chat with it
+## Share a bot
 Bot owners and managers from [sharing a bot for collaboration](#share-a-bot-for-collaboration) always have permission to chat with a bot. You can share bots with additional users to only chat with it.
 
 ### Prerequisites
@@ -41,7 +41,7 @@ You can share your bot with security groups so their members can chat with the b
   >[!NOTE]
   >You can only share a bot with security groups. You cannot share with individual users directly. You can manage individual user access by adding or removing users from the security group.
 
-  :::image type="content" source="media/sharing-bot-specify-security-group.PNG" alt-text="Specify security group in Sharing UI":::
+  :::image type="content" source="media/sharing-security-groups/sharing-bot-specify-security-group.PNG" alt-text="Specify security group in Sharing UI":::
 
 3. Review the security group's permission
 

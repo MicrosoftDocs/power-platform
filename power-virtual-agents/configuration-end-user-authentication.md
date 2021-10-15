@@ -109,7 +109,7 @@ This topic is automatically triggered for any user who talks to the bot without 
 
 ### Control who can chat with bot in the organization
 
-Your bot's **authentication option** and **Require user to sign in** combination determines whether you can [share the bot](admin-share-bots.md#share-a-bot-for-user-to-chat-with-it) to control who in your organization can chat with your bot or not.  Sharing a bot for collaboration is not impacted by the end-user authentication setting. 
+Your bot's **authentication option** and **Require user to sign in** combination determines whether you can [share the bot](admin-share-bots.md) to control who in your organization can chat with your bot or not.  Sharing a bot for collaboration is not impacted by the end-user authentication setting. 
 
 - **No authentication**. Any user who has a link to the bot (or can find it, for example, on your website) can chat with it. You cannot control which users can chat with the bot in your organization.
 
