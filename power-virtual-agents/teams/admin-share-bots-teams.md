@@ -20,41 +20,42 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](../admin-share-bots.md)
 > - [Power Virtual Agents app in Microsoft Teams](admin-share-bots-teams.md)
 
-Share bot with other users to chat with your bot or collaborate together to author the bot. 
+Share your bot with other users so they can chat with the bot or collaborate together to author it. 
 
 ## Share bots for user to chat with it
-User always has permission to chat with a bot when they are in the team where the bot is created. You can share bots with users outside of the team with the **Share** options available in Power Virtual Agents.
+A user can always chat with a bot if it was created in the same team. You can share bots with users outside of the team with the **Share** options available in Power Virtual Agents.
 
 ### Prerequisites
-- The bot's [end user authentication setting](configuration-end-user-authentication-teams.md) must be configured to **Only for Teams** or **Manual** with **Azure Active Directory** or **Azure Active Directory V2** as the provider and **Required user sign-in enabled** to manage who can chat with the bot in your organization. 
+- To manage who can chat with the bot in your organization, the bot's [end user authentication setting](configuration-end-user-authentication-teams.md) must be configured to **Only for Teams** or **Manual**, with **Azure Active Directory** or **Azure Active Directory V2** as the provider and **Require user sign-in** enabled.  
 
 ### Share bot with security groups
 You can share your bot with security groups so their members can chat with the bot.
 
 1. Select **Share** at the top of the bot's home page.
 
-  :::image type="content" source="media/sharing-bot-homepage-teams.PNG" alt-text="Sharing UI entry point in bot homepage":::
+  :::image type="content" source="media/sharing-security-groups/sharing-bot-homepage-teams.PNG" alt-text="Sharing UI entry point in bot homepage.":::
 
 2. Specify the security group name that you would like to share the bot with.
 
   >[!NOTE]
-  >You can only share a bot with security groups. You cannot share with individual users directly. You can manage individual user access by adding or removing users from the security group.
+  >You can only share a bot with security groups. You cannot share with individual users directly.  
+  >You can manage individual user access by adding or removing users from the security group.
 
-  :::image type="content" source="media/sharing-bot-specify-security-group-teams.PNG" alt-text="Specify security group in Sharing UI":::
+  :::image type="content" source="media/sharing-security-groups/sharing-bot-specify-security-group-teams.PNG" alt-text="Specify security group in Sharing UI.":::
 
-3. Review the security group's permission
+3. Review the security group's permissions.
 
-  :::image type="content" source="media/sharing-review-sg-permission-teams.PNG" alt-text="Review security group permission in Sharing UI":::
+  :::image type="content" source="media/sharing-security-groups/sharing-review-sg-permission-teams.PNG" alt-text="Review security group permission in Sharing UI.":::
 
 4. If you want to let users know you've shared the bot with them, select the **Send an email invitation to new users** check box.
 
   >[!NOTE]
-  >Only security groups with email enabled will recevie email invitation. You can directly **Copy link** and share it with users to install the bot in Microsoft Teams.
+  >Only security groups with email enabled will receive an email invitation. You can directly **Copy link** and share it with users to install the bot in Microsoft Teams.
 
-5. Select **Share** to share the bot with the new security groups.
+5. Select **Share** to share the bot with the security group.
 
 ### Share bot with everyone in the organization
-You can share your bot to allow everyone in the same organization as where the bot is to chat with it.
+You can share your bot to allow everyone in the same organization as the bot to chat with it.
 
 1. Select **Share** at the top of the bot's home page.
 
@@ -62,14 +63,14 @@ You can share your bot to allow everyone in the same organization as where the b
 
 3. Select **User - can use the bot** option.
 
-  :::image type="content" source="media/sharing-share-everyone-in-org-teams.PNG" alt-text="Set user permission for everyone in the organization in Sharing UI":::
+  :::image type="content" source="media/sharing-security-groups/sharing-share-everyone-in-org-teams.PNG" alt-text="Set user permission for everyone in the organization in Sharing UI.":::
 
   >[!NOTE]
-  >Power Virtual Agents will not send email invitation to everyone in the organization. You can directly **Copy link** and share it with users to install the bot in Microsoft Teams.
+  >Power Virtual Agents will not send an email invitation to everyone in the organization. You can directly **Copy link** and share it with users to install the bot in Microsoft Teams.
 
 4. Select **Share** to share the bot with everyone in the organization.
 
-### Stop sharing bot
+### Stop sharing the bot
 You can stop sharing the bot with a security group or everyone in your organization.
 
 **Stop sharing with a security group**
@@ -77,7 +78,7 @@ You can stop sharing the bot with a security group or everyone in your organizat
 
 2. Select **X** next to the security groups that you want to stop sharing the bot with.
 
-  :::image type="content" source="media/sharing-unshare-sg-teams.PNG" alt-text="Unshare security group in Sharing UI":::
+  :::image type="content" source="media/sharing-security-groups/sharing-unshare-sg-teams.PNG" alt-text="Unshare security group in Sharing UI.":::
 
 3. Select **Share** to stop sharing the bot with the security groups.
 
@@ -89,7 +90,7 @@ You can stop sharing the bot with a security group or everyone in your organizat
 
 3. Select **None** option.
 
-  :::image type="content" source="media/sharing-unshare-everyone-in-org-teams.PNG" alt-text="Unshare everyone in the organization in Sharing UI":::
+  :::image type="content" source="media/sharing-security-groups/sharing-unshare-everyone-in-org-teams.PNG" alt-text="Unshare everyone in the organization in Sharing UI.":::
 
 3. Select **Share** to stop sharing the bot with everyone in the organization.
 
@@ -131,7 +132,7 @@ If you select the menu icon next the bot's name you can then select **Edit** to 
 If you rename, restore, or delete a team, it could take up to 2 hours for the changes to be reflected in the Power Virtual Agents app.
 
 ## Data permissions
-To make sure users who chat with your bot can run the [Power Automate](advanced-flow.md) flows correctly, you should test your bot to make sure thier permission with the integrated systems is configured correctly.
+To make sure users who chat with your bot can run the [Power Automate](advanced-flow-teams.md) flows correctly, you should test your bot to make sure their permissions with the integrated systems are configured correctly.
 
 ## Collaborate on bots
 

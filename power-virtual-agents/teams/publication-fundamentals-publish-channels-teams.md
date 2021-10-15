@@ -47,9 +47,9 @@ After the first publish, you can do subsequent publishes whenever you would like
 
 The publishing process will check for errors in the latest bot content.
 
-When publication is successful, you can [make the bot available to users in Microsoft Teams](publication-add-bot-to-microsoft-teams-teams.md) via installation link or show in diferent sections of Microsoft Teams app store. You can always do it later by selecting **Make bot available to others** from the Publish page.
+When publication is successful, you can [make the bot available to users in Microsoft Teams](publication-add-bot-to-microsoft-teams-teams.md) with the installation link or from various places in the Microsoft Teams app store. You can share your bot later by selecting **Make bot available to others** from the Publish page.
 
-You can also install the bot fot your own use in Microsoft Teams by selecting **Open the bot**.
+You can also install the bot for your own use in Microsoft Teams by selecting **Open the bot**.
 
 > [!TIP]
 >To prevent disrupting users who are having an existing conversation with the bot, they will not receive the latest published content until a new conversation has started. A new conversation starts after it has been idle for more than 30 minutes.  
@@ -61,7 +61,7 @@ You can also install the bot fot your own use in Microsoft Teams by selecting **
  ## In this section
 
 
-- [Add bot to Microsoft Teams](publication-add-bot-to-microsoft-teams-teams.md) | Make your bot available to users in Microsoft Teams
+- [Add bot to Microsoft Teams](publication-add-bot-to-microsoft-teams-teams.md) | Make your bot available to users in Microsoft Teams.
 - [Create a privacy statement and terms of use](publication-terms-of-use-teams.md) | Create and link to a privacy statement and terms of use for bots you create.
 
 ## Known limitations
