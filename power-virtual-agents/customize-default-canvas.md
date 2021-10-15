@@ -52,7 +52,7 @@ You can change the bot's name and icon. This will affect the icon in all channel
 
 1. Select **Manage** on the side navigation pane, and then go to the **Details** tab.
 
-2. Change the bot's name and icon. [Review the recommendations on Microsoft Teams icon formats](https://review.docs.microsoft.com/microsoftteams/platform/resources/schema/manifest-schema#icons)
+2. Change the bot's name and icon. [Review the recommendations on Microsoft Teams icon formats](/microsoftteams/platform/resources/schema/manifest-schema#icons)
 
 3. Select **Save** to commit your changes.
 
