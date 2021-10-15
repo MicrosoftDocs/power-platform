@@ -223,7 +223,7 @@ The **EnvironmentName** variable is used to specify the Azure DevOps environment
 
    ![Select New Variable](media/setup-almacceleratoradvanced-sample-solution/image-20210506101519756.png)
 
-1. In the New Variable Screen Enter "**EnvironmentName**" for the Name and either (**Validate, Test or Production**) for the Value depending on which pipeline you are editing and **Select OK**
+1. In the New Variable Screen Enter "**EnvironmentName**" for the Name and either (**Validate, Test or Production**) for the Value depending on which pipeline you're editing and **Select OK**
 
    ![Enter EnvironmentName for the name of the Variable](media/setup-almacceleratoradvanced-sample-solution/image-20210506101906429.png)
 
@@ -266,7 +266,7 @@ When you first launch the app you may need to consent to the app using your conn
    > [!NOTE]
 If you don't see your DevOps Organization / Project in the dropdown double check that the Custom connector is working correctly after updating it's Security settings.
 
-1. From the Environment Drop Down **Select the Dataverse Environment** in which you will be doing your development work.
+1. From the Environment Drop Down **Select the Dataverse Environment** in which you'll be doing your development work.
    ![image-20210506141321294](media/setup-almacceleratoradvanced-sample-solution/image-20210506141321294.png)
 
    > [!NOTE]
@@ -307,7 +307,7 @@ There is an option to specify if the latest changes contain Delete Components. T
 
 1. Return to the ALM Accelerator App and **Select the Configure Deployment Settings link** under the name of the Solution.
 
-   ![image-20210920151916114](media/setup-almacceleratoradvanced-sample-solution/image-20210920151916114.png)On the configuration deployment page you will see the following items
+   ![image-20210920151916114](media/setup-almacceleratoradvanced-sample-solution/image-20210920151916114.png)On the configuration deployment page you'll see the following items
 
    - Deployment Environments
 
@@ -393,7 +393,7 @@ Be sure to publish your changes before initiating the push.
 
        ![image-20210506151302121](media/setup-almacceleratoradvanced-sample-solution/image-20210506151302121.png)
 
-     - This time you will notice that there is **no Build Validation Policy enforcement** since we are only running the build validation for the ALMAcceleratorSampleSolution branch and **not the main branch**.
+     - This time you'll notice that there is **no Build Validation Policy enforcement** since we are only running the build validation for the ALMAcceleratorSampleSolution branch and **not the main branch**.
 
        ![image-20210506151536128](media/setup-almacceleratoradvanced-sample-solution/image-20210506151536128.png)
 
@@ -401,6 +401,6 @@ Be sure to publish your changes before initiating the push.
 
        ![image-20210506152930801](media/setup-almacceleratoradvanced-sample-solution/image-20210506152930801.png)
 
-     - Once the pipeline for deploying to Production is finished you will see the status of the deployment in the App similar to the other stages.
+     - Once the pipeline for deploying to Production is finished you'll see the status of the deployment in the App similar to the other stages.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
