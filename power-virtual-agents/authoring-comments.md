@@ -2,7 +2,7 @@
 title: "Create and reply to comments in bot topics"
 description: "Add new comments, reply to existing comments, and resolve or delete comments and comment threads for topics within a Power Virtual Agents chatbot."
 keywords: "PVA"
-ms.date: 9/22/2021
+ms.date: 10/20/2021
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -19,17 +19,10 @@ searchScope:
 
 - [!INCLUDE [Preview documentation notice](includes/cc-beta-prerelease-disclaimer.md)]
 
-Select the version of Power Virtual Agents you're using here:
-
-> [!div class="op_single_selector"]
-> - [Power Virtual Agents web app](authoring-comments.md)
-> - [Power Virtual Agents app in Microsoft Teams](teams/authoring-comments-teams.md)
-
-
 
 >[!IMPORTANT]
 >This is a preview feature.
->Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and [provide feedback](https://powerusers.microsoft.com/t5/Forums/ct-p/pva_forums).
+>Preview features arenâ€™t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and [provide feedback](https://powerusers.microsoft.com/t5/Forums/ct-p/pva_forums).
 
 
 
