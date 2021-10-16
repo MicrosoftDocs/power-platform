@@ -59,7 +59,7 @@ After the **StartTrial** trigger is added, go to the **Bot Responses** tab for t
 
 ````JSON
 
-# StartTrialForm
+# adaptivecardjson_StartTrialForm()
 - ```
 {
     "type": "AdaptiveCard",
@@ -107,21 +107,28 @@ Note that every data field in this Adaptive card was given an ID: **Name**, **Ad
 
 :::image type="content" source="media/Composer_Example4/E4_createSubmitForm.png" alt-text="Composer - create StartTrialForm.":::
 
+Next, add the following Activity below the Adaptive Card JSON:
+
+
+````JSON
+ # AdaptiveCard_StartTrialForm()
+[Activity
+    Attachments = ${json(adaptivecardjson_StartTrialForm())}
+]
+````
+:::image type="content" source="media/Composer_Example4/E4_createSubmitFormActivity.png" alt-text="Composer - create Activity.":::
+
 Go to the **Create** tab in Composer and select the **StartTrial** trigger. Add the **Ask a question** action and select type **Text**.
 
 :::image type="content" source="media/Composer_Example4/E4_ask_question.png" alt-text="Composer - ask a question.":::
 
-Select the **Attachments** option in **Prompt for text**:
-
-:::image type="content" source="media/Composer_Example4/E4_selectAttachment_option.png" alt-text="Composer - select Attachment option.":::
-
-Select **Add custom** option and add the following to the **Attachments** window:
+Switch to **Show code** view and add the following to the code window:
 
 ```JSON
--${StartTrialForm()}
+- ${AdaptiveCard_StartTrialForm()}
 ```
 
-:::image type="content" source="media/Composer_Example4/E4_addAttachment_StartTrialForm.png" alt-text="Composer - add StartTrialForm attachment.":::
+:::image type="content" source="media/Composer_Example4/e4_call_starttrialform_activity.png" alt-text="Composer - call StartTrialForm activity.":::
 
 Select the **User Input** node and save user input data. Set **Property** to **user.name** and set **Value** to **=turn.activity.value.Name** to extract and save the value of the from field **Name** from our Adaptive card **StartTrialForm** into **user.name**.
 
@@ -157,6 +164,10 @@ Make sure **Track between topics** is turned on, and test your new bot content b
 - **How do I sign up for a trial?**
 
 :::image type="content" source="media/Composer_Example4/Example4_cropped.png" alt-text="Power Virtual Agents test.":::
+
+>[!Note]
+>Selecting **Publish** in Composer makes the changes available for testing, but does not automatically Publish your Power Virtual Agents bot.  
+>Use the [Publish](publication-fundamentals-publish-channels.md) feature in Power Virtual Agents to publish your bot changes to channels.
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

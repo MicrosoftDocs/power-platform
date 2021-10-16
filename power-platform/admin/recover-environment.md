@@ -4,7 +4,7 @@ description: "Learn how to restore a recently deleted environment by using Micro
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/13/2021
+ms.date: 10/01/2021
 ms.subservice: admin
 author: ChrisGarty
 ms.author: cgarty
@@ -19,7 +19,7 @@ search.app:
 ---
 # Recover environment
 
-You can recover a recently deleted environment ([within 7 days of deletion](backup-restore-environments.md#how-long-are-my-manualon-demand-backups-and-system-backups-retained)), by using the Microsoft Power Platform admin center or the Power Apps cmdlet Recover-AdminPowerAppEnvironment.
+You can recover a recently deleted environment ([within 7 days of deletion](backup-restore-environments.md#how-long-are-my-manualon-demand-backups-and-system-backups-retained)), by using the Microsoft Power Platform admin center or the Power Apps cmdlet [Recover-AdminPowerAppEnvironment](/powershell/module/microsoft.powerapps.administration.powershell/recover-adminpowerappenvironment?view=pa-ps-latest).
 
 > [!NOTE]
 > Available storage capacity might be required in order to successfully recover an environment depending on the type of environment being recovered. For information on viewing your current storage capacity, see [Microsoft Dataverse storage capacity](capacity-storage.md). 
@@ -34,13 +34,10 @@ An administrator can recover a recently deleted environment by using the Power P
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin, Global admin, or Power Platform admin).
 
-2. In the navigation pane, select **Environments**, and then select **Click to view environments you may recover.**
+2. In the navigation pane, select **Environments**, and then select **Recover deleted environments**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Restore deleted environments alert.](media/restore-delete-alert.png "Restore deleted environments alert")
-
-   > [!NOTE]
-   > If the alert is not visible, navigate to another page such as **Resources** > **Capacity** and then return to the **Environments** page.
+   > ![Restore deleted environments.](media/restore-delete-alert.png "Restore deleted environments")
 
 3. Select an environment to recover, and then select **Recover**.
 

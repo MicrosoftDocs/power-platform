@@ -4,7 +4,7 @@ description: Connect to Exchange Online
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/11/2021
+ms.date: 10/11/2021
 author: revachauhan
 ms.subservice: admin
 ms.author: rechauha
@@ -18,8 +18,6 @@ search.app:
   - Flow
 ---
 # Connect to Exchange Online
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 With both [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] and customer engagement apps (such as [Dynamics 365 Sales](/dynamics365/sales-professional/help-hub), [Dynamics 365 Customer Service](/dynamics365/customer-service/help-hub), [Dynamics 365 Marketing](/dynamics365/marketing/help-hub), [Dynamics 365 Field Service](/dynamics365/field-service/overview), and [Dynamics 365 Project Service Automation](/dynamics365/project-operations/psa/overview)) hosted as online services, connecting the two is a simpler, more straightforward configuration.  
   

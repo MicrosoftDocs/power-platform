@@ -153,7 +153,7 @@ You use a different set of URLs to access Power Virtual Agents US Government env
 | [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com/) | [https://gcc.admin.powerplatform.microsoft.us](https://gcc.admin.powerplatform.microsoft.us/)<br /></br>[https://high.admin.powerplatform.microsoft.us](https://high.admin.powerplatform.microsoft.us/) (GCC High)<br /></br>[https://admin.appsplatform.us](https://admin.appsplatform.us/) (DoD) |
 
 
-For those customers that implement network restrictions, please ensure access to the following domains is made available to your end users' access points:
+For those customers that implement network restrictions, ensure access to the following domains is made available to your end users' access points:
 
 ### GCC customers:
 

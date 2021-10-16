@@ -1,7 +1,7 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps"
 description: Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps 
-ms.date: 09/21/2021
+ms.date: 10/14/2021
 ms.topic: "article"
 ms.assetid: 994cc854-17f6-45d6-bc20-fcf1a3f2d6d6
 searchScope:
@@ -23,6 +23,19 @@ Admins and IT professionals can use this information to prepare for future relea
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability will continue to work and is fully supported until it is officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
 
+## Internet Explorer 11 support for Dynamics 365 and Microsoft Power Platform is deprecated
+
+> [!IMPORTANT]
+> With 2022 release wave 2, Internet Explorer 11 will be blocked. Please switch to a modern browser.
+
+Effective December 2020, Microsoft Internet Explorer 11 support for Microsoft Dynamics 365 and Microsoft Power Platform is deprecated, and Internet Explorer 11 won’t be supported after August  2021. 
+
+This will impact customers who use Dynamics 365 and Microsoft Power Platform products that are designed to be used through an Internet Explorer 11 interface. After August 2021, Internet Explorer 11 won't be supported for such Dynamics 365 and Microsoft Power Platform products. We recommend that customers transition to Microsoft Edge. 
+
+More information: [Support end for Internet Explorer](admin/support-end-internet-explorer.md).
+
+If you have more questions, contact your Microsoft Customer Service representative or Microsoft Partner.
+
 ## Support for Microsoft 365 Groups and Yammer in Dynamics 365 is deprecated
 
 Effective February 2022, support for Microsoft 365 Groups (previously known as Office Groups) and Yammer in Dynamics 365 will be deprecated. This will impact customers who use Microsoft 365 Groups and/or Yammer for collaboration in Dynamics 365. We recommend that customers transition to Microsoft Teams for more advanced collaboration functionalities. For information about integrating Dynamics 365 with Teams, see [Integrate customer engagement apps in Dynamics 365 with Microsoft Teams](/dynamics365/teams-integration/teams-integration).
@@ -34,6 +47,9 @@ If you've questions about the deprecation, contact your Microsoft Customer Servi
 Effective September 2021, the **Analyze** action and the **Offline profile** report that is used to configure mobile offline profiles is deprecated. 
 The Analyze feature is being removed because of Cross-Site Scripts (XSS) vulnerabilities. The report is used to identify components that aren't available when you're working in offline mode. The capabilities will be reimagined as part of the ongoing enhancements of the mobile offline configuration experience. There's no action required by you.
 
+## Dynamics 365 - Gamification is deprecated
+
+Effective April 1, 2021, Dynamics 365 – Gamification is deprecated. Until September 30, 2021, Microsoft provided limited support for this solution. From October 1, 2021, the Dynamics 365 – Gamification solution won’t be functional. To uninstall Gamification, delete the **GamificationUpdater** and **Gamification** solutions from the Dynamics 365 organization. Note that you must first delete the **GamificationUpdater** solution followed by the **Gamification** solution. More information: [Delete a preferred solution](/previous-versions/dynamicscrm-2016/administering-dynamics-365/dn878909(v=crm.8)#Delete%20a%20preferred%20solution).
 
 ## Skype integration with customer engagement apps is deprecated
 
@@ -96,11 +112,24 @@ With the upcoming 2021 release wave 2 (public preview in August 2021 and GA in O
 
 #### Why is this needed? 
 
--	These tooltips aren't an accessible way to access information about the column. 
+-	These tooltips aren't discoverable in a way that is accessible for sighted, non-sighted, and mobile users to access additional information about the column. 
 
 #### Impact
 
 - Starting October 2021, these descriptions will no longer be available on hover. 
+- We will be introducing a new fully accessible feature for sighted, non-sighted, and mobile users in April 2022.
+
+## Business recommended icon on model-driven forms
+
+With the upcoming 2021 release wave 2 (public preview in August 2021 and GA in October 2021), business recommended icon on model forms will be removed.
+
+#### Why is this needed? 
+
+-	The icon is not presented in an accessible way to identify itself. 
+
+#### Impact
+
+- Starting October 2021, these icons will no longer be available on the form. 
 - We will be introducing a new fully accessible feature for April 2022.
 
 ## Model-driven app controls deprecation
@@ -136,14 +165,6 @@ Effective April 2021, the [Microsoft Dynamics 365 app for Windows](https://go.mi
 Microsoft continues to provide security and other critical updates for the Microsoft Dynamics 365 app for Windows until January 29, 2021. We won't release any other features or functionalities for the app. After April 1, 2021, the app is removed from the Microsoft Store, and is no longer supported. 
  
 We recommend that you start using your web browser as soon as possible to run your customer engagement apps, such as Dynamics 365 Sales, Dynamics 365 Customer Service, and Dynamics 365 Marketing. Run them on Windows to take advantage of the ongoing improvements for the web app.
-
-## Internet Explorer 11 support for Dynamics 365 and Microsoft Power Platform is deprecated
-
-Effective December 2020, Microsoft Internet Explorer 11 support for Microsoft Dynamics 365 and Microsoft Power Platform is deprecated, and Internet Explorer 11 won’t be supported after August  2021. 
-
-This will impact customers who use Dynamics 365 and Microsoft Power Platform products that are designed to be used through an Internet Explorer 11 interface. After August 2021, Internet Explorer 11 won't be supported for such Dynamics 365 and Microsoft Power Platform products. We recommend that customers transition to Microsoft Edge. 
-
-If you have more questions, contact your Microsoft Customer Service representative or Microsoft Partner.
 
 ## Organization data download filters for mobile offline are deprecated 
 
@@ -406,7 +427,7 @@ and supported until they are officially removed from a future major release. *A 
 |                       [Xrm.Utility.openQuickCreate](/previous-versions/dynamicscrm-2015/developers-guide/jj602956(v%3dcrm.7)#openquickcreate)                       |                                                                                                                         Xrm.Navigation.[openForm](/dynamics365/customer-engagement/developer/clientapi/reference/xrm-navigation/openform)                                                                                                                         |                                                                                                                                                                              Moving navigation actions to Xrm.Navigation                                                                                                                                                                               |
 |                       [Xrm.Utility.openWebResource](/previous-versions/dynamicscrm-2015/developers-guide/jj602956(v%3dcrm.7)#openwebresource)                       |                                                                                                                  Xrm.Navigation.[openWebResource](/dynamics365/customer-engagement/developer/clientapi/reference/xrm-navigation/openwebresource)                                                                                                                  |                                                                                                                                                Moving navigation actions to Xrm.Navigation  <br/>**Note**: This API returns VOID in Unified Interface.                                                                                                                                                 |
 |                       [globalContext.organizationSettings.baseCurrencyId](/powerapps/developer/model-driven-apps/clientapi/reference/xrm-utility/getglobalcontext/organizationsettings#basecurrencyid)                       |                                                                                                                  [globalContext.organizationSettings.baseCurrency](/powerapps/developer/model-driven-apps/clientapi/reference/xrm-utility/getglobalcontext/organizationsettings#basecurrency)                                                                                                                  |                                                                                                                                                The replacement method lets you access the display name along with the ID of transaction currency.                                                                                                                                                 |
-|                       [globalContext.userSettings.securityRoles](/powerapps/developer/model-driven-apps/clientapi/reference/xrm-utility/getglobalcontext/usersettings#securityroles)                       |                                                                                                                  [globalContext.userSettings.Roles](/powerapps/developer/model-driven-apps/clientapi/reference/xrm-utility/getglobalcontext/usersettings#roles)                                                                                                                  |                                                                                                                                                The replacement method lets you access the display name along with the ID of the security roles.                                                                                                                                                 |
+|                       [globalContext.userSettings.securityRoles](/powerapps/developer/model-driven-apps/clientapi/reference/xrm-utility/getglobalcontext/usersettings#securityroles)                       |                                                                                                                  [globalContext.userSettings.roles](/powerapps/developer/model-driven-apps/clientapi/reference/xrm-utility/getglobalcontext/usersettings#roles)                                                                                                                  |                                                                                                                                                The replacement method lets you access the display name along with the ID of the security roles.                                                                                                                                                 |
 |                       [globalContext.userSettings.transactionCurrencyId](/powerapps/developer/model-driven-apps/clientapi/reference/xrm-utility/getglobalcontext/usersettings#transactioncurrencyid)                       |                                                                                                                  [globalContext.userSettings.transactionCurrency](/powerapps/developer/model-driven-apps/clientapi/reference/xrm-utility/getglobalcontext/usersettings#transactioncurrency)                                                                                                                   |                                                                                                                                                The replacement method lets you access the display name along with the ID of transaction currency.                                                                                                                                                 |
 |                       [getData](/powerapps/developer/model-driven-apps/clientapi/reference/controls/getdata) and [setData](/powerapps/developer/model-driven-apps/clientapi/reference/controls/setdata) for Silverlight web resources                       |                                                                                                                  None                                                                                                                  |                                                                                                                                                Silverlight is no longer supported. These methods won't be available after October 2020.                                                                                                                                                  |
 |                       [formContext.data.entity.save](/powerapps/developer/model-driven-apps/clientapi/reference/formcontext-data-entity/save)                       |                                                                                                                  [formContext.data.save](/powerapps/developer/model-driven-apps/clientapi/reference/formcontext-data/save)                                                                                                                  |                                                                                                                   |
