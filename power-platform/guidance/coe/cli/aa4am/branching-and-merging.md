@@ -19,11 +19,19 @@ search.app:
 
 # Branching and Merging
 
-Understanding of [Branching and Merging](/azure/devops/repos/git/git-branching-guidance?), [Pull Request](/azure/devops/repos/git/git-branching-guidance?#review-and-merge-code-with-pull-requests) and [Build Pipelines](/azure/devops/pipelines/get-started/key-pipelines-concepts) are important concepts that are combined together with fusion development teams of Advanced Makers, Professional Developers and Operations teams will need to understand. The ALM Accelerator for Advanced Makers (AA4AM) builds on these concepts to allow Power Platform solutions to be managed.
+Development as a team of Advanced Makers and Professional developers often uncovers new concepts. Often one area of complexity is branching and merging. Using the links below different [Personas](./personas.md) to can review each concept and determine their level of comfort:
+
+1. [Branching and Merging](/azure/devops/repos/git/git-branching-guidance) - Review approaches to branching and merge changes between team members and push changes to test and production environments
+
+1. [Pull Request](/azure/devops/repos/git/git-branching-guidance?#review-and-merge-code-with-pull-requests) - Determine how changes will be reviewed and merged
+
+1. [Build Pipelines](/azure/devops/pipelines/get-started/key-pipelines-concepts) - What build pipelines are and how they help automate the integration and deployment process
+
+The ALM Accelerator for Advanced Makers (AA4AM) builds on these concepts to allow Power Platform solutions to be managed.
 
 ## Example
 
-The example below illustrates two parts of the organization the HR and Finance teams using different DevOps projects to manage related solutions for each department.
+The example below illustrates two parts of the organization the HR and Finance teams using different DevOps Projects to manage related solutions for each department.
 
 ![Branching and Merging Strategy](../media/branching-and-merging-example.png)
 
@@ -46,7 +54,7 @@ coe aa4am branch \
 
 More information on the [coe aa4am branch](../help/aa4am/branch.md) command
 
-2. After this command is run a default branch with Azure DevOps pipelines has been created in the repository
+2. After this command is run a default branch with Azure DevOps Pipelines has been created in the repository
 
 3. The Advanced Maker **Alan Steiener** creates an unmanaged Solution named **Onboarding** in his development environment
 
@@ -56,20 +64,19 @@ More information on the [coe aa4am branch](../help/aa4am/branch.md) command
 
 6. The merged commit can trigger a Continuous Deployment to the test environment
 
-7. When the set of features are ready for a production deployment a Pull Request can be made to merge changes into the main branch
+7. The sets of features are ready for a production deployment a Pull Request can be made to merge changes into the main branch
 
 8. The build and deployment pipelines can be configured to package the solution to the production environment
 
 #### Finance
 
-The Finance team maintains a separate Azure DevOps project for Finance related solutions. 
+The Finance team maintains a separate Azure DevOps Project for Finance related solutions. This Azure DevOps project could be in any of the following:
 
-This Azure DevOps project could be in:
-- The same Azure DevOps project with a different repository from the HR team (e.g. Different HR-Solutions and Fin-Solutions repositories)
+1. The same Azure DevOps project with a different repository from the HR team. For example, there could different repositories named HR-Solutions and Fin-Solutions
 
-- A separate Azure DevOps project and repository. This would allow different Role based security rights for the project
+1. A separate Azure DevOps project and repository. This approach of separate projects and repositories could allow different Role-based security rights to be defined for team department
 
-- A separate Azure DevOps Organization, Project and repository. This would allow different Azure Active Directory tenants to be used.
+1. A separate Azure DevOps Organization, Project and repository. This would allow different Azure Active Directory tenants to be used.
 
 ##### Steps
 
@@ -88,7 +95,7 @@ coe aa4am branch \
 
 More information on the [coe aa4am branch](../help/aa4am/branch.md) command
 
-2. After this command is run a default branch with Azure DevOps pipelines has been created in the repository
+2. After this command is run a default branch with Azure DevOps Pipelines has been created in the repository
 
 3. **Karen Berg** creates an unmanaged Solution named **Expense** in her development environment
 

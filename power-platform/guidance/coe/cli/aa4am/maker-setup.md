@@ -19,11 +19,15 @@ search.app:
 
 # Maker Setup
 
-Once a user has been setup with a development environment [Read More](./development-environments.md) they will need to use the following sections to provide access to the service principal and create a solution branch.
+The first step is to ensure that the maker and an environment to build and manage solutions. Normally each maker has a unique [development environment](./development-environments.md) created. Having successfully gained access to a development environment the commands below allow either a Power Platform administrator or a Maker to perform the following tasks:
+
+1. [Setup Service Principal](#setup-service-principal) - Provide access to the Service Principal used by the Azure DevOps Pipeline
+
+1. [Maker Create Solution](#maker-create-solution) - Create a solution branch in the Azure DevOps repository.
 
 ## Setup Service Principal
 
-The Azure DevOps Pipeline uses a Azure Active Directory service principal to connect to the development environment and import and export the solution. To enable access to the environment the following command will add the service principal as a System Administrator to the developer Power Platform environment.
+The ALM Accelerator for Advanced Makers uses the created Azure Active Directory Service Principal to connect to  environments and import and export the solutions. The user add command enables the ALM Accelerator to access each  environment. The user add command adds the service principal as a user and assigned the System Administrator role to the nominated environment.
 
 1. Log out of any existing sessions if not the maker or a Power Platform tenant Administrator
 
@@ -32,22 +36,21 @@ az logout
 
 ```
 
-1. To ensure the Application User has access to the development environment you need to run the following command
+1. Add the Service Principal to the environment
 
 ```bash
-coe aa4am user add \
-   -e https://org12345-dev.crm.dynamics.com
+coe aa4am user add -e https://org12345-dev.crm.dynamics.com
 ```
 
 More information on the [coe aa4am user add](../help/aa4am/user/add.md) command
 
 ## Maker Create Solution
 
-Once the environment has been setup and your development environment created and registered as a service connection in Azure DevOps you can use the following steps to create a source control managed solution:
+Power Platform solutions managed by the ALM Accelerator require a branch to be created in an Azure DevOps Repository. This branch called a "solution branch" allows the maker to build and test changes. Once changes have been verified, they can then be merged back into the main branch to deploy to production. The branch command creates a solution branch in Azure DevOps and configures the required Azure Pipelines for the created branch.
 
 1. Switch to Developer Environment
 
-1. Create new solution e.g. NewSolution1
+1. Create new solution, for example,  NewSolution1
 
 1. Add items to the solution. For example
 
@@ -73,31 +76,31 @@ More information on the [coe aa4am branch](../help/aa4am/branch.md) command
 
 NOTES:
 
-- **-o** is the name of your DevOps Organization
+1. **-o** is the name of your DevOps Organization
 
-- **-p** is the name of the Azure DevOps Project
+1. **-p** is the name of the Azure DevOps Project
 
-- **-d** is the name of the solution branch to create
+1. **-d** is the name of the solution branch to create
 
-- If the repository you want to create a branch for is empty you will need to commit an initial commit before a branch can be created.
+1. If the repository you want to create a branch for is empty, you will need to commit an initial commit before a branch can be created.
 
 1. Open ALM Accelerator for Advanced Maker Application
 
 1. Select Push change to Git
 
-   a. Create New Branch e.g. MySolution1-WIP
+   a. Create New Branch, for example,  MySolution1-WIP
 
-   b. From existing Solution Branch created above e.g. MySolution1
+   b. An existing solution Branch, for example MySolution1
 
-   c. Add a comment e.g. Initial version
+   c. Add a comment, for example "Initial version"
 
-1. Click on Latest Push Status 
+1. Click on Latest Push Status
 
    a. Permit permissions for pipeline to run (Variable Group, Service Connection, Pipeline)
 
 ## Post Setup Checks
 
-After setting up an advanced maker you may need to verify the following:
+After setting up an advanced maker, you may need to verify the following is correctly configured:
 
 1. If this is your first branch created you will need to check variables applied for the created pipeline
 

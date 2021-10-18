@@ -1,6 +1,6 @@
 ---
 title: "Center of Excellence (CoE) Command Line Interface (CLI) ALM Accelerator Administrator Install"
-description: "Steps tp perform administrator install of the ALM Accelerator using the Center of Excellence (CoE) Command Line Interface (CLI)"
+description: "Steps to do administrator install of the ALM Accelerator using the Center of Excellence (CoE) Command Line Interface (CLI)"
 keywords: 
 author: Grant-Archibald-MS
 ms.author: grarchib
@@ -19,11 +19,17 @@ search.app:
 
 # Administrator Install
 
-To complete the initial steps of an AA4AM deployment you will need to complete the administrative tasks. Once this is done Advanced Makers can create and register development environments.
+As a first step you will need to complete the initial steps of an AA4AM deployment as Administrator. The commands below allow you to quickly automate the install. When you completed these steps, you can add Advanced Makers and setup connections to their Power Platform development environments.
 
 ![ALM Accelerator for Advanced Makers Install Overview](../media/aa4am-install-overview.png)
 
-It is assumed that the Admin Install will be run by a single user that has Power Platform Global Administrator, DevOps Administrator rights and Azure Active directory Administrator rights.
+It is assumed that the Administrator Install will be run by a single user that has the following rights:
+
+1. Power Platform Global Administrator
+
+1. DevOps Administrator rights
+
+1. Azure Active directory Administrator rights.
 
 ## Before You Start
 
@@ -31,7 +37,7 @@ Complete [Before You Start](./before-you-start.md) to ensure that:
 
 A. Power Platform Environments have been created
 
-B. Azure DevOps Organization and Project has been created
+B. The Azure DevOps Organization and Azure DevOps Project have been created
 
 C. CoE CLI installed
 
