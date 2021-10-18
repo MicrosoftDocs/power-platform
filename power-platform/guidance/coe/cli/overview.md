@@ -41,7 +41,7 @@ Comparing and contrasting the CoE CLI to other CLI / APIs:
 
 ## What Next
 
-As you consider an enterprise deployment the following sections outline the key concepts you will need to understand:
+As you consider an enterprise deployment the following sections outline the key concepts, you will need to understand:
 
 1. [Install CoE CLI](./install.md) - How to install the CoE CLI using local host computer or via a docker container.
 
@@ -55,7 +55,7 @@ Once the CoE CLI has been [installed](./install.md) you can use -h argument to s
 coe -h
 ```
 
-Authentication for tasks is managed using the Azure CLI. Using standard az cli commands you can login, logout and select accounts. For example
+Authentication for tasks is managed using the Azure CLI. Using standard Azure CLI commands you can login, logout and select accounts. For example
 
 ```bash
 az login

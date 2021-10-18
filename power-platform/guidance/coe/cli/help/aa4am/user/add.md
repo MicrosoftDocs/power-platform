@@ -41,7 +41,7 @@ The Power Platform development environment to add the Azure Active Directory as 
 
 You can visit https://aka.ms/ppac to list environments that you have access to.
 
-### --aad <name>
+### --aad
 
 The Azure Active Directory service principal application created during install. The user will be used to create the service connection to an advanced maker development environment.
 

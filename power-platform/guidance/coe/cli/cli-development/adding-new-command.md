@@ -1,3 +1,22 @@
+---
+title: "Center of Excellence (CoE) Command Line Interface (CLI) Add New Command"
+description: "Add a new command to the Center of Excellence Command Line interface application"
+keywords: 
+author: Grant-Archibald-MS
+ms.author: grarchib
+manager: pladhani
+ms.custom: ""
+ms.date: 10/20/2021
+ms.service: power-platform
+ms.topic: "article"
+ms.reviewer: jimholtz
+search.audienceType: 
+  - admin
+search.app: 
+  - PowerApps
+  - Powerplatform
+---
+
 # Adding a new Command
 
 To add a new sample command you can use the following command to template the initial setup of the TypeScript command and the jest unit test.

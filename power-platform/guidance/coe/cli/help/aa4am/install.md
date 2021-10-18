@@ -27,7 +27,7 @@ The ALM Accelerator for Advanced Makers (AA4AM) install command allows component
 coe aa4am install -f install.json
 ```
 
-To generate an install file you can use the [generate install](./generate/install) command
+To generate an install file you can use the [generate install](./generate/install.md) command
 
 ```bash
 coe aa4am generate install -o install.json
@@ -200,4 +200,4 @@ The name of the Azure Active Directory that should be selected. This value is op
 
 If your user account has access to multiple subscriptions this parameter allows you to specify which Azure subscription and tenant should be selected.
 
-The Azure CLI [az account set](/cli/azure/account?view=azure-cli-latest#az-account-set) can be used to set the active subscription.
+The Azure CLI [az account set](/cli/azure/account?#az-account-set) can be used to set the active subscription.

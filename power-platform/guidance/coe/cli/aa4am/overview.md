@@ -82,7 +82,7 @@ Not sure what AA4AM is and how it can help? The main GitHub project [README](htt
 
 ### Getting Started
 
-- [Scenarios](./scenarios/readme.md) - Discusses different install scenarios for AA4AM from Demo Installs to Enterprise Deployments
+- [Scenarios](./scenarios/overview.md) - Discusses different install scenarios for AA4AM from Demo Installs to Enterprise Deployments
 - [Personas](./personas.md) - Understand the key personas and how they map to AA4AM CLI commands and the wider AA4AM process
 - [Key Concepts](./key-concepts.md) - Understand the key concepts for the components that are being automated under the hood by the CLI commands
 - [Branching and Merging](./branching-and-merging.md) - Provides examples of branching and merging approach using AA4AM

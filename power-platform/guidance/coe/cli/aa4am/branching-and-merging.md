@@ -19,7 +19,7 @@ search.app:
 
 # Branching and Merging
 
-Understanding of [Branching and Merging](/azure/devops/repos/git/git-branching-guidance?view=azure-devops), [Pull Request](/azure/devops/repos/git/git-branching-guidance?view=azure-devops#review-and-merge-code-with-pull-requests) and [Build Pipelines](/azure/devops/pipelines/get-started/key-pipelines-concepts?view=azure-devops) are important concepts that are combined together with fusion development teams of Advanced Makers, Professional Developers and Operations teams will need to understand. The ALM Accelerator for Advanced Makers (AA4AM) builds on these concepts to allow Power Platform solutions to be managed.
+Understanding of [Branching and Merging](/azure/devops/repos/git/git-branching-guidance?), [Pull Request](/azure/devops/repos/git/git-branching-guidance?#review-and-merge-code-with-pull-requests) and [Build Pipelines](/azure/devops/pipelines/get-started/key-pipelines-concepts) are important concepts that are combined together with fusion development teams of Advanced Makers, Professional Developers and Operations teams will need to understand. The ALM Accelerator for Advanced Makers (AA4AM) builds on these concepts to allow Power Platform solutions to be managed.
 
 ## Example
 

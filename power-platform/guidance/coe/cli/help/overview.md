@@ -1,3 +1,22 @@
+---
+title: "Center of Excellence (CoE) Command Line Interface (CLI) Help"
+description: Help for the ALM Accelerator using the Center of Excellence (CoE) Command Line Interface (CLI)"
+keywords: 
+author: Grant-Archibald-MS
+ms.author: grarchib
+manager: pladhani
+ms.custom: ""
+ms.date: 10/20/2021
+ms.service: power-platform
+ms.topic: "article"
+ms.reviewer: jimholtz
+search.audienceType: 
+  - admin
+search.app: 
+  - PowerApps
+  - Powerplatform
+---
+
 # Center of Excellence - Command Line Interface Help
 
 The Center of Excellence Command (CoE) CLI help command provide further information on how to use the provided functionality. 

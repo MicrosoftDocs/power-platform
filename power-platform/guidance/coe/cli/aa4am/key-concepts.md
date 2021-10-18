@@ -29,14 +29,14 @@ As you deploy and use the AA4AM CLI it is important to understand the following 
 The CoE CLI application can create a Azure Active Directory application that automates the following key steps:
 
 1. User authenticated via Azure CLI
-   - [Azure Login](/cli/azure/reference-index?view=azure-cli-latest#az_login)
+   - [Azure Login](/cli/azure/reference-index?#az_login)
 
 1. Create Azure Active Directory Application using Azure CLI
-   - [Create AD Application](/cli/azure/ad/app?view=azure-cli-latest#az_ad_app_create)
-   - [Create Service Principal](/cli/azure/ad/sp?view=azure-cli-latest#az_ad_sp_create)
+   - [Create AD Application](/cli/azure/ad/app?#az_ad_app_create)
+   - [Create Service Principal](/cli/azure/ad/sp?#az_ad_sp_create)
 
 1. Grant Tenant Consent for Applications using Azure CLI
-   - [Permissions Admin Consent](/cli/azure/ad/app/permission?view=azure-cli-latest#az_ad_app_permission_admin_consent)
+   - [Permissions Admin Consent](/cli/azure/ad/app/permission?#az_ad_app_permission_admin_consent)
 
 1. Azure Application Granted rights via [manifest configuration file](https://github.com/microsoft/coe-starter-kit/blob/main/coe-cli/config/manifest.json) to call
    - Azure DevOps
@@ -54,7 +54,7 @@ The CoE CLI application can create a Azure Active Directory application that aut
 The CoE CLI application can create a Azure Active Directory group that is used for Azure DevOps and Power Platform authentication and role based access security.
 
 1. Group Created via Azure CLI
-   - [Create Group](/cli/azure/ad/group?view=azure-cli-latest#az_ad_group_create)
+   - [Create Group](/cli/azure/ad/group?#az_ad_group_create)
 
 ## Azure DevOps
 
@@ -82,13 +82,13 @@ The install performs the following key steps:
 
 1. Create Variable Groups for shared variables used by build pipelines 
 
-   - [Read More](/azure/devops/pipelines/library/variable-groups?view=azure-devops&tabs=yaml)
+   - [Read More](/azure/devops/pipelines/library/variable-groups)
 
 1. Create Service connections to Power Platform Environments using the Azure Active Directory Service Principal
 
    - NOTE: Each service connection will receive a separate Azure Active Directory secret.
 
-   - [Read More - Service Connections](/azure/devops/pipelines/library/service-endpoints?view=azure-devops&tabs=yaml)
+   - [Read More - Service Connections](/azure/devops/pipelines/library/service-endpoints)
 
 ### Branch Automation
 
@@ -98,7 +98,7 @@ The [coe aa4am branch](./maker-setup.md#maker-create-solution) command performs 
 
 1. Create build pipelines for the Solution Branch (Validation, Test, Production)
 
-1. Create [Branch Policies](/azure/devops/repos/git/branch-policies-overview?view=azure-devops) to ensure validation build completes successfully for pull requests
+1. Create [Branch Policies](/azure/devops/repos/git/branch-policies-overview) to ensure validation build completes successfully for pull requests
 
 ### Other Concepts
 

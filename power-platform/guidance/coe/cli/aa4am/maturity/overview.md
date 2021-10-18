@@ -1,6 +1,6 @@
 ---
-title: "Center of Excellence (CoE) Command Line Interface (CLI) ALM Accelerator maturity model"
-description: "Apply Power Platform Maturity to decide when to ise ALM Accelerator using the Center of Excellence (CoE) and Command Line Interface (CLI)"
+title: "Center of Excellence (CoE) Command Line Interface (CLI) Application Lifecycle Management (ALM) Accelerator maturity model"
+description: "Apply Power Platform Maturity to decide when to use ALM Accelerator using the Center of Excellence (CoE) and Command Line Interface (CLI)"
 keywords: 
 author: Grant-Archibald-MS
 ms.author: grarchib
@@ -44,7 +44,7 @@ AA4AM is a good match if you can check to see if the following apply:
      - Do you have Basic or above Azure DevOps licenses for Makers?
      - Per App or Per User Power Apps licenses to access the AA4AM Maker Solution?
 
-1. Are you looking to move to [Level 300 - Defined](#level-300-defined) or beyond?
+1. Are you looking to move to Level 300 - Defined or beyond?
 
 1. Administration
     - Do you have Environment Strategy in place?
@@ -53,15 +53,15 @@ AA4AM is a good match if you can check to see if the following apply:
       - Is the process automated to request environments?
 
 1. Are Source control concepts understood?
-    - Is [Branching and Merging](/azure/devops/repos/git/git-branching-guidance?view=azure-devops) understood?
+    - Is [Branching and Merging](/azure/devops/repos/git/git-branching-guidance) understood?
     - Are [Pull Request](/azure/devops/repos/git/git-branching-guidance?view=azure-devops#review-and-merge-code-with-pull-requests) used to review and merge changes?
-    - Are [Build Pipelines](/azure/devops/pipelines/get-started/key-pipelines-concepts?view=azure-devops) used to integrate and deploy between Validation and Test, Production environments?
+    - Are [Build Pipelines](/azure/devops/pipelines/get-started/key-pipelines-concepts) used to integrate and deploy between Validation and Test, Production environments?
 
 1. Are [Fusion development](/learn/paths/transform-business-applications-with-fusion-development/) teams engaged to include Low code and Pro code teams?
 
 1. Are your professional development teams familiar with [Branching and Merging](../branching-and-merging.md) strategies and able to assist makers?
 
-1. Do your Pro Code and Operations teams manage DevOps pipelines?
+1. Do your Pro Code and Operations teams manage Azure Pipelines?
 
 1. Are you Pro code team creating components in JavaScript?
 
@@ -73,7 +73,9 @@ AA4AM is a good match if you can check to see if the following apply:
    - Who is supporting the application / solution?
    - Do you have formal support team to manage issues for the solution?
 
-Where some gaps exist then a set of proactive training and or workshops can help grow the maturity of people, process and technology to assist them in moving toward Advanced Maker integration inside your organization.
+## Addressing Gaps
+
+Where some gaps exist from the leading questions, then consider what proactive training and or workshops can help grow the maturity of people, process and technology to assist them in moving toward Advanced Maker integration inside your organization.
 
 ## Leading questions
 
@@ -193,7 +195,7 @@ The system has minimal business impact. The issue is important but does not have
 
 Initial Response time 4-8 hours or greater with Business hours access and support (For example 9:00AM - 5:00PM)
 
-#### Admin and Governance
+#### Administration and Governance
 
 Leading questions to consider:
 

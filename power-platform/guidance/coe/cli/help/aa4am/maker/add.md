@@ -69,7 +69,7 @@ The Azure Active Directory (AAD) Makers group created during install. This user 
 
 Note the user running this command must be the creator or owner of the AAD group. The [Add or remove group owners in Azure Active Directory](/azure/active-directory/fundamentals/active-directory-accessmanagement-managing-group-owners) provides more information.
 
-### --aad <name>
+### --aad
 
 The Azure Active Directory service principal application created during install. The user will be used to create the service connection to a advanced maker development environment.
 
