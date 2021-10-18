@@ -260,7 +260,7 @@ The screenshot below is for reference as to where the unmanaged solution exists 
     > [!NOTE]
 When you first launch the app you may need to consent to the app using your connections.
 
-1. Select the **Cog** in the top right to select your **Azure DevOps Environment**, **Project, and **Repo** to which you'll push your changes and submit your pull requests and select **Save**
+1. Select the **Cog** in the top right to select your **Azure DevOps Environment**, **Project**, and **Repo** to which you'll push your changes and submit your pull requests and select **Save**
    ![Select the Settings Cog](media/almacceleratoradvanced-components/image-20210303085854533.png)
 
    > [!NOTE]

@@ -104,9 +104,9 @@ Sign in to [portal.azure.com](https://portal.azure.com).
 
     - **Azure DevOps**. (Required for connecting to Azure DevOps via the custom connector in the ALM Accelerator App). This permission can be found under **APIs my organization uses**.
 
-    - <a name="azdoappid"></a>When adding the Azure DevOps permission, go to APIs my organization uses and search for Azure DevOps and **copy the Application (client) ID**.
+    - When adding the Azure DevOps permission, go to APIs my organization uses and search for Azure DevOps and **copy the Application (client) ID**.
 
-      > [!IMPORTANT] Disambiguation: We'll use this value later and specifically call it out as the **Azure DevOps Application (client) ID** which is different from the **Application (client) ID** copied in Step 12 [below](#appid)
+      > [!IMPORTANT] Disambiguation: We'll use this value later and specifically call it out as the **Azure DevOps Application (client) ID** which is different from the **Application (client) ID** copied in Step 12 [below](#Create-an-App-Registration-in-your-AAD-Environment)
 
     - ![Copy the Application client ID](media/almacceleratoradvanced-components/image-4c6d6244-004e-4ac9-9034-79274f9be4c8.png)
 
@@ -116,15 +116,15 @@ Sign in to [portal.azure.com](https://portal.azure.com).
 
 1. Set the **Expiration** and select **Add**.
 
-1. <a name="appsecret"></a>After adding the secret **copy the value** and store for safe keeping to be used later.
+1. After adding the secret **copy the value** and store for safe keeping to be used later.
 
-1. <a name="appid"></a>Return to the **Overview** section of your App Registration and copy the **Application (client) ID** and **Directory (tenant) ID**.
+1. Return to the **Overview** section of your App Registration and copy the **Application (client) ID** and **Directory (tenant) ID**.
 
-     > [!IMPORTANT] Disambiguation: We'll use this value later and call it out as the **Application (client) ID** which is different from the **Azure DevOps Application (client) ID** copied in Step 7 [above](#azdoappid)
+     > [!IMPORTANT] Disambiguation: We'll use this value later and call it out as the **Application (client) ID** which is different from the **Azure DevOps Application (client) ID** copied in Step 7 [above](#Create-an-App-Registration-in-your-AAD-Environment)
 
 1. Select **Add a Redirect URI** > **Add a Platform** > **Web**
 
-1. <a name="appredirect"></a>Set the **Redirect URI** to <https://global.consent.azure-apim.net/redirect>
+1. Set the **Redirect URI** to <https://global.consent.azure-apim.net/redirect>
 
     >[!NOTE] You may need to update this later when configuring your custom connector after installing the app if this URL is different than the Redirect URL populated in the Custom Connector
 
@@ -410,11 +410,11 @@ This branch will be your next version (v-next) branch for your Solution in the r
 
       ![Change the pointer to the template repository](media/almacceleratoradvanced-components/image-20210408175435181.png)
 
-    - Change any value that references **SampleSolutionName** to the unique name of your Solution (for example MyNewSolution).
+   - Change any value that references **SampleSolutionName** to the unique name of your Solution (for example MyNewSolution).
 
       ![Change SampleSolutionName to the name of the Solution](media/almacceleratoradvanced-components/image-20210408175919661.png)
 
-    - Select **Commit** to save your changes.
+   - Select **Commit** to save your changes.
 
 1. In Azure DevOps, go to **Pipelines** and **Create a New Pipeline**
 
@@ -594,14 +594,14 @@ Download the **latest managed solution**(s) from GitHub (<https://github.com/mic
 
    | Name | Value |
    |--|--|
-   | Client ID | [The **Application (client) ID** you copied when [creating the App Registration](#appid)] |
-   | Client secret | [The **Application (client) Secret** you copied when [creating the App Registration](#appid)] |
+   | Client ID | [The **Application (client) ID** you copied when [creating the App Registration](#Create-an-App-Registration-in-your-AAD-Environment)] |
+   | Client secret | [The **Application (client) Secret** you copied when [creating the App Registration](#Create-an-App-Registration-in-your-AAD-Environment)] |
    | Tenant ID | leave as the default **common** |
-   | Resource URL | [The **Azure DevOps Application (client) ID** you copied when [adding permissions to your App Registration](#azdoappid)] |
+   | Resource URL | [The **Azure DevOps Application (client) ID** you copied when [adding permissions to your App Registration](#Create-an-App-Registration-in-your-AAD-Environment)] |
 
 1. Select **Update Connector**
 
-1. Verify that the **Redirect URL** is populated on the Security page with the URL <https://global.consent.azure-apim.net/redirect>. If the **Redirect URL is other than <https://global.consent.azure-apim.net/redirect>** copy the URL and [return to the app registration your created](#create-an-app-registration-in-your-aad-environment) and update the [Redirect URI](#appredirect) you set earlier to the updated URL.
+1. Verify that the **Redirect URL** is populated on the Security page with the URL <https://global.consent.azure-apim.net/redirect>. If the **Redirect URL is other than <https://global.consent.azure-apim.net/redirect>** copy the URL and [return to the app registration your created](#create-an-app-registration-in-your-aad-environment) and update the [Redirect URI](#Create-an-App-Registration-in-your-AAD-Environment) you set earlier to the updated URL.
 
 1. Verify the connector from the **Test** menu once you've completed the steps above.
     - Navigate to the **Test** menu.
