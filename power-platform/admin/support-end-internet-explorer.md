@@ -45,12 +45,13 @@ All users using model-driven apps in Internet Explorer will see a warning messag
 **Prior to the 2022 Wave 1 release blocking Internet Explorer,** users using model-driven apps in Internet Explorer will see an error message at the top of the app like the following.  
 
 > **Alert** <br />
-> Internet Explorer support has ended and will be blocked soon. Please switch to a modern browser.
+> Internet Explorer support has ended and will be blocked with the 2022 Wave 1 release. Please switch to Microsoft Edge or another modern browser.
+
 
 **With the 2022 Wave 1 release,** users opening model-driven apps in Internet Explorer will be blocked and see a message like this. 
 
 > **Alert** <br />
-> Model-driven apps require Microsoft Edge or a supported browser. Please switch to a modern browser.
+> Internet Explorer support has ended and is now blocked. Please switch to Microsoft Edge or another modern browser.
 
 Administrators wanting to block Internet Explorer for users earlier can request this through support. 
 
