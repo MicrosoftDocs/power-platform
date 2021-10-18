@@ -23,8 +23,6 @@ This section outlines the following key sections on the CoE CLI. The information
 
 - [Quick Start](#quick-start) - Provides set of links of the technology used to build and test the CLI
 
-- [Contributions](#contributions) - Links to wider contributor guidance
-
 - [Development Environment Setup](#development-environment-setup) - How to edit the CLI using Visual Studio Code
 
 - [Adding A New Command](./adding-new-command.md) - How to add a new CLI command
@@ -92,9 +90,9 @@ You can edit and debug the cli using Visual Studio Code
 
 1. Once installed Open the coe-cli folder in Visual Studio Code
 
-1. The [.vscode/launch.json](../../.vscode/launch.json) file contains a preconfigured debug launch command
+1. The [.vscode/launch.json](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/.vscode/launch.json) file contains a preconfigured debug launch command
 
-1. You can edit the [sample.json](../../sample.json) file to the commands that you want to debug
+1. You can edit the [sample.json](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/sample.json) file to the commands that you want to debug
 
 1. Place breakpoints in the TypeScript files you want to debug and Press F5 to start debugging
 

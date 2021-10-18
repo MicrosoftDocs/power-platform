@@ -54,7 +54,7 @@ AA4AM is a good match if you can check to see if the following apply:
 
 1. Are Source control concepts understood?
     - Is [Branching and Merging](/azure/devops/repos/git/git-branching-guidance) understood?
-    - Are [Pull Request](/azure/devops/repos/git/git-branching-guidance?view=azure-devops#review-and-merge-code-with-pull-requests) used to review and merge changes?
+    - Are [Pull Request](/azure/devops/repos/git/git-branching-guidance?#review-and-merge-code-with-pull-requests) used to review and merge changes?
     - Are [Build Pipelines](/azure/devops/pipelines/get-started/key-pipelines-concepts) used to integrate and deploy between Validation and Test, Production environments?
 
 1. Are [Fusion development](/learn/paths/transform-business-applications-with-fusion-development/) teams engaged to include Low code and Pro code teams?

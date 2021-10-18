@@ -32,7 +32,7 @@ One you have unit test completed for your new command:
 
 1. Review [https://www.npmjs.com/package/commander](https://www.npmjs.com/package/commander) on commands, options
 
-1. Update [commands.ts](../../src/commands/commands.ts) to include a new command or sub command
+1. Update [commands.ts](https://github.com/microsoft/coe-starter-kit/blob/main/coe-cli/src/commands/commands.ts) to include a new command or sub command
 
 - Import your files at the top of the file
 
@@ -74,7 +74,7 @@ import { SampleArguments, SampleCommand} from './sample';
         this.AddSampleCommand(program);
 ```
 
-1. Update [commands.spec.ts](..\..\test\commands\commands.spec.ts) to include unit tests
+1. Update [commands.spec.ts](https://github.com/microsoft/coe-starter-kit/blob/main/coe-cli/test/commands/commands.spec.ts) to include unit tests
 
 - Include reference to the command
 

@@ -41,7 +41,7 @@ The CoE CLI application can create a Azure Active Directory application that aut
 1. Azure Application Granted rights via [manifest configuration file](https://github.com/microsoft/coe-starter-kit/blob/main/coe-cli/config/manifest.json) to call
    - Azure DevOps
    - Dataverse
-   - PowerApps Checker Module - [Read More](/powershell/powerapps/get-started-powerapps-checker?view=pa-ps-latest)
+   - PowerApps Checker Module - [Read More](/powershell/powerapps/get-started-powerapps-checker)
 
 1. Client secrets will be created for Azure DevOps Service Connections
 
@@ -142,7 +142,7 @@ The ALM Accelerator for Advanced Makers assumes the following environments have 
 
 1. Maker Environment - An environment that the ALM Accelerator for Advanced Makers will be installed to. In addition it requires the following:
 
-   - Created "Microsoft Dataverse (legacy)" connection - [Read More](./before-you-start.md#maker-environment-common-data-service)
+   - Created "Microsoft Dataverse (legacy)" connection - [Read More](./before-you-start.md#maker-environment-dataverse)
 
 1. Validation- Environment used to validate deployment before a changes is merged into feature branch
 

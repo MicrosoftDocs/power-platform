@@ -26,7 +26,7 @@ Documentation is key to understanding how the cli works. As new commands are add
 
 ## Add Markdown Pages
 
-Add new pages to [docs](..\docs) that describes the new command and how it is expected to be used.
+Add new pages to [help](../help/overview.md) that describes the new command and how it is expected to be used.
 
 Consider adding the following to the page:
 
@@ -119,7 +119,7 @@ npm run diagrams
 
 ## Add Help Pages
 
-Add new help pages to [help](../help) that provides detailed information on the command an options. Help can be accessed using the help command which will display the associated help markdown file in the browser
+Add new help pages to [help](../help/overview.md) that provides detailed information on the command an options. Help can be accessed using the help command which will display the associated help markdown file in the browser
 
 ```bash
 coe help aa4am
