@@ -34,7 +34,7 @@ Solution Pipelines are used to build and deploy your source-controlled solutions
 
 ### Create the Validation and Test Pipelines
 
-In this step you'll be creating the Validation and Test Pipelines for reference your pipelines will follow this configuration
+In this step, you'll be creating the Validation and Test Pipelines for reference your pipelines will follow this configuration
 
 | Pipeline YAML File Name                    | Pipeline Name                    | Branch Policy Enabled |
 | ------------------------------------------ | -------------------------------- | --------------------- |
@@ -43,7 +43,7 @@ In this step you'll be creating the Validation and Test Pipelines for reference 
 
 1. In Azure DevOps, go to the **Repo** that contains the [Pipelines folder you committed](setup-almacceleratoradvanced.md#copy-the-YAML-pipelines-from-github-to-your-azure-devops-instance) and select the Pipelines folder
 
-1. Open the sample deployment pipeline (i.e. **build-deploy-validation-SampleSolution.yml or build-deploy-test-SampleSolution.yml**) and copy the YAML to use in your new Pipeline. **Note the name of this repo** for use in your pipeline.
+1. Open the sample deployment pipeline (that is, **build-deploy-validation-SampleSolution.yml or build-deploy-test-SampleSolution.yml**) and copy the YAML to use in your new Pipeline. **Note the name of this repo** for use in your pipeline.
 
    ![build-deploy-validation-SampleSolution.yml under Pipelines folder in templates repo](media/almacceleratoradvanced-components/image-20210408172106137.png)
 
@@ -59,7 +59,7 @@ In this step you'll be creating the Validation and Test Pipelines for reference 
 
    ![Create New Folder for Solution in New Branch](media/setup-almacceleratoradvanced-sample-solution/image-20210505162848092.png)
 
-1. Give the new Folder the name **ALMAcceleratorSampleSolution** and the new Pipeline YAML file a name (for example **build-deploy-validation-ALMAcceleratorSampleSolution.yml** or **build-deploy-test-ALMAcceleratorSampleSolution.yml**). Select **Create**.
+1. Give the new Folder the name **ALMAcceleratorSampleSolution** and the new Pipeline YAML file a name (**build-deploy-validation-ALMAcceleratorSampleSolution.yml** or **build-deploy-test-ALMAcceleratorSampleSolution.yml**). Select **Create**.
 
    ![Create New Folder and Pipeline yaml file for Solution in New Branch](media/setup-almacceleratoradvanced-sample-solution/image-20210505163013011.png)
 
@@ -69,11 +69,11 @@ In this step you'll be creating the Validation and Test Pipelines for reference 
 
 1. Update the following values in your new Pipeline YAML.
 
-   - Change the **resources -> repositories -> name**  to the repo name that contains your pipeline templates. If your template repository is in another AzDO project you can use the format **projectname/reponame** here. In this case the repo is called **coe-alm-accelerator-templates** (remember we told you to remember the pipeline repo name?) and it exists in the same project as our **ALMAcceleratorSampleSolution repo**. Additionally, you can specify a branch for where your templates live using the **ref** parameter if necessary.
+   - Change the **resources -> repositories -> name**  to the repo name that contains your pipeline templates. If your template repository is in another AzDO project, you can use the format **projectname/reponame** here. In this case, the repo is called **coe-alm-accelerator-templates** (remember we told you to remember the pipeline repo name?) and it exists in the same project as our **ALMAcceleratorSampleSolution repo**. Additionally, you can specify a branch for where your templates live using the **ref** parameter if necessary.
 
       ![Update ref and name in the pipeline YAML based on where the pipeline templates are stored in Azure DevOps](media/setup-almacceleratoradvanced-sample-solution/image-20210505163452491.png)
 
-   - Change any value that references **SampleSolutionName** to the unique name of the ALM Accelerator Sample Solution (i.e. **ALMAcceleratorSampleSolution**).
+   - Change any value that references **SampleSolutionName** to the unique name of the ALM Accelerator Sample Solution (that is, **ALMAcceleratorSampleSolution**).
 
       ![Update the paths for the triggers](media/setup-almacceleratoradvanced-sample-solution/image-20210505163733070.png)
 
@@ -116,11 +116,11 @@ In this step you'll be creating the Validation and Test Pipelines for reference 
 
    - **Drop-down and Select Save** (not Save & queue) to save the pipeline
 
-1. Repeat the steps above to create a deployment pipeline for each environment referencing the sample deployment pipeline YAML from the **coe-alm-accelerator-templates repo** (for example deploy-test-SampleSolution.yml).
+1. Repeat the steps above to create a deployment pipeline for each environment referencing the sample deployment pipeline YAML from the **coe-alm-accelerator-templates repo** (, deploy-test-SampleSolution.yml).
 
 ### Create the Production Solution Deployment Pipeline
 
-As mentioned in the note above, the previous section allows you to create pipelines that build and deploy for each environment (Validation, Test and Production). However, if you want to only build and deploy for Validation and Test and then deploy the artifacts from the Test build to Production you can follow these instructions to create your production deployment pipeline after you've created your build and deploy pipeline for Validation and Test above. For reference, your pipeline will be configured as follows.
+As mentioned in the note above, the previous section allows you to create pipelines that build and deploy for each environment (Validation, Test, and Production). However, if you want to only build and deploy for Validation and Test and then deploy the artifacts from the Test build to Production you can follow these instructions to create your production deployment pipeline after you've created your build and deploy pipeline for Validation and Test above. For reference, your pipeline will be configured as follows.
 
 | Pipeline YAML File Name                      | Pipeline Name                            | Branch Policy Enabled |
 | -------------------------------------------- | ---------------------------------------- | --------------------- |
@@ -128,7 +128,7 @@ As mentioned in the note above, the previous section allows you to create pipeli
 
 1. In Azure DevOps, go to the **Repo** that contains the [Pipelines folder you committed](#copy-the-YAML-pipelines-from-github-to-your-azure-devops-instance) and select the Pipelines folder
 
-1. Open the sample deployment pipeline (i.e. **deploy-prod-pipelineartifact-SampleSolution.yml**) and copy the YAML to use in your new Pipeline. **Note the name of this repo** for use in your pipeline.
+1. Open the sample deployment pipeline (that is, **deploy-prod-pipelineartifact-SampleSolution.yml**) and copy the YAML to use in your new Pipeline. **Note the name of this repo** for use in your pipeline.
 
    ![Copy deploy-prod-pipelineartifact-SampleSolution.yml YAML](media/setup-almacceleratoradvanced/image-20210429113205147.png)
 
@@ -138,9 +138,9 @@ As mentioned in the note above, the previous section allows you to create pipeli
 
    ![Select New - File](media/setup-almacceleratoradvanced-sample-solution/image-20210616130145498.png)
 
-1. Give the new Pipeline YAML file a name (for example **deploy-prod-ALMAcceleratorSampleSolution.yml**). Select **Create**
+1. Give the new Pipeline YAML file a name (for example, **deploy-prod-ALMAcceleratorSampleSolution.yml**). Select **Create**
 
-   ![Set the name of the file (for example deploy-prod-ALMAcceleratorSampleSolution.yml)](media/setup-almacceleratoradvanced-sample-solution/image-20210505171311552.png)
+   ![Set the name of the file (deploy-prod-ALMAcceleratorSampleSolution.yml)](media/setup-almacceleratoradvanced-sample-solution/image-20210505171311552.png)
 
 1. Paste the YAML from **deploy-prod-pipelineartifact-SampleSolution.yml** into your new Pipeline YAML file.
 
@@ -150,7 +150,7 @@ As mentioned in the note above, the previous section allows you to create pipeli
 
    - Update the **trigger -> branches -> include** to the branch(es) for which changes would trigger a deployment to production.
 
-   - Change the **resources -> repositories -> name** to the repo name that contains your pipeline templates. If your template repository is in another AzDO project you can use the format **projectname/reponame** here. In this case, the repo is called **coe-alm-accelerator-templates** and it exists in the same project as our ALMAcceleratorSampleSolution repo. Additionally, you can specify a branch for where your templates live using the **ref** parameter if necessary.
+   - Change the **resources -> repositories -> name** to the repo name that contains your pipeline templates. If your template repository is in another AzDO project, you can use the format **projectname/reponame** here. In this case, the repo is called **coe-alm-accelerator-templates** and it exists in the same project as our ALMAcceleratorSampleSolution repo. Additionally, you can specify a branch for where your templates live using the **ref** parameter if necessary.
 
      ![Change Resources Repository Name](media/setup-almacceleratoradvanced-sample-solution/image-20210505171609319.png)
 
@@ -158,7 +158,7 @@ As mentioned in the note above, the previous section allows you to create pipeli
 
      ![Update Resources Pipelines Source](media/setup-almacceleratoradvanced-sample-solution/image-20210505172559804.png)
 
-   - Change any value that references **SampleSolutionName** to the unique name of the ALM Accelerator Sample Solution (i.e. **ALMAcceleratorSampleSolution**).
+   - Change any value that references **SampleSolutionName** to the unique name of the ALM Accelerator Sample Solution (that is, **ALMAcceleratorSampleSolution**).
 
      ![Change the Solution Name](media/setup-almacceleratoradvanced-sample-solution/image-20210505172803107.png)
 
@@ -168,7 +168,7 @@ As mentioned in the note above, the previous section allows you to create pipeli
 
 ### Setting Branch Policies for Pull Request Validation
 
-In order to execute the build pipeline for the ALM Accelerator Sample Solution when a **Pull Request is created**, you'll need to create a **Branch Policy** to execute the **Validation Pipeline** you created in the previous step. Use the following steps to set your Branch Policy. For more information on Branch Policies see here <https://docs.microsoft.com/azure/devops/repos/git/branch-policies?view=azure-devops>
+In order to execute the build pipeline for the ALM Accelerator Sample Solution when a **Pull Request is created**, you'll need to create a **Branch Policy** to execute the **Validation Pipeline** you created in the previous step. Use the following steps to set your Branch Policy. For more information on Branch Policies, see <https://docs.microsoft.com/azure/devops/repos/git/branch-policies?view=azure-devops>
 
 1. In Azure DevOps, go to **Repos** and select the **Branches** folder
 
@@ -192,7 +192,7 @@ In order to execute the build pipeline for the ALM Accelerator Sample Solution w
 
 1. Set the **Build expiration** to **Immediately**
 
-1. Set a **Display name** for your Branch Policy (for example PR Build Validation)
+1. Set a **Display name** for your Branch Policy (for example, PR Build Validation)
 
 1. Select **Save**
 
@@ -209,9 +209,9 @@ These pipeline variables will be set for each **deployment pipeline** you've con
 
 These variables are required by every deployment pipeline. The Environment variable is **EnvironmentName** and the Service Connection variable is **ServiceConnection**.
 
-The **EnvironmentName** variable is used to specify the Azure DevOps environment being deployed to in order to enable tracking deployment history and set permissions and approvals for deployment to specific environments. Depending on the environment to which you're deploying set this value to **Validate, Test or Production** For more information on Environments in AzureDevOps see <https://docs.microsoft.com/azure/devops/pipelines/process/environments>.
+The **EnvironmentName** variable is used to specify the Azure DevOps environment being deployed to in order to enable tracking deployment history and set permissions and approvals for deployment to specific environments. Depending on the environment to which you're deploying set this value to **Validate, Test or Production** For more information on Environments in Azure DevOps, see <https://docs.microsoft.com/azure/devops/pipelines/process/environments>.
 
-1. Open the pipeline you created previously (**deploy-validation-ALMAcceleratorSampleSolution**, **deploy-test-ALMAcceleratorSampleSolution** or **deploy-production-ALMAcceleratorSampleSolution**) and **Select Edit**
+1. Open the pipeline you created previously (**deploy-validation-ALMAcceleratorSampleSolution**, **deploy-test-ALMAcceleratorSampleSolution**, or **deploy-production-ALMAcceleratorSampleSolution**) and **Select Edit**
 
    ![Open the Pipeline](media/setup-almacceleratoradvanced-sample-solution/image-20210506101338620.png)
 
@@ -234,7 +234,7 @@ The Value for the ServiceConnection variable must be identical to the Name of th
 
    ![Set the ServiceConnection variable value](media/setup-almacceleratoradvanced-sample-solution/image-20210506102307068.png)
 
-1. Repeat adding the **EnvironmentName** and **ServiceConnection** for each of the pipelines created above (i.e. **deploy-test-ALMAcceleratorSampleSolution** and **deploy-production-ALMAcceleratorSampleSolution**)
+1. Repeat adding the **EnvironmentName** and **ServiceConnection** for each of the pipelines created above (that is, **deploy-test-ALMAcceleratorSampleSolution** and **deploy-production-ALMAcceleratorSampleSolution**)
 
 #### Create Deployment Configuration
 
@@ -260,7 +260,7 @@ The screenshot below is for reference as to where the unmanaged solution exists 
     > [!NOTE]
 When you first launch the app you may need to consent to the app using your connections.
 
-1. Select the **Cog** in the top right to select your **Azure DevOps Environment**, **Project** and **Repo** to which you'll push your changes and submit your pull requests and select **Save**
+1. Select the **Cog** in the top right to select your **Azure DevOps Environment**, **Project, and **Repo** to which you'll push your changes and submit your pull requests and select **Save**
    ![Select the Settings Cog](media/almacceleratoradvanced-components/image-20210303085854533.png)
 
    > [!NOTE]
@@ -276,14 +276,14 @@ In order for your Environment to show up in this drop down a service connection 
 
 1. Now that the ALM Accelerator Sample Solution is imported into Dataverse you can push your changes to Git using the **Push Changes to Git** button for the ALM Accelerator Sample Solution.
 
-   - Select an **existing branch** or **create a new branch** based on an existing branch and enter a **comment**. Use the hashtag notation for example `#123` to link the changes to a specific work item in Azure DevOps and Select **Commit**.
+   - Select an **existing branch** or **create a new branch** based on an existing branch and enter a **comment**. Use the hashtag notation (for example, `#123`) to link the changes to a specific work item in Azure DevOps, and Select **Commit**.
    ![Enter Branch Information and Commit](media/setup-almacceleratoradvanced-sample-solution/image-20210506145231393.png)
    >[!NOTE]
 There is an option to specify if the latest changes contain Delete Components. This allows the user to specify whether to perform an **update** or an **upgrade** of the solution when it is deployed. The former will increase the performance of the pipelines and reduce the overall time to deploy.
-   - When the push begins a waiting indicator will appear. If the push is successful a checkbox will appear otherwise a red x will appear. In order to see the progress of your push select the progress indicator which will take you to the running pipeline in Azure DevOps.
+   - When the push begins, a waiting indicator will appear. If the push is successful, a checkbox will appear otherwise a red x will appear. In order to see the progress of your push select the progress indicator, which will take you to the running pipeline in Azure DevOps.
    - Note that the first time you run the pipeline, you may need to give it permission to run in the Azure DevOps interface (see the [Troubleshooting](./setup-almacceleratoradvanced.md#Troubleshooting) section of the Setup Guide for more information)
 
-1. Once the initial push completes successfully you validate that the changes were exported to your branch.
+1. Once the initial push completes successfully, validate that the changes were exported to your branch.
 
    ![View changes in Azure DevOps](media/setup-almacceleratoradvanced-sample-solution/image-20210506143212409.png)
 
@@ -313,7 +313,7 @@ There is an option to specify if the latest changes contain Delete Components. T
 
      ![Select a Deployment Environment](media/setup-almacceleratoradvanced-sample-solution/image-20210920121425929.png)
 
-     - The environments listed here are based on the pipeline(s) configured for the solution in Azure DevOps. In the example above we have 3 pipelines configured in Azure DevOps for this solution deploy-validation-ALMAcceleratorSampleSolution, deploy-test-ALMAcceleratorSampleSolution and deploy-prod-ALMAcceleratorSampleSolution. **The app will look for pipelines named deploy-*-UniqueSolutionName to populate this list. If you have named your pipelines different than the pattern above you won't be able to use the deployment configuration functionality.**
+     - The environments listed here are based on the pipeline(s) configured for the solution in Azure DevOps. In the example above we have 3 pipelines configured in Azure DevOps for this solution deploy-validation-ALMAcceleratorSampleSolution, deploy-test-ALMAcceleratorSampleSolution, and deploy-prod-ALMAcceleratorSampleSolution. **The app will look for pipelines named deploy-*-UniqueSolutionName to populate this list. If you have named your pipelines different than the pattern above you won't be able to use the deployment configuration functionality.**
 
    - Connection References
 
@@ -321,7 +321,7 @@ There is an option to specify if the latest changes contain Delete Components. T
 
      - This screen lists all of the connection references in your solution and allows users to create connections in their downstream environments to hook up the connection references in the target environment.
      - To create a new connection **select the + button**.
-     - After creating a new connection **select the refresh button** in the top right to get the latest list of connections.
+     - After creating a new connection, **select the refresh button** in the top right to get the latest list of connections.
      - To select an existing connection in the target environment **select a connection from the dropdown list**.
      - To Navigate to the connection in the target environment **select the name or the status of the connection**.
 
@@ -330,7 +330,7 @@ There is an option to specify if the latest changes contain Delete Components. T
      ![Set Environment Variables](media/setup-almacceleratoradvanced-sample-solution/image-20210920120825279.png)
 
      - This screen lists all of the environment variables in your solution and allows users to set the value of the environment variables in the downstream environment.
-     - For standard environment variables (for example String, Number, JSON) **enter the value in the text box** to the right of the environment variable name
+     - For standard environment variables (String, Number, or JSON) **enter the value in the text box** to the right of the environment variable name
      - For data source environment variables **use the dropdowns to select the appropriate data source** to use in the downstream environment.
 
    - App Sharing
@@ -361,7 +361,7 @@ Be sure to publish your changes before initiating the push.
    - Specify the **Source and Target branch** and enter a **Title and Comment** for your Pull Request and **Select Create**.
    ![Select Branch and Commit Changes](media/setup-almacceleratoradvanced-sample-solution/image-20210506144141234.png)
 
-1. Once a Pull Request is created for your changes the remaining steps to Merge and Release to Test occur in Azure DevOps.
+1. Once a Pull Request is created for your changes, the remaining steps to Merge and Release to Test occur in Azure DevOps.
 
 1. Select the Icon under the **Latest PR** Column to Launch Azure DevOps and **View the Pull Request**
 
@@ -379,7 +379,7 @@ Be sure to publish your changes before initiating the push.
 
      ![Select Approve in the Pull Request Screen](media/setup-almacceleratoradvanced-sample-solution/image-20210506151631470.png)
 
-1. After the Merge completes navigate back to the **ALM Accelerator App** and verify that the **Test Deployment** is in Progress.
+1. After the Merge completes, navigate back to the **ALM Accelerator App** and verify that the **Test Deployment** is in Progress.
 
      ![Verify Test Deployment Starts after Merge](media/setup-almacceleratoradvanced-sample-solution/image-20210506152042025.png)
 
@@ -401,6 +401,6 @@ Be sure to publish your changes before initiating the push.
 
        ![Approve and Complete the Pull Request to Main](media/setup-almacceleratoradvanced-sample-solution/image-20210506152930801.png)
 
-     - Once the pipeline for deploying to Production is finished you'll see the status of the deployment in the App similar to the other stages.
+     - Once the pipeline for deploying to Production is finished, you'll see the status of the deployment in the App similar to the other stages.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

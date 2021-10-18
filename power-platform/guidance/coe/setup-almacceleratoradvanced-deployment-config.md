@@ -33,9 +33,9 @@ The following documentation is intended to be a step-by-step process for setting
 
 ## Creating a Deployment Settings Json File
 
-When storing the customDeploymentSettings.json in the root of the config directory, the same configuration will apply to all environments. Assuming that you're using File Transformation or Token Replacement to store all of the environment-specific information, you can specify the environment-specific values in your Pipeline Variables. However, **you can also create environment specific customDeploymentSettings.json files** by creating subdirectories in the config directory with the name of the Environment to allow for more flexibility. The directory name in this case **must match the EnvironmentName pipeline variable** you created when setting up your pipeline (for example Validate, Test, Production). If no environment-specific deployment settings json / directory is found, the pipelines will revert to the configuration in the root of the config directory.
+When storing the customDeploymentSettings.json in the root of the config directory, the same configuration will apply to all environments. Assuming that you're using File Transformation or Token Replacement to store all of the environment-specific information, you can specify the environment-specific values in your Pipeline Variables. However, **you can also create environment specific customDeploymentSettings.json files** by creating subdirectories in the config directory with the name of the Environment to allow for more flexibility. The directory name in this case **must match the EnvironmentName pipeline variable** you created when setting up your pipeline (Validate, Test, Production). If no environment-specific deployment settings json / directory is found, the pipelines will revert to the configuration in the root of the config directory.
 
-Additionally, you can **create user specific configuration files** (for example the JohannaDev directory pictured above) for individual developers to use when importing unmanaged solutions from source control. When the user imports an unmanaged solution from source control, they will be presented with the option to choose a specific configuration.
+Additionally, you can **create user specific configuration files** (for example, the JohannaDev directory pictured above) for individual developers to use when importing unmanaged solutions from source control. When the user imports an unmanaged solution from source control, they will be presented with the option to choose a specific configuration.
 
 ![Select a configuration from the list](media/setup-almacceleratoradvanced-deployment-config/image-20210622130424580.png)
 
@@ -202,7 +202,7 @@ When exporting and source controlling solutions. Environment variable values are
 
 1. If you're using **'Replace Tokens' extension** and adding tokens in your configuration like in the above example. Navigate to the pipeline for your solution **Select Edit -> Variables**
 
-1. On the Pipeline Variables screen, create a **pipeline variable** for each of the tokens in your configuration (for example variable.cat_TextEnvironmentVariable).
+1. On the Pipeline Variables screen, create a **pipeline variable** for each of the tokens in your configuration (for example, variable.cat_TextEnvironmentVariable).
 
 1. Set the value to the **environment variable value** for that specific environment and **Select Keep this value secret** if you want to ensure the value is not saved as plain text.
 
@@ -320,7 +320,7 @@ The Default Environment variables settings only applies if the export pipeline i
 
 1. If you're using **'Replace Tokens' extension** and adding tokens in your configuration like in the above example, navigate to the pipeline for your solution **Select Edit -> Variables**
 
-1. On the Pipeline Variables screen, create a **pipeline variable** for each of the tokens in your configuration (for example **defaultvariable.cat_TextEnvironmentVariable**).
+1. On the Pipeline Variables screen, create a **pipeline variable** for each of the tokens in your configuration (for example, **defaultvariable.cat_TextEnvironmentVariable**).
 
    ![cat_TextEnvironmentVariable pipeline variable](media/setup-almacceleratoradvanced-deployment-config/image-20210723173238713.png)
 
@@ -374,7 +374,7 @@ The AAD group canvas configuration property in the customDeploymentConfiguration
 
 1. If you're using **'Replace Tokens' extension** and adding tokens in your configuration like in the above example, navigate to the pipeline for your solution **Select Edit -> Variables**
 
-1. On the Pipeline Variables screen, create a **pipeline variable** for each of the tokens in your configuration (for example canvasshare.aadGroupId).
+1. On the Pipeline Variables screen, create a **pipeline variable** for each of the tokens in your configuration (for example, canvasshare.aadGroupId).
 
 1. Set the value to the **azure active directory group id** to which the app should be shared for that specific environment and **Select Keep this value secret** if you want to ensure the value is not saved as plain text.
 
@@ -414,7 +414,7 @@ The security roles will need to added to your solution if they are not manually 
 
    ![Group ID in disabled text box next to Object Id label](media/setup-almacceleratoradvanced-deployment-config/aadobjectid.png)
 
-   - The **Dataverse roles** can be any **Security Role in Dataverse** that would be applied to the **existing or newly created Team** after the solution is imported via the pipeline. The role should have permissions to the resources required by the solution (for example Tables and Processes)
+   - The **Dataverse roles** can be any **Security Role in Dataverse** that would be applied to the **existing or newly created Team** after the solution is imported via the pipeline. The role should have permissions to the resources required by the solution (for example, Tables and Processes)
 
 1. Once you've gathered the team names, aad group IDs and roles go to the **customDeploymentSettings.json** and paste the json in the **AadGroupTeamConfiguration property**.
 
@@ -434,7 +434,7 @@ The security roles will need to added to your solution if they are not manually 
 
 1. If you're using **'Replace Tokens' extension** and adding tokens in your configuration like in the above example, navigate to the pipeline for your solution **Select Edit -> Variables**
 
-1. On the Pipeline Variables screen create a **pipeline variable** for each of the tokens in your configuration (for example team.aadSecurityGroupId).
+1. On the Pipeline Variables screen create a **pipeline variable** for each of the tokens in your configuration (for example, team.aadSecurityGroupId).
 
 1. Set the value to the **azure active directory group id** to associate with the team in Dataverse and **Select Keep this value secret** if you want to ensure the value is not saved as plain text.
 
@@ -464,7 +464,7 @@ The current pipeline only implements the ability to set ownership of Flows. The 
    ]
    ```
 
-   - The **solution component type code** is based on the component types specified in the following doc <https://docs.microsoft.com/dynamics365/customer-engagement/web-api/solutioncomponent?view=dynamics-ce-odata-9> (for example a Power Automate Flow is component type 29). The component type should be specified as an integer value (i.e. with no quotes)
+   - The **solution component type code** is based on the component types specified in the following doc <https://docs.microsoft.com/dynamics365/customer-engagement/web-api/solutioncomponent?view=dynamics-ce-odata-9> (for example, a Power Automate Flow is component type 29). The component type should be specified as an integer value (that is, with no quotes)
    - The **unique name of the solution component**, in the case of a Power Automate Flow, has to be taken from the unpacked solution. This is a limitation of flows currently not requiring unique names when they are created. As such, the only true unique identifier for a Flow is the internal ID the system uses to identify it in a solution.
      ![Unpacked solution workflow xml file](media/setup-almacceleratoradvanced-deployment-config/flowuniquename.png)
       ![Unpacked solution workflow xml showing WorkflowId](media/setup-almacceleratoradvanced-deployment-config/flowuniquename2.png)
@@ -491,7 +491,7 @@ The current pipeline only implements the ability to set ownership of Flows. The 
 
 1. If you're using **'Replace Tokens' extension** and adding tokens in your configuration like in the above example, navigate to the pipeline for your solution **Select Edit -> Variables**
 
-1. On the Pipeline Variables screen, create a **pipeline variable** for each of the tokens in your configuration (for example owner.ownerEmail).
+1. On the Pipeline Variables screen, create a **pipeline variable** for each of the tokens in your configuration (for example, owner.ownerEmail).
 
 1. Set the value to the **email address** of the owner of the component and **Select Keep this value secret** if you want to ensure the value is not saved as plain text.
 
@@ -532,7 +532,7 @@ The pipeline will look for this specific folder to run the import after your sol
 
    ![ConfigurationMigrationData directory shown under config directory](media/setup-almacceleratoradvanced-deployment-config/image-20210217093914368.png)
 
-    - Similar to the note regarding specific configuration files per environment the steps above create configuration data that will be deployed to all environments. However, if you have specific configuration data per environment you can **create sub-directories in the config directory** with the name of the Environment to allow for more flexibility. The directory name in this case **must match the EnvironmentName pipeline variable** you created when setting up your pipeline (for example Validate, Test, Production). If no environment-specific configuration data / directory is found the pipelines will revert to the configuration data in the root of the config directory.
+    - Similar to the note regarding specific configuration files per environment the steps above create configuration data that will be deployed to all environments. However, if you have specific configuration data per environment you can **create sub-directories in the config directory** with the name of the Environment to allow for more flexibility. The directory name in this case **must match the EnvironmentName pipeline variable** you created when setting up your pipeline (Validate, Test, Production). If no environment-specific configuration data / directory is found, the pipelines will revert to the configuration data in the root of the config directory.
       ![Configuration Migration Data unzipped in ConfigurationMigrationData directory](media/setup-almacceleratoradvanced-deployment-config/image-20210709103432542.png)
 
 1. When prompted to **export the data** select **Yes**
