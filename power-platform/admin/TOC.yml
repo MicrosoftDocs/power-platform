@@ -168,7 +168,6 @@
           items:
           - name: Create or edit business unit
             href: create-edit-business-units.md
-          ## Remove the following before going live on 10/18
           - name: Update record owner
             href: update-record-owner.md
           - name: Delete business unit

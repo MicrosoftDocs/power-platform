@@ -1,7 +1,7 @@
 ---
 title: "Security concepts in Microsoft Dataverse | MicrosoftDocs"
 description: Provides detailed information about the security model and concepts in Microsoft Dataverse.
-ms.date: 10/13/2021
+ms.date: 10/18/2021
 ms.service: power-platform
 ms.topic: "article"
 author: jimholtz
@@ -61,6 +61,9 @@ User A can be associated with any of the business units, including the root busi
 > ![Hierarchical data access structure example](media/example-business-unit.png "Hierarchical data access structure example")
 
 #### To enable this Matrix data access structure (preview): 
+
+> [!NOTE]
+> **Record ownership across business units** is a preview feature and is being rolled out over time.
 
 1. Sign in to the Power Platform admin center, as an admin (Dynamics 365 admin, Global admin, or Microsoft Power Platform admin). 
 2. Select the **Environments** tab, and then choose the environment that you want to enable this feature for. 

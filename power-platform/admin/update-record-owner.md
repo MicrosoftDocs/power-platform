@@ -4,7 +4,7 @@ description: "Learn how to update a record’s owner, an Owning Business Unit, o
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/14/2021
+ms.date: 10/18/2021
 ms.subservice: admin
 author: paulliew
 ms.author: paulliew
