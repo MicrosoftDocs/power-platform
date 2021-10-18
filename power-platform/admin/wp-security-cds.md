@@ -1,7 +1,7 @@
 ---
 title: "Security concepts in Microsoft Dataverse | MicrosoftDocs"
 description: Provides detailed information about the security model and concepts in Microsoft Dataverse.
-ms.date: 10/08/2021
+ms.date: 10/18/2021
 ms.service: power-platform
 ms.topic: "article"
 author: jimholtz
@@ -62,6 +62,9 @@ User A can be associated with any of the business units, including the root busi
 
 #### To enable this Matrix data access structure (preview): 
 
+> [!NOTE]
+> **Record ownership across business units** is a preview feature and is being rolled out over time.
+
 1. Sign in to the Power Platform admin center, as an admin (Dynamics 365 admin, Global admin, or Microsoft Power Platform admin). 
 2. Select the **Environments** tab, and then choose the environment that you want to enable this feature for. 
 3. Select **Settings** > **Product** > **Features**. 
@@ -76,6 +79,9 @@ https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-d
 ### Owning Business Unit
 
 Each record has an Owning Business Unit field which determines which business unit owns the record. This field defaults to the user’s business unit when the record is created and cannot be changed except when the feature switch is turned ON. 
+
+> [!NOTE]
+> When you change which business unit owns a record, be sure to check out the following for cascade effects: [Using Organization Service to configure cascading behavior](/powerapps/developer/data-platform/configure-entity-relationship-cascading-behavior#using-organization-service-to-configure-cascading-behavior).
 
 You can manage whether you want to allow your user to set the Owning Business Unit field when the feature switch is ON. To set the Owning Business Unit field, you need to grant the user’s security role the Business Unit table’s **Append** and **Append To** privileges with Business Unit permission.  
 
