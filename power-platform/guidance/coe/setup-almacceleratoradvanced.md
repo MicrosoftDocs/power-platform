@@ -108,7 +108,7 @@ Sign in to [portal.azure.com](https://portal.azure.com).
     - When adding the Azure DevOps permission, go to APIs my organization uses and search for Azure DevOps and **copy the Application (client) ID**.
 
       > [!IMPORTANT]
-Disambiguation: We'll use this value later and specifically call it out as the **Azure DevOps Application (client) ID** which is different from the **Application (client) ID** copied in Step 12 [below](#Create-an-App-Registration-in-your-AAD-Environment)
+      > Disambiguation: We'll use this value later and specifically call it out as the **Azure DevOps Application (client) ID** which is different from the **Application (client) ID** copied in Step 12 [below](#Create-an-App-Registration-in-your-AAD-Environment)
 
     - ![Copy the Application client ID](media/almacceleratoradvanced-components/image-4c6d6244-004e-4ac9-9034-79274f9be4c8.png)
 
@@ -123,7 +123,7 @@ Disambiguation: We'll use this value later and specifically call it out as the *
 1. Return to the **Overview** section of your App Registration and copy the **Application (client) ID** and **Directory (tenant) ID**.
 
      > [!IMPORTANT]
-Disambiguation: We'll use this value later and call it out as the **Application (client) ID** which is different from the **Azure DevOps Application (client) ID** copied in Step 7 [above](#Create-an-App-Registration-in-your-AAD-Environment)
+     > Disambiguation: We'll use this value later and call it out as the **Application (client) ID** which is different from the **Azure DevOps Application (client) ID** copied in Step 7 [above](#Create-an-App-Registration-in-your-AAD-Environment)
 
 1. Select **Add a Redirect URI** > **Add a Platform** > **Web**
 
@@ -209,7 +209,7 @@ There are a few optional pipeline variables that can be set on the export-soluti
 The **DoNotExportCurrentEnvironmentVariableValues** variable can be used to ensure that the current values of environment variables are never committed to source control during the export process.
 
 > [!IMPORTANT]
-This pipeline variable is recommended in order to use the deployment configuration functionality in the AA4AM App.
+> This pipeline variable is recommended in order to use the deployment configuration functionality in the AA4AM App.
 
 ![Create the DoNotExportCurrentEnvironmentVariableValues pipeline variable and set the value to true](media/setup-almacceleratoradvanced/image-20210723164226271.png)
 
@@ -236,7 +236,7 @@ The **VerifyDefaultEnvironmentVariableValues** can be used to ensure that specif
 ### Update Permissions for the Project Build Service
 
 > [!IMPORTANT]
-There are a number of "Build Service" accounts in Azure DevOps that may confuse the steps below. Pay close attention to the names / format specified in Step 3 and 5 below. You may need to search for the specific account if it doesn't show up in the initial list.
+> There are a number of "Build Service" accounts in Azure DevOps that may confuse the steps below. Pay close attention to the names / format specified in Step 3 and 5 below. You may need to search for the specific account if it doesn't show up in the initial list.
 
 1. In Azure DevOps Select **Project Settings** in the left-hand navigation.
 

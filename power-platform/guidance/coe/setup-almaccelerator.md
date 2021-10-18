@@ -22,7 +22,8 @@ search.app:
 
 This solution uses [GitHub actions](../../alm/devops-github-actions.md) for source control and deployments. The [GitHub connector](/connectors/github/) is used in flows to interact with GitHub. More information: [Use the ALM Accelerator for Makers components](almaccelerator-components.md)
 
-> [!IMPORTANT] The ALM Accelerator for Makers components don't have a dependency on other components of the CoE Starter Kit. It can be used independently.
+> [!IMPORTANT]
+> The ALM Accelerator for Makers components don't have a dependency on other components of the CoE Starter Kit. It can be used independently.
 
 ## Prerequisites
 

@@ -204,7 +204,7 @@ In order to execute the build pipeline for the ALM Accelerator Sample Solution w
 The ALM Accelerator uses json formatted Pipeline variables for updating **connection references, environment variables, setting permissions for AAD Groups and Dataverse teams** as well as **sharing Canvas Apps and updating ownership of solution components** such as Power Automate flows. **EnvironmentName** and **ServiceConnection** variables are **required** for each pipeline. All other pipeline variables are **optional** and depend on what type of components the ALM Accelerator Sample Solution pipelines deploy. For instance, if the ALM Accelerator Sample Solutions only contain Dataverse Tables, Columns and Model Driven Apps **some of these steps may not be necessary** and can be skipped. The following variables allow you to fully automate the deployment of the ALM Accelerator Sample Solutions and specify how to configure items that are specific to the environment to which the solution is being deployed.
 
 > [!IMPORTANT]
-These pipeline variables will be set for each **deployment pipeline** you've configured above based on the environment to which your pipeline deploys.
+> These pipeline variables will be set for each **deployment pipeline** you've configured above based on the environment to which your pipeline deploys.
 
 #### Create Environment and Service Connection
 
