@@ -41,7 +41,7 @@ In this step, you'll be creating the Validation and Test Pipelines for reference
 | build-deploy-validation-SampleSolution.yml | deploy-validation-SampleSolution | Yes                   |
 | build-deploy-test-SampleSolution.yml       | deploy-test-SampleSolution       | No                    |
 
-1. In Azure DevOps, go to the **Repo** that contains the [Pipelines folder you committed](setup-almacceleratoradvanced.md#copy-the-YAML-pipelines-from-github-to-your-azure-devops-instance) and select the Pipelines folder
+1. In Azure DevOps, go to the **Repo** that contains the [Pipelines folder you committed](setup-almacceleratoradvanced.md#copy-the-yaml-pipelines-from-github-to-your-azure-devops-instance) and select the Pipelines folder
 
 1. Open the sample deployment pipeline (that is, **build-deploy-validation-SampleSolution.yml or build-deploy-test-SampleSolution.yml**) and copy the YAML to use in your new Pipeline. **Note the name of this repo** for use in your pipeline.
 
@@ -127,7 +127,7 @@ As mentioned in the note above, the previous section allows you to create pipeli
 | -------------------------------------------- | ---------------------------------------- | --------------------- |
 | deploy-prod-ALMAcceleratorSampleSolution.yml | deploy-prod-ALMAcceleratorSampleSolution | No                    |
 
-1. In Azure DevOps, go to the **Repo** that contains the [Pipelines folder you committed](#copy-the-YAML-pipelines-from-github-to-your-azure-devops-instance) and select the Pipelines folder
+1. In Azure DevOps, go to the **Repo** that contains the [Pipelines folder you committed](#copy-the-yaml-pipelines-from-github-to-your-azure-devops-instance) and select the Pipelines folder
 
 1. Open the sample deployment pipeline (that is, **deploy-prod-pipelineartifact-SampleSolution.yml**) and copy the YAML to use in your new Pipeline. **Note the name of this repo** for use in your pipeline.
 
@@ -282,7 +282,7 @@ To get started using the ALM Accelerator For Advanced Makers App follow the inst
    > [!NOTE]
    > There is an option to specify if the latest changes contain Delete Components. This allows the user to specify whether to perform an **update** or an **upgrade** of the solution when it is deployed. The former will increase the performance of the pipelines and reduce the overall time to deploy.
    - When the push begins, a waiting indicator will appear. If the push is successful, a checkbox will appear otherwise a red x will appear. In order to see the progress of your push select the progress indicator, which will take you to the running pipeline in Azure DevOps.
-   - Note that the first time you run the pipeline, you may need to give it permission to run in the Azure DevOps interface (see the [Troubleshooting](./setup-almacceleratoradvanced.md#Troubleshooting) section of the Setup Guide for more information)
+   - Note that the first time you run the pipeline, you may need to give it permission to run in the Azure DevOps interface (see the [Troubleshooting](./setup-almacceleratoradvanced.md#troubleshooting) section of the Setup Guide for more information)
 
 1. Once the initial push completes successfully, validate that the changes were exported to your branch.
 

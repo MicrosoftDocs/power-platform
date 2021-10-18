@@ -464,7 +464,7 @@ The solution component ownership property in the customDeploymentConfiguration.j
    ]
    ```
 
-   - The **solution component type code** is based on the component types specified in the following [doc](/dynamics365/customer-engagement/web-api/solutioncomponent?view=dynamics-ce-odata-9) (for example, a Power Automate Flow is component type 29). The component type should be specified as an integer value (that is, with no quotes)
+   - The **solution component type code** is based on the component types specified in the following [doc](/dynamics365/customer-engagement/web-api/solutioncomponent) (for example, a Power Automate Flow is component type 29). The component type should be specified as an integer value (that is, with no quotes)
    - The **unique name of the solution component**, in the case of a Power Automate Flow, has to be taken from the unpacked solution. This is a limitation of flows currently not requiring unique names when they are created. As such, the only true unique identifier for a Flow is the internal ID the system uses to identify it in a solution.
      ![Unpacked solution workflow xml file](media/setup-almacceleratoradvanced-deployment-config/flowuniquename.png)
       ![Unpacked solution workflow xml showing WorkflowId](media/setup-almacceleratoradvanced-deployment-config/flowuniquename2.png)

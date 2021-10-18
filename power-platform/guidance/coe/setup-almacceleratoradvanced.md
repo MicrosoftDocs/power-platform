@@ -108,7 +108,7 @@ Sign in to [portal.azure.com](https://portal.azure.com).
     - When adding the Azure DevOps permission, go to APIs my organization uses and search for Azure DevOps and **copy the Application (client) ID**.
 
       > [!IMPORTANT]
-      > Disambiguation: We'll use this value later and specifically call it out as the **Azure DevOps Application (client) ID** which is different from the **Application (client) ID** copied in Step 12 [below](#Create-an-App-Registration-in-your-AAD-Environment)
+      > Disambiguation: We'll use this value later and specifically call it out as the **Azure DevOps Application (client) ID** which is different from the **Application (client) ID** copied in Step 12 [below](#create-an-app-registration-in-your-aad-environment)
 
     - ![Copy the Application client ID](media/almacceleratoradvanced-components/image-4c6d6244-004e-4ac9-9034-79274f9be4c8.png)
 
@@ -123,7 +123,7 @@ Sign in to [portal.azure.com](https://portal.azure.com).
 1. Return to the **Overview** section of your App Registration and copy the **Application (client) ID** and **Directory (tenant) ID**.
 
      > [!IMPORTANT]
-     > Disambiguation: We'll use this value later and call it out as the **Application (client) ID** which is different from the **Azure DevOps Application (client) ID** copied in Step 7 [above](#Create-an-App-Registration-in-your-AAD-Environment)
+     > Disambiguation: We'll use this value later and call it out as the **Application (client) ID** which is different from the **Azure DevOps Application (client) ID** copied in Step 7 [above](#create-an-app-registration-in-your-aad-environment)
 
 1. Select **Add a Redirect URI** > **Add a Platform** > **Web**
 
@@ -381,7 +381,7 @@ The following steps show how to **create a pipeline from the sample pipeline YAM
 > [!NOTE]
 > The following steps will create pipelines that **build and deploy for each environment** (Validation, Test and Production). However, you may want to only build and deploy for Validation and Test and then deploy the artifacts from the Test build to Production. Included in [the section following this section](#create-the-solution-deployment-pipelines-optional) are instructions for doing the latter. If this is your preferred method of setting up the pipelines follow the steps below for **only the Validation and Test environment** and then skip to the next section to see how to configure your release pipeline.
 
-1. In Azure DevOps, go to the **Repo** that contains the [Pipelines folder you committed](#copy-the-YAML-pipelines-from-github-to-your-azure-devops-instance) and select the Pipelines folder
+1. In Azure DevOps, go to the **Repo** that contains the [Pipelines folder you committed](#copy-the-yaml-pipelines-from-github-to-your-azure-devops-instance) and select the Pipelines folder
 
 1. Open the sample deployment pipeline (that is, **build-deploy-validation-SampleSolution.yml, build-deploy-test-SampleSolution.yml or build-deploy-prod-SampleSolution.yml**) and copy the YAML to use in your new Pipeline. **Note the name of this repo** for use in your pipeline.
 
@@ -472,7 +472,7 @@ As mentioned in the note above, the previous section allows you to create pipeli
 | ----------------------------- | ------------------------- | --------------------- |
 | deploy-prod-MyNewSolution.yml | deploy-prod-MyNewSolution | No                    |
 
-1. In Azure DevOps go to the **Repo** that contains the [Pipelines folder you committed](#copy-the-YAML-pipelines-from-github-to-your-azure-devops-instance) and select the Pipelines folder
+1. In Azure DevOps go to the **Repo** that contains the [Pipelines folder you committed](#copy-the-yaml-pipelines-from-github-to-your-azure-devops-instance) and select the Pipelines folder
 
 1. Open the sample deployment pipeline (that is, **deploy-prod-pipelineartifact-SampleSolution.yml**) and copy the YAML to use in your new Pipeline. **Note the name of this repo** for use in your pipeline.
 
@@ -532,7 +532,7 @@ You can optionally set a pipeline variable on your deployment pipelines to turn 
 
 ### Setting Branch Policies for Pull Request Validation
 
-In order to execute the build pipeline for your solution when a **Pull Request is created**, you'll need to create a **Branch Policy** to execute the Pipeline you created in the previous step. Use the following steps to set your Branch Policy. For more information on Branch Policies, see <https://docs.microsoft.com/azure/devops/repos/git/branch-policies>
+In order to execute the build pipeline for your solution when a **Pull Request is created**, you'll need to create a **Branch Policy** to execute the Pipeline you created in the previous step. Use the following steps to set your Branch Policy. For more information on Branch Policies, see [here](/azure/devops/repos/git/branch-policies)
 
 1. In Azure DevOps, go to **Repos** and select the **Branches** folder
 
@@ -599,14 +599,14 @@ Download the **latest managed solution**(s) from GitHub (<https://github.com/mic
 
    | Name | Value |
    |--|--|
-   | Client ID | [The **Application (client) ID** you copied when [creating the App Registration](#Create-an-App-Registration-in-your-AAD-Environment)] |
-   | Client secret | [The **Application (client) Secret** you copied when [creating the App Registration](#Create-an-App-Registration-in-your-AAD-Environment)] |
+   | Client ID | [The **Application (client) ID** you copied when [creating the App Registration](#create-an-app-registration-in-your-aad-environment)] |
+   | Client secret | [The **Application (client) Secret** you copied when [creating the App Registration](#create-an-app-registration-in-your-aad-environment)] |
    | Tenant ID | leave as the default **common** |
-   | Resource URL | [The **Azure DevOps Application (client) ID** you copied when [adding permissions to your App Registration](#Create-an-App-Registration-in-your-AAD-Environment)] |
+   | Resource URL | [The **Azure DevOps Application (client) ID** you copied when [adding permissions to your App Registration](#create-an-app-registration-in-your-aad-environment)] |
 
 1. Select **Update Connector**
 
-1. Verify that the **Redirect URL** is populated on the Security page with the URL <https://global.consent.azure-apim.net/redirect>. If the **Redirect URL is other than <https://global.consent.azure-apim.net/redirect>** copy the URL and [return to the app registration your created](#create-an-app-registration-in-your-aad-environment) and update the [Redirect URI](#Create-an-App-Registration-in-your-AAD-Environment) you set earlier to the updated URL.
+1. Verify that the **Redirect URL** is populated on the Security page with the URL <https://global.consent.azure-apim.net/redirect>. If the **Redirect URL is other than <https://global.consent.azure-apim.net/redirect>** copy the URL and [return to the app registration your created](#create-an-app-registration-in-your-aad-environment) and update the [Redirect URI](#create-an-app-registration-in-your-aad-environment) you set earlier to the updated URL.
 
 1. Verify the connector from the **Test** menu once you've completed the steps above.
     - Navigate to the **Test** menu.
