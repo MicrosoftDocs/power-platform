@@ -1,14 +1,14 @@
 ---
 title: "Configuration and Data Deployment in Pipelines | MicrosoftDocs"
 description: "The ALM Accelerator for Advanced Makers will help you follow ALM patterns and practices to source control and move your solutions from your development environment to test and production environments using Azure DevOps"
-author: manuelap-msft
+author: mikefactorial
 manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 10/14/2021
 ms.subservice: guidance
-ms.author: mapichle
+ms.author: v-mikeochs
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
@@ -23,19 +23,19 @@ search.app:
 > [!NOTE]
 ALM Accelerator for Advanced Makers is currently in public preview. Please see Issues currently tagged as [vnext](https://github.com/microsoft/coe-starter-kit/issues?q=is%3Aopen+is%3Aissue+label%3Aalm-accelerator+label%3Avnext) for the Roadmap to be completed prior to general availability. While in Public Preview it can be expected that there will be breaking changes and frequent updates to address feedback from preview members. Additionally, the Public Preview is reliant on the experimental [Power Apps Source File Pack and Unpack Utility](https://github.com/microsoft/PowerApps-Language-Tooling) that is being developed separately from AA4AM.
 
-The ALM Accelerator uses json formatted files for updating **connection references, environment variables, setting permissions for AAD Groups and Dataverse teams** as well as **sharing Canvas Apps and updating ownership of solution components** such as Power Automate flows. The instructions below are **optional** and depend on what type of components your solution pipelines deploy. For instance, if your solutions only contain Dataverse Tables, Columns and Model Driven Apps with no per environment configuration or data needed then **some of these steps may not be necessary** and can be skipped. The following configuration file allow you to fully automate the deployment of your solutions and specify how to configure items that are specific to the environment to which the solution is being deployed.
+The ALM Accelerator uses json formatted files for updating **connection references, environment variables, setting permissions for AAD Groups and Dataverse teams** as well as **sharing Canvas Apps and updating ownership of solution components** such as Power Automate flows. The instructions below are **optional** and depend on what type of components your solution pipelines deploy. For instance, if your solutions only contain Dataverse Tables, Columns and Model Driven Apps with no per environment configuration or data needed then **some of these steps may not be necessary** and can be skipped. The following configuration files allow you to fully automate the deployment of your solutions and specify how to configure items that are specific to the environment to which the solution is being deployed.
 
 For an example of configuration and data deployment configuration see the ALMAcceleratorSampleSolution here <https://github.com/microsoft/coe-starter-kit/blob/ALMAcceleratorSampleSolution/ALMAcceleratorSampleSolution/config/deploymentSettings.json> and <https://github.com/microsoft/coe-starter-kit/blob/ALMAcceleratorSampleSolution/ALMAcceleratorSampleSolution/config/customDeploymentSettings.json>
 
 ## Before you start
 
-The following documentation is intended to be a step-by-step process for setting up deployment configuration files manually. However, it is recommended that you use the in app feature to generate this information on export of your solution. This document will provide details and context for the actions that are performed by the AA4AM app and pipelines and act as a reference for those who want to know the specifics of each step in the process.
+The following documentation is intended to be a step-by-step process for setting up deployment configuration files manually. However, it is recommended that you use the in app feature to generate this information on export of your solution. This document will provide details and context for the actions that are performed by the AA4AM app and pipelines and act as a reference for administrators who want to know the specifics of each step in the process.
 
 ## Creating a Deployment Settings Json File
 
-When storing the customDeploymentSettings.json in the root of the config directory the same configuration will apply to all environments. Assuming that you're using File Transformation or Token Replacement to store all of the environment specific information, you can specify the environment specific values in your Pipeline Variables. However, **you can also create environment specific customDeploymentSettings.json files** by creating sub-directories in the config directory with the name of the Environment to allow for more flexibility. The directory name in this case **must match the EnvironmentName pipeline variable** you created when setting up your pipeline (for example Validate, Test, Production). If no environment specific deployment settings json / directory is found, the pipelines will revert to the configuration in the root of the config directory.
+When storing the customDeploymentSettings.json in the root of the config directory, the same configuration will apply to all environments. Assuming that you're using File Transformation or Token Replacement to store all of the environment-specific information, you can specify the environment-specific values in your Pipeline Variables. However, **you can also create environment specific customDeploymentSettings.json files** by creating subdirectories in the config directory with the name of the Environment to allow for more flexibility. The directory name in this case **must match the EnvironmentName pipeline variable** you created when setting up your pipeline (for example Validate, Test, Production). If no environment-specific deployment settings json / directory is found, the pipelines will revert to the configuration in the root of the config directory.
 
-Additionally, you can **create user specific configuration files** (for example the JohannaDev directory pictured above) for individual developers to use when importing unmanaged solutions from source control. When the user imports an unmanaged solution from source control they will be presented with the option to choose a specific configuration.
+Additionally, you can **create user specific configuration files** (for example the JohannaDev directory pictured above) for individual developers to use when importing unmanaged solutions from source control. When the user imports an unmanaged solution from source control, they will be presented with the option to choose a specific configuration.
 
 ![Select a configuration from the list](media/setup-almacceleratoradvanced-deployment-config/image-20210622130424580.png)
 
@@ -94,7 +94,7 @@ To create the deployment settings json file, follow the steps below
 
 1. Create a **new folder called config** and save the new file **under the config folder** in git.
 
-   ![config folder](media/setup-almacceleratoradvanced-deployment-config/image-20210917153532062.png)
+   ![Config folder](media/setup-almacceleratoradvanced-deployment-config/image-20210917153532062.png)
 
 ### Create Connection Reference Json
 
@@ -123,10 +123,10 @@ The connection reference property in the customDeploymentConfiguration.json is *
    - The **logical name** for the connection reference can be obtained from the **connection reference component** in your solution.
      ![Schema Name in the disabled text field below Name *](media/setup-almacceleratoradvanced-deployment-config/connrefschema.png)
 
-   - The **connection id** can be obtained via the URL of the connection after you create it. For example the id of the connection below is **9f66d1d455f3474ebf24e4fa2c04cea2** where the URL is 'https://.../connections/shared_commondataservice/9f66d1d455f3474ebf24e4fa2c04cea2/details'
+   - The **connection id** can be obtained via the URL of the connection after you create it. For example, the ID of the connection below is **9f66d1d455f3474ebf24e4fa2c04cea2** where the URL is 'https://.../connections/shared_commondataservice/9f66d1d455f3474ebf24e4fa2c04cea2/details'
      ![The connection id embedded in the connection url](media/setup-almacceleratoradvanced-deployment-config/connid.png)
 
-1. Once you've gathered the connection reference schema names and connection ids, go to the **customDeploymentSettings.json** and paste the json in  the **ConnectionReferences property**.
+1. Once you've gathered the connection reference schema names and connection IDs, go to the **customDeploymentSettings.json** and paste the json in  the **ConnectionReferences property**.
 
    ```json
    "ConnectionReferences": 
@@ -273,7 +273,7 @@ The custom deployment settings json file contains the configuration settings req
 }
 ```
 
-To create the custom deployment settings json file follow the steps below
+To create the custom deployment settings json file, follow the steps below
 
 1. Copy the above json to a new file called **customDeploymentSettings.json**
 
@@ -320,7 +320,7 @@ The Default Environment variables settings only applies if the export pipeline i
 
 1. If you're using **'Replace Tokens' extension** and adding tokens in your configuration like in the above example, navigate to the pipeline for your solution **Select Edit -> Variables**
 
-1. On the Pipeline Variables screen create a **pipeline variable** for each of the tokens in your configuration (for example **defaultvariable.cat_TextEnvironmentVariable**).
+1. On the Pipeline Variables screen, create a **pipeline variable** for each of the tokens in your configuration (for example **defaultvariable.cat_TextEnvironmentVariable**).
 
    ![cat_TextEnvironmentVariable pipeline variable](media/setup-almacceleratoradvanced-deployment-config/image-20210723173238713.png)
 
@@ -330,7 +330,7 @@ The Default Environment variables settings only applies if the export pipeline i
 
 The AAD group canvas configuration property in the customDeploymentConfiguration.json is **AadGroupCanvasConfiguration**. The AAD group canvas configuration property is used for **sharing canvas apps** in your solution with specific **Azure Active Directory Groups** after the solution is imported into an environment.
 
-1. The format of the json for these variables take the form of an array of objects. The **roleName** can be one of **CanView**, **CanViewWithShare, and **CanEdit**
+1. The format of the json for these variables take the form of an array of objects. The **roleName** can be one of **CanView**, **CanViewWithShare**, and **CanEdit**
 
    ```json
    [
@@ -372,9 +372,9 @@ The AAD group canvas configuration property in the customDeploymentConfiguration
    }
    ```
 
-1. If you're using **'Replace Tokens' extension** and adding tokens in your configuration like in the above example navigate to the pipeline for your solution **Select Edit -> Variables**
+1. If you're using **'Replace Tokens' extension** and adding tokens in your configuration like in the above example, navigate to the pipeline for your solution **Select Edit -> Variables**
 
-1. On the Pipeline Variables screen create a **pipeline variable** for each of the tokens in your configuration (for example canvasshare.aadGroupId).
+1. On the Pipeline Variables screen, create a **pipeline variable** for each of the tokens in your configuration (for example canvasshare.aadGroupId).
 
 1. Set the value to the **azure active directory group id** to which the app should be shared for that specific environment and **Select Keep this value secret** if you want to ensure the value is not saved as plain text.
 
@@ -432,7 +432,7 @@ The security roles will need to added to your solution if they are not manually 
     }
     ```
 
-1. If you're using **'Replace Tokens' extension** and adding tokens in your configuration like in the above example navigate to the pipeline for your solution **Select Edit -> Variables**
+1. If you're using **'Replace Tokens' extension** and adding tokens in your configuration like in the above example, navigate to the pipeline for your solution **Select Edit -> Variables**
 
 1. On the Pipeline Variables screen create a **pipeline variable** for each of the tokens in your configuration (for example team.aadSecurityGroupId).
 
@@ -465,7 +465,7 @@ The current pipeline only implements the ability to set ownership of Flows. The 
    ```
 
    - The **solution component type code** is based on the component types specified in the following doc <https://docs.microsoft.com/dynamics365/customer-engagement/web-api/solutioncomponent?view=dynamics-ce-odata-9> (for example a Power Automate Flow is component type 29). The component type should be specified as an integer value (i.e. with no quotes)
-   - The **unique name of the solution component**, in the case of a Power Automate Flow, has to be taken from the unpacked solution. This is a limitation of flows currently not requiring unique names when they are created. As such the only true unique identifier for a Flow is the internal ID the system uses to identify it in a solution.
+   - The **unique name of the solution component**, in the case of a Power Automate Flow, has to be taken from the unpacked solution. This is a limitation of flows currently not requiring unique names when they are created. As such, the only true unique identifier for a Flow is the internal ID the system uses to identify it in a solution.
      ![Unpacked solution workflow xml file](media/setup-almacceleratoradvanced-deployment-config/flowuniquename.png)
       ![Unpacked solution workflow xml showing WorkflowId](media/setup-almacceleratoradvanced-deployment-config/flowuniquename2.png)
    - The **owner email** can be gathered from the user's record in Dataverse or Office 365.
@@ -489,9 +489,9 @@ The current pipeline only implements the ability to set ownership of Flows. The 
    }
    ```
 
-1. If you're using **'Replace Tokens' extension** and adding tokens in your configuration like in the above example navigate to the pipeline for your solution **Select Edit -> Variables**
+1. If you're using **'Replace Tokens' extension** and adding tokens in your configuration like in the above example, navigate to the pipeline for your solution **Select Edit -> Variables**
 
-1. On the Pipeline Variables screen create a **pipeline variable** for each of the tokens in your configuration (for example owner.ownerEmail).
+1. On the Pipeline Variables screen, create a **pipeline variable** for each of the tokens in your configuration (for example owner.ownerEmail).
 
 1. Set the value to the **email address** of the owner of the component and **Select Keep this value secret** if you want to ensure the value is not saved as plain text.
 
@@ -499,11 +499,11 @@ The current pipeline only implements the ability to set ownership of Flows. The 
 
 ### Importing Data from your Pipeline
 
-In many cases, there will be configuration or seed data that you'll want to import into your Dataverse environment initially after deploying your solution to the target environment. The pipelines are configured to import data using the **Configuration Migration tool** available via nuget <https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.ConfigurationMigration.Wpf>. To add configuration data for your pipeline use the following steps. For more information on the **Configuration Migration tool**, see here <https://docs.microsoft.com/power-platform/admin/manage-configuration-data>
+In many cases, there will be configuration or seed data that you'll want to import into your Dataverse environment initially after deploying your solution to the target environment. The pipelines are configured to import data using the **Configuration Migration tool** available via NuGet <https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.ConfigurationMigration.Wpf>. To add configuration data for your pipeline, use the following steps. For more information on the **Configuration Migration tool**, see here <https://docs.microsoft.com/power-platform/admin/manage-configuration-data>
 
 1. Clone the AzDO Repo where your solution is to be source controlled and where you created your solution pipeline YAML to your local machine.
 
-1. If you haven't already create a config directory under your Solution folder above, create a **new Directory called config under the config folder**.
+1. If you haven't already created a config directory under your Solution folder above, create a **new Directory called config under the config folder**.
 
    ![config directory under solution directory in local repo](media/setup-almacceleratoradvanced-deployment-config/image-20210709094855626.png)
 
@@ -532,7 +532,7 @@ The pipeline will look for this specific folder to run the import after your sol
 
    ![ConfigurationMigrationData directory shown under config directory](media/setup-almacceleratoradvanced-deployment-config/image-20210217093914368.png)
 
-    - Similar to the note regarding specific configuration files per environment the steps above create configuration data that will be deployed to all environments. However, if you have specific configuration data per environment you can **create sub-directories in the config directory** with the name of the Environment to allow for more flexibility. The directory name in this case **must match the EnvironmentName pipeline variable** you created when setting up your pipeline (for example Validate, Test, Production). If no environment specific configuration data / directory is found the pipelines will revert to the configuration data in the root of the config directory.
+    - Similar to the note regarding specific configuration files per environment the steps above create configuration data that will be deployed to all environments. However, if you have specific configuration data per environment you can **create sub-directories in the config directory** with the name of the Environment to allow for more flexibility. The directory name in this case **must match the EnvironmentName pipeline variable** you created when setting up your pipeline (for example Validate, Test, Production). If no environment-specific configuration data / directory is found the pipelines will revert to the configuration data in the root of the config directory.
       ![Configuration Migration Data unzipped in ConfigurationMigrationData directory](media/setup-almacceleratoradvanced-deployment-config/image-20210709103432542.png)
 
 1. When prompted to **export the data** select **Yes**
