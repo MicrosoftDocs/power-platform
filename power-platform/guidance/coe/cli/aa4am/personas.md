@@ -1,6 +1,6 @@
 ---
-title: "Center of Excellence (CoE) Command Line Interface (CLI) ALM Accelerator Personas"
-description: "Overview of the personas related to Center of Excellence (CoE) Command Line Interface (CLI) ALM Accelerator commands"
+title: "Center of Excellence (CoE) Command Line Interface (CLI) Application Lifecycle Management (ALM) Accelerator Personas"
+description: "Overview of the personas related to Center of Excellence (CoE) Command Line Interface (CLI) Application Lifecycle Management (ALM) Accelerator commands"
 keywords: 
 author: Grant-Archibald-MS
 ms.author: grarchib

@@ -1,6 +1,6 @@
 ---
 title: "Center of Excellence (CoE) Command Line Interface (CLI) Application Lifecycle Management (ALM) Accelerator"
-description: "Overview of the Center of Excellence (CoE) Command Line Interface (CLI) ALM Accelerator commands"
+description: "Overview of the Center of Excellence (CoE) Command Line Interface (CLI) Application Lifecycle Management (ALM) Accelerator commands"
 keywords: 
 author: Grant-Archibald-MS
 ms.author: grarchib
