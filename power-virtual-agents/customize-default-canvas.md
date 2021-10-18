@@ -52,7 +52,7 @@ You can change the bot's name and icon. This will affect the icon in all channel
 
 1. Select **Manage** on the side navigation pane, and then go to the **Details** tab.
 
-2. Change the bot's name and icon. [Review the recommendations on Microsoft Teams icon formats](https://review.docs.microsoft.com/microsoftteams/platform/resources/schema/manifest-schema#icons)
+2. Change the bot's name and icon. [Review the recommendations on Microsoft Teams icon formats](/microsoftteams/platform/resources/schema/manifest-schema#icons)
 
 3. Select **Save** to commit your changes.
 
@@ -181,7 +181,7 @@ Once you get the customized canvas working with your bot, you can make changes t
 
 You can use the JavaScript `styleOptions` options to configure a number of pre-defined styles. 
 
-The [defaultStyleOptions.js file](https://github.com/Microsoft/BotFramework-WebChat/blob/master/packages/component/src/Styles/defaultStyleOptions.js) is available on our GitHub repo and contains the full list of all settings that you can modify. For more information on what you can customize and how it will look, see [Web Chat customization](/azure/bot-service/bot-builder-webchat-customization?view=azure-bot-service-4.0&preserve-view=true).
+See [Web Chat customization](/azure/bot-service/bot-builder-webchat-customization?view=azure-bot-service-4.0&preserve-view=true) for links to the defaultStyleOptions.js file and more information on what you can customize and how it will look.
 
 
 **To change the bot icon**
@@ -194,7 +194,7 @@ The [defaultStyleOptions.js file](https://github.com/Microsoft/BotFramework-WebC
                 botAvatarInitials: 'BT',
                 accent: '#00809d',
                 botAvatarBackgroundColor: "#FFFFFF",
-                botAvatarImage: 'https://docs.microsoft.com/azure/bot-service/v4sdk/media/logo_bot.svg',
+                botAvatarImage: 'https://docs.microsoft.com/en-us/azure/bot-service/v4sdk/media/logo_bot.svg',
                 userAvatarImage: 'https://avatars.githubusercontent.com/u/661465'
             };  
 
