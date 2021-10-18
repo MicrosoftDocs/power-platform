@@ -71,14 +71,6 @@ To update Environment Variables:
    1. Now, change the filter to show **Environment Variables**.
    1. Select a variable that you want to update, and then configure its **Current Value**.
 
-## Flows that use the Microsoft Dataverse connector
-
-The Admin | Sync Template v3 (Flows) and CLEANUP - Admin | Sync Template v3 (Connection Status) will fail to collect inventory information for flows that use the [Microsoft Dataverse](/connectors/commondataserviceforapps/) connector. The [Get Flow as Admin](/connectors/flowmanagement/) currently has a limitation, where flows using that connector cannot be retrieved.
-
-## Flows that are imported or owned by a service principle
-
-The Admin | Sync Template v3 (Flows) flow will fail to collect inventory information for flows that were imported or are owned by a service principle.
-
 ## Timeouts in the Admin | Sync Template v3
 
 The Dataverse connector might experience some throttling limits if the tenant has many resources. If you see 429 errors in the flow run history occurring in later runs, you can try the following resolution steps:
