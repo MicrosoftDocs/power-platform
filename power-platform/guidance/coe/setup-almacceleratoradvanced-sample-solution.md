@@ -280,7 +280,7 @@ To get started using the ALM Accelerator For Advanced Makers App follow the inst
    - Select an **existing branch** or **create a new branch** based on an existing branch and enter a **comment**. Use the hashtag notation (for example, `#123`) to link the changes to a specific work item in Azure DevOps, and Select **Commit**.
    ![Enter Branch Information and Commit](media/setup-almacceleratoradvanced-sample-solution/image-20210506145231393.png)
    > [!NOTE]
-   > There is an option to specify if the latest changes contain Delete Components. This allows the user to specify whether to perform an **update** or an **upgrade** of the solution when it is deployed. The former will increase the performance of the pipelines and reduce the overall time to deploy.
+   > There is an option to specify if the latest changes contain Delete Components. This allows the user to specify whether to perform an **update** or an **upgrade** of the solution when it's deployed. The former will increase the performance of the pipelines and reduce the overall time to deploy.
    - When the push begins, a waiting indicator will appear. If the push is successful, a checkbox will appear otherwise a red x will appear. In order to see the progress of your push select the progress indicator, which will take you to the running pipeline in Azure DevOps.
    - Note that the first time you run the pipeline, you may need to give it permission to run in the Azure DevOps interface (see the [Troubleshooting](./setup-almacceleratoradvanced.md#troubleshooting) section of the Setup Guide for more information)
 

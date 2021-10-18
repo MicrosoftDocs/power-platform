@@ -28,7 +28,7 @@ The ALM Accelerator components solution doesn't have a dependency on other compo
 
 ## Before you start
 
-The following documentation is intended to be a step-by-step process for setting up AA4AM manually. However, **it is recommended that you use the [Center of Excellence Command Line Interface (coe-cli)](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli#readme) to assist in automating these steps**. This document will provide details and context for the actions that are performed by the coe-cli and act as a reference for those who want to know the specifics of each step in the process.
+The following documentation is intended to be a step-by-step process for setting up AA4AM manually. However, **it's recommended that you use the [Center of Excellence Command Line Interface (coe-cli)](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli#readme) to assist in automating these steps**. This document will provide details and context for the actions that are performed by the coe-cli and act as a reference for those who want to know the specifics of each step in the process.
 
 ## Document structure
 
@@ -174,7 +174,7 @@ The ALM Accelerator uses several Azure DevOps extensions, including some third-p
 1. Enter <https://github.com/microsoft/coe-alm-accelerator-templates> as the **Clone URL** and select **Import**
 1. Check that the default branch for this repo is `main`. Choose **Repos** and **Branches** and ensure that the `main` branch is tagged as the default:
    ![Verify that the Default Branch in the imported repository](media/setup-almacceleratoradvanced/check-default-branch-imported-repository.png)
-   If it is not, select the 3 vertical dots corresponding to the `main` branch and from the **More options** menu, choose **Set as default branch**
+   If it's not, select the 3 vertical dots corresponding to the `main` branch and from the **More options** menu, choose **Set as default branch**
    ![Set default branch on imported repository](media/setup-almacceleratoradvanced/set-default-branch-imported-repository.png)
 
    > [!NOTE]
