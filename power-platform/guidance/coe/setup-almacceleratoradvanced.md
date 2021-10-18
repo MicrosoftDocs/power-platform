@@ -51,7 +51,7 @@ The application will manage deploying solutions from Development to Validation t
 > [!NOTE]
 > Currently the ALM Accelerator is not compatible with Dataverse for Teams. Both the AA4AM App and the associated AzDO pipelines assume the full version of Dataverse is being used in all environments.
 
-You'll need to **create an environment in which to set up the AA4AM Solution**. It's recommended to install AA4AM in the same environment as other CoE Starter Kit Solutions. For more information about how to decide on the best strategy for your organization, see [Establishing an Environment Strategy for Microsoft Power Platform](https://docs.microsoft.com/power-platform/guidance/adoption/environment-strategy) and [Environment strategy for ALM](https://docs.microsoft.com/power-platform/alm/environment-strategy-alm).
+You'll need to **create an environment in which to set up the AA4AM Solution**. It's recommended to install AA4AM in the same environment as other CoE Starter Kit Solutions. For more information about how to decide on the best strategy for your organization, see [Establishing an Environment Strategy for Microsoft Power Platform](/power-platform/guidance/adoption/environment-strategy) and [Environment strategy for ALM](/power-platform/alm/environment-strategy-alm).
 
 ### Azure DevOps Environment
 
@@ -70,9 +70,9 @@ To complete the steps below, you'll need the following users and permissions in 
 
 For the AA4AM Canvas App to work, the following connectors must be available to be used together in the environment into which the ALM Accelerator solution is imported.
 
-- [Dataverse (Legacy)](https://docs.microsoft.com/connectors/commondataservice/)
-- [Power Apps for Makers](https://docs.microsoft.com/connectors/powerappsforappmakers/)
-- [HTTP with Azure AD](https://docs.microsoft.com/connectors/webcontents/) (with endpoint access to <https://graph.microsoft.com>)
+- [Dataverse (Legacy)](/connectors/commondataservice/)
+- [Power Apps for Makers](/connectors/powerappsforappmakers/)
+- [HTTP with Azure AD](/connectors/webcontents/) (with endpoint access to <https://graph.microsoft.com>)
 - ALM Accelerator Custom Azure DevOps
 
 ## Foundational Setup
@@ -136,7 +136,7 @@ Sign in to [portal.azure.com](https://portal.azure.com).
 
 ### Give Power App Management Permission to your App
 
-In order for the pipelines to perform certain actions against the environments in your Power Platform tenant you'll need to grant Power App Management permissions to your App registration. To do so, you'll need to run the following PowerShell commandlet as an interactive user that has Power Apps administrative privileges. You'll need to run this command once, using an interactive user, in PowerShell after your app registration has been created. The command gives permissions to the Service Principal to be able to execute environment-related functions including querying for environments and connections via Microsoft.PowerApps.Administration.PowerShell (<https://docs.microsoft.com/powershell/module/microsoft.powerapps.administration.powershell/new-powerappmanagementapp?view=pa-ps-latest>). For more information on the **New-PowerAppManagementApp** cmdlet, see <https://docs.microsoft.com/powershell/module/microsoft.powerapps.administration.powershell/new-powerappmanagementapp?view=pa-ps-latest>
+In order for the pipelines to perform certain actions against the environments in your Power Platform tenant you'll need to grant Power App Management permissions to your App registration. To do so, you'll need to run the following PowerShell commandlet as an interactive user that has Power Apps administrative privileges. You'll need to run this command once, using an interactive user, in PowerShell after your app registration has been created. The command gives permissions to the Service Principal to be able to execute environment-related functions including querying for environments and connections via Microsoft.PowerApps.Administration.PowerShell. For more information on the **New-PowerAppManagementApp** cmdlet, see [here](/powershell/module/microsoft.powerapps.administration.powershell/new-powerappmanagementapp)
 
 > [IMPORTANT!]
 Currently this commandlet gives elevated permissions (for example Power Platform Admin) to the app registration. Your organization's security policies may not allow for these types of permissions. Ensure that these permissions are allowed before continuing. In the case that these elevated permissions are not allowed you'll not be able to use the AA4AM pipelines.
@@ -149,7 +149,7 @@ New-PowerAppManagementApp -ApplicationId [the Application (client) ID you copied
 
 ### Install Azure DevOps Extensions
 
-The ALM Accelerator uses several Azure DevOps extensions, including some third-party Extensions that are available in the Azure DevOps marketplace. Under Organization Settings in Azure DevOps, install the following extensions. For more information regarding Microsoft and third-party Azure DevOps extensions, see here <https://docs.microsoft.com/azure/devops/marketplace/trust?view=azure-devops>. In addition, each of the third-party extensions web pages and the link to their source code are provided below.
+The ALM Accelerator uses several Azure DevOps extensions, including some third-party Extensions that are available in the Azure DevOps marketplace. Under Organization Settings in Azure DevOps, install the following extensions. For more information regarding Microsoft and third-party Azure DevOps extensions, see [here](/azure/devops/marketplace/trust). In addition, each of the third-party extensions web pages and the link to their source code are provided below.
 
 1. Go to <https://dev.azure.com> and select **Organization settings**
 1. Select **General** > **Extension**
@@ -441,7 +441,7 @@ The following steps show how to **create a pipeline from the sample pipeline YAM
 
    ![Rename the pipeline to deploy-validation-MyNewSolution](media/almacceleratoradvanced-components/image-20210409083958467.png)
 
-1. Update the **Default branch for manual and scheduled builds** for more information, see [Configure pipeline triggers - Azure Pipelines | Microsoft Docs](https://docs.microsoft.com/azure/devops/pipelines/process/pipeline-triggers?view=azure-devops&tabs=YAML#branch-considerations-for-pipeline-completion-triggers)
+1. Update the **Default branch for manual and scheduled builds** for more information, see [Configure pipeline triggers - Azure Pipelines | Microsoft Docs](/azure/devops/pipelines/process/pipeline-triggers?tabs=YAML#branch-considerations-for-pipeline-completion-triggers)
 
       > [!NOTE]
       > If your new pipeline was not created in the default branch of the repo you may need to update the **Default branch for manual and scheduled builds**. See the following link for more information on **Default branch for manual and scheduled builds**.
@@ -518,7 +518,7 @@ As mentioned in the note above, the previous section allows you to create pipeli
 
 These variables are required by every deployment pipeline. The Environment variable is **EnvironmentName** and the Service Connection variable is **ServiceConnection**.
 
-The **EnvironmentName** variable is used to specify the Azure DevOps environment being deployed to in order to enable tracking deployment history and set permissions and approvals for deployment to specific environments. Depending on the environment to which you're deploying set this value to **Validate, Test or Production** For more information on Environments in Azure DevOps, see <https://docs.microsoft.com/azure/devops/pipelines/process/environments>.
+The **EnvironmentName** variable is used to specify the Azure DevOps environment being deployed to in order to enable tracking deployment history and set permissions and approvals for deployment to specific environments. Depending on the environment to which you're deploying set this value to **Validate, Test or Production** For more information on Environments in Azure DevOps, see [here](/azure/devops/pipelines/process/environments).
 
 ![Set Environment Name Pipeline Variable](media/almacceleratoradvanced-components/image-20210414170154479.png)
 
@@ -532,7 +532,7 @@ You can optionally set a pipeline variable on your deployment pipelines to turn 
 
 ### Setting Branch Policies for Pull Request Validation
 
-In order to execute the build pipeline for your solution when a **Pull Request is created**, you'll need to create a **Branch Policy** to execute the Pipeline you created in the previous step. Use the following steps to set your Branch Policy. For more information on Branch Policies, see <https://docs.microsoft.com/azure/devops/repos/git/branch-policies?view=azure-devops>
+In order to execute the build pipeline for your solution when a **Pull Request is created**, you'll need to create a **Branch Policy** to execute the Pipeline you created in the previous step. Use the following steps to set your Branch Policy. For more information on Branch Policies, see <https://docs.microsoft.com/azure/devops/repos/git/branch-policies>
 
 1. In Azure DevOps, go to **Repos** and select the **Branches** folder
 
