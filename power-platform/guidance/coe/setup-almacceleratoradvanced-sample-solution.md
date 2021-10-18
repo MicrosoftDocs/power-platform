@@ -20,7 +20,7 @@ search.app:
 # ALM Accelerator Sample Solution Setup (Preview)
 
 > [!NOTE]
-ALM Accelerator for Advanced Makers is currently in public preview. Please see Issues currently tagged as [vnext](https://github.com/microsoft/coe-starter-kit/issues?q=is%3Aopen+is%3Aissue+label%3Aalm-accelerator+label%3Avnext) for the Roadmap to be completed prior to general availability. While in Public Preview it can be expected that there will be breaking changes and frequent updates to address feedback from preview members. Additionally, the Public Preview is reliant on the experimental [Power Apps Source File Pack and Unpack Utility](https://github.com/microsoft/PowerApps-Language-Tooling) that is being developed separately from AA4AM.
+> ALM Accelerator for Advanced Makers is currently in public preview. Please see Issues currently tagged as [vnext](https://github.com/microsoft/coe-starter-kit/issues?q=is%3Aopen+is%3Aissue+label%3Aalm-accelerator+label%3Avnext) for the Roadmap to be completed prior to general availability. While in Public Preview it can be expected that there will be breaking changes and frequent updates to address feedback from preview members. Additionally, the Public Preview is reliant on the experimental [Power Apps Source File Pack and Unpack Utility](https://github.com/microsoft/PowerApps-Language-Tooling) that is being developed separately from AA4AM.
 
 When you create a solution in Dataverse, you'll need to create pipelines specifically for that solution. Follow these steps for creating pipelines for the ALM Accelerator Sample Solution in Azure DevOps. There are sample pipelines included in the Pipeline directory in the CoE ALM Templates repo.
 
@@ -51,7 +51,8 @@ In this step, you'll be creating the Validation and Test Pipelines for reference
 
 1. Create a new Branch based on **your default branch** in the Repo called **ALMAcceleratorSampleSolution**
 
-   >  [!NOTE] This branch will be your v-next branch in the repo. All development work should be branched from this branch to a developers personal working branch and then merged into the v-next branch in order to push to Validation and Testing. Later when a release is ready the v-next branch can be merged into the main or default branch.
+   >[!NOTE]
+   > This branch will be your v-next branch in the repo. All development work should be branched from this branch to a developers personal working branch and then merged into the v-next branch in order to push to Validation and Testing. Later when a release is ready the v-next branch can be merged into the main or default branch.
 
    ![Create New Branch for Solution](media/setup-almacceleratoradvanced-sample-solution/image-20210505162502432.png)
 
@@ -230,7 +231,7 @@ The **EnvironmentName** variable is used to specify the Azure DevOps environment
 1. Repeat the steps above to create the **ServiceConnection** variable. This is used to specify how the deployment pipeline connects to the Power Platform. The values used for the Service Connection variable are the names of the Service Connections created during setup [Create a Service Connection for DevOps to access Power Platform](setup-almacceleratoradvanced.md#create-service-connections-for-devops-to-access-power-platform)
 
    > [!NOTE]
-The Value for the ServiceConnection variable must be identical to the Name of the Service Connection. Including any trailing slashes.
+   > The Value for the ServiceConnection variable must be identical to the Name of the Service Connection. Including any trailing slashes.
 
    ![Set the ServiceConnection variable value](media/setup-almacceleratoradvanced-sample-solution/image-20210506102307068.png)
 
@@ -249,7 +250,7 @@ To get started using the ALM Accelerator For Advanced Makers App follow the inst
 1. Download the **latest unmanaged solution** of the **ALM Accelerator Sample Solution** from the latest release of the ALM Accelerator For Advanced Makers on GitHub (<https://github.com/microsoft/coe-starter-kit/releases>).
 
     > [!NOTE]
-The screenshot below is for reference as to where the unmanaged solution exists under a release. The actual version should be the most recent release.
+    > The screenshot below is for reference as to where the unmanaged solution exists under a release. The actual version should be the most recent release.
 
     ![GitHub Releases](media/setup-almacceleratoradvanced-sample-solution/image-20210506140023521.png)
 
@@ -258,19 +259,19 @@ The screenshot below is for reference as to where the unmanaged solution exists 
 1. Once the solution is installed run the ALM Accelerator For Advanced Makers App.
 
     > [!NOTE]
-When you first launch the app you may need to consent to the app using your connections.
+    > When you first launch the app you may need to consent to the app using your connections.
 
 1. Select the **Cog** in the top right to select your **Azure DevOps Environment**, **Project**, and **Repo** to which you'll push your changes and submit your pull requests and select **Save**
    ![Select the Settings Cog](media/almacceleratoradvanced-components/image-20210303085854533.png)
 
    > [!NOTE]
-If you don't see your DevOps Organization / Project in the dropdown double check that the Custom connector is working correctly after updating it's Security settings.
+   > If you don't see your DevOps Organization / Project in the dropdown double check that the Custom connector is working correctly after updating it's Security settings.
 
 1. From the Environment Drop Down **Select the Dataverse Environment** in which you'll be doing your development work.
    ![Select your Maker Environment](media/setup-almacceleratoradvanced-sample-solution/image-20210506141321294.png)
 
    > [!NOTE]
-In order for your Environment to show up in this drop down a service connection in the Azure DevOps project you just selected is required (see [Create a Service Connection for DevOps to access Power Platform](setup-almacceleratoradvanced.md#create-service-connections-for-devops-to-access-power-platform). Additionally, verify that you've followed the steps to reconnect the flow above if you do not see any environments in the list.
+   > In order for your Environment to show up in this drop down a service connection in the Azure DevOps project you just selected is required (see [Create a Service Connection for DevOps to access Power Platform](setup-almacceleratoradvanced.md#create-service-connections-for-devops-to-access-power-platform). Additionally, verify that you've followed the steps to reconnect the flow above if you do not see any environments in the list.
 
 1. By default the **unmanaged solutions**, including the **ALM Accelerator Sample Solution**, in your Environment should be displayed in the main window with buttons to **Push Changes** and **Create Pull Requests**.
 
@@ -278,8 +279,8 @@ In order for your Environment to show up in this drop down a service connection 
 
    - Select an **existing branch** or **create a new branch** based on an existing branch and enter a **comment**. Use the hashtag notation (for example, `#123`) to link the changes to a specific work item in Azure DevOps, and Select **Commit**.
    ![Enter Branch Information and Commit](media/setup-almacceleratoradvanced-sample-solution/image-20210506145231393.png)
-   >[!NOTE]
-There is an option to specify if the latest changes contain Delete Components. This allows the user to specify whether to perform an **update** or an **upgrade** of the solution when it is deployed. The former will increase the performance of the pipelines and reduce the overall time to deploy.
+   > [!NOTE]
+   > There is an option to specify if the latest changes contain Delete Components. This allows the user to specify whether to perform an **update** or an **upgrade** of the solution when it is deployed. The former will increase the performance of the pipelines and reduce the overall time to deploy.
    - When the push begins, a waiting indicator will appear. If the push is successful, a checkbox will appear otherwise a red x will appear. In order to see the progress of your push select the progress indicator, which will take you to the running pipeline in Azure DevOps.
    - Note that the first time you run the pipeline, you may need to give it permission to run in the Azure DevOps interface (see the [Troubleshooting](./setup-almacceleratoradvanced.md#Troubleshooting) section of the Setup Guide for more information)
 
@@ -354,8 +355,8 @@ There is an option to specify if the latest changes contain Delete Components. T
 
    ![Push your Changes to the Branch Created Previously](media/setup-almacceleratoradvanced-sample-solution/image-20210920163633739.png)
 
-   >[!NOTE]
-Be sure to publish your changes before initiating the push.
+   > [!NOTE]
+   > Be sure to publish your changes before initiating the push.
 1. Once the **latest changes are Committed** create a new Pull Request by **Selecting Create Pull Request**
 
    - Specify the **Source and Target branch** and enter a **Title and Comment** for your Pull Request and **Select Create**.

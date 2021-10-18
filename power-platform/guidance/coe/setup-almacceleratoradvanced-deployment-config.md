@@ -21,7 +21,7 @@ search.app:
 # Configuration and Data Deployment in Pipelines (Preview)
 
 > [!NOTE]
-ALM Accelerator for Advanced Makers is currently in public preview. Please see Issues currently tagged as [vnext](https://github.com/microsoft/coe-starter-kit/issues?q=is%3Aopen+is%3Aissue+label%3Aalm-accelerator+label%3Avnext) for the Roadmap to be completed prior to general availability. While in Public Preview it can be expected that there will be breaking changes and frequent updates to address feedback from preview members. Additionally, the Public Preview is reliant on the experimental [Power Apps Source File Pack and Unpack Utility](https://github.com/microsoft/PowerApps-Language-Tooling) that is being developed separately from AA4AM.
+> ALM Accelerator for Advanced Makers is currently in public preview. Please see Issues currently tagged as [vnext](https://github.com/microsoft/coe-starter-kit/issues?q=is%3Aopen+is%3Aissue+label%3Aalm-accelerator+label%3Avnext) for the Roadmap to be completed prior to general availability. While in Public Preview it can be expected that there will be breaking changes and frequent updates to address feedback from preview members. Additionally, the Public Preview is reliant on the experimental [Power Apps Source File Pack and Unpack Utility](https://github.com/microsoft/PowerApps-Language-Tooling) that is being developed separately from AA4AM.
 
 The ALM Accelerator uses json formatted files for updating **connection references, environment variables, setting permissions for AAD Groups and Dataverse teams** as well as **sharing Canvas Apps and updating ownership of solution components** such as Power Automate flows. The instructions below are **optional** and depend on what type of components your solution pipelines deploy. For instance, if your solutions only contain Dataverse Tables, Columns and Model Driven Apps with no per environment configuration or data needed then **some of these steps may not be necessary** and can be skipped. The following configuration files allow you to fully automate the deployment of your solutions and specify how to configure items that are specific to the environment to which the solution is being deployed.
 
@@ -159,7 +159,7 @@ The connection reference property in the customDeploymentConfiguration.json is *
 The environment variable property in the customDeploymentConfiguration.json is **EnvironmentVariables**. The environment variable property is used for setting Dataverse **Environment variables** in your solution after the solution is imported into an environment.
 
 > [!NOTE]
-When exporting and source controlling solutions. Environment variable values are exported with the solution. In some cases this could be a security risk if the environment variables contain sensitive information although it's recommended that you not store sensitive information in environment variables. One way to ensure that your environment variable values are not source controlled is to create a solution specifically for environment variable values in your development environment(s) and set the current value of the environment variables in that solution. This will prevent the current values from being exported during the solution export and being stored in source control.
+> When exporting and source controlling solutions. Environment variable values are exported with the solution. In some cases this could be a security risk if the environment variables contain sensitive information although it's recommended that you not store sensitive information in environment variables. One way to ensure that your environment variable values are not source controlled is to create a solution specifically for environment variable values in your development environment(s) and set the current value of the environment variables in that solution. This will prevent the current values from being exported during the solution export and being stored in source control.
 
 1. The format of the json for these variables take the form of an array of name/value pairs.
 
@@ -286,7 +286,7 @@ To create the custom deployment settings json file, follow the steps below
 The environment variable property in the customDeploymentConfiguration.json is **DefaultEnvironmentVariables**. The DefaultEnvironmentVariables variable is used in the export pipeline for setting Dataverse **Default Environment variables** in your solution when the solution is exported and stored in source control.
 
 > [!NOTE]
-The Default Environment variables settings only applies if the export pipeline is configured with the pipeline variable **VerifyDefaultEnvironmentVariableValues = true**. See the
+> The Default Environment variables settings only applies if the export pipeline is configured with the pipeline variable **VerifyDefaultEnvironmentVariableValues = true**. See the
 
 1. The format of the json for these variables take the form of an array of name/value pairs.
 
@@ -385,7 +385,7 @@ The AAD group canvas configuration property in the customDeploymentConfiguration
 The AAD group canvas configuration property in the customDeploymentConfiguration.json is **AadGroupTeamConfiguration**. The AAD group canvas configuration property is used for **mapping Dataverse Teams and Roles** to specific **Azure Active Directory Groups** in your solution with specific **Azure Active Directory Groups** after the solution is imported into an environment.
 
 > [!NOTE]
-The security roles will need to added to your solution if they are not manually created in the target environment.
+> The security roles will need to added to your solution if they are not manually created in the target environment.
 
 1. The format of the json for these variables take the form of an array of objects. One or many roles can be applied to a team. These roles provide permissions to solution components required by the users in the group.
 
@@ -444,8 +444,8 @@ The security roles will need to added to your solution if they are not manually 
 
 The solution component ownership property in the customDeploymentConfiguration.json is **SolutionComponentOwnershipConfiguration**. The solution component ownership property is used for assigning ownership of solution components to Dataverse Users after the solution is imported into an environment. This is  useful for components such as Flows that will be owned by default by the Service Principal user when the solution is imported by the pipeline and organizations want to reassign them after import. Additionally, the  **SolutionComponentOwnershipConfiguration** will be used to enable flows that don't have any connection references. The flow will be enabled by the user specified when no connection references are found to use to enable the flow.
 
->[!NOTE]
-The current pipeline only implements the ability to set ownership of Flows. The ability to assign other components to users could be added in the future.
+> [!NOTE]
+> The current pipeline only implements the ability to set ownership of Flows. The ability to assign other components to users could be added in the future.
 
 1. The format of the json for these variables take the form of an array of objects.
 
@@ -528,7 +528,7 @@ In many cases, there will be configuration or seed data that you'll want to impo
 1. Select **Save and Export** and save the data to the directory path **config\ConfigurationMigrationData** in your **local Azure DevOps repo** under the **solution folder** for which this configuration data is to be imported.
 
    > [!NOTE]
-The pipeline will look for this specific folder to run the import after your solution is imported. Ensure that the name of the folder and the location are the same as the screenshot below.
+   > The pipeline will look for this specific folder to run the import after your solution is imported. Ensure that the name of the folder and the location are the same as the screenshot below.
 
    ![ConfigurationMigrationData directory shown under config directory](media/setup-almacceleratoradvanced-deployment-config/image-20210217093914368.png)
 
