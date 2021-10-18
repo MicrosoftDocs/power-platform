@@ -108,6 +108,8 @@
         href: coe/setup-innovationbacklog.md
       - name: Set up ALM Accelerator for Makers components
         href: coe/setup-almaccelerator.md
+      - name: Set up ALM Accelerator for Advanced Makers components
+        href: coe/setup-almacceleratoradvanced.md
     - name: What's in the CoE Starter Kit
       items:  
       - name: CoE Starter Kit modules
@@ -146,6 +148,8 @@
           href: coe/use-innovationbacklog.md 
         - name: Use the ALM Accelerator for Makers
           href: coe/almaccelerator-components.md
+        - name: Use the ALM Accelerator for Advanced Makers
+          href: coe/almacceleratoradvanced-components.md
         - name: Environment management
           href: coe/env-mgmt.md
     - name: Limitations

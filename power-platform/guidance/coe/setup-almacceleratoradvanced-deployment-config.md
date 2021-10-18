@@ -1,6 +1,6 @@
 ---
 title: "Configuration and Data Deployment in Pipelines | MicrosoftDocs"
-description: "The ALM Accelerator for Makers will help you follow ALM patterns and practices to source control and move your solutions from your development environment to test and production environments using Azure DevOps"
+description: "The ALM Accelerator for Advanced Makers will help you follow ALM patterns and practices to source control and move your solutions from your development environment to test and production environments using Azure DevOps"
 author: manuelap-msft
 manager: devkeydet
 ms.service: power-platform
@@ -33,11 +33,11 @@ The following documentation is intended to be a step-by-step process for setting
 
 ## Creating a Deployment Settings Json File
 
-When storing the customDeploymentSettings.json in the root of the config directory the same configuration will apply to all environments. Assuming that you're using File Transformation or Token Replacement to store all of the environment specific information, you can specify the environment specific values in your Pipeline Variables. However, **you can also create environment specific customDeploymentSettings.json files** by creating sub-directories in the config directory with the name of the Environment to allow for more flexibility. The directory name in this case **must match the EnvironmentName pipeline variable** you created when setting up your pipeline (for example Validate, Test, Production). If no environment specific deployment settings json / directory is found the pipelines will revert to the configuration in the root of the config directory.
+When storing the customDeploymentSettings.json in the root of the config directory the same configuration will apply to all environments. Assuming that you're using File Transformation or Token Replacement to store all of the environment specific information, you can specify the environment specific values in your Pipeline Variables. However, **you can also create environment specific customDeploymentSettings.json files** by creating sub-directories in the config directory with the name of the Environment to allow for more flexibility. The directory name in this case **must match the EnvironmentName pipeline variable** you created when setting up your pipeline (for example Validate, Test, Production). If no environment specific deployment settings json / directory is found, the pipelines will revert to the configuration in the root of the config directory.
 
 Additionally, you can **create user specific configuration files** (for example the JohannaDev directory pictured above) for individual developers to use when importing unmanaged solutions from source control. When the user imports an unmanaged solution from source control they will be presented with the option to choose a specific configuration.
 
->![Select a configuration from the list](media/setup-almacceleratoradvanced-deployment-config/image-20210622130424580.png)
+![Select a configuration from the list](media/setup-almacceleratoradvanced-deployment-config/image-20210622130424580.png)
 
 The deployment settings json file is used to configure connection references and environment variables
 
@@ -88,7 +88,7 @@ The deployment settings json file is used to configure connection references and
 }
 ```
 
-To create the deployment settings json file follow the steps below
+To create the deployment settings json file, follow the steps below
 
 1. Copy the above json to a new file called **deploymentSettings.json**
 
@@ -98,7 +98,7 @@ To create the deployment settings json file follow the steps below
 
 ### Create Connection Reference Json
 
-The connection reference property in the customDeploymentConfiguration.json is **ConnectionReferences**. This is used for setting connection references in your solution to specific connections configured in a target environment after the solution is imported. Additionally, the **ConnectionReferences** are used to **enable flows after the solution is imported based on owner of the connection** specified in the variable.
+The connection reference property in the customDeploymentConfiguration.json is **ConnectionReferences**. The connection reference property is used for setting connection references in your solution to specific connections after the solution is imported. Additionally, the **ConnectionReferences** are used to **enable flows after the solution is imported based on owner of the connection** specified in the variable.
 
 1. **you'll need to create the connections manually in your target environments and copy the IDs** for the connection to use in the json value below
 
@@ -126,7 +126,7 @@ The connection reference property in the customDeploymentConfiguration.json is *
    - The **connection id** can be obtained via the URL of the connection after you create it. For example the id of the connection below is **9f66d1d455f3474ebf24e4fa2c04cea2** where the URL is 'https://.../connections/shared_commondataservice/9f66d1d455f3474ebf24e4fa2c04cea2/details'
      ![The connection id embedded in the connection url](media/setup-almacceleratoradvanced-deployment-config/connid.png)
 
-1. Once you've gathered the connection reference schema names and connection ids go to the **customDeploymentSettings.json** and paste the json in  the **ConnectionReferences property**.
+1. Once you've gathered the connection reference schema names and connection ids, go to the **customDeploymentSettings.json** and paste the json in  the **ConnectionReferences property**.
 
    ```json
    "ConnectionReferences": 
@@ -156,7 +156,7 @@ The connection reference property in the customDeploymentConfiguration.json is *
 
 ### Create Environment Variable Json
 
-The environment variable property in the customDeploymentConfiguration.json is **EnvironmentVariables**. This is used for setting Dataverse **Environment variables** in your solution after the solution is imported into an environment.
+The environment variable property in the customDeploymentConfiguration.json is **EnvironmentVariables**. The environment variable property is used for setting Dataverse **Environment variables** in your solution after the solution is imported into an environment.
 
 > [!NOTE]
 When exporting and source controlling solutions. Environment variable values are exported with the solution. In some cases this could be a security risk if the environment variables contain sensitive information although it's recommended that you not store sensitive information in environment variables. One way to ensure that your environment variable values are not source controlled is to create a solution specifically for environment variable values in your development environment(s) and set the current value of the environment variables in that solution. This will prevent the current values from being exported during the solution export and being stored in source control.
@@ -318,7 +318,7 @@ The Default Environment variables settings only applies if the export pipeline i
    }
    ```
 
-1. If you're using **'Replace Tokens' extension** and adding tokens in your configuration like in the above example navigate to the pipeline for your solution **Select Edit -> Variables**
+1. If you're using **'Replace Tokens' extension** and adding tokens in your configuration like in the above example, navigate to the pipeline for your solution **Select Edit -> Variables**
 
 1. On the Pipeline Variables screen create a **pipeline variable** for each of the tokens in your configuration (for example **defaultvariable.cat_TextEnvironmentVariable**).
 
@@ -328,9 +328,9 @@ The Default Environment variables settings only applies if the export pipeline i
 
 #### Create AAD Group Canvas Configuration Json
 
-The AAD group canvas configuration property in the customDeploymentConfiguration.json is **AadGroupCanvasConfiguration**. This is used for **sharing canvas apps** in your solution with specific **Azure Active Directory Groups** after the solution is imported into an environment.
+The AAD group canvas configuration property in the customDeploymentConfiguration.json is **AadGroupCanvasConfiguration**. The AAD group canvas configuration property is used for **sharing canvas apps** in your solution with specific **Azure Active Directory Groups** after the solution is imported into an environment.
 
-1. The format of the json for these variables take the form of an array of objects. The **roleName** can be one of **CanView**, **CanViewWithShare** and **CanEdit**
+1. The format of the json for these variables take the form of an array of objects. The **roleName** can be one of **CanView**, **CanViewWithShare, and **CanEdit**
 
    ```json
    [
@@ -442,7 +442,7 @@ The security roles will need to added to your solution if they are not manually 
 
 #### Create Solution Component Ownership Json
 
-The solution component ownership property in the customDeploymentConfiguration.json is **SolutionComponentOwnershipConfiguration**. This is used for assigning ownership of solution components to Dataverse Users after the solution is imported into an environment. This is  useful for components such as Flows that will be owned by default by the Service Principal user when the solution is imported by the pipeline and organizations want to reassign them after import. Additionally, the  **SolutionComponentOwnershipConfiguration** will be used to enable flows that don't have any connection references. The flow will be enabled by the user specified when no connection references are found to use to enable the flow.
+The solution component ownership property in the customDeploymentConfiguration.json is **SolutionComponentOwnershipConfiguration**. The solution component ownership property is used for assigning ownership of solution components to Dataverse Users after the solution is imported into an environment. This is  useful for components such as Flows that will be owned by default by the Service Principal user when the solution is imported by the pipeline and organizations want to reassign them after import. Additionally, the  **SolutionComponentOwnershipConfiguration** will be used to enable flows that don't have any connection references. The flow will be enabled by the user specified when no connection references are found to use to enable the flow.
 
 >[!NOTE]
 The current pipeline only implements the ability to set ownership of Flows. The ability to assign other components to users could be added in the future.

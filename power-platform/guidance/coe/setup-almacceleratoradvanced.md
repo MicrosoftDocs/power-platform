@@ -132,7 +132,7 @@ Sign in to [portal.azure.com](https://portal.azure.com).
 
 ### Give Power App Management Permission to your App
 
-In order for the pipelines to perform certain actions against the environments in your Power Platform tenant you'll need to grant Power App Management permissions to your App registration. To do so you'll need to run the following PowerShell commandlet as an interactive user that has Power Apps administrative privileges. you'll need to run this command once, using an interactive user, in PowerShell after your app registration has been created. The command gives permissions to the Service Principal to be able to execute environment related functions including querying for environments and connections via Microsoft.PowerApps.Administration.PowerShell (<https://docs.microsoft.com/powershell/module/microsoft.powerapps.administration.powershell/new-powerappmanagementapp?view=pa-ps-latest>). For more information on the **New-PowerAppManagementApp** cmdlet see here <https://docs.microsoft.com/powershell/module/microsoft.powerapps.administration.powershell/new-powerappmanagementapp?view=pa-ps-latest>
+In order for the pipelines to perform certain actions against the environments in your Power Platform tenant you'll need to grant Power App Management permissions to your App registration. To do so you'll need to run the following PowerShell commandlet as an interactive user that has Power Apps administrative privileges. You'll need to run this command once, using an interactive user, in PowerShell after your app registration has been created. The command gives permissions to the Service Principal to be able to execute environment related functions including querying for environments and connections via Microsoft.PowerApps.Administration.PowerShell (<https://docs.microsoft.com/powershell/module/microsoft.powerapps.administration.powershell/new-powerappmanagementapp?view=pa-ps-latest>). For more information on the **New-PowerAppManagementApp** cmdlet see here <https://docs.microsoft.com/powershell/module/microsoft.powerapps.administration.powershell/new-powerappmanagementapp?view=pa-ps-latest>
 
 > [IMPORTANT!] Currently this commandlet gives elevated permissions (e.g. Power Platform Admin) to the app registration. Your organization's security policies may not allow for these types of permissions. Ensure that these permissions are allowed before continuing. In the case that these elevated permissions are not allowed you'll not be able to use the AA4AM pipelines.
 
@@ -353,7 +353,7 @@ When you create a solution in Dataverse you'll need to **create pipelines specif
 
 The sample pipelines provide flexibility for organizations to store their pipeline templates in a separate project or repo from the specific solution pipeline YAML. Follow the steps below to configure your **solution pipeline**. Repeat the steps for each of the solutions you'll be source controlling with the ALM Accelerator.
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 The pipeline YAML for your solution pipeline will always be stored in the same repo to which you'll be source controlling your solution. However, the pipeline templates (i.e. the folder Pipeline\Templates) can exist in either the same repo as your solution pipeline YAML or in a separate repo and/or project.
 
 ### Validate Your Setup Using the ALM Accelerator Sample Solution (Optional)
