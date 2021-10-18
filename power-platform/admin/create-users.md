@@ -333,6 +333,9 @@ You can use server-to-server (S2S) authentication to securely and seamlessly com
 
 All application users are created with a non-interactive user account, however they aren't counted toward the limit of seven non-interactive user accounts. In addition, there's no limit on how many application users you can create in an environment.
 
+> [!CAUTION]
+> For an application user, the system adds a "#" as the First Name for the Application User you create. This is by design.
+
 For step-by-step information about creating an application user, see [Create an application user](manage-application-users.md#create-an-application-user).
 
 ### Enable or disable application users
