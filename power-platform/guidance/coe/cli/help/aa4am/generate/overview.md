@@ -3,7 +3,7 @@ title: "Center of Excellence (CoE) Command Line Interface (CLI) ALM Accelerator 
 description: Overview of commands to generate configuration files for the ALM Accelerator using the Center of Excellence (CoE) Command Line Interface (CLI)"
 keywords: 
 author: Grant-Archibald-MS
-ms.author: garchib
+ms.author: grarchib
 manager: pladhani
 ms.custom: ""
 ms.date: 10/20/2021

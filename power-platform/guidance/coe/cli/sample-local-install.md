@@ -3,7 +3,7 @@ title: "Sample local install of Center of Excellence (CoE) Command Line Interfac
 description: "Sample of installation of Center of Excellence (CoE) Command Line Interface (CLI) to a local deployment"
 keywords: 
 author: Grant-Archibald-MS
-ms.author: garchib
+ms.author: grarchib
 manager: pladhani
 ms.custom: ""
 ms.date: 10/20/2021

@@ -3,7 +3,7 @@ title: "Center of Excellence (CoE) Command Line Interface (CLI) ALM Accelerator"
 description: "Overview of the Center of Excellence (CoE) Command Line Interface (CLI) ALM Accelerator commands"
 keywords: 
 author: Grant-Archibald-MS
-ms.author: garchib
+ms.author: grarchib
 manager: pladhani
 ms.custom: ""
 ms.date: 10/20/2021

@@ -3,7 +3,7 @@ title: "Center of Excellence (CoE) Command Line Interface (CLI)"
 description: "Overview of the Center of Excellence Command Line interface and how it automates the setup and administrator of common tasks"
 keywords: 
 author: Grant-Archibald-MS
-ms.author: garchib
+ms.author: grarchib
 manager: pladhani
 ms.custom: ""
 ms.date: 10/20/2021
@@ -33,11 +33,11 @@ Comparing and contrasting the CoE CLI to other CLI / APIs:
 
 1. The CoE CLI aims to automate the end to end deployment of components across the Microsoft Cloud
 
-1. The [Azure CLI](https://docs.microsoft.com/cli/azure/) is aimed at Automating Azure Resources and via extensions Azure DevOps. The CoE CLI uses the Azure CLI for authentication and managing Azure related resources
+1. The [Azure CLI](/cli/azure/) is aimed at Automating Azure Resources and via extensions Azure DevOps. The CoE CLI uses the Azure CLI for authentication and managing Azure related resources
 
-1. The [Power Platform CLI](https://docs.microsoft.com/powerapps/developer/data-platform/powerapps-cli) is a simple, one-stop developer CLI that empowers developers and Independent Software Vendors (ISVs) to perform various operations in Microsoft Power Platform related to environment lifecycle features, and to authenticate and work with Microsoft Dataverse environments, solution packages, portals, code components. As new features are added to the cross platform Power Platform CLI the CoE CLI will leverage the Power Platform CLI features
+1. The [Power Platform CLI](/powerapps/developer/data-platform/powerapps-cli) is a simple, one-stop developer CLI that empowers developers and Independent Software Vendors (ISVs) to perform various operations in Microsoft Power Platform related to environment lifecycle features, and to authenticate and work with Microsoft Dataverse environments, solution packages, portals, code components. As new features are added to the cross platform Power Platform CLI the CoE CLI will leverage the Power Platform CLI features
 
-1. The [Azure DevOps Services REST API](https://docs.microsoft.com/rest/api/azure/devops/) provides a REST based set of commands to interact with Azure DevOps. The CoE CLI makes use of these APIs to build aggregate commands
+1. The [Azure DevOps Services REST API](/rest/api/azure/devops/) provides a REST based set of commands to interact with Azure DevOps. The CoE CLI makes use of these APIs to build aggregate commands
 
 ## What Next
 

@@ -3,7 +3,7 @@ title: "Center of Excellence (CoE) Command Line Interface (CLI) ALM Accelerator 
 description: "Apply Power Platform Maturity to decide when to ise ALM Accelerator using the Center of Excellence (CoE) and Command Line Interface (CLI)"
 keywords: 
 author: Grant-Archibald-MS
-ms.author: garchib
+ms.author: grarchib
 manager: pladhani
 ms.custom: ""
 ms.date: 10/20/2021
@@ -53,11 +53,11 @@ AA4AM is a good match if you can check to see if the following apply:
       - Is the process automated to request environments?
 
 1. Are Source control concepts understood?
-    - Is [Branching and Merging](https://docs.microsoft.com/azure/devops/repos/git/git-branching-guidance?view=azure-devops) understood?
-    - Are [Pull Request](https://docs.microsoft.com/azure/devops/repos/git/git-branching-guidance?view=azure-devops#review-and-merge-code-with-pull-requests) used to review and merge changes?
-    - Are [Build Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started/key-pipelines-concepts?view=azure-devops) used to integrate and deploy between Validation and Test, Production environments?
+    - Is [Branching and Merging](/azure/devops/repos/git/git-branching-guidance?view=azure-devops) understood?
+    - Are [Pull Request](/azure/devops/repos/git/git-branching-guidance?view=azure-devops#review-and-merge-code-with-pull-requests) used to review and merge changes?
+    - Are [Build Pipelines](/azure/devops/pipelines/get-started/key-pipelines-concepts?view=azure-devops) used to integrate and deploy between Validation and Test, Production environments?
 
-1. Are [Fusion development](https://docs.microsoft.com/learn/paths/transform-business-applications-with-fusion-development/) teams engaged to include Low code and Pro code teams?
+1. Are [Fusion development](/learn/paths/transform-business-applications-with-fusion-development/) teams engaged to include Low code and Pro code teams?
 
 1. Are your professional development teams familiar with [Branching and Merging](../branching-and-merging.md) strategies and able to assist makers?
 
@@ -67,7 +67,7 @@ AA4AM is a good match if you can check to see if the following apply:
 
 1. Are you integrating with OpenAPI enabled Web APIs?
 
-1. Are you using or planning to creating [plugins](https://docs.microsoft.com/powerapps/developer/data-platform/plug-ins) to extend business process in Dataverse?
+1. Are you using or planning to creating [plugins](/powerapps/developer/data-platform/plug-ins) to extend business process in Dataverse?
 
 1. Support
    - Who is supporting the application / solution?
@@ -87,7 +87,7 @@ The following questions may help with qualifying alignment:
 
 1. Is there a Dedicated Power Platform product owner?
 
-1. Is there an established [Center of Excellence team](https://docs.microsoft.com/power-platform/guidance/adoption/coe)?
+1. Is there an established [Center of Excellence team](/power-platform/guidance/adoption/coe)?
 
 1. Is Power Platform a key part of the digital transformation strategy?
 
@@ -199,16 +199,16 @@ Leading questions to consider:
 
 1. Who can create environments?
 
-1. What [Data Loss Prevention (DLP)](https://docs.microsoft.com/power-platform/admin/wp-data-loss-prevention) policies are in place?
+1. What [Data Loss Prevention (DLP)](/power-platform/admin/wp-data-loss-prevention) policies are in place?
 
-1. [Power Platform Service Admin](https://docs.microsoft.com/power-platform/admin/overview-role-powerapps-admin) roles exists to Administer Power Platform tenants and Environments?
+1. [Power Platform Service Admin](/power-platform/admin/overview-role-powerapps-admin) roles exists to Administer Power Platform tenants and Environments?
 
 1. Are tenants / environments isolated from each other?
 
 1. Is there monitoring in place?
-   - Has the [CoE Starter Kit – Core](https://docs.microsoft.com/power-platform/guidance/coe/core-components) been installed?
-   - Does [License, capacity and consumption monitoring](https://docs.microsoft.com/power-platform/guidance/adoption/capacity-and-licenses) inform decision making?
-   - Has the [CoE Starter Kit – Governance Module](https://docs.microsoft.com/power-platform/guidance/coe/governance-components) been adopted to gain compliance insights and archive resources?
+   - Has the [CoE Starter Kit – Core](/power-platform/guidance/coe/core-components) been installed?
+   - Does [License, capacity and consumption monitoring](/power-platform/guidance/adoption/capacity-and-licenses) inform decision making?
+   - Has the [CoE Starter Kit – Governance Module](/power-platform/guidance/coe/governance-components) been adopted to gain compliance insights and archive resources?
    - Does telemetry help identify business-critical apps and makers?
 
 1. Are custom environments used for specific use cases and ALM scenarios?
@@ -231,11 +231,11 @@ Leading questions to consider:
 
 Leading questions to consider:
 
-1. Do you have a [Training and Upskilling](https://docs.microsoft.com/power-platform/guidance/adoption/training-strategy) program for your makers to help them learn key concepts to grow your pool of Advanced Makers?
+1. Do you have a [Training and Upskilling](/power-platform/guidance/adoption/training-strategy) program for your makers to help them learn key concepts to grow your pool of Advanced Makers?
 
-1. Do you have an Internal [Champions](https://docs.microsoft.com/power-platform/guidance/adoption/champions) Community established?
+1. Do you have an Internal [Champions](/power-platform/guidance/adoption/champions) Community established?
 
-1. Do you have the [CoE Starter Kit – Nurture](https://docs.microsoft.com/power-platform/guidance/coe/nurture-components) module adopted?
+1. Do you have the [CoE Starter Kit – Nurture](/power-platform/guidance/coe/nurture-components) module adopted?
 
 1. Do you have show and Tell sessions to demonstrate Advanced Maker Concepts?
 
@@ -255,7 +255,7 @@ Leading questions to consider:
 
 ### Fusion Teams
 
-1. Do you have [Standard libraries, custom connectors and components](https://docs.microsoft.com/power-platform/guidance/adoption/reusable) to be consumed by makers?
+1. Do you have [Standard libraries, custom connectors and components](/power-platform/guidance/adoption/reusable) to be consumed by makers?
 
 1. Do you have the need for fusion teams manage source control and app lifecycle (e.g. Build, Verification, Test, Production)
 

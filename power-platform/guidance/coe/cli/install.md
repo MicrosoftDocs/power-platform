@@ -3,7 +3,7 @@ title: "Center of Excellence (CoE) Command Line Interface (CLI) Install"
 description: "Install instructions for the Center of Excellence Command Line interface"
 keywords: 
 author: Grant-Archibald-MS
-ms.author: garchib
+ms.author: grarchib
 manager: pladhani
 ms.custom: ""
 ms.date: 10/20/2021
@@ -50,7 +50,7 @@ To run the CoE CLI application you will require the following
 
 2. Azure CLI (version 2.24.0 or greater) is required for user authentication and Azure Active Directory Integration
 
-   a. https://docs.microsoft.com/cli/azure/install-azure-cli
+   a. [Install Azure CLI](/cli/azure/install-azure-cli)
 
 ### Checking Prerequisites
 
@@ -92,7 +92,7 @@ NOTE:
 
 1. On Windows you may need to add %APPDATA%\npm to your PATH environment variable to access the coe command
 
-1. Install Azure CLI. Follow install instructions for your operating system at [https://docs.microsoft.com/cli/azure/install-azure-cli](https://docs.microsoft.com/cli/azure/install-azure-cli) 
+1. Install Azure CLI. Follow install instructions for your operating system at [Install Azure CLI](/cli/azure/install-azure-cli) 
 
 ## Docker Install
 

@@ -3,7 +3,7 @@ title: "Sample docker install of Center of Excellence (CoE) Command Line Interfa
 description: "Sample of installation of Center of Excellence (CoE) Command Line Interface (CLI) to aa linux docker image"
 keywords: 
 author: Grant-Archibald-MS
-ms.author: garchib
+ms.author: grarchib
 manager: pladhani
 ms.custom: ""
 ms.date: 10/20/2021

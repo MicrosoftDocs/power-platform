@@ -3,7 +3,7 @@ title: "Center of Excellence (CoE) Command Line Interface (CLI) ALM Accelerator 
 description: "Overview of tenant deployment models for the ALM Accelerator using the Center of Excellence (CoE) Command Line Interface (CLI)"
 keywords: 
 author: Grant-Archibald-MS
-ms.author: garchib
+ms.author: grarchib
 manager: pladhani
 ms.custom: ""
 ms.date: 10/20/2021
@@ -223,4 +223,4 @@ To support multi tenant deployments the Azure Active Directory application will 
 
 #### Further reading
 
-1. [Tenancy in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/single-and-multi-tenant-apps)
+1. [Tenancy in Azure Active Directory](/azure/active-directory/develop/single-and-multi-tenant-apps)

@@ -3,7 +3,7 @@ title: "Center of Excellence (CoE) Command Line Interface (CLI) Upgrade"
 description: "Upgrade instructions for the Center of Excellence Command Line interface"
 keywords: 
 author: Grant-Archibald-MS
-ms.author: garchib
+ms.author: grarchib
 manager: pladhani
 ms.custom: ""
 ms.date: 10/20/2021

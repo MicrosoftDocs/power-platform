@@ -3,7 +3,7 @@ title: "Center of Excellence (CoE) Command Line Interface (CLI) ALM Accelerator 
 description: "Key concepts related tp ALM Accelerator using the Center of Excellence (CoE) Command Line Interface (CLI)"
 keywords: 
 author: Grant-Archibald-MS
-ms.author: garchib
+ms.author: grarchib
 manager: pladhani
 ms.custom: ""
 ms.date: 10/20/2021
@@ -29,19 +29,19 @@ As you deploy and use the AA4AM CLI it is important to understand the following 
 The CoE CLI application can create a Azure Active Directory application that automates the following key steps:
 
 1. User authenticated via Azure CLI
-   - [Azure Login](https://docs.microsoft.com/cli/azure/reference-index?view=azure-cli-latest#az_login)
+   - [Azure Login](/cli/azure/reference-index?view=azure-cli-latest#az_login)
 
 1. Create Azure Active Directory Application using Azure CLI
-   - [Create AD Application](https://docs.microsoft.com/cli/azure/ad/app?view=azure-cli-latest#az_ad_app_create)
-   - [Create Service Principal](https://docs.microsoft.com/cli/azure/ad/sp?view=azure-cli-latest#az_ad_sp_create)
+   - [Create AD Application](/cli/azure/ad/app?view=azure-cli-latest#az_ad_app_create)
+   - [Create Service Principal](/cli/azure/ad/sp?view=azure-cli-latest#az_ad_sp_create)
 
 1. Grant Tenant Consent for Applications using Azure CLI
-   - [Permissions Admin Consent](https://docs.microsoft.com/cli/azure/ad/app/permission?view=azure-cli-latest#az_ad_app_permission_admin_consent)
+   - [Permissions Admin Consent](/cli/azure/ad/app/permission?view=azure-cli-latest#az_ad_app_permission_admin_consent)
 
-1. Azure Application Granted rights via [manifest configuration file](../../config/manifest.json) to call
+1. Azure Application Granted rights via [manifest configuration file](https://github.com/microsoft/coe-starter-kit/blob/main/coe-cli/config/manifest.json) to call
    - Azure DevOps
    - Dataverse
-   - PowerApps Checker Module - [Read More](https://docs.microsoft.com/powershell/powerapps/get-started-powerapps-checker?view=pa-ps-latest)
+   - PowerApps Checker Module - [Read More](/powershell/powerapps/get-started-powerapps-checker?view=pa-ps-latest)
 
 1. Client secrets will be created for Azure DevOps Service Connections
 
@@ -54,7 +54,7 @@ The CoE CLI application can create a Azure Active Directory application that aut
 The CoE CLI application can create a Azure Active Directory group that is used for Azure DevOps and Power Platform authentication and role based access security.
 
 1. Group Created via Azure CLI
-   - [Create Group](https://docs.microsoft.com/cli/azure/ad/group?view=azure-cli-latest#az_ad_group_create)
+   - [Create Group](/cli/azure/ad/group?view=azure-cli-latest#az_ad_group_create)
 
 ## Azure DevOps
 
@@ -64,11 +64,11 @@ The CoE CLI application assumes that an Azure DevOps organization and project ha
 
 The install performs the following key steps:
 
-1. Install Azure DevOps Extensions defined in [AzureDevOpsExtensionsDetails.json](../../config/AzureDevOpsExtensionsDetails.json)
+1. Install Azure DevOps Extensions defined in [AzureDevOpsExtensionsDetails.json](https://github.com/microsoft/coe-starter-kit/blob/main/coe-cli/config/AzureDevOpsExtensionsDetails.json)
 
    a. New extensions can be added from https://marketplace.visualstudio.com/item. Visit each extension and add the publisher and the **itemName** from the query string in the browser
 
-1. Clone Azure Templates https://github.com/microsoft/coe-alm-accelerator-templates.git into a Azure DevOps git repository named **pipelines** by default
+1. Clone Azure Templates [https://github.com/microsoft/coe-alm-accelerator-templates.git](https://github.com/microsoft/coe-alm-accelerator-templates.git) into a Azure DevOps git repository named **pipelines** by default
 
 1. Create Azure DevOps build pipelines
   
@@ -82,23 +82,23 @@ The install performs the following key steps:
 
 1. Create Variable Groups for shared variables used by build pipelines 
 
-   - [Read More](https://docs.microsoft.com/azure/devops/pipelines/library/variable-groups?view=azure-devops&tabs=yaml)
+   - [Read More](/azure/devops/pipelines/library/variable-groups?view=azure-devops&tabs=yaml)
 
 1. Create Service connections to Power Platform Environments using the Azure Active Directory Service Principal
 
    - NOTE: Each service connection will receive a separate Azure Active Directory secret.
 
-   - [Read More - Service Connections](https://docs.microsoft.com/azure/devops/pipelines/library/service-endpoints?view=azure-devops&tabs=yaml)
+   - [Read More - Service Connections](/azure/devops/pipelines/library/service-endpoints?view=azure-devops&tabs=yaml)
 
 ### Branch Automation
 
-The [coe aa4am branch](./maker-setup.md#create-solution-branch) command performs the following steps
+The [coe aa4am branch](./maker-setup.md#maker-create-solution) command performs the following steps
 
 1. Create a new branch to store the Solution
 
 1. Create build pipelines for the Solution Branch (Validation, Test, Production)
 
-1. Create [Branch Policies](https://docs.microsoft.com/azure/devops/repos/git/branch-policies-overview?view=azure-devops) to ensure validation build completes successfully for pull requests
+1. Create [Branch Policies](/azure/devops/repos/git/branch-policies-overview?view=azure-devops) to ensure validation build completes successfully for pull requests
 
 ### Other Concepts
 
@@ -110,7 +110,7 @@ In addition to install automation the following concepts are also assumed for Ad
 
 - Changes merged back into main branch can be promoted to production environment
 
-1. Manage Pull Requests to merge changes into Solution Branches https://docs.microsoft.com/azure/devops/repos/git/pull-requests?view=azure-devops
+1. Manage Pull Requests to merge changes into Solution Branches using [Pull Request](/azure/devops/repos/git/pull-requests)
 
 ## Power Platform
 
