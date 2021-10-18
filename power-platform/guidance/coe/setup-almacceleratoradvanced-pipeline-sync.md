@@ -26,7 +26,7 @@ search.app:
 
 The Pipeline Sync script was created to make synchronizing the ALM Accelerator for Advanced Makers' (AA4AM) pipeline templates simpler. As the pipeline templates grow and change, users are required to update the pipelines with each release of AA4AM. To simplify this process, we created another pipeline template that will automatically sync your Azure DevOps repo with the pipeline template repo in GitHub. Follow the steps below to get started using the Pipeline Sync pipeline.
 
-1. Initially, you'll need to manually sync a copy of the pipeline templates from <https://github.com/microsoft/coe-alm-accelerator-templates/blob/main/Pipelines/>. Follow the steps in the [Setup Docs](setup-almacceleratoradvanced.md#Clone-the-YAML-Pipelines-from-GitHub-to-your-Azure-DevOps-instance) to clone the pipeline template repo to your Azure DevOps repo.
+1. Initially, you'll need to manually sync a copy of the pipeline templates from <https://github.com/microsoft/coe-alm-accelerator-templates/blob/main/Pipelines/>. Follow the steps in the [Setup Docs](setup-almacceleratoradvanced.md#clone-the-yaml-pipelines-from-github-to-your-azure-devops-instance) to clone the pipeline template repo to your Azure DevOps repo.
 
 1. In Azure DevOps, go to **Pipelines** and **Create a New Pipeline**
 

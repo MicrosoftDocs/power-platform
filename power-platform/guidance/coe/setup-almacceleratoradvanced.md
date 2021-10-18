@@ -100,7 +100,7 @@ Sign in to [portal.azure.com](https://portal.azure.com).
 1. Select **Add permissions**.
 
 1. Repeat the steps above for the following permissions:
-    - **PowerApps-Advisor (Analysis All)** (Required for running static analysis via App Checker <https://docs.microsoft.com/power-platform/alm/checker-api/overview>). This permission can be found under **APIs my organization uses**.
+    - **PowerApps-Advisor (Analysis All)** (Required for running static analysis via [App Checker](/power-platform/alm/checker-api/overview). This permission can be found under **APIs my organization uses**.
       ![Select PowerApps-Advisor (Analysis All) and Delegated permissions](media/almacceleratoradvanced-components/image-20210216135345784.png)
 
     - **Azure DevOps**. (Required for connecting to Azure DevOps via the custom connector in the ALM Accelerator App). This permission can be found under **APIs my organization uses**.

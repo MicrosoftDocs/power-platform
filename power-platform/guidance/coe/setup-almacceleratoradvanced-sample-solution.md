@@ -169,7 +169,7 @@ As mentioned in the note above, the previous section allows you to create pipeli
 
 ### Setting Branch Policies for Pull Request Validation
 
-In order to execute the build pipeline for the ALM Accelerator Sample Solution when a **Pull Request is created**, you'll need to create a **Branch Policy** to execute the **Validation Pipeline** you created in the previous step. Use the following steps to set your Branch Policy. For more information on Branch Policies, see <https://docs.microsoft.com/azure/devops/repos/git/branch-policies?view=azure-devops>
+In order to execute the build pipeline for the ALM Accelerator Sample Solution when a **Pull Request is created**, you'll need to create a **Branch Policy** to execute the **Validation Pipeline** you created in the previous step. Use the following steps to set your Branch Policy. For more information on Branch Policies, see [here](/azure/devops/repos/git/branch-policies?view=azure-devops)
 
 1. In Azure DevOps, go to **Repos** and select the **Branches** folder
 
@@ -210,7 +210,7 @@ The ALM Accelerator uses json formatted Pipeline variables for updating **connec
 
 These variables are required by every deployment pipeline. The Environment variable is **EnvironmentName** and the Service Connection variable is **ServiceConnection**.
 
-The **EnvironmentName** variable is used to specify the Azure DevOps environment being deployed to in order to enable tracking deployment history and set permissions and approvals for deployment to specific environments. Depending on the environment to which you're deploying set this value to **Validate, Test or Production** For more information on Environments in Azure DevOps, see <https://docs.microsoft.com/azure/devops/pipelines/process/environments>.
+The **EnvironmentName** variable is used to specify the Azure DevOps environment being deployed to in order to enable tracking deployment history and set permissions and approvals for deployment to specific environments. Depending on the environment to which you're deploying set this value to **Validate, Test or Production** For more information on Environments in Azure DevOps, see [here](/azure/devops/pipelines/process/environments).
 
 1. Open the pipeline you created previously (**deploy-validation-ALMAcceleratorSampleSolution**, **deploy-test-ALMAcceleratorSampleSolution**, or **deploy-production-ALMAcceleratorSampleSolution**) and **Select Edit**
 
