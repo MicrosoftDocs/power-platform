@@ -120,13 +120,15 @@ Sign in to [portal.azure.com](https://portal.azure.com).
 
 1. Return to the **Overview** section of your App Registration and copy the **Application (client) ID** and **Directory (tenant) ID**.
 
-     > [!IMPORTANT] Disambiguation: We'll use this value later and call it out as the **Application (client) ID** which is different from the **Azure DevOps Application (client) ID** copied in Step 7 [above](#Create-an-App-Registration-in-your-AAD-Environment)
+     > [!IMPORTANT]
+Disambiguation: We'll use this value later and call it out as the **Application (client) ID** which is different from the **Azure DevOps Application (client) ID** copied in Step 7 [above](#Create-an-App-Registration-in-your-AAD-Environment)
 
 1. Select **Add a Redirect URI** > **Add a Platform** > **Web**
 
 1. Set the **Redirect URI** to <https://global.consent.azure-apim.net/redirect>
 
-    >[!NOTE] You may need to update this later when configuring your custom connector after installing the app if this URL is different than the Redirect URL populated in the Custom Connector
+    >[!NOTE]
+You may need to update this later when configuring your custom connector after installing the app if this URL is different than the Redirect URL populated in the Custom Connector
 
 1. Select **Configure**
 
@@ -134,7 +136,8 @@ Sign in to [portal.azure.com](https://portal.azure.com).
 
 In order for the pipelines to perform certain actions against the environments in your Power Platform tenant you'll need to grant Power App Management permissions to your App registration. To do so, you'll need to run the following PowerShell commandlet as an interactive user that has Power Apps administrative privileges. You'll need to run this command once, using an interactive user, in PowerShell after your app registration has been created. The command gives permissions to the Service Principal to be able to execute environment-related functions including querying for environments and connections via Microsoft.PowerApps.Administration.PowerShell (<https://docs.microsoft.com/powershell/module/microsoft.powerapps.administration.powershell/new-powerappmanagementapp?view=pa-ps-latest>). For more information on the **New-PowerAppManagementApp** cmdlet, see <https://docs.microsoft.com/powershell/module/microsoft.powerapps.administration.powershell/new-powerappmanagementapp?view=pa-ps-latest>
 
-> [IMPORTANT!] Currently this commandlet gives elevated permissions (for example Power Platform Admin) to the app registration. Your organization's security policies may not allow for these types of permissions. Ensure that these permissions are allowed before continuing. In the case that these elevated permissions are not allowed you'll not be able to use the AA4AM pipelines.
+> [IMPORTANT!]
+Currently this commandlet gives elevated permissions (for example Power Platform Admin) to the app registration. Your organization's security policies may not allow for these types of permissions. Ensure that these permissions are allowed before continuing. In the case that these elevated permissions are not allowed you'll not be able to use the AA4AM pipelines.
 
 ```powershell
 Install-Module -Name Microsoft.PowerApps.Administration.PowerShell

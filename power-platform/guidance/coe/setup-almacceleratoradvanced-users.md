@@ -31,14 +31,14 @@ In order for users to access resources in Dataverse when running the AA4AM app t
 1. Navigate to <https://admin.powerplatform.microsoft.com/>
 1. **Select the Environment** in which the user exists
 1. **Select See all under Teams** under the Access section
-   ![image-20210709143811208](media/setup-almacceleratoradvanced-users/image-20210709143811208.png)
+   ![Select See all under Teams](media/setup-almacceleratoradvanced-users/image-20210709143811208.png)
 1. Select Create Team
-   ![image-20210709144020206](media/setup-almacceleratoradvanced-users/image-20210709144020206.png)
+   ![Select Create Team](media/setup-almacceleratoradvanced-users/image-20210709144020206.png)
 1. Enter a **Team name, Business unit, Administrator and Select AAD Security Group as the Team type and Select a Membership Type and Select Next**.
-   ![image-20210709145337373](media/setup-almacceleratoradvanced-users/image-20210709145337373.png)
+   ![Enter New Teams Details](media/setup-almacceleratoradvanced-users/image-20210709145337373.png)
 1. On the Manage security roles page, select the **ALM Power App Access** and **Basic User** role and **select Save**.
 
-   ![image-20210709150149120](media/setup-almacceleratoradvanced-users/image-20210709150149120.png)
+   ![Manage Security Roles](media/setup-almacceleratoradvanced-users/image-20210709150149120.png)
 
 ## Azure DevOps User Setup
 

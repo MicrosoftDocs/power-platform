@@ -224,7 +224,7 @@ Learn more: [GitHub Team offerings](https://docs.github.com/free-pro-team@latest
 
 If you have a paid GitHub org plan, configure org secrets by following these steps:
 
-1. Go to your org in GitHub (https://github.com/yourorg).
+1. Go to your org in GitHub (<https://github.com/yourorg>).
 1. Select **Settings** > **Secret** > **New organization secret**
     ![Select Secrets from your GitHub org settings.](media/git-20.png "Select Secrets from your GitHub org settings")
 1. Enter **DEV_ENVIRONMENT_SECRET** as the name for your development deployment stage, and enter the value for your secret.
@@ -240,7 +240,7 @@ If you don't have a paid GitHub org plan, do the following for all projects crea
 >[!NOTE]
 >These steps need to be followed for all projects created in ALM Accelerator for Makers.
 
-1. Go to your org in GitHub (https://github.com/yourorg).
+1. Go to your org in GitHub (<https://github.com/yourorg>).
 1. Select **Settings** > **Secret** > **New organization secret**
 1. Enter **DEV_ENVIRONMENT_SECRET** as the name for your development deployment stage, and enter the value for your secret.
     ![For the free GitHub org plan, select Private Repositories for your secret.](media/git-22.png "For the free GitHub org plan, select Private Repositories for your secret")

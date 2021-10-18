@@ -90,5 +90,4 @@ Makers can check the deployment history for their project by navigating to the d
 
 ![View deployment history.](media/git-35.png "View deployment history")
 
-
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
