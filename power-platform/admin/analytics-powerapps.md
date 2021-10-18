@@ -43,7 +43,7 @@ When a user first creates an environment from a region, the environment is alway
 
 The following tenant-level reports are available for tenant admins. 
 
-### Power Apps - Usage reports 
+### Power Apps - Usage report 
 
 Power Apps reports provide insights into tenant and environment usage and inventory of all apps and connectors. The report answers questions such as: 
 - What is the total unique canvas/model-driven apps users across the tenant or environments? 
@@ -52,7 +52,7 @@ Power Apps reports provide insights into tenant and environment usage and invent
 - Which of my environments had the most unique users? 
 - What were the top apps by unique users/app sessions? 
 
-image
+:::image type="content" source="media/powerapps-usage-report.png" alt-text="Power Apps Usage report":::
 
 > [!NOTE]
 > The service only starts collecting the data visualized in the Usage report when the feature is enabled. It can take up to 12 hours to reflect service activities from the previous day. 
@@ -68,7 +68,7 @@ The Power Apps Maker Activity report provide insights into tenant and environmen
 - What are the total number of connections defined for apps to consume in one or more environments? 
 - Allow me to filter the above list based on connector type. 
 
-image
+:::image type="content" source="media/powerapps-maker-activity-report.png" alt-text="Power Apps Maker Activity report":::
 
 > [!NOTE]
 > The service only starts collecting the data visualized in the Maker Activity report when the feature is enabled. It can take up to 12 hours to reflect service activities from the previous day. 
@@ -82,7 +82,7 @@ The Power Apps Inventory report offers a complete catalog of Power Apps distribu
 - Who are the owners of the apps hosted in one or more environments? 
 - What is the distribution of canvas versus model-driven apps across the organization? 
 
-image
+:::image type="content" source="media/powerapps-inventory-report.png" alt-text="Power Apps Inventory report":::
 
 > [!NOTE]
 > Depending on the size of the organization, it can take up to 2 hours to initially populate the data sets backing the Inventory report. 
@@ -94,7 +94,7 @@ Power Platform admin center reports can be downloaded directly from the report v
 - Summarized data: select this option to download the data underlying the current report visual 
 - Underlying data: select this option to download the full result set backing the report 
 
-image
+:::image type="content" source="media/powerapps-download-inventory.png" alt-text="Power Apps download reports from Inventory tab":::
 
 For more information on downloading data from the tenant level reports, see [Exporting data from Power BI visuals](/power-bi/consumer/end-user-export). 
 
