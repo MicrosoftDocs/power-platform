@@ -1,6 +1,6 @@
 ---
 title: "ALM Accelerator for Advanced Makers | MicrosoftDocs"
-description: "The ALM Accelerator for Makers will help you follow ALM patterns and practices to source control and move your solutions from your development environment to test and production environments using Azure DevOps"
+description: "The ALM Accelerator for Advanced Makers will help you follow ALM patterns and practices to source control and move your solutions from your development environment to test and production environments using Azure DevOps"
 author: mikefactorial
 manager: devkeydet
 ms.service: power-platform

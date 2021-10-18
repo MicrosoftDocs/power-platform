@@ -1,6 +1,6 @@
 ---
 title: "ALM Accelerator for Advanced Makers Pipeline Sync Setup | MicrosoftDocs"
-description: "The ALM Accelerator for Advanced Makers will help you follow ALM patterns and practices to source control and move your solutions from your development environment to test and production environments using Azure DevOps"
+description: "Creating a pipeline to sync the latest ALM Accelerator for Advanced Makers pipeline templates to your Azure DevOps repository."
 author: mikefactorial
 manager: devkeydet
 ms.service: power-platform

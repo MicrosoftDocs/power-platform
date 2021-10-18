@@ -1,6 +1,6 @@
 ---
 title: "ALM Accelerator Sample Solution Setup | MicrosoftDocs"
-description: "The ALM Accelerator for Makers will help you follow ALM patterns and practices to source control and move your solutions from your development environment to test and production environments using Azure DevOps"
+description: "The ALM Accelerator Sample Solution is a solution you can use to test your setup of the ALM Accelerator for Advanced Makers and provide a step-by-step introduction to configuring your own solution to be used with the ALM Accelerator For Advanced Makers."
 author: mikefactorial
 manager: devkeydet
 ms.service: power-platform
