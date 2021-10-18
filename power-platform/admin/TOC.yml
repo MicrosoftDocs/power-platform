@@ -414,11 +414,11 @@
         items:
         - name: "Preview: Tenant-level analytics (default)" 
           href: tenant-level-analytics.md
-        # Comment out the next two topics before 10/1 publish
-        - name: "Preview: Power Apps analytics report"
-          href: powerapps-analytics-reports.md
-        - name: "Preview: Power Automate analytics report"
-          href: power-automate-analytics-reports.md
+        # Comment out the next two topics before publish
+        # - name: "Preview: Power Apps analytics report"
+        #   href: powerapps-analytics-reports.md
+        # - name: "Preview: Power Automate analytics report"
+        #   href: power-automate-analytics-reports.md
       - name: Data export
         items:
         - name: "Preview: Export Power Apps inventory and usage data"
