@@ -35,9 +35,9 @@ The example below illustrates two parts of the organization the HR and Finance t
 
 ![Branching and Merging Strategy](../media/branching-and-merging-example.png)
 
-### HR Team
+### Human Resources Team
 
-The HR team manages one Azure DevOps git repository that stores each solution as a folder within the repository. This approach allows Advanced Makers in the HR team to see and collaborate on HR related solutions.
+The Human Resources team manages one Azure DevOps git repository that stores each solution as a folder within the repository. This approach allows Advanced Makers in the HR team to see and collaborate on Human Resources related solutions.
 
 #### Steps
 

@@ -1,5 +1,5 @@
 ---
-title: "Center of Excellence (CoE) Command Line Interface (CLI) ALM Accelerator"
+title: "Center of Excellence (CoE) Command Line Interface (CLI) Application Lifecycle Management (ALM) Accelerator"
 description: "Overview of the Center of Excellence (CoE) Command Line Interface (CLI) ALM Accelerator commands"
 keywords: 
 author: Grant-Archibald-MS
@@ -23,11 +23,11 @@ The [ALM Accelerator for Advanced Makers](https://github.com/microsoft/coe-start
 command allows you to manage common Application Lifecycle Management (ALM) tasks for Advanced Makers to install, setup and administration of Power Platform Solutions.
 
 - [Quick Start](#quick-start) - Guides you through the process of a [demo tenant install](./scenarios/tenant-deployments.md#demonstration-deployment)
-- [Understand the Concepts](#understand-the-concepts) - Discuses Scenarios, Personas and Key Concepts behind AA4AM and the install process using the CoE CLI
+- [Understand the Concepts](#understand-the-concepts) - Covers Scenarios, Personas and Key Concepts behind AA4AM and the install process using the CoE CLI
 
 ## Quick Start
 
-This quick start should take around 30 minutes and by the end as an Administrator configure Azure Active Directory, Azure DevOps and the Power Platform environments.
+For an Administrator the quick start guide should take around 30 minutes and by the end have configured Azure Active Directory, Azure DevOps and the Power Platform environments.
 
 1. Validate organization [maturity model](./maturity/overview.md#quick-start) for AA4AM
 
@@ -41,7 +41,7 @@ coe aa4am generate install -o quickstart.json
 
    More information on the [coe aa4am generate install](../help/aa4am/generate/install.md) command
 
-1. If you are creating a [demo tenant install](./scenarios/tenant-deployments.md#demonstration-deployment) use the following command
+1. Install the ALM Accelerator using the generated configuration file
 
 ```bash
 coe aa4am install -f quickstart.json
@@ -49,7 +49,7 @@ coe aa4am install -f quickstart.json
 
    More information on the [coe aa4am install](../help/aa4am/install.md) command
 
-   If you are deploying to your enterprise refer to [Enterprise Deployment](./scenarios/tenant-deployments.md#enterprise-deployment) for further information.
+   Deploying to your enterprise? Refer to [Enterprise Deployment](./scenarios/tenant-deployments.md#enterprise-deployment) for further information.
 
 1. [Update permissions for the project build service](https://github.com/microsoft/coe-starter-kit/blob/main/ALMAcceleratorForAdvancedMakers/SETUPGUIDE.md#update-permissions-for-the-project-build-service) to enable build pipelines to interact with Git Repositories
 
@@ -95,7 +95,7 @@ The diagram below provides an overview of the key components required and permis
 
 ### Sample Install
 
-The following recording shows a sample generating a install configuration file and installing AA4AM using the configuration file using a [Demo Deployment](./scenarios/tenant-deployments.md#demonstration-deployment).
+The following recording shows a sample generating an install configuration file and installing AA4AM using the configuration file using a [Demo Deployment](./scenarios/tenant-deployments.md#demonstration-deployment).
 
 ![Example](./install.svg)
 
@@ -103,7 +103,7 @@ The following recording shows a sample generating a install configuration file a
 
 1. Review the [Before You Start](./before-you-start.md) to ensure you have the required Power Platform environments and Azure DevOps organizations created
 
-2. As an administrator complete the [Admin Install](./admin-install.md)
+2. As an administrator completes the [Admin Install](./admin-install.md)
 
 3. Have Advanced Makers create [Development Environments](./development-environments.md)
 
@@ -111,7 +111,7 @@ The following recording shows a sample generating a install configuration file a
 
 Notes:
 
-1. If this is your first build pipeline you will need to set Pipeline Variables for your environment. At a minimum you will need to set **ServiceConnection** variable to your environment you have setup for validation, test and production.
+1. If this is your first build pipeline you will need to set Pipeline Variables for your environment. At a minimum, you will need to set **ServiceConnection** variable to your environment you have setup for validation, test and production.
 
 ### Read Next
 
