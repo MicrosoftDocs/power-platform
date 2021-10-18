@@ -1,3 +1,22 @@
+---
+title: "Center of Excellence (CoE) Command Line Interface (CLI) ALM Accelerator Deployment Scenarios"
+description: "Overview of deployment scenarios for the ALM Accelerator using the Center of Excellence (CoE) Command Line Interface (CLI)"
+keywords: 
+author: Grant-Archibald-MS
+ms.author: garchib
+manager: pladhani
+ms.custom: ""
+ms.date: 10/20/2021
+ms.service: power-platform
+ms.topic: "article"
+ms.reviewer: jimholtz
+search.audienceType: 
+  - admin
+search.app: 
+  - PowerApps
+  - Powerplatform
+---
+
 # Scenarios
 
 As you plan your ALM Accelerator for Advanced Makers (AA4AM) deployment one or more of the following scenarios may apply to you:

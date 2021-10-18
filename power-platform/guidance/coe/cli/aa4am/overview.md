@@ -1,3 +1,22 @@
+---
+title: "Center of Excellence (CoE) Command Line Interface (CLI) ALM Accelerator"
+description: "Overview of the Center of Excellence (CoE) Command Line Interface (CLI) ALM Accelerator commands"
+keywords: 
+author: Grant-Archibald-MS
+ms.author: garchib
+manager: pladhani
+ms.custom: ""
+ms.date: 10/20/2021
+ms.service: power-platform
+ms.topic: "article"
+ms.reviewer: jimholtz
+search.audienceType: 
+  - admin
+search.app: 
+  - PowerApps
+  - Powerplatform
+---
+
 # ALM Accelerator for Advanced Makers
 
 The [ALM Accelerator for Advanced Makers](https://github.com/microsoft/coe-starter-kit/tree/main/ALMAcceleratorForAdvancedMakers) (AA4AM) 

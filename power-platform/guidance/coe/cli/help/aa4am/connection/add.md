@@ -1,3 +1,22 @@
+---
+title: "Center of Excellence (CoE) Command Line Interface (CLI) ALM Accelerator Connection Add"
+description: Add service connection to environment using ALM Accelerator using the Center of Excellence (CoE) Command Line Interface (CLI)"
+keywords: 
+author: Grant-Archibald-MS
+ms.author: garchib
+manager: pladhani
+ms.custom: ""
+ms.date: 10/20/2021
+ms.service: power-platform
+ms.topic: "article"
+ms.reviewer: jimholtz
+search.audienceType: 
+  - admin
+search.app: 
+  - PowerApps
+  - Powerplatform
+---
+
 # ALM Accelerate for Advanced Connection Add
 
 ## Description
@@ -25,7 +44,7 @@ coe aa4am connection add \
 
 The Azure DevOps organization that will be installed to or referenced.
 
-The value can be in the format https://dev.azure.com/contoso or contoso. If the fully qualified Url is not specified then https://dev.azure.com/ will be inserted before the provided value.
+The value can be in the format [https://dev.azure.com/contoso](https://dev.azure.com/contoso) or contoso. If the fully qualified Url is not specified then [https://dev.azure.com/](https://dev.azure.com/) will be inserted before the provided value.
 
 ### -p, --project
 
@@ -42,15 +61,15 @@ The Azure DevOps project name. The project must already be created in your Azure
 The Power Platform development environment for the Advanced Makers. You can enter either the
 
 1. Organization name e.g. contoso-test. The **region** parameter will be used to create the full qualified domain name
-2. The fully qualified domain name with regional deployment e.g. http://contoso-test.crm.dynamics.com
+2. The fully qualified domain name with regional deployment e.g. [http://contoso-test.crm.dynamics.com](http://contoso-test.crm.dynamics.com)
 
-You can visit https://aka.ms/ppac to list environments that you have access to.
+You can visit [https://aka.ms/ppac](https://aka.ms/ppac) to list environments that you have access to.
 
 ### --aad <name>
 
 The Azure Active Directory service principal application created during install. The user will be used to create the service connection to an advanced maker development environment.
 
-Note the user running this command must be the creator or owner of the AAD application. The [Manage user assignment for an app in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/assign-user-or-group-access-portal) provides more information.
+Note the user running this command must be the creator or owner of the AAD application. The [Manage user assignment for an app in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/manage-apps/assign-user-or-group-access-portal) provides more information.
 
 ### -u, --user
 

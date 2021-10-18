@@ -1,11 +1,31 @@
+---
+title: "Center of Excellence (CoE) Command Line Interface (CLI) ALM Accelerator Solution Branch"
+description: Solution branch help command for ALM Accelerator using the Center of Excellence (CoE) Command Line Interface (CLI)"
+keywords: 
+author: Grant-Archibald-MS
+ms.author: garchib
+manager: pladhani
+ms.custom: ""
+ms.date: 10/20/2021
+ms.service: power-platform
+ms.topic: "article"
+ms.reviewer: jimholtz
+search.audienceType: 
+  - admin
+search.app: 
+  - PowerApps
+  - Powerplatform
+---
+
 # AA4AM Advanced Maker Solution Branch
 
 The ALM Accelerator for Advanced Makers (AA4AM) branch command allows Advanced Makers to create a branch in the source code repository to store and build a Power Platform solution. To run the branch command the repository that is being branched mys exist and be initialized with an initial commit
 
-The process will
+The process will:
 
 1. Create a source code git branch
-2. Create build pipelines to validate, test and move to production
+
+1. Create build pipelines to validate, test and move to production
 
 ## Example
 
@@ -24,7 +44,7 @@ coe aa4am branch \
 
 The Azure DevOps organization that will be installed to or referenced.
 
-The value can be in the format https://dev.azure.com/contoso or contoso. If the fully qualified Url is not specified then https://dev.azure.com/ will be inserted before the provided value.
+The value can be in the format [https://dev.azure.com/contoso](https://dev.azure.com/contoso) or contoso. If the fully qualified Url is not specified then [https://dev.azure.com/](https://dev.azure.com/) will be inserted before the provided value.
 
 ### -p, --project
 
@@ -48,7 +68,7 @@ The Azure DevOps repository to create the branch in. If the name of the reposito
 
 #### --pipelineRepository
 
-The Azure DevOps repository where Azure DevOps pipeline templates cloned from https://github.com/microsoft/coe-alm-accelerator-templates.git
+The Azure DevOps repository where Azure DevOps pipeline templates cloned from [https://github.com/microsoft/coe-alm-accelerator-templates.git](https://github.com/microsoft/coe-alm-accelerator-templates.git)
 
 ### --source
 

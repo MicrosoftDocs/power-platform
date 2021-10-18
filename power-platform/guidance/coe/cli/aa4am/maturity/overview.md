@@ -1,6 +1,25 @@
+---
+title: "Center of Excellence (CoE) Command Line Interface (CLI) ALM Accelerator maturity model"
+description: "Apply Power Platform Maturity to decide when to ise ALM Accelerator using the Center of Excellence (CoE) and Command Line Interface (CLI)"
+keywords: 
+author: Grant-Archibald-MS
+ms.author: garchib
+manager: pladhani
+ms.custom: ""
+ms.date: 10/20/2021
+ms.service: power-platform
+ms.topic: "article"
+ms.reviewer: jimholtz
+search.audienceType: 
+  - admin
+search.app: 
+  - PowerApps
+  - Powerplatform
+---
+
 # Maturity Model
 
-The [Power CAT adoption maturity model](https://powerapps.microsoft.com/en-us/blog/power-cat-adoption-maturity-model-repeatable-patterns-for-successful-power-platform-adoption/) provides a set of levels and capabilities that can be used to evaluate usage of the Application Lifecycle Management (ALM) and how the ALM Accelerator for Advanced Makers (AA4AM) can assist.
+The [Power CAT adoption maturity model](https://powerapps.microsoft.com/blog/power-cat-adoption-maturity-model-repeatable-patterns-for-successful-power-platform-adoption/) provides a set of levels and capabilities that can be used to evaluate usage of the Application Lifecycle Management (ALM) and how the ALM Accelerator for Advanced Makers (AA4AM) can assist.
 
 ## Quick Start
 
@@ -34,11 +53,11 @@ AA4AM is a good match if you can check to see if the following apply:
       - Is the process automated to request environments?
 
 1. Are Source control concepts understood?
-    - Is [Branching and Merging](https://docs.microsoft.com/en-us/azure/devops/repos/git/git-branching-guidance?view=azure-devops) understood?
-    - Are [Pull Request](https://docs.microsoft.com/en-us/azure/devops/repos/git/git-branching-guidance?view=azure-devops#review-and-merge-code-with-pull-requests) used to review and merge changes?
-    - Are [Build Pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started/key-pipelines-concepts?view=azure-devops) used to integrate and deploy between Validation and Test, Production environments?
+    - Is [Branching and Merging](https://docs.microsoft.com/azure/devops/repos/git/git-branching-guidance?view=azure-devops) understood?
+    - Are [Pull Request](https://docs.microsoft.com/azure/devops/repos/git/git-branching-guidance?view=azure-devops#review-and-merge-code-with-pull-requests) used to review and merge changes?
+    - Are [Build Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started/key-pipelines-concepts?view=azure-devops) used to integrate and deploy between Validation and Test, Production environments?
 
-1. Are [Fusion development](https://docs.microsoft.com/en-us/learn/paths/transform-business-applications-with-fusion-development/) teams engaged to include Low code and Pro code teams?
+1. Are [Fusion development](https://docs.microsoft.com/learn/paths/transform-business-applications-with-fusion-development/) teams engaged to include Low code and Pro code teams?
 
 1. Are your professional development teams familiar with [Branching and Merging](../branching-and-merging.md) strategies and able to assist makers?
 
@@ -48,7 +67,7 @@ AA4AM is a good match if you can check to see if the following apply:
 
 1. Are you integrating with OpenAPI enabled Web APIs?
 
-1. Are you using or planning to creating [plugins](https://docs.microsoft.com/en-us/powerapps/developer/data-platform/plug-ins) to extend business process in Dataverse?
+1. Are you using or planning to creating [plugins](https://docs.microsoft.com/powerapps/developer/data-platform/plug-ins) to extend business process in Dataverse?
 
 1. Support
    - Who is supporting the application / solution?
@@ -214,7 +233,7 @@ Leading questions to consider:
 
 1. Do you have a [Training and Upskilling](https://docs.microsoft.com/power-platform/guidance/adoption/training-strategy) program for your makers to help them learn key concepts to grow your pool of Advanced Makers?
 
-1. Do you have an Internal [Champions](https://docs.microsoft.com/en-us/power-platform/guidance/adoption/champions) Community established?
+1. Do you have an Internal [Champions](https://docs.microsoft.com/power-platform/guidance/adoption/champions) Community established?
 
 1. Do you have the [CoE Starter Kit – Nurture](https://docs.microsoft.com/power-platform/guidance/coe/nurture-components) module adopted?
 

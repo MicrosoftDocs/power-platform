@@ -1,10 +1,29 @@
+---
+title: "Center of Excellence (CoE) Command Line Interface (CLI) ALM Accelerator Help Overview"
+description: "Overview of help commands for ALM Accelerator using the Center of Excellence (CoE) Command Line Interface (CLI)"
+keywords: 
+author: Grant-Archibald-MS
+ms.author: garchib
+manager: pladhani
+ms.custom: ""
+ms.date: 10/20/2021
+ms.service: power-platform
+ms.topic: "article"
+ms.reviewer: jimholtz
+search.audienceType: 
+  - admin
+search.app: 
+  - PowerApps
+  - Powerplatform
+---
+
 # ALM Accelerator for Advanced Makers CLI Command Overview
 
 The ALM Accelerator for Advanced Makers (AA4AM) command line actions allows you to install and configure Azure Active Directory, Azure DevOps and Power Platform.
 
 ## Examples
 
-### Generate 
+### Generate
 
 Creates configuration files for the install command
 

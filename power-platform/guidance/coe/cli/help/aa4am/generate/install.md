@@ -1,3 +1,22 @@
+---
+title: "Center of Excellence (CoE) Command Line Interface (CLI) ALM Accelerator Install Generation Configuration"
+description: Generate install configuration files for the ALM Accelerator using the Center of Excellence (CoE) Command Line Interface (CLI)"
+keywords: 
+author: Grant-Archibald-MS
+ms.author: garchib
+manager: pladhani
+ms.custom: ""
+ms.date: 10/20/2021
+ms.service: power-platform
+ms.topic: "article"
+ms.reviewer: jimholtz
+search.audienceType: 
+  - admin
+search.app: 
+  - PowerApps
+  - Powerplatform
+---
+
 # Install Generate
 
 ## Description
@@ -28,6 +47,6 @@ Read more on [install command](../install.md)
 
 ## -s, --includeSchema
 
-Defaults to **true** to reference and copy JSON schema in the same folder as the --output file. 
+Defaults to **true** to reference and copy JSON schema in the same folder as the --output file.
 
 If **false** then it will not reference or create the schema file

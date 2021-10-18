@@ -1,6 +1,25 @@
+---
+title: "Center of Excellence (CoE) Command Line Interface (CLI) ALM Accelerator Branching and Merging"
+description: "Discussion of branching and merging for ALM Accelerator using the Center of Excellence (CoE) Command Line Interface (CLI)"
+keywords: 
+author: Grant-Archibald-MS
+ms.author: garchib
+manager: pladhani
+ms.custom: ""
+ms.date: 10/20/2021
+ms.service: power-platform
+ms.topic: "article"
+ms.reviewer: jimholtz
+search.audienceType: 
+  - admin
+search.app: 
+  - PowerApps
+  - Powerplatform
+---
+
 # Branching and Merging
 
-Understanding of [Branching and Merging](https://docs.microsoft.com/en-us/azure/devops/repos/git/git-branching-guidance?view=azure-devops), [Pull Request](https://docs.microsoft.com/en-us/azure/devops/repos/git/git-branching-guidance?view=azure-devops#review-and-merge-code-with-pull-requests) and [Build Pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started/key-pipelines-concepts?view=azure-devops) are important concepts that are combined together with fusion development teams of Advanced Makers, Professional Developers and Operations teams will need to understand. The ALM Accelerator for Advanced Makers (AA4AM) builds on these concepts to allow Power Platform solutions to be managed.
+Understanding of [Branching and Merging](https://docs.microsoft.com/azure/devops/repos/git/git-branching-guidance?view=azure-devops), [Pull Request](https://docs.microsoft.com/azure/devops/repos/git/git-branching-guidance?view=azure-devops#review-and-merge-code-with-pull-requests) and [Build Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started/key-pipelines-concepts?view=azure-devops) are important concepts that are combined together with fusion development teams of Advanced Makers, Professional Developers and Operations teams will need to understand. The ALM Accelerator for Advanced Makers (AA4AM) builds on these concepts to allow Power Platform solutions to be managed.
 
 ## Example
 
