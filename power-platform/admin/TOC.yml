@@ -168,6 +168,8 @@
           items:
           - name: Create or edit business unit
             href: create-edit-business-units.md
+          - name: Update record owner
+            href: update-record-owner.md
           - name: Delete business unit
             href: delete-business-unit.md 
           - name: Assign business units
@@ -412,7 +414,7 @@
         items:
         - name: "Preview: Tenant-level analytics (default)" 
           href: tenant-level-analytics.md
-        # Comment out the next two topics before 10/1 publish
+        # Comment out the next two topics before publish
         # - name: "Preview: Power Apps analytics report"
         #   href: powerapps-analytics-reports.md
         # - name: "Preview: Power Automate analytics report"
@@ -571,6 +573,9 @@
             href: wp-data-loss-prevention.md
           - name: Connector classification
             href: dlp-connector-classification.md
+          # Comment out next until given go ahead
+          # - name: Disable new connectors by default
+          #   href: connector-off-by-default.md
           - name: Custom connector parity  
             href: dlp-custom-connector-parity.md 
           - name: Granular controls
