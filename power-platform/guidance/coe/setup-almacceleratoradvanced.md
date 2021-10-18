@@ -379,9 +379,9 @@ The following steps show how to **create a pipeline from the sample pipeline YAM
 | build-deploy-prod-MyNewSolution.yml       | deploy-prod-MyNewSolution       | No                    | No (See next section) |
 
 > [!NOTE]
-> The following steps will create pipelines that **build and deploy for each environment** (Validation, Test and Production). However, you may want to only build and deploy for Validation and Test and then deploy the artifacts from the Test build to Production. Included in [the section following this section](#create-the-solution-deployment-pipelines-optional) are instructions for doing the latter. If this is your preferred method of setting up the pipelines follow the steps below for **only the Validation and Test environment** and then skip to the next section to see how to configure your release pipeline.
+> The following steps will create pipelines that **build and deploy for each environment** (Validation, Test and Production). However, you may want to only build and deploy for Validation and Test and then deploy the artifacts from the Test build to Production. Included in [the section following this section](#create-the-solution-deployment-pipeline-optional) are instructions for doing the latter. If this is your preferred method of setting up the pipelines follow the steps below for **only the Validation and Test environment** and then skip to the next section to see how to configure your release pipeline.
 
-1. In Azure DevOps, go to the **Repo** that contains the [Pipelines folder you committed](#copy-the-yaml-pipelines-from-github-to-your-azure-devops-instance) and select the Pipelines folder
+1. In Azure DevOps, go to the **Repo** that contains the [Pipelines folder you committed](#clone-the-yaml-pipelines-from-github-to-your-azure-devops-instance) and select the Pipelines folder
 
 1. Open the sample deployment pipeline (that is, **build-deploy-validation-SampleSolution.yml, build-deploy-test-SampleSolution.yml or build-deploy-prod-SampleSolution.yml**) and copy the YAML to use in your new Pipeline. **Note the name of this repo** for use in your pipeline.
 
@@ -472,7 +472,7 @@ As mentioned in the note above, the previous section allows you to create pipeli
 | ----------------------------- | ------------------------- | --------------------- |
 | deploy-prod-MyNewSolution.yml | deploy-prod-MyNewSolution | No                    |
 
-1. In Azure DevOps go to the **Repo** that contains the [Pipelines folder you committed](#copy-the-yaml-pipelines-from-github-to-your-azure-devops-instance) and select the Pipelines folder
+1. In Azure DevOps go to the **Repo** that contains the [Pipelines folder you committed](#clone-the-yaml-pipelines-from-github-to-your-azure-devops-instance) and select the Pipelines folder
 
 1. Open the sample deployment pipeline (that is, **deploy-prod-pipelineartifact-SampleSolution.yml**) and copy the YAML to use in your new Pipeline. **Note the name of this repo** for use in your pipeline.
 

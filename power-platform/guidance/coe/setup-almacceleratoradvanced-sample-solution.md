@@ -41,7 +41,7 @@ In this step, you'll be creating the Validation and Test Pipelines for reference
 | build-deploy-validation-SampleSolution.yml | deploy-validation-SampleSolution | Yes                   |
 | build-deploy-test-SampleSolution.yml       | deploy-test-SampleSolution       | No                    |
 
-1. In Azure DevOps, go to the **Repo** that contains the [Pipelines folder you committed](setup-almacceleratoradvanced.md#copy-the-yaml-pipelines-from-github-to-your-azure-devops-instance) and select the Pipelines folder
+1. In Azure DevOps, go to the **Repo** that contains the [Pipelines folder you committed](setup-almacceleratoradvanced.md#clone-the-yaml-pipelines-from-github-to-your-azure-devops-instance) and select the Pipelines folder
 
 1. Open the sample deployment pipeline (that is, **build-deploy-validation-SampleSolution.yml or build-deploy-test-SampleSolution.yml**) and copy the YAML to use in your new Pipeline. **Note the name of this repo** for use in your pipeline.
 
@@ -127,7 +127,7 @@ As mentioned in the note above, the previous section allows you to create pipeli
 | -------------------------------------------- | ---------------------------------------- | --------------------- |
 | deploy-prod-ALMAcceleratorSampleSolution.yml | deploy-prod-ALMAcceleratorSampleSolution | No                    |
 
-1. In Azure DevOps, go to the **Repo** that contains the [Pipelines folder you committed](#copy-the-yaml-pipelines-from-github-to-your-azure-devops-instance) and select the Pipelines folder
+1. In Azure DevOps, go to the **Repo** that contains the [Pipelines folder you committed](#clone-the-yaml-pipelines-from-github-to-your-azure-devops-instance) and select the Pipelines folder
 
 1. Open the sample deployment pipeline (that is, **deploy-prod-pipelineartifact-SampleSolution.yml**) and copy the YAML to use in your new Pipeline. **Note the name of this repo** for use in your pipeline.
 
@@ -169,7 +169,7 @@ As mentioned in the note above, the previous section allows you to create pipeli
 
 ### Setting Branch Policies for Pull Request Validation
 
-In order to execute the build pipeline for the ALM Accelerator Sample Solution when a **Pull Request is created**, you'll need to create a **Branch Policy** to execute the **Validation Pipeline** you created in the previous step. Use the following steps to set your Branch Policy. For more information on Branch Policies, see [here](/azure/devops/repos/git/branch-policies?view=azure-devops)
+In order to execute the build pipeline for the ALM Accelerator Sample Solution when a **Pull Request is created**, you'll need to create a **Branch Policy** to execute the **Validation Pipeline** you created in the previous step. Use the following steps to set your Branch Policy. For more information on Branch Policies, see [here](/azure/devops/repos/git/branch-policies)
 
 1. In Azure DevOps, go to **Repos** and select the **Branches** folder
 
