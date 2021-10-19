@@ -55,7 +55,11 @@ The theming components solution contains assets that are relevant to makers and 
 
 The application lifecycle management (ALM) components are intended to provide Power Platform makers guidance on creating healthy ALM practices for their solutions as part of their overall DevOps strategy.
 
-The ALM Accelerator for Makers components solution contains assets that are relevant to makers and admins. More information: [Set up ALM Accelerator for Makers components](setup-almaccelerator.md) and [Use ALM Accelerator for Makers components](almaccelerator-components.md)
+The Center of Excellence contains two ALM Accelerators.
+
+1. **ALM Accelerator for Makers** - Contains assets that are relevant to makers and admins. The ALM Accelerator for Makers provides an App for Makers to promote their solutions from one environment to another. The ALM Accelerator for Makers uses GitHub source control and workflows to automate the deployment of solutions. More information: [Set up ALM Accelerator for Makers components](setup-almaccelerator.md) and [Use ALM Accelerator for Makers components](almaccelerator-components.md)
+
+1. **ALM Accelerator for Advanced Makers** - Contains assets that are relevant to advanced makers and admins. The ALM Accelerator for Advanced Makers provides an App for Developers to source control their solutions and create Pull Requests to promote their solutions from one environment to another. The ALM Accelerator for Advanced Makers uses Azure DevOps source control and pipelines to automate the deployment of solutions. More information: [Set up ALM Accelerator for Advanced Makers components](setup-almacceleratoradvanced.md) and [Use ALM Accelerator for Advanced Makers components](almacceleratoradvanced-components.md)
 
 ### Center of Excellence – Innovation Backlog components
 

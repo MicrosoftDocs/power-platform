@@ -41,7 +41,7 @@ The following are prerequisites for installing the CoE Starter Kit as it's inclu
     -  This solution will work for environment admins, but the view will be restricted to only the environments an environment admin has access to.
     - This account must be email enabled.
 
--  Environment with a Dataverse or Dataverse for Teams instance, where the user installing the solution has the System Administrator security role. We recommend against using security groups to control access to this environment, because it's likely that users who don't have access to this environment will be participating in approvals. If you choose to use a security group to control access, users will have to be a part of that group to work with the archival solutions.
+- Environment with a Dataverse or Dataverse for Teams instance, where the user installing the solution has the System Administrator security role. We recommend against using security groups to control access to this environment, because it's likely that users who don't have access to this environment will be participating in approvals. If you choose to use a security group to control access, users will have to be a part of that group to work with the archival solutions.
 
 - Licenses
     - A Microsoft 365 license is required to use Office 365 connectors like Outlook, SharePoint and Groups.
@@ -73,6 +73,8 @@ The following are prerequisites for installing the CoE Starter Kit as it's inclu
 - If you're using the [audit log](setup-auditlog.md) solution, the custom connector used to connect to the Microsoft 365 audit log also must be allowed in your business data&ndash;only bucket. Please see [Custom Connectors and DLP](/power-platform/admin/dlp-connector-classification#tenant-level-dlp-policies)
 
 - If you're using the [ALM Accelerator for Makers](almaccelerator-components.md) components, the environment must have a DLP policy that allows [Dataverse](/connectors/commondataservice/), [Office 365 Outlook](/connectors/office365/), [Power Apps for Makers](/connectors/powerappsforappmakers/), [Approvals](/connectors/approvals/), [GitHub](/connectors/github/) [Power Platform for Admins](/connectors/powerplatformforadmins/) to be used together. Those connectors must be in the business data&ndash;only bucket of the DLP policy for this environment.
+
+- If you're using the [ALM Accelerator for Advanced Makers](almacceleratoradvanced-components.md) components, the environment must have a DLP policy that allows [Dataverse (Legacy)](/connectors/commondataservice/), [HTTP with Azure AD](/connectors/webcontents/), [Power Apps for Makers](/connectors/powerappsforappmakers/), ALM Accelerator Custom Azure DevOps to be used together.
 
 - If multiple DLP policies apply to the same environment, either all of them must have the connectors the CoE Starter Kit uses in business data only or&mdash;if you have a policy that applies to all environments that you don't want to change&mdash;you can exclude the CoE environment from that policy. More information: [DLP policy scope](/power-platform/admin/dlp-policy-scope#policy-scope)
 

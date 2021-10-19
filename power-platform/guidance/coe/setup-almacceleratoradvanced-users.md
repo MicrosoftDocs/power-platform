@@ -1,14 +1,14 @@
 ---
 title: "ALM Accelerator for Advanced Maker User Setup | MicrosoftDocs"
-description: "The ALM Accelerator for Makers will help you follow ALM patterns and practices to source control and move your solutions from your development environment to test and production environments using Azure DevOps"
-author: manuelap-msft
+description: "Configuring user permissions to access the ALM Accelerator for Advanced Makers App and Pipelines."
+author: mikefactorial
 manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 10/14/2021
 ms.subservice: guidance
-ms.author: mapichle
+ms.author: v-mikeochs
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
@@ -20,9 +20,9 @@ search.app:
 # ALM Accelerator for Advanced Maker User Setup (Preview)
 
 > [!NOTE]
-ALM Accelerator for Advanced Makers is currently in public preview. Please see Issues currently tagged as [vnext](https://github.com/microsoft/coe-starter-kit/issues?q=is%3Aopen+is%3Aissue+label%3Aalm-accelerator+label%3Avnext) for the Roadmap to be completed prior to general availability. While in Public Preview it can be expected that there will be breaking changes and frequent updates to address feedback from preview members. Additionally, the Public Preview is reliant on the experimental [Power Apps Source File Pack and Unpack Utility](https://github.com/microsoft/PowerApps-Language-Tooling) that is being developed separately from AA4AM.
+> ALM Accelerator for Advanced Makers is currently in public preview. Please see Issues currently tagged as [vnext](https://github.com/microsoft/coe-starter-kit/issues?q=is%3Aopen+is%3Aissue+label%3Aalm-accelerator+label%3Avnext) for the Roadmap to be completed prior to general availability. While in Public Preview it can be expected that there will be breaking changes and frequent updates to address feedback from preview members. Additionally, the Public Preview is reliant on the experimental [Power Apps Source File Pack and Unpack Utility](https://github.com/microsoft/PowerApps-Language-Tooling) that is being developed separately from AA4AM.
 
-The AA4AM App is intended to be used by makers to increase productivity while developing solutions in Power Platform. The following is instructions for the recommended setup of a maker's user account in Dataverse and Azure DevOps. It's recommended that you use Azure AD groups and Dataverse Group Teams to control access to Dataverse resources and Azure DevOps Groups to control access to Azure DevOps resources. However, assigning permissions on a user by user basis is possible as well.
+The AA4AM App is intended to be used by makers to increase productivity while developing solutions in Power Platform. The following are instructions for the recommended setup of a maker's user account in Dataverse and Azure DevOps. It's recommended that you use Azure AD groups and Dataverse Group Teams to control access to Dataverse resources and Azure DevOps Groups to control access to Azure DevOps resources. However, assigning permissions on a user by user basis is possible as well.
 
 ## Dataverse User Setup
 
@@ -31,18 +31,18 @@ In order for users to access resources in Dataverse when running the AA4AM app t
 1. Navigate to <https://admin.powerplatform.microsoft.com/>
 1. **Select the Environment** in which the user exists
 1. **Select See all under Teams** under the Access section
-   ![image-20210709143811208](media/setup-almacceleratoradvanced-users/image-20210709143811208.png)
+   ![Select See all under Teams](media/setup-almacceleratoradvanced-users/image-20210709143811208.png)
 1. Select Create Team
-   ![image-20210709144020206](media/setup-almacceleratoradvanced-users/image-20210709144020206.png)
+   ![Select Create Team](media/setup-almacceleratoradvanced-users/image-20210709144020206.png)
 1. Enter a **Team name, Business unit, Administrator and Select AAD Security Group as the Team type and Select a Membership Type and Select Next**.
-   ![image-20210709145337373](media/setup-almacceleratoradvanced-users/image-20210709145337373.png)
-1. On the Manage security roles page select the **ALM Power App Access** and **Basic User** role and **select Save**.
+   ![Enter New Teams Details](media/setup-almacceleratoradvanced-users/image-20210709145337373.png)
+1. On the Manage security roles page, select the **ALM Power App Access** and **Basic User** role and **select Save**.
 
-   ![image-20210709150149120](media/setup-almacceleratoradvanced-users/image-20210709150149120.png)
+   ![Manage Security Roles](media/setup-almacceleratoradvanced-users/image-20210709150149120.png)
 
 ## Azure DevOps User Setup
 
-In order for users to be able to use the service connection from the ALM Accelerator App the Service Connections must provide **User** permissions to all users to be able to use the Service Connections. Update Permissions as follows for environments that user's should be able to access from the App, e.g.,  Development environment(s):
+In order for users to be able to use the service connection from the ALM Accelerator App the Service Connections must provide **User** permissions to all users to be able to use the Service Connections. Update Permissions as follows for environments that user's should be able to access from the App, for example, Development environment(s):
 
 1. Select the **Service Connection** to be **shared with users** from the **Service Connections** list.
    ![Select the Service Connection](media/almacceleratoradvanced-components/image-20210401084558807.png)
