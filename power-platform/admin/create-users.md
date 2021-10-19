@@ -9,7 +9,7 @@ ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/10/2021
+ms.date: 10/18/2021
 search.audienceType: 
   - admin
 search.app:
@@ -332,6 +332,9 @@ You need to have the System Administrator security role or equivalent permission
 You can use server-to-server (S2S) authentication to securely and seamlessly communicate between Dataverse and your web applications and services. S2S authentication is the common way that apps registered on [!INCLUDE[pn_microsoft_appsource](../includes/pn-microsoft-appsource.md)] use to access the Dataverse data of their subscribers. All operations performed by your application or service by using S2S will be performed as the application user you provide, rather than the user who's accessing your application.  
 
 All application users are created with a non-interactive user account, however they aren't counted toward the limit of seven non-interactive user accounts. In addition, there's no limit on how many application users you can create in an environment.
+
+> [!CAUTION]
+> For an application user, the system adds a "#" as the First Name for the Application User you create. This is by design.
 
 For step-by-step information about creating an application user, see [Create an application user](manage-application-users.md#create-an-application-user).
 
