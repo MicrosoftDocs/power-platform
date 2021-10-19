@@ -19,14 +19,14 @@ search.app:
 
 # Documentation
 
-Documentation is key to understanding how the cli works. As new commands are added consider the following
+Documentation is key to understanding how the CLI works. As you add new commands consider the following:
 
 - [Add Markdown Pages](#add-markdown-pages) - Describe the functionality for end users
 - [Recording Command Line](#recording-command-line) to demonstrate process
 
 ## Add Markdown Pages
 
-Add new pages to [help](../help/overview.md) that describes the new command and how it is expected to be used.
+Add new pages to [help](../help/overview.md) that describes the new command and explains to the user expected usage.
 
 Consider adding the following to the page:
 
@@ -59,7 +59,7 @@ graph
     style journey fill:transparent,stroke:green,stroke-width:2px
 ```
 
-1. Apply CSS styles with a file in the same folder. For example in the above create **sample.css** in same folder as the mmd file
+1. Apply CSS styles with a file in the same folder. For example, in the above create **sample.css** in same folder as the mmd file
 
 ```css
 #L-start-finish path {
@@ -70,8 +70,6 @@ graph
 NOTES:
 
 1. Review the [node shapes](https://mermaid-js.github.io/mermaid/#/flowchart?id=node-shapes) to control the symbols displayed
-
-1. When css file is requested a svg file will also be generated so that you can look at the class and SVG elements generated to apply css styles
 
 1. Circles can be styled using following approach
 
@@ -103,7 +101,7 @@ To color the end circle green using css [starts with selector](https://www.w3sch
 
 ### Update Diagrams
 
-The static images for each diagram is generated as follows
+The static images for each diagram are generated as follows
 
 1. Change to coe-cli folder
 
@@ -119,7 +117,7 @@ npm run diagrams
 
 ## Add Help Pages
 
-Add new help pages to [help](../help/overview.md) that provides detailed information on the command an options. Help can be accessed using the help command which will display the associated help markdown file in the browser
+Add new help pages to [help](../help/overview.md). Each page in help provides detailed information on the command and options. The help markdown file can be accessed using the help command that will display the associated help markdown file in the console window.
 
 ```bash
 coe help aa4am
@@ -129,7 +127,7 @@ The command above will display the contents of [help/aa4am/overview.md](../help/
 
 ## Recording Command Line
 
-To include a short animated recording of commands and the expected output you can use the following process
+To include a short animated recording of commands that demonstrate the expected output you can use the following process
 
 1. Install termtosvg in a Unix based terminal
 
@@ -139,11 +137,11 @@ pip3 install --user termtosvg
 
 This process will work cross platform and any of the following options could be used:
 
-   i) Native Unix shell on MacOS or Linux distributions
+- Native Unix shell on macOS or Linux distributions
 
-   ii) Docker images with a Unix shell
+- Docker images with a Unix shell
 
-   iii) [Windows Subsystem for Linux](/windows/wsl/install-win10) on Windows
+- [Windows Subsystem for Linux](/windows/wsl/install-win10) on Windows
 
 1. Record the session to a cast file
 
