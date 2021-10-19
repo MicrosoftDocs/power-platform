@@ -74,7 +74,7 @@ The Azure Active Directory Group name that will be used to grant access to Advan
 
 The group will be created if it does not exists if component **aad** or **all** is selected.
 
-For **aad** or **devops** the group will be used to grant access to Variable group used by Azure DevOps pipelines.
+For **aad** or **devops** the group will be used to grant access to Variable group used by Azure DevOps Pipelines.
 
 For **aad** or **environment** the group will be used to share access to run the Canvas application.
 
@@ -89,7 +89,7 @@ The value can be in the format https://dev.azure.com/contoso or contoso. If the 
 The Azure DevOps project name. The project must already be created in your Azure DevOps organization. This value will be used to:
  - Create Variable Group
  - Import Azure DevOps pipeline templates
- - Create Azure DevOps pipelines to import, export and delete solutions in the Power Platform environments
+ - Create Azure DevOps Pipelines to import, export and delete solutions in the Power Platform environments
 
 The default value is **alm-sandbox**
 

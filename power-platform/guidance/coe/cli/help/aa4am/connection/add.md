@@ -54,7 +54,7 @@ The Azure DevOps project name. The project must already be created in your Azure
 
 1. Import Azure DevOps pipeline templates
 
-1. Create Azure DevOps pipelines to import, export and delete solutions in the Power Platform environments
+1. Create Azure DevOps Pipelines to import, export and delete solutions in the Power Platform environments
 
 ### -e, --environment
 

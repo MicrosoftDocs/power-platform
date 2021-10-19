@@ -48,7 +48,7 @@ The Azure DevOps project name. The project must already be created in your Azure
 
 - Create Variable Group
 - Import Azure DevOps pipeline templates
-- Create Azure DevOps pipelines to import, export and delete solutions in the Power Platform environments
+- Create Azure DevOps Pipelines to import, export and delete solutions in the Power Platform environments
 
 ###  -u, --user
 
@@ -65,7 +65,7 @@ You can visit https://aka.ms/ppac to list environments that you have access to.
 
 ### -g, --group
 
-The Azure Active Directory (AAD) Makers group created during install. This user group will allow the Advanced Maker to access the Variable Group required to run Azure DevOps pipelines and share access to the Advanced Maker administration application.
+The Azure Active Directory (AAD) Makers group created during install. This user group will allow the Advanced Maker to access the Variable Group required to run Azure DevOps Pipelines and share access to the Advanced Maker administration application.
 
 Note the user running this command must be the creator or owner of the AAD group. The [Add or remove group owners in Azure Active Directory](/azure/active-directory/fundamentals/active-directory-accessmanagement-managing-group-owners) provides more information.
 

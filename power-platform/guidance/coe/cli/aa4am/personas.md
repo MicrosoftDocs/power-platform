@@ -38,15 +38,15 @@ Collaborates with Professional Development and Information Technology (IT) teams
 
 ### Professional Developer
 
-Advanced maker knowledge plus the ability to use lower level development programing languages and SDKs to create components and services. For example JavaScript and PCF controls, Dataverse Plugins in C#, Azure Services and APIs e.g. Azure Functions, API Management. LIkely to work in tools like Visual Studio Code.
+Advanced maker knowledge plus the ability to use lower level development programing languages and SDKs to create components and services. For example JavaScript and PCF controls, Dataverse Plugins in C#, Azure Services and APIs for example Azure Functions, API Management. Likely to work in tools like Visual Studio Code.
 
 ### Data Analyst
 
-Develop data model, Create and manage data services and post data collection analysis / reporting. For example Power BI reporting, Datalake. For data elements that are covered in the SOlution system e.g. Dataverse Modeling, AI Models. Items not covered today in solution system like Power BI will have separate ALM process.
+Develop data model, Create and manage data services and post data collection analysis / reporting. For example Power BI reporting, Datalake. For data elements that are covered in the SOlution system for example, Dataverse Modeling, AI Models. Items not covered today in solution system like Power BI will have separate ALM process.
 
 ### Operations Teams
 
-Deploy solution to environments across Power Platform and Microsoft Cloud Services (e.g. Azure). Distribute solutions into Power Platform and run ARM templates in Azure. Will not use the CLI commands directly. May use managed canvas application to view and Azure DevOps pipelines to view the status or promote applications from test to production.
+Deploy solution to environments across Power Platform and Microsoft Cloud Services (For example Azure). Distribute solutions into Power Platform and run Azure Resource Manager templates in Azure. Will not use the CLI commands directly. May use managed canvas application to view and Azure DevOps Pipelines to view the status or promote applications from test to production.
 
 ### Support Teams
 
@@ -137,7 +137,7 @@ coe aa4am user add \
 
 Read more on the [coe aa4am user add](../help/aa4am/user/add.md)
 
-The **coe aa4am branch** command will be run each time a new solution is created. This command allows a new solution branch to be created in Azure DevOps with the associated ALM DevOps pipeline to validate pull requests and push changes to test and production environments.
+The **coe aa4am branch** command will be run each time a new solution is created. The branch command allows a new solution branch to be created in Azure DevOps. This new branch will be created with the associated ALM DevOps pipeline to validate pull requests and push changes to test and production environments.
 
 ```bash
 coe aa4am branch \
@@ -150,7 +150,7 @@ More information on the [coe aa4am branch](../help/aa4am/branch.md) command
 
 ## Administrator Setup
 
-As each Advanced Maker or Professional Developer creates a development environment it will need to be registered with Azure DevOps and the Azure Active Directory Application. The user running this command requires Project Administrator rights in Azure DevOps and Owner rights of the Azure Active Directory Application.
+As each Advanced Maker or Professional Developer creates a development environment, it will need to be registered with Azure DevOps and the Azure Active Directory Application. The user running this command requires Project Administrator rights in Azure DevOps and Owner rights of the Azure Active Directory Application.
 
 ```bash
 coe aa4am maker add \
@@ -164,7 +164,7 @@ coe aa4am maker add \
 
 More information on the [coe aa4am maker add](../help/aa4am/maker/add.md) command
 
-Each Azure DevOps project will also require connections to deployment environments used by Azure DevOps pipelines
+Each Azure DevOps project will also require connections to deployment environments used by Azure DevOps Pipelines
 
 ```bash
 coe aa4am connection add \
