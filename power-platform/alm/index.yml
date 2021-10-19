@@ -31,7 +31,9 @@ landingContent:
             url: basics-alm.md
           - text: Environment strategy
             url: environment-strategy-alm.md
-          - text: Tools and apps used in ALM
+      - linkListType: reference
+        links:
+          - text: Tools and apps used for ALM
             url: tools-apps-used-alm.md
 
   # Card (optional)
