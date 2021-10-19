@@ -27,7 +27,7 @@ search.app:
 
 Microsoft Power Platform has a rich ecosystem of Azure Active Directory (Azure AD) based connectors that allow authorized Azure AD users to build compelling apps and flows establishing connections to the business data available through these data stores. Tenant isolation makes it easy for administrators to ensure that these connectors can be harnessed in a safe and secure way within the tenant while minimizing the risk of data exfiltration outside the tenant. Tenant isolation allows admins to effectively govern the movement of tenant data from Azure AD authorized data sources to and from their tenant. Note that Power Platform tenant isolation is different from Azure AD-wide tenant restriction. It *does not* impact Azure AD-based access outside of Power Platform. Power Platform tenant isolation only works for connectors using Azure AD-based authentication such as Office 365 Outlook or Sharepoint. 
 
-The default configuration in Power Platform with tenant isolation **Off** is to allow cross-tenant connections to be established seamlessly, if the user from tenant A establishing the connection to tenant B presents appropriate Azure AD credentials. If admins want to allow only a select set of tenants to establish connections to or from their tenant, they can turn Tenant Isolation **On**. 
+The default configuration in Power Platform with tenant isolation **Off** is to allow cross-tenant connections to be established seamlessly, if the user from tenant A establishing the connection to tenant B presents appropriate Azure AD credentials. If admins want to allow only a select set of tenants to establish connections to or from their tenant, they can turn tenant isolation **On**. 
 
 Once tenant isolation is turned on, inbound (connections to the tenant from external tenants) as well as outbound (connections from the tenant to external tenants) cross-tenant connections are blocked by Power Platform even if the user presents valid credentials to the Azure AD-secured data source.  
 
@@ -50,8 +50,8 @@ Similarly, users logged in to Power Platform in the Fabrikam tenant cannot estab
 |Connection creator tenant   |Connection sign-in tenant   | Access allowed?   |
 |---------|---------|---------|
 |Contoso     | Contoso        | Yes         |
-|Contoso (tenant isolation **On** for both directions)    | Fabrikam        | No (outbound)         |
-|Fabrikam     | Contoso (tenant isolation **On** for both directions)           | No (inbound)        |
+|Contoso (tenant isolation **On**)    | Fabrikam        | No (outbound)         |
+|Fabrikam     | Contoso (tenant isolation **On**)           | No (inbound)        |
 |Fabrikam     | Fabrikam        | Yes        |
 
 ![Restrict outbound and inbound cross-tenant access.](media/restrict-outbound-inbound-cross-tenant.png "Restrict outbound and inbound cross-tenant access")
@@ -62,7 +62,7 @@ One-way tenant isolation or inbound isolation will block connection establishmen
 
 ### Scenario: Outbound allow list - Fabrikam is added to the outbound allow list of the Contoso tenant
 
-In this scenario, the admin adds the Fabrikam tenant in the outbound allow list while tenant isolation is **On** for both directions.   
+In this scenario, the admin adds the Fabrikam tenant in the outbound allow list while tenant isolation is **On**.   
 
 Users logged in to Power Platform in the Contoso tenant can establish outbound Azure AD-based connections to data sources in the Fabrikam tenant if they present appropriate Azure AD credentials to establish the connection. Outbound connection establishment to Fabrikam tenant is permitted by virtue of the configured allow list entry. 
 
@@ -71,21 +71,21 @@ However, users logged in to Power Platform in the Fabrikam tenant still can't es
 |Connection creator tenant   |Connection sign-in tenant | Access allowed?   |
 |---------|---------|---------|
 |Contoso     | Contoso        | Yes         |
-|Contoso (tenant isolation **On** for both directions) <br /> Fabrikam added to outbound allow list    | Fabrikam        | Yes         |
-|Fabrikam     | Contoso (tenant isolation **On** for both directions) <br /> Fabrikam added to outbound allow list        | No (inbound)        |
+|Contoso (tenant isolation **On**) <br /> Fabrikam added to outbound allow list    | Fabrikam        | Yes         |
+|Fabrikam     | Contoso (tenant isolation **On**) <br /> Fabrikam added to outbound allow list        | No (inbound)        |
 |Fabrikam     | Fabrikam        | Yes        |
 
 :::image type="content" source="media/restrict-inbound-cross-tenant.png" alt-text="Restrict inbound connection":::
 
 ### Scenario: Bi-directional allow list - Fabrikam is added to the inbound and outbound allow lists of the Contoso tenant 
 
-In this scenario, the admin adds the Fabrikam tenant to both the inbound and outbound allow lists while tenant isolation is **On** for both directions.   
+In this scenario, the admin adds the Fabrikam tenant to both the inbound and outbound allow lists while tenant isolation is **On**.   
 
 |Connection creator tenant   |Connection sign-in tenant   |Access allowed?   |
 |---------|---------|---------|
 |Contoso     | Contoso        | Yes         |
-|Contoso (tenant isolation **On** for both directions) <br /> Fabrikam added to both allow lists    | Fabrikam        | Yes         |
-|Fabrikam     | Contoso (tenant isolation **On** for both directions) <br /> Fabrikam added to both allow lists        | No (inbound)        |
+|Contoso (tenant isolation **On**s) <br /> Fabrikam added to both allow lists    | Fabrikam        | Yes         |
+|Fabrikam     | Contoso (tenant isolation **On**) <br /> Fabrikam added to both allow lists        | No (inbound)        |
 |Fabrikam     | Fabrikam        | Yes        |
 
 :::image type="content" source="media/allow-list-both-tenants.png" alt-text="Bi-directional allow lists":::
