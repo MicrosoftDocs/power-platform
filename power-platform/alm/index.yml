@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: Application lifecycle management (ALM) with Microsoft Power Platform
-summary: Learn how to implement application lifecycle management (ALM) using Microsoft Power Platform.
+summary: Learn how to implement application lifecycle management (ALM) using Microsoft Power Platform (Power Apps. Power Automate, Dataverse).
 
 metadata:
   title: Application lifecycle management (ALM) with Microsoft Power Platform
@@ -11,7 +11,7 @@ metadata:
   ms.topic: landing-page
   author: Mattp123
   ms.author: matp
-  ms.date: 05/05/2020
+  ms.date: 10/18/2021
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 
@@ -31,7 +31,9 @@ landingContent:
             url: basics-alm.md
           - text: Environment strategy
             url: environment-strategy-alm.md
-          - text: Tools and apps used in ALM
+      - linkListType: reference
+        links:
+          - text: Tools and apps used for ALM
             url: tools-apps-used-alm.md
 
   # Card (optional)
@@ -75,17 +77,28 @@ landingContent:
         links:
           - text: ALM for developers
             url: alm-for-developers.md
-          - text: Microsoft Power Platform Build Tools for Azure DevOps
-            url: devops-build-tools.md
-          - text: GitHub Actions for Microsoft Power Platform
-            url: devops-github-actions.md
           - text: Work with solution components
             url: component-framework.md
           - text: Solution and packaging tools
             url: configure-and-deploy-tools.md
           - text: Manage solutions using custom code
             url: powershell-api.md
-
+  
+  # Card
+  - title: ALM automation
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Use Power Platform Build Tools for Azure DevOps
+            url: devops-build-tools.md
+          - text: Use GitHub Actions for Power Platform
+            url: devops-github-actions.md
+          - text: "CoE: Set up ALM Accelerator"
+            url: /power-platform/guidance/coe/setup-almaccelerator
+          - text: "CoE: Use ALM Accelerator"
+            url: /power-platform/guidance/coe/almaccelerator-components
+  
+  
   # Card
   - title: Related docs
     linkLists:
