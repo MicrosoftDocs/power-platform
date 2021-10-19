@@ -25,6 +25,15 @@ search.app:
 ---
 # Cross-tenant inbound and outbound restrictions
 
+Microsoft Power Platform has a rich ecosystem of Azure Active Directory (Azure AD) based connectors that allow authorized Azure AD users to build compelling apps and flows establishing connections to the business data available through these data stores. Tenant isolation makes it easy for administrators to ensure that these connectors can be harnessed in a safe and secure way within the tenant while minimizing the risk of data exfiltration outside the tenant. Tenant isolation allows admins to effectively govern the movement of tenant data from Azure AD authorized data sources to and from their tenant. Note that Power Platform tenant isolation is different from Azure AD-wide tenant restriction. It *does not* impact Azure AD-based access outside of Power Platform. Power Platform tenant isolation only works for connectors using Azure AD-based authentication such as Office 365 Outlook or Sharepoint. 
+
+The default configuration in Power Platform with Tenant Isolation **Off** is to allow cross-tenant connections to be established seamlessly, if the user from tenant A establishing the connection to tenant B presents appropriate Azure AD credentials. If admins want to allow only a select set of tenants to establish connections to or from their tenant, they can turn Tenant Isolation **On**. 
+
+Once tenant isolation is turned on, inbound (connections to the tenant from external tenants) as well as outbound (connections from the tenant to external tenants) cross-tenant connections are blocked by Power Platform even if the user presents valid credentials to the Azure AD-secured data source.  
+
+Admins can specify an explicit allow list of tenants that they want to enable inbound, outbound, or both inbound and outbound which will bypass tenant isolation controls when configured. Admins can use a special pattern “\*”  to allow *all* tenants in a specific direction when tenant isolation is turned on. All other cross-tenant connections except the ones in the allow list are rejected by Power Platform. 
+
+<!--
 With tenant restrictions, organizations can control access to SaaS cloud applications, based on the Azure AD tenant the applications use for single sign-on. With tenant restrictions, organizations can specify the list of tenants that their users are permitted to access. Azure AD then only grants access to these permitted tenants using Azure AD-based tenant restriction. 
 
 Additionally, if organizations want to enforce tenant isolation for Microsoft Power Platform connections, then they can use Power Platform’s tenant isolation capability. Note that the Power Platform tenant isolation feature does not impact Azure AD-based access outside of Power Apps and Power Automate. Power Platform tenant isolation only works for connectors using Azure AD-based authentication such as Office 365 Outlook or SharePoint. If you want to block connectors that use external identity providers such as Microsoft account, Google, etc., you can [create a data loss prevention policy](create-dlp-policy.md) and classify the connector under the **Blocked** group.  
@@ -66,5 +75,7 @@ Two-way tenant isolation restricts incoming connection attempts into your tenant
 
 ## Known issue
 This feature does not protect your tenant from inbound cross-cloud connections. If a tenant has tenant isolation turned on, all outgoing connections are restricted. However, incoming connections that are established from other tenants in other clouds are not restricted. This issue is currently being investigated.
+-->
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
