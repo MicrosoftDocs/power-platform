@@ -20,12 +20,13 @@ search.app:
 # Use the ALM Accelerator for Advanced Maker App (Preview)
 
 > [!NOTE]
-ALM Accelerator for Advanced Makers is currently in public preview. Please see Issues currently tagged as [vnext](https://github.com/microsoft/coe-starter-kit/issues?q=is%3Aopen+is%3Aissue+label%3Aalm-accelerator+label%3Avnext) for the Roadmap to be completed prior to general availability. While in Public Preview it can be expected that there will be breaking changes and frequent updates to address feedback from preview members. Additionally, the Public Preview is reliant on the experimental [Power Apps Source File Pack and Unpack Utility](https://github.com/microsoft/PowerApps-Language-Tooling) that is being developed separately from AA4AM.
+> ALM Accelerator for Advanced Makers is currently in public preview. Please see Issues currently tagged as [vnext](https://github.com/microsoft/coe-starter-kit/issues?q=is%3Aopen+is%3Aissue+label%3Aalm-accelerator+label%3Avnext) for the Roadmap to be completed prior to general availability. While in Public Preview it can be expected that there will be breaking changes and frequent updates to address feedback from preview members. Additionally, the Public Preview is reliant on the experimental [Power Apps Source File Pack and Unpack Utility](https://github.com/microsoft/PowerApps-Language-Tooling) that is being developed separately from AA4AM.
 
 ## Demo: ALM Accelerator for Advanced Makers
 
 Watch how to use the ALM Accelerator for Advanced Makers solution.
-> [!VIDEO <https://www.youtube.com/watch?v=-P3uSUTdsSY>]
+> [!VIDEO https://www.youtube.com/watch?v=-P3uSUTdsSY]
+>
 
 ## What's in the solution
 
@@ -35,14 +36,14 @@ The solution is the Dataverse Solution System. All Application Lifecycle Managem
 
 The target end user for AA4AM is the Power Platform Maker who is comfortable with Solutions, Git, Azure DevOps, and ALM concepts. If you're not already familiar with these technologies and concepts, you should consider taking the following courses.
 
-1. [Introduction to version control with Git](https://docs.microsoft.com/learn/paths/intro-to-vc-git/)
-2. [Use Git version-control tools in Visual Studio Code](https://docs.microsoft.com/learn/modules/use-git-from-vs-code/)
-3. [Build applications with Azure DevOps](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops/)
-4. [Manage solutions in Power Apps and Power Automate](https://docs.microsoft.com/learn/modules/manage-solutions-power-automate/)
+1. [Introduction to version control with Git](/learn/paths/intro-to-vc-git/)
+2. [Use Git version-control tools in Visual Studio Code](/learn/modules/use-git-from-vs-code/)
+3. [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops/)
+4. [Manage solutions in Power Apps and Power Automate](/learn/modules/manage-solutions-power-automate/)
 
 The target user for setting up AA4AM would generally be an Administrator with a deeper understanding of Power Platform Environments and Solutions, Azure DevOps Pipelines, and Administration as well as familiarity with Azure Active Directory and Dataverse Administration.
 
-![The Maker Team](media/almacceleratoradvanced-components/TheMakerTeam.png)
+![The Maker Team](media/almacceleratoradvanced-components/TheMakerTeam.png "The Maker Team")
 
 ## Pipelines
 
@@ -93,8 +94,11 @@ The Pipelines handle the following.
 
 The AA4AM Canvas App provides a convenience layer on top of the AA4AM Pipelines. The AA4AM Canvas App allows Power Platform Makers to easily invoke the Azure Pipelines to perform their complex tasks without context switching between the Power Apps environment and the Azure DevOps. The goal of the App is to provider Makers with a friction free way of performing common Development and ALM tasks as described in the following.
 
+
+
 > [!NOTE]
-While all of these processes can be achieved directly from Azure DevOps the App provides a more push-button interface for performing these tasks
+>While all of these processes can be achieved directly from Azure DevOps the App provides a simple push-button interface for performing these tasks
+
 
 1. Target multiple Organization / Projects and Repos in Azure DevOps
 2. Get the latest version of a solution into the development environment by importing the solution
@@ -109,20 +113,20 @@ While all of these processes can be achieved directly from Azure DevOps the App 
 
 1. Once the app is installed and configured launch it from your Environment under Apps.
 
-   > [!NOTE]
-When you first launch the app you may need to consent to the app using your connections.
+> [!NOTE]
+> When you first launch the app you may need to consent to the app using your connections.
 
 1. Select the **Cog** in the top right to select your **Azure DevOps Environment**, **Project**, and **Repo** to which you'll push your changes and submit your pull requests and select **Save**
    ![Configure Settings for AA4AM](media/almacceleratoradvanced-components/image-20210303085854533.png "Configure Settings for AA4AM")
 
-   > [!NOTE]
-If you don't see your DevOps Organization / Project in the dropdown double check that the Custom connector is working correctly after updating it's Security settings.
+> [!NOTE]
+> If you don't see your DevOps Organization / Project in the dropdown double check that the Custom connector is working correctly after updating it's Security settings.
 
 1. From the Environment Drop Down **Select the Dataverse Environment** in which you'll be doing your development work.
    ![Select Dataverse Environment](media/almacceleratoradvanced-components/image-20210303085806618.png "Select Dataverse Environment")
 
-   > [!NOTE]
-In order for your Environment to show up in this drop down a service connection in the Azure DevOps project you just selected is required (see [Create a Service Connection for DevOps to access Power Platform](setup-almacceleratoradvanced.md#create-service-connections-for-devops-to-access-power-platform). Additionally, verify that you've followed the steps to reconnect the flow above if you do not see any environments in the list.
+> [!NOTE]
+> In order for your Environment to show up in this drop down a service connection in the Azure DevOps project you just selected is required (see [Create a Service Connection for DevOps to access Power Platform](setup-almacceleratoradvanced.md#create-service-connections-for-devops-to-access-power-platform). Additionally, verify that you've followed the steps to reconnect the flow above if you do not see any environments in the list.
 
 1. By default the **unmanaged solutions** in your Environment will be displayed in the main window with buttons to **Push Changes** and **Create Pull Requests**.
 
@@ -134,14 +138,14 @@ In order for your Environment to show up in this drop down a service connection 
 
    - **Configuration** is a directory under the config directory in the Solution Folder that contains deployment settings and configuration data. For more information on this, see the [Deployment Configuration Guide](setup-almacceleratoradvanced-deployment-config.md)
 
-   > [!NOTE]
-The idea here is that you're either pulling the latest from the Solution branch or possibly want to pull another makers branch into your own environment. The configuration allows you to ensure that all of the necessary post solution import configuration and data exists in your environment.
+> [!NOTE]
+> The idea here is that you're either pulling the latest from the Solution branch or possibly want to pull another makers branch into your own environment. The configuration allows you to ensure that all of the necessary post solution import configuration and data exists in your environment.
 
-   ![Import Solution from Branch in Azure DevOps](media/almacceleratoradvanced-components/image-20210303085946610.png "Import Solution from Branch in Azure DevOps)
+   ![Import Solution from Branch in Azure DevOps](media/almacceleratoradvanced-components/image-20210303085946610.png "Import Solution from Branch in Azure DevOps")
 
 1. Once your solution is imported into Dataverse, or you've created a new unmanaged solution and made your customizations, you can begin configuring your solution for deployment.
 
-1. **Select the Configure Deployment Settings link** under the name of the Solution. On the configuration deployment page, you'll see the following items
+2. **Select the Configure Deployment Settings link** under the name of the Solution. On the configuration deployment page, you'll see the following items
 
    - Deployment Environments
 
@@ -184,10 +188,10 @@ The idea here is that you're either pulling the latest from the Solution branch 
       - Use  the **dropdown to select a Dataverse user** to own the Flow in the downstream environment.
       - To view the Flow **select the name of the Flow** to open a new window with the Flow Definition.
 
-1. Once you've configured your solution, you can push your changes to Git using the **Push Changes to Git** button for your solution.
+3. Once you've configured your solution, you can push your changes to Git using the **Push Changes to Git** button for your solution.
 
-   > [!NOTE]:
-Be sure to publish your changes before initiating the push. If a newly created solution doesn't show in your list immediately. Click the Refresh button to reload all solutions.
+> [!NOTE]
+> Be sure to publish your changes before initiating the push. If a newly created solution doesn't show in your list immediately. Click the Refresh button to reload all solutions.
 
    - Select an **existing branch** or **create a new branch** based on an existing branch and enter a **comment**. Use the hashtag notation for example `#123` to link the changes to a specific work item in Azure DevOps and Select **Commit**.
      ![Export Solution from Dataverse to New Azure DevOps Branch](media/almacceleratoradvanced-components/image-20210303085710535.png "Export Solution from Dataverse to New Azure DevOps Branch")
@@ -197,8 +201,8 @@ Be sure to publish your changes before initiating the push. If a newly created s
 
 1. When you're ready to create a pull request for the changes to your branch, select the Create Pull Request button.
 
-   > [!NOTE]:
-Be sure to publish your changes before initiating the push.
+> [!NOTE]
+> Be sure to publish your changes before initiating the push.
 
    - Specify the Source and Target branch and enter a Title and Comment for your Pull Request and Select Create.**
      ![Create Pull Request properties](media/almacceleratoradvanced-components/image-20210303085409740.png "Create Pull Request properties")
