@@ -91,8 +91,8 @@ Find below detailed characteristics and capabilities of an organization in each 
 | Level | State of Fusion Teams |
 |----------|-----------|
 | 100: Initial | <ul><li>Teams work independently</li><li>No pro dev use of Power Platform</li></ul>  |
-| 200: Repeatable |
-| 300: Defined |<ul><li>Teams review and ratify each other’s work</li><li>Pro Devs pilot high-value use cases</li></ul>| <ul><li>Teams plan work as a team, but operate independently</li><li>Teams manage source control and app lifecycles</li><li>[Standard libraries, custom connectors and components](/power-platform/guidance/adoption/reusable) to be consumed by makers</li></ul> |
+| 200: Repeatable | <ul><li>Teams review and ratify each other’s work</li><li>Pro Devs pilot high-value use cases</li></ul>  |
+| 300: Defined | <ul><li>Teams plan work as a team, but operate independently</li><li>Teams manage source control and app lifecycles</li><li>[Standard libraries, custom connectors and components](/power-platform/guidance/adoption/reusable) to be consumed by makers</li></ul> |
 | 400: Capable | <ul><li>Cross-functional teams plan and execute work jointly, including makers, testers and operational teams.</li><li>Collaborative planning for infrastructure and change enablement</li><li>Use of Common Data Models to aid data reuse</li></ul>|
 | 500: Leading |<ul><li>Teams form seamlessly to accommodate cross functional skills</li><li>Common development strategy and goals for Citizen and Pro developers needed for new projects</li></ul>  |
 
