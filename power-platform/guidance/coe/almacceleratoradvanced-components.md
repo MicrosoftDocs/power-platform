@@ -116,21 +116,21 @@ The AA4AM Canvas App provides a convenience layer on top of the AA4AM Pipelines.
 > [!NOTE]
 > When you first launch the app you may need to consent to the app using your connections.
 
-1. Select the **Cog** in the top right to select your **Azure DevOps Environment**, **Project**, and **Repo** to which you'll push your changes and submit your pull requests and select **Save**
+2. Select the **Cog** in the top right to select your **Azure DevOps Environment**, **Project**, and **Repo** to which you'll push your changes and submit your pull requests and select **Save**
    ![Configure Settings for AA4AM](media/almacceleratoradvanced-components/image-20210303085854533.png "Configure Settings for AA4AM")
 
 > [!NOTE]
 > If you don't see your DevOps Organization / Project in the dropdown double check that the Custom connector is working correctly after updating it's Security settings.
 
-1. From the Environment Drop Down **Select the Dataverse Environment** in which you'll be doing your development work.
+3. From the Environment Drop Down **Select the Dataverse Environment** in which you'll be doing your development work.
    ![Select Dataverse Environment](media/almacceleratoradvanced-components/image-20210303085806618.png "Select Dataverse Environment")
 
 > [!NOTE]
 > In order for your Environment to show up in this drop down a service connection in the Azure DevOps project you just selected is required (see [Create a Service Connection for DevOps to access Power Platform](setup-almacceleratoradvanced.md#create-service-connections-for-devops-to-access-power-platform). Additionally, verify that you've followed the steps to reconnect the flow above if you do not see any environments in the list.
 
-1. By default the **unmanaged solutions** in your Environment will be displayed in the main window with buttons to **Push Changes** and **Create Pull Requests**.
+4. By default the **unmanaged solutions** in your Environment will be displayed in the main window with buttons to **Push Changes** and **Create Pull Requests**.
 
-1. To import an unmanaged solution from an existing Azure DevOps project to begin making changes, select the **+ Import Solutions** button and select a **Branch Name, Solution Folder and Configuration (Optional)**.
+5. To import an unmanaged solution from an existing Azure DevOps project to begin making changes, select the **+ Import Solutions** button and select a **Branch Name, Solution Folder and Configuration (Optional)**.
 
    - **Branch Name** is based on the branches in Azure DevOps for the Project you selected in the configuration.
 
@@ -143,9 +143,9 @@ The AA4AM Canvas App provides a convenience layer on top of the AA4AM Pipelines.
 
    ![Import Solution from Branch in Azure DevOps](media/almacceleratoradvanced-components/image-20210303085946610.png "Import Solution from Branch in Azure DevOps")
 
-1. Once your solution is imported into Dataverse, or you've created a new unmanaged solution and made your customizations, you can begin configuring your solution for deployment.
+6. Once your solution is imported into Dataverse, or you've created a new unmanaged solution and made your customizations, you can begin configuring your solution for deployment.
 
-2. **Select the Configure Deployment Settings link** under the name of the Solution. On the configuration deployment page, you'll see the following items
+7. **Select the Configure Deployment Settings link** under the name of the Solution. On the configuration deployment page, you'll see the following items
 
    - Deployment Environments
 
@@ -188,7 +188,7 @@ The AA4AM Canvas App provides a convenience layer on top of the AA4AM Pipelines.
       - Use  the **dropdown to select a Dataverse user** to own the Flow in the downstream environment.
       - To view the Flow **select the name of the Flow** to open a new window with the Flow Definition.
 
-3. Once you've configured your solution, you can push your changes to Git using the **Push Changes to Git** button for your solution.
+8. Once you've configured your solution, you can push your changes to Git using the **Push Changes to Git** button for your solution.
 
 > [!NOTE]
 > Be sure to publish your changes before initiating the push. If a newly created solution doesn't show in your list immediately. Click the Refresh button to reload all solutions.
@@ -199,7 +199,7 @@ The AA4AM Canvas App provides a convenience layer on top of the AA4AM Pipelines.
    - When the push begins, a waiting indicator will appear. If the push is successful, a checkbox will appear otherwise a red x will appear. To see the progress of your push, click the progress indicator which will take you to the running pipeline in Azure DevOps.
    - Repeat the pushes as you iterate on your solution.
 
-1. When you're ready to create a pull request for the changes to your branch, select the Create Pull Request button.
+9. When you're ready to create a pull request for the changes to your branch, select the Create Pull Request button.
 
 > [!NOTE]
 > Be sure to publish your changes before initiating the push.
@@ -207,16 +207,16 @@ The AA4AM Canvas App provides a convenience layer on top of the AA4AM Pipelines.
    - Specify the Source and Target branch and enter a Title and Comment for your Pull Request and Select Create.**
      ![Create Pull Request properties](media/almacceleratoradvanced-components/image-20210303085409740.png "Create Pull Request properties")
 
-1. Once a Pull Request is created for your changes, the remaining steps to Merge and Release to Test occur in Azure DevOps. Depending on the Branch Policies and Triggers configured for your Target Branch, an Azure DevOps user can approve or reject your Pull Request based on their findings in the submitted changes. The status of the Pull Request will appear in the App.
+10. Once a Pull Request is created for your changes, the remaining steps to Merge and Release to Test occur in Azure DevOps. Depending on the Branch Policies and Triggers configured for your Target Branch, an Azure DevOps user can approve or reject your Pull Request based on their findings in the submitted changes. The status of the Pull Request will appear in the App.
 
-1. In order to initiate a **solution upgrade** in the target environment, you can tag a Pull Request with the **solution-upgrade** tag.
+11. In order to initiate a **solution upgrade** in the target environment, you can tag a Pull Request with the **solution-upgrade** tag.
 
    ![Tag Pull Request for Solution Upgrade](media/setup-almacceleratoradvanced/image-20210524113929989.png "Tag Pull Request for Solution Upgrade")
 
-1. Approving the PR will start the deployment of your solution to the Test environment. If the Pull Request is approved, you'll see the progress move to Test and a status based on the pipeline's success or failure in that stage.
+12. Approving the PR will start the deployment of your solution to the Test environment. If the Pull Request is approved, you'll see the progress move to Test and a status based on the pipeline's success or failure in that stage.
 
    ![Deployment progress status indicators](media/almacceleratoradvanced-components/image-20210303085132733.png "Deployment progress status indicators")
 
-1. For Production, a Pull Request will need to be created in Azure DevOps that merges the changes into your Production release branch. The same approval process will be required depending on your branch policies and once the PR is completed your solution will be pushed to Production. When the pipeline for deploying to Production is finished, you'll see the status of the deployment in the App.
+13. For Production, a Pull Request will need to be created in Azure DevOps that merges the changes into your Production release branch. The same approval process will be required depending on your branch policies and once the PR is completed your solution will be pushed to Production. When the pipeline for deploying to Production is finished, you'll see the status of the deployment in the App.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
