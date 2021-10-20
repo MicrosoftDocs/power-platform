@@ -88,12 +88,20 @@ We then parse the Azure AD token response into a typed object using this JSON sc
 > [!div class="mx-imgBorder"] 
 > ![Parse the Azure AD token response into a strongly typed object.](media/capacity5.png "Parse the Azure AD token response into a strongly typed object")
 
-[PowerShell](#nav/PowerShell)
+# [PowerShell](#nav/PowerShell)
+## Launch Azure Cloud Shell
+
+The Azure Cloud Shell is a free interactive shell that you can use to run the steps in this article. It has common Azure tools preinstalled and configured to use with your account. You can also install the Power Platform Administration module so that you can run Power Platform and Azure commandlets side by side, in the same session.
+
+To open the Cloud Shell, just select **Try it** from the upper right corner of a code block. You can also launch Cloud Shell in a separate browser tab by going to [https://shell.azure.com](https://shell.azure.com). Select **Copy** to copy the blocks of code, paste it into the Cloud Shell, and press **Enter** to run it.
 
 ## Initialize the variables and connect to Power Platform API
 Use the below script to initialize some variables that we will use throughout the tutorial.  Optionally, you may use Username/Password authentication but it is not advised.
 
-```powershell
+```azurepowershell-interactive
+#Install the module
+Install-Module -Name Microsoft.PowerApps.Administration.PowerShell
+
 # Set variables for your session
 $TenantId = "YOUR_TENANT_GUID_FROM_AAD"
 $SPNId = "YOUR_AZURE_APPLICATION_REGISTRATION_CLIENT_ID"
@@ -106,7 +114,7 @@ Add-PowerAppsAccount -Endpoint prod -TenantID $TenantId -ApplicationId $SPNId -C
 ```
 ---
 
-[Azure](#nav/Azure)
+# [Azure](#nav/Azure)
 ## Call the List Environments endpoint
 Now is the time to call the Power Platform API.  We’ll use the List Environments endpoint to retrieve all of our environments and their metadata, specifically with the $expand parameter for capacity.  This also uses the Authorization header with the Bearer Token we received in the previous section from Azure AD.  If you used username/password context, you can also enter that Bearer Token at this step as well.
 
@@ -374,16 +382,16 @@ We then parse the Power Platform API response into a strongly typed object using
 > [!div class="mx-imgBorder"] 
 > ![Parse the Power Platform API response into a strongly typed object.](media/capacity7.png "Parse the Power Platform API response into a strongly typed object")
 
-[PowerShell](#nav/PowerShell)
+# [PowerShell](#nav/PowerShell)
 ## List environments with Capacity flag
 Use the below script to pull a list of all environments you are the administrator over.  Using the new "-Capacity" flag you can add capacity consumption information for each environment retrieved.
 
-```powershell
+```azurepowershell-interactive
 #fetch environment list with capacity populated.  This is only possible when calling full environment list
 $environmentsList = Get-AdminPowerAppEnvironment -Capacity
 ```
 
-[Azure](#nav/Azure)
+# [Azure](#nav/Azure)
 ## Iterate through the Capacity object
 This is the most complex part of the tutorial.  Here we'll use a loop inside of a loop to iterate each environment in the List Environment response, and each environment has an array of capacity details that we will iterate as well.  This will let us capture the necessary information for each environment row in our capacity report table.
 
@@ -666,11 +674,11 @@ As the last step in the ‘For each environment’ loop, we now can capture the 
 > [!div class="mx-imgBorder"] 
 > ![Capture the environment details.](media/capacity11.png "Capture the environment details")
 
-[PowerShell](#nav/PowerShell)
+# [PowerShell](#nav/PowerShell)
 ## Iterate through the Capacity object
 This is the most complex part of the tutorial.  Here we'll use a loop inside of a loop to iterate each environment in the List Environment response, and each environment has an array of capacity details that we will iterate as well.  We will construct a PSObject that contains relevant properties from each pass through the environment objects.
 
-```powershell
+```azurepowershell-interactive
 foreach($environment in $environmentsList)
 {
     Write-Host "Traversing environment " $environment.DisplayName " capacity metadata..."
@@ -694,7 +702,7 @@ foreach($environment in $environmentsList)
     
 }
 ```
-[Azure](#nav/Azure)
+# [Azure](#nav/Azure)
 ## Save to an HTML table
 Congratulations, you’ve now made it to the easy part!  Now that we have our fully populated and simplified environment array, we can pass this value to the Create HTML table connector:
 
@@ -708,11 +716,11 @@ Running the logic app, we can now see the output of the HTML table report:
 
 The report could be optionally emailed to stakeholders in this example for Cost Accounting purposes, or the data could be saved into a database for further analysis and historical trending.  
 
-[PowerShell](#nav/PowerShell)
+# [PowerShell](#nav/PowerShell)
 ## Output to a table
 Congratulations, you’ve now made it to the easy part!  Now that we have our fully populated and simplified environment array, we can pass our array to the Format-Table commandlet for output:
 
-```powershell
+```azurepowershell-interactive
 $capacityDetailsList | Format-Table -AutoSize
 ```
 
