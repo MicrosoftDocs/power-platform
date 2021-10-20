@@ -1,7 +1,7 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps"
 description: Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps 
-ms.date: 10/14/2021
+ms.date: 10/20/2021
 ms.topic: "article"
 ms.assetid: 994cc854-17f6-45d6-bc20-fcf1a3f2d6d6
 searchScope:
@@ -105,32 +105,6 @@ Main forms will no longer include the footer when a record is opened. Any out of
 The out of box fields currently on the footer is removed and included on the form as part of the 2021 release wave 2 updates. So, you don't lose status, unsaved changes, or the option to open a form in a new window. The **Save** option is already available in the command bar and is always visible to the user. 
 
 While we understand that these types of changes can be disruptive for makers that use the footer today, we always evaluate the experiences. We do this to ensure they provide a modern experience that improves usability, support accessibility requirements, and improves discoverability for highly used fields and controls on a page.
-
-## Tooltips for column descriptions on model-driven forms
-
-With the upcoming 2021 release wave 2 (public preview in August 2021 and GA in October 2021), hover tooltips on column labels for full descriptions will be removed.
-
-#### Why is this needed? 
-
--	These tooltips aren't discoverable in a way that is accessible for sighted, non-sighted, and mobile users to access additional information about the column. 
-
-#### Impact
-
-- Starting October 2021, these descriptions will no longer be available on hover. 
-- We will be introducing a new fully accessible feature for sighted, non-sighted, and mobile users in April 2022.
-
-## Business recommended icon on model-driven forms
-
-With the upcoming 2021 release wave 2 (public preview in August 2021 and GA in October 2021), business recommended icon on model forms will be removed.
-
-#### Why is this needed? 
-
--	The icon is not presented in an accessible way to identify itself. 
-
-#### Impact
-
-- Starting October 2021, these icons will no longer be available on the form. 
-- We will be introducing a new fully accessible feature for April 2022.
 
 ## Model-driven app controls deprecation
 
