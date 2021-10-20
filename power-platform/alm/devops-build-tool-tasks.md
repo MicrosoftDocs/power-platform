@@ -203,7 +203,7 @@ steps:
 | `AsyncOperation`<br/>Asynchronous import | Import solution as asynchronous batch job; selecting asynchronous will poll and wait until MaxAsyncWaitTime has been reached (true\|false). |
 | `MaxAsyncWaitTime`<br/>Maximum wait time | Maximum wait time in minutes for the asynchronous operation; default is 60 min (1 hr), same as Azure DevOps default for tasks.|
 | `PublishWorkflows`<br/>Activate processes after import | Specify whether any processes (workflows) in the solution should be activated after import (true\|false). |
-| `UseDeploymentSettingsFile`<br/>Use deployment settings file | Connection references and environment variable values can be set using a deployment settings file (true\|false). |
+| `UseDeploymentSettingsFile`<br/>Use deployment settings file | Connection references and environment variable values can be set using a [deployment settings](conn-ref-env-variables-build-tools.md#deployment-settings-file) file (true\|false). |
 | `DeploymentSettingsFile`<br/>Deployment settings file | (Required when `UseDeploymentSettingsFile`=**true**) The path and file name of the deployment settings file. |
 
 ### Power Platform Apply Solution Upgrade
@@ -440,6 +440,8 @@ While version number can be hardcoded in the pipeline, it is recommended to use 
 This provides options to define the exact shape of version number under the "Options" tab, for example: $(Year:yyyy)-$(Month:MM)-$(Day:dd)-$(rev:rr)-3
 
 This definition can then be used in the Set Solution Version task by setting the Version Number property with: $(Build.BuildId) instead of hard coding 20200824.0.0.2.
+
+Alternatively a powershell inline task script $(Get-Date -Format yyyy.MM.dd.HHmm) output set to empty variable named SolutionVersion as Write-Host ("##vso[task.setvariable variable=SolutionVersion;]$version"), Set Solution Version as $(SolutionVersion).
 
 ### Power Platform Deploy Package
 
