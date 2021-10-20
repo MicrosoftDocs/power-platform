@@ -24,7 +24,7 @@ Let’s now look at the stages and opportunities in each stage in detail:
 
 ## Level 100 – Initial
 
-*(organic, chaotic, ad hoc, individual heroics)*: This phase describes the starting point for use of a new or undocumented process. In the Initial phase the organization has pockets of success or experimentation with Power Platform, but without any visibility into organization-wide adoption and use.  There is no overall strategy or governance approach, apps are largely in the Default environment and no DLP policies have been put in place.  Apps are mostly used by a single team and supported by the makers. Apps primarily use Excel and SharePoint as their data sources. The organisation sees the potential of a strategic investment in the Power Platform, but there is no clear path forward for organisation-wide execution.
+*(organic, chaotic, ad hoc, individual heroics)*: This phase describes the starting point for use of a new or undocumented process. In the Initial phase the organization has pockets of success or experimentation with Power Platform, but without any visibility into organization-wide adoption and use.  There is no overall strategy or governance approach, apps are largely in the Default environment and no DLP policies have been put in place.  Apps are mostly used by a single team and supported by the makers. Apps primarily use Excel and SharePoint as their data sources. The organization sees the potential of a strategic investment in the Power Platform, but there is no clear path forward for organisation-wide execution.
 
 ### Opportunities
 
