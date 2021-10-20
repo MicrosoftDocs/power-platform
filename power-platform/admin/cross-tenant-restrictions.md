@@ -85,55 +85,43 @@ In this scenario, the admin adds the Fabrikam tenant to both the inbound and out
 |---------|---------|---------|
 |Contoso     | Contoso        | Yes         |
 |Contoso (tenant isolation **On**s) <br /> Fabrikam added to both allow lists    | Fabrikam        | Yes         |
-|Fabrikam     | Contoso (tenant isolation **On**) <br /> Fabrikam added to both allow lists        | No (inbound)        |
+|Fabrikam     | Contoso (tenant isolation **On**) <br /> Fabrikam added to both allow lists        | Yes       |
 |Fabrikam     | Fabrikam        | Yes        |
 
 :::image type="content" source="media/allow-list-both-tenants.png" alt-text="Bi-directional allow lists":::
 
 
-## Enable tenant isolation
+## Enable tenant isolation and configure allow list
 
-Tenant Isolation setting is available under Policy Governance -> Tenant Isolation hierarchy in Power Platform Admin Center. Turning tenant isolation on or off in your tenant is as simple as flipping the Tenant Isolation switch. 
+In the Power Platform admin center, tenant isolation is set with **Policy Governance** -> **Tenant Isolation**.  
 
-image
+:::image type="content" source="media/enable-tenant-isolation.png" alt-text="Enable tenant isolation":::
 
-Tenant Isolation Allow List can be configured by using the ‘New tenant rule’ button from the tenant isolation page. If Tenant Isolation is turned “Off”, you can add/edit the rules below. However, these rules will not be enforced until you turn Tenant Isolation “On”. 
+The tenant isolation Allow List can be configured by using **New tenant rule** on the **Tenant Isolation** page. If tenant isolation is **Off**, you can add or edit the rules in the list. However, these rules will not be enforced until you turn tenant isolation **On**. 
 
-image
+:::image type="content" source="media/new-tenant-rule.png" alt-text="New tenant rule to add rule to the allow list":::
 
-This would launch a side panel where admins can choose Direction of the allow list entry from – Inbound, Outbound, Inbound and Outbound.   
+From the **New tenant rule Direction** drop-down list, choose the direction of the allow list entry.   
 
-image
+:::image type="content" source="media/new-tenant-rule-select-direction.png" alt-text="Select the direction for the new tenant rule":::
 
-Along with the direction in which the tenant entry is allowed, admins have the choice to enter the value of the allowed tenant as either tenant domain or tenant ID. The entry can be saved and gets added to the rule set along with other allowed tenants. If admins use the tenant domain to add the allow list entry, the UI auto calculates the tenant ID. 
+You can also enter the value of the allowed tenant as either tenant domain or tenant ID. Once saved the entry gets added to the rule list along with other allowed tenants. If you use the tenant domain to add the allow list entry, the Power Platform admin center auto calculates the tenant ID. 
 
-image
+:::image type="content" source="media/new-tenant-rule-select-tenant-domain-id.png" alt-text="Select tenant domain or tenant ID for the new tenant rule":::
 
-Once the entry appears in the list Tenant ID and Azure AD Tenant Name fields are displayed. Please note that in Azure AD tenant name is a different concept from tenant domain, And while tenant name is unique for the tenant, a tenant may have more than one domain names. 
+Once the entry appears in the list, **Tenant ID** and **Azure AD tenant name** fields are displayed. Note that in Azure AD tenant name is a different from the tenant domain. The tenant name is unique for the tenant, a tenant may have more than one domain name. 
 
-image
+:::image type="content" source="media/new-tenant-rule-in-allow-list.png" alt-text="New tenant rule appears in allow list":::
 
-The UI accepts ‘*’ as a special character to signify all tenants are allowed in the designated direction when tenant isolation is turned on. 
+You can use "\*" as a special character to signify all tenants are allowed in the designated direction when tenant isolation is turned on. 
 
-image
+:::image type="content" source="media/new-tenant-rule-all-tenants.png" alt-text="All tenants are allowed in the designated direction when tenant isolation is turned on":::
 
-Admins can edit the direction of the tenant allow list entry based on business requirements. Please note that Tenant Domain or ID field cannot be edited in the side panel. 
+You can edit the direction of the tenant allow list entry based on business requirements. Please note that Tenant Domain or ID field cannot be edited in the side panel. 
 
-image
+:::image type="content" source="media/edit-tenant-rule.png" alt-text="Edit a tenant rule":::
 
-Existing entries can also be deleted. 
-
-image
-
-UI also supports select all, sorting and search capabilities on the entries in the allow list. 
-
-image
-
-Admins can perform all the allow list operations like add, edit, delete while tenant isolation is turned ‘on’ or ‘off’. As expected the allow list entries do have a practical effect on the connection behavior when tenant isolation is turned ‘off’ since all cross-tenant connections are allowed anyway in this setting. 
-
-image
-
-
+You can perform all the allow list operations like add, edit, and delete while tenant isolation is turned on or off. Allow list entries do have an effect on the connection behavior when tenant isolation is turned off since all cross-tenant connections are allowed. 
 
 <!--
 With tenant restrictions, organizations can control access to SaaS cloud applications, based on the Azure AD tenant the applications use for single sign-on. With tenant restrictions, organizations can specify the list of tenants that their users are permitted to access. Azure AD then only grants access to these permitted tenants using Azure AD-based tenant restriction. 
