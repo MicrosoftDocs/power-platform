@@ -113,15 +113,15 @@ Once the entry appears in the list, **Tenant ID** and **Azure AD tenant name** f
 
 :::image type="content" source="media/new-tenant-rule-in-allow-list.png" alt-text="New tenant rule appears in allow list":::
 
-You can use "\*" as a special character to signify all tenants are allowed in the designated direction when tenant isolation is turned on. 
+You can use "\*" as a special character to signify all tenants are allowed in the designated direction when tenant isolation is turned **On**. 
 
 :::image type="content" source="media/new-tenant-rule-all-tenants.png" alt-text="All tenants are allowed in the designated direction when tenant isolation is turned on":::
 
-You can edit the direction of the tenant allow list entry based on business requirements. Please note that Tenant Domain or ID field cannot be edited in the side panel. 
+You can edit the direction of the tenant allow list entry based on business requirements. Note that Tenant Domain or ID field can't be edited in the **Edit tenant rule** page. 
 
 :::image type="content" source="media/edit-tenant-rule.png" alt-text="Edit a tenant rule":::
 
-You can perform all the allow list operations like add, edit, and delete while tenant isolation is turned on or off. Allow list entries do have an effect on the connection behavior when tenant isolation is turned off since all cross-tenant connections are allowed. 
+You can perform all the allow list operations like add, edit, and delete while tenant isolation is turned **On** or **off**. Allow list entries do have an effect on the connection behavior when tenant isolation is turned **Off** since all cross-tenant connections are allowed. 
 
 <!--
 With tenant restrictions, organizations can control access to SaaS cloud applications, based on the Azure AD tenant the applications use for single sign-on. With tenant restrictions, organizations can specify the list of tenants that their users are permitted to access. Azure AD then only grants access to these permitted tenants using Azure AD-based tenant restriction. 
