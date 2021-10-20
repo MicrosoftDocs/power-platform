@@ -2,6 +2,8 @@
   items: 
   - name: Administer Power Platform
     items:    
+    - name: Administer Power Platform
+      href: index.yml
     - name: Overview
       href: admin-documentation.md
     - name: Working with the Admin Portals 
@@ -18,6 +20,8 @@
         href: manage-email-notifications.md
       - name: Policies and communications
         href: policies-communications.md
+      - name: "Preview: Manage maintenance window"
+        href: manage-maintenance-window.md
       - name: Notifications explained
         href: notifications-explained.md 
     - name: Licensing
@@ -94,6 +98,8 @@
           href: move-environment-tenant.md
         - name: Back up and restore environment
           href: backup-restore-environments.md
+        - name: Business continuity and disaster recovery
+          href: business-continuity-disaster-recovery.md
         - name: Edit environment properties
           href: edit-properties-environment.md
         - name: Administration mode
@@ -116,6 +122,8 @@
           href: opt-in-early-access-updates.md
         - name: General availability deployment
           href: general-availability-deployment.md
+        - name: "Preview: Manage maintenance window"
+          href: manage-maintenance-window.md
       - name: Manage settings 
         items:
         - name: Power Platform 
@@ -134,7 +142,7 @@
             href: enable-languages.md
           - name: Privacy preferences
             href: settings-privacy-security.md
-          - name: Configure Relevance Search
+          - name: Configure Dataverse search
             href: configure-relevance-search-organization.md 
         - name: Business 
           items:
@@ -160,9 +168,11 @@
           items:
           - name: Create or edit business unit
             href: create-edit-business-units.md
+          - name: Update record owner
+            href: update-record-owner.md
           - name: Delete business unit
             href: delete-business-unit.md 
-          - name: Assign business unit a different parent business
+          - name: Assign business units
             href: assign-business-unit-different-parent.md 
           - name: Hierarchy security
             href: hierarchy-security.md
@@ -222,8 +232,6 @@
             href: configure-server-based-authentication-sharepoint-on-premises.md
           - name: Document management settings
             href: enable-sharepoint-document-management-specific-entities.md
-          - name: Enable Teams Integration for model-driven apps
-            href: enable-teams-integration.md
           - name: Manage document suggestions
             href: enable-document-suggestions.md
           - name: OneDrive for business
@@ -404,12 +412,19 @@
           href: analytics-ui-flow.md 
       - name: Reports
         items:
-        - name: "Preview: Create custom dashboards using Power Apps inventory and usage data"
-          href: build-custom-reports.md
+        - name: "Preview: Tenant-level analytics (default)" 
+          href: tenant-level-analytics.md
+        # Comment out the next two topics before publish
+        # - name: "Preview: Power Apps analytics report"
+        #   href: powerapps-analytics-reports.md
+        # - name: "Preview: Power Automate analytics report"
+        #   href: power-automate-analytics-reports.md
+      - name: Data export
+        items:
         - name: "Preview: Export Power Apps inventory and usage data"
           href: self-service-analytics.md
-      - name: "Preview: Tenant-level analytics" 
-        href: tenant-level-analytics.md
+        - name: "Preview: Create custom dashboards using Power Apps inventory and usage data"
+          href: build-custom-reports.md
       - name: "Preview: Analyze telemetry with Application Insights"
         items:
         - name: "Preview: Model-driven apps and Microsoft Dataverse telemetry"
@@ -434,11 +449,13 @@
         href: view-self-service-capacity.md
       - name: Free up storage space
         href: free-storage-space.md       
+      - name: Add storage capacity
+        href: add-storage.md      
     - name: Resources
       items:
       - name: Overview 
         href: view-manage-resources.md
-      - name: Manage Dynamic 365 apps
+      - name: Manage Dynamics 365 apps
         href: manage-apps.md
       - name: Manage Power Apps 
         href: admin-manage-apps.md
@@ -526,6 +543,8 @@
         href: server-cipher-tls-requirements.md
     - name: Security and governance
       items:
+      - name: Security and governance
+        href: security.yml
       - name: Overview
         href: wp-security.md     
       - name: Governance considerations
@@ -547,8 +566,32 @@
         - name: Restrict cross-tenant access 
           href: cross-tenant-restrictions.md
       - name: Data loss prevention policies 
-        href: wp-data-loss-prevention.md
         items: 
+        - name: DLP policies
+          items: 
+          - name: Overview
+            href: wp-data-loss-prevention.md
+          - name: Connector classification
+            href: dlp-connector-classification.md
+          # Comment out next until given go ahead
+          # - name: Disable new connectors by default
+          #   href: connector-off-by-default.md
+          - name: Custom connector parity  
+            href: dlp-custom-connector-parity.md 
+          - name: Granular controls
+            href: dlp-granular-controls.md
+          - name: Endpoint input
+            href: dlp-endpoint-input-formats-examples.md
+          - name: View policies and policy scope
+            href: dlp-policy-scope.md
+          - name: Effect of multiple policies
+            href: dlp-combined-effect-multiple-policies.md
+          - name: Resource exemption
+            href: dlp-resource-exemption.md
+          - name: Impact on apps and flows
+            href: dlp-impact-policies-apps-flows.md
+          - name: Known issues
+            href: dlp-known-issues.md
         - name: Create a DLP policy
           href: create-dlp-policy.md
         - name: Manage DLP policies
@@ -616,6 +659,8 @@
             href: troubleshoot-doc-management-issues.md
           - name: Known issues with document management
             href: doc-management-known-issues.md
+          - name: Switch from the list component
+            href: switching-list-component-changing-deployment.md
     - name: Data integration
       items:
       - name: Integrate data into Dataverse 
@@ -716,17 +761,21 @@
             href: supported-email-service-configurations-server-side-synchronization.md
           - name: Connect to Exchange Online
             href: connect-exchange-online.md
+          - name: Exchange Online cross tenant authentication
+            href: connect-exchange-online-server-profile-oauth.md 
           - name: Connect to Exchange Server (on-premises)
-            href: connect-exchange-server-on-premises.md
+            href: connect-exchange-server-on-premises.md 
+          - name: Hybrid Modern Authentication (HMA) for Exchange on-premises
+            href: connect-exchange-server-onprem-hma.md
           - name: Test connection to Exchange Server (on-premises)
             href: test-connection-exchange-server-onpremises.md
-          - name: Connect to IMAP or SMTP servers
+          - name: Connect to IMAP, POP, or SMTP servers
             href: connect-to-imap-servers.md 
           - name: Connect to Gmail
             items:
             - name: Connect using OAuth 2.0
               href: connect-gmail-oauth2.md
-            - name: Connect to POP3 or SMTP servers
+            - name: Connect using credentials specified by a user or queue
               href: connect-to-pop3-or-smtp-servers.md
         - name: Server-side sync configuration
           items: 
@@ -734,6 +783,8 @@
             href: best-practices-server-side-synchronization.md
           - name: Personal options that affect synchronization
             href: set-personal-options-affect-tracking-synchronization-between-dynamics-365-outlook-exchange.md
+          - name: Automatically track sent folder items
+            href: track-sent-folder-items.md
           - name: Configure incoming and outgoing email synchronization
             items: 
             - name: Configure incoming and outgoing email synchronization
@@ -746,6 +797,8 @@
             items: 
             - name: Configure appointment, contact, and task synchronization
               href: choose-records-synchronize-dynamics-365-outlook-exchange.md
+            - name: Set up default sync filters for multiple users
+              href: configure-default-sync-filters.md
             - name: Synchronized fields per entity
               href: what-fields-synchronized-outlook.md
             - name: View the fields that are synchronized with Outlook
@@ -776,16 +829,12 @@
           items:
           - name: Troubleshoot server-side synchronization
             href: troubleshooting-monitoring-server-side-synchronization.md
-          - name: Error logging in server-side synchronization
-            href: error-logging-server-side-synchronization.md   
           - name: Monitor email processing errors
             items:
             - name: Monitor email processing errors
               href: monitor-email-processing-errors.md 
             - name: Email in "Pending Send" status?
               href: why-email-message-sent-have-pending-send-status.md 
-          - name: Recover from Exchange Server failure
-            href: recover-from-exchange-server-failure.md 
        # Leave this commented out as this topic should not appear in the TOC. For context-sensitive help link.
        #   - name: When would I want to use this check box?
        #     href: when-would-want-use-check-box.md
@@ -833,7 +882,7 @@
         href: performance-tuning-and-optimization.md 
       - name: Verify network capacity and throughput for clients
         href: verify-network-capacity-throughput-clients.md
-      - name: Data query performance
+      - name: Performance insights
         href: analyze-improve-data-query-performance.md
     - name: Compliance and data privacy 
       href: wp-compliance-data-privacy.md
@@ -928,8 +977,6 @@
       href: manage-product-catalog-configuration.md 
     - name: Rich text experience for appointment activities
       href: enable-rich-text-experience.md
-  - name: "Reference: Videos and PowerPoint presentations"
-    href: videos.md
   - name: Important changes (deprecations) coming
     href: ../important-changes-coming.md
   - name: International availability

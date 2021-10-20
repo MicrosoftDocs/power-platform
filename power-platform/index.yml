@@ -110,6 +110,12 @@ conceptualContent:
       - url: https://www.youtube.com/playlist?list=PLi9EhCY4z99W2QOTgbwhFZEjpqc8YZDVH
         itemType: video
         text: "Videos: Power Apps and Power Automate Architecture Series"
+      - url: ./guidance/architecture/real-world-examples/overview.md
+        itemType: overview
+        text: Real-world architecture examples
+      - url: ./guidance/expressroute/overview.md
+        itemType: overview
+        text: Azure ExpressRoute with Power Platform
     - title: Introducing Microsoft Power Fx
       links:      
       - url: ./power-fx/overview.md

@@ -53,29 +53,29 @@ The SolutionPackager tool can be used with any source control system. After a so
   
 7. After both submissions are complete, they can repeat step #2 and then continue to make further changes in their independent organizations. They each have both sets of changes, with no overwrites of their own work.  
   
-   The previous example works only when there are changes to separate files. It is inevitable that independent customizations require changes within a single file. Based on the example shown above, consider that developer B customized the “Active Contacts” view while developer A was also customizing it. In this new example, the order of events becomes important. The correct process to reconcile this predicament, written out in full, is as follows.  
+The previous example works only when there are changes to separate files. It is inevitable that independent customizations require changes within a single file. Based on the example shown above, consider that developer B customized the “Active Contacts” view while developer A was also customizing it. In this new example, the order of events becomes important. The correct process to reconcile this predicament, written out in full, is as follows.  
   
-8. Developer A and B are both working on the same solution.  
+1. Developer A and B are both working on the same solution.  
   
-9. On independent computers, they both get the latest sources of the solution from source control, pack, and import an unmanaged solution .zip file into independent organizations.  
+1. On independent computers, they both get the latest sources of the solution from source control, pack, and import an unmanaged solution .zip file into independent organizations.  
   
-10. Developer A customizes the “Active Contacts” system view and the main form for the Contact entity.  
+1. Developer A customizes the “Active Contacts” system view and the main form for the Contact entity.  
   
-11. Developer B customizes the main form for the Account entity and changes the “Active Contacts”.  
+1. Developer B customizes the main form for the Account entity and changes the “Active Contacts”.  
   
-12. Both developers export an unmanaged solution . zip file and extract.  
+1. Both developers export an unmanaged solution . zip file and extract.  
   
     1.  Developer A will need to check out one file for the Contact main form, and one file for the “Active Contacts” view.  
   
     2.  Developer B will need to check out one file for the Account main form, and one file for the “Active Contacts” view.  
   
-13. Developer A is ready first.  
+1. Developer A is ready first.  
   
     1.  Before she submits to source control she must get latest sources to ensure no prior check-ins conflict with her changes.  
   
     2.  There are no conflicts so she is able to submit.  
   
-14. Developer B is ready next following developer A.  
+1. Developer B is ready next following developer A.  
   
     1.  Before he submits he must get the latest sources to ensure no prior check-ins conflict with his changes.  
   
@@ -89,13 +89,13 @@ The SolutionPackager tool can be used with any source control system. After a so
   
         3.  If the prior change can be deemed unnecessary, developer B allows his copy of the file to overwrite the version in source control and submits.  
   
-    Whether working on a shared organization or independent organizations, team development of Dataverse solutions requires those actively working on a common solution to be aware of the work of others. The SolutionPackager tool does not fully remove this need but it does enable easy merging of non-conflicting changes at the source control level, and it proactively highlights the concise components where conflicts have arisen.  
+ Whether working on a shared organization or independent organizations, team development of Dataverse solutions requires those actively working on a common solution to be aware of the work of others. The SolutionPackager tool does not fully remove this need but it does enable easy merging of non-conflicting changes at the source control level, and it proactively highlights the concise components where conflicts have arisen.  
   
-    The next sections are the generic processes to effectively use the SolutionPackager tool in source control when developing with teams. These work equally with independent organizations or shared development organizations, though with shared organizations the export and extract will naturally include all changes present within the solution, not just those made by the developer performing the export. Similarly, when importing a solution .zip file the natural behavior to overwrite all components will occur.  
+The next sections are the generic processes to effectively use the SolutionPackager tool in source control when developing with teams. These work equally with independent organizations or shared development organizations, though with shared organizations the export and extract will naturally include all changes present within the solution, not just those made by the developer performing the export. Similarly, when importing a solution .zip file the natural behavior to overwrite all components will occur.  
   
 <a name="create_sol"></a>   
 ## Create a solution  
- The following procedure identifies the typical steps used when first creating a solution.  
+The following procedure identifies the typical steps used when first creating a solution.  
   
 1. In a clean organization, create a solution on Dataverse server, and then add or create components as necessary.  
   

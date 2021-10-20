@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/08/2020
+ms.date: 07/16/2021
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -56,7 +56,7 @@ Users with multiple apps see the list of apps available to them, and can navigat
 > ![Unified interface apps.](media/uci-apps-home-page.png "Unified interface apps")
 
 > [!NOTE]
-> This change applies to environment URL based sign-in (for example, https://contoso.crm.dynamics.com/) on the web. It doesn't affect users who sign in using home.dynamics.com or other portals. The sign-in and home page experience for [!INCLUDE[pn_dyn-365_phones](../includes/pn-dyn-365-phones.md)] and [!INCLUDE [pn-dyn-365-tablets](../includes/pn-dyn-365-tablets.md)] remains unchanged. You can learn more at [Sign in and sign out](/dynamics365/mobile-app/dynamics-365-phones-tablets-users-guide#sign-in-and-sign-out).
+> This change applies to environment URL based sign-in (for example, https://contoso.crm.dynamics.com/) on the web. It doesn't affect users who sign in using other portals. The sign-in and home page experience for [!INCLUDE[pn_dyn-365_phones](../includes/pn-dyn-365-phones.md)] and [!INCLUDE [pn-dyn-365-tablets](../includes/pn-dyn-365-tablets.md)] remains unchanged. You can learn more at [Sign in and sign out](/dynamics365/mobile-app/dynamics-365-phones-tablets-users-guide#sign-in-and-sign-out).
 
 ### Run all apps in Unified Interface Only mode
 

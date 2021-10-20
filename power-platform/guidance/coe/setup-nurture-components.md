@@ -36,16 +36,12 @@ The Template Catalog app depends on this library. If you don't intend to use the
 
 ### Create the site
 
-If you don't already have a SharePoint site for the Microsoft Power Platform power users in your tenant, create a new team now for them to access. This site is the one specified in the following environment variable: *Power User Site URL (SharePoint Site)*. More information: [Create a team site in SharePoint](https://support.office.com/article/create-a-team-site-in-sharepoint-ef10c1e7-15f3-42a3-98aa-b5972711777d)
+If you don't already have a SharePoint site for the Microsoft Power Platform power users in your tenant, create a new team now for them to access. This site is the one you will specify in the following environment variable once the solution is installed: *Power User Site URL (SharePoint Site)*. More information: [Create a team site in SharePoint](https://support.office.com/article/create-a-team-site-in-sharepoint-ef10c1e7-15f3-42a3-98aa-b5972711777d)
 
 ### Create the library
 
-We've created a helper flow to create the library for you. See the zip file CreateCoETemplateLibaryDocLibraryinSP.zip, which is part of your CoE Starter Kit download.
-
-1. Go to [flow.microsoft.com](https://flow.microsoft.com) > **My Flows** > **Import** and import the CreateCoETemplateLibaryDocLibraryinSP.zip cloud flow.
-
-2. Ensure that the flow is turned on, and run the flow.
-3. When the flow is completed, you'll have a doc library named AppTemplates, with the following columns in the default view:
+1. Create a new document library named AppTemplates
+1. Add the following columns in the default view:
 
    | Column name | Type |
    |----|----|
@@ -104,7 +100,7 @@ If you have existing templates that you'd like to share with your makers (for ex
 
     ![Copy the feedback form URL to send and collect responses.](media/nurture-feedback.png "Copy the feedback form URL to send and collect responses")
 
-1. Save the link to the form for the *Training in a day - Feedback Form* environment variable.
+1. Save the link to the form for the *Training in a day - Feedback Form* environment variable, which will be available once the solution is installed.
 
 ## Import the solution
 
@@ -127,7 +123,7 @@ The core components solution is required for the nurture components solution, or
 
 ## Import starter data set for the Maker Assessment app
 
-Important an initial set of assessment questions to get started using the [Maker Assessment](nurture-components.md#maker-assessment) app. You can add your own questions or customize the existing ones using the admin app for this solution.
+Import an initial set of assessment questions to get started using the [Maker Assessment](nurture-components.md#maker-assessment) app. You can add your own questions or customize the existing ones using the admin app for this solution.
 
 ### Upload starter data to SharePoint Online
 
@@ -189,7 +185,7 @@ All flows in this solution depend on all environment variables' being configured
 
 | Name | Description |
 |------|---------------|
-| Training in a day - Feedback Form     | The Training in a Day package includes a flow that automatically sends a feedback request to attendees on the day of the event. Configure the form URL (<https://forms.office.com/>...) here.    |
+| Training in a day - Feedback Form     | The Training in a Day package includes a flow that automatically sends a feedback request to attendees on the day of the event. Configure the form URL (<https://forms.office.com/> or https://forms.osi.apps.mil/ for a DoD tenant) here.    |
 | Power User Site URL (SharePoint Site) | The site that your Microsoft Power Platform power users can use to communicate and share files. You'll use it here to house the template library for them. |
 | Innovation Backlog URL | (optional) URl to the [Innovation Backlog](use-innovationbacklog.md) canvas app, if you are using this app |
 | Maker Assessment Admin eMail | eMail of the admin or CoE team that will respond to queries from the Maker Assessment app |
@@ -199,17 +195,15 @@ All flows in this solution depend on all environment variables' being configured
 
 The nurture components solution contains five flows:
 
--  Admin \| Newsletter with Product Updates
+- Admin \| Newsletter with Product Updates
 
--  Admin \| Welcome Email
+- Training in a day \| Feedback Reminder
 
--  Training in a day \| Feedback Reminder
+- Training in a day \| Registration Confirmation
 
--  Training in a day \| Registration Confirmation
+- Training in a day \| Reminder 3 days prior to event
 
--  Training in a day \| Reminder 3 days prior to event
-
-Follow the same instructions to configure the flows as explained in [Activate the sync template flows](setup-core-components.md#activate-the-sync-template-flows).
+Follow the same instructions to configure the flows as explained in [Activate the sync template flows](setup-core-components.md#activate-the-flows).
 
 ## Share apps with your organization
 

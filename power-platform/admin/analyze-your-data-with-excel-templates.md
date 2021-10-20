@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/04/2020
+ms.date: 07/26/2021
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -38,9 +38,7 @@ search.app:
   
   ![Example of a pipeline analysis Excel template.](../admin/media/excel-template-example-pipeline-analysis.png "Example of a pipeline analysis Excel template")  
   
-> [!TIP]
-> [![Video symbol](../admin/media/video-thumbnail-4-crm.png "Video symbol."](https://go.microsoft.com/fwlink/p/?LinkId=404225) Check out the following video: [Create documents directly from Dynamics CRM by using Word and Excel templates (2:38)](https://go.microsoft.com/fwlink/p/?LinkID=723604)  
-  
+ 
 <a name="BKMK_CreateTemplate"></a>   
 ## Create a new Excel template  
  Following are the steps for creating an [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] template.  

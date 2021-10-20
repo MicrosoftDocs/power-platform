@@ -4,7 +4,7 @@ description: "FAQs for licensing Power Apps, Power Automate, Dataverse, Datavers
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/08/2021
+ms.date: 10/04/2021
 author: chrisgarty
 ms.subservice: admin
 ms.author: cgarty
@@ -28,9 +28,11 @@ We have found some common questions on licensing and plan options. We’ve inclu
 
 Power Apps plans:
 
-- **Power Apps per app plan** which allows individual users to run applications (2 apps and a single portal) for a specific business scenario based on the full capabilities of Power Apps for $10/user/app/month. This plan provides an easy way for customers to get started with the platform before broader scale adoption.
+- **Power Apps per app plan** which allows individual users to run applications (2 apps and a single portal) for a specific business scenario based on the full capabilities of Power Apps for $5/user/app/month. This plan provides an easy way for customers to get started with the platform before broader scale adoption.
 
-- **Power Apps per user plan** which equips a user to run unlimited applications (within service limits) based on the full capabilities of Power Apps for $40/user/month.
+- **Power Apps per user plan** which equips a user to run unlimited applications (within service limits) based on the full capabilities of Power Apps for $20/user/month.
+
+See [Power Apps pricing](https://powerapps.microsoft.com/pricing/).
 
 Power Automate Plans:
 
@@ -62,7 +64,7 @@ The guest user must have a Power Apps license assigned through one of the follow
 - The tenant hosting the app being shared
 - The home tenant of the guest user
 
-Also, the guest must have the same license that’s required for non-guests to run an app. A collection of examples is available [here](/powerapps/maker/canvas-apps/share-app#what-license-must-be-assigned-to-my-guest-so-they-can-run-an-app-shared-with-them). 
+Also, the guest must have the same license that’s required for non-guests to run an app. A collection of examples is available [here](/powerapps/maker/canvas-apps/share-app-guests#frequently-asked-questions). 
 
 ### Is non-profit, government, and academic pricing available?
 
@@ -82,7 +84,7 @@ Yes, we have a free Developer Plan to learn and build skills on Power Apps, Powe
 
 ### What happens when I use all the data storage, file storage, and flow runs included in my per user licenses?
 
-You can buy additional data storage, file storage and flow runs. See the Power Apps Licensing overview page for more information.
+You can buy additional data storage, file storage and flow runs. See [Licensing overview for Microsoft Power Platform](pricing-billing-skus.md).
 
 ### Who can buy Microsoft Power Apps and Power Automate plans?
 
@@ -271,7 +273,7 @@ Yes. With Dataverse for Teams, users now can build flows using Power Automate ma
 
 ### Which Microsoft 365 subscriptions include Dataverse for Teams and Power Virtual Agents capabilities with Teams?
 
-Dataverse for Teams and Power Virtual Agents for Teams capabilities will be available as part of select Microsoft 365 subscriptions with Microsoft Power Platform and Teams capabilities, excluding plans for US government environments (GCC, GCC High and DoD) and EDU A1 and SUB SKUs. For more information, see the [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
+Dataverse for Teams and Power Virtual Agents for Teams capabilities will be available as part of select Microsoft 365 subscriptions with Microsoft Power Platform and Teams capabilities, excluding plans for US government environments (GCC High and DoD) and EDU A1 and SUB SKUs. For more information, see the [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 
 ### How is Dataverse for Teams environment created? 
 
@@ -457,7 +459,7 @@ Yes. AI Builder capacity can be added to the P1 and P2 plans for Power Apps and 
 
 ### What is a "service credit" and how does it work? 
 
-AI Builder includes several model types, including custom and prebuilt – a full list is available [here](/ai-builder/model-types#list-of-ai-model-types).
+AI Builder includes several model types, including custom and prebuilt – a full list is available [here](/ai-builder/model-types#model-types).
 
  AI models consume service credits when they are trained, used in an app or flow, or scheduled to periodically run. The amount of capacity consumed varies based the AI model, as well as the size and complexity of the data set.
 
@@ -469,7 +471,7 @@ Each user license grants you 5000 credits, allowing you to assess the capabiliti
 
 The release status for AI Builder features is available [here](/power-platform-release-plan/2020wave1/ai-builder/).
 
-AI models available in public preview do not require paid AI Builder capacity. A full list of all models can be found [here](/ai-builder/model-types#list-of-ai-model-types).
+AI models available in public preview do not require paid AI Builder capacity. A full list of all models can be found [here](/ai-builder/model-types#model-types).
 
 ### Is a trial available for AI Builder?
 Users without an existing Power Apps or Power Automate license can access AI Builder trial capacity for 30 days by signing up for either a Power Apps or Power Automate trial. Existing Power Apps and Power Automate users can access AI Builder trial capacity for 30-days by signing into the respective service and accessing AI Builder in the left navigation pane. 

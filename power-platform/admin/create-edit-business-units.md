@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/21/2021
+ms.date: 10/05/2021
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -20,7 +20,7 @@ search.app:
 
 A business unit is a logical grouping of related business activities.  
   
- If your organization is structured around departments or divisions that have separate products, customers, and marketing lists, you might want to create business units. Business units are mapped to an organization’s departments or divisions. Users can securely access data in their own business unit, but they can’t access data in other business units.  
+ If your organization is structured around departments or divisions that have separate products, customers, and marketing lists, you might want to create business units. Business units are mapped to an organization’s departments or divisions. Users can securely access data in their own business unit, but they can’t access data in other business units unless they are assigned a security role from that business unit.  
   
  Business units, security roles, and users are linked together in a way that conforms to the role-based security model. Use business units together with security roles to control data access so people see just the information they need to do their jobs.   
   
@@ -47,6 +47,10 @@ A business unit is a logical grouping of related business activities.
 - You can assign additional team to a business unit but there can only be one business unit per team.
 
 - A team can consist of users from one or many business units. Consider using this type of team if you have a situation where users from different business units need to work together on a shared set of records.  
+
+- (Preview) To allow your users to access data in a business unit, you can assign the user a security role from that business unit.  
+
+- (Preview) A user can be assigned to security roles from any business unit regardless of what the business unit the user belongs to. 
 
 ## Create a new business unit  
   
@@ -100,7 +104,7 @@ Make sure you have the System Administrator or System Customizer security role o
 ### Change the business unit for a user  
 
 > [!IMPORTANT]
-> By changing the business unit for a user, you remove all security role assignments for the user. At least one security role must be assigned to the user in the new business unit. 
+> By changing the business unit for a user, you can remove all security role assignments for the user. At least one security role must be assigned to the user in the new business unit. 
   
 1. Select an environment and go to **Settings** > **Users + permissions** > **Users**.
   
@@ -112,6 +116,19 @@ Make sure you have the System Administrator or System Customizer security role o
   
 4. In the **Change Business Unit** dialog box, use the **Lookup** button (![Lookup button.](media/lookup-4.png)) to select a new business unit, and then select **OK**.  
   
+> [!NOTE]
+> If you have enabled [**Record ownership across business units**](wp-security-cds.md#matrix-data-access-structure-modernize-business-units---preview), you can use the following [environment database settings](environment-database-settings.md) to manage your user security role and how you want to move the user’s records when you are changing the user’s business unit.
+> 
+> 1. **DoNotRemoveRolesOnChangeBusinessUnit**
+>    default = false  (the user’s assigned security role is removed) 
+>    You can set it to true, and the user’s assigned security role for the from-Business unit is not removed. 
+> 2. **AlwaysMoveRecordToOwnerBusinessUnit**
+>    default = true (user owned records are moved to the new user’s business unit) 
+>    You can set it to false, and the user owned records’ Business unit is not moved to the new user’s business unit. Note that the user will not be able to access these records unless a security role from the old business unit is assigned to the user. 
+
+
+
+
 ### See also  
  [Delete a business unit](delete-business-unit.md)   
  [Assign a business unit a different parent business](assign-business-unit-different-parent.md)

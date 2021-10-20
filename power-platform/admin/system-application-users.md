@@ -4,7 +4,7 @@ description: "Learn about the special system and application users created when 
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 06/15/2021
+ms.date: 10/14/2021
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
@@ -31,7 +31,8 @@ Most of these users are hidden from user views but they can be found by using th
 | | Support user |crmoln@microsoft.com |To allow Microsoft support staff to have restricted/limited access to any customer environment for customer support. |Support user (does not have privilege to customer data) |
 | | Delegated admin |crmoln2@microsoft.com |See [For partners: the Delegated admin](for-partners-delegated-administrator.md). |System admin |
 |Application | Business Application Platform Service account |bap_sa@microsoft.com |To setup Power Apps system and configurations. |System admin |
-| | Dataverse relevance search | RelevanceSearch@onmicrosoft.com | To fetch table data and metadata for Dataverse search feature | Service Reader |
+| | App Management User | capam@microsoft.com | To allow App Management Services to query tenant details such as Tenant country | System admin |
+| | Dataverse Dataverse search | RelevanceSearch@onmicrosoft.com | To fetch table data and metadata for Dataverse search feature | System admin |
 | | Dynamics 365 Office Data Service | diofficedata@microsoft.com |Service Application to perform data integration between Microsoft Dataverse and Microsoft 365. | DataLakeWorkspaceAppAccess |
 | | Dynamics 365 Athena-CDStoAzuredatalake | Dynamics365Athena-CDStoAzuredatalake@onmicrosoft.com |Service application to perform data integration between Microsoft Dataverse to Azure Data Lake. |DataLakeWorkspaceAppAccess |
 | | Dynamics 365 Athena2-CDStoAzuredatalake | Dynamics365Athena2-CDStoAzuredatalake@onmicrosoft.com |Service application to perform data integration between Dataverse to Azure Data Lake. |DataLakeWorkspaceAppAccess |
@@ -49,7 +50,7 @@ Most of these users are hidden from user views but they can be found by using th
 | | # CDSReportService | CDSReportService@onmicrosoft.com | To allow user to run reports. |N/A |
 | | Power Platform Dataflows | ppdfcdsclient@onmicrosoft.com | Power Platform Dataflows service application to perform data preparation and loading into Dataverse and Azure Data Lake. | System Administrator
 | | AIBuilderProd | aibuilderfpapp@onmicrosoft.com | To perform authentication for AI Builder. | System admin |
-| | PowerAutomate-ProcessMining | PowerAutomate-ProcessMining@onmicrosoft.com | To allow Process Advisor service to interact with Dataverse. | Environment Maker, Process Mining Application User |
+| | PowerAutomate-ProcessMining | PowerAutomate-ProcessMining@onmicrosoft.com | To allow Process Advisor service to interact with Dataverse. | Environment Maker, Process Advisor Application |
 | | AriaMdlExporter | AriaMdlExporter@onmicrosoft.com | To export data from Engagement Insights to Managed Data Lake. | DataLakeWorkspaceAppAccess |
 | | CDSFileStorage | CDSFileStorage@onmicrosoft.com | To perform background operations like Organization Lifecycle (OLC) operations, file reconciliation and migration. | FileStoreService App Access |
 | | CDSUserManagement | CDSUserManagement@onmicrosoft.com | To provision and synchronize users into Dataverse from Active Directory. | System Administrator |
@@ -74,15 +75,17 @@ Most of these users are hidden from user views but they can be found by using th
 - Records created/updated by this user account are audited. 
 
 **Technical details on the security?**
-- This user account cannot sign in to Dynamics 365 apps.  
+- This user account can't sign in to Dynamics 365 apps.  
 - Administrators have the option to use this user account when registering their plug-ins. 
-- This user account does not have a mailbox, so they cannot be used to send or receive emails. 
-- The details of this user account cannot be modified from the User Form interface. 
-- This user account does not show up in any views.
+- This user account doesn't have a mailbox, so they can't be used to send or receive emails.
+- Since you can't log into the apps using this user account, it doesn't have any related entities (user settings, queues, calendar, team membership, internal address, etc.). 
+- The details of this user account can't be modified from the User Form interface. 
+- This user account doesn't show up in any views.
 
 **The purpose of the application users?** 
 - The application user is a built-in user account that is used to perform integration and system back-end service to support a particular feature.  
-- Since these are built-in user accounts, they cannot be updated. The security role that is assigned to these accounts cannot be updated either.  This is to prevent any service outages.  
+- Since these are built-in user accounts, they can't be updated. The security role that is assigned to these accounts cannot be updated either. This is to prevent any service outages.  
+- These users do not consume any service licenses.
 
 
 

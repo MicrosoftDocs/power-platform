@@ -7,7 +7,7 @@ ms.subservice: alm
 ms.author: kartikka
 manager: kvivek
 ms.custom: ""
-ms.date: 06/28/2021
+ms.date: 08/30/2021
 ms.reviewer: "pehecke"
 ms.service: power-platform
 ms.topic: "article"
@@ -197,6 +197,23 @@ Provides the ability to deploy a package dll or a zip file with a package.
 |client-secret| The client secret used to authenticate the GitHub pipeline. This parameter is **required** when authenticating with Service Principal credentials.|
 |tenant-id| The tenant ID when authenticating with `app-id` and `client-secret`.|
 |package| (Required) The path to the package dll or zip file with a package.|
+
+## Portal tasks
+
+These tasks perform the following actions against Power Apps portals.
+
+### upload-paportal
+
+Uploads data to Power Apps portals.
+
+| Parameter    | Description       |
+|---------------|-------------------|
+|environment-url| (Required) The URL for the  environment that you want to import the solution into (for example, https://YourOrg.crm.dynamics.com).|
+|app-id| The application ID to authenticate with. This parameter is **required** when authenticating with Service Principal credentials.|
+|client-secret| The client secret used to authenticate the GitHub pipeline. This parameter is **required** when authenticating with Service Principal credentials.|
+|tenant-id| The tenant ID when authenticating with `app-id` and `client-secret`.|
+|upload-path|Path where the website content is stored (alias: -p).|
+|deployment-profile| Upload portal data with environment details defined through [profile variables](/powerapps/maker/portals/power-apps-cli#use-deployment-profile) in deployment-profiles/\[profile-name].deployment.yaml file.|
 
 ## GitHub workflow authoring
 

@@ -108,7 +108,7 @@ Every app and other solution components such as entities you create or any custo
 > are known as the *Common Data Service Default Solution* and the *Default* solutions.
 > More information: [Default Solution and Common Data Service Default Solution](use-solutions-for-your-customizations.md)
 
-The publisher of a solution where a component is created is considered the owner of that component. The owner of a component controls what changes other publishers of solutions including that component are allowed to make or restricted from making. It is possible to move the ownership of a component from one solution to another within the same publisher, but not across publishers. Because of this, it's often best to define a single publisher so you can change the layering model across publishers later.
+The publisher of a solution where a component is created is considered the owner of that component. The owner of a component controls what changes other publishers of solutions including that component are allowed to make or restricted from making. It is possible to move the ownership of a component from one solution to another within the same publisher, but not across publishers. Once you introduce a publisher for a component in a managed solution, you can’t change the publisher for the component. Because of this, it's best to define a single publisher so you can change the layering model across solutions later.
 
 The solution publisher specifies who developed the app. For this reason, you
 should create a solution publisher name that's meaningful.

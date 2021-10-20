@@ -7,7 +7,7 @@ ms.subservice: alm
 ms.author: matp
 manager: kvivek
 ms.custom: ""
-ms.date: 05/05/2020
+ms.date: 08/04/2021
 ms.reviewer: ""
 ms.service: power-platform
 ms.topic: "article"
@@ -17,10 +17,12 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# Create and update solutions 
+# Create and update solutions
+
 To locate and work with just the components you’ve customized, create a solution and do all your customization there. Then, always remember to work in the context of the custom solution as you add, edit, and create components. This makes it easy to export your solution for import to another environment or as a backup. More information [Create a solution](/powerapps/maker/common-data-service/create-solution)
 
 ## Update a solution
+
 Make changes to your unmanaged solution, such as adding or removing components.
 Then, when you import a managed solution that was previously imported, the
 import logic detects the solution as an update and displays the following screen of options.

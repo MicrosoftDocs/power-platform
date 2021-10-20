@@ -4,7 +4,7 @@ description: Understand the different types of teams and how to view and manage 
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/02/2021
+ms.date: 10/14/2021
 author: jimholtz
 ms.subservice: admin
 ms.author: jimholtz
@@ -21,6 +21,9 @@ search.app:
 # Microsoft Dataverse teams management
 
 Using Microsoft Dataverse teams is optional. However, teams provide an easy way to share business objects and let you collaborate with other people across business units. Although a team belongs to one business unit, it can include users from other business units. You can associate a user with more than one team. This topic discusses the different types of teams and their various operations.
+
+> [!TIP]
+> Check out the video: [Administer application users, security roles, teams, and users in the Power Platform admin center](https://www.microsoft.com/videoplayer/embed/RWJBr8).
 
 ## Types of teams
 
@@ -117,6 +120,10 @@ You can add and delete members from a team.
      :::image type="content" source="media/dataverse-team-manage-add-members.png" alt-text="Screenshot of adding team members.":::
 
    - To delete a team member, select the user and then select **Remove**.
+
+> [!NOTE]
+> Privilege requirement: To add or remove a team member from an owner team, the user needs to have more than or equal to the privileges that the team has. For example, if the team is assigned with a System Customizer security role, the user will need a System Customizer or a System Administrator security role.
+
 
 ### Manage the security roles of a team
 

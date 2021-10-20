@@ -84,7 +84,7 @@ Dynamics 365 Plan is a user subscription that includes [!INCLUDE[pn_ms_dyn_365_f
   
 - Mobile offline synchronization  
   
-- Relevance Search  
+- Dataverse search  
   
 - [!INCLUDE[pn_azure_machine_learning](../includes/pn-azure-machine-learning.md)] integration  
   

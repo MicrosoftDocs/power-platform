@@ -4,7 +4,7 @@ description: In this quickstart, you learn how to create a data loss prevention 
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 09/24/2020
+ms.date: 10/11/2021
 author: jimholtz
 ms.subservice: admin
 ms.author: jimholtz
@@ -38,7 +38,10 @@ We refer to these roles throughout this article as *tenant admins*. More informa
 
 ### Environment-level
 
-To follow the steps for environment-level policies, you need to have Power Apps Environment Admin permissions.  
+To follow the steps for environment-level policies, you need to have Power Apps Environment Admin permissions. For environments with a Dataverse database, you need to be assigned the System Administrator role instead. 
+
+> [!NOTE] 
+> If using the **SingleEnvironment** EnvironmentType parameter when using PowerShell to create a DLP policy, the user account used to create the policy **MUST** have **Environment-level** and **MUST NOT** have **Tenant-level** permissions as described above, or a Bad Request error will be returned and the policy will not be created.
 
 ## Find and view DLP policies
 
@@ -81,7 +84,7 @@ After this policy is saved, any Power Apps or Power Automate maker who is part o
 
    **Attributes** <br /><br />
 
-   <table style="width:100%">
+   <table width="100%">
    <tr>
    <th>Attribute</th>
    <th>Description</th>
@@ -92,7 +95,7 @@ After this policy is saved, any Power Apps or Power Automate maker who is part o
    </tr>
    <tr>
    <td width="20%"> Blockable</td>
-   <td width="80%"> Connectors that can be blocked. For a list of connectors that can't be blocked, see <a href="wp-data-loss-prevention.md#list-of-connectors-that-cant-be-blocked">List of connectors that can't be blocked</a>.  </td>
+   <td width="80%"> Connectors that can be blocked. For a list of connectors that can't be blocked, see <a href="dlp-connector-classification.md#list-of-connectors-that-cant-be-blocked">List of connectors that can't be blocked</a>.  </td> 
    </tr>
    <tr> 
    <td width="20%"> Type</td>
@@ -110,7 +113,7 @@ After this policy is saved, any Power Apps or Power Automate maker who is part o
 
    **Lists** <br /><br />
 
-   <table style="width:100%">
+   <table width="100%">
    <tr>
    <th>Pivot</th>
    <th>Description</th>
@@ -131,14 +134,14 @@ After this policy is saved, any Power Apps or Power Automate maker who is part o
 
    **Actions** <br /><br />  
 
-   <table style="width:100%">
+   <table width="100%">
    <tr>
    <th>Action</th>
    <th>Description</th>
    </tr>
    <tr>
    <td width="20%"> Set default group </td>
-   <td width="80%"> The group that maps any new connectors added by Microsoft Power Platform <i>after</i> your DLP policy is created. More information: <a href="wp-data-loss-prevention.md#default-data-group-for-new-connectors">Default data group for new connectors</a>      </td>
+   <td width="80%"> The group that maps any new connectors added by Microsoft Power Platform <i>after</i> your DLP policy is created. More information: <a href="dlp-connector-classification.md#list-of-connectors-that-cant-be-blocked">Default data group for new connectors</a>      </td>
    </tr>
    <tr>
    <td width="20%"> Search Connectors </td>
@@ -193,14 +196,14 @@ After this policy is saved, any Power Apps or Power Automate maker who is part o
 
    For the purpose of this walkthrough, you will exclude test environments from this policy. Select **Exclude certain environments**, and on the **Add Environments** page, select **Next**.
   
-7. Review the various attributes and settings on the **Add Environments** page. For tenant-level policies, this list will show the tenant-level admin all the environments in the tenant. For environment-level policies, this list will only show the subset of environments in the tenant that are managed by the user who has signed in as an environment admin. 
+7. Review the various attributes and settings on the **Add Environments** page. For tenant-level policies, this list will show the tenant-level admin all the environments in the tenant. For environment-level policies, this list will only show the subset of environments in the tenant that are managed by the user who has signed in as an Environment Admin or as a System Administrator for environments with Dataverse database. 
 
    > [!div class="mx-imgBorder"] 
    > ![Add environments.](media/dlp-add-environments2.png "Add environments")
 
    **Attributes** <br /><br />
 
-   <table style="width:100%">
+   <table width="100%">
    <tr>
    <th>Attribute</th>
    <th>Description</th>
@@ -229,7 +232,7 @@ After this policy is saved, any Power Apps or Power Automate maker who is part o
 
    **Lists** <br /><br />
 
-   <table style="width:100%">
+   <table width="100%">
    <tr>
    <th>Pivot</th>
    <th>Description</th>
@@ -246,7 +249,7 @@ After this policy is saved, any Power Apps or Power Automate maker who is part o
 
    **Actions** <br /><br />
 
-   <table style="width:100%">
+   <table width="100%">
    <tr>
    <th>Action</th>
    <th>Description</th>

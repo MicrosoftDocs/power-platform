@@ -233,18 +233,18 @@ From the [Power Platform admin center](https://admin.powerplatform.microsoft.com
 
 2. Select **Open environment**.
 
-3. Select **Relevance Search**.
+3. Select **Dataverse search**.
 
-    ![Power Apps Relevance Search Menu.](./media/common-data-service-gdpr-dsr-guide/powerapps-relevance-search-menu.png)
+    ![Power Apps Dataverse search Menu.](./media/common-data-service-gdpr-dsr-guide/powerapps-relevance-search-menu.png)
 
 4. Enter the individual's personal data in the search box, and then select **Search**.
 
-    ![Power Apps Relevance Search Results.](./media/common-data-service-gdpr-dsr-guide/powerapps-relevance-search-results.png)
+    ![Power Apps Dataverse search Results.](./media/common-data-service-gdpr-dsr-guide/powerapps-relevance-search-results.png)
 
 ### Rectify
-Dataverse System Administrators can update an individual's personal data by using the list of results from the  Relevance Search. However, an individual's personal data may also be stored in other custom tables. Dataverse System Administrators are responsible for maintaining an inventory of these other custom tables and making the appropriate updates to an individual's personal data.
+Dataverse System Administrators can update an individual's personal data by using the list of results from the Dataverse search. However, an individual's personal data may also be stored in other custom tables. Dataverse System Administrators are responsible for maintaining an inventory of these other custom tables and making the appropriate updates to an individual's personal data.
 
-From the Relevance Search results, do the following:
+From the Dataverse search results, do the following:
 
 1. Select an item that contains the individual's personal data.
 
@@ -262,13 +262,13 @@ From the [Power Platform admin center](https://admin.powerplatform.microsoft.com
 
 2. Select **Open environment**.
 
-3. Select **Relevance Search**.
+3. Select **Dataverse search**.
 
-    ![Power Apps Relevance Search Menu.](./media/common-data-service-gdpr-dsr-guide/powerapps-relevance-search-menu.png)
+    ![Power Apps Dataverse search Menu.](./media/common-data-service-gdpr-dsr-guide/powerapps-relevance-search-menu.png)
 
 4. Enter the individual's personal data in the search box, and then select **Search**.
 
-    ![Power Apps Relevance Search Results.](./media/common-data-service-gdpr-dsr-guide/powerapps-relevance-search-results.png)
+    ![Power Apps Dataverse search Results.](./media/common-data-service-gdpr-dsr-guide/powerapps-relevance-search-results.png)
 
 5. Double-click the item in the search results list.
 
@@ -283,7 +283,7 @@ Dataverse System Administrators can delete an individual's personal data from re
 > [!NOTE]
 > Dataverse administrators can customize an environment to prevent a record from being deleted from an table. If configured in this way, you'll have to remove the contents of the personal data from the record rather than delete the record itself.
 
-From the Relevance Search results, to the following:
+From the Dataverse search results, to the following:
 
 1. Select an item that contains the individual's personal data.
 

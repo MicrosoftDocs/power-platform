@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/09/2021
+ms.date: 09/29/2021
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -27,7 +27,7 @@ Settings for the selected environment can be managed here.
 ![Environment settings.](media/environment-settings.png)
 
 ## Environment settings are moving
-Across organization admin settings are gradually moving from the web client to the Power Platform admin center. Until the move to the Power Platform admin center is complete, you’ll still be able to manage settings in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), as usual.
+Across organization admin settings are gradually moving from the web client to the Power Platform admin center, apps with unified interface, or Power Apps. Meanwhile, you’ll still be able to manage settings in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), as usual.
 
 Many of these settings...
 
@@ -50,9 +50,58 @@ These security settings are now managed in the Power Platform admin center.
 - [Dataverse teams management](manage-teams.md)
 - [Assign security roles to users in an environment that has a Dataverse database](database-security.md#assign-security-roles-to-users-in-an-environment-that-has-a-dataverse-database)
 
-## App settings 
+## App settings
 
-Getting to app feature settings can vary based on the type of app you're using.
+Getting to app feature settings can vary based on the type of app you're using. 
+
+When the **[Display behavior -> Use updated experience for classic settings where possible](settings-behavior.md#settings)** toggle is **On** , the following app settings have the modernized experience available in the unified interface. 
+
+| Legacy settings | Modernized experience  |
+|--- | --- | 
+|**Administration** ||
+| System Settings > Goals | Sales Hub|
+|**Business Management**  ||
+| Business Closures    | Customer Service Hub|
+| Currencies           | App-less unified interface|
+| Facilities/Equipment | Customer Service Hub|
+| Goal Metrics        | Customer Service Hub|
+| Queues              | Customer Service Hub|
+| Resource Groups     | Customer Service Hub|
+| Rollup Queries      | Sales Hub |
+| Sales Territories   | Sales Hub |
+| Services            | Customer Service Hub|
+| Sites               | Customer Service Hub|
+| Subjects            | Customer Service Hub|
+| LinkedIn Sales Navigator |  Sales Hub     |
+| **Data Management** | |
+| Similar Record Suggestion Settings | Customer Service Hub|
+| **Product Catalog** | |
+|  Discount Lists     | Sales Hub|
+|  Families & Products| Sales Hub|
+|  Price Lists        | Sales Hub|
+|  Unit Groups        | Sales Hub|
+| **Service Management** | |
+| Business Closures   | Customer Service Hub| 
+| Categories          | Customer Service Hub|
+| Customer Service Schedule | Customer Service Hub|
+| Email Templates     | Customer Service Hub|
+| Embedded Knowledge Search | Customer Service Hub|
+| Entitlement Templates | Customer Service Hub|
+| Entitlements         | Customer Service Hub|
+| Facilities/Equipment | Customer Service Hub|
+| Holiday Schedule     | Customer Service Hub|
+| Parent and Child case settings | Customer Service Hub|
+| Queues               | Customer Service Hub|
+| Resource Groups      | Customer Service Hub|
+| Routing Rule Sets    | Customer Service Hub|
+| Service Configuration Settings | Customer Service Hub|
+| Services             | Customer Service Hub|
+| Sites                | Customer Service Hub|
+|**Templates** | |
+| Document Templates   | App-less unified interface|
+| Email Signatures     | Customer Service Hub|
+| Email Templates      | Customer Service Hub|
+
 
 ### Settings in Unified Interface apps
 

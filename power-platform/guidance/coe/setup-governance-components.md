@@ -27,21 +27,21 @@ Multiple governance components are provided in the Center of Excellence (CoE) St
 
 ## Initialize flow approval tables in your environment
 
-The archive approval flows use the built-in Approval actions of Power Automate.
+These flows in the solution use the built-in Approval actions of Power Automate and therefore require it having been installed on the environment.
 
 - *Admin \| Archive and Clean Up v2 (Start Approval for Apps)*
 - *Admin \| Archive and Clean Up v2 (Start Approval for Flows)*
 - *Admin \| Archive and Clean Up v2 (Check Approval)*
 - *Admin \| Archive and Clean Up v2 (Clean Up and Delete)*
 
- In the background, the built-in Approval actions use Dataverse. If you've installed the solution in a new environment, the Approval tables must be initialized. The easiest way to do this is to create a "dummy" approval flow.
+  If you are installing the solution in a new environment, or one in which Approvals have not been used in the past, then the Approval tables must be initialized before you can install the solution. The easiest way to do this is to create a "dummy" approval flow.
 
 1. Go to [flow.microsoft.com](https://flow.microsoft.com) and select your CoE environment.
 
 1. Select **+ New** > **Instant (From Blank)**.
 
 1. Pick **manually trigger a flow** as the trigger, and enter *Admin \| Dummy Approval Flow* as the name.
-   
+
    ![Build an instant flow.](media/coe14.png "Build an instant flow")
 
 1. Select **+ New Step** to add an approval action to the flow, and then search for and select **Create an approval**.
@@ -92,22 +92,26 @@ All flows in this solution depend on all environment variables' being configured
    | Exclude Default environment from Compliance Requests | Determines if the default environment is excluded in the Compliance Details request flow. <br> Value must be Yes or No. A default value of No is provided.  |
    | ProductionEnvironment | Determines if the environment is Production or Dev/Test. True (the default) will mean that the approvals are sent to app/flow owners. False will send those approvals to the admin email. |
    | Cleanup Old Objects App URL | (Optional) Link to the Cleanup Old Objects canvas app included in this solution. <br> If included, communication about old objects which are considered no longer useful will include the link to make cleanup easier |
-   | Flow Approvals URL | (Optional) Link to Power Automate's Approval page for your CoE Environment <br> If included, communication about old objects which are considered no longer useful will include the link to make cleanup easier |
+   | Flow Approvals URL | (Optional) Link to Power Automate's Approval page for your CoE Environment <br> If included, communication about old objects which are considered no longer useful will include the link to make cleanup easier. <br> To get the URL Browse to flows.microsoft.com for your CoE Environment > Action Items > Approvals. <br> URL should end in **approvals/received** |
 
 ## Activate the flows
 
 This Governance Components solution contains flows that you'll need to manually turn on as soon as you're ready to use them.
 
-- Admin \| Archive and Clean Up v2 (Start Approval for Apps)
-- Admin \| Archive and Clean Up v2 (Start Approval for Flows)
-- Admin \| Archive and Clean Up v2 (Check Approval)
-- Admin \| Archive and Clean Up v2 (Clean Up and Delete)
-- Microsoft Teams Admin \| Ask for Business Justification when Microsoft Teams environment is created
-- Microsoft Teams Admin \| Weekly Clean Up of Microsoft Teams environments
-- Admin \| Compliance detail request (in Center of Excellence - Core Components)
+## Update Run only users
 
->[!IMPORTANT]
-> These flows will be turned off on solution import, and you can turn them on as soon as you're ready to use them. Only turn on the Weekly Clean Up of Microsoft Teams environments when you're ready to enforce the deletion of Teams environments.
+There are three child flows which will need their **Run only users** properties updated.
+
+- HELPER - CanvasAppOperations Gov
+- HELPER - CloudFlowOperations Gov
+- Request Orphaned Objects Reassigned (Child)
+
+For all three of these flows, go to the details page and click the **Run only users** edit button.
+
+You will see all the connections in the child flow. For each one, change the value to **Use this connection (userPrincipalName\@company.com)**. If there is no connection for any of the connectors, go to **Data** > **Connections**, and create one for the connector.
+
+   ![Find setting for run only users.](media/runonlyusersgov1.png "Find setting for run only users")
+   ![Configure run only users.](media/runonlyusersgov2.png "Configure run only users")
 
 ## Update the variables and flows back in Core
 
@@ -151,11 +155,11 @@ In addition to sharing the app, you'll also need to share the data by providing 
 
 You will share the app with your colleagues that don't belong to your CoE team.
 
-More information: [Sharing for broad distribution apps](/powerapps/teams/publish-and-share-apps#share-broad-distribution-apps-with-colleagues)
+More information: [Sharing for broad distribution apps](/powerapps/teams/set-perms-and-share#assign-the-colleagues-with-access-role-to-a-security-group-and-share-the-app)
 
 1. Open to the Power Apps app in Teams, select **Build**, and select the Team you have added the solution to.
 1. Select **Installed apps**.
-1. [Assign table persmissions](/powerapps/teams/publish-and-share-apps#assign-table-permissions) to share the data with your colleagues.
+1. [Assign table persmissions](/powerapps/teams/set-perms-and-share#assign-table-permissions) to share the data with your colleagues.
     1. Select **See all** for Center of Excellence - Core Components.
     1. Select Tables from the left pane.
     1. Select **PowerApps App** > **Manage Permissions**.

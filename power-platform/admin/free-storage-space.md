@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/06/2021
+ms.date: 09/27/2021
 ms.subservice: admin
 ms.author: jimholtz 
 search.audienceType: 
@@ -49,7 +49,7 @@ Use the following methods to free up storage for each of the capacity types.
 |     | **Method 7**: Remove bulk duplicate detection jobs and associated copies of duplicate records        |
 |     | **Method 8**: Delete bulk import instances using a bulk deletion job        |
 |     | **Method 9**: Delete bulk deletion job instances using a bulk deletion job        |
-|     | **Method 11**: Remove unrequired tables and columns from Relevance Search        |
+|     | **Method 11**: Remove unrequired tables and columns from Dataverse search        |
 
 
 ## Reduce file storage
@@ -94,7 +94,7 @@ Use the following methods to free up storage for each of the capacity types.
   
 5. In the search criteria area, add criteria similar to the following:  
   
-   **Status Reason** – **Equals** – **Completed**  
+   **Status Reason** – **Equals** – **Sent** or **Received**
   
    **Actual End** – **Older Than X Months** – 1  
   
@@ -198,8 +198,11 @@ Use the following methods to free up storage for each of the capacity types.
 12. Choose **Next**, review the bulk deletion job, and then choose **Submit** to create the recurring job.  
 
 ## Reduce log storage
+Microsoft is migrating audit logs to a new storage location. Environments whose data migration is complete can use the new audit delete method. An environment with completed migration can be easily identified by the Auditing card visible below the Environment details.
 
-### Method 10: Delete audit logs  
+:::image type="content" source="media/audit-log-new-storage-sign.png" alt-text="Audit tile appears for new storage":::
+
+### Method 10: Delete audit logs - current process
 
  When you enable auditing, customer engagement apps create audit logs to store the audit history of the records. You can delete these audit logs to free space when they are no longer needed.  
   
@@ -220,6 +223,45 @@ Use the following methods to free up storage for each of the capacity types.
 > [!NOTE]
 >  You can only delete the oldest audit log in the system. To delete more than one audit log repeat deleting the oldest available audit log until you have deleted enough logs.  
   
+### Method 10: Delete audit logs - new process
+
+Microsoft is migrating audit logs to a new storage location. Environments whose data migration is complete can use the new audit delete experience.
+
+When you enable auditing, customer engagement apps create audit logs to store the audit history of the records. You can delete these audit logs to free space when they are no longer needed.  
+
+> [!WARNING]
+> When you delete an audit log, you can no longer view the audit history for the period covered by that audit log.  
+
+1. Sign in to the Power Platform admin center, and then select an environment. 
+
+2. Under **Auditing**, select **Delete logs**.
+
+   :::image type="content" source="media/audit-log-delete.png" alt-text="Select Delete to delete audit logs.":::
+
+3. Delete audit logs to free up log storage capacity for the selected environment.
+ 
+   :::image type="content" source="media/audit-log-delete-select.png" alt-text="Select audit logs to delete.":::
+
+   |Setting  |Description  |
+   |---------|---------|
+   |**Delete logs by table**     |Select one or more tables for which you want to delete audit logs. By default all tables in the environment will be shown, whether they contain audit data or not.         |
+   |**Delete access logs by people and systems**     | Delete all access logs. This will delete all logs for all users and systems.        |
+   |**Delete all logs up to and including the selected date**     | Delete logs including the date selected.         |
+
+4. Select **Delete**, and then confirm the deletions.
+
+All data will be deleted in an asynchronous background system job. 
+
+To monitor the status of audit delete jobs, see the next section.
+
+#### Monitor the status of audit delete jobs in the Power Platform admin center
+
+1.	In the Power Platform admin center, select an environment.
+
+2.	Select **Settings** > **Data management** > **Bulk deletion**.
+
+3.	Select the system job name to open details about your delete job.
+
 
 ## Reduce database storage
 
@@ -410,12 +452,12 @@ Use the following methods to free up storage for each of the capacity types.
 
 12. Choose **Next**, review the bulk deletion job, and then choose **Submit** to create the recurring job.  
 
-### Method 11: Remove unrequired tables and columns from Relevance Search
+### Method 11: Remove unrequired tables and columns from Dataverse search
 
-Tables and tables fields enabled for Relevance Search have an impact on the database storage capacity. 
+Tables and tables fields enabled for Dataverse search have an impact on the database storage capacity. 
 
-- To revise the list of tables selected for Relevance Search results, see [Select entities for Relevance Search](configure-relevance-search-organization.md#select-entities-for-relevance-search).
-- To revise the list of fields selected for each table for Relevance Search results, see [Configure searchable fields for Relevance Search](configure-relevance-search-organization.md#configure-searchable-fields-for-relevance-search). 
+- To revise the list of tables selected for Dataverse search results, see [Select entities for Dataverse search](configure-relevance-search-organization.md#select-tables-for-dataverse-search).
+- To revise the list of fields selected for each table for Dataverse search results, see [Select searchable fields and filters for each table](configure-relevance-search-organization.md#select-searchable-fields-and-filters-for-each-table).
 
 ## Free up storage used by flow approvals
 
