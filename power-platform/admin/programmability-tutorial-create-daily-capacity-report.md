@@ -6,7 +6,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 03/19/2021
+ms.date: 10/19/2021
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -24,14 +24,14 @@ In this tutorial, you will learn how to:
 - Create a Power Automate or Logic Apps workflow (Azure) or PowerShell script that authenticates with the Power Platform API.
 - Call the List Environments endpoint to retrieve your Microsoft Power Platform environment details.
 - Iterate through the capacity object to retrieve the actual consumption.
-- Save the consumption data into an table for display.
+- Save the consumption data into a table for display.
 
 As an example of this scenario, a customer is looking to get a handle on their capacity consumption so that they can better understand the allocation of their total tenant capacity by department.  This is so that the customer can perform some internal cost accounting functions and chargebacks based on how much each department is consuming of the total available capacity.  This customer is using the Environment Description to call out the department that owns each environment.  
 
 > [!IMPORTANT]
 > The Power Platform API is in preview. The host name and data contracts are subject to change by the time the endpoints become generally available.  At that time, this article will be updated with the final endpoint details.
 
-# [REST](#tab/Azure)
+# [Azure](#tab/Azure)
 ## Create the workflow and set up the variables
 To start off, in this tutorial we will use a Logic Apps workflow.  A Power Automate flow is also acceptable, as well as any other orchestration engine that your company prefers to use for automation.  All of the calls to retrieve the data will be using RESTful APIs so any tooling that supports REST will work with this tutorial.
 
@@ -95,26 +95,25 @@ Use the below script to initialize some variables that we will use throughout th
 
 ```powershell
 # Set variables for your session
-$TenantId = New-Guid
-$SPNId = New-Guid
-$ClientSecret = "MySecretFromAzure"
-$DBCapacity = 0.00
-$FileCapacity = 0.00
-$LogCapacity = 0.00
+$TenantId = "YOUR_TENANT_GUID_FROM_AAD"
+$SPNId = "YOUR_AZURE_APPLICATION_REGISTRATION_CLIENT_ID"
+$ClientSecret = "YOUR_AZURE_APPLICATION_CLIENT_SECRET"
+$capacityDetailsList = @()
 
 Write-Host "Creating a session against the Power Platform API"
 
-Add-PowerAppsAccount -Endpoint prod -TenantID $TenantId -ApplicationId $SPNId -ClientSecret
+Add-PowerAppsAccount -Endpoint prod -TenantID $TenantId -ApplicationId $SPNId -ClientSecret $ClientSecret
 ```
 ---
 
+[Azure](#nav/Azure)
 ## Call the List Environments endpoint
 Now is the time to call the Power Platform API.  We’ll use the List Environments endpoint to retrieve all of our environments and their metadata, specifically with the $expand parameter for capacity.  This also uses the Authorization header with the Bearer Token we received in the previous section from Azure AD.  If you used username/password context, you can also enter that Bearer Token at this step as well.
 
 > [!div class="mx-imgBorder"] 
 > ![Use the List Environments endpoint to retrieve all environments and their metadata.](media/capacity6.png "Use the List Environments endpoint to retrieve all environments and their metadata")
 
-We then parse the Power Platform API response into a strongly typed object using this JSON schema:
+We then parse the Power Platform API response into a strongly typed object using this JSON schema with the 'Parse JSON' action:
 ```json
 {
     "properties": {
@@ -375,6 +374,16 @@ We then parse the Power Platform API response into a strongly typed object using
 > [!div class="mx-imgBorder"] 
 > ![Parse the Power Platform API response into a strongly typed object.](media/capacity7.png "Parse the Power Platform API response into a strongly typed object")
 
+[PowerShell](#nav/PowerShell)
+## List environments with Capacity flag
+Use the below script to pull a list of all environments you are the administrator over.  Using the new "-Capacity" flag you can add capacity consumption information for each environment retrieved.
+
+```powershell
+#fetch environment list with capacity populated.  This is only possible when calling full environment list
+$environmentsList = Get-AdminPowerAppEnvironment -Capacity
+```
+
+[Azure](#nav/Azure)
 ## Iterate through the Capacity object
 This is the most complex part of the tutorial.  Here we'll use a loop inside of a loop to iterate each environment in the List Environment response, and each environment has an array of capacity details that we will iterate as well.  This will let us capture the necessary information for each environment row in our capacity report table.
 
@@ -657,6 +666,35 @@ As the last step in the ‘For each environment’ loop, we now can capture the 
 > [!div class="mx-imgBorder"] 
 > ![Capture the environment details.](media/capacity11.png "Capture the environment details")
 
+[PowerShell](#nav/PowerShell)
+## Iterate through the Capacity object
+This is the most complex part of the tutorial.  Here we'll use a loop inside of a loop to iterate each environment in the List Environment response, and each environment has an array of capacity details that we will iterate as well.  We will construct a PSObject that contains relevant properties from each pass through the environment objects.
+
+```powershell
+foreach($environment in $environmentsList)
+{
+    Write-Host "Traversing environment " $environment.DisplayName " capacity metadata..."
+    #Write-Host $environment
+   
+    foreach($capacityObject in $environment.Capacity)
+    {
+        $EnvironmentCapacity = New-Object -TypeName PSObject `
+        | Add-Member -PassThru -MemberType NoteProperty -Name EnvironmentName -Value $environment.DisplayName `
+        | Add-Member -PassThru -MemberType NoteProperty -Name Description -Value $environment.Description `
+        | Add-Member -PassThru -MemberType NoteProperty -Name Type -Value $environment.EnvironmentType `
+        | Add-Member -PassThru -MemberType NoteProperty -Name ActualConsumption -Value $capacityObject.actualConsumption `
+        | Add-Member -PassThru -MemberType NoteProperty -Name CapacityType -Value $capacityObject.capacityType `
+        | Add-Member -PassThru -MemberType NoteProperty -Name CapacityUnit -Value $capacityObject.capacityUnit `
+        | Add-Member -PassThru -MemberType NoteProperty -Name UpdatedOn -Value $capacityObject.updatedOn
+        
+        $capacityDetailsList += $EnvironmentCapacity
+    }
+    
+    Write-Host "==============================="
+    
+}
+```
+[Azure](#nav/Azure)
 ## Save to an HTML table
 Congratulations, you’ve now made it to the easy part!  Now that we have our fully populated and simplified environment array, we can pass this value to the Create HTML table connector:
 
@@ -669,4 +707,12 @@ Running the logic app, we can now see the output of the HTML table report:
 > ![Output of the HTML table report.](media/capacity13.png "Output of the HTML table report")
 
 The report could be optionally emailed to stakeholders in this example for Cost Accounting purposes, or the data could be saved into a database for further analysis and historical trending.  
+
+[PowerShell](#nav/PowerShell)
+## Output to a table
+Congratulations, you’ve now made it to the easy part!  Now that we have our fully populated and simplified environment array, we can pass our array to the Format-Table commandlet for output:
+
+```powershell
+$capacityDetailsList | Format-Table -AutoSize
+```
 
