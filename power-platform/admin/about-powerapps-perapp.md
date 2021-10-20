@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/11/2021
+ms.date: 10/20/2021
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -41,9 +41,6 @@ You can purchase per app plans from your sales channel or in the [Microsoft 365 
 > ![Power Apps per app plan.](media/per-app-plan-tile.png "Power Apps per app plan")
 
 You can see your purchased plan in the Microsoft 365 admin center (**Billing** > **Your products**).
-
-> [!div class="mx-imgBorder"] 
-> ![Power Apps per app plan purchased.](media/per-app-plan-purchased.png "Power Apps per app plan purchased")
 
 Once you've made your purchase, there are no further actions needed in the Microsoft 365 admin center such as license assignment since this license is not assigned to users but rather to environments.
 
