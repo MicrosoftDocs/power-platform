@@ -93,12 +93,6 @@ We then parse the Azure AD token response into a typed object using this JSON sc
 
 # [PowerShell](#tab/PowerShell)
 
-### Launch Azure Cloud Shell
-
-The Azure Cloud Shell is a free interactive shell that you can use to run the steps in this article. It has common Azure tools preinstalled and configured to use with your account. You can also install the Power Platform Administration module so that you can run Power Platform and Azure commandlets side by side, in the same session.
-
-To open the Cloud Shell, just select **Try it** from the upper right corner of a code block. You can also launch Cloud Shell in a separate browser tab by going to [https://shell.azure.com](https://shell.azure.com). Select **Copy** to copy the blocks of code, paste it into the Cloud Shell, and press **Enter** to run it.
-
 ### Initialize the variables and connect to Power Platform API
 Use the below script to initialize some variables that we will use throughout the tutorial.  Optionally, you may use Username/Password authentication but it is not advised.
 
