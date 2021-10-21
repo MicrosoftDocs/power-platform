@@ -192,10 +192,11 @@ This is an artifact of previous, but no longer required, licenses being assigned
 The maker should sign up for the trial to proceed with creating the connection that uses a gateway. 
 
 ### Are users with a disabled account in an environment able to use per app plan? 
-Yes. If a user account is disabled in an environment, adding per app capacity and using the following PowerShell cmdlet or Power Automate flow template to 'force sync' disabled users will enable these users in the environment. 
+Yes. If a user account is disabled in an environment, there are three different mitigation steps that may be followed.
 
 **Mitigation steps**
-- An admin can run the [Add-AdminPowerAppsSyncUser](https://docs.microsoft.com/powershell/module/microsoft.powerapps.administration.powershell/add-adminpowerappssyncuser?view=pa-ps-latest) PowerShell cmdlet to enable disabled users in an environment.
-- Alternatively, to enable many disabled users in an environment an admin can use [this Power Automate flow template](https://us.flow.microsoft.com/galleries/public/templates/6e4162ca7afc48479e3ad1caadc6c1e6/force-sync-azure-active-directory-group-members-to-specified-cds-instance/) to run the force sync operation to enable users. 
+1. Add per app capacity to an environment, add disabled users to an Azure AD security group, share the app with the security group, and the user launching the app will be enabled in the environment.
+2. Add per app capacity and use the following PowerShell cmdlet to 'force sync' disabled users will enable these users in the environment. An admin can run the [Add-AdminPowerAppsSyncUser](https://docs.microsoft.com/powershell/module/microsoft.powerapps.administration.powershell/add-adminpowerappssyncuser?view=pa-ps-latest) PowerShell cmdlet to enable disabled users in an environment.
+3. Add per app capacity to an environment, use [this Power Automate flow template](https://us.flow.microsoft.com/galleries/public/templates/6e4162ca7afc48479e3ad1caadc6c1e6/force-sync-azure-active-directory-group-members-to-specified-cds-instance/) to enable many disabled users in an environment an admin can  to run the force sync operation to enable users. 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
