@@ -185,10 +185,6 @@ Power Apps per user plan is a user license assigned by admins from https://admin
 ### Can I assign Power Apps per app plans in the Microsoft 365 admin center (admin.microsoft.com)? 
 No. Although after purchasing Power Apps per app plans they appear in [https://admin.microsoft.com](https://admin.microsoft.com), they shouldn't be assigned to users in this website. Power Apps per app plans are to be allocated to an environment by an admin in [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com). After per app plans are allocated to an environment, the plans are assigned to users when apps are shared with users in the environment.
 
-### For users expected to use a Power Apps per app plan, why are users that use an app shared with them prompted to start a Power Apps trial? 
-
-For users to run Power Apps apps they must have a license, this includes being assigned a trial, per user plan or be accessing an app in an environment with Power Apps per app plan allocation. 
-
 ### Why are makers prompted to start a trial when creating a premium connection using gateways? 
 This is an artifact of previous, but no longer required, licenses being assigned to Power Apps makers. This license check and prompt to start a trial will eventually be removed. 
 
@@ -196,6 +192,10 @@ This is an artifact of previous, but no longer required, licenses being assigned
 The maker should sign up for the trial to proceed with creating the connection that uses a gateway. 
 
 ### Are users with a disabled account in an environment able to use per app plan? 
-Yes. If a user account is disabled in an environment, adding per app capacity, sharing the app with the user, and the user launching the app will enable the user. 
+Yes. If a user account is disabled in an environment, adding per app capacity and using the following PowerShell cmdlet or Power Automate flow template to 'force sync' disabled users will enable these users in the environment. 
+
+**Mitigation steps**
+- An admin can run the [Add-AdminPowerAppsSyncUser](https://docs.microsoft.com/powershell/module/microsoft.powerapps.administration.powershell/add-adminpowerappssyncuser?view=pa-ps-latest) PowerShell cmdlet to enable disabled users in an environment.
+- Alternatively, to enable many disabled users in an environment an admin can use [this Power Automate flow template](https://us.flow.microsoft.com/galleries/public/templates/6e4162ca7afc48479e3ad1caadc6c1e6/force-sync-azure-active-directory-group-members-to-specified-cds-instance/) to run the force sync operation to enable users. 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
