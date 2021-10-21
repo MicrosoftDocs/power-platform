@@ -4,7 +4,7 @@ description: Field-level security
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/17/2021
+ms.date: 10/21/2021
 author: jimholtz
 ms.subservice: admin
 ms.author: jimholtz
