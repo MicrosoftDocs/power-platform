@@ -4,7 +4,7 @@ description: Field-level security
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/17/2021
+ms.date: 10/21/2021
 author: jimholtz
 ms.subservice: admin
 ms.author: jimholtz
@@ -126,10 +126,12 @@ Any users not defined in the previously created field security profiles won't ha
 > ![Field security enabled.](media/field-security-enabled.png "Field security enabled")
  
 Although most attributes can be secured, there are system attributes, such as IDs, timestamps, and record tracking attributes, that can't. Below are a few examples of attributes that can't be enabled for field security. 
--    ownerid, processid, stageid, accountid, contactid
--    createdby, modifiedby, OwningTeam, OwningUser
-- createdon, EntityImage_Timestamp, modifiedon, OnHoldTime, overriddencreatedon
--    statecode, statuscode
+-    ownerid, processid, stageid, accountid, contactid, businessunitid, organizationid, solutionid, supportingsolutionid, transactioncurrencyid, goalownerid, subscriptionid, userpuid, yammeruserid
+-    createdby, modifiedby, OwningTeam, OwningUser, Owningbusinessunit, yammeremailaddress
+- createdon, EntityImage_Timestamp, modifiedon, OnHoldTime, overriddencreatedon, overwritetime, modifiedonbehalfby, timezoneruleversionnumber, versionnumber, importsequencenumber
+-    statecode, statuscode, componentstate, exchangerate, utcconversiontimezonecode
+-    fullname, firstname, middlename, lastname, yominame, yomifirstname, yomifullname, yomilastname, yomimiddlename
+-    deprecated fields, eg traversedpath, stageid
 
 You can view the entity metadata for your organization including which fields can be enabled for field security, by installing the Metadata Browser solution described in [Browse the Metadata for Your Organization](/powerapps/developer/common-data-service/browse-your-metadata). You can also view the metadata for an uncustomized organization in the [!INCLUDE[pn_MS_Excel_Full](../includes/pn-ms-excel-full.md)] file called EntityMetadata.xlsx included in the top-level folder of the SDK. [Download the SDK](https://go.microsoft.com/fwlink/p/?LinkId=691153)  
    
