@@ -712,8 +712,8 @@ foreach($environment in $environmentsList)
 ```
 
 ---
-## Save to an HTML table
-Congratulations, you’ve now made it to the easy part!  Now that we have our fully populated and simplified environment array, we can pass this value to the Create HTML table connector:
+## Build report table
+Congratulations, you’ve now made it to the easy part!  Now that we have our fully populated and simplified environment capacity array, we can display it in tabular format.
 
 # [Azure](#tab/Azure)
 
