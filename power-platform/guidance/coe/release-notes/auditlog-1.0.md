@@ -26,8 +26,4 @@ Version 1.2 for the CoE Starter Kit Audit Log Components is now available. This 
 
 A filter has been added to this flow to only process relevant audit log events (Launch Power Apps, Delete Power App, Delete Flow), improving performance and reliability of this flow.
 
-> [!IMPORTANT]
-> If you are using a previous version of the Audit Log solution we recommend you upgrade as soon as possible, to improve performance and reliability of the Audit Log data available to the CoE Starter Kit.
-
-
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

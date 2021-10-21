@@ -73,7 +73,7 @@ The Core Components solution is required for the Governance Components solution,
 1. Create a new connection to the all connectors.
     ![Import the Center of Excellence - Governance components solution.](media/msig-import.png "Import the Center of Excellence - Governance components solution")
 
-1. Select **Import** without adding values to the Environment Variables, as we will update them later - see [update environment variables](#update-environment-variables)
+1. Select **Import** without adding values to the Environment Variables, these will be updated later - see [update environment variables](#update-environment-variables)
 
 ## Update environment variables
 

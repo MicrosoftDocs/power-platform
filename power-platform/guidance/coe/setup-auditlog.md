@@ -204,7 +204,7 @@ A Power Automate flow uses the custom connector, queries the audit log daily, an
     |TimeSegment-CountLimit | Must be a whole number to represent the limit on the number of chunks that can be created.<br> Default value: 60 |
 
     > [!IMPORTANT]
-    > We cannot assist in your attempts to configure these, they have been added as a courtesy for you to test and find settings that work for you. The default values provided work in a medium sized tenant.
+    > The default values provided work in a medium sized tenant. You may have to adjust the values multiple times for this to work for your tenant size.
 
     > [!IMPORTANT]
     > Learn how to about environment variables: [Update Environment Variables](limitations.md#updating-environment-variables)

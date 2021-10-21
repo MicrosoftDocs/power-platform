@@ -205,8 +205,6 @@ The Admin \| Sync Template flows part of this solution crawl through all the res
 
 When you first set up the CoE Starter Kit, enable these flows in a specific order which will start the process of crawling and storing the information in Dataverse. Depending on the size of your tenant, the first run of may take long to complete. See the [limitations information](limitations.md) for more details.
 
-We will more quickly resolve issues around dependencies between tables by enabling the flows in an explicit order. Enabling the flows in this order is not required, but it may cause errors or incorrect data during the first week until the inventory dependencies align.
-
 1. For Option 1 (Core Components installed in Production environment):
     1. Go to [make.powerapps.com](https://make.powerapps.com/), select **Solutions**, and then open the **Center of Excellence - Core Components** solution to view the flows.
 1. For Option 2 (Core Components installed in Dataverse for Teams environment)
@@ -284,7 +282,7 @@ Using these steps, you'll set up an Azure AD app registration that will be used 
     ![Update HTTP action with client ID and secret](media/commandcenter3.png "Update HTTP action with client ID and secret")
 
     >[!NOTE]
-    > We recommend storing the client ID and secret in Azure Key Vault and using the [Azure Key Vault connector](/connectors/keyvault/) to retrieve them in the flow.
+    > Store the client ID and secret in Azure Key Vault and modify the flow to use the [Azure Key Vault connector](/connectors/keyvault/) to retrieve them.
 
 1. **Save** this flow.
 
