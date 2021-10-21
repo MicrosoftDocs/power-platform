@@ -114,6 +114,8 @@ Write-Host "Creating a session against the Power Platform API"
 Add-PowerAppsAccount -Endpoint prod -TenantID $TenantId -ApplicationId $SPNId -ClientSecret $ClientSecret
 ```
 
+---
+
 # [Azure](#tab/Azure)
 
 ## Call the List Environments endpoint
@@ -392,6 +394,7 @@ Use the below script to pull a list of all environments you are the administrato
 #fetch environment list with capacity populated.  This is only possible when calling full environment list
 $environmentsList = Get-AdminPowerAppEnvironment -Capacity
 ```
+---
 
 # [Azure](#tab/Azure)
 
@@ -706,6 +709,9 @@ foreach($environment in $environmentsList)
     
 }
 ```
+
+---
+
 # [Azure](#tab/Azure)
 
 ## Save to an HTML table
@@ -729,3 +735,5 @@ Congratulations, you’ve now made it to the easy part!  Now that we have our fu
 ```powershell
 $capacityDetailsList | Format-Table -AutoSize
 ```
+
+---
