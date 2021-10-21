@@ -93,7 +93,7 @@ In this scenario, the admin adds the Fabrikam tenant to both the inbound and out
 
 ## Enable tenant isolation and configure allow list
 
-In the Power Platform admin center, tenant isolation is set with **Policy Governance** -> **Tenant Isolation**.  
+In the Power Platform admin center, tenant isolation is set with **Policies** -> **Tenant isolation**.  
 
 :::image type="content" source="media/enable-tenant-isolation.png" alt-text="Enable tenant isolation":::
 
