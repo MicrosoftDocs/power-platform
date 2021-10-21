@@ -4,7 +4,7 @@ description: About Unified Interface
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/07/2021
+ms.date: 10/20/2021
 author: jimholtz
 ms.subservice: admin
 ms.author: jimholtz
@@ -58,13 +58,13 @@ Some capabilities of the legacy web client are available in the hybrid experienc
 
 There are certain capabilities that continue to be unavailable in Unified Interface and we are working to provide these in future releases:
 
--	Custom styling of advanced chart properties (excluding colors and basic formatting)
--	Composite address control
+- Custom styling of advanced chart properties (excluding colors and basic formatting)
+- Composite address control
 - Composite fullname control
--	Global notifications
--	Admin experiences
--	Editable grids on phones
--	Learning Path
+- Global notifications
+- Admin experiences
+- Editable grids on phones
+- Learning Path
 - Duplicate detection in Lookups
 
 ## Read-only entities on Unified Interface
@@ -83,9 +83,6 @@ The following are entities that are currently read-only in Unified Interface:
 - SLA
 - SLAKPIInstance
 - Template
-- Contract
-- Contract Lines
-- Contract Templates
 - Case Resolution
 
 ### Workaround for out-of-the-box or custom entities appearing as read-only
