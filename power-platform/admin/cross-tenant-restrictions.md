@@ -123,7 +123,34 @@ You can edit the direction of the tenant allow list entry based on business requ
 
 You can perform all the allow list operations like add, edit, and delete while tenant isolation is turned **On** or **Off**. Allow list entries do have an effect on the connection behavior when tenant isolation is turned **Off** since all cross-tenant connections are allowed. 
 
+## Design time impact on apps and flows
 
+Users who create or edit a resource affected by the tenant isolation policy will see a related error message. For example, Power Apps makers will see the following error when they use cross-tenant connections in an app that is blocked by tenant isolation policies. The app won't add the connection.
+
+:::image type="content" source="media/cross-tenant-error-one.png" alt-text="Error: The data did not load correctly. Please try again.":::
+
+Similarly, Power Automate makers will see the following error when they try to save a flow that uses connections in a flow that is blocked by tenant isolation policies. The flow itself will be saved, but it will be marked as "Suspended" and won't be executed unless the maker resolves the DLP violation. 
+
+:::image type="content" source="media/cross-tenant-error-two.png" alt-text="Error: Could not retrieve values. The dynamic invocation request failed with error - error text":::
+
+As an admin, you can decide to modify the tenant isolation policies for your tenant at any point. If apps and flows were created and executed in compliance with earlier tenant isolation policies policy, some of them might be negatively affected by any policy changes you make. Apps or flows that are in violation of [need text].
+
+For existing flows that don’t run successfully because of the latest tenant isolation policy, Run history within Power Automate indicates that the Flow run failed. 
+
+:::image type="content" source="media/flow-run-history.png" alt-text="Flow run history list":::
+
+Selecting the failed run will show details of the failed flow run.
+
+:::image type="content" source="media/flow-run-failure-details.png" alt-text="Flow run failure details":::
+
+> [!NOTE]
+> It takes about an hour for the latest tenant isolation policy changes to be assessed against active apps and flows. 
+
+## Known issues
+
+- This feature does not protect your tenant from inbound cross-cloud connections. If a tenant has tenant isolation turned on, all outgoing connections are restricted. However, incoming connections that are established from other tenants in other clouds are not restricted. This issue is currently being investigated. 
+
+- The feature is currently not available in Microsoft Dataverse services operated by 21Vianet.
 
 <!--
 With tenant restrictions, organizations can control access to SaaS cloud applications, based on the Azure AD tenant the applications use for single sign-on. With tenant restrictions, organizations can specify the list of tenants that their users are permitted to access. Azure AD then only grants access to these permitted tenants using Azure AD-based tenant restriction. 
