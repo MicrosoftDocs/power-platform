@@ -98,7 +98,7 @@ To open the Cloud Shell, just select **Try it** from the upper right corner of a
 ## Initialize the variables and connect to Power Platform API
 Use the below script to initialize some variables that we will use throughout the tutorial.  Optionally, you may use Username/Password authentication but it is not advised.
 
-```azurepowershell-interactive
+```powershell
 #Install the module
 Install-Module -Name Microsoft.PowerApps.Administration.PowerShell
 
@@ -386,7 +386,7 @@ We then parse the Power Platform API response into a strongly typed object using
 ## List environments with Capacity flag
 Use the below script to pull a list of all environments you are the administrator over.  Using the new "-Capacity" flag you can add capacity consumption information for each environment retrieved.
 
-```azurepowershell-interactive
+```powershell
 #fetch environment list with capacity populated.  This is only possible when calling full environment list
 $environmentsList = Get-AdminPowerAppEnvironment -Capacity
 ```
@@ -678,7 +678,7 @@ As the last step in the ‘For each environment’ loop, we now can capture the 
 ## Iterate through the Capacity object
 This is the most complex part of the tutorial.  Here we'll use a loop inside of a loop to iterate each environment in the List Environment response, and each environment has an array of capacity details that we will iterate as well.  We will construct a PSObject that contains relevant properties from each pass through the environment objects.
 
-```azurepowershell-interactive
+```powershell
 foreach($environment in $environmentsList)
 {
     Write-Host "Traversing environment " $environment.DisplayName " capacity metadata..."
@@ -720,7 +720,7 @@ The report could be optionally emailed to stakeholders in this example for Cost 
 ## Output to a table
 Congratulations, you’ve now made it to the easy part!  Now that we have our fully populated and simplified environment array, we can pass our array to the Format-Table commandlet for output:
 
-```azurepowershell-interactive
+```powershell
 $capacityDetailsList | Format-Table -AutoSize
 ```
 
