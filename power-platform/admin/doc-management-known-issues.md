@@ -2,7 +2,7 @@
 title: "Known issues with document management | MicrosoftDocs"
 description: "Learn about known issues with document management"
 keywords: encrypt
-ms.date: 08/25/2021
+ms.date: 10/22/2021
 ms.service: power-platform
 ms.custom: 
 ms.topic: article
@@ -109,6 +109,10 @@ This behavior occurs because the SharePoint Documents table is a virtual table a
 :::image type="content" source="media/flow-trigger-documents-table.png" alt-text="Low trigger using the SharePoint documents table from Dataverse":::
 
 ## Known issues
+
+### Document Associated Grid in child entity quick view form
+
+The Document Associated Grid is designed to show documents related to the entity context it's being rendered in. Embedding the Document Associated Grid in a related (child) entity quick view form and configuring the grid to show documents from its parent entity is unsupported.
 
 ### SharePoint integration does not support the Dynamics 365 editable grid
 
