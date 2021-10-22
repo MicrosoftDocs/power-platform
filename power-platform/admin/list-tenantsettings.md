@@ -6,7 +6,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 09/01/2021
+ms.date: 10/22/2021
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -97,3 +97,6 @@ The response is always a **200 OK** response, unless you aren't correctly authen
 |powerPlatform.teamsIntegration.shareWithColleaguesUserLimit | Integer | Maximum value setting for the number of users in a security group used to share a Power App built on Microsoft Teams.  Default is 10000 but can be increased or decreased as required.|
 |powerPlatform.powerApps.disableShareWithEveryone | Boolean | Ability to disable the Share With Everyone capability in all Power Apps.  Default is false.|
 |powerPlatform.powerApps.enableGuestsToMake | Boolean | Ability to allow guest users in your tenant to create Power Apps.  Default is false.|
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
