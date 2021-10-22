@@ -519,6 +519,10 @@
               items:
               - name: "Preview: List environments"
                 href: list-environments.md
+            - name: Tenant Settings
+              items:
+              - name: "Preview: List tenant settings"
+                href: list-tenantsettings.md
     - name: PowerShell support for Power Apps 
       items:
       - name: About PowerShell support
@@ -574,7 +578,7 @@
           - name: Connector classification
             href: dlp-connector-classification.md
           # Comment out next until given go ahead
-          # - name: Disable new connectors by default
+          # - name: Disable new connectors by default 
           #   href: connector-off-by-default.md
           - name: Custom connector parity  
             href: dlp-custom-connector-parity.md 
