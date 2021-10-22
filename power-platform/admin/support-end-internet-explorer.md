@@ -20,7 +20,7 @@ search.app:
 # Support end for Internet Explorer 
 
 > [!IMPORTANT]
-> With 2022 release wave 2, Internet Explorer 11 will be blocked. Please switch to a modern browser.
+> With 2022 release wave 1, Internet Explorer 11 will be blocked. Please switch to a modern browser.
 
 Microsoft Internet Explorer and Microsoft Edge Legacy support has ended. This topic outlines the experience that administrators and end users will see related to the support end. 
 
