@@ -2,7 +2,7 @@
 title: "Create conversational chatbots in Microsoft Teams"
 description: "Create a new bot in the Power Virtual Agents app in Microsoft Teams."
 keywords: "PVA, create"
-ms.date: 9/22/2020
+ms.date: 10/22/2021
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -54,7 +54,7 @@ The very first step is to add the Power Virtual Agents app. Then you can create 
 ## Create a bot
 
 
-When you create a bot, it has to go into a team - everyone in that team will be able to see and use the bot (but you can share it with people in other teams later on). If you want other people to have access to edit the bot, you need to [add them to your team](admin-share-bots-teams.md#share-bots).
+When you create a bot, it has to go into a team - everyone in that team will be able to see and use the bot (but you can share it with people in other teams later on). If you want other people to have access to edit the bot, you need to [add them to your team](admin-share-bots-teams.md).
 
 All bots have to belong to a team. You can [create a new team](/MicrosoftTeams/get-started-with-teams-create-your-first-teams-and-channels#create-a-team) if necessary, before you add a bot to it.
 
@@ -71,7 +71,7 @@ The first time you create a bot in a team, it will take 1 to 10 minutes to build
 
     If this is the first time a bot is being created in your team, you'll see a notice explaining that it will take some time (this could take from 1 to 10 minutes):
    
-   :::image type="content" source="media/first-bot-delay.png" alt-text="A message says You're the first person to create a bot in this team. We'll ned to do some setting up, so loading time will be a little longer than usual.":::
+   :::image type="content" source="media/first-bot-delay.png" alt-text="A message says You're the first person to create a bot in this team. We'll need to do some setting up, so loading time will be a little longer than usual.":::
 
    >[!NOTE]
    >If you were just recently added to a team that already has a bot, you may still see this message as Microsoft Teams is still adding you to the team. You should wait 15 minutes and then create your bot. You should also wait for 15 minutes before finding the team in the **Chatbots** tab.
