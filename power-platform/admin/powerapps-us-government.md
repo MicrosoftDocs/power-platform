@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/07/2021
+ms.date: 10/21/2021
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -236,6 +236,7 @@ Previously, US Government customers needed to contact support before configuring
 Some of the features available in the commercial version of Power Apps are not available to Power Apps US Government customers. The Power Apps team is actively working on making the following features available to US Government customers and will update this article when these features become available:
 
 - Embed in [Power BI](/power-bi/).
+- [Test Studio](/powerapps/maker/canvas-apps/test-studio) is not available in government environments.
 
 - Ability to add apps to Teams using the [Add to Teams button](/powerapps/maker/canvas-apps/embed-teams-app).
 
