@@ -2,7 +2,7 @@
 title: "Fundamentals - Publish a chatbot to various channels in Microsoft Teams"
 description: "Publish your bot to Microsoft Teams."
 keywords: "Publish; demo; demo website; channels, PVA"
-ms.date: 10/15/2021
+ms.date: 10/22/2021
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
