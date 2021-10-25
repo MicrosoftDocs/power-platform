@@ -126,6 +126,7 @@ You can add and delete members from a team.
 
 > Adding users with disabled status: By default, you can't add disabled users into your owner teams. If you need to add disabled users, you can enable the organization DB setting **AllowDisabledUsersAddedToOwnerTeams** using the [OrgDBOrgSettings tool for Microsoft Dynamics CRM](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm).
 
+> You can use [plug-ins](https://docs.microsoft.com/powerapps/developer/data-platform/plug-ins) to manage team membership, example to add and to remove team members based on a certain business condition. Since there is a sequence of events that needs to be run in this business process, team membership process can only be run in **asynchronous** plug-ins.
 
 ### Manage the security roles of a team
 
