@@ -1,6 +1,6 @@
 ---
 title: "Limitations | MicrosoftDocs"
-description: "Limitations of some components within the CoE Starter Kit, such as potential timeouts, Government Community Cloud availability, and more."
+description: "Limitations of some components within the CoE Starter Kit, such as potential timeouts, supported languages, and more."
 author: manuelap-msft
 manager: devkeydet
 ms.service: power-platform
