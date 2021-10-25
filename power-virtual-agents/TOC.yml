@@ -132,8 +132,6 @@
          href: configuration-fundamentals.md
        - name: Configure end-user authentication
          href: configuration-end-user-authentication.md
-       - name: Assign access and change security options
-         href: configuration-security.md
        - name: Configure web and Direct Line channel security
          href: configure-web-security.md
        - name: Configure single sign-on for Web
@@ -244,8 +242,6 @@
       items:
        - name: Key concepts - Configuration
          href: teams/configuration-fundamentals-teams.md
-       - name: Assign access and change security options
-         href: teams/configuration-security-teams.md
        - name: Configure web and Direct Line channel security
          href: teams/configure-web-security-teams.md
        - name: Configure end-user authentication

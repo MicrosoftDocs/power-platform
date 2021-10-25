@@ -2,12 +2,13 @@
 title: "Fundamentals - Publish a chatbot to various channels in Microsoft Teams"
 description: "Publish your bot to Microsoft Teams."
 keywords: "Publish; demo; demo website; channels, PVA"
-ms.date: 9/22/2020
+ms.date: 10/22/2021
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
+ms.reviewer: micchow
 ms.custom: "publication, fundamentals, ceX"
 ms.collection: virtual-agent
 ---
@@ -47,11 +48,9 @@ After the first publish, you can do subsequent publishes whenever you would like
 
 The publishing process will check for errors in the latest bot content.
 
-Publication should take less than a few minutes and, when successful, you can view the bot in action in Microsoft Teams by selecting **Open the bot**. 
+When publication is successful, you can [make the bot available to users in Microsoft Teams](publication-add-bot-to-microsoft-teams-teams.md) with the installation link or from various places in the Microsoft Teams app store. You can share your bot later by selecting **Make bot available to others** from the Publish page.
 
-You can also share the bot with your teammates by selecting **Share the bot** and then **Copy link**. The link will launch Microsoft Teams to prompt the user to install the bot so they can chat with it in Microsoft Teams. Learn more about [installing your bot in Microsoft Teams](publication-add-bot-to-microsoft-teams-teams.md).
-
-:::image type="content" source="media/publish-teams-copy-link.png" alt-text="The Copy link option creates a shareable link to the bot.":::
+You can also install the bot for your own use in Microsoft Teams by selecting **Open the bot**.
 
 > [!TIP]
 >To prevent disrupting users who are having an existing conversation with the bot, they will not receive the latest published content until a new conversation has started. A new conversation starts after it has been idle for more than 30 minutes.  
@@ -59,13 +58,11 @@ You can also share the bot with your teammates by selecting **Share the bot** an
 >You can do so by typing *start over* in an existing conversation.  
 >This will restart the conversation with the latest content you have published.
 
-Now that you've published your bot and it's ready for others to use, you can [add your bot to different sections of the Microsoft Teams app store](publication-add-bot-to-microsoft-teams-teams.md).
-
 
  ## In this section
 
 
-- [Add bot to Microsoft Teams](publication-add-bot-to-microsoft-teams-teams.md) | Use Teams to distribute your bot.
+- [Add bot to Microsoft Teams](publication-add-bot-to-microsoft-teams-teams.md) | Make your bot available to users in Microsoft Teams.
 - [Create a privacy statement and terms of use](publication-terms-of-use-teams.md) | Create and link to a privacy statement and terms of use for bots you create.
 
 ## Known limitations
