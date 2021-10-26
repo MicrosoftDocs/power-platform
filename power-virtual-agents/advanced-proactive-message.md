@@ -28,9 +28,9 @@ ms.collection: virtual-agent
 
 >[!IMPORTANT]
 >This is a preview feature.
->Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and [provide feedback](https://powerusers.microsoft.com/t5/Forums/ct-p/pva_forums).
+>Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and [provide feedback](https://powerusers.microsoft.com/t5/Forums/ct-p/pva_forums).
 
-After you've [published your bot](publication-fundamentals-publish-channels.md) and [made the bot available to end users in Microsoft Teams](publication-add-bot-to-microsoft-teams.md), your can notify users ("recipients") in Microsoft Teams with proactive messages and [adaptive cards](https://adaptivecards.io). Proactive messages use Power Automate flows to deliver their content, and are useful in many scenarios, including:
+After you've [published your bot](publication-fundamentals-publish-channels.md) and [made the bot available to end users in Microsoft Teams](publication-add-bot-to-microsoft-teams.md), you can notify users ("recipients") in Microsoft Teams with proactive messages and [adaptive cards](https://adaptivecards.io). Proactive messages use Power Automate flows to deliver their content, and are useful in many scenarios, including:
 
 -   Letting a recipient know that their earlier request has been completed. For example, the user's time-off request has been approved.
 
@@ -40,20 +40,15 @@ After you've [published your bot](publication-fundamentals-publish-channels.md) 
 
 ## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
--   The bot has been [published at least once](publication-fundamentals-publish-channels.md).
 
--   The bot is [made available to end users in Microsoft Teams](publication-add-bot-to-microsoft-teams.md) and the end users have the bot installed. The bot can't deliver the message to the recipient if:
-
+-   The bot must have been [published at least once](publication-fundamentals-publish-channels.md).
+-   The bot must be [made available to end users in Microsoft Teams](publication-add-bot-to-microsoft-teams.md), and the end users must have the bot installed. The bot can't deliver the message to the recipient if:
     -   The recipient hasn't installed the bot in Microsoft Teams.
-
     -   The recipient has uninstalled the bot.
-
     -   The recipient has blocked the bot.
-
     -   The recipient doesn't have permission to chat with the bot - in which case you'll need to [share the bot with users](admin-share-bots.md).
-
 -   [Power Automate](/power-automate/getting-started) flows used by the bot must be created in the same environment.
+- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 
 >[!IMPORTANT]
 >You can only send proactive messages to recipients who have installed the bot in Microsoft Teams.  
@@ -64,8 +59,8 @@ After you've [published your bot](publication-fundamentals-publish-channels.md) 
 
 You will need to create a Power Automate flow to send proactive messages with your bot. You can create a new flow from:
 
-- The [Power Virtual Agents authoring canvas](advanced-flow.md#create-a-new-flow-from-the-power-virtual-agents-authoring-canvas)
-- The [Power Apps Teams app](/power-automate/teams/create-flows-power-apps-app)
+- The [Power Virtual Agents authoring canvas](advanced-flow.md#create-a-new-flow-from-the-power-virtual-agents-authoring-canvas).
+- The [Power Apps Teams app](/power-automate/teams/create-flows-power-apps-app).
 - The [Power Automate maker portal](https://powerautomate.com/)'s solutions section of the environment.
 
 Once you have a flow created, you can add a step to send proactive messages with the bot.
@@ -77,7 +72,7 @@ Once you have a flow created, you can add a step to send proactive messages with
 
 ### Send a proactive message
 
-In Power Automate, add the Microsoft Teams connector's **Post message in a chat or channel** action at the step where you want to send a proactive message in your flow:
+In Power Automate, add the Microsoft Teams connector action **Post message in a chat or channel** at the step where you want to send a proactive message in your flow:
 
 1.  Set the **Post as** field to **Power Virtual Agents (Preview)**.
 
@@ -91,13 +86,11 @@ In Power Automate, add the Microsoft Teams connector's **Post message in a chat 
 
 ![Post message action in Power Automate.](media/advanced-proactive-message/image1.png)
 
-6.  Save the flow
-
 When the flow is run, the recipient will receive the proactive message from the bot in Microsoft Teams.
 
 ### Send a proactive adaptive card
 
-In Power Automate, add the Microsoft Teams connector's **Post adaptive card in a chat or channel** action at the step where you want to send card in your flow.
+In Power Automate, add the Microsoft Teams connector action **Post adaptive card in a chat or channel** at the step where you want to send card in your flow.
 
 1.  Set the **Post as** field to **Power Virtual Agents (Preview)**.
 
@@ -115,7 +108,7 @@ When the flow is run, the recipient will receive the adaptive card from the bot 
 
 ### Send a proactive adaptive card and wait for a response
 
-In Power Automate, add the Microsoft Teams connector's **Post adaptive card and wait for a response** action at the step where you want to send card in your flow.
+In Power Automate, add the Microsoft Teams connector action **Post adaptive card and wait for a response** at the step where you want to send card in your flow.
 
 1.  Set the **Post as** field to **Power Virtual Agents (Preview)**.
 
@@ -139,7 +132,7 @@ You can use the response from the recipient as dynamic content for later steps i
 
 ![Dynamic content selection in a flow.](media/advanced-proactive-message/image5.png)
 
-## Sending proactive message or card to multiple recipients
+## Send proactive messages or cards to multiple recipients
 
 Depending on the scenario, you may want to send the same proactive message or card to multiple recipients at once. 
 
@@ -154,7 +147,7 @@ This section contains examples for sending messages to multiple recipients.
 
 In this example, the bot will send a reminder to the members of a team to complete their online training.
 
-1.  Add the **Microsoft Teams** connector and select **Get a team** action in your Power Automate flow.
+1.  Add the **Microsoft Teams** connector and select the **Get a team** action in your Power Automate flow.
 
 2.  Select the team with the members that you want to send the message to.
 
@@ -192,7 +185,7 @@ In this example, the bot will send a reminder to a security group to complete th
 
 When the flow runs, each user in the security group will receive the proactive message in a private chat with the bot.
 
-### Increasing the parallelism when sending to multiple recipients
+### Increase parallelism when sending to multiple recipients
 
 Sometimes you may want to send a message or card to multiple recipients in parallel. For example, sending the same card to multiple recipients and waiting for responses from them. 
 
@@ -223,13 +216,13 @@ Power Virtual Agents allows you to control detail behavior on your bot under **S
 
 Sometimes the bot might be sending a proactive message or card when the recipient is in an active conversation with the bot. 
 
-You may want to postpone sending the proactive message or card until they have finished their conversation to not disrupt the conversation flow. 
+You might want to postpone sending the proactive message or card until they have finished their conversation to not disrupt the conversation flow. 
 
 The **If chat is active** field allows you to control the behavior:
 
 - **Send:** the bot will send the proactive message or card as normal.
 
-- **Don't send and succeed:** the bot won't send the proactive message or card when the recipient is in an active conversation. A status code **300** will be returned.
+- **Don't send and succeed:** the bot won't send the proactive message or card when the recipient is in an active conversation. Status code **300** will be returned.
 
 - **Don't send and fail:** the bot won't send the proactive message or card when the recipient is in an active conversation. The flow run will be marked as a failure.
 
@@ -243,7 +236,7 @@ The **If bot not installed** field allows you to control the behavior:
 
 - **Fail:** the flow run will be marked as a failure when the recipient hasn't installed the bot in Microsoft Teams.
 
-- **Succeed with status code:** the flow run will be marked as succeeded even though the recipient can't receive the message or card because they haven't installed the bot. A status code **100** will be returned.
+- **Succeed with status code:** the flow run will be marked as succeeded even though the recipient can't receive the message or card because they haven't installed the bot. Status code **100** will be returned.
 
 ### Status code definition
 
@@ -258,9 +251,7 @@ You can use the returned status code to define different follow-up behaviors in 
 ## Known limitations
 
 -   All proactive message and cards from Power Virtual Agents are subject to [limits on Power Automate](/power-automate/limits-and-config#throughput-limits) and [throttling limits of the Microsoft Teams connector](/connectors/teams/#limits).
-
 -   All proactive message and cards won't be logged in conversation transcripts or [Analytics sessions](analytics-overview.md).
-
 -   Proactive messages can only be posted to a personal chat with the bot.
 
 
