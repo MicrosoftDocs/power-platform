@@ -55,7 +55,7 @@ If a user has a Power Apps per user license, user is not counted in the meter. I
 | User with Power Apps for Microsoft 365 plan | Not counted    | ![Checkmark outline](media/checkmark.png) |
 | User with Power Apps per user plan          | Not counted     | Not counted    |
 
-Note: If an environment already has [app passes assigned](about-powerapps-perapp) and then the environment is enabled for pay-as-you-go, app passes are ignored and not consumed. You can reallocate those app passes to a different environment.
+Note: If an environment already has [app passes assigned](about-powerapps-perapp.md) and then the environment is enabled for pay-as-you-go, app passes are ignored and not consumed. You can reallocate those app passes to a different environment. 
 
 ### Dataverse meter
 

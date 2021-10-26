@@ -44,7 +44,7 @@ The downloadable report contains the following fields:
 
 ## How to manage costs
 
-When these budgets amounts are approached or reached you can configure alerts to be sent automatically or trigger actions to take place. For more details please visit: https://docs.microsoft.com/en-us/azure/cost-management-billing/costs/tutorial-acm-create-budgets and Create and manage action groups in the Azure portal - Azure Monitor \| Microsoft Docs
+When these budgets amounts are approached or reached you can configure alerts to be sent automatically or trigger actions to take place. For more details, see [Tutorial: Create and manage Azure budgets](/azure/cost-management-billing/costs/tutorial-acm-create-budgets) and [Create and manage action groups in the Azure portal](/azure/azure-monitor/alerts/action-groups#configure-basic-action-group-settings).  
 
 Azure Cost Management provides options to set budgets for Azure resources and specific meters. You can use this capability to set budgets at a billing policy level by setting a budget for its corresponding Power Platform account resource. You can also set budgets for individual Power Platform meters.
 

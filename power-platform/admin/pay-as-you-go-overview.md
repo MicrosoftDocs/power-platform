@@ -58,7 +58,7 @@ A billing policy creates a link between one or more environments and an Azure su
 
 Billing policies can be created in either the Power Platform admin center or within Power Apps. When a billing policy is created, a corresponding Azure resource (called a Power Platform Account resource) is created in the Azure subscription associated with that billing policy. Any usage charges for Power Apps, Dataverse, and Power Platform Requests will appear under the Power Platform Account resource on the Azure subscription's bill.
 
-When an environment is linked to Azure via a billing policy it becomes a *pay-as-you-go environment*. An environment can only be linked to one billing policy at a time. You can change the billing policy an environment is linked to, or [remove it from a billing policy]((pay-as-you-go-set-up.md#turning-off-pay-as-you-go)), at any time. When you remove an environment from a billing policy it goes back to functioning as a regular environment, and usage of Power Platform products in that environment will no longer be billed to Azure.
+When an environment is linked to Azure via a billing policy it becomes a *pay-as-you-go environment*. An environment can only be linked to one billing policy at a time. You can change the billing policy an environment is linked to, or [remove it from a billing policy](pay-as-you-go-set-up.md#turning-off-pay-as-you-go), at any time. When you remove an environment from a billing policy it goes back to functioning as a regular environment, and usage of Power Platform products in that environment will no longer be billed to Azure. 
 
 :::image type="content" source="media/pay-as-you-go-billing-policy-azure-subscription.png" alt-text="Billing policy linked to Azure subscription":::
 
