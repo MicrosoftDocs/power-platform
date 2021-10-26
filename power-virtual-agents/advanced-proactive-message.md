@@ -13,13 +13,16 @@ ms.custom: "teams, flow, ceX"
 ms.collection: virtual-agent
 ---
 
+
+
+# Send proactive messages and cards in Microsoft Teams (Preview) 
+
+
  Power Automate Microsoft Teams connector section
 
 **Salem has already** added the following into Known issues and limitations.
 
-10\. Posting message or card via [Power Virtual Agents](https://docs.microsoft.com/power-virtual-agents/fundamentals-what-is-power-virtual-agents) requires the recipient to have the bot installed in Microsoft Teams. Learn more about [notifying user in Microsoft Teams with proactive message](https://go.microsoft.com/fwlink/?linkid=2172720).
-
-# Send proactive messages and cards in Microsoft Teams (Preview) 
+10\. Posting message or card via [Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md) requires the recipient to have the bot installed in Microsoft Teams. Learn more about [notifying user in Microsoft Teams with proactive message](https://go.microsoft.com/fwlink/?linkid=2172720).
 
 [!INCLUDE [Preview documentation notice](includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -40,15 +43,15 @@ After you've [published your bot](publication-fundamentals-publish-channels.md) 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 -   The bot has been [published at least once](publication-fundamentals-publish-channels.md).
 
--   The bot is [made available to end users in Microsoft Teams](publication-add-bot-to-microsoft-teams.md) and the end users have the bot installed. The bot can't deliver the message to the recipient if one of the following is true:
+-   The bot is [made available to end users in Microsoft Teams](publication-add-bot-to-microsoft-teams.md) and the end users have the bot installed. The bot can't deliver the message to the recipient if:
 
-    -   The recipient has not installed the bot in Microsoft Teams.
+    -   The recipient hasn't installed the bot in Microsoft Teams.
 
     -   The recipient has uninstalled the bot.
 
     -   The recipient has blocked the bot.
 
-    -   The recipient does not have permission to chat with the bot - in which case you'll need to [share the bot with users](admin-share-bots.md).
+    -   The recipient doesn't have permission to chat with the bot - in which case you'll need to [share the bot with users](admin-share-bots.md).
 
 -   [Power Automate](/power-automate/getting-started) flows used by the bot must be created in the same environment.
 
@@ -138,11 +141,13 @@ You can use the response from the recipient as dynamic content for later steps i
 
 ## Sending proactive message or card to multiple recipients
 
-Depending on the scenario, you may want to send the same proactive message or card to multiple recipients at once. This section contains examples to demonstrate how this might work.
+Depending on the scenario, you may want to send the same proactive message or card to multiple recipients at once. 
+
+This section contains examples for sending messages to multiple recipients.
 
 >[!IMPORTANT]
 >The prerequisites detailed in this topic apply to each recipient.  
->For example, you can send the same message to 10 recipients in one action. If three of the 10 recipients do not have the bot installed, then those three recipients will not receive the message.
+>For example, you can send the same message to 10 recipients in one action. If three of the 10 recipients do not have the bot installed, then those three recipients won't receive the message.
 
 
 ### Send to teammates
@@ -209,7 +214,7 @@ Power Virtual Agents allows you to control detail behavior on your bot under **S
 
 ### Label sent message or card as a notification
 
-**Label as notification** controls whether the message or card will have the text **Notification via** in front of the bot's name. This allows the recipient to identify the bot's response to their inquiry. 
+**Label as notification** controls whether the message or card will have the text **Notification via** in front of the bot's name. Labeling the bot's response allows the recipient to identify the bot's response to their inquiry. 
 
 
 ![The setting shows Notification via bot name.](media/advanced-proactive-message/image11.png)
@@ -224,19 +229,19 @@ The **If chat is active** field allows you to control the behavior:
 
 - **Send:** the bot will send the proactive message or card as normal.
 
-- **Don't send and succeed:** the bot will not send the proactive message or card when the recipient is in an active conversation. A status code **300** will be returned.
+- **Don't send and succeed:** the bot won't send the proactive message or card when the recipient is in an active conversation. A status code **300** will be returned.
 
-- **Don't send and fail:** the bot will not send the proactive message or card when the recipient is in an active conversation. The flow run will be marked as a failure.
+- **Don't send and fail:** the bot won't send the proactive message or card when the recipient is in an active conversation. The flow run will be marked as a failure.
 
-### When the recipient has not installed the bot
+### When the recipient hasn't installed the bot
 
 The bot can only deliver messages or cards to recipients who have installed the bot in Microsoft Teams. Recipients may not want to install the bot or have uninstalled the bot. 
 
-For lower importance messages or cards, you can set the flow run to be marked as succeeded even when the recipient does not have the bot installed. 
+For lower importance messages or cards, you can set the flow run to be marked as succeeded even when the recipient doesn't have the bot installed. 
 
 The **If bot not installed** field allows you to control the behavior:
 
-- **Fail:** the flow run will be marked as a failure when the recipient has not installed the bot in Microsoft Teams.
+- **Fail:** the flow run will be marked as a failure when the recipient hasn't installed the bot in Microsoft Teams.
 
 - **Succeed with status code:** the flow run will be marked as succeeded even though the recipient can't receive the message or card because they haven't installed the bot. A status code **100** will be returned.
 
@@ -244,17 +249,17 @@ The **If bot not installed** field allows you to control the behavior:
 
 You can use the returned status code to define different follow-up behaviors in your flow. For example, you could specify that the flow should try again over a period of time or log a record about the failure.
 
-| Status code | Succeeded (soolean) | Description                                                                                       |
+| Status code | Succeeded (boolean) | Description                                                                                       |
 |-------------|---------------------|---------------------------------------------------------------------------------------------------|
 | 200         | True                | Message or card is successfully delivered.                                                         |
-| 100         | False               | Message or card could not be delivered because the recipient doesn't have the bot installed.          |
-| 300         | False               | Message or card could not be delivered because the recipient is in an active conversation with the bot. |
+| 100         | False               | Message or card couldn't be delivered because the recipient doesn't have the bot installed.          |
+| 300         | False               | Message or card couldn't be delivered because the recipient is in an active conversation with the bot. |
 
 ## Known limitations
 
 -   All proactive message and cards from Power Virtual Agents are subject to [limits on Power Automate](/power-automate/limits-and-config#throughput-limits) and [throttling limits of the Microsoft Teams connector](/connectors/teams/#limits).
 
--   All proactive message and cards will not be logged in conversation transcripts or [Analytics sessions](analytics-overview.md).
+-   All proactive message and cards won't be logged in conversation transcripts or [Analytics sessions](analytics-overview.md).
 
 -   Proactive messages can only be posted to a personal chat with the bot.
 
