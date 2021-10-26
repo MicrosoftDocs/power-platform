@@ -37,7 +37,7 @@ The following table describes the permissions of who can create a billing policy
 
 1. Procure or create an Azure subscription you can use
 
-   If you do not already have an Azure subscription in your tenant, please work through the standard process in your organization to obtain one or create a new one [here](https://azure.microsoft.com/en-us/free/). You will need to have permissions to create new resources and register resource providers in the subscription (or have the ability to work with an Azure subscription owner or contributor who can register resource providers). Learn more about [Azure subscriptions](https://go.microsoft.com/fwlink/?linkid=2174703).
+   If you do not already have an Azure subscription in your tenant, please work through the standard process in your organization to obtain one or create a new one [here](https://azure.microsoft.com/free/). You will need to have permissions to create new resources and register resource providers in the subscription (or have the ability to work with an Azure subscription owner or contributor who can register resource providers). Learn more about [Azure subscriptions](https://go.microsoft.com/fwlink/?linkid=2174703).
 
 2. Enable the Power Platform Account feature in the Azure portal. Note that this is temporary and will be automated. Here's how:
 
