@@ -1,6 +1,7 @@
 ---
 title: "Preview: Issues and frequently asked questions | MicrosoftDocs"
 description: Issues and frequently asked questions for your pay-as-you-go plan.
+author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
@@ -15,6 +16,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
+
 # Preview: Issues and frequently asked questions 
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
