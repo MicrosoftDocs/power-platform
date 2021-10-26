@@ -52,7 +52,7 @@ Follow these steps to assign a security role.
 
    :::image type="content" source="media/manage-security-roles-page.png" alt-text="Manage security roles page.":::
 
-> When the [allow record ownership across business units](/wp-security-cds.md#to-enable-this-matrix-data-access-structure-preview) is enabled, you can select security roles from different business unit. 
+> When the [allow record ownership across business units](wp-security-cds.md#to-enable-this-matrix-data-access-structure-preview) is enabled, you can select security roles from different business unit. 
 
 > [!IMPORTANT] 
 > You must assign at least one security role to every user either directly or indirectly as a member of a [group team](manage-group-teams.md). The service doesn't allow access to users who don't have at least one security role.
