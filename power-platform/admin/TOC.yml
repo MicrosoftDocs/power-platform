@@ -40,6 +40,8 @@
         href: about-powerapps-perapp.md
       - name: Power Apps and Power Automate licensing FAQs
         href: powerapps-flow-licensing-faq.md
+      - name: Pay-as-you-go plan 
+        href: use-pay-as-you-go.md
       - name: Requests limits and allocations
         href: api-request-limits-allocations.md
     - name: Getting started
