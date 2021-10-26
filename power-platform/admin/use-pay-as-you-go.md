@@ -69,7 +69,7 @@ Billing policies provide flexible options for organizations looking to allocate 
 
 :::image type="content" source="media/pay-as-you-go-billing-policy-azure-subscription-examples.png" alt-text="Billing policy linked to Azure subscription examples":::
 
-# Who can set it up?
+## Who can set it up?
 
 The following table describes the permissions of who can create a billing policy to link an environment to the Azure subscription. These permissions apply to both the Power Apps and the Power Platform admin center experience.
 
@@ -92,7 +92,7 @@ For detailed pricing information, see [Power Apps pricing](https://powerapps.mic
 
 Note: as of Public Preview (11/01/21) if you link an environment to an Azure subscription, Power Platform requests meter will not be reported or billed. Users and flows in the environment can consume more than their entitled usage without being throttled or paying for overages. Reporting and billing will be turned on in the weeks following the Public Preview announcement.
 
-## Power Apps per app meter 
+### Power Apps per app meter 
 
 The Power Apps per app meter enables users to use any type of app without needing to have a Power Apps license. Power Apps per app meter provides access to both canvas apps and model apps, as well as portal for authenticated users.
 
@@ -143,7 +143,7 @@ Note: the prices shown in this example are illustrative only. Your organization'
 
 :::image type="content" source="media/pay-as-you-go-measured-usage-above-entitlements.png" alt-text="Measured usage above entitlements":::
 
-### How to set up pay-as-you-go for an environment
+## How to set up pay-as-you-go for an environment
 
 1. Procure or create an Azure subscription you can use
 
@@ -322,7 +322,7 @@ Azure Cost Management provides options to set budgets for Azure resources and sp
 
 You can turn off pay-as-you-go for an environment at any time by doing either of the following:
 
-1. Remove the environment from a billing policy by going to the Power Platform admin center -&gt; Billing Policies page and editing the billing policy.
+1. Remove the environment from a billing policy by going to the Power Platform admin center > Billing Policies page and editing the billing policy.
 
 **OR**
 
