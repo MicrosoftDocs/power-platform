@@ -211,7 +211,7 @@ Here are the steps to create a billing policy, link environments to it, and add 
 
    4. Select "Next".
 
-   :::image type="content" source="media/pay-as-you-go-billing-policy-azure-details.png" alt-text="Select New billing policy":::
+      :::image type="content" source="media/pay-as-you-go-billing-policy-azure-details.png" alt-text="Select New billing policy":::
 
 **STEP 4:** Choose environments to link to the new billing policy
 
@@ -248,63 +248,61 @@ Here are the steps to create a billing policy, link environments to it, and add 
 
 ### In Power Apps 
 
-Jim says start here
-
 You can set up pay-as-you-go for your environment right from your app's setting for both canvas apps and model apps without needing to go to the admin center. Once set up, you can easily add new environments to the same Azure subscription in the Power Platform admin center.
 
 **STEP 1:** Sign into [Power Apps](https://make.powerapps.com/) and navigate to "Apps". Select your app and click on "Settings". Make sure that that you have the right environment selected.
 
-![Graphical user interface  text  application  email Description automatically generated](media/image23.png)
+   :::image type="content" source="media/pay-as-you-go-powerapps-settings.png" alt-text="In Power Apps sign in and select Apps > Settings":::
 
-If pay-as-you-go is already enabled for an environment via Power Platform admin center, then you will see the following experience. You can opt your app out of using Azure subscription by turning off the toggle. Once turned off, users will need Power Apps user licenses to access the app. You can turn it on anytime. You can also view and edit the subscription details by clicking on "Edit pay-as-you-go billing" which will direct you to the Power Platform admin center.
+   If pay-as-you-go is already enabled for an environment via Power Platform admin center, then you will see the following experience. You can opt your app out of using Azure subscription by turning off the toggle. Once turned off, users will need Power Apps user licenses to access the app. You can turn it on anytime. You can also view and edit the subscription details by clicking on "Edit pay-as-you-go billing" which will direct you to the Power Platform admin center.
 
-Note: If app passes are already available for this environment, they are ignored and not consumed. Instead, Azure subscription is used for accessing the apps.
+   Note: If app passes are already available for this environment, they are ignored and not consumed. Instead, Azure subscription is used for accessing the apps.
 
-![Graphical user interface  text  application  email Description automatically generated](media/image24.png)
+   :::image type="content" source="media/pay-as-you-go-powerapps-edit.png" alt-text="Select Edit pay-as-you-go billing":::
 
-If pay-as-you-go is not enabled for an environment and you have the right permissions (shared under billing policy section), you will see the following experience and can easily set up pay-as-you-go using the steps below.
+   If pay-as-you-go is not enabled for an environment and you have the right permissions (shared under billing policy section), you will see the following experience and can easily set up pay-as-you-go using the steps below.
 
-**STEP 2:** Click on "Set up pay-as-you-go" to connect your Azure subscription to this environment.
+**STEP 2:** Select "Set up pay-as-you-go" to connect your Azure subscription to this environment.
 
-Note: Connecting Azure subscription to an environment turns on pay-as-you-go billing for all apps within that environment.
+   Note: Connecting Azure subscription to an environment turns on pay-as-you-go billing for all apps within that environment.
 
-![Graphical user interface  text  application  email Description automatically generated](media/image25.png)
+   :::image type="content" source="media/pay-as-you-go-powerapps-setup.png" alt-text="Select Set up pay-as-you-go billing":::
 
-**STEP 3:** Enter a billing policy name and your Azure subscription details. Once entered, click "Connect subscription" button to complete the set up.
+**STEP 3:** Enter a billing policy name and your Azure subscription details. Once entered, select **Connect subscription** to complete the set up.
 
-Choose the Azure subscription you would like to bill to from the Azure subscription drop down list. The drop-down list will show the Azure subscriptions in your tenant for which you have permissions to create resources and register resource providers (aka "RPs"). Most commonly this will mean that you have an owner or contributor role for the subscription. If you don't see a subscription you expect, please contact the owner of that subscription, and ensure you have permissions.
+   Choose the Azure subscription you would like to bill to from the Azure subscription drop down list. The drop-down list will show the Azure subscriptions in your tenant for which you have permissions to create resources and register resource providers (aka "RPs"). Most commonly this will mean that you have an owner or contributor role for the subscription. If you don't see a subscription you expect, please contact the owner of that subscription, and ensure you have permissions.
 
-Specify a resource group with that subscription. The Power Platform account resource that will be associated with this billing policy will be created in this resource group. If there are no resource groups in the specified subscription you will need to create one in the Aure portal (portal.azure.com) before proceeding. Learn more about Azure resources here.
+   Specify a resource group with that subscription. The Power Platform account resource that will be associated with this billing policy will be created in this resource group. If there are no resource groups in the specified subscription you will need to create one in the Aure portal (portal.azure.com) before proceeding. Learn more about Azure resources here.
 
-If you don't have an Azure subscription, procure one within your organization or create a new one.
+   If you don't have an Azure subscription, procure one within your organization or create a new one.
 
-![Graphical user interface  text  application  email Description automatically generated](media/image26.png)
+   Enter billing policy name
+   :::image type="content" source="media/pay-as-you-go-powerapps-billing-policy-name.png" alt-text="Select Set up pay-as-you-go billing":::
 
-![Graphical user interface  text  application  email Description automatically generated](media/image27.png)
+   Enter Azure subscription details
+   :::image type="content" source="media/pay-as-you-go-powerapps-connect-subscription.png" alt-text="Select Connect subscription":::
 
 **STEP 4:** Once Azure subscription is successfully linked to your environment, you will land back on the app settings screen and will see the following experience. Check out \[Add link to Step 6 above\] to see how to view the Power Platform resource in Azure.
 
-![Graphical user interface  text  application  email Description automatically generated](media/image24.png)
+   :::image type="content" source="media/pay-as-you-go-powerapps-app-settings.png" alt-text="Select Connect subscription":::
 
-If you have app passes available for your environment and still want to set up pay-as-you-go, you use the steps 2-4 to set it up. Once pay-as-you-go is set up, app passes are not consumed.
-
-![Graphical user interface  text  application  email Description automatically generated](media/image28.png)
+   If you have app passes available for your environment and still want to set up pay-as-you-go, you use the steps 2-4 to set it up. Once pay-as-you-go is set up, app passes are not consumed.
 
 ## How to view usage and billing information
 
-Aggregated billing information is available in the Azure portal, and a detailed usage drill downs are available in the Power Platform Admin Center.
+Aggregated billing information is available in the Azure portal, and a detailed usage drill downs are available in the Power Platform admin center.
 
-*View billing information in the Azure portal*
+### View billing information in the Azure portal
 
 All Power Platform meters are billed to Azure subscriptions. You can view the amounts that have been billed for each meter in the Azure Portal using Azure Cost Management. Billed amounts are updated daily (and sometimes more frequently), but it can take up to 24h between usage of a Power Platform service to show up in Azure Cost Management.
 
 Within Azure Cost Management you can filter and view billing details by meter and/or by Azure resource. Note that each billing policy corresponds to a Power Platform account resource. So to view charges for a specific billing policy simply filter for the Platform account resource of the same name,
 
-*View detailed usage information in the Power Platform admin center*
+### View detailed usage information in the Power Platform admin center
 
 While Azure Cost Management can show the amount that was billed for each meter and each billing policy, it will not provide a breakdown of which environments, apps, and users drove usage of the meters. For this level of information downloadable report is available on the billing policies page in the Power Platform admin center.
 
-![Graphical user interface  text  application  email Description automatically generated](media/image21.png)
+:::image type="content" source="media/pay-as-you-go-powerapps-download-reports.png" alt-text="Select Download reports":::
 
 The downloadable report contains the following fields:
 
@@ -322,121 +320,112 @@ Azure Cost Management provides options to set budgets for Azure resources and sp
 
 ## Turning off pay-as-you-go 
 
-You can turn off pay-as-you-go for an environment at any time by doing **either** of the following:
+You can turn off pay-as-you-go for an environment at any time by doing either of the following:
 
-1.  Remove the environment from a billing policy by going to the Power Platform admin center -&gt; Billing Policies page and editing the billing policy.
+1. Remove the environment from a billing policy by going to the Power Platform admin center -&gt; Billing Policies page and editing the billing policy.
 
 **OR**
 
-2.  Delete the environment's billing policy.
+2. Delete the environment's billing policy.
 
-As soon as you take either action above, the environment will cease to be a pay-as-you-go environment and it will go back to functioning as a regular environment. Any usage that was already incurred up to the point the action was taken will be billed to Azure, but no further usage beyond that point will be billed.
+   As soon as you take either action above, the environment will cease to be a pay-as-you-go environment and it will go back to functioning as a regular environment. Any usage that was already incurred up to the point the action was taken will be billed to Azure, but no further usage beyond that point will be billed.
 
-Note that deleting the billing policy in the Power Platform admin center will not automatically delete its corresponding Power Platform account resource in the Azure portal. You can delete this resource in the Azure portal.
+   Note that deleting the billing policy in the Power Platform admin center will not automatically delete its corresponding Power Platform account resource in the Azure portal. You can delete this resource in the Azure portal.
 
 ## Known Issues/Scope for Public Preview
 
-To Add:
-
--   Issue with tagging not working yet
-
--   Deleting a BP does not delete corresponding PP Account resource
-
--   PPAC downloadable usage reports provide data for last 30d period only
-
--   Billing is only for first 30d of a month
+- Tagging not working yet
+- Deleting a BP does not delete corresponding PP Account resource
+- PPAC downloadable usage reports provide data for last 30-day period only
+- Billing is only for first 30 days of a month
 
 ## Frequently Asked Questions 
 
-1. **When should I consider existing Power Apps subscription plans vs pay-as-you-go?**
+### When should I consider existing Power Apps subscription plans vs pay-as-you-go?
 
 The addition of pay-as-you-go provides flexibility to pay based on the number of unique apps or portals a user runs each month.
 
 Some common scenarios where it might be useful:
 
--   When you have a team of professional developers who already have access to an Azure subscription. Using their existing Azure subscription to use Power Apps may help reduce procurement processes, while maintaining consistency with other services the team is consuming from Microsoft.
+- When you have a team of professional developers who already have access to an Azure subscription. Using their existing Azure subscription to use Power Apps may help reduce procurement processes, while maintaining consistency with other services the team is consuming from Microsoft.
+- Pay-as-you-go may be an option when exploring premium capabilities but unsure how many licenses to procure in advance. Enabling pay-as-you-go delivers the flexibility to establish usage patterns, which could then be transitioned into subscription licenses, if needed.
+- Similarly, there may be scenarios where an app needs to be shared with a large user base, though usage and frequency may significantly fluctuate. In this case, pay-as-you-go would enable you to pay only for those users who ran an app during the monthly period.
 
--   Pay-as-you-go may be an option when exploring premium capabilities but unsure how many licenses to procure in advance. Enabling pay-as-you-go delivers the flexibility to establish usage patterns, which could then be transitioned into subscription licenses, if needed.
-
--   Similarly, there may be scenarios where an app needs to be shared with a large user base, though usage and frequency may significantly fluctuate. In this case, pay-as-you-go would enable you to pay only for those users who ran an app during the monthly period.
-
-2. **Is pay-as-you-go available for both canvas apps and model apps?**
+### Is pay-as-you-go available for both canvas apps and model apps?
 
 Yes.
 
-3. **How is the Power Apps per app meter unit counted?**
+### How is the Power Apps per app meter unit counted?
 
 Number of unique users who opened an app or a portal in each month. Repeat access to the same app or portal is counted only once.
 
-4. **Can I set up pay-as-you-go for my environment without an** **Azure subscription?**
+### Can I set up pay-as-you-go for my environment without an Azure subscription?
 
 No. You need an Azure subscription to set up pay-as-you-go.
 
-5. **Which** **environments are available** **for pay-as-you-go?**
+### Which environments are available for pay-as-you-go?
 
 Production and Sandbox environments are available at this point.
 
-6. **Can pay-as-you-go be set up for individual apps?**
+### Can pay-as-you-go be set up for individual apps?
 
 No. Pay-as-you-go is set up for an environment and all apps within that environment are billed against the associated Azure subscription. You can however exclude an app from using the Azure subscription in which case a user will need a per user license to use the app. Per app licenses cannot be used in a pay-as-you-go environment.
 
-7. **What if I already have a user license and use an app in a pay-as-you-go enabled environment? Will I be billed against Azure subscription?**
+### What if I already have a user license and use an app in a pay-as-you-go enabled environment? Will I be billed against Azure subscription?
 
 Users with per user licenses are not counted towards the Power Apps Per app meter, and hence will not incur charges. However, note that when an environment is linked to a billing policy, any Dataverse usage will be billed to the billing policy's Azure subscription.
 
-8. **What happens if I have** **an** **Office** **license** **and using an app with standard connectors in a pay-as-you-go enabled environment?**
+### What happens if I have an Office license and using an app with standard connectors in a pay-as-you-go enabled environment?
 
 Users who are using an app with standard connectors and have office licenses, are not counted towards the Power Apps per app meter, and hence will not incur charges.
 
-9. **Can guest users use apps in a pay-as-you-go environment without licenses?**
+### Can guest users use apps in a pay-as-you-go environment without licenses?
 
 Yes.
 
-10. **What if a user uses the same app multiple times in a month? How will that user be charged?**
+### What if a user uses the same app multiple times in a month? How will that user be charged?
 
 Repeat access of the same app by a user in a month is counted only once, resulting in a charge for only 1 active user in that month.
 
-11. **If a user uses multiple apps in a single environment, how will that user be charged?**
+### If a user uses multiple apps in a single environment, how will that user be charged?
 
 You will be charged for the number of apps that a unique user accesses in a month. If a user uses three different apps in a month, you will be charged for three active users.
 
-12. **What if my app is already using app passes that are available at the environment? Can I still use pay-as-you-go billing for my app?**
+### What if my app is already using app passes that are available at the environment? Can I still use pay-as-you-go billing for my app?
 
 Yes, you can set up pay-as-you-go for your app's environment. Doing so will disregard the app passes and you can pay for your app via Azure subscription.
 
-13. **Can I use pay-as-you-go billing for some apps and use per app passes for the others in the same environment?**
+### Can I use pay-as-you-go billing for some apps and use per app passes for the others in the same environment?
 
 No. As soon as you enable pay-as-you-go for your environment, all apps will be billed against it.
 
-14. **I do not have** **admin permissions for the environment I'm working with. Can I set up pay-as-you-go for the environment?**
+### I do not have admin permissions for the environment I'm working with. Can I set up pay-as-you-go for the environment?
 
 No. You need an environment admin permission to be able to link the environment to a billing policy.
 
-15. **Can I enable/disable** **specific meters?**
+### Can I enable/disable specific meters?
 
 No. Once you enable pay-as-you-go, both Power Apps per app meter and Dataverse meter will be enabled and both app access and storage will be charged.
 
-16. **How is Dataverse capacity calculated when one environment is enabled for PAYG and the other is not within my tenant?**
+### How is Dataverse capacity calculated when one environment is enabled for PAYG and the other is not within my tenant?
 
 Environments draw from a tenant-wide pool of Dataverse storage. When an environment is linked to an Azure subscription however, it stops drawing from the tenant-wide pool. All pay-as-you-go linked environments will get an initial entitlement of 1.0GB of Dataverse database and 1.0GB of Dataverse file storage capacities to cover the typical initial storage footprint consumed by Dataverse. Any usage above the initial environment is billed to Azure via the Dataverse pay-as-you-go meter.
 
-17. **Will I be throttled** **if I exceed Power Platform requests entitlement in a pay-as-you-go environment?**
+### Will I be throttled if I exceed Power Platform requests entitlement in a pay-as-you-go environment?
 
 No. If you exceed your entitlement, you will automatically be charged for the overages via Azure subscription without experiencing any disruption. However, at this time, you are not getting charged even if you exceed entitlements.
 
-18. **Can I stop using pay-as-you-go billing at any time?**
+### Can I stop using pay-as-you-go billing at any time?
 
 Yes, you can disable pay-as-you-go at any point by either deleting the billing policy or removing the environment from the billing policy. Doing so will stop any further charges on the Azure subscription.
 
-19. **What admin guardrails are available to prevent accidental costs?**
+### What admin guardrails are available to prevent accidental costs?
 
-20. **What If my bill is wrong?**
+### What If my bill is wrong?
 
-21. 
+### Can I use the Power Platform request or Dataverse capacity add-ons in a pay-as you-go environment?
 
-22. **Can I use the Power Platform request** **or Dataverse** **capacity** **add-ons** **in a pay-as you-go environment?**
-
-23. No, you cannot use add-ons in a pay-as-you-go environment.
+No, you cannot use add-ons in a pay-as-you-go environment.
 
 
 ### See also  
