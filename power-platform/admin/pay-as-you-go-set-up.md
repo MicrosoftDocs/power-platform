@@ -138,7 +138,7 @@ Here are the steps to create a billing policy, link environments to it, and add 
 
 ### In Power Apps 
 
-You can set up pay-as-you-go for your environment right from your app's setting for both canvas apps and model apps without needing to go to the admin center. Once set up, you can easily add new environments to the same Azure subscription in the Power Platform admin center.
+You can set up pay-as-you-go for your environment right from your app's setting for both canvas apps and model-driven apps without needing to go to the admin center. Once set up, you can easily add new environments to the same Azure subscription in the Power Platform admin center.
 
 **STEP 1:** Sign into [Power Apps](https://make.powerapps.com/) and navigate to "Apps". Select your app and click on "Settings". Make sure that that you have the right environment selected.
 

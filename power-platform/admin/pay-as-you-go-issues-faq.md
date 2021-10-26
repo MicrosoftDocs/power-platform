@@ -40,7 +40,7 @@ Some common scenarios where it might be useful:
 - Pay-as-you-go may be an option when exploring premium capabilities but unsure how many licenses to procure in advance. Enabling pay-as-you-go delivers the flexibility to establish usage patterns, which could then be transitioned into subscription licenses, if needed.
 - Similarly, there may be scenarios where an app needs to be shared with a large user base, though usage and frequency may significantly fluctuate. In this case, pay-as-you-go would enable you to pay only for those users who ran an app during the monthly period.
 
-### Is pay-as-you-go available for both canvas apps and model apps?
+### Is pay-as-you-go available for both canvas apps and model-driven apps?
 
 Yes.
 
