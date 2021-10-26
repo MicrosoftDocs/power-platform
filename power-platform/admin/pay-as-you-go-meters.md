@@ -76,7 +76,7 @@ Measurement for each category of Dataverse storage usage will happen three times
 ### Power Platform request meter
 
 > [!NOTE]
-> As of Public Preview (11/01/21) if you link an environment to an Azure subscription this meter will not be reported or billed. Users and flows in the environment can consume more than their entitled usage without being throttled or paying for overages. Reporting and billing will be turned on in the weeks following the Public Preview announcement.
+> As of Public Preview (11/01/21), if you link an environment to an Azure subscription this meter will not be reported or billed. Users and flows in the environment can consume more than their entitled usage without being throttled or paying for overages. Reporting and billing will be turned on in the weeks following the Public Preview announcement.
 
 Each Power Platform license includes a large entitlement of Power Platform requests which is designed to be sufficient for most customers and scenarios. For customers with extremely high scale scenarios who need to exceed these entitlements, the Power Platform requests meter enables them to scale without getting throttled and only pay for the Power Platform requests used above those entitlements.
 
