@@ -60,20 +60,14 @@ Follow these steps to assign a security role.
 
 > If you have enabled [allow record ownership across business units](wp-security-cds.md#to-enable-this-matrix-data-access-structure-preview), your users can be created in the root business unit, and their data access is managed by assigning security roles from respective business units. The root business unit's users still required a security role with these privileges in order to create/update user settings:
   
-  Action Card User Settings
+- Action Card User Settings
+- Saved View
+- User Chart
+- User Dashboard
+- User Entity Instance Data
+- User Entity UI Settings
+- User Application Metadata
   
-  Saved View
-  
-  User Chart
-  
-  User Dashboard
-  
-  User Entity Instance Data
-  
-  User Entity UI Settings
-  
-  User Application Metadata
-
 To assign security roles to users in an environment that has zero or one Microsoft Dataverse database, see [Configure user security to resources in an environment](database-security.md). 
 
 ## (Optional) Assign an administrator role  
