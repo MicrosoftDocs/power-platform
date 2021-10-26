@@ -72,6 +72,8 @@
          href: advanced-end-user-authentication.md
        - name: Add actions using Power Automate
          href: advanced-flow.md
+       - name: Send proactive messages and cards in Microsoft Teams (Preview) 
+         href: advanced-proactive-message.md
        - name: Trigger hand-off to a live agent
          href: advanced-hand-off.md
     - name: Publish and integrate
@@ -214,6 +216,8 @@
          href: teams/advanced-end-user-authentication-teams.md
        - name: Add actions using Power Automate
          href: teams/advanced-flow-teams.md
+       - name: Send proactive messages and cards (Preview) 
+         href: teams/advanced-proactive-message-teams.md
        - name: Use Bot Framework Skills
          href: teams/advanced-use-skills-teams.md
     - name: Publish and integrate
