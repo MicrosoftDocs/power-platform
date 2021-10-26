@@ -24,7 +24,7 @@ This article explains how to set up pay-as-you-go for an enviornment. In order t
 
 ## Who can set it up?
 
-The following table describes the permissions of who can create a billing policy to link an environment to the Azure subscription. These permissions apply to both the Power Apps and the Power Platform admin center experience.
+The following table describes the permissions of who can create a [billing policy](pay-as-you-go-overview.md#what-is-a-billing-policy) to link an environment to the Azure subscription. These permissions apply to both the Power Apps and the Power Platform admin center experience.
 
 | **Role**  | **Create a billing policy** | **Edit a billing policy**   | **Link environments to a billing policy**   |
 |--------|----------|-------|-----|
