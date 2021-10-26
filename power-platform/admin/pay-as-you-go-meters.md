@@ -86,6 +86,11 @@ Note: the prices shown in this example are illustrative only. Your organization'
 :::image type="content" source="media/pay-as-you-go-measured-usage-above-entitlements.png" alt-text="Measured usage above entitlements":::
 
 
+## Next step
+
+[Preview: Set up pay-as-you-go](pay-as-you-go-set-up.md)
+
+
 ### See also  
 
 

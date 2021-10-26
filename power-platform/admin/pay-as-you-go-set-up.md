@@ -178,6 +178,24 @@ You can set up pay-as-you-go for your environment right from your app's setting 
 
    If you have app passes available for your environment and still want to set up pay-as-you-go, you use the steps 2-4 to set it up. Once pay-as-you-go is set up, app passes are not consumed.
 
+## Turning off pay-as-you-go 
+
+You can turn off pay-as-you-go for an environment at any time by doing either of the following:
+
+1. Remove the environment from a billing policy by going to the Power Platform admin center > Billing Policies page and editing the billing policy.
+
+**OR**
+
+2. Delete the environment's billing policy.
+
+   As soon as you take either action above, the environment will cease to be a pay-as-you-go environment and it will go back to functioning as a regular environment. Any usage that was already incurred up to the point the action was taken will be billed to Azure, but no further usage beyond that point will be billed.
+
+   Note that deleting the billing policy in the Power Platform admin center will not automatically delete its corresponding Power Platform account resource in the Azure portal. You can delete this resource in the Azure portal.
+
+## Next step
+
+[Preview: View usage and billing information](pay-as-you-go-usage-costs.md)
+
 ### See also  
 
 

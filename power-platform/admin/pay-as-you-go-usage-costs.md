@@ -48,19 +48,9 @@ When these budgets amounts are approached or reached you can configure alerts to
 
 Azure Cost Management provides options to set budgets for Azure resources and specific meters. You can use this capability to set budgets at a billing policy level by setting a budget for its corresponding Power Platform account resource. You can also set budgets for individual Power Platform meters.
 
-## Turning off pay-as-you-go 
+## Next step
 
-You can turn off pay-as-you-go for an environment at any time by doing either of the following:
-
-1. Remove the environment from a billing policy by going to the Power Platform admin center > Billing Policies page and editing the billing policy.
-
-**OR**
-
-2. Delete the environment's billing policy.
-
-   As soon as you take either action above, the environment will cease to be a pay-as-you-go environment and it will go back to functioning as a regular environment. Any usage that was already incurred up to the point the action was taken will be billed to Azure, but no further usage beyond that point will be billed.
-
-   Note that deleting the billing policy in the Power Platform admin center will not automatically delete its corresponding Power Platform account resource in the Azure portal. You can delete this resource in the Azure portal.
+[Preview: Known issues and frequently asked questions](pay-as-you-go-issues-faq.md)
 
 
 ### See also  
