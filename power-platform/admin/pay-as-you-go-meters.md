@@ -20,7 +20,7 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-[Need intro for meters...]
+If you are using Pay-as-you-go, usage of apps as well as any Dataverse or Power Platform request usage above included amounts is billed against the Azure subscription using Azure meters. Power Apps per app meter measures the app usage, Dataverse capacity add-on meter measures the dataverse usage across database, file and logs and Power Platform requests capacity add-on meter measures the API calls. As soon as pay-as-you-go is set up for an enviornment, all three meters are enabled.
 
 ## How do meters work?
 
