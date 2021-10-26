@@ -145,7 +145,7 @@ You can set up pay-as-you-go for your environment right from your app's setting 
 
    :::image type="content" source="media/pay-as-you-go-powerapps-settings.png" alt-text="In Power Apps sign in and select Apps > Settings":::
 
-   If pay-as-you-go is already enabled for an environment via the Power Platform admin center, then you'll see the following experience. You can opt your app out of using an Azure subscription by turning the toggle off in the app settings. Once turned off, users will need Power Apps user licenses to access the app. You can turn it on anytime. You can also view and edit the subscription details by selecting ***Edit pay-as-you-go billing** which will direct you to the Power Platform admin center.
+   If pay-as-you-go is already enabled for an environment via the Power Platform admin center, then you'll see the following experience. You can opt your app out of using an Azure subscription by turning the toggle off in the app settings. Once turned off, users will need Power Apps user licenses to access the app. You can turn it on anytime. You can also view and edit the subscription details by selecting **Edit pay-as-you-go billing** which will direct you to the Power Platform admin center.
 
    > [!NOTE]
    > If app passes are already available for this environment, they are ignored and not consumed. Instead, Azure subscription is used for accessing the apps.
@@ -180,6 +180,7 @@ You can set up pay-as-you-go for your environment right from your app's setting 
    :::image type="content" source="media/pay-as-you-go-powerapps-app-settings.png" alt-text="Select Connect subscription":::
 
    If you have app passes available for your environment and still want to set up pay-as-you-go, you use the Steps 2-4 to set it up. Once pay-as-you-go is set up, app passes are not consumed.
+      **image is missing here. Can we add from the doc?**
 
 ## Turning off pay-as-you-go 
 
