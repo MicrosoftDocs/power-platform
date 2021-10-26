@@ -1,6 +1,6 @@
 ---
-title: "Notify bot users in Teams with proactive messages and cards"
-description: "Use Power Automate flows to send proactive messages and adaptive cards to bot users in Teams, with updates to their conversations, requests for information, and more."
+title: "Notify bot users in Power Virtual Agents for Teams with proactive messages and cards"
+description: "Use Power Automate flows to send proactive messages and adaptive cards from bots created in Teams to bot users, with updates to their conversations, requests for information, and more."
 keywords: "PVA"
 ms.date: 10/26/2021
 ms.service: power-virtual-agents
@@ -15,22 +15,22 @@ ms.collection: virtual-agent
 
 
 
-# Send proactive messages and cards in Microsoft Teams (Preview) 
+# Send proactive messages and cards from and to bots in Microsoft Teams (Preview) 
 
 
-[!INCLUDE [Preview documentation notice](includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [Preview documentation notice](includes/cc-beta-prerelease-disclaimer-teams.md)]
 
 Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
-> - [Power Virtual Agents web app](advanced-proactive-message.md)
-> - [Power Virtual Agents app in Microsoft Teams](teams/advanced-proactive-message-teams.md)
+> - [Power Virtual Agents web app](../advanced-proactive-message.md)
+> - [Power Virtual Agents app in Microsoft Teams](advanced-proactive-message-teams.md)
 
 >[!IMPORTANT]
 >This is a preview feature.
 >Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and [provide feedback](https://powerusers.microsoft.com/t5/Forums/ct-p/pva_forums).
 
-After you've [published your bot](publication-fundamentals-publish-channels.md) and [made the bot available to end users in Microsoft Teams](publication-add-bot-to-microsoft-teams.md), you can notify users ("recipients") in Microsoft Teams with proactive messages and [adaptive cards](https://adaptivecards.io). Proactive messages use Power Automate flows to deliver their content, and are useful in many scenarios, including:
+After you've [published your bot](publication-fundamentals-publish-channels-teams.md) and [made the bot available to end users in Microsoft Teams](publication-add-bot-to-microsoft-teams-teams.md), you can notify users ("recipients") in Microsoft Teams with proactive messages and [adaptive cards](https://adaptivecards.io). Proactive messages use Power Automate flows to deliver their content, and are useful in many scenarios, including:
 
 -   Letting a recipient know that their earlier request has been completed. For example, the user's time-off request has been approved.
 
@@ -41,25 +41,25 @@ After you've [published your bot](publication-fundamentals-publish-channels.md) 
 ## Prerequisites
 
 
--   The bot must have been [published at least once](publication-fundamentals-publish-channels.md).
--   The bot must be [made available to end users in Microsoft Teams](publication-add-bot-to-microsoft-teams.md), and the end users must have the bot installed. The bot can't deliver the message to the recipient if:
+-   The bot must have been [published at least once](publication-fundamentals-publish-channels-teams.md).
+-   The bot must be [made available to end users in Microsoft Teams](publication-add-bot-to-microsoft-teams-teams.md), and the end users must have the bot installed. The bot can't deliver the message to the recipient if:
     -   The recipient hasn't installed the bot in Microsoft Teams.
     -   The recipient has uninstalled the bot.
     -   The recipient has blocked the bot.
-    -   The recipient doesn't have permission to chat with the bot - in which case you'll need to [share the bot with users](admin-share-bots.md).
+    -   The recipient doesn't have permission to chat with the bot - in which case you'll need to [share the bot with users](admin-share-bots-teams.md).
 -   [Power Automate](/power-automate/getting-started) flows used by the bot must be created in the same environment.
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations-teams.md)]
 
 >[!IMPORTANT]
 >You can only send proactive messages to recipients who have installed the bot in Microsoft Teams.  
->Learn more on how to [make the bot available for end users to install in Microsoft Teams](publication-add-bot-to-microsoft-teams.md), or work with your admin to [pre-pin and install the bot](/microsoftteams/teams-app-setup-policies) for end users.
+>Learn more on how to [make the bot available for end users to install in Microsoft Teams](publication-add-bot-to-microsoft-teams-teams.md), or work with your admin to [pre-pin and install the bot](/microsoftteams/teams-app-setup-policies) for end users.
 
 
 ## Send proactive messages and adaptive cards in Teams
 
 You will need to create a Power Automate flow to send proactive messages with your bot. You can create a new flow from:
 
-- The [Power Virtual Agents authoring canvas](advanced-flow.md#create-a-new-flow-from-the-power-virtual-agents-authoring-canvas).
+- The [Power Virtual Agents authoring canvas](advanced-flow-teams.md#create-a-new-flow-from-the-power-virtual-agents-authoring-canvas).
 - The [Power Apps Teams app](/power-automate/teams/create-flows-power-apps-app).
 - The [Power Automate maker portal](https://powerautomate.com/)'s solutions section of the environment.
 
@@ -251,7 +251,7 @@ You can use the returned status code to define different follow-up behaviors in 
 ## Known limitations
 
 -   All proactive message and cards from Power Virtual Agents are subject to [limits on Power Automate](/power-automate/limits-and-config#throughput-limits) and [throttling limits of the Microsoft Teams connector](/connectors/teams/#limits).
--   All proactive message and cards won't be logged in conversation transcripts or [Analytics sessions](analytics-overview.md).
+-   All proactive message and cards won't be logged in conversation transcripts or [Analytics sessions](analytics-overview-teams.md).
 -   Proactive messages can only be posted to a personal chat with the bot.
 
 
