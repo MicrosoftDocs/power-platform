@@ -34,13 +34,42 @@ While Azure Cost Management can show the amount that was billed for each meter a
 
 :::image type="content" source="media/pay-as-you-go-powerapps-download-reports.png" alt-text="Select Download reports":::
 
+>[!NOTE]
+>During the preview, detailed usage reporting is only available for the past 30 days.  In the future, more billing periods will be available in the usage report download experience.
+
 The downloadable report contains the following fields:
 
-| Environment ID        | [ add description ] |
-|-----------------------|-------------------------|
-| Billing policy ID     |                         |
-| Azure subscription ID |                         |
-|                       |                         |
+| Field                  | Description            |
+|------------------------|------------------------|
+| Billing Policy ID       | The unique policy identifier |
+| Azure Subscription ID   | The unqiue Azure subscription identifier |
+| Billing Period Start Date | The first calendar day of the billing period month |
+| Billing Period End Date | The last calendar day of the billing period month |
+| Environment ID | The unique Power Platform environment identifier |
+| Environment Region | *Not available during preview* |
+| Caller ID | The unique identifier of the calling identity. This can be null or empty. |
+| Caller Type | The type of caller identity.  Applicable values are User, Application, or Microsoft when the caller is Microsoft |
+| Resource Type | The type of resource. Applicable values are Dataverse, Power Apps, and Power Automate |
+| Resource ID | The unqiue resource identifier.  Based on the Resource Type, this could be a Power App ID, Dataverse Organization ID, or Power Automate Flow ID |
+| Meter Category | The top level classification of the meter.  See [meter details](pay-as-you-go-meters.md) |
+| Meter Subcategory | The detailed classification of the meter. See [meter details](pay-as-you-go-meters.md) |
+| Usage Datetime | The date and time of when the usage was captured |
+| Billing Model | Pay-as-you-go |
+| Entitled Quantity | The value of any free entitlement for the submeter |
+| Consumed Quantity | The usage for the submeter |
+| Overage Quantity | Calculated by reducing Consumed Quantity by Entitled Quantity | 
+| Billed Quantity | Calculated by the unit of measure and reporting frequency |
+| Unit of measure | The measure that billing occurs to Azure for the submeter | 
+
+### Determining billed quantity
+
+The unit of measure and the reporting frequency impacts the granular billed quantity amount in both the usage report as well as the quantities sent to Azure.  Today, usage is reported to Azure three times per 24 hour period. 
+
+There are two types of units of measure.  Those that are unique per month, and those that are calculated.  
+
+For an example of unique per month, consider the Power Apps per app submeter.  This charges in unique users per month, and so you will either see a '1' as the billed quantity or you won't a row at all.
+
+For an example of a calculated unit of measure, consider the Dataverse Database capacity submeter.  This charges in Gigabytes per month, and with three usage reports sent to Azure every 24 hours you would take the Overage Quantity and divide by 90 ( 30 days in the average month multiplied 3 ).
 
 ## How to manage costs
 
