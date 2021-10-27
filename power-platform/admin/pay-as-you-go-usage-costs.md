@@ -42,15 +42,15 @@ The downloadable report contains the following fields:
 | Field                  | Description            |
 |------------------------|------------------------|
 | Billing Policy ID       | The unique policy identifier |
-| Azure Subscription ID   | The unqiue Azure subscription identifier |
+| Azure Subscription ID   | The unique Azure subscription identifier |
 | Billing Period Start Date | The first calendar day of the billing period month |
 | Billing Period End Date | The last calendar day of the billing period month |
 | Environment ID | The unique Power Platform environment identifier |
-| Environment Region | *Not available during preview* |
+| Environment Region | Not available during preview |
 | Caller ID | The unique identifier of the calling identity. This can be null or empty. |
 | Caller Type | The type of caller identity.  Applicable values are User, Application, or Microsoft when the caller is Microsoft |
 | Resource Type | The type of resource. Applicable values are Dataverse, Power Apps, and Power Automate |
-| Resource ID | The unqiue resource identifier.  Based on the Resource Type, this could be a Power App ID, Dataverse Organization ID, or Power Automate Flow ID |
+| Resource ID | The unique resource identifier.  Based on the Resource Type, this could be a Power App ID, Dataverse Organization ID, or Power Automate Flow ID |
 | Meter Category | The top level classification of the meter.  See [meter details](pay-as-you-go-meters.md) |
 | Meter Subcategory | The detailed classification of the meter. See [meter details](pay-as-you-go-meters.md) |
 | Usage Datetime | The date and time of when the usage was captured |
@@ -65,11 +65,11 @@ The downloadable report contains the following fields:
 
 The unit of measure and the reporting frequency impacts the granular billed quantity amount in both the usage report as well as the quantities sent to Azure.  Today, usage is reported to Azure three times per 24 hour period. 
 
-There are two types of units of measure.  Those that are unique per month, and those that are calculated.  
+There are two types of units of measure: those that are unique per month, and those that are calculated.  
 
-For an example of unique per month, consider the Power Apps per app submeter.  This charges in unique users per month, and so you will either see a '1' as the billed quantity or you won't a row at all.
+For an example of unique per month, consider the Power Apps per app submeter.  This charges in unique users per month, and so you will either see a '1' as the billed quantity or you won't see a row at all.
 
-For an example of a calculated unit of measure, consider the Dataverse Database capacity submeter.  This charges in Gigabytes per month, and with three usage reports sent to Azure every 24 hours you would take the Overage Quantity and divide by 90 ( 30 days in the average month multiplied 3 ).
+For an example of a calculated unit of measure, consider the Dataverse Database capacity submeter.  This charges in Gigabytes per month, and with three usage reports sent to Azure every 24 hours you would take the Overage Quantity and divide by 90 (30 days in the average month multiplied 3).
 
 ## How to manage costs
 
