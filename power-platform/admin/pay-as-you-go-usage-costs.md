@@ -20,7 +20,7 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Aggregated billing information is available in the Azure portal, and detailed usage drill downs are available in the Power Platform admin center.
+Aggregated billing information is available in the Azure portal, and detailed usage drill downs are available in the Power Platform admin center. Reporting is available for Power Apps per app meter and Dataverse capacity add-on meters.
 
 ### View billing information in the Azure portal
 
@@ -52,7 +52,7 @@ The downloadable report contains the following fields:
 | Resource Type | The type of resource. Applicable values are Dataverse, Power Apps, and Power Automate |
 | Resource ID | The unique resource identifier.  Based on the Resource Type, this could be a Power App ID, Dataverse Organization ID, or Power Automate Flow ID |
 | Meter Category | The top level classification of the meter.  See [meter details](pay-as-you-go-meters.md) |
-| Meter Subcategory | The detailed classification of the meter. See [meter details](pay-as-you-go-meters.md) |
+| Meter Subcategory | The detailed classification of the meter. ADD SUBCATEGORY DETAILS HERE |
 | Usage Datetime | The date and time of when the usage was captured |
 | Billing Model | Pay-as-you-go |
 | Entitled Quantity | The value of any free entitlement for the submeter |
@@ -63,13 +63,13 @@ The downloadable report contains the following fields:
 
 ### Determining billed quantity
 
-The unit of measure and the reporting frequency impacts the granular billed quantity amount in both the usage report as well as the quantities sent to Azure.  Today, usage is reported to Azure three times per 24 hour period. 
+The units of measure and the reporting frequency impacts the granular billed quantity amount in both the usage report as well as the quantities sent to Azure.  Today, usage is reported to Azure three times per 24 hour period. 
 
-There are two types of units of measure: those that are unique per month, and those that are calculated.  
+There are two types of units of measure: Unique users which is measured in numbers and the dataverse capacity which is measured in GigaBytes.
 
-For an example of unique per month, consider the Power Apps per app submeter.  This charges in unique users per month, and so you will either see a '1' as the billed quantity or you won't see a row at all.
+For Power Apps per app meter, you will see the number of unique users in the report which will be a numeric quantity such as 15. This means that total 15 users used at least one app or portal in a month.
 
-For an example of a calculated unit of measure, consider the Dataverse Database capacity submeter.  This charges in Gigabytes per month, and with three usage reports sent to Azure every 24 hours you would take the Overage Quantity and divide by 90 (30 days in the average month multiplied 3).
+For Dataverse capacity add-on meters, units are in Gigabytes per month, and with three usage reports sent to Azure every 24 hours. In your report, you will see capacity distribution across database, file and log based on your consumption. 
 
 ## How to manage costs
 
