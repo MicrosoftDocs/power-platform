@@ -82,7 +82,7 @@ Each Power Platform license includes a large entitlement of Power Platform reque
 
 For more information on Power Platform requests and the entitlements that are included in each Power Platform license, see  [Requests limits and allocations](api-request-limits-allocations.md).
 
-Power Platform request entitlements are structured as daily entitlements (requests/day). In pay-as-you-go environments (meaning those that are linked to an Azure subscription), users and flows that go above their daily entitlement will be billed to the Azure subscription. In a pay-as-you-go environment, with Power Apps per app meter, you get an entitlement of 2K API calls/per user/app/day. Note that flows still need to be licensed with a base licensed (either Power Automate per user, Power Automate per flow, or Office).
+Power Platform request entitlements are structured as daily entitlements (requests/day). In pay-as-you-go environments (meaning those that are linked to an Azure subscription), users and flows that go above their daily entitlement will be billed to the Azure subscription. In a pay-as-you-go environment, with Power Apps per app meter, you get an entitlement of 6000 API calls/per user/app/day. Note that flows still need to be licensed with a base licensed (either Power Automate per user, Power Automate per flow, or Office).
 
 In the example below, User A is licensed with a Power Apps per user license and Flow A is licensed with a Power Automate per flow license. The number of Power Platform requests consumed by User A and Flow B are measured daily and any usage above the daily entitlement is multiplied by a $/request rate and shown in Azure Cost Management. The total amount will be summed and billed based on the customer's Azure billing cycle.
 
