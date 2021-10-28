@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/30/2021
+ms.date: 10/28/2021
 ms.subservice: admin
 ms.author: jimholtz
 ms.reviewer: jimholtz
@@ -19,21 +19,95 @@ search.app:
 ---
 # Requests limits and allocations
 
-Effective October 2019, to help ensure service levels, availability, and quality, there are entitlement limits to the number of requests users can make each day across Power Apps, Power Automate, AI Builder, Power Virtual Agents, and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation).
+Originally announced in October 2019, Power Platform Request entitlement limits exist to help ensure service levels, availability, and quality of the platform. There are limits to the number of requests users can make each day across Power Apps, Power Automate, Power Virtual Agents, and Dynamics 365 applications.
 
 ## What is a Microsoft Power Platform request?
 
-Requests in Microsoft Power Platform consist of various actions that a user makes across various products. At a high level, below is what constitute an API request:
+Requests in Microsoft Power Platform consist of various actions that a user makes across various products. At a high level, below is what constitutes an API request:
 
 - **Power Apps** – all API requests to connectors and Microsoft Dataverse.
-- **Power Automate** – all API requests to connectors, process advisor analysis, HTTP actions, and built-in actions from initializing variables to a simple compose action. Both succeeded and failed actions count towards these limits. Additionally, retries and other requests from pagination count as action executions as well. 
+- **Power Automate** – all API requests to connectors, process advisor analysis, HTTP actions, and built-in actions from initializing variables to a simple compose action. Both succeeded and failed actions count towards these limits. Additionally, retries and other requests from pagination count as action executions as well.
 - **Power Virtual Agents** - API requests (or calls) to Power Automate flows from within a chatbot conversation.
-- **Dataverse (formerly Common Data Service)** – all create, read, update, and delete (CRUD), assign, and share operations including user-driven and internal system requests required to complete CRUD transactions, and special operations like share or assign. These can be from any client or application and using any endpoint (SOAP or REST). These include, but are not limited to, plug-ins, classic workflows, and custom controls making the earlier-mentioned operations.
+- **Dataverse** – all create, read, update, and delete (CRUD), assign, and share operations including user-driven and internal system requests required to complete CRUD transactions, and special operations like share or assign. These can be from any client or application (including Dynamics 365) and using any endpoint (SOAP or REST). These include, but are not limited to, plug-ins, classic workflows, and custom controls making the earlier-mentioned operations.
 
 > [!NOTE]
 > For Dataverse, there is a small set of system internal operations that are excluded from limits, such as login, logout, and system metadata operations.
 
-The table below will describe the common requests limits, and the allocation that a user gets based on the type of license assigned to the user.
+The sections below describe the request types and the entitlement limits established for each.
+
+## Licensed user request entitlement limits
+
+All the users of Microsoft Power Platform have limits on the number of requests based on the license they are assigned. The following table defines the number of requests a user can make in a 24-hour period:
+
+| Products | Requests per paid license per 24 hours |
+|--------------|-------------------|
+| Paid licensed users for Power Platform (excludes Power Apps per App and Power Automate per flow) and Dynamics 365 (excludes D365 Team Member detailed below<sup>1</sup>)    | 40,000     |
+| Power Apps pay-as-you-go plan, and paid licensed users for Power Apps per app, Microsoft 365 apps with Power Platform access, and Dynamics 365 Team Member (detailed below<sup>2</sup>) | 6,000        |
+| Power Automate per flow plan<sup>3<sup>   | 250,000    |
+
+<sup>1</sup> This category includes paid licenses for Power Apps per user plan (which includes the previous Power Apps Plan 1 and Power Apps Plan 2 licenses), Power Automate per user plan (which includes the previous Power Apps Plan 1 and Power Apps Plan 2 licenses), Power Virtual Agents initial sessions pack, Power Virtual Agents additional sessions pack, Dynamics 365 Sales Premium, Dynamics 365 Sales Enterprise, Dynamics 365 Sales Professional, Dynamics 365 Customer Service Enterprise, Dynamics 365 Customer Service Professional, Dynamics 365 Field Service, Microsoft Relationship Sales, Dynamics 365 Project Service Automation, Dynamics 365 Commerce, Dynamics 365 Human Resources, Dynamics 365 Finance, Dynamics 365 Project Operations, Dynamics 365 Supply Chain Management, Dynamics 365 Customer Engagement plan, Dynamics 365 Unified Ops plan, Dynamics 365 Plan, Dynamics CRM Online Enterprise, and Dynamics CRM Online Professional.
+
+<sup>2</sup> This category includes the Power Apps pay-as-you-go plan, and paid licenses Power Apps per app plan, Dynamics 365 Team Member, Dynamics CRM Online Basic, Dynamics CRM Online Essential, Dynamics AX Self-Serve, Microsoft 365 licenses, and Microsoft Project Online (Plan 1, Plan 3, and Plan 5). See **Appendix B** in the [Licensing Guide](https://go.microsoft.com/fwlink/p/?linkid=2085130) for Microsoft 365 licenses that include Power Apps and Power Automate capabilities. 
+
+<sup>3</sup> The Power Automate per flow plan allows capacity to be specifically reserved for a single flow, irrespective of the owner of the flow. This does not use the non-licensed user request entitlements at the tenant level.
+
+### Additional details
+
+Power Platform Request entitlements are only granted with paid base licenses in the Dynamics 365 'base + attach' licensing model. Attach licenses do not include entitlements. For example, if a user has a Dynamics 365 Customer Service Enterprise as the base license and Dynamics 365 Sales Enterprise as an attach license, the total request entitlement would be what is provided by the base license - Dynamics 365 Customer Service Enterprise.
+
+If a user has multiple paid licenses assigned to them, the total number of requests allowed would be the sum of requests entitled for each license. For example, if a user has both a Dynamics 365 Customer Service Enterprise base license as well as a Power Apps per user license then that user will have a total of 40,000 + 40,000 = 80,000 requests available per 24 hours.
+
+Power Virtual Agents requests are counted from Power Automate flows triggered from a Power Virtual Agents chatbot. Power Virtual Agents initial sessions pack and additional sessions pack both receive the same daily Power Platform Request entitlements.
+
+## Non-licensed user request entitlement limits
+
+A separate entitlement limit is established for certain activities that do not require a user license to interact with the service. These limits are defined and pooled at the tenant level. Dataverse enables you to have identities that do not require any user license to interact with the service. These include:
+
+- [Application users](https://docs.microsoft.com/en-us/power-platform/admin/create-users#create-an-application-user)
+- [Non-interactive users](https://docs.microsoft.com/en-us/power-platform/admin/create-users#create-a-non-interactive-user-account)
+- [Administrative users](https://docs.microsoft.com/en-us/power-platform/admin/create-users#create-an-administrative-user-account)
+- [SYSTEM user](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/web-api/systemuser?view=dynamics-ce-odata-9#operations)
+
+Additionally, there are special free ($0) licenses, which are used to interact with Dynamics 365 applications like Dynamics 365 Marketing. See [<u>How Marketing is licensed</u>](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/marketing/purchase-setup#user-and-portal-licensing) for more details.
+
+For these non-licensed identities, every tenant will get an initial base request entitlement per tenant determined by what paid licenses are on the tenant, plus accrued entitlements determined by the quantity of paid Dynamics 365 Enterprise and Professional licenses.<sup>1</sup> This entitlement pool can only be used by these non-licensed users and not by users with assigned interactive user licenses.
+
+| **Products**                                                    | **Pooled non-licensed tenant-level requests per 24 hours**                              |
+|-----------------------------------------------------------------|-----------------------------------------------------------------------------------------|
+| Dynamics 365 Enterprise & Professional applications<sup>1</sup> | 500,000 base requests + 5,000 requests accrued per USL<sup>1</sup> up to 10,000,000 max |
+| Power Apps (all licenses)                                       | 25,000 base requests with no per-license accrual for the tenant                         |
+| Power Automate (all licenses)                                   | 25,000 base requests with no per-license accrual for the tenant                         |
+
+<sup>1</sup> This category includes licenses for Dynamics 365 Sales Premium, Dynamics 365 Sales Enterprise, Dynamics 365 Sales Professional, Dynamics 365 Customer Service Enterprise, Dynamics 365 Customer Service Professional, Dynamics 365 Field Service, Microsoft Relationship Sales, Dynamics 365 Project Service Automation, Dynamics 365 Commerce, Dynamics 365 Human Resources, Dynamics 365 Finance, Dynamics 365 Project Operations, Dynamics 365 Supply Chain Management, Dynamics 365 Customer Engagement plan, Dynamics 365 Unified Ops plan, Dynamics 365 Plan, Dynamics CRM Online Enterprise, and Dynamics CRM Online Professional.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Request limits based on user licenses
 

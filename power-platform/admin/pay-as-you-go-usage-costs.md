@@ -26,7 +26,9 @@ Aggregated billing information is available in the Azure portal, and detailed us
 
 All Power Platform meters are billed to Azure subscriptions. You can view the amounts that have been billed for each meter in the Azure Portal using Azure Cost Management. Billed amounts are updated daily (and sometimes more frequently), but it can take up to 24 hours after usage of a Power Platform service to show up in Azure Cost Management.
 
-Within Azure Cost Management you can filter and view billing details by meter and/or by Azure resource. Note that each billing policy corresponds to a Power Platform account resource. So to view charges for a specific billing policy, simply filter for the Platform account resource of the same name.
+Within Azure Cost Management you can filter and view billing details by meter and/or by Azure resource. Note that each billing policy corresponds to a Power Platform account resource. So to view charges for a specific billing policy, simply filter for the Power Platform account resource of the same name.
+
+:::image type="content" source="media/pay-as-you-go-billing-info-azure-portal.png" alt-text="Billing information in the Azure portal":::
 
 ### View detailed usage information in the Power Platform admin center
 
