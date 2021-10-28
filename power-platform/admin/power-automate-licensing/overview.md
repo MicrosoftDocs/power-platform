@@ -19,11 +19,7 @@ search.app:
 
 # Overview of Power Automate licensing
 
-[!INCLUDE [cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
-
-# Overview
-
-This article shall give a direct and easy to understand overview about licensing/pricing in Power Automate along with the key features and services associated with them. It won&#39;t replace all other material posted across docs.microsoft.com, but it gives you a solid understanding regarding which licenses apply to your solutions. This article focuses on Core Licensing Concepts, along with guidance and licensing scenarios. The goal is to provide admins and citizen developer with the bulk of the information to make decisions on the spot or mitigate the research effort.
+The articles in this section give information and guidance about licensing/pricing in Power Automate, along with the key features and services associated with licensing/pricing. You'll get a clear understanding about which licenses apply to your scenarios and solutions. These articles focus on core licensing concepts, along with guidance on licensing scenarios. The goal is to provide clear information that help admins and citizen developers to make decisions and answer questions about which licenses they should buy and use.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
