@@ -20,7 +20,7 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Aggregated billing information is available in the Azure portal, and detailed usage drill downs are available in the Power Platform admin center. Reporting is available for Power Apps per app meter and Dataverse capacity add-on meters.
+Aggregated billing information is available in the Azure portal, and detailed usage drill downs are available in the Power Platform admin center. Reporting is available for Power Apps per app meter and Dataverse capacity add-on meters. Overages for Power Platform request meter is not reported or charged.
 
 ### View billing information in the Azure portal
 
