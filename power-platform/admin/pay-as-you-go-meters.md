@@ -108,12 +108,14 @@ In the example below, User A is licensed with a Power Apps per user license and 
 > The prices shown in this example are illustrative only. Your organization's pricing may vary based on your contract with Microsoft.
 
 Measured usage *above* limits
+
 |   |Month #1  |Month #2  |Month #3  |
 |---------|---------|---------|---------|
 |**User A** <br />Power Apps per <br />user license with <br />40 K requests/day <br /> entitlement |  0 K     | 10 K        | 0 K        |
 |**Flow A** <br />Power Automate <br />per flow license <br /> with 250 K requests/day <br /> entitlement  | 0 K          |  100 K         |  50 K         |
 
 Example pricing
+
 |   |Month #1  |Month #2  |Month #3  |
 |---------|---------|---------|---------|
 |**Power Platform** <br />**Requests**     | No usage        | 110 K * $0.00004 = $4.40       | 50 K * $0.00004 = $2.00        |
