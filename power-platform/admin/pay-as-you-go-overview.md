@@ -41,9 +41,9 @@ This plan reduces the overhead of license procurement and provides ability to ma
 
 ## How does this work?
 
-In Power Apps or the Power Platform admin center you can link environments to an Azure subscription using a billing policy.
+In Power Apps or the Power Platform admin center, you can link environments to an Azure subscription using a billing policy.
 
-Once an environment is linked to an Azure subscription, usage of apps as well as any Dataverse or Power Platform request usage above included amounts is billed against the Azure subscription using [Azure meters](pay-as-you-go-meters.md).
+Once an environment is linked to an Azure subscription, usage of apps and any Dataverse or Power Platform request usage above included amounts is billed against the Azure subscription using [Azure meters](pay-as-you-go-meters.md).
 
 You can [unlink your environment from the Azure subscription](pay-as-you-go-set-up.md#turning-off-pay-as-you-go) at any time and usage will no longer be billed.
 
@@ -62,7 +62,7 @@ When an environment is linked to Azure via a billing policy it becomes a *pay-as
 
 :::image type="content" source="media/pay-as-you-go-billing-policy-azure-subscription.png" alt-text="Billing policy linked to Azure subscription":::
 
-Billing policies provide flexible options for organizations looking to allocate Power Platform meter costs across teams and departments. In the example below, the customer has decided to set up Power Platform meter usage for the marketing team's environments to be billed to the marketing team's Azure subscription. For the finance team, the customer has decided to setup two different billing policies (each of which will be connected to a separate Power Platform account resource) so that the costs for each sub team within the Finance team (Accounting and Auditing) can be easily broken out even though they are both billed to the same Azure subscription. Customers can also leverage [Azure resource groups](/azure/azure-resource-manager/management/manage-resource-groups-portal) and [Azure tags](/azure/azure-resource-manager/management/tag-resources?tabs=json) to organize their Power Platform account resources and track and allocate spending.
+Billing policies provide flexible options for organizations looking to allocate Power Platform meter costs across teams and departments. In the example below, the customer has decided to set up Power Platform meter usage for the marketing team's environments to be billed to the marketing team's Azure subscription. For the finance team, the customer has decided to set up two different billing policies (each of which will be connected to a separate Power Platform account resource) so that the costs for each sub team within the Finance team (Accounting and Auditing) can be easily broken out even though they are both billed to the same Azure subscription. Customers can also leverage [Azure resource groups](/azure/azure-resource-manager/management/manage-resource-groups-portal) and [Azure tags](/azure/azure-resource-manager/management/tag-resources?tabs=json) to organize their Power Platform account resources and track and allocate spending.
 
 :::image type="content" source="media/pay-as-you-go-billing-policy-azure-subscription-examples.png" alt-text="Billing policy linked to Azure subscription example":::
 

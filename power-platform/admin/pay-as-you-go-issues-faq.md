@@ -55,7 +55,7 @@ Currently, production and sandbox environments are available.
 No. Pay-as-you-go is set up for an environment and all apps within that environment are billed against the associated Azure subscription. However, you can exclude an app from using the Azure subscription in which case a user will need a per user license to use the app. Per app licenses cannot be used in a pay-as-you-go environment.
 
 ### What if I already have a user license and use an app in a pay-as-you-go enabled environment? Will I be billed against Azure subscription?
-Users with per user licenses are not counted towards the Power Apps Per app meter, and hence will not incur charges. However, note that when an environment is linked to an Azure subscription, dataverse capacity overage will be billed to the Azure subscription. Any Dataverse capacity granted for the per user license will still be pooled at a tenant level but will not apply to a pay-as-you-go enabled environment. Pay-as-you-go enviornment grants 1GB database and 1GB file capacity.
+Users with per user licenses are not counted towards the Power Apps Per app meter, and hence will not incur charges. However, note that when an environment is linked to an Azure subscription, Dataverse capacity overage will be billed to the Azure subscription. Any Dataverse capacity granted for the per user license will still be pooled at a tenant level but will not apply to a pay-as-you-go enabled environment. Pay-as-you-go environment grants 1 GB database and 1 GB file capacity.
 
 ### What happens if I have an Office license and use an app with standard connectors in a pay-as-you-go enabled environment?
 Users who are using an app with standard connectors and have Office licenses, are not counted towards the Power Apps per app meter, and hence will not incur charges.
@@ -91,10 +91,10 @@ No. If you exceed your entitlement, you will automatically be charged for the ov
 Yes, you can disable pay-as-you-go at any point by either deleting the billing policy or removing the environment from the billing policy. Doing so will stop any further charges on the Azure subscription. Check how to disable pay-as-you-go billing [here](pay-as-you-go-set-up.md#turning-off-pay-as-you-go).
 
 ### What admin guardrails are available to prevent accidental costs?
-You can leverage Azure cost management and alerting capabilties to manage spending within your organization. Check [manage costs](pay-as-you-go-usage-costs.md#how-to-manage-costs) section for details.
+You can leverage Azure cost management and alerting capabilities to manage spending within your organization. Check [manage costs](pay-as-you-go-usage-costs.md#how-to-manage-costs) section for details.
 
 ### Can I use the Power Platform request or Dataverse capacity add-ons in a pay-as you-go environment?
-No, you cannot use add-ons in a pay-as-you-go environment. Overages for both Dataverse and Power Platform requests will be charged via Azure subscription in a pay-as-you-go enviornment. 
+No, you cannot use add-ons in a pay-as-you-go environment. Overages for both Dataverse and Power Platform requests will be charged via Azure subscription in a pay-as-you-go environment. 
 
 ### See also  
 
