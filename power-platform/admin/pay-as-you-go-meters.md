@@ -47,6 +47,7 @@ For example, an environment has three apps, App A, B, and C and this environment
 > The prices shown in this example are illustrative only. Your organization's pricing may vary based on your contract with Microsoft.
 
 Measured usage *above* per environment credetials 
+
 |Storage category  |Month #1  |Month #2  |Month #3  |
 |---------|---------|---------|---------|
 |**Database**<br />Per environment <br /> entitlement 1 GB    | 0.5 GB        | 1.5 GB        | 2.5 GB        |
@@ -55,6 +56,7 @@ Measured usage *above* per environment credetials
 
 
 Example pricing
+
 |         |Month #1  |Month #2  |Month #3  |
 |---------|---------|---------|---------|
 |**Database**     |  0.5 GB * $48 = $24       | 1.5 GB * $48 = $72         | 2.5 GB * $48 = $120         |
