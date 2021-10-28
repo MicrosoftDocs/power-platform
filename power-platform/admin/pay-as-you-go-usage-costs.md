@@ -75,7 +75,7 @@ For Dataverse capacity add-on meters, units are in Gigabytes per month, and with
 
 ## How to manage costs
 
-You can leverage Azure cost management and alterting to effectively manage spending within your organization. When budgets amounts are approached or reached you can configure alerts to be sent automatically or trigger actions to take place. For more details, see [Tutorial: Create and manage Azure budgets](https://docs.microsoft.com/en-us/azure/cost-management-billing/costs/tutorial-acm-create-budgets) and [Create and manage action groups in the Azure portal](https://docs.microsoft.com/en-us/azure/azure-monitor/alerts/action-groups).  
+You can leverage Azure cost management and alterting to effectively manage spending within your organization. When budgets amounts are approached or reached you can configure alerts to be sent automatically or trigger actions to take place. For more details, see [Tutorial: Create and manage Azure budgets](/azure/cost-management-billing/costs/tutorial-acm-create-budgets) and [Create and manage action groups in the Azure portal](/azure/azure-monitor/alerts/action-groups).  
 
 Azure Cost Management provides options to set budgets for Azure resources and specific meters. You can use this capability to set budgets at a billing policy level by setting a budget for its corresponding Power Platform account resource. You can also set budgets for individual Power Platform meters.
 
