@@ -75,7 +75,7 @@ Now your Azure subscription is set up to use Power Platform pay as you go.
 
 ## Link an Azure subscription to an environment 
 
-Pay-as-you-go can be set up via the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) or [Power Apps](https://make.powerapps.com/).
+Pay-as-you-go can be set up via the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) or [Power Apps](https://make.powerapps.com/). Pay-as-you-go is available for **Production** and **Sandbox** enviornments.
 
 ### In the Power Platform Admin Center
 
@@ -175,7 +175,7 @@ You can set up pay-as-you-go for your environment right from your app's setting 
    Enter Azure subscription details
    :::image type="content" source="media/pay-as-you-go-powerapps-connect-subscription.png" alt-text="Select Connect subscription":::
 
-4. Once an Azure subscription is successfully linked to your environment, you will land back on the app settings page and will see the following experience. Check out Step 6 above to see how to view the Power Platform resource in Azure.
+4. Once an Azure subscription is successfully linked to your environment, you will land back on the app settings page and will see the following experience. 
 
    :::image type="content" source="media/pay-as-you-go-powerapps-app-settings.png" alt-text="Select Connect subscription":::
 
