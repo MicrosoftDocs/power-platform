@@ -43,27 +43,30 @@ The Power Apps per app meter measures the number of unique users who opened the 
 
 For example, an environment has three apps, App A, B, and C and this environment is now enabled for pay-as-you-go:
 
+three examples table
+
 > [!NOTE]
 > The prices shown in this example are illustrative only. Your organization's pricing may vary based on your contract with Microsoft.
 
-Measured usage *above* per environment credentials 
+Environment with three apps
 
-|Storage category  |Month #1  |Month #2  |Month #3  |
+|Active users  |Month #1  |Month #2  |Month #3  |
 |---------|---------|---------|---------|
-|**Database**<br />Per environment <br /> entitlement 1 GB    | 0.5 GB        | 1.5 GB        | 2.5 GB        |
-|**File**<br />Per environment <br /> entitlement 1 GB      |  2 GB       | 5 GB        |  10 GB       |
-|**Log**<br />No environment <br /> base entitlement      |  0 GB       |  0.2 GB       | 0.4 GB        |
+|**App A**     | User #1 and #2       |         | User #1 and #2       |
+|**App B**     | User #3, #4, and #5       |         | User #1 and #2          |
+|**App C**     | User #6, #7, #8, and #9        |         | User #1 and #2            |
+| **Total active users:** | **9** = 9 different <br /> users each active in <br /> 1 app |  **0** apps had active <br />usage | **6** = 2 users each <br /> active in 3 apps |
 
+Example cost
 
-Example pricing
-
-|         |Month #1  |Month #2  |Month #3  |
+|   |Month #1  |Month #2  |Month #3  |
 |---------|---------|---------|---------|
-|**Database**     |  0.5 GB * $48 = $24       | 1.5 GB * $48 = $72         | 2.5 GB * $48 = $120         |
-|**File**     | 2 GB * $2.40 = $4.80         | 5 GB * $2.40 = $12         | 10 GB * $2.40 = $24         |
-|**Log**     | No usage         | 0.2 GB * $12 = $2.40         | 0.4 GB * $12 = $4.80         |
-|**Total cost:**     | **$28.80**        |  **$86.40**      |  **$148.80**       |
+|**App A**     | 2 active users        | 0 active users         | 2 active users         |
+|**App B**     | 3 active users         | 0 active users         | 2 active users         |
+|**App C**     | 4 active users         | 0 active users         | 2 active users         |
+|**Total cost:**     | **$90** <br /> (9 * $10/active user/app)       | **$0** <br />(0 * $10/active user/app)        | **$60** <br /> (6 * $10/active user/app)       |
 
+:::image type="content" source="media/pay-as-you-go-three-example-apps.png" alt-text="3 examples":::
 
 If a user has a Power Apps per user license, the user is not counted in the meter. If a user has a [Microsoft 365 license](pricing-billing-skus.md#power-appspower-automate-for-microsoft-365) which provides access to Power Apps and is using an app with standard connectors, the user is not counted in the meter. See below for how users are counted in the Power Apps per app meter. 
 
@@ -87,6 +90,24 @@ Measurement for each category of Dataverse storage usage will happen three times
 
 > [!NOTE]
 > The prices shown in this example are illustrative only. Your organization's pricing may vary based on your contract with Microsoft.
+
+Measured usage *above* per environment credentials 
+
+|Storage category  |Month #1  |Month #2  |Month #3  |
+|---------|---------|---------|---------|
+|**Database**<br />Per environment <br /> entitlement 1 GB    | 0.5 GB        | 1.5 GB        | 2.5 GB        |
+|**File**<br />Per environment <br /> entitlement 1 GB      |  2 GB       | 5 GB        |  10 GB       |
+|**Log**<br />No environment <br /> base entitlement      |  0 GB       |  0.2 GB       | 0.4 GB        |
+
+
+Example pricing
+
+|         |Month #1  |Month #2  |Month #3  |
+|---------|---------|---------|---------|
+|**Database**     |  0.5 GB * $48 = $24       | 1.5 GB * $48 = $72         | 2.5 GB * $48 = $120         |
+|**File**     | 2 GB * $2.40 = $4.80         | 5 GB * $2.40 = $12         | 10 GB * $2.40 = $24         |
+|**Log**     | No usage         | 0.2 GB * $12 = $2.40         | 0.4 GB * $12 = $4.80         |
+|**Total cost:**     | **$28.80**        |  **$86.40**      |  **$148.80**       |
 
 :::image type="content" source="media/pay-as-you-go-measured-usage-above-per-environment-entitlements.png" alt-text="Measured usage above per environment entitlements":::
 
@@ -119,6 +140,8 @@ Example pricing
 |---------|---------|---------|---------|
 |**Power Platform** <br />**Requests**     | No usage        | 110 K * $0.00004 = $4.40       | 50 K * $0.00004 = $2.00        |
 |**Total cost:**     |  $0.00       | $4.40        | $2.00        |
+
+:::image type="content" source="media/pay-as-you-go-measured-usage-above-entitlements.png" alt-text="Measured usage above per environment entitlements":::
 
 
 ## Next step
