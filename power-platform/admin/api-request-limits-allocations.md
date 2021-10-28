@@ -51,11 +51,11 @@ All the users of Microsoft Power Platform have limits on the number of requests 
 
 <sup>3</sup> The Power Automate per flow plan allows capacity to be specifically reserved for a single flow, irrespective of the owner of the flow. This does not use the non-licensed user request entitlements at the tenant level.
 
-### Additional details
+### Other details
 
 Power Platform Request entitlements are only granted with paid base licenses in the Dynamics 365 'base + attach' licensing model. Attach licenses do not include entitlements. For example, if a user has a Dynamics 365 Customer Service Enterprise as the base license and Dynamics 365 Sales Enterprise as an attach license, the total request entitlement would be what is provided by the base license - Dynamics 365 Customer Service Enterprise.
 
-If a user has multiple paid licenses assigned to them, the total number of requests allowed would be the sum of requests entitled for each license. For example, if a user has both a Dynamics 365 Customer Service Enterprise base license as well as a Power Apps per user license then that user will have a total of 40,000 + 40,000 = 80,000 requests available per 24 hours.
+If a user has multiple paid licenses assigned to them, the total number of requests allowed would be the sum of requests entitled for each license. For example, if a user has both a Dynamics 365 Customer Service Enterprise base license and a Power Apps per user license then that user will have a total of 40,000 + 40,000 = 80,000 requests available per 24 hours.
 
 Power Virtual Agents requests are counted from Power Automate flows triggered from a Power Virtual Agents chatbot. Power Virtual Agents initial sessions pack and additional sessions pack both receive the same daily Power Platform Request entitlements.
 
@@ -72,7 +72,7 @@ Additionally, there are special free ($0) licenses, which are used to interact w
 
 For these non-licensed identities, every tenant will get an initial base request entitlement per tenant determined by what paid licenses are on the tenant, plus accrued entitlements determined by the quantity of paid Dynamics 365 Enterprise and Professional licenses.<sup>1</sup> This entitlement pool can only be used by these non-licensed users and not by users with assigned interactive user licenses.
 
-| **Products**                                                    | **Pooled non-licensed tenant-level requests per 24 hours**                              |
+| Products                                                    | Pooled non-licensed tenant-level requests per 24 hours                              |
 |-----------------------------------------------------------------|-----------------------------------------------------------------------------------------|
 | Dynamics 365 Enterprise & Professional applications<sup>1</sup> | 500,000 base requests + 5,000 requests accrued per USL<sup>1</sup> up to 10,000,000 max |
 | Power Apps (all licenses)                                       | 25,000 base requests with no per-license accrual for the tenant                         |
@@ -88,9 +88,9 @@ If a tenant has multiple types of subscriptions, their non-licensed user request
 
 ## What happens if a licensed or non-licensed user exceeds entitlements
 
-Power Platform Request entitlements have been updated and substantially increased in late 2021 to be at levels that are significantly higher than typical usage for most customers. With the updated entitlements, expectations are that very few users would exceed the documented limits. If you anticipate exceeding the non-licensed user limits, please reach out to your reseller or Microsoft Account team to discuss a custom solution.
+Power Platform Request entitlements have been updated and substantially increased in late 2021 to be at levels that are significantly higher than typical usage for most customers. With the updated entitlements, expectations are that very few users would exceed the documented limits. If you anticipate exceeding the non-licensed user limits, reach out to your reseller or Microsoft Account team to discuss a custom solution.
 
-Any possible high usage enforcement will not happen until 6 months after Power Platform Request usage reporting has been generally available in the Power Platform Admin Center. Admin reports are expected to be available in the first quarter of calendar 2022.
+Any possible high usage enforcement will not happen until six months after Power Platform Request usage reporting has been generally available in the Power Platform Admin Center. Admin reports are expected to be available in the first quarter of calendar 2022.
 
 Microsoft reserves the right to enforce entitlement limits for overages. If a customer encounters high usage enforcement, they can expect some form of throttling. Customers can purchase additional capacity to avoid high usage enforcement or move their environment to [pay-as-you-go](pay-as-you-go-overview.md) and pay for actual usage above daily entitlement limits.  
 
@@ -123,7 +123,7 @@ Additionally, for Power Automate usage specifically, you can see the action usag
 
 ### What are the timelines for Power Platform Request entitlement limits?
 
-The concept of entitlement limits was first introduced in late 2019 and documented entitlement limits were substantially increased in late 2021. Generally available reporting for Power Platform Requests is expected in the first quarter of calendar 2022. Any potential high usage enforcement wouldn't start until 6 months after reports have been made available. Assignment of add-on capacity packs should be aligned to high usage enforcement.
+The concept of entitlement limits was first introduced in late 2019 and documented entitlement limits were substantially increased in late 2021. Generally available reporting for Power Platform Requests is expected in the first quarter of calendar 2022. Any potential high usage enforcement wouldn't start until six months after reports have been made available. Assignment of add-on capacity packs should be aligned to high usage enforcement.
 
 ### What account's limits are used for classic workflows or Power Automate flows?
 
