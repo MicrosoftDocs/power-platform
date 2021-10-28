@@ -116,8 +116,8 @@ Measured usage *above* limits
 Example pricing
 |   |Month #1  |Month #2  |Month #3  |
 |---------|---------|---------|---------|
-|**Power Platform** <br />**Requests**     | No usage        | 110 K * $0.0004 = $44       | 50 K * $0.0004 = $20        |
-|**Total cost:**     |  $0.00       | $44.00        | $20.00        |
+|**Power Platform** <br />**Requests**     | No usage        | 110 K * $0.00004 = $4.40       | 50 K * $0.00004 = $2.00        |
+|**Total cost:**     |  $0.00       | $4.40        | $2.00        |
 
 
 :::image type="content" source="media/pay-as-you-go-measured-usage-above-entitlements.png" alt-text="Measured usage above entitlements":::
