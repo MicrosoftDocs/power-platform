@@ -46,7 +46,7 @@ For example, an environment has three apps, App A, B, and C and this environment
 > [!NOTE]
 > The prices shown in this example are illustrative only. Your organization's pricing may vary based on your contract with Microsoft.
 
-Measured usage *above* per environment credetials 
+Measured usage *above* per environment credentials 
 
 |Storage category  |Month #1  |Month #2  |Month #3  |
 |---------|---------|---------|---------|
@@ -63,9 +63,6 @@ Example pricing
 |**File**     | 2 GB * $2.40 = $4.80         | 5 GB * $2.40 = $12         | 10 GB * $2.40 = $24         |
 |**Log**     | No usage         | 0.2 GB * $12 = $2.40         | 0.4 GB * $12 = $4.80         |
 |**Total cost:**     | **$28.80**        |  **$86.40**      |  **$148.80**       |
-
-
-:::image type="content" source="media/pay-as-you-go-three-example-apps.png" alt-text="Example of three apps enabled for pay-as-you-go":::
 
 
 If a user has a Power Apps per user license, the user is not counted in the meter. If a user has a [Microsoft 365 license](pricing-billing-skus.md#power-appspower-automate-for-microsoft-365) which provides access to Power Apps and is using an app with standard connectors, the user is not counted in the meter. See below for how users are counted in the Power Apps per app meter. 
@@ -123,8 +120,6 @@ Example pricing
 |**Power Platform** <br />**Requests**     | No usage        | 110 K * $0.00004 = $4.40       | 50 K * $0.00004 = $2.00        |
 |**Total cost:**     |  $0.00       | $4.40        | $2.00        |
 
-
-:::image type="content" source="media/pay-as-you-go-measured-usage-above-entitlements.png" alt-text="Measured usage above limits":::
 
 ## Next step
 
