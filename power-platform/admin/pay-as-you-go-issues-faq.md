@@ -1,5 +1,5 @@
 ---
-title: "Preview: Issues and frequently asked questions | MicrosoftDocs"
+title: "Preview: Known issues and frequently asked questions | MicrosoftDocs"
 description: Issues and frequently asked questions for your pay-as-you-go plan.
 author: jimholtz
 ms.service: power-platform
