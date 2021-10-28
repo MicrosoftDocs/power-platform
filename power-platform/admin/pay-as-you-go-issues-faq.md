@@ -43,7 +43,7 @@ Some common scenarios where it might be useful:
 Yes.
 
 ### How is the Power Apps per app meter unit counted?
-The count is the number of unique users who opened an app or a portal in each month. Repeat access to the same app or portal is counted only once.
+The count is the number of unique users who opened an app or a portal in each month. Repeat access to the same app or portal is counted only once. Read [Power Apps per app meter](pay-as-you-go-meters.md#power-apps-per-app-meter) for more details.
 
 ### Can I set up pay-as-you-go for my environment without an Azure subscription?
 No. You need an Azure subscription to set up pay-as-you-go.
@@ -55,7 +55,7 @@ Currently, production and sandbox environments are available.
 No. Pay-as-you-go is set up for an environment and all apps within that environment are billed against the associated Azure subscription. However, you can exclude an app from using the Azure subscription in which case a user will need a per user license to use the app. Per app licenses cannot be used in a pay-as-you-go environment.
 
 ### What if I already have a user license and use an app in a pay-as-you-go enabled environment? Will I be billed against Azure subscription?
-Users with per user licenses are not counted towards the Power Apps Per app meter, and hence will not incur charges. However, note that when an environment is linked to a billing policy, any Dataverse usage will be billed to the billing policy's Azure subscription.
+Users with per user licenses are not counted towards the Power Apps Per app meter, and hence will not incur charges. However, note that when an environment is linked to an Azure subscription, dataverse capacity overage will be billed to the Azure subscription. Any Dataverse capacity granted for the per user license will still be pooled at a tenant level but will not apply to a pay-as-you-go enabled environment. Pay-as-you-go enviornment grants 1GB database and 1GB file capacity.
 
 ### What happens if I have an Office license and use an app with standard connectors in a pay-as-you-go enabled environment?
 Users who are using an app with standard connectors and have Office licenses, are not counted towards the Power Apps per app meter, and hence will not incur charges.
@@ -76,19 +76,19 @@ Yes, you can set up pay-as-you-go for your app's environment. Doing so will disr
 No. As soon as you enable pay-as-you-go for your environment, all apps will be billed against it.
 
 ### I do not have admin permissions for the environment I'm working with. Can I set up pay-as-you-go for the environment?
-No. You need admin permission for the environment to be able to link the environment to a billing policy.
+No. You need admin permission for the environment to be able to link the environment to a billing policy. Check out [who can set it up](pay-as-you-go-set-up.md#who-can-set-it-up) for details on permissions.
 
 ### Can I enable/disable specific meters?
 No. Once you enable pay-as-you-go, both Power Apps per app meter and Dataverse meter will be enabled and both app access and storage will be charged.
 
 ### How is Dataverse capacity calculated when one environment is enabled for pay-as-you-go and the other is not within my tenant?
-Environments draw from a tenant-wide pool of Dataverse storage. When an environment is linked to an Azure subscription however, it stops drawing from the tenant-wide pool. All pay-as-you-go linked environments will get an initial entitlement of 1 GB of Dataverse database and 1 GB of Dataverse file storage capacities to cover the typical initial storage footprint consumed by Dataverse. Any usage above the initial environment is billed to Azure via the Dataverse pay-as-you-go meter.
+Environments draw from a tenant-wide pool of Dataverse storage. When an environment is linked to an Azure subscription however, it stops drawing from the tenant-wide pool. All pay-as-you-go linked environments will get an initial entitlement of 1 GB of Dataverse database and 1 GB of Dataverse file storage capacities to cover the typical initial storage footprint consumed by Dataverse. Any usage above the initial environment is billed to Azure via the Dataverse pay-as-you-go meter. 
 
 ### Will I be throttled if I exceed Power Platform requests entitlement in a pay-as-you-go environment?
 No. If you exceed your entitlement, you will automatically be charged for the overages via Azure subscription without experiencing any disruption. However, at this time, you are not getting charged even if you exceed entitlements.
 
 ### Can I stop using pay-as-you-go billing at any time?
-Yes, you can disable pay-as-you-go at any point by either deleting the billing policy or removing the environment from the billing policy. Doing so will stop any further charges on the Azure subscription.
+Yes, you can disable pay-as-you-go at any point by either deleting the billing policy or removing the environment from the billing policy. Doing so will stop any further charges on the Azure subscription. Check how to disable pay-as-you-go billing [here](pay-as-you-go-set-up.md#turning-off-pay-as-you-go).
 
 ### What admin guardrails are available to prevent accidental costs?
 You can leverage Azure cost management and alerting capabilties to manage spending within your organization. Check [manage costs](pay-as-you-go-usage-costs.md#how-to-manage-costs) section for details.
