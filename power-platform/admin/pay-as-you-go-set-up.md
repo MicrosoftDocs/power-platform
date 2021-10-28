@@ -180,7 +180,8 @@ You can set up pay-as-you-go for your environment right from your app's setting 
    :::image type="content" source="media/pay-as-you-go-powerapps-app-settings.png" alt-text="Select Connect subscription":::
 
    If you have app passes available for your environment and still want to set up pay-as-you-go, you use the Steps 2-4 to set it up. Once pay-as-you-go is set up, app passes are not consumed.
-      **image is missing here. Can we add from the doc?**
+
+   :::image type="content" source="media/pay-as-you-go-powerapps-per-app-license.png" alt-text="Enable Per-app-licenses":::
 
 ## Turning off pay-as-you-go 
 
