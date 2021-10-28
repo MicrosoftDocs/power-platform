@@ -91,7 +91,7 @@ No. If you exceed your entitlement, you will automatically be charged for the ov
 Yes, you can disable pay-as-you-go at any point by either deleting the billing policy or removing the environment from the billing policy. Doing so will stop any further charges on the Azure subscription.
 
 ### What admin guardrails are available to prevent accidental costs?
-You can leverage Azure cost management and alerting capabilties to manage spending within your organization. Check manage costs [https://review.docs.microsoft.com/en-us/power-platform/admin/pay-as-you-go-usage-costs?branch=JimHoltzWorkBranch2#how-to-manage-costs] section for details.
+You can leverage Azure cost management and alerting capabilties to manage spending within your organization. Check [manage costs](pay-as-you-go-usage-costs.md#how-to-manage-costs) section for details.
 
 ### Can I use the Power Platform request or Dataverse capacity add-ons in a pay-as you-go environment?
 No, you cannot use add-ons in a pay-as-you-go environment. Overages for both Dataverse and Power Platform requests will be charged via Azure subscription in a pay-as-you-go enviornment. 
