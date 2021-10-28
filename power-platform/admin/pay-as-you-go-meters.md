@@ -124,7 +124,7 @@ Example pricing
 |**Total cost:**     |  $0.00       | $4.40        | $2.00        |
 
 
-:::image type="content" source="media/pay-as-you-go-measured-usage-above-entitlements.png" alt-text="Measured usage above entitlements":::
+:::image type="content" source="media/pay-as-you-go-measured-usage-above-entitlements.png" alt-text="Measured usage above limits":::
 
 ## Next step
 
