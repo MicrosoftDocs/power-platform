@@ -41,18 +41,18 @@
       - name: Power Apps and Power Automate licensing FAQs
         href: powerapps-flow-licensing-faq.md
       # Comment out the following before Nov2  
-      # - name: Pay-as-you-go plan 
-      #   items:
-      #   - name: Overview
-      #     href: pay-as-you-go-overview.md
-      #   - name: Meters
-      #     href: pay-as-you-go-meters.md
-      #   - name: Set up
-      #     href: pay-as-you-go-set-up.md
-      #   - name: View usage and manage costs 
-      #     href: pay-as-you-go-usage-costs.md
-      #   - name: Issues and frequently asked questions
-      #     href: pay-as-you-go-issues-faq.md
+      - name: Pay-as-you-go plan 
+        items:
+        - name: Overview
+          href: pay-as-you-go-overview.md
+        - name: Meters
+          href: pay-as-you-go-meters.md
+        - name: Set up
+          href: pay-as-you-go-set-up.md
+        - name: View usage and manage costs 
+          href: pay-as-you-go-usage-costs.md
+        - name: Issues and frequently asked questions
+          href: pay-as-you-go-issues-faq.md
       - name: Requests limits and allocations
         href: api-request-limits-allocations.md
     - name: Getting started
