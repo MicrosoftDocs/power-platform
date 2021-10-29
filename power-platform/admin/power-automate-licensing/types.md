@@ -27,8 +27,8 @@ Customers who need to create fully flexible, general-purpose workflows with eith
 
 Plan|Description
 --------|------
-Power Automate per user plan|This plan provides a user with rights to run an unlimited number of flows (within service limits) with the full capabilities of Power Automate, including [standard connectors](https://preview.flow.microsoft.com/connectors/?filter=&category=standard),[premium connectors](#premiumconnectors) ,[business process flows](#businessprocessflow), [custom connectors](#customconnectors),[on-premises gateways](#onpremisegateway) based on their unique needs for a monthly fixed cost for each user.
-Power Automate per user with attended RPA plan|This plan spans legacy and modern applications, allowing makers to create unlimited flows for API-based automation and automate legacy applications with desktop flows [through Robotic Process Automation (RPA)](#RPA) and AI. This plan includes all Power Automate per user plan capabilities and the ability for users to run an attended RPA bot on their workstation. Additionally, this plan includes access to [AI Builder capacity](#AIbuildercredits), supporting scenarios like forms processing, object detection, prediction, text classification, and recognition. This plan can be purchased for a monthly fixed cost for each user.
+Power Automate per user plan|This plan provides a user with rights to run an unlimited number of flows (within service limits) with the full capabilities of Power Automate, including [standard connectors](https://preview.flow.microsoft.com/connectors/?filter=&category=standard),[premium connectors](#premium-connectors),[business process flows](#business-process-flows), [custom connectors](#custom-connectors),[on-premises gateways](#on-premises-gateway) based on their unique needs for a monthly fixed cost for each user.
+Power Automate per user with attended RPA plan|This plan spans legacy and modern applications, allowing makers to create unlimited flows for API-based automation and automate legacy applications with desktop flows [through Robotic Process Automation (RPA)](#robotic-process-automation) and AI. This plan includes all Power Automate per user plan capabilities and the ability for users to run an attended RPA bot on their workstation. Additionally, this plan includes access to [AI Builder capacity](#AI-builder-credits), supporting scenarios like forms processing, object detection, prediction, text classification, and recognition. This plan can be purchased for a monthly fixed cost for each user.
 Power Automate per flow plan|  With this plan, organizations can implement flows with reserved capacity that serve a team, a department, or an entire organization without having to license each user separately. This plan starts with a fixed monthly cost for for five active flows.There is a monthly fee for each additional active flow (beyond the five flows that are included in the base fee).
 Power Automate P1 and P2 plans (grand fathered)| These plans are no longer available for purchase nor via auto-renewal after December 31, 2020. Organizations with these plan licenses with renewals that are due on or after January 1, 2021 need to transition to either the Power Automate per user or per flow plan or to the Power Apps per user or per app plan to continue using the Microsoft Power Platform services. Customers with active contracts that started before January 1, 2021 with grandfathered licenses will continue to be supported until the contract end date. Contact your Microsoft account representative for more information or [purchase licenses](https://flow.microsoft.com/pricing/?ef_id=dd65eaf79fda13e945118bbef5cc361a:G:s&amp;OCID=AID2200054_SEM_dd65eaf79fda13e945118bbef5cc361a:G:s&amp;msclkid=dd65eaf79fda13e945118bbef5cc361a).
 
@@ -51,7 +51,7 @@ When you use seeded plans, your flows must run within the context of the applica
 - To any data source within the use rights of the Dynamics/Power Apps app.
 - Directly with the Dynamics/Power Apps app (via built in triggers/actions).
 
-For example, if a flow uses [premium connectors](#premiumconnectors) and it's triggered by a Power App app, any user can run the flow if they have a Power Apps license.
+For example, if a flow uses [premium connectors](#premium-connectors) and it's triggered by a Power App app, any user can run the flow if they have a Power Apps license.
 
 If the flow is isolated and has nothing to do with the application, then a standalone Power Automate license must be purchased.
 
@@ -59,11 +59,11 @@ You can find more details can be found in [Microsoft Power Apps and Power Automa
 
 ## Compare Power Automate plans
 
-Please [click here](#Licenseentitlements) to understand about entitlements
+Please [click here](#license-limits) to understand about entitlements
 
 Here's a chart that lays out the limits that are associated with the different license plans.
 
-![pic](../media/power-automate-licensing/license-comparison.png)
+![Image showing a comparison](../media/power-automate-licensing/license-comparison.png)
 
 <sup> 
 
@@ -77,7 +77,7 @@ Here's a chart that lays out the limits that are associated with the different l
 Here's a guide that helps you decide which plan is right for your organization.
 
 <!--todo, image needs to be clearer-->
-![Select the right plan image](../media/power-automte-licensing/select-right-plan.png)
+![Select the right plan image](../media/power-automate-licensing/select-right-plan.png)
 
 ## Transition period
 
@@ -85,7 +85,7 @@ All Power Automate licenses are in a transition period until Spring 2022. Limits
 
 Here are a few things to be aware of during the transition period.
 
-1. The transition period doesn't mean that there are no daily limits. It means that the currently enforced limits are more generous than the stated limits to prevent potential unintended impact on your apps or flows. See [Power Platform requests](#Transition_period) to understand both plan limits and transition period limits. These transition period limits are applied at the flow level.
+1. The transition period doesn't mean that there are no daily limits. It means that the currently enforced limits are more generous than the stated limits to prevent potential unintended impact on your apps or flows. See [Power Platform requests](#transition-period) to understand both plan limits and transition period limits. These transition period limits are applied at the flow level.
 1. Since limits are more generous during the transition period, [stacking of user licenses isn't supported](/power-platform/admin/api-request-limits-allocations). If a user has multiple plans, such as a Microsoft 365 plan and a Dynamics 365 plan, the flow will use the higher plan (Dynamics 365 plan).
 1. Power Platform requests capacity add-on packs are not assignable to the users or flows during the transition period. However, Microsoft recommends that you purchase these add-ons to remain within your license terms and to be prepared for when the transition period ends. If your flows are currently being throttled, purchase add-ons and create a support ticket with the flow details and add-on details so that the support team can provide exceptions for your throttled the flows.
 1. Seeded license users can only use flows within the context of the app. See [the seeded plans](#seeded-plans) section to learn more. The enforcement on license limits is less strict during transition period and Microsoft recommends that you remain within your license terms to avoid any disruptions when the transition period ends.
@@ -120,7 +120,7 @@ You may want to communicate with apps/services that aren't available as prebuilt
 
 What if I have an application that Power Automate doesn't have a connector for, and I can't create a custom connector because the app doesn't have an API? This is where _robotic process automation_ (RPA) comes in. You can use RPA to create automation even in older systems that don't have an API. With RPA, you automate applications by teaching Power Automate to mimic the mouse movements and keyboard entries of a human user, as if a robot was using the computer. In other words, whereas digital process automation provides connectors so you can _tell_ the application what to do, with RPA, you _show_ it what to do.
 
-### On Premise gateway
+### On premises gateway
 
 The [on-premises data gateway](/power-automate/gateway-reference) acts as a bridge to provide quick and secure data transfer between on-premises data and several Microsoft cloud services. With gateways, organizations can keep databases and other data sources on-premises and securely use that on-premises data in cloud services.
 
@@ -183,15 +183,15 @@ If you are experiencing delays or slowdowns when your flow runs, it's likely tha
 
 Here is an example of an email that was sent for a flow that was consistently exceeding action limits.
 
-![](RackMultipart20211020-4-1g0es0r_html_c2694be6d07d76c7.png)
+![An overage email example](../media/power-automate-licensing/email-overage-example.png)
 
 The Power Platform admin center will soon contain reports on Power Automate requests. This reporting will help you to quickly view adoption and user metrics for your organization.
 
 Additionally, you can see the action usage for a given flow by selecting the  **Analytics**  action from the flow properties page, and this works across all types of actions. This helps you to understand how many actions are running each day. It can help you detect inefficiencies in your workflow logic and understand usage patterns to optimize for capacity.
 
-![](RackMultipart20211020-4-1g0es0r_html_506275adcda597da.png)
+<!-- ![](RackMultipart20211020-4-1g0es0r_html_506275adcda597da.png) -->
 
-![](RackMultipart20211020-4-1g0es0r_html_d03b35d358e5d01c.png)
+![Sample of the analytics chart](../media/power-automate-licensing/analytics-chart.png)
 
 #### As an admin, what tools do I have to analyze my environment's usage?
 
@@ -263,7 +263,7 @@ If a user has multiple licenses allocated within the same product line, for exam
 
 Based on the license of the owner, a flow gets a performance profile which in turn decides the Power Platform request limits of the flow. If there are multiple licenses assigned to the owner, Power Automate picks the highest plan from the list.
 
-| Performance profile | Limits during [transition period](#Transition_period) | Limits after [transition period](#Transition_period) |
+| Performance profile | Limits during [transition period](#transition-period) | Limits after [transition period](#transition-period) |
 | --- | --- | --- |
 | Low | 10,000 | 2000 |
 | Medium Low1 | 25,000 | 5000 |
@@ -288,7 +288,7 @@ A guide to building enterprise ready flows [https://clouddamcdnprodep.azureedge.
   - If your flow is interacting with files, be conscious of the file size and try to reduce it if possible.
   - If you need to reuse a single property returned by an action with large output size multiple times, consider using 'Initialize Variable' to store that property, and use the variable in later actions. Even if only one property is used from an output of an earlier action, all outputs of that action that will be passed into the later action as inputs.
 - Best practices to scale your flow:
-  - If your flow is executing thousands of actions every day, you should consider purchasing a Per Flow license to get better throughput and higher quotas. During [transition period](#Transition_period), Per Flow plan provides the best performance quota available (500K actions/day). Please reach out to your tenant administrator to purchase the license and assign it to the flow. Once the license is purchased and assigned, the author of the flow should resave it. Alternatively, flows will be updated in the background once per week to reflect current plans.
+  - If your flow is executing thousands of actions every day, you should consider purchasing a Per Flow license to get better throughput and higher quotas. During [transition period](#transition-period), Per Flow plan provides the best performance quota available (500K actions/day). Please reach out to your tenant administrator to purchase the license and assign it to the flow. Once the license is purchased and assigned, the author of the flow should resave it. Alternatively, flows will be updated in the background once per week to reflect current plans.
   - Consider splitting the workload across multiple flows to achieve high scale.
 
 FAQ
@@ -297,9 +297,9 @@ FAQ
 
 ## Free Plan
 
-If you sign in with work or school email address, you get all[Power Automate capabilities included in Office 365.](#Office)But if you do not have a work/school account but have a non-business user account (such as an account that ends with @outlook.com or @gmail.com), you can still use Power Automate using free plan.Go to [flow.microsoft.com](https://flow.microsoft.com/) and select Try free.However, you cannot share flows using free plan.
+If you sign in with work or school email address, you get all[Power Automate capabilities included in Office 365.](#Office)But if you do not have a work/school account but have a non-business user account (such as an account that ends with @outlook.com or @gmail.com), you can still use Power Automate using free plan.Go to [flow.microsoft.com](https://flow.microsoft.com/) and select Try free. However, you cannot share flows using free plan.
 
-To know which users, have free plan assigned go to [O365 Admin portal](https://admin.microsoft.com/).
+To know which users have free plan assigned, go to the [O365 Admin portal](https://admin.microsoft.com/).
 
 Go to Billing -\&gt;Licenses to see how many free licenses are assigned vs available
 
