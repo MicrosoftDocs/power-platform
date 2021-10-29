@@ -1,7 +1,7 @@
 ---
 title: "Security concepts in Microsoft Dataverse | MicrosoftDocs"
 description: Provides detailed information about the security model and concepts in Microsoft Dataverse.
-ms.date: 10/18/2021
+ms.date: 10/29/2021
 ms.service: power-platform
 ms.topic: "article"
 author: jimholtz
@@ -29,6 +29,10 @@ One of the key features of [Dataverse](/powerapps/maker/common-data-service/data
 Dataverse uses role-based security to group together a collection of privileges. These [security roles](security-roles-privileges.md) can be associated directly to users, or they can be associated with Dataverse teams and business units. Users can then be associated with the team, and therefore all users associated with the team will benefit from the role. A key concept of Dataverse security to understand is all privilege grants are accumulative with the greatest amount of access prevailing. If you gave broad organization level read access to all contact records, you can’t go back and hide a single record.
 
 ## Business units
+
+> [!TIP]
+> ![Video symbol](../admin/media/video-thumbnail-4.png "Video symbol") Check out the following video: [Modernize business units](https://youtu.be/NBBYinF9B7g) 
+
 
 Business units work with security roles to determine the effective security that a user has. Business units are a security modeling building block that helps in managing users and the data they can access. Business units define a security boundary. Every Dataverse database has a single root business unit.
 
@@ -83,7 +87,7 @@ Each record has an Owning Business Unit field which determines which business un
 > [!NOTE]
 > When you change which business unit owns a record, be sure to check out the following for cascade effects: [Using Organization Service to configure cascading behavior](/powerapps/developer/data-platform/configure-entity-relationship-cascading-behavior#using-organization-service-to-configure-cascading-behavior).
 
-You can manage whether you want to allow your user to set the Owning Business Unit field when the feature switch is ON. To set the Owning Business Unit field, you need to grant the user’s security role the Business Unit table’s **Append** and **Append To** privileges with Business Unit permission.  
+You can manage whether you want to allow your user to set the Owning Business Unit field when the feature switch is ON. To set the Owning Business Unit field, you need to grant the user’s security role the Business Unit table’s **Append To** privilege with local level permission.  
 
 To allow your user to set this field, you can enable this field in the following:
 1. Form - both the body and header.
