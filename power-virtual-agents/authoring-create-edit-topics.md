@@ -2,13 +2,14 @@
 title: "Use topics to design a chatbot conversation"
 description: "The authoring canvas provides an intuitive, no-code way of creating a bot that can help answer user questions, perform actions, and solve issues."
 keywords: "PVA"
-ms.date: 8/27/2021
+ms.date: 10/29/2021
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt
+ms.reviewer: clmori
 manager: shellyha
-ms.custom: authoring, ceX
+ms.custom: authoring, topics, variables, ceX
 ms.collection: virtual-agent
 searchScope:
   - "Power Virtual Agents"
@@ -170,9 +171,9 @@ You can [call Power Automate Flows](advanced-flow.md) and [insert authentication
    You can also [use variables that you have defined elsewhere](authoring-variables.md) in your bot conversation.
 
 
-#### Go to another topic
+#### Redirect to another topic
 
-1. To automatically have the bot move to a separate topic, select **+** to add a node, and then **Go to another topic**.
+1. To automatically have the bot move to a separate topic, select **+** to add a node, and then **Redirect to another topic**.
 
 1. In the flyout menu, select the topic the bot should divert to. For example, you might want to send the user to a specific topic about the closure of a store if they ask about store hours for that store.
 
@@ -201,6 +202,17 @@ If you redirect to any of the following [system topics](#use-system-and-sample-t
 - Start over (this will also reset any [global variables](authoring-variables-bot.md))
 
 
+#### Passing variables between topics
+When redirecting to other topics, you might want to pass values into variables in the destination topic or get variables back from it. This is especially useful when you already have information that the topic needs and don’t want to have the user answer the question again to obtain the information. This can also be helpful when refactoring and separating your topics into reusable components, and you want to pass variables across the topics.
+
+>[!NOTE]
+>Variable of type Custom Entity, Date Time, and Duration are not eligible to be passed between topics.  
+
+##### Return values to original topics
+When a topic asks a question (or otherwise obtains a variable from an action), this variable can be returned to the original topic that redirected to it. In this case, the variable becomes part of the original topic as well and can be used as any other variable. This helps the author construct the topic in a way that information obtained by the bot is used across topics. This also reduces the need for global variables.
+
+##### Using literal values on variable inputs
+When passing a variable into a topic, you can also pass literal values in the input instead of a variable. Type the value intended to be passed in directly into the redirect node input.
 
 
 #### End the conversation
