@@ -59,11 +59,11 @@ More information: [Establishing an environment strategy for Microsoft Power Plat
 
 ## Multi-geographical considerations
 
-It’s important to understand that Power Platform environments follow a specific service update schedule as environments are updated across the world. There are 6 stations in total that are primarily defined by regional location.  Service updates are applied in sequence for each station. So, station 2 service updates are applied before station 3. Therefore, it’s common for environments that are in different stations to have different versions. For more information about the environment service update schedule, go to [Released versions of Microsoft Dataverse](/dynamics365/released-versions/Microsoft-Dataverse)
+Power Platform environments follow a specific service update schedule as environments are updated across the world. There are 6 stations in total that are primarily defined by regional location.  Service updates are applied in sequence for each station. So, station 2 service updates are applied before station 3. Therefore, it’s common for environments that are in different stations to have different versions. For more information about the environment service update schedule, go to [Released versions of Microsoft Dataverse](/dynamics365/released-versions/Microsoft-Dataverse)
 
 ### Solution import and environment version
 
-When you have multiple environments in different regions, it’s also important to understand the following implications when you import a solution:
+When you have multiple environments in different regions, it’s important to understand the following implications when you import a solution:
 
 - You *can* import a solution into an environment that is a newer version than the environment where the solution was exported. 
 - You *can’t* import a solution into an environment that’s an older version than the environment where the solution was exported.
