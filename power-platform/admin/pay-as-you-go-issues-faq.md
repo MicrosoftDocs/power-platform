@@ -26,7 +26,7 @@ search.app:
 - Azure tagging for Power Platform account resources may not work due to a bug that will be resolved by mid-November 2021. 
 - Deleting a billing policy in the Power Platform admin center will not automatically delete corresponding Power Platform account resource in the Azure portal. This resource can be deleted manually in the Azure portal, if needed.
 - The downloadable Azure meter usage reports available in the Power Platform admin center provide data for last 30-day period only. We are working on improving this.
-- The downloadable Azure meter usage reports in PPAC may show a blank Azure subscription ID. 
+- The downloadable Azure meter usage reports available in the Power Platform admin center may show a blank Azure subscription ID. 
 
 ## Frequently Asked Questions 
 

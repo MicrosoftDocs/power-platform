@@ -53,7 +53,7 @@ Environment with three apps
 |**App A**     | User #1 and #2       |         | User #1 and #2       |
 |**App B**     | User #3, #4, and #5       |         | User #1 and #2          |
 |**App C**     | User #6, #7, #8, and #9        |         | User #1 and #2            |
-| **Total active users:** | **9** = 9 different <br /> users each active in <br /> 1 app |  **0** apps had active <br />usage | **6** = 2 users each <br /> active in 3 apps |
+| **Total active users:** | **9** = 9 different <br /> users each active <br /> in 1 app |  **0** apps had active <br />usage | **6** = 2 users each <br /> active in 3 apps |
 
 Example pricing
 

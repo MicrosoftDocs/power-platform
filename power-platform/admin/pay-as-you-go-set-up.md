@@ -71,7 +71,7 @@ The following table describes the permissions of who can create a [billing polic
       az provider show -n Microsoft.PowerPlatform --subscription {subscriptionId}
       ```
       
-Now your Azure subscription is set up to use Power Platform pay as you go.
+Now your Azure subscription is set up to use Power Platform pay-as-you-go.
 
 ## Link an Azure subscription to an environment 
 
@@ -112,7 +112,7 @@ Follow these steps to create a billing policy, link environments to it, and add 
 
    2. The list of environments will be filtered to only show environments whose region matches the region that was selected in the prior step.
 
-      As of Public Preview (11/01/21), only environments of the type production or sandbox are available to add to billing policies. Trial environments, developer environments, Dataverse for Teams environments and default environments cannot be added.
+      As of Public Preview (11/01/21), only production or sandbox environments are available to add to billing policies. Trial environments, developer environments, Dataverse for Teams environments, and default environments cannot be added.
 
       :::image type="content" source="media/pay-as-you-go-available-environments.png" alt-text="Available environments to add billing policy":::
 
