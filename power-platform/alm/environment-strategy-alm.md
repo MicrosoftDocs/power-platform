@@ -71,7 +71,7 @@ When you have multiple environments in different regions, it’s also important 
 #### Example of successfully aligning environments with service update stations
 
 Imagine that you have production environments in Canada and the United States. In that case, your development environments should be in North America (station 5) and not in Canada (station 2). Then, your development environments will always be the same or an earlier version than your production environments and curtail solution import version conflicts.
-:::image type="content" source="media/environment-version-import.png" alt-text="Correct service update station environment alignment for successful solution import ":::
+:::image type="content" source="media/environment-version-import.png" border="false" alt-text="Correct service update station environment alignment for successful solution import ":::
 
 ### See also
 [Solution concepts](solution-concepts-alm.md)
