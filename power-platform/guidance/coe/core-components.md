@@ -20,13 +20,7 @@ search.app:
 
 # Use core components
 
-These components provide the core to get started with setting up a Center of Excellence (CoE). They sync all your resources into tables and build admin apps on top of that to help you get more visibility of the apps, flows, and makers in your environment. Additionally, apps like the Set App Permissions help with daily admin tasks. The core components solution contains assets relevant only to admins. More information: [Set up core components](setup-core-components.md)
-
-## Demo: Core components
-
-Watch how to use the core components solution.
-
-> [!VIDEO https://www.youtube.com/embed/l0kJQAeKthw]
+These components provide the core to get started with setting up a Center of Excellence (CoE). They sync all your resources into tables and build admin apps on top of that to help you get more visibility of the apps, flows, and makers in your environment. Additionally, apps like the Set App Permissions help with daily admin tasks. The core components solution contains assets relevant only to admins. More information: [Set up core components](setup-core-components.md) and [Watch](https://www.youtube.com/embed/l0kJQAeKthw) how to use the core components solution.
 
 ## What's in the solution
 
@@ -300,12 +294,17 @@ Additional to the above listed inventory tables, the following helper tables sup
 | HELPER - ObjectOperations | Child Flow | Instant | This flow takes in the environment, flow, and operation to perform as well as the GUID for the new maker if the operation is to reassign ownership. It calls either the The operations supported are Delete and Assign (which reassigns owner). It calls either the **HELPER - CloudFlowOperations** or the **HELPER - CanvasAppOperations** child flow depending on its last parameter, objectType. It is needed due to a product bug in which you cannot call child flows with the Dataverse Connector from Canvas Apps. |
 | Command Center > Get M365 Service Messages | Instant | from Admin - Command Center canvas apps | this flow connects to [Microsoft Graph](/graph/api/serviceannouncement-list-messages) to list Power Platform Message Center service updates and returns them to the Admin - Command Center canvas app. |
 | Command Center > Initially Populate Bookmarks | Instant | from Admin - Command Center canvas app | this flow runs once to get all CoE Starter Kit apps in the environment and store them to the Command Center Config table as bookmarks used in both the Admin - Command Center and Maker - Command Center canvas apps. |
+| Admin | Compliance request complete apps v3 | Automated | This flow waits for the Business Process flow for App Compliance to be finished and updates the Admin Requirement - Risk Assessment State field of the PowerApps Apps table. |
+| Admin | Compliance request complete bots | Automated | This flow waits for the Business Process flow for Bot Compliance to be finished and updates the Admin Requirement - Risk Assessment State field of the PVA table.|
+| Admin | Compliance request complete custom connector v3 | Automated | This flow waits for the Business Process flow for Custom Connector Compliance to be finished and updates the Admin Requirement - Risk Assessment State field of the PowerApps Connectors table.|
+| Admin | Compliance request complete flows v3 | Automated | This flow waits for the Business Process flow for Cloud flow Compliance to be finished and updates the Admin Requirement - Risk Assessment State field of the Flows table.|
 
 ### Admin \| Compliance Detail request v3
 
 This flow works in conjunction with other apps and flows in the CoE Starter Kit to facilitate the process described in [App auditing process](example-processes.md). Compliance detail request emails are sent for apps and chatbots.
 
-This flow is in Core even though most of its functionality is in Governance in order to facilitate easier shipping for DfT. It should be left turned off until instructed to turn on in Gov setup.
+>[!NOTE]
+>This flow is part of the Core components solution however most of its functionality is implemented in the Governance components solution. This is in order to facilitate easier shipping for Dataverse for Teams. This flow, and its related flows (Admin | Compliance request complete apps/bots/custom connectors/flows) should be left turned off until instructed to turn when you setup the [Governance components](setup-governance-components.md).
 
 This flow sends an email to users who have apps in the tenant that aren't compliant with the following thresholds:
 
@@ -320,6 +319,8 @@ This flow sends an email to users who have chatbots in the tenant that aren't co
 - The chatbot has been launched more than 50 times, and no business justification details have been provided for it.
 
 - The chatbot has business justification details and an indication of high business impact, but no mitigation plan has been submitted to the attachments field.
+
+You can customize the criteria for when makers are asked to provide a business justification using [environment variables](setup-core-components.md#update-environment-variables). Default values are provided.
 
 You can customize the email sent out by the flow; by default, it will look like the following image.
 

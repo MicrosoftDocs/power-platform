@@ -104,6 +104,7 @@ There are three child flows which will need their **Run only users** properties 
 
 - HELPER - CanvasAppOperations Gov
 - HELPER - CloudFlowOperations Gov
+- HELPER - ObjectOperations Gov
 - Request Orphaned Objects Reassigned (Child)
 
 For all three of these flows, go to the details page and click the **Run only users** edit button.
@@ -164,7 +165,7 @@ More information: [Sharing for broad distribution apps](/powerapps/teams/set-per
     1. Select Tables from the left pane.
     1. Select **PowerApps App** > **Manage Permissions**.
     1. Select **Colleagues with access**.
-    1. Set the permission to **Collaborate**.
+    1. Set the permission to **Full Access**.
         ![Sharing data with colleagues.](media/govteams-3.png "Sharing data with colleagues")
     1. Repeat these steps for the Environment, Flow, PVA, Desktop flow tables.
     1. Repeat these steps for the COE Settings table, but grant **Reference** permission only.

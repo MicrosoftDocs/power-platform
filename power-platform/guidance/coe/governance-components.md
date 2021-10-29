@@ -19,13 +19,7 @@ search.app:
 ---
 # Use governance components
 
-After you've become familiar with your environments and resources, you might start thinking about governance processes for your apps. You might want to gather additional information about your apps from your makers, or audit specific connectors or app usage.
-
-## Demo: Governance components
-
-Watch how to use the governance components solution.
-
-> [!VIDEO https://www.youtube.com/embed/6bfaFsFtLow]
+After you've become familiar with your environments and resources, you might start thinking about governance processes for your apps. You might want to gather additional information about your apps from your makers, or audit specific connectors or app usage. More information: [Set up governance components](setup-governance-components.md) and [Watch](https://www.youtube.com/embed/6bfaFsFtLow) how to use the core components solution.
 
 The governance components solution contains assets relevant to admins and makers. More information: [Set up governance components](setup-governance-components.md)
 
@@ -67,7 +61,7 @@ Represents archival approval tasks started during the App Archive and Clean Up f
 | [Request Orphaned Objects Reassigned (Parent)](#request-orphaned-objects-reassigned-parent) | Schedule | Daily |
 | [HELPER - CanvasAppOperations Gov](#helper---canvasappoperations-gov) | Instant | helper |
 | [HELPER - CloudFlowOperations Gov](#helper---cloudflowoperations-gov) | Instant | helper |
-
+| [HELPER - ObjectOperations Gov]() | Instant | helper |
 
 ### Microsoft Teams Admin | Ask for Business Justification when Microsoft Teams environment is created
 
@@ -191,6 +185,10 @@ It performs the action on the actual object in the tenant and also updates the i
 This flow takes in the environment, flow, and operation to perform as well as the GUID for the new maker if the operation is to reassign ownership. <br>
 The operations supported are Delete and Assign (which reassigns owner) <br>
 It performs the action on the actual object in the tenant and also updates the inventory.
+
+### HELPER - ObjectOperations Gov
+
+This flow calls either HELPER - CanvasAppOperations Gov or HELPER - CloudFlowOperations Gov from the Developer Compliance Center app.
 
 ## Apps
 
