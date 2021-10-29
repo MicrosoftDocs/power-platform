@@ -105,7 +105,7 @@ Example pricing
 |**Log**     | No usage         | 0.2 GB * $12 = $2.40         | 0.4 GB * $12 = $4.80         |
 |**Total cost:**     | **$28.80**        |  **$86.40**      |  **$148.80**       |
 
-### Power Platform request capacity add-on meter (Coming soon)
+### Power Platform request capacity add-on meter (coming soon)
 
 > [!NOTE]
 > As of Public Preview (11/01/21), if you link an environment to an Azure subscription this meter will not be reported or billed. Users and flows in the environment can consume more than their entitled usage without being throttled or paying for overages. Reporting and billing will be turned on in the weeks following the Public Preview announcement.
