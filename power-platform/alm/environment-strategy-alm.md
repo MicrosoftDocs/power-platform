@@ -38,10 +38,11 @@ what your organization's environment needs are.
 You should answer questions such as:
 
 -   How many development environments do I need?
-
+    - More information: [Environments overview](../admin/environments-overview.md)
 -   How can I automatically provision environments from source code?
-
--   What are the dependencies on my environments?
+    - More information: [Microsoft Power Platform Build Tools for Azure DevOps](devops-build-tools.md)
+-   What are the dependencies on my environments? 
+    - More information: [Multiple solution layering and dependencies](organize-solutions.md#multiple-solution-layering-and-dependencies)
 
 ### Other environments 
 
@@ -55,6 +56,22 @@ environment. This ensures that you have a place to test your app, but also
 ensures that the deployment itself can be tested. 
 
 More information: [Establishing an environment strategy for Microsoft Power Platform](../guidance/adoption/environment-strategy.md)
+
+## Multi-geographical considerations
+
+It’s important to understand that Power Platform environments follow a specific service update schedule as environments are updated across the world. There are 6 stations in total that are primarily defined by regional location.  Service updates are applied in sequence for each station. So, station 2 service updates are applied before station 3. Therefore, it’s common for environments that are in different stations to have different versions. For more information about the environment service update schedule, go to [Released versions of Microsoft Dataverse](https://docs.microsoft.com/en-us/dynamics365/released-versions/Microsoft-Dataverse)
+
+### Solution import and environment version
+
+When you have multiple environments in different regions, it’s also important to understand the following implications when you import a solution:
+
+- You *can* import a solution into an environment that is a newer version than the environment where the solution was exported. 
+- You *can’t* import a solution into an environment that’s an older version than the environment where the solution was exported.
+
+#### Example of successfully aligning environments with service update stations
+
+Imagine that you have production environments in Canada and the United States. In that case, your development environments should be in North America (station 5) and not in Canada (station 2). Then, your development environments will always be the same or an earlier version than your production environments and curtail solution import version conflicts.
+:::image type="content" source="media/environment-version-import.png" alt-text="Correct service update station environment alignment for successful solution import ":::
 
 ### See also
 [Solution concepts](solution-concepts-alm.md)
