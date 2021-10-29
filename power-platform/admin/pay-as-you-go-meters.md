@@ -87,7 +87,7 @@ Measurement for each category of Dataverse storage usage will happen three times
 > [!NOTE]
 > The prices shown in this example are illustrative only. Your organization's pricing may vary based on your contract with Microsoft.
 
-Measured usage *above* per environment credentials 
+Measured usage *above* entitlements of 1GB Database and 1GB File
 
 |Storage category  |Month #1  |Month #2  |Month #3  |
 |---------|---------|---------|---------|
