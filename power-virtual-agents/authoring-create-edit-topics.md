@@ -216,26 +216,25 @@ To receive values from other topics, you need to set the variable's property fol
 1. Click on the variable you want to receive values from other topics 
 2. In the **Variables properties** pane, click on **Receive values from other topics** under **Topic (limited scope)**
 
-:::image type="content" source="media/teams/authoring-create-edit-topics/authoring-subtopic-pass-variable-properties-receive-input
-.png" alt-text="Screenshot of the authoring canvas showing variable properties pane with receive values selected.":::
+:::image type="content" source="teams/media/authoring-create-edit-topics/authoring-subtopic-pass-variable-properties-receive-input.png" alt-text="Screenshot of the authoring canvas showing variable properties pane with receive values selected.":::
 
 3. Save the topic
-4. Go to the other topic which you want to redirect to, and follow the steps in [Redirect to another topic](authoring-create-edit-topics.md#Redirect-to-another-topic) to redirect to the correct topic
+4. Go to the other topic which you want to redirect to, and follow the steps in [Redirect to another topic](authoring-create-edit-topics.md#redirect-to-another-topic) to redirect to the correct topic
 5. Click on **+ Add input for destionation topic**. 
 
-:::image type="content" source="media/teams/authoring-create-edit-topics/authoring-subtopic-pass-variable-step1.png" alt-text="Screenshot of the authoring canvas showing adding input for destination topic.":::
+:::image type="content" source="teams/media/authoring-create-edit-topics/authoring-subtopic-pass-variable-step1.png" alt-text="Screenshot of the authoring canvas showing adding input for destination topic.":::
 
 6. Select the variable you want from the redirected topic you want to pass to
 
-:::image type="content" source="media/teams/authoring-create-edit-topics/authoring-subtopic-pass-variable-step2.png" alt-text="Screenshot of the authoring canvas showing selection of topic from redirect topic.":::
+:::image type="content" source="teams/media/authoring-create-edit-topics/authoring-subtopic-pass-variable-step2.png" alt-text="Screenshot of the authoring canvas showing selection of topic from redirect topic.":::
 
 7. In the dropdown, select the variable from the current topic you want to pass into the redirected topic
 
-:::image type="content" source="media/teams/authoring-create-edit-topics/authoring-subtopic-pass-variable-step3.png" alt-text="Screenshot of the authoring canvas showing selection of variable from dropdown.":::
+:::image type="content" source="teams/media/authoring-create-edit-topics/authoring-subtopic-pass-variable-step3.png" alt-text="Screenshot of the authoring canvas showing selection of variable from dropdown.":::
 
 8. Once selected, the variable will be shown in the redirected node
 
-:::image type="content" source="media/teams/authoring-create-edit-topics/authoring-subtopic-pass-variable-step4.png" alt-text="Screenshot of the authoring canvas showing variable being passed into redirect node.":::
+:::image type="content" source="teams/media/authoring-create-edit-topics/authoring-subtopic-pass-variable-step4.png" alt-text="Screenshot of the authoring canvas showing variable being passed into redirect node.":::
 
 
 ##### Return values to original topics
@@ -246,32 +245,31 @@ To return a variable to the original topic, you need to set the variable's prope
 1. Click on the variable you want to receive values from other topics 
 2. In the **Variables properties** pane, click on **Return values to original topics** under **Topic (limited scope)**
 
-:::image type="content" source="media/teams/authoring-create-edit-topics/authoring-subtopic-pass-variable-properties-return-value.png" alt-text="Screenshot of the authoring canvas showing variable properties pane with return values selected.":::
+:::image type="content" source="teams/media/authoring-create-edit-topics/authoring-subtopic-pass-variable-properties-return-value.png" alt-text="Screenshot of the authoring canvas showing variable properties pane with return values selected.":::
 
 3. Save the topic
 4. Go to the other topic which you want to redirect to, and follow the steps in [Redirect to another topic](authoring-create-edit-topics.md#Redirect-to-another-topic) to redirect to the correct topic
 5. The variable that's being returned to the topic is shown in the redirected topic
 
-:::image type="content" source="media/teams/authoring-create-edit-topics/authoring-subtopic-pass-variable-pass-receive.png" alt-text="Screenshot of the authoring canvas showing redirect topic with both values input and returned.":::
+:::image type="content" source="teams/media/authoring-create-edit-topics/authoring-subtopic-pass-variable-pass-receive.png" alt-text="Screenshot of the authoring canvas showing redirect topic with both values input and returned.":::
 
 ##### Using the variables pane
 Alternativaly, you can also use the Variables pane to select the reveice/return status of multiple variables at once
 
 1. Select the variables pane entry from the top bar
 
-:::image type="content" source="media/teams/authoring-create-edit-topics/authoring-subtopic-pass-variable-variables-bar.png" alt-text="Screenshot of the authoring canvas showing variables pane button":::
+:::image type="content" source="teams/media/authoring-create-edit-topics/authoring-subtopic-pass-variable-variables-bar.png" alt-text="Screenshot of the authoring canvas showing variables pane button":::
 
 2. Select the input / return options for the variable as appropriate
 
-:::image type="content" source="media/teams/authoring-create-edit-topics/authoring-subtopic-pass-variable-variable-return-value.png" alt-text="Screenshot of the authoring canvas showing variable pane with two variables":::
+:::image type="content" source="teams/media/authoring-create-edit-topics/authoring-subtopic-pass-variable-variable-return-value.png" alt-text="Screenshot of the authoring canvas showing variable pane with two variables":::
 
 
 ##### Using literal values on variable inputs
 When passing a variable into a topic, you can also pass literal values in the input instead of a variable. Type the value intended to be passed in directly into the redirect node input.
 
 To pass a literal value, simply type the value you want to use as input instead of selecting a variable from the dropdown
-:::image type="content" source="media/teams/authoring-create-edit-topics/authoring-subtopic-pass-variable-literal-value
-.png" alt-text="Screenshot of the authoring canvas showing literal input on an input variable in a redirect note":::
+:::image type="content" source="teams/media/authoring-create-edit-topics/authoring-subtopic-pass-variable-literal-value.png" alt-text="Screenshot of the authoring canvas showing literal input on an input variable in a redirect note":::
  
 
 #### End the conversation
