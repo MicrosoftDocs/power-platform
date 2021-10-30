@@ -213,7 +213,7 @@ When a topic defines a variable (e.g., by a question node), the end user talking
 
 To receive values from other topics, you need to set the variable's property following these steps:
 
-1. Click on the variable you want to receive values from other topics 
+1. In the question node, click on the variable you want to receive values from other topics to open the variable properties pane
 2. In the **Variables properties** pane, click on **Receive values from other topics** under **Topic (limited scope)**
 
 :::image type="content" source="teams/media/authoring-create-edit-topics/authoring-subtopic-pass-variable-properties-receive-input.png" alt-text="Screenshot of the authoring canvas showing variable properties pane with receive values selected.":::
@@ -242,7 +242,7 @@ When a topic asks a question (or otherwise obtains a variable from an action), t
 
 To return a variable to the original topic, you need to set the variable's property following these steps:
 
-1. Click on the variable you want to receive values from other topics 
+1. In the question node, click on the variable you want to receive values from other topics to open the Variable Properties pane 
 2. In the **Variables properties** pane, click on **Return values to original topics** under **Topic (limited scope)**
 
 :::image type="content" source="teams/media/authoring-create-edit-topics/authoring-subtopic-pass-variable-properties-return-value.png" alt-text="Screenshot of the authoring canvas showing variable properties pane with return values selected.":::
@@ -250,6 +250,7 @@ To return a variable to the original topic, you need to set the variable's prope
 3. Save the topic
 4. Go to the other topic which you want to redirect to, and follow the steps in [Redirect to another topic](authoring-create-edit-topics.md#Redirect-to-another-topic) to redirect to the correct topic
 5. The variable that's being returned to the topic is shown in the redirected topic
+6. Use the returned variable in your topic
 
 :::image type="content" source="teams/media/authoring-create-edit-topics/authoring-subtopic-pass-variable-pass-receive.png" alt-text="Screenshot of the authoring canvas showing redirect topic with both values input and returned.":::
 
