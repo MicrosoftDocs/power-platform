@@ -28,7 +28,7 @@ Customers who need to create fully flexible, general-purpose workflows with eith
 Plan|Description
 --------|------
 Power Automate per user plan|This plan provides a user with rights to run an unlimited number of flows (within service limits) with the full capabilities of Power Automate, including [standard connectors](https://preview.flow.microsoft.com/connectors/?filter=&category=standard),[premium connectors](#premium-connectors),[business process flows](#business-process-flows), [custom connectors](#custom-connectors),[on-premises gateways](#on-premises-gateway) based on their unique needs for a monthly fixed cost for each user.
-Power Automate per user with attended RPA plan|This plan spans legacy and modern applications, allowing makers to create unlimited flows for API-based automation and automate legacy applications with desktop flows [through Robotic Process Automation (RPA)](#robotic-process-automation) and AI. This plan includes all Power Automate per user plan capabilities and the ability for users to run an attended RPA bot on their workstation. Additionally, this plan includes access to [AI Builder capacity](#AI-builder-credits), supporting scenarios like forms processing, object detection, prediction, text classification, and recognition. This plan can be purchased for a monthly fixed cost for each user.
+Power Automate per user with attended RPA plan|This plan spans legacy and modern applications, allowing makers to create unlimited flows for API-based automation and automate legacy applications with desktop flows [through Robotic Process Automation (RPA)](#robotic-process-automation) and AI. This plan includes all Power Automate per user plan capabilities and the ability for users to run an attended RPA bot on their workstation. Additionally, this plan includes access to [AI Builder capacity](#ai-builder-credits), supporting scenarios like forms processing, object detection, prediction, text classification, and recognition. This plan can be purchased for a monthly fixed cost for each user.
 Power Automate per flow plan|  With this plan, organizations can implement flows with reserved capacity that serve a team, a department, or an entire organization without having to license each user separately. This plan starts with a fixed monthly cost for for five active flows.There is a monthly fee for each additional active flow (beyond the five flows that are included in the base fee).
 Power Automate P1 and P2 plans (grand fathered)| These plans are no longer available for purchase nor via auto-renewal after December 31, 2020. Organizations with these plan licenses with renewals that are due on or after January 1, 2021 need to transition to either the Power Automate per user or per flow plan or to the Power Apps per user or per app plan to continue using the Microsoft Power Platform services. Customers with active contracts that started before January 1, 2021 with grandfathered licenses will continue to be supported until the contract end date. Contact your Microsoft account representative for more information or [purchase licenses](https://flow.microsoft.com/pricing/?ef_id=dd65eaf79fda13e945118bbef5cc361a:G:s&amp;OCID=AID2200054_SEM_dd65eaf79fda13e945118bbef5cc361a:G:s&amp;msclkid=dd65eaf79fda13e945118bbef5cc361a).
 
@@ -65,12 +65,9 @@ Here's a chart that lays out the limits that are associated with the different l
 
 ![Image showing a comparison](../media/power-automate-licensing/license-comparison.png)
 
-<sup> 
-
 1. Dynamics 365 Sales Professional and Dynamics 365 Customer Service Professional.
 1. Dynamics 365 Sales Enterprise, Dynamics 365 Customer Service Enterprise, Dynamics 365 Field Service, Dynamics 365 Project Service Automation, Dynamics 365 Retail, Dynamics 365 Talent, and Dynamics 365 Customer Engagement plan.
 1. In Dataverse for Teams environments (included in [select Office licenses)](/power-platform/admin/powerapps-flow-licensing-faq#which-microsoft-365-subscriptions-include-dataverse-for-teams-and-power-virtual-agents-capabilities-with-teams) customers can use custom connectors built on Azure and Dataverse capabilities.
-</sup>
 
 ## How to choose the right plan
 
@@ -92,7 +89,7 @@ Here are a few things to be aware of during the transition period.
 
 ## License limits
 
-Connectors represent the app/service to which your flows connect. For example, OneDrive, SharePoint, Twitter, etc. are examples of services to which flows connect. The connectors in Power Automate are designed to *speak the language* of the apps/services to which your flows connect, as well as give Power Automate access to the account. Connectors are  categorized as either [standard](#standard-connectors) or [premium connectors](premium-connectors).
+Connectors represent the app/service to which your flows connect. For example, OneDrive, SharePoint, Twitter, etc. are examples of services to which flows connect. The connectors in Power Automate are designed to *speak the language* of the apps/services to which your flows connect, as well as give Power Automate access to the account. Connectors are  categorized as either [standard](#standard-connectors) or [premium connectors](#premium-connectors).
 
 ### Standard connectors
 
@@ -106,15 +103,15 @@ Premium connectors are not included in the Microsoft 365 license.
 
 Here's the full list of [premium connectors](https://flow.microsoft.com/connectors/?filter=&category=premium) in Power Automate.
 
-![List of premium connectors](../media/power-automate-licensing/premium-connectors.png.png)
+![List of premium connectors](../media/power-automate-licensing/premium-connectors.png)
 
 ### Business process flows
 
-You can create [business process flows](https://docs.microsoft.com/power-automate/business-process-flows-overview) for a workflow to ensure that users enter data consistently and follow the same steps every time. Business process flows provide a streamlined user experience that leads people through the processes their organization has defined for interactions that need to be advanced to reach a conclusion.
+You can create [business process flows](/business-process-flows-overview) for a workflow to ensure that users enter data consistently and follow the same steps every time. Business process flows provide a streamlined user experience that leads people through the processes their organization has defined for interactions that need to be advanced to reach a conclusion.
 
 ### Custom connectors
 
-You may want to communicate with apps/services that aren't available as prebuilt connectors. [Custom connectors](https://docs.microsoft.com/connectors/custom-connectors) allow you to create (and even share) your own connectors.
+You may want to communicate with apps/services that aren't available as prebuilt connectors. [Custom connectors](/connectors/custom-connectors) allow you to create (and even share) your own connectors.
 
 ### Robotic Process Automation
 
@@ -126,13 +123,13 @@ The [on-premises data gateway](/power-automate/gateway-reference) acts as a brid
 
 ### AI Builder credits
 
-With [AI builder](https://docs.microsoft.com/power-automate/use-ai-builder), you to add intelligence to your automated processes, predict outcomes, and help improve business performance. AI Builder capacity is expressed in the form of "service credits". Service credits serve as the single (common) currency across all the scenarios that AI Builder supports. Available service credits are deducted when AI Builder services are used. For instance, you could use these credits to extract data from a few documents with _form processing_ or perform hundreds of basic OCR extractions with _text recognition_.
+With [AI builder](/use-ai-builder), you to add intelligence to your automated processes, predict outcomes, and help improve business performance. AI Builder capacity is expressed in the form of "service credits". Service credits serve as the single (common) currency across all the scenarios that AI Builder supports. Available service credits are deducted when AI Builder services are used. For instance, you could use these credits to extract data from a few documents with _form processing_ or perform hundreds of basic OCR extractions with _text recognition_.
 
 Different scenarios (for example, forms processing, prediction, etc.) consume service credits at different rates. Each per user with attended RPA license grants you 5000 credits, allowing you to assess the capabilities in AI Builder. Learn more about [AI builder licensing](/power-platform/admin/powerapps-flow-licensing-faq%23ai-builder).
 
 ### Dataverse database and file capacity
 
-Data volume continues to grow exponentially as businesses advance their digital transformation journey and bring data together across their organizations. Modern business applications need to support new business scenarios, manage new data types, and help organizations with the increasing complexity of compliance mandates. To support the growing needs of today's organizations, data storage solutions need to evolve continuously and provide the right solution to support expanding business needs. Microsoft Dataverse capacity storage is optimized for relational data (database), attachments (file), and audit logs (log). Power Automate standalone license customers receive a tenant-wide default entitlement for each of these three storage types. Additional storage can be purchased in 1-GB increments. Learn more about [Dataverse capacity storage](https://docs.microsoft.com/power-platform/admin/capacity-storage).
+Data volume continues to grow exponentially as businesses advance their digital transformation journey and bring data together across their organizations. Modern business applications need to support new business scenarios, manage new data types, and help organizations with the increasing complexity of compliance mandates. To support the growing needs of today's organizations, data storage solutions need to evolve continuously and provide the right solution to support expanding business needs. Microsoft Dataverse capacity storage is optimized for relational data (database), attachments (file), and audit logs (log). Power Automate standalone license customers receive a tenant-wide default entitlement for each of these three storage types. Additional storage can be purchased in 1-GB increments. Learn more about [Dataverse capacity storage](/power-platform/admin/capacity-storage).
 
 ## Power Platform requests
 
@@ -175,7 +172,7 @@ Consider the following flow where every email attachment is saved to OneDrive. T
 - If a parent flow calls a child flow, the child flow uses the parent flow's limits. For example, if the parent flow is an automated flow, the child flow uses the parent flow creator/owner's limits.
 - If the parent flow is a manual flow, the child flow uses the limits of the parent flow's invoking user.
 - If the child flow has a per flow license, it uses the per flow limits and not the parent flow's limits.
-- During the [transition period](#Transition-period), there is a slight difference in this behavior. The child flow owner's license is used unless the child flow has a per flow license but once the transition period ends, the child flow owner's limits are ignored and only the parent flow owner's limits are used unless the child flow has a per flow license.
+- During the [transition period](#transition-period), there is a slight difference in this behavior. The child flow owner's license is used unless the child flow has a per flow license but once the transition period ends, the child flow owner's limits are ignored and only the parent flow owner's limits are used unless the child flow has a per flow license.
 
 #### As a maker, what tools do I have to analyze my usage?
 
@@ -213,7 +210,7 @@ Occasional overages are okay. For instance, if you exceed your daily limits by 5
 
 #### What are connector limits and are they different from Power Platform request limits?
 
-The connectors in the flow have separate limits as a service protection mechanism. For example, the SharePoint connector caps actions at 600 per minute. A single SharePoint connection used across multiple flows can still only execute 600 operations per minute. Most connector pages have a [throttling section](https://docs.microsoft.com/connectors/sharepointonline/#limits) that documents these limits. This limit is different from the request limits. For example, an Office user can execute 2000 actions per day across all their flows but can still get throttled by the connector if they used more than 600 SharePoint actions in a minute despite not reaching the 2000 actions limit.
+The connectors in the flow have separate limits as a service protection mechanism. For example, the SharePoint connector caps actions at 600 per minute. A single SharePoint connection used across multiple flows can still only execute 600 operations per minute. Most connector pages have a [throttling section](/connectors/sharepointonline/#limits) that documents these limits. This limit is different from the request limits. For example, an Office user can execute 2000 actions per day across all their flows but can still get throttled by the connector if they used more than 600 SharePoint actions in a minute despite not reaching the 2000 actions limit.
 
 When a flow was throttled because it exceeded the connector limits, you might see a HTTP 429 (too many requests) error in your flow with error text like "Rate limit is exceeded. Try again in 27 seconds."
 
@@ -298,7 +295,7 @@ Best practices to scale your flow.
 
 ### FAQ
 
-You can consult this requests limits frequently asked questions[https://docs.microsoft.com/power-platform/admin/api-request-limits-allocations#frequently-asked-questions](/power-platform/admin/api-request-limits-allocations#frequently-asked-questions) for more information about requests limits.
+You can consult this [requests limits frequently asked questions](/power-platform/admin/api-request-limits-allocations#frequently-asked-questions) for more information about requests limits.
 
 ## Free Plan
 
@@ -309,9 +306,9 @@ If you sign in with work or school email address, you get all [Power Automate ca
 
 To know which users have the free plan, admins can go to the [O365 Admin portal](https://admin.microsoft.com/), sign in, select **Billing** > **Licenses** to see how many free licenses are assigned vs available.
 
-![](RackMultipart20211020-4-1g0es0r_html_29f6c1107dc4f851.png)
+![Image of trial licenses](../media/power-automate-licensing/trial-licenses.png)
 
-Click on Assigned licenses to see which users have free license
+Select **Assigned licenses** to see which users have free license.
 
 ## Community plan
 
