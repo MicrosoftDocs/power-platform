@@ -19,8 +19,6 @@ search.app:
 
 # Frequently asked questions about Power Automate licensing
 
-[!INCLUDE [cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
-
 1. What Power Automate capabilities are included in Office licenses
 
 Limited Power Automate use rights are included with select Office 365 licenses to allow users to customize and extend Office 365 for personal productivity scenarios. For enterprise scenarios, we recommend buying [standalone licenses](#Standalone_plans).
