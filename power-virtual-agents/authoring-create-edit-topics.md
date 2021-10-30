@@ -220,7 +220,7 @@ To receive values from other topics, you need to set the variable's property fol
 
 3. Save the topic
 4. Go to the other topic which you want to redirect to, and follow the steps in [Redirect to another topic](authoring-create-edit-topics.md#redirect-to-another-topic) to redirect to the correct topic
-5. Click on **+ Add input for destionation topic**. 
+5. Click on **+ Add input for destination topic**. 
 
 :::image type="content" source="teams/media/authoring-create-edit-topics/authoring-subtopic-pass-variable-step1.png" alt-text="Screenshot of the authoring canvas showing adding input for destination topic.":::
 
@@ -255,7 +255,7 @@ To return a variable to the original topic, you need to set the variable's prope
 :::image type="content" source="teams/media/authoring-create-edit-topics/authoring-subtopic-pass-variable-pass-receive.png" alt-text="Screenshot of the authoring canvas showing redirect topic with both values input and returned.":::
 
 ##### Using the variables pane
-Alternativaly, you can also use the Variables pane to select the reveice/return status of multiple variables at once
+Alternatively, you can also use the Variables pane to select the reveice/return status of multiple variables at once
 
 1. Select the variables pane entry from the top bar
 
