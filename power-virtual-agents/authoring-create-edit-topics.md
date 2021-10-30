@@ -209,7 +209,7 @@ When redirecting to other topics, you might want to pass values into variables i
 >Variable of type Custom Entity, Date Time, and Duration are not eligible to be passed between topics.  
 
 ##### Receive values from other topics
-When a topic defines a variable (e.g., by a question node), the end user talking to the bot will be asked the question to fill in the variable’s value. If the value has already been acquired by the bot, there is no reason to ask the question again. For these cases, this variable can be defined as “Receive vales from other topics”. When other topics redirect to this topic, it can then pass a variable (or literal values) into this variable, and it will skip the question altogether. This leads to a seamless experience for the end user talking to the bot. 
+When a topic defines a variable (e.g., by a question node), the end user talking to the bot will be asked the question to fill in the variable’s value. If the value has already been acquired by the bot, there is no reason to ask the question again. For these cases, this variable can be defined as “Receive vales from other topics”. When other topics redirect to this topic, it can then pass a variable (or [literal values](authoring-create-edit-topics.md#using-literal-values-on-variable-inputs)) into this variable, and it will skip the question altogether. This leads to a seamless experience for the end user talking to the bot. 
 
 To receive values from other topics, you need to set the variable's property following these steps:
 
