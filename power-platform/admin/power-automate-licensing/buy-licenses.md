@@ -242,7 +242,7 @@ Yes.
 
 1. Fill in the details, and then send the request to your admin.
 
-![An image that shows a request to be sent to an admin for a license.](../media/power-automate-licensing/maker-request-to-admin.png)
+   ![An image that shows a request to be sent to an admin for a license.](../media/power-automate-licensing/maker-request-to-admin.png)
 
 1. Admins can see your request in the Microsoft 365 admin center and assign a license to you.
 
