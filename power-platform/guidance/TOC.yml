@@ -4,7 +4,7 @@
   - name: Adoption best practices
     href: adoption/methodology.md
     items: 
-    - name: Adoption Maturity model
+    - name: Adoption maturity model
       items: 
       - name: Overview
         href: adoption/maturity-model.md
