@@ -65,7 +65,7 @@ Let’s now look at the stages and opportunities in each stage in detail:
 
 ## Level 300 – Defined
 
-*This phase describes a process that is defined/confirmed as a standard business process. *The Defined organization is standardizing the repeatable practices that evolved in the Repeatable phase – for example, Environment and DLP requests are automated, solutions are used to move apps and flows between environments, and makers are starting to share common components. The organization is achieving measurable success with Power Platform to digitally transform and has a defined Power Platform Center of Excellence team.  Much of this transformation may still reflect the organic growth that got the organization to this point, but the Center of Excellence team is working to automate those processes and define standard approaches that will move the organization to the Capable stage.
+*This phase describes a process that is defined/confirmed as a standard business process.* The Defined organization is standardizing the repeatable practices that evolved in the Repeatable phase – for example, Environment and DLP requests are automated, solutions are used to move apps and flows between environments, and makers are starting to share common components. The organization is achieving measurable success with Power Platform to digitally transform and has a defined Power Platform Center of Excellence team.  Much of this transformation may still reflect the organic growth that got the organization to this point, but the Center of Excellence team is working to automate those processes and define standard approaches that will move the organization to the Capable stage.
 
 ### Opportunities
 
@@ -86,7 +86,7 @@ Let’s now look at the stages and opportunities in each stage in detail:
 
 ## Level 400 – Capable
 
-*This phrase describes a process that is quantitatively managed in accordance with agreed-upon metrics. T*he Capable organization has standard processes for managing and monitoring Power Platform.  These processes, described during the Defined stage, are now largely automated and are well understood by makers.  Power Platform capabilities are being used to transform the business broadly and used for enterprise-critical apps and integrations. Platform Champions have established channels for sharing best practices, training new makers and conducting regular hackathons.  Standard, branded app templates and components are available to all makers. Business Value assessments are carried out to measure and understand the impact of the Power Platform.
+*This phrase describes a process that is quantitatively managed in accordance with agreed-upon metrics.* The Capable organization has standard processes for managing and monitoring Power Platform.  These processes, described during the Defined stage, are now largely automated and are well understood by makers.  Power Platform capabilities are being used to transform the business broadly and used for enterprise-critical apps and integrations. Platform Champions have established channels for sharing best practices, training new makers and conducting regular hackathons.  Standard, branded app templates and components are available to all makers. Business Value assessments are carried out to measure and understand the impact of the Power Platform.
 
 ### Opportunities
 
@@ -128,4 +128,4 @@ Create [shared component libraries](/power-platform/guidance/adoption/reusable) 
 :::row-end:::
 
 > [!div class="nextstepaction"]
-> [Next step: Details capabilities and characteristics](maturity-model-details.md)
+> [Next step: Detailed capabilities](maturity-model-details.md)
