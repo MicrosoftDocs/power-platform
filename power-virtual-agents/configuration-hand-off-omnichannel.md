@@ -205,7 +205,7 @@ This variable contains the phone number the customer dialed to reach the bot.
 
 
 ## Known limitations
-See [Known limitations when using Power Virtual Agents with Omnichannel for Customer Service](/dynamics365/omnichannel/administrator/configure-bot-virtual-agent#known-limitations) for more information.
+See [limitations when using Power Virtual Agents with Omnichannel for Customer Service](/dynamics365/omnichannel/administrator/configure-bot-virtual-agent#limitations) for more information.
 
 
 
