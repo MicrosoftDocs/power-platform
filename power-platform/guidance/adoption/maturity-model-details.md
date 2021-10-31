@@ -149,7 +149,7 @@ Secondarily, this series of articles will be helpful for:
 
 The primary focus of this series of articles is on the Power Platform technology platform, with an emphasis on the Power Apps, Power Automate, Power Virtual Agents and Dataverse.
 
-For information about Power BI adoption, see the [Power BI Adoption Roamdap](/power-bi/guidance/powerbi-adoption-roadmap-overview).
+For information about Power BI adoption, see the [Power BI Adoption Roadmap](/power-bi/guidance/powerbi-adoption-roadmap-overview).
 
 ## Next steps
 
