@@ -181,9 +181,9 @@ You'll need to deploy a custom canvas that includes arguments that cause the [de
 
 The code in the *index.html* file causes a topic to be called automatically when the bot is loaded. By default, it calls the system greeting topic. You can also create a new topic and divert the default system greeting topic to that new topic.
 
-
-
 In both instances, you [make changes to the topic you want to call as you would normally](authoring-create-edit-topics.md).
+
+If you modify or create a new greeting topic, it's a best practice to include some sort of identification that the user is talking to a bot (or "virtual agent"), so they don't think they're talking to a human.
 
 We recommend you modify the system greeting topic so that you don't have to edit the *index.html* code.
 

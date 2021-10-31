@@ -46,7 +46,7 @@ For example, if the user's browser locale setting is *en-GB*, the bot knows that
 
 ## Data locations
 
-Power Virtual Agents can be deployed into the Microsoft Azure datacenters (also referred to as "regions") listed here. You can create a bot in your tenant's location by default, or you can choose the datacenter you want to use when [setting up your environment](environments-first-run-experience.md).
+Power Virtual Agents can be deployed into the Microsoft Azure datacenters (also referred to as "regions" or "geos") listed here. You can create a bot in your tenant's location by default, or you can choose the datacenter you want to use when [setting up your environment](environments-first-run-experience.md).
 
 Microsoft might replicate customer data to other regions available within the same geography for data durability. 
 
