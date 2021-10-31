@@ -6,6 +6,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/08/2021
+ms.subservice: admin
 ms.author: mkaur
 search.audienceType: 
   - admin
@@ -26,7 +27,7 @@ You can also select multiple items and assign the **Tracked to Dynamics 365** Ou
 As of version 9.1.0.4039 or higher, category tracking is on by default.
 
 > [!TIP]
-> To determine your version, sign in to customer engagement apps, and in the upper-right side of the screen, select the **Settings** button ![User profile Settings button](media/user-profile-settings-button.png) > **About**.  
+> To determine your version, sign in to customer engagement apps, and in the upper-right side of the screen, select the **Settings** button ![User profile Settings button.](media/user-profile-settings-button.png) > **About**.  
 
 ## Use category to track Outlook items
 Once the **Tracked to Dynamics 365** category is available in Outlook, you can use it to track the following Outlook items.
@@ -102,12 +103,13 @@ If you categorize a conversation thread as **Tracked to Dynamics 365**, all the 
 **Can I assign Tracked to Dynamics 365 category to recurring appointments?**<br />
 If you categorize a recurring appointment as **Tracked to Dynamics 365**, all the individual environments of the appointment are assigned the category and will be tracked.
 
-**What happens when a Track of email fails?**<br/>
+**What happens when a Tracked email fails?**<br/>
 By default, failed auto tracked emails will be retried in a new synchronization cycle – approximately every 15 minutes. Retries will be done up to 5 times. If the retries fail after 5 attempts, the email will be assigned the category **Tracked to Dynamics 365 (Undeliverable)** and no further retries will occur. Auto tracked emails which fail with the following errors will be retried:
 
-- Promotion of emails fail due to a plugin configured in the customer environment
-- Promotion of emails fail because of timeouts from either customer engagement apps or Microsoft Exchange
-- An email is rejected with InvalidSender or because of some unknown decisions
+- Promotion of emails fail due to a plugin configured in the customer environment.
+- Promotion of emails fail because of timeouts from either customer engagement apps or Microsoft Exchange.
+- An email is rejected with InvalidSender or because of some unknown decisions.
+- Emails fail and are undeliverable if the owner of the queue doesn't have the correct security role assigned to them. Without the correct security role, the owner won't be able to own the email record tracked by the queue.
 
 After 5 retries, if the failure to promote the email was due to a plugin error, try fixing the plugin. Then, assign the **Track to Dynamics 365** category to manually track the undelivered emails to get them tracked in customer engagement apps. 
 

@@ -56,7 +56,7 @@ You can also combine the customized greeting with [customization to the look and
 4. Select **Save** when you're finished editing the message.
 
 
-    :::image type="content" source="media/custom-greeting-message-teams.png" alt-text="Screenshot of the system greeting topic showing the message nodes that can be edited":::
+    :::image type="content" source="media/custom-greeting-message-teams.png" alt-text="Screenshot of the system greeting topic showing the message nodes that can be edited.":::
 
 5. [**Publish** your bot](publication-add-bot-to-microsoft-teams-teams.md) and test it.
 

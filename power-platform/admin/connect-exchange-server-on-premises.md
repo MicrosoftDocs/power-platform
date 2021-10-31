@@ -4,8 +4,9 @@ description: Connect to Exchange Server (on-premises)
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/17/2021
+ms.date: 09/24/2021
 author: revachauhan
+ms.subservice: admin
 ms.author: rechauha
 ms.reviewer: mkaur
 search.audienceType: 
@@ -18,40 +19,90 @@ search.app:
 ---
 # Connect to Exchange Server (on-premises)
 
-<!-- legacy procedure -->
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-With version 9.0., you can connect your customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), with [!INCLUDE[pn_Exchange_Server_full](../includes/pn-exchange-server-full.md)] (on-premises).  
-
- Check out the following white paper: [Setup Guide: Server-side synchronization for CRM Online and Exchange Server](https://download.microsoft.com/download/E/D/0/ED05CA70-190F-4BAE-9F6A-0BB2F0010B81/Setup%20Guide%20Server-side%20synchronization%20for%20CRM%20Online%20and%20Exchange%20Server.pdf)  
+With version 9.0, you can connect your customer engagement apps (such as [Dynamics 365 Sales](/dynamics365/sales-professional/help-hub), [Dynamics 365 Customer Service](/dynamics365/customer-service/help-hub), [Dynamics 365 Marketing](/dynamics365/marketing/help-hub), [Dynamics 365 Field Service](/dynamics365/field-service/overview), and [Dynamics 365 Project Service Automation](/dynamics365/project-operations/psa/overview)) with [!INCLUDE[pn_Exchange_Server_full](../includes/pn-exchange-server-full.md)] (on-premises). More information: [Setup Guide: Server-side synchronization for CRM Online and Exchange Server](https://download.microsoft.com/download/E/D/0/ED05CA70-190F-4BAE-9F6A-0BB2F0010B81/Setup%20Guide%20Server-side%20synchronization%20for%20CRM%20Online%20and%20Exchange%20Server.pdf) (white paper)
 
 ## Prerequisites  
 
-1. **Exchange Server**. The following versions are supported: [!INCLUDE[pn_Exchange_Server_2013_short](../includes/pn-exchange-server-2013-short.md)] SP1, [!INCLUDE[pn_exchange_server_2016_short](../includes/pn-exchange-server-2016-short.md)], or Exchange Server 2019.  
+1. **Exchange Server**. The following versions are supported: [!INCLUDE[pn_Exchange_Server_2013_short](../includes/pn-exchange-server-2013-short.md)] SP1, [!INCLUDE[pn_exchange_server_2016_short](../includes/pn-exchange-server-2016-short.md)], and Exchange Server 2019.  
 
-2. **Authentication**. During installation, [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] configures [!INCLUDE[pn_Internet_Information_Services](../includes/pn-internet-information-services.md)]. To connect customer engagement apps with [!INCLUDE[pn_Exchange_Server_short](../includes/pn-exchange-server-short.md)], Windows (NTLM) or Basic authentication must be enabled in [!INCLUDE[pn_Exchange_Server_short](../includes/pn-exchange-server-short.md)]. When configuring Windows (NTLM) authentication, make sure Basic authentication is disabled on Exchange server.  
+2. **Authentication**. During installation, [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)]<!--note from editor: Should this be "Exchange Server"?--> configures [!INCLUDE[pn_Internet_Information_Services](../includes/pn-internet-information-services.md)]. To connect customer engagement apps with [!INCLUDE[pn_Exchange_Server_short](../includes/pn-exchange-server-short.md)], you must enable Windows NT LAN Manager (NTLM) or Basic authentication in [!INCLUDE[pn_Exchange_Server_short](../includes/pn-exchange-server-short.md)]. If you configure NTLM authentication, make sure Basic authentication is disabled on Exchange Server.  
 
-     For more information on authentication, see:  
+For more information about authentication, go to:  
 
-   - Exchange Server 2013: [Authentication and EWS in Exchange](/exchange/client-developer/exchange-web-services/authentication-and-ews-in-exchange)  
-
+   - Exchange Server 2013: [Authentication and Exchange Web Services (EWS) in Exchange](/exchange/client-developer/exchange-web-services/authentication-and-ews-in-exchange)  
    - Exchange Server 2013: [Default settings for Exchange virtual directories](/exchange/default-settings-for-exchange-virtual-directories-exchange-2013-help) 
-
    - Exchange Server 2016: [Default settings for Exchange virtual directories](/Exchange/clients/default-virtual-directory-settings?view=exchserver-2019)
-
    - Exchange Server 2019: [Default settings for Exchange virtual directories](/Exchange/clients/default-virtual-directory-settings?view=exchserver-2019)
 
-3. **ApplicationImpersonation role**. You need to create and configure a service account with the **ApplicationImpersonation** role in [!INCLUDE[pn_Microsoft_Exchange](../includes/pn-microsoft-exchange.md)]. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Impersonation and EWS in Exchange](https://msdn.microsoft.com/library/office/dn722377\(v=exchg.150\).aspx).  
+3. **ApplicationImpersonation role**. You need to create and configure a service account with the **ApplicationImpersonation** role in [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)].<!--note from editor: Should this be "Exchange Server"?--> [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Impersonation and EWS in Exchange](https://msdn.microsoft.com/library/office/dn722377\(v=exchg.150\).aspx) 
 
-4. **Secured connection**. The connection between customer engagement apps and Exchange must be encrypted via [TLS/SSL](/windows/win32/secauthn/cipher-suites-in-schannel) and current [cipher suites](server-cipher-tls-requirements.md). 
+4. **Secured connection**. The connection between customer engagement apps and Exchange<!--note from editor: Should this be "Exchange Server"?--> must be encrypted via [TLS/SSL](/windows/win32/secauthn/cipher-suites-in-schannel) and current [cipher suites](server-cipher-tls-requirements.md). 
 
-5. **Exchange Web Services (EWS)**. Connections to EWS must be allowed through the firewall. Often a reverse proxy is used for the exterior facing connection.  
+5. **Exchange Web Services (EWS)**. Connections to EWS must be allowed through the firewall. Often a reverse proxy is used for the exterior-facing connection.  
 
 > [!TIP]
->  To make sure you've got a good connection to [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] on-premises run the [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/). For information on what tests to run, see [Test mail flow with the Remote Connectivity Analyzer](https://technet.microsoft.com/library/dn305950\(v=exchg.150\).aspx).  
+> To make sure you've got a good connection to [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)]<!--note from editor: Should this be "Exchange Server"?--> (on-premises), run the [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/). For information about which tests to run, see [Test mail flow with the Remote Connectivity Analyzer](https://technet.microsoft.com/library/dn305950\(v=exchg.150\).aspx). 
+> 
+> To learn more about the protocols and ciphers used to secure the connection between Dynamics 365 and external email services, see [Server cipher suites and TLS requirements](server-cipher-tls-requirements.md).
+
+
+## Preview: Create an email server profile  
+
+
+1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment. 
+
+2. On the command bar, select **Settings** > **Email** > **Server profiles**.  
+    
+   > [!div class="mx-imgBorder"] 
+   > ![Screenshot of email server profile setting.](media/server-profile-settings.png "Email server profile setting")
+
+3. On the command bar, select **New server profile**.
+
+   > [!div class="mx-imgBorder"] 
+   > ![Screenshot of creating a new server profile.](media/new-server-profile.png "Create a new server profile")
+
+4. For **Email Server Type**, select **Exchange Server (On Prem)**, and then specify a meaningful **Name** for the profile.
+
+   > [!div class="mx-imgBorder"] 
+   > ![Screenshot of selecting the Exchange Server On Prem server profile](media/exchange-onprem-server-profile.png "Select Exchange Server On Prem server profile]")
+
+5. If you want to use this server profile as the default profile for new mailboxes, turn on **Set as default profile for new mailboxes**. 
+
+6. For **Authentication Type**, choose one of the following:
+
+    - **Credential specified in email server profile**: The credentials specified in the email server profile are used for sending or receiving email for the mailboxes of all users and queues associated with this profile. The credentials must have impersonation or delegation permissions on the mailboxes associated with the profile. This option requires some configuration on the email server, for example configuring impersonation rights on Exchange for the mailboxes associated with the profile.
+      > [!NOTE]
+      > To ensure the credentials are secured, SQL encryption is used to encrypt the credentials stored in the email server profile.<!--note from editor: I removed "...if you're processing email by using server-side synchronization" because this same note occurs in other topics without this extra wording. If using server-side synchronization is something the reader can choose not to do, and in such a case SQL encryption won't be used, this note should say something like "If you're processing email by using server-side synchronization, SQL encryption is used to encrypt the credentials stored in the email server profile to ensure that they're secured."-->
+    
+      > [!div class="mx-imgBorder"] 
+      > ![Screenshot of credentials specified in the email server profile.](media/server-profile-onprem-cred-server.png "Credential specified in email server profile")
+
+    - **Exchange Hybrid Modern Auth (HMA)**: To get the information for this option, follow the steps in [Hybrid Modern Authentication (HMA) for Exchange on-premises](connect-exchange-server-onprem-hma.md)
+        > [!div class="mx-imgBorder"] 
+        > ![Screenshot of Exchange Hybrid Modern Auth (HMA).](media/hma-auth.png "Exchange Hybrid Modern Auth (HMA)")
+
+7. Expand **Locations and ports**, and follow these steps:
+
+   - If **Authentication Type** is set to **Credential specified in email server profile**, select whether **Auto-discover server location** is **Active** or **Inactive**. <br><br> If you choose **Inactive**, enter the incoming and outgoing email server information. Enter the ports for the email server to use for accessing incoming and outgoing email. Select the protocol that will be used for authentication for incoming and outgoing email. 
+   
+      > [!div class="mx-imgBorder"] 
+      > ![Screenshot showing entering email server information.](media/auto-discover-server-location.png "Enter email server information")
+   
+   -  If **Authentication Type** is set to **Exchange Hybrid Modern Auth (HMA)**, enter the location and port for the email server.
+
+8. Expand the **Advanced** section, and then use the tooltips to choose your email processing options. 
+
+9. When you're done, select **Save**.
+
 
 ## Create an email server profile  
 
-1. In the Microsoft Power Platform admin center, select an environment. 
+1. Do one of the following: 
+
+   - In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment. 
+   - In the legacy web client in the upper-right corner, select ![Gear icon.](media/selection-rule-gear-button.png), and then select **Advanced settings**. 
 
 2. Select **Settings** > **Email** > **Server profiles**.  
 
@@ -85,17 +136,19 @@ With version 9.0., you can connect your customer engagement apps (Dynamics 365 S
 
 6. Select **Test Connection** and review the results. To diagnose issues, see the following section.  
 
-### Troubleshooting the Exchange Server (Hybrid) profile connection  
- If you've run **Test Connection** and have issues with the Exchange Server (Hybrid) profile connection, use the information in the **Test Connection** dialog box to diagnose and fix the connection.  
+### Troubleshooting the Exchange Server (Hybrid) profile connection
 
- ![Review the error messages](../admin/media/server-side-sync-exchange-hybrid-troubleshoot.png "Review the error messages")  
+ If you've run the **Test Connection** command and have issues with the Exchange Server (Hybrid) profile connection, use the information in the **Test Connection** dialog to diagnose and fix the connection.
 
- In this case, there's a problem with Auto Discover. The admin should review the user name and password used for **Authentication Using Impersonation** for the Exchange Server (Hybrid) profile.  
+ ![Screenshot of the Test Connection dialog with an issue with "Auto discovering server location" and details about the error in the Failure Details box.](../admin/media/server-side-sync-exchange-hybrid-troubleshoot.png "Review the error messages")  
 
- You can find information on recurring issues and other troubleshooting information in [Blog: Test and Enable Mailboxes in Microsoft Dynamics CRM 2015](https://blogs.msdn.com/b/crm/archive/2015/08/31/test-and-enable-mailboxes-in-microsoft-dynamics-crm-2015.aspx) and [Troubleshooting and monitoring server-side synchronization](../admin/troubleshooting-monitoring-server-side-synchronization.md).  
+ In this example, there was a problem with the auto-discover server location feature. Review the username and password used for **Authentication Using Impersonation** for the Exchange Server (Hybrid) profile.  
 
-## Configure default email processing and synchronization  
- Set server-side synchronization to be the default configuration method.  
+ You can find information about recurring issues and other troubleshooting information in [Blog: Test and Enable Mailboxes in Microsoft Dynamics CRM 2015](https://cloudblogs.microsoft.com/dynamics365/no-audience/2015/08/31/test-and-enable-mailboxes-in-microsoft-dynamics-crm-2015/)<!--note from editor: The other link resolved to the Dev Blogs home page.--> and [Troubleshooting and monitoring server-side synchronization](troubleshooting-monitoring-server-side-synchronization.md).  
+
+## Configure default email processing and synchronization
+
+Set server-side synchronization to be the default configuration method.  
 
 1. In the Power Platform admin center, select an environment. 
 
@@ -103,7 +156,7 @@ With version 9.0., you can connect your customer engagement apps (Dynamics 365 S
 
 3. Under **Synchronization methods**, set the processing and synchronization fields as follows:  
 
-   - **Server Profile**: The profile you created in the above section.  
+   - **Server Profile**: The profile you created in the preceding section.  
 
    - **Incoming Email**: Server-Side Synchronization or Email Router  
 
@@ -111,18 +164,20 @@ With version 9.0., you can connect your customer engagement apps (Dynamics 365 S
 
    - **Appointments, Contacts, and Tasks**: Server-Side Synchronization or Email Router  
 
-     If you leave the **Email processing form unapproved user and queues** at the default values (checked), you will need to approve emails and queues for user mailboxes as directed below in **Approve Email**.  
+     If you leave **Email processing for unapproved user and queues**<!--note from editor: Edit okay?--> at the default values (selected), you'll need to approve emails and queues for user mailboxes as directed in [**Approve email**](#approve-email), later in this topic.  
 
 4. Select **Save**.  
 
-## Configure mailboxes  
- To set mailboxes to use the default profile, you must first set the Server Profile and the delivery method for email, appointments, contacts, and tasks.  
+## Configure mailboxes
 
- In addition to administrator permissions, you must have Read and Write privileges on the Mailbox table to set the delivery method for the mailbox.  
+To set mailboxes to use the default profile, you must first set the server profile and the delivery method for email, appointments, contacts, and tasks.  
 
- Select **one** of the following methods:  
+In addition to administrator permissions, you must have Read and Write privileges on the Mailbox table to set the delivery method for the mailbox.  
 
-### Set mailboxes to the default profile  
+Choose *one* of the following methods: set mailboxes to the default profile, or edit mailboxes to set profile and delivery methods.
+
+<!--markdownlint-disable MD036--> 
+**To set mailboxes to the default profile**  
 
 1. In the Power Platform admin center, select an environment. 
 
@@ -132,11 +187,11 @@ With version 9.0., you can connect your customer engagement apps (Dynamics 365 S
 
 4. Select all the mailboxes that you want to associate with the [!INCLUDE[pn_Exchange_Server_short](../includes/pn-exchange-server-short.md)] profile you created, select **Apply Default Email Settings**, verify the settings, and then select **OK**.  
 
-   ![Apply default email settings](../admin/media/apply-default-email-settings.png "Apply default email settings")  
+   ![Screenshot of applying default email settings.](../admin/media/apply-default-email-settings.png "Apply default email settings")  
 
     By default, the mailbox configuration is tested and the mailboxes are enabled when you select **OK**.  
 
-### Edit mailboxes to set the profile and delivery methods  
+**To edit mailboxes to set the profile and delivery methods**  
 
 1. In the Power Platform admin center, select an environment. 
 
@@ -154,8 +209,9 @@ With version 9.0., you can connect your customer engagement apps (Dynamics 365 S
 
 8. Select **Change**.  
 
-## Approve email  
- You need to approve each user mailbox or queue before that mailbox can process email.  
+## Approve email
+
+You need to approve each user mailbox or queue before that mailbox can process email.  
 
 1. In the Power Platform admin center, select an environment. 
 
@@ -167,7 +223,7 @@ With version 9.0., you can connect your customer engagement apps (Dynamics 365 S
 
 5. Select **OK**.  
 
-## Test configuration of mailboxes  
+## Test the configuration of mailboxes  
 
 1. In the Power Platform admin center, select an environment. 
 
@@ -177,12 +233,12 @@ With version 9.0., you can connect your customer engagement apps (Dynamics 365 S
 
 4. Select the mailboxes you want to test, and then select **Test & Enable Mailboxes**.  
 
-    This tests the incoming and outgoing email configuration of the selected mailboxes and enables them for email processing. If an error occurs in a mailbox, an alert is shown on the Alerts wall of the mailbox and the profile owner. Depending on the nature of the error, customer engagement apps try to process the email again after some time or disables the mailbox for email processing.  
+   This tests the incoming and outgoing email configuration of the selected mailboxes and enables them for email processing. If an error occurs in a mailbox, an alert is shown on the **Alerts** wall of the mailbox and the profile owner. Depending on the nature of the error, customer engagement apps try to process the email again after some time or disable the mailbox for email processing.  
 
-    The result of the email configuration test is displayed in the **Incoming Email Status**, **Outgoing Email Status**, and **Appointments, Contacts, and Tasks Status** fields of a mailbox record. An alert is also generated when the configuration is successfully completed for a mailbox. This alert is shown to the mailbox owner.  
+   The result of the email configuration test is displayed in the **Incoming Email Status**, **Outgoing Email Status**, and **Appointments, Contacts, and Tasks Status** fields of a mailbox record. An alert is also generated when the configuration is successfully completed for a mailbox. This alert is shown to the mailbox owner.  
 
 > [!TIP]
->  If you're unable to synchronize contacts, appointments, and tasks for a mailbox, you may want to select the **Sync items with Exchange from this org only, even if Exchange was set to sync with a different org** check box. [Read more about this check box](when-would-want-use-check-box.md).  
+>  If you're unable to synchronize contacts, appointments, and tasks for a mailbox, you might want to select the **Sync items with Exchange from this org only, even if Exchange was set to sync with a different org** checkbox. More information: [When would I want to use this check box?](when-would-want-use-check-box.md) 
 
 ## Test email configuration for all mailboxes associated with an email server profile  
 
@@ -192,15 +248,16 @@ With version 9.0., you can connect your customer engagement apps (Dynamics 365 S
 
 3. Select the profile you created, and then select **Test & Enable Mailboxes**.  
 
-    When you test the email configuration, an asynchronous job runs in the background. It may take a few minutes for the test to be completed. Customer engagement apps test the email configuration of all the mailboxes associated with the [!INCLUDE[pn_Exchange_Server_short](../includes/pn-exchange-server-short.md)] profile. For the mailboxes configured with server-side synchronization for synchronizing appointments, tasks, and contacts, it also checks to make sure they're configured properly.  
+    When you test the email configuration, an asynchronous job runs in the background. It might take a few minutes for the test to be completed. Customer engagement apps test the email configuration of all the mailboxes associated with the [!INCLUDE[pn_Exchange_Server_short](../includes/pn-exchange-server-short.md)] profile. For the mailboxes configured with server-side synchronization for synchronizing appointments, tasks, and contacts, it also checks to make sure they're configured properly.  
 
 > [!TIP]
->  If you're unable to synchronize contacts, appointments, and tasks for a mailbox, you may want to select the **Sync items with Exchange from this org only, even if Exchange was set to sync with a different org** check box. [Read more about this check box](when-would-want-use-check-box.md).  
+>  If you're unable to synchronize contacts, appointments, and tasks for a mailbox, you might want to select the **Sync items with Exchange from this org only, even if Exchange was set to sync with a different org** checkbox. More information: [When would I want to use this check box?](when-would-want-use-check-box.md)  
 
-### See also  
- [Troubleshooting and monitoring server-side synchronization](../admin/troubleshooting-monitoring-server-side-synchronization.md)   
+### See also
+
+ [Troubleshooting and monitoring server-side synchronization](troubleshooting-monitoring-server-side-synchronization.md)   
  [Test mail flow with the Remote Connectivity Analyzer](https://technet.microsoft.com/library/dn305950\(v=exchg.150\).aspx)   
- [Server-side synchronization](../admin/server-side-synchronization.md)   
+ [Server-side synchronization](server-side-synchronization.md)   
  [Autodiscover service](https://technet.microsoft.com/library/bb124251\(v=exchg.150\).aspx)   
  [Managing the Autodiscover Service](https://technet.microsoft.com/library/aa995956\(v=exchg.141\).aspx)
 

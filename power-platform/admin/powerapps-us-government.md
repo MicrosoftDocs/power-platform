@@ -5,7 +5,8 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/01/2021
+ms.date: 10/21/2021
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -235,12 +236,13 @@ Previously, US Government customers needed to contact support before configuring
 Some of the features available in the commercial version of Power Apps are not available to Power Apps US Government customers. The Power Apps team is actively working on making the following features available to US Government customers and will update this article when these features become available:
 
 - Embed in [Power BI](/power-bi/).
+- [Test Studio](/powerapps/maker/canvas-apps/test-studio) is not available in government environments.
 
 - Ability to add apps to Teams using the [Add to Teams button](/powerapps/maker/canvas-apps/embed-teams-app).
 
 - [Connectors](https://gov.flow.microsoft.us/connectors/): The most popular connectors in use in our commercial service (based on usage telemetry) have been published; if there is a connector available in the commercial offering that you do not see deployed, contact support, and we will review your request. Note that third-party connectors will not be added to GCC High or DoD.  Features are being investigated with the Digital Loss Prevention (DLP) administration functionality that will enable Connectors to be added “blocked by default.”  Until this is possible, third-party connectors pose a measurable threat to organizations relying on the GCC High environment to maintain requisite data exfiltration controls.
 
-- [AI Builder](/ai-builder/).
+- [AI Builder](/ai-builder/) is not available in DoD.
 - [Geospatial features](/powerapps/maker/canvas-apps/geospatial-overview) are not available in government environments.
 
 ## Requesting support
@@ -250,7 +252,7 @@ Having a problem with your service? You can create a support request to get the 
 More information: [Contact Technical Support](get-help-support.md)
 
 ### See also
-[Microsoft Power Automate US Government](/flow/us-govt) <br />
+[Microsoft Power Automate US Government](/power-automate/us-govt) <br />
 [UI Flows](/power-automate/ui-flows/overview) <br />
 [Dynamics 365 US Government](./microsoft-dynamics-365-government.md)
 

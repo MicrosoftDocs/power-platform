@@ -8,6 +8,7 @@ ms.custom:
   - "admin-security"
   - "intro-internal"
 author: jimholtz
+ms.subservice: admin
 ms.author: jimholtz
 ms.reviewer: jimholtz
 search.audienceType: 

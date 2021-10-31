@@ -2,6 +2,7 @@
 title: "Create or edit a security role  | MicrosoftDocs"
 description: Create or edit a security role
 author: paulliew
+ms.subservice: admin
 ms.author: paulliew
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
@@ -129,16 +130,16 @@ When you import the solution, it creates the **min prv apps use** role which you
   
   -   Assign the min prv apps use security role or a copy of this security role to your user.
   
-  -   To render an entity grid (that is, to view lists of records and other data), assign the following privileges on the Core Records tab: Read privilege on the entity, Read Saved View, Create/Read/Write User Entity UI Settings
-      and assign the following privilege on the Business Management tab: Read User   
+  -   To render an table grid (that is, to view lists of records and other data), assign the following privileges on the Core Records tab: Read privilege on the table, Read Saved View, Create/Read/Write User Entity UI Settings
+      and assign the following privilege on the Business Management tab: Read User.   
 
 - When logging in to [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)]:
 
    - To render navigation for customer engagement apps and all buttons: assign the min prv apps use security role or a copy of this security role to your user   
   
-  - To render an entity grid: assign Read privilege on the entity  
+  - To render an table grid: assign Read privilege on the table  
   
-  - To render entities: assign Read privilege on the entity  
+  - To render tables: assign Read privilege on the table  
   
 ## Privacy notices  
 [!INCLUDE[cc_privacy_crm_for_phones](../includes/cc-privacy-crm-for-phones.md)]

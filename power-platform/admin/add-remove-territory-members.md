@@ -6,6 +6,7 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/30/2017
 author: jimholtz
+ms.subservice: admin
 ms.author: jimholtz
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
@@ -37,7 +38,7 @@ To accommodate changes in sales territories or the representatives that are assi
   
    1.  On the ribbon, choose **Add Members**, view the text in the **Message from webpage** dialog box, and then choose **OK** to close the dialog box.  
   
-   2.  In the **Look Up Records** dialog box, in the **Search** text box, type in the name or a part of the name of the user you want to add to the sales territory, and then choose the **Start search** icon ![54934](../admin/media/search-button.png "54934").  
+   2.  In the **Look Up Records** dialog box, in the **Search** text box, type in the name or a part of the name of the user you want to add to the sales territory, and then choose the **Start search** icon ![54934.](../admin/media/search-button.png "54934").  
   
    3.  In the list of records, select the people you want to add to the sales territory, and then tap or click **Add**.  
   
@@ -51,7 +52,7 @@ To accommodate changes in sales territories or the representatives that are assi
        >  When you remove someone from a sales territory, the updated list of members isn't displayed until you refresh the page.  
   
 ### See also  
- [Manage users](../admin/create-users-assign-online-security-roles.md)   
+[Create users](create-users.md)
 
 
 

@@ -6,6 +6,7 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/17/2021
 author: tjvass
+ms.subservice: admin
 ms.author: tjvass
 ms.reviewer: jimholtz 
 search.audienceType: 
@@ -78,7 +79,7 @@ This task requires the system administrator or customizer security role or equiv
   
 ## Set specific areas of the product to audit
 
-1. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+1. In the web app, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
 
 2. Select **Settings** > **Administration**.
   
@@ -105,12 +106,13 @@ System administrators can see activity for the entities that are enabled for aud
   
    - Select **Enable/Disable Filters** to turn on filtering. Then, you can filter on a specific event, such as **Delete** actions.  
    - Choose an event to view specific details about the activity, such as field changes that were made during an update to a record and who performed the update.  
-   - Select the **Refresh** button  ![Refresh button](media/html-viewer-grid-refresh.png "Refresh button") to view the most recent activity. 
+   - Select the **Refresh** button  ![Refresh button.](media/html-viewer-grid-refresh.png "Refresh button") to view the most recent activity. 
 
 > [!IMPORTANT]
 > Large attribute values, such as [Email.description](/powerapps/developer/common-data-service/reference/entities/email) or [Annotation](/powerapps/developer/common-data-service/reference/entities/annotation), are limited (capped) at 5KB or ~5,000 characters. A capped attribute value can be recognized by three dots at the end of the text, for example, “lorem ipsum, lorem ip…”.
 
 ## Enable or disable entities and fields for auditing  
+
 System administrators or customizers can change the default audit settings for entities and for specific fields for an entity.  
   
 ### Enable or disable auditing for an entity  

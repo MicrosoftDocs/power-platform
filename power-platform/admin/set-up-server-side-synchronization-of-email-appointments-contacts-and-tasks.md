@@ -4,8 +4,9 @@ description: Set up server-side synchronization of email, appointments, contacts
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/10/2020
+ms.date: 07/12/2021
 author: revachauhan
+ms.subservice: admin
 ms.author: rechauha
 ms.reviewer: mkaur
 search.audienceType: 

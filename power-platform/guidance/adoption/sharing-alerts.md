@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/10/2020
+ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -38,7 +39,7 @@ The [CoE Starter Kit](../coe/starter-kit.md), a collection of templates, compone
 
 - Find out who an app is shared with, what roles (edit or view) the users have and—for groups—what the group size is.
 
-  ![Find out who an app is shared with](/power-platform/guidance/coe/media/coe-mda2.png "Find out who an app is shared with")
+  ![Find out who an app is shared with.](/power-platform/guidance/coe/media/coe-mda2.png "Find out who an app is shared with")
     
 - Identify [widely shared apps](../coe/power-bi-govern.md#identify-widely-shared-apps).
 

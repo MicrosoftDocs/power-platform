@@ -2,7 +2,7 @@
 title: "Advanced AI features"
 description: "Use advanced AI features in Power Virtual Agents to improve how your bots interact with your bot users."
 keywords: "PVA, AI, advanced, topic intent, intent triggering"
-ms.date: 3/1/2021
+ms.date: 7/27/2021
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -11,7 +11,13 @@ manager: shellyha
 ms.custom: "advanced-authoring, ceX"
 ms.collection: virtual-agent
 ---
-# AI capabilities in Power Virtual Agents
+# Enable advanced AI features in Power Virtual Agents
+
+Select the version of Power Virtual Agents you're using here:
+
+> [!div class="op_single_selector"]
+> - [Power Virtual Agents web app](advanced-ai-features.md)
+> - [Power Virtual Agents app in Microsoft Teams](teams/advanced-ai-features-teams.md)
 
 ## AI models in Power Virtual Agents - background
 
@@ -30,11 +36,17 @@ These tips for creating tooltips are described in the tooltip associated with th
 
 ![Screenshot of the trigger phrase section in the topic details page.](media/advanced-ai-features/trigger-phrase-tooltip.png)
 
-There are some specific features that further improve how the AI in Power Virtual Agents understands what your bot users are asking, and how the AI provides answers.
-
 
 >[!NOTE]
 >The AI capabilities listed in this topic are in preview, available to bots created with English as the set language.
+
+## Advanced AI features overview
+
+There are some specific features that further improve how the AI in Power Virtual Agents understands what your bot users are asking, and how the AI provides answers. The following video provides an overview of these features, each of which is described in further detail on this page.  
+
+>  
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWKo4a]
+>   
 
 
 ## Topic overlap detection (preview)

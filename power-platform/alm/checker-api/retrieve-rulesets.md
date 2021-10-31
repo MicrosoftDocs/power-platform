@@ -12,6 +12,7 @@ applies_to:
 ms.assetid: 23c9391c-1697-47a3-a8f2-eedd5c862874
 caps.latest.revision: 21
 author: "mhuguet" # GitHub ID
+ms.subservice: alm
 ms.author: "mhuguet"
 ms.reviewer: "pehecke"
 manager: "maustinjones"

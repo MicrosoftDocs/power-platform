@@ -4,8 +4,9 @@ description: Explains how Power Apps and Power Automate be made widely available
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/16/2020
+ms.date: 09/16/2021
 author: jimholtz
+ms.subservice: admin
 ms.author: jimholtz
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
@@ -114,9 +115,9 @@ For customers with Azure AD Premium, conditional access policies can be defined 
 
 #### FAQ
 
-Q: Can I control, on the tenant level, which connector is at all available, for example No to Dropbox or Twitter but Yes to SharePoint)?
+Q: Can I control, on the tenant level, which connector is at all available, for example No to Dropbox or Twitter but Yes to SharePoint?
 
-A: This is not possible. Customers can subscribe to Audit events to do corrective action if there are flows that have been built that create concerns for customers. In fact, a very large Power Apps customer has leveraged this approach to apply another level of governance.
+A: This is possible by utilizing the [connectors classification](dlp-connector-classification.md) capabilities and assigning the **Blocked** classifier to one or more connectors that you want to keep from being used. Note that there are a [set of connectors that can’t be blocked](dlp-connector-classification.md#list-of-connectors-that-cant-be-blocked). 
  
 Q: What about Sharing connectors between users? For example, the connector for Teams is a general one that can be shared?
 
@@ -128,8 +129,8 @@ In addition to monitoring, many customers want to subscribe to software creation
 
 ### Build Power Automate flows to alert on key audit events
 
-1.    An example of alerting that can be implemented is subscribing to Microsoft 365 Security and Compliance Audit Logs. 
-2.    This can be achieved through either a [webhook](https://preview.flow.microsoft.com/blog/automate-flow-governance/) subscription or [polling](https://preview.flow.microsoft.com/blog/accessing-office-365-security-compliance-center-logs-from-microsoft-flow/) approach. However, by attaching Power Automate to these alerts, we can provide administrators with more than just email alerts.
+1. An example of alerting that can be implemented is subscribing to Microsoft 365 Security and Compliance Audit Logs. 
+2. This can be achieved through either a [webhook](https://preview.flow.microsoft.com/blog/automate-flow-governance/) subscription or [polling](https://preview.flow.microsoft.com/blog/accessing-office-365-security-compliance-center-logs-from-microsoft-flow/) approach. However, by attaching Power Automate to these alerts, we can provide administrators with more than just email alerts.
 
 ### Build the policies you need with Power Apps, Power Automate, and PowerShell
 

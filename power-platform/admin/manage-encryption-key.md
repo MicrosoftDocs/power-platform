@@ -4,8 +4,9 @@ description: "Learn how you can manage database encryption key for your environm
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/17/2021
+ms.date: 06/10/2021
 author: Mattp123
+ms.subservice: admin
 ms.author: miferlan
 ms.reviewer: matp
 ms.custom: "admin-security"
@@ -30,7 +31,7 @@ All environments of Microsoft Dataverse use [!INCLUDE[pn_MS_SQL_Server](../inclu
 > Self-managed database encryption keys are only available for customers who have more than 1000 Power Apps per user licenses and/or Dynamics 365 Enterprise licenses (or a combination of these) and who have opted in to the feature.  To opt in to this program, submit a [support request](./support-overview.md#using-support).
 >
 > Encryption key management is only applicable to Azure SQL environment databases. The following features and services use their own key to encrypt their data and can't be encrypted with the self-managed encryption key:
-> - Relevance Search
+> - Dataverse search
 > - Mobile Offline
 > - Activity Log (Microsoft 365 portal)
 > - Exchange (Server-side sync)
@@ -38,9 +39,9 @@ All environments of Microsoft Dataverse use [!INCLUDE[pn_MS_SQL_Server](../inclu
 > Note the following: 
 > - The self-manage database encryption key feature must be turned on by Microsoft for your tenant before you can use the feature.  
 > - To use the data encryption management features for an environment, the environment must be created *after* the self-manage the database encryption key feature is turned on by Microsoft.  
-> - Encryption key management cannot be applied to environments that have data stored in [File](/powerapps/maker/common-data-service/types-of-fields#file-fields) and [Image](/powerapps/maker/common-data-service/types-of-fields#image-fields) fields. 
+> - Support of [File](/powerapps/developer/data-platform/file-attributes) and [Image](/powerapps/developer/data-platform/image-attributes) with size < 128MB can be enabled if your environment has version 9.2.21052.00103 or higher.
 > - A majority of existing environments have file and log stored in non-Azure SQL databases. These environments cannot be opted in to self-managed encryption key. Only new environments (once you signed up for this program) can be enabled with self-managed encryption key.
-  
+
 <a name="KM_tasks"></a>   
 ## Introduction to key management  
  With key management, administrators can provide their own encryption key or have an encryption key generated for them, which is used to protect the database for an environment.  
@@ -235,18 +236,18 @@ To unlock environments you must first [upload](#upload-a-key-pfx-or-byok) and th
 1. Select the **Environments** tab, and then select the locked environment name. 
     > [!TIP]
     > Don't select the row. Select the environment name. 
-    ![Open environment to view settings](media/open-environment-settings.png)
+    ![Open environment to view settings.](media/open-environment-settings.png)
 
 2. In the **Details** section, select **See all** to display the **Details** pane on the right. 
 3. In the **Environment** encryption section on the **Details** pane select **Manage**. 
 
      > [!div class="mx-imgBorder"] 
-     > ![Environment-details-pane](media/details-pane.png "Environment details pane")
+     > ![Environment-details-pane.](media/details-pane.png "Environment details pane")
 
 4. On the **Environment encryption** page select **Unlock**. 
 
      > [!div class="mx-imgBorder"] 
-     > ![Unlock environment](media/unlock-environment.png "Unlock environment")
+     > ![Unlock environment.](media/unlock-environment.png "Unlock environment")
 
 5. Select **Confirm** to confirm that you want to unlock the environment. 
 6. Repeat the previous steps to unlock additional environments. 
@@ -261,13 +262,13 @@ A customer tenant can have environments that are encrypted using the Microsoft m
    The environment to overwrite (the restored to environment) is restricted to the same environment that the backup was taken from or to another environment that is encrypted with the same customer managed key. 
 
    > [!div class="mx-imgBorder"] 
-   > ![Restore backup](media/cmk-restore-backup.png "Restore backup")
+   > ![Restore backup.](media/cmk-restore-backup.png "Restore backup")
 
 2. [Copy](copy-environment.md)
    The environment to overwrite (the copied to environment) is restricted to another environment that is encrypted with the same customer managed key. 
 
    > [!div class="mx-imgBorder"] 
-   > ![Copy environment](media/cmk-copy-environment.png "Copy environment")
+   > ![Copy environment.](media/cmk-copy-environment.png "Copy environment")
 
    > [!NOTE]
    > If a Support Investigation environment was created to resolve support issue in a customer managed environment, the encryption key for the Support Investigation environment must be changed to customer managed key before the Copy environment operation can be performed. 

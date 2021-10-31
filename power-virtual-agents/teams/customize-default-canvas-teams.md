@@ -36,20 +36,20 @@ and the bot name at any time, and add a long and short description when you publ
 
 1. On the side navigation pane, select **Manage** and then **Details**.
 
-    :::image type="content" source="media/custom-canvas-details-teams.png" alt-text="The Details tab is found in the Manage section on the side navigation pane":::
+    :::image type="content" source="media/custom-canvas-details-teams.png" alt-text="The Details tab is found in the Manage section on the side navigation pane.":::
 
 2. Make changes to the **Bot name** and bot avatar icon.  
     The avatar icon needs to be an image type and can be any size - it will be automatically resized and positioned so it is in the middle of the colored square. 
     We recommend you use a 32x32 pixel or 64x64 pixel .png file with transparency, so that way the color will come through the icon.
     
 >[!NOTE]
->Setting the bot avatar icon will not show up for bots that are approved by an admin. Bots approved by an admin will use the Teams app icon as the bot avatar. Learn more on [sharing the bot with organization](publication-add-bot-to-microsoft-teams-teams.md#share-the-bot-with-your-organization). 
+>Setting the bot avatar icon will not show up for bots that are approved by an admin. Bots approved by an admin will use the Teams app icon as the bot avatar. Learn more on [sharing the bot with organization](publication-add-bot-to-microsoft-teams-teams.md#show-the-bot-in-microsoft-teams-app-store). 
     
 
 
 3. When you're finished, select **Save** on the top menu bar.
     
-    :::image type="content" source="media/custom-canvas-save-teams.png" alt-text="Save is at the top of the window":::
+    :::image type="content" source="media/custom-canvas-save-teams.png" alt-text="Save is at the top of the window.":::
 
 4. Select **Reset** to revert your changes to the previously saved version.
 

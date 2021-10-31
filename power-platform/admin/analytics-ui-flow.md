@@ -14,6 +14,7 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/01/2021
+ms.subservice: admin
 ms.author: DeonHe
 search.app: 
   - Flow
@@ -52,19 +53,19 @@ To access the reports:
 
 1. Select the **Settings** icon > **Admin Center**.
 
-   ![A screenshot that displays the settings icon and the admin center link](./media/analytics-ui-flow/settings-admin-center.png)
+   ![A screenshot that displays the settings icon and the admin center link.](./media/analytics-ui-flow/settings-admin-center.png)
 
 1. Expand **Analytics**, and then select **Power Automate**.
 
-   ![A screenshot of the steps to view the Power Automate analytics](./media/analytics-ui-flow/analytics-pa.png)
+   ![A screenshot of the steps to view the Power Automate analytics.](./media/analytics-ui-flow/analytics-pa.png)
 
 1. Select **Desktop flows**.
 
-   ![A screenshot that shows the desktop flows tab selected](./media/analytics-ui-flow/select-ui-flows.png)
+   ![A screenshot that shows the desktop flows tab selected.](./media/analytics-ui-flow/select-ui-flows.png)
 
 1. View the reports.
 
-   ![A screenshot of the analytics reports](./media/analytics-ui-flow/runs.png)
+   ![A screenshot of the analytics reports.](./media/analytics-ui-flow/runs.png)
 
 
 ## Filter your view
@@ -73,13 +74,13 @@ You can filter your view to display reports from a specific **environment** or f
 
 1. Select the filter icon.
 
-   ![A screenshot of the filter icon](./media/analytics-ui-flow/select-filter.png)
+   ![A screenshot of the filter icon.](./media/analytics-ui-flow/select-filter.png)
 
 1. Expand the **Environment** list, and then select the environment for which you'd like to view reports.
 
 1. Expand the **Time period** list, and then select the number of days for which you'd like to view reports.
 
-   ![A screenshot that shows the filters that you can use to manage the reports that you view](./media/analytics-ui-flow/filter.png)
+   ![A screenshot that shows the filters that you can use to manage the reports that you view.](./media/analytics-ui-flow/filter.png)
 
 1. Select **Apply**.
 
@@ -87,23 +88,23 @@ You can filter your view to display reports from a specific **environment** or f
 
 1. Select **Runs**.
 
-   ![A screenshot of the desktop flow runs reports tab](./media/analytics-ui-flow/select-runs.png)
+   ![A screenshot of the desktop flow runs reports tab.](./media/analytics-ui-flow/select-runs.png)
 
 1. [Filter](#filter-your-view) the view to display the **Runs** reports from a specific environment and for a specific time period. 
 
 
-   ![A screenshot of the desktop flow runs reports](./media/analytics-ui-flow/runs.png)
+   ![A screenshot of the desktop flow runs reports.](./media/analytics-ui-flow/runs.png)
 
 ## View the usage report
 
 1. Select **Usage**.
 
-   ![A screenshot of the desktop flow usage reports tab](./media/analytics-ui-flow/select-usage.png)
+   ![A screenshot of the desktop flow usage reports tab.](./media/analytics-ui-flow/select-usage.png)
 
 
 1. [Filter](#filter-your-view) the view to display the **Usage** reports from a specific environment and for a specific time period. 
 
-   ![A screenshot of the desktop flow usage reports](./media/analytics-ui-flow/usage-ppac.png)
+   ![A screenshot of the desktop flow usage reports.](./media/analytics-ui-flow/usage-ppac.png)
 
 ## View the created report
 
@@ -112,11 +113,11 @@ You can filter your view to display reports from a specific **environment** or f
 
 1. Select **Created**.
 
-   ![A screenshot of the desktop flow created reports tab](./media/analytics-ui-flow/select-created.png)
+   ![A screenshot of the desktop flow created reports tab.](./media/analytics-ui-flow/select-created.png)
 
 1. [Filter](#filter-your-view) the view to display the **Created** reports from a specific environment and for a specific time period. 
 
-   ![A screenshot of the desktop flow created reports](./media/analytics-ui-flow/created-ppac.png)
+   ![A screenshot of the desktop flow created reports.](./media/analytics-ui-flow/created-ppac.png)
 
 
 ## Learn more

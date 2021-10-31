@@ -1,0 +1,47 @@
+### YamlMime:FAQ
+metadata:
+  title: Frequently asked questions about model-driven app form ALM with Power Apps
+  description: Get answers to frequently asked questions about model-driven app form ALM with Power Apps.
+  author: Mattp123
+  ms.subservice: alm
+  ms.service: powerapps
+  ms.search.keywords: 
+  ms.date: 06/28/2021
+  ms.author: matp
+  ms.reviewer: matp
+title: Model-driven app form ALM FAQ
+summary: This article provides information on frequently asked questions about application lifecycle management with model-driven app forms.
+sections:
+- name: General
+  questions:
+   - question: How to recognize when a form is in a managed or unmanaged state? 
+     answer: |
+          In the customization settings, check the **State** column next to the form to know if it is in a managed state. A managed form has managed solutions installed for the form and may or may not have active unmanaged customizations. Or the form may be in an unmanaged state and has only a unmanaged layer for the form and no managed solutions.
+          ![Form state](media/form-state.png)
+   - question: How to create a form? 
+     answer: | 
+          Use the modern form designer. More information: [Create and design model-driven app forms](/powerapps/maker/model-driven-apps/create-design-forms)
+   - question: Why do form label translations not appear for base language?
+     answer: |
+             On translation export, if no changes were made to the base language label, no translations will be exported in CrmTranslations.xml. On translation import, if translations for any label in the base language column were changed in CrmTranslations.xml, the changes won't take effect. More information: [Form label translations don't appear specifically for the base language](/powerapps/maker/data-platform/translate-entity-label-text#form-label-translations-dont-appear-specifically-for-the-base-language)
+   - question: Why is there an active unmanaged layer created after importing a managed solution?
+     answer: |
+              If during import there isn't a fallback form specified for a table, then the import creates an unmanaged active layer for one of the main forms and the unmanaged customization indicates the form as the fallback form. More information: [There's an active unmanaged layer created after importing a managed solution](/powerapps/maker/data-platform/import-update-export-solutions#troubleshooting-solution-import)
+   - question: Why does the form not appear in the target environment after importing a solution containing the form?
+     answer: |
+              During export of unmanaged solutions, some forms that aren't modified get exported with the attribute unmodified=1 in the form XML of the customizations.xml file located in the solution package. More information: [The form doesn't appear in target environment after importing the unmanaged solution](/powerapps/maker/data-platform/import-update-export-solutions#troubleshooting-solution-import)
+   - question: Why do receive the message Full formXml is expected to create a form during solution import?
+     answer: |
+              This error can occur when the form you are importing doesn’t exist in the target environment and the form is imported for the first time. More information: [Microsoft.Crm.CrmInvalidOperationException: full formXml is expected to create a form message during solution import](/powerapps/maker/data-platform/import-update-export-solutions#troubleshooting-solution-import)
+   - question: Why do I receive the message You cannot delete this form because it is the only fallback form of type main for the 'table' table. Each table must have at least one fallback form for each form type during solution upgrade or uninstall?
+     answer: |
+              This error occurs when a solution upgrade or uninstall attempts to delete the last remaining form for a table. More information: [Microsoft.Crm.CrmException: You cannot delete this form because it is the only fallback form of type main for the 'table' table. Each table must have at least one fallback form for each form type message during solution upgrade or uninstall](/powerapps/maker/data-platform/import-update-export-solutions#troubleshooting-solution-import)
+   - question: Why do I receive the message Solution cannot be deleted due to dependencies from other components in the system message when uninstalling a solution?
+     answer: |
+              This issue can occur when the solution contains components that are referenced by other solutions on top of it in the layer stack. More information: [Solution cannot be deleted due to dependencies from other components in the system message when uninstalling a solution](/powerapps/maker/data-platform/import-update-export-solutions#troubleshooting-solution-import)
+additionalContent: |
+
+  ### See also
+
+  [Maintaining healthy model-driven app form ALM](form-alm.md)
+  [Recommendations for healthy form ALM](form-alm-recommendations.md)

@@ -154,11 +154,49 @@
           href: coe/use-innovationbacklog.md 
         - name: Use the ALM Accelerator for Makers
           href: coe/almaccelerator-components.md
+        - name: Environment management
+          href: coe/env-mgmt.md
     - name: Limitations
       href: coe/limitations.md
     - name: Release notes
       href: coe/release-notes.md
     - name: Feedback and support
       href: coe/feedback-support.md
+  - name: Real-world architecture examples
+    items: 
+    - name: Overview
+      href: architecture/real-world-examples/overview.md
+    - name: Using the SharePoint connector with canvas apps
+      href: architecture/real-world-examples/sharepoint-canvas.md
+    - name: Using Dataverse with canvas apps
+      href: architecture/real-world-examples/dataverse-canvas-app.md    
+    - name: Using Azure functions to extend a canvas app
+      href: architecture/real-world-examples/azure-function-canvas.md
+    - name: Using REST APIs through custom connectors with canvas apps
+      href: architecture/real-world-examples/custom-connector-canvas.md
+    - name: Using business process flows, Dataverse, custom connectors, and Power Automate with canvas apps
+      href: architecture/real-world-examples/bpf-dataverse-powerautomate.md
+    - name: Using on-premises SQL Server with canvas apps
+      href: architecture/real-world-examples/sql-gateway-canvas.md
+    - name: Using Power Apps component framework with canvas apps
+      href: architecture/real-world-examples/pcf-canvas-components.md
+  - name: Use ExpressRoute
+    items: 
+    - name: Overview     
+      href: expressroute/overview.md
+    - name: Benefits of using ExpressRoute    
+      href: expressroute/benefits.md
+    - name: How ExpressRoute works     
+      href: expressroute/how-expressroute-works.md
+    - name: Before you use ExpressRoute 
+      href: expressroute/things-to-consider.md
+    - name: Understand Microsoft Power Platform architecture 
+      href: expressroute/understanding-architecture.md
+    - name: Plan an ExpressRoute deployment
+      href: expressroute/planning-expressroute.md
+    - name: Set up ExpressRoute for Microsoft Power Platform
+      href: expressroute/setup.md
+    - name: ExpressRoute readiness checklist
+      href: expressroute/checklist.md
   - name: Icons
     href: icons.md

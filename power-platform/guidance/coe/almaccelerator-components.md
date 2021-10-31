@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/18/2021
+ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -30,7 +31,7 @@ Makers can use the ALM Accelerator for Makers app to view all their projects, an
 1. On the left pane, select **Solutions**.
 1. Select the **Power Platform GitHub ALM** solution, and then select **ALM Accelerator for Makers**. You might need to open the app in a private browser session if the app fails to load.
 
-![ALM Accelerator for Makers app](media/git-23.png "ALM Accelerator for Makers app")
+![ALM Accelerator for Makers app.](media/git-23.png "ALM Accelerator for Makers app")
 
 The app dashboard shows all projects created by your user.
 
@@ -39,17 +40,17 @@ The app dashboard shows all projects created by your user.
 - Select **New Project** to create your first project.
 - Enter a name and description (optional), and then select **Create Project**.
 
-![Request approval for a new project](media/git-26.png "Request approval for a new project")
+![Request approval for a new project.](media/git-26.png "Request approval for a new project")
 
 When a user submits this request, an Approval request is sent to a predefined administrator. The admin will review the request, and approve or reject it. After a project is created and approved, go to the maker portal to build and create resources (apps, flows, tables, and so on) under the newly created solution for your project.
 
-![Admins can approve or reject new project requests](media/git-27.png "Admins can approve or reject new project requests")
+![Admins can approve or reject new project requests.](media/git-27.png "Admins can approve or reject new project requests")
 
 ## Create an environment and GitHub repository
 
 When an administrator approves a project, a new environment with a Dataverse database is created. This environment is dedicated to the maker and their solution. By default, this developer environment is set to expire in 30 days, but users can request an extension.  
 
-![When an administrator approves a project, a new environment with a Dataverse database is created. ](media/git-28.png "When an administrator approves a project, a new environment with a Dataverse database is created. ")
+![When an administrator approves a project, a new environment with a Dataverse database is created.](media/git-28.png "When an administrator approves a project, a new environment with a Dataverse database is created.")
 
 A GitHub repository is also created. This repository will be used to persist all of the resources of the project contained in the solution.
 
@@ -57,37 +58,37 @@ A GitHub repository is also created. This repository will be used to persist all
 
 When a project is approved, the **Deploy** button is activated and a link to the solution is shown. A user can go to the maker portal directly and open their solution in the newly created environment.
 
-![When a project is approved, the Deploy button is activated](media/git-30.png "When a project is approved, the Deploy button is activated")
+![When a project is approved, the Deploy button is activated.](media/git-30.png "When a project is approved, the Deploy button is activated")
 
 ## Deploy your project to test
 
 A maker can deploy to a test environment at any point during their development phase. No approval is required for a maker to deploy a test environment. When deploying to test, the solution for this project is also checked in to the GitHub repository under a developer branch.
 
-![Deploy your project to test](media/git-31.png "Deploy your project to test")
+![Deploy your project to test.](media/git-31.png "Deploy your project to test")
 
 ## View deployment status
 
 ALM Accelerator for Makers will show the status of the deployment. When a deployment is completed or fails, both the admin and the app maker will receive an email notification with the details. If the deployment is successful, the notification email will have links to the environment where the solution has been deployed.  
 
-![View deployment status in ALM Accelerator for Makers](media/git-32.png "View deployment status in ALM Accelerator for Makers")
+![View deployment status in ALM Accelerator for Makers.](media/git-32.png "View deployment status in ALM Accelerator for Makers")
 
 ## View build details
 
 Admins can monitor progress step by step on the **Actions** tab of the GitHub repo. They can also check out the cloud flows used to orchestrate the deployment.
 
-![View build details in Github](media/git-33.png "View build details in Github")
+![View build details in Github.](media/git-33.png "View build details in Github")
 
 ## Deploy your project to production
 
 Before a maker can deploy their project to production, the project must have been successfully deployed to the test environment. An approval from an administrator is required to deploy to a production environment. When deploying to test, a pull request is created and when the deployment request is approved, the solution for the project is merged into the main branch in the GitHub repo.
 
-![Deploy your project to production](media/git-34.png "Deploy your project to production")
+![Deploy your project to production.](media/git-34.png "Deploy your project to production")
 
 ## View deployment history
 
 Makers can check the deployment history for their project by navigating to the detail pages for their project (by using the **>** arrow).
 
-![View deployment history](media/git-35.png "View deployment history")
+![View deployment history.](media/git-35.png "View deployment history")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
