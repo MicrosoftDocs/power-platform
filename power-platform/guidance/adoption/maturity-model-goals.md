@@ -1,6 +1,6 @@
 ---
 title: "Power Platform adoption maturity model: Goals and Opportunities - Microsoft Power Platform | MicrosoftDocs"
-description: "Microsoft has have identified consistent themes, patterns, practices and behaviors that underpin the progress of successful organizations as they implement comprehensive digital transformation with Power Platform. This article describes goals and opportunities per maturity stage."
+description: "Microsoft has identified consistent themes, patterns, practices and behaviors that underpin the progress of successful organizations as they implement comprehensive digital transformation with Power Platform. This article describes goals and opportunities per maturity stage."
 author: manuelap-msft
 ms.service: power-platform
 ms.subservice: guidance
