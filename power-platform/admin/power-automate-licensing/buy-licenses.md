@@ -55,7 +55,7 @@ You can purchase the **Power Automate unattended RPA Trial add-on** from the [Mi
 
    ![Power Automate unattended RPA add-on Trial add on](../media/power-automate-licensing/add-ons-details.png)
 
-After purchase completes, the environment admin must assign the available (paid or trial) unattended add-on capacities to a specific environment in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+After the purchase completes, the environment admin must assign the available (paid or trial) unattended add-on capacities to a specific environment in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
 ## Manage licenses
 
