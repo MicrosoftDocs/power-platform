@@ -1,12 +1,11 @@
 ---
-title: "Power Platform Adoption Maturity Model - Goals and Opportunities - Microsoft Power Platform | MicrosoftDocs"
-description: "Microsoft has have identified consistent themes, patterns, practices and behaviors that underpin the progress of successful organizations as they implement comprehensive digital transformation with Power Platform. This article describes goals and opportunities per maturity stage."
+title: "Power Platform adoption maturity model: Detailed capabilities - Microsoft Power Platform | MicrosoftDocs"
+description: "This article describes detailed capabilities in the Power Platform adoption maturity model."
 author: manuelap-msft
-manager: devkeydet
 ms.service: power-platform
-ms.component: pa-admin
+ms.subservice: guidance
 ms.topic: conceptual
-ms.date: 06/20/2020
+ms.date: 10/31/2021
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -16,13 +15,13 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Power Platform Adoption Maturity Model: Detailed capabilities
+# Power Platform adoption maturity model: Detailed capabilities
 
-The goal of the Adoption Maturity Model is to help define a roadmap for Power Platform adoption. The roadmap presents a series of strategic and tactical considerations and action items that directly lead to successful Power Platform adoption.
+The goal of the adoption maturity model is to help define a roadmap for Power Platform adoption. The roadmap presents a series of strategic and tactical considerations and action items that directly lead to successful Power Platform adoption.
 
 Advancing adoption and cultivating a low-code culture is about more than implementing technology features. Technology can assist an organization in making the greatest impact, but a healthy low-code culture involves a lot of considerations across the spectrum of people, processes, and technology.
 
-The aim of the Adoption Maturity Model is to provide organizations and their partners with a way to think through how they can improve their capabilities and decide which capabilities matter most to them. Each stage describes the states of individual disciplines such as Strategy & Vision, Administration, Governance, etc. The purpose of the model is to help organizations understand their capabilities along multiple dimensions on a clearly defined scale, decide which level they would like to achieve for each dimension and in what time frame, and improve their capabilities in tangible ways by progressing to the next level.
+The aim of the adoption maturity model is to provide organizations and their partners with a way to think through how they can improve their capabilities and decide which capabilities matter most to them. Each stage describes the states of individual disciplines such as Strategy & Vision, Administration, Governance, etc. The purpose of the model is to help organizations understand their capabilities along multiple dimensions on a clearly defined scale, decide which level they would like to achieve for each dimension and in what time frame, and improve their capabilities in tangible ways by progressing to the next level.
 
 Find below detailed characteristics and capabilities of an organization in each stage:
 
@@ -97,7 +96,7 @@ Find below detailed characteristics and capabilities of an organization in each 
 | 500: Leading |<ul><li>Teams form seamlessly to accommodate cross functional skills</li><li>Common development strategy and goals for Citizen and Pro developers needed for new projects</li></ul>  |
 
 > [!NOTE]
-> You can download a printable version from [this link](https://go.microsoft.com/fwlink/?linkid=2174946).
+> You can download a printable version [here](https://go.microsoft.com/fwlink/?linkid=2174946).
 
 <!--
 |  |LEVEL 100 - INITIAL   |LEVEL 200 - REPEATABLE|LEVEL 300 - DEFINED|LEVEL 400 - CAPABLE|LEVEL 500 - EFFICIENT|
@@ -120,11 +119,11 @@ A common misconception is that adoption relates primarily to usage or the number
 Whenever possible, adoption efforts should be aligned across low-code platforms, and other Power Platform products, such as Power BI.
 
 > [!NOTE]
-> Individuals—and the organization itself—are continually learning, changing, and improving. That means there's no formal end to adoption-related efforts.
+> Individuals and the organization itself are continually learning, changing, and improving. That means there's no formal end to adoption-related efforts.
 
 ## Target audience
 
-The intended audience of the Adoption Maturity Model is interested in one or more of the following outcomes:
+The intended audience of the adoption maturity model is interested in one or more of the following outcomes:
 
 - Improving their organization's ability to effectively use Power Platform.
 - Increasing their organization's maturity level related to Power Platform delivery.

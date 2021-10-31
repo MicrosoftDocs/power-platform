@@ -1,6 +1,6 @@
 ---
 title: "Power Platform adoption maturity model: Goals and Opportunities - Microsoft Power Platform | MicrosoftDocs"
-description: "Microsoft has identified consistent themes, patterns, practices and behaviors that underpin the progress of successful organizations as they implement comprehensive digital transformation with Power Platform. This article describes goals and opportunities per maturity stage."
+description: "This article describes goals and opportunities per maturity stage in the Power Platform adoption maturity model."
 author: manuelap-msft
 ms.service: power-platform
 ms.subservice: guidance
@@ -17,7 +17,7 @@ search.app:
 ---
 # Power Platform adoption maturity model: Goals and opportunities
 
-The goal of the Power Platform Adoption Maturity Model is to help organizations and their partners to think through how they can improve their capabilities and decide which capabilities matter most to them. These decisions should be based not just on the technology capabilities but the digital transformation strategy of the organization.
+The goal of the Power Platform adoption maturity model is to help organizations and their partners to think through how they can improve their capabilities and decide which capabilities matter most to them. These decisions should be based not just on the technology capabilities but the digital transformation strategy of the organization.
 
 Let’s now look at the stages and opportunities in each stage in detail:
 
