@@ -140,50 +140,50 @@ Follow these steps to monitor license usage.
 
 #### How do I remove Power Automate from the app launcher for my organization?
 
-If a user was assigned a Power Automate license, you can take the following steps to remove the license for that user, which will remove the Power Automate icon from the app launcher:
+If a user was assigned a Power Automate license, you can take the following steps to remove the license for that user. This action removes the Power Automate icon from the app launcher.
 
 1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/).
 2. In the left navigation bar, select  **Users**  >   **Active Users**.
 3. Find the user for whom you want to remove the license, and then select their name.
-4. On the user details pane, select the  **Licenses and Apps**  tab, and then uncheck the license for Power Automate.
-5. At the bottom of the pane, select  **Save changes**.
+4. On the user details pane, select the **Licenses and Apps**  tab, and then uncheck the license for Power Automate.
+5. At the bottom, select  **Save changes**.
 
-Bulk removal of licenses is also possible through PowerShell. See [Remove licenses from user accounts with Microsoft 365 PowerShell](/microsoft-365/enterprise/remove-licenses-from-user-accounts-with-microsoft-365-powershell) for a detailed example. Finally, further guidance about bulk removal of services within a license can be found at [Disable access to services with Microsoft 365 PowerShell](/microsoft-365/enterprise/disable-access-to-services-with-microsoft-365-powershell).
+It's also possible to do a bulk removal of licenses through PowerShell. See [Remove licenses from user accounts with Microsoft 365 PowerShell](/microsoft-365/enterprise/remove-licenses-from-user-accounts-with-microsoft-365-powershell) for a detailed example.
 
-Removing of the Power Automate license or service for a user in your organization will result in the removal of the Power Automate icon from the following locations for that user:
+Additional guidance about bulk removal of services within a license can be found in the [Disable access to services with Microsoft 365 PowerShell](/microsoft-365/enterprise/disable-access-to-services-with-microsoft-365-powershell) article.
 
 >[!NOTE]
 >This action removes the Power Automate tile by default. A user may still choose to use Power Automate as an individual.
 
 #### Why did 10,000 licenses for Power Automate show up in my Microsoft 365 tenant?
 
-Any person can try out Power Automate Free for 90 days, and these trial licenses represent the available capacity for new Power Automate users in your tenant. There is no charge for these licenses.
+Any person can try out Power Automate free for 90 days, and these trial licenses represent the available capacity for new Power Automate users in your tenant. There is no charge for these licenses.
 
-If at least one user in your tenant has signed-up for a  **Microsoft Power Automate Free**  license, you will see 10,000 licenses (minus any assigned) under  **Billing**  >   **Licenses**  for your organization.
+If at least one user in your tenant has signed up for a Microsoft Power Automate free license, you will see 10,000 licenses (minus any assigned licenses) under **Billing** > **Licenses**  for your organization.
 
-You can choose to assign additional licenses to users yourself through the Microsoft 365 admin center but note that these are trial licenses for Power Automate, and they will expire after 90 days of being assigned to a user.
+You can choose to assign additional licenses to users yourself through the Microsoft 365 admin center but note that these are trial licenses for Power Automate, and they will expire 90 days after you assigned them to a user.
 
 #### Is this free? Will I be charged for these licenses?
 
-No user can incur any cost to your organization without your express consent, so neither free nor trial licenses can cause any charges to your organization. Moreover, they also do not use any quotas, such as run quotas.
+No user can incur any cost to your organization without your express consent, so neither free nor trial licenses can cause any charges to your organization. Moreover, they also don't use any quotas, such as run quotas.
 
-#### I removed the Power Automate Free license and users can still access it
+#### I removed the Power Automate free license and users can still access it
 
-The Power Automate Free license is included only for tracking purposes. As covered in the first section, it is not possible to prevent another person from using Power Automate for individual purposes. Thus, the presence of a Power Automate Free license does not actually grant or remove any capabilities.
+The Power Automate free license is included only for tracking purposes. It's not possible to prevent another person from using Power Automate for individual purposes. Thus, the presence of a Power Automate free license does not actually grant or remove any capabilities.
 
 #### Why can't I see all Power Automate licenses in the Microsoft 365 admin center?
 
-Users can use Power Automate either as individuals or as a part of their organization. Licenses at the organization level will always be visible in the Microsoft 365 admin center. However, if a user signs up for a trial as an individual then that is not managed by their Microsoft 365 admin and will not show up in the Microsoft 365 admin center.
+Users can use Power Automate either as individuals or as a part of their organization. Licenses at the organizational level will always be visible in the Microsoft 365 admin center. However, if a user signs up for a trial as an individual then that is not managed by their Microsoft 365 admin and will it won't  display in the Microsoft 365 admin center.
 
 #### How can I restrict my users' ability to access my organization's business data?
 
-Power Automate allows you to create data zones for business and non-business data, as shown below. OnAfter you implement these data loss prevention policies, users cannot design or run flows that combine business and non-business data. For more details, See [Data loss prevention (DLP) policies](/power-automate/prevent-data-loss).
+Power Automate allows you to create data groups for business and non-business data. After you implement these data loss prevention policies, users cannot design nor run flows that combine business and non-business data. For more details, See [Data loss prevention (DLP) policies](/power-automate/prevent-data-loss).
 
-![](../media/power-automate-licensing/)
+![An image that displays a sample data loss prevention configuration.](../media/power-automate-licensing/data-loss-prevention-policy.png)
 
 #### I assigned a premium license to a user, but the user can't use premium features. Why?
 
-It might take up to a week for all the downstream systems to update. To force an update for a particular flow, turn the flow off and on or edit and save the flow.
+It might take up to a week for all the downstream systems to receive updates. To force an update for a particular flow, turn the flow off and on or edit and save the flow.
 
 ## I am a maker
 
@@ -192,28 +192,31 @@ It might take up to a week for all the downstream systems to update. To force an
 1. Sign into [Power Automate](https://powerautomate.com/).
 2. Select your profile picture in the top right corner of the screen.
 3. Select  **View account**.
-4. Select the  **Subscriptions**  tile.
+4. Select the  **View** on the **Subscriptions**  tile.
 5. Search for  **Power Automate**  under the  **Licenses**  section.
 
-You will see the license that you have for Power Automate.
+You will see the license(s) that you have for Power Automate.
 
-See your  [subscription page](https://portal.office.com/account/#subscriptions) to see licenses and trials assigned to you.
+Alternatively, see your [subscription page](https://portal.office.com/account/#subscriptions) to see licenses and trials assigned to you.
 
-### Can maker buy licenses?
+### Can a maker buy licenses?
 
-Microsoft launched [self-service purchase](/microsoft-365/commerce/subscriptions/self-service-purchase-faq) for Microsoft Power Platform (Power BI, Power Apps, and Power Automate). This capability currently isn't available to government, non-profit, or education tenants in the United States.
+Yes. To get started, use the [self-service purchase](/microsoft-365/commerce/subscriptions/self-service-purchase-faq) method for Microsoft Power Platform (Power BI, Power Apps, and Power Automate).
 
-Customers can make a self-service purchase online from Power Automate. Customers will first be asked to enter an email address to ensure they are a user in an existing Azure Active Directory (Azure AD) tenant. Then they'll be directed to log in by using their Azure AD credentials. After signing in, the customer will be asked to select how many subscriptions they want to purchase and provide credit card payment. When the purchase is complete, they'll be able to start using their subscription. The purchaser will also be able to access a limited view of the Microsoft 365 admin center where they can enable other people in their organization to use the product.
+>[!IMPORTANT]
+>This capability isn't available to government, non-profit, or education tenants in the United States.
 
-![](../media/power-automate-licensing/RackMultipart20211020-4-1g0es0r_html_4a0a915c1da39718.png)
+Customers can make a self-service purchase from Power Automate. To do this, they first provide their email address to confirm if they are a user in an existing Azure Active Directory (Azure AD) tenant. Next, they'll need to log in by using their Azure AD credentials. After signing in, the they need to indicate the number subscriptions they want to purchase and provide a credit card for payment. When the purchase is complete, they'll can start using their subscription. The purchaser can also access a limited view of the Microsoft 365 admin center where they can enable other people in their organization to use the product.
 
-Admins are provided with a way to turn off self-service purchasing on a per product basis via the [MSCommerce PowerShell module](/microsoft-365/commerce/subscriptions/allowselfservicepurchase-powershell).
+![This image displays the self service get started screen with all the necessary steps](../media/power-automate-licensing/get-started-self-service.png)
 
-Central procurement and IT teams have visibility to all users who buy and deploy self-service purchase solutions through the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339). Admins can turn off self-service purchasing on a per product basis via PowerShell
+Admins can turn off self-service purchasing on a per product basis via the [MSCommerce PowerShell module](/microsoft-365/commerce/subscriptions/allowselfservicepurchase-powershell).
+
+Central procurement and IT teams view all users who buy and deploy self-service purchase solutions through the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339). Admins can turn off self-service purchasing on a per product basis via PowerShell.
 
 ### Where does the self-service purchaser see and manage their purchases?
 
-Self-service purchasers can manage their purchases in the limited view of the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339). Purchasers can always get to the admin center from the  **Admin**  tile in the app launcher built into all Microsoft 365 and Dynamics online apps. Purchasers can view the purchases they've made, buy additional subscriptions to the same service, and assign licenses for those subscriptions to other users in their organization. Additionally, purchasers can view and pay their bill, update their payment method, and cancel their subscription.
+Self-service purchasers can manage their purchases in the limited view of the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339). Self-service  purchasers can always get to the admin center from the  **Admin**  tile in the app launcher that's built into all Microsoft 365 and Dynamics online apps. Self-service  purchasers can view the purchases they've made, buy additional subscriptions to the same service, and assign licenses for those subscriptions to other users in their organization. Additionally, purchasers can view and pay their bill, update their payment method, and cancel their subscription.
 
 ### FAQ
 
@@ -223,23 +226,23 @@ Yes. If you sign in with a Microsoft Account (such as an account that ends with 
 
 #### I'm trying to upgrade, but I'm told my account isn't eligible
 
-To upgrade, use a work or school account, or create an [Microsoft 365 trial account](https://powerbi.microsoft.com/documentation/powerbi-admin-signing-up-for-power-bi-with-a-new-office-365-trial/).
+To upgrade, use a work or school account, or create a [Microsoft 365 trial account](https://powerbi.microsoft.com/documentation/powerbi-admin-signing-up-for-power-bi-with-a-new-office-365-trial/).
 
 #### Who can buy Microsoft Power Apps and Power Automate plans?
 
 Any customer can sign up for a free trial. Microsoft 365 admins can buy Power Automate plans for their teams or organization. Contact your Microsoft 365 admin when you're ready to buy.
 
-#### Can maker request admin to assign license?
+#### Can makers request admins to assign license to them?
 
 Yes.
 
 1. Go to the [Microsoft Power Automate](https://flow.microsoft.com/pricing/) pricing page and select **Buy now** for the license that you need.
 
-   ![](../media/power-automate-licensing/)
+   ![An image that displays a view of the Power Automate pricing page on the Internet.](../media/power-automate-licensing/pricing.png)
 
 1. Fill in the details, and then send the request to your admin.
 
-![](../media/power-automate-licensing/)
+![An image that shows a request to be sent to an admin for a license.](../media/power-automate-licensing/maker-request-to-admin.png)
 
 1. Admins can see your request in the Microsoft 365 admin center and assign a license to you.
 
