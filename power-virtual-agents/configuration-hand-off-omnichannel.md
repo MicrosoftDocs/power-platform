@@ -2,7 +2,7 @@
 title: "Configure hand-off to Omnichannel for Customer Service"
 description: "Have human agents intercede in bot conversations by connecting Power Virtual Agents to Omnichannel."
 keywords: "PVA"
-ms.date: 11/012021
+ms.date: 11/01/2021
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw  
@@ -131,7 +131,7 @@ You can enable voice-based hand off capabilities by switching the **Enable voice
 
 When voice is enabled, any connection with the bot can use voice, text, or both.
 
-If you previously had connected a bot to Omnichannel (before November 2021), and want to enable voice-based capabilities, you must [disconnect and reconnect the bot to Omnichannel](#:~:text=to%20add%20your,step%203)).
+If you previously had connected a bot to Omnichannel (before November 2021), and want to enable voice-based capabilities, you must [disconnect and reconnect the bot to Omnichannel](#connect-omnichannel-to-your-power-virtual-agents-bot:~:text=to%20add%20your,step%203)).
 
 Authentication is not supported for voice-based hand off to Omnichannel. If you've set up authentication for the bot, the [authentication variables](advanced-end-user-authentication.md) will not contain authentication information in them when sent to Omnichannel.
 
