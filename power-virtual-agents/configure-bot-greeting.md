@@ -230,7 +230,7 @@ You can now test your bot by going to the webpage where you deployed your bot's
 
 1. [Delete the message nodes](authoring-create-edit-topics.md#insert-nodes) on the **Greeting** topic.
 
-1. To automatically divert the bot to a user topic, select **+** to add a node, and then [Go to another topic](authoring-create-edit-topics.md#go-to-another-topic).
+1. To automatically divert the bot to a user topic, select **+** to add a node, and then [Go to another topic](authoring-create-edit-topics.md#redirect-to-another-topic).
 
 1. In the flyout menu, select the user topic you created above.
 
