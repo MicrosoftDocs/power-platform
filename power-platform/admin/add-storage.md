@@ -29,11 +29,11 @@ If your tenant is running low on available storage capacity, you can add storage
 > [!NOTE]
 > The process described in this topic applies to direct purchases using a credit card or invoice.
 >
->If you bought your subscription through [Volume Licensing](/licensing/) or a Cloud Solution Provider (CSP), contact your representative or [partner](https://docs.microsoft.com/microsoft-365/commerce/manage-partners?view=o365-worldwide) for assistance. Customers with an Enterprise Agreement can [make a license reservation](/licensing/license-faq).
+>If you bought your subscription through [Volume Licensing](/licensing/) or a Cloud Solution Provider (CSP), contact your representative or [partner](/microsoft-365/commerce/manage-partners?view=o365-worldwide) for assistance. Customers with an Enterprise Agreement can [make a license reservation](/licensing/license-faq).
 
 ## Preliminary steps
 
-1. You must be a Microsoft 365 Global or Billing admin to do the tasks in this article. For more information, see [About admin roles](https://docs.microsoft.com//microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide).
+1. You must be a Microsoft 365 Global or Billing admin to do the tasks in this article. For more information, see [About admin roles](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide).
 2. Determine your [current capacity storage usage](capacity-storage.md#verifying-your-new-storage-model) to make sure you know how much additional storage capacity is needed. Non-admins can also [view self-service storage capacity](view-self-service-capacity.md).
 
 ## Purchase add-on storage capacity

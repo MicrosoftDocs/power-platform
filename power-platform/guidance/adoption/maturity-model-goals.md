@@ -31,15 +31,15 @@ Let’s now look at the stages and opportunities in each stage in detail:
 :::row:::
    :::column span="":::
       ![Organize training events](media/adoption-1.png "Organize training events")
-      Organize [training events](https://aka.ms/powerappsdemos), [hackathons](https://docs.microsoft.com/power-platform/guidance/adoption/hackathons) and [lunch & learn sessions](https://docs.microsoft.com/power-platform/guidance/adoption/in-a-day#lunch-and-learn).
+      Organize [training events](https://aka.ms/powerappsdemos), [hackathons](/power-platform/guidance/adoption/hackathons) and [lunch & learn sessions](/power-platform/guidance/adoption/in-a-day#lunch-and-learn).
    :::column-end:::
    :::column span="":::
    ![Find and nurture champions](media/adoption-2.png "Find and nurture champions")
-      Find and [nurture champions](https://docs.microsoft.com/power-platform/guidance/adoption/champions), recognize early success.
+      Find and [nurture champions](/power-platform/guidance/adoption/champions), recognize early success.
    :::column-end:::
 :::column span="":::
 ![Get key sponsors on board](media/adoption-3.png "Get key sponsors on board")
-      Get key sponsors and teams on board as you review the [roles and responsibilities](https://docs.microsoft.com/power-platform/guidance/adoption/roles) needed to execute your Power Platform adoption.
+      Get key sponsors and teams on board as you review the [roles and responsibilities](/power-platform/guidance/adoption/roles) needed to execute your Power Platform adoption.
    :::column-end:::
 :::row-end:::
 
@@ -56,11 +56,11 @@ Let’s now look at the stages and opportunities in each stage in detail:
    :::column-end:::
    :::column span="":::
       ![Establish DLP Policies](media/adoption-5.png "Establish DLP Policies")
-      [Establish DLP Policies](https://docs.microsoft.com/power-platform/guidance/adoption/dlp-strategy) in the default environment and mitigate the risk of apps and flows breaking by performing a [DLP Impact Analysis](https://docs.microsoft.com/power-platform/guidance/coe/core-components#dlp-editor-v2) first.
+      [Establish DLP Policies](/power-platform/guidance/adoption/dlp-strategy) in the default environment and mitigate the risk of apps and flows breaking by performing a [DLP Impact Analysis](/power-platform/guidance/coe/core-components#dlp-editor-v2) first.
    :::column-end:::
 :::column span="":::
    ![Send a welcome email to new makers](media/adoption-6.png "Send a welcome email to new makers")
-      Embrace new makers with a [Welcome email](https://docs.microsoft.com/power-platform/guidance/adoption/onboard-makers), informing them of internal training resources and policies.
+      Embrace new makers with a [Welcome email](/power-platform/guidance/adoption/onboard-makers), informing them of internal training resources and policies.
    :::column-end:::
 :::row-end:::
 
@@ -73,15 +73,15 @@ Let’s now look at the stages and opportunities in each stage in detail:
 :::row:::
    :::column span="":::
       ![Develop an environment strategy](media/adoption-7.png "Develop an environment strategy")
-      Develop an [environment strategy](https://docs.microsoft.com/power-platform/guidance/adoption/environment-strategy) and configure layers of security in a way that supports productive development in your organization, while securing and organizing resources.
+      Develop an [environment strategy](/power-platform/guidance/adoption/environment-strategy) and configure layers of security in a way that supports productive development in your organization, while securing and organizing resources.
    :::column-end:::
    :::column span="":::
       ![Establish tiers of application support](media/adoption-8.png "Establish tiers of application support")
-     Define [tiers of application support](https://docs.microsoft.com/power-platform/guidance/adoption/environment-strategy#factors-that-influence-provisioning) – taking into account the level of complexity, how critical the app is, and users impacted by the application.
+     Define [tiers of application support](/power-platform/guidance/adoption/environment-strategy#factors-that-influence-provisioning) – taking into account the level of complexity, how critical the app is, and users impacted by the application.
    :::column-end:::
 :::column span="":::
    ![Share your success stories](media/adoption-9.png "Share your success stories")
-      Celebrate your makers and champions by [sharing their success stories](https://docs.microsoft.com/power-platform/guidance/adoption/show-and-tell), and focus on the business value and impact they have on the organization.
+      Celebrate your makers and champions by [sharing their success stories](/power-platform/guidance/adoption/show-and-tell), and focus on the business value and impact they have on the organization.
    :::column-end:::
 :::row-end:::
 
@@ -94,8 +94,8 @@ Let’s now look at the stages and opportunities in each stage in detail:
 :::row:::
    :::column span="":::
       ![Create an app catalog](media/adoption-10.png "Create an app catalog")
-      Create an [app catalog](https://docs.microsoft.com/power-platform/guidance/coe/core-components#app-catalog) to make apps more discoverable and avoid duplication.
-Create [shared component libraries](https://docs.microsoft.com/power-platform/guidance/adoption/reusable) with common design patterns, such as headers and navigation to ensure consistency across apps.
+      Create an [app catalog](/power-platform/guidance/coe/core-components#app-catalog) to make apps more discoverable and avoid duplication.
+Create [shared component libraries](/power-platform/guidance/adoption/reusable) with common design patterns, such as headers and navigation to ensure consistency across apps.
    :::column-end:::
    :::column span="":::
       ![Use approvals and Teams to automate communication](media/adoption-11.png "Use approvals and Teams to automate communication")
@@ -103,7 +103,7 @@ Create [shared component libraries](https://docs.microsoft.com/power-platform/gu
    :::column-end:::
 :::column span="":::
    ![Define key responsibilities for your CoE](media/adoption-12.png "Define key responsibilities for your CoE")
-      Define [key responsibilities for your CoE](https://docs.microsoft.com/power-platform/guidance/adoption/coe), Admins and Makers and ensure they are understood and agreed to by everyone.
+      Define [key responsibilities for your CoE](/power-platform/guidance/adoption/coe), Admins and Makers and ensure they are understood and agreed to by everyone.
    :::column-end:::
 :::row-end:::
 
@@ -116,11 +116,11 @@ Create [shared component libraries](https://docs.microsoft.com/power-platform/gu
 :::row:::
    :::column span="":::
       ![Use the Innovation Backlog app to submit ideas](media/adoption-13.png "Use the Innovation Backlog app to submit ideas")
-      Enable everyone to [submit ideas](https://docs.microsoft.com/power-platform/guidance/coe/use-innovationbacklog), describe pain points and pick the most valuable ideas for development. Build a portfolio for your career development opportunities. Provide “big picture” dashboards emphasizing the impact of the platform.
+      Enable everyone to [submit ideas](/power-platform/guidance/coe/use-innovationbacklog), describe pain points and pick the most valuable ideas for development. Build a portfolio for your career development opportunities. Provide “big picture” dashboards emphasizing the impact of the platform.
    :::column-end:::
    :::column span="":::
       ![Simplify Application Lifecycle Management](media/adoption-14.png "Simplify Application Lifecycle Management")
-     [Simplify Application Lifecycle Management](https://docs.microsoft.com/power-platform/guidance/coe/almaccelerator-components). Make it easier for makers to manage their solutions and deployment.
+     [Simplify Application Lifecycle Management](/power-platform/guidance/coe/almaccelerator-components). Make it easier for makers to manage their solutions and deployment.
    :::column-end:::
 :::column span="":::
    ![Influence our best practices by sharing your story](media/adoption-15.png "Influence our best practices by sharing your story")
