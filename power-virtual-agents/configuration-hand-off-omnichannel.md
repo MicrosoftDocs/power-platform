@@ -168,7 +168,7 @@ This action can be used to transfer the call to a different phone number altoget
 1. Add this action as you would [any other action when adding nodes](authoring-create-edit-topics.md#insert-nodes).
 2. Select **Add input for destination topic** and then **TargetPhoneNumber (string)**.
     ![Handoff Voice Config Transfer Input](media/handoff-voice-config-transfer-input.png)
-3. Select an existing variable that defines the number that should be called instead, or directly enter the mnumber.
+3. Select an existing variable that defines the number that should be called instead, or directly enter the number.
 
 
 >[!NOTE]
