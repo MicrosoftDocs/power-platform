@@ -1,5 +1,5 @@
 ---
-title: "Configure hand-off to Omnichannel for Customer Service"
+title: "Configure hand-off to Dynamics 365 Customer Service"
 description: "Have human agents intercede in voice-based and text-based bot conversations by connecting Power Virtual Agents to Dynamics 365 Customer Service omnichannel capabilities."
 keywords: "PVA"
 ms.date: 11/01/2021
