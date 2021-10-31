@@ -38,7 +38,7 @@ Each stage describes the states of individual disciplines such as Strategy & Vis
 <!-- I'm not sure how to best tie this page together with the details. In the blog we had it all in one page and it was very long. Splitting it up makes sense. -->
 <!--
 ## Learn more
-- [Goals and Opportunities](maturity-model-goals.md)
+- [Goals and opportunities](maturity-model-goals.md)
 - [Details capabilities and characteristics](maturity-model-details.md)
 -->
 > [!div class="nextstepaction"]
