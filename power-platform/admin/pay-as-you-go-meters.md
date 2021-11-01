@@ -48,17 +48,11 @@ For example, an environment has three apps, App A, B, and C and this environment
 
 # [Image](#tab/image)
 
-Content for image...
+Environment with three apps
+
+:::image type="content" source="media/pay-as-you-go-three-example-apps.png" alt-text="Example of three apps enabled for pay-as-you-go":::
 
 # [Table](#tab/table)
-
-Content for table...
-
----
-
-
-
-
 
 Environment with three apps
 
@@ -89,6 +83,14 @@ If a user has a Power Apps per user license, the user is not counted in the mete
 
 > [!NOTE]
 > If an environment already has [app passes assigned](about-powerapps-perapp.md) and the environment is enabled for pay-as-you-go, app passes are ignored and not consumed. You can reallocate those app passes to a different environment. 
+
+---
+
+
+
+
+
+
 
 ### Dataverse capacity add-on meter
 
