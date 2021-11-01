@@ -25,7 +25,7 @@ Add-ons can be added onto a standalone Power Automate license.
 
 Power Apps and Power Automate capacity add-ons increase the daily Power Platform requests limits for workloads that need more usage capacity than their allocation. These add-ons provide an additional 50,000 daily Power Platform requests per unit for $50/month and is enforced daily. Unused Power Platform requests do not carry over from day to day. You can purchase these add-ons at any time and they remain a part of the subscription for the remainder of the subscription term.
 
-During transition period, there is no facility to assign the Power Apps and Power Automate capacity add-ons to a user or flow. However, Microsoft recommends that you purchase these add-ons now to remain within your license terms. If any flows are being throttled currently, please raise a Microsoft support ticket with the flow details and add on details to get temporary relief from throttling. 
+During transition period, there is no facility to assign the Power Apps and Power Automate capacity add-ons to a user or flow. However, Microsoft recommends that you purchase these add-ons now to remain within your license terms. If any flows are being throttled, create a Microsoft support ticket with the flow details and add on details to get temporary relief from throttling. 
 
 ## Unattended add-on
 
@@ -38,7 +38,7 @@ The Power Automate unattended RPA add-on extends desktop-based automation by ena
 >[!NOTE]
 >The Power Automate unattended RPA add-on is licensed by a bot. Concurrent instances of a singular process require an additional unattended bot for each instance. Multiple unattended RPA add-ons can be applied against a qualifying base license.
 
-Note:
+Here are a few important notes of which you should be aware regarding the unattended add-on.
 
 - One unattended RPA add-on license includes the rights to one unattended RPA bot, as well as all necessary functions tied to the authoring of  desktop flows, bot orchestration, and management.
 - If you run the unattended RPA bot in a VM, you must purchase any necessary additional compute resources.
@@ -55,7 +55,7 @@ Note:
    No. You need to a have a qualifying base license (per user RPA/per flow) for which the add-on can be added on.
 1. I need multiple instances running unattended. Do I need multiple add-ons?
 
-   Yes if you need to run them at the same time. If not, the runs will be queued and executed once the bot is free.
+   Yes if you need to run them at the same time. If not, the runs will be queued and begin when the bot is free.
 
 ## AI builder capacity add-on
 
