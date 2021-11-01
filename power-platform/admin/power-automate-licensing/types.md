@@ -71,7 +71,7 @@ Here's a chart that lays out the limits that are associated with the different l
 
 ## Transition period
 
-All customers are in a transition period. That means that enforcement is not as strict and limits are higher. Once the transition period ends (First quarter of calendar year 2022), which will be after the full reporting is available in the Power Platform Admin Center, Organizations  will have 6 months’ time to analyze their usage and purchase licenses that are appropriate before strict enforcement on license limits begins.
+All customers are in a transition period. That means that enforcement isn't strict and limits are higher. After the transition period ends (First quarter of calendar year 2022), which will be after the full reporting is available in the Power Platform admin center, organizations will have six months to analyze their usage and purchase licenses that are appropriate before strict enforcement on license limits begins.
 
 Here are a few things to be aware of during the transition period.
 
@@ -82,7 +82,7 @@ Here are a few things to be aware of during the transition period.
 
 ## License entitlements
 
-Connectors represent the app/service to which your flows connect. For example, OneDrive, SharePoint, Twitter, etc. are examples of services to which flows connect. The connectors in Power Automate are designed to *speak the language* of the apps/services to which your flows connect, as well as give Power Automate access to the account. Connectors are  categorized as either [standard](#standard-connectors) or [premium connectors](#premium-connectors).
+Connectors represent the app/service to which your flows connect. For example, OneDrive, SharePoint, Twitter, etc. are examples of services to which flows connect. The connectors in Power Automate are designed to *speak the language* of the apps/services to which your flows connect, as well as give Power Automate access to the account. Connectors are categorized as either [standard](#standard-connectors) or [premium connectors](#premium-connectors).
 
 ### Standard connectors
 
@@ -128,7 +128,7 @@ Data volume continues to grow exponentially as businesses advance their digital 
 
 To help ensure service levels, availability and quality, there are limits to the number of Power Platform requests users can make across all Power Platform products. Service limits are set against normal usage patterns in both 5 minute and per 24 hour intervals. Most customers will not exceed these limits.
 
-- The 24 hour limit is based on the user/flow license. If a user has Power Automate per user plan, they can make 40000 Power Platform requests across all their flows of the tenant in a 24 hour period. This includes requests made by the platform to 3rd party connectors too. The 24 hours is a sliding window meaning anytime a flow is running, system looks at the past 24 hour requests to identify if the user is at limit. If a flow has per flow plan, the flow can make 250,000 Power Platform requests across all users of the flow in a 24 hour period. To prevent a usage-heavy flow/user from impacting another user, this capacity is tracked based on consumption at an individual user/flow level and cannot be pooled at any other level like environment or tenant levels. For example, two users in a tenant have per user licenses and each get 40,000 requests per day. If the first user uses more than 40000 requests, their flows will slow down and will not impact the second user who only used 20000 requests and still has 20000 requests left.
+- The 24 hour limit is based on the user or flow license. If a user has a Power Automate per user plan, they can make 40,000 Power Platform requests across all their flows of the tenant in a 24 hour period. This includes requests the platform makes to 3rd party connectors too. The 24 hours is a sliding window, meaning anytime a flow is running, the system looks at the requests in the past 24 hours to identify if the user is at the limit. If a flow has the per flow plan, the flow can make 250,000 Power Platform requests across all users of the flow in a 24 hour period. To prevent a usage-heavy flow or user from impacting other users, this capacity is tracked based on consumption at an individual user or flow level and it cannot be pooled at any other level like environment or tenant levels. For example, two users in a tenant may have per user licenses and each gets 40,000 requests per day. If the first person uses more than 40,000 requests, their flows will slow down and will not impact the second user who only used 20,000 requests and still has 20,000 requests remaining.
 - The 5 minute limit is 100,000 requests and it is independent of a user's license. For example, flows with a per flow license can make 250,000 requests in 24 hours but they cannot make more than 100,000 requests in 5 minutes. 
 
 - <!--Create a table to replace this image-->
@@ -159,13 +159,13 @@ Consider the following flow where every email attachment is saved to OneDrive. T
 #### Whose Power Platform request limits are used by the flow?
 
 - If a flow has per flow license, the flow will always use the per flow limits and not the creator/owner/invoking user's limits.
-- [Automated and scheduled flows](https://docs.microsoft.com/power-automate/flow-types#cloud-flows) always use the flow creator/owner's Power Platform request limits regardless of who started the process or what accounts are used for connections inside of the process. For a solution flow, you can change the owner of the flow using [Web API](/power-automate/web-api#update-a-cloud-flow). After you change the owner, the new owner's API request limits are used. For a non-solution flow, the flow always uses the original creator's limits which can't be changed. If the original creator leaves the company, any co-owners of the flow can export and import the flow as a different owner. <!-- to do: a bunch of ads play before the video starts. Check out the[video tutorial](https://www.youtube.com/watch?v=K7_xWJvEPUc) for me details.--> After you import the flow, it becomes a new flow and starts using limits from the new owner. Alternatively, you can assign a per flow license to the flow.
-- [Instant flows (button, power apps, hybrid triggers)](https://docs.microsoft.com/power-automate/flow-types#cloud-flows) use the invoking user's limits, irrespective of connections used in the flow.
+- [Automated and scheduled flows](/power-automate/flow-types#cloud-flows) always use the flow creator/owner's Power Platform request limits regardless of who started the process or what accounts are used for connections inside of the process. For a solution flow, you can change the owner of the flow using [Web API](/power-automate/web-api#update-a-cloud-flow). After you change the owner, the new owner's API request limits are used. For a non-solution flow, the flow always uses the original creator's limits which can't be changed. If the original creator leaves the company, any co-owners of the flow can export and import the flow as a different owner. <!-- to do: a bunch of ads play before the video starts. Check out the[video tutorial](https://www.youtube.com/watch?v=K7_xWJvEPUc) for me details.--> After you import the flow, it becomes a new flow and starts using limits from the new owner. Alternatively, you can assign a per flow license to the flow.
+- [Instant flows (button, power apps, hybrid triggers)](/power-automate/flow-types#cloud-flows) use the invoking user's limits, regardless of the connections that are used in the flow.
 - If you share an automated/scheduled flow with another user and then that user triggers the same flow, it uses the limits of the original owner and not the new user's limits. But if the user then leverages the flow to make their own new flow, then that new user becomes the owner of the new flow and that flow uses the new user's limits.
 - If a parent flow calls a child flow, the child flow uses the parent flow's limits. For example, if the parent flow is an automated flow, the child flow uses the parent flow creator/owner's limits.
 - If the parent flow is a manual flow, the child flow uses the limits of the parent flow's invoking user.
 - If the child flow has a per flow license, it uses the per flow limits and not the parent flow's limits.
-- If parent flow has a per flow license, both parent flow and all child flows use the per flow license.
+- If a parent flow has a per flow license, the parent flow and all child flows use the per flow license.
 - During the [transition period](#transition-period), there is a slight difference in this behavior. The child flow owner's license is used unless the child flow has a per flow license but once the transition period ends, the child flow owner's limits are ignored and only the parent flow owner's limits are used unless the child flow has a per flow license.
 
 #### As a maker, what tools do I have to analyze my usage?
@@ -209,16 +209,16 @@ Users won't be blocked from using an app or flow for occasional and reasonable o
 
 Here are some things you can do if you've exceeded the limits of your license.
 
-- Revisit your design and check for any places that can help reduce the number of actions being called. Check out Best Practices section to [create flows to use less actions].(https://support.microsoft.com/en-us/topic/troubleshooting-slow-running-flows-2a51dcd6-0b21-33da-5ce8-1e908b1540ef)
-- If the flow is already optimized but uses more actions because of the nature of the business, consider buying a higher license. Per flow plan provides the best performance quota available (250K actions/day/flow).
-- Purchase the **Power Apps and Power Automate capacity add-on**  for your organization. During the [transition period](#transition-period), because enforcement is currently less strict, there is no facility to assign the **Power Apps and Power Automate capacity add-on**  to a user. However, Microsoft recommends that you purchase these add-ons now to remain within your license terms and create a support ticket with the flow details and add on details to get temporary relief from throttling.
+- Revisit your design and check for any places that can help reduce the number of actions being called. Check out [Best Practices section to create flows to use less actions](https://support.microsoft.com/topic/troubleshooting-slow-running-flows-2a51dcd6-0b21-33da-5ce8-1e908b1540ef).
+- If the flow is already optimized, but it uses many actions because of the nature of the business, consider buying a higher license. The per flow plan provides the best performance quota available (250K actions/day/flow).
+- Purchase the **Power Apps and Power Automate capacity add-on** for your organization. During the [transition period](#transition-period), because enforcement is currently less strict, there is no facility to assign the **Power Apps and Power Automate capacity add-on** to a user. However, Microsoft recommends that you purchase these add-ons now to remain within your license terms and create a support ticket with the flow details and add on details to get temporary relief from throttling.
 - Turn on [Pay-as-you go] for the environment to ensure none of the flows in the environment are throttled.
 
 If a flow is consistently above the transition period limits for 14 consecutive days, the flow is turned off and the owner is notified. You can update the flow or buy higher license, and then turn it on anytime.
 
 #### What are connector limits and are they different from Power Platform request limits?
 
-The connectors in the flow have separate limits as a service protection mechanism. For example, the SharePoint connector caps actions at 600 per minute. A single SharePoint connection used across multiple flows can still only execute 600 operations per minute. Most connector pages have a [throttling section](/connectors/sharepointonline/#limits) that documents these limits. This limit is different from the request limits. For example, an Office user can execute 6000 actions per day across all their flows but can still get throttled by the connector if they used more than 600 SharePoint actions in a minute despite not reaching the 6000 actions limit.
+The connectors have separate limits as a service protection mechanism. For example, the SharePoint connector limits the number of actions at 600 per minute. A single SharePoint connection that's used across multiple flows can still only execute 600 operations per minute. Most connector pages have a [throttling section](/connectors/sharepointonline/#limits) that documents these limits. This limit is different from the request limits. For example, an Office user can run 6000 actions per day across all their flows but can still get throttled by the connector if they used more than 600 SharePoint actions in a minute despite not reaching the 6000 actions limit.
 
 When a flow was throttled because it exceeded the connector limits, you might see a HTTP 429 (too many requests) error in your flow with error text like "Rate limit is exceeded. Try again in 27 seconds."
 
@@ -228,11 +228,11 @@ Yes. Flows included in the COE toolkit also use limits from the owner. Microsoft
 
 #### Can I use a service account and run multiple flows under it?
 
-Yes and if your flow is running under a service account, it is really an team/ organization flow and need per flow plan for every flow.
+Yes, and if your flow runs under a service account, it is really a team/organization flow and it needs a per flow plan for every flow.
 
 #### Can I use service principal in flows, and does it count against my request limits?
 
-Service principal isn't supported yet but is a top item on the backlog. When we support it, service principal flows will consume a separate quota called [non-interactive limits](/power-platform/admin/api-request-limits-allocations#requests-limits-not-based-on-licensed-users-or-flows).
+Service principal isn't supported yet but it's a top item on the backlog. When we support it, service principal flows will consume a separate quota called [non-interactive limits](/power-platform/admin/api-request-limits-allocations#requests-limits-not-based-on-licensed-users-or-flows).
 
 #### Will desktop flows usage count consume my Power Platform request limits?
 
@@ -264,7 +264,7 @@ Based on the license of the owner, a flow gets a performance profile which in tu
 
 #### In an organization, 8 users have Office 365 licenses and their daily Power Platform requests would be 6000 requests per user, in each 24 hour period. Does that mean that it will be pooled to the tenant level with a limit of 48000 requests in each 24 hour period (8X6000) and all users can consume from this pool?
 
-No. Power Platform requests are not pooled at the environment nor tenant level. This ensures that a heavy user doesn't consume all the Power Platform requests of the tenant and impact everyone else. Since the license is per user, the limit is per user too. So, all Office customers get 6K each, whether they use it or not.
+No. Power Platform requests are not pooled at the environment nor tenant level. This ensures that a heavy user doesn't consume all the Power Platform requests of the tenant and impact everyone else. Since the license is per user, the limit is per user too. So, all Office customers get 6000 requests each, whether they use them or not.
 
 ### Best practices
 
@@ -285,17 +285,18 @@ Best practices to scale your flow.
 
 ### Pay-as-you-go 
 
-We revised Power platform request limts for all licenses late 2021. The new limits are designed to be sufficient for most customer scenarios. For more information on Power Platform request limits, please visit [ ADD LINK: aka.ms/platformlimits]. 
+We revised the Power Platform request limts for all licenses in late 2021. The new limits are designed to be sufficient for most customer scenarios. For more information on Power Platform request limits, visit the [Requests limits and allocations](https://aka.ms/platformlimits) page.
 
-For customers with extremely high scale scenarios who need to exceed these limits you can link those environments to Azure subscription. By linking the environment, users and flows in the environment can consume more than their limits without being throttled and only pay for the Power Platform requests used above those limits. Flows still need to be licensed with a base license(either Power Automate per user, Power Automate per flow, Office 365, Power Apps or Dynamics). For example, if you have Power Automate per user license, you have a limit of 40K Power platform requests/per user/day. If the user used 45K requests a day, the additional 5K is multiplied by a $/request rate and billed to the Azure subscription. The total amount will be summed and billed based on the customer’s Azure billing cycle.
+For customers with extremely high scale scenarios who need to exceed these limits you can link those environments to Azure subscription. By linking the environment, users and flows in the environment can consume more than their limits without being throttled and only pay for the Power Platform requests used above those limits. Flows still need to be licensed with a base license (either Power Automate per user, Power Automate per flow, Office 365, Power Apps, or Dynamics). For example, if you have Power Automate per user license, you have a limit of 40,000 Power Platform requests/per user/day. If the user used 45,000 requests a day, the additional 5,000 requests is multiplied by a $/request rate and billed to the Azure subscription. The total amount will be summed and billed based on the customer’s Azure billing cycle.
 
-Note: As of now,  if you link an environment to an Azure subscription this meter will not be reported or billed. Reporting and billing will be turned on by the end of Calendar year 2021. 
+>[!NOTE]
+>If you link an environment to an Azure subscription, this meter will not be reported or billed. Reporting and billing will be turned on by the end of calendar year 2021. 
 
-### More FAQ
+### FAQs about request limits
 
 You can consult this [requests limits frequently asked questions](/power-platform/admin/api-request-limits-allocations#frequently-asked-questions) for more information about requests limits.
 
-## Free Plan
+## Free plan
 
 If you sign in with work or school email address, you get all [Power Automate capabilities included in Office 365](faqs.md). But if you have a non-business user account (such as an account that ends with @outlook.com or @gmail.com), you can still use Power Automate with the free plan. Go to [Power Automate](https://flow.microsoft.com/) and then select **Try free**.
 
