@@ -46,6 +46,15 @@ For example, an environment has three apps, App A, B, and C and this environment
 > [!NOTE]
 > The prices shown in this example are illustrative only. Your organization's pricing may vary based on your contract with Microsoft.
 
+# [Image](#tab/image)
+
+Content for image...
+
+# [Table](#tab/table)
+
+Content for table...
+
+
 Environment with three apps
 
 |Active users  |Month #1  |Month #2  |Month #3  |
