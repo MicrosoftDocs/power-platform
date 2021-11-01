@@ -102,7 +102,7 @@ Measurement for each category of Dataverse storage usage will happen three times
 
 :::image type="content" source="media/pay-as-you-go-measured-usage-above-per-environment-entitlements.png" alt-text="Measured usage above per environment entitlements":::
 
-# [Tabs](#tab/table)
+# [Table](#tab/table)
 
 Measured usage *above* entitlements of 1GB Database and 1GB File
 
