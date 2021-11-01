@@ -63,6 +63,11 @@ The downloadable report contains the following fields:
 | Billed Quantity | Calculated by the unit of measure and reporting frequency |
 | Unit of measure | The measure that billing occurs to Azure for the submeter | 
 
+Here is a sample of a detailed usage report.
+
+:::image type="content" source="media/paygo_detailedusage.png" alt-text="Sample detailed usage report" lightbox="media/paygo_detailedusage.png":::
+
+
 ### Determining billed quantity
 
 The units of measure and the reporting frequency impact the granular billed quantity amount in both the usage report and the quantities sent to Azure.  Today, usage is reported to Azure three times per 24-hour period. 
