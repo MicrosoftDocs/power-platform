@@ -53,7 +53,7 @@ The downloadable report contains the following fields:
 | Caller Type | The type of caller identity.  Applicable values are User, Application, or Microsoft when the caller is Microsoft |
 | Resource Type | The type of resource. Applicable values are Dataverse, Power Apps, and Power Automate |
 | Resource ID | The unique resource identifier.  Based on the Resource Type, this could be a Power App ID, Dataverse Organization ID, or Power Automate Flow ID |
-| Meter Category | The top-level classification of the meter. This will be either Power Apps or Dataverse. See [meter details](pay-as-you-go-meters.md) |
+| Meter Category | The top-level classification of the meter. This will be either Power Apps or Dataverse. See [meter details](pay-as-you-go-meters.md). |
 | Meter Subcategory | The detailed classification of the meter. For Power Apps, subcategory field is Launch. For Dataverse, subcategory fields are Database, File and Log based on the consumption type.
 | Usage Datetime | The date and time of when the usage was captured |
 | Billing Model | Pay-as-you-go |
