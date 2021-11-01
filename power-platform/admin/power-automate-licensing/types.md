@@ -69,13 +69,6 @@ Here's a chart that lays out the limits that are associated with the different l
 1. Dynamics 365 Sales Enterprise, Dynamics 365 Customer Service Enterprise, Dynamics 365 Field Service, Dynamics 365 Project Service Automation, Dynamics 365 Retail, Dynamics 365 Talent, and Dynamics 365 Customer Engagement plan.
 1. In Dataverse for Teams environments (included in [select Office licenses)](/power-platform/admin/powerapps-flow-licensing-faq#which-microsoft-365-subscriptions-include-dataverse-for-teams-and-power-virtual-agents-capabilities-with-teams) customers can use custom connectors built on Azure and Dataverse capabilities.
 
-## How to choose the right plan
-
-Here's a guide that helps you decide which plan is right for your organization.
-
-<!--todo, image needs to be clearer-->
-![Select the right plan image](../media/power-automate-licensing/select-right-plan.png)
-
 ## Transition period
 
 All customers are in a transition period. That means that enforcement is not as strict and limits are higher. Once the transition period ends (First quarter of calendar year 2022), which will be after the full reporting is available in the Power Platform Admin Center, Organizations  will have 6 months’ time to analyze their usage and purchase licenses that are appropriate before strict enforcement on license limits begins.
