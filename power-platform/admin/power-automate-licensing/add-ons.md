@@ -19,61 +19,57 @@ search.app:
 
 # Add-ons for Power Automate licensing
 
-[!INCLUDE [cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
+Add-ons can be added onto a standalone Power Automate license.
 
-# Add-ons
+## Power Automate capacity add-ons
 
-Add-ons can be added in addition to a base Power Automate license.
+Power Apps and Power Automate capacity add-ons increase the daily Power Platform requests limits for workloads that need more usage capacity than their allocation. These add-ons provide an additional 10,000 daily Power Platform requests per unit for $50/month and is enforced daily. Unused Power Platform requests do not carry over from day to day. You can purchase these add-ons at any time and they remain a part of the subscription for the remainder of the subscription term.
 
-### Power Automate capacity add-ons
+During transition period, there is no facility to assign the Power Apps and Power Automate capacity add-ons to a user or flow. However, Microsoft recommends that you purchase these add-ons now to remain within your license terms and to be prepared for when the transition period ends.
 
-Power Apps and Power Automate capacity add-on increases the daily Power Platform requests for workloads that need more usage capacity than their allocation. The addon provides additional 10,000 daily Power Platform requests per unit for $50/month and is enforced daily. Unused/unassigned Power Platform requests do not carry over from day to day. Add-ons can be purchased at any time and remain a part of the subscription for the remainder of the subscription term.
+## Unattended add-on
 
-During transition period, there is no facility yet to assign the Power Apps and Power Automate capacity add-on to a user/flow. However, it is recommended that you purchase these add-ons now to remain within your license terms and to be prepared for when the transition period ends.
+Unattended desktop flows run without human interaction. These flows are best for scenarios such as processing invoices and entering them into a legacy application automatically or scheduled financial reconciliation across multiple systems that can only be automated by clicking user interfaces.
 
-### Unattended add-on
+When running unattended, Power Automate securely signs into the device on your behalf, executes the desktop flow actions on the target applications, and then signs out of the device.
 
-Unattended UI flows can run without human supervision. These flows are best for scenarios such as processing invoices and entering them into a legacy application automatically or scheduled financial reconciliation across multiple systems that can only be automated by clicking user interfaces.
+The Power Automate unattended RPA add-on extends desktop-based automation by enabling a bot to run autonomously (independent of a user).  Unattended bots can be deployed on a local or remote desktop, or in a virtualized environment. The Power Automate per user with attended RPA or Power Automate per flow plans are the eligible standalone offers for the unattended RPA add-on.
 
-When running unattended, Power Automate will securely sign into the device on your behalf, execute the UI flow actions on the target applications, and then sign out of the device.
+>[!NOTE]
+>The Power Automate unattended RPA add-on is licensed by a bot. Concurrent instances of a singular process require an additional unattended bot for each instance. Multiple unattended RPA add-ons can be applied against a qualifying base license.
 
-The Power Automate unattended RPA add-on extends desktop-based automation by enabling a bot to run autonomously, i.e. independent of a user. Unattended bots can be deployed on a local or remote desktop, or other virtualized environment. The Power Automate per user with attended RPA or Power Automate per flow plans are eligible base offers for the unattended RPA add-on. Note, the Power Automate unattended RPA add-on is licensed by bot. Concurrent instances of a singular process require an additional unattended bot for each instance – multiple unattended RPA add-ons can be applied against a qualifying base license.
+Here are a few important points of which you should be aware regarding the unattended add-on.
 
-Note:
+- One unattended RPA add-on license includes the rights to one unattended RPA bot, as well as all necessary functions tied to the authoring of  desktop flows, bot orchestration, and management.
+- If you run the unattended RPA bot in a VM, you must purchase any necessary additional compute resources.
+- You can purchase additional AI Builder capacity; AI Builder service credit capacity is pooled at the tenant level.
+- Any services or applications the unattended bot accesses must be licensed separately. For instance, if the bot is accessing Windows or Office, the Microsoft 365, you must purchase the unattended license in addition to the Power Automate unattended RPA add-on.
 
-• One unattended RPA add-on license includes the rights to one unattended RPA bot, as well as all necessary functions tied to desktop flow authoring, bot orchestration and management.
-
-• Running the unattended RPA bot in a VM requires the separate purchase of any necessary compute resources.
-
-• Additional AI Builder capacity can be purchased per 1M service credits for $500/month; AI Builder service credit capacity is pooled on the tenant level.
-
-• Any services or applications the unattended bot accesses must be licensed separately. For instance, if the bot is accessing Windows or Office, the Microsoft 365 – Unattended License must also be purchased in addition to the Power Automate unattended RPA add-on.
-
-FAQ
+### FAQs about the unattended add-on
 
 1. I want to run unattended flow. What licenses do I need?
+   You need either Power Automate per user with attended RPA or Power Automate per flow plans as a base license and Unattended add-on to be able to run the unattended flow.
+1. Is buying just the unattended add-on enough?
+   No. You need to a have a qualifying base license (per user RPA/per flow) for which the add-on can be added on.
+1. I need multiple instances running unattended. Do I need multiple add-ons?
+   Yes if you need to run them at the same time.
 
-You need either Power Automate per user with attended RPA or Power Automate per flow plans as a base license and Unattended addon to be able to run the unattended flow.
+## AI builder capacity add-on
 
-2. Is buying just the unattended addon enough?
+AI Builder is licensed as an add-on to standalone Power Apps and Power Automate licensing as well as to Dynamics 365 licenses. AI Builder is licensed on a capacity basis. AI Builder capacity is expressed as "service credits". Service credits serve as the single (common) currency across all the scenarios supported by AI Builder. The available service credits decreases when you use AI Builder services. Different scenarios (for example, forms processing, prediction, etc.) use service credits at different rates. Purchase the appropriate number of AI Builder capacity add-on units based on anticipated usage across all scenarios.
 
-No. You need to a have a qualifying base license (per user RPA/per flow) for which the addon can be added on.
+Each unit of "AI Builder capacity add-on" includes 1 million service credits per month. For example, a customer who requires 4.7 million service credits per month (based on anticipated usage), should purchase 5 units of "AI Builder capacity add-on".
 
-3. I need multiple instances running unattended. Do I need multiple addons?
+>[!NOTE]
+>
+> - Purchased service credits can be used from AI Builder models included within Power Automate, Power Apps, and Dynamics 365 applications.
+> - Service credits are deducted / consumed for both training and production usage
+> - Service credits are pooled across the tenant.
 
-Concurrent instances of a singular process require an additional unattended bot for each instance – multiple unattended RPA add-ons can be applied against a qualifying base license.
+### FAQs about the AI builder add-on
 
-### AI builder capacity add-on
+1. I have a Power Automate per user with RPA plan and I got AI builder credits as part of the plan. Can I transfer the credits to someone else?
 
-AI Builder is licensed as an add-on to standalone Power Apps and Power Automate licensing as well as Dynamics 365 licenses. AI Builder is licensed on a capacity basis. AI Builder capacity is expressed in the form of &quot;service credits&quot;. Service credits serve as the single (common) currency across all the scenarios supported by AI Builder. Available service credits are deducted when AI Builder services are used. Different scenarios (for example, forms processing, prediction, etc.) burn down service credits at different rates. Customers should purchase the appropriate number of AI Builder capacity add-on units based on anticipated usage across all scenarios.
-
-Each unit of &quot;AI Builder capacity add-on&quot; includes 1 million service credits per month. For example, a customer requiring 4.7 million service credits per month (based on anticipated usage), should purchase 5 units of &quot;AI Builder capacity add-on&quot;. Note: • Purchased service credits can be used from AI Builder models included within Power Automate, Power Apps and Dynamics 365 applications • Service credits are deducted / consumed for both training and production usage • Service credits are pooled across the tenant.
-
-### FAQ
-
-1. I have a Power Automate per user with RPA license and I got AI builder credits as part of the license. Can I transfer the credits to someone else?
-
-No. AI builder service credits are pooled at the tenant level and can&#39;t be assigned to a particular user. So, any user that runs a flow that needs AI builder service credits will be able to use credits from the pool.
-
+No. AI builder service credits are pooled at the tenant level and can't be assigned to a particular user. So, any user who runs a flow that needs AI builder service credits needs to use credits from the pool.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
