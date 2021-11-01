@@ -92,7 +92,7 @@ Follow these steps to allocate add-ons to an environment.
    >[!TIP]
    >Flow per business process is same as per flow license.
    >[!NOTE]
->The per flow plan is environment specific. So, if you have multiple environments that need to run a flow, you need to assign per flow license to the flow in all the environments.
+>The per flow plan is environment specific. So, if you have multiple environments that need to run a flow, you need to assign per flow license to the flow in each environment.
 1. Select **Save**.
 
    ![An image that displays the steps needed to assign a license to an environment.](../media/power-automate-licensing/assign-license-environment.png)
@@ -169,7 +169,7 @@ If at least one user in your tenant has signed up for a Microsoft Power Automate
 
 You can choose to assign additional licenses to users yourself through the Microsoft 365 admin center but note that these are trial licenses for Power Automate, and they will expire 90 days after you assigned them to a user.
 
-#### Is Trial free? Will I be charged for these licenses?
+#### Is trial free? Will I be charged for these licenses?
 
 No user can incur any cost to your organization without your express consent, so neither free nor trial licenses can cause any charges to your organization. Moreover, they also don't use any quotas, such as run quotas.
 
@@ -217,7 +217,7 @@ Admins can turn off self-service purchasing on a per product basis via the [MSCo
 
 Central procurement and IT teams view all users who buy and deploy self-service purchase solutions through the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339). Admins can turn off self-service purchasing on a per product basis via PowerShell.
 
-More FAQs on self service purchase [here](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide). 
+You can find more [FAQs on self service purchases](/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide). 
 
 ### Where does the self-service purchaser see and manage their purchases?
 
