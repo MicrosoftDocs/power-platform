@@ -51,7 +51,7 @@ Let’s now look at the stages and opportunities in each stage in detail:
 :::row:::
    :::column span="":::
    ![Gain tenant wide oversight of your usage](media/adoption-4.png "Gain tenant wide oversight of your usage")
-      Gain tenant wide oversight of resources being created in your tenant.
+      Gain tenant-wide oversight of resources being created in your tenant.
    :::column-end:::
    :::column span="":::
       ![Establish DLP Policies](media/adoption-5.png "Establish DLP Policies")
@@ -98,11 +98,11 @@ Create [shared component libraries](/power-platform/guidance/adoption/reusable) 
    :::column-end:::
    :::column span="":::
       ![Use approvals and Teams to automate communication](media/adoption-11.png "Use approvals and Teams to automate communication")
-     Automate the communication between CoE, IT and Admins through approvals and Microsoft Teams messages.
+     Automate the communication between CoE, IT, and Admins through approvals and Microsoft Teams messages.
    :::column-end:::
 :::column span="":::
    ![Define key responsibilities for your CoE](media/adoption-12.png "Define key responsibilities for your CoE")
-      Define [key responsibilities for your CoE](/power-platform/guidance/adoption/coe), Admins and Makers and ensure they are understood and agreed to by everyone.
+      Define [key responsibilities for your CoE](/power-platform/guidance/adoption/coe), Admins, and Makers and ensure they are understood and agreed to by everyone.
    :::column-end:::
 :::row-end:::
 
