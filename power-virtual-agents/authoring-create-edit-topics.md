@@ -161,7 +161,7 @@ Additionally, you can **Add a condition** when inserting a node after a **Questi
 
 You can [call Power Automate Flows](advanced-flow.md) and [insert authentication nodes](advanced-end-user-authentication.md) by selecting **Call an action**.
  
-If you have configured hand off to Omnichannel with voice-based capabilities, you'll also see [additional actions](configuration-hand-off-omnichannel.md#voice-based-hand-off-capabilities).
+If you have configured hand off to Omnichannel with voice-based capabilities, you'll also see [additional actions](configuration-hand-off-omnichannel.md#voice-based-capabilities).
 
 #### Show a message
 
