@@ -202,11 +202,6 @@ In the most common case, exceeding limits results in delayed runs of subsequent 
 
 Occasional overages are okay. For instance, if you exceed your daily limits by 500 actions it's not going to impact the performance of your flow, however exceeding your limit by 50,000 actions will have a significant performance impact on your flow.
 
-#### What are connector limits and are they different from Power Platform request limits?
-
-The connectors in the flow have separate limits as a service protection mechanism. For example, the SharePoint connector caps actions at 600 per minute. A single SharePoint connection used across multiple flows can still only execute 600 operations per minute. Most connector pages have a [throttling section](/connectors/sharepointonline/#limits) that documents these limits. This limit is different from the request limits. For example, an Office user can execute 6000 actions per day across all their flows but can still get throttled by the connector if they used more than 600 SharePoint actions in a minute despite not reaching the 6000 actions limit.
-
-When a flow was throttled because it exceeded the connector limits, you might see a HTTP 429 (too many requests) error in your flow with error text like "Rate limit is exceeded. Try again in 27 seconds."
 
 #### What can I do if my flow is above limits?
 
@@ -217,9 +212,15 @@ Here are some things you can do if you've exceeded the limits of your license.
 - Revisit your design and check for any places that can help reduce the number of actions being called. Check out Best Practices section to [create flows to use less actions].(https://support.microsoft.com/en-us/topic/troubleshooting-slow-running-flows-2a51dcd6-0b21-33da-5ce8-1e908b1540ef)
 - If the flow is already optimized but uses more actions because of the nature of the business, consider buying a higher license. Per flow plan provides the best performance quota available (250K actions/day/flow).
 - Purchase the **Power Apps and Power Automate capacity add-on**  for your organization. During the [transition period](#transition-period), because enforcement is currently less strict, there is no facility to assign the **Power Apps and Power Automate capacity add-on**  to a user. However, Microsoft recommends that you purchase these add-ons now to remain within your license terms and create a support ticket with the flow details and add on details to get temporary relief from throttling.
-- Turn on Pay-as-you go for the environment to ensure none of the flows in the environment are throttled.
+- Turn on [Pay-as-you go] for the environment to ensure none of the flows in the environment are throttled.
 
 If a flow is consistently above the transition period limits for 14 consecutive days, the flow is turned off and the owner is notified. You can update the flow or buy higher license, and then turn it on anytime.
+
+#### What are connector limits and are they different from Power Platform request limits?
+
+The connectors in the flow have separate limits as a service protection mechanism. For example, the SharePoint connector caps actions at 600 per minute. A single SharePoint connection used across multiple flows can still only execute 600 operations per minute. Most connector pages have a [throttling section](/connectors/sharepointonline/#limits) that documents these limits. This limit is different from the request limits. For example, an Office user can execute 6000 actions per day across all their flows but can still get throttled by the connector if they used more than 600 SharePoint actions in a minute despite not reaching the 6000 actions limit.
+
+When a flow was throttled because it exceeded the connector limits, you might see a HTTP 429 (too many requests) error in your flow with error text like "Rate limit is exceeded. Try again in 27 seconds."
 
 #### I am using COE toolkit, will the usage count towards my request limits?
 
@@ -281,6 +282,14 @@ Best practices to scale your flow.
 
 - If your flow runs thousands of actions daily, you should consider purchasing a Per Flow license to get better throughput and higher quotas.Per Flow plan provides the best performance quota available (250K actions/day). Please reach out to your tenant administrator to purchase the license and assign it to the flow. Once the license is purchased and assigned, the author of the flow should save it again. Alternatively, flows will be updated in the background once per week to reflect current plans.
 - Consider splitting the workload across multiple flows to achieve high scale.
+
+### Pay-as-you-go 
+
+We revised Power platform request limts for all licenses late 2021. The new limits are designed to be sufficient for most customer scenarios. For more information on Power Platform request limits, please visit [ ADD LINK: aka.ms/platformlimits]. 
+
+For customers with extremely high scale scenarios who need to exceed these limits you can link those environments to Azure subscription. By linking the environment, users and flows in the environment can consume more than their limits without being throttled and only pay for the Power Platform requests used above those limits. Flows still need to be licensed with a base license(either Power Automate per user, Power Automate per flow, Office 365, Power Apps or Dynamics). For example, if you have Power Automate per user license, you have a limit of 40K Power platform requests/per user/day. If the user used 45K requests a day, the additional 5K is multiplied by a $/request rate and billed to the Azure subscription. The total amount will be summed and billed based on the customer’s Azure billing cycle.
+
+Note: As of now,  if you link an environment to an Azure subscription this meter will not be reported or billed. Reporting and billing will be turned on by the end of Calendar year 2021. 
 
 ### More FAQ
 
