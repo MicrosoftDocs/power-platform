@@ -61,7 +61,7 @@ Represents archival approval tasks started during the App Archive and Clean Up f
 | [Request Orphaned Objects Reassigned (Parent)](#request-orphaned-objects-reassigned-parent) | Schedule | Daily |
 | [HELPER - CanvasAppOperations Gov](#helper---canvasappoperations-gov) | Instant | helper |
 | [HELPER - CloudFlowOperations Gov](#helper---cloudflowoperations-gov) | Instant | helper |
-| [HELPER - ObjectOperations Gov]() | Instant | helper |
+| [HELPER - ObjectOperations Gov](helper---objectoperations-gov) | Instant | helper |
 
 ### Microsoft Teams Admin | Ask for Business Justification when Microsoft Teams environment is created
 
@@ -166,11 +166,11 @@ This flow is triggered daily for every manager that has objects owned by former 
 1) Take ownership of them all
 1) Delete them all
 1) Assign them all to someone else
-1) See each one individually 
+1) See each one individually
 
 ![Orphaned object list](media/orphanedobjects2.png "Orphaned object list")
 
-If they chose to see the items individually then they can make these decisions granularly. 
+If they chose to see the items individually then they can make these decisions granularly.
 
 ![Orphaned object item](media/orphanedobjects3.png "Orphaned object item")
 
@@ -256,10 +256,6 @@ Makers can achieve compliance by providing additional information through the **
       ![Developer Compliance Center app detail.](media/coe57.png "Developer Compliance Center app detail")
    :::column-end:::
 :::row-end:::
-
-### App and Flow Archive and Clean Up View
-
-An app that provides an interface to canvas apps and cloud flows that have been highlighted for archiving and their approval status. This app works in conjunction with other apps and flows in the CoE Starter Kit to facilitate the process described for the [app auditing process](example-processes.md).
 
 ## Business process flows
 
@@ -347,6 +343,5 @@ All business process flows are disabled by default. To enable them, do the follo
 1. In **Power Apps App Approval BPF**, select the ellipsis (…) button, and then select **Turn On**.
 
 1. Repeat the previous step for **Flow Approval BPF**, **Custom Connector Approval BPF**, and **Chatbot Approval BPF**.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

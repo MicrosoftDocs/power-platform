@@ -238,7 +238,7 @@ When you first set up the CoE Starter Kit, enable these flows in a specific orde
     1. Turn on the flows starting with Command Center App if you are using the [Admin - Command Center](core-components.md#admin---command-center)
 
 >[!IMPORTANT]
-> Note that **Admin \| Compliance Detail Request v3** will not pass until you complete setup of the Governance component so you should leave it turned off until then.
+> Note that **Admin \| Compliance request** flows will not pass until you complete setup of the Governance component so you should leave it turned off until then.
 
 ## (Optional) Create an Azure AD app registration to connect to Microsoft Graph
 
