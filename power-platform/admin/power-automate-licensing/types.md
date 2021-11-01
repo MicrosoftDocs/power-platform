@@ -382,5 +382,3 @@ No. Trials won't work in government clouds (GCC), and they can only purchase pla
 #### Can I see all trials using a PowerShell cmdlet?
 
 Viral trials cannot be blocked by PowerShell cmdlet.
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
