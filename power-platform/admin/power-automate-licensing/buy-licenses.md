@@ -91,6 +91,8 @@ Follow these steps to allocate add-ons to an environment.
 
    >[!TIP]
    >Flow per business process is same as per flow license.
+   >[!NOTE]
+>The per flow plan is environment specific. So, if you have multiple environments that need to run a flow, you need to assign per flow license to the flow in all the environments.
 1. Select **Save**.
 
    ![An image that displays the steps needed to assign a license to an environment.](../media/power-automate-licensing/assign-license-environment.png)
@@ -138,7 +140,11 @@ Follow these steps to monitor license usage.
 
 ### FAQ
 
-#### How do I remove Power Automate from the app launcher for my organization?
+#### I assigned a premium license to a user, but the user can't use premium features. Why?
+
+It might take up to a week for all the downstream systems to receive updates. To force an update for a particular flow, turn the flow off and on or edit and save the flow.
+
+#### How do I remove Power Automate from the app launcher for a user?
 
 If a user was assigned a Power Automate license, you can take the following steps to remove the license for that user. This action removes the Power Automate icon from the app launcher.
 
@@ -163,7 +169,7 @@ If at least one user in your tenant has signed up for a Microsoft Power Automate
 
 You can choose to assign additional licenses to users yourself through the Microsoft 365 admin center but note that these are trial licenses for Power Automate, and they will expire 90 days after you assigned them to a user.
 
-#### Is this free? Will I be charged for these licenses?
+#### Is Trial free? Will I be charged for these licenses?
 
 No user can incur any cost to your organization without your express consent, so neither free nor trial licenses can cause any charges to your organization. Moreover, they also don't use any quotas, such as run quotas.
 
@@ -181,9 +187,6 @@ Power Automate allows you to create data groups for business and non-business da
 
 ![An image that displays a sample data loss prevention configuration.](../media/power-automate-licensing/data-loss-prevention-policy.png)
 
-#### I assigned a premium license to a user, but the user can't use premium features. Why?
-
-It might take up to a week for all the downstream systems to receive updates. To force an update for a particular flow, turn the flow off and on or edit and save the flow.
 
 ## I am a maker
 
@@ -213,6 +216,8 @@ Customers can make a self-service purchase from Power Automate. To do this, they
 Admins can turn off self-service purchasing on a per product basis via the [MSCommerce PowerShell module](/microsoft-365/commerce/subscriptions/allowselfservicepurchase-powershell).
 
 Central procurement and IT teams view all users who buy and deploy self-service purchase solutions through the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339). Admins can turn off self-service purchasing on a per product basis via PowerShell.
+
+More FAQs on self service purchase [here](https://docs.microsoft.com/en-us/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide). 
 
 ### Where does the self-service purchaser see and manage their purchases?
 
