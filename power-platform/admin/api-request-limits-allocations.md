@@ -19,7 +19,7 @@ search.app:
 ---
 # Requests limits and allocations
 
-Originally announced in October 2019, Power Platform Request entitlement limits exist to help ensure service levels, availability, and quality of the platform. There are limits to the number of requests users can make each day across Power Apps, Power Automate, Power Virtual Agents, and Dynamics 365 applications.
+Originally announced in October 2019, Power Platform Request limits exist to help ensure service levels, availability, and quality of the platform. There are limits to the number of requests users can make each day across Power Apps, Power Automate, Power Virtual Agents, and Dynamics 365 applications.
 
 ## What is a Microsoft Power Platform request?
 
@@ -35,7 +35,7 @@ Requests in Microsoft Power Platform consist of various actions that a user make
 
 The sections below describe the request types and the entitlement limits established for each.
 
-## Licensed user request entitlement limits
+## Licensed user request limits
 
 All the users of Microsoft Power Platform have limits on the number of requests based on the license they are assigned. The following table defines the number of requests a user can make in a 24-hour period:
 
@@ -55,7 +55,7 @@ All the users of Microsoft Power Platform have limits on the number of requests 
 
 ### Other details
 
-Power Platform Request entitlements are only granted with paid base licenses in the Dynamics 365 'base + attach' licensing model. Attach licenses do not include entitlements. For example, if a user has a Dynamics 365 Customer Service Enterprise as the base license and Dynamics 365 Sales Enterprise as an attach license, the total request entitlement would be what is provided by the base license - Dynamics 365 Customer Service Enterprise.
+Power Platform Request limits are only included with paid base licenses in the Dynamics 365 'base + attach' licensing model. Attach licenses do not include seperate limits. For example, if a user has a Dynamics 365 Customer Service Enterprise as the base license and Dynamics 365 Sales Enterprise as an attach license, the total request limit would be what is provided by the base license - Dynamics 365 Customer Service Enterprise.
 
 If a user has multiple paid licenses assigned to them, the total number of requests allowed would be the sum of requests entitled for each license. For example, if a user has both a Dynamics 365 Customer Service Enterprise base license and a Power Apps per user license then that user will have a total of 40,000 + 40,000 = 80,000 requests available per 24 hours.
 
@@ -63,7 +63,7 @@ Power Virtual Agents requests are counted from Power Automate flows triggered fr
 
 ## Non-licensed user request limits
 
-A separate limit is established for certain activities that do not require a user license to interact with the service. These limits are defined and pooled at the tenant level. Dataverse enables you to have identities that do not require any user license to interact with the service. These include:
+A separate limit is established for certain activities(eg: A background process that migrates data between databases) that do not require a user to interact with the service. These limits are defined and pooled at the tenant level. Dataverse enables you to have identities that do not require any user to interact with the service. These include:
 
 - [Application users](create-users.md#create-an-application-user)
 - [Non-interactive users](create-users.md#create-a-non-interactive-user-account)
@@ -80,7 +80,7 @@ For these non-licensed identities, every tenant will get an initial base request
 | Power Apps (all licenses)                                       | 25,000 base requests with no per-license accrual for the tenant                         |
 | Power Automate (all licenses)                                   | 25,000 base requests with no per-license accrual for the tenant                         |
 
-<sup>1</sup> This category includes licenses for Dynamics 365 Sales Premium, Dynamics 365 Sales Enterprise, Dynamics 365 Sales Professional, Dynamics 365 Customer Service Enterprise, Dynamics 365 Customer Service Professional, Dynamics 365 Field Service, Microsoft Relationship Sales, Dynamics 365 Project Service Automation, Dynamics 365 Commerce, Dynamics 365 Human Resources, Dynamics 365 Finance, Dynamics 365 Project Operations, Dynamics 365 Supply Chain Management, Dynamics 365 Customer Engagement plan, Dynamics 365 Unified Ops plan, Dynamics 365 Plan, Dynamics CRM Online Enterprise, and Dynamics CRM Online Professional.  Power Platform Request accrued non-licensed tenant-level entitlements are only granted with paid base licenses in the Dynamics 365 'base + attach' licensing model.
+<sup>1</sup> This category includes licenses for Dynamics 365 Sales Premium, Dynamics 365 Sales Enterprise, Dynamics 365 Sales Professional, Dynamics 365 Customer Service Enterprise, Dynamics 365 Customer Service Professional, Dynamics 365 Field Service, Microsoft Relationship Sales, Dynamics 365 Project Service Automation, Dynamics 365 Commerce, Dynamics 365 Human Resources, Dynamics 365 Finance, Dynamics 365 Project Operations, Dynamics 365 Supply Chain Management, Dynamics 365 Customer Engagement plan, Dynamics 365 Unified Ops plan, Dynamics 365 Plan, Dynamics CRM Online Enterprise, and Dynamics CRM Online Professional.  Power Platform Request accrued non-licensed tenant-level limits are only granted with paid base licenses in the Dynamics 365 'base + attach' licensing model.
 
 ### Additional details
 
