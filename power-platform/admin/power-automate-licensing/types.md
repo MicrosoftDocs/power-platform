@@ -59,7 +59,7 @@ You can find more details can be found in [Microsoft Power Apps and Power Automa
 
 ## Compare Power Automate plans
 
-Please [click here](#license-limits) to understand about entitlements
+Learn [more about license entitlements](#license-entitlements).
 
 Here's a chart that lays out the limits that are associated with the different license plans.
 
